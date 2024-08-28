@@ -1,6 +1,6 @@
 START
 \x18\x06\x01\xa4\t3\x01\xc6\x04
-SCE SCE016_001 \x06 \x02\xef! \r \x8c\x01\r\x02 \xa0(\x0c"\x03^
+SCEN SCE016_001 \x06 \x02\xef! FLAG \x8c\x01FLAG\x02 \xa0(\x0c"\x03^
  
 紅葉\n　「……。あのねえ、アンタ、女の子に会うたびそんな適当なこ\n　　といってんじゃないでしょうね？@
 　　『僕はいつも君のこと見てるよ』ってアピール？@
@@ -8,10 +8,10 @@ SCE SCE016_001 \x06 \x02\xef! \r \x8c\x01\r\x02 \xa0(\x0c"\x03^
 拓司\n　「そうか？　なんとなくいつもと違う感じがしたからさ」@
 紅葉\n　「……」@
 拓司\n　「……」\w\z
-  \r J
-FOB "\x03\x07.\\Data\\Script\\TextFunc.Fob RUN \xe2\x01
-CM1 TextOn RUN \x10\x02 \x025
-SCE SCE016_002 ,\x02 \x02\xef! \r \x8c\x01\r\x02 \xa4(\x0c"\x03(
+  FLAG J
+FOBL "\x03\x07.\\Data\\Script\\TextFunc.Fob RUNF \xe2\x01
+CMD1 TextOn RUNF \x10\x02 \x025
+SCEN SCE016_002 ,\x02 \x02\xef! FLAG \x8c\x01FLAG\x02 \xa4(\x0c"\x03(
  
 紅葉\n　「……リップ」@
 拓司\n　「はあ？」@
@@ -19,9 +19,9 @@ SCE SCE016_002 ,\x02 \x02\xef! \r \x8c\x01\r\x02 \xa4(\x0c"\x03(
 拓司\n　「ふうん」@
 紅葉\n　「……」@
 拓司\n　「……」\w\z
-  \r p\x02
-FOB " \xe2\x01 \x02 \x10\x02 \x025
-SCE SCE016_003 J\x03 \x02\xef! \r \x8c\x01\r\x02 \xa8(\x0c"\x035
+  FLAG p\x02
+FOBL " \xe2\x01 \x02 \x10\x02 \x025
+SCEN SCE016_003 J\x03 \x02\xef! FLAG \x8c\x01FLAG\x02 \xa8(\x0c"\x035
  
 沈黙の後、紅葉が突然、えい、と拓司の背中にパンチを飛ばした。\n@
 拓司\n　「いて！　なんだよ、お前！」@
@@ -29,6 +29,6 @@ SCE SCE016_003 J\x03 \x02\xef! \r \x8c\x01\r\x02 \xa8(\x0c"\x035
 拓司\n　「……照れてるのか？」@
 紅葉\n　「うるさいっ！」\
 
-  \r \x8e\x03
-FOB " \xe2\x01 \x02 \x10\x02 \x025 \xe2\x01 \x02
-SCE TextClosev\x81\x1f\xa8\x04 \x0256\xf1
+  FLAG \x8e\x03
+FOBL " \xe2\x01 \x02 \x10\x02 \x025 \xe2\x01 \x02
+SCEN TextClosev\x81\x1f\xa8\x04 \x0256\xf1

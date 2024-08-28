@@ -1,8 +1,8 @@
 START
-G\x1a\x01`B#\x01j\x16  \r \x04\x01
-FOB "\x03\x06.\\Data\\Script\\Bgm.Fobv\x81\x1f 
-CM1 PlayCD RUN J \x025
-SCE SCES03_001 f \x02\xef! \r \x8c\x01\r\x02 \xd0\xb5\x01\x0c"\x03\x8b
+G\x1a\x01`B#\x01j\x16  FLAG \x04\x01
+FOBL "\x03\x06.\\Data\\Script\\Bgm.Fobv\x81\x1f 
+CMD1 PlayCD RUNF J \x025
+SCEN SCES03_001 f \x02\xef! FLAG \x8c\x01FLAG\x02 \xd0\xb5\x01\x0c"\x03\x8b
  
 ずっと前に手術を受けて、身体はうんと良くなったの。@
 でも、みんなと一緒に運動とかはできなかったし、旅行とかにも\n行けなかった。\pだからかな、なんだかみんなとはあまり仲良くな\nれなかった。\pどんなに一緒にいても、結局最後のところで私は違\nうんだな、って思ってた。@
@@ -13,10 +13,10 @@ SCE SCES03_001 f \x02\xef! \r \x8c\x01\r\x02 \xd0\xb5\x01\x0c"\x03\x8b
 気を使って、仲良くしてくれているんだな、って。わかってた。@
 よく夢を見たの。\
 
-  \r \xaa
-FOB "\x03\x07.\\Data\\Script\\TextFunc.Fob RUN \xf6\x02
-CM1 TextOn RUN $\x03 \x025
-SCE SCES03_002 @\x03 \x02\xef! \r \x8c\x01\r\x02 \xd4\xb5\x01\x0c"\x03\x89
+  FLAG \xaa
+FOBL "\x03\x07.\\Data\\Script\\TextFunc.Fob RUNF \xf6\x02
+CMD1 TextOn RUNF $\x03 \x025
+SCEN SCES03_002 @\x03 \x02\xef! FLAG \x8c\x01FLAG\x02 \xd4\xb5\x01\x0c"\x03\x89
  
 クラスのみんなと宇宙船で旅行してるとね、事故が起きるの。@
 脱出ポットには人数制限があって、どうしても１人だけ宇宙船に\n残らなくちゃいけない。\pみんな困った顔で、うつむいてる。@
@@ -28,9 +28,9 @@ SCE SCES03_002 @\x03 \x02\xef! \r \x8c\x01\r\x02 \xd4\xb5\x01\x0c"\x03\x89
 でも、悲しかった。@
 なんだかとても悲しかった。\
 
-  \r \x84\x03
-FOB " \xf6\x02 \x02 $\x03 \x025
-SCE SCES03_003 \xe2\x05 \x02\xef! \r \x8c\x01\r\x02 \xd8\xb5\x01\x0c"\x03\xde
+  FLAG \x84\x03
+FOBL " \xf6\x02 \x02 $\x03 \x025
+SCEN SCES03_003 \xe2\x05 \x02\xef! FLAG \x8c\x01FLAG\x02 \xd8\xb5\x01\x0c"\x03\xde
  
 手術してからも、本当のお友達はできなかった。@
 ずっと昔は、みんなが気を使って友達のふりをしてくれるのが嫌\nで仕方がなかったけど、学生になってからは、それすらなくなち\nゃった。@
@@ -44,9 +44,9 @@ SCE SCES03_003 \xe2\x05 \x02\xef! \r \x8c\x01\r\x02 \xd8\xb5\x01\x0c"\x03\xde
 だから、学校には行かないで、街のなかをぶらぶらしてた。@
 朝は公園でぼんやりして、９時４５分になったら図書館に行って、\nお昼まで本を読むの。\pそれからデパートに行って、いろんなもの\nを見て、屋上に行く\p。平日の昼間の屋上って、誰もいないんだよ。\n\pそんな、誰もいない屋上で、ドルチェとお話ししてた。\
 
-  \r &\x06
-FOB " \xf6\x02 \x02 $\x03 \x025
-SCE SCES03_004 \xd8\t \x02\xef! \r \x8c\x01\r\x02 \xdc\xb5\x01\x0c"\x03\xa3
+  FLAG &\x06
+FOBL " \xf6\x02 \x02 $\x03 \x025
+SCEN SCES03_004 \xd8\t \x02\xef! FLAG \x8c\x01FLAG\x02 \xdc\xb5\x01\x0c"\x03\xa3
  
 「ねえドルチェ」@
 『なんニャ、早桃ちゃん？』@
@@ -58,11 +58,11 @@ SCE SCES03_004 \xd8\t \x02\xef! \r \x8c\x01\r\x02 \xdc\xb5\x01\x0c"\x03\xa3
 「ドルチェ、早桃はもう笑う力も残ってないよ。\pどうすればいい\n　のかな？」@
 『答はね、早桃ちゃん。\p風のなかにあるニャ』\
 
-  \r \x1c\n
-FOB " \xf6\x02 \x02 $\x03 \x025  \r B
-FOB "\x03\x06.\\Data\\Script\\Bg.Fobsv\x81\x1f\xfc\x0c
-CM2 BgAutoFadeInsv\x81\x1f&\r \x025
-SCE SCES03_005 J\r \x02\xef! \r \x8c\x01\r\x02 \xe0\xb5\x01\x0c"\x03|
+  FLAG \x1c\n
+FOBL " \xf6\x02 \x02 $\x03 \x025  FLAG B
+FOBL "\x03\x06.\\Data\\Script\\Bg.Fobsv\x81\x1f\xfc\x0c
+CMD2 BgAutoFadeInsv\x81\x1f&\r \x025
+SCEN SCES03_005 J\r \x02\xef! FLAG \x8c\x01FLAG\x02 \xe0\xb5\x01\x0c"\x03|
  
 ある日、いつもみたいに屋上でぼんやりしていると、声をかけら\nれたの。\pお父さんと同じくらいの歳の人で……あ、前のお父さん\nだよ……すごく優しそうな人だった。@
 一緒にご飯食べない？\p　ってその人はいった。@
@@ -73,10 +73,10 @@ SCE SCES03_005 J\r \x02\xef! \r \x8c\x01\r\x02 \xe0\xb5\x01\x0c"\x03|
 \nうん、いいよ。\p一緒にご飯食べる。@
 でも、どれくらいなの？　って。\
 
-  \r \x8e\r
-FOB " \xf6\x02 \x02 $\x03 \x025  \r \xc8
-FOB " \xfc\x0c \x02 &\r \x025
-SCE SCES03_006 \xec\x0f \x02\xef! \r \x8c\x01\r\x02 \xe4\xb5\x01\x0c"\x03j
+  FLAG \x8e\r
+FOBL " \xf6\x02 \x02 $\x03 \x025  FLAG \xc8
+FOBL " \xfc\x0c \x02 &\r \x025
+SCEN SCES03_006 \xec\x0f \x02\xef! FLAG \x8c\x01FLAG\x02 \xe4\xb5\x01\x0c"\x03j
  
 ……びっくりした？@
 言い訳する気はないよ。\pでも、ひとつだけ信じて欲しいのは、お\n金なんかどうでも良かったってこと。\pただ、こういうときは、値\n段を聞いておくものじゃないかなと思ったから、聞いただけ。@
@@ -86,9 +86,9 @@ SCE SCES03_006 \xec\x0f \x02\xef! \r \x8c\x01\r\x02 \xe4\xb5\x01\x0c"\x03j
 なんだか普通の女の子になったみたいな気がして。@
 特別扱いじゃなくて、普通の、どこにでもいる女の子として扱っ\nてもらってるんだなって。\
 
-  \r 0\x10
-FOB " \xf6\x02 \x02 $\x03 \x025
-SCE SCES03_007 \x12\x12 \x02\xef! \r \x8c\x01\r\x02 \xe8\xb5\x01\x0c"\x03\xe2
+  FLAG 0\x10
+FOBL " \xf6\x02 \x02 $\x03 \x025
+SCEN SCES03_007 \x12\x12 \x02\xef! FLAG \x8c\x01FLAG\x02 \xe8\xb5\x01\x0c"\x03\xe2
  
 一緒にご飯を食べて、いろんなお話をした。@
 みんな、ウソのお話。早桃は活発なクラスの人気者で、いろいろ\n遊びなんかも経験してる子って設定なの。@
@@ -103,7 +103,7 @@ SCE SCES03_007 \x12\x12 \x02\xef! \r \x8c\x01\r\x02 \xe8\xb5\x01\x0c"\x03\xe2
 生まれて初めて、私は体が弱い女の子っていうシガラミから切り\n離されて、私そのものとして……認識されたって、思った。@
 私は道に落ちている石ころみたいなものじゃなくて、ちゃんと価\n値がある人間なんだって。\
 
-  \r V\x12
-FOB " \xf6\x02 \x02 $\x03 \x025  
-CM1 StopCD RUN $\x16 \x025 \xf6\x02 \x02
-SCE TextClosev\x81\x1fL\x16 \x0256\xf1
+  FLAG V\x12
+FOBL " \xf6\x02 \x02 $\x03 \x025  
+CMD1 StopCD RUNF $\x16 \x025 \xf6\x02 \x02
+SCEN TextClosev\x81\x1fL\x16 \x0256\xf1

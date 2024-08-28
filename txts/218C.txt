@@ -1,6 +1,6 @@
 START
 \xc1\t\x01`B#\x01\xe0\x07
-SCE SCE218_001 \x06 \x02\xef! \r \x8c\x01\r\x02 @d\x01\x0c"\x036
+SCEN SCE218_001 \x06 \x02\xef! FLAG \x8c\x01FLAG\x02 @d\x01\x0c"\x036
  
 拓司\n　「やめろ、御堂！」@
 \nいって拓司は突進した。\p御堂の肩にしがみつく。@
@@ -8,10 +8,10 @@ SCE SCE218_001 \x06 \x02\xef! \r \x8c\x01\r\x02 @d\x01\x0c"\x036
 御堂\n　「うるせえッ！」@
 \n重い一撃が顎を捉え、さらに鋭い蹴りが拓司を後方にはじき飛ば\nした。\
 
-  \r J
-FOB "\x03\x07.\\Data\\Script\\TextFunc.Fob RUN B\x01
-CM1 TextOn RUN p\x01 \x025
-SCE SCE218_002 \x8c\x01 \x02\xef! \r \x8c\x01\r\x02 Dd\x01\x0c"\x03x
+  FLAG J
+FOBL "\x03\x07.\\Data\\Script\\TextFunc.Fob RUNF B\x01
+CMD1 TextOn RUNF p\x01 \x025
+SCEN SCE218_002 \x8c\x01 \x02\xef! FLAG \x8c\x01FLAG\x02 Dd\x01\x0c"\x03x
  
 御堂\n　「勘違いするなよモヤシ小僧。\pお前が今まで物を決めてこられ\n　　たのはお前の力じゃなくて俺の力なんだよ。\p俺がお前を許し\n　　ていたからお前は自由に行動できたんだよ。\pでもこれからは\n　　違うぞ。\pこれからは俺の許可無しでなにもさせやしねえから\n　　な。\pいいか、なにもだ！」@
 \n御堂はじりじりとなたねに歩み寄った。@
@@ -19,11 +19,11 @@ SCE SCE218_002 \x8c\x01 \x02\xef! \r \x8c\x01\r\x02 Dd\x01\x0c"\x03x
 　　やあああああめえええろおおおおお！」@
 御堂\n　「この……××××が……思い知れ！\p　思い知れ！」\
 
-  \r \xd0\x01
-FOB " B\x01 \x02 p\x01 \x025  \r $
-FOB "\x03\x06.\\Data\\Script\\Bg.Fobsv\x81\x1f\x04\x04
-CM2 BgAutoFadeInsv\x81\x1f.\x04 \x025
-SCE SCE218_003 R\x04 \x02\xef! \r \x8c\x01\r\x02 Hd\x01\x0c"\x03\x9b
+  FLAG \xd0\x01
+FOBL " B\x01 \x02 p\x01 \x025  FLAG $
+FOBL "\x03\x06.\\Data\\Script\\Bg.Fobsv\x81\x1f\x04\x04
+CMD2 BgAutoFadeInsv\x81\x1f.\x04 \x025
+SCEN SCE218_003 R\x04 \x02\xef! FLAG \x8c\x01FLAG\x02 Hd\x01\x0c"\x03\x9b
  
 御堂はなたねの顔面に、容赦のないパンチを雨あられと降らせて\nいる。\p溜まり溜まったストレスをすべて叩き付けるように、な\nたねを殴り続ける。@
 ごつ、ごつ、ごつ！@
@@ -37,8 +37,8 @@ SCE SCE218_003 R\x04 \x02\xef! \r \x8c\x01\r\x02 Hd\x01\x0c"\x03\x9b
 理性や人間性に立脚した、あらゆるものは瓦解した。@
 そしていま、眼前で展開されていることこそ、新しい秩序の骨子\nを為すものであるはずだった。\
 
-  \r \x96\x04
-FOB " B\x01 \x02 p\x01 \x025  \r \xc8
-FOB " \x04\x04 \x02 .\x04 \x025\x03\x06.\\Data\\Script\\Bgm.Fobv\x81\x1fp\x07
-CM1 StopCD RUN \x9a\x07 \x025 B\x01 \x02
-SCE TextClosev\x81\x1f\xc2\x07 \x0256\xf1
+  FLAG \x96\x04
+FOBL " B\x01 \x02 p\x01 \x025  FLAG \xc8
+FOBL " \x04\x04 \x02 .\x04 \x025\x03\x06.\\Data\\Script\\Bgm.Fobv\x81\x1fp\x07
+CMD1 StopCD RUNF \x9a\x07 \x025 B\x01 \x02
+SCEN TextClosev\x81\x1f\xc2\x07 \x0256\xf1

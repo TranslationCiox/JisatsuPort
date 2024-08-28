@@ -1,6 +1,6 @@
 START
 \xd9\x03\x01\xa4\t3\x01\xc4\x02
-SCE SCE060_001 \x06 \x02\xef! \r \x8c\x01\r\x02 `m\x0c"\x03B
+SCEN SCE060_001 \x06 \x02\xef! FLAG \x8c\x01FLAG\x02 `m\x0c"\x03B
  
 拓司\n　「ここに……いたくない？」@
 \n拓司の問には答えず、早桃はいった。@
@@ -9,14 +9,14 @@ SCE SCE060_001 \x06 \x02\xef! \r \x8c\x01\r\x02 `m\x0c"\x03B
 早桃\n　「みんな自殺して、いなくなっちゃって」@
 拓司\n　「……」\n早桃\n　「ざまあみろって思ってる」\
 
-  \r J
-FOB "\x03\x07.\\Data\\Script\\TextFunc.Fob RUN r\x01
-CM1 TextOn RUN \xa0\x01 \x025
-SCE SCE060_002 \xbc\x01 \x02\xef! \r \x8c\x01\r\x02 dm\x0c"\x03\x18
+  FLAG J
+FOBL "\x03\x07.\\Data\\Script\\TextFunc.Fob RUNF r\x01
+CMD1 TextOn RUNF \xa0\x01 \x025
+SCEN SCE060_002 \xbc\x01 \x02\xef! FLAG \x8c\x01FLAG\x02 dm\x0c"\x03\x18
  
 拓司\n　「……」@
 早桃\n　「おにいちゃん、後ろ向いてて。\pジャージに着替えるから」@
 \z
-  \r \x02
-FOB " r\x01 \x02 \xa0\x01 \x025 r\x01 \x02
-SCE TextClosev\x81\x1f\xa6\x02 \x0256\xf1
+  FLAG \x02
+FOBL " r\x01 \x02 \xa0\x01 \x025 r\x01 \x02
+SCEN TextClosev\x81\x1f\xa6\x02 \x0256\xf1

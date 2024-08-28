@@ -1,6 +1,6 @@
 START
 \xab\x04\x01\xa4\t3\x01\x1e\x03
-SCE SCE208_001 \x06 \x02\xef! \r \x8c\x01\r\x02 \xa0T\x01\x0c"\x03\x90
+SCEN SCE208_001 \x06 \x02\xef! FLAG \x8c\x01FLAG\x02 \xa0T\x01\x0c"\x03\x90
  
 拓司\n　「君は、『学校に籠城した世界』は、おれの過去の記憶だとい\n　　う。\pもしそうだとしたら……結局おれはどうなったんだ？@
 　　籠城した記憶はある。\pでも、いま、どうしてここにいるか\n　　という記憶がない。\pみんなは……早桃や紅葉やカンナはどう\n　　なったんだ？\p　雲居なたねは……御堂は……先生は？」@
@@ -8,7 +8,7 @@ SCE SCE208_001 \x06 \x02\xef! \r \x8c\x01\r\x02 \xa0T\x01\x0c"\x03\x90
 拓司\n　「……」@
 ナタネ\n　「……」\
 
-  \r J
-FOB "\x03\x07.\\Data\\Script\\TextFunc.Fob RUN \xaa\x02
-CM1 TextOn RUN \xd8\x02 \x025 \xaa\x02 \x02
-SCE TextClosev\x81\x1f\x03 \x0256\xf1
+  FLAG J
+FOBL "\x03\x07.\\Data\\Script\\TextFunc.Fob RUNF \xaa\x02
+CMD1 TextOn RUNF \xd8\x02 \x025 \xaa\x02 \x02
+SCEN TextClosev\x81\x1f\x03 \x0256\xf1

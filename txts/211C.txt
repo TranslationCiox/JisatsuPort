@@ -1,6 +1,6 @@
 START
 \xc1\n\x01`B#\x01\xf6\x08
-SCE SCE211_001 \x06 \x02\xef! \r \x8c\x01\r\x02 PY\x01\x0c"\x03\xae
+SCEN SCE211_001 \x06 \x02\xef! FLAG \x8c\x01FLAG\x02 PY\x01\x0c"\x03\xae
  
 もはや世界に定点を見いだすことは不可能だった。@
 『教授が語る世界』と『なたねが語る世界』。@
@@ -13,10 +13,10 @@ SCE SCE211_001 \x06 \x02\xef! \r \x8c\x01\r\x02 PY\x01\x0c"\x03\xae
 ナタネ\n　「……」@
 拓司\n　「おれはおれの世界に戻る」\
 
-  \r J
-FOB "\x03\x07.\\Data\\Script\\TextFunc.Fob RUN "\x03
-CM1 TextOn RUN P\x03 \x025
-SCE SCE211_002 l\x03 \x02\xef! \r \x8c\x01\r\x02 TY\x01\x0c"\x03\x86
+  FLAG J
+FOBL "\x03\x07.\\Data\\Script\\TextFunc.Fob RUNF "\x03
+CMD1 TextOn RUNF P\x03 \x025
+SCEN SCE211_002 l\x03 \x02\xef! FLAG \x8c\x01FLAG\x02 TY\x01\x0c"\x03\x86
  
 ナタネ\n　「信じないならそれでもいいわ。\pでも、どうやって戻るの？@
 　　あなたは自分の意志で世界を渡り歩くことなんかできない」@
@@ -26,18 +26,20 @@ SCE SCE211_002 l\x03 \x02\xef! \r \x8c\x01\r\x02 TY\x01\x0c"\x03\x86
 拓司\n　「ああ。\pこの世界が現実でも妄想でも……とにかくこの世界で\n　　の俺は終わる。\p目が覚めて別の場所にいれば、この世界が妄\n　　想だったということだ。\pこれでお終いなら、こここそが現実\n　　だったということになる」@
 ナタネ\n　「馬鹿なことはやめて」\
 
-  \r \xb0\x03
-FOB " "\x03 \x02 P\x03 \x025
-SCE SCE211_003 \x02\x06 \x02\xef! \r \x8c\x01\r\x02 XY\x01\x0c"\x03I
+  FLAG \xb0\x03
+FOBL " "\x03 \x02 P\x03 \x025
+SCEN SCE211_003 \x02\x06 \x02\xef! FLAG \x8c\x01FLAG\x02 XY\x01\x0c"\x03I
  
 拓司\n　「ここが現実だったとしたら、俺は死んじまって、それを確認\n　　できないわけだが……それでもいい。\pもうこんなことはたく\n　　さんだ。\pいずれ終わらせなければならない。\pそれが、いまだ\n　　ってことだ」@
 \n拓司は息を止めた。@
 そして躊躇無く自分の下顎を、下から殴りつけた。\
 
-  \r F\x06
-FOB " "\x03 \x02 P\x03 \x025  \r \x02
-FOB "\x03\x06.\\Data\\Script\\Bgm.Fobv\x81\x1f\xbe\x07
-CM1 SeStop RUN \xe8\x07 \x025 "\x03 \x02\x03\x05TextWindowOffDirect \x10\x08 \x025  \r \xc8
-FOB "\x03\x06.\\Data\\Script\\Bg.Fobsv\x81\x1fR\x08
-CM1 BgOnsv\x81\x1f|\x08 \x025 "\x03 \x02\x03\x05TextWindowOnDirect RUN \xa4\x08 \x025 "\x03 \x02
-SCE TextClosev\x81\x1f\xd8\x08 \x0256\xf1
+  FLAG F\x06
+FOBL " "\x03 \x02 P\x03 \x025  FLAG \x02
+FOBL "\x03\x06.\\Data\\Script\\Bgm.Fobv\x81\x1f\xbe\x07
+CMD1 SeStop RUNF \xe8\x07 \x025 "\x03 
+WAVL TextWindowOffDirect \x10\x08 \x025  FLAG \xc8
+FOBL "\x03\x06.\\Data\\Script\\Bg.Fobsv\x81\x1fR\x08
+CMD1 BgOnsv\x81\x1f|\x08 \x025 "\x03 
+WAVL TextWindowOnDirect RUNF \xa4\x08 \x025 "\x03 \x02
+SCEN TextClosev\x81\x1f\xd8\x08 \x0256\xf1

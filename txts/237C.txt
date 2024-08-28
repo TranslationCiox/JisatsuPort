@@ -1,6 +1,6 @@
 START
 \xf6\n\x01`B#\x01\xf8\x08
-SCE SCE237_001 \x06 \x02\xef! \r \x8c\x01\r\x02 \xf0\x81\x01\x0c"\x03s
+SCEN SCE237_001 \x06 \x02\xef! FLAG \x8c\x01FLAG\x02 \xf0\x81\x01\x0c"\x03s
  
 教授\n　「もう大丈夫だ。\p私を信じたまえ。\pこの世界を信じたまえ。@
 　　少なくとも、ここは安全な世界だ。\p君に害を及ぼすものはな\n　　にもないんだ」@
@@ -13,10 +13,10 @@ SCE SCE237_001 \x06 \x02\xef! \r \x8c\x01\r\x02 \xf0\x81\x01\x0c"\x03s
 いいじゃないか、狂っていても。@
 死ぬよりはマシだ。\
 
-  \r J
-FOB "\x03\x07.\\Data\\Script\\TextFunc.Fob RUN 6\x02
-CM1 TextOn RUN d\x02 \x025
-SCE SCE237_002 \x80\x02 \x02\xef! \r \x8c\x01\r\x02 \xf4\x81\x01\x0c"\x03\x98
+  FLAG J
+FOBL "\x03\x07.\\Data\\Script\\TextFunc.Fob RUNF 6\x02
+CMD1 TextOn RUNF d\x02 \x025
+SCEN SCE237_002 \x80\x02 \x02\xef! FLAG \x8c\x01FLAG\x02 \xf4\x81\x01\x0c"\x03\x98
  
 /*▲SE03　１回再生（再生終了を待たず先へ）*/\a2,0,3,0,　キキキキキ……キイキイ……キキキ……キキ……キ@
 \a4,0,0,0,\n軋む音が、耳の音で聞こえた。@
@@ -28,9 +28,9 @@ SCE SCE237_002 \x80\x02 \x02\xef! \r \x8c\x01\r\x02 \xf4\x81\x01\x0c"\x03\x98
 そしてそれは、いままでのすべての記憶を流し去って、新たな悪\n夢を……新たな『おれの世界』を脳髄に産み付けるのだろう。@
 やがてまたこの部屋で目覚めて、教授にすべてを否定され……\
 
-  \r \xc4\x02
-FOB " 6\x02 \x02 d\x02 \x025
-SCE SCE237_003 ^\x05 \x02\xef! \r \x8c\x01\r\x02 \xf8\x81\x01\x0c"\x03\x91
+  FLAG \xc4\x02
+FOBL " 6\x02 \x02 d\x02 \x025
+SCEN SCE237_003 ^\x05 \x02\xef! FLAG \x8c\x01FLAG\x02 \xf8\x81\x01\x0c"\x03\x91
  
 /*▲SE03　１回再生（終了を待たず先へ）*/\a2,0,3,0,　キキキキキ……キイキイ……キキキ……キキ……キ@
 \a4,0,0,0,\n　この悪夢はいつまで続くのだろう？@
@@ -41,9 +41,9 @@ SCE SCE237_003 ^\x05 \x02\xef! \r \x8c\x01\r\x02 \xf8\x81\x01\x0c"\x03\x91
 \a4,0,0,0,\n　/*▲SE03　１回再生（終了を待たず先へ）*/\a2,0,3,0,　キキキキキ……キイキイ……キキキ……キキ……キ@
 \a4,0,0,0,\n　拓司はなま暖かいかたまりにゆっくり飲み込まれながら、ただ\n胎児のように身を丸めて恐怖していた。\
 
-  \r \xa2\x05
-FOB " 6\x02 \x02 d\x02 \x025  \r \xc8
-FOB "\x03\x06.\\Data\\Script\\Bg.Fobsv\x81\x1f:\x08
-CM2 BgAutoFadeInsv\x81\x1fd\x08 \x025\x03\x06.\\Data\\Script\\Bgm.Fobv\x81\x1f\x88\x08
-CM1 StopCD RUN \xb2\x08 \x025 6\x02 \x02
-SCE TextClosev\x81\x1f\xda\x08 \x0256\xf1
+  FLAG \xa2\x05
+FOBL " 6\x02 \x02 d\x02 \x025  FLAG \xc8
+FOBL "\x03\x06.\\Data\\Script\\Bg.Fobsv\x81\x1f:\x08
+CMD2 BgAutoFadeInsv\x81\x1fd\x08 \x025\x03\x06.\\Data\\Script\\Bgm.Fobv\x81\x1f\x88\x08
+CMD1 StopCD RUNF \xb2\x08 \x025 6\x02 \x02
+SCEN TextClosev\x81\x1f\xda\x08 \x0256\xf1

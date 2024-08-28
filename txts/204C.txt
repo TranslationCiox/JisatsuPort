@@ -1,6 +1,6 @@
 START
 \xe7\x05\x01\xa4\t3\x01\n\x04
-SCE SCE204_001 \x06 \x02\xef! \r \x8c\x01\r\x02 `N\x01\x0c"\x03\xcb
+SCEN SCE204_001 \x06 \x02\xef! FLAG \x8c\x01FLAG\x02 `N\x01\x0c"\x03\xcb
  
 ナタネ\n　「さいごに。\p神様が光を創ったように……あなたは鳥を創るこ\n　　とができる。\pこの鳥は、あなたが創った。\p空中からとりだし\n　　た。\pタマゴはなかったし、ヒナの時代もなかった。\pただ、\n　　そこにいきなりあった。\pそしてこの鳥はいま、鳥ではない。@
 　　『鳥』という名前に自体にはなんの意味もない。\pあなたが『\n　　椅子』と名付ければ、これは『椅子』なの。\p『鳥』というの\n　　は、ひとつの世界が定義した呼称にすぎない。\pつまり……完\n　　全なゼロから……思ったままのものを創り出すということは\n　　すなわち……あなたが世界を定義することができるというこ\n　　となの」@
@@ -8,7 +8,7 @@ SCE SCE204_001 \x06 \x02\xef! \r \x8c\x01\r\x02 `N\x01\x0c"\x03\xcb
 拓司はいった。@
 \n拓司\n　「君の言うことが信じられないような真実なのか……途方もな\n　　いウソなのか……それはまず置いておこう。\pそれを決める前\n　　に、いくつか質問をさせてくれ」\
 
-  \r J
-FOB "\x03\x07.\\Data\\Script\\TextFunc.Fob RUN \x96\x03
-CM1 TextOn RUN \xc4\x03 \x025 \x96\x03 \x02
-SCE TextClosev\x81\x1f\xec\x03 \x0256\xf1
+  FLAG J
+FOBL "\x03\x07.\\Data\\Script\\TextFunc.Fob RUNF \x96\x03
+CMD1 TextOn RUNF \xc4\x03 \x025 \x96\x03 \x02
+SCEN TextClosev\x81\x1f\xec\x03 \x0256\xf1

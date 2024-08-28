@@ -1,6 +1,6 @@
 START
 \x9f\x0c\x01`B#\x01H\n
-SCE SCE105_001 \x06 \x02\xef! \r \x8c\x01\r\x02 \xb0\xb3\x0c"\x03\xb7
+SCEN SCE105_001 \x06 \x02\xef! FLAG \x8c\x01FLAG\x02 \xb0\xb3\x0c"\x03\xb7
  
 /*▲BGM　停止*/\a4,-1,0,0,/*■黒　表示（ノンエフェクト）*/\a7,-1,-1,0,\a0,200,1,0,\a6,0,0,0,拓司\n　「もういい、御堂！」@
 \n拓司は御堂を制した。@
@@ -11,10 +11,10 @@ SCE SCE105_001 \x06 \x02\xef! \r \x8c\x01\r\x02 \xb0\xb3\x0c"\x03\xb7
 御堂\n　「まだ覚悟が決まらねえのかよ、虎菱？」@
 拓司\n　「覚悟？\p……それは誰かを殺してでも生き残るってことか？」\
 
-  \r J
-FOB "\x03\x07.\\Data\\Script\\TextFunc.Fob RUN F\x03
-CM1 TextOn RUN t\x03 \x025
-SCE SCE105_002 \x90\x03 \x02\xef! \r \x8c\x01\r\x02 \xb4\xb3\x0c"\x03\x88
+  FLAG J
+FOBL "\x03\x07.\\Data\\Script\\TextFunc.Fob RUNF F\x03
+CMD1 TextOn RUNF t\x03 \x025
+SCEN SCE105_002 \x90\x03 \x02\xef! FLAG \x8c\x01FLAG\x02 \xb4\xb3\x0c"\x03\x88
  
 御堂はしばらく無言だった。\pそれは、拓司の質問をかみ砕いて味\nわっているかのように見えた。\pやがて、御堂はなにかをいいかけ\nたが、思い立ったように言葉を飲み込んだ。@
 そして、ポツリと、粘り着くような口調でいった。@
@@ -24,9 +24,9 @@ SCE SCE105_002 \x90\x03 \x02\xef! \r \x8c\x01\r\x02 \xb4\xb3\x0c"\x03\x88
 頬の内側は、まるで砂漠みたいにカラカラだ。@
 拓司は舌先で唇を湿らせ、震える声でいった。\
 
-  \r \xd4\x03
-FOB " F\x03 \x02 t\x03 \x025
-SCE SCE105_003 .\x06 \x02\xef! \r \x8c\x01\r\x02 \xb8\xb3\x0c"\x03q
+  FLAG \xd4\x03
+FOBL " F\x03 \x02 t\x03 \x025
+SCEN SCE105_003 .\x06 \x02\xef! FLAG \x8c\x01FLAG\x02 \xb8\xb3\x0c"\x03q
  
 拓司\n　「……雲居さん。\p俺たちは……覚悟を……決めている。@
 　　今後、そういう態度をなおしてもらえないようなら、今度こ\n　　そは俺も御堂を止められない……止める気もない」@
@@ -35,9 +35,9 @@ SCE SCE105_003 .\x06 \x02\xef! \r \x8c\x01\r\x02 \xb8\xb3\x0c"\x03q
 なたね\n　「……」@
 \nなたねはジロリと、上目遣いに拓司を睨んだ。\
 
-  \r r\x06
-FOB " F\x03 \x02 t\x03 \x025
-SCE SCE105_004 p\x08 \x02\xef! \r \x8c\x01\r\x02 \xbc\xb3\x0c"\x03L
+  FLAG r\x06
+FOBL " F\x03 \x02 t\x03 \x025
+SCEN SCE105_004 p\x08 \x02\xef! FLAG \x8c\x01FLAG\x02 \xbc\xb3\x0c"\x03L
  
 なたね\n　「……」@
 拓司\n　「……」@
@@ -47,6 +47,6 @@ SCE SCE105_004 p\x08 \x02\xef! \r \x8c\x01\r\x02 \xbc\xb3\x0c"\x03L
 ざー。@
 /*▲SE01　停止*/\a4,2,0,0,\nラジオのノイズだけが小さく一晩中続いていた。\
 
-  \r \xb4\x08
-FOB " F\x03 \x02 t\x03 \x025 F\x03 \x02
-SCE TextClosev\x81\x1f*\n \x0256\xf1
+  FLAG \xb4\x08
+FOBL " F\x03 \x02 t\x03 \x025 F\x03 \x02
+SCEN TextClosev\x81\x1f*\n \x0256\xf1

@@ -1,7 +1,7 @@
 START
 f\x10\x01`B#\x01.\r\x03\x06.\\Data\\Script\\Bgm.Fobv\x81\x1f\x06
-CM1 StopCD RUN 0 \x025
-SCE SCE013_001 L \x02\xef! \r \x8c\x01\r\x02 \xf0#\x0c"\x03\x86
+CMD1 StopCD RUNF 0 \x025
+SCEN SCE013_001 L \x02\xef! FLAG \x8c\x01FLAG\x02 \xf0#\x0c"\x03\x86
  
 拓司\n　「紅葉、ちょっと悪い」@
 紅葉\n　「え……あ……ウン」@
@@ -12,10 +12,10 @@ SCE SCE013_001 L \x02\xef! \r \x8c\x01\r\x02 \xf0#\x0c"\x03\x86
 　わけがわからないのは拓司である。\pいったい何事かと速度をさ\nらに上げると、それに気づいたのか、早桃も全力疾走を始める。@
 \n拓司\n　「早桃！　……あっ！」\
 
-  \r \x90
-FOB "\x03\x07.\\Data\\Script\\TextFunc.Fob RUN \xc8\x02
-CM1 TextOn RUN \xf6\x02 \x025
-SCE SCE013_002 \x12\x03 \x02\xef! \r \x8c\x01\r\x02 \xf4#\x0c"\x03\x97
+  FLAG \x90
+FOBL "\x03\x07.\\Data\\Script\\TextFunc.Fob RUNF \xc8\x02
+CMD1 TextOn RUNF \xf6\x02 \x025
+SCEN SCE013_002 \x12\x03 \x02\xef! FLAG \x8c\x01FLAG\x02 \xf4#\x0c"\x03\x97
  
 /*【画面／演出】　車の急ブレーキ音　キキキキー！//　　　　　　　早桃、どしゃっと転倒する音。しばし間を取っ//てから*//*▲SE31　再生（再生終了まで待つ）*/\a2,0,31,0,\a3,0,0,0,\a4,0,0,0,運転手\n　「……バカヤロー！　死にてえのか！」@
 /*【画面／演出】　車が走り去っていく//■CG03　表示（クロスフェード）        //>CG03*/\a7,-2,-2,0,\a0,2,2,0,\a6,-2,0,0,拓司\n　「大丈夫か、早桃！」@
@@ -23,9 +23,9 @@ SCE SCE013_002 \x12\x03 \x02\xef! \r \x8c\x01\r\x02 \xf4#\x0c"\x03\x97
 \n　拓司は慌てて早桃の元に駆け寄った。転倒の衝撃で鞄の鍵が開\nいてしまったのだろう、教科書やら文房具やらが、道路に散乱し\nている。@
 　駆け寄った拓司を無視して、早桃は黙々と荷物を拾い始めた。\
 
-  \r V\x03
-FOB " \xc8\x02 \x02 \xf6\x02 \x025
-SCE SCE013_003 \xec\x05 \x02\xef! \r \x8c\x01\r\x02 \xf8#\x0c"\x03>
+  FLAG V\x03
+FOBL " \xc8\x02 \x02 \xf6\x02 \x025
+SCEN SCE013_003 \xec\x05 \x02\xef! FLAG \x8c\x01FLAG\x02 \xf8#\x0c"\x03>
  
 拓司\n　「大丈夫か、早桃？」　@
 早桃\n　「……」@
@@ -34,9 +34,9 @@ SCE SCE013_003 \xec\x05 \x02\xef! \r \x8c\x01\r\x02 \xf8#\x0c"\x03>
 拓司\n　「どうしたってんだよ……あ？！」@
 \n　拓司は息を呑んだ。\n　キッと振り仰いだ早桃の瞳は、涙で泉のように潤んでいた。\
 
-  \r 0\x06
-FOB " \xc8\x02 \x02 \xf6\x02 \x025
-SCE SCE013_004 b\x07 \x02\xef! \r \x8c\x01\r\x02 \xfc#\x0c"\x03t
+  FLAG 0\x06
+FOBL " \xc8\x02 \x02 \xf6\x02 \x025
+SCEN SCE013_004 b\x07 \x02\xef! FLAG \x8c\x01FLAG\x02 \xfc#\x0c"\x03t
  
 拓司\n　「早桃……」@
 早桃\n　「なんで？　なんで追っかけてくるの？」@
@@ -46,20 +46,20 @@ SCE SCE013_004 b\x07 \x02\xef! \r \x8c\x01\r\x02 \xfc#\x0c"\x03t
 　　ずるいよ、おにいちゃん、知ってるくせに……見てたくせに\n　　！\p早桃が知らないと思ってるの？\p　知ってるんだよ？@
 　　おにいちゃんがどんなこと考えてるかなんて、全部わかって\n　　るんだから！」@
 \nそこまでいってから早桃は顔を覆い、わっと泣き始めた。\w\z
-  \r \xa6\x07
-FOB " \xc8\x02 \x02 \xf6\x02 \x025
-SCE SCE013_005 \xb0\t \x02\xef! \r \x8c\x01\r\x02 $\x0c"\x03\x1a
+  FLAG \xa6\x07
+FOBL " \xc8\x02 \x02 \xf6\x02 \x025
+SCEN SCE013_005 \xb0\t \x02\xef! FLAG \x8c\x01FLAG\x02 $\x0c"\x03\x1a
  
 /*■黒　表示（ノンエフェクト）*/\a7,-1,-1,0,\a0,200,1,0,\a6,0,0,0,早桃\n　「……ごめんなさい」\
 
-  \r \xf4\t
-FOB " \xc8\x02 \x02 \xf6\x02 \x025
-SCE SCE013_006 \x96\n \x02\xef! \r \x8c\x01\r\x02 \x04$\x0c"\x03|
+  FLAG \xf4\t
+FOBL " \xc8\x02 \x02 \xf6\x02 \x025
+SCEN SCE013_006 \x96\n \x02\xef! FLAG \x8c\x01FLAG\x02 \x04$\x0c"\x03|
  
 /*【画面／演出】　早桃、タタタと駆け去ってゆく。代わって//紅葉、タタタと駆け寄ってくる。//▲SE20　再生（再生終了まで待つ）*/\a2,0,20,0,\a3,0,0,0,\a4,0,0,0,紅葉\n　「……どうしたの？」@
 拓司\n　「なんでもない。……なんでもないんだ」@
 \n　早桃の中でも、なにかが限界を迎えようとしている。\n　すでになにかが起こり始めていた。終わりに向けて、それはと\nどまることなく転がっていくのだろう。スイッチは押されてしま\nった。それは、目の前のあらゆるものをなぎ倒しながら、転がり\n続けていくのだ。@
 \z
-  \r \xda\n
-FOB " \xc8\x02 \x02 \xf6\x02 \x025 \xc8\x02 \x02
-SCE TextClosev\x81\x1f\x10\r \x0256\xf1
+  FLAG \xda\n
+FOBL " \xc8\x02 \x02 \xf6\x02 \x025 \xc8\x02 \x02
+SCEN TextClosev\x81\x1f\x10\r \x0256\xf1

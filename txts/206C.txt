@@ -1,6 +1,6 @@
 START
 \xcf\x04\x01\xa4\t3\x01:\x03
-SCE SCE206_001 \x06 \x02\xef! \r \x8c\x01\r\x02 \x80Q\x01\x0c"\x03\x97
+SCEN SCE206_001 \x06 \x02\xef! FLAG \x8c\x01FLAG\x02 \x80Q\x01\x0c"\x03\x97
  
 拓司\n　「君はいま、おれに世界の真実を教えてくれた。\pでも、だとし\n　　たら、君は誰なんだ？\p　どうして君がそんなことを知って\n　　いる？」@
 ナタネ\n　「私は雲居ナタネ。\pなぜなら、あなたがそう名付けたから」@
@@ -8,7 +8,7 @@ SCE SCE206_001 \x06 \x02\xef! \r \x8c\x01\r\x02 \x80Q\x01\x0c"\x03\x97
 ナタネ\n　「私という存在は、あなたが『願』って『創った』ものなの。@
 　　あなたは、すべての真実を語って聞かせてくれる者の出現を\n　　……自分を救う者の存在を『願った』。\pだから私は、ここに\n　　『創』られた。\pこの姿……雲居なたねの形として創られた\n　　のは、あなたがそれを望んだから。\p理解できないものの解説\n　　役として、雲居なたねを望んだからなの」\
 
-  \r J
-FOB "\x03\x07.\\Data\\Script\\TextFunc.Fob RUN \xc6\x02
-CM1 TextOn RUN \xf4\x02 \x025 \xc6\x02 \x02
-SCE TextClosev\x81\x1f\x1c\x03 \x0256\xf1
+  FLAG J
+FOBL "\x03\x07.\\Data\\Script\\TextFunc.Fob RUNF \xc6\x02
+CMD1 TextOn RUNF \xf4\x02 \x025 \xc6\x02 \x02
+SCEN TextClosev\x81\x1f\x1c\x03 \x0256\xf1

@@ -1,6 +1,6 @@
 START
 \xf8\x05\x01\xa4\t3\x01\xcc\x03
-SCE SCE071_001 \x06 \x02\xef! \r \x8c\x01\r\x02 \x90~\x0c"\x03o
+SCEN SCE071_001 \x06 \x02\xef! FLAG \x8c\x01FLAG\x02 \x90~\x0c"\x03o
  
 拓司たちは２階の渡り廊下を目指して駆けた。@
 しかし、渡り廊下まであとわずか、というところでなたねが立ち\n止まって鋭く叫んだ。@
@@ -10,13 +10,13 @@ SCE SCE071_001 \x06 \x02\xef! \r \x8c\x01\r\x02 \x90~\x0c"\x03o
 \nわずかの迷いすらない断定口調に、拓司はやや呑まれた。@
 ただ、別のコースを選ぶといっても、ここからではひどく遠回り\nな道しか残されていない。\
 
-  \r J
-FOB "\x03\x07.\\Data\\Script\\TextFunc.Fob RUN &\x02
-CM1 TextOn RUN T\x02 \x025\x03>
+  FLAG J
+FOBL "\x03\x07.\\Data\\Script\\TextFunc.Fob RUNF &\x02
+CMD1 TextOn RUNF T\x02 \x025\x03>
 CHOICE
 なたねの警告を無視して渡り廊下をそのまま進む\n３階まで上りなおしてそこの渡り廊下に向かい、旧校舎へ移動する\n４階まで上りなおしてそこの渡り廊下に向かい、旧校舎へ移動する\n１階までくだり、一度外に出て、中庭を通って旧校舎へ移動する\n\l0,4,
 ENDCHOICE
 
-  \r p\x02
-FOB " &\x02 \x02 T\x02 \x025 &\x02 \x02
-SCE TextClosev\x81\x1f\xae\x03 \x0256\xf1
+  FLAG p\x02
+FOBL " &\x02 \x02 T\x02 \x025 &\x02 \x02
+SCEN TextClosev\x81\x1f\xae\x03 \x0256\xf1

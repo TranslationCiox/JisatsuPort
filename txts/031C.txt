@@ -1,6 +1,6 @@
 START
 \x0f\x12\x01`B#\x01d\x0f
-SCE SCE031_001 \x06 \x02\xef! \r \x8c\x01\r\x02 \x10@\x0c"\x03m
+SCEN SCE031_001 \x06 \x02\xef! FLAG \x8c\x01FLAG\x02 \x10@\x0c"\x03m
  
 スーパーのビニール袋に野良猫を詰め、廃墟となった五号棟の５階\nの窓からそれを放り投げていた月代カンナ。@
 どうして、という拓司の質問に、カンナはいまと同じ様な哄笑を返\nした。@
@@ -10,10 +10,10 @@ SCE SCE031_001 \x06 \x02\xef! \r \x8c\x01\r\x02 \x10@\x0c"\x03m
 \nカンナ\n　「理由なんて無いわ。こうしてると……生きてるって感じがする\n　　の」@
 \nその言葉を聞いて－－そして目の奥のどんよりとした無感動を見て\n－－この少女が自分の同類であることを、拓司は一瞬にして悟った\nのだった。\
 
-  \r J
-FOB "\x03\x07.\\Data\\Script\\TextFunc.Fob RUN \x1e\x02
-CM1 TextOn RUN L\x02 \x025
-SCE SCE031_002 h\x02 \x02\xef! \r \x8c\x01\r\x02 \x14@\x0c"\x03\x90
+  FLAG J
+FOBL "\x03\x07.\\Data\\Script\\TextFunc.Fob RUNF \x1e\x02
+CMD1 TextOn RUNF L\x02 \x025
+SCEN SCE031_002 h\x02 \x02\xef! FLAG \x8c\x01FLAG\x02 \x14@\x0c"\x03\x90
  
 \n　月代カンナのなかにある暗い穴に、拓司はまっさかさまに落ちて\n　いった。@
 　たとえばインターネットのデスサイト。@
@@ -26,9 +26,9 @@ SCE SCE031_002 h\x02 \x02\xef! \r \x8c\x01\r\x02 \x14@\x0c"\x03\x90
 　ショーウインドウに並べられた死、死、死。@
 　そこにあるのは確実な死のかたちであり、生きている自分には明\n　らかに所属していないものたちだった。\p拓司は取り憑かれたよう\n　にパソコンの前に張り付き、電脳の波に流されてくる情報をむさ\n　ぼった。\
 
-  \r \xac\x02
-FOB " \x1e\x02 \x02 L\x02 \x025
-SCE SCE031_003 &\x05 \x02\xef! \r \x8c\x01\r\x02 \x18@\x0c"\x03\xe1
+  FLAG \xac\x02
+FOBL " \x1e\x02 \x02 L\x02 \x025
+SCEN SCE031_003 &\x05 \x02\xef! FLAG \x8c\x01FLAG\x02 \x18@\x0c"\x03\xe1
  
 　月代カンナは、続いて猟奇殺人事件の本を拓司にリリースした。@
 　しっかりとしたルポルタージュもあれば、興味本位のゲテモノも\n　あった。@
@@ -39,9 +39,9 @@ SCE SCE031_003 &\x05 \x02\xef! \r \x8c\x01\r\x02 \x18@\x0c"\x03\xe1
 　物珍しさとショックに変わって、おなじみの倦怠感と、そして意\n　外にも『恥ずかしい』という感覚がやってきた。\p自分が、インタ\n　ーネットにしか居場所を見つけられない社会不適合者の一員とな\n　ってしまったような、あるいは訳知り顔のサブカル信者になって\n　しまったような、そんな気がしたのだ。@
 　その他大勢への、陳腐な成り下がり。\
 
-  \r j\x05
-FOB " \x1e\x02 \x02 L\x02 \x025
-SCE SCE031_004 (\t \x02\xef! \r \x8c\x01\r\x02 \x1c@\x0c"\x03\xcb
+  FLAG j\x05
+FOBL " \x1e\x02 \x02 L\x02 \x025
+SCEN SCE031_004 (\t \x02\xef! FLAG \x8c\x01FLAG\x02 \x1c@\x0c"\x03\xcb
  
 拓司は自ら志願して、団地からの『猫落とし』をカンナと一緒に行\nった。@
 強烈な死の体験だった。@
@@ -52,16 +52,18 @@ SCE SCE031_004 (\t \x02\xef! \r \x8c\x01\r\x02 \x1c@\x0c"\x03\xcb
 拓司は手を伸ばしてカンナの身体を掴み、乱暴に抱き寄せて、口の\n奥にまで届くキスをした。\pカンナの舌が乱暴に拓司の中へねじりこ\nまれ、口の中をねぶり回した。\pそしてカンナはその最中、首を絞め\nて欲しいと懇願したのだった。@
 そのとき、拓司は初めて女の首を絞めたのだった。\
 
-  \r l\t
-FOB " \x1e\x02 \x02 L\x02 \x025 \x1e\x02 \x02\x03\x05TextWindowOffDirect \xde\x0c \x025  \r \xca
-FOB "\x03\x06.\\Data\\Script\\Bg.Fobsv\x81\x1f \r
-CM1 BgOnsv\x81\x1fJ\r \x025  \r \x01
-FOB "\x03\x07.\\Data\\Script\\TextFunc.fob RUN \x80\r \x02
-SCE WaitTimesv\x81\x1f\xae\r \x025  \r \xc8
-FOB "  \r \x02 J\r \x025  \r \x01
-FOB " \x80\r \x02 \xae\r \x025  \r \xca
-FOB "  \r \x02 J\r \x025  \r \x01
-FOB " \x80\r \x02 \xae\r \x025  \r \xc8
-FOB "  \r \x02 J\r \x025  \r \x01
-FOB " \x80\r \x02 \xae\r \x025 \x1e\x02 \x02\x03\x05TextWindowOnDirect RUN \x12\x0f \x025 \x1e\x02 \x02
-SCE TextClosev\x81\x1fF\x0f \x0256\xf1
+  FLAG l\t
+FOBL " \x1e\x02 \x02 L\x02 \x025 \x1e\x02 
+WAVL TextWindowOffDirect \xde\x0c \x025  FLAG \xca
+FOBL "\x03\x06.\\Data\\Script\\Bg.Fobsv\x81\x1f \r
+CMD1 BgOnsv\x81\x1fJ\r \x025  FLAG \x01
+FOBL "\x03\x07.\\Data\\Script\\TextFunc.fob RUNF \x80\r \x02
+SCEN WaitTimesv\x81\x1f\xae\r \x025  FLAG \xc8
+FOBL "  \r \x02 J\r \x025  FLAG \x01
+FOBL " \x80\r \x02 \xae\r \x025  FLAG \xca
+FOBL "  \r \x02 J\r \x025  FLAG \x01
+FOBL " \x80\r \x02 \xae\r \x025  FLAG \xc8
+FOBL "  \r \x02 J\r \x025  FLAG \x01
+FOBL " \x80\r \x02 \xae\r \x025 \x1e\x02 
+WAVL TextWindowOnDirect RUNF \x12\x0f \x025 \x1e\x02 \x02
+SCEN TextClosev\x81\x1fF\x0f \x0256\xf1

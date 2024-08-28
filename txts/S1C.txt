@@ -1,8 +1,8 @@
 START
-B\x19\x01`B#\x01\xea\x14  \r @
-FOB "\x03\x06.\\Data\\Script\\Bg.Fobsv\x81\x1f 
-CM2 BgAutoFadeInsv\x81\x1fJ \x025
-SCE SCES01_001 n \x02\xef! \r \x8c\x01\r\x02 \x80\xb5\x01\x0c"\x03w
+B\x19\x01`B#\x01\xea\x14  FLAG @
+FOBL "\x03\x06.\\Data\\Script\\Bg.Fobsv\x81\x1f 
+CMD2 BgAutoFadeInsv\x81\x1fJ \x025
+SCEN SCES01_001 n \x02\xef! FLAG \x8c\x01FLAG\x02 \x80\xb5\x01\x0c"\x03w
  
 早桃\n　「ごめんね」@
 \n早桃はそう話を切りだした。@
@@ -13,10 +13,10 @@ SCE SCES01_001 n \x02\xef! \r \x8c\x01\r\x02 \x80\xb5\x01\x0c"\x03w
 早桃\n　「早桃に、罰が当たったんだとおもう。\pそれに、おにいちゃん\n　　まで巻き込んじゃった」@
 拓司\n　「なにをいってるんだ？\p　罰とか、巻き込むとか。\pお前のせい\n　　なはずがないだろう？\p　世界がいかれちまったのは、誰のせ\n　　いでもない」\
 
-  \r \xb2
-FOB "\x03\x07.\\Data\\Script\\TextFunc.Fob RUN \xae\x02
-CM1 TextOn RUN \xdc\x02 \x025
-SCE SCES01_002 \xf8\x02 \x02\xef! \r \x8c\x01\r\x02 \x84\xb5\x01\x0c"\x03c
+  FLAG \xb2
+FOBL "\x03\x07.\\Data\\Script\\TextFunc.Fob RUNF \xae\x02
+CMD1 TextOn RUNF \xdc\x02 \x025
+SCEN SCES01_002 \xf8\x02 \x02\xef! FLAG \x8c\x01FLAG\x02 \x84\xb5\x01\x0c"\x03c
  
 早桃はしばらく黙り込んで何かを考えている様子だった。@
 やがて@
@@ -27,9 +27,9 @@ SCE SCES01_002 \xf8\x02 \x02\xef! \r \x8c\x01\r\x02 \x84\xb5\x01\x0c"\x03c
 早桃\n　「前のお父さんがね、神様信じてたんだ。\pだから、子供の頃は\n　　教会によく連れていかれたの」@
 拓司\n　「へえ。\p初耳だな」\
 
-  \r <\x03
-FOB " \xae\x02 \x02 \xdc\x02 \x025
-SCE SCES01_003 \x02\x05 \x02\xef! \r \x8c\x01\r\x02 \x88\xb5\x01\x0c"\x03\x9b
+  FLAG <\x03
+FOBL " \xae\x02 \x02 \xdc\x02 \x025
+SCEN SCES01_003 \x02\x05 \x02\xef! FLAG \x8c\x01FLAG\x02 \x88\xb5\x01\x0c"\x03\x9b
  
 早桃\n　「お母さんはそういうのも含めてお父さんのこと嫌いだったみ\n　　たいだから……。\pそれでね、教会に懺悔室っていうのがある\n　　の、知ってる？」@
 拓司\n　「ああ、電話ボックスみたいなのに入って、神父に自分の罪を\n　　告白する……アレか？」@
@@ -37,9 +37,9 @@ SCE SCES01_003 \x02\x05 \x02\xef! \r \x8c\x01\r\x02 \x88\xb5\x01\x0c"\x03\x9b
 　　だから昔の人は、懺悔室っていう罪の意識を埋める穴を作っ\n　　たんだって」@
 拓司\n　「そういうもんかね。\p昔の人はウソをしまい込むフトコロが小\n　　さかったんだな」\
 
-  \r F\x05
-FOB " \xae\x02 \x02 \xdc\x02 \x025
-SCE SCES01_004 \xec\x07 \x02\xef! \r \x8c\x01\r\x02 \x8c\xb5\x01\x0c"\x03\xcd
+  FLAG F\x05
+FOBL " \xae\x02 \x02 \xdc\x02 \x025
+SCEN SCES01_004 \xec\x07 \x02\xef! FLAG \x8c\x01FLAG\x02 \x8c\xb5\x01\x0c"\x03\xcd
  
 早桃\n　「早桃も、そう思ってた。\p誰だってウソくらいつくことはある\n　　し、悪いことだってする。\pでも、そんなの黙ってればいいこ\n　　とじゃないかって。\pでもね、おにいちゃん。\pそうじゃないの。\n　　\p大きすぎるウソは、やっぱりムシバムの。@
 　　ひっぱっていくの」@
@@ -48,9 +48,9 @@ SCE SCES01_004 \xec\x07 \x02\xef! \r \x8c\x01\r\x02 \x8c\xb5\x01\x0c"\x03\xcd
 　　なにもかもが、暗い方に暗い方に転がっていく。\p笑わないで\n　　欲しいんだけど……呪いみたいなものなの。\p映画で、だんだ\n　　ん痩せていく呪いをかけられた人の話があったでしょ？@
 　　そんな感じ。\pだんだん死んでいくの。\p少しずつ、少しずつい\n　　ろんなものが自分のなかで腐っていって、ウソのなかに吸い\n　　込まれて消えていくの。\p懺悔室は、呪いを解く場所なんだと\n　　……思う」\
 
-  \r 0\x08
-FOB " \xae\x02 \x02 \xdc\x02 \x025
-SCE SCES01_005 \x9e\x0b \x02\xef! \r \x8c\x01\r\x02 \x90\xb5\x01\x0c"\x03x
+  FLAG 0\x08
+FOBL " \xae\x02 \x02 \xdc\x02 \x025
+SCEN SCES01_005 \x9e\x0b \x02\xef! FLAG \x8c\x01FLAG\x02 \x90\xb5\x01\x0c"\x03x
  
 拓司\n　「話せよ」@
 早桃\n　「……」@
@@ -62,18 +62,18 @@ SCE SCES01_005 \x9e\x0b \x02\xef! \r \x8c\x01\r\x02 \x90\xb5\x01\x0c"\x03x
 拓司\n　「虎菱拓司にも、いわない」@
 早桃\n　「……わかった」\
 
-  \r \xe2\x0b
-FOB " \xae\x02 \x02 \xdc\x02 \x025
-SCE SCES01_006 \xfc\r \x02\xef! \r \x8c\x01\r\x02 \x94\xb5\x01\x0c"\x03E
+  FLAG \xe2\x0b
+FOBL " \xae\x02 \x02 \xdc\x02 \x025
+SCEN SCES01_006 \xfc\r \x02\xef! FLAG \x8c\x01FLAG\x02 \x94\xb5\x01\x0c"\x03E
  
 早桃はしばらくじっと天井を見上げて無言だった。@
 横顔には、心の中の激しい葛藤が伺えた。@
 早桃はそうした感情の揺らぎを必死に組み伏して、整理して、言\n葉に変えようともがいているように見えた。@
 やがて早桃は、ぽつり、ぽつり、と少しずつ自らの罪の物語を、\n語り始めた\
 
-  \r @\x0e
-FOB " \xae\x02 \x02 \xdc\x02 \x025
-SCE SCES01_007 \x8e\x0f \x02\xef! \r \x8c\x01\r\x02 \x98\xb5\x01\x0c"\x03\\
+  FLAG @\x0e
+FOBL " \xae\x02 \x02 \xdc\x02 \x025
+SCEN SCES01_007 \x8e\x0f \x02\xef! FLAG \x8c\x01FLAG\x02 \x98\xb5\x01\x0c"\x03\\
  
 うまく話せそうにないから、思いついたことから話していくね。@
 ええと……@
@@ -83,9 +83,9 @@ SCE SCES01_007 \x8e\x0f \x02\xef! \r \x8c\x01\r\x02 \x98\xb5\x01\x0c"\x03\\
 小学校３年生くらいかな。@
 お父さんとお母さんと一緒に、車で行ったの。\
 
-  \r \xd2\x0f
-FOB " \xae\x02 \x02 \xdc\x02 \x025
-SCE SCES01_008 |\x11 \x02\xef! \r \x8c\x01\r\x02 \x9c\xb5\x01\x0c"\x03\x93
+  FLAG \xd2\x0f
+FOBL " \xae\x02 \x02 \xdc\x02 \x025
+SCEN SCES01_008 |\x11 \x02\xef! FLAG \x8c\x01FLAG\x02 \x9c\xb5\x01\x0c"\x03\x93
  
 初めて見た海は、本で読んだり、テレビで見たりしたのとは全然\n違った。@
 早桃、海の水って、青いものだと思ってたんだよ。@
@@ -97,8 +97,8 @@ SCE SCES01_008 |\x11 \x02\xef! \r \x8c\x01\r\x02 \x9c\xb5\x01\x0c"\x03\x93
 綺麗だからとか、広いからとか、そういう理由はあとからくっつ\nいてきたんだと思う。@
 途中がなくて、いきなり、『好き』って気持ちが胸の中にいっぱ\nいになって……泣いちゃった。\
 
-  \r \xc0\x11
-FOB " \xae\x02 \x02 \xdc\x02 \x025\x03\x06.\\Data\\Script\\Bgm.Fobv\x81\x1fF\x14
-CM1 StopCD RUN p\x14 \x025  \r \xc8
-FOB "   \x02 J \x025 \xae\x02 \x02
-SCE TextClosev\x81\x1f\xcc\x14 \x0256\xf1
+  FLAG \xc0\x11
+FOBL " \xae\x02 \x02 \xdc\x02 \x025\x03\x06.\\Data\\Script\\Bgm.Fobv\x81\x1fF\x14
+CMD1 StopCD RUNF p\x14 \x025  FLAG \xc8
+FOBL "   \x02 J \x025 \xae\x02 \x02
+SCEN TextClosev\x81\x1f\xcc\x14 \x0256\xf1

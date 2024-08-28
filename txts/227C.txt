@@ -1,13 +1,13 @@
 START
 \xea\x1b\x01`B#\x01 \x17
-SCE SCE227_001 \x06 \x02\xef! \r \x8c\x01\r\x02 Pr\x01\x0c"\x03\x11
+SCEN SCE227_001 \x06 \x02\xef! FLAG \x8c\x01FLAG\x02 Pr\x01\x0c"\x03\x11
  
 \n\n\n\n\n\n\n\n\n\n　　　　　　　　　　　　　『１３日目』\
 
-  \r J
-FOB "\x03\x07.\\Data\\Script\\TextFunc.Fob RUN \xae
-CM1 TextOn RUN \xdc \x025
-SCE SCE227_002 \xf8 \x02\xef! \r \x8c\x01\r\x02 Tr\x01\x0c"\x03u
+  FLAG J
+FOBL "\x03\x07.\\Data\\Script\\TextFunc.Fob RUNF \xae
+CMD1 TextOn RUNF \xdc \x025
+SCEN SCE227_002 \xf8 \x02\xef! FLAG \x8c\x01FLAG\x02 Tr\x01\x0c"\x03u
  
 朝。@
 トイレを使うために実験室に現れた錦城に、カンナがいった。@
@@ -19,9 +19,9 @@ SCE SCE227_002 \xf8 \x02\xef! \r \x8c\x01\r\x02 Tr\x01\x0c"\x03u
 \n朝からずっと押し黙っているので妙だとは思っていたが……拓司\nたちは目を丸くした。\p早桃は怯えたように、拓司のシャツの袖を\n握りしめた。@
 努めて無表情のカンナを、錦城は勝ち誇って見下ろした。\
 
-  \r <\x01
-FOB " \xae \x02 \xdc \x025
-SCE SCE227_003 J\x03 \x02\xef! \r \x8c\x01\r\x02 Xr\x01\x0c"\x03]
+  FLAG <\x01
+FOBL " \xae \x02 \xdc \x025
+SCEN SCE227_003 J\x03 \x02\xef! FLAG \x8c\x01FLAG\x02 Xr\x01\x0c"\x03]
  
 錦城\n　「あら、昨日はあんなにつっぱってたのに。どういう風の吹き\n　　回し？」@
 カンナ\n　「行きますから、そのかわり、食糧を約束通り配ってください」\n\p錦城\n　「……ふぅん」@
@@ -31,9 +31,9 @@ SCE SCE227_003 J\x03 \x02\xef! \r \x8c\x01\r\x02 Xr\x01\x0c"\x03]
 錦城\n　「……」@
 カンナ\n　「……すみませんでした」\
 
-  \r \x8e\x03
-FOB " \xae \x02 \xdc \x025
-SCE SCE227_004 <\x05 \x02\xef! \r \x8c\x01\r\x02 \\r\x01\x0c"\x03S
+  FLAG \x8e\x03
+FOBL " \xae \x02 \xdc \x025
+SCEN SCE227_004 <\x05 \x02\xef! FLAG \x8c\x01FLAG\x02 \\r\x01\x0c"\x03S
  
 錦城\n　「それだけ？」@
 カンナ\n　「今後は秩序を乱すような行動は慎みます」@
@@ -44,9 +44,9 @@ SCE SCE227_004 <\x05 \x02\xef! \r \x8c\x01\r\x02 \\r\x01\x0c"\x03S
 錦城\n　「みんなの前で、私の便器になって。\pそうしたら許してあげ\n　　る」@
 カンナ\n　「便器って－－」\
 
-  \r \x80\x05
-FOB " \xae \x02 \xdc \x025
-SCE SCE227_005 \x06\x07 \x02\xef! \r \x8c\x01\r\x02 `r\x01\x0c"\x03u
+  FLAG \x80\x05
+FOBL " \xae \x02 \xdc \x025
+SCEN SCE227_005 \x06\x07 \x02\xef! FLAG \x8c\x01FLAG\x02 `r\x01\x0c"\x03u
  
 錦城\n　「そのままの意味だけれど。\pいまから、先生のおしっこを飲ん\n　　でくれればそれでいいの」@
 カンナ\n　「な、なにを－－！」@
@@ -59,9 +59,9 @@ SCE SCE227_005 \x06\x07 \x02\xef! \r \x8c\x01\r\x02 `r\x01\x0c"\x03u
 カンナ\n　「……トイレに……なります」@
 錦城\n　「便器」\
 
-  \r J\x07
-FOB " \xae \x02 \xdc \x025
-SCE SCE227_006 X\t \x02\xef! \r \x8c\x01\r\x02 dr\x01\x0c"\x03n
+  FLAG J\x07
+FOBL " \xae \x02 \xdc \x025
+SCEN SCE227_006 X\t \x02\xef! FLAG \x8c\x01FLAG\x02 dr\x01\x0c"\x03n
  
 錦城は意地悪く言い直した。\p机に腰をかけ、見せつけるように足\nを組む。@
 \n錦城\n　「トイレじゃなくて便器でしょ？\p　きちんといいなおして」@
@@ -72,9 +72,9 @@ SCE SCE227_006 X\t \x02\xef! \r \x8c\x01\r\x02 dr\x01\x0c"\x03n
 錦城\n　「声が小さい！」@
 カンナ\n　「……よ、喜んで錦城先生の人間便器になります」\
 
-  \r \x9c\t
-FOB " \xae \x02 \xdc \x025
-SCE SCE227_007 \x8e\x0b \x02\xef! \r \x8c\x01\r\x02 hr\x01\x0c"\x03y
+  FLAG \x9c\t
+FOBL " \xae \x02 \xdc \x025
+SCEN SCE227_007 \x8e\x0b \x02\xef! FLAG \x8c\x01FLAG\x02 hr\x01\x0c"\x03y
  
 錦城\n　「『お願いします。\p私におしっこしてください』」@
 カンナ\n　「お願い……します。\p私におしっこして……ください」@
@@ -85,11 +85,11 @@ SCE SCE227_007 \x8e\x0b \x02\xef! \r \x8c\x01\r\x02 hr\x01\x0c"\x03y
 \n拓司\n　「カンナ、もう十分だ。\pもう……」@
 カンナ\n　「黙っていて。\p大丈夫だから。\pこんなの、なんでもないから」\
 
-  \r \xd2\x0b
-FOB " \xae \x02 \xdc \x025  \r \x05\x01
-FOB "\x03\x06.\\Data\\Script\\Bgm.Fobv\x81\x1f\n\x0e
-CM1 PlayCD RUN 4\x0e \x025
-SCE SCE227_008 P\x0e \x02\xef! \r \x8c\x01\r\x02 lr\x01\x0c"\x03\xa1
+  FLAG \xd2\x0b
+FOBL " \xae \x02 \xdc \x025  FLAG \x05\x01
+FOBL "\x03\x06.\\Data\\Script\\Bgm.Fobv\x81\x1f\n\x0e
+CMD1 PlayCD RUNF 4\x0e \x025
+SCEN SCE227_008 P\x0e \x02\xef! FLAG \x8c\x01FLAG\x02 lr\x01\x0c"\x03\xa1
  
 錦城は、目を逸らさないように、と全員に命じた。@
 見せつけるように下着を脱ぎ、足を開く。@
@@ -98,9 +98,9 @@ SCE SCE227_008 P\x0e \x02\xef! \r \x8c\x01\r\x02 lr\x01\x0c"\x03\xa1
 拓司は目を反らした。\pしかしめざとく錦城がそれを見とがめる。@
 /*■HCG18　表示（クロスフェード）*/\a7,-2,-2,0,\a0,89,2,0,\a6,-2,0,0,\n錦城\n　「しっかりみておくのよ。\p誰か一人でも目を反らした場合、彼\n　　女の努力は無駄になりますからね？\p　いい、これは授業なの。\n　　\p生意気な態度をとったガキがどうなるか、それを教えてあげ\n　　ているの。\pほら、便器ちゃん。はやく口をつけなさいよ！」\
 
-  \r \x94\x0e
-FOB " \xae \x02 \xdc \x025
-SCE SCE227_009 R\x11 \x02\xef! \r \x8c\x01\r\x02 pr\x01\x0c"\x03\x8a
+  FLAG \x94\x0e
+FOBL " \xae \x02 \xdc \x025
+SCEN SCE227_009 R\x11 \x02\xef! FLAG \x8c\x01FLAG\x02 pr\x01\x0c"\x03\x8a
  
 錦城の足のあいだにひざまづき、カンナは目を閉じ、口を開いた。\n\pその口が自分の性器に密着したのを確認してから、錦城は整った\n顔をわずかにゆがめた。@
 放尿が始まった。@
@@ -111,17 +111,17 @@ SCE SCE227_009 R\x11 \x02\xef! \r \x8c\x01\r\x02 pr\x01\x0c"\x03\x8a
 錦城\n　「た、他人の排泄物を喉を鳴らして飲み下すなんて。\pなんて汚\n　　らしいガキなの？！」@
 カンナ\n　「くむ……ごきゅっ……ごきゅ……むぐんん……」\
 
-  \r \x96\x11
-FOB " \xae \x02 \xdc \x025
-SCE SCE227_010 \xf8\x13 \x02\xef! \r \x8c\x01\r\x02 tr\x01\x0c"\x03|
+  FLAG \x96\x11
+FOBL " \xae \x02 \xdc \x025
+SCEN SCE227_010 \xf8\x13 \x02\xef! FLAG \x8c\x01FLAG\x02 tr\x01\x0c"\x03|
  
 錦城\n　「あら、涙流して喜んでるの？\p　あははは、まったくもう、ど\n　　ういう教育を受けてきたのかしら？\p　このままじゃ将来ロク\n　　な大人にはならないわ。\pいまのうちにしっかり便器として教\n　　育しておいたほうがよさそうね。\pそうすれば就職はお便所に\n　　決定。\p進路指導も楽でいいわ、あはははは！」@
 \n嚥下しきれない尿が、カンナの口の端からボタボタと流れ落ちる。\n\pスカートの上に、錦城の汚液が染みをつくる。@
 錦城はカンナの頭を両手で固定し、狂気に支配された顔で笑い続\nけた。\
 
-  \r <\x14
-FOB " \xae \x02 \xdc \x025  \r \xc8
-FOB "\x03\x06.\\Data\\Script\\Bg.Fobsv\x81\x1f\x80\x16
-CM2 BgAutoFadeInsv\x81\x1f\xaa\x16 \x025 \n\x0e
-CM1 StopCD RUN \xda\x16 \x025 \xae \x02
-SCE TextClosev\x81\x1f\x02\x17 \x0256\xf1
+  FLAG <\x14
+FOBL " \xae \x02 \xdc \x025  FLAG \xc8
+FOBL "\x03\x06.\\Data\\Script\\Bg.Fobsv\x81\x1f\x80\x16
+CMD2 BgAutoFadeInsv\x81\x1f\xaa\x16 \x025 \n\x0e
+CMD1 StopCD RUNF \xda\x16 \x025 \xae \x02
+SCEN TextClosev\x81\x1f\x02\x17 \x0256\xf1

@@ -1,13 +1,13 @@
 START
 A.\x01`B#\x01 '
-SCE SCE081_001 \x06 \x02\xef! \r \x8c\x01\r\x02 0\x8e\x0c"\x03\x06.\\Data\\Script\\Bgm.Fobv\x81\x1fJ
-CM1 StopCD RUN t \x025  \r \xc9
-FOB "\x03\x06.\\Data\\Script\\Bg.Fobsv\x81\x1f\xaa
-CM2 BgAutoFadeInsv\x81\x1f\xd4 \x025  \r \x02
-FOB "  \x04\r \x06
-FOB "  \x08\r \x01
-FOB " J
-CM1 SePlay RUN R\x01 \x025\x03}
+SCEN SCE081_001 \x06 \x02\xef! FLAG \x8c\x01FLAG\x02 0\x8e\x0c"\x03\x06.\\Data\\Script\\Bgm.Fobv\x81\x1fJ
+CMD1 StopCD RUNF t \x025  FLAG \xc9
+FOBL "\x03\x06.\\Data\\Script\\Bg.Fobsv\x81\x1f\xaa
+CMD2 BgAutoFadeInsv\x81\x1f\xd4 \x025  FLAG \x02
+FOBL "  \x04FLAG \x06
+FOBL "  \x08FLAG \x01
+FOBL " J
+CMD1 SePlay RUNF R\x01 \x025\x03}
  
 男\n　「目が覚めたかね？」@
 \n突然の場違いな声にはっとすると、目の前に見慣れぬ顔があった。\n\p中年の男だ。@
@@ -22,10 +22,10 @@ CM1 SePlay RUN R\x01 \x025\x03}
 これは……@
 \n拓司\n　「……夢か？」\
 
-  \r n\x01
-FOB "\x03\x07.\\Data\\Script\\TextFunc.Fob RUN \x82\x03
-CM1 TextOn RUN \xb0\x03 \x025
-SCE SCE081_002 \xcc\x03 \x02\xef! \r \x8c\x01\r\x02 4\x8e\x0c"\x03\x8c
+  FLAG n\x01
+FOBL "\x03\x07.\\Data\\Script\\TextFunc.Fob RUNF \x82\x03
+CMD1 TextOn RUNF \xb0\x03 \x025
+SCEN SCE081_002 \xcc\x03 \x02\xef! FLAG \x8c\x01FLAG\x02 4\x8e\x0c"\x03\x8c
  
 以前授業中に見た夢の世界だ。\p白い部屋だ。@
 しかし－－死んでからも夢を見るものなのだろうか？\p　あるいは、\n夢を見ているということは、まだ自分は死んでいないということ\nなのだろうか？\p　はたまたこれは死後の世界で、自分はすでに死\nんでいるのか……？@
@@ -37,9 +37,9 @@ SCE SCE081_002 \xcc\x03 \x02\xef! \r \x8c\x01\r\x02 4\x8e\x0c"\x03\x8c
 男\n　「ここは病院だ。\p私のことは教授と呼んでくれ」@
 拓司\n　「……教授」\
 
-  \r \x10\x04
-FOB " \x82\x03 \x02 \xb0\x03 \x025
-SCE SCE081_003 z\x06 \x02\xef! \r \x8c\x01\r\x02 8\x8e\x0c"\x03p
+  FLAG \x10\x04
+FOBL " \x82\x03 \x02 \xb0\x03 \x025
+SCEN SCE081_003 z\x06 \x02\xef! FLAG \x8c\x01FLAG\x02 8\x8e\x0c"\x03p
  
 どこかで聞いたことがある名前だと記憶を探れば、前回も夢の中\nで、『教授』という名前が登場したような気がする。@
 そうだ、壁の向こうから聞こえた少女の声がいっていたのだ……\n「教授に気をつけて」と。@
@@ -47,9 +47,9 @@ SCE SCE081_003 z\x06 \x02\xef! \r \x8c\x01\r\x02 8\x8e\x0c"\x03p
 骨っぽい痩せた顔に、ギョロリと大きな目が貼り付いている。@
 鼻筋はスッと通って唇はうすく、よく言えば理知的な、悪くいえ\nば酷薄な印象を形作っている。\p白髪が目立つ髪をオールバックに\n流し、油で固めている。\
 
-  \r \xbe\x06
-FOB " \x82\x03 \x02 \xb0\x03 \x025
-SCE SCE081_004 \xb8\x08 \x02\xef! \r \x8c\x01\r\x02 <\x8e\x0c"\x03z
+  FLAG \xbe\x06
+FOBL " \x82\x03 \x02 \xb0\x03 \x025
+SCEN SCE081_004 \xb8\x08 \x02\xef! FLAG \x8c\x01FLAG\x02 <\x8e\x0c"\x03z
  
 教授\n　「前回までの経験に基づいて、単刀直入に話を進めさせてもら\n　　うよ」@
 \n教授はベッド横の椅子から立ち上がって、いった。@
@@ -57,9 +57,9 @@ SCE SCE081_004 \xb8\x08 \x02\xef! \r \x8c\x01\r\x02 <\x8e\x0c"\x03z
 拓司\n　「……記憶喪失？」@
 教授\n　「私はこの病院で、きみの症状を調べ始めてもう９ヶ月になる。\n　　\pつまり、きみは私と９ヶ月一緒にいるということになるね。\n　　\pしかしいま、きみは私を初めて見た人間だと思っている……\n　　そうだね？」\
 
-  \r \xfc\x08
-FOB " \x82\x03 \x02 \xb0\x03 \x025
-SCE SCE081_005 \x1e\x0b \x02\xef! \r \x8c\x01\r\x02 @\x8e\x0c"\x03\xa9
+  FLAG \xfc\x08
+FOBL " \x82\x03 \x02 \xb0\x03 \x025
+SCEN SCE081_005 \x1e\x0b \x02\xef! FLAG \x8c\x01FLAG\x02 @\x8e\x0c"\x03\xa9
  
 拓司は小さく頷いた。\pこれは一体なんの冗談なのだろう？@
 夢にしては手が込んでいる。@
@@ -68,9 +68,9 @@ SCE SCE081_005 \x1e\x0b \x02\xef! \r \x8c\x01\r\x02 @\x8e\x0c"\x03\xa9
 拓司\n　「……」@
 教授\n　「ところが君は、あらゆることを忘れている。\pたとえば自分が\n　　誰なのかということも－－」\
 
-  \r b\x0b
-FOB " \x82\x03 \x02 \xb0\x03 \x025
-SCE SCE081_006 @\x0e \x02\xef! \r \x8c\x01\r\x02 D\x8e\x0c"\x03V
+  FLAG b\x0b
+FOBL " \x82\x03 \x02 \xb0\x03 \x025
+SCEN SCE081_006 @\x0e \x02\xef! FLAG \x8c\x01FLAG\x02 D\x8e\x0c"\x03V
  
 拓司\n　「待ってください」@
 \n拓司は教授の話を遮った。@
@@ -79,9 +79,9 @@ SCE SCE081_006 @\x0e \x02\xef! \r \x8c\x01\r\x02 D\x8e\x0c"\x03V
 拓司\n　「虎菱拓司。\p××区××町在住。\p××学園に通うごく普通の男\n　　です」@
 教授\n　「なるほど。\p今回は虎菱拓司というのだね、きみの名前は？」\
 
-  \r \x84\x0e
-FOB " \x82\x03 \x02 \xb0\x03 \x025
-SCE SCE081_007 \x16\x10 \x02\xef! \r \x8c\x01\r\x02 H\x8e\x0c"\x03\x88
+  FLAG \x84\x0e
+FOBL " \x82\x03 \x02 \xb0\x03 \x025
+SCEN SCE081_007 \x16\x10 \x02\xef! FLAG \x8c\x01FLAG\x02 H\x8e\x0c"\x03\x88
  
 拓司\n　「今回？」@
 教授\n　「前回、昏睡から醒めた君は藤田宣久と名乗ったよ。\p盛岡に住\n　　む学生だと」@
@@ -91,9 +91,9 @@ SCE SCE081_007 \x16\x10 \x02\xef! \r \x8c\x01\r\x02 H\x8e\x0c"\x03\x88
 教授\n　「多重人格症という可能性もあったが、どうやらこの９ヶ月間\n　　の研究結果から推察するに、君に生じているのは『夢の侵略』\n　　だ」@
 拓司\n　「……」\
 
-  \r Z\x10
-FOB " \x82\x03 \x02 \xb0\x03 \x025
-SCE SCE081_008 \xb4\x12 \x02\xef! \r \x8c\x01\r\x02 L\x8e\x0c"\x03\xab
+  FLAG Z\x10
+FOBL " \x82\x03 \x02 \xb0\x03 \x025
+SCEN SCE081_008 \xb4\x12 \x02\xef! FLAG \x8c\x01FLAG\x02 L\x8e\x0c"\x03\xab
  
 教授\n　「君は夢に感化されているのだよ。\p記憶喪失によって真っ白に\n　　なった君の意識に、夢が刷り込まれて、君はそれが真実だと\n　　認識する。\p今回は、それが『虎菱拓司の夢』だったというわ\n　　けだ」@
 拓司\n　「そんなことが……」@
@@ -104,9 +104,9 @@ SCE SCE081_008 \xb4\x12 \x02\xef! \r \x8c\x01\r\x02 L\x8e\x0c"\x03\xab
 普段なら「よくできた夢だ」と一笑に付すところだ。@
 しかし……先ほどまで体験していた異常な出来事は、とてもでは\nないが現実世界に起きることとは思えない。\pこの世界のほうが、\n現実的といえばよほど現実的だ。\
 
-  \r \xf8\x12
-FOB " \x82\x03 \x02 \xb0\x03 \x025
-SCE SCE081_009 \xde\x15 \x02\xef! \r \x8c\x01\r\x02 P\x8e\x0c"\x03\xa7
+  FLAG \xf8\x12
+FOBL " \x82\x03 \x02 \xb0\x03 \x025
+SCEN SCE081_009 \xde\x15 \x02\xef! FLAG \x8c\x01FLAG\x02 P\x8e\x0c"\x03\xa7
  
 教授\n　「混乱しているね。\pいつも目覚めた直後はそうだよ。@
 　　だが安心したまえ。\pすぐに治まる。\p感覚的な問題なのだろう\n　　ね、すぐにこの世界こそが真実の世界であることがわかる。@
@@ -116,9 +116,9 @@ SCE SCE081_009 \xde\x15 \x02\xef! \r \x8c\x01\r\x02 P\x8e\x0c"\x03\xa7
 \n教授はひとしきり笑って、それからぴたりと口を結び、真剣な顔\nで拓司を見つめた。@
 拓司が何かを言い出すのを待っているような様子ではあったが、\nさりとて拓司には話すべきことなど何もない。\pとにかく、混乱が\n頭の中でグルグルと渦巻いているだけだ。\
 
-  \r "\x16
-FOB " \x82\x03 \x02 \xb0\x03 \x025
-SCE SCE081_010 \xf8\x18 \x02\xef! \r \x8c\x01\r\x02 T\x8e\x0c"\x03\xbb
+  FLAG "\x16
+FOBL " \x82\x03 \x02 \xb0\x03 \x025
+SCEN SCE081_010 \xf8\x18 \x02\xef! FLAG \x8c\x01FLAG\x02 T\x8e\x0c"\x03\xbb
  
 拓司\n　「ここは……どこなんですか？」@
 教授\n　「都内の××病院の精神科だよ」@
@@ -127,9 +127,9 @@ SCE SCE081_010 \xf8\x18 \x02\xef! \r \x8c\x01\r\x02 T\x8e\x0c"\x03\xbb
 拓司\n　「俺は……誰なんですか？\p　俺の本当の名前はなんなんですか？\n　　\p家族は？\p　職業は？\p　趣味は？\p　俺は……何を信じればいい\n　　んですか？」@
 教授\n　「安心したまえ、君はごくごく普通の学生だよ。\p実は殺人犯だ\n　　とか、宇宙人だとか、そんなことはないんだからね！\p　とり\n　　あえずのところ、私を信じていてくれればいい」\
 
-  \r <\x19
-FOB " \x82\x03 \x02 \xb0\x03 \x025
-SCE SCE081_011 b\x1c \x02\xef! \r \x8c\x01\r\x02 X\x8e\x0c"\x03U
+  FLAG <\x19
+FOBL " \x82\x03 \x02 \xb0\x03 \x025
+SCEN SCE081_011 b\x1c \x02\xef! FLAG \x8c\x01FLAG\x02 X\x8e\x0c"\x03U
  
 教授は白衣の胸から煙草を取り出し、口にくわえた。@
 ドンドン。@
@@ -139,12 +139,12 @@ SCE SCE081_011 b\x1c \x02\xef! \r \x8c\x01\r\x02 X\x8e\x0c"\x03U
 そこには白衣に身を包んだ中年の女性と、そしてもうひとり……\n驚くべき人物が立っていた。@
 \n拓司\n　「……雲居さん？！」\
 
-  \r \xa6\x1c
-FOB " \x82\x03 \x02 \xb0\x03 \x025  \r \x1c
-FOB " \xaa \x02 \xd4 \x025  \r \x08\x01
-FOB " J
-CM1 PlayCD RUN \x8e\x1e \x025
-SCE SCE081_012 \xaa\x1e \x02\xef! \r \x8c\x01\r\x02 \\\x8e\x0c"\x03\x9e
+  FLAG \xa6\x1c
+FOBL " \x82\x03 \x02 \xb0\x03 \x025  FLAG \x1c
+FOBL " \xaa \x02 \xd4 \x025  FLAG \x08\x01
+FOBL " J
+CMD1 PlayCD RUNF \x8e\x1e \x025
+SCEN SCE081_012 \xaa\x1e \x02\xef! FLAG \x8c\x01FLAG\x02 \\\x8e\x0c"\x03\x9e
  
 雲居なたねだった。\p看護婦の横に立っているのは間違いなく雲\n居なたねだ。@
 それにしてもどうしたことだろう。@
@@ -153,9 +153,9 @@ SCE SCE081_012 \xaa\x1e \x02\xef! \r \x8c\x01\r\x02 \\\x8e\x0c"\x03\x9e
 \n教授が静かにいった。\p－－いや、平静を装っているが、その下に\nある興奮を隠し切れないでいる。@
 不審なものを覚えながらも、拓司はこたえた。\
 
-  \r \xee\x1e
-FOB " \x82\x03 \x02 \xb0\x03 \x025
-SCE SCE081_013 \xa0! \x02\xef! \r \x8c\x01\r\x02 `\x8e\x0c"\x03\x82
+  FLAG \xee\x1e
+FOBL " \x82\x03 \x02 \xb0\x03 \x025
+SCEN SCE081_013 \xa0! \x02\xef! FLAG \x8c\x01FLAG\x02 `\x8e\x0c"\x03\x82
  
 拓司\n　「雲居なたねさん。\p俺の……夢の中の学園の同級生です。@
 　　どうして彼女がここに？」@
@@ -164,9 +164,9 @@ SCE SCE081_013 \xa0! \x02\xef! \r \x8c\x01\r\x02 `\x8e\x0c"\x03\x82
 拓司\n　「待ってください！\p　彼女と……雲居さんと話をさせてくだ\n　　さい！」@
 \n教授は渋い顔をして、頭を振った。\
 
-  \r \xe4!
-FOB " \x82\x03 \x02 \xb0\x03 \x025
-SCE SCE081_014 &$ \x02\xef! \r \x8c\x01\r\x02 d\x8e\x0c"\x03w
+  FLAG \xe4!
+FOBL " \x82\x03 \x02 \xb0\x03 \x025
+SCEN SCE081_014 &$ \x02\xef! FLAG \x8c\x01FLAG\x02 d\x8e\x0c"\x03w
  
 教授\n　「残念だがそれはできない。\p彼女は今、鎮静剤を投与されて朦\n　　朧状態だからね。\pなにしろ凶暴な子でね、部屋から出すとき\n　　はこうでもしないと暴れ回って始末に負えないのだよ」@
 拓司\n　「ということは……彼女もここの患者なんですか？」@
@@ -175,12 +175,12 @@ SCE SCE081_014 &$ \x02\xef! \r \x8c\x01\r\x02 d\x8e\x0c"\x03w
 自らのなかに……失われた記憶の中に答を見出すことを、拓司に\n求めているらしい。@
 ばたばたっ、と籠のなかの鳥がひとつ羽ばたきをした。\
 
-  \r j$
-FOB " \x82\x03 \x02 \xb0\x03 \x025\x03\x0f
+  FLAG j$
+FOBL " \x82\x03 \x02 \xb0\x03 \x025\x03\x0f
 CHOICE
 拘束着の女の子に近づいて観察する\n鳥を見る\n\l0,2,
 ENDCHOICE
 
-  \r \x80&
-FOB " \x82\x03 \x02 \xb0\x03 \x025 \x82\x03 \x02
-SCE TextClosev\x81\x1f\x02' \x0256\xf1
+  FLAG \x80&
+FOBL " \x82\x03 \x02 \xb0\x03 \x025 \x82\x03 \x02
+SCEN TextClosev\x81\x1f\x02' \x0256\xf1

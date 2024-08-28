@@ -1,6 +1,6 @@
 START
 \xf6\r\x01`B#\x01*\x0b
-SCE SCE063_001 \x06 \x02\xef! \r \x8c\x01\r\x02 \x10r\x0c"\x03\x81
+SCEN SCE063_001 \x06 \x02\xef! FLAG \x8c\x01FLAG\x02 \x10r\x0c"\x03\x81
  
 カンナ\n　「虎菱くん、あなた、その程度だったんだ」@
 \nカンナが淡々といった。\p顔には落胆の色があった。@
@@ -8,12 +8,12 @@ SCE SCE063_001 \x06 \x02\xef! \r \x8c\x01\r\x02 \x10r\x0c"\x03\x81
 　　だから儀式化された赦しが必要だた。\pあなたなら、それだけ\n　　の価値があると……あなたは特別だと思った。\pだからあなた\n　　を選んだのに」@
 /*■黒　表示（クロスフェード）*/\a7,-2,-2,0,\a0,200,2,0,\a6,-2,0,0,/*▲BGM　停止 */\a4,-1,0,0,拓司\n　「よせ、カンナ！」\
 
-  \r J
-FOB "\x03\x07.\\Data\\Script\\TextFunc.Fob RUN n\x02
-CM1 TextOn RUN \x9c\x02 \x025  \r \x0b\x01
-FOB "\x03\x06.\\Data\\Script\\Bgm.Fobv\x81\x1f\xd2\x02
-CM1 PlayCD RUN \xfc\x02 \x025
-SCE SCE063_002 \x18\x03 \x02\xef! \r \x8c\x01\r\x02 \x14r\x0c"\x03{
+  FLAG J
+FOBL "\x03\x07.\\Data\\Script\\TextFunc.Fob RUNF n\x02
+CMD1 TextOn RUNF \x9c\x02 \x025  FLAG \x0b\x01
+FOBL "\x03\x06.\\Data\\Script\\Bgm.Fobv\x81\x1f\xd2\x02
+CMD1 PlayCD RUNF \xfc\x02 \x025
+SCEN SCE063_002 \x18\x03 \x02\xef! FLAG \x8c\x01FLAG\x02 \x14r\x0c"\x03{
  
 カンナ\n　「無駄な努力だった。\pとっとと死んじゃえばよかった。@
 　　より完璧な死なんか求めず……こうやって」@
@@ -23,9 +23,9 @@ SCE SCE063_002 \x18\x03 \x02\xef! \r \x8c\x01\r\x02 \x14r\x0c"\x03{
 カンナ\n　「もう遅いわ……私は死ぬの。\pあなたのせいで死ぬ。@
 　　あなたがクイズに間違えたから……」\
 
-  \r \\\x03
-FOB " n\x02 \x02 \x9c\x02 \x025
-SCE SCE063_003 \x82\x05 \x02\xef! \r \x8c\x01\r\x02 \x18r\x0c"\x03V
+  FLAG \\\x03
+FOBL " n\x02 \x02 \x9c\x02 \x025
+SCEN SCE063_003 \x82\x05 \x02\xef! FLAG \x8c\x01FLAG\x02 \x18r\x0c"\x03V
  
 拓司の胸の中に、罪悪感が広がっていった。@
 理屈では、自分に責任などないということはわかっていたが、目\nの前で死につつあるカンナを見ていると、そんな理屈はこれっぽ\nっちの効果も持たない。@
@@ -35,11 +35,11 @@ SCE SCE063_003 \x82\x05 \x02\xef! \r \x8c\x01\r\x02 \x18r\x0c"\x03V
 　死んじまおうかなあ。@
 いつの間にか、足が窓のほうへとむかっている。　\
 
-  \r \xc6\x05
-FOB " n\x02 \x02 \x9c\x02 \x025  \r \xc8
-FOB "\x03\x06.\\Data\\Script\\Bg.Fobsv\x81\x1fr\x07
-CM2 BgAutoFadeInsv\x81\x1f\x9c\x07 \x025
-SCE SCE063_004 \xc0\x07 \x02\xef! \r \x8c\x01\r\x02 \x1cr\x0c"\x03D
+  FLAG \xc6\x05
+FOBL " n\x02 \x02 \x9c\x02 \x025  FLAG \xc8
+FOBL "\x03\x06.\\Data\\Script\\Bg.Fobsv\x81\x1fr\x07
+CMD2 BgAutoFadeInsv\x81\x1f\x9c\x07 \x025
+SCEN SCE063_004 \xc0\x07 \x02\xef! FLAG \x8c\x01FLAG\x02 \x1cr\x0c"\x03D
  
 もしかしてこれが波動に侵されるということなのか？@
 －－そう思ったときにはもう遅かった。@
@@ -47,9 +47,9 @@ SCE SCE063_004 \xc0\x07 \x02\xef! \r \x8c\x01\r\x02 \x1cr\x0c"\x03D
 胸が苦しくて、呼吸すらできない。@
 なにもできない。\
 
-  \r \x04\x08
-FOB " n\x02 \x02 \x9c\x02 \x025
-SCE SCE063_005 N\t \x02\xef! \r \x8c\x01\r\x02  r\x0c"\x03C
+  FLAG \x04\x08
+FOBL " n\x02 \x02 \x9c\x02 \x025
+SCEN SCE063_005 N\t \x02\xef! FLAG \x8c\x01FLAG\x02  r\x0c"\x03C
  
 早桃\n　「おにいちゃん！」@
 \n早桃の声を遠くに聞きながら、拓司は地面を蹴って、ふわりと空\n中に飛び出していた。@
@@ -58,7 +58,7 @@ SCE SCE063_005 N\t \x02\xef! \r \x8c\x01\r\x02  r\x0c"\x03C
 －－やっと解放されたんだ。@
 消えゆく意識の中、拓司は思った。\
 
-  \r \x92\t
-FOB " n\x02 \x02 \x9c\x02 \x025 \xd2\x02
-CM1 StopCD RUN \xe4\n \x025 n\x02 \x02
-SCE TextClosev\x81\x1f\x0c\x0b \x0256\xf1
+  FLAG \x92\t
+FOBL " n\x02 \x02 \x9c\x02 \x025 \xd2\x02
+CMD1 StopCD RUNF \xe4\n \x025 n\x02 \x02
+SCEN TextClosev\x81\x1f\x0c\x0b \x0256\xf1

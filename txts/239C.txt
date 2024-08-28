@@ -1,8 +1,8 @@
 START
-\x9b\x19\x01`B#\x01\xde\x14  \r \x04\x01
-FOB "\x03\x06.\\Data\\Script\\Bgm.Fobv\x81\x1f 
-CM1 PlayCD RUN J \x025
-SCE SCE239_001 f \x02\xef! \r \x8c\x01\r\x02 \x10\x85\x01\x0c"\x03f
+\x9b\x19\x01`B#\x01\xde\x14  FLAG \x04\x01
+FOBL "\x03\x06.\\Data\\Script\\Bgm.Fobv\x81\x1f 
+CMD1 PlayCD RUNF J \x025
+SCEN SCE239_001 f \x02\xef! FLAG \x8c\x01FLAG\x02 \x10\x85\x01\x0c"\x03f
  
 拓司は再び、空白の世界に立っていた。@
 隣には、雲居ナタネが立っている。@
@@ -11,10 +11,10 @@ SCE SCE239_001 f \x02\xef! \r \x8c\x01\r\x02 \x10\x85\x01\x0c"\x03f
 \n拓司\n　「自分がこんなに安っぽい人間だったとはなあ。\pなにかあると\n　　ピカーって……ワンパターンにもほどがあるよ」@
 ナタネ\n　「くすくす。\p誰だって、子供っぽい空想の世界は持っているわ。\n　　\pだから特別あなたが幼稚ってわけでもないと思う」\
 
-  \r \xaa
-FOB "\x03\x07.\\Data\\Script\\TextFunc.Fob RUN b\x02
-CM1 TextOn RUN \x90\x02 \x025
-SCE SCE239_002 \xac\x02 \x02\xef! \r \x8c\x01\r\x02 \x14\x85\x01\x0c"\x03o
+  FLAG \xaa
+FOBL "\x03\x07.\\Data\\Script\\TextFunc.Fob RUNF b\x02
+CMD1 TextOn RUNF \x90\x02 \x025
+SCEN SCE239_002 \xac\x02 \x02\xef! FLAG \x8c\x01FLAG\x02 \x14\x85\x01\x0c"\x03o
  
 拓司\n　「ありがとう」@
 \nいいながら拓司は、ナタネがそういってくれるのは、自分がそう\nいって欲しいと望んでいるからに他ならないことを理解していた。\n\pただ、その「ありがとう」は、自然に、拓司の心の一番深い場所\nから生まれてきた言葉だった。@
@@ -24,9 +24,9 @@ SCE SCE239_002 \xac\x02 \x02\xef! \r \x8c\x01\r\x02 \x14\x85\x01\x0c"\x03o
 「ありがとう」は感謝の言葉。@
 いま、この瞬間、そう決まったのだ。\
 
-  \r \xf0\x02
-FOB " b\x02 \x02 \x90\x02 \x025
-SCE SCE239_003 \xe6\x04 \x02\xef! \r \x8c\x01\r\x02 \x18\x85\x01\x0c"\x03\x81
+  FLAG \xf0\x02
+FOBL " b\x02 \x02 \x90\x02 \x025
+SCEN SCE239_003 \xe6\x04 \x02\xef! FLAG \x8c\x01FLAG\x02 \x18\x85\x01\x0c"\x03\x81
  
 拓司\n　「そういうことなんだな」@
 \nナタネは無言で頷いた。@
@@ -34,9 +34,9 @@ SCE SCE239_003 \xe6\x04 \x02\xef! \r \x8c\x01\r\x02 \x18\x85\x01\x0c"\x03\x81
 ナタネ\n　「あなたが決めることよ。\pでも、私は……そうだといいなって\n　　思う」@
 拓司\n　「そうか」\
 
-  \r *\x05
-FOB " b\x02 \x02 \x90\x02 \x025
-SCE SCE239_004 h\x07 \x02\xef! \r \x8c\x01\r\x02 \x1c\x85\x01\x0c"\x03\x87
+  FLAG *\x05
+FOBL " b\x02 \x02 \x90\x02 \x025
+SCEN SCE239_004 h\x07 \x02\xef! FLAG \x8c\x01FLAG\x02 \x1c\x85\x01\x0c"\x03\x87
  
 拓司はナタネを見つめた。@
 そこにいるナタネは、拓司の世界のなたねの、本来あるべき姿な\nのかもしれなかった。@
@@ -50,9 +50,9 @@ SCE SCE239_004 h\x07 \x02\xef! \r \x8c\x01\r\x02 \x1c\x85\x01\x0c"\x03\x87
 なたねはゲームをやり損なってしまった。@
 それが現実なのだ。\
 
-  \r \xac\x07
-FOB " b\x02 \x02 \x90\x02 \x025
-SCE SCE239_005 \x02\n \x02\xef! \r \x8c\x01\r\x02  \x85\x01\x0c"\x03^
+  FLAG \xac\x07
+FOBL " b\x02 \x02 \x90\x02 \x025
+SCEN SCE239_005 \x02\n \x02\xef! FLAG \x8c\x01FLAG\x02  \x85\x01\x0c"\x03^
  
 拓司\n　「雲居さん。\pおれはこれから、ひとつの世界を創る」@
 ナタネ\n　「……」@
@@ -62,18 +62,18 @@ SCE SCE239_005 \x02\n \x02\xef! \r \x8c\x01\r\x02  \x85\x01\x0c"\x03^
 ナタネ\n　「ええ、そうね」@
 拓司\n　「その世界では、きみは－－」\
 
-  \r F\n
-FOB " b\x02 \x02 \x90\x02 \x025
-SCE SCE239_006 \xf8\x0b \x02\xef! \r \x8c\x01\r\x02 $\x85\x01\x0c"\x03*
+  FLAG F\n
+FOBL " b\x02 \x02 \x90\x02 \x025
+SCEN SCE239_006 \xf8\x0b \x02\xef! FLAG \x8c\x01FLAG\x02 $\x85\x01\x0c"\x03*
  
 ナタネ\n　「さあ、早く創るのよ」@
 \nナタネは微笑んで、いった。@
 \nナタネ\n　「だって、ここは殺風景すぎるもの」@
 拓司\n　「そうだな……ああ、そうだよな」\
 
-  \r <\x0c
-FOB " b\x02 \x02 \x90\x02 \x025
-SCE SCE239_007 \x1e\r \x02\xef! \r \x8c\x01\r\x02 (\x85\x01\x0c"\x03U
+  FLAG <\x0c
+FOBL " b\x02 \x02 \x90\x02 \x025
+SCEN SCE239_007 \x1e\r \x02\xef! FLAG \x8c\x01FLAG\x02 (\x85\x01\x0c"\x03U
  
 拓司は目を閉じた。@
 －－世界を創ろう。@
@@ -81,9 +81,9 @@ SCE SCE239_007 \x1e\r \x02\xef! \r \x8c\x01\r\x02 (\x85\x01\x0c"\x03U
 その世界は、不公平で、不完全な世界だ。@
 けれどもいま、その世界を創ろうとしている俺の意志は、選択不\n可能なくじびきの不幸な結果ではない。強制されたものではない。\n\pおれがが創る、おれの世界だ。\
 
-  \r b\r
-FOB " b\x02 \x02 \x90\x02 \x025
-SCE SCE239_008 \xf0\x0e \x02\xef! \r \x8c\x01\r\x02 ,\x85\x01\x0c"\x03B
+  FLAG b\r
+FOBL " b\x02 \x02 \x90\x02 \x025
+SCEN SCE239_008 \xf0\x0e \x02\xef! FLAG \x8c\x01FLAG\x02 ,\x85\x01\x0c"\x03B
  
 ナタネ\n　「あなたが創る、あなたの世界」@
 \nもはやあらゆる責任は世界にはなく、おれ自身にある。@
@@ -92,9 +92,9 @@ SCE SCE239_008 \xf0\x0e \x02\xef! \r \x8c\x01\r\x02 ,\x85\x01\x0c"\x03B
 前に動け。@
 \nナタネ\n　「前に－－」\
 
-  \r 4\x0f
-FOB " b\x02 \x02 \x90\x02 \x025
-SCE SCE239_009 v\x10 \x02\xef! \r \x8c\x01\r\x02 0\x85\x01\x0c"\x03\\
+  FLAG 4\x0f
+FOBL " b\x02 \x02 \x90\x02 \x025
+SCEN SCE239_009 v\x10 \x02\xef! FLAG \x8c\x01FLAG\x02 0\x85\x01\x0c"\x03\\
  
 動くことで、おれはおれを後に残してきたことを知り、新たなる\nおれを知るのだ。@
 世界がおれをおいていくのだとしたら、おれがおれを動かすしか\nないのだ。@
@@ -108,24 +108,24 @@ SCE SCE239_009 v\x10 \x02\xef! \r \x8c\x01\r\x02 0\x85\x01\x0c"\x03\\
 灰色の……なにもかもだ。@
 いまおれはゆく。\
 
-  \r \xba\x10
-FOB " b\x02 \x02 \x90\x02 \x025
-SCE SCE239_010 d\x12 \x02\xef! \r \x8c\x01\r\x02 4\x85\x01\x0c"\x03$
+  FLAG \xba\x10
+FOBL " b\x02 \x02 \x90\x02 \x025
+SCEN SCE239_010 d\x12 \x02\xef! FLAG \x8c\x01FLAG\x02 4\x85\x01\x0c"\x03$
  
 ナタネ\n　「光と共に歩め」@
 \n世界の入り口に立って、ゆく。@
 行き先はおれが決める。@
 世界が決めるのではなく、ただおれが決める。\
 
-  \r \xa8\x12
-FOB " b\x02 \x02 \x90\x02 \x025
-SCE SCE239_011 r\x13 \x02\xef! \r \x8c\x01\r\x02 8\x85\x01\x0c"\x03\r
+  FLAG \xa8\x12
+FOBL " b\x02 \x02 \x90\x02 \x025
+SCEN SCE239_011 r\x13 \x02\xef! FLAG \x8c\x01FLAG\x02 8\x85\x01\x0c"\x03FLAG
  
 拓司\n　「おれは望む－－おれの世界を！」\
 
-  \r \xb6\x13
-FOB " b\x02 \x02 \x90\x02 \x025  
-CM1 StopCD RUN 0\x14 \x025  \r \xc8
-FOB "\x03\x06.\\Data\\Script\\Bg.Fobsv\x81\x1ff\x14
-CM2 BgAutoFadeInsv\x81\x1f\x90\x14 \x025 b\x02 \x02
-SCE TextClosev\x81\x1f\xc0\x14 \x0256\xf1
+  FLAG \xb6\x13
+FOBL " b\x02 \x02 \x90\x02 \x025  
+CMD1 StopCD RUNF 0\x14 \x025  FLAG \xc8
+FOBL "\x03\x06.\\Data\\Script\\Bg.Fobsv\x81\x1ff\x14
+CMD2 BgAutoFadeInsv\x81\x1f\x90\x14 \x025 b\x02 \x02
+SCEN TextClosev\x81\x1f\xc0\x14 \x0256\xf1

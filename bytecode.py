@@ -8,19 +8,19 @@ patterns = [
     },
     {
         "pattern": [b'\x03', b'\x03'], #Goes before SCE Calls
-        "action": "\r\nSCE "
+        "action": "\r\nSCEN "
     },
     {
-        "pattern": [b'\x0c', b'\x02'], # Goes before FOB calls
-        "action": "\r\nFOB "
+        "pattern": [b'\x0c', b'\x02'], # Goes before FOB load calls
+        "action": "\r\nFOBL "
     },
     {
         "pattern": [b'\x1e', b'\x02', b'\x03', b'\x02'],  # Goes before commands
-        "action": "\r\nCM1 "
+        "action": "\r\nCMD1 "
     },
     {
-        "pattern": [b'\x1e', b'\x02', b'\x03', b'\x04'],  # Goes before certain calls (Textbox, BGFADEIN
-        "action": "\r\nCM2 "
+        "pattern": [b'\x1e', b'\x02', b'\x03', b'\x04'],  # Goes before certain calls (Textbox, BGFADEIN)
+        "action": "\r\nCMD2 "
     },
     {
         "pattern": [b'\x1f'],  # Likely a delimiter
@@ -33,13 +33,20 @@ patterns = [
     },
     {
         "pattern": [b'\x81\x1f'],  # Might be a command terminator
-        "action": " RUN "
+        "action": " RUNF "
     },
-
-{
-    "pattern": [b'\025', b'\x03', b'\x08'],  # Might be a command terminator
-    "action": "\nFBC"
-},
+    {
+        "pattern": [b'\x03', b'\x05'], #LOADs bmp files it seems.
+        "action": "\nBMPL "
+    },
+    {
+        "pattern": [b'\r'], #Seems to be related to flags. Both to set, and read them.
+        "action": "FLAG"
+    },
+    {
+        "pattern": [b'\x02', b'\x03', b'\x05'],  # Seems to LOAD WAV files
+        "action": "\nWAVL "
+    },
 ]
 
 def parse_bytecode(data):
@@ -89,7 +96,7 @@ def save_text(lines, output_path):
             line_counter += 1
 
 # Main processing loop
-def process_files(input_dir="files", output_dir="txts"):
+def process_files(input_dir="scripts", output_dir="scripts_txts"):
     if not os.path.exists(output_dir):
         os.makedirs(output_dir)
 
@@ -118,4 +125,5 @@ def process_files(input_dir="files", output_dir="txts"):
 
 
 # Run the processing function
-process_files()
+process_files(input_dir="files", output_dir="txts")
+process_files(input_dir="scripts", output_dir="scripts_txts")

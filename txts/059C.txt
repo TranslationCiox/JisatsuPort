@@ -1,6 +1,6 @@
 START
 u\x03\x01`\x044\x01\xc6\x02
-SCE SCE059_001 \x06 \x02\xef! \r \x8c\x01\r\x02 \xd0k\x0c"\x03z
+SCEN SCE059_001 \x06 \x02\xef! FLAG \x8c\x01FLAG\x02 \xd0k\x0c"\x03z
  
 拓司\n　「天使って、なんのことだ？」@
 早桃\n　「……え？」@
@@ -13,7 +13,7 @@ SCE SCE059_001 \x06 \x02\xef! \r \x8c\x01\r\x02 \xd0k\x0c"\x03z
 \nなたねに目で合図を送って、拓司は後ろを向いた。@
 早桃は何を隠しているのだろうか？\
 
-  \r J
-FOB "\x03\x07.\\Data\\Script\\TextFunc.Fob RUN R\x02
-CM1 TextOn RUN \x80\x02 \x025 R\x02 \x02
-SCE TextClosev\x81\x1f\xa8\x02 \x0256\xf1
+  FLAG J
+FOBL "\x03\x07.\\Data\\Script\\TextFunc.Fob RUNF R\x02
+CMD1 TextOn RUNF \x80\x02 \x025 R\x02 \x02
+SCEN TextClosev\x81\x1f\xa8\x02 \x0256\xf1

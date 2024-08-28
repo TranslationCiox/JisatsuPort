@@ -1,7 +1,7 @@
 START
 '\x11\x01`B#\x01@\r\x03\x06.\\Data\\Script\\Bgm.Fobv\x81\x1f\x06
-CM1 StopCD RUN 0 \x025
-SCE SCE077_001 L \x02\xef! \r \x8c\x01\r\x02 \xf0\x87\x0c"\x03~
+CMD1 StopCD RUNF 0 \x025
+SCEN SCE077_001 L \x02\xef! FLAG \x8c\x01FLAG\x02 \xf0\x87\x0c"\x03~
  
 拓司\n　「雲居さんが俺たちには見えないものが見えるというのは…\n　　…信じられないけど……どうやらウソじゃないらしい。@
 　　いままで何度も、雲居さんは『波動』ってやつを感じてき\n　　たし、俺はそれに救われてきた」@
@@ -12,12 +12,12 @@ SCE SCE077_001 L \x02\xef! \r \x8c\x01\r\x02 \xf0\x87\x0c"\x03~
 早桃\n　「おにいちゃん？！」@
 拓司\n　「俺が行く。\pだから雲居さんは２人をシェルターに連れてい\n　　ってやってくれ」\
 
-  \r \x90
-FOB "\x03\x07.\\Data\\Script\\TextFunc.Fob RUN \xa8\x02
-CM1 TextOn RUN \xd6\x02 \x025  \r \x08\x01
-FOB " \x06
-CM1 PlayCD RUN \x18\x03 \x025
-SCE SCE077_002 4\x03 \x02\xef! \r \x8c\x01\r\x02 \xf4\x87\x0c"\x03X
+  FLAG \x90
+FOBL "\x03\x07.\\Data\\Script\\TextFunc.Fob RUNF \xa8\x02
+CMD1 TextOn RUNF \xd6\x02 \x025  FLAG \x08\x01
+FOBL " \x06
+CMD1 PlayCD RUNF \x18\x03 \x025
+SCEN SCE077_002 4\x03 \x02\xef! FLAG \x8c\x01FLAG\x02 \xf4\x87\x0c"\x03X
  
 早桃\n　「イヤだよ！\p　早桃、やだからね！」@
 拓司\n　「……」@
@@ -28,9 +28,9 @@ SCE SCE077_002 4\x03 \x02\xef! \r \x8c\x01\r\x02 \xf4\x87\x0c"\x03X
 早桃\n　「……」@
 拓司\n　「紅葉を助けるために、お前たちを危険にさらすわけにはいか\n　　ない」\
 
-  \r x\x03
-FOB " \xa8\x02 \x02 \xd6\x02 \x025
-SCE SCE077_003 \x12\x05 \x02\xef! \r \x8c\x01\r\x02 \xf8\x87\x0c"\x03O
+  FLAG x\x03
+FOBL " \xa8\x02 \x02 \xd6\x02 \x025
+SCEN SCE077_003 \x12\x05 \x02\xef! FLAG \x8c\x01FLAG\x02 \xf8\x87\x0c"\x03O
  
 早桃\n　「……」@
 拓司\n　「……」@
@@ -39,9 +39,9 @@ SCE SCE077_003 \x12\x05 \x02\xef! \r \x8c\x01\r\x02 \xf8\x87\x0c"\x03O
 早桃\n　「でも約束だよ？\p　絶対戻ってきて。\pおにいちゃんが死んじゃ\n　　ったら、早桃、早桃……」@
 \n　ぶるぶると震える早桃の肩を、拓司は優しくかき抱いた。\pそれ\n　から肩に担いだカンナを２人に任せ、なたねに尋ねた。\
 
-  \r V\x05
-FOB " \xa8\x02 \x02 \xd6\x02 \x025
-SCE SCE077_004 \xcc\x06 \x02\xef! \r \x8c\x01\r\x02 \xfc\x87\x0c"\x03d
+  FLAG V\x05
+FOBL " \xa8\x02 \x02 \xd6\x02 \x025
+SCEN SCE077_004 \xcc\x06 \x02\xef! FLAG \x8c\x01FLAG\x02 \xfc\x87\x0c"\x03d
  
 拓司\n　「４階の実験室だな？」@
 なたね\n　「なにが？」@
@@ -52,9 +52,9 @@ SCE SCE077_004 \xcc\x06 \x02\xef! \r \x8c\x01\r\x02 \xfc\x87\x0c"\x03d
 拓司\n　「そりゃどうも」@
 なたね\n　「ここで虎菱くんを失うのは、地球の戦士たちにとって大きな\n　　痛手。\p哀しいことだわ」\
 
-  \r \x10\x07
-FOB " \xa8\x02 \x02 \xd6\x02 \x025
-SCE SCE077_005 \xda\x08 \x02\xef! \r \x8c\x01\r\x02 \x88\x0c"\x03E
+  FLAG \x10\x07
+FOBL " \xa8\x02 \x02 \xd6\x02 \x025
+SCEN SCE077_005 \xda\x08 \x02\xef! FLAG \x8c\x01FLAG\x02 \x88\x0c"\x03E
  
 拓司\n　「……死んだら、な」@
 なたね\n　「死ぬわ」@
@@ -63,24 +63,24 @@ SCE SCE077_005 \xda\x08 \x02\xef! \r \x8c\x01\r\x02 \x88\x0c"\x03E
 \n　拓司は肩をすくめて、さあ行ってくれ、と言った。@
 　振り返り振り返り、早桃たち３人の姿が廊下の向こうに消えさ\n　ったのを見送り、拓司はよし、とつぶやいた。\
 
-  \r \x1e\t
-FOB " \xa8\x02 \x02 \xd6\x02 \x025 \x06 \x02 0 \x025  \r <
-FOB "\x03\x07.\\Data\\Script\\TextFunc.fob RUN \xa0\n \x02
-SCE WaitTimesv\x81\x1f\xce\n \x025  \r \t\x01
-FOB " \x06 \x02 \x18\x03 \x025
-SCE SCE077_006 "\x0b \x02\xef! \r \x8c\x01\r\x02 \x04\x88\x0c"\x03B
+  FLAG \x1e\t
+FOBL " \xa8\x02 \x02 \xd6\x02 \x025 \x06 \x02 0 \x025  FLAG <
+FOBL "\x03\x07.\\Data\\Script\\TextFunc.fob RUNF \xa0\n \x02
+SCEN WaitTimesv\x81\x1f\xce\n \x025  FLAG \t\x01
+FOBL " \x06 \x02 \x18\x03 \x025
+SCEN SCE077_006 "\x0b \x02\xef! FLAG \x8c\x01FLAG\x02 \x04\x88\x0c"\x03B
  
 　渡り廊下は静まり返っている。@
 　見渡す限り、なにもない。@
 　それでも波動が充ちていると－－なたねはいう。@
 　波動というのがなんなのかがわからない以上、一気に走り抜け\n　るべきなのか、あるいは静かに前進すべきなのか、それすら判\n　断のしようがない。\
 
-  \r f\x0b
-FOB " \xa8\x02 \x02 \xd6\x02 \x025\x03\r
+  FLAG f\x0b
+FOBL " \xa8\x02 \x02 \xd6\x02 \x025\x03FLAG
 CHOICE
 一気に走り抜ける\n慎重に歩いてゆく\n\l0,2,
 ENDCHOICE
 
-  \r \xa8\x0c
-FOB " \xa8\x02 \x02 \xd6\x02 \x025 \xa8\x02 \x02
-SCE TextClosev\x81\x1f"\r \x0256\xf1
+  FLAG \xa8\x0c
+FOBL " \xa8\x02 \x02 \xd6\x02 \x025 \xa8\x02 \x02
+SCEN TextClosev\x81\x1f"\r \x0256\xf1

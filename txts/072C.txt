@@ -1,17 +1,17 @@
 START
 \xc1\x06\x01`B#\x014\x05
-SCE SCE072_001 \x06 \x02\xef! \r \x8c\x01\r\x02 \x90~\x0c"\x03\\
+SCEN SCE072_001 \x06 \x02\xef! FLAG \x8c\x01FLAG\x02 \x90~\x0c"\x03\\
  
 拓司の返事に、なたねはやれやれと肩をすくめてみせた。@
 \nなたね\n　「悪いけれど、私は一緒にいけないわ。\p私はこの状況を生き延\n　　びなければならないから。\pレジスタンスの一斉蜂起……それ\n　　は最終聖戦になるわ……には絶対に私の力が必要になるから。\n　　\p私はキーだから。鍵なの。\pわかる？\p　わからないだろうな\n　　あ……」@
 拓司\n　「早桃、行くぞ！」\
 
-  \r J
-FOB "\x03\x07.\\Data\\Script\\TextFunc.Fob RUN \xda\x01
-CM1 TextOn RUN \x08\x02 \x025  \r \x0b\x01
-FOB "\x03\x06.\\Data\\Script\\Bgm.Fobv\x81\x1f>\x02
-CM1 PlayCD RUN h\x02 \x025
-SCE SCE072_002 \x84\x02 \x02\xef! \r \x8c\x01\r\x02 \x94~\x0c"\x03x
+  FLAG J
+FOBL "\x03\x07.\\Data\\Script\\TextFunc.Fob RUNF \xda\x01
+CMD1 TextOn RUNF \x08\x02 \x025  FLAG \x0b\x01
+FOBL "\x03\x06.\\Data\\Script\\Bgm.Fobv\x81\x1f>\x02
+CMD1 PlayCD RUNF h\x02 \x025
+SCEN SCE072_002 \x84\x02 \x02\xef! FLAG \x8c\x01FLAG\x02 \x94~\x0c"\x03x
  
 際限のないなたねの妄想話を振り切って、拓司は早桃の手を引い\nた。\pそのまま１階に駆け下りて、玄関から中庭に走り出す。@
 途端。@
@@ -24,7 +24,7 @@ SCE SCE072_002 \x84\x02 \x02\xef! \r \x8c\x01\r\x02 \x94~\x0c"\x03x
 終わったんだ。@
 ようやく、終わったんだ、と。\
 
-  \r \xc8\x02
-FOB " \xda\x01 \x02 \x08\x02 \x025 >\x02
-CM1 StopCD RUN \xee\x04 \x025 \xda\x01 \x02
-SCE TextClosev\x81\x1f\x16\x05 \x0256\xf1
+  FLAG \xc8\x02
+FOBL " \xda\x01 \x02 \x08\x02 \x025 >\x02
+CMD1 StopCD RUNF \xee\x04 \x025 \xda\x01 \x02
+SCEN TextClosev\x81\x1f\x16\x05 \x0256\xf1

@@ -1,7 +1,7 @@
 START
 .\\\x01`B#\x01FM\x03\x06.\\Data\\Script\\Bgm.Fobv\x81\x1f\x06
-CM1 StopCD RUN 0 \x025
-SCE SCE022_001 L \x02\xef! \r \x8c\x01\r\x02 2\x0c"\x03\x96
+CMD1 StopCD RUNF 0 \x025
+SCEN SCE022_001 L \x02\xef! FLAG \x8c\x01FLAG\x02 2\x0c"\x03\x96
  
 拓司は目を閉じて、妄想の糸でひとつの世界を編み始めた。@
 いつ？\p　－－親父とお袋が旅行中のある日。@
@@ -17,14 +17,14 @@ SCE SCE022_001 L \x02\xef! \r \x8c\x01\r\x02 2\x0c"\x03\x96
 命じたとおり、体操服とブルマに身を包んでいる。顔を紅潮させ\nて、義兄に愛される期待にうち震えている。@
 両親が留守なのだから、本当はベッドで堂々と繋がることができ\nるのだ。しかし、敢えてこんな場所を選んだ。それは……\
 
-  \r \x90
-FOB "\x03\x07.\\Data\\Script\\TextFunc.Fob RUN \x08\x03
-CM1 TextOn RUN 6\x03 \x025  \r \x05\x01
-FOB " \x06
-CM1 PlayCD RUN x\x03 \x025  \r M
-FOB "\x03\x06.\\Data\\Script\\Bg.Fobsv\x81\x1f\xae\x03
-CM2 BgAutoFadeInsv\x81\x1f\xd8\x03 \x025
-SCE SCE022_002 \xfc\x03 \x02\xef! \r \x8c\x01\r\x02 \x042\x0c"\x03Q
+  FLAG \x90
+FOBL "\x03\x07.\\Data\\Script\\TextFunc.Fob RUNF \x08\x03
+CMD1 TextOn RUNF 6\x03 \x025  FLAG \x05\x01
+FOBL " \x06
+CMD1 PlayCD RUNF x\x03 \x025  FLAG M
+FOBL "\x03\x06.\\Data\\Script\\Bg.Fobsv\x81\x1f\xae\x03
+CMD2 BgAutoFadeInsv\x81\x1f\xd8\x03 \x025
+SCEN SCE022_002 \xfc\x03 \x02\xef! FLAG \x8c\x01FLAG\x02 \x042\x0c"\x03Q
  
 早桃\n　「うふふ、おにいちゃん、エッチだよね。こういう場所のほう\n　　が萌えるんだ？」@
 拓司\n　「ああ」@
@@ -33,10 +33,10 @@ SCE SCE022_002 \xfc\x03 \x02\xef! \r \x8c\x01\r\x02 \x042\x0c"\x03Q
 \n早桃の顔が、さっと青ざめる。@
 拓司の背後に、別の男が立っているのに気づいたのだ。\
 
-  \r @\x04
-FOB " \x08\x03 \x02 6\x03 \x025  \r \x05\x01
-FOB " \x06 \x02 x\x03 \x025
-SCE SCE022_003 \xf2\x05 \x02\xef! \r \x8c\x01\r\x02 \x082\x0c"\x03b
+  FLAG @\x04
+FOBL " \x08\x03 \x02 6\x03 \x025  FLAG \x05\x01
+FOBL " \x06 \x02 x\x03 \x025
+SCEN SCE022_003 \xf2\x05 \x02\xef! FLAG \x8c\x01FLAG\x02 \x082\x0c"\x03b
  
 早桃\n　「！」@
 拓司\n　「さあ、遠慮しないで入れよ」@
@@ -46,9 +46,9 @@ SCE SCE022_003 \xf2\x05 \x02\xef! \r \x8c\x01\r\x02 \x082\x0c"\x03b
 平野はニヤニヤ笑いを満面に張り付けて、トイレの中に一歩踏み\n込んだ。@
 便座に腰掛けたまま、早桃が身を固くする。\
 
-  \r 6\x06
-FOB " \x08\x03 \x02 6\x03 \x025
-SCE SCE022_004 \xf8\x07 \x02\xef! \r \x8c\x01\r\x02 \x0c2\x0c"\x03`
+  FLAG 6\x06
+FOBL " \x08\x03 \x02 6\x03 \x025
+SCEN SCE022_004 \xf8\x07 \x02\xef! FLAG \x8c\x01FLAG\x02 \x0c2\x0c"\x03`
  
 平野\n　「へへ……こんにちわ～っす、早桃ちゃん♪」@
 早桃\n　「おにいちゃん……どういうこと？」@
@@ -60,9 +60,9 @@ SCE SCE022_004 \xf8\x07 \x02\xef! \r \x8c\x01\r\x02 \x0c2\x0c"\x03`
 　　だったら協力してくれよ。@
 　　こづかいがいるんだ」\
 
-  \r <\x08
-FOB " \x08\x03 \x02 6\x03 \x025
-SCE SCE022_005 \xf6\t \x02\xef! \r \x8c\x01\r\x02 \x102\x0c"\x03d
+  FLAG <\x08
+FOBL " \x08\x03 \x02 6\x03 \x025
+SCEN SCE022_005 \xf6\t \x02\xef! FLAG \x8c\x01FLAG\x02 \x102\x0c"\x03d
  
 早桃\n　「……そんな！」@
 拓司\n　「そんなもこんなもないだろ？@
@@ -73,9 +73,9 @@ SCE SCE022_005 \xf6\t \x02\xef! \r \x8c\x01\r\x02 \x102\x0c"\x03d
 　　もう一生お前とは口もきかないけど、悪く思わないでくれよ\n　　な」@
 早桃\n　「おにいちゃん……\p早桃のこと愛してるっていってくれたの\n　　に……\p両思いだって……」\
 
-  \r :\n
-FOB " \x08\x03 \x02 6\x03 \x025
-SCE SCE022_006 \x04\x0c \x02\xef! \r \x8c\x01\r\x02 \x142\x0c"\x037
+  FLAG :\n
+FOBL " \x08\x03 \x02 6\x03 \x025
+SCEN SCE022_006 \x04\x0c \x02\xef! FLAG \x8c\x01FLAG\x02 \x142\x0c"\x037
  
 早桃の大きな目が潤んでいる。@
 あと一押しだ。拓司は慎重に言葉を選んだ。@
@@ -83,9 +83,9 @@ SCE SCE022_006 \x04\x0c \x02\xef! \r \x8c\x01\r\x02 \x142\x0c"\x037
 より深く義妹を傷つける言葉を。@
 その傷の深さを目の当たりにすることによって、自らをも傷つけ\nるような言葉を。\
 
-  \r H\x0c
-FOB " \x08\x03 \x02 6\x03 \x025
-SCE SCE022_007 ^\r \x02\xef! \r \x8c\x01\r\x02 \x182\x0c"\x03\xb0
+  FLAG H\x0c
+FOBL " \x08\x03 \x02 6\x03 \x025
+SCEN SCE022_007 ^\r \x02\xef! FLAG \x8c\x01FLAG\x02 \x182\x0c"\x03\xb0
  
 拓司\n　「両思い？@
 　　義兄妹でそんなのあるはずないだろ？@
@@ -101,9 +101,9 @@ SCE SCE022_007 ^\r \x02\xef! \r \x8c\x01\r\x02 \x182\x0c"\x03\xb0
 　　だから愛とか語って理論武装してるんだろ？」@
 早桃\n　「違うよ！　早桃は本当におにいちゃんのこと……」\
 
-  \r \xa2\r
-FOB " \x08\x03 \x02 6\x03 \x025
-SCE SCE022_008 \x9c\x10 \x02\xef! \r \x8c\x01\r\x02 \x1c2\x0c"\x03_
+  FLAG \xa2\r
+FOBL " \x08\x03 \x02 6\x03 \x025
+SCEN SCE022_008 \x9c\x10 \x02\xef! FLAG \x8c\x01FLAG\x02 \x1c2\x0c"\x03_
  
 拓司\n　「じゃあここで証明してくれよ。@
 　　本当に愛してるんなら、おれの言うことは聞けるはずだ\n　　ろ？」\n\p早桃\n　「……」@
@@ -114,9 +114,9 @@ SCE SCE022_008 \x9c\x10 \x02\xef! \r \x8c\x01\r\x02 \x1c2\x0c"\x03_
 早桃\n　「……」@
 \nうつむいて震える早桃を見下ろして、平野は荒い息でいった。\
 
-  \r \xe0\x10
-FOB " \x08\x03 \x02 6\x03 \x025
-SCE SCE022_009 \x96\x12 \x02\xef! \r \x8c\x01\r\x02  2\x0c"\x03R
+  FLAG \xe0\x10
+FOBL " \x08\x03 \x02 6\x03 \x025
+SCEN SCE022_009 \x96\x12 \x02\xef! FLAG \x8c\x01FLAG\x02  2\x0c"\x03R
  
 平野\n　「早桃ちゃ～ん？@
 　　いまから僕のこと、『おにいちゃん』って呼んでくれるか\n　　な？」@
@@ -127,11 +127,11 @@ SCE SCE022_009 \x96\x12 \x02\xef! \r \x8c\x01\r\x02  2\x0c"\x03R
 \n懇願するように見上げる義妹。@
 拓司はそれを無視して、平野にいった。\
 
-  \r \xda\x12
-FOB " \x08\x03 \x02 6\x03 \x025  \r \xc8
-FOB " \xae\x03
-CM1 BgOnsv\x81\x1f\x82\x14 \x025
-SCE SCE022_010 \x9e\x14 \x02\xef! \r \x8c\x01\r\x02 $2\x0c"\x03r
+  FLAG \xda\x12
+FOBL " \x08\x03 \x02 6\x03 \x025  FLAG \xc8
+FOBL " \xae\x03
+CMD1 BgOnsv\x81\x1f\x82\x14 \x025
+SCEN SCE022_010 \x9e\x14 \x02\xef! FLAG \x8c\x01FLAG\x02 $2\x0c"\x03r
  
 拓司\n　「ホラ、さっさとやれよ。お前、女は初めてなんだろ？　@
 　　好きにしていいんだぞ？」\n平野\n　「いやあ、虎菱くんが見てる前じゃ、ちょっと恥ずいなあ」@
@@ -141,9 +141,9 @@ SCE SCE022_010 \x9e\x14 \x02\xef! \r \x8c\x01\r\x02 $2\x0c"\x03r
 白いブリーフの前を大きく押し上げたペ○スの先端は、すでにカ\nウパー液で湿っている。@
 早桃は目をそらして、うつむいたまま動かない。\
 
-  \r \xe2\x14
-FOB " \x08\x03 \x02 6\x03 \x025
-SCE SCE022_011 \xe4\x16 \x02\xef! \r \x8c\x01\r\x02 (2\x0c"\x03e
+  FLAG \xe2\x14
+FOBL " \x08\x03 \x02 6\x03 \x025
+SCEN SCE022_011 \xe4\x16 \x02\xef! FLAG \x8c\x01FLAG\x02 (2\x0c"\x03e
  
 平野\n　「さあ、早桃ちゃん。@
 　　おにいちゃんのここ、触ってみたいだろ？」@
@@ -155,9 +155,9 @@ SCE SCE022_011 \xe4\x16 \x02\xef! \r \x8c\x01\r\x02 (2\x0c"\x03e
 しかし平野はお構いなしに、早桃の手を自分のふくらみにあてが\nった。@
 そのまま手を上下させ、強制的に撫でさすらせる。\
 
-  \r (\x17
-FOB " \x08\x03 \x02 6\x03 \x025
-SCE SCE022_012 \xf6\x18 \x02\xef! \r \x8c\x01\r\x02 ,2\x0c"\x03H
+  FLAG (\x17
+FOBL " \x08\x03 \x02 6\x03 \x025
+SCEN SCE022_012 \xf6\x18 \x02\xef! FLAG \x8c\x01FLAG\x02 ,2\x0c"\x03H
  
 平野\n　「ど……どうだい？@
 　　おにいちゃんのおち○ちんを触った感想は？」@
@@ -168,9 +168,9 @@ SCE SCE022_012 \xf6\x18 \x02\xef! \r \x8c\x01\r\x02 ,2\x0c"\x03H
 平野\n　「はあ、はあ……ホラ、早く言ってよ？」@
 早桃\n　「……大きい……です」\
 
-  \r :\x19
-FOB " \x08\x03 \x02 6\x03 \x025
-SCE SCE022_013 \x94\x1a \x02\xef! \r \x8c\x01\r\x02 02\x0c"\x03w
+  FLAG :\x19
+FOBL " \x08\x03 \x02 6\x03 \x025
+SCEN SCE022_013 \x94\x1a \x02\xef! FLAG \x8c\x01FLAG\x02 02\x0c"\x03w
  
 その声を確認してから、平野は早桃の手首を解放した。@
 続けろ、と目で合図を送り、早桃が自分の意志で撫でさするよう\nにし向ける。@
@@ -182,9 +182,9 @@ SCE SCE022_013 \x94\x1a \x02\xef! \r \x8c\x01\r\x02 02\x0c"\x03w
 早桃\n　「……おにいちゃんの……\pおち○……ちん……@
 　　大きい……\pです……」\
 
-  \r \xd8\x1a
-FOB " \x08\x03 \x02 6\x03 \x025
-SCE SCE022_014 \xee\x1c \x02\xef! \r \x8c\x01\r\x02 42\x0c"\x03n
+  FLAG \xd8\x1a
+FOBL " \x08\x03 \x02 6\x03 \x025
+SCEN SCE022_014 \xee\x1c \x02\xef! FLAG \x8c\x01FLAG\x02 42\x0c"\x03n
  
 平野\n　「よ、よくいえたね、早桃！@
 　　ご褒美だよ！」@
@@ -196,9 +196,9 @@ SCE SCE022_014 \xee\x1c \x02\xef! \r \x8c\x01\r\x02 42\x0c"\x03n
 眉をひそめて、固く目を閉じ、顔面への陵辱に耐えている……。@
 \n早桃\n　「う……ううっ」\
 
-  \r 2\x1d
-FOB " \x08\x03 \x02 6\x03 \x025
-SCE SCE022_015 $\x1f \x02\xef! \r \x8c\x01\r\x02 82\x0c"\x03z
+  FLAG 2\x1d
+FOBL " \x08\x03 \x02 6\x03 \x025
+SCEN SCE022_015 $\x1f \x02\xef! FLAG \x8c\x01FLAG\x02 82\x0c"\x03z
  
 平野\n　「ゆ、夢みたいだ。@
 　　こんなかわいい子と……\pつるぺたのぷにっ娘と……@
@@ -212,9 +212,9 @@ SCE SCE022_015 $\x1f \x02\xef! \r \x8c\x01\r\x02 82\x0c"\x03z
 早桃\n　「はい……\pはいぃ……\pおにいちゃんのこと……@
 　　うぷっ……\pす、好き……\pですぅ……」\
 
-  \r h\x1f
-FOB " \x08\x03 \x02 6\x03 \x025
-SCE SCE022_016 \x8a! \x02\xef! \r \x8c\x01\r\x02 <2\x0c"\x03\x96
+  FLAG h\x1f
+FOBL " \x08\x03 \x02 6\x03 \x025
+SCEN SCE022_016 \x8a! \x02\xef! FLAG \x8c\x01FLAG\x02 <2\x0c"\x03\x96
  
 目の前で、オタクに犯される義妹。@
 たった３万で、義兄への純愛を踏みにじられる早桃。@
@@ -228,9 +228,9 @@ SCE SCE022_016 \x8a! \x02\xef! \r \x8c\x01\r\x02 <2\x0c"\x03\x96
 抵抗することで、より傷つくことを理解したのだろう。@
 無抵抗を貫くことで、この淫猥な行為から自分の意志を消し去ろ\nうとしているのだ。\
 
-  \r \xce!
-FOB " \x08\x03 \x02 6\x03 \x025
-SCE SCE022_017 `$ \x02\xef! \r \x8c\x01\r\x02 @2\x0c"\x03\x7f
+  FLAG \xce!
+FOBL " \x08\x03 \x02 6\x03 \x025
+SCEN SCE022_017 `$ \x02\xef! FLAG \x8c\x01FLAG\x02 @2\x0c"\x03\x7f
  
 不可避の事態が降りかかったのだと……@
 自分は被害者であって加担者ではなかったと……@
@@ -242,9 +242,9 @@ SCE SCE022_017 `$ \x02\xef! \r \x8c\x01\r\x02 @2\x0c"\x03\x7f
 　　おま○こに入れられてそのおにいちゃんの赤ちゃんを孕むか、\n　　\pそれともお尻に入れられて妊娠だけは避けるか？@
 　　さ、早桃が自分でお願いしてごらん？」\
 
-  \r \xa4$
-FOB " \x08\x03 \x02 6\x03 \x025
-SCE SCE022_018 \xda& \x02\xef! \r \x8c\x01\r\x02 D2\x0c"\x03b
+  FLAG \xa4$
+FOBL " \x08\x03 \x02 6\x03 \x025
+SCEN SCE022_018 \xda& \x02\xef! FLAG \x8c\x01FLAG\x02 D2\x0c"\x03b
  
 早桃\n　「……」@
 平野\n　「はあ、はあ……どうした、早桃ぉ？」@
@@ -255,9 +255,9 @@ SCE SCE022_018 \xda& \x02\xef! \r \x8c\x01\r\x02 D2\x0c"\x03b
 平野\n　「そうか、そうか。@
 　　それじゃお望み通り、おま○こにぶち込んで、おにいちゃん\n　　の精子を早桃の卵子に受精させてあげるよ」\
 
-  \r \x1e'
-FOB " \x08\x03 \x02 6\x03 \x025
-SCE SCE022_019 \xe0( \x02\xef! \r \x8c\x01\r\x02 H2\x0c"\x03g
+  FLAG \x1e'
+FOBL " \x08\x03 \x02 6\x03 \x025
+SCEN SCE022_019 \xe0( \x02\xef! FLAG \x8c\x01FLAG\x02 H2\x0c"\x03g
  
 早桃\n　「だ、駄目っ！　\p今日は駄目な日なのっ！@
 　　本当に赤ちゃんできちゃう日なのっ！」@
@@ -271,9 +271,9 @@ SCE SCE022_019 \xe0( \x02\xef! \r \x8c\x01\r\x02 H2\x0c"\x03g
 早桃\n　「お尻に出してください！@
 　　おにいちゃんの精液、お尻の中に射精してくださいっ！」\
 
-  \r $)
-FOB " \x08\x03 \x02 6\x03 \x025
-SCE SCE022_020 \xfa* \x02\xef! \r \x8c\x01\r\x02 L2\x0c"\x03\x80
+  FLAG $)
+FOBL " \x08\x03 \x02 6\x03 \x025
+SCEN SCE022_020 \xfa* \x02\xef! FLAG \x8c\x01FLAG\x02 L2\x0c"\x03\x80
  
 凍り付いたようだった早桃の表情が、ぐしゃっと崩れた。@
 ぽろぽろと大粒の涙が頬を伝う。@
@@ -285,9 +285,9 @@ SCE SCE022_020 \xfa* \x02\xef! \r \x8c\x01\r\x02 L2\x0c"\x03\x80
 　　立っちして、ブルマをぬぎぬぎしようね、早桃ぉ……」@
 拓司\n　「ほら、さっさと立て！」\
 
-  \r >+
-FOB " \x08\x03 \x02 6\x03 \x025
-SCE SCE022_021 x- \x02\xef! \r \x8c\x01\r\x02 P2\x0c"\x03\xa8
+  FLAG >+
+FOBL " \x08\x03 \x02 6\x03 \x025
+SCEN SCE022_021 x- \x02\xef! FLAG \x8c\x01FLAG\x02 P2\x0c"\x03\xa8
  
 ビクッと身体をすくませて、弾かれたように早桃が立ち上がる。@
 平野はその足下にしゃがみ込み、ゆっくりと、なめるようにブル\nマを引き下ろしていった。@
@@ -301,9 +301,9 @@ SCE SCE022_021 x- \x02\xef! \r \x8c\x01\r\x02 P2\x0c"\x03\xa8
 　　要するに早桃は誰でもいいんだろう？@
 　　誰の前でもでもこんなにぬるぬるにしちゃうんだ？」\
 
-  \r \xbc-
-FOB " \x08\x03 \x02 6\x03 \x025
-SCE SCE022_022 \x960 \x02\xef! \r \x8c\x01\r\x02 T2\x0c"\x03^
+  FLAG \xbc-
+FOBL " \x08\x03 \x02 6\x03 \x025
+SCEN SCE022_022 \x960 \x02\xef! FLAG \x8c\x01FLAG\x02 T2\x0c"\x03^
  
 早桃\n　「ううっ……ひっくっ……」@
 \n平野は便座にどっかりと腰をおろした。@
@@ -314,9 +314,9 @@ SCE SCE022_022 \x960 \x02\xef! \r \x8c\x01\r\x02 T2\x0c"\x03^
 早桃\n　「おにいちゃん。もう－－」@
 拓司\n　「入れろ」\
 
-  \r \xda0
-FOB " \x08\x03 \x02 6\x03 \x025
-SCE SCE022_023 \x8c2 \x02\xef! \r \x8c\x01\r\x02 X2\x0c"\x03\x8d
+  FLAG \xda0
+FOBL " \x08\x03 \x02 6\x03 \x025
+SCEN SCE022_023 \x8c2 \x02\xef! FLAG \x8c\x01FLAG\x02 X2\x0c"\x03\x8d
  
 早桃の肩がガックリと落ちた。@
 最後まで残っていたひとかけらの何かが、完全に砕け散った瞬間\nだった。@
@@ -327,10 +327,10 @@ SCE SCE022_023 \x8c2 \x02\xef! \r \x8c\x01\r\x02 X2\x0c"\x03\x8d
 \n平野の膝の上に座るような形で、早桃は腰をおろした。@
 平野は自分でペ○スを握って、先端を早桃のアナルに押し当て、\nそして……\
 
-  \r \xd02
-FOB " \x08\x03 \x02 6\x03 \x025  \r N
-FOB " \xae\x03 \x02 \xd8\x03 \x025
-SCE SCE022_024 r5 \x02\xef! \r \x8c\x01\r\x02 \\2\x0c"\x03g
+  FLAG \xd02
+FOBL " \x08\x03 \x02 6\x03 \x025  FLAG N
+FOBL " \xae\x03 \x02 \xd8\x03 \x025
+SCEN SCE022_024 r5 \x02\xef! FLAG \x8c\x01FLAG\x02 \\2\x0c"\x03g
  
 早桃\n　「ひっ、あうううっ！」@
 平野\n　「き、きつい……千切れそうだあ……お、おおっ！　」@
@@ -340,9 +340,9 @@ SCE SCE022_024 r5 \x02\xef! \r \x8c\x01\r\x02 \\2\x0c"\x03g
 \n早桃\n　「うぐっ……ひっ……\pお腹が……\pうあ……息ができな……@
 　　おふっ！」\
 
-  \r \xb65
-FOB " \x08\x03 \x02 6\x03 \x025
-SCE SCE022_025 \x8c7 \x02\xef! \r \x8c\x01\r\x02 `2\x0c"\x03\xa3
+  FLAG \xb65
+FOBL " \x08\x03 \x02 6\x03 \x025
+SCEN SCE022_025 \x8c7 \x02\xef! FLAG \x8c\x01FLAG\x02 `2\x0c"\x03\xa3
  
 平野\n　「すごいよ、早桃ぉ……\pさ、最高だよぉ。@
 　　こ、こんなに細い身体で……\p体操着着て……\pお人形さん\n　　みたいな早桃が、あ、アナルから直腸にチ○ポぶち込まれて、\n　　トイレでよがり狂ってるなんて……\pゆ、夢みたいだあ……@
@@ -355,9 +355,9 @@ SCE SCE022_025 \x8c7 \x02\xef! \r \x8c\x01\r\x02 `2\x0c"\x03\xa3
 　　もうすぐおにいちゃんのどろどろのやつを、さ、早桃のお腹\n　　の中にぶちまけてあげるからね！@
 　　便所女の早桃は、内臓まで全部おにいちゃんのものだからね\n　　っ！」\
 
-  \r \xd07
-FOB " \x08\x03 \x02 6\x03 \x025
-SCE SCE022_026 \x96: \x02\xef! \r \x8c\x01\r\x02 d2\x0c"\x03d
+  FLAG \xd07
+FOBL " \x08\x03 \x02 6\x03 \x025
+SCEN SCE022_026 \x96: \x02\xef! FLAG \x8c\x01FLAG\x02 d2\x0c"\x03d
  
 早桃\n　「ああっ……あおっ……おあっ！」@
 平野\n　「好きだよ早桃！@
@@ -366,9 +366,9 @@ SCE SCE022_026 \x96: \x02\xef! \r \x8c\x01\r\x02 d2\x0c"\x03d
 /*■黒　表示（ノンエフェクト）*/\a7,-1,-1,0,\a0,200,1,0,\a6,0,0,0,\n拓司は、繋がって動物のような声を漏らしている２人を見下ろし\nた。@
 そしてハダシのままの右脚を伸ばして、むき出しに晒されている\n早桃の性器に親指の先を突っ込んだ。\
 
-  \r \xda:
-FOB " \x08\x03 \x02 6\x03 \x025
-SCE SCE022_027 \xa4< \x02\xef! \r \x8c\x01\r\x02 h2\x0c"\x03o
+  FLAG \xda:
+FOBL " \x08\x03 \x02 6\x03 \x025
+SCEN SCE022_027 \xa4< \x02\xef! FLAG \x8c\x01FLAG\x02 h2\x0c"\x03o
  
 早桃\n　「お……おにい……がはっ……おにいちゃ……えふっ！」@
 拓司\n　「うれしいだろ？@
@@ -379,9 +379,9 @@ SCE SCE022_027 \xa4< \x02\xef! \r \x8c\x01\r\x02 h2\x0c"\x03o
 拓司\n　「見ろよ平野。@
 　　早桃のやつ、うれしくて白目剥いて笑ってるぜ？」\
 
-  \r \xe8<
-FOB " \x08\x03 \x02 6\x03 \x025
-SCE SCE022_028 \xde> \x02\xef! \r \x8c\x01\r\x02 l2\x0c"\x03l
+  FLAG \xe8<
+FOBL " \x08\x03 \x02 6\x03 \x025
+SCEN SCE022_028 \xde> \x02\xef! FLAG \x8c\x01FLAG\x02 l2\x0c"\x03l
  
 平野\n　「と、虎菱くんっ！\p僕もう限界だよ！　@
 　　い、いいんだろ？\p約束どおりにしちゃっていいんだろ？」@
@@ -392,9 +392,9 @@ SCE SCE022_028 \xde> \x02\xef! \r \x8c\x01\r\x02 l2\x0c"\x03l
 \n早桃\n　「な……なに？！@
 　　なんなのおにいちゃん？！」\
 
-  \r "?
-FOB " \x08\x03 \x02 6\x03 \x025
-SCE SCE022_029 \x0cA \x02\xef! \r \x8c\x01\r\x02 p2\x0c"\x03\x9b
+  FLAG "?
+FOBL " \x08\x03 \x02 6\x03 \x025
+SCEN SCE022_029 \x0cA \x02\xef! FLAG \x8c\x01FLAG\x02 p2\x0c"\x03\x9b
  
 拓司\n　「そいつがどうしても膣内射精したいっていうからさ。@
 　　出すときだけは前に入れてもいいぞって、約束したんだよ」@
@@ -409,9 +409,9 @@ SCE SCE022_029 \x0cA \x02\xef! \r \x8c\x01\r\x02 p2\x0c"\x03\x9b
 ぎくりとして、早桃が見上げる。@
 その一瞬の隙をついて、遂に平野のペ○スが早桃を貫いた。\
 
-  \r PA
-FOB " \x08\x03 \x02 6\x03 \x025
-SCE SCE022_030 \xf6C \x02\xef! \r \x8c\x01\r\x02 t2\x0c"\x03d
+  FLAG PA
+FOBL " \x08\x03 \x02 6\x03 \x025
+SCEN SCE022_030 \xf6C \x02\xef! FLAG \x8c\x01FLAG\x02 t2\x0c"\x03d
  
 平野\n　「ああっ……入ったよ！@
 　　わかるかい、早桃ぉ！@
@@ -424,9 +424,9 @@ SCE SCE022_030 \xf6C \x02\xef! \r \x8c\x01\r\x02 t2\x0c"\x03d
 　　やだよ……\pこんなの、あんまりだよ……@
 　　おにいちゃ……ん」\
 
-  \r :D
-FOB " \x08\x03 \x02 6\x03 \x025
-SCE SCE022_031 \x04F \x02\xef! \r \x8c\x01\r\x02 x2\x0c"\x03\xb2
+  FLAG :D
+FOBL " \x08\x03 \x02 6\x03 \x025
+SCEN SCE022_031 \x04F \x02\xef! FLAG \x8c\x01FLAG\x02 x2\x0c"\x03\xb2
  
 平野\n　「あ、愛してるからなんだよ！@
 　　愛してるから直腸じゃなくて子宮に出したいんだよ！@
@@ -443,9 +443,9 @@ SCE SCE022_031 \x04F \x02\xef! \r \x8c\x01\r\x02 x2\x0c"\x03\xb2
 　　わかってんのか、お前なんかプロステ２より価値ないんだ！@
 　　いえッ！」\
 
-  \r HF
-FOB " \x08\x03 \x02 6\x03 \x025
-SCE SCE022_032 JI \x02\xef! \r \x8c\x01\r\x02 |2\x0c"\x03S
+  FLAG HF
+FOBL " \x08\x03 \x02 6\x03 \x025
+SCEN SCE022_032 JI \x02\xef! FLAG \x8c\x01FLAG\x02 |2\x0c"\x03S
  
 早桃\n　「お……おにいちゃん、い、イク……」@
 平野\n　「おにいちゃんもイクよ、早桃ぉ！@
@@ -454,9 +454,9 @@ SCE SCE022_032 JI \x02\xef! \r \x8c\x01\r\x02 |2\x0c"\x03S
 平野\n　「出る！　\p出るよ早桃ぉ！@
 　　おっぱいも膨らみきってないつるぺた少女に僕の精液が……@
 　　子宮まで全部ぼ、僕の物だぁ……あ、あ、あ、ああっ！」\w\n\n\z
-  \r \x8eI
-FOB " \x08\x03 \x02 6\x03 \x025
-SCE SCE022_033 \x14K \x02\xef! \r \x8c\x01\r\x02 \x802\x0c"\x03R
+  FLAG \x8eI
+FOBL " \x08\x03 \x02 6\x03 \x025
+SCEN SCE022_033 \x14K \x02\xef! FLAG \x8c\x01FLAG\x02 \x802\x0c"\x03R
  
 /*▲SE01　再生（再生終了を待たず先へ進む）*/\a2,2,1,1,　ザザザ……ザザッ……ザアザザザ……ザアアアアア……\nザアザアアアアアアア……\n\n耳の奥で、『灰色』が響き始めた。@
 ああ、うるさい。@
@@ -464,8 +464,8 @@ SCE SCE022_033 \x14K \x02\xef! \r \x8c\x01\r\x02 \x802\x0c"\x03R
 うるさいんだよ！@
 \n　ザザザ……ザザッ……ザアザザザ……ザアアアアア……\nザアザアアアアアアア……\
 
-  \r XK
-FOB " \x08\x03 \x02 6\x03 \x025  \r \x02
-FOB " \x06
-CM1 SeStop RUN M \x025 \x08\x03 \x02
-SCE TextClosev\x81\x1f(M \x0256\xf1
+  FLAG XK
+FOBL " \x08\x03 \x02 6\x03 \x025  FLAG \x02
+FOBL " \x06
+CMD1 SeStop RUNF M \x025 \x08\x03 \x02
+SCEN TextClosev\x81\x1f(M \x0256\xf1

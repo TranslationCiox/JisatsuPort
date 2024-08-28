@@ -1,6 +1,6 @@
 START
 \xfd\x06\x01`B#\x01\x14\x05
-SCE SCE209_001 \x06 \x02\xef! \r \x8c\x01\r\x02 0V\x01\x0c"\x03\xdc
+SCEN SCE209_001 \x06 \x02\xef! FLAG \x8c\x01FLAG\x02 0V\x01\x0c"\x03\xdc
  
 ナタネ\n　「話すことはこれだけ。\p私はあなたに『創』られた。@
 　　でも、あなたが眠っているあいだに教授は、私を監禁したわ。\n　　\pでもいま、あなたはもう一度『願』った。\p世界の真実を語る\n　　者の存在を。\pだから私はここに現れた……」@
@@ -9,13 +9,13 @@ SCE SCE209_001 \x06 \x02\xef! \r \x8c\x01\r\x02 0V\x01\x0c"\x03\xdc
 \n壮大な話である。@
 あるいは壮大な嘘というべきか？\
 
-  \r J
-FOB "\x03\x07.\\Data\\Script\\TextFunc.Fob RUN \xda\x03
-CM1 TextOn RUN \x08\x04 \x025\x03#
+  FLAG J
+FOBL "\x03\x07.\\Data\\Script\\TextFunc.Fob RUNF \xda\x03
+CMD1 TextOn RUNF \x08\x04 \x025\x03#
 CHOICE
 「『教授が語る世界』をリアルと信じる」\n「『学校に籠城する世界』をリアルと信じる」\n「『君の語る世界』をリアルと信じる」\n\l0,3,
 ENDCHOICE
 
-  \r $\x04
-FOB " \xda\x03 \x02 \x08\x04 \x025 \xda\x03 \x02
-SCE TextClosev\x81\x1f\xf6\x04 \x0256\xf1
+  FLAG $\x04
+FOBL " \xda\x03 \x02 \x08\x04 \x025 \xda\x03 \x02
+SCEN TextClosev\x81\x1f\xf6\x04 \x0256\xf1

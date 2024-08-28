@@ -1,6 +1,6 @@
 START
 R\x04\x01\xa4\t3\x01<\x03
-SCE SCEG02_101 \x06 \x02\xef! \r \x8c\x01\r\x02 h\xc5\x01\x0c"\x03\x86
+SCEN SCEG02_101 \x06 \x02\xef! FLAG \x8c\x01FLAG\x02 h\xc5\x01\x0c"\x03\x86
  
 錦城\n　「エロい子ね……いいわよ。\p許してあげる。@
 　　……どう？　柔らかいでしょう？　つけてないのよ、わかる？\n　　\pあなたに触らせてあげようと思って、下着、つけてこなかっ\n　　たの。\p……昼間からずっとあなたのこと見てたわ。@
@@ -8,8 +8,8 @@ SCE SCEG02_101 \x06 \x02\xef! \r \x8c\x01\r\x02 h\xc5\x01\x0c"\x03\x86
 　　先生の胸、見えてる？\p　あら……硬くなったわよ。@
 　　虎菱くんのあそこ、もう爆発しそうだわ。@
 　　よっぽど先生のおっぱい、気に入ったのね？\n　　ほんと……いやらしい子だわ」\w\z
-  \r J
-FOB "\x03\x07.\\Data\\Script\\TextFunc.Fob RUN \x82\x02
-CM1 TextOn RUN \xb0\x02 \x025\x03\x06.\\Data\\Script\\Bgm.Fobv\x81\x1f\xcc\x02
-CM1 StopCD RUN \xf6\x02 \x025 \x82\x02 \x02
-SCE TextClosev\x81\x1f\x1e\x03 \x0256\xf1
+  FLAG J
+FOBL "\x03\x07.\\Data\\Script\\TextFunc.Fob RUNF \x82\x02
+CMD1 TextOn RUNF \xb0\x02 \x025\x03\x06.\\Data\\Script\\Bgm.Fobv\x81\x1f\xcc\x02
+CMD1 StopCD RUNF \xf6\x02 \x025 \x82\x02 \x02
+SCEN TextClosev\x81\x1f\x1e\x03 \x0256\xf1

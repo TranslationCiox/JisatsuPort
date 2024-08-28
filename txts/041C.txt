@@ -1,8 +1,8 @@
 START
-\xa2\x14\x01`B#\x01\xfc\x10  \r \x08\x01
-FOB "\x03\x06.\\Data\\Script\\Bgm.Fobv\x81\x1f 
-CM1 PlayCD RUN J \x025
-SCE SCE041_001 f \x02\xef! \r \x8c\x01\r\x02  N\x0c"\x03x
+\xa2\x14\x01`B#\x01\xfc\x10  FLAG \x08\x01
+FOBL "\x03\x06.\\Data\\Script\\Bgm.Fobv\x81\x1f 
+CMD1 PlayCD RUNF J \x025
+SCEN SCE041_001 f \x02\xef! FLAG \x8c\x01FLAG\x02  N\x0c"\x03x
  
 拓司\n　「早桃。\pおれもお前が好きだ。@
 　　義理の兄貴としてじゃなくて－－」@
@@ -14,10 +14,10 @@ SCE SCE041_001 f \x02\xef! \r \x8c\x01\r\x02  N\x0c"\x03x
 笑い出しそうな、泣き出しそうな、奇妙な表情で、空を見上げて\nいた。@
 やがて早桃はポツリといった。\
 
-  \r \xaa
-FOB "\x03\x07.\\Data\\Script\\TextFunc.Fob RUN \xaa\x02
-CM1 TextOn RUN \xd8\x02 \x025
-SCE SCE041_002 \xf4\x02 \x02\xef! \r \x8c\x01\r\x02 $N\x0c"\x03;
+  FLAG \xaa
+FOBL "\x03\x07.\\Data\\Script\\TextFunc.Fob RUNF \xaa\x02
+CMD1 TextOn RUNF \xd8\x02 \x025
+SCEN SCE041_002 \xf4\x02 \x02\xef! FLAG \x8c\x01FLAG\x02 $N\x0c"\x03;
  
 早桃\n　「早桃はおにいちゃんのことが好き。@
 　　おにいちゃんも、早桃のこと好きだっていってくれる。@
@@ -25,12 +25,12 @@ SCE SCE041_002 \xf4\x02 \x02\xef! \r \x8c\x01\r\x02 $N\x0c"\x03;
 拓司\n　「……義兄妹だから、か？」@
 \n早桃は小さく首を横に振った。\
 
-  \r 8\x03
-FOB " \xaa\x02 \x02 \xd8\x02 \x025  
-CM1 StopCD RUN j\x04 \x025  \r \xc8
-FOB "\x03\x06.\\Data\\Script\\Bg.Fobsv\x81\x1f\xa0\x04
-CM1 BgOnsv\x81\x1f\xca\x04 \x025
-SCE SCE041_003 \xe6\x04 \x02\xef! \r \x8c\x01\r\x02 (N\x0c"\x03\xa3
+  FLAG 8\x03
+FOBL " \xaa\x02 \x02 \xd8\x02 \x025  
+CMD1 StopCD RUNF j\x04 \x025  FLAG \xc8
+FOBL "\x03\x06.\\Data\\Script\\Bg.Fobsv\x81\x1f\xa0\x04
+CMD1 BgOnsv\x81\x1f\xca\x04 \x025
+SCEN SCE041_003 \xe6\x04 \x02\xef! FLAG \x8c\x01FLAG\x02 (N\x0c"\x03\xa3
  
 早桃\n　「ううん。\pそんなことじゃないの。@
 　　そんなのは、どうでもいいこと。@
@@ -44,9 +44,9 @@ SCE SCE041_003 \xe6\x04 \x02\xef! \r \x8c\x01\r\x02 (N\x0c"\x03\xa3
 　　でも、違う。\p生きてるけど、もう確実に死んでるの。@
 　　だから、おにいちゃんと恋人にはなれないの。\pわかる？」\
 
-  \r *\x05
-FOB " \xaa\x02 \x02 \xd8\x02 \x025
-SCE SCE041_004 \xf0\x07 \x02\xef! \r \x8c\x01\r\x02 ,N\x0c"\x03\x8e
+  FLAG *\x05
+FOBL " \xaa\x02 \x02 \xd8\x02 \x025
+SCEN SCE041_004 \xf0\x07 \x02\xef! FLAG \x8c\x01FLAG\x02 ,N\x0c"\x03\x8e
  
 わからなかった。@
 しかし、拓司は、わからないということが、どうしてもできなか\nった。@
@@ -60,10 +60,10 @@ SCE SCE041_004 \xf0\x07 \x02\xef! \r \x8c\x01\r\x02 ,N\x0c"\x03\x8e
 \n早桃\n　「……おにいちゃん？」@
 拓司\n　「ああ？」\
 
-  \r 4\x08
-FOB " \xaa\x02 \x02 \xd8\x02 \x025  \r \t\x01
-FOB "   \x02 J \x025
-SCE SCE041_005 \xda\n \x02\xef! \r \x8c\x01\r\x02 0N\x0c"\x03m
+  FLAG 4\x08
+FOBL " \xaa\x02 \x02 \xd8\x02 \x025  FLAG \t\x01
+FOBL "   \x02 J \x025
+SCEN SCE041_005 \xda\n \x02\xef! FLAG \x8c\x01FLAG\x02 0N\x0c"\x03m
  
 早桃\n　「あのね、早桃、お昼休みが怖かったの」@
 拓司\n　「？」@
@@ -73,9 +73,9 @@ SCE SCE041_005 \xda\n \x02\xef! \r \x8c\x01\r\x02 0N\x0c"\x03m
 　　早く終わらないかな、早く終わらないかなって。@
 　　もうちょっとで終わるかなって、時計を見るとまだ５分くらい\n　　しか過ぎてなくって。」\
 
-  \r \x1e\x0b
-FOB " \xaa\x02 \x02 \xd8\x02 \x025
-SCE SCE041_006 \x0c\r \x02\xef! \r \x8c\x01\r\x02 4N\x0c"\x03\x81
+  FLAG \x1e\x0b
+FOBL " \xaa\x02 \x02 \xd8\x02 \x025
+SCEN SCE041_006 \x0c\r \x02\xef! FLAG \x8c\x01FLAG\x02 4N\x0c"\x03\x81
  
 早桃\n　「あのね……\pみんな、お友達同士で席くっつけて、お弁当食べた\n　　りするでしょ？@
 　　そうするとね……\p早桃、ひとりなんだなあ、って。@
@@ -87,15 +87,15 @@ SCE SCE041_006 \x0c\r \x02\xef! \r \x8c\x01\r\x02 4N\x0c"\x03\x81
 　　今日の嬉しい気持ちを思い出せば、お昼休みもがんばれるっ\n　　て、そんな気がする」@
 拓司\n　「早桃－－」\
 
-  \r P\r
-FOB " \xaa\x02 \x02 \xd8\x02 \x025   \x02 j\x04 \x025
-SCE SCE041_007 \xa8\x0f \x02\xef! \r \x8c\x01\r\x02 8N\x0c"\x03+
+  FLAG P\r
+FOBL " \xaa\x02 \x02 \xd8\x02 \x025   \x02 j\x04 \x025
+SCEN SCE041_007 \xa8\x0f \x02\xef! FLAG \x8c\x01FLAG\x02 8N\x0c"\x03+
  
 早桃\n　「ありがと！　おにいちゃん！」@
 \n　早桃はそういって、さっと唇を拓司の頬に重ねた。@
 \n拓司\n　「……！」@
 早桃\n　「ダイスキだよ。……おにいちゃん」\
 
-  \r \xec\x0f
-FOB " \xaa\x02 \x02 \xd8\x02 \x025 \xaa\x02 \x02
-SCE TextClosev\x81\x1f\xde\x10 \x0256\xf1
+  FLAG \xec\x0f
+FOBL " \xaa\x02 \x02 \xd8\x02 \x025 \xaa\x02 \x02
+SCEN TextClosev\x81\x1f\xde\x10 \x0256\xf1

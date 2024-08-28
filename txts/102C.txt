@@ -1,13 +1,13 @@
 START
 #\x1f\x01`B#\x01\xd0\x19
-SCE SCE102_001 \x06 \x02\xef! \r \x8c\x01\r\x02 \xaf\x0c"\x03\x11
+SCEN SCE102_001 \x06 \x02\xef! FLAG \x8c\x01FLAG\x02 \xaf\x0c"\x03\x11
  
 \n\n\n\n\n\n\n\n\n\n　　　　　　　　　　　　　『５日目』\
 
-  \r J
-FOB "\x03\x07.\\Data\\Script\\TextFunc.Fob RUN \xae
-CM1 TextOn RUN \xdc \x025
-SCE SCE102_002 \xf8 \x02\xef! \r \x8c\x01\r\x02 \x04\xaf\x0c"\x03\xa5
+  FLAG J
+FOBL "\x03\x07.\\Data\\Script\\TextFunc.Fob RUNF \xae
+CMD1 TextOn RUNF \xdc \x025
+SCEN SCE102_002 \xf8 \x02\xef! FLAG \x8c\x01FLAG\x02 \x04\xaf\x0c"\x03\xa5
  
 早桃の様子がおかしいことに気づいたのは、カンナだった。@
 拓司にそっと耳打ちする。@
@@ -17,11 +17,11 @@ SCE SCE102_002 \xf8 \x02\xef! \r \x8c\x01\r\x02 \x04\xaf\x0c"\x03\xa5
 拓司\n　「雲居さんが……？」@
 \nカンナは肩をすくめただけで無言だった。\
 
-  \r <\x01
-FOB " \xae \x02 \xdc \x025  \r \xc8
-FOB "\x03\x06.\\Data\\Script\\Bg.Fobsv\x81\x1f$\x04
-CM2 BgAutoFadeInsv\x81\x1fN\x04 \x025
-SCE SCE102_003 r\x04 \x02\xef! \r \x8c\x01\r\x02 \x08\xaf\x0c"\x03j
+  FLAG <\x01
+FOBL " \xae \x02 \xdc \x025  FLAG \xc8
+FOBL "\x03\x06.\\Data\\Script\\Bg.Fobsv\x81\x1f$\x04
+CMD2 BgAutoFadeInsv\x81\x1fN\x04 \x025
+SCEN SCE102_003 r\x04 \x02\xef! FLAG \x8c\x01FLAG\x02 \x08\xaf\x0c"\x03j
  
 とりあえず拓司は、早桃の様子を見ることにした。@
 午前中、早桃は元気を装っていたが、午後になると気力も尽きた\nのか、ぐったりと壁にもたれかかって動かなくなった。@
@@ -34,9 +34,9 @@ SCE SCE102_003 r\x04 \x02\xef! \r \x8c\x01\r\x02 \x08\xaf\x0c"\x03j
 拓司\n　「……」@
 なたね\n　「……」\
 
-  \r \xb6\x04
-FOB " \xae \x02 \xdc \x025
-SCE SCE102_004 \x98\x06 \x02\xef! \r \x8c\x01\r\x02 \x0c\xaf\x0c"\x03p
+  FLAG \xb6\x04
+FOBL " \xae \x02 \xdc \x025
+SCEN SCE102_004 \x98\x06 \x02\xef! FLAG \x8c\x01FLAG\x02 \x0c\xaf\x0c"\x03p
  
 拓司\n　「聞こえなかったか？\p　風邪薬をくれ」@
 なたね\n　「風邪薬はあるけれど……本当に早桃さんに必要なのかしら？」\n　　@
@@ -46,9 +46,9 @@ SCE SCE102_004 \x98\x06 \x02\xef! \r \x8c\x01\r\x02 \x0c\xaf\x0c"\x03p
 なたね\n　「……」@
 拓司\n　「……」\
 
-  \r \xdc\x06
-FOB " \xae \x02 \xdc \x025
-SCE SCE102_005 \xd6\x08 \x02\xef! \r \x8c\x01\r\x02 \x10\xaf\x0c"\x03\x87
+  FLAG \xdc\x06
+FOBL " \xae \x02 \xdc \x025
+SCEN SCE102_005 \xd6\x08 \x02\xef! FLAG \x8c\x01FLAG\x02 \x10\xaf\x0c"\x03\x87
  
 なたね\n　「伝染病にかかるなんて、自己管理が足りない証拠よ。@
 　　薬は貴重品よ。\p最終聖戦に向けていくらあっても足りないく\n　　らい。\pそれを、早桃さんのような……不適格者に投下するの\n　　はどうなのかしら？\p　虎菱くんが風邪を引いたのなら、私は\n　　こんなことはいわないわ。\p早桃さんは……ねえ？」@
@@ -56,9 +56,9 @@ SCE SCE102_005 \xd6\x08 \x02\xef! \r \x8c\x01\r\x02 \x10\xaf\x0c"\x03\x87
 錦城\n　「－－いい加減になさい、雲居さん！」@
 \n意外な声に拓司は動きを止めた。\p錦城が、厳しい顔でなたねをに\nらみつけている。\p虚を突かれたのか、なたねも珍しく驚きの表情\nを浮かべている。\
 
-  \r \x1a\t
-FOB " \xae \x02 \xdc \x025
-SCE SCE102_006 p\x0b \x02\xef! \r \x8c\x01\r\x02 \x14\xaf\x0c"\x03\xae
+  FLAG \x1a\t
+FOBL " \xae \x02 \xdc \x025
+SCEN SCE102_006 p\x0b \x02\xef! FLAG \x8c\x01FLAG\x02 \x14\xaf\x0c"\x03\xae
  
 錦城\n　「雲居さん。\pあなたは最初、誰にでも中立だと主張したわよ\n　　ね？\p　だからこそ、私たちはあなたに物資の管理人を任せた\n　　の。\pあなたの地位は、ただそれだけの理由に根拠したものな\n　　の。\pみんなの合意に支えられているもの。\p違うかしら？」@
 なたね\n　「……」@
@@ -67,9 +67,9 @@ SCE SCE102_006 p\x0b \x02\xef! \r \x8c\x01\r\x02 \x14\xaf\x0c"\x03\xae
 なたね\n　「そんなことはありません。\p私は公正な考え方を－－」@
 錦城\n　「周りが不公平だと感じたら、それは不公平ということなんじ\n　　ゃないかしら？\p　この場における公平さは、あなたの主観が\n　　決めることじゃないわ。\pそれに－－」\
 
-  \r \xb4\x0b
-FOB " \xae \x02 \xdc \x025
-SCE SCE102_007 \xa6\x0e \x02\xef! \r \x8c\x01\r\x02 \x18\xaf\x0c"\x03\xb2
+  FLAG \xb4\x0b
+FOBL " \xae \x02 \xdc \x025
+SCEN SCE102_007 \xa6\x0e \x02\xef! FLAG \x8c\x01FLAG\x02 \x18\xaf\x0c"\x03\xb2
  
 なたね\n　「いえ、それは……」@
 錦城\n　「－－それに！」@
@@ -78,9 +78,9 @@ SCE SCE102_007 \xa6\x0e \x02\xef! \r \x8c\x01\r\x02 \x18\xaf\x0c"\x03\xb2
 　　もめ事の原因はほとんどあなたのような気がするのだけれど、\n　　私の勘違いかしら？\p　あなたの理屈でいうのなら……環\n　　境に適さない人間は排除されるべきという理論が正しいのな\n　　ら……雲居さん。\pあなたはここでいちばんいらない人間だ\n　　と思うのだけれど？」@
 \nなたねの顔が青ざめていった。\pなにか反論をしようとするが、口\nがぱくぱくと震えるだけで言葉が出てこない。\pまるで、あふれで\nる言葉が喉に詰まって、窒息寸前であるかのように見える。\
 
-  \r \xea\x0e
-FOB " \xae \x02 \xdc \x025
-SCE SCE102_008 \xec\x11 \x02\xef! \r \x8c\x01\r\x02 \x1c\xaf\x0c"\x03\x81
+  FLAG \xea\x0e
+FOBL " \xae \x02 \xdc \x025
+SCEN SCE102_008 \xec\x11 \x02\xef! FLAG \x8c\x01FLAG\x02 \x1c\xaf\x0c"\x03\x81
  
 錦城\n　「わかってもらえたかしら？\p　だったら黙って薬を持ってきて\n　　ちょうだい。\p……さあ！」@
 \nなたねは完全に打ちのめされた様子だった。\p一同の冷たい視線か\nら逃れるように背を向けて、のっそりと準備室へと入っていく。@
@@ -89,9 +89,9 @@ SCE SCE102_008 \xec\x11 \x02\xef! \r \x8c\x01\r\x02 \x1c\xaf\x0c"\x03\x81
 ラジオのスイッチを入れ、そこから漏れる雑音にじっと精神を集\n中させている。@
 \n紅葉\n　「……なんなのよ、あの態度！」\
 
-  \r 0\x12
-FOB " \xae \x02 \xdc \x025
-SCE SCE102_009 n\x14 \x02\xef! \r \x8c\x01\r\x02  \xaf\x0c"\x03\x9c
+  FLAG 0\x12
+FOBL " \xae \x02 \xdc \x025
+SCEN SCE102_009 n\x14 \x02\xef! FLAG \x8c\x01FLAG\x02  \xaf\x0c"\x03\x9c
  
 床に散らばった風邪薬を拾い集めながら、紅葉が舌打ちした。@
 \n紅葉\n　「拓司、あの子、やっぱりおかしいよ。\pあんな子に鍵の管理任\n　　せておくの、不安だな……」@
@@ -100,10 +100,10 @@ SCE SCE102_009 n\x14 \x02\xef! \r \x8c\x01\r\x02  \xaf\x0c"\x03\x9c
 なたねいうところの波動は－－確かにある。\p毒素めいた致命的な\nなにかが、あたりに蔓延している。\pそれは事実だ。@
 しかし、それが宇宙人のしわざであるだとか、地底にいる怪物か\nら放たれているだとか、果ては弱い者は死んで当然とだとか、そ\nういった部分になると話は別だ。\p妄想の産物であるとしか思えな\nい。\
 
-  \r \xb2\x14
-FOB " \xae \x02 \xdc \x025\x03\x06.\\Data\\Script\\Bgm.Fobv\x81\x1f\\\x17
-CM1 StopCD RUN \x86\x17 \x025
-SCE SCE102_010 \xa2\x17 \x02\xef! \r \x8c\x01\r\x02 $\xaf\x0c"\x03C
+  FLAG \xb2\x14
+FOBL " \xae \x02 \xdc \x025\x03\x06.\\Data\\Script\\Bgm.Fobv\x81\x1f\\\x17
+CMD1 StopCD RUNF \x86\x17 \x025
+SCEN SCE102_010 \xa2\x17 \x02\xef! FLAG \x8c\x01FLAG\x02 $\xaf\x0c"\x03C
  
 紅葉\n　「……ねえ、拓司。\p鍵、とっちゃおうか？」@
 拓司\n　「え？」@
@@ -112,12 +112,12 @@ SCE SCE102_010 \xa2\x17 \x02\xef! \r \x8c\x01\r\x02 $\xaf\x0c"\x03C
 紅葉\n　「そしたら、錦城先生に鍵を管理してもらえばいいじゃない。@
 　　そのほうが、絶対安全だよ？」\
 
-  \r \xe6\x17
-FOB " \xae \x02 \xdc \x025\x03\x10
+  FLAG \xe6\x17
+FOBL " \xae \x02 \xdc \x025\x03\x10
 CHOICE
 「それはやめておこう」\n「いいかもしれないな」\n\l0,2,
 ENDCHOICE
 
-  \r ,\x19
-FOB " \xae \x02 \xdc \x025 \xae \x02
-SCE TextClosev\x81\x1f\xb2\x19 \x0256\xf1
+  FLAG ,\x19
+FOBL " \xae \x02 \xdc \x025 \xae \x02
+SCEN TextClosev\x81\x1f\xb2\x19 \x0256\xf1

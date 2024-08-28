@@ -1,15 +1,15 @@
 START
 \xbf\x06\x01`B#\x01T\x05
-SCE SCE100_001 \x06 \x02\xef! \r \x8c\x01\r\x02 \xe0\xab\x0c"\x03q
+SCEN SCE100_001 \x06 \x02\xef! FLAG \x8c\x01FLAG\x02 \xe0\xab\x0c"\x03q
  
 拓司\n　「雲居さんにいっておきたいことがある」@
 なたね\n　「……」@
 拓司\n　「宇宙人とか電波とか、そういった話はみんなの前では控えて\n　　ほしい。\pそれでなくてもみんな不安なんだ。\pそういう……わ\n　　けのわからないことをいわれると、神経に響く。\pそしてもう\n　　ひとつ。\p早桃に限らず、誰かをスパイ呼ばわりするようなマ\n　　ネは金輪際やめてくれ。\pそれは雲居さんのいう、団結を乱\n　　す行為そのものだ。\p内部崩壊の引き金になりかねない」\
 
-  \r J
-FOB "\x03\x07.\\Data\\Script\\TextFunc.Fob RUN .\x02
-CM1 TextOn RUN \\\x02 \x025
-SCE SCE100_002 x\x02 \x02\xef! \r \x8c\x01\r\x02 \xe4\xab\x0c"\x03\x8d
+  FLAG J
+FOBL "\x03\x07.\\Data\\Script\\TextFunc.Fob RUNF .\x02
+CMD1 TextOn RUNF \\\x02 \x025
+SCEN SCE100_002 x\x02 \x02\xef! FLAG \x8c\x01FLAG\x02 \xe4\xab\x0c"\x03\x8d
  
 早桃\n　「そうよ、そうよ！」@
 拓司\n　「……。\p早桃にもいっておく。\pいいかい、早桃。\pみんな怖いん\n　　だ。\pみんな叫びたいんだ。\pでも、我慢している。\pだから、お\n　　前も我慢しなくちゃいけない」@
@@ -19,6 +19,6 @@ SCE SCE100_002 x\x02 \x02\xef! \r \x8c\x01\r\x02 \xe4\xab\x0c"\x03\x8d
 ザアザアアアアアアア……@
 /*▲SE01　停止*/\a4,2,0,0,\nただ黙ってラジオの前に戻って、一日中、耳を貼り付かせるよう\nにしてノイズに聞き入っていた。\
 
-  \r \xbc\x02
-FOB " .\x02 \x02 \\\x02 \x025 .\x02 \x02
-SCE TextClosev\x81\x1f6\x05 \x0256\xf1
+  FLAG \xbc\x02
+FOBL " .\x02 \x02 \\\x02 \x025 .\x02 \x02
+SCEN TextClosev\x81\x1f6\x05 \x0256\xf1

@@ -1,8 +1,8 @@
 START
-\xa3\n\x01`B#\x01d\x08  \r \x07\x01
-FOB "\x03\x06.\\Data\\Script\\Bgm.Fobv\x81\x1f 
-CM1 PlayCD RUN J \x025
-SCE SCE019_001 f \x02\xef! \r \x8c\x01\r\x02 P-\x0c"\x03R
+\xa3\n\x01`B#\x01d\x08  FLAG \x07\x01
+FOBL "\x03\x06.\\Data\\Script\\Bgm.Fobv\x81\x1f 
+CMD1 PlayCD RUNF J \x025
+SCEN SCE019_001 f \x02\xef! FLAG \x8c\x01FLAG\x02 P-\x0c"\x03R
  
 紅葉\n　「－－もしも～し？　聞いてますか～、トラビシタクジくん？！\n　　」@
 拓司\n　「……え？」@
@@ -14,10 +14,10 @@ SCE SCE019_001 f \x02\xef! \r \x8c\x01\r\x02 P-\x0c"\x03R
 拓司\n　「らしい」@
 \n　紅葉はナサケナイ、とため息をついた。\
 
-  \r \xaa
-FOB "\x03\x07.\\Data\\Script\\TextFunc.Fob RUN \x12\x02
-CM1 TextOn RUN @\x02 \x025
-SCE SCE019_002 \\\x02 \x02\xef! \r \x8c\x01\r\x02 T-\x0c"\x03L
+  FLAG \xaa
+FOBL "\x03\x07.\\Data\\Script\\TextFunc.Fob RUNF \x12\x02
+CMD1 TextOn RUNF @\x02 \x025
+SCEN SCE019_002 \\\x02 \x02\xef! FLAG \x8c\x01FLAG\x02 T-\x0c"\x03L
  
 紅葉\n　「ちゃんとご飯、食べてる？」@
 拓司\n　「まあ、普通に」@
@@ -27,19 +27,19 @@ SCE SCE019_002 \\\x02 \x02\xef! \r \x8c\x01\r\x02 T-\x0c"\x03L
 拓司\n　「？」@
 紅葉\n　「……あ、いや、そのね！　ほら、アンタ今日、お昼ご飯どうす\n　　るのかな、って。\pもし購買のパンとかで済ませるつもりなら－\n　　－」\
 
-  \r \xa0\x02
-FOB " \x12\x02 \x02 @\x02 \x025  \r \x08\x01
-FOB "   \x02 J \x025
-SCE SCE019_003 >\x04 \x02\xef! \r \x8c\x01\r\x02 X-\x0c"\x03A
+  FLAG \xa0\x02
+FOBL " \x12\x02 \x02 @\x02 \x025  FLAG \x08\x01
+FOBL "   \x02 J \x025
+SCEN SCE019_003 >\x04 \x02\xef! FLAG \x8c\x01FLAG\x02 X-\x0c"\x03A
  
 ？？？\n　「－－おはよう」@
 \n/*　■CG05　表示　（クロスフェード）　*/\a7,-2,-2,0,\a0,4,2,0,\a6,-2,0,0,その声は、すぐ耳元で聞こえた。@
 ぎょっとして振り返ると、すぐ後ろにひとりの女の子がひっそ\nり立っている。@
 拓司はその少女の名前を知っていた。\
 
-  \r \x82\x04
-FOB " \x12\x02 \x02 @\x02 \x025
-SCE SCE019_004 \xc0\x05 \x02\xef! \r \x8c\x01\r\x02 \\-\x0c"\x03\x7f
+  FLAG \x82\x04
+FOBL " \x12\x02 \x02 @\x02 \x025
+SCEN SCE019_004 \xc0\x05 \x02\xef! FLAG \x8c\x01FLAG\x02 \\-\x0c"\x03\x7f
  
 \n月代カンナ。@
 夜の闇を思わせる黒いストレートの髪。@
@@ -52,6 +52,6 @@ SCE SCE019_004 \xc0\x05 \x02\xef! \r \x8c\x01\r\x02 \\-\x0c"\x03\x7f
 \nしかし、それにしても－－拓司は思った。@
 \n－－どうして月代カンナはおれに声をかけてきたのだろう？\
 
-  \r \x04\x06
-FOB " \x12\x02 \x02 @\x02 \x025 \x12\x02 \x02
-SCE TextClosev\x81\x1fF\x08 \x0256\xf1
+  FLAG \x04\x06
+FOBL " \x12\x02 \x02 @\x02 \x025 \x12\x02 \x02
+SCEN TextClosev\x81\x1fF\x08 \x0256\xf1

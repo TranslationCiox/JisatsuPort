@@ -1,6 +1,6 @@
 START
 \xdd\x05\x01\xa4\t3\x01\xa0\x04
-SCE SCE202_001 \x06 \x02\xef! \r \x8c\x01\r\x02 @K\x01\x0c"\x03\xd6
+SCEN SCE202_001 \x06 \x02\xef! FLAG \x8c\x01FLAG\x02 @K\x01\x0c"\x03\xd6
  
 ナタネ\n　「次にふたつめ。\pいま、あなたが体験しているこの世界こそが\n　　『現実』よ。\pそして、『学校に籠城している世界』……教授\n　　はそれを『あなたの妄想が生んだ頭の中の世界』だと信じ込\n　　ませようとしているけれど、それは罠。\pあなたが見たのは『\n　　妄想』ではないわ。\p『記憶』よ」@
 拓司\n　「……」@
@@ -8,13 +8,13 @@ SCE SCE202_001 \x06 \x02\xef! \r \x8c\x01\r\x02 @K\x01\x0c"\x03\xd6
 　　……教授は、機械を使ってあなたの記憶を消し去った。@
 　　でも、消しきれなかった記憶の断片が、眠りの中で映画みた\n　　いに甦っている。\p……あなたは過去を繰り返して体験してい\n　　る。\p……つまり、あなたは虎菱拓司なの。\pあなたが記憶して\n　　いる『自分』は、真実よ。\p妄想の産物ではない。\p波動が襲っ\n　　てきて、あなたたちは実験室に籠城した。\pそれは過去の事実\n　　なの。\p……いいわね？」\
 
-  \r J
-FOB "\x03\x07.\\Data\\Script\\TextFunc.Fob RUN \xc2\x03
-CM1 TextOn RUN \xf0\x03 \x025\x03\x0c
+  FLAG J
+FOBL "\x03\x07.\\Data\\Script\\TextFunc.Fob RUNF \xc2\x03
+CMD1 TextOn RUNF \xf0\x03 \x025\x03\x0c
 CHOICE
 もう一度聞く\n黙って続きを聞く\n\l0,2,
 ENDCHOICE
 
-  \r \x0c\x04
-FOB " \xc2\x03 \x02 \xf0\x03 \x025 \xc2\x03 \x02
-SCE TextClosev\x81\x1f\x82\x04 \x0256\xf1
+  FLAG \x0c\x04
+FOBL " \xc2\x03 \x02 \xf0\x03 \x025 \xc2\x03 \x02
+SCEN TextClosev\x81\x1f\x82\x04 \x0256\xf1

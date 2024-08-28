@@ -1,13 +1,13 @@
 START
 \x17\x10\x01`B#\x010\r
-SCE SCE096_001 \x06 \x02\xef! \r \x8c\x01\r\x02 \xa0\xa5\x0c"\x03\x11
+SCEN SCE096_001 \x06 \x02\xef! FLAG \x8c\x01FLAG\x02 \xa0\xa5\x0c"\x03\x11
  
 \n\n\n\n\n\n\n\n\n\n　　　　　　　　　　　　　『３日目』\
 
-  \r J
-FOB "\x03\x07.\\Data\\Script\\TextFunc.Fob RUN \xae
-CM1 TextOn RUN \xdc \x025
-SCE SCE096_002 \xf8 \x02\xef! \r \x8c\x01\r\x02 \xa4\xa5\x0c"\x03q
+  FLAG J
+FOBL "\x03\x07.\\Data\\Script\\TextFunc.Fob RUNF \xae
+CMD1 TextOn RUNF \xdc \x025
+SCEN SCE096_002 \xf8 \x02\xef! FLAG \x8c\x01FLAG\x02 \xa4\xa5\x0c"\x03q
  
 　全員の顔に疲労の影を見た拓司は、なたねに提案をした。@
 \n拓司\n　「身体を濡れタオルで洗うのは５日に１回って話だったけど…\n　　…」@
@@ -18,22 +18,22 @@ SCE SCE096_002 \xf8 \x02\xef! \r \x8c\x01\r\x02 \xa4\xa5\x0c"\x03q
 なたね\n　「……水は無駄にはできません」\w\n拓司\n　「だろうね。\pでも、無駄にするわけじゃない。@
 　　身体を拭くんだ」\
 
-  \r <\x01
-FOB " \xae \x02 \xdc \x025
-SCE SCE096_003 :\x03 \x02\xef! \r \x8c\x01\r\x02 \xa8\xa5\x0c"\x03i
+  FLAG <\x01
+FOBL " \xae \x02 \xdc \x025
+SCEN SCE096_003 :\x03 \x02\xef! FLAG \x8c\x01FLAG\x02 \xa8\xa5\x0c"\x03i
  
 なたね\n　「……５日に１回で衛生的には問題はないと思うんですけど」@
 拓司\n　「衛生的な問題じゃない。\p精神的な問題だ」@
 なたね\n　「……そう。\pリーダーはあなただから」@
 \n　なたねは、準備室から水の入ったポリタンクと、新しいタオル\nを人数分運び出してきた。\p全員で協力して実験器具が詰まった\n棚を移動して壁を作り、そこを即席の『シャワールーム』とした。\n\pもちろん、女性陣のプライバシーを守るためである。\
 
-  \r ~\x03
-FOB " \xae \x02 \xdc \x025  \r  
-FOB "\x03\x06.\\Data\\Script\\Bg.Fobsv\x81\x1fv\x05
-CM2 BgAutoFadeInsv\x81\x1f\xa0\x05 \x025  \r \x07\x01
-FOB "\x03\x06.\\Data\\Script\\Bgm.Fobv\x81\x1f\xde\x05
-CM1 PlayCD RUN \x08\x06 \x025
-SCE SCE096_004 $\x06 \x02\xef! \r \x8c\x01\r\x02 \xac\xa5\x0c"\x03q
+  FLAG ~\x03
+FOBL " \xae \x02 \xdc \x025  FLAG  
+FOBL "\x03\x06.\\Data\\Script\\Bg.Fobsv\x81\x1fv\x05
+CMD2 BgAutoFadeInsv\x81\x1f\xa0\x05 \x025  FLAG \x07\x01
+FOBL "\x03\x06.\\Data\\Script\\Bgm.Fobv\x81\x1f\xde\x05
+CMD1 PlayCD RUNF \x08\x06 \x025
+SCEN SCE096_004 $\x06 \x02\xef! FLAG \x8c\x01FLAG\x02 \xac\xa5\x0c"\x03q
  
 早桃\n　「やったあ！\p　もう身体がべとべとで、気持ち悪くてしかたな\n　　かったんだよね！」@
 カンナ\n　「うう～ん、生き返るぅ～！」@
@@ -44,9 +44,9 @@ SCE SCE096_004 $\x06 \x02\xef! \r \x8c\x01\r\x02 \xac\xa5\x0c"\x03q
 紅葉\n　「わっ！　バカ！\p　触るなっ！」@
 錦城\n　「ふふふ」\
 
-  \r h\x06
-FOB " \xae \x02 \xdc \x025
-SCE SCE096_005 f\x08 \x02\xef! \r \x8c\x01\r\x02 \xb0\xa5\x0c"\x03p
+  FLAG h\x06
+FOBL " \xae \x02 \xdc \x025
+SCEN SCE096_005 f\x08 \x02\xef! FLAG \x8c\x01FLAG\x02 \xb0\xa5\x0c"\x03p
  
 早桃\n　「それにしても、錦城先生はさすがですよね……大人の女の人\n　　って感じで」@
 錦城\n　「ありがとう。\p早桃ちゃんも肌が白くて素敵よ？」@
@@ -55,9 +55,9 @@ SCE SCE096_005 f\x08 \x02\xef! \r \x8c\x01\r\x02 \xb0\xa5\x0c"\x03p
 　　犯すぞ、まったく！」@
 \n　言葉は汚いが、御堂の声もどこか明るい。\pひんやりとした水の\n冷たさが、全員の気分を高揚させている。\pなんとなく合宿をして\nいるような、そんな感じすらある。\
 
-  \r \xaa\x08
-FOB " \xae \x02 \xdc \x025
-SCE SCE096_006 \xa4\n \x02\xef! \r \x8c\x01\r\x02 \xb4\xa5\x0c"\x03y
+  FLAG \xaa\x08
+FOBL " \xae \x02 \xdc \x025
+SCEN SCE096_006 \xa4\n \x02\xef! FLAG \x8c\x01FLAG\x02 \xb4\xa5\x0c"\x03y
  
 御堂\n　「虎菱、おめえなかなか粋なことしてくれんじゃねえかよ」@
 拓司\n　「リーダーだからな」@
@@ -67,6 +67,6 @@ SCE SCE096_006 \xa4\n \x02\xef! \r \x8c\x01\r\x02 \xb4\xa5\x0c"\x03y
 拓司\n　「……そうか」@
 \n　誰が御堂に投票したのだろう……拓司はその疑問を頭から無理\nに追い出した。\pとりあえずいまくらいは、さっぱりと明るい気持\nちでいたかった。\
 
-  \r \xe8\n
-FOB " \xae \x02 \xdc \x025 \xae \x02
-SCE TextClosev\x81\x1f\x12\r \x0256\xf1
+  FLAG \xe8\n
+FOBL " \xae \x02 \xdc \x025 \xae \x02
+SCEN TextClosev\x81\x1f\x12\r \x0256\xf1

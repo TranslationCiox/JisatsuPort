@@ -1,8 +1,8 @@
 START
-\x1a\x10\x01`B#\x01\xaa\r  \r \t\x01
-FOB "\x03\x06.\\Data\\Script\\Bgm.Fobv\x81\x1f 
-CM1 PlayCD RUN J \x025
-SCE SCE093_001 f \x02\xef! \r \x8c\x01\r\x02 \xf0\xa0\x0c"\x03N
+\x1a\x10\x01`B#\x01\xaa\r  FLAG \t\x01
+FOBL "\x03\x06.\\Data\\Script\\Bgm.Fobv\x81\x1f 
+CMD1 PlayCD RUNF J \x025
+SCEN SCE093_001 f \x02\xef! FLAG \x8c\x01FLAG\x02 \xf0\xa0\x0c"\x03N
  
 拓司\n　「それでも、何日持つのかはハッキリさせて欲しい」@
 \n　拓司はいった。@
@@ -10,10 +10,10 @@ SCE SCE093_001 f \x02\xef! \r \x8c\x01\r\x02 \xf0\xa0\x0c"\x03N
 \nなたね\n　「それでは逆にお尋ねしますけど……何日分あれば安心できる\n　　んですか？\p　１ヶ月分？　１年分？　１０年分？」@
 拓司\n　「それは……」@
 \n拓司は絶句した。\w\z
-  \r \xaa
-FOB "\x03\x07.\\Data\\Script\\TextFunc.Fob RUN \x02\x02
-CM1 TextOn RUN 0\x02 \x025
-SCE SCE093_002 L\x02 \x02\xef! \r \x8c\x01\r\x02 \xf4\xa0\x0c"\x03\x82
+  FLAG \xaa
+FOBL "\x03\x07.\\Data\\Script\\TextFunc.Fob RUNF \x02\x02
+CMD1 TextOn RUNF 0\x02 \x025
+SCEN SCE093_002 L\x02 \x02\xef! FLAG \x8c\x01FLAG\x02 \xf4\xa0\x0c"\x03\x82
  
 拓司\n　「……１年分あれば……まあ……安心はできるんじゃないか？」\n\pなたね\n　「その根拠は？　最終波動がいつやってくるのか予想不可能な\n　　現状において、どうして１年の備蓄が『安心』を与えるんで\n　　すか？」@
 拓司\n　「……。１年というのはあくまでもたとえだ。@
@@ -22,9 +22,9 @@ SCE SCE093_002 L\x02 \x02\xef! \r \x8c\x01\r\x02 \xf4\xa0\x0c"\x03\x82
 　　よかったですね、みなさん」@
 \nなたねは薄笑いを浮かべながらいった。@
 カンナがそれに反応した。\w\z
-  \r \x90\x02
-FOB " \x02\x02 \x02 0\x02 \x025
-SCE SCE093_003 \xd2\x04 \x02\xef! \r \x8c\x01\r\x02 \xf8\xa0\x0c"\x03\x9d
+  FLAG \x90\x02
+FOBL " \x02\x02 \x02 0\x02 \x025
+SCEN SCE093_003 \xd2\x04 \x02\xef! FLAG \x8c\x01FLAG\x02 \xf8\xa0\x0c"\x03\x9d
  
 カンナ\n　「そのいいかたは……どうなのかしら、雲居さん？」@
 なたね\n　「なにかご不満でも？」@
@@ -34,9 +34,9 @@ SCE SCE093_003 \xd2\x04 \x02\xef! \r \x8c\x01\r\x02 \xf8\xa0\x0c"\x03\x9d
 なたね\n　「文句なんて言ってません」@
 カンナ\n　「さっきのいい方は、そうとられてもおかしくないでしょう！」\n\p拓司\n　「待て！　言い争いはやめよう！」@
 \n拓司が間に入ることで、カンナとなたねは引き離されたが、あと\nには気まずい空気が残っている。\w\z
-  \r \x16\x05
-FOB " \x02\x02 \x02 0\x02 \x025
-SCE SCE093_004 \xc4\x07 \x02\xef! \r \x8c\x01\r\x02 \xfc\xa0\x0c"\x03\xae
+  FLAG \x16\x05
+FOBL " \x02\x02 \x02 0\x02 \x025
+SCEN SCE093_004 \xc4\x07 \x02\xef! FLAG \x8c\x01FLAG\x02 \xfc\xa0\x0c"\x03\xae
  
 なたね\n　「……はっきりさせておきたいんですけど」@
 \nやがてなたねがいった。@
@@ -50,9 +50,9 @@ SCE SCE093_004 \xc4\x07 \x02\xef! \r \x8c\x01\r\x02 \xfc\xa0\x0c"\x03\xae
 　　できないんじゃないですか？@
 　　　みなさんは私を信じるしかないんですよ。@
 　　いつもいつも散々ウソつき呼ばわりしてきたバカタレどもが\n　　私を信じるしか！　くすくすくすくす」\w\z
-  \r \x08\x08
-FOB " \x02\x02 \x02 0\x02 \x025
-SCE SCE093_005 \xfa\n \x02\xef! \r \x8c\x01\r\x02 \xa1\x0c"\x03^
+  FLAG \x08\x08
+FOBL " \x02\x02 \x02 0\x02 \x025
+SCEN SCE093_005 \xfa\n \x02\xef! FLAG \x8c\x01FLAG\x02 \xa1\x0c"\x03^
  
 カンナがなにかをいいかけた。@
 \nなたね\n　「あっ！」@
@@ -62,9 +62,9 @@ SCE SCE093_005 \xfa\n \x02\xef! \r \x8c\x01\r\x02 \xa1\x0c"\x03^
 カンナ\n　「……」@
 なたね\n　「……惜しい！　いま、ちょっとだけ母船からきてたのに！@
 　　あなたたちが余計なことをいうから聞き逃してしまったでし\n　　ょうが！\p　ああ、惜しい！\p　惜しかったなあ！」\w\z
-  \r >\x0b
-FOB " \x02\x02 \x02 0\x02 \x025  \r \xc8
-FOB "\x03\x06.\\Data\\Script\\Bg.Fobsv\x81\x1f\n\r
-CM2 BgAutoFadeInsv\x81\x1f4\r \x025  
-CM1 StopCD RUN d\r \x025 \x02\x02 \x02
-SCE TextClosev\x81\x1f\x8c\r \x0256\xf1
+  FLAG >\x0b
+FOBL " \x02\x02 \x02 0\x02 \x025  FLAG \xc8
+FOBL "\x03\x06.\\Data\\Script\\Bg.Fobsv\x81\x1f\n\r
+CMD2 BgAutoFadeInsv\x81\x1f4\r \x025  
+CMD1 StopCD RUNF d\r \x025 \x02\x02 \x02
+SCEN TextClosev\x81\x1f\x8c\r \x0256\xf1

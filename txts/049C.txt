@@ -1,8 +1,8 @@
 START
-\x0e\x13\x01`B#\x010\x10  \r \x06\x01
-FOB "\x03\x06.\\Data\\Script\\Bgm.Fobv\x81\x1f 
-CM1 PlayCD RUN J \x025
-SCE SCE049_001 f \x02\xef! \r \x8c\x01\r\x02 0\\\x0c"\x03\xe6
+\x0e\x13\x01`B#\x010\x10  FLAG \x06\x01
+FOBL "\x03\x06.\\Data\\Script\\Bgm.Fobv\x81\x1f 
+CMD1 PlayCD RUNF J \x025
+SCEN SCE049_001 f \x02\xef! FLAG \x8c\x01FLAG\x02 0\\\x0c"\x03\xe6
  
 廊下に飛び出すと、そこには現実の空気があった。@
 空気というより、気配というべきか……静かだが、たしか多くの\n人間の気配が感じられる。\p馴染みある学園の空気……いかにもな\n日常の気配だ。@
@@ -12,10 +12,10 @@ SCE SCE049_001 f \x02\xef! \r \x8c\x01\r\x02 0\\\x0c"\x03\xe6
 とりあえず近場の教室－－三階の教室に向かい、そこにいる教員\nに事態を報告するつもりだ。@
 柏木の死と、なたねたちの乱交は切り離せない。\pそれをどうごま\nかせばいいのかまだ決めかねているが……人がひとり死んでいる\nのだ。\pさすがに知らん顔というわけにもいくまい。\pそれに、放っ\nておいてもいずれ死体は見つかる。\p事件が膨れ上がって手に負え\nなくなる前に、なんらかの処置を施して、自分となたねに降りか\nかる火の粉を少しでも減らしておいたほうがいいだろう。\
 
-  \r \xaa
-FOB "\x03\x07.\\Data\\Script\\TextFunc.Fob RUN b\x04
-CM1 TextOn RUN \x90\x04 \x025
-SCE SCE049_002 \xac\x04 \x02\xef! \r \x8c\x01\r\x02 4\\\x0c"\x03q
+  FLAG \xaa
+FOBL "\x03\x07.\\Data\\Script\\TextFunc.Fob RUNF b\x04
+CMD1 TextOn RUNF \x90\x04 \x025
+SCEN SCE049_002 \xac\x04 \x02\xef! FLAG \x8c\x01FLAG\x02 4\\\x0c"\x03q
  
 拓司は無人の廊下を足早に通り抜け、階段をとんとんと駆け下り\nた。@
 \n拓司\n　「……！」@
@@ -27,9 +27,9 @@ SCE SCE049_002 \xac\x04 \x02\xef! \r \x8c\x01\r\x02 4\\\x0c"\x03q
 　おかしいと首をひねる間もなく、スウッと、拓司のすぐ隣を誰\n　かが通り抜けた。@
 　あまりに突然のことに、拓司は思わず小さく悲鳴をもらした。\
 
-  \r \xf0\x04
-FOB " b\x04 \x02 \x90\x04 \x025
-SCE SCE049_003 \xee\x06 \x02\xef! \r \x8c\x01\r\x02 8\\\x0c"\x03k
+  FLAG \xf0\x04
+FOBL " b\x04 \x02 \x90\x04 \x025
+SCEN SCE049_003 \xee\x06 \x02\xef! FLAG \x8c\x01FLAG\x02 8\\\x0c"\x03k
  
 なたね\n　「どうしたの、虎菱くん？」@
 拓司\n　「いま……誰かが……」@
@@ -44,9 +44,9 @@ SCE SCE049_003 \xee\x06 \x02\xef! \r \x8c\x01\r\x02 8\\\x0c"\x03k
 　なたねが、拓司の肩に優しく手を添えていた。@
 \nなたね\n　「大丈夫、虎菱くん？」\
 
-  \r 2\x07
-FOB " b\x04 \x02 \x90\x04 \x025
-SCE SCE049_004 \x18\t \x02\xef! \r \x8c\x01\r\x02 <\\\x0c"\x03\xa0
+  FLAG 2\x07
+FOBL " b\x04 \x02 \x90\x04 \x025
+SCEN SCE049_004 \x18\t \x02\xef! FLAG \x8c\x01FLAG\x02 <\\\x0c"\x03\xa0
  
 拓司\n　「あ、ああ。なんでもない……」@
 \n　そうとしかいいようがない。\p実際、なにもありはしないのだか\n　ら。@
@@ -56,9 +56,9 @@ SCE SCE049_004 \x18\t \x02\xef! \r \x8c\x01\r\x02 <\\\x0c"\x03\xa0
 \nなたね\n　「空気構造が変わっているわ」@
 \n　ちいさくつぶやく。\pぎくりとして見ると、なたねは真剣な表情\n　で、あたりを見回している。\
 
-  \r \\\t
-FOB " b\x04 \x02 \x90\x04 \x025
-SCE SCE049_005 \x16\x0c \x02\xef! \r \x8c\x01\r\x02 @\\\x0c"\x03q
+  FLAG \\\t
+FOBL " b\x04 \x02 \x90\x04 \x025
+SCEN SCE049_005 \x16\x0c \x02\xef! FLAG \x8c\x01FLAG\x02 @\\\x0c"\x03q
  
 なたね\n　「虎菱くんも感じるのね？\p　この学園は……いいえ、この街は\n　　すでに、エンケリュスの自殺波動の勢力下にあるわ」@
 拓司\n　「……」@
@@ -66,16 +66,16 @@ SCE SCE049_005 \x16\x0c \x02\xef! \r \x8c\x01\r\x02 @\\\x0c"\x03q
 \n　なにが？\p　とは尋ねなかった。\pこれ以上彼女の妄想に引きずり\n　込まれるのはごめんだった。@
 　あるいは－－尋ねるのが怖かったのかもしれない。\
 
-  \r Z\x0c
-FOB " b\x04 \x02 \x90\x04 \x025
-SCE SCE049_006 X\x0e \x02\xef! \r \x8c\x01\r\x02 D\\\x0c"\x03B
+  FLAG Z\x0c
+FOBL " b\x04 \x02 \x90\x04 \x025
+SCEN SCE049_006 X\x0e \x02\xef! FLAG \x8c\x01FLAG\x02 D\\\x0c"\x03B
  
 　３階まで降りた拓司は、階段の正面の教室へと駆け込んだ。@
 　……いや、駆け込もうとしたところで、背後からガッシと肩を\n　掴まれ、静止させられた。@
 　なたねが、怖い顔で拓司を見つめている。@
 \nなたね\n　「駄目。\pこの教室はもう駄目だわ。\p……見て」\
 
-  \r \x9c\x0e
-FOB " b\x04 \x02 \x90\x04 \x025  
-CM1 StopCD RUN \xea\x0f \x025 b\x04 \x02
-SCE TextClosev\x81\x1f\x12\x10 \x0256\xf1
+  FLAG \x9c\x0e
+FOBL " b\x04 \x02 \x90\x04 \x025  
+CMD1 StopCD RUNF \xea\x0f \x025 b\x04 \x02
+SCEN TextClosev\x81\x1f\x12\x10 \x0256\xf1

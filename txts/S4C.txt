@@ -1,8 +1,8 @@
 START
-\x1a\x0b\x01`B#\x01>\t  \r \x04\x01
-FOB "\x03\x06.\\Data\\Script\\Bgm.Fobv\x81\x1f 
-CM1 PlayCD RUN J \x025
-SCE SCES04_001 f \x02\xef! \r \x8c\x01\r\x02 \xf8\xb5\x01\x0c"\x03\x99
+\x1a\x0b\x01`B#\x01>\t  FLAG \x04\x01
+FOBL "\x03\x06.\\Data\\Script\\Bgm.Fobv\x81\x1f 
+CMD1 PlayCD RUNF J \x025
+SCEN SCES04_001 f \x02\xef! FLAG \x8c\x01FLAG\x02 \xf8\xb5\x01\x0c"\x03\x99
  
 援助交際で怖い目にあったって話も聞いていたけど、たぶんそれ\nはウソだって、そう思ってた。@
 大人がそういうことはやめさせようと作った怖いお話。@
@@ -13,10 +13,10 @@ SCE SCES04_001 f \x02\xef! \r \x8c\x01\r\x02 \xf8\xb5\x01\x0c"\x03\x99
 でも、そういうふうに誘ってもらえるのは悪い気分じゃなかった。\n@
 そういうことをしばらく続けていると、どんどんお金が貯まって\nいった。\
 
-  \r \xaa
-FOB "\x03\x07.\\Data\\Script\\TextFunc.Fob RUN .\x03
-CM1 TextOn RUN \\\x03 \x025
-SCE SCES04_002 x\x03 \x02\xef! \r \x8c\x01\r\x02 \xfc\xb5\x01\x0c"\x03\xdd
+  FLAG \xaa
+FOBL "\x03\x07.\\Data\\Script\\TextFunc.Fob RUNF .\x03
+CMD1 TextOn RUNF \\\x03 \x025
+SCEN SCES04_002 x\x03 \x02\xef! FLAG \x8c\x01FLAG\x02 \xfc\xb5\x01\x0c"\x03\xdd
  
 そんなとき、学校の帰り、偶然何人かのクラスの女の子と一緒に\nなって、ピザのお店に寄ったの。@
 すごく緊張して、嫌われないようにしなきゃ、って、ずっとドキ\nドキしてた。\pでも、あんまりうまくお話ができなくて、みんなは\n私に失望しているみたいに見えた。@
@@ -31,14 +31,14 @@ SCE SCES04_002 x\x03 \x02\xef! \r \x8c\x01\r\x02 \xfc\xb5\x01\x0c"\x03\xdd
 なあんだ、簡単じゃない。@
 そう思った。\
 
-  \r \xbc\x03
-FOB " .\x03 \x02 \\\x03 \x025
-SCE SCES04_003 j\x07 \x02\xef! \r \x8c\x01\r\x02 \xb6\x01\x0c"\x03A
+  FLAG \xbc\x03
+FOBL " .\x03 \x02 \\\x03 \x025
+SCEN SCES04_003 j\x07 \x02\xef! FLAG \x8c\x01FLAG\x02 \xb6\x01\x0c"\x03A
  
 それから私はみんなにいろんなものをごちそうしたり、プレゼン\nトしたりしはじめた。@
 それで友情を買おうと思ったわけじゃないし、買えるとも思って\nなかった。\pでも、自己の価値は証明できるし、それこそが、私\nがずっと欲しくてたまらなかったものだったから。\
 
-  \r \xae\x07
-FOB " .\x03 \x02 \\\x03 \x025  
-CM1 StopCD RUN \xf8\x08 \x025 .\x03 \x02
-SCE TextClosev\x81\x1f \t \x0256\xf1
+  FLAG \xae\x07
+FOBL " .\x03 \x02 \\\x03 \x025  
+CMD1 StopCD RUNF \xf8\x08 \x025 .\x03 \x02
+SCEN TextClosev\x81\x1f \t \x0256\xf1

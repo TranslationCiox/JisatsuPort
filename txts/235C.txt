@@ -1,8 +1,8 @@
 START
-\xc5\x13\x01`B#\x01n\x10  \r \xc9
-FOB "\x03\x06.\\Data\\Script\\Bg.Fobsv\x81\x1f 
-CM2 BgAutoFadeInsv\x81\x1fJ \x025
-SCE SCE235_001 n \x02\xef! \r \x8c\x01\r\x02 \xd0~\x01\x0c"\x03\x19
+\xc5\x13\x01`B#\x01n\x10  FLAG \xc9
+FOBL "\x03\x06.\\Data\\Script\\Bg.Fobsv\x81\x1f 
+CMD2 BgAutoFadeInsv\x81\x1fJ \x025
+SCEN SCE235_001 n \x02\xef! FLAG \x8c\x01FLAG\x02 \xd0~\x01\x0c"\x03\x19
  
 一瞬、白い部屋の天井が見えた。@
 くるくる回る換気ファン。@
@@ -10,24 +10,26 @@ SCE SCE235_001 n \x02\xef! \r \x8c\x01\r\x02 \xd0~\x01\x0c"\x03\x19
 悪夢。@
 悪夢。\
 
-  \r \xb2
-FOB "\x03\x07.\\Data\\Script\\TextFunc.Fob RUN 6\x01
-CM1 TextOn RUN d\x01 \x025
-SCE SCE235_002 \x80\x01 \x02\xef! \r \x8c\x01\r\x02 \xd4~\x01\x0c" 6\x01 \x02\x03\x05TextWindowOffDirect \xd0\x01 \x025  \r \x02
-FOB "  \x04\r \x1b
-FOB "  \x08\r 
-FOB "\x03\x06.\\Data\\Script\\Bgm.Fobv\x81\x1fF\x02
-CM1 SePlay RUN p\x02 \x025  \r \xc8
-FOB "  
-CM1 BgOnsv\x81\x1f\xb2\x02 \x025  \r <
-FOB "\x03\x07.\\Data\\Script\\TextFunc.fob RUN \xe8\x02 \x02
-SCE WaitTimesv\x81\x1f\x16\x03 \x025  \r \xc8
-FOB "  
-CM2 BgNormalFadeIn RUN \\\x03 \x025  \r \x05\x01
-FOB " F\x02
-CM1 PlayCD RUN \xa6\x03 \x025 6\x01 \x02\x03\x05TextWindowOnDirect RUN \xce\x03 \x025  \r \x02
-FOB " F\x02
-CM1 SeStop RUN \x1c\x04 \x025\x03\x8c
+  FLAG \xb2
+FOBL "\x03\x07.\\Data\\Script\\TextFunc.Fob RUNF 6\x01
+CMD1 TextOn RUNF d\x01 \x025
+SCEN SCE235_002 \x80\x01 \x02\xef! FLAG \x8c\x01FLAG\x02 \xd4~\x01\x0c" 6\x01 
+WAVL TextWindowOffDirect \xd0\x01 \x025  FLAG \x02
+FOBL "  \x04FLAG \x1b
+FOBL "  \x08FLAG 
+FOBL "\x03\x06.\\Data\\Script\\Bgm.Fobv\x81\x1fF\x02
+CMD1 SePlay RUNF p\x02 \x025  FLAG \xc8
+FOBL "  
+CMD1 BgOnsv\x81\x1f\xb2\x02 \x025  FLAG <
+FOBL "\x03\x07.\\Data\\Script\\TextFunc.fob RUNF \xe8\x02 \x02
+SCEN WaitTimesv\x81\x1f\x16\x03 \x025  FLAG \xc8
+FOBL "  
+CMD2 BgNormalFadeIn RUNF \\\x03 \x025  FLAG \x05\x01
+FOBL " F\x02
+CMD1 PlayCD RUNF \xa6\x03 \x025 6\x01 
+WAVL TextWindowOnDirect RUNF \xce\x03 \x025  FLAG \x02
+FOBL " F\x02
+CMD1 SeStop RUNF \x1c\x04 \x025\x03\x8c
  
 　うっすらと目を開けると、桃色の塊が動いているのが見えた。@
 \n御堂\n　「おら、おら、おら、もっと泣けよ！\p　なに諦めてんだよ！」@
@@ -37,10 +39,10 @@ CM1 SeStop RUN \x1c\x04 \x025\x03\x8c
 御堂\n　「火傷がキーワードか？\p　おら、火傷女！\p　お前みたいなバケ\n　　モノ抱いてやるだけありがたいと思えよ！\p　……おっ、締ま\n　　る締まる！\p　おもしれえなあ、ケロイド女！」@
 \n……火傷？\
 
-  \r 8\x04
-FOB " 6\x01 \x02 d\x01 \x025  \r [
-FOB "   \x02 J \x025
-SCE SCE235_003 \xd6\x06 \x02\xef! \r \x8c\x01\r\x02 \xd8~\x01\x0c"\x03\x99
+  FLAG 8\x04
+FOBL " 6\x01 \x02 d\x01 \x025  FLAG [
+FOBL "   \x02 J \x025
+SCEN SCE235_003 \xd6\x06 \x02\xef! FLAG \x8c\x01FLAG\x02 \xd8~\x01\x0c"\x03\x99
  
 拓司はその言葉を、虚ろな意識の中で転がした。@
 火傷……紅葉に……火傷？@
@@ -56,18 +58,18 @@ SCE SCE235_003 \xd6\x06 \x02\xef! \r \x8c\x01\r\x02 \xd8~\x01\x0c"\x03\x99
 そういえば、小学生の頃、紅葉の家でボヤ騒ぎがあった。@
 そのときの火傷なのか……？\
 
-  \r \x1a\x07
-FOB " 6\x01 \x02 d\x01 \x025
-SCE SCE235_004 \xb8\t \x02\xef! \r \x8c\x01\r\x02 \xdc~\x01\x0c"\x03\x8c
+  FLAG \x1a\x07
+FOBL " 6\x01 \x02 d\x01 \x025
+SCEN SCE235_004 \xb8\t \x02\xef! FLAG \x8c\x01FLAG\x02 \xdc~\x01\x0c"\x03\x8c
  
 錦城\n　「こんな醜い火傷があるんじゃ、いままで処女だったっていう\n　　のもわかるわね。\p恥ずかしくて見せられたもんじゃないもの。\n　　\pこんなみっともない傷を見たら百年の恋も冷めて、どんな男\n　　の子も逃げ出すわよ。\pあ～カワイソウ。\p私だったら世をはか\n　　なんで自殺するけどわね、あはは」@
 御堂\n　「う、うう……すげえ締め付けだ。\p出すぞ……もうすぐ……出\n　　るぞ」@
 錦城\n　「もう五発目よ。\p良く出るわねえ」@
 御堂\n　「おれとは反対の世界に生きてる健全スポーツ少女を犯してる\n　　って思うだけで何回でも出せる…う…くっ、顔に出すぞ！」\
 
-  \r \xfc\t
-FOB " 6\x01 \x02 d\x01 \x025
-SCE SCE235_005 f\x0c \x02\xef! \r \x8c\x01\r\x02 \xe0~\x01\x0c"\x03\xd8
+  FLAG \xfc\t
+FOBL " 6\x01 \x02 d\x01 \x025
+SCEN SCE235_005 f\x0c \x02\xef! FLAG \x8c\x01FLAG\x02 \xe0~\x01\x0c"\x03\xd8
  
 　勢い良く放出された精液は、まず、紅葉の鼻先で弾けた。@
 　ペ○スが脈動し、そのたびにねっとりとした液体が、勢いよく\n　顔にひっかかった。\p頬から目、眉に渡って長い白濁のラインが\n　引かれる。\p髪の毛にも飛沫がこびりつき、紅葉の顔は、あっと\n　いうまに惨めなまだら模様に染め上げられた。@
@@ -81,6 +83,6 @@ SCE SCE235_005 f\x0c \x02\xef! \r \x8c\x01\r\x02 \xe0~\x01\x0c"\x03\xd8
 \n錦城\n　「さあ、上手に舐めて頂戴」@
 \n/*▲BGM　停止*/\a4,-1,0,0,/*■黒　表示（ノンエフェクト）*/\a7,-1,-1,0,\a0,200,1,0,\a6,0,0,0,拓司の意識が、ふっと遠くなった\
 
-  \r \xaa\x0c
-FOB " 6\x01 \x02 d\x01 \x025 6\x01 \x02
-SCE TextClosev\x81\x1fP\x10 \x0256\xf1
+  FLAG \xaa\x0c
+FOBL " 6\x01 \x02 d\x01 \x025 6\x01 \x02
+SCEN TextClosev\x81\x1fP\x10 \x0256\xf1

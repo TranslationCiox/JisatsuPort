@@ -1,19 +1,19 @@
 START
 \x14\x04\x01\xa4\t3\x01\xf8\x02
-SCE SCEK11_001 \x06 \x02\xef! \r \x8c\x01\r\x02 \xa9\x01\x0c"\x03`
+SCEN SCEK11_001 \x06 \x02\xef! FLAG \x8c\x01FLAG\x02 \xa9\x01\x0c"\x03`
  
 　ゆきが流した涙で私の胸のあたりはぐっしょりと濡れていた。@
 そのしめりけは本当にリアルで、それを胸に感じていると\n「そのうちなんとかなるよ」とか、\n「家出しよう」とか、\nそんな安易ななぐさめはとても口にはできなかった。@
 私はとても悲しい気分だった。@
 でも、その話を聞きながら、私は、ゆきを救い出す方法をひとつ\n見つけだしていた。@
 しばらく考えてから、私はゆきにいった。\w\z
-  \r J
-FOB "\x03\x07.\\Data\\Script\\TextFunc.Fob RUN \xea\x01
-CM1 TextOn RUN \x18\x02 \x025\x03\x18
+  FLAG J
+FOBL "\x03\x07.\\Data\\Script\\TextFunc.Fob RUNF \xea\x01
+CMD1 TextOn RUNF \x18\x02 \x025\x03\x18
 CHOICE
 「大丈夫だよ。私が一緒に死んであげるから」\n「お父さんのこと、一緒に殺そう？」\n\l0,2,
 ENDCHOICE
 
-  \r 4\x02
-FOB " \xea\x01 \x02 \x18\x02 \x025 \xea\x01 \x02
-SCE TextClosev\x81\x1f\xda\x02 \x0256\xf1
+  FLAG 4\x02
+FOBL " \xea\x01 \x02 \x18\x02 \x025 \xea\x01 \x02
+SCEN TextClosev\x81\x1f\xda\x02 \x0256\xf1

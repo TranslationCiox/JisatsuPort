@@ -1,13 +1,13 @@
 START
 )\x02\x01\xb0\x054\x01\xa4\x01
-SCE SCEK15_001 \x06 \x02\xef! \r \x8c\x01\r\x02 \xd0\xb0\x01\x0c"\x03 
+SCEN SCEK15_001 \x06 \x02\xef! FLAG \x8c\x01FLAG\x02 \xd0\xb0\x01\x0c"\x03 
  
 お話はこれでおしまい。@
 ゆき？@
 １週間後、ゆきは風邪薬を２００錠のんで、自殺した。@
 おしまい。これで、おしまい。\w\z
-  \r J
-FOB "\x03\x07.\\Data\\Script\\TextFunc.Fob RUN \xea
-CM1 TextOn RUN \x18\x01 \x025\x03\x06.\\Data\\Script\\Bgm.Fobv\x81\x1f4\x01
-CM1 StopCD RUN ^\x01 \x025 \xea \x02
-SCE TextClosev\x81\x1f\x86\x01 \x0256\xf1
+  FLAG J
+FOBL "\x03\x07.\\Data\\Script\\TextFunc.Fob RUNF \xea
+CMD1 TextOn RUNF \x18\x01 \x025\x03\x06.\\Data\\Script\\Bgm.Fobv\x81\x1f4\x01
+CMD1 StopCD RUNF ^\x01 \x025 \xea \x02
+SCEN TextClosev\x81\x1f\x86\x01 \x0256\xf1

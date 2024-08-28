@@ -1,10 +1,10 @@
 START
 \x02\x05\x01\xa4\t3\x01\xea\x03
-SCE SCE214_001 \x06 \x02\xef! \r \x8c\x01\r\x02 ^\x01\x0c"  \r \x02
-FOB "  \x04\r \x01
-FOB "  \x08\r \x01
-FOB "\x03\x06.\\Data\\Script\\Bgm.Fobv\x81\x1f\x98
-CM1 SePlay RUN \xc2 \x025\x03C
+SCEN SCE214_001 \x06 \x02\xef! FLAG \x8c\x01FLAG\x02 ^\x01\x0c"  FLAG \x02
+FOBL "  \x04FLAG \x01
+FOBL "  \x08FLAG \x01
+FOBL "\x03\x06.\\Data\\Script\\Bgm.Fobv\x81\x1f\x98
+CMD1 SePlay RUNF \xc2 \x025\x03C
  
 拓司はガバと身を起こした。@
 頭の横に付けっぱなしのラジオが置かれている。@
@@ -14,10 +14,10 @@ CM1 SePlay RUN \xc2 \x025\x03C
 静かに眠る仲間たち。@
 ここは……『学校に籠城する世界』。\
 
-  \r \xde
-FOB "\x03\x07.\\Data\\Script\\TextFunc.Fob RUN \n\x02
-CM1 TextOn RUN 8\x02 \x025
-SCE SCE214_002 T\x02 \x02\xef! \r \x8c\x01\r\x02 \x04^\x01\x0c"\x03+
+  FLAG \xde
+FOBL "\x03\x07.\\Data\\Script\\TextFunc.Fob RUNF \n\x02
+CMD1 TextOn RUNF 8\x02 \x025
+SCEN SCE214_002 T\x02 \x02\xef! FLAG \x8c\x01FLAG\x02 \x04^\x01\x0c"\x03+
  
 拓司\n　「……やれやれ」@
 \n拓司は深呼吸をした。@
@@ -25,8 +25,8 @@ SCE SCE214_002 T\x02 \x02\xef! \r \x8c\x01\r\x02 \x04^\x01\x0c"\x03+
 いまはただ、目の前の世界を必死で生き抜くしかあるまい。@
 それしかないのだ。\
 
-  \r \x98\x02
-FOB " \n\x02 \x02 8\x02 \x025  \r \x02
-FOB " \x98
-CM1 SeStop RUN \xa4\x03 \x025 \n\x02 \x02
-SCE TextClosev\x81\x1f\xcc\x03 \x0256\xf1
+  FLAG \x98\x02
+FOBL " \n\x02 \x02 8\x02 \x025  FLAG \x02
+FOBL " \x98
+CMD1 SeStop RUNF \xa4\x03 \x025 \n\x02 \x02
+SCEN TextClosev\x81\x1f\xcc\x03 \x0256\xf1

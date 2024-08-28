@@ -1,15 +1,15 @@
 START
 \x82\x07\x01`B#\x01\xf2\x05
-SCE SCE108_001 \x06 \x02\xef! \r \x8c\x01\r\x02 `\xb8\x0c"\x03\x11
+SCEN SCE108_001 \x06 \x02\xef! FLAG \x8c\x01FLAG\x02 `\xb8\x0c"\x03\x11
  
 \n\n\n\n\n\n\n\n\n\n　　　　　　　　　　　　　『６日目』\
 
-  \r J
-FOB "\x03\x07.\\Data\\Script\\TextFunc.Fob RUN \xae
-CM1 TextOn RUN \xdc \x025  \r \x0c\x01
-FOB "\x03\x06.\\Data\\Script\\Bgm.Fobv\x81\x1f\x12\x01
-CM1 PlayCD RUN <\x01 \x025
-SCE SCE108_002 X\x01 \x02\xef! \r \x8c\x01\r\x02 d\xb8\x0c"\x03\x87
+  FLAG J
+FOBL "\x03\x07.\\Data\\Script\\TextFunc.Fob RUNF \xae
+CMD1 TextOn RUNF \xdc \x025  FLAG \x0c\x01
+FOBL "\x03\x06.\\Data\\Script\\Bgm.Fobv\x81\x1f\x12\x01
+CMD1 PlayCD RUNF <\x01 \x025
+SCEN SCE108_002 X\x01 \x02\xef! FLAG \x8c\x01FLAG\x02 d\xb8\x0c"\x03\x87
  
 早桃の風邪は快方に向かっている。@
 \nめだった衝突はない。\pなたねは淡々と、それまで通り食糧と水を\n配給した。\pしかし、なたねと一同のあいだに生まれた亀裂は、わ\nずかも回復していない。@
@@ -17,15 +17,15 @@ SCE SCE108_002 X\x01 \x02\xef! \r \x8c\x01\r\x02 d\xb8\x0c"\x03\x87
 錦城と紅葉が、声を潜めて何かを話している。\pいったい何を話し\nているのだろうか？@
 \n錦城が、何度も意味ありげな視線を送ってくる。\p催促するような\n非難するような視線だ。\p拓司は気づかないふりをして、それを無\n視した。\
 
-  \r \x9c\x01
-FOB " \xae \x02 \xdc \x025
-SCE SCE108_003 \xf2\x03 \x02\xef! \r \x8c\x01\r\x02 h\xb8\x0c"\x03V
+  FLAG \x9c\x01
+FOBL " \xae \x02 \xdc \x025
+SCEN SCE108_003 \xf2\x03 \x02\xef! FLAG \x8c\x01FLAG\x02 h\xb8\x0c"\x03V
  
 この日が誕生日だったというカンナのために、夜、一同は歌を歌\nった。@
 馬鹿馬鹿しいとは思ったが、そういったことこそが、いま、必要\nなものに思えた。@
 しかし、あまりの馬鹿馬鹿しさに、ひとり、またひとりと声が止\nんでいき、やがて誰の声も聞こえなくなった。@
 沈黙の中、なたねの「……馬鹿馬鹿しい」というつぶやきが、奇\n妙に大きく響いた。\
 
-  \r 6\x04
-FOB " \xae \x02 \xdc \x025 \xae \x02
-SCE TextClosev\x81\x1f\xd4\x05 \x0256\xf1
+  FLAG 6\x04
+FOBL " \xae \x02 \xdc \x025 \xae \x02
+SCEN TextClosev\x81\x1f\xd4\x05 \x0256\xf1

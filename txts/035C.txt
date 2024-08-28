@@ -1,15 +1,15 @@
 START
-\xfb\x08\x01`B#\x01\x14\x07  \r \x07\x01
-FOB "\x03\x06.\\Data\\Script\\Bgm.Fobv\x81\x1f 
-CM1 PlayCD RUN J \x025
-SCE SCE033_001 f \x02\xef! \r \x8c\x01\r\x02 PF\x0c"\x03&
+\xfb\x08\x01`B#\x01\x14\x07  FLAG \x07\x01
+FOBL "\x03\x06.\\Data\\Script\\Bgm.Fobv\x81\x1f 
+CMD1 PlayCD RUNF J \x025
+SCEN SCE033_001 f \x02\xef! FLAG \x8c\x01FLAG\x02 PF\x0c"\x03&
  
 拓司の中に、今日の昼食はどうするのか、という紅葉の言葉が引\nっかかっていた。\p拓司は、教室に引き返し、弁当をかじっている\n紅葉に声をかけた。\
 
-  \r \xaa
-FOB "\x03\x07.\\Data\\Script\\TextFunc.Fob RUN b\x01
-CM1 TextOn RUN \x90\x01 \x025
-SCE SCE033_002 \xac\x01 \x02\xef! \r \x8c\x01\r\x02 TF\x0c"\x03J
+  FLAG \xaa
+FOBL "\x03\x07.\\Data\\Script\\TextFunc.Fob RUNF b\x01
+CMD1 TextOn RUNF \x90\x01 \x025
+SCEN SCE033_002 \xac\x01 \x02\xef! FLAG \x8c\x01FLAG\x02 TF\x0c"\x03J
  
 拓司\n　「よう」@
 紅葉\n　「ん？」@
@@ -19,9 +19,9 @@ SCE SCE033_002 \xac\x01 \x02\xef! \r \x8c\x01\r\x02 TF\x0c"\x03J
 紅葉\n　「ああ、お弁当ね」@
 \n紅葉はあっさりといった。\pなんだか拍子抜けするようないいかた\nだった。\
 
-  \r \xf0\x01
-FOB " b\x01 \x02 \x90\x01 \x025
-SCE SCE033_003 R\x03 \x02\xef! \r \x8c\x01\r\x02 XF\x0c"\x03H
+  FLAG \xf0\x01
+FOBL " b\x01 \x02 \x90\x01 \x025
+SCEN SCE033_003 R\x03 \x02\xef! FLAG \x8c\x01FLAG\x02 XF\x0c"\x03H
  
 紅葉\n　「あるよ。\p食べる？\p　だったら屋上までつきあってくれない\n　　かな」@
 拓司\n　「屋上？」@
@@ -29,16 +29,16 @@ SCE SCE033_003 R\x03 \x02\xef! \r \x8c\x01\r\x02 XF\x0c"\x03H
 拓司\n　「話？」@
 紅葉\n　「ちょっと教室じゃ……アレだから。\pいいでしょ、つきあって\n　　よ」\
 
-  \r \x96\x03
-FOB " b\x01 \x02 \x90\x01 \x025  
-CM1 StopCD RUN \xfc\x04 \x025
-SCE SCE033_004 \x18\x05 \x02\xef! \r \x8c\x01\r\x02 \\F\x0c"\x03U
+  FLAG \x96\x03
+FOBL " b\x01 \x02 \x90\x01 \x025  
+CMD1 StopCD RUNF \xfc\x04 \x025
+SCEN SCE033_004 \x18\x05 \x02\xef! FLAG \x8c\x01FLAG\x02 \\F\x0c"\x03U
  
 －－何か変だ。@
 \n拓司は思った。@
 紅葉の表情に、複雑な色が浮かんでいる。\p相反する二つの感情が\nせめぎ合っているような……\p怯えと期待、罪悪感と爽快感、悲し\nみと喜び、そんなものが現れては消え、消えてはまた浮かび上が\nる。@
 \n紅葉\n　「他のコたちに気づかれるとナンだから……先に行ってくれな\n　　い？\p　１０分したら、行く」\
 
-  \r \\\x05
-FOB " b\x01 \x02 \x90\x01 \x025 b\x01 \x02
-SCE TextClosev\x81\x1f\xf6\x06 \x0256\xf1
+  FLAG \\\x05
+FOBL " b\x01 \x02 \x90\x01 \x025 b\x01 \x02
+SCEN TextClosev\x81\x1f\xf6\x06 \x0256\xf1

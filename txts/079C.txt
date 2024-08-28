@@ -1,7 +1,7 @@
 START
 \x7f\x11\x01`B#\x01L\x0e\x03\x06.\\Data\\Script\\Bgm.Fobv\x81\x1f\x06
-CM1 StopCD RUN 0 \x025
-SCE SCE079_001 L \x02\xef! \r \x8c\x01\r\x02 \x10\x8b\x0c"\x03\xb1
+CMD1 StopCD RUNF 0 \x025
+SCEN SCE079_001 L \x02\xef! FLAG \x8c\x01FLAG\x02 \x10\x8b\x0c"\x03\xb1
  
 /*▲SE28　再生（終了まで待たず先へ）*/\a2,0,28,0,どくん、どくん、どくん@
 \a4,0,0,0,心臓の音だけが耳の奥で大きく響いている。@
@@ -21,10 +21,10 @@ SCE SCE079_001 L \x02\xef! \r \x8c\x01\r\x02 \x10\x8b\x0c"\x03\xb1
 いまなら死ねるような気がする。@
 瓶からするりと抜け出せるような気がする。\
 
-  \r \x90
-FOB "\x03\x07.\\Data\\Script\\TextFunc.Fob RUN t\x03
-CM1 TextOn RUN \xa2\x03 \x025
-SCE SCE079_002 \xbe\x03 \x02\xef! \r \x8c\x01\r\x02 \x14\x8b\x0c"\x03M
+  FLAG \x90
+FOBL "\x03\x07.\\Data\\Script\\TextFunc.Fob RUNF t\x03
+CMD1 TextOn RUNF \xa2\x03 \x025
+SCEN SCE079_002 \xbe\x03 \x02\xef! FLAG \x8c\x01FLAG\x02 \x14\x8b\x0c"\x03M
  
 \n　死んじまおうかなあ。@
 　死んじまおうかなあ。@
@@ -36,9 +36,9 @@ SCE SCE079_002 \xbe\x03 \x02\xef! \r \x8c\x01\r\x02 \x14\x8b\x0c"\x03M
 死のう。@
 死のう。\
 
-  \r \x02\x04
-FOB " t\x03 \x02 \xa2\x03 \x025
-SCE SCE079_003 p\x05 \x02\xef! \r \x8c\x01\r\x02 \x18\x8b\x0c"\x03\xb4
+  FLAG \x02\x04
+FOBL " t\x03 \x02 \xa2\x03 \x025
+SCEN SCE079_003 p\x05 \x02\xef! FLAG \x8c\x01FLAG\x02 \x18\x8b\x0c"\x03\xb4
  
 いつの間にか、足が完全に止まっている。\pただぼんやりと、廊下\nに立ちすくんでいる。@
 \nもしかしてこれが波動に侵されるということなのか？@
@@ -54,15 +54,15 @@ SCE SCE079_003 p\x05 \x02\xef! \r \x8c\x01\r\x02 \x18\x8b\x0c"\x03\xb4
 どうして涙が出るのかなど、すでにわからなかった。@
 どうしてこれを恐れていたのかなど、すでにわからなかった。\
 
-  \r \xb4\x05
-FOB " t\x03 \x02 \xa2\x03 \x025
-SCE SCE079_004 \xbe\x08 \x02\xef! \r \x8c\x01\r\x02 \x1c\x8b\x0c"\x03@
+  FLAG \xb4\x05
+FOBL " t\x03 \x02 \xa2\x03 \x025
+SCEN SCE079_004 \xbe\x08 \x02\xef! FLAG \x8c\x01FLAG\x02 \x1c\x8b\x0c"\x03@
  
 学生\n　「……死ぬのか生きるのか、それはもう人間の幸不幸を決定す\n　　る鍵ではないような気さえしてきたのだ。\p死者は完成せられ、\n　　生者は出帆の船のデッキに立ってそれに手を合わせる。\p船は\n　　するする岸壁から離れる。\p「死はよいものだ」……』\
 
-  \r \x02\t
-FOB " t\x03 \x02 \xa2\x03 \x025
-SCE SCE079_005 <\n \x02\xef! \r \x8c\x01\r\x02  \x8b\x0c"\x03P
+  FLAG \x02\t
+FOBL " t\x03 \x02 \xa2\x03 \x025
+SCEN SCE079_005 <\n \x02\xef! FLAG \x8c\x01FLAG\x02  \x8b\x0c"\x03P
  
 　よいものだ。@
 　死のう。@
@@ -79,9 +79,9 @@ SCE SCE079_005 <\n \x02\xef! \r \x8c\x01\r\x02  \x8b\x0c"\x03P
 　カッター。@
 　カッター。\
 
-  \r \x80\n
-FOB " t\x03 \x02 \xa2\x03 \x025
-SCE SCE079_006 \xfa\x0b \x02\xef! \r \x8c\x01\r\x02 $\x8b\x0c"\x03+
+  FLAG \x80\n
+FOBL " t\x03 \x02 \xa2\x03 \x025
+SCEN SCE079_006 \xfa\x0b \x02\xef! FLAG \x8c\x01FLAG\x02 $\x8b\x0c"\x03+
  
 　カットするものだからカッター。@
 　そうか。@
@@ -94,13 +94,13 @@ SCE SCE079_006 \xfa\x0b \x02\xef! \r \x8c\x01\r\x02 $\x8b\x0c"\x03+
 　タ。@
 　ア。\
 
-  \r >\x0c
-FOB " t\x03 \x02 \xa2\x03 \x025  \r G
-FOB "\x03\x06.\\Data\\Script\\Bg.Fobsv\x81\x1f>\r
-CM2 BgAutoFadeInsv\x81\x1fh\r \x025
-SCE SCE079_007 \x8c\r \x02\xef! \r \x8c\x01\r\x02 (\x8b\x0c"\x03\x11
+  FLAG >\x0c
+FOBL " t\x03 \x02 \xa2\x03 \x025  FLAG G
+FOBL "\x03\x06.\\Data\\Script\\Bg.Fobsv\x81\x1f>\r
+CMD2 BgAutoFadeInsv\x81\x1fh\r \x025
+SCEN SCE079_007 \x8c\r \x02\xef! FLAG \x8c\x01FLAG\x02 (\x8b\x0c"\x03\x11
  
 \n　拓司は芋虫のようにはいずって、自分の教室へと向かった。\
 
-  \r \xd0\r
-FOB " t\x03 \x02 \xa2\x03 \x0256\xf1
+  FLAG \xd0\r
+FOBL " t\x03 \x02 \xa2\x03 \x0256\xf1

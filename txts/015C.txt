@@ -1,6 +1,6 @@
 START
 "\x06\x01\xa4\t3\x01\x18\x05
-SCE SCE015_001 \x06 \x02\xef! \r \x8c\x01\r\x02 \x10'\x0c"\x03\xa8
+SCEN SCE015_001 \x06 \x02\xef! FLAG \x8c\x01FLAG\x02 \x10'\x0c"\x03\xa8
  
 紅葉\n　「失礼ね、あるわよ！　私はアンタみたいにゴロゴロ過ごしてな\n　　いんだから、アンタよりよっぽどバテバテなの！　バイトだっ\n　　てやってるし、来週はライブに行くし、受験勉強だってそこそ\n　　こ……まあ、一応……ええと……とにかく夏バテしてるわよ！\n　　でも、それを他人にわからせないようにしてるっていうのが、\n　　私のすごいところなわけなのよ」@
 拓司\n　「ウソつけ。ただ体力が有り余ってるだけだろ」@
@@ -8,10 +8,10 @@ SCE SCE015_001 \x06 \x02\xef! \r \x8c\x01\r\x02 \x10'\x0c"\x03\xa8
 拓司\n　「へいへい。どうせモヤシ君だよ」@
 紅葉\n　「アンタさあ、もうちょっと身体鍛えないと、いざというときに\n　　困るよ？」\
 
-  \r J
-FOB "\x03\x07.\\Data\\Script\\TextFunc.Fob RUN \n\x03
-CM1 TextOn RUN 8\x03 \x025
-SCE SCE015_002 T\x03 \x02\xef! \r \x8c\x01\r\x02 \x14'\x0c"\x03G
+  FLAG J
+FOBL "\x03\x07.\\Data\\Script\\TextFunc.Fob RUNF \n\x03
+CMD1 TextOn RUNF 8\x03 \x025
+SCEN SCE015_002 T\x03 \x02\xef! FLAG \x8c\x01FLAG\x02 \x14'\x0c"\x03G
  
 拓司\n　「いざというときって、なんだよ？　核戦争が起こって世界が暴\n　　力の時代になったときか？　悪の改造人間が襲いかかってきた\n　　ときか？」@
 紅葉\n　「……まったく、口だけは達者なんだから」@
@@ -19,6 +19,6 @@ SCE SCE015_002 T\x03 \x02\xef! \r \x8c\x01\r\x02 \x14'\x0c"\x03G
 紅葉\n　「ふん」@
 拓司\n　「ふん」\
 
-  \r \x98\x03
-FOB " \n\x03 \x02 8\x03 \x025 \n\x03 \x02
-SCE TextClosev\x81\x1f\xfa\x04 \x0256\xf1
+  FLAG \x98\x03
+FOBL " \n\x03 \x02 8\x03 \x025 \n\x03 \x02
+SCEN TextClosev\x81\x1f\xfa\x04 \x0256\xf1

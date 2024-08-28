@@ -1,10 +1,10 @@
 START
-e+\x01`B#\x01\xf4$  \r \x05\x01
-FOB "\x03\x06.\\Data\\Script\\Bgm.Fobv\x81\x1f 
-CM1 PlayCD RUN J \x025  \r Q
-FOB "\x03\x06.\\Data\\Script\\Bg.Fobsv\x81\x1f\x80
-CM2 BgAutoFadeInsv\x81\x1f\xaa \x025
-SCE SCE032_001 \xce \x02\xef! \r \x8c\x01\r\x02 \xa0A\x0c"\x03\xc8
+e+\x01`B#\x01\xf4$  FLAG \x05\x01
+FOBL "\x03\x06.\\Data\\Script\\Bgm.Fobv\x81\x1f 
+CMD1 PlayCD RUNF J \x025  FLAG Q
+FOBL "\x03\x06.\\Data\\Script\\Bg.Fobsv\x81\x1f\x80
+CMD2 BgAutoFadeInsv\x81\x1f\xaa \x025
+SCEN SCE032_001 \xce \x02\xef! FLAG \x8c\x01FLAG\x02 \xa0A\x0c"\x03\xc8
  
 組み伏したカンナの身体は、どこか冷たかった。@
 ぐにゃりと柔らかい、肉の塊。@
@@ -20,10 +20,10 @@ SCE SCE032_001 \xce \x02\xef! \r \x8c\x01\r\x02 \xa0A\x0c"\x03\xc8
 薄い皮をめくりあげて、ひくついている敏感な部分。@
 それをつまみ上げるたびに、ひく、ひくと、ペ○スを包む肉が収縮\nする。\
 
-  \r \x12\x01
-FOB "\x03\x07.\\Data\\Script\\TextFunc.Fob RUN R\x04
-CM1 TextOn RUN \x80\x04 \x025
-SCE SCE032_002 \x9c\x04 \x02\xef! \r \x8c\x01\r\x02 \xa4A\x0c"\x03\x88
+  FLAG \x12\x01
+FOBL "\x03\x07.\\Data\\Script\\TextFunc.Fob RUNF R\x04
+CMD1 TextOn RUNF \x80\x04 \x025
+SCEN SCE032_002 \x9c\x04 \x02\xef! FLAG \x8c\x01FLAG\x02 \xa4A\x0c"\x03\x88
  
 そのどれもが、『生きている』肉体の反応だ。@
 しかし、それでもなお、生々しさが足りない。@
@@ -35,9 +35,9 @@ SCE SCE032_002 \x9c\x04 \x02\xef! \r \x8c\x01\r\x02 \xa4A\x0c"\x03\x88
 \nカンナは笑った。@
 まるで実験動物を観察するように、拓司の顔をのぞき込んでいる。\n\p恥ずかしさとも怒りともつかぬ激情で、頭にカッと血が上る。\
 
-  \r \xe0\x04
-FOB " R\x04 \x02 \x80\x04 \x025
-SCE SCE032_003 :\x07 \x02\xef! \r \x8c\x01\r\x02 \xa8A\x0c"\x03w
+  FLAG \xe0\x04
+FOBL " R\x04 \x02 \x80\x04 \x025
+SCEN SCE032_003 :\x07 \x02\xef! FLAG \x8c\x01FLAG\x02 \xa8A\x0c"\x03w
  
 拓司\n　「……こんなに濡れて締め付けておいて……気取るな……」@
 カンナ\n　「気取ってなんかいないわ。気持ちいいわよ、すごく。@
@@ -46,9 +46,9 @@ SCE SCE032_003 :\x07 \x02\xef! \r \x8c\x01\r\x02 \xa8A\x0c"\x03w
 カンナ\n　「でも……わかるでしょう？　棒っきれを突っ込んで機械的に上\n　　下に動かせば濡れるし、気持ちいいわ。\pそういうふうにできて\n　　いるから。\pでも、それはただの身体の反応で……心の震えじゃ\n　　ない。\pだから－－」@
 拓司\n　「うるさい、黙れッ！」\
 
-  \r ~\x07
-FOB " R\x04 \x02 \x80\x04 \x025
-SCE SCE032_004 \x94\t \x02\xef! \r \x8c\x01\r\x02 \xacA\x0c"\x03z
+  FLAG ~\x07
+FOBL " R\x04 \x02 \x80\x04 \x025
+SCEN SCE032_004 \x94\t \x02\xef! FLAG \x8c\x01FLAG\x02 \xacA\x0c"\x03z
  
 叫んで拓司は、カンナの手首を覆っている包帯を引きちぎった。@
 真っ白な手首に、幾条もの痛々しい傷跡が走っている。@
@@ -59,9 +59,9 @@ SCE SCE032_004 \x94\t \x02\xef! \r \x8c\x01\r\x02 \xacA\x0c"\x03z
 カンナ\n　「……好きにカテゴライズしてもらって構わないわ」@
 拓司\n　「……ちっ」\
 
-  \r \xd8\t
-FOB " R\x04 \x02 \x80\x04 \x025
-SCE SCE032_005 \xfa\x0b \x02\xef! \r \x8c\x01\r\x02 \xb0A\x0c"\x03\xad
+  FLAG \xd8\t
+FOBL " R\x04 \x02 \x80\x04 \x025
+SCEN SCE032_005 \xfa\x0b \x02\xef! FLAG \x8c\x01FLAG\x02 \xb0A\x0c"\x03\xad
  
 カンナの頭の横に、スカートのポケットに入っていた小物類がまと\nめて置かれている。\pその中から拓司は、パスケースを選んで取り上\nげた。\pぱらりと開くと学生証を挟み込む透明なビニールの部分に、\nそれが入っている。@
 夏の日差しを鈍く照り返す、ステンレスの薄い板。@
@@ -71,9 +71,9 @@ SCE SCE032_005 \xfa\x0b \x02\xef! \r \x8c\x01\r\x02 \xb0A\x0c"\x03\xad
 先ほどまでの冷笑は、すでにカンナの顔にはない。\p一見、仮面のよ\nうな無表情に見えるが……それは偽装にすぎず、その裏には隠しき\nれない性的興奮が脈打っている。@
 いままでまったく感じられなかった、生々しいいきものの脈動が、\nある……。\
 
-  \r >\x0c
-FOB " R\x04 \x02 \x80\x04 \x025
-SCE SCE032_006 ,\x0f \x02\xef! \r \x8c\x01\r\x02 \xb4A\x0c"\x03\x89
+  FLAG >\x0c
+FOBL " R\x04 \x02 \x80\x04 \x025
+SCEN SCE032_006 ,\x0f \x02\xef! FLAG \x8c\x01FLAG\x02 \xb4A\x0c"\x03\x89
  
 カンナ\n　「……はあ……はあ……」@
 \n青白いカンナの頬に、赤い血の色がさしている。@
@@ -86,9 +86,9 @@ SCE SCE032_006 ,\x0f \x02\xef! \r \x8c\x01\r\x02 \xb4A\x0c"\x03\x89
 剃刀の刃を歯でくわえて、ひたすら機械的に腰を上下させる。@
 先ほどまでとなんら変わることのないその運動に、果たしてカンナ\nは、今度は身をよじらせて反応した。\
 
-  \r p\x0f
-FOB " R\x04 \x02 \x80\x04 \x025
-SCE SCE032_007 \xce\x11 \x02\xef! \r \x8c\x01\r\x02 \xb8A\x0c"\x03\x9a
+  FLAG p\x0f
+FOBL " R\x04 \x02 \x80\x04 \x025
+SCEN SCE032_007 \xce\x11 \x02\xef! FLAG \x8c\x01FLAG\x02 \xb8A\x0c"\x03\x9a
  
 カンナ\n　「あいっ……い、いじわるしな……いで……ひっ……早く眼を…\n　　…眼を潰して……！」@
 拓司\n　「ふふ……カンナの顔。\pすごく生き生きしてる。\pまるで生きて\n　　いる人間みたいだ」@
@@ -99,9 +99,9 @@ SCE SCE032_007 \xce\x11 \x02\xef! \r \x8c\x01\r\x02 \xb8A\x0c"\x03\x9a
 \nカンナはネクタイを自分の顔に巻き付けた。\p頭の後ろできつく結\nべば、即席の目隠しが完成する。@
 カンナが自ら視覚を封じたのを確認してから、拓司はカンナの右\n手首を捧げ持った。\pそこに剃刀の刃をぴたりとあてがう。\
 
-  \r \x12\x12
-FOB " R\x04 \x02 \x80\x04 \x025
-SCE SCE032_008 \xb4\x14 \x02\xef! \r \x8c\x01\r\x02 \xbcA\x0c"\x03\x88
+  FLAG \x12\x12
+FOBL " R\x04 \x02 \x80\x04 \x025
+SCEN SCE032_008 \xb4\x14 \x02\xef! FLAG \x8c\x01FLAG\x02 \xbcA\x0c"\x03\x88
  
 拓司\n　「……どうだ？　感じるか？」@
 カンナ\n　「……早く……」@
@@ -115,9 +115,9 @@ SCE SCE032_008 \xb4\x14 \x02\xef! \r \x8c\x01\r\x02 \xbcA\x0c"\x03\x88
 閉じた世界の閉じたゲーム。@
 自殺ゲーム。\
 
-  \r \xf8\x14
-FOB " R\x04 \x02 \x80\x04 \x025
-SCE SCE032_009 R\x17 \x02\xef! \r \x8c\x01\r\x02 \xc0A\x0c"\x03\xa6
+  FLAG \xf8\x14
+FOBL " R\x04 \x02 \x80\x04 \x025
+SCEN SCE032_009 R\x17 \x02\xef! FLAG \x8c\x01FLAG\x02 \xc0A\x0c"\x03\xa6
  
 \nだくだくと血が流れ出した。@
 出る。@
@@ -133,9 +133,9 @@ SCE SCE032_009 R\x17 \x02\xef! \r \x8c\x01\r\x02 \xc0A\x0c"\x03\xa6
 拓司\n　「すごい量だ。\p今日は深く切りすぎたのかもしれないな。@
 　　これはまずいかもしれないぜ？」\
 
-  \r \x96\x17
-FOB " R\x04 \x02 \x80\x04 \x025
-SCE SCE032_010 h\x1a \x02\xef! \r \x8c\x01\r\x02 \xc4A\x0c"\x03\x95
+  FLAG \x96\x17
+FOBL " R\x04 \x02 \x80\x04 \x025
+SCEN SCE032_010 h\x1a \x02\xef! FLAG \x8c\x01FLAG\x02 \xc4A\x0c"\x03\x95
  
 大げさにいいながら拓司は改めてカンナの両足を脇に抱え、一気\nにペ○スを奥深くまで突き入れた。@
 ぶちゅ、ぶちゅ……と、淫猥な音が結合部から漏れる。@
@@ -146,9 +146,9 @@ SCE SCE032_010 h\x1a \x02\xef! \r \x8c\x01\r\x02 \xc4A\x0c"\x03\x95
 拓司\n　「カンナ！」@
 カンナ\n　「すごい……すごく出ていく……きれいに……」\
 
-  \r \xac\x1a
-FOB " R\x04 \x02 \x80\x04 \x025
-SCE SCE032_011 :\x1d \x02\xef! \r \x8c\x01\r\x02 \xc8A\x0c"\x03\x90
+  FLAG \xac\x1a
+FOBL " R\x04 \x02 \x80\x04 \x025
+SCEN SCE032_011 :\x1d \x02\xef! FLAG \x8c\x01FLAG\x02 \xc8A\x0c"\x03\x90
  
 拓司のなかで、なにかが唐突に爆発した。@
 胸の底で沸騰しているドロドロしたものがぼっと火柱を上げた。@
@@ -163,9 +163,9 @@ SCE SCE032_011 :\x1d \x02\xef! \r \x8c\x01\r\x02 \xc8A\x0c"\x03\x90
 ちらりと視線を外せば、床の上には剃刀がある。@
 カンナに気づかれないようそれに手を伸ばし、そして……\
 
-  \r ~\x1d
-FOB " R\x04 \x02 \x80\x04 \x025
-SCE SCE032_012 \xf8\x1f \x02\xef! \r \x8c\x01\r\x02 \xccA\x0c"\x03\xab
+  FLAG ~\x1d
+FOBL " R\x04 \x02 \x80\x04 \x025
+SCEN SCE032_012 \xf8\x1f \x02\xef! FLAG \x8c\x01FLAG\x02 \xccA\x0c"\x03\xab
  
 \n/*■CG73　表示（ノンエフェクト）*//*■HCG11　表示（ノンエフェクト）*/\a7,-1,-1,0,\a1,1,202,82,\a6,0,0,0,喉に当てる@
 /*■CG73　表示（ノンエフェクト） *//*■HCG11　表示（ノンエフェクト）*/\a7,-1,-1,0,\a1,1,202,82,\a6,0,0,0,\n横に引く。\pスッとすべらせる。@
@@ -179,17 +179,18 @@ SCE SCE032_012 \xf8\x1f \x02\xef! \r \x8c\x01\r\x02 \xccA\x0c"\x03\xab
 死ぬぞ！@
 死ぬぞ！\
 
-  \r < 
-FOB " R\x04 \x02 \x80\x04 \x025
-SCE SCE032_013 "# \x02\xef! \r \x8c\x01\r\x02 \xd0A\x0c"\x03\x17
+  FLAG < 
+FOBL " R\x04 \x02 \x80\x04 \x025
+SCEN SCE032_013 "# \x02\xef! FLAG \x8c\x01FLAG\x02 \xd0A\x0c"\x03\x17
  
 \nザザザ……ザザッ……\pザアザザザ……@
 ザアアアアア……ザアザアアアアアアア……\
 
-  \r f#
-FOB " R\x04 \x02 \x80\x04 \x025 R\x04
-CM2 TextWindowOffv\x81\x1f\x08$ \x025  
-CM1 StopCD RUN 8$ \x025  \r \xc8
-FOB " \x80
-CM1 BgOnsv\x81\x1fz$ \x025 R\x04 \x02\x03\x05TextWindowOnDirect RUN \xa2$ \x025 R\x04 \x02
-SCE TextClosev\x81\x1f\xd6$ \x0256\xf1
+  FLAG f#
+FOBL " R\x04 \x02 \x80\x04 \x025 R\x04
+CMD2 TextWindowOffv\x81\x1f\x08$ \x025  
+CMD1 StopCD RUNF 8$ \x025  FLAG \xc8
+FOBL " \x80
+CMD1 BgOnsv\x81\x1fz$ \x025 R\x04 
+WAVL TextWindowOnDirect RUNF \xa2$ \x025 R\x04 \x02
+SCEN TextClosev\x81\x1f\xd6$ \x0256\xf1

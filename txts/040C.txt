@@ -1,8 +1,8 @@
 START
-v\x0c\x01`B#\x01:\n  \r \x07\x01
-FOB "\x03\x06.\\Data\\Script\\Bgm.Fobv\x81\x1f 
-CM1 PlayCD RUN J \x025
-SCE SCE040_001 f \x02\xef! \r \x8c\x01\r\x02  N\x0c"\x036
+v\x0c\x01`B#\x01:\n  FLAG \x07\x01
+FOBL "\x03\x06.\\Data\\Script\\Bgm.Fobv\x81\x1f 
+CMD1 PlayCD RUNF J \x025
+SCEN SCE040_001 f \x02\xef! FLAG \x8c\x01FLAG\x02  N\x0c"\x036
  
 拓司\n　「おれもお前のことは好きだ。@
 　　でも、それは－－」\n早桃\n　「義妹として？@
@@ -10,12 +10,12 @@ SCE SCE040_001 f \x02\xef! \r \x8c\x01\r\x02  N\x0c"\x036
 早桃が笑いながらいった。@
 それは嘲笑だった。\
 
-  \r \xaa
-FOB "\x03\x07.\\Data\\Script\\TextFunc.Fob RUN \xa2\x01
-CM1 TextOn RUN \xd0\x01 \x025  \r D
-FOB "\x03\x06.\\Data\\Script\\Bg.Fobsv\x81\x1f\x06\x02
-CM2 BgAutoFadeInsv\x81\x1f0\x02 \x025
-SCE SCE040_002 T\x02 \x02\xef! \r \x8c\x01\r\x02 $N\x0c"\x03v
+  FLAG \xaa
+FOBL "\x03\x07.\\Data\\Script\\TextFunc.Fob RUNF \xa2\x01
+CMD1 TextOn RUNF \xd0\x01 \x025  FLAG D
+FOBL "\x03\x06.\\Data\\Script\\Bg.Fobsv\x81\x1f\x06\x02
+CMD2 BgAutoFadeInsv\x81\x1f0\x02 \x025
+SCEN SCE040_002 T\x02 \x02\xef! FLAG \x8c\x01FLAG\x02 $N\x0c"\x03v
  
 早桃\n　「おにいちゃんは気楽でいいよね。@
 　　そんなところでストッパーかけて。@
@@ -26,9 +26,9 @@ SCE SCE040_002 T\x02 \x02\xef! \r \x8c\x01\r\x02 $N\x0c"\x03v
 　　そんなのはどうでもいいことだってことも」@
 拓司\n　「どうだっていいってことはないだろう－－」\
 
-  \r \x98\x02
-FOB " \xa2\x01 \x02 \xd0\x01 \x025
-SCE SCE040_003 \xaa\x04 \x02\xef! \r \x8c\x01\r\x02 (N\x0c"\x03\xcf
+  FLAG \x98\x02
+FOBL " \xa2\x01 \x02 \xd0\x01 \x025
+SCEN SCE040_003 \xaa\x04 \x02\xef! FLAG \x8c\x01FLAG\x02 (N\x0c"\x03\xcf
  
 早桃\n　「そういうことじゃないの！@
 　　そんな……\pあたりまえなことにグダグダこだわっていられ\n　　るなんて、幸せ者だよ、おにいちゃんは！@
@@ -43,11 +43,11 @@ SCE SCE040_003 \xaa\x04 \x02\xef! \r \x8c\x01\r\x02 (N\x0c"\x03\xcf
 \nつかみかからんばかりの勢いで、早桃は一気にまくし立てた。@
 目には涙が浮かび、身体は小刻みに震えている。\
 
-  \r \xee\x04
-FOB " \xa2\x01 \x02 \xd0\x01 \x025  \r \xc8
-FOB " \x06\x02
-CM1 BgOnsv\x81\x1f\x8a\x08 \x025
-SCE SCE040_004 \xa6\x08 \x02\xef! \r \x8c\x01\r\x02 ,N\x0c"\x03;
+  FLAG \xee\x04
+FOBL " \xa2\x01 \x02 \xd0\x01 \x025  FLAG \xc8
+FOBL " \x06\x02
+CMD1 BgOnsv\x81\x1f\x8a\x08 \x025
+SCEN SCE040_004 \xa6\x08 \x02\xef! FLAG \x8c\x01FLAG\x02 ,N\x0c"\x03;
  
 拓司\n　「……落ちてるって、どういうことだ？」@
 早桃\n　「……」@
@@ -55,6 +55,6 @@ SCE SCE040_004 \xa6\x08 \x02\xef! \r \x8c\x01\r\x02 ,N\x0c"\x03;
 \n早桃\n　「臆病者って、幸せよね！」@
 \nいって早桃は、風のように駆けて屋上から去っていった。\
 
-  \r \xea\x08
-FOB " \xa2\x01 \x02 \xd0\x01 \x025 \xa2\x01 \x02
-SCE TextClosev\x81\x1f\x1c\n \x0256\xf1
+  FLAG \xea\x08
+FOBL " \xa2\x01 \x02 \xd0\x01 \x025 \xa2\x01 \x02
+SCEN TextClosev\x81\x1f\x1c\n \x0256\xf1

@@ -1,8 +1,8 @@
 START
-<\x10\x01`B#\x01B\r  \r "
-FOB "\x03\x06.\\Data\\Script\\Bg.Fobsv\x81\x1f 
-CM2 BgAutoFadeInsv\x81\x1fJ \x025
-SCE SCE106_001 n \x02\xef! \r \x8c\x01\r\x02 @\xb5\x0c"\x03\x89
+<\x10\x01`B#\x01B\r  FLAG "
+FOBL "\x03\x06.\\Data\\Script\\Bg.Fobsv\x81\x1f 
+CMD2 BgAutoFadeInsv\x81\x1fJ \x025
+SCEN SCE106_001 n \x02\xef! FLAG \x8c\x01FLAG\x02 @\xb5\x0c"\x03\x89
  
 　それから起こったことを、拓司ははっきりとは覚えていない。@
 すべてが熱病のなかで見た夢のごとく、混然として、切り離すこ\nとができない。@
@@ -15,10 +15,10 @@ SCE SCE106_001 n \x02\xef! \r \x8c\x01\r\x02 @\xb5\x0c"\x03\x89
 それから御堂がポケットからバタフライナイフをとりだして……@
 なたねが鍵を飲み込んだのはそれからかもしれない……@
 そして気がつくと、教室中に血が飛び散っていた。\w\z
-  \r \xb2
-FOB "\x03\x07.\\Data\\Script\\TextFunc.Fob RUN \xf6\x02
-CM1 TextOn RUN $\x03 \x025
-SCE SCE106_002 @\x03 \x02\xef! \r \x8c\x01\r\x02 D\xb5\x0c"\x03E
+  FLAG \xb2
+FOBL "\x03\x07.\\Data\\Script\\TextFunc.Fob RUNF \xf6\x02
+CMD1 TextOn RUNF $\x03 \x025
+SCEN SCE106_002 @\x03 \x02\xef! FLAG \x8c\x01FLAG\x02 D\xb5\x0c"\x03E
  
 御堂\n　「勝ったあああああ俺が勝ったああああ思い知ったか俺がああ\n　　あああああ！」@
 \n御堂が叫んでいた。@
@@ -26,9 +26,9 @@ SCE SCE106_002 @\x03 \x02\xef! \r \x8c\x01\r\x02 D\xb5\x0c"\x03E
 ると引き出して……それは内臓だ。@
 てらてらと光る臓物だ。@
 御堂はその中から鍵を探し出そうとしている。\w\z
-  \r \x84\x03
-FOB " \xf6\x02 \x02 $\x03 \x025
-SCE SCE106_003 \xd2\x04 \x02\xef! \r \x8c\x01\r\x02 H\xb5\x0c"\x03q
+  FLAG \x84\x03
+FOBL " \xf6\x02 \x02 $\x03 \x025
+SCEN SCE106_003 \xd2\x04 \x02\xef! FLAG \x8c\x01FLAG\x02 H\xb5\x0c"\x03q
  
 いや、探し出そうとしているのは自分なのか……？@
 スクリーンの中の光景をのぞき込むように、客観的に『自分』を\n見つめている自分がどこかにいる…@
@@ -37,37 +37,37 @@ SCE SCE106_003 \xd2\x04 \x02\xef! \r \x8c\x01\r\x02 H\xb5\x0c"\x03q
 いや、なたねはとっくの昔から虚空を見つめていたのではなかっ\nたか……@
 見よ、死んでいるはずのなたねの口がくわっと開いて、\n\p哄笑をとどろかせている……。@
 \nわは。\w\z
-  \r \x16\x05
-FOB " \xf6\x02 \x02 $\x03 \x025
-SCE SCE106_004 \x14\x07 \x02\xef! \r \x8c\x01\r\x02 L\xb5\x0c"\x03+
+  FLAG \x16\x05
+FOBL " \xf6\x02 \x02 $\x03 \x025
+SCEN SCE106_004 \x14\x07 \x02\xef! FLAG \x8c\x01FLAG\x02 L\xb5\x0c"\x03+
  
 その笑い声は伝染病のようにあたりに広がり、あっというまに部\n屋中を充たした。@
 \nわは、わはは、はははははははははははははははははははははは\nははははははははは！\w\z
-  \r X\x07
-FOB " \xf6\x02 \x02 $\x03 \x025
-SCE SCE106_005 >\x08 \x02\xef! \r \x8c\x01\r\x02 P\xb5\x0c"\x03@
+  FLAG X\x07
+FOBL " \xf6\x02 \x02 $\x03 \x025
+SCEN SCE106_005 >\x08 \x02\xef! FLAG \x8c\x01FLAG\x02 P\xb5\x0c"\x03@
  
 なにもかもがおかしくて、いくらでも笑いがこみ上げてきた。@
 ……なたねの口の中は赤い洞窟のように血に染まっていて……@
 その奥をのぞき込むとひとつの部屋が見える……@
 そこに７人の男女がいて、大声で笑っている……@
 腹を抱えてのたうち回っている。\w\z
-  \r \x82\x08
-FOB " \xf6\x02 \x02 $\x03 \x025
-SCE SCE106_006 \xbc\t \x02\xef! \r \x8c\x01\r\x02 T\xb5\x0c"\x03P
+  FLAG \x82\x08
+FOBL " \xf6\x02 \x02 $\x03 \x025
+SCEN SCE106_006 \xbc\t \x02\xef! FLAG \x8c\x01FLAG\x02 T\xb5\x0c"\x03P
  
 なるほど、世界とはその程度のものだったのだ。@
 頭のいかれた女の口の中に幻灯のごとく浮かび上がるような……\nそのようなものなのだ。@
 おれは－－と拓司は思った－－おれははなからありもしないもの\nをあると思いこんで、必死でうろつき回っていたのだ。@
 なにもおかしくなどなかったが、いくらでも笑いがこみ上げてき\nた。\w\z
-  \r \n
-FOB " \xf6\x02 \x02 $\x03 \x025
-SCE SCE106_007 z\x0b \x02\xef! \r \x8c\x01\r\x02 X\xb5\x0c"\x03H
+  FLAG \n
+FOBL " \xf6\x02 \x02 $\x03 \x025
+SCEN SCE106_007 z\x0b \x02\xef! FLAG \x8c\x01FLAG\x02 X\xb5\x0c"\x03H
  
 笑いの渦に身を任せながら、拓司は「終わったな」と感じていた。\n\p世界が溶け落ちていった。@
 なにもかもを……笑い声さえのみこんで、雨だれのように溶けて\n落ちていった。@
 ザザザ……ザザッ……ザアザザザ……ザアアアアア……ザアザア\nアアアアアア……@
 \n最後にそんな音が、聞こえた。\w\z
-  \r \xbe\x0b
-FOB " \xf6\x02 \x02 $\x03 \x025 \xf6\x02 \x02
-SCE TextClosev\x81\x1f$\r \x0256\xf1
+  FLAG \xbe\x0b
+FOBL " \xf6\x02 \x02 $\x03 \x025 \xf6\x02 \x02
+SCEN TextClosev\x81\x1f$\r \x0256\xf1

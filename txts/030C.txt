@@ -1,13 +1,13 @@
 START
 \x8c\x1e\x01`B#\x01&\x18
-SCE SCE030_001 \x06 \x02\xef! \r \x8c\x01\r\x02 \x80>\x0c"\x03\x0f
+SCEN SCE030_001 \x06 \x02\xef! FLAG \x8c\x01FLAG\x02 \x80>\x0c"\x03\x0f
  
 \n\n\n\n\n\n\n\n　　　　　　　　　　　　　『屋上』\
 
-  \r J
-FOB "\x03\x07.\\Data\\Script\\TextFunc.Fob RUN \xa6
-CM1 TextOn RUN \xd4 \x025
-SCE SCE030_002 \xf0 \x02\xef! \r \x8c\x01\r\x02 \x84>\x0c"\x03.
+  FLAG J
+FOBL "\x03\x07.\\Data\\Script\\TextFunc.Fob RUNF \xa6
+CMD1 TextOn RUNF \xd4 \x025
+SCEN SCE030_002 \xf0 \x02\xef! FLAG \x8c\x01FLAG\x02 \x84>\x0c"\x03.
  
 　ぱーん@
 　ぱーん@
@@ -15,15 +15,15 @@ SCE SCE030_002 \xf0 \x02\xef! \r \x8c\x01\r\x02 \x84>\x0c"\x03.
 \n　ライフルの音が小さく響く。@
 　無論ライフルなどがここにあろうはずもなく、それは月代カンナ\n　の唇から漏れる、偽物の銃声にすぎない。\
 
-  \r 4\x01
-FOB " \xa6 \x02 \xd4 \x025 \xa6
-CM2 TextWindowOffv\x81\x1f2\x02 \x025  \r \x08\x01
-FOB "\x03\x06.\\Data\\Script\\Bgm.Fobv\x81\x1fp\x02
-CM1 PlayCD RUN \x9a\x02 \x025  \r \x08
-FOB "\x03\x06.\\Data\\Script\\Bg.Fobsv\x81\x1f\xd0\x02
-CM2 BgNormalFadeIn RUN \xfa\x02 \x025 \xa6
-CM2 TextWindowOnsv\x81\x1f*\x03 \x025
-SCE SCE030_003 N\x03 \x02\xef! \r \x8c\x01\r\x02 \x88>\x0c"\x03Q
+  FLAG 4\x01
+FOBL " \xa6 \x02 \xd4 \x025 \xa6
+CMD2 TextWindowOffv\x81\x1f2\x02 \x025  FLAG \x08\x01
+FOBL "\x03\x06.\\Data\\Script\\Bgm.Fobv\x81\x1fp\x02
+CMD1 PlayCD RUNF \x9a\x02 \x025  FLAG \x08
+FOBL "\x03\x06.\\Data\\Script\\Bg.Fobsv\x81\x1f\xd0\x02
+CMD2 BgNormalFadeIn RUNF \xfa\x02 \x025 \xa6
+CMD2 TextWindowOnsv\x81\x1f*\x03 \x025
+SCEN SCE030_003 N\x03 \x02\xef! FLAG \x8c\x01FLAG\x02 \x88>\x0c"\x03Q
  
 　ぱーん@
 　ぱーん@
@@ -32,9 +32,9 @@ SCE SCE030_003 N\x03 \x02\xef! \r \x8c\x01\r\x02 \x88>\x0c"\x03Q
 　髪も脱色して、いっぱしのハンサム気取りだ。@
 \n　ぱーん。\
 
-  \r \x92\x03
-FOB " \xa6 \x02 \xd4 \x025
-SCE SCE030_004 \x10\x05 \x02\xef! \r \x8c\x01\r\x02 \x8c>\x0c"\x03w
+  FLAG \x92\x03
+FOBL " \xa6 \x02 \xd4 \x025
+SCEN SCE030_004 \x10\x05 \x02\xef! FLAG \x8c\x01FLAG\x02 \x8c>\x0c"\x03w
  
 \n　男子学生の頭部が、スイカのように砕け散る。@
 　カンナはライフルをスライドさせて、今度は女子学生をターゲッ\n　ティングした。@
@@ -43,9 +43,9 @@ SCE SCE030_004 \x10\x05 \x02\xef! \r \x8c\x01\r\x02 \x8c>\x0c"\x03w
 　－－無駄無駄。@
 \n　ぱーん。\
 
-  \r T\x05
-FOB " \xa6 \x02 \xd4 \x025
-SCE SCE030_005 j\x07 \x02\xef! \r \x8c\x01\r\x02 \x90>\x0c"\x03I
+  FLAG T\x05
+FOBL " \xa6 \x02 \xd4 \x025
+SCEN SCE030_005 j\x07 \x02\xef! FLAG \x8c\x01FLAG\x02 \x90>\x0c"\x03I
  
 　いってカンナは振り返り、今度は銃口を拓司に向けた。@
 \nカンナ\n　「クイズです」@
@@ -54,11 +54,11 @@ SCE SCE030_005 j\x07 \x02\xef! \r \x8c\x01\r\x02 \x90>\x0c"\x03I
 拓司\n　「……」@
 カンナ\n　「ぱーん。\p……あなた、死んだわよ」\
 
-  \r \xae\x07
-FOB " \xa6 \x02 \xd4 \x025  \r \xc8
-FOB " \xd0\x02
-CM2 BgAutoFadeInsv\x81\x1f2\t \x025
-SCE SCE030_006 V\t \x02\xef! \r \x8c\x01\r\x02 \x94>\x0c"\x03\x7f
+  FLAG \xae\x07
+FOBL " \xa6 \x02 \xd4 \x025  FLAG \xc8
+FOBL " \xd0\x02
+CMD2 BgAutoFadeInsv\x81\x1f2\t \x025
+SCEN SCE030_006 V\t \x02\xef! FLAG \x8c\x01FLAG\x02 \x94>\x0c"\x03\x7f
  
 拓司はそれを無視して、いった。@
 \n拓司\n　「どうしてだ？\p　どうして朝、おれに声をかけた？\p　互いの世界\n　　には干渉しない。\pそういう『約束』だったんじゃないか？」@
@@ -69,9 +69,9 @@ SCE SCE030_006 V\t \x02\xef! \r \x8c\x01\r\x02 \x94>\x0c"\x03\x7f
 \n　捧げ物を差し出すように、カンナは顎をくいっと上にそらせた。@
 　差し出された首は透き通るように青白く、夏の日差しに覆われた\n　この屋上において、それは場違いな氷細工のように見えた。\
 
-  \r \x9a\t
-FOB " \xa6 \x02 \xd4 \x025
-SCE SCE030_007 \xd0\x0b \x02\xef! \r \x8c\x01\r\x02 \x98>\x0c"\x03:
+  FLAG \x9a\t
+FOBL " \xa6 \x02 \xd4 \x025
+SCEN SCE030_007 \xd0\x0b \x02\xef! FLAG \x8c\x01FLAG\x02 \x98>\x0c"\x03:
  
 拓司\n　「ふざけるな」@
 カンナ\n　「絞めて」@
@@ -82,9 +82,9 @@ SCE SCE030_007 \xd0\x0b \x02\xef! \r \x8c\x01\r\x02 \x98>\x0c"\x03:
 \n　乞われるまま、拓司は手を伸ばした。@
 　包み込むように、絞める。\
 
-  \r \x14\x0c
-FOB " \xa6 \x02 \xd4 \x025
-SCE SCE030_008 6\r \x02\xef! \r \x8c\x01\r\x02 \x9c>\x0c"\x03\x81
+  FLAG \x14\x0c
+FOBL " \xa6 \x02 \xd4 \x025
+SCEN SCE030_008 6\r \x02\xef! FLAG \x8c\x01FLAG\x02 \x9c>\x0c"\x03\x81
  
 　細い。\p指先が余るくらい、カンナの首は細い。@
 　掌の中、皮膚の下、肉の奥、そこをごくり、と嚥下されていく唾\n　液の感覚。@
@@ -101,10 +101,10 @@ SCE SCE030_008 6\r \x02\xef! \r \x8c\x01\r\x02 \x9c>\x0c"\x03\x81
 　１。@
 　解放。\
 
-  \r z\r
-FOB " \xa6 \x02 \xd4 \x025  \r \t
-FOB " \xd0\x02 \x02 2\t \x025
-SCE SCE030_009 \xec\x0f \x02\xef! \r \x8c\x01\r\x02 \xa0>\x0c"\x03\xa3
+  FLAG z\r
+FOBL " \xa6 \x02 \xd4 \x025  FLAG \t
+FOBL " \xd0\x02 \x02 2\t \x025
+SCEN SCE030_009 \xec\x0f \x02\xef! FLAG \x8c\x01FLAG\x02 \xa0>\x0c"\x03\xa3
  
 　カンナはコンクリの上にへたりこみ、げほげほと咽せた。\pぜいぜ\nいという荒い息に、ときおりうええ、という嗚咽が混じる。\p目の端\nにはうっすらと涙がにじんでいる。\p華奢な肩が激しく上下する。@
 　汗ばんだ頬に、髪の毛が張り付いている。@
@@ -113,9 +113,9 @@ SCE SCE030_009 \xec\x0f \x02\xef! \r \x8c\x01\r\x02 \xa0>\x0c"\x03\xa3
 拓司\n　「……」@
 カンナ\n　「はは……あははは……ハハハハハハハハ」\
 
-  \r 0\x10
-FOB " \xa6 \x02 \xd4 \x025
-SCE SCE030_010 \xf6\x12 \x02\xef! \r \x8c\x01\r\x02 \xa4>\x0c"\x03r
+  FLAG 0\x10
+FOBL " \xa6 \x02 \xd4 \x025
+SCEN SCE030_010 \xf6\x12 \x02\xef! FLAG \x8c\x01FLAG\x02 \xa4>\x0c"\x03r
  
 \n哄笑を放つカンナに、拓司はゆっくりと身体を重ねた。@
 身体の下で、柔らかい肉の塊が、ハ、ハ、ハ、と痙攣していた。@
@@ -123,19 +123,20 @@ SCE SCE030_010 \xf6\x12 \x02\xef! \r \x8c\x01\r\x02 \xa4>\x0c"\x03r
 /*■CG73　表示（ノンエフェクト） *//*■CG09　表示（ノンエフェクト） */\a7,1,1,0,\a1,1,202,9,\a6,0,0,0,ハ。@
 /*■CG73　表示（ノンエフェクト） *//*■CG09　表示（ノンエフェクト） */\a7,1,1,0,\a1,1,202,9,\a6,0,0,0,ハ。\
 
-  \r :\x13
-FOB " \xa6 \x02 \xd4 \x025 \xa6 \x02 2\x02 \x025  \r \xca
-FOB " \xd0\x02
-CM1 BgOnsv\x81\x1f|\x15 \x025  \r \x01
-FOB "\x03\x07.\\Data\\Script\\TextFunc.fob RUN \xb2\x15 \x02
-SCE WaitTimesv\x81\x1f\xe0\x15 \x025  \r \t
-FOB " \xd0\x02 \x02 |\x15 \x025  \r \x01
-FOB " \xb2\x15 \x02 \xe0\x15 \x025  \r \xca
-FOB " \xd0\x02 \x02 |\x15 \x025  \r \x01
-FOB " \xb2\x15 \x02 \xe0\x15 \x025  \r \t
-FOB " \xd0\x02 \x02 |\x15 \x025  \r \x01
-FOB " \xb2\x15 \x02 \xe0\x15 \x025  \r <
-FOB " \xb2\x15 \x02 \xe0\x15 \x025  \r \xc8
-FOB " \xd0\x02 \x02 \xfa\x02 \x025 p\x02
-CM1 StopCD RUN \xac\x17 \x025 \xa6 \x02\x03\x05TextWindowOnDirect RUN \xd4\x17 \x025 \xa6 \x02
-SCE TextClosev\x81\x1f\x08\x18 \x0256\xf1
+  FLAG :\x13
+FOBL " \xa6 \x02 \xd4 \x025 \xa6 \x02 2\x02 \x025  FLAG \xca
+FOBL " \xd0\x02
+CMD1 BgOnsv\x81\x1f|\x15 \x025  FLAG \x01
+FOBL "\x03\x07.\\Data\\Script\\TextFunc.fob RUNF \xb2\x15 \x02
+SCEN WaitTimesv\x81\x1f\xe0\x15 \x025  FLAG \t
+FOBL " \xd0\x02 \x02 |\x15 \x025  FLAG \x01
+FOBL " \xb2\x15 \x02 \xe0\x15 \x025  FLAG \xca
+FOBL " \xd0\x02 \x02 |\x15 \x025  FLAG \x01
+FOBL " \xb2\x15 \x02 \xe0\x15 \x025  FLAG \t
+FOBL " \xd0\x02 \x02 |\x15 \x025  FLAG \x01
+FOBL " \xb2\x15 \x02 \xe0\x15 \x025  FLAG <
+FOBL " \xb2\x15 \x02 \xe0\x15 \x025  FLAG \xc8
+FOBL " \xd0\x02 \x02 \xfa\x02 \x025 p\x02
+CMD1 StopCD RUNF \xac\x17 \x025 \xa6 
+WAVL TextWindowOnDirect RUNF \xd4\x17 \x025 \xa6 \x02
+SCEN TextClosev\x81\x1f\x08\x18 \x0256\xf1
