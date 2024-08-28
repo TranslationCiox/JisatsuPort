@@ -1,56 +1,9 @@
-\x01
-start
-\xef
-i\x01C
-\xa3\n
-\x01
-`B#\x01
-d\x08
- 
-\x1e
-\r
-\x1e
-\x07\x01
-\x0c
-\x02
-"
-\x03
-\x06
-.\\Data\\Script\\Bgm.Fob
-v\x81\x1f
- 
-\x1e
-\x02
-\x03
-\x02
-PlayCD
-\x81\x1f
-J
-\x1e
-\x02
-5
-\x03
-\x03
-SCE019_001
-\x1f
-f
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-P-
-\x0c
-"
-\x03
-R
-紅葉
+START
+\xa3\n\x01`B#\x01d\x08 DO SOMETHING \x1e\x07\x01
+.\\Data\\Script\\Bgm.Fob  
+PlayCD J AND2 5
+SCE019_001\x1ff AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1eP-
+R紅葉
 　「－－もしも～し？　聞いてますか～、トラビシタクジくん？！
 　　」@
 拓司
@@ -70,51 +23,11 @@ R
 
 　紅葉はナサケナイ、とため息をついた。\
 
- 
-\x1e
-\r
-\x1f
-\xaa
-\x0c
-\x02
-"
-\x03
-\x07
-.\\Data\\Script\\TextFunc.Fob
-\x81\x1f
-\x12\x02
-\x1e
-\x02
-\x03
-\x02
-TextOn
-\x81\x1f
-@\x02
-\x1e
-\x02
-5
-\x03
-\x03
-SCE019_002
-\x1f
-\\\x02
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-T-
-\x0c
-"
-\x03
-L
-紅葉
+ DO SOMETHING \x1f\xaa
+.\\Data\\Script\\TextFunc.Fob \x12\x02
+TextOn @\x02 AND2 5
+SCE019_002\x1f\\\x02 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1eT-
+L紅葉
 　「ちゃんとご飯、食べてる？」@
 拓司
 　「まあ、普通に」@
@@ -131,62 +44,9 @@ L
 　　るのかな、って。@もし購買のパンとかで済ませるつもりなら－
 　　－」\
 
- 
-\x1e
-\r
-\x1f
-\xa0\x02
-\x0c
-\x02
-"
-\x1f
-\x12\x02
-\x1e
-\x02
-\x1f
-@\x02
-\x1e
-\x02
-5
- 
-\x1e
-\r
-\x1e
-\x08\x01
-\x0c
-\x02
-"
-\x1f
- 
-\x1e
-\x02
-\x1f
-J
-\x1e
-\x02
-5
-\x03
-\x03
-SCE019_003
-\x1f
->\x04
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-X-
-\x0c
-"
-\x03
-A
-？？？
+ DO SOMETHING \x1f\xa0\x02 AND "\x1f\x12\x02 AND2 \x1f@\x02 AND2 5 DO SOMETHING \x1e\x08\x01 AND "\x1f  AND2 \x1fJ AND2 5
+SCE019_003\x1f>\x04 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1eX-
+A？？？
 　「－－おはよう」@
 
 /*　■CG05　表示　（クロスフェード）　*/\a7,-2,-2,0,\a0,4,2,0,\a6,-2,0,0,その声は、すぐ耳元で聞こえた。@
@@ -194,45 +54,9 @@ A
 り立っている。@
 拓司はその少女の名前を知っていた。\
 
- 
-\x1e
-\r
-\x1f
-\x82\x04
-\x0c
-\x02
-"
-\x1f
-\x12\x02
-\x1e
-\x02
-\x1f
-@\x02
-\x1e
-\x02
-5
-\x03
-\x03
-SCE019_004
-\x1f
-\xc0\x05
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-\\-
-\x0c
-"
-\x03
+ DO SOMETHING \x1f\x82\x04 AND "\x1f\x12\x02 AND2 \x1f@\x02 AND2 5
+SCE019_004\x1f\xc0\x05 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\\-
 \x7f
-
 月代カンナ。@
 夜の闇を思わせる黒いストレートの髪。@
 潤んで黒目がちな目と、長いまつげ。@
@@ -248,34 +72,5 @@ SCE019_004
 
 －－どうして月代カンナはおれに声をかけてきたのだろう？\
 
- 
-\x1e
-\r
-\x1f
-\x04\x06
-\x0c
-\x02
-"
-\x1f
-\x12\x02
-\x1e
-\x02
-\x1f
-@\x02
-\x1e
-\x02
-5
-\x1f
-\x12\x02
-\x1e
-\x02
-\x03
-\x03
-TextClose
-v\x81\x1f
-F\x08
-\x1e
-\x02
-5
-6
-\xf1
+ DO SOMETHING \x1f\x04\x06 AND "\x1f\x12\x02 AND2 \x1f@\x02 AND2 5\x1f\x12\x02 AND2 
+TextClose F\x08 AND2 56\xf1

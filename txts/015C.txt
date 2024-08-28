@@ -1,33 +1,7 @@
-\x01
-start
-\xef
-i\x01C
-"\x06
-\x01
-\xa4\t3\x01
-\x18\x05
-\x03
-\x03
-SCE015_001
-\x1f
-\x06
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-\x10'
-\x0c
-"
-\x03
-\xa8
-紅葉
+START
+"\x06\x01\xa4\t3\x01\x18\x05
+SCE015_001\x1f\x06 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\x10'
+\xa8紅葉
 　「失礼ね、あるわよ！　私はアンタみたいにゴロゴロ過ごしてな
 　　いんだから、アンタよりよっぽどバテバテなの！　バイトだっ
 　　てやってるし、来週はライブに行くし、受験勉強だってそこそ
@@ -45,51 +19,11 @@ SCE015_001
 　「アンタさあ、もうちょっと身体鍛えないと、いざというときに
 　　困るよ？」\
 
- 
-\x1e
-\r
-\x1f
-J
-\x0c
-\x02
-"
-\x03
-\x07
-.\\Data\\Script\\TextFunc.Fob
-\x81\x1f
-\n\x03
-\x1e
-\x02
-\x03
-\x02
-TextOn
-\x81\x1f
-8\x03
-\x1e
-\x02
-5
-\x03
-\x03
-SCE015_002
-\x1f
-T\x03
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-\x14'
-\x0c
-"
-\x03
-G
-拓司
+ DO SOMETHING \x1fJ
+.\\Data\\Script\\TextFunc.Fob \n\x03
+TextOn 8\x03 AND2 5
+SCE015_002\x1fT\x03 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\x14'
+G拓司
 　「いざというときって、なんだよ？　核戦争が起こって世界が暴
 　　力の時代になったときか？　悪の改造人間が襲いかかってきた
 　　ときか？」@
@@ -102,34 +36,5 @@ G
 拓司
 　「ふん」\
 
- 
-\x1e
-\r
-\x1f
-\x98\x03
-\x0c
-\x02
-"
-\x1f
-\n\x03
-\x1e
-\x02
-\x1f
-8\x03
-\x1e
-\x02
-5
-\x1f
-\n\x03
-\x1e
-\x02
-\x03
-\x03
-TextClose
-v\x81\x1f
-\xfa\x04
-\x1e
-\x02
-5
-6
-\xf1
+ DO SOMETHING \x1f\x98\x03 AND "\x1f\n\x03 AND2 \x1f8\x03 AND2 5\x1f\n\x03 AND2 
+TextClose \xfa\x04 AND2 56\xf1

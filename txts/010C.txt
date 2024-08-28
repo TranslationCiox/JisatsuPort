@@ -1,33 +1,7 @@
-\x01
-start
-\xef
-i\x01C
-\xe0.
-\x01
-`B#\x01
-((
-\x03
-\x03
-SCE010_001
-\x1f
-\x06
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-@\x1f
-\x0c
-"
-\x03
+START
+\xe0.\x01`B#\x01((
+SCE010_001\x1f\x06 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e@\x1f
 \x11
-
 
 
 
@@ -38,51 +12,11 @@ SCE010_001
 
 　　　　　　　　　　　『虎菱家の食卓』\
 
- 
-\x1e
-\r
-\x1f
-J
-\x0c
-\x02
-"
-\x03
-\x07
-.\\Data\\Script\\TextFunc.Fob
-\x81\x1f
-\xae
-\x1e
-\x02
-\x03
-\x02
-TextOn
-\x81\x1f
-\xdc
-\x1e
-\x02
-5
-\x03
-\x03
-SCE010_002
-\x1f
-\xf8
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-D\x1f
-\x0c
-"
-\x03
-a
-　朝。@
+ DO SOMETHING \x1fJ
+.\\Data\\Script\\TextFunc.Fob \xae
+TextOn \xdc AND2 5
+SCE010_002\x1f\xf8 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1eD\x1f
+a　朝。@
 　食卓の上に、フォークとナイフがきれいに並べられている。@
 　稲妻のようなナイフ。@
 　ぼんやりと眺めつつ、拓司は小さくつぶやいた。@
@@ -96,88 +30,16 @@ a
 　稲妻のようなナイフ。@
 　－－これを頸動脈に突き立てれば、多分おれは死ぬだろう。\
 
- 
-\x1e
-\r
-\x1f
-<\x01
-\x0c
-\x02
-"
-\x1f
-\xae
-\x1e
-\x02
-\x1f
-\xdc
-\x1e
-\x02
-5
-\x03
-\x03
-SCE010_003
-\x1f
-\xfa\x02
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-H\x1f
-\x0c
-"
-\x03
-\x0b
-　『死ぬ』こと。@
+ DO SOMETHING \x1f<\x01 AND "\x1f\xae AND2 \x1f\xdc AND2 5
+SCE010_003\x1f\xfa\x02 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1eH\x1f
+\x0b　『死ぬ』こと。@
 
 
 　『死』。\
 
- 
-\x1e
-\r
-\x1f
->\x03
-\x0c
-\x02
-"
-\x1f
-\xae
-\x1e
-\x02
-\x1f
-\xdc
-\x1e
-\x02
-5
-\x03
-\x03
-SCE010_004
-\x1f
-\xa4\x03
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-L\x1f
-\x0c
-"
-\x03
-c
-　いまや拓司にとって、死を真剣に考えることこそが、生者とし
+ DO SOMETHING \x1f>\x03 AND "\x1f\xae AND2 \x1f\xdc AND2 5
+SCE010_004\x1f\xa4\x03 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1eL\x1f
+c　いまや拓司にとって、死を真剣に考えることこそが、生者とし
 　ての自分を実感する唯一の方法だった。@死に備わる様々な要素
 　－－痛みであるとか、出血であるとか、恐怖であるとか－－は、
 　まだ、リアルなものとして拓司の中に残っている。@
@@ -185,45 +47,9 @@ c
 　いま生きている『生』よりも、未体験の『死』を思う方が、拓
 　司にとっては容易であったのだ。\
 
- 
-\x1e
-\r
-\x1f
-\xe8\x03
-\x0c
-\x02
-"
-\x1f
-\xae
-\x1e
-\x02
-\x1f
-\xdc
-\x1e
-\x02
-5
-\x03
-\x03
-SCE010_005
-\x1f
-\xae\x05
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-P\x1f
-\x0c
-"
-\x03
-X
-　その死を、生と並べて置く。@
+ DO SOMETHING \x1f\xe8\x03 AND "\x1f\xae AND2 \x1f\xdc AND2 5
+SCE010_005\x1f\xae\x05 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1eP\x1f
+X　その死を、生と並べて置く。@
 　両者に触れ、味わい、嗅ぎ、眺めて相違点を探る。@
 　そうすることで、ようやく拓司は、生というものの輪郭をイメ
 　ージできるのだった。@
@@ -233,45 +59,9 @@ X
 　ゆえにおれは死んでいない。@
 　証明終わり。\
 
- 
-\x1e
-\r
-\x1f
-\xf2\x05
-\x0c
-\x02
-"
-\x1f
-\xae
-\x1e
-\x02
-\x1f
-\xdc
-\x1e
-\x02
-5
-\x03
-\x03
-SCE010_006
-\x1f
-\x8c\x07
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-T\x1f
-\x0c
-"
-\x03
-\xa6
-　しかし、リアルに死を想像することは、なかなか難しい。@
+ DO SOMETHING \x1f\xf2\x05 AND "\x1f\xae AND2 \x1f\xdc AND2 5
+SCE010_006\x1f\x8c\x07 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1eT\x1f
+\xa6　しかし、リアルに死を想像することは、なかなか難しい。@
 　なぜならば死を思ったところで本当に死ぬというわけではなく、
 　そして当然の事ながら、死んだ経験など一度もないからである。
 　@
@@ -288,84 +78,10 @@ T\x1f
 　想像することができる。@
 　リアルに、生を意識できる。\
 
- 
-\x1e
-\r
-\x1f
-\xd0\x07
-\x0c
-\x02
-"
-\x1f
-\xae
-\x1e
-\x02
-\x1f
-\xdc
-\x1e
-\x02
-5
-\x03
-\x03
-SCE010_007
-\x1f
-\xa2\n
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-X\x1f
-\x0c
-"
- 
-\x1e
-\r
-\x1e
-\x0c
-\x02
-"
- 
-\x1e
-\x04
-\r
-\x1e
-\x07
-\x0c
-\x02
-"
- 
-\x1e
-\x08
-\r
-\x1e
-\x0c
-\x02
-"
-\x03
-\x06
-.\\Data\\Script\\Bgm.Fob
-v\x81\x1f
-4\x0b
-\x1e
-\x02
-\x03
-\x03
-SePlayEx
-sv\x81\x1f
-^\x0b
-\x1e
-\x02
-5
-\x03
-d
-　間の抜けたテレビの女がいう。@
+ DO SOMETHING \x1f\xd0\x07 AND "\x1f\xae AND2 \x1f\xdc AND2 5
+SCE010_007\x1f\xa2\n AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1eX\x1f\x0c" DO SOMETHING \x1e AND " \x1e\x04\r\x1e\x07 AND " \x1e\x08\r\x1e
+.\\Data\\Script\\Bgm.Fob 4\x0b AND2 
+SePlayEx ^\x0b AND2 5\x03d　間の抜けたテレビの女がいう。@
 
 アナウンサー
 　「－－センセイ、ここ最近、『自殺』という言葉を口にする若
@@ -379,45 +95,9 @@ d
 　　ソっと『私は霊が見える』といったりすることがありますよ
 　　ね」\
 
- 
-\x1e
-\r
-\x1f
-~\x0b
-\x0c
-\x02
-"
-\x1f
-\xae
-\x1e
-\x02
-\x1f
-\xdc
-\x1e
-\x02
-5
-\x03
-\x03
-SCE010_008
-\x1f
-H\r
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-\\\x1f
-\x0c
-"
-\x03
-\xcb
-アナウンサー
+ DO SOMETHING \x1f~\x0b AND "\x1f\xae AND2 \x1f\xdc AND2 5
+SCE010_008\x1fH\r AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\\\x1f
+\xcbアナウンサー
 　「あ！　ありますあります！」@
 コメンテーター
 　「『ほら、その隅に白髪のおじいさんが立っている』とか、ま
@@ -436,45 +116,9 @@ H\r
 　　わけです。@真偽は本人にしかわからないけれど、本当だった
 　　としたら、ただごとではないわけですからね」\
 
- 
-\x1e
-\r
-\x1f
-\x8c\r
-\x0c
-\x02
-"
-\x1f
-\xae
-\x1e
-\x02
-\x1f
-\xdc
-\x1e
-\x02
-5
-\x03
-\x03
-SCE010_009
-\x1f
-\xf2\x10
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-`\x1f
-\x0c
-"
-\x03
-j
-アナウンサー
+ DO SOMETHING \x1f\x8c\r AND "\x1f\xae AND2 \x1f\xdc AND2 5
+SCE010_009\x1f\xf2\x10 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e`\x1f
+jアナウンサー
 　「自分の後ろに幽霊がいるかもしれないわけですから！」@
 コメンテーター
 　「ハハ。だから周囲は大騒ぎして、彼女に注目をする……。@
@@ -485,45 +129,9 @@ j
 アナウンサー
 　「なるほどォ。いわれてみればそうかもしれませんね」\
 
- 
-\x1e
-\r
-\x1f
-6\x11
-\x0c
-\x02
-"
-\x1f
-\xae
-\x1e
-\x02
-\x1f
-\xdc
-\x1e
-\x02
-5
-\x03
-\x03
-SCE010_010
-\x1f
-\x18\x13
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-d\x1f
-\x0c
-"
-\x03
-\xb5
-コメンテーター
+ DO SOMETHING \x1f6\x11 AND "\x1f\xae AND2 \x1f\xdc AND2 5
+SCE010_010\x1f\x18\x13 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1ed\x1f
+\xb5コメンテーター
 　「一時話題になった、インターネットの『自殺系サイト』を見
 　　ると、わりと分かりやすい。@
 　　そういったサイトの掲示板への書き込みは、『悩み相談』の
@@ -541,45 +149,9 @@ d\x1f
 アナウンサー
 　「ウフフ」\
 
- 
-\x1e
-\r
-\x1f
-\\\x13
-\x0c
-\x02
-"
-\x1f
-\xae
-\x1e
-\x02
-\x1f
-\xdc
-\x1e
-\x02
-5
-\x03
-\x03
-SCE010_011
-\x1f
-j\x16
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-h\x1f
-\x0c
-"
-\x03
-\xdc
-コメンテーター
+ DO SOMETHING \x1f\\\x13 AND "\x1f\xae AND2 \x1f\xdc AND2 5
+SCE010_011\x1fj\x16 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1eh\x1f
+\xdcコメンテーター
 　「ええと……自己紹介ホームページの開設ブームなどを見れば
 　　わかるとおり、人間には、自己をアピールしたい、『私』を
 　　語りたい、という欲求があるわけです。@
@@ -597,45 +169,9 @@ h\x1f
 アナウンサー
 　「う～ん・・・・」\
 
- 
-\x1e
-\r
-\x1f
-\xae\x16
-\x0c
-\x02
-"
-\x1f
-\xae
-\x1e
-\x02
-\x1f
-\xdc
-\x1e
-\x02
-5
-\x03
-\x03
-SCE010_012
-\x1f
-X\x1a
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-l\x1f
-\x0c
-"
-\x03
-\x91
-コメンテーター
+ DO SOMETHING \x1f\xae\x16 AND "\x1f\xae AND2 \x1f\xdc AND2 5
+SCE010_012\x1fX\x1a AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1el\x1f
+\x91コメンテーター
 　「このところ『殺人』や『死体写真』などのサブカルチャーが
 　　幅を利かせているのも、競争相手の多いメインカルチャーの
 　　なかで浮上するのがしんどい、という側面があると思うんで
@@ -648,45 +184,9 @@ l\x1f
 
 そしてしかめ面をしたゲストの男がしめくくる。\
 
- 
-\x1e
-\r
-\x1f
-\x9c\x1a
-\x0c
-\x02
-"
-\x1f
-\xae
-\x1e
-\x02
-\x1f
-\xdc
-\x1e
-\x02
-5
-\x03
-\x03
-SCE010_013
-\x1f
-\x1a\x1d
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-p\x1f
-\x0c
-"
-\x03
-\xb8
-ゲスト
+ DO SOMETHING \x1f\x9c\x1a AND "\x1f\xae AND2 \x1f\xdc AND2 5
+SCE010_013\x1f\x1a\x1d AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1ep\x1f
+\xb8ゲスト
 　「まあ、精神的とか経済的にネ、追いつめられて、真剣に自殺
 　　を考えている人はいるわけなんで、あまり軽々しくは言えな
 　　いんだけどネ。@若いのがネ、死ぬとかナントカいうのはネ、
@@ -702,45 +202,9 @@ p\x1f
 
 /*SE パチンとテレビのスイッチが切れる音。*/\a2,0,8,0,\a3,0,0,0,\a4,0,0,0,
 
- 
-\x1e
-\r
-\x1f
-^\x1d
-\x0c
-\x02
-"
-\x1f
-\xae
-\x1e
-\x02
-\x1f
-\xdc
-\x1e
-\x02
-5
-\x03
-\x03
-SCE010_014
-\x1f
-x 
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-t\x1f
-\x0c
-"
-\x03
-{
-　－－おれの抱えた数字は、そんな簡単に割り切れる数字ではな
+ DO SOMETHING \x1f^\x1d AND "\x1f\xae AND2 \x1f\xdc AND2 5
+SCE010_014\x1fx  AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1et\x1f
+{　－－おれの抱えた数字は、そんな簡単に割り切れる数字ではな
 　い。@
 
 　拓司は思った。@
@@ -752,45 +216,9 @@ t\x1f
 　ではないかと……それは弱さの証明に他ならないのではないか
 　と、恥ずかしく思った。\
 
- 
-\x1e
-\r
-\x1f
-\xbc 
-\x0c
-\x02
-"
-\x1f
-\xae
-\x1e
-\x02
-\x1f
-\xdc
-\x1e
-\x02
-5
-\x03
-\x03
-SCE010_015
-\x1f
-\xe2"
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-x\x1f
-\x0c
-"
-\x03
-k
-　なんちゃって自殺ごっこをする女子学生。@
+ DO SOMETHING \x1f\xbc  AND "\x1f\xae AND2 \x1f\xdc AND2 5
+SCE010_015\x1f\xe2" AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1ex\x1f
+k　なんちゃって自殺ごっこをする女子学生。@
 　自殺を口にする若者。@
 　死体写真を集める変わった『私』。@
 　そんなものと同類項にくくられるのは、とても我慢できなかっ
@@ -800,45 +228,9 @@ k
 　自尊心－－若者特有の潔癖さと、そして自分は違うのだという傲
 　慢が、それを許さなかった。\
 
- 
-\x1e
-\r
-\x1f
-&#
-\x0c
-\x02
-"
-\x1f
-\xae
-\x1e
-\x02
-\x1f
-\xdc
-\x1e
-\x02
-5
-\x03
-\x03
-SCE010_016
-\x1f
-\x0c%
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-|\x1f
-\x0c
-"
-\x03
-\x9d
-　口に出すことで、深刻さを割り引くことができる痛みは多い。@
+ DO SOMETHING \x1f&# AND "\x1f\xae AND2 \x1f\xdc AND2 5
+SCE010_016\x1f\x0c% AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e|\x1f
+\x9d　口に出すことで、深刻さを割り引くことができる痛みは多い。@
 　その効力を知っているからこそ、人は冗談めかして、あるいは
 　真剣に、悩みを人に告げる。@
 　しかし拓司はそうした救済に背を向け、死に取り憑かれた自分
@@ -852,34 +244,5 @@ SCE010_016
 　とすらある。@
 　逃げ場はなかった。\
 
- 
-\x1e
-\r
-\x1f
-P%
-\x0c
-\x02
-"
-\x1f
-\xae
-\x1e
-\x02
-\x1f
-\xdc
-\x1e
-\x02
-5
-\x1f
-\xae
-\x1e
-\x02
-\x03
-\x03
-TextClose
-v\x81\x1f
-\n(
-\x1e
-\x02
-5
-6
-\xf1
+ DO SOMETHING \x1fP% AND "\x1f\xae AND2 \x1f\xdc AND2 5\x1f\xae AND2 
+TextClose \n( AND2 56\xf1

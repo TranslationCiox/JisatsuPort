@@ -1,33 +1,7 @@
-\x01
-start
-\xef
-i\x01C
-|\x0b
-\x01
-`B#\x01
-\n\t
-\x03
-\x03
-SCE021_001
-\x1f
-\x06
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-p0
-\x0c
-"
-\x03
+START
+|\x0b\x01`B#\x01\n\t
+SCE021_001\x1f\x06 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1ep0
 \x10
-
 
 
 
@@ -39,97 +13,15 @@ p0
 
 　　　　　　　　　『学校／四限』\
 
- 
-\x1e
-\r
-\x1f
-J
-\x0c
-\x02
-"
-\x03
-\x07
-.\\Data\\Script\\TextFunc.Fob
-\x81\x1f
-\xaa
-\x1e
-\x02
-\x03
-\x02
-TextOn
-\x81\x1f
-\xd8
-\x1e
-\x02
-5
- 
-\x1e
-\r
-\x1e
-\x05
-\x0c
-\x02
-"
-\x03
-\x06
-.\\Data\\Script\\Bg.Fob
-sv\x81\x1f
-\x0e\x01
-\x1e
-\x02
-\x03
-\x04
-BgAutoFadeIn
-sv\x81\x1f
-8\x01
-\x1e
-\x02
-5
- 
-\x1e
-\r
-\x1e
-\x08\x01
-\x0c
-\x02
-"
-\x03
-\x06
-.\\Data\\Script\\Bgm.Fob
-v\x81\x1f
-v\x01
-\x1e
-\x02
-\x03
-\x02
-PlayCD
-\x81\x1f
-\xa0\x01
-\x1e
-\x02
-5
-\x03
-\x03
-SCE021_002
-\x1f
-\xbc\x01
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-t0
-\x0c
-"
-\x03
-q
-　拓司にとって、朝が一番鮮やかな時間だ。@
+ DO SOMETHING \x1fJ
+.\\Data\\Script\\TextFunc.Fob \xaa
+TextOn \xd8 AND2 5 DO SOMETHING \x1e\x05
+.\\Data\\Script\\Bg.Fob \x0e\x01
+BgAutoFadeIn 8\x01 AND2 5 DO SOMETHING \x1e\x08\x01
+.\\Data\\Script\\Bgm.Fob v\x01
+PlayCD \xa0\x01 AND2 5
+SCE021_002\x1f\xbc\x01 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1et0
+q　拓司にとって、朝が一番鮮やかな時間だ。@
 　時間が経つにつれて、世界の色があせてゆく。@
 　虚ろだ。@
 　教師の声も、クラスメイトの声も、遠い世界のもののように聞こ
@@ -144,62 +36,9 @@ q
 　逃げられない。@
 　悲鳴をあげることしかできない。\
 
- 
-\x1e
-\r
-\x1f
-\x02
-\x0c
-\x02
-"
-\x1f
-\xaa
-\x1e
-\x02
-\x1f
-\xd8
-\x1e
-\x02
-5
- 
-\x1e
-\r
-\x1e
-\xc8
-\x0c
-\x02
-"
-\x1f
-\x0e\x01
-\x1e
-\x02
-\x1f
-8\x01
-\x1e
-\x02
-5
-\x03
-\x03
-SCE021_003
-\x1f
-2\x04
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-x0
-\x0c
-"
-\x03
+ DO SOMETHING \x1f\x02 AND "\x1f\xaa AND2 \x1f\xd8 AND2 5 DO SOMETHING \x1e\xc8 AND "\x1f\x0e\x01 AND2 \x1f8\x01 AND2 5
+SCE021_003\x1f2\x04 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1ex0
 ~
-
 　－－死んじまおうかなあ。@
 
 　拓司はすでに口癖となったその言葉を、呪文のように頭のなかで
@@ -216,45 +55,9 @@ x0
 　感じられなくなってしまうのではないか？@
 　のどの奥から、吐瀉物のような恐怖が込み上がってくる。@
 
- 
-\x1e
-\r
-\x1f
-v\x04
-\x0c
-\x02
-"
-\x1f
-\xaa
-\x1e
-\x02
-\x1f
-\xd8
-\x1e
-\x02
-5
-\x03
-\x03
-SCE021_004
-\x1f
-\xa8\x06
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-|0
-\x0c
-"
-\x03
+ DO SOMETHING \x1fv\x04 AND "\x1f\xaa AND2 \x1f\xd8 AND2 5
+SCE021_004\x1f\xa8\x06 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e|0
 Q
-
 　死んじまおうかなあ。@
 　死んじまおうかなあ。@
 　死んじまおうかなあ。@
@@ -265,56 +68,12 @@ Q
 　拓司は自分の大切な人を……妄想の檻の中に……ゆっくりと囲っ
 　ていった。\
 
- 
-\x1e
-\r
-\x1f
-\xec\x06
-\x0c
-\x02
-"
-\x1f
-\xaa
-\x1e
-\x02
-\x1f
-\xd8
-\x1e
-\x02
-5
-\x03
-\x0f
-\o早桃を妄想の中で犯す
+ DO SOMETHING \x1f\xec\x06 AND "\x1f\xaa AND2 \x1f\xd8 AND2 5\x03\x0f
+CHOICE
+早桃を妄想の中で犯す
 紅葉を想像の中で犯す
-\l0,2,\E
- 
-\x1e
-\r
-\x1f
-j\x08
-\x0c
-\x02
-"
-\x1f
-\xaa
-\x1e
-\x02
-\x1f
-\xd8
-\x1e
-\x02
-5
-\x1f
-\xaa
-\x1e
-\x02
-\x03
-\x03
-TextClose
-v\x81\x1f
-\xec\x08
-\x1e
-\x02
-5
-6
-\xf1
+\l0,2,
+ENDCHOICE
+
+ DO SOMETHING \x1fj\x08 AND "\x1f\xaa AND2 \x1f\xd8 AND2 5\x1f\xaa AND2 
+TextClose \xec\x08 AND2 56\xf1

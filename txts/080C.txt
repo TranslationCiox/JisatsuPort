@@ -1,33 +1,7 @@
-\x01
-start
-\xef
-i\x01C
-6\x08
-\x01
-`B#\x01
-\x9a\x06
-\x03
-\x03
-SCE080_001
-\x1f
-\x06
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-\xa0\x8c
-\x0c
-"
-\x03
-\x96
-　廊下をはいずり、階段を転げ落ち、拓司はようやく自分の教
+START
+6\x08\x01`B#\x01\x9a\x06
+SCE080_001\x1f\x06 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\xa0\x8c
+\x96　廊下をはいずり、階段を転げ落ち、拓司はようやく自分の教
 室にたどり着いた。@ぶつけたりすりむいたりした部分が鈍く痛む。
 @しかし、そんなことはもう問題ではない。@何もかも終わるからだ。
 @
@@ -44,74 +18,13 @@ SCE080_001
 なんだこりゃ。@
 邪魔邪魔。\
 
- 
-\x1e
-\r
-\x1f
-J
-\x0c
-\x02
-"
-\x03
-\x07
-.\\Data\\Script\\TextFunc.Fob
-\x81\x1f
-\xc2\x02
-\x1e
-\x02
-\x03
-\x02
-TextOn
-\x81\x1f
-\xf0\x02
-\x1e
-\x02
-5
- 
-\x1e
-\r
-\x1e
-\xc8
-\x0c
-\x02
-"
-\x03
-\x06
-.\\Data\\Script\\Bg.Fob
-sv\x81\x1f
-&\x03
-\x1e
-\x02
-\x03
-\x04
-BgAutoFadeIn
-sv\x81\x1f
-P\x03
-\x1e
-\x02
-5
-\x03
-\x03
-SCE080_002
-\x1f
-t\x03
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-\xa4\x8c
-\x0c
-"
-\x03
-R
-机までたどり着いた拓司は、必死の力を振り絞って身を起こし、
+ DO SOMETHING \x1fJ
+.\\Data\\Script\\TextFunc.Fob \xc2\x02
+TextOn \xf0\x02 AND2 5 DO SOMETHING \x1e\xc8
+.\\Data\\Script\\Bg.Fob &\x03
+BgAutoFadeIn P\x03 AND2 5
+SCE080_002\x1ft\x03 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\xa4\x8c
+R机までたどり着いた拓司は、必死の力を振り絞って身を起こし、
 どっかりと椅子に腰掛けた。@
 ふう、とため息をついて、机の中
 を両手でまさぐる。@
@@ -126,79 +39,14 @@ R
 　－－カッター。@
 　ピンポーン！\
 
- 
-\x1e
-\r
-\x1f
-\xb8\x03
-\x0c
-\x02
-"
-\x1f
-\xc2\x02
-\x1e
-\x02
-\x1f
-\xf0\x02
-\x1e
-\x02
-5
-\x03
-\x03
-SCE080_003
-\x1f
-:\x05
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-\xa8\x8c
-\x0c
-"
-\x03
-.
-　そうしてカッターナイフを取り出すと、拓司はキリキリと刃を
+ DO SOMETHING \x1f\xb8\x03 AND "\x1f\xc2\x02 AND2 \x1f\xf0\x02 AND2 5
+SCE080_003\x1f:\x05 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\xa8\x8c
+.　そうしてカッターナイフを取り出すと、拓司はキリキリと刃を
 　押し出し、それを喉元に押し当てた。@
 　終わりだ。@
 　ようやく瓶から脱出できる。@
 　さあ。@
 　終わりだ。\
 
- 
-\x1e
-\r
-\x1f
-~\x05
-\x0c
-\x02
-"
-\x1f
-\xc2\x02
-\x1e
-\x02
-\x1f
-\xf0\x02
-\x1e
-\x02
-5
-\x1f
-\xc2\x02
-\x1e
-\x02
-\x03
-\x03
-TextClose
-v\x81\x1f
-|\x06
-\x1e
-\x02
-5
-6
-\xf1
+ DO SOMETHING \x1f~\x05 AND "\x1f\xc2\x02 AND2 \x1f\xf0\x02 AND2 5\x1f\xc2\x02 AND2 
+TextClose |\x06 AND2 56\xf1

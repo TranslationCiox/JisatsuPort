@@ -1,72 +1,8 @@
-\x01
-start
-\xef
-i\x01C
-\xd3\x15
-\x01
-`B#\x01
-\x9e\x12
-\x03
-\x03
-SCE050_001
-\x1f
-\x06
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-\xc0]
-\x0c
-"
- 
-\x1e
-\r
-\x1e
-\x0c
-\x02
-"
- 
-\x1e
-\x04
-\r
-\x1e
-\x19
-\x0c
-\x02
-"
- 
-\x1e
-\x08
-\r
-\x1e
-\x0c
-\x02
-"
-\x03
-\x06
-.\\Data\\Script\\Bgm.Fob
-v\x81\x1f
-\x98
-\x1e
-\x02
-\x03
-\x03
-SePlayEx
-sv\x81\x1f
-\xc2
-\x1e
-\x02
-5
-\x03
-\x82
-教室のドアをわずかにスライドさせる。@
+START
+\xd3\x15\x01`B#\x01\x9e\x12
+SCE050_001\x1f\x06 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\xc0]\x0c" DO SOMETHING \x1e AND " \x1e\x04\r\x1e\x19 AND " \x1e\x08\r\x1e
+.\\Data\\Script\\Bgm.Fob \x98 AND2 
+SePlayEx \xc2 AND2 5\x03\x82教室のドアをわずかにスライドさせる。@
 促されて、拓司はおそるおそる隙間から教室をのぞき込むが……
 中では授業が行われているだけだ。@
 中年の教員が教壇に立っている。@
@@ -79,51 +15,11 @@ sv\x81\x1f
 　　ーを持っていない者は、使い終わった者に借りるように。@
 　　これはテストには出ないが、重要なことだぞ」\
 
- 
-\x1e
-\r
-\x1f
-\xe2
-\x0c
-\x02
-"
-\x03
-\x07
-.\\Data\\Script\\TextFunc.Fob
-\x81\x1f
-\n\x03
-\x1e
-\x02
-\x03
-\x02
-TextOn
-\x81\x1f
-8\x03
-\x1e
-\x02
-5
-\x03
-\x03
-SCE050_002
-\x1f
-T\x03
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-\xc4]
-\x0c
-"
-\x03
-o
-　恰幅のいい教員はそこまでいうと、手に持っていたカッターを
+ DO SOMETHING \x1f\xe2
+.\\Data\\Script\\TextFunc.Fob \n\x03
+TextOn 8\x03 AND2 5
+SCE050_002\x1fT\x03 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\xc4]
+o　恰幅のいい教員はそこまでいうと、手に持っていたカッターを
 自分の喉に押し当て、スッと横に引いた。@噴水のように血が吹き
 上がる。/*▲BGM　Track11　再生*/\a2,-1,11,1,@
 
@@ -138,45 +34,9 @@ o
 掻き切っていった。@
 ためらいのかけらもない、完璧なアクションだった。\
 
- 
-\x1e
-\r
-\x1f
-\x98\x03
-\x0c
-\x02
-"
-\x1f
-\n\x03
-\x1e
-\x02
-\x1f
-8\x03
-\x1e
-\x02
-5
-\x03
-\x03
-SCE050_003
-\x1f
-\x8e\x05
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-\xc8]
-\x0c
-"
-\x03
+ DO SOMETHING \x1f\x98\x03 AND "\x1f\n\x03 AND2 \x1f8\x03 AND2 5
+SCE050_003\x1f\x8e\x05 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\xc8]
 \xd9
-
 　いつかＴＶで見た、共産主義国家のマスゲーム。@
 　何千もの腕が同時に上げられ、振られ、下がる。@
 　一糸乱れぬ完璧な同調動作。@あらゆる主義主張を越えて、単純
@@ -195,45 +55,9 @@ SCE050_003
 じとか、異常な感じとか……そんな、もっともらしい感想が入り
 込む余地はどこにもなかった。@ただ奇妙だった。\
 
- 
-\x1e
-\r
-\x1f
-\xd2\x05
-\x0c
-\x02
-"
-\x1f
-\n\x03
-\x1e
-\x02
-\x1f
-8\x03
-\x1e
-\x02
-5
-\x03
-\x03
-SCE050_004
-\x1f
-p\t
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-\xcc]
-\x0c
-"
-\x03
-\x8f
-　拓司は、ほうけたようにたねを見た。@
+ DO SOMETHING \x1f\xd2\x05 AND "\x1f\n\x03 AND2 \x1f8\x03 AND2 5
+SCE050_004\x1fp\t AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\xcc]
+\x8f　拓司は、ほうけたようにたねを見た。@
 　拓司の視線に気づいたなたねは、しかし平然としていった。@
 
 なたね
@@ -249,45 +73,9 @@ p\t
 拓司
 　「……もういいよ、雲居さん」\
 
- 
-\x1e
-\r
-\x1f
-\xb4\t
-\x0c
-\x02
-"
-\x1f
-\n\x03
-\x1e
-\x02
-\x1f
-8\x03
-\x1e
-\x02
-5
-\x03
-\x03
-SCE050_005
-\x1f
-*\x0c
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-\xd0]
-\x0c
-"
-\x03
-c
-なたね
+ DO SOMETHING \x1f\xb4\t AND "\x1f\n\x03 AND2 \x1f8\x03 AND2 5
+SCE050_005\x1f*\x0c AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\xd0]
+cなたね
 　「わかるかなあ？　いまの場合、先生が牽引役になっているわ
 　　けよね。@ハーメルンの笛吹き的な装置として。@結局、みんな
 　　誰かに命令された方が楽なのよね。@限定されない完全な自由
@@ -301,45 +89,9 @@ c
 なたね
 　「広まるわよ。とまらないで広まる。@みんな死ぬ」\
 
- 
-\x1e
-\r
-\x1f
-n\x0c
-\x0c
-\x02
-"
-\x1f
-\n\x03
-\x1e
-\x02
-\x1f
-8\x03
-\x1e
-\x02
-5
-\x03
-\x03
-SCE050_006
-\x1f
-4\x0e
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-\xd4]
-\x0c
-"
-\x03
-d
-　拓司は頭を振った。@なたねの言葉を頭から振り払う。@
+ DO SOMETHING \x1fn\x0c AND "\x1f\n\x03 AND2 \x1f8\x03 AND2 5
+SCE050_006\x1f4\x0e AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\xd4]
+d　拓司は頭を振った。@なたねの言葉を頭から振り払う。@
 　いいか。@
 　－－そうだ、俺は混乱している。@
 　考えろ。@
@@ -352,45 +104,9 @@ d
 　考えろ！@
 　何をすべきか！\
 
- 
-\x1e
-\r
-\x1f
-x\x0e
-\x0c
-\x02
-"
-\x1f
-\n\x03
-\x1e
-\x02
-\x1f
-8\x03
-\x1e
-\x02
-5
-\x03
-\x03
-SCE050_007
-\x1f
-B\x10
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-\xd8]
-\x0c
-"
-\x03
+ DO SOMETHING \x1fx\x0e AND "\x1f\n\x03 AND2 \x1f8\x03 AND2 5
+SCE050_007\x1fB\x10 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\xd8]
 c
-
 　早桃。@
 　紅葉。@
 　カンナ。@
@@ -403,46 +119,6 @@ c
 　この３階廊下をまっすぐ行った突き当たりの教室に、早桃はい
 　る。\
 
- 
-\x1e
-\r
-\x1f
-\x86\x10
-\x0c
-\x02
-"
-\x1f
-\n\x03
-\x1e
-\x02
-\x1f
-8\x03
-\x1e
-\x02
-5
-\x1f
-\x98
-\x1e
-\x02
-\x03
-\x02
-StopCD
-\x81\x1f
-X\x12
-\x1e
-\x02
-5
-\x1f
-\n\x03
-\x1e
-\x02
-\x03
-\x03
-TextClose
-v\x81\x1f
-\x80\x12
-\x1e
-\x02
-5
-6
-\xf1
+ DO SOMETHING \x1f\x86\x10 AND "\x1f\n\x03 AND2 \x1f8\x03 AND2 5\x1f\x98
+StopCD X\x12 AND2 5\x1f\n\x03 AND2 
+TextClose \x80\x12 AND2 56\xf1

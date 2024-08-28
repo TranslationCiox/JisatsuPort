@@ -1,33 +1,7 @@
-\x01
-start
-\xef
-i\x01C
-\x9f\x0c
-\x01
-`B#\x01
-H\n
-\x03
-\x03
-SCE105_001
-\x1f
-\x06
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-\xb0\xb3
-\x0c
-"
-\x03
-\xb7
-/*▲BGM　停止*/\a4,-1,0,0,/*■黒　表示（ノンエフェクト）*/\a7,-1,-1,0,\a0,200,1,0,\a6,0,0,0,拓司
+START
+\x9f\x0c\x01`B#\x01H\n
+SCE105_001\x1f\x06 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\xb0\xb3
+\xb7/*▲BGM　停止*/\a4,-1,0,0,/*■黒　表示（ノンエフェクト）*/\a7,-1,-1,0,\a0,200,1,0,\a6,0,0,0,拓司
 　「もういい、御堂！」@
 
 拓司は御堂を制した。@
@@ -47,51 +21,11 @@ SCE105_001
 拓司
 　「覚悟？@……それは誰かを殺してでも生き残るってことか？」\
 
- 
-\x1e
-\r
-\x1f
-J
-\x0c
-\x02
-"
-\x03
-\x07
-.\\Data\\Script\\TextFunc.Fob
-\x81\x1f
-F\x03
-\x1e
-\x02
-\x03
-\x02
-TextOn
-\x81\x1f
-t\x03
-\x1e
-\x02
-5
-\x03
-\x03
-SCE105_002
-\x1f
-\x90\x03
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-\xb4\xb3
-\x0c
-"
-\x03
-\x88
-御堂はしばらく無言だった。@それは、拓司の質問をかみ砕いて味
+ DO SOMETHING \x1fJ
+.\\Data\\Script\\TextFunc.Fob F\x03
+TextOn t\x03 AND2 5
+SCE105_002\x1f\x90\x03 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\xb4\xb3
+\x88御堂はしばらく無言だった。@それは、拓司の質問をかみ砕いて味
 わっているかのように見えた。@やがて、御堂はなにかをいいかけ
 たが、思い立ったように言葉を飲み込んだ。@
 そして、ポツリと、粘り着くような口調でいった。@
@@ -106,45 +40,9 @@ SCE105_002
 頬の内側は、まるで砂漠みたいにカラカラだ。@
 拓司は舌先で唇を湿らせ、震える声でいった。\
 
- 
-\x1e
-\r
-\x1f
-\xd4\x03
-\x0c
-\x02
-"
-\x1f
-F\x03
-\x1e
-\x02
-\x1f
-t\x03
-\x1e
-\x02
-5
-\x03
-\x03
-SCE105_003
-\x1f
-.\x06
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-\xb8\xb3
-\x0c
-"
-\x03
-q
-拓司
+ DO SOMETHING \x1f\xd4\x03 AND "\x1fF\x03 AND2 \x1ft\x03 AND2 5
+SCE105_003\x1f.\x06 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\xb8\xb3
+q拓司
 　「……雲居さん。@俺たちは……覚悟を……決めている。@
 　　今後、そういう態度をなおしてもらえないようなら、今度こ
 　　そは俺も御堂を止められない……止める気もない」@
@@ -159,45 +57,9 @@ q
 
 なたねはジロリと、上目遣いに拓司を睨んだ。\
 
- 
-\x1e
-\r
-\x1f
-r\x06
-\x0c
-\x02
-"
-\x1f
-F\x03
-\x1e
-\x02
-\x1f
-t\x03
-\x1e
-\x02
-5
-\x03
-\x03
-SCE105_004
-\x1f
-p\x08
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-\xbc\xb3
-\x0c
-"
-\x03
-L
-なたね
+ DO SOMETHING \x1fr\x06 AND "\x1fF\x03 AND2 \x1ft\x03 AND2 5
+SCE105_004\x1fp\x08 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\xbc\xb3
+Lなたね
 　「……」@
 拓司
 　「……」@
@@ -211,34 +73,5 @@ L
 /*▲SE01　停止*/\a4,2,0,0,
 ラジオのノイズだけが小さく一晩中続いていた。\
 
- 
-\x1e
-\r
-\x1f
-\xb4\x08
-\x0c
-\x02
-"
-\x1f
-F\x03
-\x1e
-\x02
-\x1f
-t\x03
-\x1e
-\x02
-5
-\x1f
-F\x03
-\x1e
-\x02
-\x03
-\x03
-TextClose
-v\x81\x1f
-*\n
-\x1e
-\x02
-5
-6
-\xf1
+ DO SOMETHING \x1f\xb4\x08 AND "\x1fF\x03 AND2 \x1ft\x03 AND2 5\x1fF\x03 AND2 
+TextClose *\n AND2 56\xf1

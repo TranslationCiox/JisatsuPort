@@ -1,48 +1,8 @@
-\x01
-start
-\xef
-i\x01C
-\xd6\x06
-\x01
-`B#\x01
-\x82\x05
-\x03
-\x06
-.\\Data\\Script\\Bgm.Fob
-v\x81\x1f
-\x06
-\x1e
-\x02
-\x03
-\x02
-StopCD
-\x81\x1f
-0
-\x1e
-\x02
-5
-\x03
-\x03
-SCE094_001
-\x1f
-L
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-\x80\xa2
-\x0c
-"
-\x03
-\x8e
-御堂の眼に、獰猛なひかりが宿った。@
+START
+\xd6\x06\x01`B#\x01\x82\x05\x03\x06.\\Data\\Script\\Bgm.Fob \x06
+StopCD 0 AND2 5
+SCE094_001\x1fL AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\x80\xa2
+\x8e御堂の眼に、獰猛なひかりが宿った。@
 
 御堂
 　「虎菱、まさかてめえまでいかれちまったんじゃねえだろうな
@@ -63,108 +23,18 @@ L
 
 拓司はぴしゃりとさえぎった。\
 
- 
-\x1e
-\r
-\x1f
-\x90
-\x0c
-\x02
-"
-\x03
-\x07
-.\\Data\\Script\\TextFunc.Fob
-\x81\x1f
-\xe8\x02
-\x1e
-\x02
-\x03
-\x02
-TextOn
-\x81\x1f
-\x16\x03
-\x1e
-\x02
-5
-\x03
-\x03
-SCE094_002
-\x1f
-2\x03
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-\x84\xa2
-\x0c
-"
-\x03
-P
-拓司
+ DO SOMETHING \x1f\x90
+.\\Data\\Script\\TextFunc.Fob \xe8\x02
+TextOn \x16\x03 AND2 5
+SCE094_002\x1f2\x03 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\x84\xa2
+P拓司
 　「『ここを出ていきたい人間は、いつでもそれを実行すること
 　　ができる』。@これを最低限のルールにしよう。@自殺波動とか、
 　　最終波動とか、ラジオからの指令電波とか、わからないこと
 　　が多すぎる。@何が本当か分からない現状、何が正しい判断な
 　　のか、答は自分の中にしかない。@自分で判断するんだ」\
 
- 
-\x1e
-\r
-\x1f
-v\x03
-\x0c
-\x02
-"
-\x1f
-\xe8\x02
-\x1e
-\x02
-\x1f
-\x16\x03
-\x1e
-\x02
-5
- 
-\x1e
-\r
-\x1e
-\xc8
-\x0c
-\x02
-"
-\x03
-\x06
-.\\Data\\Script\\Bg.Fob
-sv\x81\x1f
-\n\x05
-\x1e
-\x02
-\x03
-\x04
-BgAutoFadeIn
-sv\x81\x1f
-4\x05
-\x1e
-\x02
-5
-\x1f
-\xe8\x02
-\x1e
-\x02
-\x03
-\x03
-TextClose
-v\x81\x1f
-d\x05
-\x1e
-\x02
-5
-6
-\xf1
+ DO SOMETHING \x1fv\x03 AND "\x1f\xe8\x02 AND2 \x1f\x16\x03 AND2 5 DO SOMETHING \x1e\xc8
+.\\Data\\Script\\Bg.Fob \n\x05
+BgAutoFadeIn 4\x05 AND2 5\x1f\xe8\x02 AND2 
+TextClose d\x05 AND2 56\xf1

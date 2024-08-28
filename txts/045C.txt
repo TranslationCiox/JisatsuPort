@@ -1,33 +1,7 @@
-\x01
-start
-\xef
-i\x01C
-\xfd5
-\x01
-`B#\x01
-p-
-\x03
-\x03
-SCE045_001
-\x1f
-\x06
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-\xf0U
-\x0c
-"
-\x03
-b
-拓司
+START
+\xfd5\x01`B#\x01p-
+SCE045_001\x1f\x06 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\xf0U
+b拓司
 　「……！」@
 /*■CG17　表示（クロスフェード）*/\a7,-2,-2,0,\a0,16,2,0,\a6,-2,0,0,/*▲BGM　Track08　再生　*/\a2,-1,8,1,
 　非常扉を開けた拓司は、ハッと息を呑んだ。@
@@ -36,51 +10,11 @@ b
 　ぜか小さくひび割れていて、その奥には穏やかなひかりをたた
 　えた瞳があって……そっと微笑んでいた。\
 
- 
-\x1e
-\r
-\x1f
-J
-\x0c
-\x02
-"
-\x03
-\x07
-.\\Data\\Script\\TextFunc.Fob
-\x81\x1f
-\xf2\x01
-\x1e
-\x02
-\x03
-\x02
-TextOn
-\x81\x1f
- \x02
-\x1e
-\x02
-5
-\x03
-\x03
-SCE045_002
-\x1f
-<\x02
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-\xf4U
-\x0c
-"
-\x03
-\xb7
-女の子
+ DO SOMETHING \x1fJ
+.\\Data\\Script\\TextFunc.Fob \xf2\x01
+TextOn  \x02 AND2 5
+SCE045_002\x1f<\x02 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\xf4U
+\xb7女の子
 　「こんにちわ」@
 
 　そういって女の子は軽く会釈をしてみせた。@動きはどことなく
@@ -97,45 +31,9 @@ SCE045_002
 　を……さらに非常口を通り越した向こう側を……どこでもない
 　はるか向こうの一点を、じっと見つめているのだ。\
 
- 
-\x1e
-\r
-\x1f
-\x80\x02
-\x0c
-\x02
-"
-\x1f
-\xf2\x01
-\x1e
-\x02
-\x1f
- \x02
-\x1e
-\x02
-5
-\x03
-\x03
-SCE045_003
-\x1f
-\x96\x05
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-\xf8U
-\x0c
-"
-\x03
-]
-女の子
+ DO SOMETHING \x1f\x80\x02 AND "\x1f\xf2\x01 AND2 \x1f \x02 AND2 5
+SCE045_003\x1f\x96\x05 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\xf8U
+]女の子
 　「お願いします」@
 
 　女の子がいった。@
@@ -152,45 +50,9 @@ SCE045_003
 大事そうに取り出した。@それはＡ４大の紙切れで、そこにはなにか
 びっしりと文字が書き込まれている。\
 
- 
-\x1e
-\r
-\x1f
-\xda\x05
-\x0c
-\x02
-"
-\x1f
-\xf2\x01
-\x1e
-\x02
-\x1f
- \x02
-\x1e
-\x02
-5
-\x03
-\x03
-SCE045_004
-\x1f
-\x88\x07
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-\xfcU
-\x0c
-"
-\x03
-B
-女の子
+ DO SOMETHING \x1f\xda\x05 AND "\x1f\xf2\x01 AND2 \x1f \x02 AND2 5
+SCE045_004\x1f\x88\x07 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\xfcU
+B女の子
 　「大切なことがたくさん書いてあります。読んでください」@
 
 　女の子は穏やかな口調でそういうと、その紙を拓司の手のなか
@@ -202,45 +64,9 @@ B
 　そこには奇妙な図形や計算式、そして明らかに常軌を逸した文
 　章が踊っていた。\
 
- 
-\x1e
-\r
-\x1f
-\xcc\x07
-\x0c
-\x02
-"
-\x1f
-\xf2\x01
-\x1e
-\x02
-\x1f
- \x02
-\x1e
-\x02
-5
-\x03
-\x03
-SCE045_005
-\x1f
-\x0e\t
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-V
-\x0c
-"
-\x03
-\x17\x01
-　告発ならびに警告としての私がみなさんにお知らせします。@
+ DO SOMETHING \x1f\xcc\x07 AND "\x1f\xf2\x01 AND2 \x1f \x02 AND2 5
+SCE045_005\x1f\x0e\t AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1eV
+\x17\x01　告発ならびに警告としての私がみなさんにお知らせします。@
 　犯罪的凶悪異星人による、シンリャク行為です（リストラジオ
 　ｘ線。赤外線。紫外線。マイクロ波を使用のことです）。@
 　電磁波の大半が地上に到達する前に消滅し、カオス的な系が、
@@ -261,45 +87,9 @@ V
 　電話番号××××－××××。
 　住所×××××××××××……\
 
- 
-\x1e
-\r
-\x1f
-R\t
-\x0c
-\x02
-"
-\x1f
-\xf2\x01
-\x1e
-\x02
-\x1f
- \x02
-\x1e
-\x02
-5
-\x03
-\x03
-SCE045_006
-\x1f
-\xe8\r
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-\x04V
-\x0c
-"
-\x03
+ DO SOMETHING \x1fR\t AND "\x1f\xf2\x01 AND2 \x1f \x02 AND2 5
+SCE045_006\x1f\xe8\r AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\x04V
 O
-
 　雲居なたね。@
 　ああ、この子が……と拓司は思った。@
 
@@ -310,45 +100,9 @@ O
 　そして雲居なたねは、今年の春、別の意味でさらに有名にな
 　った。\
 
- 
-\x1e
-\r
-\x1f
-,\x0e
-\x0c
-\x02
-"
-\x1f
-\xf2\x01
-\x1e
-\x02
-\x1f
- \x02
-\x1e
-\x02
-5
-\x03
-\x03
-SCE045_007
-\x1f
-\xa2\x0f
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-\x08V
-\x0c
-"
-\x03
-\xac
-　－－雲居なたねは何者かにレイプされたらしい。@
+ DO SOMETHING \x1f,\x0e AND "\x1f\xf2\x01 AND2 \x1f \x02 AND2 5
+SCE045_007\x1f\xa2\x0f AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\x08V
+\xac　－－雲居なたねは何者かにレイプされたらしい。@
 　噂の発生源は定かではないし、それが真実なのかどうかも拓司
 にはわからない。@しかし雲居なたねが２週間以上学園を休んだ
 のは事実で、校内の学生はみなそれと噂を結びつけて面白がった@
@@ -361,45 +115,9 @@ SCE045_007
 分を守ってるわけだよ……なんかそういうの小説で読んだ気がす
 る……嘲笑……嘲笑……嘲笑。\
 
- 
-\x1e
-\r
-\x1f
-\xe6\x0f
-\x0c
-\x02
-"
-\x1f
-\xf2\x01
-\x1e
-\x02
-\x1f
- \x02
-\x1e
-\x02
-5
-\x03
-\x03
-SCE045_008
-\x1f
-\xd0\x12
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-\x0cV
-\x0c
-"
-\x03
-\x96
-　しかしそういった無責任な噂話は、１ヶ月後、雲居なたねが
+ DO SOMETHING \x1f\xe6\x0f AND "\x1f\xf2\x01 AND2 \x1f \x02 AND2 5
+SCE045_008\x1f\xd0\x12 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\x0cV
+\x96　しかしそういった無責任な噂話は、１ヶ月後、雲居なたねが
 登校を再開したのを期に、ピタリと口にされなくなった。@
 　噂話が、本当だったからだ。@
 　雲居なたねは、自分が宇宙人にレイプされたと信じていた。@
@@ -411,45 +129,9 @@ SCE045_008
 談ではすまされないということに気づき、雲居なたねを避ける
 ようになっていった。\
 
- 
-\x1e
-\r
-\x1f
-\x14\x13
-\x0c
-\x02
-"
-\x1f
-\xf2\x01
-\x1e
-\x02
-\x1f
- \x02
-\x1e
-\x02
-5
-\x03
-\x03
-SCE045_009
-\x1f
-\xa6\x15
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-\x10V
-\x0c
-"
-\x03
-\x8b
-　こうして実際に向かい合ったのは初めてだったが、確かにそれ
+ DO SOMETHING \x1f\x14\x13 AND "\x1f\xf2\x01 AND2 \x1f \x02 AND2 5
+SCE045_009\x1f\xa6\x15 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\x10V
+\x8b　こうして実際に向かい合ったのは初めてだったが、確かにそれ
 は、遠目で見たことのある雲居なたね、そのひとだった。@
 　電波系。@
 　サブカル雑誌やインターネットで、食傷気味なくらい馴染んで
@@ -463,45 +145,9 @@ SCE045_009
 だろう。@あるいは小さくひび割れた眼鏡が生み出した印象。@
 　壊れやすい、ガラス細工のようなイメージが。\
 
- 
-\x1e
-\r
-\x1f
-\xea\x15
-\x0c
-\x02
-"
-\x1f
-\xf2\x01
-\x1e
-\x02
-\x1f
- \x02
-\x1e
-\x02
-5
-\x03
-\x03
-SCE045_010
-\x1f
-P\x18
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-\x14V
-\x0c
-"
-\x03
-W
-なたね
+ DO SOMETHING \x1f\xea\x15 AND "\x1f\xf2\x01 AND2 \x1f \x02 AND2 5
+SCE045_010\x1fP\x18 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\x14V
+Wなたね
 　「わかりますか？」@
 拓司
 　「え？」@
@@ -519,45 +165,9 @@ W
 
 　なたねは照れくさそうにほほえんだ。\
 
- 
-\x1e
-\r
-\x1f
-\x94\x18
-\x0c
-\x02
-"
-\x1f
-\xf2\x01
-\x1e
-\x02
-\x1f
- \x02
-\x1e
-\x02
-5
-\x03
-\x03
-SCE045_011
-\x1f
-*\x1a
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-\x18V
-\x0c
-"
-\x03
-O
-なたね
+ DO SOMETHING \x1f\x94\x18 AND "\x1f\xf2\x01 AND2 \x1f \x02 AND2 5
+SCE045_011\x1f*\x1a AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\x18V
+Oなたね
 　「よかったら、それをコピーして、お友達に配ってほしいんで
 　　す。@私ひとりの力じゃ、とても世界中にメッセージを届ける
 　　ことはできないから。@それに最近、みんな、私からだと、チ
@@ -566,45 +176,9 @@ O
 　なたねはそういって、もう一度笑った。@
 　寂しそうなほほえみだった。\
 
- 
-\x1e
-\r
-\x1f
-n\x1a
-\x0c
-\x02
-"
-\x1f
-\xf2\x01
-\x1e
-\x02
-\x1f
- \x02
-\x1e
-\x02
-5
-\x03
-\x03
-SCE045_012
-\x1f
-\xe4\x1b
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-\x1cV
-\x0c
-"
-\x03
-d
-　宇宙人。@
+ DO SOMETHING \x1fn\x1a AND "\x1f\xf2\x01 AND2 \x1f \x02 AND2 5
+SCE045_012\x1f\xe4\x1b AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\x1cV
+d　宇宙人。@
 　電波系。@
 　世界中に対するメッセージ。@
 　拓司は笑うことができなかった。@
@@ -615,45 +189,9 @@ d
 　彼女はその主人公として、必死に生きている。@
 　真剣に自分と向き合っているのだ。\
 
- 
-\x1e
-\r
-\x1f
-(\x1c
-\x0c
-\x02
-"
-\x1f
-\xf2\x01
-\x1e
-\x02
-\x1f
- \x02
-\x1e
-\x02
-5
-\x03
-\x03
-SCE045_013
-\x1f
-\xf2\x1d
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
- V
-\x0c
-"
-\x03
-\x8b
-御堂
+ DO SOMETHING \x1f(\x1c AND "\x1f\xf2\x01 AND2 \x1f \x02 AND2 5
+SCE045_013\x1f\xf2\x1d AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e V
+\x8b御堂
 　「おい」@
 /*▲BGM　停止　*/\a4,-1,0,0,/*■CG18　表示（クロスフェード）*/\a7,-2,-2,0,\a0,17,2,0,\a6,-2,0,0,/*▲BGM　Track09　再生　*/\a2,-1,9,1,
 　振り向くと、廊下の壁により掛かって、御堂俊一が立っていた@
@@ -673,45 +211,9 @@ SCE045_013
 
 　御堂はフン、と鼻で笑った。\
 
- 
-\x1e
-\r
-\x1f
-6\x1e
-\x0c
-\x02
-"
-\x1f
-\xf2\x01
-\x1e
-\x02
-\x1f
- \x02
-\x1e
-\x02
-5
-\x03
-\x03
-SCE045_014
-\x1f
-\x9c 
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-$V
-\x0c
-"
-\x03
-V
-御堂
+ DO SOMETHING \x1f6\x1e AND "\x1f\xf2\x01 AND2 \x1f \x02 AND2 5
+SCE045_014\x1f\x9c  AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e$V
+V御堂
 　「クールってやつか？　それともニヒルっていうのか？」@
 拓司
 　「好きなようにいえ」@
@@ -731,45 +233,9 @@ V
 拓司
 　「なに？」\
 
- 
-\x1e
-\r
-\x1f
-\xe0 
-\x0c
-\x02
-"
-\x1f
-\xf2\x01
-\x1e
-\x02
-\x1f
- \x02
-\x1e
-\x02
-5
-\x03
-\x03
-SCE045_015
-\x1f
-r"
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-(V
-\x0c
-"
-\x03
-[
-御堂
+ DO SOMETHING \x1f\xe0  AND "\x1f\xf2\x01 AND2 \x1f \x02 AND2 5
+SCE045_015\x1fr" AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e(V
+[御堂
 　「なたねちゃんだよ」@
 
 　御堂は顎をしゃくって、拓司の横に立つなたねを示した。@
@@ -785,45 +251,9 @@ r"
 拓司
 　「……何の話だ？」\
 
- 
-\x1e
-\r
-\x1f
-\xb6"
-\x0c
-\x02
-"
-\x1f
-\xf2\x01
-\x1e
-\x02
-\x1f
- \x02
-\x1e
-\x02
-5
-\x03
-\x03
-SCE045_016
-\x1f
-\\$
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-,V
-\x0c
-"
-\x03
-\x8d
-御堂
+ DO SOMETHING \x1f\xb6" AND "\x1f\xf2\x01 AND2 \x1f \x02 AND2 5
+SCE045_016\x1f\\$ AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e,V
+\x8d御堂
 　「協力だよ。@地球防衛計画に手を貸してるんだよ。@
 　　……そうだよな、なたねちゃん！」@
 
@@ -842,45 +272,9 @@ SCE045_016
 拓司
 　「……」\
 
- 
-\x1e
-\r
-\x1f
-\xa0$
-\x0c
-\x02
-"
-\x1f
-\xf2\x01
-\x1e
-\x02
-\x1f
- \x02
-\x1e
-\x02
-5
-\x03
-\x03
-SCE045_017
-\x1f
-\x0e'
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-0V
-\x0c
-"
-\x03
-\x81
-なたね
+ DO SOMETHING \x1f\xa0$ AND "\x1f\xf2\x01 AND2 \x1f \x02 AND2 5
+SCE045_017\x1f\x0e' AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e0V
+\x81なたね
 　「だから、私とあなたの出会いもまた、必然なの。@わかる、虎
 　　菱拓司くん？」@
 
@@ -899,45 +293,9 @@ SCE045_017
 　ガンプだよガンプ、と取り巻きのひとりがいった。@
 　無意味な笑いがまきおこる。\
 
- 
-\x1e
-\r
-\x1f
-R'
-\x0c
-\x02
-"
-\x1f
-\xf2\x01
-\x1e
-\x02
-\x1f
- \x02
-\x1e
-\x02
-5
-\x03
-\x03
-SCE045_019
-\x1f
-\x90)
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-8V
-\x0c
-"
-\x03
-V
-拓司
+ DO SOMETHING \x1fR' AND "\x1f\xf2\x01 AND2 \x1f \x02 AND2 5
+SCE045_019\x1f\x90) AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e8V
+V拓司
 　「……行こう、雲居さん」@
 
 拓司はいった。@
@@ -956,100 +314,20 @@ V
 拓司
 　「……なに？」\
 
- 
-\x1e
-\r
-\x1f
-\xd4)
-\x0c
-\x02
-"
-\x1f
-\xf2\x01
-\x1e
-\x02
-\x1f
- \x02
-\x1e
-\x02
-5
-\x03
-\x03
-SCE045_020
-\x1f
-f+
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-<V
-\x0c
-"
-\x03
-?
-御堂
+ DO SOMETHING \x1f\xd4) AND "\x1f\xf2\x01 AND2 \x1f \x02 AND2 5
+SCE045_020\x1ff+ AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e<V
+?御堂
 　「そうだ、お前も来るか？@　天才少女雲居なたねさんの学説
 　　によると、人間と人間の出会いにはすべからく意味があるら
 　　しいぜ？@　ってことは、ここでおれたちが逢ったことも、偶
 　　然じゃないってことだろ？@　ナ……来いよ、虎菱？」\
 
- 
-\x1e
-\r
-\x1f
-\xaa+
-\x0c
-\x02
-"
-\x1f
-\xf2\x01
-\x1e
-\x02
-\x1f
- \x02
-\x1e
-\x02
-5
-\x03
-\x0b
-\o御堂に従う
+ DO SOMETHING \x1f\xaa+ AND "\x1f\xf2\x01 AND2 \x1f \x02 AND2 5\x03\x0b
+CHOICE
+御堂に従う
 御堂を無視する
-\l0,2,\E
- 
-\x1e
-\r
-\x1f
-\xe0,
-\x0c
-\x02
-"
-\x1f
-\xf2\x01
-\x1e
-\x02
-\x1f
- \x02
-\x1e
-\x02
-5
-\x1f
-\xf2\x01
-\x1e
-\x02
-\x03
-\x03
-TextClose
-v\x81\x1f
-R-
-\x1e
-\x02
-5
-6
-\xf1
+\l0,2,
+ENDCHOICE
+
+ DO SOMETHING \x1f\xe0, AND "\x1f\xf2\x01 AND2 \x1f \x02 AND2 5\x1f\xf2\x01 AND2 
+TextClose R- AND2 56\xf1

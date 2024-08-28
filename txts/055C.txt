@@ -1,33 +1,7 @@
-\x01
-start
-\xef
-i\x01C
-<\x10
-\x01
-`B#\x01
->\r
-\x03
-\x03
-SCE055_001
-\x1f
-\x06
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-\x90e
-\x0c
-"
-\x03
-\x98
-　拓司は胸のムカツキを必死に押さえた。@
+START
+<\x10\x01`B#\x01>\r
+SCE055_001\x1f\x06 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\x90e
+\x98　拓司は胸のムカツキを必死に押さえた。@
 　自殺波動などというものが信じられないうえに、なたねが『前
 兆』を察知できるなどという話は初耳だ。@でたらめだ。@なたねの
 話は、なにもかもが常軌を逸している。@その場その場の思いつき
@@ -44,51 +18,11 @@ SCE055_001
 　のようだ。@
 　小声で、解説をはじめる。\
 
- 
-\x1e
-\r
-\x1f
-J
-\x0c
-\x02
-"
-\x03
-\x07
-.\\Data\\Script\\TextFunc.Fob
-\x81\x1f
-\xca\x02
-\x1e
-\x02
-\x03
-\x02
-TextOn
-\x81\x1f
-\xf8\x02
-\x1e
-\x02
-5
-\x03
-\x03
-SCE055_002
-\x1f
-\x14\x03
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-\x94e
-\x0c
-"
-\x03
-\xcd
-なたね
+ DO SOMETHING \x1fJ
+.\\Data\\Script\\TextFunc.Fob \xca\x02
+TextOn \xf8\x02 AND2 5
+SCE055_002\x1f\x14\x03 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\x94e
+\xcdなたね
 　「自殺っていうのは、自分がおかれている状況への絶望とかあ
 　　きらめとか、そんな悲しみの感情から生まれるでしょう？@
 　　でも悲しみは、簡単に怒りへと変化する……。@『どうしてわ
@@ -108,45 +42,9 @@ SCE055_002
 拓司
 　「……」\
 
- 
-\x1e
-\r
-\x1f
-X\x03
-\x0c
-\x02
-"
-\x1f
-\xca\x02
-\x1e
-\x02
-\x1f
-\xf8\x02
-\x1e
-\x02
-5
-\x03
-\x03
-SCE055_003
-\x1f
-\xc6\x06
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-\x98e
-\x0c
-"
-\x03
-\x80
-なたね
+ DO SOMETHING \x1fX\x03 AND "\x1f\xca\x02 AND2 \x1f\xf8\x02 AND2 5
+SCE055_003\x1f\xc6\x06 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\x98e
+\x80なたね
 　「……義妹さん、もともといじめられていたとか、そういうの
 　　あった？」@
 拓司
@@ -166,45 +64,9 @@ SCE055_003
 早桃
 　「怖い……怖い……」\
 
- 
-\x1e
-\r
-\x1f
-\n\x07
-\x0c
-\x02
-"
-\x1f
-\xca\x02
-\x1e
-\x02
-\x1f
-\xf8\x02
-\x1e
-\x02
-5
-\x03
-\x03
-SCE055_004
-\x1f
-D\t
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-\x9ce
-\x0c
-"
-\x03
+ DO SOMETHING \x1f\n\x07 AND "\x1f\xca\x02 AND2 \x1f\xf8\x02 AND2 5
+SCE055_004\x1fD\t AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\x9ce
 t
-
 その様子をひとり静かに見守っていた男子学生が、大声でいった。
 @
 学生
@@ -223,45 +85,9 @@ t
 　　きていてもしょうがないと思えるくらいのことを、虎菱早桃
 　　にしてやりたいと思う！」\
 
- 
-\x1e
-\r
-\x1f
-\x88\t
-\x0c
-\x02
-"
-\x1f
-\xca\x02
-\x1e
-\x02
-\x1f
-\xf8\x02
-\x1e
-\x02
-5
-\x03
-\x03
-SCE055_005
-\x1f
-\x92\x0b
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-\x9ce
-\x0c
-"
-\x03
+ DO SOMETHING \x1f\x88\t AND "\x1f\xca\x02 AND2 \x1f\xf8\x02 AND2 5
+SCE055_005\x1f\x92\x0b AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\x9ce
 A
-
 犯せえ！@　という声が上がった。@しかし男子学生はそれを片手で
 軽く制した。@
 
@@ -270,34 +96,5 @@ A
 　　ろ？@　それに、こんなウザキャラに、おれらのチ○ポなんか
 　　もったいねえよ。@そこでだ……！」\
 
- 
-\x1e
-\r
-\x1f
-\xd6\x0b
-\x0c
-\x02
-"
-\x1f
-\xca\x02
-\x1e
-\x02
-\x1f
-\xf8\x02
-\x1e
-\x02
-5
-\x1f
-\xca\x02
-\x1e
-\x02
-\x03
-\x03
-TextClose
-v\x81\x1f
- \r
-\x1e
-\x02
-5
-6
-\xf1
+ DO SOMETHING \x1f\xd6\x0b AND "\x1f\xca\x02 AND2 \x1f\xf8\x02 AND2 5\x1f\xca\x02 AND2 
+TextClose  \r AND2 56\xf1

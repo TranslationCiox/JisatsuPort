@@ -1,56 +1,9 @@
-\x01
-start
-\xef
-i\x01C
-\x1a\x10
-\x01
-`B#\x01
-\xaa\r
- 
-\x1e
-\r
-\x1e
-\t\x01
-\x0c
-\x02
-"
-\x03
-\x06
-.\\Data\\Script\\Bgm.Fob
-v\x81\x1f
- 
-\x1e
-\x02
-\x03
-\x02
-PlayCD
-\x81\x1f
-J
-\x1e
-\x02
-5
-\x03
-\x03
-SCE093_001
-\x1f
-f
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-\xf0\xa0
-\x0c
-"
-\x03
-N
-拓司
+START
+\x1a\x10\x01`B#\x01\xaa\r DO SOMETHING \x1e\t\x01
+.\\Data\\Script\\Bgm.Fob  
+PlayCD J AND2 5
+SCE093_001\x1ff AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\xf0\xa0
+N拓司
 　「それでも、何日持つのかはハッキリさせて欲しい」@
 
 　拓司はいった。@
@@ -63,51 +16,11 @@ N
 　「それは……」@
 
 拓司は絶句した。\
- 
-\x1e
-\r
-\x1f
-\xaa
-\x0c
-\x02
-"
-\x03
-\x07
-.\\Data\\Script\\TextFunc.Fob
-\x81\x1f
-\x02\x02
-\x1e
-\x02
-\x03
-\x02
-TextOn
-\x81\x1f
-0\x02
-\x1e
-\x02
-5
-\x03
-\x03
-SCE093_002
-\x1f
-L\x02
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-\xf4\xa0
-\x0c
-"
-\x03
-\x82
-拓司
+ DO SOMETHING \x1f\xaa
+.\\Data\\Script\\TextFunc.Fob \x02\x02
+TextOn 0\x02 AND2 5
+SCE093_002\x1fL\x02 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\xf4\xa0
+\x82拓司
 　「……１年分あれば……まあ……安心はできるんじゃないか？」
 @なたね
 　「その根拠は？　最終波動がいつやってくるのか予想不可能な
@@ -123,45 +36,9 @@ L\x02
 
 なたねは薄笑いを浮かべながらいった。@
 カンナがそれに反応した。\
- 
-\x1e
-\r
-\x1f
-\x90\x02
-\x0c
-\x02
-"
-\x1f
-\x02\x02
-\x1e
-\x02
-\x1f
-0\x02
-\x1e
-\x02
-5
-\x03
-\x03
-SCE093_003
-\x1f
-\xd2\x04
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-\xf8\xa0
-\x0c
-"
-\x03
-\x9d
-カンナ
+ DO SOMETHING \x1f\x90\x02 AND "\x1f\x02\x02 AND2 \x1f0\x02 AND2 5
+SCE093_003\x1f\xd2\x04 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\xf8\xa0
+\x9dカンナ
 　「そのいいかたは……どうなのかしら、雲居さん？」@
 なたね
 　「なにかご不満でも？」@
@@ -182,45 +59,9 @@ SCE093_003
 
 拓司が間に入ることで、カンナとなたねは引き離されたが、あと
 には気まずい空気が残っている。\
- 
-\x1e
-\r
-\x1f
-\x16\x05
-\x0c
-\x02
-"
-\x1f
-\x02\x02
-\x1e
-\x02
-\x1f
-0\x02
-\x1e
-\x02
-5
-\x03
-\x03
-SCE093_004
-\x1f
-\xc4\x07
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-\xfc\xa0
-\x0c
-"
-\x03
-\xae
-なたね
+ DO SOMETHING \x1f\x16\x05 AND "\x1f\x02\x02 AND2 \x1f0\x02 AND2 5
+SCE093_004\x1f\xc4\x07 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\xfc\xa0
+\xaeなたね
 　「……はっきりさせておきたいんですけど」@
 
 やがてなたねがいった。@
@@ -239,45 +80,9 @@ SCE093_004
 　　　みなさんは私を信じるしかないんですよ。@
 　　いつもいつも散々ウソつき呼ばわりしてきたバカタレどもが
 　　私を信じるしか！　くすくすくすくす」\
- 
-\x1e
-\r
-\x1f
-\x08\x08
-\x0c
-\x02
-"
-\x1f
-\x02\x02
-\x1e
-\x02
-\x1f
-0\x02
-\x1e
-\x02
-5
-\x03
-\x03
-SCE093_005
-\x1f
-\xfa\n
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-\xa1
-\x0c
-"
-\x03
-^
-カンナがなにかをいいかけた。@
+ DO SOMETHING \x1f\x08\x08 AND "\x1f\x02\x02 AND2 \x1f0\x02 AND2 5
+SCE093_005\x1f\xfa\n AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\xa1
+^カンナがなにかをいいかけた。@
 
 なたね
 　「あっ！」@
@@ -294,69 +99,8 @@ SCE093_005
 　「……惜しい！　いま、ちょっとだけ母船からきてたのに！@
 　　あなたたちが余計なことをいうから聞き逃してしまったでし
 　　ょうが！@　ああ、惜しい！@　惜しかったなあ！」\
- 
-\x1e
-\r
-\x1f
->\x0b
-\x0c
-\x02
-"
-\x1f
-\x02\x02
-\x1e
-\x02
-\x1f
-0\x02
-\x1e
-\x02
-5
- 
-\x1e
-\r
-\x1e
-\xc8
-\x0c
-\x02
-"
-\x03
-\x06
-.\\Data\\Script\\Bg.Fob
-sv\x81\x1f
-\n\r
-\x1e
-\x02
-\x03
-\x04
-BgAutoFadeIn
-sv\x81\x1f
-4\r
-\x1e
-\x02
-5
-\x1f
- 
-\x1e
-\x02
-\x03
-\x02
-StopCD
-\x81\x1f
-d\r
-\x1e
-\x02
-5
-\x1f
-\x02\x02
-\x1e
-\x02
-\x03
-\x03
-TextClose
-v\x81\x1f
-\x8c\r
-\x1e
-\x02
-5
-6
-\xf1
+ DO SOMETHING \x1f>\x0b AND "\x1f\x02\x02 AND2 \x1f0\x02 AND2 5 DO SOMETHING \x1e\xc8
+.\\Data\\Script\\Bg.Fob \n\r
+BgAutoFadeIn 4\r AND2 5\x1f 
+StopCD d\r AND2 5\x1f\x02\x02 AND2 
+TextClose \x8c\r AND2 56\xf1

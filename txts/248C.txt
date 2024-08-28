@@ -1,33 +1,7 @@
-\x01
-start
-\xef
-i\x01C
-)!
-\x01
-`B#\x01
-B\x1b
-\x03
-\x03
-SCE248_001
-\x1f
-\x06
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
- \x93\x01
-\x0c
-"
-\x03
-\xb9
-拓司
+START
+)!\x01`B#\x01B\x1b
+SCE248_001\x1f\x06 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e \x93\x01
+\xb9拓司
 　「走れッ！」@
 
 いうが早いか、すでに拓司は地を蹴っている。@
@@ -48,51 +22,11 @@ SCE248_001
 すより、どんなに薄かろうとも鎧をまとっている方がマシだった。
 \
 
- 
-\x1e
-\r
-\x1f
-J
-\x0c
-\x02
-"
-\x03
-\x07
-.\\Data\\Script\\TextFunc.Fob
-\x81\x1f
-N\x03
-\x1e
-\x02
-\x03
-\x02
-TextOn
-\x81\x1f
-|\x03
-\x1e
-\x02
-5
-\x03
-\x03
-SCE248_002
-\x1f
-\x98\x03
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-$\x93\x01
-\x0c
-"
-\x03
-h
-地鳴りは徐々に大きくなっていく。@
+ DO SOMETHING \x1fJ
+.\\Data\\Script\\TextFunc.Fob N\x03
+TextOn |\x03 AND2 5
+SCE248_002\x1f\x98\x03 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e$\x93\x01
+h地鳴りは徐々に大きくなっていく。@
 低く、重く……それは世界の終末を確信させるに十分な不吉さを
 備えていた。@
 すべてのものがブルブルと振動し、輪郭が歪む。@
@@ -102,45 +36,9 @@ h
 亀裂は、あたかも生命を持っているかのように……雪崩落ちる雷
 のように……窓ガラスを走り……\
 
- 
-\x1e
-\r
-\x1f
-\xdc\x03
-\x0c
-\x02
-"
-\x1f
-N\x03
-\x1e
-\x02
-\x1f
-|\x03
-\x1e
-\x02
-5
-\x03
-\x03
-SCE248_003
-\x1f
-\xb6\x05
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-(\x93\x01
-\x0c
-"
-\x03
-\x8c
-ざあっ！@
+ DO SOMETHING \x1f\xdc\x03 AND "\x1fN\x03 AND2 \x1f|\x03 AND2 5
+SCE248_003\x1f\xb6\x05 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e(\x93\x01
+\x8cざあっ！@
 
 足の裏から頭のてっぺんへ。@
 それは前触れもなく地面から吹き上がって来た。@
@@ -156,45 +54,9 @@ SCE248_003
 拓司
 　「！」\
 
- 
-\x1e
-\r
-\x1f
-\xfa\x05
-\x0c
-\x02
-"
-\x1f
-N\x03
-\x1e
-\x02
-\x1f
-|\x03
-\x1e
-\x02
-5
-\x03
-\x03
-SCE248_004
-\x1f
-d\x08
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-,\x93\x01
-\x0c
-"
-\x03
-U
-世界が軋んでいた。@
+ DO SOMETHING \x1f\xfa\x05 AND "\x1fN\x03 AND2 \x1f|\x03 AND2 5
+SCE248_004\x1fd\x08 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e,\x93\x01
+U世界が軋んでいた。@
 耳の奥で生まれたその悲鳴は、耳の奥へ針のようにつきささり、
 脳味噌のなかで爆発した。@飛び散った破片は頭蓋骨の内側を反射
 して、反射して、反射した。@
@@ -203,45 +65,9 @@ U
 込んできては反射した。@
 頭そのものが爆発しないのが不思議だった。\
 
- 
-\x1e
-\r
-\x1f
-\xa8\x08
-\x0c
-\x02
-"
-\x1f
-N\x03
-\x1e
-\x02
-\x1f
-|\x03
-\x1e
-\x02
-5
-\x03
-\x03
-SCE248_005
-\x1f
-6\n
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-0\x93\x01
-\x0c
-"
-\x03
-}
-拓司
+ DO SOMETHING \x1f\xa8\x08 AND "\x1fN\x03 AND2 \x1f|\x03 AND2 5
+SCE248_005\x1f6\n AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e0\x93\x01
+}拓司
 　「ああああああああああああ！」@
 
 拓司は耳をふさいでうずくまった。@
@@ -255,45 +81,9 @@ SCE248_005
 始める。@
 白目をむき、耳から、鼻から、どす黒い血があふれ出している。\
 
- 
-\x1e
-\r
-\x1f
-z\n
-\x0c
-\x02
-"
-\x1f
-N\x03
-\x1e
-\x02
-\x1f
-|\x03
-\x1e
-\x02
-5
-\x03
-\x03
-SCE248_006
-\x1f
-\xa8\x0c
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-4\x93\x01
-\x0c
-"
-\x03
-\xa4
-拓司
+ DO SOMETHING \x1fz\n AND "\x1fN\x03 AND2 \x1f|\x03 AND2 5
+SCE248_006\x1f\xa8\x0c AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e4\x93\x01
+\xa4拓司
 　「紅葉イイイイイイイイ！」@
 
 拓司は叫んだ。@
@@ -314,89 +104,17 @@ SCE248_006
 解決されつつあることなのだ。@
 あるいは、解決されるべきものなのだ。\
 
- 
-\x1e
-\r
-\x1f
-\xec\x0c
-\x0c
-\x02
-"
-\x1f
-N\x03
-\x1e
-\x02
-\x1f
-|\x03
-\x1e
-\x02
-5
-\x03
-\x03
-SCE248_007
-\x1f
-\xb6\x0f
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-8\x93\x01
-\x0c
-"
-\x03
-9
-数メートル向こうに、紅葉の姿が見える。@
+ DO SOMETHING \x1f\xec\x0c AND "\x1fN\x03 AND2 \x1f|\x03 AND2 5
+SCE248_007\x1f\xb6\x0f AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e8\x93\x01
+9数メートル向こうに、紅葉の姿が見える。@
 拓司は一歩踏み出した。@
 その足をじっと見つめ、そして反対側の足を前に出す。@
 そうして一歩……一歩……忘れてしまった歩き方を思い出すかの
 ように、拓司はゆっくりと歩き始めた。\
 
- 
-\x1e
-\r
-\x1f
-\xfa\x0f
-\x0c
-\x02
-"
-\x1f
-N\x03
-\x1e
-\x02
-\x1f
-|\x03
-\x1e
-\x02
-5
-\x03
-\x03
-SCE248_008
-\x1f
-\x18\x11
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-<\x93\x01
-\x0c
-"
-\x03
-\xa0
-/*▲SE33　一回再生（再生終了待たず先へ）*/\a2,0,33,0,\a6,0,0,0,キイイイイイイイイイイイイイイイイイイイイイイイイイイイ！@
+ DO SOMETHING \x1f\xfa\x0f AND "\x1fN\x03 AND2 \x1f|\x03 AND2 5
+SCE248_008\x1f\x18\x11 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e<\x93\x01
+\xa0/*▲SE33　一回再生（再生終了待たず先へ）*/\a2,0,33,0,\a6,0,0,0,キイイイイイイイイイイイイイイイイイイイイイイイイイイイ！@
 /*▲↑　再生終了を待つ\a3,0,0,0,\a4,0,0,0,いつの間にか、鼻血が流れ出している。@
 すすり上げると、口の中に鉄っぽい味がぎいん、と広がる。@
 
@@ -406,45 +124,9 @@ SCE248_008
 
 /*▲SE33　一回再生（再生終了待たず先へ）*/\a2,0,33,0,\a6,0,0,0,キイイイイイイイイイイイイイイイイイイイイイイイイイイイ！\
 /*▲↑　再生終了を待つ*/\a3,0,0,0,\a4,0,0,0,
- 
-\x1e
-\r
-\x1f
-\\\x11
-\x0c
-\x02
-"
-\x1f
-N\x03
-\x1e
-\x02
-\x1f
-|\x03
-\x1e
-\x02
-5
-\x03
-\x03
-SCE248_009
-\x1f
-\x16\x14
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-@\x93\x01
-\x0c
-"
-\x03
-I
-こうして旅が始まったいま、俺にはいまや目的があるのだ。@
+ DO SOMETHING \x1f\\\x11 AND "\x1fN\x03 AND2 \x1f|\x03 AND2 5
+SCE248_009\x1f\x16\x14 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e@\x93\x01
+Iこうして旅が始まったいま、俺にはいまや目的があるのだ。@
 何かから逃げているのではなく、何かに向かっているのだ。@
 俺はただ歩き続ければいいのだ。@
 歩き続けることで、１秒前の自分を背後に感じ、そして自分が常
@@ -452,68 +134,11 @@ I
 考えるのではない。@
 動くのだ。\
 
- 
-\x1e
-\r
-\x1f
-Z\x14
-\x0c
-\x02
-"
-\x1f
-N\x03
-\x1e
-\x02
-\x1f
-|\x03
-\x1e
-\x02
-5
- 
-\x1e
-\r
-\x1e
-:
-\x0c
-\x02
-"
-\x03
-\x06
-.\\Data\\Script\\Bg.Fob
-sv\x81\x1f
-\xd2\x15
-\x1e
-\x02
-\x03
-\x04
-BgAutoFadeIn
-sv\x81\x1f
-\xfc\x15
-\x1e
-\x02
-5
-\x03
-\x03
-SCE248_010
-\x1f
- \x16
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-D\x93\x01
-\x0c
-"
-\x03
-w
-拓司
+ DO SOMETHING \x1fZ\x14 AND "\x1fN\x03 AND2 \x1f|\x03 AND2 5 DO SOMETHING \x1e:
+.\\Data\\Script\\Bg.Fob \xd2\x15
+BgAutoFadeIn \xfc\x15 AND2 5
+SCE248_010\x1f \x16 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1eD\x93\x01
+w拓司
 　「紅葉！」@
 
 紅葉は動かない。@
@@ -534,62 +159,9 @@ w
 　「俺は勝った！@　勝ったんだ！@
 　　ワハ、ワハ、ワハハハハハハハハハハ！」\
 
- 
-\x1e
-\r
-\x1f
-d\x16
-\x0c
-\x02
-"
-\x1f
-N\x03
-\x1e
-\x02
-\x1f
-|\x03
-\x1e
-\x02
-5
- 
-\x1e
-\r
-\x1e
-\xc9
-\x0c
-\x02
-"
-\x1f
-\xd2\x15
-\x1e
-\x02
-\x1f
-\xfc\x15
-\x1e
-\x02
-5
-\x03
-\x03
-SCE248_011
-\x1f
-\xae\x18
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-H\x93\x01
-\x0c
-"
-\x03
-L
-ふいに目の前が真っ白になった。@
+ DO SOMETHING \x1fd\x16 AND "\x1fN\x03 AND2 \x1f|\x03 AND2 5 DO SOMETHING \x1e\xc9 AND "\x1f\xd2\x15 AND2 \x1f\xfc\x15 AND2 5
+SCE248_011\x1f\xae\x18 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1eH\x93\x01
+Lふいに目の前が真っ白になった。@
 すべての音が聞こえなくなった。@
 抱きしめた紅葉の感覚がなくなった。@
 口の中の血の味がなくなった。@
@@ -599,86 +171,8 @@ L
 俺は勝った。@
 勝ったんだ、と。\
 
- 
-\x1e
-\r
-\x1f
-\xf2\x18
-\x0c
-\x02
-"
-\x1f
-N\x03
-\x1e
-\x02
-\x1f
-|\x03
-\x1e
-\x02
-5
- 
-\x1e
-\r
-\x1e
-\x02
-\x0c
-\x02
-"
-\x03
-\x06
-.\\Data\\Script\\Bgm.Fob
-v\x81\x1f
-v\x1a
-\x1e
-\x02
-\x03
-\x02
-SeStop
-\x81\x1f
-\xa0\x1a
-\x1e
-\x02
-5
-\x1f
-v\x1a
-\x1e
-\x02
-\x03
-\x02
-StopCD
-\x81\x1f
-\xc8\x1a
-\x1e
-\x02
-5
- 
-\x1e
-\r
-\x1e
-\xc8
-\x0c
-\x02
-"
-\x1f
-\xd2\x15
-\x1e
-\x02
-\x1f
-\xfc\x15
-\x1e
-\x02
-5
-\x1f
-N\x03
-\x1e
-\x02
-\x03
-\x03
-TextClose
-v\x81\x1f
-$\x1b
-\x1e
-\x02
-5
-6
-\xf1
+ DO SOMETHING \x1f\xf2\x18 AND "\x1fN\x03 AND2 \x1f|\x03 AND2 5 DO SOMETHING  AND2 
+.\\Data\\Script\\Bgm.Fob v\x1a
+SeStop \xa0\x1a AND2 5\x1fv\x1a
+StopCD \xc8\x1a AND2 5 DO SOMETHING \x1e\xc8 AND "\x1f\xd2\x15 AND2 \x1f\xfc\x15 AND2 5\x1fN\x03 AND2 
+TextClose $\x1b AND2 56\xf1

@@ -1,56 +1,9 @@
-\x01
-start
-\xef
-i\x01C
-\xbf'
-\x01
-`B#\x01
-Z!
- 
-\x1e
-\r
-\x1e
-\x0b\x01
-\x0c
-\x02
-"
-\x03
-\x06
-.\\Data\\Script\\Bgm.Fob
-v\x81\x1f
- 
-\x1e
-\x02
-\x03
-\x02
-PlayCD
-\x81\x1f
-J
-\x1e
-\x02
-5
-\x03
-\x03
-SCE052_001
-\x1f
-f
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-\xe0`
-\x0c
-"
-\x03
-\xac
-　勢いよく扉を引き開けて、拓司は教室に躍り込んだ。@
+START
+\xbf'\x01`B#\x01Z! DO SOMETHING \x1e\x0b\x01
+.\\Data\\Script\\Bgm.Fob  
+PlayCD J AND2 5
+SCE052_001\x1ff AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\xe0`
+\xac　勢いよく扉を引き開けて、拓司は教室に躍り込んだ。@
 
 拓司
 　「早桃！」@
@@ -71,51 +24,11 @@ f
 円陣の中央には、ひとりの女の子が立ちすくんでいる。@
 早桃だ。\
 
- 
-\x1e
-\r
-\x1f
-\xaa
-\x0c
-\x02
-"
-\x03
-\x07
-.\\Data\\Script\\TextFunc.Fob
-\x81\x1f
-z\x03
-\x1e
-\x02
-\x03
-\x02
-TextOn
-\x81\x1f
-\xa8\x03
-\x1e
-\x02
-5
-\x03
-\x03
-SCE052_002
-\x1f
-\xc4\x03
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-\xe4`
-\x0c
-"
-\x03
-]
-早桃
+ DO SOMETHING \x1f\xaa
+.\\Data\\Script\\TextFunc.Fob z\x03
+TextOn \xa8\x03 AND2 5
+SCE052_002\x1f\xc4\x03 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\xe4`
+]早桃
 　「おにい……ちゃん？」@
 拓司
 　「早桃！」@
@@ -132,45 +45,9 @@ SCE052_002
 学生
 　「へえ、そうなんだ、へへ」\
 
- 
-\x1e
-\r
-\x1f
-\x08\x04
-\x0c
-\x02
-"
-\x1f
-z\x03
-\x1e
-\x02
-\x1f
-\xa8\x03
-\x1e
-\x02
-5
-\x03
-\x03
-SCE052_003
-\x1f
-\xb6\x05
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-\xe8`
-\x0c
-"
-\x03
-l
-拓司は呆気にとられた。@
+ DO SOMETHING \x1f\x08\x04 AND "\x1fz\x03 AND2 \x1f\xa8\x03 AND2 5
+SCE052_003\x1f\xb6\x05 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\xe8`
+l拓司は呆気にとられた。@
 初対面の人間が、正面切っていう話題ではない。@
 それに、早桃の様子もあきらかにおかしい。@
 水に濡れた猫のように怯えきっている。@
@@ -188,45 +65,9 @@ l
 ひとりが素っ頓狂な声を上げると、他の者がゲラゲラと笑い声で
 応えた。\
 
- 
-\x1e
-\r
-\x1f
-\xfa\x05
-\x0c
-\x02
-"
-\x1f
-z\x03
-\x1e
-\x02
-\x1f
-\xa8\x03
-\x1e
-\x02
-5
-\x03
-\x03
-SCE052_004
-\x1f
-\xe4\x07
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-\xec`
-\x0c
-"
-\x03
-{
-学生
+ DO SOMETHING \x1f\xfa\x05 AND "\x1fz\x03 AND2 \x1f\xa8\x03 AND2 5
+SCE052_004\x1f\xe4\x07 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\xec`
+{学生
 　「飛ばせたよ」@
 拓司
 　「……飛ばせた？」@
@@ -245,45 +86,9 @@ SCE052_004
 　　そんなところで勉強とか青春なんて前向きにやってられるか？
 　　@やれねえんだよ！」\
 
- 
-\x1e
-\r
-\x1f
-(\x08
-\x0c
-\x02
-"
-\x1f
-z\x03
-\x1e
-\x02
-\x1f
-\xa8\x03
-\x1e
-\x02
-5
-\x03
-\x03
-SCE052_005
-\x1f
-N\n
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-\xf0`
-\x0c
-"
-\x03
-\x96
-学生は机をガン、と足でけ飛ばした。@
+ DO SOMETHING \x1f(\x08 AND "\x1fz\x03 AND2 \x1f\xa8\x03 AND2 5
+SCE052_005\x1fN\n AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\xf0`
+\x96学生は机をガン、と足でけ飛ばした。@
 怒りの爆発をギリギリで抑えている。@
 目は血走り、身体は小刻みに震えている。@
 わけがわからない。@
@@ -301,45 +106,9 @@ N\n
 　　そんなの、バレバレだよ！@
 　　俺たちゃアホじゃねえっつーんだよッ！」\
 
- 
-\x1e
-\r
-\x1f
-\x92\n
-\x0c
-\x02
-"
-\x1f
-z\x03
-\x1e
-\x02
-\x1f
-\xa8\x03
-\x1e
-\x02
-5
-\x03
-\x03
-SCE052_006
-\x1f
-$\r
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-\xf4`
-\x0c
-"
-\x03
-\x93
-拓司
+ DO SOMETHING \x1f\x92\n AND "\x1fz\x03 AND2 \x1f\xa8\x03 AND2 5
+SCE052_006\x1f$\r AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\xf4`
+\x93拓司
 　「オイ、落ち着け！@　いったいどうしたって－－」@
 学生
 　「だから窓から飛んでもらったよ！」@
@@ -358,45 +127,9 @@ $\r
 　　いって、そのままトップロープ越えのトペ・スイシーダだよ！
 　　@で、今度は虎菱の番ってわけだ！」\
 
- 
-\x1e
-\r
-\x1f
-h\r
-\x0c
-\x02
-"
-\x1f
-z\x03
-\x1e
-\x02
-\x1f
-\xa8\x03
-\x1e
-\x02
-5
-\x03
-\x03
-SCE052_007
-\x1f
-\xee\x0f
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-\xf8`
-\x0c
-"
-\x03
-\x90
-円陣の中央で、早桃がびくっと身をすくめる。@
+ DO SOMETHING \x1fh\r AND "\x1fz\x03 AND2 \x1f\xa8\x03 AND2 5
+SCE052_007\x1f\xee\x0f AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\xf8`
+\x90円陣の中央で、早桃がびくっと身をすくめる。@
 
 学生
 　「澱むんだよ、コイツがいると。@
@@ -417,45 +150,9 @@ SCE052_007
 拓司は一喝した。@
 しかし、早桃の言葉が、次の言葉をさえぎった。\
 
- 
-\x1e
-\r
-\x1f
-2\x10
-\x0c
-\x02
-"
-\x1f
-z\x03
-\x1e
-\x02
-\x1f
-\xa8\x03
-\x1e
-\x02
-5
-\x03
-\x03
-SCE052_008
-\x1f
-\xac\x12
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-\xfc`
-\x0c
-"
-\x03
-f
-早桃
+ DO SOMETHING \x1f2\x10 AND "\x1fz\x03 AND2 \x1f\xa8\x03 AND2 5
+SCE052_008\x1f\xac\x12 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\xfc`
+f早桃
 　「しかたないよ……@早桃が悪いんだからしかたがないよ」@
 
 拓司
@@ -473,45 +170,9 @@ f
 有罪、有罪、有罪！@
 有罪、有罪、有罪！\
 
- 
-\x1e
-\r
-\x1f
-\xf0\x12
-\x0c
-\x02
-"
-\x1f
-z\x03
-\x1e
-\x02
-\x1f
-\xa8\x03
-\x1e
-\x02
-5
-\x03
-\x03
-SCE052_009
-\x1f
-\xc2\x14
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-a
-\x0c
-"
-\x03
-%
-誰かが「死ね」といった。@
+ DO SOMETHING \x1f\xf0\x12 AND "\x1fz\x03 AND2 \x1f\xa8\x03 AND2 5
+SCE052_009\x1f\xc2\x14 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1ea
+%誰かが「死ね」といった。@
 
 学生
 　「死ねよ」@
@@ -524,45 +185,9 @@ a
 学生
 　「死ねよ」\
 
- 
-\x1e
-\r
-\x1f
-\x06\x15
-\x0c
-\x02
-"
-\x1f
-z\x03
-\x1e
-\x02
-\x1f
-\xa8\x03
-\x1e
-\x02
-5
-\x03
-\x03
-SCE052_010
-\x1f
-\xd4\x15
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-\x04a
-\x0c
-"
-\x03
-\x96
-　死ねよ、死ねよ、死ねよ、死ねよ、死ねよ、死ねよ、死ねよ、
+ DO SOMETHING \x1f\x06\x15 AND "\x1fz\x03 AND2 \x1f\xa8\x03 AND2 5
+SCE052_010\x1f\xd4\x15 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\x04a
+\x96　死ねよ、死ねよ、死ねよ、死ねよ、死ねよ、死ねよ、死ねよ、
 　死ねよ、死ねよ、死ねよ
 　死ね死ね死ね死ね死ね死ね死ね死ね死ね死ね死ね死ね死ね死ね
 　死ね死ね死ね
@@ -580,45 +205,9 @@ SCE052_010
 　ドンガドンガドンガドンドンガドンガドンガドンガドンガドン
 ガドンガドンガドンガドンガドンガ\
 
- 
-\x1e
-\r
-\x1f
-\x18\x16
-\x0c
-\x02
-"
-\x1f
-z\x03
-\x1e
-\x02
-\x1f
-\xa8\x03
-\x1e
-\x02
-5
-\x03
-\x03
-SCE052_011
-\x1f
-\xaa\x18
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-\x08a
-\x0c
-"
-\x03
-\xb4
-　足を踏みならす音は太鼓のリズムで、合唱は呪文の詠唱だった。@
+ DO SOMETHING \x1f\x18\x16 AND "\x1fz\x03 AND2 \x1f\xa8\x03 AND2 5
+SCE052_011\x1f\xaa\x18 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\x08a
+\xb4　足を踏みならす音は太鼓のリズムで、合唱は呪文の詠唱だった。@
 　中世の魔女狩りそのものだった。@
 　渦巻いて立ち上るような熱気が、教室に充ちていた。@
 　それは学生たちが放出した興奮だった。
@@ -636,62 +225,9 @@ SCE052_011
 早桃
 　「ごめんなさい……ごめんなさい……ごめんなさい……」\
 
- 
-\x1e
-\r
-\x1f
-\xee\x18
-\x0c
-\x02
-"
-\x1f
-z\x03
-\x1e
-\x02
-\x1f
-\xa8\x03
-\x1e
-\x02
-5
- 
-\x1e
-\r
-\x1e
-\n\x01
-\x0c
-\x02
-"
-\x1f
- 
-\x1e
-\x02
-\x1f
-J
-\x1e
-\x02
-5
-\x03
-\x03
-SCE052_012
-\x1f
-,\x1c
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-\x0ca
-\x0c
-"
-\x03
-\x9b
-猛烈な怒りに突き動かされて、拓司は円陣のなかへと躍り込んだ。@
+ DO SOMETHING \x1f\xee\x18 AND "\x1fz\x03 AND2 \x1f\xa8\x03 AND2 5 DO SOMETHING \x1e\n\x01 AND "\x1f  AND2 \x1fJ AND2 5
+SCE052_012\x1f,\x1c AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\x0ca
+\x9b猛烈な怒りに突き動かされて、拓司は円陣のなかへと躍り込んだ。@
 
 拓司
 　「オ、オ、オ、オ、オ、オ、ア、ア、ア、ア、ア、ア、ア！」@
@@ -706,45 +242,9 @@ SCE052_012
 か、鼻から血がだくだくとあふれ出る。@
 視界が奇妙な色で明滅する。\
 
- 
-\x1e
-\r
-\x1f
-p\x1c
-\x0c
-\x02
-"
-\x1f
-z\x03
-\x1e
-\x02
-\x1f
-\xa8\x03
-\x1e
-\x02
-5
-\x03
-\x03
-SCE052_013
-\x1f
-\x16\x1f
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-\x10a
-\x0c
-"
-\x03
-g
-　興奮した声、声、声が、教室中を行き交っている。@
+ DO SOMETHING \x1fp\x1c AND "\x1fz\x03 AND2 \x1f\xa8\x03 AND2 5
+SCE052_013\x1f\x16\x1f AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\x10a
+g　興奮した声、声、声が、教室中を行き交っている。@
 　ウルセチョウシブッコロホネガジャネエオレウルセエタコイテ
 ンイタイヨホネガ！@　ガ！@　ガ！@　ホネ！　@
 
@@ -752,34 +252,5 @@ g
 /*■黒　表示（ノンエフェクト）.*/\a7,-1,-1,0,\a0,200,1,0,\a6,0,0,0,/*▲BGM　停止*/\a4,-1,0,0,　やがて潮が引くように、声が収まっていった。@
 　静寂の中、バットが振り下ろされた。\
 
- 
-\x1e
-\r
-\x1f
-Z\x1f
-\x0c
-\x02
-"
-\x1f
-z\x03
-\x1e
-\x02
-\x1f
-\xa8\x03
-\x1e
-\x02
-5
-\x1f
-z\x03
-\x1e
-\x02
-\x03
-\x03
-TextClose
-v\x81\x1f
-<!
-\x1e
-\x02
-5
-6
-\xf1
+ DO SOMETHING \x1fZ\x1f AND "\x1fz\x03 AND2 \x1f\xa8\x03 AND2 5\x1fz\x03 AND2 
+TextClose <! AND2 56\xf1

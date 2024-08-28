@@ -1,33 +1,7 @@
-\x01
-start
-\xef
-i\x01C
-[\r
-\x01
-`B#\x01
-\xf0\n
-\x03
-\x03
-SCE220_001
-\x1f
-\x06
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-`g\x01
-\x0c
-"
-\x03
+START
+[\r\x01`B#\x01\xf0\n
+SCE220_001\x1f\x06 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e`g\x01
 \x11
-
 
 
 
@@ -39,74 +13,13 @@ SCE220_001
 
 　　　　　　　　　　　　　『９日目』\
 
- 
-\x1e
-\r
-\x1f
-J
-\x0c
-\x02
-"
-\x03
-\x07
-.\\Data\\Script\\TextFunc.Fob
-\x81\x1f
-\xae
-\x1e
-\x02
-\x03
-\x02
-TextOn
-\x81\x1f
-\xdc
-\x1e
-\x02
-5
- 
-\x1e
-\r
-\x1e
-\x0c\x01
-\x0c
-\x02
-"
-\x03
-\x06
-.\\Data\\Script\\Bgm.Fob
-v\x81\x1f
-\x12\x01
-\x1e
-\x02
-\x03
-\x02
-PlayCD
-\x81\x1f
-<\x01
-\x1e
-\x02
-5
-\x03
-\x03
-SCE220_002
-\x1f
-X\x01
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-dg\x01
-\x0c
-"
-\x03
-\x81
-鍵の管理は、御堂が受け持つことになった。@
+ DO SOMETHING \x1fJ
+.\\Data\\Script\\TextFunc.Fob \xae
+TextOn \xdc AND2 5 DO SOMETHING \x1e\x0c\x01
+.\\Data\\Script\\Bgm.Fob \x12\x01
+PlayCD <\x01 AND2 5
+SCE220_002\x1fX\x01 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1edg\x01
+\x81鍵の管理は、御堂が受け持つことになった。@
 御堂は、完全に気を失ったなたねから鍵を奪い、その管理を一方
 的に宣言した。@誰もそれに異を唱える者はなかった。@
 /*■CG38　表示（クロスフェード）*/\a7,-2,-2,0,\a0,37,2,0,\a6,-2,0,0,
@@ -117,45 +30,9 @@ dg\x01
 御堂は準備室を『自分の部屋』と決め、そこでの生活を始めた。@
 傍らには、錦城の姿があった。\
 
- 
-\x1e
-\r
-\x1f
-\x9c\x01
-\x0c
-\x02
-"
-\x1f
-\xae
-\x1e
-\x02
-\x1f
-\xdc
-\x1e
-\x02
-5
-\x03
-\x03
-SCE220_003
-\x1f
-\xda\x03
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-hg\x01
-\x0c
-"
-\x03
-\x8e
-御堂
+ DO SOMETHING \x1f\x9c\x01 AND "\x1f\xae AND2 \x1f\xdc AND2 5
+SCE220_003\x1f\xda\x03 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1ehg\x01
+\x8e御堂
 　「安心しろ。@俺はそこのイカレ女とは違う。@ちゃんといままで
 　　どおり、食糧は平等に配給する。@ただ、部屋をもらうってだ
 　　けだ。@お前らのパーソナルスペースも２人分広がるわけだし、
@@ -168,68 +45,11 @@ hg\x01
 　　御堂くんがみんなと違う場所にいるということは意味がある
 　　……そうでしょう？」\
 
- 
-\x1e
-\r
-\x1f
-\x1e\x04
-\x0c
-\x02
-"
-\x1f
-\xae
-\x1e
-\x02
-\x1f
-\xdc
-\x1e
-\x02
-5
- 
-\x1e
-\r
-\x1e
-&
-\x0c
-\x02
-"
-\x03
-\x06
-.\\Data\\Script\\Bg.Fob
-sv\x81\x1f
-\xaa\x06
-\x1e
-\x02
-\x03
-\x04
-BgAutoFadeIn
-sv\x81\x1f
-\xd4\x06
-\x1e
-\x02
-5
-\x03
-\x03
-SCE220_004
-\x1f
-\xf8\x06
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-lg\x01
-\x0c
-"
-\x03
-\xc7
-なたねはナイロンテープで拘束され、部屋の隅に転がされること
+ DO SOMETHING \x1f\x1e\x04 AND "\x1f\xae AND2 \x1f\xdc AND2 5 DO SOMETHING \x1e&
+.\\Data\\Script\\Bg.Fob \xaa\x06
+BgAutoFadeIn \xd4\x06 AND2 5
+SCE220_004\x1f\xf8\x06 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1elg\x01
+\xc7なたねはナイロンテープで拘束され、部屋の隅に転がされること
 となった。@猿ぐつわをかまされ、日に１度、トイレが許可される
 とき、そして最終波動の予兆はないかどうかを尋ねられるときだ
 け解放される。@
@@ -250,51 +70,5 @@ lg\x01
 
 御堂は笑った。\
 
- 
-\x1e
-\r
-\x1f
-<\x07
-\x0c
-\x02
-"
-\x1f
-\xae
-\x1e
-\x02
-\x1f
-\xdc
-\x1e
-\x02
-5
- 
-\x1e
-\r
-\x1e
-\xc8
-\x0c
-\x02
-"
-\x1f
-\xaa\x06
-\x1e
-\x02
-\x1f
-\xd4\x06
-\x1e
-\x02
-5
-\x1f
-\xae
-\x1e
-\x02
-\x03
-\x03
-TextClose
-v\x81\x1f
-\xd2\n
-\x1e
-\x02
-5
-6
-\xf1
+ DO SOMETHING \x1f<\x07 AND "\x1f\xae AND2 \x1f\xdc AND2 5 DO SOMETHING \x1e\xc8 AND "\x1f\xaa\x06 AND2 \x1f\xd4\x06 AND2 5\x1f\xae AND2 
+TextClose \xd2\n AND2 56\xf1

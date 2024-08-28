@@ -1,33 +1,7 @@
-\x01
-start
-\xef
-i\x01C
-\xd3\x08
-\x01
-`B#\x01
-:\x07
-\x03
-\x03
-SCE047_001
-\x1f
-\x06
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-\x10Y
-\x0c
-"
-\x03
-~
-なたね
+START
+\xd3\x08\x01`B#\x01:\x07
+SCE047_001\x1f\x06 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\x10Y
+~なたね
 　「お願いします」@
 
 なたねがいった。@真剣な顔だった。@
@@ -42,51 +16,11 @@ SCE047_001
 　　シャに対する思いやりってやつを考えろよ、ナ？@　それとも
 　　なにか、お前、なたねちゃんのことバカにしてんのか？」\
 
- 
-\x1e
-\r
-\x1f
-J
-\x0c
-\x02
-"
-\x03
-\x07
-.\\Data\\Script\\TextFunc.Fob
-\x81\x1f
-b\x02
-\x1e
-\x02
-\x03
-\x02
-TextOn
-\x81\x1f
-\x90\x02
-\x1e
-\x02
-5
-\x03
-\x03
-SCE047_002
-\x1f
-\xac\x02
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-\x14Y
-\x0c
-"
-\x03
-Z
-眼鏡の奥、なたねの目が潤み始めた。@
+ DO SOMETHING \x1fJ
+.\\Data\\Script\\TextFunc.Fob b\x02
+TextOn \x90\x02 AND2 5
+SCE047_002\x1f\xac\x02 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\x14Y
+Z眼鏡の奥、なたねの目が潤み始めた。@
 
 拓司
 　「わかった。行くよ」@
@@ -98,45 +32,9 @@ Z
 取り巻き連中が、拓司に一瞥を送ってか
 ら、あとに続く。\
 
- 
-\x1e
-\r
-\x1f
-\xf0\x02
-\x0c
-\x02
-"
-\x1f
-b\x02
-\x1e
-\x02
-\x1f
-\x90\x02
-\x1e
-\x02
-5
-\x03
-\x03
-SCE047_003
-\x1f
-\x92\x04
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-\x18Y
-\x0c
-"
-\x03
-\x80
-なたね
+ DO SOMETHING \x1f\xf0\x02 AND "\x1fb\x02 AND2 \x1f\x90\x02 AND2 5
+SCE047_003\x1f\x92\x04 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\x18Y
+\x80なたね
 　「行きましょう？」@
 
 　なたねに促されて、拓司もまた、階段を下りて４階へと向かっ
@@ -155,34 +53,5 @@ SCE047_003
 　言ってなたねは、躊躇することなく男子トイレへと入っていっ
 　た。@ひとり廊下に取り残された拓司も、慌てて後を追う。\
 
- 
-\x1e
-\r
-\x1f
-\xd6\x04
-\x0c
-\x02
-"
-\x1f
-b\x02
-\x1e
-\x02
-\x1f
-\x90\x02
-\x1e
-\x02
-5
-\x1f
-b\x02
-\x1e
-\x02
-\x03
-\x03
-TextClose
-v\x81\x1f
-\x1c\x07
-\x1e
-\x02
-5
-6
-\xf1
+ DO SOMETHING \x1f\xd6\x04 AND "\x1fb\x02 AND2 \x1f\x90\x02 AND2 5\x1fb\x02 AND2 
+TextClose \x1c\x07 AND2 56\xf1

@@ -1,33 +1,7 @@
-\x01
-start
-\xef
-i\x01C
-\xcf\x04
-\x01
-\xa4\t3\x01
-:\x03
-\x03
-\x03
-SCE206_001
-\x1f
-\x06
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-\x80Q\x01
-\x0c
-"
-\x03
-\x97
-拓司
+START
+\xcf\x04\x01\xa4\t3\x01:\x03
+SCE206_001\x1f\x06 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\x80Q\x01
+\x97拓司
 　「君はいま、おれに世界の真実を教えてくれた。@でも、だとし
 　　たら、君は誰なんだ？@　どうして君がそんなことを知って
 　　いる？」@
@@ -43,40 +17,7 @@ SCE206_001
 　　のは、あなたがそれを望んだから。@理解できないものの解説
 　　役として、雲居なたねを望んだからなの」\
 
- 
-\x1e
-\r
-\x1f
-J
-\x0c
-\x02
-"
-\x03
-\x07
-.\\Data\\Script\\TextFunc.Fob
-\x81\x1f
-\xc6\x02
-\x1e
-\x02
-\x03
-\x02
-TextOn
-\x81\x1f
-\xf4\x02
-\x1e
-\x02
-5
-\x1f
-\xc6\x02
-\x1e
-\x02
-\x03
-\x03
-TextClose
-v\x81\x1f
-\x1c\x03
-\x1e
-\x02
-5
-6
-\xf1
+ DO SOMETHING \x1fJ
+.\\Data\\Script\\TextFunc.Fob \xc6\x02
+TextOn \xf4\x02 AND2 5\x1f\xc6\x02 AND2 
+TextClose \x1c\x03 AND2 56\xf1
