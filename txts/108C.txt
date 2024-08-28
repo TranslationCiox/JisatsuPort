@@ -1,33 +1,7 @@
-\x01
-start
-\xef
-i\x01C
-\x82\x07
-\x01
-`B#\x01
-\xf2\x05
-\x03
-\x03
-SCE108_001
-\x1f
-\x06
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-`\xb8
-\x0c
-"
-\x03
+START
+\x82\x07\x01`B#\x01\xf2\x05
+SCE108_001\x1f\x06 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e`\xb8
 \x11
-
 
 
 
@@ -39,74 +13,13 @@ SCE108_001
 
 　　　　　　　　　　　　　『６日目』\
 
- 
-\x1e
-\r
-\x1f
-J
-\x0c
-\x02
-"
-\x03
-\x07
-.\\Data\\Script\\TextFunc.Fob
-\x81\x1f
-\xae
-\x1e
-\x02
-\x03
-\x02
-TextOn
-\x81\x1f
-\xdc
-\x1e
-\x02
-5
- 
-\x1e
-\r
-\x1e
-\x0c\x01
-\x0c
-\x02
-"
-\x03
-\x06
-.\\Data\\Script\\Bgm.Fob
-v\x81\x1f
-\x12\x01
-\x1e
-\x02
-\x03
-\x02
-PlayCD
-\x81\x1f
-<\x01
-\x1e
-\x02
-5
-\x03
-\x03
-SCE108_002
-\x1f
-X\x01
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-d\xb8
-\x0c
-"
-\x03
-\x87
-早桃の風邪は快方に向かっている。@
+ DO SOMETHING \x1fJ
+.\\Data\\Script\\TextFunc.Fob \xae
+TextOn \xdc AND2 5 DO SOMETHING \x1e\x0c\x01
+.\\Data\\Script\\Bgm.Fob \x12\x01
+PlayCD <\x01 AND2 5
+SCE108_002\x1fX\x01 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1ed\xb8
+\x87早桃の風邪は快方に向かっている。@
 
 めだった衝突はない。@なたねは淡々と、それまで通り食糧と水を
 配給した。@しかし、なたねと一同のあいだに生まれた亀裂は、わ
@@ -121,45 +34,9 @@ d\xb8
 非難するような視線だ。@拓司は気づかないふりをして、それを無
 視した。\
 
- 
-\x1e
-\r
-\x1f
-\x9c\x01
-\x0c
-\x02
-"
-\x1f
-\xae
-\x1e
-\x02
-\x1f
-\xdc
-\x1e
-\x02
-5
-\x03
-\x03
-SCE108_003
-\x1f
-\xf2\x03
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-h\xb8
-\x0c
-"
-\x03
-V
-この日が誕生日だったというカンナのために、夜、一同は歌を歌
+ DO SOMETHING \x1f\x9c\x01 AND "\x1f\xae AND2 \x1f\xdc AND2 5
+SCE108_003\x1f\xf2\x03 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1eh\xb8
+Vこの日が誕生日だったというカンナのために、夜、一同は歌を歌
 った。@
 馬鹿馬鹿しいとは思ったが、そういったことこそが、いま、必要
 なものに思えた。@
@@ -168,34 +45,5 @@ V
 沈黙の中、なたねの「……馬鹿馬鹿しい」というつぶやきが、奇
 妙に大きく響いた。\
 
- 
-\x1e
-\r
-\x1f
-6\x04
-\x0c
-\x02
-"
-\x1f
-\xae
-\x1e
-\x02
-\x1f
-\xdc
-\x1e
-\x02
-5
-\x1f
-\xae
-\x1e
-\x02
-\x03
-\x03
-TextClose
-v\x81\x1f
-\xd4\x05
-\x1e
-\x02
-5
-6
-\xf1
+ DO SOMETHING \x1f6\x04 AND "\x1f\xae AND2 \x1f\xdc AND2 5\x1f\xae AND2 
+TextClose \xd4\x05 AND2 56\xf1

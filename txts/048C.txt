@@ -1,71 +1,10 @@
-\x01
-start
-\xef
-i\x01C
-\x8b-
-\x01
-`B#\x01
-,'
-\x03
-\t
-.\\Data\\Script\\Scenario\\048SubC.Fob
-\x81\x1f
-\x06
-\x1e
-\x02
-\x03
-\x02
-start
-v\x81\x1f
-<
-\x1e
-\x02
-5
- 
-\x1e
-\r
-\x1e
-<
-\x0c
-\x02
-"
-\x03
-\x07
-.\\Data\\Script\\TextFunc.fob
-\x81\x1f
-r
-\x1e
-\x02
-\x03
-\x03
-WaitTime
-sv\x81\x1f
-\xa0
-\x1e
-\x02
-5
-\x03
-\x03
-SCE048_020
-\x1f
-\xc0
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-\xecZ
-\x0c
-"
-\x03
-\xce
-御堂
+START
+\x8b-\x01`B#\x01,'\x03\t.\\Data\\Script\\Scenario\\048SubC.Fob \x06
+start < AND2 5 DO SOMETHING \x1e<
+.\\Data\\Script\\TextFunc.fob r AND2 
+WaitTime \xa0 AND2 5
+SCE048_020\x1f\xc0 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\xecZ
+\xce御堂
 　「おい、柏木。@お前なにやってんだよ……？」@
 
 /*■CG19　表示（ノンエフェクト）↑のCG表示にあわせられるとヨシ！*/\a7,-1,-1,0,\a0,18,1,0,/*▲BGM　Track11　再生*/\a2,-1,11,1,\a6,0,0,0,　全員が呆気にとられた顔で御堂を見やり、それから御堂の視線
@@ -81,51 +20,11 @@ SCE048_020
 主体性もなかった。@彼は完璧な脇役であり、別の主役なしでは舞
 台に存在していられない。@そんな男だった。\
 
- 
-\x1e
-\r
-\x1f
-\x04\x01
-\x0c
-\x02
-"
-\x03
-\x07
-.\\Data\\Script\\TextFunc.Fob
-\x81\x1f
-\\\x04
-\x1e
-\x02
-\x03
-\x02
-TextOn
-\x81\x1f
-\x8a\x04
-\x1e
-\x02
-5
-\x03
-\x03
-SCE048_021
-\x1f
-\xa6\x04
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-\xf0Z
-\x0c
-"
-\x03
-\x9c
-　その柏木が、主役となっていた。@
+ DO SOMETHING \x1f\x04\x01
+.\\Data\\Script\\TextFunc.Fob \\\x04
+TextOn \x8a\x04 AND2 5
+SCE048_021\x1f\xa6\x04 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\xf0Z
+\x9c　その柏木が、主役となっていた。@
 　トイレ中の注目を一身に浴びていた。@
 　だから……@
 　だから笑っているのだろうか？@
@@ -145,45 +44,9 @@ SCE048_021
 　シャープペンが突き刺さった耳の穴からは、どす黒い血がたら
 　たらと滝のようにあふれ出している。\
 
- 
-\x1e
-\r
-\x1f
-\xea\x04
-\x0c
-\x02
-"
-\x1f
-\\\x04
-\x1e
-\x02
-\x1f
-\x8a\x04
-\x1e
-\x02
-5
-\x03
-\x03
-SCE048_022
-\x1f
-\x94\x07
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-\xf4Z
-\x0c
-"
-\x03
-J
-柏木
+ DO SOMETHING \x1f\xea\x04 AND "\x1f\\\x04 AND2 \x1f\x8a\x04 AND2 5
+SCE048_022\x1f\x94\x07 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\xf4Z
+J柏木
 　「おれ的にすげえ、つらい！」@
 
 　柏木の眼から、ほろほろと涙があふれ出した。@
@@ -196,45 +59,9 @@ J
 　柏木はいいながら、シャープペンのヘッドをカチカチカチカチ
 　とノックした。\
 
- 
-\x1e
-\r
-\x1f
-\xd8\x07
-\x0c
-\x02
-"
-\x1f
-\\\x04
-\x1e
-\x02
-\x1f
-\x8a\x04
-\x1e
-\x02
-5
-\x03
-\x03
-SCE048_023
-\x1f
-:\t
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-\xf8Z
-\x0c
-"
-\x03
-]
-柏木
+ DO SOMETHING \x1f\xd8\x07 AND "\x1f\\\x04 AND2 \x1f\x8a\x04 AND2 5
+SCE048_023\x1f:\t AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\xf8Z
+]柏木
 　「おれれれれれれれれれれれ」@
 
 　カチカチカチカチカチカチカチ。@
@@ -247,45 +74,9 @@ SCE048_023
 御堂
 　「芯だよ……」\
 
- 
-\x1e
-\r
-\x1f
-~\t
-\x0c
-\x02
-"
-\x1f
-\\\x04
-\x1e
-\x02
-\x1f
-\x8a\x04
-\x1e
-\x02
-5
-\x03
-\x03
-SCE048_024
-\x1f
-,\x0b
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-\xfcZ
-\x0c
-"
-\x03
+ DO SOMETHING \x1f~\t AND "\x1f\\\x04 AND2 \x1f\x8a\x04 AND2 5
+SCE048_024\x1f,\x0b AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\xfcZ
 \xa0
-
 　御堂の声は、間抜けな冗談のように響いた。@
 　芯だよ。@
 　誰も笑わなかった。@
@@ -302,45 +93,9 @@ SCE048_024
 　おれたちは呆然とそんな柏木の泣き笑いを見守っていたが、や
 　がて\
 
- 
-\x1e
-\r
-\x1f
-p\x0b
-\x0c
-\x02
-"
-\x1f
-\\\x04
-\x1e
-\x02
-\x1f
-\x8a\x04
-\x1e
-\x02
-5
-\x03
-\x03
-SCE048_025
-\x1f
-*\x0e
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-[
-\x0c
-"
-\x03
-\xb7
-柏木
+ DO SOMETHING \x1fp\x0b AND "\x1f\\\x04 AND2 \x1f\x8a\x04 AND2 5
+SCE048_025\x1f*\x0e AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e[
+\xb7柏木
 　「いてえ」@
 
 　柏木がぽつりとつぶやいた。@
@@ -358,45 +113,9 @@ SCE048_025
 　った。@
 　あとには拓司となたね、そして柏木の死体だけが残された。\
 
- 
-\x1e
-\r
-\x1f
-n\x0e
-\x0c
-\x02
-"
-\x1f
-\\\x04
-\x1e
-\x02
-\x1f
-\x8a\x04
-\x1e
-\x02
-5
-\x03
-\x03
-SCE048_026
-\x1f
-\x84\x11
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-\x04[
-\x0c
-"
-\x03
-\x9c
-なたね
+ DO SOMETHING \x1fn\x0e AND "\x1f\\\x04 AND2 \x1f\x8a\x04 AND2 5
+SCE048_026\x1f\x84\x11 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\x04[
+\x9cなたね
 　「……始まったのね」@
 拓司
 　「え？」@
@@ -416,45 +135,9 @@ SCE048_026
 ていまさらという気もしたが、そうするのが礼儀のような気がし
 た。\
 
- 
-\x1e
-\r
-\x1f
-\xc8\x11
-\x0c
-\x02
-"
-\x1f
-\\\x04
-\x1e
-\x02
-\x1f
-\x8a\x04
-\x1e
-\x02
-5
-\x03
-\x03
-SCE048_027
-\x1f
-r\x14
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-\x08[
-\x0c
-"
-\x03
-w
-拓司
+ DO SOMETHING \x1f\xc8\x11 AND "\x1f\\\x04 AND2 \x1f\x8a\x04 AND2 5
+SCE048_027\x1fr\x14 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\x08[
+w拓司
 　「だ、大丈夫かい？」@
 なたね
 　「……。始まったのね」@
@@ -471,45 +154,9 @@ w
 　く言い直した。@正確にいうのといわないのとでは、そこに大き
 　な違いがあるとでもいいたそうな口調だ。\
 
- 
-\x1e
-\r
-\x1f
-\xb6\x14
-\x0c
-\x02
-"
-\x1f
-\\\x04
-\x1e
-\x02
-\x1f
-\x8a\x04
-\x1e
-\x02
-5
-\x03
-\x03
-SCE048_028
-\x1f
-\xcc\x16
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-\x0c[
-\x0c
-"
-\x03
-\xc5
-なたね
+ DO SOMETHING \x1f\xb6\x14 AND "\x1f\\\x04 AND2 \x1f\x8a\x04 AND2 5
+SCE048_028\x1f\xcc\x16 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\x0c[
+\xc5なたね
 　「４６億年前、やつらは地球の地下にいくつもの『シード』を埋
 　　め込んだの。@やがて人類が宇宙に進出するときがきて……実
 　　際、いまがそのときなんだけれど……そのときに人類が『適
@@ -530,45 +177,9 @@ SCE048_028
 　　殺こそが幸福へ至る道だと信じ込んで……彼のように自殺し
 　　てしまうの」\
 
- 
-\x1e
-\r
-\x1f
-\x10\x17
-\x0c
-\x02
-"
-\x1f
-\\\x04
-\x1e
-\x02
-\x1f
-\x8a\x04
-\x1e
-\x02
-5
-\x03
-\x03
-SCE048_029
-\x1f
-^\x1a
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-\x10[
-\x0c
-"
-\x03
-\xbb
-拓司
+ DO SOMETHING \x1f\x10\x17 AND "\x1f\\\x04 AND2 \x1f\x8a\x04 AND2 5
+SCE048_029\x1f^\x1a AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\x10[
+\xbb拓司
 　「……自殺波動？」@
 なたね
 　「そう！　波動よ！　エンケリュスムサベツエンカクジサツハ
@@ -588,45 +199,9 @@ SCE048_029
 　　す究極の侵略兵器で、あなたにはわからないけど私にはわか
 　　るのよ！　なぜなら……」\
 
- 
-\x1e
-\r
-\x1f
-\xa2\x1a
-\x0c
-\x02
-"
-\x1f
-\\\x04
-\x1e
-\x02
-\x1f
-\x8a\x04
-\x1e
-\x02
-5
-\x03
-\x03
-SCE048_030
-\x1f
-\xc8\x1d
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-\x14[
-\x0c
-"
-\x03
-D
-拓司
+ DO SOMETHING \x1f\xa2\x1a AND "\x1f\\\x04 AND2 \x1f\x8a\x04 AND2 5
+SCE048_030\x1f\xc8\x1d AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\x14[
+D拓司
 　「雲居さん！」@
 
 　拓司はなたねを制した。@聞いていると自分までおかしくなって
@@ -639,45 +214,9 @@ D
 拓司
 　「……」\
 
- 
-\x1e
-\r
-\x1f
-\x0c\x1e
-\x0c
-\x02
-"
-\x1f
-\\\x04
-\x1e
-\x02
-\x1f
-\x8a\x04
-\x1e
-\x02
-5
-\x03
-\x03
-SCE048_031
-\x1f
-V\x1f
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-\x18[
-\x0c
-"
-\x03
-\xc5
-なたね
+ DO SOMETHING \x1f\x0c\x1e AND "\x1f\\\x04 AND2 \x1f\x8a\x04 AND2 5
+SCE048_031\x1fV\x1f AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\x18[
+\xc5なたね
 　「エンケリュスは私の身体の中に、たくさんいやらしい液を流
 　　し込んだの。@気持ち悪かった。@私をレイプしたのは、正確に
 　　言うと宇宙人じゃなくてエンケリュス。@いま、わかったこと
@@ -695,45 +234,9 @@ V\x1f
 　しれない。@いずれにせよ、そこに意味などないのだ@
 　－－拓司はそう思った。\
 
- 
-\x1e
-\r
-\x1f
-\x9a\x1f
-\x0c
-\x02
-"
-\x1f
-\\\x04
-\x1e
-\x02
-\x1f
-\x8a\x04
-\x1e
-\x02
-5
-\x03
-\x03
-SCE048_032
-\x1f
-\xe8"
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-\x1c[
-\x0c
-"
-\x03
-[
-拓司
+ DO SOMETHING \x1f\x9a\x1f AND "\x1f\\\x04 AND2 \x1f\x8a\x04 AND2 5
+SCE048_032\x1f\xe8" AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\x1c[
+[拓司
 　「そんなことより、早く柏木のことを、先生なり警察なりに報
 　　せないと！」@
 なたね
@@ -749,68 +252,11 @@ SCE048_032
 
 　拓司の脇を通り抜け、鏡に向かって髪の毛を整え始める。\
 
- 
-\x1e
-\r
-\x1f
-,#
-\x0c
-\x02
-"
-\x1f
-\\\x04
-\x1e
-\x02
-\x1f
-\x8a\x04
-\x1e
-\x02
-5
- 
-\x1e
-\r
-\x1e
-\xc8
-\x0c
-\x02
-"
-\x03
-\x06
-.\\Data\\Script\\Bg.Fob
-sv\x81\x1f
-\xec$
-\x1e
-\x02
-\x03
-\x04
-BgAutoFadeIn
-sv\x81\x1f
-\x16%
-\x1e
-\x02
-5
-\x03
-\x03
-SCE048_033
-\x1f
-:%
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
- [
-\x0c
-"
-\x03
-A
-なたね
+ DO SOMETHING \x1f,# AND "\x1f\\\x04 AND2 \x1f\x8a\x04 AND2 5 DO SOMETHING \x1e\xc8
+.\\Data\\Script\\Bg.Fob \xec$
+BgAutoFadeIn \x16% AND2 5
+SCE048_033\x1f:% AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e [
+Aなたね
 　「あーあ、こんなにばさばさになっちゃった。@困ったなあ。い
 　　やだなあ」@
 
@@ -818,49 +264,6 @@ A
 　っくりしていて、見ているとなにか時間が徐々に停滞してゆく
 　ような、そんな不安な気持ちになった。\
 
- 
-\x1e
-\r
-\x1f
-~%
-\x0c
-\x02
-"
-\x1f
-\\\x04
-\x1e
-\x02
-\x1f
-\x8a\x04
-\x1e
-\x02
-5
-\x03
-\x06
-.\\Data\\Script\\Bgm.Fob
-v\x81\x1f
-\xbc&
-\x1e
-\x02
-\x03
-\x02
-StopCD
-\x81\x1f
-\xe6&
-\x1e
-\x02
-5
-\x1f
-\\\x04
-\x1e
-\x02
-\x03
-\x03
-TextClose
-v\x81\x1f
-\x0e'
-\x1e
-\x02
-5
-6
-\xf1
+ DO SOMETHING \x1f~% AND "\x1f\\\x04 AND2 \x1f\x8a\x04 AND2 5\x03\x06.\\Data\\Script\\Bgm.Fob \xbc&
+StopCD \xe6& AND2 5\x1f\\\x04 AND2 
+TextClose \x0e' AND2 56\xf1

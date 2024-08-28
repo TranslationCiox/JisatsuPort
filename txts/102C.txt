@@ -1,33 +1,7 @@
-\x01
-start
-\xef
-i\x01C
-#\x1f
-\x01
-`B#\x01
-\xd0\x19
-\x03
-\x03
-SCE102_001
-\x1f
-\x06
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-\xaf
-\x0c
-"
-\x03
+START
+#\x1f\x01`B#\x01\xd0\x19
+SCE102_001\x1f\x06 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\xaf
 \x11
-
 
 
 
@@ -39,51 +13,11 @@ SCE102_001
 
 　　　　　　　　　　　　　『５日目』\
 
- 
-\x1e
-\r
-\x1f
-J
-\x0c
-\x02
-"
-\x03
-\x07
-.\\Data\\Script\\TextFunc.Fob
-\x81\x1f
-\xae
-\x1e
-\x02
-\x03
-\x02
-TextOn
-\x81\x1f
-\xdc
-\x1e
-\x02
-5
-\x03
-\x03
-SCE102_002
-\x1f
-\xf8
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-\x04\xaf
-\x0c
-"
-\x03
-\xa5
-早桃の様子がおかしいことに気づいたのは、カンナだった。@
+ DO SOMETHING \x1fJ
+.\\Data\\Script\\TextFunc.Fob \xae
+TextOn \xdc AND2 5
+SCE102_002\x1f\xf8 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\x04\xaf
+\xa5早桃の様子がおかしいことに気づいたのは、カンナだった。@
 拓司にそっと耳打ちする。@
 /*■CG33　表示（クロスフェード）*/\a7,-2,-2,0,\a0,32,2,0,\a6,-2,0,0,/*▲BGM　Track09　再生*/\a2,-1,9,1,
 カンナ
@@ -102,68 +36,11 @@ SCE102_002
 
 カンナは肩をすくめただけで無言だった。\
 
- 
-\x1e
-\r
-\x1f
-<\x01
-\x0c
-\x02
-"
-\x1f
-\xae
-\x1e
-\x02
-\x1f
-\xdc
-\x1e
-\x02
-5
- 
-\x1e
-\r
-\x1e
-\xc8
-\x0c
-\x02
-"
-\x03
-\x06
-.\\Data\\Script\\Bg.Fob
-sv\x81\x1f
-$\x04
-\x1e
-\x02
-\x03
-\x04
-BgAutoFadeIn
-sv\x81\x1f
-N\x04
-\x1e
-\x02
-5
-\x03
-\x03
-SCE102_003
-\x1f
-r\x04
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-\x08\xaf
-\x0c
-"
-\x03
-j
-とりあえず拓司は、早桃の様子を見ることにした。@
+ DO SOMETHING \x1f<\x01 AND "\x1f\xae AND2 \x1f\xdc AND2 5 DO SOMETHING \x1e\xc8
+.\\Data\\Script\\Bg.Fob $\x04
+BgAutoFadeIn N\x04 AND2 5
+SCE102_003\x1fr\x04 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\x08\xaf
+jとりあえず拓司は、早桃の様子を見ることにした。@
 午前中、早桃は元気を装っていたが、午後になると気力も尽きた
 のか、ぐったりと壁にもたれかかって動かなくなった。@
 誰の目からも、体調不良は明らかだった。@
@@ -182,45 +59,9 @@ j
 なたね
 　「……」\
 
- 
-\x1e
-\r
-\x1f
-\xb6\x04
-\x0c
-\x02
-"
-\x1f
-\xae
-\x1e
-\x02
-\x1f
-\xdc
-\x1e
-\x02
-5
-\x03
-\x03
-SCE102_004
-\x1f
-\x98\x06
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-\x0c\xaf
-\x0c
-"
-\x03
-p
-拓司
+ DO SOMETHING \x1f\xb6\x04 AND "\x1f\xae AND2 \x1f\xdc AND2 5
+SCE102_004\x1f\x98\x06 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\x0c\xaf
+p拓司
 　「聞こえなかったか？@　風邪薬をくれ」@
 なたね
 　「風邪薬はあるけれど……本当に早桃さんに必要なのかしら？」
@@ -239,45 +80,9 @@ p
 拓司
 　「……」\
 
- 
-\x1e
-\r
-\x1f
-\xdc\x06
-\x0c
-\x02
-"
-\x1f
-\xae
-\x1e
-\x02
-\x1f
-\xdc
-\x1e
-\x02
-5
-\x03
-\x03
-SCE102_005
-\x1f
-\xd6\x08
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-\x10\xaf
-\x0c
-"
-\x03
-\x87
-なたね
+ DO SOMETHING \x1f\xdc\x06 AND "\x1f\xae AND2 \x1f\xdc AND2 5
+SCE102_005\x1f\xd6\x08 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\x10\xaf
+\x87なたね
 　「伝染病にかかるなんて、自己管理が足りない証拠よ。@
 　　薬は貴重品よ。@最終聖戦に向けていくらあっても足りないく
 　　らい。@それを、早桃さんのような……不適格者に投下するの
@@ -292,45 +97,9 @@ SCE102_005
 らみつけている。@虚を突かれたのか、なたねも珍しく驚きの表情
 を浮かべている。\
 
- 
-\x1e
-\r
-\x1f
-\x1a\t
-\x0c
-\x02
-"
-\x1f
-\xae
-\x1e
-\x02
-\x1f
-\xdc
-\x1e
-\x02
-5
-\x03
-\x03
-SCE102_006
-\x1f
-p\x0b
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-\x14\xaf
-\x0c
-"
-\x03
-\xae
-錦城
+ DO SOMETHING \x1f\x1a\t AND "\x1f\xae AND2 \x1f\xdc AND2 5
+SCE102_006\x1fp\x0b AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\x14\xaf
+\xae錦城
 　「雲居さん。@あなたは最初、誰にでも中立だと主張したわよ
 　　ね？@　だからこそ、私たちはあなたに物資の管理人を任せた
 　　の。@あなたの地位は、ただそれだけの理由に根拠したものな
@@ -348,45 +117,9 @@ p\x0b
 　　ゃないかしら？@　この場における公平さは、あなたの主観が
 　　決めることじゃないわ。@それに－－」\
 
- 
-\x1e
-\r
-\x1f
-\xb4\x0b
-\x0c
-\x02
-"
-\x1f
-\xae
-\x1e
-\x02
-\x1f
-\xdc
-\x1e
-\x02
-5
-\x03
-\x03
-SCE102_007
-\x1f
-\xa6\x0e
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-\x18\xaf
-\x0c
-"
-\x03
-\xb2
-なたね
+ DO SOMETHING \x1f\xb4\x0b AND "\x1f\xae AND2 \x1f\xdc AND2 5
+SCE102_007\x1f\xa6\x0e AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\x18\xaf
+\xb2なたね
 　「いえ、それは……」@
 錦城
 　「－－それに！」@
@@ -406,45 +139,9 @@ SCE102_007
 がぱくぱくと震えるだけで言葉が出てこない。@まるで、あふれで
 る言葉が喉に詰まって、窒息寸前であるかのように見える。\
 
- 
-\x1e
-\r
-\x1f
-\xea\x0e
-\x0c
-\x02
-"
-\x1f
-\xae
-\x1e
-\x02
-\x1f
-\xdc
-\x1e
-\x02
-5
-\x03
-\x03
-SCE102_008
-\x1f
-\xec\x11
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-\x1c\xaf
-\x0c
-"
-\x03
-\x81
-錦城
+ DO SOMETHING \x1f\xea\x0e AND "\x1f\xae AND2 \x1f\xdc AND2 5
+SCE102_008\x1f\xec\x11 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\x1c\xaf
+\x81錦城
 　「わかってもらえたかしら？@　だったら黙って薬を持ってきて
 　　ちょうだい。@……さあ！」@
 
@@ -460,45 +157,9 @@ SCE102_008
 紅葉
 　「……なんなのよ、あの態度！」\
 
- 
-\x1e
-\r
-\x1f
-0\x12
-\x0c
-\x02
-"
-\x1f
-\xae
-\x1e
-\x02
-\x1f
-\xdc
-\x1e
-\x02
-5
-\x03
-\x03
-SCE102_009
-\x1f
-n\x14
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
- \xaf
-\x0c
-"
-\x03
-\x9c
-床に散らばった風邪薬を拾い集めながら、紅葉が舌打ちした。@
+ DO SOMETHING \x1f0\x12 AND "\x1f\xae AND2 \x1f\xdc AND2 5
+SCE102_009\x1fn\x14 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e \xaf
+\x9c床に散らばった風邪薬を拾い集めながら、紅葉が舌打ちした。@
 
 紅葉
 　「拓司、あの子、やっぱりおかしいよ。@あんな子に鍵の管理任
@@ -515,60 +176,10 @@ n\x14
 ういった部分になると話は別だ。@妄想の産物であるとしか思えな
 い。\
 
- 
-\x1e
-\r
-\x1f
-\xb2\x14
-\x0c
-\x02
-"
-\x1f
-\xae
-\x1e
-\x02
-\x1f
-\xdc
-\x1e
-\x02
-5
-\x03
-\x06
-.\\Data\\Script\\Bgm.Fob
-v\x81\x1f
-\\\x17
-\x1e
-\x02
-\x03
-\x02
-StopCD
-\x81\x1f
-\x86\x17
-\x1e
-\x02
-5
-\x03
-\x03
-SCE102_010
-\x1f
-\xa2\x17
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-$\xaf
-\x0c
-"
-\x03
-C
-紅葉
+ DO SOMETHING \x1f\xb2\x14 AND "\x1f\xae AND2 \x1f\xdc AND2 5\x03\x06.\\Data\\Script\\Bgm.Fob \\\x17
+StopCD \x86\x17 AND2 5
+SCE102_010\x1f\xa2\x17 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e$\xaf
+C紅葉
 　「……ねえ、拓司。@鍵、とっちゃおうか？」@
 拓司
 　「え？」@
@@ -580,56 +191,12 @@ C
 　「そしたら、錦城先生に鍵を管理してもらえばいいじゃない。@
 　　そのほうが、絶対安全だよ？」\
 
- 
-\x1e
-\r
-\x1f
-\xe6\x17
-\x0c
-\x02
-"
-\x1f
-\xae
-\x1e
-\x02
-\x1f
-\xdc
-\x1e
-\x02
-5
-\x03
-\x10
-\o「それはやめておこう」
+ DO SOMETHING \x1f\xe6\x17 AND "\x1f\xae AND2 \x1f\xdc AND2 5\x03\x10
+CHOICE
+「それはやめておこう」
 「いいかもしれないな」
-\l0,2,\E
- 
-\x1e
-\r
-\x1f
-,\x19
-\x0c
-\x02
-"
-\x1f
-\xae
-\x1e
-\x02
-\x1f
-\xdc
-\x1e
-\x02
-5
-\x1f
-\xae
-\x1e
-\x02
-\x03
-\x03
-TextClose
-v\x81\x1f
-\xb2\x19
-\x1e
-\x02
-5
-6
-\xf1
+\l0,2,
+ENDCHOICE
+
+ DO SOMETHING \x1f,\x19 AND "\x1f\xae AND2 \x1f\xdc AND2 5\x1f\xae AND2 
+TextClose \xb2\x19 AND2 56\xf1

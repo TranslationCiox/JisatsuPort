@@ -1,48 +1,8 @@
-\x01
-start
-\xef
-i\x01C
-\x7f\x11
-\x01
-`B#\x01
-L\x0e
-\x03
-\x06
-.\\Data\\Script\\Bgm.Fob
-v\x81\x1f
-\x06
-\x1e
-\x02
-\x03
-\x02
-StopCD
-\x81\x1f
-0
-\x1e
-\x02
-5
-\x03
-\x03
-SCE079_001
-\x1f
-L
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-\x10\x8b
-\x0c
-"
-\x03
-\xb1
-/*▲SE28　再生（終了まで待たず先へ）*/\a2,0,28,0,どくん、どくん、どくん@
+START
+\x7f\x11\x01`B#\x01L\x0e\x03\x06.\\Data\\Script\\Bgm.Fob \x06
+StopCD 0 AND2 5
+SCE079_001\x1fL AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\x10\x8b
+\xb1/*▲SE28　再生（終了まで待たず先へ）*/\a2,0,28,0,どくん、どくん、どくん@
 \a4,0,0,0,心臓の音だけが耳の奥で大きく響いている。@
 静かだ。@
 あたりからは物音ひとつ聞こえてこない。@
@@ -60,51 +20,11 @@ L
 いまなら死ねるような気がする。@
 瓶からするりと抜け出せるような気がする。\
 
- 
-\x1e
-\r
-\x1f
-\x90
-\x0c
-\x02
-"
-\x03
-\x07
-.\\Data\\Script\\TextFunc.Fob
-\x81\x1f
-t\x03
-\x1e
-\x02
-\x03
-\x02
-TextOn
-\x81\x1f
-\xa2\x03
-\x1e
-\x02
-5
-\x03
-\x03
-SCE079_002
-\x1f
-\xbe\x03
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-\x14\x8b
-\x0c
-"
-\x03
+ DO SOMETHING \x1f\x90
+.\\Data\\Script\\TextFunc.Fob t\x03
+TextOn \xa2\x03 AND2 5
+SCE079_002\x1f\xbe\x03 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\x14\x8b
 M
-
 　死んじまおうかなあ。@
 　死んじまおうかなあ。@
 　死んじまおうかなあ。@
@@ -117,45 +37,9 @@ M
 死のう。@
 死のう。\
 
- 
-\x1e
-\r
-\x1f
-\x02\x04
-\x0c
-\x02
-"
-\x1f
-t\x03
-\x1e
-\x02
-\x1f
-\xa2\x03
-\x1e
-\x02
-5
-\x03
-\x03
-SCE079_003
-\x1f
-p\x05
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-\x18\x8b
-\x0c
-"
-\x03
-\xb4
-いつの間にか、足が完全に止まっている。@ただぼんやりと、廊下
+ DO SOMETHING \x1f\x02\x04 AND "\x1ft\x03 AND2 \x1f\xa2\x03 AND2 5
+SCE079_003\x1fp\x05 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\x18\x8b
+\xb4いつの間にか、足が完全に止まっている。@ただぼんやりと、廊下
 に立ちすくんでいる。@
 
 もしかしてこれが波動に侵されるということなのか？@
@@ -172,89 +56,17 @@ p\x05
 どうして涙が出るのかなど、すでにわからなかった。@
 どうしてこれを恐れていたのかなど、すでにわからなかった。\
 
- 
-\x1e
-\r
-\x1f
-\xb4\x05
-\x0c
-\x02
-"
-\x1f
-t\x03
-\x1e
-\x02
-\x1f
-\xa2\x03
-\x1e
-\x02
-5
-\x03
-\x03
-SCE079_004
-\x1f
-\xbe\x08
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-\x1c\x8b
-\x0c
-"
-\x03
-@
-学生
+ DO SOMETHING \x1f\xb4\x05 AND "\x1ft\x03 AND2 \x1f\xa2\x03 AND2 5
+SCE079_004\x1f\xbe\x08 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\x1c\x8b
+@学生
 　「……死ぬのか生きるのか、それはもう人間の幸不幸を決定す
 　　る鍵ではないような気さえしてきたのだ。@死者は完成せられ、
 　　生者は出帆の船のデッキに立ってそれに手を合わせる。@船は
 　　するする岸壁から離れる。@「死はよいものだ」……』\
 
- 
-\x1e
-\r
-\x1f
-\x02\t
-\x0c
-\x02
-"
-\x1f
-t\x03
-\x1e
-\x02
-\x1f
-\xa2\x03
-\x1e
-\x02
-5
-\x03
-\x03
-SCE079_005
-\x1f
-<\n
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
- \x8b
-\x0c
-"
-\x03
-P
-　よいものだ。@
+ DO SOMETHING \x1f\x02\t AND "\x1ft\x03 AND2 \x1f\xa2\x03 AND2 5
+SCE079_005\x1f<\n AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e \x8b
+P　よいものだ。@
 　死のう。@
 　でも道具がない。@
 　カッターがない。@
@@ -269,45 +81,9 @@ P
 　カッター。@
 　カッター。\
 
- 
-\x1e
-\r
-\x1f
-\x80\n
-\x0c
-\x02
-"
-\x1f
-t\x03
-\x1e
-\x02
-\x1f
-\xa2\x03
-\x1e
-\x02
-5
-\x03
-\x03
-SCE079_006
-\x1f
-\xfa\x0b
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-$\x8b
-\x0c
-"
-\x03
-+
-　カットするものだからカッター。@
+ DO SOMETHING \x1f\x80\n AND "\x1ft\x03 AND2 \x1f\xa2\x03 AND2 5
+SCE079_006\x1f\xfa\x0b AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e$\x8b
++　カットするものだからカッター。@
 　そうか。@
 　カッター。@
 　カッター買ったら？@
@@ -318,86 +94,11 @@ $\x8b
 　タ。@
 　ア。\
 
- 
-\x1e
-\r
-\x1f
->\x0c
-\x0c
-\x02
-"
-\x1f
-t\x03
-\x1e
-\x02
-\x1f
-\xa2\x03
-\x1e
-\x02
-5
- 
-\x1e
-\r
-\x1e
-G
-\x0c
-\x02
-"
-\x03
-\x06
-.\\Data\\Script\\Bg.Fob
-sv\x81\x1f
->\r
-\x1e
-\x02
-\x03
-\x04
-BgAutoFadeIn
-sv\x81\x1f
-h\r
-\x1e
-\x02
-5
-\x03
-\x03
-SCE079_007
-\x1f
-\x8c\r
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-(\x8b
-\x0c
-"
-\x03
+ DO SOMETHING \x1f>\x0c AND "\x1ft\x03 AND2 \x1f\xa2\x03 AND2 5 DO SOMETHING \x1eG
+.\\Data\\Script\\Bg.Fob >\r
+BgAutoFadeIn h\r AND2 5
+SCE079_007\x1f\x8c\r AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e(\x8b
 \x11
-
 　拓司は芋虫のようにはいずって、自分の教室へと向かった。\
 
- 
-\x1e
-\r
-\x1f
-\xd0\r
-\x0c
-\x02
-"
-\x1f
-t\x03
-\x1e
-\x02
-\x1f
-\xa2\x03
-\x1e
-\x02
-5
-6
-\xf1
+ DO SOMETHING \x1f\xd0\r AND "\x1ft\x03 AND2 \x1f\xa2\x03 AND2 56\xf1

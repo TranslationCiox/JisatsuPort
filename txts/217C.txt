@@ -1,33 +1,7 @@
-\x01
-start
-\xef
-i\x01C
-\x12\x13
-\x01
-`B#\x01
-\xa2\x0f
-\x03
-\x03
-SCE217_001
-\x1f
-\x06
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-\xb0b\x01
-\x0c
-"
-\x03
+START
+\x12\x13\x01`B#\x01\xa2\x0f
+SCE217_001\x1f\x06 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\xb0b\x01
 \x11
-
 
 
 
@@ -39,74 +13,13 @@ SCE217_001
 
 　　　　　　　　　　　　　『８日目』\
 
- 
-\x1e
-\r
-\x1f
-J
-\x0c
-\x02
-"
-\x03
-\x07
-.\\Data\\Script\\TextFunc.Fob
-\x81\x1f
-\xae
-\x1e
-\x02
-\x03
-\x02
-TextOn
-\x81\x1f
-\xdc
-\x1e
-\x02
-5
- 
-\x1e
-\r
-\x1e
-\n\x01
-\x0c
-\x02
-"
-\x03
-\x06
-.\\Data\\Script\\Bgm.Fob
-v\x81\x1f
-\x12\x01
-\x1e
-\x02
-\x03
-\x02
-PlayCD
-\x81\x1f
-<\x01
-\x1e
-\x02
-5
-\x03
-\x03
-SCE217_002
-\x1f
-X\x01
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-\xb4b\x01
-\x0c
-"
-\x03
-\x92
-御堂
+ DO SOMETHING \x1fJ
+.\\Data\\Script\\TextFunc.Fob \xae
+TextOn \xdc AND2 5 DO SOMETHING \x1e\n\x01
+.\\Data\\Script\\Bgm.Fob \x12\x01
+PlayCD <\x01 AND2 5
+SCE217_002\x1fX\x01 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\xb4b\x01
+\x92御堂
 　「てめえ、なにやってやがる！」@
 
 ついに、決定的な出来事が起こった。@
@@ -126,45 +39,9 @@ X\x01
 なたね
 　「……」\
 
- 
-\x1e
-\r
-\x1f
-\x9c\x01
-\x0c
-\x02
-"
-\x1f
-\xae
-\x1e
-\x02
-\x1f
-\xdc
-\x1e
-\x02
-5
-\x03
-\x03
-SCE217_003
-\x1f
-\x1e\x04
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-\xb8b\x01
-\x0c
-"
-\x03
-\xa9
-一同に取り囲まれながらも、なたねに悪びれた様子はない。@
+ DO SOMETHING \x1f\x9c\x01 AND "\x1f\xae AND2 \x1f\xdc AND2 5
+SCE217_003\x1f\x1e\x04 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\xb8b\x01
+\xa9一同に取り囲まれながらも、なたねに悪びれた様子はない。@
 射すような視線を平然と受け止め、逆に挑戦的な視線を投げ返し
 てくる。@
 
@@ -184,45 +61,9 @@ SCE217_003
 拓司
 　「……？」\
 
- 
-\x1e
-\r
-\x1f
-b\x04
-\x0c
-\x02
-"
-\x1f
-\xae
-\x1e
-\x02
-\x1f
-\xdc
-\x1e
-\x02
-5
-\x03
-\x03
-SCE217_004
-\x1f
-@\x07
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-\xbcb\x01
-\x0c
-"
-\x03
-W
-なたね
+ DO SOMETHING \x1fb\x04 AND "\x1f\xae AND2 \x1f\xdc AND2 5
+SCE217_004\x1f@\x07 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\xbcb\x01
+Wなたね
 　「……だって、私にはそれだけの価値があるから」@
 拓司
 　「……」@
@@ -234,45 +75,9 @@ W
 なたねは突如立ち上がって、早桃を指さした。@一同は呆気にとら
 れてなたねを見つめた。\
 
- 
-\x1e
-\r
-\x1f
-\x84\x07
-\x0c
-\x02
-"
-\x1f
-\xae
-\x1e
-\x02
-\x1f
-\xdc
-\x1e
-\x02
-5
-\x03
-\x03
-SCE217_005
-\x1f
-\x1a\t
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-\xc0b\x01
-\x0c
-"
-\x03
-\xe4
-なたね
+ DO SOMETHING \x1f\x84\x07 AND "\x1f\xae AND2 \x1f\xdc AND2 5
+SCE217_005\x1f\x1a\t AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\xc0b\x01
+\xe4なたね
 　「お前みたいなナア！@　生きているだけのバカタレ弱者とは違
 　　うんだ！@　自分一人じゃ何もできない弱者人種とは違って、
 　　この私は必要な……善なる宇宙生命体に選ばれた人間なんだ
@@ -290,45 +95,9 @@ SCE217_005
 御堂
 　「こいつ……完全にいかれてやがる」\
 
- 
-\x1e
-\r
-\x1f
-^\t
-\x0c
-\x02
-"
-\x1f
-\xae
-\x1e
-\x02
-\x1f
-\xdc
-\x1e
-\x02
-5
-\x03
-\x03
-SCE217_006
-\x1f
-(\r
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-\xc4b\x01
-\x0c
-"
-\x03
-M
-呆然といった御堂よりも、錦城の行動が速かった。@
+ DO SOMETHING \x1f^\t AND "\x1f\xae AND2 \x1f\xdc AND2 5
+SCE217_006\x1f(\r AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\xc4b\x01
+M呆然といった御堂よりも、錦城の行動が速かった。@
 なたねの斜め後ろに位置していた錦城は、一気になたねに接近し、
 その背中を容赦なく蹴り飛ばした。@衝撃にぐらりと姿勢を崩した
 なたねにのしかかって、錦城が叫ぶ。@
@@ -340,56 +109,12 @@ M
 
 御堂が躍りかかった。\
 
- 
-\x1e
-\r
-\x1f
-l\r
-\x0c
-\x02
-"
-\x1f
-\xae
-\x1e
-\x02
-\x1f
-\xdc
-\x1e
-\x02
-5
-\x03
-\x19
-\o「やめろ！」　拓司は必至で制止した
+ DO SOMETHING \x1fl\r AND "\x1f\xae AND2 \x1f\xdc AND2 5\x03\x19
+CHOICE
+「やめろ！」　拓司は必至で制止した
 「……」　もはや言うべき言葉は見つからなかった
-\l0,2,\E
- 
-\x1e
-\r
-\x1f
-\xda\x0e
-\x0c
-\x02
-"
-\x1f
-\xae
-\x1e
-\x02
-\x1f
-\xdc
-\x1e
-\x02
-5
-\x1f
-\xae
-\x1e
-\x02
-\x03
-\x03
-TextClose
-v\x81\x1f
-\x84\x0f
-\x1e
-\x02
-5
-6
-\xf1
+\l0,2,
+ENDCHOICE
+
+ DO SOMETHING \x1f\xda\x0e AND "\x1f\xae AND2 \x1f\xdc AND2 5\x1f\xae AND2 
+TextClose \x84\x0f AND2 56\xf1

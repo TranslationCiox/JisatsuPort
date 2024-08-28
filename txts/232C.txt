@@ -1,56 +1,9 @@
-\x01
-start
-\xef
-i\x01C
-\x0c\r
-\x01
-`B#\x01
-\xf0\n
- 
-\x1e
-\r
-\x1e
-\x04\x01
-\x0c
-\x02
-"
-\x03
-\x06
-.\\Data\\Script\\Bgm.Fob
-v\x81\x1f
- 
-\x1e
-\x02
-\x03
-\x02
-PlayCD
-\x81\x1f
-J
-\x1e
-\x02
-5
-\x03
-\x03
-SCE232_001
-\x1f
-f
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
- z\x01
-\x0c
-"
-\x03
+START
+\x0c\r\x01`B#\x01\xf0\n DO SOMETHING \x1e\x04\x01
+.\\Data\\Script\\Bgm.Fob  
+PlayCD J AND2 5
+SCE232_001\x1ff AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e z\x01
 \x13
-
 
 
 
@@ -62,51 +15,11 @@ f
 
 　　　　　　　『おんなのこと、うちゅうじん』\
 
- 
-\x1e
-\r
-\x1f
-\xaa
-\x0c
-\x02
-"
-\x03
-\x07
-.\\Data\\Script\\TextFunc.Fob
-\x81\x1f
-\x16\x01
-\x1e
-\x02
-\x03
-\x02
-TextOn
-\x81\x1f
-D\x01
-\x1e
-\x02
-5
-\x03
-\x03
-SCE232_002
-\x1f
-`\x01
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-$z\x01
-\x0c
-"
-\x03
-\xdf
-　あるところに、なたねという女の子がいました。@
+ DO SOMETHING \x1f\xaa
+.\\Data\\Script\\TextFunc.Fob \x16\x01
+TextOn D\x01 AND2 5
+SCE232_002\x1f`\x01 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e$z\x01
+\xdf　あるところに、なたねという女の子がいました。@
 
 　なたねにはお母さんがいませんでした。@お母さんはなたねが小
 さいときに病気で死んでしまったのです。@お父さんも、本当のお
@@ -124,45 +37,9 @@ $z\x01
 ＴＶは見てはいけません、と、厳しいこともなにひとついいませ
 んでした。\
 
- 
-\x1e
-\r
-\x1f
-\xa4\x01
-\x0c
-\x02
-"
-\x1f
-\x16\x01
-\x1e
-\x02
-\x1f
-D\x01
-\x1e
-\x02
-5
-\x03
-\x03
-SCE232_003
-\x1f
-Z\x05
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-(z\x01
-\x0c
-"
-\x03
-\x9e
-　なたねはお義父さんが大好きでした。@
+ DO SOMETHING \x1f\xa4\x01 AND "\x1f\x16\x01 AND2 \x1fD\x01 AND2 5
+SCE232_003\x1fZ\x05 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e(z\x01
+\x9e　なたねはお義父さんが大好きでした。@
 　だから言われなくても勉強をしましたし、ＴＶだって少ししか
 見ませんでした。@そうすればお義父さんが喜んでくれると思った
 からです。@
@@ -176,95 +53,13 @@ Z\x05
 んの声を聞くと、逆に「よし、もっとがんばろう！」と思えたの
 でした。\
 
- 
-\x1e
-\r
-\x1f
-\x9e\x05
-\x0c
-\x02
-"
-\x1f
-\x16\x01
-\x1e
-\x02
-\x1f
-D\x01
-\x1e
-\x02
-5
-\x1f
-\x16\x01
-\x1e
-\x02
-\x03
-\x03
-TextClose
-v\x81\x1f
-\\\x08
-\x1e
-\x02
-5
-\x03
-\t
-.\\Data\\Script\\Scenario\\232SubC.Fob
-\x81\x1f
-|\x08
-\x1e
-\x02
-\x03
-\x02
-start
-v\x81\x1f
-\xb2\x08
-\x1e
-\x02
-5
- 
-\x1e
-\r
-\x1e
-\xc8
-\x0c
-\x02
-"
-\x03
-\x06
-.\\Data\\Script\\Bg.Fob
-sv\x81\x1f
-\xe8\x08
-\x1e
-\x02
-\x03
-\x04
-BgAutoFadeIn
-sv\x81\x1f
-\x12\t
-\x1e
-\x02
-5
-\x03
-\x03
-SCE232_013
-\x1f
-6\t
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-Pz\x01
-\x0c
-"
-\x03
-?
-　どこかへ走ってゆく汽車の@
+ DO SOMETHING \x1f\x9e\x05 AND "\x1f\x16\x01 AND2 \x1fD\x01 AND2 5\x1f\x16\x01 AND2 
+TextClose \\\x08 AND2 5\x03\t.\\Data\\Script\\Scenario\\232SubC.Fob |\x08
+start \xb2\x08 AND2 5 DO SOMETHING \x1e\xc8
+.\\Data\\Script\\Bg.Fob \xe8\x08
+BgAutoFadeIn \x12\t AND2 5
+SCE232_013\x1f6\t AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1ePz\x01
+?　どこかへ走ってゆく汽車の@
 　全財産ぶんの切符を　くださいな@
 　どこかへ走ってゆく汽車の@
 　全財産ぶんの切符を　おねがいですからくださいな@
@@ -272,43 +67,5 @@ Pz\x01
 　ただもう　わたしは@
 　ここからはなれてゆきたいのです\
 
- 
-\x1e
-\r
-\x1f
-z\t
-\x0c
-\x02
-"
-\x1f
-\x16\x01
-\x1e
-\x02
-\x1f
-D\x01
-\x1e
-\x02
-5
-\x1f
- 
-\x1e
-\x02
-\x03
-\x02
-StopCD
-\x81\x1f
-\xbc\n
-\x1e
-\x02
-5
-\x1f
-\x16\x01
-\x1e
-\x02
-\x1f
-\\\x08
-\x1e
-\x02
-5
-6
-\xf1
+ DO SOMETHING \x1fz\t AND "\x1f\x16\x01 AND2 \x1fD\x01 AND2 5\x1f 
+StopCD \xbc\n AND2 5\x1f\x16\x01 AND2 \x1f\\\x08 AND2 56\xf1

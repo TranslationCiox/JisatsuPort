@@ -1,56 +1,9 @@
-\x01
-start
-\xef
-i\x01C
-\x0e\x13
-\x01
-`B#\x01
-0\x10
- 
-\x1e
-\r
-\x1e
-\x06\x01
-\x0c
-\x02
-"
-\x03
-\x06
-.\\Data\\Script\\Bgm.Fob
-v\x81\x1f
- 
-\x1e
-\x02
-\x03
-\x02
-PlayCD
-\x81\x1f
-J
-\x1e
-\x02
-5
-\x03
-\x03
-SCE049_001
-\x1f
-f
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-0\\
-\x0c
-"
-\x03
-\xe6
-廊下に飛び出すと、そこには現実の空気があった。@
+START
+\x0e\x13\x01`B#\x010\x10 DO SOMETHING \x1e\x06\x01
+.\\Data\\Script\\Bgm.Fob  
+PlayCD J AND2 5
+SCE049_001\x1ff AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e0\\
+\xe6廊下に飛び出すと、そこには現実の空気があった。@
 空気というより、気配というべきか……静かだが、たしか多くの
 人間の気配が感じられる。@馴染みある学園の空気……いかにもな
 日常の気配だ。@
@@ -69,51 +22,11 @@ f
 なくなる前に、なんらかの処置を施して、自分となたねに降りか
 かる火の粉を少しでも減らしておいたほうがいいだろう。\
 
- 
-\x1e
-\r
-\x1f
-\xaa
-\x0c
-\x02
-"
-\x03
-\x07
-.\\Data\\Script\\TextFunc.Fob
-\x81\x1f
-b\x04
-\x1e
-\x02
-\x03
-\x02
-TextOn
-\x81\x1f
-\x90\x04
-\x1e
-\x02
-5
-\x03
-\x03
-SCE049_002
-\x1f
-\xac\x04
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-4\\
-\x0c
-"
-\x03
-q
-拓司は無人の廊下を足早に通り抜け、階段をとんとんと駆け下り
+ DO SOMETHING \x1f\xaa
+.\\Data\\Script\\TextFunc.Fob b\x04
+TextOn \x90\x04 AND2 5
+SCE049_002\x1f\xac\x04 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e4\\
+q拓司は無人の廊下を足早に通り抜け、階段をとんとんと駆け下り
 た。@
 
 拓司
@@ -131,45 +44,9 @@ q
 　かが通り抜けた。@
 　あまりに突然のことに、拓司は思わず小さく悲鳴をもらした。\
 
- 
-\x1e
-\r
-\x1f
-\xf0\x04
-\x0c
-\x02
-"
-\x1f
-b\x04
-\x1e
-\x02
-\x1f
-\x90\x04
-\x1e
-\x02
-5
-\x03
-\x03
-SCE049_003
-\x1f
-\xee\x06
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-8\\
-\x0c
-"
-\x03
-k
-なたね
+ DO SOMETHING \x1f\xf0\x04 AND "\x1fb\x04 AND2 \x1f\x90\x04 AND2 5
+SCE049_003\x1f\xee\x06 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e8\\
+kなたね
 　「どうしたの、虎菱くん？」@
 拓司
 　「いま……誰かが……」@
@@ -189,45 +66,9 @@ k
 なたね
 　「大丈夫、虎菱くん？」\
 
- 
-\x1e
-\r
-\x1f
-2\x07
-\x0c
-\x02
-"
-\x1f
-b\x04
-\x1e
-\x02
-\x1f
-\x90\x04
-\x1e
-\x02
-5
-\x03
-\x03
-SCE049_004
-\x1f
-\x18\t
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-<\\
-\x0c
-"
-\x03
-\xa0
-拓司
+ DO SOMETHING \x1f2\x07 AND "\x1fb\x04 AND2 \x1f\x90\x04 AND2 5
+SCE049_004\x1f\x18\t AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e<\\
+\xa0拓司
 　「あ、ああ。なんでもない……」@
 
 　そうとしかいいようがない。@実際、なにもありはしないのだか
@@ -247,45 +88,9 @@ SCE049_004
 　ちいさくつぶやく。@ぎくりとして見ると、なたねは真剣な表情
 　で、あたりを見回している。\
 
- 
-\x1e
-\r
-\x1f
-\\\t
-\x0c
-\x02
-"
-\x1f
-b\x04
-\x1e
-\x02
-\x1f
-\x90\x04
-\x1e
-\x02
-5
-\x03
-\x03
-SCE049_005
-\x1f
-\x16\x0c
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-@\\
-\x0c
-"
-\x03
-q
-なたね
+ DO SOMETHING \x1f\\\t AND "\x1fb\x04 AND2 \x1f\x90\x04 AND2 5
+SCE049_005\x1f\x16\x0c AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e@\\
+qなたね
 　「虎菱くんも感じるのね？@　この学園は……いいえ、この街は
 　　すでに、エンケリュスの自殺波動の勢力下にあるわ」@
 拓司
@@ -299,45 +104,9 @@ q
 　込まれるのはごめんだった。@
 　あるいは－－尋ねるのが怖かったのかもしれない。\
 
- 
-\x1e
-\r
-\x1f
-Z\x0c
-\x0c
-\x02
-"
-\x1f
-b\x04
-\x1e
-\x02
-\x1f
-\x90\x04
-\x1e
-\x02
-5
-\x03
-\x03
-SCE049_006
-\x1f
-X\x0e
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-D\\
-\x0c
-"
-\x03
-B
-　３階まで降りた拓司は、階段の正面の教室へと駆け込んだ。@
+ DO SOMETHING \x1fZ\x0c AND "\x1fb\x04 AND2 \x1f\x90\x04 AND2 5
+SCE049_006\x1fX\x0e AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1eD\\
+B　３階まで降りた拓司は、階段の正面の教室へと駆け込んだ。@
 　……いや、駆け込もうとしたところで、背後からガッシと肩を
 　掴まれ、静止させられた。@
 　なたねが、怖い顔で拓司を見つめている。@
@@ -345,46 +114,6 @@ B
 なたね
 　「駄目。@この教室はもう駄目だわ。@……見て」\
 
- 
-\x1e
-\r
-\x1f
-\x9c\x0e
-\x0c
-\x02
-"
-\x1f
-b\x04
-\x1e
-\x02
-\x1f
-\x90\x04
-\x1e
-\x02
-5
-\x1f
- 
-\x1e
-\x02
-\x03
-\x02
-StopCD
-\x81\x1f
-\xea\x0f
-\x1e
-\x02
-5
-\x1f
-b\x04
-\x1e
-\x02
-\x03
-\x03
-TextClose
-v\x81\x1f
-\x12\x10
-\x1e
-\x02
-5
-6
-\xf1
+ DO SOMETHING \x1f\x9c\x0e AND "\x1fb\x04 AND2 \x1f\x90\x04 AND2 5\x1f 
+StopCD \xea\x0f AND2 5\x1fb\x04 AND2 
+TextClose \x12\x10 AND2 56\xf1

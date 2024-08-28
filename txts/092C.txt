@@ -1,71 +1,10 @@
-\x01
-start
-\xef
-i\x01C
-I\x0e
-\x01
-`B#\x01
-\\\x0b
-\x03
-\x06
-.\\Data\\Script\\Bgm.Fob
-v\x81\x1f
-\x06
-\x1e
-\x02
-\x03
-\x02
-StopCD
-\x81\x1f
-0
-\x1e
-\x02
-5
- 
-\x1e
-\r
-\x1e
-\xc8
-\x0c
-\x02
-"
-\x03
-\x06
-.\\Data\\Script\\Bg.Fob
-sv\x81\x1f
-f
-\x1e
-\x02
-\x03
-\x04
-BgAutoFadeIn
-sv\x81\x1f
-\x90
-\x1e
-\x02
-5
-\x03
-\x03
-SCE092_001
-\x1f
-\xb4
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-`\x9f
-\x0c
-"
-\x03
+START
+I\x0e\x01`B#\x01\\\x0b\x03\x06.\\Data\\Script\\Bgm.Fob \x06
+StopCD 0 AND2 5 DO SOMETHING \x1e\xc8
+.\\Data\\Script\\Bg.Fob f
+BgAutoFadeIn \x90 AND2 5
+SCE092_001\x1f\xb4 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e`\x9f
 \x11
-
 
 
 
@@ -77,51 +16,11 @@ SCE092_001
 
 　　　　　　　　　　　　　　『２日目』\
 
- 
-\x1e
-\r
-\x1f
-\xf8
-\x0c
-\x02
-"
-\x03
-\x07
-.\\Data\\Script\\TextFunc.Fob
-\x81\x1f
-\\\x01
-\x1e
-\x02
-\x03
-\x02
-TextOn
-\x81\x1f
-\x8a\x01
-\x1e
-\x02
-5
-\x03
-\x03
-SCE092_002
-\x1f
-\xa6\x01
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-d\x9f
-\x0c
-"
-\x03
-\x9b
-晴れ。@
+ DO SOMETHING \x1f\xf8
+.\\Data\\Script\\TextFunc.Fob \\\x01
+TextOn \x8a\x01 AND2 5
+SCE092_002\x1f\xa6\x01 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1ed\x9f
+\x9b晴れ。@
 水の分配について、御堂が再びゴネはじめた。@
 /*■CG31　表示（クロスフェード）*/\a7,0,0,0,\a0,30,0,0,\a6,0,0,0,/*▲BGM　Track10　再生　*/\a2,-1,10,1,
 御堂
@@ -139,45 +38,9 @@ d\x9f
 御堂
 　「なに？」\
 
- 
-\x1e
-\r
-\x1f
-\xea\x01
-\x0c
-\x02
-"
-\x1f
-\\\x01
-\x1e
-\x02
-\x1f
-\x8a\x01
-\x1e
-\x02
-5
-\x03
-\x03
-SCE092_003
-\x1f
-\x90\x04
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-h\x9f
-\x0c
-"
-\x03
-\x9e
-なたね
+ DO SOMETHING \x1f\xea\x01 AND "\x1f\\\x01 AND2 \x1f\x8a\x01 AND2 5
+SCE092_003\x1f\x90\x04 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1eh\x9f
+\x9eなたね
 　「いえば、秩序の維持に多大な影響が出るからです。@たとえば
 　　……たとえばですよ？@　食糧の備蓄が３日分しかないと分か
 　　ったら、みなさんはどうしますか？」@
@@ -197,45 +60,9 @@ h\x9f
 生々しい言葉に、紅葉と早桃が顔をしかめる。@
 粘り着くような沈黙をおいて、御堂がいった。\
 
- 
-\x1e
-\r
-\x1f
-\xd4\x04
-\x0c
-\x02
-"
-\x1f
-\\\x01
-\x1e
-\x02
-\x1f
-\x8a\x01
-\x1e
-\x02
-5
-\x03
-\x03
-SCE092_004
-\x1f
-\x86\x07
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-l\x9f
-\x0c
-"
-\x03
-\x9f
-御堂
+ DO SOMETHING \x1f\xd4\x04 AND "\x1f\\\x01 AND2 \x1f\x8a\x01 AND2 5
+SCE092_004\x1f\x86\x07 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1el\x9f
+\x9f御堂
 　「……３日分しかないってのは……本当なのか？」@
 なたね
 　「あくまでもたとえです」@
@@ -253,56 +80,12 @@ l\x9f
 越えて一同の上に重くのしかかっていた。@漠然と遠くに見ていた
 最後の日は、明日、やってくるかもしれないのだ……と。\
 
- 
-\x1e
-\r
-\x1f
-\xca\x07
-\x0c
-\x02
-"
-\x1f
-\\\x01
-\x1e
-\x02
-\x1f
-\x8a\x01
-\x1e
-\x02
-5
-\x03
-\x1e
-\o「何日耐えられるのか、はっきりさせてほしい」と拓司はいった
+ DO SOMETHING \x1f\xca\x07 AND "\x1f\\\x01 AND2 \x1f\x8a\x01 AND2 5\x03\x1e
+CHOICE
+「何日耐えられるのか、はっきりさせてほしい」と拓司はいった
 「雲居さんのいうとおりだ」と拓司はいった
-\l0,2,\E
- 
-\x1e
-\r
-\x1f
-\x80\n
-\x0c
-\x02
-"
-\x1f
-\\\x01
-\x1e
-\x02
-\x1f
-\x8a\x01
-\x1e
-\x02
-5
-\x1f
-\\\x01
-\x1e
-\x02
-\x03
-\x03
-TextClose
-v\x81\x1f
->\x0b
-\x1e
-\x02
-5
-6
-\xf1
+\l0,2,
+ENDCHOICE
+
+ DO SOMETHING \x1f\x80\n AND "\x1f\\\x01 AND2 \x1f\x8a\x01 AND2 5\x1f\\\x01 AND2 
+TextClose >\x0b AND2 56\xf1

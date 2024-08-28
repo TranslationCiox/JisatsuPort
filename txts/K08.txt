@@ -1,33 +1,7 @@
-\x01
-start
-\xef
-i\x01C
-f\x04
-\x01
-\xa4\t3\x01
-\xbe\x03
-\x03
-\x03
-SCEK08_001
-\x1f
-\x06
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
- \xa7\x01
-\x0c
-"
-\x03
-\xb8
-「だめよ」とゆきはいった。@
+START
+f\x04\x01\xa4\t3\x01\xbe\x03
+SCEK08_001\x1f\x06 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e \xa7\x01
+\xb8「だめよ」とゆきはいった。@
 それまで聞いたこともない、強い口調だった。@だめよ。@
 ゆきがそんないいかたができるとは思ってもみなかった。@
 ゆきはいつも、「私は、～だと思う」というふうに、クッション
@@ -44,40 +18,7 @@ SCEK08_001
 理性的判断を通過した非常識な答。@
 非常識であることを十分理解したうえで、彼女は非常識を遂行し
 ようとしていた。@怖かった。\
- 
-\x1e
-\r
-\x1f
-J
-\x0c
-\x02
-"
-\x03
-\x07
-.\\Data\\Script\\TextFunc.Fob
-\x81\x1f
-J\x03
-\x1e
-\x02
-\x03
-\x02
-TextOn
-\x81\x1f
-x\x03
-\x1e
-\x02
-5
-\x1f
-J\x03
-\x1e
-\x02
-\x03
-\x03
-TextClose
-v\x81\x1f
-\xa0\x03
-\x1e
-\x02
-5
-6
-\xf1
+ DO SOMETHING \x1fJ
+.\\Data\\Script\\TextFunc.Fob J\x03
+TextOn x\x03 AND2 5\x1fJ\x03 AND2 
+TextClose \xa0\x03 AND2 56\xf1

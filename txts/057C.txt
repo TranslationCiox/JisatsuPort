@@ -1,33 +1,7 @@
-\x01
-start
-\xef
-i\x01C
-\x94\x18
-\x01
-`B#\x01
-\xc8\x14
-\x03
-\x03
-SCE057_001
-\x1f
-\x06
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-\xb0h
-\x0c
-"
-\x03
-t
-学生
+START
+\x94\x18\x01`B#\x01\xc8\x14
+SCE057_001\x1f\x06 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\xb0h
+t学生
 　「こいつにションベンひっかけてやろうぜ？」@
 
 その異常な言葉は、しばらく無言の教室の中に行き場無くただよ
@@ -42,51 +16,11 @@ t
 　「私しかいないっしょ？@　このウザキャラ潰すのは私の使命だ
 　　からさ」\
 
- 
-\x1e
-\r
-\x1f
-J
-\x0c
-\x02
-"
-\x03
-\x07
-.\\Data\\Script\\TextFunc.Fob
-\x81\x1f
-:\x02
-\x1e
-\x02
-\x03
-\x02
-TextOn
-\x81\x1f
-h\x02
-\x1e
-\x02
-5
-\x03
-\x03
-SCE057_002
-\x1f
-\x84\x02
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-\xb4h
-\x0c
-"
-\x03
+ DO SOMETHING \x1fJ
+.\\Data\\Script\\TextFunc.Fob :\x02
+TextOn h\x02 AND2 5
+SCE057_002\x1f\x84\x02 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\xb4h
 \x85
-
 カミムラ－－。@
 拓司はその名前を聞いたことがあった。@たしか、早桃にいやがら
 せをしているという少女がカミムラといったはずだ……。@
@@ -106,45 +40,9 @@ SCE057_002
 早桃
 　「……」\
 
- 
-\x1e
-\r
-\x1f
-\xc8\x02
-\x0c
-\x02
-"
-\x1f
-:\x02
-\x1e
-\x02
-\x1f
-h\x02
-\x1e
-\x02
-5
-\x03
-\x03
-SCE057_003
-\x1f
-\x16\x05
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-\xb8h
-\x0c
-"
-\x03
-\x94
-上村
+ DO SOMETHING \x1f\xc8\x02 AND "\x1f:\x02 AND2 \x1fh\x02 AND2 5
+SCE057_003\x1f\x16\x05 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\xb8h
+\x94上村
 　「逃げるつもり？@　それって間違ってるって。@これはさ、あん
 　　たを綺麗にする儀式なんだよ？@　生きている価値のないあん
 　　たが、身を清めて気持ちよく死ねるようになるための儀式な
@@ -161,45 +59,9 @@ SCE057_003
 上村
 　「そうそう。儀式儀式」\
 
- 
-\x1e
-\r
-\x1f
-Z\x05
-\x0c
-\x02
-"
-\x1f
-:\x02
-\x1e
-\x02
-\x1f
-h\x02
-\x1e
-\x02
-5
-\x03
-\x03
-SCE057_004
-\x1f
-\xe4\x07
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-\xbch
-\x0c
-"
-\x03
-\x94
-上村はスカートの中に手を差し入れ、スルスルとショーツを脱い
+ DO SOMETHING \x1fZ\x05 AND "\x1f:\x02 AND2 \x1fh\x02 AND2 5
+SCE057_004\x1f\xe4\x07 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\xbch
+\x94上村はスカートの中に手を差し入れ、スルスルとショーツを脱い
 だ。@クラスメイトが見ているというのに、なんの躊躇もない。
 逆に、脱いだショーツをひらひらと振り回して、男子学生たちに
 ニヤリと笑いかける余裕さえある。@さらにはスカートも脱ぎ、下
@@ -220,45 +82,9 @@ SCE057_004
 早桃
 　「……」\
 
- 
-\x1e
-\r
-\x1f
-(\x08
-\x0c
-\x02
-"
-\x1f
-:\x02
-\x1e
-\x02
-\x1f
-h\x02
-\x1e
-\x02
-5
-\x03
-\x03
-SCE057_005
-\x1f
-\xb2\n
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-\xc0h
-\x0c
-"
-\x03
-a
-上村
+ DO SOMETHING \x1f(\x08 AND "\x1f:\x02 AND2 \x1fh\x02 AND2 5
+SCE057_005\x1f\xb2\n AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\xc0h
+a上村
 　「あ～ウザイ！　ウザウザ！　見てるだけでぶっ殺したくなる
 　　よ！」@
 早桃
@@ -271,45 +97,9 @@ a
 　上村は椅子をひとつひきずって早桃の前に配し、どっかとそこ
 　に腰を下ろした。\
 
- 
-\x1e
-\r
-\x1f
-\xf6\n
-\x0c
-\x02
-"
-\x1f
-:\x02
-\x1e
-\x02
-\x1f
-h\x02
-\x1e
-\x02
-5
-\x03
-\x03
-SCE057_006
-\x1f
-\xb4\x0c
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-\xc4h
-\x0c
-"
-\x03
-\xac
-上村
+ DO SOMETHING \x1f\xf6\n AND "\x1f:\x02 AND2 \x1fh\x02 AND2 5
+SCE057_006\x1f\xb4\x0c AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\xc4h
+\xac上村
 　「ほら、もっと前にはいはいしてきなさいよォ……足下に……
 　　そうそう。いい子ね、ワンワン」@
 /*■HCG16　表示（クロスフェード）*/\a7,-2,-2,0,\a0,87,2,0,\a6,-2,0,0,
@@ -325,45 +115,9 @@ SCE057_006
 　頬を伝って流れ落ちた汚液が、床に溜まりを作る。@
 　髪の毛が汚液を吸い込んで、ぺったりと頬にへばりつく。\
 
- 
-\x1e
-\r
-\x1f
-\xf8\x0c
-\x0c
-\x02
-"
-\x1f
-:\x02
-\x1e
-\x02
-\x1f
-h\x02
-\x1e
-\x02
-5
-\x03
-\x03
-SCE057_007
-\x1f
-\xe2\x0f
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-\xc8h
-\x0c
-"
-\x03
-\x8d
-どこかで見た光景だった。@
+ DO SOMETHING \x1f\xf8\x0c AND "\x1f:\x02 AND2 \x1fh\x02 AND2 5
+SCE057_007\x1f\xe2\x0f AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\xc8h
+\x8dどこかで見た光景だった。@
 辱めのために汚液の的となる女の子。@
 頭の中にしかなかった妄想が、目の前でいま現実として再現され
 ていた。@
@@ -378,45 +132,9 @@ SCE057_007
 おそらく、御堂たちによるなたねの陵辱、あのあたりから自分は
 妄想の中にいるのだ……。\
 
- 
-\x1e
-\r
-\x1f
-&\x10
-\x0c
-\x02
-"
-\x1f
-:\x02
-\x1e
-\x02
-\x1f
-h\x02
-\x1e
-\x02
-5
-\x03
-\x03
-SCE057_008
-\x1f
-\x94\x12
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-\xcch
-\x0c
-"
-\x03
-c
-学生
+ DO SOMETHING \x1f&\x10 AND "\x1f:\x02 AND2 \x1fh\x02 AND2 5
+SCE057_008\x1f\x94\x12 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\xcch
+c学生
 　「た、たまんねえ……俺にもかけさせてくれ」@
 学生
 　「あたしも……」@
@@ -432,34 +150,5 @@ c
 をむき出しにして、女子学生はちぎり捨てるようにスカートとシ
 ョーツを脱ぎ捨てて……。\
 
- 
-\x1e
-\r
-\x1f
-\xd8\x12
-\x0c
-\x02
-"
-\x1f
-:\x02
-\x1e
-\x02
-\x1f
-h\x02
-\x1e
-\x02
-5
-\x1f
-:\x02
-\x1e
-\x02
-\x03
-\x03
-TextClose
-v\x81\x1f
-\xaa\x14
-\x1e
-\x02
-5
-6
-\xf1
+ DO SOMETHING \x1f\xd8\x12 AND "\x1f:\x02 AND2 \x1fh\x02 AND2 5\x1f:\x02 AND2 
+TextClose \xaa\x14 AND2 56\xf1

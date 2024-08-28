@@ -1,33 +1,7 @@
-\x01
-start
-\xef
-i\x01C
-\xea\x1b
-\x01
-`B#\x01
- \x17
-\x03
-\x03
-SCE227_001
-\x1f
-\x06
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-Pr\x01
-\x0c
-"
-\x03
+START
+\xea\x1b\x01`B#\x01 \x17
+SCE227_001\x1f\x06 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1ePr\x01
 \x11
-
 
 
 
@@ -39,51 +13,11 @@ Pr\x01
 
 　　　　　　　　　　　　　『１３日目』\
 
- 
-\x1e
-\r
-\x1f
-J
-\x0c
-\x02
-"
-\x03
-\x07
-.\\Data\\Script\\TextFunc.Fob
-\x81\x1f
-\xae
-\x1e
-\x02
-\x03
-\x02
-TextOn
-\x81\x1f
-\xdc
-\x1e
-\x02
-5
-\x03
-\x03
-SCE227_002
-\x1f
-\xf8
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-Tr\x01
-\x0c
-"
-\x03
-u
-朝。@
+ DO SOMETHING \x1fJ
+.\\Data\\Script\\TextFunc.Fob \xae
+TextOn \xdc AND2 5
+SCE227_002\x1f\xf8 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1eTr\x01
+u朝。@
 トイレを使うために実験室に現れた錦城に、カンナがいった。@
 
 カンナ
@@ -102,45 +36,9 @@ u
 握りしめた。@
 努めて無表情のカンナを、錦城は勝ち誇って見下ろした。\
 
- 
-\x1e
-\r
-\x1f
-<\x01
-\x0c
-\x02
-"
-\x1f
-\xae
-\x1e
-\x02
-\x1f
-\xdc
-\x1e
-\x02
-5
-\x03
-\x03
-SCE227_003
-\x1f
-J\x03
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-Xr\x01
-\x0c
-"
-\x03
-]
-錦城
+ DO SOMETHING \x1f<\x01 AND "\x1f\xae AND2 \x1f\xdc AND2 5
+SCE227_003\x1fJ\x03 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1eXr\x01
+]錦城
 　「あら、昨日はあんなにつっぱってたのに。どういう風の吹き
 　　回し？」@
 カンナ
@@ -159,45 +57,9 @@ Xr\x01
 カンナ
 　「……すみませんでした」\
 
- 
-\x1e
-\r
-\x1f
-\x8e\x03
-\x0c
-\x02
-"
-\x1f
-\xae
-\x1e
-\x02
-\x1f
-\xdc
-\x1e
-\x02
-5
-\x03
-\x03
-SCE227_004
-\x1f
-<\x05
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-\\r\x01
-\x0c
-"
-\x03
-S
-錦城
+ DO SOMETHING \x1f\x8e\x03 AND "\x1f\xae AND2 \x1f\xdc AND2 5
+SCE227_004\x1f<\x05 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\\r\x01
+S錦城
 　「それだけ？」@
 カンナ
 　「今後は秩序を乱すような行動は慎みます」@
@@ -215,45 +77,9 @@ S
 カンナ
 　「便器って－－」\
 
- 
-\x1e
-\r
-\x1f
-\x80\x05
-\x0c
-\x02
-"
-\x1f
-\xae
-\x1e
-\x02
-\x1f
-\xdc
-\x1e
-\x02
-5
-\x03
-\x03
-SCE227_005
-\x1f
-\x06\x07
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-`r\x01
-\x0c
-"
-\x03
-u
-錦城
+ DO SOMETHING \x1f\x80\x05 AND "\x1f\xae AND2 \x1f\xdc AND2 5
+SCE227_005\x1f\x06\x07 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e`r\x01
+u錦城
 　「そのままの意味だけれど。@いまから、先生のおしっこを飲ん
 　　でくれればそれでいいの」@
 カンナ
@@ -274,45 +100,9 @@ u
 錦城
 　「便器」\
 
- 
-\x1e
-\r
-\x1f
-J\x07
-\x0c
-\x02
-"
-\x1f
-\xae
-\x1e
-\x02
-\x1f
-\xdc
-\x1e
-\x02
-5
-\x03
-\x03
-SCE227_006
-\x1f
-X\t
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-dr\x01
-\x0c
-"
-\x03
-n
-錦城は意地悪く言い直した。@机に腰をかけ、見せつけるように足
+ DO SOMETHING \x1fJ\x07 AND "\x1f\xae AND2 \x1f\xdc AND2 5
+SCE227_006\x1fX\t AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1edr\x01
+n錦城は意地悪く言い直した。@机に腰をかけ、見せつけるように足
 を組む。@
 
 錦城
@@ -332,45 +122,9 @@ n
 カンナ
 　「……よ、喜んで錦城先生の人間便器になります」\
 
- 
-\x1e
-\r
-\x1f
-\x9c\t
-\x0c
-\x02
-"
-\x1f
-\xae
-\x1e
-\x02
-\x1f
-\xdc
-\x1e
-\x02
-5
-\x03
-\x03
-SCE227_007
-\x1f
-\x8e\x0b
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-hr\x01
-\x0c
-"
-\x03
-y
-錦城
+ DO SOMETHING \x1f\x9c\t AND "\x1f\xae AND2 \x1f\xdc AND2 5
+SCE227_007\x1f\x8e\x0b AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1ehr\x01
+y錦城
 　「『お願いします。@私におしっこしてください』」@
 カンナ
 　「お願い……します。@私におしっこして……ください」@
@@ -386,68 +140,11 @@ y
 カンナ
 　「黙っていて。@大丈夫だから。@こんなの、なんでもないから」\
 
- 
-\x1e
-\r
-\x1f
-\xd2\x0b
-\x0c
-\x02
-"
-\x1f
-\xae
-\x1e
-\x02
-\x1f
-\xdc
-\x1e
-\x02
-5
- 
-\x1e
-\r
-\x1e
-\x05\x01
-\x0c
-\x02
-"
-\x03
-\x06
-.\\Data\\Script\\Bgm.Fob
-v\x81\x1f
-\n\x0e
-\x1e
-\x02
-\x03
-\x02
-PlayCD
-\x81\x1f
-4\x0e
-\x1e
-\x02
-5
-\x03
-\x03
-SCE227_008
-\x1f
-P\x0e
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-lr\x01
-\x0c
-"
-\x03
-\xa1
-錦城は、目を逸らさないように、と全員に命じた。@
+ DO SOMETHING \x1f\xd2\x0b AND "\x1f\xae AND2 \x1f\xdc AND2 5 DO SOMETHING \x1e\x05\x01
+.\\Data\\Script\\Bgm.Fob \n\x0e
+PlayCD 4\x0e AND2 5
+SCE227_008\x1fP\x0e AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1elr\x01
+\xa1錦城は、目を逸らさないように、と全員に命じた。@
 見せつけるように下着を脱ぎ、足を開く。@
 実験机に寄り掛かるような格好で、足をがに股に広げる。@
 醜い姿だった。性器をさらしているにも関わらず、少しも卑猥な
@@ -460,45 +157,9 @@ lr\x01
 　　@生意気な態度をとったガキがどうなるか、それを教えてあげ
 　　ているの。@ほら、便器ちゃん。はやく口をつけなさいよ！」\
 
- 
-\x1e
-\r
-\x1f
-\x94\x0e
-\x0c
-\x02
-"
-\x1f
-\xae
-\x1e
-\x02
-\x1f
-\xdc
-\x1e
-\x02
-5
-\x03
-\x03
-SCE227_009
-\x1f
-R\x11
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-pr\x01
-\x0c
-"
-\x03
-\x8a
-錦城の足のあいだにひざまづき、カンナは目を閉じ、口を開いた。
+ DO SOMETHING \x1f\x94\x0e AND "\x1f\xae AND2 \x1f\xdc AND2 5
+SCE227_009\x1fR\x11 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1epr\x01
+\x8a錦城の足のあいだにひざまづき、カンナは目を閉じ、口を開いた。
 @その口が自分の性器に密着したのを確認してから、錦城は整った
 顔をわずかにゆがめた。@
 放尿が始まった。@
@@ -517,45 +178,9 @@ pr\x01
 カンナ
 　「くむ……ごきゅっ……ごきゅ……むぐんん……」\
 
- 
-\x1e
-\r
-\x1f
-\x96\x11
-\x0c
-\x02
-"
-\x1f
-\xae
-\x1e
-\x02
-\x1f
-\xdc
-\x1e
-\x02
-5
-\x03
-\x03
-SCE227_010
-\x1f
-\xf8\x13
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-tr\x01
-\x0c
-"
-\x03
-|
-錦城
+ DO SOMETHING \x1f\x96\x11 AND "\x1f\xae AND2 \x1f\xdc AND2 5
+SCE227_010\x1f\xf8\x13 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1etr\x01
+|錦城
 　「あら、涙流して喜んでるの？@　あははは、まったくもう、ど
 　　ういう教育を受けてきたのかしら？@　このままじゃ将来ロク
 　　な大人にはならないわ。@いまのうちにしっかり便器として教
@@ -567,69 +192,8 @@ tr\x01
 錦城はカンナの頭を両手で固定し、狂気に支配された顔で笑い続
 けた。\
 
- 
-\x1e
-\r
-\x1f
-<\x14
-\x0c
-\x02
-"
-\x1f
-\xae
-\x1e
-\x02
-\x1f
-\xdc
-\x1e
-\x02
-5
- 
-\x1e
-\r
-\x1e
-\xc8
-\x0c
-\x02
-"
-\x03
-\x06
-.\\Data\\Script\\Bg.Fob
-sv\x81\x1f
-\x80\x16
-\x1e
-\x02
-\x03
-\x04
-BgAutoFadeIn
-sv\x81\x1f
-\xaa\x16
-\x1e
-\x02
-5
-\x1f
-\n\x0e
-\x1e
-\x02
-\x03
-\x02
-StopCD
-\x81\x1f
-\xda\x16
-\x1e
-\x02
-5
-\x1f
-\xae
-\x1e
-\x02
-\x03
-\x03
-TextClose
-v\x81\x1f
-\x02\x17
-\x1e
-\x02
-5
-6
-\xf1
+ DO SOMETHING \x1f<\x14 AND "\x1f\xae AND2 \x1f\xdc AND2 5 DO SOMETHING \x1e\xc8
+.\\Data\\Script\\Bg.Fob \x80\x16
+BgAutoFadeIn \xaa\x16 AND2 5\x1f\n\x0e
+StopCD \xda\x16 AND2 5\x1f\xae AND2 
+TextClose \x02\x17 AND2 56\xf1

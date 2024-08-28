@@ -1,33 +1,7 @@
-\x01
-start
-\xef
-i\x01C
-\xf6\n
-\x01
-`B#\x01
-\xf8\x08
-\x03
-\x03
-SCE237_001
-\x1f
-\x06
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-\xf0\x81\x01
-\x0c
-"
-\x03
-s
-教授
+START
+\xf6\n\x01`B#\x01\xf8\x08
+SCE237_001\x1f\x06 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\xf0\x81\x01
+s教授
 　「もう大丈夫だ。@私を信じたまえ。@この世界を信じたまえ。@
 　　少なくとも、ここは安全な世界だ。@君に害を及ぼすものはな
 　　にもないんだ」@
@@ -43,51 +17,11 @@ s
 いいじゃないか、狂っていても。@
 死ぬよりはマシだ。\
 
- 
-\x1e
-\r
-\x1f
-J
-\x0c
-\x02
-"
-\x03
-\x07
-.\\Data\\Script\\TextFunc.Fob
-\x81\x1f
-6\x02
-\x1e
-\x02
-\x03
-\x02
-TextOn
-\x81\x1f
-d\x02
-\x1e
-\x02
-5
-\x03
-\x03
-SCE237_002
-\x1f
-\x80\x02
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-\xf4\x81\x01
-\x0c
-"
-\x03
-\x98
-/*▲SE03　１回再生（再生終了を待たず先へ）*/\a2,0,3,0,　キキキキキ……キイキイ……キキキ……キキ……キ@
+ DO SOMETHING \x1fJ
+.\\Data\\Script\\TextFunc.Fob 6\x02
+TextOn d\x02 AND2 5
+SCE237_002\x1f\x80\x02 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\xf4\x81\x01
+\x98/*▲SE03　１回再生（再生終了を待たず先へ）*/\a2,0,3,0,　キキキキキ……キイキイ……キキキ……キキ……キ@
 \a4,0,0,0,
 軋む音が、耳の音で聞こえた。@
 こめかみがずきずきと痛む。@
@@ -100,45 +34,9 @@ SCE237_002
 夢を……新たな『おれの世界』を脳髄に産み付けるのだろう。@
 やがてまたこの部屋で目覚めて、教授にすべてを否定され……\
 
- 
-\x1e
-\r
-\x1f
-\xc4\x02
-\x0c
-\x02
-"
-\x1f
-6\x02
-\x1e
-\x02
-\x1f
-d\x02
-\x1e
-\x02
-5
-\x03
-\x03
-SCE237_003
-\x1f
-^\x05
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-\xf8\x81\x01
-\x0c
-"
-\x03
-\x91
-/*▲SE03　１回再生（終了を待たず先へ）*/\a2,0,3,0,　キキキキキ……キイキイ……キキキ……キキ……キ@
+ DO SOMETHING \x1f\xc4\x02 AND "\x1f6\x02 AND2 \x1fd\x02 AND2 5
+SCE237_003\x1f^\x05 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\xf8\x81\x01
+\x91/*▲SE03　１回再生（終了を待たず先へ）*/\a2,0,3,0,　キキキキキ……キイキイ……キキキ……キキ……キ@
 \a4,0,0,0,
 　この悪夢はいつまで続くのだろう？@
 /*▲SE06　1回再生（終了を待たず先へ）*/\a2,0,6,0,　拓司は換気ファンを思った。@
@@ -151,72 +49,8 @@ SCE237_003
 　拓司はなま暖かいかたまりにゆっくり飲み込まれながら、ただ
 胎児のように身を丸めて恐怖していた。\
 
- 
-\x1e
-\r
-\x1f
-\xa2\x05
-\x0c
-\x02
-"
-\x1f
-6\x02
-\x1e
-\x02
-\x1f
-d\x02
-\x1e
-\x02
-5
- 
-\x1e
-\r
-\x1e
-\xc8
-\x0c
-\x02
-"
-\x03
-\x06
-.\\Data\\Script\\Bg.Fob
-sv\x81\x1f
-:\x08
-\x1e
-\x02
-\x03
-\x04
-BgAutoFadeIn
-sv\x81\x1f
-d\x08
-\x1e
-\x02
-5
-\x03
-\x06
-.\\Data\\Script\\Bgm.Fob
-v\x81\x1f
-\x88\x08
-\x1e
-\x02
-\x03
-\x02
-StopCD
-\x81\x1f
-\xb2\x08
-\x1e
-\x02
-5
-\x1f
-6\x02
-\x1e
-\x02
-\x03
-\x03
-TextClose
-v\x81\x1f
-\xda\x08
-\x1e
-\x02
-5
-6
-\xf1
+ DO SOMETHING \x1f\xa2\x05 AND "\x1f6\x02 AND2 \x1fd\x02 AND2 5 DO SOMETHING \x1e\xc8
+.\\Data\\Script\\Bg.Fob :\x08
+BgAutoFadeIn d\x08 AND2 5\x03\x06.\\Data\\Script\\Bgm.Fob \x88\x08
+StopCD \xb2\x08 AND2 5\x1f6\x02 AND2 
+TextClose \xda\x08 AND2 56\xf1

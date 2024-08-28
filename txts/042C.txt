@@ -1,33 +1,7 @@
-\x01
-start
-\xef
-i\x01C
-\xfa\x0c
-\x01
-`B#\x01
-\xea\n
-\x03
-\x03
-SCE042_001
-\x1f
-\x06
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-@Q
-\x0c
-"
-\x03
-L
-　拓司は屋上に一人、たたずんでいた。@
+START
+\xfa\x0c\x01`B#\x01\xea\n
+SCE042_001\x1f\x06 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e@Q
+L　拓司は屋上に一人、たたずんでいた。@
 　脱力感。@
 　身体の端々に鉄の塊を埋め込まれたような感じ。@
 　身体の中心が湿ってしまったような感じ。@
@@ -38,51 +12,11 @@ L
 
 　死んじまおうかなあ。\
 
- 
-\x1e
-\r
-\x1f
-J
-\x0c
-\x02
-"
-\x03
-\x07
-.\\Data\\Script\\TextFunc.Fob
-\x81\x1f
-\x9a\x01
-\x1e
-\x02
-\x03
-\x02
-TextOn
-\x81\x1f
-\xc8\x01
-\x1e
-\x02
-5
-\x03
-\x03
-SCE042_002
-\x1f
-\xe4\x01
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-DQ
-\x0c
-"
-\x03
-\xe4
-　その呪文を唱えるようになってから、拓司は意識的に、あらゆ
+ DO SOMETHING \x1fJ
+.\\Data\\Script\\TextFunc.Fob \x9a\x01
+TextOn \xc8\x01 AND2 5
+SCE042_002\x1f\xe4\x01 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1eDQ
+\xe4　その呪文を唱えるようになってから、拓司は意識的に、あらゆ
 る場所に『死』の陰を探してきた。@たとえば格言集の中に……小
 説の中に……歌の中に……そこには幾十、幾百もの『死』が、手
 に取れるような形で用意されている。@いわく、「死において、わ
@@ -98,45 +32,9 @@ DQ
 あるいは言葉にすることによって意味が失われてしまうようなも
 のなのだ。@故に人間は死を恐れる。@理解できないからだ。\
 
- 
-\x1e
-\r
-\x1f
-(\x02
-\x0c
-\x02
-"
-\x1f
-\x9a\x01
-\x1e
-\x02
-\x1f
-\xc8\x01
-\x1e
-\x02
-5
-\x03
-\x03
-SCE042_003
-\x1f
-\xf2\x05
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-HQ
-\x0c
-"
-\x03
-\x9b
-　しかし、拓司にとって、死は、現実と比べれば理解しやすいも
+ DO SOMETHING \x1f(\x02 AND "\x1f\x9a\x01 AND2 \x1f\xc8\x01 AND2 5
+SCE042_003\x1f\xf2\x05 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1eHQ
+\x9b　しかし、拓司にとって、死は、現実と比べれば理解しやすいも
 　のであった。@
 　死こそが、自分が選びうる最高にドラマティックで美しい物語
 　ではないか？@
@@ -154,131 +52,13 @@ HQ
 　方法。@
 　救済の方法ではないか？\
 
- 
-\x1e
-\r
-\x1f
-6\x06
-\x0c
-\x02
-"
-\x1f
-\x9a\x01
-\x1e
-\x02
-\x1f
-\xc8\x01
-\x1e
-\x02
-5
-\x03
-\x03
-SCE042_004
-\x1f
-\xdc\x08
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-LQ
-\x0c
-"
-\x03
-&
-　思考はいつもそこで停滞する。@それ以上は先に進めない。@
+ DO SOMETHING \x1f6\x06 AND "\x1f\x9a\x01 AND2 \x1f\xc8\x01 AND2 5
+SCE042_004\x1f\xdc\x08 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1eLQ
+&　思考はいつもそこで停滞する。@それ以上は先に進めない。@
 　実際に死ぬしか、方法はないからだ。@
 　そして死ぬほどの勇気は、拓司にはない。\
 
- 
-\x1e
-\r
-\x1f
- \t
-\x0c
-\x02
-"
-\x1f
-\x9a\x01
-\x1e
-\x02
-\x1f
-\xc8\x01
-\x1e
-\x02
-5
-\x03
-\x06
-.\\Data\\Script\\Bgm.Fob
-v\x81\x1f
-\xf2\t
-\x1e
-\x02
-\x03
-\x02
-StopCD
-\x81\x1f
-\x1c\n
-\x1e
-\x02
-5
- 
-\x1e
-\r
-\x1e
-\x0c
-\x02
-"
- 
-\x1e
-\x04
-\r
-\x1e
-\x18
-\x0c
-\x02
-"
- 
-\x1e
-\x08
-\r
-\x1e
-\x0c
-\x02
-"
-\x1f
-\xf2\t
-\x1e
-\x02
-\x03
-\x03
-SePlayEx
-sv\x81\x1f
-\x92\n
-\x1e
-\x02
-5
-\x1e
-<
-\x1e
-\x92
-\x1f
-\x9a\x01
-\x1e
-\x02
-\x03
-\x03
-TextClose
-v\x81\x1f
-\xcc\n
-\x1e
-\x02
-5
-6
-\xf1
+ DO SOMETHING \x1f \t AND "\x1f\x9a\x01 AND2 \x1f\xc8\x01 AND2 5\x03\x06.\\Data\\Script\\Bgm.Fob \xf2\t
+StopCD \x1c\n AND2 5 DO SOMETHING \x1e AND " \x1e\x04\r\x1e\x18 AND " \x1e\x08\r\x1e AND "\x1f\xf2\t AND2 
+SePlayEx \x92\n AND2 5\x1e<\x1e\x92\x1f\x9a\x01 AND2 
+TextClose \xcc\n AND2 56\xf1

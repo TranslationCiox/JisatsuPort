@@ -1,48 +1,8 @@
-\x01
-start
-\xef
-i\x01C
-\xc3\n
-\x01
-`B#\x01
-\xcc\x08
-\x03
-\x06
-.\\Data\\Script\\Bgm.Fob
-v\x81\x1f
-\x06
-\x1e
-\x02
-\x03
-\x02
-StopCD
-\x81\x1f
-0
-\x1e
-\x02
-5
-\x03
-\x03
-SCE087_001
-\x1f
-L
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-\x90\x97
-\x0c
-"
-\x03
-\x9e
-　実験室のドアを開けた拓司は、思わず声をあげた。@
+START
+\xc3\n\x01`B#\x01\xcc\x08\x03\x06.\\Data\\Script\\Bgm.Fob \x06
+StopCD 0 AND2 5
+SCE087_001\x1fL AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\x90\x97
+\x9e　実験室のドアを開けた拓司は、思わず声をあげた。@
 　実験室の壁全体が、銀色に輝いていたのである。@そして、ムッ
 　と息詰まるようなシンナーの匂い……。@
 
@@ -63,51 +23,11 @@ L
 カンナ
 　「ああ、このピカピカね……コレよ」\
 
- 
-\x1e
-\r
-\x1f
-\x90
-\x0c
-\x02
-"
-\x03
-\x07
-.\\Data\\Script\\TextFunc.Fob
-\x81\x1f
-(\x03
-\x1e
-\x02
-\x03
-\x02
-TextOn
-\x81\x1f
-V\x03
-\x1e
-\x02
-5
-\x03
-\x03
-SCE087_002
-\x1f
-r\x03
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-\x94\x97
-\x0c
-"
-\x03
-{
-拓司
+ DO SOMETHING \x1f\x90
+.\\Data\\Script\\TextFunc.Fob (\x03
+TextOn V\x03 AND2 5
+SCE087_002\x1fr\x03 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\x94\x97
+{拓司
 　「コレは……アルミホイル？」@
 早桃
 　「そう。@雲居さんが段ボール３箱分も用意しておいた……徳
@@ -128,45 +48,9 @@ r\x03
 拓司
 　「まさか！」\
 
- 
-\x1e
-\r
-\x1f
-\xb6\x03
-\x0c
-\x02
-"
-\x1f
-(\x03
-\x1e
-\x02
-\x1f
-V\x03
-\x1e
-\x02
-5
-\x03
-\x03
-SCE087_003
-\x1f
-\xdc\x05
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-\x98\x97
-\x0c
-"
-\x03
-\x92
-なたね
+ DO SOMETHING \x1f\xb6\x03 AND "\x1f(\x03 AND2 \x1fV\x03 AND2 5
+SCE087_003\x1f\xdc\x05 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\x98\x97
+\x92なたね
 　「気分を害さないで欲しいんだけれど、そう簡単にまさかとか、
 　　言って欲しくないの。@だってこれは、私が死ぬ思いをしてや
 　　つらの円盤から盗み出してきた機密事項の結晶だから」@
@@ -183,34 +67,5 @@ SCE087_003
 　「いい？@　エンケリュスの自殺波動は、アルミホイルで防御す
 　　ることが－－」\
 
- 
-\x1e
-\r
-\x1f
- \x06
-\x0c
-\x02
-"
-\x1f
-(\x03
-\x1e
-\x02
-\x1f
-V\x03
-\x1e
-\x02
-5
-\x1f
-(\x03
-\x1e
-\x02
-\x03
-\x03
-TextClose
-v\x81\x1f
-\xae\x08
-\x1e
-\x02
-5
-6
-\xf1
+ DO SOMETHING \x1f \x06 AND "\x1f(\x03 AND2 \x1fV\x03 AND2 5\x1f(\x03 AND2 
+TextClose \xae\x08 AND2 56\xf1

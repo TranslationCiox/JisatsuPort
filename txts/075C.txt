@@ -1,33 +1,7 @@
-\x01
-start
-\xef
-i\x01C
-\x82\x17
-\x01
-`B#\x01
- \x13
-\x03
-\x03
-SCE075_001
-\x1f
-\x06
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-\xd0\x84
-\x0c
-"
-\x03
-|
-なたね
+START
+\x82\x17\x01`B#\x01 \x13
+SCE075_001\x1f\x06 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\xd0\x84
+|なたね
 　「だめ。@この先は危険。@波動が直接－－」@
 早桃
 　「いい加減にしてよ！」@
@@ -45,51 +19,11 @@ SCE075_001
 早桃
 　「でも！　おにいちゃん！」\
 
- 
-\x1e
-\r
-\x1f
-J
-\x0c
-\x02
-"
-\x03
-\x07
-.\\Data\\Script\\TextFunc.Fob
-\x81\x1f
-Z\x02
-\x1e
-\x02
-\x03
-\x02
-TextOn
-\x81\x1f
-\x88\x02
-\x1e
-\x02
-5
-\x03
-\x03
-SCE075_002
-\x1f
-\xa4\x02
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-\xd4\x84
-\x0c
-"
-\x03
-N
-なたね
+ DO SOMETHING \x1fJ
+.\\Data\\Script\\TextFunc.Fob Z\x02
+TextOn \x88\x02 AND2 5
+SCE075_002\x1f\xa4\x02 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\xd4\x84
+Nなたね
 　「いいのよ、虎菱くん」@
 
 　なたねが遮った。@
@@ -101,45 +35,9 @@ N
 早桃
 　「……」\
 
- 
-\x1e
-\r
-\x1f
-\xe8\x02
-\x0c
-\x02
-"
-\x1f
-Z\x02
-\x1e
-\x02
-\x1f
-\x88\x02
-\x1e
-\x02
-5
-\x03
-\x03
-SCE075_003
-\x1f
-Z\x04
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-\xd8\x84
-\x0c
-"
-\x03
-\xc1
-なたね
+ DO SOMETHING \x1f\xe8\x02 AND "\x1fZ\x02 AND2 \x1f\x88\x02 AND2 5
+SCE075_003\x1fZ\x04 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\xd8\x84
+\xc1なたね
 　「便宜上『波動』と呼んでいるけれど、『波動』は、本来なら
 　　地球の言葉では定義できない存在なの。@だから、一般的なエ
 　　ネルギーのように、一方から他方へ、直線的に飛ぶというも
@@ -158,45 +56,9 @@ Z\x04
 早桃
 　「……え？」\
 
- 
-\x1e
-\r
-\x1f
-\x9e\x04
-\x0c
-\x02
-"
-\x1f
-Z\x02
-\x1e
-\x02
-\x1f
-\x88\x02
-\x1e
-\x02
-5
-\x03
-\x03
-SCE075_004
-\x1f
-\xdc\x07
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-\xdc\x84
-\x0c
-"
-\x03
-{
-　なたねは「シェ@・ル@・タ@・ー」と、ひとことひとことを区切っ
+ DO SOMETHING \x1f\x9e\x04 AND "\x1fZ\x02 AND2 \x1f\x88\x02 AND2 5
+SCE075_004\x1f\xdc\x07 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\xdc\x84
+{　なたねは「シェ@・ル@・タ@・ー」と、ひとことひとことを区切っ
 　て言い返した。@
 
 拓司
@@ -212,45 +74,9 @@ SCE075_004
 　　材料は全部そろえてある。@これだけの人数で突貫で作れば、
 　　１時間もかからずに完成すると思う」\
 
- 
-\x1e
-\r
-\x1f
- \x08
-\x0c
-\x02
-"
-\x1f
-Z\x02
-\x1e
-\x02
-\x1f
-\x88\x02
-\x1e
-\x02
-5
-\x03
-\x03
-SCE075_005
-\x1f
-F\n
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-\xe0\x84
-\x0c
-"
-\x03
-]
-拓司
+ DO SOMETHING \x1f \x08 AND "\x1fZ\x02 AND2 \x1f\x88\x02 AND2 5
+SCE075_005\x1fF\n AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\xe0\x84
+]拓司
 　「……まさか」@
 なたね
 　「４階の理科実験室。@新実験室ができてから使われていないあ
@@ -264,45 +90,9 @@ F\n
 怒っている。@それまでの能面めいた無表情が嘘だったかのように、
 なたねは怒っていた。\
 
- 
-\x1e
-\r
-\x1f
-\x8a\n
-\x0c
-\x02
-"
-\x1f
-Z\x02
-\x1e
-\x02
-\x1f
-\x88\x02
-\x1e
-\x02
-5
-\x03
-\x03
-SCE075_006
-\x1f
-8\x0c
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-\xe4\x84
-\x0c
-"
-\x03
-\xc0
-なたね
+ DO SOMETHING \x1f\x8a\n AND "\x1fZ\x02 AND2 \x1f\x88\x02 AND2 5
+SCE075_006\x1f8\x0c AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\xe4\x84
+\xc0なたね
 　「こんな非常事態に冗談なんて言うはずがないでしょうッ！@
 　　あなたは自覚しているの？！@　私たちは生き残らなければな
 　　らないのよ！@　生き残って最終決戦に備えなければならない
@@ -320,45 +110,9 @@ SCE075_006
 なたね
 　「……質問はそれだけだったよね？」\
 
- 
-\x1e
-\r
-\x1f
-|\x0c
-\x0c
-\x02
-"
-\x1f
-Z\x02
-\x1e
-\x02
-\x1f
-\x88\x02
-\x1e
-\x02
-5
-\x03
-\x03
-SCE075_007
-\x1f
-\xb6\x0f
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-\xe8\x84
-\x0c
-"
-\x03
-\x81
-拓司
+ DO SOMETHING \x1f|\x0c AND "\x1fZ\x02 AND2 \x1f\x88\x02 AND2 5
+SCE075_007\x1f\xb6\x0f AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\xe8\x84
+\x81拓司
 　「……」@
 なたね
 　「さあ、虎菱くん。@みんなで４階に戻りましょう。@最終波動に
@@ -371,56 +125,12 @@ SCE075_007
 どうすればいい……。@
 俺は……どうすればいい？\
 
- 
-\x1e
-\r
-\x1f
-\xfa\x0f
-\x0c
-\x02
-"
-\x1f
-Z\x02
-\x1e
-\x02
-\x1f
-\x88\x02
-\x1e
-\x02
-5
-\x03
-!
-\oなたねの言葉に従う。紅葉を見捨てて、シェルターに向かう
+ DO SOMETHING \x1f\xfa\x0f AND "\x1fZ\x02 AND2 \x1f\x88\x02 AND2 5\x03!
+CHOICE
+なたねの言葉に従う。紅葉を見捨てて、シェルターに向かう
 なたね達をシェルターに向かわせて、自分だけ紅葉救出に向かう
-\l0,2,\E
- 
-\x1e
-\r
-\x1f
-8\x12
-\x0c
-\x02
-"
-\x1f
-Z\x02
-\x1e
-\x02
-\x1f
-\x88\x02
-\x1e
-\x02
-5
-\x1f
-Z\x02
-\x1e
-\x02
-\x03
-\x03
-TextClose
-v\x81\x1f
-\x02\x13
-\x1e
-\x02
-5
-6
-\xf1
+\l0,2,
+ENDCHOICE
+
+ DO SOMETHING \x1f8\x12 AND "\x1fZ\x02 AND2 \x1f\x88\x02 AND2 5\x1fZ\x02 AND2 
+TextClose \x02\x13 AND2 56\xf1

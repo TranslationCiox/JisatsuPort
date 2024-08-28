@@ -1,56 +1,9 @@
-\x01
-start
-\xef
-i\x01C
-\xcf\x1f
-\x01
-`B#\x01
-\xc2\x1a
- 
-\x1e
-\r
-\x1e
-\t\x01
-\x0c
-\x02
-"
-\x03
-\x06
-.\\Data\\Script\\Bgm.Fob
-v\x81\x1f
- 
-\x1e
-\x02
-\x03
-\x02
-PlayCD
-\x81\x1f
-J
-\x1e
-\x02
-5
-\x03
-\x03
-SCE085a_001
-\x1f
-f
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-p\x94
-\x0c
-"
-\x03
-\x82
-無事目を覚ましたものの、茫然自失といった体の紅葉を導いて、
+START
+\xcf\x1f\x01`B#\x01\xc2\x1a DO SOMETHING \x1e\t\x01
+.\\Data\\Script\\Bgm.Fob  
+PlayCD J AND2 5
+SCE085a_001\x1ff AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1ep\x94
+\x82無事目を覚ましたものの、茫然自失といった体の紅葉を導いて、
 拓司は４階へ向かった。@
 いまやってきた道を再び戻るのは気が引けたが、もう、回り道を
 するほどの気力は残っていなかった。@それに、一度体験してしま
@@ -61,51 +14,11 @@ p\x94
 免疫ができたせいなのか、すでに波動が拡散した後なのかは……わ
 からなかったが。\
 
- 
-\x1e
-\r
-\x1f
-\xaa
-\x0c
-\x02
-"
-\x03
-\x07
-.\\Data\\Script\\TextFunc.Fob
-\x81\x1f
-\xd2\x02
-\x1e
-\x02
-\x03
-\x02
-TextOn
-\x81\x1f
-\x03
-\x1e
-\x02
-5
-\x03
-\x03
-SCE085a_002
-\x1f
-\x1c\x03
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-t\x94
-\x0c
-"
-\x03
-\xd6
-途中、生きている人間には一度も出くわさなかった。@もっとも、
+ DO SOMETHING \x1f\xaa
+.\\Data\\Script\\TextFunc.Fob \xd2\x02
+TextOn \x03 AND2 5
+SCE085a_002\x1f\x1c\x03 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1et\x94
+\xd6途中、生きている人間には一度も出くわさなかった。@もっとも、
 余計な寄り道はせず、ただひたすら４階目指して廊下を歩いてき
 ただけだから、もしかしたらどこかの教室に生き残りがいるのか
 もしれない。@
@@ -122,45 +35,9 @@ t\x94
 団を被るのに似ている。@布団なんかでおばけから身を守れるはず
 がない。@だが、恐怖からは守ってくれる……。\
 
- 
-\x1e
-\r
-\x1f
-`\x03
-\x0c
-\x02
-"
-\x1f
-\xd2\x02
-\x1e
-\x02
-\x1f
-\x03
-\x1e
-\x02
-5
-\x03
-\x03
-SCE085a_003
-\x1f
-\xf2\x06
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-x\x94
-\x0c
-"
-\x03
-Z
-なたね
+ DO SOMETHING \x1f`\x03 AND "\x1f\xd2\x02 AND2 \x1f\x03 AND2 5
+SCE085a_003\x1f\xf2\x06 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1ex\x94
+Zなたね
 　「虎菱くん！」@
 
 　四階の階段を上りきったところには、なたねが腕を組んで立っ
@@ -176,45 +53,9 @@ Z
 拓司
 　「偶然だよ」\
 
- 
-\x1e
-\r
-\x1f
-6\x07
-\x0c
-\x02
-"
-\x1f
-\xd2\x02
-\x1e
-\x02
-\x1f
-\x03
-\x1e
-\x02
-5
-\x03
-\x03
-SCE085a_004
-\x1f
-\xd8\x08
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-|\x94
-\x0c
-"
-\x03
-\x9f
-なたね
+ DO SOMETHING \x1f6\x07 AND "\x1f\xd2\x02 AND2 \x1f\x03 AND2 5
+SCE085a_004\x1f\xd8\x08 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e|\x94
+\x9fなたね
 　「ううん、違う！@　やっぱり虎菱くんは戦士なのよ！@
 　　だから死ななかったんだわ！@　すごい、すごい！@
 　　きっと虎菱くんが死ななかったというところに、波動から身
@@ -230,45 +71,9 @@ SCE085a_004
 　拓司たちは身構えたが、果たして現れたのは見慣れた人物であ
 　った。\
 
- 
-\x1e
-\r
-\x1f
-\x1c\t
-\x0c
-\x02
-"
-\x1f
-\xd2\x02
-\x1e
-\x02
-\x1f
-\x03
-\x1e
-\x02
-5
-\x03
-\x03
-SCE085a_005
-\x1f
-\xd2\x0b
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-\x80\x94
-\x0c
-"
-\x03
-e
-　現れたのは御堂と、錦城である。@
+ DO SOMETHING \x1f\x1c\t AND "\x1f\xd2\x02 AND2 \x1f\x03 AND2 5
+SCE085a_005\x1f\xd2\x0b AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\x80\x94
+e　現れたのは御堂と、錦城である。@
 
 御堂
 　「はあ、はあ……お前ら、生きてたのか！」@
@@ -284,45 +89,9 @@ e
 　「とにかく、無事で良かったわ。@他に生き残っている人はいる
 　　の？！」\
 
- 
-\x1e
-\r
-\x1f
-\x16\x0c
-\x0c
-\x02
-"
-\x1f
-\xd2\x02
-\x1e
-\x02
-\x1f
-\x03
-\x1e
-\x02
-5
-\x03
-\x03
-SCE085a_006
-\x1f
-\xe4\r
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-\x84\x94
-\x0c
-"
-\x03
-}
-錦城
+ DO SOMETHING \x1f\x16\x0c AND "\x1f\xd2\x02 AND2 \x1f\x03 AND2 5
+SCE085a_006\x1f\xe4\r AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\x84\x94
+}錦城
 　「少ないわね。@では、ここを拠点にして、まだ無事な学生たち
 　　を探しに行きましょう！@　他のみんなは実験室の中？@
 　　とりあえずここに集めて－－」@
@@ -341,45 +110,9 @@ SCE085a_006
 　「いや、御堂。@……あながち全部デタラメってわけでもなさそ
 　　うだぜ」\
 
- 
-\x1e
-\r
-\x1f
-(\x0e
-\x0c
-\x02
-"
-\x1f
-\xd2\x02
-\x1e
-\x02
-\x1f
-\x03
-\x1e
-\x02
-5
-\x03
-\x03
-SCE085a_007
-\x1f
-V\x10
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-\x88\x94
-\x0c
-"
-\x03
-i
-御堂
+ DO SOMETHING \x1f(\x0e AND "\x1f\xd2\x02 AND2 \x1f\x03 AND2 5
+SCE085a_007\x1fV\x10 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\x88\x94
+i御堂
 　「なに……？」@
 
 　拓司はこれまでの出来事を、遅れてきた一同に語って聞かせた。
@@ -393,45 +126,9 @@ i
 
 錦城はふう、とため息をついて肩をすくめた。\
 
- 
-\x1e
-\r
-\x1f
-\x9a\x10
-\x0c
-\x02
-"
-\x1f
-\xd2\x02
-\x1e
-\x02
-\x1f
-\x03
-\x1e
-\x02
-5
-\x03
-\x03
-SCE085a_008
-\x1f
-x\x12
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-\x8c\x94
-\x0c
-"
-\x03
-z
-錦城
+ DO SOMETHING \x1f\x9a\x10 AND "\x1f\xd2\x02 AND2 \x1f\x03 AND2 5
+SCE085a_008\x1fx\x12 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\x8c\x94
+z錦城
 　「それにしても……雲居さん。@さっきいっていた最終波動っ
 　　て、いったいなんなの？」@
 なたね
@@ -445,45 +142,9 @@ z
 　　全に目覚めて、これまでの波動なんて話にならないくらいの
 　　巨大な波動を放ちます。@それが最終波動です」\
 
- 
-\x1e
-\r
-\x1f
-\xbc\x12
-\x0c
-\x02
-"
-\x1f
-\xd2\x02
-\x1e
-\x02
-\x1f
-\x03
-\x1e
-\x02
-5
-\x03
-\x03
-SCE085a_009
-\x1f
-\xde\x14
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-\x90\x94
-\x0c
-"
-\x03
-\x94
-錦城
+ DO SOMETHING \x1f\xbc\x12 AND "\x1f\xd2\x02 AND2 \x1f\x03 AND2 5
+SCE085a_009\x1f\xde\x14 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\x90\x94
+\x94錦城
 　「これまでの波動よりも大きい……」@
 なたね
 　「ええ。@おそらくそれで、地球上の人間はみな死ぬでしょう。@
@@ -500,45 +161,9 @@ SCE085a_009
 　「バカバカしい！@　こんなのの妄想を真に受けてるんじゃねえ
 　　だろうな！」\
 
- 
-\x1e
-\r
-\x1f
-"\x15
-\x0c
-\x02
-"
-\x1f
-\xd2\x02
-\x1e
-\x02
-\x1f
-\x03
-\x1e
-\x02
-5
-\x03
-\x03
-SCE085a_010
-\x1f
-\xac\x17
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-\x94\x94
-\x0c
-"
-\x03
-^
-拓司
+ DO SOMETHING \x1f"\x15 AND "\x1f\xd2\x02 AND2 \x1f\x03 AND2 5
+SCE085a_010\x1f\xac\x17 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\x94\x94
+^拓司
 　「だったらとっとと学校を出て、好きなところにいったらどう
 　　だ？」@
 御堂
@@ -555,79 +180,14 @@ SCE085a_010
 　「１時間後かもしれないし、１週間後かもしれない。@１０年後
 　　かもしれないし、１分後かも……１秒後かもしれない」\
 
- 
-\x1e
-\r
-\x1f
-\xf0\x17
-\x0c
-\x02
-"
-\x1f
-\xd2\x02
-\x1e
-\x02
-\x1f
-\x03
-\x1e
-\x02
-5
-\x03
-\x03
-SCE085a_011
-\x1f
-\xa2\x19
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-\x98\x94
-\x0c
-"
-\x03
-\x1e
-御堂
+ DO SOMETHING \x1f\xf0\x17 AND "\x1f\xd2\x02 AND2 \x1f\x03 AND2 5
+SCE085a_011\x1f\xa2\x19 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\x98\x94
+\x1e御堂
 　「……」@
 なたね
 　「……」@
 御堂
 　「と、とにかく実験室に入ろうじゃねえか。@話はそれからだ」\
 
- 
-\x1e
-\r
-\x1f
-\xe6\x19
-\x0c
-\x02
-"
-\x1f
-\xd2\x02
-\x1e
-\x02
-\x1f
-\x03
-\x1e
-\x02
-5
-\x1f
-\xd2\x02
-\x1e
-\x02
-\x03
-\x03
-TextClose
-v\x81\x1f
-\xa4\x1a
-\x1e
-\x02
-5
-6
-\xf1
+ DO SOMETHING \x1f\xe6\x19 AND "\x1f\xd2\x02 AND2 \x1f\x03 AND2 5\x1f\xd2\x02 AND2 
+TextClose \xa4\x1a AND2 56\xf1

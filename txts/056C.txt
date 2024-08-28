@@ -1,33 +1,7 @@
-\x01
-start
-\xef
-i\x01C
-\xf82
-\x01
-`B#\x01
-\xf2*
-\x03
-\x03
-SCE056_001
-\x1f
-\x06
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
- g
-\x0c
-"
-\x03
-J
-学生
+START
+\xf82\x01`B#\x01\xf2*
+SCE056_001\x1f\x06 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e g
+J学生
 　「おい、トン吉！」@
 
 それがあだ名なのであろう、ぶよりと太った男子学生が、おずお
@@ -37,51 +11,11 @@ J
 顔と髪は脂ぎって、てらてらと光っている。@
 怯えて眺める早桃の顔にも、明らかな嫌悪が浮かんでいる。\
 
- 
-\x1e
-\r
-\x1f
-J
-\x0c
-\x02
-"
-\x03
-\x07
-.\\Data\\Script\\TextFunc.Fob
-\x81\x1f
-\x92\x01
-\x1e
-\x02
-\x03
-\x02
-TextOn
-\x81\x1f
-\xc0\x01
-\x1e
-\x02
-5
-\x03
-\x03
-SCE056_002
-\x1f
-\xdc\x01
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-$g
-\x0c
-"
-\x03
-n
-学生
+ DO SOMETHING \x1fJ
+.\\Data\\Script\\TextFunc.Fob \x92\x01
+TextOn \xc0\x01 AND2 5
+SCE056_002\x1f\xdc\x01 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e$g
+n学生
 　「お前さ、虎菱のこと好きなんだろ？」@
 トン吉
 　「えっ？@　……いや……ええと……ぐふっ」@
@@ -98,45 +32,9 @@ n
 　「さあ、みんな！@　いじめられっこ同士がいま結ばれるぞ！@
 　　じっくり観察しようじゃないか！」\
 
- 
-\x1e
-\r
-\x1f
- \x02
-\x0c
-\x02
-"
-\x1f
-\x92\x01
-\x1e
-\x02
-\x1f
-\xc0\x01
-\x1e
-\x02
-5
-\x03
-\x03
-SCE056_003
-\x1f
-\x12\x04
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-(g
-\x0c
-"
-\x03
-W
-太った少年は、早桃の顔をじっとのぞき込んだ。@
+ DO SOMETHING \x1f \x02 AND "\x1f\x92\x01 AND2 \x1f\xc0\x01 AND2 5
+SCE056_003\x1f\x12\x04 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e(g
+W太った少年は、早桃の顔をじっとのぞき込んだ。@
 
 トン吉
 　「と、虎菱さん？」@
@@ -153,45 +51,9 @@ W
 早桃
 　「い……いやっ！@　やめて、やめてえっ！」\
 
- 
-\x1e
-\r
-\x1f
-V\x04
-\x0c
-\x02
-"
-\x1f
-\x92\x01
-\x1e
-\x02
-\x1f
-\xc0\x01
-\x1e
-\x02
-5
-\x03
-\x03
-SCE056_004
-\x1f
-\xec\x05
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-,g
-\x0c
-"
-\x03
-\x8e
-トン吉
+ DO SOMETHING \x1fV\x04 AND "\x1f\x92\x01 AND2 \x1f\xc0\x01 AND2 5
+SCE056_004\x1f\xec\x05 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e,g
+\x8eトン吉
 　「こんな形で残念だけど……き、君だって僕のことはキライじ
 　　ゃないはずだろ？@　ぼ、僕たちならきっとお似合いのカップ
 　　ルになれるから……お互いの心の傷を分かり合えるから……
@@ -210,45 +72,9 @@ SCE056_004
 だ。@
 ２人を取り囲んだクラスの全員が、どっと笑い声を上げた。\
 
- 
-\x1e
-\r
-\x1f
-0\x06
-\x0c
-\x02
-"
-\x1f
-\x92\x01
-\x1e
-\x02
-\x1f
-\xc0\x01
-\x1e
-\x02
-5
-\x03
-\x03
-SCE056_005
-\x1f
-\xa2\x08
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-0g
-\x0c
-"
-\x03
-c
-学生
+ DO SOMETHING \x1f0\x06 AND "\x1f\x92\x01 AND2 \x1f\xc0\x01 AND2 5
+SCE056_005\x1f\xa2\x08 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e0g
+c学生
 　「虎菱～！@　ファーストキスにそりゃあんまりだろ～！」@
 学生
 　「トン吉、トラウマっちゃうだろ！@　ぎゃはは！」@
@@ -261,45 +87,9 @@ c
 しかしその怒りはクラスメイトたちにではなく、早桃に……自分
 よりも弱い立場の人間へと向けられた。\
 
- 
-\x1e
-\r
-\x1f
-\xe6\x08
-\x0c
-\x02
-"
-\x1f
-\x92\x01
-\x1e
-\x02
-\x1f
-\xc0\x01
-\x1e
-\x02
-5
-\x03
-\x03
-SCE056_006
-\x1f
-\xac\n
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-4g
-\x0c
-"
-\x03
-\xc5
-トン吉
+ DO SOMETHING \x1f\xe6\x08 AND "\x1f\x92\x01 AND2 \x1f\xc0\x01 AND2 5
+SCE056_006\x1f\xac\n AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e4g
+\xc5トン吉
 　「虎菱……お前まで俺のことバカにするのかッ？！@　お前なら
 　　……クラスの嫌われ者のお前なら、俺のこと喜んで受け入れ
 　　るって思ったのに！@　お前が消しゴム落としたときに拾って
@@ -316,45 +106,9 @@ SCE056_006
 そしてチャックをおろして、すでに固く反り返ったペ○スを露出
 させる。\
 
- 
-\x1e
-\r
-\x1f
-\xf0\n
-\x0c
-\x02
-"
-\x1f
-\x92\x01
-\x1e
-\x02
-\x1f
-\xc0\x01
-\x1e
-\x02
-5
-\x03
-\x03
-SCE056_007
-\x1f
->\x0e
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-8g
-\x0c
-"
-\x03
-b
-まわりを取り囲んだ学生たちが、おお、と低くどよめいた。@
+ DO SOMETHING \x1f\xf0\n AND "\x1f\x92\x01 AND2 \x1f\xc0\x01 AND2 5
+SCE056_007\x1f>\x0e AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e8g
+bまわりを取り囲んだ学生たちが、おお、と低くどよめいた。@
 
 学生
 　「出ました、包茎チ○ポ！」@
@@ -368,68 +122,11 @@ b
 　「豚のガキ孕まされるんだぜ？@　人間としちゃ、生きてらんね
 　　えよなあ～、げらげら！」\
 
- 
-\x1e
-\r
-\x1f
-\x82\x0e
-\x0c
-\x02
-"
-\x1f
-\x92\x01
-\x1e
-\x02
-\x1f
-\xc0\x01
-\x1e
-\x02
-5
- 
-\x1e
-\r
-\x1e
-V
-\x0c
-\x02
-"
-\x03
-\x06
-.\\Data\\Script\\Bg.Fob
-sv\x81\x1f
-^\x10
-\x1e
-\x02
-\x03
-\x04
-BgAutoFadeIn
-sv\x81\x1f
-\x88\x10
-\x1e
-\x02
-5
-\x03
-\x03
-SCE056_008
-\x1f
-\xac\x10
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-<g
-\x0c
-"
-\x03
-u
-少年は早桃の髪をつかんで、乱暴に床に引き倒した。@
+ DO SOMETHING \x1f\x82\x0e AND "\x1f\x92\x01 AND2 \x1f\xc0\x01 AND2 5 DO SOMETHING \x1eV
+.\\Data\\Script\\Bg.Fob ^\x10
+BgAutoFadeIn \x88\x10 AND2 5
+SCE056_008\x1f\xac\x10 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e<g
+u少年は早桃の髪をつかんで、乱暴に床に引き倒した。@
 間髪入れず早桃にのしかかり、へこへこと腰を振り始める。@
 もちろん早桃は制服を着たままだから、ペ○スは早桃の中には入
 っていない。@
@@ -440,45 +137,9 @@ u
 学生たちからも嘲笑がとぶが、少年は意に介する様子もなく、た
 だひたすら早桃の上で腰を上下させている。\
 
- 
-\x1e
-\r
-\x1f
-\xf0\x10
-\x0c
-\x02
-"
-\x1f
-\x92\x01
-\x1e
-\x02
-\x1f
-\xc0\x01
-\x1e
-\x02
-5
-\x03
-\x03
-SCE056_009
-\x1f
-\xfe\x12
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-@g
-\x0c
-"
-\x03
-\xb8
-トン吉
+ DO SOMETHING \x1f\xf0\x10 AND "\x1f\x92\x01 AND2 \x1f\xc0\x01 AND2 5
+SCE056_009\x1f\xfe\x12 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e@g
+\xb8トン吉
 　「はあ、はあ、メチャクチャにしてやる！@　お前がバカにして
 　　いる男の汚い精液で、お前の子宮まで支配してやるからな！」
 @早桃
@@ -497,45 +158,9 @@ SCE056_009
 早桃は無意識に、もっとも信頼する義兄の名前を口にしたのだ。@
 しかし拓司はなにもすることができない。\
 
- 
-\x1e
-\r
-\x1f
-B\x13
-\x0c
-\x02
-"
-\x1f
-\x92\x01
-\x1e
-\x02
-\x1f
-\xc0\x01
-\x1e
-\x02
-5
-\x03
-\x03
-SCE056_010
-\x1f
-\\\x16
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-Dg
-\x0c
-"
-\x03
-\x86
-トン吉
+ DO SOMETHING \x1fB\x13 AND "\x1f\x92\x01 AND2 \x1f\xc0\x01 AND2 5
+SCE056_010\x1f\\\x16 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1eDg
+\x86トン吉
 　「はあ、はあ……そうだ、こ、これから僕のことをおにいちゃ
 　　んって呼べよ！」@
 早桃
@@ -552,45 +177,9 @@ Dg
 早桃
 　「……お……おにい……ちゃ……ん」\
 
- 
-\x1e
-\r
-\x1f
-\xa0\x16
-\x0c
-\x02
-"
-\x1f
-\x92\x01
-\x1e
-\x02
-\x1f
-\xc0\x01
-\x1e
-\x02
-5
-\x03
-\x03
-SCE056_011
-\x1f
-\xf2\x18
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-Hg
-\x0c
-"
-\x03
-k
-トン吉
+ DO SOMETHING \x1f\xa0\x16 AND "\x1f\x92\x01 AND2 \x1f\xc0\x01 AND2 5
+SCE056_011\x1f\xf2\x18 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1eHg
+kトン吉
 　「も、もう一回『おにいちゃん』っていって！@　はあ、はあ、
 　　は、早くいえってば！」@
 早桃
@@ -606,45 +195,9 @@ k
 途端、早桃に劇的な変化が訪れた。@
 身体をぶるぶると震わせて、抵抗がぱたりと止んだのだ。\
 
- 
-\x1e
-\r
-\x1f
-6\x19
-\x0c
-\x02
-"
-\x1f
-\x92\x01
-\x1e
-\x02
-\x1f
-\xc0\x01
-\x1e
-\x02
-5
-\x03
-\x03
-SCE056_012
-\x1f
-\x1c\x1b
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-Lg
-\x0c
-"
-\x03
-\xa4
-早桃
+ DO SOMETHING \x1f6\x19 AND "\x1f\x92\x01 AND2 \x1f\xc0\x01 AND2 5
+SCE056_012\x1f\x1c\x1b AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1eLg
+\xa4早桃
 　「儀式……身を清めて……死ねるための……儀式」@
 トン吉
 　「早桃……早桃ぉ……ぺろっ……おにいちゃんのこと好きなん
@@ -664,62 +217,9 @@ Lg
 早桃
 　「ふうっ……うくっ……お、お願い……します……はあ……」\
 
- 
-\x1e
-\r
-\x1f
-`\x1b
-\x0c
-\x02
-"
-\x1f
-\x92\x01
-\x1e
-\x02
-\x1f
-\xc0\x01
-\x1e
-\x02
-5
- 
-\x1e
-\r
-\x1e
-V
-\x0c
-\x02
-"
-\x1f
-^\x10
-\x1e
-\x02
-\x1f
-\x88\x10
-\x1e
-\x02
-5
-\x03
-\x03
-SCE056_013
-\x1f
-^\x1e
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-Pg
-\x0c
-"
-\x03
-\xba
-平野
+ DO SOMETHING \x1f`\x1b AND "\x1f\x92\x01 AND2 \x1f\xc0\x01 AND2 5 DO SOMETHING \x1eV AND "\x1f^\x10 AND2 \x1f\x88\x10 AND2 5
+SCE056_013\x1f^\x1e AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1ePg
+\xba平野
 　「好きだよ早桃！@　おにいちゃん、お前のこと愛してるよぉ！@
 　　あ、愛してるからなんだよ！@　愛してるから制服にかけたい
 　　んだよ！@　おにいちゃんは早桃のこと愛してるんだよ！@
@@ -739,45 +239,9 @@ Pg
 
 －－これは……現実ではないのではないか？\
 
- 
-\x1e
-\r
-\x1f
-\xa2\x1e
-\x0c
-\x02
-"
-\x1f
-\x92\x01
-\x1e
-\x02
-\x1f
-\xc0\x01
-\x1e
-\x02
-5
-\x03
-\x03
-SCE056_014
-\x1f
-\xc4!
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-Tg
-\x0c
-"
-\x03
-\x9b
-あの白い壁の世界がそうであったように、いま、自分は妄想の世
+ DO SOMETHING \x1f\xa2\x1e AND "\x1f\x92\x01 AND2 \x1f\xc0\x01 AND2 5
+SCE056_014\x1f\xc4! AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1eTg
+\x9bあの白い壁の世界がそうであったように、いま、自分は妄想の世
 界にいるのではないか？@　自分でも気づかない間に、妄想世界に
 迷い込んで、そのなかで喘いでいるのではないか？　@
 そう考えれば、波動やら集団自殺やらも説明が付く。@
@@ -794,45 +258,9 @@ Tg
 トン吉
 　「い、淫乱妹め！」\
 
- 
-\x1e
-\r
-\x1f
-\x08"
-\x0c
-\x02
-"
-\x1f
-\x92\x01
-\x1e
-\x02
-\x1f
-\xc0\x01
-\x1e
-\x02
-5
-\x03
-\x03
-SCE056_015
-\x1f
-\xae$
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-Xg
-\x0c
-"
-\x03
-s
-早桃
+ DO SOMETHING \x1f\x08" AND "\x1f\x92\x01 AND2 \x1f\xc0\x01 AND2 5
+SCE056_015\x1f\xae$ AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1eXg
+s早桃
 　「おにいちゃんの精液をぶっかけて、淫乱な早桃の制服をおに
 　　いちゃんのおたまじゃくしでべとべとに汚してください」@
 平野
@@ -844,62 +272,9 @@ s
 それまで息を呑んで見守っていた学生たちが、一斉に拍手で囃し
 立てる。\
 
- 
-\x1e
-\r
-\x1f
-\xf2$
-\x0c
-\x02
-"
-\x1f
-\x92\x01
-\x1e
-\x02
-\x1f
-\xc0\x01
-\x1e
-\x02
-5
- 
-\x1e
-\r
-\x1e
-\xc8
-\x0c
-\x02
-"
-\x1f
-^\x10
-\x1e
-\x02
-\x1f
-\x88\x10
-\x1e
-\x02
-5
-\x03
-\x03
-SCE056_016
-\x1f
-,'
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-\\g
-\x0c
-"
-\x03
-z
-学生
+ DO SOMETHING \x1f\xf2$ AND "\x1f\x92\x01 AND2 \x1f\xc0\x01 AND2 5 DO SOMETHING \x1e\xc8 AND "\x1f^\x10 AND2 \x1f\x88\x10 AND2 5
+SCE056_016\x1f,' AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\\g
+z学生
 　「おめでとう！」@
 学生
 　「おにいちゃん、よくやった！」@
@@ -916,79 +291,14 @@ z
 れたのだ。@ショックを受けないほうがおかしい。@
 しかもさらに－－\
 
- 
-\x1e
-\r
-\x1f
-p'
-\x0c
-\x02
-"
-\x1f
-\x92\x01
-\x1e
-\x02
-\x1f
-\xc0\x01
-\x1e
-\x02
-5
-\x03
-\x03
-SCE056_017
-\x1f
-\x92)
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-`g
-\x0c
-"
-\x03
-.
-トン吉
+ DO SOMETHING \x1fp' AND "\x1f\x92\x01 AND2 \x1f\xc0\x01 AND2 5
+SCE056_017\x1f\x92) AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e`g
+.トン吉
 　「早桃……お、おにいちゃんのチ○ポ、お口できれいにしてく
 　　れよ」@
 早桃
 　「……はい。@おにいちゃんのチ○ポ、早桃のおくちできれいに
 　　させてください……」\
 
- 
-\x1e
-\r
-\x1f
-\xd6)
-\x0c
-\x02
-"
-\x1f
-\x92\x01
-\x1e
-\x02
-\x1f
-\xc0\x01
-\x1e
-\x02
-5
-\x1f
-\x92\x01
-\x1e
-\x02
-\x03
-\x03
-TextClose
-v\x81\x1f
-\xd4*
-\x1e
-\x02
-5
-6
-\xf1
+ DO SOMETHING \x1f\xd6) AND "\x1f\x92\x01 AND2 \x1f\xc0\x01 AND2 5\x1f\x92\x01 AND2 
+TextClose \xd4* AND2 56\xf1

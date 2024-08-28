@@ -1,33 +1,7 @@
-\x01
-start
-\xef
-i\x01C
-\x17\x10
-\x01
-`B#\x01
-0\r
-\x03
-\x03
-SCE096_001
-\x1f
-\x06
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-\xa0\xa5
-\x0c
-"
-\x03
+START
+\x17\x10\x01`B#\x010\r
+SCE096_001\x1f\x06 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\xa0\xa5
 \x11
-
 
 
 
@@ -39,51 +13,11 @@ SCE096_001
 
 　　　　　　　　　　　　　『３日目』\
 
- 
-\x1e
-\r
-\x1f
-J
-\x0c
-\x02
-"
-\x03
-\x07
-.\\Data\\Script\\TextFunc.Fob
-\x81\x1f
-\xae
-\x1e
-\x02
-\x03
-\x02
-TextOn
-\x81\x1f
-\xdc
-\x1e
-\x02
-5
-\x03
-\x03
-SCE096_002
-\x1f
-\xf8
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-\xa4\xa5
-\x0c
-"
-\x03
-q
-　全員の顔に疲労の影を見た拓司は、なたねに提案をした。@
+ DO SOMETHING \x1fJ
+.\\Data\\Script\\TextFunc.Fob \xae
+TextOn \xdc AND2 5
+SCE096_002\x1f\xf8 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\xa4\xa5
+q　全員の顔に疲労の影を見た拓司は、なたねに提案をした。@
 
 拓司
 　「身体を濡れタオルで洗うのは５日に１回って話だったけど…
@@ -103,45 +37,9 @@ q
 　「だろうね。@でも、無駄にするわけじゃない。@
 　　身体を拭くんだ」\
 
- 
-\x1e
-\r
-\x1f
-<\x01
-\x0c
-\x02
-"
-\x1f
-\xae
-\x1e
-\x02
-\x1f
-\xdc
-\x1e
-\x02
-5
-\x03
-\x03
-SCE096_003
-\x1f
-:\x03
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-\xa8\xa5
-\x0c
-"
-\x03
-i
-なたね
+ DO SOMETHING \x1f<\x01 AND "\x1f\xae AND2 \x1f\xdc AND2 5
+SCE096_003\x1f:\x03 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\xa8\xa5
+iなたね
 　「……５日に１回で衛生的には問題はないと思うんですけど」@
 拓司
 　「衛生的な問題じゃない。@精神的な問題だ」@
@@ -153,91 +51,13 @@ i
 棚を移動して壁を作り、そこを即席の『シャワールーム』とした。
 @もちろん、女性陣のプライバシーを守るためである。\
 
- 
-\x1e
-\r
-\x1f
-~\x03
-\x0c
-\x02
-"
-\x1f
-\xae
-\x1e
-\x02
-\x1f
-\xdc
-\x1e
-\x02
-5
- 
-\x1e
-\r
-\x1e
-\x1f
-\x0c
-\x02
-"
-\x03
-\x06
-.\\Data\\Script\\Bg.Fob
-sv\x81\x1f
-v\x05
-\x1e
-\x02
-\x03
-\x04
-BgAutoFadeIn
-sv\x81\x1f
-\xa0\x05
-\x1e
-\x02
-5
- 
-\x1e
-\r
-\x1e
-\x07\x01
-\x0c
-\x02
-"
-\x03
-\x06
-.\\Data\\Script\\Bgm.Fob
-v\x81\x1f
-\xde\x05
-\x1e
-\x02
-\x03
-\x02
-PlayCD
-\x81\x1f
-\x08\x06
-\x1e
-\x02
-5
-\x03
-\x03
-SCE096_004
-\x1f
-$\x06
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-\xac\xa5
-\x0c
-"
-\x03
-q
-早桃
+ DO SOMETHING \x1f~\x03 AND "\x1f\xae AND2 \x1f\xdc AND2 5 DO SOMETHING \x1e\x1f
+.\\Data\\Script\\Bg.Fob v\x05
+BgAutoFadeIn \xa0\x05 AND2 5 DO SOMETHING \x1e\x07\x01
+.\\Data\\Script\\Bgm.Fob \xde\x05
+PlayCD \x08\x06 AND2 5
+SCE096_004\x1f$\x06 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\xac\xa5
+q早桃
 　「やったあ！@　もう身体がべとべとで、気持ち悪くてしかたな
 　　かったんだよね！」@
 カンナ
@@ -256,45 +76,9 @@ q
 錦城
 　「ふふふ」\
 
- 
-\x1e
-\r
-\x1f
-h\x06
-\x0c
-\x02
-"
-\x1f
-\xae
-\x1e
-\x02
-\x1f
-\xdc
-\x1e
-\x02
-5
-\x03
-\x03
-SCE096_005
-\x1f
-f\x08
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-\xb0\xa5
-\x0c
-"
-\x03
-p
-早桃
+ DO SOMETHING \x1fh\x06 AND "\x1f\xae AND2 \x1f\xdc AND2 5
+SCE096_005\x1ff\x08 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\xb0\xa5
+p早桃
 　「それにしても、錦城先生はさすがですよね……大人の女の人
 　　って感じで」@
 錦城
@@ -310,45 +94,9 @@ p
 冷たさが、全員の気分を高揚させている。@なんとなく合宿をして
 いるような、そんな感じすらある。\
 
- 
-\x1e
-\r
-\x1f
-\xaa\x08
-\x0c
-\x02
-"
-\x1f
-\xae
-\x1e
-\x02
-\x1f
-\xdc
-\x1e
-\x02
-5
-\x03
-\x03
-SCE096_006
-\x1f
-\xa4\n
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-\xb4\xa5
-\x0c
-"
-\x03
-y
-御堂
+ DO SOMETHING \x1f\xaa\x08 AND "\x1f\xae AND2 \x1f\xdc AND2 5
+SCE096_006\x1f\xa4\n AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\xb4\xa5
+y御堂
 　「虎菱、おめえなかなか粋なことしてくれんじゃねえかよ」@
 拓司
 　「リーダーだからな」@
@@ -366,34 +114,5 @@ y
 に追い出した。@とりあえずいまくらいは、さっぱりと明るい気持
 ちでいたかった。\
 
- 
-\x1e
-\r
-\x1f
-\xe8\n
-\x0c
-\x02
-"
-\x1f
-\xae
-\x1e
-\x02
-\x1f
-\xdc
-\x1e
-\x02
-5
-\x1f
-\xae
-\x1e
-\x02
-\x03
-\x03
-TextClose
-v\x81\x1f
-\x12\r
-\x1e
-\x02
-5
-6
-\xf1
+ DO SOMETHING \x1f\xe8\n AND "\x1f\xae AND2 \x1f\xdc AND2 5\x1f\xae AND2 
+TextClose \x12\r AND2 56\xf1

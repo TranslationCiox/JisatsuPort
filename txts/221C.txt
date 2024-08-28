@@ -1,33 +1,7 @@
-\x01
-start
-\xef
-i\x01C
-&\x08
-\x01
-`B#\x01
-\xcc\x05
-\x03
-\x03
-SCE221_001
-\x1f
-\x06
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-\xf0h\x01
-\x0c
-"
-\x03
+START
+&\x08\x01`B#\x01\xcc\x05
+SCE221_001\x1f\x06 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\xf0h\x01
 \x11
-
 
 
 
@@ -39,51 +13,11 @@ SCE221_001
 
 　　　　　　　　　　　　　『１０日目』\
 
- 
-\x1e
-\r
-\x1f
-J
-\x0c
-\x02
-"
-\x03
-\x07
-.\\Data\\Script\\TextFunc.Fob
-\x81\x1f
-\xae
-\x1e
-\x02
-\x03
-\x02
-TextOn
-\x81\x1f
-\xdc
-\x1e
-\x02
-5
-\x03
-\x03
-SCE221_002
-\x1f
-\xf8
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-\xf4h\x01
-\x0c
-"
-\x03
-\x81
-一日が静かに過ぎる。@
+ DO SOMETHING \x1fJ
+.\\Data\\Script\\TextFunc.Fob \xae
+TextOn \xdc AND2 5
+SCE221_002\x1f\xf8 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\xf4h\x01
+\x81一日が静かに過ぎる。@
 日中、ほとんど会話はない。@
 パーソナルスペースの隅に丸くなって、誰も動かない。@
 
@@ -104,100 +38,20 @@ SCE221_002
 　　からな。@しっかり見張ってろ。@ポカやらかしたら容赦しねえ
 　　からな」\
 
- 
-\x1e
-\r
-\x1f
-<\x01
-\x0c
-\x02
-"
-\x1f
-\xae
-\x1e
-\x02
-\x1f
-\xdc
-\x1e
-\x02
-5
-\x03
-\x03
-SCE221_003
-\x1f
-z\x03
-\x1e
-\x02
-\xef
-!
-\x1e
-\r
-\x1e
-\x8c\x01
-\r
-\x02
-\x1e
-\xf8h\x01
-\x0c
-"
-\x03
-:
-誰も御堂を非難をする者はいない。@
+ DO SOMETHING \x1f<\x01 AND "\x1f\xae AND2 \x1f\xdc AND2 5
+SCE221_003\x1fz\x03 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\xf8h\x01
+:誰も御堂を非難をする者はいない。@
 御堂が恐ろしいとか、なたねには当然の報いとか……そういうふ
 うに思うよりも、関心が持てないのだ。@
 自分のことを考えるのに精一杯で、とてもではないが他人の面倒
 など見ていられないのだ。\
 
- 
-\x1e
-\r
-\x1f
-\xbe\x03
-\x0c
-\x02
-"
-\x1f
-\xae
-\x1e
-\x02
-\x1f
-\xdc
-\x1e
-\x02
-5
-\x03
-"
-\oそれでも拓司は、自分の食糧を少し残し、夜、なたねに与えた
+ DO SOMETHING \x1f\xbe\x03 AND "\x1f\xae AND2 \x1f\xdc AND2 5\x03"
+CHOICE
+それでも拓司は、自分の食糧を少し残し、夜、なたねに与えた
 拓司は食糧を腹に収め、いつかくるであろう『そのとき』に備えた
-\l0,2,\E
- 
-\x1e
-\r
-\x1f
-\xe0\x04
-\x0c
-\x02
-"
-\x1f
-\xae
-\x1e
-\x02
-\x1f
-\xdc
-\x1e
-\x02
-5
-\x1f
-\xae
-\x1e
-\x02
-\x03
-\x03
-TextClose
-v\x81\x1f
-\xae\x05
-\x1e
-\x02
-5
-6
-\xf1
+\l0,2,
+ENDCHOICE
+
+ DO SOMETHING \x1f\xe0\x04 AND "\x1f\xae AND2 \x1f\xdc AND2 5\x1f\xae AND2 
+TextClose \xae\x05 AND2 56\xf1
