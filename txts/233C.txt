@@ -1,8 +1,8 @@
 START
-\x9b\x1f\x01`B#\x01\n\x1a  FLAG \n\x01
-FOBL "\x03\x06.\\Data\\Script\\Bgm.Fobv\x81\x1f 
-CMD1 PlayCD RUNF J \x025  FLAG +
-FOBL "\x03\x06.\\Data\\Script\\Bg.Fobsv\x81\x1f\x80
+\x9b\x1f\x01`B#\x01\n\x1a  FLAG \n\x01\x0c\x02"
+FOBT .\\Data\\Script\\Bgm.Fobv\x81\x1f  \x02
+CMD1 PlayCD RUNF J \x025  FLAG +\x0c\x02"
+FOBT .\\Data\\Script\\Bg.Fobsv\x81\x1f\x80 \x02
 CMD2 BgAutoFadeInsv\x81\x1f\xaa \x025
 SCEN SCE233_001 \xce \x02\xef! FLAG \x8c\x01FLAG\x02 \xb0{\x01\x0c"\x03_
  
@@ -15,8 +15,8 @@ SCEN SCE233_001 \xce \x02\xef! FLAG \x8c\x01FLAG\x02 \xb0{\x01\x0c"\x03_
 \n拓司はいった。@
 \n拓司\n　「わからない。\pたぶん……たぶん……」\
 
-  FLAG \x12\x01
-FOBL "\x03\x07.\\Data\\Script\\TextFunc.Fob RUNF \xae\x02
+  FLAG \x12\x01\x0c\x02"
+WHAT .\\Data\\Script\\TextFunc.Fob RUNF \xae\x02 \x02
 CMD1 TextOn RUNF \xdc\x02 \x025
 SCEN SCE233_002 \xf8\x02 \x02\xef! FLAG \x8c\x01FLAG\x02 \xb4{\x01\x0c"\x03\x96
  
@@ -31,8 +31,7 @@ SCEN SCE233_002 \xf8\x02 \x02\xef! FLAG \x8c\x01FLAG\x02 \xb4{\x01\x0c"\x03\x96
 バケツから校庭に廃棄される……排泄物のように。@
 \n次にそうなるのは、自分かもしれないのだ。\
 
-  FLAG <\x03
-FOBL " \xae\x02 \x02 \xdc\x02 \x025
+  FLAG <\x03\x0c\x02" \xae\x02 \x02 \xdc\x02 \x025
 SCEN SCE233_003 \xce\x05 \x02\xef! FLAG \x8c\x01FLAG\x02 \xb8{\x01\x0c"\x03\x8c
  
 紅葉\n　「でも……私たち４人がかりでかかっていったって、きっと御\n　　堂にはかなわないわ。\p錦城もいるし……。\pあいつら、鍵をか\n　　けて準備室に閉じこもってるから、不意打ちだってできない」\n\p拓司\n　「いや、チャンスはある」@
@@ -42,8 +41,7 @@ SCEN SCE233_003 \xce\x05 \x02\xef! FLAG \x8c\x01FLAG\x02 \xb8{\x01\x0c"\x03\x8c
 カンナ\n　「あらあら。\p自分ばっかりラクしようってわけ？」@
 \nカンナが冷たくいった。\p紅葉はキッとカンナをにらみつけた。\
 
-  FLAG \x12\x06
-FOBL " \xae\x02 \x02 \xdc\x02 \x025
+  FLAG \x12\x06\x0c\x02" \xae\x02 \x02 \xdc\x02 \x025
 SCEN SCE233_004 |\x08 \x02\xef! FLAG \x8c\x01FLAG\x02 \xbc{\x01\x0c"\x03\xb2
  
 紅葉\n　「月代さん。\pあなたが私たちのために……その……犠牲になっ\n　　てくれたことは感謝してる。\pでも、だからって私が犠牲にな\n　　らなきゃならないっていうのは、おかしいんじゃない？」@
@@ -53,8 +51,7 @@ SCEN SCE233_004 |\x08 \x02\xef! FLAG \x8c\x01FLAG\x02 \xbc{\x01\x0c"\x03\xb2
 紅葉\n　「あたしは……絶対嫌！」@
 \n紅葉は髪の毛をかきむしっていった。\p声が徐々に大きくなる。\
 
-  FLAG \xc0\x08
-FOBL " \xae\x02 \x02 \xdc\x02 \x025
+  FLAG \xc0\x08\x0c\x02" \xae\x02 \x02 \xdc\x02 \x025
 SCEN SCE233_005 \xc2\x0b \x02\xef! FLAG \x8c\x01FLAG\x02 \xc0{\x01\x0c"\x03\xae
  
 紅葉\n　「あんなヤツらに身体を触らせるくらいなら、死んだ方がマシ\n　　！」@
@@ -65,8 +62,7 @@ SCEN SCE233_005 \xc2\x0b \x02\xef! FLAG \x8c\x01FLAG\x02 \xc0{\x01\x0c"\x03\xae
 カンナ\n　「パニック映画に必ず１人はいるわよね、あなたみたいなキャ\n　　ラ。\p追いつめられるとヒステリー起こして、みんなの足を引\n　　っ張って、自分だけ助かろうとして。\pそういうキャラ、最後\n　　はどうなるか知ってる？\p　死ぬのよ。\pみっともなく死ぬの。@
 　　で、観客はみんなスーッとするって仕掛け」\
 
-  FLAG \x06\x0c
-FOBL " \xae\x02 \x02 \xdc\x02 \x025
+  FLAG \x06\x0c\x0c\x02" \xae\x02 \x02 \xdc\x02 \x025
 SCEN SCE233_006 \xf8\x0e \x02\xef! FLAG \x8c\x01FLAG\x02 \xc4{\x01\x0c"\x03\x82
  
 見かねて拓司は間に入った。@
@@ -77,8 +73,7 @@ SCEN SCE233_006 \xf8\x0e \x02\xef! FLAG \x8c\x01FLAG\x02 \xc4{\x01\x0c"\x03\x82
 紅葉\n　「拓司は、あたしが御堂にやられちゃうこと、どう思ってるわ\n　　け？」@
 拓司\n　「どう……って……」\
 
-  FLAG <\x0f
-FOBL " \xae\x02 \x02 \xdc\x02 \x025
+  FLAG <\x0f\x0c\x02" \xae\x02 \x02 \xdc\x02 \x025
 SCEN SCE233_007 ~\x11 \x02\xef! FLAG \x8c\x01FLAG\x02 \xc8{\x01\x0c"\x03G
  
 紅葉\n　「なんとも思わないんだ？」@
@@ -86,8 +81,7 @@ SCEN SCE233_007 ~\x11 \x02\xef! FLAG \x8c\x01FLAG\x02 \xc8{\x01\x0c"\x03G
 紅葉\n　「ムカつくって、なんで？\p　幼なじみだから？\p　罪もない女の\n　　子だから？\p　御堂が嫌いだから？」@
 拓司\n　「……どういう意味だ？」\
 
-  FLAG \xc2\x11
-FOBL " \xae\x02 \x02 \xdc\x02 \x025
+  FLAG \xc2\x11\x0c\x02" \xae\x02 \x02 \xdc\x02 \x025
 SCEN SCE233_008 \x18\x13 \x02\xef! FLAG \x8c\x01FLAG\x02 \xcc{\x01\x0c"\x03\x95
  
 紅葉\n　「あたしは、あんたにとってなんなのかってことよ！\p　そりゃ、\n　　幼なじみがレイプされたらムカつくでしょうよ！\p　罪もない\n　　女の子がレイプされたらムカつくでしょうよ！\p　しかも相手\n　　は御堂！\p　そりゃ最高にムカつくでしょうよ！\p　でも……そ\n　　ういうことなの？\p　そういうことだからムカつくの？！@
@@ -96,8 +90,7 @@ SCEN SCE233_008 \x18\x13 \x02\xef! FLAG \x8c\x01FLAG\x02 \xcc{\x01\x0c"\x03\x95
 \n拓司\n　「……それは、いまは答えられない」@
 紅葉\n　「どうしてよ！」\
 
-  FLAG \\\x13
-FOBL " \xae\x02 \x02 \xdc\x02 \x025
+  FLAG \\\x13\x0c\x02" \xae\x02 \x02 \xdc\x02 \x025
 SCEN SCE233_009 \xea\x15 \x02\xef! FLAG \x8c\x01FLAG\x02 \xd0{\x01\x0c"\x03n
  
 拓司\n　「答は決まっている。\p『お前は特別だ』と……おれはいう。@
@@ -107,20 +100,16 @@ SCEN SCE233_009 \xea\x15 \x02\xef! FLAG \x8c\x01FLAG\x02 \xd0{\x01\x0c"\x03n
 紅葉\n　「……」@
 \n誰も、何もいわなかった。\
 
-  FLAG .\x16
-FOBL " \xae\x02 \x02 \xdc\x02 \x025  
-CMD1 StopCD RUNF ,\x18 \x025  FLAG \xc8
-FOBL " \x80 \x02 \xaa \x025
+  FLAG .\x16\x0c\x02" \xae\x02 \x02 \xdc\x02 \x025   \x02
+CMD1 StopCD RUNF ,\x18 \x025  FLAG \xc8\x0c\x02" \x80 \x02 \xaa \x025
 SCEN SCE233_010 |\x18 \x02\xef! FLAG \x8c\x01FLAG\x02 \xd4{\x01\x0c"\x03\x0e
  
 その晩、紅葉は結局なにも答えずじまいだった。\
 
-  FLAG \xc0\x18
-FOBL " \xae\x02 \x02 \xdc\x02 \x025\x03\x1d
+  FLAG \xc0\x18\x0c\x02" \xae\x02 \x02 \xdc\x02 \x025\x03\x1d
 CHOICE
 しかし拓司は紅葉が協力してくれるはずだと信じていた\n拓司は、紅葉に頼るのは無理そうだ、と思った。\n\l0,2,
 ENDCHOICE
 
-  FLAG 2\x19
-FOBL " \xae\x02 \x02 \xdc\x02 \x025 \xae\x02 \x02
+  FLAG 2\x19\x0c\x02" \xae\x02 \x02 \xdc\x02 \x025 \xae\x02 \x02
 SCEN TextClosev\x81\x1f\xec\x19 \x0256\xf1

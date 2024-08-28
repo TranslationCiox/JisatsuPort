@@ -1,6 +1,6 @@
 START
-\xbe#\x01`B#\x01\xec\x1d  FLAG \xc8
-FOBL "\x03\x06.\\Data\\Script\\Bg.Fobsv\x81\x1f 
+\xbe#\x01`B#\x01\xec\x1d  FLAG \xc8\x0c\x02"
+FOBT .\\Data\\Script\\Bg.Fobsv\x81\x1f  \x02
 CMD1 BgOnsv\x81\x1fJ \x025
 SCEN SCE088_001 f \x02\xef! FLAG \x8c\x01FLAG\x02  \x99\x0c"\x03\x96
  
@@ -10,8 +10,8 @@ SCEN SCE088_001 f \x02\xef! FLAG \x8c\x01FLAG\x02  \x99\x0c"\x03\x96
 なたね\n　「アルミホイルよ、御堂くん」@
 御堂\n　「うるせえッ！\p　とにかく、こんな狂った女を信じるのは俺は\n　　ゴメンだ！\p　お前らも信じてなんかいねえくせに、信じたフ\n　　リすんのはやめろ！\p　溺れてるからってワラ掴んでどうする\n　　よ！\p　ワラはしょせんワラなんだぞ、てめえら！」　\
 
-  FLAG \xaa
-FOBL "\x03\x07.\\Data\\Script\\TextFunc.Fob RUNF "\x03
+  FLAG \xaa\x0c\x02"
+WHAT .\\Data\\Script\\TextFunc.Fob RUNF "\x03 \x02
 CMD1 TextOn RUNF P\x03 \x025
 SCEN SCE088_002 l\x03 \x02\xef! FLAG \x8c\x01FLAG\x02 $\x99\x0c"\x03\xaa
  
@@ -25,8 +25,7 @@ SCEN SCE088_002 l\x03 \x02\xef! FLAG \x8c\x01FLAG\x02 $\x99\x0c"\x03\xaa
 　　最終波動は次の瞬間に襲ってくるかもしれないから。@
 　　アルミホイルは窓には張り付けないで。\p反射した波動をはじ\n　　き返す出口が必要だから。\pそうしないと波動が内部で無限反\n　　射を繰り返すことになってしまうから－－」\
 
-  FLAG \xb0\x03
-FOBL " "\x03 \x02 P\x03 \x025
+  FLAG \xb0\x03\x0c\x02" "\x03 \x02 P\x03 \x025
 SCEN SCE088_003 \x92\x06 \x02\xef! FLAG \x8c\x01FLAG\x02 (\x99\x0c"\x03s
  
 御堂\n　「うるせえ！\p　もういいってんだよ、電波女！」@
@@ -38,8 +37,7 @@ SCEN SCE088_003 \x92\x06 \x02\xef! FLAG \x8c\x01FLAG\x02 (\x99\x0c"\x03s
 御堂\n　「なんだと……？」@
 /*▲BGM　Track06　再生*/\a2,-1,6,1,なたね\n　「私たちは団結しなければなりません。\p私たちの目的は、この\n　　非常事態下を生き残ること。\pそうでしょう？\p　だから団結\n　　を乱すような行為は控えてください」\
 
-  FLAG \xd6\x06
-FOBL " "\x03 \x02 P\x03 \x025
+  FLAG \xd6\x06\x0c\x02" "\x03 \x02 P\x03 \x025
 SCEN SCE088_004 \xdc\x08 \x02\xef! FLAG \x8c\x01FLAG\x02 ,\x99\x0c"\x03\xa2
  
 御堂\n　「……この！」@
@@ -50,8 +48,7 @@ SCEN SCE088_004 \xdc\x08 \x02\xef! FLAG \x8c\x01FLAG\x02 ,\x99\x0c"\x03\xa2
 　　その他消耗品。\pラジオ。\p電池。\pもちろんこのアルミホイルも。\n　　\p生存に必要となる物は、隣の実験準備室の棚に隠してありま\n　　す」@
 \n　全員の視線が、さっと実験準備室の扉へと注がれる。\
 
-  FLAG  \t
-FOBL " "\x03 \x02 P\x03 \x025
+  FLAG  \t\x0c\x02" "\x03 \x02 P\x03 \x025
 SCEN SCE088_005 \xe2\x0b \x02\xef! FLAG \x8c\x01FLAG\x02 0\x99\x0c"\x03\x82
  
 なたね\n　「ただし－－鍵は私が持っています」@
@@ -62,8 +59,7 @@ SCEN SCE088_005 \xe2\x0b \x02\xef! FLAG \x8c\x01FLAG\x02 0\x99\x0c"\x03\x82
 御堂\n　「……おい！」@
 錦城\n　「やめなさい、御堂くん！\p……どういうことかしら、雲居さ\n　　ん。\p御堂くんじゃなくても、あなたの話を聞いていると不安\n　　になるわ。\pわかりやすく説明してもらえないかしら？」\
 
-  FLAG &\x0c
-FOBL " "\x03 \x02 P\x03 \x025
+  FLAG &\x0c\x0c\x02" "\x03 \x02 P\x03 \x025
 SCEN SCE088_006 h\x0e \x02\xef! FLAG \x8c\x01FLAG\x02 4\x99\x0c"\x03\xb1
  
 なたね\n　「私たちは団結しなければなりません。\pその点はご同意いただ\n　　けますね？」@
@@ -73,8 +69,7 @@ SCEN SCE088_006 h\x0e \x02\xef! FLAG \x8c\x01FLAG\x02 4\x99\x0c"\x03\xb1
 錦城\n　「伝染性のある病気にかかったら……どうするかって……どう\n　　いうこと？」@
 \n　なたねはそれを無視して続けた。\p異様な緊張が、部屋に充ちて\n　いる。\
 
-  FLAG \xac\x0e
-FOBL " "\x03 \x02 P\x03 \x025
+  FLAG \xac\x0e\x0c\x02" "\x03 \x02 P\x03 \x025
 SCEN SCE088_007 \xaa\x11 \x02\xef! FLAG \x8c\x01FLAG\x02 8\x99\x0c"\x03\x99
  
 なたね\n　「そうした些細な意見の食い違いは、今後は抑圧されなければ\n　　なりません。\p抑圧するために、私たちのなかの誰かが、私た\n　　ちの管理者にならなければなりません。\pトップから末端に、\n　　完全な形で指令が行き届く強力な縦社会の構築こそが必要で\n　　す」@
@@ -85,8 +80,7 @@ SCEN SCE088_007 \xaa\x11 \x02\xef! FLAG \x8c\x01FLAG\x02 8\x99\x0c"\x03\x99
 　　私は鍵を管理しますが、管理者に従属します。\p私は管理者に\n　　はなりませんが、管理者を監視します」@
 錦城\n　「どういう意味……？」\
 
-  FLAG \xee\x11
-FOBL " "\x03 \x02 P\x03 \x025
+  FLAG \xee\x11\x0c\x02" "\x03 \x02 P\x03 \x025
 SCEN SCE088_008 \x8c\x14 \x02\xef! FLAG \x8c\x01FLAG\x02 <\x99\x0c"\x03\xb6
  
 なたね\n　「管理者の暴走を抑止する装置になるということです」@
@@ -95,8 +89,7 @@ SCEN SCE088_008 \x8c\x14 \x02\xef! FLAG \x8c\x01FLAG\x02 <\x99\x0c"\x03\xb6
 錦城\n　「……それで？」@
 なたね\n　「このように、みなさんは、他のみなさんに対して中立ではあ\n　　りません。\pすなわち、不公平な専制君主が生まれる危険性が\n　　あるわけです。\pですから、暴走を抑止する意味で、私が鍵を\n　　管理します。\p一部なりとも、私が権利を所有するというわけ\n　　です。\pもちろん、食糧の管理を受け持つ私が専制君主になる\n　　可能性はあるわけですが、その場合、力ずくでもなんでも、\n　　私から鍵を奪うことは簡単なはずです。\pもっとも、私も私な\n　　りに抵抗はさせてもらうと思いますけれど」\
 
-  FLAG \xd0\x14
-FOBL " "\x03 \x02 P\x03 \x025
+  FLAG \xd0\x14\x0c\x02" "\x03 \x02 P\x03 \x025
 SCEN SCE088_009 \xe2\x17 \x02\xef! FLAG \x8c\x01FLAG\x02 @\x99\x0c"\x03\x8f
  
 　全員が、なたねの言葉をゆっくりと、慎重にかみ砕いていた。@
@@ -107,8 +100,7 @@ SCEN SCE088_009 \xe2\x17 \x02\xef! FLAG \x8c\x01FLAG\x02 @\x99\x0c"\x03\x8f
 なたね\n　「私は中立です」@
 錦城\n　「そうかしら？」\
 
-  FLAG &\x18
-FOBL " "\x03 \x02 P\x03 \x025
+  FLAG &\x18\x0c\x02" "\x03 \x02 P\x03 \x025
 SCEN SCE088_010 \x9c\x1a \x02\xef! FLAG \x8c\x01FLAG\x02 D\x99\x0c"\x03d
  
 なたね\n　「私の目的は、来たる地球本土決戦に向けて、１人でも多くの\n　　人間を生き残らせることだけですから」@
@@ -117,13 +109,11 @@ SCEN SCE088_010 \x9c\x1a \x02\xef! FLAG \x8c\x01FLAG\x02 D\x99\x0c"\x03d
 /*▲BGM　停止*/\a4,-1,0,0,\n部屋中にアルミホイルを張り付けた後、無記名の投票が行われた。\n\p『管理者』を選ぶための投票だ。@
 拓司は……\
 
-  FLAG \xe0\x1a
-FOBL " "\x03 \x02 P\x03 \x025\x03!
+  FLAG \xe0\x1a\x0c\x02" "\x03 \x02 P\x03 \x025\x03!
 CHOICE
 自分に投票した\n紅葉に投票した\nカンナに投票した\n早桃に投票した\n御堂に投票した\n錦城に投票した\nなたねに投票した\n\l0,7,
 ENDCHOICE
 
-  FLAG \xaa\x1c
-FOBL " "\x03 \x02 P\x03 \x025 "\x03
+  FLAG \xaa\x1c\x0c\x02" "\x03 \x02 P\x03 \x025 "\x03 \x02
 CMD2 GetLastTxtIDsv\x81\x1ft\x1d \x025! FLAG \x04FLAG\x02  FLAG\x0c\x01" "\x03 \x02
 SCEN TextClosev\x81\x1f\xce\x1d \x0256\xf1

@@ -1,9 +1,7 @@
 START
 \xc5\x05\x01\xa4\t3\x01\xba\x04
-SCEN SCE061_001 \x06 \x02\xef! FLAG \x8c\x01FLAG\x02 \xf0n\x0c"  FLAG \x02
-FOBL "  \x04FLAG \x1a
-FOBL "  \x08FLAG \x01
-FOBL "\x03\x06.\\Data\\Script\\Bgm.Fobv\x81\x1f\x98
+SCEN SCE061_001 \x06 \x02\xef! FLAG \x8c\x01FLAG\x02 \xf0n\x0c"  FLAG \x02\x0c\x02"  \x04FLAG \x1a\x0c\x02"  \x08FLAG \x01\x0c\x02"
+FOBT .\\Data\\Script\\Bgm.Fobv\x81\x1f\x98 \x02
 CMD1 SePlay RUNF \xc2 \x025\x03\\
  
 なたね\n　「次は？」@
@@ -16,19 +14,17 @@ CMD1 SePlay RUNF \xc2 \x025\x03\\
 拓司\n　「……何の話だ？」@
 なたね\n　「死の話」\
 
-  FLAG \xde
-FOBL "\x03\x07.\\Data\\Script\\TextFunc.Fob RUNF n\x02
-CMD1 TextOn RUNF \x9c\x02 \x025  FLAG \x02
-FOBL " \x98
-CMD1 SeStop RUNF \xde\x02 \x025  FLAG <
-FOBL "\x03\x07.\\Data\\Script\\TextFunc.fob RUNF \x14\x03 \x02
+  FLAG \xde\x0c\x02"
+WHAT .\\Data\\Script\\TextFunc.Fob RUNF n\x02 \x02
+CMD1 TextOn RUNF \x9c\x02 \x025  FLAG \x02\x0c\x02" \x98 \x02
+CMD1 SeStop RUNF \xde\x02 \x025  FLAG <\x0c\x02"
+WHAT .\\Data\\Script\\TextFunc.fob RUNF \x14\x03 \x02
 SCEN WaitTimesv\x81\x1fB\x03 \x025
 SCEN SCE061_002 b\x03 \x02\xef! FLAG \x8c\x01FLAG\x02 \xf4n\x0c"\x03\x12
  
 拓司\n　「早桃は廊下で待っていろ。\p雲居さんは……一緒に頼む」\
 
-  FLAG \xa6\x03
-FOBL " n\x02 \x02 \x9c\x02 \x025  FLAG \xc9
-FOBL "\x03\x06.\\Data\\Script\\Bg.Fobsv\x81\x1fB\x04
+  FLAG \xa6\x03\x0c\x02" n\x02 \x02 \x9c\x02 \x025  FLAG \xc9\x0c\x02"
+FOBT .\\Data\\Script\\Bg.Fobsv\x81\x1fB\x04 \x02
 CMD2 BgAutoFadeInsv\x81\x1fl\x04 \x025 n\x02 \x02
 SCEN TextClosev\x81\x1f\x9c\x04 \x0256\xf1

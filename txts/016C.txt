@@ -8,8 +8,8 @@ SCEN SCE016_001 \x06 \x02\xef! FLAG \x8c\x01FLAG\x02 \xa0(\x0c"\x03^
 拓司\n　「そうか？　なんとなくいつもと違う感じがしたからさ」@
 紅葉\n　「……」@
 拓司\n　「……」\w\z
-  FLAG J
-FOBL "\x03\x07.\\Data\\Script\\TextFunc.Fob RUNF \xe2\x01
+  FLAG J\x0c\x02"
+WHAT .\\Data\\Script\\TextFunc.Fob RUNF \xe2\x01 \x02
 CMD1 TextOn RUNF \x10\x02 \x025
 SCEN SCE016_002 ,\x02 \x02\xef! FLAG \x8c\x01FLAG\x02 \xa4(\x0c"\x03(
  
@@ -19,8 +19,7 @@ SCEN SCE016_002 ,\x02 \x02\xef! FLAG \x8c\x01FLAG\x02 \xa4(\x0c"\x03(
 拓司\n　「ふうん」@
 紅葉\n　「……」@
 拓司\n　「……」\w\z
-  FLAG p\x02
-FOBL " \xe2\x01 \x02 \x10\x02 \x025
+  FLAG p\x02\x0c\x02" \xe2\x01 \x02 \x10\x02 \x025
 SCEN SCE016_003 J\x03 \x02\xef! FLAG \x8c\x01FLAG\x02 \xa8(\x0c"\x035
  
 沈黙の後、紅葉が突然、えい、と拓司の背中にパンチを飛ばした。\n@
@@ -29,6 +28,5 @@ SCEN SCE016_003 J\x03 \x02\xef! FLAG \x8c\x01FLAG\x02 \xa8(\x0c"\x035
 拓司\n　「……照れてるのか？」@
 紅葉\n　「うるさいっ！」\
 
-  FLAG \x8e\x03
-FOBL " \xe2\x01 \x02 \x10\x02 \x025 \xe2\x01 \x02
+  FLAG \x8e\x03\x0c\x02" \xe2\x01 \x02 \x10\x02 \x025 \xe2\x01 \x02
 SCEN TextClosev\x81\x1f\xa8\x04 \x0256\xf1

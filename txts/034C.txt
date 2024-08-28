@@ -1,6 +1,6 @@
 START
-\x97\r\x01`B#\x01:\x0b  FLAG \t\x01
-FOBL "\x03\x06.\\Data\\Script\\Bgm.Fobv\x81\x1f 
+\x97\r\x01`B#\x01:\x0b  FLAG \t\x01\x0c\x02"
+FOBT .\\Data\\Script\\Bgm.Fobv\x81\x1f  \x02
 CMD1 PlayCD RUNF J \x025
 SCEN SCE034_001 f \x02\xef! FLAG \x8c\x01FLAG\x02 \xc0D\x0c"\x03\xb1
  
@@ -17,8 +17,8 @@ SCEN SCE034_001 f \x02\xef! FLAG \x8c\x01FLAG\x02 \xc0D\x0c"\x03\xb1
 早桃はぽつんと座っていた。@
 \n　賑やかで温かい教室の空気から、早桃の姿だけが浮き上がって\n見えた。\
 
-  FLAG \xaa
-FOBL "\x03\x07.\\Data\\Script\\TextFunc.Fob RUNF \x8e\x03
+  FLAG \xaa\x0c\x02"
+WHAT .\\Data\\Script\\TextFunc.Fob RUNF \x8e\x03 \x02
 CMD1 TextOn RUNF \xbc\x03 \x025
 SCEN SCE034_002 \xd8\x03 \x02\xef! FLAG \x8c\x01FLAG\x02 \xc4D\x0c"\x03y
  
@@ -33,8 +33,7 @@ SCEN SCE034_002 \xd8\x03 \x02\xef! FLAG \x8c\x01FLAG\x02 \xc4D\x0c"\x03y
 \n早桃\n　「あの……\pどうしたの？」@
 拓司\n　「いや。\pたまには一緒に飯でも食おうかと思ってさ」\
 
-  FLAG \x1c\x04
-FOBL " \x8e\x03 \x02 \xbc\x03 \x025
+  FLAG \x1c\x04\x0c\x02" \x8e\x03 \x02 \xbc\x03 \x025
 SCEN SCE034_003 :\x06 \x02\xef! FLAG \x8c\x01FLAG\x02 \xc8D\x0c"\x03\\
  
 早桃\n　「どうして？」@
@@ -45,8 +44,7 @@ SCEN SCE034_003 :\x06 \x02\xef! FLAG \x8c\x01FLAG\x02 \xc8D\x0c"\x03\\
 女子学生\n　「うぜえよ」@
 \n　そんな声が、時折やや大きめに漏れ聞こえる。\n　早桃は必死にそれに気づかない振りをしているが、声が聞こえ\nるたび、目の中に怯えと恥じらいの影がゆらぐ。\
 
-  FLAG ~\x06
-FOBL " \x8e\x03 \x02 \xbc\x03 \x025
+  FLAG ~\x06\x0c\x02" \x8e\x03 \x02 \xbc\x03 \x025
 SCEN SCE034_004 (\x08 \x02\xef! FLAG \x8c\x01FLAG\x02 \xccD\x0c"\x03T
  
 　早桃がクラスで孤立しているということはなんとなく把握して\nいるつもりだった。@
@@ -57,14 +55,12 @@ SCEN SCE034_004 (\x08 \x02\xef! FLAG \x8c\x01FLAG\x02 \xccD\x0c"\x03T
 拓司\n　「まだ……食べてない」@
 早桃\n　「わけてあげよっか？」\
 
-  FLAG l\x08
-FOBL " \x8e\x03 \x02 \xbc\x03 \x025
+  FLAG l\x08\x0c\x02" \x8e\x03 \x02 \xbc\x03 \x025
 SCEN SCE034_005 \xf6\t \x02\xef! FLAG \x8c\x01FLAG\x02 \xd0D\x0c"\x03'
  
 拓司\n　「……え？」@
 早桃\n　「これ。\pほとんど口つけてないから」@
 \n　そういって早桃は、ひとかじりしただけのコッペパンを軽く振\nってみせた。\
 
-  FLAG :\n
-FOBL " \x8e\x03 \x02 \xbc\x03 \x025 \x8e\x03 \x02
+  FLAG :\n\x0c\x02" \x8e\x03 \x02 \xbc\x03 \x025 \x8e\x03 \x02
 SCEN TextClosev\x81\x1f\x1c\x0b \x0256\xf1

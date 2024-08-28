@@ -6,13 +6,13 @@ SCEN SCE067_001 \x06 \x02\xef! FLAG \x8c\x01FLAG\x02 Px\x0c"\x03\xb3
 　　赤ちゃんは泣くでしょう？\p　泣いてアピールをするの。@
 　　そうするとあやしてもらえる。\pそしてそこで、赤ちゃんはふ\n　　たつの満足を得るの。\p『自分が困っているという意思表示を\n　　したときには誰かが助けてくれる』という安心感。\pそしても\n　　う一つは……『自分が環境に影響を及ぼすことができる』と\n　　いう自信。\pでも、人手が足りない施設ではそういうのは無視\n　　されることが多い。\p『赤ん坊は泣くことが仕事。\p甘やかす必\n　　要はない』ってね。\pそうなると、赤ちゃんはどうなると思う？\n　　\p泣かなくなるのよ。\p静かになって、面会に来た母親がそこか\n　　ら去っても平気になる。\pさて、こういう状態をなんと呼ぶで\n　　しょう？」\
 
-  FLAG J
-FOBL "\x03\x07.\\Data\\Script\\TextFunc.Fob RUNF 6\x03
-CMD1 TextOn RUNF d\x03 \x025\x03\x07
+  FLAG J\x0c\x02"
+WHAT .\\Data\\Script\\TextFunc.Fob RUNF 6\x03 \x02
+CMD1 TextOn RUNF d\x03 \x025
+WHAT 
 CHOICE
 克服\n否認\n\l0,2,
 ENDCHOICE
 
-  FLAG \x80\x03
-FOBL " 6\x03 \x02 d\x03 \x025 6\x03 \x02
+  FLAG \x80\x03\x0c\x02" 6\x03 \x02 d\x03 \x025 6\x03 \x02
 SCEN TextClosev\x81\x1f\xe2\x03 \x0256\xf1

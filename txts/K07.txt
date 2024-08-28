@@ -1,7 +1,8 @@
 START
-v\t\x01`B#\x018\x07  FLAG \xc8
-FOBL "\x03\x06.\\Data\\Script\\Bg.Fobsv\x81\x1f 
-CMD2 BgAutoFadeInsv\x81\x1fJ \x025\x03\x06.\\Data\\Script\\Bgm.Fobv\x81\x1fn
+v\t\x01`B#\x018\x07  FLAG \xc8\x0c\x02"
+FOBT .\\Data\\Script\\Bg.Fobsv\x81\x1f  \x02
+CMD2 BgAutoFadeInsv\x81\x1fJ \x025
+FOBT .\\Data\\Script\\Bgm.Fobv\x81\x1fn \x02
 CMD1 StopCD RUNF \x98 \x025
 SCEN SCEK07_001 \xb4 \x02\xef! FLAG \x8c\x01FLAG\x02 \xf8\xa6\x01\x0c"\x03\x8a
  
@@ -14,8 +15,8 @@ SCEN SCEK07_001 \xb4 \x02\xef! FLAG \x8c\x01FLAG\x02 \xf8\xa6\x01\x0c"\x03\x8a
 訳が分からず、私はゆきと地面のゴミを交互に見比べた。@
 どういうことだろう？@
 ゆきがここで隠れて煙草でも吸っているということなのだろうか？\n\pだんだん腹が立ってきた。\w\z
-  FLAG \xf8
-FOBL "\x03\x07.\\Data\\Script\\TextFunc.Fob RUNF @\x03
+  FLAG \xf8\x0c\x02"
+WHAT .\\Data\\Script\\TextFunc.Fob RUNF @\x03 \x02
 CMD1 TextOn RUNF n\x03 \x025
 SCEN SCEK07_002 \x8a\x03 \x02\xef! FLAG \x8c\x01FLAG\x02 \xf8\xa6\x01\x0c"\x03\x9b
  
@@ -30,12 +31,10 @@ SCEN SCEK07_002 \x8a\x03 \x02\xef! FLAG \x8c\x01FLAG\x02 \xf8\xa6\x01\x0c"\x03\x
 あまりにもどす黒い、私の覚悟を越える秘密の匂いがした。@
 聞いてしまったら、私はもうその秘密から逃れることはできない。\n\p興奮が私の中から急速に引いてゆき、白茶けた無感動がかわりに\n広がった。@
 私は急に怖くなった。\w\z
-  FLAG \xce\x03
-FOBL " @\x03 \x02 n\x03 \x025\x03\x18
+  FLAG \xce\x03\x0c\x02" @\x03 \x02 n\x03 \x025\x03\x18
 CHOICE
 「もういいよ、帰ろう」と私はいった\n「聞かせて」と、私は恐怖を抑えていった。\n\l0,2,
 ENDCHOICE
 
-  FLAG t\x06
-FOBL " @\x03 \x02 n\x03 \x025 @\x03 \x02
+  FLAG t\x06\x0c\x02" @\x03 \x02 n\x03 \x025 @\x03 \x02
 SCEN TextClosev\x81\x1f\x1a\x07 \x0256\xf1

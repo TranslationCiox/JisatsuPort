@@ -7,8 +7,8 @@ SCEN SCE099_001 \x06 \x02\xef! FLAG \x8c\x01FLAG\x02 P\xaa\x0c"\x03I
 拓司\n　「もちろん、ラジオから指令電波を盗聴するだとか、お前が宇\n　　宙人のスパイだとか、そんなことは俺だって信じていない」@
 \n拓司はなたねをちらりとみやった。@
 なたねはいつもの無表情で、なんの反応もない。\w\z
-  FLAG J
-FOBL "\x03\x07.\\Data\\Script\\TextFunc.Fob RUNF \x8e\x01
+  FLAG J\x0c\x02"
+WHAT .\\Data\\Script\\TextFunc.Fob RUNF \x8e\x01 \x02
 CMD1 TextOn RUNF \xbc\x01 \x025
 SCEN SCE099_002 \xd8\x01 \x02\xef! FLAG \x8c\x01FLAG\x02 T\xaa\x0c"\x03l
  
@@ -17,6 +17,5 @@ SCEN SCE099_002 \xd8\x01 \x02\xef! FLAG \x8c\x01FLAG\x02 T\xaa\x0c"\x03l
 なたね\n　「もういい！」@
 いうとなたねは、走るように自分のスペースへと向かい、膝を抱\nえて壁に向かった。@
 \nそれから一日、早桃はおろか、他の誰もひとことも口をきこう\nとはしなかった。\w\z
-  FLAG \x1c\x02
-FOBL " \x8e\x01 \x02 \xbc\x01 \x025 \x8e\x01 \x02
+  FLAG \x1c\x02\x0c\x02" \x8e\x01 \x02 \xbc\x01 \x025 \x8e\x01 \x02
 SCEN TextClosev\x81\x1f\x12\x04 \x0256\xf1

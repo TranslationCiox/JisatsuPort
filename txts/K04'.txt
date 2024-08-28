@@ -1,8 +1,8 @@
 START
-\xa6\n\x01`B#\x01\xbc\x07  FLAG \\
-FOBL "\x03\x06.\\Data\\Script\\Bg.Fobsv\x81\x1f 
-CMD2 BgAutoFadeInsv\x81\x1fJ \x025  FLAG \x04\x01
-FOBL "\x03\x06.\\Data\\Script\\Bgm.Fobv\x81\x1f\x88
+\xa6\n\x01`B#\x01\xbc\x07  FLAG \\\x0c\x02"
+FOBT .\\Data\\Script\\Bg.Fobsv\x81\x1f  \x02
+CMD2 BgAutoFadeInsv\x81\x1fJ \x025  FLAG \x04\x01\x0c\x02"
+FOBT .\\Data\\Script\\Bgm.Fobv\x81\x1f\x88 \x02
 CMD1 PlayCD RUNF \xb2 \x025
 SCEN SCEK04_A01 \xce \x02\xef! FLAG \x8c\x01FLAG\x02 X\xa6\x01\x0c"\x03\xe0
  
@@ -15,10 +15,9 @@ SCEN SCEK04_A01 \xce \x02\xef! FLAG \x8c\x01FLAG\x02 X\xa6\x01\x0c"\x03\xe0
 私たちはただじっと、だきあっているだけで精神的なクライマッ\nクスを迎えることができるようになっていた。@
 まるで史上初めて火を発見した人類みたいな気分だった。@
 どきどきして、誇らしかった。\w\z
-  FLAG \x12\x01
-FOBL "\x03\x07.\\Data\\Script\\TextFunc.Fob RUNF \xb2\x04
-CMD1 TextOn RUNF \xe0\x04 \x025  FLAG \xc8
-FOBL "   \x02 J \x025 \x88
+  FLAG \x12\x01\x0c\x02"
+WHAT .\\Data\\Script\\TextFunc.Fob RUNF \xb2\x04 \x02
+CMD1 TextOn RUNF \xe0\x04 \x025  FLAG \xc8\x0c\x02"   \x02 J \x025 \x88 \x02
 CMD1 StopCD RUNF <\x05 \x025
 SCEN SCEK04_A02 X\x05 \x02\xef! FLAG \x8c\x01FLAG\x02 \\\xa6\x01\x0c"\x03o
  
@@ -30,6 +29,5 @@ SCEN SCEK04_A02 X\x05 \x02\xef! FLAG \x8c\x01FLAG\x02 \\\xa6\x01\x0c"\x03o
 そんなに長い時間人間が泣き続けることができるなんて、驚きだ\nった。@
 そしてようやく、ゆきはいった。@
 今日、自分は自殺を決意していたのだと。\w\z
-  FLAG \x9c\x05
-FOBL " \xb2\x04 \x02 \xe0\x04 \x025 \xb2\x04 \x02
+  FLAG \x9c\x05\x0c\x02" \xb2\x04 \x02 \xe0\x04 \x025 \xb2\x04 \x02
 SCEN TextClosev\x81\x1f\x9e\x07 \x0256\xf1

@@ -9,8 +9,8 @@ SCEN SCE075_001 \x06 \x02\xef! FLAG \x8c\x01FLAG\x02 \xd0\x84\x0c"\x03|
 拓司\n　「よせ、早桃」@
 早桃\n　「でも！　おにいちゃん！」\
 
-  FLAG J
-FOBL "\x03\x07.\\Data\\Script\\TextFunc.Fob RUNF Z\x02
+  FLAG J\x0c\x02"
+WHAT .\\Data\\Script\\TextFunc.Fob RUNF Z\x02 \x02
 CMD1 TextOn RUNF \x88\x02 \x025
 SCEN SCE075_002 \xa4\x02 \x02\xef! FLAG \x8c\x01FLAG\x02 \xd4\x84\x0c"\x03N
  
@@ -19,8 +19,7 @@ SCEN SCE075_002 \xa4\x02 \x02\xef! FLAG \x8c\x01FLAG\x02 \xd4\x84\x0c"\x03N
 \n/*■CG71　表示（クロスフェード）*/\a7,-2,-2,0,\a0,70,2,0,\a6,-2,0,0,なたね\n　「理解されないのには慣れているから。\p……早桃さんの順番に\n　　質問に答えましょう。\pまず、『波動が直接きている』とはど\n　　ういうことか？」@
 早桃\n　「……」\
 
-  FLAG \xe8\x02
-FOBL " Z\x02 \x02 \x88\x02 \x025
+  FLAG \xe8\x02\x0c\x02" Z\x02 \x02 \x88\x02 \x025
 SCEN SCE075_003 Z\x04 \x02\xef! FLAG \x8c\x01FLAG\x02 \xd8\x84\x0c"\x03\xc1
  
 なたね\n　「便宜上『波動』と呼んでいるけれど、『波動』は、本来なら\n　　地球の言葉では定義できない存在なの。\pだから、一般的なエ\n　　ネルギーのように、一方から他方へ、直線的に飛ぶというも\n　　のではないの。\pそれ自身の意志で停滞したり、反射したり、\n　　逆流したり、屈折したり。\p秩序や法則はないの。\p無秩序。@
@@ -28,8 +27,7 @@ SCEN SCE075_003 Z\x04 \x02\xef! FLAG \x8c\x01FLAG\x02 \xd8\x84\x0c"\x03\xc1
 なたね\n　「……次の質問。\p『私たちはどうすればいいのか？』。\pこれに\n　　は明確な解答を提示することができるわ。\p私たちはシェルタ\n　　ーに避難すべきだわ」@
 早桃\n　「……え？」\
 
-  FLAG \x9e\x04
-FOBL " Z\x02 \x02 \x88\x02 \x025
+  FLAG \x9e\x04\x0c\x02" Z\x02 \x02 \x88\x02 \x025
 SCEN SCE075_004 \xdc\x07 \x02\xef! FLAG \x8c\x01FLAG\x02 \xdc\x84\x0c"\x03{
  
 　なたねは「シェ\p・ル\p・タ\p・ー」と、ひとことひとことを区切っ\n　て言い返した。@
@@ -38,8 +36,7 @@ SCEN SCE075_004 \xdc\x07 \x02\xef! FLAG \x8c\x01FLAG\x02 \xdc\x84\x0c"\x03{
 拓司\n　「……」@
 なたね\n　「正確に言うと、シェルターはまだ完成していないわ。\pただ、\n　　材料は全部そろえてある。\pこれだけの人数で突貫で作れば、\n　　１時間もかからずに完成すると思う」\
 
-  FLAG  \x08
-FOBL " Z\x02 \x02 \x88\x02 \x025
+  FLAG  \x08\x0c\x02" Z\x02 \x02 \x88\x02 \x025
 SCEN SCE075_005 F\n \x02\xef! FLAG \x8c\x01FLAG\x02 \xe0\x84\x0c"\x03]
  
 拓司\n　「……まさか」@
@@ -48,8 +45,7 @@ SCEN SCE075_005 F\n \x02\xef! FLAG \x8c\x01FLAG\x02 \xe0\x84\x0c"\x03]
 \nなたねの表情が一変した。\p初めて見る表情だった。@
 怒っている。\pそれまでの能面めいた無表情が嘘だったかのように、\nなたねは怒っていた。\
 
-  FLAG \x8a\n
-FOBL " Z\x02 \x02 \x88\x02 \x025
+  FLAG \x8a\n\x0c\x02" Z\x02 \x02 \x88\x02 \x025
 SCEN SCE075_006 8\x0c \x02\xef! FLAG \x8c\x01FLAG\x02 \xe4\x84\x0c"\x03\xc0
  
 なたね\n　「こんな非常事態に冗談なんて言うはずがないでしょうッ！@
@@ -57,8 +53,7 @@ SCEN SCE075_006 8\x0c \x02\xef! FLAG \x8c\x01FLAG\x02 \xe4\x84\x0c"\x03\xc0
 \n　なたねは機関銃のようにまくしたてた。\pやがてその顔から、潮\nが引くように怒りの形相が消えてゆき、最後にはいつもの無表情\nがなたねを支配した。@
 \nなたね\n　「……質問はそれだけだったよね？」\
 
-  FLAG |\x0c
-FOBL " Z\x02 \x02 \x88\x02 \x025
+  FLAG |\x0c\x0c\x02" Z\x02 \x02 \x88\x02 \x025
 SCEN SCE075_007 \xb6\x0f \x02\xef! FLAG \x8c\x01FLAG\x02 \xe8\x84\x0c"\x03\x81
  
 拓司\n　「……」@
@@ -68,12 +63,10 @@ SCEN SCE075_007 \xb6\x0f \x02\xef! FLAG \x8c\x01FLAG\x02 \xe8\x84\x0c"\x03\x81
 どうすればいい……。@
 俺は……どうすればいい？\
 
-  FLAG \xfa\x0f
-FOBL " Z\x02 \x02 \x88\x02 \x025\x03!
+  FLAG \xfa\x0f\x0c\x02" Z\x02 \x02 \x88\x02 \x025\x03!
 CHOICE
 なたねの言葉に従う。紅葉を見捨てて、シェルターに向かう\nなたね達をシェルターに向かわせて、自分だけ紅葉救出に向かう\n\l0,2,
 ENDCHOICE
 
-  FLAG 8\x12
-FOBL " Z\x02 \x02 \x88\x02 \x025 Z\x02 \x02
+  FLAG 8\x12\x0c\x02" Z\x02 \x02 \x88\x02 \x025 Z\x02 \x02
 SCEN TextClosev\x81\x1f\x02\x13 \x0256\xf1

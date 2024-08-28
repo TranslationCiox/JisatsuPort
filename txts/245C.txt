@@ -16,8 +16,8 @@ SCEN SCE245_001 \x06 \x02\xef! FLAG \x8c\x01FLAG\x02 p\x8e\x01\x0c"\x03\xb9
 あの銀紙のシェルターがそれに耐えうるのかどうかも。@
 しかし、どこから襲ってくるかわからないむきだしの死に身を晒\nすより、どんなに薄かろうとも鎧をまとっている方がマシだった。\n\
 
-  FLAG J
-FOBL "\x03\x07.\\Data\\Script\\TextFunc.Fob RUNF N\x03
+  FLAG J\x0c\x02"
+WHAT .\\Data\\Script\\TextFunc.Fob RUNF N\x03 \x02
 CMD1 TextOn RUNF |\x03 \x025
 SCEN SCE245_002 \x98\x03 \x02\xef! FLAG \x8c\x01FLAG\x02 t\x8e\x01\x0c"\x03h
  
@@ -28,8 +28,7 @@ SCEN SCE245_002 \x98\x03 \x02\xef! FLAG \x8c\x01FLAG\x02 t\x8e\x01\x0c"\x03h
 ピシ、という鋭い音に視線を送ると、廊下の側面にはめ込まれた\n窓ガラスのすべてに亀裂が入ってる。@
 亀裂は、あたかも生命を持っているかのように……雪崩落ちる雷\nのように……窓ガラスを走り……\
 
-  FLAG \xdc\x03
-FOBL " N\x03 \x02 |\x03 \x025
+  FLAG \xdc\x03\x0c\x02" N\x03 \x02 |\x03 \x025
 SCEN SCE245_003 \xb6\x05 \x02\xef! FLAG \x8c\x01FLAG\x02 x\x8e\x01\x0c"\x03\x8c
  
 ざあっ！@
@@ -41,8 +40,7 @@ SCEN SCE245_003 \xb6\x05 \x02\xef! FLAG \x8c\x01FLAG\x02 x\x8e\x01\x0c"\x03\x8c
 /*▲SE33　一回再生（再生終了待たず先へ）*/\a2,0,33,0,\a6,0,0,0,\nキイイイイイイイイイイイイイイイイイイイイイイイイイイイ！@
 /*▲↑停止まで待つ*/\a3,0,0,0,\a4,0,0,0,\n拓司\n　「！」\
 
-  FLAG \xfa\x05
-FOBL " N\x03 \x02 |\x03 \x025
+  FLAG \xfa\x05\x0c\x02" N\x03 \x02 |\x03 \x025
 SCEN SCE245_004 d\x08 \x02\xef! FLAG \x8c\x01FLAG\x02 |\x8e\x01\x0c"\x03k
  
 蜥蜴の悲鳴だった。@
@@ -53,8 +51,7 @@ SCEN SCE245_004 d\x08 \x02\xef! FLAG \x8c\x01FLAG\x02 |\x8e\x01\x0c"\x03k
 夢幻に反射を繰り返して、さらに新しい悲鳴が雪崩のように流れ\n込んできては反射した。@
 頭そのものが爆発しないのが不思議だった。\
 
-  FLAG \xa8\x08
-FOBL " N\x03 \x02 |\x03 \x025
+  FLAG \xa8\x08\x0c\x02" N\x03 \x02 |\x03 \x025
 SCEN SCE245_005 \x8e\n \x02\xef! FLAG \x8c\x01FLAG\x02 \x80\x8e\x01\x0c"\x03}
  
 拓司\n　「ああああああああああああ！」@
@@ -66,8 +63,7 @@ SCEN SCE245_005 \x8e\n \x02\xef! FLAG \x8c\x01FLAG\x02 \x80\x8e\x01\x0c"\x03}
 やがてぐったりと仰向けに転がると、ぴくぴくと身体を痙攣させ\n始める。@
 白目をむき、耳から、鼻から、どす黒い血があふれ出している。\
 
-  FLAG \xd2\n
-FOBL " N\x03 \x02 |\x03 \x025
+  FLAG \xd2\n\x0c\x02" N\x03 \x02 |\x03 \x025
 SCEN SCE245_006 FLAG \x02\xef! FLAG \x8c\x01FLAG\x02 \x84\x8e\x01\x0c"\x03\x99
  
 拓司\n　「サ・モ・モ・オオオオオ・オオオオ！」@
@@ -83,8 +79,7 @@ SCEN SCE245_006 FLAG \x02\xef! FLAG \x8c\x01FLAG\x02 \x84\x8e\x01\x0c"\x03\x99
 解決されつつあることなのだ。@
 あるいは、解決されるべきものなのだ。\
 
-  FLAG D\r
-FOBL " N\x03 \x02 |\x03 \x025
+  FLAG D\r\x0c\x02" N\x03 \x02 |\x03 \x025
 SCEN SCE245_007 \xe2\x0f \x02\xef! FLAG \x8c\x01FLAG\x02 \x88\x8e\x01\x0c"\x039
  
 数メートル向こうに、早桃の姿が見える。@
@@ -92,8 +87,7 @@ SCEN SCE245_007 \xe2\x0f \x02\xef! FLAG \x8c\x01FLAG\x02 \x88\x8e\x01\x0c"\x039
 その足をじっと見つめ、そして反対側の足を前に出す。@
 そうして一歩……一歩……忘れてしまった歩き方を思い出すかの\nように、拓司はゆっくりと歩き始めた。\
 
-  FLAG &\x10
-FOBL " N\x03 \x02 |\x03 \x025
+  FLAG &\x10\x0c\x02" N\x03 \x02 |\x03 \x025
 SCEN SCE245_008 D\x11 \x02\xef! FLAG \x8c\x01FLAG\x02 \x8c\x8e\x01\x0c"\x03\xa1
  
 /*▲SE33　一回再生（再生終了待たず先へ）*/\a2,0,33,0,\a6,0,0,0,キイイイイイイイイイイイイイイイイイイイイイイイイイイイ！@
@@ -102,8 +96,7 @@ SCEN SCE245_008 D\x11 \x02\xef! FLAG \x8c\x01FLAG\x02 \x8c\x8e\x01\x0c"\x03\xa1
 \n/*▲SE33　一回再生（再生終了待たず先へ）*/\a2,0,33,0,\a6,0,0,0,キイイイイイイイイイイイイイイイイイイイイイイイイイイイ！@
 /*▲↑　再生終了を待つ*/\a3,0,0,0,\a4,0,0,0,\nここから俺は始まるのだ。@
 \n/*▲SE33　一回再生（再生終了待たず先へ）*/\a2,0,33,0,\a6,0,0,0,キイイイイイイイイイイイイイイイイイイイイイイイイイイイ！\w\n/*▲↑　再生終了を待つ*/\a3,0,0,0,\a4,0,0,0,\z
-  FLAG \x88\x11
-FOBL " N\x03 \x02 |\x03 \x025
+  FLAG \x88\x11\x0c\x02" N\x03 \x02 |\x03 \x025
 SCEN SCE245_009 F\x14 \x02\xef! FLAG \x8c\x01FLAG\x02 \x90\x8e\x01\x0c"\x03I
  
 こうして旅が始まったいま、俺にはいまや目的があるのだ。@
@@ -113,9 +106,8 @@ SCEN SCE245_009 F\x14 \x02\xef! FLAG \x8c\x01FLAG\x02 \x90\x8e\x01\x0c"\x03I
 考えるのではない。@
 動くのだ。\
 
-  FLAG \x8a\x14
-FOBL " N\x03 \x02 |\x03 \x025  FLAG 7
-FOBL "\x03\x06.\\Data\\Script\\Bg.Fobsv\x81\x1f\x02\x16
+  FLAG \x8a\x14\x0c\x02" N\x03 \x02 |\x03 \x025  FLAG 7\x0c\x02"
+FOBT .\\Data\\Script\\Bg.Fobsv\x81\x1f\x02\x16 \x02
 CMD2 BgAutoFadeInsv\x81\x1f,\x16 \x025
 SCEN SCE245_010 P\x16 \x02\xef! FLAG \x8c\x01FLAG\x02 \x94\x8e\x01\x0c"\x03w
  
@@ -131,9 +123,7 @@ SCEN SCE245_010 P\x16 \x02\xef! FLAG \x8c\x01FLAG\x02 \x94\x8e\x01\x0c"\x03w
 \n拓司\n　「俺は勝った！\p　勝ったんだ！@
 　　ワハ、ワハ、ワハハハハハハハハハハ！」\
 
-  FLAG \x94\x16
-FOBL " N\x03 \x02 |\x03 \x025  FLAG \xc9
-FOBL " \x02\x16 \x02 ,\x16 \x025
+  FLAG \x94\x16\x0c\x02" N\x03 \x02 |\x03 \x025  FLAG \xc9\x0c\x02" \x02\x16 \x02 ,\x16 \x025
 SCEN SCE245_011 \xde\x18 \x02\xef! FLAG \x8c\x01FLAG\x02 \x98\x8e\x01\x0c"\x03L
  
 ふいに目の前が真っ白になった。@
@@ -145,10 +135,8 @@ SCEN SCE245_011 \xde\x18 \x02\xef! FLAG \x8c\x01FLAG\x02 \x98\x8e\x01\x0c"\x03L
 俺は勝った。@
 勝ったんだ、と。\
 
-  FLAG "\x19
-FOBL " N\x03 \x02 |\x03 \x025  FLAG \x02
-FOBL "\x03\x06.\\Data\\Script\\Bgm.Fobv\x81\x1f\xa6\x1a
-CMD1 SeStop RUNF \xd0\x1a \x025 \xa6\x1a
-CMD1 StopCD RUNF \xf8\x1a \x025  FLAG \xc8
-FOBL " \x02\x16 \x02 ,\x16 \x025 N\x03 \x02
+  FLAG "\x19\x0c\x02" N\x03 \x02 |\x03 \x025  FLAG \x02\x0c\x02"
+FOBT .\\Data\\Script\\Bgm.Fobv\x81\x1f\xa6\x1a \x02
+CMD1 SeStop RUNF \xd0\x1a \x025 \xa6\x1a \x02
+CMD1 StopCD RUNF \xf8\x1a \x025  FLAG \xc8\x0c\x02" \x02\x16 \x02 ,\x16 \x025 N\x03 \x02
 SCEN TextClosev\x81\x1fT\x1b \x0256\xf1

@@ -12,7 +12,7 @@ SCEN SCE213_001 \x06 \x02\xef! FLAG \x8c\x01FLAG\x02 p\\\x01\x0c"\x03\x98
 真実の世界だ。@
 \n－－危ないところだった。\pおれはいま、妄想の深みから生還した\nのだ。\pやはり、最終的に戻ってくるのは……世界の中心は、ここ\nなのだ。\p『白い部屋の世界』は、夢だった。\p教授も、ナタネも、\n青い鳥も、パイプベッドも、換気ファンも、発狂した自分も、全\n部実在しない、想像の産物だったのだ。\
 
-  FLAG J
-FOBL "\x03\x07.\\Data\\Script\\TextFunc.Fob RUNF \xca\x02
+  FLAG J\x0c\x02"
+WHAT .\\Data\\Script\\TextFunc.Fob RUNF \xca\x02 \x02
 CMD1 TextOn RUNF \xf8\x02 \x025 \xca\x02 \x02
 SCEN TextClosev\x81\x1f \x03 \x0256\xf1

@@ -4,10 +4,10 @@ SCEN SCE217_001 \x06 \x02\xef! FLAG \x8c\x01FLAG\x02 \xb0b\x01\x0c"\x03\x11
  
 \n\n\n\n\n\n\n\n\n\n　　　　　　　　　　　　　『８日目』\
 
-  FLAG J
-FOBL "\x03\x07.\\Data\\Script\\TextFunc.Fob RUNF \xae
-CMD1 TextOn RUNF \xdc \x025  FLAG \n\x01
-FOBL "\x03\x06.\\Data\\Script\\Bgm.Fobv\x81\x1f\x12\x01
+  FLAG J\x0c\x02"
+WHAT .\\Data\\Script\\TextFunc.Fob RUNF \xae \x02
+CMD1 TextOn RUNF \xdc \x025  FLAG \n\x01\x0c\x02"
+FOBT .\\Data\\Script\\Bgm.Fobv\x81\x1f\x12\x01 \x02
 CMD1 PlayCD RUNF <\x01 \x025
 SCEN SCE217_002 X\x01 \x02\xef! FLAG \x8c\x01FLAG\x02 \xb4b\x01\x0c"\x03\x92
  
@@ -20,8 +20,7 @@ SCEN SCE217_002 X\x01 \x02\xef! FLAG \x8c\x01FLAG\x02 \xb4b\x01\x0c"\x03\x92
 \n御堂\n　「そんなこったろうと思ったぜ、この電波女！」@
 なたね\n　「……」\
 
-  FLAG \x9c\x01
-FOBL " \xae \x02 \xdc \x025
+  FLAG \x9c\x01\x0c\x02" \xae \x02 \xdc \x025
 SCEN SCE217_003 \x1e\x04 \x02\xef! FLAG \x8c\x01FLAG\x02 \xb8b\x01\x0c"\x03\xa9
  
 一同に取り囲まれながらも、なたねに悪びれた様子はない。@
@@ -33,8 +32,7 @@ SCEN SCE217_003 \x1e\x04 \x02\xef! FLAG \x8c\x01FLAG\x02 \xb8b\x01\x0c"\x03\xa9
 なたね\n　「……だって」@
 拓司\n　「……？」\
 
-  FLAG b\x04
-FOBL " \xae \x02 \xdc \x025
+  FLAG b\x04\x0c\x02" \xae \x02 \xdc \x025
 SCEN SCE217_004 @\x07 \x02\xef! FLAG \x8c\x01FLAG\x02 \xbcb\x01\x0c"\x03W
  
 なたね\n　「……だって、私にはそれだけの価値があるから」@
@@ -42,16 +40,14 @@ SCEN SCE217_004 @\x07 \x02\xef! FLAG \x8c\x01FLAG\x02 \xbcb\x01\x0c"\x03W
 なたね\n　「だって私は選ばれた戦士で、最終聖戦で主導的役割を演じな\n　　ければならないから。\p精神と肉体の健康を保っていなければ\n　　ならない。\p……お前みたいなッ！」@
 \nなたねは突如立ち上がって、早桃を指さした。\p一同は呆気にとら\nれてなたねを見つめた。\
 
-  FLAG \x84\x07
-FOBL " \xae \x02 \xdc \x025
+  FLAG \x84\x07\x0c\x02" \xae \x02 \xdc \x025
 SCEN SCE217_005 \x1a\t \x02\xef! FLAG \x8c\x01FLAG\x02 \xc0b\x01\x0c"\x03\xe4
  
 なたね\n　「お前みたいなナア！\p　生きているだけのバカタレ弱者とは違\n　　うんだ！\p　自分一人じゃ何もできない弱者人種とは違って、\n　　この私は必要な……善なる宇宙生命体に選ばれた人間なんだ\n　　からお前なんかよりいいもの食べるのはあたりまえなんだ！@
 　　あんたたちも一緒！\p　どいつもこいつも、私のことコソコソ\n　　いってバカにしてきて……いい気味だ！\p　ワハ……ワハハハ\n　　ハ！\p　お前らなんか生き残れるもんか！\p　お前らなんか…\n　　…波動で狂って踊り死ぬんだ！\p　ｘ線と赤外線と紫外線とマ\n　　イクロ波がお前らを殺す！\p　攻撃は細胞に対して行われるか\n　　ら避けられない！\p　タクシーより速いからな！\p　警察も自衛\n　　隊も内閣調査室もみんな私を無視して陰からコソコソ電波を\n　　ひっつかせた！\p　駐車違反とか政治汚職とか、そういう攻撃\n　　をしかけてきた！\p　全部わかってるんだからな。\pやつらの洗\n　　脳だろ？\p　全部お見通しなんだよ！」@
 御堂\n　「こいつ……完全にいかれてやがる」\
 
-  FLAG ^\t
-FOBL " \xae \x02 \xdc \x025
+  FLAG ^\t\x0c\x02" \xae \x02 \xdc \x025
 SCEN SCE217_006 (\r \x02\xef! FLAG \x8c\x01FLAG\x02 \xc4b\x01\x0c"\x03M
  
 呆然といった御堂よりも、錦城の行動が速かった。@
@@ -60,12 +56,10 @@ SCEN SCE217_006 (\r \x02\xef! FLAG \x8c\x01FLAG\x02 \xc4b\x01\x0c"\x03M
 御堂\n　「うおおおおおッ！」@
 \n御堂が躍りかかった。\
 
-  FLAG l\r
-FOBL " \xae \x02 \xdc \x025\x03\x19
+  FLAG l\r\x0c\x02" \xae \x02 \xdc \x025\x03\x19
 CHOICE
 「やめろ！」　拓司は必至で制止した\n「……」　もはや言うべき言葉は見つからなかった\n\l0,2,
 ENDCHOICE
 
-  FLAG \xda\x0e
-FOBL " \xae \x02 \xdc \x025 \xae \x02
+  FLAG \xda\x0e\x0c\x02" \xae \x02 \xdc \x025 \xae \x02
 SCEN TextClosev\x81\x1f\x84\x0f \x0256\xf1

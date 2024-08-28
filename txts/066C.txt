@@ -4,13 +4,12 @@ SCEN SCE066_001 \x06 \x02\xef! FLAG \x8c\x01FLAG\x02 \xc0v\x0c"\x03h
  
 カンナ\n　「グッド。\pそれじゃあ、ちょっと目先を変えて『ホスピタリズ\n　　ム』について。\p……人手が足りない施設で育てられた赤ちゃ\n　　んは、親元で育てられている赤ちゃんと比較して死亡率が極\n　　めて高いの。\p別に手続き上のミスとか、目を離したスキに、\n　　ってわけじゃない。\p風邪から肺炎になって、死ぬことが多い。\n　　\p親元にいる赤ちゃんが肺炎になるよりもずっと高い確率で\n　　……どうしてだと思う？」\
 
-  FLAG J
-FOBL "\x03\x07.\\Data\\Script\\TextFunc.Fob RUNF \n\x02
+  FLAG J\x0c\x02"
+WHAT .\\Data\\Script\\TextFunc.Fob RUNF \n\x02 \x02
 CMD1 TextOn RUNF 8\x02 \x025\x03)
 CHOICE
 泣いていても放っておかれるせい\n赤ちゃんがたくさんいるという状況が、劣悪な衛生環境を生むから\n他の赤ちゃんがいるという競争心がストレスを生むから\n\l0,3,
 ENDCHOICE
 
-  FLAG T\x02
-FOBL " \n\x02 \x02 8\x02 \x025 \n\x02 \x02
+  FLAG T\x02\x0c\x02" \n\x02 \x02 8\x02 \x025 \n\x02 \x02
 SCEN TextClosev\x81\x1f>\x03 \x0256\xf1

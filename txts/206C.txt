@@ -8,7 +8,7 @@ SCEN SCE206_001 \x06 \x02\xef! FLAG \x8c\x01FLAG\x02 \x80Q\x01\x0c"\x03\x97
 ナタネ\n　「私という存在は、あなたが『願』って『創った』ものなの。@
 　　あなたは、すべての真実を語って聞かせてくれる者の出現を\n　　……自分を救う者の存在を『願った』。\pだから私は、ここに\n　　『創』られた。\pこの姿……雲居なたねの形として創られた\n　　のは、あなたがそれを望んだから。\p理解できないものの解説\n　　役として、雲居なたねを望んだからなの」\
 
-  FLAG J
-FOBL "\x03\x07.\\Data\\Script\\TextFunc.Fob RUNF \xc6\x02
+  FLAG J\x0c\x02"
+WHAT .\\Data\\Script\\TextFunc.Fob RUNF \xc6\x02 \x02
 CMD1 TextOn RUNF \xf4\x02 \x025 \xc6\x02 \x02
 SCEN TextClosev\x81\x1f\x1c\x03 \x0256\xf1

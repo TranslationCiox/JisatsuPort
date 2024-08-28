@@ -9,8 +9,8 @@ SCEN SCE042_001 \x06 \x02\xef! FLAG \x8c\x01FLAG\x02 @Q\x0c"\x03L
 \n　一日はまだ半分しか終わっていない。\pにも関わらず、拓司は消\n　耗しきっていた。@
 /*▲BGM　Track06　再生*/\a2,-1,6,1,\n\n　死んじまおうかなあ。\
 
-  FLAG J
-FOBL "\x03\x07.\\Data\\Script\\TextFunc.Fob RUNF \x9a\x01
+  FLAG J\x0c\x02"
+WHAT .\\Data\\Script\\TextFunc.Fob RUNF \x9a\x01 \x02
 CMD1 TextOn RUNF \xc8\x01 \x025
 SCEN SCE042_002 \xe4\x01 \x02\xef! FLAG \x8c\x01FLAG\x02 DQ\x0c"\x03\xe4
  
@@ -18,8 +18,7 @@ SCEN SCE042_002 \xe4\x01 \x02\xef! FLAG \x8c\x01FLAG\x02 DQ\x0c"\x03\xe4
 　けれどもそれらから見いだされるのは、死の真実ではなく、逆\n説的に、あいまいさでしかない。\pいくつもの形が提示されうると\nいうことは、唯一の真実がそこにはない、ということなのだ。@
 　結局のところ、死というものは、言葉にしても意味のないもの\nあるいは言葉にすることによって意味が失われてしまうようなも\nのなのだ。\p故に人間は死を恐れる。\p理解できないからだ。\
 
-  FLAG (\x02
-FOBL " \x9a\x01 \x02 \xc8\x01 \x025
+  FLAG (\x02\x0c\x02" \x9a\x01 \x02 \xc8\x01 \x025
 SCEN SCE042_003 \xf2\x05 \x02\xef! FLAG \x8c\x01FLAG\x02 HQ\x0c"\x03\x9b
  
 　しかし、拓司にとって、死は、現実と比べれば理解しやすいも\n　のであった。@
@@ -35,19 +34,15 @@ SCEN SCE042_003 \xf2\x05 \x02\xef! FLAG \x8c\x01FLAG\x02 HQ\x0c"\x03\x9b
 　方法。@
 　救済の方法ではないか？\
 
-  FLAG 6\x06
-FOBL " \x9a\x01 \x02 \xc8\x01 \x025
+  FLAG 6\x06\x0c\x02" \x9a\x01 \x02 \xc8\x01 \x025
 SCEN SCE042_004 \xdc\x08 \x02\xef! FLAG \x8c\x01FLAG\x02 LQ\x0c"\x03&
  
 　思考はいつもそこで停滞する。\pそれ以上は先に進めない。@
 　実際に死ぬしか、方法はないからだ。@
 　そして死ぬほどの勇気は、拓司にはない。\
 
-  FLAG  \t
-FOBL " \x9a\x01 \x02 \xc8\x01 \x025\x03\x06.\\Data\\Script\\Bgm.Fobv\x81\x1f\xf2\t
-CMD1 StopCD RUNF \x1c\n \x025  FLAG 
-FOBL "  \x04FLAG \x18
-FOBL "  \x08FLAG 
-FOBL " \xf2\t \x02
+  FLAG  \t\x0c\x02" \x9a\x01 \x02 \xc8\x01 \x025
+FOBT .\\Data\\Script\\Bgm.Fobv\x81\x1f\xf2\t \x02
+CMD1 StopCD RUNF \x1c\n \x025  FLAG \x0c\x02"  \x04FLAG \x18\x0c\x02"  \x08FLAG \x0c\x02" \xf2\t \x02
 SCEN SePlayExsv\x81\x1f\x92\n \x025 < \x92 \x9a\x01 \x02
 SCEN TextClosev\x81\x1f\xcc\n \x0256\xf1

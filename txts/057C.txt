@@ -9,8 +9,8 @@ SCEN SCE057_001 \x06 \x02\xef! FLAG \x8c\x01FLAG\x02 \xb0h\x0c"\x03t
 \n学生\n　「へへ……やっぱり最初は上村か？」@
 上村\n　「私しかいないっしょ？\p　このウザキャラ潰すのは私の使命だ\n　　からさ」\
 
-  FLAG J
-FOBL "\x03\x07.\\Data\\Script\\TextFunc.Fob RUNF :\x02
+  FLAG J\x0c\x02"
+WHAT .\\Data\\Script\\TextFunc.Fob RUNF :\x02 \x02
 CMD1 TextOn RUNF h\x02 \x025
 SCEN SCE057_002 \x84\x02 \x02\xef! FLAG \x8c\x01FLAG\x02 \xb4h\x0c"\x03\x85
  
@@ -23,8 +23,7 @@ SCEN SCE057_002 \x84\x02 \x02\xef! FLAG \x8c\x01FLAG\x02 \xb4h\x0c"\x03\x85
 上村\n　「お前がいるだけで教室の空気が澱むんだよ！」@
 早桃\n　「……」\
 
-  FLAG \xc8\x02
-FOBL " :\x02 \x02 h\x02 \x025
+  FLAG \xc8\x02\x0c\x02" :\x02 \x02 h\x02 \x025
 SCEN SCE057_003 \x16\x05 \x02\xef! FLAG \x8c\x01FLAG\x02 \xb8h\x0c"\x03\x94
  
 上村\n　「逃げるつもり？\p　それって間違ってるって。\pこれはさ、あん\n　　たを綺麗にする儀式なんだよ？\p　生きている価値のないあん\n　　たが、身を清めて気持ちよく死ねるようになるための儀式な\n　　んだからさあ。くすくす」@
@@ -35,8 +34,7 @@ SCEN SCE057_003 \x16\x05 \x02\xef! FLAG \x8c\x01FLAG\x02 \xb8h\x0c"\x03\x94
 \n早桃\n　「儀式……身を清めて……死ねるための……儀式」@
 上村\n　「そうそう。儀式儀式」\
 
-  FLAG Z\x05
-FOBL " :\x02 \x02 h\x02 \x025
+  FLAG Z\x05\x0c\x02" :\x02 \x02 h\x02 \x025
 SCEN SCE057_004 \xe4\x07 \x02\xef! FLAG \x8c\x01FLAG\x02 \xbch\x0c"\x03\x94
  
 上村はスカートの中に手を差し入れ、スルスルとショーツを脱い\nだ。\pクラスメイトが見ているというのに、なんの躊躇もない。\n逆に、脱いだショーツをひらひらと振り回して、男子学生たちに\nニヤリと笑いかける余裕さえある。\pさらにはスカートも脱ぎ、下\n半身をあらわにした。@
@@ -48,8 +46,7 @@ SCEN SCE057_004 \xe4\x07 \x02\xef! FLAG \x8c\x01FLAG\x02 \xbch\x0c"\x03\x94
 \n上村\n　「おしっこかけてくださいってお願いしろっていってんだよ、\n　　バカ！」@
 早桃\n　「……」\
 
-  FLAG (\x08
-FOBL " :\x02 \x02 h\x02 \x025
+  FLAG (\x08\x0c\x02" :\x02 \x02 h\x02 \x025
 SCEN SCE057_005 \xb2\n \x02\xef! FLAG \x8c\x01FLAG\x02 \xc0h\x0c"\x03a
  
 上村\n　「あ～ウザイ！　ウザウザ！　見てるだけでぶっ殺したくなる\n　　よ！」@
@@ -58,8 +55,7 @@ SCEN SCE057_005 \xb2\n \x02\xef! FLAG \x8c\x01FLAG\x02 \xc0h\x0c"\x03a
 \n　命じられるまま、早桃は犬のように這いつくばる。@
 　上村は椅子をひとつひきずって早桃の前に配し、どっかとそこ\n　に腰を下ろした。\
 
-  FLAG \xf6\n
-FOBL " :\x02 \x02 h\x02 \x025
+  FLAG \xf6\n\x0c\x02" :\x02 \x02 h\x02 \x025
 SCEN SCE057_006 \xb4\x0c \x02\xef! FLAG \x8c\x01FLAG\x02 \xc4h\x0c"\x03\xac
  
 上村\n　「ほら、もっと前にはいはいしてきなさいよォ……足下に……\n　　そうそう。いい子ね、ワンワン」@
@@ -72,8 +68,7 @@ SCEN SCE057_006 \xb4\x0c \x02\xef! FLAG \x8c\x01FLAG\x02 \xc4h\x0c"\x03\xac
 　頬を伝って流れ落ちた汚液が、床に溜まりを作る。@
 　髪の毛が汚液を吸い込んで、ぺったりと頬にへばりつく。\
 
-  FLAG \xf8\x0c
-FOBL " :\x02 \x02 h\x02 \x025
+  FLAG \xf8\x0c\x0c\x02" :\x02 \x02 h\x02 \x025
 SCEN SCE057_007 \xe2\x0f \x02\xef! FLAG \x8c\x01FLAG\x02 \xc8h\x0c"\x03\x8d
  
 どこかで見た光景だった。@
@@ -85,8 +80,7 @@ SCEN SCE057_007 \xe2\x0f \x02\xef! FLAG \x8c\x01FLAG\x02 \xc8h\x0c"\x03\x8d
 そう考えれば、波動やら集団自殺やらも説明が付く。@
 おそらく、御堂たちによるなたねの陵辱、あのあたりから自分は\n妄想の中にいるのだ……。\
 
-  FLAG &\x10
-FOBL " :\x02 \x02 h\x02 \x025
+  FLAG &\x10\x0c\x02" :\x02 \x02 h\x02 \x025
 SCEN SCE057_008 \x94\x12 \x02\xef! FLAG \x8c\x01FLAG\x02 \xcch\x0c"\x03c
  
 学生\n　「た、たまんねえ……俺にもかけさせてくれ」@
@@ -96,6 +90,5 @@ SCEN SCE057_008 \x94\x12 \x02\xef! FLAG \x8c\x01FLAG\x02 \xcch\x0c"\x03c
 学生\n　「喜んでるんだろう？」@
 \n学生たちは我先に早桃へと殺到した。\p男子学生は勃起したペ○ス\nをむき出しにして、女子学生はちぎり捨てるようにスカートとシ\nョーツを脱ぎ捨てて……。\
 
-  FLAG \xd8\x12
-FOBL " :\x02 \x02 h\x02 \x025 :\x02 \x02
+  FLAG \xd8\x12\x0c\x02" :\x02 \x02 h\x02 \x025 :\x02 \x02
 SCEN TextClosev\x81\x1f\xaa\x14 \x0256\xf1

@@ -1,20 +1,18 @@
 START
-\x01\x06\x01\xa4\t3\x01\xa6\x04\x03\x06.\\Data\\Script\\Bgm.Fobv\x81\x1f\x06
-CMD1 StopCD RUNF 0 \x025  FLAG \xc8
-FOBL "\x03\x06.\\Data\\Script\\Bg.Fobsv\x81\x1ff
+\x01\x06\x01\xa4\t3\x01\xa6\x04
+FOBT .\\Data\\Script\\Bgm.Fobv\x81\x1f\x06 \x02
+CMD1 StopCD RUNF 0 \x025  FLAG \xc8\x0c\x02"
+FOBT .\\Data\\Script\\Bg.Fobsv\x81\x1ff \x02
 CMD2 BgAutoFadeInsv\x81\x1f\x90 \x025
 SCEN SCE008_001 \xb4 \x02\xef! FLAG \x8c\x01FLAG\x02  \x1c\x0c"\x031
  
 拓司\n　「……これが、おれの願望なのか？\p　違う。\pこんなこと、\n　　おれは望んじゃいない」@
 \n拓司は両手で顔を覆った。\pそしてひとつ、大きなためいきの塊\nを吐き出してから目を閉じた。\
 
-  FLAG \xf8
-FOBL "\x03\x07.\\Data\\Script\\TextFunc.Fob RUNF \xdc\x01
+  FLAG \xf8\x0c\x02"
+WHAT .\\Data\\Script\\TextFunc.Fob RUNF \xdc\x01 \x02
 CMD1 TextOn RUNF \n\x02 \x025
-SCEN SCE008_002 &\x02 \x02\xef! FLAG \x8c\x01FLAG\x02 $\x1c\x0c"  FLAG \x02
-FOBL "  \x04FLAG \x06
-FOBL "  \x08FLAG \x01
-FOBL " \x06
+SCEN SCE008_002 &\x02 \x02\xef! FLAG \x8c\x01FLAG\x02 $\x1c\x0c"  FLAG \x02\x0c\x02"  \x04FLAG \x06\x0c\x02"  \x08FLAG \x01\x0c\x02" \x06 \x02
 CMD1 SePlay RUNF \xc4\x02 \x025\x03H
  
 再び目を開けると、そこには変わらず換気ファンが回り、沈黙が\nたゆたっている。@
@@ -27,8 +25,6 @@ CMD1 SePlay RUNF \xc4\x02 \x025\x03H
 \n現実に戻ったのだ。@
 おそらくは。\
 
-  FLAG \xe0\x02
-FOBL " \xdc\x01 \x02 \n\x02 \x025  FLAG \x02
-FOBL " \x06
+  FLAG \xe0\x02\x0c\x02" \xdc\x01 \x02 \n\x02 \x025  FLAG \x02\x0c\x02" \x06 \x02
 CMD1 SeStop RUNF `\x04 \x025 \xdc\x01 \x02
 SCEN TextClosev\x81\x1f\x88\x04 \x0256\xf1

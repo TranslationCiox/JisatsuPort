@@ -6,8 +6,8 @@ SCEN SCE076_001 \x06 \x02\xef! FLAG \x8c\x01FLAG\x02 `\x86\x0c"\x03Q
 　　いままで何度も、雲居さんは『波動』ってやつを感じてき\n　　たし、俺はそれに救われてきた」@
 早桃\n　「おにいちゃん！\p　じゃあ、神凪先輩を見捨てるっていうの\n　　？！」\n拓司\n　「……」\
 
-  FLAG J
-FOBL "\x03\x07.\\Data\\Script\\TextFunc.Fob RUNF \xae\x01
+  FLAG J\x0c\x02"
+WHAT .\\Data\\Script\\TextFunc.Fob RUNF \xae\x01 \x02
 CMD1 TextOn RUNF \xdc\x01 \x025
 SCEN SCE076_002 \xf8\x01 \x02\xef! FLAG \x8c\x01FLAG\x02 d\x86\x0c"\x03d
  
@@ -17,8 +17,7 @@ SCEN SCE076_002 \xf8\x01 \x02\xef! FLAG \x8c\x01FLAG\x02 d\x86\x0c"\x03d
 早桃\n　「……」@
 拓司\n　「紅葉を助けたい気持ちは、誰にも負けないつもりだ……」\
 
-  FLAG <\x02
-FOBL " \xae\x01 \x02 \xdc\x01 \x025
+  FLAG <\x02\x0c\x02" \xae\x01 \x02 \xdc\x01 \x025
 SCEN SCE076_003 \x06\x04 \x02\xef! FLAG \x8c\x01FLAG\x02 h\x86\x0c"\x03r
  
 早桃は俯いて、じっと床を睨んでいた。@
@@ -29,7 +28,7 @@ SCEN SCE076_003 \x06\x04 \x02\xef! FLAG \x8c\x01FLAG\x02 h\x86\x0c"\x03r
 \nなたね\n　「シェルター……シェルター……シェルター……シェルター…\n　　…シェルター」@
 \nぶつぶつと呪文のようにくり返すなたねの背中を追いながら、拓\n司は心の底に絶望をかみしめていた。\
 
-  FLAG J\x04
-FOBL " \xae\x01 \x02 \xdc\x01 \x025\x03\x06.\\Data\\Script\\Bgm.Fobv\x81\x1fL\x06
+  FLAG J\x04\x0c\x02" \xae\x01 \x02 \xdc\x01 \x025
+FOBT .\\Data\\Script\\Bgm.Fobv\x81\x1fL\x06 \x02
 CMD1 StopCD RUNF v\x06 \x025 \xae\x01 \x02
 SCEN TextClosev\x81\x1f\x9e\x06 \x0256\xf1

@@ -1,7 +1,8 @@
 START
-\xb8\x04\x01\xa4\t3\x01d\x03  FLAG \xc8
-FOBL "\x03\x06.\\Data\\Script\\Bg.Fobsv\x81\x1f 
-CMD2 BgAutoFadeInsv\x81\x1fJ \x025\x03\x06.\\Data\\Script\\Bgm.Fobv\x81\x1fn
+\xb8\x04\x01\xa4\t3\x01d\x03  FLAG \xc8\x0c\x02"
+FOBT .\\Data\\Script\\Bg.Fobsv\x81\x1f  \x02
+CMD2 BgAutoFadeInsv\x81\x1fJ \x025
+FOBT .\\Data\\Script\\Bgm.Fobv\x81\x1fn \x02
 CMD1 StopCD RUNF \x98 \x025
 SCEN SCEK06_001 \xb4 \x02\xef! FLAG \x8c\x01FLAG\x02 \xd0\xa6\x01\x0c"\x03v
  
@@ -13,7 +14,7 @@ SCEN SCEK06_001 \xb4 \x02\xef! FLAG \x8c\x01FLAG\x02 \xd0\xa6\x01\x0c"\x03v
 告白を聞いてくれる神父が。\p神父を通じてなされる赦しが。@
 私は結局、ゆきの秘密を最後まで知ることはなかった。@
 それから１週間後、ゆきは風邪薬を２００錠のんで、自殺したの\nだった。\w\z
-  FLAG \xf8
-FOBL "\x03\x07.\\Data\\Script\\TextFunc.Fob RUNF \xf0\x02
+  FLAG \xf8\x0c\x02"
+WHAT .\\Data\\Script\\TextFunc.Fob RUNF \xf0\x02 \x02
 CMD1 TextOn RUNF \x1e\x03 \x025 \xf0\x02 \x02
 SCEN TextClosev\x81\x1fF\x03 \x0256\xf1

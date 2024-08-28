@@ -1,14 +1,14 @@
 START
-\xc1\x11\x01`B#\x01\xc6\r  FLAG <
-FOBL "\x03\x06.\\Data\\Script\\Bg.Fobsv\x81\x1f 
+\xc1\x11\x01`B#\x01\xc6\r  FLAG <\x0c\x02"
+FOBT .\\Data\\Script\\Bg.Fobsv\x81\x1f  \x02
 CMD2 BgAutoFadeInsv\x81\x1fJ \x025
 SCEN SCEK16_001 n \x02\xef! FLAG \x8c\x01FLAG\x02 `\xb2\x01\x0c"\x03;
  
 語り終えた後、カンナは無言で、自らが作り出した沈黙のなかに\n沈み込んだ。@
 あるいは、彼女が沈み込んでいったのは、いま自らが言葉に変換\nして現出して見せた暗い闇の中なのかもしれない。@
 重い沈黙に耐えかねて、拓司が口を開いた。\w\z
-  FLAG \xb2
-FOBL "\x03\x07.\\Data\\Script\\TextFunc.Fob RUNF \xbe\x01
+  FLAG \xb2\x0c\x02"
+WHAT .\\Data\\Script\\TextFunc.Fob RUNF \xbe\x01 \x02
 CMD1 TextOn RUNF \xec\x01 \x025
 SCEN SCEK16_002 \x08\x02 \x02\xef! FLAG \x8c\x01FLAG\x02 d\xb2\x01\x0c"\x03e
  
@@ -20,8 +20,7 @@ SCEN SCEK16_002 \x08\x02 \x02\xef! FLAG \x8c\x01FLAG\x02 d\xb2\x01\x0c"\x03e
 　　死を儀式化するとは……そういうことか？」@
 \nカンナは黙ったままだった。@
 ようやく口を開いたとき、カンナはなぜか自嘲気味の笑顔を口の\n端に浮かべていた。\w\z
-  FLAG L\x02
-FOBL " \xbe\x01 \x02 \xec\x01 \x025
+  FLAG L\x02\x0c\x02" \xbe\x01 \x02 \xec\x01 \x025
 SCEN SCEK16_003 \x1a\x04 \x02\xef! FLAG \x8c\x01FLAG\x02 h\xb2\x01\x0c"\x03\x86
  
 カンナ\n　「……なんだか、違うものになってしまったみたい」@
@@ -29,8 +28,7 @@ SCEN SCEK16_003 \x1a\x04 \x02\xef! FLAG \x8c\x01FLAG\x02 h\xb2\x01\x0c"\x03\x86
 カンナ\n　「このことを誰かに話すのは初めて。@
 　　ずっと、このことは私のなかにあって、もう、数えられない\n　　リピートされて、現実以上にはっきりとした輪郭を持って\n　　た。\pどんな細かいディテールも逃すことなく、私のなかに刻\n　　み込まれていた。@
 　　このことは、もう私の一部分ではなくて、私がこのことの一\n　　部分で……なのに、なんだかこうやって話してみたら、全然\n　　違うものになってしまったみたい。\pすごく馬鹿げて聞こ\n　　える」\w\z
-  FLAG ^\x04
-FOBL " \xbe\x01 \x02 \xec\x01 \x025
+  FLAG ^\x04\x0c\x02" \xbe\x01 \x02 \xec\x01 \x025
 SCEN SCEK16_004 \xb0\x06 \x02\xef! FLAG \x8c\x01FLAG\x02 l\xb2\x01\x0c"\x03\x88
  
 拓司\n　「……」@
@@ -40,8 +38,7 @@ SCEN SCEK16_004 \xb0\x06 \x02\xef! FLAG \x8c\x01FLAG\x02 l\xb2\x01\x0c"\x03\x88
 　　その程度。\pあなたはもう、私の手品にはつきあってくれない\n　　でしょう\p。観客がいなくちゃ、手品は成り立たない。@
 　　私は舞台にひとり残されてしまった」@
 \nカンナは両手をぱっと開いて見せて、おしまい、と繰り返した。\w\z
-  FLAG \xf4\x06
-FOBL " \xbe\x01 \x02 \xec\x01 \x025
+  FLAG \xf4\x06\x0c\x02" \xbe\x01 \x02 \xec\x01 \x025
 SCEN SCEK16_005 N\t \x02\xef! FLAG \x8c\x01FLAG\x02 p\xb2\x01\x0c"\x03x
  
 カンナ\n　「どうしてなのかしら。全然わからない」@
@@ -53,14 +50,12 @@ SCEN SCEK16_005 N\t \x02\xef! FLAG \x8c\x01FLAG\x02 p\xb2\x01\x0c"\x03x
 カンナ\n　「ないわよ」@
 拓司\n　「今度貸してやる。\pうちに全巻あるから。\p愛蔵版で。@
 　　まとめて読めよ」\w\z
-  FLAG \x92\t
-FOBL " \xbe\x01 \x02 \xec\x01 \x025
+  FLAG \x92\t\x0c\x02" \xbe\x01 \x02 \xec\x01 \x025
 SCEN SCEK16_006 \xac\x0b \x02\xef! FLAG \x8c\x01FLAG\x02 t\xb2\x01\x0c"\x03>
  
 カンナは信じられないものを見るような顔で拓司を見ていたが、\nやがてクスクスと笑いはじめた。@
 拓司は誰かの笑顔というものを、久しぶりに見たような気がした。\n\pそして、カンナの明るい笑顔というものを見たのは、これがほん\nとうに初めてだった。\w\z
-  FLAG \xf0\x0b
-FOBL " \xbe\x01 \x02 \xec\x01 \x025  FLAG \xc8
-FOBL "   \x02 J \x025\x03\x06.\\Data\\Script\\Bgm.Fobv\x81\x1fV\r
+  FLAG \xf0\x0b\x0c\x02" \xbe\x01 \x02 \xec\x01 \x025  FLAG \xc8\x0c\x02"   \x02 J \x025
+FOBT .\\Data\\Script\\Bgm.Fobv\x81\x1fV\r \x02
 CMD1 StopCD RUNF \x80\r \x025 \xbe\x01 \x02
 SCEN TextClosev\x81\x1f\xa8\r \x0256\xf1

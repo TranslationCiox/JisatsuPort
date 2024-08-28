@@ -1,8 +1,8 @@
 START
-\xdd\x06\x01`B#\x01\x94\x05  FLAG C
-FOBL "\x03\x06.\\Data\\Script\\Bg.Fobsv\x81\x1f 
-CMD2 BgAutoFadeInsv\x81\x1fJ \x025  FLAG \x08\x01
-FOBL "\x03\x06.\\Data\\Script\\Bgm.Fobv\x81\x1f\x88
+\xdd\x06\x01`B#\x01\x94\x05  FLAG C\x0c\x02"
+FOBT .\\Data\\Script\\Bg.Fobsv\x81\x1f  \x02
+CMD2 BgAutoFadeInsv\x81\x1fJ \x025  FLAG \x08\x01\x0c\x02"
+FOBT .\\Data\\Script\\Bgm.Fobv\x81\x1f\x88 \x02
 CMD1 PlayCD RUNF \xb2 \x025
 SCEN SCEG02_001 \xce \x02\xef! FLAG \x8c\x01FLAG\x02 H\xc5\x01\x0c"\x03)
  
@@ -10,10 +10,9 @@ SCEN SCEG02_001 \xce \x02\xef! FLAG \x8c\x01FLAG\x02 H\xc5\x01\x0c"\x03)
 拓司\n　「……先生？」@
 \n錦城は微かに笑うと、拓司の横へと体を移動させた。@
 寄り添って寝転がるような形になる。\w\z
-  FLAG \x12\x01
-FOBL "\x03\x07.\\Data\\Script\\TextFunc.Fob RUNF \xd6\x01
-CMD1 TextOn RUNF \x04\x02 \x025  FLAG \xc8
-FOBL "   \x02 J \x025
+  FLAG \x12\x01\x0c\x02"
+WHAT .\\Data\\Script\\TextFunc.Fob RUNF \xd6\x01 \x02
+CMD1 TextOn RUNF \x04\x02 \x025  FLAG \xc8\x0c\x02"   \x02 J \x025
 SCEN SCEG02_002 T\x02 \x02\xef! FLAG \x8c\x01FLAG\x02 L\xc5\x01\x0c"\x032
  
 錦城\n　「ちょっとお話がしたくて。いいかな？」@
@@ -22,15 +21,13 @@ SCEN SCEG02_002 T\x02 \x02\xef! FLAG \x8c\x01FLAG\x02 L\xc5\x01\x0c"\x032
 拓司\n　「いえ……すみません」@
 錦城\n　「私……恥ずかしいわ」@
 拓司\n　「え？」\w\z
-  FLAG \x98\x02
-FOBL " \xd6\x01 \x02 \x04\x02 \x025
+  FLAG \x98\x02\x0c\x02" \xd6\x01 \x02 \x04\x02 \x025
 SCEN SCEG02_003 \x9a\x03 \x02\xef! FLAG \x8c\x01FLAG\x02 P\xc5\x01\x0c"\x03@
  
 錦城\n　「教師という仕事に就きながら、こういう状況では何もできな\n　　い。\p本当は私がみんなを導かなくちゃいけないのに。@
 　　あなたにまかせっきりで。恥ずかしいわ」@
 拓司\n　「……」@
 錦城\n　「私にできることって、なんなんだろうって考えたの」\w\z
-  FLAG \xde\x03
-FOBL " \xd6\x01 \x02 \x04\x02 \x025 \xd6\x01 \x02
-SCEN TextClosev\x81\x1f$\x05 \x025\x03\t.\\Data\\Script\\Scenario\\G2SubC.Fobv\x81\x1fD\x05
+  FLAG \xde\x03\x0c\x02" \xd6\x01 \x02 \x04\x02 \x025 \xd6\x01 \x02
+SCEN TextClosev\x81\x1f$\x05 \x025\x03\t.\\Data\\Script\\Scenario\\G2SubC.Fobv\x81\x1fD\x05 \x02
 CMD1 startv\x81\x1fz\x05 \x0256\xf1

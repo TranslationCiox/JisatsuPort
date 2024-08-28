@@ -15,8 +15,8 @@ SCEN SCE054_001 \x06 \x02\xef! FLAG \x8c\x01FLAG\x02 d\x0c"\x03\xb2
 /*■CG22　表示（クロスフェード）*/\a7,1,0,0,\a0,21,0,0,\a6,0,0,0,\n　肺腑の底から声を絞り出して、男だろうが女だろうが、目に入\nった人間すべてに拳を叩き込んでいく。@
 　突入前から目星をつけていたほうきを掴んで、無我夢中で振り\n回す。\
 
-  FLAG J
-FOBL "\x03\x07.\\Data\\Script\\TextFunc.Fob RUNF 2\x03
+  FLAG J\x0c\x02"
+WHAT .\\Data\\Script\\TextFunc.Fob RUNF 2\x03 \x02
 CMD1 TextOn RUNF `\x03 \x025
 SCEN SCE054_002 |\x03 \x02\xef! FLAG \x8c\x01FLAG\x02 \x04d\x0c"\x03\x9a
  
@@ -33,8 +33,7 @@ SCEN SCE054_002 |\x03 \x02\xef! FLAG \x8c\x01FLAG\x02 \x04d\x0c"\x03\x9a
 　やがて潮が引くように、声が収まっていった。@
 　静寂の中、バットが振り下ろされた。@
 \z
-  FLAG \xc0\x03
-FOBL " 2\x03 \x02 `\x03 \x025  FLAG \xc8
-FOBL "\x03\x06.\\Data\\Script\\Bg.Fobsv\x81\x1f|\x06
+  FLAG \xc0\x03\x0c\x02" 2\x03 \x02 `\x03 \x025  FLAG \xc8\x0c\x02"
+FOBT .\\Data\\Script\\Bg.Fobsv\x81\x1f|\x06 \x02
 CMD2 BgAutoFadeInsv\x81\x1f\xa6\x06 \x025 2\x03 \x02
 SCEN TextClosev\x81\x1f\xd6\x06 \x0256\xf1

@@ -8,8 +8,8 @@ SCEN SCE104_001 \x06 \x02\xef! FLAG \x8c\x01FLAG\x02  \xb2\x0c"\x03T
 なたね\n　「……」@
 \nなたねは一瞬事態が飲み込めない様子で、説明を求めるようにあ\nたりを見回した。\pしかし、カンナも早桃も紅葉も錦城も、じっ\nと冷たい目で見返すばかり。\
 
-  FLAG J
-FOBL "\x03\x07.\\Data\\Script\\TextFunc.Fob RUNF \xba\x01
+  FLAG J\x0c\x02"
+WHAT .\\Data\\Script\\TextFunc.Fob RUNF \xba\x01 \x02
 CMD1 TextOn RUNF \xe8\x01 \x025
 SCEN SCE104_002 \x04\x02 \x02\xef! FLAG \x8c\x01FLAG\x02 $\xb2\x0c"\x03\x7f
  
@@ -21,8 +21,7 @@ SCEN SCE104_002 \x04\x02 \x02\xef! FLAG \x8c\x01FLAG\x02 $\xb2\x0c"\x03\x7f
 拓司\n　「なにを……！」@
 なたね\n　「物資の管理者に適任なのは、私です」\
 
-  FLAG H\x02
-FOBL " \xba\x01 \x02 \xe8\x01 \x025
+  FLAG H\x02\x0c\x02" \xba\x01 \x02 \xe8\x01 \x025
 SCEN SCE104_003 ~\x04 \x02\xef! FLAG \x8c\x01FLAG\x02 (\xb2\x0c"\x03D
  
 拓司\n　「違う！」@
@@ -31,8 +30,7 @@ SCEN SCE104_003 ~\x04 \x02\xef! FLAG \x8c\x01FLAG\x02 (\xb2\x0c"\x03D
 なたね\n　「だって！」@
 \nなたねが突如叫んで、拓司を遮った。\
 
-  FLAG \xc2\x04
-FOBL " \xba\x01 \x02 \xe8\x01 \x025
+  FLAG \xc2\x04\x0c\x02" \xba\x01 \x02 \xe8\x01 \x025
 SCEN SCE104_004 \x0c\x06 \x02\xef! FLAG \x8c\x01FLAG\x02 ,\xb2\x0c"\x03\xb7
  
 なたね\n　「だって私が用意したんだから！\p　ここにあるのは全部私のな\n　　だから！\p　さっきから黙って聞いてりゃゴチャゴチャゴチャ\n　　ゴチャゴチャゴチゴチャゴチャゴチャゴチャゴチャゴチャ…\n　　…バカタレが！\p　大バカタレ国民共が！\p　なにもわからない\n　　シロウトのバカタレがなにを偉そうにいってる！\p　私が作っ\n　　たシェルターに住まわしてやってるのに、なんなんだ！@
@@ -43,8 +41,7 @@ SCEN SCE104_004 \x0c\x06 \x02\xef! FLAG \x8c\x01FLAG\x02 ,\xb2\x0c"\x03\xb7
 \n御堂\n　「……やってみろよ。\pお前がどんなことしようとも、鍵はとら\n　　せてもらうからな」@
 なたね\n　「……」\
 
-  FLAG P\x06
-FOBL " \xba\x01 \x02 \xe8\x01 \x025
+  FLAG P\x06\x0c\x02" \xba\x01 \x02 \xe8\x01 \x025
 SCEN SCE104_005 f\t \x02\xef! FLAG \x8c\x01FLAG\x02 0\xb2\x0c"\x03[
  
 御堂\n　「てめえの腹かっさばいてでも、とらせてもらうからな」@
@@ -55,12 +52,10 @@ SCEN SCE104_005 f\t \x02\xef! FLAG \x8c\x01FLAG\x02 0\xb2\x0c"\x03[
 なたね\n　「人殺し！\p　人殺しの大バカタレ国民が！」@
 御堂\n　「……」\
 
-  FLAG \xaa\t
-FOBL " \xba\x01 \x02 \xe8\x01 \x025\x03\x0c
+  FLAG \xaa\t\x0c\x02" \xba\x01 \x02 \xe8\x01 \x025\x03\x0c
 CHOICE
 御堂を止める\n黙ってみている\n\l0,2,
 ENDCHOICE
 
-  FLAG P\x0b
-FOBL " \xba\x01 \x02 \xe8\x01 \x025 \xba\x01 \x02
+  FLAG P\x0b\x0c\x02" \xba\x01 \x02 \xe8\x01 \x025 \xba\x01 \x02
 SCEN TextClosev\x81\x1f\xc6\x0b \x0256\xf1

@@ -12,8 +12,8 @@ SCEN SCE046_001 \x06 \x02\xef! FLAG \x8c\x01FLAG\x02 \x80W\x0c"\x03\x8b
 ただ、遠く校庭から、ぼんやりとした声が聞こえてくるだけだ。@
 \n　御堂たちは雑談をしながら実験室の前を通り過ぎ、やがて男子\nトイレへと消えた。\
 
-  FLAG J
-FOBL "\x03\x07.\\Data\\Script\\TextFunc.Fob RUNF \x96\x02
+  FLAG J\x0c\x02"
+WHAT .\\Data\\Script\\TextFunc.Fob RUNF \x96\x02 \x02
 CMD1 TextOn RUNF \xc4\x02 \x025
 SCEN SCE046_002 \xe0\x02 \x02\xef! FLAG \x8c\x01FLAG\x02 \x84W\x0c"\x03,
  
@@ -22,6 +22,5 @@ SCEN SCE046_002 \xe0\x02 \x02\xef! FLAG \x8c\x01FLAG\x02 \x84W\x0c"\x03,
 \n　言ってなたねは、躊躇することなく男子トイレへと入っていっ\nた。@
 ひとり廊下に取り残された拓司も、慌てて後を追う。@
 \z
-  FLAG $\x03
-FOBL " \x96\x02 \x02 \xc4\x02 \x025 \x96\x02 \x02
+  FLAG $\x03\x0c\x02" \x96\x02 \x02 \xc4\x02 \x025 \x96\x02 \x02
 SCEN TextClosev\x81\x1f\x1a\x04 \x0256\xf1

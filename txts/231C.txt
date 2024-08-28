@@ -7,8 +7,8 @@ SCEN SCE231_001 \x06 \x02\xef! FLAG \x8c\x01FLAG\x02 \x90x\x01\x0c"\x03r
 \n拓司\n　「なんなんだ、お前は！\p　俺がお前に何をした！」@
 御堂\n　「むかつくんだよ……幸せなことに飽きて溜め息ついてるよう\n　　な……てめえみたいな野郎がよ！\p　毎日毎日、生きてるんだ\n　　か死んでるんだかわかんねえ俺みたいな人間だっているんだ\n　　ぞ！」\
 
-  FLAG J
-FOBL "\x03\x07.\\Data\\Script\\TextFunc.Fob RUNF 2\x02
+  FLAG J\x0c\x02"
+WHAT .\\Data\\Script\\TextFunc.Fob RUNF 2\x02 \x02
 CMD1 TextOn RUNF `\x02 \x025
 SCEN SCE231_002 |\x02 \x02\xef! FLAG \x8c\x01FLAG\x02 \x94x\x01\x0c"\x03`
  
@@ -17,9 +17,8 @@ SCEN SCE231_002 |\x02 \x02\xef! FLAG \x8c\x01FLAG\x02 \x94x\x01\x0c"\x03`
 拓司\n　「毎日遅刻してクズ共とたむろして、人生腐らせてるのはおま\n　　えだろうが！」@
 御堂\n　「知ったような口きくんじゃねえ、モヤシッ子が！」\
 
-  FLAG \xc0\x02
-FOBL " 2\x02 \x02 `\x02 \x025  FLAG )
-FOBL "\x03\x06.\\Data\\Script\\Bg.Fobsv\x81\x1f\x94\x04
+  FLAG \xc0\x02\x0c\x02" 2\x02 \x02 `\x02 \x025  FLAG )\x0c\x02"
+FOBT .\\Data\\Script\\Bg.Fobsv\x81\x1f\x94\x04 \x02
 CMD2 BgAutoFadeInsv\x81\x1f\xbe\x04 \x025
 SCEN SCE231_003 \xe2\x04 \x02\xef! FLAG \x8c\x01FLAG\x02 \x98x\x01\x0c"\x03\xc2
  
@@ -34,8 +33,7 @@ SCEN SCE231_003 \xe2\x04 \x02\xef! FLAG \x8c\x01FLAG\x02 \x98x\x01\x0c"\x03\xc2
 もはやこの部屋には、馴染みつつあるのだ。@
 自分だけではない、皆の顔に一様に浮かんでいる呆けた表情が証\n明している。\
 
-  FLAG &\x05
-FOBL " 2\x02 \x02 `\x02 \x025
+  FLAG &\x05\x0c\x02" 2\x02 \x02 `\x02 \x025
 SCEN SCE231_004 h\x08 \x02\xef! FLAG \x8c\x01FLAG\x02 \x9cx\x01\x0c"\x03s
  
 そこには静けさがあった。\p暴力とは相容れないはずの、まったり\nとした静けさが。@
@@ -46,8 +44,7 @@ SCEN SCE231_004 h\x08 \x02\xef! FLAG \x8c\x01FLAG\x02 \x9cx\x01\x0c"\x03s
 一同は初めて、ぎょっとして、御堂を見た。@
 御堂は冷たい目で、足下のなたねを見下ろした。\
 
-  FLAG \xac\x08
-FOBL " 2\x02 \x02 `\x02 \x025
+  FLAG \xac\x08\x0c\x02" 2\x02 \x02 `\x02 \x025
 SCEN SCE231_005 \xb2\n \x02\xef! FLAG \x8c\x01FLAG\x02 \xa0x\x01\x0c"\x03>
  
 錦城がおそるおそるといった感じで、なたねに歩み寄った。@
@@ -55,22 +52,16 @@ SCEN SCE231_005 \xb2\n \x02\xef! FLAG \x8c\x01FLAG\x02 \xa0x\x01\x0c"\x03>
 重い沈黙をついに破って、錦城はいった。@
 \n錦城\n　「……死んでる。\p息、してない……」\
 
-  FLAG \xf6\n
-FOBL " 2\x02 \x02 `\x02 \x025
-SCEN SCE231_006 (\x0c \x02\xef! FLAG \x8c\x01FLAG\x02 \xa4x\x01\x0c"\x03\x07.\\Data\\Script\\TextFunc.fob RUNF l\x0c \x02\x03\x06CheckNormalMessageSkip RUNF \x9a\x0c \x025 2\x02
-CMD2 TextWindowOffv\x81\x1f\xd2\x0c \x025  FLAG \x02
-FOBL "  \x04FLAG \x01
-FOBL "  \x08FLAG \x01
-FOBL "\x03\x06.\\Data\\Script\\Bgm.Fobv\x81\x1fD\r
-CMD1 SePlay RUNF n\r \x025  FLAG \xca
-FOBL "  \x04FLAG \x04
-FOBL "  \x08FLAG \x01
-FOBL " \x94\x04 \x02
-SCEN BgFadeInsv\x81\x1f\xe4\r \x025  FLAG \x02
-FOBL " D\r
-CMD1 SeStop RUNF *\x0e \x025  FLAG \xc8
-FOBL " \x94\x04
-CMD1 BgOnsv\x81\x1fl\x0e \x025 2\x02 
-WAVL TextWindowOnDirect RUNF \x94\x0e \x025 2\x02 
-WAVL UpdateScenarioRead RUNF \xc8\x0e \x025 2\x02 \x02
+  FLAG \xf6\n\x0c\x02" 2\x02 \x02 `\x02 \x025
+SCEN SCE231_006 (\x0c \x02\xef! FLAG \x8c\x01FLAG\x02 \xa4x\x01\x0c"
+WHAT .\\Data\\Script\\TextFunc.fob RUNF l\x0c \x02
+FOBT CheckNormalMessageSkip RUNF \x9a\x0c \x025 2\x02 \x02
+CMD2 TextWindowOffv\x81\x1f\xd2\x0c \x025  FLAG \x02\x0c\x02"  \x04FLAG \x01\x0c\x02"  \x08FLAG \x01\x0c\x02"
+FOBT .\\Data\\Script\\Bgm.Fobv\x81\x1fD\r \x02
+CMD1 SePlay RUNF n\r \x025  FLAG \xca\x0c\x02"  \x04FLAG \x04\x0c\x02"  \x08FLAG \x01\x0c\x02" \x94\x04 \x02
+SCEN BgFadeInsv\x81\x1f\xe4\r \x025  FLAG \x02\x0c\x02" D\r \x02
+CMD1 SeStop RUNF *\x0e \x025  FLAG \xc8\x0c\x02" \x94\x04 \x02
+CMD1 BgOnsv\x81\x1fl\x0e \x025 2\x02 \x02
+LOAD TextWindowOnDirect RUNF \x94\x0e \x025 2\x02 \x02
+LOAD UpdateScenarioRead RUNF \xc8\x0e \x025 2\x02 \x02
 SCEN TextClosev\x81\x1f\xfc\x0e \x0256\xf1

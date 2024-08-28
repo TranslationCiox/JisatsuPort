@@ -1,6 +1,6 @@
 START
-\xcf\x1f\x01`B#\x01\xc2\x1a  FLAG \t\x01
-FOBL "\x03\x06.\\Data\\Script\\Bgm.Fobv\x81\x1f 
+\xcf\x1f\x01`B#\x01\xc2\x1a  FLAG \t\x01\x0c\x02"
+FOBT .\\Data\\Script\\Bgm.Fobv\x81\x1f  \x02
 CMD1 PlayCD RUNF J \x025
 SCEN SCE085a_001 f \x02\xef! FLAG \x8c\x01FLAG\x02 p\x94\x0c"\x03\x82
  
@@ -9,8 +9,8 @@ SCEN SCE085a_001 f \x02\xef! FLAG \x8c\x01FLAG\x02 p\x94\x0c"\x03\x82
 再び、死の誘惑が襲いかかることはなかった。@
 免疫ができたせいなのか、すでに波動が拡散した後なのかは……わ\nからなかったが。\
 
-  FLAG \xaa
-FOBL "\x03\x07.\\Data\\Script\\TextFunc.Fob RUNF \xd2\x02
+  FLAG \xaa\x0c\x02"
+WHAT .\\Data\\Script\\TextFunc.Fob RUNF \xd2\x02 \x02
 CMD1 TextOn RUNF \x03 \x025
 SCEN SCE085a_002 \x1c\x03 \x02\xef! FLAG \x8c\x01FLAG\x02 t\x94\x0c"\x03\xd6
  
@@ -23,8 +23,7 @@ SCEN SCE085a_002 \x1c\x03 \x02\xef! FLAG \x8c\x01FLAG\x02 t\x94\x0c"\x03\xd6
 なたねの口から聞いた時にはほとんど信じられなかったシェルタ\nーの存在が、いまや拓司の唯一の心の支えになっている。@
 眉唾物の話だが、いまはそれを信じたい。\pおばけが怖くて夜、布\n団を被るのに似ている。\p布団なんかでおばけから身を守れるはず\nがない。\pだが、恐怖からは守ってくれる……。\
 
-  FLAG `\x03
-FOBL " \xd2\x02 \x02 \x03 \x025
+  FLAG `\x03\x0c\x02" \xd2\x02 \x02 \x03 \x025
 SCEN SCE085a_003 \xf2\x06 \x02\xef! FLAG \x8c\x01FLAG\x02 x\x94\x0c"\x03Z
  
 なたね\n　「虎菱くん！」@
@@ -34,8 +33,7 @@ SCEN SCE085a_003 \xf2\x06 \x02\xef! FLAG \x8c\x01FLAG\x02 x\x94\x0c"\x03Z
 なたね\n　「どうやったの？\p　どうやって波動から身を守ったの？！」@
 拓司\n　「偶然だよ」\
 
-  FLAG 6\x07
-FOBL " \xd2\x02 \x02 \x03 \x025
+  FLAG 6\x07\x0c\x02" \xd2\x02 \x02 \x03 \x025
 SCEN SCE085a_004 \xd8\x08 \x02\xef! FLAG \x8c\x01FLAG\x02 |\x94\x0c"\x03\x9f
  
 なたね\n　「ううん、違う！\p　やっぱり虎菱くんは戦士なのよ！@
@@ -48,8 +46,7 @@ SCEN SCE085a_004 \xd8\x08 \x02\xef! FLAG \x8c\x01FLAG\x02 |\x94\x0c"\x03\x9f
 　誰だ？！@
 　拓司たちは身構えたが、果たして現れたのは見慣れた人物であ\n　った。\
 
-  FLAG \x1c\t
-FOBL " \xd2\x02 \x02 \x03 \x025
+  FLAG \x1c\t\x0c\x02" \xd2\x02 \x02 \x03 \x025
 SCEN SCE085a_005 \xd2\x0b \x02\xef! FLAG \x8c\x01FLAG\x02 \x80\x94\x0c"\x03e
  
 　現れたのは御堂と、錦城である。@
@@ -60,8 +57,7 @@ SCEN SCE085a_005 \xd2\x0b \x02\xef! FLAG \x8c\x01FLAG\x02 \x80\x94\x0c"\x03e
 拓司\n　「俺だってわからないさ」@
 錦城\n　「とにかく、無事で良かったわ。\p他に生き残っている人はいる\n　　の？！」\
 
-  FLAG \x16\x0c
-FOBL " \xd2\x02 \x02 \x03 \x025
+  FLAG \x16\x0c\x0c\x02" \xd2\x02 \x02 \x03 \x025
 SCEN SCE085a_006 \xe4\r \x02\xef! FLAG \x8c\x01FLAG\x02 \x84\x94\x0c"\x03}
  
 錦城\n　「少ないわね。\pでは、ここを拠点にして、まだ無事な学生たち\n　　を探しに行きましょう！\p　他のみんなは実験室の中？@
@@ -73,8 +69,7 @@ SCEN SCE085a_006 \xe4\r \x02\xef! FLAG \x8c\x01FLAG\x02 \x84\x94\x0c"\x03}
 御堂\n　「クソッ、まだいってやがるぜ、この電波女！」@
 拓司\n　「いや、御堂。\p……あながち全部デタラメってわけでもなさそ\n　　うだぜ」\
 
-  FLAG (\x0e
-FOBL " \xd2\x02 \x02 \x03 \x025
+  FLAG (\x0e\x0c\x02" \xd2\x02 \x02 \x03 \x025
 SCEN SCE085a_007 V\x10 \x02\xef! FLAG \x8c\x01FLAG\x02 \x88\x94\x0c"\x03i
  
 御堂\n　「なに……？」@
@@ -82,8 +77,7 @@ SCEN SCE085a_007 V\x10 \x02\xef! FLAG \x8c\x01FLAG\x02 \x88\x94\x0c"\x03i
 \n錦城\n　「信じがたい話ではあるけれど、もう、信じられないものは山\n　　ほど見てしまった後だし」@
 \n錦城はふう、とため息をついて肩をすくめた。\
 
-  FLAG \x9a\x10
-FOBL " \xd2\x02 \x02 \x03 \x025
+  FLAG \x9a\x10\x0c\x02" \xd2\x02 \x02 \x03 \x025
 SCEN SCE085a_008 x\x12 \x02\xef! FLAG \x8c\x01FLAG\x02 \x8c\x94\x0c"\x03z
  
 錦城\n　「それにしても……雲居さん。\pさっきいっていた最終波動っ\n　　て、いったいなんなの？」@
@@ -91,8 +85,7 @@ SCEN SCE085a_008 x\x12 \x02\xef! FLAG \x8c\x01FLAG\x02 \x8c\x94\x0c"\x03z
 錦城\n　「……」@
 なたね\n　「いま、断続的に襲ってきている波動は、大地震の前の予震み\n　　たいなものにすぎません。\pエンケリュスが本格始動するまえ\n　　の震えみたいなものにすぎない。\pいずれはエンケリュスは完\n　　全に目覚めて、これまでの波動なんて話にならないくらいの\n　　巨大な波動を放ちます。\pそれが最終波動です」\
 
-  FLAG \xbc\x12
-FOBL " \xd2\x02 \x02 \x03 \x025
+  FLAG \xbc\x12\x0c\x02" \xd2\x02 \x02 \x03 \x025
 SCEN SCE085a_009 \xde\x14 \x02\xef! FLAG \x8c\x01FLAG\x02 \x90\x94\x0c"\x03\x94
  
 錦城\n　「これまでの波動よりも大きい……」@
@@ -101,8 +94,7 @@ SCEN SCE085a_009 \xde\x14 \x02\xef! FLAG \x8c\x01FLAG\x02 \x90\x94\x0c"\x03\x94
 \nここまで黙っていた御堂が、たまりかねたように叫んだ。@
 \n御堂\n　「バカバカしい！\p　こんなのの妄想を真に受けてるんじゃねえ\n　　だろうな！」\
 
-  FLAG "\x15
-FOBL " \xd2\x02 \x02 \x03 \x025
+  FLAG "\x15\x0c\x02" \xd2\x02 \x02 \x03 \x025
 SCEN SCE085a_010 \xac\x17 \x02\xef! FLAG \x8c\x01FLAG\x02 \x94\x94\x0c"\x03^
  
 拓司\n　「だったらとっとと学校を出て、好きなところにいったらどう\n　　だ？」@
@@ -112,14 +104,12 @@ SCEN SCE085a_010 \xac\x17 \x02\xef! FLAG \x8c\x01FLAG\x02 \x94\x94\x0c"\x03^
 御堂\n　「あァ？」@
 なたね\n　「１時間後かもしれないし、１週間後かもしれない。\p１０年後\n　　かもしれないし、１分後かも……１秒後かもしれない」\
 
-  FLAG \xf0\x17
-FOBL " \xd2\x02 \x02 \x03 \x025
+  FLAG \xf0\x17\x0c\x02" \xd2\x02 \x02 \x03 \x025
 SCEN SCE085a_011 \xa2\x19 \x02\xef! FLAG \x8c\x01FLAG\x02 \x98\x94\x0c"\x03 
  
 御堂\n　「……」@
 なたね\n　「……」@
 御堂\n　「と、とにかく実験室に入ろうじゃねえか。\p話はそれからだ」\
 
-  FLAG \xe6\x19
-FOBL " \xd2\x02 \x02 \x03 \x025 \xd2\x02 \x02
+  FLAG \xe6\x19\x0c\x02" \xd2\x02 \x02 \x03 \x025 \xd2\x02 \x02
 SCEN TextClosev\x81\x1f\xa4\x1a \x0256\xf1

@@ -11,8 +11,8 @@ SCEN SCE212_001 \x06 \x02\xef! FLAG \x8c\x01FLAG\x02 \xe0Z\x01\x0c"\x03d
 いずれも信じがたい世界だが、真実かどうかを確認する術は自分\nにはない。@
 拓司は考えたすえに、いった。\
 
-  FLAG J
-FOBL "\x03\x07.\\Data\\Script\\TextFunc.Fob RUNF \xfa\x01
+  FLAG J\x0c\x02"
+WHAT .\\Data\\Script\\TextFunc.Fob RUNF \xfa\x01 \x02
 CMD1 TextOn RUNF (\x02 \x025
 SCEN SCE212_002 D\x02 \x02\xef! FLAG \x8c\x01FLAG\x02 \xe4Z\x01\x0c"\x03S
  
@@ -21,8 +21,7 @@ SCEN SCE212_002 D\x02 \x02\xef! FLAG \x8c\x01FLAG\x02 \xe4Z\x01\x0c"\x03S
 拓司\n　「これからおれは、アイスクリームパフェを『望む』。\p君が語\n　　ったことが真実なら、ここにアイスクリームパフェが忽然と\n　　出現するって事だよな？」@
 ナタネ\n　「ええ」\
 
-  FLAG \x88\x02
-FOBL " \xfa\x01 \x02 (\x02 \x025
+  FLAG \x88\x02\x0c\x02" \xfa\x01 \x02 (\x02 \x025
 SCEN SCE212_003 \x0e\x04 \x02\xef! FLAG \x8c\x01FLAG\x02 \xe8Z\x01\x0c"\x03\x87
  
 拓司\n　「もしアイスクリームパフェが出現したとしても、『君の語っ\n　　た世界』が真実であることは証明できない。\pなぜならそれも\n　　また、俺の妄想が生み出した現象かもしれないからだ。@
@@ -32,9 +31,8 @@ SCEN SCE212_003 \x0e\x04 \x02\xef! FLAG \x8c\x01FLAG\x02 \xe8Z\x01\x0c"\x03\x87
 ナタネ\n　「ええ」@
 \n拓司は、目を閉じた。\
 
-  FLAG R\x04
-FOBL " \xfa\x01 \x02 (\x02 \x025  FLAG \xc8
-FOBL "\x03\x06.\\Data\\Script\\Bg.Fobsv\x81\x1f\xc2\x06
+  FLAG R\x04\x0c\x02" \xfa\x01 \x02 (\x02 \x025  FLAG \xc8\x0c\x02"
+FOBT .\\Data\\Script\\Bg.Fobsv\x81\x1f\xc2\x06 \x02
 CMD2 BgAutoFadeInsv\x81\x1f\xec\x06 \x025
 SCEN SCE212_004 \x10\x07 \x02\xef! FLAG \x8c\x01FLAG\x02 \xecZ\x01\x0c"\x03\x88
  
@@ -48,9 +46,7 @@ SCEN SCE212_004 \x10\x07 \x02\xef! FLAG \x8c\x01FLAG\x02 \xecZ\x01\x0c"\x03\x88
 『教授が語る世界』か『学校に籠城する世界』のいずれかに、世\n界を絞りたい。@
 そう思ってしまう。\
 
-  FLAG T\x07
-FOBL " \xfa\x01 \x02 (\x02 \x025  FLAG \xc9
-FOBL " \xc2\x06 \x02 \xec\x06 \x025
+  FLAG T\x07\x0c\x02" \xfa\x01 \x02 (\x02 \x025  FLAG \xc9\x0c\x02" \xc2\x06 \x02 \xec\x06 \x025
 SCEN SCE212_005 \xe2\t \x02\xef! FLAG \x8c\x01FLAG\x02 \xf0Z\x01\x0c"\x036
  
 拓司は意識集中を諦め、目を開けた。@
@@ -58,14 +54,12 @@ SCEN SCE212_005 \xe2\t \x02\xef! FLAG \x8c\x01FLAG\x02 \xf0Z\x01\x0c"\x036
 \nそして拓司は見た。\p狭い部屋の床にビッシリと立ち並ぶ、アイ\nスクリームパフェの群を。@
 \n拓司\n　「そんな……バカな」\
 
-  FLAG &\n
-FOBL " \xfa\x01 \x02 (\x02 \x025
+  FLAG &\n\x0c\x02" \xfa\x01 \x02 (\x02 \x025
 SCEN SCE212_006 8\x0b \x02\xef! FLAG \x8c\x01FLAG\x02 \xf4Z\x01\x0c"\x03-
  
 /*▲SE01　ループ再生（次の停止まで）*/\a2,1,1,1,\a6,0,0,0,　ザザザ……ザザッ……\pザアザザザ……ザアアアアア……@
 　ザアザアアアアアアア……\w\n/*▲SE01　停止*/\a4,1,0,0,\z
-  FLAG |\x0b
-FOBL " \xfa\x01 \x02 (\x02 \x025
+  FLAG |\x0b\x0c\x02" \xfa\x01 \x02 (\x02 \x025
 SCEN SCE212_007 j\x0c \x02\xef! FLAG \x8c\x01FLAG\x02 \xf8Z\x01\x0c"\x03d
  
 ノイズが、耳の奥で聞こえた。@
@@ -81,8 +75,7 @@ SCEN SCE212_007 j\x0c \x02\xef! FLAG \x8c\x01FLAG\x02 \xf8Z\x01\x0c"\x03d
 どちらでもいい。@
 \n/*■黒　表示（クロスフェード）*/\a7,-2,-2,0,\a0,200,2,0,\a6,-2,0,0,ようやく浅いまどろみが頭に霞を作りはじめた。\
 
-  FLAG \xae\x0c
-FOBL " \xfa\x01 \x02 (\x02 \x025  FLAG \x02
-FOBL "\x03\x06.\\Data\\Script\\Bgm.Fobv\x81\x1f\x92\x0e
+  FLAG \xae\x0c\x0c\x02" \xfa\x01 \x02 (\x02 \x025  FLAG \x02\x0c\x02"
+FOBT .\\Data\\Script\\Bgm.Fobv\x81\x1f\x92\x0e \x02
 CMD1 SeStop RUNF \xbc\x0e \x025 \xfa\x01 \x02
 SCEN TextClosev\x81\x1f\xe4\x0e \x0256\xf1

@@ -4,10 +4,10 @@ SCEN SCE220_001 \x06 \x02\xef! FLAG \x8c\x01FLAG\x02 `g\x01\x0c"\x03\x11
  
 \n\n\n\n\n\n\n\n\n\n　　　　　　　　　　　　　『９日目』\
 
-  FLAG J
-FOBL "\x03\x07.\\Data\\Script\\TextFunc.Fob RUNF \xae
-CMD1 TextOn RUNF \xdc \x025  FLAG \x0c\x01
-FOBL "\x03\x06.\\Data\\Script\\Bgm.Fobv\x81\x1f\x12\x01
+  FLAG J\x0c\x02"
+WHAT .\\Data\\Script\\TextFunc.Fob RUNF \xae \x02
+CMD1 TextOn RUNF \xdc \x025  FLAG \x0c\x01\x0c\x02"
+FOBT .\\Data\\Script\\Bgm.Fobv\x81\x1f\x12\x01 \x02
 CMD1 PlayCD RUNF <\x01 \x025
 SCEN SCE220_002 X\x01 \x02\xef! FLAG \x8c\x01FLAG\x02 dg\x01\x0c"\x03\x81
  
@@ -19,16 +19,14 @@ SCEN SCE220_002 X\x01 \x02\xef! FLAG \x8c\x01FLAG\x02 dg\x01\x0c"\x03\x81
 御堂は準備室を『自分の部屋』と決め、そこでの生活を始めた。@
 傍らには、錦城の姿があった。\
 
-  FLAG \x9c\x01
-FOBL " \xae \x02 \xdc \x025
+  FLAG \x9c\x01\x0c\x02" \xae \x02 \xdc \x025
 SCEN SCE220_003 \xda\x03 \x02\xef! FLAG \x8c\x01FLAG\x02 hg\x01\x0c"\x03\x8e
  
 御堂\n　「安心しろ。\p俺はそこのイカレ女とは違う。\pちゃんといままで\n　　どおり、食糧は平等に配給する。\pただ、部屋をもらうってだ\n　　けだ。\pお前らのパーソナルスペースも２人分広がるわけだし、\n　　文句はねえだろ？」@
 錦城\n　「理屈から言っても、食糧管理者が食糧管理室に常在するって\n　　いうのは合理的だわ。\p今回の雲居さんへの……暴力は……\n　　不可欠だった。\pわかるわね、みんな？\p　こういうことは二度\n　　と起こされてはならないわ。\pだから、その防止の意味でも、\n　　御堂くんがみんなと違う場所にいるということは意味がある\n　　……そうでしょう？」\
 
-  FLAG \x1e\x04
-FOBL " \xae \x02 \xdc \x025  FLAG &
-FOBL "\x03\x06.\\Data\\Script\\Bg.Fobsv\x81\x1f\xaa\x06
+  FLAG \x1e\x04\x0c\x02" \xae \x02 \xdc \x025  FLAG &\x0c\x02"
+FOBT .\\Data\\Script\\Bg.Fobsv\x81\x1f\xaa\x06 \x02
 CMD2 BgAutoFadeInsv\x81\x1f\xd4\x06 \x025
 SCEN SCE220_004 \xf8\x06 \x02\xef! FLAG \x8c\x01FLAG\x02 lg\x01\x0c"\x03\xc7
  
@@ -42,7 +40,5 @@ SCEN SCE220_004 \xf8\x06 \x02\xef! FLAG \x8c\x01FLAG\x02 lg\x01\x0c"\x03\xc7
 \n御堂\n　「なにかの本で読んだけど、人間ってのは、水がありゃ一週間\n　　は生きられるそうだ。\p５日だったかな？\p　ま、どっちでも\n　　いいけどな」@
 \n御堂は笑った。\
 
-  FLAG <\x07
-FOBL " \xae \x02 \xdc \x025  FLAG \xc8
-FOBL " \xaa\x06 \x02 \xd4\x06 \x025 \xae \x02
+  FLAG <\x07\x0c\x02" \xae \x02 \xdc \x025  FLAG \xc8\x0c\x02" \xaa\x06 \x02 \xd4\x06 \x025 \xae \x02
 SCEN TextClosev\x81\x1f\xd2\n \x0256\xf1

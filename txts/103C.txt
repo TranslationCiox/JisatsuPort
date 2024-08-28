@@ -10,7 +10,7 @@ SCEN SCE103_001 \x06 \x02\xef! FLAG \x8c\x01FLAG\x02 \x90\xb0\x0c"\x03\x82
 \n集めた薬を手に、紅葉は早桃の元へと去っていった。@
 紅葉は無言だったが、その沈黙の中に、拓司は明らかに不満の影\nを感じとった。@
 \z
-  FLAG J
-FOBL "\x03\x07.\\Data\\Script\\TextFunc.Fob RUNF r\x02
+  FLAG J\x0c\x02"
+WHAT .\\Data\\Script\\TextFunc.Fob RUNF r\x02 \x02
 CMD1 TextOn RUNF \xa0\x02 \x025 r\x02 \x02
 SCEN TextClosev\x81\x1f\xc8\x02 \x0256\xf1

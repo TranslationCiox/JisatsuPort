@@ -1,5 +1,6 @@
 START
-'\x11\x01`B#\x01@\r\x03\x06.\\Data\\Script\\Bgm.Fobv\x81\x1f\x06
+'\x11\x01`B#\x01@\r
+FOBT .\\Data\\Script\\Bgm.Fobv\x81\x1f\x06 \x02
 CMD1 StopCD RUNF 0 \x025
 SCEN SCE077_001 L \x02\xef! FLAG \x8c\x01FLAG\x02 \xf0\x87\x0c"\x03~
  
@@ -12,10 +13,9 @@ SCEN SCE077_001 L \x02\xef! FLAG \x8c\x01FLAG\x02 \xf0\x87\x0c"\x03~
 早桃\n　「おにいちゃん？！」@
 拓司\n　「俺が行く。\pだから雲居さんは２人をシェルターに連れてい\n　　ってやってくれ」\
 
-  FLAG \x90
-FOBL "\x03\x07.\\Data\\Script\\TextFunc.Fob RUNF \xa8\x02
-CMD1 TextOn RUNF \xd6\x02 \x025  FLAG \x08\x01
-FOBL " \x06
+  FLAG \x90\x0c\x02"
+WHAT .\\Data\\Script\\TextFunc.Fob RUNF \xa8\x02 \x02
+CMD1 TextOn RUNF \xd6\x02 \x025  FLAG \x08\x01\x0c\x02" \x06 \x02
 CMD1 PlayCD RUNF \x18\x03 \x025
 SCEN SCE077_002 4\x03 \x02\xef! FLAG \x8c\x01FLAG\x02 \xf4\x87\x0c"\x03X
  
@@ -28,8 +28,7 @@ SCEN SCE077_002 4\x03 \x02\xef! FLAG \x8c\x01FLAG\x02 \xf4\x87\x0c"\x03X
 早桃\n　「……」@
 拓司\n　「紅葉を助けるために、お前たちを危険にさらすわけにはいか\n　　ない」\
 
-  FLAG x\x03
-FOBL " \xa8\x02 \x02 \xd6\x02 \x025
+  FLAG x\x03\x0c\x02" \xa8\x02 \x02 \xd6\x02 \x025
 SCEN SCE077_003 \x12\x05 \x02\xef! FLAG \x8c\x01FLAG\x02 \xf8\x87\x0c"\x03O
  
 早桃\n　「……」@
@@ -39,8 +38,7 @@ SCEN SCE077_003 \x12\x05 \x02\xef! FLAG \x8c\x01FLAG\x02 \xf8\x87\x0c"\x03O
 早桃\n　「でも約束だよ？\p　絶対戻ってきて。\pおにいちゃんが死んじゃ\n　　ったら、早桃、早桃……」@
 \n　ぶるぶると震える早桃の肩を、拓司は優しくかき抱いた。\pそれ\n　から肩に担いだカンナを２人に任せ、なたねに尋ねた。\
 
-  FLAG V\x05
-FOBL " \xa8\x02 \x02 \xd6\x02 \x025
+  FLAG V\x05\x0c\x02" \xa8\x02 \x02 \xd6\x02 \x025
 SCEN SCE077_004 \xcc\x06 \x02\xef! FLAG \x8c\x01FLAG\x02 \xfc\x87\x0c"\x03d
  
 拓司\n　「４階の実験室だな？」@
@@ -52,8 +50,7 @@ SCEN SCE077_004 \xcc\x06 \x02\xef! FLAG \x8c\x01FLAG\x02 \xfc\x87\x0c"\x03d
 拓司\n　「そりゃどうも」@
 なたね\n　「ここで虎菱くんを失うのは、地球の戦士たちにとって大きな\n　　痛手。\p哀しいことだわ」\
 
-  FLAG \x10\x07
-FOBL " \xa8\x02 \x02 \xd6\x02 \x025
+  FLAG \x10\x07\x0c\x02" \xa8\x02 \x02 \xd6\x02 \x025
 SCEN SCE077_005 \xda\x08 \x02\xef! FLAG \x8c\x01FLAG\x02 \x88\x0c"\x03E
  
 拓司\n　「……死んだら、な」@
@@ -63,11 +60,9 @@ SCEN SCE077_005 \xda\x08 \x02\xef! FLAG \x8c\x01FLAG\x02 \x88\x0c"\x03E
 \n　拓司は肩をすくめて、さあ行ってくれ、と言った。@
 　振り返り振り返り、早桃たち３人の姿が廊下の向こうに消えさ\n　ったのを見送り、拓司はよし、とつぶやいた。\
 
-  FLAG \x1e\t
-FOBL " \xa8\x02 \x02 \xd6\x02 \x025 \x06 \x02 0 \x025  FLAG <
-FOBL "\x03\x07.\\Data\\Script\\TextFunc.fob RUNF \xa0\n \x02
-SCEN WaitTimesv\x81\x1f\xce\n \x025  FLAG \t\x01
-FOBL " \x06 \x02 \x18\x03 \x025
+  FLAG \x1e\t\x0c\x02" \xa8\x02 \x02 \xd6\x02 \x025 \x06 \x02 0 \x025  FLAG <\x0c\x02"
+WHAT .\\Data\\Script\\TextFunc.fob RUNF \xa0\n \x02
+SCEN WaitTimesv\x81\x1f\xce\n \x025  FLAG \t\x01\x0c\x02" \x06 \x02 \x18\x03 \x025
 SCEN SCE077_006 "\x0b \x02\xef! FLAG \x8c\x01FLAG\x02 \x04\x88\x0c"\x03B
  
 　渡り廊下は静まり返っている。@
@@ -75,12 +70,10 @@ SCEN SCE077_006 "\x0b \x02\xef! FLAG \x8c\x01FLAG\x02 \x04\x88\x0c"\x03B
 　それでも波動が充ちていると－－なたねはいう。@
 　波動というのがなんなのかがわからない以上、一気に走り抜け\n　るべきなのか、あるいは静かに前進すべきなのか、それすら判\n　断のしようがない。\
 
-  FLAG f\x0b
-FOBL " \xa8\x02 \x02 \xd6\x02 \x025\x03FLAG
+  FLAG f\x0b\x0c\x02" \xa8\x02 \x02 \xd6\x02 \x025\x03FLAG
 CHOICE
 一気に走り抜ける\n慎重に歩いてゆく\n\l0,2,
 ENDCHOICE
 
-  FLAG \xa8\x0c
-FOBL " \xa8\x02 \x02 \xd6\x02 \x025 \xa8\x02 \x02
+  FLAG \xa8\x0c\x0c\x02" \xa8\x02 \x02 \xd6\x02 \x025 \xa8\x02 \x02
 SCEN TextClosev\x81\x1f"\r \x0256\xf1

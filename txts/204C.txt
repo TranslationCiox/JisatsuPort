@@ -8,7 +8,7 @@ SCEN SCE204_001 \x06 \x02\xef! FLAG \x8c\x01FLAG\x02 `N\x01\x0c"\x03\xcb
 拓司はいった。@
 \n拓司\n　「君の言うことが信じられないような真実なのか……途方もな\n　　いウソなのか……それはまず置いておこう。\pそれを決める前\n　　に、いくつか質問をさせてくれ」\
 
-  FLAG J
-FOBL "\x03\x07.\\Data\\Script\\TextFunc.Fob RUNF \x96\x03
+  FLAG J\x0c\x02"
+WHAT .\\Data\\Script\\TextFunc.Fob RUNF \x96\x03 \x02
 CMD1 TextOn RUNF \xc4\x03 \x025 \x96\x03 \x02
 SCEN TextClosev\x81\x1f\xec\x03 \x0256\xf1

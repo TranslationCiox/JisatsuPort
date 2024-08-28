@@ -4,8 +4,8 @@ SCEN SCE221_001 \x06 \x02\xef! FLAG \x8c\x01FLAG\x02 \xf0h\x01\x0c"\x03\x11
  
 \n\n\n\n\n\n\n\n\n\n　　　　　　　　　　　　　『１０日目』\
 
-  FLAG J
-FOBL "\x03\x07.\\Data\\Script\\TextFunc.Fob RUNF \xae
+  FLAG J\x0c\x02"
+WHAT .\\Data\\Script\\TextFunc.Fob RUNF \xae \x02
 CMD1 TextOn RUNF \xdc \x025
 SCEN SCE221_002 \xf8 \x02\xef! FLAG \x8c\x01FLAG\x02 \xf4h\x01\x0c"\x03\x81
  
@@ -19,20 +19,17 @@ SCEN SCE221_002 \xf8 \x02\xef! FLAG \x8c\x01FLAG\x02 \xf4h\x01\x0c"\x03\x81
 \nなたねは小さく首を横に振った。@
 \n御堂\n　「ふん。\pお前を生かしてやってるのは、波動の監視役としてだ\n　　からな。\pしっかり見張ってろ。\pポカやらかしたら容赦しねえ\n　　からな」\
 
-  FLAG <\x01
-FOBL " \xae \x02 \xdc \x025
+  FLAG <\x01\x0c\x02" \xae \x02 \xdc \x025
 SCEN SCE221_003 z\x03 \x02\xef! FLAG \x8c\x01FLAG\x02 \xf8h\x01\x0c"\x03:
  
 誰も御堂を非難をする者はいない。@
 御堂が恐ろしいとか、なたねには当然の報いとか……そういうふ\nうに思うよりも、関心が持てないのだ。@
 自分のことを考えるのに精一杯で、とてもではないが他人の面倒\nなど見ていられないのだ。\
 
-  FLAG \xbe\x03
-FOBL " \xae \x02 \xdc \x025\x03"
+  FLAG \xbe\x03\x0c\x02" \xae \x02 \xdc \x025\x03"
 CHOICE
 それでも拓司は、自分の食糧を少し残し、夜、なたねに与えた\n拓司は食糧を腹に収め、いつかくるであろう『そのとき』に備えた\n\l0,2,
 ENDCHOICE
 
-  FLAG \xe0\x04
-FOBL " \xae \x02 \xdc \x025 \xae \x02
+  FLAG \xe0\x04\x0c\x02" \xae \x02 \xdc \x025 \xae \x02
 SCEN TextClosev\x81\x1f\xae\x05 \x0256\xf1

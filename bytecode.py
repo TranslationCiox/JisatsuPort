@@ -3,32 +3,47 @@ import os
 
 patterns = [
     {
+        "pattern": [b'\x06', b'\x0b', b'\x0c', b'\x02', b'"', b'2', b'\xca\x17'], # (at the end of BMP loads)
+        "action": "#Load BMP"
+    },
+    {
         "pattern": [b'\x01', b'start', b'\xef', b'i\x01C'],  # Start the script
         "action": "START\n"
     },
     {
-        "pattern": [b'\x03', b'\x03'], #Goes before SCE Calls
-        "action": "\r\nSCEN "
-    },
-    {
-        "pattern": [b'\x0c', b'\x02'], # Goes before FOB load calls
-        "action": "\r\nFOBL "
-    },
-    {
-        "pattern": [b'\x1e', b'\x02', b'\x03', b'\x02'],  # Goes before commands
+        "pattern": [b'\x03', b'\x02'],  # Goes before commands
         "action": "\r\nCMD1 "
     },
     {
-        "pattern": [b'\x1e', b'\x02', b'\x03', b'\x04'],  # Goes before certain calls (Textbox, BGFADEIN)
+        "pattern": [b'\x03', b'\x04'],  # Goes before certain calls (Textbox, BGFADEIN)
         "action": "\r\nCMD2 "
     },
     {
-        "pattern": [b'\x1f'],  # Likely a delimiter
+        "pattern": [b'\x03', b'\x03'],  # Goes before SCE Calls
+        "action": "\r\nSCEN "
+    },
+    {
+        "pattern": [b'\x03', b'\x05'],  # Seems to LOAD WAV and BMP files
+        "action": "\nLOAD "
+    },
+    {
+        "pattern": [b'\x03', b'\x06'],  # Seems to LOAD script FOB calls
+        "action": "\nFOBT "
+    },
+    {
+        "pattern": [b'\x03', b'\x07'],  # Seems to LOAD TextFunc.FOB.
+        "action": "\nWHAT "
+    },
+    {
+        "pattern": [b'\x03', b'\x08'],  # Seems to LOAD Scenario FOB files.
+        "action": "\nFOBO "
+    },
+    {
+        "pattern": [b'\x1e'],  # Likely a  delimiter (group)
         "action": " "
     },
-
     {
-        "pattern": [b'\x1e'],  # Likely a second delimiter
+        "pattern": [b'\x1f'],  # Likely a delimiter (record)
         "action": " "
     },
     {
@@ -36,16 +51,8 @@ patterns = [
         "action": " RUNF "
     },
     {
-        "pattern": [b'\x03', b'\x05'], #LOADs bmp files it seems.
-        "action": "\nBMPL "
-    },
-    {
         "pattern": [b'\r'], #Seems to be related to flags. Both to set, and read them.
         "action": "FLAG"
-    },
-    {
-        "pattern": [b'\x02', b'\x03', b'\x05'],  # Seems to LOAD WAV files
-        "action": "\nWAVL "
     },
 ]
 

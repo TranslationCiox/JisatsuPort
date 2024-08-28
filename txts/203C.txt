@@ -1,6 +1,6 @@
 START
-f\x03\x01p\x044\x01\xd6\x02  FLAG \xc9
-FOBL "\x03\x06.\\Data\\Script\\Bg.Fobsv\x81\x1f 
+f\x03\x01p\x044\x01\xd6\x02  FLAG \xc9\x0c\x02"
+FOBT .\\Data\\Script\\Bg.Fobsv\x81\x1f  \x02
 CMD2 BgAutoFadeInsv\x81\x1fJ \x025
 SCEN SCE203_001 n \x02\xef! FLAG \x8c\x01FLAG\x02 \xd0L\x01\x0c"\x03d
  
@@ -10,7 +10,7 @@ SCEN SCE203_001 n \x02\xef! FLAG \x8c\x01FLAG\x02 \xd0L\x01\x0c"\x03d
 　　だからあなたに、ニセモノの認識を与えて、あなたを支配し\n　　ようとしている。\pあなたはかわいそうな病人で、あなたは\n　　『創る』ことなどできない。@
 　　そういうふうに信じ込ませようとして、そしてそれは成功し\n　　つつある……いいわね？」\
 
-  FLAG \xb2
-FOBL "\x03\x07.\\Data\\Script\\TextFunc.Fob RUNF b\x02
+  FLAG \xb2\x0c\x02"
+WHAT .\\Data\\Script\\TextFunc.Fob RUNF b\x02 \x02
 CMD1 TextOn RUNF \x90\x02 \x025 b\x02 \x02
 SCEN TextClosev\x81\x1f\xb8\x02 \x0256\xf1

@@ -4,10 +4,10 @@ SCEN SCE108_001 \x06 \x02\xef! FLAG \x8c\x01FLAG\x02 `\xb8\x0c"\x03\x11
  
 \n\n\n\n\n\n\n\n\n\n　　　　　　　　　　　　　『６日目』\
 
-  FLAG J
-FOBL "\x03\x07.\\Data\\Script\\TextFunc.Fob RUNF \xae
-CMD1 TextOn RUNF \xdc \x025  FLAG \x0c\x01
-FOBL "\x03\x06.\\Data\\Script\\Bgm.Fobv\x81\x1f\x12\x01
+  FLAG J\x0c\x02"
+WHAT .\\Data\\Script\\TextFunc.Fob RUNF \xae \x02
+CMD1 TextOn RUNF \xdc \x025  FLAG \x0c\x01\x0c\x02"
+FOBT .\\Data\\Script\\Bgm.Fobv\x81\x1f\x12\x01 \x02
 CMD1 PlayCD RUNF <\x01 \x025
 SCEN SCE108_002 X\x01 \x02\xef! FLAG \x8c\x01FLAG\x02 d\xb8\x0c"\x03\x87
  
@@ -17,8 +17,7 @@ SCEN SCE108_002 X\x01 \x02\xef! FLAG \x8c\x01FLAG\x02 d\xb8\x0c"\x03\x87
 錦城と紅葉が、声を潜めて何かを話している。\pいったい何を話し\nているのだろうか？@
 \n錦城が、何度も意味ありげな視線を送ってくる。\p催促するような\n非難するような視線だ。\p拓司は気づかないふりをして、それを無\n視した。\
 
-  FLAG \x9c\x01
-FOBL " \xae \x02 \xdc \x025
+  FLAG \x9c\x01\x0c\x02" \xae \x02 \xdc \x025
 SCEN SCE108_003 \xf2\x03 \x02\xef! FLAG \x8c\x01FLAG\x02 h\xb8\x0c"\x03V
  
 この日が誕生日だったというカンナのために、夜、一同は歌を歌\nった。@
@@ -26,6 +25,5 @@ SCEN SCE108_003 \xf2\x03 \x02\xef! FLAG \x8c\x01FLAG\x02 h\xb8\x0c"\x03V
 しかし、あまりの馬鹿馬鹿しさに、ひとり、またひとりと声が止\nんでいき、やがて誰の声も聞こえなくなった。@
 沈黙の中、なたねの「……馬鹿馬鹿しい」というつぶやきが、奇\n妙に大きく響いた。\
 
-  FLAG 6\x04
-FOBL " \xae \x02 \xdc \x025 \xae \x02
+  FLAG 6\x04\x0c\x02" \xae \x02 \xdc \x025 \xae \x02
 SCEN TextClosev\x81\x1f\xd4\x05 \x0256\xf1

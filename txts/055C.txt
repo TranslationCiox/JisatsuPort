@@ -10,8 +10,8 @@ SCEN SCE055_001 \x06 \x02\xef! FLAG \x8c\x01FLAG\x02 \x90e\x0c"\x03\x98
 \n　なたねは誇らしげに笑った。\pまるでこの状況を楽しんでいるか\n　のようだ。@
 　小声で、解説をはじめる。\
 
-  FLAG J
-FOBL "\x03\x07.\\Data\\Script\\TextFunc.Fob RUNF \xca\x02
+  FLAG J\x0c\x02"
+WHAT .\\Data\\Script\\TextFunc.Fob RUNF \xca\x02 \x02
 CMD1 TextOn RUNF \xf8\x02 \x025
 SCEN SCE055_002 \x14\x03 \x02\xef! FLAG \x8c\x01FLAG\x02 \x94e\x0c"\x03\xcd
  
@@ -21,8 +21,7 @@ SCEN SCE055_002 \x14\x03 \x02\xef! FLAG \x8c\x01FLAG\x02 \x94e\x0c"\x03\xcd
 なたね\n　「くすくす……怒りの受け皿となるのは、弱い人間よ。\p自分よ\n　　り立場的に弱い人間に、ストレスはぶつけられるわ。\pオチコ\n　　ボレの御堂くんたちが私にそうしたように。\p状況を理解でき\n　　ないあなたが私にそうしているように。\p安心して、責めてる\n　　わけじゃないから」@
 拓司\n　「……」\
 
-  FLAG X\x03
-FOBL " \xca\x02 \x02 \xf8\x02 \x025
+  FLAG X\x03\x0c\x02" \xca\x02 \x02 \xf8\x02 \x025
 SCEN SCE055_003 \xc6\x06 \x02\xef! FLAG \x8c\x01FLAG\x02 \x98e\x0c"\x03\x80
  
 なたね\n　「……義妹さん、もともといじめられていたとか、そういうの\n　　あった？」@
@@ -34,8 +33,7 @@ SCEN SCE055_003 \xc6\x06 \x02\xef! FLAG \x8c\x01FLAG\x02 \x98e\x0c"\x03\x80
 小さく固くなって、自分を傷つけようとする悪意から、必死で身\nを守っている。@
 \n早桃\n　「怖い……怖い……」\
 
-  FLAG \n\x07
-FOBL " \xca\x02 \x02 \xf8\x02 \x025
+  FLAG \n\x07\x0c\x02" \xca\x02 \x02 \xf8\x02 \x025
 SCEN SCE055_004 D\t \x02\xef! FLAG \x8c\x01FLAG\x02 \x9ce\x0c"\x03t
  
 \nその様子をひとり静かに見守っていた男子学生が、大声でいった。\n@
@@ -45,13 +43,11 @@ SCEN SCE055_004 D\t \x02\xef! FLAG \x8c\x01FLAG\x02 \x9ce\x0c"\x03t
 \n男子学生は舞台俳優のような大げさな身振りを交えていった。@
 \n学生\n　「そこでだ！\p　俺たちが背中を押してやろうと思う！\p　もう生\n　　きていてもしょうがないと思えるくらいのことを、虎菱早桃\n　　にしてやりたいと思う！」\
 
-  FLAG \x88\t
-FOBL " \xca\x02 \x02 \xf8\x02 \x025
+  FLAG \x88\t\x0c\x02" \xca\x02 \x02 \xf8\x02 \x025
 SCEN SCE055_005 \x92\x0b \x02\xef! FLAG \x8c\x01FLAG\x02 \x9ce\x0c"\x03A
  
 \n犯せえ！\p　という声が上がった。\pしかし男子学生はそれを片手で\n軽く制した。@
 \n学生\n　「男子がこれだけの人数いると、さすがに全員やるのは無理だ\n　　ろ？\p　それに、こんなウザキャラに、おれらのチ○ポなんか\n　　もったいねえよ。\pそこでだ……！」\
 
-  FLAG \xd6\x0b
-FOBL " \xca\x02 \x02 \xf8\x02 \x025 \xca\x02 \x02
+  FLAG \xd6\x0b\x0c\x02" \xca\x02 \x02 \xf8\x02 \x025 \xca\x02 \x02
 SCEN TextClosev\x81\x1f \r \x0256\xf1

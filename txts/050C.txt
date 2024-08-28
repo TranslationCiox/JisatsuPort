@@ -1,9 +1,7 @@
 START
 \xd3\x15\x01`B#\x01\x9e\x12
-SCEN SCE050_001 \x06 \x02\xef! FLAG \x8c\x01FLAG\x02 \xc0]\x0c"  FLAG 
-FOBL "  \x04FLAG \x19
-FOBL "  \x08FLAG 
-FOBL "\x03\x06.\\Data\\Script\\Bgm.Fobv\x81\x1f\x98 \x02
+SCEN SCE050_001 \x06 \x02\xef! FLAG \x8c\x01FLAG\x02 \xc0]\x0c"  FLAG \x0c\x02"  \x04FLAG \x19\x0c\x02"  \x08FLAG \x0c\x02"
+FOBT .\\Data\\Script\\Bgm.Fobv\x81\x1f\x98 \x02
 SCEN SePlayExsv\x81\x1f\xc2 \x025\x03\x82
  
 教室のドアをわずかにスライドさせる。@
@@ -13,8 +11,8 @@ SCEN SePlayExsv\x81\x1f\xc2 \x025\x03\x82
 \n教師\n　「いいか。\p刃物を扱うわけだから少し怖い気もするかもしれん\n　　でもみんなで心をひとつにすれば大丈夫だ。\pこれはオレが常\n　　日頃いっていることだから、わかるな？\p　……よし。\pカッタ\n　　ーを持っていない者は、使い終わった者に借りるように。@
 　　これはテストには出ないが、重要なことだぞ」\
 
-  FLAG \xe2
-FOBL "\x03\x07.\\Data\\Script\\TextFunc.Fob RUNF \n\x03
+  FLAG \xe2\x0c\x02"
+WHAT .\\Data\\Script\\TextFunc.Fob RUNF \n\x03 \x02
 CMD1 TextOn RUNF 8\x03 \x025
 SCEN SCE050_002 T\x03 \x02\xef! FLAG \x8c\x01FLAG\x02 \xc4]\x0c"\x03o
  
@@ -25,8 +23,7 @@ SCEN SCE050_002 T\x03 \x02\xef! FLAG \x8c\x01FLAG\x02 \xc4]\x0c"\x03o
 教員の動きをトレースするように、学生たちが次々と自分の喉を\n掻き切っていった。@
 ためらいのかけらもない、完璧なアクションだった。\
 
-  FLAG \x98\x03
-FOBL " \n\x03 \x02 8\x03 \x025
+  FLAG \x98\x03\x0c\x02" \n\x03 \x02 8\x03 \x025
 SCEN SCE050_003 \x8e\x05 \x02\xef! FLAG \x8c\x01FLAG\x02 \xc8]\x0c"\x03\xd9
  
 \n　いつかＴＶで見た、共産主義国家のマスゲーム。@
@@ -39,8 +36,7 @@ SCEN SCE050_003 \x8e\x05 \x02\xef! FLAG \x8c\x01FLAG\x02 \xc8]\x0c"\x03\xd9
 ブシューッ、とも、ヒュウーッとも……なんの音もしなかった@
 なんの劇的さもなかった。\pただ、どたん、どたん、と、学生た\nちが机に突っ伏してゆく音だけが連続して聞こえて、それは単\n純に「奇妙」としかいえなかった。\p悲しい感じとか、不気味な感\nじとか、異常な感じとか……そんな、もっともらしい感想が入り\n込む余地はどこにもなかった。\pただ奇妙だった。\
 
-  FLAG \xd2\x05
-FOBL " \n\x03 \x02 8\x03 \x025
+  FLAG \xd2\x05\x0c\x02" \n\x03 \x02 8\x03 \x025
 SCEN SCE050_004 p\t \x02\xef! FLAG \x8c\x01FLAG\x02 \xcc]\x0c"\x03\x8f
  
 　拓司は、ほうけたようにたねを見た。@
@@ -49,8 +45,7 @@ SCEN SCE050_004 p\t \x02\xef! FLAG \x8c\x01FLAG\x02 \xcc]\x0c"\x03\x8f
 \n　どことなく、得意げな話し方だった。\p聞いていると、拓司の胸\nに、いいようのないいらつきが広がっていった。@
 \n拓司\n　「……もういいよ、雲居さん」\
 
-  FLAG \xb4\t
-FOBL " \n\x03 \x02 8\x03 \x025
+  FLAG \xb4\t\x0c\x02" \n\x03 \x02 8\x03 \x025
 SCEN SCE050_005 *\x0c \x02\xef! FLAG \x8c\x01FLAG\x02 \xd0]\x0c"\x03c
  
 なたね\n　「わかるかなあ？　いまの場合、先生が牽引役になっているわ\n　　けよね。\pハーメルンの笛吹き的な装置として。\p結局、みんな\n　　誰かに命令された方が楽なのよね。\p限定されない完全な自由\n　　というのは、逆説的に－－」@
@@ -58,8 +53,7 @@ SCEN SCE050_005 *\x0c \x02\xef! FLAG \x8c\x01FLAG\x02 \xd0]\x0c"\x03c
 \n　なたねは傷ついたように口をつぐみ、それから軽く肩をすくめ\n　た。@
 \nなたね\n　「広まるわよ。とまらないで広まる。\pみんな死ぬ」\
 
-  FLAG n\x0c
-FOBL " \n\x03 \x02 8\x03 \x025
+  FLAG n\x0c\x0c\x02" \n\x03 \x02 8\x03 \x025
 SCEN SCE050_006 4\x0e \x02\xef! FLAG \x8c\x01FLAG\x02 \xd4]\x0c"\x03d
  
 　拓司は頭を振った。\pなたねの言葉を頭から振り払う。@
@@ -72,8 +66,7 @@ SCEN SCE050_006 4\x0e \x02\xef! FLAG \x8c\x01FLAG\x02 \xd4]\x0c"\x03d
 　考えろ！@
 　何をすべきか！\
 
-  FLAG x\x0e
-FOBL " \n\x03 \x02 8\x03 \x025
+  FLAG x\x0e\x0c\x02" \n\x03 \x02 8\x03 \x025
 SCEN SCE050_007 B\x10 \x02\xef! FLAG \x8c\x01FLAG\x02 \xd8]\x0c"\x03c
  
 \n　早桃。@
@@ -84,7 +77,6 @@ SCEN SCE050_007 B\x10 \x02\xef! FLAG \x8c\x01FLAG\x02 \xd8]\x0c"\x03c
 　ここから一番近い教室といえば……早桃の教室だ。@
 　この３階廊下をまっすぐ行った突き当たりの教室に、早桃はい\n　る。\
 
-  FLAG \x86\x10
-FOBL " \n\x03 \x02 8\x03 \x025 \x98
+  FLAG \x86\x10\x0c\x02" \n\x03 \x02 8\x03 \x025 \x98 \x02
 CMD1 StopCD RUNF X\x12 \x025 \n\x03 \x02
 SCEN TextClosev\x81\x1f\x80\x12 \x0256\xf1

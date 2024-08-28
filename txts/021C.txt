@@ -4,12 +4,12 @@ SCEN SCE021_001 \x06 \x02\xef! FLAG \x8c\x01FLAG\x02 p0\x0c"\x03\x10
  
 \n\n\n\n\n\n\n\n\n\n　　　　　　　　　『学校／四限』\
 
-  FLAG J
-FOBL "\x03\x07.\\Data\\Script\\TextFunc.Fob RUNF \xaa
-CMD1 TextOn RUNF \xd8 \x025  FLAG \x05
-FOBL "\x03\x06.\\Data\\Script\\Bg.Fobsv\x81\x1f\x0e\x01
-CMD2 BgAutoFadeInsv\x81\x1f8\x01 \x025  FLAG \x08\x01
-FOBL "\x03\x06.\\Data\\Script\\Bgm.Fobv\x81\x1fv\x01
+  FLAG J\x0c\x02"
+WHAT .\\Data\\Script\\TextFunc.Fob RUNF \xaa \x02
+CMD1 TextOn RUNF \xd8 \x025  FLAG \x05\x0c\x02"
+FOBT .\\Data\\Script\\Bg.Fobsv\x81\x1f\x0e\x01 \x02
+CMD2 BgAutoFadeInsv\x81\x1f8\x01 \x025  FLAG \x08\x01\x0c\x02"
+FOBT .\\Data\\Script\\Bgm.Fobv\x81\x1fv\x01 \x02
 CMD1 PlayCD RUNF \xa0\x01 \x025
 SCEN SCE021_002 \xbc\x01 \x02\xef! FLAG \x8c\x01FLAG\x02 t0\x0c"\x03q
  
@@ -26,9 +26,7 @@ SCEN SCE021_002 \xbc\x01 \x02\xef! FLAG \x8c\x01FLAG\x02 t0\x0c"\x03q
 　逃げられない。@
 　悲鳴をあげることしかできない。\
 
-  FLAG \x02
-FOBL " \xaa \x02 \xd8 \x025  FLAG \xc8
-FOBL " \x0e\x01 \x02 8\x01 \x025
+  FLAG \x02\x0c\x02" \xaa \x02 \xd8 \x025  FLAG \xc8\x0c\x02" \x0e\x01 \x02 8\x01 \x025
 SCEN SCE021_003 2\x04 \x02\xef! FLAG \x8c\x01FLAG\x02 x0\x0c"\x03~
  
 \n　－－死んじまおうかなあ。@
@@ -41,8 +39,7 @@ SCEN SCE021_003 2\x04 \x02\xef! FLAG \x8c\x01FLAG\x02 x0\x0c"\x03~
 　－－そのうち、死にすら、この鈍いひりつきを……真実の痛みを\n　感じられなくなってしまうのではないか？@
 　のどの奥から、吐瀉物のような恐怖が込み上がってくる。@
 \z
-  FLAG v\x04
-FOBL " \xaa \x02 \xd8 \x025
+  FLAG v\x04\x0c\x02" \xaa \x02 \xd8 \x025
 SCEN SCE021_004 \xa8\x06 \x02\xef! FLAG \x8c\x01FLAG\x02 |0\x0c"\x03Q
  
 \n　死んじまおうかなあ。@
@@ -52,12 +49,10 @@ SCEN SCE021_004 \xa8\x06 \x02\xef! FLAG \x8c\x01FLAG\x02 |0\x0c"\x03Q
 　真剣に自殺を考えるくらいの、モラルに反した妄想が。@
 　拓司は自分の大切な人を……妄想の檻の中に……ゆっくりと囲っ\n　ていった。\
 
-  FLAG \xec\x06
-FOBL " \xaa \x02 \xd8 \x025\x03\x0f
+  FLAG \xec\x06\x0c\x02" \xaa \x02 \xd8 \x025\x03\x0f
 CHOICE
 早桃を妄想の中で犯す\n紅葉を想像の中で犯す\n\l0,2,
 ENDCHOICE
 
-  FLAG j\x08
-FOBL " \xaa \x02 \xd8 \x025 \xaa \x02
+  FLAG j\x08\x0c\x02" \xaa \x02 \xd8 \x025 \xaa \x02
 SCEN TextClosev\x81\x1f\xec\x08 \x0256\xf1

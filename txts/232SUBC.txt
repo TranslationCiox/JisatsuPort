@@ -9,8 +9,8 @@ SCEN SCE232_004 \x06 \x02\xef! FLAG \x8c\x01FLAG\x02 ,z\x01\x0c"\x03\xa2
 　銀色のツルツツした顔にギョロリと大きな目がついていて、耳\nは悪魔みたいにとんがっている、不気味な宇宙人です。@
 　夢のなかで宇宙人に見つめられると、なたねは怖くて怖くて身\n動きがとれなくなってしまいうのでした。\p宇宙人はなたねが動\nけないのをいいことに、キスをしたり、身体を触ったりしました。\n\p　そしていつも最後には、管のようなものをなたねのいやらしい\nところに突き刺して、毒の液を身体の中に流し込むのです。\
 
-  FLAG J
-FOBL "\x03\x07.\\Data\\Script\\TextFunc.Fob RUNF \xf2\x02
+  FLAG J\x0c\x02"
+WHAT .\\Data\\Script\\TextFunc.Fob RUNF \xf2\x02 \x02
 CMD1 TextOn RUNF  \x03 \x025
 SCEN SCE232_005 <\x03 \x02\xef! FLAG \x8c\x01FLAG\x02 0z\x01\x0c"\x03\xdc
  
@@ -24,8 +24,7 @@ SCEN SCE232_005 <\x03 \x02\xef! FLAG \x8c\x01FLAG\x02 0z\x01\x0c"\x03\xdc
 　なたねは、お義父さんに相談することにしました。@
 　恥ずかしい気持ちはしましたが、お義父さんしか相談できる人\nがいなかったのです。\
 
-  FLAG \x80\x03
-FOBL " \xf2\x02 \x02  \x03 \x025
+  FLAG \x80\x03\x0c\x02" \xf2\x02 \x02  \x03 \x025
 SCEN SCE232_006 *\x07 \x02\xef! FLAG \x8c\x01FLAG\x02 4z\x01\x0c"\x03\xf6
  
 　その夜、なたねはお義父さんの部屋のドアをノックしました。@
@@ -40,8 +39,7 @@ SCEN SCE232_006 *\x07 \x02\xef! FLAG \x8c\x01FLAG\x02 4z\x01\x0c"\x03\xf6
 　（お義父さんがこんな写真を持っているなんて）@
 　なたねはとてもショックでした。\pでも、写真を見ていると、ま\nたいやらしい気持ちがむずむずとわいてきて、気がつくとなたね\nは、写真を１枚ポケットに忍び込ませて、部屋を出ていたのです。\n\
 
-  FLAG n\x07
-FOBL " \xf2\x02 \x02  \x03 \x025
+  FLAG n\x07\x0c\x02" \xf2\x02 \x02  \x03 \x025
 SCEN SCE232_007 \x80\x0b \x02\xef! FLAG \x8c\x01FLAG\x02 8z\x01\x0c"\x03\xdd
  
 　その写真は、金髪の女の子が、大人の男の人にいやらしいこと\nをされている写真でした。@
@@ -49,8 +47,7 @@ SCEN SCE232_007 \x80\x0b \x02\xef! FLAG \x8c\x01FLAG\x02 8z\x01\x0c"\x03\xdd
 　なたねはその写真を見ながら、いやらしいことをし続けました。\n\p　頭のなかで、写真の女の子を自分に置き換えて、男の人たちを\n宇宙人に置き換えました。\pそうすると、いつもよりずっといやら\nしい気持ちになれました。@
 　夢のなかで宇宙人にいたずらされるのは、あいかわらず嫌な気\n分でした。\pけれども一度、写真の女の子と同じように、いやらし\nい液を顔にかけられたときは、信じられないくらいどきどきした\n気持ちになりました。\pそして翌朝、そんな自分が情けなくて、悲\nしくて、泣いてしまうのでした。\
 
-  FLAG \xc4\x0b
-FOBL " \xf2\x02 \x02  \x03 \x025
+  FLAG \xc4\x0b\x0c\x02" \xf2\x02 \x02  \x03 \x025
 SCEN SCE232_008 r\x0f \x02\xef! FLAG \x8c\x01FLAG\x02 <z\x01\x0c"\x03\xf8
  
 　神様がそんなことをお見逃しになるはずがありません。@
@@ -63,8 +60,7 @@ SCEN SCE232_008 r\x0f \x02\xef! FLAG \x8c\x01FLAG\x02 <z\x01\x0c"\x03\xf8
 　そして、こうなったらもう自分で解決するしかない、と心を決\nめました。@
 　なたねは『夢うらない』の本を読んで、そこに書いてあった悪\nい夢の撃退法を試すことにしました。\p本には、「真っ黒に塗った\n長い針を枕の下に隠しておいて、夢のなかで悪魔に突き刺すと、\n二度と悪夢は見なくなる」と書いてありました。\
 
-  FLAG \xb6\x0f
-FOBL " \xf2\x02 \x02  \x03 \x025
+  FLAG \xb6\x0f\x0c\x02" \xf2\x02 \x02  \x03 \x025
 SCEN SCE232_009 \xd0\x13 \x02\xef! FLAG \x8c\x01FLAG\x02 @z\x01\x0c"\x03\xd3
  
 　宇宙人がいつもどおりになたねの身体にのしかかったとき、な\nたねはコッソリと枕の下に手を入れました。\p指の先に、眠る前に\n隠しておいた黒くて長い針がひんやりと触れました。@
@@ -77,9 +73,8 @@ SCEN SCE232_009 \xd0\x13 \x02\xef! FLAG \x8c\x01FLAG\x02 @z\x01\x0c"\x03\xd3
 　（いまだ！）@
 　えいやっ！\
 
-  FLAG \x14\x14
-FOBL " \xf2\x02 \x02  \x03 \x025  FLAG *
-FOBL "\x03\x06.\\Data\\Script\\Bg.Fobsv\x81\x1f\xb4\x17
+  FLAG \x14\x14\x0c\x02" \xf2\x02 \x02  \x03 \x025  FLAG *\x0c\x02"
+FOBT .\\Data\\Script\\Bg.Fobsv\x81\x1f\xb4\x17 \x02
 CMD1 BgOnsv\x81\x1f\xde\x17 \x025
 SCEN SCE232_010 \xfa\x17 \x02\xef! FLAG \x8c\x01FLAG\x02 Dz\x01\x0c"\x03\xa2
  
@@ -90,9 +85,7 @@ SCEN SCE232_010 \xfa\x17 \x02\xef! FLAG \x8c\x01FLAG\x02 Dz\x01\x0c"\x03\xa2
 \n　けれども、どこが変です。@
 　夢から覚めたというのに、なたねのパジャマの前ははだけたま\nま。\pからだはべとべとして、宇宙人がつけた唾の、いやな匂いが\nこびりついています。\pおそるおそる手を伸ばすと、いやらしいと\nころから、見たこともないねばねばした液があふれ出しています。\n\p　そして、開けっ放しの部屋のドアの向こうから、なにか奇妙な\n音が聞こえてくるではあいませんか！\
 
-  FLAG >\x18
-FOBL " \xf2\x02 \x02  \x03 \x025  FLAG \xc8
-FOBL " \xb4\x17
+  FLAG >\x18\x0c\x02" \xf2\x02 \x02  \x03 \x025  FLAG \xc8\x0c\x02" \xb4\x17 \x02
 CMD2 BgAutoFadeInsv\x81\x1f&\x1b \x025
 SCEN SCE232_011 J\x1b \x02\xef! FLAG \x8c\x01FLAG\x02 Hz\x01\x0c"\x03|
  
@@ -112,9 +105,7 @@ SCEN SCE232_011 J\x1b \x02\xef! FLAG \x8c\x01FLAG\x02 Hz\x01\x0c"\x03|
 　うめき声は、お義父さんの部屋から聞こえていました。@
 　なたねは思い切って、お義父さんの部屋のドアをばたん！　と\n　開きました。\
 
-  FLAG \x8e\x1b
-FOBL " \xf2\x02 \x02  \x03 \x025  FLAG \xcb
-FOBL " \xb4\x17 \x02 \xde\x17 \x025
+  FLAG \x8e\x1b\x0c\x02" \xf2\x02 \x02  \x03 \x025  FLAG \xcb\x0c\x02" \xb4\x17 \x02 \xde\x17 \x025
 SCEN SCE232_012 \xec\x1d \x02\xef! FLAG \x8c\x01FLAG\x02 Lz\x01\x0c"\x03f
  
 　そこには、宇宙人のゴムマスクを被ったお義父さんが立ってい\n　ました。@
@@ -126,6 +117,5 @@ SCEN SCE232_012 \xec\x1d \x02\xef! FLAG \x8c\x01FLAG\x02 Lz\x01\x0c"\x03f
 　あまりにもびっくりしたので、なたねのあたまはおかしくなっ\n　てしまいました。@
 　おしまい。\
 
-  FLAG 0\x1e
-FOBL " \xf2\x02 \x02  \x03 \x025 \xf2\x02 \x02
+  FLAG 0\x1e\x0c\x02" \xf2\x02 \x02  \x03 \x025 \xf2\x02 \x02
 SCEN TextClosev\x81\x1f\x0e  \x0256\xf1

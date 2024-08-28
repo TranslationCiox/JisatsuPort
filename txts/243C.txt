@@ -1,8 +1,8 @@
 START
-R4\x01`B#\x01X+  FLAG \n\x01
-FOBL "\x03\x06.\\Data\\Script\\Bgm.Fobv\x81\x1f 
-CMD1 PlayCD RUNF J \x025  FLAG \xc8
-FOBL "\x03\x06.\\Data\\Script\\Bg.Fobsv\x81\x1f\x80
+R4\x01`B#\x01X+  FLAG \n\x01\x0c\x02"
+FOBT .\\Data\\Script\\Bgm.Fobv\x81\x1f  \x02
+CMD1 PlayCD RUNF J \x025  FLAG \xc8\x0c\x02"
+FOBT .\\Data\\Script\\Bg.Fobsv\x81\x1f\x80 \x02
 CMD2 BgAutoFadeInsv\x81\x1f\xaa \x025
 SCEN SCE243_001 \xce \x02\xef! FLAG \x8c\x01FLAG\x02 P\x8b\x01\x0c"\x03c
  
@@ -13,8 +13,8 @@ SCEN SCE243_001 \xce \x02\xef! FLAG \x8c\x01FLAG\x02 P\x8b\x01\x0c"\x03c
 どんなものなのかわからないまま、彼らはそれを恐れてきた。@
 ただ、最終波動はひたすら、死のイメージだった。@
 死が定義不可能である以上、波動も同じく、理解の範疇の外にあ\nる。\p漠然とした恐怖ですべてを縛るものとして。\w\z
-  FLAG \x12\x01
-FOBL "\x03\x07.\\Data\\Script\\TextFunc.Fob RUNF \xbe\x02
+  FLAG \x12\x01\x0c\x02"
+WHAT .\\Data\\Script\\TextFunc.Fob RUNF \xbe\x02 \x02
 CMD1 TextOn RUNF \xec\x02 \x025
 SCEN SCE243_002 \x08\x03 \x02\xef! FLAG \x8c\x01FLAG\x02 T\x8b\x01\x0c"\x03W
  
@@ -23,9 +23,7 @@ SCEN SCE243_002 \x08\x03 \x02\xef! FLAG \x8c\x01FLAG\x02 T\x8b\x01\x0c"\x03W
 この壁の先に待っているものが拓司たちを守ってくれるようなも\nのなのか……\pあるいはそこにあるのかすら……わからない。@
 しかし、すでになすべきことはただひとつだった。@
 最終波動がやってくる前に壁を壊し、その向こうにあるものを見\nつけだすのだ。\w\z
-  FLAG L\x03
-FOBL " \xbe\x02 \x02 \xec\x02 \x025  FLAG 3
-FOBL " \x80 \x02 \xaa \x025
+  FLAG L\x03\x0c\x02" \xbe\x02 \x02 \xec\x02 \x025  FLAG 3\x0c\x02" \x80 \x02 \xaa \x025
 SCEN SCE243_003 \x16\x05 \x02\xef! FLAG \x8c\x01FLAG\x02 X\x8b\x01\x0c"\x03u
  
 /*▲SE15　２回再生（再生終了まで待つ）*/\a2,0,15,0,\a3,0,0,0,\a4,0,0,0,\a2,0,15,0,\a3,0,0,0,\a4,0,0,0,拓司たちは掘った。@
@@ -34,8 +32,7 @@ SCEN SCE243_003 \x16\x05 \x02\xef! FLAG \x8c\x01FLAG\x02 X\x8b\x01\x0c"\x03u
 低く、重く……それは世界の終末を確信させるに十分な不吉さを\n備えていた。@
 すべてのものがブルブルと振動し、輪郭が歪む。@
 天井から、パラパラとコンクリートの破片が落ちてくる。\w\z
-  FLAG Z\x05
-FOBL " \xbe\x02 \x02 \xec\x02 \x025
+  FLAG Z\x05\x0c\x02" \xbe\x02 \x02 \xec\x02 \x025
 SCEN SCE243_004 h\x07 \x02\xef! FLAG \x8c\x01FLAG\x02 \\\x8b\x01\x0c"\x03E
  
 カンナ\n　「虎菱くん、間に合わない！　間に合わないよ！」@
@@ -44,11 +41,8 @@ SCEN SCE243_004 h\x07 \x02\xef! FLAG \x8c\x01FLAG\x02 \\\x8b\x01\x0c"\x03E
 拓司\n　「どこに！」@
 カンナ\n　「どこかに！」@
 拓司\n　「どこかなんて、ない！　逃げ場所はない！　ここしかないん\n　　だ。\pここしか、ないんだ！」\w\z
-  FLAG \xac\x07
-FOBL " \xbe\x02 \x02 \xec\x02 \x025  FLAG \xc8
-FOBL " \x80 \x02 \xaa \x025  
-CMD1 StopCD RUNF :\t \x025  FLAG \x02
-FOBL "  
+  FLAG \xac\x07\x0c\x02" \xbe\x02 \x02 \xec\x02 \x025  FLAG \xc8\x0c\x02" \x80 \x02 \xaa \x025   \x02
+CMD1 StopCD RUNF :\t \x025  FLAG \x02\x0c\x02"   \x02
 CMD1 SeStop RUNF |\t \x025
 SCEN SCE243_005 \x98\t \x02\xef! FLAG \x8c\x01FLAG\x02 `\x8b\x01\x0c"\x03f
  
@@ -59,9 +53,7 @@ SCEN SCE243_005 \x98\t \x02\xef! FLAG \x8c\x01FLAG\x02 `\x8b\x01\x0c"\x03f
 爆風のように、すさまじい勢いで自分のなかをなにかが通り過ぎ\nたのがわかった。@
 それは、身体のなかをすり抜けていった。@
 細胞の隙間を縫うように奔り、身体を構成する肉すべてに毒を与\nえて通り過ぎていった。\p死という名の毒素を。\w\z
-  FLAG \xdc\t
-FOBL " \xbe\x02 \x02 \xec\x02 \x025  FLAG \x0b\x01
-FOBL "   \x02 J \x025
+  FLAG \xdc\t\x0c\x02" \xbe\x02 \x02 \xec\x02 \x025  FLAG \x0b\x01\x0c\x02"   \x02 J \x025
 SCEN SCE243_006 \xe2\x0b \x02\xef! FLAG \x8c\x01FLAG\x02 d\x8b\x01\x0c"\x03\x96
  
 /*▲SE33　再生（再生終了を待たず先へ進む）*/\a2,0,33,0,\a6,0,0,0,キイイイイイイイイイイイイイイイイイイイイイイイイイイイイ！\n\p\a6,0,0,0,\a4,0,0,0,\n拓司\n　「！」@
@@ -72,8 +64,7 @@ SCEN SCE243_006 \xe2\x0b \x02\xef! FLAG \x8c\x01FLAG\x02 d\x8b\x01\x0c"\x03\x96
 飛び散った破片は頭蓋骨の内側を反射して、反射して、反射した。\n\pどこにも出ていかなかった。@
 無限の反射のまっただ中に、新しい悲鳴がさらに雪崩のように流\nれ込んできては反射した。@
 頭そのものが爆発しないのが不思議だった。\w\z
-  FLAG &\x0c
-FOBL " \xbe\x02 \x02 \xec\x02 \x025
+  FLAG &\x0c\x0c\x02" \xbe\x02 \x02 \xec\x02 \x025
 SCEN SCE243_007 \xb8\x0e \x02\xef! FLAG \x8c\x01FLAG\x02 h\x8b\x01\x0c"\x03}
  
 拓司\n　「ああああああああああああ！」@
@@ -84,8 +75,7 @@ SCEN SCE243_007 \xb8\x0e \x02\xef! FLAG \x8c\x01FLAG\x02 h\x8b\x01\x0c"\x03}
 床にうずくまって身体を団子虫のように丸めたカンナは、自らの\n頭をガンガンと床にたたきつけていた。@
 やがてぐったりと仰向けに転がると、ぴくぴくと身体を痙攣させ\n始める。@
 白目をむき、耳から、鼻から、どす黒い血があふれ出している。\w\z
-  FLAG \xfc\x0e
-FOBL " \xbe\x02 \x02 \xec\x02 \x025
+  FLAG \xfc\x0e\x0c\x02" \xbe\x02 \x02 \xec\x02 \x025
 SCEN SCE243_008 *\x11 \x02\xef! FLAG \x8c\x01FLAG\x02 l\x8b\x01\x0c"\x03\x94
  
 拓司\n　「カ・ン・ナ・ア・アア・アアア・アアアア！」@
@@ -100,8 +90,7 @@ SCEN SCE243_008 *\x11 \x02\xef! FLAG \x8c\x01FLAG\x02 l\x8b\x01\x0c"\x03\x94
 もはやそれは、正体不明の怪物ではない。@
 いまだ歴然として怪物ではあるものの、すでに姿形はわかってい\nるのだ。@
 檻に閉じこめて、鎖に繋ぐことができる、ただの生き物でしかな\nいのだ。\w\z
-  FLAG n\x11
-FOBL " \xbe\x02 \x02 \xec\x02 \x025
+  FLAG n\x11\x0c\x02" \xbe\x02 \x02 \xec\x02 \x025
 SCEN SCE243_009 \xf8\x13 \x02\xef! FLAG \x8c\x01FLAG\x02 p\x8b\x01\x0c"\x03_
  
 あふれ出したカンナの物語。\pカンナの世界。\pそれは－－@
@@ -112,8 +101,7 @@ SCEN SCE243_009 \xf8\x13 \x02\xef! FLAG \x8c\x01FLAG\x02 p\x8b\x01\x0c"\x03_
 拓司は一歩踏み出した。@
 その足をじっと見つめ、そして反対側の足を前に出す。@
 そうして一歩……一歩……忘れてしまった歩き方を思い出すかの\nように、拓司はゆっくりと歩き始めた。\w\z
-  FLAG <\x14
-FOBL " \xbe\x02 \x02 \xec\x02 \x025
+  FLAG <\x14\x0c\x02" \xbe\x02 \x02 \xec\x02 \x025
 SCEN SCE243_010 \xf2\x15 \x02\xef! FLAG \x8c\x01FLAG\x02 t\x8b\x01\x0c"\x03o
  
 /*▲SE33　ループ再生*/\a2,2,33,0,\a6,0,0,0,キイイイイイイイイイイイイイイイイイイイイイイイイイイイイ\nイイイイイイイ！@
@@ -122,8 +110,7 @@ SCEN SCE243_010 \xf2\x15 \x02\xef! FLAG \x8c\x01FLAG\x02 t\x8b\x01\x0c"\x03o
 \nキイイイイイイイイイイイイイイイイイイイイイイイイイイイイ\nイイイイイイイ！@
 \nここから俺は始まるのだ。@
 \nキイイイイイイイイイイイイイイイイイイイイイイイイイイイイ\nイイイイイイイ！\w/*▲SE　停止*/\a4,2,0,0,\z
-  FLAG 6\x16
-FOBL " \xbe\x02 \x02 \xec\x02 \x025   \x02 :\t \x025
+  FLAG 6\x16\x0c\x02" \xbe\x02 \x02 \xec\x02 \x025   \x02 :\t \x025
 SCEN SCE243_011 F\x18 \x02\xef! FLAG \x8c\x01FLAG\x02 x\x8b\x01\x0c"\x03P
  
 こうして旅が始まったいま、俺にはいまや目的があるのだ。@
@@ -132,8 +119,7 @@ SCEN SCE243_011 F\x18 \x02\xef! FLAG \x8c\x01FLAG\x02 x\x8b\x01\x0c"\x03P
 振り返れば過去の自分がいる。@
 通り過ぎた風景がある。@
 そうして歩き続けることで、自分が常に新しい自分であることを\n知るのだ。\n考えるのではない。\n動くのだ。\w\z
-  FLAG \x8a\x18
-FOBL " \xbe\x02 \x02 \xec\x02 \x025
+  FLAG \x8a\x18\x0c\x02" \xbe\x02 \x02 \xec\x02 \x025
 SCEN SCE243_012 \x04\x1a \x02\xef! FLAG \x8c\x01FLAG\x02 |\x8b\x01\x0c"\x03b
  
 拓司\n　「カンナ！」@
@@ -143,9 +129,7 @@ SCEN SCE243_012 \x04\x1a \x02\xef! FLAG \x8c\x01FLAG\x02 |\x8b\x01\x0c"\x03b
 \n動かなくなったカンナの身体をきつく抱きしめていると、頭のな\nかでなにかがショートしたのを感じた。@
 腹の底から塊がこみあがってくる。@
 悲鳴にも、雄叫びにも似た、熱い塊がぐんぐんとせり上がってく\nる。\pそうして拓司は腹の底から哄笑を放った。\w\z
-  FLAG H\x1a
-FOBL " \xbe\x02 \x02 \xec\x02 \x025  FLAG 4
-FOBL " \x80 \x02 \xaa \x025
+  FLAG H\x1a\x0c\x02" \xbe\x02 \x02 \xec\x02 \x025  FLAG 4\x0c\x02" \x80 \x02 \xaa \x025
 SCEN SCE243_013 >\x1c \x02\xef! FLAG \x8c\x01FLAG\x02 \x80\x8b\x01\x0c"\x03U
  
 拓司\n　「勝った！」@
@@ -158,9 +142,7 @@ SCEN SCE243_013 >\x1c \x02\xef! FLAG \x8c\x01FLAG\x02 \x80\x8b\x01\x0c"\x03U
 ただ、自分の身体が分子にまで砕けて世界と一体化していくのを\n感じながら、拓司は思った。@
 俺は勝った。@
 勝ったんだ、と。\w\z
-  FLAG \x82\x1c
-FOBL " \xbe\x02 \x02 \xec\x02 \x025  FLAG \xc9
-FOBL " \x80 \x02 \xaa \x025
+  FLAG \x82\x1c\x0c\x02" \xbe\x02 \x02 \xec\x02 \x025  FLAG \xc9\x0c\x02" \x80 \x02 \xaa \x025
 SCEN SCE243_014 D\x1e \x02\xef! FLAG \x8c\x01FLAG\x02 \x84\x8b\x01\x0c"\x03}
  
 気がつくと、拓司は世界になっていた。@
@@ -172,9 +154,7 @@ SCEN SCE243_014 D\x1e \x02\xef! FLAG \x8c\x01FLAG\x02 \x84\x8b\x01\x0c"\x03}
 神妙な顔で、うん、と頷いてみせる。@
 拓司もまた、うん、と頷き、そして２人はするすると手を伸ばし\nていった。@
 ２人の手が触れると、見えない壁は、さらさらと砂のように崩れ\nて消えた。\w\z
-  FLAG \x88\x1e
-FOBL " \xbe\x02 \x02 \xec\x02 \x025  FLAG \x04\x01
-FOBL "   \x02 J \x025
+  FLAG \x88\x1e\x0c\x02" \xbe\x02 \x02 \xec\x02 \x025  FLAG \x04\x01\x0c\x02"   \x02 J \x025
 SCEN SCE243_015 \xea  \x02\xef! FLAG \x8c\x01FLAG\x02 \x88\x8b\x01\x0c"\x03\x97
  
 堰を切ったように、ひかりがあふれ出した。@
@@ -186,8 +166,7 @@ SCEN SCE243_015 \xea  \x02\xef! FLAG \x8c\x01FLAG\x02 \x88\x8b\x01\x0c"\x03\x97
 それらを構成する最小の粒子まで、拓司は見ることができた。@
 見る、というよりも感じた。@
 感じる、というより拓司はそれらと同じものになった。\w\z
-  FLAG .!
-FOBL " \xbe\x02 \x02 \xec\x02 \x025
+  FLAG .!\x0c\x02" \xbe\x02 \x02 \xec\x02 \x025
 SCEN SCE243_016 \xc4# \x02\xef! FLAG \x8c\x01FLAG\x02 \x8c\x8b\x01\x0c"\x03\xe0
  
 私とは万人であり、万人とは私だった。@
@@ -206,8 +185,7 @@ SCEN SCE243_016 \xc4# \x02\xef! FLAG \x8c\x01FLAG\x02 \x8c\x8b\x01\x0c"\x03\xe0
 さまざまな言葉が浮かんでは消えていった。@
 そこに意味などなかった。@
 しかし、それらはそれらそのもので、意味を越えた真理の塊だっ\nた。\w\z
-  FLAG \x08$
-FOBL " \xbe\x02 \x02 \xec\x02 \x025
+  FLAG \x08$\x0c\x02" \xbe\x02 \x02 \xec\x02 \x025
 SCEN SCE243_017 \xc2' \x02\xef! FLAG \x8c\x01FLAG\x02 \x90\x8b\x01\x0c"\x03\x8c
  
 カンナ\n　「……ゆきちゃん」@
@@ -222,11 +200,9 @@ SCEN SCE243_017 \xc2' \x02\xef! FLAG \x8c\x01FLAG\x02 \x90\x8b\x01\x0c"\x03\x8c
 俺には何が与えられるのだろう？@
 拓司はそれを見つめた。@
 じっと視線をそそぎ、それがひかりの中に自らの位置を占めるま\nで目を離さなかった。\w\z
-  FLAG \x06(
-FOBL " \xbe\x02 \x02 \xec\x02 \x025
+  FLAG \x06(\x0c\x02" \xbe\x02 \x02 \xec\x02 \x025
 SCEN SCE243_018 p* \x02\xef! FLAG \x8c\x01FLAG\x02 \x94\x8b\x01\x0c"\x03\x10
  
 いつしか、胸の中の黒いかたまりは静かに燃え尽きていた。\w\z
-  FLAG \xb4*
-FOBL " \xbe\x02 \x02 \xec\x02 \x025 \xbe\x02 \x02
+  FLAG \xb4*\x0c\x02" \xbe\x02 \x02 \xec\x02 \x025 \xbe\x02 \x02
 SCEN TextClosev\x81\x1f:+ \x0256\xf1

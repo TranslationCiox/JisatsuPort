@@ -11,8 +11,8 @@ SCEN SCE105_001 \x06 \x02\xef! FLAG \x8c\x01FLAG\x02 \xb0\xb3\x0c"\x03\xb7
 御堂\n　「まだ覚悟が決まらねえのかよ、虎菱？」@
 拓司\n　「覚悟？\p……それは誰かを殺してでも生き残るってことか？」\
 
-  FLAG J
-FOBL "\x03\x07.\\Data\\Script\\TextFunc.Fob RUNF F\x03
+  FLAG J\x0c\x02"
+WHAT .\\Data\\Script\\TextFunc.Fob RUNF F\x03 \x02
 CMD1 TextOn RUNF t\x03 \x025
 SCEN SCE105_002 \x90\x03 \x02\xef! FLAG \x8c\x01FLAG\x02 \xb4\xb3\x0c"\x03\x88
  
@@ -24,8 +24,7 @@ SCEN SCE105_002 \x90\x03 \x02\xef! FLAG \x8c\x01FLAG\x02 \xb4\xb3\x0c"\x03\x88
 頬の内側は、まるで砂漠みたいにカラカラだ。@
 拓司は舌先で唇を湿らせ、震える声でいった。\
 
-  FLAG \xd4\x03
-FOBL " F\x03 \x02 t\x03 \x025
+  FLAG \xd4\x03\x0c\x02" F\x03 \x02 t\x03 \x025
 SCEN SCE105_003 .\x06 \x02\xef! FLAG \x8c\x01FLAG\x02 \xb8\xb3\x0c"\x03q
  
 拓司\n　「……雲居さん。\p俺たちは……覚悟を……決めている。@
@@ -35,8 +34,7 @@ SCEN SCE105_003 .\x06 \x02\xef! FLAG \x8c\x01FLAG\x02 \xb8\xb3\x0c"\x03q
 なたね\n　「……」@
 \nなたねはジロリと、上目遣いに拓司を睨んだ。\
 
-  FLAG r\x06
-FOBL " F\x03 \x02 t\x03 \x025
+  FLAG r\x06\x0c\x02" F\x03 \x02 t\x03 \x025
 SCEN SCE105_004 p\x08 \x02\xef! FLAG \x8c\x01FLAG\x02 \xbc\xb3\x0c"\x03L
  
 なたね\n　「……」@
@@ -47,6 +45,5 @@ SCEN SCE105_004 p\x08 \x02\xef! FLAG \x8c\x01FLAG\x02 \xbc\xb3\x0c"\x03L
 ざー。@
 /*▲SE01　停止*/\a4,2,0,0,\nラジオのノイズだけが小さく一晩中続いていた。\
 
-  FLAG \xb4\x08
-FOBL " F\x03 \x02 t\x03 \x025 F\x03 \x02
+  FLAG \xb4\x08\x0c\x02" F\x03 \x02 t\x03 \x025 F\x03 \x02
 SCEN TextClosev\x81\x1f*\n \x0256\xf1

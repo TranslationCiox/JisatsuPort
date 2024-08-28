@@ -9,13 +9,12 @@ SCEN SCE209_001 \x06 \x02\xef! FLAG \x8c\x01FLAG\x02 0V\x01\x0c"\x03\xdc
 \n壮大な話である。@
 あるいは壮大な嘘というべきか？\
 
-  FLAG J
-FOBL "\x03\x07.\\Data\\Script\\TextFunc.Fob RUNF \xda\x03
+  FLAG J\x0c\x02"
+WHAT .\\Data\\Script\\TextFunc.Fob RUNF \xda\x03 \x02
 CMD1 TextOn RUNF \x08\x04 \x025\x03#
 CHOICE
 「『教授が語る世界』をリアルと信じる」\n「『学校に籠城する世界』をリアルと信じる」\n「『君の語る世界』をリアルと信じる」\n\l0,3,
 ENDCHOICE
 
-  FLAG $\x04
-FOBL " \xda\x03 \x02 \x08\x04 \x025 \xda\x03 \x02
+  FLAG $\x04\x0c\x02" \xda\x03 \x02 \x08\x04 \x025 \xda\x03 \x02
 SCEN TextClosev\x81\x1f\xf6\x04 \x0256\xf1

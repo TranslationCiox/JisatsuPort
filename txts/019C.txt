@@ -1,6 +1,6 @@
 START
-\xa3\n\x01`B#\x01d\x08  FLAG \x07\x01
-FOBL "\x03\x06.\\Data\\Script\\Bgm.Fobv\x81\x1f 
+\xa3\n\x01`B#\x01d\x08  FLAG \x07\x01\x0c\x02"
+FOBT .\\Data\\Script\\Bgm.Fobv\x81\x1f  \x02
 CMD1 PlayCD RUNF J \x025
 SCEN SCE019_001 f \x02\xef! FLAG \x8c\x01FLAG\x02 P-\x0c"\x03R
  
@@ -14,8 +14,8 @@ SCEN SCE019_001 f \x02\xef! FLAG \x8c\x01FLAG\x02 P-\x0c"\x03R
 拓司\n　「らしい」@
 \n　紅葉はナサケナイ、とため息をついた。\
 
-  FLAG \xaa
-FOBL "\x03\x07.\\Data\\Script\\TextFunc.Fob RUNF \x12\x02
+  FLAG \xaa\x0c\x02"
+WHAT .\\Data\\Script\\TextFunc.Fob RUNF \x12\x02 \x02
 CMD1 TextOn RUNF @\x02 \x025
 SCEN SCE019_002 \\\x02 \x02\xef! FLAG \x8c\x01FLAG\x02 T-\x0c"\x03L
  
@@ -27,9 +27,7 @@ SCEN SCE019_002 \\\x02 \x02\xef! FLAG \x8c\x01FLAG\x02 T-\x0c"\x03L
 拓司\n　「？」@
 紅葉\n　「……あ、いや、そのね！　ほら、アンタ今日、お昼ご飯どうす\n　　るのかな、って。\pもし購買のパンとかで済ませるつもりなら－\n　　－」\
 
-  FLAG \xa0\x02
-FOBL " \x12\x02 \x02 @\x02 \x025  FLAG \x08\x01
-FOBL "   \x02 J \x025
+  FLAG \xa0\x02\x0c\x02" \x12\x02 \x02 @\x02 \x025  FLAG \x08\x01\x0c\x02"   \x02 J \x025
 SCEN SCE019_003 >\x04 \x02\xef! FLAG \x8c\x01FLAG\x02 X-\x0c"\x03A
  
 ？？？\n　「－－おはよう」@
@@ -37,8 +35,7 @@ SCEN SCE019_003 >\x04 \x02\xef! FLAG \x8c\x01FLAG\x02 X-\x0c"\x03A
 ぎょっとして振り返ると、すぐ後ろにひとりの女の子がひっそ\nり立っている。@
 拓司はその少女の名前を知っていた。\
 
-  FLAG \x82\x04
-FOBL " \x12\x02 \x02 @\x02 \x025
+  FLAG \x82\x04\x0c\x02" \x12\x02 \x02 @\x02 \x025
 SCEN SCE019_004 \xc0\x05 \x02\xef! FLAG \x8c\x01FLAG\x02 \\-\x0c"\x03\x7f
  
 \n月代カンナ。@
@@ -52,6 +49,5 @@ SCEN SCE019_004 \xc0\x05 \x02\xef! FLAG \x8c\x01FLAG\x02 \\-\x0c"\x03\x7f
 \nしかし、それにしても－－拓司は思った。@
 \n－－どうして月代カンナはおれに声をかけてきたのだろう？\
 
-  FLAG \x04\x06
-FOBL " \x12\x02 \x02 @\x02 \x025 \x12\x02 \x02
+  FLAG \x04\x06\x0c\x02" \x12\x02 \x02 @\x02 \x025 \x12\x02 \x02
 SCEN TextClosev\x81\x1fF\x08 \x0256\xf1

@@ -9,8 +9,9 @@ SCEN SCE225_001 \x06 \x02\xef! FLAG \x8c\x01FLAG\x02 0o\x01\x0c"\x03m
 なにかはわからないが、おおきな契機とでもいうべきものが……\nくる。\pそんな確信があった。@
 すべてをうち崩すようななにかが、状況を粉々にするようななに\nかが、きっと起こる。\pそのときのために、俺はエネルギーを蓄積\nしなければならない。\pじっと耐えて、強烈な一撃を放つのだ……。\n\p拓司は野獣のように目を光らせて、無言だった。\
 
-  FLAG J
-FOBL "\x03\x07.\\Data\\Script\\TextFunc.Fob RUNF \x1e\x02
-CMD1 TextOn RUNF L\x02 \x025\x03\x06.\\Data\\Script\\Bgm.Fobv\x81\x1fh\x02
+  FLAG J\x0c\x02"
+WHAT .\\Data\\Script\\TextFunc.Fob RUNF \x1e\x02 \x02
+CMD1 TextOn RUNF L\x02 \x025
+FOBT .\\Data\\Script\\Bgm.Fobv\x81\x1fh\x02 \x02
 CMD1 StopCD RUNF \x92\x02 \x025 \x1e\x02 \x02
 SCEN TextClosev\x81\x1f\xba\x02 \x0256\xf1

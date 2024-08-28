@@ -8,8 +8,8 @@ SCEN SCE056_001 \x06 \x02\xef! FLAG \x8c\x01FLAG\x02  g\x0c"\x03J
 顔と髪は脂ぎって、てらてらと光っている。@
 怯えて眺める早桃の顔にも、明らかな嫌悪が浮かんでいる。\
 
-  FLAG J
-FOBL "\x03\x07.\\Data\\Script\\TextFunc.Fob RUNF \x92\x01
+  FLAG J\x0c\x02"
+WHAT .\\Data\\Script\\TextFunc.Fob RUNF \x92\x01 \x02
 CMD1 TextOn RUNF \xc0\x01 \x025
 SCEN SCE056_002 \xdc\x01 \x02\xef! FLAG \x8c\x01FLAG\x02 $g\x0c"\x03n
  
@@ -22,8 +22,7 @@ SCEN SCE056_002 \xdc\x01 \x02\xef! FLAG \x8c\x01FLAG\x02 $g\x0c"\x03n
 学生\n　「さあ、みんな！\p　いじめられっこ同士がいま結ばれるぞ！@
 　　じっくり観察しようじゃないか！」\
 
-  FLAG  \x02
-FOBL " \x92\x01 \x02 \xc0\x01 \x025
+  FLAG  \x02\x0c\x02" \x92\x01 \x02 \xc0\x01 \x025
 SCEN SCE056_003 \x12\x04 \x02\xef! FLAG \x8c\x01FLAG\x02 (g\x0c"\x03W
  
 太った少年は、早桃の顔をじっとのぞき込んだ。@
@@ -35,8 +34,7 @@ SCEN SCE056_003 \x12\x04 \x02\xef! FLAG \x8c\x01FLAG\x02 (g\x0c"\x03W
 トン吉\n　「キ、キスしようよ虎菱さん」@
 早桃\n　「い……いやっ！\p　やめて、やめてえっ！」\
 
-  FLAG V\x04
-FOBL " \x92\x01 \x02 \xc0\x01 \x025
+  FLAG V\x04\x0c\x02" \x92\x01 \x02 \xc0\x01 \x025
 SCEN SCE056_004 \xec\x05 \x02\xef! FLAG \x8c\x01FLAG\x02 ,g\x0c"\x03\x8e
  
 トン吉\n　「こんな形で残念だけど……き、君だって僕のことはキライじ\n　　ゃないはずだろ？\p　ぼ、僕たちならきっとお似合いのカップ\n　　ルになれるから……お互いの心の傷を分かり合えるから……\n　　はあ、はあ……さ、早桃お……」@
@@ -46,8 +44,7 @@ SCEN SCE056_004 \xec\x05 \x02\xef! FLAG \x8c\x01FLAG\x02 ,g\x0c"\x03\x8e
 \n弾かれたように少年が早桃から飛び退き、どしんと尻餅をついた。\n\p口に手を当てているところを見ると、どうやら噛みつかれたよう\nだ。@
 ２人を取り囲んだクラスの全員が、どっと笑い声を上げた。\
 
-  FLAG 0\x06
-FOBL " \x92\x01 \x02 \xc0\x01 \x025
+  FLAG 0\x06\x0c\x02" \x92\x01 \x02 \xc0\x01 \x025
 SCEN SCE056_005 \xa2\x08 \x02\xef! FLAG \x8c\x01FLAG\x02 0g\x0c"\x03c
  
 学生\n　「虎菱～！\p　ファーストキスにそりゃあんまりだろ～！」@
@@ -57,8 +54,7 @@ SCEN SCE056_005 \xa2\x08 \x02\xef! FLAG \x8c\x01FLAG\x02 0g\x0c"\x03c
 \n囃し立てる声を聞いて、少年の顔に殺気めいたものが宿った。@
 しかしその怒りはクラスメイトたちにではなく、早桃に……自分\nよりも弱い立場の人間へと向けられた。\
 
-  FLAG \xe6\x08
-FOBL " \x92\x01 \x02 \xc0\x01 \x025
+  FLAG \xe6\x08\x0c\x02" \x92\x01 \x02 \xc0\x01 \x025
 SCEN SCE056_006 \xac\n \x02\xef! FLAG \x8c\x01FLAG\x02 4g\x0c"\x03\xc5
  
 トン吉\n　「虎菱……お前まで俺のことバカにするのかッ？！\p　お前なら\n　　……クラスの嫌われ者のお前なら、俺のこと喜んで受け入れ\n　　るって思ったのに！\p　お前が消しゴム落としたときに拾って\n　　やったの忘れたのかよ！\p　お前をいじめた上村の机に鼠の死\n　　骸入れてやったのは俺なんだぞ！\p　お前みたいな……ゴミ女\n　　の水着だって盗んで使ってやったんだ！\p　わざわざ朝早く学\n　　校にきて、机の上に精液塗り広げてやったし、教科書に無修\n　　正写真挟んでやったり……全部お前のためにやったのにお前\n　　は俺を否定するのか、矛盾してるぞ恩知らずがッ！」@
@@ -67,8 +63,7 @@ SCEN SCE056_006 \xac\n \x02\xef! FLAG \x8c\x01FLAG\x02 4g\x0c"\x03\xc5
 せき込む早桃を見下ろして、少年は満足げに笑った。@
 そしてチャックをおろして、すでに固く反り返ったペ○スを露出\nさせる。\
 
-  FLAG \xf0\n
-FOBL " \x92\x01 \x02 \xc0\x01 \x025
+  FLAG \xf0\n\x0c\x02" \x92\x01 \x02 \xc0\x01 \x025
 SCEN SCE056_007 >\x0e \x02\xef! FLAG \x8c\x01FLAG\x02 8g\x0c"\x03b
  
 まわりを取り囲んだ学生たちが、おお、と低くどよめいた。@
@@ -78,9 +73,8 @@ SCEN SCE056_007 >\x0e \x02\xef! FLAG \x8c\x01FLAG\x02 8g\x0c"\x03b
 　　うげ～！」@
 学生\n　「豚のガキ孕まされるんだぜ？\p　人間としちゃ、生きてらんね\n　　えよなあ～、げらげら！」\
 
-  FLAG \x82\x0e
-FOBL " \x92\x01 \x02 \xc0\x01 \x025  FLAG V
-FOBL "\x03\x06.\\Data\\Script\\Bg.Fobsv\x81\x1f^\x10
+  FLAG \x82\x0e\x0c\x02" \x92\x01 \x02 \xc0\x01 \x025  FLAG V\x0c\x02"
+FOBT .\\Data\\Script\\Bg.Fobsv\x81\x1f^\x10 \x02
 CMD2 BgAutoFadeInsv\x81\x1f\x88\x10 \x025
 SCEN SCE056_008 \xac\x10 \x02\xef! FLAG \x8c\x01FLAG\x02 <g\x0c"\x03u
  
@@ -91,8 +85,7 @@ SCEN SCE056_008 \xac\x10 \x02\xef! FLAG \x8c\x01FLAG\x02 <g\x0c"\x03u
 無様な姿だ。@
 学生たちからも嘲笑がとぶが、少年は意に介する様子もなく、た\nだひたすら早桃の上で腰を上下させている。\
 
-  FLAG \xf0\x10
-FOBL " \x92\x01 \x02 \xc0\x01 \x025
+  FLAG \xf0\x10\x0c\x02" \x92\x01 \x02 \xc0\x01 \x025
 SCEN SCE056_009 \xfe\x12 \x02\xef! FLAG \x8c\x01FLAG\x02 @g\x0c"\x03\xb8
  
 トン吉\n　「はあ、はあ、メチャクチャにしてやる！\p　お前がバカにして\n　　いる男の汚い精液で、お前の子宮まで支配してやるからな！」\n\p早桃\n　「げほっ、げほっ！\p　や、やめて！」@
@@ -103,8 +96,7 @@ SCEN SCE056_009 \xfe\x12 \x02\xef! FLAG \x8c\x01FLAG\x02 @g\x0c"\x03\xb8
 早桃は無意識に、もっとも信頼する義兄の名前を口にしたのだ。@
 しかし拓司はなにもすることができない。\
 
-  FLAG B\x13
-FOBL " \x92\x01 \x02 \xc0\x01 \x025
+  FLAG B\x13\x0c\x02" \x92\x01 \x02 \xc0\x01 \x025
 SCEN SCE056_010 \\\x16 \x02\xef! FLAG \x8c\x01FLAG\x02 Dg\x0c"\x03\x86
  
 トン吉\n　「はあ、はあ……そうだ、こ、これから僕のことをおにいちゃ\n　　んって呼べよ！」@
@@ -116,8 +108,7 @@ SCEN SCE056_010 \\\x16 \x02\xef! FLAG \x8c\x01FLAG\x02 Dg\x0c"\x03\x86
 何発目かがうち下ろされたあと、ついに早桃がいった。@
 \n早桃\n　「……お……おにい……ちゃ……ん」\
 
-  FLAG \xa0\x16
-FOBL " \x92\x01 \x02 \xc0\x01 \x025
+  FLAG \xa0\x16\x0c\x02" \x92\x01 \x02 \xc0\x01 \x025
 SCEN SCE056_011 \xf2\x18 \x02\xef! FLAG \x8c\x01FLAG\x02 Hg\x0c"\x03k
  
 トン吉\n　「も、もう一回『おにいちゃん』っていって！\p　はあ、はあ、\n　　は、早くいえってば！」@
@@ -128,8 +119,7 @@ SCEN SCE056_011 \xf2\x18 \x02\xef! FLAG \x8c\x01FLAG\x02 Hg\x0c"\x03k
 \n途端、早桃に劇的な変化が訪れた。@
 身体をぶるぶると震わせて、抵抗がぱたりと止んだのだ。\
 
-  FLAG 6\x19
-FOBL " \x92\x01 \x02 \xc0\x01 \x025
+  FLAG 6\x19\x0c\x02" \x92\x01 \x02 \xc0\x01 \x025
 SCEN SCE056_012 \x1c\x1b \x02\xef! FLAG \x8c\x01FLAG\x02 Lg\x0c"\x03\xa4
  
 早桃\n　「儀式……身を清めて……死ねるための……儀式」@
@@ -140,9 +130,7 @@ SCEN SCE056_012 \x1c\x1b \x02\xef! FLAG \x8c\x01FLAG\x02 Lg\x0c"\x03\xa4
 トン吉\n　「そうかそうか！\p　も、もうすぐだからね！\p　もうすぐ大好き\n　　なおにいちゃんのどろどろのやつを、さ、早桃の制服にぶち\n　　まけてあげるからね！」@
 早桃\n　「ふうっ……うくっ……お、お願い……します……はあ……」\
 
-  FLAG `\x1b
-FOBL " \x92\x01 \x02 \xc0\x01 \x025  FLAG V
-FOBL " ^\x10 \x02 \x88\x10 \x025
+  FLAG `\x1b\x0c\x02" \x92\x01 \x02 \xc0\x01 \x025  FLAG V\x0c\x02" ^\x10 \x02 \x88\x10 \x025
 SCEN SCE056_013 ^\x1e \x02\xef! FLAG \x8c\x01FLAG\x02 Pg\x0c"\x03\xba
  
 平野\n　「好きだよ早桃！\p　おにいちゃん、お前のこと愛してるよぉ！@
@@ -155,8 +143,7 @@ SCEN SCE056_013 ^\x1e \x02\xef! FLAG \x8c\x01FLAG\x02 Pg\x0c"\x03\xba
 拓司は、めまいにも似たぐらつきを感じ、そして思った。@
 \n－－これは……現実ではないのではないか？\
 
-  FLAG \xa2\x1e
-FOBL " \x92\x01 \x02 \xc0\x01 \x025
+  FLAG \xa2\x1e\x0c\x02" \x92\x01 \x02 \xc0\x01 \x025
 SCEN SCE056_014 \xc4! \x02\xef! FLAG \x8c\x01FLAG\x02 Tg\x0c"\x03\x9b
  
 あの白い壁の世界がそうであったように、いま、自分は妄想の世\n界にいるのではないか？\p　自分でも気づかない間に、妄想世界に\n迷い込んで、そのなかで喘いでいるのではないか？　@
@@ -166,8 +153,7 @@ SCEN SCE056_014 \xc4! \x02\xef! FLAG \x8c\x01FLAG\x02 Tg\x0c"\x03\x9b
 早桃\n　「お……おにいちゃん、出して……」@
 トン吉\n　「い、淫乱妹め！」\
 
-  FLAG \x08"
-FOBL " \x92\x01 \x02 \xc0\x01 \x025
+  FLAG \x08"\x0c\x02" \x92\x01 \x02 \xc0\x01 \x025
 SCEN SCE056_015 \xae$ \x02\xef! FLAG \x8c\x01FLAG\x02 Xg\x0c"\x03s
  
 早桃\n　「おにいちゃんの精液をぶっかけて、淫乱な早桃の制服をおに\n　　いちゃんのおたまじゃくしでべとべとに汚してください」@
@@ -176,9 +162,7 @@ SCEN SCE056_015 \xae$ \x02\xef! FLAG \x8c\x01FLAG\x02 Xg\x0c"\x03s
 ビクビクと身体を震わせて、それからがっくりと力つきた。@
 それまで息を呑んで見守っていた学生たちが、一斉に拍手で囃し\n立てる。\
 
-  FLAG \xf2$
-FOBL " \x92\x01 \x02 \xc0\x01 \x025  FLAG \xc8
-FOBL " ^\x10 \x02 \x88\x10 \x025
+  FLAG \xf2$\x0c\x02" \x92\x01 \x02 \xc0\x01 \x025  FLAG \xc8\x0c\x02" ^\x10 \x02 \x88\x10 \x025
 SCEN SCE056_016 ,' \x02\xef! FLAG \x8c\x01FLAG\x02 \\g\x0c"\x03z
  
 学生\n　「おめでとう！」@
@@ -190,13 +174,11 @@ SCEN SCE056_016 ,' \x02\xef! FLAG \x8c\x01FLAG\x02 \\g\x0c"\x03z
 クラスメイト全員の前で性欲処理の道具にされ、スカートを汚さ\nれたのだ。\pショックを受けないほうがおかしい。@
 しかもさらに－－\
 
-  FLAG p'
-FOBL " \x92\x01 \x02 \xc0\x01 \x025
+  FLAG p'\x0c\x02" \x92\x01 \x02 \xc0\x01 \x025
 SCEN SCE056_017 \x92) \x02\xef! FLAG \x8c\x01FLAG\x02 `g\x0c"\x03.
  
 トン吉\n　「早桃……お、おにいちゃんのチ○ポ、お口できれいにしてく\n　　れよ」@
 早桃\n　「……はい。\pおにいちゃんのチ○ポ、早桃のおくちできれいに\n　　させてください……」\
 
-  FLAG \xd6)
-FOBL " \x92\x01 \x02 \xc0\x01 \x025 \x92\x01 \x02
+  FLAG \xd6)\x0c\x02" \x92\x01 \x02 \xc0\x01 \x025 \x92\x01 \x02
 SCEN TextClosev\x81\x1f\xd4* \x0256\xf1

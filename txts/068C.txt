@@ -8,8 +8,8 @@ SCEN SCE068_001 \x06 \x02\xef! FLAG \x8c\x01FLAG\x02 \xe0y\x0c"\x03\xec
 　　残された淘汰はなにかしら？\p　殺すことができない生き物が\n　　淘汰される方法は？」@
 拓司\n　「自ら……命を絶つこと」\
 
-  FLAG J
-FOBL "\x03\x07.\\Data\\Script\\TextFunc.Fob RUNF \x1a\x04
+  FLAG J\x0c\x02"
+WHAT .\\Data\\Script\\TextFunc.Fob RUNF \x1a\x04 \x02
 CMD1 TextOn RUNF H\x04 \x025
 SCEN SCE068_002 d\x04 \x02\xef! FLAG \x8c\x01FLAG\x02 \xe4y\x0c"\x03\xac
  
@@ -17,8 +17,7 @@ SCEN SCE068_002 d\x04 \x02\xef! FLAG \x8c\x01FLAG\x02 \xe4y\x0c"\x03\xac
 拓司\n　「……」@
 カンナ\n　「簡単でしょ？\p　イヌとか赤ちゃんの実験で照明されちゃうよ\n　　うなもの。\pその程度なの、あなたは。\pあなたにとって、死は\n　　その程度のもの。\pでも、私は違う！」\
 
-  FLAG \xa8\x04
-FOBL " \x1a\x04 \x02 H\x04 \x025
+  FLAG \xa8\x04\x0c\x02" \x1a\x04 \x02 H\x04 \x025
 SCEN SCE068_003 \x92\x07 \x02\xef! FLAG \x8c\x01FLAG\x02 \xe8y\x0c"\x03\xa4
  
 拓司\n　「……どう違うんだ？」@
@@ -27,9 +26,8 @@ SCEN SCE068_003 \x92\x07 \x02\xef! FLAG \x8c\x01FLAG\x02 \xe8y\x0c"\x03\xa4
 カンナ\n　「虎菱くん、あなた素敵よ。\p頭がいいわ。\pここに積み重なって\n　　る連中が考えているみたいに、数式とかイディオムを丸暗記\n　　するような頭の良さじゃなくて……もっと深い智恵が、あな\n　　たにはある。\pあなたは特別。\pだからあなたを選んだの。@
 　　決してあなたをバカにしているわけじゃないの。\pあなたの存\n　　在を認めているからこそ、あなたを選んだ……あッ！」\
 
-  FLAG \xd6\x07
-FOBL " \x1a\x04 \x02 H\x04 \x025  FLAG \xc8
-FOBL "\x03\x06.\\Data\\Script\\Bg.Fobsv\x81\x1f\xba\n
+  FLAG \xd6\x07\x0c\x02" \x1a\x04 \x02 H\x04 \x025  FLAG \xc8\x0c\x02"
+FOBT .\\Data\\Script\\Bg.Fobsv\x81\x1f\xba\n \x02
 CMD1 BgOnsv\x81\x1f\xe4\n \x025
 SCEN SCE068_004 \x0b \x02\xef! FLAG \x8c\x01FLAG\x02 \xecy\x0c"\x03f
  
@@ -41,8 +39,7 @@ SCEN SCE068_004 \x0b \x02\xef! FLAG \x8c\x01FLAG\x02 \xecy\x0c"\x03f
 拓司\n　「早桃ォ！　カンナァ！」@
 早桃\n　「あっ！」\
 
-  FLAG D\x0b
-FOBL " \x1a\x04 \x02 H\x04 \x025
+  FLAG D\x0b\x0c\x02" \x1a\x04 \x02 H\x04 \x025
 SCEN SCE068_005 \x16\r \x02\xef! FLAG \x8c\x01FLAG\x02 \xf0y\x0c"\x03~
  
 カンナと早桃は激しく山の頂上でもみ合っていたが、不安定な足\n場がそれに耐え得るはずもなく、あえなく２人は床に転げ落ちた。\n@
@@ -52,10 +49,9 @@ SCEN SCE068_005 \x16\r \x02\xef! FLAG \x8c\x01FLAG\x02 \xf0y\x0c"\x03~
 早桃\n　「やめて！　やめて！」@
 カンナ\n　「ちくしょおおおおおおおお！\p　うわあああああああ！」\
 
-  FLAG Z\r
-FOBL " \x1a\x04 \x02 H\x04 \x025\x03\x06.\\Data\\Script\\Bgm.Fobv\x81\x1f\x8c\x0f
-CMD1 StopCD RUNF \xb6\x0f \x025  FLAG \xc8
-FOBL " \xba\n
+  FLAG Z\r\x0c\x02" \x1a\x04 \x02 H\x04 \x025
+FOBT .\\Data\\Script\\Bgm.Fobv\x81\x1f\x8c\x0f \x02
+CMD1 StopCD RUNF \xb6\x0f \x025  FLAG \xc8\x0c\x02" \xba\n \x02
 CMD2 BgAutoFadeInsv\x81\x1f\xf8\x0f \x025
 SCEN SCE068_006 \x1c\x10 \x02\xef! FLAG \x8c\x01FLAG\x02 \xf4y\x0c"\x03\xa4
  
@@ -67,8 +63,7 @@ SCEN SCE068_006 \x1c\x10 \x02\xef! FLAG \x8c\x01FLAG\x02 \xf4y\x0c"\x03\xa4
 なたね\n　「あなたにもできるはずよ、虎菱くん」@
 拓司\n　「……ふざけるな」@
 \z
-  FLAG `\x10
-FOBL " \x1a\x04 \x02 H\x04 \x025
+  FLAG `\x10\x0c\x02" \x1a\x04 \x02 H\x04 \x025
 SCEN SCE068_007 *\x13 \x02\xef! FLAG \x8c\x01FLAG\x02 \xf8y\x0c"\x03\x8c
  
 なたね\n　「だってあなたもレジスタンスのひとりだから。\p目を開いて、\n　　状況を受け入れて。\pそうすれば、あなたにも善なる覚醒が－\n　　－」@
@@ -78,6 +73,5 @@ SCEN SCE068_007 *\x13 \x02\xef! FLAG \x8c\x01FLAG\x02 \xf8y\x0c"\x03\x8c
 \n沈黙が落ちた。\pしかし、それに浸っていられるほど、拓司たちに\n時間は残されていなかった。\p拓司はぐったりとしたカンナの身体\nを肩に担ぎあげて、いった。@
 \n拓司\n　「行こう。\p紅葉を助けに」\
 
-  FLAG n\x13
-FOBL " \x1a\x04 \x02 H\x04 \x025 \x1a\x04 \x02
+  FLAG n\x13\x0c\x02" \x1a\x04 \x02 H\x04 \x025 \x1a\x04 \x02
 SCEN TextClosev\x81\x1f\xe4\x15 \x0256\xf1

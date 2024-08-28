@@ -1,5 +1,6 @@
 START
-\xc3\n\x01`B#\x01\xcc\x08\x03\x06.\\Data\\Script\\Bgm.Fobv\x81\x1f\x06
+\xc3\n\x01`B#\x01\xcc\x08
+FOBT .\\Data\\Script\\Bgm.Fobv\x81\x1f\x06 \x02
 CMD1 StopCD RUNF 0 \x025
 SCEN SCE087_001 L \x02\xef! FLAG \x8c\x01FLAG\x02 \x90\x97\x0c"\x03\x9e
  
@@ -13,8 +14,8 @@ SCEN SCE087_001 L \x02\xef! FLAG \x8c\x01FLAG\x02 \x90\x97\x0c"\x03\x9e
 拓司\n　「ああ。\p紅葉も無事だ。\p……で、こりゃ一体何の真似だ？」@
 カンナ\n　「ああ、このピカピカね……コレよ」\
 
-  FLAG \x90
-FOBL "\x03\x07.\\Data\\Script\\TextFunc.Fob RUNF (\x03
+  FLAG \x90\x0c\x02"
+WHAT .\\Data\\Script\\TextFunc.Fob RUNF (\x03 \x02
 CMD1 TextOn RUNF V\x03 \x025
 SCEN SCE087_002 r\x03 \x02\xef! FLAG \x8c\x01FLAG\x02 \x94\x97\x0c"\x03{
  
@@ -27,8 +28,7 @@ SCEN SCE087_002 r\x03 \x02\xef! FLAG \x8c\x01FLAG\x02 \x94\x97\x0c"\x03{
 \n/*▲BGM　停止*/\a4,-1,0,0,なたね\n　「これがシェルターよ」@
 拓司\n　「まさか！」\
 
-  FLAG \xb6\x03
-FOBL " (\x03 \x02 V\x03 \x025
+  FLAG \xb6\x03\x0c\x02" (\x03 \x02 V\x03 \x025
 SCEN SCE087_003 \xdc\x05 \x02\xef! FLAG \x8c\x01FLAG\x02 \x98\x97\x0c"\x03\x92
  
 なたね\n　「気分を害さないで欲しいんだけれど、そう簡単にまさかとか、\n　　言って欲しくないの。\pだってこれは、私が死ぬ思いをしてや\n　　つらの円盤から盗み出してきた機密事項の結晶だから」@
@@ -37,6 +37,5 @@ SCEN SCE087_003 \xdc\x05 \x02\xef! FLAG \x8c\x01FLAG\x02 \x98\x97\x0c"\x03\x92
 拓司\n　「……」@
 なたね\n　「いい？\p　エンケリュスの自殺波動は、アルミホイルで防御す\n　　ることが－－」\
 
-  FLAG  \x06
-FOBL " (\x03 \x02 V\x03 \x025 (\x03 \x02
+  FLAG  \x06\x0c\x02" (\x03 \x02 V\x03 \x025 (\x03 \x02
 SCEN TextClosev\x81\x1f\xae\x08 \x0256\xf1

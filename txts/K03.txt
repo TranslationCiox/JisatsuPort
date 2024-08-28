@@ -5,8 +5,8 @@ SCEN SCEK03_001 \x06 \x02\xef! FLAG \x8c\x01FLAG\x02 0\xa6\x01\x0c"\x03O
 　つきあってみると、若草ゆきのいろいろなことがわかってき\nた。@
 海外文学に詳しかったり、才色兼備であることなどは知っていた\nけれど、\p意外にもホラー映画が好きだったり、\pケーキマニアだっ\nたり、\pマンガに詳しかったり……。@
 一番の驚きは、彼女もまた、女子校の空気に違和感を覚えていると\nいうことだった。\w\z
-  FLAG J
-FOBL "\x03\x07.\\Data\\Script\\TextFunc.Fob RUNF \xa6\x01
+  FLAG J\x0c\x02"
+WHAT .\\Data\\Script\\TextFunc.Fob RUNF \xa6\x01 \x02
 CMD1 TextOn RUNF \xd4\x01 \x025
 SCEN SCEK03_002 \xf0\x01 \x02\xef! FLAG \x8c\x01FLAG\x02 4\xa6\x01\x0c"\x03\xc5
  
@@ -18,13 +18,12 @@ SCEN SCEK03_002 \xf0\x01 \x02\xef! FLAG \x8c\x01FLAG\x02 4\xa6\x01\x0c"\x03\xc5
 彼女は、自分が女子校的な空気を完全に拒絶しているのではなく、\n『今回はたまたま拒絶したのだ』と見えるように、すべてをコント\nロールしていた。@
 こちらが世界を否定すれば、世界だってこちらを否定し返すという\nことを、彼女は理解していた。@
 学生としては器用すぎるやりかたで、若草ゆきは世界と折り合いを\nつけていたのだった。\w\z
-  FLAG 4\x02
-FOBL " \xa6\x01 \x02 \xd4\x01 \x025\x03\x1c
+  FLAG 4\x02\x0c\x02" \xa6\x01 \x02 \xd4\x01 \x025\x03\x1c
 CHOICE
 そうしたゆきのやり方は、卑怯な妥協だと思えた。\nそうしたゆきのやり方は、スマートだと思えた。\n\l0,2,
 ENDCHOICE
 
-  FLAG \x82\x05
-FOBL " \xa6\x01 \x02 \xd4\x01 \x025\x03\x06.\\Data\\Script\\Bgm.Fobv\x81\x1f,\x06
+  FLAG \x82\x05\x0c\x02" \xa6\x01 \x02 \xd4\x01 \x025
+FOBT .\\Data\\Script\\Bgm.Fobv\x81\x1f,\x06 \x02
 CMD1 StopCD RUNF V\x06 \x025 \xa6\x01 \x02
 SCEN TextClosev\x81\x1f~\x06 \x0256\xf1

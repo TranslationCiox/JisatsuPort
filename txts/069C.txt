@@ -1,18 +1,17 @@
 START
-\x1e\x04\x01\xa4\t3\x01\xac\x02  FLAG \t\x01
-FOBL "\x03\x06.\\Data\\Script\\Bgm.Fobv\x81\x1f 
+\x1e\x04\x01\xa4\t3\x01\xac\x02  FLAG \t\x01\x0c\x02"
+FOBT .\\Data\\Script\\Bgm.Fobv\x81\x1f  \x02
 CMD1 PlayCD RUNF J \x025
 SCEN SCE069_001 f \x02\xef! FLAG \x8c\x01FLAG\x02 p{\x0c"\x03.
  
 残るは紅葉だけだ。\p紅葉の教室……そこは拓司の教室でもあるわ\nけだが……は、旧校舎１階にある。\pここ、新校舎の２階から紅葉\nの教室まで進むには、いくつかのルートが考えられる。\
 
-  FLAG \xaa
-FOBL "\x03\x07.\\Data\\Script\\TextFunc.Fob RUNF \x82\x01
+  FLAG \xaa\x0c\x02"
+WHAT .\\Data\\Script\\TextFunc.Fob RUNF \x82\x01 \x02
 CMD1 TextOn RUNF \xb0\x01 \x025\x03 
 CHOICE
 １階までくだり、一度外に出て、中庭を通って旧校舎へ移動\n渡り廊下を通って旧校舎に移動。それから１階に向かう\n\l0,2,
 ENDCHOICE
 
-  FLAG \xcc\x01
-FOBL " \x82\x01 \x02 \xb0\x01 \x025 \x82\x01 \x02
+  FLAG \xcc\x01\x0c\x02" \x82\x01 \x02 \xb0\x01 \x025 \x82\x01 \x02
 SCEN TextClosev\x81\x1f\x8e\x02 \x0256\xf1

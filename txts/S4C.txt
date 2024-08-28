@@ -1,6 +1,6 @@
 START
-\x1a\x0b\x01`B#\x01>\t  FLAG \x04\x01
-FOBL "\x03\x06.\\Data\\Script\\Bgm.Fobv\x81\x1f 
+\x1a\x0b\x01`B#\x01>\t  FLAG \x04\x01\x0c\x02"
+FOBT .\\Data\\Script\\Bgm.Fobv\x81\x1f  \x02
 CMD1 PlayCD RUNF J \x025
 SCEN SCES04_001 f \x02\xef! FLAG \x8c\x01FLAG\x02 \xf8\xb5\x01\x0c"\x03\x99
  
@@ -13,8 +13,8 @@ SCEN SCES04_001 f \x02\xef! FLAG \x8c\x01FLAG\x02 \xf8\xb5\x01\x0c"\x03\x99
 でも、そういうふうに誘ってもらえるのは悪い気分じゃなかった。\n@
 そういうことをしばらく続けていると、どんどんお金が貯まって\nいった。\
 
-  FLAG \xaa
-FOBL "\x03\x07.\\Data\\Script\\TextFunc.Fob RUNF .\x03
+  FLAG \xaa\x0c\x02"
+WHAT .\\Data\\Script\\TextFunc.Fob RUNF .\x03 \x02
 CMD1 TextOn RUNF \\\x03 \x025
 SCEN SCES04_002 x\x03 \x02\xef! FLAG \x8c\x01FLAG\x02 \xfc\xb5\x01\x0c"\x03\xdd
  
@@ -31,14 +31,12 @@ SCEN SCES04_002 x\x03 \x02\xef! FLAG \x8c\x01FLAG\x02 \xfc\xb5\x01\x0c"\x03\xdd
 なあんだ、簡単じゃない。@
 そう思った。\
 
-  FLAG \xbc\x03
-FOBL " .\x03 \x02 \\\x03 \x025
+  FLAG \xbc\x03\x0c\x02" .\x03 \x02 \\\x03 \x025
 SCEN SCES04_003 j\x07 \x02\xef! FLAG \x8c\x01FLAG\x02 \xb6\x01\x0c"\x03A
  
 それから私はみんなにいろんなものをごちそうしたり、プレゼン\nトしたりしはじめた。@
 それで友情を買おうと思ったわけじゃないし、買えるとも思って\nなかった。\pでも、自己の価値は証明できるし、それこそが、私\nがずっと欲しくてたまらなかったものだったから。\
 
-  FLAG \xae\x07
-FOBL " .\x03 \x02 \\\x03 \x025  
+  FLAG \xae\x07\x0c\x02" .\x03 \x02 \\\x03 \x025   \x02
 CMD1 StopCD RUNF \xf8\x08 \x025 .\x03 \x02
 SCEN TextClosev\x81\x1f \t \x0256\xf1

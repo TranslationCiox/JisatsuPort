@@ -11,8 +11,8 @@ SCEN SCE222_001 \x06 \x02\xef! FLAG \x8c\x01FLAG\x02 \x80j\x01\x0c"\x03x
 なたねは機械的に口を動かし、それを嚥下した。@
 心の底をのぞき込むように、なたねは拓司の目をじっと見つめた。\n\pそしてひとこと、いった。\
 
-  FLAG J
-FOBL "\x03\x07.\\Data\\Script\\TextFunc.Fob RUNF J\x02
+  FLAG J\x0c\x02"
+WHAT .\\Data\\Script\\TextFunc.Fob RUNF J\x02 \x02
 CMD1 TextOn RUNF x\x02 \x025
 SCEN SCE222_002 \x94\x02 \x02\xef! FLAG \x8c\x01FLAG\x02 \x84j\x01\x0c"\x03O
  
@@ -26,6 +26,5 @@ SCEN SCE222_002 \x94\x02 \x02\xef! FLAG \x8c\x01FLAG\x02 \x84j\x01\x0c"\x03O
 \nそこまでいうとなたねはグルリと体を返し、拓司に背を向けた。@
 それっきり、なたねは一言も話そうとはしなかった。\
 
-  FLAG \xd8\x02
-FOBL " J\x02 \x02 x\x02 \x025 J\x02 \x02
+  FLAG \xd8\x02\x0c\x02" J\x02 \x02 x\x02 \x025 J\x02 \x02
 SCEN TextClosev\x81\x1fZ\x04 \x0256\xf1

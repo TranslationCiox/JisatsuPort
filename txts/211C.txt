@@ -13,8 +13,8 @@ SCEN SCE211_001 \x06 \x02\xef! FLAG \x8c\x01FLAG\x02 PY\x01\x0c"\x03\xae
 ナタネ\n　「……」@
 拓司\n　「おれはおれの世界に戻る」\
 
-  FLAG J
-FOBL "\x03\x07.\\Data\\Script\\TextFunc.Fob RUNF "\x03
+  FLAG J\x0c\x02"
+WHAT .\\Data\\Script\\TextFunc.Fob RUNF "\x03 \x02
 CMD1 TextOn RUNF P\x03 \x025
 SCEN SCE211_002 l\x03 \x02\xef! FLAG \x8c\x01FLAG\x02 TY\x01\x0c"\x03\x86
  
@@ -26,20 +26,18 @@ SCEN SCE211_002 l\x03 \x02\xef! FLAG \x8c\x01FLAG\x02 TY\x01\x0c"\x03\x86
 拓司\n　「ああ。\pこの世界が現実でも妄想でも……とにかくこの世界で\n　　の俺は終わる。\p目が覚めて別の場所にいれば、この世界が妄\n　　想だったということだ。\pこれでお終いなら、こここそが現実\n　　だったということになる」@
 ナタネ\n　「馬鹿なことはやめて」\
 
-  FLAG \xb0\x03
-FOBL " "\x03 \x02 P\x03 \x025
+  FLAG \xb0\x03\x0c\x02" "\x03 \x02 P\x03 \x025
 SCEN SCE211_003 \x02\x06 \x02\xef! FLAG \x8c\x01FLAG\x02 XY\x01\x0c"\x03I
  
 拓司\n　「ここが現実だったとしたら、俺は死んじまって、それを確認\n　　できないわけだが……それでもいい。\pもうこんなことはたく\n　　さんだ。\pいずれ終わらせなければならない。\pそれが、いまだ\n　　ってことだ」@
 \n拓司は息を止めた。@
 そして躊躇無く自分の下顎を、下から殴りつけた。\
 
-  FLAG F\x06
-FOBL " "\x03 \x02 P\x03 \x025  FLAG \x02
-FOBL "\x03\x06.\\Data\\Script\\Bgm.Fobv\x81\x1f\xbe\x07
-CMD1 SeStop RUNF \xe8\x07 \x025 "\x03 
-WAVL TextWindowOffDirect \x10\x08 \x025  FLAG \xc8
-FOBL "\x03\x06.\\Data\\Script\\Bg.Fobsv\x81\x1fR\x08
-CMD1 BgOnsv\x81\x1f|\x08 \x025 "\x03 
-WAVL TextWindowOnDirect RUNF \xa4\x08 \x025 "\x03 \x02
+  FLAG F\x06\x0c\x02" "\x03 \x02 P\x03 \x025  FLAG \x02\x0c\x02"
+FOBT .\\Data\\Script\\Bgm.Fobv\x81\x1f\xbe\x07 \x02
+CMD1 SeStop RUNF \xe8\x07 \x025 "\x03 \x02
+LOAD TextWindowOffDirect \x10\x08 \x025  FLAG \xc8\x0c\x02"
+FOBT .\\Data\\Script\\Bg.Fobsv\x81\x1fR\x08 \x02
+CMD1 BgOnsv\x81\x1f|\x08 \x025 "\x03 \x02
+LOAD TextWindowOnDirect RUNF \xa4\x08 \x025 "\x03 \x02
 SCEN TextClosev\x81\x1f\xd8\x08 \x0256\xf1

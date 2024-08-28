@@ -7,8 +7,8 @@ SCEN SCE006_001 \x06 \x02\xef! FLAG \x8c\x01FLAG\x02 \x19\x0c"\x03.
 拓司\n　「こんなこと、おれは望んじゃいない」@
 早桃\n　「いいんだよ。夢は現実に干渉しない。\pいつもの妄想だか\n　　ら」\
 
-  FLAG J
-FOBL "\x03\x07.\\Data\\Script\\TextFunc.Fob RUNF "\x01
+  FLAG J\x0c\x02"
+WHAT .\\Data\\Script\\TextFunc.Fob RUNF "\x01 \x02
 CMD1 TextOn RUNF P\x01 \x025
 SCEN SCE006_002 l\x01 \x02\xef! FLAG \x8c\x01FLAG\x02 \x04\x19\x0c"\x03\x98
  
@@ -22,8 +22,7 @@ SCEN SCE006_002 l\x01 \x02\xef! FLAG \x8c\x01FLAG\x02 \x04\x19\x0c"\x03\x98
 こんなにもいやらしいものを隠して、早桃は同じ家の\n中で暮らしてきたのだ。@
 早桃のくちびるのあいだに、ぬるっと、濡れ光る肉の塊がすべっ\nた。\n粘り着くような声が、そこからこぼれだした。\
 
-  FLAG \xb0\x01
-FOBL " "\x01 \x02 P\x01 \x025
+  FLAG \xb0\x01\x0c\x02" "\x01 \x02 P\x01 \x025
 SCEN SCE006_003 J\x04 \x02\xef! FLAG \x8c\x01FLAG\x02 \x08\x19\x0c"\x03C
  
 早桃\n　「見せっこ……しよ？\p　早桃にだけ出させるなんて、ずるい。@
@@ -31,12 +30,10 @@ SCEN SCE006_003 J\x04 \x02\xef! FLAG \x8c\x01FLAG\x02 \x08\x19\x0c"\x03C
 　　パパとママには絶対教えられないこと、一緒にしよう？@
 　　ね？」\
 
-  FLAG \x8e\x04
-FOBL " "\x01 \x02 P\x01 \x025\x03\x0c
+  FLAG \x8e\x04\x0c\x02" "\x01 \x02 P\x01 \x025\x03\x0c
 CHOICE
 「……消えろ」\n「……来いよ」\n\l0,2,
 ENDCHOICE
 
-  FLAG \xd4\x05
-FOBL " "\x01 \x02 P\x01 \x025 "\x01 \x02
+  FLAG \xd4\x05\x0c\x02" "\x01 \x02 P\x01 \x025 "\x01 \x02
 SCEN TextClosev\x81\x1fJ\x06 \x0256\xf1

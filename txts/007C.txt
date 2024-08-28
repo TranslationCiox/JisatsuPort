@@ -12,10 +12,10 @@ SCEN SCE007_001 \x06 \x02\xef! FLAG \x8c\x01FLAG\x02 \x90\x1a\x0c"\x03s
 ない。@
 ない。\
 
-  FLAG J
-FOBL "\x03\x07.\\Data\\Script\\TextFunc.Fob RUNF 6\x02
-CMD1 TextOn RUNF d\x02 \x025  FLAG J
-FOBL "\x03\x06.\\Data\\Script\\Bg.Fobsv\x81\x1f\x9a\x02
+  FLAG J\x0c\x02"
+WHAT .\\Data\\Script\\TextFunc.Fob RUNF 6\x02 \x02
+CMD1 TextOn RUNF d\x02 \x025  FLAG J\x0c\x02"
+FOBT .\\Data\\Script\\Bg.Fobsv\x81\x1f\x9a\x02 \x02
 CMD2 BgAutoFadeInsv\x81\x1f\xc4\x02 \x025
 SCEN SCE007_002 \xe8\x02 \x02\xef! FLAG \x8c\x01FLAG\x02 \x94\x1a\x0c"\x03\xab
  
@@ -33,8 +33,7 @@ SCEN SCE007_002 \xe8\x02 \x02\xef! FLAG \x8c\x01FLAG\x02 \x94\x1a\x0c"\x03\xab
 ゆっくりと、上下にしごき始める。@
 コットンの柔らかい感触と、義妹の指の刺激に、拓司の息が一気\nに荒くなる。\
 
-  FLAG ,\x03
-FOBL " 6\x02 \x02 d\x02 \x025
+  FLAG ,\x03\x0c\x02" 6\x02 \x02 d\x02 \x025
 SCEN SCE007_003 \x12\x06 \x02\xef! FLAG \x8c\x01FLAG\x02 \x98\x1a\x0c"\x03q
  
 拓司\n　「……早桃」@
@@ -44,13 +43,11 @@ SCEN SCE007_003 \x12\x06 \x02\xef! FLAG \x8c\x01FLAG\x02 \x98\x1a\x0c"\x03q
 　　ママとパパに見つからないところで、おにいちゃんがしたい\n　　ときに。@
 　　お風呂で。\pトイレで。\pおこたのなかで。\pおにいちゃんの机の\n　　下で。\p早桃のクローゼットのなかで……」\
 
-  FLAG V\x06
-FOBL " 6\x02 \x02 d\x02 \x025
+  FLAG V\x06\x0c\x02" 6\x02 \x02 d\x02 \x025
 SCEN SCE007_004 T\x08 \x02\xef! FLAG \x8c\x01FLAG\x02 \x9c\x1a\x0c"\x03"
  
 ぺちゃぺちゃと唾液が絡んだようなしゃべりかたで早桃は続ける。\n\p性器に指を絡めて奉仕しながらみだらな言葉で義兄の興奮を誘う。\n\w\z
-  FLAG \x98\x08
-FOBL " 6\x02 \x02 d\x02 \x025
+  FLAG \x98\x08\x0c\x02" 6\x02 \x02 d\x02 \x025
 SCEN SCE007_005 Z\t \x02\xef! FLAG \x8c\x01FLAG\x02 \xa0\x1a\x0c"\x03\x8d
  
 早桃\n　「もうオナニーなんてする必要ないよ。\pエッチな本も買わな\n　　くていい。@
@@ -61,8 +58,7 @@ SCEN SCE007_005 Z\t \x02\xef! FLAG \x8c\x01FLAG\x02 \xa0\x1a\x0c"\x03\x8d
 　　……よかったねぇ、おにいちゃん。\pこんなにエッチな義妹\n　　がいて。@
 　　あんまりいないと思うよ、こんなふうに、性欲処理してくれ\n　　る義妹って。」\
 
-  FLAG \x9e\t
-FOBL " 6\x02 \x02 d\x02 \x025
+  FLAG \x9e\t\x0c\x02" 6\x02 \x02 d\x02 \x025
 SCEN SCE007_006 \x0c\x0c \x02\xef! FLAG \x8c\x01FLAG\x02 \xa4\x1a\x0c"\x03}
  
 拓司\n　「う……早桃」@
@@ -74,8 +70,7 @@ SCEN SCE007_006 \x0c\x0c \x02\xef! FLAG \x8c\x01FLAG\x02 \xa4\x1a\x0c"\x03}
 精液で汚されたパンティを、見せつけるように広げる。@
 ちょうどクロッチの部分に、たっぷりと、精液が溜まっている。\
 
-  FLAG P\x0c
-FOBL " 6\x02 \x02 d\x02 \x025
+  FLAG P\x0c\x0c\x02" 6\x02 \x02 d\x02 \x025
 SCEN SCE007_007 ~\x0e \x02\xef! FLAG \x8c\x01FLAG\x02 \xa8\x1a\x0c"\x03\xaf
  
 早桃\n　「こんなにいっぱい。\pおにいちゃん、すごく溜まってたんだ\n　　ねえ。\p義妹の前でこんなにどくどく精液出しちゃって……\n　　恥ずかしくないの？\p　くすくす……」@
@@ -86,8 +81,7 @@ SCEN SCE007_007 ~\x0e \x02\xef! FLAG \x8c\x01FLAG\x02 \xa8\x1a\x0c"\x03\xaf
 クロッチにできたたっぷりとした精液だまりをこぼさないよう、\nあるいは義兄に見せつけるよう、そろり、そろりとパンティを\nひきあげていく。@
 パンティと手はネグリジェの裾に再び消え、そして手だけが裾\nから引き出された。\
 
-  FLAG \xc2\x0e
-FOBL " 6\x02 \x02 d\x02 \x025
+  FLAG \xc2\x0e\x0c\x02" 6\x02 \x02 d\x02 \x025
 SCEN SCE007_008 \xb8\x11 \x02\xef! FLAG \x8c\x01FLAG\x02 \xac\x1a\x0c"\x03u
  
 早桃\n　「んくっ……はあ……穿き終わったよ。\pおにいちゃんの精液、\n　　いま、早桃のパンティとおま○このあいだに、べったりひっ\n　　ついてるよ。\pぬるぬるして、あったかい。@
@@ -96,8 +90,7 @@ SCEN SCE007_008 \xb8\x11 \x02\xef! FLAG \x8c\x01FLAG\x02 \xac\x1a\x0c"\x03u
 早桃\n　「見たいの？」@
 拓司\n　「ああ……見たい」\
 
-  FLAG \xfc\x11
-FOBL " 6\x02 \x02 d\x02 \x025
+  FLAG \xfc\x11\x0c\x02" 6\x02 \x02 d\x02 \x025
 SCEN SCE007_009 \n\x14 \x02\xef! FLAG \x8c\x01FLAG\x02 \xb0\x1a\x0c"\x03p
  
 早桃\n　「ほんと、いやらしいおにいちゃん。\pもしかして、いつも早\n　　桃のパンティ、オカズにしてたの？\p　おち○ちんをこすりつ\n　　けて、汚してたの？\p　精子いっぱい出して、それを何も知ら\n　　ない義妹に穿かせて興奮してたの？@
@@ -105,8 +98,7 @@ SCEN SCE007_009 \n\x14 \x02\xef! FLAG \x8c\x01FLAG\x02 \xb0\x1a\x0c"\x03p
 　　おにいちゃんの精液がしみ込んだパンティ穿いてたから、こ\n　　んなにエッチになっちゃったんだ……@
 　　いいよ。\p見せてあげる」\
 
-  FLAG N\x14
-FOBL " 6\x02 \x02 d\x02 \x025
+  FLAG N\x14\x0c\x02" 6\x02 \x02 d\x02 \x025
 SCEN SCE007_010 H\x16 \x02\xef! FLAG \x8c\x01FLAG\x02 \xb4\x1a\x0c"\x03l
  
 早桃は拓司をまたいだまま、二、三歩ベッドの上を歩くと、今度\nは義兄の首のあたりで腰を下ろして、膝立ちになった。@
@@ -118,8 +110,7 @@ SCEN SCE007_010 H\x16 \x02\xef! FLAG \x8c\x01FLAG\x02 \xb4\x1a\x0c"\x03l
 べったりと、クロッチに薄黄色い染みができている。@
 精液の匂いと、早桃の体温がむっと鼻をつく。\
 
-  FLAG \x8c\x16
-FOBL " 6\x02 \x02 d\x02 \x025
+  FLAG \x8c\x16\x0c\x02" 6\x02 \x02 d\x02 \x025
 SCEN SCE007_011 v\x18 \x02\xef! FLAG \x8c\x01FLAG\x02 \xb8\x1a\x0c"\x03\x99
  
 早桃\n　「ずっと見たかったんでしょう？\p　早桃のここ。@
@@ -132,8 +123,7 @@ SCEN SCE007_011 v\x18 \x02\xef! FLAG \x8c\x01FLAG\x02 \xb8\x1a\x0c"\x03\x99
 そのまま、精液でじっとりと湿った性器を、クロッチの上からこ\nすりたてる。@
 にちゃにちゃと精液が泡立つ音がする。\
 
-  FLAG \xba\x18
-FOBL " 6\x02 \x02 d\x02 \x025
+  FLAG \xba\x18\x0c\x02" 6\x02 \x02 d\x02 \x025
 SCEN SCE007_012 X\x1b \x02\xef! FLAG \x8c\x01FLAG\x02 \xbc\x1a\x0c"\x03`
  
 早桃\n　「はあ、はあ……ねえ、おにいちゃんのパンツも頂戴」@
@@ -142,9 +132,7 @@ SCEN SCE007_012 X\x1b \x02\xef! FLAG \x8c\x01FLAG\x02 \xbc\x1a\x0c"\x03`
 義兄からブリーフを受け取ると、それを鼻先に持っていき、くん\nくんと匂いを嗅いだ。@
 嗅ぎながら、開いている方の手で、再び股間をいじり始める。\
 
-  FLAG \x9c\x1b
-FOBL " 6\x02 \x02 d\x02 \x025  FLAG K
-FOBL " \x9a\x02 \x02 \xc4\x02 \x025
+  FLAG \x9c\x1b\x0c\x02" 6\x02 \x02 d\x02 \x025  FLAG K\x0c\x02" \x9a\x02 \x02 \xc4\x02 \x025
 SCEN SCE007_013 \x8a\x1d \x02\xef! FLAG \x8c\x01FLAG\x02 \xc0\x1a\x0c"\x03x
  
 早桃\n　「すごい匂い……。\p早桃も、おにいちゃんのパンツでオナ\n　　ニーしてたんだよ。\p知ってた？@
@@ -154,8 +142,7 @@ SCEN SCE007_013 \x8a\x1d \x02\xef! FLAG \x8c\x01FLAG\x02 \xc0\x1a\x0c"\x03x
 拓司は義妹の開いた太股のあいだを通して自分のペ○スを握り、\nしごき始めた。@
 \n早桃\n　「……ぺちゃ…ぺちゃ…ぢゅるっ……ぢゅりゅりゅっ……」\
 
-  FLAG \xce\x1d
-FOBL " 6\x02 \x02 d\x02 \x025
+  FLAG \xce\x1d\x0c\x02" 6\x02 \x02 d\x02 \x025
 SCEN SCE007_014 \xe8\x1f \x02\xef! FLAG \x8c\x01FLAG\x02 \xc4\x1a\x0c"\x03T
  
 義妹が自分のブリーフを口に入れて、しゃぶっている。@
@@ -164,8 +151,7 @@ SCEN SCE007_014 \xe8\x1f \x02\xef! FLAG \x8c\x01FLAG\x02 \xc4\x1a\x0c"\x03T
 パンティの隙間から精液がトロトロあふれて、細い指に絡まって\n糸を引く。@
 太股の付け根が精液でぬるぬると光っている。\
 
-  FLAG , 
-FOBL " 6\x02 \x02 d\x02 \x025
+  FLAG , \x0c\x02" 6\x02 \x02 d\x02 \x025
 SCEN SCE007_015 \xb6! \x02\xef! FLAG \x8c\x01FLAG\x02 \xc8\x1a\x0c"\x03\x8d
  
 早桃\n　「おにいちゃんと早桃、変態義兄妹だよね……」@
@@ -178,8 +164,7 @@ SCEN SCE007_015 \xb6! \x02\xef! FLAG \x8c\x01FLAG\x02 \xc8\x1a\x0c"\x03\x8d
 \n拓司の腰が跳ね上がり、二回目とは思えない量の精液が迸った。@
 精液は弧を描いて飛び、腰まで伸びた早桃の髪の毛をべったりと\n汚した。\
 
-  FLAG \xfa!
-FOBL " 6\x02 \x02 d\x02 \x025
+  FLAG \xfa!\x0c\x02" 6\x02 \x02 d\x02 \x025
 SCEN SCE007_016 h$ \x02\xef! FLAG \x8c\x01FLAG\x02 \xcc\x1a\x0c"\x03\x9c
  
 早桃\n　「いくらでも出るんだね。\pからだ、おかしいんじゃないの？\n　　\pほんとうは赤ちゃんを作るための液で、こんなふうに女の\n　　子にひっかけるためのものじゃないんだよ？@
@@ -191,8 +176,7 @@ SCEN SCE007_016 h$ \x02\xef! FLAG \x8c\x01FLAG\x02 \xcc\x1a\x0c"\x03\x9c
 \n早桃が小さく笑った。@
 徐々に笑い声が大きくなっていく。\
 
-  FLAG \xac$
-FOBL " 6\x02 \x02 d\x02 \x025
+  FLAG \xac$\x0c\x02" 6\x02 \x02 d\x02 \x025
 SCEN SCE007_017 V' \x02\xef! FLAG \x8c\x01FLAG\x02 \xd0\x1a\x0c"\x03\xb4
  
 拓司\n　「……やめろ」@
@@ -206,9 +190,8 @@ SCEN SCE007_017 V' \x02\xef! FLAG \x8c\x01FLAG\x02 \xd0\x1a\x0c"\x03\xb4
 『灰色』にあわせて、最後にはさながら踊っているかのごとく、\n早桃は身体をくねらせ始めた。@
 \n早桃\n　「ウワハハハハハハハザザザ……ザザッ……ザアザザザ……ザ\n　　アアアアア……ザアザアアアアアアア……」\
 
-  FLAG \x9a'
-FOBL " 6\x02 \x02 d\x02 \x025  FLAG \xc8
-FOBL " \x9a\x02 \x02 \xc4\x02 \x025\x03\x06.\\Data\\Script\\Bgm.Fobv\x81\x1f\xd8*
+  FLAG \x9a'\x0c\x02" 6\x02 \x02 d\x02 \x025  FLAG \xc8\x0c\x02" \x9a\x02 \x02 \xc4\x02 \x025
+FOBT .\\Data\\Script\\Bgm.Fobv\x81\x1f\xd8* \x02
 CMD1 StopCD RUNF \x02+ \x025
 SCEN SCE007_018 \x1e+ \x02\xef! FLAG \x8c\x01FLAG\x02 \xd4\x1a\x0c"\x03L
  
@@ -224,6 +207,5 @@ SCEN SCE007_018 \x1e+ \x02\xef! FLAG \x8c\x01FLAG\x02 \xd4\x1a\x0c"\x03L
 \n現実に戻ったのだ。@
 おそらくは。\
 
-  FLAG b+
-FOBL " 6\x02 \x02 d\x02 \x025 6\x02 \x02
+  FLAG b+\x0c\x02" 6\x02 \x02 d\x02 \x025 6\x02 \x02
 SCEN TextClosev\x81\x1f\xd8, \x0256\xf1

@@ -13,7 +13,7 @@ SCEN SCE059_001 \x06 \x02\xef! FLAG \x8c\x01FLAG\x02 \xd0k\x0c"\x03z
 \nなたねに目で合図を送って、拓司は後ろを向いた。@
 早桃は何を隠しているのだろうか？\
 
-  FLAG J
-FOBL "\x03\x07.\\Data\\Script\\TextFunc.Fob RUNF R\x02
+  FLAG J\x0c\x02"
+WHAT .\\Data\\Script\\TextFunc.Fob RUNF R\x02 \x02
 CMD1 TextOn RUNF \x80\x02 \x025 R\x02 \x02
 SCEN TextClosev\x81\x1f\xa8\x02 \x0256\xf1

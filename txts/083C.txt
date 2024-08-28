@@ -5,8 +5,8 @@ SCEN SCE083_001 \x06 \x02\xef! FLAG \x8c\x01FLAG\x02 P\x91\x0c"\x03=
 拓司は枕元に掛けられている鳥かごをのぞき込んだ。@
 なんという種類かはわからないが、どこかで見たことがあるよう\nな、いかにも普通の小鳥だ。@
 ただ、色だけがウソのように青く鮮やかで、屋台で売っているペ\nンキで着色されたヒヨコを思わせる。\w\z
-  FLAG J
-FOBL "\x03\x07.\\Data\\Script\\TextFunc.Fob RUNF ^\x01
+  FLAG J\x0c\x02"
+WHAT .\\Data\\Script\\TextFunc.Fob RUNF ^\x01 \x02
 CMD1 TextOn RUNF \x8c\x01 \x025
 SCEN SCE083_002 \xa8\x01 \x02\xef! FLAG \x8c\x01FLAG\x02 T\x91\x0c"\x03s
  
@@ -19,8 +19,7 @@ SCEN SCE083_002 \xa8\x01 \x02\xef! FLAG \x8c\x01FLAG\x02 T\x91\x0c"\x03s
 　　無意識に、君の注意をその鳥に向けさせたのかもしれないぞ\n　　？」@
 \nねばりつくようないいかただった。@
 見れば教授の額には、ちいさな汗が滲んでいる。\w\z
-  FLAG \xec\x01
-FOBL " ^\x01 \x02 \x8c\x01 \x025
+  FLAG \xec\x01\x0c\x02" ^\x01 \x02 \x8c\x01 \x025
 SCEN SCE083_003 \xf2\x03 \x02\xef! FLAG \x8c\x01FLAG\x02 X\x91\x0c"\x03g
  
 拓司\n　「……なにかこの鳥が、俺の過去に関係あるんですか？」@
@@ -30,8 +29,7 @@ SCEN SCE083_003 \xf2\x03 \x02\xef! FLAG \x8c\x01FLAG\x02 X\x91\x0c"\x03g
 教授が目で合図を送ると、看護婦は拘束着の女の子を連れて部屋\nから退出した。@
 しめきられた白い部屋には、拓司と教授、２人だけが向かい合っ\nて残された。@
 長い沈黙の後、教授が口を開いた。\w\z
-  FLAG 6\x04
-FOBL " ^\x01 \x02 \x8c\x01 \x025
+  FLAG 6\x04\x0c\x02" ^\x01 \x02 \x8c\x01 \x025
 SCEN SCE083_004 \x0c\x06 \x02\xef! FLAG \x8c\x01FLAG\x02 \\\x91\x0c"\x03\x87
  
 教授\n　「……その鳥はね、ありえない鳥なんだよ」@
@@ -45,8 +43,7 @@ SCEN SCE083_004 \x0c\x06 \x02\xef! FLAG \x8c\x01FLAG\x02 \\\x91\x0c"\x03\x87
 拓司\n　「意味が分かりません」@
 \n頭の奥が、ずきんと痛んだ。@
 その痛みは急速に大きく膨れ上がり、すぐに拓司の頭のなかいっ\nぱいに広がった。\w\z
-  FLAG P\x06
-FOBL " ^\x01 \x02 \x8c\x01 \x025
+  FLAG P\x06\x0c\x02" ^\x01 \x02 \x8c\x01 \x025
 SCEN SCE083_005 \xa6\x08 \x02\xef! FLAG \x8c\x01FLAG\x02 `\x91\x0c"\x03c
  
 拓司\n　「意味が……わからない」@
@@ -57,9 +54,8 @@ SCEN SCE083_005 \xa6\x08 \x02\xef! FLAG \x8c\x01FLAG\x02 `\x91\x0c"\x03c
 教授\n　「きみがわからなければ、他の誰にもわかるはずがないッ！@
 　　いいかね、これは、新しい生き物なんだよ！@
 　　あらゆる生物学から外れた……神が作ったこの世界の生物な\n　　らぬ……なにかだッ！」\w\z
-  FLAG \xea\x08
-FOBL " ^\x01 \x02 \x8c\x01 \x025  FLAG \xca
-FOBL "\x03\x06.\\Data\\Script\\Bg.Fobsv\x81\x1f\xca\n
+  FLAG \xea\x08\x0c\x02" ^\x01 \x02 \x8c\x01 \x025  FLAG \xca\x0c\x02"
+FOBT .\\Data\\Script\\Bg.Fobsv\x81\x1f\xca\n \x02
 CMD2 BgAutoFadeInsv\x81\x1f\xf4\n \x025
 SCEN SCE083_006 \x18\x0b \x02\xef! FLAG \x8c\x01FLAG\x02 d\x91\x0c"\x03T
  
@@ -70,7 +66,5 @@ SCEN SCE083_006 \x18\x0b \x02\xef! FLAG \x8c\x01FLAG\x02 d\x91\x0c"\x03T
 \n　ザザザザザザザザザザ@
 \n教授\n　「おまえは誰だ？！　何者なんだ？！　お前は－－」@
 \nスイッチを落としたように、目の前が真っ暗になった。\w\z
-  FLAG \\\x0b
-FOBL " ^\x01 \x02 \x8c\x01 \x025  FLAG \xc8
-FOBL " \xca\n \x02 \xf4\n \x025 ^\x01 \x02
+  FLAG \\\x0b\x0c\x02" ^\x01 \x02 \x8c\x01 \x025  FLAG \xc8\x0c\x02" \xca\n \x02 \xf4\n \x025 ^\x01 \x02
 SCEN TextClosev\x81\x1f&\r \x0256\xf1

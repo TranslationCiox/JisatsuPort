@@ -1,8 +1,8 @@
 START
-\xcd\x08\x01`B#\x01\xae\x06  FLAG C
-FOBL "\x03\x06.\\Data\\Script\\Bg.Fobsv\x81\x1f 
-CMD2 BgAutoFadeInsv\x81\x1fJ \x025  FLAG \x08\x01
-FOBL "\x03\x06.\\Data\\Script\\Bgm.Fobv\x81\x1f\x88
+\xcd\x08\x01`B#\x01\xae\x06  FLAG C\x0c\x02"
+FOBT .\\Data\\Script\\Bg.Fobsv\x81\x1f  \x02
+CMD2 BgAutoFadeInsv\x81\x1fJ \x025  FLAG \x08\x01\x0c\x02"
+FOBT .\\Data\\Script\\Bgm.Fobv\x81\x1f\x88 \x02
 CMD1 PlayCD RUNF \xb2 \x025
 SCEN SCEG01_001 \xce \x02\xef! FLAG \x8c\x01FLAG\x02  \xc5\x01\x0c"\x03*
  
@@ -10,10 +10,9 @@ SCEN SCEG01_001 \xce \x02\xef! FLAG \x8c\x01FLAG\x02  \xc5\x01\x0c"\x03*
 拓司\n　「……先生？」@
 \n　錦城は微かに笑うと、拓司の横へと体を移動させた。@
 寄り添って寝転がるような形になる。\w\z
-  FLAG \x12\x01
-FOBL "\x03\x07.\\Data\\Script\\TextFunc.Fob RUNF \xda\x01
-CMD1 TextOn RUNF \x08\x02 \x025  FLAG \xc8
-FOBL "   \x02 J \x025
+  FLAG \x12\x01\x0c\x02"
+WHAT .\\Data\\Script\\TextFunc.Fob RUNF \xda\x01 \x02
+CMD1 TextOn RUNF \x08\x02 \x025  FLAG \xc8\x0c\x02"   \x02 J \x025
 SCEN SCEG01_002 X\x02 \x02\xef! FLAG \x8c\x01FLAG\x02 $\xc5\x01\x0c"\x03z
  
 錦城\n　「立派だったわ、虎菱くん」@
@@ -24,8 +23,7 @@ SCEN SCEG01_002 X\x02 \x02\xef! FLAG \x8c\x01FLAG\x02 $\xc5\x01\x0c"\x03z
 　　他の子たちとはどこか違うって。\p世界を……自分の世界を\n　　うちに秘めている。\pそう思ってた。@
 　　そういう人はね、強いの。@
 　　周囲の状況にながされないで、自分という物を持ち続けられ\n　　るの。\p虎菱くんこそが、リーダーにふさわしいって」\w\z
-  FLAG \x9c\x02
-FOBL " \xda\x01 \x02 \x08\x02 \x025
+  FLAG \x9c\x02\x0c\x02" \xda\x01 \x02 \x08\x02 \x025
 SCEN SCEG01_003 \xbe\x04 \x02\xef! FLAG \x8c\x01FLAG\x02 (\xc5\x01\x0c"\x03H
  
 　指が、そっと拓司の顎に触れた。@
@@ -34,7 +32,6 @@ SCEN SCEG01_003 \xbe\x04 \x02\xef! FLAG \x8c\x01FLAG\x02 (\xc5\x01\x0c"\x03H
 錦城はそのまま、そっと掌を拓司の耳元に被せて固定すると、身\nを乗り出して拓司に口づけした。@
 \n錦城\n　「……先生からのエールだと思って。ね？」\
 
-  FLAG \x02\x05
-FOBL " \xda\x01 \x02 \x08\x02 \x025 \x88
+  FLAG \x02\x05\x0c\x02" \xda\x01 \x02 \x08\x02 \x025 \x88 \x02
 CMD1 StopCD RUNF h\x06 \x025 \xda\x01 \x02
 SCEN TextClosev\x81\x1f\x90\x06 \x0256\xf1

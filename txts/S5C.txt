@@ -1,6 +1,6 @@
 START
-\x7f/\x01`B#\x01d$  FLAG \x04\x01
-FOBL "\x03\x06.\\Data\\Script\\Bgm.Fobv\x81\x1f 
+\x7f/\x01`B#\x01d$  FLAG \x04\x01\x0c\x02"
+FOBT .\\Data\\Script\\Bgm.Fobv\x81\x1f  \x02
 CMD1 PlayCD RUNF J \x025
 SCEN SCES05_001 f \x02\xef! FLAG \x8c\x01FLAG\x02  \xb6\x01\x0c"\x03\x8f
  
@@ -12,8 +12,8 @@ SCEN SCES05_001 f \x02\xef! FLAG \x8c\x01FLAG\x02  \xb6\x01\x0c"\x03\x8f
 見抜かれて、「たしたことないな」って思われちゃう。@
 いつのまにか、やめられなくなっていた。\
 
-  FLAG \xaa
-FOBL "\x03\x07.\\Data\\Script\\TextFunc.Fob RUNF \x06\x03
+  FLAG \xaa\x0c\x02"
+WHAT .\\Data\\Script\\TextFunc.Fob RUNF \x06\x03 \x02
 CMD1 TextOn RUNF 4\x03 \x025
 SCEN SCES05_002 P\x03 \x02\xef! FLAG \x8c\x01FLAG\x02 $\xb6\x01\x0c"\x03\xa3
  
@@ -27,9 +27,8 @@ SCEN SCES05_002 P\x03 \x02\xef! FLAG \x8c\x01FLAG\x02 $\xb6\x01\x0c"\x03\xa3
 「じゃあ、代わりにどうすればいいのか、教えてよ！\p　『答は風\n　のなかにある』っていうのは無しで！」@
 \nドルチェはすごく悲しそうな顔をして、しょんぼりと肩を落とし\nてどこかに消えていったわ。\
 
-  FLAG \x94\x03
-FOBL " \x06\x03 \x02 4\x03 \x025  FLAG ]
-FOBL "\x03\x06.\\Data\\Script\\Bg.Fobsv\x81\x1ft\x06
+  FLAG \x94\x03\x0c\x02" \x06\x03 \x02 4\x03 \x025  FLAG ]\x0c\x02"
+FOBT .\\Data\\Script\\Bg.Fobsv\x81\x1ft\x06 \x02
 CMD2 BgAutoFadeInsv\x81\x1f\x9e\x06 \x025
 SCEN SCES05_003 \xc2\x06 \x02\xef! FLAG \x8c\x01FLAG\x02 (\xb6\x01\x0c"\x03e
  
@@ -39,9 +38,7 @@ SCEN SCES05_003 \xc2\x06 \x02\xef! FLAG \x8c\x01FLAG\x02 (\xb6\x01\x0c"\x03e
 悲しそうな目で、じっと私を見ているだけだった。@
 そんなとき、お母さんが再婚して……おにいちゃんとあったんだ\nよね。\
 
-  FLAG \x06\x07
-FOBL " \x06\x03 \x02 4\x03 \x025  FLAG \xc8
-FOBL " t\x06 \x02 \x9e\x06 \x025
+  FLAG \x06\x07\x0c\x02" \x06\x03 \x02 4\x03 \x025  FLAG \xc8\x0c\x02" t\x06 \x02 \x9e\x06 \x025
 SCEN SCES05_004 \x08\t \x02\xef! FLAG \x8c\x01FLAG\x02 ,\xb6\x01\x0c"\x03\xb0
  
 海の話、覚えてる？@
@@ -53,8 +50,7 @@ SCEN SCES05_004 \x08\t \x02\xef! FLAG \x8c\x01FLAG\x02 ,\xb6\x01\x0c"\x03\xb0
 たくさん居場所を作ろうと思って、いろんなことにお金を使って\nた。\pでも、わかったの。一箇所でも本当の居場所があるってこと\nは、どこにも居場所がないってこととは違うって……あたりまえ\nだよね。\pええと……うまくいえないんだけど、ゼロじゃなければ\nいいんだって。\p１００なくても、１があればゼロじゃないって。@
 私はゼロじゃないって、ずっとそれが証明したかったんだって。\
 
-  FLAG L\t
-FOBL " \x06\x03 \x02 4\x03 \x025
+  FLAG L\t\x0c\x02" \x06\x03 \x02 4\x03 \x025
 SCEN SCES05_005 F\x0c \x02\xef! FLAG \x8c\x01FLAG\x02 0\xb6\x01\x0c"\x03z
  
 「ねえ、ドルチェ。\p早桃、もう援助交際はやめようと思うんだ」\n\p『そうか。\pドルチェはうれしいニャ』@
@@ -66,17 +62,14 @@ SCEN SCES05_005 F\x0c \x02\xef! FLAG \x8c\x01FLAG\x02 0\xb6\x01\x0c"\x03z
 肉球でぽんぽん、と私の肩を叩いてこういったわ。@
 『喧嘩のいいところは、仲直りできることニャ』\
 
-  FLAG \x8a\x0c
-FOBL " \x06\x03 \x02 4\x03 \x025! FLAG FLAG\x02 \x0bFLAG\x01 \x1b1\xea\x0e2 \x102\xf0\x0e2\xf0\x0e
+  FLAG \x8a\x0c\x0c\x02" \x06\x03 \x02 4\x03 \x025! FLAG FLAG\x02 \x0bFLAG\x01 \x1b1\xea\x0e2 \x102\xf0\x0e2\xf0\x0e
 SCEN SCES05_006 \xf6\x0e \x02\xef! FLAG \x8c\x01FLAG\x02 4\xb6\x01\x0c"\x03\x15
  
 お話はこれでおしまい。@
 神父様、聞いてくださってありがとうございました。@
 \z
-  FLAG :\x0f
-FOBL " \x06\x03 \x02 4\x03 \x025  
-CMD1 StopCD \xd4\x0f \x025  FLAG \xc8
-FOBL " t\x06 \x02 \x9e\x06 \x0256
+  FLAG :\x0f\x0c\x02" \x06\x03 \x02 4\x03 \x025   \x02
+CMD1 StopCD \xd4\x0f \x025  FLAG \xc8\x0c\x02" t\x06 \x02 \x9e\x06 \x0256
 SCEN SCES05_007 &\x10 \x02\xef! FLAG \x8c\x01FLAG\x02 8\xb6\x01\x0c"\x03\xc5
  
 でもね、結局ドルチェとは仲直りできなかったの。@
@@ -93,8 +86,7 @@ SCEN SCES05_007 &\x10 \x02\xef! FLAG \x8c\x01FLAG\x02 8\xb6\x01\x0c"\x03\xc5
 ずるずるとひっぱっていく欲望。@
 ただ単純に、お金が欲しかったの。\
 
-  FLAG j\x10
-FOBL " \x06\x03 \x02 4\x03 \x025
+  FLAG j\x10\x0c\x02" \x06\x03 \x02 4\x03 \x025
 SCEN SCES05_008 \xb8\x13 \x02\xef! FLAG \x8c\x01FLAG\x02 <\xb6\x01\x0c"\x03\xb0
  
 『早桃ちゃんは、愛よりもお金のほうが重いと思ってるのかニャ\n　？』@
@@ -109,8 +101,7 @@ SCEN SCES05_008 \xb8\x13 \x02\xef! FLAG \x8c\x01FLAG\x02 <\xb6\x01\x0c"\x03\xb0
 \nドルチェはすごく悲しそうな顔をして、しょんぼりと肩を落とし\nてどこかに消えていったわ。@
 そして二度と戻ってこなかった。\
 
-  FLAG \xfc\x13
-FOBL " \x06\x03 \x02 4\x03 \x025
+  FLAG \xfc\x13\x0c\x02" \x06\x03 \x02 4\x03 \x025
 SCEN SCES05_009 \xf6\x16 \x02\xef! FLAG \x8c\x01FLAG\x02 @\xb6\x01\x0c"\x03{
  
 私はようやく、自分が崖っぷちに立っているんじゃなくて、もう、\n落ちてるってことに気がついた。@
@@ -120,8 +111,7 @@ SCEN SCES05_009 \xf6\x16 \x02\xef! FLAG \x8c\x01FLAG\x02 @\xb6\x01\x0c"\x03{
 まもなく死ぬってことじゃなくて、もう死んでいるんだって。@
 地面にぶつかってバラバラになる瞬間まで、確かに生きてはいる。\n\pでも、バラバラになるのが決められている以上、本当の意味では\n私は死んでいるんだって……。\
 
-  FLAG :\x17
-FOBL " \x06\x03 \x02 4\x03 \x025
+  FLAG :\x17\x0c\x02" \x06\x03 \x02 4\x03 \x025
 SCEN SCES05_010 `\x19 \x02\xef! FLAG \x8c\x01FLAG\x02 D\xb6\x01\x0c"\x03;
  
 おにいちゃんにひとりエッチを見せたのは、わざとなの。@
@@ -130,15 +120,13 @@ SCEN SCES05_010 `\x19 \x02\xef! FLAG \x8c\x01FLAG\x02 D\xb6\x01\x0c"\x03;
 軽蔑して欲しかった。@
 \nそして、罰が下ったんだね。\
 
-  FLAG \xa4\x19
-FOBL " \x06\x03 \x02 4\x03 \x025
+  FLAG \xa4\x19\x0c\x02" \x06\x03 \x02 4\x03 \x025
 SCEN SCES05_011 \xca\x1a \x02\xef! FLAG \x8c\x01FLAG\x02 H\xb6\x01\x0c"\x030
  
 語り終えた後、早桃は無言で、自らが作り出した沈黙のなかに沈\nみ込んだ。@
 あるいは、彼女が沈み込んでいったのは、いま自らが言葉に変換\nして現出して見せた暗い闇の中なのかもしれない。\
 
-  FLAG \x0e\x1b
-FOBL " \x06\x03 \x02 4\x03 \x025
+  FLAG \x0e\x1b\x0c\x02" \x06\x03 \x02 4\x03 \x025
 SCEN SCES05_012 \x08\x1c \x02\xef! FLAG \x8c\x01FLAG\x02 L\xb6\x01\x0c"\x03I
  
 拓司\n　「俺には、お前を軽蔑する資格はない」@
@@ -146,8 +134,7 @@ SCEN SCES05_012 \x08\x1c \x02\xef! FLAG \x8c\x01FLAG\x02 L\xb6\x01\x0c"\x03I
 拓司\n　「お前を軽蔑するとしたら、俺は自分も軽蔑しなくちゃいけな\n　　いことになる。\p俺がお前のことを知らなかったのと同様に、\n　　俺のなかにもお前が知らない俺がたくさん、いる。@
 　　前科なしの人間なんていない」\
 
-  FLAG L\x1c
-FOBL " \x06\x03 \x02 4\x03 \x025
+  FLAG L\x1c\x0c\x02" \x06\x03 \x02 4\x03 \x025
 SCEN SCES05_013 \xaa\x1d \x02\xef! FLAG \x8c\x01FLAG\x02 P\xb6\x01\x0c"\x03i
  
 早桃\n　「……」@
@@ -160,8 +147,7 @@ SCEN SCES05_013 \xaa\x1d \x02\xef! FLAG \x8c\x01FLAG\x02 P\xb6\x01\x0c"\x03i
 拓司\n　「俺たちは罪人同士だ。\pだったらいいんじゃないか？@
 　　釣り合ってるんじゃないか？\p　それでも納得ができないって\n　　いうのなら、こうしよう」\
 
-  FLAG \xee\x1d
-FOBL " \x06\x03 \x02 4\x03 \x025
+  FLAG \xee\x1d\x0c\x02" \x06\x03 \x02 4\x03 \x025
 SCEN SCES05_014 \xcc\x1f \x02\xef! FLAG \x8c\x01FLAG\x02 T\xb6\x01\x0c"\x03l
  
 拓司は早桃の額にそっと手をかざし、重々しい声を作っていった。\n@
@@ -172,8 +158,7 @@ SCEN SCES05_014 \xcc\x1f \x02\xef! FLAG \x8c\x01FLAG\x02 T\xb6\x01\x0c"\x03l
 早桃\n　「……そうだね」@
 拓司\n　「そうだニャ」\
 
-  FLAG \x10 
-FOBL " \x06\x03 \x02 4\x03 \x025
+  FLAG \x10 \x0c\x02" \x06\x03 \x02 4\x03 \x025
 SCEN SCES05_015 \xfa! \x02\xef! FLAG \x8c\x01FLAG\x02 X\xb6\x01\x0c"\x03T
  
 早桃は声を押し殺して笑った。@
@@ -183,7 +168,5 @@ SCEN SCES05_015 \xfa! \x02\xef! FLAG \x8c\x01FLAG\x02 X\xb6\x01\x0c"\x03T
 早桃\n　「ラーメン」@
 \n早桃の笑顔を見ながら、拓司は誰かの笑顔というものを、久しぶ\nりに見たなと思っていた。\
 
-  FLAG >"
-FOBL " \x06\x03 \x02 4\x03 \x025   \x02 \xd4\x0f \x025  FLAG \xc8
-FOBL " t\x06 \x02 \x9e\x06 \x025! FLAG (FLAG\x02 \x01\x0c" \x06\x03 \x02
+  FLAG >"\x0c\x02" \x06\x03 \x02 4\x03 \x025   \x02 \xd4\x0f \x025  FLAG \xc8\x0c\x02" t\x06 \x02 \x9e\x06 \x025! FLAG (FLAG\x02 \x01\x0c" \x06\x03 \x02
 SCEN TextClose F$ \x0256\xf1

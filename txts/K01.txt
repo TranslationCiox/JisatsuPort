@@ -1,8 +1,8 @@
 START
-\xef\x18\x01`B#\x01\x04\x12  FLAG <
-FOBL "\x03\x06.\\Data\\Script\\Bg.Fobsv\x81\x1f 
-CMD2 BgAutoFadeInsv\x81\x1fJ \x025  FLAG \x08\x01
-FOBL "\x03\x06.\\Data\\Script\\Bgm.Fobv\x81\x1f\x88
+\xef\x18\x01`B#\x01\x04\x12  FLAG <\x0c\x02"
+FOBT .\\Data\\Script\\Bg.Fobsv\x81\x1f  \x02
+CMD2 BgAutoFadeInsv\x81\x1fJ \x025  FLAG \x08\x01\x0c\x02"
+FOBT .\\Data\\Script\\Bgm.Fobv\x81\x1f\x88 \x02
 CMD1 PlayCD RUNF \xb2 \x025
 SCEN SCEK01_001 \xce \x02\xef! FLAG \x8c\x01FLAG\x02 \xe0\xa5\x01\x0c"\x03Z
  
@@ -12,8 +12,8 @@ SCEN SCEK01_001 \xce \x02\xef! FLAG \x8c\x01FLAG\x02 \xe0\xa5\x01\x0c"\x03Z
 \n拓司\n　「別に……気にしてないさ。\p何かに取り憑かれて、混乱してい\n　　ただけだ」@
 カンナ\n　「そうね……\pええ、たぶんそう。\pでも、私がいったことは事\n　　実よ」@
 拓司\n　「……」\w\z
-  FLAG \x12\x01
-FOBL "\x03\x07.\\Data\\Script\\TextFunc.Fob RUNF \x9a\x02
+  FLAG \x12\x01\x0c\x02"
+WHAT .\\Data\\Script\\TextFunc.Fob RUNF \x9a\x02 \x02
 CMD1 TextOn RUNF \xc8\x02 \x025
 SCEN SCEK01_002 \xe4\x02 \x02\xef! FLAG \x8c\x01FLAG\x02 \xe4\xa5\x01\x0c"\x03\x8b
  
@@ -26,18 +26,14 @@ SCEN SCEK01_002 \xe4\x02 \x02\xef! FLAG \x8c\x01FLAG\x02 \xe4\xa5\x01\x0c"\x03\x
 拓司\n　「……どういうことなんだ？」@
 カンナ\n　「長い話なんだけれど……聞いてもらえる？」@
 拓司\n　「ああ」\w\z
-  FLAG (\x03
-FOBL " \x9a\x02 \x02 \xc8\x02 \x025
+  FLAG (\x03\x0c\x02" \x9a\x02 \x02 \xc8\x02 \x025
 SCEN SCEK01_003 \x8e\x05 \x02\xef! FLAG \x8c\x01FLAG\x02 \xe8\xa5\x01\x0c"\x03J
  
 　カンナはしばらくじっと天井を見上げて無言だった。@
 　横顔には、心の中の激しい葛藤が伺えた。@
 　カンナはそうした感情の揺らぎを必死に組み伏して、整理して\n　言葉に変えようともがいているように見えた。@
 　やがてカンナは、ぽつり、ぽつり、と少しずつ自らの死の物語\n　を、語り始めた……。\w\z
-  FLAG \xd2\x05
-FOBL " \x9a\x02 \x02 \xc8\x02 \x025  FLAG \xc8
-FOBL "   \x02 J \x025  FLAG \x04\x01
-FOBL " \x88 \x02 \xb2 \x025
+  FLAG \xd2\x05\x0c\x02" \x9a\x02 \x02 \xc8\x02 \x025  FLAG \xc8\x0c\x02"   \x02 J \x025  FLAG \x04\x01\x0c\x02" \x88 \x02 \xb2 \x025
 SCEN SCEK01_004 \x9c\x07 \x02\xef! FLAG \x8c\x01FLAG\x02 \xec\xa5\x01\x0c"\x03{
  
 　女子校というのは本当に特殊なところで、最初から、私はその\n空気に馴染むことができなかった。@
@@ -46,25 +42,21 @@ SCEN SCEK01_004 \x9c\x07 \x02\xef! FLAG \x8c\x01FLAG\x02 \xec\xa5\x01\x0c"\x03{
 自分のこれまでの経験を通して、私はそう考えている。@
 　でも、私がそこで頻繁に見かけたベタベタとした関係は、とても\n『恋愛』と呼べるレベルのものではなかった。@
 誰かに甘えたいとか、依存したいとか……\pそういう子供っぽい欲\n求に『恋愛』というレッテルを貼って、いごこちのいい狭い輪を\n強化しているだけ。\w\z
-  FLAG \xe0\x07
-FOBL " \x9a\x02 \x02 \xc8\x02 \x025
+  FLAG \xe0\x07\x0c\x02" \x9a\x02 \x02 \xc8\x02 \x025
 SCEN SCEK01_005 \x06\n \x02\xef! FLAG \x8c\x01FLAG\x02 \xf0\xa5\x01\x0c"\x03\x95
  
 　本物の恋愛に傷つく覚悟がない子供たちの演じる、安全な恋愛ご\nっこ。\pそんな気がして、好きになれなかった。@
 女子校における、『おままごと』的な空気はなにも恋愛に限った\n話ではなくて、髪の毛は必ず三つ編みでなければいけないとか、\n学業の妨げになるから異性との交際は禁止とか、保護者同伴なし\nでの映画館への立入は禁止とか……。@
 何もかもが、フェイクなプチ世界を、リアルな世界から守るため\nに作られているようで、うっとおしかった。@
 私が反逆者であることを、周りの人間は感じ取ったのだと思う\n（－－私は、まるで『全部反対！』ってプラカードを掲げて歩\nき回っているデモ隊みたいだったから）。\w\z
-  FLAG J\n
-FOBL " \x9a\x02 \x02 \xc8\x02 \x025
+  FLAG J\n\x0c\x02" \x9a\x02 \x02 \xc8\x02 \x025
 SCEN SCEK01_006 \xd8\x0c \x02\xef! FLAG \x8c\x01FLAG\x02 \xf4\xa5\x01\x0c"\x03I
  
 ある女の子からの『告白』を邪険に断ったのをきっかけに、\n私はあっというまにクラスのつまはじきとなった。@
 なんてくだらないんだろう、と思った。@
 こんなゴッコ遊びに参加できなくたって全然構わない、とも思っ\nた。@
 けれど、それでもやっぱり傷つきはした\n（－－そういうものでしょ？）。\w\z
-  FLAG \x1c\r
-FOBL " \x9a\x02 \x02 \xc8\x02 \x025  FLAG =
-FOBL "   \x02 J \x025
+  FLAG \x1c\r\x0c\x02" \x9a\x02 \x02 \xc8\x02 \x025  FLAG =\x0c\x02"   \x02 J \x025
 SCEN SCEK01_007 \xae\x0e \x02\xef! FLAG \x8c\x01FLAG\x02 \xf8\xa5\x01\x0c"\x03\x86
  
 　若草ゆきは、もっとうまくやっていた。@
@@ -74,12 +66,10 @@ SCEN SCEK01_007 \xae\x0e \x02\xef! FLAG \x8c\x01FLAG\x02 \xf8\xa5\x01\x0c"\x03\x
 そして、いつもどおり、わかりやすい態度で「あなたが嫌い」\nと表明した。@
 だからある日の放課後、若草ゆきが声をかけてきたときにはとて\nも驚いた。@
 \n「月代さん。よかったら一緒に帰らない？」\w\z
-  FLAG \xf2\x0e
-FOBL " \x9a\x02 \x02 \xc8\x02 \x025\x03\x17
+  FLAG \xf2\x0e\x0c\x02" \x9a\x02 \x02 \xc8\x02 \x025\x03\x17
 CHOICE
 私はすぐさま「悪いけど」と断った\n私はあっけにとられて「うん」といっていた\n\l0,2,
 ENDCHOICE
 
-  FLAG D\x11
-FOBL " \x9a\x02 \x02 \xc8\x02 \x025 \x9a\x02 \x02
+  FLAG D\x11\x0c\x02" \x9a\x02 \x02 \xc8\x02 \x025 \x9a\x02 \x02
 SCEN TextClosev\x81\x1f\xe6\x11 \x0256\xf1

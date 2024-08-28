@@ -4,10 +4,10 @@ SCEN SCE012_001 \x06 \x02\xef! FLAG \x8c\x01FLAG\x02 `"\x0c"\x03\x0e
  
 \n\n\n\n\n\n　　　　　　　　　　　『通学路』\
 
-  FLAG J
-FOBL "\x03\x07.\\Data\\Script\\TextFunc.Fob RUNF \xa2
-CMD1 TextOn RUNF \xd0 \x025  FLAG \x05\x01
-FOBL "\x03\x06.\\Data\\Script\\Bgm.Fobv\x81\x1f\x06\x01
+  FLAG J\x0c\x02"
+WHAT .\\Data\\Script\\TextFunc.Fob RUNF \xa2 \x02
+CMD1 TextOn RUNF \xd0 \x025  FLAG \x05\x01\x0c\x02"
+FOBT .\\Data\\Script\\Bgm.Fobv\x81\x1f\x06\x01 \x02
 CMD1 PlayCD RUNF 0\x01 \x025
 SCEN SCE012_002 L\x01 \x02\xef! FLAG \x8c\x01FLAG\x02 d"\x0c"\x03\x97
  
@@ -22,9 +22,8 @@ SCEN SCE012_002 L\x01 \x02\xef! FLAG \x8c\x01FLAG\x02 d"\x0c"\x03\x97
 　拓司の意志は揺らいだ。@
 　そして二週間前、偶然ドアの隙間から見てしまった光景は、完全\n　に彼の我慢をうち砕いた。\
 
-  FLAG \x90\x01
-FOBL " \xa2 \x02 \xd0 \x025  FLAG L
-FOBL "\x03\x06.\\Data\\Script\\Bg.Fobsv\x81\x1f@\x04
+  FLAG \x90\x01\x0c\x02" \xa2 \x02 \xd0 \x025  FLAG L\x0c\x02"
+FOBT .\\Data\\Script\\Bg.Fobsv\x81\x1f@\x04 \x02
 CMD2 BgAutoFadeInsv\x81\x1fj\x04 \x025
 SCEN SCE012_003 \x8e\x04 \x02\xef! FLAG \x8c\x01FLAG\x02 h"\x0c"\x03\x7f
  
@@ -37,8 +36,7 @@ SCEN SCE012_003 \x8e\x04 \x02\xef! FLAG \x8c\x01FLAG\x02 h"\x0c"\x03\x7f
 　無意識が見せる夢のなかで。@
 　あるいはそうした光景を意識的に作り上げて。\
 
-  FLAG \xd2\x04
-FOBL " \xa2 \x02 \xd0 \x025
+  FLAG \xd2\x04\x0c\x02" \xa2 \x02 \xd0 \x025
 SCEN SCE012_004 \x08\x07 \x02\xef! FLAG \x8c\x01FLAG\x02 l"\x0c"\x03\x97
  
 　可憐で清純な義妹を、夢のなかで犯した。@
@@ -51,9 +49,7 @@ SCEN SCE012_004 \x08\x07 \x02\xef! FLAG \x8c\x01FLAG\x02 l"\x0c"\x03\x97
 　気がつくと義妹を本当に犯しているのではないかと……拓司はこ\n　のところ不安になる。@
 　いつものように早桃を犯している最中、はっと、それが夢ではな\n　いことに気づくのではないかと。\
 
-  FLAG L\x07
-FOBL " \xa2 \x02 \xd0 \x025  FLAG \xc8
-FOBL " @\x04 \x02 j\x04 \x025 \x06\x01
+  FLAG L\x07\x0c\x02" \xa2 \x02 \xd0 \x025  FLAG \xc8\x0c\x02" @\x04 \x02 j\x04 \x025 \x06\x01 \x02
 CMD1 StopCD RUNF "\n \x025
 SCEN SCE012_005 >\n \x02\xef! FLAG \x8c\x01FLAG\x02 p"\x0c"\x03B
  
@@ -65,8 +61,7 @@ SCEN SCE012_005 >\n \x02\xef! FLAG \x8c\x01FLAG\x02 p"\x0c"\x03B
 拓司\n　「前にいってた、同じくクラスのムラカミとかいう女……」@
 早桃\n　「上村さんでしょ？」\
 
-  FLAG \x82\n
-FOBL " \xa2 \x02 \xd0 \x025
+  FLAG \x82\n\x0c\x02" \xa2 \x02 \xd0 \x025
 SCEN SCE012_006 \xc4\x0b \x02\xef! FLAG \x8c\x01FLAG\x02 t"\x0c"\x03v
  
 拓司\n　「ああ、そうだったか。そのカミムラとかいう女、まだ……嫌が\n　　らせしてくるのか？」@
@@ -77,8 +72,7 @@ SCEN SCE012_006 \xc4\x0b \x02\xef! FLAG \x8c\x01FLAG\x02 t"\x0c"\x03v
 早桃\n　「……おにいちゃんに言えば、なんとかなるの？」@
 拓司\n　「ああ。ブン殴ってでもやめさせてやる」\
 
-  FLAG \x08\x0c
-FOBL " \xa2 \x02 \xd0 \x025
+  FLAG \x08\x0c\x0c\x02" \xa2 \x02 \xd0 \x025
 SCEN SCE012_007 \x1a\x0e \x02\xef! FLAG \x8c\x01FLAG\x02 x"\x0c"\x035
  
 早桃\n　「守って……くれるんだ？」@
@@ -87,8 +81,7 @@ SCEN SCE012_007 \x1a\x0e \x02\xef! FLAG \x8c\x01FLAG\x02 x"\x0c"\x035
 　　だから付け入られるんだ」@
 早桃\n　「……そうかもね」\
 
-  FLAG ^\x0e
-FOBL " \xa2 \x02 \xd0 \x025
+  FLAG ^\x0e\x0c\x02" \xa2 \x02 \xd0 \x025
 SCEN SCE012_008 l\x0f \x02\xef! FLAG \x8c\x01FLAG\x02 |"\x0c"\x03\xa2
  
 沈んだ空気を振り払おうと、拓司は明るくいった。@
@@ -98,8 +91,7 @@ SCEN SCE012_008 l\x0f \x02\xef! FLAG \x8c\x01FLAG\x02 |"\x0c"\x03\xa2
 早桃\n　「ふふ……世代って、２歳しか違わないじゃない」@
 拓司\n　「いや、２歳はデカいって。\p運動系の部活の連中とかさ、今年\n　　の新人はナニ考えてるの全然わからない、っていつもぼやいて\n　　るぜ。\p礼儀とか、常識とか、もう、全然おれたちとは違うっ\n　　て。\p説教してもポカンとされるだけで、まるで宇宙人に地\n　　球の掟を教えてるみたいだって」\
 
-  FLAG \xb0\x0f
-FOBL " \xa2 \x02 \xd0 \x025
+  FLAG \xb0\x0f\x0c\x02" \xa2 \x02 \xd0 \x025
 SCEN SCE012_009 r\x12 \x02\xef! FLAG \x8c\x01FLAG\x02 \x80"\x0c"\x03<
  
 早桃\n　「……ということは、おにいちゃんも早桃のこと、ぜんぜんわか\n　　ってないってことかな？」@
@@ -108,17 +100,11 @@ SCEN SCE012_009 r\x12 \x02\xef! FLAG \x8c\x01FLAG\x02 \x80"\x0c"\x03<
 拓司\n　「そうさ」@
 早桃\n　「……」\
 
-  FLAG \xb6\x12
-FOBL " \xa2 \x02 \xd0 \x025
-SCEN SCE012_010 \xe0\x13 \x02\xef! FLAG \x8c\x01FLAG\x02 \x84"\x0c" \xa2 
-WAVL TextWindowOffDirect 0\x14 \x025  FLAG 
-FOBL "  \x04FLAG \x14
-FOBL "  \x08FLAG 
-FOBL " \x06\x01 \x02
-SCEN SePlayExsv\x81\x1f\xb2\x14 \x025  FLAG \x01
-FOBL " @\x04
-CMD2 BgNormalFadeIn RUNF \xf8\x14 \x025  FLAG \x07\x01
-FOBL " \x06\x01 \x02 0\x01 \x025 \xa2
+  FLAG \xb6\x12\x0c\x02" \xa2 \x02 \xd0 \x025
+SCEN SCE012_010 \xe0\x13 \x02\xef! FLAG \x8c\x01FLAG\x02 \x84"\x0c" \xa2 \x02
+LOAD TextWindowOffDirect 0\x14 \x025  FLAG \x0c\x02"  \x04FLAG \x14\x0c\x02"  \x08FLAG \x0c\x02" \x06\x01 \x02
+SCEN SePlayExsv\x81\x1f\xb2\x14 \x025  FLAG \x01\x0c\x02" @\x04 \x02
+CMD2 BgNormalFadeIn RUNF \xf8\x14 \x025  FLAG \x07\x01\x0c\x02" \x06\x01 \x02 0\x01 \x025 \xa2 \x02
 CMD2 TextWindowOnsv\x81\x1f\\\x15 \x025\x03\x9d
  
 紅葉\n　「おはよーっ！」@
@@ -131,8 +117,7 @@ CMD2 TextWindowOnsv\x81\x1f\\\x15 \x025\x03\x9d
 　紅葉の中には、他人よりも多くのいのちが宿っているのではない\n　か。\p決して消えることのない炎が常に彼女を燃え立たせている\n　のではないか。@
 　そんな印象がある。\
 
-  FLAG \x80\x15
-FOBL " \xa2 \x02 \xd0 \x025
+  FLAG \x80\x15\x0c\x02" \xa2 \x02 \xd0 \x025
 SCEN SCE012_011 .\x18 \x02\xef! FLAG \x8c\x01FLAG\x02 \x88"\x0c"\x03\xa8
  
 －－いまの自分とは大違いだ、と拓司は思った。@
@@ -144,24 +129,20 @@ SCEN SCE012_011 .\x18 \x02\xef! FLAG \x8c\x01FLAG\x02 \x88"\x0c"\x03\xa8
 拓司\n　「……勝手に騒いでろ」@
 \n　そこまで言ったときだった。早桃がおずおずといった。\
 
-  FLAG r\x18
-FOBL " \xa2 \x02 \xd0 \x025
+  FLAG r\x18\x0c\x02" \xa2 \x02 \xd0 \x025
 SCEN SCE012_012 L\x1b \x02\xef! FLAG \x8c\x01FLAG\x02 \x8c"\x0c"\x033
  
 早桃\n　「あの……おにいちゃん、私、先に行くから。……それじゃあ」\n\p/*　CG02　フェードアウト　（ブラック） */\a7,-2,-2,0,\a0,200,2,0,\a6,-2,0,0,拓司\n　「早桃？」@
 紅葉\n　「早桃ちゃん？」\
 
-  FLAG \x90\x1b
-FOBL " \xa2 \x02 \xd0 \x025
-SCEN SCE012_013 \x96\x1c \x02\xef! FLAG \x8c\x01FLAG\x02 \x90"\x0c"\x03\x07.\\Data\\Script\\TextFunc.fob RUNF \xda\x1c \x02\x03\x06CheckNormalMessageSkip RUNF \x08\x1d \x025  FLAG 
-FOBL "  \x04FLAG \x15
-FOBL "  \x08FLAG 
-FOBL " \x06\x01 \x02 \xb2\x14 \x025 \xa2 
-WAVL UpdateScenarioRead RUNF \xa8\x1d \x025\x03\x0b
+  FLAG \x90\x1b\x0c\x02" \xa2 \x02 \xd0 \x025
+SCEN SCE012_013 \x96\x1c \x02\xef! FLAG \x8c\x01FLAG\x02 \x90"\x0c"
+WHAT .\\Data\\Script\\TextFunc.fob RUNF \xda\x1c \x02
+FOBT CheckNormalMessageSkip RUNF \x08\x1d \x025  FLAG \x0c\x02"  \x04FLAG \x15\x0c\x02"  \x08FLAG \x0c\x02" \x06\x01 \x02 \xb2\x14 \x025 \xa2 \x02
+LOAD UpdateScenarioRead RUNF \xa8\x1d \x025\x03\x0b
 CHOICE
 早桃を追う\n紅葉と登校する\n\l0,2,
 ENDCHOICE
 
-  FLAG \xd0\x1d
-FOBL " \xa2 \x02 \xd0 \x025 \xa2 \x02
+  FLAG \xd0\x1d\x0c\x02" \xa2 \x02 \xd0 \x025 \xa2 \x02
 SCEN TextClosev\x81\x1fB\x1e \x0256\xf1

@@ -16,8 +16,8 @@ SCEN SCE084_001 \x06 \x02\xef! FLAG \x8c\x01FLAG\x02 \xe0\x92\x0c"\x03\xb8
 拓司は机の上に吐瀉物をまき散らした。@
 頭の中から、すうっと何かが引いていった。\pそれまでの熱狂が嘘\nだったように、冷めた、しらけた感じが－－おなじみの感覚が頭\nの中を支配していた。\
 
-  FLAG J
-FOBL "\x03\x07.\\Data\\Script\\TextFunc.Fob RUNF J\x03
+  FLAG J\x0c\x02"
+WHAT .\\Data\\Script\\TextFunc.Fob RUNF J\x03 \x02
 CMD1 TextOn RUNF x\x03 \x025
 SCEN SCE084_002 \x94\x03 \x02\xef! FLAG \x8c\x01FLAG\x02 \xe4\x92\x0c"\x03C
  
@@ -26,6 +26,5 @@ SCEN SCE084_002 \x94\x03 \x02\xef! FLAG \x8c\x01FLAG\x02 \xe4\x92\x0c"\x03C
 あっけなく見つかった。\pロープが切れたのであろう、紅葉はロー\nプを首に巻き付けたまま、床に転がっていた。\p駆け寄るとまだ呼\n吸はある。\p気絶しているだけだ。@
 \n拓司\n　「紅葉！\p　紅葉ッ！」\
 
-  FLAG \xd8\x03
-FOBL " J\x03 \x02 x\x03 \x025 J\x03 \x02
+  FLAG \xd8\x03\x0c\x02" J\x03 \x02 x\x03 \x025 J\x03 \x02
 SCEN TextClosev\x81\x1f*\x05 \x0256\xf1

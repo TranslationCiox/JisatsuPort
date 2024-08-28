@@ -1,8 +1,8 @@
 START
-7\x08\x01`B#\x01R\x06  FLAG \xc8
-FOBL "\x03\x06.\\Data\\Script\\Bg.Fobsv\x81\x1f 
-CMD2 BgAutoFadeInsv\x81\x1fJ \x025  FLAG \t\x01
-FOBL "\x03\x06.\\Data\\Script\\Bgm.Fobv\x81\x1f\x88
+7\x08\x01`B#\x01R\x06  FLAG \xc8\x0c\x02"
+FOBT .\\Data\\Script\\Bg.Fobsv\x81\x1f  \x02
+CMD2 BgAutoFadeInsv\x81\x1fJ \x025  FLAG \t\x01\x0c\x02"
+FOBT .\\Data\\Script\\Bgm.Fobv\x81\x1f\x88 \x02
 CMD1 PlayCD RUNF \xb2 \x025
 SCEN SCE095_001 \xce \x02\xef! FLAG \x8c\x01FLAG\x02 \x10\xa4\x0c"\x03\xb4
  
@@ -12,22 +12,19 @@ SCEN SCE095_001 \xce \x02\xef! FLAG \x8c\x01FLAG\x02 \x10\xa4\x0c"\x03\xb4
 見慣れない天井を見上げながら、拓司はそれまでのことを頭の中\nで整理しようとした。\pしかし、いくつものパズルを適当に寄せ集\nめてぶちまけたかのように、それぞれの情報には統一性も、法則\n性もないように思えた。\pそれは消耗としかいいようのない作業だ\nった。\pおそらく、どんなにピースをひねり回そうとも、パズルは\n完成しないように仕組まれているのだ……。\pしかし、眠れない夜\nには、そんなパズルと戯れるのもまた、良い時間つぶしとなった。\n\p空がようやく白みかけ、ようやく浅いまどろみが頭に霞を作りは\nじめた。@
 拓司は、足下にわずかに人の気配を感じた。\
 
-  FLAG \x12\x01
-FOBL "\x03\x07.\\Data\\Script\\TextFunc.Fob RUNF \x02\x04
-CMD1 TextOn RUNF 0\x04 \x025 \x88
+  FLAG \x12\x01\x0c\x02"
+WHAT .\\Data\\Script\\TextFunc.Fob RUNF \x02\x04 \x02
+CMD1 TextOn RUNF 0\x04 \x025 \x88 \x02
 CMD1 StopCD RUNF X\x04 \x025! FLAG \x14FLAG\x02 \x0bFLAG\x01 \x1b1^\x05\x03\x12
 CHOICE
 それは早桃だった\nそれはカンナだった\nそれは錦城だった\n\l0,3,
 ENDCHOICE
 
-  FLAG \xac\x04
-FOBL " \x02\x04 \x02 0\x04 \x025 \x02\x04
+  FLAG \xac\x04\x0c\x02" \x02\x04 \x02 0\x04 \x025 \x02\x04 \x02
 CMD2 GetLastTxtIDsv\x81\x1f:\x05 \x0252"\x06\x03FLAG
 CHOICE
 それは早桃だった\nそれは錦城だった\n\l0,2,
 ENDCHOICE
 
-  FLAG d\x05
-FOBL " \x02\x04 \x02 0\x04 \x025 \x02\x04 \x02 :\x05 \x025  FLAG \x01\x1b\x021"\x06  FLAG \x02
-FOBL " \x02\x04 \x02
+  FLAG d\x05\x0c\x02" \x02\x04 \x02 0\x04 \x025 \x02\x04 \x02 :\x05 \x025  FLAG \x01\x1b\x021"\x06  FLAG \x02\x0c\x02" \x02\x04 \x02
 SCEN TextClosev\x81\x1f4\x06 \x0256\xf1

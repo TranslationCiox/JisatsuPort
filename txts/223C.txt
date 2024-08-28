@@ -4,8 +4,8 @@ SCEN SCE223_001 \x06 \x02\xef! FLAG \x8c\x01FLAG\x02 \x10l\x01\x0c"\x03\x11
  
 \n\n\n\n\n\n\n\n\n\n　　　　　　　　　　　　　『１１日目』\
 
-  FLAG J
-FOBL "\x03\x07.\\Data\\Script\\TextFunc.Fob RUNF \xae
+  FLAG J\x0c\x02"
+WHAT .\\Data\\Script\\TextFunc.Fob RUNF \xae \x02
 CMD1 TextOn RUNF \xdc \x025
 SCEN SCE223_002 \xf8 \x02\xef! FLAG \x8c\x01FLAG\x02 \x14l\x01\x0c"\x03o
  
@@ -17,8 +17,7 @@ SCEN SCE223_002 \xf8 \x02\xef! FLAG \x8c\x01FLAG\x02 \x14l\x01\x0c"\x03o
 錦城\n　「そうです。\pレンタイセキニンセイです。\pつまり、誰かが秩序\n　　を乱すような行動をとった場合、全員がその責任を負うとい\n　　うことです。\pこれはもちろん、御堂くんの許可を得た決定事\n　　項よ」@
 \nカンナが、フンと鼻で笑った。\
 
-  FLAG <\x01
-FOBL " \xae \x02 \xdc \x025
+  FLAG <\x01\x0c\x02" \xae \x02 \xdc \x025
 SCEN SCE223_003 2\x03 \x02\xef! FLAG \x8c\x01FLAG\x02 \x18l\x01\x0c"\x03}
  
 カンナ\n　「『御堂くんの許可』……ねえ」@
@@ -29,8 +28,7 @@ SCEN SCE223_003 2\x03 \x02\xef! FLAG \x8c\x01FLAG\x02 \x18l\x01\x0c"\x03}
 錦城\n　「……どういう意味かしら？」@
 カンナ\n　「先生が思っているそのままの意味ですけど」\
 
-  FLAG v\x03
-FOBL " \xae \x02 \xdc \x025
+  FLAG v\x03\x0c\x02" \xae \x02 \xdc \x025
 SCEN SCE223_004 \xa4\x05 \x02\xef! FLAG \x8c\x01FLAG\x02 \x1cl\x01\x0c"\x03\x7f
  
 錦城とカンナはしばしにらみ合っていたが、やがて錦城が、フッ\nと軽く笑って目をそらした。\pそしてカンナに歩み寄ったかと思う\nと、突如鋭い張り手を頬に見舞った。@
@@ -39,12 +37,10 @@ SCEN SCE223_004 \xa4\x05 \x02\xef! FLAG \x8c\x01FLAG\x02 \x1cl\x01\x0c"\x03\x7f
 御堂\n　「ああ。\pこの女の反秩序行為は、お前ら全員で責任を負っても\n　　らうぞ。\pおまえらは今日一日、飯抜きだ」@
 \n錦城が勝ち誇ったような目で拓司を見た。\
 
-  FLAG \xe8\x05
-FOBL " \xae \x02 \xdc \x025\x03\x10
+  FLAG \xe8\x05\x0c\x02" \xae \x02 \xdc \x025\x03\x10
 CHOICE
 拓司は錦城に殴りかかった\n拓司はじっと耐えた\n\l0,2,
 ENDCHOICE
 
-  FLAG \x1e\x08
-FOBL " \xae \x02 \xdc \x025 \xae \x02
+  FLAG \x1e\x08\x0c\x02" \xae \x02 \xdc \x025 \xae \x02
 SCEN TextClosev\x81\x1f\xa4\x08 \x0256\xf1

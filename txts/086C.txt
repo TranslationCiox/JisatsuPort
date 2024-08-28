@@ -6,8 +6,8 @@ SCEN SCE086_001 \x06 \x02\xef! FLAG \x8c\x01FLAG\x02 \x96\x0c"\x038
 拓司の胸の中に、むくむくと、なたねの妄想に踊らされたのでは\nないかという思いが膨らんでくる。@
 \nなたね\n　「安心して下さい。\pこれからシェルター製作を始めます」\
 
-  FLAG J
-FOBL "\x03\x07.\\Data\\Script\\TextFunc.Fob RUNF J\x01
+  FLAG J\x0c\x02"
+WHAT .\\Data\\Script\\TextFunc.Fob RUNF J\x01 \x02
 CMD1 TextOn RUNF x\x01 \x025
 SCEN SCE086_002 \x94\x01 \x02\xef! FLAG \x8c\x01FLAG\x02 \x04\x96\x0c"\x03n
  
@@ -17,8 +17,7 @@ SCEN SCE086_002 \x94\x01 \x02\xef! FLAG \x8c\x01FLAG\x02 \x04\x96\x0c"\x03n
 なたね\n　「気分を害さないで欲しいんだけれど、そう簡単にまさかとか、\n　　言って欲しくないの。だってこれは、私が死ぬ思いをしてや\n　　つらの円盤から盗み出してきた機密事項の結晶だから」@
 拓司\n　「……」\
 
-  FLAG \xd8\x01
-FOBL " J\x01 \x02 x\x01 \x025
+  FLAG \xd8\x01\x0c\x02" J\x01 \x02 x\x01 \x025
 SCEN SCE086_003 \xca\x03 \x02\xef! FLAG \x8c\x01FLAG\x02 \x08\x96\x0c"\x03~
  
 なたね\n　「私が円盤に誘拐されたのは知ってるわよね？\p　そのとき、私\n　　は円盤の中をこっそり探って、いろいろな資料を盗み出して\n　　きたのよ。\pあいにく資料はやつらの手先に盗まれてしまって\n　　今はないけれど……それでも資料のほとんどは解析したわ」@
@@ -27,9 +26,8 @@ SCEN SCE086_003 \xca\x03 \x02\xef! FLAG \x8c\x01FLAG\x02 \x08\x96\x0c"\x03~
 　誰だ？！@
 　拓司たちは身構えたが、扉を開けて現れたのは、果たして見慣\n　れた人物であった。\
 
-  FLAG \x0e\x04
-FOBL " J\x01 \x02 x\x01 \x025  FLAG \x04\x01
-FOBL "\x03\x06.\\Data\\Script\\Bgm.Fobv\x81\x1fZ\x06
+  FLAG \x0e\x04\x0c\x02" J\x01 \x02 x\x01 \x025  FLAG \x04\x01\x0c\x02"
+FOBT .\\Data\\Script\\Bgm.Fobv\x81\x1fZ\x06 \x02
 CMD1 PlayCD RUNF \x84\x06 \x025
 SCEN SCE086_004 \xa0\x06 \x02\xef! FLAG \x8c\x01FLAG\x02 \x0c\x96\x0c"\x03w
  
@@ -43,8 +41,7 @@ SCEN SCE086_004 \xa0\x06 \x02\xef! FLAG \x8c\x01FLAG\x02 \x0c\x96\x0c"\x03w
 教室にいったところで、すれ違いだったかもしれない。@
 それでも、見捨てたという事実を、胸の中で正当化することはで\nきなかった。\
 
-  FLAG \xe4\x06
-FOBL " J\x01 \x02 x\x01 \x025
+  FLAG \xe4\x06\x0c\x02" J\x01 \x02 x\x01 \x025
 SCEN SCE086_005 \xfa\x08 \x02\xef! FLAG \x8c\x01FLAG\x02 \x10\x96\x0c"\x03G
  
 御堂\n　「はあ、はあ……お前ら、生きてたのか！」@
@@ -52,8 +49,7 @@ SCEN SCE086_005 \xfa\x08 \x02\xef! FLAG \x8c\x01FLAG\x02 \x10\x96\x0c"\x03G
 御堂\n　「いったいぜんたい、どうなっちまってるんだ？！\p　どいつも\n　　こいつも狂ったみたいに自殺し始めるわ、襲いかかってくる\n　　わで……わけわかんねえよ！」@
 拓司\n　「俺だってわからないさ」\
 
-  FLAG >\t
-FOBL " J\x01 \x02 x\x01 \x025
+  FLAG >\t\x0c\x02" J\x01 \x02 x\x01 \x025
 SCEN SCE086_006 \x94\n \x02\xef! FLAG \x8c\x01FLAG\x02 \x14\x96\x0c"\x03m
  
 錦城\n　「とにかく、無事で良かったわ。\p他に生き残っている人はいる\n　　の？！」@
@@ -64,9 +60,7 @@ SCEN SCE086_006 \x94\n \x02\xef! FLAG \x8c\x01FLAG\x02 \x14\x96\x0c"\x03m
 /*▲BGM　停止*/\a4,-1,0,0,なたね\n　「それはやめた方が無難ですね」@
 錦城\n　「……？」\
 
-  FLAG \xd8\n
-FOBL " J\x01 \x02 x\x01 \x025  FLAG \t\x01
-FOBL " Z\x06 \x02 \x84\x06 \x025
+  FLAG \xd8\n\x0c\x02" J\x01 \x02 x\x01 \x025  FLAG \t\x01\x0c\x02" Z\x06 \x02 \x84\x06 \x025
 SCEN SCE086_007 \xfa\x0c \x02\xef! FLAG \x8c\x01FLAG\x02 \x18\x96\x0c"\x03K
  
 なたね\n　「最終波動がきます。\pシェルターの外にいたら、全員が死ぬこ\n　　とになります」@
@@ -75,16 +69,14 @@ SCEN SCE086_007 \xfa\x0c \x02\xef! FLAG \x8c\x01FLAG\x02 \x18\x96\x0c"\x03K
 拓司\n　「いや、御堂。\p……あながち全部デタラメってわけでもなさそ\n　　うだぜ」@
 御堂\n　「なに……？」\
 
-  FLAG >\r
-FOBL " J\x01 \x02 x\x01 \x025
+  FLAG >\r\x0c\x02" J\x01 \x02 x\x01 \x025
 SCEN SCE086_008 \xa4\x0e \x02\xef! FLAG \x8c\x01FLAG\x02 \x1c\x96\x0c"\x03_
  
 　拓司はこれまでの出来事を、遅れてきた一同に語って聞かせた。\n\p最後に、なたねが自殺波動と呼んでいる『なにか』が存在するら\nしいことを……そしてなたねがそれに対抗する手段としてシェル\nターを準備していたことを……語った。@
 \n錦城\n　「信じがたい話ではあるけれど、もう、信じられないものは山\n　　ほど見てしまった後だし」@
 \n錦城はふう、とため息をついて肩をすくめた。\
 
-  FLAG \xe8\x0e
-FOBL " J\x01 \x02 x\x01 \x025
+  FLAG \xe8\x0e\x0c\x02" J\x01 \x02 x\x01 \x025
 SCEN SCE086_009 \x9e\x10 \x02\xef! FLAG \x8c\x01FLAG\x02  \x96\x0c"\x03\x85
  
 錦城\n　「それにしても……雲居さん。\pさっきいっていた最終波動っ\n　　て、いったいなんなの？」@
@@ -93,16 +85,14 @@ SCEN SCE086_009 \x9e\x10 \x02\xef! FLAG \x8c\x01FLAG\x02  \x96\x0c"\x03\x85
 なたね\n　「いま、断続的に襲ってきている波動は、大地震の前の予震み\n　　たいなものにすぎません。\pエンケリュスが本格始動するまえ\n　　の震えみたいなものにすぎない。\pいずれはエンケリュスは完\n　　全に目覚めて、これまでの波動なんて話にならないくらいの\n　　巨大な波動を放ちます。\pそれが最終波動です」@
 錦城\n　「これまでの波動よりも大きい……」\
 
-  FLAG \xe2\x10
-FOBL " J\x01 \x02 x\x01 \x025
+  FLAG \xe2\x10\x0c\x02" J\x01 \x02 x\x01 \x025
 SCEN SCE086_010 0\x13 \x02\xef! FLAG \x8c\x01FLAG\x02 $\x96\x0c"\x03r
  
 なたね\n　「ええ。\pおそらくそれで、地球上の人間はみな死ぬでしょう。@
 　　いまはまだ、エンケリュスのマイナスの波動に同調した人間\n　　が自殺しているだけだけれど、最終波動を浴びたら何が起き\n　　るのか、予想もつかない。\p分子レベルまで分解されて塵みた\n　　いになってしまうのかもしれないし、どろどろに溶けてしま\n　　うのかもしれない。\pとにかく確かなのは、みんな死ぬってい\n　　うこと」@
 \nここまで黙っていた御堂が、たまりかねたように叫んだ。\
 
-  FLAG t\x13
-FOBL " J\x01 \x02 x\x01 \x025
+  FLAG t\x13\x0c\x02" J\x01 \x02 x\x01 \x025
 SCEN SCE086_011 v\x15 \x02\xef! FLAG \x8c\x01FLAG\x02 (\x96\x0c"\x03V
  
 御堂\n　「バカバカしい！\p　こんな××××の妄想を真に受けてるんじ\n　　ゃねえだろうな！」@
@@ -113,14 +103,12 @@ SCEN SCE086_011 v\x15 \x02\xef! FLAG \x8c\x01FLAG\x02 (\x96\x0c"\x03V
 なたね\n　「わからない」@
 御堂\n　「あァ？」\
 
-  FLAG \xba\x15
-FOBL " J\x01 \x02 x\x01 \x025
+  FLAG \xba\x15\x0c\x02" J\x01 \x02 x\x01 \x025
 SCEN SCE086_012 L\x17 \x02\xef! FLAG \x8c\x01FLAG\x02 ,\x96\x0c"\x03,
  
 なたね\n　「１時間後かもしれないし、１週間後かもしれない。\p１０年後\n　　かもしれないし、１分後かも……１秒後かもしれない」@
 御堂\n　「……」@
 なたね\n　「……」\
 
-  FLAG \x90\x17
-FOBL " J\x01 \x02 x\x01 \x025 J\x01 \x02
+  FLAG \x90\x17\x0c\x02" J\x01 \x02 x\x01 \x025 J\x01 \x02
 SCEN TextClosev\x81\x1f\x86\x18 \x0256\xf1

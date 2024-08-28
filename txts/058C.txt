@@ -1,5 +1,6 @@
 START
-\xd3%\x01`B#\x01\xea\x1e\x03\x06.\\Data\\Script\\Bgm.Fobv\x81\x1f\x06
+\xd3%\x01`B#\x01\xea\x1e
+FOBT .\\Data\\Script\\Bgm.Fobv\x81\x1f\x06 \x02
 CMD1 StopCD RUNF 0 \x025
 SCEN SCE058_001 L \x02\xef! FLAG \x8c\x01FLAG\x02 @j\x0c"\x03\x1b
  
@@ -7,10 +8,9 @@ SCEN SCE058_001 L \x02\xef! FLAG \x8c\x01FLAG\x02 @j\x0c"\x03\x1b
 時間が何分あまっていようが、もう我慢できない。@
 拓司は一気に教室に駆け込んだ。\
 
-  FLAG \x90
-FOBL "\x03\x07.\\Data\\Script\\TextFunc.Fob RUNF \x1c\x01
-CMD1 TextOn RUNF J\x01 \x025  FLAG \n\x01
-FOBL " \x06
+  FLAG \x90\x0c\x02"
+WHAT .\\Data\\Script\\TextFunc.Fob RUNF \x1c\x01 \x02
+CMD1 TextOn RUNF J\x01 \x025  FLAG \n\x01\x0c\x02" \x06 \x02
 CMD1 PlayCD RUNF \x8c\x01 \x025
 SCEN SCE058_002 \xa8\x01 \x02\xef! FLAG \x8c\x01FLAG\x02 Dj\x0c"\x03r
  
@@ -23,8 +23,7 @@ SCEN SCE058_002 \xa8\x01 \x02\xef! FLAG \x8c\x01FLAG\x02 Dj\x0c"\x03r
 \nゲラゲラと全員が笑った。@
 拓司の胸のなかで、どす黒い塊が爆発した。\
 
-  FLAG \xec\x01
-FOBL " \x1c\x01 \x02 J\x01 \x025
+  FLAG \xec\x01\x0c\x02" \x1c\x01 \x02 J\x01 \x025
 SCEN SCE058_003 \xee\x03 \x02\xef! FLAG \x8c\x01FLAG\x02 Hj\x0c"\x03\x9a
  
 拓司\n　「オ、オ、オ、オ、オ、オ、ア、ア、ア、ア、ア、ア、ア！」@
@@ -37,9 +36,8 @@ SCEN SCE058_003 \xee\x03 \x02\xef! FLAG \x8c\x01FLAG\x02 Hj\x0c"\x03\x9a
 　いつのまにやられたのか、鼻から血がだくだくとあふれ出る。@
 視界が奇妙な色で明滅する。\
 
-  FLAG 2\x04
-FOBL " \x1c\x01 \x02 J\x01 \x025  FLAG \xc8
-FOBL "\x03\x06.\\Data\\Script\\Bg.Fobsv\x81\x1f\xee\x06
+  FLAG 2\x04\x0c\x02" \x1c\x01 \x02 J\x01 \x025  FLAG \xc8\x0c\x02"
+FOBT .\\Data\\Script\\Bg.Fobsv\x81\x1f\xee\x06 \x02
 CMD2 BgAutoFadeInsv\x81\x1f\x18\x07 \x025
 SCEN SCE058_004 <\x07 \x02\xef! FLAG \x8c\x01FLAG\x02 Lj\x0c"\x03\xab
  
@@ -53,9 +51,7 @@ SCEN SCE058_004 <\x07 \x02\xef! FLAG \x8c\x01FLAG\x02 Lj\x0c"\x03\xab
 \n　その声は、鋭い槍のように、教室の学生たちを貫いた。@
 　全員がビクッと身体をこわばらせ、おそるおそる、互いに顔を\n見合わせる。\pなかには反抗的な目でなたねをにらみ続けている者\nもいる。\pしかし、そんな視線をすべて受けてなお、なたねは動じ\nる様子もなく、毅然と立って叫び続けた。\
 
-  FLAG \x80\x07
-FOBL " \x1c\x01 \x02 J\x01 \x025  FLAG \x0b\x01
-FOBL " \x06 \x02 \x8c\x01 \x025
+  FLAG \x80\x07\x0c\x02" \x1c\x01 \x02 J\x01 \x025  FLAG \x0b\x01\x0c\x02" \x06 \x02 \x8c\x01 \x025
 SCEN SCE058_005 \x9a\n \x02\xef! FLAG \x8c\x01FLAG\x02 Pj\x0c"\x03\xc5
  
 なたね\n　「隣を見なさい！\p　自分を見なさい！\p　デタラメで、なんの常\n　　識もありゃしない！\p　　めちゃくちゃじゃない！非常識よ！@
@@ -66,8 +62,7 @@ SCEN SCE058_005 \x9a\n \x02\xef! FLAG \x8c\x01FLAG\x02 Pj\x0c"\x03\xc5
 　傷ついている。@
 　なたねの子供っぽい罵詈雑言を受けて、彼らは心から傷ついて\nいるのだ。\
 
-  FLAG \xde\n
-FOBL " \x1c\x01 \x02 J\x01 \x025
+  FLAG \xde\n\x0c\x02" \x1c\x01 \x02 J\x01 \x025
 SCEN SCE058_006 ,\x0e \x02\xef! FLAG \x8c\x01FLAG\x02 Tj\x0c"\x03N
  
 学生\n　「死ねっていわれたって……どうすれば……」@
@@ -77,8 +72,7 @@ SCEN SCE058_006 ,\x0e \x02\xef! FLAG \x8c\x01FLAG\x02 Tj\x0c"\x03N
 \n　ざ、ざ、ざ、と波打つように、全員が背後を振り返った。@
 　そこには窓があった。\
 
-  FLAG p\x0e
-FOBL " \x1c\x01 \x02 J\x01 \x025
+  FLAG p\x0e\x0c\x02" \x1c\x01 \x02 J\x01 \x025
 SCEN SCE058_007 \xe2\x0f \x02\xef! FLAG \x8c\x01FLAG\x02 Xj\x0c"\x03B
  
 なたね\n　「飛び降りれば、終わりじゃない？」@
@@ -91,8 +85,7 @@ SCEN SCE058_007 \xe2\x0f \x02\xef! FLAG \x8c\x01FLAG\x02 Xj\x0c"\x03B
 女子学生\n　「終わり」@
 男子学生\n　「終わり」\
 
-  FLAG &\x10
-FOBL " \x1c\x01 \x02 J\x01 \x025
+  FLAG &\x10\x0c\x02" \x1c\x01 \x02 J\x01 \x025
 SCEN SCE058_006 h\x11 \x02\xef! FLAG \x8c\x01FLAG\x02 \\j\x0c"\x03\x85
  
 　終わり終わり終わり終わり終わり終わり終わり終わり終わり終\nわり終わり終わ終わり終わり終わり終わり終わり終わり終わり終\nわり終わり終わり終わり終わり終わり終わり終わり終わり終わり@
@@ -102,17 +95,14 @@ SCEN SCE058_006 h\x11 \x02\xef! FLAG \x8c\x01FLAG\x02 \\j\x0c"\x03\x85
 それが始まりだった。@
 終わりはすぐにやってきた。\p学生たちは我先にと窓へ殺到し、躊\n躇することもなく飛び降りて消えていった。\p先ほどの喉を切った\n学生たちと同じく、なにか笑ってしまうような光景だった。\
 
-  FLAG \xac\x11
-FOBL " \x1c\x01 \x02 J\x01 \x025 \x06 \x02 0 \x025
+  FLAG \xac\x11\x0c\x02" \x1c\x01 \x02 J\x01 \x025 \x06 \x02 0 \x025
 SCEN SCE058_009 \x14\x14 \x02\xef! FLAG \x8c\x01FLAG\x02 `j\x0c"\x03h
  
 なたね\n　「なにをボーッとしているの、虎菱くん。義妹さんも、飛び降\n　　りてしまうわよ」@
 \n/*■CG24　表示（クロスフェード）　*/\a7,-2,-2,0,\a0,23,2,0,\a6,-2,0,0,ようやく我に返って、拓司は窓辺に足をかけた早桃を、慌てて背\n後から捕まえた。@
 床に押さえつけられても、早桃はまだ何かに取り憑かれたような\n様子で、ブルブルと震えていた。\p拓司はそんな早桃に馬乗りにな\nって、頬に数発、鋭い平手打ちを放った。\
 
-  FLAG X\x14
-FOBL " \x1c\x01 \x02 J\x01 \x025  FLAG \xc8
-FOBL " \xee\x06 \x02 \x18\x07 \x025
+  FLAG X\x14\x0c\x02" \x1c\x01 \x02 J\x01 \x025  FLAG \xc8\x0c\x02" \xee\x06 \x02 \x18\x07 \x025
 SCEN SCE058_010 f\x16 \x02\xef! FLAG \x8c\x01FLAG\x02 dj\x0c"\x03v
  
 拓司\n　「落ち着け！　早桃！\p　目を覚ませ！」@
@@ -124,8 +114,7 @@ SCEN SCE058_010 f\x16 \x02\xef! FLAG \x8c\x01FLAG\x02 dj\x0c"\x03v
 拓司\n　「天使？」@
 早桃\n　「……私はもうたどり着けないから。\pおにいちゃんのこと、好\n　　きになる資格ないから」\
 
-  FLAG \xaa\x16
-FOBL " \x1c\x01 \x02 J\x01 \x025
+  FLAG \xaa\x16\x0c\x02" \x1c\x01 \x02 J\x01 \x025
 SCEN SCE058_011 \xbc\x18 \x02\xef! FLAG \x8c\x01FLAG\x02 hj\x0c"\x03\x88
  
 　なたねはそんな２人の様子をじっと無言で見つめていたが、し\n　ばらくしてポツリといった。@
@@ -138,8 +127,7 @@ SCEN SCE058_011 \xbc\x18 \x02\xef! FLAG \x8c\x01FLAG\x02 hj\x0c"\x03\x88
 　ぐんにゃりと弛緩して、視線はうつろに宙を泳いでいる。@
 　拓司は心配したが、１分もすると、早桃はゆっくりと自分で身\n　体を起こした。\
 
-  FLAG \x19
-FOBL " \x1c\x01 \x02 J\x01 \x025
+  FLAG \x19\x0c\x02" \x1c\x01 \x02 J\x01 \x025
 SCEN SCE058_012 Z\x1b \x02\xef! FLAG \x8c\x01FLAG\x02 lj\x0c"\x03]
  
 拓司\n　「大丈夫か、早桃？」@
@@ -152,19 +140,16 @@ SCEN SCE058_012 Z\x1b \x02\xef! FLAG \x8c\x01FLAG\x02 lj\x0c"\x03]
 \n拓司\n　「無理するな、もう少し寝て－－」@
 早桃\n　「大丈夫。早桃は大丈夫だから。\pそれよりも……」\
 
-  FLAG \x9e\x1b
-FOBL " \x1c\x01 \x02 J\x01 \x025
+  FLAG \x9e\x1b\x0c\x02" \x1c\x01 \x02 J\x01 \x025
 SCEN SCE058_013 L\x1d \x02\xef! FLAG \x8c\x01FLAG\x02 pj\x0c"\x03\x1d
  
 拓司\n　「……」@
 早桃\n　「……なんでもない。\p行こう、おにいちゃん。\pここに、いたく\n　　ない……」\
 
-  FLAG \x90\x1d
-FOBL " \x1c\x01 \x02 J\x01 \x025\x03\x12
+  FLAG \x90\x1d\x0c\x02" \x1c\x01 \x02 J\x01 \x025\x03\x12
 CHOICE
 「……天使って、なんだ？」\n「……ここにいたくない？」\n\l0,2,
 ENDCHOICE
 
-  FLAG >\x1e
-FOBL " \x1c\x01 \x02 J\x01 \x025 \x1c\x01 \x02
+  FLAG >\x1e\x0c\x02" \x1c\x01 \x02 J\x01 \x025 \x1c\x01 \x02
 SCEN TextClosev\x81\x1f\xcc\x1e \x0256\xf1

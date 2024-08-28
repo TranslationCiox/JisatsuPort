@@ -13,7 +13,7 @@ SCEN SCE029_001 \x06 \x02\xef! FLAG \x8c\x01FLAG\x02 \xf0<\x0c"\x03\x81
 \nカンナ　「……屋上で」@
 \n返事を待つ様子もなくカンナは足早に廊下を歩み去っていった。\
 
-  FLAG J
-FOBL "\x03\x07.\\Data\\Script\\TextFunc.Fob RUNF n\x02
+  FLAG J\x0c\x02"
+WHAT .\\Data\\Script\\TextFunc.Fob RUNF n\x02 \x02
 CMD1 TextOn RUNF \x9c\x02 \x025 n\x02 \x02
 SCEN TextClosev\x81\x1f\xc4\x02 \x0256\xf1

@@ -8,7 +8,7 @@ SCEN SCE208_001 \x06 \x02\xef! FLAG \x8c\x01FLAG\x02 \xa0T\x01\x0c"\x03\x90
 拓司\n　「……」@
 ナタネ\n　「……」\
 
-  FLAG J
-FOBL "\x03\x07.\\Data\\Script\\TextFunc.Fob RUNF \xaa\x02
+  FLAG J\x0c\x02"
+WHAT .\\Data\\Script\\TextFunc.Fob RUNF \xaa\x02 \x02
 CMD1 TextOn RUNF \xd8\x02 \x025 \xaa\x02 \x02
 SCEN TextClosev\x81\x1f\x03 \x0256\xf1

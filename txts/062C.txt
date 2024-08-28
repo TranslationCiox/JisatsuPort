@@ -1,18 +1,16 @@
 START
 /8\x01`B#\x01\x9a/
-SCEN SCE062_001 \x06 \x02\xef! FLAG \x8c\x01FLAG\x02 \x80p\x0c"  FLAG 
-FOBL "  \x04FLAG \t
-FOBL "  \x08FLAG 
-FOBL "\x03\x06.\\Data\\Script\\Bgm.Fobv\x81\x1f\x98 \x02
+SCEN SCE062_001 \x06 \x02\xef! FLAG \x8c\x01FLAG\x02 \x80p\x0c"  FLAG \x0c\x02"  \x04FLAG \t\x0c\x02"  \x08FLAG \x0c\x02"
+FOBT .\\Data\\Script\\Bgm.Fobv\x81\x1f\x98 \x02
 SCEN SePlayExsv\x81\x1f\xc2 \x025\x03\x13
  
 カンナ\n　「……きたんだ？」@
 \nその声は、頭上から聞こえてきた。\
 
-  FLAG \xe2
-FOBL "\x03\x07.\\Data\\Script\\TextFunc.Fob RUNF N\x01
-CMD1 TextOn RUNF |\x01 \x025  FLAG \x18
-FOBL "\x03\x06.\\Data\\Script\\Bg.Fobsv\x81\x1f\xb2\x01
+  FLAG \xe2\x0c\x02"
+WHAT .\\Data\\Script\\TextFunc.Fob RUNF N\x01 \x02
+CMD1 TextOn RUNF |\x01 \x025  FLAG \x18\x0c\x02"
+FOBT .\\Data\\Script\\Bg.Fobsv\x81\x1f\xb2\x01 \x02
 CMD2 BgAutoFadeInsv\x81\x1f\xdc\x01 \x025
 SCEN SCE062_002 \x02 \x02\xef! FLAG \x8c\x01FLAG\x02 \x84p\x0c"\x03\xcc
  
@@ -24,8 +22,7 @@ SCEN SCE062_002 \x02 \x02\xef! FLAG \x8c\x01FLAG\x02 \x84p\x0c"\x03\xcc
 そこに至るまでの流れが見えて来ないのが不気味だった。\p彼らに\nしか通用しない狂った理屈。\p狂った思考過程を経て、彼らは我が\n身を使って死体の山を築き上げたのだ。@
 カンナはその頂上に君臨する、死の女王だった。\
 
-  FLAG D\x02
-FOBL " N\x01 \x02 |\x01 \x025
+  FLAG D\x02\x0c\x02" N\x01 \x02 |\x01 \x025
 SCEN SCE062_003 \xae\x05 \x02\xef! FLAG \x8c\x01FLAG\x02 \x88p\x0c"\x03]
  
 カンナ\n　「生きてたんだ、虎菱くん？\p　まあ、あなたならそうかもしれ\n　　ないわね」@
@@ -36,9 +33,7 @@ SCEN SCE062_003 \xae\x05 \x02\xef! FLAG \x8c\x01FLAG\x02 \x88p\x0c"\x03]
 カンナ\n　「私が？\p　この連中と一緒に？\p　冗談じゃないわ！」@
 拓司\n　「……」\
 
-  FLAG \xf2\x05
-FOBL " N\x01 \x02 |\x01 \x025  FLAG \x0b\x01
-FOBL " \x98
+  FLAG \xf2\x05\x0c\x02" N\x01 \x02 |\x01 \x025  FLAG \x0b\x01\x0c\x02" \x98 \x02
 CMD1 PlayCD RUNF \xc6\x07 \x025
 SCEN SCE062_004 \xe2\x07 \x02\xef! FLAG \x8c\x01FLAG\x02 \x8cp\x0c"\x03\xb7
  
@@ -49,8 +44,7 @@ SCEN SCE062_004 \xe2\x07 \x02\xef! FLAG \x8c\x01FLAG\x02 \x8cp\x0c"\x03\xb7
 なたね\n　「……波動には一応耐えたみたいだけれど、ちょっとキてるわ\n　　ね」@
 \n隣に立つなたねが小さくいった。\
 
-  FLAG &\x08
-FOBL " N\x01 \x02 |\x01 \x025 \x98
+  FLAG &\x08\x0c\x02" N\x01 \x02 |\x01 \x025 \x98 \x02
 CMD1 StopCD RUNF H\x0b \x025
 SCEN SCE062_005 d\x0b \x02\xef! FLAG \x8c\x01FLAG\x02 \x90p\x0c"\x03\xb0
  
@@ -62,8 +56,7 @@ SCEN SCE062_005 d\x0b \x02\xef! FLAG \x8c\x01FLAG\x02 \x90p\x0c"\x03\xb0
 拓司\n　「わかるよ。\p周りと一緒になりたくないっていう……自分の覚\n　　悟というか……死を……うわついたものといっしょにしたく\n　　ないっていう。\p俺にもそういうの、あるから」@
 カンナ\n　「……あなたも？」\
 
-  FLAG \xa8\x0b
-FOBL " N\x01 \x02 |\x01 \x025
+  FLAG \xa8\x0b\x0c\x02" N\x01 \x02 |\x01 \x025
 SCEN SCE062_006 \xa2\x0e \x02\xef! FLAG \x8c\x01FLAG\x02 \x94p\x0c"\x03\x7f
  
 拓司\n　「ああ。\p今朝、テレビでやってた。\p気軽に生き死にを考えて、\n　　それを使って自己アピールをするみたいな若者が多いって…\n　　…」@
@@ -74,8 +67,7 @@ SCEN SCE062_006 \xa2\x0e \x02\xef! FLAG \x8c\x01FLAG\x02 \x94p\x0c"\x03\x7f
 \nカンナは笑っていた。\p喉を逸らせて、呵々大笑していた。@
 呆気にとられる拓司を無視するようにカンナはしばらく笑い続け\nた。\p腹を抱えて、しまいには息をするのも苦しいらしく、ヒイヒ\nイと笑い続けた。\
 
-  FLAG \xe6\x0e
-FOBL " N\x01 \x02 |\x01 \x025
+  FLAG \xe6\x0e\x0c\x02" N\x01 \x02 |\x01 \x025
 SCEN SCE062_007 \x1c\x11 \x02\xef! FLAG \x8c\x01FLAG\x02 \x98p\x0c"\x03S
  
 カンナ\n　「……同じ？\p　私と？\p　あなたが？」@
@@ -84,8 +76,7 @@ SCEN SCE062_007 \x1c\x11 \x02\xef! FLAG \x8c\x01FLAG\x02 \x98p\x0c"\x03S
 　　……冗談じゃないッ！」@
 \nカンナは拓司を鋭く指さして、一気呵成にまくしたてた。\
 
-  FLAG `\x11
-FOBL " N\x01 \x02 |\x01 \x025
+  FLAG `\x11\x0c\x02" N\x01 \x02 |\x01 \x025
 SCEN SCE062_008 \xe6\x12 \x02\xef! FLAG \x8c\x01FLAG\x02 \x9cp\x0c"\x03\xfb
  
 カンナ\n　「あなたの死なんて、ありふれたものよ！\p　死にたいけど怖く\n　　て死ねない。\pそんなヒョロヒョロしたあなたの志と同類項で\n　　くくってもらっちゃあ、汚れるの！\p　私の……死の神聖さが\n　　……おとしめられる！\p　あなたなんて、そこらへんの……こ\n　　の下に積み重なってる連中と一緒！\p　平積みの『完璧自殺マ\n　　ニュアル』読んで？\p　『自分には最終手段が残されているっ\n　　て思うことが勇気になる』とかいって？\p　気取るな！\p　現実\n　　と闘う覚悟がない世捨て人気取りが！\pそんなのみんな一緒！@
@@ -94,8 +85,7 @@ SCEN SCE062_008 \xe6\x12 \x02\xef! FLAG \x8c\x01FLAG\x02 \x9cp\x0c"\x03\xfb
 　　いい、あなたは条件なの。\pわたしが死んでいい状況を形作る\n　　ための条件でしかないんだから……あなたは過去の私なの！@
 　　今の私じゃない。\pなんでもなかった頃の私で…………………\n　　………………………………………………………………………\n　　…………………………………………思い上がるなッ！」\
 
-  FLAG *\x13
-FOBL " N\x01 \x02 |\x01 \x025
+  FLAG *\x13\x0c\x02" N\x01 \x02 |\x01 \x025
 SCEN SCE062_009 P\x17 \x02\xef! FLAG \x8c\x01FLAG\x02 \xa0p\x0c"\x03h
  
 拓司\n　「落ち着くんだ、カンナ－－」@
@@ -103,15 +93,13 @@ SCEN SCE062_009 P\x17 \x02\xef! FLAG \x8c\x01FLAG\x02 \xa0p\x0c"\x03h
 /*▲BGM　Track10　再生*/\a2,-1,10,1,/*■CG26　表示（クロスフェード）*/\a7,-2,-2,0,\a0,25,2,0,\a6,-2,0,0,\n一歩踏み出した拓司を、カンナが鋭く制した。\pそしてなんのつも\nりであろうか、胸にかけたペンダントをグイッと拓司に向けてか\nざした。\p迫り来る悪魔に十字架を見せつける神父のようだ。@
 \nカンナ\n　「この中に、×××××が入ってるわ」\
 
-  FLAG \x94\x17
-FOBL " N\x01 \x02 |\x01 \x025
+  FLAG \x94\x17\x0c\x02" N\x01 \x02 |\x01 \x025
 SCEN SCE062_010 n\x19 \x02\xef! FLAG \x8c\x01FLAG\x02 \xa4p\x0c"\x03q
  
 拓司はその名前を、カンナから借りた本で見たことがあった。@
 睡眠薬として使われる規制医薬品で、２グラムのんだだけで確実\nに心臓が止まるといわれる劇薬中の劇薬だ。\pもちろん、薬屋で買\nうことはできないし、それどころか国内では取り扱われていない。\n\pしかし－－カンナならばそれを手に入れることぐらい、造作のな\nいことのように思えた。\p拓司は、五号棟でカンナが××××を飲\nんでいるのを見たことがあったし、勧められて×××××を吸っ\nたこともある。\
 
-  FLAG \xb2\x19
-FOBL " N\x01 \x02 |\x01 \x025
+  FLAG \xb2\x19\x0c\x02" N\x01 \x02 |\x01 \x025
 SCEN SCE062_011 \xb0\x1b \x02\xef! FLAG \x8c\x01FLAG\x02 \xa8p\x0c"\x03z
  
 拓司\n　「どうするつもりだ？」@
@@ -122,8 +110,7 @@ SCEN SCE062_011 \xb0\x1b \x02\xef! FLAG \x8c\x01FLAG\x02 \xa8p\x0c"\x03z
 カンナ\n　「気が変わったの。\pあなたに呪いをかけて死ぬのも面白いかも\n　　しれないって」@
 拓司\n　「……」\
 
-  FLAG \xf4\x1b
-FOBL " N\x01 \x02 |\x01 \x025
+  FLAG \xf4\x1b\x0c\x02" N\x01 \x02 |\x01 \x025
 SCEN SCE062_012 \x16\x1e \x02\xef! FLAG \x8c\x01FLAG\x02 \xacp\x0c"\x03\xb5
  
 カンナ\n　「ふふふ、興奮しない？\p　私たちは今、ずっと求めていたもの\n　　に直面しているわ。\p崖っぷちにまでいってる。\pそうでしょ？@
@@ -134,8 +121,7 @@ SCEN SCE062_012 \x16\x1e \x02\xef! FLAG \x8c\x01FLAG\x02 \xacp\x0c"\x03\xb5
 \nカンナ\n　「本物の死体を見るのは初めて……？\p　興奮する……？@
 　　死と交わるって文字通りこんな感じ……？\p　ふふ……」\
 
-  FLAG Z\x1e
-FOBL " N\x01 \x02 |\x01 \x025
+  FLAG Z\x1e\x0c\x02" N\x01 \x02 |\x01 \x025
 SCEN SCE062_013 h! \x02\xef! FLAG \x8c\x01FLAG\x02 \xb0p\x0c"\x03w
  
 拓司は、狂気に囚われてしまったとしか思えないカンナの様子を\n呆然と見ていたが、とんとん、となたねに腿をつつかれて我に返\nった。@
@@ -145,8 +131,7 @@ SCEN SCE062_013 h! \x02\xef! FLAG \x8c\x01FLAG\x02 \xb0p\x0c"\x03w
 なたねが小さくいった。@
 \nなたね\n　「……話を続けて」\
 
-  FLAG \xac!
-FOBL " N\x01 \x02 |\x01 \x025
+  FLAG \xac!\x0c\x02" N\x01 \x02 |\x01 \x025
 SCEN SCE062_014 \xc2# \x02\xef! FLAG \x8c\x01FLAG\x02 \xb4p\x0c"\x03\x80
  
 拓司\n　「……？」@
@@ -158,8 +143,7 @@ SCEN SCE062_014 \xc2# \x02\xef! FLAG \x8c\x01FLAG\x02 \xb4p\x0c"\x03\x80
 拓司\n　「俺が取り憑かれた死の正体がどんなものなのかなんて、とっ\n　　くに分析すみだった、と。\pそういうわけか？」@
 カンナ\n　「－－もちろん」\
 
-  FLAG \x06$
-FOBL " N\x01 \x02 |\x01 \x025
+  FLAG \x06$\x0c\x02" N\x01 \x02 |\x01 \x025
 SCEN SCE062_015 @& \x02\xef! FLAG \x8c\x01FLAG\x02 \xb8p\x0c"\x03f
  
 拓司\n　「本人だって把握しきれていないのに？」@
@@ -171,8 +155,7 @@ SCEN SCE062_015 @& \x02\xef! FLAG \x8c\x01FLAG\x02 \xb8p\x0c"\x03f
 カンナ\n　「……クイズよ」@
 拓司\n　「……？」\
 
-  FLAG \x84&
-FOBL " N\x01 \x02 |\x01 \x025
+  FLAG \x84&\x0c\x02" N\x01 \x02 |\x01 \x025
 SCEN SCE062_016 V( \x02\xef! FLAG \x8c\x01FLAG\x02 \xbcp\x0c"\x03\xab
  
 カンナ\n　「屋上での続き。\pこれから私が、あなたに取り憑いたものを解\n　　剖して、ひとつひとつ晒して、説明してあげる。\pその途中に\n　　クイズを挟むわ。\pそうね……『自殺なぜなにク～～～～～イ\n　　ズ！』ってところかしら、ふふ。\pそれに正解したら、あなた\n　　は自分に取り憑いたものの正体を知ることができる。\p間違っ\n　　たら……私は薬を飲む」@
@@ -181,8 +164,7 @@ SCEN SCE062_016 V( \x02\xef! FLAG \x8c\x01FLAG\x02 \xbcp\x0c"\x03\xab
 \n拓司は、そっと早桃の動きを探った。\p早桃は教壇の下に隠れて、\n様子をうかがっている。\pまだしばらくはカンナの興味を引きつけ\nておかなければなるまい。@
 \n拓司\n　「わかった」\
 
-  FLAG \x9a(
-FOBL " N\x01 \x02 |\x01 \x025
+  FLAG \x9a(\x0c\x02" N\x01 \x02 |\x01 \x025
 SCEN SCE062_017 \x80+ \x02\xef! FLAG \x8c\x01FLAG\x02 \xc0p\x0c"\x03\xb6
  
 カンナ\n　「ＯＫ。\p準備はいいかしら？\p　重要な場面よ？\p　セーブはした？\n　　\pうふふ……まずは『セーリックマンの実験』の話からいきま\n　　しょうか」@
@@ -190,12 +172,10 @@ SCEN SCE062_017 \x80+ \x02\xef! FLAG \x8c\x01FLAG\x02 \xc0p\x0c"\x03\xb6
 カンナ\n　「身動きがとれないようにしたイヌに、一日数十回電気ショッ\n　　クを与えるの。\p不規則に、なんの前触れもなしに。\pそれから\n　　そのイヌを、今度は実験箱の中に入れる。\pこの箱の中にも電\n　　流が流れる仕掛けが施してある。\pただし、今度は電流が流れ\n　　る前兆として、照明が暗くなるようになっている。\pそして、\n　　部屋を仕切っている柵を乗り越えて反対側に移動すればそこ\n　　は安全地帯になっている……回避手段があるわけね。\pさて。@
 　　ここに、さっきの実験を施したイヌと、普通のイヌを入れた\n　　ら、どんなことが起きるでしょう？」\
 
-  FLAG \xc4+
-FOBL " N\x01 \x02 |\x01 \x025\x03\x18
+  FLAG \xc4+\x0c\x02" N\x01 \x02 |\x01 \x025\x03\x18
 CHOICE
 電気ショックを受けたイヌが回避手段を見つける\n普通のイヌが回避手段を見つける\n\l0,2,
 ENDCHOICE
 
-  FLAG \xd6.
-FOBL " N\x01 \x02 |\x01 \x025 N\x01 \x02
+  FLAG \xd6.\x0c\x02" N\x01 \x02 |\x01 \x025 N\x01 \x02
 SCEN TextClosev\x81\x1f|/ \x0256\xf1

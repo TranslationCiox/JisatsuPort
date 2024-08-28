@@ -6,10 +6,10 @@ SCEN SCE072_001 \x06 \x02\xef! FLAG \x8c\x01FLAG\x02 \x90~\x0c"\x03\\
 \nなたね\n　「悪いけれど、私は一緒にいけないわ。\p私はこの状況を生き延\n　　びなければならないから。\pレジスタンスの一斉蜂起……それ\n　　は最終聖戦になるわ……には絶対に私の力が必要になるから。\n　　\p私はキーだから。鍵なの。\pわかる？\p　わからないだろうな\n　　あ……」@
 拓司\n　「早桃、行くぞ！」\
 
-  FLAG J
-FOBL "\x03\x07.\\Data\\Script\\TextFunc.Fob RUNF \xda\x01
-CMD1 TextOn RUNF \x08\x02 \x025  FLAG \x0b\x01
-FOBL "\x03\x06.\\Data\\Script\\Bgm.Fobv\x81\x1f>\x02
+  FLAG J\x0c\x02"
+WHAT .\\Data\\Script\\TextFunc.Fob RUNF \xda\x01 \x02
+CMD1 TextOn RUNF \x08\x02 \x025  FLAG \x0b\x01\x0c\x02"
+FOBT .\\Data\\Script\\Bgm.Fobv\x81\x1f>\x02 \x02
 CMD1 PlayCD RUNF h\x02 \x025
 SCEN SCE072_002 \x84\x02 \x02\xef! FLAG \x8c\x01FLAG\x02 \x94~\x0c"\x03x
  
@@ -24,7 +24,6 @@ SCEN SCE072_002 \x84\x02 \x02\xef! FLAG \x8c\x01FLAG\x02 \x94~\x0c"\x03x
 終わったんだ。@
 ようやく、終わったんだ、と。\
 
-  FLAG \xc8\x02
-FOBL " \xda\x01 \x02 \x08\x02 \x025 >\x02
+  FLAG \xc8\x02\x0c\x02" \xda\x01 \x02 \x08\x02 \x025 >\x02 \x02
 CMD1 StopCD RUNF \xee\x04 \x025 \xda\x01 \x02
 SCEN TextClosev\x81\x1f\x16\x05 \x0256\xf1

@@ -9,14 +9,13 @@ SCEN SCE060_001 \x06 \x02\xef! FLAG \x8c\x01FLAG\x02 `m\x0c"\x03B
 早桃\n　「みんな自殺して、いなくなっちゃって」@
 拓司\n　「……」\n早桃\n　「ざまあみろって思ってる」\
 
-  FLAG J
-FOBL "\x03\x07.\\Data\\Script\\TextFunc.Fob RUNF r\x01
+  FLAG J\x0c\x02"
+WHAT .\\Data\\Script\\TextFunc.Fob RUNF r\x01 \x02
 CMD1 TextOn RUNF \xa0\x01 \x025
 SCEN SCE060_002 \xbc\x01 \x02\xef! FLAG \x8c\x01FLAG\x02 dm\x0c"\x03\x18
  
 拓司\n　「……」@
 早桃\n　「おにいちゃん、後ろ向いてて。\pジャージに着替えるから」@
 \z
-  FLAG \x02
-FOBL " r\x01 \x02 \xa0\x01 \x025 r\x01 \x02
+  FLAG \x02\x0c\x02" r\x01 \x02 \xa0\x01 \x025 r\x01 \x02
 SCEN TextClosev\x81\x1f\xa6\x02 \x0256\xf1

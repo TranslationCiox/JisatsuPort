@@ -8,12 +8,12 @@ SCEN SCEK09_001 \x06 \x02\xef! FLAG \x8c\x01FLAG\x02 H\xa7\x01\x0c"\x03;
 「落とす？」@
 「袋に詰めて、落とすの」@
 「猫を？」\w\z
-  FLAG J
-FOBL "\x03\x07.\\Data\\Script\\TextFunc.Fob RUNF V\x01
-CMD1 TextOn RUNF \x84\x01 \x025  FLAG \xc8
-FOBL "\x03\x06.\\Data\\Script\\Bg.Fobsv\x81\x1f\xba\x01
-CMD2 BgAutoFadeInsv\x81\x1f\xe4\x01 \x025  FLAG \t\x01
-FOBL "\x03\x06.\\Data\\Script\\Bgm.Fobv\x81\x1f"\x02
+  FLAG J\x0c\x02"
+WHAT .\\Data\\Script\\TextFunc.Fob RUNF V\x01 \x02
+CMD1 TextOn RUNF \x84\x01 \x025  FLAG \xc8\x0c\x02"
+FOBT .\\Data\\Script\\Bg.Fobsv\x81\x1f\xba\x01 \x02
+CMD2 BgAutoFadeInsv\x81\x1f\xe4\x01 \x025  FLAG \t\x01\x0c\x02"
+FOBT .\\Data\\Script\\Bgm.Fobv\x81\x1f"\x02 \x02
 CMD1 PlayCD RUNF L\x02 \x025
 SCEN SCEK09_002 h\x02 \x02\xef! FLAG \x8c\x01FLAG\x02 L\xa7\x01\x0c"\x03\x85
  
@@ -28,8 +28,7 @@ SCEN SCEK09_002 h\x02 \x02\xef! FLAG \x8c\x01FLAG\x02 L\xa7\x01\x0c"\x03\x85
 　全然死ななかった場合は、もう一回袋を拾って－－」@
 「わかったよ」と私はいって遮った。@
 「もうわかったから。ありがとう、ゆきちゃん」\w\z
-  FLAG \xac\x02
-FOBL " V\x01 \x02 \x84\x01 \x025
+  FLAG \xac\x02\x0c\x02" V\x01 \x02 \x84\x01 \x025
 SCEN SCEK09_003 \xfa\x04 \x02\xef! FLAG \x8c\x01FLAG\x02 P\xa7\x01\x0c"\x03y
  
 　たぶん、ゆきなりのストレス解消法なのだろうと思った。@
@@ -38,8 +37,7 @@ SCEN SCEK09_003 \xfa\x04 \x02\xef! FLAG \x8c\x01FLAG\x02 P\xa7\x01\x0c"\x03y
 優しいゆきがそんなことをしているなんてショックだった。@
 嫌悪と軽蔑がわき上がってくるのも抑えられなかった。@
 でも、秘密の大きさは、私に対する信頼の大きさを意味していた。\n\p信頼の輝きが、秘密の暗さを消し去るくらい明るいと信じてこそ\nの告白である以上、秘密が大きくて暗いほど、私は喜ぶべきなの\nだ。\w\z
-  FLAG >\x05
-FOBL " V\x01 \x02 \x84\x01 \x025
+  FLAG >\x05\x0c\x02" V\x01 \x02 \x84\x01 \x025
 SCEN SCEK09_004 \\\x07 \x02\xef! FLAG \x8c\x01FLAG\x02 T\xa7\x01\x0c"\x03\xd0
  
 　私は自分の中に生まれた硬いかたまりをかみ砕き、飲み下した。\n\pそして、自分がゆきの秘密を赦したことを伝えたくて、ゆきを優\nしく抱きしめた。@
@@ -52,7 +50,6 @@ SCEN SCEK09_004 \\\x07 \x02\xef! FLAG \x8c\x01FLAG\x02 T\xa7\x01\x0c"\x03\xd0
 　そうすれば……」@
 　しばらく間をおいてから、ゆきはぽつりといった。@
 「そうすれば死ぬのが怖くなくなると思うから」\w\z
-  FLAG \xa0\x07
-FOBL " V\x01 \x02 \x84\x01 \x025 "\x02
+  FLAG \xa0\x07\x0c\x02" V\x01 \x02 \x84\x01 \x025 "\x02 \x02
 CMD1 StopCD RUNF &\x0b \x025 V\x01 \x02
 SCEN TextClosev\x81\x1fN\x0b \x0256\xf1

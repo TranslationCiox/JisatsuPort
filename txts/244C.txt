@@ -1,6 +1,6 @@
 START
-R3\x01`B#\x01^*  FLAG 6
-FOBL "\x03\x06.\\Data\\Script\\Bg.Fobsv\x81\x1f 
+R3\x01`B#\x01^*  FLAG 6\x0c\x02"
+FOBT .\\Data\\Script\\Bg.Fobsv\x81\x1f  \x02
 CMD2 BgAutoFadeInsv\x81\x1fJ \x025
 SCEN SCE244_001 n \x02\xef! FLAG \x8c\x01FLAG\x02 \xe0\x8c\x01\x0c"\x03 
  
@@ -9,8 +9,8 @@ SCEN SCE244_001 n \x02\xef! FLAG \x8c\x01FLAG\x02 \xe0\x8c\x01\x0c"\x03
 早桃も頷き返す。@
 \n拓司\n　「他には……？」\
 
-  FLAG \xb2
-FOBL "\x03\x07.\\Data\\Script\\TextFunc.Fob RUNF R\x01
+  FLAG \xb2\x0c\x02"
+WHAT .\\Data\\Script\\TextFunc.Fob RUNF R\x01 \x02
 CMD1 TextOn RUNF \x80\x01 \x025
 SCEN SCE244_002 \x9c\x01 \x02\xef! FLAG \x8c\x01FLAG\x02 \xe4\x8c\x01\x0c"\x03c
  
@@ -21,8 +21,7 @@ SCEN SCE244_002 \x9c\x01 \x02\xef! FLAG \x8c\x01FLAG\x02 \xe4\x8c\x01\x0c"\x03c
 \n錦城\n　「はっ。\pあなた正気？\p　出ていくがいいわ勝手に出ていって、\n　　死んでしまうがいいわ！\p　この人殺し！\p　人殺しッ！」@
 \n錦城は最後まで強気を装っていた。\
 
-  FLAG \xe0\x01
-FOBL " R\x01 \x02 \x80\x01 \x025
+  FLAG \xe0\x01\x0c\x02" R\x01 \x02 \x80\x01 \x025
 SCEN SCE244_003 \xa6\x03 \x02\xef! FLAG \x8c\x01FLAG\x02 \xe8\x8c\x01\x0c"\x03d
  
 拓司\n　「わかった。\pそれじゃ、早桃」@
@@ -36,8 +35,7 @@ SCEN SCE244_003 \xa6\x03 \x02\xef! FLAG \x8c\x01FLAG\x02 \xe8\x8c\x01\x0c"\x03d
 拓司\n　「いいんだ」@
 \n拓司は早桃を制した。@
 \z
-  FLAG \xea\x03
-FOBL " R\x01 \x02 \x80\x01 \x025
+  FLAG \xea\x03\x0c\x02" R\x01 \x02 \x80\x01 \x025
 SCEN SCE244_004 \xb4\x05 \x02\xef! FLAG \x8c\x01FLAG\x02 \xec\x8c\x01\x0c"\x03\x87
  
 拓司\n　「もう、そんなことは関係ないんだ。\p設定なんかどうでもいい。\n　　\p俺はお前が好きだ。\p義妹だとか、背のたかさがどうだとか、\n　　顔立ちがどうだとか、性格がどうだとか、口調がどうだとか\n　　……そんなことを抜きにして、お前という人間が好きなんだ。\n　　\pだから、いいんだ」@
@@ -49,15 +47,10 @@ SCEN SCE244_004 \xb4\x05 \x02\xef! FLAG \x8c\x01FLAG\x02 \xec\x8c\x01\x0c"\x03\x
 早桃が握り返すのを確認してから、拓司は歩み始めた。@
 ドアを開き、外の世界へと。\
 
-  FLAG \xf8\x05
-FOBL " R\x01 \x02 \x80\x01 \x025
-SCEN SCE244_005 N\x08 \x02\xef! FLAG \x8c\x01FLAG\x02 \xf0\x8c\x01\x0c"  FLAG \xc8
-FOBL "   \x02 J \x025  FLAG \x02
-FOBL "  \x04FLAG \x17
-FOBL "  \x08FLAG \x01
-FOBL "\x03\x06.\\Data\\Script\\Bgm.Fobv\x81\x1f\x14\t
-CMD1 SePlay RUNF >\t \x025  FLAG \t\x01
-FOBL " \x14\t
+  FLAG \xf8\x05\x0c\x02" R\x01 \x02 \x80\x01 \x025
+SCEN SCE244_005 N\x08 \x02\xef! FLAG \x8c\x01FLAG\x02 \xf0\x8c\x01\x0c"  FLAG \xc8\x0c\x02"   \x02 J \x025  FLAG \x02\x0c\x02"  \x04FLAG \x17\x0c\x02"  \x08FLAG \x01\x0c\x02"
+FOBT .\\Data\\Script\\Bgm.Fobv\x81\x1f\x14\t \x02
+CMD1 SePlay RUNF >\t \x025  FLAG \t\x01\x0c\x02" \x14\t \x02
 CMD1 PlayCD RUNF \x80\t \x025\x03\xbb
  
 拓司\n　「これは……」@
@@ -71,15 +64,13 @@ CMD1 PlayCD RUNF \x80\t \x025\x03\xbb
 まるで、何十年も放棄されていた場所のようだ。@
 あの工業団地の廃墟にさらなる歳月の洗礼を加えて、行き着く果\nてまで荒廃を深化させた－－そんな感じがする。\
 
-  FLAG \x9c\t
-FOBL " R\x01 \x02 \x80\x01 \x025
+  FLAG \x9c\t\x0c\x02" R\x01 \x02 \x80\x01 \x025
 SCEN SCE244_006 \xc2\x0c \x02\xef! FLAG \x8c\x01FLAG\x02 \xf4\x8c\x01\x0c"\x03`
  
 腐敗した死体が転がっているのを予想していたが、そのようなも\nのはどこにもない。\p骨や服のかけらすら見つけることができない。\n\pただ、壁にべったりとこびりついている染みが、どこか血の痕を\n想起させる。\pまた、しなびた皮膚のような、毛髪の一部のような、\n正体不明のものがべったりと張り付いている壁もある。@
 もしかしたら、それこそが学生たちのなれの果てなのかもしれな\nい……。\
 
-  FLAG \x06\r
-FOBL " R\x01 \x02 \x80\x01 \x025
+  FLAG \x06\r\x0c\x02" R\x01 \x02 \x80\x01 \x025
 SCEN SCE244_007 \xc0\x0e \x02\xef! FLAG \x8c\x01FLAG\x02 \xf8\x8c\x01\x0c"\x03D
  
 早桃\n　「どうしたの、これ……？\p　まるで……まるで……」@
@@ -87,8 +78,7 @@ SCEN SCE244_007 \xc0\x0e \x02\xef! FLAG \x8c\x01FLAG\x02 \xf8\x8c\x01\x0c"\x03D
 \n早桃が、無言で拓司の袖をぎゅっと握る。@
 拓司はその手の上に自分の手を重ねて、力強く頷いた。\
 
-  FLAG \x04\x0f
-FOBL " R\x01 \x02 \x80\x01 \x025
+  FLAG \x04\x0f\x0c\x02" R\x01 \x02 \x80\x01 \x025
 SCEN SCE244_008 N\x10 \x02\xef! FLAG \x8c\x01FLAG\x02 \xfc\x8c\x01\x0c"\x03\xd6
  
 拓司\n　「考えるのはやめよう。\p俺たちは最初から、起こっていること\n　　の意味を考え続けてきた。\p説明できない状況に筋を一本通そ\n　　うと……あがいてきた。\pでも、そんなの無駄なんだ。@
@@ -102,8 +92,7 @@ SCEN SCE244_008 N\x10 \x02\xef! FLAG \x8c\x01FLAG\x02 \xfc\x8c\x01\x0c"\x03\xd6
 地面がひどく急勾配に思える。@
 まっすぐ歩いているつもりなのに、壁に体当たりしているときも\nある。\
 
-  FLAG \x92\x10
-FOBL " R\x01 \x02 \x80\x01 \x025
+  FLAG \x92\x10\x0c\x02" R\x01 \x02 \x80\x01 \x025
 SCEN SCE244_009 $\x14 \x02\xef! FLAG \x8c\x01FLAG\x02 \x8d\x01\x0c"\x03M
  
 それでも２人は歩き続けた。@
@@ -112,10 +101,8 @@ SCEN SCE244_009 $\x14 \x02\xef! FLAG \x8c\x01FLAG\x02 \x8d\x01\x0c"\x03M
 時間にすれば３分ほどであったのだろう、しかし目的地に着いた\nとき、拓司たちは数時間も歩いたような疲労に充たされていた。@
 しかし、拓司は身体の隅々に残ったエネルギーを総動員して、そ\nのまえに立った。\
 
-  FLAG h\x14
-FOBL " R\x01 \x02 \x80\x01 \x025  FLAG \x02
-FOBL " \x14\t
-CMD1 SeStop RUNF \xfc\x15 \x025 \x14\t
+  FLAG h\x14\x0c\x02" R\x01 \x02 \x80\x01 \x025  FLAG \x02\x0c\x02" \x14\t \x02
+CMD1 SeStop RUNF \xfc\x15 \x025 \x14\t \x02
 CMD1 StopCD RUNF $\x16 \x025
 SCEN SCE244_010 @\x16 \x02\xef! FLAG \x8c\x01FLAG\x02 \x04\x8d\x01\x0c"\x03D
  
@@ -128,8 +115,7 @@ SCEN SCE244_010 @\x16 \x02\xef! FLAG \x8c\x01FLAG\x02 \x04\x8d\x01\x0c"\x03D
 この壁の奥には何が隠されているのだろうか？@
 いや、そもそもそこには何かがあるのだろうか？\
 
-  FLAG \x84\x16
-FOBL " R\x01 \x02 \x80\x01 \x025
+  FLAG \x84\x16\x0c\x02" R\x01 \x02 \x80\x01 \x025
 SCEN SCE244_011 \xce\x17 \x02\xef! FLAG \x8c\x01FLAG\x02 \x08\x8d\x01\x0c"\x03_
  
 拓司は考えなかった。@
@@ -139,12 +125,8 @@ SCEN SCE244_011 \xce\x17 \x02\xef! FLAG \x8c\x01FLAG\x02 \x08\x8d\x01\x0c"\x03_
 拓司\n　「ああ！\p　一緒に……」@
 早桃\n　「うん！」\
 
-  FLAG \x12\x18
-FOBL " R\x01 \x02 \x80\x01 \x025
-SCEN SCE244_012 \xc8\x19 \x02\xef! FLAG \x8c\x01FLAG\x02 \x0c\x8d\x01\x0c"  FLAG \x02
-FOBL "  \x04FLAG \x0f
-FOBL "  \x08FLAG \x01
-FOBL " \x14\t \x02 >\t \x025\x03\xae
+  FLAG \x12\x18\x0c\x02" R\x01 \x02 \x80\x01 \x025
+SCEN SCE244_012 \xc8\x19 \x02\xef! FLAG \x8c\x01FLAG\x02 \x0c\x8d\x01\x0c"  FLAG \x02\x0c\x02"  \x04FLAG \x0f\x0c\x02"  \x08FLAG \x01\x0c\x02" \x14\t \x02 >\t \x025\x03\xae
  
 ２人は取り憑かれたように、椅子の脚を壁に叩き付けた。@
 一箇所に狙いを絞って叩きつけてゆく。@
@@ -158,8 +140,7 @@ FOBL " \x14\t \x02 >\t \x025\x03\xae
 壁の厚さはさほどではない。@
 １０センチほどしかない！\
 
-  FLAG t\x1a
-FOBL " R\x01 \x02 \x80\x01 \x025
+  FLAG t\x1a\x0c\x02" R\x01 \x02 \x80\x01 \x025
 SCEN SCE244_013 f\x1d \x02\xef! FLAG \x8c\x01FLAG\x02 \x10\x8d\x01\x0c"\x03\x8d
  
 拓司はおそるおそる、穴に顔を近づけた。@
@@ -173,8 +154,7 @@ SCEN SCE244_013 f\x1d \x02\xef! FLAG \x8c\x01FLAG\x02 \x10\x8d\x01\x0c"\x03\x8d
 \n向こう側から、誰かがこちらを見ていた。@
 \nぴったりと穴に顔を張り付かせて、壁の向こうで誰かがこちらを\nのぞき込んでいたのだ。\
 
-  FLAG \xaa\x1d
-FOBL " R\x01 \x02 \x80\x01 \x025
+  FLAG \xaa\x1d\x0c\x02" R\x01 \x02 \x80\x01 \x025
 SCEN SCE244_014 \x18  \x02\xef! FLAG \x8c\x01FLAG\x02 \x14\x8d\x01\x0c"\x03r
  
 拓司\n　「だ、誰だッ！」@
@@ -186,8 +166,7 @@ SCEN SCE244_014 \x18  \x02\xef! FLAG \x8c\x01FLAG\x02 \x14\x8d\x01\x0c"\x03r
 早桃\n　「おにいちゃん！\p　きゃっ！」@
 \n近づいてきた早桃を突き飛ばして、拓司は狂ったように壁に体当\nたりを繰り返した。\
 
-  FLAG \\ 
-FOBL " R\x01 \x02 \x80\x01 \x025
+  FLAG \\ \x0c\x02" R\x01 \x02 \x80\x01 \x025
 SCEN SCE244_015 ^" \x02\xef! FLAG \x8c\x01FLAG\x02 \x18\x8d\x01\x0c"\x03m
  
 拓司\n　「お前がやったのか？！　お前がこんなことの元凶なのかッ？\n　　！\p　ふざけるなよ、畜生！」@
@@ -202,14 +181,12 @@ SCEN SCE244_015 ^" \x02\xef! FLAG \x8c\x01FLAG\x02 \x18\x8d\x01\x0c"\x03m
 ガラス玉で作られた偽物の目。@
 狂気を呼び込み、それに容易に支配される目だった。\
 
-  FLAG \xa2"
-FOBL " R\x01 \x02 \x80\x01 \x025
+  FLAG \xa2"\x0c\x02" R\x01 \x02 \x80\x01 \x025
 SCEN SCE244_016 \x90$ \x02\xef! FLAG \x8c\x01FLAG\x02 \x1c\x8d\x01\x0c"\x03C
  
 体当たりを繰り返しているうちに、拓司のシャツの肩の部分には\n真っ赤な血が滲み始めた。\pそれに気づいてようやく拓司は体当た\nりをやめ、今度は椅子の脚をふりかぶって、メチャクチャに壁に\n叩き付け始めた。\pガンガンという音が頭が割れそうなくらい大き\nく響き渡る。@
 \z
-  FLAG \xd4$
-FOBL " R\x01 \x02 \x80\x01 \x025
+  FLAG \xd4$\x0c\x02" R\x01 \x02 \x80\x01 \x025
 SCEN SCE244_017 \x1a& \x02\xef! FLAG \x8c\x01FLAG\x02  \x8d\x01\x0c"\x03\x80
  
 早桃\n　「おにいちゃん！\p　おにいちゃん！」@
@@ -221,8 +198,7 @@ SCEN SCE244_017 \x1a& \x02\xef! FLAG \x8c\x01FLAG\x02  \x8d\x01\x0c"\x03\x80
 それは、津波や地震の前触れのように思えた。@
 しかし、そうではないことを、拓司は知っていた。@
 \z
-  FLAG ^&
-FOBL " R\x01 \x02 \x80\x01 \x025
+  FLAG ^&\x0c\x02" R\x01 \x02 \x80\x01 \x025
 SCEN SCE244_018 \x98( \x02\xef! FLAG \x8c\x01FLAG\x02 $\x8d\x01\x0c"\x03,
  
 早桃\n　「ねえ、なに？\p　なんなの、この音ッ？！」@
@@ -231,12 +207,10 @@ SCEN SCE244_018 \x98( \x02\xef! FLAG \x8c\x01FLAG\x02 $\x8d\x01\x0c"\x03,
 わかっていた。@
 最終波動がやってきたのだ。\
 
-  FLAG \xdc(
-FOBL " R\x01 \x02 \x80\x01 \x025\x03FLAG
+  FLAG \xdc(\x0c\x02" R\x01 \x02 \x80\x01 \x025\x03FLAG
 CHOICE
 シェルターに駆け戻る\n穴を広げる\n\l0,2,
 ENDCHOICE
 
-  FLAG \xc6)
-FOBL " R\x01 \x02 \x80\x01 \x025 R\x01 \x02
+  FLAG \xc6)\x0c\x02" R\x01 \x02 \x80\x01 \x025 R\x01 \x02
 SCEN TextClosev\x81\x1f@* \x0256\xf1

@@ -1,9 +1,7 @@
 START
 \xdc\x07\x01`B#\x01(\x06
-SCEN SCE051_001 \x06 \x02\xef! FLAG \x8c\x01FLAG\x02 P_\x0c"  FLAG \x02
-FOBL "  \x04FLAG \x1a
-FOBL "  \x08FLAG \x01
-FOBL "\x03\x06.\\Data\\Script\\Bgm.Fobv\x81\x1f\x98
+SCEN SCE051_001 \x06 \x02\xef! FLAG \x8c\x01FLAG\x02 P_\x0c"  FLAG \x02\x0c\x02"  \x04FLAG \x1a\x0c\x02"  \x08FLAG \x01\x0c\x02"
+FOBT .\\Data\\Script\\Bgm.Fobv\x81\x1f\x98 \x02
 CMD1 SePlay RUNF \xc2 \x025\x03\xa2
  
 　静まり返った廊下に、拓司たちの足音が響く。@
@@ -17,22 +15,19 @@ CMD1 SePlay RUNF \xc2 \x025\x03\xa2
 　なたねの妄想になど、つきあっていられない。@
 　焦りと不安が、なたねへの怒りへと転嫁されて、ふつふつと胸\n　の中で煮えたぎっていた。\
 
-  FLAG \xde
-FOBL "\x03\x07.\\Data\\Script\\TextFunc.Fob RUNF \x86\x03
+  FLAG \xde\x0c\x02"
+WHAT .\\Data\\Script\\TextFunc.Fob RUNF \x86\x03 \x02
 CMD1 TextOn RUNF \xb4\x03 \x025
 SCEN SCE051_002 \xd0\x03 \x02\xef! FLAG \x8c\x01FLAG\x02 T_\x0c"\x03-
  
 なたね\n　「……教室に入る前に……なかを確かめて！　そうしないと危\n　　険だわ！」@
 \nそんな声を背中に聞きながら、拓司は駆けた。\p早桃の教室まで、\nあっという間だった。\
 
-  FLAG \x14\x04
-FOBL " \x86\x03 \x02 \xb4\x03 \x025  FLAG \x02
-FOBL " \x98
+  FLAG \x14\x04\x0c\x02" \x86\x03 \x02 \xb4\x03 \x025  FLAG \x02\x0c\x02" \x98 \x02
 CMD1 SeStop RUNF (\x05 \x025\x03 
 CHOICE
 一刻も待てない。拓司はその勢いのまま、教室に躍り込んだ。\n拓司はなたねの警告に従って、そっと中をのぞき込んだ。\n\l0,2,
 ENDCHOICE
 
-  FLAG D\x05
-FOBL " \x86\x03 \x02 \xb4\x03 \x025 \x86\x03 \x02
+  FLAG D\x05\x0c\x02" \x86\x03 \x02 \xb4\x03 \x025 \x86\x03 \x02
 SCEN TextClosev\x81\x1f\n\x06 \x0256\xf1

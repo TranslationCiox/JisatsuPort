@@ -4,10 +4,10 @@ SCEN SCE228_001 \x06 \x02\xef! FLAG \x8c\x01FLAG\x02 \xe0s\x01\x0c"\x03\x11
  
 \n\n\n\n\n\n\n\n\n\n　　　　　　　　　　　　『１４日目』\
 
-  FLAG J
-FOBL "\x03\x07.\\Data\\Script\\TextFunc.Fob RUNF \xae
-CMD1 TextOn RUNF \xdc \x025  FLAG \t\x01
-FOBL "\x03\x06.\\Data\\Script\\Bgm.Fobv\x81\x1f\x12\x01
+  FLAG J\x0c\x02"
+WHAT .\\Data\\Script\\TextFunc.Fob RUNF \xae \x02
+CMD1 TextOn RUNF \xdc \x025  FLAG \t\x01\x0c\x02"
+FOBT .\\Data\\Script\\Bgm.Fobv\x81\x1f\x12\x01 \x02
 CMD1 PlayCD RUNF <\x01 \x025
 SCEN SCE228_002 X\x01 \x02\xef! FLAG \x8c\x01FLAG\x02 \xe4s\x01\x0c"\x03O
  
@@ -19,8 +19,7 @@ SCEN SCE228_002 X\x01 \x02\xef! FLAG \x8c\x01FLAG\x02 \xe4s\x01\x0c"\x03O
 御堂\n　「セックスだよ」@
 拓司\n　「ふざけるな」\
 
-  FLAG \x9c\x01
-FOBL " \xae \x02 \xdc \x025
+  FLAG \x9c\x01\x0c\x02" \xae \x02 \xdc \x025
 SCEN SCE228_003 \x12\x03 \x02\xef! FLAG \x8c\x01FLAG\x02 \xe8s\x01\x0c"\x03\x88
  
 御堂\n　「ふざけてなんかいないさ。\pそんなかわいい子が家の中にいた\n　　ら、我慢できないのが普通だろうが。\p別に血が繋がってるわ\n　　けでもなし、超使い勝手がいい性欲処理道具じゃねえか。@
@@ -30,8 +29,7 @@ SCEN SCE228_003 \x12\x03 \x02\xef! FLAG \x8c\x01FLAG\x02 \xe8s\x01\x0c"\x03\x88
 拓司\n　「なに？」@
 御堂\n　「ここでしてみせろよ。\p一回見てみたかったんだよな、そうい\n　　うのさ。\p……感謝しろよ。\pこんな機会でもなきゃ、義妹とセ\n　　ックスなんかできないぜ？」\
 
-  FLAG V\x03
-FOBL " \xae \x02 \xdc \x025
+  FLAG V\x03\x0c\x02" \xae \x02 \xdc \x025
 SCEN SCE228_004 \xb0\x05 \x02\xef! FLAG \x8c\x01FLAG\x02 \xecs\x01\x0c"\x03n
  
 拓司\n　「断る」@
@@ -44,8 +42,7 @@ SCEN SCE228_004 \xb0\x05 \x02\xef! FLAG \x8c\x01FLAG\x02 \xecs\x01\x0c"\x03n
 \n拓司はいった。\p御堂になど、早桃を抱かせるわけにはいかない。@
 \n早桃\n　「おにいちゃん……」\
 
-  FLAG \xf4\x05
-FOBL " \xae \x02 \xdc \x025
+  FLAG \xf4\x05\x0c\x02" \xae \x02 \xdc \x025
 SCEN SCE228_005 \xe6\x07 \x02\xef! FLAG \x8c\x01FLAG\x02 \xf0s\x01\x0c"\x03\x87
  
 拓司\n　「ごめんな。\p恨んでくれても構わない」@
@@ -56,8 +53,7 @@ SCEN SCE228_005 \xe6\x07 \x02\xef! FLAG \x8c\x01FLAG\x02 \xf0s\x01\x0c"\x03\x87
 \n御堂\n　「おいおいおいおいおい！\p　誰がチンケなラブシーン見せろっ\n　　ていったよ！\p　俺は別に、お前らの禁じられた愛を成就する\n　　手伝いしてるんじゃねえんだよ」@
 早桃\n　「お、おにいちゃんッ？！\p　大丈夫、おにいちゃん！」\
 
-  FLAG *\x08
-FOBL " \xae \x02 \xdc \x025
+  FLAG *\x08\x0c\x02" \xae \x02 \xdc \x025
 SCEN SCE228_006 \x80\n \x02\xef! FLAG \x8c\x01FLAG\x02 \xf4s\x01\x0c"\x03\xaa
  
 御堂\n　「嫌いなんだよね、俺。\pたかだか性欲処理にいろいろ理由くっ\n　　つけるやつらって。\p『愛しているから抱くんだよ』とか『お\n　　前だから勃起するんだよ』とかさ。\p男がそんな理屈で立つか\n　　よ！\p　マ○コ見りゃ立つんだろ！\p　虎菱、え、そうだろうが\n　　よ虎菱！\p　愛してるからじゃなくて、やりたいから立つんだ\n　　ろうがよお！」@
@@ -67,8 +63,7 @@ SCEN SCE228_006 \x80\n \x02\xef! FLAG \x8c\x01FLAG\x02 \xf4s\x01\x0c"\x03\xaa
 拓司\n　「……ゲス野郎！」@
 \n黙って様子を見ていた錦城が、あいだに割って入った。\
 
-  FLAG \xc4\n
-FOBL " \xae \x02 \xdc \x025
+  FLAG \xc4\n\x0c\x02" \xae \x02 \xdc \x025
 SCEN SCE228_007 \xa6\r \x02\xef! FLAG \x8c\x01FLAG\x02 \xf8s\x01\x0c"\x03\xa9
  
 錦城\n　「ねえ、御堂くん。\p虎菱くんに、義妹さんをおかずにオナニー\n　　してもらったらどう？」@
@@ -79,8 +74,7 @@ SCEN SCE228_007 \xa6\r \x02\xef! FLAG \x8c\x01FLAG\x02 \xf8s\x01\x0c"\x03\xa9
 錦城\n　「いいわね、その声。\pきっとおにいちゃんも勃起するわよ。@
 　　もっと嫌がって頂戴。\p大切な義妹が嫌がっているにも関わら\n　　ず立つんだととしたら、それは愛で勃起してるんじゃないっ\n　　てことよねえ。\pくすくす」\
 
-  FLAG \xea\r
-FOBL " \xae \x02 \xdc \x025
+  FLAG \xea\r\x0c\x02" \xae \x02 \xdc \x025
 SCEN SCE228_008 \xc8\x10 \x02\xef! FLAG \x8c\x01FLAG\x02 \xfcs\x01\x0c"\x03\x95
  
 早桃\n　「は、離してよお！」@
@@ -89,8 +83,7 @@ SCEN SCE228_008 \xc8\x10 \x02\xef! FLAG \x8c\x01FLAG\x02 \xfcs\x01\x0c"\x03\x95
 \n錦城は早桃を抱えたまま実験台の上に腰を下ろした。\p膝の上に早\n桃を腰掛けさせるような形にして、両足を下からすくい上げ、左\n右に開かせる。@
 むっちりとした白いふとももが、ブルマから生えている。\
 
-  FLAG \x0c\x11
-FOBL " \xae \x02 \xdc \x025
+  FLAG \x0c\x11\x0c\x02" \xae \x02 \xdc \x025
 SCEN SCE228_009 \x9a\x13 \x02\xef! FLAG \x8c\x01FLAG\x02 t\x01\x0c"\x03\xa1
  
 錦城\n　「あら、早桃ちゃん。\pずいぶんふっくらしたおま○こなのねえ。\n　　\pこんな可愛い顔しているのに、いやらしい身体だわ、本当に」\n\p早桃\n　「や、やああ」@
@@ -100,8 +93,7 @@ SCEN SCE228_009 \x9a\x13 \x02\xef! FLAG \x8c\x01FLAG\x02 t\x01\x0c"\x03\xa1
 早桃\n　「ひっ？！」@
 錦城\n　「あらあら、敏感ねえ。\pこうやってゆっくり撫でてると……あ\n　　ら、なんだか湿ってるみたいだけど？」\
 
-  FLAG \xde\x13
-FOBL " \xae \x02 \xdc \x025
+  FLAG \xde\x13\x0c\x02" \xae \x02 \xdc \x025
 SCEN SCE228_010 \x9c\x16 \x02\xef! FLAG \x8c\x01FLAG\x02 \x04t\x01\x0c"\x03\xa4
  
 早桃\n　「そ、そんなことないっ！」@
@@ -111,8 +103,7 @@ SCEN SCE228_010 \x9c\x16 \x02\xef! FLAG \x8c\x01FLAG\x02 \x04t\x01\x0c"\x03\xa4
 \nいわれるまでもなく、拓司は自分が勃起していることに気づいて\nいた。@
 理性では押さえきれない動物的な興奮が、頭の中で膨れ上がって\n爆発寸前だった。\
 
-  FLAG \xe0\x16
-FOBL " \xae \x02 \xdc \x025
+  FLAG \xe0\x16\x0c\x02" \xae \x02 \xdc \x025
 SCEN SCE228_011 \xaa\x19 \x02\xef! FLAG \x8c\x01FLAG\x02 \x08t\x01\x0c"\x03\xae
  
 御堂\n　「おかしいよなあ。\p愛があるんなら勃起しねえはずだよなあ？@
@@ -124,8 +115,7 @@ SCEN SCE228_011 \xaa\x19 \x02\xef! FLAG \x8c\x01FLAG\x02 \x08t\x01\x0c"\x03\xae
 義妹の目の前で、勃起した性器を晒す義兄。@
 両者とも、うつむいて目を合わせまいとしている。\pしかし両者と\nも、互いの淫らな姿に興奮しきっている……。\
 
-  FLAG \xee\x19
-FOBL " \xae \x02 \xdc \x025
+  FLAG \xee\x19\x0c\x02" \xae \x02 \xdc \x025
 SCEN SCE228_012 \xe0\x1c \x02\xef! FLAG \x8c\x01FLAG\x02 \x0ct\x01\x0c"\x03\xf2
  
 その後のことを、拓司は断片的にしか覚えていない。@
@@ -140,8 +130,7 @@ SCEN SCE228_012 \xe0\x1c \x02\xef! FLAG \x8c\x01FLAG\x02 \x0ct\x01\x0c"\x03\xf2
 錦城は油性マジックでカンナの額に、『便器』と書いた。@
 涙を流しながら錦城は笑っていた。\
 
-  FLAG $\x1d
-FOBL " \xae \x02 \xdc \x025
+  FLAG $\x1d\x0c\x02" \xae \x02 \xdc \x025
 SCEN SCE228_013 &! \x02\xef! FLAG \x8c\x01FLAG\x02 \x10t\x01\x0c"\x03\x91
  
 御堂はその一部始終を笑いながら眺めていた。しかし常に拓司に\n目をくばっているあたり、あくまで冷静だった。@
@@ -154,18 +143,15 @@ SCEN SCE228_013 &! \x02\xef! FLAG \x8c\x01FLAG\x02 \x10t\x01\x0c"\x03\x91
 \n目を押さえて御堂が叫んだ。@
 立ちつくす拓司たちの前で、雲居なたねが高く笑った。\
 
-  FLAG j!
-FOBL " \xae \x02 \xdc \x025
+  FLAG j!\x0c\x02" \xae \x02 \xdc \x025
 SCEN SCE228_014 \xe8# \x02\xef! FLAG \x8c\x01FLAG\x02 \x14t\x01\x0c"\x03w
  
 なたね\n　「あはははははははは！\p　敵を拘束するときは身体検査くらい\n　　するのが常識だろうがこの民間人！\p　戦士である私が、武器\n　　のひとつくらい隠し持っていないとでも思ったかひっつき星\n　　人！\p　これがただの畳針だと思うなよ。\pこれはテスラ式処置\n　　を施して電流を流した特別製の次元毒針だ！\p　物理的ダメー\n　　ジを超えて存在自体にダメージを与えるからお前みたいな宇\n　　宙人にも効果てきめんだ！\p　思い知ったか！\p　思い知ったか\n　　あああああああ！」\
 
-  FLAG ,$
-FOBL " \xae \x02 \xdc \x025\x03\x13
+  FLAG ,$\x0c\x02" \xae \x02 \xdc \x025\x03\x13
 CHOICE
 拓司は御堂に躍りかかった\n拓司は凍り付いたまま動かなかった\n\l0,2,
 ENDCHOICE
 
-  FLAG B&
-FOBL " \xae \x02 \xdc \x025 \xae \x02
+  FLAG B&\x0c\x02" \xae \x02 \xdc \x025 \xae \x02
 SCEN TextClosev\x81\x1f\xd4& \x0256\xf1

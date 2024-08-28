@@ -1,8 +1,8 @@
 START
-\x9c/\x01`B#\x01\xb6'  FLAG \n
-FOBL "\x03\x06.\\Data\\Script\\Bg.Fobsv\x81\x1f 
-CMD2 BgAutoFadeInsv\x81\x1fJ \x025  FLAG \x08\x01
-FOBL "\x03\x06.\\Data\\Script\\Bgm.Fobv\x81\x1f\x88
+\x9c/\x01`B#\x01\xb6'  FLAG \n\x0c\x02"
+FOBT .\\Data\\Script\\Bg.Fobsv\x81\x1f  \x02
+CMD2 BgAutoFadeInsv\x81\x1fJ \x025  FLAG \x08\x01\x0c\x02"
+FOBT .\\Data\\Script\\Bgm.Fobv\x81\x1f\x88 \x02
 CMD1 PlayCD RUNF \xb2 \x025
 SCEN SCE033_001 \xce \x02\xef! FLAG \x8c\x01FLAG\x02 0C\x0c"\x03G
  
@@ -13,8 +13,8 @@ SCEN SCE033_001 \xce \x02\xef! FLAG \x8c\x01FLAG\x02 0C\x0c"\x03G
 拓司\n　「★★★」@
 カンナ\n　「正解」\
 
-  FLAG \x12\x01
-FOBL "\x03\x07.\\Data\\Script\\TextFunc.Fob RUNF N\x02
+  FLAG \x12\x01\x0c\x02"
+WHAT .\\Data\\Script\\TextFunc.Fob RUNF N\x02 \x02
 CMD1 TextOn RUNF |\x02 \x025
 SCEN SCE033_002 \x98\x02 \x02\xef! FLAG \x8c\x01FLAG\x02 4C\x0c"\x03\xd8
  
@@ -29,8 +29,7 @@ SCEN SCE033_002 \x98\x02 \x02\xef! FLAG \x8c\x01FLAG\x02 4C\x0c"\x03\xd8
 気がつかないうちに妄想の中に落ち込んでいた。現実と妄想の境\n目にある段差を、踏み外していた。@
 \n－－もしかしていまもおれは妄想の世界にいるのではないか？\
 
-  FLAG \xdc\x02
-FOBL " N\x02 \x02 |\x02 \x025
+  FLAG \xdc\x02\x0c\x02" N\x02 \x02 |\x02 \x025
 SCEN SCE033_003 v\x06 \x02\xef! FLAG \x8c\x01FLAG\x02 8C\x0c"\x03k
  
 思って拓司は足が震えるのを禁じ得なかった。@
@@ -42,10 +41,7 @@ SCEN SCE033_003 v\x06 \x02\xef! FLAG \x8c\x01FLAG\x02 8C\x0c"\x03k
 カンナ\n　「……まあ、いいわ。それよりひとつ、面白い話を聞いたんだ\n　　けど……『死の保健室』って聞いたことあるかしら？」@
 拓司\n　「死の……保健室？」\
 
-  FLAG \xba\x06
-FOBL " N\x02 \x02 |\x02 \x025  FLAG \x06\x01
-FOBL " \x88 \x02 \xb2 \x025  FLAG \xc8
-FOBL "   \x02 J \x025
+  FLAG \xba\x06\x0c\x02" N\x02 \x02 |\x02 \x025  FLAG \x06\x01\x0c\x02" \x88 \x02 \xb2 \x025  FLAG \xc8\x0c\x02"   \x02 J \x025
 SCEN SCE033_004 \x08\t \x02\xef! FLAG \x8c\x01FLAG\x02 <C\x0c"\x03\x8b
  
 カンナ\n　「ええ。\p旧校舎の地下にある……いえ、あった保健室の話なん\n　　だけれどね。\p１４年前、ある事件が起こって、入り口がコン\n　　クリートで固められて封印されたっていう」@
@@ -56,8 +52,7 @@ SCEN SCE033_004 \x08\t \x02\xef! FLAG \x8c\x01FLAG\x02 <C\x0c"\x03\x8b
 拓司\n　「……それは？」@
 カンナ\n　「ネットで調べた、事件に関わった人間の名前」\
 
-  FLAG L\t
-FOBL " N\x02 \x02 |\x02 \x025
+  FLAG L\t\x0c\x02" N\x02 \x02 |\x02 \x025
 SCEN SCE033_005 \xb2\x0b \x02\xef! FLAG \x8c\x01FLAG\x02 @C\x0c"\x03\xb0
  
 拓司\n　「まさか……本当にあった話なのか？」@
@@ -67,8 +62,7 @@ SCEN SCE033_005 \xb2\x0b \x02\xef! FLAG \x8c\x01FLAG\x02 @C\x0c"\x03\xb0
 　　遺書も無し。\p専門家は、最初の自殺に触発されて、もともと\n　　自殺願望のあった学生が保健室に引き寄せられて衝動的に自\n　　殺したと判断しているわ。\p……あり得ない話ではないわね。@
 　　要するに、『名所』という響きが、自殺願望者にとって体の\n　　いい『きっかけ』になるわけね」\
 
-  FLAG \xf6\x0b
-FOBL " N\x02 \x02 |\x02 \x025
+  FLAG \xf6\x0b\x0c\x02" N\x02 \x02 |\x02 \x025
 SCEN SCE033_006 \xf0\x0e \x02\xef! FLAG \x8c\x01FLAG\x02 DC\x0c"\x03W
  
 拓司\n　「中央線とか、樹海とか」@
@@ -77,8 +71,7 @@ SCEN SCE033_006 \xf0\x0e \x02\xef! FLAG \x8c\x01FLAG\x02 DC\x0c"\x03W
 カンナ\n　「私がこの話にたどり着いたのは、もともと『旧校舎の人魂』\n　　の話を調べていたからなの」@
 拓司\n　「人魂……？」\
 
-  FLAG 4\x0f
-FOBL " N\x02 \x02 |\x02 \x025
+  FLAG 4\x0f\x0c\x02" N\x02 \x02 |\x02 \x025
 SCEN SCE033_007 \xca\x10 \x02\xef! FLAG \x8c\x01FLAG\x02 HC\x0c"\x03\x86
  
 \n拓司は思わずカンナの顔に見入った。@
@@ -86,8 +79,7 @@ SCEN SCE033_007 \xca\x10 \x02\xef! FLAG \x8c\x01FLAG\x02 HC\x0c"\x03\x86
 カンナが心霊現象を調べて、それを心理学や科学の手で得意げに\n解剖してみせるのを、拓司は何度も耳にしている。\pだからカンナ\nが人魂の話を調べていたこと自体は少しも意外ではない。@
 しかし、それと自殺がどのように結びつく？@
 \z
-  FLAG \x0e\x11
-FOBL " N\x02 \x02 |\x02 \x025
+  FLAG \x0e\x11\x0c\x02" N\x02 \x02 |\x02 \x025
 SCEN SCE033_008 `\x13 \x02\xef! FLAG \x8c\x01FLAG\x02 LC\x0c"\x03{
  
 カンナ\n　「人魂の噂は、１４年前、すでに学校にあった……」@
@@ -97,8 +89,7 @@ SCEN SCE033_008 `\x13 \x02\xef! FLAG \x8c\x01FLAG\x02 LC\x0c"\x03{
 カンナ\n　「５人の唯一の共通点。\p彼らは自殺する前に、みな、『人魂を\n　　見た』って証言しているの。\p当時の学校新聞に人魂騒動のコ\n　　ラム記事があって、その『目撃者は語る』という談話に、５\n　　人の名前全部が載っていたわ」@
 拓司\n　「……」\
 
-  FLAG \xa4\x13
-FOBL " N\x02 \x02 |\x02 \x025
+  FLAG \xa4\x13\x0c\x02" N\x02 \x02 |\x02 \x025
 SCEN SCE033_009 \xca\x15 \x02\xef! FLAG \x8c\x01FLAG\x02 PC\x0c"\x03\x91
  
 カンナ\n　「彼らはみな、人魂が『最後は保健室の中に消えていった』と\n　　証言している。\pそして『人魂は綺麗で、少しも怖くなかった\n　　どちらかとういうと、見ていて落ち着く感じがした』って。@
@@ -106,8 +97,7 @@ SCEN SCE033_009 \xca\x15 \x02\xef! FLAG \x8c\x01FLAG\x02 PC\x0c"\x03\x91
 拓司\n　「妙だな。\p人魂を見たら普通恐怖を感じるもんじゃないか？」@
 カンナ\n　「でしょう？\p　火の塊というものは、本能的に人間に警戒心を\n　　引き起こすわ。\pそれが超自然的なものであるとしたらなおさ\n　　ら。\pにも関わらず、彼らは人魂を美しいもの……よいものと\n　　して認識している」\w\n拓司\n　「……」@
 \z
-  FLAG \x0e\x16
-FOBL " N\x02 \x02 |\x02 \x025
+  FLAG \x0e\x16\x0c\x02" N\x02 \x02 |\x02 \x025
 SCEN SCE033_010 \x8c\x18 \x02\xef! FLAG \x8c\x01FLAG\x02 TC\x0c"\x03k
  
 カンナ\n　「人魂じゃないのかもしれないわね。\pなにかの象徴……だと思\n　　う」@
@@ -120,8 +110,7 @@ SCEN SCE033_010 \x8c\x18 \x02\xef! FLAG \x8c\x01FLAG\x02 TC\x0c"\x03k
 拓司\n　「……柱？」@
 カンナ\n　「……」\
 
-  FLAG \xd0\x18
-FOBL " N\x02 \x02 |\x02 \x025
+  FLAG \xd0\x18\x0c\x02" N\x02 \x02 |\x02 \x025
 SCEN SCE033_011 \xb6\x1a \x02\xef! FLAG \x8c\x01FLAG\x02 XC\x0c"\x03\xbc
  
 　月代カンナはポケットから煙草をとりだして、それを口にくわ\n　えた。@
@@ -132,8 +121,7 @@ SCEN SCE033_011 \xb6\x1a \x02\xef! FLAG \x8c\x01FLAG\x02 XC\x0c"\x03\xbc
 \n拓司\n　「ああ。\pおれたちはあの団地以外では他人って約束だったんじ\n　　ゃないか？\p　そうすることでおれたちの場所に壁をつくって\n　　……独立させるはずじゃなかったのか？@
 　　なのに、どうして朝、おれに声をかけた？」\
 
-  FLAG \xfa\x1a
-FOBL " N\x02 \x02 |\x02 \x025
+  FLAG \xfa\x1a\x0c\x02" N\x02 \x02 |\x02 \x025
 SCEN SCE033_012 $\x1e \x02\xef! FLAG \x8c\x01FLAG\x02 \\C\x0c"\x03\x8f
  
 カンナ\n　「かけたかしら？」@
@@ -145,8 +133,7 @@ SCEN SCE033_012 $\x1e \x02\xef! FLAG \x8c\x01FLAG\x02 \\C\x0c"\x03\x8f
 カンナ\n　「そう。\p夢の世界が、現実の世界を浸食するの。\pあなたと私は\n　　五号棟の５０２号室でしかセックスなんかしないはずだった@
 　　私たちの夢の世界でしか、ね。\pなのに、いま、私たちは現実\n　　の世界でセックスをした。\pそれって、夢の世界の版図が広が\n　　ったってことじゃないかしら？\p　壁の崩壊。\p性器を介した世\n　　界の侵略行為。\pそうはいえない？」\
 
-  FLAG h\x1e
-FOBL " N\x02 \x02 |\x02 \x025
+  FLAG h\x1e\x0c\x02" N\x02 \x02 |\x02 \x025
 SCEN SCE033_013 \xde  \x02\xef! FLAG \x8c\x01FLAG\x02 `C\x0c"\x03|
  
 拓司\n　「……くだらない」@
@@ -156,8 +143,7 @@ SCEN SCE033_013 \xde  \x02\xef! FLAG \x8c\x01FLAG\x02 `C\x0c"\x03|
 \n　カンナはまた、ハハハ、と笑った。\pそれからフと真剣な顔にな\n　り、@
 /*▲BGM　停止　*/\a4,-1,0,0,\nカンナ\n　「……あなた、もしかして裏切ろうとしていない？」\
 
-  FLAG "!
-FOBL " N\x02 \x02 |\x02 \x025
+  FLAG "!\x0c\x02" N\x02 \x02 |\x02 \x025
 SCEN SCE033_014 L# \x02\xef! FLAG \x8c\x01FLAG\x02 dC\x0c"\x03-
  
 拓司\n　「裏切る？」@
@@ -168,8 +154,7 @@ SCEN SCE033_014 L# \x02\xef! FLAG \x8c\x01FLAG\x02 dC\x0c"\x03-
 カンナ\n　「あるいは、私の世界を」@
 拓司\n　「……」\
 
-  FLAG \x90#
-FOBL " N\x02 \x02 |\x02 \x025
+  FLAG \x90#\x0c\x02" N\x02 \x02 |\x02 \x025
 SCEN SCE033_015 ~$ \x02\xef! FLAG \x8c\x01FLAG\x02 hC\x0c"\x03k
  
 真意を測ろうと、拓司はカンナの表情を探った。\p一瞬、そこには\n何かが宿っているようにも見えたが、結局、なにも見いだすこと\nはできなかった。\pカンナの顔にはいつもの、深い井戸を思わせる\n虚無がこびりついているだけだった。@
@@ -177,12 +162,10 @@ SCEN SCE033_015 ~$ \x02\xef! FLAG \x8c\x01FLAG\x02 hC\x0c"\x03k
 \n団地のことをいっているのだと理解したときには、すでにカンナ\nの姿は屋上から消え失せていた。@
 バタン、と鉄の扉が閉まる音が背後で響いた。\
 
-  FLAG \xc2$
-FOBL " N\x02 \x02 |\x02 \x025\x03$
+  FLAG \xc2$\x0c\x02" N\x02 \x02 |\x02 \x025\x03$
 CHOICE
 拓司は紅葉はどうしているだろうかと考えた\n拓司は今朝の早桃の様子が気になった\n拓司はそのままぼんやりと屋上から地上を眺めていた\n\l0,3,
 ENDCHOICE
 
-  FLAG \xa8&
-FOBL " N\x02 \x02 |\x02 \x025 N\x02 \x02
+  FLAG \xa8&\x0c\x02" N\x02 \x02 |\x02 \x025 N\x02 \x02
 SCEN TextClosev\x81\x1f~' \x025 N\x02 \x02 ~' \x0256\xf1

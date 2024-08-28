@@ -1,6 +1,6 @@
 START
-\xbf'\x01`B#\x01Z!  FLAG \x0b\x01
-FOBL "\x03\x06.\\Data\\Script\\Bgm.Fobv\x81\x1f 
+\xbf'\x01`B#\x01Z!  FLAG \x0b\x01\x0c\x02"
+FOBT .\\Data\\Script\\Bgm.Fobv\x81\x1f  \x02
 CMD1 PlayCD RUNF J \x025
 SCEN SCE052_001 f \x02\xef! FLAG \x8c\x01FLAG\x02 \xe0`\x0c"\x03\xac
  
@@ -18,8 +18,8 @@ SCEN SCE052_001 f \x02\xef! FLAG \x8c\x01FLAG\x02 \xe0`\x0c"\x03\xac
 円陣の中央には、ひとりの女の子が立ちすくんでいる。@
 早桃だ。\
 
-  FLAG \xaa
-FOBL "\x03\x07.\\Data\\Script\\TextFunc.Fob RUNF z\x03
+  FLAG \xaa\x0c\x02"
+WHAT .\\Data\\Script\\TextFunc.Fob RUNF z\x03 \x02
 CMD1 TextOn RUNF \xa8\x03 \x025
 SCEN SCE052_002 \xc4\x03 \x02\xef! FLAG \x8c\x01FLAG\x02 \xe4`\x0c"\x03]
  
@@ -32,8 +32,7 @@ SCEN SCE052_002 \xc4\x03 \x02\xef! FLAG \x8c\x01FLAG\x02 \xe4`\x0c"\x03]
 学生\n　「聞いたことある。\pアレだろ、ホントの兄妹じゃないって」@
 学生\n　「へえ、そうなんだ、へへ」\
 
-  FLAG \x08\x04
-FOBL " z\x03 \x02 \xa8\x03 \x025
+  FLAG \x08\x04\x0c\x02" z\x03 \x02 \xa8\x03 \x025
 SCEN SCE052_003 \xb6\x05 \x02\xef! FLAG \x8c\x01FLAG\x02 \xe8`\x0c"\x03l
  
 拓司は呆気にとられた。@
@@ -47,8 +46,7 @@ SCEN SCE052_003 \xb6\x05 \x02\xef! FLAG \x8c\x01FLAG\x02 \xe8`\x0c"\x03l
 \n学生\n　「教員ン？」@
 \nひとりが素っ頓狂な声を上げると、他の者がゲラゲラと笑い声で\n応えた。\
 
-  FLAG \xfa\x05
-FOBL " z\x03 \x02 \xa8\x03 \x025
+  FLAG \xfa\x05\x0c\x02" z\x03 \x02 \xa8\x03 \x025
 SCEN SCE052_004 \xe4\x07 \x02\xef! FLAG \x8c\x01FLAG\x02 \xec`\x0c"\x03{
  
 学生\n　「飛ばせたよ」@
@@ -62,8 +60,7 @@ SCEN SCE052_004 \xe4\x07 \x02\xef! FLAG \x8c\x01FLAG\x02 \xec`\x0c"\x03{
 　　どんよりしちゃってるんだよ、このクラス。@
 　　そんなところで勉強とか青春なんて前向きにやってられるか？\n　　\pやれねえんだよ！」\
 
-  FLAG (\x08
-FOBL " z\x03 \x02 \xa8\x03 \x025
+  FLAG (\x08\x0c\x02" z\x03 \x02 \xa8\x03 \x025
 SCEN SCE052_005 N\n \x02\xef! FLAG \x8c\x01FLAG\x02 \xf0`\x0c"\x03\x96
  
 学生は机をガン、と足でけ飛ばした。@
@@ -80,8 +77,7 @@ SCEN SCE052_005 N\n \x02\xef! FLAG \x8c\x01FLAG\x02 \xf0`\x0c"\x03\x96
 　　そんなの、バレバレだよ！@
 　　俺たちゃアホじゃねえっつーんだよッ！」\
 
-  FLAG \x92\n
-FOBL " z\x03 \x02 \xa8\x03 \x025
+  FLAG \x92\n\x0c\x02" z\x03 \x02 \xa8\x03 \x025
 SCEN SCE052_006 $\r \x02\xef! FLAG \x8c\x01FLAG\x02 \xf4`\x0c"\x03\x93
  
 拓司\n　「オイ、落ち着け！\p　いったいどうしたって－－」@
@@ -95,8 +91,7 @@ SCEN SCE052_006 $\r \x02\xef! FLAG \x8c\x01FLAG\x02 \xf4`\x0c"\x03\x93
 　　否定して、断罪した！\p　泣いてたよ、あいつ。@
 　　泣いてごめんなさいごめんなさいっていって、窓まで走って\n　　いって、そのままトップロープ越えのトペ・スイシーダだよ！\n　　\pで、今度は虎菱の番ってわけだ！」\
 
-  FLAG h\r
-FOBL " z\x03 \x02 \xa8\x03 \x025
+  FLAG h\r\x0c\x02" z\x03 \x02 \xa8\x03 \x025
 SCEN SCE052_007 \xee\x0f \x02\xef! FLAG \x8c\x01FLAG\x02 \xf8`\x0c"\x03\x90
  
 円陣の中央で、早桃がびくっと身をすくめる。@
@@ -112,8 +107,7 @@ SCEN SCE052_007 \xee\x0f \x02\xef! FLAG \x8c\x01FLAG\x02 \xf8`\x0c"\x03\x90
 \n拓司は一喝した。@
 しかし、早桃の言葉が、次の言葉をさえぎった。\
 
-  FLAG 2\x10
-FOBL " z\x03 \x02 \xa8\x03 \x025
+  FLAG 2\x10\x0c\x02" z\x03 \x02 \xa8\x03 \x025
 SCEN SCE052_008 \xac\x12 \x02\xef! FLAG \x8c\x01FLAG\x02 \xfc`\x0c"\x03f
  
 早桃\n　「しかたないよ……\p早桃が悪いんだからしかたがないよ」@
@@ -127,8 +121,7 @@ SCEN SCE052_008 \xac\x12 \x02\xef! FLAG \x8c\x01FLAG\x02 \xfc`\x0c"\x03f
 有罪、有罪、有罪！@
 有罪、有罪、有罪！\
 
-  FLAG \xf0\x12
-FOBL " z\x03 \x02 \xa8\x03 \x025
+  FLAG \xf0\x12\x0c\x02" z\x03 \x02 \xa8\x03 \x025
 SCEN SCE052_009 \xc2\x14 \x02\xef! FLAG \x8c\x01FLAG\x02 a\x0c"\x03%
  
 誰かが「死ね」といった。@
@@ -138,8 +131,7 @@ SCEN SCE052_009 \xc2\x14 \x02\xef! FLAG \x8c\x01FLAG\x02 a\x0c"\x03%
 学生\n　「死ねよ」@
 学生\n　「死ねよ」\
 
-  FLAG \x06\x15
-FOBL " z\x03 \x02 \xa8\x03 \x025
+  FLAG \x06\x15\x0c\x02" z\x03 \x02 \xa8\x03 \x025
 SCEN SCE052_010 \xd4\x15 \x02\xef! FLAG \x8c\x01FLAG\x02 \x04a\x0c"\x03\x96
  
 　死ねよ、死ねよ、死ねよ、死ねよ、死ねよ、死ねよ、死ねよ、\n　死ねよ、死ねよ、死ねよ\n　死ね死ね死ね死ね死ね死ね死ね死ね死ね死ね死ね死ね死ね死ね\n　死ね死ね死ね\n　シネシネシネシネシシネシネシネシネシネシネシネシネシネシ\n　ネシネシネシネシネシネ\n　学生たちの声は、大合唱となって教室にとどろき渡った。@
@@ -149,8 +141,7 @@ SCEN SCE052_010 \xd4\x15 \x02\xef! FLAG \x8c\x01FLAG\x02 \x04a\x0c"\x03\x96
 　ネ……足を踏み降ろす。@
 \n　シネシネシネシネシシネシネシネシネシネシネシネシネシネシ\nネシネシネシネシネシネ\n　ドンガドンガドンガドンドンガドンガドンガドンガドンガドン\nガドンガドンガドンガドンガドンガ\
 
-  FLAG \x18\x16
-FOBL " z\x03 \x02 \xa8\x03 \x025
+  FLAG \x18\x16\x0c\x02" z\x03 \x02 \xa8\x03 \x025
 SCEN SCE052_011 \xaa\x18 \x02\xef! FLAG \x8c\x01FLAG\x02 \x08a\x0c"\x03\xb4
  
 　足を踏みならす音は太鼓のリズムで、合唱は呪文の詠唱だった。@
@@ -164,9 +155,7 @@ SCEN SCE052_011 \xaa\x18 \x02\xef! FLAG \x8c\x01FLAG\x02 \x08a\x0c"\x03\xb4
 　耐えられるはずがない。\p早桃は円陣の中央で耳を覆い、しゃ\n　がみこんでしまった。@
 \n早桃\n　「ごめんなさい……ごめんなさい……ごめんなさい……」\
 
-  FLAG \xee\x18
-FOBL " z\x03 \x02 \xa8\x03 \x025  FLAG \n\x01
-FOBL "   \x02 J \x025
+  FLAG \xee\x18\x0c\x02" z\x03 \x02 \xa8\x03 \x025  FLAG \n\x01\x0c\x02"   \x02 J \x025
 SCEN SCE052_012 ,\x1c \x02\xef! FLAG \x8c\x01FLAG\x02 \x0ca\x0c"\x03\x9b
  
 猛烈な怒りに突き動かされて、拓司は円陣のなかへと躍り込んだ。@
@@ -178,8 +167,7 @@ SCEN SCE052_012 ,\x1c \x02\xef! FLAG \x8c\x01FLAG\x02 \x0ca\x0c"\x03\x9b
 胸が押さえつけられて、息すらできない。いつのまにやられたの\nか、鼻から血がだくだくとあふれ出る。@
 視界が奇妙な色で明滅する。\
 
-  FLAG p\x1c
-FOBL " z\x03 \x02 \xa8\x03 \x025
+  FLAG p\x1c\x0c\x02" z\x03 \x02 \xa8\x03 \x025
 SCEN SCE052_013 \x16\x1f \x02\xef! FLAG \x8c\x01FLAG\x02 \x10a\x0c"\x03g
  
 　興奮した声、声、声が、教室中を行き交っている。@
@@ -188,6 +176,5 @@ SCEN SCE052_013 \x16\x1f \x02\xef! FLAG \x8c\x01FLAG\x02 \x10a\x0c"\x03g
 /*■黒　表示（ノンエフェクト）.*/\a7,-1,-1,0,\a0,200,1,0,\a6,0,0,0,/*▲BGM　停止*/\a4,-1,0,0,　やがて潮が引くように、声が収まっていった。@
 　静寂の中、バットが振り下ろされた。\
 
-  FLAG Z\x1f
-FOBL " z\x03 \x02 \xa8\x03 \x025 z\x03 \x02
+  FLAG Z\x1f\x0c\x02" z\x03 \x02 \xa8\x03 \x025 z\x03 \x02
 SCEN TextClosev\x81\x1f<! \x0256\xf1

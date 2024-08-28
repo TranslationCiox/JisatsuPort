@@ -8,8 +8,8 @@ SCEN SCE218_001 \x06 \x02\xef! FLAG \x8c\x01FLAG\x02 @d\x01\x0c"\x036
 御堂\n　「うるせえッ！」@
 \n重い一撃が顎を捉え、さらに鋭い蹴りが拓司を後方にはじき飛ば\nした。\
 
-  FLAG J
-FOBL "\x03\x07.\\Data\\Script\\TextFunc.Fob RUNF B\x01
+  FLAG J\x0c\x02"
+WHAT .\\Data\\Script\\TextFunc.Fob RUNF B\x01 \x02
 CMD1 TextOn RUNF p\x01 \x025
 SCEN SCE218_002 \x8c\x01 \x02\xef! FLAG \x8c\x01FLAG\x02 Dd\x01\x0c"\x03x
  
@@ -19,9 +19,8 @@ SCEN SCE218_002 \x8c\x01 \x02\xef! FLAG \x8c\x01FLAG\x02 Dd\x01\x0c"\x03x
 　　やあああああめえええろおおおおお！」@
 御堂\n　「この……××××が……思い知れ！\p　思い知れ！」\
 
-  FLAG \xd0\x01
-FOBL " B\x01 \x02 p\x01 \x025  FLAG $
-FOBL "\x03\x06.\\Data\\Script\\Bg.Fobsv\x81\x1f\x04\x04
+  FLAG \xd0\x01\x0c\x02" B\x01 \x02 p\x01 \x025  FLAG $\x0c\x02"
+FOBT .\\Data\\Script\\Bg.Fobsv\x81\x1f\x04\x04 \x02
 CMD2 BgAutoFadeInsv\x81\x1f.\x04 \x025
 SCEN SCE218_003 R\x04 \x02\xef! FLAG \x8c\x01FLAG\x02 Hd\x01\x0c"\x03\x9b
  
@@ -37,8 +36,7 @@ SCEN SCE218_003 R\x04 \x02\xef! FLAG \x8c\x01FLAG\x02 Hd\x01\x0c"\x03\x9b
 理性や人間性に立脚した、あらゆるものは瓦解した。@
 そしていま、眼前で展開されていることこそ、新しい秩序の骨子\nを為すものであるはずだった。\
 
-  FLAG \x96\x04
-FOBL " B\x01 \x02 p\x01 \x025  FLAG \xc8
-FOBL " \x04\x04 \x02 .\x04 \x025\x03\x06.\\Data\\Script\\Bgm.Fobv\x81\x1fp\x07
+  FLAG \x96\x04\x0c\x02" B\x01 \x02 p\x01 \x025  FLAG \xc8\x0c\x02" \x04\x04 \x02 .\x04 \x025
+FOBT .\\Data\\Script\\Bgm.Fobv\x81\x1fp\x07 \x02
 CMD1 StopCD RUNF \x9a\x07 \x025 B\x01 \x02
 SCEN TextClosev\x81\x1f\xc2\x07 \x0256\xf1

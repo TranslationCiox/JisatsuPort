@@ -13,7 +13,7 @@ SCEN SCE205_001 \x06 \x02\xef! FLAG \x8c\x01FLAG\x02 \xf0O\x01\x0c"\x03\xd3
 　　あなたが記憶している『自分』は、真実よ。@
 　　妄想の産物ではない。\p波動が襲ってきて、あなたたちは実験\n　　室に籠城した。\pそれは過去の事実なの。\p……いいわね？」\
 
-  FLAG J
-FOBL "\x03\x07.\\Data\\Script\\TextFunc.Fob RUNF \xb6\x03
+  FLAG J\x0c\x02"
+WHAT .\\Data\\Script\\TextFunc.Fob RUNF \xb6\x03 \x02
 CMD1 TextOn RUNF \xe4\x03 \x025 \xb6\x03 \x02
 SCEN TextClosev\x81\x1f\x0c\x04 \x0256\xf1
