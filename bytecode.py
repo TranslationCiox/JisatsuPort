@@ -3,61 +3,43 @@ import os
 
 patterns = [
     {
-        "pattern": [b'\x1e', b'\x02', b'\x03', b'\x02'], # Goes before commands
-        "action": "\r\n"
-    },
-    {
-        "pattern": [b'\x0c', b'"', b'\x03'], # Goes before dialogue
-        "action": "\r\n"
-    },
-    {
-        "pattern": [b'\x03', b'\x03'], #Goes before SCE Calls
-        "action": "\r\n"
-    },
-    {
-        "pattern": [b'\x0c', b'\x02', b'"', b'\x03', b'\x06'], # Goes before certain FOB calls
-        "action": "\r\n"
-    },
-    {
-        "pattern": [b'\x0c', b'\x02', b'"', b'\x03', b'\x07'], # Goes before certain FOB calls
-        "action": "\r\n"
-    },
-    {
-        "pattern": [b'\x1e', b'\x02', b'\x03', b'\x04'],  # Goes before certain calls (Textbox, BGFADEIN
-        "action": "\r\n"
-    },
-    {
-        "pattern": [b'\x81\x1f'],  # Some kind of newline
-        "action": " "
-    },
-    {
-        "pattern": [b'v\x81\x1f'],
-        "action": " "
-    },
-    {
-        "pattern": [b'sv\x81\x1f'],
-        "action": " "
-    },
-    {
-        "pattern": [b'\x03', b'\x89'],
-        "action": "\r\n"
-    },
-    {
-        "pattern": [b'\x01', b'start', b'\xef', b'i\x01C'],
+        "pattern": [b'\x01', b'start', b'\xef', b'i\x01C'],  # Start the script
         "action": "START\n"
     },
     {
-        "pattern": [b'\x1e', b'\r'],
-        "action": "DO SOMETHING "
+        "pattern": [b'\x03', b'\x03'], #Goes before SCE Calls
+        "action": "\r\nSCE "
     },
     {
-        "pattern": [b'\x0c', b'\x02'],
-        "action": " AND "
+        "pattern": [b'\x0c', b'\x02'], # Goes before FOB calls
+        "action": "\r\nFOB "
     },
     {
-        "pattern": [b'\x1e', b'\x02'],
-        "action": " AND2 "
+        "pattern": [b'\x1e', b'\x02', b'\x03', b'\x02'],  # Goes before commands
+        "action": "\r\nCM1 "
     },
+    {
+        "pattern": [b'\x1e', b'\x02', b'\x03', b'\x04'],  # Goes before certain calls (Textbox, BGFADEIN
+        "action": "\r\nCM2 "
+    },
+    {
+        "pattern": [b'\x1f'],  # Likely a delimiter
+        "action": " "
+    },
+
+    {
+        "pattern": [b'\x1e'],  # Likely a second delimiter
+        "action": " "
+    },
+    {
+        "pattern": [b'\x81\x1f'],  # Might be a command terminator
+        "action": " RUN "
+    },
+
+{
+    "pattern": [b'\025', b'\x03', b'\x08'],  # Might be a command terminator
+    "action": "\nFBC"
+},
 ]
 
 def parse_bytecode(data):
@@ -85,11 +67,9 @@ def save_text(lines, output_path):
                 line = line.decode("932", errors='ignore')
                 line = line.replace("\\e\\o", "\nCHOICE\n")
                 line = line.replace("\\E\\z", "\nENDCHOICE\n")
-                line = line.replace("\\e", "")
-                line = line.replace("\\z", "")
-                line = line.replace("\\p", "@")
-                line = line.replace("\\w", "\\")
-                line = line.replace("\\n", "\n")
+                line = line.replace("\\e", "\n \n")
+                line = line.replace("\\p\\n", "@\n")
+                line = line.replace("\\w\\n\\z", "\\\n")
                 f.write(line + "\r\n")
             else:
                 matched = False

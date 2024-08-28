@@ -1,43 +1,43 @@
 START
 \x02\x08\x01`B#\x01H\x06
-SCE219_001\x1f\x06 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\xd0e\x01
-,もはや、止めることはできなかった。@
+SCE SCE219_001 \x06 \x02\xef! \r \x8c\x01\r\x02 \xd0e\x01\x0c"\x03,
+ 
+もはや、止めることはできなかった。@
 すべてをせきとめていた何かが、いま、ついに崩れ落ちたのだ。@
 押し寄せる奔流には、もう対抗できない。@
 流されるしかないのだ。\
 
- DO SOMETHING \x1fJ
-.\\Data\\Script\\TextFunc.Fob \x1a\x01
-TextOn H\x01 AND2 5 DO SOMETHING \x1e$
-.\\Data\\Script\\Bg.Fob ~\x01
-BgAutoFadeIn \xa8\x01 AND2 5
-SCE219_002\x1f\xcc\x01 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\xd4e\x01
-kなたね
-　「やめてやめてやめて！@
+  \r J
+FOB "\x03\x07.\\Data\\Script\\TextFunc.Fob RUN \x1a\x01
+CM1 TextOn RUN H\x01 \x025  \r $
+FOB "\x03\x06.\\Data\\Script\\Bg.Fobsv\x81\x1f~\x01
+CM2 BgAutoFadeInsv\x81\x1f\xa8\x01 \x025
+SCE SCE219_002 \xcc\x01 \x02\xef! \r \x8c\x01\r\x02 \xd4e\x01\x0c"\x03k
+ 
+なたね\n　「やめてやめてやめて！@
 　　やあああああめえええろおおおおお！」@
-御堂
-　「この！@　××××！@　思い知れ！@　思い知れ！」@
-
-御堂はなたねの顔面に、容赦のないパンチを雨あられと降らせて
-いる。@
-溜まり溜まったストレスをすべて叩き付けるように、なたねを殴
-り続ける。@
+御堂\n　「この！\p　××××！\p　思い知れ！\p　思い知れ！」@
+\n御堂はなたねの顔面に、容赦のないパンチを雨あられと降らせて\nいる。@
+溜まり溜まったストレスをすべて叩き付けるように、なたねを殴\nり続ける。@
 ごつ、ごつ、ごつ！@
 鈍い音が教室に響き渡る。@
 すでになたねは悲鳴もない。@
 ぐったりと御堂の下に横たわり、殴られるがままだ。\
 
- DO SOMETHING \x1f\x10\x02 AND "\x1f\x1a\x01 AND2 \x1fH\x01 AND2 5
-SCE219_003\x1f\xf6\x03 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\xd8e\x01
-L－－狂ってる。@
+  \r \x10\x02
+FOB " \x1a\x01 \x02 H\x01 \x025
+SCE SCE219_003 \xf6\x03 \x02\xef! \r \x8c\x01\r\x02 \xd8e\x01\x0c"\x03L
+ 
+－－狂ってる。@
 拓司は辺りを見回した。@
-カンナ。@紅葉。@早桃。@
+カンナ。\p紅葉。\p早桃。@
 どの顔も無表情だった。@
 ただぼんやりと、なたねへの制裁を見つめている。@
 いま、理性や人間性に立脚した、あらゆるものは瓦解した。@
-そしていま、眼前で展開されていることこそ、新しい秩序の骨子
-を為すものであるはずだった。\
+そしていま、眼前で展開されていることこそ、新しい秩序の骨子\nを為すものであるはずだった。\
 
- DO SOMETHING \x1f:\x04 AND "\x1f\x1a\x01 AND2 \x1fH\x01 AND2 5 DO SOMETHING \x1e\xc8 AND "\x1f~\x01 AND2 \x1f\xa8\x01 AND2 5\x03\x06.\\Data\\Script\\Bgm.Fob \xd8\x05
-StopCD \x02\x06 AND2 5\x1f\x1a\x01 AND2 
-TextClose *\x06 AND2 56\xf1
+  \r :\x04
+FOB " \x1a\x01 \x02 H\x01 \x025  \r \xc8
+FOB " ~\x01 \x02 \xa8\x01 \x025\x03\x06.\\Data\\Script\\Bgm.Fobv\x81\x1f\xd8\x05
+CM1 StopCD RUN \x02\x06 \x025 \x1a\x01 \x02
+SCE TextClosev\x81\x1f*\x06 \x0256\xf1

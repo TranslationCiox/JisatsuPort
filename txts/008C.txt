@@ -1,33 +1,34 @@
 START
-\x01\x06\x01\xa4\t3\x01\xa6\x04\x03\x06.\\Data\\Script\\Bgm.Fob \x06
-StopCD 0 AND2 5 DO SOMETHING \x1e\xc8
-.\\Data\\Script\\Bg.Fob f
-BgAutoFadeIn \x90 AND2 5
-SCE008_001\x1f\xb4 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e \x1c
-1拓司
-　「……これが、おれの願望なのか？@　違う。@こんなこと、
-　　おれは望んじゃいない」@
+\x01\x06\x01\xa4\t3\x01\xa6\x04\x03\x06.\\Data\\Script\\Bgm.Fobv\x81\x1f\x06
+CM1 StopCD RUN 0 \x025  \r \xc8
+FOB "\x03\x06.\\Data\\Script\\Bg.Fobsv\x81\x1ff
+CM2 BgAutoFadeInsv\x81\x1f\x90 \x025
+SCE SCE008_001 \xb4 \x02\xef! \r \x8c\x01\r\x02  \x1c\x0c"\x031
+ 
+拓司\n　「……これが、おれの願望なのか？\p　違う。\pこんなこと、\n　　おれは望んじゃいない」@
+\n拓司は両手で顔を覆った。\pそしてひとつ、大きなためいきの塊\nを吐き出してから目を閉じた。\
 
-拓司は両手で顔を覆った。@そしてひとつ、大きなためいきの塊
-を吐き出してから目を閉じた。\
-
- DO SOMETHING \x1f\xf8
-.\\Data\\Script\\TextFunc.Fob \xdc\x01
-TextOn \n\x02 AND2 5
-SCE008_002\x1f&\x02 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e$\x1c\x0c" DO SOMETHING  AND2  AND " \x1e\x04\r\x1e\x06 AND " \x1e\x08\r\x1e\x01 AND "\x1f\x06
-SePlay \xc4\x02 AND2 5\x03H再び目を開けると、そこには変わらず換気ファンが回り、沈黙が
-たゆたっている。@
+  \r \xf8
+FOB "\x03\x07.\\Data\\Script\\TextFunc.Fob RUN \xdc\x01
+CM1 TextOn RUN \n\x02 \x025
+SCE SCE008_002 &\x02 \x02\xef! \r \x8c\x01\r\x02 $\x1c\x0c"  \r \x02
+FOB "  \x04\r \x06
+FOB "  \x08\r \x01
+FOB " \x06
+CM1 SePlay RUN \xc4\x02 \x025\x03H
+ 
+再び目を開けると、そこには変わらず換気ファンが回り、沈黙が\nたゆたっている。@
 ただ、早桃の姿だけがない。@
-
-　西暦２００１年、７月３０日。@
+\n　西暦２００１年、７月３０日。@
 　重々しい夜。@
 　湿った闇。@
 　汗を吸ったベッドカバー。@
 　のしかかるような天井板。@
-
-現実に戻ったのだ。@
+\n現実に戻ったのだ。@
 おそらくは。\
 
- DO SOMETHING \x1f\xe0\x02 AND "\x1f\xdc\x01 AND2 \x1f\n\x02 AND2 5 DO SOMETHING  AND2  AND "\x1f\x06
-SeStop `\x04 AND2 5\x1f\xdc\x01 AND2 
-TextClose \x88\x04 AND2 56\xf1
+  \r \xe0\x02
+FOB " \xdc\x01 \x02 \n\x02 \x025  \r \x02
+FOB " \x06
+CM1 SeStop RUN `\x04 \x025 \xdc\x01 \x02
+SCE TextClosev\x81\x1f\x88\x04 \x0256\xf1

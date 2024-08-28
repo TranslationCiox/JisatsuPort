@@ -1,53 +1,52 @@
 START
-\xc5\x13\x01`B#\x01n\x10 DO SOMETHING \x1e\xc9
-.\\Data\\Script\\Bg.Fob  
-BgAutoFadeIn J AND2 5
-SCE235_001\x1fn AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\xd0~\x01
-\x19一瞬、白い部屋の天井が見えた。@
+\xc5\x13\x01`B#\x01n\x10  \r \xc9
+FOB "\x03\x06.\\Data\\Script\\Bg.Fobsv\x81\x1f 
+CM2 BgAutoFadeInsv\x81\x1fJ \x025
+SCE SCE235_001 n \x02\xef! \r \x8c\x01\r\x02 \xd0~\x01\x0c"\x03\x19
+ 
+一瞬、白い部屋の天井が見えた。@
 くるくる回る換気ファン。@
 悪夢。@
 悪夢。@
 悪夢。\
 
- DO SOMETHING \x1f\xb2
-.\\Data\\Script\\TextFunc.Fob 6\x01
-TextOn d\x01 AND2 5
-SCE235_002\x1f\x80\x01 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\xd4~\x01\x0c"\x1f6\x01 AND2 \x03\x05TextWindowOffDirect\x1f\xd0\x01 AND2 5 DO SOMETHING  AND2  AND " \x1e\x04\r\x1e\x1b AND " \x1e\x08\r\x1e
-.\\Data\\Script\\Bgm.Fob F\x02
-SePlay p\x02 AND2 5 DO SOMETHING \x1e\xc8 AND "\x1f 
-BgOn \xb2\x02 AND2 5 DO SOMETHING \x1e<
-.\\Data\\Script\\TextFunc.fob \xe8\x02 AND2 
-WaitTime \x16\x03 AND2 5 DO SOMETHING \x1e\xc8 AND "\x1f 
-BgNormalFadeIn \\\x03 AND2 5 DO SOMETHING \x1e\x05\x01 AND "\x1fF\x02
-PlayCD \xa6\x03 AND2 5\x1f6\x01 AND2 \x03\x05TextWindowOnDirect \xce\x03 AND2 5 DO SOMETHING  AND2  AND "\x1fF\x02
-SeStop \x1c\x04 AND2 5\x03\x8c　うっすらと目を開けると、桃色の塊が動いているのが見えた。@
+  \r \xb2
+FOB "\x03\x07.\\Data\\Script\\TextFunc.Fob RUN 6\x01
+CM1 TextOn RUN d\x01 \x025
+SCE SCE235_002 \x80\x01 \x02\xef! \r \x8c\x01\r\x02 \xd4~\x01\x0c" 6\x01 \x02\x03\x05TextWindowOffDirect \xd0\x01 \x025  \r \x02
+FOB "  \x04\r \x1b
+FOB "  \x08\r 
+FOB "\x03\x06.\\Data\\Script\\Bgm.Fobv\x81\x1fF\x02
+CM1 SePlay RUN p\x02 \x025  \r \xc8
+FOB "  
+CM1 BgOnsv\x81\x1f\xb2\x02 \x025  \r <
+FOB "\x03\x07.\\Data\\Script\\TextFunc.fob RUN \xe8\x02 \x02
+SCE WaitTimesv\x81\x1f\x16\x03 \x025  \r \xc8
+FOB "  
+CM2 BgNormalFadeIn RUN \\\x03 \x025  \r \x05\x01
+FOB " F\x02
+CM1 PlayCD RUN \xa6\x03 \x025 6\x01 \x02\x03\x05TextWindowOnDirect RUN \xce\x03 \x025  \r \x02
+FOB " F\x02
+CM1 SeStop RUN \x1c\x04 \x025\x03\x8c
+ 
+　うっすらと目を開けると、桃色の塊が動いているのが見えた。@
+\n御堂\n　「おら、おら、おら、もっと泣けよ！\p　なに諦めてんだよ！」@
+錦城\n　「あははは、壊れちゃったみたいね！\p　よっぽど裸を見られる\n　　のがいやだったのねえ！」@
+御堂\n　「そりゃそうだろうよ。\pこんなみっともねえ火傷あるんじゃな\n　　あ」@
+錦城\n　「あら、少し反応したわよ？」@
+御堂\n　「火傷がキーワードか？\p　おら、火傷女！\p　お前みたいなバケ\n　　モノ抱いてやるだけありがたいと思えよ！\p　……おっ、締ま\n　　る締まる！\p　おもしれえなあ、ケロイド女！」@
+\n……火傷？\
 
-御堂
-　「おら、おら、おら、もっと泣けよ！@　なに諦めてんだよ！」@
-錦城
-　「あははは、壊れちゃったみたいね！@　よっぽど裸を見られる
-　　のがいやだったのねえ！」@
-御堂
-　「そりゃそうだろうよ。@こんなみっともねえ火傷あるんじゃな
-　　あ」@
-錦城
-　「あら、少し反応したわよ？」@
-御堂
-　「火傷がキーワードか？@　おら、火傷女！@　お前みたいなバケ
-　　モノ抱いてやるだけありがたいと思えよ！@　……おっ、締ま
-　　る締まる！@　おもしれえなあ、ケロイド女！」@
-
-……火傷？\
-
- DO SOMETHING \x1f8\x04 AND "\x1f6\x01 AND2 \x1fd\x01 AND2 5 DO SOMETHING \x1e[ AND "\x1f  AND2 \x1fJ AND2 5
-SCE235_003\x1f\xd6\x06 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\xd8~\x01
-\x99拓司はその言葉を、虚ろな意識の中で転がした。@
+  \r 8\x04
+FOB " 6\x01 \x02 d\x01 \x025  \r [
+FOB "   \x02 J \x025
+SCE SCE235_003 \xd6\x06 \x02\xef! \r \x8c\x01\r\x02 \xd8~\x01\x0c"\x03\x99
+ 
+拓司はその言葉を、虚ろな意識の中で転がした。@
 火傷……紅葉に……火傷？@
 水のなかのようにぼやけた視界……目を細めて焦点を絞る。@
 紅葉はぐったりとしている。@
-虚ろな視線を天井に投げながら、御堂に貫かれている。@御堂が腰
-を突き上げるたびに、がくんがくんと顎が揺れる。@まるで壊れた
-人形のように。@
+虚ろな視線を天井に投げながら、御堂に貫かれている。\p御堂が腰\nを突き上げるたびに、がくんがくんと顎が揺れる。\pまるで壊れた\n人形のように。@
 錦城が、腹の上に跨って両胸のふくらみをもみしだいている。@
 紅葉の乳首をつまみ上げ、ねじっている。@
 火傷。@
@@ -57,44 +56,31 @@ SCE235_003\x1f\xd6\x06 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\xd8~\x01
 そういえば、小学生の頃、紅葉の家でボヤ騒ぎがあった。@
 そのときの火傷なのか……？\
 
- DO SOMETHING \x1f\x1a\x07 AND "\x1f6\x01 AND2 \x1fd\x01 AND2 5
-SCE235_004\x1f\xb8\t AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\xdc~\x01
-\x8c錦城
-　「こんな醜い火傷があるんじゃ、いままで処女だったっていう
-　　のもわかるわね。@恥ずかしくて見せられたもんじゃないもの。
-　　@こんなみっともない傷を見たら百年の恋も冷めて、どんな男
-　　の子も逃げ出すわよ。@あ～カワイソウ。@私だったら世をはか
-　　なんで自殺するけどわね、あはは」@
-御堂
-　「う、うう……すげえ締め付けだ。@出すぞ……もうすぐ……出
-　　るぞ」@
-錦城
-　「もう五発目よ。@良く出るわねえ」@
-御堂
-　「おれとは反対の世界に生きてる健全スポーツ少女を犯してる
-　　って思うだけで何回でも出せる…う…くっ、顔に出すぞ！」\
+  \r \x1a\x07
+FOB " 6\x01 \x02 d\x01 \x025
+SCE SCE235_004 \xb8\t \x02\xef! \r \x8c\x01\r\x02 \xdc~\x01\x0c"\x03\x8c
+ 
+錦城\n　「こんな醜い火傷があるんじゃ、いままで処女だったっていう\n　　のもわかるわね。\p恥ずかしくて見せられたもんじゃないもの。\n　　\pこんなみっともない傷を見たら百年の恋も冷めて、どんな男\n　　の子も逃げ出すわよ。\pあ～カワイソウ。\p私だったら世をはか\n　　なんで自殺するけどわね、あはは」@
+御堂\n　「う、うう……すげえ締め付けだ。\p出すぞ……もうすぐ……出\n　　るぞ」@
+錦城\n　「もう五発目よ。\p良く出るわねえ」@
+御堂\n　「おれとは反対の世界に生きてる健全スポーツ少女を犯してる\n　　って思うだけで何回でも出せる…う…くっ、顔に出すぞ！」\
 
- DO SOMETHING \x1f\xfc\t AND "\x1f6\x01 AND2 \x1fd\x01 AND2 5
-SCE235_005\x1ff\x0c AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\xe0~\x01
-\xd8　勢い良く放出された精液は、まず、紅葉の鼻先で弾けた。@
-　ペ○スが脈動し、そのたびにねっとりとした液体が、勢いよく
-　顔にひっかかった。@頬から目、眉に渡って長い白濁のラインが
-　引かれる。@髪の毛にも飛沫がこびりつき、紅葉の顔は、あっと
-　いうまに惨めなまだら模様に染め上げられた。@
+  \r \xfc\t
+FOB " 6\x01 \x02 d\x01 \x025
+SCE SCE235_005 f\x0c \x02\xef! \r \x8c\x01\r\x02 \xe0~\x01\x0c"\x03\xd8
+ 
+　勢い良く放出された精液は、まず、紅葉の鼻先で弾けた。@
+　ペ○スが脈動し、そのたびにねっとりとした液体が、勢いよく\n　顔にひっかかった。\p頬から目、眉に渡って長い白濁のラインが\n　引かれる。\p髪の毛にも飛沫がこびりつき、紅葉の顔は、あっと\n　いうまに惨めなまだら模様に染め上げられた。@
 　すぐに勢いは無くなったが、量はなかなか減らなかった。@
 　ボトボトと、紅葉の唇に白いかたまりが降り注ぐ。@
-　鼻の下から顎のあたりにかけてこってりと精液が山盛りになる。
-　@精液は鼻の穴さえ犯している。@
+　鼻の下から顎のあたりにかけてこってりと精液が山盛りになる。\n　\p精液は鼻の穴さえ犯している。@
 　まるで白い鼻水を垂れ流しているようにも見える。@
 　ぶぢゅるっ、と音がする。@
-　口から漏れた紅葉の吐息が精液の池にぶくりと泡を作っていた。
-@
+　口から漏れた紅葉の吐息が精液の池にぶくりと泡を作っていた。\n@
 　その上に錦城がどっかりと腰を下ろした。@
+\n錦城\n　「さあ、上手に舐めて頂戴」@
+\n/*▲BGM　停止*/\a4,-1,0,0,/*■黒　表示（ノンエフェクト）*/\a7,-1,-1,0,\a0,200,1,0,\a6,0,0,0,拓司の意識が、ふっと遠くなった\
 
-錦城
-　「さあ、上手に舐めて頂戴」@
-
-/*▲BGM　停止*/\a4,-1,0,0,/*■黒　表示（ノンエフェクト）*/\a7,-1,-1,0,\a0,200,1,0,\a6,0,0,0,拓司の意識が、ふっと遠くなった\
-
- DO SOMETHING \x1f\xaa\x0c AND "\x1f6\x01 AND2 \x1fd\x01 AND2 5\x1f6\x01 AND2 
-TextClose P\x10 AND2 56\xf1
+  \r \xaa\x0c
+FOB " 6\x01 \x02 d\x01 \x025 6\x01 \x02
+SCE TextClosev\x81\x1fP\x10 \x0256\xf1

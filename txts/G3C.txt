@@ -1,34 +1,29 @@
 START
-v\x06\x01`B#\x01\xd2\x04 DO SOMETHING \x1eC
-.\\Data\\Script\\Bg.Fob  
-BgAutoFadeIn J AND2 5 DO SOMETHING \x1e\x08\x01
-.\\Data\\Script\\Bgm.Fob \x88
-PlayCD \xb2 AND2 5
-SCEG03_001\x1f\xce AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1ep\xc5\x01
-)錦城
-　「……しっ！　私よ、虎菱くん」@
-拓司
-　「……先生？」@
-
-錦城は微かに笑うと、拓司の横へと体を移動させた。@
-寄り添って寝転がるような形になる。\
- DO SOMETHING \x1f\x12\x01
-.\\Data\\Script\\TextFunc.Fob \xd6\x01
-TextOn \x04\x02 AND2 5 DO SOMETHING \x1e\xc8 AND "\x1f  AND2 \x1fJ AND2 5
-SCEG03_002\x1fT\x02 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1et\xc5\x01
-a錦城
-　「リーダーとして、今日はどうだった？」@
-拓司
-　「いえ……リーダーといっても形だけですから」@
-錦城
-　「あなたはもっと自分に自信を持つべきだわ。@
-　　だって虎菱くん以外に、リーダーなんて大役が務まる人間は
-　　いないんだもの」@
-拓司
-　「……そんなことは……」@
-錦城
-　「ふふ。でも、そういう謙虚な虎菱くんが、私は好きよ。@
-　　……さあ、今日もご褒美をあげる」\
- DO SOMETHING \x1f\x98\x02 AND "\x1f\xd6\x01 AND2 \x1f\x04\x02 AND2 5\x1f\xd6\x01 AND2 
-TextClose b\x04 AND2 5\x03\t.\\Data\\Script\\Scenario\\G3subC.Fob \x82\x04
-start \xb8\x04 AND2 56\xf1
+v\x06\x01`B#\x01\xd2\x04  \r C
+FOB "\x03\x06.\\Data\\Script\\Bg.Fobsv\x81\x1f 
+CM2 BgAutoFadeInsv\x81\x1fJ \x025  \r \x08\x01
+FOB "\x03\x06.\\Data\\Script\\Bgm.Fobv\x81\x1f\x88
+CM1 PlayCD RUN \xb2 \x025
+SCE SCEG03_001 \xce \x02\xef! \r \x8c\x01\r\x02 p\xc5\x01\x0c"\x03)
+ 
+錦城\n　「……しっ！　私よ、虎菱くん」@
+拓司\n　「……先生？」@
+\n錦城は微かに笑うと、拓司の横へと体を移動させた。@
+寄り添って寝転がるような形になる。\w\z
+  \r \x12\x01
+FOB "\x03\x07.\\Data\\Script\\TextFunc.Fob RUN \xd6\x01
+CM1 TextOn RUN \x04\x02 \x025  \r \xc8
+FOB "   \x02 J \x025
+SCE SCEG03_002 T\x02 \x02\xef! \r \x8c\x01\r\x02 t\xc5\x01\x0c"\x03a
+ 
+錦城\n　「リーダーとして、今日はどうだった？」@
+拓司\n　「いえ……リーダーといっても形だけですから」@
+錦城\n　「あなたはもっと自分に自信を持つべきだわ。@
+　　だって虎菱くん以外に、リーダーなんて大役が務まる人間は\n　　いないんだもの」@
+拓司\n　「……そんなことは……」@
+錦城\n　「ふふ。でも、そういう謙虚な虎菱くんが、私は好きよ。@
+　　……さあ、今日もご褒美をあげる」\w\z
+  \r \x98\x02
+FOB " \xd6\x01 \x02 \x04\x02 \x025 \xd6\x01 \x02
+SCE TextClosev\x81\x1fb\x04 \x025\x03\t.\\Data\\Script\\Scenario\\G3subC.Fobv\x81\x1f\x82\x04
+CM1 startv\x81\x1f\xb8\x04 \x0256\xf1

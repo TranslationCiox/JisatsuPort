@@ -1,33 +1,23 @@
 START
 |\x0b\x01`B#\x01\n\t
-SCE021_001\x1f\x06 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1ep0
-\x10
+SCE SCE021_001 \x06 \x02\xef! \r \x8c\x01\r\x02 p0\x0c"\x03\x10
+ 
+\n\n\n\n\n\n\n\n\n\n　　　　　　　　　『学校／四限』\
 
-
-
-
-
-
-
-
-
-　　　　　　　　　『学校／四限』\
-
- DO SOMETHING \x1fJ
-.\\Data\\Script\\TextFunc.Fob \xaa
-TextOn \xd8 AND2 5 DO SOMETHING \x1e\x05
-.\\Data\\Script\\Bg.Fob \x0e\x01
-BgAutoFadeIn 8\x01 AND2 5 DO SOMETHING \x1e\x08\x01
-.\\Data\\Script\\Bgm.Fob v\x01
-PlayCD \xa0\x01 AND2 5
-SCE021_002\x1f\xbc\x01 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1et0
-q　拓司にとって、朝が一番鮮やかな時間だ。@
+  \r J
+FOB "\x03\x07.\\Data\\Script\\TextFunc.Fob RUN \xaa
+CM1 TextOn RUN \xd8 \x025  \r \x05
+FOB "\x03\x06.\\Data\\Script\\Bg.Fobsv\x81\x1f\x0e\x01
+CM2 BgAutoFadeInsv\x81\x1f8\x01 \x025  \r \x08\x01
+FOB "\x03\x06.\\Data\\Script\\Bgm.Fobv\x81\x1fv\x01
+CM1 PlayCD RUN \xa0\x01 \x025
+SCE SCE021_002 \xbc\x01 \x02\xef! \r \x8c\x01\r\x02 t0\x0c"\x03q
+ 
+　拓司にとって、朝が一番鮮やかな時間だ。@
 　時間が経つにつれて、世界の色があせてゆく。@
 　虚ろだ。@
-　教師の声も、クラスメイトの声も、遠い世界のもののように聞こ
-　える。@
-　何もかもが、空や、地平線と同じ程度の風景の一部にしか見えな
-　い。@
+　教師の声も、クラスメイトの声も、遠い世界のもののように聞こ\n　える。@
+　何もかもが、空や、地平線と同じ程度の風景の一部にしか見えな\n　い。@
 　なにをしていいのか。@
 　なにをすればいいのか。@
 　なにをすべきなのか。@
@@ -36,44 +26,38 @@ q　拓司にとって、朝が一番鮮やかな時間だ。@
 　逃げられない。@
 　悲鳴をあげることしかできない。\
 
- DO SOMETHING \x1f\x02 AND "\x1f\xaa AND2 \x1f\xd8 AND2 5 DO SOMETHING \x1e\xc8 AND "\x1f\x0e\x01 AND2 \x1f8\x01 AND2 5
-SCE021_003\x1f2\x04 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1ex0
-~
-　－－死んじまおうかなあ。@
-
-　拓司はすでに口癖となったその言葉を、呪文のように頭のなかで
-　繰り返した。@
-
+  \r \x02
+FOB " \xaa \x02 \xd8 \x025  \r \xc8
+FOB " \x0e\x01 \x02 8\x01 \x025
+SCE SCE021_003 2\x04 \x02\xef! \r \x8c\x01\r\x02 x0\x0c"\x03~
+ 
+\n　－－死んじまおうかなあ。@
+\n　拓司はすでに口癖となったその言葉を、呪文のように頭のなかで\n　繰り返した。@
+\n　死んじまおうかなあ。@
 　死んじまおうかなあ。@
 　死んじまおうかなあ。@
-　死んじまおうかなあ。@
-
-　しかし、その言葉の輪郭はどこかぼやけて、とらえどころがなか
-　った。@
+\n　しかし、その言葉の輪郭はどこかぼやけて、とらえどころがなか\n　った。@
 　形にするたびに、『死』という言葉からも重さが消えてゆく。@
-　－－そのうち、死にすら、この鈍いひりつきを……真実の痛みを
-　感じられなくなってしまうのではないか？@
+　－－そのうち、死にすら、この鈍いひりつきを……真実の痛みを\n　感じられなくなってしまうのではないか？@
 　のどの奥から、吐瀉物のような恐怖が込み上がってくる。@
-
- DO SOMETHING \x1fv\x04 AND "\x1f\xaa AND2 \x1f\xd8 AND2 5
-SCE021_004\x1f\xa8\x06 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e|0
-Q
+\z
+  \r v\x04
+FOB " \xaa \x02 \xd8 \x025
+SCE SCE021_004 \xa8\x06 \x02\xef! \r \x8c\x01\r\x02 |0\x0c"\x03Q
+ 
+\n　死んじまおうかなあ。@
 　死んじまおうかなあ。@
 　死んじまおうかなあ。@
-　死んじまおうかなあ。@
-
-　呪文に真実味を与えるべく、拓司は妄想の世界に意識を沈めてい
-　った……。@自己嫌悪が必要だった。@
+\n　呪文に真実味を与えるべく、拓司は妄想の世界に意識を沈めてい\n　った……。\p自己嫌悪が必要だった。@
 　真剣に自殺を考えるくらいの、モラルに反した妄想が。@
-　拓司は自分の大切な人を……妄想の檻の中に……ゆっくりと囲っ
-　ていった。\
+　拓司は自分の大切な人を……妄想の檻の中に……ゆっくりと囲っ\n　ていった。\
 
- DO SOMETHING \x1f\xec\x06 AND "\x1f\xaa AND2 \x1f\xd8 AND2 5\x03\x0f
+  \r \xec\x06
+FOB " \xaa \x02 \xd8 \x025\x03\x0f
 CHOICE
-早桃を妄想の中で犯す
-紅葉を想像の中で犯す
-\l0,2,
+早桃を妄想の中で犯す\n紅葉を想像の中で犯す\n\l0,2,
 ENDCHOICE
 
- DO SOMETHING \x1fj\x08 AND "\x1f\xaa AND2 \x1f\xd8 AND2 5\x1f\xaa AND2 
-TextClose \xec\x08 AND2 56\xf1
+  \r j\x08
+FOB " \xaa \x02 \xd8 \x025 \xaa \x02
+SCE TextClosev\x81\x1f\xec\x08 \x0256\xf1

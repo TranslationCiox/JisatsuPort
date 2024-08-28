@@ -1,43 +1,33 @@
 START
-\x18\x07\x01`B#\x01\x92\x05 DO SOMETHING \x1e\xc8
-.\\Data\\Script\\Bg.Fob  
-BgAutoFadeIn J AND2 5 DO SOMETHING \x1e\t\x01
-.\\Data\\Script\\Bgm.Fob \x88
-PlayCD \xb2 AND2 5
-SCE216_001\x1f\xce AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e a\x01
-\xb2こうして１日が終わった。@
+\x18\x07\x01`B#\x01\x92\x05  \r \xc8
+FOB "\x03\x06.\\Data\\Script\\Bg.Fobsv\x81\x1f 
+CM2 BgAutoFadeInsv\x81\x1fJ \x025  \r \t\x01
+FOB "\x03\x06.\\Data\\Script\\Bgm.Fobv\x81\x1f\x88
+CM1 PlayCD RUN \xb2 \x025
+SCE SCE216_001 \xce \x02\xef! \r \x8c\x01\r\x02  a\x01\x0c"\x03\xb2
+ 
+こうして１日が終わった。@
 深夜を過ぎても、拓司は眠りにつくことができなかった。@
-心身共にプレッシャーでぐったりとしてはいるものの、不眠症だ
-けは相変わらずだ。@見慣れない天井を見上げながら、拓司はそれ
-までのことを頭の中で整理しようとした。@しかし、いくつものパ
-ズルを適当に寄せ集めてぶちまけたかのように、それぞれの情報
-には統一性も、法則性もないように思えた。@それは消耗としかい
-いようのない作業だった。@おそらく、どんなにピースをひねり回
-そうとも、パズルは完成しないように仕組まれているのだ……。@
-しかし、眠れない夜には、そんなパズルと戯れるのもまた、良い
-時間つぶしとなった。@
-
-/*▲BGM　停止*/\a4,-1,0,0,声
-　「起きてる？」@
-
-はっと気づくと、足下に影が見える。@
+心身共にプレッシャーでぐったりとしてはいるものの、不眠症だ\nけは相変わらずだ。\p見慣れない天井を見上げながら、拓司はそれ\nまでのことを頭の中で整理しようとした。\pしかし、いくつものパ\nズルを適当に寄せ集めてぶちまけたかのように、それぞれの情報\nには統一性も、法則性もないように思えた。\pそれは消耗としかい\nいようのない作業だった。\pおそらく、どんなにピースをひねり回\nそうとも、パズルは完成しないように仕組まれているのだ……。@
+しかし、眠れない夜には、そんなパズルと戯れるのもまた、良い\n時間つぶしとなった。@
+\n/*▲BGM　停止*/\a4,-1,0,0,声\n　「起きてる？」@
+\nはっと気づくと、足下に影が見える。@
 それは……\
 
- DO SOMETHING \x1f\x12\x01
-.\\Data\\Script\\TextFunc.Fob \xfa\x03
-TextOn (\x04 AND2 5!DO SOMETHING \x1e\x14\r\x02\x1e\x0b\r\x01\x1e\x1b1\xd4\x04\x03\x0e
+  \r \x12\x01
+FOB "\x03\x07.\\Data\\Script\\TextFunc.Fob RUN \xfa\x03
+CM1 TextOn RUN (\x04 \x025! \r \x14\r\x02 \x0b\r\x01 \x1b1\xd4\x04\x03\x0e
 CHOICE
-それは早桃だった
-それはカンナだった
-\l0,2,
+それは早桃だった\nそれはカンナだった\n\l0,2,
 ENDCHOICE
 
- DO SOMETHING \x1f|\x04 AND "2\x18\x05\x03\t
+  \r |\x04
+FOB "2\x18\x05\x03\t
 CHOICE
-それは早桃だった
-\l0,1,
+それは早桃だった\n\l0,1,
 ENDCHOICE
 
- DO SOMETHING \x1f\xda\x04 AND "\x1f\xfa\x03 AND2 \x1f(\x04 AND2 5\x1f\xfa\x03
-GetLastTxtID D\x05 AND2 5\x1f\xfa\x03 AND2 
-TextClose t\x05 AND2 56\xf1
+  \r \xda\x04
+FOB " \xfa\x03 \x02 (\x04 \x025 \xfa\x03
+CM2 GetLastTxtIDsv\x81\x1fD\x05 \x025 \xfa\x03 \x02
+SCE TextClosev\x81\x1ft\x05 \x0256\xf1

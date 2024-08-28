@@ -1,57 +1,38 @@
 START
 &\x08\x01`B#\x01\xcc\x05
-SCE221_001\x1f\x06 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\xf0h\x01
-\x11
+SCE SCE221_001 \x06 \x02\xef! \r \x8c\x01\r\x02 \xf0h\x01\x0c"\x03\x11
+ 
+\n\n\n\n\n\n\n\n\n\n　　　　　　　　　　　　　『１０日目』\
 
-
-
-
-
-
-
-
-
-　　　　　　　　　　　　　『１０日目』\
-
- DO SOMETHING \x1fJ
-.\\Data\\Script\\TextFunc.Fob \xae
-TextOn \xdc AND2 5
-SCE221_002\x1f\xf8 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\xf4h\x01
-\x81一日が静かに過ぎる。@
+  \r J
+FOB "\x03\x07.\\Data\\Script\\TextFunc.Fob RUN \xae
+CM1 TextOn RUN \xdc \x025
+SCE SCE221_002 \xf8 \x02\xef! \r \x8c\x01\r\x02 \xf4h\x01\x0c"\x03\x81
+ 
+一日が静かに過ぎる。@
 日中、ほとんど会話はない。@
 パーソナルスペースの隅に丸くなって、誰も動かない。@
+\n準備室から、錦城の嬌声が漏れ聞こえてくる。@
+\nなたねには、相変わらず水しか与えられない。@
+\n御堂\n　「最終波動はどうだ？\p　え？\p　きてるのか、きてねえのか、は\n　　っきりさせろ！」@
+なたね\n　「……」@
+\nなたねは小さく首を横に振った。@
+\n御堂\n　「ふん。\pお前を生かしてやってるのは、波動の監視役としてだ\n　　からな。\pしっかり見張ってろ。\pポカやらかしたら容赦しねえ\n　　からな」\
 
-準備室から、錦城の嬌声が漏れ聞こえてくる。@
+  \r <\x01
+FOB " \xae \x02 \xdc \x025
+SCE SCE221_003 z\x03 \x02\xef! \r \x8c\x01\r\x02 \xf8h\x01\x0c"\x03:
+ 
+誰も御堂を非難をする者はいない。@
+御堂が恐ろしいとか、なたねには当然の報いとか……そういうふ\nうに思うよりも、関心が持てないのだ。@
+自分のことを考えるのに精一杯で、とてもではないが他人の面倒\nなど見ていられないのだ。\
 
-なたねには、相変わらず水しか与えられない。@
-
-御堂
-　「最終波動はどうだ？@　え？@　きてるのか、きてねえのか、は
-　　っきりさせろ！」@
-なたね
-　「……」@
-
-なたねは小さく首を横に振った。@
-
-御堂
-　「ふん。@お前を生かしてやってるのは、波動の監視役としてだ
-　　からな。@しっかり見張ってろ。@ポカやらかしたら容赦しねえ
-　　からな」\
-
- DO SOMETHING \x1f<\x01 AND "\x1f\xae AND2 \x1f\xdc AND2 5
-SCE221_003\x1fz\x03 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\xf8h\x01
-:誰も御堂を非難をする者はいない。@
-御堂が恐ろしいとか、なたねには当然の報いとか……そういうふ
-うに思うよりも、関心が持てないのだ。@
-自分のことを考えるのに精一杯で、とてもではないが他人の面倒
-など見ていられないのだ。\
-
- DO SOMETHING \x1f\xbe\x03 AND "\x1f\xae AND2 \x1f\xdc AND2 5\x03"
+  \r \xbe\x03
+FOB " \xae \x02 \xdc \x025\x03"
 CHOICE
-それでも拓司は、自分の食糧を少し残し、夜、なたねに与えた
-拓司は食糧を腹に収め、いつかくるであろう『そのとき』に備えた
-\l0,2,
+それでも拓司は、自分の食糧を少し残し、夜、なたねに与えた\n拓司は食糧を腹に収め、いつかくるであろう『そのとき』に備えた\n\l0,2,
 ENDCHOICE
 
- DO SOMETHING \x1f\xe0\x04 AND "\x1f\xae AND2 \x1f\xdc AND2 5\x1f\xae AND2 
-TextClose \xae\x05 AND2 56\xf1
+  \r \xe0\x04
+FOB " \xae \x02 \xdc \x025 \xae \x02
+SCE TextClosev\x81\x1f\xae\x05 \x0256\xf1

@@ -1,14 +1,10 @@
 START
 6\x08\x01`B#\x01\x9a\x06
-SCE080_001\x1f\x06 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\xa0\x8c
-\x96　廊下をはいずり、階段を転げ落ち、拓司はようやく自分の教
-室にたどり着いた。@ぶつけたりすりむいたりした部分が鈍く痛む。
-@しかし、そんなことはもう問題ではない。@何もかも終わるからだ。
-@
-　教室のドアをなんとか引き開けて、拓司は自分の席を目指した。
-　@机の中には、買ったばかりのカッターがあるはずだった。@
-　それさえあれば、なんとかなる。@なにもかもが、なんとかなる
-　のだ。@
+SCE SCE080_001 \x06 \x02\xef! \r \x8c\x01\r\x02 \xa0\x8c\x0c"\x03\x96
+ 
+　廊下をはいずり、階段を転げ落ち、拓司はようやく自分の教\n室にたどり着いた。\pぶつけたりすりむいたりした部分が鈍く痛む。\n\pしかし、そんなことはもう問題ではない。\p何もかも終わるからだ。\n@
+　教室のドアをなんとか引き開けて、拓司は自分の席を目指した。\n　\p机の中には、買ったばかりのカッターがあるはずだった。@
+　それさえあれば、なんとかなる。\pなにもかもが、なんとかなる\n　のだ。@
 　クラスメイトたちが邪魔をする。@
 　－－ああ、邪魔だ。@
 　邪魔邪魔。@
@@ -18,16 +14,15 @@ SCE080_001\x1f\x06 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\xa0\x8c
 なんだこりゃ。@
 邪魔邪魔。\
 
- DO SOMETHING \x1fJ
-.\\Data\\Script\\TextFunc.Fob \xc2\x02
-TextOn \xf0\x02 AND2 5 DO SOMETHING \x1e\xc8
-.\\Data\\Script\\Bg.Fob &\x03
-BgAutoFadeIn P\x03 AND2 5
-SCE080_002\x1ft\x03 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\xa4\x8c
-R机までたどり着いた拓司は、必死の力を振り絞って身を起こし、
-どっかりと椅子に腰掛けた。@
-ふう、とため息をついて、机の中
-を両手でまさぐる。@
+  \r J
+FOB "\x03\x07.\\Data\\Script\\TextFunc.Fob RUN \xc2\x02
+CM1 TextOn RUN \xf0\x02 \x025  \r \xc8
+FOB "\x03\x06.\\Data\\Script\\Bg.Fobsv\x81\x1f&\x03
+CM2 BgAutoFadeInsv\x81\x1fP\x03 \x025
+SCE SCE080_002 t\x03 \x02\xef! \r \x8c\x01\r\x02 \xa4\x8c\x0c"\x03R
+ 
+机までたどり着いた拓司は、必死の力を振り絞って身を起こし、\nどっかりと椅子に腰掛けた。@
+ふう、とため息をついて、机の中\nを両手でまさぐる。@
 　－－教科書。@
 　いらない。@
 　－－プリント。@
@@ -39,14 +34,16 @@ R机までたどり着いた拓司は、必死の力を振り絞って身を起�
 　－－カッター。@
 　ピンポーン！\
 
- DO SOMETHING \x1f\xb8\x03 AND "\x1f\xc2\x02 AND2 \x1f\xf0\x02 AND2 5
-SCE080_003\x1f:\x05 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\xa8\x8c
-.　そうしてカッターナイフを取り出すと、拓司はキリキリと刃を
-　押し出し、それを喉元に押し当てた。@
+  \r \xb8\x03
+FOB " \xc2\x02 \x02 \xf0\x02 \x025
+SCE SCE080_003 :\x05 \x02\xef! \r \x8c\x01\r\x02 \xa8\x8c\x0c"\x03.
+ 
+　そうしてカッターナイフを取り出すと、拓司はキリキリと刃を\n　押し出し、それを喉元に押し当てた。@
 　終わりだ。@
 　ようやく瓶から脱出できる。@
 　さあ。@
 　終わりだ。\
 
- DO SOMETHING \x1f~\x05 AND "\x1f\xc2\x02 AND2 \x1f\xf0\x02 AND2 5\x1f\xc2\x02 AND2 
-TextClose |\x06 AND2 56\xf1
+  \r ~\x05
+FOB " \xc2\x02 \x02 \xf0\x02 \x025 \xc2\x02 \x02
+SCE TextClosev\x81\x1f|\x06 \x0256\xf1

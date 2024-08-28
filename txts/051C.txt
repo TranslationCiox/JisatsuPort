@@ -1,42 +1,38 @@
 START
 \xdc\x07\x01`B#\x01(\x06
-SCE051_001\x1f\x06 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1eP_\x0c" DO SOMETHING  AND2  AND " \x1e\x04\r\x1e\x1a AND " \x1e\x08\r\x1e\x01
-.\\Data\\Script\\Bgm.Fob \x98
-SePlay \xc2 AND2 5\x03\xa2　静まり返った廊下に、拓司たちの足音が響く。@
-　ときおり、通り過ぎる教室からなにか激しい音が……机のひっ
-　くり返る音や、なにかを叫んでいる声が……聞こえるが、もう
-　中を覗く気などおきなかった。@
+SCE SCE051_001 \x06 \x02\xef! \r \x8c\x01\r\x02 P_\x0c"  \r \x02
+FOB "  \x04\r \x1a
+FOB "  \x08\r \x01
+FOB "\x03\x06.\\Data\\Script\\Bgm.Fobv\x81\x1f\x98
+CM1 SePlay RUN \xc2 \x025\x03\xa2
+ 
+　静まり返った廊下に、拓司たちの足音が響く。@
+　ときおり、通り過ぎる教室からなにか激しい音が……机のひっ\n　くり返る音や、なにかを叫んでいる声が……聞こえるが、もう\n　中を覗く気などおきなかった。@
 　一刻も早く、早桃の教室にたどり着かなければならない。@
 　それだけを思って、拓司は駆けた。@
 　やや遅れて、なたねも駆けている。@
-
-なたね
-　「……待って、虎菱くん！」@
-
-　拓司は待たない。@なたねの声を無視して、ひたすら駆ける。@
+\nなたね\n　「……待って、虎菱くん！」@
+\n　拓司は待たない。\pなたねの声を無視して、ひたすら駆ける。@
 　１秒遅れただけで、早桃は自殺してしまうかもしれないのだ。@
 　なたねの妄想になど、つきあっていられない。@
-　焦りと不安が、なたねへの怒りへと転嫁されて、ふつふつと胸
-　の中で煮えたぎっていた。\
+　焦りと不安が、なたねへの怒りへと転嫁されて、ふつふつと胸\n　の中で煮えたぎっていた。\
 
- DO SOMETHING \x1f\xde
-.\\Data\\Script\\TextFunc.Fob \x86\x03
-TextOn \xb4\x03 AND2 5
-SCE051_002\x1f\xd0\x03 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1eT_
--なたね
-　「……教室に入る前に……なかを確かめて！　そうしないと危
-　　険だわ！」@
+  \r \xde
+FOB "\x03\x07.\\Data\\Script\\TextFunc.Fob RUN \x86\x03
+CM1 TextOn RUN \xb4\x03 \x025
+SCE SCE051_002 \xd0\x03 \x02\xef! \r \x8c\x01\r\x02 T_\x0c"\x03-
+ 
+なたね\n　「……教室に入る前に……なかを確かめて！　そうしないと危\n　　険だわ！」@
+\nそんな声を背中に聞きながら、拓司は駆けた。\p早桃の教室まで、\nあっという間だった。\
 
-そんな声を背中に聞きながら、拓司は駆けた。@早桃の教室まで、
-あっという間だった。\
-
- DO SOMETHING \x1f\x14\x04 AND "\x1f\x86\x03 AND2 \x1f\xb4\x03 AND2 5 DO SOMETHING  AND2  AND "\x1f\x98
-SeStop (\x05 AND2 5\x03 
+  \r \x14\x04
+FOB " \x86\x03 \x02 \xb4\x03 \x025  \r \x02
+FOB " \x98
+CM1 SeStop RUN (\x05 \x025\x03 
 CHOICE
-一刻も待てない。拓司はその勢いのまま、教室に躍り込んだ。
-拓司はなたねの警告に従って、そっと中をのぞき込んだ。
-\l0,2,
+一刻も待てない。拓司はその勢いのまま、教室に躍り込んだ。\n拓司はなたねの警告に従って、そっと中をのぞき込んだ。\n\l0,2,
 ENDCHOICE
 
- DO SOMETHING \x1fD\x05 AND "\x1f\x86\x03 AND2 \x1f\xb4\x03 AND2 5\x1f\x86\x03 AND2 
-TextClose \n\x06 AND2 56\xf1
+  \r D\x05
+FOB " \x86\x03 \x02 \xb4\x03 \x025 \x86\x03 \x02
+SCE TextClosev\x81\x1f\n\x06 \x0256\xf1

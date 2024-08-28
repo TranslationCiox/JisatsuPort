@@ -1,70 +1,87 @@
 START
 \x06\x18\x01`B#\x01\x1e\x11
-SCE011_001\x1f\x06 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\xd0 \x0c" DO SOMETHING \x1e AND " \x1e\x04\r\x1e\x13 AND " \x1e\x08\r\x1e
-.\\Data\\Script\\Bgm.Fob \x98 AND2 
-SePlayEx \xc2 AND2 5 DO SOMETHING \x1e
-.\\Data\\Script\\Bg.Fob \xfc
-BgAutoFadeIn &\x01 AND2 5\x03a早桃
-　「おはよう、おにいちゃん。起きたんだ？」@
-拓司
-　「……おはよう」@
-早桃
-　「ごめんね、あんまりたいしたものは作れなかったけど……一応
-　　用意できてるから。食べてね」@
-拓司
-　「ああ、悪いな」@
-早桃
-　「ううん。ママとパパ、旅行中だから……早桃がやらないと、ね
-　　？」@
-拓司
-　「……」@
-早桃
-　「おにいちゃん？」@
-拓司
-　「……」@
-早桃
-　「……」\
+SCE SCE011_001 \x06 \x02\xef! \r \x8c\x01\r\x02 \xd0 \x0c"  \r 
+FOB "  \x04\r \x13
+FOB "  \x08\r 
+FOB "\x03\x06.\\Data\\Script\\Bgm.Fobv\x81\x1f\x98 \x02
+SCE SePlayExsv\x81\x1f\xc2 \x025  \r 
+FOB "\x03\x06.\\Data\\Script\\Bg.Fobsv\x81\x1f\xfc
+CM2 BgAutoFadeInsv\x81\x1f&\x01 \x025\x03a
+ 
+早桃\n　「おはよう、おにいちゃん。起きたんだ？」@
+拓司\n　「……おはよう」@
+早桃\n　「ごめんね、あんまりたいしたものは作れなかったけど……一応\n　　用意できてるから。食べてね」@
+拓司\n　「ああ、悪いな」@
+早桃\n　「ううん。ママとパパ、旅行中だから……早桃がやらないと、ね\n　　？」@
+拓司\n　「……」@
+早桃\n　「おにいちゃん？」@
+拓司\n　「……」@
+早桃\n　「……」\
 
- DO SOMETHING \x1fJ\x01
-.\\Data\\Script\\TextFunc.Fob \xee\x02
-TextOn \x1c\x03 AND2 5
-SCE011_002\x1f8\x03 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\xd4 \x0c"\x1f\xee\x02 AND2 \x03\x05TextWindowOffDirect\x1f\x88\x03 AND2 5 DO SOMETHING  AND2  AND " \x1e\x04\r\x1e\x01 AND " \x1e\x08\r\x1e\x01 AND "\x1f\x98
-SePlay \n\x04 AND2 5\x01\x01\x1f&\x04\x1e AND "\x1f&\x04\x1e\x03\x1b\x02\x041\x86\x05 DO SOMETHING \x1e\xc9 AND "\x1f\xfc
-BgOn \x86\x04 AND2 5 DO SOMETHING \x1e\x01
-.\\Data\\Script\\TextFunc.fob \xbc\x04 AND2 
-WaitTime \xea\x04 AND2 5 DO SOMETHING \x1e\xca AND "\x1f\xfc AND2 \x1f\x86\x04 AND2 5 DO SOMETHING \x1e\x01 AND "\x1f\xbc\x04 AND2 \x1f\xea\x04 AND2 5\x1f&\x04\x1e\x01 AND d"2>\x04 DO SOMETHING  AND2  AND "\x1f\x98
-SeStop \xb2\x05 AND2 5 DO SOMETHING \x1e AND "\x1f\xfc AND2 \x1f\x86\x04 AND2 5\x1f\xee\x02
-TextWindowOn \x0e\x06 AND2 5\x03\x1c早桃
-　「おにいちゃん？」@
-拓司
-　「……あ、ああ。ごめん。いただきます」@
-早桃
-　「……うん」\
+  \r J\x01
+FOB "\x03\x07.\\Data\\Script\\TextFunc.Fob RUN \xee\x02
+CM1 TextOn RUN \x1c\x03 \x025
+SCE SCE011_002 8\x03 \x02\xef! \r \x8c\x01\r\x02 \xd4 \x0c" \xee\x02 \x02\x03\x05TextWindowOffDirect \x88\x03 \x025  \r \x02
+FOB "  \x04\r \x01
+FOB "  \x08\r \x01
+FOB " \x98
+CM1 SePlay RUN \n\x04 \x025\x01\x01 &\x04 
+FOB " &\x04 \x03\x1b\x02\x041\x86\x05  \r \xc9
+FOB " \xfc
+CM1 BgOnsv\x81\x1f\x86\x04 \x025  \r \x01
+FOB "\x03\x07.\\Data\\Script\\TextFunc.fob RUN \xbc\x04 \x02
+SCE WaitTimesv\x81\x1f\xea\x04 \x025  \r \xca
+FOB " \xfc \x02 \x86\x04 \x025  \r \x01
+FOB " \xbc\x04 \x02 \xea\x04 \x025 &\x04 \x01
+FOB d"2>\x04  \r \x02
+FOB " \x98
+CM1 SeStop RUN \xb2\x05 \x025  \r 
+FOB " \xfc \x02 \x86\x04 \x025 \xee\x02
+CM2 TextWindowOnsv\x81\x1f\x0e\x06 \x025\x03\x1c
+ 
+早桃\n　「おにいちゃん？」@
+拓司\n　「……あ、ああ。ごめん。いただきます」@
+早桃\n　「……うん」\
 
- DO SOMETHING \x1f2\x06 AND "\x1f\xee\x02 AND2 \x1f\x1c\x03 AND2 5
-SCE011_003\x1f\xdc\x06 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\xd8 \x0c"\x1f\xee\x02 AND2 \x1f\x88\x03 AND2 5 DO SOMETHING  AND2  AND " \x1e\x04\r\x1e\x01 AND " \x1e\x08\r\x1e\x01 AND "\x1f\x98 AND2 \x1f\n\x04 AND2 5 DO SOMETHING \x1e\xca AND "\x1f\xfc
-BgNormalFadeIn \xc8\x07 AND2 5\x01\x01\x1f\xec\x07\x1e AND "\x1f\xec\x07\x1e\x03\x1b\x02\x041\n\t DO SOMETHING \x1e\xc9 AND "\x1f\xfc AND2 \x1f\x86\x04 AND2 5 DO SOMETHING \x1e\x01 AND "\x1f\xbc\x04 AND2 \x1f\xea\x04 AND2 5 DO SOMETHING \x1e\xca AND "\x1f\xfc AND2 \x1f\x86\x04 AND2 5 DO SOMETHING \x1e\x01 AND "\x1f\xbc\x04 AND2 \x1f\xea\x04 AND2 5\x1f\xec\x07\x1e\x01 AND d"2\x04\x08 DO SOMETHING \x1e\xc8 AND "\x1f\xfc AND2 \x1f\x86\x04 AND2 5 DO SOMETHING \x1eL AND "\x1f\xfc AND2 \x1f\xc8\x07 AND2 5 DO SOMETHING \x1e< AND "\x1f\xbc\x04 AND2 \x1f\xea\x04 AND2 5 DO SOMETHING \x1e\xc8 AND "\x1f\xfc AND2 \x1f\x86\x04 AND2 5 DO SOMETHING  AND2  AND "\x1f\x98 AND2 \x1f\xb2\x05 AND2 5 DO SOMETHING \x1e\x04\x01 AND "\x1f\x98
-PlayCD :\n AND2 5\x1f\xee\x02 AND2 \x1f\x0e\x06 AND2 5\x03\x08\x01早桃
-　「……あ……ああ……うくっ……気持ちい……いい……あはっ…
-　　…指がこんなになかに……入ってる……ふーっ……ふーっ……
-　　こんなに……ぬるぬるで……」@
-/*　SE01再生しながら　ノイズ表示→HCG05表示　を3回繰り返し　*/\a5,0,0,0,\a6,0,0,0,早桃
-　「……もっと……もっといっぱい……あくっ……奥に……気持ち
-　　いいよぅ……」@
-/*　SE01再生しながら　ノイズ表示→HCG05表示　を3回繰り返し　*/\a5,0,0,0,\a6,0,0,0,早桃
-　「……好き……好き……もっと……スキ……気持ち……いい……
-　　スキ……いい……ひいっ」@
-/*　SE01再生しながら　ノイズ表示→HCG05表示　を3回繰り返し　*/\a5,0,0,0,\a6,0,0,0,早桃
-　「あ、あ、あ、あ、あ、あ、あ、あ、あ、あ！」@
-/*　SE01再生しながら　ノイズ表示→HCG05表示　を3回繰り返し　*/\a5,0,0,0,\a6,0,0,0,早桃
-　「あ！」@
-/*　SE01再生しながら　ノイズ表示→HCG05表示　を3回繰り返し　*/\a5,0,0,0,\a6,0,0,0,早桃
-　「はあ、はあ、はあ、はあはあはあはあはあはあはあはあはあは
-　　あはあ……」@
-/*　SE01再生しながら　ノイズ表示→HCG05表示　を3回繰り返し　*/\a5,0,0,0,\a6,0,0,0,早桃
-　「……おにいちゃ……ぁん」\
+  \r 2\x06
+FOB " \xee\x02 \x02 \x1c\x03 \x025
+SCE SCE011_003 \xdc\x06 \x02\xef! \r \x8c\x01\r\x02 \xd8 \x0c" \xee\x02 \x02 \x88\x03 \x025  \r \x02
+FOB "  \x04\r \x01
+FOB "  \x08\r \x01
+FOB " \x98 \x02 \n\x04 \x025  \r \xca
+FOB " \xfc
+CM2 BgNormalFadeIn RUN \xc8\x07 \x025\x01\x01 \xec\x07 
+FOB " \xec\x07 \x03\x1b\x02\x041\n\t  \r \xc9
+FOB " \xfc \x02 \x86\x04 \x025  \r \x01
+FOB " \xbc\x04 \x02 \xea\x04 \x025  \r \xca
+FOB " \xfc \x02 \x86\x04 \x025  \r \x01
+FOB " \xbc\x04 \x02 \xea\x04 \x025 \xec\x07 \x01
+FOB d"2\x04\x08  \r \xc8
+FOB " \xfc \x02 \x86\x04 \x025  \r L
+FOB " \xfc \x02 \xc8\x07 \x025  \r <
+FOB " \xbc\x04 \x02 \xea\x04 \x025  \r \xc8
+FOB " \xfc \x02 \x86\x04 \x025  \r \x02
+FOB " \x98 \x02 \xb2\x05 \x025  \r \x04\x01
+FOB " \x98
+CM1 PlayCD RUN :\n \x025 \xee\x02 \x02 \x0e\x06 \x025\x03\x08\x01
+ 
+早桃\n　「……あ……ああ……うくっ……気持ちい……いい……あはっ…\n　　…指がこんなになかに……入ってる……ふーっ……ふーっ……\n　　こんなに……ぬるぬるで……」@
+/*　SE01再生しながら　ノイズ表示→HCG05表示　を3回繰り返し　*/\a5,0,0,0,\a6,0,0,0,早桃\n　「……もっと……もっといっぱい……あくっ……奥に……気持ち\n　　いいよぅ……」@
+/*　SE01再生しながら　ノイズ表示→HCG05表示　を3回繰り返し　*/\a5,0,0,0,\a6,0,0,0,早桃\n　「……好き……好き……もっと……スキ……気持ち……いい……\n　　スキ……いい……ひいっ」@
+/*　SE01再生しながら　ノイズ表示→HCG05表示　を3回繰り返し　*/\a5,0,0,0,\a6,0,0,0,早桃\n　「あ、あ、あ、あ、あ、あ、あ、あ、あ、あ！」@
+/*　SE01再生しながら　ノイズ表示→HCG05表示　を3回繰り返し　*/\a5,0,0,0,\a6,0,0,0,早桃\n　「あ！」@
+/*　SE01再生しながら　ノイズ表示→HCG05表示　を3回繰り返し　*/\a5,0,0,0,\a6,0,0,0,早桃\n　「はあ、はあ、はあ、はあはあはあはあはあはあはあはあはあは\n　　あはあ……」@
+/*　SE01再生しながら　ノイズ表示→HCG05表示　を3回繰り返し　*/\a5,0,0,0,\a6,0,0,0,早桃\n　「……おにいちゃ……ぁん」\
 
- DO SOMETHING \x1fp\n AND "\x1f\xee\x02 AND2 \x1f\x1c\x03 AND2 5
-SCE011_004\x1f\xca\x0e AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\xdc \x0c"\x1f\xbc\x04 AND2 \x03\x06CheckNormalMessageSkip \x1a\x0f AND2 5\x1f\xee\x02 AND2 \x1f\x88\x03 AND2 5 DO SOMETHING  AND2  AND " \x1e\x04\r\x1e\x01 AND " \x1e\x08\r\x1e\x01 AND "\x1f\x98 AND2 \x1f\n\x04 AND2 5 DO SOMETHING \x1e\xca AND "\x1f\xfc AND2 \x1f\xc8\x07 AND2 5 DO SOMETHING \x1e< AND "\x1f\xbc\x04 AND2 \x1f\xea\x04 AND2 5 DO SOMETHING \x1e\xc8 AND "\x1f\xfc AND2 \x1f\x86\x04 AND2 5 DO SOMETHING  AND2  AND "\x1f\x98 AND2 \x1f\xb2\x05 AND2 5\x1f\x98
-StopCD \xa4\x10 AND2 5\x1f\xee\x02 AND2 \x03\x05UpdateScenarioRead \xcc\x10 AND2 5\x1f\xee\x02 AND2 
-TextClose \x11 AND2 56\xf1
+  \r p\n
+FOB " \xee\x02 \x02 \x1c\x03 \x025
+SCE SCE011_004 \xca\x0e \x02\xef! \r \x8c\x01\r\x02 \xdc \x0c" \xbc\x04 \x02\x03\x06CheckNormalMessageSkip RUN \x1a\x0f \x025 \xee\x02 \x02 \x88\x03 \x025  \r \x02
+FOB "  \x04\r \x01
+FOB "  \x08\r \x01
+FOB " \x98 \x02 \n\x04 \x025  \r \xca
+FOB " \xfc \x02 \xc8\x07 \x025  \r <
+FOB " \xbc\x04 \x02 \xea\x04 \x025  \r \xc8
+FOB " \xfc \x02 \x86\x04 \x025  \r \x02
+FOB " \x98 \x02 \xb2\x05 \x025 \x98
+CM1 StopCD RUN \xa4\x10 \x025 \xee\x02 \x02\x03\x05UpdateScenarioRead RUN \xcc\x10 \x025 \xee\x02 \x02
+SCE TextClosev\x81\x1f\x11 \x0256\xf1

@@ -1,38 +1,34 @@
 START
 \xc5\x05\x01\xa4\t3\x01\xba\x04
-SCE061_001\x1f\x06 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\xf0n\x0c" DO SOMETHING  AND2  AND " \x1e\x04\r\x1e\x1a AND " \x1e\x08\r\x1e\x01
-.\\Data\\Script\\Bgm.Fob \x98
-SePlay \xc2 AND2 5\x03\\なたね
-　「次は？」@
-拓司
-　「２階……カンナの教室だ」@
-なたね
-　「月代カンナ……変わった子ね」@
-拓司
-　「……」@
-なたね
-　「あの子なら、たぶん死んではいないと思う」@
-拓司
-　「……？」@
-なたね
-　「あの子は深く憑かれすぎた。@単純に運命として受け入れるに
-　　は、大きくなりすぎている」@
-拓司
-　「……何の話だ？」@
-なたね
-　「死の話」\
+SCE SCE061_001 \x06 \x02\xef! \r \x8c\x01\r\x02 \xf0n\x0c"  \r \x02
+FOB "  \x04\r \x1a
+FOB "  \x08\r \x01
+FOB "\x03\x06.\\Data\\Script\\Bgm.Fobv\x81\x1f\x98
+CM1 SePlay RUN \xc2 \x025\x03\\
+ 
+なたね\n　「次は？」@
+拓司\n　「２階……カンナの教室だ」@
+なたね\n　「月代カンナ……変わった子ね」@
+拓司\n　「……」@
+なたね\n　「あの子なら、たぶん死んではいないと思う」@
+拓司\n　「……？」@
+なたね\n　「あの子は深く憑かれすぎた。\p単純に運命として受け入れるに\n　　は、大きくなりすぎている」@
+拓司\n　「……何の話だ？」@
+なたね\n　「死の話」\
 
- DO SOMETHING \x1f\xde
-.\\Data\\Script\\TextFunc.Fob n\x02
-TextOn \x9c\x02 AND2 5 DO SOMETHING  AND2  AND "\x1f\x98
-SeStop \xde\x02 AND2 5 DO SOMETHING \x1e<
-.\\Data\\Script\\TextFunc.fob \x14\x03 AND2 
-WaitTime B\x03 AND2 5
-SCE061_002\x1fb\x03 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\xf4n
-\x12拓司
-　「早桃は廊下で待っていろ。@雲居さんは……一緒に頼む」\
+  \r \xde
+FOB "\x03\x07.\\Data\\Script\\TextFunc.Fob RUN n\x02
+CM1 TextOn RUN \x9c\x02 \x025  \r \x02
+FOB " \x98
+CM1 SeStop RUN \xde\x02 \x025  \r <
+FOB "\x03\x07.\\Data\\Script\\TextFunc.fob RUN \x14\x03 \x02
+SCE WaitTimesv\x81\x1fB\x03 \x025
+SCE SCE061_002 b\x03 \x02\xef! \r \x8c\x01\r\x02 \xf4n\x0c"\x03\x12
+ 
+拓司\n　「早桃は廊下で待っていろ。\p雲居さんは……一緒に頼む」\
 
- DO SOMETHING \x1f\xa6\x03 AND "\x1fn\x02 AND2 \x1f\x9c\x02 AND2 5 DO SOMETHING \x1e\xc9
-.\\Data\\Script\\Bg.Fob B\x04
-BgAutoFadeIn l\x04 AND2 5\x1fn\x02 AND2 
-TextClose \x9c\x04 AND2 56\xf1
+  \r \xa6\x03
+FOB " n\x02 \x02 \x9c\x02 \x025  \r \xc9
+FOB "\x03\x06.\\Data\\Script\\Bg.Fobsv\x81\x1fB\x04
+CM2 BgAutoFadeInsv\x81\x1fl\x04 \x025 n\x02 \x02
+SCE TextClosev\x81\x1f\x9c\x04 \x0256\xf1

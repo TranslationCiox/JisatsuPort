@@ -1,24 +1,18 @@
 START
 \xef\x0b\x01`B#\x01\xc2\t
-SCE002_001\x1f\x06 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\xc0\x12
-\x12
+SCE SCE002_001 \x06 \x02\xef! \r \x8c\x01\r\x02 \xc0\x12\x0c"\x03\x12
+ 
+\n\n\n\n\n\n\n\n\n\n　　　　　　『ジサツのための１０１の方法』\
 
-
-
-
-
-
-
-
-
-　　　　　　『ジサツのための１０１の方法』\
-
- DO SOMETHING \x1fJ
-.\\Data\\Script\\TextFunc.Fob \xb2
-TextOn \xe0 AND2 5
-SCE002_002\x1f\xfc AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\xc4\x12\x0c" DO SOMETHING  AND2  AND " \x1e\x04\r\x1e\x01 AND " \x1e\x08\r\x1e\x01
-.\\Data\\Script\\Bgm.Fob \x8e\x01
-SePlay \xb8\x01 AND2 5
+  \r J
+FOB "\x03\x07.\\Data\\Script\\TextFunc.Fob RUN \xb2
+CM1 TextOn RUN \xe0 \x025
+SCE SCE002_002 \xfc \x02\xef! \r \x8c\x01\r\x02 \xc4\x12\x0c"  \r \x02
+FOB "  \x04\r \x01
+FOB "  \x08\r \x01
+FOB "\x03\x06.\\Data\\Script\\Bgm.Fobv\x81\x1f\x8e\x01
+CM1 SePlay RUN \xb8\x01 \x025\x03\x89
+ 
 学生　「なんだアイツ？」@
 学生　「目立ちたいんだろ？」@
 学生　「やばいよ」@
@@ -38,9 +32,11 @@ SePlay \xb8\x01 AND2 5
 学生　「自殺じゃないの？」@
 学生　「愉快犯」\
 
- DO SOMETHING \x1f\xd4\x01 AND "\x1f\xb2 AND2 \x1f\xe0 AND2 5
-SCE002_003\x1f2\x04 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\xc8\x12
-f学生　「なんかの宣伝とか？」@
+  \r \xd4\x01
+FOB " \xb2 \x02 \xe0 \x025
+SCE SCE002_003 2\x04 \x02\xef! \r \x8c\x01\r\x02 \xc8\x12\x0c"\x03f
+ 
+学生　「なんかの宣伝とか？」@
 学生　「サーカスの宣伝」@
 学生　「綱渡りの宣伝」@
 学生　「まさか」@
@@ -55,9 +51,11 @@ f学生　「なんかの宣伝とか？」@
 学生　「死ぬかな」@
 学生　「死ぬんじゃない？」\
 
- DO SOMETHING \x1fv\x04 AND "\x1f\xb2 AND2 \x1f\xe0 AND2 5
-SCE002_004\x1fH\x06 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\xcc\x12
-(学生　「……」@
+  \r v\x04
+FOB " \xb2 \x02 \xe0 \x025
+SCE SCE002_004 H\x06 \x02\xef! \r \x8c\x01\r\x02 \xcc\x12\x0c"\x03(
+ 
+学生　「……」@
 学生　「……」@
 学生　「……」@
 学生　「やばいよ」@
@@ -66,16 +64,24 @@ SCE002_004\x1fH\x06 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\xcc\x12
 学生　「……」@
 学生　「あっ？！」\
 
- DO SOMETHING \x1f\x8c\x06 AND "\x1f\xb2 AND2 \x1f\xe0 AND2 5
-SCE002_005\x1ff\x07 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\xd0\x12\x0c"\x1f\x8e\x01
-StopCD \xb6\x07 AND2 5 DO SOMETHING  AND2  AND "\x1f\x8e\x01
-SeStop \xf8\x07 AND2 5 DO SOMETHING \x1e<
-.\\Data\\Script\\TextFunc.fob .\x08 AND2 
-WaitTime \\\x08 AND2 5 DO SOMETHING \x1e AND " \x1e\x04\r AND2  AND " \x1e\x08\r\x1e AND "\x1f\x8e\x01 AND2 
-SePlayEx \xd6\x08 AND2 5\x03\x1a学生　「落ちたよ」@
+  \r \x8c\x06
+FOB " \xb2 \x02 \xe0 \x025
+SCE SCE002_005 f\x07 \x02\xef! \r \x8c\x01\r\x02 \xd0\x12\x0c" \x8e\x01
+CM1 StopCD RUN \xb6\x07 \x025  \r \x02
+FOB " \x8e\x01
+CM1 SeStop RUN \xf8\x07 \x025  \r <
+FOB "\x03\x07.\\Data\\Script\\TextFunc.fob RUN .\x08 \x02
+SCE WaitTimesv\x81\x1f\\\x08 \x025  \r 
+FOB "  \x04\r \x02
+FOB "  \x08\r 
+FOB " \x8e\x01 \x02
+SCE SePlayExsv\x81\x1f\xd6\x08 \x025\x03\x1a
+ 
+学生　「落ちたよ」@
 学生　「やばいよ」@
 学生　「死んだかな？」@
 学生　「死んだでしょ」\
 
- DO SOMETHING \x1f\xf6\x08 AND "\x1f\xb2 AND2 \x1f\xe0 AND2 5\x1f\xb2 AND2 
-TextClose \xa4\t AND2 56\xf1
+  \r \xf6\x08
+FOB " \xb2 \x02 \xe0 \x025 \xb2 \x02
+SCE TextClosev\x81\x1f\xa4\t \x0256\xf1

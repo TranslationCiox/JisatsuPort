@@ -1,18 +1,16 @@
 START
 P\x03\x01\x90\x044\x01\xd4\x01
-SCE065_001\x1f\x06 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e0u
-\x11カンナ
-　「正解。@つまり、重要なのはどこか、わかる？」\
+SCE SCE065_001 \x06 \x02\xef! \r \x8c\x01\r\x02 0u\x0c"\x03\x11
+ 
+カンナ\n　「正解。\pつまり、重要なのはどこか、わかる？」\
 
- DO SOMETHING \x1fJ
-.\\Data\\Script\\TextFunc.Fob \xae
-TextOn \xdc AND2 5\x03\x1e
+  \r J
+FOB "\x03\x07.\\Data\\Script\\TextFunc.Fob RUN \xae
+CM1 TextOn RUN \xdc \x025\x03 
 CHOICE
-最初の電気ショックが回避不可能だったこと
-電流が流れる前に部屋が暗くなること
-電流の痛みになれること
-\l0,3,
+最初の電気ショックが回避不可能だったこと\n電流が流れる前に部屋が暗くなること\n電流の痛みになれること\n\l0,3,
 ENDCHOICE
 
- DO SOMETHING \x1f\xf8 AND "\x1f\xae AND2 \x1f\xdc AND2 5\x1f\xae AND2 
-TextClose \xb6\x01 AND2 56\xf1
+  \r \xf8
+FOB " \xae \x02 \xdc \x025 \xae \x02
+SCE TextClosev\x81\x1f\xb6\x01 \x0256\xf1

@@ -1,28 +1,21 @@
 START
 "\x04\x01\xa4\t3\x01\xe0\x02
-SCE070_001\x1f\x06 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e}
-[なたね
-　「駄目！」@
-
-なたねが鋭く静止した。@
-
-なたね
-　「校舎から出るのは最悪の方法だわ。@わずかながらも校舎が防
-　　いでいる波動を……真っ正面から受けることになるわ。@
+SCE SCE070_001 \x06 \x02\xef! \r \x8c\x01\r\x02 }\x0c"\x03[
+ 
+なたね\n　「駄目！」@
+\nなたねが鋭く静止した。@
+\nなたね\n　「校舎から出るのは最悪の方法だわ。\pわずかながらも校舎が防\n　　いでいる波動を……真っ正面から受けることになるわ。@
 　　多分、ひとたまりもない」@
-早桃
-　「おにいちゃん！@　こんな人のいうこと信じちゃだめよ！@
-　　ハドウなんて、ない。@そんなの全部、この人の空想なんだか
-　　ら！」\
+早桃\n　「おにいちゃん！\p　こんな人のいうこと信じちゃだめよ！@
+　　ハドウなんて、ない。\pそんなの全部、この人の空想なんだか\n　　ら！」\
 
- DO SOMETHING \x1fJ
-.\\Data\\Script\\TextFunc.Fob \xd6\x01
-TextOn \x04\x02 AND2 5\x03\x17
+  \r J
+FOB "\x03\x07.\\Data\\Script\\TextFunc.Fob RUN \xd6\x01
+CM1 TextOn RUN \x04\x02 \x025\x03\x17
 CHOICE
-なたねの警告を受け入れて別のコースを選ぶ
-早桃の忠告を受け入れて中庭に出る
-\l0,2,
+なたねの警告を受け入れて別のコースを選ぶ\n早桃の忠告を受け入れて中庭に出る\n\l0,2,
 ENDCHOICE
 
- DO SOMETHING \x1f \x02 AND "\x1f\xd6\x01 AND2 \x1f\x04\x02 AND2 5\x1f\xd6\x01 AND2 
-TextClose \xc2\x02 AND2 56\xf1
+  \r  \x02
+FOB " \xd6\x01 \x02 \x04\x02 \x025 \xd6\x01 \x02
+SCE TextClosev\x81\x1f\xc2\x02 \x0256\xf1

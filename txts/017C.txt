@@ -1,27 +1,21 @@
 START
 *\x03\x01\xb0\x044\x01D\x02
-SCE017_001\x1f\x06 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e0*
-$拓司
-　「……」@
-紅葉
-　「……」@
-拓司
-　「……」@
-紅葉
-　「……」@
-拓司
-　「……」@
-紅葉
-　「……」@
-拓司
-　「……」\
- DO SOMETHING \x1fJ
-.\\Data\\Script\\TextFunc.Fob \xfa
-TextOn (\x01 AND2 5
-SCE017_002\x1fD\x01 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e4*
-\x16紅葉
-　「……生理？」@
-拓司
-　「お前なあ、もうちょっと女らしい冗談言えよ」\
- DO SOMETHING \x1f\x88\x01 AND "\x1f\xfa AND2 \x1f(\x01 AND2 5\x1f\xfa AND2 
-TextClose &\x02 AND2 56\xf1
+SCE SCE017_001 \x06 \x02\xef! \r \x8c\x01\r\x02 0*\x0c"\x03$
+ 
+拓司\n　「……」@
+紅葉\n　「……」@
+拓司\n　「……」@
+紅葉\n　「……」@
+拓司\n　「……」@
+紅葉\n　「……」@
+拓司\n　「……」\w\z
+  \r J
+FOB "\x03\x07.\\Data\\Script\\TextFunc.Fob RUN \xfa
+CM1 TextOn RUN (\x01 \x025
+SCE SCE017_002 D\x01 \x02\xef! \r \x8c\x01\r\x02 4*\x0c"\x03\x16
+ 
+紅葉\n　「……生理？」@
+拓司\n　「お前なあ、もうちょっと女らしい冗談言えよ」\w\z
+  \r \x88\x01
+FOB " \xfa \x02 (\x01 \x025 \xfa \x02
+SCE TextClosev\x81\x1f&\x02 \x0256\xf1

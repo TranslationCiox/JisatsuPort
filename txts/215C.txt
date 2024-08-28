@@ -1,28 +1,22 @@
 START
-\xeb\x03\x01\xa4\t3\x01\xac\x02\x03\x06.\\Data\\Script\\Bgm.Fob \x06
-StopCD 0 AND2 5
-SCE215_001\x1fL AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\x90_\x01
-\x11
+\xeb\x03\x01\xa4\t3\x01\xac\x02\x03\x06.\\Data\\Script\\Bgm.Fobv\x81\x1f\x06
+CM1 StopCD RUN 0 \x025
+SCE SCE215_001 L \x02\xef! \r \x8c\x01\r\x02 \x90_\x01\x0c"\x03\x11
+ 
+\n\n\n\n\n\n\n\n\n\n　　　　　　　　　　　　　『７日目』\
 
-
-
-
-
-
-
-
-
-　　　　　　　　　　　　　『７日目』\
-
- DO SOMETHING \x1f\x90
-.\\Data\\Script\\TextFunc.Fob \xf4
-TextOn "\x01 AND2 5 DO SOMETHING \x1e\x0c\x01 AND "\x1f\x06
-PlayCD d\x01 AND2 5
-SCE215_002\x1f\x80\x01 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\x94_\x01
-!目立った衝突はない。@
+  \r \x90
+FOB "\x03\x07.\\Data\\Script\\TextFunc.Fob RUN \xf4
+CM1 TextOn RUN "\x01 \x025  \r \x0c\x01
+FOB " \x06
+CM1 PlayCD RUN d\x01 \x025
+SCE SCE215_002 \x80\x01 \x02\xef! \r \x8c\x01\r\x02 \x94_\x01\x0c"\x03!
+ 
+目立った衝突はない。@
 早桃は風邪からほぼ回復したようだ。@
 昼間から横になって、動かない人間が増えた。@
 言葉も少ない。\
 
- DO SOMETHING \x1f\xc4\x01 AND "\x1f\xf4 AND2 \x1f"\x01 AND2 5\x1f\xf4 AND2 
-TextClose \x8e\x02 AND2 56\xf1
+  \r \xc4\x01
+FOB " \xf4 \x02 "\x01 \x025 \xf4 \x02
+SCE TextClosev\x81\x1f\x8e\x02 \x0256\xf1

@@ -1,30 +1,22 @@
 START
 \xd9\x03\x01\xa4\t3\x01\xc4\x02
-SCE060_001\x1f\x06 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e`m
-B拓司
-　「ここに……いたくない？」@
+SCE SCE060_001 \x06 \x02\xef! \r \x8c\x01\r\x02 `m\x0c"\x03B
+ 
+拓司\n　「ここに……いたくない？」@
+\n拓司の問には答えず、早桃はいった。@
+\n早桃\n　「……いま、早桃がどう思ってるかわかる？」@
+拓司\n　「？」@
+早桃\n　「みんな自殺して、いなくなっちゃって」@
+拓司\n　「……」\n早桃\n　「ざまあみろって思ってる」\
 
-拓司の問には答えず、早桃はいった。@
-
-早桃
-　「……いま、早桃がどう思ってるかわかる？」@
-拓司
-　「？」@
-早桃
-　「みんな自殺して、いなくなっちゃって」@
-拓司
-　「……」
-早桃
-　「ざまあみろって思ってる」\
-
- DO SOMETHING \x1fJ
-.\\Data\\Script\\TextFunc.Fob r\x01
-TextOn \xa0\x01 AND2 5
-SCE060_002\x1f\xbc\x01 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1edm
-\x18拓司
-　「……」@
-早桃
-　「おにいちゃん、後ろ向いてて。@ジャージに着替えるから」@
-
- DO SOMETHING \x1f\x02 AND "\x1fr\x01 AND2 \x1f\xa0\x01 AND2 5\x1fr\x01 AND2 
-TextClose \xa6\x02 AND2 56\xf1
+  \r J
+FOB "\x03\x07.\\Data\\Script\\TextFunc.Fob RUN r\x01
+CM1 TextOn RUN \xa0\x01 \x025
+SCE SCE060_002 \xbc\x01 \x02\xef! \r \x8c\x01\r\x02 dm\x0c"\x03\x18
+ 
+拓司\n　「……」@
+早桃\n　「おにいちゃん、後ろ向いてて。\pジャージに着替えるから」@
+\z
+  \r \x02
+FOB " r\x01 \x02 \xa0\x01 \x025 r\x01 \x02
+SCE TextClosev\x81\x1f\xa6\x02 \x0256\xf1

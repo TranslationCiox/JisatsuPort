@@ -1,12 +1,14 @@
 START
-\x10\x06\x01\xa4\t3\x01&\x05 DO SOMETHING \x1e\xc8
-.\\Data\\Script\\Bg.Fob  
-BgNormalFadeIn J AND2 5 DO SOMETHING \x1e\xc8 AND "\x1f 
-BgOn \x94 AND2 5 DO SOMETHING \x1e\t\x01
-.\\Data\\Script\\Bgm.Fob \xca
-PlayCD \xf4 AND2 5
-SCE001_001\x1f\x10\x01 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e0\x11
-O世界。@
+\x10\x06\x01\xa4\t3\x01&\x05  \r \xc8
+FOB "\x03\x06.\\Data\\Script\\Bg.Fobsv\x81\x1f 
+CM2 BgNormalFadeIn RUN J \x025  \r \xc8
+FOB "  
+CM1 BgOnsv\x81\x1f\x94 \x025  \r \t\x01
+FOB "\x03\x06.\\Data\\Script\\Bgm.Fobv\x81\x1f\xca
+CM1 PlayCD RUN \xf4 \x025
+SCE SCE001_001 \x10\x01 \x02\xef! \r \x8c\x01\r\x02 0\x11\x0c"\x03O
+ 
+世界。@
 世界。@
 世界。@
 なにもかもが世界だ。@
@@ -18,20 +20,21 @@ O世界。@
 世界定義にはでなのかによってきる？@
 きの世に義界はるなよっにて定でか？\
 
- DO SOMETHING \x1fT\x01
-.\\Data\\Script\\TextFunc.Fob \xb0\x02
-TextOn \xde\x02 AND2 5
-SCE001_002\x1f\xfa\x02 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e4\x11
-a頭にぼんやりと薄い霧がかかっている。@
+  \r T\x01
+FOB "\x03\x07.\\Data\\Script\\TextFunc.Fob RUN \xb0\x02
+CM1 TextOn RUN \xde\x02 \x025
+SCE SCE001_002 \xfa\x02 \x02\xef! \r \x8c\x01\r\x02 4\x11\x0c"\x03a
+ 
+頭にぼんやりと薄い霧がかかっている。@
 ゲル化した思考が、ゆるゆると頭蓋を這って流れ落ちる。@
 －－このとめどない混乱に、杭を打ち込むことはできるのか？@
 定点たる杭を打ち込むことは可能なのか？@
 たとえばそれはなにか？@
-すでに思考に確実さを見いだせないおれに
-……おれに残されているものはなにか？@
+すでに思考に確実さを見いだせないおれに\n……おれに残されているものはなにか？@
 たとえばそれは行動ではないか？@
 さらにたとえば……なにか？@
 なにか？\
 
- DO SOMETHING \x1f>\x03 AND "\x1f\xb0\x02 AND2 \x1f\xde\x02 AND2 5\x1f\xb0\x02 AND2 
-TextClose \x08\x05 AND2 56\xf1
+  \r >\x03
+FOB " \xb0\x02 \x02 \xde\x02 \x025 \xb0\x02 \x02
+SCE TextClosev\x81\x1f\x08\x05 \x0256\xf1

@@ -1,20 +1,19 @@
 START
-\xb8\x04\x01\xa4\t3\x01d\x03 DO SOMETHING \x1e\xc8
-.\\Data\\Script\\Bg.Fob  
-BgAutoFadeIn J AND2 5\x03\x06.\\Data\\Script\\Bgm.Fob n
-StopCD \x98 AND2 5
-SCEK06_001\x1f\xb4 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\xd0\xa6\x01
-v　もう帰ろう、と私がいうと、ゆきはほっとしたようだった。@
+\xb8\x04\x01\xa4\t3\x01d\x03  \r \xc8
+FOB "\x03\x06.\\Data\\Script\\Bg.Fobsv\x81\x1f 
+CM2 BgAutoFadeInsv\x81\x1fJ \x025\x03\x06.\\Data\\Script\\Bgm.Fobv\x81\x1fn
+CM1 StopCD RUN \x98 \x025
+SCE SCEK06_001 \xb4 \x02\xef! \r \x8c\x01\r\x02 \xd0\xa6\x01\x0c"\x03v
+ 
+　もう帰ろう、と私がいうと、ゆきはほっとしたようだった。@
 けれども安堵の奥には、落胆のかけらがあるように思えた。@
 たぶん、私は聞くべきだったのだ。@
-ゆきがそうしてくれたみたいに、私も彼女の秘密を受け入れて、
-共有してあげるべきだったのだ。@
+ゆきがそうしてくれたみたいに、私も彼女の秘密を受け入れて、\n共有してあげるべきだったのだ。@
 ゆきはには懺悔室が必要だった。@
-告白を聞いてくれる神父が。@神父を通じてなされる赦しが。@
+告白を聞いてくれる神父が。\p神父を通じてなされる赦しが。@
 私は結局、ゆきの秘密を最後まで知ることはなかった。@
-それから１週間後、ゆきは風邪薬を２００錠のんで、自殺したの
-だった。\
- DO SOMETHING \x1f\xf8
-.\\Data\\Script\\TextFunc.Fob \xf0\x02
-TextOn \x1e\x03 AND2 5\x1f\xf0\x02 AND2 
-TextClose F\x03 AND2 56\xf1
+それから１週間後、ゆきは風邪薬を２００錠のんで、自殺したの\nだった。\w\z
+  \r \xf8
+FOB "\x03\x07.\\Data\\Script\\TextFunc.Fob RUN \xf0\x02
+CM1 TextOn RUN \x1e\x03 \x025 \xf0\x02 \x02
+SCE TextClosev\x81\x1fF\x03 \x0256\xf1

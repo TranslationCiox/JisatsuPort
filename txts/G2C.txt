@@ -1,43 +1,36 @@
 START
-\xdd\x06\x01`B#\x01\x94\x05 DO SOMETHING \x1eC
-.\\Data\\Script\\Bg.Fob  
-BgAutoFadeIn J AND2 5 DO SOMETHING \x1e\x08\x01
-.\\Data\\Script\\Bgm.Fob \x88
-PlayCD \xb2 AND2 5
-SCEG02_001\x1f\xce AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1eH\xc5\x01
-)錦城
-　「……しっ！　私よ、虎菱くん」@
-拓司
-　「……先生？」@
-
-錦城は微かに笑うと、拓司の横へと体を移動させた。@
-寄り添って寝転がるような形になる。\
- DO SOMETHING \x1f\x12\x01
-.\\Data\\Script\\TextFunc.Fob \xd6\x01
-TextOn \x04\x02 AND2 5 DO SOMETHING \x1e\xc8 AND "\x1f  AND2 \x1fJ AND2 5
-SCEG02_002\x1fT\x02 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1eL\xc5\x01
-2錦城
-　「ちょっとお話がしたくて。いいかな？」@
-拓司
-　「……ええ、まあ」@
-錦城
-　「冷たいのね？」@
-拓司
-　「いえ……すみません」@
-錦城
-　「私……恥ずかしいわ」@
-拓司
-　「え？」\
- DO SOMETHING \x1f\x98\x02 AND "\x1f\xd6\x01 AND2 \x1f\x04\x02 AND2 5
-SCEG02_003\x1f\x9a\x03 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1eP\xc5\x01
-@錦城
-　「教師という仕事に就きながら、こういう状況では何もできな
-　　い。@本当は私がみんなを導かなくちゃいけないのに。@
+\xdd\x06\x01`B#\x01\x94\x05  \r C
+FOB "\x03\x06.\\Data\\Script\\Bg.Fobsv\x81\x1f 
+CM2 BgAutoFadeInsv\x81\x1fJ \x025  \r \x08\x01
+FOB "\x03\x06.\\Data\\Script\\Bgm.Fobv\x81\x1f\x88
+CM1 PlayCD RUN \xb2 \x025
+SCE SCEG02_001 \xce \x02\xef! \r \x8c\x01\r\x02 H\xc5\x01\x0c"\x03)
+ 
+錦城\n　「……しっ！　私よ、虎菱くん」@
+拓司\n　「……先生？」@
+\n錦城は微かに笑うと、拓司の横へと体を移動させた。@
+寄り添って寝転がるような形になる。\w\z
+  \r \x12\x01
+FOB "\x03\x07.\\Data\\Script\\TextFunc.Fob RUN \xd6\x01
+CM1 TextOn RUN \x04\x02 \x025  \r \xc8
+FOB "   \x02 J \x025
+SCE SCEG02_002 T\x02 \x02\xef! \r \x8c\x01\r\x02 L\xc5\x01\x0c"\x032
+ 
+錦城\n　「ちょっとお話がしたくて。いいかな？」@
+拓司\n　「……ええ、まあ」@
+錦城\n　「冷たいのね？」@
+拓司\n　「いえ……すみません」@
+錦城\n　「私……恥ずかしいわ」@
+拓司\n　「え？」\w\z
+  \r \x98\x02
+FOB " \xd6\x01 \x02 \x04\x02 \x025
+SCE SCEG02_003 \x9a\x03 \x02\xef! \r \x8c\x01\r\x02 P\xc5\x01\x0c"\x03@
+ 
+錦城\n　「教師という仕事に就きながら、こういう状況では何もできな\n　　い。\p本当は私がみんなを導かなくちゃいけないのに。@
 　　あなたにまかせっきりで。恥ずかしいわ」@
-拓司
-　「……」@
-錦城
-　「私にできることって、なんなんだろうって考えたの」\
- DO SOMETHING \x1f\xde\x03 AND "\x1f\xd6\x01 AND2 \x1f\x04\x02 AND2 5\x1f\xd6\x01 AND2 
-TextClose $\x05 AND2 5\x03\t.\\Data\\Script\\Scenario\\G2SubC.Fob D\x05
-start z\x05 AND2 56\xf1
+拓司\n　「……」@
+錦城\n　「私にできることって、なんなんだろうって考えたの」\w\z
+  \r \xde\x03
+FOB " \xd6\x01 \x02 \x04\x02 \x025 \xd6\x01 \x02
+SCE TextClosev\x81\x1f$\x05 \x025\x03\t.\\Data\\Script\\Scenario\\G2SubC.Fobv\x81\x1fD\x05
+CM1 startv\x81\x1fz\x05 \x0256\xf1

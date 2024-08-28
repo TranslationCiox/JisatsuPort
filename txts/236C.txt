@@ -1,83 +1,74 @@
 START
 \x98\x11\x01`B#\x01\x8a\r
-SCE236_001\x1f\x06 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e`\x80\x01
-\x07.\\Data\\Script\\TextFunc.Fob J AND2 \x03\x05TextWindowOffDirect\x1fx AND2 5 DO SOMETHING  AND2  AND " \x1e\x04\r\x1e\x1b AND " \x1e\x08\r\x1e
-.\\Data\\Script\\Bgm.Fob \xee
-SePlay \x18\x01 AND2 5 DO SOMETHING \x1e\xca
-.\\Data\\Script\\Bg.Fob N\x01
-BgOn x\x01 AND2 5 DO SOMETHING \x1e\x01
-.\\Data\\Script\\TextFunc.fob \xae\x01 AND2 
-WaitTime \xdc\x01 AND2 5 DO SOMETHING \x1e\xc8 AND "\x1fN\x01 AND2 \x1fx\x01 AND2 5 DO SOMETHING \x1e\x01 AND "\x1f\xae\x01 AND2 \x1f\xdc\x01 AND2 5 DO SOMETHING  AND2  AND "\x1f\xee
-SeStop \x8a\x02 AND2 5 DO SOMETHING  AND2  AND " \x1e\x04\r\x1e\x1b AND " \x1e\x08\r\x1e AND "\x1f\xee AND2 \x1f\x18\x01 AND2 5 DO SOMETHING \x1e\xca AND "\x1fN\x01 AND2 \x1fx\x01 AND2 5 DO SOMETHING \x1e\x01 AND "\x1f\xae\x01 AND2 \x1f\xdc\x01 AND2 5 DO SOMETHING \x1e\xc8 AND "\x1fN\x01 AND2 \x1fx\x01 AND2 5 DO SOMETHING \x1e\x01 AND "\x1f\xae\x01 AND2 \x1f\xdc\x01 AND2 5 DO SOMETHING \x1e< AND "\x1f\xae\x01 AND2 \x1f\xdc\x01 AND2 5 DO SOMETHING \x1e\xc9 AND "\x1fN\x01
-BgNormalFadeIn 8\x04 AND2 5 DO SOMETHING \x1e\x08\x01 AND "\x1f\xee
-PlayCD \x82\x04 AND2 5 DO SOMETHING  AND2  AND "\x1f\xee AND2 \x1f\x8a\x02 AND2 5\x1fJ
-TextWindowOn \xde\x04 AND2 5\x03l白い部屋で目覚めてホッとした気分になったのは、これが初めて
-だった。@
+SCE SCE236_001 \x06 \x02\xef! \r \x8c\x01\r\x02 `\x80\x01\x0c"\x03\x07.\\Data\\Script\\TextFunc.Fob RUN J \x02\x03\x05TextWindowOffDirect x \x025  \r \x02
+FOB "  \x04\r \x1b
+FOB "  \x08\r 
+FOB "\x03\x06.\\Data\\Script\\Bgm.Fobv\x81\x1f\xee
+CM1 SePlay RUN \x18\x01 \x025  \r \xca
+FOB "\x03\x06.\\Data\\Script\\Bg.Fobsv\x81\x1fN\x01
+CM1 BgOnsv\x81\x1fx\x01 \x025  \r \x01
+FOB "\x03\x07.\\Data\\Script\\TextFunc.fob RUN \xae\x01 \x02
+SCE WaitTimesv\x81\x1f\xdc\x01 \x025  \r \xc8
+FOB " N\x01 \x02 x\x01 \x025  \r \x01
+FOB " \xae\x01 \x02 \xdc\x01 \x025  \r \x02
+FOB " \xee
+CM1 SeStop RUN \x8a\x02 \x025  \r \x02
+FOB "  \x04\r \x1b
+FOB "  \x08\r 
+FOB " \xee \x02 \x18\x01 \x025  \r \xca
+FOB " N\x01 \x02 x\x01 \x025  \r \x01
+FOB " \xae\x01 \x02 \xdc\x01 \x025  \r \xc8
+FOB " N\x01 \x02 x\x01 \x025  \r \x01
+FOB " \xae\x01 \x02 \xdc\x01 \x025  \r <
+FOB " \xae\x01 \x02 \xdc\x01 \x025  \r \xc9
+FOB " N\x01
+CM2 BgNormalFadeIn RUN 8\x04 \x025  \r \x08\x01
+FOB " \xee
+CM1 PlayCD RUN \x82\x04 \x025  \r \x02
+FOB " \xee \x02 \x8a\x02 \x025 J
+CM2 TextWindowOnsv\x81\x1f\xde\x04 \x025\x03l
+ 
+白い部屋で目覚めてホッとした気分になったのは、これが初めて\nだった。@
 枕元には教授が座っている。@
 パイプ椅子に腰を下ろして、じっと拓司を見つめている。@
+\n教授\n　「おかえり」@
+\n教授はいった。@
+いつもどおり、機械的といっていいような無愛想な声だったが、\nそこにはなにか、不器用な親しみが込められているように思えた。\n\pその声は、ひどく懐かしいもののように思えた。@
+\n教授\n　「おかえり」@
+\n教授が繰り返した。\
 
-教授
-　「おかえり」@
-
-教授はいった。@
-いつもどおり、機械的といっていいような無愛想な声だったが、
-そこにはなにか、不器用な親しみが込められているように思えた。
-@その声は、ひどく懐かしいもののように思えた。@
-
-教授
-　「おかえり」@
-
-教授が繰り返した。\
-
- DO SOMETHING \x1f\x02\x05 AND "\x1fJ
-TextOn \xde\x06 AND2 5
-SCE236_002\x1f\xfa\x06 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1ed\x80\x01
-g拓司の目から、堰を切ったように涙があふれ出した。@
-ベッドから起きあがって教授に触れようとしたが、身体の中心が
-砕け散ってしまったかのように、力が入らない。@
+  \r \x02\x05
+FOB " J
+CM1 TextOn RUN \xde\x06 \x025
+SCE SCE236_002 \xfa\x06 \x02\xef! \r \x8c\x01\r\x02 d\x80\x01\x0c"\x03g
+ 
+拓司の目から、堰を切ったように涙があふれ出した。@
+ベッドから起きあがって教授に触れようとしたが、身体の中心が\n砕け散ってしまったかのように、力が入らない。@
 それでも拓司は必死で手を伸ばした。@
 教授が、その手に優しく触れた。@
 温かい、人間の手だった。@
+\n教授\n　「ようやく認めてくれたようだね」@
+拓司\n　「……はい」@
+\n拓司は絞り出すように言った。@
+\n拓司\n　「ここが……この世界が……」\
 
-教授
-　「ようやく認めてくれたようだね」@
-拓司
-　「……はい」@
+  \r >\x07
+FOB " J \x02 \xde\x06 \x025
+SCE SCE236_003 \x14\t \x02\xef! \r \x8c\x01\r\x02 h\x80\x01\x0c"\x03|
+ 
+教授\n　「もういい。\p世界について考えるのはよしたまえ。\pこれからは\n　　少しずつ、自分のことを考えていくんだ。\p世界などどうでも\n　　いい。\pどんな世界にいようとも、君は君だ。\pそうだろう？」@
+拓司\n　「……はい」@
+教授\n　「覚えてはいないだろうが、君はこうした混乱状態を、もう数\n　　度繰り返してきている。\pしかし今回は、いつもとは明らかに\n　　違う。\pいままで君は、混乱の中で精神に限界をきたし、自殺\n　　を図ることまであった。\p死ねば何が本当かがわかると思って、\n　　ね」\
 
-拓司は絞り出すように言った。@
+  \r X\t
+FOB " J \x02 \xde\x06 \x025
+SCE SCE236_004 \x82\x0b \x02\xef! \r \x8c\x01\r\x02 l\x80\x01\x0c"\x03X
+ 
+拓司\n　「自殺」@
+教授\n　「ああ。\pもしかしたら夢にも、そういった傾向の片鱗が現出し\n　　たのではないかな？」@
+拓司\n　「はい」@
+教授\n　「そうか。\pしかし、もう、きみはそうした危険な状況を切り抜\n　　けた。\pきみは階段を一歩、昇ったんだ。\pこれからはどんどん\n　　良くなっていく。\pそれを信じて、私と一緒に頑張ろうじゃな\n　　いか」\
 
-拓司
-　「ここが……この世界が……」\
-
- DO SOMETHING \x1f>\x07 AND "\x1fJ AND2 \x1f\xde\x06 AND2 5
-SCE236_003\x1f\x14\t AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1eh\x80\x01
-|教授
-　「もういい。@世界について考えるのはよしたまえ。@これからは
-　　少しずつ、自分のことを考えていくんだ。@世界などどうでも
-　　いい。@どんな世界にいようとも、君は君だ。@そうだろう？」@
-拓司
-　「……はい」@
-教授
-　「覚えてはいないだろうが、君はこうした混乱状態を、もう数
-　　度繰り返してきている。@しかし今回は、いつもとは明らかに
-　　違う。@いままで君は、混乱の中で精神に限界をきたし、自殺
-　　を図ることまであった。@死ねば何が本当かがわかると思って、
-　　ね」\
-
- DO SOMETHING \x1fX\t AND "\x1fJ AND2 \x1f\xde\x06 AND2 5
-SCE236_004\x1f\x82\x0b AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1el\x80\x01
-X拓司
-　「自殺」@
-教授
-　「ああ。@もしかしたら夢にも、そういった傾向の片鱗が現出し
-　　たのではないかな？」@
-拓司
-　「はい」@
-教授
-　「そうか。@しかし、もう、きみはそうした危険な状況を切り抜
-　　けた。@きみは階段を一歩、昇ったんだ。@これからはどんどん
-　　良くなっていく。@それを信じて、私と一緒に頑張ろうじゃな
-　　いか」\
-
- DO SOMETHING \x1f\xc6\x0b AND "\x1fJ AND2 \x1f\xde\x06 AND2 5\x1fJ AND2 
-TextClose l\r AND2 56\xf1
+  \r \xc6\x0b
+FOB " J \x02 \xde\x06 \x025 J \x02
+SCE TextClosev\x81\x1fl\r \x0256\xf1

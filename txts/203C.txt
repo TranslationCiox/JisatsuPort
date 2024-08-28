@@ -1,19 +1,16 @@
 START
-f\x03\x01p\x044\x01\xd6\x02 DO SOMETHING \x1e\xc9
-.\\Data\\Script\\Bg.Fob  
-BgAutoFadeIn J AND2 5
-SCE203_001\x1fn AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\xd0L\x01
-dナタネ
-　「あなたは『創る』ことができる。@
+f\x03\x01p\x044\x01\xd6\x02  \r \xc9
+FOB "\x03\x06.\\Data\\Script\\Bg.Fobsv\x81\x1f 
+CM2 BgAutoFadeInsv\x81\x1fJ \x025
+SCE SCE203_001 n \x02\xef! \r \x8c\x01\r\x02 \xd0L\x01\x0c"\x03d
+ 
+ナタネ\n　「あなたは『創る』ことができる。@
 　　神様が光を創ったように、あなたは鳥を創ることができる。@
 　　教授はあなたの力を恐れている。@
-　　だからあなたに、ニセモノの認識を与えて、あなたを支配し
-　　ようとしている。@あなたはかわいそうな病人で、あなたは
-　　『創る』ことなどできない。@
-　　そういうふうに信じ込ませようとして、そしてそれは成功し
-　　つつある……いいわね？」\
+　　だからあなたに、ニセモノの認識を与えて、あなたを支配し\n　　ようとしている。\pあなたはかわいそうな病人で、あなたは\n　　『創る』ことなどできない。@
+　　そういうふうに信じ込ませようとして、そしてそれは成功し\n　　つつある……いいわね？」\
 
- DO SOMETHING \x1f\xb2
-.\\Data\\Script\\TextFunc.Fob b\x02
-TextOn \x90\x02 AND2 5\x1fb\x02 AND2 
-TextClose \xb8\x02 AND2 56\xf1
+  \r \xb2
+FOB "\x03\x07.\\Data\\Script\\TextFunc.Fob RUN b\x02
+CM1 TextOn RUN \x90\x02 \x025 b\x02 \x02
+SCE TextClosev\x81\x1f\xb8\x02 \x0256\xf1

@@ -1,8 +1,9 @@
 START
-\x7f\x11\x01`B#\x01L\x0e\x03\x06.\\Data\\Script\\Bgm.Fob \x06
-StopCD 0 AND2 5
-SCE079_001\x1fL AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\x10\x8b
-\xb1/*▲SE28　再生（終了まで待たず先へ）*/\a2,0,28,0,どくん、どくん、どくん@
+\x7f\x11\x01`B#\x01L\x0e\x03\x06.\\Data\\Script\\Bgm.Fobv\x81\x1f\x06
+CM1 StopCD RUN 0 \x025
+SCE SCE079_001 L \x02\xef! \r \x8c\x01\r\x02 \x10\x8b\x0c"\x03\xb1
+ 
+/*▲SE28　再生（終了まで待たず先へ）*/\a2,0,28,0,どくん、どくん、どくん@
 \a4,0,0,0,心臓の音だけが耳の奥で大きく響いている。@
 静かだ。@
 あたりからは物音ひとつ聞こえてこない。@
@@ -20,32 +21,29 @@ SCE079_001\x1fL AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\x10\x8b
 いまなら死ねるような気がする。@
 瓶からするりと抜け出せるような気がする。\
 
- DO SOMETHING \x1f\x90
-.\\Data\\Script\\TextFunc.Fob t\x03
-TextOn \xa2\x03 AND2 5
-SCE079_002\x1f\xbe\x03 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\x14\x8b
-M
+  \r \x90
+FOB "\x03\x07.\\Data\\Script\\TextFunc.Fob RUN t\x03
+CM1 TextOn RUN \xa2\x03 \x025
+SCE SCE079_002 \xbe\x03 \x02\xef! \r \x8c\x01\r\x02 \x14\x8b\x0c"\x03M
+ 
+\n　死んじまおうかなあ。@
 　死んじまおうかなあ。@
 　死んじまおうかなあ。@
-　死んじまおうかなあ。@
-
-それが自分の口癖ではなかったか？@
-もう、自己嫌悪というパスポートもいらない。@自分が他人とは別
-だという見栄もいらない。@
+\nそれが自分の口癖ではなかったか？@
+もう、自己嫌悪というパスポートもいらない。\p自分が他人とは別\nだという見栄もいらない。@
 目の前には、死への脱出口が開いている。@
 なにもとめるものはない。@
 死のう。@
 死のう。\
 
- DO SOMETHING \x1f\x02\x04 AND "\x1ft\x03 AND2 \x1f\xa2\x03 AND2 5
-SCE079_003\x1fp\x05 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\x18\x8b
-\xb4いつの間にか、足が完全に止まっている。@ただぼんやりと、廊下
-に立ちすくんでいる。@
-
-もしかしてこれが波動に侵されるということなのか？@
+  \r \x02\x04
+FOB " t\x03 \x02 \xa2\x03 \x025
+SCE SCE079_003 p\x05 \x02\xef! \r \x8c\x01\r\x02 \x18\x8b\x0c"\x03\xb4
+ 
+いつの間にか、足が完全に止まっている。\pただぼんやりと、廊下\nに立ちすくんでいる。@
+\nもしかしてこれが波動に侵されるということなのか？@
 /*▲BGM　Track11　再生*/\a2,-1,11,1,－－そう思ったときにはもう遅かった。@
-とめどなく涙が流れて、すでに数メートル前方を見ることもでき
-ない。@足が重くなって、立っていることすらできない。@
+とめどなく涙が流れて、すでに数メートル前方を見ることもでき\nない。\p足が重くなって、立っていることすらできない。@
 胸が苦しくて、呼吸すらできない。@
 なにもできない。@
 拓司は廊下の真ん中にうずくまった。@
@@ -56,17 +54,17 @@ SCE079_003\x1fp\x05 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\x18\x8b
 どうして涙が出るのかなど、すでにわからなかった。@
 どうしてこれを恐れていたのかなど、すでにわからなかった。\
 
- DO SOMETHING \x1f\xb4\x05 AND "\x1ft\x03 AND2 \x1f\xa2\x03 AND2 5
-SCE079_004\x1f\xbe\x08 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e\x1c\x8b
-@学生
-　「……死ぬのか生きるのか、それはもう人間の幸不幸を決定す
-　　る鍵ではないような気さえしてきたのだ。@死者は完成せられ、
-　　生者は出帆の船のデッキに立ってそれに手を合わせる。@船は
-　　するする岸壁から離れる。@「死はよいものだ」……』\
+  \r \xb4\x05
+FOB " t\x03 \x02 \xa2\x03 \x025
+SCE SCE079_004 \xbe\x08 \x02\xef! \r \x8c\x01\r\x02 \x1c\x8b\x0c"\x03@
+ 
+学生\n　「……死ぬのか生きるのか、それはもう人間の幸不幸を決定す\n　　る鍵ではないような気さえしてきたのだ。\p死者は完成せられ、\n　　生者は出帆の船のデッキに立ってそれに手を合わせる。\p船は\n　　するする岸壁から離れる。\p「死はよいものだ」……』\
 
- DO SOMETHING \x1f\x02\t AND "\x1ft\x03 AND2 \x1f\xa2\x03 AND2 5
-SCE079_005\x1f<\n AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e \x8b
-P　よいものだ。@
+  \r \x02\t
+FOB " t\x03 \x02 \xa2\x03 \x025
+SCE SCE079_005 <\n \x02\xef! \r \x8c\x01\r\x02  \x8b\x0c"\x03P
+ 
+　よいものだ。@
 　死のう。@
 　でも道具がない。@
 　カッターがない。@
@@ -81,9 +79,11 @@ P　よいものだ。@
 　カッター。@
 　カッター。\
 
- DO SOMETHING \x1f\x80\n AND "\x1ft\x03 AND2 \x1f\xa2\x03 AND2 5
-SCE079_006\x1f\xfa\x0b AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e$\x8b
-+　カットするものだからカッター。@
+  \r \x80\n
+FOB " t\x03 \x02 \xa2\x03 \x025
+SCE SCE079_006 \xfa\x0b \x02\xef! \r \x8c\x01\r\x02 $\x8b\x0c"\x03+
+ 
+　カットするものだからカッター。@
 　そうか。@
 　カッター。@
 　カッター買ったら？@
@@ -94,11 +94,13 @@ SCE079_006\x1f\xfa\x0b AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e$\x8b
 　タ。@
 　ア。\
 
- DO SOMETHING \x1f>\x0c AND "\x1ft\x03 AND2 \x1f\xa2\x03 AND2 5 DO SOMETHING \x1eG
-.\\Data\\Script\\Bg.Fob >\r
-BgAutoFadeIn h\r AND2 5
-SCE079_007\x1f\x8c\r AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e(\x8b
-\x11
-　拓司は芋虫のようにはいずって、自分の教室へと向かった。\
+  \r >\x0c
+FOB " t\x03 \x02 \xa2\x03 \x025  \r G
+FOB "\x03\x06.\\Data\\Script\\Bg.Fobsv\x81\x1f>\r
+CM2 BgAutoFadeInsv\x81\x1fh\r \x025
+SCE SCE079_007 \x8c\r \x02\xef! \r \x8c\x01\r\x02 (\x8b\x0c"\x03\x11
+ 
+\n　拓司は芋虫のようにはいずって、自分の教室へと向かった。\
 
- DO SOMETHING \x1f\xd0\r AND "\x1ft\x03 AND2 \x1f\xa2\x03 AND2 56\xf1
+  \r \xd0\r
+FOB " t\x03 \x02 \xa2\x03 \x0256\xf1

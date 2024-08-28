@@ -1,19 +1,16 @@
 START
 \x9d\x03\x01@\x044\x01\xd8\x02
-SCE225_001\x1f\x06 AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1e0o\x01
-m拓司は歯を食いしばった。@
+SCE SCE225_001 \x06 \x02\xef! \r \x8c\x01\r\x02 0o\x01\x0c"\x03m
+ 
+拓司は歯を食いしばった。@
 まだだ、と胸の中でうめいた。@
 まだだ。@
 そのときは、いずれくる。@
-なにかはわからないが、おおきな契機とでもいうべきものが……
-くる。@そんな確信があった。@
-すべてをうち崩すようななにかが、状況を粉々にするようななに
-かが、きっと起こる。@そのときのために、俺はエネルギーを蓄積
-しなければならない。@じっと耐えて、強烈な一撃を放つのだ……。
-@拓司は野獣のように目を光らせて、無言だった。\
+なにかはわからないが、おおきな契機とでもいうべきものが……\nくる。\pそんな確信があった。@
+すべてをうち崩すようななにかが、状況を粉々にするようななに\nかが、きっと起こる。\pそのときのために、俺はエネルギーを蓄積\nしなければならない。\pじっと耐えて、強烈な一撃を放つのだ……。\n\p拓司は野獣のように目を光らせて、無言だった。\
 
- DO SOMETHING \x1fJ
-.\\Data\\Script\\TextFunc.Fob \x1e\x02
-TextOn L\x02 AND2 5\x03\x06.\\Data\\Script\\Bgm.Fob h\x02
-StopCD \x92\x02 AND2 5\x1f\x1e\x02 AND2 
-TextClose \xba\x02 AND2 56\xf1
+  \r J
+FOB "\x03\x07.\\Data\\Script\\TextFunc.Fob RUN \x1e\x02
+CM1 TextOn RUN L\x02 \x025\x03\x06.\\Data\\Script\\Bgm.Fobv\x81\x1fh\x02
+CM1 StopCD RUN \x92\x02 \x025 \x1e\x02 \x02
+SCE TextClosev\x81\x1f\xba\x02 \x0256\xf1

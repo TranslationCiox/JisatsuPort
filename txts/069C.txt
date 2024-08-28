@@ -1,20 +1,18 @@
 START
-\x1e\x04\x01\xa4\t3\x01\xac\x02 DO SOMETHING \x1e\t\x01
-.\\Data\\Script\\Bgm.Fob  
-PlayCD J AND2 5
-SCE069_001\x1ff AND2 \xef!DO SOMETHING \x1e\x8c\x01\r\x02\x1ep{
-.残るは紅葉だけだ。@紅葉の教室……そこは拓司の教室でもあるわ
-けだが……は、旧校舎１階にある。@ここ、新校舎の２階から紅葉
-の教室まで進むには、いくつかのルートが考えられる。\
+\x1e\x04\x01\xa4\t3\x01\xac\x02  \r \t\x01
+FOB "\x03\x06.\\Data\\Script\\Bgm.Fobv\x81\x1f 
+CM1 PlayCD RUN J \x025
+SCE SCE069_001 f \x02\xef! \r \x8c\x01\r\x02 p{\x0c"\x03.
+ 
+残るは紅葉だけだ。\p紅葉の教室……そこは拓司の教室でもあるわ\nけだが……は、旧校舎１階にある。\pここ、新校舎の２階から紅葉\nの教室まで進むには、いくつかのルートが考えられる。\
 
- DO SOMETHING \x1f\xaa
-.\\Data\\Script\\TextFunc.Fob \x82\x01
-TextOn \xb0\x01 AND2 5\x03\x1f
+  \r \xaa
+FOB "\x03\x07.\\Data\\Script\\TextFunc.Fob RUN \x82\x01
+CM1 TextOn RUN \xb0\x01 \x025\x03 
 CHOICE
-１階までくだり、一度外に出て、中庭を通って旧校舎へ移動
-渡り廊下を通って旧校舎に移動。それから１階に向かう
-\l0,2,
+１階までくだり、一度外に出て、中庭を通って旧校舎へ移動\n渡り廊下を通って旧校舎に移動。それから１階に向かう\n\l0,2,
 ENDCHOICE
 
- DO SOMETHING \x1f\xcc\x01 AND "\x1f\x82\x01 AND2 \x1f\xb0\x01 AND2 5\x1f\x82\x01 AND2 
-TextClose \x8e\x02 AND2 56\xf1
+  \r \xcc\x01
+FOB " \x82\x01 \x02 \xb0\x01 \x025 \x82\x01 \x02
+SCE TextClosev\x81\x1f\x8e\x02 \x0256\xf1

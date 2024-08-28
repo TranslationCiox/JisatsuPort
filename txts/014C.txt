@@ -1,15 +1,12 @@
 START
-\x8b\x02\x01P\x054\x01b\x01 DO SOMETHING \x1e\xc8
-.\\Data\\Script\\Bg.Fob  
-BgAutoFadeIn J AND2 5\x03\x18
+\x8b\x02\x01P\x054\x01b\x01  \r \xc8
+FOB "\x03\x06.\\Data\\Script\\Bg.Fobsv\x81\x1f 
+CM2 BgAutoFadeInsv\x81\x1fJ \x025\x03\x18
 CHOICE
-「お前には夏バテなんて概念は無いんだろうな」
-「髪、切ったのか？」
-「……」
-\l0,3,
+「お前には夏バテなんて概念は無いんだろうな」\n「髪、切ったのか？」\n「……」\n\l0,3,
 ENDCHOICE
 
- DO SOMETHING \x1fn
-.\\Data\\Script\\TextFunc.Fob \xee
-TextOn \x1c\x01 AND2 5\x1f\xee AND2 
-TextClose D\x01 AND2 56\xf1
+  \r n
+FOB "\x03\x07.\\Data\\Script\\TextFunc.Fob RUN \xee
+CM1 TextOn RUN \x1c\x01 \x025 \xee \x02
+SCE TextClosev\x81\x1fD\x01 \x0256\xf1
