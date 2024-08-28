@@ -4,7 +4,11 @@ import os
 patterns = [
     {
         "pattern": [b'\x06', b'\x0b', b'\x0c', b'\x02', b'"', b'2', b'\xca\x17'], # (at the end of BMP loads)
-        "action": "#Load BMP"
+        "action": " #Load BMP"
+    },
+    {
+        "pattern": [b'\x1e', b'\x02', b'\xc4', b'2', b'\xb6\x0b', b'\x1f', b'\xfe', b'\x1e', b'\x02'], # (at the end of WAV loads)
+        "action": " #Load WAV"
     },
     {
         "pattern": [b'\x01', b'start', b'\xef', b'i\x01C'],  # Start the script
@@ -15,12 +19,12 @@ patterns = [
         "action": "\r\nCMD1 "
     },
     {
-        "pattern": [b'\x03', b'\x04'],  # Goes before certain calls (Textbox, BGFADEIN)
-        "action": "\r\nCMD2 "
-    },
-    {
         "pattern": [b'\x03', b'\x03'],  # Goes before SCE Calls
         "action": "\r\nSCEN "
+    },
+    {
+        "pattern": [b'\x03', b'\x04'],  # Goes before certain calls (Textbox, BGFADEIN)
+        "action": "\r\nCMD2 "
     },
     {
         "pattern": [b'\x03', b'\x05'],  # Seems to LOAD WAV and BMP files
@@ -132,5 +136,5 @@ def process_files(input_dir="scripts", output_dir="scripts_txts"):
 
 
 # Run the processing function
-process_files(input_dir="files", output_dir="txts")
+process_files(input_dir="scenario", output_dir="scenario_txts")
 process_files(input_dir="scripts", output_dir="scripts_txts")
