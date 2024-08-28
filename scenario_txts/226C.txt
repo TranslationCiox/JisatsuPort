@@ -1,15 +1,21 @@
 START
 &\x1e\x01`B#\x01P\x19
-SCEN SCE226_001 \x06 \x02\xef! FLAG \x8c\x01FLAG\x02 \xc0p\x01\x0c"\x03\x11
+CSCE SCE226_001 \x06 \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 \xc0p\x01\x0c"\x03\x11
  
 \n\n\n\n\n\n\n\n\n\n　　　　　　　　　　　　　『１２日目』\
 
-  FLAG J\x0c\x02"
+  
+FLAG J\x0c\x02"
 WHAT .\\Data\\Script\\TextFunc.Fob RUNF \xae \x02
-CMD1 TextOn RUNF \xdc \x025  FLAG \x0c\x01\x0c\x02"
+CMD1 TextOn RUNF \xdc END  
+FLAG \x0c\x01\x0c\x02"
 FOBT .\\Data\\Script\\Bgm.Fobv\x81\x1f\x12\x01 \x02
-CMD1 PlayCD RUNF <\x01 \x025
-SCEN SCE226_002 X\x01 \x02\xef! FLAG \x8c\x01FLAG\x02 \xc4p\x01\x0c"\x03x
+CMD1 PlayCD RUNF <\x01 END
+CSCE SCE226_002 X\x01 \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 \xc4p\x01\x0c"\x03x
  
 錦城\n　「月代さん。\p御堂くんが呼んでいるわよ」@
 \n昼過ぎ、錦城が薄く笑っていった。@
@@ -18,8 +24,11 @@ SCEN SCE226_002 X\x01 \x02\xef! FLAG \x8c\x01FLAG\x02 \xc4p\x01\x0c"\x03x
 カンナ\n　「イヤです。\p用があるなら、自分でこっちにくるようにってい\n　　ってください。\pメッセンジャーさん？」@
 錦城\n　「……ふう。\pあなたのせいで、今日も全員が食事抜きになるの\n　　かしらねえ」\
 
-  FLAG \x9c\x01\x0c\x02" \xae \x02 \xdc \x025
-SCEN SCE226_003 \xb6\x03 \x02\xef! FLAG \x8c\x01FLAG\x02 \xc8p\x01\x0c"\x03d
+  
+FLAG \x9c\x01\x0c\x02" \xae \x02 \xdc END
+CSCE SCE226_003 \xb6\x03 \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 \xc8p\x01\x0c"\x03d
  
 カンナ\n　「メッセンジャーが判断することじゃないでしょう？」@
 \n錦城の顔に一瞬、怒りの炎が踊った。\pしかし彼女はそれをすぐに\n収めていった。@
@@ -28,8 +37,11 @@ SCEN SCE226_003 \xb6\x03 \x02\xef! FLAG \x8c\x01FLAG\x02 \xc8p\x01\x0c"\x03d
 カンナ\n　「……」@
 錦城\n　「今日も全員食事抜きです」\
 
-  FLAG \xfa\x03\x0c\x02" \xae \x02 \xdc \x025
-SCEN SCE226_004 \xc4\x05 \x02\xef! FLAG \x8c\x01FLAG\x02 \xccp\x01\x0c"\x03\x94
+  
+FLAG \xfa\x03\x0c\x02" \xae \x02 \xdc END
+CSCE SCE226_004 \xc4\x05 \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 \xccp\x01\x0c"\x03\x94
  
 勝ち誇ったようにいうと、錦城は準備室に引き上げていった。@
 結局その日も食事の配給は無しとなった。\p２日の絶食は、一同に\n予想以上のダメージを与えた。\pダメージは、肉体的というよりも\n精神的なものだった。\pいまや己の権利のすべてが御堂の管理下に\nあるという事実が、一同の胸を押しつぶした。@
@@ -38,8 +50,11 @@ SCEN SCE226_004 \xc4\x05 \x02\xef! FLAG \x8c\x01FLAG\x02 \xccp\x01\x0c"\x03\x94
 カンナ\n　「……。\pどういう意味？」@
 早桃\n　「私だってあの２人のやり方はおかしいと思うし……腹もたつ\n　　けど。\pでも、そんなこと口に出したって、意味がないと思う」\n\pカンナ\n　「……」\
 
-  FLAG \x08\x06\x0c\x02" \xae \x02 \xdc \x025
-SCEN SCE226_005 \x92\x08 \x02\xef! FLAG \x8c\x01FLAG\x02 \xd0p\x01\x0c"\x03\x9d
+  
+FLAG \x08\x06\x0c\x02" \xae \x02 \xdc END
+CSCE SCE226_005 \x92\x08 \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 \xd0p\x01\x0c"\x03\x9d
  
 早桃\n　「月代先輩の気が済むってだけでしょ？\p　そのせいでご飯がな\n　　くなるなんて……」@
 カンナ\n　「……要するに、恨み言ってわけ？」@
@@ -50,8 +65,11 @@ SCEN SCE226_005 \x92\x08 \x02\xef! FLAG \x8c\x01FLAG\x02 \xd0p\x01\x0c"\x03\x9d
 カンナ\n　「服従するならとことんやればってこと。\p身体と引き替えに、\n　　お腹を充たせってことよ！」@
 早桃\n　「そんな……！」\
 
-  FLAG \xd6\x08\x0c\x02" \xae \x02 \xdc \x025
-SCEN SCE226_006 \x84\x0b \x02\xef! FLAG \x8c\x01FLAG\x02 \xd4p\x01\x0c"\x03\x85
+  
+FLAG \xd6\x08\x0c\x02" \xae \x02 \xdc END
+CSCE SCE226_006 \x84\x0b \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 \xd4p\x01\x0c"\x03\x85
  
 見かねて拓司があいだにはいる。@
 \n拓司\n　「よせ、みんな気が立ってるんだ」@
@@ -63,8 +81,11 @@ SCEN SCE226_006 \x84\x0b \x02\xef! FLAG \x8c\x01FLAG\x02 \xd4p\x01\x0c"\x03\x85
 拓司\n　「いいかげんにしろ！」@
 /*▲BGM　停止*/\a4,-1,0,0,紅葉\n　「もうたくさんッ！」\
 
-  FLAG \xc8\x0b\x0c\x02" \xae \x02 \xdc \x025
-SCEN SCE226_007 \x16\x0e \x02\xef! FLAG \x8c\x01FLAG\x02 \xd8p\x01\x0c"\x03\x85
+  
+FLAG \xc8\x0b\x0c\x02" \xae \x02 \xdc END
+CSCE SCE226_007 \x16\x0e \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 \xd8p\x01\x0c"\x03\x85
  
 それまで黙っていた紅葉が叫んだ。\p頭を抱えて立ち上がる。@
 拓司たちは呆気にとられて紅葉を見た。@
@@ -73,8 +94,11 @@ SCEN SCE226_007 \x16\x0e \x02\xef! FLAG \x8c\x01FLAG\x02 \xd8p\x01\x0c"\x03\x85
 紅葉\n　「波動なんて、そんなもの最初からないのよ！\p　なにか事故み\n　　たいなことが起こって……毒ガスが漏れたとか……そんなふ\n　　うなことがおこってみんな一時的におかしくなっただけだよ！\n　　\pもう一週間以上経って、そんなのなくなったに決まってる！\n　　」@
 拓司\n　「でも、最終波動が……」\
 
-  FLAG Z\x0e\x0c\x02" \xae \x02 \xdc \x025
-SCEN SCE226_008 \xa8\x10 \x02\xef! FLAG \x8c\x01FLAG\x02 \xdcp\x01\x0c"\x03\xa4
+  
+FLAG Z\x0e\x0c\x02" \xae \x02 \xdc END
+CSCE SCE226_008 \xa8\x10 \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 \xdcp\x01\x0c"\x03\xa4
  
 紅葉\n　「そんなものがくるって保証はどこにもないじゃない！@
 　　それに、ここにいたってこのままじゃおかしくなっちゃう！@
@@ -90,8 +114,11 @@ SCEN SCE226_008 \xa8\x10 \x02\xef! FLAG \x8c\x01FLAG\x02 \xdcp\x01\x0c"\x03\xa4
 その向こうを見つめて、紅葉は動かなかった。@
 しばらくしてから放たれた言葉は、かすれ、震えていた。\
 
-  FLAG \xec\x10\x0c\x02" \xae \x02 \xdc \x025
-SCEN SCE226_009 \xb6\x13 \x02\xef! FLAG \x8c\x01FLAG\x02 \xe0p\x01\x0c"\x03u
+  
+FLAG \xec\x10\x0c\x02" \xae \x02 \xdc END
+CSCE SCE226_009 \xb6\x13 \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 \xe0p\x01\x0c"\x03u
  
 紅葉\n　「……雲居さん。\pいまは大丈夫？」@
 \nなたねはなにも応えない。\pただ小さくクククと笑っただけだ。@
@@ -103,8 +130,11 @@ SCEN SCE226_009 \xb6\x13 \x02\xef! FLAG \x8c\x01FLAG\x02 \xe0p\x01\x0c"\x03u
 紅葉\n　「あるはずないじゃない、そんなもの！」@
 \nついになたねが笑いを爆発させた。\pガラガラとした声で、低く低\nく叫んだ。\
 
-  FLAG \xfa\x13\x0c\x02" \xae \x02 \xdc \x025
-SCEN SCE226_010 \x08\x16 \x02\xef! FLAG \x8c\x01FLAG\x02 \xe4p\x01\x0c"\x03\x9e
+  
+FLAG \xfa\x13\x0c\x02" \xae \x02 \xdc END
+CSCE SCE226_010 \x08\x16 \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 \xe4p\x01\x0c"\x03\x9e
  
 なたね\n　「ワハハハ、ウワッハハハハハッハハハハハハハハ！@
 　　そうよ、ない！\p　最終波動なんてない！\p　自殺波動もない！@
@@ -117,6 +147,7 @@ SCEN SCE226_010 \x08\x16 \x02\xef! FLAG \x8c\x01FLAG\x02 \xe4p\x01\x0c"\x03\x9e
 拓司はうずくまって泣く紅葉に歩み寄り、ドアを閉め、そして肩\nに手をおいた。@
 紅葉はその晩、ずっと小さく泣き続けていた。\
 
-  FLAG L\x16\x0c\x02" \xae \x02 \xdc \x025 \x12\x01 \x02
-CMD1 StopCD RUNF \n\x19 \x025 \xae \x02
-SCEN TextClosev\x81\x1f2\x19 \x0256\xf1
+  
+FLAG L\x16\x0c\x02" \xae \x02 \xdc END \x12\x01 \x02
+CMD1 StopCD RUNF \n\x19 END \xae \x02
+CSCE TextClosev\x81\x1f2\x19 END6\xf1

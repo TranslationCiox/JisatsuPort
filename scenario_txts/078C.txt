@@ -1,8 +1,11 @@
 START
-\x86\x07\x01`B#\x014\x06  FLAG \t\x01\x0c\x02"
+\x86\x07\x01`B#\x014\x06  
+FLAG \t\x01\x0c\x02"
 FOBT .\\Data\\Script\\Bgm.Fobv\x81\x1f  \x02
-CMD1 PlayCD RUNF J \x025
-SCEN SCE078_001 f \x02\xef! FLAG \x8c\x01FLAG\x02 \x80\x89\x0c"\x03\xd7
+CMD1 PlayCD RUNF J END
+CSCE SCE078_001 f \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 \x80\x89\x0c"\x03\xd7
  
 途中、生きている人間には一度も出くわさなかった。@
 もっとも、余計な寄り道はせず、ただひたすら４階目指して廊下\nを歩いてきただけだから、もしかしたらどこかの教室に生き残り\nがいるのかもしれない。@
@@ -19,16 +22,20 @@ SCEN SCE078_001 f \x02\xef! FLAG \x8c\x01FLAG\x02 \x80\x89\x0c"\x03\xd7
 布団なんかでおばけから身を守れるはずがない。@
 だが、恐怖からは守ってくれる……。\
 
-  FLAG \xaa\x0c\x02"
+  
+FLAG \xaa\x0c\x02"
 WHAT .\\Data\\Script\\TextFunc.Fob RUNF &\x04 \x02
-CMD1 TextOn RUNF T\x04 \x025   \x02
-CMD1 StopCD RUNF |\x04 \x025
-SCEN SCE078_002 \x98\x04 \x02\xef! FLAG \x8c\x01FLAG\x02 \x84\x89\x0c"\x03=
+CMD1 TextOn RUNF T\x04 END   \x02
+CMD1 StopCD RUNF |\x04 END
+CSCE SCE078_002 \x98\x04 \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 \x84\x89\x0c"\x03=
  
 なたね\n　「ここよ」@
 \nなたねは４階実験室の前でいい、ポケットを探って鍵を取り出し\nた。@
 どこで手に入れたのかはわからないが、もう、そんなことをいち\nいち尋ねる気力もなかった。@
 なたねはドアを開き、実験室へと足早に入っていった。\
 
-  FLAG \xdc\x04\x0c\x02" &\x04 \x02 T\x04 \x025 &\x04 \x02
-SCEN TextClosev\x81\x1f\x16\x06 \x0256\xf1
+  
+FLAG \xdc\x04\x0c\x02" &\x04 \x02 T\x04 END &\x04 \x02
+CSCE TextClosev\x81\x1f\x16\x06 END6\xf1

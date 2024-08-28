@@ -1,10 +1,14 @@
 START
-?!\x01`B#\x01\x9a\x1b  FLAG \x06\x01\x0c\x02"
+?!\x01`B#\x01\x9a\x1b  
+FLAG \x06\x01\x0c\x02"
 FOBT .\\Data\\Script\\Bgm.Fobv\x81\x1f  \x02
-CMD1 PlayCD RUNF J \x025  FLAG \xc9\x0c\x02"
+CMD1 PlayCD RUNF J END  
+FLAG \xc9\x0c\x02"
 FOBT .\\Data\\Script\\Bg.Fobsv\x81\x1f\x80 \x02
-CMD2 BgAutoFadeInsv\x81\x1f\xaa \x025
-SCEN SCE024_001 \xce \x02\xef! FLAG \x8c\x01FLAG\x02  5\x0c"\x03K
+CMD2 BgAutoFadeInsv\x81\x1f\xaa END
+CSCE SCE024_001 \xce \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02  5\x0c"\x03K
  
 『灰色』に引きずられるように現実に返って、拓司ははっと息を呑\nんだ。@
 いつの間にかベッドの上に横になっている。@
@@ -12,10 +16,13 @@ SCEN SCE024_001 \xce \x02\xef! FLAG \x8c\x01FLAG\x02  5\x0c"\x03K
 \n　ザザザ……ザザッ……\pザアザザザ……ザアアアアア……@
 　ザアザアアアアアアア……\
 
-  FLAG \x12\x01\x0c\x02"
+  
+FLAG \x12\x01\x0c\x02"
 WHAT .\\Data\\Script\\TextFunc.Fob RUNF ^\x02 \x02
-CMD1 TextOn RUNF \x8c\x02 \x025
-SCEN SCE024_002 \xa8\x02 \x02\xef! FLAG \x8c\x01FLAG\x02 $5\x0c"\x03\xb8
+CMD1 TextOn RUNF \x8c\x02 END
+CSCE SCE024_002 \xa8\x02 \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 $5\x0c"\x03\xb8
  
 　回転部分に砂でも噛んでいるのか、音がしている。@
 最初に感じたのは、寝坊したのだ、という焦りだった。\pただ、すぐ\nにそうではないことがわかった。@
@@ -27,8 +34,11 @@ SCEN SCE024_002 \xa8\x02 \x02\xef! FLAG \x8c\x01FLAG\x02 $5\x0c"\x03\xb8
 ベッドは部屋の中央にぽつんと置かれていて、まるで白い海の中に\n浮かんだ孤島のようだ。@
 拓司は立ち上がって、部屋の出口とおぼしき扉の前まで歩いていっ\nた。\p鉄の扉だ。\p扉には取っ手はなく、外に出ることはできない。\nこれでは本当に牢屋だ……。\
 
-  FLAG \xec\x02\x0c\x02" ^\x02 \x02 \x8c\x02 \x025
-SCEN SCE024_003 \x06\x06 \x02\xef! FLAG \x8c\x01FLAG\x02 (5\x0c"\x03\x93
+  
+FLAG \xec\x02\x0c\x02" ^\x02 \x02 \x8c\x02 END
+CSCE SCE024_003 \x06\x06 \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 (5\x0c"\x03\x93
  
 ここでようやく、拓司は自分が夢を見ているのだと気づいた。@
 \n夢にしてはずいぶんリアルだ。@
@@ -39,9 +49,13 @@ SCEN SCE024_003 \x06\x06 \x02\xef! FLAG \x8c\x01FLAG\x02 (5\x0c"\x03\x93
 現実の世界、妄想の世界に続く第三の世界……夢の世界。\p世界がひ\nとつ増えただけだ。@
 －－だからなんだっていうんだ？\
 
-  FLAG J\x06\x0c\x02" ^\x02 \x02 \x8c\x02 \x025  FLAG \x02\x0c\x02"   \x02
-CMD1 SeStop RUNF \xf6\x08 \x025
-SCEN SCE024_004 \x12\t \x02\xef! FLAG \x8c\x01FLAG\x02 ,5\x0c"\x03\x9a
+  
+FLAG J\x06\x0c\x02" ^\x02 \x02 \x8c\x02 END  
+FLAG \x02\x0c\x02"   \x02
+CMD1 SeStop RUNF \xf6\x08 END
+CSCE SCE024_004 \x12\t \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 ,5\x0c"\x03\x9a
  
 拓司\n　「さて」@
 \nしきり直すように口に出してみる。@
@@ -58,8 +72,11 @@ SCEN SCE024_004 \x12\t \x02\xef! FLAG \x8c\x01FLAG\x02 ,5\x0c"\x03\x9a
 すべてがいまの反響と同じくリアルだった。@
 まだ、この新しい世界に馴染んでいないだけなのだ。\p妄想世界を受\nけ入れたように、そのうちこの夢の世界も自分の一部になっていく\nのだろう……。\
 
-  FLAG V\t\x0c\x02" ^\x02 \x02 \x8c\x02 \x025
-SCEN SCE024_005 \xf8\x0b \x02\xef! FLAG \x8c\x01FLAG\x02 05\x0c"\x03c
+  
+FLAG V\t\x0c\x02" ^\x02 \x02 \x8c\x02 END
+CSCE SCE024_005 \xf8\x0b \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 05\x0c"\x03c
  
 拓司はドアを強く押してみた。\pびくともしない。@
 改めてベッドに横になり、夢よ醒めろ、と念じたが、一向に醒める\n様子はない。@
@@ -67,8 +84,11 @@ SCEN SCE024_005 \xf8\x0b \x02\xef! FLAG \x8c\x01FLAG\x02 05\x0c"\x03c
 そういう意味で、夢の世界は妄想の世界よりもリアルなのではない\nか……？@
 そんなことを漠然と考えていると、どこからか小さな声が聞こえて\nきた。\
 
-  FLAG <\x0c\x0c\x02" ^\x02 \x02 \x8c\x02 \x025
-SCEN SCE024_006 \x02\x0e \x02\xef! FLAG \x8c\x01FLAG\x02 45\x0c"\x03[
+  
+FLAG <\x0c\x0c\x02" ^\x02 \x02 \x8c\x02 END
+CSCE SCE024_006 \x02\x0e \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 45\x0c"\x03[
  
 声\n　「……いるんでしょう？！　そこにいるんでしょう……」@
 \nまだ若い、女の声だ。\p声はどうやら壁の向こうから漏れ聞こえてい\nるようだ。@
@@ -78,8 +98,11 @@ SCEN SCE024_006 \x02\x0e \x02\xef! FLAG \x8c\x01FLAG\x02 45\x0c"\x03[
 声\n　「やっぱりいるのね！」@
 \n声に、明るい響きがこもる。\
 
-  FLAG F\x0e\x0c\x02" ^\x02 \x02 \x8c\x02 \x025
-SCEN SCE024_007 \xec\x0f \x02\xef! FLAG \x8c\x01FLAG\x02 85\x0c"\x03R
+  
+FLAG F\x0e\x0c\x02" ^\x02 \x02 \x8c\x02 END
+CSCE SCE024_007 \xec\x0f \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 85\x0c"\x03R
  
 声\n　「よかった！　もしかしてもう逢えないんじゃないかって思って\n　　た！」@
 拓司\n　「いや……人違いじゃないか？」@
@@ -90,16 +113,23 @@ SCEN SCE024_007 \xec\x0f \x02\xef! FLAG \x8c\x01FLAG\x02 85\x0c"\x03R
 拓司\n　「危険？」@
 声\n　「やつらよ！」\
 
-  FLAG 0\x10\x0c\x02" ^\x02 \x02 \x8c\x02 \x025
-SCEN SCE024_008 \xb2\x11 \x02\xef! FLAG \x8c\x01FLAG\x02 <5\x0c"\x03W
+  
+FLAG 0\x10\x0c\x02" ^\x02 \x02 \x8c\x02 END
+CSCE SCE024_008 \xb2\x11 \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 <5\x0c"\x03W
  
 拓司\n　「ちょっと待ってくれ！　話がまったくわからない。@
 　　おれは君が探している人間じゃないし、やつらっていうのが誰\n　　のことなのかもわからない。\pだいたい君は誰だ？」@
 \n壁の向こうの女は沈黙した。\p少したってから、震えた声が聞こえて\nきた。@
 \n声\n　「……ああ……やつら、あなたの記憶を……\p畜生畜生畜生畜生…\n　　…畜生！」\
 
-  FLAG \xf6\x11\x0c\x02" ^\x02 \x02 \x8c\x02 \x025  FLAG \xca\x0c\x02" \x80 \x02 \xaa \x025
-SCEN SCE024_009 \xc0\x13 \x02\xef! FLAG \x8c\x01FLAG\x02 @5\x0c"\x03\xb3
+  
+FLAG \xf6\x11\x0c\x02" ^\x02 \x02 \x8c\x02 END  
+FLAG \xca\x0c\x02" \x80 \x02 \xaa END
+CSCE SCE024_009 \xc0\x13 \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 @5\x0c"\x03\xb3
  
 \n/*▲SE01　再生（フェードイン）　*/\a2,2,1,0,　ザザザ……ザザッ……\pザアザザザ……ザアアアアア……@
 　ザアザアアアアアアア……@
@@ -108,8 +138,11 @@ SCEN SCE024_009 \xc0\x13 \x02\xef! FLAG \x8c\x01FLAG\x02 @5\x0c"\x03\xb3
 　　リアルはここにあるのよ！\p　さあ、眠って！\p　ベッドで寝た振\n　　りをするのよ！　早く！」@
 \n声はそこでピタリと止み、二度と聞こえてこなかった。\
 
-  FLAG \x04\x14\x0c\x02" ^\x02 \x02 \x8c\x02 \x025
-SCEN SCE024_010 \n\x17 \x02\xef! FLAG \x8c\x01FLAG\x02 D5\x0c"\x03\xd3
+  
+FLAG \x04\x14\x0c\x02" ^\x02 \x02 \x8c\x02 END
+CSCE SCE024_010 \n\x17 \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 D5\x0c"\x03\xd3
  
 かつん、かつん、かつん。@
 ドアの向こうは廊下にでもなっているのだろう、足音は遠くからま\nっすぐ近づいてきて…\pそして拓司のドアの前でピタリと止まった。\n\p静寂。@
@@ -122,5 +155,9 @@ SCEN SCE024_010 \n\x17 \x02\xef! FLAG \x8c\x01FLAG\x02 D5\x0c"\x03\xd3
 \n－－醒めろ！@
 \n拓司は強く願った。@
 /* SE22 一回再生（再生終わり待たずに…とかできます？）　*/\a2,0,22,0,がちゃり、とドアが開いた。\w\n/* SE22 とめる　*/\a4,0,0,0,\z
-  FLAG N\x17\x0c\x02" ^\x02 \x02 \x8c\x02 \x025  FLAG \x01\x0c\x02"   \x02 \xf6\x08 \x025  FLAG \x02\x0c\x02"   \x02 \xf6\x08 \x025  FLAG \xc8\x0c\x02" \x80 \x02 \xaa \x025 ^\x02 \x02
-SCEN TextClosev\x81\x1f|\x1b \x0256\xf1
+  
+FLAG N\x17\x0c\x02" ^\x02 \x02 \x8c\x02 END  
+FLAG \x01\x0c\x02"   \x02 \xf6\x08 END  
+FLAG \x02\x0c\x02"   \x02 \xf6\x08 END  
+FLAG \xc8\x0c\x02" \x80 \x02 \xaa END ^\x02 \x02
+CSCE TextClosev\x81\x1f|\x1b END6\xf1

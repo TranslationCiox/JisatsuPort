@@ -1,10 +1,14 @@
 START
-\x1e\x15\x01`B#\x01Z\x11  FLAG \x05\x0c\x02"
+\x1e\x15\x01`B#\x01Z\x11  
+FLAG \x05\x0c\x02"
 FOBT .\\Data\\Script\\Bg.Fobsv\x81\x1f  \x02
-CMD2 BgAutoFadeInsv\x81\x1fJ \x025  FLAG \x08\x01\x0c\x02"
+CMD2 BgAutoFadeInsv\x81\x1fJ END  
+FLAG \x08\x01\x0c\x02"
 FOBT .\\Data\\Script\\Bgm.Fobv\x81\x1f\x88 \x02
-CMD1 PlayCD RUNF \xb2 \x025
-SCEN SCE025_001 \xce \x02\xef! FLAG \x8c\x01FLAG\x02 \xb06\x0c"\x03}
+CMD1 PlayCD RUNF \xb2 END
+CSCE SCE025_001 \xce \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 \xb06\x0c"\x03}
  
 錦城\n　「－－太宰の処女短編集のタイトルは『晩年』というわけです\n　　けれど、そこに彼のたどった運命を重ね見ることは難しいこ\n　　とではありません。@
 　　ただ、ここでとりあげている『パンドラの筺』に関しては、\n　　そういった先入観を抜きにして、私は論じてみたいと思いま\n　　す。\pそれじゃあ中村君。読んでください」@
@@ -12,11 +16,14 @@ SCEN SCE025_001 \xce \x02\xef! FLAG \x8c\x01FLAG\x02 \xb06\x0c"\x03}
 \n冷たい汗がびっしょりと体を覆っている。@
 リアルな夢だった。\
 
-  FLAG \x12\x01\x0c\x02"
+  
+FLAG \x12\x01\x0c\x02"
 WHAT .\\Data\\Script\\TextFunc.Fob RUNF &\x03 \x02
-CMD1 TextOn RUNF T\x03 \x025 \x88 \x02
-CMD1 StopCD RUNF |\x03 \x025
-SCEN SCE025_002 \x98\x03 \x02\xef! FLAG \x8c\x01FLAG\x02 \xb46\x0c"\x03N
+CMD1 TextOn RUNF T\x03 END \x88 \x02
+CMD1 StopCD RUNF |\x03 END
+CSCE SCE025_002 \x98\x03 \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 \xb46\x0c"\x03N
  
 錦城\n　「……君！　……菱君！　虎菱君！」@
 拓司\n　「……え？」@
@@ -26,8 +33,11 @@ SCEN SCE025_002 \x98\x03 \x02\xef! FLAG \x8c\x01FLAG\x02 \xb46\x0c"\x03N
 拓司\n　「……どこからですか？」@
 錦城\n　「……というように、若者が悩み続けている間にも、『世界の\n　　風車はクルクルと回っている』わけです」\
 
-  FLAG \xdc\x03\x0c\x02" &\x03 \x02 T\x03 \x025
-SCEN SCE025_003 N\x05 \x02\xef! FLAG \x8c\x01FLAG\x02 \xb86\x0c"\x03\xa2
+  
+FLAG \xdc\x03\x0c\x02" &\x03 \x02 T\x03 END
+CSCE SCE025_003 N\x05 \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 \xb86\x0c"\x03\xa2
  
 　クラスメイトたちが、クスクスと笑っている。@
 　拓司は教科書をひっくり返して、しかるべき場所を見いだそう\n　と焦った。@
@@ -42,16 +52,24 @@ SCEN SCE025_003 N\x05 \x02\xef! FLAG \x8c\x01FLAG\x02 \xb86\x0c"\x03\xa2
 　最終的には大した問題ではないと、そんな気がする。@
 　さきほどの夢の中で感じた、いいようのない恐怖の方がよっぽ\n　どリアルだ。\
 
-  FLAG \x92\x05\x0c\x02" &\x03 \x02 T\x03 \x025
-SCEN SCE025_004 T\x08 \x02\xef! FLAG \x8c\x01FLAG\x02 \xbc6\x0c"\x03\x9c
+  
+FLAG \x92\x05\x0c\x02" &\x03 \x02 T\x03 END
+CSCE SCE025_004 T\x08 \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 \xbc6\x0c"\x03\x9c
  
 錦城\n　「結構です。座りなさい虎菱君。@
 　　……篠田さん、かわりにお願い」@
 学生\n　「はい。\p……『けれども君、僕がこんな甘ったれた古くさい薄の\n　　ろの悩みを続けているうちにも、世界の風車はクルクルと目に\n　　とまらぬ早さで回っていたのだ……』」@
 /*　■CG07　表示（ノンエフェクト）*/\a7,-1,-1,0,\a0,6,1,0,\a6,0,0,0,カンナ\n　「－－こうしましょう。\pここ以外では、あなたと私は知り合いで\n　　も何でもない。\pお互いの世界に干渉しないし、興味も持たない\n　　。\pお互いの世界……フフフ。\p私たちの世界以外では、私たちは\n　　他人になるの。\pそうすることで、私たちの世界はより本物にな\n　　る……どうかしら？」\
 
-  FLAG \x98\x08\x0c\x02" &\x03 \x02 T\x03 \x025  FLAG \xc8\x0c\x02"   \x02 J \x025  FLAG \x06\x01\x0c\x02" \x88 \x02 \xb2 \x025
-SCEN SCE025_005 \xaa\x0b \x02\xef! FLAG \x8c\x01FLAG\x02 \xc06\x0c"\x03\xa3
+  
+FLAG \x98\x08\x0c\x02" &\x03 \x02 T\x03 END  
+FLAG \xc8\x0c\x02"   \x02 J END  
+FLAG \x06\x01\x0c\x02" \x88 \x02 \xb2 END
+CSCE SCE025_005 \xaa\x0b \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 \xc06\x0c"\x03\xa3
  
 世界。@
 世界。@
@@ -73,13 +91,18 @@ SCEN SCE025_005 \xaa\x0b \x02\xef! FLAG \x8c\x01FLAG\x02 \xc06\x0c"\x03\xa3
 さらにたとえば……なにか？@
 なにか？\
 
-  FLAG \xee\x0b\x0c\x02" &\x03 \x02 T\x03 \x025  FLAG \x05\x0c\x02"   \x02 J \x025 \x88 \x02 |\x03 \x025
-SCEN SCE025_006 \x02\x0f \x02\xef! FLAG \x8c\x01FLAG\x02 \xc46\x0c"\x03l
+  
+FLAG \xee\x0b\x0c\x02" &\x03 \x02 T\x03 END  
+FLAG \x05\x0c\x02"   \x02 J END \x88 \x02 |\x03 END
+CSCE SCE025_006 \x02\x0f \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 \xc46\x0c"\x03l
  
 学生\n　「……死ぬのか生きるのか、それはもう人間の幸不幸を決定す\n　　る鍵ではないような気さえしてきたのだ。@
 　　死者は完成せられ、生者は出帆の船のデッキに立ってそれに\n　　手を合わせる。@
 　　船はするする岸壁から離れる。『死はよいものだ』……」@
 \n　遠景。\p国旗掲揚塔に渡された綱。\pその上から、葉っぱのように人\n　影が落下する。\pそれは淡々と、なんてことのない風景のように見\n　える。\pサイレント映画のようだ。@
 \z
-  FLAG F\x0f\x0c\x02" &\x03 \x02 T\x03 \x025 &\x03 \x02
-SCEN TextClosev\x81\x1f<\x11 \x0256\xf1
+  
+FLAG F\x0f\x0c\x02" &\x03 \x02 T\x03 END &\x03 \x02
+CSCE TextClosev\x81\x1f<\x11 END6\xf1

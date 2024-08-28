@@ -1,15 +1,19 @@
 START
 <\x05\x01\xa4\t3\x01\x90\x03
-SCEN SCE064_001 \x06 \x02\xef! FLAG \x8c\x01FLAG\x02 \xa0s\x0c"\x03\x8c
+CSCE SCE064_001 \x06 \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 \xa0s\x0c"\x03\x8c
  
 カンナ\n　「普通のイヌは、だんだんと仕掛けを理解していくわ。\pやがて\n　　、最初から柵のそばに立って、部屋が暗くなった途端に反対\n　　側に飛び移るようになる。\pでも、電気ショックを経験してい\n　　るイヌは、回避しようとしないのよ。\p諦めて、じっとショッ\n　　クに耐えるだけなの。\p……それじゃあ応用。\p最初の拘束電気\n　　ショックの際に、鼻先でボタンを押せば電気が止まるという\n　　ことをあらかじめ学習させたイヌはどうだと思う？\p　そうい\n　　うイヌをさっきの部屋に閉じこめたとしたら？\p　もちろん、\n　　部屋には電流を止めるボタンなんかないわよ？」\
 
-  FLAG J\x0c\x02"
+  
+FLAG J\x0c\x02"
 WHAT .\\Data\\Script\\TextFunc.Fob RUNF \x9a\x02 \x02
-CMD1 TextOn RUNF \xc8\x02 \x025\x03\x12
+CMD1 TextOn RUNF \xc8\x02 END\x03\x12
 CHOICE
 電流を回避できない\n普通のイヌのように電流を回避する\n\l0,2,
 ENDCHOICE
 
-  FLAG \xe4\x02\x0c\x02" \x9a\x02 \x02 \xc8\x02 \x025 \x9a\x02 \x02
-SCEN TextClosev\x81\x1fr\x03 \x0256\xf1
+  
+FLAG \xe4\x02\x0c\x02" \x9a\x02 \x02 \xc8\x02 END \x9a\x02 \x02
+CSCE TextClosev\x81\x1fr\x03 END6\xf1

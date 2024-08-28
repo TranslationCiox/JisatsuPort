@@ -1,6 +1,8 @@
 START
 \x0f\x12\x01`B#\x01d\x0f
-SCEN SCE031_001 \x06 \x02\xef! FLAG \x8c\x01FLAG\x02 \x10@\x0c"\x03m
+CSCE SCE031_001 \x06 \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 \x10@\x0c"\x03m
  
 スーパーのビニール袋に野良猫を詰め、廃墟となった五号棟の５階\nの窓からそれを放り投げていた月代カンナ。@
 どうして、という拓司の質問に、カンナはいまと同じ様な哄笑を返\nした。@
@@ -10,10 +12,13 @@ SCEN SCE031_001 \x06 \x02\xef! FLAG \x8c\x01FLAG\x02 \x10@\x0c"\x03m
 \nカンナ\n　「理由なんて無いわ。こうしてると……生きてるって感じがする\n　　の」@
 \nその言葉を聞いて－－そして目の奥のどんよりとした無感動を見て\n－－この少女が自分の同類であることを、拓司は一瞬にして悟った\nのだった。\
 
-  FLAG J\x0c\x02"
+  
+FLAG J\x0c\x02"
 WHAT .\\Data\\Script\\TextFunc.Fob RUNF \x1e\x02 \x02
-CMD1 TextOn RUNF L\x02 \x025
-SCEN SCE031_002 h\x02 \x02\xef! FLAG \x8c\x01FLAG\x02 \x14@\x0c"\x03\x90
+CMD1 TextOn RUNF L\x02 END
+CSCE SCE031_002 h\x02 \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 \x14@\x0c"\x03\x90
  
 \n　月代カンナのなかにある暗い穴に、拓司はまっさかさまに落ちて\n　いった。@
 　たとえばインターネットのデスサイト。@
@@ -26,8 +31,11 @@ SCEN SCE031_002 h\x02 \x02\xef! FLAG \x8c\x01FLAG\x02 \x14@\x0c"\x03\x90
 　ショーウインドウに並べられた死、死、死。@
 　そこにあるのは確実な死のかたちであり、生きている自分には明\n　らかに所属していないものたちだった。\p拓司は取り憑かれたよう\n　にパソコンの前に張り付き、電脳の波に流されてくる情報をむさ\n　ぼった。\
 
-  FLAG \xac\x02\x0c\x02" \x1e\x02 \x02 L\x02 \x025
-SCEN SCE031_003 &\x05 \x02\xef! FLAG \x8c\x01FLAG\x02 \x18@\x0c"\x03\xe1
+  
+FLAG \xac\x02\x0c\x02" \x1e\x02 \x02 L\x02 END
+CSCE SCE031_003 &\x05 \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 \x18@\x0c"\x03\xe1
  
 　月代カンナは、続いて猟奇殺人事件の本を拓司にリリースした。@
 　しっかりとしたルポルタージュもあれば、興味本位のゲテモノも\n　あった。@
@@ -38,8 +46,11 @@ SCEN SCE031_003 &\x05 \x02\xef! FLAG \x8c\x01FLAG\x02 \x18@\x0c"\x03\xe1
 　物珍しさとショックに変わって、おなじみの倦怠感と、そして意\n　外にも『恥ずかしい』という感覚がやってきた。\p自分が、インタ\n　ーネットにしか居場所を見つけられない社会不適合者の一員とな\n　ってしまったような、あるいは訳知り顔のサブカル信者になって\n　しまったような、そんな気がしたのだ。@
 　その他大勢への、陳腐な成り下がり。\
 
-  FLAG j\x05\x0c\x02" \x1e\x02 \x02 L\x02 \x025
-SCEN SCE031_004 (\t \x02\xef! FLAG \x8c\x01FLAG\x02 \x1c@\x0c"\x03\xcb
+  
+FLAG j\x05\x0c\x02" \x1e\x02 \x02 L\x02 END
+CSCE SCE031_004 (\t \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 \x1c@\x0c"\x03\xcb
  
 拓司は自ら志願して、団地からの『猫落とし』をカンナと一緒に行\nった。@
 強烈な死の体験だった。@
@@ -50,11 +61,20 @@ SCEN SCE031_004 (\t \x02\xef! FLAG \x8c\x01FLAG\x02 \x1c@\x0c"\x03\xcb
 拓司は手を伸ばしてカンナの身体を掴み、乱暴に抱き寄せて、口の\n奥にまで届くキスをした。\pカンナの舌が乱暴に拓司の中へねじりこ\nまれ、口の中をねぶり回した。\pそしてカンナはその最中、首を絞め\nて欲しいと懇願したのだった。@
 そのとき、拓司は初めて女の首を絞めたのだった。\
 
-  FLAG l\t\x0c\x02" \x1e\x02 \x02 L\x02 \x025 \x1e\x02 \x02
-LOAD TextWindowOffDirect \xde\x0c \x025  FLAG \xca\x0c\x02"
+  
+FLAG l\t\x0c\x02" \x1e\x02 \x02 L\x02 END \x1e\x02 \x02
+LOAD TextWindowOffDirect \xde\x0c END  
+FLAG \xca\x0c\x02"
 FOBT .\\Data\\Script\\Bg.Fobsv\x81\x1f \r \x02
-CMD1 BgOnsv\x81\x1fJ\r \x025  FLAG \x01\x0c\x02"
+CMD1 BgOnsv\x81\x1fJ\r END  
+FLAG \x01\x0c\x02"
 WHAT .\\Data\\Script\\TextFunc.fob RUNF \x80\r \x02
-SCEN WaitTimesv\x81\x1f\xae\r \x025  FLAG \xc8\x0c\x02"  \r \x02 J\r \x025  FLAG \x01\x0c\x02" \x80\r \x02 \xae\r \x025  FLAG \xca\x0c\x02"  \r \x02 J\r \x025  FLAG \x01\x0c\x02" \x80\r \x02 \xae\r \x025  FLAG \xc8\x0c\x02"  \r \x02 J\r \x025  FLAG \x01\x0c\x02" \x80\r \x02 \xae\r \x025 \x1e\x02 \x02
-LOAD TextWindowOnDirect RUNF \x12\x0f \x025 \x1e\x02 \x02
-SCEN TextClosev\x81\x1fF\x0f \x0256\xf1
+CSCE WaitTimesv\x81\x1f\xae\r END  
+FLAG \xc8\x0c\x02"  \r \x02 J\r END  
+FLAG \x01\x0c\x02" \x80\r \x02 \xae\r END  
+FLAG \xca\x0c\x02"  \r \x02 J\r END  
+FLAG \x01\x0c\x02" \x80\r \x02 \xae\r END  
+FLAG \xc8\x0c\x02"  \r \x02 J\r END  
+FLAG \x01\x0c\x02" \x80\r \x02 \xae\r END \x1e\x02 \x02
+LOAD TextWindowOnDirect RUNF \x12\x0f END \x1e\x02 \x02
+CSCE TextClosev\x81\x1fF\x0f END6\xf1

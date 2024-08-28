@@ -1,26 +1,35 @@
 START
 8\x12\x01`B#\x01\x1a\x0f
-SCEN SCE231_001 \x06 \x02\xef! FLAG \x8c\x01FLAG\x02 \x90x\x01\x0c"\x03r
+CSCE SCE231_001 \x06 \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 \x90x\x01\x0c"\x03r
  
 御堂\n　「……動くなよ、虎菱。\pお前だけは勝手にさせねえからな……」\n\p拓司\n　「なんなんだ、お前は……」@
 \n拓司は呆然と言った。言ってから、炎のように怒りがわき上がっ\nてきた。@
 \n拓司\n　「なんなんだ、お前は！\p　俺がお前に何をした！」@
 御堂\n　「むかつくんだよ……幸せなことに飽きて溜め息ついてるよう\n　　な……てめえみたいな野郎がよ！\p　毎日毎日、生きてるんだ\n　　か死んでるんだかわかんねえ俺みたいな人間だっているんだ\n　　ぞ！」\
 
-  FLAG J\x0c\x02"
+  
+FLAG J\x0c\x02"
 WHAT .\\Data\\Script\\TextFunc.Fob RUNF 2\x02 \x02
-CMD1 TextOn RUNF `\x02 \x025
-SCEN SCE231_002 |\x02 \x02\xef! FLAG \x8c\x01FLAG\x02 \x94x\x01\x0c"\x03`
+CMD1 TextOn RUNF `\x02 END
+CSCE SCE231_002 |\x02 \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 \x94x\x01\x0c"\x03`
  
 拓司\n　「俺だって同じだッ！\p　お前だけが特別だと思うな！」@
 御堂\n　「うるせえッ！\p　俺は無視されたんだよ！\p　おきざりにされた\n　　んだ！\p　なにもかもが俺を素通りして勝手に動いていきやが\n　　る！\p　気にくわねえ！」@
 拓司\n　「毎日遅刻してクズ共とたむろして、人生腐らせてるのはおま\n　　えだろうが！」@
 御堂\n　「知ったような口きくんじゃねえ、モヤシッ子が！」\
 
-  FLAG \xc0\x02\x0c\x02" 2\x02 \x02 `\x02 \x025  FLAG )\x0c\x02"
+  
+FLAG \xc0\x02\x0c\x02" 2\x02 \x02 `\x02 END  
+FLAG )\x0c\x02"
 FOBT .\\Data\\Script\\Bg.Fobsv\x81\x1f\x94\x04 \x02
-CMD2 BgAutoFadeInsv\x81\x1f\xbe\x04 \x025
-SCEN SCE231_003 \xe2\x04 \x02\xef! FLAG \x8c\x01FLAG\x02 \x98x\x01\x0c"\x03\xc2
+CMD2 BgAutoFadeInsv\x81\x1f\xbe\x04 END
+CSCE SCE231_003 \xe2\x04 \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 \x98x\x01\x0c"\x03\xc2
  
 奇声を上げながら、なたねが突っ込んできた。\pしかし御堂はそれ\nを軽くいなし、足を払って転倒させた。@
 無様に床に転がったなたねを、御堂はつま先で蹴った。@
@@ -33,8 +42,11 @@ SCEN SCE231_003 \xe2\x04 \x02\xef! FLAG \x8c\x01FLAG\x02 \x98x\x01\x0c"\x03\xc2
 もはやこの部屋には、馴染みつつあるのだ。@
 自分だけではない、皆の顔に一様に浮かんでいる呆けた表情が証\n明している。\
 
-  FLAG &\x05\x0c\x02" 2\x02 \x02 `\x02 \x025
-SCEN SCE231_004 h\x08 \x02\xef! FLAG \x8c\x01FLAG\x02 \x9cx\x01\x0c"\x03s
+  
+FLAG &\x05\x0c\x02" 2\x02 \x02 `\x02 END
+CSCE SCE231_004 h\x08 \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 \x9cx\x01\x0c"\x03s
  
 そこには静けさがあった。\p暴力とは相容れないはずの、まったり\nとした静けさが。@
 他人が攻撃されているあいだは、自分は攻撃されない。@
@@ -44,24 +56,38 @@ SCEN SCE231_004 h\x08 \x02\xef! FLAG \x8c\x01FLAG\x02 \x9cx\x01\x0c"\x03s
 一同は初めて、ぎょっとして、御堂を見た。@
 御堂は冷たい目で、足下のなたねを見下ろした。\
 
-  FLAG \xac\x08\x0c\x02" 2\x02 \x02 `\x02 \x025
-SCEN SCE231_005 \xb2\n \x02\xef! FLAG \x8c\x01FLAG\x02 \xa0x\x01\x0c"\x03>
+  
+FLAG \xac\x08\x0c\x02" 2\x02 \x02 `\x02 END
+CSCE SCE231_005 \xb2\n \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 \xa0x\x01\x0c"\x03>
  
 錦城がおそるおそるといった感じで、なたねに歩み寄った。@
 鼻の前に手をかざし、ついで、手首を握る\p。一同はその一挙一動\nを、じっと見つめていた。@
 重い沈黙をついに破って、錦城はいった。@
 \n錦城\n　「……死んでる。\p息、してない……」\
 
-  FLAG \xf6\n\x0c\x02" 2\x02 \x02 `\x02 \x025
-SCEN SCE231_006 (\x0c \x02\xef! FLAG \x8c\x01FLAG\x02 \xa4x\x01\x0c"
+  
+FLAG \xf6\n\x0c\x02" 2\x02 \x02 `\x02 END
+CSCE SCE231_006 (\x0c \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 \xa4x\x01\x0c"
 WHAT .\\Data\\Script\\TextFunc.fob RUNF l\x0c \x02
-FOBT CheckNormalMessageSkip RUNF \x9a\x0c \x025 2\x02 \x02
-CMD2 TextWindowOffv\x81\x1f\xd2\x0c \x025  FLAG \x02\x0c\x02"  \x04FLAG \x01\x0c\x02"  \x08FLAG \x01\x0c\x02"
+FOBT CheckNormalMessageSkip RUNF \x9a\x0c END 2\x02 \x02
+CMD2 TextWindowOffv\x81\x1f\xd2\x0c END  
+FLAG \x02\x0c\x02"  \x04
+FLAG \x01\x0c\x02"  \x08
+FLAG \x01\x0c\x02"
 FOBT .\\Data\\Script\\Bgm.Fobv\x81\x1fD\r \x02
-CMD1 SePlay RUNF n\r \x025  FLAG \xca\x0c\x02"  \x04FLAG \x04\x0c\x02"  \x08FLAG \x01\x0c\x02" \x94\x04 \x02
-SCEN BgFadeInsv\x81\x1f\xe4\r \x025  FLAG \x02\x0c\x02" D\r \x02
-CMD1 SeStop RUNF *\x0e \x025  FLAG \xc8\x0c\x02" \x94\x04 \x02
-CMD1 BgOnsv\x81\x1fl\x0e \x025 2\x02 \x02
-LOAD TextWindowOnDirect RUNF \x94\x0e \x025 2\x02 \x02
-LOAD UpdateScenarioRead RUNF \xc8\x0e \x025 2\x02 \x02
-SCEN TextClosev\x81\x1f\xfc\x0e \x0256\xf1
+CMD1 SePlay RUNF n\r END  
+FLAG \xca\x0c\x02"  \x04
+FLAG \x04\x0c\x02"  \x08
+FLAG \x01\x0c\x02" \x94\x04 \x02
+CSCE BgFadeInsv\x81\x1f\xe4\r END  
+FLAG \x02\x0c\x02" D\r \x02
+CMD1 SeStop RUNF *\x0e END  
+FLAG \xc8\x0c\x02" \x94\x04 \x02
+CMD1 BgOnsv\x81\x1fl\x0e END 2\x02 \x02
+LOAD TextWindowOnDirect RUNF \x94\x0e END 2\x02 \x02
+LOAD UpdateScenarioRead RUNF \xc8\x0e END 2\x02 \x02
+CSCE TextClosev\x81\x1f\xfc\x0e END6\xf1

@@ -1,6 +1,8 @@
 START
 \xd8\x04\x01\xa4\t3\x01*\x04
-SCEN SCE205_001 \x06 \x02\xef! FLAG \x8c\x01FLAG\x02 \xf0O\x01\x0c"\x03\xd3
+CSCE SCE205_001 \x06 \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 \xf0O\x01\x0c"\x03\xd3
  
 ナタネ\n　「いま、あなたが体験しているこの世界こそが『現実』よ。@
 　　そして、『学校に籠城している世界』……教授はそれを『あ\n　　なたの妄想が生んだ頭の中の世界』だと信じ込ませようとし\n　　ているけれど、それは罠。\pあなたが見たのは『妄想』ではな\n　　いわ。\p『記憶』よ」@
@@ -13,7 +15,8 @@ SCEN SCE205_001 \x06 \x02\xef! FLAG \x8c\x01FLAG\x02 \xf0O\x01\x0c"\x03\xd3
 　　あなたが記憶している『自分』は、真実よ。@
 　　妄想の産物ではない。\p波動が襲ってきて、あなたたちは実験\n　　室に籠城した。\pそれは過去の事実なの。\p……いいわね？」\
 
-  FLAG J\x0c\x02"
+  
+FLAG J\x0c\x02"
 WHAT .\\Data\\Script\\TextFunc.Fob RUNF \xb6\x03 \x02
-CMD1 TextOn RUNF \xe4\x03 \x025 \xb6\x03 \x02
-SCEN TextClosev\x81\x1f\x0c\x04 \x0256\xf1
+CMD1 TextOn RUNF \xe4\x03 END \xb6\x03 \x02
+CSCE TextClosev\x81\x1f\x0c\x04 END6\xf1

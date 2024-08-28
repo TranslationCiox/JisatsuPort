@@ -1,6 +1,8 @@
 START
 \xb7\x07\x01`B#\x01\xa8\x05
-SCEN SCE207_001 \x06 \x02\xef! FLAG \x8c\x01FLAG\x02 \x10S\x01\x0c"\x03\xa7
+CSCE SCE207_001 \x06 \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 \x10S\x01\x0c"\x03\xa7
  
 拓司\n　「君は、教授はおれにウソを聞かせているという。\pおれをコン\n　　トロールしようとしていると……。\p教授とは何者なんだ？@
 　　なんのために、おれをコントロールしようとしている？」@
@@ -10,14 +12,18 @@ SCEN SCE207_001 \x06 \x02\xef! FLAG \x8c\x01FLAG\x02 \x10S\x01\x0c"\x03\xa7
 　　……教授が何者なのか、私にもそれはわからないわ。\pただは\n　　っきりしているのは、教授が敵だということ。\pなぜなら教授\n　　こそが、波動を使って世界を滅亡させた張本人だからよ」@
 拓司\n　「……」\
 
-  FLAG J\x0c\x02"
+  
+FLAG J\x0c\x02"
 WHAT .\\Data\\Script\\TextFunc.Fob RUNF \x06\x03 \x02
-CMD1 TextOn RUNF 4\x03 \x025
-SCEN SCE207_002 P\x03 \x02\xef! FLAG \x8c\x01FLAG\x02 \x14S\x01\x0c"\x03l
+CMD1 TextOn RUNF 4\x03 END
+CSCE SCE207_002 P\x03 \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 \x14S\x01\x0c"\x03l
  
 ナタネ\n　「あなたの世界は、教授によって完全に破壊された。\p破壊とい\n　　っても物理的な……ビルが壊されたとか人が殺されたとか…\n　　…そういう破壊ではないわ。\p無くなったの。\p完全に消滅した\n　　の。\p教授による侵略は、三次元的な意味では説明できない\n　　……存在と……世界のなりたち自体に関わる破壊行為よ」@
 拓司\n　「……」@
 ナタネ\n　「世界は消滅して……あなただけが生き残った。\p教授はあなた\n　　を恐れている」\
 
-  FLAG \x94\x03\x0c\x02" \x06\x03 \x02 4\x03 \x025 \x06\x03 \x02
-SCEN TextClosev\x81\x1f\x8a\x05 \x0256\xf1
+  
+FLAG \x94\x03\x0c\x02" \x06\x03 \x02 4\x03 END \x06\x03 \x02
+CSCE TextClosev\x81\x1f\x8a\x05 END6\xf1

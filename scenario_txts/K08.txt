@@ -1,6 +1,8 @@
 START
 f\x04\x01\xa4\t3\x01\xbe\x03
-SCEN SCEK08_001 \x06 \x02\xef! FLAG \x8c\x01FLAG\x02  \xa7\x01\x0c"\x03\xb8
+CSCE SCEK08_001 \x06 \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02  \xa7\x01\x0c"\x03\xb8
  
 「だめよ」とゆきはいった。@
 それまで聞いたこともない、強い口調だった。\pだめよ。@
@@ -14,7 +16,8 @@ SCEN SCEK08_001 \x06 \x02\xef! FLAG \x8c\x01FLAG\x02  \xa7\x01\x0c"\x03\xb8
 氷みたいに冷たく、冴えていた。@
 理性的判断を通過した非常識な答。@
 非常識であることを十分理解したうえで、彼女は非常識を遂行し\nようとしていた。\p怖かった。\w\z
-  FLAG J\x0c\x02"
+  
+FLAG J\x0c\x02"
 WHAT .\\Data\\Script\\TextFunc.Fob RUNF J\x03 \x02
-CMD1 TextOn RUNF x\x03 \x025 J\x03 \x02
-SCEN TextClosev\x81\x1f\xa0\x03 \x0256\xf1
+CMD1 TextOn RUNF x\x03 END J\x03 \x02
+CSCE TextClosev\x81\x1f\xa0\x03 END6\xf1

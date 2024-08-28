@@ -1,15 +1,23 @@
 START
 \xa6\x05\x01\xa4\t3\x01\x82\x04
-SCEN SCE027_001 \x06 \x02\xef! FLAG \x8c\x01FLAG\x02 \xd09\x0c"\x03\x10
+CSCE SCE027_001 \x06 \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 \xd09\x0c"\x03\x10
  
 \n\n\n\n\n\n\n\n\n\n　　　　　　　　　　　『昼休み』\
 
-  FLAG J\x0c\x02"
+  
+FLAG J\x0c\x02"
 WHAT .\\Data\\Script\\TextFunc.Fob RUNF \xaa \x02
-CMD1 TextOn RUNF \xd8 \x025
-SCEN SCE027_002 \xf4 \x02\xef! FLAG \x8c\x01FLAG\x02 \xd49\x0c"  FLAG \x02\x0c\x02"  \x04FLAG \x17\x0c\x02"  \x08FLAG \x01\x0c\x02"
+CMD1 TextOn RUNF \xd8 END
+CSCE SCE027_002 \xf4 \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 \xd49\x0c"  
+FLAG \x02\x0c\x02"  \x04
+FLAG \x17\x0c\x02"  \x08
+FLAG \x01\x0c\x02"
 FOBT .\\Data\\Script\\Bgm.Fobv\x81\x1f\x86\x01 \x02
-CMD1 SePlay RUNF \xb0\x01 \x025\x03\x84
+CMD1 SePlay RUNF \xb0\x01 END\x03\x84
  
 　－－月代カンナはどうしておれに干渉したんだ？@
 \n　拓司は、どうしてもその思いを頭から振り払うことができなかっ\n　た。@
@@ -18,6 +26,8 @@ CMD1 SePlay RUNF \xb0\x01 \x025\x03\x84
 \nカンナ\n　「－－こうしましょう。\pここ以外では、あなたと私は知り合いで\n　　も何でもない。\pお互いの世界に干渉しないし興味も持たない。@
 　　お互いの世界……フフフ。\p私たちの世界以外では、私たちは他\n　　人になるの。\pそうすることで、私たちの世界はより本物になる\n　　……どうかしら？」\
 
-  FLAG \xcc\x01\x0c\x02" \xaa \x02 \xd8 \x025  FLAG \x02\x0c\x02" \x86\x01 \x02
-CMD1 SeStop RUNF <\x04 \x025 \xaa \x02
-SCEN TextClosev\x81\x1fd\x04 \x0256\xf1
+  
+FLAG \xcc\x01\x0c\x02" \xaa \x02 \xd8 END  
+FLAG \x02\x0c\x02" \x86\x01 \x02
+CMD1 SeStop RUNF <\x04 END \xaa \x02
+CSCE TextClosev\x81\x1fd\x04 END6\xf1

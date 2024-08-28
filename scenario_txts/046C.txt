@@ -1,6 +1,8 @@
 START
 D\x05\x01\xa4\t3\x018\x04
-SCEN SCE046_001 \x06 \x02\xef! FLAG \x8c\x01FLAG\x02 \x80W\x0c"\x03\x8b
+CSCE SCE046_001 \x06 \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 \x80W\x0c"\x03\x8b
  
 御堂\n　「そうこないとな。@
 　　虎菱、お前、意外とノリいいじゃねえか」@
@@ -12,15 +14,19 @@ SCEN SCE046_001 \x06 \x02\xef! FLAG \x8c\x01FLAG\x02 \x80W\x0c"\x03\x8b
 ただ、遠く校庭から、ぼんやりとした声が聞こえてくるだけだ。@
 \n　御堂たちは雑談をしながら実験室の前を通り過ぎ、やがて男子\nトイレへと消えた。\
 
-  FLAG J\x0c\x02"
+  
+FLAG J\x0c\x02"
 WHAT .\\Data\\Script\\TextFunc.Fob RUNF \x96\x02 \x02
-CMD1 TextOn RUNF \xc4\x02 \x025
-SCEN SCE046_002 \xe0\x02 \x02\xef! FLAG \x8c\x01FLAG\x02 \x84W\x0c"\x03,
+CMD1 TextOn RUNF \xc4\x02 END
+CSCE SCE046_002 \xe0\x02 \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 \x84W\x0c"\x03,
  
 拓司\n　「……？」@
 なたね\n　「大丈夫よ」@
 \n　言ってなたねは、躊躇することなく男子トイレへと入っていっ\nた。@
 ひとり廊下に取り残された拓司も、慌てて後を追う。@
 \z
-  FLAG $\x03\x0c\x02" \x96\x02 \x02 \xc4\x02 \x025 \x96\x02 \x02
-SCEN TextClosev\x81\x1f\x1a\x04 \x0256\xf1
+  
+FLAG $\x03\x0c\x02" \x96\x02 \x02 \xc4\x02 END \x96\x02 \x02
+CSCE TextClosev\x81\x1f\x1a\x04 END6\xf1

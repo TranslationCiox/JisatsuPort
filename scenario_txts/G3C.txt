@@ -1,19 +1,27 @@
 START
-v\x06\x01`B#\x01\xd2\x04  FLAG C\x0c\x02"
+v\x06\x01`B#\x01\xd2\x04  
+FLAG C\x0c\x02"
 FOBT .\\Data\\Script\\Bg.Fobsv\x81\x1f  \x02
-CMD2 BgAutoFadeInsv\x81\x1fJ \x025  FLAG \x08\x01\x0c\x02"
+CMD2 BgAutoFadeInsv\x81\x1fJ END  
+FLAG \x08\x01\x0c\x02"
 FOBT .\\Data\\Script\\Bgm.Fobv\x81\x1f\x88 \x02
-CMD1 PlayCD RUNF \xb2 \x025
-SCEN SCEG03_001 \xce \x02\xef! FLAG \x8c\x01FLAG\x02 p\xc5\x01\x0c"\x03)
+CMD1 PlayCD RUNF \xb2 END
+CSCE SCEG03_001 \xce \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 p\xc5\x01\x0c"\x03)
  
 錦城\n　「……しっ！　私よ、虎菱くん」@
 拓司\n　「……先生？」@
 \n錦城は微かに笑うと、拓司の横へと体を移動させた。@
 寄り添って寝転がるような形になる。\w\z
-  FLAG \x12\x01\x0c\x02"
+  
+FLAG \x12\x01\x0c\x02"
 WHAT .\\Data\\Script\\TextFunc.Fob RUNF \xd6\x01 \x02
-CMD1 TextOn RUNF \x04\x02 \x025  FLAG \xc8\x0c\x02"   \x02 J \x025
-SCEN SCEG03_002 T\x02 \x02\xef! FLAG \x8c\x01FLAG\x02 t\xc5\x01\x0c"\x03a
+CMD1 TextOn RUNF \x04\x02 END  
+FLAG \xc8\x0c\x02"   \x02 J END
+CSCE SCEG03_002 T\x02 \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 t\xc5\x01\x0c"\x03a
  
 錦城\n　「リーダーとして、今日はどうだった？」@
 拓司\n　「いえ……リーダーといっても形だけですから」@
@@ -22,6 +30,8 @@ SCEN SCEG03_002 T\x02 \x02\xef! FLAG \x8c\x01FLAG\x02 t\xc5\x01\x0c"\x03a
 拓司\n　「……そんなことは……」@
 錦城\n　「ふふ。でも、そういう謙虚な虎菱くんが、私は好きよ。@
 　　……さあ、今日もご褒美をあげる」\w\z
-  FLAG \x98\x02\x0c\x02" \xd6\x01 \x02 \x04\x02 \x025 \xd6\x01 \x02
-SCEN TextClosev\x81\x1fb\x04 \x025\x03\t.\\Data\\Script\\Scenario\\G3subC.Fobv\x81\x1f\x82\x04 \x02
-CMD1 startv\x81\x1f\xb8\x04 \x0256\xf1
+  
+FLAG \x98\x02\x0c\x02" \xd6\x01 \x02 \x04\x02 END \xd6\x01 \x02
+CSCE TextClosev\x81\x1fb\x04 END
+HERO .\\Data\\Script\\Scenario\\G3subC.Fobv\x81\x1f\x82\x04 \x02
+CMD1 startv\x81\x1f\xb8\x04 END6\xf1

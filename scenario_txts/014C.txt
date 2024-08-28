@@ -1,12 +1,14 @@
 START
-\x8b\x02\x01P\x054\x01b\x01  FLAG \xc8\x0c\x02"
+\x8b\x02\x01P\x054\x01b\x01  
+FLAG \xc8\x0c\x02"
 FOBT .\\Data\\Script\\Bg.Fobsv\x81\x1f  \x02
-CMD2 BgAutoFadeInsv\x81\x1fJ \x025\x03\x18
+CMD2 BgAutoFadeInsv\x81\x1fJ END\x03\x18
 CHOICE
 「お前には夏バテなんて概念は無いんだろうな」\n「髪、切ったのか？」\n「……」\n\l0,3,
 ENDCHOICE
 
-  FLAG n\x0c\x02"
+  
+FLAG n\x0c\x02"
 WHAT .\\Data\\Script\\TextFunc.Fob RUNF \xee \x02
-CMD1 TextOn RUNF \x1c\x01 \x025 \xee \x02
-SCEN TextClosev\x81\x1fD\x01 \x0256\xf1
+CMD1 TextOn RUNF \x1c\x01 END \xee \x02
+CSCE TextClosev\x81\x1fD\x01 END6\xf1

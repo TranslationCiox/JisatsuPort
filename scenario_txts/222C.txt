@@ -1,6 +1,8 @@
 START
 \xd6\x05\x01\xa4\t3\x01x\x04
-SCEN SCE222_001 \x06 \x02\xef! FLAG \x8c\x01FLAG\x02 \x80j\x01\x0c"\x03x
+CSCE SCE222_001 \x06 \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 \x80j\x01\x0c"\x03x
  
 夜、みんなが寝静まったのを確認してから、拓司はなたねのもと\nに向かった。@
 なたねは起きていた。\p最小限に音量を絞ったラジオから漏れる雑\n音を、黙ってじっと聞いていた。@
@@ -11,10 +13,13 @@ SCEN SCE222_001 \x06 \x02\xef! FLAG \x8c\x01FLAG\x02 \x80j\x01\x0c"\x03x
 なたねは機械的に口を動かし、それを嚥下した。@
 心の底をのぞき込むように、なたねは拓司の目をじっと見つめた。\n\pそしてひとこと、いった。\
 
-  FLAG J\x0c\x02"
+  
+FLAG J\x0c\x02"
 WHAT .\\Data\\Script\\TextFunc.Fob RUNF J\x02 \x02
-CMD1 TextOn RUNF x\x02 \x025
-SCEN SCE222_002 \x94\x02 \x02\xef! FLAG \x8c\x01FLAG\x02 \x84j\x01\x0c"\x03O
+CMD1 TextOn RUNF x\x02 END
+CSCE SCE222_002 \x94\x02 \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 \x84j\x01\x0c"\x03O
  
 なたね\n　「……それは」@
 拓司\n　「……？」@
@@ -26,5 +31,6 @@ SCEN SCE222_002 \x94\x02 \x02\xef! FLAG \x8c\x01FLAG\x02 \x84j\x01\x0c"\x03O
 \nそこまでいうとなたねはグルリと体を返し、拓司に背を向けた。@
 それっきり、なたねは一言も話そうとはしなかった。\
 
-  FLAG \xd8\x02\x0c\x02" J\x02 \x02 x\x02 \x025 J\x02 \x02
-SCEN TextClosev\x81\x1fZ\x04 \x0256\xf1
+  
+FLAG \xd8\x02\x0c\x02" J\x02 \x02 x\x02 END J\x02 \x02
+CSCE TextClosev\x81\x1fZ\x04 END6\xf1

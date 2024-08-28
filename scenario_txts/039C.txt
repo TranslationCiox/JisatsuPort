@@ -1,8 +1,11 @@
 START
-\n\x08\x01`B#\x01@\x06  FLAG \x08\x01\x0c\x02"
+\n\x08\x01`B#\x01@\x06  
+FLAG \x08\x01\x0c\x02"
 FOBT .\\Data\\Script\\Bgm.Fobv\x81\x1f  \x02
-CMD1 PlayCD RUNF J \x025
-SCEN SCE039_001 f \x02\xef! FLAG \x8c\x01FLAG\x02 \x90L\x0c"\x03N
+CMD1 PlayCD RUNF J END
+CSCE SCE039_001 f \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 \x90L\x0c"\x03N
  
 拓司\n　「早桃は、どうなんだ？」@
 \n引き返すことができない場所へと、話題が転がっていることには\n気づいていた。@
@@ -13,10 +16,13 @@ SCEN SCE039_001 f \x02\xef! FLAG \x8c\x01FLAG\x02 \x90L\x0c"\x03N
 \n早桃\n　「おにいちゃん」@
 拓司\n　「……」\
 
-  FLAG \xaa\x0c\x02"
+  
+FLAG \xaa\x0c\x02"
 WHAT .\\Data\\Script\\TextFunc.Fob RUNF \x02\x02 \x02
-CMD1 TextOn RUNF 0\x02 \x025
-SCEN SCE039_002 L\x02 \x02\xef! FLAG \x8c\x01FLAG\x02 \x94L\x0c"\x03W
+CMD1 TextOn RUNF 0\x02 END
+CSCE SCE039_002 L\x02 \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 \x94L\x0c"\x03W
  
 あまりにもあっさりとした口調だったので、拓司は早桃がそれを\n冗談として処理しようとしているのかと思った。@
 しかし、拓司を正面から見据える早桃の表情は、真剣そのものだ\nった。@
@@ -26,8 +32,11 @@ SCEN SCE039_002 L\x02 \x02\xef! FLAG \x8c\x01FLAG\x02 \x94L\x0c"\x03W
 早桃\n　「わざとなの」@
 拓司\n　「？」\
 
-  FLAG \x90\x02\x0c\x02" \x02\x02 \x02 0\x02 \x025
-SCEN SCE039_003 &\x04 \x02\xef! FLAG \x8c\x01FLAG\x02 \x98L\x0c"\x03>
+  
+FLAG \x90\x02\x0c\x02" \x02\x02 \x02 0\x02 END
+CSCE SCE039_003 &\x04 \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 \x98L\x0c"\x03>
  
 早桃\n　「わざとドアを開けておいたの。@
 　　おにいちゃんに見てもらおうと思って。@
@@ -35,10 +44,12 @@ SCEN SCE039_003 &\x04 \x02\xef! FLAG \x8c\x01FLAG\x02 \x98L\x0c"\x03>
 　　おにいちゃんに見てもらって、早桃の気持ちを伝えようって\n　　思ったの」@
 拓司\n　「……早桃」@
 \z
-  FLAG j\x04\x0c\x02" \x02\x02 \x02 0\x02 \x025\x03\x10
+  
+FLAG j\x04\x0c\x02" \x02\x02 \x02 0\x02 END\x03\x10
 CHOICE
 義兄として好きだという\n男として好きだという\n\l0,2,
 ENDCHOICE
 
-  FLAG \x9c\x05\x0c\x02" \x02\x02 \x02 0\x02 \x025 \x02\x02 \x02
-SCEN TextClosev\x81\x1f"\x06 \x0256\xf1
+  
+FLAG \x9c\x05\x0c\x02" \x02\x02 \x02 0\x02 END \x02\x02 \x02
+CSCE TextClosev\x81\x1f"\x06 END6\xf1

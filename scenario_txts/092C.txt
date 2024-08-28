@@ -1,17 +1,23 @@
 START
 I\x0e\x01`B#\x01\\\x0b
 FOBT .\\Data\\Script\\Bgm.Fobv\x81\x1f\x06 \x02
-CMD1 StopCD RUNF 0 \x025  FLAG \xc8\x0c\x02"
+CMD1 StopCD RUNF 0 END  
+FLAG \xc8\x0c\x02"
 FOBT .\\Data\\Script\\Bg.Fobsv\x81\x1ff \x02
-CMD2 BgAutoFadeInsv\x81\x1f\x90 \x025
-SCEN SCE092_001 \xb4 \x02\xef! FLAG \x8c\x01FLAG\x02 `\x9f\x0c"\x03\x11
+CMD2 BgAutoFadeInsv\x81\x1f\x90 END
+CSCE SCE092_001 \xb4 \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 `\x9f\x0c"\x03\x11
  
 \n\n\n\n\n\n\n\n\n\n　　　　　　　　　　　　　　『２日目』\
 
-  FLAG \xf8\x0c\x02"
+  
+FLAG \xf8\x0c\x02"
 WHAT .\\Data\\Script\\TextFunc.Fob RUNF \\\x01 \x02
-CMD1 TextOn RUNF \x8a\x01 \x025
-SCEN SCE092_002 \xa6\x01 \x02\xef! FLAG \x8c\x01FLAG\x02 d\x9f\x0c"\x03\x9b
+CMD1 TextOn RUNF \x8a\x01 END
+CSCE SCE092_002 \xa6\x01 \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 d\x9f\x0c"\x03\x9b
  
 晴れ。@
 水の分配について、御堂が再びゴネはじめた。@
@@ -22,8 +28,11 @@ SCEN SCE092_002 \xa6\x01 \x02\xef! FLAG \x8c\x01FLAG\x02 d\x9f\x0c"\x03\x9b
 なたね\n　「それはいえません」@
 御堂\n　「なに？」\
 
-  FLAG \xea\x01\x0c\x02" \\\x01 \x02 \x8a\x01 \x025
-SCEN SCE092_003 \x90\x04 \x02\xef! FLAG \x8c\x01FLAG\x02 h\x9f\x0c"\x03\x9e
+  
+FLAG \xea\x01\x0c\x02" \\\x01 \x02 \x8a\x01 END
+CSCE SCE092_003 \x90\x04 \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 h\x9f\x0c"\x03\x9e
  
 なたね\n　「いえば、秩序の維持に多大な影響が出るからです。\pたとえば\n　　……たとえばですよ？\p　食糧の備蓄が３日分しかないと分か\n　　ったら、みなさんはどうしますか？」@
 御堂\n　「……」@
@@ -33,8 +42,11 @@ SCEN SCE092_003 \x90\x04 \x02\xef! FLAG \x8c\x01FLAG\x02 h\x9f\x0c"\x03\x9e
 \n生々しい言葉に、紅葉と早桃が顔をしかめる。@
 粘り着くような沈黙をおいて、御堂がいった。\
 
-  FLAG \xd4\x04\x0c\x02" \\\x01 \x02 \x8a\x01 \x025
-SCEN SCE092_004 \x86\x07 \x02\xef! FLAG \x8c\x01FLAG\x02 l\x9f\x0c"\x03\x9f
+  
+FLAG \xd4\x04\x0c\x02" \\\x01 \x02 \x8a\x01 END
+CSCE SCE092_004 \x86\x07 \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 l\x9f\x0c"\x03\x9f
  
 御堂\n　「……３日分しかないってのは……本当なのか？」@
 なたね\n　「あくまでもたとえです」@
@@ -44,10 +56,12 @@ SCEN SCE092_004 \x86\x07 \x02\xef! FLAG \x8c\x01FLAG\x02 l\x9f\x0c"\x03\x9f
 なたねのいうことはもっともだった。\pこうしたサバイバルをあら\nかじめ想定していたなたねだからこそ、じりじりと確実に迫るリ\nミットのプレッシャーに耐えていられるのかもしれない。@
 しかし、なたねが口にした『３日』という具体的な例は、理屈を\n越えて一同の上に重くのしかかっていた。\p漠然と遠くに見ていた\n最後の日は、明日、やってくるかもしれないのだ……と。\
 
-  FLAG \xca\x07\x0c\x02" \\\x01 \x02 \x8a\x01 \x025\x03 
+  
+FLAG \xca\x07\x0c\x02" \\\x01 \x02 \x8a\x01 END\x03 
 CHOICE
 「何日耐えられるのか、はっきりさせてほしい」と拓司はいった\n「雲居さんのいうとおりだ」と拓司はいった\n\l0,2,
 ENDCHOICE
 
-  FLAG \x80\n\x0c\x02" \\\x01 \x02 \x8a\x01 \x025 \\\x01 \x02
-SCEN TextClosev\x81\x1f>\x0b \x0256\xf1
+  
+FLAG \x80\n\x0c\x02" \\\x01 \x02 \x8a\x01 END \\\x01 \x02
+CSCE TextClosev\x81\x1f>\x0b END6\xf1

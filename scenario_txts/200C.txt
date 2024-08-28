@@ -1,10 +1,16 @@
 START
 \xd0%\x01`B#\x01^ 
-SCEN SCE200_001 \x06 \x02\xef! FLAG \x8c\x01FLAG\x02  H\x01\x0c"  FLAG \xc9\x0c\x02"
+CSCE SCE200_001 \x06 \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02  H\x01\x0c"  
+FLAG \xc9\x0c\x02"
 FOBT .\\Data\\Script\\Bg.Fobsv\x81\x1fd \x02
-CMD2 BgAutoFadeInsv\x81\x1f\x8e \x025  FLAG \x02\x0c\x02"  \x04FLAG \x06\x0c\x02"  \x08FLAG \x01\x0c\x02"
+CMD2 BgAutoFadeInsv\x81\x1f\x8e END  
+FLAG \x02\x0c\x02"  \x04
+FLAG \x06\x0c\x02"  \x08
+FLAG \x01\x0c\x02"
 FOBT .\\Data\\Script\\Bgm.Fobv\x81\x1f\x01 \x02
-CMD1 SePlay RUNF *\x01 \x025\x03v
+CMD1 SePlay RUNF *\x01 END\x03v
  
 拓司は、錆びたシャッターをこじあけるように、目を開く。@
 \n白い壁。@
@@ -18,10 +24,13 @@ CMD1 SePlay RUNF *\x01 \x025\x03v
 \n教授\n　「大丈夫かね？\p　また、ひどい夢を見ていたようだ。@
 　　食糧がどうとか、鍵がどうとか……雲居さんという名前も\n　　いっていたね」\
 
-  FLAG F\x01\x0c\x02"
+  
+FLAG F\x01\x0c\x02"
 WHAT .\\Data\\Script\\TextFunc.Fob RUNF >\x03 \x02
-CMD1 TextOn RUNF l\x03 \x025
-SCEN SCE200_002 \x88\x03 \x02\xef! FLAG \x8c\x01FLAG\x02 $H\x01\x0c"\x03T
+CMD1 TextOn RUNF l\x03 END
+CSCE SCE200_002 \x88\x03 \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 $H\x01\x0c"\x03T
  
 拓司\n　「……どうも……教授……」@
 教授\n　「……」@
@@ -31,16 +40,22 @@ SCEN SCE200_002 \x88\x03 \x02\xef! FLAG \x8c\x01FLAG\x02 $H\x01\x0c"\x03T
 　　なんで俺ばっかりこんな目に合わなくちゃならないんだ！」@
 \n腹の中にたまっていたストレスに、バチバチと怒りが放電し、大\n爆発した。\
 
-  FLAG \xcc\x03\x0c\x02" >\x03 \x02 l\x03 \x025
-SCEN SCE200_003 V\x05 \x02\xef! FLAG \x8c\x01FLAG\x02 (H\x01\x0c"\x03\xb0
+  
+FLAG \xcc\x03\x0c\x02" >\x03 \x02 l\x03 END
+CSCE SCE200_003 V\x05 \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 (H\x01\x0c"\x03\xb0
  
 拓司\n　「あんたは、『俺の世界』が夢だという！\p　でも、俺は『あん\n　　たの世界』について何も知らない！\p　自分が誰なのかもわか\n　　らないんだ！\p　なのにこの世界が本物だって信じろっていう\n　　のか？！」@
 教授\n　「……」@
 拓司\n　「女が俺の思うとおりに動く『妄想の世界』！\p　最終波動とか\n　　いう、わけのわからないもののせいで教室に籠城しなきゃな\n　　らない……『俺の世界』！\p　そして、おれが狂っていて定期\n　　的に自分を書き換えては目覚める『あんたの世界』！\p　３つ\n　　の世界があって、どれもが少しずつ混ざり合って滅茶苦茶に\n　　なってる！\p　セックスが俺の世界を浸食して、雲居なたね\n　　があんたの世界に登場する！\p　どこが中心なんだ？！@
 　　どれが本当の世界なんだ？！」\
 
-  FLAG \x9a\x05\x0c\x02" >\x03 \x02 l\x03 \x025
-SCEN SCE200_004 \x94\x08 \x02\xef! FLAG \x8c\x01FLAG\x02 ,H\x01\x0c"\x03\xcb
+  
+FLAG \x9a\x05\x0c\x02" >\x03 \x02 l\x03 END
+CSCE SCE200_004 \x94\x08 \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 ,H\x01\x0c"\x03\xcb
  
 教授\n　「同情するよ」@
 拓司\n　「同情なんかいらない！\p　答をくれ！\p　現実と妄想の線引きを\n　　くれ！\p　答だ！\p　必要なのは答なんだッ！」@
@@ -50,8 +65,11 @@ SCEN SCE200_004 \x94\x08 \x02\xef! FLAG \x8c\x01FLAG\x02 ,H\x01\x0c"\x03\xcb
 　あたかもシーツの質感こそが自分を世界につなぎ止めている最\n後のロープであるかのように、拓司はシーツをなで続けた。@
 　悲惨なのは、そんなふうな神経症的不安のなかにあっても、\n『神経症的不安のなかにある自分』を客観的に観察している自\n分の意識……視点が……別のどこかにあるという事実である……。\n\
 
-  FLAG \xd8\x08\x0c\x02" >\x03 \x02 l\x03 \x025
-SCEN SCE200_005 >\x0c \x02\xef! FLAG \x8c\x01FLAG\x02 0H\x01\x0c"\x03\xa3
+  
+FLAG \xd8\x08\x0c\x02" >\x03 \x02 l\x03 END
+CSCE SCE200_005 >\x0c \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 0H\x01\x0c"\x03\xa3
  
 教授\n　「答はどこにもない。\p君の中にしかないんだ」@
 拓司\n　「……」@
@@ -59,14 +77,20 @@ SCEN SCE200_005 >\x0c \x02\xef! FLAG \x8c\x01FLAG\x02 0H\x01\x0c"\x03\xa3
 　　しかしそれは、単なる私の主観だ。\pもしかしたら、すべては\n　　私の妄想なのかもしれない。\pここは病院ではなく、私は座っ\n　　ておらず、そして君なんて本当は存在していないのかもしれ\n　　ない。\p君の承認なんて、無意味だ。\pなぜなら、君が同意した\n　　ということもまた、私の主観にすぎないからだ」@
 拓司\n　「……」\
 
-  FLAG \x82\x0c\x0c\x02" >\x03 \x02 l\x03 \x025
-SCEN SCE200_006 H\x0f \x02\xef! FLAG \x8c\x01FLAG\x02 4H\x01\x0c"\x032
+  
+FLAG \x82\x0c\x0c\x02" >\x03 \x02 l\x03 END
+CSCE SCE200_006 H\x0f \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 4H\x01\x0c"\x032
  
 教授\n　「あるいは、私というのは、どこかにいる別の私が見ている夢\n　　にすぎないのかもしれない。\pさらには夢を見ているのは私で\n　　すらなく、他の誰かなのかもしれない」@
 拓司\n　「……」\
 
-  FLAG \x8c\x0f\x0c\x02" >\x03 \x02 l\x03 \x025
-SCEN SCE200_007 \x8e\x10 \x02\xef! FLAG \x8c\x01FLAG\x02 8H\x01\x0c"\x03\xe8
+  
+FLAG \x8c\x0f\x0c\x02" >\x03 \x02 l\x03 END
+CSCE SCE200_007 \x8e\x10 \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 8H\x01\x0c"\x03\xe8
  
 教授\n　「答など、ないのだ。\pなにが現実でなにが妄想なのかを決める\n　　のは他人ではなく、本人なのだ。\p私はこう考えるよ。@
 　　－－合理的な世界こそが現実であると。\pいいかね、私だって\n　　夢くらいじゃ見る。\pしかし、それが『夢の世界』であると…\n　　…『現実の世界』ではないと認識するのは、夢の中で起こる\n　　ことが非合理的て脈絡を持たないからだ。\p私は医者だ。@
@@ -75,8 +99,11 @@ SCEN SCE200_007 \x8e\x10 \x02\xef! FLAG \x8c\x01FLAG\x02 8H\x01\x0c"\x03\xe8
 　　ゆえに、私はこの世界が『夢の世界』ではないと信じ、私が\n　　私としてここに実在することを信じる」@
 拓司\n　「……」\
 
-  FLAG \xd2\x10\x0c\x02" >\x03 \x02 l\x03 \x025
-SCEN SCE200_008 \xac\x14 \x02\xef! FLAG \x8c\x01FLAG\x02 <H\x01\x0c"\x03\x95
+  
+FLAG \xd2\x10\x0c\x02" >\x03 \x02 l\x03 END
+CSCE SCE200_008 \xac\x14 \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 <H\x01\x0c"\x03\x95
  
 教授\n　「君が定義する世界とはなにかね？\p　女が自分の思い通りに動\n　　くことかね？\p　自殺波動かね？」@
 拓司\n　「いえ……」@
@@ -85,8 +112,11 @@ SCEN SCE200_008 \xac\x14 \x02\xef! FLAG \x8c\x01FLAG\x02 <H\x01\x0c"\x03\x95
 　　そういう世界こそが、君の信じる『現実の世界』なはずだろ\n　　う？\p　……記憶喪失という事実は確かに受け入れがたいだろ\n　　う。\pだがね、それは現実に起こりうることなんだ。\p誰にだっ\n　　て、起こりうることなんだ。\pそれが偶然、君に起こった。@
 　　それだけの話だよ」\
 
-  FLAG \xf0\x14\x0c\x02" >\x03 \x02 l\x03 \x025
-SCEN SCE200_009 ~\x17 \x02\xef! FLAG \x8c\x01FLAG\x02 @H\x01\x0c"\x03\x92
+  
+FLAG \xf0\x14\x0c\x02" >\x03 \x02 l\x03 END
+CSCE SCE200_009 ~\x17 \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 @H\x01\x0c"\x03\x92
  
 /*▲SE01　再生（再生終わるまで待たずに進む）*/\a2,1,1,1,ザザザ……ザザッ……\pザアザザザ……ザアアアアア……@
 ザアザアアアアアアア……@
@@ -98,23 +128,32 @@ SCEN SCE200_009 ~\x17 \x02\xef! FLAG \x8c\x01FLAG\x02 @H\x01\x0c"\x03\x92
 早く眠りたいと思った。@
 眠って、二度と目覚めなければいいと思った。\p夢も見ずに完全に\n眠っているあいだだけ、自分が自分以外のものではない、完全な\n存在でいられるような気がした。\
 
-  FLAG \xc2\x17\x0c\x02" >\x03 \x02 l\x03 \x025
-SCEN SCE200_010 D\x1a \x02\xef! FLAG \x8c\x01FLAG\x02 DH\x01\x0c"\x03\x97
+  
+FLAG \xc2\x17\x0c\x02" >\x03 \x02 l\x03 END
+CSCE SCE200_010 D\x1a \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 DH\x01\x0c"\x03\x97
  
 教授\n　「少し眠るといい」@
 拓司\n　「俺は……眠るのが怖い」@
 教授\n　「大丈夫だ。\pたかが夢だよ。\p目が覚めれば、ここに戻ってくる。\n　　\p映画と同じだ。\pスクリーンの中の怪物は、決して君に危害を\n　　加えることはできない。\p脅かすだけだ。\p夢を現実と混同する\n　　な。\p現実には何も恐ろしいことなどない。\pここに戻ってくれ\n　　ば、私がいる。\p私を信じてくれ。\p私を現実の象徴としたまえ。\n　　\p君が求める答は、私なんだ」@
 拓司\n　「でも、この世界は……遠いような気がする。\p馴染みがないよ\n　　うな……なにも知らない世界だ。\p『おれの世界』のことなら\n　　なんでも知ってるんだ……」\
 
-  FLAG \x88\x1a\x0c\x02" >\x03 \x02 l\x03 \x025
-SCEN SCE200_011 \x1e\x1d \x02\xef! FLAG \x8c\x01FLAG\x02 HH\x01\x0c"\x039
+  
+FLAG \x88\x1a\x0c\x02" >\x03 \x02 l\x03 END
+CSCE SCE200_011 \x1e\x1d \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 HH\x01\x0c"\x039
  
 教授\n　「そう思っているだけだ。\p夢とはそういうものだ。\p夢の中にい\n　　る限り、セットの継ぎ目を見つけることはできない。@
 　　目覚めて、客観的に見ることで、矛盾が浮かび上がってくる\n　　のだよ」@
 拓司\n　「……」\
 
-  FLAG b\x1d\x0c\x02" >\x03 \x02 l\x03 \x025
-SCEN SCE200_012 \x80\x1e \x02\xef! FLAG \x8c\x01FLAG\x02 LH\x01\x0c"\x030
+  
+FLAG b\x1d\x0c\x02" >\x03 \x02 l\x03 END
+CSCE SCE200_012 \x80\x1e \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 LH\x01\x0c"\x030
  
 眠れ俺。@
 眠れ俺。@
@@ -125,6 +164,9 @@ SCEN SCE200_012 \x80\x1e \x02\xef! FLAG \x8c\x01FLAG\x02 LH\x01\x0c"\x030
 \nようやく浅いまどろみが頭に霞を作りはじめた。@
 そのとき、突如、何者かが拓司の肩を掴んだ。\
 
-  FLAG \xc4\x1e\x0c\x02" >\x03 \x02 l\x03 \x025  FLAG \x02\x0c\x02" \x01 \x02
-CMD1 SeStop RUNF \xe4\x1f \x025  FLAG \xc8\x0c\x02" d \x02 \x8e \x025 >\x03 \x02
-SCEN TextClosev\x81\x1f@  \x0256\xf1
+  
+FLAG \xc4\x1e\x0c\x02" >\x03 \x02 l\x03 END  
+FLAG \x02\x0c\x02" \x01 \x02
+CMD1 SeStop RUNF \xe4\x1f END  
+FLAG \xc8\x0c\x02" d \x02 \x8e END >\x03 \x02
+CSCE TextClosev\x81\x1f@  END6\xf1

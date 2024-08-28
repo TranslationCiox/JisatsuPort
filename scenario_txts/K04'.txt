@@ -1,10 +1,14 @@
 START
-\xa6\n\x01`B#\x01\xbc\x07  FLAG \\\x0c\x02"
+\xa6\n\x01`B#\x01\xbc\x07  
+FLAG \\\x0c\x02"
 FOBT .\\Data\\Script\\Bg.Fobsv\x81\x1f  \x02
-CMD2 BgAutoFadeInsv\x81\x1fJ \x025  FLAG \x04\x01\x0c\x02"
+CMD2 BgAutoFadeInsv\x81\x1fJ END  
+FLAG \x04\x01\x0c\x02"
 FOBT .\\Data\\Script\\Bgm.Fobv\x81\x1f\x88 \x02
-CMD1 PlayCD RUNF \xb2 \x025
-SCEN SCEK04_A01 \xce \x02\xef! FLAG \x8c\x01FLAG\x02 X\xa6\x01\x0c"\x03\xe0
+CMD1 PlayCD RUNF \xb2 END
+CSCE SCEK04_A01 \xce \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 X\xa6\x01\x0c"\x03\xe0
  
 　あまり本筋に関係がないから詳しくは語らないけれど、\n結局、私はゆきにバージンをあげた（あなたと寝たとき私はもう\nバージンじゃなかったけど、それでもあなたは私と寝た初めての\n男の子だったってわけ）。@
 いまどき処女性に神聖さなんて求めてはいないけれど、それでも\n私は、私たちの関係が新しいステージにスライドしたと感じたも\nのだった。@
@@ -15,11 +19,15 @@ SCEN SCEK04_A01 \xce \x02\xef! FLAG \x8c\x01FLAG\x02 X\xa6\x01\x0c"\x03\xe0
 私たちはただじっと、だきあっているだけで精神的なクライマッ\nクスを迎えることができるようになっていた。@
 まるで史上初めて火を発見した人類みたいな気分だった。@
 どきどきして、誇らしかった。\w\z
-  FLAG \x12\x01\x0c\x02"
+  
+FLAG \x12\x01\x0c\x02"
 WHAT .\\Data\\Script\\TextFunc.Fob RUNF \xb2\x04 \x02
-CMD1 TextOn RUNF \xe0\x04 \x025  FLAG \xc8\x0c\x02"   \x02 J \x025 \x88 \x02
-CMD1 StopCD RUNF <\x05 \x025
-SCEN SCEK04_A02 X\x05 \x02\xef! FLAG \x8c\x01FLAG\x02 \\\xa6\x01\x0c"\x03o
+CMD1 TextOn RUNF \xe0\x04 END  
+FLAG \xc8\x0c\x02"   \x02 J END \x88 \x02
+CMD1 StopCD RUNF <\x05 END
+CSCE SCEK04_A02 X\x05 \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 \\\xa6\x01\x0c"\x03o
  
 　７月２７日（－－この日付が重要なの）、いつものように抱き\n合っていると、突然ゆきが泣き始めた。@
 絞り出すような悲痛な泣き方だった。@
@@ -29,5 +37,6 @@ SCEN SCEK04_A02 X\x05 \x02\xef! FLAG \x8c\x01FLAG\x02 \\\xa6\x01\x0c"\x03o
 そんなに長い時間人間が泣き続けることができるなんて、驚きだ\nった。@
 そしてようやく、ゆきはいった。@
 今日、自分は自殺を決意していたのだと。\w\z
-  FLAG \x9c\x05\x0c\x02" \xb2\x04 \x02 \xe0\x04 \x025 \xb2\x04 \x02
-SCEN TextClosev\x81\x1f\x9e\x07 \x0256\xf1
+  
+FLAG \x9c\x05\x0c\x02" \xb2\x04 \x02 \xe0\x04 END \xb2\x04 \x02
+CSCE TextClosev\x81\x1f\x9e\x07 END6\xf1

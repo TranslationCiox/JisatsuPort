@@ -1,8 +1,11 @@
 START
-\xfb\r\x01`B#\x01\x94\x0b  FLAG \x05\x01\x0c\x02"
+\xfb\r\x01`B#\x01\x94\x0b  
+FLAG \x05\x01\x0c\x02"
 FOBT .\\Data\\Script\\Bgm.Fobv\x81\x1f  \x02
-CMD1 PlayCD RUNF J \x025
-SCEN SCEG02_004 f \x02\xef! FLAG \x8c\x01FLAG\x02 T\xc5\x01\x0c"\x03i
+CMD1 PlayCD RUNF J END
+CSCE SCEG02_004 f \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 T\xc5\x01\x0c"\x03i
  
 　かさりと音がして、錦城の上半身が、拓司の顔のあたりに被さっ\nた。@
 熱い体温と、ずっしりとした肉の重みが……柔らかく大きな胸が、\n\p拓司の目の前にある。@
@@ -10,12 +13,16 @@ SCEN SCEG02_004 f \x02\xef! FLAG \x8c\x01FLAG\x02 T\xc5\x01\x0c"\x03i
 \n拓司\n　「せ、先生！」@
 錦城\n　「しーっ！　……静かに。\pみんなが目を覚ますわ。@
 　　先生ね、考えたの。\p虎菱くんがこういうのを励みにできれ\n　　ば……って」\w\z
-  FLAG \xaa\x0c\x02"
+  
+FLAG \xaa\x0c\x02"
 WHAT .\\Data\\Script\\TextFunc.Fob RUNF n\x02 \x02
-CMD1 TextOn RUNF \x9c\x02 \x025  FLAG ^\x0c\x02"
+CMD1 TextOn RUNF \x9c\x02 END  
+FLAG ^\x0c\x02"
 FOBT .\\Data\\Script\\Bg.Fobsv\x81\x1f\xd2\x02 \x02
-CMD2 BgAutoFadeInsv\x81\x1f\xfc\x02 \x025
-SCEN SCEG02_005  \x03 \x02\xef! FLAG \x8c\x01FLAG\x02 X\xc5\x01\x0c"\x03R
+CMD2 BgAutoFadeInsv\x81\x1f\xfc\x02 END
+CSCE SCEG02_005  \x03 \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 X\xc5\x01\x0c"\x03R
  
 錦城の手は、滑るようにチャックの中へと侵入し、拓司のペ○ス\nに触れた。@
 そっとそれをつまみ、ズボンの外にずるりと引きずりだす。@
@@ -24,8 +31,11 @@ SCEN SCEG02_005  \x03 \x02\xef! FLAG \x8c\x01FLAG\x02 X\xc5\x01\x0c"\x03R
 拓司\n　「い、いえ……先生」@
 錦城\n　「よかった」@
 \n錦城は拓司の目をじっと見つめたまま、薄く笑った。\w\z
-  FLAG d\x03\x0c\x02" n\x02 \x02 \x9c\x02 \x025
-SCEN SCEG02_006 \xe6\x04 \x02\xef! FLAG \x8c\x01FLAG\x02 \\\xc5\x01\x0c"\x03R
+  
+FLAG d\x03\x0c\x02" n\x02 \x02 \x9c\x02 END
+CSCE SCEG02_006 \xe6\x04 \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 \\\xc5\x01\x0c"\x03R
  
 錦城\n　「さすが、男の子ね。\p熱くて……元気。\pねえ、虎菱くん、気持\n　　ちいい？」@
 拓司\n　「……」@
@@ -33,8 +43,11 @@ SCEN SCEG02_006 \xe6\x04 \x02\xef! FLAG \x8c\x01FLAG\x02 \\\xc5\x01\x0c"\x03R
 　　遅いほうがいいのかしら？」@
 拓司\n　「……」@
 黙っていると、錦城の手の動きがひどくゆっくりとしたものに変\nわった。\pじらすように止まり、少し動いてまた止まる。\w\z
-  FLAG *\x05\x0c\x02" n\x02 \x02 \x9c\x02 \x025
-SCEN SCEG02_007 \xac\x06 \x02\xef! FLAG \x8c\x01FLAG\x02 `\xc5\x01\x0c"\x03R
+  
+FLAG *\x05\x0c\x02" n\x02 \x02 \x9c\x02 END
+CSCE SCEG02_007 \xac\x06 \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 `\xc5\x01\x0c"\x03R
  
 錦城\n　「先生は聞いているんだけど。\p早いほうがいいの？@
 　　おそいほうがいいの？」@
@@ -44,8 +57,11 @@ SCEN SCEG02_007 \xac\x06 \x02\xef! FLAG \x8c\x01FLAG\x02 `\xc5\x01\x0c"\x03R
 錦城\n　「これくらい？」@
 拓司\n　「もっと……」@
 錦城\n　「いやらしい子ね。先生の手、道具だとでも思ってるのかしら？\n　　ふふふ」\w\z
-  FLAG \xf0\x06\x0c\x02" n\x02 \x02 \x9c\x02 \x025
-SCEN SCEG02_008 r\x08 \x02\xef! FLAG \x8c\x01FLAG\x02 d\xc5\x01\x0c"\x03\x86
+  
+FLAG \xf0\x06\x0c\x02" n\x02 \x02 \x9c\x02 END
+CSCE SCEG02_008 r\x08 \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 d\xc5\x01\x0c"\x03\x86
  
 早く激しく……嵐のように手を動かしながら、錦城は拓司の目を\n正面から捉えて離さない。@
 まるで実験動物を観察するように、拓司の目をのぞき込んでいる。\n\p錦城\n　「先生にこんなことさせてるなんて……興奮する？」@
@@ -56,10 +72,13 @@ SCEN SCEG02_008 r\x08 \x02\xef! FLAG \x8c\x01FLAG\x02 d\xc5\x01\x0c"\x03\x86
 錦城\n　「いくときは『先生いきます』っていうのよ？」@
 拓司\n　「先生……」@
 錦城\n　「ねえ……触りたい？\p　先生の胸、そんなにじっと見つめて\n　　……ねえ、触りたいの？」\w\z
-  FLAG \xb6\x08\x0c\x02" n\x02 \x02 \x9c\x02 \x025\x03\n
+  
+FLAG \xb6\x08\x0c\x02" n\x02 \x02 \x9c\x02 END
+S204 
 CHOICE
 「触りたい」\n「……」\n\l0,2,
 ENDCHOICE
 
-  FLAG \x08\x0b\x0c\x02" n\x02 \x02 \x9c\x02 \x025 n\x02 \x02
-SCEN TextClosev\x81\x1fv\x0b \x0256\xf1
+  
+FLAG \x08\x0b\x0c\x02" n\x02 \x02 \x9c\x02 END n\x02 \x02
+CSCE TextClosev\x81\x1fv\x0b END6\xf1

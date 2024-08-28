@@ -1,6 +1,8 @@
 START
 \x88\x1a\x01`B#\x01\x02\x16
-SCEN SCE026_001 \x06 \x02\xef! FLAG \x8c\x01FLAG\x02 @8\x0c"\x03\xbf
+CSCE SCE026_001 \x06 \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 @8\x0c"\x03\xbf
  
 /*　▲SE09　一回再生　*/\a2,0,9,0,　がらがらと、拓司の灰色の世界が一部スライドして、そこに新\n　たな何かが現れた。@
 \n\a4,0,0,0,/*　■CG08　表示（クロスフェード）　*/\a7,-2,-2,0,\a0,7,2,0,\a6,-2,0,0,御堂\n　「おはよーございまーす」@
@@ -11,10 +13,13 @@ SCEN SCE026_001 \x06 \x02\xef! FLAG \x8c\x01FLAG\x02 @8\x0c"\x03\xbf
 　暴力に彩られた噂。\p最近はドラッグとか、売春とか、そういっ\n　た単語さえ噂には入り交じるようになっていた。@
 　そして御堂の眼には、それらがあながちただの噂で終わるもの\n　ではないと感じさせるだけの説得力が備わっていた。\
 
-  FLAG J\x0c\x02"
+  
+FLAG J\x0c\x02"
 WHAT .\\Data\\Script\\TextFunc.Fob RUNF f\x03 \x02
-CMD1 TextOn RUNF \x94\x03 \x025
-SCEN SCE026_002 \xb0\x03 \x02\xef! FLAG \x8c\x01FLAG\x02 D8\x0c"\x03o
+CMD1 TextOn RUNF \x94\x03 END
+CSCE SCE026_002 \xb0\x03 \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 D8\x0c"\x03o
  
 御堂\n　「ぎりぎりセーフっすかね、センセイ？」@
 \n　御堂は笑いながら、教室に足を踏み入れようとした。@
@@ -24,10 +29,14 @@ SCEN SCE026_002 \xb0\x03 \x02\xef! FLAG \x8c\x01FLAG\x02 D8\x0c"\x03o
 錦城\n　「私は、あなたが自ら望んで落ちこぼれていくことにはなんら異\n　　を唱える気はありません。\pただ、他の人間の迷惑となるような\n　　ことはつつしんでください」@
 御堂\n　「……なんだと？」\
 
-  FLAG \xf4\x03\x0c\x02" f\x03 \x02 \x94\x03 \x025  FLAG \n\x01\x0c\x02"
+  
+FLAG \xf4\x03\x0c\x02" f\x03 \x02 \x94\x03 END  
+FLAG \n\x01\x0c\x02"
 FOBT .\\Data\\Script\\Bgm.Fobv\x81\x1f\x04\x06 \x02
-CMD1 PlayCD RUNF .\x06 \x025
-SCEN SCE026_003 J\x06 \x02\xef! FLAG \x8c\x01FLAG\x02 H8\x0c"\x03r
+CMD1 PlayCD RUNF .\x06 END
+CSCE SCE026_003 J\x06 \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 H8\x0c"\x03r
  
 錦城\n　「出て行きなさい、御堂くん」@
 御堂\n　「……」@
@@ -39,8 +48,11 @@ SCEN SCE026_003 J\x06 \x02\xef! FLAG \x8c\x01FLAG\x02 H8\x0c"\x03r
 　クラスにいる全員が息を押し殺して事態の移行を見守っていた。\n　\p息詰まる静寂のなかに、次に来るであろうすさまじい暴力の予感\n　が……それに対する怯えと興奮が……渦巻いていた。@
 　やがて御堂が、ニヤリと笑った。\
 
-  FLAG \x8e\x06\x0c\x02" f\x03 \x02 \x94\x03 \x025
-SCEN SCE026_004 \x90\x08 \x02\xef! FLAG \x8c\x01FLAG\x02 L8\x0c"\x03`
+  
+FLAG \x8e\x06\x0c\x02" f\x03 \x02 \x94\x03 END
+CSCE SCE026_004 \x90\x08 \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 L8\x0c"\x03`
  
 御堂\n　「先生、日向が丘に一人住まいなんですよね？\p　住所、知ってる\n　　んですよ」@
 錦城\n　「……」@
@@ -48,10 +60,16 @@ SCEN SCE026_004 \x90\x08 \x02\xef! FLAG \x8c\x01FLAG\x02 L8\x0c"\x03`
 錦城\n　「……」@
 御堂\n　「女の一人暮らしは危険がいっぱいッスからね。\p気を付けないと\n　　－－」\
 
-  FLAG \xd4\x08\x0c\x02" f\x03 \x02 \x94\x03 \x025
-SCEN SCE026_005 \x8e\n \x02\xef! FLAG \x8c\x01FLAG\x02 P8\x0c" \x04\x06 \x02
-CMD1 StopCD RUNF \xde\n \x025  FLAG \x0c\x02"  \x04FLAG \x0b\x0c\x02"  \x08FLAG \x0c\x02" \x04\x06 \x02
-SCEN SePlayExsv\x81\x1fT\x0b \x025\x03\x9f
+  
+FLAG \xd4\x08\x0c\x02" f\x03 \x02 \x94\x03 END
+CSCE SCE026_005 \x8e\n \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 P8\x0c" \x04\x06 \x02
+CMD1 StopCD RUNF \xde\n END  
+FLAG \x0c\x02"  \x04
+FLAG \x0b\x0c\x02"  \x08
+FLAG \x0c\x02" \x04\x06 \x02
+CSCE SePlayExsv\x81\x1fT\x0b END\x03\x9f
  
 　パン！@
 　乾いた音が教室に響き渡った。\pそれは錦城教諭が、御堂の頬を容\n　赦なく張り飛ばした音だった。@
@@ -61,8 +79,11 @@ SCEN SePlayExsv\x81\x1fT\x0b \x025\x03\x9f
 \a4,0,0,0,\n　はかったように終業のチャイムが鳴り響いた。@
 　爆発の瞬間、不意を突かれた形となった御堂はしばらく間をおい\n　てから、フン、と鼻で笑った。\
 
-  FLAG t\x0b\x0c\x02" f\x03 \x02 \x94\x03 \x025
-SCEN SCE026_006 *\x0e \x02\xef! FLAG \x8c\x01FLAG\x02 T8\x0c"\x03p
+  
+FLAG t\x0b\x0c\x02" f\x03 \x02 \x94\x03 END
+CSCE SCE026_006 *\x0e \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 T8\x0c"\x03p
  
 御堂\n　「……つまんねえオンナ」@
 錦城\n　「以上。授業を終わります」@
@@ -70,8 +91,11 @@ SCEN SCE026_006 *\x0e \x02\xef! FLAG \x8c\x01FLAG\x02 T8\x0c"\x03p
 錦城\n　「勝手になさい」@
 \n　言って錦城教諭は、なにごともなかったかのように軽く御堂から\n　視線を外し、とりわけ急ぐでもなく、平静そのものといった様子\n　で教室から出ていった。\p御堂もまた、鞄を自分の机の上に放り投\n　げ、退室した。\pしかし、精一杯の虚勢といった感じは否めない。\n　勝敗は明らかだった。\
 
-  FLAG n\x0e\x0c\x02" f\x03 \x02 \x94\x03 \x025
-SCEN SCE026_007 h\x10 \x02\xef! FLAG \x8c\x01FLAG\x02 X8\x0c"\x03N
+  
+FLAG n\x0e\x0c\x02" f\x03 \x02 \x94\x03 END
+CSCE SCE026_007 h\x10 \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 X8\x0c"\x03N
  
 \n　ほどなく教室には興奮と驚嘆の入り交じった声がわき起こった\n　。@
 学生\n　「すげえよな、錦城！」@
@@ -81,8 +105,12 @@ SCEN SCE026_007 h\x10 \x02\xef! FLAG \x8c\x01FLAG\x02 X8\x0c"\x03N
 学生\n　「才色兼備、度胸もあり！」@
 学生\n　「ううー、抱かれてー！」\
 
-  FLAG \xac\x10\x0c\x02" f\x03 \x02 \x94\x03 \x025  FLAG \x06\x01\x0c\x02" \x04\x06 \x02 .\x06 \x025
-SCEN SCE026_008 R\x12 \x02\xef! FLAG \x8c\x01FLAG\x02 \\8\x0c"\x03\x85
+  
+FLAG \xac\x10\x0c\x02" f\x03 \x02 \x94\x03 END  
+FLAG \x06\x01\x0c\x02" \x04\x06 \x02 .\x06 END
+CSCE SCE026_008 R\x12 \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 \\8\x0c"\x03\x85
  
 \n　騒ぎのなかにあって、拓司はひとり、フツフツとわき上がってく\n　る怒りに震えていた。@
 　－－怒り？@
@@ -95,9 +123,11 @@ SCEN SCE026_008 R\x12 \x02\xef! FLAG \x8c\x01FLAG\x02 \\8\x0c"\x03\x85
 \n　激しい自己嫌悪が胸を充たし、拓司は死を思った。@
 　ルーティン・ワーク。\
 
-  FLAG \x96\x12\x0c\x02" f\x03 \x02 \x94\x03 \x025 f\x03 \x02
-CMD2 TextWindowOffv\x81\x1f\xf0\x14 \x025  FLAG \xc8\x0c\x02"
+  
+FLAG \x96\x12\x0c\x02" f\x03 \x02 \x94\x03 END f\x03 \x02
+CMD2 TextWindowOffv\x81\x1f\xf0\x14 END  
+FLAG \xc8\x0c\x02"
 FOBT .\\Data\\Script\\Bg.Fobsv\x81\x1f.\x15 \x02
-CMD2 BgNormalFadeIn RUNF X\x15 \x025 \x04\x06 \x02 \xde\n \x025   \x92 f\x03 \x02
-LOAD TextWindowOnDirect RUNF \xb0\x15 \x025 f\x03 \x02
-SCEN TextClosev\x81\x1f\xe4\x15 \x0256\xf1
+CMD2 BgNormalFadeIn RUNF X\x15 END \x04\x06 \x02 \xde\n END   \x92 f\x03 \x02
+LOAD TextWindowOnDirect RUNF \xb0\x15 END f\x03 \x02
+CSCE TextClosev\x81\x1f\xe4\x15 END6\xf1

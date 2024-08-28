@@ -1,15 +1,21 @@
 START
-\x0c\r\x01`B#\x01\xf0\n  FLAG \x04\x01\x0c\x02"
+\x0c\r\x01`B#\x01\xf0\n  
+FLAG \x04\x01\x0c\x02"
 FOBT .\\Data\\Script\\Bgm.Fobv\x81\x1f  \x02
-CMD1 PlayCD RUNF J \x025
-SCEN SCE232_001 f \x02\xef! FLAG \x8c\x01FLAG\x02  z\x01\x0c"\x03\x13
+CMD1 PlayCD RUNF J END
+CSCE SCE232_001 f \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02  z\x01\x0c"\x03\x13
  
 \n\n\n\n\n\n\n\n\n\n　　　　　　　『おんなのこと、うちゅうじん』\
 
-  FLAG \xaa\x0c\x02"
+  
+FLAG \xaa\x0c\x02"
 WHAT .\\Data\\Script\\TextFunc.Fob RUNF \x16\x01 \x02
-CMD1 TextOn RUNF D\x01 \x025
-SCEN SCE232_002 `\x01 \x02\xef! FLAG \x8c\x01FLAG\x02 $z\x01\x0c"\x03\xdf
+CMD1 TextOn RUNF D\x01 END
+CSCE SCE232_002 `\x01 \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 $z\x01\x0c"\x03\xdf
  
 　あるところに、なたねという女の子がいました。@
 \n　なたねにはお母さんがいませんでした。\pお母さんはなたねが小\nさいときに病気で死んでしまったのです。\pお父さんも、本当のお\n父さんではなく、お母さんの再婚相手でした。\pそれでもなたねは、\n寂しいなんて思うことはありませんでした。@
@@ -18,8 +24,11 @@ SCEN SCE232_002 `\x01 \x02\xef! FLAG \x8c\x01FLAG\x02 $z\x01\x0c"\x03\xdf
 　でも、なたねが幸せだったのは、お義父さんがお金持ちだから\nではなくて、お義父さんが本当に素敵な人だったからです。@
 　お義父さんはなたねのことを大切に、大切に育ててくれました。\n\p　一度、なたねがひどい風邪を引いたときには、大切なお仕事を\n放り出して看病についてくれました（お義父さんはそのせいで、\n病院をクビになってしまったので、新しい仕事先を探さなければ\nならなくなりました）。\pしかもお義父さんは、勉強をしなさい、\nＴＶは見てはいけません、と、厳しいこともなにひとついいませ\nんでした。\
 
-  FLAG \xa4\x01\x0c\x02" \x16\x01 \x02 D\x01 \x025
-SCEN SCE232_003 Z\x05 \x02\xef! FLAG \x8c\x01FLAG\x02 (z\x01\x0c"\x03\x9e
+  
+FLAG \xa4\x01\x0c\x02" \x16\x01 \x02 D\x01 END
+CSCE SCE232_003 Z\x05 \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 (z\x01\x0c"\x03\x9e
  
 　なたねはお義父さんが大好きでした。@
 　だから言われなくても勉強をしましたし、ＴＶだって少ししか\n見ませんでした。\pそうすればお義父さんが喜んでくれると思った\nからです。@
@@ -27,12 +36,17 @@ SCEN SCE232_003 Z\x05 \x02\xef! FLAG \x8c\x01FLAG\x02 (z\x01\x0c"\x03\x9e
 　勉強ばかりしているのでお友達は少なかったけれど、なたねは\n我慢しました。@
 　ときどき「もういやだなあ」と思うこともあって、そんなとき\nお義父さんは「なたね、あまり勉強ばかりしていると、体に毒だ\nよ」と優しく声をかけてくれました。\pなたねは、そんなお義父さ\nんの声を聞くと、逆に「よし、もっとがんばろう！」と思えたの\nでした。\
 
-  FLAG \x9e\x05\x0c\x02" \x16\x01 \x02 D\x01 \x025 \x16\x01 \x02
-SCEN TextClosev\x81\x1f\\\x08 \x025\x03\t.\\Data\\Script\\Scenario\\232SubC.Fob RUNF |\x08 \x02
-CMD1 startv\x81\x1f\xb2\x08 \x025  FLAG \xc8\x0c\x02"
+  
+FLAG \x9e\x05\x0c\x02" \x16\x01 \x02 D\x01 END \x16\x01 \x02
+CSCE TextClosev\x81\x1f\\\x08 END
+HERO .\\Data\\Script\\Scenario\\232SubC.Fob RUNF |\x08 \x02
+CMD1 startv\x81\x1f\xb2\x08 END  
+FLAG \xc8\x0c\x02"
 FOBT .\\Data\\Script\\Bg.Fobsv\x81\x1f\xe8\x08 \x02
-CMD2 BgAutoFadeInsv\x81\x1f\x12\t \x025
-SCEN SCE232_013 6\t \x02\xef! FLAG \x8c\x01FLAG\x02 Pz\x01\x0c"\x03?
+CMD2 BgAutoFadeInsv\x81\x1f\x12\t END
+CSCE SCE232_013 6\t \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 Pz\x01\x0c"\x03?
  
 　どこかへ走ってゆく汽車の@
 　全財産ぶんの切符を　くださいな@
@@ -42,5 +56,6 @@ SCEN SCE232_013 6\t \x02\xef! FLAG \x8c\x01FLAG\x02 Pz\x01\x0c"\x03?
 　ただもう　わたしは@
 　ここからはなれてゆきたいのです\
 
-  FLAG z\t\x0c\x02" \x16\x01 \x02 D\x01 \x025   \x02
-CMD1 StopCD RUNF \xbc\n \x025 \x16\x01 \x02 \\\x08 \x0256\xf1
+  
+FLAG z\t\x0c\x02" \x16\x01 \x02 D\x01 END   \x02
+CMD1 StopCD RUNF \xbc\n END \x16\x01 \x02 \\\x08 END6\xf1

@@ -1,15 +1,19 @@
 START
 d\x03\x01\x80\x044\x01h\x02
-SCEN SCE004_001 \x06 \x02\xef! FLAG \x8c\x01FLAG\x02 \xe0\x15\x0c"
+CSCE SCE004_001 \x06 \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 \xe0\x15\x0c"
 WHAT .\\Data\\Script\\TextFunc.fob RUNF J \x02
-FOBT CheckNormalMessageSkip RUNF x \x025
+FOBT CheckNormalMessageSkip RUNF x END
 WHAT .\\Data\\Script\\TextFunc.Fob RUNF \xa4 \x02
-LOAD TextWindowOffDirect \xd2 \x025  FLAG ,\x01\x0c\x02"
+LOAD TextWindowOffDirect \xd2 END  
+FLAG ,\x01\x0c\x02"
 FOBT .\\Data\\Script\\Bg.Fobsv\x81\x1f\x14\x01 \x02
-CMD1 BgOnsv\x81\x1f>\x01 \x025  FLAG \x0b\x01\x0c\x02"
+CMD1 BgOnsv\x81\x1f>\x01 END  
+FLAG \x0b\x01\x0c\x02"
 FOBT .\\Data\\Script\\Bgm.Fobv\x81\x1ft\x01 \x02
-CMD1 PlayCD RUNF \x9e\x01 \x025 J \x02
-CMD1 WaitKey \xc6\x01 \x025 t\x01 \x02
-CMD1 StopCD RUNF \xee\x01 \x025 \xa4 \x02
-LOAD UpdateScenarioRead RUNF \x16\x02 \x025 \xa4 \x02
-SCEN TextClosev\x81\x1fJ\x02 \x0256\xf1
+CMD1 PlayCD RUNF \x9e\x01 END J \x02
+CMD1 WaitKey \xc6\x01 END t\x01 \x02
+CMD1 StopCD RUNF \xee\x01 END \xa4 \x02
+LOAD UpdateScenarioRead RUNF \x16\x02 END \xa4 \x02
+CSCE TextClosev\x81\x1fJ\x02 END6\xf1

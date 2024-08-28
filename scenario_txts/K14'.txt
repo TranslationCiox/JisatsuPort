@@ -1,18 +1,25 @@
 START
 E\x1d\x01`B#\x010\x16
-SCEN SCEK14_A01 \x06 \x02\xef! FLAG \x8c\x01FLAG\x02 @\xaf\x01\x0c"\x03R
+CSCE SCEK14_A01 \x06 \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 @\xaf\x01\x0c"\x03R
  
 変な味がするといやだったから、マーマレードジャムもスプーン\nひとさじぶん添えた。@
 より確実に死ぬにはアルコールも飲まないといけないということ\nは知っていたけれど、私もゆきも、お酒なんて飲んだことはなか\nったから、それはパスした。@
 アルコールの欠落は、薬の増量でまかなえばいいと……さらに一\n瓶ぶんを溶かして、混ぜた。\w\z
-  FLAG J\x0c\x02"
+  
+FLAG J\x0c\x02"
 WHAT .\\Data\\Script\\TextFunc.Fob RUNF \xb2\x01 \x02
-CMD1 TextOn RUNF \xe0\x01 \x025  FLAG >\x0c\x02"
+CMD1 TextOn RUNF \xe0\x01 END  
+FLAG >\x0c\x02"
 FOBT .\\Data\\Script\\Bg.Fobsv\x81\x1f\x16\x02 \x02
-CMD2 BgAutoFadeInsv\x81\x1f@\x02 \x025  FLAG \x04\x01\x0c\x02"
+CMD2 BgAutoFadeInsv\x81\x1f@\x02 END  
+FLAG \x04\x01\x0c\x02"
 FOBT .\\Data\\Script\\Bgm.Fobv\x81\x1f~\x02 \x02
-CMD1 PlayCD RUNF \xa8\x02 \x025
-SCEN SCEK14_A02 \xc4\x02 \x02\xef! FLAG \x8c\x01FLAG\x02 D\xaf\x01\x0c"\x03\xa8
+CMD1 PlayCD RUNF \xa8\x02 END
+CSCE SCEK14_A02 \xc4\x02 \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 D\xaf\x01\x0c"\x03\xa8
  
 私とゆきはそれらを一気に食べて、そしてベッドに横になって話\nをした。@
 音楽のこととか、学校の噂話とか、昨日のテレビのこととか。@
@@ -21,9 +28,12 @@ SCEN SCEK14_A02 \xc4\x02 \x02\xef! FLAG \x8c\x01FLAG\x02 D\xaf\x01\x0c"\x03\xa8
 ゆきちゃんはまだ、隣のベッドからいろいろ話しかけてきていた\nけれど、私はもう、彼女がなんといっているのかもよくわからな\nいくらいで、ウン、ウン、と適当に相槌をうつのが精一杯だった。\n\pプールで一日泳いだ後にやってくるような、気持ちのいい眠さだ\nった。@
 こんな素敵な気分で、最高の友達と一緒に死ねるなんて、私はし\nあわせだなあ、と思った。@
 繰り返すけれど、少しも怖くはなかった。\w\z
-  FLAG \x08\x03\x0c\x02" \xb2\x01 \x02 \xe0\x01 \x025 ~\x02 \x02
-CMD1 StopCD RUNF \xee\x05 \x025
-SCEN SCEK14_A03 \n\x06 \x02\xef! FLAG \x8c\x01FLAG\x02 H\xaf\x01\x0c"\x03\\
+  
+FLAG \x08\x03\x0c\x02" \xb2\x01 \x02 \xe0\x01 END ~\x02 \x02
+CMD1 StopCD RUNF \xee\x05 END
+CSCE SCEK14_A03 \n\x06 \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 H\xaf\x01\x0c"\x03\\
  
 いつのまにかゆきちゃんも話すのをやめていた。@
 「ゆきちゃん、眠った？」と、私はなんとかそれだけ尋ねた。@
@@ -32,8 +42,13 @@ SCEN SCEK14_A03 \n\x06 \x02\xef! FLAG \x8c\x01FLAG\x02 H\xaf\x01\x0c"\x03\\
 \n凄く嬉しくて、涙がぽろぽろとあふれ出てきた。@
 どれくらい眠っていたのか、泣いていたのか、よくわからない。@
 私は暖かくてぼんやりとしたかたまりのなかでたゆたっていた。\w\z
-  FLAG N\x06\x0c\x02" \xb2\x01 \x02 \xe0\x01 \x025  FLAG \xcb\x0c\x02" \x16\x02 \x02 @\x02 \x025  FLAG \n\x01\x0c\x02" ~\x02 \x02 \xa8\x02 \x025
-SCEN SCEK14_A04 `\x08 \x02\xef! FLAG \x8c\x01FLAG\x02 L\xaf\x01\x0c"\x03\x81
+  
+FLAG N\x06\x0c\x02" \xb2\x01 \x02 \xe0\x01 END  
+FLAG \xcb\x0c\x02" \x16\x02 \x02 @\x02 END  
+FLAG \n\x01\x0c\x02" ~\x02 \x02 \xa8\x02 END
+CSCE SCEK14_A04 `\x08 \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 L\xaf\x01\x0c"\x03\x81
  
 しばらくすると猛烈な吐き気が襲ってきて、私はお腹の中のもの\nをベッドの上にすべて吐き出した。@
 それまで経験したことのないくらいの胃の痛みに、私はのたうち\n回った。@
@@ -43,13 +58,20 @@ SCEN SCEK14_A04 `\x08 \x02\xef! FLAG \x8c\x01FLAG\x02 L\xaf\x01\x0c"\x03\x81
 吐いた物が気管に詰まって、息ができなかった。@
 鼻からもゲロがあふれてきた。涙で何も見えず、何が起こってい\nるのか全然わからなかった。@
 気持ちよく眠って死ねるはずだったのに、どうしてこんなに苦し\nんで死ななければならないの……？\w\z
-  FLAG \xa4\x08\x0c\x02" \xb2\x01 \x02 \xe0\x01 \x025
-SCEN SCEK14_A05 \xe2\n \x02\xef! FLAG \x8c\x01FLAG\x02 P\xaf\x01\x0c"\x031
+  
+FLAG \xa4\x08\x0c\x02" \xb2\x01 \x02 \xe0\x01 END
+CSCE SCEK14_A05 \xe2\n \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 P\xaf\x01\x0c"\x031
  
 　要するに私は薬を飲みすぎたのだった。@
 急性アルコール中毒になるまえに、身体がアルコールを自動的に\n吐き出させるように……\p私の身体は私の意志とは無関係に薬を吐\nき戻させていたのだった。\w\z
-  FLAG &\x0b\x0c\x02" \xb2\x01 \x02 \xe0\x01 \x025  FLAG ?\x0c\x02" \x16\x02 \x02 @\x02 \x025
-SCEN SCEK14_A06 X\x0c \x02\xef! FLAG \x8c\x01FLAG\x02 T\xaf\x01\x0c"\x03\\
+  
+FLAG &\x0b\x0c\x02" \xb2\x01 \x02 \xe0\x01 END  
+FLAG ?\x0c\x02" \x16\x02 \x02 @\x02 END
+CSCE SCEK14_A06 X\x0c \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 T\xaf\x01\x0c"\x03\\
  
 「ゆきちゃん！　ゆきちゃん！」@
 \n私は、すぐそばで横になっているはずのゆきの名前を、必死で叫\nんだ。@
@@ -58,15 +80,21 @@ SCEN SCEK14_A06 X\x0c \x02\xef! FLAG \x8c\x01FLAG\x02 T\xaf\x01\x0c"\x03\\
 でも、返事はなかった。@
 そのうち私はあまりの苦しさに意識を失った。@
 /*■背景　黒　表示*/\a7,0,1,0,\a0,200,0,0,/*▲BGM　停止*/\a4,-1,0,0,\a6,0,0,0,そして病院で目を覚ました。\w\z
-  FLAG \x9c\x0c\x0c\x02" \xb2\x01 \x02 \xe0\x01 \x025
-SCEN SCEK14_A07 F\x0e \x02\xef! FLAG \x8c\x01FLAG\x02 X\xaf\x01\x0c"\x03;
+  
+FLAG \x9c\x0c\x0c\x02" \xb2\x01 \x02 \xe0\x01 END
+CSCE SCEK14_A07 F\x0e \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 X\xaf\x01\x0c"\x03;
  
 　病院に連絡したのは、夕方、部屋に入ってきた清掃係のおばさ\nんだった。@
 おばさんは、ゲロまみれの床の上に倒れている私と、ベッドの上\nで静かに眠っているゆきを見つけたのだった。@
 若草ゆきは死んでいた。@
 そして私は生き残った。\w\z
-  FLAG \x8a\x0e\x0c\x02" \xb2\x01 \x02 \xe0\x01 \x025
-SCEN SCEK14_A08 \xb0\x0f \x02\xef! FLAG \x8c\x01FLAG\x02 \\\xaf\x01\x0c"\x03l
+  
+FLAG \x8a\x0e\x0c\x02" \xb2\x01 \x02 \xe0\x01 END
+CSCE SCEK14_A08 \xb0\x0f \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 \\\xaf\x01\x0c"\x03l
  
 あんなに穏やかで、あっさりと受け入れることができた死が、た\nまらなく怖くなっていた。@
 どこか遠い場所にある、わけのわからないものに思えてきた。@
@@ -74,8 +102,12 @@ SCEN SCEK14_A08 \xb0\x0f \x02\xef! FLAG \x8c\x01FLAG\x02 \\\xaf\x01\x0c"\x03l
 どこにでも死はあって、私たちはそれをまるで細かい塵みたいに\n肺の中に吸い込みながら生きている、と。@
 私にとって死は、そんなに普遍的なものではなくなっていた。@
 死は特別だった。\w\z
-  FLAG \xf4\x0f\x0c\x02" \xb2\x01 \x02 \xe0\x01 \x025  FLAG \x08\x01\x0c\x02" ~\x02 \x02 \xa8\x02 \x025
-SCEN SCEK14_A09 \x12\x12 \x02\xef! FLAG \x8c\x01FLAG\x02 `\xaf\x01\x0c"\x03e
+  
+FLAG \xf4\x0f\x0c\x02" \xb2\x01 \x02 \xe0\x01 END  
+FLAG \x08\x01\x0c\x02" ~\x02 \x02 \xa8\x02 END
+CSCE SCEK14_A09 \x12\x12 \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 `\xaf\x01\x0c"\x03e
  
 この世界には所属しない呪われた地平にあって、そことここを隔\nてる錆びた門を力ずくで押し開いてやってくるもの。@
 日常とは共存していない非日常。私は、絶対それに馴染むことは\nできない。@
@@ -85,8 +117,11 @@ SCEN SCEK14_A09 \x12\x12 \x02\xef! FLAG \x8c\x01FLAG\x02 `\xaf\x01\x0c"\x03e
 足音ひとつない。@
 でも、振り向くと、いる。@
 「つかまえたぞ。もうお前は逃げられないんだぞ」と。\w\z
-  FLAG V\x12\x0c\x02" \xb2\x01 \x02 \xe0\x01 \x025
-SCEN SCEK14_A10 $\x14 \x02\xef! FLAG \x8c\x01FLAG\x02 d\xaf\x01\x0c"\x03Y
+  
+FLAG V\x12\x0c\x02" \xb2\x01 \x02 \xe0\x01 END
+CSCE SCEK14_A10 $\x14 \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 d\xaf\x01\x0c"\x03Y
  
 気取らずにいえば、窒息しそうになったときの恐怖と胃洗浄の苦\nしさが、そのまま死のイメージとなって私に取り憑いたのだろう。\n\p死は怖いものだ。\pいまはそう思っている。@
 でも、本気でやろうと思えば、もう一回くらいはやれる。@
@@ -96,5 +131,6 @@ SCEN SCEK14_A10 $\x14 \x02\xef! FLAG \x8c\x01FLAG\x02 d\xaf\x01\x0c"\x03Y
 誕生日が。@
 ゆきにおける私が。@
 私には必要だった。\w\z
-  FLAG h\x14\x0c\x02" \xb2\x01 \x02 \xe0\x01 \x025 \xb2\x01 \x02
-SCEN TextClosev\x81\x1f\x12\x16 \x0256\xf1
+  
+FLAG h\x14\x0c\x02" \xb2\x01 \x02 \xe0\x01 END \xb2\x01 \x02
+CSCE TextClosev\x81\x1f\x12\x16 END6\xf1

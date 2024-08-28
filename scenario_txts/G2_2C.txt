@@ -1,6 +1,8 @@
 START
 \x1d\x04\x01\xa4\t3\x01\x14\x03
-SCEN SCEG02_201 \x06 \x02\xef! FLAG \x8c\x01FLAG\x02 l\xc5\x01\x0c"\x03b
+CSCE SCEG02_201 \x06 \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 l\xc5\x01\x0c"\x03b
  
 錦城\n　「もう？\p　もう出ちゃうの？@
 　　そんなにエロい気分になってるの？@
@@ -12,11 +14,13 @@ SCEN SCEG02_201 \x06 \x02\xef! FLAG \x8c\x01FLAG\x02 l\xc5\x01\x0c"\x03b
 錦城\n　「こんなにたくさん出して……いやらしい子。@
 　　先生の手、こんなにべとべとにして……ふふふ」@
 \z
-  FLAG J\x0c\x02"
+  
+FLAG J\x0c\x02"
 WHAT .\\Data\\Script\\TextFunc.Fob RUNF \xf2\x01 \x02
-CMD1 TextOn RUNF  \x02 \x025  FLAG \xc8\x0c\x02"
+CMD1 TextOn RUNF  \x02 END  
+FLAG \xc8\x0c\x02"
 FOBT .\\Data\\Script\\Bg.Fobsv\x81\x1fV\x02 \x02
-CMD2 BgAutoFadeInsv\x81\x1f\x80\x02 \x025
+CMD2 BgAutoFadeInsv\x81\x1f\x80\x02 END
 FOBT .\\Data\\Script\\Bgm.Fobv\x81\x1f\xa4\x02 \x02
-CMD1 StopCD RUNF \xce\x02 \x025 \xf2\x01 \x02
-SCEN TextClosev\x81\x1f\xf6\x02 \x0256\xf1
+CMD1 StopCD RUNF \xce\x02 END \xf2\x01 \x02
+CSCE TextClosev\x81\x1f\xf6\x02 END6\xf1

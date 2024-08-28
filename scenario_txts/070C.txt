@@ -1,6 +1,8 @@
 START
 "\x04\x01\xa4\t3\x01\xe0\x02
-SCEN SCE070_001 \x06 \x02\xef! FLAG \x8c\x01FLAG\x02 }\x0c"\x03[
+CSCE SCE070_001 \x06 \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 }\x0c"\x03[
  
 なたね\n　「駄目！」@
 \nなたねが鋭く静止した。@
@@ -9,12 +11,14 @@ SCEN SCE070_001 \x06 \x02\xef! FLAG \x8c\x01FLAG\x02 }\x0c"\x03[
 早桃\n　「おにいちゃん！\p　こんな人のいうこと信じちゃだめよ！@
 　　ハドウなんて、ない。\pそんなの全部、この人の空想なんだか\n　　ら！」\
 
-  FLAG J\x0c\x02"
+  
+FLAG J\x0c\x02"
 WHAT .\\Data\\Script\\TextFunc.Fob RUNF \xd6\x01 \x02
-CMD1 TextOn RUNF \x04\x02 \x025\x03\x17
+CMD1 TextOn RUNF \x04\x02 END\x03\x17
 CHOICE
 なたねの警告を受け入れて別のコースを選ぶ\n早桃の忠告を受け入れて中庭に出る\n\l0,2,
 ENDCHOICE
 
-  FLAG  \x02\x0c\x02" \xd6\x01 \x02 \x04\x02 \x025 \xd6\x01 \x02
-SCEN TextClosev\x81\x1f\xc2\x02 \x0256\xf1
+  
+FLAG  \x02\x0c\x02" \xd6\x01 \x02 \x04\x02 END \xd6\x01 \x02
+CSCE TextClosev\x81\x1f\xc2\x02 END6\xf1

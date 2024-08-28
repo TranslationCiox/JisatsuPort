@@ -1,14 +1,17 @@
 START
 )\x02\x01\xb0\x054\x01\xa4\x01
-SCEN SCEK15_001 \x06 \x02\xef! FLAG \x8c\x01FLAG\x02 \xd0\xb0\x01\x0c"\x03 
+CSCE SCEK15_001 \x06 \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 \xd0\xb0\x01\x0c"\x03 
  
 お話はこれでおしまい。@
 ゆき？@
 １週間後、ゆきは風邪薬を２００錠のんで、自殺した。@
 おしまい。これで、おしまい。\w\z
-  FLAG J\x0c\x02"
+  
+FLAG J\x0c\x02"
 WHAT .\\Data\\Script\\TextFunc.Fob RUNF \xea \x02
-CMD1 TextOn RUNF \x18\x01 \x025
+CMD1 TextOn RUNF \x18\x01 END
 FOBT .\\Data\\Script\\Bgm.Fobv\x81\x1f4\x01 \x02
-CMD1 StopCD RUNF ^\x01 \x025 \xea \x02
-SCEN TextClosev\x81\x1f\x86\x01 \x0256\xf1
+CMD1 StopCD RUNF ^\x01 END \xea \x02
+CSCE TextClosev\x81\x1f\x86\x01 END6\xf1

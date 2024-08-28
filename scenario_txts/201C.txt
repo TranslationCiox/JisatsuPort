@@ -1,10 +1,16 @@
 START
 1#\x01`B#\x01\xd8\x1d
-SCEN SCE201_001 \x06 \x02\xef! FLAG \x8c\x01FLAG\x02 \xb0I\x01\x0c"  FLAG \xc9\x0c\x02"
+CSCE SCE201_001 \x06 \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 \xb0I\x01\x0c"  
+FLAG \xc9\x0c\x02"
 FOBT .\\Data\\Script\\Bg.Fobsv\x81\x1fd \x02
-CMD2 BgAutoFadeInsv\x81\x1f\x8e \x025  FLAG \x02\x0c\x02"  \x04FLAG \x06\x0c\x02"  \x08FLAG \x01\x0c\x02"
+CMD2 BgAutoFadeInsv\x81\x1f\x8e END  
+FLAG \x02\x0c\x02"  \x04
+FLAG \x06\x0c\x02"  \x08
+FLAG \x01\x0c\x02"
 FOBT .\\Data\\Script\\Bgm.Fobv\x81\x1f\x01 \x02
-CMD1 SePlay RUNF *\x01 \x025\x03\xa0
+CMD1 SePlay RUNF *\x01 END\x03\xa0
  
 錆びたシャッターをこじ開けるように、目を開く。@
 薄く開いて、あたりを見る。@
@@ -17,10 +23,13 @@ CMD1 SePlay RUNF *\x01 \x025\x03\xa0
 拓司は思った。@
 この『白い部屋の世界』が現実なのだとしたら、それは喜ぶべき\n傾向なのだろう。\pしかし、ここが夢の世界だとしたら……それは\n妄想世界に固定されつつあるということであり……恐怖すべきこ\nとなのだ。\
 
-  FLAG F\x01\x0c\x02"
+  
+FLAG F\x01\x0c\x02"
 WHAT .\\Data\\Script\\TextFunc.Fob RUNF \xe6\x03 \x02
-CMD1 TextOn RUNF \x14\x04 \x025
-SCEN SCE201_002 0\x04 \x02\xef! FLAG \x8c\x01FLAG\x02 \xb4I\x01\x0c"\x03\x8a
+CMD1 TextOn RUNF \x14\x04 END
+CSCE SCE201_002 0\x04 \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 \xb4I\x01\x0c"\x03\x8a
  
 わからない。@
 どう思えばいいのかすらわからない。@
@@ -34,8 +43,11 @@ SCEN SCE201_002 0\x04 \x02\xef! FLAG \x8c\x01FLAG\x02 \xb4I\x01\x0c"\x03\x8a
 以前、拘束着の姿で自失状態のところを引き合わされた少女だ。@
 それにしても、似ている。\
 
-  FLAG t\x04\x0c\x02" \xe6\x03 \x02 \x14\x04 \x025
-SCEN SCE201_003 \xd6\x06 \x02\xef! FLAG \x8c\x01FLAG\x02 \xb8I\x01\x0c"\x03\x86
+  
+FLAG t\x04\x0c\x02" \xe6\x03 \x02 \x14\x04 END
+CSCE SCE201_003 \xd6\x06 \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 \xb8I\x01\x0c"\x03\x86
  
 『学校に籠城している世界』に登場した雲居なたねと、瓜二つ\nりである。\p眼鏡、肩までの黒髪、華奢な身体。\p……ただ、なにか\n印象が違う。\p目だけが違うのだ。@
 『学校に籠城している世界』の雲居なたねの目は、死んでいた。\n\pうつろで、どこにも焦点を結んでいなかった。@
@@ -44,8 +56,11 @@ SCEN SCE201_003 \xd6\x06 \x02\xef! FLAG \x8c\x01FLAG\x02 \xb8I\x01\x0c"\x03\x86
 　　ここがどこだかわかる……？」@
 \n矢継ぎ早に尋ねる少女の声を聞いて、拓司はようやく気づいた。\
 
-  FLAG \x1a\x07\x0c\x02" \xe6\x03 \x02 \x14\x04 \x025
-SCEN SCE201_004 l\t \x02\xef! FLAG \x8c\x01FLAG\x02 \xbcI\x01\x0c"\x03\x84
+  
+FLAG \x1a\x07\x0c\x02" \xe6\x03 \x02 \x14\x04 END
+CSCE SCE201_004 l\t \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 \xbcI\x01\x0c"\x03\x84
  
 拓司\n　「最初……壁の向こうから話しかけてきたのは、君だったのか\n　　？」@
 女の子\n　「ええ」@
@@ -54,8 +69,11 @@ SCEN SCE201_004 l\t \x02\xef! FLAG \x8c\x01FLAG\x02 \xbcI\x01\x0c"\x03\x84
 拓司\n　「なたね。\p雲居なたね」@
 女の子\n　「そう。\pじゃあ、私も雲居なたねよ。\p紛らわしいようだった\n　　らナタネと呼んで」\
 
-  FLAG \xb0\t\x0c\x02" \xe6\x03 \x02 \x14\x04 \x025
-SCEN SCE201_005 \xfa\x0b \x02\xef! FLAG \x8c\x01FLAG\x02 \xc0I\x01\x0c"\x03\x9e
+  
+FLAG \xb0\t\x0c\x02" \xe6\x03 \x02 \x14\x04 END
+CSCE SCE201_005 \xfa\x0b \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 \xc0I\x01\x0c"\x03\x9e
  
 　女の子は－－雲居ナタネは、やや意地悪くフフと笑った。@
 \n拓司\n　「ふざけないでくれ。\p俺は今、本気で混乱してる。\p頭がおかし\n　　くなりそうだ。\pなにがなんだかわからない。\p頼む。話してく\n　　れ。\p教授がいっていたとおり、この世界が『現実』なのか？@
@@ -64,8 +82,11 @@ SCEN SCE201_005 \xfa\x0b \x02\xef! FLAG \x8c\x01FLAG\x02 \xc0I\x01\x0c"\x03\x9e
 ナタネ\n　「そうね……どこから話したらいいのかしら」@
 \nナタネは思案顔を作って沈黙した。\pそして、ベッドに掛けられた\n鳥籠に目を留めて、いった。\
 
-  FLAG >\x0c\x0c\x02" \xe6\x03 \x02 \x14\x04 \x025
-SCEN SCE201_006 \xf0\x0e \x02\xef! FLAG \x8c\x01FLAG\x02 \xc4I\x01\x0c"\x03U
+  
+FLAG >\x0c\x0c\x02" \xe6\x03 \x02 \x14\x04 END
+CSCE SCE201_006 \xf0\x0e \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 \xc4I\x01\x0c"\x03U
  
 ナタネ\n　「この鳥は、あなたが創ったの」@
 拓司\n　「創った？」@
@@ -75,8 +96,11 @@ SCEN SCE201_006 \xf0\x0e \x02\xef! FLAG \x8c\x01FLAG\x02 \xc4I\x01\x0c"\x03U
 　　この世界に、この鳥という存在を生み出したのが、あなたな\n　　の」@
 拓司\n　「わからない。\pまったくわからない」\
 
-  FLAG 4\x0f\x0c\x02" \xe6\x03 \x02 \x14\x04 \x025
-SCEN SCE201_007 \xc2\x10 \x02\xef! FLAG \x8c\x01FLAG\x02 \xc8I\x01\x0c"\x03\x7f
+  
+FLAG 4\x0f\x0c\x02" \xe6\x03 \x02 \x14\x04 END
+CSCE SCE201_007 \xc2\x10 \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 \xc8I\x01\x0c"\x03\x7f
  
 ナタネ\n　「そうね……たとえば神様は世界を創った。\pなんだったかしら\n　　……『光あれ』？\p　そうして世界を創って、人間を創った。@
 　　そうよね？」@
@@ -89,8 +113,11 @@ SCEN SCE201_007 \xc2\x10 \x02\xef! FLAG \x8c\x01FLAG\x02 \xc8I\x01\x0c"\x03\x7f
 拓司は思わず「あっ」と叫んで、ベッドの縁を握りしめた。@
 そうしないと逆さまになったベッドからストンと落下してしまう\nと思ったのだ。\
 
-  FLAG \x06\x11\x0c\x02" \xe6\x03 \x02 \x14\x04 \x025
-SCEN SCE201_008 <\x13 \x02\xef! FLAG \x8c\x01FLAG\x02 \xccI\x01\x0c"\x03\xa5
+  
+FLAG \x06\x11\x0c\x02" \xe6\x03 \x02 \x14\x04 END
+CSCE SCE201_008 <\x13 \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 \xccI\x01\x0c"\x03\xa5
  
 ……もちろん落ちはしない。@
 それは目眩のようなもので、世界は歴然として反転などしていな\nいからだ。@
@@ -99,8 +126,11 @@ SCEN SCE201_008 <\x13 \x02\xef! FLAG \x8c\x01FLAG\x02 \xccI\x01\x0c"\x03\xa5
 いま、思考は混乱しか招かない。@
 考察は後回しだ。いまは少女の話を聞くことが先決だろう。\
 
-  FLAG \x80\x13\x0c\x02" \xe6\x03 \x02 \x14\x04 \x025
-SCEN SCE201_009 N\x16 \x02\xef! FLAG \x8c\x01FLAG\x02 \xd0I\x01\x0c"\x03n
+  
+FLAG \x80\x13\x0c\x02" \xe6\x03 \x02 \x14\x04 END
+CSCE SCE201_009 N\x16 \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 \xd0I\x01\x0c"\x03n
  
 拓司\n　「……ＯＫ。\p俺はその鳥を創った。\p神様みたいに『鳥よあれ』\n　　と願って、創った。\pそういうことだな？」@
 ナタネ\n　「『願う』か……なかなかうまい表現ね。\pそう、『創った』と\n　　いうより、『願った』のほうが近いかもしれないわね」@
@@ -109,8 +139,11 @@ SCEN SCE201_009 N\x16 \x02\xef! FLAG \x8c\x01FLAG\x02 \xd0I\x01\x0c"\x03n
 拓司\n　「俺は神様じゃないから、『願う』ことでなにかを『創る』こ\n　　となどできない」@
 ナタネ\n　「誰が決めたの？」\
 
-  FLAG \x92\x16\x0c\x02" \xe6\x03 \x02 \x14\x04 \x025
-SCEN SCE201_010 \x84\x18 \x02\xef! FLAG \x8c\x01FLAG\x02 \xd4I\x01\x0c"\x03\x8b
+  
+FLAG \x92\x16\x0c\x02" \xe6\x03 \x02 \x14\x04 END
+CSCE SCE201_010 \x84\x18 \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 \xd4I\x01\x0c"\x03\x8b
  
 拓司は絶句した。@
 誰が決めたのかなど知らない。@
@@ -122,18 +155,23 @@ SCEN SCE201_010 \x84\x18 \x02\xef! FLAG \x8c\x01FLAG\x02 \xd4I\x01\x0c"\x03\x8b
 ナタネ\n　「ゆっくり話すから、黙って最後まで聞いてね。\p質問はとりあ\n　　えず、なし。いい？」@
 拓司\n　「……ああ」\
 
-  FLAG \xc8\x18\x0c\x02" \xe6\x03 \x02 \x14\x04 \x025
-SCEN SCE201_011 .\x1b \x02\xef! FLAG \x8c\x01FLAG\x02 \xd8I\x01\x0c"\x03f
+  
+FLAG \xc8\x18\x0c\x02" \xe6\x03 \x02 \x14\x04 END
+CSCE SCE201_011 .\x1b \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 \xd8I\x01\x0c"\x03f
  
 ナタネ\n　「まず、ひとつめ\p。あなたは『創る』ことができる。@
 　　神様が光を創ったように、あなたは鳥を創ることができる。@
 　　教授はあなたの力を恐れている。\pだからあなたに、ニセモノ\n　　の認識を与えて、あなたを支配しようとしている。@
 　　あなたはかわいそうな病人で、あなたは『創る』ことなどで\n　　きない。そういうふうに信じ込ませようとして、そしてそれ\n　　は成功しつつある……いいわね？」\
 
-  FLAG r\x1b\x0c\x02" \xe6\x03 \x02 \x14\x04 \x025\x03\x0c
+  
+FLAG r\x1b\x0c\x02" \xe6\x03 \x02 \x14\x04 END\x03\x0c
 CHOICE
 もう一度聞く\n黙って続きを聞く\n\l0,2,
 ENDCHOICE
 
-  FLAG D\x1d\x0c\x02" \xe6\x03 \x02 \x14\x04 \x025 \xe6\x03 \x02
-SCEN TextClosev\x81\x1f\xba\x1d \x0256\xf1
+  
+FLAG D\x1d\x0c\x02" \xe6\x03 \x02 \x14\x04 END \xe6\x03 \x02
+CSCE TextClosev\x81\x1f\xba\x1d END6\xf1

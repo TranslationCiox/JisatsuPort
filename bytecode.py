@@ -3,15 +3,33 @@ import os
 
 patterns = [
     {
-        "pattern": [b'\x06', b'\x0b', b'\x0c', b'\x02', b'"', b'2', b'\xca\x17'], # (at the end of BMP loads)
-        "action": " #Load BMP"
+        "pattern": [b'\x06', b'\x0b', b'\x0c', b'\x02', b'"', b'2', b'\xca\x17'],
+        # (at the end of BMP loads in CG)
+        "action": "ID_CG"
     },
     {
-        "pattern": [b'\x1e', b'\x02', b'\xc4', b'2', b'\xb6\x0b', b'\x1f', b'\xfe', b'\x1e', b'\x02'], # (at the end of WAV loads)
-        "action": " #Load WAV"
+        "pattern": [b'\x06', b'\x0b', b'\x0c', b'\x02', b'"', b'2', b'\xa2\x18'],
+        # (at the end of BMP loads in BG)
+        "action": "ID_BG"
     },
     {
-        "pattern": [b'\x01', b'start', b'\xef', b'i\x01C'],  # Start the script
+        "pattern": [b'\x02', b'\xc4', b'2', b'\xb6\x0b', b'\x1f', b'\xfe', b'\x1e', b'\x02'],
+        # (at the end of WAV loads)
+        "action": "ID_WAV"
+    },
+    {
+        "pattern": [b'\x02', b'\x1f', b'\xb6\x01', b'\x1e', b'\x02', b'5'],
+        # (Used a lot in SCENARIOROOT)
+        "action": "ID_SCENARIO"
+    },
+    {
+        "pattern": [b'\02', b'\x1f', b'\xde\x02', b'\x1e', b'\x02', b'5'],
+        # (Used a lot in SCENARIOROOT)
+        "action": "FLAG_DEPENDANT"
+    },
+    {
+        "pattern": [b'\x01', b'start', b'\xef', b'i\x01C'],
+        # Start the script
         "action": "START\n"
     },
     {
@@ -20,7 +38,7 @@ patterns = [
     },
     {
         "pattern": [b'\x03', b'\x03'],  # Goes before SCE Calls
-        "action": "\r\nSCEN "
+        "action": "\r\nCSCE "
     },
     {
         "pattern": [b'\x03', b'\x04'],  # Goes before certain calls (Textbox, BGFADEIN)
@@ -40,7 +58,19 @@ patterns = [
     },
     {
         "pattern": [b'\x03', b'\x08'],  # Seems to LOAD Scenario FOB files.
-        "action": "\nFOBO "
+        "action": "\nSCEN "
+    },
+    {
+        "pattern": [b'\x03', b'\t'],  # Seems to load HEROINE and 085AC Scenario FOB files.
+        "action": "\nHERO "
+    },
+    {
+        "pattern": [b'\x03', b'\n'],  # Seems to load SCE204SEL Scenario FOB files.
+        "action": "\nS204 "
+    },
+    {
+        "pattern": [b'\x1e', b'\x02', b'5'],  # Seems to END command statements.
+        "action": " END"
     },
     {
         "pattern": [b'\x1e'],  # Likely a  delimiter (group)
@@ -55,8 +85,16 @@ patterns = [
         "action": " RUNF "
     },
     {
-        "pattern": [b'\r'], #Seems to be related to flags. Both to set, and read them.
-        "action": "FLAG"
+        "pattern": [b'\r', b',', b'\x02'], # Seems to be related to flags. Maybe to read them?
+        "action": "\nLOAD_FLAG "
+    },
+    {
+        "pattern": [b'\r'],  # Seems to be related to flags.
+        "action": "\nFLAG"
+    },
+    {
+        "pattern": [b'j'],  # Seems to indicate if a SCENARIO has a choice (flag).
+        "action": "FLAG_PRESENT"
     },
 ]
 

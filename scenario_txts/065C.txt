@@ -1,15 +1,19 @@
 START
 P\x03\x01\x90\x044\x01\xd4\x01
-SCEN SCE065_001 \x06 \x02\xef! FLAG \x8c\x01FLAG\x02 0u\x0c"\x03\x11
+CSCE SCE065_001 \x06 \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 0u\x0c"\x03\x11
  
 カンナ\n　「正解。\pつまり、重要なのはどこか、わかる？」\
 
-  FLAG J\x0c\x02"
+  
+FLAG J\x0c\x02"
 WHAT .\\Data\\Script\\TextFunc.Fob RUNF \xae \x02
-CMD1 TextOn RUNF \xdc \x025\x03 
+CMD1 TextOn RUNF \xdc END\x03 
 CHOICE
 最初の電気ショックが回避不可能だったこと\n電流が流れる前に部屋が暗くなること\n電流の痛みになれること\n\l0,3,
 ENDCHOICE
 
-  FLAG \xf8\x0c\x02" \xae \x02 \xdc \x025 \xae \x02
-SCEN TextClosev\x81\x1f\xb6\x01 \x0256\xf1
+  
+FLAG \xf8\x0c\x02" \xae \x02 \xdc END \xae \x02
+CSCE TextClosev\x81\x1f\xb6\x01 END6\xf1

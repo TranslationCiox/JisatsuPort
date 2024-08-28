@@ -1,15 +1,21 @@
 START
-p*\x01`B#\x01\x1a#  FLAG \x0c\x01\x0c\x02"
+p*\x01`B#\x01\x1a#  
+FLAG \x0c\x01\x0c\x02"
 FOBT .\\Data\\Script\\Bgm.Fobv\x81\x1f  \x02
-CMD1 PlayCD RUNF J \x025
-SCEN SCE234_001 f \x02\xef! FLAG \x8c\x01FLAG\x02 @}\x01\x0c"\x03\x11
+CMD1 PlayCD RUNF J END
+CSCE SCE234_001 f \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 @}\x01\x0c"\x03\x11
  
 \n\n\n\n\n\n\n\n\n\n　　　　　　　　　　　　『１５日目』\
 
-  FLAG \xaa\x0c\x02"
+  
+FLAG \xaa\x0c\x02"
 WHAT .\\Data\\Script\\TextFunc.Fob RUNF \x0e\x01 \x02
-CMD1 TextOn RUNF <\x01 \x025
-SCEN SCE234_002 X\x01 \x02\xef! FLAG \x8c\x01FLAG\x02 D}\x01\x0c"\x03\x7f
+CMD1 TextOn RUNF <\x01 END
+CSCE SCE234_002 X\x01 \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 D}\x01\x0c"\x03\x7f
  
 拓司の予想は、まったく予期せぬ形でうち砕かれた。@
 /*■CG45　表示（クロスフェード）*/\a7,-2,-2,0,\a0,44,2,0,\a6,-2,0,0,\n朝食の配給に現れた御堂は、右目に眼帯を付けていた。@
@@ -22,8 +28,11 @@ SCEN SCE234_002 X\x01 \x02\xef! FLAG \x8c\x01FLAG\x02 D}\x01\x0c"\x03\x7f
 \n拓司はハッとして紅葉を見た。@
 その視線から逃れるように、紅葉は俯いた。\
 
-  FLAG \x9c\x01\x0c\x02" \x0e\x01 \x02 <\x01 \x025
-SCEN SCE234_003 \xd2\x03 \x02\xef! FLAG \x8c\x01FLAG\x02 H}\x01\x0c"\x03V
+  
+FLAG \x9c\x01\x0c\x02" \x0e\x01 \x02 <\x01 END
+CSCE SCE234_003 \xd2\x03 \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 H}\x01\x0c"\x03V
  
 御堂\n　「この女はな、自分の身の安全のために、お前を売ったんだ」@
 拓司\n　「ウソだ」@
@@ -34,8 +43,11 @@ SCEN SCE234_003 \xd2\x03 \x02\xef! FLAG \x8c\x01FLAG\x02 H}\x01\x0c"\x03V
 御堂\n　「じゃあ、本人に聞いてみろよ」@
 拓司\n　「……」\
 
-  FLAG \x16\x04\x0c\x02" \x0e\x01 \x02 <\x01 \x025
-SCEN SCE234_004 \xa8\x05 \x02\xef! FLAG \x8c\x01FLAG\x02 L}\x01\x0c"\x03`
+  
+FLAG \x16\x04\x0c\x02" \x0e\x01 \x02 <\x01 END
+CSCE SCE234_004 \xa8\x05 \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 L}\x01\x0c"\x03`
  
 紅葉は何もいわなかった。@
 ただ黙っている。@
@@ -46,8 +58,11 @@ SCEN SCE234_004 \xa8\x05 \x02\xef! FLAG \x8c\x01FLAG\x02 L}\x01\x0c"\x03`
 拓司\n　「……」@
 \nははは、と御堂が笑った。\p錦城も、さも愉快そうに笑っている。\
 
-  FLAG \xec\x05\x0c\x02" \x0e\x01 \x02 <\x01 \x025
-SCEN SCE234_005 \xa6\x07 \x02\xef! FLAG \x8c\x01FLAG\x02 P}\x01\x0c"\x03\x8e
+  
+FLAG \xec\x05\x0c\x02" \x0e\x01 \x02 <\x01 END
+CSCE SCE234_005 \xa6\x07 \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 P}\x01\x0c"\x03\x8e
  
 御堂\n　「お前、よっぽど人望ないんだなあ。\p哀れだぜ。@
 　　……まあ、安心しろ。\pお前を処分したあとで、神凪も罰して@
@@ -59,9 +74,12 @@ SCEN SCE234_005 \xa6\x07 \x02\xef! FLAG \x8c\x01FLAG\x02 P}\x01\x0c"\x03\x8e
 御堂\n　「お前が言えた義理かよ。\pなあ、虎菱？」@
 \nつかみかかってくる紅葉を一撃で壁まではじき飛ばし、御堂が叫\nんだ。\
 
-  FLAG \xea\x07\x0c\x02" \x0e\x01 \x02 <\x01 \x025   \x02
-CMD1 StopCD RUNF h\n \x025
-SCEN SCE234_006 \x84\n \x02\xef! FLAG \x8c\x01FLAG\x02 T}\x01\x0c"\x03\x95
+  
+FLAG \xea\x07\x0c\x02" \x0e\x01 \x02 <\x01 END   \x02
+CMD1 StopCD RUNF h\n END
+CSCE SCE234_006 \x84\n \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 T}\x01\x0c"\x03\x95
  
 御堂\n　「っつーわけで、楽しい処刑の始まりだ！」@
 /*▲BGM　Track10　再生*/\a2,-1,10,1,/*■CG46　表示（クロスフェード）*/\a7,-2,-2,0,\a0,45,2,0,\a6,-2,0,0,\n鳩尾に、狙い澄ました一発がきた。\p予想していたにもかかわらず\n避けられなかった。\p拓司は、もうそれだけで立っていることがで\nきなかった。@
@@ -72,8 +90,11 @@ SCEN SCE234_006 \x84\n \x02\xef! FLAG \x8c\x01FLAG\x02 T}\x01\x0c"\x03\x95
 拓司の心をどす黒い絶望が覆っていた。@
 御堂に殺されるかもしれない。\pしかも信じていた紅葉に裏切られ\nて……。\
 
-  FLAG \xc8\n\x0c\x02" \x0e\x01 \x02 <\x01 \x025
-SCEN SCE234_007 V\r \x02\xef! FLAG \x8c\x01FLAG\x02 X}\x01\x0c"\x03\xba
+  
+FLAG \xc8\n\x0c\x02" \x0e\x01 \x02 <\x01 END
+CSCE SCE234_007 V\r \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 X}\x01\x0c"\x03\xba
  
 ものすごい衝撃が鼻先を直撃し、目の前に火花が散った。@
 そのままよろけて手を伸ばすと、バシャン、と鋭い音がした。@
@@ -93,8 +114,11 @@ SCEN SCE234_007 V\r \x02\xef! FLAG \x8c\x01FLAG\x02 X}\x01\x0c"\x03\xba
 膝を前から蹴られる。@
 /*■黒　表示（ノンエフェクト）*/\a7,-1,-1,0,\a0,200,1,0,\a6,0,0,0,床に倒れる。\
 
-  FLAG \x9a\r\x0c\x02" \x0e\x01 \x02 <\x01 \x025
-SCEN SCE234_008 \xbc\x10 \x02\xef! FLAG \x8c\x01FLAG\x02 \\}\x01\x0c"\x03\x94
+  
+FLAG \x9a\r\x0c\x02" \x0e\x01 \x02 <\x01 END
+CSCE SCE234_008 \xbc\x10 \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 \\}\x01\x0c"\x03\x94
  
 　興奮が胸を充たし、あふれ、喉へと込み上がってきた。@
 　俺は自分が雄々しく叫ぶのだと思った。\p咆哮して……煮えたぎ\nった興奮を解き放って御堂に立ち向かうのだと思った。\pしかしそ\nんな叫び声は、いつまでたっても形にならなかった。@
@@ -103,8 +127,11 @@ SCEN SCE234_008 \xbc\x10 \x02\xef! FLAG \x8c\x01FLAG\x02 \\}\x01\x0c"\x03\x94
 \n意味などなく、拓司は叫んだ。\p叫んで恐怖を胸の中から放出しな\nいと、爆発してしまいそうだった。\p気が狂いそうだった。@
 御堂の残忍な笑い顔が、ぐいっとせり上がって目の前に飛び出し\nた。\
 
-  FLAG \x11\x0c\x02" \x0e\x01 \x02 <\x01 \x025
-SCEN SCE234_009 \x8a\x13 \x02\xef! FLAG \x8c\x01FLAG\x02 `}\x01\x0c"\x03\xe1
+  
+FLAG \x11\x0c\x02" \x0e\x01 \x02 <\x01 END
+CSCE SCE234_009 \x8a\x13 \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 `}\x01\x0c"\x03\xe1
  
 御堂\n　「おい虎菱ィ！」@
 拓司\n　「わああああああああああああああああああああああああっ！」\n\p御堂\n　「おい虎菱ィ！」@
@@ -114,10 +141,14 @@ SCEN SCE234_009 \x8a\x13 \x02\xef! FLAG \x8c\x01FLAG\x02 `}\x01\x0c"\x03\xe1
 /*■黒　表示（ノンエフェクト）*/\a7,-1,-1,0,\a0,200,1,0,\a6,0,0,0,/*■白　表示（ノンエフェクト)*/\a7,-1,-1,0,\a0,201,1,0,\a6,0,0,0,/*■CG46 表示（ノンエフェクト）*/\a7,-1,-1,0,\a0,45,1,0,\a6,0,0,0,\n御堂\n　「虎菱！\p　お前も殺してやる！\p　電波子みたいにぶっ殺して窓\n　　から捨ててやるぜ！」@
 \n叫んで、御堂は拓司の腕を逆に取った。\
 
-  FLAG \xce\x13\x0c\x02" \x0e\x01 \x02 <\x01 \x025  FLAG \xcb\x0c\x02"
+  
+FLAG \xce\x13\x0c\x02" \x0e\x01 \x02 <\x01 END  
+FLAG \xcb\x0c\x02"
 FOBT .\\Data\\Script\\Bg.Fobsv\x81\x1f\xa6\x17 \x02
-CMD1 BgOnsv\x81\x1f\xd0\x17 \x025
-SCEN SCE234_010 \xec\x17 \x02\xef! FLAG \x8c\x01FLAG\x02 d}\x01\x0c"\x03{
+CMD1 BgOnsv\x81\x1f\xd0\x17 END
+CSCE SCE234_010 \xec\x17 \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 d}\x01\x0c"\x03{
  
 御堂\n　「骨折るぞ！\p　骨折るぞ！\p　ホネオルホネオルゾホネオルゾゾ\n　　ゾゾゾ！」@
 \n御堂は逆さにとった拓司の腕を、くいっと軽くひねった。@
@@ -126,8 +157,11 @@ SCEN SCE234_010 \xec\x17 \x02\xef! FLAG \x8c\x01FLAG\x02 d}\x01\x0c"\x03{
 プライドも何もなかった。\p拓司は甲高い悲鳴を上げて、芋虫のよ\nうにのたうち回った。@
 \n拓司\n　「わわわわわわわわわわわわわわわわわわ！！」\
 
-  FLAG 0\x18\x0c\x02" \x0e\x01 \x02 <\x01 \x025
-SCEN SCE234_011 V\x1a \x02\xef! FLAG \x8c\x01FLAG\x02 h}\x01\x0c"\x03]
+  
+FLAG 0\x18\x0c\x02" \x0e\x01 \x02 <\x01 END
+CSCE SCE234_011 V\x1a \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 h}\x01\x0c"\x03]
  
 御堂\n　「もう一本もイクか、オイ？」@
 錦城\n　「やって！」@
@@ -135,8 +169,11 @@ SCEN SCE234_011 V\x1a \x02\xef! FLAG \x8c\x01FLAG\x02 h}\x01\x0c"\x03]
 \n錦城\n　「やっちゃいないなさいいいいやっておいたほがいいわこの子\n　　は危険分子やっちゃいなさい御堂くんもういっぽんもおって\n　　しまいなさいあはははははは！」@
 拓司\n　「わわわわわわわわわわわわわわわわわわ！！」\
 
-  FLAG \x9a\x1a\x0c\x02" \x0e\x01 \x02 <\x01 \x025
-SCEN SCE234_012 H\x1c \x02\xef! FLAG \x8c\x01FLAG\x02 l}\x01\x0c"\x03\x84
+  
+FLAG \x9a\x1a\x0c\x02" \x0e\x01 \x02 <\x01 END
+CSCE SCE234_012 H\x1c \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 l}\x01\x0c"\x03\x84
  
 涙と鼻水がとめどなくあふれ出てきた。@
 情けなかった。@
@@ -153,8 +190,11 @@ SCEN SCE234_012 H\x1c \x02\xef! FLAG \x8c\x01FLAG\x02 l}\x01\x0c"\x03\x84
 電流のような痛みが全身を奔り、それが悲鳴となって口から迸る。\n@
 う・ああ・あ・あ・あ・あ・あ・あ・あ・あ・あ・あ・あ・あ・あ\nああああああああ！\
 
-  FLAG \x8c\x1c\x0c\x02" \x0e\x01 \x02 <\x01 \x025
-SCEN SCE234_013 \xd6\x1e \x02\xef! FLAG \x8c\x01FLAG\x02 p}\x01\x0c"\x03\xa8
+  
+FLAG \x8c\x1c\x0c\x02" \x0e\x01 \x02 <\x01 END
+CSCE SCE234_013 \xd6\x1e \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 p}\x01\x0c"\x03\xa8
  
 もう一本の手がギシリと歪んだ。@
 \n拓司\n　「これは夢だ！」@
@@ -163,8 +203,11 @@ SCEN SCE234_013 \xd6\x1e \x02\xef! FLAG \x8c\x01FLAG\x02 p}\x01\x0c"\x03\xa8
 \n拓司\n　「こんなのは夢だ！\p　眠れ俺眠れ俺あるいは目覚めろ俺目覚め\n　　ろどちらでもいい！\p　もういやだ！\p　殺される！@
 　　うわあああああああああああああああああああああああああ\n　　あああああああああああああああああああああああああああ\n　　あああああああああああああああああああああああああああ\n　　あああああああああああああああああああああああああああ\n　　あああああああああああああああああああああああああああ\n　　あああああああああああああああああああああああああああ\n　　あああああああああああああああああああああああ！」\
 
-  FLAG \x1a\x1f\x0c\x02" \x0e\x01 \x02 <\x01 \x025 \x0e\x01 \x02
-CMD2 TextWindowOffv\x81\x1f" \x025  FLAG \xca\x0c\x02" \xa6\x17 \x02
-CMD2 BgNormalFadeIn RUNF J" \x025   \x02 h\n \x025  FLAG \xc8\x0c\x02" \xa6\x17 \x02 \xd0\x17 \x025 \x0e\x01 \x02
-LOAD TextWindowOnDirect RUNF \xc8" \x025 \x0e\x01 \x02
-SCEN TextClosev\x81\x1f\xfc" \x0256\xf1
+  
+FLAG \x1a\x1f\x0c\x02" \x0e\x01 \x02 <\x01 END \x0e\x01 \x02
+CMD2 TextWindowOffv\x81\x1f" END  
+FLAG \xca\x0c\x02" \xa6\x17 \x02
+CMD2 BgNormalFadeIn RUNF J" END   \x02 h\n END  
+FLAG \xc8\x0c\x02" \xa6\x17 \x02 \xd0\x17 END \x0e\x01 \x02
+LOAD TextWindowOnDirect RUNF \xc8" END \x0e\x01 \x02
+CSCE TextClosev\x81\x1f\xfc" END6\xf1

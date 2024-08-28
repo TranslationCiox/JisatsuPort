@@ -1,20 +1,27 @@
 START
-\xb3\x18\x01`B#\x01v\x14  FLAG \xc8\x0c\x02"
+\xb3\x18\x01`B#\x01v\x14  
+FLAG \xc8\x0c\x02"
 FOBT .\\Data\\Script\\Bg.Fobsv\x81\x1f  \x02
-CMD2 BgAutoFadeInsv\x81\x1fJ \x025  FLAG \x08\x01\x0c\x02"
+CMD2 BgAutoFadeInsv\x81\x1fJ END  
+FLAG \x08\x01\x0c\x02"
 FOBT .\\Data\\Script\\Bgm.Fobv\x81\x1f\x88 \x02
-CMD1 PlayCD RUNF \xb2 \x025
-SCEN SCEK10_001 \xce \x02\xef! FLAG \x8c\x01FLAG\x02 \xe0\xa5\x01\x0c"\x03q
+CMD1 PlayCD RUNF \xb2 END
+CSCE SCEK10_001 \xce \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 \xe0\xa5\x01\x0c"\x03q
  
 　ゆきが物心ついたときから、父親はすでに若草家の絶対君主だ\nったという。@
 ゆきの家にはたくさんのルールがあった。@
 そのルールの内容を完全に把握しているのは、ルールを作った父\n親ただひとりだった。@
 つまり、父親が望めば（お酒を飲んだときとか、夕食の味が薄す\nぎたときとか、ひいきの野球チームが負けたときとか、天気が悪\nかったときとかね）\nルールはいつでも『破られた』ことになった。@
 父親は、ルールを破った罪で、ゆきの母親を容赦なく罰した。\w\z
-  FLAG \x12\x01\x0c\x02"
+  
+FLAG \x12\x01\x0c\x02"
 WHAT .\\Data\\Script\\TextFunc.Fob RUNF \xf6\x02 \x02
-CMD1 TextOn RUNF $\x03 \x025
-SCEN SCEK10_002 @\x03 \x02\xef! FLAG \x8c\x01FLAG\x02 t\xa7\x01\x0c"\x03\x82
+CMD1 TextOn RUNF $\x03 END
+CSCE SCEK10_002 @\x03 \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 t\xa7\x01\x0c"\x03\x82
  
 「ひざまづけ」@
 と父親はいって、母親を犬のような格好でよつんばいにさせた。@
@@ -24,36 +31,51 @@ SCEN SCEK10_002 @\x03 \x02\xef! FLAG \x8c\x01FLAG\x02 t\xa7\x01\x0c"\x03\x82
 「よく見ておくんだぞ、ゆき」と父親はいった。@
 「お前もパパに逆らったら、こうなるんだからな」@
 ゆきは怖くて仕方がなかったけれど、黙って見ているしかなかっ\nた。\w\z
-  FLAG \x84\x03\x0c\x02" \xf6\x02 \x02 $\x03 \x025
-SCEN SCEK10_003 \xc6\x05 \x02\xef! FLAG \x8c\x01FLAG\x02 x\xa7\x01\x0c"\x03*
+  
+FLAG \x84\x03\x0c\x02" \xf6\x02 \x02 $\x03 END
+CSCE SCEK10_003 \xc6\x05 \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 x\xa7\x01\x0c"\x03*
  
 　懲罰は、もっと単純に、げんこつや平手で下されることも多か\nった。@
 母親は、歯を食いしばって耐えていた。@
 そして父親がいないところで、声を押し殺して泣いた。\w\z
-  FLAG \n\x06\x0c\x02" \xf6\x02 \x02 $\x03 \x025
-SCEN SCEK10_004 \xec\x06 \x02\xef! FLAG \x8c\x01FLAG\x02 |\xa7\x01\x0c"\x03E
+  
+FLAG \n\x06\x0c\x02" \xf6\x02 \x02 $\x03 END
+CSCE SCEK10_004 \xec\x06 \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 |\xa7\x01\x0c"\x03E
  
 ゆきはある日、勇気を振り絞って母親に\n「ここを出て、どこかへ逃げよう」と申し出た。@
 母親がかわいそうでならなかったし、なによりも懲罰を見せられ\nることに、自分がもう耐えられなかった。@
 「そうね」と母親はいった。@
 「明日、ゆきちゃんと一緒にどこかに行きましょうね」\w\z
-  FLAG 0\x07\x0c\x02" \xf6\x02 \x02 $\x03 \x025
-SCEN SCEK10_005 ~\x08 \x02\xef! FLAG \x8c\x01FLAG\x02 \x80\xa7\x01\x0c"\x03i
+  
+FLAG 0\x07\x0c\x02" \xf6\x02 \x02 $\x03 END
+CSCE SCEK10_005 ~\x08 \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 \x80\xa7\x01\x0c"\x03i
  
 　その晩、ゆきは大切な物をリュックサックにひとまとめにして、\n一晩中暗闇のなかで息を潜めて待った。@
 日が昇ったころ、母親がこっそり部屋にやってくるのだろうと思\nっていた。@
 そして２人は、父親の手の届かない、どこか遠い場所へと去って\nゆくのだ。@
 　しかし母親はその晩、いつまで待ってもゆきの部屋には現れな\nかった。@
 翌朝、何事もなかったように台所で朝食を作る母親の姿を見て、\nゆきは深く傷つき、落胆した。\w\z
-  FLAG \xc2\x08\x0c\x02" \xf6\x02 \x02 $\x03 \x025
-SCEN SCEK10_006 \xa0\n \x02\xef! FLAG \x8c\x01FLAG\x02 \x84\xa7\x01\x0c"\x03v
+  
+FLAG \xc2\x08\x0c\x02" \xf6\x02 \x02 $\x03 END
+CSCE SCEK10_006 \xa0\n \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 \x84\xa7\x01\x0c"\x03v
  
 　その後、幾度となく繰り返されることとなったそうした落胆を通\nじて、ゆきはようやく、母親には逃げる気などないということを\n思い知った。@
 ゆきは最初、母親が何を考えているのかまったく理解できなかっ\nた（お話の中では、主人公は意地悪な継母の元を飛び出して、最\n後は幸福を掴むと決まっていたから）。@
 なにか呪われた秘密のようなものが、母親と父親の間には隠され\nているのではないかとさえ考えた。@
 しかしそのうち、事態はそれほど複雑ではないということがわか\nってきた。\w\z
-  FLAG \xe4\n\x0c\x02" \xf6\x02 \x02 $\x03 \x025
-SCEN SCEK10_007 \xf6\x0c \x02\xef! FLAG \x8c\x01FLAG\x02 \x88\xa7\x01\x0c"\x03\xcd
+  
+FLAG \xe4\n\x0c\x02" \xf6\x02 \x02 $\x03 END
+CSCE SCEK10_007 \xf6\x0c \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 \x88\xa7\x01\x0c"\x03\xcd
  
 　ただ単純に、母親は諦めてしまっていたのだ。@
 母親は、すべての物語はそもそもの初めからすでに起こるべく決\n定されていたと考えているようだった。@
@@ -66,8 +88,11 @@ SCEN SCEK10_007 \xf6\x0c \x02\xef! FLAG \x8c\x01FLAG\x02 \x88\xa7\x01\x0c"\x03\x
 人生が加える理不尽な打擲にただ耐えるだけの大人になってしま\nうのではないか？@
 一度そう考えると、もう逃げることができなくなっていた。@
 ゆきは、脅迫神経症的に、大人になることを恐れるようになって\nいった……。\w\z
-  FLAG :\r\x0c\x02" \xf6\x02 \x02 $\x03 \x025
-SCEN SCEK10_008 \xa8\x10 \x02\xef! FLAG \x8c\x01FLAG\x02 \x8c\xa7\x01\x0c"\x03x
+  
+FLAG :\r\x0c\x02" \xf6\x02 \x02 $\x03 END
+CSCE SCEK10_008 \xa8\x10 \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 \x8c\xa7\x01\x0c"\x03x
  
 　恐怖が、ゆきの背後からぐいぐいと迫ってきていた。@
 月日は容赦なく流れ、ゆきはどんどん大人になっていった。@
@@ -77,12 +102,16 @@ SCEN SCEK10_008 \xa8\x10 \x02\xef! FLAG \x8c\x01FLAG\x02 \x8c\xa7\x01\x0c"\x03x
 恐怖から逃れるには、そうするのが一番確実だと考えた。@
 ゆきは台所から包丁を持ち出して部屋に戻って、喉を突こうとし\nた。@
 でも、できなかった（もちろん、怖かったからよ）。\w\z
-  FLAG \xec\x10\x0c\x02" \xf6\x02 \x02 $\x03 \x025
-SCEN SCEK10_009 \x06\x13 \x02\xef! FLAG \x8c\x01FLAG\x02 \x90\xa7\x01\x0c"\x032
+  
+FLAG \xec\x10\x0c\x02" \xf6\x02 \x02 $\x03 END
+CSCE SCEK10_009 \x06\x13 \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 \x90\xa7\x01\x0c"\x032
  
 　ゆきは人生を終わらせるきっかけを探し続けた。@
 入学したとき。\p初潮を迎えたとき。@
 そしてその日、７月２７日、誕生日。@
 \nでもゆきは死ぬことができなかった（もちろん、怖かったからよ）\n\w\z
-  FLAG J\x13\x0c\x02" \xf6\x02 \x02 $\x03 \x025 \xf6\x02 \x02
-SCEN TextClosev\x81\x1fX\x14 \x0256\xf1
+  
+FLAG J\x13\x0c\x02" \xf6\x02 \x02 $\x03 END \xf6\x02 \x02
+CSCE TextClosev\x81\x1fX\x14 END6\xf1

@@ -1,19 +1,26 @@
 START
-B\n\x01`B#\x01\xaa\x07  FLAG \xc8\x0c\x02"
+B\n\x01`B#\x01\xaa\x07  
+FLAG \xc8\x0c\x02"
 FOBT .\\Data\\Script\\Bg.Fobsv\x81\x1f  \x02
-CMD2 BgAutoFadeInsv\x81\x1fJ \x025  FLAG \x08\x01\x0c\x02"
+CMD2 BgAutoFadeInsv\x81\x1fJ END  
+FLAG \x08\x01\x0c\x02"
 FOBT .\\Data\\Script\\Bgm.Fobv\x81\x1f\x88 \x02
-CMD1 PlayCD RUNF \xb2 \x025
-SCEN SCEK04_001 \xce \x02\xef! FLAG \x8c\x01FLAG\x02 X\xa6\x01\x0c"\x03\\
+CMD1 PlayCD RUNF \xb2 END
+CSCE SCEK04_001 \xce \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 X\xa6\x01\x0c"\x03\\
  
 　自分の道を行くつもりであれば、周囲との軋轢が産まれるのは\nやむなしと……私は考えてきた。@
 だから、ゆきのやりかたは、卑怯な妥協にしか思えなかった。@
 多分、嫉妬していたのだと思う。\n自分と同じメンタリティを持ちながらも周囲とうまくやっていけ\nているゆきが、羨ましかったのだろう。@
 そう考えないと、私がとったその後の行動を、うまく説明するこ\nとができない。\w\z
-  FLAG \x12\x01\x0c\x02"
+  
+FLAG \x12\x01\x0c\x02"
 WHAT .\\Data\\Script\\TextFunc.Fob RUNF \xa2\x02 \x02
-CMD1 TextOn RUNF \xd0\x02 \x025
-SCEN SCEK04_002 \xec\x02 \x02\xef! FLAG \x8c\x01FLAG\x02 \\\xa6\x01\x0c"\x03\x96
+CMD1 TextOn RUNF \xd0\x02 END
+CSCE SCEK04_002 \xec\x02 \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 \\\xa6\x01\x0c"\x03\x96
  
 　私はそれから、できる限りの愛嬌と親切、そして嫌われ者の哀\nれさを投入して、ゆきの信頼を勝ち取ろうと努力した。@
 『いい子』を演じ続けてきたゆきは、ストレスで爆発寸前だった\nのだろう。@
@@ -22,12 +29,16 @@ SCEN SCEK04_002 \xec\x02 \x02\xef! FLAG \x8c\x01FLAG\x02 \\\xa6\x01\x0c"\x03\x96
 ゆきは、懺悔室で罪を告白する罪人で、私はそれに赦しを与える\n神父だった。\pけれども私は赦さなかった。@
 信念に対する背信行為を犯したゆきに、罰を与えたのだった。@
 ゆきが完全に寄り掛かってきたころを見計らって、私は計画を最\n終段階に進めた。\w\z
-  FLAG 0\x03\x0c\x02" \xa2\x02 \x02 \xd0\x02 \x025
-SCEN SCEK04_003 \xc2\x05 \x02\xef! FLAG \x8c\x01FLAG\x02 `\xa6\x01\x0c"\x03P
+  
+FLAG 0\x03\x0c\x02" \xa2\x02 \x02 \xd0\x02 END
+CSCE SCEK04_003 \xc2\x05 \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 `\xa6\x01\x0c"\x03P
  
 ゆきの秘密をあらいざらい書き上げて、廊下に張り出したのだ。@
 \nそんな怪文書を丸々信じるほど学校の連中はバカではなかったし、\nゆきがそれまで築いてきた信頼も脆弱ではなかった。@
 そんなことはわかっていた。@
 私は、ゆきの地位にダメージを与えようと思ったわけではなかっ\nた。\pゆきの心を破壊してやろうと思ったのだ。\w\z
-  FLAG \x06\x06\x0c\x02" \xa2\x02 \x02 \xd0\x02 \x025 \xa2\x02 \x02
-SCEN TextClosev\x81\x1f\x8c\x07 \x0256\xf1
+  
+FLAG \x06\x06\x0c\x02" \xa2\x02 \x02 \xd0\x02 END \xa2\x02 \x02
+CSCE TextClosev\x81\x1f\x8c\x07 END6\xf1

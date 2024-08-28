@@ -1,8 +1,11 @@
 START
-\x07\x0e\x01`B#\x01X\x0b  FLAG \x08\x01\x0c\x02"
+\x07\x0e\x01`B#\x01X\x0b  
+FLAG \x08\x01\x0c\x02"
 FOBT .\\Data\\Script\\Bgm.Fobv\x81\x1f  \x02
-CMD1 PlayCD RUNF J \x025
-SCEN SCE038_001 f \x02\xef! FLAG \x8c\x01FLAG\x02 K\x0c"\x03a
+CMD1 PlayCD RUNF J END
+CSCE SCE038_001 f \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 K\x0c"\x03a
  
 話題が奈落へと転がり始めたことを悟った拓司は、慌てて話題を\n転じた。@
 \n拓司\n　「おやじから、夏の旅行の話って、聞いてるか？」@
@@ -12,10 +15,13 @@ SCEN SCE038_001 f \x02\xef! FLAG \x8c\x01FLAG\x02 K\x0c"\x03a
 無表情だったが、それが仮面にすぎないことは、拓司にもすぐに\nわかった。@
 やがて早桃がポツリといった。\
 
-  FLAG \xaa\x0c\x02"
+  
+FLAG \xaa\x0c\x02"
 WHAT .\\Data\\Script\\TextFunc.Fob RUNF N\x02 \x02
-CMD1 TextOn RUNF |\x02 \x025
-SCEN SCE038_002 \x98\x02 \x02\xef! FLAG \x8c\x01FLAG\x02 \x04K\x0c"\x03b
+CMD1 TextOn RUNF |\x02 END
+CSCE SCE038_002 \x98\x02 \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 \x04K\x0c"\x03b
  
 早桃\n　「……ホント？」@
 拓司\n　「ああ。\pでも香港って言われてもなあ。@
@@ -26,8 +32,11 @@ SCEN SCE038_002 \x98\x02 \x02\xef! FLAG \x8c\x01FLAG\x02 \x04K\x0c"\x03b
 　　あれ着てマラソンでもしたら、なんだか強くなりそうな気が\n　　する」@
 \n　早桃の顔に、ようやく柔らかい笑顔が戻った。\
 
-  FLAG \xdc\x02\x0c\x02" N\x02 \x02 |\x02 \x025
-SCEN SCE038_003 \x9e\x04 \x02\xef! FLAG \x8c\x01FLAG\x02 \x08K\x0c"\x03L
+  
+FLAG \xdc\x02\x0c\x02" N\x02 \x02 |\x02 END
+CSCE SCE038_003 \x9e\x04 \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 \x08K\x0c"\x03L
  
 早桃\n　「おにいちゃん、カンフー映画好きだもんね」@
 拓司\n　「まあな」@
@@ -38,8 +47,11 @@ SCEN SCE038_003 \x9e\x04 \x02\xef! FLAG \x8c\x01FLAG\x02 \x08K\x0c"\x03L
 拓司\n　「カンフー……カンフーと……@
 　　あと、香港といえばブランド品の買い物だな」\
 
-  FLAG \xe2\x04\x0c\x02" N\x02 \x02 |\x02 \x025
-SCEN SCE038_004 L\x06 \x02\xef! FLAG \x8c\x01FLAG\x02 \x0cK\x0c"\x03P
+  
+FLAG \xe2\x04\x0c\x02" N\x02 \x02 |\x02 END
+CSCE SCE038_004 L\x06 \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 \x0cK\x0c"\x03P
  
 早桃\n　「うん」@
 拓司\n　「しかし、おふくろはいいだろうけど、早桃はなあ」@
@@ -48,8 +60,11 @@ SCEN SCE038_004 L\x06 \x02\xef! FLAG \x8c\x01FLAG\x02 \x0cK\x0c"\x03P
 \n　そう笑っていった拓司だったが、ふと横を見やって、早桃が真\n剣な顔で自分を見つめているのに気がつき、はっと息を呑んだ。@
 \n拓司\n　「……？」\
 
-  FLAG \x90\x06\x0c\x02" N\x02 \x02 |\x02 \x025
-SCEN SCE038_005 \n\x08 \x02\xef! FLAG \x8c\x01FLAG\x02 \x10K\x0c"\x03H
+  
+FLAG \x90\x06\x0c\x02" N\x02 \x02 |\x02 END
+CSCE SCE038_005 \n\x08 \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 \x10K\x0c"\x03H
  
 早桃\n　「……わかってないんだね、おにいちゃん」@
 拓司\n　「わかってない？　@
@@ -59,8 +74,11 @@ SCEN SCE038_005 \n\x08 \x02\xef! FLAG \x8c\x01FLAG\x02 \x10K\x0c"\x03H
 早桃\n　「憧れじゃないの」@
 拓司\n　「……？」\
 
-  FLAG N\x08\x0c\x02" N\x02 \x02 |\x02 \x025
-SCEN SCE038_006 \xa8\t \x02\xef! FLAG \x8c\x01FLAG\x02 \x14K\x0c"\x03B
+  
+FLAG N\x08\x0c\x02" N\x02 \x02 |\x02 END
+CSCE SCE038_006 \xa8\t \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 \x14K\x0c"\x03B
  
 早桃\n　「憧れとか、そんなぼんやりしたものじゃないの。@
 　　もっとはっきりした……@
@@ -69,5 +87,6 @@ SCEN SCE038_006 \xa8\t \x02\xef! FLAG \x8c\x01FLAG\x02 \x14K\x0c"\x03B
 　　おにいちゃんが知らない早桃が、早桃のなかにはいるの」@
 拓司\n　「……」\
 
-  FLAG \xec\t\x0c\x02" N\x02 \x02 |\x02 \x025 N\x02 \x02
-SCEN TextClosev\x81\x1f:\x0b \x0256\xf1
+  
+FLAG \xec\t\x0c\x02" N\x02 \x02 |\x02 END N\x02 \x02
+CSCE TextClosev\x81\x1f:\x0b END6\xf1

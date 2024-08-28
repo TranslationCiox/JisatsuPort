@@ -1,6 +1,8 @@
 START
 *\x03\x01\xb0\x044\x01D\x02
-SCEN SCE017_001 \x06 \x02\xef! FLAG \x8c\x01FLAG\x02 0*\x0c"\x03$
+CSCE SCE017_001 \x06 \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 0*\x0c"\x03$
  
 拓司\n　「……」@
 紅葉\n　「……」@
@@ -9,12 +11,16 @@ SCEN SCE017_001 \x06 \x02\xef! FLAG \x8c\x01FLAG\x02 0*\x0c"\x03$
 拓司\n　「……」@
 紅葉\n　「……」@
 拓司\n　「……」\w\z
-  FLAG J\x0c\x02"
+  
+FLAG J\x0c\x02"
 WHAT .\\Data\\Script\\TextFunc.Fob RUNF \xfa \x02
-CMD1 TextOn RUNF (\x01 \x025
-SCEN SCE017_002 D\x01 \x02\xef! FLAG \x8c\x01FLAG\x02 4*\x0c"\x03\x16
+CMD1 TextOn RUNF (\x01 END
+CSCE SCE017_002 D\x01 \x02\xef! 
+FLAG \x8c\x01
+FLAG\x02 4*\x0c"\x03\x16
  
 紅葉\n　「……生理？」@
 拓司\n　「お前なあ、もうちょっと女らしい冗談言えよ」\w\z
-  FLAG \x88\x01\x0c\x02" \xfa \x02 (\x01 \x025 \xfa \x02
-SCEN TextClosev\x81\x1f&\x02 \x0256\xf1
+  
+FLAG \x88\x01\x0c\x02" \xfa \x02 (\x01 END \xfa \x02
+CSCE TextClosev\x81\x1f&\x02 END6\xf1
