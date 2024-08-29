@@ -1,15 +1,22 @@
 START_SCRIPT
-\x0b\x08\x01`B#\x01h\x06
-INIT_TEXT SCE006_001 \x06 SCE_TEXT TEXT1 \x19 TEXT2 .
+\x0b\x08\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00h\x06\x00\x03\x03\x00\x00SCE006_001\x00 \x06\x00\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \x00\x19\x00\x0c
+SEQ5\x03.\x00\x00
  
 拓司\n　「……出て行け」@
 早桃\n　「どうして？」@
 拓司\n　「こんなこと、おれは望んじゃいない」@
 早桃\n　「いいんだよ。夢は現実に干渉しない。\pいつもの妄想だか\n　　ら」\
 
-  
-INIT J\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF "\x01 APPlY_2 TextOn RUNF P\x01 END
-INIT_TEXT SCE006_002 l\x01 SCE_TEXT TEXT1 \x04\x19 TEXT2 \x98
+\x00  
+SEQ1 J\x00\x00\x0c
+SEQ4\x03\x07\x00\x00.\\Data\\Script\\TextFunc.Fob SPC1 "\x01\x00 
+SEQ2\x00\x00TextOn SPC1 P\x01\x00 
+SEQ6 SCE006_002\x00 l\x01\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \x04\x19\x00\x0c
+SEQ5\x03\x98\x00\x00
  
 早桃はネグリジェの裾をつまみ、ゆっくりと持ち上げて見せた。@
 /*HCG02*/\a7,-2,-2,0,\a0,73,2,0,\a6,-2,0,0,幼い肉の合わせ目が、あらわになる。@
@@ -21,21 +28,27 @@ INIT_TEXT SCE006_002 l\x01 SCE_TEXT TEXT1 \x04\x19 TEXT2 \x98
 こんなにもいやらしいものを隠して、早桃は同じ家の\n中で暮らしてきたのだ。@
 早桃のくちびるのあいだに、ぬるっと、濡れ光る肉の塊がすべっ\nた。\n粘り着くような声が、そこからこぼれだした。\
 
-  
-INIT \xb0\x01\x0c SET_VAR1 "\x01 \x02 P\x01 END
-INIT_TEXT SCE006_003 J\x04 SCE_TEXT TEXT1 \x08\x19 TEXT2 C
+\x00\x00  
+SEQ1 \xb0\x01\x00\x0c
+SEQ4 "\x01\x00 \x02\x00\x00 P\x01\x00 
+SEQ6 SCE006_003\x00 J\x04\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \x08\x19\x00\x0c
+SEQ5\x03C\x00\x00
  
 早桃\n　「見せっこ……しよ？\p　早桃にだけ出させるなんて、ずるい。@
 　　おにいちゃんのも、見せて。\pおち○ちん、見せてくれたら…\n　　…おれいにおにいちゃんにいいこと……してあげる。@
 　　パパとママには絶対教えられないこと、一緒にしよう？@
 　　ね？」\
 
-  
-INIT \x8e\x04\x0c SET_VAR1 "\x01 \x02 P\x01 END\x03\x0c
+\x00\x00\x00  
+SEQ1 \x8e\x04\x00\x0c
+SEQ4 "\x01\x00 \x02\x00\x00 P\x01\x00 \x02\x00\x005\x03\x0c\x00\x00
 CHOICE
 「……消えろ」\n「……来いよ」\n\l0,2,
 ENDCHOICE
 
-  
-INIT \xd4\x05\x0c SET_VAR1 "\x01 \x02 P\x01 END "\x01 APPLY_3 TextClose VAR1 J\x06 END
+\x00  
+SEQ1 \xd4\x05\x00\x0c
+SEQ4 "\x01\x00 \x02\x00\x00 P\x01\x00 \x02\x00\x005 "\x01\x00 \x02\x00\x00\x03\x03\x00\x00TextClosev\x81\x1fJ\x06\x00 
 END_SCRIPT

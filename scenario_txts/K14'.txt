@@ -1,15 +1,25 @@
 START_SCRIPT
-E\x1d\x01`B#\x010\x16
-INIT_TEXT SCEK14_A01 \x06 SCE_TEXT TEXT1 @\xaf\x01 TEXT2 R
+E\x1d\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x000\x16\x00\x03\x03\x00\x00SCEK14_A01\x00 \x06\x00\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 @\xaf\x01\x0c
+SEQ5\x03R\x00\x00
  
 変な味がするといやだったから、マーマレードジャムもスプーン\nひとさじぶん添えた。@
 より確実に死ぬにはアルコールも飲まないといけないということ\nは知っていたけれど、私もゆきも、お酒なんて飲んだことはなか\nったから、それはパスした。@
 アルコールの欠落は、薬の増量でまかなえばいいと……さらに一\n瓶ぶんを溶かして、混ぜた。\w\z
-  
-INIT J\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF \xb2\x01 APPlY_2 TextOn RUNF \xe0\x01 END  
-INIT >\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bg.Fob VAR2\x16\x02 \x02 APPLY_4 BgAutoFadeIn VAR2@\x02 END  
-INIT \x04\x01\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bgm.Fob VAR1 ~\x02 APPlY_2 PlayCD RUNF \xa8\x02 END
-INIT_TEXT SCEK14_A02 \xc4\x02 SCE_TEXT TEXT1 D\xaf\x01 TEXT2 \xa8
+\x00  
+SEQ1 J\x00\x00\x0c
+SEQ4\x03\x07\x00\x00.\\Data\\Script\\TextFunc.Fob SPC1 \xb2\x01\x00 
+SEQ2\x00\x00TextOn SPC1 \xe0\x01\x00 \x02\x00\x005  
+SEQ1 >\x00\x00\x0c
+SEQ4\x03\x06\x00\x00.\\Data\\Script\\Bg.Fob SPC2 \x16\x02\x00 \x02\x00\x00\x03\x04\x00\x00BgAutoFadeIn SPC2 @\x02\x00 \x02\x00\x005  
+SEQ1 \x04\x01\x00\x0c
+SEQ4\x03\x06\x00\x00.\\Data\\Script\\Bgm.Fobv\x81\x1f~\x02\x00 
+SEQ2\x00\x00PlayCD SPC1 \xa8\x02\x00 
+SEQ6 SCEK14_A02\x00 \xc4\x02\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 D\xaf\x01\x0c
+SEQ5\x03\xa8\x00\x00
  
 私とゆきはそれらを一気に食べて、そしてベッドに横になって話\nをした。@
 音楽のこととか、学校の噂話とか、昨日のテレビのこととか。@
@@ -18,9 +28,14 @@ INIT_TEXT SCEK14_A02 \xc4\x02 SCE_TEXT TEXT1 D\xaf\x01 TEXT2 \xa8
 ゆきちゃんはまだ、隣のベッドからいろいろ話しかけてきていた\nけれど、私はもう、彼女がなんといっているのかもよくわからな\nいくらいで、ウン、ウン、と適当に相槌をうつのが精一杯だった。\n\pプールで一日泳いだ後にやってくるような、気持ちのいい眠さだ\nった。@
 こんな素敵な気分で、最高の友達と一緒に死ねるなんて、私はし\nあわせだなあ、と思った。@
 繰り返すけれど、少しも怖くはなかった。\w\z
-  
-INIT \x08\x03\x0c SET_VAR1 \xb2\x01 \x02 \xe0\x01 END ~\x02 APPlY_2 StopCD RUNF \xee\x05 END
-INIT_TEXT SCEK14_A03 \n\x06 SCE_TEXT TEXT1 H\xaf\x01 TEXT2 \\
+\x00  
+SEQ1 \x08\x03\x00\x0c
+SEQ4 \xb2\x01\x00 \x02\x00\x00 \xe0\x01\x00 \x02\x00\x005 ~\x02\x00 
+SEQ2\x00\x00StopCD SPC1 \xee\x05\x00 
+SEQ6 SCEK14_A03\x00 \n\x06\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 H\xaf\x01\x0c
+SEQ5\x03\\\x00\x00
  
 いつのまにかゆきちゃんも話すのをやめていた。@
 「ゆきちゃん、眠った？」と、私はなんとかそれだけ尋ねた。@
@@ -29,11 +44,17 @@ INIT_TEXT SCEK14_A03 \n\x06 SCE_TEXT TEXT1 H\xaf\x01 TEXT2 \\
 \n凄く嬉しくて、涙がぽろぽろとあふれ出てきた。@
 どれくらい眠っていたのか、泣いていたのか、よくわからない。@
 私は暖かくてぼんやりとしたかたまりのなかでたゆたっていた。\w\z
-  
-INIT N\x06\x0c SET_VAR1 \xb2\x01 \x02 \xe0\x01 END  
-INIT \xcb\x0c SET_VAR1 \x16\x02 \x02 @\x02 END  
-INIT \n\x01\x0c SET_VAR1 ~\x02 \x02 \xa8\x02 END
-INIT_TEXT SCEK14_A04 `\x08 SCE_TEXT TEXT1 L\xaf\x01 TEXT2 \x81
+\x00\x00\x00  
+SEQ1 N\x06\x00\x0c
+SEQ4 \xb2\x01\x00 \x02\x00\x00 \xe0\x01\x00 \x02\x00\x005  
+SEQ1 \xcb\x00\x00\x0c
+SEQ4 \x16\x02\x00 \x02\x00\x00 @\x02\x00 \x02\x00\x005  
+SEQ1 \n\x01\x00\x0c
+SEQ4 ~\x02\x00 \x02\x00\x00 \xa8\x02\x00 
+SEQ6 SCEK14_A04\x00 `\x08\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 L\xaf\x01\x0c
+SEQ5\x03\x81\x00\x00
  
 しばらくすると猛烈な吐き気が襲ってきて、私はお腹の中のもの\nをベッドの上にすべて吐き出した。@
 それまで経験したことのないくらいの胃の痛みに、私はのたうち\n回った。@
@@ -43,16 +64,25 @@ INIT_TEXT SCEK14_A04 `\x08 SCE_TEXT TEXT1 L\xaf\x01 TEXT2 \x81
 吐いた物が気管に詰まって、息ができなかった。@
 鼻からもゲロがあふれてきた。涙で何も見えず、何が起こってい\nるのか全然わからなかった。@
 気持ちよく眠って死ねるはずだったのに、どうしてこんなに苦し\nんで死ななければならないの……？\w\z
-  
-INIT \xa4\x08\x0c SET_VAR1 \xb2\x01 \x02 \xe0\x01 END
-INIT_TEXT SCEK14_A05 \xe2\n SCE_TEXT TEXT1 P\xaf\x01 TEXT2 1
+\x00  
+SEQ1 \xa4\x08\x00\x0c
+SEQ4 \xb2\x01\x00 \x02\x00\x00 \xe0\x01\x00 
+SEQ6 SCEK14_A05\x00 \xe2\n\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 P\xaf\x01\x0c
+SEQ5\x031\x00\x00
  
 　要するに私は薬を飲みすぎたのだった。@
 急性アルコール中毒になるまえに、身体がアルコールを自動的に\n吐き出させるように……\p私の身体は私の意志とは無関係に薬を吐\nき戻させていたのだった。\w\z
-  
-INIT &\x0b\x0c SET_VAR1 \xb2\x01 \x02 \xe0\x01 END  
-INIT ?\x0c SET_VAR1 \x16\x02 \x02 @\x02 END
-INIT_TEXT SCEK14_A06 X\x0c SCE_TEXT TEXT1 T\xaf\x01 TEXT2 \\
+\x00  
+SEQ1 &\x0b\x00\x0c
+SEQ4 \xb2\x01\x00 \x02\x00\x00 \xe0\x01\x00 \x02\x00\x005  
+SEQ1 ?\x00\x00\x0c
+SEQ4 \x16\x02\x00 \x02\x00\x00 @\x02\x00 
+SEQ6 SCEK14_A06\x00 X\x0c\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 T\xaf\x01\x0c
+SEQ5\x03\\\x00\x00
  
 「ゆきちゃん！　ゆきちゃん！」@
 \n私は、すぐそばで横になっているはずのゆきの名前を、必死で叫\nんだ。@
@@ -61,17 +91,25 @@ INIT_TEXT SCEK14_A06 X\x0c SCE_TEXT TEXT1 T\xaf\x01 TEXT2 \\
 でも、返事はなかった。@
 そのうち私はあまりの苦しさに意識を失った。@
 /*■背景　黒　表示*/\a7,0,1,0,\a0,200,0,0,/*▲BGM　停止*/\a4,-1,0,0,\a6,0,0,0,そして病院で目を覚ました。\w\z
-  
-INIT \x9c\x0c\x0c SET_VAR1 \xb2\x01 \x02 \xe0\x01 END
-INIT_TEXT SCEK14_A07 F\x0e SCE_TEXT TEXT1 X\xaf\x01 TEXT2 ;
+\x00\x00\x00  
+SEQ1 \x9c\x0c\x00\x0c
+SEQ4 \xb2\x01\x00 \x02\x00\x00 \xe0\x01\x00 
+SEQ6 SCEK14_A07\x00 F\x0e\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 X\xaf\x01\x0c
+SEQ5\x03;\x00\x00
  
 　病院に連絡したのは、夕方、部屋に入ってきた清掃係のおばさ\nんだった。@
 おばさんは、ゲロまみれの床の上に倒れている私と、ベッドの上\nで静かに眠っているゆきを見つけたのだった。@
 若草ゆきは死んでいた。@
 そして私は生き残った。\w\z
-  
-INIT \x8a\x0e\x0c SET_VAR1 \xb2\x01 \x02 \xe0\x01 END
-INIT_TEXT SCEK14_A08 \xb0\x0f SCE_TEXT TEXT1 \\\xaf\x01 TEXT2 l
+\x00  
+SEQ1 \x8a\x0e\x00\x0c
+SEQ4 \xb2\x01\x00 \x02\x00\x00 \xe0\x01\x00 
+SEQ6 SCEK14_A08\x00 \xb0\x0f\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \\\xaf\x01\x0c
+SEQ5\x03l\x00\x00
  
 あんなに穏やかで、あっさりと受け入れることができた死が、た\nまらなく怖くなっていた。@
 どこか遠い場所にある、わけのわからないものに思えてきた。@
@@ -79,10 +117,15 @@ INIT_TEXT SCEK14_A08 \xb0\x0f SCE_TEXT TEXT1 \\\xaf\x01 TEXT2 l
 どこにでも死はあって、私たちはそれをまるで細かい塵みたいに\n肺の中に吸い込みながら生きている、と。@
 私にとって死は、そんなに普遍的なものではなくなっていた。@
 死は特別だった。\w\z
-  
-INIT \xf4\x0f\x0c SET_VAR1 \xb2\x01 \x02 \xe0\x01 END  
-INIT \x08\x01\x0c SET_VAR1 ~\x02 \x02 \xa8\x02 END
-INIT_TEXT SCEK14_A09 \x12\x12 SCE_TEXT TEXT1 `\xaf\x01 TEXT2 e
+\x00\x00\x00  
+SEQ1 \xf4\x0f\x00\x0c
+SEQ4 \xb2\x01\x00 \x02\x00\x00 \xe0\x01\x00 \x02\x00\x005  
+SEQ1 \x08\x01\x00\x0c
+SEQ4 ~\x02\x00 \x02\x00\x00 \xa8\x02\x00 
+SEQ6 SCEK14_A09\x00 \x12\x12\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 `\xaf\x01\x0c
+SEQ5\x03e\x00\x00
  
 この世界には所属しない呪われた地平にあって、そことここを隔\nてる錆びた門を力ずくで押し開いてやってくるもの。@
 日常とは共存していない非日常。私は、絶対それに馴染むことは\nできない。@
@@ -92,9 +135,13 @@ INIT_TEXT SCEK14_A09 \x12\x12 SCE_TEXT TEXT1 `\xaf\x01 TEXT2 e
 足音ひとつない。@
 でも、振り向くと、いる。@
 「つかまえたぞ。もうお前は逃げられないんだぞ」と。\w\z
-  
-INIT V\x12\x0c SET_VAR1 \xb2\x01 \x02 \xe0\x01 END
-INIT_TEXT SCEK14_A10 $\x14 SCE_TEXT TEXT1 d\xaf\x01 TEXT2 Y
+\x00\x00\x00  
+SEQ1 V\x12\x00\x0c
+SEQ4 \xb2\x01\x00 \x02\x00\x00 \xe0\x01\x00 
+SEQ6 SCEK14_A10\x00 $\x14\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 d\xaf\x01\x0c
+SEQ5\x03Y\x00\x00
  
 気取らずにいえば、窒息しそうになったときの恐怖と胃洗浄の苦\nしさが、そのまま死のイメージとなって私に取り憑いたのだろう。\n\p死は怖いものだ。\pいまはそう思っている。@
 でも、本気でやろうと思えば、もう一回くらいはやれる。@
@@ -104,6 +151,7 @@ INIT_TEXT SCEK14_A10 $\x14 SCE_TEXT TEXT1 d\xaf\x01 TEXT2 Y
 誕生日が。@
 ゆきにおける私が。@
 私には必要だった。\w\z
-  
-INIT h\x14\x0c SET_VAR1 \xb2\x01 \x02 \xe0\x01 END \xb2\x01 APPLY_3 TextClose VAR1 \x12\x16 END
+\x00  
+SEQ1 h\x14\x00\x0c
+SEQ4 \xb2\x01\x00 \x02\x00\x00 \xe0\x01\x00 \x02\x00\x005 \xb2\x01\x00 \x02\x00\x00\x03\x03\x00\x00TextClosev\x81\x1f\x12\x16\x00 
 END_SCRIPT

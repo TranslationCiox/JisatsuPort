@@ -1,6 +1,10 @@
 START_SCRIPT
-\x1f\t\x01`B#\x01|\x07 APPLY_FILE .\\Data\\Script\\Bgm.Fob VAR1 \x06 APPlY_2 StopCD RUNF 0 END
-INIT_TEXT SCEK13_001 L SCE_TEXT TEXT1  \xac\x01 TEXT2 \xd9
+\x1f\t\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00|\x07\x00\x03\x06\x00\x00.\\Data\\Script\\Bgm.Fobv\x81\x1f\x06\x00\x00 
+SEQ2\x00\x00StopCD SPC1 0\x00\x00 
+SEQ6 SCEK13_001\x00 L\x00\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3  \xac\x01\x0c
+SEQ5\x03\xd9\x00\x00
  
 　父親を殺す。@
 ゆきは最初、とても驚いたようだった。@
@@ -12,9 +16,14 @@ INIT_TEXT SCEK13_001 L SCE_TEXT TEXT1  \xac\x01 TEXT2 \xd9
 いいかけたのを遮って、ゆきがいった。@
 「違うの。お父さんを殺すのは、私がするべきことだと思うから。\n\pこんなことをいうのはおかしいかもしれないけれど、お父さんだ\nって人間だもの。\p誰にだって殺されていいってことはないと思う。\n\pだから……私が」@
 自分が蚊帳の外に置かれたような気がして、私は少しムッとした。\n\pこんなに真剣に考えて、殺人という罪まで一緒に犯そうとしてい\nるのに、ゆきは、私がこの件に関しては無関係だと……\n部外者だといっているのだから（－－実際、部外者なんだけれど。\nでも、腹が立ったの）。\w\z
-  
-INIT \x90\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF \x14\x04 APPlY_2 TextOn RUNF B\x04 END
-INIT_TEXT SCEK13_002 ^\x04 SCE_TEXT TEXT1 $\xac\x01 TEXT2 ~
+\x00\x00\x00  
+SEQ1 \x90\x00\x00\x0c
+SEQ4\x03\x07\x00\x00.\\Data\\Script\\TextFunc.Fob SPC1 \x14\x04\x00 
+SEQ2\x00\x00TextOn SPC1 B\x04\x00 
+SEQ6 SCEK13_002\x00 ^\x04\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 $\xac\x01\x0c
+SEQ5\x03~\x00\x00
  
 私の不満に気づいたのだろう、ゆきはすぐに申し訳なさそうな顔\nをした。@
 「ごめんね、月代さん。でも、月代さんをないがしろにしている\nとか……そんなつもりじゃない。月代さんの協力がなかったら、\n私はお父さんを殺せないと思うから」@
@@ -25,12 +34,14 @@ INIT_TEXT SCEK13_002 ^\x04 SCE_TEXT TEXT1 $\xac\x01 TEXT2 ~
 そして意を決したように、@
 「私がお父さんを殺したあと、私と一緒に……死んでくれる？」@
 といった。\w\z
-  
-INIT \xa2\x04\x0c SET_VAR1 \x14\x04 \x02 B\x04 END\x03\x11
+\x00  
+SEQ1 \xa2\x04\x00\x0c
+SEQ4 \x14\x04\x00 \x02\x00\x00 B\x04\x00 \x02\x00\x005\x03\x11\x00\x00
 CHOICE
 私は「うん」と返した。\n私は「いやだ」と返した。\n\l0,2,
 ENDCHOICE
 
-  
-INIT \xd4\x06\x0c SET_VAR1 \x14\x04 \x02 B\x04 END \x14\x04 APPLY_3 TextClose VAR1 ^\x07 END
+\x00\x00\x00  
+SEQ1 \xd4\x06\x00\x0c
+SEQ4 \x14\x04\x00 \x02\x00\x00 B\x04\x00 \x02\x00\x005 \x14\x04\x00 \x02\x00\x00\x03\x03\x00\x00TextClosev\x81\x1f^\x07\x00 
 END_SCRIPT

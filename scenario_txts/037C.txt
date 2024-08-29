@@ -1,7 +1,12 @@
 START_SCRIPT
-\t\x17\x01`B#\x01X\x12  
-INIT \x08\x01\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bgm.Fob VAR1   APPlY_2 PlayCD RUNF J END
-INIT_TEXT SCE037_001 f SCE_TEXT TEXT1 pI TEXT2 \x8f
+\t\x17\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00X\x12\x00  
+SEQ1 \x08\x01\x00\x0c
+SEQ4\x03\x06\x00\x00.\\Data\\Script\\Bgm.Fobv\x81\x1f \x00\x00 
+SEQ2\x00\x00PlayCD SPC1 J\x00\x00 
+SEQ6 SCE037_001\x00 f\x00\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 pI\x00\x0c
+SEQ5\x03\x8f\x00\x00
  
 　屋上は一般学生の立ち入りが禁じられ、階段と屋上を繋ぐ鉄の\n扉には錠が下ろされている。@
 　拓司が自由に出入りしているのは、合い鍵を持っているから\nだ。@
@@ -14,9 +19,14 @@ INIT_TEXT SCE037_001 f SCE_TEXT TEXT1 pI TEXT2 \x8f
 　なんの心のふるえも呼び起こさない、ただの空と、雲。@
 　光景。\
 
-  
-INIT \xaa\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF \x06\x03 APPlY_2 TextOn RUNF 4\x03 END
-INIT_TEXT SCE037_002 P\x03 SCE_TEXT TEXT1 tI TEXT2 W
+\x00\x00\x00  
+SEQ1 \xaa\x00\x00\x0c
+SEQ4\x03\x07\x00\x00.\\Data\\Script\\TextFunc.Fob SPC1 \x06\x03\x00 
+SEQ2\x00\x00TextOn SPC1 4\x03\x00 
+SEQ6 SCE037_002\x00 P\x03\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 tI\x00\x0c
+SEQ5\x03W\x00\x00
  
 　世界の輪郭がぼやけ始めたころ、拓司は何時間も屋上に寝転が\nって空を見上げたものだった。@
 　そこに、現実を現実以下のものにしてしまった欠落が、妄想を\n妄想以上のものにしてしまった過剰が……@
@@ -25,9 +35,13 @@ INIT_TEXT SCE037_002 P\x03 SCE_TEXT TEXT1 tI TEXT2 W
 　なんの心のふるえも呼び起こさない、ただの空と、雲。@
 光景がそこにあった。\
 
-  
-INIT \x94\x03\x0c SET_VAR1 \x06\x03 \x02 4\x03 END
-INIT_TEXT SCE037_003 *\x05 SCE_TEXT TEXT1 xI TEXT2 F
+\x00\x00\x00  
+SEQ1 \x94\x03\x00\x0c
+SEQ4 \x06\x03\x00 \x02\x00\x00 4\x03\x00 
+SEQ6 SCE037_003\x00 *\x05\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 xI\x00\x0c
+SEQ5\x03F\x00\x00
  
 早桃\n　「わあ、気持ちいい！」@
 拓司\n　「……」@
@@ -38,9 +52,13 @@ INIT_TEXT SCE037_003 *\x05 SCE_TEXT TEXT1 xI TEXT2 F
 　　お前が尋ねなかっただけだろ」@
 早桃\n　「ふふふ！」\
 
-  
-INIT n\x05\x0c SET_VAR1 \x06\x03 \x02 4\x03 END
-INIT_TEXT SCE037_004 \xc0\x06 SCE_TEXT TEXT1 |I TEXT2 c
+\x00  
+SEQ1 n\x05\x00\x0c
+SEQ4 \x06\x03\x00 \x02\x00\x00 4\x03\x00 
+SEQ6 SCE037_004\x00 \xc0\x06\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 |I\x00\x0c
+SEQ5\x03c\x00\x00
  
 　拓司と早桃は、給水塔の陰に、並んで腰を下ろした。@
 早桃がコッペパンを半分にちぎり、やや大きい方を拓司に「はい」\nと手渡す。@
@@ -50,9 +68,13 @@ INIT_TEXT SCE037_004 \xc0\x06 SCE_TEXT TEXT1 |I TEXT2 c
 早桃\n　「うそばっかり」@
 拓司\n　「いいからそっちよこせ！」\
 
-  
-INIT \x04\x07\x0c SET_VAR1 \x06\x03 \x02 4\x03 END
-INIT_TEXT SCE037_005 \xca\x08 SCE_TEXT TEXT1 \x80I TEXT2 C
+\x00\x00\x00  
+SEQ1 \x04\x07\x00\x0c
+SEQ4 \x06\x03\x00 \x02\x00\x00 4\x03\x00 
+SEQ6 SCE037_005\x00 \xca\x08\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \x80I\x00\x0c
+SEQ5\x03C\x00\x00
  
 早桃\n　「やだ！　もう！\p　うふふ……」@
 拓司\n　「ははは」@
@@ -62,9 +84,13 @@ INIT_TEXT SCE037_005 \xca\x08 SCE_TEXT TEXT1 \x80I TEXT2 C
 \n早桃\n　「……それにこっちがわ、少しかじっちゃったから」@
 拓司\n　「……」\
 
-  
-INIT \x0e\t\x0c SET_VAR1 \x06\x03 \x02 4\x03 END
-INIT_TEXT SCE037_006 T\n SCE_TEXT TEXT1 \x84I TEXT2 A
+\x00\x00\x00  
+SEQ1 \x0e\t\x00\x0c
+SEQ4 \x06\x03\x00 \x02\x00\x00 4\x03\x00 
+SEQ6 SCE037_006\x00 T\n\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \x84I\x00\x0c
+SEQ5\x03A\x00\x00
  
 早桃\n　「……」@
 拓司\n　「……」@
@@ -73,10 +99,16 @@ INIT_TEXT SCE037_006 T\n SCE_TEXT TEXT1 \x84I TEXT2 A
 \n早桃\n　「もう！　おにいちゃんってば！」@
 拓司\n　「はは……うっ！」\
 
-  
-INIT \x98\n\x0c SET_VAR1 \x06\x03 \x02 4\x03 END  
-INIT \xc8\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bg.Fob VAR2\xf0\x0b APPlY_2 BgOn VAR2\x1a\x0c END
-INIT_TEXT SCE037_007 6\x0c SCE_TEXT TEXT1 \x88I TEXT2 I
+\x00  
+SEQ1 \x98\n\x00\x0c
+SEQ4 \x06\x03\x00 \x02\x00\x00 4\x03\x00 \x02\x00\x005  
+SEQ1 \xc8\x00\x00\x0c
+SEQ4\x03\x06\x00\x00.\\Data\\Script\\Bg.Fob SPC2 \xf0\x0b\x00 
+SEQ2\x00\x00BgOn SPC2 \x1a\x0c\x00 
+SEQ6 SCE037_007\x00 6\x0c\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \x88I\x00\x0c
+SEQ5\x03I\x00\x00
  
 早桃\n　「えっ、、お、おにいちゃん？！」@
 拓司\n　「うううっ！　\pの、喉が……苦し……」@
@@ -87,9 +119,13 @@ INIT_TEXT SCE037_007 6\x0c SCE_TEXT TEXT1 \x88I TEXT2 I
 拓司\n　「……」@
 早桃\n　「……」\
 
-  
-INIT z\x0c\x0c SET_VAR1 \x06\x03 \x02 4\x03 END
-INIT_TEXT SCE037_008 \xd8\r SCE_TEXT TEXT1 \x8cI TEXT2 s
+\x00  
+SEQ1 z\x0c\x00\x0c
+SEQ4 \x06\x03\x00 \x02\x00\x00 4\x03\x00 
+SEQ6 SCE037_008\x00 \xd8\r\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \x8cI\x00\x0c
+SEQ5\x03s\x00\x00
  
 拓司\n　「……」@
 /*■CG13　表示（クロスフェード）*/\a7,-1,-1,0,\a0,12,1,0,\a6,0,0,0,早桃\n　「早桃パンチ！」@
@@ -101,9 +137,14 @@ INIT_TEXT SCE037_008 \xd8\r SCE_TEXT TEXT1 \x8cI TEXT2 s
 　遠くから、ぼんやりとサッカーをしている学生たちの声が聞こ\nえた。\
 
   
-INIT \x1c\x0e\x0c SET_VAR1 \x06\x03 \x02 4\x03 END  
-INIT \xc8\x0c SET_VAR1 \xf0\x0b \x02 \x1a\x0c END
-INIT_TEXT SCE037_009 V\x10 SCE_TEXT TEXT1 \x90I TEXT2 8
+SEQ1 \x1c\x0e\x00\x0c
+SEQ4 \x06\x03\x00 \x02\x00\x00 4\x03\x00 \x02\x00\x005  
+SEQ1 \xc8\x00\x00\x0c
+SEQ4 \xf0\x0b\x00 \x02\x00\x00 \x1a\x0c\x00 
+SEQ6 SCE037_009\x00 V\x10\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \x90I\x00\x0c
+SEQ5\x038\x00\x00
  
 早桃\n　「おにいちゃん？」@
 拓司\n　「ああ？」@
@@ -113,12 +154,14 @@ INIT_TEXT SCE037_009 V\x10 SCE_TEXT TEXT1 \x90I TEXT2 8
 拓司\n　「……」@
 早桃\n　「……どうしてかな？」\
 
-  
-INIT \x9a\x10\x0c SET_VAR1 \x06\x03 \x02 4\x03 END\x03\x10
+\x00  
+SEQ1 \x9a\x10\x00\x0c
+SEQ4 \x06\x03\x00 \x02\x00\x00 4\x03\x00 \x02\x00\x005\x03\x10\x00\x00
 CHOICE
 話題を逸らす\n早桃はどうなんだ、と逆に問い返す\n\l0,2,
 ENDCHOICE
 
-  
-INIT \xb4\x11\x0c SET_VAR1 \x06\x03 \x02 4\x03 END \x06\x03 APPLY_3 TextClose VAR1 :\x12 END
+\x00  
+SEQ1 \xb4\x11\x00\x0c
+SEQ4 \x06\x03\x00 \x02\x00\x00 4\x03\x00 \x02\x00\x005 \x06\x03\x00 \x02\x00\x00\x03\x03\x00\x00TextClosev\x81\x1f:\x12\x00 
 END_SCRIPT

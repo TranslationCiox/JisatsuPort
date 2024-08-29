@@ -1,7 +1,12 @@
 START_SCRIPT
-v\x0c\x01`B#\x01:\n  
-INIT \x07\x01\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bgm.Fob VAR1   APPlY_2 PlayCD RUNF J END
-INIT_TEXT SCE040_001 f SCE_TEXT TEXT1  N TEXT2 6
+v\x0c\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00:\n\x00  
+SEQ1 \x07\x01\x00\x0c
+SEQ4\x03\x06\x00\x00.\\Data\\Script\\Bgm.Fobv\x81\x1f \x00\x00 
+SEQ2\x00\x00PlayCD SPC1 J\x00\x00 
+SEQ6 SCE040_001\x00 f\x00\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3  N\x00\x0c
+SEQ5\x036\x00\x00
  
 拓司\n　「おれもお前のことは好きだ。@
 　　でも、それは－－」\n早桃\n　「義妹として？@
@@ -9,10 +14,16 @@ INIT_TEXT SCE040_001 f SCE_TEXT TEXT1  N TEXT2 6
 早桃が笑いながらいった。@
 それは嘲笑だった。\
 
-  
-INIT \xaa\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF \xa2\x01 APPlY_2 TextOn RUNF \xd0\x01 END  
-INIT D\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bg.Fob VAR2\x06\x02 \x02 APPLY_4 BgAutoFadeIn VAR20\x02 END
-INIT_TEXT SCE040_002 T\x02 SCE_TEXT TEXT1 $N TEXT2 v
+\x00  
+SEQ1 \xaa\x00\x00\x0c
+SEQ4\x03\x07\x00\x00.\\Data\\Script\\TextFunc.Fob SPC1 \xa2\x01\x00 
+SEQ2\x00\x00TextOn SPC1 \xd0\x01\x00 \x02\x00\x005  
+SEQ1 D\x00\x00\x0c
+SEQ4\x03\x06\x00\x00.\\Data\\Script\\Bg.Fob SPC2 \x06\x02\x00 \x02\x00\x00\x03\x04\x00\x00BgAutoFadeIn SPC2 0\x02\x00 
+SEQ6 SCE040_002\x00 T\x02\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 $N\x00\x0c
+SEQ5\x03v\x00\x00
  
 早桃\n　「おにいちゃんは気楽でいいよね。@
 　　そんなところでストッパーかけて。@
@@ -23,9 +34,13 @@ INIT_TEXT SCE040_002 T\x02 SCE_TEXT TEXT1 $N TEXT2 v
 　　そんなのはどうでもいいことだってことも」@
 拓司\n　「どうだっていいってことはないだろう－－」\
 
-  
-INIT \x98\x02\x0c SET_VAR1 \xa2\x01 \x02 \xd0\x01 END
-INIT_TEXT SCE040_003 \xaa\x04 SCE_TEXT TEXT1 (N TEXT2 \xcf
+\x00  
+SEQ1 \x98\x02\x00\x0c
+SEQ4 \xa2\x01\x00 \x02\x00\x00 \xd0\x01\x00 
+SEQ6 SCE040_003\x00 \xaa\x04\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 (N\x00\x0c
+SEQ5\x03\xcf\x00\x00
  
 早桃\n　「そういうことじゃないの！@
 　　そんな……\pあたりまえなことにグダグダこだわっていられ\n　　るなんて、幸せ者だよ、おにいちゃんは！@
@@ -40,10 +55,16 @@ INIT_TEXT SCE040_003 \xaa\x04 SCE_TEXT TEXT1 (N TEXT2 \xcf
 \nつかみかからんばかりの勢いで、早桃は一気にまくし立てた。@
 目には涙が浮かび、身体は小刻みに震えている。\
 
-  
-INIT \xee\x04\x0c SET_VAR1 \xa2\x01 \x02 \xd0\x01 END  
-INIT \xc8\x0c SET_VAR1 \x06\x02 APPlY_2 BgOn VAR2\x8a\x08 END
-INIT_TEXT SCE040_004 \xa6\x08 SCE_TEXT TEXT1 ,N TEXT2 ;
+\x00\x00\x00  
+SEQ1 \xee\x04\x00\x0c
+SEQ4 \xa2\x01\x00 \x02\x00\x00 \xd0\x01\x00 \x02\x00\x005  
+SEQ1 \xc8\x00\x00\x0c
+SEQ4 \x06\x02\x00 
+SEQ2\x00\x00BgOn SPC2 \x8a\x08\x00 
+SEQ6 SCE040_004\x00 \xa6\x08\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 ,N\x00\x0c
+SEQ5\x03;\x00\x00
  
 拓司\n　「……落ちてるって、どういうことだ？」@
 早桃\n　「……」@
@@ -51,6 +72,7 @@ INIT_TEXT SCE040_004 \xa6\x08 SCE_TEXT TEXT1 ,N TEXT2 ;
 \n早桃\n　「臆病者って、幸せよね！」@
 \nいって早桃は、風のように駆けて屋上から去っていった。\
 
-  
-INIT \xea\x08\x0c SET_VAR1 \xa2\x01 \x02 \xd0\x01 END \xa2\x01 APPLY_3 TextClose VAR1 \x1c\n END
+\x00\x00\x00  
+SEQ1 \xea\x08\x00\x0c
+SEQ4 \xa2\x01\x00 \x02\x00\x00 \xd0\x01\x00 \x02\x00\x005 \xa2\x01\x00 \x02\x00\x00\x03\x03\x00\x00TextClosev\x81\x1f\x1c\n\x00 
 END_SCRIPT

@@ -1,16 +1,25 @@
 START_SCRIPT
-R3\x01`B#\x01^*  
-INIT 6\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bg.Fob VAR2  \x02 APPLY_4 BgAutoFadeIn VAR2J END
-INIT_TEXT SCE244_001 n SCE_TEXT TEXT1 \xe0\x8c\x01 TEXT2  
+R3\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00^*\x00  
+SEQ1 6\x00\x00\x0c
+SEQ4\x03\x06\x00\x00.\\Data\\Script\\Bg.Fob SPC2  \x00\x00 \x02\x00\x00\x03\x04\x00\x00BgAutoFadeIn SPC2 J\x00\x00 
+SEQ6 SCE244_001\x00 n\x00\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xe0\x8c\x01\x0c
+SEQ5\x03 \x00\x00
  
 早桃が立ち上がった。@
 拓司は早桃の目の奥を見て、ちいさく頷いた。@
 早桃も頷き返す。@
 \n拓司\n　「他には……？」\
 
-  
-INIT \xb2\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF R\x01 APPlY_2 TextOn RUNF \x80\x01 END
-INIT_TEXT SCE244_002 \x9c\x01 SCE_TEXT TEXT1 \xe4\x8c\x01 TEXT2 c
+\x00\x00\x00  
+SEQ1 \xb2\x00\x00\x0c
+SEQ4\x03\x07\x00\x00.\\Data\\Script\\TextFunc.Fob SPC1 R\x01\x00 
+SEQ2\x00\x00TextOn SPC1 \x80\x01\x00 
+SEQ6 SCE244_002\x00 \x9c\x01\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xe4\x8c\x01\x0c
+SEQ5\x03c\x00\x00
  
 カンナ\n　「私は……怖い。\p最終波動がないっていうことが……証明で\n　　きないなら、ここに残る」@
 \nカンナが目を反らした。@
@@ -19,9 +28,13 @@ INIT_TEXT SCE244_002 \x9c\x01 SCE_TEXT TEXT1 \xe4\x8c\x01 TEXT2 c
 \n錦城\n　「はっ。\pあなた正気？\p　出ていくがいいわ勝手に出ていって、\n　　死んでしまうがいいわ！\p　この人殺し！\p　人殺しッ！」@
 \n錦城は最後まで強気を装っていた。\
 
-  
-INIT \xe0\x01\x0c SET_VAR1 R\x01 \x02 \x80\x01 END
-INIT_TEXT SCE244_003 \xa6\x03 SCE_TEXT TEXT1 \xe8\x8c\x01 TEXT2 d
+\x00\x00\x00  
+SEQ1 \xe0\x01\x00\x0c
+SEQ4 R\x01\x00 \x02\x00\x00 \x80\x01\x00 
+SEQ6 SCE244_003\x00 \xa6\x03\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xe8\x8c\x01\x0c
+SEQ5\x03d\x00\x00
  
 拓司\n　「わかった。\pそれじゃ、早桃」@
 早桃\n　「うん……おにいちゃん」@
@@ -34,9 +47,13 @@ INIT_TEXT SCE244_003 \xa6\x03 SCE_TEXT TEXT1 \xe8\x8c\x01 TEXT2 d
 拓司\n　「いいんだ」@
 \n拓司は早桃を制した。@
 \z
-  
-INIT \xea\x03\x0c SET_VAR1 R\x01 \x02 \x80\x01 END
-INIT_TEXT SCE244_004 \xb4\x05 SCE_TEXT TEXT1 \xec\x8c\x01 TEXT2 \x87
+\x00\x00\x00  
+SEQ1 \xea\x03\x00\x0c
+SEQ4 R\x01\x00 \x02\x00\x00 \x80\x01\x00 
+SEQ6 SCE244_004\x00 \xb4\x05\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xec\x8c\x01\x0c
+SEQ5\x03\x87\x00\x00
  
 拓司\n　「もう、そんなことは関係ないんだ。\p設定なんかどうでもいい。\n　　\p俺はお前が好きだ。\p義妹だとか、背のたかさがどうだとか、\n　　顔立ちがどうだとか、性格がどうだとか、口調がどうだとか\n　　……そんなことを抜きにして、お前という人間が好きなんだ。\n　　\pだから、いいんだ」@
 早桃\n　「……」@
@@ -47,14 +64,23 @@ INIT_TEXT SCE244_004 \xb4\x05 SCE_TEXT TEXT1 \xec\x8c\x01 TEXT2 \x87
 早桃が握り返すのを確認してから、拓司は歩み始めた。@
 ドアを開き、外の世界へと。\
 
-  
-INIT \xf8\x05\x0c SET_VAR1 R\x01 \x02 \x80\x01 END
-INIT_TEXT SCE244_005 N\x08 SCE_TEXT TEXT1 \xf0\x8c\x01\x0c"  
-INIT \xc8\x0c SET_VAR1 NULL \x02 J END  
-INIT \x02\x0c SET_VAR1  \x04
-INIT \x17\x0c SET_VAR1  \x08
-INIT \x01\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bgm.Fob VAR1 \x14\t APPlY_2 SePlay RUNF >\t END  
-INIT \t\x01\x0c SET_VAR1 \x14\t APPlY_2 PlayCD RUNF \x80\t END\x03\xbb
+\x00  
+SEQ1 \xf8\x05\x00\x0c
+SEQ4 R\x01\x00 \x02\x00\x00 \x80\x01\x00 
+SEQ6 SCE244_005\x00 N\x08\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xf0\x8c\x01\x0c
+SEQ5  
+SEQ1 \xc8\x00\x00\x0c
+SEQ4  \x00\x00 \x02\x00\x00 J\x00\x00 \x02\x00\x005  
+SEQ1 \x02\x00\x00\x0c
+SEQ4  \x04\x00\x00\r\x00\x00 \x17\x00\x00\x0c
+SEQ4  \x08\x00\x00\r\x00\x00 \x01\x00\x00\x0c
+SEQ4\x03\x06\x00\x00.\\Data\\Script\\Bgm.Fobv\x81\x1f\x14\t\x00 
+SEQ2\x00\x00SePlay SPC1 >\t\x00 \x02\x00\x005  
+SEQ1 \t\x01\x00\x0c
+SEQ4 \x14\t\x00 
+SEQ2\x00\x00PlayCD SPC1 \x80\t\x00 \x02\x00\x005\x03\xbb\x00\x00
  
 拓司\n　「これは……」@
 \n思わず絶句した。@
@@ -67,25 +93,37 @@ INIT \t\x01\x0c SET_VAR1 \x14\t APPlY_2 PlayCD RUNF \x80\t END\x03\xbb
 まるで、何十年も放棄されていた場所のようだ。@
 あの工業団地の廃墟にさらなる歳月の洗礼を加えて、行き着く果\nてまで荒廃を深化させた－－そんな感じがする。\
 
-  
-INIT \x9c\t\x0c SET_VAR1 R\x01 \x02 \x80\x01 END
-INIT_TEXT SCE244_006 \xc2\x0c SCE_TEXT TEXT1 \xf4\x8c\x01 TEXT2 `
+\x00  
+SEQ1 \x9c\t\x00\x0c
+SEQ4 R\x01\x00 \x02\x00\x00 \x80\x01\x00 
+SEQ6 SCE244_006\x00 \xc2\x0c\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xf4\x8c\x01\x0c
+SEQ5\x03`\x00\x00
  
 腐敗した死体が転がっているのを予想していたが、そのようなも\nのはどこにもない。\p骨や服のかけらすら見つけることができない。\n\pただ、壁にべったりとこびりついている染みが、どこか血の痕を\n想起させる。\pまた、しなびた皮膚のような、毛髪の一部のような、\n正体不明のものがべったりと張り付いている壁もある。@
 もしかしたら、それこそが学生たちのなれの果てなのかもしれな\nい……。\
 
-  
-INIT \x06\r\x0c SET_VAR1 R\x01 \x02 \x80\x01 END
-INIT_TEXT SCE244_007 \xc0\x0e SCE_TEXT TEXT1 \xf8\x8c\x01 TEXT2 D
+\x00\x00\x00  
+SEQ1 \x06\r\x00\x0c
+SEQ4 R\x01\x00 \x02\x00\x00 \x80\x01\x00 
+SEQ6 SCE244_007\x00 \xc0\x0e\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xf8\x8c\x01\x0c
+SEQ5\x03D\x00\x00
  
 早桃\n　「どうしたの、これ……？\p　まるで……まるで……」@
 拓司\n　「何十年も経っているみたいだ。\pあの部屋にいるあいだに、い\n　　ったい何があったんだ……？」@
 \n早桃が、無言で拓司の袖をぎゅっと握る。@
 拓司はその手の上に自分の手を重ねて、力強く頷いた。\
 
-  
-INIT \x04\x0f\x0c SET_VAR1 R\x01 \x02 \x80\x01 END
-INIT_TEXT SCE244_008 N\x10 SCE_TEXT TEXT1 \xfc\x8c\x01 TEXT2 \xd6
+\x00\x00\x00  
+SEQ1 \x04\x0f\x00\x0c
+SEQ4 R\x01\x00 \x02\x00\x00 \x80\x01\x00 
+SEQ6 SCE244_008\x00 N\x10\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xfc\x8c\x01\x0c
+SEQ5\x03\xd6\x00\x00
  
 拓司\n　「考えるのはやめよう。\p俺たちは最初から、起こっていること\n　　の意味を考え続けてきた。\p説明できない状況に筋を一本通そ\n　　うと……あがいてきた。\pでも、そんなの無駄なんだ。@
 　　意味がわからないんじゃない。\p意味なんてないんだ」@
@@ -98,9 +136,13 @@ INIT_TEXT SCE244_008 N\x10 SCE_TEXT TEXT1 \xfc\x8c\x01 TEXT2 \xd6
 地面がひどく急勾配に思える。@
 まっすぐ歩いているつもりなのに、壁に体当たりしているときも\nある。\
 
-  
-INIT \x92\x10\x0c SET_VAR1 R\x01 \x02 \x80\x01 END
-INIT_TEXT SCE244_009 $\x14 SCE_TEXT TEXT1 \x8d\x01 TEXT2 M
+\x00  
+SEQ1 \x92\x10\x00\x0c
+SEQ4 R\x01\x00 \x02\x00\x00 \x80\x01\x00 
+SEQ6 SCE244_009\x00 $\x14\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \x00\x8d\x01\x0c
+SEQ5\x03M\x00\x00
  
 それでも２人は歩き続けた。@
 階段を降り、廊下を歩いてゆく。@
@@ -108,10 +150,17 @@ INIT_TEXT SCE244_009 $\x14 SCE_TEXT TEXT1 \x8d\x01 TEXT2 M
 時間にすれば３分ほどであったのだろう、しかし目的地に着いた\nとき、拓司たちは数時間も歩いたような疲労に充たされていた。@
 しかし、拓司は身体の隅々に残ったエネルギーを総動員して、そ\nのまえに立った。\
 
-  
-INIT h\x14\x0c SET_VAR1 R\x01 \x02 \x80\x01 END  
-INIT \x02\x0c SET_VAR1 \x14\t APPlY_2 SeStop RUNF \xfc\x15 END \x14\t APPlY_2 StopCD RUNF $\x16 END
-INIT_TEXT SCE244_010 @\x16 SCE_TEXT TEXT1 \x04\x8d\x01 TEXT2 D
+\x00  
+SEQ1 h\x14\x00\x0c
+SEQ4 R\x01\x00 \x02\x00\x00 \x80\x01\x00 \x02\x00\x005  
+SEQ1 \x02\x00\x00\x0c
+SEQ4 \x14\t\x00 
+SEQ2\x00\x00SeStop SPC1 \xfc\x15\x00 \x02\x00\x005 \x14\t\x00 
+SEQ2\x00\x00StopCD SPC1 $\x16\x00 
+SEQ6 SCE244_010\x00 @\x16\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \x04\x8d\x01\x0c
+SEQ5\x03D\x00\x00
  
 拓司\n　「……ここだ」@
 \n壁だ。@
@@ -122,9 +171,13 @@ INIT_TEXT SCE244_010 @\x16 SCE_TEXT TEXT1 \x04\x8d\x01 TEXT2 D
 この壁の奥には何が隠されているのだろうか？@
 いや、そもそもそこには何かがあるのだろうか？\
 
-  
-INIT \x84\x16\x0c SET_VAR1 R\x01 \x02 \x80\x01 END
-INIT_TEXT SCE244_011 \xce\x17 SCE_TEXT TEXT1 \x08\x8d\x01 TEXT2 _
+\x00\x00\x00  
+SEQ1 \x84\x16\x00\x0c
+SEQ4 R\x01\x00 \x02\x00\x00 \x80\x01\x00 
+SEQ6 SCE244_011\x00 \xce\x17\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \x08\x8d\x01\x0c
+SEQ5\x03_\x00\x00
  
 拓司は考えなかった。@
 /*▲SE15　ループ再生（停止まで）*/\a2,2,15,1,/*■CG52　表示（クロスフェード）*/\a7,-2,-2,0,\a0,51,2,0,\a6,-2,0,0,手にした椅子の脚を、がつがつと壁に叩き付けてゆく。@
@@ -133,12 +186,17 @@ INIT_TEXT SCE244_011 \xce\x17 SCE_TEXT TEXT1 \x08\x8d\x01 TEXT2 _
 拓司\n　「ああ！\p　一緒に……」@
 早桃\n　「うん！」\
 
-  
-INIT \x12\x18\x0c SET_VAR1 R\x01 \x02 \x80\x01 END
-INIT_TEXT SCE244_012 \xc8\x19 SCE_TEXT TEXT1 \x0c\x8d\x01\x0c"  
-INIT \x02\x0c SET_VAR1  \x04
-INIT \x0f\x0c SET_VAR1  \x08
-INIT \x01\x0c SET_VAR1 \x14\t \x02 >\t END\x03\xae
+\x00\x00  
+SEQ1 \x12\x18\x00\x0c
+SEQ4 R\x01\x00 \x02\x00\x00 \x80\x01\x00 
+SEQ6 SCE244_012\x00 \xc8\x19\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \x0c\x8d\x01\x0c
+SEQ5  
+SEQ1 \x02\x00\x00\x0c
+SEQ4  \x04\x00\x00\r\x00\x00 \x0f\x00\x00\x0c
+SEQ4  \x08\x00\x00\r\x00\x00 \x01\x00\x00\x0c
+SEQ4 \x14\t\x00 \x02\x00\x00 >\t\x00 \x02\x00\x005\x03\xae\x00\x00
  
 ２人は取り憑かれたように、椅子の脚を壁に叩き付けた。@
 一箇所に狙いを絞って叩きつけてゆく。@
@@ -153,8 +211,12 @@ INIT \x01\x0c SET_VAR1 \x14\t \x02 >\t END\x03\xae
 １０センチほどしかない！\
 
   
-INIT t\x1a\x0c SET_VAR1 R\x01 \x02 \x80\x01 END
-INIT_TEXT SCE244_013 f\x1d SCE_TEXT TEXT1 \x10\x8d\x01 TEXT2 \x8d
+SEQ1 t\x1a\x00\x0c
+SEQ4 R\x01\x00 \x02\x00\x00 \x80\x01\x00 
+SEQ6 SCE244_013\x00 f\x1d\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \x10\x8d\x01\x0c
+SEQ5\x03\x8d\x00\x00
  
 拓司はおそるおそる、穴に顔を近づけた。@
 壁の向こうがどうなっているのか、それだけでも確認して安心し\nておきかった。@
@@ -167,9 +229,13 @@ INIT_TEXT SCE244_013 f\x1d SCE_TEXT TEXT1 \x10\x8d\x01 TEXT2 \x8d
 \n向こう側から、誰かがこちらを見ていた。@
 \nぴったりと穴に顔を張り付かせて、壁の向こうで誰かがこちらを\nのぞき込んでいたのだ。\
 
-  
-INIT \xaa\x1d\x0c SET_VAR1 R\x01 \x02 \x80\x01 END
-INIT_TEXT SCE244_014 \x18  SCE_TEXT TEXT1 \x14\x8d\x01 TEXT2 r
+\x00\x00\x00  
+SEQ1 \xaa\x1d\x00\x0c
+SEQ4 R\x01\x00 \x02\x00\x00 \x80\x01\x00 
+SEQ6 SCE244_014\x00 \x18 \x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \x14\x8d\x01\x0c
+SEQ5\x03r\x00\x00
  
 拓司\n　「だ、誰だッ！」@
 早桃\n　「どうしたの、おにいちゃん？！」@
@@ -180,9 +246,13 @@ INIT_TEXT SCE244_014 \x18  SCE_TEXT TEXT1 \x14\x8d\x01 TEXT2 r
 早桃\n　「おにいちゃん！\p　きゃっ！」@
 \n近づいてきた早桃を突き飛ばして、拓司は狂ったように壁に体当\nたりを繰り返した。\
 
-  
-INIT \\ \x0c SET_VAR1 R\x01 \x02 \x80\x01 END
-INIT_TEXT SCE244_015 ^" SCE_TEXT TEXT1 \x18\x8d\x01 TEXT2 m
+\x00  
+SEQ1 \\ \x00\x0c
+SEQ4 R\x01\x00 \x02\x00\x00 \x80\x01\x00 
+SEQ6 SCE244_015\x00 ^"\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \x18\x8d\x01\x0c
+SEQ5\x03m\x00\x00
  
 拓司\n　「お前がやったのか？！　お前がこんなことの元凶なのかッ？\n　　！\p　ふざけるなよ、畜生！」@
 \n拓司は、穴の奥にどんよりと浮かんでいたその目を見たことがあ\nるように思えた。@
@@ -196,15 +266,23 @@ INIT_TEXT SCE244_015 ^" SCE_TEXT TEXT1 \x18\x8d\x01 TEXT2 m
 ガラス玉で作られた偽物の目。@
 狂気を呼び込み、それに容易に支配される目だった。\
 
-  
-INIT \xa2"\x0c SET_VAR1 R\x01 \x02 \x80\x01 END
-INIT_TEXT SCE244_016 \x90$ SCE_TEXT TEXT1 \x1c\x8d\x01 TEXT2 C
+\x00  
+SEQ1 \xa2"\x00\x0c
+SEQ4 R\x01\x00 \x02\x00\x00 \x80\x01\x00 
+SEQ6 SCE244_016\x00 \x90$\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \x1c\x8d\x01\x0c
+SEQ5\x03C\x00\x00
  
 体当たりを繰り返しているうちに、拓司のシャツの肩の部分には\n真っ赤な血が滲み始めた。\pそれに気づいてようやく拓司は体当た\nりをやめ、今度は椅子の脚をふりかぶって、メチャクチャに壁に\n叩き付け始めた。\pガンガンという音が頭が割れそうなくらい大き\nく響き渡る。@
 \z
-  
-INIT \xd4$\x0c SET_VAR1 R\x01 \x02 \x80\x01 END
-INIT_TEXT SCE244_017 \x1a& SCE_TEXT TEXT1  \x8d\x01 TEXT2 \x80
+\x00\x00\x00  
+SEQ1 \xd4$\x00\x0c
+SEQ4 R\x01\x00 \x02\x00\x00 \x80\x01\x00 
+SEQ6 SCE244_017\x00 \x1a&\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3  \x8d\x01\x0c
+SEQ5\x03\x80\x00\x00
  
 早桃\n　「おにいちゃん！\p　おにいちゃん！」@
 拓司\n　「！」@
@@ -215,9 +293,13 @@ INIT_TEXT SCE244_017 \x1a& SCE_TEXT TEXT1  \x8d\x01 TEXT2 \x80
 それは、津波や地震の前触れのように思えた。@
 しかし、そうではないことを、拓司は知っていた。@
 \z
-  
-INIT ^&\x0c SET_VAR1 R\x01 \x02 \x80\x01 END
-INIT_TEXT SCE244_018 \x98( SCE_TEXT TEXT1 $\x8d\x01 TEXT2 ,
+\x00\x00  
+SEQ1 ^&\x00\x0c
+SEQ4 R\x01\x00 \x02\x00\x00 \x80\x01\x00 
+SEQ6 SCE244_018\x00 \x98(\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 $\x8d\x01\x0c
+SEQ5\x03,\x00\x00
  
 早桃\n　「ねえ、なに？\p　なんなの、この音ッ？！」@
 拓司\n　「わからない！\p　わからないけど……！」@
@@ -225,13 +307,14 @@ INIT_TEXT SCE244_018 \x98( SCE_TEXT TEXT1 $\x8d\x01 TEXT2 ,
 わかっていた。@
 最終波動がやってきたのだ。\
 
-  
-INIT \xdc(\x0c SET_VAR1 R\x01 \x02 \x80\x01 END\x03
-INIT
+\x00  
+SEQ1 \xdc(\x00\x0c
+SEQ4 R\x01\x00 \x02\x00\x00 \x80\x01\x00 \x02\x00\x005\x03\r\x00\x00
 CHOICE
 シェルターに駆け戻る\n穴を広げる\n\l0,2,
 ENDCHOICE
 
-  
-INIT \xc6)\x0c SET_VAR1 R\x01 \x02 \x80\x01 END R\x01 APPLY_3 TextClose VAR1 @* END
+\x00\x00\x00  
+SEQ1 \xc6)\x00\x0c
+SEQ4 R\x01\x00 \x02\x00\x00 \x80\x01\x00 \x02\x00\x005 R\x01\x00 \x02\x00\x00\x03\x03\x00\x00TextClosev\x81\x1f@*\x00 
 END_SCRIPT

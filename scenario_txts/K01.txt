@@ -1,8 +1,14 @@
 START_SCRIPT
-\xef\x18\x01`B#\x01\x04\x12  
-INIT <\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bg.Fob VAR2  \x02 APPLY_4 BgAutoFadeIn VAR2J END  
-INIT \x08\x01\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bgm.Fob VAR1 \x88 APPlY_2 PlayCD RUNF \xb2 END
-INIT_TEXT SCEK01_001 \xce SCE_TEXT TEXT1 \xe0\xa5\x01 TEXT2 Z
+\xef\x18\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\x04\x12\x00  
+SEQ1 <\x00\x00\x0c
+SEQ4\x03\x06\x00\x00.\\Data\\Script\\Bg.Fob SPC2  \x00\x00 \x02\x00\x00\x03\x04\x00\x00BgAutoFadeIn SPC2 J\x00\x00 \x02\x00\x005  
+SEQ1 \x08\x01\x00\x0c
+SEQ4\x03\x06\x00\x00.\\Data\\Script\\Bgm.Fobv\x81\x1f\x88\x00\x00 
+SEQ2\x00\x00PlayCD SPC1 \xb2\x00\x00 
+SEQ6 SCEK01_001\x00 \xce\x00\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xe0\xa5\x01\x0c
+SEQ5\x03Z\x00\x00
  
 カンナ\n　「私、ずいぶんひどいこといったみたいね」@
 \n　カンナはそう話を切りだした。@
@@ -10,9 +16,14 @@ INIT_TEXT SCEK01_001 \xce SCE_TEXT TEXT1 \xe0\xa5\x01 TEXT2 Z
 \n拓司\n　「別に……気にしてないさ。\p何かに取り憑かれて、混乱してい\n　　ただけだ」@
 カンナ\n　「そうね……\pええ、たぶんそう。\pでも、私がいったことは事\n　　実よ」@
 拓司\n　「……」\w\z
-  
-INIT \x12\x01\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF \x9a\x02 APPlY_2 TextOn RUNF \xc8\x02 END
-INIT_TEXT SCEK01_002 \xe4\x02 SCE_TEXT TEXT1 \xe4\xa5\x01 TEXT2 \x8b
+\x00  
+SEQ1 \x12\x01\x00\x0c
+SEQ4\x03\x07\x00\x00.\\Data\\Script\\TextFunc.Fob SPC1 \x9a\x02\x00 
+SEQ2\x00\x00TextOn SPC1 \xc8\x02\x00 
+SEQ6 SCEK01_002\x00 \xe4\x02\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xe4\xa5\x01\x0c
+SEQ5\x03\x8b\x00\x00
  
 カンナ\n　「あなたは道具だって……私、いったでしょう？@
 　　それは本当なの。\p死の儀式に必要不可欠な道具だって。@
@@ -23,19 +34,29 @@ INIT_TEXT SCEK01_002 \xe4\x02 SCE_TEXT TEXT1 \xe4\xa5\x01 TEXT2 \x8b
 拓司\n　「……どういうことなんだ？」@
 カンナ\n　「長い話なんだけれど……聞いてもらえる？」@
 拓司\n　「ああ」\w\z
-  
-INIT (\x03\x0c SET_VAR1 \x9a\x02 \x02 \xc8\x02 END
-INIT_TEXT SCEK01_003 \x8e\x05 SCE_TEXT TEXT1 \xe8\xa5\x01 TEXT2 J
+\x00  
+SEQ1 (\x03\x00\x0c
+SEQ4 \x9a\x02\x00 \x02\x00\x00 \xc8\x02\x00 
+SEQ6 SCEK01_003\x00 \x8e\x05\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xe8\xa5\x01\x0c
+SEQ5\x03J\x00\x00
  
 　カンナはしばらくじっと天井を見上げて無言だった。@
 　横顔には、心の中の激しい葛藤が伺えた。@
 　カンナはそうした感情の揺らぎを必死に組み伏して、整理して\n　言葉に変えようともがいているように見えた。@
 　やがてカンナは、ぽつり、ぽつり、と少しずつ自らの死の物語\n　を、語り始めた……。\w\z
-  
-INIT \xd2\x05\x0c SET_VAR1 \x9a\x02 \x02 \xc8\x02 END  
-INIT \xc8\x0c SET_VAR1 NULL \x02 J END  
-INIT \x04\x01\x0c SET_VAR1 \x88 \x02 \xb2 END
-INIT_TEXT SCEK01_004 \x9c\x07 SCE_TEXT TEXT1 \xec\xa5\x01 TEXT2 {
+\x00  
+SEQ1 \xd2\x05\x00\x0c
+SEQ4 \x9a\x02\x00 \x02\x00\x00 \xc8\x02\x00 \x02\x00\x005  
+SEQ1 \xc8\x00\x00\x0c
+SEQ4  \x00\x00 \x02\x00\x00 J\x00\x00 \x02\x00\x005  
+SEQ1 \x04\x01\x00\x0c
+SEQ4 \x88\x00\x00 \x02\x00\x00 \xb2\x00\x00 
+SEQ6 SCEK01_004\x00 \x9c\x07\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xec\xa5\x01\x0c
+SEQ5\x03{\x00\x00
  
 　女子校というのは本当に特殊なところで、最初から、私はその\n空気に馴染むことができなかった。@
 　女の子同士の恋愛を否定する気はない。@
@@ -43,26 +64,39 @@ INIT_TEXT SCEK01_004 \x9c\x07 SCE_TEXT TEXT1 \xec\xa5\x01 TEXT2 {
 自分のこれまでの経験を通して、私はそう考えている。@
 　でも、私がそこで頻繁に見かけたベタベタとした関係は、とても\n『恋愛』と呼べるレベルのものではなかった。@
 誰かに甘えたいとか、依存したいとか……\pそういう子供っぽい欲\n求に『恋愛』というレッテルを貼って、いごこちのいい狭い輪を\n強化しているだけ。\w\z
-  
-INIT \xe0\x07\x0c SET_VAR1 \x9a\x02 \x02 \xc8\x02 END
-INIT_TEXT SCEK01_005 \x06\n SCE_TEXT TEXT1 \xf0\xa5\x01 TEXT2 \x95
+\x00  
+SEQ1 \xe0\x07\x00\x0c
+SEQ4 \x9a\x02\x00 \x02\x00\x00 \xc8\x02\x00 
+SEQ6 SCEK01_005\x00 \x06\n\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xf0\xa5\x01\x0c
+SEQ5\x03\x95\x00\x00
  
 　本物の恋愛に傷つく覚悟がない子供たちの演じる、安全な恋愛ご\nっこ。\pそんな気がして、好きになれなかった。@
 女子校における、『おままごと』的な空気はなにも恋愛に限った\n話ではなくて、髪の毛は必ず三つ編みでなければいけないとか、\n学業の妨げになるから異性との交際は禁止とか、保護者同伴なし\nでの映画館への立入は禁止とか……。@
 何もかもが、フェイクなプチ世界を、リアルな世界から守るため\nに作られているようで、うっとおしかった。@
 私が反逆者であることを、周りの人間は感じ取ったのだと思う\n（－－私は、まるで『全部反対！』ってプラカードを掲げて歩\nき回っているデモ隊みたいだったから）。\w\z
-  
-INIT J\n\x0c SET_VAR1 \x9a\x02 \x02 \xc8\x02 END
-INIT_TEXT SCEK01_006 \xd8\x0c SCE_TEXT TEXT1 \xf4\xa5\x01 TEXT2 I
+\x00\x00\x00  
+SEQ1 J\n\x00\x0c
+SEQ4 \x9a\x02\x00 \x02\x00\x00 \xc8\x02\x00 
+SEQ6 SCEK01_006\x00 \xd8\x0c\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xf4\xa5\x01\x0c
+SEQ5\x03I\x00\x00
  
 ある女の子からの『告白』を邪険に断ったのをきっかけに、\n私はあっというまにクラスのつまはじきとなった。@
 なんてくだらないんだろう、と思った。@
 こんなゴッコ遊びに参加できなくたって全然構わない、とも思っ\nた。@
 けれど、それでもやっぱり傷つきはした\n（－－そういうものでしょ？）。\w\z
-  
-INIT \x1c\r\x0c SET_VAR1 \x9a\x02 \x02 \xc8\x02 END  
-INIT =\x0c SET_VAR1 NULL \x02 J END
-INIT_TEXT SCEK01_007 \xae\x0e SCE_TEXT TEXT1 \xf8\xa5\x01 TEXT2 \x86
+\x00\x00\x00  
+SEQ1 \x1c\r\x00\x0c
+SEQ4 \x9a\x02\x00 \x02\x00\x00 \xc8\x02\x00 \x02\x00\x005  
+SEQ1 =\x00\x00\x0c
+SEQ4  \x00\x00 \x02\x00\x00 J\x00\x00 
+SEQ6 SCEK01_007\x00 \xae\x0e\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xf8\xa5\x01\x0c
+SEQ5\x03\x86\x00\x00
  
 　若草ゆきは、もっとうまくやっていた。@
 美人で明るくて、みんなの人気者だった。@
@@ -71,12 +105,14 @@ INIT_TEXT SCEK01_007 \xae\x0e SCE_TEXT TEXT1 \xf8\xa5\x01 TEXT2 \x86
 そして、いつもどおり、わかりやすい態度で「あなたが嫌い」\nと表明した。@
 だからある日の放課後、若草ゆきが声をかけてきたときにはとて\nも驚いた。@
 \n「月代さん。よかったら一緒に帰らない？」\w\z
-  
-INIT \xf2\x0e\x0c SET_VAR1 \x9a\x02 \x02 \xc8\x02 END\x03\x17
+\x00  
+SEQ1 \xf2\x0e\x00\x0c
+SEQ4 \x9a\x02\x00 \x02\x00\x00 \xc8\x02\x00 \x02\x00\x005\x03\x17\x00\x00
 CHOICE
 私はすぐさま「悪いけど」と断った\n私はあっけにとられて「うん」といっていた\n\l0,2,
 ENDCHOICE
 
-  
-INIT D\x11\x0c SET_VAR1 \x9a\x02 \x02 \xc8\x02 END \x9a\x02 APPLY_3 TextClose VAR1 \xe6\x11 END
+\x00  
+SEQ1 D\x11\x00\x0c
+SEQ4 \x9a\x02\x00 \x02\x00\x00 \xc8\x02\x00 \x02\x00\x005 \x9a\x02\x00 \x02\x00\x00\x03\x03\x00\x00TextClosev\x81\x1f\xe6\x11\x00 
 END_SCRIPT

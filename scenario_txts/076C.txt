@@ -1,14 +1,21 @@
 START_SCRIPT
-F\x08\x01`B#\x01\xbc\x06
-INIT_TEXT SCE076_001 \x06 SCE_TEXT TEXT1 `\x86 TEXT2 Q
+F\x08\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xbc\x06\x00\x03\x03\x00\x00SCE076_001\x00 \x06\x00\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 `\x86\x00\x0c
+SEQ5\x03Q\x00\x00
  
 拓司\n　「雲居さんが俺たちには見えないものが見えるというのは…\n　　…信じられないけど……どうやらウソじゃないらしい。@
 　　いままで何度も、雲居さんは『波動』ってやつを感じてき\n　　たし、俺はそれに救われてきた」@
 早桃\n　「おにいちゃん！\p　じゃあ、神凪先輩を見捨てるっていうの\n　　？！」\n拓司\n　「……」\
 
-  
-INIT J\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF \xae\x01 APPlY_2 TextOn RUNF \xdc\x01 END
-INIT_TEXT SCE076_002 \xf8\x01 SCE_TEXT TEXT1 d\x86 TEXT2 d
+\x00\x00\x00  
+SEQ1 J\x00\x00\x0c
+SEQ4\x03\x07\x00\x00.\\Data\\Script\\TextFunc.Fob SPC1 \xae\x01\x00 
+SEQ2\x00\x00TextOn SPC1 \xdc\x01\x00 
+SEQ6 SCE076_002\x00 \xf8\x01\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 d\x86\x00\x0c
+SEQ5\x03d\x00\x00
  
 早桃\n　「どうしちゃったの、おにいちゃん！\p　この人、おかしいんだ\n　　よ？！\p　やつらとか、戦士とか、最終決戦とか、シェルター\n　　とか、漫画みたいなメチャクチャばっかりじゃない！」@
 拓司\n　「俺だって！\p　……俺だって全部を信じてるわけじゃない。@
@@ -16,9 +23,13 @@ INIT_TEXT SCE076_002 \xf8\x01 SCE_TEXT TEXT1 d\x86 TEXT2 d
 早桃\n　「……」@
 拓司\n　「紅葉を助けたい気持ちは、誰にも負けないつもりだ……」\
 
-  
-INIT <\x02\x0c SET_VAR1 \xae\x01 \x02 \xdc\x01 END
-INIT_TEXT SCE076_003 \x06\x04 SCE_TEXT TEXT1 h\x86 TEXT2 r
+\x00  
+SEQ1 <\x02\x00\x0c
+SEQ4 \xae\x01\x00 \x02\x00\x00 \xdc\x01\x00 
+SEQ6 SCE076_003\x00 \x06\x04\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 h\x86\x00\x0c
+SEQ5\x03r\x00\x00
  
 早桃は俯いて、じっと床を睨んでいた。@
 そしてついポツリといった。@
@@ -28,6 +39,8 @@ INIT_TEXT SCE076_003 \x06\x04 SCE_TEXT TEXT1 h\x86 TEXT2 r
 \nなたね\n　「シェルター……シェルター……シェルター……シェルター…\n　　…シェルター」@
 \nぶつぶつと呪文のようにくり返すなたねの背中を追いながら、拓\n司は心の底に絶望をかみしめていた。\
 
-  
-INIT J\x04\x0c SET_VAR1 \xae\x01 \x02 \xdc\x01 END APPLY_FILE .\\Data\\Script\\Bgm.Fob VAR1 L\x06 APPlY_2 StopCD RUNF v\x06 END \xae\x01 APPLY_3 TextClose VAR1 \x9e\x06 END
+\x00\x00\x00  
+SEQ1 J\x04\x00\x0c
+SEQ4 \xae\x01\x00 \x02\x00\x00 \xdc\x01\x00 \x02\x00\x005\x03\x06\x00\x00.\\Data\\Script\\Bgm.Fobv\x81\x1fL\x06\x00 
+SEQ2\x00\x00StopCD SPC1 v\x06\x00 \x02\x00\x005 \xae\x01\x00 \x02\x00\x00\x03\x03\x00\x00TextClosev\x81\x1f\x9e\x06\x00 
 END_SCRIPT

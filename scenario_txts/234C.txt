@@ -1,13 +1,23 @@
 START_SCRIPT
-p*\x01`B#\x01\x1a#  
-INIT \x0c\x01\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bgm.Fob VAR1   APPlY_2 PlayCD RUNF J END
-INIT_TEXT SCE234_001 f SCE_TEXT TEXT1 @}\x01 TEXT2 \x11
+p*\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\x1a#\x00  
+SEQ1 \x0c\x01\x00\x0c
+SEQ4\x03\x06\x00\x00.\\Data\\Script\\Bgm.Fobv\x81\x1f \x00\x00 
+SEQ2\x00\x00PlayCD SPC1 J\x00\x00 
+SEQ6 SCE234_001\x00 f\x00\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 @}\x01\x0c
+SEQ5\x03\x11\x00\x00
  
 \n\n\n\n\n\n\n\n\n\n　　　　　　　　　　　　『１５日目』\
 
-  
-INIT \xaa\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF \x0e\x01 APPlY_2 TextOn RUNF <\x01 END
-INIT_TEXT SCE234_002 X\x01 SCE_TEXT TEXT1 D}\x01 TEXT2 \x7f
+\x00\x00\x00  
+SEQ1 \xaa\x00\x00\x0c
+SEQ4\x03\x07\x00\x00.\\Data\\Script\\TextFunc.Fob SPC1 \x0e\x01\x00 
+SEQ2\x00\x00TextOn SPC1 <\x01\x00 
+SEQ6 SCE234_002\x00 X\x01\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 D}\x01\x0c
+SEQ5\x03\x7f\x00\x00
  
 拓司の予想は、まったく予期せぬ形でうち砕かれた。@
 /*■CG45　表示（クロスフェード）*/\a7,-2,-2,0,\a0,44,2,0,\a6,-2,0,0,\n朝食の配給に現れた御堂は、右目に眼帯を付けていた。@
@@ -20,9 +30,13 @@ INIT_TEXT SCE234_002 X\x01 SCE_TEXT TEXT1 D}\x01 TEXT2 \x7f
 \n拓司はハッとして紅葉を見た。@
 その視線から逃れるように、紅葉は俯いた。\
 
-  
-INIT \x9c\x01\x0c SET_VAR1 \x0e\x01 \x02 <\x01 END
-INIT_TEXT SCE234_003 \xd2\x03 SCE_TEXT TEXT1 H}\x01 TEXT2 V
+\x00\x00\x00  
+SEQ1 \x9c\x01\x00\x0c
+SEQ4 \x0e\x01\x00 \x02\x00\x00 <\x01\x00 
+SEQ6 SCE234_003\x00 \xd2\x03\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 H}\x01\x0c
+SEQ5\x03V\x00\x00
  
 御堂\n　「この女はな、自分の身の安全のために、お前を売ったんだ」@
 拓司\n　「ウソだ」@
@@ -33,9 +47,13 @@ INIT_TEXT SCE234_003 \xd2\x03 SCE_TEXT TEXT1 H}\x01 TEXT2 V
 御堂\n　「じゃあ、本人に聞いてみろよ」@
 拓司\n　「……」\
 
-  
-INIT \x16\x04\x0c SET_VAR1 \x0e\x01 \x02 <\x01 END
-INIT_TEXT SCE234_004 \xa8\x05 SCE_TEXT TEXT1 L}\x01 TEXT2 `
+\x00\x00\x00  
+SEQ1 \x16\x04\x00\x0c
+SEQ4 \x0e\x01\x00 \x02\x00\x00 <\x01\x00 
+SEQ6 SCE234_004\x00 \xa8\x05\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 L}\x01\x0c
+SEQ5\x03`\x00\x00
  
 紅葉は何もいわなかった。@
 ただ黙っている。@
@@ -46,9 +64,13 @@ INIT_TEXT SCE234_004 \xa8\x05 SCE_TEXT TEXT1 L}\x01 TEXT2 `
 拓司\n　「……」@
 \nははは、と御堂が笑った。\p錦城も、さも愉快そうに笑っている。\
 
-  
-INIT \xec\x05\x0c SET_VAR1 \x0e\x01 \x02 <\x01 END
-INIT_TEXT SCE234_005 \xa6\x07 SCE_TEXT TEXT1 P}\x01 TEXT2 \x8e
+\x00  
+SEQ1 \xec\x05\x00\x0c
+SEQ4 \x0e\x01\x00 \x02\x00\x00 <\x01\x00 
+SEQ6 SCE234_005\x00 \xa6\x07\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 P}\x01\x0c
+SEQ5\x03\x8e\x00\x00
  
 御堂\n　「お前、よっぽど人望ないんだなあ。\p哀れだぜ。@
 　　……まあ、安心しろ。\pお前を処分したあとで、神凪も罰して@
@@ -60,9 +82,14 @@ INIT_TEXT SCE234_005 \xa6\x07 SCE_TEXT TEXT1 P}\x01 TEXT2 \x8e
 御堂\n　「お前が言えた義理かよ。\pなあ、虎菱？」@
 \nつかみかかってくる紅葉を一撃で壁まではじき飛ばし、御堂が叫\nんだ。\
 
-  
-INIT \xea\x07\x0c SET_VAR1 \x0e\x01 \x02 <\x01 END NULL APPlY_2 StopCD RUNF h\n END
-INIT_TEXT SCE234_006 \x84\n SCE_TEXT TEXT1 T}\x01 TEXT2 \x95
+\x00\x00\x00  
+SEQ1 \xea\x07\x00\x0c
+SEQ4 \x0e\x01\x00 \x02\x00\x00 <\x01\x00 \x02\x00\x005  \x00\x00 
+SEQ2\x00\x00StopCD SPC1 h\n\x00 
+SEQ6 SCE234_006\x00 \x84\n\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 T}\x01\x0c
+SEQ5\x03\x95\x00\x00
  
 御堂\n　「っつーわけで、楽しい処刑の始まりだ！」@
 /*▲BGM　Track10　再生*/\a2,-1,10,1,/*■CG46　表示（クロスフェード）*/\a7,-2,-2,0,\a0,45,2,0,\a6,-2,0,0,\n鳩尾に、狙い澄ました一発がきた。\p予想していたにもかかわらず\n避けられなかった。\p拓司は、もうそれだけで立っていることがで\nきなかった。@
@@ -73,9 +100,13 @@ INIT_TEXT SCE234_006 \x84\n SCE_TEXT TEXT1 T}\x01 TEXT2 \x95
 拓司の心をどす黒い絶望が覆っていた。@
 御堂に殺されるかもしれない。\pしかも信じていた紅葉に裏切られ\nて……。\
 
-  
-INIT \xc8\n\x0c SET_VAR1 \x0e\x01 \x02 <\x01 END
-INIT_TEXT SCE234_007 V\r SCE_TEXT TEXT1 X}\x01 TEXT2 \xba
+\x00\x00\x00  
+SEQ1 \xc8\n\x00\x0c
+SEQ4 \x0e\x01\x00 \x02\x00\x00 <\x01\x00 
+SEQ6 SCE234_007\x00 V\r\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 X}\x01\x0c
+SEQ5\x03\xba\x00\x00
  
 ものすごい衝撃が鼻先を直撃し、目の前に火花が散った。@
 そのままよろけて手を伸ばすと、バシャン、と鋭い音がした。@
@@ -95,9 +126,13 @@ INIT_TEXT SCE234_007 V\r SCE_TEXT TEXT1 X}\x01 TEXT2 \xba
 膝を前から蹴られる。@
 /*■黒　表示（ノンエフェクト）*/\a7,-1,-1,0,\a0,200,1,0,\a6,0,0,0,床に倒れる。\
 
-  
-INIT \x9a\r\x0c SET_VAR1 \x0e\x01 \x02 <\x01 END
-INIT_TEXT SCE234_008 \xbc\x10 SCE_TEXT TEXT1 \\}\x01 TEXT2 \x94
+\x00  
+SEQ1 \x9a\r\x00\x0c
+SEQ4 \x0e\x01\x00 \x02\x00\x00 <\x01\x00 
+SEQ6 SCE234_008\x00 \xbc\x10\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \\}\x01\x0c
+SEQ5\x03\x94\x00\x00
  
 　興奮が胸を充たし、あふれ、喉へと込み上がってきた。@
 　俺は自分が雄々しく叫ぶのだと思った。\p咆哮して……煮えたぎ\nった興奮を解き放って御堂に立ち向かうのだと思った。\pしかしそ\nんな叫び声は、いつまでたっても形にならなかった。@
@@ -106,9 +141,13 @@ INIT_TEXT SCE234_008 \xbc\x10 SCE_TEXT TEXT1 \\}\x01 TEXT2 \x94
 \n意味などなく、拓司は叫んだ。\p叫んで恐怖を胸の中から放出しな\nいと、爆発してしまいそうだった。\p気が狂いそうだった。@
 御堂の残忍な笑い顔が、ぐいっとせり上がって目の前に飛び出し\nた。\
 
-  
-INIT \x11\x0c SET_VAR1 \x0e\x01 \x02 <\x01 END
-INIT_TEXT SCE234_009 \x8a\x13 SCE_TEXT TEXT1 `}\x01 TEXT2 \xe1
+\x00\x00\x00  
+SEQ1 \x00\x11\x00\x0c
+SEQ4 \x0e\x01\x00 \x02\x00\x00 <\x01\x00 
+SEQ6 SCE234_009\x00 \x8a\x13\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 `}\x01\x0c
+SEQ5\x03\xe1\x00\x00
  
 御堂\n　「おい虎菱ィ！」@
 拓司\n　「わああああああああああああああああああああああああっ！」\n\p御堂\n　「おい虎菱ィ！」@
@@ -118,10 +157,16 @@ INIT_TEXT SCE234_009 \x8a\x13 SCE_TEXT TEXT1 `}\x01 TEXT2 \xe1
 /*■黒　表示（ノンエフェクト）*/\a7,-1,-1,0,\a0,200,1,0,\a6,0,0,0,/*■白　表示（ノンエフェクト)*/\a7,-1,-1,0,\a0,201,1,0,\a6,0,0,0,/*■CG46 表示（ノンエフェクト）*/\a7,-1,-1,0,\a0,45,1,0,\a6,0,0,0,\n御堂\n　「虎菱！\p　お前も殺してやる！\p　電波子みたいにぶっ殺して窓\n　　から捨ててやるぜ！」@
 \n叫んで、御堂は拓司の腕を逆に取った。\
 
-  
-INIT \xce\x13\x0c SET_VAR1 \x0e\x01 \x02 <\x01 END  
-INIT \xcb\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bg.Fob VAR2\xa6\x17 APPlY_2 BgOn VAR2\xd0\x17 END
-INIT_TEXT SCE234_010 \xec\x17 SCE_TEXT TEXT1 d}\x01 TEXT2 {
+\x00\x00\x00  
+SEQ1 \xce\x13\x00\x0c
+SEQ4 \x0e\x01\x00 \x02\x00\x00 <\x01\x00 \x02\x00\x005  
+SEQ1 \xcb\x00\x00\x0c
+SEQ4\x03\x06\x00\x00.\\Data\\Script\\Bg.Fob SPC2 \xa6\x17\x00 
+SEQ2\x00\x00BgOn SPC2 \xd0\x17\x00 
+SEQ6 SCE234_010\x00 \xec\x17\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 d}\x01\x0c
+SEQ5\x03{\x00\x00
  
 御堂\n　「骨折るぞ！\p　骨折るぞ！\p　ホネオルホネオルゾホネオルゾゾ\n　　ゾゾゾ！」@
 \n御堂は逆さにとった拓司の腕を、くいっと軽くひねった。@
@@ -130,9 +175,13 @@ INIT_TEXT SCE234_010 \xec\x17 SCE_TEXT TEXT1 d}\x01 TEXT2 {
 プライドも何もなかった。\p拓司は甲高い悲鳴を上げて、芋虫のよ\nうにのたうち回った。@
 \n拓司\n　「わわわわわわわわわわわわわわわわわわ！！」\
 
-  
-INIT 0\x18\x0c SET_VAR1 \x0e\x01 \x02 <\x01 END
-INIT_TEXT SCE234_011 V\x1a SCE_TEXT TEXT1 h}\x01 TEXT2 ]
+\x00  
+SEQ1 0\x18\x00\x0c
+SEQ4 \x0e\x01\x00 \x02\x00\x00 <\x01\x00 
+SEQ6 SCE234_011\x00 V\x1a\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 h}\x01\x0c
+SEQ5\x03]\x00\x00
  
 御堂\n　「もう一本もイクか、オイ？」@
 錦城\n　「やって！」@
@@ -140,9 +189,13 @@ INIT_TEXT SCE234_011 V\x1a SCE_TEXT TEXT1 h}\x01 TEXT2 ]
 \n錦城\n　「やっちゃいないなさいいいいやっておいたほがいいわこの子\n　　は危険分子やっちゃいなさい御堂くんもういっぽんもおって\n　　しまいなさいあはははははは！」@
 拓司\n　「わわわわわわわわわわわわわわわわわわ！！」\
 
-  
-INIT \x9a\x1a\x0c SET_VAR1 \x0e\x01 \x02 <\x01 END
-INIT_TEXT SCE234_012 H\x1c SCE_TEXT TEXT1 l}\x01 TEXT2 \x84
+\x00\x00\x00  
+SEQ1 \x9a\x1a\x00\x0c
+SEQ4 \x0e\x01\x00 \x02\x00\x00 <\x01\x00 
+SEQ6 SCE234_012\x00 H\x1c\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 l}\x01\x0c
+SEQ5\x03\x84\x00\x00
  
 涙と鼻水がとめどなくあふれ出てきた。@
 情けなかった。@
@@ -159,9 +212,13 @@ INIT_TEXT SCE234_012 H\x1c SCE_TEXT TEXT1 l}\x01 TEXT2 \x84
 電流のような痛みが全身を奔り、それが悲鳴となって口から迸る。\n@
 う・ああ・あ・あ・あ・あ・あ・あ・あ・あ・あ・あ・あ・あ・あ\nああああああああ！\
 
-  
-INIT \x8c\x1c\x0c SET_VAR1 \x0e\x01 \x02 <\x01 END
-INIT_TEXT SCE234_013 \xd6\x1e SCE_TEXT TEXT1 p}\x01 TEXT2 \xa8
+\x00  
+SEQ1 \x8c\x1c\x00\x0c
+SEQ4 \x0e\x01\x00 \x02\x00\x00 <\x01\x00 
+SEQ6 SCE234_013\x00 \xd6\x1e\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 p}\x01\x0c
+SEQ5\x03\xa8\x00\x00
  
 もう一本の手がギシリと歪んだ。@
 \n拓司\n　「これは夢だ！」@
@@ -170,9 +227,11 @@ INIT_TEXT SCE234_013 \xd6\x1e SCE_TEXT TEXT1 p}\x01 TEXT2 \xa8
 \n拓司\n　「こんなのは夢だ！\p　眠れ俺眠れ俺あるいは目覚めろ俺目覚め\n　　ろどちらでもいい！\p　もういやだ！\p　殺される！@
 　　うわあああああああああああああああああああああああああ\n　　あああああああああああああああああああああああああああ\n　　あああああああああああああああああああああああああああ\n　　あああああああああああああああああああああああああああ\n　　あああああああああああああああああああああああああああ\n　　あああああああああああああああああああああああああああ\n　　あああああああああああああああああああああああ！」\
 
-  
-INIT \x1a\x1f\x0c SET_VAR1 \x0e\x01 \x02 <\x01 END \x0e\x01 \x02 APPLY_4 TextWindowOff VAR1 " END  
-INIT \xca\x0c SET_VAR1 \xa6\x17 \x02 APPLY_4 BgNormalFadeIn RUNF J" END NULL \x02 h\n END  
-INIT \xc8\x0c SET_VAR1 \xa6\x17 \x02 \xd0\x17 END \x0e\x01 
-WAVL TextWindowOnDirect RUNF \xc8" END \x0e\x01 APPLY_3 TextClose VAR1 \xfc" END
+\x00\x00\x00  
+SEQ1 \x1a\x1f\x00\x0c
+SEQ4 \x0e\x01\x00 \x02\x00\x00 <\x01\x00 \x02\x00\x005 \x0e\x01\x00 \x02\x00\x00\x03\x04\x00\x00TextWindowOffv\x81\x1f\x00"\x00 \x02\x00\x005  
+SEQ1 \xca\x00\x00\x0c
+SEQ4 \xa6\x17\x00 \x02\x00\x00\x03\x04\x00\x00BgNormalFadeIn SPC1 J"\x00 \x02\x00\x005  \x00\x00 \x02\x00\x00 h\n\x00 \x02\x00\x005  
+SEQ1 \xc8\x00\x00\x0c
+SEQ4 \xa6\x17\x00 \x02\x00\x00 \xd0\x17\x00 \x02\x00\x005 \x0e\x01\x00 \x02\x00\x00\x03\x05\x00\x00TextWindowOnDirect SPC1 \xc8"\x00 \x02\x00\x005 \x0e\x01\x00 \x02\x00\x00\x03\x03\x00\x00TextClosev\x81\x1f\xfc"\x00 
 END_SCRIPT

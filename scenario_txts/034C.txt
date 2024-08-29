@@ -1,7 +1,12 @@
 START_SCRIPT
-\x97\r\x01`B#\x01:\x0b  
-INIT \t\x01\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bgm.Fob VAR1   APPlY_2 PlayCD RUNF J END
-INIT_TEXT SCE034_001 f SCE_TEXT TEXT1 \xc0D TEXT2 \xb1
+\x97\r\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00:\x0b\x00  
+SEQ1 \t\x01\x00\x0c
+SEQ4\x03\x06\x00\x00.\\Data\\Script\\Bgm.Fobv\x81\x1f \x00\x00 
+SEQ2\x00\x00PlayCD SPC1 J\x00\x00 
+SEQ6 SCE034_001\x00 f\x00\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xc0D\x00\x0c
+SEQ5\x03\xb1\x00\x00
  
 　４階。\p賑やかな教室。\pドアは開け放たれている。@
 　中を覗くと、男子学生たちの姿はすでに教室にはない。@
@@ -16,9 +21,14 @@ INIT_TEXT SCE034_001 f SCE_TEXT TEXT1 \xc0D TEXT2 \xb1
 早桃はぽつんと座っていた。@
 \n　賑やかで温かい教室の空気から、早桃の姿だけが浮き上がって\n見えた。\
 
-  
-INIT \xaa\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF \x8e\x03 APPlY_2 TextOn RUNF \xbc\x03 END
-INIT_TEXT SCE034_002 \xd8\x03 SCE_TEXT TEXT1 \xc4D TEXT2 y
+\x00  
+SEQ1 \xaa\x00\x00\x0c
+SEQ4\x03\x07\x00\x00.\\Data\\Script\\TextFunc.Fob SPC1 \x8e\x03\x00 
+SEQ2\x00\x00TextOn SPC1 \xbc\x03\x00 
+SEQ6 SCE034_002\x00 \xd8\x03\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xc4D\x00\x0c
+SEQ5\x03y\x00\x00
  
 　まるでそこに何か大切なものがあるかのように……@
 あるいは、そこしか見るべき場所がないかのように……@
@@ -31,9 +41,13 @@ INIT_TEXT SCE034_002 \xd8\x03 SCE_TEXT TEXT1 \xc4D TEXT2 y
 \n早桃\n　「あの……\pどうしたの？」@
 拓司\n　「いや。\pたまには一緒に飯でも食おうかと思ってさ」\
 
-  
-INIT \x1c\x04\x0c SET_VAR1 \x8e\x03 \x02 \xbc\x03 END
-INIT_TEXT SCE034_003 :\x06 SCE_TEXT TEXT1 \xc8D TEXT2 \\
+\x00  
+SEQ1 \x1c\x04\x00\x0c
+SEQ4 \x8e\x03\x00 \x02\x00\x00 \xbc\x03\x00 
+SEQ6 SCE034_003\x00 :\x06\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xc8D\x00\x0c
+SEQ5\x03\\\x00\x00
  
 早桃\n　「どうして？」@
 拓司\n　「どうしてって……\pなんとなくさ」@
@@ -43,9 +57,13 @@ INIT_TEXT SCE034_003 :\x06 SCE_TEXT TEXT1 \xc8D TEXT2 \\
 女子学生\n　「うぜえよ」@
 \n　そんな声が、時折やや大きめに漏れ聞こえる。\n　早桃は必死にそれに気づかない振りをしているが、声が聞こえ\nるたび、目の中に怯えと恥じらいの影がゆらぐ。\
 
-  
-INIT ~\x06\x0c SET_VAR1 \x8e\x03 \x02 \xbc\x03 END
-INIT_TEXT SCE034_004 (\x08 SCE_TEXT TEXT1 \xccD TEXT2 T
+\x00  
+SEQ1 ~\x06\x00\x0c
+SEQ4 \x8e\x03\x00 \x02\x00\x00 \xbc\x03\x00 
+SEQ6 SCE034_004\x00 (\x08\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xccD\x00\x0c
+SEQ5\x03T\x00\x00
  
 　早桃がクラスで孤立しているということはなんとなく把握して\nいるつもりだった。@
 しかし、目の当たりにしたその光景は、あまりにもリアルで、胸\nを締め付けるものだった。@
@@ -55,14 +73,19 @@ INIT_TEXT SCE034_004 (\x08 SCE_TEXT TEXT1 \xccD TEXT2 T
 拓司\n　「まだ……食べてない」@
 早桃\n　「わけてあげよっか？」\
 
-  
-INIT l\x08\x0c SET_VAR1 \x8e\x03 \x02 \xbc\x03 END
-INIT_TEXT SCE034_005 \xf6\t SCE_TEXT TEXT1 \xd0D TEXT2 '
+\x00\x00\x00  
+SEQ1 l\x08\x00\x0c
+SEQ4 \x8e\x03\x00 \x02\x00\x00 \xbc\x03\x00 
+SEQ6 SCE034_005\x00 \xf6\t\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xd0D\x00\x0c
+SEQ5\x03'\x00\x00
  
 拓司\n　「……え？」@
 早桃\n　「これ。\pほとんど口つけてないから」@
 \n　そういって早桃は、ひとかじりしただけのコッペパンを軽く振\nってみせた。\
 
-  
-INIT :\n\x0c SET_VAR1 \x8e\x03 \x02 \xbc\x03 END \x8e\x03 APPLY_3 TextClose VAR1 \x1c\x0b END
+\x00  
+SEQ1 :\n\x00\x0c
+SEQ4 \x8e\x03\x00 \x02\x00\x00 \xbc\x03\x00 \x02\x00\x005 \x8e\x03\x00 \x02\x00\x00\x03\x03\x00\x00TextClosev\x81\x1f\x1c\x0b\x00 
 END_SCRIPT

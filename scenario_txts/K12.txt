@@ -1,6 +1,8 @@
 START_SCRIPT
-\x88\t\x01`B#\x01*\x08
-INIT_TEXT SCEK12_001 \x06 SCE_TEXT TEXT1 \x90\xaa\x01 TEXT2 s
+\x88\t\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00*\x08\x00\x03\x03\x00\x00SCEK12_001\x00 \x06\x00\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \x90\xaa\x01\x0c
+SEQ5\x03s\x00\x00
  
 「朝８時に、市内のビジネスホテルで」@
 \n朝７時にいつもどおり家を出て、駅のトイレで服を着替えた。@
@@ -10,9 +12,14 @@ INIT_TEXT SCEK12_001 \x06 SCE_TEXT TEXT1 \x90\xaa\x01 TEXT2 s
 鏡で見た自分の姿は、まるで別人みたいに見えた。@
 憑き物が落ちたようないきいきとした顔が鏡の中にあったのを、\n鮮やかに覚えている。@
 サッパリしていて、自分でもちょっとすてきかな、などと思った\nくらいだった。\w\z
-  
-INIT J\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF 6\x02 APPlY_2 TextOn RUNF d\x02 END
-INIT_TEXT SCEK12_002 \x80\x02 SCE_TEXT TEXT1 \x90\xaa\x01 TEXT2 \xb4
+\x00  
+SEQ1 J\x00\x00\x0c
+SEQ4\x03\x07\x00\x00.\\Data\\Script\\TextFunc.Fob SPC1 6\x02\x00 
+SEQ2\x00\x00TextOn SPC1 d\x02\x00 
+SEQ6 SCEK12_002\x00 \x80\x02\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \x90\xaa\x01\x0c
+SEQ5\x03\xb4\x00\x00
  
 　私はそのまま約束のビジネスホテルに向かった。@
 ××予備校の夏期講習を受ける地方の学生がよく長期利用するホ\nテルで、時期がちょうどそんな時期だったこともあって、私たち\nみたいな学生が２人で向かったからといってとりわけ怪しまれる\nことはないだろうと……そう目星をつけてのことだった。@
@@ -22,15 +29,20 @@ INIT_TEXT SCEK12_002 \x80\x02 SCE_TEXT TEXT1 \x90\xaa\x01 TEXT2 \xb4
 これから死ぬというのに、ぜんぜん怖いという感じはなかった。@
 わくわくしていた。@
 ゆきといっしょに、どこか温泉にでも旅行に出かけるような、そ\nんな気分だった。\w\z
-  
-INIT \xc4\x02\x0c SET_VAR1 6\x02 \x02 d\x02 END
-INIT_TEXT SCEK12_003 \xce\x05 SCE_TEXT TEXT1 \x90\xaa\x01 TEXT2 m
+\x00  
+SEQ1 \xc4\x02\x00\x0c
+SEQ4 6\x02\x00 \x02\x00\x00 d\x02\x00 
+SEQ6 SCEK12_003\x00 \xce\x05\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \x90\xaa\x01\x0c
+SEQ5\x03m\x00\x00
  
 　綺麗に死にたいと思った。@
 首を吊って失禁したり、電車に飛び込んでバラバラになったり、\n飛び降りて見せ物になったりするのはゴメンだった。@
 痛いのも嫌だった。だから、薬で死のうと思った。@
 \n　私たちは××××という薬を何軒かのドラッグストアで分けて\n買い集め（知ってるでしょ、××××？）、銀紙の上に何瓶ぶん\nかの錠剤を載せてコンロであぶって、ドロドロに溶かした。@
 そして、薬と一緒に買ってきたプレーンヨーグルトに混ぜた。\w\z
-  
-INIT \x12\x06\x0c SET_VAR1 6\x02 \x02 d\x02 END 6\x02 APPLY_3 TextClose VAR1 \x0c\x08 END
+\x00  
+SEQ1 \x12\x06\x00\x0c
+SEQ4 6\x02\x00 \x02\x00\x00 d\x02\x00 \x02\x00\x005 6\x02\x00 \x02\x00\x00\x03\x03\x00\x00TextClosev\x81\x1f\x0c\x08\x00 
 END_SCRIPT

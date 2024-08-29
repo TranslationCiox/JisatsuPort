@@ -1,6 +1,8 @@
 START_SCRIPT
-\x94\x18\x01`B#\x01\xc8\x14
-INIT_TEXT SCE057_001 \x06 SCE_TEXT TEXT1 \xb0h TEXT2 t
+\x94\x18\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xc8\x14\x00\x03\x03\x00\x00SCE057_001\x00 \x06\x00\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xb0h\x00\x0c
+SEQ5\x03t\x00\x00
  
 学生\n　「こいつにションベンひっかけてやろうぜ？」@
 \nその異常な言葉は、しばらく無言の教室の中に行き場無くただよ\nっていた。\pしかしそれは無視されたのではない。\pゆっくりと、染\nみ渡るように教室の全員を犯していったのだ。@
@@ -9,9 +11,14 @@ INIT_TEXT SCE057_001 \x06 SCE_TEXT TEXT1 \xb0h TEXT2 t
 \n学生\n　「へへ……やっぱり最初は上村か？」@
 上村\n　「私しかいないっしょ？\p　このウザキャラ潰すのは私の使命だ\n　　からさ」\
 
-  
-INIT J\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF :\x02 APPlY_2 TextOn RUNF h\x02 END
-INIT_TEXT SCE057_002 \x84\x02 SCE_TEXT TEXT1 \xb4h TEXT2 \x85
+\x00  
+SEQ1 J\x00\x00\x0c
+SEQ4\x03\x07\x00\x00.\\Data\\Script\\TextFunc.Fob SPC1 :\x02\x00 
+SEQ2\x00\x00TextOn SPC1 h\x02\x00 
+SEQ6 SCE057_002\x00 \x84\x02\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xb4h\x00\x0c
+SEQ5\x03\x85\x00\x00
  
 \nカミムラ－－。@
 拓司はその名前を聞いたことがあった。\pたしか、早桃にいやがら\nせをしているという少女がカミムラといったはずだ……。@
@@ -22,9 +29,13 @@ INIT_TEXT SCE057_002 \x84\x02 SCE_TEXT TEXT1 \xb4h TEXT2 \x85
 上村\n　「お前がいるだけで教室の空気が澱むんだよ！」@
 早桃\n　「……」\
 
-  
-INIT \xc8\x02\x0c SET_VAR1 :\x02 \x02 h\x02 END
-INIT_TEXT SCE057_003 \x16\x05 SCE_TEXT TEXT1 \xb8h TEXT2 \x94
+\x00  
+SEQ1 \xc8\x02\x00\x0c
+SEQ4 :\x02\x00 \x02\x00\x00 h\x02\x00 
+SEQ6 SCE057_003\x00 \x16\x05\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xb8h\x00\x0c
+SEQ5\x03\x94\x00\x00
  
 上村\n　「逃げるつもり？\p　それって間違ってるって。\pこれはさ、あん\n　　たを綺麗にする儀式なんだよ？\p　生きている価値のないあん\n　　たが、身を清めて気持ちよく死ねるようになるための儀式な\n　　んだからさあ。くすくす」@
 /*■CG70　表示（クロスフェード）*/\a7,-2,-2,0,\a0,69,2,0,\a6,-2,0,0,\n途端、早桃に劇的な変化が訪れた。@
@@ -34,9 +45,13 @@ INIT_TEXT SCE057_003 \x16\x05 SCE_TEXT TEXT1 \xb8h TEXT2 \x94
 \n早桃\n　「儀式……身を清めて……死ねるための……儀式」@
 上村\n　「そうそう。儀式儀式」\
 
-  
-INIT Z\x05\x0c SET_VAR1 :\x02 \x02 h\x02 END
-INIT_TEXT SCE057_004 \xe4\x07 SCE_TEXT TEXT1 \xbch TEXT2 \x94
+\x00  
+SEQ1 Z\x05\x00\x0c
+SEQ4 :\x02\x00 \x02\x00\x00 h\x02\x00 
+SEQ6 SCE057_004\x00 \xe4\x07\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xbch\x00\x0c
+SEQ5\x03\x94\x00\x00
  
 上村はスカートの中に手を差し入れ、スルスルとショーツを脱い\nだ。\pクラスメイトが見ているというのに、なんの躊躇もない。\n逆に、脱いだショーツをひらひらと振り回して、男子学生たちに\nニヤリと笑いかける余裕さえある。\pさらにはスカートも脱ぎ、下\n半身をあらわにした。@
 男子学生たちがごくりと生唾を飲み込む。@
@@ -47,9 +62,13 @@ INIT_TEXT SCE057_004 \xe4\x07 SCE_TEXT TEXT1 \xbch TEXT2 \x94
 \n上村\n　「おしっこかけてくださいってお願いしろっていってんだよ、\n　　バカ！」@
 早桃\n　「……」\
 
-  
-INIT (\x08\x0c SET_VAR1 :\x02 \x02 h\x02 END
-INIT_TEXT SCE057_005 \xb2\n SCE_TEXT TEXT1 \xc0h TEXT2 a
+\x00\x00\x00  
+SEQ1 (\x08\x00\x0c
+SEQ4 :\x02\x00 \x02\x00\x00 h\x02\x00 
+SEQ6 SCE057_005\x00 \xb2\n\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xc0h\x00\x0c
+SEQ5\x03a\x00\x00
  
 上村\n　「あ～ウザイ！　ウザウザ！　見てるだけでぶっ殺したくなる\n　　よ！」@
 早桃\n　「ごめんなさい……か、上村さん……私に……上村さんのおし\n　　っこを……浴びせてください」@
@@ -57,9 +76,13 @@ INIT_TEXT SCE057_005 \xb2\n SCE_TEXT TEXT1 \xc0h TEXT2 a
 \n　命じられるまま、早桃は犬のように這いつくばる。@
 　上村は椅子をひとつひきずって早桃の前に配し、どっかとそこ\n　に腰を下ろした。\
 
-  
-INIT \xf6\n\x0c SET_VAR1 :\x02 \x02 h\x02 END
-INIT_TEXT SCE057_006 \xb4\x0c SCE_TEXT TEXT1 \xc4h TEXT2 \xac
+\x00  
+SEQ1 \xf6\n\x00\x0c
+SEQ4 :\x02\x00 \x02\x00\x00 h\x02\x00 
+SEQ6 SCE057_006\x00 \xb4\x0c\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xc4h\x00\x0c
+SEQ5\x03\xac\x00\x00
  
 上村\n　「ほら、もっと前にはいはいしてきなさいよォ……足下に……\n　　そうそう。いい子ね、ワンワン」@
 /*■HCG16　表示（クロスフェード）*/\a7,-2,-2,0,\a0,87,2,0,\a6,-2,0,0,\n　上村は腰を突きだし、両足を早桃の肩の上にのせた。@
@@ -72,8 +95,12 @@ INIT_TEXT SCE057_006 \xb4\x0c SCE_TEXT TEXT1 \xc4h TEXT2 \xac
 　髪の毛が汚液を吸い込んで、ぺったりと頬にへばりつく。\
 
   
-INIT \xf8\x0c\x0c SET_VAR1 :\x02 \x02 h\x02 END
-INIT_TEXT SCE057_007 \xe2\x0f SCE_TEXT TEXT1 \xc8h TEXT2 \x8d
+SEQ1 \xf8\x0c\x00\x0c
+SEQ4 :\x02\x00 \x02\x00\x00 h\x02\x00 
+SEQ6 SCE057_007\x00 \xe2\x0f\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xc8h\x00\x0c
+SEQ5\x03\x8d\x00\x00
  
 どこかで見た光景だった。@
 辱めのために汚液の的となる女の子。@
@@ -84,9 +111,13 @@ INIT_TEXT SCE057_007 \xe2\x0f SCE_TEXT TEXT1 \xc8h TEXT2 \x8d
 そう考えれば、波動やら集団自殺やらも説明が付く。@
 おそらく、御堂たちによるなたねの陵辱、あのあたりから自分は\n妄想の中にいるのだ……。\
 
-  
-INIT &\x10\x0c SET_VAR1 :\x02 \x02 h\x02 END
-INIT_TEXT SCE057_008 \x94\x12 SCE_TEXT TEXT1 \xcch TEXT2 c
+\x00\x00\x00  
+SEQ1 &\x10\x00\x0c
+SEQ4 :\x02\x00 \x02\x00\x00 h\x02\x00 
+SEQ6 SCE057_008\x00 \x94\x12\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xcch\x00\x0c
+SEQ5\x03c\x00\x00
  
 学生\n　「た、たまんねえ……俺にもかけさせてくれ」@
 学生\n　「あたしも……」@
@@ -95,6 +126,7 @@ INIT_TEXT SCE057_008 \x94\x12 SCE_TEXT TEXT1 \xcch TEXT2 c
 学生\n　「喜んでるんだろう？」@
 \n学生たちは我先に早桃へと殺到した。\p男子学生は勃起したペ○ス\nをむき出しにして、女子学生はちぎり捨てるようにスカートとシ\nョーツを脱ぎ捨てて……。\
 
-  
-INIT \xd8\x12\x0c SET_VAR1 :\x02 \x02 h\x02 END :\x02 APPLY_3 TextClose VAR1 \xaa\x14 END
+\x00\x00\x00  
+SEQ1 \xd8\x12\x00\x0c
+SEQ4 :\x02\x00 \x02\x00\x00 h\x02\x00 \x02\x00\x005 :\x02\x00 \x02\x00\x00\x03\x03\x00\x00TextClosev\x81\x1f\xaa\x14\x00 
 END_SCRIPT

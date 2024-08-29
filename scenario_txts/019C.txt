@@ -1,7 +1,12 @@
 START_SCRIPT
-\xa3\n\x01`B#\x01d\x08  
-INIT \x07\x01\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bgm.Fob VAR1   APPlY_2 PlayCD RUNF J END
-INIT_TEXT SCE019_001 f SCE_TEXT TEXT1 P- TEXT2 R
+\xa3\n\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00d\x08\x00  
+SEQ1 \x07\x01\x00\x0c
+SEQ4\x03\x06\x00\x00.\\Data\\Script\\Bgm.Fobv\x81\x1f \x00\x00 
+SEQ2\x00\x00PlayCD SPC1 J\x00\x00 
+SEQ6 SCE019_001\x00 f\x00\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 P-\x00\x0c
+SEQ5\x03R\x00\x00
  
 紅葉\n　「－－もしも～し？　聞いてますか～、トラビシタクジくん？！\n　　」@
 拓司\n　「……え？」@
@@ -13,9 +18,14 @@ INIT_TEXT SCE019_001 f SCE_TEXT TEXT1 P- TEXT2 R
 拓司\n　「らしい」@
 \n　紅葉はナサケナイ、とため息をついた。\
 
-  
-INIT \xaa\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF \x12\x02 APPlY_2 TextOn RUNF @\x02 END
-INIT_TEXT SCE019_002 \\\x02 SCE_TEXT TEXT1 T- TEXT2 L
+\x00  
+SEQ1 \xaa\x00\x00\x0c
+SEQ4\x03\x07\x00\x00.\\Data\\Script\\TextFunc.Fob SPC1 \x12\x02\x00 
+SEQ2\x00\x00TextOn SPC1 @\x02\x00 
+SEQ6 SCE019_002\x00 \\\x02\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 T-\x00\x0c
+SEQ5\x03L\x00\x00
  
 紅葉\n　「ちゃんとご飯、食べてる？」@
 拓司\n　「まあ、普通に」@
@@ -25,19 +35,28 @@ INIT_TEXT SCE019_002 \\\x02 SCE_TEXT TEXT1 T- TEXT2 L
 拓司\n　「？」@
 紅葉\n　「……あ、いや、そのね！　ほら、アンタ今日、お昼ご飯どうす\n　　るのかな、って。\pもし購買のパンとかで済ませるつもりなら－\n　　－」\
 
-  
-INIT \xa0\x02\x0c SET_VAR1 \x12\x02 \x02 @\x02 END  
-INIT \x08\x01\x0c SET_VAR1 NULL \x02 J END
-INIT_TEXT SCE019_003 >\x04 SCE_TEXT TEXT1 X- TEXT2 A
+\x00  
+SEQ1 \xa0\x02\x00\x0c
+SEQ4 \x12\x02\x00 \x02\x00\x00 @\x02\x00 \x02\x00\x005  
+SEQ1 \x08\x01\x00\x0c
+SEQ4  \x00\x00 \x02\x00\x00 J\x00\x00 
+SEQ6 SCE019_003\x00 >\x04\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 X-\x00\x0c
+SEQ5\x03A\x00\x00
  
 ？？？\n　「－－おはよう」@
 \n/*　■CG05　表示　（クロスフェード）　*/\a7,-2,-2,0,\a0,4,2,0,\a6,-2,0,0,その声は、すぐ耳元で聞こえた。@
 ぎょっとして振り返ると、すぐ後ろにひとりの女の子がひっそ\nり立っている。@
 拓司はその少女の名前を知っていた。\
 
-  
-INIT \x82\x04\x0c SET_VAR1 \x12\x02 \x02 @\x02 END
-INIT_TEXT SCE019_004 \xc0\x05 SCE_TEXT TEXT1 \\- TEXT2 \x7f
+\x00\x00  
+SEQ1 \x82\x04\x00\x0c
+SEQ4 \x12\x02\x00 \x02\x00\x00 @\x02\x00 
+SEQ6 SCE019_004\x00 \xc0\x05\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \\-\x00\x0c
+SEQ5\x03\x7f\x00\x00
  
 \n月代カンナ。@
 夜の闇を思わせる黒いストレートの髪。@
@@ -50,6 +69,7 @@ INIT_TEXT SCE019_004 \xc0\x05 SCE_TEXT TEXT1 \\- TEXT2 \x7f
 \nしかし、それにしても－－拓司は思った。@
 \n－－どうして月代カンナはおれに声をかけてきたのだろう？\
 
-  
-INIT \x04\x06\x0c SET_VAR1 \x12\x02 \x02 @\x02 END \x12\x02 APPLY_3 TextClose VAR1 F\x08 END
+\x00  
+SEQ1 \x04\x06\x00\x0c
+SEQ4 \x12\x02\x00 \x02\x00\x00 @\x02\x00 \x02\x00\x005 \x12\x02\x00 \x02\x00\x00\x03\x03\x00\x00TextClosev\x81\x1fF\x08\x00 
 END_SCRIPT

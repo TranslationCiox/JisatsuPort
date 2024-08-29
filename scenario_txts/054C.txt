@@ -1,6 +1,8 @@
 START_SCRIPT
-+\x08\x01`B#\x01\xf4\x06
-INIT_TEXT SCE054_001 \x06 SCE_TEXT TEXT1 d TEXT2 \xb2
++\x08\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xf4\x06\x00\x03\x03\x00\x00SCE054_001\x00 \x06\x00\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \x00d\x00\x0c
+SEQ5\x03\xb2\x00\x00
  
 　冗談ではない。@
 　五分も待っているわけにはいかない。@
@@ -16,8 +18,13 @@ INIT_TEXT SCE054_001 \x06 SCE_TEXT TEXT1 d TEXT2 \xb2
 　突入前から目星をつけていたほうきを掴んで、無我夢中で振り\n回す。\
 
   
-INIT J\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF 2\x03 APPlY_2 TextOn RUNF `\x03 END
-INIT_TEXT SCE054_002 |\x03 SCE_TEXT TEXT1 \x04d TEXT2 \x9a
+SEQ1 J\x00\x00\x0c
+SEQ4\x03\x07\x00\x00.\\Data\\Script\\TextFunc.Fob SPC1 2\x03\x00 
+SEQ2\x00\x00TextOn SPC1 `\x03\x00 
+SEQ6 SCE054_002\x00 |\x03\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \x04d\x00\x0c
+SEQ5\x03\x9a\x00\x00
  
 　一人、二人、三人、四人……@
 　突然、背後からのしかかられるような形で床に押し倒された。@
@@ -32,7 +39,9 @@ INIT_TEXT SCE054_002 |\x03 SCE_TEXT TEXT1 \x04d TEXT2 \x9a
 　やがて潮が引くように、声が収まっていった。@
 　静寂の中、バットが振り下ろされた。@
 \z
-  
-INIT \xc0\x03\x0c SET_VAR1 2\x03 \x02 `\x03 END  
-INIT \xc8\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bg.Fob VAR2|\x06 \x02 APPLY_4 BgAutoFadeIn VAR2\xa6\x06 END 2\x03 APPLY_3 TextClose VAR1 \xd6\x06 END
+\x00\x00\x00  
+SEQ1 \xc0\x03\x00\x0c
+SEQ4 2\x03\x00 \x02\x00\x00 `\x03\x00 \x02\x00\x005  
+SEQ1 \xc8\x00\x00\x0c
+SEQ4\x03\x06\x00\x00.\\Data\\Script\\Bg.Fob SPC2 |\x06\x00 \x02\x00\x00\x03\x04\x00\x00BgAutoFadeIn SPC2 \xa6\x06\x00 \x02\x00\x005 2\x03\x00 \x02\x00\x00\x03\x03\x00\x00TextClosev\x81\x1f\xd6\x06\x00 
 END_SCRIPT

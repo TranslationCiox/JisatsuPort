@@ -1,6 +1,10 @@
 START_SCRIPT
-'\x11\x01`B#\x01@\r APPLY_FILE .\\Data\\Script\\Bgm.Fob VAR1 \x06 APPlY_2 StopCD RUNF 0 END
-INIT_TEXT SCE077_001 L SCE_TEXT TEXT1 \xf0\x87 TEXT2 ~
+'\x11\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00@\r\x00\x03\x06\x00\x00.\\Data\\Script\\Bgm.Fobv\x81\x1f\x06\x00\x00 
+SEQ2\x00\x00StopCD SPC1 0\x00\x00 
+SEQ6 SCE077_001\x00 L\x00\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xf0\x87\x00\x0c
+SEQ5\x03~\x00\x00
  
 拓司\n　「雲居さんが俺たちには見えないものが見えるというのは…\n　　…信じられないけど……どうやらウソじゃないらしい。@
 　　いままで何度も、雲居さんは『波動』ってやつを感じてき\n　　たし、俺はそれに救われてきた」@
@@ -11,10 +15,17 @@ INIT_TEXT SCE077_001 L SCE_TEXT TEXT1 \xf0\x87 TEXT2 ~
 早桃\n　「おにいちゃん？！」@
 拓司\n　「俺が行く。\pだから雲居さんは２人をシェルターに連れてい\n　　ってやってくれ」\
 
-  
-INIT \x90\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF \xa8\x02 APPlY_2 TextOn RUNF \xd6\x02 END  
-INIT \x08\x01\x0c SET_VAR1 \x06 APPlY_2 PlayCD RUNF \x18\x03 END
-INIT_TEXT SCE077_002 4\x03 SCE_TEXT TEXT1 \xf4\x87 TEXT2 X
+\x00  
+SEQ1 \x90\x00\x00\x0c
+SEQ4\x03\x07\x00\x00.\\Data\\Script\\TextFunc.Fob SPC1 \xa8\x02\x00 
+SEQ2\x00\x00TextOn SPC1 \xd6\x02\x00 \x02\x00\x005  
+SEQ1 \x08\x01\x00\x0c
+SEQ4 \x06\x00\x00 
+SEQ2\x00\x00PlayCD SPC1 \x18\x03\x00 
+SEQ6 SCE077_002\x00 4\x03\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xf4\x87\x00\x0c
+SEQ5\x03X\x00\x00
  
 早桃\n　「イヤだよ！\p　早桃、やだからね！」@
 拓司\n　「……」@
@@ -25,9 +36,13 @@ INIT_TEXT SCE077_002 4\x03 SCE_TEXT TEXT1 \xf4\x87 TEXT2 X
 早桃\n　「……」@
 拓司\n　「紅葉を助けるために、お前たちを危険にさらすわけにはいか\n　　ない」\
 
-  
-INIT x\x03\x0c SET_VAR1 \xa8\x02 \x02 \xd6\x02 END
-INIT_TEXT SCE077_003 \x12\x05 SCE_TEXT TEXT1 \xf8\x87 TEXT2 O
+\x00  
+SEQ1 x\x03\x00\x0c
+SEQ4 \xa8\x02\x00 \x02\x00\x00 \xd6\x02\x00 
+SEQ6 SCE077_003\x00 \x12\x05\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xf8\x87\x00\x0c
+SEQ5\x03O\x00\x00
  
 早桃\n　「……」@
 拓司\n　「……」@
@@ -36,9 +51,13 @@ INIT_TEXT SCE077_003 \x12\x05 SCE_TEXT TEXT1 \xf8\x87 TEXT2 O
 早桃\n　「でも約束だよ？\p　絶対戻ってきて。\pおにいちゃんが死んじゃ\n　　ったら、早桃、早桃……」@
 \n　ぶるぶると震える早桃の肩を、拓司は優しくかき抱いた。\pそれ\n　から肩に担いだカンナを２人に任せ、なたねに尋ねた。\
 
-  
-INIT V\x05\x0c SET_VAR1 \xa8\x02 \x02 \xd6\x02 END
-INIT_TEXT SCE077_004 \xcc\x06 SCE_TEXT TEXT1 \xfc\x87 TEXT2 d
+\x00  
+SEQ1 V\x05\x00\x0c
+SEQ4 \xa8\x02\x00 \x02\x00\x00 \xd6\x02\x00 
+SEQ6 SCE077_004\x00 \xcc\x06\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xfc\x87\x00\x0c
+SEQ5\x03d\x00\x00
  
 拓司\n　「４階の実験室だな？」@
 なたね\n　「なにが？」@
@@ -49,9 +68,13 @@ INIT_TEXT SCE077_004 \xcc\x06 SCE_TEXT TEXT1 \xfc\x87 TEXT2 d
 拓司\n　「そりゃどうも」@
 なたね\n　「ここで虎菱くんを失うのは、地球の戦士たちにとって大きな\n　　痛手。\p哀しいことだわ」\
 
-  
-INIT \x10\x07\x0c SET_VAR1 \xa8\x02 \x02 \xd6\x02 END
-INIT_TEXT SCE077_005 \xda\x08 SCE_TEXT TEXT1 \x88 TEXT2 E
+\x00\x00\x00  
+SEQ1 \x10\x07\x00\x0c
+SEQ4 \xa8\x02\x00 \x02\x00\x00 \xd6\x02\x00 
+SEQ6 SCE077_005\x00 \xda\x08\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \x00\x88\x00\x0c
+SEQ5\x03E\x00\x00
  
 拓司\n　「……死んだら、な」@
 なたね\n　「死ぬわ」@
@@ -60,24 +83,31 @@ INIT_TEXT SCE077_005 \xda\x08 SCE_TEXT TEXT1 \x88 TEXT2 E
 \n　拓司は肩をすくめて、さあ行ってくれ、と言った。@
 　振り返り振り返り、早桃たち３人の姿が廊下の向こうに消えさ\n　ったのを見送り、拓司はよし、とつぶやいた。\
 
-  
-INIT \x1e\t\x0c SET_VAR1 \xa8\x02 \x02 \xd6\x02 END \x06 \x02 0 END  
-INIT <\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.fob RUNF \xa0\n APPLY_3 WaitTime VAR2\xce\n END  
-INIT \t\x01\x0c SET_VAR1 \x06 \x02 \x18\x03 END
-INIT_TEXT SCE077_006 "\x0b SCE_TEXT TEXT1 \x04\x88 TEXT2 B
+\x00\x00\x00  
+SEQ1 \x1e\t\x00\x0c
+SEQ4 \xa8\x02\x00 \x02\x00\x00 \xd6\x02\x00 \x02\x00\x005 \x06\x00\x00 \x02\x00\x00 0\x00\x00 \x02\x00\x005  
+SEQ1 <\x00\x00\x0c
+SEQ4\x03\x07\x00\x00.\\Data\\Script\\TextFunc.fob SPC1 \xa0\n\x00 \x02\x00\x00\x03\x03\x00\x00WaitTime SPC2 \xce\n\x00 \x02\x00\x005  
+SEQ1 \t\x01\x00\x0c
+SEQ4 \x06\x00\x00 \x02\x00\x00 \x18\x03\x00 
+SEQ6 SCE077_006\x00 "\x0b\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \x04\x88\x00\x0c
+SEQ5\x03B\x00\x00
  
 　渡り廊下は静まり返っている。@
 　見渡す限り、なにもない。@
 　それでも波動が充ちていると－－なたねはいう。@
 　波動というのがなんなのかがわからない以上、一気に走り抜け\n　るべきなのか、あるいは静かに前進すべきなのか、それすら判\n　断のしようがない。\
 
-  
-INIT f\x0b\x0c SET_VAR1 \xa8\x02 \x02 \xd6\x02 END\x03
-INIT
+\x00  
+SEQ1 f\x0b\x00\x0c
+SEQ4 \xa8\x02\x00 \x02\x00\x00 \xd6\x02\x00 \x02\x00\x005\x03\r\x00\x00
 CHOICE
 一気に走り抜ける\n慎重に歩いてゆく\n\l0,2,
 ENDCHOICE
 
-  
-INIT \xa8\x0c\x0c SET_VAR1 \xa8\x02 \x02 \xd6\x02 END \xa8\x02 APPLY_3 TextClose VAR1 "\r END
+\x00  
+SEQ1 \xa8\x0c\x00\x0c
+SEQ4 \xa8\x02\x00 \x02\x00\x00 \xd6\x02\x00 \x02\x00\x005 \xa8\x02\x00 \x02\x00\x00\x03\x03\x00\x00TextClosev\x81\x1f"\r\x00 
 END_SCRIPT

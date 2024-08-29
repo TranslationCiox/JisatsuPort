@@ -1,17 +1,28 @@
 START_SCRIPT
-\xb3\x18\x01`B#\x01v\x14  
-INIT \xc8\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bg.Fob VAR2  \x02 APPLY_4 BgAutoFadeIn VAR2J END  
-INIT \x08\x01\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bgm.Fob VAR1 \x88 APPlY_2 PlayCD RUNF \xb2 END
-INIT_TEXT SCEK10_001 \xce SCE_TEXT TEXT1 \xe0\xa5\x01 TEXT2 q
+\xb3\x18\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00v\x14\x00  
+SEQ1 \xc8\x00\x00\x0c
+SEQ4\x03\x06\x00\x00.\\Data\\Script\\Bg.Fob SPC2  \x00\x00 \x02\x00\x00\x03\x04\x00\x00BgAutoFadeIn SPC2 J\x00\x00 \x02\x00\x005  
+SEQ1 \x08\x01\x00\x0c
+SEQ4\x03\x06\x00\x00.\\Data\\Script\\Bgm.Fobv\x81\x1f\x88\x00\x00 
+SEQ2\x00\x00PlayCD SPC1 \xb2\x00\x00 
+SEQ6 SCEK10_001\x00 \xce\x00\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xe0\xa5\x01\x0c
+SEQ5\x03q\x00\x00
  
 　ゆきが物心ついたときから、父親はすでに若草家の絶対君主だ\nったという。@
 ゆきの家にはたくさんのルールがあった。@
 そのルールの内容を完全に把握しているのは、ルールを作った父\n親ただひとりだった。@
 つまり、父親が望めば（お酒を飲んだときとか、夕食の味が薄す\nぎたときとか、ひいきの野球チームが負けたときとか、天気が悪\nかったときとかね）\nルールはいつでも『破られた』ことになった。@
 父親は、ルールを破った罪で、ゆきの母親を容赦なく罰した。\w\z
-  
-INIT \x12\x01\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF \xf6\x02 APPlY_2 TextOn RUNF $\x03 END
-INIT_TEXT SCEK10_002 @\x03 SCE_TEXT TEXT1 t\xa7\x01 TEXT2 \x82
+\x00  
+SEQ1 \x12\x01\x00\x0c
+SEQ4\x03\x07\x00\x00.\\Data\\Script\\TextFunc.Fob SPC1 \xf6\x02\x00 
+SEQ2\x00\x00TextOn SPC1 $\x03\x00 
+SEQ6 SCEK10_002\x00 @\x03\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 t\xa7\x01\x0c
+SEQ5\x03\x82\x00\x00
  
 「ひざまづけ」@
 と父親はいって、母親を犬のような格好でよつんばいにさせた。@
@@ -21,41 +32,61 @@ INIT_TEXT SCEK10_002 @\x03 SCE_TEXT TEXT1 t\xa7\x01 TEXT2 \x82
 「よく見ておくんだぞ、ゆき」と父親はいった。@
 「お前もパパに逆らったら、こうなるんだからな」@
 ゆきは怖くて仕方がなかったけれど、黙って見ているしかなかっ\nた。\w\z
-  
-INIT \x84\x03\x0c SET_VAR1 \xf6\x02 \x02 $\x03 END
-INIT_TEXT SCEK10_003 \xc6\x05 SCE_TEXT TEXT1 x\xa7\x01 TEXT2 *
+\x00  
+SEQ1 \x84\x03\x00\x0c
+SEQ4 \xf6\x02\x00 \x02\x00\x00 $\x03\x00 
+SEQ6 SCEK10_003\x00 \xc6\x05\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 x\xa7\x01\x0c
+SEQ5\x03*\x00\x00
  
 　懲罰は、もっと単純に、げんこつや平手で下されることも多か\nった。@
 母親は、歯を食いしばって耐えていた。@
 そして父親がいないところで、声を押し殺して泣いた。\w\z
-  
-INIT \n\x06\x0c SET_VAR1 \xf6\x02 \x02 $\x03 END
-INIT_TEXT SCEK10_004 \xec\x06 SCE_TEXT TEXT1 |\xa7\x01 TEXT2 E
+\x00  
+SEQ1 \n\x06\x00\x0c
+SEQ4 \xf6\x02\x00 \x02\x00\x00 $\x03\x00 
+SEQ6 SCEK10_004\x00 \xec\x06\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 |\xa7\x01\x0c
+SEQ5\x03E\x00\x00
  
 ゆきはある日、勇気を振り絞って母親に\n「ここを出て、どこかへ逃げよう」と申し出た。@
 母親がかわいそうでならなかったし、なによりも懲罰を見せられ\nることに、自分がもう耐えられなかった。@
 「そうね」と母親はいった。@
 「明日、ゆきちゃんと一緒にどこかに行きましょうね」\w\z
-  
-INIT 0\x07\x0c SET_VAR1 \xf6\x02 \x02 $\x03 END
-INIT_TEXT SCEK10_005 ~\x08 SCE_TEXT TEXT1 \x80\xa7\x01 TEXT2 i
+\x00  
+SEQ1 0\x07\x00\x0c
+SEQ4 \xf6\x02\x00 \x02\x00\x00 $\x03\x00 
+SEQ6 SCEK10_005\x00 ~\x08\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \x80\xa7\x01\x0c
+SEQ5\x03i\x00\x00
  
 　その晩、ゆきは大切な物をリュックサックにひとまとめにして、\n一晩中暗闇のなかで息を潜めて待った。@
 日が昇ったころ、母親がこっそり部屋にやってくるのだろうと思\nっていた。@
 そして２人は、父親の手の届かない、どこか遠い場所へと去って\nゆくのだ。@
 　しかし母親はその晩、いつまで待ってもゆきの部屋には現れな\nかった。@
 翌朝、何事もなかったように台所で朝食を作る母親の姿を見て、\nゆきは深く傷つき、落胆した。\w\z
-  
-INIT \xc2\x08\x0c SET_VAR1 \xf6\x02 \x02 $\x03 END
-INIT_TEXT SCEK10_006 \xa0\n SCE_TEXT TEXT1 \x84\xa7\x01 TEXT2 v
+\x00\x00\x00  
+SEQ1 \xc2\x08\x00\x0c
+SEQ4 \xf6\x02\x00 \x02\x00\x00 $\x03\x00 
+SEQ6 SCEK10_006\x00 \xa0\n\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \x84\xa7\x01\x0c
+SEQ5\x03v\x00\x00
  
 　その後、幾度となく繰り返されることとなったそうした落胆を通\nじて、ゆきはようやく、母親には逃げる気などないということを\n思い知った。@
 ゆきは最初、母親が何を考えているのかまったく理解できなかっ\nた（お話の中では、主人公は意地悪な継母の元を飛び出して、最\n後は幸福を掴むと決まっていたから）。@
 なにか呪われた秘密のようなものが、母親と父親の間には隠され\nているのではないかとさえ考えた。@
 しかしそのうち、事態はそれほど複雑ではないということがわか\nってきた。\w\z
-  
-INIT \xe4\n\x0c SET_VAR1 \xf6\x02 \x02 $\x03 END
-INIT_TEXT SCEK10_007 \xf6\x0c SCE_TEXT TEXT1 \x88\xa7\x01 TEXT2 \xcd
+\x00  
+SEQ1 \xe4\n\x00\x0c
+SEQ4 \xf6\x02\x00 \x02\x00\x00 $\x03\x00 
+SEQ6 SCEK10_007\x00 \xf6\x0c\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \x88\xa7\x01\x0c
+SEQ5\x03\xcd\x00\x00
  
 　ただ単純に、母親は諦めてしまっていたのだ。@
 母親は、すべての物語はそもそもの初めからすでに起こるべく決\n定されていたと考えているようだった。@
@@ -68,9 +99,13 @@ INIT_TEXT SCEK10_007 \xf6\x0c SCE_TEXT TEXT1 \x88\xa7\x01 TEXT2 \xcd
 人生が加える理不尽な打擲にただ耐えるだけの大人になってしま\nうのではないか？@
 一度そう考えると、もう逃げることができなくなっていた。@
 ゆきは、脅迫神経症的に、大人になることを恐れるようになって\nいった……。\w\z
-  
-INIT :\r\x0c SET_VAR1 \xf6\x02 \x02 $\x03 END
-INIT_TEXT SCEK10_008 \xa8\x10 SCE_TEXT TEXT1 \x8c\xa7\x01 TEXT2 x
+\x00  
+SEQ1 :\r\x00\x0c
+SEQ4 \xf6\x02\x00 \x02\x00\x00 $\x03\x00 
+SEQ6 SCEK10_008\x00 \xa8\x10\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \x8c\xa7\x01\x0c
+SEQ5\x03x\x00\x00
  
 　恐怖が、ゆきの背後からぐいぐいと迫ってきていた。@
 月日は容赦なく流れ、ゆきはどんどん大人になっていった。@
@@ -80,14 +115,19 @@ INIT_TEXT SCEK10_008 \xa8\x10 SCE_TEXT TEXT1 \x8c\xa7\x01 TEXT2 x
 恐怖から逃れるには、そうするのが一番確実だと考えた。@
 ゆきは台所から包丁を持ち出して部屋に戻って、喉を突こうとし\nた。@
 でも、できなかった（もちろん、怖かったからよ）。\w\z
-  
-INIT \xec\x10\x0c SET_VAR1 \xf6\x02 \x02 $\x03 END
-INIT_TEXT SCEK10_009 \x06\x13 SCE_TEXT TEXT1 \x90\xa7\x01 TEXT2 2
+\x00  
+SEQ1 \xec\x10\x00\x0c
+SEQ4 \xf6\x02\x00 \x02\x00\x00 $\x03\x00 
+SEQ6 SCEK10_009\x00 \x06\x13\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \x90\xa7\x01\x0c
+SEQ5\x032\x00\x00
  
 　ゆきは人生を終わらせるきっかけを探し続けた。@
 入学したとき。\p初潮を迎えたとき。@
 そしてその日、７月２７日、誕生日。@
 \nでもゆきは死ぬことができなかった（もちろん、怖かったからよ）\n\w\z
-  
-INIT J\x13\x0c SET_VAR1 \xf6\x02 \x02 $\x03 END \xf6\x02 APPLY_3 TextClose VAR1 X\x14 END
+\x00\x00\x00  
+SEQ1 J\x13\x00\x0c
+SEQ4 \xf6\x02\x00 \x02\x00\x00 $\x03\x00 \x02\x00\x005 \xf6\x02\x00 \x02\x00\x00\x03\x03\x00\x00TextClosev\x81\x1fX\x14\x00 
 END_SCRIPT

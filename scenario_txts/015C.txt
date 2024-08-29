@@ -1,6 +1,8 @@
 START_SCRIPT
-"\x06\x01\xa4\t3\x01\x18\x05
-INIT_TEXT SCE015_001 \x06 SCE_TEXT TEXT1 \x10' TEXT2 \xa8
+"\x06\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xa4\t3\x01\x00\x00\x00\x18\x05\x00\x03\x03\x00\x00SCE015_001\x00 \x06\x00\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \x10'\x00\x0c
+SEQ5\x03\xa8\x00\x00
  
 紅葉\n　「失礼ね、あるわよ！　私はアンタみたいにゴロゴロ過ごしてな\n　　いんだから、アンタよりよっぽどバテバテなの！　バイトだっ\n　　てやってるし、来週はライブに行くし、受験勉強だってそこそ\n　　こ……まあ、一応……ええと……とにかく夏バテしてるわよ！\n　　でも、それを他人にわからせないようにしてるっていうのが、\n　　私のすごいところなわけなのよ」@
 拓司\n　「ウソつけ。ただ体力が有り余ってるだけだろ」@
@@ -8,9 +10,14 @@ INIT_TEXT SCE015_001 \x06 SCE_TEXT TEXT1 \x10' TEXT2 \xa8
 拓司\n　「へいへい。どうせモヤシ君だよ」@
 紅葉\n　「アンタさあ、もうちょっと身体鍛えないと、いざというときに\n　　困るよ？」\
 
-  
-INIT J\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF \n\x03 APPlY_2 TextOn RUNF 8\x03 END
-INIT_TEXT SCE015_002 T\x03 SCE_TEXT TEXT1 \x14' TEXT2 G
+\x00\x00\x00  
+SEQ1 J\x00\x00\x0c
+SEQ4\x03\x07\x00\x00.\\Data\\Script\\TextFunc.Fob SPC1 \n\x03\x00 
+SEQ2\x00\x00TextOn SPC1 8\x03\x00 
+SEQ6 SCE015_002\x00 T\x03\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \x14'\x00\x0c
+SEQ5\x03G\x00\x00
  
 拓司\n　「いざというときって、なんだよ？　核戦争が起こって世界が暴\n　　力の時代になったときか？　悪の改造人間が襲いかかってきた\n　　ときか？」@
 紅葉\n　「……まったく、口だけは達者なんだから」@
@@ -18,6 +25,7 @@ INIT_TEXT SCE015_002 T\x03 SCE_TEXT TEXT1 \x14' TEXT2 G
 紅葉\n　「ふん」@
 拓司\n　「ふん」\
 
-  
-INIT \x98\x03\x0c SET_VAR1 \n\x03 \x02 8\x03 END \n\x03 APPLY_3 TextClose VAR1 \xfa\x04 END
+\x00\x00\x00  
+SEQ1 \x98\x03\x00\x0c
+SEQ4 \n\x03\x00 \x02\x00\x00 8\x03\x00 \x02\x00\x005 \n\x03\x00 \x02\x00\x00\x03\x03\x00\x00TextClosev\x81\x1f\xfa\x04\x00 
 END_SCRIPT

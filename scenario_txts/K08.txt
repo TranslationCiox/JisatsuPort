@@ -1,6 +1,8 @@
 START_SCRIPT
-f\x04\x01\xa4\t3\x01\xbe\x03
-INIT_TEXT SCEK08_001 \x06 SCE_TEXT TEXT1  \xa7\x01 TEXT2 \xb8
+f\x04\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xa4\t3\x01\x00\x00\x00\xbe\x03\x00\x03\x03\x00\x00SCEK08_001\x00 \x06\x00\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3  \xa7\x01\x0c
+SEQ5\x03\xb8\x00\x00
  
 「だめよ」とゆきはいった。@
 それまで聞いたこともない、強い口調だった。\pだめよ。@
@@ -14,6 +16,8 @@ INIT_TEXT SCEK08_001 \x06 SCE_TEXT TEXT1  \xa7\x01 TEXT2 \xb8
 氷みたいに冷たく、冴えていた。@
 理性的判断を通過した非常識な答。@
 非常識であることを十分理解したうえで、彼女は非常識を遂行し\nようとしていた。\p怖かった。\w\z
-  
-INIT J\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF J\x03 APPlY_2 TextOn RUNF x\x03 END J\x03 APPLY_3 TextClose VAR1 \xa0\x03 END
+\x00  
+SEQ1 J\x00\x00\x0c
+SEQ4\x03\x07\x00\x00.\\Data\\Script\\TextFunc.Fob SPC1 J\x03\x00 
+SEQ2\x00\x00TextOn SPC1 x\x03\x00 \x02\x00\x005 J\x03\x00 \x02\x00\x00\x03\x03\x00\x00TextClosev\x81\x1f\xa0\x03\x00 
 END_SCRIPT

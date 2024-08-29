@@ -1,7 +1,12 @@
 START_SCRIPT
-\x9b\x19\x01`B#\x01\xde\x14  
-INIT \x04\x01\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bgm.Fob VAR1   APPlY_2 PlayCD RUNF J END
-INIT_TEXT SCE239_001 f SCE_TEXT TEXT1 \x10\x85\x01 TEXT2 f
+\x9b\x19\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xde\x14\x00  
+SEQ1 \x04\x01\x00\x0c
+SEQ4\x03\x06\x00\x00.\\Data\\Script\\Bgm.Fobv\x81\x1f \x00\x00 
+SEQ2\x00\x00PlayCD SPC1 J\x00\x00 
+SEQ6 SCE239_001\x00 f\x00\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \x10\x85\x01\x0c
+SEQ5\x03f\x00\x00
  
 拓司は再び、空白の世界に立っていた。@
 隣には、雲居ナタネが立っている。@
@@ -10,9 +15,14 @@ INIT_TEXT SCE239_001 f SCE_TEXT TEXT1 \x10\x85\x01 TEXT2 f
 \n拓司\n　「自分がこんなに安っぽい人間だったとはなあ。\pなにかあると\n　　ピカーって……ワンパターンにもほどがあるよ」@
 ナタネ\n　「くすくす。\p誰だって、子供っぽい空想の世界は持っているわ。\n　　\pだから特別あなたが幼稚ってわけでもないと思う」\
 
-  
-INIT \xaa\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF b\x02 APPlY_2 TextOn RUNF \x90\x02 END
-INIT_TEXT SCE239_002 \xac\x02 SCE_TEXT TEXT1 \x14\x85\x01 TEXT2 o
+\x00\x00\x00  
+SEQ1 \xaa\x00\x00\x0c
+SEQ4\x03\x07\x00\x00.\\Data\\Script\\TextFunc.Fob SPC1 b\x02\x00 
+SEQ2\x00\x00TextOn SPC1 \x90\x02\x00 
+SEQ6 SCE239_002\x00 \xac\x02\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \x14\x85\x01\x0c
+SEQ5\x03o\x00\x00
  
 拓司\n　「ありがとう」@
 \nいいながら拓司は、ナタネがそういってくれるのは、自分がそう\nいって欲しいと望んでいるからに他ならないことを理解していた。\n\pただ、その「ありがとう」は、自然に、拓司の心の一番深い場所\nから生まれてきた言葉だった。@
@@ -22,9 +32,13 @@ INIT_TEXT SCE239_002 \xac\x02 SCE_TEXT TEXT1 \x14\x85\x01 TEXT2 o
 「ありがとう」は感謝の言葉。@
 いま、この瞬間、そう決まったのだ。\
 
-  
-INIT \xf0\x02\x0c SET_VAR1 b\x02 \x02 \x90\x02 END
-INIT_TEXT SCE239_003 \xe6\x04 SCE_TEXT TEXT1 \x18\x85\x01 TEXT2 \x81
+\x00\x00\x00  
+SEQ1 \xf0\x02\x00\x0c
+SEQ4 b\x02\x00 \x02\x00\x00 \x90\x02\x00 
+SEQ6 SCE239_003\x00 \xe6\x04\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \x18\x85\x01\x0c
+SEQ5\x03\x81\x00\x00
  
 拓司\n　「そういうことなんだな」@
 \nナタネは無言で頷いた。@
@@ -32,9 +46,13 @@ INIT_TEXT SCE239_003 \xe6\x04 SCE_TEXT TEXT1 \x18\x85\x01 TEXT2 \x81
 ナタネ\n　「あなたが決めることよ。\pでも、私は……そうだといいなって\n　　思う」@
 拓司\n　「そうか」\
 
-  
-INIT *\x05\x0c SET_VAR1 b\x02 \x02 \x90\x02 END
-INIT_TEXT SCE239_004 h\x07 SCE_TEXT TEXT1 \x1c\x85\x01 TEXT2 \x87
+\x00  
+SEQ1 *\x05\x00\x0c
+SEQ4 b\x02\x00 \x02\x00\x00 \x90\x02\x00 
+SEQ6 SCE239_004\x00 h\x07\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \x1c\x85\x01\x0c
+SEQ5\x03\x87\x00\x00
  
 拓司はナタネを見つめた。@
 そこにいるナタネは、拓司の世界のなたねの、本来あるべき姿な\nのかもしれなかった。@
@@ -48,9 +66,13 @@ INIT_TEXT SCE239_004 h\x07 SCE_TEXT TEXT1 \x1c\x85\x01 TEXT2 \x87
 なたねはゲームをやり損なってしまった。@
 それが現実なのだ。\
 
-  
-INIT \xac\x07\x0c SET_VAR1 b\x02 \x02 \x90\x02 END
-INIT_TEXT SCE239_005 \x02\n SCE_TEXT TEXT1  \x85\x01 TEXT2 ^
+\x00\x00\x00  
+SEQ1 \xac\x07\x00\x0c
+SEQ4 b\x02\x00 \x02\x00\x00 \x90\x02\x00 
+SEQ6 SCE239_005\x00 \x02\n\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3  \x85\x01\x0c
+SEQ5\x03^\x00\x00
  
 拓司\n　「雲居さん。\pおれはこれから、ひとつの世界を創る」@
 ナタネ\n　「……」@
@@ -60,18 +82,26 @@ INIT_TEXT SCE239_005 \x02\n SCE_TEXT TEXT1  \x85\x01 TEXT2 ^
 ナタネ\n　「ええ、そうね」@
 拓司\n　「その世界では、きみは－－」\
 
-  
-INIT F\n\x0c SET_VAR1 b\x02 \x02 \x90\x02 END
-INIT_TEXT SCE239_006 \xf8\x0b SCE_TEXT TEXT1 $\x85\x01 TEXT2 *
+\x00  
+SEQ1 F\n\x00\x0c
+SEQ4 b\x02\x00 \x02\x00\x00 \x90\x02\x00 
+SEQ6 SCE239_006\x00 \xf8\x0b\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 $\x85\x01\x0c
+SEQ5\x03*\x00\x00
  
 ナタネ\n　「さあ、早く創るのよ」@
 \nナタネは微笑んで、いった。@
 \nナタネ\n　「だって、ここは殺風景すぎるもの」@
 拓司\n　「そうだな……ああ、そうだよな」\
 
-  
-INIT <\x0c\x0c SET_VAR1 b\x02 \x02 \x90\x02 END
-INIT_TEXT SCE239_007 \x1e\r SCE_TEXT TEXT1 (\x85\x01 TEXT2 U
+\x00  
+SEQ1 <\x0c\x00\x0c
+SEQ4 b\x02\x00 \x02\x00\x00 \x90\x02\x00 
+SEQ6 SCE239_007\x00 \x1e\r\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 (\x85\x01\x0c
+SEQ5\x03U\x00\x00
  
 拓司は目を閉じた。@
 －－世界を創ろう。@
@@ -79,9 +109,13 @@ INIT_TEXT SCE239_007 \x1e\r SCE_TEXT TEXT1 (\x85\x01 TEXT2 U
 その世界は、不公平で、不完全な世界だ。@
 けれどもいま、その世界を創ろうとしている俺の意志は、選択不\n可能なくじびきの不幸な結果ではない。強制されたものではない。\n\pおれがが創る、おれの世界だ。\
 
-  
-INIT b\r\x0c SET_VAR1 b\x02 \x02 \x90\x02 END
-INIT_TEXT SCE239_008 \xf0\x0e SCE_TEXT TEXT1 ,\x85\x01 TEXT2 B
+\x00\x00\x00  
+SEQ1 b\r\x00\x0c
+SEQ4 b\x02\x00 \x02\x00\x00 \x90\x02\x00 
+SEQ6 SCE239_008\x00 \xf0\x0e\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 ,\x85\x01\x0c
+SEQ5\x03B\x00\x00
  
 ナタネ\n　「あなたが創る、あなたの世界」@
 \nもはやあらゆる責任は世界にはなく、おれ自身にある。@
@@ -90,9 +124,13 @@ INIT_TEXT SCE239_008 \xf0\x0e SCE_TEXT TEXT1 ,\x85\x01 TEXT2 B
 前に動け。@
 \nナタネ\n　「前に－－」\
 
-  
-INIT 4\x0f\x0c SET_VAR1 b\x02 \x02 \x90\x02 END
-INIT_TEXT SCE239_009 v\x10 SCE_TEXT TEXT1 0\x85\x01 TEXT2 \\
+\x00\x00\x00  
+SEQ1 4\x0f\x00\x0c
+SEQ4 b\x02\x00 \x02\x00\x00 \x90\x02\x00 
+SEQ6 SCE239_009\x00 v\x10\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 0\x85\x01\x0c
+SEQ5\x03\\\x00\x00
  
 動くことで、おれはおれを後に残してきたことを知り、新たなる\nおれを知るのだ。@
 世界がおれをおいていくのだとしたら、おれがおれを動かすしか\nないのだ。@
@@ -106,23 +144,33 @@ INIT_TEXT SCE239_009 v\x10 SCE_TEXT TEXT1 0\x85\x01 TEXT2 \\
 灰色の……なにもかもだ。@
 いまおれはゆく。\
 
-  
-INIT \xba\x10\x0c SET_VAR1 b\x02 \x02 \x90\x02 END
-INIT_TEXT SCE239_010 d\x12 SCE_TEXT TEXT1 4\x85\x01 TEXT2 $
+\x00  
+SEQ1 \xba\x10\x00\x0c
+SEQ4 b\x02\x00 \x02\x00\x00 \x90\x02\x00 
+SEQ6 SCE239_010\x00 d\x12\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 4\x85\x01\x0c
+SEQ5\x03$\x00\x00
  
 ナタネ\n　「光と共に歩め」@
 \n世界の入り口に立って、ゆく。@
 行き先はおれが決める。@
 世界が決めるのではなく、ただおれが決める。\
 
-  
-INIT \xa8\x12\x0c SET_VAR1 b\x02 \x02 \x90\x02 END
-INIT_TEXT SCE239_011 r\x13 SCE_TEXT TEXT1 8\x85\x01 TEXT2 
-INIT
+\x00\x00\x00  
+SEQ1 \xa8\x12\x00\x0c
+SEQ4 b\x02\x00 \x02\x00\x00 \x90\x02\x00 
+SEQ6 SCE239_011\x00 r\x13\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 8\x85\x01\x0c
+SEQ5\x03\r\x00\x00
  
 拓司\n　「おれは望む－－おれの世界を！」\
 
-  
-INIT \xb6\x13\x0c SET_VAR1 b\x02 \x02 \x90\x02 END NULL APPlY_2 StopCD RUNF 0\x14 END  
-INIT \xc8\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bg.Fob VAR2f\x14 \x02 APPLY_4 BgAutoFadeIn VAR2\x90\x14 END b\x02 APPLY_3 TextClose VAR1 \xc0\x14 END
+\x00\x00\x00  
+SEQ1 \xb6\x13\x00\x0c
+SEQ4 b\x02\x00 \x02\x00\x00 \x90\x02\x00 \x02\x00\x005  \x00\x00 
+SEQ2\x00\x00StopCD SPC1 0\x14\x00 \x02\x00\x005  
+SEQ1 \xc8\x00\x00\x0c
+SEQ4\x03\x06\x00\x00.\\Data\\Script\\Bg.Fob SPC2 f\x14\x00 \x02\x00\x00\x03\x04\x00\x00BgAutoFadeIn SPC2 \x90\x14\x00 \x02\x00\x005 b\x02\x00 \x02\x00\x00\x03\x03\x00\x00TextClosev\x81\x1f\xc0\x14\x00 
 END_SCRIPT

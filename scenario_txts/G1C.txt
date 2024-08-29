@@ -1,17 +1,29 @@
 START_SCRIPT
-\xcd\x08\x01`B#\x01\xae\x06  
-INIT C\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bg.Fob VAR2  \x02 APPLY_4 BgAutoFadeIn VAR2J END  
-INIT \x08\x01\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bgm.Fob VAR1 \x88 APPlY_2 PlayCD RUNF \xb2 END
-INIT_TEXT SCEG01_001 \xce SCE_TEXT TEXT1  \xc5\x01 TEXT2 *
+\xcd\x08\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xae\x06\x00  
+SEQ1 C\x00\x00\x0c
+SEQ4\x03\x06\x00\x00.\\Data\\Script\\Bg.Fob SPC2  \x00\x00 \x02\x00\x00\x03\x04\x00\x00BgAutoFadeIn SPC2 J\x00\x00 \x02\x00\x005  
+SEQ1 \x08\x01\x00\x0c
+SEQ4\x03\x06\x00\x00.\\Data\\Script\\Bgm.Fobv\x81\x1f\x88\x00\x00 
+SEQ2\x00\x00PlayCD SPC1 \xb2\x00\x00 
+SEQ6 SCEG01_001\x00 \xce\x00\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3  \xc5\x01\x0c
+SEQ5\x03*\x00\x00
  
 錦城\n　「……しっ！　私よ、虎菱くん」@
 拓司\n　「……先生？」@
 \n　錦城は微かに笑うと、拓司の横へと体を移動させた。@
 寄り添って寝転がるような形になる。\w\z
-  
-INIT \x12\x01\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF \xda\x01 APPlY_2 TextOn RUNF \x08\x02 END  
-INIT \xc8\x0c SET_VAR1 NULL \x02 J END
-INIT_TEXT SCEG01_002 X\x02 SCE_TEXT TEXT1 $\xc5\x01 TEXT2 z
+\x00\x00\x00  
+SEQ1 \x12\x01\x00\x0c
+SEQ4\x03\x07\x00\x00.\\Data\\Script\\TextFunc.Fob SPC1 \xda\x01\x00 
+SEQ2\x00\x00TextOn SPC1 \x08\x02\x00 \x02\x00\x005  
+SEQ1 \xc8\x00\x00\x0c
+SEQ4  \x00\x00 \x02\x00\x00 J\x00\x00 
+SEQ6 SCEG01_002\x00 X\x02\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 $\xc5\x01\x0c
+SEQ5\x03z\x00\x00
  
 錦城\n　「立派だったわ、虎菱くん」@
 拓司\n　「．．．．．．え？」@
@@ -21,9 +33,13 @@ INIT_TEXT SCEG01_002 X\x02 SCE_TEXT TEXT1 $\xc5\x01 TEXT2 z
 　　他の子たちとはどこか違うって。\p世界を……自分の世界を\n　　うちに秘めている。\pそう思ってた。@
 　　そういう人はね、強いの。@
 　　周囲の状況にながされないで、自分という物を持ち続けられ\n　　るの。\p虎菱くんこそが、リーダーにふさわしいって」\w\z
-  
-INIT \x9c\x02\x0c SET_VAR1 \xda\x01 \x02 \x08\x02 END
-INIT_TEXT SCEG01_003 \xbe\x04 SCE_TEXT TEXT1 (\xc5\x01 TEXT2 H
+\x00  
+SEQ1 \x9c\x02\x00\x0c
+SEQ4 \xda\x01\x00 \x02\x00\x00 \x08\x02\x00 
+SEQ6 SCEG01_003\x00 \xbe\x04\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 (\xc5\x01\x0c
+SEQ5\x03H\x00\x00
  
 　指が、そっと拓司の顎に触れた。@
 顎先から耳元へと、ゆっくりと指は移動する。\p冷たい指だ。@
@@ -31,6 +47,8 @@ INIT_TEXT SCEG01_003 \xbe\x04 SCE_TEXT TEXT1 (\xc5\x01 TEXT2 H
 錦城はそのまま、そっと掌を拓司の耳元に被せて固定すると、身\nを乗り出して拓司に口づけした。@
 \n錦城\n　「……先生からのエールだと思って。ね？」\
 
-  
-INIT \x02\x05\x0c SET_VAR1 \xda\x01 \x02 \x08\x02 END \x88 APPlY_2 StopCD RUNF h\x06 END \xda\x01 APPLY_3 TextClose VAR1 \x90\x06 END
+\x00\x00\x00  
+SEQ1 \x02\x05\x00\x0c
+SEQ4 \xda\x01\x00 \x02\x00\x00 \x08\x02\x00 \x02\x00\x005 \x88\x00\x00 
+SEQ2\x00\x00StopCD SPC1 h\x06\x00 \x02\x00\x005 \xda\x01\x00 \x02\x00\x00\x03\x03\x00\x00TextClosev\x81\x1f\x90\x06\x00 
 END_SCRIPT

@@ -1,25 +1,37 @@
 START_SCRIPT
-8\x12\x01`B#\x01\x1a\x0f
-INIT_TEXT SCE231_001 \x06 SCE_TEXT TEXT1 \x90x\x01 TEXT2 r
+8\x12\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\x1a\x0f\x00\x03\x03\x00\x00SCE231_001\x00 \x06\x00\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \x90x\x01\x0c
+SEQ5\x03r\x00\x00
  
 御堂\n　「……動くなよ、虎菱。\pお前だけは勝手にさせねえからな……」\n\p拓司\n　「なんなんだ、お前は……」@
 \n拓司は呆然と言った。言ってから、炎のように怒りがわき上がっ\nてきた。@
 \n拓司\n　「なんなんだ、お前は！\p　俺がお前に何をした！」@
 御堂\n　「むかつくんだよ……幸せなことに飽きて溜め息ついてるよう\n　　な……てめえみたいな野郎がよ！\p　毎日毎日、生きてるんだ\n　　か死んでるんだかわかんねえ俺みたいな人間だっているんだ\n　　ぞ！」\
 
-  
-INIT J\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF 2\x02 APPlY_2 TextOn RUNF `\x02 END
-INIT_TEXT SCE231_002 |\x02 SCE_TEXT TEXT1 \x94x\x01 TEXT2 `
+\x00\x00\x00  
+SEQ1 J\x00\x00\x0c
+SEQ4\x03\x07\x00\x00.\\Data\\Script\\TextFunc.Fob SPC1 2\x02\x00 
+SEQ2\x00\x00TextOn SPC1 `\x02\x00 
+SEQ6 SCE231_002\x00 |\x02\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \x94x\x01\x0c
+SEQ5\x03`\x00\x00
  
 拓司\n　「俺だって同じだッ！\p　お前だけが特別だと思うな！」@
 御堂\n　「うるせえッ！\p　俺は無視されたんだよ！\p　おきざりにされた\n　　んだ！\p　なにもかもが俺を素通りして勝手に動いていきやが\n　　る！\p　気にくわねえ！」@
 拓司\n　「毎日遅刻してクズ共とたむろして、人生腐らせてるのはおま\n　　えだろうが！」@
 御堂\n　「知ったような口きくんじゃねえ、モヤシッ子が！」\
 
-  
-INIT \xc0\x02\x0c SET_VAR1 2\x02 \x02 `\x02 END  
-INIT )\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bg.Fob VAR2\x94\x04 \x02 APPLY_4 BgAutoFadeIn VAR2\xbe\x04 END
-INIT_TEXT SCE231_003 \xe2\x04 SCE_TEXT TEXT1 \x98x\x01 TEXT2 \xc2
+\x00\x00\x00  
+SEQ1 \xc0\x02\x00\x0c
+SEQ4 2\x02\x00 \x02\x00\x00 `\x02\x00 \x02\x00\x005  
+SEQ1 )\x00\x00\x0c
+SEQ4\x03\x06\x00\x00.\\Data\\Script\\Bg.Fob SPC2 \x94\x04\x00 \x02\x00\x00\x03\x04\x00\x00BgAutoFadeIn SPC2 \xbe\x04\x00 
+SEQ6 SCE231_003\x00 \xe2\x04\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \x98x\x01\x0c
+SEQ5\x03\xc2\x00\x00
  
 奇声を上げながら、なたねが突っ込んできた。\pしかし御堂はそれ\nを軽くいなし、足を払って転倒させた。@
 無様に床に転がったなたねを、御堂はつま先で蹴った。@
@@ -32,9 +44,13 @@ INIT_TEXT SCE231_003 \xe2\x04 SCE_TEXT TEXT1 \x98x\x01 TEXT2 \xc2
 もはやこの部屋には、馴染みつつあるのだ。@
 自分だけではない、皆の顔に一様に浮かんでいる呆けた表情が証\n明している。\
 
-  
-INIT &\x05\x0c SET_VAR1 2\x02 \x02 `\x02 END
-INIT_TEXT SCE231_004 h\x08 SCE_TEXT TEXT1 \x9cx\x01 TEXT2 s
+\x00\x00\x00  
+SEQ1 &\x05\x00\x0c
+SEQ4 2\x02\x00 \x02\x00\x00 `\x02\x00 
+SEQ6 SCE231_004\x00 h\x08\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \x9cx\x01\x0c
+SEQ5\x03s\x00\x00
  
 そこには静けさがあった。\p暴力とは相容れないはずの、まったり\nとした静けさが。@
 他人が攻撃されているあいだは、自分は攻撃されない。@
@@ -44,26 +60,39 @@ INIT_TEXT SCE231_004 h\x08 SCE_TEXT TEXT1 \x9cx\x01 TEXT2 s
 一同は初めて、ぎょっとして、御堂を見た。@
 御堂は冷たい目で、足下のなたねを見下ろした。\
 
-  
-INIT \xac\x08\x0c SET_VAR1 2\x02 \x02 `\x02 END
-INIT_TEXT SCE231_005 \xb2\n SCE_TEXT TEXT1 \xa0x\x01 TEXT2 >
+\x00\x00  
+SEQ1 \xac\x08\x00\x0c
+SEQ4 2\x02\x00 \x02\x00\x00 `\x02\x00 
+SEQ6 SCE231_005\x00 \xb2\n\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xa0x\x01\x0c
+SEQ5\x03>\x00\x00
  
 錦城がおそるおそるといった感じで、なたねに歩み寄った。@
 鼻の前に手をかざし、ついで、手首を握る\p。一同はその一挙一動\nを、じっと見つめていた。@
 重い沈黙をついに破って、錦城はいった。@
 \n錦城\n　「……死んでる。\p息、してない……」\
 
-  
-INIT \xf6\n\x0c SET_VAR1 2\x02 \x02 `\x02 END
-INIT_TEXT SCE231_006 (\x0c SCE_TEXT TEXT1 \xa4x\x01 TEXT2 \x07.\\Data\\Script\\TextFunc.fob RUNF l\x0c \x02 APPLY_FILE CheckNormalMessageSkip RUNF \x9a\x0c END 2\x02 \x02 APPLY_4 TextWindowOff VAR1 \xd2\x0c END  
-INIT \x02\x0c SET_VAR1  \x04
-INIT \x01\x0c SET_VAR1  \x08
-INIT \x01\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bgm.Fob VAR1 D\r APPlY_2 SePlay RUNF n\r END  
-INIT \xca\x0c SET_VAR1  \x04
-INIT \x04\x0c SET_VAR1  \x08
-INIT \x01\x0c SET_VAR1 \x94\x04 APPLY_3 BgFadeIn VAR2\xe4\r END  
-INIT \x02\x0c SET_VAR1 D\r APPlY_2 SeStop RUNF *\x0e END  
-INIT \xc8\x0c SET_VAR1 \x94\x04 APPlY_2 BgOn VAR2l\x0e END 2\x02 
-WAVL TextWindowOnDirect RUNF \x94\x0e END 2\x02 
-WAVL UpdateScenarioRead RUNF \xc8\x0e END 2\x02 APPLY_3 TextClose VAR1 \xfc\x0e END
+\x00\x00\x00  
+SEQ1 \xf6\n\x00\x0c
+SEQ4 2\x02\x00 \x02\x00\x00 `\x02\x00 
+SEQ6 SCE231_006\x00 (\x0c\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xa4x\x01\x0c
+SEQ5\x03\x07\x00\x00.\\Data\\Script\\TextFunc.fob SPC1 l\x0c\x00 \x02\x00\x00\x03\x06\x00\x00CheckNormalMessageSkip SPC1 \x9a\x0c\x00 \x02\x00\x005 2\x02\x00 \x02\x00\x00\x03\x04\x00\x00TextWindowOffv\x81\x1f\xd2\x0c\x00 \x02\x00\x005  
+SEQ1 \x02\x00\x00\x0c
+SEQ4  \x04\x00\x00\r\x00\x00 \x01\x00\x00\x0c
+SEQ4  \x08\x00\x00\r\x00\x00 \x01\x00\x00\x0c
+SEQ4\x03\x06\x00\x00.\\Data\\Script\\Bgm.Fobv\x81\x1fD\r\x00 
+SEQ2\x00\x00SePlay SPC1 n\r\x00 \x02\x00\x005  
+SEQ1 \xca\x00\x00\x0c
+SEQ4  \x04\x00\x00\r\x00\x00 \x04\x00\x00\x0c
+SEQ4  \x08\x00\x00\r\x00\x00 \x01\x00\x00\x0c
+SEQ4 \x94\x04\x00 \x02\x00\x00\x03\x03\x00\x00BgFadeIn SPC2 \xe4\r\x00 \x02\x00\x005  
+SEQ1 \x02\x00\x00\x0c
+SEQ4 D\r\x00 
+SEQ2\x00\x00SeStop SPC1 *\x0e\x00 \x02\x00\x005  
+SEQ1 \xc8\x00\x00\x0c
+SEQ4 \x94\x04\x00 
+SEQ2\x00\x00BgOn SPC2 l\x0e\x00 \x02\x00\x005 2\x02\x00 \x02\x00\x00\x03\x05\x00\x00TextWindowOnDirect SPC1 \x94\x0e\x00 \x02\x00\x005 2\x02\x00 \x02\x00\x00\x03\x05\x00\x00UpdateScenarioRead SPC1 \xc8\x0e\x00 \x02\x00\x005 2\x02\x00 \x02\x00\x00\x03\x03\x00\x00TextClosev\x81\x1f\xfc\x0e\x00 
 END_SCRIPT

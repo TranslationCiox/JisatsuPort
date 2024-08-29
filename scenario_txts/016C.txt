@@ -1,6 +1,8 @@
 START_SCRIPT
-\x18\x06\x01\xa4\t3\x01\xc6\x04
-INIT_TEXT SCE016_001 \x06 SCE_TEXT TEXT1 \xa0( TEXT2 ^
+\x18\x06\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xa4\t3\x01\x00\x00\x00\xc6\x04\x00\x03\x03\x00\x00SCE016_001\x00 \x06\x00\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xa0(\x00\x0c
+SEQ5\x03^\x00\x00
  
 紅葉\n　「……。あのねえ、アンタ、女の子に会うたびそんな適当なこ\n　　といってんじゃないでしょうね？@
 　　『僕はいつも君のこと見てるよ』ってアピール？@
@@ -8,9 +10,14 @@ INIT_TEXT SCE016_001 \x06 SCE_TEXT TEXT1 \xa0( TEXT2 ^
 拓司\n　「そうか？　なんとなくいつもと違う感じがしたからさ」@
 紅葉\n　「……」@
 拓司\n　「……」\w\z
-  
-INIT J\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF \xe2\x01 APPlY_2 TextOn RUNF \x10\x02 END
-INIT_TEXT SCE016_002 ,\x02 SCE_TEXT TEXT1 \xa4( TEXT2 (
+\x00\x00\x00  
+SEQ1 J\x00\x00\x0c
+SEQ4\x03\x07\x00\x00.\\Data\\Script\\TextFunc.Fob SPC1 \xe2\x01\x00 
+SEQ2\x00\x00TextOn SPC1 \x10\x02\x00 
+SEQ6 SCE016_002\x00 ,\x02\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xa4(\x00\x0c
+SEQ5\x03(\x00\x00
  
 紅葉\n　「……リップ」@
 拓司\n　「はあ？」@
@@ -18,9 +25,13 @@ INIT_TEXT SCE016_002 ,\x02 SCE_TEXT TEXT1 \xa4( TEXT2 (
 拓司\n　「ふうん」@
 紅葉\n　「……」@
 拓司\n　「……」\w\z
-  
-INIT p\x02\x0c SET_VAR1 \xe2\x01 \x02 \x10\x02 END
-INIT_TEXT SCE016_003 J\x03 SCE_TEXT TEXT1 \xa8( TEXT2 5
+\x00\x00\x00  
+SEQ1 p\x02\x00\x0c
+SEQ4 \xe2\x01\x00 \x02\x00\x00 \x10\x02\x00 
+SEQ6 SCE016_003\x00 J\x03\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xa8(\x00\x0c
+SEQ5\x035\x00\x00
  
 沈黙の後、紅葉が突然、えい、と拓司の背中にパンチを飛ばした。\n@
 拓司\n　「いて！　なんだよ、お前！」@
@@ -28,6 +39,7 @@ INIT_TEXT SCE016_003 J\x03 SCE_TEXT TEXT1 \xa8( TEXT2 5
 拓司\n　「……照れてるのか？」@
 紅葉\n　「うるさいっ！」\
 
-  
-INIT \x8e\x03\x0c SET_VAR1 \xe2\x01 \x02 \x10\x02 END \xe2\x01 APPLY_3 TextClose VAR1 \xa8\x04 END
+\x00  
+SEQ1 \x8e\x03\x00\x0c
+SEQ4 \xe2\x01\x00 \x02\x00\x00 \x10\x02\x00 \x02\x00\x005 \xe2\x01\x00 \x02\x00\x00\x03\x03\x00\x00TextClosev\x81\x1f\xa8\x04\x00 
 END_SCRIPT

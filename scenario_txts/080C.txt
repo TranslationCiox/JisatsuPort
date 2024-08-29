@@ -1,6 +1,8 @@
 START_SCRIPT
-6\x08\x01`B#\x01\x9a\x06
-INIT_TEXT SCE080_001 \x06 SCE_TEXT TEXT1 \xa0\x8c TEXT2 \x96
+6\x08\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\x9a\x06\x00\x03\x03\x00\x00SCE080_001\x00 \x06\x00\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xa0\x8c\x00\x0c
+SEQ5\x03\x96\x00\x00
  
 　廊下をはいずり、階段を転げ落ち、拓司はようやく自分の教\n室にたどり着いた。\pぶつけたりすりむいたりした部分が鈍く痛む。\n\pしかし、そんなことはもう問題ではない。\p何もかも終わるからだ。\n@
 　教室のドアをなんとか引き開けて、拓司は自分の席を目指した。\n　\p机の中には、買ったばかりのカッターがあるはずだった。@
@@ -14,10 +16,16 @@ INIT_TEXT SCE080_001 \x06 SCE_TEXT TEXT1 \xa0\x8c TEXT2 \x96
 なんだこりゃ。@
 邪魔邪魔。\
 
-  
-INIT J\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF \xc2\x02 APPlY_2 TextOn RUNF \xf0\x02 END  
-INIT \xc8\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bg.Fob VAR2&\x03 \x02 APPLY_4 BgAutoFadeIn VAR2P\x03 END
-INIT_TEXT SCE080_002 t\x03 SCE_TEXT TEXT1 \xa4\x8c TEXT2 R
+\x00  
+SEQ1 J\x00\x00\x0c
+SEQ4\x03\x07\x00\x00.\\Data\\Script\\TextFunc.Fob SPC1 \xc2\x02\x00 
+SEQ2\x00\x00TextOn SPC1 \xf0\x02\x00 \x02\x00\x005  
+SEQ1 \xc8\x00\x00\x0c
+SEQ4\x03\x06\x00\x00.\\Data\\Script\\Bg.Fob SPC2 &\x03\x00 \x02\x00\x00\x03\x04\x00\x00BgAutoFadeIn SPC2 P\x03\x00 
+SEQ6 SCE080_002\x00 t\x03\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xa4\x8c\x00\x0c
+SEQ5\x03R\x00\x00
  
 机までたどり着いた拓司は、必死の力を振り絞って身を起こし、\nどっかりと椅子に腰掛けた。@
 ふう、とため息をついて、机の中\nを両手でまさぐる。@
@@ -32,9 +40,13 @@ INIT_TEXT SCE080_002 t\x03 SCE_TEXT TEXT1 \xa4\x8c TEXT2 R
 　－－カッター。@
 　ピンポーン！\
 
-  
-INIT \xb8\x03\x0c SET_VAR1 \xc2\x02 \x02 \xf0\x02 END
-INIT_TEXT SCE080_003 :\x05 SCE_TEXT TEXT1 \xa8\x8c TEXT2 .
+\x00  
+SEQ1 \xb8\x03\x00\x0c
+SEQ4 \xc2\x02\x00 \x02\x00\x00 \xf0\x02\x00 
+SEQ6 SCE080_003\x00 :\x05\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xa8\x8c\x00\x0c
+SEQ5\x03.\x00\x00
  
 　そうしてカッターナイフを取り出すと、拓司はキリキリと刃を\n　押し出し、それを喉元に押し当てた。@
 　終わりだ。@
@@ -42,6 +54,7 @@ INIT_TEXT SCE080_003 :\x05 SCE_TEXT TEXT1 \xa8\x8c TEXT2 .
 　さあ。@
 　終わりだ。\
 
-  
-INIT ~\x05\x0c SET_VAR1 \xc2\x02 \x02 \xf0\x02 END \xc2\x02 APPLY_3 TextClose VAR1 |\x06 END
+\x00\x00\x00  
+SEQ1 ~\x05\x00\x0c
+SEQ4 \xc2\x02\x00 \x02\x00\x00 \xf0\x02\x00 \x02\x00\x005 \xc2\x02\x00 \x02\x00\x00\x03\x03\x00\x00TextClosev\x81\x1f|\x06\x00 
 END_SCRIPT

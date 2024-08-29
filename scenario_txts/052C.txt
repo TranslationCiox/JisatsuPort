@@ -1,7 +1,12 @@
 START_SCRIPT
-\xbf'\x01`B#\x01Z!  
-INIT \x0b\x01\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bgm.Fob VAR1   APPlY_2 PlayCD RUNF J END
-INIT_TEXT SCE052_001 f SCE_TEXT TEXT1 \xe0` TEXT2 \xac
+\xbf'\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00Z!\x00  
+SEQ1 \x0b\x01\x00\x0c
+SEQ4\x03\x06\x00\x00.\\Data\\Script\\Bgm.Fobv\x81\x1f \x00\x00 
+SEQ2\x00\x00PlayCD SPC1 J\x00\x00 
+SEQ6 SCE052_001\x00 f\x00\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xe0`\x00\x0c
+SEQ5\x03\xac\x00\x00
  
 　勢いよく扉を引き開けて、拓司は教室に躍り込んだ。@
 \n拓司\n　「早桃！」@
@@ -17,9 +22,14 @@ INIT_TEXT SCE052_001 f SCE_TEXT TEXT1 \xe0` TEXT2 \xac
 円陣の中央には、ひとりの女の子が立ちすくんでいる。@
 早桃だ。\
 
-  
-INIT \xaa\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF z\x03 APPlY_2 TextOn RUNF \xa8\x03 END
-INIT_TEXT SCE052_002 \xc4\x03 SCE_TEXT TEXT1 \xe4` TEXT2 ]
+\x00  
+SEQ1 \xaa\x00\x00\x0c
+SEQ4\x03\x07\x00\x00.\\Data\\Script\\TextFunc.Fob SPC1 z\x03\x00 
+SEQ2\x00\x00TextOn SPC1 \xa8\x03\x00 
+SEQ6 SCE052_002\x00 \xc4\x03\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xe4`\x00\x0c
+SEQ5\x03]\x00\x00
  
 早桃\n　「おにい……ちゃん？」@
 拓司\n　「早桃！」@
@@ -30,9 +40,13 @@ INIT_TEXT SCE052_002 \xc4\x03 SCE_TEXT TEXT1 \xe4` TEXT2 ]
 学生\n　「聞いたことある。\pアレだろ、ホントの兄妹じゃないって」@
 学生\n　「へえ、そうなんだ、へへ」\
 
-  
-INIT \x08\x04\x0c SET_VAR1 z\x03 \x02 \xa8\x03 END
-INIT_TEXT SCE052_003 \xb6\x05 SCE_TEXT TEXT1 \xe8` TEXT2 l
+\x00\x00\x00  
+SEQ1 \x08\x04\x00\x0c
+SEQ4 z\x03\x00 \x02\x00\x00 \xa8\x03\x00 
+SEQ6 SCE052_003\x00 \xb6\x05\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xe8`\x00\x0c
+SEQ5\x03l\x00\x00
  
 拓司は呆気にとられた。@
 初対面の人間が、正面切っていう話題ではない。@
@@ -45,9 +59,13 @@ INIT_TEXT SCE052_003 \xb6\x05 SCE_TEXT TEXT1 \xe8` TEXT2 l
 \n学生\n　「教員ン？」@
 \nひとりが素っ頓狂な声を上げると、他の者がゲラゲラと笑い声で\n応えた。\
 
-  
-INIT \xfa\x05\x0c SET_VAR1 z\x03 \x02 \xa8\x03 END
-INIT_TEXT SCE052_004 \xe4\x07 SCE_TEXT TEXT1 \xec` TEXT2 {
+\x00\x00\x00  
+SEQ1 \xfa\x05\x00\x0c
+SEQ4 z\x03\x00 \x02\x00\x00 \xa8\x03\x00 
+SEQ6 SCE052_004\x00 \xe4\x07\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xec`\x00\x0c
+SEQ5\x03{\x00\x00
  
 学生\n　「飛ばせたよ」@
 拓司\n　「……飛ばせた？」@
@@ -60,9 +78,13 @@ INIT_TEXT SCE052_004 \xe4\x07 SCE_TEXT TEXT1 \xec` TEXT2 {
 　　どんよりしちゃってるんだよ、このクラス。@
 　　そんなところで勉強とか青春なんて前向きにやってられるか？\n　　\pやれねえんだよ！」\
 
-  
-INIT (\x08\x0c SET_VAR1 z\x03 \x02 \xa8\x03 END
-INIT_TEXT SCE052_005 N\n SCE_TEXT TEXT1 \xf0` TEXT2 \x96
+\x00\x00\x00  
+SEQ1 (\x08\x00\x0c
+SEQ4 z\x03\x00 \x02\x00\x00 \xa8\x03\x00 
+SEQ6 SCE052_005\x00 N\n\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xf0`\x00\x0c
+SEQ5\x03\x96\x00\x00
  
 学生は机をガン、と足でけ飛ばした。@
 怒りの爆発をギリギリで抑えている。@
@@ -78,9 +100,13 @@ INIT_TEXT SCE052_005 N\n SCE_TEXT TEXT1 \xf0` TEXT2 \x96
 　　そんなの、バレバレだよ！@
 　　俺たちゃアホじゃねえっつーんだよッ！」\
 
-  
-INIT \x92\n\x0c SET_VAR1 z\x03 \x02 \xa8\x03 END
-INIT_TEXT SCE052_006 $\r SCE_TEXT TEXT1 \xf4` TEXT2 \x93
+\x00  
+SEQ1 \x92\n\x00\x0c
+SEQ4 z\x03\x00 \x02\x00\x00 \xa8\x03\x00 
+SEQ6 SCE052_006\x00 $\r\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xf4`\x00\x0c
+SEQ5\x03\x93\x00\x00
  
 拓司\n　「オイ、落ち着け！\p　いったいどうしたって－－」@
 学生\n　「だから窓から飛んでもらったよ！」@
@@ -93,9 +119,13 @@ INIT_TEXT SCE052_006 $\r SCE_TEXT TEXT1 \xf4` TEXT2 \x93
 　　否定して、断罪した！\p　泣いてたよ、あいつ。@
 　　泣いてごめんなさいごめんなさいっていって、窓まで走って\n　　いって、そのままトップロープ越えのトペ・スイシーダだよ！\n　　\pで、今度は虎菱の番ってわけだ！」\
 
-  
-INIT h\r\x0c SET_VAR1 z\x03 \x02 \xa8\x03 END
-INIT_TEXT SCE052_007 \xee\x0f SCE_TEXT TEXT1 \xf8` TEXT2 \x90
+\x00  
+SEQ1 h\r\x00\x0c
+SEQ4 z\x03\x00 \x02\x00\x00 \xa8\x03\x00 
+SEQ6 SCE052_007\x00 \xee\x0f\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xf8`\x00\x0c
+SEQ5\x03\x90\x00\x00
  
 円陣の中央で、早桃がびくっと身をすくめる。@
 \n学生\n　「澱むんだよ、コイツがいると。@
@@ -110,9 +140,13 @@ INIT_TEXT SCE052_007 \xee\x0f SCE_TEXT TEXT1 \xf8` TEXT2 \x90
 \n拓司は一喝した。@
 しかし、早桃の言葉が、次の言葉をさえぎった。\
 
-  
-INIT 2\x10\x0c SET_VAR1 z\x03 \x02 \xa8\x03 END
-INIT_TEXT SCE052_008 \xac\x12 SCE_TEXT TEXT1 \xfc` TEXT2 f
+\x00\x00\x00  
+SEQ1 2\x10\x00\x0c
+SEQ4 z\x03\x00 \x02\x00\x00 \xa8\x03\x00 
+SEQ6 SCE052_008\x00 \xac\x12\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xfc`\x00\x0c
+SEQ5\x03f\x00\x00
  
 早桃\n　「しかたないよ……\p早桃が悪いんだからしかたがないよ」@
 \n拓司\n　「なっ？！」@
@@ -125,9 +159,13 @@ INIT_TEXT SCE052_008 \xac\x12 SCE_TEXT TEXT1 \xfc` TEXT2 f
 有罪、有罪、有罪！@
 有罪、有罪、有罪！\
 
-  
-INIT \xf0\x12\x0c SET_VAR1 z\x03 \x02 \xa8\x03 END
-INIT_TEXT SCE052_009 \xc2\x14 SCE_TEXT TEXT1 a TEXT2 %
+\x00  
+SEQ1 \xf0\x12\x00\x0c
+SEQ4 z\x03\x00 \x02\x00\x00 \xa8\x03\x00 
+SEQ6 SCE052_009\x00 \xc2\x14\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \x00a\x00\x0c
+SEQ5\x03%\x00\x00
  
 誰かが「死ね」といった。@
 \n学生\n　「死ねよ」@
@@ -136,9 +174,13 @@ INIT_TEXT SCE052_009 \xc2\x14 SCE_TEXT TEXT1 a TEXT2 %
 学生\n　「死ねよ」@
 学生\n　「死ねよ」\
 
-  
-INIT \x06\x15\x0c SET_VAR1 z\x03 \x02 \xa8\x03 END
-INIT_TEXT SCE052_010 \xd4\x15 SCE_TEXT TEXT1 \x04a TEXT2 \x96
+\x00\x00\x00  
+SEQ1 \x06\x15\x00\x0c
+SEQ4 z\x03\x00 \x02\x00\x00 \xa8\x03\x00 
+SEQ6 SCE052_010\x00 \xd4\x15\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \x04a\x00\x0c
+SEQ5\x03\x96\x00\x00
  
 　死ねよ、死ねよ、死ねよ、死ねよ、死ねよ、死ねよ、死ねよ、\n　死ねよ、死ねよ、死ねよ\n　死ね死ね死ね死ね死ね死ね死ね死ね死ね死ね死ね死ね死ね死ね\n　死ね死ね死ね\n　シネシネシネシネシシネシネシネシネシネシネシネシネシネシ\n　ネシネシネシネシネシネ\n　学生たちの声は、大合唱となって教室にとどろき渡った。@
 \n　シ……足を上げる。@
@@ -147,9 +189,13 @@ INIT_TEXT SCE052_010 \xd4\x15 SCE_TEXT TEXT1 \x04a TEXT2 \x96
 　ネ……足を踏み降ろす。@
 \n　シネシネシネシネシシネシネシネシネシネシネシネシネシネシ\nネシネシネシネシネシネ\n　ドンガドンガドンガドンドンガドンガドンガドンガドンガドン\nガドンガドンガドンガドンガドンガ\
 
-  
-INIT \x18\x16\x0c SET_VAR1 z\x03 \x02 \xa8\x03 END
-INIT_TEXT SCE052_011 \xaa\x18 SCE_TEXT TEXT1 \x08a TEXT2 \xb4
+\x00  
+SEQ1 \x18\x16\x00\x0c
+SEQ4 z\x03\x00 \x02\x00\x00 \xa8\x03\x00 
+SEQ6 SCE052_011\x00 \xaa\x18\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \x08a\x00\x0c
+SEQ5\x03\xb4\x00\x00
  
 　足を踏みならす音は太鼓のリズムで、合唱は呪文の詠唱だった。@
 　中世の魔女狩りそのものだった。@
@@ -162,10 +208,15 @@ INIT_TEXT SCE052_011 \xaa\x18 SCE_TEXT TEXT1 \x08a TEXT2 \xb4
 　耐えられるはずがない。\p早桃は円陣の中央で耳を覆い、しゃ\n　がみこんでしまった。@
 \n早桃\n　「ごめんなさい……ごめんなさい……ごめんなさい……」\
 
-  
-INIT \xee\x18\x0c SET_VAR1 z\x03 \x02 \xa8\x03 END  
-INIT \n\x01\x0c SET_VAR1 NULL \x02 J END
-INIT_TEXT SCE052_012 ,\x1c SCE_TEXT TEXT1 \x0ca TEXT2 \x9b
+\x00\x00\x00  
+SEQ1 \xee\x18\x00\x0c
+SEQ4 z\x03\x00 \x02\x00\x00 \xa8\x03\x00 \x02\x00\x005  
+SEQ1 \n\x01\x00\x0c
+SEQ4  \x00\x00 \x02\x00\x00 J\x00\x00 
+SEQ6 SCE052_012\x00 ,\x1c\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \x0ca\x00\x0c
+SEQ5\x03\x9b\x00\x00
  
 猛烈な怒りに突き動かされて、拓司は円陣のなかへと躍り込んだ。@
 \n拓司\n　「オ、オ、オ、オ、オ、オ、ア、ア、ア、ア、ア、ア、ア！」@
@@ -176,9 +227,13 @@ INIT_TEXT SCE052_012 ,\x1c SCE_TEXT TEXT1 \x0ca TEXT2 \x9b
 胸が押さえつけられて、息すらできない。いつのまにやられたの\nか、鼻から血がだくだくとあふれ出る。@
 視界が奇妙な色で明滅する。\
 
-  
-INIT p\x1c\x0c SET_VAR1 z\x03 \x02 \xa8\x03 END
-INIT_TEXT SCE052_013 \x16\x1f SCE_TEXT TEXT1 \x10a TEXT2 g
+\x00  
+SEQ1 p\x1c\x00\x0c
+SEQ4 z\x03\x00 \x02\x00\x00 \xa8\x03\x00 
+SEQ6 SCE052_013\x00 \x16\x1f\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \x10a\x00\x0c
+SEQ5\x03g\x00\x00
  
 　興奮した声、声、声が、教室中を行き交っている。@
 　ウルセチョウシブッコロホネガジャネエオレウルセエタコイテ\nンイタイヨホネガ！\p　ガ！\p　ガ！\p　ホネ！　@
@@ -186,6 +241,7 @@ INIT_TEXT SCE052_013 \x16\x1f SCE_TEXT TEXT1 \x10a TEXT2 g
 /*■黒　表示（ノンエフェクト）.*/\a7,-1,-1,0,\a0,200,1,0,\a6,0,0,0,/*▲BGM　停止*/\a4,-1,0,0,　やがて潮が引くように、声が収まっていった。@
 　静寂の中、バットが振り下ろされた。\
 
-  
-INIT Z\x1f\x0c SET_VAR1 z\x03 \x02 \xa8\x03 END z\x03 APPLY_3 TextClose VAR1 <! END
+\x00\x00  
+SEQ1 Z\x1f\x00\x0c
+SEQ4 z\x03\x00 \x02\x00\x00 \xa8\x03\x00 \x02\x00\x005 z\x03\x00 \x02\x00\x00\x03\x03\x00\x00TextClosev\x81\x1f<!\x00 
 END_SCRIPT

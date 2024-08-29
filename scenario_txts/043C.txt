@@ -1,7 +1,12 @@
 START_SCRIPT
-l-\x01`B#\x014&  
-INIT \t\x01\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bgm.Fob VAR1   APPlY_2 PlayCD RUNF J END
-INIT_TEXT SCE043_001 f SCE_TEXT TEXT1 \xd0R TEXT2 \x88
+l-\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x004&\x00  
+SEQ1 \t\x01\x00\x0c
+SEQ4\x03\x06\x00\x00.\\Data\\Script\\Bgm.Fobv\x81\x1f \x00\x00 
+SEQ2\x00\x00PlayCD SPC1 J\x00\x00 
+SEQ6 SCE043_001\x00 f\x00\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xd0R\x00\x0c
+SEQ5\x03\x88\x00\x00
  
 　　屋上は一般学生の立ち入りが禁じられ、階段と屋上を繋ぐ鉄\n　の扉には錠が下ろされている。@
 　拓司が自由に出入りしているのは合い鍵を持っているからだ。@
@@ -11,9 +16,14 @@ INIT_TEXT SCE043_001 f SCE_TEXT TEXT1 \xd0R TEXT2 \x88
 　拓司とこの場所のことを知る人間は、ほとんどいなかった。@
 　だから、あらゆる現実のあれこれから、切り離されるような気\n　がした。\p雲を眺めていると、勉強やら、親の再婚やらの嫌なこ\n　とは、全部忘れられた。\
 
-  
-INIT \xaa\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF \xea\x02 APPlY_2 TextOn RUNF \x18\x03 END
-INIT_TEXT SCE043_002 4\x03 SCE_TEXT TEXT1 \xd4R TEXT2 \x8e
+\x00\x00\x00  
+SEQ1 \xaa\x00\x00\x0c
+SEQ4\x03\x07\x00\x00.\\Data\\Script\\TextFunc.Fob SPC1 \xea\x02\x00 
+SEQ2\x00\x00TextOn SPC1 \x18\x03\x00 
+SEQ6 SCE043_002\x00 4\x03\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xd4R\x00\x0c
+SEQ5\x03\x8e\x00\x00
  
 　昔の話だ。@
 　いま、こうして見上げる雲には、『雲である』という意味しか\n　ない。@
@@ -25,9 +35,13 @@ INIT_TEXT SCE043_002 4\x03 SCE_TEXT TEXT1 \xd4R TEXT2 \x8e
 　光景がそこにあった。@
 \n　－－紅葉の顔に浮かんだあの表情は、なんだったのだろう？\
 
-  
-INIT x\x03\x0c SET_VAR1 \xea\x02 \x02 \x18\x03 END
-INIT_TEXT SCE043_003 \xea\x05 SCE_TEXT TEXT1 \xd8R TEXT2 \xe6
+\x00\x00\x00  
+SEQ1 x\x03\x00\x0c
+SEQ4 \xea\x02\x00 \x02\x00\x00 \x18\x03\x00 
+SEQ6 SCE043_003\x00 \xea\x05\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xd8R\x00\x0c
+SEQ5\x03\xe6\x00\x00
  
 拓司は思った。@
 かつての拓司なら、その表情の中に、様々な意味を見いだしてい\nただろう。@
@@ -40,9 +54,13 @@ INIT_TEXT SCE043_003 \xea\x05 SCE_TEXT TEXT1 \xd8R TEXT2 \xe6
 しかし、そうした痛手を受けてもなお、「もしかして」という甘\nい幻想がわき起こってくるのを禁じ得ない。@
 \n－－そうとでも考えないと、あのキスは永遠に宙ぶらりんなまま\nだ。\
 
-  
-INIT .\x06\x0c SET_VAR1 \xea\x02 \x02 \x18\x03 END
-INIT_TEXT SCE043_004 \n SCE_TEXT TEXT1 \xdcR TEXT2 \x9b
+\x00  
+SEQ1 .\x06\x00\x0c
+SEQ4 \xea\x02\x00 \x02\x00\x00 \x18\x03\x00 
+SEQ6 SCE043_004\x00 \x00\n\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xdcR\x00\x0c
+SEQ5\x03\x9b\x00\x00
  
 無意味の領域で朽ち果てていくには、あの瞬間は完璧すぎた。@
 完璧すぎるが故に、拓司はそこに縛り付けられたまま、どこにも\n行くことができないでいる。@
@@ -53,9 +71,14 @@ INIT_TEXT SCE043_004 \n SCE_TEXT TEXT1 \xdcR TEXT2 \x9b
 驚いたが、それよりもまず、紅葉がこの秘密の場所に、自分たち\n以外の他人を連れてきたと言うことに怒りを禁じ得なかった。\
 
   
-INIT D\n\x0c SET_VAR1 \xea\x02 \x02 \x18\x03 END  
-INIT \n\x01\x0c SET_VAR1 NULL \x02 J END
-INIT_TEXT SCE043_005 \x1e\r SCE_TEXT TEXT1 \xe0R TEXT2 T
+SEQ1 D\n\x00\x0c
+SEQ4 \xea\x02\x00 \x02\x00\x00 \x18\x03\x00 \x02\x00\x005  
+SEQ1 \n\x01\x00\x0c
+SEQ4  \x00\x00 \x02\x00\x00 J\x00\x00 
+SEQ6 SCE043_005\x00 \x1e\r\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xe0R\x00\x0c
+SEQ5\x03T\x00\x00
  
 拓司\n　「……どういうことだ？」@
 \n低くいうと、紅葉はややたじろいだ様子だったが、すぐに女子学\n生が間に割って入った。@
@@ -66,9 +89,13 @@ INIT_TEXT SCE043_005 \x1e\r SCE_TEXT TEXT1 \xe0R TEXT2 T
 女子学生\n　「幼なじみってだけで、勘違いされちゃ困るって」@
 拓司\n　「……？」\
 
-  
-INIT b\r\x0c SET_VAR1 \xea\x02 \x02 \x18\x03 END
-INIT_TEXT SCE043_006 \xec\x0e SCE_TEXT TEXT1 \xe4R TEXT2 ]
+\x00  
+SEQ1 b\r\x00\x0c
+SEQ4 \xea\x02\x00 \x02\x00\x00 \x18\x03\x00 
+SEQ6 SCE043_006\x00 \xec\x0e\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xe4R\x00\x0c
+SEQ5\x03]\x00\x00
  
 女子学生\n　「……ふう。\pはっきり言わないとわかんないかなあ？\p　あのね\n　　幼なじみの女の子は、無条件に相手の男に密かな恋心抱いて\n　　るとかって、オタクマンガみたいなコト、都合良く考えてな\n　　い？」@
 拓司\n　「－－紅葉」@
@@ -76,9 +103,13 @@ INIT_TEXT SCE043_006 \xec\x0e SCE_TEXT TEXT1 \xe4R TEXT2 ]
 \n拓司\n　「どういうことだ？　なんなんだ、これは？」@
 紅葉\n　「……」\
 
-  
-INIT 0\x0f\x0c SET_VAR1 \xea\x02 \x02 \x18\x03 END
-INIT_TEXT SCE043_007 \xde\x10 SCE_TEXT TEXT1 \xe8R TEXT2 U
+\x00  
+SEQ1 0\x0f\x00\x0c
+SEQ4 \xea\x02\x00 \x02\x00\x00 \x18\x03\x00 
+SEQ6 SCE043_007\x00 \xde\x10\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xe8R\x00\x0c
+SEQ5\x03U\x00\x00
  
 女子学生\n　「－－最低！」@
 女子学生\n　「やめろよ、虎菱！」@
@@ -88,9 +119,13 @@ INIT_TEXT SCE043_007 \xde\x10 SCE_TEXT TEXT1 \xe8R TEXT2 U
 女子学生\n　「そんなふうにいわれたら、紅葉だって怖くて言えないでしょ\n　　！」@
 女子学生\n　「あ～、勘違い男は怖い怖い」\
 
-  
-INIT "\x11\x0c SET_VAR1 \xea\x02 \x02 \x18\x03 END
-INIT_TEXT SCE043_008 \xb0\x12 SCE_TEXT TEXT1 \xecR TEXT2 \xa6
+\x00\x00\x00  
+SEQ1 "\x11\x00\x0c
+SEQ4 \xea\x02\x00 \x02\x00\x00 \x18\x03\x00 
+SEQ6 SCE043_008\x00 \xb0\x12\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xecR\x00\x0c
+SEQ5\x03\xa6\x00\x00
  
 女子学生\n　「最近多いんだよ、幼なじみとか妹とか年下とか、そういう設\n　　定に依存しないと恋愛できないヤツ。\p要するに、自分に自信\n　　がない。\p立場が低い女の前でしかアイデンティティが保てな\n　　い、と」@
 拓司\n　「黙れッ！」@
@@ -98,9 +133,13 @@ INIT_TEXT SCE043_008 \xb0\x12 SCE_TEXT TEXT1 \xecR TEXT2 \xa6
 彼女たちがいっている言葉は－－幼なじみが無条件に相手に淡い\n恋心を抱くという都合のいい幻想は－－確かに拓司の中にあるも\nのだった。\pあまりにも都合がいい、そんなに話は単純ではない、\nと思いながらも、わき上がってくるのを抑えられなかった思いで\nある。\pそこを指摘されたのが、痛い。@
 \n拓司\n　「紅葉。\pどういうことか説明してくれ」\
 
-  
-INIT \xf4\x12\x0c SET_VAR1 \xea\x02 \x02 \x18\x03 END
-INIT_TEXT SCE043_009 \xc6\x15 SCE_TEXT TEXT1 \xf0R TEXT2 z
+\x00\x00\x00  
+SEQ1 \xf4\x12\x00\x0c
+SEQ4 \xea\x02\x00 \x02\x00\x00 \x18\x03\x00 
+SEQ6 SCE043_009\x00 \xc6\x15\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xf0R\x00\x0c
+SEQ5\x03z\x00\x00
  
 紅葉\n　「いいよ」@
 \nついに、紅葉が口を開いた。@
@@ -108,9 +147,14 @@ INIT_TEXT SCE043_009 \xc6\x15 SCE_TEXT TEXT1 \xf0R TEXT2 z
 　　それにこの前、自分でもよくわからないんだけど……ホラ、\n　　ちょっと……ね？　あったでしょ、いろいろ。@
 　　そういうこともあってさ、しかも今日、お弁当がどうのこう\n　　のとかいわれちゃって、ほんと困っちゃって。\pいい機会だか\n　　ら、ここらへんではっきりさせておこうと思って。\pそういう\n　　こと」\
 
-  
-INIT \n\x16\x0c SET_VAR1 \xea\x02 \x02 \x18\x03 END NULL APPlY_2 StopCD RUNF 8\x18 END
-INIT_TEXT SCE043_010 T\x18 SCE_TEXT TEXT1 \xf4R TEXT2 `
+\x00  
+SEQ1 \n\x16\x00\x0c
+SEQ4 \xea\x02\x00 \x02\x00\x00 \x18\x03\x00 \x02\x00\x005  \x00\x00 
+SEQ2\x00\x00StopCD SPC1 8\x18\x00 
+SEQ6 SCE043_010\x00 T\x18\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xf4R\x00\x0c
+SEQ5\x03`\x00\x00
  
 紅葉のいいかたは一方的で、とりつく島がなかった。@
 なにか得意げというか、勝ち誇ったような響きすらある。@
@@ -120,33 +164,50 @@ INIT_TEXT SCE043_010 T\x18 SCE_TEXT TEXT1 \xf4R TEXT2 `
 拓司はかつてここまでの直接的な審判を、他人から下されたこと\nなど一度もなかった。@
 \n拓司\n　「……わかった」@
 \z
-  
-INIT \x98\x18\x0c SET_VAR1 \xea\x02 \x02 \x18\x03 END
-INIT_TEXT SCE043_011 R\x1a SCE_TEXT TEXT1 \xf8R TEXT2 4
+\x00  
+SEQ1 \x98\x18\x00\x0c
+SEQ4 \xea\x02\x00 \x02\x00\x00 \x18\x03\x00 
+SEQ6 SCE043_011\x00 R\x1a\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xf8R\x00\x0c
+SEQ5\x034\x00\x00
  
 そういうしかなかった。\pリバーシで、角を取られるとわかってい\nながらもおかなければならない石。\pパスはない。@
 石がおける場合は、置かなければならない。\pそういう状況に、追\nい込まれてしまったのだ。\
 
-  
-INIT \x96\x1a\x0c SET_VAR1 \xea\x02 \x02 \x18\x03 END
-INIT_TEXT SCE043_012 \xa0\x1b SCE_TEXT TEXT1 \xfcR TEXT2 :
+\x00  
+SEQ1 \x96\x1a\x00\x0c
+SEQ4 \xea\x02\x00 \x02\x00\x00 \x18\x03\x00 
+SEQ6 SCE043_012\x00 \xa0\x1b\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xfcR\x00\x0c
+SEQ5\x03:\x00\x00
  
 拓司\n　「わかった。もうお前とは一切関わらない」@
 女子学生\n　「あのさー、トラビシ。\p逆恨みすんなよ、紅葉がかわいそうだ\n　　から」@
 女子学生\n　「－－もう大丈夫だからね、紅葉？」@
 女子学生\n　「－－行こう、紅葉？」\
 
-  
-INIT \xe4\x1b\x0c SET_VAR1 \xea\x02 \x02 \x18\x03 END  
-INIT \xc8\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bg.Fob VAR2 \x1d \x02 APPLY_4 BgAutoFadeIn VAR2J\x1d END
-INIT_TEXT SCE043_013 n\x1d SCE_TEXT TEXT1 S TEXT2 J
+\x00  
+SEQ1 \xe4\x1b\x00\x0c
+SEQ4 \xea\x02\x00 \x02\x00\x00 \x18\x03\x00 \x02\x00\x005  
+SEQ1 \xc8\x00\x00\x0c
+SEQ4\x03\x06\x00\x00.\\Data\\Script\\Bg.Fob SPC2  \x1d\x00 \x02\x00\x00\x03\x04\x00\x00BgAutoFadeIn SPC2 J\x1d\x00 
+SEQ6 SCE043_013\x00 n\x1d\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \x00S\x00\x0c
+SEQ5\x03J\x00\x00
  
 そんな言葉を聞きながら、拓司はコンクリートの地面をじっと見\nつめて、紅葉たちが去るのを待った。@
 打ちのめされた気分だった。\pプライドはずたずたに引き裂かれ、\n泥まみれになっていた。\pこのところなかったほどのリアルな痛み\nが胸を充たしていたが、いまはそれも、とても歓迎できそうもな\nい。\
 
-  
-INIT \xb2\x1d\x0c SET_VAR1 \xea\x02 \x02 \x18\x03 END
-INIT_TEXT SCE043_014 \x14\x1f SCE_TEXT TEXT1 \x04S TEXT2 \x93
+\x00  
+SEQ1 \xb2\x1d\x00\x0c
+SEQ4 \xea\x02\x00 \x02\x00\x00 \x18\x03\x00 
+SEQ6 SCE043_014\x00 \x14\x1f\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \x04S\x00\x0c
+SEQ5\x03\x93\x00\x00
  
 しかし紅葉たちの気配は、なかなか消えなかった。@
 \n女子学生\n　「－－紅葉？」@
@@ -155,9 +216,13 @@ INIT_TEXT SCE043_014 \x14\x1f SCE_TEXT TEXT1 \x04S TEXT2 \x93
 その顔には、先ほどまでの勝ち誇ったような表情はすでにない。@
 さきほど教室でみせた、あの複雑な表情が－－相反する二つの感\n情がせめぎ合っているような……怯えと期待、罪悪感と爽快感、\n悲しみと喜び、そんなものが現れては消え、消えてはまた浮かび\n上がる、あの表情が張り付いている。\
 
-  
-INIT X\x1f\x0c SET_VAR1 \xea\x02 \x02 \x18\x03 END
-INIT_TEXT SCE043_015 \xde! SCE_TEXT TEXT1 \x08S TEXT2 }
+\x00\x00  
+SEQ1 X\x1f\x00\x0c
+SEQ4 \xea\x02\x00 \x02\x00\x00 \x18\x03\x00 
+SEQ6 SCE043_015\x00 \xde!\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \x08S\x00\x0c
+SEQ5\x03}\x00\x00
  
 女子学生のひとりが、奇妙な空気を振り払うようにいった。@
 \n女子学生\n　「……あ、あんたが、ああいういい方するから、紅葉、困って\n　　るじゃない！」@
@@ -167,9 +232,13 @@ INIT_TEXT SCE043_015 \xde! SCE_TEXT TEXT1 \x08S TEXT2 }
 本当の答は、もっといびつで、一見、とても欠けた場所には当て\nはまりそうもないピースなのだと。@
 \n気まずい沈黙を破ったのは、紅葉だった。\
 
-  
-INIT ""\x0c SET_VAR1 \xea\x02 \x02 \x18\x03 END
-INIT_TEXT SCE043_016 P$ SCE_TEXT TEXT1 \x0cS TEXT2 O
+\x00\x00\x00  
+SEQ1 ""\x00\x0c
+SEQ4 \xea\x02\x00 \x02\x00\x00 \x18\x03\x00 
+SEQ6 SCE043_016\x00 P$\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \x0cS\x00\x0c
+SEQ5\x03O\x00\x00
  
 紅葉\n　「……行こう」@
 /*■黒　表示（クロスフェード）*/\a7,-2,-2,0,\a0,200,2,0,\a6,-2,0,0,\nそういって紅葉はきびすを返し、屋上の扉をくぐって姿を消した@
@@ -177,6 +246,7 @@ INIT_TEXT SCE043_016 P$ SCE_TEXT TEXT1 \x0cS TEXT2 O
 何人かは拓司に、いまいましそうな一瞥を残してゆく。@
 そうして拓司はひとり、奇妙な空白の中にとりのこされた。\
 
-  
-INIT \x94$\x0c SET_VAR1 \xea\x02 \x02 \x18\x03 END \xea\x02 APPLY_3 TextClose VAR1 \x16& END
+\x00\x00  
+SEQ1 \x94$\x00\x0c
+SEQ4 \xea\x02\x00 \x02\x00\x00 \x18\x03\x00 \x02\x00\x005 \xea\x02\x00 \x02\x00\x00\x03\x03\x00\x00TextClosev\x81\x1f\x16&\x00 
 END_SCRIPT

@@ -1,7 +1,12 @@
 START_SCRIPT
-;8\x01`B#\x01n/  
-INIT \n\x01\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bgm.Fob VAR1   APPlY_2 PlayCD RUNF J END
-INIT_TEXT SCE048_001 f SCE_TEXT TEXT1 \xa0Z TEXT2 \x8b
+;8\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00n/\x00  
+SEQ1 \n\x01\x00\x0c
+SEQ4\x03\x06\x00\x00.\\Data\\Script\\Bgm.Fobv\x81\x1f \x00\x00 
+SEQ2\x00\x00PlayCD SPC1 J\x00\x00 
+SEQ6 SCE048_001\x00 f\x00\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xa0Z\x00\x0c
+SEQ5\x03\x8b\x00\x00
  
 　トイレに入った途端、背後から御堂に羽交い締めにされた。@
 　警戒はしていたつもりだったが、多少なりともなんらかのやり\n　とりがあると思っていたのがアダになった。\pまったく抵抗する\n　こともできず、あっというまに自由を奪われる。@
@@ -12,10 +17,16 @@ INIT_TEXT SCE048_001 f SCE_TEXT TEXT1 \xa0Z TEXT2 \x8b
 御堂\n　「悟りきったような目で人のこと見てるんじゃねえよ！@
 　　いいか、てめえに面白いもの見せてやるぜ！　……オイ、早\n　　くやれ！」\
 
-  
-INIT \xaa\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF \xf6\x02 APPlY_2 TextOn RUNF $\x03 END  
-INIT T\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bg.Fob VAR2Z\x03 \x02 APPLY_4 BgAutoFadeIn VAR2\x84\x03 END
-INIT_TEXT SCE048_002 \xa8\x03 SCE_TEXT TEXT1 \xa4Z TEXT2 \x98
+\x00  
+SEQ1 \xaa\x00\x00\x0c
+SEQ4\x03\x07\x00\x00.\\Data\\Script\\TextFunc.Fob SPC1 \xf6\x02\x00 
+SEQ2\x00\x00TextOn SPC1 $\x03\x00 \x02\x00\x005  
+SEQ1 T\x00\x00\x0c
+SEQ4\x03\x06\x00\x00.\\Data\\Script\\Bg.Fob SPC2 Z\x03\x00 \x02\x00\x00\x03\x04\x00\x00BgAutoFadeIn SPC2 \x84\x03\x00 
+SEQ6 SCE048_002\x00 \xa8\x03\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xa4Z\x00\x0c
+SEQ5\x03\x98\x00\x00
  
 \n　御堂が命じると、取り巻きたちが次々とベルトを外し始めた。@
 　何事かと見守っていると、驚いたことに、取り巻きたちはズボ\n　ンをおろして、硬くなったペ○スをむき出しにし始めたではな\n　いか。@
@@ -25,9 +36,13 @@ INIT_TEXT SCE048_002 \xa8\x03 SCE_TEXT TEXT1 \xa4Z TEXT2 \x98
 　やがてなたねは、無表情のまま、ゆっくりと床に跪いた。@
 　トイレの床は湿気で不潔に湿っているが、なたねはそんなこと\n　は気にかける様子もない。\p足をハの字にして、ぺったりと腰を\n　下ろしてしまった。\
 
-  
-INIT \xec\x03\x0c SET_VAR1 \xf6\x02 \x02 $\x03 END
-INIT_TEXT SCE048_003 \x86\x06 SCE_TEXT TEXT1 \xa8Z TEXT2 _
+\x00  
+SEQ1 \xec\x03\x00\x0c
+SEQ4 \xf6\x02\x00 \x02\x00\x00 $\x03\x00 
+SEQ6 SCE048_003\x00 \x86\x06\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xa8Z\x00\x0c
+SEQ5\x03_\x00\x00
  
 取り巻き\n　「よし、はじめるよ、なたねちゃん。\pその前に、いつもの、言\n　　ってみようか？」@
 なたね\n　「……」@
@@ -37,9 +52,13 @@ INIT_TEXT SCE048_003 \x86\x06 SCE_TEXT TEXT1 \xa8Z TEXT2 _
 なたね\n　「……どうか」@
 取り巻き\n　「……」\
 
-  
-INIT \xca\x06\x0c SET_VAR1 \xf6\x02 \x02 $\x03 END
-INIT_TEXT SCE048_004 \x80\x08 SCE_TEXT TEXT1 \xacZ TEXT2 \x9c
+\x00  
+SEQ1 \xca\x06\x00\x0c
+SEQ4 \xf6\x02\x00 \x02\x00\x00 $\x03\x00 
+SEQ6 SCE048_004\x00 \x80\x08\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xacZ\x00\x0c
+SEQ5\x03\x9c\x00\x00
  
 なたね\n　「……どうか優等生の雲居なたねに、おち○ちんのことをお\n　　勉強させてください」@
 取り巻き\n　「ハイ、よくいえました！」@
@@ -51,9 +70,13 @@ INIT_TEXT SCE048_004 \x80\x08 SCE_TEXT TEXT1 \xacZ TEXT2 \x9c
 　笑っている。@
 　４本のペ○スをこすりつけられながら、なたねはだらしなく笑\n　っていた。\
 
-  
-INIT \xc4\x08\x0c SET_VAR1 \xf6\x02 \x02 $\x03 END
-INIT_TEXT SCE048_005 n\x0b SCE_TEXT TEXT1 \xb0Z TEXT2 \xb3
+\x00\x00\x00  
+SEQ1 \xc4\x08\x00\x0c
+SEQ4 \xf6\x02\x00 \x02\x00\x00 $\x03\x00 
+SEQ6 SCE048_005\x00 n\x0b\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xb0Z\x00\x0c
+SEQ5\x03\xb3\x00\x00
  
 \nセックスというものが、快感を得て射精をすることとだとするな\nらば、取り巻きたちのそれは、セックスとはいえなかった。@
 ペ○スをひたすら顔にこすりつけている。@
@@ -63,9 +86,13 @@ INIT_TEXT SCE048_005 n\x0b SCE_TEXT TEXT1 \xb0Z TEXT2 \xb3
 なたねは片手に一本づつ、合わせて二本のペ○スを握っているが\n、それをしごく様子はない。\pしごけと命令する人間もいない。@
 取り巻きのひとりが、なたねの髪の毛にペ○スの先端をこすりつ\nけ始めた。\pそれを合図に、顎から首に掛けて、眼鏡のレンズに\n、耳の穴にと、亀頭がこすりつけられる。\pカウパー液が漏れ始\nめたのか、うっすらとナメクジの這ったあとのような軌跡が、あ\nちらこちらに残っている。\
 
-  
-INIT \xb2\x0b\x0c SET_VAR1 \xf6\x02 \x02 $\x03 END
-INIT_TEXT SCE048_006 \xb8\x0e SCE_TEXT TEXT1 \xb4Z TEXT2 \xaf
+\x00\x00\x00  
+SEQ1 \xb2\x0b\x00\x0c
+SEQ4 \xf6\x02\x00 \x02\x00\x00 $\x03\x00 
+SEQ6 SCE048_006\x00 \xb8\x0e\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xb4Z\x00\x0c
+SEQ5\x03\xaf\x00\x00
  
 御堂\n　「どうよ？　面白いだろ？　匂い付けだよ」@
 拓司\n　「……」@
@@ -76,9 +103,13 @@ INIT_TEXT SCE048_006 \xb8\x0e SCE_TEXT TEXT1 \xb4Z TEXT2 \xaf
 拓司\n　「おまえ……」@
 御堂\n　「敢えてフェラチオとかホンバンとかしないでさ、単なるこす\n　　りつけの道具に……スペルマの的にするっていうのも、ちょ\n　　っといかれてて燃えねえか？\p　女にとっても、すげえ屈辱的\n　　だろ？\p　まあ、なたねちゃんはなんだかよくわかってないみ\n　　たいだけどな、くっくっく」\
 
-  
-INIT \xfc\x0e\x0c SET_VAR1 \xf6\x02 \x02 $\x03 END
-INIT_TEXT SCE048_007 \xf2\x11 SCE_TEXT TEXT1 \xb8Z TEXT2 \xb4
+\x00  
+SEQ1 \xfc\x0e\x00\x0c
+SEQ4 \xf6\x02\x00 \x02\x00\x00 $\x03\x00 
+SEQ6 SCE048_007\x00 \xf2\x11\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xb8Z\x00\x0c
+SEQ5\x03\xb4\x00\x00
  
 \nセックスの対象としてすら認めてもらえず、単なるモノとして扱\nわれる少女……。@
 あまりにも非道な行為だったが、拓司はあまり衝撃を受けること\nもなく、平然とそれを受け止めている自分に、やや驚いた。@
@@ -90,9 +121,13 @@ INIT_TEXT SCE048_007 \xf2\x11 SCE_TEXT TEXT1 \xb8Z TEXT2 \xb4
 だからさほどの嫌悪感を感じないのか？@
 取り巻きたちの息が、徐々に荒くなっていった。\
 
-  
-INIT 6\x12\x0c SET_VAR1 \xf6\x02 \x02 $\x03 END
-INIT_TEXT SCE048_008 @\x15 SCE_TEXT TEXT1 \xbcZ TEXT2 U
+\x00\x00\x00  
+SEQ1 6\x12\x00\x0c
+SEQ4 \xf6\x02\x00 \x02\x00\x00 $\x03\x00 
+SEQ6 SCE048_008\x00 @\x15\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xbcZ\x00\x0c
+SEQ5\x03U\x00\x00
  
 取り巻き\n　「……め、眼鏡とれよ」@
 取り巻き\n　「いいじゃねえか、そのままぶっかけてやろうぜ？」@
@@ -102,18 +137,27 @@ INIT_TEXT SCE048_008 @\x15 SCE_TEXT TEXT1 \xbcZ TEXT2 U
 取り巻き\n　「さきっぽから……出るぞっ！」@
 取り巻き\n　「うっ！」\
 
-  
-INIT \x84\x15\x0c SET_VAR1 \xf6\x02 \x02 $\x03 END
-INIT_TEXT SCE048_009 \x12\x17 SCE_TEXT TEXT1 \xc0Z TEXT2 D
+\x00\x00\x00  
+SEQ1 \x84\x15\x00\x0c
+SEQ4 \xf6\x02\x00 \x02\x00\x00 $\x03\x00 
+SEQ6 SCE048_009\x00 \x12\x17\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xc0Z\x00\x0c
+SEQ5\x03D\x00\x00
  
 とりまきの一人が精液をぶちまけた。\pねっとりとしたかたまりが\nなたねの眼鏡の右レンズに命中し、そこで弾けて髪の毛の先に付\n着した。\pもう一人もなたねの鼻先で発射し、左のレンズを縦断す\nるように精液をへばりつかせた。@
 既視感。@
 妄想世界による現実世界の侵犯。\
 
-  
-INIT V\x17\x0c SET_VAR1 \xf6\x02 \x02 $\x03 END  
-INIT U\x0c SET_VAR1 Z\x03 \x02 \x84\x03 END
-INIT_TEXT SCE048_010 \xd4\x18 SCE_TEXT TEXT1 \xc4Z TEXT2 q
+\x00\x00\x00  
+SEQ1 V\x17\x00\x0c
+SEQ4 \xf6\x02\x00 \x02\x00\x00 $\x03\x00 \x02\x00\x005  
+SEQ1 U\x00\x00\x0c
+SEQ4 Z\x03\x00 \x02\x00\x00 \x84\x03\x00 
+SEQ6 SCE048_010\x00 \xd4\x18\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xc4Z\x00\x0c
+SEQ5\x03q\x00\x00
  
 取り巻き\n　「Ｗ大狙う天才さんの顔面に、劣等ＤＮＡが炸裂！」@
 取り巻き\n　「精液まみれの優等生なんて、聞いたことねえよ」@
@@ -123,9 +167,13 @@ INIT_TEXT SCE048_010 \xd4\x18 SCE_TEXT TEXT1 \xc4Z TEXT2 q
 取り巻き\n　「それがよだれたらして子種まみれ」@
 取り巻き\n　「ただのアホだよ、これじゃ。げらげら」\
 
-  
-INIT \x18\x19\x0c SET_VAR1 \xf6\x02 \x02 $\x03 END
-INIT_TEXT SCE048_011 \x16\x1b SCE_TEXT TEXT1 \xc8Z TEXT2 d
+\x00  
+SEQ1 \x18\x19\x00\x0c
+SEQ4 \xf6\x02\x00 \x02\x00\x00 $\x03\x00 
+SEQ6 SCE048_011\x00 \x16\x1b\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xc8Z\x00\x0c
+SEQ5\x03d\x00\x00
  
 取り巻き\n　「男子便所で両手にチ○ポ握って。お前、痴女か？」@
 取り巻き\n　「パパとママが知ったら悲しむよなあ。\pまさか自慢の娘が痴女\n　　だったなんてヨ」@
@@ -133,9 +181,13 @@ INIT_TEXT SCE048_011 \x16\x1b SCE_TEXT TEXT1 \xc8Z TEXT2 d
 \n取り巻きの一人が、髪の毛に射精した。\p黒く美しい髪に、べった\nりと白濁液がこびりつく。\pなたねには何の反応もない。@
 ただ男たちの欲望の的になっているだけだ。\
 
-  
-INIT Z\x1b\x0c SET_VAR1 \xf6\x02 \x02 $\x03 END
-INIT_TEXT SCE048_012 $\x1d SCE_TEXT TEXT1 \xccZ TEXT2 s
+\x00\x00\x00  
+SEQ1 Z\x1b\x00\x0c
+SEQ4 \xf6\x02\x00 \x02\x00\x00 $\x03\x00 
+SEQ6 SCE048_012\x00 $\x1d\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xccZ\x00\x0c
+SEQ5\x03s\x00\x00
  
 取り巻き\n　「おら、休まずこすりつけろよ！」@
 取り巻き\n　「くう……そこらへんの女とは違うよな」@
@@ -147,9 +199,13 @@ INIT_TEXT SCE048_012 $\x1d SCE_TEXT TEXT1 \xccZ TEXT2 s
 取り巻き\n　「おれもだ。いくぞ……いくぞ！」@
 取り巻き\n　「同時にひっかけてやろうぜ」\
 
-  
-INIT h\x1d\x0c SET_VAR1 \xf6\x02 \x02 $\x03 END
-INIT_TEXT SCE048_013 n\x1f SCE_TEXT TEXT1 \xd0Z TEXT2 \x83
+\x00\x00\x00  
+SEQ1 h\x1d\x00\x0c
+SEQ4 \xf6\x02\x00 \x02\x00\x00 $\x03\x00 
+SEQ6 SCE048_013\x00 n\x1f\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xd0Z\x00\x0c
+SEQ5\x03\x83\x00\x00
  
 取り巻き\n　「おらっ、くらえ！」@
 取り巻き\n　「な、なたねっ！　受け止めろっ！」@
@@ -158,9 +214,14 @@ INIT_TEXT SCE048_013 n\x1f SCE_TEXT TEXT1 \xd0Z TEXT2 \x83
 取り巻き\n　「ザ、ザーメンリンスだよ、なたね！」@
 \n見る見るうちに、なたねの顔はこってりとした精液で覆われてい\nく。\p顎からつららのように精液が糸を引き、頭髪もぺったりと頭\n皮にはりついて惨めである。\p唇と眼鏡、そして鼻先にはとりわけ\n多くの精液が浴びせかけられた。\pもう、どこが口なのかもわから\nない状態だ。\
 
-  
-INIT \xb2\x1f\x0c SET_VAR1 \xf6\x02 \x02 $\x03 END NULL APPlY_2 StopCD RUNF \x04" END
-INIT_TEXT SCE048_014  " SCE_TEXT TEXT1 \xd4Z TEXT2 z
+\x00\x00\x00  
+SEQ1 \xb2\x1f\x00\x0c
+SEQ4 \xf6\x02\x00 \x02\x00\x00 $\x03\x00 \x02\x00\x005  \x00\x00 
+SEQ2\x00\x00StopCD SPC1 \x04"\x00 
+SEQ6 SCE048_014\x00  "\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xd4Z\x00\x0c
+SEQ5\x03z\x00\x00
  
 /*▲SE27　再生*/\a2,0,27,0,　ザザ。@
 \a4,0,0,0,\n拓司の耳の奥で、例の音が響いた。@
@@ -172,23 +233,39 @@ INIT_TEXT SCE048_014  " SCE_TEXT TEXT1 \xd4Z TEXT2 z
 　ザアザアアアアアアア……\
 
   
-INIT d"\x0c SET_VAR1 \xf6\x02 \x02 $\x03 END
-INIT_TEXT SCE048_015 \x86$ SCE_TEXT TEXT1 \xd8Z TEXT2 _
+SEQ1 d"\x00\x0c
+SEQ4 \xf6\x02\x00 \x02\x00\x00 $\x03\x00 
+SEQ6 SCE048_015\x00 \x86$\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xd8Z\x00\x0c
+SEQ5\x03_\x00\x00
  
 取り巻き\n　「ほら、なたねちゃん。うれしいだろう？」\n取り巻き\n　「なたねちゃん、これ握って」\n取り巻き\n　「なたねちゃん、ちょっと口開いて見せて」\n取り巻き\n　「ほら、なたねちゃん」\n取り巻き\n　「なたねちゃん」\n取り巻き\n　「なたねちゃああん」\n取り巻き\n　「なたねっ」\n取り巻き\n　「なたねえええええ」\n取り巻き\n　「おら」\n取り巻き\n　「ザーメン食らえアホ女！」\w\z
-  
-INIT \xca$\x0c SET_VAR1 \xf6\x02 \x02 $\x03 END
-INIT_TEXT SCE048_016 \x80& SCE_TEXT TEXT1 \xdcZ TEXT2 w
+\x00\x00\x00  
+SEQ1 \xca$\x00\x0c
+SEQ4 \xf6\x02\x00 \x02\x00\x00 $\x03\x00 
+SEQ6 SCE048_016\x00 \x80&\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xdcZ\x00\x0c
+SEQ5\x03w\x00\x00
  
 取り巻き\n　「電波女！」\n取り巻き\n　「××××！」\n取り巻き\n　「感謝しろよ」\n取り巻き\n　「おれたちが地球を守ってやるから感謝しろよ。ありがとうご\n　　ざいますって言ってみろ！」\n取り巻き\n　「うわ、糸引きまくりだよ」\n取り巻き\n　「こいつ、鼻の穴からちょうちん出してるぜ！　げらげら」\n取り巻き\n　「ぶくぶくやって見ろよ？　ほら、口の端っこでぶくぶくぶく\n　　ぶく……」\n取り巻き\n　「おおっ、すげえ」\n取り巻き\n　「げらげら。みっともねえツラだなあ、優等生！」\w\z
-  
-INIT \xc4&\x0c SET_VAR1 \xf6\x02 \x02 $\x03 END
-INIT_TEXT SCE048_017 \xda( SCE_TEXT TEXT1 \xe0Z TEXT2 p
+\x00  
+SEQ1 \xc4&\x00\x0c
+SEQ4 \xf6\x02\x00 \x02\x00\x00 $\x03\x00 
+SEQ6 SCE048_017\x00 \xda(\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xe0Z\x00\x0c
+SEQ5\x03p\x00\x00
  
 取り巻き\n　「お前なんか相手にしてやるのはおれらくらいなんだからな」\n取り巻き\n　「感謝しろよ」\n取り巻き\n　「ボランティアだな、ボランティア」\n取り巻き\n　「公衆便所が！」\n取り巻き\n　「これで４発目だよぉ、なたねぇ！」\n取り巻き\n　「おうっ！　出る！」\n取り巻き\n　「さすがに薄くなってきたなあ、ザーメンも」\n取り巻き\n　「おれもう水みたいなのしか出ねえよ」\n取り巻き\n　「飲ませれば、こいつに？」\n取り巻き\n　「眼ェ開けろ、電波子！」\w\z
-  
-INIT \x1e)\x0c SET_VAR1 \xf6\x02 \x02 $\x03 END
-INIT_TEXT SCE048_018 \x18+ SCE_TEXT TEXT1 \xe4Z TEXT2 {
+\x00  
+SEQ1 \x1e)\x00\x0c
+SEQ4 \xf6\x02\x00 \x02\x00\x00 $\x03\x00 
+SEQ6 SCE048_018\x00 \x18+\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xe4Z\x00\x0c
+SEQ5\x03{\x00\x00
  
 取り巻き\n　「にしてもくせえなあ」@
 取り巻き\n　「絶対染み込んでるよな、細胞まで」@
@@ -199,14 +276,23 @@ INIT_TEXT SCE048_018 \x18+ SCE_TEXT TEXT1 \xe4Z TEXT2 {
 取り巻き\n　「おまえバカじゃねえの！」@
 取り巻き\n　「ちげえよ！　スポイトとかで吸い取ってさ、突っ込んで妊娠\n　　させるの」@
 取り巻き\n　「おもしれえな。誰が父親かは絶対わかんねえよな」\w\z
-  
-INIT \\+\x0c SET_VAR1 \xf6\x02 \x02 $\x03 END
-INIT_TEXT SCE048_019 \x82- SCE_TEXT TEXT1 \xe8Z TEXT2 0
+\x00\x00\x00  
+SEQ1 \\+\x00\x0c
+SEQ4 \xf6\x02\x00 \x02\x00\x00 $\x03\x00 
+SEQ6 SCE048_019\x00 \x82-\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xe8Z\x00\x0c
+SEQ5\x030\x00\x00
  
 取り巻き\n　「おれら４人の特徴併せ持った子供が産まれたりして」\n取り巻き\n　「げらげらげらげら！　おもしれーよソレ！」\n取り巻き\n　「わはははは！」\n取り巻き\n　「うへへへへへ！」\
 
-  
-INIT \xc6-\x0c SET_VAR1 \xf6\x02 \x02 $\x03 END  
-INIT \x02\x0c SET_VAR1 NULL APPlY_2 SeStop RUNF \xe6. END  
-INIT \xc8\x0c SET_VAR1 Z\x03 APPlY_2 BgOn VAR2(/ END \xf6\x02 APPLY_3 TextClose VAR1 P/ END
+\x00\x00\x00  
+SEQ1 \xc6-\x00\x0c
+SEQ4 \xf6\x02\x00 \x02\x00\x00 $\x03\x00 \x02\x00\x005  
+SEQ1 \x02\x00\x00\x0c
+SEQ4  \x00\x00 
+SEQ2\x00\x00SeStop SPC1 \xe6.\x00 \x02\x00\x005  
+SEQ1 \xc8\x00\x00\x0c
+SEQ4 Z\x03\x00 
+SEQ2\x00\x00BgOn SPC2 (/\x00 \x02\x00\x005 \xf6\x02\x00 \x02\x00\x00\x03\x03\x00\x00TextClosev\x81\x1fP/\x00 
 END_SCRIPT

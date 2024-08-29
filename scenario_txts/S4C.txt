@@ -1,7 +1,12 @@
 START_SCRIPT
-\x1a\x0b\x01`B#\x01>\t  
-INIT \x04\x01\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bgm.Fob VAR1   APPlY_2 PlayCD RUNF J END
-INIT_TEXT SCES04_001 f SCE_TEXT TEXT1 \xf8\xb5\x01 TEXT2 \x99
+\x1a\x0b\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00>\t\x00  
+SEQ1 \x04\x01\x00\x0c
+SEQ4\x03\x06\x00\x00.\\Data\\Script\\Bgm.Fobv\x81\x1f \x00\x00 
+SEQ2\x00\x00PlayCD SPC1 J\x00\x00 
+SEQ6 SCES04_001\x00 f\x00\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xf8\xb5\x01\x0c
+SEQ5\x03\x99\x00\x00
  
 援助交際で怖い目にあったって話も聞いていたけど、たぶんそれ\nはウソだって、そう思ってた。@
 大人がそういうことはやめさせようと作った怖いお話。@
@@ -12,9 +17,14 @@ INIT_TEXT SCES04_001 f SCE_TEXT TEXT1 \xf8\xb5\x01 TEXT2 \x99
 でも、そういうふうに誘ってもらえるのは悪い気分じゃなかった。\n@
 そういうことをしばらく続けていると、どんどんお金が貯まって\nいった。\
 
-  
-INIT \xaa\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF .\x03 APPlY_2 TextOn RUNF \\\x03 END
-INIT_TEXT SCES04_002 x\x03 SCE_TEXT TEXT1 \xfc\xb5\x01 TEXT2 \xdd
+\x00\x00\x00  
+SEQ1 \xaa\x00\x00\x0c
+SEQ4\x03\x07\x00\x00.\\Data\\Script\\TextFunc.Fob SPC1 .\x03\x00 
+SEQ2\x00\x00TextOn SPC1 \\\x03\x00 
+SEQ6 SCES04_002\x00 x\x03\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xfc\xb5\x01\x0c
+SEQ5\x03\xdd\x00\x00
  
 そんなとき、学校の帰り、偶然何人かのクラスの女の子と一緒に\nなって、ピザのお店に寄ったの。@
 すごく緊張して、嫌われないようにしなきゃ、って、ずっとドキ\nドキしてた。\pでも、あんまりうまくお話ができなくて、みんなは\n私に失望しているみたいに見えた。@
@@ -29,13 +39,19 @@ INIT_TEXT SCES04_002 x\x03 SCE_TEXT TEXT1 \xfc\xb5\x01 TEXT2 \xdd
 なあんだ、簡単じゃない。@
 そう思った。\
 
-  
-INIT \xbc\x03\x0c SET_VAR1 .\x03 \x02 \\\x03 END
-INIT_TEXT SCES04_003 j\x07 SCE_TEXT TEXT1 \xb6\x01 TEXT2 A
+\x00\x00\x00  
+SEQ1 \xbc\x03\x00\x0c
+SEQ4 .\x03\x00 \x02\x00\x00 \\\x03\x00 
+SEQ6 SCES04_003\x00 j\x07\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \x00\xb6\x01\x0c
+SEQ5\x03A\x00\x00
  
 それから私はみんなにいろんなものをごちそうしたり、プレゼン\nトしたりしはじめた。@
 それで友情を買おうと思ったわけじゃないし、買えるとも思って\nなかった。\pでも、自己の価値は証明できるし、それこそが、私\nがずっと欲しくてたまらなかったものだったから。\
 
-  
-INIT \xae\x07\x0c SET_VAR1 .\x03 \x02 \\\x03 END NULL APPlY_2 StopCD RUNF \xf8\x08 END .\x03 APPLY_3 TextClose VAR1  \t END
+\x00  
+SEQ1 \xae\x07\x00\x0c
+SEQ4 .\x03\x00 \x02\x00\x00 \\\x03\x00 \x02\x00\x005  \x00\x00 
+SEQ2\x00\x00StopCD SPC1 \xf8\x08\x00 \x02\x00\x005 .\x03\x00 \x02\x00\x00\x03\x03\x00\x00TextClosev\x81\x1f \t\x00 
 END_SCRIPT

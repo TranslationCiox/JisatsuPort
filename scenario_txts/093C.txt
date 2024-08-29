@@ -1,7 +1,12 @@
 START_SCRIPT
-\x1a\x10\x01`B#\x01\xaa\r  
-INIT \t\x01\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bgm.Fob VAR1   APPlY_2 PlayCD RUNF J END
-INIT_TEXT SCE093_001 f SCE_TEXT TEXT1 \xf0\xa0 TEXT2 N
+\x1a\x10\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xaa\r\x00  
+SEQ1 \t\x01\x00\x0c
+SEQ4\x03\x06\x00\x00.\\Data\\Script\\Bgm.Fobv\x81\x1f \x00\x00 
+SEQ2\x00\x00PlayCD SPC1 J\x00\x00 
+SEQ6 SCE093_001\x00 f\x00\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xf0\xa0\x00\x0c
+SEQ5\x03N\x00\x00
  
 拓司\n　「それでも、何日持つのかはハッキリさせて欲しい」@
 \n　拓司はいった。@
@@ -9,9 +14,14 @@ INIT_TEXT SCE093_001 f SCE_TEXT TEXT1 \xf0\xa0 TEXT2 N
 \nなたね\n　「それでは逆にお尋ねしますけど……何日分あれば安心できる\n　　んですか？\p　１ヶ月分？　１年分？　１０年分？」@
 拓司\n　「それは……」@
 \n拓司は絶句した。\w\z
-  
-INIT \xaa\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF \x02\x02 APPlY_2 TextOn RUNF 0\x02 END
-INIT_TEXT SCE093_002 L\x02 SCE_TEXT TEXT1 \xf4\xa0 TEXT2 \x82
+\x00\x00\x00  
+SEQ1 \xaa\x00\x00\x0c
+SEQ4\x03\x07\x00\x00.\\Data\\Script\\TextFunc.Fob SPC1 \x02\x02\x00 
+SEQ2\x00\x00TextOn SPC1 0\x02\x00 
+SEQ6 SCE093_002\x00 L\x02\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xf4\xa0\x00\x0c
+SEQ5\x03\x82\x00\x00
  
 拓司\n　「……１年分あれば……まあ……安心はできるんじゃないか？」\n\pなたね\n　「その根拠は？　最終波動がいつやってくるのか予想不可能な\n　　現状において、どうして１年の備蓄が『安心』を与えるんで\n　　すか？」@
 拓司\n　「……。１年というのはあくまでもたとえだ。@
@@ -20,9 +30,13 @@ INIT_TEXT SCE093_002 L\x02 SCE_TEXT TEXT1 \xf4\xa0 TEXT2 \x82
 　　よかったですね、みなさん」@
 \nなたねは薄笑いを浮かべながらいった。@
 カンナがそれに反応した。\w\z
-  
-INIT \x90\x02\x0c SET_VAR1 \x02\x02 \x02 0\x02 END
-INIT_TEXT SCE093_003 \xd2\x04 SCE_TEXT TEXT1 \xf8\xa0 TEXT2 \x9d
+\x00  
+SEQ1 \x90\x02\x00\x0c
+SEQ4 \x02\x02\x00 \x02\x00\x00 0\x02\x00 
+SEQ6 SCE093_003\x00 \xd2\x04\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xf8\xa0\x00\x0c
+SEQ5\x03\x9d\x00\x00
  
 カンナ\n　「そのいいかたは……どうなのかしら、雲居さん？」@
 なたね\n　「なにかご不満でも？」@
@@ -32,9 +46,13 @@ INIT_TEXT SCE093_003 \xd2\x04 SCE_TEXT TEXT1 \xf8\xa0 TEXT2 \x9d
 なたね\n　「文句なんて言ってません」@
 カンナ\n　「さっきのいい方は、そうとられてもおかしくないでしょう！」\n\p拓司\n　「待て！　言い争いはやめよう！」@
 \n拓司が間に入ることで、カンナとなたねは引き離されたが、あと\nには気まずい空気が残っている。\w\z
-  
-INIT \x16\x05\x0c SET_VAR1 \x02\x02 \x02 0\x02 END
-INIT_TEXT SCE093_004 \xc4\x07 SCE_TEXT TEXT1 \xfc\xa0 TEXT2 \xae
+\x00  
+SEQ1 \x16\x05\x00\x0c
+SEQ4 \x02\x02\x00 \x02\x00\x00 0\x02\x00 
+SEQ6 SCE093_004\x00 \xc4\x07\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xfc\xa0\x00\x0c
+SEQ5\x03\xae\x00\x00
  
 なたね\n　「……はっきりさせておきたいんですけど」@
 \nやがてなたねがいった。@
@@ -48,9 +66,13 @@ INIT_TEXT SCE093_004 \xc4\x07 SCE_TEXT TEXT1 \xfc\xa0 TEXT2 \xae
 　　できないんじゃないですか？@
 　　　みなさんは私を信じるしかないんですよ。@
 　　いつもいつも散々ウソつき呼ばわりしてきたバカタレどもが\n　　私を信じるしか！　くすくすくすくす」\w\z
-  
-INIT \x08\x08\x0c SET_VAR1 \x02\x02 \x02 0\x02 END
-INIT_TEXT SCE093_005 \xfa\n SCE_TEXT TEXT1 \xa1 TEXT2 ^
+\x00  
+SEQ1 \x08\x08\x00\x0c
+SEQ4 \x02\x02\x00 \x02\x00\x00 0\x02\x00 
+SEQ6 SCE093_005\x00 \xfa\n\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \x00\xa1\x00\x0c
+SEQ5\x03^\x00\x00
  
 カンナがなにかをいいかけた。@
 \nなたね\n　「あっ！」@
@@ -60,7 +82,10 @@ INIT_TEXT SCE093_005 \xfa\n SCE_TEXT TEXT1 \xa1 TEXT2 ^
 カンナ\n　「……」@
 なたね\n　「……惜しい！　いま、ちょっとだけ母船からきてたのに！@
 　　あなたたちが余計なことをいうから聞き逃してしまったでし\n　　ょうが！\p　ああ、惜しい！\p　惜しかったなあ！」\w\z
-  
-INIT >\x0b\x0c SET_VAR1 \x02\x02 \x02 0\x02 END  
-INIT \xc8\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bg.Fob VAR2\n\r \x02 APPLY_4 BgAutoFadeIn VAR24\r END NULL APPlY_2 StopCD RUNF d\r END \x02\x02 APPLY_3 TextClose VAR1 \x8c\r END
+\x00  
+SEQ1 >\x0b\x00\x0c
+SEQ4 \x02\x02\x00 \x02\x00\x00 0\x02\x00 \x02\x00\x005  
+SEQ1 \xc8\x00\x00\x0c
+SEQ4\x03\x06\x00\x00.\\Data\\Script\\Bg.Fob SPC2 \n\r\x00 \x02\x00\x00\x03\x04\x00\x00BgAutoFadeIn SPC2 4\r\x00 \x02\x00\x005  \x00\x00 
+SEQ2\x00\x00StopCD SPC1 d\r\x00 \x02\x00\x005 \x02\x02\x00 \x02\x00\x00\x03\x03\x00\x00TextClosev\x81\x1f\x8c\r\x00 
 END_SCRIPT

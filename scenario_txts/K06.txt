@@ -1,7 +1,12 @@
 START_SCRIPT
-\xb8\x04\x01\xa4\t3\x01d\x03  
-INIT \xc8\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bg.Fob VAR2  \x02 APPLY_4 BgAutoFadeIn VAR2J END APPLY_FILE .\\Data\\Script\\Bgm.Fob VAR1 n APPlY_2 StopCD RUNF \x98 END
-INIT_TEXT SCEK06_001 \xb4 SCE_TEXT TEXT1 \xd0\xa6\x01 TEXT2 v
+\xb8\x04\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xa4\t3\x01\x00\x00\x00d\x03\x00  
+SEQ1 \xc8\x00\x00\x0c
+SEQ4\x03\x06\x00\x00.\\Data\\Script\\Bg.Fob SPC2  \x00\x00 \x02\x00\x00\x03\x04\x00\x00BgAutoFadeIn SPC2 J\x00\x00 \x02\x00\x005\x03\x06\x00\x00.\\Data\\Script\\Bgm.Fobv\x81\x1fn\x00\x00 
+SEQ2\x00\x00StopCD SPC1 \x98\x00\x00 
+SEQ6 SCEK06_001\x00 \xb4\x00\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xd0\xa6\x01\x0c
+SEQ5\x03v\x00\x00
  
 　もう帰ろう、と私がいうと、ゆきはほっとしたようだった。@
 けれども安堵の奥には、落胆のかけらがあるように思えた。@
@@ -11,6 +16,8 @@ INIT_TEXT SCEK06_001 \xb4 SCE_TEXT TEXT1 \xd0\xa6\x01 TEXT2 v
 告白を聞いてくれる神父が。\p神父を通じてなされる赦しが。@
 私は結局、ゆきの秘密を最後まで知ることはなかった。@
 それから１週間後、ゆきは風邪薬を２００錠のんで、自殺したの\nだった。\w\z
-  
-INIT \xf8\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF \xf0\x02 APPlY_2 TextOn RUNF \x1e\x03 END \xf0\x02 APPLY_3 TextClose VAR1 F\x03 END
+\x00  
+SEQ1 \xf8\x00\x00\x0c
+SEQ4\x03\x07\x00\x00.\\Data\\Script\\TextFunc.Fob SPC1 \xf0\x02\x00 
+SEQ2\x00\x00TextOn SPC1 \x1e\x03\x00 \x02\x00\x005 \xf0\x02\x00 \x02\x00\x00\x03\x03\x00\x00TextClosev\x81\x1fF\x03\x00 
 END_SCRIPT

@@ -1,6 +1,8 @@
 START_SCRIPT
-)!\x01`B#\x01B\x1b
-INIT_TEXT SCE248_001 \x06 SCE_TEXT TEXT1  \x93\x01 TEXT2 \xb9
+)!\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00B\x1b\x00\x03\x03\x00\x00SCE248_001\x00 \x06\x00\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3  \x93\x01\x0c
+SEQ5\x03\xb9\x00\x00
  
 拓司\n　「走れッ！」@
 \nいうが早いか、すでに拓司は地を蹴っている。@
@@ -16,9 +18,14 @@ INIT_TEXT SCE248_001 \x06 SCE_TEXT TEXT1  \x93\x01 TEXT2 \xb9
 あの銀紙のシェルターがそれに耐えうるのかどうかも。@
 しかし、どこから襲ってくるかわからないむきだしの死に身を晒\nすより、どんなに薄かろうとも鎧をまとっている方がマシだった。\n\
 
-  
-INIT J\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF N\x03 APPlY_2 TextOn RUNF |\x03 END
-INIT_TEXT SCE248_002 \x98\x03 SCE_TEXT TEXT1 $\x93\x01 TEXT2 h
+\x00  
+SEQ1 J\x00\x00\x0c
+SEQ4\x03\x07\x00\x00.\\Data\\Script\\TextFunc.Fob SPC1 N\x03\x00 
+SEQ2\x00\x00TextOn SPC1 |\x03\x00 
+SEQ6 SCE248_002\x00 \x98\x03\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 $\x93\x01\x0c
+SEQ5\x03h\x00\x00
  
 地鳴りは徐々に大きくなっていく。@
 低く、重く……それは世界の終末を確信させるに十分な不吉さを\n備えていた。@
@@ -27,9 +34,13 @@ INIT_TEXT SCE248_002 \x98\x03 SCE_TEXT TEXT1 $\x93\x01 TEXT2 h
 ピシ、という鋭い音に視線を送ると、廊下の側面にはめ込まれた\n窓ガラスのすべてに亀裂が入ってる。@
 亀裂は、あたかも生命を持っているかのように……雪崩落ちる雷\nのように……窓ガラスを走り……\
 
-  
-INIT \xdc\x03\x0c SET_VAR1 N\x03 \x02 |\x03 END
-INIT_TEXT SCE248_003 \xb6\x05 SCE_TEXT TEXT1 (\x93\x01 TEXT2 \x8c
+\x00\x00\x00  
+SEQ1 \xdc\x03\x00\x0c
+SEQ4 N\x03\x00 \x02\x00\x00 |\x03\x00 
+SEQ6 SCE248_003\x00 \xb6\x05\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 (\x93\x01\x0c
+SEQ5\x03\x8c\x00\x00
  
 ざあっ！@
 \n足の裏から頭のてっぺんへ。@
@@ -40,9 +51,13 @@ INIT_TEXT SCE248_003 \xb6\x05 SCE_TEXT TEXT1 (\x93\x01 TEXT2 \x8c
 /*▲SE33　一回再生（再生終了待たず先へ）*/\a2,0,33,0,\a6,0,0,0,\nキイイイイイイイイイイイイイイイイイイイイイイイイイイイ！@
 /*▲↑停止まで待つ*/\a3,0,0,0,\a4,0,0,0,\n拓司\n　「！」\
 
-  
-INIT \xfa\x05\x0c SET_VAR1 N\x03 \x02 |\x03 END
-INIT_TEXT SCE248_004 d\x08 SCE_TEXT TEXT1 ,\x93\x01 TEXT2 U
+\x00\x00  
+SEQ1 \xfa\x05\x00\x0c
+SEQ4 N\x03\x00 \x02\x00\x00 |\x03\x00 
+SEQ6 SCE248_004\x00 d\x08\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 ,\x93\x01\x0c
+SEQ5\x03U\x00\x00
  
 世界が軋んでいた。@
 耳の奥で生まれたその悲鳴は、耳の奥へ針のようにつきささり、\n脳味噌のなかで爆発した。\p飛び散った破片は頭蓋骨の内側を反射\nして、反射して、反射した。@
@@ -50,9 +65,13 @@ INIT_TEXT SCE248_004 d\x08 SCE_TEXT TEXT1 ,\x93\x01 TEXT2 U
 夢幻に反射を繰り返して、さらに新しい悲鳴が雪崩のように流れ\n込んできては反射した。@
 頭そのものが爆発しないのが不思議だった。\
 
-  
-INIT \xa8\x08\x0c SET_VAR1 N\x03 \x02 |\x03 END
-INIT_TEXT SCE248_005 6\n SCE_TEXT TEXT1 0\x93\x01 TEXT2 }
+\x00  
+SEQ1 \xa8\x08\x00\x0c
+SEQ4 N\x03\x00 \x02\x00\x00 |\x03\x00 
+SEQ6 SCE248_005\x00 6\n\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 0\x93\x01\x0c
+SEQ5\x03}\x00\x00
  
 拓司\n　「ああああああああああああ！」@
 \n拓司は耳をふさいでうずくまった。@
@@ -63,9 +82,13 @@ INIT_TEXT SCE248_005 6\n SCE_TEXT TEXT1 0\x93\x01 TEXT2 }
 やがてぐったりと仰向けに転がると、ぴくぴくと身体を痙攣させ\n始める。@
 白目をむき、耳から、鼻から、どす黒い血があふれ出している。\
 
-  
-INIT z\n\x0c SET_VAR1 N\x03 \x02 |\x03 END
-INIT_TEXT SCE248_006 \xa8\x0c SCE_TEXT TEXT1 4\x93\x01 TEXT2 \xa4
+\x00\x00\x00  
+SEQ1 z\n\x00\x0c
+SEQ4 N\x03\x00 \x02\x00\x00 |\x03\x00 
+SEQ6 SCE248_006\x00 \xa8\x0c\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 4\x93\x01\x0c
+SEQ5\x03\xa4\x00\x00
  
 拓司\n　「紅葉イイイイイイイイ！」@
 \n拓司は叫んだ。@
@@ -83,18 +106,26 @@ INIT_TEXT SCE248_006 \xa8\x0c SCE_TEXT TEXT1 4\x93\x01 TEXT2 \xa4
 解決されつつあることなのだ。@
 あるいは、解決されるべきものなのだ。\
 
-  
-INIT \xec\x0c\x0c SET_VAR1 N\x03 \x02 |\x03 END
-INIT_TEXT SCE248_007 \xb6\x0f SCE_TEXT TEXT1 8\x93\x01 TEXT2 9
+\x00\x00\x00  
+SEQ1 \xec\x0c\x00\x0c
+SEQ4 N\x03\x00 \x02\x00\x00 |\x03\x00 
+SEQ6 SCE248_007\x00 \xb6\x0f\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 8\x93\x01\x0c
+SEQ5\x039\x00\x00
  
 数メートル向こうに、紅葉の姿が見える。@
 拓司は一歩踏み出した。@
 その足をじっと見つめ、そして反対側の足を前に出す。@
 そうして一歩……一歩……忘れてしまった歩き方を思い出すかの\nように、拓司はゆっくりと歩き始めた。\
 
-  
-INIT \xfa\x0f\x0c SET_VAR1 N\x03 \x02 |\x03 END
-INIT_TEXT SCE248_008 \x18\x11 SCE_TEXT TEXT1 <\x93\x01 TEXT2 \xa0
+\x00  
+SEQ1 \xfa\x0f\x00\x0c
+SEQ4 N\x03\x00 \x02\x00\x00 |\x03\x00 
+SEQ6 SCE248_008\x00 \x18\x11\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 <\x93\x01\x0c
+SEQ5\x03\xa0\x00\x00
  
 /*▲SE33　一回再生（再生終了待たず先へ）*/\a2,0,33,0,\a6,0,0,0,キイイイイイイイイイイイイイイイイイイイイイイイイイイイ！@
 /*▲↑　再生終了を待つ\a3,0,0,0,\a4,0,0,0,いつの間にか、鼻血が流れ出している。@
@@ -103,8 +134,12 @@ INIT_TEXT SCE248_008 \x18\x11 SCE_TEXT TEXT1 <\x93\x01 TEXT2 \xa0
 /*▲↑　再生終了を待つ\a3,0,0,0,\a4,0,0,0,\nここから俺は始まるのだ。@
 \n/*▲SE33　一回再生（再生終了待たず先へ）*/\a2,0,33,0,\a6,0,0,0,キイイイイイイイイイイイイイイイイイイイイイイイイイイイ！\w\n/*▲↑　再生終了を待つ*/\a3,0,0,0,\a4,0,0,0,\z
   
-INIT \\\x11\x0c SET_VAR1 N\x03 \x02 |\x03 END
-INIT_TEXT SCE248_009 \x16\x14 SCE_TEXT TEXT1 @\x93\x01 TEXT2 I
+SEQ1 \\\x11\x00\x0c
+SEQ4 N\x03\x00 \x02\x00\x00 |\x03\x00 
+SEQ6 SCE248_009\x00 \x16\x14\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 @\x93\x01\x0c
+SEQ5\x03I\x00\x00
  
 こうして旅が始まったいま、俺にはいまや目的があるのだ。@
 何かから逃げているのではなく、何かに向かっているのだ。@
@@ -113,10 +148,15 @@ INIT_TEXT SCE248_009 \x16\x14 SCE_TEXT TEXT1 @\x93\x01 TEXT2 I
 考えるのではない。@
 動くのだ。\
 
-  
-INIT Z\x14\x0c SET_VAR1 N\x03 \x02 |\x03 END  
-INIT :\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bg.Fob VAR2\xd2\x15 \x02 APPLY_4 BgAutoFadeIn VAR2\xfc\x15 END
-INIT_TEXT SCE248_010  \x16 SCE_TEXT TEXT1 D\x93\x01 TEXT2 w
+\x00\x00\x00  
+SEQ1 Z\x14\x00\x0c
+SEQ4 N\x03\x00 \x02\x00\x00 |\x03\x00 \x02\x00\x005  
+SEQ1 :\x00\x00\x0c
+SEQ4\x03\x06\x00\x00.\\Data\\Script\\Bg.Fob SPC2 \xd2\x15\x00 \x02\x00\x00\x03\x04\x00\x00BgAutoFadeIn SPC2 \xfc\x15\x00 
+SEQ6 SCE248_010\x00  \x16\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 D\x93\x01\x0c
+SEQ5\x03w\x00\x00
  
 拓司\n　「紅葉！」@
 \n紅葉は動かない。@
@@ -130,10 +170,15 @@ INIT_TEXT SCE248_010  \x16 SCE_TEXT TEXT1 D\x93\x01 TEXT2 w
 \n拓司\n　「俺は勝った！\p　勝ったんだ！@
 　　ワハ、ワハ、ワハハハハハハハハハハ！」\
 
-  
-INIT d\x16\x0c SET_VAR1 N\x03 \x02 |\x03 END  
-INIT \xc9\x0c SET_VAR1 \xd2\x15 \x02 \xfc\x15 END
-INIT_TEXT SCE248_011 \xae\x18 SCE_TEXT TEXT1 H\x93\x01 TEXT2 L
+\x00  
+SEQ1 d\x16\x00\x0c
+SEQ4 N\x03\x00 \x02\x00\x00 |\x03\x00 \x02\x00\x005  
+SEQ1 \xc9\x00\x00\x0c
+SEQ4 \xd2\x15\x00 \x02\x00\x00 \xfc\x15\x00 
+SEQ6 SCE248_011\x00 \xae\x18\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 H\x93\x01\x0c
+SEQ5\x03L\x00\x00
  
 ふいに目の前が真っ白になった。@
 すべての音が聞こえなくなった。@
@@ -144,8 +189,13 @@ INIT_TEXT SCE248_011 \xae\x18 SCE_TEXT TEXT1 H\x93\x01 TEXT2 L
 俺は勝った。@
 勝ったんだ、と。\
 
-  
-INIT \xf2\x18\x0c SET_VAR1 N\x03 \x02 |\x03 END  
-INIT \x02\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bgm.Fob VAR1 v\x1a APPlY_2 SeStop RUNF \xa0\x1a END v\x1a APPlY_2 StopCD RUNF \xc8\x1a END  
-INIT \xc8\x0c SET_VAR1 \xd2\x15 \x02 \xfc\x15 END N\x03 APPLY_3 TextClose VAR1 $\x1b END
+\x00\x00\x00  
+SEQ1 \xf2\x18\x00\x0c
+SEQ4 N\x03\x00 \x02\x00\x00 |\x03\x00 \x02\x00\x005  
+SEQ1 \x02\x00\x00\x0c
+SEQ4\x03\x06\x00\x00.\\Data\\Script\\Bgm.Fobv\x81\x1fv\x1a\x00 
+SEQ2\x00\x00SeStop SPC1 \xa0\x1a\x00 \x02\x00\x005 v\x1a\x00 
+SEQ2\x00\x00StopCD SPC1 \xc8\x1a\x00 \x02\x00\x005  
+SEQ1 \xc8\x00\x00\x0c
+SEQ4 \xd2\x15\x00 \x02\x00\x00 \xfc\x15\x00 \x02\x00\x005 N\x03\x00 \x02\x00\x00\x03\x03\x00\x00TextClosev\x81\x1f$\x1b\x00 
 END_SCRIPT

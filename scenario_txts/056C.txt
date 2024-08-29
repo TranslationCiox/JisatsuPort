@@ -1,6 +1,8 @@
 START_SCRIPT
-\xf82\x01`B#\x01\xf2*
-INIT_TEXT SCE056_001 \x06 SCE_TEXT TEXT1  g TEXT2 J
+\xf82\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xf2*\x00\x03\x03\x00\x00SCE056_001\x00 \x06\x00\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3  g\x00\x0c
+SEQ5\x03J\x00\x00
  
 学生\n　「おい、トン吉！」@
 \nそれがあだ名なのであろう、ぶよりと太った男子学生が、おずお\nずと輪の中から歩み出た。@
@@ -8,9 +10,14 @@ INIT_TEXT SCE056_001 \x06 SCE_TEXT TEXT1  g TEXT2 J
 顔と髪は脂ぎって、てらてらと光っている。@
 怯えて眺める早桃の顔にも、明らかな嫌悪が浮かんでいる。\
 
-  
-INIT J\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF \x92\x01 APPlY_2 TextOn RUNF \xc0\x01 END
-INIT_TEXT SCE056_002 \xdc\x01 SCE_TEXT TEXT1 $g TEXT2 n
+\x00  
+SEQ1 J\x00\x00\x0c
+SEQ4\x03\x07\x00\x00.\\Data\\Script\\TextFunc.Fob SPC1 \x92\x01\x00 
+SEQ2\x00\x00TextOn SPC1 \xc0\x01\x00 
+SEQ6 SCE056_002\x00 \xdc\x01\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 $g\x00\x0c
+SEQ5\x03n\x00\x00
  
 学生\n　「お前さ、虎菱のこと好きなんだろ？」@
 トン吉\n　「えっ？\p　……いや……ええと……ぐふっ」@
@@ -21,9 +28,13 @@ INIT_TEXT SCE056_002 \xdc\x01 SCE_TEXT TEXT1 $g TEXT2 n
 学生\n　「さあ、みんな！\p　いじめられっこ同士がいま結ばれるぞ！@
 　　じっくり観察しようじゃないか！」\
 
-  
-INIT  \x02\x0c SET_VAR1 \x92\x01 \x02 \xc0\x01 END
-INIT_TEXT SCE056_003 \x12\x04 SCE_TEXT TEXT1 (g TEXT2 W
+\x00\x00\x00  
+SEQ1  \x02\x00\x0c
+SEQ4 \x92\x01\x00 \x02\x00\x00 \xc0\x01\x00 
+SEQ6 SCE056_003\x00 \x12\x04\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 (g\x00\x0c
+SEQ5\x03W\x00\x00
  
 太った少年は、早桃の顔をじっとのぞき込んだ。@
 \nトン吉\n　「と、虎菱さん？」@
@@ -34,9 +45,13 @@ INIT_TEXT SCE056_003 \x12\x04 SCE_TEXT TEXT1 (g TEXT2 W
 トン吉\n　「キ、キスしようよ虎菱さん」@
 早桃\n　「い……いやっ！\p　やめて、やめてえっ！」\
 
-  
-INIT V\x04\x0c SET_VAR1 \x92\x01 \x02 \xc0\x01 END
-INIT_TEXT SCE056_004 \xec\x05 SCE_TEXT TEXT1 ,g TEXT2 \x8e
+\x00\x00\x00  
+SEQ1 V\x04\x00\x0c
+SEQ4 \x92\x01\x00 \x02\x00\x00 \xc0\x01\x00 
+SEQ6 SCE056_004\x00 \xec\x05\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 ,g\x00\x0c
+SEQ5\x03\x8e\x00\x00
  
 トン吉\n　「こんな形で残念だけど……き、君だって僕のことはキライじ\n　　ゃないはずだろ？\p　ぼ、僕たちならきっとお似合いのカップ\n　　ルになれるから……お互いの心の傷を分かり合えるから……\n　　はあ、はあ……さ、早桃お……」@
 \n力ずくで顔を上に持ち上げて、少年は早桃の唇に自分のそれを押\nしつけた。@
@@ -45,9 +60,13 @@ INIT_TEXT SCE056_004 \xec\x05 SCE_TEXT TEXT1 ,g TEXT2 \x8e
 \n弾かれたように少年が早桃から飛び退き、どしんと尻餅をついた。\n\p口に手を当てているところを見ると、どうやら噛みつかれたよう\nだ。@
 ２人を取り囲んだクラスの全員が、どっと笑い声を上げた。\
 
-  
-INIT 0\x06\x0c SET_VAR1 \x92\x01 \x02 \xc0\x01 END
-INIT_TEXT SCE056_005 \xa2\x08 SCE_TEXT TEXT1 0g TEXT2 c
+\x00\x00\x00  
+SEQ1 0\x06\x00\x0c
+SEQ4 \x92\x01\x00 \x02\x00\x00 \xc0\x01\x00 
+SEQ6 SCE056_005\x00 \xa2\x08\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 0g\x00\x0c
+SEQ5\x03c\x00\x00
  
 学生\n　「虎菱～！\p　ファーストキスにそりゃあんまりだろ～！」@
 学生\n　「トン吉、トラウマっちゃうだろ！\p　ぎゃはは！」@
@@ -56,9 +75,13 @@ INIT_TEXT SCE056_005 \xa2\x08 SCE_TEXT TEXT1 0g TEXT2 c
 \n囃し立てる声を聞いて、少年の顔に殺気めいたものが宿った。@
 しかしその怒りはクラスメイトたちにではなく、早桃に……自分\nよりも弱い立場の人間へと向けられた。\
 
-  
-INIT \xe6\x08\x0c SET_VAR1 \x92\x01 \x02 \xc0\x01 END
-INIT_TEXT SCE056_006 \xac\n SCE_TEXT TEXT1 4g TEXT2 \xc5
+\x00\x00\x00  
+SEQ1 \xe6\x08\x00\x0c
+SEQ4 \x92\x01\x00 \x02\x00\x00 \xc0\x01\x00 
+SEQ6 SCE056_006\x00 \xac\n\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 4g\x00\x0c
+SEQ5\x03\xc5\x00\x00
  
 トン吉\n　「虎菱……お前まで俺のことバカにするのかッ？！\p　お前なら\n　　……クラスの嫌われ者のお前なら、俺のこと喜んで受け入れ\n　　るって思ったのに！\p　お前が消しゴム落としたときに拾って\n　　やったの忘れたのかよ！\p　お前をいじめた上村の机に鼠の死\n　　骸入れてやったのは俺なんだぞ！\p　お前みたいな……ゴミ女\n　　の水着だって盗んで使ってやったんだ！\p　わざわざ朝早く学\n　　校にきて、机の上に精液塗り広げてやったし、教科書に無修\n　　正写真挟んでやったり……全部お前のためにやったのにお前\n　　は俺を否定するのか、矛盾してるぞ恩知らずがッ！」@
 \n唾を飛ばしながら叫び、早桃の腹にキックを叩き込む。@
@@ -66,9 +89,13 @@ INIT_TEXT SCE056_006 \xac\n SCE_TEXT TEXT1 4g TEXT2 \xc5
 せき込む早桃を見下ろして、少年は満足げに笑った。@
 そしてチャックをおろして、すでに固く反り返ったペ○スを露出\nさせる。\
 
-  
-INIT \xf0\n\x0c SET_VAR1 \x92\x01 \x02 \xc0\x01 END
-INIT_TEXT SCE056_007 >\x0e SCE_TEXT TEXT1 8g TEXT2 b
+\x00  
+SEQ1 \xf0\n\x00\x0c
+SEQ4 \x92\x01\x00 \x02\x00\x00 \xc0\x01\x00 
+SEQ6 SCE056_007\x00 >\x0e\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 8g\x00\x0c
+SEQ5\x03b\x00\x00
  
 まわりを取り囲んだ学生たちが、おお、と低くどよめいた。@
 \n学生\n　「出ました、包茎チ○ポ！」@
@@ -77,10 +104,15 @@ INIT_TEXT SCE056_007 >\x0e SCE_TEXT TEXT1 8g TEXT2 b
 　　うげ～！」@
 学生\n　「豚のガキ孕まされるんだぜ？\p　人間としちゃ、生きてらんね\n　　えよなあ～、げらげら！」\
 
-  
-INIT \x82\x0e\x0c SET_VAR1 \x92\x01 \x02 \xc0\x01 END  
-INIT V\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bg.Fob VAR2^\x10 \x02 APPLY_4 BgAutoFadeIn VAR2\x88\x10 END
-INIT_TEXT SCE056_008 \xac\x10 SCE_TEXT TEXT1 <g TEXT2 u
+\x00\x00\x00  
+SEQ1 \x82\x0e\x00\x0c
+SEQ4 \x92\x01\x00 \x02\x00\x00 \xc0\x01\x00 \x02\x00\x005  
+SEQ1 V\x00\x00\x0c
+SEQ4\x03\x06\x00\x00.\\Data\\Script\\Bg.Fob SPC2 ^\x10\x00 \x02\x00\x00\x03\x04\x00\x00BgAutoFadeIn SPC2 \x88\x10\x00 
+SEQ6 SCE056_008\x00 \xac\x10\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 <g\x00\x0c
+SEQ5\x03u\x00\x00
  
 少年は早桃の髪をつかんで、乱暴に床に引き倒した。@
 間髪入れず早桃にのしかかり、へこへこと腰を振り始める。@
@@ -89,9 +121,13 @@ INIT_TEXT SCE056_008 \xac\x10 SCE_TEXT TEXT1 <g TEXT2 u
 無様な姿だ。@
 学生たちからも嘲笑がとぶが、少年は意に介する様子もなく、た\nだひたすら早桃の上で腰を上下させている。\
 
-  
-INIT \xf0\x10\x0c SET_VAR1 \x92\x01 \x02 \xc0\x01 END
-INIT_TEXT SCE056_009 \xfe\x12 SCE_TEXT TEXT1 @g TEXT2 \xb8
+\x00\x00\x00  
+SEQ1 \xf0\x10\x00\x0c
+SEQ4 \x92\x01\x00 \x02\x00\x00 \xc0\x01\x00 
+SEQ6 SCE056_009\x00 \xfe\x12\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 @g\x00\x0c
+SEQ5\x03\xb8\x00\x00
  
 トン吉\n　「はあ、はあ、メチャクチャにしてやる！\p　お前がバカにして\n　　いる男の汚い精液で、お前の子宮まで支配してやるからな！」\n\p早桃\n　「げほっ、げほっ！\p　や、やめて！」@
 トン吉\n　「まずは制服にぶっかけてやるよ。\pそれから顔にもおっぱいに\n　　もま○こにもアナルにも……へそにも耳にも目にも鼻にも出\n　　してやるからな！\p　早桃……早桃ぉ……さ、最高だよぉ。@
@@ -101,9 +137,13 @@ INIT_TEXT SCE056_009 \xfe\x12 SCE_TEXT TEXT1 @g TEXT2 \xb8
 早桃は無意識に、もっとも信頼する義兄の名前を口にしたのだ。@
 しかし拓司はなにもすることができない。\
 
-  
-INIT B\x13\x0c SET_VAR1 \x92\x01 \x02 \xc0\x01 END
-INIT_TEXT SCE056_010 \\\x16 SCE_TEXT TEXT1 Dg TEXT2 \x86
+\x00  
+SEQ1 B\x13\x00\x0c
+SEQ4 \x92\x01\x00 \x02\x00\x00 \xc0\x01\x00 
+SEQ6 SCE056_010\x00 \\\x16\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 Dg\x00\x0c
+SEQ5\x03\x86\x00\x00
  
 トン吉\n　「はあ、はあ……そうだ、こ、これから僕のことをおにいちゃ\n　　んって呼べよ！」@
 早桃\n　「いやっ！\p　絶対にいや！\p　あんたなんか……あんたなんか…\n　　…うぐっ！」@
@@ -114,9 +154,13 @@ INIT_TEXT SCE056_010 \\\x16 SCE_TEXT TEXT1 Dg TEXT2 \x86
 何発目かがうち下ろされたあと、ついに早桃がいった。@
 \n早桃\n　「……お……おにい……ちゃ……ん」\
 
-  
-INIT \xa0\x16\x0c SET_VAR1 \x92\x01 \x02 \xc0\x01 END
-INIT_TEXT SCE056_011 \xf2\x18 SCE_TEXT TEXT1 Hg TEXT2 k
+\x00\x00\x00  
+SEQ1 \xa0\x16\x00\x0c
+SEQ4 \x92\x01\x00 \x02\x00\x00 \xc0\x01\x00 
+SEQ6 SCE056_011\x00 \xf2\x18\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 Hg\x00\x0c
+SEQ5\x03k\x00\x00
  
 トン吉\n　「も、もう一回『おにいちゃん』っていって！\p　はあ、はあ、\n　　は、早くいえってば！」@
 早桃\n　「お……おにい……ちゃん……」@
@@ -126,9 +170,13 @@ INIT_TEXT SCE056_011 \xf2\x18 SCE_TEXT TEXT1 Hg TEXT2 k
 \n途端、早桃に劇的な変化が訪れた。@
 身体をぶるぶると震わせて、抵抗がぱたりと止んだのだ。\
 
-  
-INIT 6\x19\x0c SET_VAR1 \x92\x01 \x02 \xc0\x01 END
-INIT_TEXT SCE056_012 \x1c\x1b SCE_TEXT TEXT1 Lg TEXT2 \xa4
+\x00\x00\x00  
+SEQ1 6\x19\x00\x0c
+SEQ4 \x92\x01\x00 \x02\x00\x00 \xc0\x01\x00 
+SEQ6 SCE056_012\x00 \x1c\x1b\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 Lg\x00\x0c
+SEQ5\x03\xa4\x00\x00
  
 早桃\n　「儀式……身を清めて……死ねるための……儀式」@
 トン吉\n　「早桃……早桃ぉ……ぺろっ……おにいちゃんのこと好きなん\n　　だろ？\p　ちゅるっ……なあ、好きなんだろォ？」@
@@ -138,10 +186,15 @@ INIT_TEXT SCE056_012 \x1c\x1b SCE_TEXT TEXT1 Lg TEXT2 \xa4
 トン吉\n　「そうかそうか！\p　も、もうすぐだからね！\p　もうすぐ大好き\n　　なおにいちゃんのどろどろのやつを、さ、早桃の制服にぶち\n　　まけてあげるからね！」@
 早桃\n　「ふうっ……うくっ……お、お願い……します……はあ……」\
 
-  
-INIT `\x1b\x0c SET_VAR1 \x92\x01 \x02 \xc0\x01 END  
-INIT V\x0c SET_VAR1 ^\x10 \x02 \x88\x10 END
-INIT_TEXT SCE056_013 ^\x1e SCE_TEXT TEXT1 Pg TEXT2 \xba
+\x00\x00\x00  
+SEQ1 `\x1b\x00\x0c
+SEQ4 \x92\x01\x00 \x02\x00\x00 \xc0\x01\x00 \x02\x00\x005  
+SEQ1 V\x00\x00\x0c
+SEQ4 ^\x10\x00 \x02\x00\x00 \x88\x10\x00 
+SEQ6 SCE056_013\x00 ^\x1e\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 Pg\x00\x0c
+SEQ5\x03\xba\x00\x00
  
 平野\n　「好きだよ早桃！\p　おにいちゃん、お前のこと愛してるよぉ！@
 　　あ、愛してるからなんだよ！\p　愛してるから制服にかけたい\n　　んだよ！\p　おにいちゃんは早桃のこと愛してるんだよ！@
@@ -153,9 +206,13 @@ INIT_TEXT SCE056_013 ^\x1e SCE_TEXT TEXT1 Pg TEXT2 \xba
 拓司は、めまいにも似たぐらつきを感じ、そして思った。@
 \n－－これは……現実ではないのではないか？\
 
-  
-INIT \xa2\x1e\x0c SET_VAR1 \x92\x01 \x02 \xc0\x01 END
-INIT_TEXT SCE056_014 \xc4! SCE_TEXT TEXT1 Tg TEXT2 \x9b
+\x00  
+SEQ1 \xa2\x1e\x00\x0c
+SEQ4 \x92\x01\x00 \x02\x00\x00 \xc0\x01\x00 
+SEQ6 SCE056_014\x00 \xc4!\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 Tg\x00\x0c
+SEQ5\x03\x9b\x00\x00
  
 あの白い壁の世界がそうであったように、いま、自分は妄想の世\n界にいるのではないか？\p　自分でも気づかない間に、妄想世界に\n迷い込んで、そのなかで喘いでいるのではないか？　@
 そう考えれば、波動やら集団自殺やらも説明が付く。@
@@ -164,9 +221,13 @@ INIT_TEXT SCE056_014 \xc4! SCE_TEXT TEXT1 Tg TEXT2 \x9b
 早桃\n　「お……おにいちゃん、出して……」@
 トン吉\n　「い、淫乱妹め！」\
 
-  
-INIT \x08"\x0c SET_VAR1 \x92\x01 \x02 \xc0\x01 END
-INIT_TEXT SCE056_015 \xae$ SCE_TEXT TEXT1 Xg TEXT2 s
+\x00\x00\x00  
+SEQ1 \x08"\x00\x0c
+SEQ4 \x92\x01\x00 \x02\x00\x00 \xc0\x01\x00 
+SEQ6 SCE056_015\x00 \xae$\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 Xg\x00\x0c
+SEQ5\x03s\x00\x00
  
 早桃\n　「おにいちゃんの精液をぶっかけて、淫乱な早桃の制服をおに\n　　いちゃんのおたまじゃくしでべとべとに汚してください」@
 平野\n　「出る！\p　出るよ早桃ぉ！\p　憧れの虎菱さんの生制服に僕の精\n　　液が…お前は全部ぼ、僕の物だぁ…あ、あ、あ、ああっ！」@
@@ -174,10 +235,15 @@ INIT_TEXT SCE056_015 \xae$ SCE_TEXT TEXT1 Xg TEXT2 s
 ビクビクと身体を震わせて、それからがっくりと力つきた。@
 それまで息を呑んで見守っていた学生たちが、一斉に拍手で囃し\n立てる。\
 
-  
-INIT \xf2$\x0c SET_VAR1 \x92\x01 \x02 \xc0\x01 END  
-INIT \xc8\x0c SET_VAR1 ^\x10 \x02 \x88\x10 END
-INIT_TEXT SCE056_016 ,' SCE_TEXT TEXT1 \\g TEXT2 z
+\x00\x00\x00  
+SEQ1 \xf2$\x00\x0c
+SEQ4 \x92\x01\x00 \x02\x00\x00 \xc0\x01\x00 \x02\x00\x005  
+SEQ1 \xc8\x00\x00\x0c
+SEQ4 ^\x10\x00 \x02\x00\x00 \x88\x10\x00 
+SEQ6 SCE056_016\x00 ,'\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \\g\x00\x0c
+SEQ5\x03z\x00\x00
  
 学生\n　「おめでとう！」@
 学生\n　「おにいちゃん、よくやった！」@
@@ -188,13 +254,18 @@ INIT_TEXT SCE056_016 ,' SCE_TEXT TEXT1 \\g TEXT2 z
 クラスメイト全員の前で性欲処理の道具にされ、スカートを汚さ\nれたのだ。\pショックを受けないほうがおかしい。@
 しかもさらに－－\
 
-  
-INIT p'\x0c SET_VAR1 \x92\x01 \x02 \xc0\x01 END
-INIT_TEXT SCE056_017 \x92) SCE_TEXT TEXT1 `g TEXT2 .
+\x00  
+SEQ1 p'\x00\x0c
+SEQ4 \x92\x01\x00 \x02\x00\x00 \xc0\x01\x00 
+SEQ6 SCE056_017\x00 \x92)\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 `g\x00\x0c
+SEQ5\x03.\x00\x00
  
 トン吉\n　「早桃……お、おにいちゃんのチ○ポ、お口できれいにしてく\n　　れよ」@
 早桃\n　「……はい。\pおにいちゃんのチ○ポ、早桃のおくちできれいに\n　　させてください……」\
 
-  
-INIT \xd6)\x0c SET_VAR1 \x92\x01 \x02 \xc0\x01 END \x92\x01 APPLY_3 TextClose VAR1 \xd4* END
+\x00  
+SEQ1 \xd6)\x00\x0c
+SEQ4 \x92\x01\x00 \x02\x00\x00 \xc0\x01\x00 \x02\x00\x005 \x92\x01\x00 \x02\x00\x00\x03\x03\x00\x00TextClosev\x81\x1f\xd4*\x00 
 END_SCRIPT

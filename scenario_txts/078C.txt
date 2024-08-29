@@ -1,7 +1,12 @@
 START_SCRIPT
-\x86\x07\x01`B#\x014\x06  
-INIT \t\x01\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bgm.Fob VAR1   APPlY_2 PlayCD RUNF J END
-INIT_TEXT SCE078_001 f SCE_TEXT TEXT1 \x80\x89 TEXT2 \xd7
+\x86\x07\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x004\x06\x00  
+SEQ1 \t\x01\x00\x0c
+SEQ4\x03\x06\x00\x00.\\Data\\Script\\Bgm.Fobv\x81\x1f \x00\x00 
+SEQ2\x00\x00PlayCD SPC1 J\x00\x00 
+SEQ6 SCE078_001\x00 f\x00\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \x80\x89\x00\x0c
+SEQ5\x03\xd7\x00\x00
  
 途中、生きている人間には一度も出くわさなかった。@
 もっとも、余計な寄り道はせず、ただひたすら４階目指して廊下\nを歩いてきただけだから、もしかしたらどこかの教室に生き残り\nがいるのかもしれない。@
@@ -18,15 +23,22 @@ INIT_TEXT SCE078_001 f SCE_TEXT TEXT1 \x80\x89 TEXT2 \xd7
 布団なんかでおばけから身を守れるはずがない。@
 だが、恐怖からは守ってくれる……。\
 
-  
-INIT \xaa\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF &\x04 APPlY_2 TextOn RUNF T\x04 END NULL APPlY_2 StopCD RUNF |\x04 END
-INIT_TEXT SCE078_002 \x98\x04 SCE_TEXT TEXT1 \x84\x89 TEXT2 =
+\x00  
+SEQ1 \xaa\x00\x00\x0c
+SEQ4\x03\x07\x00\x00.\\Data\\Script\\TextFunc.Fob SPC1 &\x04\x00 
+SEQ2\x00\x00TextOn SPC1 T\x04\x00 \x02\x00\x005  \x00\x00 
+SEQ2\x00\x00StopCD SPC1 |\x04\x00 
+SEQ6 SCE078_002\x00 \x98\x04\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \x84\x89\x00\x0c
+SEQ5\x03=\x00\x00
  
 なたね\n　「ここよ」@
 \nなたねは４階実験室の前でいい、ポケットを探って鍵を取り出し\nた。@
 どこで手に入れたのかはわからないが、もう、そんなことをいち\nいち尋ねる気力もなかった。@
 なたねはドアを開き、実験室へと足早に入っていった。\
 
-  
-INIT \xdc\x04\x0c SET_VAR1 &\x04 \x02 T\x04 END &\x04 APPLY_3 TextClose VAR1 \x16\x06 END
+\x00  
+SEQ1 \xdc\x04\x00\x0c
+SEQ4 &\x04\x00 \x02\x00\x00 T\x04\x00 \x02\x00\x005 &\x04\x00 \x02\x00\x00\x03\x03\x00\x00TextClosev\x81\x1f\x16\x06\x00 
 END_SCRIPT

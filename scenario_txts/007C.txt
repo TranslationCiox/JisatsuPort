@@ -1,6 +1,8 @@
 START_SCRIPT
-\x804\x01`B#\x01\xf6,
-INIT_TEXT SCE007_001 \x06 SCE_TEXT TEXT1 \x90\x1a TEXT2 s
+\x804\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xf6,\x00\x03\x03\x00\x00SCE007_001\x00 \x06\x00\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \x90\x1a\x00\x0c
+SEQ5\x03s\x00\x00
  
 命じられるままに、早桃は拓司のベッドに歩み寄った。@
 ぎしり、と音を立ててベッドに片膝を乗せ、そこを支点にもう一\n方の脚を乗せる。@
@@ -12,10 +14,16 @@ INIT_TEXT SCE007_001 \x06 SCE_TEXT TEXT1 \x90\x1a TEXT2 s
 ない。@
 ない。\
 
-  
-INIT J\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF 6\x02 APPlY_2 TextOn RUNF d\x02 END  
-INIT J\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bg.Fob VAR2\x9a\x02 \x02 APPLY_4 BgAutoFadeIn VAR2\xc4\x02 END
-INIT_TEXT SCE007_002 \xe8\x02 SCE_TEXT TEXT1 \x94\x1a TEXT2 \xab
+\x00\x00\x00  
+SEQ1 J\x00\x00\x0c
+SEQ4\x03\x07\x00\x00.\\Data\\Script\\TextFunc.Fob SPC1 6\x02\x00 
+SEQ2\x00\x00TextOn SPC1 d\x02\x00 \x02\x00\x005  
+SEQ1 J\x00\x00\x0c
+SEQ4\x03\x06\x00\x00.\\Data\\Script\\Bg.Fob SPC2 \x9a\x02\x00 \x02\x00\x00\x03\x04\x00\x00BgAutoFadeIn SPC2 \xc4\x02\x00 
+SEQ6 SCE007_002\x00 \xe8\x02\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \x94\x1a\x00\x0c
+SEQ5\x03\xab\x00\x00
  
 義妹のほっそりとした指が、拓司の股間に触れた。@
 輪郭をなぞるように、ゆっくりと、パジャマの上を指先が蠢く。@
@@ -31,9 +39,13 @@ INIT_TEXT SCE007_002 \xe8\x02 SCE_TEXT TEXT1 \x94\x1a TEXT2 \xab
 ゆっくりと、上下にしごき始める。@
 コットンの柔らかい感触と、義妹の指の刺激に、拓司の息が一気\nに荒くなる。\
 
-  
-INIT ,\x03\x0c SET_VAR1 6\x02 \x02 d\x02 END
-INIT_TEXT SCE007_003 \x12\x06 SCE_TEXT TEXT1 \x98\x1a TEXT2 q
+\x00\x00\x00  
+SEQ1 ,\x03\x00\x0c
+SEQ4 6\x02\x00 \x02\x00\x00 d\x02\x00 
+SEQ6 SCE007_003\x00 \x12\x06\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \x98\x1a\x00\x0c
+SEQ5\x03q\x00\x00
  
 拓司\n　「……早桃」@
 早桃\n　「おにいちゃんにいやらしい目で見られて、早桃もいやらしい\n　　女の子になっちゃった。@
@@ -42,14 +54,22 @@ INIT_TEXT SCE007_003 \x12\x06 SCE_TEXT TEXT1 \x98\x1a TEXT2 q
 　　ママとパパに見つからないところで、おにいちゃんがしたい\n　　ときに。@
 　　お風呂で。\pトイレで。\pおこたのなかで。\pおにいちゃんの机の\n　　下で。\p早桃のクローゼットのなかで……」\
 
-  
-INIT V\x06\x0c SET_VAR1 6\x02 \x02 d\x02 END
-INIT_TEXT SCE007_004 T\x08 SCE_TEXT TEXT1 \x9c\x1a TEXT2 "
+\x00  
+SEQ1 V\x06\x00\x0c
+SEQ4 6\x02\x00 \x02\x00\x00 d\x02\x00 
+SEQ6 SCE007_004\x00 T\x08\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \x9c\x1a\x00\x0c
+SEQ5\x03"\x00\x00
  
 ぺちゃぺちゃと唾液が絡んだようなしゃべりかたで早桃は続ける。\n\p性器に指を絡めて奉仕しながらみだらな言葉で義兄の興奮を誘う。\n\w\z
-  
-INIT \x98\x08\x0c SET_VAR1 6\x02 \x02 d\x02 END
-INIT_TEXT SCE007_005 Z\t SCE_TEXT TEXT1 \xa0\x1a TEXT2 \x8d
+\x00\x00\x00  
+SEQ1 \x98\x08\x00\x0c
+SEQ4 6\x02\x00 \x02\x00\x00 d\x02\x00 
+SEQ6 SCE007_005\x00 Z\t\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xa0\x1a\x00\x0c
+SEQ5\x03\x8d\x00\x00
  
 早桃\n　「もうオナニーなんてする必要ないよ。\pエッチな本も買わな\n　　くていい。@
 　　だって、早桃のおててとおくちとおっぱいとおま○ことおし\n　　りで……溜まったときに処理できるんだよ。@
@@ -59,9 +79,13 @@ INIT_TEXT SCE007_005 Z\t SCE_TEXT TEXT1 \xa0\x1a TEXT2 \x8d
 　　……よかったねぇ、おにいちゃん。\pこんなにエッチな義妹\n　　がいて。@
 　　あんまりいないと思うよ、こんなふうに、性欲処理してくれ\n　　る義妹って。」\
 
-  
-INIT \x9e\t\x0c SET_VAR1 6\x02 \x02 d\x02 END
-INIT_TEXT SCE007_006 \x0c\x0c SCE_TEXT TEXT1 \xa4\x1a TEXT2 }
+\x00\x00\x00  
+SEQ1 \x9e\t\x00\x0c
+SEQ4 6\x02\x00 \x02\x00\x00 d\x02\x00 
+SEQ6 SCE007_006\x00 \x0c\x0c\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xa4\x1a\x00\x0c
+SEQ5\x03}\x00\x00
  
 拓司\n　「う……早桃」@
 早桃\n　「見せて。おにいちゃんが早桃のパンティに射精するところ」@
@@ -72,9 +96,13 @@ INIT_TEXT SCE007_006 \x0c\x0c SCE_TEXT TEXT1 \xa4\x1a TEXT2 }
 精液で汚されたパンティを、見せつけるように広げる。@
 ちょうどクロッチの部分に、たっぷりと、精液が溜まっている。\
 
-  
-INIT P\x0c\x0c SET_VAR1 6\x02 \x02 d\x02 END
-INIT_TEXT SCE007_007 ~\x0e SCE_TEXT TEXT1 \xa8\x1a TEXT2 \xaf
+\x00\x00\x00  
+SEQ1 P\x0c\x00\x0c
+SEQ4 6\x02\x00 \x02\x00\x00 d\x02\x00 
+SEQ6 SCE007_007\x00 ~\x0e\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xa8\x1a\x00\x0c
+SEQ5\x03\xaf\x00\x00
  
 早桃\n　「こんなにいっぱい。\pおにいちゃん、すごく溜まってたんだ\n　　ねえ。\p義妹の前でこんなにどくどく精液出しちゃって……\n　　恥ずかしくないの？\p　くすくす……」@
 拓司\n　「はあ、はあ……早桃……」@
@@ -84,9 +112,13 @@ INIT_TEXT SCE007_007 ~\x0e SCE_TEXT TEXT1 \xa8\x1a TEXT2 \xaf
 クロッチにできたたっぷりとした精液だまりをこぼさないよう、\nあるいは義兄に見せつけるよう、そろり、そろりとパンティを\nひきあげていく。@
 パンティと手はネグリジェの裾に再び消え、そして手だけが裾\nから引き出された。\
 
-  
-INIT \xc2\x0e\x0c SET_VAR1 6\x02 \x02 d\x02 END
-INIT_TEXT SCE007_008 \xb8\x11 SCE_TEXT TEXT1 \xac\x1a TEXT2 u
+\x00  
+SEQ1 \xc2\x0e\x00\x0c
+SEQ4 6\x02\x00 \x02\x00\x00 d\x02\x00 
+SEQ6 SCE007_008\x00 \xb8\x11\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xac\x1a\x00\x0c
+SEQ5\x03u\x00\x00
  
 早桃\n　「んくっ……はあ……穿き終わったよ。\pおにいちゃんの精液、\n　　いま、早桃のパンティとおま○このあいだに、べったりひっ\n　　ついてるよ。\pぬるぬるして、あったかい。@
 　　おたまじゃくしがいっぱい。\pねえ、おま○このなかに入っち\n　　ゃったらどうしよう？\p　赤ちゃんできちゃうのかなあ……義\n　　兄妹で妊娠しちゃうなんて、パパとママ、驚くだろうなあ…\n　　…」@
@@ -94,18 +126,26 @@ INIT_TEXT SCE007_008 \xb8\x11 SCE_TEXT TEXT1 \xac\x1a TEXT2 u
 早桃\n　「見たいの？」@
 拓司\n　「ああ……見たい」\
 
-  
-INIT \xfc\x11\x0c SET_VAR1 6\x02 \x02 d\x02 END
-INIT_TEXT SCE007_009 \n\x14 SCE_TEXT TEXT1 \xb0\x1a TEXT2 p
+\x00  
+SEQ1 \xfc\x11\x00\x0c
+SEQ4 6\x02\x00 \x02\x00\x00 d\x02\x00 
+SEQ6 SCE007_009\x00 \n\x14\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xb0\x1a\x00\x0c
+SEQ5\x03p\x00\x00
  
 早桃\n　「ほんと、いやらしいおにいちゃん。\pもしかして、いつも早\n　　桃のパンティ、オカズにしてたの？\p　おち○ちんをこすりつ\n　　けて、汚してたの？\p　精子いっぱい出して、それを何も知ら\n　　ない義妹に穿かせて興奮してたの？@
 　　そうなんだあ……だから早桃、こんなにエッチになっちゃっ\n　　たんだ。@
 　　おにいちゃんの精液がしみ込んだパンティ穿いてたから、こ\n　　んなにエッチになっちゃったんだ……@
 　　いいよ。\p見せてあげる」\
 
-  
-INIT N\x14\x0c SET_VAR1 6\x02 \x02 d\x02 END
-INIT_TEXT SCE007_010 H\x16 SCE_TEXT TEXT1 \xb4\x1a TEXT2 l
+\x00\x00\x00  
+SEQ1 N\x14\x00\x0c
+SEQ4 6\x02\x00 \x02\x00\x00 d\x02\x00 
+SEQ6 SCE007_010\x00 H\x16\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xb4\x1a\x00\x0c
+SEQ5\x03l\x00\x00
  
 早桃は拓司をまたいだまま、二、三歩ベッドの上を歩くと、今度\nは義兄の首のあたりで腰を下ろして、膝立ちになった。@
 拓司は義妹の腿にはさまれた。@
@@ -116,9 +156,13 @@ INIT_TEXT SCE007_010 H\x16 SCE_TEXT TEXT1 \xb4\x1a TEXT2 l
 べったりと、クロッチに薄黄色い染みができている。@
 精液の匂いと、早桃の体温がむっと鼻をつく。\
 
-  
-INIT \x8c\x16\x0c SET_VAR1 6\x02 \x02 d\x02 END
-INIT_TEXT SCE007_011 v\x18 SCE_TEXT TEXT1 \xb8\x1a TEXT2 \x99
+\x00  
+SEQ1 \x8c\x16\x00\x0c
+SEQ4 6\x02\x00 \x02\x00\x00 d\x02\x00 
+SEQ6 SCE007_011\x00 v\x18\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xb8\x1a\x00\x0c
+SEQ5\x03\x99\x00\x00
  
 早桃\n　「ずっと見たかったんでしょう？\p　早桃のここ。@
 　　おにいちゃんの精液でねとねとのおま○こ」@
@@ -130,9 +174,13 @@ INIT_TEXT SCE007_011 v\x18 SCE_TEXT TEXT1 \xb8\x1a TEXT2 \x99
 そのまま、精液でじっとりと湿った性器を、クロッチの上からこ\nすりたてる。@
 にちゃにちゃと精液が泡立つ音がする。\
 
-  
-INIT \xba\x18\x0c SET_VAR1 6\x02 \x02 d\x02 END
-INIT_TEXT SCE007_012 X\x1b SCE_TEXT TEXT1 \xbc\x1a TEXT2 `
+\x00\x00\x00  
+SEQ1 \xba\x18\x00\x0c
+SEQ4 6\x02\x00 \x02\x00\x00 d\x02\x00 
+SEQ6 SCE007_012\x00 X\x1b\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xbc\x1a\x00\x0c
+SEQ5\x03`\x00\x00
  
 早桃\n　「はあ、はあ……ねえ、おにいちゃんのパンツも頂戴」@
 \n乞われるまま、拓司はズボンをおろし、脚をばたつかせてブリー\nフを抜き取った。@
@@ -140,10 +188,15 @@ INIT_TEXT SCE007_012 X\x1b SCE_TEXT TEXT1 \xbc\x1a TEXT2 `
 義兄からブリーフを受け取ると、それを鼻先に持っていき、くん\nくんと匂いを嗅いだ。@
 嗅ぎながら、開いている方の手で、再び股間をいじり始める。\
 
-  
-INIT \x9c\x1b\x0c SET_VAR1 6\x02 \x02 d\x02 END  
-INIT K\x0c SET_VAR1 \x9a\x02 \x02 \xc4\x02 END
-INIT_TEXT SCE007_013 \x8a\x1d SCE_TEXT TEXT1 \xc0\x1a TEXT2 x
+\x00  
+SEQ1 \x9c\x1b\x00\x0c
+SEQ4 6\x02\x00 \x02\x00\x00 d\x02\x00 \x02\x00\x005  
+SEQ1 K\x00\x00\x0c
+SEQ4 \x9a\x02\x00 \x02\x00\x00 \xc4\x02\x00 
+SEQ6 SCE007_013\x00 \x8a\x1d\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xc0\x1a\x00\x0c
+SEQ5\x03x\x00\x00
  
 早桃\n　「すごい匂い……。\p早桃も、おにいちゃんのパンツでオナ\n　　ニーしてたんだよ。\p知ってた？@
 　　おしっこと汗と精液の匂いがいっぱいこびりついたパンツの\n　　匂いをこうやって……嗅ぎながら……こんなふうに……オナ\n　　ニーしてたんだよ」@
@@ -152,9 +205,13 @@ INIT_TEXT SCE007_013 \x8a\x1d SCE_TEXT TEXT1 \xc0\x1a TEXT2 x
 拓司は義妹の開いた太股のあいだを通して自分のペ○スを握り、\nしごき始めた。@
 \n早桃\n　「……ぺちゃ…ぺちゃ…ぢゅるっ……ぢゅりゅりゅっ……」\
 
-  
-INIT \xce\x1d\x0c SET_VAR1 6\x02 \x02 d\x02 END
-INIT_TEXT SCE007_014 \xe8\x1f SCE_TEXT TEXT1 \xc4\x1a TEXT2 T
+\x00  
+SEQ1 \xce\x1d\x00\x0c
+SEQ4 6\x02\x00 \x02\x00\x00 d\x02\x00 
+SEQ6 SCE007_014\x00 \xe8\x1f\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xc4\x1a\x00\x0c
+SEQ5\x03T\x00\x00
  
 義妹が自分のブリーフを口に入れて、しゃぶっている。@
 下品な音を立てながら……義兄にオナニーを見せつけながら……\n興奮するなというほうが無理だった。@
@@ -162,9 +219,13 @@ INIT_TEXT SCE007_014 \xe8\x1f SCE_TEXT TEXT1 \xc4\x1a TEXT2 T
 パンティの隙間から精液がトロトロあふれて、細い指に絡まって\n糸を引く。@
 太股の付け根が精液でぬるぬると光っている。\
 
-  
-INIT , \x0c SET_VAR1 6\x02 \x02 d\x02 END
-INIT_TEXT SCE007_015 \xb6! SCE_TEXT TEXT1 \xc8\x1a TEXT2 \x8d
+\x00  
+SEQ1 , \x00\x0c
+SEQ4 6\x02\x00 \x02\x00\x00 d\x02\x00 
+SEQ6 SCE007_015\x00 \xb6!\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xc8\x1a\x00\x0c
+SEQ5\x03\x8d\x00\x00
  
 早桃\n　「おにいちゃんと早桃、変態義兄妹だよね……」@
 拓司\n　「……ああ、そうだ。変態だ……」@
@@ -176,9 +237,13 @@ INIT_TEXT SCE007_015 \xb6! SCE_TEXT TEXT1 \xc8\x1a TEXT2 \x8d
 \n拓司の腰が跳ね上がり、二回目とは思えない量の精液が迸った。@
 精液は弧を描いて飛び、腰まで伸びた早桃の髪の毛をべったりと\n汚した。\
 
-  
-INIT \xfa!\x0c SET_VAR1 6\x02 \x02 d\x02 END
-INIT_TEXT SCE007_016 h$ SCE_TEXT TEXT1 \xcc\x1a TEXT2 \x9c
+\x00  
+SEQ1 \xfa!\x00\x0c
+SEQ4 6\x02\x00 \x02\x00\x00 d\x02\x00 
+SEQ6 SCE007_016\x00 h$\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xcc\x1a\x00\x0c
+SEQ5\x03\x9c\x00\x00
  
 早桃\n　「いくらでも出るんだね。\pからだ、おかしいんじゃないの？\n　　\pほんとうは赤ちゃんを作るための液で、こんなふうに女の\n　　子にひっかけるためのものじゃないんだよ？@
 　　大丈夫？\p　まだ出る？\p　駄目だよ、もっとがんばってくれな\n　　くちゃ。\pこれから早桃のお腹の中にいっぱいいっぱい出さな\n　　くちゃいけないんだから。@
@@ -189,9 +254,13 @@ INIT_TEXT SCE007_016 h$ SCE_TEXT TEXT1 \xcc\x1a TEXT2 \x9c
 \n早桃が小さく笑った。@
 徐々に笑い声が大きくなっていく。\
 
-  
-INIT \xac$\x0c SET_VAR1 6\x02 \x02 d\x02 END
-INIT_TEXT SCE007_017 V' SCE_TEXT TEXT1 \xd0\x1a TEXT2 \xb4
+\x00\x00\x00  
+SEQ1 \xac$\x00\x0c
+SEQ4 6\x02\x00 \x02\x00\x00 d\x02\x00 
+SEQ6 SCE007_017\x00 V'\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xd0\x1a\x00\x0c
+SEQ5\x03\xb4\x00\x00
  
 拓司\n　「……やめろ」@
 早桃\n　「ワハ、ワハハハハ、ハハハハハハハ！」@
@@ -204,10 +273,16 @@ INIT_TEXT SCE007_017 V' SCE_TEXT TEXT1 \xd0\x1a TEXT2 \xb4
 『灰色』にあわせて、最後にはさながら踊っているかのごとく、\n早桃は身体をくねらせ始めた。@
 \n早桃\n　「ウワハハハハハハハザザザ……ザザッ……ザアザザザ……ザ\n　　アアアアア……ザアザアアアアアアア……」\
 
-  
-INIT \x9a'\x0c SET_VAR1 6\x02 \x02 d\x02 END  
-INIT \xc8\x0c SET_VAR1 \x9a\x02 \x02 \xc4\x02 END APPLY_FILE .\\Data\\Script\\Bgm.Fob VAR1 \xd8* APPlY_2 StopCD RUNF \x02+ END
-INIT_TEXT SCE007_018 \x1e+ SCE_TEXT TEXT1 \xd4\x1a TEXT2 L
+\x00\x00\x00  
+SEQ1 \x9a'\x00\x0c
+SEQ4 6\x02\x00 \x02\x00\x00 d\x02\x00 \x02\x00\x005  
+SEQ1 \xc8\x00\x00\x0c
+SEQ4 \x9a\x02\x00 \x02\x00\x00 \xc4\x02\x00 \x02\x00\x005\x03\x06\x00\x00.\\Data\\Script\\Bgm.Fobv\x81\x1f\xd8*\x00 
+SEQ2\x00\x00StopCD SPC1 \x02+\x00 
+SEQ6 SCE007_018\x00 \x1e+\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xd4\x1a\x00\x0c
+SEQ5\x03L\x00\x00
  
 拓司は両手で耳を覆った。@
 そして目を閉じた。@
@@ -221,6 +296,7 @@ INIT_TEXT SCE007_018 \x1e+ SCE_TEXT TEXT1 \xd4\x1a TEXT2 L
 \n現実に戻ったのだ。@
 おそらくは。\
 
-  
-INIT b+\x0c SET_VAR1 6\x02 \x02 d\x02 END 6\x02 APPLY_3 TextClose VAR1 \xd8, END
+\x00\x00\x00  
+SEQ1 b+\x00\x0c
+SEQ4 6\x02\x00 \x02\x00\x00 d\x02\x00 \x02\x00\x005 6\x02\x00 \x02\x00\x00\x03\x03\x00\x00TextClosev\x81\x1f\xd8,\x00 
 END_SCRIPT

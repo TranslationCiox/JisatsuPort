@@ -1,6 +1,10 @@
 START_SCRIPT
-.\\\x01`B#\x01FM APPLY_FILE .\\Data\\Script\\Bgm.Fob VAR1 \x06 APPlY_2 StopCD RUNF 0 END
-INIT_TEXT SCE022_001 L SCE_TEXT TEXT1 2 TEXT2 \x96
+.\\\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00FM\x00\x03\x06\x00\x00.\\Data\\Script\\Bgm.Fobv\x81\x1f\x06\x00\x00 
+SEQ2\x00\x00StopCD SPC1 0\x00\x00 
+SEQ6 SCE022_001\x00 L\x00\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \x002\x00\x0c
+SEQ5\x03\x96\x00\x00
  
 拓司は目を閉じて、妄想の糸でひとつの世界を編み始めた。@
 いつ？\p　－－親父とお袋が旅行中のある日。@
@@ -16,11 +20,19 @@ INIT_TEXT SCE022_001 L SCE_TEXT TEXT1 2 TEXT2 \x96
 命じたとおり、体操服とブルマに身を包んでいる。顔を紅潮させ\nて、義兄に愛される期待にうち震えている。@
 両親が留守なのだから、本当はベッドで堂々と繋がることができ\nるのだ。しかし、敢えてこんな場所を選んだ。それは……\
 
-  
-INIT \x90\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF \x08\x03 APPlY_2 TextOn RUNF 6\x03 END  
-INIT \x05\x01\x0c SET_VAR1 \x06 APPlY_2 PlayCD RUNF x\x03 END  
-INIT M\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bg.Fob VAR2\xae\x03 \x02 APPLY_4 BgAutoFadeIn VAR2\xd8\x03 END
-INIT_TEXT SCE022_002 \xfc\x03 SCE_TEXT TEXT1 \x042 TEXT2 Q
+\x00\x00\x00  
+SEQ1 \x90\x00\x00\x0c
+SEQ4\x03\x07\x00\x00.\\Data\\Script\\TextFunc.Fob SPC1 \x08\x03\x00 
+SEQ2\x00\x00TextOn SPC1 6\x03\x00 \x02\x00\x005  
+SEQ1 \x05\x01\x00\x0c
+SEQ4 \x06\x00\x00 
+SEQ2\x00\x00PlayCD SPC1 x\x03\x00 \x02\x00\x005  
+SEQ1 M\x00\x00\x0c
+SEQ4\x03\x06\x00\x00.\\Data\\Script\\Bg.Fob SPC2 \xae\x03\x00 \x02\x00\x00\x03\x04\x00\x00BgAutoFadeIn SPC2 \xd8\x03\x00 
+SEQ6 SCE022_002\x00 \xfc\x03\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \x042\x00\x0c
+SEQ5\x03Q\x00\x00
  
 早桃\n　「うふふ、おにいちゃん、エッチだよね。こういう場所のほう\n　　が萌えるんだ？」@
 拓司\n　「ああ」@
@@ -29,10 +41,15 @@ INIT_TEXT SCE022_002 \xfc\x03 SCE_TEXT TEXT1 \x042 TEXT2 Q
 \n早桃の顔が、さっと青ざめる。@
 拓司の背後に、別の男が立っているのに気づいたのだ。\
 
-  
-INIT @\x04\x0c SET_VAR1 \x08\x03 \x02 6\x03 END  
-INIT \x05\x01\x0c SET_VAR1 \x06 \x02 x\x03 END
-INIT_TEXT SCE022_003 \xf2\x05 SCE_TEXT TEXT1 \x082 TEXT2 b
+\x00  
+SEQ1 @\x04\x00\x0c
+SEQ4 \x08\x03\x00 \x02\x00\x00 6\x03\x00 \x02\x00\x005  
+SEQ1 \x05\x01\x00\x0c
+SEQ4 \x06\x00\x00 \x02\x00\x00 x\x03\x00 
+SEQ6 SCE022_003\x00 \xf2\x05\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \x082\x00\x0c
+SEQ5\x03b\x00\x00
  
 早桃\n　「！」@
 拓司\n　「さあ、遠慮しないで入れよ」@
@@ -42,9 +59,13 @@ INIT_TEXT SCE022_003 \xf2\x05 SCE_TEXT TEXT1 \x082 TEXT2 b
 平野はニヤニヤ笑いを満面に張り付けて、トイレの中に一歩踏み\n込んだ。@
 便座に腰掛けたまま、早桃が身を固くする。\
 
-  
-INIT 6\x06\x0c SET_VAR1 \x08\x03 \x02 6\x03 END
-INIT_TEXT SCE022_004 \xf8\x07 SCE_TEXT TEXT1 \x0c2 TEXT2 `
+\x00\x00\x00  
+SEQ1 6\x06\x00\x0c
+SEQ4 \x08\x03\x00 \x02\x00\x00 6\x03\x00 
+SEQ6 SCE022_004\x00 \xf8\x07\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \x0c2\x00\x0c
+SEQ5\x03`\x00\x00
  
 平野\n　「へへ……こんにちわ～っす、早桃ちゃん♪」@
 早桃\n　「おにいちゃん……どういうこと？」@
@@ -56,9 +77,13 @@ INIT_TEXT SCE022_004 \xf8\x07 SCE_TEXT TEXT1 \x0c2 TEXT2 `
 　　だったら協力してくれよ。@
 　　こづかいがいるんだ」\
 
-  
-INIT <\x08\x0c SET_VAR1 \x08\x03 \x02 6\x03 END
-INIT_TEXT SCE022_005 \xf6\t SCE_TEXT TEXT1 \x102 TEXT2 d
+\x00  
+SEQ1 <\x08\x00\x0c
+SEQ4 \x08\x03\x00 \x02\x00\x00 6\x03\x00 
+SEQ6 SCE022_005\x00 \xf6\t\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \x102\x00\x0c
+SEQ5\x03d\x00\x00
  
 早桃\n　「……そんな！」@
 拓司\n　「そんなもこんなもないだろ？@
@@ -69,9 +94,13 @@ INIT_TEXT SCE022_005 \xf6\t SCE_TEXT TEXT1 \x102 TEXT2 d
 　　もう一生お前とは口もきかないけど、悪く思わないでくれよ\n　　な」@
 早桃\n　「おにいちゃん……\p早桃のこと愛してるっていってくれたの\n　　に……\p両思いだって……」\
 
-  
-INIT :\n\x0c SET_VAR1 \x08\x03 \x02 6\x03 END
-INIT_TEXT SCE022_006 \x04\x0c SCE_TEXT TEXT1 \x142 TEXT2 7
+\x00  
+SEQ1 :\n\x00\x0c
+SEQ4 \x08\x03\x00 \x02\x00\x00 6\x03\x00 
+SEQ6 SCE022_006\x00 \x04\x0c\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \x142\x00\x0c
+SEQ5\x037\x00\x00
  
 早桃の大きな目が潤んでいる。@
 あと一押しだ。拓司は慎重に言葉を選んだ。@
@@ -79,9 +108,13 @@ INIT_TEXT SCE022_006 \x04\x0c SCE_TEXT TEXT1 \x142 TEXT2 7
 より深く義妹を傷つける言葉を。@
 その傷の深さを目の当たりにすることによって、自らをも傷つけ\nるような言葉を。\
 
-  
-INIT H\x0c\x0c SET_VAR1 \x08\x03 \x02 6\x03 END
-INIT_TEXT SCE022_007 ^\r SCE_TEXT TEXT1 \x182 TEXT2 \xb0
+\x00\x00\x00  
+SEQ1 H\x0c\x00\x0c
+SEQ4 \x08\x03\x00 \x02\x00\x00 6\x03\x00 
+SEQ6 SCE022_007\x00 ^\r\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \x182\x00\x0c
+SEQ5\x03\xb0\x00\x00
  
 拓司\n　「両思い？@
 　　義兄妹でそんなのあるはずないだろ？@
@@ -97,9 +130,13 @@ INIT_TEXT SCE022_007 ^\r SCE_TEXT TEXT1 \x182 TEXT2 \xb0
 　　だから愛とか語って理論武装してるんだろ？」@
 早桃\n　「違うよ！　早桃は本当におにいちゃんのこと……」\
 
-  
-INIT \xa2\r\x0c SET_VAR1 \x08\x03 \x02 6\x03 END
-INIT_TEXT SCE022_008 \x9c\x10 SCE_TEXT TEXT1 \x1c2 TEXT2 _
+\x00  
+SEQ1 \xa2\r\x00\x0c
+SEQ4 \x08\x03\x00 \x02\x00\x00 6\x03\x00 
+SEQ6 SCE022_008\x00 \x9c\x10\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \x1c2\x00\x0c
+SEQ5\x03_\x00\x00
  
 拓司\n　「じゃあここで証明してくれよ。@
 　　本当に愛してるんなら、おれの言うことは聞けるはずだ\n　　ろ？」\n\p早桃\n　「……」@
@@ -110,9 +147,13 @@ INIT_TEXT SCE022_008 \x9c\x10 SCE_TEXT TEXT1 \x1c2 TEXT2 _
 早桃\n　「……」@
 \nうつむいて震える早桃を見下ろして、平野は荒い息でいった。\
 
-  
-INIT \xe0\x10\x0c SET_VAR1 \x08\x03 \x02 6\x03 END
-INIT_TEXT SCE022_009 \x96\x12 SCE_TEXT TEXT1  2 TEXT2 R
+\x00  
+SEQ1 \xe0\x10\x00\x0c
+SEQ4 \x08\x03\x00 \x02\x00\x00 6\x03\x00 
+SEQ6 SCE022_009\x00 \x96\x12\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3  2\x00\x0c
+SEQ5\x03R\x00\x00
  
 平野\n　「早桃ちゃ～ん？@
 　　いまから僕のこと、『おにいちゃん』って呼んでくれるか\n　　な？」@
@@ -123,10 +164,16 @@ INIT_TEXT SCE022_009 \x96\x12 SCE_TEXT TEXT1  2 TEXT2 R
 \n懇願するように見上げる義妹。@
 拓司はそれを無視して、平野にいった。\
 
-  
-INIT \xda\x12\x0c SET_VAR1 \x08\x03 \x02 6\x03 END  
-INIT \xc8\x0c SET_VAR1 \xae\x03 APPlY_2 BgOn VAR2\x82\x14 END
-INIT_TEXT SCE022_010 \x9e\x14 SCE_TEXT TEXT1 $2 TEXT2 r
+\x00  
+SEQ1 \xda\x12\x00\x0c
+SEQ4 \x08\x03\x00 \x02\x00\x00 6\x03\x00 \x02\x00\x005  
+SEQ1 \xc8\x00\x00\x0c
+SEQ4 \xae\x03\x00 
+SEQ2\x00\x00BgOn SPC2 \x82\x14\x00 
+SEQ6 SCE022_010\x00 \x9e\x14\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 $2\x00\x0c
+SEQ5\x03r\x00\x00
  
 拓司\n　「ホラ、さっさとやれよ。お前、女は初めてなんだろ？　@
 　　好きにしていいんだぞ？」\n平野\n　「いやあ、虎菱くんが見てる前じゃ、ちょっと恥ずいなあ」@
@@ -136,9 +183,13 @@ INIT_TEXT SCE022_010 \x9e\x14 SCE_TEXT TEXT1 $2 TEXT2 r
 白いブリーフの前を大きく押し上げたペ○スの先端は、すでにカ\nウパー液で湿っている。@
 早桃は目をそらして、うつむいたまま動かない。\
 
-  
-INIT \xe2\x14\x0c SET_VAR1 \x08\x03 \x02 6\x03 END
-INIT_TEXT SCE022_011 \xe4\x16 SCE_TEXT TEXT1 (2 TEXT2 e
+\x00  
+SEQ1 \xe2\x14\x00\x0c
+SEQ4 \x08\x03\x00 \x02\x00\x00 6\x03\x00 
+SEQ6 SCE022_011\x00 \xe4\x16\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 (2\x00\x0c
+SEQ5\x03e\x00\x00
  
 平野\n　「さあ、早桃ちゃん。@
 　　おにいちゃんのここ、触ってみたいだろ？」@
@@ -150,9 +201,13 @@ INIT_TEXT SCE022_011 \xe4\x16 SCE_TEXT TEXT1 (2 TEXT2 e
 しかし平野はお構いなしに、早桃の手を自分のふくらみにあてが\nった。@
 そのまま手を上下させ、強制的に撫でさすらせる。\
 
-  
-INIT (\x17\x0c SET_VAR1 \x08\x03 \x02 6\x03 END
-INIT_TEXT SCE022_012 \xf6\x18 SCE_TEXT TEXT1 ,2 TEXT2 H
+\x00\x00\x00  
+SEQ1 (\x17\x00\x0c
+SEQ4 \x08\x03\x00 \x02\x00\x00 6\x03\x00 
+SEQ6 SCE022_012\x00 \xf6\x18\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 ,2\x00\x0c
+SEQ5\x03H\x00\x00
  
 平野\n　「ど……どうだい？@
 　　おにいちゃんのおち○ちんを触った感想は？」@
@@ -163,9 +218,13 @@ INIT_TEXT SCE022_012 \xf6\x18 SCE_TEXT TEXT1 ,2 TEXT2 H
 平野\n　「はあ、はあ……ホラ、早く言ってよ？」@
 早桃\n　「……大きい……です」\
 
-  
-INIT :\x19\x0c SET_VAR1 \x08\x03 \x02 6\x03 END
-INIT_TEXT SCE022_013 \x94\x1a SCE_TEXT TEXT1 02 TEXT2 w
+\x00\x00\x00  
+SEQ1 :\x19\x00\x0c
+SEQ4 \x08\x03\x00 \x02\x00\x00 6\x03\x00 
+SEQ6 SCE022_013\x00 \x94\x1a\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 02\x00\x0c
+SEQ5\x03w\x00\x00
  
 その声を確認してから、平野は早桃の手首を解放した。@
 続けろ、と目で合図を送り、早桃が自分の意志で撫でさするよう\nにし向ける。@
@@ -177,9 +236,13 @@ INIT_TEXT SCE022_013 \x94\x1a SCE_TEXT TEXT1 02 TEXT2 w
 早桃\n　「……おにいちゃんの……\pおち○……ちん……@
 　　大きい……\pです……」\
 
-  
-INIT \xd8\x1a\x0c SET_VAR1 \x08\x03 \x02 6\x03 END
-INIT_TEXT SCE022_014 \xee\x1c SCE_TEXT TEXT1 42 TEXT2 n
+\x00  
+SEQ1 \xd8\x1a\x00\x0c
+SEQ4 \x08\x03\x00 \x02\x00\x00 6\x03\x00 
+SEQ6 SCE022_014\x00 \xee\x1c\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 42\x00\x0c
+SEQ5\x03n\x00\x00
  
 平野\n　「よ、よくいえたね、早桃！@
 　　ご褒美だよ！」@
@@ -191,9 +254,13 @@ INIT_TEXT SCE022_014 \xee\x1c SCE_TEXT TEXT1 42 TEXT2 n
 眉をひそめて、固く目を閉じ、顔面への陵辱に耐えている……。@
 \n早桃\n　「う……ううっ」\
 
-  
-INIT 2\x1d\x0c SET_VAR1 \x08\x03 \x02 6\x03 END
-INIT_TEXT SCE022_015 $\x1f SCE_TEXT TEXT1 82 TEXT2 z
+\x00  
+SEQ1 2\x1d\x00\x0c
+SEQ4 \x08\x03\x00 \x02\x00\x00 6\x03\x00 
+SEQ6 SCE022_015\x00 $\x1f\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 82\x00\x0c
+SEQ5\x03z\x00\x00
  
 平野\n　「ゆ、夢みたいだ。@
 　　こんなかわいい子と……\pつるぺたのぷにっ娘と……@
@@ -207,9 +274,13 @@ INIT_TEXT SCE022_015 $\x1f SCE_TEXT TEXT1 82 TEXT2 z
 早桃\n　「はい……\pはいぃ……\pおにいちゃんのこと……@
 　　うぷっ……\pす、好き……\pですぅ……」\
 
-  
-INIT h\x1f\x0c SET_VAR1 \x08\x03 \x02 6\x03 END
-INIT_TEXT SCE022_016 \x8a! SCE_TEXT TEXT1 <2 TEXT2 \x96
+\x00  
+SEQ1 h\x1f\x00\x0c
+SEQ4 \x08\x03\x00 \x02\x00\x00 6\x03\x00 
+SEQ6 SCE022_016\x00 \x8a!\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 <2\x00\x0c
+SEQ5\x03\x96\x00\x00
  
 目の前で、オタクに犯される義妹。@
 たった３万で、義兄への純愛を踏みにじられる早桃。@
@@ -223,9 +294,13 @@ INIT_TEXT SCE022_016 \x8a! SCE_TEXT TEXT1 <2 TEXT2 \x96
 抵抗することで、より傷つくことを理解したのだろう。@
 無抵抗を貫くことで、この淫猥な行為から自分の意志を消し去ろ\nうとしているのだ。\
 
-  
-INIT \xce!\x0c SET_VAR1 \x08\x03 \x02 6\x03 END
-INIT_TEXT SCE022_017 `$ SCE_TEXT TEXT1 @2 TEXT2 \x7f
+\x00  
+SEQ1 \xce!\x00\x0c
+SEQ4 \x08\x03\x00 \x02\x00\x00 6\x03\x00 
+SEQ6 SCE022_017\x00 `$\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 @2\x00\x0c
+SEQ5\x03\x7f\x00\x00
  
 不可避の事態が降りかかったのだと……@
 自分は被害者であって加担者ではなかったと……@
@@ -237,9 +312,13 @@ INIT_TEXT SCE022_017 `$ SCE_TEXT TEXT1 @2 TEXT2 \x7f
 　　おま○こに入れられてそのおにいちゃんの赤ちゃんを孕むか、\n　　\pそれともお尻に入れられて妊娠だけは避けるか？@
 　　さ、早桃が自分でお願いしてごらん？」\
 
-  
-INIT \xa4$\x0c SET_VAR1 \x08\x03 \x02 6\x03 END
-INIT_TEXT SCE022_018 \xda& SCE_TEXT TEXT1 D2 TEXT2 b
+\x00\x00\x00  
+SEQ1 \xa4$\x00\x0c
+SEQ4 \x08\x03\x00 \x02\x00\x00 6\x03\x00 
+SEQ6 SCE022_018\x00 \xda&\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 D2\x00\x0c
+SEQ5\x03b\x00\x00
  
 早桃\n　「……」@
 平野\n　「はあ、はあ……どうした、早桃ぉ？」@
@@ -250,9 +329,13 @@ INIT_TEXT SCE022_018 \xda& SCE_TEXT TEXT1 D2 TEXT2 b
 平野\n　「そうか、そうか。@
 　　それじゃお望み通り、おま○こにぶち込んで、おにいちゃん\n　　の精子を早桃の卵子に受精させてあげるよ」\
 
-  
-INIT \x1e'\x0c SET_VAR1 \x08\x03 \x02 6\x03 END
-INIT_TEXT SCE022_019 \xe0( SCE_TEXT TEXT1 H2 TEXT2 g
+\x00\x00\x00  
+SEQ1 \x1e'\x00\x0c
+SEQ4 \x08\x03\x00 \x02\x00\x00 6\x03\x00 
+SEQ6 SCE022_019\x00 \xe0(\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 H2\x00\x0c
+SEQ5\x03g\x00\x00
  
 早桃\n　「だ、駄目っ！　\p今日は駄目な日なのっ！@
 　　本当に赤ちゃんできちゃう日なのっ！」@
@@ -266,9 +349,13 @@ INIT_TEXT SCE022_019 \xe0( SCE_TEXT TEXT1 H2 TEXT2 g
 早桃\n　「お尻に出してください！@
 　　おにいちゃんの精液、お尻の中に射精してくださいっ！」\
 
-  
-INIT $)\x0c SET_VAR1 \x08\x03 \x02 6\x03 END
-INIT_TEXT SCE022_020 \xfa* SCE_TEXT TEXT1 L2 TEXT2 \x80
+\x00\x00\x00  
+SEQ1 $)\x00\x0c
+SEQ4 \x08\x03\x00 \x02\x00\x00 6\x03\x00 
+SEQ6 SCE022_020\x00 \xfa*\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 L2\x00\x0c
+SEQ5\x03\x80\x00\x00
  
 凍り付いたようだった早桃の表情が、ぐしゃっと崩れた。@
 ぽろぽろと大粒の涙が頬を伝う。@
@@ -280,9 +367,13 @@ INIT_TEXT SCE022_020 \xfa* SCE_TEXT TEXT1 L2 TEXT2 \x80
 　　立っちして、ブルマをぬぎぬぎしようね、早桃ぉ……」@
 拓司\n　「ほら、さっさと立て！」\
 
-  
-INIT >+\x0c SET_VAR1 \x08\x03 \x02 6\x03 END
-INIT_TEXT SCE022_021 x- SCE_TEXT TEXT1 P2 TEXT2 \xa8
+\x00\x00\x00  
+SEQ1 >+\x00\x0c
+SEQ4 \x08\x03\x00 \x02\x00\x00 6\x03\x00 
+SEQ6 SCE022_021\x00 x-\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 P2\x00\x0c
+SEQ5\x03\xa8\x00\x00
  
 ビクッと身体をすくませて、弾かれたように早桃が立ち上がる。@
 平野はその足下にしゃがみ込み、ゆっくりと、なめるようにブル\nマを引き下ろしていった。@
@@ -296,9 +387,13 @@ INIT_TEXT SCE022_021 x- SCE_TEXT TEXT1 P2 TEXT2 \xa8
 　　要するに早桃は誰でもいいんだろう？@
 　　誰の前でもでもこんなにぬるぬるにしちゃうんだ？」\
 
-  
-INIT \xbc-\x0c SET_VAR1 \x08\x03 \x02 6\x03 END
-INIT_TEXT SCE022_022 \x960 SCE_TEXT TEXT1 T2 TEXT2 ^
+\x00  
+SEQ1 \xbc-\x00\x0c
+SEQ4 \x08\x03\x00 \x02\x00\x00 6\x03\x00 
+SEQ6 SCE022_022\x00 \x960\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 T2\x00\x0c
+SEQ5\x03^\x00\x00
  
 早桃\n　「ううっ……ひっくっ……」@
 \n平野は便座にどっかりと腰をおろした。@
@@ -309,9 +404,13 @@ INIT_TEXT SCE022_022 \x960 SCE_TEXT TEXT1 T2 TEXT2 ^
 早桃\n　「おにいちゃん。もう－－」@
 拓司\n　「入れろ」\
 
-  
-INIT \xda0\x0c SET_VAR1 \x08\x03 \x02 6\x03 END
-INIT_TEXT SCE022_023 \x8c2 SCE_TEXT TEXT1 X2 TEXT2 \x8d
+\x00\x00\x00  
+SEQ1 \xda0\x00\x0c
+SEQ4 \x08\x03\x00 \x02\x00\x00 6\x03\x00 
+SEQ6 SCE022_023\x00 \x8c2\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 X2\x00\x0c
+SEQ5\x03\x8d\x00\x00
  
 早桃の肩がガックリと落ちた。@
 最後まで残っていたひとかけらの何かが、完全に砕け散った瞬間\nだった。@
@@ -322,10 +421,15 @@ INIT_TEXT SCE022_023 \x8c2 SCE_TEXT TEXT1 X2 TEXT2 \x8d
 \n平野の膝の上に座るような形で、早桃は腰をおろした。@
 平野は自分でペ○スを握って、先端を早桃のアナルに押し当て、\nそして……\
 
-  
-INIT \xd02\x0c SET_VAR1 \x08\x03 \x02 6\x03 END  
-INIT N\x0c SET_VAR1 \xae\x03 \x02 \xd8\x03 END
-INIT_TEXT SCE022_024 r5 SCE_TEXT TEXT1 \\2 TEXT2 g
+\x00  
+SEQ1 \xd02\x00\x0c
+SEQ4 \x08\x03\x00 \x02\x00\x00 6\x03\x00 \x02\x00\x005  
+SEQ1 N\x00\x00\x0c
+SEQ4 \xae\x03\x00 \x02\x00\x00 \xd8\x03\x00 
+SEQ6 SCE022_024\x00 r5\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \\2\x00\x0c
+SEQ5\x03g\x00\x00
  
 早桃\n　「ひっ、あうううっ！」@
 平野\n　「き、きつい……千切れそうだあ……お、おおっ！　」@
@@ -335,9 +439,13 @@ INIT_TEXT SCE022_024 r5 SCE_TEXT TEXT1 \\2 TEXT2 g
 \n早桃\n　「うぐっ……ひっ……\pお腹が……\pうあ……息ができな……@
 　　おふっ！」\
 
-  
-INIT \xb65\x0c SET_VAR1 \x08\x03 \x02 6\x03 END
-INIT_TEXT SCE022_025 \x8c7 SCE_TEXT TEXT1 `2 TEXT2 \xa3
+\x00  
+SEQ1 \xb65\x00\x0c
+SEQ4 \x08\x03\x00 \x02\x00\x00 6\x03\x00 
+SEQ6 SCE022_025\x00 \x8c7\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 `2\x00\x0c
+SEQ5\x03\xa3\x00\x00
  
 平野\n　「すごいよ、早桃ぉ……\pさ、最高だよぉ。@
 　　こ、こんなに細い身体で……\p体操着着て……\pお人形さん\n　　みたいな早桃が、あ、アナルから直腸にチ○ポぶち込まれて、\n　　トイレでよがり狂ってるなんて……\pゆ、夢みたいだあ……@
@@ -350,9 +458,13 @@ INIT_TEXT SCE022_025 \x8c7 SCE_TEXT TEXT1 `2 TEXT2 \xa3
 　　もうすぐおにいちゃんのどろどろのやつを、さ、早桃のお腹\n　　の中にぶちまけてあげるからね！@
 　　便所女の早桃は、内臓まで全部おにいちゃんのものだからね\n　　っ！」\
 
-  
-INIT \xd07\x0c SET_VAR1 \x08\x03 \x02 6\x03 END
-INIT_TEXT SCE022_026 \x96: SCE_TEXT TEXT1 d2 TEXT2 d
+\x00\x00\x00  
+SEQ1 \xd07\x00\x0c
+SEQ4 \x08\x03\x00 \x02\x00\x00 6\x03\x00 
+SEQ6 SCE022_026\x00 \x96:\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 d2\x00\x0c
+SEQ5\x03d\x00\x00
  
 早桃\n　「ああっ……あおっ……おあっ！」@
 平野\n　「好きだよ早桃！@
@@ -361,9 +473,13 @@ INIT_TEXT SCE022_026 \x96: SCE_TEXT TEXT1 d2 TEXT2 d
 /*■黒　表示（ノンエフェクト）*/\a7,-1,-1,0,\a0,200,1,0,\a6,0,0,0,\n拓司は、繋がって動物のような声を漏らしている２人を見下ろし\nた。@
 そしてハダシのままの右脚を伸ばして、むき出しに晒されている\n早桃の性器に親指の先を突っ込んだ。\
 
-  
-INIT \xda:\x0c SET_VAR1 \x08\x03 \x02 6\x03 END
-INIT_TEXT SCE022_027 \xa4< SCE_TEXT TEXT1 h2 TEXT2 o
+\x00  
+SEQ1 \xda:\x00\x0c
+SEQ4 \x08\x03\x00 \x02\x00\x00 6\x03\x00 
+SEQ6 SCE022_027\x00 \xa4<\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 h2\x00\x0c
+SEQ5\x03o\x00\x00
  
 早桃\n　「お……おにい……がはっ……おにいちゃ……えふっ！」@
 拓司\n　「うれしいだろ？@
@@ -374,9 +490,13 @@ INIT_TEXT SCE022_027 \xa4< SCE_TEXT TEXT1 h2 TEXT2 o
 拓司\n　「見ろよ平野。@
 　　早桃のやつ、うれしくて白目剥いて笑ってるぜ？」\
 
-  
-INIT \xe8<\x0c SET_VAR1 \x08\x03 \x02 6\x03 END
-INIT_TEXT SCE022_028 \xde> SCE_TEXT TEXT1 l2 TEXT2 l
+\x00  
+SEQ1 \xe8<\x00\x0c
+SEQ4 \x08\x03\x00 \x02\x00\x00 6\x03\x00 
+SEQ6 SCE022_028\x00 \xde>\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 l2\x00\x0c
+SEQ5\x03l\x00\x00
  
 平野\n　「と、虎菱くんっ！\p僕もう限界だよ！　@
 　　い、いいんだろ？\p約束どおりにしちゃっていいんだろ？」@
@@ -387,9 +507,13 @@ INIT_TEXT SCE022_028 \xde> SCE_TEXT TEXT1 l2 TEXT2 l
 \n早桃\n　「な……なに？！@
 　　なんなのおにいちゃん？！」\
 
-  
-INIT "?\x0c SET_VAR1 \x08\x03 \x02 6\x03 END
-INIT_TEXT SCE022_029 \x0cA SCE_TEXT TEXT1 p2 TEXT2 \x9b
+\x00  
+SEQ1 "?\x00\x0c
+SEQ4 \x08\x03\x00 \x02\x00\x00 6\x03\x00 
+SEQ6 SCE022_029\x00 \x0cA\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 p2\x00\x0c
+SEQ5\x03\x9b\x00\x00
  
 拓司\n　「そいつがどうしても膣内射精したいっていうからさ。@
 　　出すときだけは前に入れてもいいぞって、約束したんだよ」@
@@ -404,9 +528,13 @@ INIT_TEXT SCE022_029 \x0cA SCE_TEXT TEXT1 p2 TEXT2 \x9b
 ぎくりとして、早桃が見上げる。@
 その一瞬の隙をついて、遂に平野のペ○スが早桃を貫いた。\
 
-  
-INIT PA\x0c SET_VAR1 \x08\x03 \x02 6\x03 END
-INIT_TEXT SCE022_030 \xf6C SCE_TEXT TEXT1 t2 TEXT2 d
+\x00\x00\x00  
+SEQ1 PA\x00\x0c
+SEQ4 \x08\x03\x00 \x02\x00\x00 6\x03\x00 
+SEQ6 SCE022_030\x00 \xf6C\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 t2\x00\x0c
+SEQ5\x03d\x00\x00
  
 平野\n　「ああっ……入ったよ！@
 　　わかるかい、早桃ぉ！@
@@ -419,9 +547,13 @@ INIT_TEXT SCE022_030 \xf6C SCE_TEXT TEXT1 t2 TEXT2 d
 　　やだよ……\pこんなの、あんまりだよ……@
 　　おにいちゃ……ん」\
 
-  
-INIT :D\x0c SET_VAR1 \x08\x03 \x02 6\x03 END
-INIT_TEXT SCE022_031 \x04F SCE_TEXT TEXT1 x2 TEXT2 \xb2
+\x00  
+SEQ1 :D\x00\x0c
+SEQ4 \x08\x03\x00 \x02\x00\x00 6\x03\x00 
+SEQ6 SCE022_031\x00 \x04F\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 x2\x00\x0c
+SEQ5\x03\xb2\x00\x00
  
 平野\n　「あ、愛してるからなんだよ！@
 　　愛してるから直腸じゃなくて子宮に出したいんだよ！@
@@ -438,9 +570,13 @@ INIT_TEXT SCE022_031 \x04F SCE_TEXT TEXT1 x2 TEXT2 \xb2
 　　わかってんのか、お前なんかプロステ２より価値ないんだ！@
 　　いえッ！」\
 
-  
-INIT HF\x0c SET_VAR1 \x08\x03 \x02 6\x03 END
-INIT_TEXT SCE022_032 JI SCE_TEXT TEXT1 |2 TEXT2 S
+\x00\x00\x00  
+SEQ1 HF\x00\x0c
+SEQ4 \x08\x03\x00 \x02\x00\x00 6\x03\x00 
+SEQ6 SCE022_032\x00 JI\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 |2\x00\x0c
+SEQ5\x03S\x00\x00
  
 早桃\n　「お……おにいちゃん、い、イク……」@
 平野\n　「おにいちゃんもイクよ、早桃ぉ！@
@@ -449,9 +585,13 @@ INIT_TEXT SCE022_032 JI SCE_TEXT TEXT1 |2 TEXT2 S
 平野\n　「出る！　\p出るよ早桃ぉ！@
 　　おっぱいも膨らみきってないつるぺた少女に僕の精液が……@
 　　子宮まで全部ぼ、僕の物だぁ……あ、あ、あ、ああっ！」\w\n\n\z
-  
-INIT \x8eI\x0c SET_VAR1 \x08\x03 \x02 6\x03 END
-INIT_TEXT SCE022_033 \x14K SCE_TEXT TEXT1 \x802 TEXT2 R
+\x00\x00\x00  
+SEQ1 \x8eI\x00\x0c
+SEQ4 \x08\x03\x00 \x02\x00\x00 6\x03\x00 
+SEQ6 SCE022_033\x00 \x14K\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \x802\x00\x0c
+SEQ5\x03R\x00\x00
  
 /*▲SE01　再生（再生終了を待たず先へ進む）*/\a2,2,1,1,　ザザザ……ザザッ……ザアザザザ……ザアアアアア……\nザアザアアアアアアア……\n\n耳の奥で、『灰色』が響き始めた。@
 ああ、うるさい。@
@@ -459,7 +599,10 @@ INIT_TEXT SCE022_033 \x14K SCE_TEXT TEXT1 \x802 TEXT2 R
 うるさいんだよ！@
 \n　ザザザ……ザザッ……ザアザザザ……ザアアアアア……\nザアザアアアアアアア……\
 
-  
-INIT XK\x0c SET_VAR1 \x08\x03 \x02 6\x03 END  
-INIT \x02\x0c SET_VAR1 \x06 APPlY_2 SeStop RUNF M END \x08\x03 APPLY_3 TextClose VAR1 (M END
+\x00\x00\x00  
+SEQ1 XK\x00\x0c
+SEQ4 \x08\x03\x00 \x02\x00\x00 6\x03\x00 \x02\x00\x005  
+SEQ1 \x02\x00\x00\x0c
+SEQ4 \x06\x00\x00 
+SEQ2\x00\x00SeStop SPC1 \x00M\x00 \x02\x00\x005 \x08\x03\x00 \x02\x00\x00\x03\x03\x00\x00TextClosev\x81\x1f(M\x00 
 END_SCRIPT

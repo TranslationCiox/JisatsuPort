@@ -1,6 +1,8 @@
 START_SCRIPT
-\x0f\x12\x01`B#\x01d\x0f
-INIT_TEXT SCE031_001 \x06 SCE_TEXT TEXT1 \x10@ TEXT2 m
+\x0f\x12\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00d\x0f\x00\x03\x03\x00\x00SCE031_001\x00 \x06\x00\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \x10@\x00\x0c
+SEQ5\x03m\x00\x00
  
 スーパーのビニール袋に野良猫を詰め、廃墟となった五号棟の５階\nの窓からそれを放り投げていた月代カンナ。@
 どうして、という拓司の質問に、カンナはいまと同じ様な哄笑を返\nした。@
@@ -10,9 +12,14 @@ INIT_TEXT SCE031_001 \x06 SCE_TEXT TEXT1 \x10@ TEXT2 m
 \nカンナ\n　「理由なんて無いわ。こうしてると……生きてるって感じがする\n　　の」@
 \nその言葉を聞いて－－そして目の奥のどんよりとした無感動を見て\n－－この少女が自分の同類であることを、拓司は一瞬にして悟った\nのだった。\
 
-  
-INIT J\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF \x1e\x02 APPlY_2 TextOn RUNF L\x02 END
-INIT_TEXT SCE031_002 h\x02 SCE_TEXT TEXT1 \x14@ TEXT2 \x90
+\x00\x00\x00  
+SEQ1 J\x00\x00\x0c
+SEQ4\x03\x07\x00\x00.\\Data\\Script\\TextFunc.Fob SPC1 \x1e\x02\x00 
+SEQ2\x00\x00TextOn SPC1 L\x02\x00 
+SEQ6 SCE031_002\x00 h\x02\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \x14@\x00\x0c
+SEQ5\x03\x90\x00\x00
  
 \n　月代カンナのなかにある暗い穴に、拓司はまっさかさまに落ちて\n　いった。@
 　たとえばインターネットのデスサイト。@
@@ -25,9 +32,13 @@ INIT_TEXT SCE031_002 h\x02 SCE_TEXT TEXT1 \x14@ TEXT2 \x90
 　ショーウインドウに並べられた死、死、死。@
 　そこにあるのは確実な死のかたちであり、生きている自分には明\n　らかに所属していないものたちだった。\p拓司は取り憑かれたよう\n　にパソコンの前に張り付き、電脳の波に流されてくる情報をむさ\n　ぼった。\
 
-  
-INIT \xac\x02\x0c SET_VAR1 \x1e\x02 \x02 L\x02 END
-INIT_TEXT SCE031_003 &\x05 SCE_TEXT TEXT1 \x18@ TEXT2 \xe1
+\x00  
+SEQ1 \xac\x02\x00\x0c
+SEQ4 \x1e\x02\x00 \x02\x00\x00 L\x02\x00 
+SEQ6 SCE031_003\x00 &\x05\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \x18@\x00\x0c
+SEQ5\x03\xe1\x00\x00
  
 　月代カンナは、続いて猟奇殺人事件の本を拓司にリリースした。@
 　しっかりとしたルポルタージュもあれば、興味本位のゲテモノも\n　あった。@
@@ -38,9 +49,13 @@ INIT_TEXT SCE031_003 &\x05 SCE_TEXT TEXT1 \x18@ TEXT2 \xe1
 　物珍しさとショックに変わって、おなじみの倦怠感と、そして意\n　外にも『恥ずかしい』という感覚がやってきた。\p自分が、インタ\n　ーネットにしか居場所を見つけられない社会不適合者の一員とな\n　ってしまったような、あるいは訳知り顔のサブカル信者になって\n　しまったような、そんな気がしたのだ。@
 　その他大勢への、陳腐な成り下がり。\
 
-  
-INIT j\x05\x0c SET_VAR1 \x1e\x02 \x02 L\x02 END
-INIT_TEXT SCE031_004 (\t SCE_TEXT TEXT1 \x1c@ TEXT2 \xcb
+\x00  
+SEQ1 j\x05\x00\x0c
+SEQ4 \x1e\x02\x00 \x02\x00\x00 L\x02\x00 
+SEQ6 SCE031_004\x00 (\t\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \x1c@\x00\x0c
+SEQ5\x03\xcb\x00\x00
  
 拓司は自ら志願して、団地からの『猫落とし』をカンナと一緒に行\nった。@
 強烈な死の体験だった。@
@@ -51,16 +66,24 @@ INIT_TEXT SCE031_004 (\t SCE_TEXT TEXT1 \x1c@ TEXT2 \xcb
 拓司は手を伸ばしてカンナの身体を掴み、乱暴に抱き寄せて、口の\n奥にまで届くキスをした。\pカンナの舌が乱暴に拓司の中へねじりこ\nまれ、口の中をねぶり回した。\pそしてカンナはその最中、首を絞め\nて欲しいと懇願したのだった。@
 そのとき、拓司は初めて女の首を絞めたのだった。\
 
-  
-INIT l\t\x0c SET_VAR1 \x1e\x02 \x02 L\x02 END \x1e\x02 
-WAVL TextWindowOffDirect \xde\x0c END  
-INIT \xca\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bg.Fob VAR2 \r APPlY_2 BgOn VAR2J\r END  
-INIT \x01\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.fob RUNF \x80\r APPLY_3 WaitTime VAR2\xae\r END  
-INIT \xc8\x0c SET_VAR1  \r \x02 J\r END  
-INIT \x01\x0c SET_VAR1 \x80\r \x02 \xae\r END  
-INIT \xca\x0c SET_VAR1  \r \x02 J\r END  
-INIT \x01\x0c SET_VAR1 \x80\r \x02 \xae\r END  
-INIT \xc8\x0c SET_VAR1  \r \x02 J\r END  
-INIT \x01\x0c SET_VAR1 \x80\r \x02 \xae\r END \x1e\x02 
-WAVL TextWindowOnDirect RUNF \x12\x0f END \x1e\x02 APPLY_3 TextClose VAR1 F\x0f END
+\x00\x00\x00  
+SEQ1 l\t\x00\x0c
+SEQ4 \x1e\x02\x00 \x02\x00\x00 L\x02\x00 \x02\x00\x005 \x1e\x02\x00 \x02\x00\x00\x03\x05\x00\x00TextWindowOffDirect \xde\x0c\x00 \x02\x00\x005  
+SEQ1 \xca\x00\x00\x0c
+SEQ4\x03\x06\x00\x00.\\Data\\Script\\Bg.Fob SPC2  \r\x00 
+SEQ2\x00\x00BgOn SPC2 J\r\x00 \x02\x00\x005  
+SEQ1 \x01\x00\x00\x0c
+SEQ4\x03\x07\x00\x00.\\Data\\Script\\TextFunc.fob SPC1 \x80\r\x00 \x02\x00\x00\x03\x03\x00\x00WaitTime SPC2 \xae\r\x00 \x02\x00\x005  
+SEQ1 \xc8\x00\x00\x0c
+SEQ4  \r\x00 \x02\x00\x00 J\r\x00 \x02\x00\x005  
+SEQ1 \x01\x00\x00\x0c
+SEQ4 \x80\r\x00 \x02\x00\x00 \xae\r\x00 \x02\x00\x005  
+SEQ1 \xca\x00\x00\x0c
+SEQ4  \r\x00 \x02\x00\x00 J\r\x00 \x02\x00\x005  
+SEQ1 \x01\x00\x00\x0c
+SEQ4 \x80\r\x00 \x02\x00\x00 \xae\r\x00 \x02\x00\x005  
+SEQ1 \xc8\x00\x00\x0c
+SEQ4  \r\x00 \x02\x00\x00 J\r\x00 \x02\x00\x005  
+SEQ1 \x01\x00\x00\x0c
+SEQ4 \x80\r\x00 \x02\x00\x00 \xae\r\x00 \x02\x00\x005 \x1e\x02\x00 \x02\x00\x00\x03\x05\x00\x00TextWindowOnDirect SPC1 \x12\x0f\x00 \x02\x00\x005 \x1e\x02\x00 \x02\x00\x00\x03\x03\x00\x00TextClosev\x81\x1fF\x0f\x00 
 END_SCRIPT

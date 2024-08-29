@@ -1,6 +1,10 @@
 START_SCRIPT
-\xd6\x06\x01`B#\x01\x82\x05 APPLY_FILE .\\Data\\Script\\Bgm.Fob VAR1 \x06 APPlY_2 StopCD RUNF 0 END
-INIT_TEXT SCE094_001 L SCE_TEXT TEXT1 \x80\xa2 TEXT2 \x8e
+\xd6\x06\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\x82\x05\x00\x03\x06\x00\x00.\\Data\\Script\\Bgm.Fobv\x81\x1f\x06\x00\x00 
+SEQ2\x00\x00StopCD SPC1 0\x00\x00 
+SEQ6 SCE094_001\x00 L\x00\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \x80\xa2\x00\x0c
+SEQ5\x03\x8e\x00\x00
  
 御堂の眼に、獰猛なひかりが宿った。@
 \n御堂\n　「虎菱、まさかてめえまでいかれちまったんじゃねえだろうな\n　　？」@
@@ -11,13 +15,20 @@ INIT_TEXT SCE094_001 L SCE_TEXT TEXT1 \x80\xa2 TEXT2 \x8e
 拓司\n　「いま、ひとつルールを決めよう」@
 \n拓司はぴしゃりとさえぎった。\
 
-  
-INIT \x90\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF \xe8\x02 APPlY_2 TextOn RUNF \x16\x03 END
-INIT_TEXT SCE094_002 2\x03 SCE_TEXT TEXT1 \x84\xa2 TEXT2 P
+\x00\x00\x00  
+SEQ1 \x90\x00\x00\x0c
+SEQ4\x03\x07\x00\x00.\\Data\\Script\\TextFunc.Fob SPC1 \xe8\x02\x00 
+SEQ2\x00\x00TextOn SPC1 \x16\x03\x00 
+SEQ6 SCE094_002\x00 2\x03\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \x84\xa2\x00\x0c
+SEQ5\x03P\x00\x00
  
 拓司\n　「『ここを出ていきたい人間は、いつでもそれを実行すること\n　　ができる』。\pこれを最低限のルールにしよう。\p自殺波動とか、\n　　最終波動とか、ラジオからの指令電波とか、わからないこと\n　　が多すぎる。\p何が本当か分からない現状、何が正しい判断な\n　　のか、答は自分の中にしかない。\p自分で判断するんだ」\
 
-  
-INIT v\x03\x0c SET_VAR1 \xe8\x02 \x02 \x16\x03 END  
-INIT \xc8\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bg.Fob VAR2\n\x05 \x02 APPLY_4 BgAutoFadeIn VAR24\x05 END \xe8\x02 APPLY_3 TextClose VAR1 d\x05 END
+\x00  
+SEQ1 v\x03\x00\x0c
+SEQ4 \xe8\x02\x00 \x02\x00\x00 \x16\x03\x00 \x02\x00\x005  
+SEQ1 \xc8\x00\x00\x0c
+SEQ4\x03\x06\x00\x00.\\Data\\Script\\Bg.Fob SPC2 \n\x05\x00 \x02\x00\x00\x03\x04\x00\x00BgAutoFadeIn SPC2 4\x05\x00 \x02\x00\x005 \xe8\x02\x00 \x02\x00\x00\x03\x03\x00\x00TextClosev\x81\x1fd\x05\x00 
 END_SCRIPT

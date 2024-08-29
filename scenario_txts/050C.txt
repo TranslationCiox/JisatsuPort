@@ -1,9 +1,12 @@
 START_SCRIPT
-\xd3\x15\x01`B#\x01\x9e\x12
-INIT_TEXT SCE050_001 \x06 SCE_TEXT TEXT1 \xc0]\x0c"  
-INIT \x0c SET_VAR1  \x04
-INIT \x19\x0c SET_VAR1  \x08
-INIT \x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bgm.Fob VAR1 \x98 APPLY_3 SePlayEx VAR2\xc2 END\x03\x82
+\xd3\x15\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\x9e\x12\x00\x03\x03\x00\x00SCE050_001\x00 \x06\x00\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xc0]\x00\x0c
+SEQ5  
+SEQ1 \x00\x00\x00\x00\x0c
+SEQ4  \x04\x00\x00\r\x00\x00 \x19\x00\x00\x0c
+SEQ4  \x08\x00\x00\r\x00\x00 \x00\x00\x00\x00\x0c
+SEQ4\x03\x06\x00\x00.\\Data\\Script\\Bgm.Fobv\x81\x1f\x98\x00\x00 \x02\x00\x00\x03\x03\x00\x00SePlayEx SPC2 \xc2\x00\x00 \x02\x00\x005\x03\x82\x00\x00
  
 教室のドアをわずかにスライドさせる。@
 促されて、拓司はおそるおそる隙間から教室をのぞき込むが……\n中では授業が行われているだけだ。@
@@ -12,9 +15,14 @@ INIT \x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bgm.Fob VAR1 \x98 APPLY_3 SePlayE
 \n教師\n　「いいか。\p刃物を扱うわけだから少し怖い気もするかもしれん\n　　でもみんなで心をひとつにすれば大丈夫だ。\pこれはオレが常\n　　日頃いっていることだから、わかるな？\p　……よし。\pカッタ\n　　ーを持っていない者は、使い終わった者に借りるように。@
 　　これはテストには出ないが、重要なことだぞ」\
 
-  
-INIT \xe2\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF \n\x03 APPlY_2 TextOn RUNF 8\x03 END
-INIT_TEXT SCE050_002 T\x03 SCE_TEXT TEXT1 \xc4] TEXT2 o
+\x00  
+SEQ1 \xe2\x00\x00\x0c
+SEQ4\x03\x07\x00\x00.\\Data\\Script\\TextFunc.Fob SPC1 \n\x03\x00 
+SEQ2\x00\x00TextOn SPC1 8\x03\x00 
+SEQ6 SCE050_002\x00 T\x03\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xc4]\x00\x0c
+SEQ5\x03o\x00\x00
  
 　恰幅のいい教員はそこまでいうと、手に持っていたカッターを\n自分の喉に押し当て、スッと横に引いた。\p噴水のように血が吹き\n上がる。/*▲BGM　Track11　再生*/\a2,-1,11,1,@
 \n拓司\n　「！」@
@@ -23,9 +31,13 @@ INIT_TEXT SCE050_002 T\x03 SCE_TEXT TEXT1 \xc4] TEXT2 o
 教員の動きをトレースするように、学生たちが次々と自分の喉を\n掻き切っていった。@
 ためらいのかけらもない、完璧なアクションだった。\
 
-  
-INIT \x98\x03\x0c SET_VAR1 \n\x03 \x02 8\x03 END
-INIT_TEXT SCE050_003 \x8e\x05 SCE_TEXT TEXT1 \xc8] TEXT2 \xd9
+\x00\x00\x00  
+SEQ1 \x98\x03\x00\x0c
+SEQ4 \n\x03\x00 \x02\x00\x00 8\x03\x00 
+SEQ6 SCE050_003\x00 \x8e\x05\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xc8]\x00\x0c
+SEQ5\x03\xd9\x00\x00
  
 \n　いつかＴＶで見た、共産主義国家のマスゲーム。@
 　何千もの腕が同時に上げられ、振られ、下がる。@
@@ -37,9 +49,13 @@ INIT_TEXT SCE050_003 \x8e\x05 SCE_TEXT TEXT1 \xc8] TEXT2 \xd9
 ブシューッ、とも、ヒュウーッとも……なんの音もしなかった@
 なんの劇的さもなかった。\pただ、どたん、どたん、と、学生た\nちが机に突っ伏してゆく音だけが連続して聞こえて、それは単\n純に「奇妙」としかいえなかった。\p悲しい感じとか、不気味な感\nじとか、異常な感じとか……そんな、もっともらしい感想が入り\n込む余地はどこにもなかった。\pただ奇妙だった。\
 
-  
-INIT \xd2\x05\x0c SET_VAR1 \n\x03 \x02 8\x03 END
-INIT_TEXT SCE050_004 p\t SCE_TEXT TEXT1 \xcc] TEXT2 \x8f
+\x00\x00\x00  
+SEQ1 \xd2\x05\x00\x0c
+SEQ4 \n\x03\x00 \x02\x00\x00 8\x03\x00 
+SEQ6 SCE050_004\x00 p\t\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xcc]\x00\x0c
+SEQ5\x03\x8f\x00\x00
  
 　拓司は、ほうけたようにたねを見た。@
 　拓司の視線に気づいたなたねは、しかし平然としていった。@
@@ -47,18 +63,26 @@ INIT_TEXT SCE050_004 p\t SCE_TEXT TEXT1 \xcc] TEXT2 \x8f
 \n　どことなく、得意げな話し方だった。\p聞いていると、拓司の胸\nに、いいようのないいらつきが広がっていった。@
 \n拓司\n　「……もういいよ、雲居さん」\
 
-  
-INIT \xb4\t\x0c SET_VAR1 \n\x03 \x02 8\x03 END
-INIT_TEXT SCE050_005 *\x0c SCE_TEXT TEXT1 \xd0] TEXT2 c
+\x00  
+SEQ1 \xb4\t\x00\x0c
+SEQ4 \n\x03\x00 \x02\x00\x00 8\x03\x00 
+SEQ6 SCE050_005\x00 *\x0c\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xd0]\x00\x0c
+SEQ5\x03c\x00\x00
  
 なたね\n　「わかるかなあ？　いまの場合、先生が牽引役になっているわ\n　　けよね。\pハーメルンの笛吹き的な装置として。\p結局、みんな\n　　誰かに命令された方が楽なのよね。\p限定されない完全な自由\n　　というのは、逆説的に－－」@
 拓司\n　「黙れッ！」@
 \n　なたねは傷ついたように口をつぐみ、それから軽く肩をすくめ\n　た。@
 \nなたね\n　「広まるわよ。とまらないで広まる。\pみんな死ぬ」\
 
-  
-INIT n\x0c\x0c SET_VAR1 \n\x03 \x02 8\x03 END
-INIT_TEXT SCE050_006 4\x0e SCE_TEXT TEXT1 \xd4] TEXT2 d
+\x00\x00\x00  
+SEQ1 n\x0c\x00\x0c
+SEQ4 \n\x03\x00 \x02\x00\x00 8\x03\x00 
+SEQ6 SCE050_006\x00 4\x0e\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xd4]\x00\x0c
+SEQ5\x03d\x00\x00
  
 　拓司は頭を振った。\pなたねの言葉を頭から振り払う。@
 　いいか。@
@@ -70,9 +94,13 @@ INIT_TEXT SCE050_006 4\x0e SCE_TEXT TEXT1 \xd4] TEXT2 d
 　考えろ！@
 　何をすべきか！\
 
-  
-INIT x\x0e\x0c SET_VAR1 \n\x03 \x02 8\x03 END
-INIT_TEXT SCE050_007 B\x10 SCE_TEXT TEXT1 \xd8] TEXT2 c
+\x00\x00\x00  
+SEQ1 x\x0e\x00\x0c
+SEQ4 \n\x03\x00 \x02\x00\x00 8\x03\x00 
+SEQ6 SCE050_007\x00 B\x10\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xd8]\x00\x0c
+SEQ5\x03c\x00\x00
  
 \n　早桃。@
 　紅葉。@
@@ -82,6 +110,8 @@ INIT_TEXT SCE050_007 B\x10 SCE_TEXT TEXT1 \xd8] TEXT2 c
 　ここから一番近い教室といえば……早桃の教室だ。@
 　この３階廊下をまっすぐ行った突き当たりの教室に、早桃はい\n　る。\
 
-  
-INIT \x86\x10\x0c SET_VAR1 \n\x03 \x02 8\x03 END \x98 APPlY_2 StopCD RUNF X\x12 END \n\x03 APPLY_3 TextClose VAR1 \x80\x12 END
+\x00  
+SEQ1 \x86\x10\x00\x0c
+SEQ4 \n\x03\x00 \x02\x00\x00 8\x03\x00 \x02\x00\x005 \x98\x00\x00 
+SEQ2\x00\x00StopCD SPC1 X\x12\x00 \x02\x00\x005 \n\x03\x00 \x02\x00\x00\x03\x03\x00\x00TextClosev\x81\x1f\x80\x12\x00 
 END_SCRIPT

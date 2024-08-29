@@ -1,6 +1,8 @@
 START_SCRIPT
-\x9f\x0c\x01`B#\x01H\n
-INIT_TEXT SCE105_001 \x06 SCE_TEXT TEXT1 \xb0\xb3 TEXT2 \xb7
+\x9f\x0c\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00H\n\x00\x03\x03\x00\x00SCE105_001\x00 \x06\x00\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xb0\xb3\x00\x0c
+SEQ5\x03\xb7\x00\x00
  
 /*▲BGM　停止*/\a4,-1,0,0,/*■黒　表示（ノンエフェクト）*/\a7,-1,-1,0,\a0,200,1,0,\a6,0,0,0,拓司\n　「もういい、御堂！」@
 \n拓司は御堂を制した。@
@@ -11,9 +13,14 @@ INIT_TEXT SCE105_001 \x06 SCE_TEXT TEXT1 \xb0\xb3 TEXT2 \xb7
 御堂\n　「まだ覚悟が決まらねえのかよ、虎菱？」@
 拓司\n　「覚悟？\p……それは誰かを殺してでも生き残るってことか？」\
 
-  
-INIT J\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF F\x03 APPlY_2 TextOn RUNF t\x03 END
-INIT_TEXT SCE105_002 \x90\x03 SCE_TEXT TEXT1 \xb4\xb3 TEXT2 \x88
+\x00\x00\x00  
+SEQ1 J\x00\x00\x0c
+SEQ4\x03\x07\x00\x00.\\Data\\Script\\TextFunc.Fob SPC1 F\x03\x00 
+SEQ2\x00\x00TextOn SPC1 t\x03\x00 
+SEQ6 SCE105_002\x00 \x90\x03\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xb4\xb3\x00\x0c
+SEQ5\x03\x88\x00\x00
  
 御堂はしばらく無言だった。\pそれは、拓司の質問をかみ砕いて味\nわっているかのように見えた。\pやがて、御堂はなにかをいいかけ\nたが、思い立ったように言葉を飲み込んだ。@
 そして、ポツリと、粘り着くような口調でいった。@
@@ -23,9 +30,13 @@ INIT_TEXT SCE105_002 \x90\x03 SCE_TEXT TEXT1 \xb4\xb3 TEXT2 \x88
 頬の内側は、まるで砂漠みたいにカラカラだ。@
 拓司は舌先で唇を湿らせ、震える声でいった。\
 
-  
-INIT \xd4\x03\x0c SET_VAR1 F\x03 \x02 t\x03 END
-INIT_TEXT SCE105_003 .\x06 SCE_TEXT TEXT1 \xb8\xb3 TEXT2 q
+\x00\x00\x00  
+SEQ1 \xd4\x03\x00\x0c
+SEQ4 F\x03\x00 \x02\x00\x00 t\x03\x00 
+SEQ6 SCE105_003\x00 .\x06\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xb8\xb3\x00\x0c
+SEQ5\x03q\x00\x00
  
 拓司\n　「……雲居さん。\p俺たちは……覚悟を……決めている。@
 　　今後、そういう態度をなおしてもらえないようなら、今度こ\n　　そは俺も御堂を止められない……止める気もない」@
@@ -34,9 +45,13 @@ INIT_TEXT SCE105_003 .\x06 SCE_TEXT TEXT1 \xb8\xb3 TEXT2 q
 なたね\n　「……」@
 \nなたねはジロリと、上目遣いに拓司を睨んだ。\
 
-  
-INIT r\x06\x0c SET_VAR1 F\x03 \x02 t\x03 END
-INIT_TEXT SCE105_004 p\x08 SCE_TEXT TEXT1 \xbc\xb3 TEXT2 L
+\x00  
+SEQ1 r\x06\x00\x0c
+SEQ4 F\x03\x00 \x02\x00\x00 t\x03\x00 
+SEQ6 SCE105_004\x00 p\x08\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xbc\xb3\x00\x0c
+SEQ5\x03L\x00\x00
  
 なたね\n　「……」@
 拓司\n　「……」@
@@ -46,6 +61,7 @@ INIT_TEXT SCE105_004 p\x08 SCE_TEXT TEXT1 \xbc\xb3 TEXT2 L
 ざー。@
 /*▲SE01　停止*/\a4,2,0,0,\nラジオのノイズだけが小さく一晩中続いていた。\
 
-  
-INIT \xb4\x08\x0c SET_VAR1 F\x03 \x02 t\x03 END F\x03 APPLY_3 TextClose VAR1 *\n END
+\x00\x00\x00  
+SEQ1 \xb4\x08\x00\x0c
+SEQ4 F\x03\x00 \x02\x00\x00 t\x03\x00 \x02\x00\x005 F\x03\x00 \x02\x00\x00\x03\x03\x00\x00TextClosev\x81\x1f*\n\x00 
 END_SCRIPT

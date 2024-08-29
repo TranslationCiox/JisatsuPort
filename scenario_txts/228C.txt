@@ -1,13 +1,22 @@
 START_SCRIPT
-X.\x01`B#\x01\xf2&
-INIT_TEXT SCE228_001 \x06 SCE_TEXT TEXT1 \xe0s\x01 TEXT2 \x11
+X.\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xf2&\x00\x03\x03\x00\x00SCE228_001\x00 \x06\x00\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xe0s\x01\x0c
+SEQ5\x03\x11\x00\x00
  
 \n\n\n\n\n\n\n\n\n\n　　　　　　　　　　　　『１４日目』\
 
-  
-INIT J\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF \xae APPlY_2 TextOn RUNF \xdc END  
-INIT \t\x01\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bgm.Fob VAR1 \x12\x01 APPlY_2 PlayCD RUNF <\x01 END
-INIT_TEXT SCE228_002 X\x01 SCE_TEXT TEXT1 \xe4s\x01 TEXT2 O
+\x00\x00\x00  
+SEQ1 J\x00\x00\x0c
+SEQ4\x03\x07\x00\x00.\\Data\\Script\\TextFunc.Fob SPC1 \xae\x00\x00 
+SEQ2\x00\x00TextOn SPC1 \xdc\x00\x00 \x02\x00\x005  
+SEQ1 \t\x01\x00\x0c
+SEQ4\x03\x06\x00\x00.\\Data\\Script\\Bgm.Fobv\x81\x1f\x12\x01\x00 
+SEQ2\x00\x00PlayCD SPC1 <\x01\x00 
+SEQ6 SCE228_002\x00 X\x01\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xe4s\x01\x0c
+SEQ5\x03O\x00\x00
  
 御堂と錦城の次の標的は、早桃だった。@
 昼過ぎ、実験室に現れた御堂は一同を集め、いった。@
@@ -17,9 +26,13 @@ INIT_TEXT SCE228_002 X\x01 SCE_TEXT TEXT1 \xe4s\x01 TEXT2 O
 御堂\n　「セックスだよ」@
 拓司\n　「ふざけるな」\
 
-  
-INIT \x9c\x01\x0c SET_VAR1 \xae \x02 \xdc END
-INIT_TEXT SCE228_003 \x12\x03 SCE_TEXT TEXT1 \xe8s\x01 TEXT2 \x88
+\x00\x00\x00  
+SEQ1 \x9c\x01\x00\x0c
+SEQ4 \xae\x00\x00 \x02\x00\x00 \xdc\x00\x00 
+SEQ6 SCE228_003\x00 \x12\x03\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xe8s\x01\x0c
+SEQ5\x03\x88\x00\x00
  
 御堂\n　「ふざけてなんかいないさ。\pそんなかわいい子が家の中にいた\n　　ら、我慢できないのが普通だろうが。\p別に血が繋がってるわ\n　　けでもなし、超使い勝手がいい性欲処理道具じゃねえか。@
 　　それとも、モヤシッ子のおまえじゃ、度胸がなくてオナペッ\n　　トにするぐらいが関の山か？\p　……ふふふ」@
@@ -28,9 +41,13 @@ INIT_TEXT SCE228_003 \x12\x03 SCE_TEXT TEXT1 \xe8s\x01 TEXT2 \x88
 拓司\n　「なに？」@
 御堂\n　「ここでしてみせろよ。\p一回見てみたかったんだよな、そうい\n　　うのさ。\p……感謝しろよ。\pこんな機会でもなきゃ、義妹とセ\n　　ックスなんかできないぜ？」\
 
-  
-INIT V\x03\x0c SET_VAR1 \xae \x02 \xdc END
-INIT_TEXT SCE228_004 \xb0\x05 SCE_TEXT TEXT1 \xecs\x01 TEXT2 n
+\x00  
+SEQ1 V\x03\x00\x0c
+SEQ4 \xae\x00\x00 \x02\x00\x00 \xdc\x00\x00 
+SEQ6 SCE228_004\x00 \xb0\x05\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xecs\x01\x0c
+SEQ5\x03n\x00\x00
  
 拓司\n　「断る」@
 御堂\n　「そういう選択肢はお前にはねえんだよ。\pどっちかだ。@
@@ -42,9 +59,13 @@ INIT_TEXT SCE228_004 \xb0\x05 SCE_TEXT TEXT1 \xecs\x01 TEXT2 n
 \n拓司はいった。\p御堂になど、早桃を抱かせるわけにはいかない。@
 \n早桃\n　「おにいちゃん……」\
 
-  
-INIT \xf4\x05\x0c SET_VAR1 \xae \x02 \xdc END
-INIT_TEXT SCE228_005 \xe6\x07 SCE_TEXT TEXT1 \xf0s\x01 TEXT2 \x87
+\x00  
+SEQ1 \xf4\x05\x00\x0c
+SEQ4 \xae\x00\x00 \x02\x00\x00 \xdc\x00\x00 
+SEQ6 SCE228_005\x00 \xe6\x07\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xf0s\x01\x0c
+SEQ5\x03\x87\x00\x00
  
 拓司\n　「ごめんな。\p恨んでくれても構わない」@
 早桃\n　「ううん。いいの。\p早桃も、あんなヤツにされるより、おにい\n　　ちゃんのほうが……」@
@@ -54,9 +75,13 @@ INIT_TEXT SCE228_005 \xe6\x07 SCE_TEXT TEXT1 \xf0s\x01 TEXT2 \x87
 \n御堂\n　「おいおいおいおいおい！\p　誰がチンケなラブシーン見せろっ\n　　ていったよ！\p　俺は別に、お前らの禁じられた愛を成就する\n　　手伝いしてるんじゃねえんだよ」@
 早桃\n　「お、おにいちゃんッ？！\p　大丈夫、おにいちゃん！」\
 
-  
-INIT *\x08\x0c SET_VAR1 \xae \x02 \xdc END
-INIT_TEXT SCE228_006 \x80\n SCE_TEXT TEXT1 \xf4s\x01 TEXT2 \xaa
+\x00\x00  
+SEQ1 *\x08\x00\x0c
+SEQ4 \xae\x00\x00 \x02\x00\x00 \xdc\x00\x00 
+SEQ6 SCE228_006\x00 \x80\n\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xf4s\x01\x0c
+SEQ5\x03\xaa\x00\x00
  
 御堂\n　「嫌いなんだよね、俺。\pたかだか性欲処理にいろいろ理由くっ\n　　つけるやつらって。\p『愛しているから抱くんだよ』とか『お\n　　前だから勃起するんだよ』とかさ。\p男がそんな理屈で立つか\n　　よ！\p　マ○コ見りゃ立つんだろ！\p　虎菱、え、そうだろうが\n　　よ虎菱！\p　愛してるからじゃなくて、やりたいから立つんだ\n　　ろうがよお！」@
 拓司\n　「ぐっ……」@
@@ -65,9 +90,13 @@ INIT_TEXT SCE228_006 \x80\n SCE_TEXT TEXT1 \xf4s\x01 TEXT2 \xaa
 拓司\n　「……ゲス野郎！」@
 \n黙って様子を見ていた錦城が、あいだに割って入った。\
 
-  
-INIT \xc4\n\x0c SET_VAR1 \xae \x02 \xdc END
-INIT_TEXT SCE228_007 \xa6\r SCE_TEXT TEXT1 \xf8s\x01 TEXT2 \xa9
+\x00  
+SEQ1 \xc4\n\x00\x0c
+SEQ4 \xae\x00\x00 \x02\x00\x00 \xdc\x00\x00 
+SEQ6 SCE228_007\x00 \xa6\r\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xf8s\x01\x0c
+SEQ5\x03\xa9\x00\x00
  
 錦城\n　「ねえ、御堂くん。\p虎菱くんに、義妹さんをおかずにオナニー\n　　してもらったらどう？」@
 御堂\n　「ハハハ、そりゃあいい！\p　オナニーに愛なんざねえもんな」@
@@ -77,9 +106,13 @@ INIT_TEXT SCE228_007 \xa6\r SCE_TEXT TEXT1 \xf8s\x01 TEXT2 \xa9
 錦城\n　「いいわね、その声。\pきっとおにいちゃんも勃起するわよ。@
 　　もっと嫌がって頂戴。\p大切な義妹が嫌がっているにも関わら\n　　ず立つんだととしたら、それは愛で勃起してるんじゃないっ\n　　てことよねえ。\pくすくす」\
 
-  
-INIT \xea\r\x0c SET_VAR1 \xae \x02 \xdc END
-INIT_TEXT SCE228_008 \xc8\x10 SCE_TEXT TEXT1 \xfcs\x01 TEXT2 \x95
+\x00  
+SEQ1 \xea\r\x00\x0c
+SEQ4 \xae\x00\x00 \x02\x00\x00 \xdc\x00\x00 
+SEQ6 SCE228_008\x00 \xc8\x10\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xfcs\x01\x0c
+SEQ5\x03\x95\x00\x00
  
 早桃\n　「は、離してよお！」@
 錦城\n　「はいはい、あんよを開きましょうね。\p……ズボンも脱いで…\n　　…あら、下にブルマなんて履いてたのね？\p　……ねえ、御堂\n　　くん。\pブルマって、萌える？」@
@@ -87,9 +120,13 @@ INIT_TEXT SCE228_008 \xc8\x10 SCE_TEXT TEXT1 \xfcs\x01 TEXT2 \x95
 \n錦城は早桃を抱えたまま実験台の上に腰を下ろした。\p膝の上に早\n桃を腰掛けさせるような形にして、両足を下からすくい上げ、左\n右に開かせる。@
 むっちりとした白いふとももが、ブルマから生えている。\
 
-  
-INIT \x0c\x11\x0c SET_VAR1 \xae \x02 \xdc END
-INIT_TEXT SCE228_009 \x9a\x13 SCE_TEXT TEXT1 t\x01 TEXT2 \xa1
+\x00  
+SEQ1 \x0c\x11\x00\x0c
+SEQ4 \xae\x00\x00 \x02\x00\x00 \xdc\x00\x00 
+SEQ6 SCE228_009\x00 \x9a\x13\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \x00t\x01\x0c
+SEQ5\x03\xa1\x00\x00
  
 錦城\n　「あら、早桃ちゃん。\pずいぶんふっくらしたおま○こなのねえ。\n　　\pこんな可愛い顔しているのに、いやらしい身体だわ、本当に」\n\p早桃\n　「や、やああ」@
 錦城\n　「そりゃいやよねえ。\pみんなの前で両足拡げられて、盛り上が\n　　ったブルマおま○こをおにいちゃんに見せつけてるんだもの。\n　　\p……御堂くん、虎菱くんにしっかり見せてあげるのよ」@
@@ -98,9 +135,13 @@ INIT_TEXT SCE228_009 \x9a\x13 SCE_TEXT TEXT1 t\x01 TEXT2 \xa1
 早桃\n　「ひっ？！」@
 錦城\n　「あらあら、敏感ねえ。\pこうやってゆっくり撫でてると……あ\n　　ら、なんだか湿ってるみたいだけど？」\
 
-  
-INIT \xde\x13\x0c SET_VAR1 \xae \x02 \xdc END
-INIT_TEXT SCE228_010 \x9c\x16 SCE_TEXT TEXT1 \x04t\x01 TEXT2 \xa4
+\x00  
+SEQ1 \xde\x13\x00\x0c
+SEQ4 \xae\x00\x00 \x02\x00\x00 \xdc\x00\x00 
+SEQ6 SCE228_010\x00 \x9c\x16\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \x04t\x01\x0c
+SEQ5\x03\xa4\x00\x00
  
 早桃\n　「そ、そんなことないっ！」@
 錦城\n　「ウソおっしゃい。\p虎菱くん、あなたの義妹さん、ブルマの上\n　　から触られただけで濡れてるわよ？\p　すごいわ、この子……\n　　ほうら、きもちいい？\p……いやだわ、見える？\p　指に糸引い\n　　てるわよ？\p　信じられないわ。この様子じゃ、下着はもうぐ\n　　っしょりなんじゃない？\p　そろそろブルマにも恥ずかしい染\n　　みが……」@
@@ -109,9 +150,13 @@ INIT_TEXT SCE228_010 \x9c\x16 SCE_TEXT TEXT1 \x04t\x01 TEXT2 \xa4
 \nいわれるまでもなく、拓司は自分が勃起していることに気づいて\nいた。@
 理性では押さえきれない動物的な興奮が、頭の中で膨れ上がって\n爆発寸前だった。\
 
-  
-INIT \xe0\x16\x0c SET_VAR1 \xae \x02 \xdc END
-INIT_TEXT SCE228_011 \xaa\x19 SCE_TEXT TEXT1 \x08t\x01 TEXT2 \xae
+\x00  
+SEQ1 \xe0\x16\x00\x0c
+SEQ4 \xae\x00\x00 \x02\x00\x00 \xdc\x00\x00 
+SEQ6 SCE228_011\x00 \xaa\x19\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \x08t\x01\x0c
+SEQ5\x03\xae\x00\x00
  
 御堂\n　「おかしいよなあ。\p愛があるんなら勃起しねえはずだよなあ？@
 　　愛してる義妹があんなに嫌がってんだぜ？\p　どうして立つん\n　　だよ？\p　ああ？\p　興奮してんだろ？\p　チ○ポさしこみたくて\n　　仕方ねえんだろ？」@
@@ -122,9 +167,13 @@ INIT_TEXT SCE228_011 \xaa\x19 SCE_TEXT TEXT1 \x08t\x01 TEXT2 \xae
 義妹の目の前で、勃起した性器を晒す義兄。@
 両者とも、うつむいて目を合わせまいとしている。\pしかし両者と\nも、互いの淫らな姿に興奮しきっている……。\
 
-  
-INIT \xee\x19\x0c SET_VAR1 \xae \x02 \xdc END
-INIT_TEXT SCE228_012 \xe0\x1c SCE_TEXT TEXT1 \x0ct\x01 TEXT2 \xf2
+\x00\x00\x00  
+SEQ1 \xee\x19\x00\x0c
+SEQ4 \xae\x00\x00 \x02\x00\x00 \xdc\x00\x00 
+SEQ6 SCE228_012\x00 \xe0\x1c\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \x0ct\x01\x0c
+SEQ5\x03\xf2\x00\x00
  
 その後のことを、拓司は断片的にしか覚えていない。@
 すべては夢の中で起こったことのように思える……いや、そう思\nいたかった。@
@@ -139,8 +188,12 @@ INIT_TEXT SCE228_012 \xe0\x1c SCE_TEXT TEXT1 \x0ct\x01 TEXT2 \xf2
 涙を流しながら錦城は笑っていた。\
 
   
-INIT $\x1d\x0c SET_VAR1 \xae \x02 \xdc END
-INIT_TEXT SCE228_013 &! SCE_TEXT TEXT1 \x10t\x01 TEXT2 \x91
+SEQ1 $\x1d\x00\x0c
+SEQ4 \xae\x00\x00 \x02\x00\x00 \xdc\x00\x00 
+SEQ6 SCE228_013\x00 &!\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \x10t\x01\x0c
+SEQ5\x03\x91\x00\x00
  
 御堂はその一部始終を笑いながら眺めていた。しかし常に拓司に\n目をくばっているあたり、あくまで冷静だった。@
 \n御堂\n　「あー面白かった。\pんじゃ、明日はお前だからな。\pマ○コ洗っ\n　　て待ってろよ」@
@@ -153,17 +206,23 @@ INIT_TEXT SCE228_013 &! SCE_TEXT TEXT1 \x10t\x01 TEXT2 \x91
 立ちつくす拓司たちの前で、雲居なたねが高く笑った。\
 
   
-INIT j!\x0c SET_VAR1 \xae \x02 \xdc END
-INIT_TEXT SCE228_014 \xe8# SCE_TEXT TEXT1 \x14t\x01 TEXT2 w
+SEQ1 j!\x00\x0c
+SEQ4 \xae\x00\x00 \x02\x00\x00 \xdc\x00\x00 
+SEQ6 SCE228_014\x00 \xe8#\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \x14t\x01\x0c
+SEQ5\x03w\x00\x00
  
 なたね\n　「あはははははははは！\p　敵を拘束するときは身体検査くらい\n　　するのが常識だろうがこの民間人！\p　戦士である私が、武器\n　　のひとつくらい隠し持っていないとでも思ったかひっつき星\n　　人！\p　これがただの畳針だと思うなよ。\pこれはテスラ式処置\n　　を施して電流を流した特別製の次元毒針だ！\p　物理的ダメー\n　　ジを超えて存在自体にダメージを与えるからお前みたいな宇\n　　宙人にも効果てきめんだ！\p　思い知ったか！\p　思い知ったか\n　　あああああああ！」\
 
-  
-INIT ,$\x0c SET_VAR1 \xae \x02 \xdc END\x03\x13
+\x00\x00\x00  
+SEQ1 ,$\x00\x0c
+SEQ4 \xae\x00\x00 \x02\x00\x00 \xdc\x00\x00 \x02\x00\x005\x03\x13\x00\x00
 CHOICE
 拓司は御堂に躍りかかった\n拓司は凍り付いたまま動かなかった\n\l0,2,
 ENDCHOICE
 
-  
-INIT B&\x0c SET_VAR1 \xae \x02 \xdc END \xae APPLY_3 TextClose VAR1 \xd4& END
+\x00  
+SEQ1 B&\x00\x0c
+SEQ4 \xae\x00\x00 \x02\x00\x00 \xdc\x00\x00 \x02\x00\x005 \xae\x00\x00 \x02\x00\x00\x03\x03\x00\x00TextClosev\x81\x1f\xd4&\x00 
 END_SCRIPT

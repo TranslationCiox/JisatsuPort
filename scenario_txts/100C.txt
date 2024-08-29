@@ -1,14 +1,21 @@
 START_SCRIPT
-\xbf\x06\x01`B#\x01T\x05
-INIT_TEXT SCE100_001 \x06 SCE_TEXT TEXT1 \xe0\xab TEXT2 q
+\xbf\x06\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00T\x05\x00\x03\x03\x00\x00SCE100_001\x00 \x06\x00\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xe0\xab\x00\x0c
+SEQ5\x03q\x00\x00
  
 拓司\n　「雲居さんにいっておきたいことがある」@
 なたね\n　「……」@
 拓司\n　「宇宙人とか電波とか、そういった話はみんなの前では控えて\n　　ほしい。\pそれでなくてもみんな不安なんだ。\pそういう……わ\n　　けのわからないことをいわれると、神経に響く。\pそしてもう\n　　ひとつ。\p早桃に限らず、誰かをスパイ呼ばわりするようなマ\n　　ネは金輪際やめてくれ。\pそれは雲居さんのいう、団結を乱\n　　す行為そのものだ。\p内部崩壊の引き金になりかねない」\
 
-  
-INIT J\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF .\x02 APPlY_2 TextOn RUNF \\\x02 END
-INIT_TEXT SCE100_002 x\x02 SCE_TEXT TEXT1 \xe4\xab TEXT2 \x8d
+\x00  
+SEQ1 J\x00\x00\x0c
+SEQ4\x03\x07\x00\x00.\\Data\\Script\\TextFunc.Fob SPC1 .\x02\x00 
+SEQ2\x00\x00TextOn SPC1 \\\x02\x00 
+SEQ6 SCE100_002\x00 x\x02\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xe4\xab\x00\x0c
+SEQ5\x03\x8d\x00\x00
  
 早桃\n　「そうよ、そうよ！」@
 拓司\n　「……。\p早桃にもいっておく。\pいいかい、早桃。\pみんな怖いん\n　　だ。\pみんな叫びたいんだ。\pでも、我慢している。\pだから、お\n　　前も我慢しなくちゃいけない」@
@@ -18,6 +25,7 @@ INIT_TEXT SCE100_002 x\x02 SCE_TEXT TEXT1 \xe4\xab TEXT2 \x8d
 ザアザアアアアアアア……@
 /*▲SE01　停止*/\a4,2,0,0,\nただ黙ってラジオの前に戻って、一日中、耳を貼り付かせるよう\nにしてノイズに聞き入っていた。\
 
-  
-INIT \xbc\x02\x0c SET_VAR1 .\x02 \x02 \\\x02 END .\x02 APPLY_3 TextClose VAR1 6\x05 END
+\x00\x00\x00  
+SEQ1 \xbc\x02\x00\x0c
+SEQ4 .\x02\x00 \x02\x00\x00 \\\x02\x00 \x02\x00\x005 .\x02\x00 \x02\x00\x00\x03\x03\x00\x00TextClosev\x81\x1f6\x05\x00 
 END_SCRIPT

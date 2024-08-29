@@ -1,7 +1,11 @@
 START_SCRIPT
-f\x03\x01p\x044\x01\xd6\x02  
-INIT \xc9\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bg.Fob VAR2  \x02 APPLY_4 BgAutoFadeIn VAR2J END
-INIT_TEXT SCE203_001 n SCE_TEXT TEXT1 \xd0L\x01 TEXT2 d
+f\x03\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00p\x044\x01\x00\x00\x00\xd6\x02\x00  
+SEQ1 \xc9\x00\x00\x0c
+SEQ4\x03\x06\x00\x00.\\Data\\Script\\Bg.Fob SPC2  \x00\x00 \x02\x00\x00\x03\x04\x00\x00BgAutoFadeIn SPC2 J\x00\x00 
+SEQ6 SCE203_001\x00 n\x00\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xd0L\x01\x0c
+SEQ5\x03d\x00\x00
  
 ナタネ\n　「あなたは『創る』ことができる。@
 　　神様が光を創ったように、あなたは鳥を創ることができる。@
@@ -9,6 +13,8 @@ INIT_TEXT SCE203_001 n SCE_TEXT TEXT1 \xd0L\x01 TEXT2 d
 　　だからあなたに、ニセモノの認識を与えて、あなたを支配し\n　　ようとしている。\pあなたはかわいそうな病人で、あなたは\n　　『創る』ことなどできない。@
 　　そういうふうに信じ込ませようとして、そしてそれは成功し\n　　つつある……いいわね？」\
 
-  
-INIT \xb2\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF b\x02 APPlY_2 TextOn RUNF \x90\x02 END b\x02 APPLY_3 TextClose VAR1 \xb8\x02 END
+\x00\x00\x00  
+SEQ1 \xb2\x00\x00\x0c
+SEQ4\x03\x07\x00\x00.\\Data\\Script\\TextFunc.Fob SPC1 b\x02\x00 
+SEQ2\x00\x00TextOn SPC1 \x90\x02\x00 \x02\x00\x005 b\x02\x00 \x02\x00\x00\x03\x03\x00\x00TextClosev\x81\x1f\xb8\x02\x00 
 END_SCRIPT

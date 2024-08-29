@@ -1,7 +1,12 @@
 START_SCRIPT
-\n\x08\x01`B#\x01@\x06  
-INIT \x08\x01\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bgm.Fob VAR1   APPlY_2 PlayCD RUNF J END
-INIT_TEXT SCE039_001 f SCE_TEXT TEXT1 \x90L TEXT2 N
+\n\x08\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00@\x06\x00  
+SEQ1 \x08\x01\x00\x0c
+SEQ4\x03\x06\x00\x00.\\Data\\Script\\Bgm.Fobv\x81\x1f \x00\x00 
+SEQ2\x00\x00PlayCD SPC1 J\x00\x00 
+SEQ6 SCE039_001\x00 f\x00\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \x90L\x00\x0c
+SEQ5\x03N\x00\x00
  
 拓司\n　「早桃は、どうなんだ？」@
 \n引き返すことができない場所へと、話題が転がっていることには\n気づいていた。@
@@ -12,9 +17,14 @@ INIT_TEXT SCE039_001 f SCE_TEXT TEXT1 \x90L TEXT2 N
 \n早桃\n　「おにいちゃん」@
 拓司\n　「……」\
 
-  
-INIT \xaa\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF \x02\x02 APPlY_2 TextOn RUNF 0\x02 END
-INIT_TEXT SCE039_002 L\x02 SCE_TEXT TEXT1 \x94L TEXT2 W
+\x00\x00\x00  
+SEQ1 \xaa\x00\x00\x0c
+SEQ4\x03\x07\x00\x00.\\Data\\Script\\TextFunc.Fob SPC1 \x02\x02\x00 
+SEQ2\x00\x00TextOn SPC1 0\x02\x00 
+SEQ6 SCE039_002\x00 L\x02\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \x94L\x00\x0c
+SEQ5\x03W\x00\x00
  
 あまりにもあっさりとした口調だったので、拓司は早桃がそれを\n冗談として処理しようとしているのかと思った。@
 しかし、拓司を正面から見据える早桃の表情は、真剣そのものだ\nった。@
@@ -24,9 +34,13 @@ INIT_TEXT SCE039_002 L\x02 SCE_TEXT TEXT1 \x94L TEXT2 W
 早桃\n　「わざとなの」@
 拓司\n　「？」\
 
-  
-INIT \x90\x02\x0c SET_VAR1 \x02\x02 \x02 0\x02 END
-INIT_TEXT SCE039_003 &\x04 SCE_TEXT TEXT1 \x98L TEXT2 >
+\x00\x00\x00  
+SEQ1 \x90\x02\x00\x0c
+SEQ4 \x02\x02\x00 \x02\x00\x00 0\x02\x00 
+SEQ6 SCE039_003\x00 &\x04\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \x98L\x00\x0c
+SEQ5\x03>\x00\x00
  
 早桃\n　「わざとドアを開けておいたの。@
 　　おにいちゃんに見てもらおうと思って。@
@@ -34,12 +48,14 @@ INIT_TEXT SCE039_003 &\x04 SCE_TEXT TEXT1 \x98L TEXT2 >
 　　おにいちゃんに見てもらって、早桃の気持ちを伝えようって\n　　思ったの」@
 拓司\n　「……早桃」@
 \z
-  
-INIT j\x04\x0c SET_VAR1 \x02\x02 \x02 0\x02 END\x03\x10
+\x00  
+SEQ1 j\x04\x00\x0c
+SEQ4 \x02\x02\x00 \x02\x00\x00 0\x02\x00 \x02\x00\x005\x03\x10\x00\x00
 CHOICE
 義兄として好きだという\n男として好きだという\n\l0,2,
 ENDCHOICE
 
-  
-INIT \x9c\x05\x0c SET_VAR1 \x02\x02 \x02 0\x02 END \x02\x02 APPLY_3 TextClose VAR1 "\x06 END
+\x00\x00\x00  
+SEQ1 \x9c\x05\x00\x0c
+SEQ4 \x02\x02\x00 \x02\x00\x00 0\x02\x00 \x02\x00\x005 \x02\x02\x00 \x02\x00\x00\x03\x03\x00\x00TextClosev\x81\x1f"\x06\x00 
 END_SCRIPT

@@ -1,8 +1,14 @@
 START_SCRIPT
-\xaa\n\x01`B#\x01d\x08  
-INIT H\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bg.Fob VAR2  \x02 APPLY_4 BgAutoFadeIn VAR2J END  
-INIT \x05\x01\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bgm.Fob VAR1 \x88 APPlY_2 PlayCD RUNF \xb2 END
-INIT_TEXT SCE005_001 \xce SCE_TEXT TEXT1 p\x17 TEXT2 H
+\xaa\n\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00d\x08\x00  
+SEQ1 H\x00\x00\x0c
+SEQ4\x03\x06\x00\x00.\\Data\\Script\\Bg.Fob SPC2  \x00\x00 \x02\x00\x00\x03\x04\x00\x00BgAutoFadeIn SPC2 J\x00\x00 \x02\x00\x005  
+SEQ1 \x05\x01\x00\x0c
+SEQ4\x03\x06\x00\x00.\\Data\\Script\\Bgm.Fobv\x81\x1f\x88\x00\x00 
+SEQ2\x00\x00PlayCD SPC1 \xb2\x00\x00 
+SEQ6 SCE005_001\x00 \xce\x00\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 p\x17\x00\x0c
+SEQ5\x03H\x00\x00
  
 早桃\n　「……おにいちゃん？」@
 \n枕から軽く頭を持ち上げて、足元を見る。@
@@ -11,9 +17,14 @@ INIT_TEXT SCE005_001 \xce SCE_TEXT TEXT1 p\x17 TEXT2 H
 おかしいな、と拓司は思った。@
 なぜなら夜風なんか、これっぽっちも吹いていないじゃないか。\
 
-  
-INIT \x12\x01\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF R\x02 APPlY_2 TextOn RUNF \x80\x02 END
-INIT_TEXT SCE005_002 \x9c\x02 SCE_TEXT TEXT1 t\x17 TEXT2 ^
+\x00\x00\x00  
+SEQ1 \x12\x01\x00\x0c
+SEQ4\x03\x07\x00\x00.\\Data\\Script\\TextFunc.Fob SPC1 R\x02\x00 
+SEQ2\x00\x00TextOn SPC1 \x80\x02\x00 
+SEQ6 SCE005_002\x00 \x9c\x02\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 t\x17\x00\x0c
+SEQ5\x03^\x00\x00
  
 拓司\n　「……妄想か？」@
 \n拓司の問いには応えず、早桃は抑揚のない口調でいった。@
@@ -26,9 +37,13 @@ INIT_TEXT SCE005_002 \x9c\x02 SCE_TEXT TEXT1 t\x17 TEXT2 ^
 拓司\n　「……妄想に意味なんてないからか？」@
 早桃\n　「たぶん」\
 
-  
-INIT \xe0\x02\x0c SET_VAR1 R\x02 \x02 \x80\x02 END
-INIT_TEXT SCE005_003 \x92\x04 SCE_TEXT TEXT1 x\x17 TEXT2 \xa8
+\x00\x00\x00  
+SEQ1 \xe0\x02\x00\x0c
+SEQ4 R\x02\x00 \x02\x00\x00 \x80\x02\x00 
+SEQ6 SCE005_003\x00 \x92\x04\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 x\x17\x00\x0c
+SEQ5\x03\xa8\x00\x00
  
 早桃から立ち上る熱気のようなものが、重い夏の空気を微かに歪\nませている。@
 くちびるはわずかに開き、つるりと光っている。@
@@ -42,12 +57,14 @@ INIT_TEXT SCE005_003 \x92\x04 SCE_TEXT TEXT1 x\x17 TEXT2 \xa8
 手には、くしゃっと丸まった白い下着。@
 早桃はそれを自分の鼻先に持っていき、すうっと、息を吸い込ん\nだ。\
 
-  
-INIT \xd6\x04\x0c SET_VAR1 R\x02 \x02 \x80\x02 END\x03\x14
+\x00  
+SEQ1 \xd6\x04\x00\x0c
+SEQ4 R\x02\x00 \x02\x00\x00 \x80\x02\x00 \x02\x00\x005\x03\x14\x00\x00
 CHOICE
 「……出て行け」と拓司はいった\n「……来いよ」と拓司はいった\n\l0,2,
 ENDCHOICE
 
-  
-INIT \xb0\x07\x0c SET_VAR1 R\x02 \x02 \x80\x02 END R\x02 APPLY_3 TextClose VAR1 F\x08 END
+\x00\x00\x00  
+SEQ1 \xb0\x07\x00\x0c
+SEQ4 R\x02\x00 \x02\x00\x00 \x80\x02\x00 \x02\x00\x005 R\x02\x00 \x02\x00\x00\x03\x03\x00\x00TextClosev\x81\x1fF\x08\x00 
 END_SCRIPT

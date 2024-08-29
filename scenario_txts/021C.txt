@@ -1,14 +1,24 @@
 START_SCRIPT
-|\x0b\x01`B#\x01\n\t
-INIT_TEXT SCE021_001 \x06 SCE_TEXT TEXT1 p0 TEXT2 \x10
+|\x0b\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\n\t\x00\x03\x03\x00\x00SCE021_001\x00 \x06\x00\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 p0\x00\x0c
+SEQ5\x03\x10\x00\x00
  
 \n\n\n\n\n\n\n\n\n\n　　　　　　　　　『学校／四限』\
 
-  
-INIT J\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF \xaa APPlY_2 TextOn RUNF \xd8 END  
-INIT \x05\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bg.Fob VAR2\x0e\x01 \x02 APPLY_4 BgAutoFadeIn VAR28\x01 END  
-INIT \x08\x01\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bgm.Fob VAR1 v\x01 APPlY_2 PlayCD RUNF \xa0\x01 END
-INIT_TEXT SCE021_002 \xbc\x01 SCE_TEXT TEXT1 t0 TEXT2 q
+\x00\x00\x00  
+SEQ1 J\x00\x00\x0c
+SEQ4\x03\x07\x00\x00.\\Data\\Script\\TextFunc.Fob SPC1 \xaa\x00\x00 
+SEQ2\x00\x00TextOn SPC1 \xd8\x00\x00 \x02\x00\x005  
+SEQ1 \x05\x00\x00\x0c
+SEQ4\x03\x06\x00\x00.\\Data\\Script\\Bg.Fob SPC2 \x0e\x01\x00 \x02\x00\x00\x03\x04\x00\x00BgAutoFadeIn SPC2 8\x01\x00 \x02\x00\x005  
+SEQ1 \x08\x01\x00\x0c
+SEQ4\x03\x06\x00\x00.\\Data\\Script\\Bgm.Fobv\x81\x1fv\x01\x00 
+SEQ2\x00\x00PlayCD SPC1 \xa0\x01\x00 
+SEQ6 SCE021_002\x00 \xbc\x01\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 t0\x00\x0c
+SEQ5\x03q\x00\x00
  
 　拓司にとって、朝が一番鮮やかな時間だ。@
 　時間が経つにつれて、世界の色があせてゆく。@
@@ -23,10 +33,15 @@ INIT_TEXT SCE021_002 \xbc\x01 SCE_TEXT TEXT1 t0 TEXT2 q
 　逃げられない。@
 　悲鳴をあげることしかできない。\
 
-  
-INIT \x02\x0c SET_VAR1 \xaa \x02 \xd8 END  
-INIT \xc8\x0c SET_VAR1 \x0e\x01 \x02 8\x01 END
-INIT_TEXT SCE021_003 2\x04 SCE_TEXT TEXT1 x0 TEXT2 ~
+\x00\x00\x00  
+SEQ1 \x00\x02\x00\x0c
+SEQ4 \xaa\x00\x00 \x02\x00\x00 \xd8\x00\x00 \x02\x00\x005  
+SEQ1 \xc8\x00\x00\x0c
+SEQ4 \x0e\x01\x00 \x02\x00\x00 8\x01\x00 
+SEQ6 SCE021_003\x00 2\x04\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 x0\x00\x0c
+SEQ5\x03~\x00\x00
  
 \n　－－死んじまおうかなあ。@
 \n　拓司はすでに口癖となったその言葉を、呪文のように頭のなかで\n　繰り返した。@
@@ -38,9 +53,13 @@ INIT_TEXT SCE021_003 2\x04 SCE_TEXT TEXT1 x0 TEXT2 ~
 　－－そのうち、死にすら、この鈍いひりつきを……真実の痛みを\n　感じられなくなってしまうのではないか？@
 　のどの奥から、吐瀉物のような恐怖が込み上がってくる。@
 \z
-  
-INIT v\x04\x0c SET_VAR1 \xaa \x02 \xd8 END
-INIT_TEXT SCE021_004 \xa8\x06 SCE_TEXT TEXT1 |0 TEXT2 Q
+\x00\x00\x00  
+SEQ1 v\x04\x00\x0c
+SEQ4 \xaa\x00\x00 \x02\x00\x00 \xd8\x00\x00 
+SEQ6 SCE021_004\x00 \xa8\x06\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 |0\x00\x0c
+SEQ5\x03Q\x00\x00
  
 \n　死んじまおうかなあ。@
 　死んじまおうかなあ。@
@@ -49,12 +68,14 @@ INIT_TEXT SCE021_004 \xa8\x06 SCE_TEXT TEXT1 |0 TEXT2 Q
 　真剣に自殺を考えるくらいの、モラルに反した妄想が。@
 　拓司は自分の大切な人を……妄想の檻の中に……ゆっくりと囲っ\n　ていった。\
 
-  
-INIT \xec\x06\x0c SET_VAR1 \xaa \x02 \xd8 END\x03\x0f
+\x00  
+SEQ1 \xec\x06\x00\x0c
+SEQ4 \xaa\x00\x00 \x02\x00\x00 \xd8\x00\x00 \x02\x00\x005\x03\x0f\x00\x00
 CHOICE
 早桃を妄想の中で犯す\n紅葉を想像の中で犯す\n\l0,2,
 ENDCHOICE
 
-  
-INIT j\x08\x0c SET_VAR1 \xaa \x02 \xd8 END \xaa APPLY_3 TextClose VAR1 \xec\x08 END
+\x00  
+SEQ1 j\x08\x00\x0c
+SEQ4 \xaa\x00\x00 \x02\x00\x00 \xd8\x00\x00 \x02\x00\x005 \xaa\x00\x00 \x02\x00\x00\x03\x03\x00\x00TextClosev\x81\x1f\xec\x08\x00 
 END_SCRIPT

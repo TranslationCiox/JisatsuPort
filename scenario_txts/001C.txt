@@ -1,9 +1,17 @@
 START_SCRIPT
-\x10\x06\x01\xa4\t3\x01&\x05  
-INIT \xc8\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bg.Fob VAR2  \x02 APPLY_4 BgNormalFadeIn RUNF J END  
-INIT \xc8\x0c SET_VAR1 NULL APPlY_2 BgOn VAR2\x94 END  
-INIT \t\x01\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bgm.Fob VAR1 \xca APPlY_2 PlayCD RUNF \xf4 END
-INIT_TEXT SCE001_001 \x10\x01 SCE_TEXT TEXT1 0\x11 TEXT2 O
+\x10\x06\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xa4\t3\x01\x00\x00\x00&\x05\x00  
+SEQ1 \xc8\x00\x00\x0c
+SEQ4\x03\x06\x00\x00.\\Data\\Script\\Bg.Fob SPC2  \x00\x00 \x02\x00\x00\x03\x04\x00\x00BgNormalFadeIn SPC1 J\x00\x00 \x02\x00\x005  
+SEQ1 \xc8\x00\x00\x0c
+SEQ4  \x00\x00 
+SEQ2\x00\x00BgOn SPC2 \x94\x00\x00 \x02\x00\x005  
+SEQ1 \t\x01\x00\x0c
+SEQ4\x03\x06\x00\x00.\\Data\\Script\\Bgm.Fobv\x81\x1f\xca\x00\x00 
+SEQ2\x00\x00PlayCD SPC1 \xf4\x00\x00 
+SEQ6 SCE001_001\x00 \x10\x01\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 0\x11\x00\x0c
+SEQ5\x03O\x00\x00
  
 世界。@
 世界。@
@@ -17,9 +25,14 @@ INIT_TEXT SCE001_001 \x10\x01 SCE_TEXT TEXT1 0\x11 TEXT2 O
 世界定義にはでなのかによってきる？@
 きの世に義界はるなよっにて定でか？\
 
-  
-INIT T\x01\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF \xb0\x02 APPlY_2 TextOn RUNF \xde\x02 END
-INIT_TEXT SCE001_002 \xfa\x02 SCE_TEXT TEXT1 4\x11 TEXT2 a
+\x00\x00\x00  
+SEQ1 T\x01\x00\x0c
+SEQ4\x03\x07\x00\x00.\\Data\\Script\\TextFunc.Fob SPC1 \xb0\x02\x00 
+SEQ2\x00\x00TextOn SPC1 \xde\x02\x00 
+SEQ6 SCE001_002\x00 \xfa\x02\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 4\x11\x00\x0c
+SEQ5\x03a\x00\x00
  
 頭にぼんやりと薄い霧がかかっている。@
 ゲル化した思考が、ゆるゆると頭蓋を這って流れ落ちる。@
@@ -31,6 +44,7 @@ INIT_TEXT SCE001_002 \xfa\x02 SCE_TEXT TEXT1 4\x11 TEXT2 a
 さらにたとえば……なにか？@
 なにか？\
 
-  
-INIT >\x03\x0c SET_VAR1 \xb0\x02 CHOICE_FLAG_REQUIRED \xb0\x02 APPLY_3 TextClose VAR1 \x08\x05 END
+\x00\x00\x00  
+SEQ1 >\x03\x00\x0c
+SEQ4 \xb0\x02\x00 \x02\x00\x00 \xde\x02\x00 \x02\x00\x005 \xb0\x02\x00 \x02\x00\x00\x03\x03\x00\x00TextClosev\x81\x1f\x08\x05\x00 
 END_SCRIPT

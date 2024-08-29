@@ -1,6 +1,10 @@
 START_SCRIPT
-f\x10\x01`B#\x01.\r APPLY_FILE .\\Data\\Script\\Bgm.Fob VAR1 \x06 APPlY_2 StopCD RUNF 0 END
-INIT_TEXT SCE013_001 L SCE_TEXT TEXT1 \xf0# TEXT2 \x86
+f\x10\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00.\r\x00\x03\x06\x00\x00.\\Data\\Script\\Bgm.Fobv\x81\x1f\x06\x00\x00 
+SEQ2\x00\x00StopCD SPC1 0\x00\x00 
+SEQ6 SCE013_001\x00 L\x00\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xf0#\x00\x0c
+SEQ5\x03\x86\x00\x00
  
 拓司\n　「紅葉、ちょっと悪い」@
 紅葉\n　「え……あ……ウン」@
@@ -12,8 +16,13 @@ INIT_TEXT SCE013_001 L SCE_TEXT TEXT1 \xf0# TEXT2 \x86
 \n拓司\n　「早桃！　……あっ！」\
 
   
-INIT \x90\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF \xc8\x02 APPlY_2 TextOn RUNF \xf6\x02 END
-INIT_TEXT SCE013_002 \x12\x03 SCE_TEXT TEXT1 \xf4# TEXT2 \x97
+SEQ1 \x90\x00\x00\x0c
+SEQ4\x03\x07\x00\x00.\\Data\\Script\\TextFunc.Fob SPC1 \xc8\x02\x00 
+SEQ2\x00\x00TextOn SPC1 \xf6\x02\x00 
+SEQ6 SCE013_002\x00 \x12\x03\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xf4#\x00\x0c
+SEQ5\x03\x97\x00\x00
  
 /*【画面／演出】　車の急ブレーキ音　キキキキー！//　　　　　　　早桃、どしゃっと転倒する音。しばし間を取っ//てから*//*▲SE31　再生（再生終了まで待つ）*/\a2,0,31,0,\a3,0,0,0,\a4,0,0,0,運転手\n　「……バカヤロー！　死にてえのか！」@
 /*【画面／演出】　車が走り去っていく//■CG03　表示（クロスフェード）        //>CG03*/\a7,-2,-2,0,\a0,2,2,0,\a6,-2,0,0,拓司\n　「大丈夫か、早桃！」@
@@ -22,8 +31,12 @@ INIT_TEXT SCE013_002 \x12\x03 SCE_TEXT TEXT1 \xf4# TEXT2 \x97
 　駆け寄った拓司を無視して、早桃は黙々と荷物を拾い始めた。\
 
   
-INIT V\x03\x0c SET_VAR1 \xc8\x02 \x02 \xf6\x02 END
-INIT_TEXT SCE013_003 \xec\x05 SCE_TEXT TEXT1 \xf8# TEXT2 >
+SEQ1 V\x03\x00\x0c
+SEQ4 \xc8\x02\x00 \x02\x00\x00 \xf6\x02\x00 
+SEQ6 SCE013_003\x00 \xec\x05\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xf8#\x00\x0c
+SEQ5\x03>\x00\x00
  
 拓司\n　「大丈夫か、早桃？」　@
 早桃\n　「……」@
@@ -32,9 +45,13 @@ INIT_TEXT SCE013_003 \xec\x05 SCE_TEXT TEXT1 \xf8# TEXT2 >
 拓司\n　「どうしたってんだよ……あ？！」@
 \n　拓司は息を呑んだ。\n　キッと振り仰いだ早桃の瞳は、涙で泉のように潤んでいた。\
 
-  
-INIT 0\x06\x0c SET_VAR1 \xc8\x02 \x02 \xf6\x02 END
-INIT_TEXT SCE013_004 b\x07 SCE_TEXT TEXT1 \xfc# TEXT2 t
+\x00\x00\x00  
+SEQ1 0\x06\x00\x0c
+SEQ4 \xc8\x02\x00 \x02\x00\x00 \xf6\x02\x00 
+SEQ6 SCE013_004\x00 b\x07\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xfc#\x00\x0c
+SEQ5\x03t\x00\x00
  
 拓司\n　「早桃……」@
 早桃\n　「なんで？　なんで追っかけてくるの？」@
@@ -44,20 +61,29 @@ INIT_TEXT SCE013_004 b\x07 SCE_TEXT TEXT1 \xfc# TEXT2 t
 　　ずるいよ、おにいちゃん、知ってるくせに……見てたくせに\n　　！\p早桃が知らないと思ってるの？\p　知ってるんだよ？@
 　　おにいちゃんがどんなこと考えてるかなんて、全部わかって\n　　るんだから！」@
 \nそこまでいってから早桃は顔を覆い、わっと泣き始めた。\w\z
-  
-INIT \xa6\x07\x0c SET_VAR1 \xc8\x02 \x02 \xf6\x02 END
-INIT_TEXT SCE013_005 \xb0\t SCE_TEXT TEXT1 $ TEXT2 \x1a
+\x00  
+SEQ1 \xa6\x07\x00\x0c
+SEQ4 \xc8\x02\x00 \x02\x00\x00 \xf6\x02\x00 
+SEQ6 SCE013_005\x00 \xb0\t\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \x00$\x00\x0c
+SEQ5\x03\x1a\x00\x00
  
 /*■黒　表示（ノンエフェクト）*/\a7,-1,-1,0,\a0,200,1,0,\a6,0,0,0,早桃\n　「……ごめんなさい」\
 
-  
-INIT \xf4\t\x0c SET_VAR1 \xc8\x02 \x02 \xf6\x02 END
-INIT_TEXT SCE013_006 \x96\n SCE_TEXT TEXT1 \x04$ TEXT2 |
+\x00  
+SEQ1 \xf4\t\x00\x0c
+SEQ4 \xc8\x02\x00 \x02\x00\x00 \xf6\x02\x00 
+SEQ6 SCE013_006\x00 \x96\n\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \x04$\x00\x0c
+SEQ5\x03|\x00\x00
  
 /*【画面／演出】　早桃、タタタと駆け去ってゆく。代わって//紅葉、タタタと駆け寄ってくる。//▲SE20　再生（再生終了まで待つ）*/\a2,0,20,0,\a3,0,0,0,\a4,0,0,0,紅葉\n　「……どうしたの？」@
 拓司\n　「なんでもない。……なんでもないんだ」@
 \n　早桃の中でも、なにかが限界を迎えようとしている。\n　すでになにかが起こり始めていた。終わりに向けて、それはと\nどまることなく転がっていくのだろう。スイッチは押されてしま\nった。それは、目の前のあらゆるものをなぎ倒しながら、転がり\n続けていくのだ。@
 \z
   
-INIT \xda\n\x0c SET_VAR1 \xc8\x02 \x02 \xf6\x02 END \xc8\x02 APPLY_3 TextClose VAR1 \x10\r END
+SEQ1 \xda\n\x00\x0c
+SEQ4 \xc8\x02\x00 \x02\x00\x00 \xf6\x02\x00 \x02\x00\x005 \xc8\x02\x00 \x02\x00\x00\x03\x03\x00\x00TextClosev\x81\x1f\x10\r\x00 
 END_SCRIPT

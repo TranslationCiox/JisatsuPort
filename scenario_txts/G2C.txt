@@ -1,17 +1,29 @@
 START_SCRIPT
-\xdd\x06\x01`B#\x01\x94\x05  
-INIT C\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bg.Fob VAR2  \x02 APPLY_4 BgAutoFadeIn VAR2J END  
-INIT \x08\x01\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bgm.Fob VAR1 \x88 APPlY_2 PlayCD RUNF \xb2 END
-INIT_TEXT SCEG02_001 \xce SCE_TEXT TEXT1 H\xc5\x01 TEXT2 )
+\xdd\x06\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\x94\x05\x00  
+SEQ1 C\x00\x00\x0c
+SEQ4\x03\x06\x00\x00.\\Data\\Script\\Bg.Fob SPC2  \x00\x00 \x02\x00\x00\x03\x04\x00\x00BgAutoFadeIn SPC2 J\x00\x00 \x02\x00\x005  
+SEQ1 \x08\x01\x00\x0c
+SEQ4\x03\x06\x00\x00.\\Data\\Script\\Bgm.Fobv\x81\x1f\x88\x00\x00 
+SEQ2\x00\x00PlayCD SPC1 \xb2\x00\x00 
+SEQ6 SCEG02_001\x00 \xce\x00\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 H\xc5\x01\x0c
+SEQ5\x03)\x00\x00
  
 錦城\n　「……しっ！　私よ、虎菱くん」@
 拓司\n　「……先生？」@
 \n錦城は微かに笑うと、拓司の横へと体を移動させた。@
 寄り添って寝転がるような形になる。\w\z
-  
-INIT \x12\x01\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF \xd6\x01 APPlY_2 TextOn RUNF \x04\x02 END  
-INIT \xc8\x0c SET_VAR1 NULL \x02 J END
-INIT_TEXT SCEG02_002 T\x02 SCE_TEXT TEXT1 L\xc5\x01 TEXT2 2
+\x00  
+SEQ1 \x12\x01\x00\x0c
+SEQ4\x03\x07\x00\x00.\\Data\\Script\\TextFunc.Fob SPC1 \xd6\x01\x00 
+SEQ2\x00\x00TextOn SPC1 \x04\x02\x00 \x02\x00\x005  
+SEQ1 \xc8\x00\x00\x0c
+SEQ4  \x00\x00 \x02\x00\x00 J\x00\x00 
+SEQ6 SCEG02_002\x00 T\x02\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 L\xc5\x01\x0c
+SEQ5\x032\x00\x00
  
 錦城\n　「ちょっとお話がしたくて。いいかな？」@
 拓司\n　「……ええ、まあ」@
@@ -19,15 +31,20 @@ INIT_TEXT SCEG02_002 T\x02 SCE_TEXT TEXT1 L\xc5\x01 TEXT2 2
 拓司\n　「いえ……すみません」@
 錦城\n　「私……恥ずかしいわ」@
 拓司\n　「え？」\w\z
-  
-INIT \x98\x02\x0c SET_VAR1 \xd6\x01 \x02 \x04\x02 END
-INIT_TEXT SCEG02_003 \x9a\x03 SCE_TEXT TEXT1 P\xc5\x01 TEXT2 @
+\x00  
+SEQ1 \x98\x02\x00\x0c
+SEQ4 \xd6\x01\x00 \x02\x00\x00 \x04\x02\x00 
+SEQ6 SCEG02_003\x00 \x9a\x03\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 P\xc5\x01\x0c
+SEQ5\x03@\x00\x00
  
 錦城\n　「教師という仕事に就きながら、こういう状況では何もできな\n　　い。\p本当は私がみんなを導かなくちゃいけないのに。@
 　　あなたにまかせっきりで。恥ずかしいわ」@
 拓司\n　「……」@
 錦城\n　「私にできることって、なんなんだろうって考えたの」\w\z
-  
-INIT \xde\x03\x0c SET_VAR1 \xd6\x01 \x02 \x04\x02 END \xd6\x01 APPLY_3 TextClose VAR1 $\x05 END
-HERO .\\Data\\Script\\Scenario\\G2SubC.Fob VAR1 D\x05 APPlY_2 start VAR1 z\x05 END
+\x00  
+SEQ1 \xde\x03\x00\x0c
+SEQ4 \xd6\x01\x00 \x02\x00\x00 \x04\x02\x00 \x02\x00\x005 \xd6\x01\x00 \x02\x00\x00\x03\x03\x00\x00TextClosev\x81\x1f$\x05\x00 \x02\x00\x005\x03\t\x00\x00.\\Data\\Script\\Scenario\\G2SubC.Fobv\x81\x1fD\x05\x00 
+SEQ2\x00\x00startv\x81\x1fz\x05\x00 
 END_SCRIPT

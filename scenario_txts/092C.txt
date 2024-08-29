@@ -1,13 +1,23 @@
 START_SCRIPT
-I\x0e\x01`B#\x01\\\x0b APPLY_FILE .\\Data\\Script\\Bgm.Fob VAR1 \x06 APPlY_2 StopCD RUNF 0 END  
-INIT \xc8\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bg.Fob VAR2f \x02 APPLY_4 BgAutoFadeIn VAR2\x90 END
-INIT_TEXT SCE092_001 \xb4 SCE_TEXT TEXT1 `\x9f TEXT2 \x11
+I\x0e\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\\\x0b\x00\x03\x06\x00\x00.\\Data\\Script\\Bgm.Fobv\x81\x1f\x06\x00\x00 
+SEQ2\x00\x00StopCD SPC1 0\x00\x00 \x02\x00\x005  
+SEQ1 \xc8\x00\x00\x0c
+SEQ4\x03\x06\x00\x00.\\Data\\Script\\Bg.Fob SPC2 f\x00\x00 \x02\x00\x00\x03\x04\x00\x00BgAutoFadeIn SPC2 \x90\x00\x00 
+SEQ6 SCE092_001\x00 \xb4\x00\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 `\x9f\x00\x0c
+SEQ5\x03\x11\x00\x00
  
 \n\n\n\n\n\n\n\n\n\n　　　　　　　　　　　　　　『２日目』\
 
-  
-INIT \xf8\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF \\\x01 APPlY_2 TextOn RUNF \x8a\x01 END
-INIT_TEXT SCE092_002 \xa6\x01 SCE_TEXT TEXT1 d\x9f TEXT2 \x9b
+\x00  
+SEQ1 \xf8\x00\x00\x0c
+SEQ4\x03\x07\x00\x00.\\Data\\Script\\TextFunc.Fob SPC1 \\\x01\x00 
+SEQ2\x00\x00TextOn SPC1 \x8a\x01\x00 
+SEQ6 SCE092_002\x00 \xa6\x01\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 d\x9f\x00\x0c
+SEQ5\x03\x9b\x00\x00
  
 晴れ。@
 水の分配について、御堂が再びゴネはじめた。@
@@ -19,8 +29,12 @@ INIT_TEXT SCE092_002 \xa6\x01 SCE_TEXT TEXT1 d\x9f TEXT2 \x9b
 御堂\n　「なに？」\
 
   
-INIT \xea\x01\x0c SET_VAR1 \\\x01 \x02 \x8a\x01 END
-INIT_TEXT SCE092_003 \x90\x04 SCE_TEXT TEXT1 h\x9f TEXT2 \x9e
+SEQ1 \xea\x01\x00\x0c
+SEQ4 \\\x01\x00 \x02\x00\x00 \x8a\x01\x00 
+SEQ6 SCE092_003\x00 \x90\x04\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 h\x9f\x00\x0c
+SEQ5\x03\x9e\x00\x00
  
 なたね\n　「いえば、秩序の維持に多大な影響が出るからです。\pたとえば\n　　……たとえばですよ？\p　食糧の備蓄が３日分しかないと分か\n　　ったら、みなさんはどうしますか？」@
 御堂\n　「……」@
@@ -30,9 +44,13 @@ INIT_TEXT SCE092_003 \x90\x04 SCE_TEXT TEXT1 h\x9f TEXT2 \x9e
 \n生々しい言葉に、紅葉と早桃が顔をしかめる。@
 粘り着くような沈黙をおいて、御堂がいった。\
 
-  
-INIT \xd4\x04\x0c SET_VAR1 \\\x01 \x02 \x8a\x01 END
-INIT_TEXT SCE092_004 \x86\x07 SCE_TEXT TEXT1 l\x9f TEXT2 \x9f
+\x00\x00\x00  
+SEQ1 \xd4\x04\x00\x0c
+SEQ4 \\\x01\x00 \x02\x00\x00 \x8a\x01\x00 
+SEQ6 SCE092_004\x00 \x86\x07\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 l\x9f\x00\x0c
+SEQ5\x03\x9f\x00\x00
  
 御堂\n　「……３日分しかないってのは……本当なのか？」@
 なたね\n　「あくまでもたとえです」@
@@ -42,12 +60,14 @@ INIT_TEXT SCE092_004 \x86\x07 SCE_TEXT TEXT1 l\x9f TEXT2 \x9f
 なたねのいうことはもっともだった。\pこうしたサバイバルをあら\nかじめ想定していたなたねだからこそ、じりじりと確実に迫るリ\nミットのプレッシャーに耐えていられるのかもしれない。@
 しかし、なたねが口にした『３日』という具体的な例は、理屈を\n越えて一同の上に重くのしかかっていた。\p漠然と遠くに見ていた\n最後の日は、明日、やってくるかもしれないのだ……と。\
 
-  
-INIT \xca\x07\x0c SET_VAR1 \\\x01 \x02 \x8a\x01 END\x03 
+\x00\x00\x00  
+SEQ1 \xca\x07\x00\x0c
+SEQ4 \\\x01\x00 \x02\x00\x00 \x8a\x01\x00 \x02\x00\x005\x03 \x00\x00
 CHOICE
 「何日耐えられるのか、はっきりさせてほしい」と拓司はいった\n「雲居さんのいうとおりだ」と拓司はいった\n\l0,2,
 ENDCHOICE
 
-  
-INIT \x80\n\x0c SET_VAR1 \\\x01 \x02 \x8a\x01 END \\\x01 APPLY_3 TextClose VAR1 >\x0b END
+\x00\x00\x00  
+SEQ1 \x80\n\x00\x0c
+SEQ4 \\\x01\x00 \x02\x00\x00 \x8a\x01\x00 \x02\x00\x005 \\\x01\x00 \x02\x00\x00\x03\x03\x00\x00TextClosev\x81\x1f>\x0b\x00 
 END_SCRIPT

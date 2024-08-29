@@ -1,6 +1,8 @@
 START_SCRIPT
-\x9d\x03\x01@\x044\x01\xd8\x02
-INIT_TEXT SCE225_001 \x06 SCE_TEXT TEXT1 0o\x01 TEXT2 m
+\x9d\x03\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00@\x044\x01\x00\x00\x00\xd8\x02\x00\x03\x03\x00\x00SCE225_001\x00 \x06\x00\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 0o\x01\x0c
+SEQ5\x03m\x00\x00
  
 拓司は歯を食いしばった。@
 まだだ、と胸の中でうめいた。@
@@ -9,6 +11,9 @@ INIT_TEXT SCE225_001 \x06 SCE_TEXT TEXT1 0o\x01 TEXT2 m
 なにかはわからないが、おおきな契機とでもいうべきものが……\nくる。\pそんな確信があった。@
 すべてをうち崩すようななにかが、状況を粉々にするようななに\nかが、きっと起こる。\pそのときのために、俺はエネルギーを蓄積\nしなければならない。\pじっと耐えて、強烈な一撃を放つのだ……。\n\p拓司は野獣のように目を光らせて、無言だった。\
 
-  
-INIT J\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF \x1e\x02 APPlY_2 TextOn RUNF L\x02 END APPLY_FILE .\\Data\\Script\\Bgm.Fob VAR1 h\x02 APPlY_2 StopCD RUNF \x92\x02 END \x1e\x02 APPLY_3 TextClose VAR1 \xba\x02 END
+\x00\x00\x00  
+SEQ1 J\x00\x00\x0c
+SEQ4\x03\x07\x00\x00.\\Data\\Script\\TextFunc.Fob SPC1 \x1e\x02\x00 
+SEQ2\x00\x00TextOn SPC1 L\x02\x00 \x02\x00\x005\x03\x06\x00\x00.\\Data\\Script\\Bgm.Fobv\x81\x1fh\x02\x00 
+SEQ2\x00\x00StopCD SPC1 \x92\x02\x00 \x02\x00\x005 \x1e\x02\x00 \x02\x00\x00\x03\x03\x00\x00TextClosev\x81\x1f\xba\x02\x00 
 END_SCRIPT

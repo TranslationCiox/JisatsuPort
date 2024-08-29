@@ -1,36 +1,51 @@
 START_SCRIPT
-7\x16\x01`B#\x01\xde\x11
-INIT_TEXT SCE028_001 \x06 SCE_TEXT TEXT1 `;\x0c"  
-INIT \x02\x0c SET_VAR1  \x04
-INIT \x17\x0c SET_VAR1  \x08
-INIT \x01\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bgm.Fob VAR1 \x98 APPlY_2 SePlay RUNF \xc2 END\x03L
+7\x16\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xde\x11\x00\x03\x03\x00\x00SCE028_001\x00 \x06\x00\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 `;\x00\x0c
+SEQ5  
+SEQ1 \x02\x00\x00\x0c
+SEQ4  \x04\x00\x00\r\x00\x00 \x17\x00\x00\x0c
+SEQ4  \x08\x00\x00\r\x00\x00 \x01\x00\x00\x0c
+SEQ4\x03\x06\x00\x00.\\Data\\Script\\Bgm.Fobv\x81\x1f\x98\x00\x00 
+SEQ2\x00\x00SePlay SPC1 \xc2\x00\x00 \x02\x00\x005\x03L\x00\x00
  
 　拓司とカンナが初めて出会ったのは、工業団地の廃墟でだった　@
 　深夜２時過ぎ、いつものように町を徘徊していた拓司は、ふらり\n　と工業団地地区へと迷い込んだ。@
 　かつては１００世帯以上が生活していたそれら１２棟の団地は、\n　相次ぐ工場の閉鎖と、老朽化によって、完全に廃棄されて久しか\n　った。\
 
-  
-INIT \xde\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF .\x02 APPlY_2 TextOn RUNF \\\x02 END APPLY_FILE 
+\x00  
+SEQ1 \xde\x00\x00\x0c
+SEQ4\x03\x07\x00\x00.\\Data\\Script\\TextFunc.Fob SPC1 .\x02\x00 
+SEQ2\x00\x00TextOn SPC1 \\\x02\x00 \x02\x00\x005\x03\x07\x00\x00
 CHOICE
 左へ\n右へ\n\l0,2,
 ENDCHOICE
 
-  
-INIT x\x02\x0c SET_VAR1 .\x02 \x02 \\\x02 END .\x02 APPLY_3 TextClose VAR1 \xda\x02 END
-INIT_TEXT SCE028_002 \xfa\x02 SCE_TEXT TEXT1 d; TEXT2 T
+\x00  
+SEQ1 x\x02\x00\x0c
+SEQ4 .\x02\x00 \x02\x00\x00 \\\x02\x00 \x02\x00\x005 .\x02\x00 \x02\x00\x00\x03\x03\x00\x00TextClosev\x81\x1f\xda\x02\x00 
+SEQ6 SCE028_002\x00 \xfa\x02\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 d;\x00\x0c
+SEQ5\x03T\x00\x00
  
 　荒れ果てた鉄筋コンクリートの塊は容易に墓標を想起させ、そし\n　て宿命的に幽霊が出るという噂が立った。@
 　ＴＶで『ウワサの怪奇スポット』との興味本位の紹介をされたせ\n　いか、一時は物好きたちがいくらか訪れてはいたが、数年前、団\n　地を囲むように金網のフェンスが張り巡らされたのを機に、この\n　地は完全に沈黙の場所となった。@
 \z
-  
-INIT >\x03\x0c SET_VAR1 .\x02 \x02 \\\x02 END APPLY_FILE 
+\x00\x00\x00  
+SEQ1 >\x03\x00\x0c
+SEQ4 .\x02\x00 \x02\x00\x00 \\\x02\x00 \x02\x00\x005\x03\x07\x00\x00
 CHOICE
 左へ\n右へ\n\l0,2,
 ENDCHOICE
 
-  
-INIT \xc8\x04\x0c SET_VAR1 .\x02 \x02 \\\x02 END .\x02 \x02 \xda\x02 END
-INIT_TEXT SCE028_003 8\x05 SCE_TEXT TEXT1 h; TEXT2 \xc9
+\x00  
+SEQ1 \xc8\x04\x00\x0c
+SEQ4 .\x02\x00 \x02\x00\x00 \\\x02\x00 \x02\x00\x005 .\x02\x00 \x02\x00\x00 \xda\x02\x00 
+SEQ6 SCE028_003\x00 8\x05\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 h;\x00\x0c
+SEQ5\x03\xc9\x00\x00
  
 　フェンスは実際のところ２メートル程度の高さしかなかったから\n　、決して乗り越えられないというわけではない（実際、拓司は簡\n　単にそれを乗り越えることができた）。\p故に、フェンスの設置が\n　物理的に侵入者を阻んだとはいえない。@
 　フェンスの設置がこの廃墟に付け加えたもの……それは物理的で\n　はない、なにか精神的ともいうべき閉塞感だった。@
@@ -40,28 +55,38 @@ INIT_TEXT SCE028_003 8\x05 SCE_TEXT TEXT1 h; TEXT2 \xc9
 \n　「シャレにならない」。@
 \n　彼らが言い残した言葉が、伝説の上にさらなる伝説を生んでいっ\n　た。\
 
-  
-INIT |\x05\x0c SET_VAR1 .\x02 \x02 \\\x02 END APPLY_FILE 
+\x00\x00\x00  
+SEQ1 |\x05\x00\x0c
+SEQ4 .\x02\x00 \x02\x00\x00 \\\x02\x00 \x02\x00\x005\x03\x07\x00\x00
 CHOICE
 左へ\n右へ\n\l0,2,
 ENDCHOICE
 
-  
-INIT \xda\x08\x0c SET_VAR1 .\x02 \x02 \\\x02 END .\x02 \x02 \xda\x02 END
-INIT_TEXT SCE028_004 J\t SCE_TEXT TEXT1 l; TEXT2 T
+\x00  
+SEQ1 \xda\x08\x00\x0c
+SEQ4 .\x02\x00 \x02\x00\x00 \\\x02\x00 \x02\x00\x005 .\x02\x00 \x02\x00\x00 \xda\x02\x00 
+SEQ6 SCE028_004\x00 J\t\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 l;\x00\x0c
+SEQ5\x03T\x00\x00
  
 　やがて、歳月と雨と自然作用が金網を赤黒く錆びさせ、この地は\n　さらなる陰惨さをその身にまとうこととなった。\p団地の壁にはベ\n　ッタリと染みができ、不法投棄の粗大ゴミが無秩序にあちこちに\n　転がり始めた。@
 　ふざけて訪れることすらはばかられるくらいの深刻さが、手で触\n　れることができるくらいの確かさで敷地内に漂っていた。\
 
-  
-INIT \x8e\t\x0c SET_VAR1 .\x02 \x02 \\\x02 END APPLY_FILE 
+\x00\x00\x00  
+SEQ1 \x8e\t\x00\x0c
+SEQ4 .\x02\x00 \x02\x00\x00 \\\x02\x00 \x02\x00\x005\x03\x07\x00\x00
 CHOICE
 左へ\n右へ\n\l0,2,
 ENDCHOICE
 
-  
-INIT \x18\x0b\x0c SET_VAR1 .\x02 \x02 \\\x02 END .\x02 \x02 \xda\x02 END
-INIT_TEXT SCE028_005 \x88\x0b SCE_TEXT TEXT1 p; TEXT2 \x92
+\x00  
+SEQ1 \x18\x0b\x00\x0c
+SEQ4 .\x02\x00 \x02\x00\x00 \\\x02\x00 \x02\x00\x005 .\x02\x00 \x02\x00\x00 \xda\x02\x00 
+SEQ6 SCE028_005\x00 \x88\x0b\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 p;\x00\x0c
+SEQ5\x03\x92\x00\x00
  
 　もっとも、拓司にとって、そうした怪談めいた空気など、少しも\n　恐ろしいものではなかった。@
 　割れた窓から通りを見下ろす真っ白な子供の影や、団地の壁にび\n　っしり張り付いている死人の顔などよりももっと恐ろしいものが\n　世界にはあるということを、拓司は知っていた。@
@@ -69,9 +94,13 @@ INIT_TEXT SCE028_005 \x88\x0b SCE_TEXT TEXT1 p; TEXT2 \x92
 　これから数十年続くであろう無色の未来と向き合うことに比べた\n　ら幽霊などいかにも御しがたい子供じみた存在のように思えた。@
 　とはいえ、まさか深夜２時に誰かがいるとは思っていなかった。\
 
-  
-INIT \xcc\x0b\x0c SET_VAR1 .\x02 \x02 \\\x02 END
-INIT_TEXT SCE028_006 N\x0e SCE_TEXT TEXT1 t; TEXT2 \xae
+\x00  
+SEQ1 \xcc\x0b\x00\x0c
+SEQ4 .\x02\x00 \x02\x00\x00 \\\x02\x00 
+SEQ6 SCE028_006\x00 N\x0e\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 t;\x00\x0c
+SEQ5\x03\xae\x00\x00
  
 \n/*▲SE02　一回再生（ファイル再生待たず次へ）*/\a2,0,2,0,　ドザッ！@
 \a4,0,0,0,/*▲SE02　一回再生（ファイル再生待たず次へ）*/\a2,0,2,0,　ドザッ！@
@@ -83,7 +112,10 @@ INIT_TEXT SCE028_006 N\x0e SCE_TEXT TEXT1 t; TEXT2 \xae
 　見あげると、最上階の窓から、女の顔がのぞいていた。\p手には、\n　次に投下される白いビニール袋が握られている。@
 　それが拓司とカンナの出会いだった。\
 
-  
-INIT \x92\x0e\x0c SET_VAR1 .\x02 \x02 \\\x02 END  
-INIT \x02\x0c SET_VAR1 \x98 APPlY_2 SeStop RUNF \xaa\x11 END .\x02 \x02 \xda\x02 END
+\x00\x00\x00  
+SEQ1 \x92\x0e\x00\x0c
+SEQ4 .\x02\x00 \x02\x00\x00 \\\x02\x00 \x02\x00\x005  
+SEQ1 \x02\x00\x00\x0c
+SEQ4 \x98\x00\x00 
+SEQ2\x00\x00SeStop SPC1 \xaa\x11\x00 \x02\x00\x005 .\x02\x00 \x02\x00\x00 \xda\x02\x00 
 END_SCRIPT

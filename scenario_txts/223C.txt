@@ -1,12 +1,19 @@
 START_SCRIPT
-J\x0b\x01`B#\x01\xc2\x08
-INIT_TEXT SCE223_001 \x06 SCE_TEXT TEXT1 \x10l\x01 TEXT2 \x11
+J\x0b\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xc2\x08\x00\x03\x03\x00\x00SCE223_001\x00 \x06\x00\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \x10l\x01\x0c
+SEQ5\x03\x11\x00\x00
  
 \n\n\n\n\n\n\n\n\n\n　　　　　　　　　　　　　『１１日目』\
 
-  
-INIT J\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF \xae APPlY_2 TextOn RUNF \xdc END
-INIT_TEXT SCE223_002 \xf8 SCE_TEXT TEXT1 \x14l\x01 TEXT2 o
+\x00  
+SEQ1 J\x00\x00\x0c
+SEQ4\x03\x07\x00\x00.\\Data\\Script\\TextFunc.Fob SPC1 \xae\x00\x00 
+SEQ2\x00\x00TextOn SPC1 \xdc\x00\x00 
+SEQ6 SCE223_002\x00 \xf8\x00\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \x14l\x01\x0c
+SEQ5\x03o\x00\x00
  
 錦城\n　「新システム導入のお知らせがあるわ」@
 \n朝。@
@@ -16,9 +23,13 @@ INIT_TEXT SCE223_002 \xf8 SCE_TEXT TEXT1 \x14l\x01 TEXT2 o
 錦城\n　「そうです。\pレンタイセキニンセイです。\pつまり、誰かが秩序\n　　を乱すような行動をとった場合、全員がその責任を負うとい\n　　うことです。\pこれはもちろん、御堂くんの許可を得た決定事\n　　項よ」@
 \nカンナが、フンと鼻で笑った。\
 
-  
-INIT <\x01\x0c SET_VAR1 \xae \x02 \xdc END
-INIT_TEXT SCE223_003 2\x03 SCE_TEXT TEXT1 \x18l\x01 TEXT2 }
+\x00\x00\x00  
+SEQ1 <\x01\x00\x0c
+SEQ4 \xae\x00\x00 \x02\x00\x00 \xdc\x00\x00 
+SEQ6 SCE223_003\x00 2\x03\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \x18l\x01\x0c
+SEQ5\x03}\x00\x00
  
 カンナ\n　「『御堂くんの許可』……ねえ」@
 錦城\n　「……なにかいいたいことがあるのかしら、月代さん？」@
@@ -28,9 +39,13 @@ INIT_TEXT SCE223_003 2\x03 SCE_TEXT TEXT1 \x18l\x01 TEXT2 }
 錦城\n　「……どういう意味かしら？」@
 カンナ\n　「先生が思っているそのままの意味ですけど」\
 
-  
-INIT v\x03\x0c SET_VAR1 \xae \x02 \xdc END
-INIT_TEXT SCE223_004 \xa4\x05 SCE_TEXT TEXT1 \x1cl\x01 TEXT2 \x7f
+\x00  
+SEQ1 v\x03\x00\x0c
+SEQ4 \xae\x00\x00 \x02\x00\x00 \xdc\x00\x00 
+SEQ6 SCE223_004\x00 \xa4\x05\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \x1cl\x01\x0c
+SEQ5\x03\x7f\x00\x00
  
 錦城とカンナはしばしにらみ合っていたが、やがて錦城が、フッ\nと軽く笑って目をそらした。\pそしてカンナに歩み寄ったかと思う\nと、突如鋭い張り手を頬に見舞った。@
 \nカンナ\n　「……なっ？！」@
@@ -38,12 +53,14 @@ INIT_TEXT SCE223_004 \xa4\x05 SCE_TEXT TEXT1 \x1cl\x01 TEXT2 \x7f
 御堂\n　「ああ。\pこの女の反秩序行為は、お前ら全員で責任を負っても\n　　らうぞ。\pおまえらは今日一日、飯抜きだ」@
 \n錦城が勝ち誇ったような目で拓司を見た。\
 
-  
-INIT \xe8\x05\x0c SET_VAR1 \xae \x02 \xdc END\x03\x10
+\x00  
+SEQ1 \xe8\x05\x00\x0c
+SEQ4 \xae\x00\x00 \x02\x00\x00 \xdc\x00\x00 \x02\x00\x005\x03\x10\x00\x00
 CHOICE
 拓司は錦城に殴りかかった\n拓司はじっと耐えた\n\l0,2,
 ENDCHOICE
 
-  
-INIT \x1e\x08\x0c SET_VAR1 \xae \x02 \xdc END \xae APPLY_3 TextClose VAR1 \xa4\x08 END
+\x00\x00\x00  
+SEQ1 \x1e\x08\x00\x0c
+SEQ4 \xae\x00\x00 \x02\x00\x00 \xdc\x00\x00 \x02\x00\x005 \xae\x00\x00 \x02\x00\x00\x03\x03\x00\x00TextClosev\x81\x1f\xa4\x08\x00 
 END_SCRIPT

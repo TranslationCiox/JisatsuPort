@@ -1,6 +1,8 @@
 START_SCRIPT
-\x91\x12\x01`B#\x01\x02\x0f
-INIT_TEXT SCE212_001 \x06 SCE_TEXT TEXT1 \xe0Z\x01 TEXT2 d
+\x91\x12\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\x02\x0f\x00\x03\x03\x00\x00SCE212_001\x00 \x06\x00\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xe0Z\x01\x0c
+SEQ5\x03d\x00\x00
  
 もはや世界に定点を見いだすことは不可能だった。@
 『教授が語る世界』と『なたねが語る世界』と『学校に籠城する\n世界』。@
@@ -11,18 +13,27 @@ INIT_TEXT SCE212_001 \x06 SCE_TEXT TEXT1 \xe0Z\x01 TEXT2 d
 いずれも信じがたい世界だが、真実かどうかを確認する術は自分\nにはない。@
 拓司は考えたすえに、いった。\
 
-  
-INIT J\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF \xfa\x01 APPlY_2 TextOn RUNF (\x02 END
-INIT_TEXT SCE212_002 D\x02 SCE_TEXT TEXT1 \xe4Z\x01 TEXT2 S
+\x00\x00\x00  
+SEQ1 J\x00\x00\x0c
+SEQ4\x03\x07\x00\x00.\\Data\\Script\\TextFunc.Fob SPC1 \xfa\x01\x00 
+SEQ2\x00\x00TextOn SPC1 (\x02\x00 
+SEQ6 SCE212_002\x00 D\x02\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xe4Z\x01\x0c
+SEQ5\x03S\x00\x00
  
 拓司\n　「とりあえず、『君の語る世界』を信じよう。\pなぜなら、その\n　　世界がいま、一番簡単に実験にかけられるからだ」@
 ナタネ\n　「……」@
 拓司\n　「これからおれは、アイスクリームパフェを『望む』。\p君が語\n　　ったことが真実なら、ここにアイスクリームパフェが忽然と\n　　出現するって事だよな？」@
 ナタネ\n　「ええ」\
 
-  
-INIT \x88\x02\x0c SET_VAR1 \xfa\x01 \x02 (\x02 END
-INIT_TEXT SCE212_003 \x0e\x04 SCE_TEXT TEXT1 \xe8Z\x01 TEXT2 \x87
+\x00  
+SEQ1 \x88\x02\x00\x0c
+SEQ4 \xfa\x01\x00 \x02\x00\x00 (\x02\x00 
+SEQ6 SCE212_003\x00 \x0e\x04\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xe8Z\x01\x0c
+SEQ5\x03\x87\x00\x00
  
 拓司\n　「もしアイスクリームパフェが出現したとしても、『君の語っ\n　　た世界』が真実であることは証明できない。\pなぜならそれも\n　　また、俺の妄想が生み出した現象かもしれないからだ。@
 　　ただ、アイスクリームパフェが出現しなければ……少なくと\n　　も君の話がウソだということは証明できる。@
@@ -31,10 +42,15 @@ INIT_TEXT SCE212_003 \x0e\x04 SCE_TEXT TEXT1 \xe8Z\x01 TEXT2 \x87
 ナタネ\n　「ええ」@
 \n拓司は、目を閉じた。\
 
-  
-INIT R\x04\x0c SET_VAR1 \xfa\x01 \x02 (\x02 END  
-INIT \xc8\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bg.Fob VAR2\xc2\x06 \x02 APPLY_4 BgAutoFadeIn VAR2\xec\x06 END
-INIT_TEXT SCE212_004 \x10\x07 SCE_TEXT TEXT1 \xecZ\x01 TEXT2 \x88
+\x00  
+SEQ1 R\x04\x00\x0c
+SEQ4 \xfa\x01\x00 \x02\x00\x00 (\x02\x00 \x02\x00\x005  
+SEQ1 \xc8\x00\x00\x0c
+SEQ4\x03\x06\x00\x00.\\Data\\Script\\Bg.Fob SPC2 \xc2\x06\x00 \x02\x00\x00\x03\x04\x00\x00BgAutoFadeIn SPC2 \xec\x06\x00 
+SEQ6 SCE212_004\x00 \x10\x07\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xecZ\x01\x0c
+SEQ5\x03\x88\x00\x00
  
 意識を集中させ、頭の中にアイスクリームパフェを思い描く。@
 拓司は『ナタネが語る世界』を……自分が『望む』ものを『創』\nれる世界を真剣に信じようと試みた。@
@@ -46,25 +62,38 @@ INIT_TEXT SCE212_004 \x10\x07 SCE_TEXT TEXT1 \xecZ\x01 TEXT2 \x88
 『教授が語る世界』か『学校に籠城する世界』のいずれかに、世\n界を絞りたい。@
 そう思ってしまう。\
 
-  
-INIT T\x07\x0c SET_VAR1 \xfa\x01 \x02 (\x02 END  
-INIT \xc9\x0c SET_VAR1 \xc2\x06 \x02 \xec\x06 END
-INIT_TEXT SCE212_005 \xe2\t SCE_TEXT TEXT1 \xf0Z\x01 TEXT2 6
+\x00  
+SEQ1 T\x07\x00\x0c
+SEQ4 \xfa\x01\x00 \x02\x00\x00 (\x02\x00 \x02\x00\x005  
+SEQ1 \xc9\x00\x00\x0c
+SEQ4 \xc2\x06\x00 \x02\x00\x00 \xec\x06\x00 
+SEQ6 SCE212_005\x00 \xe2\t\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xf0Z\x01\x0c
+SEQ5\x036\x00\x00
  
 拓司は意識集中を諦め、目を開けた。@
 \n拓司\n　「無理だ。\pやっぱり信じられない」@
 \nそして拓司は見た。\p狭い部屋の床にビッシリと立ち並ぶ、アイ\nスクリームパフェの群を。@
 \n拓司\n　「そんな……バカな」\
 
-  
-INIT &\n\x0c SET_VAR1 \xfa\x01 \x02 (\x02 END
-INIT_TEXT SCE212_006 8\x0b SCE_TEXT TEXT1 \xf4Z\x01 TEXT2 -
+\x00  
+SEQ1 &\n\x00\x0c
+SEQ4 \xfa\x01\x00 \x02\x00\x00 (\x02\x00 
+SEQ6 SCE212_006\x00 8\x0b\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xf4Z\x01\x0c
+SEQ5\x03-\x00\x00
  
 /*▲SE01　ループ再生（次の停止まで）*/\a2,1,1,1,\a6,0,0,0,　ザザザ……ザザッ……\pザアザザザ……ザアアアアア……@
 　ザアザアアアアアアア……\w\n/*▲SE01　停止*/\a4,1,0,0,\z
-  
-INIT |\x0b\x0c SET_VAR1 \xfa\x01 \x02 (\x02 END
-INIT_TEXT SCE212_007 j\x0c SCE_TEXT TEXT1 \xf8Z\x01 TEXT2 d
+\x00\x00\x00  
+SEQ1 |\x0b\x00\x0c
+SEQ4 \xfa\x01\x00 \x02\x00\x00 (\x02\x00 
+SEQ6 SCE212_007\x00 j\x0c\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xf8Z\x01\x0c
+SEQ5\x03d\x00\x00
  
 ノイズが、耳の奥で聞こえた。@
 こめかみがずきずきと痛む。@
@@ -79,7 +108,10 @@ INIT_TEXT SCE212_007 j\x0c SCE_TEXT TEXT1 \xf8Z\x01 TEXT2 d
 どちらでもいい。@
 \n/*■黒　表示（クロスフェード）*/\a7,-2,-2,0,\a0,200,2,0,\a6,-2,0,0,ようやく浅いまどろみが頭に霞を作りはじめた。\
 
-  
-INIT \xae\x0c\x0c SET_VAR1 \xfa\x01 \x02 (\x02 END  
-INIT \x02\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bgm.Fob VAR1 \x92\x0e APPlY_2 SeStop RUNF \xbc\x0e END \xfa\x01 APPLY_3 TextClose VAR1 \xe4\x0e END
+\x00\x00  
+SEQ1 \xae\x0c\x00\x0c
+SEQ4 \xfa\x01\x00 \x02\x00\x00 (\x02\x00 \x02\x00\x005  
+SEQ1 \x02\x00\x00\x0c
+SEQ4\x03\x06\x00\x00.\\Data\\Script\\Bgm.Fobv\x81\x1f\x92\x0e\x00 
+SEQ2\x00\x00SeStop SPC1 \xbc\x0e\x00 \x02\x00\x005 \xfa\x01\x00 \x02\x00\x00\x03\x03\x00\x00TextClosev\x81\x1f\xe4\x0e\x00 
 END_SCRIPT

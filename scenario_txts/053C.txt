@@ -1,7 +1,12 @@
 START_SCRIPT
-!\x15\x01`B#\x01r\x11  
-INIT \x0b\x01\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bgm.Fob VAR1   APPlY_2 PlayCD RUNF J END
-INIT_TEXT SCE053_001 f SCE_TEXT TEXT1 pb TEXT2 z
+!\x15\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00r\x11\x00  
+SEQ1 \x0b\x01\x00\x0c
+SEQ4\x03\x06\x00\x00.\\Data\\Script\\Bgm.Fobv\x81\x1f \x00\x00 
+SEQ2\x00\x00PlayCD SPC1 J\x00\x00 
+SEQ6 SCE053_001\x00 f\x00\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 pb\x00\x0c
+SEQ5\x03z\x00\x00
  
 机が乱暴に端々に追いやられ、教室は妙に広々としている。@
 教室の中央に、学生たちが群れている。@
@@ -9,9 +14,14 @@ INIT_TEXT SCE053_001 f SCE_TEXT TEXT1 pb TEXT2 z
 円陣の中央には、ひとりの女の子が立ちすくんでいる。@
 /*▲BGM　Track11　再生　*//*■CG21　表示（クロスフェード）　*/\a7,-2,-2,0,\a0,20,2,0,\a6,-2,0,0,\n早桃だ。\
 
-  
-INIT \xaa\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF \xb2\x02 APPlY_2 TextOn RUNF \xe0\x02 END
-INIT_TEXT SCE053_002 \xfc\x02 SCE_TEXT TEXT1 tb TEXT2 C
+\x00  
+SEQ1 \xaa\x00\x00\x0c
+SEQ4\x03\x07\x00\x00.\\Data\\Script\\TextFunc.Fob SPC1 \xb2\x02\x00 
+SEQ2\x00\x00TextOn SPC1 \xe0\x02\x00 
+SEQ6 SCE053_002\x00 \xfc\x02\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 tb\x00\x0c
+SEQ5\x03C\x00\x00
  
 学生\n　「だいたい図々しいんだよ」@
 学生\n　「なんでお前、率先して死なないわけ？」@
@@ -23,9 +33,13 @@ INIT_TEXT SCE053_002 \xfc\x02 SCE_TEXT TEXT1 tb TEXT2 C
 学生\n　「死ねよ」@
 学生\n　「死ねよ」\
 
-  
-INIT @\x03\x0c SET_VAR1 \xb2\x02 \x02 \xe0\x02 END
-INIT_TEXT SCE053_003 \x86\x04 SCE_TEXT TEXT1 xb TEXT2 \x96
+\x00\x00\x00  
+SEQ1 @\x03\x00\x0c
+SEQ4 \xb2\x02\x00 \x02\x00\x00 \xe0\x02\x00 
+SEQ6 SCE053_003\x00 \x86\x04\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 xb\x00\x0c
+SEQ5\x03\x96\x00\x00
  
 　死ねよ、死ねよ、死ねよ、死ねよ、死ねよ、死ねよ、死ねよ、\n　死ねよ、死ねよ、死ねよ\n　死ね死ね死ね死ね死ね死ね死ね死ね死ね死ね死ね死ね死ね死ね\n　死ね死ね死ね\n　シネシネシネシネシシネシネシネシネシネシネシネシネシネシ\n　ネシネシネシネシネシネ\n　学生たちの声は、大合唱となって教室にとどろき渡った。@
 \n　シ……足を上げる。@
@@ -34,9 +48,13 @@ INIT_TEXT SCE053_003 \x86\x04 SCE_TEXT TEXT1 xb TEXT2 \x96
 　ネ……足を踏み降ろす。@
 \n　シネシネシネシネシシネシネシネシネシネシネシネシネシネシ\nネシネシネシネシネシネ\n　ドンガドンガドンガドンドンガドンガドンガドンガドンガドン\nガドンガドンガドンガドンガドンガ\
 
-  
-INIT \xca\x04\x0c SET_VAR1 \xb2\x02 \x02 \xe0\x02 END
-INIT_TEXT SCE053_004 \\\x07 SCE_TEXT TEXT1 |b TEXT2 \xb3
+\x00  
+SEQ1 \xca\x04\x00\x0c
+SEQ4 \xb2\x02\x00 \x02\x00\x00 \xe0\x02\x00 
+SEQ6 SCE053_004\x00 \\\x07\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 |b\x00\x0c
+SEQ5\x03\xb3\x00\x00
  
 　足を踏みならす音は太鼓のリズムで、合唱は呪文の詠唱だった@
 　中世の魔女狩りそのものだった。@
@@ -49,10 +67,15 @@ INIT_TEXT SCE053_004 \\\x07 SCE_TEXT TEXT1 |b TEXT2 \xb3
 　耐えられるはずがない。\p早桃は円陣の中央で耳を覆い、しゃ\n　がみこんでしまった。@
 \n早桃\n　「ごめんなさい……ごめんなさい……ごめんなさい……」\
 
-  
-INIT \xa0\x07\x0c SET_VAR1 \xb2\x02 \x02 \xe0\x02 END  
-INIT \xc8\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bg.Fob VAR2\xc0\n \x02 APPLY_4 BgAutoFadeIn VAR2\xea\n END
-INIT_TEXT SCE053_005 \x0e\x0b SCE_TEXT TEXT1 \x80b TEXT2 r
+\x00  
+SEQ1 \xa0\x07\x00\x0c
+SEQ4 \xb2\x02\x00 \x02\x00\x00 \xe0\x02\x00 \x02\x00\x005  
+SEQ1 \xc8\x00\x00\x0c
+SEQ4\x03\x06\x00\x00.\\Data\\Script\\Bg.Fob SPC2 \xc0\n\x00 \x02\x00\x00\x03\x04\x00\x00BgAutoFadeIn SPC2 \xea\n\x00 
+SEQ6 SCE053_005\x00 \x0e\x0b\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \x80b\x00\x0c
+SEQ5\x03r\x00\x00
  
 早桃がクラスのなかで孤立しているということは知っていた。@
 人見知りの激しい早桃は、いじめの絶好の標的だったのだろう。\nそれにしても－－@
@@ -61,9 +84,13 @@ INIT_TEXT SCE053_005 \x0e\x0b SCE_TEXT TEXT1 \x80b TEXT2 r
 いずれにせよ、このまま黙ってみているわけにはいかない。@
 しかしまた、背後から拓司の肩を押さえた者がいる。\
 
-  
-INIT R\x0b\x0c SET_VAR1 \xb2\x02 \x02 \xe0\x02 END
-INIT_TEXT SCE053_006 T\r SCE_TEXT TEXT1 \x84b TEXT2 a
+\x00  
+SEQ1 R\x0b\x00\x0c
+SEQ4 \xb2\x02\x00 \x02\x00\x00 \xe0\x02\x00 
+SEQ6 SCE053_006\x00 T\r\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \x84b\x00\x0c
+SEQ5\x03a\x00\x00
  
 拓司\n　「離してくれ、雲居さん」@
 なたね\n　「駄目。\pいま入っても義妹さんは救えない。\p多勢に無勢。@
@@ -73,20 +100,25 @@ INIT_TEXT SCE053_006 T\r SCE_TEXT TEXT1 \x84b TEXT2 a
 拓司\n　「な……？」@
 \nなたねはすうっと目を細めて天を見上げ、指先で空中に何かの文\n字を書いた。\pそれから地面に掌をぴったりと当てて、沈黙に沈み\n込んだ。\p拓司のなかで怒りが爆発した。\
 
-  
-INIT \x98\r\x0c SET_VAR1 \xb2\x02 \x02 \xe0\x02 END
-INIT_TEXT SCE053_007 V\x0f SCE_TEXT TEXT1 \x88b TEXT2 >
+\x00  
+SEQ1 \x98\r\x00\x0c
+SEQ4 \xb2\x02\x00 \x02\x00\x00 \xe0\x02\x00 
+SEQ6 SCE053_007\x00 V\x0f\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \x88b\x00\x0c
+SEQ5\x03>\x00\x00
  
 拓司\n　「ふざけるな、そんな遊びにつきあってるヒマは－－」@
 雲居\n　「間違いない。\pいま、前兆を確認したわ。\p五分後、大きな波が\n　　来るわ。\pそれまで待てば、みんな自滅する。\pそうすれば、危\n　　険を冒さずに義妹さんを助けられるわ」\
 
-  
-INIT \x9a\x0f\x0c SET_VAR1 \xb2\x02 \x02 \xe0\x02 END
-S204 
+\x00\x00\x00  
+SEQ1 \x9a\x0f\x00\x0c
+SEQ4 \xb2\x02\x00 \x02\x00\x00 \xe0\x02\x00 \x02\x00\x005\x03\n\x00\x00
 CHOICE
 待っていられない\n待つ\n\l0,2,
 ENDCHOICE
 
-  
-INIT \xcc\x10\x0c SET_VAR1 \xb2\x02 \x02 \xe0\x02 END \xb2\x02 APPLY_3 TextClose VAR1 :\x11 END \xb2\x02 \x02 :\x11 END
+\x00  
+SEQ1 \xcc\x10\x00\x0c
+SEQ4 \xb2\x02\x00 \x02\x00\x00 \xe0\x02\x00 \x02\x00\x005 \xb2\x02\x00 \x02\x00\x00\x03\x03\x00\x00TextClosev\x81\x1f:\x11\x00 \x02\x00\x005 \xb2\x02\x00 \x02\x00\x00 :\x11\x00 
 END_SCRIPT

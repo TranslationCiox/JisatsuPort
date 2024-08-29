@@ -1,13 +1,20 @@
 START_SCRIPT
-\x03\x10\x01`B#\x01D\r
-INIT_TEXT SCE083_001 \x06 SCE_TEXT TEXT1 P\x91 TEXT2 =
+\x03\x10\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00D\r\x00\x03\x03\x00\x00SCE083_001\x00 \x06\x00\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 P\x91\x00\x0c
+SEQ5\x03=\x00\x00
  
 拓司は枕元に掛けられている鳥かごをのぞき込んだ。@
 なんという種類かはわからないが、どこかで見たことがあるよう\nな、いかにも普通の小鳥だ。@
 ただ、色だけがウソのように青く鮮やかで、屋台で売っているペ\nンキで着色されたヒヨコを思わせる。\w\z
-  
-INIT J\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF ^\x01 APPlY_2 TextOn RUNF \x8c\x01 END
-INIT_TEXT SCE083_002 \xa8\x01 SCE_TEXT TEXT1 T\x91 TEXT2 s
+\x00  
+SEQ1 J\x00\x00\x0c
+SEQ4\x03\x07\x00\x00.\\Data\\Script\\TextFunc.Fob SPC1 ^\x01\x00 
+SEQ2\x00\x00TextOn SPC1 \x8c\x01\x00 
+SEQ6 SCE083_002\x00 \xa8\x01\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 T\x91\x00\x0c
+SEQ5\x03s\x00\x00
  
 教授\n　「気になるかね？」@
 拓司\n　「？　ええ、まあ。この部屋にあるのはこの鳥かごだけですか\n　　らね。\pそりゃあ、気になります」@
@@ -18,9 +25,13 @@ INIT_TEXT SCE083_002 \xa8\x01 SCE_TEXT TEXT1 T\x91 TEXT2 s
 　　無意識に、君の注意をその鳥に向けさせたのかもしれないぞ\n　　？」@
 \nねばりつくようないいかただった。@
 見れば教授の額には、ちいさな汗が滲んでいる。\w\z
-  
-INIT \xec\x01\x0c SET_VAR1 ^\x01 \x02 \x8c\x01 END
-INIT_TEXT SCE083_003 \xf2\x03 SCE_TEXT TEXT1 X\x91 TEXT2 g
+\x00\x00\x00  
+SEQ1 \xec\x01\x00\x0c
+SEQ4 ^\x01\x00 \x02\x00\x00 \x8c\x01\x00 
+SEQ6 SCE083_003\x00 \xf2\x03\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 X\x91\x00\x0c
+SEQ5\x03g\x00\x00
  
 拓司\n　「……なにかこの鳥が、俺の過去に関係あるんですか？」@
 教授\n　「……」@
@@ -29,9 +40,13 @@ INIT_TEXT SCE083_003 \xf2\x03 SCE_TEXT TEXT1 X\x91 TEXT2 g
 教授が目で合図を送ると、看護婦は拘束着の女の子を連れて部屋\nから退出した。@
 しめきられた白い部屋には、拓司と教授、２人だけが向かい合っ\nて残された。@
 長い沈黙の後、教授が口を開いた。\w\z
-  
-INIT 6\x04\x0c SET_VAR1 ^\x01 \x02 \x8c\x01 END
-INIT_TEXT SCE083_004 \x0c\x06 SCE_TEXT TEXT1 \\\x91 TEXT2 \x87
+\x00\x00\x00  
+SEQ1 6\x04\x00\x0c
+SEQ4 ^\x01\x00 \x02\x00\x00 \x8c\x01\x00 
+SEQ6 SCE083_004\x00 \x0c\x06\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \\\x91\x00\x0c
+SEQ5\x03\x87\x00\x00
  
 教授\n　「……その鳥はね、ありえない鳥なんだよ」@
 拓司\n　「？」@
@@ -44,9 +59,13 @@ INIT_TEXT SCE083_004 \x0c\x06 SCE_TEXT TEXT1 \\\x91 TEXT2 \x87
 拓司\n　「意味が分かりません」@
 \n頭の奥が、ずきんと痛んだ。@
 その痛みは急速に大きく膨れ上がり、すぐに拓司の頭のなかいっ\nぱいに広がった。\w\z
-  
-INIT P\x06\x0c SET_VAR1 ^\x01 \x02 \x8c\x01 END
-INIT_TEXT SCE083_005 \xa6\x08 SCE_TEXT TEXT1 `\x91 TEXT2 c
+\x00  
+SEQ1 P\x06\x00\x0c
+SEQ4 ^\x01\x00 \x02\x00\x00 \x8c\x01\x00 
+SEQ6 SCE083_005\x00 \xa6\x08\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 `\x91\x00\x0c
+SEQ5\x03c\x00\x00
  
 拓司\n　「意味が……わからない」@
 \n教授が突然、がばと身を乗り出した。@
@@ -56,10 +75,15 @@ INIT_TEXT SCE083_005 \xa6\x08 SCE_TEXT TEXT1 `\x91 TEXT2 c
 教授\n　「きみがわからなければ、他の誰にもわかるはずがないッ！@
 　　いいかね、これは、新しい生き物なんだよ！@
 　　あらゆる生物学から外れた……神が作ったこの世界の生物な\n　　らぬ……なにかだッ！」\w\z
-  
-INIT \xea\x08\x0c SET_VAR1 ^\x01 \x02 \x8c\x01 END  
-INIT \xca\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bg.Fob VAR2\xca\n \x02 APPLY_4 BgAutoFadeIn VAR2\xf4\n END
-INIT_TEXT SCE083_006 \x18\x0b SCE_TEXT TEXT1 d\x91 TEXT2 T
+\x00  
+SEQ1 \xea\x08\x00\x0c
+SEQ4 ^\x01\x00 \x02\x00\x00 \x8c\x01\x00 \x02\x00\x005  
+SEQ1 \xca\x00\x00\x0c
+SEQ4\x03\x06\x00\x00.\\Data\\Script\\Bg.Fob SPC2 \xca\n\x00 \x02\x00\x00\x03\x04\x00\x00BgAutoFadeIn SPC2 \xf4\n\x00 
+SEQ6 SCE083_006\x00 \x18\x0b\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 d\x91\x00\x0c
+SEQ5\x03T\x00\x00
  
 　ザザザザザザザザザザ@
 \n青い鳥がきしんで、鳴いた。@
@@ -68,7 +92,9 @@ INIT_TEXT SCE083_006 \x18\x0b SCE_TEXT TEXT1 d\x91 TEXT2 T
 \n　ザザザザザザザザザザ@
 \n教授\n　「おまえは誰だ？！　何者なんだ？！　お前は－－」@
 \nスイッチを落としたように、目の前が真っ暗になった。\w\z
-  
-INIT \\\x0b\x0c SET_VAR1 ^\x01 \x02 \x8c\x01 END  
-INIT \xc8\x0c SET_VAR1 \xca\n \x02 \xf4\n END ^\x01 APPLY_3 TextClose VAR1 &\r END
+\x00  
+SEQ1 \\\x0b\x00\x0c
+SEQ4 ^\x01\x00 \x02\x00\x00 \x8c\x01\x00 \x02\x00\x005  
+SEQ1 \xc8\x00\x00\x0c
+SEQ4 \xca\n\x00 \x02\x00\x00 \xf4\n\x00 \x02\x00\x005 ^\x01\x00 \x02\x00\x00\x03\x03\x00\x00TextClosev\x81\x1f&\r\x00 
 END_SCRIPT

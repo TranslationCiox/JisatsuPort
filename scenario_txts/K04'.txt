@@ -1,8 +1,14 @@
 START_SCRIPT
-\xa6\n\x01`B#\x01\xbc\x07  
-INIT \\\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bg.Fob VAR2  \x02 APPLY_4 BgAutoFadeIn VAR2J END  
-INIT \x04\x01\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bgm.Fob VAR1 \x88 APPlY_2 PlayCD RUNF \xb2 END
-INIT_TEXT SCEK04_A01 \xce SCE_TEXT TEXT1 X\xa6\x01 TEXT2 \xe0
+\xa6\n\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xbc\x07\x00  
+SEQ1 \\\x00\x00\x0c
+SEQ4\x03\x06\x00\x00.\\Data\\Script\\Bg.Fob SPC2  \x00\x00 \x02\x00\x00\x03\x04\x00\x00BgAutoFadeIn SPC2 J\x00\x00 \x02\x00\x005  
+SEQ1 \x04\x01\x00\x0c
+SEQ4\x03\x06\x00\x00.\\Data\\Script\\Bgm.Fobv\x81\x1f\x88\x00\x00 
+SEQ2\x00\x00PlayCD SPC1 \xb2\x00\x00 
+SEQ6 SCEK04_A01\x00 \xce\x00\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 X\xa6\x01\x0c
+SEQ5\x03\xe0\x00\x00
  
 　あまり本筋に関係がないから詳しくは語らないけれど、\n結局、私はゆきにバージンをあげた（あなたと寝たとき私はもう\nバージンじゃなかったけど、それでもあなたは私と寝た初めての\n男の子だったってわけ）。@
 いまどき処女性に神聖さなんて求めてはいないけれど、それでも\n私は、私たちの関係が新しいステージにスライドしたと感じたも\nのだった。@
@@ -13,10 +19,17 @@ INIT_TEXT SCEK04_A01 \xce SCE_TEXT TEXT1 X\xa6\x01 TEXT2 \xe0
 私たちはただじっと、だきあっているだけで精神的なクライマッ\nクスを迎えることができるようになっていた。@
 まるで史上初めて火を発見した人類みたいな気分だった。@
 どきどきして、誇らしかった。\w\z
-  
-INIT \x12\x01\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF \xb2\x04 APPlY_2 TextOn RUNF \xe0\x04 END  
-INIT \xc8\x0c SET_VAR1 NULL \x02 J END \x88 APPlY_2 StopCD RUNF <\x05 END
-INIT_TEXT SCEK04_A02 X\x05 SCE_TEXT TEXT1 \\\xa6\x01 TEXT2 o
+\x00\x00\x00  
+SEQ1 \x12\x01\x00\x0c
+SEQ4\x03\x07\x00\x00.\\Data\\Script\\TextFunc.Fob SPC1 \xb2\x04\x00 
+SEQ2\x00\x00TextOn SPC1 \xe0\x04\x00 \x02\x00\x005  
+SEQ1 \xc8\x00\x00\x0c
+SEQ4  \x00\x00 \x02\x00\x00 J\x00\x00 \x02\x00\x005 \x88\x00\x00 
+SEQ2\x00\x00StopCD SPC1 <\x05\x00 
+SEQ6 SCEK04_A02\x00 X\x05\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \\\xa6\x01\x0c
+SEQ5\x03o\x00\x00
  
 　７月２７日（－－この日付が重要なの）、いつものように抱き\n合っていると、突然ゆきが泣き始めた。@
 絞り出すような悲痛な泣き方だった。@
@@ -26,6 +39,7 @@ INIT_TEXT SCEK04_A02 X\x05 SCE_TEXT TEXT1 \\\xa6\x01 TEXT2 o
 そんなに長い時間人間が泣き続けることができるなんて、驚きだ\nった。@
 そしてようやく、ゆきはいった。@
 今日、自分は自殺を決意していたのだと。\w\z
-  
-INIT \x9c\x05\x0c SET_VAR1 \xb2\x04 \x02 \xe0\x04 END \xb2\x04 APPLY_3 TextClose VAR1 \x9e\x07 END
+\x00  
+SEQ1 \x9c\x05\x00\x0c
+SEQ4 \xb2\x04\x00 \x02\x00\x00 \xe0\x04\x00 \x02\x00\x005 \xb2\x04\x00 \x02\x00\x00\x03\x03\x00\x00TextClosev\x81\x1f\x9e\x07\x00 
 END_SCRIPT

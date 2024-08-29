@@ -1,6 +1,8 @@
 START_SCRIPT
-\x82\x17\x01`B#\x01 \x13
-INIT_TEXT SCE075_001 \x06 SCE_TEXT TEXT1 \xd0\x84 TEXT2 |
+\x82\x17\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00 \x13\x00\x03\x03\x00\x00SCE075_001\x00 \x06\x00\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xd0\x84\x00\x0c
+SEQ5\x03|\x00\x00
  
 なたね\n　「だめ。\pこの先は危険。\p波動が直接－－」@
 早桃\n　「いい加減にしてよ！」@
@@ -9,27 +11,40 @@ INIT_TEXT SCE075_001 \x06 SCE_TEXT TEXT1 \xd0\x84 TEXT2 |
 拓司\n　「よせ、早桃」@
 早桃\n　「でも！　おにいちゃん！」\
 
-  
-INIT J\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF Z\x02 APPlY_2 TextOn RUNF \x88\x02 END
-INIT_TEXT SCE075_002 \xa4\x02 SCE_TEXT TEXT1 \xd4\x84 TEXT2 N
+\x00\x00\x00  
+SEQ1 J\x00\x00\x0c
+SEQ4\x03\x07\x00\x00.\\Data\\Script\\TextFunc.Fob SPC1 Z\x02\x00 
+SEQ2\x00\x00TextOn SPC1 \x88\x02\x00 
+SEQ6 SCE075_002\x00 \xa4\x02\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xd4\x84\x00\x0c
+SEQ5\x03N\x00\x00
  
 なたね\n　「いいのよ、虎菱くん」@
 \n　なたねが遮った。@
 \n/*■CG71　表示（クロスフェード）*/\a7,-2,-2,0,\a0,70,2,0,\a6,-2,0,0,なたね\n　「理解されないのには慣れているから。\p……早桃さんの順番に\n　　質問に答えましょう。\pまず、『波動が直接きている』とはど\n　　ういうことか？」@
 早桃\n　「……」\
 
-  
-INIT \xe8\x02\x0c SET_VAR1 Z\x02 \x02 \x88\x02 END
-INIT_TEXT SCE075_003 Z\x04 SCE_TEXT TEXT1 \xd8\x84 TEXT2 \xc1
+\x00  
+SEQ1 \xe8\x02\x00\x0c
+SEQ4 Z\x02\x00 \x02\x00\x00 \x88\x02\x00 
+SEQ6 SCE075_003\x00 Z\x04\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xd8\x84\x00\x0c
+SEQ5\x03\xc1\x00\x00
  
 なたね\n　「便宜上『波動』と呼んでいるけれど、『波動』は、本来なら\n　　地球の言葉では定義できない存在なの。\pだから、一般的なエ\n　　ネルギーのように、一方から他方へ、直線的に飛ぶというも\n　　のではないの。\pそれ自身の意志で停滞したり、反射したり、\n　　逆流したり、屈折したり。\p秩序や法則はないの。\p無秩序。@
 　　完全なカオスだわ。\pだから、この先の場所みたいに自殺波動\n　　の密度が濃い場所というのが生まれることも－－」\w\n早桃\n　「要するにデタラメってことじゃない！\p　なんのルールもない\n　　ってことはつまり、全部あなたが思いつきでいってるってだ\n　　けでしょ！」@
 なたね\n　「……次の質問。\p『私たちはどうすればいいのか？』。\pこれに\n　　は明確な解答を提示することができるわ。\p私たちはシェルタ\n　　ーに避難すべきだわ」@
 早桃\n　「……え？」\
 
-  
-INIT \x9e\x04\x0c SET_VAR1 Z\x02 \x02 \x88\x02 END
-INIT_TEXT SCE075_004 \xdc\x07 SCE_TEXT TEXT1 \xdc\x84 TEXT2 {
+\x00  
+SEQ1 \x9e\x04\x00\x0c
+SEQ4 Z\x02\x00 \x02\x00\x00 \x88\x02\x00 
+SEQ6 SCE075_004\x00 \xdc\x07\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xdc\x84\x00\x0c
+SEQ5\x03{\x00\x00
  
 　なたねは「シェ\p・ル\p・タ\p・ー」と、ひとことひとことを区切っ\n　て言い返した。@
 \n拓司\n　「シェルターって……核シェルターとか……そのシェルターか\n　　？」@
@@ -37,9 +52,13 @@ INIT_TEXT SCE075_004 \xdc\x07 SCE_TEXT TEXT1 \xdc\x84 TEXT2 {
 拓司\n　「……」@
 なたね\n　「正確に言うと、シェルターはまだ完成していないわ。\pただ、\n　　材料は全部そろえてある。\pこれだけの人数で突貫で作れば、\n　　１時間もかからずに完成すると思う」\
 
-  
-INIT  \x08\x0c SET_VAR1 Z\x02 \x02 \x88\x02 END
-INIT_TEXT SCE075_005 F\n SCE_TEXT TEXT1 \xe0\x84 TEXT2 ]
+\x00\x00\x00  
+SEQ1  \x08\x00\x0c
+SEQ4 Z\x02\x00 \x02\x00\x00 \x88\x02\x00 
+SEQ6 SCE075_005\x00 F\n\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xe0\x84\x00\x0c
+SEQ5\x03]\x00\x00
  
 拓司\n　「……まさか」@
 なたね\n　「４階の理科実験室。\p新実験室ができてから使われていないあ\n　　の教室に、サバイバルに必要な物資はすべてそろえてあるわ」\n　　\p拓司\n　「……冗談だろ？」@
@@ -47,18 +66,26 @@ INIT_TEXT SCE075_005 F\n SCE_TEXT TEXT1 \xe0\x84 TEXT2 ]
 \nなたねの表情が一変した。\p初めて見る表情だった。@
 怒っている。\pそれまでの能面めいた無表情が嘘だったかのように、\nなたねは怒っていた。\
 
-  
-INIT \x8a\n\x0c SET_VAR1 Z\x02 \x02 \x88\x02 END
-INIT_TEXT SCE075_006 8\x0c SCE_TEXT TEXT1 \xe4\x84 TEXT2 \xc0
+\x00  
+SEQ1 \x8a\n\x00\x0c
+SEQ4 Z\x02\x00 \x02\x00\x00 \x88\x02\x00 
+SEQ6 SCE075_006\x00 8\x0c\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xe4\x84\x00\x0c
+SEQ5\x03\xc0\x00\x00
  
 なたね\n　「こんな非常事態に冗談なんて言うはずがないでしょうッ！@
 　　あなたは自覚しているの？！\p　私たちは生き残らなければな\n　　らないのよ！\p　生き残って最終決戦に備えなければならない\n　　の！\p　やつらと戦わなければならないの！\p　やつらは群でや\n　　ってくる！\p　最終決戦には地球上の戦士が集結する国を越え\n　　て人種を越えて思想を越えて主義を越えて性別を越えて集結\n　　して団結して戦って地球を守るために立ち上がる選ばれた戦\n　　士たちが私たちなの最終聖戦に選ばれたの私たちは！\p　それ\n　　なのにそれなのにッ！\p　虎菱くんは自覚が足りないッ！」@
 \n　なたねは機関銃のようにまくしたてた。\pやがてその顔から、潮\nが引くように怒りの形相が消えてゆき、最後にはいつもの無表情\nがなたねを支配した。@
 \nなたね\n　「……質問はそれだけだったよね？」\
 
-  
-INIT |\x0c\x0c SET_VAR1 Z\x02 \x02 \x88\x02 END
-INIT_TEXT SCE075_007 \xb6\x0f SCE_TEXT TEXT1 \xe8\x84 TEXT2 \x81
+\x00\x00\x00  
+SEQ1 |\x0c\x00\x0c
+SEQ4 Z\x02\x00 \x02\x00\x00 \x88\x02\x00 
+SEQ6 SCE075_007\x00 \xb6\x0f\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xe8\x84\x00\x0c
+SEQ5\x03\x81\x00\x00
  
 拓司\n　「……」@
 なたね\n　「さあ、虎菱くん。\pみんなで４階に戻りましょう。\p最終波動に\n　　そなえてシェルターを作らなければならないわ」@
@@ -68,11 +95,13 @@ INIT_TEXT SCE075_007 \xb6\x0f SCE_TEXT TEXT1 \xe8\x84 TEXT2 \x81
 俺は……どうすればいい？\
 
   
-INIT \xfa\x0f\x0c SET_VAR1 Z\x02 \x02 \x88\x02 END\x03!
+SEQ1 \xfa\x0f\x00\x0c
+SEQ4 Z\x02\x00 \x02\x00\x00 \x88\x02\x00 \x02\x00\x005\x03!\x00\x00
 CHOICE
 なたねの言葉に従う。紅葉を見捨てて、シェルターに向かう\nなたね達をシェルターに向かわせて、自分だけ紅葉救出に向かう\n\l0,2,
 ENDCHOICE
 
-  
-INIT 8\x12\x0c SET_VAR1 Z\x02 \x02 \x88\x02 END Z\x02 APPLY_3 TextClose VAR1 \x02\x13 END
+\x00  
+SEQ1 8\x12\x00\x0c
+SEQ4 Z\x02\x00 \x02\x00\x00 \x88\x02\x00 \x02\x00\x005 Z\x02\x00 \x02\x00\x00\x03\x03\x00\x00TextClosev\x81\x1f\x02\x13\x00 
 END_SCRIPT

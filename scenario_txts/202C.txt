@@ -1,6 +1,8 @@
 START_SCRIPT
-\xdd\x05\x01\xa4\t3\x01\xa0\x04
-INIT_TEXT SCE202_001 \x06 SCE_TEXT TEXT1 @K\x01 TEXT2 \xd6
+\xdd\x05\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xa4\t3\x01\x00\x00\x00\xa0\x04\x00\x03\x03\x00\x00SCE202_001\x00 \x06\x00\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 @K\x01\x0c
+SEQ5\x03\xd6\x00\x00
  
 ナタネ\n　「次にふたつめ。\pいま、あなたが体験しているこの世界こそが\n　　『現実』よ。\pそして、『学校に籠城している世界』……教授\n　　はそれを『あなたの妄想が生んだ頭の中の世界』だと信じ込\n　　ませようとしているけれど、それは罠。\pあなたが見たのは『\n　　妄想』ではないわ。\p『記憶』よ」@
 拓司\n　「……」@
@@ -8,12 +10,15 @@ INIT_TEXT SCE202_001 \x06 SCE_TEXT TEXT1 @K\x01 TEXT2 \xd6
 　　……教授は、機械を使ってあなたの記憶を消し去った。@
 　　でも、消しきれなかった記憶の断片が、眠りの中で映画みた\n　　いに甦っている。\p……あなたは過去を繰り返して体験してい\n　　る。\p……つまり、あなたは虎菱拓司なの。\pあなたが記憶して\n　　いる『自分』は、真実よ。\p妄想の産物ではない。\p波動が襲っ\n　　てきて、あなたたちは実験室に籠城した。\pそれは過去の事実\n　　なの。\p……いいわね？」\
 
-  
-INIT J\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF \xc2\x03 APPlY_2 TextOn RUNF \xf0\x03 END\x03\x0c
+\x00\x00\x00  
+SEQ1 J\x00\x00\x0c
+SEQ4\x03\x07\x00\x00.\\Data\\Script\\TextFunc.Fob SPC1 \xc2\x03\x00 
+SEQ2\x00\x00TextOn SPC1 \xf0\x03\x00 \x02\x00\x005\x03\x0c\x00\x00
 CHOICE
 もう一度聞く\n黙って続きを聞く\n\l0,2,
 ENDCHOICE
 
-  
-INIT \x0c\x04\x0c SET_VAR1 \xc2\x03 \x02 \xf0\x03 END \xc2\x03 APPLY_3 TextClose VAR1 \x82\x04 END
+\x00  
+SEQ1 \x0c\x04\x00\x0c
+SEQ4 \xc2\x03\x00 \x02\x00\x00 \xf0\x03\x00 \x02\x00\x005 \xc2\x03\x00 \x02\x00\x00\x03\x03\x00\x00TextClosev\x81\x1f\x82\x04\x00 
 END_SCRIPT

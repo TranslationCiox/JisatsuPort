@@ -1,13 +1,23 @@
 START_SCRIPT
-\x0c\r\x01`B#\x01\xf0\n  
-INIT \x04\x01\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bgm.Fob VAR1   APPlY_2 PlayCD RUNF J END
-INIT_TEXT SCE232_001 f SCE_TEXT TEXT1  z\x01 TEXT2 \x13
+\x0c\r\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xf0\n\x00  
+SEQ1 \x04\x01\x00\x0c
+SEQ4\x03\x06\x00\x00.\\Data\\Script\\Bgm.Fobv\x81\x1f \x00\x00 
+SEQ2\x00\x00PlayCD SPC1 J\x00\x00 
+SEQ6 SCE232_001\x00 f\x00\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3  z\x01\x0c
+SEQ5\x03\x13\x00\x00
  
 \n\n\n\n\n\n\n\n\n\n　　　　　　　『おんなのこと、うちゅうじん』\
 
-  
-INIT \xaa\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF \x16\x01 APPlY_2 TextOn RUNF D\x01 END
-INIT_TEXT SCE232_002 `\x01 SCE_TEXT TEXT1 $z\x01 TEXT2 \xdf
+\x00\x00\x00  
+SEQ1 \xaa\x00\x00\x0c
+SEQ4\x03\x07\x00\x00.\\Data\\Script\\TextFunc.Fob SPC1 \x16\x01\x00 
+SEQ2\x00\x00TextOn SPC1 D\x01\x00 
+SEQ6 SCE232_002\x00 `\x01\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 $z\x01\x0c
+SEQ5\x03\xdf\x00\x00
  
 　あるところに、なたねという女の子がいました。@
 \n　なたねにはお母さんがいませんでした。\pお母さんはなたねが小\nさいときに病気で死んでしまったのです。\pお父さんも、本当のお\n父さんではなく、お母さんの再婚相手でした。\pそれでもなたねは、\n寂しいなんて思うことはありませんでした。@
@@ -16,9 +26,13 @@ INIT_TEXT SCE232_002 `\x01 SCE_TEXT TEXT1 $z\x01 TEXT2 \xdf
 　でも、なたねが幸せだったのは、お義父さんがお金持ちだから\nではなくて、お義父さんが本当に素敵な人だったからです。@
 　お義父さんはなたねのことを大切に、大切に育ててくれました。\n\p　一度、なたねがひどい風邪を引いたときには、大切なお仕事を\n放り出して看病についてくれました（お義父さんはそのせいで、\n病院をクビになってしまったので、新しい仕事先を探さなければ\nならなくなりました）。\pしかもお義父さんは、勉強をしなさい、\nＴＶは見てはいけません、と、厳しいこともなにひとついいませ\nんでした。\
 
-  
-INIT \xa4\x01\x0c SET_VAR1 \x16\x01 \x02 D\x01 END
-INIT_TEXT SCE232_003 Z\x05 SCE_TEXT TEXT1 (z\x01 TEXT2 \x9e
+\x00  
+SEQ1 \xa4\x01\x00\x0c
+SEQ4 \x16\x01\x00 \x02\x00\x00 D\x01\x00 
+SEQ6 SCE232_003\x00 Z\x05\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 (z\x01\x0c
+SEQ5\x03\x9e\x00\x00
  
 　なたねはお義父さんが大好きでした。@
 　だから言われなくても勉強をしましたし、ＴＶだって少ししか\n見ませんでした。\pそうすればお義父さんが喜んでくれると思った\nからです。@
@@ -26,11 +40,16 @@ INIT_TEXT SCE232_003 Z\x05 SCE_TEXT TEXT1 (z\x01 TEXT2 \x9e
 　勉強ばかりしているのでお友達は少なかったけれど、なたねは\n我慢しました。@
 　ときどき「もういやだなあ」と思うこともあって、そんなとき\nお義父さんは「なたね、あまり勉強ばかりしていると、体に毒だ\nよ」と優しく声をかけてくれました。\pなたねは、そんなお義父さ\nんの声を聞くと、逆に「よし、もっとがんばろう！」と思えたの\nでした。\
 
-  
-INIT \x9e\x05\x0c SET_VAR1 \x16\x01 \x02 D\x01 END \x16\x01 APPLY_3 TextClose VAR1 \\\x08 END
-HERO .\\Data\\Script\\Scenario\\232SubC.Fob RUNF |\x08 APPlY_2 start VAR1 \xb2\x08 END  
-INIT \xc8\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bg.Fob VAR2\xe8\x08 \x02 APPLY_4 BgAutoFadeIn VAR2\x12\t END
-INIT_TEXT SCE232_013 6\t SCE_TEXT TEXT1 Pz\x01 TEXT2 ?
+\x00\x00\x00  
+SEQ1 \x9e\x05\x00\x0c
+SEQ4 \x16\x01\x00 \x02\x00\x00 D\x01\x00 \x02\x00\x005 \x16\x01\x00 \x02\x00\x00\x03\x03\x00\x00TextClosev\x81\x1f\\\x08\x00 \x02\x00\x005\x03\t\x00\x00.\\Data\\Script\\Scenario\\232SubC.Fob SPC1 |\x08\x00 
+SEQ2\x00\x00startv\x81\x1f\xb2\x08\x00 \x02\x00\x005  
+SEQ1 \xc8\x00\x00\x0c
+SEQ4\x03\x06\x00\x00.\\Data\\Script\\Bg.Fob SPC2 \xe8\x08\x00 \x02\x00\x00\x03\x04\x00\x00BgAutoFadeIn SPC2 \x12\t\x00 
+SEQ6 SCE232_013\x00 6\t\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 Pz\x01\x0c
+SEQ5\x03?\x00\x00
  
 　どこかへ走ってゆく汽車の@
 　全財産ぶんの切符を　くださいな@
@@ -40,6 +59,8 @@ INIT_TEXT SCE232_013 6\t SCE_TEXT TEXT1 Pz\x01 TEXT2 ?
 　ただもう　わたしは@
 　ここからはなれてゆきたいのです\
 
-  
-INIT z\t\x0c SET_VAR1 \x16\x01 \x02 D\x01 END NULL APPlY_2 StopCD RUNF \xbc\n END \x16\x01 \x02 \\\x08 END
+\x00\x00\x00  
+SEQ1 z\t\x00\x0c
+SEQ4 \x16\x01\x00 \x02\x00\x00 D\x01\x00 \x02\x00\x005  \x00\x00 
+SEQ2\x00\x00StopCD SPC1 \xbc\n\x00 \x02\x00\x005 \x16\x01\x00 \x02\x00\x00 \\\x08\x00 
 END_SCRIPT

@@ -1,7 +1,11 @@
 START_SCRIPT
-\xc5\x13\x01`B#\x01n\x10  
-INIT \xc9\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bg.Fob VAR2  \x02 APPLY_4 BgAutoFadeIn VAR2J END
-INIT_TEXT SCE235_001 n SCE_TEXT TEXT1 \xd0~\x01 TEXT2 \x19
+\xc5\x13\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00n\x10\x00  
+SEQ1 \xc9\x00\x00\x0c
+SEQ4\x03\x06\x00\x00.\\Data\\Script\\Bg.Fob SPC2  \x00\x00 \x02\x00\x00\x03\x04\x00\x00BgAutoFadeIn SPC2 J\x00\x00 
+SEQ6 SCE235_001\x00 n\x00\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xd0~\x01\x0c
+SEQ5\x03\x19\x00\x00
  
 一瞬、白い部屋の天井が見えた。@
 くるくる回る換気ファン。@
@@ -9,19 +13,32 @@ INIT_TEXT SCE235_001 n SCE_TEXT TEXT1 \xd0~\x01 TEXT2 \x19
 悪夢。@
 悪夢。\
 
-  
-INIT \xb2\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF 6\x01 APPlY_2 TextOn RUNF d\x01 END
-INIT_TEXT SCE235_002 \x80\x01 SCE_TEXT TEXT1 \xd4~\x01\x0c" 6\x01 
-WAVL TextWindowOffDirect \xd0\x01 END  
-INIT \x02\x0c SET_VAR1  \x04
-INIT \x1b\x0c SET_VAR1  \x08
-INIT \x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bgm.Fob VAR1 F\x02 APPlY_2 SePlay RUNF p\x02 END  
-INIT \xc8\x0c SET_VAR1 NULL APPlY_2 BgOn VAR2\xb2\x02 END  
-INIT <\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.fob RUNF \xe8\x02 APPLY_3 WaitTime VAR2\x16\x03 END  
-INIT \xc8\x0c SET_VAR1 NULL \x02 APPLY_4 BgNormalFadeIn RUNF \\\x03 END  
-INIT \x05\x01\x0c SET_VAR1 F\x02 APPlY_2 PlayCD RUNF \xa6\x03 END 6\x01 
-WAVL TextWindowOnDirect RUNF \xce\x03 END  
-INIT \x02\x0c SET_VAR1 F\x02 APPlY_2 SeStop RUNF \x1c\x04 END\x03\x8c
+\x00\x00\x00  
+SEQ1 \xb2\x00\x00\x0c
+SEQ4\x03\x07\x00\x00.\\Data\\Script\\TextFunc.Fob SPC1 6\x01\x00 
+SEQ2\x00\x00TextOn SPC1 d\x01\x00 
+SEQ6 SCE235_002\x00 \x80\x01\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xd4~\x01\x0c
+SEQ5 6\x01\x00 \x02\x00\x00\x03\x05\x00\x00TextWindowOffDirect \xd0\x01\x00 \x02\x00\x005  
+SEQ1 \x02\x00\x00\x0c
+SEQ4  \x04\x00\x00\r\x00\x00 \x1b\x00\x00\x0c
+SEQ4  \x08\x00\x00\r\x00\x00 \x00\x00\x00\x00\x0c
+SEQ4\x03\x06\x00\x00.\\Data\\Script\\Bgm.Fobv\x81\x1fF\x02\x00 
+SEQ2\x00\x00SePlay SPC1 p\x02\x00 \x02\x00\x005  
+SEQ1 \xc8\x00\x00\x0c
+SEQ4  \x00\x00 
+SEQ2\x00\x00BgOn SPC2 \xb2\x02\x00 \x02\x00\x005  
+SEQ1 <\x00\x00\x0c
+SEQ4\x03\x07\x00\x00.\\Data\\Script\\TextFunc.fob SPC1 \xe8\x02\x00 \x02\x00\x00\x03\x03\x00\x00WaitTime SPC2 \x16\x03\x00 \x02\x00\x005  
+SEQ1 \xc8\x00\x00\x0c
+SEQ4  \x00\x00 \x02\x00\x00\x03\x04\x00\x00BgNormalFadeIn SPC1 \\\x03\x00 \x02\x00\x005  
+SEQ1 \x05\x01\x00\x0c
+SEQ4 F\x02\x00 
+SEQ2\x00\x00PlayCD SPC1 \xa6\x03\x00 \x02\x00\x005 6\x01\x00 \x02\x00\x00\x03\x05\x00\x00TextWindowOnDirect SPC1 \xce\x03\x00 \x02\x00\x005  
+SEQ1 \x02\x00\x00\x0c
+SEQ4 F\x02\x00 
+SEQ2\x00\x00SeStop SPC1 \x1c\x04\x00 \x02\x00\x005\x03\x8c\x00\x00
  
 　うっすらと目を開けると、桃色の塊が動いているのが見えた。@
 \n御堂\n　「おら、おら、おら、もっと泣けよ！\p　なに諦めてんだよ！」@
@@ -31,10 +48,15 @@ INIT \x02\x0c SET_VAR1 F\x02 APPlY_2 SeStop RUNF \x1c\x04 END\x03\x8c
 御堂\n　「火傷がキーワードか？\p　おら、火傷女！\p　お前みたいなバケ\n　　モノ抱いてやるだけありがたいと思えよ！\p　……おっ、締ま\n　　る締まる！\p　おもしれえなあ、ケロイド女！」@
 \n……火傷？\
 
-  
-INIT 8\x04\x0c SET_VAR1 6\x01 \x02 d\x01 END  
-INIT [\x0c SET_VAR1 NULL \x02 J END
-INIT_TEXT SCE235_003 \xd6\x06 SCE_TEXT TEXT1 \xd8~\x01 TEXT2 \x99
+\x00  
+SEQ1 8\x04\x00\x0c
+SEQ4 6\x01\x00 \x02\x00\x00 d\x01\x00 \x02\x00\x005  
+SEQ1 [\x00\x00\x0c
+SEQ4  \x00\x00 \x02\x00\x00 J\x00\x00 
+SEQ6 SCE235_003\x00 \xd6\x06\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xd8~\x01\x0c
+SEQ5\x03\x99\x00\x00
  
 拓司はその言葉を、虚ろな意識の中で転がした。@
 火傷……紅葉に……火傷？@
@@ -50,18 +72,26 @@ INIT_TEXT SCE235_003 \xd6\x06 SCE_TEXT TEXT1 \xd8~\x01 TEXT2 \x99
 そういえば、小学生の頃、紅葉の家でボヤ騒ぎがあった。@
 そのときの火傷なのか……？\
 
-  
-INIT \x1a\x07\x0c SET_VAR1 6\x01 \x02 d\x01 END
-INIT_TEXT SCE235_004 \xb8\t SCE_TEXT TEXT1 \xdc~\x01 TEXT2 \x8c
+\x00\x00\x00  
+SEQ1 \x1a\x07\x00\x0c
+SEQ4 6\x01\x00 \x02\x00\x00 d\x01\x00 
+SEQ6 SCE235_004\x00 \xb8\t\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xdc~\x01\x0c
+SEQ5\x03\x8c\x00\x00
  
 錦城\n　「こんな醜い火傷があるんじゃ、いままで処女だったっていう\n　　のもわかるわね。\p恥ずかしくて見せられたもんじゃないもの。\n　　\pこんなみっともない傷を見たら百年の恋も冷めて、どんな男\n　　の子も逃げ出すわよ。\pあ～カワイソウ。\p私だったら世をはか\n　　なんで自殺するけどわね、あはは」@
 御堂\n　「う、うう……すげえ締め付けだ。\p出すぞ……もうすぐ……出\n　　るぞ」@
 錦城\n　「もう五発目よ。\p良く出るわねえ」@
 御堂\n　「おれとは反対の世界に生きてる健全スポーツ少女を犯してる\n　　って思うだけで何回でも出せる…う…くっ、顔に出すぞ！」\
 
-  
-INIT \xfc\t\x0c SET_VAR1 6\x01 \x02 d\x01 END
-INIT_TEXT SCE235_005 f\x0c SCE_TEXT TEXT1 \xe0~\x01 TEXT2 \xd8
+\x00\x00\x00  
+SEQ1 \xfc\t\x00\x0c
+SEQ4 6\x01\x00 \x02\x00\x00 d\x01\x00 
+SEQ6 SCE235_005\x00 f\x0c\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xe0~\x01\x0c
+SEQ5\x03\xd8\x00\x00
  
 　勢い良く放出された精液は、まず、紅葉の鼻先で弾けた。@
 　ペ○スが脈動し、そのたびにねっとりとした液体が、勢いよく\n　顔にひっかかった。\p頬から目、眉に渡って長い白濁のラインが\n　引かれる。\p髪の毛にも飛沫がこびりつき、紅葉の顔は、あっと\n　いうまに惨めなまだら模様に染め上げられた。@
@@ -75,6 +105,7 @@ INIT_TEXT SCE235_005 f\x0c SCE_TEXT TEXT1 \xe0~\x01 TEXT2 \xd8
 \n錦城\n　「さあ、上手に舐めて頂戴」@
 \n/*▲BGM　停止*/\a4,-1,0,0,/*■黒　表示（ノンエフェクト）*/\a7,-1,-1,0,\a0,200,1,0,\a6,0,0,0,拓司の意識が、ふっと遠くなった\
 
-  
-INIT \xaa\x0c\x0c SET_VAR1 6\x01 \x02 d\x01 END 6\x01 APPLY_3 TextClose VAR1 P\x10 END
+\x00  
+SEQ1 \xaa\x0c\x00\x0c
+SEQ4 6\x01\x00 \x02\x00\x00 d\x01\x00 \x02\x00\x005 6\x01\x00 \x02\x00\x00\x03\x03\x00\x00TextClosev\x81\x1fP\x10\x00 
 END_SCRIPT

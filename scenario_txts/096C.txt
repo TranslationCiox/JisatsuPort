@@ -1,12 +1,19 @@
 START_SCRIPT
-\x17\x10\x01`B#\x010\r
-INIT_TEXT SCE096_001 \x06 SCE_TEXT TEXT1 \xa0\xa5 TEXT2 \x11
+\x17\x10\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x000\r\x00\x03\x03\x00\x00SCE096_001\x00 \x06\x00\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xa0\xa5\x00\x0c
+SEQ5\x03\x11\x00\x00
  
 \n\n\n\n\n\n\n\n\n\n　　　　　　　　　　　　　『３日目』\
 
-  
-INIT J\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF \xae APPlY_2 TextOn RUNF \xdc END
-INIT_TEXT SCE096_002 \xf8 SCE_TEXT TEXT1 \xa4\xa5 TEXT2 q
+\x00\x00\x00  
+SEQ1 J\x00\x00\x0c
+SEQ4\x03\x07\x00\x00.\\Data\\Script\\TextFunc.Fob SPC1 \xae\x00\x00 
+SEQ2\x00\x00TextOn SPC1 \xdc\x00\x00 
+SEQ6 SCE096_002\x00 \xf8\x00\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xa4\xa5\x00\x0c
+SEQ5\x03q\x00\x00
  
 　全員の顔に疲労の影を見た拓司は、なたねに提案をした。@
 \n拓司\n　「身体を濡れタオルで洗うのは５日に１回って話だったけど…\n　　…」@
@@ -17,20 +24,31 @@ INIT_TEXT SCE096_002 \xf8 SCE_TEXT TEXT1 \xa4\xa5 TEXT2 q
 なたね\n　「……水は無駄にはできません」\w\n拓司\n　「だろうね。\pでも、無駄にするわけじゃない。@
 　　身体を拭くんだ」\
 
-  
-INIT <\x01\x0c SET_VAR1 \xae \x02 \xdc END
-INIT_TEXT SCE096_003 :\x03 SCE_TEXT TEXT1 \xa8\xa5 TEXT2 i
+\x00  
+SEQ1 <\x01\x00\x0c
+SEQ4 \xae\x00\x00 \x02\x00\x00 \xdc\x00\x00 
+SEQ6 SCE096_003\x00 :\x03\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xa8\xa5\x00\x0c
+SEQ5\x03i\x00\x00
  
 なたね\n　「……５日に１回で衛生的には問題はないと思うんですけど」@
 拓司\n　「衛生的な問題じゃない。\p精神的な問題だ」@
 なたね\n　「……そう。\pリーダーはあなただから」@
 \n　なたねは、準備室から水の入ったポリタンクと、新しいタオル\nを人数分運び出してきた。\p全員で協力して実験器具が詰まった\n棚を移動して壁を作り、そこを即席の『シャワールーム』とした。\n\pもちろん、女性陣のプライバシーを守るためである。\
 
-  
-INIT ~\x03\x0c SET_VAR1 \xae \x02 \xdc END  
-INIT  \x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bg.Fob VAR2v\x05 \x02 APPLY_4 BgAutoFadeIn VAR2\xa0\x05 END  
-INIT \x07\x01\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bgm.Fob VAR1 \xde\x05 APPlY_2 PlayCD RUNF \x08\x06 END
-INIT_TEXT SCE096_004 $\x06 SCE_TEXT TEXT1 \xac\xa5 TEXT2 q
+\x00  
+SEQ1 ~\x03\x00\x0c
+SEQ4 \xae\x00\x00 \x02\x00\x00 \xdc\x00\x00 \x02\x00\x005  
+SEQ1  \x00\x00\x0c
+SEQ4\x03\x06\x00\x00.\\Data\\Script\\Bg.Fob SPC2 v\x05\x00 \x02\x00\x00\x03\x04\x00\x00BgAutoFadeIn SPC2 \xa0\x05\x00 \x02\x00\x005  
+SEQ1 \x07\x01\x00\x0c
+SEQ4\x03\x06\x00\x00.\\Data\\Script\\Bgm.Fobv\x81\x1f\xde\x05\x00 
+SEQ2\x00\x00PlayCD SPC1 \x08\x06\x00 
+SEQ6 SCE096_004\x00 $\x06\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xac\xa5\x00\x0c
+SEQ5\x03q\x00\x00
  
 早桃\n　「やったあ！\p　もう身体がべとべとで、気持ち悪くてしかたな\n　　かったんだよね！」@
 カンナ\n　「うう～ん、生き返るぅ～！」@
@@ -41,9 +59,13 @@ INIT_TEXT SCE096_004 $\x06 SCE_TEXT TEXT1 \xac\xa5 TEXT2 q
 紅葉\n　「わっ！　バカ！\p　触るなっ！」@
 錦城\n　「ふふふ」\
 
-  
-INIT h\x06\x0c SET_VAR1 \xae \x02 \xdc END
-INIT_TEXT SCE096_005 f\x08 SCE_TEXT TEXT1 \xb0\xa5 TEXT2 p
+\x00\x00\x00  
+SEQ1 h\x06\x00\x0c
+SEQ4 \xae\x00\x00 \x02\x00\x00 \xdc\x00\x00 
+SEQ6 SCE096_005\x00 f\x08\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xb0\xa5\x00\x0c
+SEQ5\x03p\x00\x00
  
 早桃\n　「それにしても、錦城先生はさすがですよね……大人の女の人\n　　って感じで」@
 錦城\n　「ありがとう。\p早桃ちゃんも肌が白くて素敵よ？」@
@@ -52,9 +74,13 @@ INIT_TEXT SCE096_005 f\x08 SCE_TEXT TEXT1 \xb0\xa5 TEXT2 p
 　　犯すぞ、まったく！」@
 \n　言葉は汚いが、御堂の声もどこか明るい。\pひんやりとした水の\n冷たさが、全員の気分を高揚させている。\pなんとなく合宿をして\nいるような、そんな感じすらある。\
 
-  
-INIT \xaa\x08\x0c SET_VAR1 \xae \x02 \xdc END
-INIT_TEXT SCE096_006 \xa4\n SCE_TEXT TEXT1 \xb4\xa5 TEXT2 y
+\x00\x00\x00  
+SEQ1 \xaa\x08\x00\x0c
+SEQ4 \xae\x00\x00 \x02\x00\x00 \xdc\x00\x00 
+SEQ6 SCE096_006\x00 \xa4\n\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xb4\xa5\x00\x0c
+SEQ5\x03y\x00\x00
  
 御堂\n　「虎菱、おめえなかなか粋なことしてくれんじゃねえかよ」@
 拓司\n　「リーダーだからな」@
@@ -64,6 +90,7 @@ INIT_TEXT SCE096_006 \xa4\n SCE_TEXT TEXT1 \xb4\xa5 TEXT2 y
 拓司\n　「……そうか」@
 \n　誰が御堂に投票したのだろう……拓司はその疑問を頭から無理\nに追い出した。\pとりあえずいまくらいは、さっぱりと明るい気持\nちでいたかった。\
 
-  
-INIT \xe8\n\x0c SET_VAR1 \xae \x02 \xdc END \xae APPLY_3 TextClose VAR1 \x12\r END
+\x00\x00\x00  
+SEQ1 \xe8\n\x00\x0c
+SEQ4 \xae\x00\x00 \x02\x00\x00 \xdc\x00\x00 \x02\x00\x005 \xae\x00\x00 \x02\x00\x00\x03\x03\x00\x00TextClosev\x81\x1f\x12\r\x00 
 END_SCRIPT

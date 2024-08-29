@@ -1,8 +1,14 @@
 START_SCRIPT
-4!\x01`B#\x01\x90\x1b  
-INIT \n\x01\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bgm.Fob VAR1   APPlY_2 PlayCD RUNF J END  
-INIT \xc8\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bg.Fob VAR2\x80 \x02 APPLY_4 BgAutoFadeIn VAR2\xaa END
-INIT_TEXT SCE242_001 \xce SCE_TEXT TEXT1 \xc0\x89\x01 TEXT2 t
+4!\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\x90\x1b\x00  
+SEQ1 \n\x01\x00\x0c
+SEQ4\x03\x06\x00\x00.\\Data\\Script\\Bgm.Fobv\x81\x1f \x00\x00 
+SEQ2\x00\x00PlayCD SPC1 J\x00\x00 \x02\x00\x005  
+SEQ1 \xc8\x00\x00\x0c
+SEQ4\x03\x06\x00\x00.\\Data\\Script\\Bg.Fob SPC2 \x80\x00\x00 \x02\x00\x00\x03\x04\x00\x00BgAutoFadeIn SPC2 \xaa\x00\x00 
+SEQ6 SCE242_001\x00 \xce\x00\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xc0\x89\x01\x0c
+SEQ5\x03t\x00\x00
  
 拓司\n　「走れッ！」@
 \nいうが早いか、すでに拓司は地を蹴っている。@
@@ -13,17 +19,26 @@ INIT_TEXT SCE242_001 \xce SCE_TEXT TEXT1 \xc0\x89\x01 TEXT2 t
 どんなものなのかわからないまま、彼らはそれを恐れてきた。@
 ただ、最終波動はひたすら、死のイメージだった。@
 死が定義不可能である以上、波動も同じく、理解の範疇の外にあ\nる。\p漠然とした恐怖ですべてを縛るものとして。\w\z
-  
-INIT \x12\x01\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF \x02\x03 APPlY_2 TextOn RUNF 0\x03 END
-INIT_TEXT SCE242_002 L\x03 SCE_TEXT TEXT1 \xc4\x89\x01 TEXT2 F
+\x00  
+SEQ1 \x12\x01\x00\x0c
+SEQ4\x03\x07\x00\x00.\\Data\\Script\\TextFunc.Fob SPC1 \x02\x03\x00 
+SEQ2\x00\x00TextOn SPC1 0\x03\x00 
+SEQ6 SCE242_002\x00 L\x03\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xc4\x89\x01\x0c
+SEQ5\x03F\x00\x00
  
 それがいま、襲いかかろうとしている。@
 爆発を控えて、いま、エンジンを高らかにふかしている。@
 あの銀紙のシェルターがそれに耐えうるのかどうかも。@
 しかし、どこから襲ってくるかわからないむきだしの死に身を晒\nすより、どんなに薄かろうとも鎧をまとっている方がマシだった。\w\z
-  
-INIT \x90\x03\x0c SET_VAR1 \x02\x03 \x02 0\x03 END
-INIT_TEXT SCE242_003 \xe2\x04 SCE_TEXT TEXT1 \xc8\x89\x01 TEXT2 h
+\x00\x00\x00  
+SEQ1 \x90\x03\x00\x0c
+SEQ4 \x02\x03\x00 \x02\x00\x00 0\x03\x00 
+SEQ6 SCE242_003\x00 \xe2\x04\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xc8\x89\x01\x0c
+SEQ5\x03h\x00\x00
  
 　地鳴りは徐々に大きくなっていく。@
 低く、重く……それは世界の終末を確信させるに十分な不吉さを\n備えていた。@
@@ -31,10 +46,17 @@ INIT_TEXT SCE242_003 \xe2\x04 SCE_TEXT TEXT1 \xc8\x89\x01 TEXT2 h
 天井から、パラパラとコンクリートの破片が落ちてくる。@
 ピシ、という鋭い音に視線を送ると、廊下の側面にはめ込まれた\n窓ガラスのすべてに亀裂が入ってる。@
 亀裂は、あたかも生命を持っているかのように……雪崩落ちる雷\nのように……窓ガラスを走り……\w\z
-  
-INIT &\x05\x0c SET_VAR1 \x02\x03 \x02 0\x03 END NULL APPlY_2 StopCD RUNF \x0c\x07 END  
-INIT \x02\x0c SET_VAR1 NULL APPlY_2 SeStop RUNF N\x07 END
-INIT_TEXT SCE242_004 j\x07 SCE_TEXT TEXT1 \xcc\x89\x01 TEXT2 ]
+\x00\x00\x00  
+SEQ1 &\x05\x00\x0c
+SEQ4 \x02\x03\x00 \x02\x00\x00 0\x03\x00 \x02\x00\x005  \x00\x00 
+SEQ2\x00\x00StopCD SPC1 \x0c\x07\x00 \x02\x00\x005  
+SEQ1 \x02\x00\x00\x0c
+SEQ4  \x00\x00 
+SEQ2\x00\x00SeStop SPC1 N\x07\x00 
+SEQ6 SCE242_004\x00 j\x07\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xcc\x89\x01\x0c
+SEQ5\x03]\x00\x00
  
 ざあっ！@
 \n足の裏から頭のてっぺんへ。@
@@ -43,10 +65,15 @@ INIT_TEXT SCE242_004 j\x07 SCE_TEXT TEXT1 \xcc\x89\x01 TEXT2 ]
 爆風のように、なにかが自分のなかを通り過ぎたのがわかった。@
 その風は、身体のなかをすり抜けていった。@
 細胞の隙間を縫うように奔り、身体を構成する肉すべてに毒を与\nえて通り過ぎていった。\w\z
-  
-INIT \xae\x07\x0c SET_VAR1 \x02\x03 \x02 0\x03 END  
-INIT \x0b\x01\x0c SET_VAR1 NULL \x02 J END
-INIT_TEXT SCE242_005 \x90\t SCE_TEXT TEXT1 \xd0\x89\x01 TEXT2 \x8a
+\x00\x00\x00  
+SEQ1 \xae\x07\x00\x0c
+SEQ4 \x02\x03\x00 \x02\x00\x00 0\x03\x00 \x02\x00\x005  
+SEQ1 \x0b\x01\x00\x0c
+SEQ4  \x00\x00 \x02\x00\x00 J\x00\x00 
+SEQ6 SCE242_005\x00 \x90\t\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xd0\x89\x01\x0c
+SEQ5\x03\x8a\x00\x00
  
 \a2,0,33,1,\a6,0,0,0,キイイイイイイイイイイイイイイイイイイイイイイイイイイイイ！\n\p\a3,0,0,0,\a4,0,0,0,\n拓司\n　「！」@
 \n蜥蜴の悲鳴だった。@
@@ -57,8 +84,12 @@ INIT_TEXT SCE242_005 \x90\t SCE_TEXT TEXT1 \xd0\x89\x01 TEXT2 \x8a
 夢幻に反射を繰り返して、さらに新しい悲鳴が雪崩のように流れ\n込んできては反射した。@
 頭そのものが爆発しないのが不思議だった。\w\z
   
-INIT \xd4\t\x0c SET_VAR1 \x02\x03 \x02 0\x03 END
-INIT_TEXT SCE242_006 6\x0c SCE_TEXT TEXT1 \xd4\x89\x01 TEXT2 }
+SEQ1 \xd4\t\x00\x0c
+SEQ4 \x02\x03\x00 \x02\x00\x00 0\x03\x00 
+SEQ6 SCE242_006\x00 6\x0c\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xd4\x89\x01\x0c
+SEQ5\x03}\x00\x00
  
 拓司\n　「ああああああああああああ！」@
 \n拓司は耳をふさいでうずくまった。@
@@ -68,9 +99,13 @@ INIT_TEXT SCE242_006 6\x0c SCE_TEXT TEXT1 \xd4\x89\x01 TEXT2 }
 床にうずくまって身体を団子虫のように丸めたカンナは、自らの\n頭をガンガンと床にたたきつけていた。@
 やがてぐったりと仰向けに転がると、ぴくぴくと身体を痙攣させ\n始める。@
 白目をむき、耳から、鼻から、どす黒い血があふれ出している。\w\z
-  
-INIT z\x0c\x0c SET_VAR1 \x02\x03 \x02 0\x03 END
-INIT_TEXT SCE242_007 \xa8\x0e SCE_TEXT TEXT1 \xd8\x89\x01 TEXT2 \xa1
+\x00  
+SEQ1 z\x0c\x00\x0c
+SEQ4 \x02\x03\x00 \x02\x00\x00 0\x03\x00 
+SEQ6 SCE242_007\x00 \xa8\x0e\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xd8\x89\x01\x0c
+SEQ5\x03\xa1\x00\x00
  
 拓司\n　「カンナアアアアアアアア！」@
 \n拓司は叫んだ。@
@@ -85,17 +120,25 @@ INIT_TEXT SCE242_007 \xa8\x0e SCE_TEXT TEXT1 \xd8\x89\x01 TEXT2 \xa1
 檻に閉じこめて、鎖に繋ぐことができる、ただの生き物でしかな\nいのだ。@
 解決されつつあることなのだ。@
 あるいは、解決されるべきものなのだ。\w\z
-  
-INIT \xec\x0e\x0c SET_VAR1 \x02\x03 \x02 0\x03 END
-INIT_TEXT SCE242_008 \xaa\x11 SCE_TEXT TEXT1 \xdc\x89\x01 TEXT2 9
+\x00  
+SEQ1 \xec\x0e\x00\x0c
+SEQ4 \x02\x03\x00 \x02\x00\x00 0\x03\x00 
+SEQ6 SCE242_008\x00 \xaa\x11\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xdc\x89\x01\x0c
+SEQ5\x039\x00\x00
  
 数メートル向こうに、カンナの姿が見える。@
 拓司は一歩踏み出した。@
 その足をじっと見つめ、そして反対側の足を前に出す。@
 そうして一歩……一歩……忘れてしまった歩き方を思い出すかの\nように、拓司はゆっくりと歩き始めた。\w\z
-  
-INIT \xee\x11\x0c SET_VAR1 \x02\x03 \x02 0\x03 END
-INIT_TEXT SCE242_009 \x0c\x13 SCE_TEXT TEXT1 \xe0\x89\x01 TEXT2 m
+\x00  
+SEQ1 \xee\x11\x00\x0c
+SEQ4 \x02\x03\x00 \x02\x00\x00 0\x03\x00 
+SEQ6 SCE242_009\x00 \x0c\x13\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xe0\x89\x01\x0c
+SEQ5\x03m\x00\x00
  
 /*▲SE33　ループ再生*/\a2,2,33,1,キイイイイイイイイイイイイイイイイイイイイイイイイイイイイ\nイイイイイイイ！@
 \nいつの間にか、鼻血が流れ出している。@
@@ -103,9 +146,13 @@ INIT_TEXT SCE242_009 \x0c\x13 SCE_TEXT TEXT1 \xe0\x89\x01 TEXT2 m
 \nキイイイイイイイイイイイイイイイイイイイイイイイイイイイイ\nイイイイイイイ！@
 \nここから俺は始まるのだ。@
 \nキイイイイイイイイイイイイイイイイイイイイイイイイイイイイ\nイイイイイイイ！\w/*▲SE　停止*/\a4,2,0,0,\z
-  
-INIT P\x13\x0c SET_VAR1 \x02\x03 \x02 0\x03 END NULL \x02 \x0c\x07 END
-INIT_TEXT SCE242_010 X\x15 SCE_TEXT TEXT1 \xe4\x89\x01 TEXT2 e
+\x00\x00  
+SEQ1 P\x13\x00\x0c
+SEQ4 \x02\x03\x00 \x02\x00\x00 0\x03\x00 \x02\x00\x005  \x00\x00 \x02\x00\x00 \x0c\x07\x00 
+SEQ6 SCE242_010\x00 X\x15\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xe4\x89\x01\x0c
+SEQ5\x03e\x00\x00
  
 こうして旅が始まったいま、俺にはいまや目的があるのだ。@
 何かから逃げているのではなく、何かに向かっているのだ。@
@@ -116,9 +163,13 @@ INIT_TEXT SCE242_010 X\x15 SCE_TEXT TEXT1 \xe4\x89\x01 TEXT2 e
 \n拓司\n　「カンナ！」@
 \nカンナは動かない。\nすでに痙攣すらしていない。@
 拓司は、カンナの上に身体を重ねた。\w\z
-  
-INIT \x9c\x15\x0c SET_VAR1 \x02\x03 \x02 0\x03 END
-INIT_TEXT SCE242_011 j\x17 SCE_TEXT TEXT1 \xe8\x89\x01 TEXT2 g
+\x00  
+SEQ1 \x9c\x15\x00\x0c
+SEQ4 \x02\x03\x00 \x02\x00\x00 0\x03\x00 
+SEQ6 SCE242_011\x00 j\x17\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xe8\x89\x01\x0c
+SEQ5\x03g\x00\x00
  
 拓司\n　「カンナ！」@
 \n動かなくなったカンナの身体をきつく抱きしめていると、頭のな\nかでなにかがショートしたのを感じた。@
@@ -126,10 +177,15 @@ INIT_TEXT SCE242_011 j\x17 SCE_TEXT TEXT1 \xe8\x89\x01 TEXT2 g
 悲鳴にも、雄叫びにも似た、熱い塊がぐんぐんとせり上がってく\nる。\pそうして拓司は腹の底から哄笑を放った。@
 \n/*■CG53　表示*/\a7,-2,-2,0,\a0,52,2,0,\a6,-2,0,0,拓司\n　「俺は勝った！　勝ったんだ！@
 　　ワハ、ワハ、ワハハハハハハハハハハ！」\w\z
-  
-INIT \xae\x17\x0c SET_VAR1 \x02\x03 \x02 0\x03 END  
-INIT \xc9\x0c SET_VAR1 \x80 \x02 \xaa END
-INIT_TEXT SCE242_012 \xb8\x19 SCE_TEXT TEXT1 \xec\x89\x01 TEXT2 L
+\x00  
+SEQ1 \xae\x17\x00\x0c
+SEQ4 \x02\x03\x00 \x02\x00\x00 0\x03\x00 \x02\x00\x005  
+SEQ1 \xc9\x00\x00\x0c
+SEQ4 \x80\x00\x00 \x02\x00\x00 \xaa\x00\x00 
+SEQ6 SCE242_012\x00 \xb8\x19\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xec\x89\x01\x0c
+SEQ5\x03L\x00\x00
  
 ふいに目の前が真っ白になった。@
 すべての音が聞こえなくなった。@
@@ -139,6 +195,7 @@ INIT_TEXT SCE242_012 \xb8\x19 SCE_TEXT TEXT1 \xec\x89\x01 TEXT2 L
 ただ、自分の身体が分子にまで砕けて世界と一体化していくのを\n感じながら、拓司は思った。@
 俺は勝った。@
 勝ったんだ、と。\w\z
-  
-INIT \xfc\x19\x0c SET_VAR1 \x02\x03 \x02 0\x03 END \x02\x03 APPLY_3 TextClose VAR1 r\x1b END
+\x00\x00\x00  
+SEQ1 \xfc\x19\x00\x0c
+SEQ4 \x02\x03\x00 \x02\x00\x00 0\x03\x00 \x02\x00\x005 \x02\x03\x00 \x02\x00\x00\x03\x03\x00\x00TextClosev\x81\x1fr\x1b\x00 
 END_SCRIPT

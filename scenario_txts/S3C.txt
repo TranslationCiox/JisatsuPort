@@ -1,7 +1,12 @@
 START_SCRIPT
-G\x1a\x01`B#\x01j\x16  
-INIT \x04\x01\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bgm.Fob VAR1   APPlY_2 PlayCD RUNF J END
-INIT_TEXT SCES03_001 f SCE_TEXT TEXT1 \xd0\xb5\x01 TEXT2 \x8b
+G\x1a\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00j\x16\x00  
+SEQ1 \x04\x01\x00\x0c
+SEQ4\x03\x06\x00\x00.\\Data\\Script\\Bgm.Fobv\x81\x1f \x00\x00 
+SEQ2\x00\x00PlayCD SPC1 J\x00\x00 
+SEQ6 SCES03_001\x00 f\x00\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xd0\xb5\x01\x0c
+SEQ5\x03\x8b\x00\x00
  
 ずっと前に手術を受けて、身体はうんと良くなったの。@
 でも、みんなと一緒に運動とかはできなかったし、旅行とかにも\n行けなかった。\pだからかな、なんだかみんなとはあまり仲良くな\nれなかった。\pどんなに一緒にいても、結局最後のところで私は違\nうんだな、って思ってた。@
@@ -12,9 +17,14 @@ INIT_TEXT SCES03_001 f SCE_TEXT TEXT1 \xd0\xb5\x01 TEXT2 \x8b
 気を使って、仲良くしてくれているんだな、って。わかってた。@
 よく夢を見たの。\
 
-  
-INIT \xaa\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF \xf6\x02 APPlY_2 TextOn RUNF $\x03 END
-INIT_TEXT SCES03_002 @\x03 SCE_TEXT TEXT1 \xd4\xb5\x01 TEXT2 \x89
+\x00\x00\x00  
+SEQ1 \xaa\x00\x00\x0c
+SEQ4\x03\x07\x00\x00.\\Data\\Script\\TextFunc.Fob SPC1 \xf6\x02\x00 
+SEQ2\x00\x00TextOn SPC1 $\x03\x00 
+SEQ6 SCES03_002\x00 @\x03\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xd4\xb5\x01\x0c
+SEQ5\x03\x89\x00\x00
  
 クラスのみんなと宇宙船で旅行してるとね、事故が起きるの。@
 脱出ポットには人数制限があって、どうしても１人だけ宇宙船に\n残らなくちゃいけない。\pみんな困った顔で、うつむいてる。@
@@ -26,9 +36,13 @@ INIT_TEXT SCES03_002 @\x03 SCE_TEXT TEXT1 \xd4\xb5\x01 TEXT2 \x89
 でも、悲しかった。@
 なんだかとても悲しかった。\
 
-  
-INIT \x84\x03\x0c SET_VAR1 \xf6\x02 \x02 $\x03 END
-INIT_TEXT SCES03_003 \xe2\x05 SCE_TEXT TEXT1 \xd8\xb5\x01 TEXT2 \xde
+\x00\x00\x00  
+SEQ1 \x84\x03\x00\x0c
+SEQ4 \xf6\x02\x00 \x02\x00\x00 $\x03\x00 
+SEQ6 SCES03_003\x00 \xe2\x05\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xd8\xb5\x01\x0c
+SEQ5\x03\xde\x00\x00
  
 手術してからも、本当のお友達はできなかった。@
 ずっと昔は、みんなが気を使って友達のふりをしてくれるのが嫌\nで仕方がなかったけど、学生になってからは、それすらなくなち\nゃった。@
@@ -42,9 +56,13 @@ INIT_TEXT SCES03_003 \xe2\x05 SCE_TEXT TEXT1 \xd8\xb5\x01 TEXT2 \xde
 だから、学校には行かないで、街のなかをぶらぶらしてた。@
 朝は公園でぼんやりして、９時４５分になったら図書館に行って、\nお昼まで本を読むの。\pそれからデパートに行って、いろんなもの\nを見て、屋上に行く\p。平日の昼間の屋上って、誰もいないんだよ。\n\pそんな、誰もいない屋上で、ドルチェとお話ししてた。\
 
-  
-INIT &\x06\x0c SET_VAR1 \xf6\x02 \x02 $\x03 END
-INIT_TEXT SCES03_004 \xd8\t SCE_TEXT TEXT1 \xdc\xb5\x01 TEXT2 \xa3
+\x00  
+SEQ1 &\x06\x00\x0c
+SEQ4 \xf6\x02\x00 \x02\x00\x00 $\x03\x00 
+SEQ6 SCES03_004\x00 \xd8\t\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xdc\xb5\x01\x0c
+SEQ5\x03\xa3\x00\x00
  
 「ねえドルチェ」@
 『なんニャ、早桃ちゃん？』@
@@ -56,10 +74,15 @@ INIT_TEXT SCES03_004 \xd8\t SCE_TEXT TEXT1 \xdc\xb5\x01 TEXT2 \xa3
 「ドルチェ、早桃はもう笑う力も残ってないよ。\pどうすればいい\n　のかな？」@
 『答はね、早桃ちゃん。\p風のなかにあるニャ』\
 
-  
-INIT \x1c\n\x0c SET_VAR1 \xf6\x02 \x02 $\x03 END  
-INIT B\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bg.Fob VAR2\xfc\x0c \x02 APPLY_4 BgAutoFadeIn VAR2&\r END
-INIT_TEXT SCES03_005 J\r SCE_TEXT TEXT1 \xe0\xb5\x01 TEXT2 |
+\x00\x00\x00  
+SEQ1 \x1c\n\x00\x0c
+SEQ4 \xf6\x02\x00 \x02\x00\x00 $\x03\x00 \x02\x00\x005  
+SEQ1 B\x00\x00\x0c
+SEQ4\x03\x06\x00\x00.\\Data\\Script\\Bg.Fob SPC2 \xfc\x0c\x00 \x02\x00\x00\x03\x04\x00\x00BgAutoFadeIn SPC2 &\r\x00 
+SEQ6 SCES03_005\x00 J\r\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xe0\xb5\x01\x0c
+SEQ5\x03|\x00\x00
  
 ある日、いつもみたいに屋上でぼんやりしていると、声をかけら\nれたの。\pお父さんと同じくらいの歳の人で……あ、前のお父さん\nだよ……すごく優しそうな人だった。@
 一緒にご飯食べない？\p　ってその人はいった。@
@@ -70,10 +93,15 @@ INIT_TEXT SCES03_005 J\r SCE_TEXT TEXT1 \xe0\xb5\x01 TEXT2 |
 \nうん、いいよ。\p一緒にご飯食べる。@
 でも、どれくらいなの？　って。\
 
-  
-INIT \x8e\r\x0c SET_VAR1 \xf6\x02 \x02 $\x03 END  
-INIT \xc8\x0c SET_VAR1 \xfc\x0c \x02 &\r END
-INIT_TEXT SCES03_006 \xec\x0f SCE_TEXT TEXT1 \xe4\xb5\x01 TEXT2 j
+\x00\x00\x00  
+SEQ1 \x8e\r\x00\x0c
+SEQ4 \xf6\x02\x00 \x02\x00\x00 $\x03\x00 \x02\x00\x005  
+SEQ1 \xc8\x00\x00\x0c
+SEQ4 \xfc\x0c\x00 \x02\x00\x00 &\r\x00 
+SEQ6 SCES03_006\x00 \xec\x0f\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xe4\xb5\x01\x0c
+SEQ5\x03j\x00\x00
  
 ……びっくりした？@
 言い訳する気はないよ。\pでも、ひとつだけ信じて欲しいのは、お\n金なんかどうでも良かったってこと。\pただ、こういうときは、値\n段を聞いておくものじゃないかなと思ったから、聞いただけ。@
@@ -83,9 +111,13 @@ INIT_TEXT SCES03_006 \xec\x0f SCE_TEXT TEXT1 \xe4\xb5\x01 TEXT2 j
 なんだか普通の女の子になったみたいな気がして。@
 特別扱いじゃなくて、普通の、どこにでもいる女の子として扱っ\nてもらってるんだなって。\
 
-  
-INIT 0\x10\x0c SET_VAR1 \xf6\x02 \x02 $\x03 END
-INIT_TEXT SCES03_007 \x12\x12 SCE_TEXT TEXT1 \xe8\xb5\x01 TEXT2 \xe2
+\x00  
+SEQ1 0\x10\x00\x0c
+SEQ4 \xf6\x02\x00 \x02\x00\x00 $\x03\x00 
+SEQ6 SCES03_007\x00 \x12\x12\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \xe8\xb5\x01\x0c
+SEQ5\x03\xe2\x00\x00
  
 一緒にご飯を食べて、いろんなお話をした。@
 みんな、ウソのお話。早桃は活発なクラスの人気者で、いろいろ\n遊びなんかも経験してる子って設定なの。@
@@ -100,6 +132,8 @@ INIT_TEXT SCES03_007 \x12\x12 SCE_TEXT TEXT1 \xe8\xb5\x01 TEXT2 \xe2
 生まれて初めて、私は体が弱い女の子っていうシガラミから切り\n離されて、私そのものとして……認識されたって、思った。@
 私は道に落ちている石ころみたいなものじゃなくて、ちゃんと価\n値がある人間なんだって。\
 
-  
-INIT V\x12\x0c SET_VAR1 \xf6\x02 \x02 $\x03 END NULL APPlY_2 StopCD RUNF $\x16 END \xf6\x02 APPLY_3 TextClose VAR1 L\x16 END
+\x00\x00\x00  
+SEQ1 V\x12\x00\x0c
+SEQ4 \xf6\x02\x00 \x02\x00\x00 $\x03\x00 \x02\x00\x005  \x00\x00 
+SEQ2\x00\x00StopCD SPC1 $\x16\x00 \x02\x00\x005 \xf6\x02\x00 \x02\x00\x00\x03\x03\x00\x00TextClosev\x81\x1fL\x16\x00 
 END_SCRIPT

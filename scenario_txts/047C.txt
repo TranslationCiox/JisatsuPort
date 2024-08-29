@@ -1,15 +1,22 @@
 START_SCRIPT
-\xd3\x08\x01`B#\x01:\x07
-INIT_TEXT SCE047_001 \x06 SCE_TEXT TEXT1 \x10Y TEXT2 ~
+\xd3\x08\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00:\x07\x00\x03\x03\x00\x00SCE047_001\x00 \x06\x00\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \x10Y\x00\x0c
+SEQ5\x03~\x00\x00
  
 なたね\n　「お願いします」@
 \nなたねがいった。\p真剣な顔だった。@
 \nなたね\n　「虎菱くんも協力してください。\p虎菱くんならきっとわかって\n　　もらえると思うから。\pね？　お願い」@
 御堂\n　「なたねちゃんがそんなに頼んでるのに、お前、ひどいヤツだ\n　　なア。\p電波系ってだけで最初からシカトってのは、ハッキリ\n　　いって差別だぜ？\p　お前、もうちょっとシャカイテキジャク\n　　シャに対する思いやりってやつを考えろよ、ナ？\p　それとも\n　　なにか、お前、なたねちゃんのことバカにしてんのか？」\
 
-  
-INIT J\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF b\x02 APPlY_2 TextOn RUNF \x90\x02 END
-INIT_TEXT SCE047_002 \xac\x02 SCE_TEXT TEXT1 \x14Y TEXT2 Z
+\x00  
+SEQ1 J\x00\x00\x0c
+SEQ4\x03\x07\x00\x00.\\Data\\Script\\TextFunc.Fob SPC1 b\x02\x00 
+SEQ2\x00\x00TextOn SPC1 \x90\x02\x00 
+SEQ6 SCE047_002\x00 \xac\x02\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \x14Y\x00\x0c
+SEQ5\x03Z\x00\x00
  
 眼鏡の奥、なたねの目が潤み始めた。@
 \n拓司\n　「わかった。行くよ」@
@@ -17,8 +24,12 @@ INIT_TEXT SCE047_002 \xac\x02 SCE_TEXT TEXT1 \x14Y TEXT2 Z
 /*■黒　表示（クロスフェード）　*/\a7,-2,-2,0,\a0,200,2,0,\a6,-2,0,0,/*▲BGM　停止　*/\a4,-1,0,0,\n御堂はついてこい、と目で合図を送り、そのまま４階の廊下へと\n曲がって消えてゆく。\n取り巻き連中が、拓司に一瞥を送ってか\nら、あとに続く。\
 
   
-INIT \xf0\x02\x0c SET_VAR1 b\x02 \x02 \x90\x02 END
-INIT_TEXT SCE047_003 \x92\x04 SCE_TEXT TEXT1 \x18Y TEXT2 \x80
+SEQ1 \xf0\x02\x00\x0c
+SEQ4 b\x02\x00 \x02\x00\x00 \x90\x02\x00 
+SEQ6 SCE047_003\x00 \x92\x04\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \x18Y\x00\x0c
+SEQ5\x03\x80\x00\x00
  
 なたね\n　「行きましょう？」@
 \n　なたねに促されて、拓司もまた、階段を下りて４階へと向かっ\n　た。@
@@ -28,6 +39,7 @@ INIT_TEXT SCE047_003 \x92\x04 SCE_TEXT TEXT1 \x18Y TEXT2 \x80
 なたね\n　「大丈夫よ」@
 \n　言ってなたねは、躊躇することなく男子トイレへと入っていっ\n　た。\pひとり廊下に取り残された拓司も、慌てて後を追う。\
 
-  
-INIT \xd6\x04\x0c SET_VAR1 b\x02 \x02 \x90\x02 END b\x02 APPLY_3 TextClose VAR1 \x1c\x07 END
+\x00\x00\x00  
+SEQ1 \xd6\x04\x00\x0c
+SEQ4 b\x02\x00 \x02\x00\x00 \x90\x02\x00 \x02\x00\x005 b\x02\x00 \x02\x00\x00\x03\x03\x00\x00TextClosev\x81\x1f\x1c\x07\x00 
 END_SCRIPT

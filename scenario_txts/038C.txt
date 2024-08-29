@@ -1,7 +1,12 @@
 START_SCRIPT
-\x07\x0e\x01`B#\x01X\x0b  
-INIT \x08\x01\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bgm.Fob VAR1   APPlY_2 PlayCD RUNF J END
-INIT_TEXT SCE038_001 f SCE_TEXT TEXT1 K TEXT2 a
+\x07\x0e\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00X\x0b\x00  
+SEQ1 \x08\x01\x00\x0c
+SEQ4\x03\x06\x00\x00.\\Data\\Script\\Bgm.Fobv\x81\x1f \x00\x00 
+SEQ2\x00\x00PlayCD SPC1 J\x00\x00 
+SEQ6 SCE038_001\x00 f\x00\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \x00K\x00\x0c
+SEQ5\x03a\x00\x00
  
 話題が奈落へと転がり始めたことを悟った拓司は、慌てて話題を\n転じた。@
 \n拓司\n　「おやじから、夏の旅行の話って、聞いてるか？」@
@@ -11,9 +16,14 @@ INIT_TEXT SCE038_001 f SCE_TEXT TEXT1 K TEXT2 a
 無表情だったが、それが仮面にすぎないことは、拓司にもすぐに\nわかった。@
 やがて早桃がポツリといった。\
 
-  
-INIT \xaa\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF N\x02 APPlY_2 TextOn RUNF |\x02 END
-INIT_TEXT SCE038_002 \x98\x02 SCE_TEXT TEXT1 \x04K TEXT2 b
+\x00\x00\x00  
+SEQ1 \xaa\x00\x00\x0c
+SEQ4\x03\x07\x00\x00.\\Data\\Script\\TextFunc.Fob SPC1 N\x02\x00 
+SEQ2\x00\x00TextOn SPC1 |\x02\x00 
+SEQ6 SCE038_002\x00 \x98\x02\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \x04K\x00\x0c
+SEQ5\x03b\x00\x00
  
 早桃\n　「……ホント？」@
 拓司\n　「ああ。\pでも香港って言われてもなあ。@
@@ -24,9 +34,13 @@ INIT_TEXT SCE038_002 \x98\x02 SCE_TEXT TEXT1 \x04K TEXT2 b
 　　あれ着てマラソンでもしたら、なんだか強くなりそうな気が\n　　する」@
 \n　早桃の顔に、ようやく柔らかい笑顔が戻った。\
 
-  
-INIT \xdc\x02\x0c SET_VAR1 N\x02 \x02 |\x02 END
-INIT_TEXT SCE038_003 \x9e\x04 SCE_TEXT TEXT1 \x08K TEXT2 L
+\x00\x00\x00  
+SEQ1 \xdc\x02\x00\x0c
+SEQ4 N\x02\x00 \x02\x00\x00 |\x02\x00 
+SEQ6 SCE038_003\x00 \x9e\x04\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \x08K\x00\x0c
+SEQ5\x03L\x00\x00
  
 早桃\n　「おにいちゃん、カンフー映画好きだもんね」@
 拓司\n　「まあな」@
@@ -37,9 +51,13 @@ INIT_TEXT SCE038_003 \x9e\x04 SCE_TEXT TEXT1 \x08K TEXT2 L
 拓司\n　「カンフー……カンフーと……@
 　　あと、香港といえばブランド品の買い物だな」\
 
-  
-INIT \xe2\x04\x0c SET_VAR1 N\x02 \x02 |\x02 END
-INIT_TEXT SCE038_004 L\x06 SCE_TEXT TEXT1 \x0cK TEXT2 P
+\x00  
+SEQ1 \xe2\x04\x00\x0c
+SEQ4 N\x02\x00 \x02\x00\x00 |\x02\x00 
+SEQ6 SCE038_004\x00 L\x06\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \x0cK\x00\x0c
+SEQ5\x03P\x00\x00
  
 早桃\n　「うん」@
 拓司\n　「しかし、おふくろはいいだろうけど、早桃はなあ」@
@@ -48,9 +66,13 @@ INIT_TEXT SCE038_004 L\x06 SCE_TEXT TEXT1 \x0cK TEXT2 P
 \n　そう笑っていった拓司だったが、ふと横を見やって、早桃が真\n剣な顔で自分を見つめているのに気がつき、はっと息を呑んだ。@
 \n拓司\n　「……？」\
 
-  
-INIT \x90\x06\x0c SET_VAR1 N\x02 \x02 |\x02 END
-INIT_TEXT SCE038_005 \n\x08 SCE_TEXT TEXT1 \x10K TEXT2 H
+\x00\x00\x00  
+SEQ1 \x90\x06\x00\x0c
+SEQ4 N\x02\x00 \x02\x00\x00 |\x02\x00 
+SEQ6 SCE038_005\x00 \n\x08\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \x10K\x00\x0c
+SEQ5\x03H\x00\x00
  
 早桃\n　「……わかってないんだね、おにいちゃん」@
 拓司\n　「わかってない？　@
@@ -60,9 +82,13 @@ INIT_TEXT SCE038_005 \n\x08 SCE_TEXT TEXT1 \x10K TEXT2 H
 早桃\n　「憧れじゃないの」@
 拓司\n　「……？」\
 
-  
-INIT N\x08\x0c SET_VAR1 N\x02 \x02 |\x02 END
-INIT_TEXT SCE038_006 \xa8\t SCE_TEXT TEXT1 \x14K TEXT2 B
+\x00  
+SEQ1 N\x08\x00\x0c
+SEQ4 N\x02\x00 \x02\x00\x00 |\x02\x00 
+SEQ6 SCE038_006\x00 \xa8\t\x00 \x02\x00\x00\xef! 
+SEQ1 
+SEQ3 \x14K\x00\x0c
+SEQ5\x03B\x00\x00
  
 早桃\n　「憧れとか、そんなぼんやりしたものじゃないの。@
 　　もっとはっきりした……@
@@ -71,6 +97,7 @@ INIT_TEXT SCE038_006 \xa8\t SCE_TEXT TEXT1 \x14K TEXT2 B
 　　おにいちゃんが知らない早桃が、早桃のなかにはいるの」@
 拓司\n　「……」\
 
-  
-INIT \xec\t\x0c SET_VAR1 N\x02 \x02 |\x02 END N\x02 APPLY_3 TextClose VAR1 :\x0b END
+\x00  
+SEQ1 \xec\t\x00\x0c
+SEQ4 N\x02\x00 \x02\x00\x00 |\x02\x00 \x02\x00\x005 N\x02\x00 \x02\x00\x00\x03\x03\x00\x00TextClosev\x81\x1f:\x0b\x00 
 END_SCRIPT
