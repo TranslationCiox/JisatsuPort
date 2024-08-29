@@ -1,9 +1,9 @@
 START_SCRIPT
 \xa6\n\x01`B#\x01\xbc\x07  
-FLG1 \\\x0c FLG1_SET
+INIT \\\x0c SET_VAR 
 CMD6 .\\Data\\Script\\Bg.Fob VAR2   \x02
 CMD4 BgAutoFadeIn VAR2 J END   
-FLG1 \x04\x01\x0c FLG1_SET
+INIT \x04\x01\x0c SET_VAR 
 CMD6 .\\Data\\Script\\Bgm.Fob VAR1 \x88 
 CMD2 PlayCD RUNF \xb2 END 
 SCEC SCEK04_A01 \xce SCE_DONE 
@@ -19,10 +19,10 @@ TEXT1 X\xa6\x01 TEXT2 \xe0
 まるで史上初めて火を発見した人類みたいな気分だった。@
 どきどきして、誇らしかった。\w\z
   
-FLG1 \x12\x01\x0c FLG1_SET
+INIT \x12\x01\x0c SET_VAR 
 CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \xb2\x04 
 CMD2 TextOn RUNF \xe0\x04 END   
-FLG1 \xc8\x0c FLG1_SET   \x02 J END  \x88 
+INIT \xc8\x0c SET_VAR    \x02 J END  \x88 
 CMD2 StopCD RUNF <\x05 END 
 SCEC SCEK04_A02 X\x05 SCE_DONE 
 TEXT1 \\\xa6\x01 TEXT2 o
@@ -36,6 +36,6 @@ TEXT1 \\\xa6\x01 TEXT2 o
 そしてようやく、ゆきはいった。@
 今日、自分は自殺を決意していたのだと。\w\z
   
-FLG1 \x9c\x05\x0c FLG1_SET \xb2\x04 \x02 \xe0\x04 END  \xb2\x04 
+INIT \x9c\x05\x0c SET_VAR  \xb2\x04 \x02 \xe0\x04 END  \xb2\x04 
 CMD3 TextClose VAR1 \x9e\x07 END 
 END_SCRIPT

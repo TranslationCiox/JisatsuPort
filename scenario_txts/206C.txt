@@ -10,7 +10,7 @@ TEXT1 \x80Q\x01 TEXT2 \x97
 　　あなたは、すべての真実を語って聞かせてくれる者の出現を\n　　……自分を救う者の存在を『願った』。\pだから私は、ここに\n　　『創』られた。\pこの姿……雲居なたねの形として創られた\n　　のは、あなたがそれを望んだから。\p理解できないものの解説\n　　役として、雲居なたねを望んだからなの」\
 
   
-FLG1 J\x0c FLG1_SET
+INIT J\x0c SET_VAR 
 CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \xc6\x02 
 CMD2 TextOn RUNF \xf4\x02 END  \xc6\x02 
 CMD3 TextClose VAR1 \x1c\x03 END 

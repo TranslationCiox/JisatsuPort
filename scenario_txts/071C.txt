@@ -12,7 +12,7 @@ TEXT1 \x90~ TEXT2 o
 ただ、別のコースを選ぶといっても、ここからではひどく遠回り\nな道しか残されていない。\
 
   
-FLG1 J\x0c FLG1_SET
+INIT J\x0c SET_VAR 
 CMD7 .\\Data\\Script\\TextFunc.Fob RUNF &\x02 
 CMD2 TextOn RUNF T\x02 END \x03>
 CHOICE
@@ -20,6 +20,6 @@ CHOICE
 ENDCHOICE
 
   
-FLG1 p\x02\x0c FLG1_SET &\x02 \x02 T\x02 END  &\x02 
+INIT p\x02\x0c SET_VAR  &\x02 \x02 T\x02 END  &\x02 
 CMD3 TextClose VAR1 \xae\x03 END 
 END_SCRIPT

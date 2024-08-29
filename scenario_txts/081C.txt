@@ -3,12 +3,12 @@ A.\x01`B#\x01 '
 SCEC SCE081_001 \x06 SCE_DONE 
 TEXT1 0\x8e TEXT2 \x06.\\Data\\Script\\Bgm.Fob VAR1 J 
 CMD2 StopCD RUNF t END   
-FLG1 \xc9\x0c FLG1_SET
+INIT \xc9\x0c SET_VAR 
 CMD6 .\\Data\\Script\\Bg.Fob VAR2 \xaa \x02
 CMD4 BgAutoFadeIn VAR2 \xd4 END   
-FLG1 \x02\x0c FLG1_SET  \x04
-FLG1 \x06\x0c FLG1_SET  \x08
-FLG1 \x01\x0c FLG1_SET J 
+INIT \x02\x0c SET_VAR   \x04
+INIT \x06\x0c SET_VAR   \x08
+INIT \x01\x0c SET_VAR  J 
 CMD2 SePlay RUNF R\x01 END \x03}
  
 男\n　「目が覚めたかね？」@
@@ -25,7 +25,7 @@ CMD2 SePlay RUNF R\x01 END \x03}
 \n拓司\n　「……夢か？」\
 
   
-FLG1 n\x01\x0c FLG1_SET
+INIT n\x01\x0c SET_VAR 
 CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \x82\x03 
 CMD2 TextOn RUNF \xb0\x03 END 
 SCEC SCE081_002 \xcc\x03 SCE_DONE 
@@ -42,7 +42,7 @@ TEXT1 4\x8e TEXT2 \x8c
 拓司\n　「……教授」\
 
   
-FLG1 \x10\x04\x0c FLG1_SET \x82\x03 \x02 \xb0\x03 END 
+INIT \x10\x04\x0c SET_VAR  \x82\x03 \x02 \xb0\x03 END 
 SCEC SCE081_003 z\x06 SCE_DONE 
 TEXT1 8\x8e TEXT2 p
  
@@ -53,7 +53,7 @@ TEXT1 8\x8e TEXT2 p
 鼻筋はスッと通って唇はうすく、よく言えば理知的な、悪くいえ\nば酷薄な印象を形作っている。\p白髪が目立つ髪をオールバックに\n流し、油で固めている。\
 
   
-FLG1 \xbe\x06\x0c FLG1_SET \x82\x03 \x02 \xb0\x03 END 
+INIT \xbe\x06\x0c SET_VAR  \x82\x03 \x02 \xb0\x03 END 
 SCEC SCE081_004 \xb8\x08 SCE_DONE 
 TEXT1 <\x8e TEXT2 z
  
@@ -64,7 +64,7 @@ TEXT1 <\x8e TEXT2 z
 教授\n　「私はこの病院で、きみの症状を調べ始めてもう９ヶ月になる。\n　　\pつまり、きみは私と９ヶ月一緒にいるということになるね。\n　　\pしかしいま、きみは私を初めて見た人間だと思っている……\n　　そうだね？」\
 
   
-FLG1 \xfc\x08\x0c FLG1_SET \x82\x03 \x02 \xb0\x03 END 
+INIT \xfc\x08\x0c SET_VAR  \x82\x03 \x02 \xb0\x03 END 
 SCEC SCE081_005 \x1e\x0b SCE_DONE 
 TEXT1 @\x8e TEXT2 \xa9
  
@@ -76,7 +76,7 @@ TEXT1 @\x8e TEXT2 \xa9
 教授\n　「ところが君は、あらゆることを忘れている。\pたとえば自分が\n　　誰なのかということも－－」\
 
   
-FLG1 b\x0b\x0c FLG1_SET \x82\x03 \x02 \xb0\x03 END 
+INIT b\x0b\x0c SET_VAR  \x82\x03 \x02 \xb0\x03 END 
 SCEC SCE081_006 @\x0e SCE_DONE 
 TEXT1 D\x8e TEXT2 V
  
@@ -88,7 +88,7 @@ TEXT1 D\x8e TEXT2 V
 教授\n　「なるほど。\p今回は虎菱拓司というのだね、きみの名前は？」\
 
   
-FLG1 \x84\x0e\x0c FLG1_SET \x82\x03 \x02 \xb0\x03 END 
+INIT \x84\x0e\x0c SET_VAR  \x82\x03 \x02 \xb0\x03 END 
 SCEC SCE081_007 \x16\x10 SCE_DONE 
 TEXT1 H\x8e TEXT2 \x88
  
@@ -101,7 +101,7 @@ TEXT1 H\x8e TEXT2 \x88
 拓司\n　「……」\
 
   
-FLG1 Z\x10\x0c FLG1_SET \x82\x03 \x02 \xb0\x03 END 
+INIT Z\x10\x0c SET_VAR  \x82\x03 \x02 \xb0\x03 END 
 SCEC SCE081_008 \xb4\x12 SCE_DONE 
 TEXT1 L\x8e TEXT2 \xab
  
@@ -115,7 +115,7 @@ TEXT1 L\x8e TEXT2 \xab
 しかし……先ほどまで体験していた異常な出来事は、とてもでは\nないが現実世界に起きることとは思えない。\pこの世界のほうが、\n現実的といえばよほど現実的だ。\
 
   
-FLG1 \xf8\x12\x0c FLG1_SET \x82\x03 \x02 \xb0\x03 END 
+INIT \xf8\x12\x0c SET_VAR  \x82\x03 \x02 \xb0\x03 END 
 SCEC SCE081_009 \xde\x15 SCE_DONE 
 TEXT1 P\x8e TEXT2 \xa7
  
@@ -128,7 +128,7 @@ TEXT1 P\x8e TEXT2 \xa7
 拓司が何かを言い出すのを待っているような様子ではあったが、\nさりとて拓司には話すべきことなど何もない。\pとにかく、混乱が\n頭の中でグルグルと渦巻いているだけだ。\
 
   
-FLG1 "\x16\x0c FLG1_SET \x82\x03 \x02 \xb0\x03 END 
+INIT "\x16\x0c SET_VAR  \x82\x03 \x02 \xb0\x03 END 
 SCEC SCE081_010 \xf8\x18 SCE_DONE 
 TEXT1 T\x8e TEXT2 \xbb
  
@@ -140,7 +140,7 @@ TEXT1 T\x8e TEXT2 \xbb
 教授\n　「安心したまえ、君はごくごく普通の学生だよ。\p実は殺人犯だ\n　　とか、宇宙人だとか、そんなことはないんだからね！\p　とり\n　　あえずのところ、私を信じていてくれればいい」\
 
   
-FLG1 <\x19\x0c FLG1_SET \x82\x03 \x02 \xb0\x03 END 
+INIT <\x19\x0c SET_VAR  \x82\x03 \x02 \xb0\x03 END 
 SCEC SCE081_011 b\x1c SCE_DONE 
 TEXT1 X\x8e TEXT2 U
  
@@ -153,9 +153,9 @@ TEXT1 X\x8e TEXT2 U
 \n拓司\n　「……雲居さん？！」\
 
   
-FLG1 \xa6\x1c\x0c FLG1_SET \x82\x03 \x02 \xb0\x03 END   
-FLG1 \x1c\x0c FLG1_SET \xaa \x02 \xd4 END   
-FLG1 \x08\x01\x0c FLG1_SET J 
+INIT \xa6\x1c\x0c SET_VAR  \x82\x03 \x02 \xb0\x03 END   
+INIT \x1c\x0c SET_VAR  \xaa \x02 \xd4 END   
+INIT \x08\x01\x0c SET_VAR  J 
 CMD2 PlayCD RUNF \x8e\x1e END 
 SCEC SCE081_012 \xaa\x1e SCE_DONE 
 TEXT1 \\\x8e TEXT2 \x9e
@@ -168,7 +168,7 @@ TEXT1 \\\x8e TEXT2 \x9e
 不審なものを覚えながらも、拓司はこたえた。\
 
   
-FLG1 \xee\x1e\x0c FLG1_SET \x82\x03 \x02 \xb0\x03 END 
+INIT \xee\x1e\x0c SET_VAR  \x82\x03 \x02 \xb0\x03 END 
 SCEC SCE081_013 \xa0! SCE_DONE 
 TEXT1 `\x8e TEXT2 \x82
  
@@ -180,7 +180,7 @@ TEXT1 `\x8e TEXT2 \x82
 \n教授は渋い顔をして、頭を振った。\
 
   
-FLG1 \xe4!\x0c FLG1_SET \x82\x03 \x02 \xb0\x03 END 
+INIT \xe4!\x0c SET_VAR  \x82\x03 \x02 \xb0\x03 END 
 SCEC SCE081_014 &$ SCE_DONE 
 TEXT1 d\x8e TEXT2 w
  
@@ -192,12 +192,12 @@ TEXT1 d\x8e TEXT2 w
 ばたばたっ、と籠のなかの鳥がひとつ羽ばたきをした。\
 
   
-FLG1 j$\x0c FLG1_SET \x82\x03 \x02 \xb0\x03 END \x03\x0f
+INIT j$\x0c SET_VAR  \x82\x03 \x02 \xb0\x03 END \x03\x0f
 CHOICE
 拘束着の女の子に近づいて観察する\n鳥を見る\n\l0,2,
 ENDCHOICE
 
   
-FLG1 \x80&\x0c FLG1_SET \x82\x03 \x02 \xb0\x03 END  \x82\x03 
+INIT \x80&\x0c SET_VAR  \x82\x03 \x02 \xb0\x03 END  \x82\x03 
 CMD3 TextClose VAR1 \x02' END 
 END_SCRIPT

@@ -1,6 +1,6 @@
 START_SCRIPT
 \x86\x07\x01`B#\x014\x06  
-FLG1 \t\x01\x0c FLG1_SET
+INIT \t\x01\x0c SET_VAR 
 CMD6 .\\Data\\Script\\Bgm.Fob VAR1   
 CMD2 PlayCD RUNF J END 
 SCEC SCE078_001 f SCE_DONE 
@@ -22,7 +22,7 @@ TEXT1 \x80\x89 TEXT2 \xd7
 だが、恐怖からは守ってくれる……。\
 
   
-FLG1 \xaa\x0c FLG1_SET
+INIT \xaa\x0c SET_VAR 
 CMD7 .\\Data\\Script\\TextFunc.Fob RUNF &\x04 
 CMD2 TextOn RUNF T\x04 END    
 CMD2 StopCD RUNF |\x04 END 
@@ -35,6 +35,6 @@ TEXT1 \x84\x89 TEXT2 =
 なたねはドアを開き、実験室へと足早に入っていった。\
 
   
-FLG1 \xdc\x04\x0c FLG1_SET &\x04 \x02 T\x04 END  &\x04 
+INIT \xdc\x04\x0c SET_VAR  &\x04 \x02 T\x04 END  &\x04 
 CMD3 TextClose VAR1 \x16\x06 END 
 END_SCRIPT

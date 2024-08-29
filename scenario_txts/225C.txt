@@ -11,7 +11,7 @@ TEXT1 0o\x01 TEXT2 m
 すべてをうち崩すようななにかが、状況を粉々にするようななに\nかが、きっと起こる。\pそのときのために、俺はエネルギーを蓄積\nしなければならない。\pじっと耐えて、強烈な一撃を放つのだ……。\n\p拓司は野獣のように目を光らせて、無言だった。\
 
   
-FLG1 J\x0c FLG1_SET
+INIT J\x0c SET_VAR 
 CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \x1e\x02 
 CMD2 TextOn RUNF L\x02 END 
 CMD6 .\\Data\\Script\\Bgm.Fob VAR1 h\x02 

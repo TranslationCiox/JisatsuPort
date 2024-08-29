@@ -13,7 +13,7 @@ TEXT1 \xb0\xb3 TEXT2 \xb7
 拓司\n　「覚悟？\p……それは誰かを殺してでも生き残るってことか？」\
 
   
-FLG1 J\x0c FLG1_SET
+INIT J\x0c SET_VAR 
 CMD7 .\\Data\\Script\\TextFunc.Fob RUNF F\x03 
 CMD2 TextOn RUNF t\x03 END 
 SCEC SCE105_002 \x90\x03 SCE_DONE 
@@ -28,7 +28,7 @@ TEXT1 \xb4\xb3 TEXT2 \x88
 拓司は舌先で唇を湿らせ、震える声でいった。\
 
   
-FLG1 \xd4\x03\x0c FLG1_SET F\x03 \x02 t\x03 END 
+INIT \xd4\x03\x0c SET_VAR  F\x03 \x02 t\x03 END 
 SCEC SCE105_003 .\x06 SCE_DONE 
 TEXT1 \xb8\xb3 TEXT2 q
  
@@ -40,7 +40,7 @@ TEXT1 \xb8\xb3 TEXT2 q
 \nなたねはジロリと、上目遣いに拓司を睨んだ。\
 
   
-FLG1 r\x06\x0c FLG1_SET F\x03 \x02 t\x03 END 
+INIT r\x06\x0c SET_VAR  F\x03 \x02 t\x03 END 
 SCEC SCE105_004 p\x08 SCE_DONE 
 TEXT1 \xbc\xb3 TEXT2 L
  
@@ -53,6 +53,6 @@ TEXT1 \xbc\xb3 TEXT2 L
 /*▲SE01　停止*/\a4,2,0,0,\nラジオのノイズだけが小さく一晩中続いていた。\
 
   
-FLG1 \xb4\x08\x0c FLG1_SET F\x03 \x02 t\x03 END  F\x03 
+INIT \xb4\x08\x0c SET_VAR  F\x03 \x02 t\x03 END  F\x03 
 CMD3 TextClose VAR1 *\n END 
 END_SCRIPT

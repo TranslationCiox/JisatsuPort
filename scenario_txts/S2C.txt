@@ -1,9 +1,9 @@
 START_SCRIPT
 \xbb\x08\x01`B#\x01\xe8\x06  
-FLG1 A\x0c FLG1_SET
+INIT A\x0c SET_VAR 
 CMD6 .\\Data\\Script\\Bg.Fob VAR2   \x02
 CMD4 BgAutoFadeIn VAR2 J END   
-FLG1 \x04\x01\x0c FLG1_SET
+INIT \x04\x01\x0c SET_VAR 
 CMD6 .\\Data\\Script\\Bgm.Fob VAR1 \x88 
 CMD2 PlayCD RUNF \xb2 END 
 SCEC SCES02_001 \xce SCE_DONE 
@@ -19,7 +19,7 @@ TEXT1 \xa8\xb5\x01 TEXT2 p
 羽が生えた猫なの。\
 
   
-FLG1 \x12\x01\x0c FLG1_SET
+INIT \x12\x01\x0c SET_VAR 
 CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \xf2\x02 
 CMD2 TextOn RUNF  \x03 END 
 SCEC SCES02_002 <\x03 SCE_DONE 
@@ -37,8 +37,8 @@ TEXT1 \xac\xb5\x01 TEXT2 \xaa
 『答はね、早桃ちゃん。風のなかにあるニャ』って。\
 
   
-FLG1 \x80\x03\x0c FLG1_SET \xf2\x02 \x02  \x03 END   
-FLG1 \xc8\x0c FLG1_SET   \x02 J END  \x88 
+INIT \x80\x03\x0c SET_VAR  \xf2\x02 \x02  \x03 END   
+INIT \xc8\x0c SET_VAR    \x02 J END  \x88 
 CMD2 StopCD RUNF \xa2\x06 END  \xf2\x02 
 CMD3 TextClose VAR1 \xca\x06 END 
 END_SCRIPT

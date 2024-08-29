@@ -10,7 +10,7 @@ TEXT1 \x10' TEXT2 \xa8
 紅葉\n　「アンタさあ、もうちょっと身体鍛えないと、いざというときに\n　　困るよ？」\
 
   
-FLG1 J\x0c FLG1_SET
+INIT J\x0c SET_VAR 
 CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \n\x03 
 CMD2 TextOn RUNF 8\x03 END 
 SCEC SCE015_002 T\x03 SCE_DONE 
@@ -23,6 +23,6 @@ TEXT1 \x14' TEXT2 G
 拓司\n　「ふん」\
 
   
-FLG1 \x98\x03\x0c FLG1_SET \n\x03 \x02 8\x03 END  \n\x03 
+INIT \x98\x03\x0c SET_VAR  \n\x03 \x02 8\x03 END  \n\x03 
 CMD3 TextClose VAR1 \xfa\x04 END 
 END_SCRIPT

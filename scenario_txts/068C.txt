@@ -10,7 +10,7 @@ TEXT1 \xe0y TEXT2 \xec
 拓司\n　「自ら……命を絶つこと」\
 
   
-FLG1 J\x0c FLG1_SET
+INIT J\x0c SET_VAR 
 CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \x1a\x04 
 CMD2 TextOn RUNF H\x04 END 
 SCEC SCE068_002 d\x04 SCE_DONE 
@@ -21,7 +21,7 @@ TEXT1 \xe4y TEXT2 \xac
 カンナ\n　「簡単でしょ？\p　イヌとか赤ちゃんの実験で照明されちゃうよ\n　　うなもの。\pその程度なの、あなたは。\pあなたにとって、死は\n　　その程度のもの。\pでも、私は違う！」\
 
   
-FLG1 \xa8\x04\x0c FLG1_SET \x1a\x04 \x02 H\x04 END 
+INIT \xa8\x04\x0c SET_VAR  \x1a\x04 \x02 H\x04 END 
 SCEC SCE068_003 \x92\x07 SCE_DONE 
 TEXT1 \xe8y TEXT2 \xa4
  
@@ -32,8 +32,8 @@ TEXT1 \xe8y TEXT2 \xa4
 　　決してあなたをバカにしているわけじゃないの。\pあなたの存\n　　在を認めているからこそ、あなたを選んだ……あッ！」\
 
   
-FLG1 \xd6\x07\x0c FLG1_SET \x1a\x04 \x02 H\x04 END   
-FLG1 \xc8\x0c FLG1_SET
+INIT \xd6\x07\x0c SET_VAR  \x1a\x04 \x02 H\x04 END   
+INIT \xc8\x0c SET_VAR 
 CMD6 .\\Data\\Script\\Bg.Fob VAR2 \xba\n 
 CMD2 BgOn VAR2 \xe4\n END 
 SCEC SCE068_004 \x0b SCE_DONE 
@@ -48,7 +48,7 @@ TEXT1 \xecy TEXT2 f
 早桃\n　「あっ！」\
 
   
-FLG1 D\x0b\x0c FLG1_SET \x1a\x04 \x02 H\x04 END 
+INIT D\x0b\x0c SET_VAR  \x1a\x04 \x02 H\x04 END 
 SCEC SCE068_005 \x16\r SCE_DONE 
 TEXT1 \xf0y TEXT2 ~
  
@@ -60,10 +60,10 @@ TEXT1 \xf0y TEXT2 ~
 カンナ\n　「ちくしょおおおおおおおお！\p　うわあああああああ！」\
 
   
-FLG1 Z\r\x0c FLG1_SET \x1a\x04 \x02 H\x04 END 
+INIT Z\r\x0c SET_VAR  \x1a\x04 \x02 H\x04 END 
 CMD6 .\\Data\\Script\\Bgm.Fob VAR1 \x8c\x0f 
 CMD2 StopCD RUNF \xb6\x0f END   
-FLG1 \xc8\x0c FLG1_SET \xba\n \x02
+INIT \xc8\x0c SET_VAR  \xba\n \x02
 CMD4 BgAutoFadeIn VAR2 \xf8\x0f END 
 SCEC SCE068_006 \x1c\x10 SCE_DONE 
 TEXT1 \xf4y TEXT2 \xa4
@@ -77,7 +77,7 @@ TEXT1 \xf4y TEXT2 \xa4
 拓司\n　「……ふざけるな」@
 \z
   
-FLG1 `\x10\x0c FLG1_SET \x1a\x04 \x02 H\x04 END 
+INIT `\x10\x0c SET_VAR  \x1a\x04 \x02 H\x04 END 
 SCEC SCE068_007 *\x13 SCE_DONE 
 TEXT1 \xf8y TEXT2 \x8c
  
@@ -89,6 +89,6 @@ TEXT1 \xf8y TEXT2 \x8c
 \n拓司\n　「行こう。\p紅葉を助けに」\
 
   
-FLG1 n\x13\x0c FLG1_SET \x1a\x04 \x02 H\x04 END  \x1a\x04 
+INIT n\x13\x0c SET_VAR  \x1a\x04 \x02 H\x04 END  \x1a\x04 
 CMD3 TextClose VAR1 \xe4\x15 END 
 END_SCRIPT

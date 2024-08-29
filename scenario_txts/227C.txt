@@ -6,7 +6,7 @@ TEXT1 Pr\x01 TEXT2 \x11
 \n\n\n\n\n\n\n\n\n\n　　　　　　　　　　　　　『１３日目』\
 
   
-FLG1 J\x0c FLG1_SET
+INIT J\x0c SET_VAR 
 CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \xae 
 CMD2 TextOn RUNF \xdc END 
 SCEC SCE227_002 \xf8 SCE_DONE 
@@ -23,7 +23,7 @@ TEXT1 Tr\x01 TEXT2 u
 努めて無表情のカンナを、錦城は勝ち誇って見下ろした。\
 
   
-FLG1 <\x01\x0c FLG1_SET \xae \x02 \xdc END 
+INIT <\x01\x0c SET_VAR  \xae \x02 \xdc END 
 SCEC SCE227_003 J\x03 SCE_DONE 
 TEXT1 Xr\x01 TEXT2 ]
  
@@ -36,7 +36,7 @@ TEXT1 Xr\x01 TEXT2 ]
 カンナ\n　「……すみませんでした」\
 
   
-FLG1 \x8e\x03\x0c FLG1_SET \xae \x02 \xdc END 
+INIT \x8e\x03\x0c SET_VAR  \xae \x02 \xdc END 
 SCEC SCE227_004 <\x05 SCE_DONE 
 TEXT1 \\r\x01 TEXT2 S
  
@@ -50,7 +50,7 @@ TEXT1 \\r\x01 TEXT2 S
 カンナ\n　「便器って－－」\
 
   
-FLG1 \x80\x05\x0c FLG1_SET \xae \x02 \xdc END 
+INIT \x80\x05\x0c SET_VAR  \xae \x02 \xdc END 
 SCEC SCE227_005 \x06\x07 SCE_DONE 
 TEXT1 `r\x01 TEXT2 u
  
@@ -66,7 +66,7 @@ TEXT1 `r\x01 TEXT2 u
 錦城\n　「便器」\
 
   
-FLG1 J\x07\x0c FLG1_SET \xae \x02 \xdc END 
+INIT J\x07\x0c SET_VAR  \xae \x02 \xdc END 
 SCEC SCE227_006 X\t SCE_DONE 
 TEXT1 dr\x01 TEXT2 n
  
@@ -80,7 +80,7 @@ TEXT1 dr\x01 TEXT2 n
 カンナ\n　「……よ、喜んで錦城先生の人間便器になります」\
 
   
-FLG1 \x9c\t\x0c FLG1_SET \xae \x02 \xdc END 
+INIT \x9c\t\x0c SET_VAR  \xae \x02 \xdc END 
 SCEC SCE227_007 \x8e\x0b SCE_DONE 
 TEXT1 hr\x01 TEXT2 y
  
@@ -94,8 +94,8 @@ TEXT1 hr\x01 TEXT2 y
 カンナ\n　「黙っていて。\p大丈夫だから。\pこんなの、なんでもないから」\
 
   
-FLG1 \xd2\x0b\x0c FLG1_SET \xae \x02 \xdc END   
-FLG1 \x05\x01\x0c FLG1_SET
+INIT \xd2\x0b\x0c SET_VAR  \xae \x02 \xdc END   
+INIT \x05\x01\x0c SET_VAR 
 CMD6 .\\Data\\Script\\Bgm.Fob VAR1 \n\x0e 
 CMD2 PlayCD RUNF 4\x0e END 
 SCEC SCE227_008 P\x0e SCE_DONE 
@@ -109,7 +109,7 @@ TEXT1 lr\x01 TEXT2 \xa1
 /*■HCG18　表示（クロスフェード）*/\a7,-2,-2,0,\a0,89,2,0,\a6,-2,0,0,\n錦城\n　「しっかりみておくのよ。\p誰か一人でも目を反らした場合、彼\n　　女の努力は無駄になりますからね？\p　いい、これは授業なの。\n　　\p生意気な態度をとったガキがどうなるか、それを教えてあげ\n　　ているの。\pほら、便器ちゃん。はやく口をつけなさいよ！」\
 
   
-FLG1 \x94\x0e\x0c FLG1_SET \xae \x02 \xdc END 
+INIT \x94\x0e\x0c SET_VAR  \xae \x02 \xdc END 
 SCEC SCE227_009 R\x11 SCE_DONE 
 TEXT1 pr\x01 TEXT2 \x8a
  
@@ -123,7 +123,7 @@ TEXT1 pr\x01 TEXT2 \x8a
 カンナ\n　「くむ……ごきゅっ……ごきゅ……むぐんん……」\
 
   
-FLG1 \x96\x11\x0c FLG1_SET \xae \x02 \xdc END 
+INIT \x96\x11\x0c SET_VAR  \xae \x02 \xdc END 
 SCEC SCE227_010 \xf8\x13 SCE_DONE 
 TEXT1 tr\x01 TEXT2 |
  
@@ -132,8 +132,8 @@ TEXT1 tr\x01 TEXT2 |
 錦城はカンナの頭を両手で固定し、狂気に支配された顔で笑い続\nけた。\
 
   
-FLG1 <\x14\x0c FLG1_SET \xae \x02 \xdc END   
-FLG1 \xc8\x0c FLG1_SET
+INIT <\x14\x0c SET_VAR  \xae \x02 \xdc END   
+INIT \xc8\x0c SET_VAR 
 CMD6 .\\Data\\Script\\Bg.Fob VAR2 \x80\x16 \x02
 CMD4 BgAutoFadeIn VAR2 \xaa\x16 END  \n\x0e 
 CMD2 StopCD RUNF \xda\x16 END  \xae 

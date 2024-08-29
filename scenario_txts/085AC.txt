@@ -1,6 +1,6 @@
 START_SCRIPT
 \xcf\x1f\x01`B#\x01\xc2\x1a  
-FLG1 \t\x01\x0c FLG1_SET
+INIT \t\x01\x0c SET_VAR 
 CMD6 .\\Data\\Script\\Bgm.Fob VAR1   
 CMD2 PlayCD RUNF J END 
 SCEC SCE085a_001 f SCE_DONE 
@@ -12,7 +12,7 @@ TEXT1 p\x94 TEXT2 \x82
 免疫ができたせいなのか、すでに波動が拡散した後なのかは……わ\nからなかったが。\
 
   
-FLG1 \xaa\x0c FLG1_SET
+INIT \xaa\x0c SET_VAR 
 CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \xd2\x02 
 CMD2 TextOn RUNF \x03 END 
 SCEC SCE085a_002 \x1c\x03 SCE_DONE 
@@ -28,7 +28,7 @@ TEXT1 t\x94 TEXT2 \xd6
 眉唾物の話だが、いまはそれを信じたい。\pおばけが怖くて夜、布\n団を被るのに似ている。\p布団なんかでおばけから身を守れるはず\nがない。\pだが、恐怖からは守ってくれる……。\
 
   
-FLG1 `\x03\x0c FLG1_SET \xd2\x02 \x02 \x03 END 
+INIT `\x03\x0c SET_VAR  \xd2\x02 \x02 \x03 END 
 SCEC SCE085a_003 \xf2\x06 SCE_DONE 
 TEXT1 x\x94 TEXT2 Z
  
@@ -40,7 +40,7 @@ TEXT1 x\x94 TEXT2 Z
 拓司\n　「偶然だよ」\
 
   
-FLG1 6\x07\x0c FLG1_SET \xd2\x02 \x02 \x03 END 
+INIT 6\x07\x0c SET_VAR  \xd2\x02 \x02 \x03 END 
 SCEC SCE085a_004 \xd8\x08 SCE_DONE 
 TEXT1 |\x94 TEXT2 \x9f
  
@@ -55,7 +55,7 @@ TEXT1 |\x94 TEXT2 \x9f
 　拓司たちは身構えたが、果たして現れたのは見慣れた人物であ\n　った。\
 
   
-FLG1 \x1c\t\x0c FLG1_SET \xd2\x02 \x02 \x03 END 
+INIT \x1c\t\x0c SET_VAR  \xd2\x02 \x02 \x03 END 
 SCEC SCE085a_005 \xd2\x0b SCE_DONE 
 TEXT1 \x80\x94 TEXT2 e
  
@@ -68,7 +68,7 @@ TEXT1 \x80\x94 TEXT2 e
 錦城\n　「とにかく、無事で良かったわ。\p他に生き残っている人はいる\n　　の？！」\
 
   
-FLG1 \x16\x0c\x0c FLG1_SET \xd2\x02 \x02 \x03 END 
+INIT \x16\x0c\x0c SET_VAR  \xd2\x02 \x02 \x03 END 
 SCEC SCE085a_006 \xe4\r SCE_DONE 
 TEXT1 \x84\x94 TEXT2 }
  
@@ -82,7 +82,7 @@ TEXT1 \x84\x94 TEXT2 }
 拓司\n　「いや、御堂。\p……あながち全部デタラメってわけでもなさそ\n　　うだぜ」\
 
   
-FLG1 (\x0e\x0c FLG1_SET \xd2\x02 \x02 \x03 END 
+INIT (\x0e\x0c SET_VAR  \xd2\x02 \x02 \x03 END 
 SCEC SCE085a_007 V\x10 SCE_DONE 
 TEXT1 \x88\x94 TEXT2 i
  
@@ -92,7 +92,7 @@ TEXT1 \x88\x94 TEXT2 i
 \n錦城はふう、とため息をついて肩をすくめた。\
 
   
-FLG1 \x9a\x10\x0c FLG1_SET \xd2\x02 \x02 \x03 END 
+INIT \x9a\x10\x0c SET_VAR  \xd2\x02 \x02 \x03 END 
 SCEC SCE085a_008 x\x12 SCE_DONE 
 TEXT1 \x8c\x94 TEXT2 z
  
@@ -102,7 +102,7 @@ TEXT1 \x8c\x94 TEXT2 z
 なたね\n　「いま、断続的に襲ってきている波動は、大地震の前の予震み\n　　たいなものにすぎません。\pエンケリュスが本格始動するまえ\n　　の震えみたいなものにすぎない。\pいずれはエンケリュスは完\n　　全に目覚めて、これまでの波動なんて話にならないくらいの\n　　巨大な波動を放ちます。\pそれが最終波動です」\
 
   
-FLG1 \xbc\x12\x0c FLG1_SET \xd2\x02 \x02 \x03 END 
+INIT \xbc\x12\x0c SET_VAR  \xd2\x02 \x02 \x03 END 
 SCEC SCE085a_009 \xde\x14 SCE_DONE 
 TEXT1 \x90\x94 TEXT2 \x94
  
@@ -113,7 +113,7 @@ TEXT1 \x90\x94 TEXT2 \x94
 \n御堂\n　「バカバカしい！\p　こんなのの妄想を真に受けてるんじゃねえ\n　　だろうな！」\
 
   
-FLG1 "\x15\x0c FLG1_SET \xd2\x02 \x02 \x03 END 
+INIT "\x15\x0c SET_VAR  \xd2\x02 \x02 \x03 END 
 SCEC SCE085a_010 \xac\x17 SCE_DONE 
 TEXT1 \x94\x94 TEXT2 ^
  
@@ -125,7 +125,7 @@ TEXT1 \x94\x94 TEXT2 ^
 なたね\n　「１時間後かもしれないし、１週間後かもしれない。\p１０年後\n　　かもしれないし、１分後かも……１秒後かもしれない」\
 
   
-FLG1 \xf0\x17\x0c FLG1_SET \xd2\x02 \x02 \x03 END 
+INIT \xf0\x17\x0c SET_VAR  \xd2\x02 \x02 \x03 END 
 SCEC SCE085a_011 \xa2\x19 SCE_DONE 
 TEXT1 \x98\x94 TEXT2  
  
@@ -134,6 +134,6 @@ TEXT1 \x98\x94 TEXT2
 御堂\n　「と、とにかく実験室に入ろうじゃねえか。\p話はそれからだ」\
 
   
-FLG1 \xe6\x19\x0c FLG1_SET \xd2\x02 \x02 \x03 END  \xd2\x02 
+INIT \xe6\x19\x0c SET_VAR  \xd2\x02 \x02 \x03 END  \xd2\x02 
 CMD3 TextClose VAR1 \xa4\x1a END 
 END_SCRIPT

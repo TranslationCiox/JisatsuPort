@@ -10,13 +10,13 @@ TEXT1 H\xa7\x01 TEXT2 ;
 「袋に詰めて、落とすの」@
 「猫を？」\w\z
   
-FLG1 J\x0c FLG1_SET
+INIT J\x0c SET_VAR 
 CMD7 .\\Data\\Script\\TextFunc.Fob RUNF V\x01 
 CMD2 TextOn RUNF \x84\x01 END   
-FLG1 \xc8\x0c FLG1_SET
+INIT \xc8\x0c SET_VAR 
 CMD6 .\\Data\\Script\\Bg.Fob VAR2 \xba\x01 \x02
 CMD4 BgAutoFadeIn VAR2 \xe4\x01 END   
-FLG1 \t\x01\x0c FLG1_SET
+INIT \t\x01\x0c SET_VAR 
 CMD6 .\\Data\\Script\\Bgm.Fob VAR1 "\x02 
 CMD2 PlayCD RUNF L\x02 END 
 SCEC SCEK09_002 h\x02 SCE_DONE 
@@ -34,7 +34,7 @@ TEXT1 L\xa7\x01 TEXT2 \x85
 「わかったよ」と私はいって遮った。@
 「もうわかったから。ありがとう、ゆきちゃん」\w\z
   
-FLG1 \xac\x02\x0c FLG1_SET V\x01 \x02 \x84\x01 END 
+INIT \xac\x02\x0c SET_VAR  V\x01 \x02 \x84\x01 END 
 SCEC SCEK09_003 \xfa\x04 SCE_DONE 
 TEXT1 P\xa7\x01 TEXT2 y
  
@@ -45,7 +45,7 @@ TEXT1 P\xa7\x01 TEXT2 y
 嫌悪と軽蔑がわき上がってくるのも抑えられなかった。@
 でも、秘密の大きさは、私に対する信頼の大きさを意味していた。\n\p信頼の輝きが、秘密の暗さを消し去るくらい明るいと信じてこそ\nの告白である以上、秘密が大きくて暗いほど、私は喜ぶべきなの\nだ。\w\z
   
-FLG1 >\x05\x0c FLG1_SET V\x01 \x02 \x84\x01 END 
+INIT >\x05\x0c SET_VAR  V\x01 \x02 \x84\x01 END 
 SCEC SCEK09_004 \\\x07 SCE_DONE 
 TEXT1 T\xa7\x01 TEXT2 \xd0
  
@@ -60,7 +60,7 @@ TEXT1 T\xa7\x01 TEXT2 \xd0
 　しばらく間をおいてから、ゆきはぽつりといった。@
 「そうすれば死ぬのが怖くなくなると思うから」\w\z
   
-FLG1 \xa0\x07\x0c FLG1_SET V\x01 \x02 \x84\x01 END  "\x02 
+INIT \xa0\x07\x0c SET_VAR  V\x01 \x02 \x84\x01 END  "\x02 
 CMD2 StopCD RUNF &\x0b END  V\x01 
 CMD3 TextClose VAR1 N\x0b END 
 END_SCRIPT

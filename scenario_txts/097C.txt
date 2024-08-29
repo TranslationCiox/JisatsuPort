@@ -1,9 +1,9 @@
 START_SCRIPT
 \x16\x08\x01`B#\x01R\x06  
-FLG1 \xc8\x0c FLG1_SET
+INIT \xc8\x0c SET_VAR 
 CMD6 .\\Data\\Script\\Bg.Fob VAR2   \x02
 CMD4 BgAutoFadeIn VAR2 J END   
-FLG1 \t\x01\x0c FLG1_SET
+INIT \t\x01\x0c SET_VAR 
 CMD6 .\\Data\\Script\\Bgm.Fob VAR1 \x88 
 CMD2 PlayCD RUNF \xb2 END 
 SCEC SCE097_001 \xce SCE_DONE 
@@ -16,27 +16,27 @@ TEXT1 0\xa7 TEXT2 \xb4
 拓司は、足下にわずかに人の気配を感じた。\
 
   
-FLG1 \x12\x01\x0c FLG1_SET
+INIT \x12\x01\x0c SET_VAR 
 CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \x02\x04 
 CMD2 TextOn RUNF 0\x04 END  \x88 
 CMD2 StopCD RUNF X\x04 END ! 
-FLG1 \x14 FLG2 \x0b
-FLG1\x01 \x1b1^\x05\x03\x12
+INIT \x14 FLG2 \x0b
+INIT\x01 \x1b1^\x05\x03\x12
 CHOICE
 それは早桃だった\nそれはカンナだった\nそれは錦城だった\n\l0,3,
 ENDCHOICE
 
   
-FLG1 \xac\x04\x0c FLG1_SET \x02\x04 \x02 0\x04 END  \x02\x04 \x02
+INIT \xac\x04\x0c SET_VAR  \x02\x04 \x02 0\x04 END  \x02\x04 \x02
 CMD4 GetLastTxtID VAR2 :\x05 END 2"\x06\x03
-FLG1
+INIT
 CHOICE
 それは早桃だった\nそれは錦城だった\n\l0,2,
 ENDCHOICE
 
   
-FLG1 d\x05\x0c FLG1_SET \x02\x04 \x02 0\x04 END  \x02\x04 \x02 :\x05 END   
-FLG1 \x01\x1b\x021"\x06  
-FLG1 \x02\x0c FLG1_SET \x02\x04 
+INIT d\x05\x0c SET_VAR  \x02\x04 \x02 0\x04 END  \x02\x04 \x02 :\x05 END   
+INIT \x01\x1b\x021"\x06  
+INIT \x02\x0c SET_VAR  \x02\x04 
 CMD3 TextClose VAR1 4\x06 END 
 END_SCRIPT

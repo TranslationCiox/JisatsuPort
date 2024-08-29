@@ -16,10 +16,10 @@ TEXT1 \xa0\x8c TEXT2 \x96
 邪魔邪魔。\
 
   
-FLG1 J\x0c FLG1_SET
+INIT J\x0c SET_VAR 
 CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \xc2\x02 
 CMD2 TextOn RUNF \xf0\x02 END   
-FLG1 \xc8\x0c FLG1_SET
+INIT \xc8\x0c SET_VAR 
 CMD6 .\\Data\\Script\\Bg.Fob VAR2 &\x03 \x02
 CMD4 BgAutoFadeIn VAR2 P\x03 END 
 SCEC SCE080_002 t\x03 SCE_DONE 
@@ -39,7 +39,7 @@ TEXT1 \xa4\x8c TEXT2 R
 　ピンポーン！\
 
   
-FLG1 \xb8\x03\x0c FLG1_SET \xc2\x02 \x02 \xf0\x02 END 
+INIT \xb8\x03\x0c SET_VAR  \xc2\x02 \x02 \xf0\x02 END 
 SCEC SCE080_003 :\x05 SCE_DONE 
 TEXT1 \xa8\x8c TEXT2 .
  
@@ -50,6 +50,6 @@ TEXT1 \xa8\x8c TEXT2 .
 　終わりだ。\
 
   
-FLG1 ~\x05\x0c FLG1_SET \xc2\x02 \x02 \xf0\x02 END  \xc2\x02 
+INIT ~\x05\x0c SET_VAR  \xc2\x02 \x02 \xf0\x02 END  \xc2\x02 
 CMD3 TextClose VAR1 |\x06 END 
 END_SCRIPT

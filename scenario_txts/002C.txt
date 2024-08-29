@@ -6,14 +6,14 @@ TEXT1 \xc0\x12 TEXT2 \x12
 \n\n\n\n\n\n\n\n\n\n　　　　　　『ジサツのための１０１の方法』\
 
   
-FLG1 J\x0c FLG1_SET
+INIT J\x0c SET_VAR 
 CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \xb2 
 CMD2 TextOn RUNF \xe0 END 
 SCEC SCE002_002 \xfc SCE_DONE 
 TEXT1 \xc4\x12\x0c"  
-FLG1 \x02\x0c FLG1_SET  \x04
-FLG1 \x01\x0c FLG1_SET  \x08
-FLG1 \x01\x0c FLG1_SET
+INIT \x02\x0c SET_VAR   \x04
+INIT \x01\x0c SET_VAR   \x08
+INIT \x01\x0c SET_VAR 
 CMD6 .\\Data\\Script\\Bgm.Fob VAR1 \x8e\x01 
 CMD2 SePlay RUNF \xb8\x01 END \x03\x89
  
@@ -37,7 +37,7 @@ CMD2 SePlay RUNF \xb8\x01 END \x03\x89
 学生　「愉快犯」\
 
   
-FLG1 \xd4\x01\x0c FLG1_SET \xb2 \x02 \xe0 END 
+INIT \xd4\x01\x0c SET_VAR  \xb2 \x02 \xe0 END 
 SCEC SCE002_003 2\x04 SCE_DONE 
 TEXT1 \xc8\x12 TEXT2 f
  
@@ -57,7 +57,7 @@ TEXT1 \xc8\x12 TEXT2 f
 学生　「死ぬんじゃない？」\
 
   
-FLG1 v\x04\x0c FLG1_SET \xb2 \x02 \xe0 END 
+INIT v\x04\x0c SET_VAR  \xb2 \x02 \xe0 END 
 SCEC SCE002_004 H\x06 SCE_DONE 
 TEXT1 \xcc\x12 TEXT2 (
  
@@ -71,18 +71,18 @@ TEXT1 \xcc\x12 TEXT2 (
 学生　「あっ？！」\
 
   
-FLG1 \x8c\x06\x0c FLG1_SET \xb2 \x02 \xe0 END 
+INIT \x8c\x06\x0c SET_VAR  \xb2 \x02 \xe0 END 
 SCEC SCE002_005 f\x07 SCE_DONE 
 TEXT1 \xd0\x12\x0c" \x8e\x01 
 CMD2 StopCD RUNF \xb6\x07 END   
-FLG1 \x02\x0c FLG1_SET \x8e\x01 
+INIT \x02\x0c SET_VAR  \x8e\x01 
 CMD2 SeStop RUNF \xf8\x07 END   
-FLG1 <\x0c FLG1_SET
+INIT <\x0c SET_VAR 
 CMD7 .\\Data\\Script\\TextFunc.fob RUNF .\x08 
 CMD3 WaitTime VAR2 \\\x08 END   
-FLG1 \x0c FLG1_SET  \x04
-FLG1 \x02\x0c FLG1_SET  \x08
-FLG1 \x0c FLG1_SET \x8e\x01 
+INIT \x0c SET_VAR   \x04
+INIT \x02\x0c SET_VAR   \x08
+INIT \x0c SET_VAR  \x8e\x01 
 CMD3 SePlayEx VAR2 \xd6\x08 END \x03\x1a
  
 学生　「落ちたよ」@
@@ -91,6 +91,6 @@ CMD3 SePlayEx VAR2 \xd6\x08 END \x03\x1a
 学生　「死んだでしょ」\
 
   
-FLG1 \xf6\x08\x0c FLG1_SET \xb2 \x02 \xe0 END  \xb2 
+INIT \xf6\x08\x0c SET_VAR  \xb2 \x02 \xe0 END  \xb2 
 CMD3 TextClose VAR1 \xa4\t END 
 END_SCRIPT

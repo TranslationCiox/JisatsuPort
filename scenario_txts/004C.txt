@@ -5,10 +5,10 @@ TEXT1 \xe0\x15 TEXT2 \x07.\\Data\\Script\\TextFunc.fob RUNF J \x02
 CMD6 CheckNormalMessageSkip RUNF x END 
 CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \xa4 \x02
 CMD5 TextWindowOffDirect \xd2 END   
-FLG1 ,\x01\x0c FLG1_SET
+INIT ,\x01\x0c SET_VAR 
 CMD6 .\\Data\\Script\\Bg.Fob VAR2 \x14\x01 
 CMD2 BgOn VAR2 >\x01 END   
-FLG1 \x0b\x01\x0c FLG1_SET
+INIT \x0b\x01\x0c SET_VAR 
 CMD6 .\\Data\\Script\\Bgm.Fob VAR1 t\x01 
 CMD2 PlayCD RUNF \x9e\x01 END  J 
 CMD2 WaitKey \xc6\x01 END  t\x01 

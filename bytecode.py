@@ -145,12 +145,12 @@ patterns = [
     {
         "pattern": [b'\r'],
         # Some kind of COMMAND
-        "action": "\nFLG1"
+        "action": "\nINIT"
     },
     {
         "pattern": [b'\x02', b'"'],
         # Seems to be related to FLG1
-        "action": " FLG1_SET"
+        "action": " SET_VAR "
     },
     {
         "pattern": [b'\x1e'],

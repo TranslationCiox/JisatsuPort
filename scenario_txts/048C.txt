@@ -2,7 +2,7 @@ START_SCRIPT
 \x8b-\x01`B#\x01,'
 HERO .\\Data\\Script\\Scenario\\048SubC.Fob RUNF \x06 
 CMD2 start VAR1 < END   
-FLG1 <\x0c FLG1_SET
+INIT <\x0c SET_VAR 
 CMD7 .\\Data\\Script\\TextFunc.fob RUNF r 
 CMD3 WaitTime VAR2 \xa0 END 
 SCEC SCE048_020 \xc0 SCE_DONE 
@@ -16,7 +16,7 @@ TEXT1 \xecZ TEXT2 \xce
 　柏木は御堂に付き従うことで自分の居場所をアピールしてきた\nような男で、男子学生からは『つまらない男』としか評価されて\nいなかったし、女子学生からは『御堂の取り巻きのひとり』とし\nか評価されていなかった。\pつまり、柏木という男には、なんの\n主体性もなかった。\p彼は完璧な脇役であり、別の主役なしでは舞\n台に存在していられない。\pそんな男だった。\
 
   
-FLG1 \x04\x01\x0c FLG1_SET
+INIT \x04\x01\x0c SET_VAR 
 CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \\\x04 
 CMD2 TextOn RUNF \x8a\x04 END 
 SCEC SCE048_021 \xa6\x04 SCE_DONE 
@@ -36,7 +36,7 @@ TEXT1 \xf0Z TEXT2 \x9c
 　シャープペンが突き刺さった耳の穴からは、どす黒い血がたら\n　たらと滝のようにあふれ出している。\
 
   
-FLG1 \xea\x04\x0c FLG1_SET \\\x04 \x02 \x8a\x04 END 
+INIT \xea\x04\x0c SET_VAR  \\\x04 \x02 \x8a\x04 END 
 SCEC SCE048_022 \x94\x07 SCE_DONE 
 TEXT1 \xf4Z TEXT2 J
  
@@ -47,7 +47,7 @@ TEXT1 \xf4Z TEXT2 J
 \n　柏木はいいながら、シャープペンのヘッドをカチカチカチカチ\n　とノックした。\
 
   
-FLG1 \xd8\x07\x0c FLG1_SET \\\x04 \x02 \x8a\x04 END 
+INIT \xd8\x07\x0c SET_VAR  \\\x04 \x02 \x8a\x04 END 
 SCEC SCE048_023 :\t SCE_DONE 
 TEXT1 \xf8Z TEXT2 ]
  
@@ -58,7 +58,7 @@ TEXT1 \xf8Z TEXT2 ]
 \n御堂\n　「芯だよ……」\
 
   
-FLG1 ~\t\x0c FLG1_SET \\\x04 \x02 \x8a\x04 END 
+INIT ~\t\x0c SET_VAR  \\\x04 \x02 \x8a\x04 END 
 SCEC SCE048_024 ,\x0b SCE_DONE 
 TEXT1 \xfcZ TEXT2 \xa0
  
@@ -74,7 +74,7 @@ TEXT1 \xfcZ TEXT2 \xa0
 　おれたちは呆然とそんな柏木の泣き笑いを見守っていたが、や\n　がて\
 
   
-FLG1 p\x0b\x0c FLG1_SET \\\x04 \x02 \x8a\x04 END 
+INIT p\x0b\x0c SET_VAR  \\\x04 \x02 \x8a\x04 END 
 SCEC SCE048_025 *\x0e SCE_DONE 
 TEXT1 [ TEXT2 \xb7
  
@@ -91,7 +91,7 @@ TEXT1 [ TEXT2 \xb7
 　あとには拓司となたね、そして柏木の死体だけが残された。\
 
   
-FLG1 n\x0e\x0c FLG1_SET \\\x04 \x02 \x8a\x04 END 
+INIT n\x0e\x0c SET_VAR  \\\x04 \x02 \x8a\x04 END 
 SCEC SCE048_026 \x84\x11 SCE_DONE 
 TEXT1 \x04[ TEXT2 \x9c
  
@@ -105,7 +105,7 @@ TEXT1 \x04[ TEXT2 \x9c
 拓司は慌てて背を向けた。\pいままでさんざん陵辱現場を見ておい\nていまさらという気もしたが、そうするのが礼儀のような気がし\nた。\
 
   
-FLG1 \xc8\x11\x0c FLG1_SET \\\x04 \x02 \x8a\x04 END 
+INIT \xc8\x11\x0c SET_VAR  \\\x04 \x02 \x8a\x04 END 
 SCEC SCE048_027 r\x14 SCE_DONE 
 TEXT1 \x08[ TEXT2 w
  
@@ -118,7 +118,7 @@ TEXT1 \x08[ TEXT2 w
 　チカセンコウガタシンリャクセイブツヘイキ、となたねは厳し\n　く言い直した。\p正確にいうのといわないのとでは、そこに大き\n　な違いがあるとでもいいたそうな口調だ。\
 
   
-FLG1 \xb6\x14\x0c FLG1_SET \\\x04 \x02 \x8a\x04 END 
+INIT \xb6\x14\x0c SET_VAR  \\\x04 \x02 \x8a\x04 END 
 SCEC SCE048_028 \xcc\x16 SCE_DONE 
 TEXT1 \x0c[ TEXT2 \xc5
  
@@ -128,7 +128,7 @@ TEXT1 \x0c[ TEXT2 \xc5
 \nなたね\n　「これは明白に、第四種生物兵器『ビッグ・エンケリュス』の\n　　攻撃だわ。\p『ビッグ・エンケリュス』は地下から波動を送る\n　　の。\p自殺波動。この波動にシンクロしてしまった人間は、自\n　　殺こそが幸福へ至る道だと信じ込んで……彼のように自殺し\n　　てしまうの」\
 
   
-FLG1 \x10\x17\x0c FLG1_SET \\\x04 \x02 \x8a\x04 END 
+INIT \x10\x17\x0c SET_VAR  \\\x04 \x02 \x8a\x04 END 
 SCEC SCE048_029 ^\x1a SCE_DONE 
 TEXT1 \x10[ TEXT2 \xbb
  
@@ -139,7 +139,7 @@ TEXT1 \x10[ TEXT2 \xbb
 　　あのね、私、円盤のなかで立体映像を見せられたの！\p　ぬら\n　　ぬらとしていて、黒くて、とてもいやらしくて汚らしい形を\n　　しているの！\p　全長２０キロ！\p　質量は自由に変化させられる\n　　からよくわからないけれど、地中を自由に移動して人類を殺\n　　す究極の侵略兵器で、あなたにはわからないけど私にはわか\n　　るのよ！　なぜなら……」\
 
   
-FLG1 \xa2\x1a\x0c FLG1_SET \\\x04 \x02 \x8a\x04 END 
+INIT \xa2\x1a\x0c SET_VAR  \\\x04 \x02 \x8a\x04 END 
 SCEC SCE048_030 \xc8\x1d SCE_DONE 
 TEXT1 \x14[ TEXT2 D
  
@@ -150,7 +150,7 @@ TEXT1 \x14[ TEXT2 D
 拓司\n　「……」\
 
   
-FLG1 \x0c\x1e\x0c FLG1_SET \\\x04 \x02 \x8a\x04 END 
+INIT \x0c\x1e\x0c SET_VAR  \\\x04 \x02 \x8a\x04 END 
 SCEC SCE048_031 V\x1f SCE_DONE 
 TEXT1 \x18[ TEXT2 \xc5
  
@@ -161,7 +161,7 @@ TEXT1 \x18[ TEXT2 \xc5
 　－－拓司はそう思った。\
 
   
-FLG1 \x9a\x1f\x0c FLG1_SET \\\x04 \x02 \x8a\x04 END 
+INIT \x9a\x1f\x0c SET_VAR  \\\x04 \x02 \x8a\x04 END 
 SCEC SCE048_032 \xe8" SCE_DONE 
 TEXT1 \x1c[ TEXT2 [
  
@@ -173,8 +173,8 @@ TEXT1 \x1c[ TEXT2 [
 \n　拓司の脇を通り抜け、鏡に向かって髪の毛を整え始める。\
 
   
-FLG1 ,#\x0c FLG1_SET \\\x04 \x02 \x8a\x04 END   
-FLG1 \xc8\x0c FLG1_SET
+INIT ,#\x0c SET_VAR  \\\x04 \x02 \x8a\x04 END   
+INIT \xc8\x0c SET_VAR 
 CMD6 .\\Data\\Script\\Bg.Fob VAR2 \xec$ \x02
 CMD4 BgAutoFadeIn VAR2 \x16% END 
 SCEC SCE048_033 :% SCE_DONE 
@@ -184,7 +184,7 @@ TEXT1  [ TEXT2 A
 \n　拓司は呆然と、それを見守るしかなかった。\pなたねの動きはゆ\n　っくりしていて、見ているとなにか時間が徐々に停滞してゆく\n　ような、そんな不安な気持ちになった。\
 
   
-FLG1 ~%\x0c FLG1_SET \\\x04 \x02 \x8a\x04 END 
+INIT ~%\x0c SET_VAR  \\\x04 \x02 \x8a\x04 END 
 CMD6 .\\Data\\Script\\Bgm.Fob VAR1 \xbc& 
 CMD2 StopCD RUNF \xe6& END  \\\x04 
 CMD3 TextClose VAR1 \x0e' END 

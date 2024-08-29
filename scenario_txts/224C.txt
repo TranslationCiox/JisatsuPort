@@ -15,7 +15,7 @@ TEXT1 \xa0m\x01 TEXT2 \xa1
 拓司\n　「！」\
 
   
-FLG1 J\x0c FLG1_SET
+INIT J\x0c SET_VAR 
 CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \xee\x02 
 CMD2 TextOn RUNF \x1c\x03 END 
 SCEC SCE224_002 8\x03 SCE_DONE 
@@ -37,7 +37,7 @@ TEXT1 \xa4m\x01 TEXT2 ;
 さらに腹。\
 
   
-FLG1 |\x03\x0c FLG1_SET \xee\x02 \x02 \x1c\x03 END 
+INIT |\x03\x0c SET_VAR  \xee\x02 \x02 \x1c\x03 END 
 SCEC SCE224_003 \xa2\x04 SCE_DONE 
 TEXT1 \xa8m\x01 TEXT2 Y
  
@@ -49,8 +49,8 @@ TEXT1 \xa8m\x01 TEXT2 Y
 \n拓司は意識を失った。\
 
   
-FLG1 \xe6\x04\x0c FLG1_SET \xee\x02 \x02 \x1c\x03 END   
-FLG1 \xc8\x0c FLG1_SET
+INIT \xe6\x04\x0c SET_VAR  \xee\x02 \x02 \x1c\x03 END   
+INIT \xc8\x0c SET_VAR 
 CMD6 .\\Data\\Script\\Bg.Fob VAR2 \x9e\x06 \x02
 CMD4 BgAutoFadeIn VAR2 \xc8\x06 END 
 CMD6 .\\Data\\Script\\Bgm.Fob VAR1 \xec\x06 

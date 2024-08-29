@@ -6,7 +6,7 @@ TEXT1 \x10l\x01 TEXT2 \x11
 \n\n\n\n\n\n\n\n\n\n　　　　　　　　　　　　　『１１日目』\
 
   
-FLG1 J\x0c FLG1_SET
+INIT J\x0c SET_VAR 
 CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \xae 
 CMD2 TextOn RUNF \xdc END 
 SCEC SCE223_002 \xf8 SCE_DONE 
@@ -21,7 +21,7 @@ TEXT1 \x14l\x01 TEXT2 o
 \nカンナが、フンと鼻で笑った。\
 
   
-FLG1 <\x01\x0c FLG1_SET \xae \x02 \xdc END 
+INIT <\x01\x0c SET_VAR  \xae \x02 \xdc END 
 SCEC SCE223_003 2\x03 SCE_DONE 
 TEXT1 \x18l\x01 TEXT2 }
  
@@ -34,7 +34,7 @@ TEXT1 \x18l\x01 TEXT2 }
 カンナ\n　「先生が思っているそのままの意味ですけど」\
 
   
-FLG1 v\x03\x0c FLG1_SET \xae \x02 \xdc END 
+INIT v\x03\x0c SET_VAR  \xae \x02 \xdc END 
 SCEC SCE223_004 \xa4\x05 SCE_DONE 
 TEXT1 \x1cl\x01 TEXT2 \x7f
  
@@ -45,12 +45,12 @@ TEXT1 \x1cl\x01 TEXT2 \x7f
 \n錦城が勝ち誇ったような目で拓司を見た。\
 
   
-FLG1 \xe8\x05\x0c FLG1_SET \xae \x02 \xdc END \x03\x10
+INIT \xe8\x05\x0c SET_VAR  \xae \x02 \xdc END \x03\x10
 CHOICE
 拓司は錦城に殴りかかった\n拓司はじっと耐えた\n\l0,2,
 ENDCHOICE
 
   
-FLG1 \x1e\x08\x0c FLG1_SET \xae \x02 \xdc END  \xae 
+INIT \x1e\x08\x0c SET_VAR  \xae \x02 \xdc END  \xae 
 CMD3 TextClose VAR1 \xa4\x08 END 
 END_SCRIPT

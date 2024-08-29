@@ -15,7 +15,7 @@ TEXT1 PY\x01 TEXT2 \xae
 拓司\n　「おれはおれの世界に戻る」\
 
   
-FLG1 J\x0c FLG1_SET
+INIT J\x0c SET_VAR 
 CMD7 .\\Data\\Script\\TextFunc.Fob RUNF "\x03 
 CMD2 TextOn RUNF P\x03 END 
 SCEC SCE211_002 l\x03 SCE_DONE 
@@ -30,7 +30,7 @@ TEXT1 TY\x01 TEXT2 \x86
 ナタネ\n　「馬鹿なことはやめて」\
 
   
-FLG1 \xb0\x03\x0c FLG1_SET "\x03 \x02 P\x03 END 
+INIT \xb0\x03\x0c SET_VAR  "\x03 \x02 P\x03 END 
 SCEC SCE211_003 \x02\x06 SCE_DONE 
 TEXT1 XY\x01 TEXT2 I
  
@@ -39,12 +39,12 @@ TEXT1 XY\x01 TEXT2 I
 そして躊躇無く自分の下顎を、下から殴りつけた。\
 
   
-FLG1 F\x06\x0c FLG1_SET "\x03 \x02 P\x03 END   
-FLG1 \x02\x0c FLG1_SET
+INIT F\x06\x0c SET_VAR  "\x03 \x02 P\x03 END   
+INIT \x02\x0c SET_VAR 
 CMD6 .\\Data\\Script\\Bgm.Fob VAR1 \xbe\x07 
 CMD2 SeStop RUNF \xe8\x07 END  "\x03 \x02
 CMD5 TextWindowOffDirect \x10\x08 END   
-FLG1 \xc8\x0c FLG1_SET
+INIT \xc8\x0c SET_VAR 
 CMD6 .\\Data\\Script\\Bg.Fob VAR2 R\x08 
 CMD2 BgOn VAR2 |\x08 END  "\x03 \x02
 CMD5 TextWindowOnDirect RUNF \xa4\x08 END  "\x03 

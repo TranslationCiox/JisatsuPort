@@ -8,7 +8,7 @@ TEXT1 \x08\xa6\x01 TEXT2 T
 何日目だったか、覚えていない。\pいいかげんいらいらした私は、\nどうして私につきまとうのかと、若草ゆきに厳しく問いただした。\n\p若草ゆきはいっしゅん呆気にとられた様子だったけれど、やがて\n気弱に笑って\n「お友達になりたいと思ったから」@
 とだけいった。\w\z
   
-FLG1 J\x0c FLG1_SET
+INIT J\x0c SET_VAR 
 CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \xba\x01 
 CMD2 TextOn RUNF \xe8\x01 END 
 SCEC SCEK02_002 \x04\x02 SCE_DONE 
@@ -19,6 +19,6 @@ TEXT1 \x0c\xa6\x01 TEXT2 C
 本当に寂しそうな笑顔だった。@
 その日の夕方、私は自分からゆきを誘ったのだった。\w\z
   
-FLG1 H\x02\x0c FLG1_SET \xba\x01 \x02 \xe8\x01 END  \xba\x01 
+INIT H\x02\x0c SET_VAR  \xba\x01 \x02 \xe8\x01 END  \xba\x01 
 CMD3 TextClose VAR1 \x9a\x03 END 
 END_SCRIPT

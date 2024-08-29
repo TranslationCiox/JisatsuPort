@@ -6,7 +6,7 @@ TEXT1 \xa0\xa5 TEXT2 \x11
 \n\n\n\n\n\n\n\n\n\n　　　　　　　　　　　　　『３日目』\
 
   
-FLG1 J\x0c FLG1_SET
+INIT J\x0c SET_VAR 
 CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \xae 
 CMD2 TextOn RUNF \xdc END 
 SCEC SCE096_002 \xf8 SCE_DONE 
@@ -22,7 +22,7 @@ TEXT1 \xa4\xa5 TEXT2 q
 　　身体を拭くんだ」\
 
   
-FLG1 <\x01\x0c FLG1_SET \xae \x02 \xdc END 
+INIT <\x01\x0c SET_VAR  \xae \x02 \xdc END 
 SCEC SCE096_003 :\x03 SCE_DONE 
 TEXT1 \xa8\xa5 TEXT2 i
  
@@ -32,11 +32,11 @@ TEXT1 \xa8\xa5 TEXT2 i
 \n　なたねは、準備室から水の入ったポリタンクと、新しいタオル\nを人数分運び出してきた。\p全員で協力して実験器具が詰まった\n棚を移動して壁を作り、そこを即席の『シャワールーム』とした。\n\pもちろん、女性陣のプライバシーを守るためである。\
 
   
-FLG1 ~\x03\x0c FLG1_SET \xae \x02 \xdc END   
-FLG1  \x0c FLG1_SET
+INIT ~\x03\x0c SET_VAR  \xae \x02 \xdc END   
+INIT  \x0c SET_VAR 
 CMD6 .\\Data\\Script\\Bg.Fob VAR2 v\x05 \x02
 CMD4 BgAutoFadeIn VAR2 \xa0\x05 END   
-FLG1 \x07\x01\x0c FLG1_SET
+INIT \x07\x01\x0c SET_VAR 
 CMD6 .\\Data\\Script\\Bgm.Fob VAR1 \xde\x05 
 CMD2 PlayCD RUNF \x08\x06 END 
 SCEC SCE096_004 $\x06 SCE_DONE 
@@ -52,7 +52,7 @@ TEXT1 \xac\xa5 TEXT2 q
 錦城\n　「ふふふ」\
 
   
-FLG1 h\x06\x0c FLG1_SET \xae \x02 \xdc END 
+INIT h\x06\x0c SET_VAR  \xae \x02 \xdc END 
 SCEC SCE096_005 f\x08 SCE_DONE 
 TEXT1 \xb0\xa5 TEXT2 p
  
@@ -64,7 +64,7 @@ TEXT1 \xb0\xa5 TEXT2 p
 \n　言葉は汚いが、御堂の声もどこか明るい。\pひんやりとした水の\n冷たさが、全員の気分を高揚させている。\pなんとなく合宿をして\nいるような、そんな感じすらある。\
 
   
-FLG1 \xaa\x08\x0c FLG1_SET \xae \x02 \xdc END 
+INIT \xaa\x08\x0c SET_VAR  \xae \x02 \xdc END 
 SCEC SCE096_006 \xa4\n SCE_DONE 
 TEXT1 \xb4\xa5 TEXT2 y
  
@@ -77,6 +77,6 @@ TEXT1 \xb4\xa5 TEXT2 y
 \n　誰が御堂に投票したのだろう……拓司はその疑問を頭から無理\nに追い出した。\pとりあえずいまくらいは、さっぱりと明るい気持\nちでいたかった。\
 
   
-FLG1 \xe8\n\x0c FLG1_SET \xae \x02 \xdc END  \xae 
+INIT \xe8\n\x0c SET_VAR  \xae \x02 \xdc END  \xae 
 CMD3 TextClose VAR1 \x12\r END 
 END_SCRIPT

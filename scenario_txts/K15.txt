@@ -8,7 +8,7 @@ TEXT1 \xd0\xb0\x01 TEXT2
 １週間後、ゆきは風邪薬を２００錠のんで、自殺した。@
 おしまい。これで、おしまい。\w\z
   
-FLG1 J\x0c FLG1_SET
+INIT J\x0c SET_VAR 
 CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \xea 
 CMD2 TextOn RUNF \x18\x01 END 
 CMD6 .\\Data\\Script\\Bgm.Fob VAR1 4\x01 

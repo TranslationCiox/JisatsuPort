@@ -10,7 +10,7 @@ TEXT1 \xa0( TEXT2 ^
 紅葉\n　「……」@
 拓司\n　「……」\w\z
   
-FLG1 J\x0c FLG1_SET
+INIT J\x0c SET_VAR 
 CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \xe2\x01 
 CMD2 TextOn RUNF \x10\x02 END 
 SCEC SCE016_002 ,\x02 SCE_DONE 
@@ -23,7 +23,7 @@ TEXT1 \xa4( TEXT2 (
 紅葉\n　「……」@
 拓司\n　「……」\w\z
   
-FLG1 p\x02\x0c FLG1_SET \xe2\x01 \x02 \x10\x02 END 
+INIT p\x02\x0c SET_VAR  \xe2\x01 \x02 \x10\x02 END 
 SCEC SCE016_003 J\x03 SCE_DONE 
 TEXT1 \xa8( TEXT2 5
  
@@ -34,6 +34,6 @@ TEXT1 \xa8( TEXT2 5
 紅葉\n　「うるさいっ！」\
 
   
-FLG1 \x8e\x03\x0c FLG1_SET \xe2\x01 \x02 \x10\x02 END  \xe2\x01 
+INIT \x8e\x03\x0c SET_VAR  \xe2\x01 \x02 \x10\x02 END  \xe2\x01 
 CMD3 TextClose VAR1 \xa8\x04 END 
 END_SCRIPT

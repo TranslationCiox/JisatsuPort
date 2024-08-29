@@ -18,7 +18,7 @@ TEXT1 \xe0\x92 TEXT2 \xb8
 頭の中から、すうっと何かが引いていった。\pそれまでの熱狂が嘘\nだったように、冷めた、しらけた感じが－－おなじみの感覚が頭\nの中を支配していた。\
 
   
-FLG1 J\x0c FLG1_SET
+INIT J\x0c SET_VAR 
 CMD7 .\\Data\\Script\\TextFunc.Fob RUNF J\x03 
 CMD2 TextOn RUNF x\x03 END 
 SCEC SCE084_002 \x94\x03 SCE_DONE 
@@ -30,6 +30,6 @@ TEXT1 \xe4\x92 TEXT2 C
 \n拓司\n　「紅葉！\p　紅葉ッ！」\
 
   
-FLG1 \xd8\x03\x0c FLG1_SET J\x03 \x02 x\x03 END  J\x03 
+INIT \xd8\x03\x0c SET_VAR  J\x03 \x02 x\x03 END  J\x03 
 CMD3 TextClose VAR1 *\x05 END 
 END_SCRIPT

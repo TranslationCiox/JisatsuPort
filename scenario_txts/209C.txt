@@ -11,7 +11,7 @@ TEXT1 0V\x01 TEXT2 \xdc
 あるいは壮大な嘘というべきか？\
 
   
-FLG1 J\x0c FLG1_SET
+INIT J\x0c SET_VAR 
 CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \xda\x03 
 CMD2 TextOn RUNF \x08\x04 END \x03#
 CHOICE
@@ -19,6 +19,6 @@ CHOICE
 ENDCHOICE
 
   
-FLG1 $\x04\x0c FLG1_SET \xda\x03 \x02 \x08\x04 END  \xda\x03 
+INIT $\x04\x0c SET_VAR  \xda\x03 \x02 \x08\x04 END  \xda\x03 
 CMD3 TextClose VAR1 \xf6\x04 END 
 END_SCRIPT

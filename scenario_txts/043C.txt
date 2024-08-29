@@ -1,6 +1,6 @@
 START_SCRIPT
 l-\x01`B#\x014&  
-FLG1 \t\x01\x0c FLG1_SET
+INIT \t\x01\x0c SET_VAR 
 CMD6 .\\Data\\Script\\Bgm.Fob VAR1   
 CMD2 PlayCD RUNF J END 
 SCEC SCE043_001 f SCE_DONE 
@@ -15,7 +15,7 @@ TEXT1 \xd0R TEXT2 \x88
 　だから、あらゆる現実のあれこれから、切り離されるような気\n　がした。\p雲を眺めていると、勉強やら、親の再婚やらの嫌なこ\n　とは、全部忘れられた。\
 
   
-FLG1 \xaa\x0c FLG1_SET
+INIT \xaa\x0c SET_VAR 
 CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \xea\x02 
 CMD2 TextOn RUNF \x18\x03 END 
 SCEC SCE043_002 4\x03 SCE_DONE 
@@ -32,7 +32,7 @@ TEXT1 \xd4R TEXT2 \x8e
 \n　－－紅葉の顔に浮かんだあの表情は、なんだったのだろう？\
 
   
-FLG1 x\x03\x0c FLG1_SET \xea\x02 \x02 \x18\x03 END 
+INIT x\x03\x0c SET_VAR  \xea\x02 \x02 \x18\x03 END 
 SCEC SCE043_003 \xea\x05 SCE_DONE 
 TEXT1 \xd8R TEXT2 \xe6
  
@@ -48,7 +48,7 @@ TEXT1 \xd8R TEXT2 \xe6
 \n－－そうとでも考えないと、あのキスは永遠に宙ぶらりんなまま\nだ。\
 
   
-FLG1 .\x06\x0c FLG1_SET \xea\x02 \x02 \x18\x03 END 
+INIT .\x06\x0c SET_VAR  \xea\x02 \x02 \x18\x03 END 
 SCEC SCE043_004 \n SCE_DONE 
 TEXT1 \xdcR TEXT2 \x9b
  
@@ -61,8 +61,8 @@ TEXT1 \xdcR TEXT2 \x9b
 驚いたが、それよりもまず、紅葉がこの秘密の場所に、自分たち\n以外の他人を連れてきたと言うことに怒りを禁じ得なかった。\
 
   
-FLG1 D\n\x0c FLG1_SET \xea\x02 \x02 \x18\x03 END   
-FLG1 \n\x01\x0c FLG1_SET   \x02 J END 
+INIT D\n\x0c SET_VAR  \xea\x02 \x02 \x18\x03 END   
+INIT \n\x01\x0c SET_VAR    \x02 J END 
 SCEC SCE043_005 \x1e\r SCE_DONE 
 TEXT1 \xe0R TEXT2 T
  
@@ -76,7 +76,7 @@ TEXT1 \xe0R TEXT2 T
 拓司\n　「……？」\
 
   
-FLG1 b\r\x0c FLG1_SET \xea\x02 \x02 \x18\x03 END 
+INIT b\r\x0c SET_VAR  \xea\x02 \x02 \x18\x03 END 
 SCEC SCE043_006 \xec\x0e SCE_DONE 
 TEXT1 \xe4R TEXT2 ]
  
@@ -87,7 +87,7 @@ TEXT1 \xe4R TEXT2 ]
 紅葉\n　「……」\
 
   
-FLG1 0\x0f\x0c FLG1_SET \xea\x02 \x02 \x18\x03 END 
+INIT 0\x0f\x0c SET_VAR  \xea\x02 \x02 \x18\x03 END 
 SCEC SCE043_007 \xde\x10 SCE_DONE 
 TEXT1 \xe8R TEXT2 U
  
@@ -100,7 +100,7 @@ TEXT1 \xe8R TEXT2 U
 女子学生\n　「あ～、勘違い男は怖い怖い」\
 
   
-FLG1 "\x11\x0c FLG1_SET \xea\x02 \x02 \x18\x03 END 
+INIT "\x11\x0c SET_VAR  \xea\x02 \x02 \x18\x03 END 
 SCEC SCE043_008 \xb0\x12 SCE_DONE 
 TEXT1 \xecR TEXT2 \xa6
  
@@ -111,7 +111,7 @@ TEXT1 \xecR TEXT2 \xa6
 \n拓司\n　「紅葉。\pどういうことか説明してくれ」\
 
   
-FLG1 \xf4\x12\x0c FLG1_SET \xea\x02 \x02 \x18\x03 END 
+INIT \xf4\x12\x0c SET_VAR  \xea\x02 \x02 \x18\x03 END 
 SCEC SCE043_009 \xc6\x15 SCE_DONE 
 TEXT1 \xf0R TEXT2 z
  
@@ -122,7 +122,7 @@ TEXT1 \xf0R TEXT2 z
 　　そういうこともあってさ、しかも今日、お弁当がどうのこう\n　　のとかいわれちゃって、ほんと困っちゃって。\pいい機会だか\n　　ら、ここらへんではっきりさせておこうと思って。\pそういう\n　　こと」\
 
   
-FLG1 \n\x16\x0c FLG1_SET \xea\x02 \x02 \x18\x03 END    
+INIT \n\x16\x0c SET_VAR  \xea\x02 \x02 \x18\x03 END    
 CMD2 StopCD RUNF 8\x18 END 
 SCEC SCE043_010 T\x18 SCE_DONE 
 TEXT1 \xf4R TEXT2 `
@@ -136,7 +136,7 @@ TEXT1 \xf4R TEXT2 `
 \n拓司\n　「……わかった」@
 \z
   
-FLG1 \x98\x18\x0c FLG1_SET \xea\x02 \x02 \x18\x03 END 
+INIT \x98\x18\x0c SET_VAR  \xea\x02 \x02 \x18\x03 END 
 SCEC SCE043_011 R\x1a SCE_DONE 
 TEXT1 \xf8R TEXT2 4
  
@@ -144,7 +144,7 @@ TEXT1 \xf8R TEXT2 4
 石がおける場合は、置かなければならない。\pそういう状況に、追\nい込まれてしまったのだ。\
 
   
-FLG1 \x96\x1a\x0c FLG1_SET \xea\x02 \x02 \x18\x03 END 
+INIT \x96\x1a\x0c SET_VAR  \xea\x02 \x02 \x18\x03 END 
 SCEC SCE043_012 \xa0\x1b SCE_DONE 
 TEXT1 \xfcR TEXT2 :
  
@@ -154,8 +154,8 @@ TEXT1 \xfcR TEXT2 :
 女子学生\n　「－－行こう、紅葉？」\
 
   
-FLG1 \xe4\x1b\x0c FLG1_SET \xea\x02 \x02 \x18\x03 END   
-FLG1 \xc8\x0c FLG1_SET
+INIT \xe4\x1b\x0c SET_VAR  \xea\x02 \x02 \x18\x03 END   
+INIT \xc8\x0c SET_VAR 
 CMD6 .\\Data\\Script\\Bg.Fob VAR2  \x1d \x02
 CMD4 BgAutoFadeIn VAR2 J\x1d END 
 SCEC SCE043_013 n\x1d SCE_DONE 
@@ -165,7 +165,7 @@ TEXT1 S TEXT2 J
 打ちのめされた気分だった。\pプライドはずたずたに引き裂かれ、\n泥まみれになっていた。\pこのところなかったほどのリアルな痛み\nが胸を充たしていたが、いまはそれも、とても歓迎できそうもな\nい。\
 
   
-FLG1 \xb2\x1d\x0c FLG1_SET \xea\x02 \x02 \x18\x03 END 
+INIT \xb2\x1d\x0c SET_VAR  \xea\x02 \x02 \x18\x03 END 
 SCEC SCE043_014 \x14\x1f SCE_DONE 
 TEXT1 \x04S TEXT2 \x93
  
@@ -177,7 +177,7 @@ TEXT1 \x04S TEXT2 \x93
 さきほど教室でみせた、あの複雑な表情が－－相反する二つの感\n情がせめぎ合っているような……怯えと期待、罪悪感と爽快感、\n悲しみと喜び、そんなものが現れては消え、消えてはまた浮かび\n上がる、あの表情が張り付いている。\
 
   
-FLG1 X\x1f\x0c FLG1_SET \xea\x02 \x02 \x18\x03 END 
+INIT X\x1f\x0c SET_VAR  \xea\x02 \x02 \x18\x03 END 
 SCEC SCE043_015 \xde! SCE_DONE 
 TEXT1 \x08S TEXT2 }
  
@@ -190,7 +190,7 @@ TEXT1 \x08S TEXT2 }
 \n気まずい沈黙を破ったのは、紅葉だった。\
 
   
-FLG1 ""\x0c FLG1_SET \xea\x02 \x02 \x18\x03 END 
+INIT ""\x0c SET_VAR  \xea\x02 \x02 \x18\x03 END 
 SCEC SCE043_016 P$ SCE_DONE 
 TEXT1 \x0cS TEXT2 O
  
@@ -201,6 +201,6 @@ TEXT1 \x0cS TEXT2 O
 そうして拓司はひとり、奇妙な空白の中にとりのこされた。\
 
   
-FLG1 \x94$\x0c FLG1_SET \xea\x02 \x02 \x18\x03 END  \xea\x02 
+INIT \x94$\x0c SET_VAR  \xea\x02 \x02 \x18\x03 END  \xea\x02 
 CMD3 TextClose VAR1 \x16& END 
 END_SCRIPT

@@ -6,10 +6,10 @@ TEXT1 `" TEXT2 \x0e
 \n\n\n\n\n\n　　　　　　　　　　　『通学路』\
 
   
-FLG1 J\x0c FLG1_SET
+INIT J\x0c SET_VAR 
 CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \xa2 
 CMD2 TextOn RUNF \xd0 END   
-FLG1 \x05\x01\x0c FLG1_SET
+INIT \x05\x01\x0c SET_VAR 
 CMD6 .\\Data\\Script\\Bgm.Fob VAR1 \x06\x01 
 CMD2 PlayCD RUNF 0\x01 END 
 SCEC SCE012_002 L\x01 SCE_DONE 
@@ -27,8 +27,8 @@ TEXT1 d" TEXT2 \x97
 　そして二週間前、偶然ドアの隙間から見てしまった光景は、完全\n　に彼の我慢をうち砕いた。\
 
   
-FLG1 \x90\x01\x0c FLG1_SET \xa2 \x02 \xd0 END   
-FLG1 L\x0c FLG1_SET
+INIT \x90\x01\x0c SET_VAR  \xa2 \x02 \xd0 END   
+INIT L\x0c SET_VAR 
 CMD6 .\\Data\\Script\\Bg.Fob VAR2 @\x04 \x02
 CMD4 BgAutoFadeIn VAR2 j\x04 END 
 SCEC SCE012_003 \x8e\x04 SCE_DONE 
@@ -44,7 +44,7 @@ TEXT1 h" TEXT2 \x7f
 　あるいはそうした光景を意識的に作り上げて。\
 
   
-FLG1 \xd2\x04\x0c FLG1_SET \xa2 \x02 \xd0 END 
+INIT \xd2\x04\x0c SET_VAR  \xa2 \x02 \xd0 END 
 SCEC SCE012_004 \x08\x07 SCE_DONE 
 TEXT1 l" TEXT2 \x97
  
@@ -59,8 +59,8 @@ TEXT1 l" TEXT2 \x97
 　いつものように早桃を犯している最中、はっと、それが夢ではな\n　いことに気づくのではないかと。\
 
   
-FLG1 L\x07\x0c FLG1_SET \xa2 \x02 \xd0 END   
-FLG1 \xc8\x0c FLG1_SET @\x04 \x02 j\x04 END  \x06\x01 
+INIT L\x07\x0c SET_VAR  \xa2 \x02 \xd0 END   
+INIT \xc8\x0c SET_VAR  @\x04 \x02 j\x04 END  \x06\x01 
 CMD2 StopCD RUNF "\n END 
 SCEC SCE012_005 >\n SCE_DONE 
 TEXT1 p" TEXT2 B
@@ -74,7 +74,7 @@ TEXT1 p" TEXT2 B
 早桃\n　「上村さんでしょ？」\
 
   
-FLG1 \x82\n\x0c FLG1_SET \xa2 \x02 \xd0 END 
+INIT \x82\n\x0c SET_VAR  \xa2 \x02 \xd0 END 
 SCEC SCE012_006 \xc4\x0b SCE_DONE 
 TEXT1 t" TEXT2 v
  
@@ -87,7 +87,7 @@ TEXT1 t" TEXT2 v
 拓司\n　「ああ。ブン殴ってでもやめさせてやる」\
 
   
-FLG1 \x08\x0c\x0c FLG1_SET \xa2 \x02 \xd0 END 
+INIT \x08\x0c\x0c SET_VAR  \xa2 \x02 \xd0 END 
 SCEC SCE012_007 \x1a\x0e SCE_DONE 
 TEXT1 x" TEXT2 5
  
@@ -98,7 +98,7 @@ TEXT1 x" TEXT2 5
 早桃\n　「……そうかもね」\
 
   
-FLG1 ^\x0e\x0c FLG1_SET \xa2 \x02 \xd0 END 
+INIT ^\x0e\x0c SET_VAR  \xa2 \x02 \xd0 END 
 SCEC SCE012_008 l\x0f SCE_DONE 
 TEXT1 |" TEXT2 \xa2
  
@@ -110,7 +110,7 @@ TEXT1 |" TEXT2 \xa2
 拓司\n　「いや、２歳はデカいって。\p運動系の部活の連中とかさ、今年\n　　の新人はナニ考えてるの全然わからない、っていつもぼやいて\n　　るぜ。\p礼儀とか、常識とか、もう、全然おれたちとは違うっ\n　　て。\p説教してもポカンとされるだけで、まるで宇宙人に地\n　　球の掟を教えてるみたいだって」\
 
   
-FLG1 \xb0\x0f\x0c FLG1_SET \xa2 \x02 \xd0 END 
+INIT \xb0\x0f\x0c SET_VAR  \xa2 \x02 \xd0 END 
 SCEC SCE012_009 r\x12 SCE_DONE 
 TEXT1 \x80" TEXT2 <
  
@@ -121,17 +121,17 @@ TEXT1 \x80" TEXT2 <
 早桃\n　「……」\
 
   
-FLG1 \xb6\x12\x0c FLG1_SET \xa2 \x02 \xd0 END 
+INIT \xb6\x12\x0c SET_VAR  \xa2 \x02 \xd0 END 
 SCEC SCE012_010 \xe0\x13 SCE_DONE 
 TEXT1 \x84"\x0c" \xa2 \x02
 CMD5 TextWindowOffDirect 0\x14 END   
-FLG1 \x0c FLG1_SET  \x04
-FLG1 \x14\x0c FLG1_SET  \x08
-FLG1 \x0c FLG1_SET \x06\x01 
+INIT \x0c SET_VAR   \x04
+INIT \x14\x0c SET_VAR   \x08
+INIT \x0c SET_VAR  \x06\x01 
 CMD3 SePlayEx VAR2 \xb2\x14 END   
-FLG1 \x01\x0c FLG1_SET @\x04 \x02
+INIT \x01\x0c SET_VAR  @\x04 \x02
 CMD4 BgNormalFadeIn RUNF \xf8\x14 END   
-FLG1 \x07\x01\x0c FLG1_SET \x06\x01 \x02 0\x01 END  \xa2 \x02
+INIT \x07\x01\x0c SET_VAR  \x06\x01 \x02 0\x01 END  \xa2 \x02
 CMD4 TextWindowOn VAR2 \\\x15 END \x03\x9d
  
 紅葉\n　「おはよーっ！」@
@@ -145,7 +145,7 @@ CMD4 TextWindowOn VAR2 \\\x15 END \x03\x9d
 　そんな印象がある。\
 
   
-FLG1 \x80\x15\x0c FLG1_SET \xa2 \x02 \xd0 END 
+INIT \x80\x15\x0c SET_VAR  \xa2 \x02 \xd0 END 
 SCEC SCE012_011 .\x18 SCE_DONE 
 TEXT1 \x88" TEXT2 \xa8
  
@@ -159,7 +159,7 @@ TEXT1 \x88" TEXT2 \xa8
 \n　そこまで言ったときだった。早桃がおずおずといった。\
 
   
-FLG1 r\x18\x0c FLG1_SET \xa2 \x02 \xd0 END 
+INIT r\x18\x0c SET_VAR  \xa2 \x02 \xd0 END 
 SCEC SCE012_012 L\x1b SCE_DONE 
 TEXT1 \x8c" TEXT2 3
  
@@ -167,19 +167,19 @@ TEXT1 \x8c" TEXT2 3
 紅葉\n　「早桃ちゃん？」\
 
   
-FLG1 \x90\x1b\x0c FLG1_SET \xa2 \x02 \xd0 END 
+INIT \x90\x1b\x0c SET_VAR  \xa2 \x02 \xd0 END 
 SCEC SCE012_013 \x96\x1c SCE_DONE 
 TEXT1 \x90" TEXT2 \x07.\\Data\\Script\\TextFunc.fob RUNF \xda\x1c \x02
 CMD6 CheckNormalMessageSkip RUNF \x08\x1d END   
-FLG1 \x0c FLG1_SET  \x04
-FLG1 \x15\x0c FLG1_SET  \x08
-FLG1 \x0c FLG1_SET \x06\x01 \x02 \xb2\x14 END  \xa2 \x02
+INIT \x0c SET_VAR   \x04
+INIT \x15\x0c SET_VAR   \x08
+INIT \x0c SET_VAR  \x06\x01 \x02 \xb2\x14 END  \xa2 \x02
 CMD5 UpdateScenarioRead RUNF \xa8\x1d END \x03\x0b
 CHOICE
 早桃を追う\n紅葉と登校する\n\l0,2,
 ENDCHOICE
 
   
-FLG1 \xd0\x1d\x0c FLG1_SET \xa2 \x02 \xd0 END  \xa2 
+INIT \xd0\x1d\x0c SET_VAR  \xa2 \x02 \xd0 END  \xa2 
 CMD3 TextClose VAR1 B\x1e END 
 END_SCRIPT

@@ -1,6 +1,6 @@
 START_SCRIPT
 \xa2\x14\x01`B#\x01\xfc\x10  
-FLG1 \x08\x01\x0c FLG1_SET
+INIT \x08\x01\x0c SET_VAR 
 CMD6 .\\Data\\Script\\Bgm.Fob VAR1   
 CMD2 PlayCD RUNF J END 
 SCEC SCE041_001 f SCE_DONE 
@@ -17,7 +17,7 @@ TEXT1  N TEXT2 x
 やがて早桃はポツリといった。\
 
   
-FLG1 \xaa\x0c FLG1_SET
+INIT \xaa\x0c SET_VAR 
 CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \xaa\x02 
 CMD2 TextOn RUNF \xd8\x02 END 
 SCEC SCE041_002 \xf4\x02 SCE_DONE 
@@ -30,9 +30,9 @@ TEXT1 $N TEXT2 ;
 \n早桃は小さく首を横に振った。\
 
   
-FLG1 8\x03\x0c FLG1_SET \xaa\x02 \x02 \xd8\x02 END    
+INIT 8\x03\x0c SET_VAR  \xaa\x02 \x02 \xd8\x02 END    
 CMD2 StopCD RUNF j\x04 END   
-FLG1 \xc8\x0c FLG1_SET
+INIT \xc8\x0c SET_VAR 
 CMD6 .\\Data\\Script\\Bg.Fob VAR2 \xa0\x04 
 CMD2 BgOn VAR2 \xca\x04 END 
 SCEC SCE041_003 \xe6\x04 SCE_DONE 
@@ -51,7 +51,7 @@ TEXT1 (N TEXT2 \xa3
 　　だから、おにいちゃんと恋人にはなれないの。\pわかる？」\
 
   
-FLG1 *\x05\x0c FLG1_SET \xaa\x02 \x02 \xd8\x02 END 
+INIT *\x05\x0c SET_VAR  \xaa\x02 \x02 \xd8\x02 END 
 SCEC SCE041_004 \xf0\x07 SCE_DONE 
 TEXT1 ,N TEXT2 \x8e
  
@@ -68,8 +68,8 @@ TEXT1 ,N TEXT2 \x8e
 拓司\n　「ああ？」\
 
   
-FLG1 4\x08\x0c FLG1_SET \xaa\x02 \x02 \xd8\x02 END   
-FLG1 \t\x01\x0c FLG1_SET   \x02 J END 
+INIT 4\x08\x0c SET_VAR  \xaa\x02 \x02 \xd8\x02 END   
+INIT \t\x01\x0c SET_VAR    \x02 J END 
 SCEC SCE041_005 \xda\n SCE_DONE 
 TEXT1 0N TEXT2 m
  
@@ -82,7 +82,7 @@ TEXT1 0N TEXT2 m
 　　もうちょっとで終わるかなって、時計を見るとまだ５分くらい\n　　しか過ぎてなくって。」\
 
   
-FLG1 \x1e\x0b\x0c FLG1_SET \xaa\x02 \x02 \xd8\x02 END 
+INIT \x1e\x0b\x0c SET_VAR  \xaa\x02 \x02 \xd8\x02 END 
 SCEC SCE041_006 \x0c\r SCE_DONE 
 TEXT1 4N TEXT2 \x81
  
@@ -97,7 +97,7 @@ TEXT1 4N TEXT2 \x81
 拓司\n　「早桃－－」\
 
   
-FLG1 P\r\x0c FLG1_SET \xaa\x02 \x02 \xd8\x02 END    \x02 j\x04 END 
+INIT P\r\x0c SET_VAR  \xaa\x02 \x02 \xd8\x02 END    \x02 j\x04 END 
 SCEC SCE041_007 \xa8\x0f SCE_DONE 
 TEXT1 8N TEXT2 +
  
@@ -107,6 +107,6 @@ TEXT1 8N TEXT2 +
 早桃\n　「ダイスキだよ。……おにいちゃん」\
 
   
-FLG1 \xec\x0f\x0c FLG1_SET \xaa\x02 \x02 \xd8\x02 END  \xaa\x02 
+INIT \xec\x0f\x0c SET_VAR  \xaa\x02 \x02 \xd8\x02 END  \xaa\x02 
 CMD3 TextClose VAR1 \xde\x10 END 
 END_SCRIPT

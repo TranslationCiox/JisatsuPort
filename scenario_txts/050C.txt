@@ -2,9 +2,9 @@ START_SCRIPT
 \xd3\x15\x01`B#\x01\x9e\x12
 SCEC SCE050_001 \x06 SCE_DONE 
 TEXT1 \xc0]\x0c"  
-FLG1 \x0c FLG1_SET  \x04
-FLG1 \x19\x0c FLG1_SET  \x08
-FLG1 \x0c FLG1_SET
+INIT \x0c SET_VAR   \x04
+INIT \x19\x0c SET_VAR   \x08
+INIT \x0c SET_VAR 
 CMD6 .\\Data\\Script\\Bgm.Fob VAR1 \x98 
 CMD3 SePlayEx VAR2 \xc2 END \x03\x82
  
@@ -16,7 +16,7 @@ CMD3 SePlayEx VAR2 \xc2 END \x03\x82
 　　これはテストには出ないが、重要なことだぞ」\
 
   
-FLG1 \xe2\x0c FLG1_SET
+INIT \xe2\x0c SET_VAR 
 CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \n\x03 
 CMD2 TextOn RUNF 8\x03 END 
 SCEC SCE050_002 T\x03 SCE_DONE 
@@ -30,7 +30,7 @@ TEXT1 \xc4] TEXT2 o
 ためらいのかけらもない、完璧なアクションだった。\
 
   
-FLG1 \x98\x03\x0c FLG1_SET \n\x03 \x02 8\x03 END 
+INIT \x98\x03\x0c SET_VAR  \n\x03 \x02 8\x03 END 
 SCEC SCE050_003 \x8e\x05 SCE_DONE 
 TEXT1 \xc8] TEXT2 \xd9
  
@@ -45,7 +45,7 @@ TEXT1 \xc8] TEXT2 \xd9
 なんの劇的さもなかった。\pただ、どたん、どたん、と、学生た\nちが机に突っ伏してゆく音だけが連続して聞こえて、それは単\n純に「奇妙」としかいえなかった。\p悲しい感じとか、不気味な感\nじとか、異常な感じとか……そんな、もっともらしい感想が入り\n込む余地はどこにもなかった。\pただ奇妙だった。\
 
   
-FLG1 \xd2\x05\x0c FLG1_SET \n\x03 \x02 8\x03 END 
+INIT \xd2\x05\x0c SET_VAR  \n\x03 \x02 8\x03 END 
 SCEC SCE050_004 p\t SCE_DONE 
 TEXT1 \xcc] TEXT2 \x8f
  
@@ -56,7 +56,7 @@ TEXT1 \xcc] TEXT2 \x8f
 \n拓司\n　「……もういいよ、雲居さん」\
 
   
-FLG1 \xb4\t\x0c FLG1_SET \n\x03 \x02 8\x03 END 
+INIT \xb4\t\x0c SET_VAR  \n\x03 \x02 8\x03 END 
 SCEC SCE050_005 *\x0c SCE_DONE 
 TEXT1 \xd0] TEXT2 c
  
@@ -66,7 +66,7 @@ TEXT1 \xd0] TEXT2 c
 \nなたね\n　「広まるわよ。とまらないで広まる。\pみんな死ぬ」\
 
   
-FLG1 n\x0c\x0c FLG1_SET \n\x03 \x02 8\x03 END 
+INIT n\x0c\x0c SET_VAR  \n\x03 \x02 8\x03 END 
 SCEC SCE050_006 4\x0e SCE_DONE 
 TEXT1 \xd4] TEXT2 d
  
@@ -81,7 +81,7 @@ TEXT1 \xd4] TEXT2 d
 　何をすべきか！\
 
   
-FLG1 x\x0e\x0c FLG1_SET \n\x03 \x02 8\x03 END 
+INIT x\x0e\x0c SET_VAR  \n\x03 \x02 8\x03 END 
 SCEC SCE050_007 B\x10 SCE_DONE 
 TEXT1 \xd8] TEXT2 c
  
@@ -94,7 +94,7 @@ TEXT1 \xd8] TEXT2 c
 　この３階廊下をまっすぐ行った突き当たりの教室に、早桃はい\n　る。\
 
   
-FLG1 \x86\x10\x0c FLG1_SET \n\x03 \x02 8\x03 END  \x98 
+INIT \x86\x10\x0c SET_VAR  \n\x03 \x02 8\x03 END  \x98 
 CMD2 StopCD RUNF X\x12 END  \n\x03 
 CMD3 TextClose VAR1 \x80\x12 END 
 END_SCRIPT

@@ -6,7 +6,7 @@ TEXT1 \xf0h\x01 TEXT2 \x11
 \n\n\n\n\n\n\n\n\n\n　　　　　　　　　　　　　『１０日目』\
 
   
-FLG1 J\x0c FLG1_SET
+INIT J\x0c SET_VAR 
 CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \xae 
 CMD2 TextOn RUNF \xdc END 
 SCEC SCE221_002 \xf8 SCE_DONE 
@@ -23,7 +23,7 @@ TEXT1 \xf4h\x01 TEXT2 \x81
 \n御堂\n　「ふん。\pお前を生かしてやってるのは、波動の監視役としてだ\n　　からな。\pしっかり見張ってろ。\pポカやらかしたら容赦しねえ\n　　からな」\
 
   
-FLG1 <\x01\x0c FLG1_SET \xae \x02 \xdc END 
+INIT <\x01\x0c SET_VAR  \xae \x02 \xdc END 
 SCEC SCE221_003 z\x03 SCE_DONE 
 TEXT1 \xf8h\x01 TEXT2 :
  
@@ -32,12 +32,12 @@ TEXT1 \xf8h\x01 TEXT2 :
 自分のことを考えるのに精一杯で、とてもではないが他人の面倒\nなど見ていられないのだ。\
 
   
-FLG1 \xbe\x03\x0c FLG1_SET \xae \x02 \xdc END \x03"
+INIT \xbe\x03\x0c SET_VAR  \xae \x02 \xdc END \x03"
 CHOICE
 それでも拓司は、自分の食糧を少し残し、夜、なたねに与えた\n拓司は食糧を腹に収め、いつかくるであろう『そのとき』に備えた\n\l0,2,
 ENDCHOICE
 
   
-FLG1 \xe0\x04\x0c FLG1_SET \xae \x02 \xdc END  \xae 
+INIT \xe0\x04\x0c SET_VAR  \xae \x02 \xdc END  \xae 
 CMD3 TextClose VAR1 \xae\x05 END 
 END_SCRIPT

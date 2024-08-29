@@ -16,7 +16,7 @@ TEXT1  \xa7\x01 TEXT2 \xb8
 理性的判断を通過した非常識な答。@
 非常識であることを十分理解したうえで、彼女は非常識を遂行し\nようとしていた。\p怖かった。\w\z
   
-FLG1 J\x0c FLG1_SET
+INIT J\x0c SET_VAR 
 CMD7 .\\Data\\Script\\TextFunc.Fob RUNF J\x03 
 CMD2 TextOn RUNF x\x03 END  J\x03 
 CMD3 TextClose VAR1 \xa0\x03 END 

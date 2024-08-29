@@ -1,9 +1,9 @@
 START_SCRIPT
 \x9b\x1f\x01`B#\x01\n\x1a  
-FLG1 \n\x01\x0c FLG1_SET
+INIT \n\x01\x0c SET_VAR 
 CMD6 .\\Data\\Script\\Bgm.Fob VAR1   
 CMD2 PlayCD RUNF J END   
-FLG1 +\x0c FLG1_SET
+INIT +\x0c SET_VAR 
 CMD6 .\\Data\\Script\\Bg.Fob VAR2 \x80 \x02
 CMD4 BgAutoFadeIn VAR2 \xaa END 
 SCEC SCE233_001 \xce SCE_DONE 
@@ -19,7 +19,7 @@ TEXT1 \xb0{\x01 TEXT2 _
 \n拓司\n　「わからない。\pたぶん……たぶん……」\
 
   
-FLG1 \x12\x01\x0c FLG1_SET
+INIT \x12\x01\x0c SET_VAR 
 CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \xae\x02 
 CMD2 TextOn RUNF \xdc\x02 END 
 SCEC SCE233_002 \xf8\x02 SCE_DONE 
@@ -37,7 +37,7 @@ TEXT1 \xb4{\x01 TEXT2 \x96
 \n次にそうなるのは、自分かもしれないのだ。\
 
   
-FLG1 <\x03\x0c FLG1_SET \xae\x02 \x02 \xdc\x02 END 
+INIT <\x03\x0c SET_VAR  \xae\x02 \x02 \xdc\x02 END 
 SCEC SCE233_003 \xce\x05 SCE_DONE 
 TEXT1 \xb8{\x01 TEXT2 \x8c
  
@@ -49,7 +49,7 @@ TEXT1 \xb8{\x01 TEXT2 \x8c
 \nカンナが冷たくいった。\p紅葉はキッとカンナをにらみつけた。\
 
   
-FLG1 \x12\x06\x0c FLG1_SET \xae\x02 \x02 \xdc\x02 END 
+INIT \x12\x06\x0c SET_VAR  \xae\x02 \x02 \xdc\x02 END 
 SCEC SCE233_004 |\x08 SCE_DONE 
 TEXT1 \xbc{\x01 TEXT2 \xb2
  
@@ -61,7 +61,7 @@ TEXT1 \xbc{\x01 TEXT2 \xb2
 \n紅葉は髪の毛をかきむしっていった。\p声が徐々に大きくなる。\
 
   
-FLG1 \xc0\x08\x0c FLG1_SET \xae\x02 \x02 \xdc\x02 END 
+INIT \xc0\x08\x0c SET_VAR  \xae\x02 \x02 \xdc\x02 END 
 SCEC SCE233_005 \xc2\x0b SCE_DONE 
 TEXT1 \xc0{\x01 TEXT2 \xae
  
@@ -74,7 +74,7 @@ TEXT1 \xc0{\x01 TEXT2 \xae
 　　で、観客はみんなスーッとするって仕掛け」\
 
   
-FLG1 \x06\x0c\x0c FLG1_SET \xae\x02 \x02 \xdc\x02 END 
+INIT \x06\x0c\x0c SET_VAR  \xae\x02 \x02 \xdc\x02 END 
 SCEC SCE233_006 \xf8\x0e SCE_DONE 
 TEXT1 \xc4{\x01 TEXT2 \x82
  
@@ -87,7 +87,7 @@ TEXT1 \xc4{\x01 TEXT2 \x82
 拓司\n　「どう……って……」\
 
   
-FLG1 <\x0f\x0c FLG1_SET \xae\x02 \x02 \xdc\x02 END 
+INIT <\x0f\x0c SET_VAR  \xae\x02 \x02 \xdc\x02 END 
 SCEC SCE233_007 ~\x11 SCE_DONE 
 TEXT1 \xc8{\x01 TEXT2 G
  
@@ -97,7 +97,7 @@ TEXT1 \xc8{\x01 TEXT2 G
 拓司\n　「……どういう意味だ？」\
 
   
-FLG1 \xc2\x11\x0c FLG1_SET \xae\x02 \x02 \xdc\x02 END 
+INIT \xc2\x11\x0c SET_VAR  \xae\x02 \x02 \xdc\x02 END 
 SCEC SCE233_008 \x18\x13 SCE_DONE 
 TEXT1 \xcc{\x01 TEXT2 \x95
  
@@ -108,7 +108,7 @@ TEXT1 \xcc{\x01 TEXT2 \x95
 紅葉\n　「どうしてよ！」\
 
   
-FLG1 \\\x13\x0c FLG1_SET \xae\x02 \x02 \xdc\x02 END 
+INIT \\\x13\x0c SET_VAR  \xae\x02 \x02 \xdc\x02 END 
 SCEC SCE233_009 \xea\x15 SCE_DONE 
 TEXT1 \xd0{\x01 TEXT2 n
  
@@ -120,21 +120,21 @@ TEXT1 \xd0{\x01 TEXT2 n
 \n誰も、何もいわなかった。\
 
   
-FLG1 .\x16\x0c FLG1_SET \xae\x02 \x02 \xdc\x02 END    
+INIT .\x16\x0c SET_VAR  \xae\x02 \x02 \xdc\x02 END    
 CMD2 StopCD RUNF ,\x18 END   
-FLG1 \xc8\x0c FLG1_SET \x80 \x02 \xaa END 
+INIT \xc8\x0c SET_VAR  \x80 \x02 \xaa END 
 SCEC SCE233_010 |\x18 SCE_DONE 
 TEXT1 \xd4{\x01 TEXT2 \x0e
  
 その晩、紅葉は結局なにも答えずじまいだった。\
 
   
-FLG1 \xc0\x18\x0c FLG1_SET \xae\x02 \x02 \xdc\x02 END \x03\x1d
+INIT \xc0\x18\x0c SET_VAR  \xae\x02 \x02 \xdc\x02 END \x03\x1d
 CHOICE
 しかし拓司は紅葉が協力してくれるはずだと信じていた\n拓司は、紅葉に頼るのは無理そうだ、と思った。\n\l0,2,
 ENDCHOICE
 
   
-FLG1 2\x19\x0c FLG1_SET \xae\x02 \x02 \xdc\x02 END  \xae\x02 
+INIT 2\x19\x0c SET_VAR  \xae\x02 \x02 \xdc\x02 END  \xae\x02 
 CMD3 TextClose VAR1 \xec\x19 END 
 END_SCRIPT

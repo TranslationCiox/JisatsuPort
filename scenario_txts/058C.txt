@@ -10,10 +10,10 @@ TEXT1 @j TEXT2 \x1b
 拓司は一気に教室に駆け込んだ。\
 
   
-FLG1 \x90\x0c FLG1_SET
+INIT \x90\x0c SET_VAR 
 CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \x1c\x01 
 CMD2 TextOn RUNF J\x01 END   
-FLG1 \n\x01\x0c FLG1_SET \x06 
+INIT \n\x01\x0c SET_VAR  \x06 
 CMD2 PlayCD RUNF \x8c\x01 END 
 SCEC SCE058_002 \xa8\x01 SCE_DONE 
 TEXT1 Dj TEXT2 r
@@ -28,7 +28,7 @@ TEXT1 Dj TEXT2 r
 拓司の胸のなかで、どす黒い塊が爆発した。\
 
   
-FLG1 \xec\x01\x0c FLG1_SET \x1c\x01 \x02 J\x01 END 
+INIT \xec\x01\x0c SET_VAR  \x1c\x01 \x02 J\x01 END 
 SCEC SCE058_003 \xee\x03 SCE_DONE 
 TEXT1 Hj TEXT2 \x9a
  
@@ -43,8 +43,8 @@ TEXT1 Hj TEXT2 \x9a
 視界が奇妙な色で明滅する。\
 
   
-FLG1 2\x04\x0c FLG1_SET \x1c\x01 \x02 J\x01 END   
-FLG1 \xc8\x0c FLG1_SET
+INIT 2\x04\x0c SET_VAR  \x1c\x01 \x02 J\x01 END   
+INIT \xc8\x0c SET_VAR 
 CMD6 .\\Data\\Script\\Bg.Fob VAR2 \xee\x06 \x02
 CMD4 BgAutoFadeIn VAR2 \x18\x07 END 
 SCEC SCE058_004 <\x07 SCE_DONE 
@@ -61,8 +61,8 @@ TEXT1 Lj TEXT2 \xab
 　全員がビクッと身体をこわばらせ、おそるおそる、互いに顔を\n見合わせる。\pなかには反抗的な目でなたねをにらみ続けている者\nもいる。\pしかし、そんな視線をすべて受けてなお、なたねは動じ\nる様子もなく、毅然と立って叫び続けた。\
 
   
-FLG1 \x80\x07\x0c FLG1_SET \x1c\x01 \x02 J\x01 END   
-FLG1 \x0b\x01\x0c FLG1_SET \x06 \x02 \x8c\x01 END 
+INIT \x80\x07\x0c SET_VAR  \x1c\x01 \x02 J\x01 END   
+INIT \x0b\x01\x0c SET_VAR  \x06 \x02 \x8c\x01 END 
 SCEC SCE058_005 \x9a\n SCE_DONE 
 TEXT1 Pj TEXT2 \xc5
  
@@ -75,7 +75,7 @@ TEXT1 Pj TEXT2 \xc5
 　なたねの子供っぽい罵詈雑言を受けて、彼らは心から傷ついて\nいるのだ。\
 
   
-FLG1 \xde\n\x0c FLG1_SET \x1c\x01 \x02 J\x01 END 
+INIT \xde\n\x0c SET_VAR  \x1c\x01 \x02 J\x01 END 
 SCEC SCE058_006 ,\x0e SCE_DONE 
 TEXT1 Tj TEXT2 N
  
@@ -87,7 +87,7 @@ TEXT1 Tj TEXT2 N
 　そこには窓があった。\
 
   
-FLG1 p\x0e\x0c FLG1_SET \x1c\x01 \x02 J\x01 END 
+INIT p\x0e\x0c SET_VAR  \x1c\x01 \x02 J\x01 END 
 SCEC SCE058_007 \xe2\x0f SCE_DONE 
 TEXT1 Xj TEXT2 B
  
@@ -102,7 +102,7 @@ TEXT1 Xj TEXT2 B
 男子学生\n　「終わり」\
 
   
-FLG1 &\x10\x0c FLG1_SET \x1c\x01 \x02 J\x01 END 
+INIT &\x10\x0c SET_VAR  \x1c\x01 \x02 J\x01 END 
 SCEC SCE058_006 h\x11 SCE_DONE 
 TEXT1 \\j TEXT2 \x85
  
@@ -114,7 +114,7 @@ TEXT1 \\j TEXT2 \x85
 終わりはすぐにやってきた。\p学生たちは我先にと窓へ殺到し、躊\n躇することもなく飛び降りて消えていった。\p先ほどの喉を切った\n学生たちと同じく、なにか笑ってしまうような光景だった。\
 
   
-FLG1 \xac\x11\x0c FLG1_SET \x1c\x01 \x02 J\x01 END  \x06 \x02 0 END 
+INIT \xac\x11\x0c SET_VAR  \x1c\x01 \x02 J\x01 END  \x06 \x02 0 END 
 SCEC SCE058_009 \x14\x14 SCE_DONE 
 TEXT1 `j TEXT2 h
  
@@ -123,8 +123,8 @@ TEXT1 `j TEXT2 h
 床に押さえつけられても、早桃はまだ何かに取り憑かれたような\n様子で、ブルブルと震えていた。\p拓司はそんな早桃に馬乗りにな\nって、頬に数発、鋭い平手打ちを放った。\
 
   
-FLG1 X\x14\x0c FLG1_SET \x1c\x01 \x02 J\x01 END   
-FLG1 \xc8\x0c FLG1_SET \xee\x06 \x02 \x18\x07 END 
+INIT X\x14\x0c SET_VAR  \x1c\x01 \x02 J\x01 END   
+INIT \xc8\x0c SET_VAR  \xee\x06 \x02 \x18\x07 END 
 SCEC SCE058_010 f\x16 SCE_DONE 
 TEXT1 dj TEXT2 v
  
@@ -138,7 +138,7 @@ TEXT1 dj TEXT2 v
 早桃\n　「……私はもうたどり着けないから。\pおにいちゃんのこと、好\n　　きになる資格ないから」\
 
   
-FLG1 \xaa\x16\x0c FLG1_SET \x1c\x01 \x02 J\x01 END 
+INIT \xaa\x16\x0c SET_VAR  \x1c\x01 \x02 J\x01 END 
 SCEC SCE058_011 \xbc\x18 SCE_DONE 
 TEXT1 hj TEXT2 \x88
  
@@ -153,7 +153,7 @@ TEXT1 hj TEXT2 \x88
 　拓司は心配したが、１分もすると、早桃はゆっくりと自分で身\n　体を起こした。\
 
   
-FLG1 \x19\x0c FLG1_SET \x1c\x01 \x02 J\x01 END 
+INIT \x19\x0c SET_VAR  \x1c\x01 \x02 J\x01 END 
 SCEC SCE058_012 Z\x1b SCE_DONE 
 TEXT1 lj TEXT2 ]
  
@@ -168,7 +168,7 @@ TEXT1 lj TEXT2 ]
 早桃\n　「大丈夫。早桃は大丈夫だから。\pそれよりも……」\
 
   
-FLG1 \x9e\x1b\x0c FLG1_SET \x1c\x01 \x02 J\x01 END 
+INIT \x9e\x1b\x0c SET_VAR  \x1c\x01 \x02 J\x01 END 
 SCEC SCE058_013 L\x1d SCE_DONE 
 TEXT1 pj TEXT2 \x1d
  
@@ -176,12 +176,12 @@ TEXT1 pj TEXT2 \x1d
 早桃\n　「……なんでもない。\p行こう、おにいちゃん。\pここに、いたく\n　　ない……」\
 
   
-FLG1 \x90\x1d\x0c FLG1_SET \x1c\x01 \x02 J\x01 END \x03\x12
+INIT \x90\x1d\x0c SET_VAR  \x1c\x01 \x02 J\x01 END \x03\x12
 CHOICE
 「……天使って、なんだ？」\n「……ここにいたくない？」\n\l0,2,
 ENDCHOICE
 
   
-FLG1 >\x1e\x0c FLG1_SET \x1c\x01 \x02 J\x01 END  \x1c\x01 
+INIT >\x1e\x0c SET_VAR  \x1c\x01 \x02 J\x01 END  \x1c\x01 
 CMD3 TextClose VAR1 \xcc\x1e END 
 END_SCRIPT

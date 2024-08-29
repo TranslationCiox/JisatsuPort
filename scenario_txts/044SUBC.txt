@@ -1,6 +1,6 @@
 START_SCRIPT
 \xb6(\x01`B#\x01F"  
-FLG1 \x05\x01\x0c FLG1_SET
+INIT \x05\x01\x0c SET_VAR 
 CMD6 .\\Data\\Script\\Bgm.Fob VAR1   
 CMD2 PlayCD RUNF J END 
 SCEC SCE044_018 f SCE_DONE 
@@ -16,7 +16,7 @@ TEXT1 \xa4T TEXT2 p
 指先がつい、と動いて、太股のあわせめに潜り込む。@
 睾丸を下から撫でさする。\w\z
   
-FLG1 \xaa\x0c FLG1_SET
+INIT \xaa\x0c SET_VAR 
 CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \x8a\x02 
 CMD2 TextOn RUNF \xb8\x02 END 
 SCEC SCE044_019 \xd4\x02 SCE_DONE 
@@ -31,7 +31,7 @@ TEXT1 \xa8T TEXT2 l
 拓司\n　「……」@
 錦城\n　「私は、気持ちいいかどうか、聞いてるのよ？」\w\z
   
-FLG1 \x18\x03\x0c FLG1_SET \x8a\x02 \x02 \xb8\x02 END 
+INIT \x18\x03\x0c SET_VAR  \x8a\x02 \x02 \xb8\x02 END 
 SCEC SCE044_020 \x02\x05 SCE_DONE 
 TEXT1 \xacT TEXT2 e
  
@@ -44,7 +44,7 @@ TEXT1 \xacT TEXT2 e
 \n拓司\n　「気持ちいいです」@
 \n錦城は拓司の返事に満足そうに笑った。\w\z
   
-FLG1 F\x05\x0c FLG1_SET \x8a\x02 \x02 \xb8\x02 END 
+INIT F\x05\x0c SET_VAR  \x8a\x02 \x02 \xb8\x02 END 
 SCEC SCE044_021 \x14\x07 SCE_DONE 
 TEXT1 \xb0T TEXT2 R
  
@@ -56,7 +56,7 @@ TEXT1 \xb0T TEXT2 R
 錦城\n　「そうねえ。それじゃあ、先生の前でしてみせて」@
 拓司\n　「え？」\w\z
   
-FLG1 X\x07\x0c FLG1_SET \x8a\x02 \x02 \xb8\x02 END 
+INIT X\x07\x0c SET_VAR  \x8a\x02 \x02 \xb8\x02 END 
 SCEC SCE044_022 \xda\x08 SCE_DONE 
 TEXT1 \xb4T TEXT2 ~
  
@@ -69,7 +69,7 @@ TEXT1 \xb4T TEXT2 ~
 一瞬の躊躇を経て、拓司は机から降りて立ち、チャックをおろし\nた。@
 ペ○スをズボンの中から引きずり出し、錦城の前に見せつけるよ\nうに晒す。\w\z
   
-FLG1 \x1e\t\x0c FLG1_SET \x8a\x02 \x02 \xb8\x02 END 
+INIT \x1e\t\x0c SET_VAR  \x8a\x02 \x02 \xb8\x02 END 
 SCEC SCE044_023 P\x0b SCE_DONE 
 TEXT1 \xb8T TEXT2 =
  
@@ -77,7 +77,7 @@ TEXT1 \xb8T TEXT2 =
 \n錦城は眼を細めて、反り返った若いペ○スを観察している。@
 \n錦城\n　「立派なのね、虎菱くん。素敵よ。\pさあ、先生のこと見なが\n　　ら、自分でして見せて？　ね？」\w\z
   
-FLG1 \x94\x0b\x0c FLG1_SET \x8a\x02 \x02 \xb8\x02 END 
+INIT \x94\x0b\x0c SET_VAR  \x8a\x02 \x02 \xb8\x02 END 
 SCEC SCE044_024 \xc2\x0c SCE_DONE 
 TEXT1 \xbcT TEXT2 ?
  
@@ -86,7 +86,7 @@ TEXT1 \xbcT TEXT2 ?
 早くも先端は、透明の液をだらしなく吐き出している。@
 ペ○スに視線を貼り付かせたまま、錦城は腕を組んで首を傾げ\w\z
   
-FLG1 \x06\r\x0c FLG1_SET \x8a\x02 \x02 \xb8\x02 END 
+INIT \x06\r\x0c SET_VAR  \x8a\x02 \x02 \xb8\x02 END 
 SCEC SCE044_025 <\x0e SCE_DONE 
 TEXT1 \xc0T TEXT2 @
  
@@ -95,7 +95,7 @@ TEXT1 \xc0T TEXT2 @
 拓司\n　「……は、はい」@
 錦城\n　「そう？　それじゃあ、先生の脚、好きなように使っていいわ\n　　よ？」\w\z
   
-FLG1 \x80\x0e\x0c FLG1_SET \x8a\x02 \x02 \xb8\x02 END 
+INIT \x80\x0e\x0c SET_VAR  \x8a\x02 \x02 \xb8\x02 END 
 SCEC SCE044_026 \xba\x0f SCE_DONE 
 TEXT1 \xc4T TEXT2 T
  
@@ -106,7 +106,7 @@ TEXT1 \xc4T TEXT2 T
 この脚を使ってどのようにオナニーをすればいいのだろうか？@
 救いを求める拓司の視線を受けて、錦城はにこりと微笑んだ。\w\z
   
-FLG1 \xfe\x0f\x0c FLG1_SET \x8a\x02 \x02 \xb8\x02 END 
+INIT \xfe\x0f\x0c SET_VAR  \x8a\x02 \x02 \xb8\x02 END 
 SCEC SCE044_027 \x88\x11 SCE_DONE 
 TEXT1 \xc8T TEXT2 \x8b
  
@@ -120,7 +120,7 @@ TEXT1 \xc8T TEXT2 \x8b
 ただ、それを命じはしなかった。拓司が自ら決めたのだ。@
 錦城はそれを望んでいたのだ。\w\z
   
-FLG1 \xcc\x11\x0c FLG1_SET \x8a\x02 \x02 \xb8\x02 END 
+INIT \xcc\x11\x0c SET_VAR  \x8a\x02 \x02 \xb8\x02 END 
 SCEC SCE044_028 2\x14 SCE_DONE 
 TEXT1 \xccT TEXT2 p
  
@@ -130,7 +130,7 @@ TEXT1 \xccT TEXT2 p
 反り返ったペ○スを、足の裏と拓司の腹でサンドイッチにして、\nぐりぐりと踏みにじる。@
 拓司は足首を両手で捧げ持ったまま、されるがままに震えている。\n\p屈辱的ではあったが、それがかえって劣情を加速させる。\w\z
   
-FLG1 v\x14\x0c FLG1_SET \x8a\x02 \x02 \xb8\x02 END 
+INIT v\x14\x0c SET_VAR  \x8a\x02 \x02 \xb8\x02 END 
 SCEC SCE044_029 p\x16 SCE_DONE 
 TEXT1 \xd0T TEXT2 Q
  
@@ -140,7 +140,7 @@ TEXT1 \xd0T TEXT2 Q
 拓司\n　「は……はい」@
 錦城\n　「でももう、足が疲れちゃったわ。\pほら、こうやって指で挟ん\n　　であげるから……\pあとは自分でしごいて出して見せて」\w\z
   
-FLG1 \xb4\x16\x0c FLG1_SET \x8a\x02 \x02 \xb8\x02 END 
+INIT \xb4\x16\x0c SET_VAR  \x8a\x02 \x02 \xb8\x02 END 
 SCEC SCE044_030 2\x18 SCE_DONE 
 TEXT1 \xd4T TEXT2 \x9e
  
@@ -156,7 +156,7 @@ TEXT1 \xd4T TEXT2 \x9e
 拓司は錦城の脚から手を離して、よろりと後ろの机に腰を下ろし\nた。\p快感が、腰骨を砕いてしまったかのようだ。@
 脚に力が入らない。\w\z
   
-FLG1 v\x18\x0c FLG1_SET \x8a\x02 \x02 \xb8\x02 END 
+INIT v\x18\x0c SET_VAR  \x8a\x02 \x02 \xb8\x02 END 
 SCEC SCE044_031 (\x1b SCE_DONE 
 TEXT1 \xd8T TEXT2 4
  
@@ -165,7 +165,7 @@ TEXT1 \xd8T TEXT2 4
 拓司はやや意表を突かれた。@
 先ほどまでの高圧的な態度とはまるで正反対の優しさだ。\w\z
   
-FLG1 l\x1b\x0c FLG1_SET \x8a\x02 \x02 \xb8\x02 END 
+INIT l\x1b\x0c SET_VAR  \x8a\x02 \x02 \xb8\x02 END 
 SCEC SCE044_032 v\x1c SCE_DONE 
 TEXT1 \xdcT TEXT2 h
  
@@ -175,7 +175,7 @@ TEXT1 \xdcT TEXT2 h
 錦城\n　「いいの、気にしないで。\p素敵なものを見せてもらった記念\n　　に、虎菱くんの精液をつけたまま、今日は一日過ごすわ……\n　　本当にありがとう。@
 　　また……今度、いろんなことしましょうね？」\w\z
   
-FLG1 \xba\x1c\x0c FLG1_SET \x8a\x02 \x02 \xb8\x02 END 
+INIT \xba\x1c\x0c SET_VAR  \x8a\x02 \x02 \xb8\x02 END 
 SCEC SCE044_033 \x94\x1e SCE_DONE 
 TEXT1 \xe0T TEXT2 C
  
@@ -183,8 +183,8 @@ TEXT1 \xe0T TEXT2 C
 唇と唇がさっと触れる程度のものだったにも関わらず、これまで\nしたことのあるキスの中でもっとも衝撃的だった。@
 淫猥なキスだった。\w\z
   
-FLG1 \xd8\x1e\x0c FLG1_SET \x8a\x02 \x02 \xb8\x02 END   
-FLG1 \xc8\x0c FLG1_SET
+INIT \xd8\x1e\x0c SET_VAR  \x8a\x02 \x02 \xb8\x02 END   
+INIT \xc8\x0c SET_VAR 
 CMD6 .\\Data\\Script\\Bg.Fob VAR2 8  \x02
 CMD4 BgAutoFadeIn VAR2 b  END    
 CMD2 StopCD RUNF \x92  END 
@@ -196,6 +196,6 @@ TEXT1 \xe4T TEXT2 <
 共犯者のあいだでのみ交わされる親密な笑みを送った。@
 拓司は呆然とそんな錦城を見送って、それから魂が抜けたような\n足取りで、屋上に向かった。\w\z
   
-FLG1 \xf2 \x0c FLG1_SET \x8a\x02 \x02 \xb8\x02 END  \x8a\x02 
+INIT \xf2 \x0c SET_VAR  \x8a\x02 \x02 \xb8\x02 END  \x8a\x02 
 CMD3 TextClose VAR1 (" END 
 END_SCRIPT

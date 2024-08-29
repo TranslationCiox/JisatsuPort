@@ -2,9 +2,9 @@ START_SCRIPT
 7\x16\x01`B#\x01\xde\x11
 SCEC SCE028_001 \x06 SCE_DONE 
 TEXT1 `;\x0c"  
-FLG1 \x02\x0c FLG1_SET  \x04
-FLG1 \x17\x0c FLG1_SET  \x08
-FLG1 \x01\x0c FLG1_SET
+INIT \x02\x0c SET_VAR   \x04
+INIT \x17\x0c SET_VAR   \x08
+INIT \x01\x0c SET_VAR 
 CMD6 .\\Data\\Script\\Bgm.Fob VAR1 \x98 
 CMD2 SePlay RUNF \xc2 END \x03L
  
@@ -13,7 +13,7 @@ CMD2 SePlay RUNF \xc2 END \x03L
 　かつては１００世帯以上が生活していたそれら１２棟の団地は、\n　相次ぐ工場の閉鎖と、老朽化によって、完全に廃棄されて久しか\n　った。\
 
   
-FLG1 \xde\x0c FLG1_SET
+INIT \xde\x0c SET_VAR 
 CMD7 .\\Data\\Script\\TextFunc.Fob RUNF .\x02 
 CMD2 TextOn RUNF \\\x02 END 
 CMD7 
@@ -22,7 +22,7 @@ CHOICE
 ENDCHOICE
 
   
-FLG1 x\x02\x0c FLG1_SET .\x02 \x02 \\\x02 END  .\x02 
+INIT x\x02\x0c SET_VAR  .\x02 \x02 \\\x02 END  .\x02 
 CMD3 TextClose VAR1 \xda\x02 END 
 SCEC SCE028_002 \xfa\x02 SCE_DONE 
 TEXT1 d; TEXT2 T
@@ -31,14 +31,14 @@ TEXT1 d; TEXT2 T
 　ＴＶで『ウワサの怪奇スポット』との興味本位の紹介をされたせ\n　いか、一時は物好きたちがいくらか訪れてはいたが、数年前、団\n　地を囲むように金網のフェンスが張り巡らされたのを機に、この\n　地は完全に沈黙の場所となった。@
 \z
   
-FLG1 >\x03\x0c FLG1_SET .\x02 \x02 \\\x02 END 
+INIT >\x03\x0c SET_VAR  .\x02 \x02 \\\x02 END 
 CMD7 
 CHOICE
 左へ\n右へ\n\l0,2,
 ENDCHOICE
 
   
-FLG1 \xc8\x04\x0c FLG1_SET .\x02 \x02 \\\x02 END  .\x02 \x02 \xda\x02 END 
+INIT \xc8\x04\x0c SET_VAR  .\x02 \x02 \\\x02 END  .\x02 \x02 \xda\x02 END 
 SCEC SCE028_003 8\x05 SCE_DONE 
 TEXT1 h; TEXT2 \xc9
  
@@ -51,14 +51,14 @@ TEXT1 h; TEXT2 \xc9
 \n　彼らが言い残した言葉が、伝説の上にさらなる伝説を生んでいっ\n　た。\
 
   
-FLG1 |\x05\x0c FLG1_SET .\x02 \x02 \\\x02 END 
+INIT |\x05\x0c SET_VAR  .\x02 \x02 \\\x02 END 
 CMD7 
 CHOICE
 左へ\n右へ\n\l0,2,
 ENDCHOICE
 
   
-FLG1 \xda\x08\x0c FLG1_SET .\x02 \x02 \\\x02 END  .\x02 \x02 \xda\x02 END 
+INIT \xda\x08\x0c SET_VAR  .\x02 \x02 \\\x02 END  .\x02 \x02 \xda\x02 END 
 SCEC SCE028_004 J\t SCE_DONE 
 TEXT1 l; TEXT2 T
  
@@ -66,14 +66,14 @@ TEXT1 l; TEXT2 T
 　ふざけて訪れることすらはばかられるくらいの深刻さが、手で触\n　れることができるくらいの確かさで敷地内に漂っていた。\
 
   
-FLG1 \x8e\t\x0c FLG1_SET .\x02 \x02 \\\x02 END 
+INIT \x8e\t\x0c SET_VAR  .\x02 \x02 \\\x02 END 
 CMD7 
 CHOICE
 左へ\n右へ\n\l0,2,
 ENDCHOICE
 
   
-FLG1 \x18\x0b\x0c FLG1_SET .\x02 \x02 \\\x02 END  .\x02 \x02 \xda\x02 END 
+INIT \x18\x0b\x0c SET_VAR  .\x02 \x02 \\\x02 END  .\x02 \x02 \xda\x02 END 
 SCEC SCE028_005 \x88\x0b SCE_DONE 
 TEXT1 p; TEXT2 \x92
  
@@ -84,7 +84,7 @@ TEXT1 p; TEXT2 \x92
 　とはいえ、まさか深夜２時に誰かがいるとは思っていなかった。\
 
   
-FLG1 \xcc\x0b\x0c FLG1_SET .\x02 \x02 \\\x02 END 
+INIT \xcc\x0b\x0c SET_VAR  .\x02 \x02 \\\x02 END 
 SCEC SCE028_006 N\x0e SCE_DONE 
 TEXT1 t; TEXT2 \xae
  
@@ -99,7 +99,7 @@ TEXT1 t; TEXT2 \xae
 　それが拓司とカンナの出会いだった。\
 
   
-FLG1 \x92\x0e\x0c FLG1_SET .\x02 \x02 \\\x02 END   
-FLG1 \x02\x0c FLG1_SET \x98 
+INIT \x92\x0e\x0c SET_VAR  .\x02 \x02 \\\x02 END   
+INIT \x02\x0c SET_VAR  \x98 
 CMD2 SeStop RUNF \xaa\x11 END  .\x02 \x02 \xda\x02 END 
 END_SCRIPT

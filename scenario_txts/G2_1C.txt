@@ -10,7 +10,7 @@ TEXT1 h\xc5\x01 TEXT2 \x86
 　　虎菱くんのあそこ、もう爆発しそうだわ。@
 　　よっぽど先生のおっぱい、気に入ったのね？\n　　ほんと……いやらしい子だわ」\w\z
   
-FLG1 J\x0c FLG1_SET
+INIT J\x0c SET_VAR 
 CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \x82\x02 
 CMD2 TextOn RUNF \xb0\x02 END 
 CMD6 .\\Data\\Script\\Bgm.Fob VAR1 \xcc\x02 

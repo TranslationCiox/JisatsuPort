@@ -12,7 +12,7 @@ TEXT1 \x90\xb0 TEXT2 \x82
 紅葉は無言だったが、その沈黙の中に、拓司は明らかに不満の影\nを感じとった。@
 \z
   
-FLG1 J\x0c FLG1_SET
+INIT J\x0c SET_VAR 
 CMD7 .\\Data\\Script\\TextFunc.Fob RUNF r\x02 
 CMD2 TextOn RUNF \xa0\x02 END  r\x02 
 CMD3 TextClose VAR1 \xc8\x02 END 

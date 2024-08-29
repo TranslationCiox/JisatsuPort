@@ -6,10 +6,10 @@ TEXT1 \xc0p\x01 TEXT2 \x11
 \n\n\n\n\n\n\n\n\n\n　　　　　　　　　　　　　『１２日目』\
 
   
-FLG1 J\x0c FLG1_SET
+INIT J\x0c SET_VAR 
 CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \xae 
 CMD2 TextOn RUNF \xdc END   
-FLG1 \x0c\x01\x0c FLG1_SET
+INIT \x0c\x01\x0c SET_VAR 
 CMD6 .\\Data\\Script\\Bgm.Fob VAR1 \x12\x01 
 CMD2 PlayCD RUNF <\x01 END 
 SCEC SCE226_002 X\x01 SCE_DONE 
@@ -23,7 +23,7 @@ TEXT1 \xc4p\x01 TEXT2 x
 錦城\n　「……ふう。\pあなたのせいで、今日も全員が食事抜きになるの\n　　かしらねえ」\
 
   
-FLG1 \x9c\x01\x0c FLG1_SET \xae \x02 \xdc END 
+INIT \x9c\x01\x0c SET_VAR  \xae \x02 \xdc END 
 SCEC SCE226_003 \xb6\x03 SCE_DONE 
 TEXT1 \xc8p\x01 TEXT2 d
  
@@ -35,7 +35,7 @@ TEXT1 \xc8p\x01 TEXT2 d
 錦城\n　「今日も全員食事抜きです」\
 
   
-FLG1 \xfa\x03\x0c FLG1_SET \xae \x02 \xdc END 
+INIT \xfa\x03\x0c SET_VAR  \xae \x02 \xdc END 
 SCEC SCE226_004 \xc4\x05 SCE_DONE 
 TEXT1 \xccp\x01 TEXT2 \x94
  
@@ -47,7 +47,7 @@ TEXT1 \xccp\x01 TEXT2 \x94
 早桃\n　「私だってあの２人のやり方はおかしいと思うし……腹もたつ\n　　けど。\pでも、そんなこと口に出したって、意味がないと思う」\n\pカンナ\n　「……」\
 
   
-FLG1 \x08\x06\x0c FLG1_SET \xae \x02 \xdc END 
+INIT \x08\x06\x0c SET_VAR  \xae \x02 \xdc END 
 SCEC SCE226_005 \x92\x08 SCE_DONE 
 TEXT1 \xd0p\x01 TEXT2 \x9d
  
@@ -61,7 +61,7 @@ TEXT1 \xd0p\x01 TEXT2 \x9d
 早桃\n　「そんな……！」\
 
   
-FLG1 \xd6\x08\x0c FLG1_SET \xae \x02 \xdc END 
+INIT \xd6\x08\x0c SET_VAR  \xae \x02 \xdc END 
 SCEC SCE226_006 \x84\x0b SCE_DONE 
 TEXT1 \xd4p\x01 TEXT2 \x85
  
@@ -76,7 +76,7 @@ TEXT1 \xd4p\x01 TEXT2 \x85
 /*▲BGM　停止*/\a4,-1,0,0,紅葉\n　「もうたくさんッ！」\
 
   
-FLG1 \xc8\x0b\x0c FLG1_SET \xae \x02 \xdc END 
+INIT \xc8\x0b\x0c SET_VAR  \xae \x02 \xdc END 
 SCEC SCE226_007 \x16\x0e SCE_DONE 
 TEXT1 \xd8p\x01 TEXT2 \x85
  
@@ -88,7 +88,7 @@ TEXT1 \xd8p\x01 TEXT2 \x85
 拓司\n　「でも、最終波動が……」\
 
   
-FLG1 Z\x0e\x0c FLG1_SET \xae \x02 \xdc END 
+INIT Z\x0e\x0c SET_VAR  \xae \x02 \xdc END 
 SCEC SCE226_008 \xa8\x10 SCE_DONE 
 TEXT1 \xdcp\x01 TEXT2 \xa4
  
@@ -107,7 +107,7 @@ TEXT1 \xdcp\x01 TEXT2 \xa4
 しばらくしてから放たれた言葉は、かすれ、震えていた。\
 
   
-FLG1 \xec\x10\x0c FLG1_SET \xae \x02 \xdc END 
+INIT \xec\x10\x0c SET_VAR  \xae \x02 \xdc END 
 SCEC SCE226_009 \xb6\x13 SCE_DONE 
 TEXT1 \xe0p\x01 TEXT2 u
  
@@ -122,7 +122,7 @@ TEXT1 \xe0p\x01 TEXT2 u
 \nついになたねが笑いを爆発させた。\pガラガラとした声で、低く低\nく叫んだ。\
 
   
-FLG1 \xfa\x13\x0c FLG1_SET \xae \x02 \xdc END 
+INIT \xfa\x13\x0c SET_VAR  \xae \x02 \xdc END 
 SCEC SCE226_010 \x08\x16 SCE_DONE 
 TEXT1 \xe4p\x01 TEXT2 \x9e
  
@@ -138,7 +138,7 @@ TEXT1 \xe4p\x01 TEXT2 \x9e
 紅葉はその晩、ずっと小さく泣き続けていた。\
 
   
-FLG1 L\x16\x0c FLG1_SET \xae \x02 \xdc END  \x12\x01 
+INIT L\x16\x0c SET_VAR  \xae \x02 \xdc END  \x12\x01 
 CMD2 StopCD RUNF \n\x19 END  \xae 
 CMD3 TextClose VAR1 2\x19 END 
 END_SCRIPT

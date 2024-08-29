@@ -1,6 +1,6 @@
 START_SCRIPT
 \xbe#\x01`B#\x01\xec\x1d  
-FLG1 \xc8\x0c FLG1_SET
+INIT \xc8\x0c SET_VAR 
 CMD6 .\\Data\\Script\\Bg.Fob VAR2   
 CMD2 BgOn VAR2 J END 
 SCEC SCE088_001 f SCE_DONE 
@@ -13,7 +13,7 @@ TEXT1  \x99 TEXT2 \x96
 御堂\n　「うるせえッ！\p　とにかく、こんな狂った女を信じるのは俺は\n　　ゴメンだ！\p　お前らも信じてなんかいねえくせに、信じたフ\n　　リすんのはやめろ！\p　溺れてるからってワラ掴んでどうする\n　　よ！\p　ワラはしょせんワラなんだぞ、てめえら！」　\
 
   
-FLG1 \xaa\x0c FLG1_SET
+INIT \xaa\x0c SET_VAR 
 CMD7 .\\Data\\Script\\TextFunc.Fob RUNF "\x03 
 CMD2 TextOn RUNF P\x03 END 
 SCEC SCE088_002 l\x03 SCE_DONE 
@@ -30,7 +30,7 @@ TEXT1 $\x99 TEXT2 \xaa
 　　アルミホイルは窓には張り付けないで。\p反射した波動をはじ\n　　き返す出口が必要だから。\pそうしないと波動が内部で無限反\n　　射を繰り返すことになってしまうから－－」\
 
   
-FLG1 \xb0\x03\x0c FLG1_SET "\x03 \x02 P\x03 END 
+INIT \xb0\x03\x0c SET_VAR  "\x03 \x02 P\x03 END 
 SCEC SCE088_003 \x92\x06 SCE_DONE 
 TEXT1 (\x99 TEXT2 s
  
@@ -44,7 +44,7 @@ TEXT1 (\x99 TEXT2 s
 /*▲BGM　Track06　再生*/\a2,-1,6,1,なたね\n　「私たちは団結しなければなりません。\p私たちの目的は、この\n　　非常事態下を生き残ること。\pそうでしょう？\p　だから団結\n　　を乱すような行為は控えてください」\
 
   
-FLG1 \xd6\x06\x0c FLG1_SET "\x03 \x02 P\x03 END 
+INIT \xd6\x06\x0c SET_VAR  "\x03 \x02 P\x03 END 
 SCEC SCE088_004 \xdc\x08 SCE_DONE 
 TEXT1 ,\x99 TEXT2 \xa2
  
@@ -57,7 +57,7 @@ TEXT1 ,\x99 TEXT2 \xa2
 \n　全員の視線が、さっと実験準備室の扉へと注がれる。\
 
   
-FLG1  \t\x0c FLG1_SET "\x03 \x02 P\x03 END 
+INIT  \t\x0c SET_VAR  "\x03 \x02 P\x03 END 
 SCEC SCE088_005 \xe2\x0b SCE_DONE 
 TEXT1 0\x99 TEXT2 \x82
  
@@ -70,7 +70,7 @@ TEXT1 0\x99 TEXT2 \x82
 錦城\n　「やめなさい、御堂くん！\p……どういうことかしら、雲居さ\n　　ん。\p御堂くんじゃなくても、あなたの話を聞いていると不安\n　　になるわ。\pわかりやすく説明してもらえないかしら？」\
 
   
-FLG1 &\x0c\x0c FLG1_SET "\x03 \x02 P\x03 END 
+INIT &\x0c\x0c SET_VAR  "\x03 \x02 P\x03 END 
 SCEC SCE088_006 h\x0e SCE_DONE 
 TEXT1 4\x99 TEXT2 \xb1
  
@@ -82,7 +82,7 @@ TEXT1 4\x99 TEXT2 \xb1
 \n　なたねはそれを無視して続けた。\p異様な緊張が、部屋に充ちて\n　いる。\
 
   
-FLG1 \xac\x0e\x0c FLG1_SET "\x03 \x02 P\x03 END 
+INIT \xac\x0e\x0c SET_VAR  "\x03 \x02 P\x03 END 
 SCEC SCE088_007 \xaa\x11 SCE_DONE 
 TEXT1 8\x99 TEXT2 \x99
  
@@ -95,7 +95,7 @@ TEXT1 8\x99 TEXT2 \x99
 錦城\n　「どういう意味……？」\
 
   
-FLG1 \xee\x11\x0c FLG1_SET "\x03 \x02 P\x03 END 
+INIT \xee\x11\x0c SET_VAR  "\x03 \x02 P\x03 END 
 SCEC SCE088_008 \x8c\x14 SCE_DONE 
 TEXT1 <\x99 TEXT2 \xb6
  
@@ -106,7 +106,7 @@ TEXT1 <\x99 TEXT2 \xb6
 なたね\n　「このように、みなさんは、他のみなさんに対して中立ではあ\n　　りません。\pすなわち、不公平な専制君主が生まれる危険性が\n　　あるわけです。\pですから、暴走を抑止する意味で、私が鍵を\n　　管理します。\p一部なりとも、私が権利を所有するというわけ\n　　です。\pもちろん、食糧の管理を受け持つ私が専制君主になる\n　　可能性はあるわけですが、その場合、力ずくでもなんでも、\n　　私から鍵を奪うことは簡単なはずです。\pもっとも、私も私な\n　　りに抵抗はさせてもらうと思いますけれど」\
 
   
-FLG1 \xd0\x14\x0c FLG1_SET "\x03 \x02 P\x03 END 
+INIT \xd0\x14\x0c SET_VAR  "\x03 \x02 P\x03 END 
 SCEC SCE088_009 \xe2\x17 SCE_DONE 
 TEXT1 @\x99 TEXT2 \x8f
  
@@ -119,7 +119,7 @@ TEXT1 @\x99 TEXT2 \x8f
 錦城\n　「そうかしら？」\
 
   
-FLG1 &\x18\x0c FLG1_SET "\x03 \x02 P\x03 END 
+INIT &\x18\x0c SET_VAR  "\x03 \x02 P\x03 END 
 SCEC SCE088_010 \x9c\x1a SCE_DONE 
 TEXT1 D\x99 TEXT2 d
  
@@ -130,15 +130,15 @@ TEXT1 D\x99 TEXT2 d
 拓司は……\
 
   
-FLG1 \xe0\x1a\x0c FLG1_SET "\x03 \x02 P\x03 END \x03!
+INIT \xe0\x1a\x0c SET_VAR  "\x03 \x02 P\x03 END \x03!
 CHOICE
 自分に投票した\n紅葉に投票した\nカンナに投票した\n早桃に投票した\n御堂に投票した\n錦城に投票した\nなたねに投票した\n\l0,7,
 ENDCHOICE
 
   
-FLG1 \xaa\x1c\x0c FLG1_SET "\x03 \x02 P\x03 END  "\x03 \x02
+INIT \xaa\x1c\x0c SET_VAR  "\x03 \x02 P\x03 END  "\x03 \x02
 CMD4 GetLastTxtID VAR2 t\x1d END ! 
-FLG1 \x04 FLG2  
-FLG1\x0c\x01" "\x03 
+INIT \x04 FLG2  
+INIT\x0c\x01" "\x03 
 CMD3 TextClose VAR1 \xce\x1d END 
 END_SCRIPT

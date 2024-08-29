@@ -8,7 +8,7 @@ TEXT1 \x96 TEXT2 8
 \nなたね\n　「安心して下さい。\pこれからシェルター製作を始めます」\
 
   
-FLG1 J\x0c FLG1_SET
+INIT J\x0c SET_VAR 
 CMD7 .\\Data\\Script\\TextFunc.Fob RUNF J\x01 
 CMD2 TextOn RUNF x\x01 END 
 SCEC SCE086_002 \x94\x01 SCE_DONE 
@@ -21,7 +21,7 @@ TEXT1 \x04\x96 TEXT2 n
 拓司\n　「……」\
 
   
-FLG1 \xd8\x01\x0c FLG1_SET J\x01 \x02 x\x01 END 
+INIT \xd8\x01\x0c SET_VAR  J\x01 \x02 x\x01 END 
 SCEC SCE086_003 \xca\x03 SCE_DONE 
 TEXT1 \x08\x96 TEXT2 ~
  
@@ -32,8 +32,8 @@ TEXT1 \x08\x96 TEXT2 ~
 　拓司たちは身構えたが、扉を開けて現れたのは、果たして見慣\n　れた人物であった。\
 
   
-FLG1 \x0e\x04\x0c FLG1_SET J\x01 \x02 x\x01 END   
-FLG1 \x04\x01\x0c FLG1_SET
+INIT \x0e\x04\x0c SET_VAR  J\x01 \x02 x\x01 END   
+INIT \x04\x01\x0c SET_VAR 
 CMD6 .\\Data\\Script\\Bgm.Fob VAR1 Z\x06 
 CMD2 PlayCD RUNF \x84\x06 END 
 SCEC SCE086_004 \xa0\x06 SCE_DONE 
@@ -50,7 +50,7 @@ TEXT1 \x0c\x96 TEXT2 w
 それでも、見捨てたという事実を、胸の中で正当化することはで\nきなかった。\
 
   
-FLG1 \xe4\x06\x0c FLG1_SET J\x01 \x02 x\x01 END 
+INIT \xe4\x06\x0c SET_VAR  J\x01 \x02 x\x01 END 
 SCEC SCE086_005 \xfa\x08 SCE_DONE 
 TEXT1 \x10\x96 TEXT2 G
  
@@ -60,7 +60,7 @@ TEXT1 \x10\x96 TEXT2 G
 拓司\n　「俺だってわからないさ」\
 
   
-FLG1 >\t\x0c FLG1_SET J\x01 \x02 x\x01 END 
+INIT >\t\x0c SET_VAR  J\x01 \x02 x\x01 END 
 SCEC SCE086_006 \x94\n SCE_DONE 
 TEXT1 \x14\x96 TEXT2 m
  
@@ -73,8 +73,8 @@ TEXT1 \x14\x96 TEXT2 m
 錦城\n　「……？」\
 
   
-FLG1 \xd8\n\x0c FLG1_SET J\x01 \x02 x\x01 END   
-FLG1 \t\x01\x0c FLG1_SET Z\x06 \x02 \x84\x06 END 
+INIT \xd8\n\x0c SET_VAR  J\x01 \x02 x\x01 END   
+INIT \t\x01\x0c SET_VAR  Z\x06 \x02 \x84\x06 END 
 SCEC SCE086_007 \xfa\x0c SCE_DONE 
 TEXT1 \x18\x96 TEXT2 K
  
@@ -85,7 +85,7 @@ TEXT1 \x18\x96 TEXT2 K
 御堂\n　「なに……？」\
 
   
-FLG1 >\r\x0c FLG1_SET J\x01 \x02 x\x01 END 
+INIT >\r\x0c SET_VAR  J\x01 \x02 x\x01 END 
 SCEC SCE086_008 \xa4\x0e SCE_DONE 
 TEXT1 \x1c\x96 TEXT2 _
  
@@ -94,7 +94,7 @@ TEXT1 \x1c\x96 TEXT2 _
 \n錦城はふう、とため息をついて肩をすくめた。\
 
   
-FLG1 \xe8\x0e\x0c FLG1_SET J\x01 \x02 x\x01 END 
+INIT \xe8\x0e\x0c SET_VAR  J\x01 \x02 x\x01 END 
 SCEC SCE086_009 \x9e\x10 SCE_DONE 
 TEXT1  \x96 TEXT2 \x85
  
@@ -105,7 +105,7 @@ TEXT1  \x96 TEXT2 \x85
 錦城\n　「これまでの波動よりも大きい……」\
 
   
-FLG1 \xe2\x10\x0c FLG1_SET J\x01 \x02 x\x01 END 
+INIT \xe2\x10\x0c SET_VAR  J\x01 \x02 x\x01 END 
 SCEC SCE086_010 0\x13 SCE_DONE 
 TEXT1 $\x96 TEXT2 r
  
@@ -114,7 +114,7 @@ TEXT1 $\x96 TEXT2 r
 \nここまで黙っていた御堂が、たまりかねたように叫んだ。\
 
   
-FLG1 t\x13\x0c FLG1_SET J\x01 \x02 x\x01 END 
+INIT t\x13\x0c SET_VAR  J\x01 \x02 x\x01 END 
 SCEC SCE086_011 v\x15 SCE_DONE 
 TEXT1 (\x96 TEXT2 V
  
@@ -127,7 +127,7 @@ TEXT1 (\x96 TEXT2 V
 御堂\n　「あァ？」\
 
   
-FLG1 \xba\x15\x0c FLG1_SET J\x01 \x02 x\x01 END 
+INIT \xba\x15\x0c SET_VAR  J\x01 \x02 x\x01 END 
 SCEC SCE086_012 L\x17 SCE_DONE 
 TEXT1 ,\x96 TEXT2 ,
  
@@ -136,6 +136,6 @@ TEXT1 ,\x96 TEXT2 ,
 なたね\n　「……」\
 
   
-FLG1 \x90\x17\x0c FLG1_SET J\x01 \x02 x\x01 END  J\x01 
+INIT \x90\x17\x0c SET_VAR  J\x01 \x02 x\x01 END  J\x01 
 CMD3 TextClose VAR1 \x86\x18 END 
 END_SCRIPT

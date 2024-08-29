@@ -1,9 +1,9 @@
 START_SCRIPT
 \xef\x18\x01`B#\x01\x04\x12  
-FLG1 <\x0c FLG1_SET
+INIT <\x0c SET_VAR 
 CMD6 .\\Data\\Script\\Bg.Fob VAR2   \x02
 CMD4 BgAutoFadeIn VAR2 J END   
-FLG1 \x08\x01\x0c FLG1_SET
+INIT \x08\x01\x0c SET_VAR 
 CMD6 .\\Data\\Script\\Bgm.Fob VAR1 \x88 
 CMD2 PlayCD RUNF \xb2 END 
 SCEC SCEK01_001 \xce SCE_DONE 
@@ -16,7 +16,7 @@ TEXT1 \xe0\xa5\x01 TEXT2 Z
 カンナ\n　「そうね……\pええ、たぶんそう。\pでも、私がいったことは事\n　　実よ」@
 拓司\n　「……」\w\z
   
-FLG1 \x12\x01\x0c FLG1_SET
+INIT \x12\x01\x0c SET_VAR 
 CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \x9a\x02 
 CMD2 TextOn RUNF \xc8\x02 END 
 SCEC SCEK01_002 \xe4\x02 SCE_DONE 
@@ -32,7 +32,7 @@ TEXT1 \xe4\xa5\x01 TEXT2 \x8b
 カンナ\n　「長い話なんだけれど……聞いてもらえる？」@
 拓司\n　「ああ」\w\z
   
-FLG1 (\x03\x0c FLG1_SET \x9a\x02 \x02 \xc8\x02 END 
+INIT (\x03\x0c SET_VAR  \x9a\x02 \x02 \xc8\x02 END 
 SCEC SCEK01_003 \x8e\x05 SCE_DONE 
 TEXT1 \xe8\xa5\x01 TEXT2 J
  
@@ -41,9 +41,9 @@ TEXT1 \xe8\xa5\x01 TEXT2 J
 　カンナはそうした感情の揺らぎを必死に組み伏して、整理して\n　言葉に変えようともがいているように見えた。@
 　やがてカンナは、ぽつり、ぽつり、と少しずつ自らの死の物語\n　を、語り始めた……。\w\z
   
-FLG1 \xd2\x05\x0c FLG1_SET \x9a\x02 \x02 \xc8\x02 END   
-FLG1 \xc8\x0c FLG1_SET   \x02 J END   
-FLG1 \x04\x01\x0c FLG1_SET \x88 \x02 \xb2 END 
+INIT \xd2\x05\x0c SET_VAR  \x9a\x02 \x02 \xc8\x02 END   
+INIT \xc8\x0c SET_VAR    \x02 J END   
+INIT \x04\x01\x0c SET_VAR  \x88 \x02 \xb2 END 
 SCEC SCEK01_004 \x9c\x07 SCE_DONE 
 TEXT1 \xec\xa5\x01 TEXT2 {
  
@@ -54,7 +54,7 @@ TEXT1 \xec\xa5\x01 TEXT2 {
 　でも、私がそこで頻繁に見かけたベタベタとした関係は、とても\n『恋愛』と呼べるレベルのものではなかった。@
 誰かに甘えたいとか、依存したいとか……\pそういう子供っぽい欲\n求に『恋愛』というレッテルを貼って、いごこちのいい狭い輪を\n強化しているだけ。\w\z
   
-FLG1 \xe0\x07\x0c FLG1_SET \x9a\x02 \x02 \xc8\x02 END 
+INIT \xe0\x07\x0c SET_VAR  \x9a\x02 \x02 \xc8\x02 END 
 SCEC SCEK01_005 \x06\n SCE_DONE 
 TEXT1 \xf0\xa5\x01 TEXT2 \x95
  
@@ -63,7 +63,7 @@ TEXT1 \xf0\xa5\x01 TEXT2 \x95
 何もかもが、フェイクなプチ世界を、リアルな世界から守るため\nに作られているようで、うっとおしかった。@
 私が反逆者であることを、周りの人間は感じ取ったのだと思う\n（－－私は、まるで『全部反対！』ってプラカードを掲げて歩\nき回っているデモ隊みたいだったから）。\w\z
   
-FLG1 J\n\x0c FLG1_SET \x9a\x02 \x02 \xc8\x02 END 
+INIT J\n\x0c SET_VAR  \x9a\x02 \x02 \xc8\x02 END 
 SCEC SCEK01_006 \xd8\x0c SCE_DONE 
 TEXT1 \xf4\xa5\x01 TEXT2 I
  
@@ -72,8 +72,8 @@ TEXT1 \xf4\xa5\x01 TEXT2 I
 こんなゴッコ遊びに参加できなくたって全然構わない、とも思っ\nた。@
 けれど、それでもやっぱり傷つきはした\n（－－そういうものでしょ？）。\w\z
   
-FLG1 \x1c\r\x0c FLG1_SET \x9a\x02 \x02 \xc8\x02 END   
-FLG1 =\x0c FLG1_SET   \x02 J END 
+INIT \x1c\r\x0c SET_VAR  \x9a\x02 \x02 \xc8\x02 END   
+INIT =\x0c SET_VAR    \x02 J END 
 SCEC SCEK01_007 \xae\x0e SCE_DONE 
 TEXT1 \xf8\xa5\x01 TEXT2 \x86
  
@@ -85,12 +85,12 @@ TEXT1 \xf8\xa5\x01 TEXT2 \x86
 だからある日の放課後、若草ゆきが声をかけてきたときにはとて\nも驚いた。@
 \n「月代さん。よかったら一緒に帰らない？」\w\z
   
-FLG1 \xf2\x0e\x0c FLG1_SET \x9a\x02 \x02 \xc8\x02 END \x03\x17
+INIT \xf2\x0e\x0c SET_VAR  \x9a\x02 \x02 \xc8\x02 END \x03\x17
 CHOICE
 私はすぐさま「悪いけど」と断った\n私はあっけにとられて「うん」といっていた\n\l0,2,
 ENDCHOICE
 
   
-FLG1 D\x11\x0c FLG1_SET \x9a\x02 \x02 \xc8\x02 END  \x9a\x02 
+INIT D\x11\x0c SET_VAR  \x9a\x02 \x02 \xc8\x02 END  \x9a\x02 
 CMD3 TextClose VAR1 \xe6\x11 END 
 END_SCRIPT

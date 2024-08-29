@@ -11,7 +11,7 @@ TEXT1 \xb0h TEXT2 t
 上村\n　「私しかいないっしょ？\p　このウザキャラ潰すのは私の使命だ\n　　からさ」\
 
   
-FLG1 J\x0c FLG1_SET
+INIT J\x0c SET_VAR 
 CMD7 .\\Data\\Script\\TextFunc.Fob RUNF :\x02 
 CMD2 TextOn RUNF h\x02 END 
 SCEC SCE057_002 \x84\x02 SCE_DONE 
@@ -27,7 +27,7 @@ TEXT1 \xb4h TEXT2 \x85
 早桃\n　「……」\
 
   
-FLG1 \xc8\x02\x0c FLG1_SET :\x02 \x02 h\x02 END 
+INIT \xc8\x02\x0c SET_VAR  :\x02 \x02 h\x02 END 
 SCEC SCE057_003 \x16\x05 SCE_DONE 
 TEXT1 \xb8h TEXT2 \x94
  
@@ -40,7 +40,7 @@ TEXT1 \xb8h TEXT2 \x94
 上村\n　「そうそう。儀式儀式」\
 
   
-FLG1 Z\x05\x0c FLG1_SET :\x02 \x02 h\x02 END 
+INIT Z\x05\x0c SET_VAR  :\x02 \x02 h\x02 END 
 SCEC SCE057_004 \xe4\x07 SCE_DONE 
 TEXT1 \xbch TEXT2 \x94
  
@@ -54,7 +54,7 @@ TEXT1 \xbch TEXT2 \x94
 早桃\n　「……」\
 
   
-FLG1 (\x08\x0c FLG1_SET :\x02 \x02 h\x02 END 
+INIT (\x08\x0c SET_VAR  :\x02 \x02 h\x02 END 
 SCEC SCE057_005 \xb2\n SCE_DONE 
 TEXT1 \xc0h TEXT2 a
  
@@ -65,7 +65,7 @@ TEXT1 \xc0h TEXT2 a
 　上村は椅子をひとつひきずって早桃の前に配し、どっかとそこ\n　に腰を下ろした。\
 
   
-FLG1 \xf6\n\x0c FLG1_SET :\x02 \x02 h\x02 END 
+INIT \xf6\n\x0c SET_VAR  :\x02 \x02 h\x02 END 
 SCEC SCE057_006 \xb4\x0c SCE_DONE 
 TEXT1 \xc4h TEXT2 \xac
  
@@ -80,7 +80,7 @@ TEXT1 \xc4h TEXT2 \xac
 　髪の毛が汚液を吸い込んで、ぺったりと頬にへばりつく。\
 
   
-FLG1 \xf8\x0c\x0c FLG1_SET :\x02 \x02 h\x02 END 
+INIT \xf8\x0c\x0c SET_VAR  :\x02 \x02 h\x02 END 
 SCEC SCE057_007 \xe2\x0f SCE_DONE 
 TEXT1 \xc8h TEXT2 \x8d
  
@@ -94,7 +94,7 @@ TEXT1 \xc8h TEXT2 \x8d
 おそらく、御堂たちによるなたねの陵辱、あのあたりから自分は\n妄想の中にいるのだ……。\
 
   
-FLG1 &\x10\x0c FLG1_SET :\x02 \x02 h\x02 END 
+INIT &\x10\x0c SET_VAR  :\x02 \x02 h\x02 END 
 SCEC SCE057_008 \x94\x12 SCE_DONE 
 TEXT1 \xcch TEXT2 c
  
@@ -106,6 +106,6 @@ TEXT1 \xcch TEXT2 c
 \n学生たちは我先に早桃へと殺到した。\p男子学生は勃起したペ○ス\nをむき出しにして、女子学生はちぎり捨てるようにスカートとシ\nョーツを脱ぎ捨てて……。\
 
   
-FLG1 \xd8\x12\x0c FLG1_SET :\x02 \x02 h\x02 END  :\x02 
+INIT \xd8\x12\x0c SET_VAR  :\x02 \x02 h\x02 END  :\x02 
 CMD3 TextClose VAR1 \xaa\x14 END 
 END_SCRIPT

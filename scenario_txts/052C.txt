@@ -1,6 +1,6 @@
 START_SCRIPT
 \xbf'\x01`B#\x01Z!  
-FLG1 \x0b\x01\x0c FLG1_SET
+INIT \x0b\x01\x0c SET_VAR 
 CMD6 .\\Data\\Script\\Bgm.Fob VAR1   
 CMD2 PlayCD RUNF J END 
 SCEC SCE052_001 f SCE_DONE 
@@ -21,7 +21,7 @@ TEXT1 \xe0` TEXT2 \xac
 早桃だ。\
 
   
-FLG1 \xaa\x0c FLG1_SET
+INIT \xaa\x0c SET_VAR 
 CMD7 .\\Data\\Script\\TextFunc.Fob RUNF z\x03 
 CMD2 TextOn RUNF \xa8\x03 END 
 SCEC SCE052_002 \xc4\x03 SCE_DONE 
@@ -37,7 +37,7 @@ TEXT1 \xe4` TEXT2 ]
 学生\n　「へえ、そうなんだ、へへ」\
 
   
-FLG1 \x08\x04\x0c FLG1_SET z\x03 \x02 \xa8\x03 END 
+INIT \x08\x04\x0c SET_VAR  z\x03 \x02 \xa8\x03 END 
 SCEC SCE052_003 \xb6\x05 SCE_DONE 
 TEXT1 \xe8` TEXT2 l
  
@@ -53,7 +53,7 @@ TEXT1 \xe8` TEXT2 l
 \nひとりが素っ頓狂な声を上げると、他の者がゲラゲラと笑い声で\n応えた。\
 
   
-FLG1 \xfa\x05\x0c FLG1_SET z\x03 \x02 \xa8\x03 END 
+INIT \xfa\x05\x0c SET_VAR  z\x03 \x02 \xa8\x03 END 
 SCEC SCE052_004 \xe4\x07 SCE_DONE 
 TEXT1 \xec` TEXT2 {
  
@@ -69,7 +69,7 @@ TEXT1 \xec` TEXT2 {
 　　そんなところで勉強とか青春なんて前向きにやってられるか？\n　　\pやれねえんだよ！」\
 
   
-FLG1 (\x08\x0c FLG1_SET z\x03 \x02 \xa8\x03 END 
+INIT (\x08\x0c SET_VAR  z\x03 \x02 \xa8\x03 END 
 SCEC SCE052_005 N\n SCE_DONE 
 TEXT1 \xf0` TEXT2 \x96
  
@@ -88,7 +88,7 @@ TEXT1 \xf0` TEXT2 \x96
 　　俺たちゃアホじゃねえっつーんだよッ！」\
 
   
-FLG1 \x92\n\x0c FLG1_SET z\x03 \x02 \xa8\x03 END 
+INIT \x92\n\x0c SET_VAR  z\x03 \x02 \xa8\x03 END 
 SCEC SCE052_006 $\r SCE_DONE 
 TEXT1 \xf4` TEXT2 \x93
  
@@ -104,7 +104,7 @@ TEXT1 \xf4` TEXT2 \x93
 　　泣いてごめんなさいごめんなさいっていって、窓まで走って\n　　いって、そのままトップロープ越えのトペ・スイシーダだよ！\n　　\pで、今度は虎菱の番ってわけだ！」\
 
   
-FLG1 h\r\x0c FLG1_SET z\x03 \x02 \xa8\x03 END 
+INIT h\r\x0c SET_VAR  z\x03 \x02 \xa8\x03 END 
 SCEC SCE052_007 \xee\x0f SCE_DONE 
 TEXT1 \xf8` TEXT2 \x90
  
@@ -122,7 +122,7 @@ TEXT1 \xf8` TEXT2 \x90
 しかし、早桃の言葉が、次の言葉をさえぎった。\
 
   
-FLG1 2\x10\x0c FLG1_SET z\x03 \x02 \xa8\x03 END 
+INIT 2\x10\x0c SET_VAR  z\x03 \x02 \xa8\x03 END 
 SCEC SCE052_008 \xac\x12 SCE_DONE 
 TEXT1 \xfc` TEXT2 f
  
@@ -138,7 +138,7 @@ TEXT1 \xfc` TEXT2 f
 有罪、有罪、有罪！\
 
   
-FLG1 \xf0\x12\x0c FLG1_SET z\x03 \x02 \xa8\x03 END 
+INIT \xf0\x12\x0c SET_VAR  z\x03 \x02 \xa8\x03 END 
 SCEC SCE052_009 \xc2\x14 SCE_DONE 
 TEXT1 a TEXT2 %
  
@@ -150,7 +150,7 @@ TEXT1 a TEXT2 %
 学生\n　「死ねよ」\
 
   
-FLG1 \x06\x15\x0c FLG1_SET z\x03 \x02 \xa8\x03 END 
+INIT \x06\x15\x0c SET_VAR  z\x03 \x02 \xa8\x03 END 
 SCEC SCE052_010 \xd4\x15 SCE_DONE 
 TEXT1 \x04a TEXT2 \x96
  
@@ -162,7 +162,7 @@ TEXT1 \x04a TEXT2 \x96
 \n　シネシネシネシネシシネシネシネシネシネシネシネシネシネシ\nネシネシネシネシネシネ\n　ドンガドンガドンガドンドンガドンガドンガドンガドンガドン\nガドンガドンガドンガドンガドンガ\
 
   
-FLG1 \x18\x16\x0c FLG1_SET z\x03 \x02 \xa8\x03 END 
+INIT \x18\x16\x0c SET_VAR  z\x03 \x02 \xa8\x03 END 
 SCEC SCE052_011 \xaa\x18 SCE_DONE 
 TEXT1 \x08a TEXT2 \xb4
  
@@ -178,8 +178,8 @@ TEXT1 \x08a TEXT2 \xb4
 \n早桃\n　「ごめんなさい……ごめんなさい……ごめんなさい……」\
 
   
-FLG1 \xee\x18\x0c FLG1_SET z\x03 \x02 \xa8\x03 END   
-FLG1 \n\x01\x0c FLG1_SET   \x02 J END 
+INIT \xee\x18\x0c SET_VAR  z\x03 \x02 \xa8\x03 END   
+INIT \n\x01\x0c SET_VAR    \x02 J END 
 SCEC SCE052_012 ,\x1c SCE_DONE 
 TEXT1 \x0ca TEXT2 \x9b
  
@@ -193,7 +193,7 @@ TEXT1 \x0ca TEXT2 \x9b
 視界が奇妙な色で明滅する。\
 
   
-FLG1 p\x1c\x0c FLG1_SET z\x03 \x02 \xa8\x03 END 
+INIT p\x1c\x0c SET_VAR  z\x03 \x02 \xa8\x03 END 
 SCEC SCE052_013 \x16\x1f SCE_DONE 
 TEXT1 \x10a TEXT2 g
  
@@ -204,6 +204,6 @@ TEXT1 \x10a TEXT2 g
 　静寂の中、バットが振り下ろされた。\
 
   
-FLG1 Z\x1f\x0c FLG1_SET z\x03 \x02 \xa8\x03 END  z\x03 
+INIT Z\x1f\x0c SET_VAR  z\x03 \x02 \xa8\x03 END  z\x03 
 CMD3 TextClose VAR1 <! END 
 END_SCRIPT

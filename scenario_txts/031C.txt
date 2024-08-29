@@ -12,7 +12,7 @@ TEXT1 \x10@ TEXT2 m
 \nその言葉を聞いて－－そして目の奥のどんよりとした無感動を見て\n－－この少女が自分の同類であることを、拓司は一瞬にして悟った\nのだった。\
 
   
-FLG1 J\x0c FLG1_SET
+INIT J\x0c SET_VAR 
 CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \x1e\x02 
 CMD2 TextOn RUNF L\x02 END 
 SCEC SCE031_002 h\x02 SCE_DONE 
@@ -30,7 +30,7 @@ TEXT1 \x14@ TEXT2 \x90
 　そこにあるのは確実な死のかたちであり、生きている自分には明\n　らかに所属していないものたちだった。\p拓司は取り憑かれたよう\n　にパソコンの前に張り付き、電脳の波に流されてくる情報をむさ\n　ぼった。\
 
   
-FLG1 \xac\x02\x0c FLG1_SET \x1e\x02 \x02 L\x02 END 
+INIT \xac\x02\x0c SET_VAR  \x1e\x02 \x02 L\x02 END 
 SCEC SCE031_003 &\x05 SCE_DONE 
 TEXT1 \x18@ TEXT2 \xe1
  
@@ -44,7 +44,7 @@ TEXT1 \x18@ TEXT2 \xe1
 　その他大勢への、陳腐な成り下がり。\
 
   
-FLG1 j\x05\x0c FLG1_SET \x1e\x02 \x02 L\x02 END 
+INIT j\x05\x0c SET_VAR  \x1e\x02 \x02 L\x02 END 
 SCEC SCE031_004 (\t SCE_DONE 
 TEXT1 \x1c@ TEXT2 \xcb
  
@@ -58,20 +58,20 @@ TEXT1 \x1c@ TEXT2 \xcb
 そのとき、拓司は初めて女の首を絞めたのだった。\
 
   
-FLG1 l\t\x0c FLG1_SET \x1e\x02 \x02 L\x02 END  \x1e\x02 \x02
+INIT l\t\x0c SET_VAR  \x1e\x02 \x02 L\x02 END  \x1e\x02 \x02
 CMD5 TextWindowOffDirect \xde\x0c END   
-FLG1 \xca\x0c FLG1_SET
+INIT \xca\x0c SET_VAR 
 CMD6 .\\Data\\Script\\Bg.Fob VAR2  \r 
 CMD2 BgOn VAR2 J\r END   
-FLG1 \x01\x0c FLG1_SET
+INIT \x01\x0c SET_VAR 
 CMD7 .\\Data\\Script\\TextFunc.fob RUNF \x80\r 
 CMD3 WaitTime VAR2 \xae\r END   
-FLG1 \xc8\x0c FLG1_SET  \r \x02 J\r END   
-FLG1 \x01\x0c FLG1_SET \x80\r \x02 \xae\r END   
-FLG1 \xca\x0c FLG1_SET  \r \x02 J\r END   
-FLG1 \x01\x0c FLG1_SET \x80\r \x02 \xae\r END   
-FLG1 \xc8\x0c FLG1_SET  \r \x02 J\r END   
-FLG1 \x01\x0c FLG1_SET \x80\r \x02 \xae\r END  \x1e\x02 \x02
+INIT \xc8\x0c SET_VAR   \r \x02 J\r END   
+INIT \x01\x0c SET_VAR  \x80\r \x02 \xae\r END   
+INIT \xca\x0c SET_VAR   \r \x02 J\r END   
+INIT \x01\x0c SET_VAR  \x80\r \x02 \xae\r END   
+INIT \xc8\x0c SET_VAR   \r \x02 J\r END   
+INIT \x01\x0c SET_VAR  \x80\r \x02 \xae\r END  \x1e\x02 \x02
 CMD5 TextWindowOnDirect RUNF \x12\x0f END  \x1e\x02 
 CMD3 TextClose VAR1 F\x0f END 
 END_SCRIPT

@@ -20,12 +20,12 @@ TEXT1 2 TEXT2 \x96
 両親が留守なのだから、本当はベッドで堂々と繋がることができ\nるのだ。しかし、敢えてこんな場所を選んだ。それは……\
 
   
-FLG1 \x90\x0c FLG1_SET
+INIT \x90\x0c SET_VAR 
 CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \x08\x03 
 CMD2 TextOn RUNF 6\x03 END   
-FLG1 \x05\x01\x0c FLG1_SET \x06 
+INIT \x05\x01\x0c SET_VAR  \x06 
 CMD2 PlayCD RUNF x\x03 END   
-FLG1 M\x0c FLG1_SET
+INIT M\x0c SET_VAR 
 CMD6 .\\Data\\Script\\Bg.Fob VAR2 \xae\x03 \x02
 CMD4 BgAutoFadeIn VAR2 \xd8\x03 END 
 SCEC SCE022_002 \xfc\x03 SCE_DONE 
@@ -39,8 +39,8 @@ TEXT1 \x042 TEXT2 Q
 拓司の背後に、別の男が立っているのに気づいたのだ。\
 
   
-FLG1 @\x04\x0c FLG1_SET \x08\x03 \x02 6\x03 END   
-FLG1 \x05\x01\x0c FLG1_SET \x06 \x02 x\x03 END 
+INIT @\x04\x0c SET_VAR  \x08\x03 \x02 6\x03 END   
+INIT \x05\x01\x0c SET_VAR  \x06 \x02 x\x03 END 
 SCEC SCE022_003 \xf2\x05 SCE_DONE 
 TEXT1 \x082 TEXT2 b
  
@@ -53,7 +53,7 @@ TEXT1 \x082 TEXT2 b
 便座に腰掛けたまま、早桃が身を固くする。\
 
   
-FLG1 6\x06\x0c FLG1_SET \x08\x03 \x02 6\x03 END 
+INIT 6\x06\x0c SET_VAR  \x08\x03 \x02 6\x03 END 
 SCEC SCE022_004 \xf8\x07 SCE_DONE 
 TEXT1 \x0c2 TEXT2 `
  
@@ -68,7 +68,7 @@ TEXT1 \x0c2 TEXT2 `
 　　こづかいがいるんだ」\
 
   
-FLG1 <\x08\x0c FLG1_SET \x08\x03 \x02 6\x03 END 
+INIT <\x08\x0c SET_VAR  \x08\x03 \x02 6\x03 END 
 SCEC SCE022_005 \xf6\t SCE_DONE 
 TEXT1 \x102 TEXT2 d
  
@@ -82,7 +82,7 @@ TEXT1 \x102 TEXT2 d
 早桃\n　「おにいちゃん……\p早桃のこと愛してるっていってくれたの\n　　に……\p両思いだって……」\
 
   
-FLG1 :\n\x0c FLG1_SET \x08\x03 \x02 6\x03 END 
+INIT :\n\x0c SET_VAR  \x08\x03 \x02 6\x03 END 
 SCEC SCE022_006 \x04\x0c SCE_DONE 
 TEXT1 \x142 TEXT2 7
  
@@ -93,7 +93,7 @@ TEXT1 \x142 TEXT2 7
 その傷の深さを目の当たりにすることによって、自らをも傷つけ\nるような言葉を。\
 
   
-FLG1 H\x0c\x0c FLG1_SET \x08\x03 \x02 6\x03 END 
+INIT H\x0c\x0c SET_VAR  \x08\x03 \x02 6\x03 END 
 SCEC SCE022_007 ^\r SCE_DONE 
 TEXT1 \x182 TEXT2 \xb0
  
@@ -112,7 +112,7 @@ TEXT1 \x182 TEXT2 \xb0
 早桃\n　「違うよ！　早桃は本当におにいちゃんのこと……」\
 
   
-FLG1 \xa2\r\x0c FLG1_SET \x08\x03 \x02 6\x03 END 
+INIT \xa2\r\x0c SET_VAR  \x08\x03 \x02 6\x03 END 
 SCEC SCE022_008 \x9c\x10 SCE_DONE 
 TEXT1 \x1c2 TEXT2 _
  
@@ -126,7 +126,7 @@ TEXT1 \x1c2 TEXT2 _
 \nうつむいて震える早桃を見下ろして、平野は荒い息でいった。\
 
   
-FLG1 \xe0\x10\x0c FLG1_SET \x08\x03 \x02 6\x03 END 
+INIT \xe0\x10\x0c SET_VAR  \x08\x03 \x02 6\x03 END 
 SCEC SCE022_009 \x96\x12 SCE_DONE 
 TEXT1  2 TEXT2 R
  
@@ -140,8 +140,8 @@ TEXT1  2 TEXT2 R
 拓司はそれを無視して、平野にいった。\
 
   
-FLG1 \xda\x12\x0c FLG1_SET \x08\x03 \x02 6\x03 END   
-FLG1 \xc8\x0c FLG1_SET \xae\x03 
+INIT \xda\x12\x0c SET_VAR  \x08\x03 \x02 6\x03 END   
+INIT \xc8\x0c SET_VAR  \xae\x03 
 CMD2 BgOn VAR2 \x82\x14 END 
 SCEC SCE022_010 \x9e\x14 SCE_DONE 
 TEXT1 $2 TEXT2 r
@@ -155,7 +155,7 @@ TEXT1 $2 TEXT2 r
 早桃は目をそらして、うつむいたまま動かない。\
 
   
-FLG1 \xe2\x14\x0c FLG1_SET \x08\x03 \x02 6\x03 END 
+INIT \xe2\x14\x0c SET_VAR  \x08\x03 \x02 6\x03 END 
 SCEC SCE022_011 \xe4\x16 SCE_DONE 
 TEXT1 (2 TEXT2 e
  
@@ -170,7 +170,7 @@ TEXT1 (2 TEXT2 e
 そのまま手を上下させ、強制的に撫でさすらせる。\
 
   
-FLG1 (\x17\x0c FLG1_SET \x08\x03 \x02 6\x03 END 
+INIT (\x17\x0c SET_VAR  \x08\x03 \x02 6\x03 END 
 SCEC SCE022_012 \xf6\x18 SCE_DONE 
 TEXT1 ,2 TEXT2 H
  
@@ -184,7 +184,7 @@ TEXT1 ,2 TEXT2 H
 早桃\n　「……大きい……です」\
 
   
-FLG1 :\x19\x0c FLG1_SET \x08\x03 \x02 6\x03 END 
+INIT :\x19\x0c SET_VAR  \x08\x03 \x02 6\x03 END 
 SCEC SCE022_013 \x94\x1a SCE_DONE 
 TEXT1 02 TEXT2 w
  
@@ -199,7 +199,7 @@ TEXT1 02 TEXT2 w
 　　大きい……\pです……」\
 
   
-FLG1 \xd8\x1a\x0c FLG1_SET \x08\x03 \x02 6\x03 END 
+INIT \xd8\x1a\x0c SET_VAR  \x08\x03 \x02 6\x03 END 
 SCEC SCE022_014 \xee\x1c SCE_DONE 
 TEXT1 42 TEXT2 n
  
@@ -214,7 +214,7 @@ TEXT1 42 TEXT2 n
 \n早桃\n　「う……ううっ」\
 
   
-FLG1 2\x1d\x0c FLG1_SET \x08\x03 \x02 6\x03 END 
+INIT 2\x1d\x0c SET_VAR  \x08\x03 \x02 6\x03 END 
 SCEC SCE022_015 $\x1f SCE_DONE 
 TEXT1 82 TEXT2 z
  
@@ -231,7 +231,7 @@ TEXT1 82 TEXT2 z
 　　うぷっ……\pす、好き……\pですぅ……」\
 
   
-FLG1 h\x1f\x0c FLG1_SET \x08\x03 \x02 6\x03 END 
+INIT h\x1f\x0c SET_VAR  \x08\x03 \x02 6\x03 END 
 SCEC SCE022_016 \x8a! SCE_DONE 
 TEXT1 <2 TEXT2 \x96
  
@@ -248,7 +248,7 @@ TEXT1 <2 TEXT2 \x96
 無抵抗を貫くことで、この淫猥な行為から自分の意志を消し去ろ\nうとしているのだ。\
 
   
-FLG1 \xce!\x0c FLG1_SET \x08\x03 \x02 6\x03 END 
+INIT \xce!\x0c SET_VAR  \x08\x03 \x02 6\x03 END 
 SCEC SCE022_017 `$ SCE_DONE 
 TEXT1 @2 TEXT2 \x7f
  
@@ -263,7 +263,7 @@ TEXT1 @2 TEXT2 \x7f
 　　さ、早桃が自分でお願いしてごらん？」\
 
   
-FLG1 \xa4$\x0c FLG1_SET \x08\x03 \x02 6\x03 END 
+INIT \xa4$\x0c SET_VAR  \x08\x03 \x02 6\x03 END 
 SCEC SCE022_018 \xda& SCE_DONE 
 TEXT1 D2 TEXT2 b
  
@@ -277,7 +277,7 @@ TEXT1 D2 TEXT2 b
 　　それじゃお望み通り、おま○こにぶち込んで、おにいちゃん\n　　の精子を早桃の卵子に受精させてあげるよ」\
 
   
-FLG1 \x1e'\x0c FLG1_SET \x08\x03 \x02 6\x03 END 
+INIT \x1e'\x0c SET_VAR  \x08\x03 \x02 6\x03 END 
 SCEC SCE022_019 \xe0( SCE_DONE 
 TEXT1 H2 TEXT2 g
  
@@ -294,7 +294,7 @@ TEXT1 H2 TEXT2 g
 　　おにいちゃんの精液、お尻の中に射精してくださいっ！」\
 
   
-FLG1 $)\x0c FLG1_SET \x08\x03 \x02 6\x03 END 
+INIT $)\x0c SET_VAR  \x08\x03 \x02 6\x03 END 
 SCEC SCE022_020 \xfa* SCE_DONE 
 TEXT1 L2 TEXT2 \x80
  
@@ -309,7 +309,7 @@ TEXT1 L2 TEXT2 \x80
 拓司\n　「ほら、さっさと立て！」\
 
   
-FLG1 >+\x0c FLG1_SET \x08\x03 \x02 6\x03 END 
+INIT >+\x0c SET_VAR  \x08\x03 \x02 6\x03 END 
 SCEC SCE022_021 x- SCE_DONE 
 TEXT1 P2 TEXT2 \xa8
  
@@ -326,7 +326,7 @@ TEXT1 P2 TEXT2 \xa8
 　　誰の前でもでもこんなにぬるぬるにしちゃうんだ？」\
 
   
-FLG1 \xbc-\x0c FLG1_SET \x08\x03 \x02 6\x03 END 
+INIT \xbc-\x0c SET_VAR  \x08\x03 \x02 6\x03 END 
 SCEC SCE022_022 \x960 SCE_DONE 
 TEXT1 T2 TEXT2 ^
  
@@ -340,7 +340,7 @@ TEXT1 T2 TEXT2 ^
 拓司\n　「入れろ」\
 
   
-FLG1 \xda0\x0c FLG1_SET \x08\x03 \x02 6\x03 END 
+INIT \xda0\x0c SET_VAR  \x08\x03 \x02 6\x03 END 
 SCEC SCE022_023 \x8c2 SCE_DONE 
 TEXT1 X2 TEXT2 \x8d
  
@@ -354,8 +354,8 @@ TEXT1 X2 TEXT2 \x8d
 平野は自分でペ○スを握って、先端を早桃のアナルに押し当て、\nそして……\
 
   
-FLG1 \xd02\x0c FLG1_SET \x08\x03 \x02 6\x03 END   
-FLG1 N\x0c FLG1_SET \xae\x03 \x02 \xd8\x03 END 
+INIT \xd02\x0c SET_VAR  \x08\x03 \x02 6\x03 END   
+INIT N\x0c SET_VAR  \xae\x03 \x02 \xd8\x03 END 
 SCEC SCE022_024 r5 SCE_DONE 
 TEXT1 \\2 TEXT2 g
  
@@ -368,7 +368,7 @@ TEXT1 \\2 TEXT2 g
 　　おふっ！」\
 
   
-FLG1 \xb65\x0c FLG1_SET \x08\x03 \x02 6\x03 END 
+INIT \xb65\x0c SET_VAR  \x08\x03 \x02 6\x03 END 
 SCEC SCE022_025 \x8c7 SCE_DONE 
 TEXT1 `2 TEXT2 \xa3
  
@@ -384,7 +384,7 @@ TEXT1 `2 TEXT2 \xa3
 　　便所女の早桃は、内臓まで全部おにいちゃんのものだからね\n　　っ！」\
 
   
-FLG1 \xd07\x0c FLG1_SET \x08\x03 \x02 6\x03 END 
+INIT \xd07\x0c SET_VAR  \x08\x03 \x02 6\x03 END 
 SCEC SCE022_026 \x96: SCE_DONE 
 TEXT1 d2 TEXT2 d
  
@@ -396,7 +396,7 @@ TEXT1 d2 TEXT2 d
 そしてハダシのままの右脚を伸ばして、むき出しに晒されている\n早桃の性器に親指の先を突っ込んだ。\
 
   
-FLG1 \xda:\x0c FLG1_SET \x08\x03 \x02 6\x03 END 
+INIT \xda:\x0c SET_VAR  \x08\x03 \x02 6\x03 END 
 SCEC SCE022_027 \xa4< SCE_DONE 
 TEXT1 h2 TEXT2 o
  
@@ -410,7 +410,7 @@ TEXT1 h2 TEXT2 o
 　　早桃のやつ、うれしくて白目剥いて笑ってるぜ？」\
 
   
-FLG1 \xe8<\x0c FLG1_SET \x08\x03 \x02 6\x03 END 
+INIT \xe8<\x0c SET_VAR  \x08\x03 \x02 6\x03 END 
 SCEC SCE022_028 \xde> SCE_DONE 
 TEXT1 l2 TEXT2 l
  
@@ -424,7 +424,7 @@ TEXT1 l2 TEXT2 l
 　　なんなのおにいちゃん？！」\
 
   
-FLG1 "?\x0c FLG1_SET \x08\x03 \x02 6\x03 END 
+INIT "?\x0c SET_VAR  \x08\x03 \x02 6\x03 END 
 SCEC SCE022_029 \x0cA SCE_DONE 
 TEXT1 p2 TEXT2 \x9b
  
@@ -442,7 +442,7 @@ TEXT1 p2 TEXT2 \x9b
 その一瞬の隙をついて、遂に平野のペ○スが早桃を貫いた。\
 
   
-FLG1 PA\x0c FLG1_SET \x08\x03 \x02 6\x03 END 
+INIT PA\x0c SET_VAR  \x08\x03 \x02 6\x03 END 
 SCEC SCE022_030 \xf6C SCE_DONE 
 TEXT1 t2 TEXT2 d
  
@@ -458,7 +458,7 @@ TEXT1 t2 TEXT2 d
 　　おにいちゃ……ん」\
 
   
-FLG1 :D\x0c FLG1_SET \x08\x03 \x02 6\x03 END 
+INIT :D\x0c SET_VAR  \x08\x03 \x02 6\x03 END 
 SCEC SCE022_031 \x04F SCE_DONE 
 TEXT1 x2 TEXT2 \xb2
  
@@ -478,7 +478,7 @@ TEXT1 x2 TEXT2 \xb2
 　　いえッ！」\
 
   
-FLG1 HF\x0c FLG1_SET \x08\x03 \x02 6\x03 END 
+INIT HF\x0c SET_VAR  \x08\x03 \x02 6\x03 END 
 SCEC SCE022_032 JI SCE_DONE 
 TEXT1 |2 TEXT2 S
  
@@ -490,7 +490,7 @@ TEXT1 |2 TEXT2 S
 　　おっぱいも膨らみきってないつるぺた少女に僕の精液が……@
 　　子宮まで全部ぼ、僕の物だぁ……あ、あ、あ、ああっ！」\w\n\n\z
   
-FLG1 \x8eI\x0c FLG1_SET \x08\x03 \x02 6\x03 END 
+INIT \x8eI\x0c SET_VAR  \x08\x03 \x02 6\x03 END 
 SCEC SCE022_033 \x14K SCE_DONE 
 TEXT1 \x802 TEXT2 R
  
@@ -501,8 +501,8 @@ TEXT1 \x802 TEXT2 R
 \n　ザザザ……ザザッ……ザアザザザ……ザアアアアア……\nザアザアアアアアアア……\
 
   
-FLG1 XK\x0c FLG1_SET \x08\x03 \x02 6\x03 END   
-FLG1 \x02\x0c FLG1_SET \x06 
+INIT XK\x0c SET_VAR  \x08\x03 \x02 6\x03 END   
+INIT \x02\x0c SET_VAR  \x06 
 CMD2 SeStop RUNF M END  \x08\x03 
 CMD3 TextClose VAR1 (M END 
 END_SCRIPT

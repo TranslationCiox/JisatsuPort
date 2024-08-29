@@ -16,7 +16,7 @@ TEXT1 \x90\x97 TEXT2 \x9e
 カンナ\n　「ああ、このピカピカね……コレよ」\
 
   
-FLG1 \x90\x0c FLG1_SET
+INIT \x90\x0c SET_VAR 
 CMD7 .\\Data\\Script\\TextFunc.Fob RUNF (\x03 
 CMD2 TextOn RUNF V\x03 END 
 SCEC SCE087_002 r\x03 SCE_DONE 
@@ -32,7 +32,7 @@ TEXT1 \x94\x97 TEXT2 {
 拓司\n　「まさか！」\
 
   
-FLG1 \xb6\x03\x0c FLG1_SET (\x03 \x02 V\x03 END 
+INIT \xb6\x03\x0c SET_VAR  (\x03 \x02 V\x03 END 
 SCEC SCE087_003 \xdc\x05 SCE_DONE 
 TEXT1 \x98\x97 TEXT2 \x92
  
@@ -43,6 +43,6 @@ TEXT1 \x98\x97 TEXT2 \x92
 なたね\n　「いい？\p　エンケリュスの自殺波動は、アルミホイルで防御す\n　　ることが－－」\
 
   
-FLG1  \x06\x0c FLG1_SET (\x03 \x02 V\x03 END  (\x03 
+INIT  \x06\x0c SET_VAR  (\x03 \x02 V\x03 END  (\x03 
 CMD3 TextClose VAR1 \xae\x08 END 
 END_SCRIPT

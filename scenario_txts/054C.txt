@@ -17,7 +17,7 @@ TEXT1 d TEXT2 \xb2
 　突入前から目星をつけていたほうきを掴んで、無我夢中で振り\n回す。\
 
   
-FLG1 J\x0c FLG1_SET
+INIT J\x0c SET_VAR 
 CMD7 .\\Data\\Script\\TextFunc.Fob RUNF 2\x03 
 CMD2 TextOn RUNF `\x03 END 
 SCEC SCE054_002 |\x03 SCE_DONE 
@@ -37,8 +37,8 @@ TEXT1 \x04d TEXT2 \x9a
 　静寂の中、バットが振り下ろされた。@
 \z
   
-FLG1 \xc0\x03\x0c FLG1_SET 2\x03 \x02 `\x03 END   
-FLG1 \xc8\x0c FLG1_SET
+INIT \xc0\x03\x0c SET_VAR  2\x03 \x02 `\x03 END   
+INIT \xc8\x0c SET_VAR 
 CMD6 .\\Data\\Script\\Bg.Fob VAR2 |\x06 \x02
 CMD4 BgAutoFadeIn VAR2 \xa6\x06 END  2\x03 
 CMD3 TextClose VAR1 \xd6\x06 END 

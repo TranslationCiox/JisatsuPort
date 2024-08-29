@@ -3,34 +3,34 @@ START_SCRIPT
 SCEC SCE236_001 \x06 SCE_DONE 
 TEXT1 `\x80\x01 TEXT2 \x07.\\Data\\Script\\TextFunc.Fob RUNF J \x02
 CMD5 TextWindowOffDirect x END   
-FLG1 \x02\x0c FLG1_SET  \x04
-FLG1 \x1b\x0c FLG1_SET  \x08
-FLG1 \x0c FLG1_SET
+INIT \x02\x0c SET_VAR   \x04
+INIT \x1b\x0c SET_VAR   \x08
+INIT \x0c SET_VAR 
 CMD6 .\\Data\\Script\\Bgm.Fob VAR1 \xee 
 CMD2 SePlay RUNF \x18\x01 END   
-FLG1 \xca\x0c FLG1_SET
+INIT \xca\x0c SET_VAR 
 CMD6 .\\Data\\Script\\Bg.Fob VAR2 N\x01 
 CMD2 BgOn VAR2 x\x01 END   
-FLG1 \x01\x0c FLG1_SET
+INIT \x01\x0c SET_VAR 
 CMD7 .\\Data\\Script\\TextFunc.fob RUNF \xae\x01 
 CMD3 WaitTime VAR2 \xdc\x01 END   
-FLG1 \xc8\x0c FLG1_SET N\x01 \x02 x\x01 END   
-FLG1 \x01\x0c FLG1_SET \xae\x01 \x02 \xdc\x01 END   
-FLG1 \x02\x0c FLG1_SET \xee 
+INIT \xc8\x0c SET_VAR  N\x01 \x02 x\x01 END   
+INIT \x01\x0c SET_VAR  \xae\x01 \x02 \xdc\x01 END   
+INIT \x02\x0c SET_VAR  \xee 
 CMD2 SeStop RUNF \x8a\x02 END   
-FLG1 \x02\x0c FLG1_SET  \x04
-FLG1 \x1b\x0c FLG1_SET  \x08
-FLG1 \x0c FLG1_SET \xee \x02 \x18\x01 END   
-FLG1 \xca\x0c FLG1_SET N\x01 \x02 x\x01 END   
-FLG1 \x01\x0c FLG1_SET \xae\x01 \x02 \xdc\x01 END   
-FLG1 \xc8\x0c FLG1_SET N\x01 \x02 x\x01 END   
-FLG1 \x01\x0c FLG1_SET \xae\x01 \x02 \xdc\x01 END   
-FLG1 <\x0c FLG1_SET \xae\x01 \x02 \xdc\x01 END   
-FLG1 \xc9\x0c FLG1_SET N\x01 \x02
+INIT \x02\x0c SET_VAR   \x04
+INIT \x1b\x0c SET_VAR   \x08
+INIT \x0c SET_VAR  \xee \x02 \x18\x01 END   
+INIT \xca\x0c SET_VAR  N\x01 \x02 x\x01 END   
+INIT \x01\x0c SET_VAR  \xae\x01 \x02 \xdc\x01 END   
+INIT \xc8\x0c SET_VAR  N\x01 \x02 x\x01 END   
+INIT \x01\x0c SET_VAR  \xae\x01 \x02 \xdc\x01 END   
+INIT <\x0c SET_VAR  \xae\x01 \x02 \xdc\x01 END   
+INIT \xc9\x0c SET_VAR  N\x01 \x02
 CMD4 BgNormalFadeIn RUNF 8\x04 END   
-FLG1 \x08\x01\x0c FLG1_SET \xee 
+INIT \x08\x01\x0c SET_VAR  \xee 
 CMD2 PlayCD RUNF \x82\x04 END   
-FLG1 \x02\x0c FLG1_SET \xee \x02 \x8a\x02 END  J \x02
+INIT \x02\x0c SET_VAR  \xee \x02 \x8a\x02 END  J \x02
 CMD4 TextWindowOn VAR2 \xde\x04 END \x03l
  
 白い部屋で目覚めてホッとした気分になったのは、これが初めて\nだった。@
@@ -43,7 +43,7 @@ CMD4 TextWindowOn VAR2 \xde\x04 END \x03l
 \n教授が繰り返した。\
 
   
-FLG1 \x02\x05\x0c FLG1_SET J 
+INIT \x02\x05\x0c SET_VAR  J 
 CMD2 TextOn RUNF \xde\x06 END 
 SCEC SCE236_002 \xfa\x06 SCE_DONE 
 TEXT1 d\x80\x01 TEXT2 g
@@ -59,7 +59,7 @@ TEXT1 d\x80\x01 TEXT2 g
 \n拓司\n　「ここが……この世界が……」\
 
   
-FLG1 >\x07\x0c FLG1_SET J \x02 \xde\x06 END 
+INIT >\x07\x0c SET_VAR  J \x02 \xde\x06 END 
 SCEC SCE236_003 \x14\t SCE_DONE 
 TEXT1 h\x80\x01 TEXT2 |
  
@@ -68,7 +68,7 @@ TEXT1 h\x80\x01 TEXT2 |
 教授\n　「覚えてはいないだろうが、君はこうした混乱状態を、もう数\n　　度繰り返してきている。\pしかし今回は、いつもとは明らかに\n　　違う。\pいままで君は、混乱の中で精神に限界をきたし、自殺\n　　を図ることまであった。\p死ねば何が本当かがわかると思って、\n　　ね」\
 
   
-FLG1 X\t\x0c FLG1_SET J \x02 \xde\x06 END 
+INIT X\t\x0c SET_VAR  J \x02 \xde\x06 END 
 SCEC SCE236_004 \x82\x0b SCE_DONE 
 TEXT1 l\x80\x01 TEXT2 X
  
@@ -78,6 +78,6 @@ TEXT1 l\x80\x01 TEXT2 X
 教授\n　「そうか。\pしかし、もう、きみはそうした危険な状況を切り抜\n　　けた。\pきみは階段を一歩、昇ったんだ。\pこれからはどんどん\n　　良くなっていく。\pそれを信じて、私と一緒に頑張ろうじゃな\n　　いか」\
 
   
-FLG1 \xc6\x0b\x0c FLG1_SET J \x02 \xde\x06 END  J 
+INIT \xc6\x0b\x0c SET_VAR  J \x02 \xde\x06 END  J 
 CMD3 TextClose VAR1 l\r END 
 END_SCRIPT

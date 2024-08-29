@@ -9,7 +9,7 @@ TEXT1 pu\x01 TEXT2 S
 動こうとしたカンナを「動くなッ！」と一喝して、御堂はいった。\n\
 
   
-FLG1 J\x0c FLG1_SET
+INIT J\x0c SET_VAR 
 CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \xb6\x01 
 CMD2 TextOn RUNF \xe4\x01 END  \xb6\x01 
 CMD3 TextClose VAR1 \x0c\x02 END 

@@ -1,6 +1,6 @@
 START_SCRIPT
 G\x1a\x01`B#\x01j\x16  
-FLG1 \x04\x01\x0c FLG1_SET
+INIT \x04\x01\x0c SET_VAR 
 CMD6 .\\Data\\Script\\Bgm.Fob VAR1   
 CMD2 PlayCD RUNF J END 
 SCEC SCES03_001 f SCE_DONE 
@@ -16,7 +16,7 @@ TEXT1 \xd0\xb5\x01 TEXT2 \x8b
 よく夢を見たの。\
 
   
-FLG1 \xaa\x0c FLG1_SET
+INIT \xaa\x0c SET_VAR 
 CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \xf6\x02 
 CMD2 TextOn RUNF $\x03 END 
 SCEC SCES03_002 @\x03 SCE_DONE 
@@ -33,7 +33,7 @@ TEXT1 \xd4\xb5\x01 TEXT2 \x89
 なんだかとても悲しかった。\
 
   
-FLG1 \x84\x03\x0c FLG1_SET \xf6\x02 \x02 $\x03 END 
+INIT \x84\x03\x0c SET_VAR  \xf6\x02 \x02 $\x03 END 
 SCEC SCES03_003 \xe2\x05 SCE_DONE 
 TEXT1 \xd8\xb5\x01 TEXT2 \xde
  
@@ -50,7 +50,7 @@ TEXT1 \xd8\xb5\x01 TEXT2 \xde
 朝は公園でぼんやりして、９時４５分になったら図書館に行って、\nお昼まで本を読むの。\pそれからデパートに行って、いろんなもの\nを見て、屋上に行く\p。平日の昼間の屋上って、誰もいないんだよ。\n\pそんな、誰もいない屋上で、ドルチェとお話ししてた。\
 
   
-FLG1 &\x06\x0c FLG1_SET \xf6\x02 \x02 $\x03 END 
+INIT &\x06\x0c SET_VAR  \xf6\x02 \x02 $\x03 END 
 SCEC SCES03_004 \xd8\t SCE_DONE 
 TEXT1 \xdc\xb5\x01 TEXT2 \xa3
  
@@ -65,8 +65,8 @@ TEXT1 \xdc\xb5\x01 TEXT2 \xa3
 『答はね、早桃ちゃん。\p風のなかにあるニャ』\
 
   
-FLG1 \x1c\n\x0c FLG1_SET \xf6\x02 \x02 $\x03 END   
-FLG1 B\x0c FLG1_SET
+INIT \x1c\n\x0c SET_VAR  \xf6\x02 \x02 $\x03 END   
+INIT B\x0c SET_VAR 
 CMD6 .\\Data\\Script\\Bg.Fob VAR2 \xfc\x0c \x02
 CMD4 BgAutoFadeIn VAR2 &\r END 
 SCEC SCES03_005 J\r SCE_DONE 
@@ -82,8 +82,8 @@ TEXT1 \xe0\xb5\x01 TEXT2 |
 でも、どれくらいなの？　って。\
 
   
-FLG1 \x8e\r\x0c FLG1_SET \xf6\x02 \x02 $\x03 END   
-FLG1 \xc8\x0c FLG1_SET \xfc\x0c \x02 &\r END 
+INIT \x8e\r\x0c SET_VAR  \xf6\x02 \x02 $\x03 END   
+INIT \xc8\x0c SET_VAR  \xfc\x0c \x02 &\r END 
 SCEC SCES03_006 \xec\x0f SCE_DONE 
 TEXT1 \xe4\xb5\x01 TEXT2 j
  
@@ -96,7 +96,7 @@ TEXT1 \xe4\xb5\x01 TEXT2 j
 特別扱いじゃなくて、普通の、どこにでもいる女の子として扱っ\nてもらってるんだなって。\
 
   
-FLG1 0\x10\x0c FLG1_SET \xf6\x02 \x02 $\x03 END 
+INIT 0\x10\x0c SET_VAR  \xf6\x02 \x02 $\x03 END 
 SCEC SCES03_007 \x12\x12 SCE_DONE 
 TEXT1 \xe8\xb5\x01 TEXT2 \xe2
  
@@ -114,7 +114,7 @@ TEXT1 \xe8\xb5\x01 TEXT2 \xe2
 私は道に落ちている石ころみたいなものじゃなくて、ちゃんと価\n値がある人間なんだって。\
 
   
-FLG1 V\x12\x0c FLG1_SET \xf6\x02 \x02 $\x03 END    
+INIT V\x12\x0c SET_VAR  \xf6\x02 \x02 $\x03 END    
 CMD2 StopCD RUNF $\x16 END  \xf6\x02 
 CMD3 TextClose VAR1 L\x16 END 
 END_SCRIPT

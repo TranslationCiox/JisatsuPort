@@ -12,7 +12,7 @@ TEXT1 \x10S\x01 TEXT2 \xa7
 拓司\n　「……」\
 
   
-FLG1 J\x0c FLG1_SET
+INIT J\x0c SET_VAR 
 CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \x06\x03 
 CMD2 TextOn RUNF 4\x03 END 
 SCEC SCE207_002 P\x03 SCE_DONE 
@@ -23,6 +23,6 @@ TEXT1 \x14S\x01 TEXT2 l
 ナタネ\n　「世界は消滅して……あなただけが生き残った。\p教授はあなた\n　　を恐れている」\
 
   
-FLG1 \x94\x03\x0c FLG1_SET \x06\x03 \x02 4\x03 END  \x06\x03 
+INIT \x94\x03\x0c SET_VAR  \x06\x03 \x02 4\x03 END  \x06\x03 
 CMD3 TextClose VAR1 \x8a\x05 END 
 END_SCRIPT

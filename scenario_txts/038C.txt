@@ -1,6 +1,6 @@
 START_SCRIPT
 \x07\x0e\x01`B#\x01X\x0b  
-FLG1 \x08\x01\x0c FLG1_SET
+INIT \x08\x01\x0c SET_VAR 
 CMD6 .\\Data\\Script\\Bgm.Fob VAR1   
 CMD2 PlayCD RUNF J END 
 SCEC SCE038_001 f SCE_DONE 
@@ -15,7 +15,7 @@ TEXT1 K TEXT2 a
 やがて早桃がポツリといった。\
 
   
-FLG1 \xaa\x0c FLG1_SET
+INIT \xaa\x0c SET_VAR 
 CMD7 .\\Data\\Script\\TextFunc.Fob RUNF N\x02 
 CMD2 TextOn RUNF |\x02 END 
 SCEC SCE038_002 \x98\x02 SCE_DONE 
@@ -31,7 +31,7 @@ TEXT1 \x04K TEXT2 b
 \n　早桃の顔に、ようやく柔らかい笑顔が戻った。\
 
   
-FLG1 \xdc\x02\x0c FLG1_SET N\x02 \x02 |\x02 END 
+INIT \xdc\x02\x0c SET_VAR  N\x02 \x02 |\x02 END 
 SCEC SCE038_003 \x9e\x04 SCE_DONE 
 TEXT1 \x08K TEXT2 L
  
@@ -45,7 +45,7 @@ TEXT1 \x08K TEXT2 L
 　　あと、香港といえばブランド品の買い物だな」\
 
   
-FLG1 \xe2\x04\x0c FLG1_SET N\x02 \x02 |\x02 END 
+INIT \xe2\x04\x0c SET_VAR  N\x02 \x02 |\x02 END 
 SCEC SCE038_004 L\x06 SCE_DONE 
 TEXT1 \x0cK TEXT2 P
  
@@ -57,7 +57,7 @@ TEXT1 \x0cK TEXT2 P
 \n拓司\n　「……？」\
 
   
-FLG1 \x90\x06\x0c FLG1_SET N\x02 \x02 |\x02 END 
+INIT \x90\x06\x0c SET_VAR  N\x02 \x02 |\x02 END 
 SCEC SCE038_005 \n\x08 SCE_DONE 
 TEXT1 \x10K TEXT2 H
  
@@ -70,7 +70,7 @@ TEXT1 \x10K TEXT2 H
 拓司\n　「……？」\
 
   
-FLG1 N\x08\x0c FLG1_SET N\x02 \x02 |\x02 END 
+INIT N\x08\x0c SET_VAR  N\x02 \x02 |\x02 END 
 SCEC SCE038_006 \xa8\t SCE_DONE 
 TEXT1 \x14K TEXT2 B
  
@@ -82,6 +82,6 @@ TEXT1 \x14K TEXT2 B
 拓司\n　「……」\
 
   
-FLG1 \xec\t\x0c FLG1_SET N\x02 \x02 |\x02 END  N\x02 
+INIT \xec\t\x0c SET_VAR  N\x02 \x02 |\x02 END  N\x02 
 CMD3 TextClose VAR1 :\x0b END 
 END_SCRIPT

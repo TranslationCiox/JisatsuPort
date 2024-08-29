@@ -1,9 +1,9 @@
 START_SCRIPT
 \xcd\x08\x01`B#\x01\xae\x06  
-FLG1 C\x0c FLG1_SET
+INIT C\x0c SET_VAR 
 CMD6 .\\Data\\Script\\Bg.Fob VAR2   \x02
 CMD4 BgAutoFadeIn VAR2 J END   
-FLG1 \x08\x01\x0c FLG1_SET
+INIT \x08\x01\x0c SET_VAR 
 CMD6 .\\Data\\Script\\Bgm.Fob VAR1 \x88 
 CMD2 PlayCD RUNF \xb2 END 
 SCEC SCEG01_001 \xce SCE_DONE 
@@ -14,10 +14,10 @@ TEXT1  \xc5\x01 TEXT2 *
 \n　錦城は微かに笑うと、拓司の横へと体を移動させた。@
 寄り添って寝転がるような形になる。\w\z
   
-FLG1 \x12\x01\x0c FLG1_SET
+INIT \x12\x01\x0c SET_VAR 
 CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \xda\x01 
 CMD2 TextOn RUNF \x08\x02 END   
-FLG1 \xc8\x0c FLG1_SET   \x02 J END 
+INIT \xc8\x0c SET_VAR    \x02 J END 
 SCEC SCEG01_002 X\x02 SCE_DONE 
 TEXT1 $\xc5\x01 TEXT2 z
  
@@ -30,7 +30,7 @@ TEXT1 $\xc5\x01 TEXT2 z
 　　そういう人はね、強いの。@
 　　周囲の状況にながされないで、自分という物を持ち続けられ\n　　るの。\p虎菱くんこそが、リーダーにふさわしいって」\w\z
   
-FLG1 \x9c\x02\x0c FLG1_SET \xda\x01 \x02 \x08\x02 END 
+INIT \x9c\x02\x0c SET_VAR  \xda\x01 \x02 \x08\x02 END 
 SCEC SCEG01_003 \xbe\x04 SCE_DONE 
 TEXT1 (\xc5\x01 TEXT2 H
  
@@ -41,7 +41,7 @@ TEXT1 (\xc5\x01 TEXT2 H
 \n錦城\n　「……先生からのエールだと思って。ね？」\
 
   
-FLG1 \x02\x05\x0c FLG1_SET \xda\x01 \x02 \x08\x02 END  \x88 
+INIT \x02\x05\x0c SET_VAR  \xda\x01 \x02 \x08\x02 END  \x88 
 CMD2 StopCD RUNF h\x06 END  \xda\x01 
 CMD3 TextClose VAR1 \x90\x06 END 
 END_SCRIPT

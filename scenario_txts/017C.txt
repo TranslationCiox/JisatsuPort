@@ -11,7 +11,7 @@ TEXT1 0* TEXT2 $
 紅葉\n　「……」@
 拓司\n　「……」\w\z
   
-FLG1 J\x0c FLG1_SET
+INIT J\x0c SET_VAR 
 CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \xfa 
 CMD2 TextOn RUNF (\x01 END 
 SCEC SCE017_002 D\x01 SCE_DONE 
@@ -20,6 +20,6 @@ TEXT1 4* TEXT2 \x16
 紅葉\n　「……生理？」@
 拓司\n　「お前なあ、もうちょっと女らしい冗談言えよ」\w\z
   
-FLG1 \x88\x01\x0c FLG1_SET \xfa \x02 (\x01 END  \xfa 
+INIT \x88\x01\x0c SET_VAR  \xfa \x02 (\x01 END  \xfa 
 CMD3 TextClose VAR1 &\x02 END 
 END_SCRIPT

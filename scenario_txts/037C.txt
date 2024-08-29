@@ -1,6 +1,6 @@
 START_SCRIPT
 \t\x17\x01`B#\x01X\x12  
-FLG1 \x08\x01\x0c FLG1_SET
+INIT \x08\x01\x0c SET_VAR 
 CMD6 .\\Data\\Script\\Bgm.Fob VAR1   
 CMD2 PlayCD RUNF J END 
 SCEC SCE037_001 f SCE_DONE 
@@ -18,7 +18,7 @@ TEXT1 pI TEXT2 \x8f
 　光景。\
 
   
-FLG1 \xaa\x0c FLG1_SET
+INIT \xaa\x0c SET_VAR 
 CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \x06\x03 
 CMD2 TextOn RUNF 4\x03 END 
 SCEC SCE037_002 P\x03 SCE_DONE 
@@ -32,7 +32,7 @@ TEXT1 tI TEXT2 W
 光景がそこにあった。\
 
   
-FLG1 \x94\x03\x0c FLG1_SET \x06\x03 \x02 4\x03 END 
+INIT \x94\x03\x0c SET_VAR  \x06\x03 \x02 4\x03 END 
 SCEC SCE037_003 *\x05 SCE_DONE 
 TEXT1 xI TEXT2 F
  
@@ -46,7 +46,7 @@ TEXT1 xI TEXT2 F
 早桃\n　「ふふふ！」\
 
   
-FLG1 n\x05\x0c FLG1_SET \x06\x03 \x02 4\x03 END 
+INIT n\x05\x0c SET_VAR  \x06\x03 \x02 4\x03 END 
 SCEC SCE037_004 \xc0\x06 SCE_DONE 
 TEXT1 |I TEXT2 c
  
@@ -59,7 +59,7 @@ TEXT1 |I TEXT2 c
 拓司\n　「いいからそっちよこせ！」\
 
   
-FLG1 \x04\x07\x0c FLG1_SET \x06\x03 \x02 4\x03 END 
+INIT \x04\x07\x0c SET_VAR  \x06\x03 \x02 4\x03 END 
 SCEC SCE037_005 \xca\x08 SCE_DONE 
 TEXT1 \x80I TEXT2 C
  
@@ -72,7 +72,7 @@ TEXT1 \x80I TEXT2 C
 拓司\n　「……」\
 
   
-FLG1 \x0e\t\x0c FLG1_SET \x06\x03 \x02 4\x03 END 
+INIT \x0e\t\x0c SET_VAR  \x06\x03 \x02 4\x03 END 
 SCEC SCE037_006 T\n SCE_DONE 
 TEXT1 \x84I TEXT2 A
  
@@ -84,8 +84,8 @@ TEXT1 \x84I TEXT2 A
 拓司\n　「はは……うっ！」\
 
   
-FLG1 \x98\n\x0c FLG1_SET \x06\x03 \x02 4\x03 END   
-FLG1 \xc8\x0c FLG1_SET
+INIT \x98\n\x0c SET_VAR  \x06\x03 \x02 4\x03 END   
+INIT \xc8\x0c SET_VAR 
 CMD6 .\\Data\\Script\\Bg.Fob VAR2 \xf0\x0b 
 CMD2 BgOn VAR2 \x1a\x0c END 
 SCEC SCE037_007 6\x0c SCE_DONE 
@@ -101,7 +101,7 @@ TEXT1 \x88I TEXT2 I
 早桃\n　「……」\
 
   
-FLG1 z\x0c\x0c FLG1_SET \x06\x03 \x02 4\x03 END 
+INIT z\x0c\x0c SET_VAR  \x06\x03 \x02 4\x03 END 
 SCEC SCE037_008 \xd8\r SCE_DONE 
 TEXT1 \x8cI TEXT2 s
  
@@ -115,8 +115,8 @@ TEXT1 \x8cI TEXT2 s
 　遠くから、ぼんやりとサッカーをしている学生たちの声が聞こ\nえた。\
 
   
-FLG1 \x1c\x0e\x0c FLG1_SET \x06\x03 \x02 4\x03 END   
-FLG1 \xc8\x0c FLG1_SET \xf0\x0b \x02 \x1a\x0c END 
+INIT \x1c\x0e\x0c SET_VAR  \x06\x03 \x02 4\x03 END   
+INIT \xc8\x0c SET_VAR  \xf0\x0b \x02 \x1a\x0c END 
 SCEC SCE037_009 V\x10 SCE_DONE 
 TEXT1 \x90I TEXT2 8
  
@@ -129,12 +129,12 @@ TEXT1 \x90I TEXT2 8
 早桃\n　「……どうしてかな？」\
 
   
-FLG1 \x9a\x10\x0c FLG1_SET \x06\x03 \x02 4\x03 END \x03\x10
+INIT \x9a\x10\x0c SET_VAR  \x06\x03 \x02 4\x03 END \x03\x10
 CHOICE
 話題を逸らす\n早桃はどうなんだ、と逆に問い返す\n\l0,2,
 ENDCHOICE
 
   
-FLG1 \xb4\x11\x0c FLG1_SET \x06\x03 \x02 4\x03 END  \x06\x03 
+INIT \xb4\x11\x0c SET_VAR  \x06\x03 \x02 4\x03 END  \x06\x03 
 CMD3 TextClose VAR1 :\x12 END 
 END_SCRIPT

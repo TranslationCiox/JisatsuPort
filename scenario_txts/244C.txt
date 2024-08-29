@@ -1,6 +1,6 @@
 START_SCRIPT
 R3\x01`B#\x01^*  
-FLG1 6\x0c FLG1_SET
+INIT 6\x0c SET_VAR 
 CMD6 .\\Data\\Script\\Bg.Fob VAR2   \x02
 CMD4 BgAutoFadeIn VAR2 J END 
 SCEC SCE244_001 n SCE_DONE 
@@ -12,7 +12,7 @@ TEXT1 \xe0\x8c\x01 TEXT2
 \n拓司\n　「他には……？」\
 
   
-FLG1 \xb2\x0c FLG1_SET
+INIT \xb2\x0c SET_VAR 
 CMD7 .\\Data\\Script\\TextFunc.Fob RUNF R\x01 
 CMD2 TextOn RUNF \x80\x01 END 
 SCEC SCE244_002 \x9c\x01 SCE_DONE 
@@ -26,7 +26,7 @@ TEXT1 \xe4\x8c\x01 TEXT2 c
 \n錦城は最後まで強気を装っていた。\
 
   
-FLG1 \xe0\x01\x0c FLG1_SET R\x01 \x02 \x80\x01 END 
+INIT \xe0\x01\x0c SET_VAR  R\x01 \x02 \x80\x01 END 
 SCEC SCE244_003 \xa6\x03 SCE_DONE 
 TEXT1 \xe8\x8c\x01 TEXT2 d
  
@@ -42,7 +42,7 @@ TEXT1 \xe8\x8c\x01 TEXT2 d
 \n拓司は早桃を制した。@
 \z
   
-FLG1 \xea\x03\x0c FLG1_SET R\x01 \x02 \x80\x01 END 
+INIT \xea\x03\x0c SET_VAR  R\x01 \x02 \x80\x01 END 
 SCEC SCE244_004 \xb4\x05 SCE_DONE 
 TEXT1 \xec\x8c\x01 TEXT2 \x87
  
@@ -56,16 +56,16 @@ TEXT1 \xec\x8c\x01 TEXT2 \x87
 ドアを開き、外の世界へと。\
 
   
-FLG1 \xf8\x05\x0c FLG1_SET R\x01 \x02 \x80\x01 END 
+INIT \xf8\x05\x0c SET_VAR  R\x01 \x02 \x80\x01 END 
 SCEC SCE244_005 N\x08 SCE_DONE 
 TEXT1 \xf0\x8c\x01\x0c"  
-FLG1 \xc8\x0c FLG1_SET   \x02 J END   
-FLG1 \x02\x0c FLG1_SET  \x04
-FLG1 \x17\x0c FLG1_SET  \x08
-FLG1 \x01\x0c FLG1_SET
+INIT \xc8\x0c SET_VAR    \x02 J END   
+INIT \x02\x0c SET_VAR   \x04
+INIT \x17\x0c SET_VAR   \x08
+INIT \x01\x0c SET_VAR 
 CMD6 .\\Data\\Script\\Bgm.Fob VAR1 \x14\t 
 CMD2 SePlay RUNF >\t END   
-FLG1 \t\x01\x0c FLG1_SET \x14\t 
+INIT \t\x01\x0c SET_VAR  \x14\t 
 CMD2 PlayCD RUNF \x80\t END \x03\xbb
  
 拓司\n　「これは……」@
@@ -80,7 +80,7 @@ CMD2 PlayCD RUNF \x80\t END \x03\xbb
 あの工業団地の廃墟にさらなる歳月の洗礼を加えて、行き着く果\nてまで荒廃を深化させた－－そんな感じがする。\
 
   
-FLG1 \x9c\t\x0c FLG1_SET R\x01 \x02 \x80\x01 END 
+INIT \x9c\t\x0c SET_VAR  R\x01 \x02 \x80\x01 END 
 SCEC SCE244_006 \xc2\x0c SCE_DONE 
 TEXT1 \xf4\x8c\x01 TEXT2 `
  
@@ -88,7 +88,7 @@ TEXT1 \xf4\x8c\x01 TEXT2 `
 もしかしたら、それこそが学生たちのなれの果てなのかもしれな\nい……。\
 
   
-FLG1 \x06\r\x0c FLG1_SET R\x01 \x02 \x80\x01 END 
+INIT \x06\r\x0c SET_VAR  R\x01 \x02 \x80\x01 END 
 SCEC SCE244_007 \xc0\x0e SCE_DONE 
 TEXT1 \xf8\x8c\x01 TEXT2 D
  
@@ -98,7 +98,7 @@ TEXT1 \xf8\x8c\x01 TEXT2 D
 拓司はその手の上に自分の手を重ねて、力強く頷いた。\
 
   
-FLG1 \x04\x0f\x0c FLG1_SET R\x01 \x02 \x80\x01 END 
+INIT \x04\x0f\x0c SET_VAR  R\x01 \x02 \x80\x01 END 
 SCEC SCE244_008 N\x10 SCE_DONE 
 TEXT1 \xfc\x8c\x01 TEXT2 \xd6
  
@@ -114,7 +114,7 @@ TEXT1 \xfc\x8c\x01 TEXT2 \xd6
 まっすぐ歩いているつもりなのに、壁に体当たりしているときも\nある。\
 
   
-FLG1 \x92\x10\x0c FLG1_SET R\x01 \x02 \x80\x01 END 
+INIT \x92\x10\x0c SET_VAR  R\x01 \x02 \x80\x01 END 
 SCEC SCE244_009 $\x14 SCE_DONE 
 TEXT1 \x8d\x01 TEXT2 M
  
@@ -125,8 +125,8 @@ TEXT1 \x8d\x01 TEXT2 M
 しかし、拓司は身体の隅々に残ったエネルギーを総動員して、そ\nのまえに立った。\
 
   
-FLG1 h\x14\x0c FLG1_SET R\x01 \x02 \x80\x01 END   
-FLG1 \x02\x0c FLG1_SET \x14\t 
+INIT h\x14\x0c SET_VAR  R\x01 \x02 \x80\x01 END   
+INIT \x02\x0c SET_VAR  \x14\t 
 CMD2 SeStop RUNF \xfc\x15 END  \x14\t 
 CMD2 StopCD RUNF $\x16 END 
 SCEC SCE244_010 @\x16 SCE_DONE 
@@ -142,7 +142,7 @@ TEXT1 \x04\x8d\x01 TEXT2 D
 いや、そもそもそこには何かがあるのだろうか？\
 
   
-FLG1 \x84\x16\x0c FLG1_SET R\x01 \x02 \x80\x01 END 
+INIT \x84\x16\x0c SET_VAR  R\x01 \x02 \x80\x01 END 
 SCEC SCE244_011 \xce\x17 SCE_DONE 
 TEXT1 \x08\x8d\x01 TEXT2 _
  
@@ -154,12 +154,12 @@ TEXT1 \x08\x8d\x01 TEXT2 _
 早桃\n　「うん！」\
 
   
-FLG1 \x12\x18\x0c FLG1_SET R\x01 \x02 \x80\x01 END 
+INIT \x12\x18\x0c SET_VAR  R\x01 \x02 \x80\x01 END 
 SCEC SCE244_012 \xc8\x19 SCE_DONE 
 TEXT1 \x0c\x8d\x01\x0c"  
-FLG1 \x02\x0c FLG1_SET  \x04
-FLG1 \x0f\x0c FLG1_SET  \x08
-FLG1 \x01\x0c FLG1_SET \x14\t \x02 >\t END \x03\xae
+INIT \x02\x0c SET_VAR   \x04
+INIT \x0f\x0c SET_VAR   \x08
+INIT \x01\x0c SET_VAR  \x14\t \x02 >\t END \x03\xae
  
 ２人は取り憑かれたように、椅子の脚を壁に叩き付けた。@
 一箇所に狙いを絞って叩きつけてゆく。@
@@ -174,7 +174,7 @@ FLG1 \x01\x0c FLG1_SET \x14\t \x02 >\t END \x03\xae
 １０センチほどしかない！\
 
   
-FLG1 t\x1a\x0c FLG1_SET R\x01 \x02 \x80\x01 END 
+INIT t\x1a\x0c SET_VAR  R\x01 \x02 \x80\x01 END 
 SCEC SCE244_013 f\x1d SCE_DONE 
 TEXT1 \x10\x8d\x01 TEXT2 \x8d
  
@@ -190,7 +190,7 @@ TEXT1 \x10\x8d\x01 TEXT2 \x8d
 \nぴったりと穴に顔を張り付かせて、壁の向こうで誰かがこちらを\nのぞき込んでいたのだ。\
 
   
-FLG1 \xaa\x1d\x0c FLG1_SET R\x01 \x02 \x80\x01 END 
+INIT \xaa\x1d\x0c SET_VAR  R\x01 \x02 \x80\x01 END 
 SCEC SCE244_014 \x18  SCE_DONE 
 TEXT1 \x14\x8d\x01 TEXT2 r
  
@@ -204,7 +204,7 @@ TEXT1 \x14\x8d\x01 TEXT2 r
 \n近づいてきた早桃を突き飛ばして、拓司は狂ったように壁に体当\nたりを繰り返した。\
 
   
-FLG1 \\ \x0c FLG1_SET R\x01 \x02 \x80\x01 END 
+INIT \\ \x0c SET_VAR  R\x01 \x02 \x80\x01 END 
 SCEC SCE244_015 ^" SCE_DONE 
 TEXT1 \x18\x8d\x01 TEXT2 m
  
@@ -221,14 +221,14 @@ TEXT1 \x18\x8d\x01 TEXT2 m
 狂気を呼び込み、それに容易に支配される目だった。\
 
   
-FLG1 \xa2"\x0c FLG1_SET R\x01 \x02 \x80\x01 END 
+INIT \xa2"\x0c SET_VAR  R\x01 \x02 \x80\x01 END 
 SCEC SCE244_016 \x90$ SCE_DONE 
 TEXT1 \x1c\x8d\x01 TEXT2 C
  
 体当たりを繰り返しているうちに、拓司のシャツの肩の部分には\n真っ赤な血が滲み始めた。\pそれに気づいてようやく拓司は体当た\nりをやめ、今度は椅子の脚をふりかぶって、メチャクチャに壁に\n叩き付け始めた。\pガンガンという音が頭が割れそうなくらい大き\nく響き渡る。@
 \z
   
-FLG1 \xd4$\x0c FLG1_SET R\x01 \x02 \x80\x01 END 
+INIT \xd4$\x0c SET_VAR  R\x01 \x02 \x80\x01 END 
 SCEC SCE244_017 \x1a& SCE_DONE 
 TEXT1  \x8d\x01 TEXT2 \x80
  
@@ -242,7 +242,7 @@ TEXT1  \x8d\x01 TEXT2 \x80
 しかし、そうではないことを、拓司は知っていた。@
 \z
   
-FLG1 ^&\x0c FLG1_SET R\x01 \x02 \x80\x01 END 
+INIT ^&\x0c SET_VAR  R\x01 \x02 \x80\x01 END 
 SCEC SCE244_018 \x98( SCE_DONE 
 TEXT1 $\x8d\x01 TEXT2 ,
  
@@ -253,13 +253,13 @@ TEXT1 $\x8d\x01 TEXT2 ,
 最終波動がやってきたのだ。\
 
   
-FLG1 \xdc(\x0c FLG1_SET R\x01 \x02 \x80\x01 END \x03
-FLG1
+INIT \xdc(\x0c SET_VAR  R\x01 \x02 \x80\x01 END \x03
+INIT
 CHOICE
 シェルターに駆け戻る\n穴を広げる\n\l0,2,
 ENDCHOICE
 
   
-FLG1 \xc6)\x0c FLG1_SET R\x01 \x02 \x80\x01 END  R\x01 
+INIT \xc6)\x0c SET_VAR  R\x01 \x02 \x80\x01 END  R\x01 
 CMD3 TextClose VAR1 @* END 
 END_SCRIPT

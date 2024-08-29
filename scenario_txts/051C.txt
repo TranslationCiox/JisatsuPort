@@ -2,9 +2,9 @@ START_SCRIPT
 \xdc\x07\x01`B#\x01(\x06
 SCEC SCE051_001 \x06 SCE_DONE 
 TEXT1 P_\x0c"  
-FLG1 \x02\x0c FLG1_SET  \x04
-FLG1 \x1a\x0c FLG1_SET  \x08
-FLG1 \x01\x0c FLG1_SET
+INIT \x02\x0c SET_VAR   \x04
+INIT \x1a\x0c SET_VAR   \x08
+INIT \x01\x0c SET_VAR 
 CMD6 .\\Data\\Script\\Bgm.Fob VAR1 \x98 
 CMD2 SePlay RUNF \xc2 END \x03\xa2
  
@@ -20,7 +20,7 @@ CMD2 SePlay RUNF \xc2 END \x03\xa2
 　焦りと不安が、なたねへの怒りへと転嫁されて、ふつふつと胸\n　の中で煮えたぎっていた。\
 
   
-FLG1 \xde\x0c FLG1_SET
+INIT \xde\x0c SET_VAR 
 CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \x86\x03 
 CMD2 TextOn RUNF \xb4\x03 END 
 SCEC SCE051_002 \xd0\x03 SCE_DONE 
@@ -30,14 +30,14 @@ TEXT1 T_ TEXT2 -
 \nそんな声を背中に聞きながら、拓司は駆けた。\p早桃の教室まで、\nあっという間だった。\
 
   
-FLG1 \x14\x04\x0c FLG1_SET \x86\x03 \x02 \xb4\x03 END   
-FLG1 \x02\x0c FLG1_SET \x98 
+INIT \x14\x04\x0c SET_VAR  \x86\x03 \x02 \xb4\x03 END   
+INIT \x02\x0c SET_VAR  \x98 
 CMD2 SeStop RUNF (\x05 END \x03 
 CHOICE
 一刻も待てない。拓司はその勢いのまま、教室に躍り込んだ。\n拓司はなたねの警告に従って、そっと中をのぞき込んだ。\n\l0,2,
 ENDCHOICE
 
   
-FLG1 D\x05\x0c FLG1_SET \x86\x03 \x02 \xb4\x03 END  \x86\x03 
+INIT D\x05\x0c SET_VAR  \x86\x03 \x02 \xb4\x03 END  \x86\x03 
 CMD3 TextClose VAR1 \n\x06 END 
 END_SCRIPT

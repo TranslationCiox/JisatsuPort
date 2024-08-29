@@ -1,9 +1,9 @@
 START_SCRIPT
 \xa1\x13\x01`B#\x01\\\x10  
-FLG1 \xc8\x0c FLG1_SET
+INIT \xc8\x0c SET_VAR 
 CMD6 .\\Data\\Script\\Bg.Fob VAR2   \x02
 CMD4 BgAutoFadeIn VAR2 J END   
-FLG1 \x08\x01\x0c FLG1_SET
+INIT \x08\x01\x0c SET_VAR 
 CMD6 .\\Data\\Script\\Bgm.Fob VAR1 \x88 
 CMD2 PlayCD RUNF \xb2 END 
 SCEC SCEK14_001 \xce SCE_DONE 
@@ -21,7 +21,7 @@ TEXT1 \xb0\xad\x01 TEXT2 \x9d
 憑き物が落ちたようないきいきとした顔が鏡の中にあったのを、\n鮮やかに覚えている。@
 サッパリしていて、自分でもちょっとすてきかな、などと思った\nくらいだった。\w\z
   
-FLG1 \x12\x01\x0c FLG1_SET
+INIT \x12\x01\x0c SET_VAR 
 CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \xa6\x03 
 CMD2 TextOn RUNF \xd4\x03 END 
 SCEC SCEK14_002 \xf0\x03 SCE_DONE 
@@ -36,7 +36,7 @@ TEXT1 \xb4\xad\x01 TEXT2 \xb4
 わくわくしていた。@
 ゆきといっしょに、どこか温泉にでも旅行に出かけるような、そ\nんな気分だった。\w\z
   
-FLG1 4\x04\x0c FLG1_SET \xa6\x03 \x02 \xd4\x03 END 
+INIT 4\x04\x0c SET_VAR  \xa6\x03 \x02 \xd4\x03 END 
 SCEC SCEK14_003 >\x07 SCE_DONE 
 TEXT1 \xb8\xad\x01 TEXT2 k
  
@@ -48,7 +48,7 @@ TEXT1 \xb8\xad\x01 TEXT2 k
 「うん」とゆきはいった。@
 「終わったよ」\w\z
   
-FLG1 \x82\x07\x0c FLG1_SET \xa6\x03 \x02 \xd4\x03 END 
+INIT \x82\x07\x0c SET_VAR  \xa6\x03 \x02 \xd4\x03 END 
 SCEC SCEK14_004 h\t SCE_DONE 
 TEXT1 \xbc\xad\x01 TEXT2 z
  
@@ -60,7 +60,7 @@ TEXT1 \xbc\xad\x01 TEXT2 z
 「かわいいね、その服」と私はいった。@
 「月代さんもかわいいよ」と、ゆきは照れくさそうにいった。\w\z
   
-FLG1 \xac\t\x0c FLG1_SET \xa6\x03 \x02 \xd4\x03 END 
+INIT \xac\t\x0c SET_VAR  \xa6\x03 \x02 \xd4\x03 END 
 SCEC SCEK14_005 \xce\x0b SCE_DONE 
 TEXT1 \xc0\xad\x01 TEXT2 p
  
@@ -70,7 +70,7 @@ TEXT1 \xc0\xad\x01 TEXT2 p
 このことは、人生のひとつの真実を表しているように思う。@
 人生はやはり、オチのない悪い冗談なのだという真実を。\w\z
   
-FLG1 \x12\x0c\x0c FLG1_SET \xa6\x03 \x02 \xd4\x03 END 
+INIT \x12\x0c\x0c SET_VAR  \xa6\x03 \x02 \xd4\x03 END 
 SCEC SCEK14_006 \x0c\x0e SCE_DONE 
 TEXT1 \xc4\xad\x01 TEXT2 j
  
@@ -78,6 +78,6 @@ TEXT1 \xc4\xad\x01 TEXT2 j
 \n私たちは、あらかじめ何軒かのドラッグストアから買い集めてお\nいた××××という薬を鞄から出して、銀紙の上に何瓶分かの錠\n剤をまとめて載せ、ライターであぶって、ドロドロに溶かした。@
 そして、その朝コンビニで買ってきたプレーンヨーグルトに混ぜ\nた。\w\z
   
-FLG1 P\x0e\x0c FLG1_SET \xa6\x03 \x02 \xd4\x03 END  \xa6\x03 
+INIT P\x0e\x0c SET_VAR  \xa6\x03 \x02 \xd4\x03 END  \xa6\x03 
 CMD3 TextClose VAR1 >\x10 END 
 END_SCRIPT

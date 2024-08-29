@@ -8,10 +8,10 @@ TEXT1 \x90_\x01 TEXT2 \x11
 \n\n\n\n\n\n\n\n\n\n　　　　　　　　　　　　　『７日目』\
 
   
-FLG1 \x90\x0c FLG1_SET
+INIT \x90\x0c SET_VAR 
 CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \xf4 
 CMD2 TextOn RUNF "\x01 END   
-FLG1 \x0c\x01\x0c FLG1_SET \x06 
+INIT \x0c\x01\x0c SET_VAR  \x06 
 CMD2 PlayCD RUNF d\x01 END 
 SCEC SCE215_002 \x80\x01 SCE_DONE 
 TEXT1 \x94_\x01 TEXT2 !
@@ -22,6 +22,6 @@ TEXT1 \x94_\x01 TEXT2 !
 言葉も少ない。\
 
   
-FLG1 \xc4\x01\x0c FLG1_SET \xf4 \x02 "\x01 END  \xf4 
+INIT \xc4\x01\x0c SET_VAR  \xf4 \x02 "\x01 END  \xf4 
 CMD3 TextClose VAR1 \x8e\x02 END 
 END_SCRIPT

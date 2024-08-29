@@ -6,7 +6,7 @@ TEXT1 0u TEXT2 \x11
 カンナ\n　「正解。\pつまり、重要なのはどこか、わかる？」\
 
   
-FLG1 J\x0c FLG1_SET
+INIT J\x0c SET_VAR 
 CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \xae 
 CMD2 TextOn RUNF \xdc END \x03 
 CHOICE
@@ -14,6 +14,6 @@ CHOICE
 ENDCHOICE
 
   
-FLG1 \xf8\x0c FLG1_SET \xae \x02 \xdc END  \xae 
+INIT \xf8\x0c SET_VAR  \xae \x02 \xdc END  \xae 
 CMD3 TextClose VAR1 \xb6\x01 END 
 END_SCRIPT

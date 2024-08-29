@@ -14,7 +14,7 @@ TEXT1 \x80W TEXT2 \x8b
 \n　御堂たちは雑談をしながら実験室の前を通り過ぎ、やがて男子\nトイレへと消えた。\
 
   
-FLG1 J\x0c FLG1_SET
+INIT J\x0c SET_VAR 
 CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \x96\x02 
 CMD2 TextOn RUNF \xc4\x02 END 
 SCEC SCE046_002 \xe0\x02 SCE_DONE 
@@ -26,6 +26,6 @@ TEXT1 \x84W TEXT2 ,
 ひとり廊下に取り残された拓司も、慌てて後を追う。@
 \z
   
-FLG1 $\x03\x0c FLG1_SET \x96\x02 \x02 \xc4\x02 END  \x96\x02 
+INIT $\x03\x0c SET_VAR  \x96\x02 \x02 \xc4\x02 END  \x96\x02 
 CMD3 TextClose VAR1 \x1a\x04 END 
 END_SCRIPT

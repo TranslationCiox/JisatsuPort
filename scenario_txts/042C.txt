@@ -11,7 +11,7 @@ TEXT1 @Q TEXT2 L
 /*▲BGM　Track06　再生*/\a2,-1,6,1,\n\n　死んじまおうかなあ。\
 
   
-FLG1 J\x0c FLG1_SET
+INIT J\x0c SET_VAR 
 CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \x9a\x01 
 CMD2 TextOn RUNF \xc8\x01 END 
 SCEC SCE042_002 \xe4\x01 SCE_DONE 
@@ -22,7 +22,7 @@ TEXT1 DQ TEXT2 \xe4
 　結局のところ、死というものは、言葉にしても意味のないもの\nあるいは言葉にすることによって意味が失われてしまうようなも\nのなのだ。\p故に人間は死を恐れる。\p理解できないからだ。\
 
   
-FLG1 (\x02\x0c FLG1_SET \x9a\x01 \x02 \xc8\x01 END 
+INIT (\x02\x0c SET_VAR  \x9a\x01 \x02 \xc8\x01 END 
 SCEC SCE042_003 \xf2\x05 SCE_DONE 
 TEXT1 HQ TEXT2 \x9b
  
@@ -40,7 +40,7 @@ TEXT1 HQ TEXT2 \x9b
 　救済の方法ではないか？\
 
   
-FLG1 6\x06\x0c FLG1_SET \x9a\x01 \x02 \xc8\x01 END 
+INIT 6\x06\x0c SET_VAR  \x9a\x01 \x02 \xc8\x01 END 
 SCEC SCE042_004 \xdc\x08 SCE_DONE 
 TEXT1 LQ TEXT2 &
  
@@ -49,12 +49,12 @@ TEXT1 LQ TEXT2 &
 　そして死ぬほどの勇気は、拓司にはない。\
 
   
-FLG1  \t\x0c FLG1_SET \x9a\x01 \x02 \xc8\x01 END 
+INIT  \t\x0c SET_VAR  \x9a\x01 \x02 \xc8\x01 END 
 CMD6 .\\Data\\Script\\Bgm.Fob VAR1 \xf2\t 
 CMD2 StopCD RUNF \x1c\n END   
-FLG1 \x0c FLG1_SET  \x04
-FLG1 \x18\x0c FLG1_SET  \x08
-FLG1 \x0c FLG1_SET \xf2\t 
+INIT \x0c SET_VAR   \x04
+INIT \x18\x0c SET_VAR   \x08
+INIT \x0c SET_VAR  \xf2\t 
 CMD3 SePlayEx VAR2 \x92\n END  < \x92 \x9a\x01 
 CMD3 TextClose VAR1 \xcc\n END 
 END_SCRIPT

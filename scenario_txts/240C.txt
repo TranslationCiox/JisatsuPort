@@ -3,12 +3,12 @@ START_SCRIPT
 SCEC SCE240_001 \x06 SCE_DONE 
 TEXT1 \xa0\x86\x01 TEXT2 \x07.\\Data\\Script\\TextFunc.Fob RUNF J \x02
 CMD4 TextWindowOff VAR1 x END   
-FLG1 \xca\x0c FLG1_SET
+INIT \xca\x0c SET_VAR 
 CMD6 .\\Data\\Script\\Bg.Fob VAR2 \xb6 
 CMD2 BgOn VAR2 \xe0 END   
-FLG1 \x02\x0c FLG1_SET  \x04
-FLG1 \x01\x0c FLG1_SET  \x08
-FLG1 \x01\x0c FLG1_SET
+INIT \x02\x0c SET_VAR   \x04
+INIT \x01\x0c SET_VAR   \x08
+INIT \x01\x0c SET_VAR 
 CMD6 .\\Data\\Script\\Bgm.Fob VAR1 J\x01 
 CMD2 SePlay RUNF t\x01 END  J \x02
 CMD4 TextWindowOn VAR2 \x9c\x01 END \x03\x17
@@ -18,7 +18,7 @@ CMD4 TextWindowOn VAR2 \x9c\x01 END \x03\x17
 誰かが腹を殴っている。\
 
   
-FLG1 \xc0\x01\x0c FLG1_SET J 
+INIT \xc0\x01\x0c SET_VAR  J 
 CMD2 TextOn RUNF H\x02 END 
 SCEC SCE240_002 d\x02 SCE_DONE 
 TEXT1 \xa4\x86\x01 TEXT2 r
@@ -36,7 +36,7 @@ TEXT1 \xa4\x86\x01 TEXT2 r
 泣き叫んでいる。\
 
   
-FLG1 \xa8\x02\x0c FLG1_SET J \x02 H\x02 END 
+INIT \xa8\x02\x0c SET_VAR  J \x02 H\x02 END 
 SCEC SCE240_003 \xaa\x04 SCE_DONE 
 TEXT1 \xa8\x86\x01 TEXT2 *
  
@@ -45,7 +45,7 @@ TEXT1 \xa8\x86\x01 TEXT2 *
 拓司\n　「こういうのはお終いだ、御堂！\p　これでお終いだ！」\
 
   
-FLG1 \xee\x04\x0c FLG1_SET J \x02 H\x02 END 
+INIT \xee\x04\x0c SET_VAR  J \x02 H\x02 END 
 SCEC SCE240_004 \xd0\x05 SCE_DONE 
 TEXT1 \xac\x86\x01 TEXT2 \x9c
  
@@ -62,7 +62,7 @@ TEXT1 \xac\x86\x01 TEXT2 \x9c
 拓司\n　「終わりだ、全部終わりだ」\
 
   
-FLG1 \x14\x06\x0c FLG1_SET J \x02 H\x02 END 
+INIT \x14\x06\x0c SET_VAR  J \x02 H\x02 END 
 SCEC SCE240_005 \xbe\x08 SCE_DONE 
 TEXT1 \xb0\x86\x01 TEXT2 b
  
@@ -76,13 +76,13 @@ TEXT1 \xb0\x86\x01 TEXT2 b
 拓司はそれを以前、月代カンナの口から聞いたことがあった。\
 
   
-FLG1 \x02\t\x0c FLG1_SET J \x02 H\x02 END 
+INIT \x02\t\x0c SET_VAR  J \x02 H\x02 END 
 SCEC SCE240_006 \xc4\n SCE_DONE 
 TEXT1 \xb4\x86\x01 TEXT2 \x0c
  
 拓司\n　「ついてくる人は、いるかい？」\
 
   
-FLG1 \x08\x0b\x0c FLG1_SET J \x02 H\x02 END  J 
+INIT \x08\x0b\x0c SET_VAR  J \x02 H\x02 END  J 
 CMD3 TextClose VAR1 ~\x0b END 
 END_SCRIPT

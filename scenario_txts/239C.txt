@@ -1,6 +1,6 @@
 START_SCRIPT
 \x9b\x19\x01`B#\x01\xde\x14  
-FLG1 \x04\x01\x0c FLG1_SET
+INIT \x04\x01\x0c SET_VAR 
 CMD6 .\\Data\\Script\\Bgm.Fob VAR1   
 CMD2 PlayCD RUNF J END 
 SCEC SCE239_001 f SCE_DONE 
@@ -14,7 +14,7 @@ TEXT1 \x10\x85\x01 TEXT2 f
 ナタネ\n　「くすくす。\p誰だって、子供っぽい空想の世界は持っているわ。\n　　\pだから特別あなたが幼稚ってわけでもないと思う」\
 
   
-FLG1 \xaa\x0c FLG1_SET
+INIT \xaa\x0c SET_VAR 
 CMD7 .\\Data\\Script\\TextFunc.Fob RUNF b\x02 
 CMD2 TextOn RUNF \x90\x02 END 
 SCEC SCE239_002 \xac\x02 SCE_DONE 
@@ -29,7 +29,7 @@ TEXT1 \x14\x85\x01 TEXT2 o
 いま、この瞬間、そう決まったのだ。\
 
   
-FLG1 \xf0\x02\x0c FLG1_SET b\x02 \x02 \x90\x02 END 
+INIT \xf0\x02\x0c SET_VAR  b\x02 \x02 \x90\x02 END 
 SCEC SCE239_003 \xe6\x04 SCE_DONE 
 TEXT1 \x18\x85\x01 TEXT2 \x81
  
@@ -40,7 +40,7 @@ TEXT1 \x18\x85\x01 TEXT2 \x81
 拓司\n　「そうか」\
 
   
-FLG1 *\x05\x0c FLG1_SET b\x02 \x02 \x90\x02 END 
+INIT *\x05\x0c SET_VAR  b\x02 \x02 \x90\x02 END 
 SCEC SCE239_004 h\x07 SCE_DONE 
 TEXT1 \x1c\x85\x01 TEXT2 \x87
  
@@ -57,7 +57,7 @@ TEXT1 \x1c\x85\x01 TEXT2 \x87
 それが現実なのだ。\
 
   
-FLG1 \xac\x07\x0c FLG1_SET b\x02 \x02 \x90\x02 END 
+INIT \xac\x07\x0c SET_VAR  b\x02 \x02 \x90\x02 END 
 SCEC SCE239_005 \x02\n SCE_DONE 
 TEXT1  \x85\x01 TEXT2 ^
  
@@ -70,7 +70,7 @@ TEXT1  \x85\x01 TEXT2 ^
 拓司\n　「その世界では、きみは－－」\
 
   
-FLG1 F\n\x0c FLG1_SET b\x02 \x02 \x90\x02 END 
+INIT F\n\x0c SET_VAR  b\x02 \x02 \x90\x02 END 
 SCEC SCE239_006 \xf8\x0b SCE_DONE 
 TEXT1 $\x85\x01 TEXT2 *
  
@@ -80,7 +80,7 @@ TEXT1 $\x85\x01 TEXT2 *
 拓司\n　「そうだな……ああ、そうだよな」\
 
   
-FLG1 <\x0c\x0c FLG1_SET b\x02 \x02 \x90\x02 END 
+INIT <\x0c\x0c SET_VAR  b\x02 \x02 \x90\x02 END 
 SCEC SCE239_007 \x1e\r SCE_DONE 
 TEXT1 (\x85\x01 TEXT2 U
  
@@ -91,7 +91,7 @@ TEXT1 (\x85\x01 TEXT2 U
 けれどもいま、その世界を創ろうとしている俺の意志は、選択不\n可能なくじびきの不幸な結果ではない。強制されたものではない。\n\pおれがが創る、おれの世界だ。\
 
   
-FLG1 b\r\x0c FLG1_SET b\x02 \x02 \x90\x02 END 
+INIT b\r\x0c SET_VAR  b\x02 \x02 \x90\x02 END 
 SCEC SCE239_008 \xf0\x0e SCE_DONE 
 TEXT1 ,\x85\x01 TEXT2 B
  
@@ -103,7 +103,7 @@ TEXT1 ,\x85\x01 TEXT2 B
 \nナタネ\n　「前に－－」\
 
   
-FLG1 4\x0f\x0c FLG1_SET b\x02 \x02 \x90\x02 END 
+INIT 4\x0f\x0c SET_VAR  b\x02 \x02 \x90\x02 END 
 SCEC SCE239_009 v\x10 SCE_DONE 
 TEXT1 0\x85\x01 TEXT2 \\
  
@@ -120,7 +120,7 @@ TEXT1 0\x85\x01 TEXT2 \\
 いまおれはゆく。\
 
   
-FLG1 \xba\x10\x0c FLG1_SET b\x02 \x02 \x90\x02 END 
+INIT \xba\x10\x0c SET_VAR  b\x02 \x02 \x90\x02 END 
 SCEC SCE239_010 d\x12 SCE_DONE 
 TEXT1 4\x85\x01 TEXT2 $
  
@@ -130,17 +130,17 @@ TEXT1 4\x85\x01 TEXT2 $
 世界が決めるのではなく、ただおれが決める。\
 
   
-FLG1 \xa8\x12\x0c FLG1_SET b\x02 \x02 \x90\x02 END 
+INIT \xa8\x12\x0c SET_VAR  b\x02 \x02 \x90\x02 END 
 SCEC SCE239_011 r\x13 SCE_DONE 
 TEXT1 8\x85\x01 TEXT2 
-FLG1
+INIT
  
 拓司\n　「おれは望む－－おれの世界を！」\
 
   
-FLG1 \xb6\x13\x0c FLG1_SET b\x02 \x02 \x90\x02 END    
+INIT \xb6\x13\x0c SET_VAR  b\x02 \x02 \x90\x02 END    
 CMD2 StopCD RUNF 0\x14 END   
-FLG1 \xc8\x0c FLG1_SET
+INIT \xc8\x0c SET_VAR 
 CMD6 .\\Data\\Script\\Bg.Fob VAR2 f\x14 \x02
 CMD4 BgAutoFadeIn VAR2 \x90\x14 END  b\x02 
 CMD3 TextClose VAR1 \xc0\x14 END 

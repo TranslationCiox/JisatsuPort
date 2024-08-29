@@ -10,7 +10,7 @@ TEXT1 \xa0T\x01 TEXT2 \x90
 ナタネ\n　「……」\
 
   
-FLG1 J\x0c FLG1_SET
+INIT J\x0c SET_VAR 
 CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \xaa\x02 
 CMD2 TextOn RUNF \xd8\x02 END  \xaa\x02 
 CMD3 TextClose VAR1 \x03 END 

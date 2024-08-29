@@ -7,7 +7,7 @@ TEXT1 P\x91 TEXT2 =
 なんという種類かはわからないが、どこかで見たことがあるよう\nな、いかにも普通の小鳥だ。@
 ただ、色だけがウソのように青く鮮やかで、屋台で売っているペ\nンキで着色されたヒヨコを思わせる。\w\z
   
-FLG1 J\x0c FLG1_SET
+INIT J\x0c SET_VAR 
 CMD7 .\\Data\\Script\\TextFunc.Fob RUNF ^\x01 
 CMD2 TextOn RUNF \x8c\x01 END 
 SCEC SCE083_002 \xa8\x01 SCE_DONE 
@@ -23,7 +23,7 @@ TEXT1 T\x91 TEXT2 s
 \nねばりつくようないいかただった。@
 見れば教授の額には、ちいさな汗が滲んでいる。\w\z
   
-FLG1 \xec\x01\x0c FLG1_SET ^\x01 \x02 \x8c\x01 END 
+INIT \xec\x01\x0c SET_VAR  ^\x01 \x02 \x8c\x01 END 
 SCEC SCE083_003 \xf2\x03 SCE_DONE 
 TEXT1 X\x91 TEXT2 g
  
@@ -35,7 +35,7 @@ TEXT1 X\x91 TEXT2 g
 しめきられた白い部屋には、拓司と教授、２人だけが向かい合っ\nて残された。@
 長い沈黙の後、教授が口を開いた。\w\z
   
-FLG1 6\x04\x0c FLG1_SET ^\x01 \x02 \x8c\x01 END 
+INIT 6\x04\x0c SET_VAR  ^\x01 \x02 \x8c\x01 END 
 SCEC SCE083_004 \x0c\x06 SCE_DONE 
 TEXT1 \\\x91 TEXT2 \x87
  
@@ -51,7 +51,7 @@ TEXT1 \\\x91 TEXT2 \x87
 \n頭の奥が、ずきんと痛んだ。@
 その痛みは急速に大きく膨れ上がり、すぐに拓司の頭のなかいっ\nぱいに広がった。\w\z
   
-FLG1 P\x06\x0c FLG1_SET ^\x01 \x02 \x8c\x01 END 
+INIT P\x06\x0c SET_VAR  ^\x01 \x02 \x8c\x01 END 
 SCEC SCE083_005 \xa6\x08 SCE_DONE 
 TEXT1 `\x91 TEXT2 c
  
@@ -64,8 +64,8 @@ TEXT1 `\x91 TEXT2 c
 　　いいかね、これは、新しい生き物なんだよ！@
 　　あらゆる生物学から外れた……神が作ったこの世界の生物な\n　　らぬ……なにかだッ！」\w\z
   
-FLG1 \xea\x08\x0c FLG1_SET ^\x01 \x02 \x8c\x01 END   
-FLG1 \xca\x0c FLG1_SET
+INIT \xea\x08\x0c SET_VAR  ^\x01 \x02 \x8c\x01 END   
+INIT \xca\x0c SET_VAR 
 CMD6 .\\Data\\Script\\Bg.Fob VAR2 \xca\n \x02
 CMD4 BgAutoFadeIn VAR2 \xf4\n END 
 SCEC SCE083_006 \x18\x0b SCE_DONE 
@@ -79,7 +79,7 @@ TEXT1 d\x91 TEXT2 T
 \n教授\n　「おまえは誰だ？！　何者なんだ？！　お前は－－」@
 \nスイッチを落としたように、目の前が真っ暗になった。\w\z
   
-FLG1 \\\x0b\x0c FLG1_SET ^\x01 \x02 \x8c\x01 END   
-FLG1 \xc8\x0c FLG1_SET \xca\n \x02 \xf4\n END  ^\x01 
+INIT \\\x0b\x0c SET_VAR  ^\x01 \x02 \x8c\x01 END   
+INIT \xc8\x0c SET_VAR  \xca\n \x02 \xf4\n END  ^\x01 
 CMD3 TextClose VAR1 &\r END 
 END_SCRIPT

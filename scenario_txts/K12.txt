@@ -12,7 +12,7 @@ TEXT1 \x90\xaa\x01 TEXT2 s
 憑き物が落ちたようないきいきとした顔が鏡の中にあったのを、\n鮮やかに覚えている。@
 サッパリしていて、自分でもちょっとすてきかな、などと思った\nくらいだった。\w\z
   
-FLG1 J\x0c FLG1_SET
+INIT J\x0c SET_VAR 
 CMD7 .\\Data\\Script\\TextFunc.Fob RUNF 6\x02 
 CMD2 TextOn RUNF d\x02 END 
 SCEC SCEK12_002 \x80\x02 SCE_DONE 
@@ -27,7 +27,7 @@ TEXT1 \x90\xaa\x01 TEXT2 \xb4
 わくわくしていた。@
 ゆきといっしょに、どこか温泉にでも旅行に出かけるような、そ\nんな気分だった。\w\z
   
-FLG1 \xc4\x02\x0c FLG1_SET 6\x02 \x02 d\x02 END 
+INIT \xc4\x02\x0c SET_VAR  6\x02 \x02 d\x02 END 
 SCEC SCEK12_003 \xce\x05 SCE_DONE 
 TEXT1 \x90\xaa\x01 TEXT2 m
  
@@ -37,6 +37,6 @@ TEXT1 \x90\xaa\x01 TEXT2 m
 \n　私たちは××××という薬を何軒かのドラッグストアで分けて\n買い集め（知ってるでしょ、××××？）、銀紙の上に何瓶ぶん\nかの錠剤を載せてコンロであぶって、ドロドロに溶かした。@
 そして、薬と一緒に買ってきたプレーンヨーグルトに混ぜた。\w\z
   
-FLG1 \x12\x06\x0c FLG1_SET 6\x02 \x02 d\x02 END  6\x02 
+INIT \x12\x06\x0c SET_VAR  6\x02 \x02 d\x02 END  6\x02 
 CMD3 TextClose VAR1 \x0c\x08 END 
 END_SCRIPT

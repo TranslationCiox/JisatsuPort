@@ -6,10 +6,10 @@ TEXT1 \xe0s\x01 TEXT2 \x11
 \n\n\n\n\n\n\n\n\n\n　　　　　　　　　　　　『１４日目』\
 
   
-FLG1 J\x0c FLG1_SET
+INIT J\x0c SET_VAR 
 CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \xae 
 CMD2 TextOn RUNF \xdc END   
-FLG1 \t\x01\x0c FLG1_SET
+INIT \t\x01\x0c SET_VAR 
 CMD6 .\\Data\\Script\\Bgm.Fob VAR1 \x12\x01 
 CMD2 PlayCD RUNF <\x01 END 
 SCEC SCE228_002 X\x01 SCE_DONE 
@@ -24,7 +24,7 @@ TEXT1 \xe4s\x01 TEXT2 O
 拓司\n　「ふざけるな」\
 
   
-FLG1 \x9c\x01\x0c FLG1_SET \xae \x02 \xdc END 
+INIT \x9c\x01\x0c SET_VAR  \xae \x02 \xdc END 
 SCEC SCE228_003 \x12\x03 SCE_DONE 
 TEXT1 \xe8s\x01 TEXT2 \x88
  
@@ -36,7 +36,7 @@ TEXT1 \xe8s\x01 TEXT2 \x88
 御堂\n　「ここでしてみせろよ。\p一回見てみたかったんだよな、そうい\n　　うのさ。\p……感謝しろよ。\pこんな機会でもなきゃ、義妹とセ\n　　ックスなんかできないぜ？」\
 
   
-FLG1 V\x03\x0c FLG1_SET \xae \x02 \xdc END 
+INIT V\x03\x0c SET_VAR  \xae \x02 \xdc END 
 SCEC SCE228_004 \xb0\x05 SCE_DONE 
 TEXT1 \xecs\x01 TEXT2 n
  
@@ -51,7 +51,7 @@ TEXT1 \xecs\x01 TEXT2 n
 \n早桃\n　「おにいちゃん……」\
 
   
-FLG1 \xf4\x05\x0c FLG1_SET \xae \x02 \xdc END 
+INIT \xf4\x05\x0c SET_VAR  \xae \x02 \xdc END 
 SCEC SCE228_005 \xe6\x07 SCE_DONE 
 TEXT1 \xf0s\x01 TEXT2 \x87
  
@@ -64,7 +64,7 @@ TEXT1 \xf0s\x01 TEXT2 \x87
 早桃\n　「お、おにいちゃんッ？！\p　大丈夫、おにいちゃん！」\
 
   
-FLG1 *\x08\x0c FLG1_SET \xae \x02 \xdc END 
+INIT *\x08\x0c SET_VAR  \xae \x02 \xdc END 
 SCEC SCE228_006 \x80\n SCE_DONE 
 TEXT1 \xf4s\x01 TEXT2 \xaa
  
@@ -76,7 +76,7 @@ TEXT1 \xf4s\x01 TEXT2 \xaa
 \n黙って様子を見ていた錦城が、あいだに割って入った。\
 
   
-FLG1 \xc4\n\x0c FLG1_SET \xae \x02 \xdc END 
+INIT \xc4\n\x0c SET_VAR  \xae \x02 \xdc END 
 SCEC SCE228_007 \xa6\r SCE_DONE 
 TEXT1 \xf8s\x01 TEXT2 \xa9
  
@@ -89,7 +89,7 @@ TEXT1 \xf8s\x01 TEXT2 \xa9
 　　もっと嫌がって頂戴。\p大切な義妹が嫌がっているにも関わら\n　　ず立つんだととしたら、それは愛で勃起してるんじゃないっ\n　　てことよねえ。\pくすくす」\
 
   
-FLG1 \xea\r\x0c FLG1_SET \xae \x02 \xdc END 
+INIT \xea\r\x0c SET_VAR  \xae \x02 \xdc END 
 SCEC SCE228_008 \xc8\x10 SCE_DONE 
 TEXT1 \xfcs\x01 TEXT2 \x95
  
@@ -100,7 +100,7 @@ TEXT1 \xfcs\x01 TEXT2 \x95
 むっちりとした白いふとももが、ブルマから生えている。\
 
   
-FLG1 \x0c\x11\x0c FLG1_SET \xae \x02 \xdc END 
+INIT \x0c\x11\x0c SET_VAR  \xae \x02 \xdc END 
 SCEC SCE228_009 \x9a\x13 SCE_DONE 
 TEXT1 t\x01 TEXT2 \xa1
  
@@ -112,7 +112,7 @@ TEXT1 t\x01 TEXT2 \xa1
 錦城\n　「あらあら、敏感ねえ。\pこうやってゆっくり撫でてると……あ\n　　ら、なんだか湿ってるみたいだけど？」\
 
   
-FLG1 \xde\x13\x0c FLG1_SET \xae \x02 \xdc END 
+INIT \xde\x13\x0c SET_VAR  \xae \x02 \xdc END 
 SCEC SCE228_010 \x9c\x16 SCE_DONE 
 TEXT1 \x04t\x01 TEXT2 \xa4
  
@@ -124,7 +124,7 @@ TEXT1 \x04t\x01 TEXT2 \xa4
 理性では押さえきれない動物的な興奮が、頭の中で膨れ上がって\n爆発寸前だった。\
 
   
-FLG1 \xe0\x16\x0c FLG1_SET \xae \x02 \xdc END 
+INIT \xe0\x16\x0c SET_VAR  \xae \x02 \xdc END 
 SCEC SCE228_011 \xaa\x19 SCE_DONE 
 TEXT1 \x08t\x01 TEXT2 \xae
  
@@ -138,7 +138,7 @@ TEXT1 \x08t\x01 TEXT2 \xae
 両者とも、うつむいて目を合わせまいとしている。\pしかし両者と\nも、互いの淫らな姿に興奮しきっている……。\
 
   
-FLG1 \xee\x19\x0c FLG1_SET \xae \x02 \xdc END 
+INIT \xee\x19\x0c SET_VAR  \xae \x02 \xdc END 
 SCEC SCE228_012 \xe0\x1c SCE_DONE 
 TEXT1 \x0ct\x01 TEXT2 \xf2
  
@@ -155,7 +155,7 @@ TEXT1 \x0ct\x01 TEXT2 \xf2
 涙を流しながら錦城は笑っていた。\
 
   
-FLG1 $\x1d\x0c FLG1_SET \xae \x02 \xdc END 
+INIT $\x1d\x0c SET_VAR  \xae \x02 \xdc END 
 SCEC SCE228_013 &! SCE_DONE 
 TEXT1 \x10t\x01 TEXT2 \x91
  
@@ -170,19 +170,19 @@ TEXT1 \x10t\x01 TEXT2 \x91
 立ちつくす拓司たちの前で、雲居なたねが高く笑った。\
 
   
-FLG1 j!\x0c FLG1_SET \xae \x02 \xdc END 
+INIT j!\x0c SET_VAR  \xae \x02 \xdc END 
 SCEC SCE228_014 \xe8# SCE_DONE 
 TEXT1 \x14t\x01 TEXT2 w
  
 なたね\n　「あはははははははは！\p　敵を拘束するときは身体検査くらい\n　　するのが常識だろうがこの民間人！\p　戦士である私が、武器\n　　のひとつくらい隠し持っていないとでも思ったかひっつき星\n　　人！\p　これがただの畳針だと思うなよ。\pこれはテスラ式処置\n　　を施して電流を流した特別製の次元毒針だ！\p　物理的ダメー\n　　ジを超えて存在自体にダメージを与えるからお前みたいな宇\n　　宙人にも効果てきめんだ！\p　思い知ったか！\p　思い知ったか\n　　あああああああ！」\
 
   
-FLG1 ,$\x0c FLG1_SET \xae \x02 \xdc END \x03\x13
+INIT ,$\x0c SET_VAR  \xae \x02 \xdc END \x03\x13
 CHOICE
 拓司は御堂に躍りかかった\n拓司は凍り付いたまま動かなかった\n\l0,2,
 ENDCHOICE
 
   
-FLG1 B&\x0c FLG1_SET \xae \x02 \xdc END  \xae 
+INIT B&\x0c SET_VAR  \xae \x02 \xdc END  \xae 
 CMD3 TextClose VAR1 \xd4& END 
 END_SCRIPT

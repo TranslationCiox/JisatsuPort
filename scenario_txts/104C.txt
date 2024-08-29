@@ -10,7 +10,7 @@ TEXT1  \xb2 TEXT2 T
 \nなたねは一瞬事態が飲み込めない様子で、説明を求めるようにあ\nたりを見回した。\pしかし、カンナも早桃も紅葉も錦城も、じっ\nと冷たい目で見返すばかり。\
 
   
-FLG1 J\x0c FLG1_SET
+INIT J\x0c SET_VAR 
 CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \xba\x01 
 CMD2 TextOn RUNF \xe8\x01 END 
 SCEC SCE104_002 \x04\x02 SCE_DONE 
@@ -25,7 +25,7 @@ TEXT1 $\xb2 TEXT2 \x7f
 なたね\n　「物資の管理者に適任なのは、私です」\
 
   
-FLG1 H\x02\x0c FLG1_SET \xba\x01 \x02 \xe8\x01 END 
+INIT H\x02\x0c SET_VAR  \xba\x01 \x02 \xe8\x01 END 
 SCEC SCE104_003 ~\x04 SCE_DONE 
 TEXT1 (\xb2 TEXT2 D
  
@@ -36,7 +36,7 @@ TEXT1 (\xb2 TEXT2 D
 \nなたねが突如叫んで、拓司を遮った。\
 
   
-FLG1 \xc2\x04\x0c FLG1_SET \xba\x01 \x02 \xe8\x01 END 
+INIT \xc2\x04\x0c SET_VAR  \xba\x01 \x02 \xe8\x01 END 
 SCEC SCE104_004 \x0c\x06 SCE_DONE 
 TEXT1 ,\xb2 TEXT2 \xb7
  
@@ -49,7 +49,7 @@ TEXT1 ,\xb2 TEXT2 \xb7
 なたね\n　「……」\
 
   
-FLG1 P\x06\x0c FLG1_SET \xba\x01 \x02 \xe8\x01 END 
+INIT P\x06\x0c SET_VAR  \xba\x01 \x02 \xe8\x01 END 
 SCEC SCE104_005 f\t SCE_DONE 
 TEXT1 0\xb2 TEXT2 [
  
@@ -62,12 +62,12 @@ TEXT1 0\xb2 TEXT2 [
 御堂\n　「……」\
 
   
-FLG1 \xaa\t\x0c FLG1_SET \xba\x01 \x02 \xe8\x01 END \x03\x0c
+INIT \xaa\t\x0c SET_VAR  \xba\x01 \x02 \xe8\x01 END \x03\x0c
 CHOICE
 御堂を止める\n黙ってみている\n\l0,2,
 ENDCHOICE
 
   
-FLG1 P\x0b\x0c FLG1_SET \xba\x01 \x02 \xe8\x01 END  \xba\x01 
+INIT P\x0b\x0c SET_VAR  \xba\x01 \x02 \xe8\x01 END  \xba\x01 
 CMD3 TextClose VAR1 \xc6\x0b END 
 END_SCRIPT

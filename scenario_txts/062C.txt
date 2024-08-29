@@ -2,9 +2,9 @@ START_SCRIPT
 /8\x01`B#\x01\x9a/
 SCEC SCE062_001 \x06 SCE_DONE 
 TEXT1 \x80p\x0c"  
-FLG1 \x0c FLG1_SET  \x04
-FLG1 \t\x0c FLG1_SET  \x08
-FLG1 \x0c FLG1_SET
+INIT \x0c SET_VAR   \x04
+INIT \t\x0c SET_VAR   \x08
+INIT \x0c SET_VAR 
 CMD6 .\\Data\\Script\\Bgm.Fob VAR1 \x98 
 CMD3 SePlayEx VAR2 \xc2 END \x03\x13
  
@@ -12,10 +12,10 @@ CMD3 SePlayEx VAR2 \xc2 END \x03\x13
 \nその声は、頭上から聞こえてきた。\
 
   
-FLG1 \xe2\x0c FLG1_SET
+INIT \xe2\x0c SET_VAR 
 CMD7 .\\Data\\Script\\TextFunc.Fob RUNF N\x01 
 CMD2 TextOn RUNF |\x01 END   
-FLG1 \x18\x0c FLG1_SET
+INIT \x18\x0c SET_VAR 
 CMD6 .\\Data\\Script\\Bg.Fob VAR2 \xb2\x01 \x02
 CMD4 BgAutoFadeIn VAR2 \xdc\x01 END 
 SCEC SCE062_002 \x02 SCE_DONE 
@@ -30,7 +30,7 @@ TEXT1 \x84p TEXT2 \xcc
 カンナはその頂上に君臨する、死の女王だった。\
 
   
-FLG1 D\x02\x0c FLG1_SET N\x01 \x02 |\x01 END 
+INIT D\x02\x0c SET_VAR  N\x01 \x02 |\x01 END 
 SCEC SCE062_003 \xae\x05 SCE_DONE 
 TEXT1 \x88p TEXT2 ]
  
@@ -43,8 +43,8 @@ TEXT1 \x88p TEXT2 ]
 拓司\n　「……」\
 
   
-FLG1 \xf2\x05\x0c FLG1_SET N\x01 \x02 |\x01 END   
-FLG1 \x0b\x01\x0c FLG1_SET \x98 
+INIT \xf2\x05\x0c SET_VAR  N\x01 \x02 |\x01 END   
+INIT \x0b\x01\x0c SET_VAR  \x98 
 CMD2 PlayCD RUNF \xc6\x07 END 
 SCEC SCE062_004 \xe2\x07 SCE_DONE 
 TEXT1 \x8cp TEXT2 \xb7
@@ -57,7 +57,7 @@ TEXT1 \x8cp TEXT2 \xb7
 \n隣に立つなたねが小さくいった。\
 
   
-FLG1 &\x08\x0c FLG1_SET N\x01 \x02 |\x01 END  \x98 
+INIT &\x08\x0c SET_VAR  N\x01 \x02 |\x01 END  \x98 
 CMD2 StopCD RUNF H\x0b END 
 SCEC SCE062_005 d\x0b SCE_DONE 
 TEXT1 \x90p TEXT2 \xb0
@@ -71,7 +71,7 @@ TEXT1 \x90p TEXT2 \xb0
 カンナ\n　「……あなたも？」\
 
   
-FLG1 \xa8\x0b\x0c FLG1_SET N\x01 \x02 |\x01 END 
+INIT \xa8\x0b\x0c SET_VAR  N\x01 \x02 |\x01 END 
 SCEC SCE062_006 \xa2\x0e SCE_DONE 
 TEXT1 \x94p TEXT2 \x7f
  
@@ -84,7 +84,7 @@ TEXT1 \x94p TEXT2 \x7f
 呆気にとられる拓司を無視するようにカンナはしばらく笑い続け\nた。\p腹を抱えて、しまいには息をするのも苦しいらしく、ヒイヒ\nイと笑い続けた。\
 
   
-FLG1 \xe6\x0e\x0c FLG1_SET N\x01 \x02 |\x01 END 
+INIT \xe6\x0e\x0c SET_VAR  N\x01 \x02 |\x01 END 
 SCEC SCE062_007 \x1c\x11 SCE_DONE 
 TEXT1 \x98p TEXT2 S
  
@@ -95,7 +95,7 @@ TEXT1 \x98p TEXT2 S
 \nカンナは拓司を鋭く指さして、一気呵成にまくしたてた。\
 
   
-FLG1 `\x11\x0c FLG1_SET N\x01 \x02 |\x01 END 
+INIT `\x11\x0c SET_VAR  N\x01 \x02 |\x01 END 
 SCEC SCE062_008 \xe6\x12 SCE_DONE 
 TEXT1 \x9cp TEXT2 \xfb
  
@@ -106,7 +106,7 @@ TEXT1 \x9cp TEXT2 \xfb
 　　今の私じゃない。\pなんでもなかった頃の私で…………………\n　　………………………………………………………………………\n　　…………………………………………思い上がるなッ！」\
 
   
-FLG1 *\x13\x0c FLG1_SET N\x01 \x02 |\x01 END 
+INIT *\x13\x0c SET_VAR  N\x01 \x02 |\x01 END 
 SCEC SCE062_009 P\x17 SCE_DONE 
 TEXT1 \xa0p TEXT2 h
  
@@ -116,7 +116,7 @@ TEXT1 \xa0p TEXT2 h
 \nカンナ\n　「この中に、×××××が入ってるわ」\
 
   
-FLG1 \x94\x17\x0c FLG1_SET N\x01 \x02 |\x01 END 
+INIT \x94\x17\x0c SET_VAR  N\x01 \x02 |\x01 END 
 SCEC SCE062_010 n\x19 SCE_DONE 
 TEXT1 \xa4p TEXT2 q
  
@@ -124,7 +124,7 @@ TEXT1 \xa4p TEXT2 q
 睡眠薬として使われる規制医薬品で、２グラムのんだだけで確実\nに心臓が止まるといわれる劇薬中の劇薬だ。\pもちろん、薬屋で買\nうことはできないし、それどころか国内では取り扱われていない。\n\pしかし－－カンナならばそれを手に入れることぐらい、造作のな\nいことのように思えた。\p拓司は、五号棟でカンナが××××を飲\nんでいるのを見たことがあったし、勧められて×××××を吸っ\nたこともある。\
 
   
-FLG1 \xb2\x19\x0c FLG1_SET N\x01 \x02 |\x01 END 
+INIT \xb2\x19\x0c SET_VAR  N\x01 \x02 |\x01 END 
 SCEC SCE062_011 \xb0\x1b SCE_DONE 
 TEXT1 \xa8p TEXT2 z
  
@@ -137,7 +137,7 @@ TEXT1 \xa8p TEXT2 z
 拓司\n　「……」\
 
   
-FLG1 \xf4\x1b\x0c FLG1_SET N\x01 \x02 |\x01 END 
+INIT \xf4\x1b\x0c SET_VAR  N\x01 \x02 |\x01 END 
 SCEC SCE062_012 \x16\x1e SCE_DONE 
 TEXT1 \xacp TEXT2 \xb5
  
@@ -150,7 +150,7 @@ TEXT1 \xacp TEXT2 \xb5
 　　死と交わるって文字通りこんな感じ……？\p　ふふ……」\
 
   
-FLG1 Z\x1e\x0c FLG1_SET N\x01 \x02 |\x01 END 
+INIT Z\x1e\x0c SET_VAR  N\x01 \x02 |\x01 END 
 SCEC SCE062_013 h! SCE_DONE 
 TEXT1 \xb0p TEXT2 w
  
@@ -162,7 +162,7 @@ TEXT1 \xb0p TEXT2 w
 \nなたね\n　「……話を続けて」\
 
   
-FLG1 \xac!\x0c FLG1_SET N\x01 \x02 |\x01 END 
+INIT \xac!\x0c SET_VAR  N\x01 \x02 |\x01 END 
 SCEC SCE062_014 \xc2# SCE_DONE 
 TEXT1 \xb4p TEXT2 \x80
  
@@ -176,7 +176,7 @@ TEXT1 \xb4p TEXT2 \x80
 カンナ\n　「－－もちろん」\
 
   
-FLG1 \x06$\x0c FLG1_SET N\x01 \x02 |\x01 END 
+INIT \x06$\x0c SET_VAR  N\x01 \x02 |\x01 END 
 SCEC SCE062_015 @& SCE_DONE 
 TEXT1 \xb8p TEXT2 f
  
@@ -190,7 +190,7 @@ TEXT1 \xb8p TEXT2 f
 拓司\n　「……？」\
 
   
-FLG1 \x84&\x0c FLG1_SET N\x01 \x02 |\x01 END 
+INIT \x84&\x0c SET_VAR  N\x01 \x02 |\x01 END 
 SCEC SCE062_016 V( SCE_DONE 
 TEXT1 \xbcp TEXT2 \xab
  
@@ -201,7 +201,7 @@ TEXT1 \xbcp TEXT2 \xab
 \n拓司\n　「わかった」\
 
   
-FLG1 \x9a(\x0c FLG1_SET N\x01 \x02 |\x01 END 
+INIT \x9a(\x0c SET_VAR  N\x01 \x02 |\x01 END 
 SCEC SCE062_017 \x80+ SCE_DONE 
 TEXT1 \xc0p TEXT2 \xb6
  
@@ -211,12 +211,12 @@ TEXT1 \xc0p TEXT2 \xb6
 　　ここに、さっきの実験を施したイヌと、普通のイヌを入れた\n　　ら、どんなことが起きるでしょう？」\
 
   
-FLG1 \xc4+\x0c FLG1_SET N\x01 \x02 |\x01 END \x03\x18
+INIT \xc4+\x0c SET_VAR  N\x01 \x02 |\x01 END \x03\x18
 CHOICE
 電気ショックを受けたイヌが回避手段を見つける\n普通のイヌが回避手段を見つける\n\l0,2,
 ENDCHOICE
 
   
-FLG1 \xd6.\x0c FLG1_SET N\x01 \x02 |\x01 END  N\x01 
+INIT \xd6.\x0c SET_VAR  N\x01 \x02 |\x01 END  N\x01 
 CMD3 TextClose VAR1 |/ END 
 END_SCRIPT

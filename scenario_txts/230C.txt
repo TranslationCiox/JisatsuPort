@@ -10,7 +10,7 @@ TEXT1 w\x01 TEXT2 U
 動こうとしたカンナを「動くなッ！」と一喝して、御堂はいった。\n\
 
   
-FLG1 J\x0c FLG1_SET
+INIT J\x0c SET_VAR 
 CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \xbe\x01 
 CMD2 TextOn RUNF \xec\x01 END  \xbe\x01 
 CMD3 TextClose VAR1 \x14\x02 END 

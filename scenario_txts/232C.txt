@@ -1,6 +1,6 @@
 START_SCRIPT
 \x0c\r\x01`B#\x01\xf0\n  
-FLG1 \x04\x01\x0c FLG1_SET
+INIT \x04\x01\x0c SET_VAR 
 CMD6 .\\Data\\Script\\Bgm.Fob VAR1   
 CMD2 PlayCD RUNF J END 
 SCEC SCE232_001 f SCE_DONE 
@@ -9,7 +9,7 @@ TEXT1  z\x01 TEXT2 \x13
 \n\n\n\n\n\n\n\n\n\n　　　　　　　『おんなのこと、うちゅうじん』\
 
   
-FLG1 \xaa\x0c FLG1_SET
+INIT \xaa\x0c SET_VAR 
 CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \x16\x01 
 CMD2 TextOn RUNF D\x01 END 
 SCEC SCE232_002 `\x01 SCE_DONE 
@@ -23,7 +23,7 @@ TEXT1 $z\x01 TEXT2 \xdf
 　お義父さんはなたねのことを大切に、大切に育ててくれました。\n\p　一度、なたねがひどい風邪を引いたときには、大切なお仕事を\n放り出して看病についてくれました（お義父さんはそのせいで、\n病院をクビになってしまったので、新しい仕事先を探さなければ\nならなくなりました）。\pしかもお義父さんは、勉強をしなさい、\nＴＶは見てはいけません、と、厳しいこともなにひとついいませ\nんでした。\
 
   
-FLG1 \xa4\x01\x0c FLG1_SET \x16\x01 \x02 D\x01 END 
+INIT \xa4\x01\x0c SET_VAR  \x16\x01 \x02 D\x01 END 
 SCEC SCE232_003 Z\x05 SCE_DONE 
 TEXT1 (z\x01 TEXT2 \x9e
  
@@ -34,11 +34,11 @@ TEXT1 (z\x01 TEXT2 \x9e
 　ときどき「もういやだなあ」と思うこともあって、そんなとき\nお義父さんは「なたね、あまり勉強ばかりしていると、体に毒だ\nよ」と優しく声をかけてくれました。\pなたねは、そんなお義父さ\nんの声を聞くと、逆に「よし、もっとがんばろう！」と思えたの\nでした。\
 
   
-FLG1 \x9e\x05\x0c FLG1_SET \x16\x01 \x02 D\x01 END  \x16\x01 
+INIT \x9e\x05\x0c SET_VAR  \x16\x01 \x02 D\x01 END  \x16\x01 
 CMD3 TextClose VAR1 \\\x08 END 
 HERO .\\Data\\Script\\Scenario\\232SubC.Fob RUNF |\x08 
 CMD2 start VAR1 \xb2\x08 END   
-FLG1 \xc8\x0c FLG1_SET
+INIT \xc8\x0c SET_VAR 
 CMD6 .\\Data\\Script\\Bg.Fob VAR2 \xe8\x08 \x02
 CMD4 BgAutoFadeIn VAR2 \x12\t END 
 SCEC SCE232_013 6\t SCE_DONE 
@@ -53,6 +53,6 @@ TEXT1 Pz\x01 TEXT2 ?
 　ここからはなれてゆきたいのです\
 
   
-FLG1 z\t\x0c FLG1_SET \x16\x01 \x02 D\x01 END    
+INIT z\t\x0c SET_VAR  \x16\x01 \x02 D\x01 END    
 CMD2 StopCD RUNF \xbc\n END  \x16\x01 \x02 \\\x08 END 
 END_SCRIPT

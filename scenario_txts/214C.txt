@@ -2,9 +2,9 @@ START_SCRIPT
 \x02\x05\x01\xa4\t3\x01\xea\x03
 SCEC SCE214_001 \x06 SCE_DONE 
 TEXT1 ^\x01\x0c"  
-FLG1 \x02\x0c FLG1_SET  \x04
-FLG1 \x01\x0c FLG1_SET  \x08
-FLG1 \x01\x0c FLG1_SET
+INIT \x02\x0c SET_VAR   \x04
+INIT \x01\x0c SET_VAR   \x08
+INIT \x01\x0c SET_VAR 
 CMD6 .\\Data\\Script\\Bgm.Fob VAR1 \x98 
 CMD2 SePlay RUNF \xc2 END \x03C
  
@@ -17,7 +17,7 @@ CMD2 SePlay RUNF \xc2 END \x03C
 ここは……『学校に籠城する世界』。\
 
   
-FLG1 \xde\x0c FLG1_SET
+INIT \xde\x0c SET_VAR 
 CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \n\x02 
 CMD2 TextOn RUNF 8\x02 END 
 SCEC SCE214_002 T\x02 SCE_DONE 
@@ -30,8 +30,8 @@ TEXT1 \x04^\x01 TEXT2 +
 それしかないのだ。\
 
   
-FLG1 \x98\x02\x0c FLG1_SET \n\x02 \x02 8\x02 END   
-FLG1 \x02\x0c FLG1_SET \x98 
+INIT \x98\x02\x0c SET_VAR  \n\x02 \x02 8\x02 END   
+INIT \x02\x0c SET_VAR  \x98 
 CMD2 SeStop RUNF \xa4\x03 END  \n\x02 
 CMD3 TextClose VAR1 \xcc\x03 END 
 END_SCRIPT

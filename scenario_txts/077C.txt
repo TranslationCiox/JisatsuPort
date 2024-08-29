@@ -15,10 +15,10 @@ TEXT1 \xf0\x87 TEXT2 ~
 拓司\n　「俺が行く。\pだから雲居さんは２人をシェルターに連れてい\n　　ってやってくれ」\
 
   
-FLG1 \x90\x0c FLG1_SET
+INIT \x90\x0c SET_VAR 
 CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \xa8\x02 
 CMD2 TextOn RUNF \xd6\x02 END   
-FLG1 \x08\x01\x0c FLG1_SET \x06 
+INIT \x08\x01\x0c SET_VAR  \x06 
 CMD2 PlayCD RUNF \x18\x03 END 
 SCEC SCE077_002 4\x03 SCE_DONE 
 TEXT1 \xf4\x87 TEXT2 X
@@ -33,7 +33,7 @@ TEXT1 \xf4\x87 TEXT2 X
 拓司\n　「紅葉を助けるために、お前たちを危険にさらすわけにはいか\n　　ない」\
 
   
-FLG1 x\x03\x0c FLG1_SET \xa8\x02 \x02 \xd6\x02 END 
+INIT x\x03\x0c SET_VAR  \xa8\x02 \x02 \xd6\x02 END 
 SCEC SCE077_003 \x12\x05 SCE_DONE 
 TEXT1 \xf8\x87 TEXT2 O
  
@@ -45,7 +45,7 @@ TEXT1 \xf8\x87 TEXT2 O
 \n　ぶるぶると震える早桃の肩を、拓司は優しくかき抱いた。\pそれ\n　から肩に担いだカンナを２人に任せ、なたねに尋ねた。\
 
   
-FLG1 V\x05\x0c FLG1_SET \xa8\x02 \x02 \xd6\x02 END 
+INIT V\x05\x0c SET_VAR  \xa8\x02 \x02 \xd6\x02 END 
 SCEC SCE077_004 \xcc\x06 SCE_DONE 
 TEXT1 \xfc\x87 TEXT2 d
  
@@ -59,7 +59,7 @@ TEXT1 \xfc\x87 TEXT2 d
 なたね\n　「ここで虎菱くんを失うのは、地球の戦士たちにとって大きな\n　　痛手。\p哀しいことだわ」\
 
   
-FLG1 \x10\x07\x0c FLG1_SET \xa8\x02 \x02 \xd6\x02 END 
+INIT \x10\x07\x0c SET_VAR  \xa8\x02 \x02 \xd6\x02 END 
 SCEC SCE077_005 \xda\x08 SCE_DONE 
 TEXT1 \x88 TEXT2 E
  
@@ -71,11 +71,11 @@ TEXT1 \x88 TEXT2 E
 　振り返り振り返り、早桃たち３人の姿が廊下の向こうに消えさ\n　ったのを見送り、拓司はよし、とつぶやいた。\
 
   
-FLG1 \x1e\t\x0c FLG1_SET \xa8\x02 \x02 \xd6\x02 END  \x06 \x02 0 END   
-FLG1 <\x0c FLG1_SET
+INIT \x1e\t\x0c SET_VAR  \xa8\x02 \x02 \xd6\x02 END  \x06 \x02 0 END   
+INIT <\x0c SET_VAR 
 CMD7 .\\Data\\Script\\TextFunc.fob RUNF \xa0\n 
 CMD3 WaitTime VAR2 \xce\n END   
-FLG1 \t\x01\x0c FLG1_SET \x06 \x02 \x18\x03 END 
+INIT \t\x01\x0c SET_VAR  \x06 \x02 \x18\x03 END 
 SCEC SCE077_006 "\x0b SCE_DONE 
 TEXT1 \x04\x88 TEXT2 B
  
@@ -85,13 +85,13 @@ TEXT1 \x04\x88 TEXT2 B
 　波動というのがなんなのかがわからない以上、一気に走り抜け\n　るべきなのか、あるいは静かに前進すべきなのか、それすら判\n　断のしようがない。\
 
   
-FLG1 f\x0b\x0c FLG1_SET \xa8\x02 \x02 \xd6\x02 END \x03
-FLG1
+INIT f\x0b\x0c SET_VAR  \xa8\x02 \x02 \xd6\x02 END \x03
+INIT
 CHOICE
 一気に走り抜ける\n慎重に歩いてゆく\n\l0,2,
 ENDCHOICE
 
   
-FLG1 \xa8\x0c\x0c FLG1_SET \xa8\x02 \x02 \xd6\x02 END  \xa8\x02 
+INIT \xa8\x0c\x0c SET_VAR  \xa8\x02 \x02 \xd6\x02 END  \xa8\x02 
 CMD3 TextClose VAR1 "\r END 
 END_SCRIPT

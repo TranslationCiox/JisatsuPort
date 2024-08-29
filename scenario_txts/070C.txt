@@ -11,7 +11,7 @@ TEXT1 } TEXT2 [
 　　ハドウなんて、ない。\pそんなの全部、この人の空想なんだか\n　　ら！」\
 
   
-FLG1 J\x0c FLG1_SET
+INIT J\x0c SET_VAR 
 CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \xd6\x01 
 CMD2 TextOn RUNF \x04\x02 END \x03\x17
 CHOICE
@@ -19,6 +19,6 @@ CHOICE
 ENDCHOICE
 
   
-FLG1  \x02\x0c FLG1_SET \xd6\x01 \x02 \x04\x02 END  \xd6\x01 
+INIT  \x02\x0c SET_VAR  \xd6\x01 \x02 \x04\x02 END  \xd6\x01 
 CMD3 TextClose VAR1 \xc2\x02 END 
 END_SCRIPT

@@ -6,7 +6,7 @@ TEXT1 \x80> TEXT2 \x0f
 \n\n\n\n\n\n\n\n　　　　　　　　　　　　　『屋上』\
 
   
-FLG1 J\x0c FLG1_SET
+INIT J\x0c SET_VAR 
 CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \xa6 
 CMD2 TextOn RUNF \xd4 END 
 SCEC SCE030_002 \xf0 SCE_DONE 
@@ -19,12 +19,12 @@ TEXT1 \x84> TEXT2 .
 　無論ライフルなどがここにあろうはずもなく、それは月代カンナ\n　の唇から漏れる、偽物の銃声にすぎない。\
 
   
-FLG1 4\x01\x0c FLG1_SET \xa6 \x02 \xd4 END  \xa6 \x02
+INIT 4\x01\x0c SET_VAR  \xa6 \x02 \xd4 END  \xa6 \x02
 CMD4 TextWindowOff VAR1 2\x02 END   
-FLG1 \x08\x01\x0c FLG1_SET
+INIT \x08\x01\x0c SET_VAR 
 CMD6 .\\Data\\Script\\Bgm.Fob VAR1 p\x02 
 CMD2 PlayCD RUNF \x9a\x02 END   
-FLG1 \x08\x0c FLG1_SET
+INIT \x08\x0c SET_VAR 
 CMD6 .\\Data\\Script\\Bg.Fob VAR2 \xd0\x02 \x02
 CMD4 BgNormalFadeIn RUNF \xfa\x02 END  \xa6 \x02
 CMD4 TextWindowOn VAR2 *\x03 END 
@@ -39,7 +39,7 @@ TEXT1 \x88> TEXT2 Q
 \n　ぱーん。\
 
   
-FLG1 \x92\x03\x0c FLG1_SET \xa6 \x02 \xd4 END 
+INIT \x92\x03\x0c SET_VAR  \xa6 \x02 \xd4 END 
 SCEC SCE030_004 \x10\x05 SCE_DONE 
 TEXT1 \x8c> TEXT2 w
  
@@ -51,7 +51,7 @@ TEXT1 \x8c> TEXT2 w
 \n　ぱーん。\
 
   
-FLG1 T\x05\x0c FLG1_SET \xa6 \x02 \xd4 END 
+INIT T\x05\x0c SET_VAR  \xa6 \x02 \xd4 END 
 SCEC SCE030_005 j\x07 SCE_DONE 
 TEXT1 \x90> TEXT2 I
  
@@ -63,8 +63,8 @@ TEXT1 \x90> TEXT2 I
 カンナ\n　「ぱーん。\p……あなた、死んだわよ」\
 
   
-FLG1 \xae\x07\x0c FLG1_SET \xa6 \x02 \xd4 END   
-FLG1 \xc8\x0c FLG1_SET \xd0\x02 \x02
+INIT \xae\x07\x0c SET_VAR  \xa6 \x02 \xd4 END   
+INIT \xc8\x0c SET_VAR  \xd0\x02 \x02
 CMD4 BgAutoFadeIn VAR2 2\t END 
 SCEC SCE030_006 V\t SCE_DONE 
 TEXT1 \x94> TEXT2 \x7f
@@ -79,7 +79,7 @@ TEXT1 \x94> TEXT2 \x7f
 　差し出された首は透き通るように青白く、夏の日差しに覆われた\n　この屋上において、それは場違いな氷細工のように見えた。\
 
   
-FLG1 \x9a\t\x0c FLG1_SET \xa6 \x02 \xd4 END 
+INIT \x9a\t\x0c SET_VAR  \xa6 \x02 \xd4 END 
 SCEC SCE030_007 \xd0\x0b SCE_DONE 
 TEXT1 \x98> TEXT2 :
  
@@ -93,7 +93,7 @@ TEXT1 \x98> TEXT2 :
 　包み込むように、絞める。\
 
   
-FLG1 \x14\x0c\x0c FLG1_SET \xa6 \x02 \xd4 END 
+INIT \x14\x0c\x0c SET_VAR  \xa6 \x02 \xd4 END 
 SCEC SCE030_008 6\r SCE_DONE 
 TEXT1 \x9c> TEXT2 \x81
  
@@ -113,8 +113,8 @@ TEXT1 \x9c> TEXT2 \x81
 　解放。\
 
   
-FLG1 z\r\x0c FLG1_SET \xa6 \x02 \xd4 END   
-FLG1 \t\x0c FLG1_SET \xd0\x02 \x02 2\t END 
+INIT z\r\x0c SET_VAR  \xa6 \x02 \xd4 END   
+INIT \t\x0c SET_VAR  \xd0\x02 \x02 2\t END 
 SCEC SCE030_009 \xec\x0f SCE_DONE 
 TEXT1 \xa0> TEXT2 \xa3
  
@@ -126,7 +126,7 @@ TEXT1 \xa0> TEXT2 \xa3
 カンナ\n　「はは……あははは……ハハハハハハハハ」\
 
   
-FLG1 0\x10\x0c FLG1_SET \xa6 \x02 \xd4 END 
+INIT 0\x10\x0c SET_VAR  \xa6 \x02 \xd4 END 
 SCEC SCE030_010 \xf6\x12 SCE_DONE 
 TEXT1 \xa4> TEXT2 r
  
@@ -137,20 +137,20 @@ TEXT1 \xa4> TEXT2 r
 /*■CG73　表示（ノンエフェクト） *//*■CG09　表示（ノンエフェクト） */\a7,1,1,0,\a1,1,202,9,\a6,0,0,0,ハ。\
 
   
-FLG1 :\x13\x0c FLG1_SET \xa6 \x02 \xd4 END  \xa6 \x02 2\x02 END   
-FLG1 \xca\x0c FLG1_SET \xd0\x02 
+INIT :\x13\x0c SET_VAR  \xa6 \x02 \xd4 END  \xa6 \x02 2\x02 END   
+INIT \xca\x0c SET_VAR  \xd0\x02 
 CMD2 BgOn VAR2 |\x15 END   
-FLG1 \x01\x0c FLG1_SET
+INIT \x01\x0c SET_VAR 
 CMD7 .\\Data\\Script\\TextFunc.fob RUNF \xb2\x15 
 CMD3 WaitTime VAR2 \xe0\x15 END   
-FLG1 \t\x0c FLG1_SET \xd0\x02 \x02 |\x15 END   
-FLG1 \x01\x0c FLG1_SET \xb2\x15 \x02 \xe0\x15 END   
-FLG1 \xca\x0c FLG1_SET \xd0\x02 \x02 |\x15 END   
-FLG1 \x01\x0c FLG1_SET \xb2\x15 \x02 \xe0\x15 END   
-FLG1 \t\x0c FLG1_SET \xd0\x02 \x02 |\x15 END   
-FLG1 \x01\x0c FLG1_SET \xb2\x15 \x02 \xe0\x15 END   
-FLG1 <\x0c FLG1_SET \xb2\x15 \x02 \xe0\x15 END   
-FLG1 \xc8\x0c FLG1_SET \xd0\x02 \x02 \xfa\x02 END  p\x02 
+INIT \t\x0c SET_VAR  \xd0\x02 \x02 |\x15 END   
+INIT \x01\x0c SET_VAR  \xb2\x15 \x02 \xe0\x15 END   
+INIT \xca\x0c SET_VAR  \xd0\x02 \x02 |\x15 END   
+INIT \x01\x0c SET_VAR  \xb2\x15 \x02 \xe0\x15 END   
+INIT \t\x0c SET_VAR  \xd0\x02 \x02 |\x15 END   
+INIT \x01\x0c SET_VAR  \xb2\x15 \x02 \xe0\x15 END   
+INIT <\x0c SET_VAR  \xb2\x15 \x02 \xe0\x15 END   
+INIT \xc8\x0c SET_VAR  \xd0\x02 \x02 \xfa\x02 END  p\x02 
 CMD2 StopCD RUNF \xac\x17 END  \xa6 \x02
 CMD5 TextWindowOnDirect RUNF \xd4\x17 END  \xa6 
 CMD3 TextClose VAR1 \x08\x18 END 

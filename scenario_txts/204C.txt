@@ -10,7 +10,7 @@ TEXT1 `N\x01 TEXT2 \xcb
 \n拓司\n　「君の言うことが信じられないような真実なのか……途方もな\n　　いウソなのか……それはまず置いておこう。\pそれを決める前\n　　に、いくつか質問をさせてくれ」\
 
   
-FLG1 J\x0c FLG1_SET
+INIT J\x0c SET_VAR 
 CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \x96\x03 
 CMD2 TextOn RUNF \xc4\x03 END  \x96\x03 
 CMD3 TextClose VAR1 \xec\x03 END 

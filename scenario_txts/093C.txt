@@ -1,6 +1,6 @@
 START_SCRIPT
 \x1a\x10\x01`B#\x01\xaa\r  
-FLG1 \t\x01\x0c FLG1_SET
+INIT \t\x01\x0c SET_VAR 
 CMD6 .\\Data\\Script\\Bgm.Fob VAR1   
 CMD2 PlayCD RUNF J END 
 SCEC SCE093_001 f SCE_DONE 
@@ -13,7 +13,7 @@ TEXT1 \xf0\xa0 TEXT2 N
 拓司\n　「それは……」@
 \n拓司は絶句した。\w\z
   
-FLG1 \xaa\x0c FLG1_SET
+INIT \xaa\x0c SET_VAR 
 CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \x02\x02 
 CMD2 TextOn RUNF 0\x02 END 
 SCEC SCE093_002 L\x02 SCE_DONE 
@@ -27,7 +27,7 @@ TEXT1 \xf4\xa0 TEXT2 \x82
 \nなたねは薄笑いを浮かべながらいった。@
 カンナがそれに反応した。\w\z
   
-FLG1 \x90\x02\x0c FLG1_SET \x02\x02 \x02 0\x02 END 
+INIT \x90\x02\x0c SET_VAR  \x02\x02 \x02 0\x02 END 
 SCEC SCE093_003 \xd2\x04 SCE_DONE 
 TEXT1 \xf8\xa0 TEXT2 \x9d
  
@@ -40,7 +40,7 @@ TEXT1 \xf8\xa0 TEXT2 \x9d
 カンナ\n　「さっきのいい方は、そうとられてもおかしくないでしょう！」\n\p拓司\n　「待て！　言い争いはやめよう！」@
 \n拓司が間に入ることで、カンナとなたねは引き離されたが、あと\nには気まずい空気が残っている。\w\z
   
-FLG1 \x16\x05\x0c FLG1_SET \x02\x02 \x02 0\x02 END 
+INIT \x16\x05\x0c SET_VAR  \x02\x02 \x02 0\x02 END 
 SCEC SCE093_004 \xc4\x07 SCE_DONE 
 TEXT1 \xfc\xa0 TEXT2 \xae
  
@@ -57,7 +57,7 @@ TEXT1 \xfc\xa0 TEXT2 \xae
 　　　みなさんは私を信じるしかないんですよ。@
 　　いつもいつも散々ウソつき呼ばわりしてきたバカタレどもが\n　　私を信じるしか！　くすくすくすくす」\w\z
   
-FLG1 \x08\x08\x0c FLG1_SET \x02\x02 \x02 0\x02 END 
+INIT \x08\x08\x0c SET_VAR  \x02\x02 \x02 0\x02 END 
 SCEC SCE093_005 \xfa\n SCE_DONE 
 TEXT1 \xa1 TEXT2 ^
  
@@ -70,8 +70,8 @@ TEXT1 \xa1 TEXT2 ^
 なたね\n　「……惜しい！　いま、ちょっとだけ母船からきてたのに！@
 　　あなたたちが余計なことをいうから聞き逃してしまったでし\n　　ょうが！\p　ああ、惜しい！\p　惜しかったなあ！」\w\z
   
-FLG1 >\x0b\x0c FLG1_SET \x02\x02 \x02 0\x02 END   
-FLG1 \xc8\x0c FLG1_SET
+INIT >\x0b\x0c SET_VAR  \x02\x02 \x02 0\x02 END   
+INIT \xc8\x0c SET_VAR 
 CMD6 .\\Data\\Script\\Bg.Fob VAR2 \n\r \x02
 CMD4 BgAutoFadeIn VAR2 4\r END    
 CMD2 StopCD RUNF d\r END  \x02\x02 

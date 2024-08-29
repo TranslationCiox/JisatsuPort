@@ -1,6 +1,6 @@
 START_SCRIPT
 \x97\r\x01`B#\x01:\x0b  
-FLG1 \t\x01\x0c FLG1_SET
+INIT \t\x01\x0c SET_VAR 
 CMD6 .\\Data\\Script\\Bgm.Fob VAR1   
 CMD2 PlayCD RUNF J END 
 SCEC SCE034_001 f SCE_DONE 
@@ -20,7 +20,7 @@ TEXT1 \xc0D TEXT2 \xb1
 \n　賑やかで温かい教室の空気から、早桃の姿だけが浮き上がって\n見えた。\
 
   
-FLG1 \xaa\x0c FLG1_SET
+INIT \xaa\x0c SET_VAR 
 CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \x8e\x03 
 CMD2 TextOn RUNF \xbc\x03 END 
 SCEC SCE034_002 \xd8\x03 SCE_DONE 
@@ -38,7 +38,7 @@ TEXT1 \xc4D TEXT2 y
 拓司\n　「いや。\pたまには一緒に飯でも食おうかと思ってさ」\
 
   
-FLG1 \x1c\x04\x0c FLG1_SET \x8e\x03 \x02 \xbc\x03 END 
+INIT \x1c\x04\x0c SET_VAR  \x8e\x03 \x02 \xbc\x03 END 
 SCEC SCE034_003 :\x06 SCE_DONE 
 TEXT1 \xc8D TEXT2 \\
  
@@ -51,7 +51,7 @@ TEXT1 \xc8D TEXT2 \\
 \n　そんな声が、時折やや大きめに漏れ聞こえる。\n　早桃は必死にそれに気づかない振りをしているが、声が聞こえ\nるたび、目の中に怯えと恥じらいの影がゆらぐ。\
 
   
-FLG1 ~\x06\x0c FLG1_SET \x8e\x03 \x02 \xbc\x03 END 
+INIT ~\x06\x0c SET_VAR  \x8e\x03 \x02 \xbc\x03 END 
 SCEC SCE034_004 (\x08 SCE_DONE 
 TEXT1 \xccD TEXT2 T
  
@@ -64,7 +64,7 @@ TEXT1 \xccD TEXT2 T
 早桃\n　「わけてあげよっか？」\
 
   
-FLG1 l\x08\x0c FLG1_SET \x8e\x03 \x02 \xbc\x03 END 
+INIT l\x08\x0c SET_VAR  \x8e\x03 \x02 \xbc\x03 END 
 SCEC SCE034_005 \xf6\t SCE_DONE 
 TEXT1 \xd0D TEXT2 '
  
@@ -73,6 +73,6 @@ TEXT1 \xd0D TEXT2 '
 \n　そういって早桃は、ひとかじりしただけのコッペパンを軽く振\nってみせた。\
 
   
-FLG1 :\n\x0c FLG1_SET \x8e\x03 \x02 \xbc\x03 END  \x8e\x03 
+INIT :\n\x0c SET_VAR  \x8e\x03 \x02 \xbc\x03 END  \x8e\x03 
 CMD3 TextClose VAR1 \x1c\x0b END 
 END_SCRIPT

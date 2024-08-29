@@ -10,7 +10,7 @@ TEXT1  g TEXT2 J
 怯えて眺める早桃の顔にも、明らかな嫌悪が浮かんでいる。\
 
   
-FLG1 J\x0c FLG1_SET
+INIT J\x0c SET_VAR 
 CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \x92\x01 
 CMD2 TextOn RUNF \xc0\x01 END 
 SCEC SCE056_002 \xdc\x01 SCE_DONE 
@@ -26,7 +26,7 @@ TEXT1 $g TEXT2 n
 　　じっくり観察しようじゃないか！」\
 
   
-FLG1  \x02\x0c FLG1_SET \x92\x01 \x02 \xc0\x01 END 
+INIT  \x02\x0c SET_VAR  \x92\x01 \x02 \xc0\x01 END 
 SCEC SCE056_003 \x12\x04 SCE_DONE 
 TEXT1 (g TEXT2 W
  
@@ -40,7 +40,7 @@ TEXT1 (g TEXT2 W
 早桃\n　「い……いやっ！\p　やめて、やめてえっ！」\
 
   
-FLG1 V\x04\x0c FLG1_SET \x92\x01 \x02 \xc0\x01 END 
+INIT V\x04\x0c SET_VAR  \x92\x01 \x02 \xc0\x01 END 
 SCEC SCE056_004 \xec\x05 SCE_DONE 
 TEXT1 ,g TEXT2 \x8e
  
@@ -52,7 +52,7 @@ TEXT1 ,g TEXT2 \x8e
 ２人を取り囲んだクラスの全員が、どっと笑い声を上げた。\
 
   
-FLG1 0\x06\x0c FLG1_SET \x92\x01 \x02 \xc0\x01 END 
+INIT 0\x06\x0c SET_VAR  \x92\x01 \x02 \xc0\x01 END 
 SCEC SCE056_005 \xa2\x08 SCE_DONE 
 TEXT1 0g TEXT2 c
  
@@ -64,7 +64,7 @@ TEXT1 0g TEXT2 c
 しかしその怒りはクラスメイトたちにではなく、早桃に……自分\nよりも弱い立場の人間へと向けられた。\
 
   
-FLG1 \xe6\x08\x0c FLG1_SET \x92\x01 \x02 \xc0\x01 END 
+INIT \xe6\x08\x0c SET_VAR  \x92\x01 \x02 \xc0\x01 END 
 SCEC SCE056_006 \xac\n SCE_DONE 
 TEXT1 4g TEXT2 \xc5
  
@@ -75,7 +75,7 @@ TEXT1 4g TEXT2 \xc5
 そしてチャックをおろして、すでに固く反り返ったペ○スを露出\nさせる。\
 
   
-FLG1 \xf0\n\x0c FLG1_SET \x92\x01 \x02 \xc0\x01 END 
+INIT \xf0\n\x0c SET_VAR  \x92\x01 \x02 \xc0\x01 END 
 SCEC SCE056_007 >\x0e SCE_DONE 
 TEXT1 8g TEXT2 b
  
@@ -87,8 +87,8 @@ TEXT1 8g TEXT2 b
 学生\n　「豚のガキ孕まされるんだぜ？\p　人間としちゃ、生きてらんね\n　　えよなあ～、げらげら！」\
 
   
-FLG1 \x82\x0e\x0c FLG1_SET \x92\x01 \x02 \xc0\x01 END   
-FLG1 V\x0c FLG1_SET
+INIT \x82\x0e\x0c SET_VAR  \x92\x01 \x02 \xc0\x01 END   
+INIT V\x0c SET_VAR 
 CMD6 .\\Data\\Script\\Bg.Fob VAR2 ^\x10 \x02
 CMD4 BgAutoFadeIn VAR2 \x88\x10 END 
 SCEC SCE056_008 \xac\x10 SCE_DONE 
@@ -102,7 +102,7 @@ TEXT1 <g TEXT2 u
 学生たちからも嘲笑がとぶが、少年は意に介する様子もなく、た\nだひたすら早桃の上で腰を上下させている。\
 
   
-FLG1 \xf0\x10\x0c FLG1_SET \x92\x01 \x02 \xc0\x01 END 
+INIT \xf0\x10\x0c SET_VAR  \x92\x01 \x02 \xc0\x01 END 
 SCEC SCE056_009 \xfe\x12 SCE_DONE 
 TEXT1 @g TEXT2 \xb8
  
@@ -115,7 +115,7 @@ TEXT1 @g TEXT2 \xb8
 しかし拓司はなにもすることができない。\
 
   
-FLG1 B\x13\x0c FLG1_SET \x92\x01 \x02 \xc0\x01 END 
+INIT B\x13\x0c SET_VAR  \x92\x01 \x02 \xc0\x01 END 
 SCEC SCE056_010 \\\x16 SCE_DONE 
 TEXT1 Dg TEXT2 \x86
  
@@ -129,7 +129,7 @@ TEXT1 Dg TEXT2 \x86
 \n早桃\n　「……お……おにい……ちゃ……ん」\
 
   
-FLG1 \xa0\x16\x0c FLG1_SET \x92\x01 \x02 \xc0\x01 END 
+INIT \xa0\x16\x0c SET_VAR  \x92\x01 \x02 \xc0\x01 END 
 SCEC SCE056_011 \xf2\x18 SCE_DONE 
 TEXT1 Hg TEXT2 k
  
@@ -142,7 +142,7 @@ TEXT1 Hg TEXT2 k
 身体をぶるぶると震わせて、抵抗がぱたりと止んだのだ。\
 
   
-FLG1 6\x19\x0c FLG1_SET \x92\x01 \x02 \xc0\x01 END 
+INIT 6\x19\x0c SET_VAR  \x92\x01 \x02 \xc0\x01 END 
 SCEC SCE056_012 \x1c\x1b SCE_DONE 
 TEXT1 Lg TEXT2 \xa4
  
@@ -155,8 +155,8 @@ TEXT1 Lg TEXT2 \xa4
 早桃\n　「ふうっ……うくっ……お、お願い……します……はあ……」\
 
   
-FLG1 `\x1b\x0c FLG1_SET \x92\x01 \x02 \xc0\x01 END   
-FLG1 V\x0c FLG1_SET ^\x10 \x02 \x88\x10 END 
+INIT `\x1b\x0c SET_VAR  \x92\x01 \x02 \xc0\x01 END   
+INIT V\x0c SET_VAR  ^\x10 \x02 \x88\x10 END 
 SCEC SCE056_013 ^\x1e SCE_DONE 
 TEXT1 Pg TEXT2 \xba
  
@@ -171,7 +171,7 @@ TEXT1 Pg TEXT2 \xba
 \n－－これは……現実ではないのではないか？\
 
   
-FLG1 \xa2\x1e\x0c FLG1_SET \x92\x01 \x02 \xc0\x01 END 
+INIT \xa2\x1e\x0c SET_VAR  \x92\x01 \x02 \xc0\x01 END 
 SCEC SCE056_014 \xc4! SCE_DONE 
 TEXT1 Tg TEXT2 \x9b
  
@@ -183,7 +183,7 @@ TEXT1 Tg TEXT2 \x9b
 トン吉\n　「い、淫乱妹め！」\
 
   
-FLG1 \x08"\x0c FLG1_SET \x92\x01 \x02 \xc0\x01 END 
+INIT \x08"\x0c SET_VAR  \x92\x01 \x02 \xc0\x01 END 
 SCEC SCE056_015 \xae$ SCE_DONE 
 TEXT1 Xg TEXT2 s
  
@@ -194,8 +194,8 @@ TEXT1 Xg TEXT2 s
 それまで息を呑んで見守っていた学生たちが、一斉に拍手で囃し\n立てる。\
 
   
-FLG1 \xf2$\x0c FLG1_SET \x92\x01 \x02 \xc0\x01 END   
-FLG1 \xc8\x0c FLG1_SET ^\x10 \x02 \x88\x10 END 
+INIT \xf2$\x0c SET_VAR  \x92\x01 \x02 \xc0\x01 END   
+INIT \xc8\x0c SET_VAR  ^\x10 \x02 \x88\x10 END 
 SCEC SCE056_016 ,' SCE_DONE 
 TEXT1 \\g TEXT2 z
  
@@ -209,7 +209,7 @@ TEXT1 \\g TEXT2 z
 しかもさらに－－\
 
   
-FLG1 p'\x0c FLG1_SET \x92\x01 \x02 \xc0\x01 END 
+INIT p'\x0c SET_VAR  \x92\x01 \x02 \xc0\x01 END 
 SCEC SCE056_017 \x92) SCE_DONE 
 TEXT1 `g TEXT2 .
  
@@ -217,6 +217,6 @@ TEXT1 `g TEXT2 .
 早桃\n　「……はい。\pおにいちゃんのチ○ポ、早桃のおくちできれいに\n　　させてください……」\
 
   
-FLG1 \xd6)\x0c FLG1_SET \x92\x01 \x02 \xc0\x01 END  \x92\x01 
+INIT \xd6)\x0c SET_VAR  \x92\x01 \x02 \xc0\x01 END  \x92\x01 
 CMD3 TextClose VAR1 \xd4* END 
 END_SCRIPT

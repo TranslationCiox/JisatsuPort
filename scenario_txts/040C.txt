@@ -1,6 +1,6 @@
 START_SCRIPT
 v\x0c\x01`B#\x01:\n  
-FLG1 \x07\x01\x0c FLG1_SET
+INIT \x07\x01\x0c SET_VAR 
 CMD6 .\\Data\\Script\\Bgm.Fob VAR1   
 CMD2 PlayCD RUNF J END 
 SCEC SCE040_001 f SCE_DONE 
@@ -13,10 +13,10 @@ TEXT1  N TEXT2 6
 それは嘲笑だった。\
 
   
-FLG1 \xaa\x0c FLG1_SET
+INIT \xaa\x0c SET_VAR 
 CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \xa2\x01 
 CMD2 TextOn RUNF \xd0\x01 END   
-FLG1 D\x0c FLG1_SET
+INIT D\x0c SET_VAR 
 CMD6 .\\Data\\Script\\Bg.Fob VAR2 \x06\x02 \x02
 CMD4 BgAutoFadeIn VAR2 0\x02 END 
 SCEC SCE040_002 T\x02 SCE_DONE 
@@ -32,7 +32,7 @@ TEXT1 $N TEXT2 v
 拓司\n　「どうだっていいってことはないだろう－－」\
 
   
-FLG1 \x98\x02\x0c FLG1_SET \xa2\x01 \x02 \xd0\x01 END 
+INIT \x98\x02\x0c SET_VAR  \xa2\x01 \x02 \xd0\x01 END 
 SCEC SCE040_003 \xaa\x04 SCE_DONE 
 TEXT1 (N TEXT2 \xcf
  
@@ -50,8 +50,8 @@ TEXT1 (N TEXT2 \xcf
 目には涙が浮かび、身体は小刻みに震えている。\
 
   
-FLG1 \xee\x04\x0c FLG1_SET \xa2\x01 \x02 \xd0\x01 END   
-FLG1 \xc8\x0c FLG1_SET \x06\x02 
+INIT \xee\x04\x0c SET_VAR  \xa2\x01 \x02 \xd0\x01 END   
+INIT \xc8\x0c SET_VAR  \x06\x02 
 CMD2 BgOn VAR2 \x8a\x08 END 
 SCEC SCE040_004 \xa6\x08 SCE_DONE 
 TEXT1 ,N TEXT2 ;
@@ -63,6 +63,6 @@ TEXT1 ,N TEXT2 ;
 \nいって早桃は、風のように駆けて屋上から去っていった。\
 
   
-FLG1 \xea\x08\x0c FLG1_SET \xa2\x01 \x02 \xd0\x01 END  \xa2\x01 
+INIT \xea\x08\x0c SET_VAR  \xa2\x01 \x02 \xd0\x01 END  \xa2\x01 
 CMD3 TextClose VAR1 \x1c\n END 
 END_SCRIPT

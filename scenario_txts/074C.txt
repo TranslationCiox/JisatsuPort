@@ -11,7 +11,7 @@ TEXT1 @\x83 TEXT2 \xab
 いまや、信じられるものはなたねの言葉しかなかった。\pでたらめ\nな世界にうち立てられた、妄想の真実。\pそれにすがるしか、道は\nないように思えた。\
 
   
-FLG1 J\x0c FLG1_SET
+INIT J\x0c SET_VAR 
 CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \x16\x03 
 CMD2 TextOn RUNF D\x03 END 
 SCEC SCE074_002 `\x03 SCE_DONE 
@@ -21,6 +21,6 @@ TEXT1 D\x83 TEXT2 )
 \nなたね\n　「ここも駄目。\pここにも波動がきているわ。\p別の道を選びまし\n　　ょう」\
 
   
-FLG1 \xa4\x03\x0c FLG1_SET \x16\x03 \x02 D\x03 END  \x16\x03 
+INIT \xa4\x03\x0c SET_VAR  \x16\x03 \x02 D\x03 END  \x16\x03 
 CMD3 TextClose VAR1 \x8e\x04 END 
 END_SCRIPT

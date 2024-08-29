@@ -9,10 +9,10 @@ TEXT1 \xd0e\x01 TEXT2 ,
 流されるしかないのだ。\
 
   
-FLG1 J\x0c FLG1_SET
+INIT J\x0c SET_VAR 
 CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \x1a\x01 
 CMD2 TextOn RUNF H\x01 END   
-FLG1 $\x0c FLG1_SET
+INIT $\x0c SET_VAR 
 CMD6 .\\Data\\Script\\Bg.Fob VAR2 ~\x01 \x02
 CMD4 BgAutoFadeIn VAR2 \xa8\x01 END 
 SCEC SCE219_002 \xcc\x01 SCE_DONE 
@@ -29,7 +29,7 @@ TEXT1 \xd4e\x01 TEXT2 k
 ぐったりと御堂の下に横たわり、殴られるがままだ。\
 
   
-FLG1 \x10\x02\x0c FLG1_SET \x1a\x01 \x02 H\x01 END 
+INIT \x10\x02\x0c SET_VAR  \x1a\x01 \x02 H\x01 END 
 SCEC SCE219_003 \xf6\x03 SCE_DONE 
 TEXT1 \xd8e\x01 TEXT2 L
  
@@ -42,8 +42,8 @@ TEXT1 \xd8e\x01 TEXT2 L
 そしていま、眼前で展開されていることこそ、新しい秩序の骨子\nを為すものであるはずだった。\
 
   
-FLG1 :\x04\x0c FLG1_SET \x1a\x01 \x02 H\x01 END   
-FLG1 \xc8\x0c FLG1_SET ~\x01 \x02 \xa8\x01 END 
+INIT :\x04\x0c SET_VAR  \x1a\x01 \x02 H\x01 END   
+INIT \xc8\x0c SET_VAR  ~\x01 \x02 \xa8\x01 END 
 CMD6 .\\Data\\Script\\Bgm.Fob VAR1 \xd8\x05 
 CMD2 StopCD RUNF \x02\x06 END  \x1a\x01 
 CMD3 TextClose VAR1 *\x06 END 

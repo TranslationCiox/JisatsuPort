@@ -1,9 +1,9 @@
 START_SCRIPT
 e+\x01`B#\x01\xf4$  
-FLG1 \x05\x01\x0c FLG1_SET
+INIT \x05\x01\x0c SET_VAR 
 CMD6 .\\Data\\Script\\Bgm.Fob VAR1   
 CMD2 PlayCD RUNF J END   
-FLG1 Q\x0c FLG1_SET
+INIT Q\x0c SET_VAR 
 CMD6 .\\Data\\Script\\Bg.Fob VAR2 \x80 \x02
 CMD4 BgAutoFadeIn VAR2 \xaa END 
 SCEC SCE032_001 \xce SCE_DONE 
@@ -24,7 +24,7 @@ TEXT1 \xa0A TEXT2 \xc8
 それをつまみ上げるたびに、ひく、ひくと、ペ○スを包む肉が収縮\nする。\
 
   
-FLG1 \x12\x01\x0c FLG1_SET
+INIT \x12\x01\x0c SET_VAR 
 CMD7 .\\Data\\Script\\TextFunc.Fob RUNF R\x04 
 CMD2 TextOn RUNF \x80\x04 END 
 SCEC SCE032_002 \x9c\x04 SCE_DONE 
@@ -41,7 +41,7 @@ TEXT1 \xa4A TEXT2 \x88
 まるで実験動物を観察するように、拓司の顔をのぞき込んでいる。\n\p恥ずかしさとも怒りともつかぬ激情で、頭にカッと血が上る。\
 
   
-FLG1 \xe0\x04\x0c FLG1_SET R\x04 \x02 \x80\x04 END 
+INIT \xe0\x04\x0c SET_VAR  R\x04 \x02 \x80\x04 END 
 SCEC SCE032_003 :\x07 SCE_DONE 
 TEXT1 \xa8A TEXT2 w
  
@@ -53,7 +53,7 @@ TEXT1 \xa8A TEXT2 w
 拓司\n　「うるさい、黙れッ！」\
 
   
-FLG1 ~\x07\x0c FLG1_SET R\x04 \x02 \x80\x04 END 
+INIT ~\x07\x0c SET_VAR  R\x04 \x02 \x80\x04 END 
 SCEC SCE032_004 \x94\t SCE_DONE 
 TEXT1 \xacA TEXT2 z
  
@@ -67,7 +67,7 @@ TEXT1 \xacA TEXT2 z
 拓司\n　「……ちっ」\
 
   
-FLG1 \xd8\t\x0c FLG1_SET R\x04 \x02 \x80\x04 END 
+INIT \xd8\t\x0c SET_VAR  R\x04 \x02 \x80\x04 END 
 SCEC SCE032_005 \xfa\x0b SCE_DONE 
 TEXT1 \xb0A TEXT2 \xad
  
@@ -80,7 +80,7 @@ TEXT1 \xb0A TEXT2 \xad
 いままでまったく感じられなかった、生々しいいきものの脈動が、\nある……。\
 
   
-FLG1 >\x0c\x0c FLG1_SET R\x04 \x02 \x80\x04 END 
+INIT >\x0c\x0c SET_VAR  R\x04 \x02 \x80\x04 END 
 SCEC SCE032_006 ,\x0f SCE_DONE 
 TEXT1 \xb4A TEXT2 \x89
  
@@ -96,7 +96,7 @@ TEXT1 \xb4A TEXT2 \x89
 先ほどまでとなんら変わることのないその運動に、果たしてカンナ\nは、今度は身をよじらせて反応した。\
 
   
-FLG1 p\x0f\x0c FLG1_SET R\x04 \x02 \x80\x04 END 
+INIT p\x0f\x0c SET_VAR  R\x04 \x02 \x80\x04 END 
 SCEC SCE032_007 \xce\x11 SCE_DONE 
 TEXT1 \xb8A TEXT2 \x9a
  
@@ -110,7 +110,7 @@ TEXT1 \xb8A TEXT2 \x9a
 カンナが自ら視覚を封じたのを確認してから、拓司はカンナの右\n手首を捧げ持った。\pそこに剃刀の刃をぴたりとあてがう。\
 
   
-FLG1 \x12\x12\x0c FLG1_SET R\x04 \x02 \x80\x04 END 
+INIT \x12\x12\x0c SET_VAR  R\x04 \x02 \x80\x04 END 
 SCEC SCE032_008 \xb4\x14 SCE_DONE 
 TEXT1 \xbcA TEXT2 \x88
  
@@ -127,7 +127,7 @@ TEXT1 \xbcA TEXT2 \x88
 自殺ゲーム。\
 
   
-FLG1 \xf8\x14\x0c FLG1_SET R\x04 \x02 \x80\x04 END 
+INIT \xf8\x14\x0c SET_VAR  R\x04 \x02 \x80\x04 END 
 SCEC SCE032_009 R\x17 SCE_DONE 
 TEXT1 \xc0A TEXT2 \xa6
  
@@ -146,7 +146,7 @@ TEXT1 \xc0A TEXT2 \xa6
 　　これはまずいかもしれないぜ？」\
 
   
-FLG1 \x96\x17\x0c FLG1_SET R\x04 \x02 \x80\x04 END 
+INIT \x96\x17\x0c SET_VAR  R\x04 \x02 \x80\x04 END 
 SCEC SCE032_010 h\x1a SCE_DONE 
 TEXT1 \xc4A TEXT2 \x95
  
@@ -160,7 +160,7 @@ TEXT1 \xc4A TEXT2 \x95
 カンナ\n　「すごい……すごく出ていく……きれいに……」\
 
   
-FLG1 \xac\x1a\x0c FLG1_SET R\x04 \x02 \x80\x04 END 
+INIT \xac\x1a\x0c SET_VAR  R\x04 \x02 \x80\x04 END 
 SCEC SCE032_011 :\x1d SCE_DONE 
 TEXT1 \xc8A TEXT2 \x90
  
@@ -178,7 +178,7 @@ TEXT1 \xc8A TEXT2 \x90
 カンナに気づかれないようそれに手を伸ばし、そして……\
 
   
-FLG1 ~\x1d\x0c FLG1_SET R\x04 \x02 \x80\x04 END 
+INIT ~\x1d\x0c SET_VAR  R\x04 \x02 \x80\x04 END 
 SCEC SCE032_012 \xf8\x1f SCE_DONE 
 TEXT1 \xccA TEXT2 \xab
  
@@ -195,7 +195,7 @@ TEXT1 \xccA TEXT2 \xab
 死ぬぞ！\
 
   
-FLG1 < \x0c FLG1_SET R\x04 \x02 \x80\x04 END 
+INIT < \x0c SET_VAR  R\x04 \x02 \x80\x04 END 
 SCEC SCE032_013 "# SCE_DONE 
 TEXT1 \xd0A TEXT2 \x17
  
@@ -203,10 +203,10 @@ TEXT1 \xd0A TEXT2 \x17
 ザアアアアア……ザアザアアアアアアア……\
 
   
-FLG1 f#\x0c FLG1_SET R\x04 \x02 \x80\x04 END  R\x04 \x02
+INIT f#\x0c SET_VAR  R\x04 \x02 \x80\x04 END  R\x04 \x02
 CMD4 TextWindowOff VAR1 \x08$ END    
 CMD2 StopCD RUNF 8$ END   
-FLG1 \xc8\x0c FLG1_SET \x80 
+INIT \xc8\x0c SET_VAR  \x80 
 CMD2 BgOn VAR2 z$ END  R\x04 \x02
 CMD5 TextWindowOnDirect RUNF \xa2$ END  R\x04 
 CMD3 TextClose VAR1 \xd6$ END 

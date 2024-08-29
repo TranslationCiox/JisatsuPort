@@ -10,7 +10,7 @@ TEXT1 @d\x01 TEXT2 6
 \n重い一撃が顎を捉え、さらに鋭い蹴りが拓司を後方にはじき飛ば\nした。\
 
   
-FLG1 J\x0c FLG1_SET
+INIT J\x0c SET_VAR 
 CMD7 .\\Data\\Script\\TextFunc.Fob RUNF B\x01 
 CMD2 TextOn RUNF p\x01 END 
 SCEC SCE218_002 \x8c\x01 SCE_DONE 
@@ -23,8 +23,8 @@ TEXT1 Dd\x01 TEXT2 x
 御堂\n　「この……××××が……思い知れ！\p　思い知れ！」\
 
   
-FLG1 \xd0\x01\x0c FLG1_SET B\x01 \x02 p\x01 END   
-FLG1 $\x0c FLG1_SET
+INIT \xd0\x01\x0c SET_VAR  B\x01 \x02 p\x01 END   
+INIT $\x0c SET_VAR 
 CMD6 .\\Data\\Script\\Bg.Fob VAR2 \x04\x04 \x02
 CMD4 BgAutoFadeIn VAR2 .\x04 END 
 SCEC SCE218_003 R\x04 SCE_DONE 
@@ -43,8 +43,8 @@ TEXT1 Hd\x01 TEXT2 \x9b
 そしていま、眼前で展開されていることこそ、新しい秩序の骨子\nを為すものであるはずだった。\
 
   
-FLG1 \x96\x04\x0c FLG1_SET B\x01 \x02 p\x01 END   
-FLG1 \xc8\x0c FLG1_SET \x04\x04 \x02 .\x04 END 
+INIT \x96\x04\x0c SET_VAR  B\x01 \x02 p\x01 END   
+INIT \xc8\x0c SET_VAR  \x04\x04 \x02 .\x04 END 
 CMD6 .\\Data\\Script\\Bgm.Fob VAR1 p\x07 
 CMD2 StopCD RUNF \x9a\x07 END  B\x01 
 CMD3 TextClose VAR1 \xc2\x07 END 

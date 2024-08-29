@@ -9,7 +9,7 @@ TEXT1 P\xaa TEXT2 I
 \n拓司はなたねをちらりとみやった。@
 なたねはいつもの無表情で、なんの反応もない。\w\z
   
-FLG1 J\x0c FLG1_SET
+INIT J\x0c SET_VAR 
 CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \x8e\x01 
 CMD2 TextOn RUNF \xbc\x01 END 
 SCEC SCE099_002 \xd8\x01 SCE_DONE 
@@ -21,6 +21,6 @@ TEXT1 T\xaa TEXT2 l
 いうとなたねは、走るように自分のスペースへと向かい、膝を抱\nえて壁に向かった。@
 \nそれから一日、早桃はおろか、他の誰もひとことも口をきこう\nとはしなかった。\w\z
   
-FLG1 \x1c\x02\x0c FLG1_SET \x8e\x01 \x02 \xbc\x01 END  \x8e\x01 
+INIT \x1c\x02\x0c SET_VAR  \x8e\x01 \x02 \xbc\x01 END  \x8e\x01 
 CMD3 TextClose VAR1 \x12\x04 END 
 END_SCRIPT

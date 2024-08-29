@@ -1,9 +1,9 @@
 START_SCRIPT
 B\n\x01`B#\x01\xaa\x07  
-FLG1 \xc8\x0c FLG1_SET
+INIT \xc8\x0c SET_VAR 
 CMD6 .\\Data\\Script\\Bg.Fob VAR2   \x02
 CMD4 BgAutoFadeIn VAR2 J END   
-FLG1 \x08\x01\x0c FLG1_SET
+INIT \x08\x01\x0c SET_VAR 
 CMD6 .\\Data\\Script\\Bgm.Fob VAR1 \x88 
 CMD2 PlayCD RUNF \xb2 END 
 SCEC SCEK04_001 \xce SCE_DONE 
@@ -14,7 +14,7 @@ TEXT1 X\xa6\x01 TEXT2 \\
 多分、嫉妬していたのだと思う。\n自分と同じメンタリティを持ちながらも周囲とうまくやっていけ\nているゆきが、羨ましかったのだろう。@
 そう考えないと、私がとったその後の行動を、うまく説明するこ\nとができない。\w\z
   
-FLG1 \x12\x01\x0c FLG1_SET
+INIT \x12\x01\x0c SET_VAR 
 CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \xa2\x02 
 CMD2 TextOn RUNF \xd0\x02 END 
 SCEC SCEK04_002 \xec\x02 SCE_DONE 
@@ -28,7 +28,7 @@ TEXT1 \\\xa6\x01 TEXT2 \x96
 信念に対する背信行為を犯したゆきに、罰を与えたのだった。@
 ゆきが完全に寄り掛かってきたころを見計らって、私は計画を最\n終段階に進めた。\w\z
   
-FLG1 0\x03\x0c FLG1_SET \xa2\x02 \x02 \xd0\x02 END 
+INIT 0\x03\x0c SET_VAR  \xa2\x02 \x02 \xd0\x02 END 
 SCEC SCEK04_003 \xc2\x05 SCE_DONE 
 TEXT1 `\xa6\x01 TEXT2 P
  
@@ -37,6 +37,6 @@ TEXT1 `\xa6\x01 TEXT2 P
 そんなことはわかっていた。@
 私は、ゆきの地位にダメージを与えようと思ったわけではなかっ\nた。\pゆきの心を破壊してやろうと思ったのだ。\w\z
   
-FLG1 \x06\x06\x0c FLG1_SET \xa2\x02 \x02 \xd0\x02 END  \xa2\x02 
+INIT \x06\x06\x0c SET_VAR  \xa2\x02 \x02 \xd0\x02 END  \xa2\x02 
 CMD3 TextClose VAR1 \x8c\x07 END 
 END_SCRIPT

@@ -8,7 +8,7 @@ TEXT1 \xe0\xab TEXT2 q
 拓司\n　「宇宙人とか電波とか、そういった話はみんなの前では控えて\n　　ほしい。\pそれでなくてもみんな不安なんだ。\pそういう……わ\n　　けのわからないことをいわれると、神経に響く。\pそしてもう\n　　ひとつ。\p早桃に限らず、誰かをスパイ呼ばわりするようなマ\n　　ネは金輪際やめてくれ。\pそれは雲居さんのいう、団結を乱\n　　す行為そのものだ。\p内部崩壊の引き金になりかねない」\
 
   
-FLG1 J\x0c FLG1_SET
+INIT J\x0c SET_VAR 
 CMD7 .\\Data\\Script\\TextFunc.Fob RUNF .\x02 
 CMD2 TextOn RUNF \\\x02 END 
 SCEC SCE100_002 x\x02 SCE_DONE 
@@ -23,6 +23,6 @@ TEXT1 \xe4\xab TEXT2 \x8d
 /*▲SE01　停止*/\a4,2,0,0,\nただ黙ってラジオの前に戻って、一日中、耳を貼り付かせるよう\nにしてノイズに聞き入っていた。\
 
   
-FLG1 \xbc\x02\x0c FLG1_SET .\x02 \x02 \\\x02 END  .\x02 
+INIT \xbc\x02\x0c SET_VAR  .\x02 \x02 \\\x02 END  .\x02 
 CMD3 TextClose VAR1 6\x05 END 
 END_SCRIPT

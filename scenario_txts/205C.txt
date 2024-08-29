@@ -15,7 +15,7 @@ TEXT1 \xf0O\x01 TEXT2 \xd3
 　　妄想の産物ではない。\p波動が襲ってきて、あなたたちは実験\n　　室に籠城した。\pそれは過去の事実なの。\p……いいわね？」\
 
   
-FLG1 J\x0c FLG1_SET
+INIT J\x0c SET_VAR 
 CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \xb6\x03 
 CMD2 TextOn RUNF \xe4\x03 END  \xb6\x03 
 CMD3 TextClose VAR1 \x0c\x04 END 

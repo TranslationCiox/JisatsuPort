@@ -11,7 +11,7 @@ TEXT1 `m TEXT2 B
 拓司\n　「……」\n早桃\n　「ざまあみろって思ってる」\
 
   
-FLG1 J\x0c FLG1_SET
+INIT J\x0c SET_VAR 
 CMD7 .\\Data\\Script\\TextFunc.Fob RUNF r\x01 
 CMD2 TextOn RUNF \xa0\x01 END 
 SCEC SCE060_002 \xbc\x01 SCE_DONE 
@@ -21,6 +21,6 @@ TEXT1 dm TEXT2 \x18
 早桃\n　「おにいちゃん、後ろ向いてて。\pジャージに着替えるから」@
 \z
   
-FLG1 \x02\x0c FLG1_SET r\x01 \x02 \xa0\x01 END  r\x01 
+INIT \x02\x0c SET_VAR  r\x01 \x02 \xa0\x01 END  r\x01 
 CMD3 TextClose VAR1 \xa6\x02 END 
 END_SCRIPT

@@ -1,9 +1,9 @@
 START_SCRIPT
 \xaa\n\x01`B#\x01d\x08  
-FLG1 H\x0c FLG1_SET
+INIT H\x0c SET_VAR 
 CMD6 .\\Data\\Script\\Bg.Fob VAR2   \x02
 CMD4 BgAutoFadeIn VAR2 J END   
-FLG1 \x05\x01\x0c FLG1_SET
+INIT \x05\x01\x0c SET_VAR 
 CMD6 .\\Data\\Script\\Bgm.Fob VAR1 \x88 
 CMD2 PlayCD RUNF \xb2 END 
 SCEC SCE005_001 \xce SCE_DONE 
@@ -17,7 +17,7 @@ TEXT1 p\x17 TEXT2 H
 なぜなら夜風なんか、これっぽっちも吹いていないじゃないか。\
 
   
-FLG1 \x12\x01\x0c FLG1_SET
+INIT \x12\x01\x0c SET_VAR 
 CMD7 .\\Data\\Script\\TextFunc.Fob RUNF R\x02 
 CMD2 TextOn RUNF \x80\x02 END 
 SCEC SCE005_002 \x9c\x02 SCE_DONE 
@@ -35,7 +35,7 @@ TEXT1 t\x17 TEXT2 ^
 早桃\n　「たぶん」\
 
   
-FLG1 \xe0\x02\x0c FLG1_SET R\x02 \x02 \x80\x02 END 
+INIT \xe0\x02\x0c SET_VAR  R\x02 \x02 \x80\x02 END 
 SCEC SCE005_003 \x92\x04 SCE_DONE 
 TEXT1 x\x17 TEXT2 \xa8
  
@@ -52,12 +52,12 @@ TEXT1 x\x17 TEXT2 \xa8
 早桃はそれを自分の鼻先に持っていき、すうっと、息を吸い込ん\nだ。\
 
   
-FLG1 \xd6\x04\x0c FLG1_SET R\x02 \x02 \x80\x02 END \x03\x14
+INIT \xd6\x04\x0c SET_VAR  R\x02 \x02 \x80\x02 END \x03\x14
 CHOICE
 「……出て行け」と拓司はいった\n「……来いよ」と拓司はいった\n\l0,2,
 ENDCHOICE
 
   
-FLG1 \xb0\x07\x0c FLG1_SET R\x02 \x02 \x80\x02 END  R\x02 
+INIT \xb0\x07\x0c SET_VAR  R\x02 \x02 \x80\x02 END  R\x02 
 CMD3 TextClose VAR1 F\x08 END 
 END_SCRIPT

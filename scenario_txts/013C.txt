@@ -15,7 +15,7 @@ TEXT1 \xf0# TEXT2 \x86
 \n拓司\n　「早桃！　……あっ！」\
 
   
-FLG1 \x90\x0c FLG1_SET
+INIT \x90\x0c SET_VAR 
 CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \xc8\x02 
 CMD2 TextOn RUNF \xf6\x02 END 
 SCEC SCE013_002 \x12\x03 SCE_DONE 
@@ -28,7 +28,7 @@ TEXT1 \xf4# TEXT2 \x97
 　駆け寄った拓司を無視して、早桃は黙々と荷物を拾い始めた。\
 
   
-FLG1 V\x03\x0c FLG1_SET \xc8\x02 \x02 \xf6\x02 END 
+INIT V\x03\x0c SET_VAR  \xc8\x02 \x02 \xf6\x02 END 
 SCEC SCE013_003 \xec\x05 SCE_DONE 
 TEXT1 \xf8# TEXT2 >
  
@@ -40,7 +40,7 @@ TEXT1 \xf8# TEXT2 >
 \n　拓司は息を呑んだ。\n　キッと振り仰いだ早桃の瞳は、涙で泉のように潤んでいた。\
 
   
-FLG1 0\x06\x0c FLG1_SET \xc8\x02 \x02 \xf6\x02 END 
+INIT 0\x06\x0c SET_VAR  \xc8\x02 \x02 \xf6\x02 END 
 SCEC SCE013_004 b\x07 SCE_DONE 
 TEXT1 \xfc# TEXT2 t
  
@@ -53,14 +53,14 @@ TEXT1 \xfc# TEXT2 t
 　　おにいちゃんがどんなこと考えてるかなんて、全部わかって\n　　るんだから！」@
 \nそこまでいってから早桃は顔を覆い、わっと泣き始めた。\w\z
   
-FLG1 \xa6\x07\x0c FLG1_SET \xc8\x02 \x02 \xf6\x02 END 
+INIT \xa6\x07\x0c SET_VAR  \xc8\x02 \x02 \xf6\x02 END 
 SCEC SCE013_005 \xb0\t SCE_DONE 
 TEXT1 $ TEXT2 \x1a
  
 /*■黒　表示（ノンエフェクト）*/\a7,-1,-1,0,\a0,200,1,0,\a6,0,0,0,早桃\n　「……ごめんなさい」\
 
   
-FLG1 \xf4\t\x0c FLG1_SET \xc8\x02 \x02 \xf6\x02 END 
+INIT \xf4\t\x0c SET_VAR  \xc8\x02 \x02 \xf6\x02 END 
 SCEC SCE013_006 \x96\n SCE_DONE 
 TEXT1 \x04$ TEXT2 |
  
@@ -69,6 +69,6 @@ TEXT1 \x04$ TEXT2 |
 \n　早桃の中でも、なにかが限界を迎えようとしている。\n　すでになにかが起こり始めていた。終わりに向けて、それはと\nどまることなく転がっていくのだろう。スイッチは押されてしま\nった。それは、目の前のあらゆるものをなぎ倒しながら、転がり\n続けていくのだ。@
 \z
   
-FLG1 \xda\n\x0c FLG1_SET \xc8\x02 \x02 \xf6\x02 END  \xc8\x02 
+INIT \xda\n\x0c SET_VAR  \xc8\x02 \x02 \xf6\x02 END  \xc8\x02 
 CMD3 TextClose VAR1 \x10\r END 
 END_SCRIPT

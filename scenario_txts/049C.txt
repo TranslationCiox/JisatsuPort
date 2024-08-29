@@ -1,6 +1,6 @@
 START_SCRIPT
 \x0e\x13\x01`B#\x010\x10  
-FLG1 \x06\x01\x0c FLG1_SET
+INIT \x06\x01\x0c SET_VAR 
 CMD6 .\\Data\\Script\\Bgm.Fob VAR1   
 CMD2 PlayCD RUNF J END 
 SCEC SCE049_001 f SCE_DONE 
@@ -15,7 +15,7 @@ TEXT1 0\\ TEXT2 \xe6
 柏木の死と、なたねたちの乱交は切り離せない。\pそれをどうごま\nかせばいいのかまだ決めかねているが……人がひとり死んでいる\nのだ。\pさすがに知らん顔というわけにもいくまい。\pそれに、放っ\nておいてもいずれ死体は見つかる。\p事件が膨れ上がって手に負え\nなくなる前に、なんらかの処置を施して、自分となたねに降りか\nかる火の粉を少しでも減らしておいたほうがいいだろう。\
 
   
-FLG1 \xaa\x0c FLG1_SET
+INIT \xaa\x0c SET_VAR 
 CMD7 .\\Data\\Script\\TextFunc.Fob RUNF b\x04 
 CMD2 TextOn RUNF \x90\x04 END 
 SCEC SCE049_002 \xac\x04 SCE_DONE 
@@ -32,7 +32,7 @@ TEXT1 4\\ TEXT2 q
 　あまりに突然のことに、拓司は思わず小さく悲鳴をもらした。\
 
   
-FLG1 \xf0\x04\x0c FLG1_SET b\x04 \x02 \x90\x04 END 
+INIT \xf0\x04\x0c SET_VAR  b\x04 \x02 \x90\x04 END 
 SCEC SCE049_003 \xee\x06 SCE_DONE 
 TEXT1 8\\ TEXT2 k
  
@@ -50,7 +50,7 @@ TEXT1 8\\ TEXT2 k
 \nなたね\n　「大丈夫、虎菱くん？」\
 
   
-FLG1 2\x07\x0c FLG1_SET b\x04 \x02 \x90\x04 END 
+INIT 2\x07\x0c SET_VAR  b\x04 \x02 \x90\x04 END 
 SCEC SCE049_004 \x18\t SCE_DONE 
 TEXT1 <\\ TEXT2 \xa0
  
@@ -63,7 +63,7 @@ TEXT1 <\\ TEXT2 \xa0
 \n　ちいさくつぶやく。\pぎくりとして見ると、なたねは真剣な表情\n　で、あたりを見回している。\
 
   
-FLG1 \\\t\x0c FLG1_SET b\x04 \x02 \x90\x04 END 
+INIT \\\t\x0c SET_VAR  b\x04 \x02 \x90\x04 END 
 SCEC SCE049_005 \x16\x0c SCE_DONE 
 TEXT1 @\\ TEXT2 q
  
@@ -74,7 +74,7 @@ TEXT1 @\\ TEXT2 q
 　あるいは－－尋ねるのが怖かったのかもしれない。\
 
   
-FLG1 Z\x0c\x0c FLG1_SET b\x04 \x02 \x90\x04 END 
+INIT Z\x0c\x0c SET_VAR  b\x04 \x02 \x90\x04 END 
 SCEC SCE049_006 X\x0e SCE_DONE 
 TEXT1 D\\ TEXT2 B
  
@@ -84,7 +84,7 @@ TEXT1 D\\ TEXT2 B
 \nなたね\n　「駄目。\pこの教室はもう駄目だわ。\p……見て」\
 
   
-FLG1 \x9c\x0e\x0c FLG1_SET b\x04 \x02 \x90\x04 END    
+INIT \x9c\x0e\x0c SET_VAR  b\x04 \x02 \x90\x04 END    
 CMD2 StopCD RUNF \xea\x0f END  b\x04 
 CMD3 TextClose VAR1 \x12\x10 END 
 END_SCRIPT

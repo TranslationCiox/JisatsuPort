@@ -1,6 +1,6 @@
 START_SCRIPT
 <\x10\x01`B#\x01B\r  
-FLG1 "\x0c FLG1_SET
+INIT "\x0c SET_VAR 
 CMD6 .\\Data\\Script\\Bg.Fob VAR2   \x02
 CMD4 BgAutoFadeIn VAR2 J END 
 SCEC SCE106_001 n SCE_DONE 
@@ -18,7 +18,7 @@ TEXT1 @\xb5 TEXT2 \x89
 なたねが鍵を飲み込んだのはそれからかもしれない……@
 そして気がつくと、教室中に血が飛び散っていた。\w\z
   
-FLG1 \xb2\x0c FLG1_SET
+INIT \xb2\x0c SET_VAR 
 CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \xf6\x02 
 CMD2 TextOn RUNF $\x03 END 
 SCEC SCE106_002 @\x03 SCE_DONE 
@@ -31,7 +31,7 @@ TEXT1 D\xb5 TEXT2 E
 てらてらと光る臓物だ。@
 御堂はその中から鍵を探し出そうとしている。\w\z
   
-FLG1 \x84\x03\x0c FLG1_SET \xf6\x02 \x02 $\x03 END 
+INIT \x84\x03\x0c SET_VAR  \xf6\x02 \x02 $\x03 END 
 SCEC SCE106_003 \xd2\x04 SCE_DONE 
 TEXT1 H\xb5 TEXT2 q
  
@@ -43,14 +43,14 @@ TEXT1 H\xb5 TEXT2 q
 見よ、死んでいるはずのなたねの口がくわっと開いて、\n\p哄笑をとどろかせている……。@
 \nわは。\w\z
   
-FLG1 \x16\x05\x0c FLG1_SET \xf6\x02 \x02 $\x03 END 
+INIT \x16\x05\x0c SET_VAR  \xf6\x02 \x02 $\x03 END 
 SCEC SCE106_004 \x14\x07 SCE_DONE 
 TEXT1 L\xb5 TEXT2 +
  
 その笑い声は伝染病のようにあたりに広がり、あっというまに部\n屋中を充たした。@
 \nわは、わはは、はははははははははははははははははははははは\nははははははははは！\w\z
   
-FLG1 X\x07\x0c FLG1_SET \xf6\x02 \x02 $\x03 END 
+INIT X\x07\x0c SET_VAR  \xf6\x02 \x02 $\x03 END 
 SCEC SCE106_005 >\x08 SCE_DONE 
 TEXT1 P\xb5 TEXT2 @
  
@@ -60,7 +60,7 @@ TEXT1 P\xb5 TEXT2 @
 そこに７人の男女がいて、大声で笑っている……@
 腹を抱えてのたうち回っている。\w\z
   
-FLG1 \x82\x08\x0c FLG1_SET \xf6\x02 \x02 $\x03 END 
+INIT \x82\x08\x0c SET_VAR  \xf6\x02 \x02 $\x03 END 
 SCEC SCE106_006 \xbc\t SCE_DONE 
 TEXT1 T\xb5 TEXT2 P
  
@@ -69,7 +69,7 @@ TEXT1 T\xb5 TEXT2 P
 おれは－－と拓司は思った－－おれははなからありもしないもの\nをあると思いこんで、必死でうろつき回っていたのだ。@
 なにもおかしくなどなかったが、いくらでも笑いがこみ上げてき\nた。\w\z
   
-FLG1 \n\x0c FLG1_SET \xf6\x02 \x02 $\x03 END 
+INIT \n\x0c SET_VAR  \xf6\x02 \x02 $\x03 END 
 SCEC SCE106_007 z\x0b SCE_DONE 
 TEXT1 X\xb5 TEXT2 H
  
@@ -78,6 +78,6 @@ TEXT1 X\xb5 TEXT2 H
 ザザザ……ザザッ……ザアザザザ……ザアアアアア……ザアザア\nアアアアアア……@
 \n最後にそんな音が、聞こえた。\w\z
   
-FLG1 \xbe\x0b\x0c FLG1_SET \xf6\x02 \x02 $\x03 END  \xf6\x02 
+INIT \xbe\x0b\x0c SET_VAR  \xf6\x02 \x02 $\x03 END  \xf6\x02 
 CMD3 TextClose VAR1 $\r END 
 END_SCRIPT

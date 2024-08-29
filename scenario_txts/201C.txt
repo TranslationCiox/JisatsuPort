@@ -2,12 +2,12 @@ START_SCRIPT
 1#\x01`B#\x01\xd8\x1d
 SCEC SCE201_001 \x06 SCE_DONE 
 TEXT1 \xb0I\x01\x0c"  
-FLG1 \xc9\x0c FLG1_SET
+INIT \xc9\x0c SET_VAR 
 CMD6 .\\Data\\Script\\Bg.Fob VAR2 d \x02
 CMD4 BgAutoFadeIn VAR2 \x8e END   
-FLG1 \x02\x0c FLG1_SET  \x04
-FLG1 \x06\x0c FLG1_SET  \x08
-FLG1 \x01\x0c FLG1_SET
+INIT \x02\x0c SET_VAR   \x04
+INIT \x06\x0c SET_VAR   \x08
+INIT \x01\x0c SET_VAR 
 CMD6 .\\Data\\Script\\Bgm.Fob VAR1 \x01 
 CMD2 SePlay RUNF *\x01 END \x03\xa0
  
@@ -23,7 +23,7 @@ CMD2 SePlay RUNF *\x01 END \x03\xa0
 この『白い部屋の世界』が現実なのだとしたら、それは喜ぶべき\n傾向なのだろう。\pしかし、ここが夢の世界だとしたら……それは\n妄想世界に固定されつつあるということであり……恐怖すべきこ\nとなのだ。\
 
   
-FLG1 F\x01\x0c FLG1_SET
+INIT F\x01\x0c SET_VAR 
 CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \xe6\x03 
 CMD2 TextOn RUNF \x14\x04 END 
 SCEC SCE201_002 0\x04 SCE_DONE 
@@ -42,7 +42,7 @@ TEXT1 \xb4I\x01 TEXT2 \x8a
 それにしても、似ている。\
 
   
-FLG1 t\x04\x0c FLG1_SET \xe6\x03 \x02 \x14\x04 END 
+INIT t\x04\x0c SET_VAR  \xe6\x03 \x02 \x14\x04 END 
 SCEC SCE201_003 \xd6\x06 SCE_DONE 
 TEXT1 \xb8I\x01 TEXT2 \x86
  
@@ -54,7 +54,7 @@ TEXT1 \xb8I\x01 TEXT2 \x86
 \n矢継ぎ早に尋ねる少女の声を聞いて、拓司はようやく気づいた。\
 
   
-FLG1 \x1a\x07\x0c FLG1_SET \xe6\x03 \x02 \x14\x04 END 
+INIT \x1a\x07\x0c SET_VAR  \xe6\x03 \x02 \x14\x04 END 
 SCEC SCE201_004 l\t SCE_DONE 
 TEXT1 \xbcI\x01 TEXT2 \x84
  
@@ -66,7 +66,7 @@ TEXT1 \xbcI\x01 TEXT2 \x84
 女の子\n　「そう。\pじゃあ、私も雲居なたねよ。\p紛らわしいようだった\n　　らナタネと呼んで」\
 
   
-FLG1 \xb0\t\x0c FLG1_SET \xe6\x03 \x02 \x14\x04 END 
+INIT \xb0\t\x0c SET_VAR  \xe6\x03 \x02 \x14\x04 END 
 SCEC SCE201_005 \xfa\x0b SCE_DONE 
 TEXT1 \xc0I\x01 TEXT2 \x9e
  
@@ -78,7 +78,7 @@ TEXT1 \xc0I\x01 TEXT2 \x9e
 \nナタネは思案顔を作って沈黙した。\pそして、ベッドに掛けられた\n鳥籠に目を留めて、いった。\
 
   
-FLG1 >\x0c\x0c FLG1_SET \xe6\x03 \x02 \x14\x04 END 
+INIT >\x0c\x0c SET_VAR  \xe6\x03 \x02 \x14\x04 END 
 SCEC SCE201_006 \xf0\x0e SCE_DONE 
 TEXT1 \xc4I\x01 TEXT2 U
  
@@ -91,7 +91,7 @@ TEXT1 \xc4I\x01 TEXT2 U
 拓司\n　「わからない。\pまったくわからない」\
 
   
-FLG1 4\x0f\x0c FLG1_SET \xe6\x03 \x02 \x14\x04 END 
+INIT 4\x0f\x0c SET_VAR  \xe6\x03 \x02 \x14\x04 END 
 SCEC SCE201_007 \xc2\x10 SCE_DONE 
 TEXT1 \xc8I\x01 TEXT2 \x7f
  
@@ -107,7 +107,7 @@ TEXT1 \xc8I\x01 TEXT2 \x7f
 そうしないと逆さまになったベッドからストンと落下してしまう\nと思ったのだ。\
 
   
-FLG1 \x06\x11\x0c FLG1_SET \xe6\x03 \x02 \x14\x04 END 
+INIT \x06\x11\x0c SET_VAR  \xe6\x03 \x02 \x14\x04 END 
 SCEC SCE201_008 <\x13 SCE_DONE 
 TEXT1 \xccI\x01 TEXT2 \xa5
  
@@ -119,7 +119,7 @@ TEXT1 \xccI\x01 TEXT2 \xa5
 考察は後回しだ。いまは少女の話を聞くことが先決だろう。\
 
   
-FLG1 \x80\x13\x0c FLG1_SET \xe6\x03 \x02 \x14\x04 END 
+INIT \x80\x13\x0c SET_VAR  \xe6\x03 \x02 \x14\x04 END 
 SCEC SCE201_009 N\x16 SCE_DONE 
 TEXT1 \xd0I\x01 TEXT2 n
  
@@ -131,7 +131,7 @@ TEXT1 \xd0I\x01 TEXT2 n
 ナタネ\n　「誰が決めたの？」\
 
   
-FLG1 \x92\x16\x0c FLG1_SET \xe6\x03 \x02 \x14\x04 END 
+INIT \x92\x16\x0c SET_VAR  \xe6\x03 \x02 \x14\x04 END 
 SCEC SCE201_010 \x84\x18 SCE_DONE 
 TEXT1 \xd4I\x01 TEXT2 \x8b
  
@@ -146,7 +146,7 @@ TEXT1 \xd4I\x01 TEXT2 \x8b
 拓司\n　「……ああ」\
 
   
-FLG1 \xc8\x18\x0c FLG1_SET \xe6\x03 \x02 \x14\x04 END 
+INIT \xc8\x18\x0c SET_VAR  \xe6\x03 \x02 \x14\x04 END 
 SCEC SCE201_011 .\x1b SCE_DONE 
 TEXT1 \xd8I\x01 TEXT2 f
  
@@ -156,12 +156,12 @@ TEXT1 \xd8I\x01 TEXT2 f
 　　あなたはかわいそうな病人で、あなたは『創る』ことなどで\n　　きない。そういうふうに信じ込ませようとして、そしてそれ\n　　は成功しつつある……いいわね？」\
 
   
-FLG1 r\x1b\x0c FLG1_SET \xe6\x03 \x02 \x14\x04 END \x03\x0c
+INIT r\x1b\x0c SET_VAR  \xe6\x03 \x02 \x14\x04 END \x03\x0c
 CHOICE
 もう一度聞く\n黙って続きを聞く\n\l0,2,
 ENDCHOICE
 
   
-FLG1 D\x1d\x0c FLG1_SET \xe6\x03 \x02 \x14\x04 END  \xe6\x03 
+INIT D\x1d\x0c SET_VAR  \xe6\x03 \x02 \x14\x04 END  \xe6\x03 
 CMD3 TextClose VAR1 \xba\x1d END 
 END_SCRIPT

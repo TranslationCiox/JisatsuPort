@@ -2,10 +2,10 @@ START_SCRIPT
 \xa6\x11\x01`B#\x01,\x0e
 CMD6 .\\Data\\Script\\Bgm.Fob VAR1 \x06 
 CMD2 StopCD RUNF 0 END   
-FLG1 =\x0c FLG1_SET
+INIT =\x0c SET_VAR 
 CMD6 .\\Data\\Script\\Bg.Fob VAR2 f \x02
 CMD4 BgAutoFadeIn VAR2 \x90 END   
-FLG1 \x04\x01\x0c FLG1_SET \x06 
+INIT \x04\x01\x0c SET_VAR  \x06 
 CMD2 PlayCD RUNF \xda END 
 SCEC SCEK05_001 \xf6 SCE_DONE 
 TEXT1 \x80\xa6\x01 TEXT2 \x96
@@ -18,7 +18,7 @@ TEXT1 \x80\xa6\x01 TEXT2 \x96
 　私はゆきを尊敬した。@
 　私のどこに魅力を見つけたのか、ゆきもまた、私をどこか尊敬\nしてくれているような感じがあって、それはとても心地がよかっ\nた。\w\z
   
-FLG1 :\x01\x0c FLG1_SET
+INIT :\x01\x0c SET_VAR 
 CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \xb2\x03 
 CMD2 TextOn RUNF \xe0\x03 END 
 SCEC SCEK05_002 \xfc\x03 SCE_DONE 
@@ -30,7 +30,7 @@ TEXT1 \x84\xa6\x01 TEXT2 ~
 私は自分自身をまじまじと見つめ、そうして自分があまりに薄っ\nぺらで、ゆきに返すような素敵なものをなにひとつ持っていない\nことに初めて気づいた。@
 若草ゆきに恋することで、私は、唐突に自分というものの輪郭を\nはっきり認識させられたのだった。\w\z
   
-FLG1 @\x04\x0c FLG1_SET \xb2\x03 \x02 \xe0\x03 END 
+INIT @\x04\x0c SET_VAR  \xb2\x03 \x02 \xe0\x03 END 
 SCEC SCEK05_003 r\x06 SCE_DONE 
 TEXT1 \x88\xa6\x01 TEXT2 _
  
@@ -41,7 +41,7 @@ TEXT1 \x88\xa6\x01 TEXT2 _
 何者も容易には侵入できない、立派な城壁だった。@
 けれども私が作り上げたのは城壁だけで、そのなかに城と呼べる\nものがなかったと……私は知った。\w\z
   
-FLG1 \xb6\x06\x0c FLG1_SET \xb2\x03 \x02 \xe0\x03 END 
+INIT \xb6\x06\x0c SET_VAR  \xb2\x03 \x02 \xe0\x03 END 
 SCEC SCEK05_004 l\x08 SCE_DONE 
 TEXT1 \x8c\xa6\x01 TEXT2 p
  
@@ -54,7 +54,7 @@ TEXT1 \x8c\xa6\x01 TEXT2 p
 私に対する露骨な悪意は、しだいに周囲から影を潜めていった。\nいまの（－－この学校での、ね）@
 私のスタンスは、このころに形作られたのだと思う。\w\z
   
-FLG1 \xb0\x08\x0c FLG1_SET \xb2\x03 \x02 \xe0\x03 END 
+INIT \xb0\x08\x0c SET_VAR  \xb2\x03 \x02 \xe0\x03 END 
 SCEC SCEK05_005 \xaa\n SCE_DONE 
 TEXT1 \x90\xa6\x01 TEXT2 \x8e
  
@@ -65,12 +65,12 @@ TEXT1 \x90\xa6\x01 TEXT2 \x8e
 真に価値あるものが、そこらにありふれているはずはない、と。@
 でも、思いとはうらはらに、私のなかで、徐々に、ゆきに抱きつ\nいて、キスをしたいという願望が膨らんでいった。\w\z
   
-FLG1 \xee\n\x0c FLG1_SET \xb2\x03 \x02 \xe0\x03 END \x03\x1a
+INIT \xee\n\x0c SET_VAR  \xb2\x03 \x02 \xe0\x03 END \x03\x1a
 CHOICE
 私はゆきに、自分の気持ちを正直に伝えた\nそれでも私は、ゆきとプラトニックな関係を続けた\n\l0,2,
 ENDCHOICE
 
   
-FLG1 `\r\x0c FLG1_SET \xb2\x03 \x02 \xe0\x03 END  \xb2\x03 
+INIT `\r\x0c SET_VAR  \xb2\x03 \x02 \xe0\x03 END  \xb2\x03 
 CMD3 TextClose VAR1 \x0e\x0e END 
 END_SCRIPT

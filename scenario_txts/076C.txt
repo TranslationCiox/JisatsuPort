@@ -8,7 +8,7 @@ TEXT1 `\x86 TEXT2 Q
 早桃\n　「おにいちゃん！\p　じゃあ、神凪先輩を見捨てるっていうの\n　　？！」\n拓司\n　「……」\
 
   
-FLG1 J\x0c FLG1_SET
+INIT J\x0c SET_VAR 
 CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \xae\x01 
 CMD2 TextOn RUNF \xdc\x01 END 
 SCEC SCE076_002 \xf8\x01 SCE_DONE 
@@ -21,7 +21,7 @@ TEXT1 d\x86 TEXT2 d
 拓司\n　「紅葉を助けたい気持ちは、誰にも負けないつもりだ……」\
 
   
-FLG1 <\x02\x0c FLG1_SET \xae\x01 \x02 \xdc\x01 END 
+INIT <\x02\x0c SET_VAR  \xae\x01 \x02 \xdc\x01 END 
 SCEC SCE076_003 \x06\x04 SCE_DONE 
 TEXT1 h\x86 TEXT2 r
  
@@ -34,7 +34,7 @@ TEXT1 h\x86 TEXT2 r
 \nぶつぶつと呪文のようにくり返すなたねの背中を追いながら、拓\n司は心の底に絶望をかみしめていた。\
 
   
-FLG1 J\x04\x0c FLG1_SET \xae\x01 \x02 \xdc\x01 END 
+INIT J\x04\x0c SET_VAR  \xae\x01 \x02 \xdc\x01 END 
 CMD6 .\\Data\\Script\\Bgm.Fob VAR1 L\x06 
 CMD2 StopCD RUNF v\x06 END  \xae\x01 
 CMD3 TextClose VAR1 \x9e\x06 END 

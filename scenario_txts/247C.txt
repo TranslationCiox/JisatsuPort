@@ -1,6 +1,6 @@
 START_SCRIPT
 \x035\x01`B#\x01^+  
-FLG1 9\x0c FLG1_SET
+INIT 9\x0c SET_VAR 
 CMD6 .\\Data\\Script\\Bg.Fob VAR2   \x02
 CMD4 BgAutoFadeIn VAR2 J END 
 SCEC SCE247_001 n SCE_DONE 
@@ -12,7 +12,7 @@ TEXT1 \x90\x91\x01 TEXT2
 \n拓司\n　「他には……？」\
 
   
-FLG1 \xb2\x0c FLG1_SET
+INIT \xb2\x0c SET_VAR 
 CMD7 .\\Data\\Script\\TextFunc.Fob RUNF R\x01 
 CMD2 TextOn RUNF \x80\x01 END 
 SCEC SCE247_002 \x9c\x01 SCE_DONE 
@@ -27,7 +27,7 @@ TEXT1 \x94\x91\x01 TEXT2 k
 \n錦城は最後まで強気を装っていた。\
 
   
-FLG1 \xe0\x01\x0c FLG1_SET R\x01 \x02 \x80\x01 END 
+INIT \xe0\x01\x0c SET_VAR  R\x01 \x02 \x80\x01 END 
 SCEC SCE247_003 \xc6\x03 SCE_DONE 
 TEXT1 \x98\x91\x01 TEXT2 g
  
@@ -43,7 +43,7 @@ TEXT1 \x98\x91\x01 TEXT2 g
 \n拓司は紅葉を制した。\
 
   
-FLG1 \n\x04\x0c FLG1_SET R\x01 \x02 \x80\x01 END 
+INIT \n\x04\x0c SET_VAR  R\x01 \x02 \x80\x01 END 
 SCEC SCE247_004 \xe0\x05 SCE_DONE 
 TEXT1 \x9c\x91\x01 TEXT2 `
  
@@ -53,7 +53,7 @@ TEXT1 \x9c\x91\x01 TEXT2 `
 紅葉\n　「うん……行こ」\
 
   
-FLG1 $\x06\x0c FLG1_SET R\x01 \x02 \x80\x01 END 
+INIT $\x06\x0c SET_VAR  R\x01 \x02 \x80\x01 END 
 SCEC SCE247_005 \xde\x07 SCE_DONE 
 TEXT1 \xa0\x91\x01 TEXT2 )
  
@@ -63,16 +63,16 @@ TEXT1 \xa0\x91\x01 TEXT2 )
 ドアを開き、外の世界へと。\
 
   
-FLG1 "\x08\x0c FLG1_SET R\x01 \x02 \x80\x01 END 
+INIT "\x08\x0c SET_VAR  R\x01 \x02 \x80\x01 END 
 SCEC SCE247_006 \t SCE_DONE 
 TEXT1 \xa4\x91\x01\x0c"  
-FLG1 \xc8\x0c FLG1_SET   \x02 J END   
-FLG1 \x02\x0c FLG1_SET  \x04
-FLG1 \x17\x0c FLG1_SET  \x08
-FLG1 \x01\x0c FLG1_SET
+INIT \xc8\x0c SET_VAR    \x02 J END   
+INIT \x02\x0c SET_VAR   \x04
+INIT \x17\x0c SET_VAR   \x08
+INIT \x01\x0c SET_VAR 
 CMD6 .\\Data\\Script\\Bgm.Fob VAR1 \xc6\t 
 CMD2 SePlay RUNF \xf0\t END   
-FLG1 \t\x01\x0c FLG1_SET \xc6\t 
+INIT \t\x01\x0c SET_VAR  \xc6\t 
 CMD2 PlayCD RUNF 2\n END \x03\xbb
  
 拓司\n　「これは……」@
@@ -87,7 +87,7 @@ CMD2 PlayCD RUNF 2\n END \x03\xbb
 あの工業団地の廃墟にさらなる歳月の洗礼を加えて、行き着く果\nてまで荒廃を深化させた－－そんな感じがする。\
 
   
-FLG1 N\n\x0c FLG1_SET R\x01 \x02 \x80\x01 END 
+INIT N\n\x0c SET_VAR  R\x01 \x02 \x80\x01 END 
 SCEC SCE247_007 t\r SCE_DONE 
 TEXT1 \xa8\x91\x01 TEXT2 `
  
@@ -95,7 +95,7 @@ TEXT1 \xa8\x91\x01 TEXT2 `
 もしかしたら、それこそが学生たちのなれの果てなのかもしれな\nい……。\
 
   
-FLG1 \xb8\r\x0c FLG1_SET R\x01 \x02 \x80\x01 END 
+INIT \xb8\r\x0c SET_VAR  R\x01 \x02 \x80\x01 END 
 SCEC SCE247_008 r\x0f SCE_DONE 
 TEXT1 \xac\x91\x01 TEXT2 D
  
@@ -105,7 +105,7 @@ TEXT1 \xac\x91\x01 TEXT2 D
 拓司はその手の上に自分の手を重ねて、力強く頷いた。\
 
   
-FLG1 \xb6\x0f\x0c FLG1_SET R\x01 \x02 \x80\x01 END 
+INIT \xb6\x0f\x0c SET_VAR  R\x01 \x02 \x80\x01 END 
 SCEC SCE247_009 \x11 SCE_DONE 
 TEXT1 \xb0\x91\x01 TEXT2 ?
  
@@ -113,7 +113,7 @@ TEXT1 \xb0\x91\x01 TEXT2 ?
 　　意味がわからないんじゃない。\p意味なんてないんだ」\
 
   
-FLG1 D\x11\x0c FLG1_SET R\x01 \x02 \x80\x01 END 
+INIT D\x11\x0c SET_VAR  R\x01 \x02 \x80\x01 END 
 SCEC SCE247_010 z\x12 SCE_DONE 
 TEXT1 \xb4\x91\x01 TEXT2 \x99
  
@@ -128,7 +128,7 @@ TEXT1 \xb4\x91\x01 TEXT2 \x99
 まっすぐ歩いているつもりなのに、壁に体当たりしているときも\nある。\
 
   
-FLG1 \xbe\x12\x0c FLG1_SET R\x01 \x02 \x80\x01 END 
+INIT \xbe\x12\x0c SET_VAR  R\x01 \x02 \x80\x01 END 
 SCEC SCE247_011 \\\x15 SCE_DONE 
 TEXT1 \xb8\x91\x01 TEXT2 M
  
@@ -139,8 +139,8 @@ TEXT1 \xb8\x91\x01 TEXT2 M
 しかし、拓司は身体の隅々に残ったエネルギーを総動員して、そ\nのまえに立った。\
 
   
-FLG1 \xa0\x15\x0c FLG1_SET R\x01 \x02 \x80\x01 END   
-FLG1 \x02\x0c FLG1_SET \xc6\t 
+INIT \xa0\x15\x0c SET_VAR  R\x01 \x02 \x80\x01 END   
+INIT \x02\x0c SET_VAR  \xc6\t 
 CMD2 SeStop RUNF 4\x17 END  \xc6\t 
 CMD2 StopCD RUNF \\\x17 END 
 SCEC SCE247_012 x\x17 SCE_DONE 
@@ -156,7 +156,7 @@ TEXT1 \xbc\x91\x01 TEXT2 D
 いや、そもそもそこには何かがあるのだろうか？\
 
   
-FLG1 \xbc\x17\x0c FLG1_SET R\x01 \x02 \x80\x01 END 
+INIT \xbc\x17\x0c SET_VAR  R\x01 \x02 \x80\x01 END 
 SCEC SCE247_013 \x06\x19 SCE_DONE 
 TEXT1 \xc0\x91\x01 TEXT2 _
  
@@ -168,12 +168,12 @@ TEXT1 \xc0\x91\x01 TEXT2 _
 紅葉\n　「ええ！」\
 
   
-FLG1 J\x19\x0c FLG1_SET R\x01 \x02 \x80\x01 END 
+INIT J\x19\x0c SET_VAR  R\x01 \x02 \x80\x01 END 
 SCEC SCE247_014 \x1b SCE_DONE 
 TEXT1 \xc4\x91\x01\x0c"  
-FLG1 \x02\x0c FLG1_SET  \x04
-FLG1 \x0f\x0c FLG1_SET  \x08
-FLG1 \x01\x0c FLG1_SET \xc6\t \x02 \xf0\t END \x03\xae
+INIT \x02\x0c SET_VAR   \x04
+INIT \x0f\x0c SET_VAR   \x08
+INIT \x01\x0c SET_VAR  \xc6\t \x02 \xf0\t END \x03\xae
  
 ２人は取り憑かれたように、椅子の脚を壁に叩き付けた。@
 一箇所に狙いを絞って叩きつけてゆく。@
@@ -188,7 +188,7 @@ FLG1 \x01\x0c FLG1_SET \xc6\t \x02 \xf0\t END \x03\xae
 １０センチほどしかない！\
 
   
-FLG1 \xac\x1b\x0c FLG1_SET R\x01 \x02 \x80\x01 END 
+INIT \xac\x1b\x0c SET_VAR  R\x01 \x02 \x80\x01 END 
 SCEC SCE247_015 \x9e\x1e SCE_DONE 
 TEXT1 \xc8\x91\x01 TEXT2 \x8d
  
@@ -204,7 +204,7 @@ TEXT1 \xc8\x91\x01 TEXT2 \x8d
 \nぴったりと穴に顔を張り付かせて、壁の向こうで誰かがこちらを\nのぞき込んでいたのだ。\
 
   
-FLG1 \xe2\x1e\x0c FLG1_SET R\x01 \x02 \x80\x01 END 
+INIT \xe2\x1e\x0c SET_VAR  R\x01 \x02 \x80\x01 END 
 SCEC SCE247_016 P! SCE_DONE 
 TEXT1 \xcc\x91\x01 TEXT2 m
  
@@ -218,7 +218,7 @@ TEXT1 \xcc\x91\x01 TEXT2 m
 \n近づいてきた紅葉を突き飛ばして、拓司は狂ったように壁に体当\nたりを繰り返した。\
 
   
-FLG1 \x94!\x0c FLG1_SET R\x01 \x02 \x80\x01 END 
+INIT \x94!\x0c SET_VAR  R\x01 \x02 \x80\x01 END 
 SCEC SCE247_017 \x82# SCE_DONE 
 TEXT1 \xd0\x91\x01 TEXT2 n
  
@@ -235,14 +235,14 @@ TEXT1 \xd0\x91\x01 TEXT2 n
 狂気を呼び込み、それに容易に支配される目だった。\
 
   
-FLG1 \xc6#\x0c FLG1_SET R\x01 \x02 \x80\x01 END 
+INIT \xc6#\x0c SET_VAR  R\x01 \x02 \x80\x01 END 
 SCEC SCE247_018 \xb8% SCE_DONE 
 TEXT1 \xd4\x91\x01 TEXT2 C
  
 体当たりを繰り返しているうちに、拓司のシャツの肩の部分には\n真っ赤な血が滲み始めた。\pそれに気づいてようやく拓司は体当た\nりをやめ、今度は椅子の脚をふりかぶって、メチャクチャに壁に\n叩き付け始めた。\pガンガンという音が頭が割れそうなくらい大\nきく響き渡る。\
 
   
-FLG1 \xfc%\x0c FLG1_SET R\x01 \x02 \x80\x01 END 
+INIT \xfc%\x0c SET_VAR  R\x01 \x02 \x80\x01 END 
 SCEC SCE247_019 B' SCE_DONE 
 TEXT1 \xd8\x91\x01 TEXT2 v
  
@@ -256,7 +256,7 @@ TEXT1 \xd8\x91\x01 TEXT2 v
 しかし、そうではないことを、拓司は知っていた。\
 
   
-FLG1 \x86'\x0c FLG1_SET R\x01 \x02 \x80\x01 END 
+INIT \x86'\x0c SET_VAR  R\x01 \x02 \x80\x01 END 
 SCEC SCE247_020 \x98) SCE_DONE 
 TEXT1 \xdc\x91\x01 TEXT2 ,
  
@@ -267,13 +267,13 @@ TEXT1 \xdc\x91\x01 TEXT2 ,
 最終波動がやってきたのだ。\
 
   
-FLG1 \xdc)\x0c FLG1_SET R\x01 \x02 \x80\x01 END \x03
-FLG1
+INIT \xdc)\x0c SET_VAR  R\x01 \x02 \x80\x01 END \x03
+INIT
 CHOICE
 シェルターに駆け戻る\n穴を広げる\n\l0,2,
 ENDCHOICE
 
   
-FLG1 \xc6*\x0c FLG1_SET R\x01 \x02 \x80\x01 END  R\x01 
+INIT \xc6*\x0c SET_VAR  R\x01 \x02 \x80\x01 END  R\x01 
 CMD3 TextClose VAR1 @+ END 
 END_SCRIPT

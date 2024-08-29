@@ -9,7 +9,7 @@ TEXT1 \xf0U TEXT2 b
 　まず目に付いたのが、度の強そうな眼鏡だった。\p眼鏡の端はな\n　ぜか小さくひび割れていて、その奥には穏やかなひかりをたた\n　えた瞳があって……そっと微笑んでいた。\
 
   
-FLG1 J\x0c FLG1_SET
+INIT J\x0c SET_VAR 
 CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \xf2\x01 
 CMD2 TextOn RUNF  \x02 END 
 SCEC SCE045_002 <\x02 SCE_DONE 
@@ -25,7 +25,7 @@ TEXT1 \xf4U TEXT2 \xb7
 　拓司の身体を通り越した向こう側を……拓司が背負った非常扉\n　を……さらに非常口を通り越した向こう側を……どこでもない\n　はるか向こうの一点を、じっと見つめているのだ。\
 
   
-FLG1 \x80\x02\x0c FLG1_SET \xf2\x01 \x02  \x02 END 
+INIT \x80\x02\x0c SET_VAR  \xf2\x01 \x02  \x02 END 
 SCEC SCE045_003 \x96\x05 SCE_DONE 
 TEXT1 \xf8U TEXT2 ]
  
@@ -38,7 +38,7 @@ TEXT1 \xf8U TEXT2 ]
 \n　そういうと彼女は、小脇に抱えたファイルから１枚の紙切れを\n大事そうに取り出した。\pそれはＡ４大の紙切れで、そこにはなにか\nびっしりと文字が書き込まれている。\
 
   
-FLG1 \xda\x05\x0c FLG1_SET \xf2\x01 \x02  \x02 END 
+INIT \xda\x05\x0c SET_VAR  \xf2\x01 \x02  \x02 END 
 SCEC SCE045_004 \x88\x07 SCE_DONE 
 TEXT1 \xfcU TEXT2 B
  
@@ -48,7 +48,7 @@ TEXT1 \xfcU TEXT2 B
 \n　そこには奇妙な図形や計算式、そして明らかに常軌を逸した文\n　章が踊っていた。\
 
   
-FLG1 \xcc\x07\x0c FLG1_SET \xf2\x01 \x02  \x02 END 
+INIT \xcc\x07\x0c SET_VAR  \xf2\x01 \x02  \x02 END 
 SCEC SCE045_005 \x0e\t SCE_DONE 
 TEXT1 V TEXT2 \x17\x01
  
@@ -58,7 +58,7 @@ TEXT1 V TEXT2 \x17\x01
 　電話番号××××－××××。\n　住所×××××××××××……\
 
   
-FLG1 R\t\x0c FLG1_SET \xf2\x01 \x02  \x02 END 
+INIT R\t\x0c SET_VAR  \xf2\x01 \x02  \x02 END 
 SCEC SCE045_006 \xe8\r SCE_DONE 
 TEXT1 \x04V TEXT2 O
  
@@ -71,7 +71,7 @@ TEXT1 \x04V TEXT2 O
 　そして雲居なたねは、今年の春、別の意味でさらに有名にな\n　った。\
 
   
-FLG1 ,\x0e\x0c FLG1_SET \xf2\x01 \x02  \x02 END 
+INIT ,\x0e\x0c SET_VAR  \xf2\x01 \x02  \x02 END 
 SCEC SCE045_007 \xa2\x0f SCE_DONE 
 TEXT1 \x08V TEXT2 \xac
  
@@ -81,7 +81,7 @@ TEXT1 \x08V TEXT2 \xac
 　雲居なたねはＵＦＯに拉致されて、宇宙人に身体検査されたら\nしい……優秀な地球人のサンプルとして、身体の奥まで調べ尽く\nされたらしい……よくある話だよね……一種の現実逃避……宇宙\n人にレイプされたと信じることでレイプされたという現実から自\n分を守ってるわけだよ……なんかそういうの小説で読んだ気がす\nる……嘲笑……嘲笑……嘲笑。\
 
   
-FLG1 \xe6\x0f\x0c FLG1_SET \xf2\x01 \x02  \x02 END 
+INIT \xe6\x0f\x0c SET_VAR  \xf2\x01 \x02  \x02 END 
 SCEC SCE045_008 \xd0\x12 SCE_DONE 
 TEXT1 \x0cV TEXT2 \x96
  
@@ -91,7 +91,7 @@ TEXT1 \x0cV TEXT2 \x96
 　虚ろな瞳で、誰かまわずその話をして回った。どのようにＵＦ\nＯに拉致されて、どのように身体を調べられたのか？\p　宇宙人は\nどのような外見で、どのような陰謀を企てているのか？\p　地球人\nはどのような対策を練って、どのように対抗しなければならない\nのか……？\p　最初は面白がっていた学生たちも、やがてそれが冗\n談ではすまされないということに気づき、雲居なたねを避ける\nようになっていった。\
 
   
-FLG1 \x14\x13\x0c FLG1_SET \xf2\x01 \x02  \x02 END 
+INIT \x14\x13\x0c SET_VAR  \xf2\x01 \x02  \x02 END 
 SCEC SCE045_009 \xa6\x15 SCE_DONE 
 TEXT1 \x10V TEXT2 \x8b
  
@@ -103,7 +103,7 @@ TEXT1 \x10V TEXT2 \x8b
 　壊れやすい、ガラス細工のようなイメージが。\
 
   
-FLG1 \xea\x15\x0c FLG1_SET \xf2\x01 \x02  \x02 END 
+INIT \xea\x15\x0c SET_VAR  \xf2\x01 \x02  \x02 END 
 SCEC SCE045_010 P\x18 SCE_DONE 
 TEXT1 \x14V TEXT2 W
  
@@ -116,7 +116,7 @@ TEXT1 \x14V TEXT2 W
 \n　なたねは照れくさそうにほほえんだ。\
 
   
-FLG1 \x94\x18\x0c FLG1_SET \xf2\x01 \x02  \x02 END 
+INIT \x94\x18\x0c SET_VAR  \xf2\x01 \x02  \x02 END 
 SCEC SCE045_011 *\x1a SCE_DONE 
 TEXT1 \x18V TEXT2 O
  
@@ -125,7 +125,7 @@ TEXT1 \x18V TEXT2 O
 　寂しそうなほほえみだった。\
 
   
-FLG1 n\x1a\x0c FLG1_SET \xf2\x01 \x02  \x02 END 
+INIT n\x1a\x0c SET_VAR  \xf2\x01 \x02  \x02 END 
 SCEC SCE045_012 \xe4\x1b SCE_DONE 
 TEXT1 \x1cV TEXT2 d
  
@@ -140,7 +140,7 @@ TEXT1 \x1cV TEXT2 d
 　真剣に自分と向き合っているのだ。\
 
   
-FLG1 (\x1c\x0c FLG1_SET \xf2\x01 \x02  \x02 END 
+INIT (\x1c\x0c SET_VAR  \xf2\x01 \x02  \x02 END 
 SCEC SCE045_013 \xf2\x1d SCE_DONE 
 TEXT1  V TEXT2 \x8b
  
@@ -155,7 +155,7 @@ TEXT1  V TEXT2 \x8b
 \n　御堂はフン、と鼻で笑った。\
 
   
-FLG1 6\x1e\x0c FLG1_SET \xf2\x01 \x02  \x02 END 
+INIT 6\x1e\x0c SET_VAR  \xf2\x01 \x02  \x02 END 
 SCEC SCE045_014 \x9c  SCE_DONE 
 TEXT1 $V TEXT2 V
  
@@ -170,7 +170,7 @@ TEXT1 $V TEXT2 V
 拓司\n　「なに？」\
 
   
-FLG1 \xe0 \x0c FLG1_SET \xf2\x01 \x02  \x02 END 
+INIT \xe0 \x0c SET_VAR  \xf2\x01 \x02  \x02 END 
 SCEC SCE045_015 r" SCE_DONE 
 TEXT1 (V TEXT2 [
  
@@ -183,7 +183,7 @@ TEXT1 (V TEXT2 [
 拓司\n　「……何の話だ？」\
 
   
-FLG1 \xb6"\x0c FLG1_SET \xf2\x01 \x02  \x02 END 
+INIT \xb6"\x0c SET_VAR  \xf2\x01 \x02  \x02 END 
 SCEC SCE045_016 \\$ SCE_DONE 
 TEXT1 ,V TEXT2 \x8d
  
@@ -198,7 +198,7 @@ TEXT1 ,V TEXT2 \x8d
 拓司\n　「……」\
 
   
-FLG1 \xa0$\x0c FLG1_SET \xf2\x01 \x02  \x02 END 
+INIT \xa0$\x0c SET_VAR  \xf2\x01 \x02  \x02 END 
 SCEC SCE045_017 \x0e' SCE_DONE 
 TEXT1 0V TEXT2 \x81
  
@@ -211,7 +211,7 @@ TEXT1 0V TEXT2 \x81
 　無意味な笑いがまきおこる。\
 
   
-FLG1 R'\x0c FLG1_SET \xf2\x01 \x02  \x02 END 
+INIT R'\x0c SET_VAR  \xf2\x01 \x02  \x02 END 
 SCEC SCE045_019 \x90) SCE_DONE 
 TEXT1 8V TEXT2 V
  
@@ -226,19 +226,19 @@ TEXT1 8V TEXT2 V
 拓司\n　「……なに？」\
 
   
-FLG1 \xd4)\x0c FLG1_SET \xf2\x01 \x02  \x02 END 
+INIT \xd4)\x0c SET_VAR  \xf2\x01 \x02  \x02 END 
 SCEC SCE045_020 f+ SCE_DONE 
 TEXT1 <V TEXT2 ?
  
 御堂\n　「そうだ、お前も来るか？\p　天才少女雲居なたねさんの学説\n　　によると、人間と人間の出会いにはすべからく意味があるら\n　　しいぜ？\p　ってことは、ここでおれたちが逢ったことも、偶\n　　然じゃないってことだろ？\p　ナ……来いよ、虎菱？」\
 
   
-FLG1 \xaa+\x0c FLG1_SET \xf2\x01 \x02  \x02 END \x03\x0b
+INIT \xaa+\x0c SET_VAR  \xf2\x01 \x02  \x02 END \x03\x0b
 CHOICE
 御堂に従う\n御堂を無視する\n\l0,2,
 ENDCHOICE
 
   
-FLG1 \xe0,\x0c FLG1_SET \xf2\x01 \x02  \x02 END  \xf2\x01 
+INIT \xe0,\x0c SET_VAR  \xf2\x01 \x02  \x02 END  \xf2\x01 
 CMD3 TextClose VAR1 R- END 
 END_SCRIPT

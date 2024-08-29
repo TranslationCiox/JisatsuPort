@@ -14,7 +14,7 @@ TEXT1 p\\\x01 TEXT2 \x98
 \n－－危ないところだった。\pおれはいま、妄想の深みから生還した\nのだ。\pやはり、最終的に戻ってくるのは……世界の中心は、ここ\nなのだ。\p『白い部屋の世界』は、夢だった。\p教授も、ナタネも、\n青い鳥も、パイプベッドも、換気ファンも、発狂した自分も、全\n部実在しない、想像の産物だったのだ。\
 
   
-FLG1 J\x0c FLG1_SET
+INIT J\x0c SET_VAR 
 CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \xca\x02 
 CMD2 TextOn RUNF \xf8\x02 END  \xca\x02 
 CMD3 TextClose VAR1  \x03 END 

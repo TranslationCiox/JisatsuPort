@@ -1,9 +1,9 @@
 START_SCRIPT
 \x18\x07\x01`B#\x01\x92\x05  
-FLG1 \xc8\x0c FLG1_SET
+INIT \xc8\x0c SET_VAR 
 CMD6 .\\Data\\Script\\Bg.Fob VAR2   \x02
 CMD4 BgAutoFadeIn VAR2 J END   
-FLG1 \t\x01\x0c FLG1_SET
+INIT \t\x01\x0c SET_VAR 
 CMD6 .\\Data\\Script\\Bgm.Fob VAR1 \x88 
 CMD2 PlayCD RUNF \xb2 END 
 SCEC SCE216_001 \xce SCE_DONE 
@@ -18,24 +18,24 @@ TEXT1  a\x01 TEXT2 \xb2
 それは……\
 
   
-FLG1 \x12\x01\x0c FLG1_SET
+INIT \x12\x01\x0c SET_VAR 
 CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \xfa\x03 
 CMD2 TextOn RUNF (\x04 END ! 
-FLG1 \x14 FLG2 \x0b
-FLG1\x01 \x1b1\xd4\x04\x03\x0e
+INIT \x14 FLG2 \x0b
+INIT\x01 \x1b1\xd4\x04\x03\x0e
 CHOICE
 それは早桃だった\nそれはカンナだった\n\l0,2,
 ENDCHOICE
 
   
-FLG1 |\x04\x0c FLG1_SET2\x18\x05
+INIT |\x04\x0c SET_VAR 2\x18\x05
 HERO 
 CHOICE
 それは早桃だった\n\l0,1,
 ENDCHOICE
 
   
-FLG1 \xda\x04\x0c FLG1_SET \xfa\x03 \x02 (\x04 END  \xfa\x03 \x02
+INIT \xda\x04\x0c SET_VAR  \xfa\x03 \x02 (\x04 END  \xfa\x03 \x02
 CMD4 GetLastTxtID VAR2 D\x05 END  \xfa\x03 
 CMD3 TextClose VAR1 t\x05 END 
 END_SCRIPT

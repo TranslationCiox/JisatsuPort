@@ -1,6 +1,6 @@
 START_SCRIPT
 \xfb\r\x01`B#\x01\x94\x0b  
-FLG1 \x05\x01\x0c FLG1_SET
+INIT \x05\x01\x0c SET_VAR 
 CMD6 .\\Data\\Script\\Bgm.Fob VAR1   
 CMD2 PlayCD RUNF J END 
 SCEC SCEG02_004 f SCE_DONE 
@@ -13,10 +13,10 @@ TEXT1 T\xc5\x01 TEXT2 i
 錦城\n　「しーっ！　……静かに。\pみんなが目を覚ますわ。@
 　　先生ね、考えたの。\p虎菱くんがこういうのを励みにできれ\n　　ば……って」\w\z
   
-FLG1 \xaa\x0c FLG1_SET
+INIT \xaa\x0c SET_VAR 
 CMD7 .\\Data\\Script\\TextFunc.Fob RUNF n\x02 
 CMD2 TextOn RUNF \x9c\x02 END   
-FLG1 ^\x0c FLG1_SET
+INIT ^\x0c SET_VAR 
 CMD6 .\\Data\\Script\\Bg.Fob VAR2 \xd2\x02 \x02
 CMD4 BgAutoFadeIn VAR2 \xfc\x02 END 
 SCEC SCEG02_005  \x03 SCE_DONE 
@@ -30,7 +30,7 @@ TEXT1 X\xc5\x01 TEXT2 R
 錦城\n　「よかった」@
 \n錦城は拓司の目をじっと見つめたまま、薄く笑った。\w\z
   
-FLG1 d\x03\x0c FLG1_SET n\x02 \x02 \x9c\x02 END 
+INIT d\x03\x0c SET_VAR  n\x02 \x02 \x9c\x02 END 
 SCEC SCEG02_006 \xe6\x04 SCE_DONE 
 TEXT1 \\\xc5\x01 TEXT2 R
  
@@ -41,7 +41,7 @@ TEXT1 \\\xc5\x01 TEXT2 R
 拓司\n　「……」@
 黙っていると、錦城の手の動きがひどくゆっくりとしたものに変\nわった。\pじらすように止まり、少し動いてまた止まる。\w\z
   
-FLG1 *\x05\x0c FLG1_SET n\x02 \x02 \x9c\x02 END 
+INIT *\x05\x0c SET_VAR  n\x02 \x02 \x9c\x02 END 
 SCEC SCEG02_007 \xac\x06 SCE_DONE 
 TEXT1 `\xc5\x01 TEXT2 R
  
@@ -54,7 +54,7 @@ TEXT1 `\xc5\x01 TEXT2 R
 拓司\n　「もっと……」@
 錦城\n　「いやらしい子ね。先生の手、道具だとでも思ってるのかしら？\n　　ふふふ」\w\z
   
-FLG1 \xf0\x06\x0c FLG1_SET n\x02 \x02 \x9c\x02 END 
+INIT \xf0\x06\x0c SET_VAR  n\x02 \x02 \x9c\x02 END 
 SCEC SCEG02_008 r\x08 SCE_DONE 
 TEXT1 d\xc5\x01 TEXT2 \x86
  
@@ -68,13 +68,13 @@ TEXT1 d\xc5\x01 TEXT2 \x86
 拓司\n　「先生……」@
 錦城\n　「ねえ……触りたい？\p　先生の胸、そんなにじっと見つめて\n　　……ねえ、触りたいの？」\w\z
   
-FLG1 \xb6\x08\x0c FLG1_SET n\x02 \x02 \x9c\x02 END 
+INIT \xb6\x08\x0c SET_VAR  n\x02 \x02 \x9c\x02 END 
 S204 
 CHOICE
 「触りたい」\n「……」\n\l0,2,
 ENDCHOICE
 
   
-FLG1 \x08\x0b\x0c FLG1_SET n\x02 \x02 \x9c\x02 END  n\x02 
+INIT \x08\x0b\x0c SET_VAR  n\x02 \x02 \x9c\x02 END  n\x02 
 CMD3 TextClose VAR1 v\x0b END 
 END_SCRIPT

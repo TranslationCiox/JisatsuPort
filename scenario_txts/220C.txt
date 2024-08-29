@@ -6,10 +6,10 @@ TEXT1 `g\x01 TEXT2 \x11
 \n\n\n\n\n\n\n\n\n\n　　　　　　　　　　　　　『９日目』\
 
   
-FLG1 J\x0c FLG1_SET
+INIT J\x0c SET_VAR 
 CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \xae 
 CMD2 TextOn RUNF \xdc END   
-FLG1 \x0c\x01\x0c FLG1_SET
+INIT \x0c\x01\x0c SET_VAR 
 CMD6 .\\Data\\Script\\Bgm.Fob VAR1 \x12\x01 
 CMD2 PlayCD RUNF <\x01 END 
 SCEC SCE220_002 X\x01 SCE_DONE 
@@ -24,7 +24,7 @@ TEXT1 dg\x01 TEXT2 \x81
 傍らには、錦城の姿があった。\
 
   
-FLG1 \x9c\x01\x0c FLG1_SET \xae \x02 \xdc END 
+INIT \x9c\x01\x0c SET_VAR  \xae \x02 \xdc END 
 SCEC SCE220_003 \xda\x03 SCE_DONE 
 TEXT1 hg\x01 TEXT2 \x8e
  
@@ -32,8 +32,8 @@ TEXT1 hg\x01 TEXT2 \x8e
 錦城\n　「理屈から言っても、食糧管理者が食糧管理室に常在するって\n　　いうのは合理的だわ。\p今回の雲居さんへの……暴力は……\n　　不可欠だった。\pわかるわね、みんな？\p　こういうことは二度\n　　と起こされてはならないわ。\pだから、その防止の意味でも、\n　　御堂くんがみんなと違う場所にいるということは意味がある\n　　……そうでしょう？」\
 
   
-FLG1 \x1e\x04\x0c FLG1_SET \xae \x02 \xdc END   
-FLG1 &\x0c FLG1_SET
+INIT \x1e\x04\x0c SET_VAR  \xae \x02 \xdc END   
+INIT &\x0c SET_VAR 
 CMD6 .\\Data\\Script\\Bg.Fob VAR2 \xaa\x06 \x02
 CMD4 BgAutoFadeIn VAR2 \xd4\x06 END 
 SCEC SCE220_004 \xf8\x06 SCE_DONE 
@@ -50,7 +50,7 @@ TEXT1 lg\x01 TEXT2 \xc7
 \n御堂は笑った。\
 
   
-FLG1 <\x07\x0c FLG1_SET \xae \x02 \xdc END   
-FLG1 \xc8\x0c FLG1_SET \xaa\x06 \x02 \xd4\x06 END  \xae 
+INIT <\x07\x0c SET_VAR  \xae \x02 \xdc END   
+INIT \xc8\x0c SET_VAR  \xaa\x06 \x02 \xd4\x06 END  \xae 
 CMD3 TextClose VAR1 \xd2\n END 
 END_SCRIPT

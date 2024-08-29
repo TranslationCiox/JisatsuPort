@@ -9,7 +9,7 @@ TEXT1 \xa9\x01 TEXT2 `
 でも、その話を聞きながら、私は、ゆきを救い出す方法をひとつ\n見つけだしていた。@
 しばらく考えてから、私はゆきにいった。\w\z
   
-FLG1 J\x0c FLG1_SET
+INIT J\x0c SET_VAR 
 CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \xea\x01 
 CMD2 TextOn RUNF \x18\x02 END \x03\x18
 CHOICE
@@ -17,6 +17,6 @@ CHOICE
 ENDCHOICE
 
   
-FLG1 4\x02\x0c FLG1_SET \xea\x01 \x02 \x18\x02 END  \xea\x01 
+INIT 4\x02\x0c SET_VAR  \xea\x01 \x02 \x18\x02 END  \xea\x01 
 CMD3 TextClose VAR1 \xda\x02 END 
 END_SCRIPT

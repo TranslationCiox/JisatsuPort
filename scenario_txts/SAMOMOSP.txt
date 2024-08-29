@@ -1,7 +1,7 @@
 START_SCRIPT
 \xea\x02\x01\xf0\x044\x01\x08\x03! 
-FLG1 $ FLG2 \x0b
-FLG1\x01,\xd4\x01
+INIT $ FLG2 \x0b
+INIT\x01,\xd4\x01
 CMD8 .\\Data\\Script\\Scenario\\s1c.Fob RUNF 0 
 CMD2 start VAR1 b END 2\x0c\x02
 CMD8 .\\Data\\Script\\Scenario\\s2c.Fob RUNF \x84 \x02 b END 2\x0c\x02
@@ -9,13 +9,13 @@ CMD8 .\\Data\\Script\\Scenario\\s3c.Fob RUNF \xca \x02 b END 2\x0c\x02
 CMD8 .\\Data\\Script\\Scenario\\s4c.Fob RUNF \x10\x01 \x02 b END 2\x0c\x02
 CMD8 .\\Data\\Script\\Scenario\\s5c.Fob RUNF V\x01 \x02 b END 2\x0c\x02
 CMD8 \x82\xe2\x82\xce\x82\xa2\x82\xe6\x81[!!! \x83V\x83i\x83\x8a\x83I\x82\xaa\x82\xcb\x81[\\n \x9c\x01 \x02#\x022\x0c\x02\x0c\x02\x06*\x01~\x02\xc4\x03\n\x01\x04P\x01\x05\x96\x01  
-FLG1 \xc8\x0c FLG1_SET
+INIT \xc8\x0c SET_VAR 
 CMD6 .\\Data\\Script\\Bg.Fob VAR2 ,\x02 \x02
 CMD4 BgAutoFadeIn VAR2 V\x02 END 
 CMD6 .\\Data\\Script\\Bgm.Fob VAR1 z\x02 
 CMD2 StopCD RUNF \xa4\x02 END ! 
-FLG1 $ FLG2! 
-FLG1 $ FLG2 \x0b
-FLG1\x01 \x01
-FLG1\x0c"
+INIT $ FLG2! 
+INIT $ FLG2 \x0b
+INIT\x01 \x01
+INIT\x0c"
 END_SCRIPT

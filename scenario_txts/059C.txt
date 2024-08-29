@@ -15,7 +15,7 @@ TEXT1 \xd0k TEXT2 z
 早桃は何を隠しているのだろうか？\
 
   
-FLG1 J\x0c FLG1_SET
+INIT J\x0c SET_VAR 
 CMD7 .\\Data\\Script\\TextFunc.Fob RUNF R\x02 
 CMD2 TextOn RUNF \x80\x02 END  R\x02 
 CMD3 TextClose VAR1 \xa8\x02 END 

@@ -1,9 +1,9 @@
 START_SCRIPT
 \x1e\x15\x01`B#\x01Z\x11  
-FLG1 \x05\x0c FLG1_SET
+INIT \x05\x0c SET_VAR 
 CMD6 .\\Data\\Script\\Bg.Fob VAR2   \x02
 CMD4 BgAutoFadeIn VAR2 J END   
-FLG1 \x08\x01\x0c FLG1_SET
+INIT \x08\x01\x0c SET_VAR 
 CMD6 .\\Data\\Script\\Bgm.Fob VAR1 \x88 
 CMD2 PlayCD RUNF \xb2 END 
 SCEC SCE025_001 \xce SCE_DONE 
@@ -16,7 +16,7 @@ TEXT1 \xb06 TEXT2 }
 リアルな夢だった。\
 
   
-FLG1 \x12\x01\x0c FLG1_SET
+INIT \x12\x01\x0c SET_VAR 
 CMD7 .\\Data\\Script\\TextFunc.Fob RUNF &\x03 
 CMD2 TextOn RUNF T\x03 END  \x88 
 CMD2 StopCD RUNF |\x03 END 
@@ -32,7 +32,7 @@ TEXT1 \xb46 TEXT2 N
 錦城\n　「……というように、若者が悩み続けている間にも、『世界の\n　　風車はクルクルと回っている』わけです」\
 
   
-FLG1 \xdc\x03\x0c FLG1_SET &\x03 \x02 T\x03 END 
+INIT \xdc\x03\x0c SET_VAR  &\x03 \x02 T\x03 END 
 SCEC SCE025_003 N\x05 SCE_DONE 
 TEXT1 \xb86 TEXT2 \xa2
  
@@ -50,7 +50,7 @@ TEXT1 \xb86 TEXT2 \xa2
 　さきほどの夢の中で感じた、いいようのない恐怖の方がよっぽ\n　どリアルだ。\
 
   
-FLG1 \x92\x05\x0c FLG1_SET &\x03 \x02 T\x03 END 
+INIT \x92\x05\x0c SET_VAR  &\x03 \x02 T\x03 END 
 SCEC SCE025_004 T\x08 SCE_DONE 
 TEXT1 \xbc6 TEXT2 \x9c
  
@@ -60,9 +60,9 @@ TEXT1 \xbc6 TEXT2 \x9c
 /*　■CG07　表示（ノンエフェクト）*/\a7,-1,-1,0,\a0,6,1,0,\a6,0,0,0,カンナ\n　「－－こうしましょう。\pここ以外では、あなたと私は知り合いで\n　　も何でもない。\pお互いの世界に干渉しないし、興味も持たない\n　　。\pお互いの世界……フフフ。\p私たちの世界以外では、私たちは\n　　他人になるの。\pそうすることで、私たちの世界はより本物にな\n　　る……どうかしら？」\
 
   
-FLG1 \x98\x08\x0c FLG1_SET &\x03 \x02 T\x03 END   
-FLG1 \xc8\x0c FLG1_SET   \x02 J END   
-FLG1 \x06\x01\x0c FLG1_SET \x88 \x02 \xb2 END 
+INIT \x98\x08\x0c SET_VAR  &\x03 \x02 T\x03 END   
+INIT \xc8\x0c SET_VAR    \x02 J END   
+INIT \x06\x01\x0c SET_VAR  \x88 \x02 \xb2 END 
 SCEC SCE025_005 \xaa\x0b SCE_DONE 
 TEXT1 \xc06 TEXT2 \xa3
  
@@ -87,8 +87,8 @@ TEXT1 \xc06 TEXT2 \xa3
 なにか？\
 
   
-FLG1 \xee\x0b\x0c FLG1_SET &\x03 \x02 T\x03 END   
-FLG1 \x05\x0c FLG1_SET   \x02 J END  \x88 \x02 |\x03 END 
+INIT \xee\x0b\x0c SET_VAR  &\x03 \x02 T\x03 END   
+INIT \x05\x0c SET_VAR    \x02 J END  \x88 \x02 |\x03 END 
 SCEC SCE025_006 \x02\x0f SCE_DONE 
 TEXT1 \xc46 TEXT2 l
  
@@ -98,6 +98,6 @@ TEXT1 \xc46 TEXT2 l
 \n　遠景。\p国旗掲揚塔に渡された綱。\pその上から、葉っぱのように人\n　影が落下する。\pそれは淡々と、なんてことのない風景のように見\n　える。\pサイレント映画のようだ。@
 \z
   
-FLG1 F\x0f\x0c FLG1_SET &\x03 \x02 T\x03 END  &\x03 
+INIT F\x0f\x0c SET_VAR  &\x03 \x02 T\x03 END  &\x03 
 CMD3 TextClose VAR1 <\x11 END 
 END_SCRIPT

@@ -11,7 +11,7 @@ TEXT1 ,z\x01 TEXT2 \xa2
 　夢のなかで宇宙人に見つめられると、なたねは怖くて怖くて身\n動きがとれなくなってしまいうのでした。\p宇宙人はなたねが動\nけないのをいいことに、キスをしたり、身体を触ったりしました。\n\p　そしていつも最後には、管のようなものをなたねのいやらしい\nところに突き刺して、毒の液を身体の中に流し込むのです。\
 
   
-FLG1 J\x0c FLG1_SET
+INIT J\x0c SET_VAR 
 CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \xf2\x02 
 CMD2 TextOn RUNF  \x03 END 
 SCEC SCE232_005 <\x03 SCE_DONE 
@@ -28,7 +28,7 @@ TEXT1 0z\x01 TEXT2 \xdc
 　恥ずかしい気持ちはしましたが、お義父さんしか相談できる人\nがいなかったのです。\
 
   
-FLG1 \x80\x03\x0c FLG1_SET \xf2\x02 \x02  \x03 END 
+INIT \x80\x03\x0c SET_VAR  \xf2\x02 \x02  \x03 END 
 SCEC SCE232_006 *\x07 SCE_DONE 
 TEXT1 4z\x01 TEXT2 \xf6
  
@@ -45,7 +45,7 @@ TEXT1 4z\x01 TEXT2 \xf6
 　なたねはとてもショックでした。\pでも、写真を見ていると、ま\nたいやらしい気持ちがむずむずとわいてきて、気がつくとなたね\nは、写真を１枚ポケットに忍び込ませて、部屋を出ていたのです。\n\
 
   
-FLG1 n\x07\x0c FLG1_SET \xf2\x02 \x02  \x03 END 
+INIT n\x07\x0c SET_VAR  \xf2\x02 \x02  \x03 END 
 SCEC SCE232_007 \x80\x0b SCE_DONE 
 TEXT1 8z\x01 TEXT2 \xdd
  
@@ -55,7 +55,7 @@ TEXT1 8z\x01 TEXT2 \xdd
 　夢のなかで宇宙人にいたずらされるのは、あいかわらず嫌な気\n分でした。\pけれども一度、写真の女の子と同じように、いやらし\nい液を顔にかけられたときは、信じられないくらいどきどきした\n気持ちになりました。\pそして翌朝、そんな自分が情けなくて、悲\nしくて、泣いてしまうのでした。\
 
   
-FLG1 \xc4\x0b\x0c FLG1_SET \xf2\x02 \x02  \x03 END 
+INIT \xc4\x0b\x0c SET_VAR  \xf2\x02 \x02  \x03 END 
 SCEC SCE232_008 r\x0f SCE_DONE 
 TEXT1 <z\x01 TEXT2 \xf8
  
@@ -70,7 +70,7 @@ TEXT1 <z\x01 TEXT2 \xf8
 　なたねは『夢うらない』の本を読んで、そこに書いてあった悪\nい夢の撃退法を試すことにしました。\p本には、「真っ黒に塗った\n長い針を枕の下に隠しておいて、夢のなかで悪魔に突き刺すと、\n二度と悪夢は見なくなる」と書いてありました。\
 
   
-FLG1 \xb6\x0f\x0c FLG1_SET \xf2\x02 \x02  \x03 END 
+INIT \xb6\x0f\x0c SET_VAR  \xf2\x02 \x02  \x03 END 
 SCEC SCE232_009 \xd0\x13 SCE_DONE 
 TEXT1 @z\x01 TEXT2 \xd3
  
@@ -85,8 +85,8 @@ TEXT1 @z\x01 TEXT2 \xd3
 　えいやっ！\
 
   
-FLG1 \x14\x14\x0c FLG1_SET \xf2\x02 \x02  \x03 END   
-FLG1 *\x0c FLG1_SET
+INIT \x14\x14\x0c SET_VAR  \xf2\x02 \x02  \x03 END   
+INIT *\x0c SET_VAR 
 CMD6 .\\Data\\Script\\Bg.Fob VAR2 \xb4\x17 
 CMD2 BgOn VAR2 \xde\x17 END 
 SCEC SCE232_010 \xfa\x17 SCE_DONE 
@@ -100,8 +100,8 @@ TEXT1 Dz\x01 TEXT2 \xa2
 　夢から覚めたというのに、なたねのパジャマの前ははだけたま\nま。\pからだはべとべとして、宇宙人がつけた唾の、いやな匂いが\nこびりついています。\pおそるおそる手を伸ばすと、いやらしいと\nころから、見たこともないねばねばした液があふれ出しています。\n\p　そして、開けっ放しの部屋のドアの向こうから、なにか奇妙な\n音が聞こえてくるではあいませんか！\
 
   
-FLG1 >\x18\x0c FLG1_SET \xf2\x02 \x02  \x03 END   
-FLG1 \xc8\x0c FLG1_SET \xb4\x17 \x02
+INIT >\x18\x0c SET_VAR  \xf2\x02 \x02  \x03 END   
+INIT \xc8\x0c SET_VAR  \xb4\x17 \x02
 CMD4 BgAutoFadeIn VAR2 &\x1b END 
 SCEC SCE232_011 J\x1b SCE_DONE 
 TEXT1 Hz\x01 TEXT2 |
@@ -123,8 +123,8 @@ TEXT1 Hz\x01 TEXT2 |
 　なたねは思い切って、お義父さんの部屋のドアをばたん！　と\n　開きました。\
 
   
-FLG1 \x8e\x1b\x0c FLG1_SET \xf2\x02 \x02  \x03 END   
-FLG1 \xcb\x0c FLG1_SET \xb4\x17 \x02 \xde\x17 END 
+INIT \x8e\x1b\x0c SET_VAR  \xf2\x02 \x02  \x03 END   
+INIT \xcb\x0c SET_VAR  \xb4\x17 \x02 \xde\x17 END 
 SCEC SCE232_012 \xec\x1d SCE_DONE 
 TEXT1 Lz\x01 TEXT2 f
  
@@ -138,6 +138,6 @@ TEXT1 Lz\x01 TEXT2 f
 　おしまい。\
 
   
-FLG1 0\x1e\x0c FLG1_SET \xf2\x02 \x02  \x03 END  \xf2\x02 
+INIT 0\x1e\x0c SET_VAR  \xf2\x02 \x02  \x03 END  \xf2\x02 
 CMD3 TextClose VAR1 \x0e  END 
 END_SCRIPT

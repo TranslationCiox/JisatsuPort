@@ -1,6 +1,6 @@
 START_SCRIPT
 p*\x01`B#\x01\x1a#  
-FLG1 \x0c\x01\x0c FLG1_SET
+INIT \x0c\x01\x0c SET_VAR 
 CMD6 .\\Data\\Script\\Bgm.Fob VAR1   
 CMD2 PlayCD RUNF J END 
 SCEC SCE234_001 f SCE_DONE 
@@ -9,7 +9,7 @@ TEXT1 @}\x01 TEXT2 \x11
 \n\n\n\n\n\n\n\n\n\n　　　　　　　　　　　　『１５日目』\
 
   
-FLG1 \xaa\x0c FLG1_SET
+INIT \xaa\x0c SET_VAR 
 CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \x0e\x01 
 CMD2 TextOn RUNF <\x01 END 
 SCEC SCE234_002 X\x01 SCE_DONE 
@@ -27,7 +27,7 @@ TEXT1 D}\x01 TEXT2 \x7f
 その視線から逃れるように、紅葉は俯いた。\
 
   
-FLG1 \x9c\x01\x0c FLG1_SET \x0e\x01 \x02 <\x01 END 
+INIT \x9c\x01\x0c SET_VAR  \x0e\x01 \x02 <\x01 END 
 SCEC SCE234_003 \xd2\x03 SCE_DONE 
 TEXT1 H}\x01 TEXT2 V
  
@@ -41,7 +41,7 @@ TEXT1 H}\x01 TEXT2 V
 拓司\n　「……」\
 
   
-FLG1 \x16\x04\x0c FLG1_SET \x0e\x01 \x02 <\x01 END 
+INIT \x16\x04\x0c SET_VAR  \x0e\x01 \x02 <\x01 END 
 SCEC SCE234_004 \xa8\x05 SCE_DONE 
 TEXT1 L}\x01 TEXT2 `
  
@@ -55,7 +55,7 @@ TEXT1 L}\x01 TEXT2 `
 \nははは、と御堂が笑った。\p錦城も、さも愉快そうに笑っている。\
 
   
-FLG1 \xec\x05\x0c FLG1_SET \x0e\x01 \x02 <\x01 END 
+INIT \xec\x05\x0c SET_VAR  \x0e\x01 \x02 <\x01 END 
 SCEC SCE234_005 \xa6\x07 SCE_DONE 
 TEXT1 P}\x01 TEXT2 \x8e
  
@@ -70,7 +70,7 @@ TEXT1 P}\x01 TEXT2 \x8e
 \nつかみかかってくる紅葉を一撃で壁まではじき飛ばし、御堂が叫\nんだ。\
 
   
-FLG1 \xea\x07\x0c FLG1_SET \x0e\x01 \x02 <\x01 END    
+INIT \xea\x07\x0c SET_VAR  \x0e\x01 \x02 <\x01 END    
 CMD2 StopCD RUNF h\n END 
 SCEC SCE234_006 \x84\n SCE_DONE 
 TEXT1 T}\x01 TEXT2 \x95
@@ -85,7 +85,7 @@ TEXT1 T}\x01 TEXT2 \x95
 御堂に殺されるかもしれない。\pしかも信じていた紅葉に裏切られ\nて……。\
 
   
-FLG1 \xc8\n\x0c FLG1_SET \x0e\x01 \x02 <\x01 END 
+INIT \xc8\n\x0c SET_VAR  \x0e\x01 \x02 <\x01 END 
 SCEC SCE234_007 V\r SCE_DONE 
 TEXT1 X}\x01 TEXT2 \xba
  
@@ -108,7 +108,7 @@ TEXT1 X}\x01 TEXT2 \xba
 /*■黒　表示（ノンエフェクト）*/\a7,-1,-1,0,\a0,200,1,0,\a6,0,0,0,床に倒れる。\
 
   
-FLG1 \x9a\r\x0c FLG1_SET \x0e\x01 \x02 <\x01 END 
+INIT \x9a\r\x0c SET_VAR  \x0e\x01 \x02 <\x01 END 
 SCEC SCE234_008 \xbc\x10 SCE_DONE 
 TEXT1 \\}\x01 TEXT2 \x94
  
@@ -120,7 +120,7 @@ TEXT1 \\}\x01 TEXT2 \x94
 御堂の残忍な笑い顔が、ぐいっとせり上がって目の前に飛び出し\nた。\
 
   
-FLG1 \x11\x0c FLG1_SET \x0e\x01 \x02 <\x01 END 
+INIT \x11\x0c SET_VAR  \x0e\x01 \x02 <\x01 END 
 SCEC SCE234_009 \x8a\x13 SCE_DONE 
 TEXT1 `}\x01 TEXT2 \xe1
  
@@ -133,8 +133,8 @@ TEXT1 `}\x01 TEXT2 \xe1
 \n叫んで、御堂は拓司の腕を逆に取った。\
 
   
-FLG1 \xce\x13\x0c FLG1_SET \x0e\x01 \x02 <\x01 END   
-FLG1 \xcb\x0c FLG1_SET
+INIT \xce\x13\x0c SET_VAR  \x0e\x01 \x02 <\x01 END   
+INIT \xcb\x0c SET_VAR 
 CMD6 .\\Data\\Script\\Bg.Fob VAR2 \xa6\x17 
 CMD2 BgOn VAR2 \xd0\x17 END 
 SCEC SCE234_010 \xec\x17 SCE_DONE 
@@ -148,7 +148,7 @@ TEXT1 d}\x01 TEXT2 {
 \n拓司\n　「わわわわわわわわわわわわわわわわわわ！！」\
 
   
-FLG1 0\x18\x0c FLG1_SET \x0e\x01 \x02 <\x01 END 
+INIT 0\x18\x0c SET_VAR  \x0e\x01 \x02 <\x01 END 
 SCEC SCE234_011 V\x1a SCE_DONE 
 TEXT1 h}\x01 TEXT2 ]
  
@@ -159,7 +159,7 @@ TEXT1 h}\x01 TEXT2 ]
 拓司\n　「わわわわわわわわわわわわわわわわわわ！！」\
 
   
-FLG1 \x9a\x1a\x0c FLG1_SET \x0e\x01 \x02 <\x01 END 
+INIT \x9a\x1a\x0c SET_VAR  \x0e\x01 \x02 <\x01 END 
 SCEC SCE234_012 H\x1c SCE_DONE 
 TEXT1 l}\x01 TEXT2 \x84
  
@@ -179,7 +179,7 @@ TEXT1 l}\x01 TEXT2 \x84
 う・ああ・あ・あ・あ・あ・あ・あ・あ・あ・あ・あ・あ・あ・あ\nああああああああ！\
 
   
-FLG1 \x8c\x1c\x0c FLG1_SET \x0e\x01 \x02 <\x01 END 
+INIT \x8c\x1c\x0c SET_VAR  \x0e\x01 \x02 <\x01 END 
 SCEC SCE234_013 \xd6\x1e SCE_DONE 
 TEXT1 p}\x01 TEXT2 \xa8
  
@@ -191,11 +191,11 @@ TEXT1 p}\x01 TEXT2 \xa8
 　　うわあああああああああああああああああああああああああ\n　　あああああああああああああああああああああああああああ\n　　あああああああああああああああああああああああああああ\n　　あああああああああああああああああああああああああああ\n　　あああああああああああああああああああああああああああ\n　　あああああああああああああああああああああああああああ\n　　あああああああああああああああああああああああ！」\
 
   
-FLG1 \x1a\x1f\x0c FLG1_SET \x0e\x01 \x02 <\x01 END  \x0e\x01 \x02
+INIT \x1a\x1f\x0c SET_VAR  \x0e\x01 \x02 <\x01 END  \x0e\x01 \x02
 CMD4 TextWindowOff VAR1 " END   
-FLG1 \xca\x0c FLG1_SET \xa6\x17 \x02
+INIT \xca\x0c SET_VAR  \xa6\x17 \x02
 CMD4 BgNormalFadeIn RUNF J" END    \x02 h\n END   
-FLG1 \xc8\x0c FLG1_SET \xa6\x17 \x02 \xd0\x17 END  \x0e\x01 \x02
+INIT \xc8\x0c SET_VAR  \xa6\x17 \x02 \xd0\x17 END  \x0e\x01 \x02
 CMD5 TextWindowOnDirect RUNF \xc8" END  \x0e\x01 
 CMD3 TextClose VAR1 \xfc" END 
 END_SCRIPT

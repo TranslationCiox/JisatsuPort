@@ -7,13 +7,13 @@ TEXT1 @\xaf\x01 TEXT2 R
 より確実に死ぬにはアルコールも飲まないといけないということ\nは知っていたけれど、私もゆきも、お酒なんて飲んだことはなか\nったから、それはパスした。@
 アルコールの欠落は、薬の増量でまかなえばいいと……さらに一\n瓶ぶんを溶かして、混ぜた。\w\z
   
-FLG1 J\x0c FLG1_SET
+INIT J\x0c SET_VAR 
 CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \xb2\x01 
 CMD2 TextOn RUNF \xe0\x01 END   
-FLG1 >\x0c FLG1_SET
+INIT >\x0c SET_VAR 
 CMD6 .\\Data\\Script\\Bg.Fob VAR2 \x16\x02 \x02
 CMD4 BgAutoFadeIn VAR2 @\x02 END   
-FLG1 \x04\x01\x0c FLG1_SET
+INIT \x04\x01\x0c SET_VAR 
 CMD6 .\\Data\\Script\\Bgm.Fob VAR1 ~\x02 
 CMD2 PlayCD RUNF \xa8\x02 END 
 SCEC SCEK14_A02 \xc4\x02 SCE_DONE 
@@ -27,7 +27,7 @@ TEXT1 D\xaf\x01 TEXT2 \xa8
 こんな素敵な気分で、最高の友達と一緒に死ねるなんて、私はし\nあわせだなあ、と思った。@
 繰り返すけれど、少しも怖くはなかった。\w\z
   
-FLG1 \x08\x03\x0c FLG1_SET \xb2\x01 \x02 \xe0\x01 END  ~\x02 
+INIT \x08\x03\x0c SET_VAR  \xb2\x01 \x02 \xe0\x01 END  ~\x02 
 CMD2 StopCD RUNF \xee\x05 END 
 SCEC SCEK14_A03 \n\x06 SCE_DONE 
 TEXT1 H\xaf\x01 TEXT2 \\
@@ -40,9 +40,9 @@ TEXT1 H\xaf\x01 TEXT2 \\
 どれくらい眠っていたのか、泣いていたのか、よくわからない。@
 私は暖かくてぼんやりとしたかたまりのなかでたゆたっていた。\w\z
   
-FLG1 N\x06\x0c FLG1_SET \xb2\x01 \x02 \xe0\x01 END   
-FLG1 \xcb\x0c FLG1_SET \x16\x02 \x02 @\x02 END   
-FLG1 \n\x01\x0c FLG1_SET ~\x02 \x02 \xa8\x02 END 
+INIT N\x06\x0c SET_VAR  \xb2\x01 \x02 \xe0\x01 END   
+INIT \xcb\x0c SET_VAR  \x16\x02 \x02 @\x02 END   
+INIT \n\x01\x0c SET_VAR  ~\x02 \x02 \xa8\x02 END 
 SCEC SCEK14_A04 `\x08 SCE_DONE 
 TEXT1 L\xaf\x01 TEXT2 \x81
  
@@ -55,15 +55,15 @@ TEXT1 L\xaf\x01 TEXT2 \x81
 鼻からもゲロがあふれてきた。涙で何も見えず、何が起こってい\nるのか全然わからなかった。@
 気持ちよく眠って死ねるはずだったのに、どうしてこんなに苦し\nんで死ななければならないの……？\w\z
   
-FLG1 \xa4\x08\x0c FLG1_SET \xb2\x01 \x02 \xe0\x01 END 
+INIT \xa4\x08\x0c SET_VAR  \xb2\x01 \x02 \xe0\x01 END 
 SCEC SCEK14_A05 \xe2\n SCE_DONE 
 TEXT1 P\xaf\x01 TEXT2 1
  
 　要するに私は薬を飲みすぎたのだった。@
 急性アルコール中毒になるまえに、身体がアルコールを自動的に\n吐き出させるように……\p私の身体は私の意志とは無関係に薬を吐\nき戻させていたのだった。\w\z
   
-FLG1 &\x0b\x0c FLG1_SET \xb2\x01 \x02 \xe0\x01 END   
-FLG1 ?\x0c FLG1_SET \x16\x02 \x02 @\x02 END 
+INIT &\x0b\x0c SET_VAR  \xb2\x01 \x02 \xe0\x01 END   
+INIT ?\x0c SET_VAR  \x16\x02 \x02 @\x02 END 
 SCEC SCEK14_A06 X\x0c SCE_DONE 
 TEXT1 T\xaf\x01 TEXT2 \\
  
@@ -75,7 +75,7 @@ TEXT1 T\xaf\x01 TEXT2 \\
 そのうち私はあまりの苦しさに意識を失った。@
 /*■背景　黒　表示*/\a7,0,1,0,\a0,200,0,0,/*▲BGM　停止*/\a4,-1,0,0,\a6,0,0,0,そして病院で目を覚ました。\w\z
   
-FLG1 \x9c\x0c\x0c FLG1_SET \xb2\x01 \x02 \xe0\x01 END 
+INIT \x9c\x0c\x0c SET_VAR  \xb2\x01 \x02 \xe0\x01 END 
 SCEC SCEK14_A07 F\x0e SCE_DONE 
 TEXT1 X\xaf\x01 TEXT2 ;
  
@@ -84,7 +84,7 @@ TEXT1 X\xaf\x01 TEXT2 ;
 若草ゆきは死んでいた。@
 そして私は生き残った。\w\z
   
-FLG1 \x8a\x0e\x0c FLG1_SET \xb2\x01 \x02 \xe0\x01 END 
+INIT \x8a\x0e\x0c SET_VAR  \xb2\x01 \x02 \xe0\x01 END 
 SCEC SCEK14_A08 \xb0\x0f SCE_DONE 
 TEXT1 \\\xaf\x01 TEXT2 l
  
@@ -95,8 +95,8 @@ TEXT1 \\\xaf\x01 TEXT2 l
 私にとって死は、そんなに普遍的なものではなくなっていた。@
 死は特別だった。\w\z
   
-FLG1 \xf4\x0f\x0c FLG1_SET \xb2\x01 \x02 \xe0\x01 END   
-FLG1 \x08\x01\x0c FLG1_SET ~\x02 \x02 \xa8\x02 END 
+INIT \xf4\x0f\x0c SET_VAR  \xb2\x01 \x02 \xe0\x01 END   
+INIT \x08\x01\x0c SET_VAR  ~\x02 \x02 \xa8\x02 END 
 SCEC SCEK14_A09 \x12\x12 SCE_DONE 
 TEXT1 `\xaf\x01 TEXT2 e
  
@@ -109,7 +109,7 @@ TEXT1 `\xaf\x01 TEXT2 e
 でも、振り向くと、いる。@
 「つかまえたぞ。もうお前は逃げられないんだぞ」と。\w\z
   
-FLG1 V\x12\x0c FLG1_SET \xb2\x01 \x02 \xe0\x01 END 
+INIT V\x12\x0c SET_VAR  \xb2\x01 \x02 \xe0\x01 END 
 SCEC SCEK14_A10 $\x14 SCE_DONE 
 TEXT1 d\xaf\x01 TEXT2 Y
  
@@ -122,6 +122,6 @@ TEXT1 d\xaf\x01 TEXT2 Y
 ゆきにおける私が。@
 私には必要だった。\w\z
   
-FLG1 h\x14\x0c FLG1_SET \xb2\x01 \x02 \xe0\x01 END  \xb2\x01 
+INIT h\x14\x0c SET_VAR  \xb2\x01 \x02 \xe0\x01 END  \xb2\x01 
 CMD3 TextClose VAR1 \x12\x16 END 
 END_SCRIPT

@@ -6,7 +6,7 @@ TEXT1 \xaf TEXT2 \x11
 \n\n\n\n\n\n\n\n\n\n　　　　　　　　　　　　　『５日目』\
 
   
-FLG1 J\x0c FLG1_SET
+INIT J\x0c SET_VAR 
 CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \xae 
 CMD2 TextOn RUNF \xdc END 
 SCEC SCE102_002 \xf8 SCE_DONE 
@@ -21,8 +21,8 @@ TEXT1 \x04\xaf TEXT2 \xa5
 \nカンナは肩をすくめただけで無言だった。\
 
   
-FLG1 <\x01\x0c FLG1_SET \xae \x02 \xdc END   
-FLG1 \xc8\x0c FLG1_SET
+INIT <\x01\x0c SET_VAR  \xae \x02 \xdc END   
+INIT \xc8\x0c SET_VAR 
 CMD6 .\\Data\\Script\\Bg.Fob VAR2 $\x04 \x02
 CMD4 BgAutoFadeIn VAR2 N\x04 END 
 SCEC SCE102_003 r\x04 SCE_DONE 
@@ -40,7 +40,7 @@ TEXT1 \x08\xaf TEXT2 j
 なたね\n　「……」\
 
   
-FLG1 \xb6\x04\x0c FLG1_SET \xae \x02 \xdc END 
+INIT \xb6\x04\x0c SET_VAR  \xae \x02 \xdc END 
 SCEC SCE102_004 \x98\x06 SCE_DONE 
 TEXT1 \x0c\xaf TEXT2 p
  
@@ -53,7 +53,7 @@ TEXT1 \x0c\xaf TEXT2 p
 拓司\n　「……」\
 
   
-FLG1 \xdc\x06\x0c FLG1_SET \xae \x02 \xdc END 
+INIT \xdc\x06\x0c SET_VAR  \xae \x02 \xdc END 
 SCEC SCE102_005 \xd6\x08 SCE_DONE 
 TEXT1 \x10\xaf TEXT2 \x87
  
@@ -64,7 +64,7 @@ TEXT1 \x10\xaf TEXT2 \x87
 \n意外な声に拓司は動きを止めた。\p錦城が、厳しい顔でなたねをに\nらみつけている。\p虚を突かれたのか、なたねも珍しく驚きの表情\nを浮かべている。\
 
   
-FLG1 \x1a\t\x0c FLG1_SET \xae \x02 \xdc END 
+INIT \x1a\t\x0c SET_VAR  \xae \x02 \xdc END 
 SCEC SCE102_006 p\x0b SCE_DONE 
 TEXT1 \x14\xaf TEXT2 \xae
  
@@ -76,7 +76,7 @@ TEXT1 \x14\xaf TEXT2 \xae
 錦城\n　「周りが不公平だと感じたら、それは不公平ということなんじ\n　　ゃないかしら？\p　この場における公平さは、あなたの主観が\n　　決めることじゃないわ。\pそれに－－」\
 
   
-FLG1 \xb4\x0b\x0c FLG1_SET \xae \x02 \xdc END 
+INIT \xb4\x0b\x0c SET_VAR  \xae \x02 \xdc END 
 SCEC SCE102_007 \xa6\x0e SCE_DONE 
 TEXT1 \x18\xaf TEXT2 \xb2
  
@@ -88,7 +88,7 @@ TEXT1 \x18\xaf TEXT2 \xb2
 \nなたねの顔が青ざめていった。\pなにか反論をしようとするが、口\nがぱくぱくと震えるだけで言葉が出てこない。\pまるで、あふれで\nる言葉が喉に詰まって、窒息寸前であるかのように見える。\
 
   
-FLG1 \xea\x0e\x0c FLG1_SET \xae \x02 \xdc END 
+INIT \xea\x0e\x0c SET_VAR  \xae \x02 \xdc END 
 SCEC SCE102_008 \xec\x11 SCE_DONE 
 TEXT1 \x1c\xaf TEXT2 \x81
  
@@ -100,7 +100,7 @@ TEXT1 \x1c\xaf TEXT2 \x81
 \n紅葉\n　「……なんなのよ、あの態度！」\
 
   
-FLG1 0\x12\x0c FLG1_SET \xae \x02 \xdc END 
+INIT 0\x12\x0c SET_VAR  \xae \x02 \xdc END 
 SCEC SCE102_009 n\x14 SCE_DONE 
 TEXT1  \xaf TEXT2 \x9c
  
@@ -112,7 +112,7 @@ TEXT1  \xaf TEXT2 \x9c
 しかし、それが宇宙人のしわざであるだとか、地底にいる怪物か\nら放たれているだとか、果ては弱い者は死んで当然とだとか、そ\nういった部分になると話は別だ。\p妄想の産物であるとしか思えな\nい。\
 
   
-FLG1 \xb2\x14\x0c FLG1_SET \xae \x02 \xdc END 
+INIT \xb2\x14\x0c SET_VAR  \xae \x02 \xdc END 
 CMD6 .\\Data\\Script\\Bgm.Fob VAR1 \\\x17 
 CMD2 StopCD RUNF \x86\x17 END 
 SCEC SCE102_010 \xa2\x17 SCE_DONE 
@@ -126,12 +126,12 @@ TEXT1 $\xaf TEXT2 C
 　　そのほうが、絶対安全だよ？」\
 
   
-FLG1 \xe6\x17\x0c FLG1_SET \xae \x02 \xdc END \x03\x10
+INIT \xe6\x17\x0c SET_VAR  \xae \x02 \xdc END \x03\x10
 CHOICE
 「それはやめておこう」\n「いいかもしれないな」\n\l0,2,
 ENDCHOICE
 
   
-FLG1 ,\x19\x0c FLG1_SET \xae \x02 \xdc END  \xae 
+INIT ,\x19\x0c SET_VAR  \xae \x02 \xdc END  \xae 
 CMD3 TextClose VAR1 \xb2\x19 END 
 END_SCRIPT

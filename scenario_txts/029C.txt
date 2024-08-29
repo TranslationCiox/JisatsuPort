@@ -15,7 +15,7 @@ TEXT1 \xf0< TEXT2 \x81
 \n返事を待つ様子もなくカンナは足早に廊下を歩み去っていった。\
 
   
-FLG1 J\x0c FLG1_SET
+INIT J\x0c SET_VAR 
 CMD7 .\\Data\\Script\\TextFunc.Fob RUNF n\x02 
 CMD2 TextOn RUNF \x9c\x02 END  n\x02 
 CMD3 TextClose VAR1 \xc4\x02 END 

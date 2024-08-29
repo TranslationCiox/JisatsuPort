@@ -13,7 +13,7 @@ TEXT1 \x80j\x01 TEXT2 x
 心の底をのぞき込むように、なたねは拓司の目をじっと見つめた。\n\pそしてひとこと、いった。\
 
   
-FLG1 J\x0c FLG1_SET
+INIT J\x0c SET_VAR 
 CMD7 .\\Data\\Script\\TextFunc.Fob RUNF J\x02 
 CMD2 TextOn RUNF x\x02 END 
 SCEC SCE222_002 \x94\x02 SCE_DONE 
@@ -30,6 +30,6 @@ TEXT1 \x84j\x01 TEXT2 O
 それっきり、なたねは一言も話そうとはしなかった。\
 
   
-FLG1 \xd8\x02\x0c FLG1_SET J\x02 \x02 x\x02 END  J\x02 
+INIT \xd8\x02\x0c SET_VAR  J\x02 \x02 x\x02 END  J\x02 
 CMD3 TextClose VAR1 Z\x04 END 
 END_SCRIPT

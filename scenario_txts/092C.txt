@@ -2,7 +2,7 @@ START_SCRIPT
 I\x0e\x01`B#\x01\\\x0b
 CMD6 .\\Data\\Script\\Bgm.Fob VAR1 \x06 
 CMD2 StopCD RUNF 0 END   
-FLG1 \xc8\x0c FLG1_SET
+INIT \xc8\x0c SET_VAR 
 CMD6 .\\Data\\Script\\Bg.Fob VAR2 f \x02
 CMD4 BgAutoFadeIn VAR2 \x90 END 
 SCEC SCE092_001 \xb4 SCE_DONE 
@@ -11,7 +11,7 @@ TEXT1 `\x9f TEXT2 \x11
 \n\n\n\n\n\n\n\n\n\n　　　　　　　　　　　　　　『２日目』\
 
   
-FLG1 \xf8\x0c FLG1_SET
+INIT \xf8\x0c SET_VAR 
 CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \\\x01 
 CMD2 TextOn RUNF \x8a\x01 END 
 SCEC SCE092_002 \xa6\x01 SCE_DONE 
@@ -27,7 +27,7 @@ TEXT1 d\x9f TEXT2 \x9b
 御堂\n　「なに？」\
 
   
-FLG1 \xea\x01\x0c FLG1_SET \\\x01 \x02 \x8a\x01 END 
+INIT \xea\x01\x0c SET_VAR  \\\x01 \x02 \x8a\x01 END 
 SCEC SCE092_003 \x90\x04 SCE_DONE 
 TEXT1 h\x9f TEXT2 \x9e
  
@@ -40,7 +40,7 @@ TEXT1 h\x9f TEXT2 \x9e
 粘り着くような沈黙をおいて、御堂がいった。\
 
   
-FLG1 \xd4\x04\x0c FLG1_SET \\\x01 \x02 \x8a\x01 END 
+INIT \xd4\x04\x0c SET_VAR  \\\x01 \x02 \x8a\x01 END 
 SCEC SCE092_004 \x86\x07 SCE_DONE 
 TEXT1 l\x9f TEXT2 \x9f
  
@@ -53,12 +53,12 @@ TEXT1 l\x9f TEXT2 \x9f
 しかし、なたねが口にした『３日』という具体的な例は、理屈を\n越えて一同の上に重くのしかかっていた。\p漠然と遠くに見ていた\n最後の日は、明日、やってくるかもしれないのだ……と。\
 
   
-FLG1 \xca\x07\x0c FLG1_SET \\\x01 \x02 \x8a\x01 END \x03 
+INIT \xca\x07\x0c SET_VAR  \\\x01 \x02 \x8a\x01 END \x03 
 CHOICE
 「何日耐えられるのか、はっきりさせてほしい」と拓司はいった\n「雲居さんのいうとおりだ」と拓司はいった\n\l0,2,
 ENDCHOICE
 
   
-FLG1 \x80\n\x0c FLG1_SET \\\x01 \x02 \x8a\x01 END  \\\x01 
+INIT \x80\n\x0c SET_VAR  \\\x01 \x02 \x8a\x01 END  \\\x01 
 CMD3 TextClose VAR1 >\x0b END 
 END_SCRIPT

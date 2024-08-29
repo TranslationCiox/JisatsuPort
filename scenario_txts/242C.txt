@@ -1,9 +1,9 @@
 START_SCRIPT
 4!\x01`B#\x01\x90\x1b  
-FLG1 \n\x01\x0c FLG1_SET
+INIT \n\x01\x0c SET_VAR 
 CMD6 .\\Data\\Script\\Bgm.Fob VAR1   
 CMD2 PlayCD RUNF J END   
-FLG1 \xc8\x0c FLG1_SET
+INIT \xc8\x0c SET_VAR 
 CMD6 .\\Data\\Script\\Bg.Fob VAR2 \x80 \x02
 CMD4 BgAutoFadeIn VAR2 \xaa END 
 SCEC SCE242_001 \xce SCE_DONE 
@@ -19,7 +19,7 @@ TEXT1 \xc0\x89\x01 TEXT2 t
 ただ、最終波動はひたすら、死のイメージだった。@
 死が定義不可能である以上、波動も同じく、理解の範疇の外にあ\nる。\p漠然とした恐怖ですべてを縛るものとして。\w\z
   
-FLG1 \x12\x01\x0c FLG1_SET
+INIT \x12\x01\x0c SET_VAR 
 CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \x02\x03 
 CMD2 TextOn RUNF 0\x03 END 
 SCEC SCE242_002 L\x03 SCE_DONE 
@@ -30,7 +30,7 @@ TEXT1 \xc4\x89\x01 TEXT2 F
 あの銀紙のシェルターがそれに耐えうるのかどうかも。@
 しかし、どこから襲ってくるかわからないむきだしの死に身を晒\nすより、どんなに薄かろうとも鎧をまとっている方がマシだった。\w\z
   
-FLG1 \x90\x03\x0c FLG1_SET \x02\x03 \x02 0\x03 END 
+INIT \x90\x03\x0c SET_VAR  \x02\x03 \x02 0\x03 END 
 SCEC SCE242_003 \xe2\x04 SCE_DONE 
 TEXT1 \xc8\x89\x01 TEXT2 h
  
@@ -41,9 +41,9 @@ TEXT1 \xc8\x89\x01 TEXT2 h
 ピシ、という鋭い音に視線を送ると、廊下の側面にはめ込まれた\n窓ガラスのすべてに亀裂が入ってる。@
 亀裂は、あたかも生命を持っているかのように……雪崩落ちる雷\nのように……窓ガラスを走り……\w\z
   
-FLG1 &\x05\x0c FLG1_SET \x02\x03 \x02 0\x03 END    
+INIT &\x05\x0c SET_VAR  \x02\x03 \x02 0\x03 END    
 CMD2 StopCD RUNF \x0c\x07 END   
-FLG1 \x02\x0c FLG1_SET   
+INIT \x02\x0c SET_VAR    
 CMD2 SeStop RUNF N\x07 END 
 SCEC SCE242_004 j\x07 SCE_DONE 
 TEXT1 \xcc\x89\x01 TEXT2 ]
@@ -56,8 +56,8 @@ TEXT1 \xcc\x89\x01 TEXT2 ]
 その風は、身体のなかをすり抜けていった。@
 細胞の隙間を縫うように奔り、身体を構成する肉すべてに毒を与\nえて通り過ぎていった。\w\z
   
-FLG1 \xae\x07\x0c FLG1_SET \x02\x03 \x02 0\x03 END   
-FLG1 \x0b\x01\x0c FLG1_SET   \x02 J END 
+INIT \xae\x07\x0c SET_VAR  \x02\x03 \x02 0\x03 END   
+INIT \x0b\x01\x0c SET_VAR    \x02 J END 
 SCEC SCE242_005 \x90\t SCE_DONE 
 TEXT1 \xd0\x89\x01 TEXT2 \x8a
  
@@ -70,7 +70,7 @@ TEXT1 \xd0\x89\x01 TEXT2 \x8a
 夢幻に反射を繰り返して、さらに新しい悲鳴が雪崩のように流れ\n込んできては反射した。@
 頭そのものが爆発しないのが不思議だった。\w\z
   
-FLG1 \xd4\t\x0c FLG1_SET \x02\x03 \x02 0\x03 END 
+INIT \xd4\t\x0c SET_VAR  \x02\x03 \x02 0\x03 END 
 SCEC SCE242_006 6\x0c SCE_DONE 
 TEXT1 \xd4\x89\x01 TEXT2 }
  
@@ -83,7 +83,7 @@ TEXT1 \xd4\x89\x01 TEXT2 }
 やがてぐったりと仰向けに転がると、ぴくぴくと身体を痙攣させ\n始める。@
 白目をむき、耳から、鼻から、どす黒い血があふれ出している。\w\z
   
-FLG1 z\x0c\x0c FLG1_SET \x02\x03 \x02 0\x03 END 
+INIT z\x0c\x0c SET_VAR  \x02\x03 \x02 0\x03 END 
 SCEC SCE242_007 \xa8\x0e SCE_DONE 
 TEXT1 \xd8\x89\x01 TEXT2 \xa1
  
@@ -101,7 +101,7 @@ TEXT1 \xd8\x89\x01 TEXT2 \xa1
 解決されつつあることなのだ。@
 あるいは、解決されるべきものなのだ。\w\z
   
-FLG1 \xec\x0e\x0c FLG1_SET \x02\x03 \x02 0\x03 END 
+INIT \xec\x0e\x0c SET_VAR  \x02\x03 \x02 0\x03 END 
 SCEC SCE242_008 \xaa\x11 SCE_DONE 
 TEXT1 \xdc\x89\x01 TEXT2 9
  
@@ -110,7 +110,7 @@ TEXT1 \xdc\x89\x01 TEXT2 9
 その足をじっと見つめ、そして反対側の足を前に出す。@
 そうして一歩……一歩……忘れてしまった歩き方を思い出すかの\nように、拓司はゆっくりと歩き始めた。\w\z
   
-FLG1 \xee\x11\x0c FLG1_SET \x02\x03 \x02 0\x03 END 
+INIT \xee\x11\x0c SET_VAR  \x02\x03 \x02 0\x03 END 
 SCEC SCE242_009 \x0c\x13 SCE_DONE 
 TEXT1 \xe0\x89\x01 TEXT2 m
  
@@ -121,7 +121,7 @@ TEXT1 \xe0\x89\x01 TEXT2 m
 \nここから俺は始まるのだ。@
 \nキイイイイイイイイイイイイイイイイイイイイイイイイイイイイ\nイイイイイイイ！\w/*▲SE　停止*/\a4,2,0,0,\z
   
-FLG1 P\x13\x0c FLG1_SET \x02\x03 \x02 0\x03 END    \x02 \x0c\x07 END 
+INIT P\x13\x0c SET_VAR  \x02\x03 \x02 0\x03 END    \x02 \x0c\x07 END 
 SCEC SCE242_010 X\x15 SCE_DONE 
 TEXT1 \xe4\x89\x01 TEXT2 e
  
@@ -135,7 +135,7 @@ TEXT1 \xe4\x89\x01 TEXT2 e
 \nカンナは動かない。\nすでに痙攣すらしていない。@
 拓司は、カンナの上に身体を重ねた。\w\z
   
-FLG1 \x9c\x15\x0c FLG1_SET \x02\x03 \x02 0\x03 END 
+INIT \x9c\x15\x0c SET_VAR  \x02\x03 \x02 0\x03 END 
 SCEC SCE242_011 j\x17 SCE_DONE 
 TEXT1 \xe8\x89\x01 TEXT2 g
  
@@ -146,8 +146,8 @@ TEXT1 \xe8\x89\x01 TEXT2 g
 \n/*■CG53　表示*/\a7,-2,-2,0,\a0,52,2,0,\a6,-2,0,0,拓司\n　「俺は勝った！　勝ったんだ！@
 　　ワハ、ワハ、ワハハハハハハハハハハ！」\w\z
   
-FLG1 \xae\x17\x0c FLG1_SET \x02\x03 \x02 0\x03 END   
-FLG1 \xc9\x0c FLG1_SET \x80 \x02 \xaa END 
+INIT \xae\x17\x0c SET_VAR  \x02\x03 \x02 0\x03 END   
+INIT \xc9\x0c SET_VAR  \x80 \x02 \xaa END 
 SCEC SCE242_012 \xb8\x19 SCE_DONE 
 TEXT1 \xec\x89\x01 TEXT2 L
  
@@ -160,6 +160,6 @@ TEXT1 \xec\x89\x01 TEXT2 L
 俺は勝った。@
 勝ったんだ、と。\w\z
   
-FLG1 \xfc\x19\x0c FLG1_SET \x02\x03 \x02 0\x03 END  \x02\x03 
+INIT \xfc\x19\x0c SET_VAR  \x02\x03 \x02 0\x03 END  \x02\x03 
 CMD3 TextClose VAR1 r\x1b END 
 END_SCRIPT
