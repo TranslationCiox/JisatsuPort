@@ -1,30 +1,22 @@
 START_SCRIPT
-\xec\r\x01`B#\x01\xb0\n\x01\x01 \x06 \x0c SET_VAR  \x06 \x03\x1b\x02\x041\xec\x01  
-INIT \xca\x0c SET_VAR 
-CMD6 .\\Data\\Script\\Bg.Fob VAR2 Z 
-CMD2 BgOn VAR2 \x84 END   
-INIT \x01\x0c SET_VAR 
-CMD7 .\\Data\\Script\\TextFunc.fob RUNF \xba 
-CMD3 WaitTime VAR2 \xe8 END   
-INIT \x04\x0c SET_VAR  Z \x02 \x84 END   
-INIT \x01\x0c SET_VAR  \xba \x02 \xe8 END   
-INIT \xc8\x0c SET_VAR  Z \x02 \x84 END   
-INIT \x01\x0c SET_VAR  \xba \x02 \xe8 END  \x06 \x01\x0c\x02d"2 
-SCEC SCE020_001 \xf2\x01 SCE_DONE 
-TEXT1 \xe0. TEXT2 C
+\xec\r\x01`B#\x01\xb0\n\x01\x01 \x06 \x0c SET_VAR1 \x06 \x03\x1b\x02\x041\xec\x01  
+INIT \xca\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bg.Fob VAR2Z APPlY_2 BgOn VAR2\x84 END  
+INIT \x01\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.fob RUNF \xba APPLY_3 WaitTime VAR2\xe8 END  
+INIT \x04\x0c SET_VAR1 Z \x02 \x84 END  
+INIT \x01\x0c SET_VAR1 \xba \x02 \xe8 END  
+INIT \xc8\x0c SET_VAR1 Z \x02 \x84 END  
+INIT \x01\x0c SET_VAR1 \xba \x02 \xe8 END \x06 \x01\x0c\x02d"2 
+INIT_TEXT SCE020_001 \xf2\x01 SCE_TEXT TEXT1 \xe0. TEXT2 C
  
 カンナ\n　「－－こうしましょう。\pここ以外では、あなたと私は知り合\n　　いでも何でもない。\pお互いの世界に干渉しないし、興味も持た\n　　ない。\pお互いの世界……フフフ。\p私たちの世界以外では、私た\n　　ちは他人になるの。\pそうすることで、私たちの世界は－－」\
 
   
-INIT 6\x02\x0c SET_VAR 
-CMD7 .\\Data\\Script\\TextFunc.Fob RUNF b\x03 
-CMD2 TextOn RUNF \x90\x03 END \x01\x01 \xac\x03 \x0c SET_VAR  \xac\x03 \x03\x1b\x02\x041\xca\x04  
-INIT \xca\x0c SET_VAR  Z \x02 \x84 END   
-INIT \x01\x0c SET_VAR  \xba \x02 \xe8 END   
-INIT \xc8\x0c SET_VAR  Z \x02 \x84 END   
-INIT \x01\x0c SET_VAR  \xba \x02 \xe8 END  \xac\x03 \x01\x0c\x02d"2\xc4\x03
-SCEC SCE020_002 \xd0\x04 SCE_DONE 
-TEXT1 \xe4. TEXT2 P
+INIT 6\x02\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF b\x03 APPlY_2 TextOn RUNF \x90\x03 END\x01\x01 \xac\x03 \x0c SET_VAR1 \xac\x03 \x03\x1b\x02\x041\xca\x04  
+INIT \xca\x0c SET_VAR1 Z \x02 \x84 END  
+INIT \x01\x0c SET_VAR1 \xba \x02 \xe8 END  
+INIT \xc8\x0c SET_VAR1 Z \x02 \x84 END  
+INIT \x01\x0c SET_VAR1 \xba \x02 \xe8 END \xac\x03 \x01\x0c\x02d"2\xc4\x03
+INIT_TEXT SCE020_002 \xd0\x04 SCE_TEXT TEXT1 \xe4. TEXT2 P
  
 けれどもカンナは干渉した。@
 －－なぜだ？@
@@ -33,12 +25,9 @@ TEXT1 \xe4. TEXT2 P
 カンナは、足早に道の角を曲がって姿を消した。\
 
   
-INIT \x14\x05\x0c SET_VAR  b\x03 \x02 \x90\x03 END   
-INIT \x07\x01\x0c SET_VAR 
-CMD6 .\\Data\\Script\\Bgm.Fob VAR1 \xa8\x06 
-CMD2 PlayCD RUNF \xd2\x06 END 
-SCEC SCE020_003 \xee\x06 SCE_DONE 
-TEXT1 \xe8. TEXT2 R
+INIT \x14\x05\x0c SET_VAR1 b\x03 \x02 \x90\x03 END  
+INIT \x07\x01\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bgm.Fob VAR1 \xa8\x06 APPlY_2 PlayCD RUNF \xd2\x06 END
+INIT_TEXT SCE020_003 \xee\x06 SCE_TEXT TEXT1 \xe8. TEXT2 R
  
 \nややあって、紅葉がいった。@
 \n紅葉\n　「……あれって、月代カンナ？」@
@@ -50,9 +39,8 @@ TEXT1 \xe8. TEXT2 R
 紅葉\n　「岩見くん……うちのクラスの……あの子に告白して振られたん\n　　だって」\
 
   
-INIT 2\x07\x0c SET_VAR  b\x03 \x02 \x90\x03 END 
-SCEC SCE020_004 \xb4\x08 SCE_DONE 
-TEXT1 \xec. TEXT2 K
+INIT 2\x07\x0c SET_VAR1 b\x03 \x02 \x90\x03 END
+INIT_TEXT SCE020_004 \xb4\x08 SCE_TEXT TEXT1 \xec. TEXT2 K
  
 拓司\n　「噂だろ？」@
 紅葉\n　「岩見くんって、モテるじゃない？　カッコイイし頭もいいし、\n　　スポーツも得意だし。\pでもあの子全然興味ないって感じで。@
@@ -62,7 +50,5 @@ TEXT1 \xec. TEXT2 K
 \n紅葉はいって、うつむいた。\
 
   
-INIT \xf8\x08\x0c SET_VAR  b\x03 \x02 \x90\x03 END  \xa8\x06 
-CMD2 StopCD RUNF j\n END  b\x03 
-CMD3 TextClose VAR1 \x92\n END 
+INIT \xf8\x08\x0c SET_VAR1 b\x03 \x02 \x90\x03 END \xa8\x06 APPlY_2 StopCD RUNF j\n END b\x03 APPLY_3 TextClose VAR1 \x92\n END
 END_SCRIPT

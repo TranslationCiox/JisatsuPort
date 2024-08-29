@@ -1,10 +1,7 @@
 START_SCRIPT
 \x1a\x10\x01`B#\x01\xaa\r  
-INIT \t\x01\x0c SET_VAR 
-CMD6 .\\Data\\Script\\Bgm.Fob VAR1   
-CMD2 PlayCD RUNF J END 
-SCEC SCE093_001 f SCE_DONE 
-TEXT1 \xf0\xa0 TEXT2 N
+INIT \t\x01\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bgm.Fob VAR1   APPlY_2 PlayCD RUNF J END
+INIT_TEXT SCE093_001 f SCE_TEXT TEXT1 \xf0\xa0 TEXT2 N
  
 拓司\n　「それでも、何日持つのかはハッキリさせて欲しい」@
 \n　拓司はいった。@
@@ -13,11 +10,8 @@ TEXT1 \xf0\xa0 TEXT2 N
 拓司\n　「それは……」@
 \n拓司は絶句した。\w\z
   
-INIT \xaa\x0c SET_VAR 
-CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \x02\x02 
-CMD2 TextOn RUNF 0\x02 END 
-SCEC SCE093_002 L\x02 SCE_DONE 
-TEXT1 \xf4\xa0 TEXT2 \x82
+INIT \xaa\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF \x02\x02 APPlY_2 TextOn RUNF 0\x02 END
+INIT_TEXT SCE093_002 L\x02 SCE_TEXT TEXT1 \xf4\xa0 TEXT2 \x82
  
 拓司\n　「……１年分あれば……まあ……安心はできるんじゃないか？」\n\pなたね\n　「その根拠は？　最終波動がいつやってくるのか予想不可能な\n　　現状において、どうして１年の備蓄が『安心』を与えるんで\n　　すか？」@
 拓司\n　「……。１年というのはあくまでもたとえだ。@
@@ -27,9 +21,8 @@ TEXT1 \xf4\xa0 TEXT2 \x82
 \nなたねは薄笑いを浮かべながらいった。@
 カンナがそれに反応した。\w\z
   
-INIT \x90\x02\x0c SET_VAR  \x02\x02 \x02 0\x02 END 
-SCEC SCE093_003 \xd2\x04 SCE_DONE 
-TEXT1 \xf8\xa0 TEXT2 \x9d
+INIT \x90\x02\x0c SET_VAR1 \x02\x02 \x02 0\x02 END
+INIT_TEXT SCE093_003 \xd2\x04 SCE_TEXT TEXT1 \xf8\xa0 TEXT2 \x9d
  
 カンナ\n　「そのいいかたは……どうなのかしら、雲居さん？」@
 なたね\n　「なにかご不満でも？」@
@@ -40,9 +33,8 @@ TEXT1 \xf8\xa0 TEXT2 \x9d
 カンナ\n　「さっきのいい方は、そうとられてもおかしくないでしょう！」\n\p拓司\n　「待て！　言い争いはやめよう！」@
 \n拓司が間に入ることで、カンナとなたねは引き離されたが、あと\nには気まずい空気が残っている。\w\z
   
-INIT \x16\x05\x0c SET_VAR  \x02\x02 \x02 0\x02 END 
-SCEC SCE093_004 \xc4\x07 SCE_DONE 
-TEXT1 \xfc\xa0 TEXT2 \xae
+INIT \x16\x05\x0c SET_VAR1 \x02\x02 \x02 0\x02 END
+INIT_TEXT SCE093_004 \xc4\x07 SCE_TEXT TEXT1 \xfc\xa0 TEXT2 \xae
  
 なたね\n　「……はっきりさせておきたいんですけど」@
 \nやがてなたねがいった。@
@@ -57,9 +49,8 @@ TEXT1 \xfc\xa0 TEXT2 \xae
 　　　みなさんは私を信じるしかないんですよ。@
 　　いつもいつも散々ウソつき呼ばわりしてきたバカタレどもが\n　　私を信じるしか！　くすくすくすくす」\w\z
   
-INIT \x08\x08\x0c SET_VAR  \x02\x02 \x02 0\x02 END 
-SCEC SCE093_005 \xfa\n SCE_DONE 
-TEXT1 \xa1 TEXT2 ^
+INIT \x08\x08\x0c SET_VAR1 \x02\x02 \x02 0\x02 END
+INIT_TEXT SCE093_005 \xfa\n SCE_TEXT TEXT1 \xa1 TEXT2 ^
  
 カンナがなにかをいいかけた。@
 \nなたね\n　「あっ！」@
@@ -70,10 +61,6 @@ TEXT1 \xa1 TEXT2 ^
 なたね\n　「……惜しい！　いま、ちょっとだけ母船からきてたのに！@
 　　あなたたちが余計なことをいうから聞き逃してしまったでし\n　　ょうが！\p　ああ、惜しい！\p　惜しかったなあ！」\w\z
   
-INIT >\x0b\x0c SET_VAR  \x02\x02 \x02 0\x02 END   
-INIT \xc8\x0c SET_VAR 
-CMD6 .\\Data\\Script\\Bg.Fob VAR2 \n\r \x02
-CMD4 BgAutoFadeIn VAR2 4\r END    
-CMD2 StopCD RUNF d\r END  \x02\x02 
-CMD3 TextClose VAR1 \x8c\r END 
+INIT >\x0b\x0c SET_VAR1 \x02\x02 \x02 0\x02 END  
+INIT \xc8\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bg.Fob VAR2\n\r \x02 APPLY_4 BgAutoFadeIn VAR24\r END NULL APPlY_2 StopCD RUNF d\r END \x02\x02 APPLY_3 TextClose VAR1 \x8c\r END
 END_SCRIPT

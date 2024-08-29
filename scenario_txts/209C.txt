@@ -1,7 +1,6 @@
 START_SCRIPT
 \xfd\x06\x01`B#\x01\x14\x05
-SCEC SCE209_001 \x06 SCE_DONE 
-TEXT1 0V\x01 TEXT2 \xdc
+INIT_TEXT SCE209_001 \x06 SCE_TEXT TEXT1 0V\x01 TEXT2 \xdc
  
 ナタネ\n　「話すことはこれだけ。\p私はあなたに『創』られた。@
 　　でも、あなたが眠っているあいだに教授は、私を監禁したわ。\n　　\pでもいま、あなたはもう一度『願』った。\p世界の真実を語る\n　　者の存在を。\pだから私はここに現れた……」@
@@ -11,14 +10,11 @@ TEXT1 0V\x01 TEXT2 \xdc
 あるいは壮大な嘘というべきか？\
 
   
-INIT J\x0c SET_VAR 
-CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \xda\x03 
-CMD2 TextOn RUNF \x08\x04 END \x03#
+INIT J\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF \xda\x03 APPlY_2 TextOn RUNF \x08\x04 END\x03#
 CHOICE
 「『教授が語る世界』をリアルと信じる」\n「『学校に籠城する世界』をリアルと信じる」\n「『君の語る世界』をリアルと信じる」\n\l0,3,
 ENDCHOICE
 
   
-INIT $\x04\x0c SET_VAR  \xda\x03 \x02 \x08\x04 END  \xda\x03 
-CMD3 TextClose VAR1 \xf6\x04 END 
+INIT $\x04\x0c SET_VAR1 \xda\x03 \x02 \x08\x04 END \xda\x03 APPLY_3 TextClose VAR1 \xf6\x04 END
 END_SCRIPT

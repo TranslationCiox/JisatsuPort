@@ -1,24 +1,19 @@
 START_SCRIPT
 \xa9\x04\x01\xa4\t3\x01\xb8\x03
-SCEC SCEK02_001 \x06 SCE_DONE 
-TEXT1 \x08\xa6\x01 TEXT2 T
+INIT_TEXT SCEK02_001 \x06 SCE_TEXT TEXT1 \x08\xa6\x01 TEXT2 T
  
 　翌日も、若草ゆきは私に話しかけてきた。@
 その翌日も、\pまたその翌日も。@
 何日目だったか、覚えていない。\pいいかげんいらいらした私は、\nどうして私につきまとうのかと、若草ゆきに厳しく問いただした。\n\p若草ゆきはいっしゅん呆気にとられた様子だったけれど、やがて\n気弱に笑って\n「お友達になりたいと思ったから」@
 とだけいった。\w\z
   
-INIT J\x0c SET_VAR 
-CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \xba\x01 
-CMD2 TextOn RUNF \xe8\x01 END 
-SCEC SCEK02_002 \x04\x02 SCE_DONE 
-TEXT1 \x0c\xa6\x01 TEXT2 C
+INIT J\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF \xba\x01 APPlY_2 TextOn RUNF \xe8\x01 END
+INIT_TEXT SCEK02_002 \x04\x02 SCE_TEXT TEXT1 \x0c\xa6\x01 TEXT2 C
  
 　友達には不自由していないはずのゆきが声をかけてくるなんて、\n最初は新手の嫌がらせかと思えた。@
 しかし彼女の笑顔は、魚の小骨みたいに私の心の奥に引っかかっ\nて離れなかった。@
 本当に寂しそうな笑顔だった。@
 その日の夕方、私は自分からゆきを誘ったのだった。\w\z
   
-INIT H\x02\x0c SET_VAR  \xba\x01 \x02 \xe8\x01 END  \xba\x01 
-CMD3 TextClose VAR1 \x9a\x03 END 
+INIT H\x02\x0c SET_VAR1 \xba\x01 \x02 \xe8\x01 END \xba\x01 APPLY_3 TextClose VAR1 \x9a\x03 END
 END_SCRIPT

@@ -1,7 +1,6 @@
 START_SCRIPT
 \xa2\x8f\x01`B#\x01Ds
-SCEC SCE238_001 \x06 SCE_DONE 
-TEXT1 \x80\x83\x01 TEXT2 \x8a
+INIT_TEXT SCE238_001 \x06 SCE_TEXT TEXT1 \x80\x83\x01 TEXT2 \x8a
  
 教授\n　「よかった。\p本当に良かった。\pこの前、目を離した隙に隣室の\n　　患者が、この部屋に来ただろう？」@
 /*▲BGM　停止*/\a4,-1,0,0,拓司\n　「隣室の……？」@
@@ -10,14 +9,9 @@ TEXT1 \x80\x83\x01 TEXT2 \x8a
 教授\n　「どうしたね？」\
 
   
-INIT J\x0c SET_VAR 
-CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \x92\x02 
-CMD2 TextOn RUNF \xc0\x02 END   
-INIT \x0c\x01\x0c SET_VAR 
-CMD6 .\\Data\\Script\\Bgm.Fob VAR1 \xf6\x02 
-CMD2 PlayCD RUNF  \x03 END 
-SCEC SCE238_002 <\x03 SCE_DONE 
-TEXT1 \x84\x83\x01 TEXT2 \xaf
+INIT J\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF \x92\x02 APPlY_2 TextOn RUNF \xc0\x02 END  
+INIT \x0c\x01\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bgm.Fob VAR1 \xf6\x02 APPlY_2 PlayCD RUNF  \x03 END
+INIT_TEXT SCE238_002 <\x03 SCE_TEXT TEXT1 \x84\x83\x01 TEXT2 \xaf
  
 拓司\n　「教授」@
 教授\n　「なにかね？」@
@@ -27,9 +21,8 @@ TEXT1 \x84\x83\x01 TEXT2 \xaf
 　　スッキリしてる。\p……あんたは『雲居ナタネがこの世界に\n　　存在する』ことを、自分で語ってしまったんだ……だからい\n　　ま、おれは彼女が語ったことを実践して、世界を証明するこ\n　　とができる……こんなふうに」\
 
   
-INIT \x80\x03\x0c SET_VAR  \x92\x02 \x02 \xc0\x02 END 
-SCEC SCE238_003 v\x06 SCE_DONE 
-TEXT1 \x88\x83\x01 TEXT2 \xc6
+INIT \x80\x03\x0c SET_VAR1 \x92\x02 \x02 \xc0\x02 END
+INIT_TEXT SCE238_003 v\x06 SCE_TEXT TEXT1 \x88\x83\x01 TEXT2 \xc6
  
 拓司の視線をおって教授はふりかえり、ぎょと身をすくませた。@
 教授の背後に、高さ２メートルの巨大なアイスクリームパフェが\n屹立していた。@
@@ -39,9 +32,8 @@ TEXT1 \x88\x83\x01 TEXT2 \xc6
 　　どこにパフェなどがあると？\p　私は、君が何をいっているの\n　　かさっぱりわからんよ」\
 
   
-INIT \xba\x06\x0c SET_VAR  \x92\x02 \x02 \xc0\x02 END 
-SCEC SCE238_004 \x0c\n SCE_DONE 
-TEXT1 \x8c\x83\x01 TEXT2 \xa1
+INIT \xba\x06\x0c SET_VAR1 \x92\x02 \x02 \xc0\x02 END
+INIT_TEXT SCE238_004 \x0c\n SCE_TEXT TEXT1 \x8c\x83\x01 TEXT2 \xa1
  
 拓司\n　「なるほど、そこにあるパフェは、狂ったおれにしか見えない\n　　幻影だと？\p　うまいな。\pなかなかうまい理屈だよ。@
 　　以前のおれだったら騙されていただろうな。\pいいだろう。@
@@ -56,9 +48,8 @@ TEXT1 \x8c\x83\x01 TEXT2 \xa1
 それは、教授が作り上げたニセモノの拓司の姿だったのだ。\
 
   
-INIT P\n\x0c SET_VAR  \x92\x02 \x02 \xc0\x02 END 
-SCEC SCE238_005 \x0e\r SCE_DONE 
-TEXT1 \x90\x83\x01 TEXT2 E
+INIT P\n\x0c SET_VAR1 \x92\x02 \x02 \xc0\x02 END
+INIT_TEXT SCE238_005 \x0e\r SCE_TEXT TEXT1 \x90\x83\x01 TEXT2 E
  
 拓司\n　「……さあて。\pどういうことか説明してもらおうか……」@
 教授\n　「……」@
@@ -66,9 +57,8 @@ TEXT1 \x90\x83\x01 TEXT2 E
 教授\n　「……」\
 
   
-INIT R\r\x0c SET_VAR  \x92\x02 \x02 \xc0\x02 END 
-SCEC SCE238_006 \xa0\x0e SCE_DONE 
-TEXT1 \x94\x83\x01 TEXT2 \x98
+INIT R\r\x0c SET_VAR1 \x92\x02 \x02 \xc0\x02 END
+INIT_TEXT SCE238_006 \xa0\x0e SCE_TEXT TEXT1 \x94\x83\x01 TEXT2 \x98
  
 拓司\n　「おれは信じる。\p『雲居ナタネが語った世界』を信じる。@
 　　おれは望む物を創ることができると……たとえばこんなふう\n　　に！」@
@@ -85,21 +75,17 @@ TEXT1 \x94\x83\x01 TEXT2 \x98
 教授\n　「……」\
 
   
-INIT \xe4\x0e\x0c SET_VAR  \x92\x02 \x02 \xc0\x02 END 
-SCEC SCE238_007 ~\x11 SCE_DONE 
-TEXT1 \x98\x83\x01 TEXT2 r
+INIT \xe4\x0e\x0c SET_VAR1 \x92\x02 \x02 \xc0\x02 END
+INIT_TEXT SCE238_007 ~\x11 SCE_TEXT TEXT1 \x98\x83\x01 TEXT2 r
  
 拓司\n　「あんたが宇宙人なのか、なんなのかは知らない。\pでも、おれ\n　　はあんたを否定する。\pあんたが創ったこの白い部屋の世界を\n　　……否定する。\pいままでこの世界で、おれはお前が見る夢で\n　　しかなかった。\pしかし、それはもう終わりだ。\pおれはいま、\n　　おれがおれであることをハッキリと認識した。\pだからおれは\n　　おれだ。\pおれはここにいて、おまえはおれが見る夢になる」@
 教授\n　「……」@
 拓司\n　「見ろ。\p世界はいま－－崩れ去る！」\
 
   
-INIT \xc2\x11\x0c SET_VAR  \x92\x02 \x02 \xc0\x02 END   
-INIT \xc8\x0c SET_VAR 
-CMD6 .\\Data\\Script\\Bg.Fob VAR2 \xde\x13 \x02
-CMD4 BgAutoFadeIn VAR2 \x08\x14 END 
-SCEC SCE238_008 ,\x14 SCE_DONE 
-TEXT1 \x9c\x83\x01 TEXT2 v
+INIT \xc2\x11\x0c SET_VAR1 \x92\x02 \x02 \xc0\x02 END  
+INIT \xc8\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bg.Fob VAR2\xde\x13 \x02 APPLY_4 BgAutoFadeIn VAR2\x08\x14 END
+INIT_TEXT SCE238_008 ,\x14 SCE_TEXT TEXT1 \x9c\x83\x01 TEXT2 v
  
 文字通り、白い壁が粉微塵と弾けとんだ。\pベッドも、換気ファン\nも、何もかもが破片となって散った。@
 教授が、おお、と驚愕とも悲鳴ともつかぬ声をあげる。@
@@ -109,9 +95,8 @@ TEXT1 \x9c\x83\x01 TEXT2 v
 拓司は一瞬、自分の存在が揺らいだのを感じた。\pしかし、それは\nちゃちな手品でしかなかった。\pすべてを理解したいま、拓司は教\n授の攻撃の意味をすべて理解しつくしていた。\
 
   
-INIT p\x14\x0c SET_VAR  \x92\x02 \x02 \xc0\x02 END 
-SCEC SCE238_009 \x82\x16 SCE_DONE 
-TEXT1 \xa0\x83\x01 TEXT2 j
+INIT p\x14\x0c SET_VAR1 \x92\x02 \x02 \xc0\x02 END
+INIT_TEXT SCE238_009 \x82\x16 SCE_TEXT TEXT1 \xa0\x83\x01 TEXT2 j
  
 拓司\n　「消えろ」@
 \nひとつの世界を滅亡させた魔人と、その世界最後の生き残りの決\n戦。@
@@ -124,10 +109,8 @@ TEXT1 \xa0\x83\x01 TEXT2 j
 目を覚ますと消えてしまう夢の中の怪物のごとく……そう、まさ\nに教授は拓司の夢となったのだ。\
 
   
-INIT \xc6\x16\x0c SET_VAR  \x92\x02 \x02 \xc0\x02 END  \xf6\x02 
-CMD2 StopCD RUNF \xb4\x18 END 
-SCEC SCE238_010 \xd0\x18 SCE_DONE 
-TEXT1 \xa4\x83\x01 TEXT2 \xc5
+INIT \xc6\x16\x0c SET_VAR1 \x92\x02 \x02 \xc0\x02 END \xf6\x02 APPlY_2 StopCD RUNF \xb4\x18 END
+INIT_TEXT SCE238_010 \xd0\x18 SCE_TEXT TEXT1 \xa4\x83\x01 TEXT2 \xc5
  
 ハルマゲドンは終わった。@
 あとにはただ、白い空間が残された。@
@@ -147,9 +130,8 @@ TEXT1 \xa4\x83\x01 TEXT2 \xc5
 そして世界は、おれそのもなのだ。\
 
   
-INIT \x14\x19\x0c SET_VAR  \x92\x02 \x02 \xc0\x02 END 
-SCEC SCE238_011 b\x1c SCE_DONE 
-TEXT1 \xa8\x83\x01 TEXT2 J
+INIT \x14\x19\x0c SET_VAR1 \x92\x02 \x02 \xc0\x02 END
+INIT_TEXT SCE238_011 b\x1c SCE_TEXT TEXT1 \xa8\x83\x01 TEXT2 J
  
 拓司\n　「……そういうことなんだろう、雲居さん？」@
 \n拓司は振り返っていった。@
@@ -161,9 +143,8 @@ TEXT1 \xa8\x83\x01 TEXT2 J
 ナタネ\n　「そうね」\
 
   
-INIT \xa6\x1c\x0c SET_VAR  \x92\x02 \x02 \xc0\x02 END 
-SCEC SCE238_012 \x08\x1e SCE_DONE 
-TEXT1 \xac\x83\x01 TEXT2 `
+INIT \xa6\x1c\x0c SET_VAR1 \x92\x02 \x02 \xc0\x02 END
+INIT_TEXT SCE238_012 \x08\x1e SCE_TEXT TEXT1 \xac\x83\x01 TEXT2 `
  
 拓司\n　「どこから作るんだい？\p　太陽は東から昇って西に沈むってこ\n　　とを定義することからかい？\p　万有引力の法則からかい？@
 　　あるいは、おれのしらない世界を世界たらしめている法則が\n　　あるのかい？」@
@@ -173,28 +154,22 @@ TEXT1 \xac\x83\x01 TEXT2 `
 そして世界を創った。\
 
   
-INIT L\x1e\x0c SET_VAR  \x92\x02 \x02 \xc0\x02 END 
-SCEC SCE238_013 \x06  SCE_DONE 
-TEXT1 \xb0\x83\x01\x0c" \x92\x02 \x02
-CMD5 TextWindowOffDirect V  END   
-INIT \x02\x0c SET_VAR   \x04
-INIT \x01\x0c SET_VAR   \x08
-INIT \x0c SET_VAR  \xf6\x02 
-CMD2 SePlay RUNF \xd8  END   
-INIT \xca\x0c SET_VAR  \xde\x13 \x02
-CMD4 BgNormalFadeIn RUNF \x1a! END   
-INIT \x02\x0c SET_VAR  \xf6\x02 
-CMD2 SeWait RUNF d! END   
-INIT \xc9\x0c SET_VAR  \xde\x13 \x02 \x1a! END  \x92\x02 \x02
-CMD4 TextWindowOn VAR2 \xc0! END \x03\x12
+INIT L\x1e\x0c SET_VAR1 \x92\x02 \x02 \xc0\x02 END
+INIT_TEXT SCE238_013 \x06  SCE_TEXT TEXT1 \xb0\x83\x01\x0c" \x92\x02 
+WAVL TextWindowOffDirect V  END  
+INIT \x02\x0c SET_VAR1  \x04
+INIT \x01\x0c SET_VAR1  \x08
+INIT \x0c SET_VAR1 \xf6\x02 APPlY_2 SePlay RUNF \xd8  END  
+INIT \xca\x0c SET_VAR1 \xde\x13 \x02 APPLY_4 BgNormalFadeIn RUNF \x1a! END  
+INIT \x02\x0c SET_VAR1 \xf6\x02 APPlY_2 SeWait RUNF d! END  
+INIT \xc9\x0c SET_VAR1 \xde\x13 \x02 \x1a! END \x92\x02 \x02 APPLY_4 TextWindowOn VAR2\xc0! END\x03\x12
  
 \n\n\n\n\n\n\n\n\n\n　　　　　　　　　　「あたらしいせかい。」\
 
   
-INIT \xe4!\x0c SET_VAR  \x92\x02 \x02 \xc0\x02 END   
-INIT \x07\x01\x0c SET_VAR  \xf6\x02 \x02  \x03 END 
-SCEC SCE238_014 \x9a" SCE_DONE 
-TEXT1 \xb4\x83\x01 TEXT2 \x7f
+INIT \xe4!\x0c SET_VAR1 \x92\x02 \x02 \xc0\x02 END  
+INIT \x07\x01\x0c SET_VAR1 \xf6\x02 \x02  \x03 END
+INIT_TEXT SCE238_014 \x9a" SCE_TEXT TEXT1 \xb4\x83\x01 TEXT2 \x7f
  
 ドン・ドン・ドン・ドン……@
 \nなにかが身体を押しつぶそうとしている。\pずっしりと重い塊が、\n腹の上に叩き付けられている。@
@@ -207,9 +182,8 @@ TEXT1 \xb4\x83\x01 TEXT2 \x7f
 早桃\n　「おにいちゃんが起きないのが悪いんだからね！」\
 
   
-INIT \xde"\x0c SET_VAR  \x92\x02 \x02 \xc0\x02 END 
-SCEC SCE238_015 \x14% SCE_DONE 
-TEXT1 \xb8\x83\x01 TEXT2 ~
+INIT \xde"\x0c SET_VAR1 \x92\x02 \x02 \xc0\x02 END
+INIT_TEXT SCE238_015 \x14% SCE_TEXT TEXT1 \xb8\x83\x01 TEXT2 ~
  
 義妹の早桃が、拓司の腹の上に腰掛けて頬を膨らませている。@
 窓からは爽やかな朝日が射し込んでいる。@
@@ -221,9 +195,8 @@ TEXT1 \xb8\x83\x01 TEXT2 ~
 早桃\n　「ゲ、とはなによゲ、とはっ！」\
 
   
-INIT X%\x0c SET_VAR  \x92\x02 \x02 \xc0\x02 END 
-SCEC SCE238_016 \x8a' SCE_DONE 
-TEXT1 \xbc\x83\x01 TEXT2 ~
+INIT X%\x0c SET_VAR1 \x92\x02 \x02 \xc0\x02 END
+INIT_TEXT SCE238_016 \x8a' SCE_TEXT TEXT1 \xbc\x83\x01 TEXT2 ~
  
 拓司\n　「お、お前なあ。\pもうちょっとおしとやかにならないと、嫁の\n　　もらい手がなくなるぞ？」@
 早桃\n　「う、うっさいわね！\p　早桃は……早桃は結婚なんかしないか\n　　らいいもん。\pだって、早桃、早桃……」@
@@ -234,9 +207,8 @@ TEXT1 \xbc\x83\x01 TEXT2 ~
 \n拓司\n　「のあああああっ！\p　優しい兄上を何度殴れば気が済むんだ、\n　　この義妹わっ？！」\
 
   
-INIT \xce'\x0c SET_VAR  \x92\x02 \x02 \xc0\x02 END 
-SCEC SCE238_017 * SCE_DONE 
-TEXT1 \xc0\x83\x01 TEXT2 w
+INIT \xce'\x0c SET_VAR1 \x92\x02 \x02 \xc0\x02 END
+INIT_TEXT SCE238_017 * SCE_TEXT TEXT1 \xc0\x83\x01 TEXT2 w
  
 早桃\n　「起きるまで何度でも殴ってさしあげてよ、おにいさま？（ニ\n　　ヤリ）」@
 拓司\n　「へいへい、起きますよ。\p起きればいいんでしょ……（よっこ\n　　いしょ）」@
@@ -248,9 +220,8 @@ TEXT1 \xc0\x83\x01 TEXT2 w
 拓司\n　「だからきゃーきゃー叫ばれても……」\
 
   
-INIT D*\x0c SET_VAR  \x92\x02 \x02 \xc0\x02 END 
-SCEC SCE238_018 Z, SCE_DONE 
-TEXT1 \xc4\x83\x01 TEXT2 ^
+INIT D*\x0c SET_VAR1 \x92\x02 \x02 \xc0\x02 END
+INIT_TEXT SCE238_018 Z, SCE_TEXT TEXT1 \xc4\x83\x01 TEXT2 ^
  
 早桃\n　「パ、パンツ！」@
 拓司\n　「パンツ？\p　パンツって……あっ！\p　俺、なんで全裸なんだ\n　　っ！」@
@@ -262,12 +233,10 @@ TEXT1 \xc4\x83\x01 TEXT2 ^
 \nどぐわああああああああっし！！\
 
   
-INIT \x9e,\x0c SET_VAR  \x92\x02 \x02 \xc0\x02 END  \x92\x02 \x02
-CMD4 TextWindowOff VAR1 \\. END   
-INIT \xc8\x0c SET_VAR  \xde\x13 \x02 \x1a! END   
-INIT \x0c SET_VAR  \xde\x13 \x02 \x1a! END  \x92\x02 \x02 \xc0! END 
-SCEC SCE238_019 \x02/ SCE_DONE 
-TEXT1 \xc8\x83\x01 TEXT2 f
+INIT \x9e,\x0c SET_VAR1 \x92\x02 \x02 \xc0\x02 END \x92\x02 \x02 APPLY_4 TextWindowOff VAR1 \\. END  
+INIT \xc8\x0c SET_VAR1 \xde\x13 \x02 \x1a! END  
+INIT \x0c SET_VAR1 \xde\x13 \x02 \x1a! END \x92\x02 \x02 \xc0! END
+INIT_TEXT SCE238_019 \x02/ SCE_TEXT TEXT1 \xc8\x83\x01 TEXT2 f
  
 早桃\n　「まったく！\p　年頃の義妹を何だと思ってるのかなー！」@
 \nぷりぷりと怒りながら、早桃は手早く朝食を皿に盛りつけた。@
@@ -279,9 +248,8 @@ TEXT1 \xc8\x83\x01 TEXT2 f
 早桃\n　「（にこにこ）」\
 
   
-INIT F/\x0c SET_VAR  \x92\x02 \x02 \xc0\x02 END 
-SCEC SCE238_020 \x181 SCE_DONE 
-TEXT1 \xcc\x83\x01 TEXT2 w
+INIT F/\x0c SET_VAR1 \x92\x02 \x02 \xc0\x02 END
+INIT_TEXT SCE238_020 \x181 SCE_TEXT TEXT1 \xcc\x83\x01 TEXT2 w
  
 拓司\n　「あ、あの～……早桃さん？」@
 早桃\n　「ん？」@
@@ -292,9 +260,8 @@ TEXT1 \xcc\x83\x01 TEXT2 w
 拓司\n　「（しまった！　料理の話になると、コイツ、長いんだった…\n　　…）」\
 
   
-INIT \\1\x0c SET_VAR  \x92\x02 \x02 \xc0\x02 END 
-SCEC SCE238_021 r3 SCE_DONE 
-TEXT1 \xd0\x83\x01 TEXT2 >
+INIT \\1\x0c SET_VAR1 \x92\x02 \x02 \xc0\x02 END
+INIT_TEXT SCE238_021 r3 SCE_TEXT TEXT1 \xd0\x83\x01 TEXT2 >
  
 早桃\n　「……それとね……を……して……で炒めて……で……」@
 拓司\n　「……」@
@@ -302,10 +269,9 @@ TEXT1 \xd0\x83\x01 TEXT2 >
 /*■黒　表示（クロスフェード）*/\a7,-2,-2,0,\a0,200,2,0,\a6,-2,0,0,～３０分経過～\
 
   
-INIT \xb63\x0c SET_VAR  \x92\x02 \x02 \xc0\x02 END   
-INIT \x0c SET_VAR  \xde\x13 \x02 \x08\x14 END 
-SCEC SCE238_022 \x1c5 SCE_DONE 
-TEXT1 \xd4\x83\x01 TEXT2 \x9f
+INIT \xb63\x0c SET_VAR1 \x92\x02 \x02 \xc0\x02 END  
+INIT \x0c SET_VAR1 \xde\x13 \x02 \x08\x14 END
+INIT_TEXT SCE238_022 \x1c5 SCE_TEXT TEXT1 \xd4\x83\x01 TEXT2 \x9f
  
 早桃\n　「……というわけなの。\pわかった、おにいちゃん？！」@
 拓司\n　「はあ、はあ……非常によくわかりました。\p学校遅刻しそうな\n　　くらいわかりました」@
@@ -317,9 +283,8 @@ TEXT1 \xd4\x83\x01 TEXT2 \x9f
 早桃\n　「あたりまえじゃない、キラキラだもの！\p　ひかってなかった\n　　ら、キラキラとはいわないんじゃないの？」\
 
   
-INIT `5\x0c SET_VAR  \x92\x02 \x02 \xc0\x02 END 
-SCEC SCE238_023 \x168 SCE_DONE 
-TEXT1 \xd8\x83\x01 TEXT2 C
+INIT `5\x0c SET_VAR1 \x92\x02 \x02 \xc0\x02 END
+INIT_TEXT SCE238_023 \x168 SCE_TEXT TEXT1 \xd8\x83\x01 TEXT2 C
  
 拓司\n　「そ、そういう問題ではないような……」@
 早桃\n　「早く早く！\p　早く食べないと間に合わないよ！」@
@@ -328,24 +293,22 @@ TEXT1 \xd8\x83\x01 TEXT2 C
 拓司\n　「こ、こ、こ、これわあああああああああっ？！？！」\
 
   
-INIT Z8\x0c SET_VAR  \x92\x02 \x02 \xc0\x02 END 
-SCEC SCE238_024 \xa09 SCE_DONE 
-TEXT1 \xdc\x83\x01\x0c" \xf6\x02 \x02 \xb4\x18 END   
-INIT \x02\x0c SET_VAR   \x04
-INIT \x01\x0c SET_VAR   \x08
-INIT \x0c SET_VAR  \xf6\x02 \x02 \xd8  END   
-INIT \xc9\x0c SET_VAR  \xde\x13 \x02 \x1a! END   
-INIT \x02\x0c SET_VAR  \xf6\x02 \x02 d! END   
-INIT \xc9\x0c SET_VAR  \xde\x13 \x02 \x1a! END \x03\x12
+INIT Z8\x0c SET_VAR1 \x92\x02 \x02 \xc0\x02 END
+INIT_TEXT SCE238_024 \xa09 SCE_TEXT TEXT1 \xdc\x83\x01\x0c" \xf6\x02 \x02 \xb4\x18 END  
+INIT \x02\x0c SET_VAR1  \x04
+INIT \x01\x0c SET_VAR1  \x08
+INIT \x0c SET_VAR1 \xf6\x02 \x02 \xd8  END  
+INIT \xc9\x0c SET_VAR1 \xde\x13 \x02 \x1a! END  
+INIT \x02\x0c SET_VAR1 \xf6\x02 \x02 d! END  
+INIT \xc9\x0c SET_VAR1 \xde\x13 \x02 \x1a! END\x03\x12
  
 \n\n\n\n\n\n\n\n\n\n　　　　　　　　　　「あたらしいせかい。」\
 
   
-INIT \x02;\x0c SET_VAR  \x92\x02 \x02 \xc0\x02 END   
-INIT \xc8\x0c SET_VAR  \xde\x13 \x02 \x08\x14 END   
-INIT \x04\x01\x0c SET_VAR  \xf6\x02 \x02  \x03 END 
-SCEC SCE238_025 \xec; SCE_DONE 
-TEXT1 \xe0\x83\x01 TEXT2 Z
+INIT \x02;\x0c SET_VAR1 \x92\x02 \x02 \xc0\x02 END  
+INIT \xc8\x0c SET_VAR1 \xde\x13 \x02 \x08\x14 END  
+INIT \x04\x01\x0c SET_VAR1 \xf6\x02 \x02  \x03 END
+INIT_TEXT SCE238_025 \xec; SCE_TEXT TEXT1 \xe0\x83\x01 TEXT2 Z
  
 夢から覚めた拓司はすべてを悟っていた。@
 腕の中には、紅葉の体温がある。\pそれを逃がさないようにぎゅっ\nと抱きしめて、拓司はいった。@
@@ -357,9 +320,8 @@ TEXT1 \xe0\x83\x01 TEXT2 Z
 紅葉\n　「……」\
 
   
-INIT 0<\x0c SET_VAR  \x92\x02 \x02 \xc0\x02 END 
-SCEC SCE238_026 \xd2= SCE_DONE 
-TEXT1 \xe4\x83\x01 TEXT2 :
+INIT 0<\x0c SET_VAR1 \x92\x02 \x02 \xc0\x02 END
+INIT_TEXT SCE238_026 \xd2= SCE_TEXT TEXT1 \xe4\x83\x01 TEXT2 :
  
 拓司\n　「将来、嫁さんにしてやるって」@
 紅葉\n　「……思い出したんだ？」@
@@ -368,10 +330,9 @@ TEXT1 \xe4\x83\x01 TEXT2 :
 拓司\n　「紅葉？」\
 
   
-INIT \x16>\x0c SET_VAR  \x92\x02 \x02 \xc0\x02 END   
-INIT /\x0c SET_VAR  \xde\x13 \x02 \x08\x14 END 
-SCEC SCE238_027 l? SCE_DONE 
-TEXT1 \xe8\x83\x01 TEXT2 r
+INIT \x16>\x0c SET_VAR1 \x92\x02 \x02 \xc0\x02 END  
+INIT /\x0c SET_VAR1 \xde\x13 \x02 \x08\x14 END
+INIT_TEXT SCE238_027 l? SCE_TEXT TEXT1 \xe8\x83\x01 TEXT2 r
  
 紅葉は泣いていた。@
 穏やかな笑顔を浮かべながら、ぽろぽろと大粒の涙を流していた。\n\p拓司が初めて見る、紅葉の涙だった。@
@@ -384,9 +345,8 @@ TEXT1 \xe8\x83\x01 TEXT2 r
 拓司の腕の中で、紅葉の身体はきらきらと光って消滅しつつあっ\nた。\
 
   
-INIT \xb0?\x0c SET_VAR  \x92\x02 \x02 \xc0\x02 END 
-SCEC SCE238_028 \xb2A SCE_DONE 
-TEXT1 \xec\x83\x01 TEXT2 R
+INIT \xb0?\x0c SET_VAR1 \x92\x02 \x02 \xc0\x02 END
+INIT_TEXT SCE238_028 \xb2A SCE_TEXT TEXT1 \xec\x83\x01 TEXT2 R
  
 拓司\n　「紅葉、こ、これは……？！」@
 紅葉\n　「思い出しちゃったんだね、拓司。\pもう……お別れだよ」@
@@ -395,9 +355,8 @@ TEXT1 \xec\x83\x01 TEXT2 R
 いや、紅葉だけではない。\pまるで霞のように校舎が歪み、夕日が\n歪み……世界が消えつつあった。\
 
   
-INIT \xf6A\x0c SET_VAR  \x92\x02 \x02 \xc0\x02 END 
-SCEC SCE238_029 xC SCE_DONE 
-TEXT1 \xf0\x83\x01 TEXT2 ^
+INIT \xf6A\x0c SET_VAR1 \x92\x02 \x02 \xc0\x02 END
+INIT_TEXT SCE238_029 xC SCE_TEXT TEXT1 \xf0\x83\x01 TEXT2 ^
  
 拓司\n　「どうしてだ！\p　どうしてなんだ、紅葉！」@
 紅葉\n　「だってあたしは……思い出の国の住人だから」@
@@ -406,9 +365,8 @@ TEXT1 \xf0\x83\x01 TEXT2 ^
 それも、消えつつあった。\
 
   
-INIT \xbcC\x0c SET_VAR  \x92\x02 \x02 \xc0\x02 END 
-SCEC SCE238_030 nE SCE_DONE 
-TEXT1 \xf4\x83\x01 TEXT2 \x85
+INIT \xbcC\x0c SET_VAR1 \x92\x02 \x02 \xc0\x02 END
+INIT_TEXT SCE238_030 nE SCE_TEXT TEXT1 \xf4\x83\x01 TEXT2 \x85
  
 紅葉\n　「交通事故にあったとき……あなたはこの世界に迷い込んだの。\n　　\p３年前の世界に……あなたの記憶の奥に眠っていた世界に。@
 　　あなたは１５歳の虎菱拓司じゃなくて、１８歳の虎菱拓司な\n　　の。\pそしてこの世界は、あなたが見ている……夢のようなも\n　　のなの」@
@@ -418,9 +376,8 @@ TEXT1 \xf4\x83\x01 TEXT2 \x85
 \nでも、と拓司は叫んだ。\
 
   
-INIT \xb2E\x0c SET_VAR  \x92\x02 \x02 \xc0\x02 END 
-SCEC SCE238_031 H SCE_DONE 
-TEXT1 \xf8\x83\x01 TEXT2 \x8f
+INIT \xb2E\x0c SET_VAR1 \x92\x02 \x02 \xc0\x02 END
+INIT_TEXT SCE238_031 H SCE_TEXT TEXT1 \xf8\x83\x01 TEXT2 \x8f
  
 拓司\n　「そんなことはどうでもいい！\p　俺はお前と一緒に……ここで\n　　生きる！\p　この世界で生きていく！」@
 紅葉\n　「だめよ。\p思い出は、消えていくの。\pどんなに大切な思い出も\n　　……忘れちゃう。\p拓司は今、この世界が思い出だってことに\n　　気づいてしまった。\pだから……消えるの」@
@@ -430,9 +387,8 @@ TEXT1 \xf8\x83\x01 TEXT2 \x8f
 拓司はわずかに残った紅葉の気配を……温かさをかき集めるよう\nに、自らの胸をかき抱いた。\
 
   
-INIT DH\x0c SET_VAR  \x92\x02 \x02 \xc0\x02 END 
-SCEC SCE238_032 \xbaJ SCE_DONE 
-TEXT1 \xfc\x83\x01 TEXT2 p
+INIT DH\x0c SET_VAR1 \x92\x02 \x02 \xc0\x02 END
+INIT_TEXT SCE238_032 \xbaJ SCE_TEXT TEXT1 \xfc\x83\x01 TEXT2 p
  
 紅葉\n　「あなたが思い出さなければいいって……そう思ってた。@
 　　そうすれば、あなたはずっとこの世界の住人で……私はあな\n　　たの恋人でいられたから。\pでも、そんなの間違ってる。@
@@ -443,9 +399,8 @@ TEXT1 \xfc\x83\x01 TEXT2 p
 拓司\n　「どうして……」\
 
   
-INIT \xfeJ\x0c SET_VAR  \x92\x02 \x02 \xc0\x02 END 
-SCEC SCE238_033 \xf8L SCE_DONE 
-TEXT1 \x84\x01 TEXT2 \xb0
+INIT \xfeJ\x0c SET_VAR1 \x92\x02 \x02 \xc0\x02 END
+INIT_TEXT SCE238_033 \xf8L SCE_TEXT TEXT1 \x84\x01 TEXT2 \xb0
  
 紅葉\n　「ペンダントの力であなたがホントの世界に帰っちゃうのは辛\n　　い。\pでも……それが正しいことだから。\pあなたには、あなた\n　　の世界がある。\pまだたどり着けないかもしれないけど、本当\n　　の世界が、あなたには用意されているはずだから。@
 　　ペンダントを開いて、拓司」@
@@ -459,9 +414,8 @@ TEXT1 \x84\x01 TEXT2 \xb0
 世界もまた、どこにもない。\
 
   
-INIT <M\x0c SET_VAR  \x92\x02 \x02 \xc0\x02 END 
-SCEC SCE238_034 6P SCE_DONE 
-TEXT1 \x04\x84\x01 TEXT2 `
+INIT <M\x0c SET_VAR1 \x92\x02 \x02 \xc0\x02 END
+INIT_TEXT SCE238_034 6P SCE_TEXT TEXT1 \x04\x84\x01 TEXT2 `
  
 紅葉\n　「大丈夫。\pホントの世界に戻れば、あたしのことは忘れる。@
 　　この町のことも……なにもかも。\pそうなれば悲しみも消える\n　　から」@
@@ -472,27 +426,24 @@ TEXT1 \x04\x84\x01 TEXT2 `
 拓司\n　「ありがとう！」\
 
   
-INIT zP\x0c SET_VAR  \x92\x02 \x02 \xc0\x02 END 
-SCEC SCE238_035 4R SCE_DONE 
-TEXT1 \x08\x84\x01 TEXT2 =
+INIT zP\x0c SET_VAR1 \x92\x02 \x02 \xc0\x02 END
+INIT_TEXT SCE238_035 4R SCE_TEXT TEXT1 \x08\x84\x01 TEXT2 =
  
 紅葉\n　「拓司……精一杯ホントの世界を生きて。\pあたしたちを……思\n　　い出を裏切らないで、生きて。\p怖くなんかないよ、だって、\n　　あたしたちはいつも拓司の中にいるから。\p拓司は、ひとりじ\n　　ゃないから」@
 \nひかりが爆発した。\
 
   
-INIT xR\x0c SET_VAR  \x92\x02 \x02 \xc0\x02 END   
-INIT \xc8\x0c SET_VAR  \xde\x13 \x02 \x08\x14 END  \xf6\x02 \x02 \xb4\x18 END 
-SCEC SCE238_036 \xf4S SCE_DONE 
-TEXT1 \x0c\x84\x01 TEXT2 \x12
+INIT xR\x0c SET_VAR1 \x92\x02 \x02 \xc0\x02 END  
+INIT \xc8\x0c SET_VAR1 \xde\x13 \x02 \x08\x14 END \xf6\x02 \x02 \xb4\x18 END
+INIT_TEXT SCE238_036 \xf4S SCE_TEXT TEXT1 \x0c\x84\x01 TEXT2 \x12
  
 \n\n\n\n\n\n\n\n\n\n　　　　　　　　　　「あたらしいせかい。」\
 
   
-INIT 8T\x0c SET_VAR  \x92\x02 \x02 \xc0\x02 END   
-INIT \x08\x01\x0c SET_VAR  \xf6\x02 \x02  \x03 END   
-INIT 0\x0c SET_VAR  \xde\x13 \x02 \x08\x14 END 
-SCEC SCE238_037 "U SCE_DONE 
-TEXT1 \x10\x84\x01 TEXT2 d
+INIT 8T\x0c SET_VAR1 \x92\x02 \x02 \xc0\x02 END  
+INIT \x08\x01\x0c SET_VAR1 \xf6\x02 \x02  \x03 END  
+INIT 0\x0c SET_VAR1 \xde\x13 \x02 \x08\x14 END
+INIT_TEXT SCE238_037 "U SCE_TEXT TEXT1 \x10\x84\x01 TEXT2 d
  
 なたねの目には、涙が浮かんでいた。@
 それを見て、拓司はたまらなくせつなくなった。@
@@ -500,9 +451,8 @@ TEXT1 \x10\x84\x01 TEXT2 d
 超能力という呪いを背負わされ、道はひとつしかなかったのだ。\
 
   
-INIT fU\x0c SET_VAR  \x92\x02 \x02 \xc0\x02 END 
-SCEC SCE238_038 0W SCE_DONE 
-TEXT1 \x14\x84\x01 TEXT2 \x92
+INIT fU\x0c SET_VAR1 \x92\x02 \x02 \xc0\x02 END
+INIT_TEXT SCE238_038 0W SCE_TEXT TEXT1 \x14\x84\x01 TEXT2 \x92
  
 なたね\n　「虎菱くんは……私のこと、怖くないの？」@
 拓司\n　「怖い？」@
@@ -510,9 +460,8 @@ TEXT1 \x14\x84\x01 TEXT2 \x92
 拓司\n　「そうだよな……雲居さんの言うとおりだ。\pでもね、雲居\n　　さん。\p誰かと触れ合わなければ、物語だって始まらないんだ」\n\pなたね\n　「……」\
 
   
-INIT tW\x0c SET_VAR  \x92\x02 \x02 \xc0\x02 END 
-SCEC SCE238_039 \xf6Y SCE_DONE 
-TEXT1 \x18\x84\x01 TEXT2 ^
+INIT tW\x0c SET_VAR1 \x92\x02 \x02 \xc0\x02 END
+INIT_TEXT SCE238_039 \xf6Y SCE_TEXT TEXT1 \x18\x84\x01 TEXT2 ^
  
 拓司\n　「人間を信じろ、とは俺にはいえない。\p雲居さんがこれまで\n　　体験してきた辛いこと、哀しいことを、俺は本当の意味で共\n　　有することはできないから。\p雲居さんが流してきた涙の量\n　　を、俺は知らないから。\pだから……おれはこういうことしか\n　　できない」@
 なたね\n　「……」@
@@ -521,9 +470,8 @@ TEXT1 \x18\x84\x01 TEXT2 ^
 \n拓司は無言で頷いた。\
 
   
-INIT :Z\x0c SET_VAR  \x92\x02 \x02 \xc0\x02 END 
-SCEC SCE238_040 \xec[ SCE_DONE 
-TEXT1 \x1c\x84\x01 TEXT2 g
+INIT :Z\x0c SET_VAR1 \x92\x02 \x02 \xc0\x02 END
+INIT_TEXT SCE238_040 \xec[ SCE_TEXT TEXT1 \x1c\x84\x01 TEXT2 g
  
 なたね\n　「信じて……いいんだね？\p　私、誰かを信じてもいいんだよね\n　　？」@
 拓司\n　「ああ。\p物語の終わりまで、俺が責任持って信じられるヤツに\n　　なってやるさ」@
@@ -532,32 +480,29 @@ TEXT1 \x1c\x84\x01 TEXT2 g
 \n拓司の精神は、なたねのそれと溶け合い、そしてひとつとなった\n……。\
 
   
-INIT 0\\\x0c SET_VAR  \x92\x02 \x02 \xc0\x02 END 
-SCEC SCE238_041 \x06^ SCE_DONE 
-TEXT1  \x84\x01\x0c" \x92\x02 \x02 \\. END  \xf6\x02 \x02 \xb4\x18 END   
-INIT \x02\x0c SET_VAR   \x04
-INIT \x01\x0c SET_VAR   \x08
-INIT \x0c SET_VAR  \xf6\x02 \x02 \xd8  END   
-INIT \xca\x0c SET_VAR  \xde\x13 \x02 \x1a! END   
-INIT \x02\x0c SET_VAR  \xf6\x02 \x02 d! END   
-INIT \xc9\x0c SET_VAR  \xde\x13 \x02 \x1a! END  \x92\x02 \x02 \xc0! END \x03\x13
+INIT 0\\\x0c SET_VAR1 \x92\x02 \x02 \xc0\x02 END
+INIT_TEXT SCE238_041 \x06^ SCE_TEXT TEXT1  \x84\x01\x0c" \x92\x02 \x02 \\. END \xf6\x02 \x02 \xb4\x18 END  
+INIT \x02\x0c SET_VAR1  \x04
+INIT \x01\x0c SET_VAR1  \x08
+INIT \x0c SET_VAR1 \xf6\x02 \x02 \xd8  END  
+INIT \xca\x0c SET_VAR1 \xde\x13 \x02 \x1a! END  
+INIT \x02\x0c SET_VAR1 \xf6\x02 \x02 d! END  
+INIT \xc9\x0c SET_VAR1 \xde\x13 \x02 \x1a! END \x92\x02 \x02 \xc0! END\x03\x13
  
 \n\n\n\n\n\n\n\n\n\n\n　　　　　　　　　　「あたらしいせかい。」\
 
   
-INIT \x9c_\x0c SET_VAR  \x92\x02 \x02 \xc0\x02 END   
-INIT \xc8\x0c SET_VAR  \xde\x13 \x02 \x08\x14 END   
-INIT \n\x01\x0c SET_VAR  \xf6\x02 \x02  \x03 END 
-SCEC SCE238_042 \x8a` SCE_DONE 
-TEXT1 $\x84\x01 TEXT2 \x1b
+INIT \x9c_\x0c SET_VAR1 \x92\x02 \x02 \xc0\x02 END  
+INIT \xc8\x0c SET_VAR1 \xde\x13 \x02 \x08\x14 END  
+INIT \n\x01\x0c SET_VAR1 \xf6\x02 \x02  \x03 END
+INIT_TEXT SCE238_042 \x8a` SCE_TEXT TEXT1 $\x84\x01 TEXT2 \x1b
  
 拓司は震える手でリターンキーを押した。@
 漆黒のモニターに、滝のように文字が流れ出し、明滅する。\
 
   
-INIT \xce`\x0c SET_VAR  \x92\x02 \x02 \xc0\x02 END 
-SCEC SCE238_043 ta SCE_DONE 
-TEXT1 (\x84\x01 TEXT2 \xbf
+INIT \xce`\x0c SET_VAR1 \x92\x02 \x02 \xc0\x02 END
+INIT_TEXT SCE238_043 ta SCE_TEXT TEXT1 (\x84\x01 TEXT2 \xbf
  
 ×月×日@
 指示書／入力データ設定@
@@ -577,27 +522,24 @@ TEXT1 (\x84\x01 TEXT2 \xbf
 …………\
 
   
-INIT \xb8a\x0c SET_VAR  \x92\x02 \x02 \xc0\x02 END 
-SCEC SCE238_044 \xeed SCE_DONE 
-TEXT1 ,\x84\x01 TEXT2 1
+INIT \xb8a\x0c SET_VAR1 \x92\x02 \x02 \xc0\x02 END
+INIT_TEXT SCE238_044 \xeed SCE_TEXT TEXT1 ,\x84\x01 TEXT2 1
  
 拓司は思わず叫んだ。@
 \n拓司\n　「あの世界はバーチャルリアリティだったというのか？！」@
 カンナ\n　「そう。\pこここそが現実なの。\pあなたが見ていたのは、中央管\n　　理室が作った世界」\
 
   
-INIT 2e\x0c SET_VAR  \x92\x02 \x02 \xc0\x02 END 
-SCEC SCE238_045 0f SCE_DONE 
-TEXT1 0\x84\x01 TEXT2 d
+INIT 2e\x0c SET_VAR1 \x92\x02 \x02 \xc0\x02 END
+INIT_TEXT SCE238_045 0f SCE_TEXT TEXT1 0\x84\x01 TEXT2 d
  
 すべての謎は解けた。@
 あの世界が仮想現実だとしたら、異常なまでの現実感の希薄さも\n説明できる。\pしかし、だとしたら……だとしたら……この世界が\n仮想現実でないという保証はどこにあるというのだ？@
 妄想世界の上に、先ほどまで現実だと信じて疑わなかった夢の世\n界がある。\pそしてそのさらに上に、この世界がある。\pだとした\nら、その上にさらなる世界があるという可能性は否定できないで\nはないか！\
 
   
-INIT tf\x0c SET_VAR  \x92\x02 \x02 \xc0\x02 END 
-SCEC SCE238_046 >h SCE_DONE 
-TEXT1 4\x84\x01 TEXT2 \x80
+INIT tf\x0c SET_VAR1 \x92\x02 \x02 \xc0\x02 END
+INIT_TEXT SCE238_046 >h SCE_TEXT TEXT1 4\x84\x01 TEXT2 \x80
  
 カンナ\n　「混乱しているのね。\pわかるわ。\p私たちレジスタンスは、『合\n　　わせ鏡』って呼んでいるわ。\p世界の真実を知った人間が陥る\n　　現象よ。\pなにが現実なのかわからなくなる。\p自分は誰かが見\n　　ている夢なんじゃないか？\p　ひどい場合は耐えきれなくれ自\n　　殺してしまう」@
 拓司\n　「俺は……どうすればいい？」@
@@ -605,9 +547,8 @@ TEXT1 4\x84\x01 TEXT2 \x80
 拓司\n　「無理だ！\p　いきなりこんなこと全部を信じるわけにはいかな\n　　い！」\
 
   
-INIT \x82h\x0c SET_VAR  \x92\x02 \x02 \xc0\x02 END 
-SCEC SCE238_047 \xbcj SCE_DONE 
-TEXT1 8\x84\x01 TEXT2 R
+INIT \x82h\x0c SET_VAR1 \x92\x02 \x02 \xc0\x02 END
+INIT_TEXT SCE238_047 \xbcj SCE_TEXT TEXT1 8\x84\x01 TEXT2 R
  
 カンナ\n　「そう。\pじゃあ、私を愛するといいわ」@
 拓司\n　「なに？」@
@@ -617,9 +558,8 @@ TEXT1 8\x84\x01 TEXT2 R
 拓司\n　「ふざけるな！\p　そんな機械的にできるか！」\
 
   
-INIT k\x0c SET_VAR  \x92\x02 \x02 \xc0\x02 END  \xf6\x02 \x02 \xb4\x18 END 
-SCEC SCE238_048 \x9cl SCE_DONE 
-TEXT1 <\x84\x01 TEXT2 6
+INIT k\x0c SET_VAR1 \x92\x02 \x02 \xc0\x02 END \xf6\x02 \x02 \xb4\x18 END
+INIT_TEXT SCE238_048 \x9cl SCE_TEXT TEXT1 <\x84\x01 TEXT2 6
  
 その時だった。@
 沈黙したはずのレーザー砲台が、きしんだ音を立てた。@
@@ -628,9 +568,8 @@ TEXT1 <\x84\x01 TEXT2 6
 そしてカンナの胸を貫いた。\
 
   
-INIT \xe0l\x0c SET_VAR  \x92\x02 \x02 \xc0\x02 END 
-SCEC SCE238_049 \xf2m SCE_DONE 
-TEXT1 @\x84\x01 TEXT2 q
+INIT \xe0l\x0c SET_VAR1 \x92\x02 \x02 \xc0\x02 END
+INIT_TEXT SCE238_049 \xf2m SCE_TEXT TEXT1 @\x84\x01 TEXT2 q
  
 拓司\n　「カ、カンナ？！」@
 \n拓司は砲台と自分のあいだに割って入ったカンナを、抱き起こし\nた。@
@@ -640,26 +579,23 @@ TEXT1 @\x84\x01 TEXT2 q
 カンナ\n　「あなたを愛せるって……いったでしょう？\p　アレはね……ウ\n　　ソよ」\
 
   
-INIT 6n\x0c SET_VAR  \x92\x02 \x02 \xc0\x02 END   
-INIT \x04\x01\x0c SET_VAR  \xf6\x02 \x02  \x03 END 
-SCEC SCE238_050 hp SCE_DONE 
-TEXT1 D\x84\x01 TEXT2 -
+INIT 6n\x0c SET_VAR1 \x92\x02 \x02 \xc0\x02 END  
+INIT \x04\x01\x0c SET_VAR1 \xf6\x02 \x02  \x03 END
+INIT_TEXT SCE238_050 hp SCE_TEXT TEXT1 D\x84\x01 TEXT2 -
  
 拓司\n　「……」@
 カンナ\n　「だって、もう、私、あなたのこと……好きだったから」@
 拓司\n　「カンナ？\p　……カンナ……カンナ、カンナアアアアアアアア\n　　アアッ！」\
 
   
-INIT \xacp\x0c SET_VAR  \x92\x02 \x02 \xc0\x02 END   
-INIT \xc9\x0c SET_VAR  \xde\x13 \x02 \x08\x14 END 
-SCEC SCE238_051 \xceq SCE_DONE 
-TEXT1 H\x84\x01 TEXT2  
+INIT \xacp\x0c SET_VAR1 \x92\x02 \x02 \xc0\x02 END  
+INIT \xc9\x0c SET_VAR1 \xde\x13 \x02 \x08\x14 END
+INIT_TEXT SCE238_051 \xceq SCE_TEXT TEXT1 H\x84\x01 TEXT2  
  
 拓司の中で何かが弾けた。@
 それは古い虎菱拓司の死を告げるものであり、同時に新しい虎菱\n拓司の誕生を告げる閃きだった。\
 
   
-INIT \x12r\x0c SET_VAR  \x92\x02 \x02 \xc0\x02 END  \xf6\x02 \x02 \xb4\x18 END   
-INIT \xc8\x0c SET_VAR  \xde\x13 \x02 \x08\x14 END  \x92\x02 
-CMD3 TextClose VAR1 &s END 
+INIT \x12r\x0c SET_VAR1 \x92\x02 \x02 \xc0\x02 END \xf6\x02 \x02 \xb4\x18 END  
+INIT \xc8\x0c SET_VAR1 \xde\x13 \x02 \x08\x14 END \x92\x02 APPLY_3 TextClose VAR1 &s END
 END_SCRIPT

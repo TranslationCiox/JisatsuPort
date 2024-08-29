@@ -1,20 +1,14 @@
 START_SCRIPT
 \xc1\x11\x01`B#\x01\xc6\r  
-INIT <\x0c SET_VAR 
-CMD6 .\\Data\\Script\\Bg.Fob VAR2   \x02
-CMD4 BgAutoFadeIn VAR2 J END 
-SCEC SCEK16_001 n SCE_DONE 
-TEXT1 `\xb2\x01 TEXT2 ;
+INIT <\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bg.Fob VAR2  \x02 APPLY_4 BgAutoFadeIn VAR2J END
+INIT_TEXT SCEK16_001 n SCE_TEXT TEXT1 `\xb2\x01 TEXT2 ;
  
 語り終えた後、カンナは無言で、自らが作り出した沈黙のなかに\n沈み込んだ。@
 あるいは、彼女が沈み込んでいったのは、いま自らが言葉に変換\nして現出して見せた暗い闇の中なのかもしれない。@
 重い沈黙に耐えかねて、拓司が口を開いた。\w\z
   
-INIT \xb2\x0c SET_VAR 
-CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \xbe\x01 
-CMD2 TextOn RUNF \xec\x01 END 
-SCEC SCEK16_002 \x08\x02 SCE_DONE 
-TEXT1 d\xb2\x01 TEXT2 e
+INIT \xb2\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF \xbe\x01 APPlY_2 TextOn RUNF \xec\x01 END
+INIT_TEXT SCEK16_002 \x08\x02 SCE_TEXT TEXT1 d\xb2\x01 TEXT2 e
  
 拓司\n　「つまり、俺は、カンナなんだな？」@
 カンナ\n　「……」@
@@ -25,9 +19,8 @@ TEXT1 d\xb2\x01 TEXT2 e
 \nカンナは黙ったままだった。@
 ようやく口を開いたとき、カンナはなぜか自嘲気味の笑顔を口の\n端に浮かべていた。\w\z
   
-INIT L\x02\x0c SET_VAR  \xbe\x01 \x02 \xec\x01 END 
-SCEC SCEK16_003 \x1a\x04 SCE_DONE 
-TEXT1 h\xb2\x01 TEXT2 \x86
+INIT L\x02\x0c SET_VAR1 \xbe\x01 \x02 \xec\x01 END
+INIT_TEXT SCEK16_003 \x1a\x04 SCE_TEXT TEXT1 h\xb2\x01 TEXT2 \x86
  
 カンナ\n　「……なんだか、違うものになってしまったみたい」@
 拓司\n　「違うもの？」@
@@ -35,9 +28,8 @@ TEXT1 h\xb2\x01 TEXT2 \x86
 　　ずっと、このことは私のなかにあって、もう、数えられない\n　　リピートされて、現実以上にはっきりとした輪郭を持って\n　　た。\pどんな細かいディテールも逃すことなく、私のなかに刻\n　　み込まれていた。@
 　　このことは、もう私の一部分ではなくて、私がこのことの一\n　　部分で……なのに、なんだかこうやって話してみたら、全然\n　　違うものになってしまったみたい。\pすごく馬鹿げて聞こ\n　　える」\w\z
   
-INIT ^\x04\x0c SET_VAR  \xbe\x01 \x02 \xec\x01 END 
-SCEC SCEK16_004 \xb0\x06 SCE_DONE 
-TEXT1 l\xb2\x01 TEXT2 \x88
+INIT ^\x04\x0c SET_VAR1 \xbe\x01 \x02 \xec\x01 END
+INIT_TEXT SCEK16_004 \xb0\x06 SCE_TEXT TEXT1 l\xb2\x01 TEXT2 \x88
  
 拓司\n　「……」@
 カンナ\n　「どうしてあなたにこんな話、したのかしらね。@
@@ -47,9 +39,8 @@ TEXT1 l\xb2\x01 TEXT2 \x88
 　　私は舞台にひとり残されてしまった」@
 \nカンナは両手をぱっと開いて見せて、おしまい、と繰り返した。\w\z
   
-INIT \xf4\x06\x0c SET_VAR  \xbe\x01 \x02 \xec\x01 END 
-SCEC SCEK16_005 N\t SCE_DONE 
-TEXT1 p\xb2\x01 TEXT2 x
+INIT \xf4\x06\x0c SET_VAR1 \xbe\x01 \x02 \xec\x01 END
+INIT_TEXT SCEK16_005 N\t SCE_TEXT TEXT1 p\xb2\x01 TEXT2 x
  
 カンナ\n　「どうしてなのかしら。全然わからない」@
 拓司\n　「……俺のことが本当に好きになった」@
@@ -61,16 +52,12 @@ TEXT1 p\xb2\x01 TEXT2 x
 拓司\n　「今度貸してやる。\pうちに全巻あるから。\p愛蔵版で。@
 　　まとめて読めよ」\w\z
   
-INIT \x92\t\x0c SET_VAR  \xbe\x01 \x02 \xec\x01 END 
-SCEC SCEK16_006 \xac\x0b SCE_DONE 
-TEXT1 t\xb2\x01 TEXT2 >
+INIT \x92\t\x0c SET_VAR1 \xbe\x01 \x02 \xec\x01 END
+INIT_TEXT SCEK16_006 \xac\x0b SCE_TEXT TEXT1 t\xb2\x01 TEXT2 >
  
 カンナは信じられないものを見るような顔で拓司を見ていたが、\nやがてクスクスと笑いはじめた。@
 拓司は誰かの笑顔というものを、久しぶりに見たような気がした。\n\pそして、カンナの明るい笑顔というものを見たのは、これがほん\nとうに初めてだった。\w\z
   
-INIT \xf0\x0b\x0c SET_VAR  \xbe\x01 \x02 \xec\x01 END   
-INIT \xc8\x0c SET_VAR    \x02 J END 
-CMD6 .\\Data\\Script\\Bgm.Fob VAR1 V\r 
-CMD2 StopCD RUNF \x80\r END  \xbe\x01 
-CMD3 TextClose VAR1 \xa8\r END 
+INIT \xf0\x0b\x0c SET_VAR1 \xbe\x01 \x02 \xec\x01 END  
+INIT \xc8\x0c SET_VAR1 NULL \x02 J END APPLY_FILE .\\Data\\Script\\Bgm.Fob VAR1 V\r APPlY_2 StopCD RUNF \x80\r END \xbe\x01 APPLY_3 TextClose VAR1 \xa8\r END
 END_SCRIPT

@@ -1,19 +1,15 @@
 START_SCRIPT
 \x16\x05\x01\xa4\t3\x01\\\x03
-SCEC SCE066_001 \x06 SCE_DONE 
-TEXT1 \xc0v TEXT2 h
+INIT_TEXT SCE066_001 \x06 SCE_TEXT TEXT1 \xc0v TEXT2 h
  
 カンナ\n　「グッド。\pそれじゃあ、ちょっと目先を変えて『ホスピタリズ\n　　ム』について。\p……人手が足りない施設で育てられた赤ちゃ\n　　んは、親元で育てられている赤ちゃんと比較して死亡率が極\n　　めて高いの。\p別に手続き上のミスとか、目を離したスキに、\n　　ってわけじゃない。\p風邪から肺炎になって、死ぬことが多い。\n　　\p親元にいる赤ちゃんが肺炎になるよりもずっと高い確率で\n　　……どうしてだと思う？」\
 
   
-INIT J\x0c SET_VAR 
-CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \n\x02 
-CMD2 TextOn RUNF 8\x02 END \x03)
+INIT J\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF \n\x02 APPlY_2 TextOn RUNF 8\x02 END\x03)
 CHOICE
 泣いていても放っておかれるせい\n赤ちゃんがたくさんいるという状況が、劣悪な衛生環境を生むから\n他の赤ちゃんがいるという競争心がストレスを生むから\n\l0,3,
 ENDCHOICE
 
   
-INIT T\x02\x0c SET_VAR  \n\x02 \x02 8\x02 END  \n\x02 
-CMD3 TextClose VAR1 >\x03 END 
+INIT T\x02\x0c SET_VAR1 \n\x02 \x02 8\x02 END \n\x02 APPLY_3 TextClose VAR1 >\x03 END
 END_SCRIPT

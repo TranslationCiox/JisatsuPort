@@ -1,7 +1,6 @@
 START_SCRIPT
 \xf6\n\x01`B#\x01\xf8\x08
-SCEC SCE237_001 \x06 SCE_DONE 
-TEXT1 \xf0\x81\x01 TEXT2 s
+INIT_TEXT SCE237_001 \x06 SCE_TEXT TEXT1 \xf0\x81\x01 TEXT2 s
  
 教授\n　「もう大丈夫だ。\p私を信じたまえ。\pこの世界を信じたまえ。@
 　　少なくとも、ここは安全な世界だ。\p君に害を及ぼすものはな\n　　にもないんだ」@
@@ -15,11 +14,8 @@ TEXT1 \xf0\x81\x01 TEXT2 s
 死ぬよりはマシだ。\
 
   
-INIT J\x0c SET_VAR 
-CMD7 .\\Data\\Script\\TextFunc.Fob RUNF 6\x02 
-CMD2 TextOn RUNF d\x02 END 
-SCEC SCE237_002 \x80\x02 SCE_DONE 
-TEXT1 \xf4\x81\x01 TEXT2 \x98
+INIT J\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF 6\x02 APPlY_2 TextOn RUNF d\x02 END
+INIT_TEXT SCE237_002 \x80\x02 SCE_TEXT TEXT1 \xf4\x81\x01 TEXT2 \x98
  
 /*▲SE03　１回再生（再生終了を待たず先へ）*/\a2,0,3,0,　キキキキキ……キイキイ……キキキ……キキ……キ@
 \a4,0,0,0,\n軋む音が、耳の音で聞こえた。@
@@ -32,9 +28,8 @@ TEXT1 \xf4\x81\x01 TEXT2 \x98
 やがてまたこの部屋で目覚めて、教授にすべてを否定され……\
 
   
-INIT \xc4\x02\x0c SET_VAR  6\x02 \x02 d\x02 END 
-SCEC SCE237_003 ^\x05 SCE_DONE 
-TEXT1 \xf8\x81\x01 TEXT2 \x91
+INIT \xc4\x02\x0c SET_VAR1 6\x02 \x02 d\x02 END
+INIT_TEXT SCE237_003 ^\x05 SCE_TEXT TEXT1 \xf8\x81\x01 TEXT2 \x91
  
 /*▲SE03　１回再生（終了を待たず先へ）*/\a2,0,3,0,　キキキキキ……キイキイ……キキキ……キキ……キ@
 \a4,0,0,0,\n　この悪夢はいつまで続くのだろう？@
@@ -46,11 +41,6 @@ TEXT1 \xf8\x81\x01 TEXT2 \x91
 \a4,0,0,0,\n　拓司はなま暖かいかたまりにゆっくり飲み込まれながら、ただ\n胎児のように身を丸めて恐怖していた。\
 
   
-INIT \xa2\x05\x0c SET_VAR  6\x02 \x02 d\x02 END   
-INIT \xc8\x0c SET_VAR 
-CMD6 .\\Data\\Script\\Bg.Fob VAR2 :\x08 \x02
-CMD4 BgAutoFadeIn VAR2 d\x08 END 
-CMD6 .\\Data\\Script\\Bgm.Fob VAR1 \x88\x08 
-CMD2 StopCD RUNF \xb2\x08 END  6\x02 
-CMD3 TextClose VAR1 \xda\x08 END 
+INIT \xa2\x05\x0c SET_VAR1 6\x02 \x02 d\x02 END  
+INIT \xc8\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bg.Fob VAR2:\x08 \x02 APPLY_4 BgAutoFadeIn VAR2d\x08 END APPLY_FILE .\\Data\\Script\\Bgm.Fob VAR1 \x88\x08 APPlY_2 StopCD RUNF \xb2\x08 END 6\x02 APPLY_3 TextClose VAR1 \xda\x08 END
 END_SCRIPT

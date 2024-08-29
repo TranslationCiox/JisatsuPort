@@ -1,16 +1,12 @@
 START_SCRIPT
 \x8c\x1e\x01`B#\x01&\x18
-SCEC SCE030_001 \x06 SCE_DONE 
-TEXT1 \x80> TEXT2 \x0f
+INIT_TEXT SCE030_001 \x06 SCE_TEXT TEXT1 \x80> TEXT2 \x0f
  
 \n\n\n\n\n\n\n\n　　　　　　　　　　　　　『屋上』\
 
   
-INIT J\x0c SET_VAR 
-CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \xa6 
-CMD2 TextOn RUNF \xd4 END 
-SCEC SCE030_002 \xf0 SCE_DONE 
-TEXT1 \x84> TEXT2 .
+INIT J\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF \xa6 APPlY_2 TextOn RUNF \xd4 END
+INIT_TEXT SCE030_002 \xf0 SCE_TEXT TEXT1 \x84> TEXT2 .
  
 　ぱーん@
 　ぱーん@
@@ -19,17 +15,10 @@ TEXT1 \x84> TEXT2 .
 　無論ライフルなどがここにあろうはずもなく、それは月代カンナ\n　の唇から漏れる、偽物の銃声にすぎない。\
 
   
-INIT 4\x01\x0c SET_VAR  \xa6 \x02 \xd4 END  \xa6 \x02
-CMD4 TextWindowOff VAR1 2\x02 END   
-INIT \x08\x01\x0c SET_VAR 
-CMD6 .\\Data\\Script\\Bgm.Fob VAR1 p\x02 
-CMD2 PlayCD RUNF \x9a\x02 END   
-INIT \x08\x0c SET_VAR 
-CMD6 .\\Data\\Script\\Bg.Fob VAR2 \xd0\x02 \x02
-CMD4 BgNormalFadeIn RUNF \xfa\x02 END  \xa6 \x02
-CMD4 TextWindowOn VAR2 *\x03 END 
-SCEC SCE030_003 N\x03 SCE_DONE 
-TEXT1 \x88> TEXT2 Q
+INIT 4\x01\x0c SET_VAR1 \xa6 \x02 \xd4 END \xa6 \x02 APPLY_4 TextWindowOff VAR1 2\x02 END  
+INIT \x08\x01\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bgm.Fob VAR1 p\x02 APPlY_2 PlayCD RUNF \x9a\x02 END  
+INIT \x08\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bg.Fob VAR2\xd0\x02 \x02 APPLY_4 BgNormalFadeIn RUNF \xfa\x02 END \xa6 \x02 APPLY_4 TextWindowOn VAR2*\x03 END
+INIT_TEXT SCE030_003 N\x03 SCE_TEXT TEXT1 \x88> TEXT2 Q
  
 　ぱーん@
 　ぱーん@
@@ -39,9 +28,8 @@ TEXT1 \x88> TEXT2 Q
 \n　ぱーん。\
 
   
-INIT \x92\x03\x0c SET_VAR  \xa6 \x02 \xd4 END 
-SCEC SCE030_004 \x10\x05 SCE_DONE 
-TEXT1 \x8c> TEXT2 w
+INIT \x92\x03\x0c SET_VAR1 \xa6 \x02 \xd4 END
+INIT_TEXT SCE030_004 \x10\x05 SCE_TEXT TEXT1 \x8c> TEXT2 w
  
 \n　男子学生の頭部が、スイカのように砕け散る。@
 　カンナはライフルをスライドさせて、今度は女子学生をターゲッ\n　ティングした。@
@@ -51,9 +39,8 @@ TEXT1 \x8c> TEXT2 w
 \n　ぱーん。\
 
   
-INIT T\x05\x0c SET_VAR  \xa6 \x02 \xd4 END 
-SCEC SCE030_005 j\x07 SCE_DONE 
-TEXT1 \x90> TEXT2 I
+INIT T\x05\x0c SET_VAR1 \xa6 \x02 \xd4 END
+INIT_TEXT SCE030_005 j\x07 SCE_TEXT TEXT1 \x90> TEXT2 I
  
 　いってカンナは振り返り、今度は銃口を拓司に向けた。@
 \nカンナ\n　「クイズです」@
@@ -63,11 +50,9 @@ TEXT1 \x90> TEXT2 I
 カンナ\n　「ぱーん。\p……あなた、死んだわよ」\
 
   
-INIT \xae\x07\x0c SET_VAR  \xa6 \x02 \xd4 END   
-INIT \xc8\x0c SET_VAR  \xd0\x02 \x02
-CMD4 BgAutoFadeIn VAR2 2\t END 
-SCEC SCE030_006 V\t SCE_DONE 
-TEXT1 \x94> TEXT2 \x7f
+INIT \xae\x07\x0c SET_VAR1 \xa6 \x02 \xd4 END  
+INIT \xc8\x0c SET_VAR1 \xd0\x02 \x02 APPLY_4 BgAutoFadeIn VAR22\t END
+INIT_TEXT SCE030_006 V\t SCE_TEXT TEXT1 \x94> TEXT2 \x7f
  
 拓司はそれを無視して、いった。@
 \n拓司\n　「どうしてだ？\p　どうして朝、おれに声をかけた？\p　互いの世界\n　　には干渉しない。\pそういう『約束』だったんじゃないか？」@
@@ -79,9 +64,8 @@ TEXT1 \x94> TEXT2 \x7f
 　差し出された首は透き通るように青白く、夏の日差しに覆われた\n　この屋上において、それは場違いな氷細工のように見えた。\
 
   
-INIT \x9a\t\x0c SET_VAR  \xa6 \x02 \xd4 END 
-SCEC SCE030_007 \xd0\x0b SCE_DONE 
-TEXT1 \x98> TEXT2 :
+INIT \x9a\t\x0c SET_VAR1 \xa6 \x02 \xd4 END
+INIT_TEXT SCE030_007 \xd0\x0b SCE_TEXT TEXT1 \x98> TEXT2 :
  
 拓司\n　「ふざけるな」@
 カンナ\n　「絞めて」@
@@ -93,9 +77,8 @@ TEXT1 \x98> TEXT2 :
 　包み込むように、絞める。\
 
   
-INIT \x14\x0c\x0c SET_VAR  \xa6 \x02 \xd4 END 
-SCEC SCE030_008 6\r SCE_DONE 
-TEXT1 \x9c> TEXT2 \x81
+INIT \x14\x0c\x0c SET_VAR1 \xa6 \x02 \xd4 END
+INIT_TEXT SCE030_008 6\r SCE_TEXT TEXT1 \x9c> TEXT2 \x81
  
 　細い。\p指先が余るくらい、カンナの首は細い。@
 　掌の中、皮膚の下、肉の奥、そこをごくり、と嚥下されていく唾\n　液の感覚。@
@@ -113,10 +96,9 @@ TEXT1 \x9c> TEXT2 \x81
 　解放。\
 
   
-INIT z\r\x0c SET_VAR  \xa6 \x02 \xd4 END   
-INIT \t\x0c SET_VAR  \xd0\x02 \x02 2\t END 
-SCEC SCE030_009 \xec\x0f SCE_DONE 
-TEXT1 \xa0> TEXT2 \xa3
+INIT z\r\x0c SET_VAR1 \xa6 \x02 \xd4 END  
+INIT \t\x0c SET_VAR1 \xd0\x02 \x02 2\t END
+INIT_TEXT SCE030_009 \xec\x0f SCE_TEXT TEXT1 \xa0> TEXT2 \xa3
  
 　カンナはコンクリの上にへたりこみ、げほげほと咽せた。\pぜいぜ\nいという荒い息に、ときおりうええ、という嗚咽が混じる。\p目の端\nにはうっすらと涙がにじんでいる。\p華奢な肩が激しく上下する。@
 　汗ばんだ頬に、髪の毛が張り付いている。@
@@ -126,9 +108,8 @@ TEXT1 \xa0> TEXT2 \xa3
 カンナ\n　「はは……あははは……ハハハハハハハハ」\
 
   
-INIT 0\x10\x0c SET_VAR  \xa6 \x02 \xd4 END 
-SCEC SCE030_010 \xf6\x12 SCE_DONE 
-TEXT1 \xa4> TEXT2 r
+INIT 0\x10\x0c SET_VAR1 \xa6 \x02 \xd4 END
+INIT_TEXT SCE030_010 \xf6\x12 SCE_TEXT TEXT1 \xa4> TEXT2 r
  
 \n哄笑を放つカンナに、拓司はゆっくりと身体を重ねた。@
 身体の下で、柔らかい肉の塊が、ハ、ハ、ハ、と痙攣していた。@
@@ -137,21 +118,16 @@ TEXT1 \xa4> TEXT2 r
 /*■CG73　表示（ノンエフェクト） *//*■CG09　表示（ノンエフェクト） */\a7,1,1,0,\a1,1,202,9,\a6,0,0,0,ハ。\
 
   
-INIT :\x13\x0c SET_VAR  \xa6 \x02 \xd4 END  \xa6 \x02 2\x02 END   
-INIT \xca\x0c SET_VAR  \xd0\x02 
-CMD2 BgOn VAR2 |\x15 END   
-INIT \x01\x0c SET_VAR 
-CMD7 .\\Data\\Script\\TextFunc.fob RUNF \xb2\x15 
-CMD3 WaitTime VAR2 \xe0\x15 END   
-INIT \t\x0c SET_VAR  \xd0\x02 \x02 |\x15 END   
-INIT \x01\x0c SET_VAR  \xb2\x15 \x02 \xe0\x15 END   
-INIT \xca\x0c SET_VAR  \xd0\x02 \x02 |\x15 END   
-INIT \x01\x0c SET_VAR  \xb2\x15 \x02 \xe0\x15 END   
-INIT \t\x0c SET_VAR  \xd0\x02 \x02 |\x15 END   
-INIT \x01\x0c SET_VAR  \xb2\x15 \x02 \xe0\x15 END   
-INIT <\x0c SET_VAR  \xb2\x15 \x02 \xe0\x15 END   
-INIT \xc8\x0c SET_VAR  \xd0\x02 \x02 \xfa\x02 END  p\x02 
-CMD2 StopCD RUNF \xac\x17 END  \xa6 \x02
-CMD5 TextWindowOnDirect RUNF \xd4\x17 END  \xa6 
-CMD3 TextClose VAR1 \x08\x18 END 
+INIT :\x13\x0c SET_VAR1 \xa6 \x02 \xd4 END \xa6 \x02 2\x02 END  
+INIT \xca\x0c SET_VAR1 \xd0\x02 APPlY_2 BgOn VAR2|\x15 END  
+INIT \x01\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.fob RUNF \xb2\x15 APPLY_3 WaitTime VAR2\xe0\x15 END  
+INIT \t\x0c SET_VAR1 \xd0\x02 \x02 |\x15 END  
+INIT \x01\x0c SET_VAR1 \xb2\x15 \x02 \xe0\x15 END  
+INIT \xca\x0c SET_VAR1 \xd0\x02 \x02 |\x15 END  
+INIT \x01\x0c SET_VAR1 \xb2\x15 \x02 \xe0\x15 END  
+INIT \t\x0c SET_VAR1 \xd0\x02 \x02 |\x15 END  
+INIT \x01\x0c SET_VAR1 \xb2\x15 \x02 \xe0\x15 END  
+INIT <\x0c SET_VAR1 \xb2\x15 \x02 \xe0\x15 END  
+INIT \xc8\x0c SET_VAR1 \xd0\x02 \x02 \xfa\x02 END p\x02 APPlY_2 StopCD RUNF \xac\x17 END \xa6 
+WAVL TextWindowOnDirect RUNF \xd4\x17 END \xa6 APPLY_3 TextClose VAR1 \x08\x18 END
 END_SCRIPT

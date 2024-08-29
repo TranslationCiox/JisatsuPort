@@ -1,10 +1,7 @@
 START_SCRIPT
 \xfb\r\x01`B#\x01\x94\x0b  
-INIT \x05\x01\x0c SET_VAR 
-CMD6 .\\Data\\Script\\Bgm.Fob VAR1   
-CMD2 PlayCD RUNF J END 
-SCEC SCEG02_004 f SCE_DONE 
-TEXT1 T\xc5\x01 TEXT2 i
+INIT \x05\x01\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bgm.Fob VAR1   APPlY_2 PlayCD RUNF J END
+INIT_TEXT SCEG02_004 f SCE_TEXT TEXT1 T\xc5\x01 TEXT2 i
  
 　かさりと音がして、錦城の上半身が、拓司の顔のあたりに被さっ\nた。@
 熱い体温と、ずっしりとした肉の重みが……柔らかく大きな胸が、\n\p拓司の目の前にある。@
@@ -13,14 +10,9 @@ TEXT1 T\xc5\x01 TEXT2 i
 錦城\n　「しーっ！　……静かに。\pみんなが目を覚ますわ。@
 　　先生ね、考えたの。\p虎菱くんがこういうのを励みにできれ\n　　ば……って」\w\z
   
-INIT \xaa\x0c SET_VAR 
-CMD7 .\\Data\\Script\\TextFunc.Fob RUNF n\x02 
-CMD2 TextOn RUNF \x9c\x02 END   
-INIT ^\x0c SET_VAR 
-CMD6 .\\Data\\Script\\Bg.Fob VAR2 \xd2\x02 \x02
-CMD4 BgAutoFadeIn VAR2 \xfc\x02 END 
-SCEC SCEG02_005  \x03 SCE_DONE 
-TEXT1 X\xc5\x01 TEXT2 R
+INIT \xaa\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF n\x02 APPlY_2 TextOn RUNF \x9c\x02 END  
+INIT ^\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bg.Fob VAR2\xd2\x02 \x02 APPLY_4 BgAutoFadeIn VAR2\xfc\x02 END
+INIT_TEXT SCEG02_005  \x03 SCE_TEXT TEXT1 X\xc5\x01 TEXT2 R
  
 錦城の手は、滑るようにチャックの中へと侵入し、拓司のペ○ス\nに触れた。@
 そっとそれをつまみ、ズボンの外にずるりと引きずりだす。@
@@ -30,9 +22,8 @@ TEXT1 X\xc5\x01 TEXT2 R
 錦城\n　「よかった」@
 \n錦城は拓司の目をじっと見つめたまま、薄く笑った。\w\z
   
-INIT d\x03\x0c SET_VAR  n\x02 \x02 \x9c\x02 END 
-SCEC SCEG02_006 \xe6\x04 SCE_DONE 
-TEXT1 \\\xc5\x01 TEXT2 R
+INIT d\x03\x0c SET_VAR1 n\x02 \x02 \x9c\x02 END
+INIT_TEXT SCEG02_006 \xe6\x04 SCE_TEXT TEXT1 \\\xc5\x01 TEXT2 R
  
 錦城\n　「さすが、男の子ね。\p熱くて……元気。\pねえ、虎菱くん、気持\n　　ちいい？」@
 拓司\n　「……」@
@@ -41,9 +32,8 @@ TEXT1 \\\xc5\x01 TEXT2 R
 拓司\n　「……」@
 黙っていると、錦城の手の動きがひどくゆっくりとしたものに変\nわった。\pじらすように止まり、少し動いてまた止まる。\w\z
   
-INIT *\x05\x0c SET_VAR  n\x02 \x02 \x9c\x02 END 
-SCEC SCEG02_007 \xac\x06 SCE_DONE 
-TEXT1 `\xc5\x01 TEXT2 R
+INIT *\x05\x0c SET_VAR1 n\x02 \x02 \x9c\x02 END
+INIT_TEXT SCEG02_007 \xac\x06 SCE_TEXT TEXT1 `\xc5\x01 TEXT2 R
  
 錦城\n　「先生は聞いているんだけど。\p早いほうがいいの？@
 　　おそいほうがいいの？」@
@@ -54,9 +44,8 @@ TEXT1 `\xc5\x01 TEXT2 R
 拓司\n　「もっと……」@
 錦城\n　「いやらしい子ね。先生の手、道具だとでも思ってるのかしら？\n　　ふふふ」\w\z
   
-INIT \xf0\x06\x0c SET_VAR  n\x02 \x02 \x9c\x02 END 
-SCEC SCEG02_008 r\x08 SCE_DONE 
-TEXT1 d\xc5\x01 TEXT2 \x86
+INIT \xf0\x06\x0c SET_VAR1 n\x02 \x02 \x9c\x02 END
+INIT_TEXT SCEG02_008 r\x08 SCE_TEXT TEXT1 d\xc5\x01 TEXT2 \x86
  
 早く激しく……嵐のように手を動かしながら、錦城は拓司の目を\n正面から捉えて離さない。@
 まるで実験動物を観察するように、拓司の目をのぞき込んでいる。\n\p錦城\n　「先生にこんなことさせてるなんて……興奮する？」@
@@ -68,13 +57,12 @@ TEXT1 d\xc5\x01 TEXT2 \x86
 拓司\n　「先生……」@
 錦城\n　「ねえ……触りたい？\p　先生の胸、そんなにじっと見つめて\n　　……ねえ、触りたいの？」\w\z
   
-INIT \xb6\x08\x0c SET_VAR  n\x02 \x02 \x9c\x02 END 
+INIT \xb6\x08\x0c SET_VAR1 n\x02 \x02 \x9c\x02 END
 S204 
 CHOICE
 「触りたい」\n「……」\n\l0,2,
 ENDCHOICE
 
   
-INIT \x08\x0b\x0c SET_VAR  n\x02 \x02 \x9c\x02 END  n\x02 
-CMD3 TextClose VAR1 v\x0b END 
+INIT \x08\x0b\x0c SET_VAR1 n\x02 \x02 \x9c\x02 END n\x02 APPLY_3 TextClose VAR1 v\x0b END
 END_SCRIPT

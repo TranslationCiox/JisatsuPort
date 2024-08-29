@@ -1,7 +1,6 @@
 START_SCRIPT
 .\x10\x01`B#\x01\x10\r
-SCEC SCE210_001 \x06 SCE_DONE 
-TEXT1 \xc0W\x01 TEXT2 B
+INIT_TEXT SCE210_001 \x06 SCE_TEXT TEXT1 \xc0W\x01 TEXT2 B
  
 教授はいった。@
 この世界は物理法則と常識が支配する世界だと。@
@@ -10,11 +9,8 @@ TEXT1 \xc0W\x01 TEXT2 B
 おそらくはおれと同じ……この病院の患者なのだ。\
 
   
-INIT J\x0c SET_VAR 
-CMD7 .\\Data\\Script\\TextFunc.Fob RUNF r\x01 
-CMD2 TextOn RUNF \xa0\x01 END 
-SCEC SCE210_002 \xbc\x01 SCE_DONE 
-TEXT1 \xc4W\x01 TEXT2 o
+INIT J\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF r\x01 APPlY_2 TextOn RUNF \xa0\x01 END
+INIT_TEXT SCE210_002 \xbc\x01 SCE_TEXT TEXT1 \xc4W\x01 TEXT2 o
  
 拓司\n　「でたらめだ。\pそんなＳＦみたいな話を信じるわけにはいかな\n　　い。\p物理法則こそが、唯一の定点だ。@
 　　それを失ったら、おれはもうなにも信じられなくなってしま\n　　う。\pだからこそ、『教授が語る世界』を、おれは真実と考え\n　　る」@
@@ -24,9 +20,8 @@ TEXT1 \xc4W\x01 TEXT2 o
 拓司は逃げるように目をそらし、ベッドに倒れ込んで毛布を頭か\nらかぶった。\
 
   
-INIT \x02\x0c SET_VAR  r\x01 \x02 \xa0\x01 END 
-SCEC SCE210_003 \xf6\x03 SCE_DONE 
-TEXT1 \xc8W\x01 TEXT2 G
+INIT \x02\x0c SET_VAR1 r\x01 \x02 \xa0\x01 END
+INIT_TEXT SCE210_003 \xf6\x03 SCE_TEXT TEXT1 \xc8W\x01 TEXT2 G
  
 拓司\n　「放っておいてくれ。\pおれは教授を信じて、治療を受ける。@
 　　いかれた頭を元通りに戻すんだ！」@
@@ -36,9 +31,8 @@ TEXT1 \xc8W\x01 TEXT2 G
 狂っていることを認めなければならない。\
 
   
-INIT :\x04\x0c SET_VAR  r\x01 \x02 \xa0\x01 END 
-SCEC SCE210_004 \x90\x05 SCE_DONE 
-TEXT1 \xccW\x01 TEXT2 \xa5
+INIT :\x04\x0c SET_VAR1 r\x01 \x02 \xa0\x01 END
+INIT_TEXT SCE210_004 \x90\x05 SCE_TEXT TEXT1 \xccW\x01 TEXT2 \xa5
  
 /*▲SE01　ループ再生（次の停止まで）*/\a2,1,1,1,\a6,0,0,0,ザザザ……ザザッ……\pザアザザザ……ザアアアアア……@
 ザアザアアアアアアア……@
@@ -52,9 +46,8 @@ TEXT1 \xccW\x01 TEXT2 \xa5
 やがてまたこの部屋で目覚めて、教授にすべてを否定され……\
 
   
-INIT \xd4\x05\x0c SET_VAR  r\x01 \x02 \xa0\x01 END 
-SCEC SCE210_005 \xa2\x08 SCE_DONE 
-TEXT1 \xd0W\x01 TEXT2 Z
+INIT \xd4\x05\x0c SET_VAR1 r\x01 \x02 \xa0\x01 END
+INIT_TEXT SCE210_005 \xa2\x08 SCE_TEXT TEXT1 \xd0W\x01 TEXT2 Z
  
 /*▲SE01　ループ再生（次の停止まで）*/\a2,1,1,1,\a6,0,0,0,ザザザ……ザザッ……\pザアザザザ……ザアアアアア……@
 ザアザアアアアアアア……@
@@ -65,21 +58,15 @@ TEXT1 \xd0W\x01 TEXT2 Z
 　－－そして中心こそは、狂っているおれなのだ。\
 
   
-INIT \xe6\x08\x0c SET_VAR  r\x01 \x02 \xa0\x01 END 
-SCEC SCE210_006 \x88\n SCE_DONE 
-TEXT1 \xd4W\x01 TEXT2 F
+INIT \xe6\x08\x0c SET_VAR1 r\x01 \x02 \xa0\x01 END
+INIT_TEXT SCE210_006 \x88\n SCE_TEXT TEXT1 \xd4W\x01 TEXT2 F
  
 /*▲SE01　ループ再生（次の停止まで）*/\a2,1,1,1,\a6,0,0,0,ザザザ……ザザッ……\pザアザザザ……ザアアアアア……@
 ザアザアアアアアアア……@
 /*▲SE01　停止*/\a4,1,0,0,\n　拓司はなま暖かいかたまりにゆっくり飲み込まれながら、ただ\n　胎児のように身を丸めて恐怖していた。\
 
   
-INIT \xcc\n\x0c SET_VAR  r\x01 \x02 \xa0\x01 END   
-INIT \x02\x0c SET_VAR 
-CMD6 .\\Data\\Script\\Bgm.Fob VAR1 8\x0c 
-CMD2 SeStop RUNF b\x0c END   
-INIT \xc8\x0c SET_VAR 
-CMD6 .\\Data\\Script\\Bg.Fob VAR2 \x98\x0c \x02
-CMD4 BgAutoFadeIn VAR2 \xc2\x0c END  r\x01 
-CMD3 TextClose VAR1 \xf2\x0c END 
+INIT \xcc\n\x0c SET_VAR1 r\x01 \x02 \xa0\x01 END  
+INIT \x02\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bgm.Fob VAR1 8\x0c APPlY_2 SeStop RUNF b\x0c END  
+INIT \xc8\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bg.Fob VAR2\x98\x0c \x02 APPLY_4 BgAutoFadeIn VAR2\xc2\x0c END r\x01 APPLY_3 TextClose VAR1 \xf2\x0c END
 END_SCRIPT

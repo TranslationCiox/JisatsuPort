@@ -1,13 +1,8 @@
 START_SCRIPT
 ?!\x01`B#\x01\x9a\x1b  
-INIT \x06\x01\x0c SET_VAR 
-CMD6 .\\Data\\Script\\Bgm.Fob VAR1   
-CMD2 PlayCD RUNF J END   
-INIT \xc9\x0c SET_VAR 
-CMD6 .\\Data\\Script\\Bg.Fob VAR2 \x80 \x02
-CMD4 BgAutoFadeIn VAR2 \xaa END 
-SCEC SCE024_001 \xce SCE_DONE 
-TEXT1  5 TEXT2 K
+INIT \x06\x01\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bgm.Fob VAR1   APPlY_2 PlayCD RUNF J END  
+INIT \xc9\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bg.Fob VAR2\x80 \x02 APPLY_4 BgAutoFadeIn VAR2\xaa END
+INIT_TEXT SCE024_001 \xce SCE_TEXT TEXT1  5 TEXT2 K
  
 『灰色』に引きずられるように現実に返って、拓司ははっと息を呑\nんだ。@
 いつの間にかベッドの上に横になっている。@
@@ -16,11 +11,8 @@ TEXT1  5 TEXT2 K
 　ザアザアアアアアアア……\
 
   
-INIT \x12\x01\x0c SET_VAR 
-CMD7 .\\Data\\Script\\TextFunc.Fob RUNF ^\x02 
-CMD2 TextOn RUNF \x8c\x02 END 
-SCEC SCE024_002 \xa8\x02 SCE_DONE 
-TEXT1 $5 TEXT2 \xb8
+INIT \x12\x01\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF ^\x02 APPlY_2 TextOn RUNF \x8c\x02 END
+INIT_TEXT SCE024_002 \xa8\x02 SCE_TEXT TEXT1 $5 TEXT2 \xb8
  
 　回転部分に砂でも噛んでいるのか、音がしている。@
 最初に感じたのは、寝坊したのだ、という焦りだった。\pただ、すぐ\nにそうではないことがわかった。@
@@ -33,9 +25,8 @@ TEXT1 $5 TEXT2 \xb8
 拓司は立ち上がって、部屋の出口とおぼしき扉の前まで歩いていっ\nた。\p鉄の扉だ。\p扉には取っ手はなく、外に出ることはできない。\nこれでは本当に牢屋だ……。\
 
   
-INIT \xec\x02\x0c SET_VAR  ^\x02 \x02 \x8c\x02 END 
-SCEC SCE024_003 \x06\x06 SCE_DONE 
-TEXT1 (5 TEXT2 \x93
+INIT \xec\x02\x0c SET_VAR1 ^\x02 \x02 \x8c\x02 END
+INIT_TEXT SCE024_003 \x06\x06 SCE_TEXT TEXT1 (5 TEXT2 \x93
  
 ここでようやく、拓司は自分が夢を見ているのだと気づいた。@
 \n夢にしてはずいぶんリアルだ。@
@@ -47,11 +38,9 @@ TEXT1 (5 TEXT2 \x93
 －－だからなんだっていうんだ？\
 
   
-INIT J\x06\x0c SET_VAR  ^\x02 \x02 \x8c\x02 END   
-INIT \x02\x0c SET_VAR    
-CMD2 SeStop RUNF \xf6\x08 END 
-SCEC SCE024_004 \x12\t SCE_DONE 
-TEXT1 ,5 TEXT2 \x9a
+INIT J\x06\x0c SET_VAR1 ^\x02 \x02 \x8c\x02 END  
+INIT \x02\x0c SET_VAR1 NULL APPlY_2 SeStop RUNF \xf6\x08 END
+INIT_TEXT SCE024_004 \x12\t SCE_TEXT TEXT1 ,5 TEXT2 \x9a
  
 拓司\n　「さて」@
 \nしきり直すように口に出してみる。@
@@ -69,9 +58,8 @@ TEXT1 ,5 TEXT2 \x9a
 まだ、この新しい世界に馴染んでいないだけなのだ。\p妄想世界を受\nけ入れたように、そのうちこの夢の世界も自分の一部になっていく\nのだろう……。\
 
   
-INIT V\t\x0c SET_VAR  ^\x02 \x02 \x8c\x02 END 
-SCEC SCE024_005 \xf8\x0b SCE_DONE 
-TEXT1 05 TEXT2 c
+INIT V\t\x0c SET_VAR1 ^\x02 \x02 \x8c\x02 END
+INIT_TEXT SCE024_005 \xf8\x0b SCE_TEXT TEXT1 05 TEXT2 c
  
 拓司はドアを強く押してみた。\pびくともしない。@
 改めてベッドに横になり、夢よ醒めろ、と念じたが、一向に醒める\n様子はない。@
@@ -80,9 +68,8 @@ TEXT1 05 TEXT2 c
 そんなことを漠然と考えていると、どこからか小さな声が聞こえて\nきた。\
 
   
-INIT <\x0c\x0c SET_VAR  ^\x02 \x02 \x8c\x02 END 
-SCEC SCE024_006 \x02\x0e SCE_DONE 
-TEXT1 45 TEXT2 [
+INIT <\x0c\x0c SET_VAR1 ^\x02 \x02 \x8c\x02 END
+INIT_TEXT SCE024_006 \x02\x0e SCE_TEXT TEXT1 45 TEXT2 [
  
 声\n　「……いるんでしょう？！　そこにいるんでしょう……」@
 \nまだ若い、女の声だ。\p声はどうやら壁の向こうから漏れ聞こえてい\nるようだ。@
@@ -93,9 +80,8 @@ TEXT1 45 TEXT2 [
 \n声に、明るい響きがこもる。\
 
   
-INIT F\x0e\x0c SET_VAR  ^\x02 \x02 \x8c\x02 END 
-SCEC SCE024_007 \xec\x0f SCE_DONE 
-TEXT1 85 TEXT2 R
+INIT F\x0e\x0c SET_VAR1 ^\x02 \x02 \x8c\x02 END
+INIT_TEXT SCE024_007 \xec\x0f SCE_TEXT TEXT1 85 TEXT2 R
  
 声\n　「よかった！　もしかしてもう逢えないんじゃないかって思って\n　　た！」@
 拓司\n　「いや……人違いじゃないか？」@
@@ -107,9 +93,8 @@ TEXT1 85 TEXT2 R
 声\n　「やつらよ！」\
 
   
-INIT 0\x10\x0c SET_VAR  ^\x02 \x02 \x8c\x02 END 
-SCEC SCE024_008 \xb2\x11 SCE_DONE 
-TEXT1 <5 TEXT2 W
+INIT 0\x10\x0c SET_VAR1 ^\x02 \x02 \x8c\x02 END
+INIT_TEXT SCE024_008 \xb2\x11 SCE_TEXT TEXT1 <5 TEXT2 W
  
 拓司\n　「ちょっと待ってくれ！　話がまったくわからない。@
 　　おれは君が探している人間じゃないし、やつらっていうのが誰\n　　のことなのかもわからない。\pだいたい君は誰だ？」@
@@ -117,10 +102,9 @@ TEXT1 <5 TEXT2 W
 \n声\n　「……ああ……やつら、あなたの記憶を……\p畜生畜生畜生畜生…\n　　…畜生！」\
 
   
-INIT \xf6\x11\x0c SET_VAR  ^\x02 \x02 \x8c\x02 END   
-INIT \xca\x0c SET_VAR  \x80 \x02 \xaa END 
-SCEC SCE024_009 \xc0\x13 SCE_DONE 
-TEXT1 @5 TEXT2 \xb3
+INIT \xf6\x11\x0c SET_VAR1 ^\x02 \x02 \x8c\x02 END  
+INIT \xca\x0c SET_VAR1 \x80 \x02 \xaa END
+INIT_TEXT SCE024_009 \xc0\x13 SCE_TEXT TEXT1 @5 TEXT2 \xb3
  
 \n/*▲SE01　再生（フェードイン）　*/\a2,2,1,0,　ザザザ……ザザッ……\pザアザザザ……ザアアアアア……@
 　ザアザアアアアアアア……@
@@ -130,9 +114,8 @@ TEXT1 @5 TEXT2 \xb3
 \n声はそこでピタリと止み、二度と聞こえてこなかった。\
 
   
-INIT \x04\x14\x0c SET_VAR  ^\x02 \x02 \x8c\x02 END 
-SCEC SCE024_010 \n\x17 SCE_DONE 
-TEXT1 D5 TEXT2 \xd3
+INIT \x04\x14\x0c SET_VAR1 ^\x02 \x02 \x8c\x02 END
+INIT_TEXT SCE024_010 \n\x17 SCE_TEXT TEXT1 D5 TEXT2 \xd3
  
 かつん、かつん、かつん。@
 ドアの向こうは廊下にでもなっているのだろう、足音は遠くからま\nっすぐ近づいてきて…\pそして拓司のドアの前でピタリと止まった。\n\p静寂。@
@@ -146,9 +129,8 @@ TEXT1 D5 TEXT2 \xd3
 \n拓司は強く願った。@
 /* SE22 一回再生（再生終わり待たずに…とかできます？）　*/\a2,0,22,0,がちゃり、とドアが開いた。\w\n/* SE22 とめる　*/\a4,0,0,0,\z
   
-INIT N\x17\x0c SET_VAR  ^\x02 \x02 \x8c\x02 END   
-INIT \x01\x0c SET_VAR    \x02 \xf6\x08 END   
-INIT \x02\x0c SET_VAR    \x02 \xf6\x08 END   
-INIT \xc8\x0c SET_VAR  \x80 \x02 \xaa END  ^\x02 
-CMD3 TextClose VAR1 |\x1b END 
+INIT N\x17\x0c SET_VAR1 ^\x02 \x02 \x8c\x02 END  
+INIT \x01\x0c SET_VAR1 NULL \x02 \xf6\x08 END  
+INIT \x02\x0c SET_VAR1 NULL \x02 \xf6\x08 END  
+INIT \xc8\x0c SET_VAR1 \x80 \x02 \xaa END ^\x02 APPLY_3 TextClose VAR1 |\x1b END
 END_SCRIPT

@@ -1,16 +1,12 @@
 START_SCRIPT
 J\x0b\x01`B#\x01\xc2\x08
-SCEC SCE223_001 \x06 SCE_DONE 
-TEXT1 \x10l\x01 TEXT2 \x11
+INIT_TEXT SCE223_001 \x06 SCE_TEXT TEXT1 \x10l\x01 TEXT2 \x11
  
 \n\n\n\n\n\n\n\n\n\n　　　　　　　　　　　　　『１１日目』\
 
   
-INIT J\x0c SET_VAR 
-CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \xae 
-CMD2 TextOn RUNF \xdc END 
-SCEC SCE223_002 \xf8 SCE_DONE 
-TEXT1 \x14l\x01 TEXT2 o
+INIT J\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF \xae APPlY_2 TextOn RUNF \xdc END
+INIT_TEXT SCE223_002 \xf8 SCE_TEXT TEXT1 \x14l\x01 TEXT2 o
  
 錦城\n　「新システム導入のお知らせがあるわ」@
 \n朝。@
@@ -21,9 +17,8 @@ TEXT1 \x14l\x01 TEXT2 o
 \nカンナが、フンと鼻で笑った。\
 
   
-INIT <\x01\x0c SET_VAR  \xae \x02 \xdc END 
-SCEC SCE223_003 2\x03 SCE_DONE 
-TEXT1 \x18l\x01 TEXT2 }
+INIT <\x01\x0c SET_VAR1 \xae \x02 \xdc END
+INIT_TEXT SCE223_003 2\x03 SCE_TEXT TEXT1 \x18l\x01 TEXT2 }
  
 カンナ\n　「『御堂くんの許可』……ねえ」@
 錦城\n　「……なにかいいたいことがあるのかしら、月代さん？」@
@@ -34,9 +29,8 @@ TEXT1 \x18l\x01 TEXT2 }
 カンナ\n　「先生が思っているそのままの意味ですけど」\
 
   
-INIT v\x03\x0c SET_VAR  \xae \x02 \xdc END 
-SCEC SCE223_004 \xa4\x05 SCE_DONE 
-TEXT1 \x1cl\x01 TEXT2 \x7f
+INIT v\x03\x0c SET_VAR1 \xae \x02 \xdc END
+INIT_TEXT SCE223_004 \xa4\x05 SCE_TEXT TEXT1 \x1cl\x01 TEXT2 \x7f
  
 錦城とカンナはしばしにらみ合っていたが、やがて錦城が、フッ\nと軽く笑って目をそらした。\pそしてカンナに歩み寄ったかと思う\nと、突如鋭い張り手を頬に見舞った。@
 \nカンナ\n　「……なっ？！」@
@@ -45,12 +39,11 @@ TEXT1 \x1cl\x01 TEXT2 \x7f
 \n錦城が勝ち誇ったような目で拓司を見た。\
 
   
-INIT \xe8\x05\x0c SET_VAR  \xae \x02 \xdc END \x03\x10
+INIT \xe8\x05\x0c SET_VAR1 \xae \x02 \xdc END\x03\x10
 CHOICE
 拓司は錦城に殴りかかった\n拓司はじっと耐えた\n\l0,2,
 ENDCHOICE
 
   
-INIT \x1e\x08\x0c SET_VAR  \xae \x02 \xdc END  \xae 
-CMD3 TextClose VAR1 \xa4\x08 END 
+INIT \x1e\x08\x0c SET_VAR1 \xae \x02 \xdc END \xae APPLY_3 TextClose VAR1 \xa4\x08 END
 END_SCRIPT

@@ -1,7 +1,6 @@
 START_SCRIPT
 &\x0e\x01`B#\x01l\x0b
-SCEC SCEK09_001 \x06 SCE_DONE 
-TEXT1 H\xa7\x01 TEXT2 ;
+INIT_TEXT SCEK09_001 \x06 SCE_TEXT TEXT1 H\xa7\x01 TEXT2 ;
  
 「ここに落ちている袋、どれくらいあると思う？」\nとゆきはいった。@
 私が黙っていると、ゆきは「１６袋」といった。@
@@ -10,17 +9,10 @@ TEXT1 H\xa7\x01 TEXT2 ;
 「袋に詰めて、落とすの」@
 「猫を？」\w\z
   
-INIT J\x0c SET_VAR 
-CMD7 .\\Data\\Script\\TextFunc.Fob RUNF V\x01 
-CMD2 TextOn RUNF \x84\x01 END   
-INIT \xc8\x0c SET_VAR 
-CMD6 .\\Data\\Script\\Bg.Fob VAR2 \xba\x01 \x02
-CMD4 BgAutoFadeIn VAR2 \xe4\x01 END   
-INIT \t\x01\x0c SET_VAR 
-CMD6 .\\Data\\Script\\Bgm.Fob VAR1 "\x02 
-CMD2 PlayCD RUNF L\x02 END 
-SCEC SCEK09_002 h\x02 SCE_DONE 
-TEXT1 L\xa7\x01 TEXT2 \x85
+INIT J\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF V\x01 APPlY_2 TextOn RUNF \x84\x01 END  
+INIT \xc8\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bg.Fob VAR2\xba\x01 \x02 APPLY_4 BgAutoFadeIn VAR2\xe4\x01 END  
+INIT \t\x01\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bgm.Fob VAR1 "\x02 APPlY_2 PlayCD RUNF L\x02 END
+INIT_TEXT SCEK09_002 h\x02 SCE_TEXT TEXT1 L\xa7\x01 TEXT2 \x85
  
 「ここらへん、野良猫がたくさんいるの。@
 　だからマタタビを使えば簡単に集まる。@
@@ -34,9 +26,8 @@ TEXT1 L\xa7\x01 TEXT2 \x85
 「わかったよ」と私はいって遮った。@
 「もうわかったから。ありがとう、ゆきちゃん」\w\z
   
-INIT \xac\x02\x0c SET_VAR  V\x01 \x02 \x84\x01 END 
-SCEC SCEK09_003 \xfa\x04 SCE_DONE 
-TEXT1 P\xa7\x01 TEXT2 y
+INIT \xac\x02\x0c SET_VAR1 V\x01 \x02 \x84\x01 END
+INIT_TEXT SCEK09_003 \xfa\x04 SCE_TEXT TEXT1 P\xa7\x01 TEXT2 y
  
 　たぶん、ゆきなりのストレス解消法なのだろうと思った。@
 ちょっと前に話題になった矢ガモとか……そういうもの。@
@@ -45,9 +36,8 @@ TEXT1 P\xa7\x01 TEXT2 y
 嫌悪と軽蔑がわき上がってくるのも抑えられなかった。@
 でも、秘密の大きさは、私に対する信頼の大きさを意味していた。\n\p信頼の輝きが、秘密の暗さを消し去るくらい明るいと信じてこそ\nの告白である以上、秘密が大きくて暗いほど、私は喜ぶべきなの\nだ。\w\z
   
-INIT >\x05\x0c SET_VAR  V\x01 \x02 \x84\x01 END 
-SCEC SCEK09_004 \\\x07 SCE_DONE 
-TEXT1 T\xa7\x01 TEXT2 \xd0
+INIT >\x05\x0c SET_VAR1 V\x01 \x02 \x84\x01 END
+INIT_TEXT SCEK09_004 \\\x07 SCE_TEXT TEXT1 T\xa7\x01 TEXT2 \xd0
  
 　私は自分の中に生まれた硬いかたまりをかみ砕き、飲み下した。\n\pそして、自分がゆきの秘密を赦したことを伝えたくて、ゆきを優\nしく抱きしめた。@
 けれどもゆきの身体は、私の腕のなかでいつまでも硬くこわばっ\nて動かず、そこには明らかな拒絶が感じられた。@
@@ -60,7 +50,5 @@ TEXT1 T\xa7\x01 TEXT2 \xd0
 　しばらく間をおいてから、ゆきはぽつりといった。@
 「そうすれば死ぬのが怖くなくなると思うから」\w\z
   
-INIT \xa0\x07\x0c SET_VAR  V\x01 \x02 \x84\x01 END  "\x02 
-CMD2 StopCD RUNF &\x0b END  V\x01 
-CMD3 TextClose VAR1 N\x0b END 
+INIT \xa0\x07\x0c SET_VAR1 V\x01 \x02 \x84\x01 END "\x02 APPlY_2 StopCD RUNF &\x0b END V\x01 APPLY_3 TextClose VAR1 N\x0b END
 END_SCRIPT

@@ -1,18 +1,14 @@
 START_SCRIPT
 \x08\x1e\x01`B#\x01\xa4\x18
-SCEC SCE086_001 \x06 SCE_DONE 
-TEXT1 \x96 TEXT2 8
+INIT_TEXT SCE086_001 \x06 SCE_TEXT TEXT1 \x96 TEXT2 8
  
 実験室はなんの変哲もないただの教室でしかない。@
 拓司の胸の中に、むくむくと、なたねの妄想に踊らされたのでは\nないかという思いが膨らんでくる。@
 \nなたね\n　「安心して下さい。\pこれからシェルター製作を始めます」\
 
   
-INIT J\x0c SET_VAR 
-CMD7 .\\Data\\Script\\TextFunc.Fob RUNF J\x01 
-CMD2 TextOn RUNF x\x01 END 
-SCEC SCE086_002 \x94\x01 SCE_DONE 
-TEXT1 \x04\x96 TEXT2 n
+INIT J\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF J\x01 APPlY_2 TextOn RUNF x\x01 END
+INIT_TEXT SCE086_002 \x94\x01 SCE_TEXT TEXT1 \x04\x96 TEXT2 n
  
 なたねは実験室の奥の扉の鍵をさらに開けると、そこからスプレ\nーボンドの缶と、ダンボールに詰まったアルミホイルを持ち出し\nてきた。@
 \nなたね\n　「このアルミホイルを壁に貼ってシェルターを造ります」@
@@ -21,9 +17,8 @@ TEXT1 \x04\x96 TEXT2 n
 拓司\n　「……」\
 
   
-INIT \xd8\x01\x0c SET_VAR  J\x01 \x02 x\x01 END 
-SCEC SCE086_003 \xca\x03 SCE_DONE 
-TEXT1 \x08\x96 TEXT2 ~
+INIT \xd8\x01\x0c SET_VAR1 J\x01 \x02 x\x01 END
+INIT_TEXT SCE086_003 \xca\x03 SCE_TEXT TEXT1 \x08\x96 TEXT2 ~
  
 なたね\n　「私が円盤に誘拐されたのは知ってるわよね？\p　そのとき、私\n　　は円盤の中をこっそり探って、いろいろな資料を盗み出して\n　　きたのよ。\pあいにく資料はやつらの手先に盗まれてしまって\n　　今はないけれど……それでも資料のほとんどは解析したわ」@
 \n/*▲SE20　一回再生（終了を待たず先へ）*/\a2,0,20,0,　カンカンカンカン……。@
@@ -32,12 +27,9 @@ TEXT1 \x08\x96 TEXT2 ~
 　拓司たちは身構えたが、扉を開けて現れたのは、果たして見慣\n　れた人物であった。\
 
   
-INIT \x0e\x04\x0c SET_VAR  J\x01 \x02 x\x01 END   
-INIT \x04\x01\x0c SET_VAR 
-CMD6 .\\Data\\Script\\Bgm.Fob VAR1 Z\x06 
-CMD2 PlayCD RUNF \x84\x06 END 
-SCEC SCE086_004 \xa0\x06 SCE_DONE 
-TEXT1 \x0c\x96 TEXT2 w
+INIT \x0e\x04\x0c SET_VAR1 J\x01 \x02 x\x01 END  
+INIT \x04\x01\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bgm.Fob VAR1 Z\x06 APPlY_2 PlayCD RUNF \x84\x06 END
+INIT_TEXT SCE086_004 \xa0\x06 SCE_TEXT TEXT1 \x0c\x96 TEXT2 w
  
 現れたのは御堂と、錦城と、そして紅葉であった。@
 \n拓司\n　「紅葉！\p　無事だったのか！」@
@@ -50,9 +42,8 @@ TEXT1 \x0c\x96 TEXT2 w
 それでも、見捨てたという事実を、胸の中で正当化することはで\nきなかった。\
 
   
-INIT \xe4\x06\x0c SET_VAR  J\x01 \x02 x\x01 END 
-SCEC SCE086_005 \xfa\x08 SCE_DONE 
-TEXT1 \x10\x96 TEXT2 G
+INIT \xe4\x06\x0c SET_VAR1 J\x01 \x02 x\x01 END
+INIT_TEXT SCE086_005 \xfa\x08 SCE_TEXT TEXT1 \x10\x96 TEXT2 G
  
 御堂\n　「はあ、はあ……お前ら、生きてたのか！」@
 拓司\n　「そっちもな」@
@@ -60,9 +51,8 @@ TEXT1 \x10\x96 TEXT2 G
 拓司\n　「俺だってわからないさ」\
 
   
-INIT >\t\x0c SET_VAR  J\x01 \x02 x\x01 END 
-SCEC SCE086_006 \x94\n SCE_DONE 
-TEXT1 \x14\x96 TEXT2 m
+INIT >\t\x0c SET_VAR1 J\x01 \x02 x\x01 END
+INIT_TEXT SCE086_006 \x94\n SCE_TEXT TEXT1 \x14\x96 TEXT2 m
  
 錦城\n　「とにかく、無事で良かったわ。\p他に生き残っている人はいる\n　　の？！」@
 \n　拓司は黙って肩をすくめて見せた。@
@@ -73,10 +63,9 @@ TEXT1 \x14\x96 TEXT2 m
 錦城\n　「……？」\
 
   
-INIT \xd8\n\x0c SET_VAR  J\x01 \x02 x\x01 END   
-INIT \t\x01\x0c SET_VAR  Z\x06 \x02 \x84\x06 END 
-SCEC SCE086_007 \xfa\x0c SCE_DONE 
-TEXT1 \x18\x96 TEXT2 K
+INIT \xd8\n\x0c SET_VAR1 J\x01 \x02 x\x01 END  
+INIT \t\x01\x0c SET_VAR1 Z\x06 \x02 \x84\x06 END
+INIT_TEXT SCE086_007 \xfa\x0c SCE_TEXT TEXT1 \x18\x96 TEXT2 K
  
 なたね\n　「最終波動がきます。\pシェルターの外にいたら、全員が死ぬこ\n　　とになります」@
 錦城\n　「サイシュウハドウ？」@
@@ -85,18 +74,16 @@ TEXT1 \x18\x96 TEXT2 K
 御堂\n　「なに……？」\
 
   
-INIT >\r\x0c SET_VAR  J\x01 \x02 x\x01 END 
-SCEC SCE086_008 \xa4\x0e SCE_DONE 
-TEXT1 \x1c\x96 TEXT2 _
+INIT >\r\x0c SET_VAR1 J\x01 \x02 x\x01 END
+INIT_TEXT SCE086_008 \xa4\x0e SCE_TEXT TEXT1 \x1c\x96 TEXT2 _
  
 　拓司はこれまでの出来事を、遅れてきた一同に語って聞かせた。\n\p最後に、なたねが自殺波動と呼んでいる『なにか』が存在するら\nしいことを……そしてなたねがそれに対抗する手段としてシェル\nターを準備していたことを……語った。@
 \n錦城\n　「信じがたい話ではあるけれど、もう、信じられないものは山\n　　ほど見てしまった後だし」@
 \n錦城はふう、とため息をついて肩をすくめた。\
 
   
-INIT \xe8\x0e\x0c SET_VAR  J\x01 \x02 x\x01 END 
-SCEC SCE086_009 \x9e\x10 SCE_DONE 
-TEXT1  \x96 TEXT2 \x85
+INIT \xe8\x0e\x0c SET_VAR1 J\x01 \x02 x\x01 END
+INIT_TEXT SCE086_009 \x9e\x10 SCE_TEXT TEXT1  \x96 TEXT2 \x85
  
 錦城\n　「それにしても……雲居さん。\pさっきいっていた最終波動っ\n　　て、いったいなんなの？」@
 なたね\n　「文字通り、最後にやってくる波動のことです」@
@@ -105,18 +92,16 @@ TEXT1  \x96 TEXT2 \x85
 錦城\n　「これまでの波動よりも大きい……」\
 
   
-INIT \xe2\x10\x0c SET_VAR  J\x01 \x02 x\x01 END 
-SCEC SCE086_010 0\x13 SCE_DONE 
-TEXT1 $\x96 TEXT2 r
+INIT \xe2\x10\x0c SET_VAR1 J\x01 \x02 x\x01 END
+INIT_TEXT SCE086_010 0\x13 SCE_TEXT TEXT1 $\x96 TEXT2 r
  
 なたね\n　「ええ。\pおそらくそれで、地球上の人間はみな死ぬでしょう。@
 　　いまはまだ、エンケリュスのマイナスの波動に同調した人間\n　　が自殺しているだけだけれど、最終波動を浴びたら何が起き\n　　るのか、予想もつかない。\p分子レベルまで分解されて塵みた\n　　いになってしまうのかもしれないし、どろどろに溶けてしま\n　　うのかもしれない。\pとにかく確かなのは、みんな死ぬってい\n　　うこと」@
 \nここまで黙っていた御堂が、たまりかねたように叫んだ。\
 
   
-INIT t\x13\x0c SET_VAR  J\x01 \x02 x\x01 END 
-SCEC SCE086_011 v\x15 SCE_DONE 
-TEXT1 (\x96 TEXT2 V
+INIT t\x13\x0c SET_VAR1 J\x01 \x02 x\x01 END
+INIT_TEXT SCE086_011 v\x15 SCE_TEXT TEXT1 (\x96 TEXT2 V
  
 御堂\n　「バカバカしい！\p　こんな××××の妄想を真に受けてるんじ\n　　ゃねえだろうな！」@
 拓司\n　「だったらとっとと学校を出て、好きなところにいったらどう\n　　だ？」@
@@ -127,15 +112,13 @@ TEXT1 (\x96 TEXT2 V
 御堂\n　「あァ？」\
 
   
-INIT \xba\x15\x0c SET_VAR  J\x01 \x02 x\x01 END 
-SCEC SCE086_012 L\x17 SCE_DONE 
-TEXT1 ,\x96 TEXT2 ,
+INIT \xba\x15\x0c SET_VAR1 J\x01 \x02 x\x01 END
+INIT_TEXT SCE086_012 L\x17 SCE_TEXT TEXT1 ,\x96 TEXT2 ,
  
 なたね\n　「１時間後かもしれないし、１週間後かもしれない。\p１０年後\n　　かもしれないし、１分後かも……１秒後かもしれない」@
 御堂\n　「……」@
 なたね\n　「……」\
 
   
-INIT \x90\x17\x0c SET_VAR  J\x01 \x02 x\x01 END  J\x01 
-CMD3 TextClose VAR1 \x86\x18 END 
+INIT \x90\x17\x0c SET_VAR1 J\x01 \x02 x\x01 END J\x01 APPLY_3 TextClose VAR1 \x86\x18 END
 END_SCRIPT

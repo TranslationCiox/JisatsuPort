@@ -1,12 +1,9 @@
 START_SCRIPT
 \xdc\x07\x01`B#\x01(\x06
-SCEC SCE051_001 \x06 SCE_DONE 
-TEXT1 P_\x0c"  
-INIT \x02\x0c SET_VAR   \x04
-INIT \x1a\x0c SET_VAR   \x08
-INIT \x01\x0c SET_VAR 
-CMD6 .\\Data\\Script\\Bgm.Fob VAR1 \x98 
-CMD2 SePlay RUNF \xc2 END \x03\xa2
+INIT_TEXT SCE051_001 \x06 SCE_TEXT TEXT1 P_\x0c"  
+INIT \x02\x0c SET_VAR1  \x04
+INIT \x1a\x0c SET_VAR1  \x08
+INIT \x01\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bgm.Fob VAR1 \x98 APPlY_2 SePlay RUNF \xc2 END\x03\xa2
  
 　静まり返った廊下に、拓司たちの足音が響く。@
 　ときおり、通り過ぎる教室からなにか激しい音が……机のひっ\n　くり返る音や、なにかを叫んでいる声が……聞こえるが、もう\n　中を覗く気などおきなかった。@
@@ -20,24 +17,19 @@ CMD2 SePlay RUNF \xc2 END \x03\xa2
 　焦りと不安が、なたねへの怒りへと転嫁されて、ふつふつと胸\n　の中で煮えたぎっていた。\
 
   
-INIT \xde\x0c SET_VAR 
-CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \x86\x03 
-CMD2 TextOn RUNF \xb4\x03 END 
-SCEC SCE051_002 \xd0\x03 SCE_DONE 
-TEXT1 T_ TEXT2 -
+INIT \xde\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF \x86\x03 APPlY_2 TextOn RUNF \xb4\x03 END
+INIT_TEXT SCE051_002 \xd0\x03 SCE_TEXT TEXT1 T_ TEXT2 -
  
 なたね\n　「……教室に入る前に……なかを確かめて！　そうしないと危\n　　険だわ！」@
 \nそんな声を背中に聞きながら、拓司は駆けた。\p早桃の教室まで、\nあっという間だった。\
 
   
-INIT \x14\x04\x0c SET_VAR  \x86\x03 \x02 \xb4\x03 END   
-INIT \x02\x0c SET_VAR  \x98 
-CMD2 SeStop RUNF (\x05 END \x03 
+INIT \x14\x04\x0c SET_VAR1 \x86\x03 \x02 \xb4\x03 END  
+INIT \x02\x0c SET_VAR1 \x98 APPlY_2 SeStop RUNF (\x05 END\x03 
 CHOICE
 一刻も待てない。拓司はその勢いのまま、教室に躍り込んだ。\n拓司はなたねの警告に従って、そっと中をのぞき込んだ。\n\l0,2,
 ENDCHOICE
 
   
-INIT D\x05\x0c SET_VAR  \x86\x03 \x02 \xb4\x03 END  \x86\x03 
-CMD3 TextClose VAR1 \n\x06 END 
+INIT D\x05\x0c SET_VAR1 \x86\x03 \x02 \xb4\x03 END \x86\x03 APPLY_3 TextClose VAR1 \n\x06 END
 END_SCRIPT

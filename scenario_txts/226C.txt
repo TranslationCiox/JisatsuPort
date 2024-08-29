@@ -1,19 +1,13 @@
 START_SCRIPT
 &\x1e\x01`B#\x01P\x19
-SCEC SCE226_001 \x06 SCE_DONE 
-TEXT1 \xc0p\x01 TEXT2 \x11
+INIT_TEXT SCE226_001 \x06 SCE_TEXT TEXT1 \xc0p\x01 TEXT2 \x11
  
 \n\n\n\n\n\n\n\n\n\n　　　　　　　　　　　　　『１２日目』\
 
   
-INIT J\x0c SET_VAR 
-CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \xae 
-CMD2 TextOn RUNF \xdc END   
-INIT \x0c\x01\x0c SET_VAR 
-CMD6 .\\Data\\Script\\Bgm.Fob VAR1 \x12\x01 
-CMD2 PlayCD RUNF <\x01 END 
-SCEC SCE226_002 X\x01 SCE_DONE 
-TEXT1 \xc4p\x01 TEXT2 x
+INIT J\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF \xae APPlY_2 TextOn RUNF \xdc END  
+INIT \x0c\x01\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bgm.Fob VAR1 \x12\x01 APPlY_2 PlayCD RUNF <\x01 END
+INIT_TEXT SCE226_002 X\x01 SCE_TEXT TEXT1 \xc4p\x01 TEXT2 x
  
 錦城\n　「月代さん。\p御堂くんが呼んでいるわよ」@
 \n昼過ぎ、錦城が薄く笑っていった。@
@@ -23,9 +17,8 @@ TEXT1 \xc4p\x01 TEXT2 x
 錦城\n　「……ふう。\pあなたのせいで、今日も全員が食事抜きになるの\n　　かしらねえ」\
 
   
-INIT \x9c\x01\x0c SET_VAR  \xae \x02 \xdc END 
-SCEC SCE226_003 \xb6\x03 SCE_DONE 
-TEXT1 \xc8p\x01 TEXT2 d
+INIT \x9c\x01\x0c SET_VAR1 \xae \x02 \xdc END
+INIT_TEXT SCE226_003 \xb6\x03 SCE_TEXT TEXT1 \xc8p\x01 TEXT2 d
  
 カンナ\n　「メッセンジャーが判断することじゃないでしょう？」@
 \n錦城の顔に一瞬、怒りの炎が踊った。\pしかし彼女はそれをすぐに\n収めていった。@
@@ -35,9 +28,8 @@ TEXT1 \xc8p\x01 TEXT2 d
 錦城\n　「今日も全員食事抜きです」\
 
   
-INIT \xfa\x03\x0c SET_VAR  \xae \x02 \xdc END 
-SCEC SCE226_004 \xc4\x05 SCE_DONE 
-TEXT1 \xccp\x01 TEXT2 \x94
+INIT \xfa\x03\x0c SET_VAR1 \xae \x02 \xdc END
+INIT_TEXT SCE226_004 \xc4\x05 SCE_TEXT TEXT1 \xccp\x01 TEXT2 \x94
  
 勝ち誇ったようにいうと、錦城は準備室に引き上げていった。@
 結局その日も食事の配給は無しとなった。\p２日の絶食は、一同に\n予想以上のダメージを与えた。\pダメージは、肉体的というよりも\n精神的なものだった。\pいまや己の権利のすべてが御堂の管理下に\nあるという事実が、一同の胸を押しつぶした。@
@@ -47,9 +39,8 @@ TEXT1 \xccp\x01 TEXT2 \x94
 早桃\n　「私だってあの２人のやり方はおかしいと思うし……腹もたつ\n　　けど。\pでも、そんなこと口に出したって、意味がないと思う」\n\pカンナ\n　「……」\
 
   
-INIT \x08\x06\x0c SET_VAR  \xae \x02 \xdc END 
-SCEC SCE226_005 \x92\x08 SCE_DONE 
-TEXT1 \xd0p\x01 TEXT2 \x9d
+INIT \x08\x06\x0c SET_VAR1 \xae \x02 \xdc END
+INIT_TEXT SCE226_005 \x92\x08 SCE_TEXT TEXT1 \xd0p\x01 TEXT2 \x9d
  
 早桃\n　「月代先輩の気が済むってだけでしょ？\p　そのせいでご飯がな\n　　くなるなんて……」@
 カンナ\n　「……要するに、恨み言ってわけ？」@
@@ -61,9 +52,8 @@ TEXT1 \xd0p\x01 TEXT2 \x9d
 早桃\n　「そんな……！」\
 
   
-INIT \xd6\x08\x0c SET_VAR  \xae \x02 \xdc END 
-SCEC SCE226_006 \x84\x0b SCE_DONE 
-TEXT1 \xd4p\x01 TEXT2 \x85
+INIT \xd6\x08\x0c SET_VAR1 \xae \x02 \xdc END
+INIT_TEXT SCE226_006 \x84\x0b SCE_TEXT TEXT1 \xd4p\x01 TEXT2 \x85
  
 見かねて拓司があいだにはいる。@
 \n拓司\n　「よせ、みんな気が立ってるんだ」@
@@ -76,9 +66,8 @@ TEXT1 \xd4p\x01 TEXT2 \x85
 /*▲BGM　停止*/\a4,-1,0,0,紅葉\n　「もうたくさんッ！」\
 
   
-INIT \xc8\x0b\x0c SET_VAR  \xae \x02 \xdc END 
-SCEC SCE226_007 \x16\x0e SCE_DONE 
-TEXT1 \xd8p\x01 TEXT2 \x85
+INIT \xc8\x0b\x0c SET_VAR1 \xae \x02 \xdc END
+INIT_TEXT SCE226_007 \x16\x0e SCE_TEXT TEXT1 \xd8p\x01 TEXT2 \x85
  
 それまで黙っていた紅葉が叫んだ。\p頭を抱えて立ち上がる。@
 拓司たちは呆気にとられて紅葉を見た。@
@@ -88,9 +77,8 @@ TEXT1 \xd8p\x01 TEXT2 \x85
 拓司\n　「でも、最終波動が……」\
 
   
-INIT Z\x0e\x0c SET_VAR  \xae \x02 \xdc END 
-SCEC SCE226_008 \xa8\x10 SCE_DONE 
-TEXT1 \xdcp\x01 TEXT2 \xa4
+INIT Z\x0e\x0c SET_VAR1 \xae \x02 \xdc END
+INIT_TEXT SCE226_008 \xa8\x10 SCE_TEXT TEXT1 \xdcp\x01 TEXT2 \xa4
  
 紅葉\n　「そんなものがくるって保証はどこにもないじゃない！@
 　　それに、ここにいたってこのままじゃおかしくなっちゃう！@
@@ -107,9 +95,8 @@ TEXT1 \xdcp\x01 TEXT2 \xa4
 しばらくしてから放たれた言葉は、かすれ、震えていた。\
 
   
-INIT \xec\x10\x0c SET_VAR  \xae \x02 \xdc END 
-SCEC SCE226_009 \xb6\x13 SCE_DONE 
-TEXT1 \xe0p\x01 TEXT2 u
+INIT \xec\x10\x0c SET_VAR1 \xae \x02 \xdc END
+INIT_TEXT SCE226_009 \xb6\x13 SCE_TEXT TEXT1 \xe0p\x01 TEXT2 u
  
 紅葉\n　「……雲居さん。\pいまは大丈夫？」@
 \nなたねはなにも応えない。\pただ小さくクククと笑っただけだ。@
@@ -122,9 +109,8 @@ TEXT1 \xe0p\x01 TEXT2 u
 \nついになたねが笑いを爆発させた。\pガラガラとした声で、低く低\nく叫んだ。\
 
   
-INIT \xfa\x13\x0c SET_VAR  \xae \x02 \xdc END 
-SCEC SCE226_010 \x08\x16 SCE_DONE 
-TEXT1 \xe4p\x01 TEXT2 \x9e
+INIT \xfa\x13\x0c SET_VAR1 \xae \x02 \xdc END
+INIT_TEXT SCE226_010 \x08\x16 SCE_TEXT TEXT1 \xe4p\x01 TEXT2 \x9e
  
 なたね\n　「ワハハハ、ウワッハハハハハッハハハハハハハハ！@
 　　そうよ、ない！\p　最終波動なんてない！\p　自殺波動もない！@
@@ -138,7 +124,5 @@ TEXT1 \xe4p\x01 TEXT2 \x9e
 紅葉はその晩、ずっと小さく泣き続けていた。\
 
   
-INIT L\x16\x0c SET_VAR  \xae \x02 \xdc END  \x12\x01 
-CMD2 StopCD RUNF \n\x19 END  \xae 
-CMD3 TextClose VAR1 2\x19 END 
+INIT L\x16\x0c SET_VAR1 \xae \x02 \xdc END \x12\x01 APPlY_2 StopCD RUNF \n\x19 END \xae APPLY_3 TextClose VAR1 2\x19 END
 END_SCRIPT

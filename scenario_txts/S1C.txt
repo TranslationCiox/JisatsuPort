@@ -1,10 +1,7 @@
 START_SCRIPT
 B\x19\x01`B#\x01\xea\x14  
-INIT @\x0c SET_VAR 
-CMD6 .\\Data\\Script\\Bg.Fob VAR2   \x02
-CMD4 BgAutoFadeIn VAR2 J END 
-SCEC SCES01_001 n SCE_DONE 
-TEXT1 \x80\xb5\x01 TEXT2 w
+INIT @\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bg.Fob VAR2  \x02 APPLY_4 BgAutoFadeIn VAR2J END
+INIT_TEXT SCES01_001 n SCE_TEXT TEXT1 \x80\xb5\x01 TEXT2 w
  
 早桃\n　「ごめんね」@
 \n早桃はそう話を切りだした。@
@@ -16,11 +13,8 @@ TEXT1 \x80\xb5\x01 TEXT2 w
 拓司\n　「なにをいってるんだ？\p　罰とか、巻き込むとか。\pお前のせい\n　　なはずがないだろう？\p　世界がいかれちまったのは、誰のせ\n　　いでもない」\
 
   
-INIT \xb2\x0c SET_VAR 
-CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \xae\x02 
-CMD2 TextOn RUNF \xdc\x02 END 
-SCEC SCES01_002 \xf8\x02 SCE_DONE 
-TEXT1 \x84\xb5\x01 TEXT2 c
+INIT \xb2\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF \xae\x02 APPlY_2 TextOn RUNF \xdc\x02 END
+INIT_TEXT SCES01_002 \xf8\x02 SCE_TEXT TEXT1 \x84\xb5\x01 TEXT2 c
  
 早桃はしばらく黙り込んで何かを考えている様子だった。@
 やがて@
@@ -32,9 +26,8 @@ TEXT1 \x84\xb5\x01 TEXT2 c
 拓司\n　「へえ。\p初耳だな」\
 
   
-INIT <\x03\x0c SET_VAR  \xae\x02 \x02 \xdc\x02 END 
-SCEC SCES01_003 \x02\x05 SCE_DONE 
-TEXT1 \x88\xb5\x01 TEXT2 \x9b
+INIT <\x03\x0c SET_VAR1 \xae\x02 \x02 \xdc\x02 END
+INIT_TEXT SCES01_003 \x02\x05 SCE_TEXT TEXT1 \x88\xb5\x01 TEXT2 \x9b
  
 早桃\n　「お母さんはそういうのも含めてお父さんのこと嫌いだったみ\n　　たいだから……。\pそれでね、教会に懺悔室っていうのがある\n　　の、知ってる？」@
 拓司\n　「ああ、電話ボックスみたいなのに入って、神父に自分の罪を\n　　告白する……アレか？」@
@@ -43,9 +36,8 @@ TEXT1 \x88\xb5\x01 TEXT2 \x9b
 拓司\n　「そういうもんかね。\p昔の人はウソをしまい込むフトコロが小\n　　さかったんだな」\
 
   
-INIT F\x05\x0c SET_VAR  \xae\x02 \x02 \xdc\x02 END 
-SCEC SCES01_004 \xec\x07 SCE_DONE 
-TEXT1 \x8c\xb5\x01 TEXT2 \xcd
+INIT F\x05\x0c SET_VAR1 \xae\x02 \x02 \xdc\x02 END
+INIT_TEXT SCES01_004 \xec\x07 SCE_TEXT TEXT1 \x8c\xb5\x01 TEXT2 \xcd
  
 早桃\n　「早桃も、そう思ってた。\p誰だってウソくらいつくことはある\n　　し、悪いことだってする。\pでも、そんなの黙ってればいいこ\n　　とじゃないかって。\pでもね、おにいちゃん。\pそうじゃないの。\n　　\p大きすぎるウソは、やっぱりムシバムの。@
 　　ひっぱっていくの」@
@@ -55,9 +47,8 @@ TEXT1 \x8c\xb5\x01 TEXT2 \xcd
 　　そんな感じ。\pだんだん死んでいくの。\p少しずつ、少しずつい\n　　ろんなものが自分のなかで腐っていって、ウソのなかに吸い\n　　込まれて消えていくの。\p懺悔室は、呪いを解く場所なんだと\n　　……思う」\
 
   
-INIT 0\x08\x0c SET_VAR  \xae\x02 \x02 \xdc\x02 END 
-SCEC SCES01_005 \x9e\x0b SCE_DONE 
-TEXT1 \x90\xb5\x01 TEXT2 x
+INIT 0\x08\x0c SET_VAR1 \xae\x02 \x02 \xdc\x02 END
+INIT_TEXT SCES01_005 \x9e\x0b SCE_TEXT TEXT1 \x90\xb5\x01 TEXT2 x
  
 拓司\n　「話せよ」@
 早桃\n　「……」@
@@ -70,9 +61,8 @@ TEXT1 \x90\xb5\x01 TEXT2 x
 早桃\n　「……わかった」\
 
   
-INIT \xe2\x0b\x0c SET_VAR  \xae\x02 \x02 \xdc\x02 END 
-SCEC SCES01_006 \xfc\r SCE_DONE 
-TEXT1 \x94\xb5\x01 TEXT2 E
+INIT \xe2\x0b\x0c SET_VAR1 \xae\x02 \x02 \xdc\x02 END
+INIT_TEXT SCES01_006 \xfc\r SCE_TEXT TEXT1 \x94\xb5\x01 TEXT2 E
  
 早桃はしばらくじっと天井を見上げて無言だった。@
 横顔には、心の中の激しい葛藤が伺えた。@
@@ -80,9 +70,8 @@ TEXT1 \x94\xb5\x01 TEXT2 E
 やがて早桃は、ぽつり、ぽつり、と少しずつ自らの罪の物語を、\n語り始めた\
 
   
-INIT @\x0e\x0c SET_VAR  \xae\x02 \x02 \xdc\x02 END 
-SCEC SCES01_007 \x8e\x0f SCE_DONE 
-TEXT1 \x98\xb5\x01 TEXT2 \\
+INIT @\x0e\x0c SET_VAR1 \xae\x02 \x02 \xdc\x02 END
+INIT_TEXT SCES01_007 \x8e\x0f SCE_TEXT TEXT1 \x98\xb5\x01 TEXT2 \\
  
 うまく話せそうにないから、思いついたことから話していくね。@
 ええと……@
@@ -93,9 +82,8 @@ TEXT1 \x98\xb5\x01 TEXT2 \\
 お父さんとお母さんと一緒に、車で行ったの。\
 
   
-INIT \xd2\x0f\x0c SET_VAR  \xae\x02 \x02 \xdc\x02 END 
-SCEC SCES01_008 |\x11 SCE_DONE 
-TEXT1 \x9c\xb5\x01 TEXT2 \x93
+INIT \xd2\x0f\x0c SET_VAR1 \xae\x02 \x02 \xdc\x02 END
+INIT_TEXT SCES01_008 |\x11 SCE_TEXT TEXT1 \x9c\xb5\x01 TEXT2 \x93
  
 初めて見た海は、本で読んだり、テレビで見たりしたのとは全然\n違った。@
 早桃、海の水って、青いものだと思ってたんだよ。@
@@ -108,9 +96,6 @@ TEXT1 \x9c\xb5\x01 TEXT2 \x93
 途中がなくて、いきなり、『好き』って気持ちが胸の中にいっぱ\nいになって……泣いちゃった。\
 
   
-INIT \xc0\x11\x0c SET_VAR  \xae\x02 \x02 \xdc\x02 END 
-CMD6 .\\Data\\Script\\Bgm.Fob VAR1 F\x14 
-CMD2 StopCD RUNF p\x14 END   
-INIT \xc8\x0c SET_VAR    \x02 J END  \xae\x02 
-CMD3 TextClose VAR1 \xcc\x14 END 
+INIT \xc0\x11\x0c SET_VAR1 \xae\x02 \x02 \xdc\x02 END APPLY_FILE .\\Data\\Script\\Bgm.Fob VAR1 F\x14 APPlY_2 StopCD RUNF p\x14 END  
+INIT \xc8\x0c SET_VAR1 NULL \x02 J END \xae\x02 APPLY_3 TextClose VAR1 \xcc\x14 END
 END_SCRIPT

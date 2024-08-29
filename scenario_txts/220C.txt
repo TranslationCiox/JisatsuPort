@@ -1,19 +1,13 @@
 START_SCRIPT
 [\r\x01`B#\x01\xf0\n
-SCEC SCE220_001 \x06 SCE_DONE 
-TEXT1 `g\x01 TEXT2 \x11
+INIT_TEXT SCE220_001 \x06 SCE_TEXT TEXT1 `g\x01 TEXT2 \x11
  
 \n\n\n\n\n\n\n\n\n\n　　　　　　　　　　　　　『９日目』\
 
   
-INIT J\x0c SET_VAR 
-CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \xae 
-CMD2 TextOn RUNF \xdc END   
-INIT \x0c\x01\x0c SET_VAR 
-CMD6 .\\Data\\Script\\Bgm.Fob VAR1 \x12\x01 
-CMD2 PlayCD RUNF <\x01 END 
-SCEC SCE220_002 X\x01 SCE_DONE 
-TEXT1 dg\x01 TEXT2 \x81
+INIT J\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF \xae APPlY_2 TextOn RUNF \xdc END  
+INIT \x0c\x01\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bgm.Fob VAR1 \x12\x01 APPlY_2 PlayCD RUNF <\x01 END
+INIT_TEXT SCE220_002 X\x01 SCE_TEXT TEXT1 dg\x01 TEXT2 \x81
  
 鍵の管理は、御堂が受け持つことになった。@
 御堂は、完全に気を失ったなたねから鍵を奪い、その管理を一方\n的に宣言した。\p誰もそれに異を唱える者はなかった。@
@@ -24,20 +18,16 @@ TEXT1 dg\x01 TEXT2 \x81
 傍らには、錦城の姿があった。\
 
   
-INIT \x9c\x01\x0c SET_VAR  \xae \x02 \xdc END 
-SCEC SCE220_003 \xda\x03 SCE_DONE 
-TEXT1 hg\x01 TEXT2 \x8e
+INIT \x9c\x01\x0c SET_VAR1 \xae \x02 \xdc END
+INIT_TEXT SCE220_003 \xda\x03 SCE_TEXT TEXT1 hg\x01 TEXT2 \x8e
  
 御堂\n　「安心しろ。\p俺はそこのイカレ女とは違う。\pちゃんといままで\n　　どおり、食糧は平等に配給する。\pただ、部屋をもらうってだ\n　　けだ。\pお前らのパーソナルスペースも２人分広がるわけだし、\n　　文句はねえだろ？」@
 錦城\n　「理屈から言っても、食糧管理者が食糧管理室に常在するって\n　　いうのは合理的だわ。\p今回の雲居さんへの……暴力は……\n　　不可欠だった。\pわかるわね、みんな？\p　こういうことは二度\n　　と起こされてはならないわ。\pだから、その防止の意味でも、\n　　御堂くんがみんなと違う場所にいるということは意味がある\n　　……そうでしょう？」\
 
   
-INIT \x1e\x04\x0c SET_VAR  \xae \x02 \xdc END   
-INIT &\x0c SET_VAR 
-CMD6 .\\Data\\Script\\Bg.Fob VAR2 \xaa\x06 \x02
-CMD4 BgAutoFadeIn VAR2 \xd4\x06 END 
-SCEC SCE220_004 \xf8\x06 SCE_DONE 
-TEXT1 lg\x01 TEXT2 \xc7
+INIT \x1e\x04\x0c SET_VAR1 \xae \x02 \xdc END  
+INIT &\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bg.Fob VAR2\xaa\x06 \x02 APPLY_4 BgAutoFadeIn VAR2\xd4\x06 END
+INIT_TEXT SCE220_004 \xf8\x06 SCE_TEXT TEXT1 lg\x01 TEXT2 \xc7
  
 なたねはナイロンテープで拘束され、部屋の隅に転がされること\nとなった。\p猿ぐつわをかまされ、日に１度、トイレが許可される\nとき、そして最終波動の予兆はないかどうかを尋ねられるときだ\nけ解放される。@
 殴られた顔面は醜く腫れ上がり、青あざにおおわれて痛々しい。@
@@ -50,7 +40,6 @@ TEXT1 lg\x01 TEXT2 \xc7
 \n御堂は笑った。\
 
   
-INIT <\x07\x0c SET_VAR  \xae \x02 \xdc END   
-INIT \xc8\x0c SET_VAR  \xaa\x06 \x02 \xd4\x06 END  \xae 
-CMD3 TextClose VAR1 \xd2\n END 
+INIT <\x07\x0c SET_VAR1 \xae \x02 \xdc END  
+INIT \xc8\x0c SET_VAR1 \xaa\x06 \x02 \xd4\x06 END \xae APPLY_3 TextClose VAR1 \xd2\n END
 END_SCRIPT

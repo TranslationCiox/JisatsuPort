@@ -1,9 +1,6 @@
 START_SCRIPT
-\x7f\x11\x01`B#\x01L\x0e
-CMD6 .\\Data\\Script\\Bgm.Fob VAR1 \x06 
-CMD2 StopCD RUNF 0 END 
-SCEC SCE079_001 L SCE_DONE 
-TEXT1 \x10\x8b TEXT2 \xb1
+\x7f\x11\x01`B#\x01L\x0e APPLY_FILE .\\Data\\Script\\Bgm.Fob VAR1 \x06 APPlY_2 StopCD RUNF 0 END
+INIT_TEXT SCE079_001 L SCE_TEXT TEXT1 \x10\x8b TEXT2 \xb1
  
 /*▲SE28　再生（終了まで待たず先へ）*/\a2,0,28,0,どくん、どくん、どくん@
 \a4,0,0,0,心臓の音だけが耳の奥で大きく響いている。@
@@ -24,11 +21,8 @@ TEXT1 \x10\x8b TEXT2 \xb1
 瓶からするりと抜け出せるような気がする。\
 
   
-INIT \x90\x0c SET_VAR 
-CMD7 .\\Data\\Script\\TextFunc.Fob RUNF t\x03 
-CMD2 TextOn RUNF \xa2\x03 END 
-SCEC SCE079_002 \xbe\x03 SCE_DONE 
-TEXT1 \x14\x8b TEXT2 M
+INIT \x90\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF t\x03 APPlY_2 TextOn RUNF \xa2\x03 END
+INIT_TEXT SCE079_002 \xbe\x03 SCE_TEXT TEXT1 \x14\x8b TEXT2 M
  
 \n　死んじまおうかなあ。@
 　死んじまおうかなあ。@
@@ -41,9 +35,8 @@ TEXT1 \x14\x8b TEXT2 M
 死のう。\
 
   
-INIT \x02\x04\x0c SET_VAR  t\x03 \x02 \xa2\x03 END 
-SCEC SCE079_003 p\x05 SCE_DONE 
-TEXT1 \x18\x8b TEXT2 \xb4
+INIT \x02\x04\x0c SET_VAR1 t\x03 \x02 \xa2\x03 END
+INIT_TEXT SCE079_003 p\x05 SCE_TEXT TEXT1 \x18\x8b TEXT2 \xb4
  
 いつの間にか、足が完全に止まっている。\pただぼんやりと、廊下\nに立ちすくんでいる。@
 \nもしかしてこれが波動に侵されるということなのか？@
@@ -60,16 +53,14 @@ TEXT1 \x18\x8b TEXT2 \xb4
 どうしてこれを恐れていたのかなど、すでにわからなかった。\
 
   
-INIT \xb4\x05\x0c SET_VAR  t\x03 \x02 \xa2\x03 END 
-SCEC SCE079_004 \xbe\x08 SCE_DONE 
-TEXT1 \x1c\x8b TEXT2 @
+INIT \xb4\x05\x0c SET_VAR1 t\x03 \x02 \xa2\x03 END
+INIT_TEXT SCE079_004 \xbe\x08 SCE_TEXT TEXT1 \x1c\x8b TEXT2 @
  
 学生\n　「……死ぬのか生きるのか、それはもう人間の幸不幸を決定す\n　　る鍵ではないような気さえしてきたのだ。\p死者は完成せられ、\n　　生者は出帆の船のデッキに立ってそれに手を合わせる。\p船は\n　　するする岸壁から離れる。\p「死はよいものだ」……』\
 
   
-INIT \x02\t\x0c SET_VAR  t\x03 \x02 \xa2\x03 END 
-SCEC SCE079_005 <\n SCE_DONE 
-TEXT1  \x8b TEXT2 P
+INIT \x02\t\x0c SET_VAR1 t\x03 \x02 \xa2\x03 END
+INIT_TEXT SCE079_005 <\n SCE_TEXT TEXT1  \x8b TEXT2 P
  
 　よいものだ。@
 　死のう。@
@@ -87,9 +78,8 @@ TEXT1  \x8b TEXT2 P
 　カッター。\
 
   
-INIT \x80\n\x0c SET_VAR  t\x03 \x02 \xa2\x03 END 
-SCEC SCE079_006 \xfa\x0b SCE_DONE 
-TEXT1 $\x8b TEXT2 +
+INIT \x80\n\x0c SET_VAR1 t\x03 \x02 \xa2\x03 END
+INIT_TEXT SCE079_006 \xfa\x0b SCE_TEXT TEXT1 $\x8b TEXT2 +
  
 　カットするものだからカッター。@
 　そうか。@
@@ -103,15 +93,12 @@ TEXT1 $\x8b TEXT2 +
 　ア。\
 
   
-INIT >\x0c\x0c SET_VAR  t\x03 \x02 \xa2\x03 END   
-INIT G\x0c SET_VAR 
-CMD6 .\\Data\\Script\\Bg.Fob VAR2 >\r \x02
-CMD4 BgAutoFadeIn VAR2 h\r END 
-SCEC SCE079_007 \x8c\r SCE_DONE 
-TEXT1 (\x8b TEXT2 \x11
+INIT >\x0c\x0c SET_VAR1 t\x03 \x02 \xa2\x03 END  
+INIT G\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bg.Fob VAR2>\r \x02 APPLY_4 BgAutoFadeIn VAR2h\r END
+INIT_TEXT SCE079_007 \x8c\r SCE_TEXT TEXT1 (\x8b TEXT2 \x11
  
 \n　拓司は芋虫のようにはいずって、自分の教室へと向かった。\
 
   
-INIT \xd0\r\x0c SET_VAR  t\x03 \x02 \xa2\x03 END 
+INIT \xd0\r\x0c SET_VAR1 t\x03 \x02 \xa2\x03 END
 END_SCRIPT

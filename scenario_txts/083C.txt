@@ -1,17 +1,13 @@
 START_SCRIPT
 \x03\x10\x01`B#\x01D\r
-SCEC SCE083_001 \x06 SCE_DONE 
-TEXT1 P\x91 TEXT2 =
+INIT_TEXT SCE083_001 \x06 SCE_TEXT TEXT1 P\x91 TEXT2 =
  
 拓司は枕元に掛けられている鳥かごをのぞき込んだ。@
 なんという種類かはわからないが、どこかで見たことがあるよう\nな、いかにも普通の小鳥だ。@
 ただ、色だけがウソのように青く鮮やかで、屋台で売っているペ\nンキで着色されたヒヨコを思わせる。\w\z
   
-INIT J\x0c SET_VAR 
-CMD7 .\\Data\\Script\\TextFunc.Fob RUNF ^\x01 
-CMD2 TextOn RUNF \x8c\x01 END 
-SCEC SCE083_002 \xa8\x01 SCE_DONE 
-TEXT1 T\x91 TEXT2 s
+INIT J\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF ^\x01 APPlY_2 TextOn RUNF \x8c\x01 END
+INIT_TEXT SCE083_002 \xa8\x01 SCE_TEXT TEXT1 T\x91 TEXT2 s
  
 教授\n　「気になるかね？」@
 拓司\n　「？　ええ、まあ。この部屋にあるのはこの鳥かごだけですか\n　　らね。\pそりゃあ、気になります」@
@@ -23,9 +19,8 @@ TEXT1 T\x91 TEXT2 s
 \nねばりつくようないいかただった。@
 見れば教授の額には、ちいさな汗が滲んでいる。\w\z
   
-INIT \xec\x01\x0c SET_VAR  ^\x01 \x02 \x8c\x01 END 
-SCEC SCE083_003 \xf2\x03 SCE_DONE 
-TEXT1 X\x91 TEXT2 g
+INIT \xec\x01\x0c SET_VAR1 ^\x01 \x02 \x8c\x01 END
+INIT_TEXT SCE083_003 \xf2\x03 SCE_TEXT TEXT1 X\x91 TEXT2 g
  
 拓司\n　「……なにかこの鳥が、俺の過去に関係あるんですか？」@
 教授\n　「……」@
@@ -35,9 +30,8 @@ TEXT1 X\x91 TEXT2 g
 しめきられた白い部屋には、拓司と教授、２人だけが向かい合っ\nて残された。@
 長い沈黙の後、教授が口を開いた。\w\z
   
-INIT 6\x04\x0c SET_VAR  ^\x01 \x02 \x8c\x01 END 
-SCEC SCE083_004 \x0c\x06 SCE_DONE 
-TEXT1 \\\x91 TEXT2 \x87
+INIT 6\x04\x0c SET_VAR1 ^\x01 \x02 \x8c\x01 END
+INIT_TEXT SCE083_004 \x0c\x06 SCE_TEXT TEXT1 \\\x91 TEXT2 \x87
  
 教授\n　「……その鳥はね、ありえない鳥なんだよ」@
 拓司\n　「？」@
@@ -51,9 +45,8 @@ TEXT1 \\\x91 TEXT2 \x87
 \n頭の奥が、ずきんと痛んだ。@
 その痛みは急速に大きく膨れ上がり、すぐに拓司の頭のなかいっ\nぱいに広がった。\w\z
   
-INIT P\x06\x0c SET_VAR  ^\x01 \x02 \x8c\x01 END 
-SCEC SCE083_005 \xa6\x08 SCE_DONE 
-TEXT1 `\x91 TEXT2 c
+INIT P\x06\x0c SET_VAR1 ^\x01 \x02 \x8c\x01 END
+INIT_TEXT SCE083_005 \xa6\x08 SCE_TEXT TEXT1 `\x91 TEXT2 c
  
 拓司\n　「意味が……わからない」@
 \n教授が突然、がばと身を乗り出した。@
@@ -64,12 +57,9 @@ TEXT1 `\x91 TEXT2 c
 　　いいかね、これは、新しい生き物なんだよ！@
 　　あらゆる生物学から外れた……神が作ったこの世界の生物な\n　　らぬ……なにかだッ！」\w\z
   
-INIT \xea\x08\x0c SET_VAR  ^\x01 \x02 \x8c\x01 END   
-INIT \xca\x0c SET_VAR 
-CMD6 .\\Data\\Script\\Bg.Fob VAR2 \xca\n \x02
-CMD4 BgAutoFadeIn VAR2 \xf4\n END 
-SCEC SCE083_006 \x18\x0b SCE_DONE 
-TEXT1 d\x91 TEXT2 T
+INIT \xea\x08\x0c SET_VAR1 ^\x01 \x02 \x8c\x01 END  
+INIT \xca\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bg.Fob VAR2\xca\n \x02 APPLY_4 BgAutoFadeIn VAR2\xf4\n END
+INIT_TEXT SCE083_006 \x18\x0b SCE_TEXT TEXT1 d\x91 TEXT2 T
  
 　ザザザザザザザザザザ@
 \n青い鳥がきしんで、鳴いた。@
@@ -79,7 +69,6 @@ TEXT1 d\x91 TEXT2 T
 \n教授\n　「おまえは誰だ？！　何者なんだ？！　お前は－－」@
 \nスイッチを落としたように、目の前が真っ暗になった。\w\z
   
-INIT \\\x0b\x0c SET_VAR  ^\x01 \x02 \x8c\x01 END   
-INIT \xc8\x0c SET_VAR  \xca\n \x02 \xf4\n END  ^\x01 
-CMD3 TextClose VAR1 &\r END 
+INIT \\\x0b\x0c SET_VAR1 ^\x01 \x02 \x8c\x01 END  
+INIT \xc8\x0c SET_VAR1 \xca\n \x02 \xf4\n END ^\x01 APPLY_3 TextClose VAR1 &\r END
 END_SCRIPT

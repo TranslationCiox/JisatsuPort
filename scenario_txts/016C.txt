@@ -1,7 +1,6 @@
 START_SCRIPT
 \x18\x06\x01\xa4\t3\x01\xc6\x04
-SCEC SCE016_001 \x06 SCE_DONE 
-TEXT1 \xa0( TEXT2 ^
+INIT_TEXT SCE016_001 \x06 SCE_TEXT TEXT1 \xa0( TEXT2 ^
  
 紅葉\n　「……。あのねえ、アンタ、女の子に会うたびそんな適当なこ\n　　といってんじゃないでしょうね？@
 　　『僕はいつも君のこと見てるよ』ってアピール？@
@@ -10,11 +9,8 @@ TEXT1 \xa0( TEXT2 ^
 紅葉\n　「……」@
 拓司\n　「……」\w\z
   
-INIT J\x0c SET_VAR 
-CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \xe2\x01 
-CMD2 TextOn RUNF \x10\x02 END 
-SCEC SCE016_002 ,\x02 SCE_DONE 
-TEXT1 \xa4( TEXT2 (
+INIT J\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF \xe2\x01 APPlY_2 TextOn RUNF \x10\x02 END
+INIT_TEXT SCE016_002 ,\x02 SCE_TEXT TEXT1 \xa4( TEXT2 (
  
 紅葉\n　「……リップ」@
 拓司\n　「はあ？」@
@@ -23,9 +19,8 @@ TEXT1 \xa4( TEXT2 (
 紅葉\n　「……」@
 拓司\n　「……」\w\z
   
-INIT p\x02\x0c SET_VAR  \xe2\x01 \x02 \x10\x02 END 
-SCEC SCE016_003 J\x03 SCE_DONE 
-TEXT1 \xa8( TEXT2 5
+INIT p\x02\x0c SET_VAR1 \xe2\x01 \x02 \x10\x02 END
+INIT_TEXT SCE016_003 J\x03 SCE_TEXT TEXT1 \xa8( TEXT2 5
  
 沈黙の後、紅葉が突然、えい、と拓司の背中にパンチを飛ばした。\n@
 拓司\n　「いて！　なんだよ、お前！」@
@@ -34,6 +29,5 @@ TEXT1 \xa8( TEXT2 5
 紅葉\n　「うるさいっ！」\
 
   
-INIT \x8e\x03\x0c SET_VAR  \xe2\x01 \x02 \x10\x02 END  \xe2\x01 
-CMD3 TextClose VAR1 \xa8\x04 END 
+INIT \x8e\x03\x0c SET_VAR1 \xe2\x01 \x02 \x10\x02 END \xe2\x01 APPLY_3 TextClose VAR1 \xa8\x04 END
 END_SCRIPT

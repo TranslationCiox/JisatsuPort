@@ -1,7 +1,6 @@
 START_SCRIPT
 \x1d\x04\x01\xa4\t3\x01\x14\x03
-SCEC SCEG02_201 \x06 SCE_DONE 
-TEXT1 l\xc5\x01 TEXT2 b
+INIT_TEXT SCEG02_201 \x06 SCE_TEXT TEXT1 l\xc5\x01 TEXT2 b
  
 錦城\n　「もう？\p　もう出ちゃうの？@
 　　そんなにエロい気分になってるの？@
@@ -14,13 +13,6 @@ TEXT1 l\xc5\x01 TEXT2 b
 　　先生の手、こんなにべとべとにして……ふふふ」@
 \z
   
-INIT J\x0c SET_VAR 
-CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \xf2\x01 
-CMD2 TextOn RUNF  \x02 END   
-INIT \xc8\x0c SET_VAR 
-CMD6 .\\Data\\Script\\Bg.Fob VAR2 V\x02 \x02
-CMD4 BgAutoFadeIn VAR2 \x80\x02 END 
-CMD6 .\\Data\\Script\\Bgm.Fob VAR1 \xa4\x02 
-CMD2 StopCD RUNF \xce\x02 END  \xf2\x01 
-CMD3 TextClose VAR1 \xf6\x02 END 
+INIT J\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF \xf2\x01 APPlY_2 TextOn RUNF  \x02 END  
+INIT \xc8\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bg.Fob VAR2V\x02 \x02 APPLY_4 BgAutoFadeIn VAR2\x80\x02 END APPLY_FILE .\\Data\\Script\\Bgm.Fob VAR1 \xa4\x02 APPlY_2 StopCD RUNF \xce\x02 END \xf2\x01 APPLY_3 TextClose VAR1 \xf6\x02 END
 END_SCRIPT

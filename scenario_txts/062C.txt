@@ -1,25 +1,17 @@
 START_SCRIPT
 /8\x01`B#\x01\x9a/
-SCEC SCE062_001 \x06 SCE_DONE 
-TEXT1 \x80p\x0c"  
-INIT \x0c SET_VAR   \x04
-INIT \t\x0c SET_VAR   \x08
-INIT \x0c SET_VAR 
-CMD6 .\\Data\\Script\\Bgm.Fob VAR1 \x98 
-CMD3 SePlayEx VAR2 \xc2 END \x03\x13
+INIT_TEXT SCE062_001 \x06 SCE_TEXT TEXT1 \x80p\x0c"  
+INIT \x0c SET_VAR1  \x04
+INIT \t\x0c SET_VAR1  \x08
+INIT \x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bgm.Fob VAR1 \x98 APPLY_3 SePlayEx VAR2\xc2 END\x03\x13
  
 カンナ\n　「……きたんだ？」@
 \nその声は、頭上から聞こえてきた。\
 
   
-INIT \xe2\x0c SET_VAR 
-CMD7 .\\Data\\Script\\TextFunc.Fob RUNF N\x01 
-CMD2 TextOn RUNF |\x01 END   
-INIT \x18\x0c SET_VAR 
-CMD6 .\\Data\\Script\\Bg.Fob VAR2 \xb2\x01 \x02
-CMD4 BgAutoFadeIn VAR2 \xdc\x01 END 
-SCEC SCE062_002 \x02 SCE_DONE 
-TEXT1 \x84p TEXT2 \xcc
+INIT \xe2\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF N\x01 APPlY_2 TextOn RUNF |\x01 END  
+INIT \x18\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bg.Fob VAR2\xb2\x01 \x02 APPLY_4 BgAutoFadeIn VAR2\xdc\x01 END
+INIT_TEXT SCE062_002 \x02 SCE_TEXT TEXT1 \x84p TEXT2 \xcc
  
 死屍累々とは、文字どおり、このことをいうのだろう。@
 比喩でもなんでもなく、そこには死体の山があった。@
@@ -30,9 +22,8 @@ TEXT1 \x84p TEXT2 \xcc
 カンナはその頂上に君臨する、死の女王だった。\
 
   
-INIT D\x02\x0c SET_VAR  N\x01 \x02 |\x01 END 
-SCEC SCE062_003 \xae\x05 SCE_DONE 
-TEXT1 \x88p TEXT2 ]
+INIT D\x02\x0c SET_VAR1 N\x01 \x02 |\x01 END
+INIT_TEXT SCE062_003 \xae\x05 SCE_TEXT TEXT1 \x88p TEXT2 ]
  
 カンナ\n　「生きてたんだ、虎菱くん？\p　まあ、あなたならそうかもしれ\n　　ないわね」@
 拓司\n　「……無事でよかった」@
@@ -43,11 +34,9 @@ TEXT1 \x88p TEXT2 ]
 拓司\n　「……」\
 
   
-INIT \xf2\x05\x0c SET_VAR  N\x01 \x02 |\x01 END   
-INIT \x0b\x01\x0c SET_VAR  \x98 
-CMD2 PlayCD RUNF \xc6\x07 END 
-SCEC SCE062_004 \xe2\x07 SCE_DONE 
-TEXT1 \x8cp TEXT2 \xb7
+INIT \xf2\x05\x0c SET_VAR1 N\x01 \x02 |\x01 END  
+INIT \x0b\x01\x0c SET_VAR1 \x98 APPlY_2 PlayCD RUNF \xc6\x07 END
+INIT_TEXT SCE062_004 \xe2\x07 SCE_TEXT TEXT1 \x8cp TEXT2 \xb7
  
 カンナ\n　「誰かに死ねって命令されて、はいそうですかって死ねるほど、\n　　私は軽く考えていない！\p　そんな簡単に死ねるなら、とっく\n　　の昔に何百回も死んであげてるわよ！\p　こんな……こんなゴ\n　　ロゴロ転がってるありふれた死にかたになんて、同化できな\n　　い！\p　私にとって死ぬってことは……特別なの！\p　手の届\n　　かない高い場所にひっそりと咲いて……散る……誰にも……」\n　　@
 頭をかきむしって、カンナが悲鳴のような叫びを上げた。@
@@ -57,10 +46,8 @@ TEXT1 \x8cp TEXT2 \xb7
 \n隣に立つなたねが小さくいった。\
 
   
-INIT &\x08\x0c SET_VAR  N\x01 \x02 |\x01 END  \x98 
-CMD2 StopCD RUNF H\x0b END 
-SCEC SCE062_005 d\x0b SCE_DONE 
-TEXT1 \x90p TEXT2 \xb0
+INIT &\x08\x0c SET_VAR1 N\x01 \x02 |\x01 END \x98 APPlY_2 StopCD RUNF H\x0b END
+INIT_TEXT SCE062_005 d\x0b SCE_TEXT TEXT1 \x90p TEXT2 \xb0
  
 それはそうであろう、男の拓司でさえ、どうにかなってしまいそ\nうなのだ。\p目の前で何十人もの人間が自殺する瞬間を見てしまっ\nたカンナが、平常心で事態を切り抜けることなどできるはずがない\n。\pカンナを正気の縁につなぎ止めているラインは、ギリギリまでに\n細い。\pわずかでもカンナが揺らめけば、そのラインは切れる。@
 一気に精神の均衡は崩壊し、カンナは壊れて……自殺してしまう\nだろう。@
@@ -71,9 +58,8 @@ TEXT1 \x90p TEXT2 \xb0
 カンナ\n　「……あなたも？」\
 
   
-INIT \xa8\x0b\x0c SET_VAR  N\x01 \x02 |\x01 END 
-SCEC SCE062_006 \xa2\x0e SCE_DONE 
-TEXT1 \x94p TEXT2 \x7f
+INIT \xa8\x0b\x0c SET_VAR1 N\x01 \x02 |\x01 END
+INIT_TEXT SCE062_006 \xa2\x0e SCE_TEXT TEXT1 \x94p TEXT2 \x7f
  
 拓司\n　「ああ。\p今朝、テレビでやってた。\p気軽に生き死にを考えて、\n　　それを使って自己アピールをするみたいな若者が多いって…\n　　…」@
 カンナ\n　「……ふ、ふ、ふふふふ」@
@@ -84,9 +70,8 @@ TEXT1 \x94p TEXT2 \x7f
 呆気にとられる拓司を無視するようにカンナはしばらく笑い続け\nた。\p腹を抱えて、しまいには息をするのも苦しいらしく、ヒイヒ\nイと笑い続けた。\
 
   
-INIT \xe6\x0e\x0c SET_VAR  N\x01 \x02 |\x01 END 
-SCEC SCE062_007 \x1c\x11 SCE_DONE 
-TEXT1 \x98p TEXT2 S
+INIT \xe6\x0e\x0c SET_VAR1 N\x01 \x02 |\x01 END
+INIT_TEXT SCE062_007 \x1c\x11 SCE_TEXT TEXT1 \x98p TEXT2 S
  
 カンナ\n　「……同じ？\p　私と？\p　あなたが？」@
 \n長い長い笑いの後で、ようやくカンナはいった。@
@@ -95,9 +80,8 @@ TEXT1 \x98p TEXT2 S
 \nカンナは拓司を鋭く指さして、一気呵成にまくしたてた。\
 
   
-INIT `\x11\x0c SET_VAR  N\x01 \x02 |\x01 END 
-SCEC SCE062_008 \xe6\x12 SCE_DONE 
-TEXT1 \x9cp TEXT2 \xfb
+INIT `\x11\x0c SET_VAR1 N\x01 \x02 |\x01 END
+INIT_TEXT SCE062_008 \xe6\x12 SCE_TEXT TEXT1 \x9cp TEXT2 \xfb
  
 カンナ\n　「あなたの死なんて、ありふれたものよ！\p　死にたいけど怖く\n　　て死ねない。\pそんなヒョロヒョロしたあなたの志と同類項で\n　　くくってもらっちゃあ、汚れるの！\p　私の……死の神聖さが\n　　……おとしめられる！\p　あなたなんて、そこらへんの……こ\n　　の下に積み重なってる連中と一緒！\p　平積みの『完璧自殺マ\n　　ニュアル』読んで？\p　『自分には最終手段が残されているっ\n　　て思うことが勇気になる』とかいって？\p　気取るな！\p　現実\n　　と闘う覚悟がない世捨て人気取りが！\pそんなのみんな一緒！@
 　　私があなたを案内したのは……私の領域の端っこに招いたの\n　　は……同列の存在を創るためじゃない！\p　あなたは道具！@
@@ -106,9 +90,8 @@ TEXT1 \x9cp TEXT2 \xfb
 　　今の私じゃない。\pなんでもなかった頃の私で…………………\n　　………………………………………………………………………\n　　…………………………………………思い上がるなッ！」\
 
   
-INIT *\x13\x0c SET_VAR  N\x01 \x02 |\x01 END 
-SCEC SCE062_009 P\x17 SCE_DONE 
-TEXT1 \xa0p TEXT2 h
+INIT *\x13\x0c SET_VAR1 N\x01 \x02 |\x01 END
+INIT_TEXT SCE062_009 P\x17 SCE_TEXT TEXT1 \xa0p TEXT2 h
  
 拓司\n　「落ち着くんだ、カンナ－－」@
 カンナ\n　「動くなッ！」@
@@ -116,17 +99,15 @@ TEXT1 \xa0p TEXT2 h
 \nカンナ\n　「この中に、×××××が入ってるわ」\
 
   
-INIT \x94\x17\x0c SET_VAR  N\x01 \x02 |\x01 END 
-SCEC SCE062_010 n\x19 SCE_DONE 
-TEXT1 \xa4p TEXT2 q
+INIT \x94\x17\x0c SET_VAR1 N\x01 \x02 |\x01 END
+INIT_TEXT SCE062_010 n\x19 SCE_TEXT TEXT1 \xa4p TEXT2 q
  
 拓司はその名前を、カンナから借りた本で見たことがあった。@
 睡眠薬として使われる規制医薬品で、２グラムのんだだけで確実\nに心臓が止まるといわれる劇薬中の劇薬だ。\pもちろん、薬屋で買\nうことはできないし、それどころか国内では取り扱われていない。\n\pしかし－－カンナならばそれを手に入れることぐらい、造作のな\nいことのように思えた。\p拓司は、五号棟でカンナが××××を飲\nんでいるのを見たことがあったし、勧められて×××××を吸っ\nたこともある。\
 
   
-INIT \xb2\x19\x0c SET_VAR  N\x01 \x02 |\x01 END 
-SCEC SCE062_011 \xb0\x1b SCE_DONE 
-TEXT1 \xa8p TEXT2 z
+INIT \xb2\x19\x0c SET_VAR1 N\x01 \x02 |\x01 END
+INIT_TEXT SCE062_011 \xb0\x1b SCE_TEXT TEXT1 \xa8p TEXT2 z
  
 拓司\n　「どうするつもりだ？」@
 カンナ\n　「あなたが近づいたらこれを飲むからね。\pあなたは私を殺した\n　　ことを一生考えながら、生きていくことになる」@
@@ -137,9 +118,8 @@ TEXT1 \xa8p TEXT2 z
 拓司\n　「……」\
 
   
-INIT \xf4\x1b\x0c SET_VAR  N\x01 \x02 |\x01 END 
-SCEC SCE062_012 \x16\x1e SCE_DONE 
-TEXT1 \xacp TEXT2 \xb5
+INIT \xf4\x1b\x0c SET_VAR1 N\x01 \x02 |\x01 END
+INIT_TEXT SCE062_012 \x16\x1e SCE_TEXT TEXT1 \xacp TEXT2 \xb5
  
 カンナ\n　「ふふふ、興奮しない？\p　私たちは今、ずっと求めていたもの\n　　に直面しているわ。\p崖っぷちにまでいってる。\pそうでしょ？@
 　　猫を落としたり、首を絞めたり……そんなことより、ずっと\n　　先に。\pあと一歩で落ちる。\pそういうところに、私たちは立っ\n　　てる。\p……あなたそういうのに興奮してたわよね、いつも？\n　　\pふふ」@
@@ -150,9 +130,8 @@ TEXT1 \xacp TEXT2 \xb5
 　　死と交わるって文字通りこんな感じ……？\p　ふふ……」\
 
   
-INIT Z\x1e\x0c SET_VAR  N\x01 \x02 |\x01 END 
-SCEC SCE062_013 h! SCE_DONE 
-TEXT1 \xb0p TEXT2 w
+INIT Z\x1e\x0c SET_VAR1 N\x01 \x02 |\x01 END
+INIT_TEXT SCE062_013 h! SCE_TEXT TEXT1 \xb0p TEXT2 w
  
 拓司は、狂気に囚われてしまったとしか思えないカンナの様子を\n呆然と見ていたが、とんとん、となたねに腿をつつかれて我に返\nった。@
 なたねが、目で合図を送っている。@
@@ -162,9 +141,8 @@ TEXT1 \xb0p TEXT2 w
 \nなたね\n　「……話を続けて」\
 
   
-INIT \xac!\x0c SET_VAR  N\x01 \x02 |\x01 END 
-SCEC SCE062_014 \xc2# SCE_DONE 
-TEXT1 \xb4p TEXT2 \x80
+INIT \xac!\x0c SET_VAR1 N\x01 \x02 |\x01 END
+INIT_TEXT SCE062_014 \xc2# SCE_TEXT TEXT1 \xb4p TEXT2 \x80
  
 拓司\n　「……？」@
 なたね\n　「月代さんと話を続けて、気を引くの。\pそのあいだに……」@
@@ -176,9 +154,8 @@ TEXT1 \xb4p TEXT2 \x80
 カンナ\n　「－－もちろん」\
 
   
-INIT \x06$\x0c SET_VAR  N\x01 \x02 |\x01 END 
-SCEC SCE062_015 @& SCE_DONE 
-TEXT1 \xb8p TEXT2 f
+INIT \x06$\x0c SET_VAR1 N\x01 \x02 |\x01 END
+INIT_TEXT SCE062_015 @& SCE_TEXT TEXT1 \xb8p TEXT2 f
  
 拓司\n　「本人だって把握しきれていないのに？」@
 カンナ\n　「もちろん」@
@@ -190,9 +167,8 @@ TEXT1 \xb8p TEXT2 f
 拓司\n　「……？」\
 
   
-INIT \x84&\x0c SET_VAR  N\x01 \x02 |\x01 END 
-SCEC SCE062_016 V( SCE_DONE 
-TEXT1 \xbcp TEXT2 \xab
+INIT \x84&\x0c SET_VAR1 N\x01 \x02 |\x01 END
+INIT_TEXT SCE062_016 V( SCE_TEXT TEXT1 \xbcp TEXT2 \xab
  
 カンナ\n　「屋上での続き。\pこれから私が、あなたに取り憑いたものを解\n　　剖して、ひとつひとつ晒して、説明してあげる。\pその途中に\n　　クイズを挟むわ。\pそうね……『自殺なぜなにク～～～～～イ\n　　ズ！』ってところかしら、ふふ。\pそれに正解したら、あなた\n　　は自分に取り憑いたものの正体を知ることができる。\p間違っ\n　　たら……私は薬を飲む」@
 拓司\n　「そんなのデタラメだ！」@
@@ -201,9 +177,8 @@ TEXT1 \xbcp TEXT2 \xab
 \n拓司\n　「わかった」\
 
   
-INIT \x9a(\x0c SET_VAR  N\x01 \x02 |\x01 END 
-SCEC SCE062_017 \x80+ SCE_DONE 
-TEXT1 \xc0p TEXT2 \xb6
+INIT \x9a(\x0c SET_VAR1 N\x01 \x02 |\x01 END
+INIT_TEXT SCE062_017 \x80+ SCE_TEXT TEXT1 \xc0p TEXT2 \xb6
  
 カンナ\n　「ＯＫ。\p準備はいいかしら？\p　重要な場面よ？\p　セーブはした？\n　　\pうふふ……まずは『セーリックマンの実験』の話からいきま\n　　しょうか」@
 拓司\n　「……」@
@@ -211,12 +186,11 @@ TEXT1 \xc0p TEXT2 \xb6
 　　ここに、さっきの実験を施したイヌと、普通のイヌを入れた\n　　ら、どんなことが起きるでしょう？」\
 
   
-INIT \xc4+\x0c SET_VAR  N\x01 \x02 |\x01 END \x03\x18
+INIT \xc4+\x0c SET_VAR1 N\x01 \x02 |\x01 END\x03\x18
 CHOICE
 電気ショックを受けたイヌが回避手段を見つける\n普通のイヌが回避手段を見つける\n\l0,2,
 ENDCHOICE
 
   
-INIT \xd6.\x0c SET_VAR  N\x01 \x02 |\x01 END  N\x01 
-CMD3 TextClose VAR1 |/ END 
+INIT \xd6.\x0c SET_VAR1 N\x01 \x02 |\x01 END N\x01 APPLY_3 TextClose VAR1 |/ END
 END_SCRIPT

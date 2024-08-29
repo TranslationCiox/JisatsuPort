@@ -1,7 +1,6 @@
 START_SCRIPT
 \x03\x01\xe0\x044\x01*\x02
-SCEC SCE229_001 \x06 SCE_DONE 
-TEXT1 pu\x01 TEXT2 S
+INIT_TEXT SCE229_001 \x06 SCE_TEXT TEXT1 pu\x01 TEXT2 S
  
 しかし、拓司は動けなかった。@
 畳針で片目を貫かれてもなお、御堂は決して拓司から注意をそら\nしていなかったのである。@
@@ -9,8 +8,5 @@ TEXT1 pu\x01 TEXT2 S
 動こうとしたカンナを「動くなッ！」と一喝して、御堂はいった。\n\
 
   
-INIT J\x0c SET_VAR 
-CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \xb6\x01 
-CMD2 TextOn RUNF \xe4\x01 END  \xb6\x01 
-CMD3 TextClose VAR1 \x0c\x02 END 
+INIT J\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF \xb6\x01 APPlY_2 TextOn RUNF \xe4\x01 END \xb6\x01 APPLY_3 TextClose VAR1 \x0c\x02 END
 END_SCRIPT

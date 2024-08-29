@@ -1,27 +1,18 @@
 START_SCRIPT
 \xc7\x10\x01`B#\x01\x9c\x0b
-SCEC SCE240_001 \x06 SCE_DONE 
-TEXT1 \xa0\x86\x01 TEXT2 \x07.\\Data\\Script\\TextFunc.Fob RUNF J \x02
-CMD4 TextWindowOff VAR1 x END   
-INIT \xca\x0c SET_VAR 
-CMD6 .\\Data\\Script\\Bg.Fob VAR2 \xb6 
-CMD2 BgOn VAR2 \xe0 END   
-INIT \x02\x0c SET_VAR   \x04
-INIT \x01\x0c SET_VAR   \x08
-INIT \x01\x0c SET_VAR 
-CMD6 .\\Data\\Script\\Bgm.Fob VAR1 J\x01 
-CMD2 SePlay RUNF t\x01 END  J \x02
-CMD4 TextWindowOn VAR2 \x9c\x01 END \x03\x17
+INIT_TEXT SCE240_001 \x06 SCE_TEXT TEXT1 \xa0\x86\x01 TEXT2 \x07.\\Data\\Script\\TextFunc.Fob RUNF J \x02 APPLY_4 TextWindowOff VAR1 x END  
+INIT \xca\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bg.Fob VAR2\xb6 APPlY_2 BgOn VAR2\xe0 END  
+INIT \x02\x0c SET_VAR1  \x04
+INIT \x01\x0c SET_VAR1  \x08
+INIT \x01\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bgm.Fob VAR1 J\x01 APPlY_2 SePlay RUNF t\x01 END J \x02 APPLY_4 TextWindowOn VAR2\x9c\x01 END\x03\x17
  
 親指の先に、硬い物があった。@
 激しいノイズが聞こえる。@
 誰かが腹を殴っている。\
 
   
-INIT \xc0\x01\x0c SET_VAR  J 
-CMD2 TextOn RUNF H\x02 END 
-SCEC SCE240_002 d\x02 SCE_DONE 
-TEXT1 \xa4\x86\x01 TEXT2 r
+INIT \xc0\x01\x0c SET_VAR1 J APPlY_2 TextOn RUNF H\x02 END
+INIT_TEXT SCE240_002 d\x02 SCE_TEXT TEXT1 \xa4\x86\x01 TEXT2 r
  
 カンナ\n　「虎菱くん！　虎菱くん！」@
 /*▲SE01　停止*/\a4,2,0,0,/*■CG50　表示（クロスフェード）*/\a7,-2,-2,0,\a0,49,2,0,\a6,-2,0,0,/*▲BGM　Track11　再生*/\a2,-1,11,1,\n拓司はようやく我に返った。@
@@ -36,18 +27,16 @@ TEXT1 \xa4\x86\x01 TEXT2 r
 泣き叫んでいる。\
 
   
-INIT \xa8\x02\x0c SET_VAR  J \x02 H\x02 END 
-SCEC SCE240_003 \xaa\x04 SCE_DONE 
-TEXT1 \xa8\x86\x01 TEXT2 *
+INIT \xa8\x02\x0c SET_VAR1 J \x02 H\x02 END
+INIT_TEXT SCE240_003 \xaa\x04 SCE_TEXT TEXT1 \xa8\x86\x01 TEXT2 *
  
 御堂\n　「うわあああああああああああッ！\p　やめろおお！\p　潰れる！@
 　　目、おれの目！」@
 拓司\n　「こういうのはお終いだ、御堂！\p　これでお終いだ！」\
 
   
-INIT \xee\x04\x0c SET_VAR  J \x02 H\x02 END 
-SCEC SCE240_004 \xd0\x05 SCE_DONE 
-TEXT1 \xac\x86\x01 TEXT2 \x9c
+INIT \xee\x04\x0c SET_VAR1 J \x02 H\x02 END
+INIT_TEXT SCE240_004 \xd0\x05 SCE_TEXT TEXT1 \xac\x86\x01 TEXT2 \x9c
  
 拓司は叫んだ。@
 そして親指にグイと力を込めた。@
@@ -62,9 +51,8 @@ TEXT1 \xac\x86\x01 TEXT2 \x9c
 拓司\n　「終わりだ、全部終わりだ」\
 
   
-INIT \x14\x06\x0c SET_VAR  J \x02 H\x02 END 
-SCEC SCE240_005 \xbe\x08 SCE_DONE 
-TEXT1 \xb0\x86\x01 TEXT2 b
+INIT \x14\x06\x0c SET_VAR1 J \x02 H\x02 END
+INIT_TEXT SCE240_005 \xbe\x08 SCE_TEXT TEXT1 \xb0\x86\x01 TEXT2 b
  
 呆気にとられた一同の視線を集めて、拓司は続けた。@
 \n拓司\n　「俺は、この部屋を出る。\p行く先は……光がある場所だ」@
@@ -76,13 +64,11 @@ TEXT1 \xb0\x86\x01 TEXT2 b
 拓司はそれを以前、月代カンナの口から聞いたことがあった。\
 
   
-INIT \x02\t\x0c SET_VAR  J \x02 H\x02 END 
-SCEC SCE240_006 \xc4\n SCE_DONE 
-TEXT1 \xb4\x86\x01 TEXT2 \x0c
+INIT \x02\t\x0c SET_VAR1 J \x02 H\x02 END
+INIT_TEXT SCE240_006 \xc4\n SCE_TEXT TEXT1 \xb4\x86\x01 TEXT2 \x0c
  
 拓司\n　「ついてくる人は、いるかい？」\
 
   
-INIT \x08\x0b\x0c SET_VAR  J \x02 H\x02 END  J 
-CMD3 TextClose VAR1 ~\x0b END 
+INIT \x08\x0b\x0c SET_VAR1 J \x02 H\x02 END J APPLY_3 TextClose VAR1 ~\x0b END
 END_SCRIPT

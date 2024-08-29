@@ -1,19 +1,13 @@
 START_SCRIPT
 \x0c\r\x01`B#\x01\xf0\n  
-INIT \x04\x01\x0c SET_VAR 
-CMD6 .\\Data\\Script\\Bgm.Fob VAR1   
-CMD2 PlayCD RUNF J END 
-SCEC SCE232_001 f SCE_DONE 
-TEXT1  z\x01 TEXT2 \x13
+INIT \x04\x01\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bgm.Fob VAR1   APPlY_2 PlayCD RUNF J END
+INIT_TEXT SCE232_001 f SCE_TEXT TEXT1  z\x01 TEXT2 \x13
  
 \n\n\n\n\n\n\n\n\n\n　　　　　　　『おんなのこと、うちゅうじん』\
 
   
-INIT \xaa\x0c SET_VAR 
-CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \x16\x01 
-CMD2 TextOn RUNF D\x01 END 
-SCEC SCE232_002 `\x01 SCE_DONE 
-TEXT1 $z\x01 TEXT2 \xdf
+INIT \xaa\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF \x16\x01 APPlY_2 TextOn RUNF D\x01 END
+INIT_TEXT SCE232_002 `\x01 SCE_TEXT TEXT1 $z\x01 TEXT2 \xdf
  
 　あるところに、なたねという女の子がいました。@
 \n　なたねにはお母さんがいませんでした。\pお母さんはなたねが小\nさいときに病気で死んでしまったのです。\pお父さんも、本当のお\n父さんではなく、お母さんの再婚相手でした。\pそれでもなたねは、\n寂しいなんて思うことはありませんでした。@
@@ -23,9 +17,8 @@ TEXT1 $z\x01 TEXT2 \xdf
 　お義父さんはなたねのことを大切に、大切に育ててくれました。\n\p　一度、なたねがひどい風邪を引いたときには、大切なお仕事を\n放り出して看病についてくれました（お義父さんはそのせいで、\n病院をクビになってしまったので、新しい仕事先を探さなければ\nならなくなりました）。\pしかもお義父さんは、勉強をしなさい、\nＴＶは見てはいけません、と、厳しいこともなにひとついいませ\nんでした。\
 
   
-INIT \xa4\x01\x0c SET_VAR  \x16\x01 \x02 D\x01 END 
-SCEC SCE232_003 Z\x05 SCE_DONE 
-TEXT1 (z\x01 TEXT2 \x9e
+INIT \xa4\x01\x0c SET_VAR1 \x16\x01 \x02 D\x01 END
+INIT_TEXT SCE232_003 Z\x05 SCE_TEXT TEXT1 (z\x01 TEXT2 \x9e
  
 　なたねはお義父さんが大好きでした。@
 　だから言われなくても勉強をしましたし、ＴＶだって少ししか\n見ませんでした。\pそうすればお義父さんが喜んでくれると思った\nからです。@
@@ -34,15 +27,10 @@ TEXT1 (z\x01 TEXT2 \x9e
 　ときどき「もういやだなあ」と思うこともあって、そんなとき\nお義父さんは「なたね、あまり勉強ばかりしていると、体に毒だ\nよ」と優しく声をかけてくれました。\pなたねは、そんなお義父さ\nんの声を聞くと、逆に「よし、もっとがんばろう！」と思えたの\nでした。\
 
   
-INIT \x9e\x05\x0c SET_VAR  \x16\x01 \x02 D\x01 END  \x16\x01 
-CMD3 TextClose VAR1 \\\x08 END 
-HERO .\\Data\\Script\\Scenario\\232SubC.Fob RUNF |\x08 
-CMD2 start VAR1 \xb2\x08 END   
-INIT \xc8\x0c SET_VAR 
-CMD6 .\\Data\\Script\\Bg.Fob VAR2 \xe8\x08 \x02
-CMD4 BgAutoFadeIn VAR2 \x12\t END 
-SCEC SCE232_013 6\t SCE_DONE 
-TEXT1 Pz\x01 TEXT2 ?
+INIT \x9e\x05\x0c SET_VAR1 \x16\x01 \x02 D\x01 END \x16\x01 APPLY_3 TextClose VAR1 \\\x08 END
+HERO .\\Data\\Script\\Scenario\\232SubC.Fob RUNF |\x08 APPlY_2 start VAR1 \xb2\x08 END  
+INIT \xc8\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bg.Fob VAR2\xe8\x08 \x02 APPLY_4 BgAutoFadeIn VAR2\x12\t END
+INIT_TEXT SCE232_013 6\t SCE_TEXT TEXT1 Pz\x01 TEXT2 ?
  
 　どこかへ走ってゆく汽車の@
 　全財産ぶんの切符を　くださいな@
@@ -53,6 +41,5 @@ TEXT1 Pz\x01 TEXT2 ?
 　ここからはなれてゆきたいのです\
 
   
-INIT z\t\x0c SET_VAR  \x16\x01 \x02 D\x01 END    
-CMD2 StopCD RUNF \xbc\n END  \x16\x01 \x02 \\\x08 END 
+INIT z\t\x0c SET_VAR1 \x16\x01 \x02 D\x01 END NULL APPlY_2 StopCD RUNF \xbc\n END \x16\x01 \x02 \\\x08 END
 END_SCRIPT

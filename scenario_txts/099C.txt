@@ -1,7 +1,6 @@
 START_SCRIPT
 B\x05\x01\xa4\t3\x010\x04
-SCEC SCE099_001 \x06 SCE_DONE 
-TEXT1 P\xaa TEXT2 I
+INIT_TEXT SCE099_001 \x06 SCE_TEXT TEXT1 P\xaa TEXT2 I
  
 拓司\n　「雲居さんのいうことに一理ある」@
 早桃\n　「おにいちゃん！」@
@@ -9,11 +8,8 @@ TEXT1 P\xaa TEXT2 I
 \n拓司はなたねをちらりとみやった。@
 なたねはいつもの無表情で、なんの反応もない。\w\z
   
-INIT J\x0c SET_VAR 
-CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \x8e\x01 
-CMD2 TextOn RUNF \xbc\x01 END 
-SCEC SCE099_002 \xd8\x01 SCE_DONE 
-TEXT1 T\xaa TEXT2 l
+INIT J\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF \x8e\x01 APPlY_2 TextOn RUNF \xbc\x01 END
+INIT_TEXT SCE099_002 \xd8\x01 SCE_TEXT TEXT1 T\xaa TEXT2 l
  
 拓司\n　「ただ、お前が騒ぎ立てることでみんなが不安になるという点\n　　のみにおいては、雲居さんは正しい。\pいいかい、早桃。\pみ\n　　んな怖いんだ。\pみんな叫びたいんだ。\pでも、我慢している。@
 　　だから、お前も我慢しなくちゃ－－」@
@@ -21,6 +17,5 @@ TEXT1 T\xaa TEXT2 l
 いうとなたねは、走るように自分のスペースへと向かい、膝を抱\nえて壁に向かった。@
 \nそれから一日、早桃はおろか、他の誰もひとことも口をきこう\nとはしなかった。\w\z
   
-INIT \x1c\x02\x0c SET_VAR  \x8e\x01 \x02 \xbc\x01 END  \x8e\x01 
-CMD3 TextClose VAR1 \x12\x04 END 
+INIT \x1c\x02\x0c SET_VAR1 \x8e\x01 \x02 \xbc\x01 END \x8e\x01 APPLY_3 TextClose VAR1 \x12\x04 END
 END_SCRIPT

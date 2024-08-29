@@ -1,7 +1,6 @@
 START_SCRIPT
 R\x04\x01\xa4\t3\x01<\x03
-SCEC SCEG02_101 \x06 SCE_DONE 
-TEXT1 h\xc5\x01 TEXT2 \x86
+INIT_TEXT SCEG02_101 \x06 SCE_TEXT TEXT1 h\xc5\x01 TEXT2 \x86
  
 錦城\n　「エロい子ね……いいわよ。\p許してあげる。@
 　　……どう？　柔らかいでしょう？　つけてないのよ、わかる？\n　　\pあなたに触らせてあげようと思って、下着、つけてこなかっ\n　　たの。\p……昼間からずっとあなたのこと見てたわ。@
@@ -10,10 +9,5 @@ TEXT1 h\xc5\x01 TEXT2 \x86
 　　虎菱くんのあそこ、もう爆発しそうだわ。@
 　　よっぽど先生のおっぱい、気に入ったのね？\n　　ほんと……いやらしい子だわ」\w\z
   
-INIT J\x0c SET_VAR 
-CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \x82\x02 
-CMD2 TextOn RUNF \xb0\x02 END 
-CMD6 .\\Data\\Script\\Bgm.Fob VAR1 \xcc\x02 
-CMD2 StopCD RUNF \xf6\x02 END  \x82\x02 
-CMD3 TextClose VAR1 \x1e\x03 END 
+INIT J\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF \x82\x02 APPlY_2 TextOn RUNF \xb0\x02 END APPLY_FILE .\\Data\\Script\\Bgm.Fob VAR1 \xcc\x02 APPlY_2 StopCD RUNF \xf6\x02 END \x82\x02 APPLY_3 TextClose VAR1 \x1e\x03 END
 END_SCRIPT

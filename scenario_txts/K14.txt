@@ -1,13 +1,8 @@
 START_SCRIPT
 \xa1\x13\x01`B#\x01\\\x10  
-INIT \xc8\x0c SET_VAR 
-CMD6 .\\Data\\Script\\Bg.Fob VAR2   \x02
-CMD4 BgAutoFadeIn VAR2 J END   
-INIT \x08\x01\x0c SET_VAR 
-CMD6 .\\Data\\Script\\Bgm.Fob VAR1 \x88 
-CMD2 PlayCD RUNF \xb2 END 
-SCEC SCEK14_001 \xce SCE_DONE 
-TEXT1 \xb0\xad\x01 TEXT2 \x9d
+INIT \xc8\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bg.Fob VAR2  \x02 APPLY_4 BgAutoFadeIn VAR2J END  
+INIT \x08\x01\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bgm.Fob VAR1 \x88 APPlY_2 PlayCD RUNF \xb2 END
+INIT_TEXT SCEK14_001 \xce SCE_TEXT TEXT1 \xb0\xad\x01 TEXT2 \x9d
  
 　計画は、それから３日後に実行に移された。@
 カンナのお母さんが実家の法事で家を留守にする日。@
@@ -21,11 +16,8 @@ TEXT1 \xb0\xad\x01 TEXT2 \x9d
 憑き物が落ちたようないきいきとした顔が鏡の中にあったのを、\n鮮やかに覚えている。@
 サッパリしていて、自分でもちょっとすてきかな、などと思った\nくらいだった。\w\z
   
-INIT \x12\x01\x0c SET_VAR 
-CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \xa6\x03 
-CMD2 TextOn RUNF \xd4\x03 END 
-SCEC SCEK14_002 \xf0\x03 SCE_DONE 
-TEXT1 \xb4\xad\x01 TEXT2 \xb4
+INIT \x12\x01\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF \xa6\x03 APPlY_2 TextOn RUNF \xd4\x03 END
+INIT_TEXT SCEK14_002 \xf0\x03 SCE_TEXT TEXT1 \xb4\xad\x01 TEXT2 \xb4
  
 　私はそのまま約束のビジネスホテルに向かった。@
 ××予備校の夏期講習を受ける地方の学生がよく長期利用するホ\nテルで、時期がちょうどそんな時期だったこともあって、私たち\nみたいな学生が２人で向かったからといってとりわけ怪しまれる\nことはないだろうと……そう目星をつけてのことだった。@
@@ -36,9 +28,8 @@ TEXT1 \xb4\xad\x01 TEXT2 \xb4
 わくわくしていた。@
 ゆきといっしょに、どこか温泉にでも旅行に出かけるような、そ\nんな気分だった。\w\z
   
-INIT 4\x04\x0c SET_VAR  \xa6\x03 \x02 \xd4\x03 END 
-SCEC SCEK14_003 >\x07 SCE_DONE 
-TEXT1 \xb8\xad\x01 TEXT2 k
+INIT 4\x04\x0c SET_VAR1 \xa6\x03 \x02 \xd4\x03 END
+INIT_TEXT SCEK14_003 >\x07 SCE_TEXT TEXT1 \xb8\xad\x01 TEXT2 k
  
 　８時を少し回ったころ、ドアがノックされた。@
 「－－月代さん。私」@
@@ -48,9 +39,8 @@ TEXT1 \xb8\xad\x01 TEXT2 k
 「うん」とゆきはいった。@
 「終わったよ」\w\z
   
-INIT \x82\x07\x0c SET_VAR  \xa6\x03 \x02 \xd4\x03 END 
-SCEC SCEK14_004 h\t SCE_DONE 
-TEXT1 \xbc\xad\x01 TEXT2 z
+INIT \x82\x07\x0c SET_VAR1 \xa6\x03 \x02 \xd4\x03 END
+INIT_TEXT SCEK14_004 h\t SCE_TEXT TEXT1 \xbc\xad\x01 TEXT2 z
  
 ドアの向こうに立っていたゆきは、さすがにひどく疲れているよ\nうに見えたけれど、いま人を殺してきたばかりには見えなかった。\n\p取り乱したような様子もなくて、むしろ穏やかさがゆきのまわり\nには漂っていた。@
 とてもリラックスしているみたいだった。@
@@ -60,9 +50,8 @@ TEXT1 \xbc\xad\x01 TEXT2 z
 「かわいいね、その服」と私はいった。@
 「月代さんもかわいいよ」と、ゆきは照れくさそうにいった。\w\z
   
-INIT \xac\t\x0c SET_VAR  \xa6\x03 \x02 \xd4\x03 END 
-SCEC SCEK14_005 \xce\x0b SCE_DONE 
-TEXT1 \xc0\xad\x01 TEXT2 p
+INIT \xac\t\x0c SET_VAR1 \xa6\x03 \x02 \xd4\x03 END
+INIT_TEXT SCEK14_005 \xce\x0b SCE_TEXT TEXT1 \xc0\xad\x01 TEXT2 p
  
 －－あとでわかったことだけれど、父親は死んではいなかった。\n睡眠中に左胸を包丁でひとつきにされた父親は、その日の昼過ぎ\nに瀕死の重体で発見されて、そして奇跡的に一命を取り留めた。@
 仕事を終えて家を出るときに、ゆきは玄関の鍵を閉め忘れたのだ\nった。@
@@ -70,14 +59,12 @@ TEXT1 \xc0\xad\x01 TEXT2 p
 このことは、人生のひとつの真実を表しているように思う。@
 人生はやはり、オチのない悪い冗談なのだという真実を。\w\z
   
-INIT \x12\x0c\x0c SET_VAR  \xa6\x03 \x02 \xd4\x03 END 
-SCEC SCEK14_006 \x0c\x0e SCE_DONE 
-TEXT1 \xc4\xad\x01 TEXT2 j
+INIT \x12\x0c\x0c SET_VAR1 \xa6\x03 \x02 \xd4\x03 END
+INIT_TEXT SCEK14_006 \x0c\x0e SCE_TEXT TEXT1 \xc4\xad\x01 TEXT2 j
  
 でも、そんなことはあとでわかったことで、そのときの私たちは、\n何もかもを終わらせたんだという（あるいは終わらせるんだとい\nう）、さっぱりした気分でいっぱいだった。@
 \n私たちは、あらかじめ何軒かのドラッグストアから買い集めてお\nいた××××という薬を鞄から出して、銀紙の上に何瓶分かの錠\n剤をまとめて載せ、ライターであぶって、ドロドロに溶かした。@
 そして、その朝コンビニで買ってきたプレーンヨーグルトに混ぜ\nた。\w\z
   
-INIT P\x0e\x0c SET_VAR  \xa6\x03 \x02 \xd4\x03 END  \xa6\x03 
-CMD3 TextClose VAR1 >\x10 END 
+INIT P\x0e\x0c SET_VAR1 \xa6\x03 \x02 \xd4\x03 END \xa6\x03 APPLY_3 TextClose VAR1 >\x10 END
 END_SCRIPT

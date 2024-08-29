@@ -1,24 +1,16 @@
 START_SCRIPT
 \x07\x01`B#\x01\xf8\x05  
-INIT \x05\x01\x0c SET_VAR 
-CMD6 .\\Data\\Script\\Bgm.Fob VAR1   
-CMD2 PlayCD RUNF J END 
-SCEC SCEG03_003 f SCE_DONE 
-TEXT1 x\xc5\x01 TEXT2 L
+INIT \x05\x01\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bgm.Fob VAR1   APPlY_2 PlayCD RUNF J END
+INIT_TEXT SCEG03_003 f SCE_TEXT TEXT1 x\xc5\x01 TEXT2 L
  
 　拓司の股間をゆっくりとなで回しながらいう。@
 錦城は長い髪を後ろに掻き上げて、唇をそっと拓司の股間に近づ\nけた。@
 カチリ、という音を立ててジッパーの先をくわえ、器用にそれを\n開いていく。@
 \n錦城\n　「静かに……静かにね。\p他の子が目を覚まさないように……\n　　私たちだけの秘密だから……」\w\z
   
-INIT \xaa\x0c SET_VAR 
-CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \xfa\x01 
-CMD2 TextOn RUNF (\x02 END   
-INIT _\x0c SET_VAR 
-CMD6 .\\Data\\Script\\Bg.Fob VAR2 ^\x02 \x02
-CMD4 BgAutoFadeIn VAR2 \x88\x02 END 
-SCEC SCEG03_004 \xac\x02 SCE_DONE 
-TEXT1 |\xc5\x01 TEXT2 \x92
+INIT \xaa\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF \xfa\x01 APPlY_2 TextOn RUNF (\x02 END  
+INIT _\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bg.Fob VAR2^\x02 \x02 APPLY_4 BgAutoFadeIn VAR2\x88\x02 END
+INIT_TEXT SCEG03_004 \xac\x02 SCE_TEXT TEXT1 |\xc5\x01 TEXT2 \x92
  
 　錦城は顔を拓司の股間に埋めて、口だけを使ってペ○スを引き\nずり出した。@
 イヌが餌を食べるときのようなあさましい姿だったが、端正な錦\n城がすると、不思議と儀式めいて美しく見えた。@
@@ -30,8 +22,6 @@ TEXT1 |\xc5\x01 TEXT2 \x92
 　　興奮するでしょう？\p　どんな味がするか……わかる？@
 　　いってあげましょうか、あなたのおち○ちんの味？」\w\z
   
-INIT \xf0\x02\x0c SET_VAR  \xfa\x01 \x02 (\x02 END   
-INIT \xc8\x0c SET_VAR  ^\x02 \x02 \x88\x02 END    
-CMD2 StopCD RUNF \xb2\x05 END  \xfa\x01 
-CMD3 TextClose VAR1 \xda\x05 END 
+INIT \xf0\x02\x0c SET_VAR1 \xfa\x01 \x02 (\x02 END  
+INIT \xc8\x0c SET_VAR1 ^\x02 \x02 \x88\x02 END NULL APPlY_2 StopCD RUNF \xb2\x05 END \xfa\x01 APPLY_3 TextClose VAR1 \xda\x05 END
 END_SCRIPT

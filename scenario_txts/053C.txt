@@ -1,10 +1,7 @@
 START_SCRIPT
 !\x15\x01`B#\x01r\x11  
-INIT \x0b\x01\x0c SET_VAR 
-CMD6 .\\Data\\Script\\Bgm.Fob VAR1   
-CMD2 PlayCD RUNF J END 
-SCEC SCE053_001 f SCE_DONE 
-TEXT1 pb TEXT2 z
+INIT \x0b\x01\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bgm.Fob VAR1   APPlY_2 PlayCD RUNF J END
+INIT_TEXT SCE053_001 f SCE_TEXT TEXT1 pb TEXT2 z
  
 机が乱暴に端々に追いやられ、教室は妙に広々としている。@
 教室の中央に、学生たちが群れている。@
@@ -13,11 +10,8 @@ TEXT1 pb TEXT2 z
 /*▲BGM　Track11　再生　*//*■CG21　表示（クロスフェード）　*/\a7,-2,-2,0,\a0,20,2,0,\a6,-2,0,0,\n早桃だ。\
 
   
-INIT \xaa\x0c SET_VAR 
-CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \xb2\x02 
-CMD2 TextOn RUNF \xe0\x02 END 
-SCEC SCE053_002 \xfc\x02 SCE_DONE 
-TEXT1 tb TEXT2 C
+INIT \xaa\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF \xb2\x02 APPlY_2 TextOn RUNF \xe0\x02 END
+INIT_TEXT SCE053_002 \xfc\x02 SCE_TEXT TEXT1 tb TEXT2 C
  
 学生\n　「だいたい図々しいんだよ」@
 学生\n　「なんでお前、率先して死なないわけ？」@
@@ -30,9 +24,8 @@ TEXT1 tb TEXT2 C
 学生\n　「死ねよ」\
 
   
-INIT @\x03\x0c SET_VAR  \xb2\x02 \x02 \xe0\x02 END 
-SCEC SCE053_003 \x86\x04 SCE_DONE 
-TEXT1 xb TEXT2 \x96
+INIT @\x03\x0c SET_VAR1 \xb2\x02 \x02 \xe0\x02 END
+INIT_TEXT SCE053_003 \x86\x04 SCE_TEXT TEXT1 xb TEXT2 \x96
  
 　死ねよ、死ねよ、死ねよ、死ねよ、死ねよ、死ねよ、死ねよ、\n　死ねよ、死ねよ、死ねよ\n　死ね死ね死ね死ね死ね死ね死ね死ね死ね死ね死ね死ね死ね死ね\n　死ね死ね死ね\n　シネシネシネシネシシネシネシネシネシネシネシネシネシネシ\n　ネシネシネシネシネシネ\n　学生たちの声は、大合唱となって教室にとどろき渡った。@
 \n　シ……足を上げる。@
@@ -42,9 +35,8 @@ TEXT1 xb TEXT2 \x96
 \n　シネシネシネシネシシネシネシネシネシネシネシネシネシネシ\nネシネシネシネシネシネ\n　ドンガドンガドンガドンドンガドンガドンガドンガドンガドン\nガドンガドンガドンガドンガドンガ\
 
   
-INIT \xca\x04\x0c SET_VAR  \xb2\x02 \x02 \xe0\x02 END 
-SCEC SCE053_004 \\\x07 SCE_DONE 
-TEXT1 |b TEXT2 \xb3
+INIT \xca\x04\x0c SET_VAR1 \xb2\x02 \x02 \xe0\x02 END
+INIT_TEXT SCE053_004 \\\x07 SCE_TEXT TEXT1 |b TEXT2 \xb3
  
 　足を踏みならす音は太鼓のリズムで、合唱は呪文の詠唱だった@
 　中世の魔女狩りそのものだった。@
@@ -58,12 +50,9 @@ TEXT1 |b TEXT2 \xb3
 \n早桃\n　「ごめんなさい……ごめんなさい……ごめんなさい……」\
 
   
-INIT \xa0\x07\x0c SET_VAR  \xb2\x02 \x02 \xe0\x02 END   
-INIT \xc8\x0c SET_VAR 
-CMD6 .\\Data\\Script\\Bg.Fob VAR2 \xc0\n \x02
-CMD4 BgAutoFadeIn VAR2 \xea\n END 
-SCEC SCE053_005 \x0e\x0b SCE_DONE 
-TEXT1 \x80b TEXT2 r
+INIT \xa0\x07\x0c SET_VAR1 \xb2\x02 \x02 \xe0\x02 END  
+INIT \xc8\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bg.Fob VAR2\xc0\n \x02 APPLY_4 BgAutoFadeIn VAR2\xea\n END
+INIT_TEXT SCE053_005 \x0e\x0b SCE_TEXT TEXT1 \x80b TEXT2 r
  
 早桃がクラスのなかで孤立しているということは知っていた。@
 人見知りの激しい早桃は、いじめの絶好の標的だったのだろう。\nそれにしても－－@
@@ -73,9 +62,8 @@ TEXT1 \x80b TEXT2 r
 しかしまた、背後から拓司の肩を押さえた者がいる。\
 
   
-INIT R\x0b\x0c SET_VAR  \xb2\x02 \x02 \xe0\x02 END 
-SCEC SCE053_006 T\r SCE_DONE 
-TEXT1 \x84b TEXT2 a
+INIT R\x0b\x0c SET_VAR1 \xb2\x02 \x02 \xe0\x02 END
+INIT_TEXT SCE053_006 T\r SCE_TEXT TEXT1 \x84b TEXT2 a
  
 拓司\n　「離してくれ、雲居さん」@
 なたね\n　「駄目。\pいま入っても義妹さんは救えない。\p多勢に無勢。@
@@ -86,21 +74,19 @@ TEXT1 \x84b TEXT2 a
 \nなたねはすうっと目を細めて天を見上げ、指先で空中に何かの文\n字を書いた。\pそれから地面に掌をぴったりと当てて、沈黙に沈み\n込んだ。\p拓司のなかで怒りが爆発した。\
 
   
-INIT \x98\r\x0c SET_VAR  \xb2\x02 \x02 \xe0\x02 END 
-SCEC SCE053_007 V\x0f SCE_DONE 
-TEXT1 \x88b TEXT2 >
+INIT \x98\r\x0c SET_VAR1 \xb2\x02 \x02 \xe0\x02 END
+INIT_TEXT SCE053_007 V\x0f SCE_TEXT TEXT1 \x88b TEXT2 >
  
 拓司\n　「ふざけるな、そんな遊びにつきあってるヒマは－－」@
 雲居\n　「間違いない。\pいま、前兆を確認したわ。\p五分後、大きな波が\n　　来るわ。\pそれまで待てば、みんな自滅する。\pそうすれば、危\n　　険を冒さずに義妹さんを助けられるわ」\
 
   
-INIT \x9a\x0f\x0c SET_VAR  \xb2\x02 \x02 \xe0\x02 END 
+INIT \x9a\x0f\x0c SET_VAR1 \xb2\x02 \x02 \xe0\x02 END
 S204 
 CHOICE
 待っていられない\n待つ\n\l0,2,
 ENDCHOICE
 
   
-INIT \xcc\x10\x0c SET_VAR  \xb2\x02 \x02 \xe0\x02 END  \xb2\x02 
-CMD3 TextClose VAR1 :\x11 END  \xb2\x02 \x02 :\x11 END 
+INIT \xcc\x10\x0c SET_VAR1 \xb2\x02 \x02 \xe0\x02 END \xb2\x02 APPLY_3 TextClose VAR1 :\x11 END \xb2\x02 \x02 :\x11 END
 END_SCRIPT

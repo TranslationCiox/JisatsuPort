@@ -1,13 +1,8 @@
 START_SCRIPT
 \x9b\x1f\x01`B#\x01\n\x1a  
-INIT \n\x01\x0c SET_VAR 
-CMD6 .\\Data\\Script\\Bgm.Fob VAR1   
-CMD2 PlayCD RUNF J END   
-INIT +\x0c SET_VAR 
-CMD6 .\\Data\\Script\\Bg.Fob VAR2 \x80 \x02
-CMD4 BgAutoFadeIn VAR2 \xaa END 
-SCEC SCE233_001 \xce SCE_DONE 
-TEXT1 \xb0{\x01 TEXT2 _
+INIT \n\x01\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bgm.Fob VAR1   APPlY_2 PlayCD RUNF J END  
+INIT +\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bg.Fob VAR2\x80 \x02 APPLY_4 BgAutoFadeIn VAR2\xaa END
+INIT_TEXT SCE233_001 \xce SCE_TEXT TEXT1 \xb0{\x01 TEXT2 _
  
 朝、拓司は一同を集めていった。@
 \n拓司\n　「もう限界だ。\p御堂を、やる」@
@@ -19,11 +14,8 @@ TEXT1 \xb0{\x01 TEXT2 _
 \n拓司\n　「わからない。\pたぶん……たぶん……」\
 
   
-INIT \x12\x01\x0c SET_VAR 
-CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \xae\x02 
-CMD2 TextOn RUNF \xdc\x02 END 
-SCEC SCE233_002 \xf8\x02 SCE_DONE 
-TEXT1 \xb4{\x01 TEXT2 \x96
+INIT \x12\x01\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF \xae\x02 APPlY_2 TextOn RUNF \xdc\x02 END
+INIT_TEXT SCE233_002 \xf8\x02 SCE_TEXT TEXT1 \xb4{\x01 TEXT2 \x96
  
 カンナ\n　「－－殺すってこと？」@
 \n沈黙が流れた。@
@@ -37,9 +29,8 @@ TEXT1 \xb4{\x01 TEXT2 \x96
 \n次にそうなるのは、自分かもしれないのだ。\
 
   
-INIT <\x03\x0c SET_VAR  \xae\x02 \x02 \xdc\x02 END 
-SCEC SCE233_003 \xce\x05 SCE_DONE 
-TEXT1 \xb8{\x01 TEXT2 \x8c
+INIT <\x03\x0c SET_VAR1 \xae\x02 \x02 \xdc\x02 END
+INIT_TEXT SCE233_003 \xce\x05 SCE_TEXT TEXT1 \xb8{\x01 TEXT2 \x8c
  
 紅葉\n　「でも……私たち４人がかりでかかっていったって、きっと御\n　　堂にはかなわないわ。\p錦城もいるし……。\pあいつら、鍵をか\n　　けて準備室に閉じこもってるから、不意打ちだってできない」\n\p拓司\n　「いや、チャンスはある」@
 紅葉\n　「？」@
@@ -49,9 +40,8 @@ TEXT1 \xb8{\x01 TEXT2 \x8c
 \nカンナが冷たくいった。\p紅葉はキッとカンナをにらみつけた。\
 
   
-INIT \x12\x06\x0c SET_VAR  \xae\x02 \x02 \xdc\x02 END 
-SCEC SCE233_004 |\x08 SCE_DONE 
-TEXT1 \xbc{\x01 TEXT2 \xb2
+INIT \x12\x06\x0c SET_VAR1 \xae\x02 \x02 \xdc\x02 END
+INIT_TEXT SCE233_004 |\x08 SCE_TEXT TEXT1 \xbc{\x01 TEXT2 \xb2
  
 紅葉\n　「月代さん。\pあなたが私たちのために……その……犠牲になっ\n　　てくれたことは感謝してる。\pでも、だからって私が犠牲にな\n　　らなきゃならないっていうのは、おかしいんじゃない？」@
 カンナ\n　「犠牲にならないために、こうやって話し合ってるんじゃない\n　　の？\p　このまま放っておいてもどうせ明日、あなたは御堂た\n　　ちに犯される。\pだったら、少しは抵抗してから犯されるほう\n　　がマシなんじゃないかしら」@
@@ -61,9 +51,8 @@ TEXT1 \xbc{\x01 TEXT2 \xb2
 \n紅葉は髪の毛をかきむしっていった。\p声が徐々に大きくなる。\
 
   
-INIT \xc0\x08\x0c SET_VAR  \xae\x02 \x02 \xdc\x02 END 
-SCEC SCE233_005 \xc2\x0b SCE_DONE 
-TEXT1 \xc0{\x01 TEXT2 \xae
+INIT \xc0\x08\x0c SET_VAR1 \xae\x02 \x02 \xdc\x02 END
+INIT_TEXT SCE233_005 \xc2\x0b SCE_TEXT TEXT1 \xc0{\x01 TEXT2 \xae
  
 紅葉\n　「あんなヤツらに身体を触らせるくらいなら、死んだ方がマシ\n　　！」@
 カンナ\n　「じゃあ、死になさいよ。\pここは自殺の博覧会場だわ。@
@@ -74,9 +63,8 @@ TEXT1 \xc0{\x01 TEXT2 \xae
 　　で、観客はみんなスーッとするって仕掛け」\
 
   
-INIT \x06\x0c\x0c SET_VAR  \xae\x02 \x02 \xdc\x02 END 
-SCEC SCE233_006 \xf8\x0e SCE_DONE 
-TEXT1 \xc4{\x01 TEXT2 \x82
+INIT \x06\x0c\x0c SET_VAR1 \xae\x02 \x02 \xdc\x02 END
+INIT_TEXT SCE233_006 \xf8\x0e SCE_TEXT TEXT1 \xc4{\x01 TEXT2 \x82
  
 見かねて拓司は間に入った。@
 このままでは御堂たちが寝ている準備室にまで声が響いてしまい\nそうだ。@
@@ -87,9 +75,8 @@ TEXT1 \xc4{\x01 TEXT2 \x82
 拓司\n　「どう……って……」\
 
   
-INIT <\x0f\x0c SET_VAR  \xae\x02 \x02 \xdc\x02 END 
-SCEC SCE233_007 ~\x11 SCE_DONE 
-TEXT1 \xc8{\x01 TEXT2 G
+INIT <\x0f\x0c SET_VAR1 \xae\x02 \x02 \xdc\x02 END
+INIT_TEXT SCE233_007 ~\x11 SCE_TEXT TEXT1 \xc8{\x01 TEXT2 G
  
 紅葉\n　「なんとも思わないんだ？」@
 拓司\n　「思わないはずないだろう！\p　ムカつくさ。\pだからこそ、こう\n　　やって－－」@
@@ -97,9 +84,8 @@ TEXT1 \xc8{\x01 TEXT2 G
 拓司\n　「……どういう意味だ？」\
 
   
-INIT \xc2\x11\x0c SET_VAR  \xae\x02 \x02 \xdc\x02 END 
-SCEC SCE233_008 \x18\x13 SCE_DONE 
-TEXT1 \xcc{\x01 TEXT2 \x95
+INIT \xc2\x11\x0c SET_VAR1 \xae\x02 \x02 \xdc\x02 END
+INIT_TEXT SCE233_008 \x18\x13 SCE_TEXT TEXT1 \xcc{\x01 TEXT2 \x95
  
 紅葉\n　「あたしは、あんたにとってなんなのかってことよ！\p　そりゃ、\n　　幼なじみがレイプされたらムカつくでしょうよ！\p　罪もない\n　　女の子がレイプされたらムカつくでしょうよ！\p　しかも相手\n　　は御堂！\p　そりゃ最高にムカつくでしょうよ！\p　でも……そ\n　　ういうことなの？\p　そういうことだからムカつくの？！@
 　　早桃ちゃんや、月代さんがレイプされてムカつくのと、あた\n　　しがレイプされてむかつくっていうのは……\n　　同じことなの？！」@
@@ -108,9 +94,8 @@ TEXT1 \xcc{\x01 TEXT2 \x95
 紅葉\n　「どうしてよ！」\
 
   
-INIT \\\x13\x0c SET_VAR  \xae\x02 \x02 \xdc\x02 END 
-SCEC SCE233_009 \xea\x15 SCE_DONE 
-TEXT1 \xd0{\x01 TEXT2 n
+INIT \\\x13\x0c SET_VAR1 \xae\x02 \x02 \xdc\x02 END
+INIT_TEXT SCE233_009 \xea\x15 SCE_TEXT TEXT1 \xd0{\x01 TEXT2 n
  
 拓司\n　「答は決まっている。\p『お前は特別だ』と……おれはいう。@
 　　ただ、それが本心から出たのものなのか……あるいはお前を\n　　乗せるためにいったことなのか……それはお前にはわからな\n　　い」@
@@ -120,21 +105,18 @@ TEXT1 \xd0{\x01 TEXT2 n
 \n誰も、何もいわなかった。\
 
   
-INIT .\x16\x0c SET_VAR  \xae\x02 \x02 \xdc\x02 END    
-CMD2 StopCD RUNF ,\x18 END   
-INIT \xc8\x0c SET_VAR  \x80 \x02 \xaa END 
-SCEC SCE233_010 |\x18 SCE_DONE 
-TEXT1 \xd4{\x01 TEXT2 \x0e
+INIT .\x16\x0c SET_VAR1 \xae\x02 \x02 \xdc\x02 END NULL APPlY_2 StopCD RUNF ,\x18 END  
+INIT \xc8\x0c SET_VAR1 \x80 \x02 \xaa END
+INIT_TEXT SCE233_010 |\x18 SCE_TEXT TEXT1 \xd4{\x01 TEXT2 \x0e
  
 その晩、紅葉は結局なにも答えずじまいだった。\
 
   
-INIT \xc0\x18\x0c SET_VAR  \xae\x02 \x02 \xdc\x02 END \x03\x1d
+INIT \xc0\x18\x0c SET_VAR1 \xae\x02 \x02 \xdc\x02 END\x03\x1d
 CHOICE
 しかし拓司は紅葉が協力してくれるはずだと信じていた\n拓司は、紅葉に頼るのは無理そうだ、と思った。\n\l0,2,
 ENDCHOICE
 
   
-INIT 2\x19\x0c SET_VAR  \xae\x02 \x02 \xdc\x02 END  \xae\x02 
-CMD3 TextClose VAR1 \xec\x19 END 
+INIT 2\x19\x0c SET_VAR1 \xae\x02 \x02 \xdc\x02 END \xae\x02 APPLY_3 TextClose VAR1 \xec\x19 END
 END_SCRIPT

@@ -1,24 +1,16 @@
 START_SCRIPT
 B\n\x01`B#\x01\xaa\x07  
-INIT \xc8\x0c SET_VAR 
-CMD6 .\\Data\\Script\\Bg.Fob VAR2   \x02
-CMD4 BgAutoFadeIn VAR2 J END   
-INIT \x08\x01\x0c SET_VAR 
-CMD6 .\\Data\\Script\\Bgm.Fob VAR1 \x88 
-CMD2 PlayCD RUNF \xb2 END 
-SCEC SCEK04_001 \xce SCE_DONE 
-TEXT1 X\xa6\x01 TEXT2 \\
+INIT \xc8\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bg.Fob VAR2  \x02 APPLY_4 BgAutoFadeIn VAR2J END  
+INIT \x08\x01\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bgm.Fob VAR1 \x88 APPlY_2 PlayCD RUNF \xb2 END
+INIT_TEXT SCEK04_001 \xce SCE_TEXT TEXT1 X\xa6\x01 TEXT2 \\
  
 　自分の道を行くつもりであれば、周囲との軋轢が産まれるのは\nやむなしと……私は考えてきた。@
 だから、ゆきのやりかたは、卑怯な妥協にしか思えなかった。@
 多分、嫉妬していたのだと思う。\n自分と同じメンタリティを持ちながらも周囲とうまくやっていけ\nているゆきが、羨ましかったのだろう。@
 そう考えないと、私がとったその後の行動を、うまく説明するこ\nとができない。\w\z
   
-INIT \x12\x01\x0c SET_VAR 
-CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \xa2\x02 
-CMD2 TextOn RUNF \xd0\x02 END 
-SCEC SCEK04_002 \xec\x02 SCE_DONE 
-TEXT1 \\\xa6\x01 TEXT2 \x96
+INIT \x12\x01\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF \xa2\x02 APPlY_2 TextOn RUNF \xd0\x02 END
+INIT_TEXT SCEK04_002 \xec\x02 SCE_TEXT TEXT1 \\\xa6\x01 TEXT2 \x96
  
 　私はそれから、できる限りの愛嬌と親切、そして嫌われ者の哀\nれさを投入して、ゆきの信頼を勝ち取ろうと努力した。@
 『いい子』を演じ続けてきたゆきは、ストレスで爆発寸前だった\nのだろう。@
@@ -28,15 +20,13 @@ TEXT1 \\\xa6\x01 TEXT2 \x96
 信念に対する背信行為を犯したゆきに、罰を与えたのだった。@
 ゆきが完全に寄り掛かってきたころを見計らって、私は計画を最\n終段階に進めた。\w\z
   
-INIT 0\x03\x0c SET_VAR  \xa2\x02 \x02 \xd0\x02 END 
-SCEC SCEK04_003 \xc2\x05 SCE_DONE 
-TEXT1 `\xa6\x01 TEXT2 P
+INIT 0\x03\x0c SET_VAR1 \xa2\x02 \x02 \xd0\x02 END
+INIT_TEXT SCEK04_003 \xc2\x05 SCE_TEXT TEXT1 `\xa6\x01 TEXT2 P
  
 ゆきの秘密をあらいざらい書き上げて、廊下に張り出したのだ。@
 \nそんな怪文書を丸々信じるほど学校の連中はバカではなかったし、\nゆきがそれまで築いてきた信頼も脆弱ではなかった。@
 そんなことはわかっていた。@
 私は、ゆきの地位にダメージを与えようと思ったわけではなかっ\nた。\pゆきの心を破壊してやろうと思ったのだ。\w\z
   
-INIT \x06\x06\x0c SET_VAR  \xa2\x02 \x02 \xd0\x02 END  \xa2\x02 
-CMD3 TextClose VAR1 \x8c\x07 END 
+INIT \x06\x06\x0c SET_VAR1 \xa2\x02 \x02 \xd0\x02 END \xa2\x02 APPLY_3 TextClose VAR1 \x8c\x07 END
 END_SCRIPT

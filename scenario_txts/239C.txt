@@ -1,10 +1,7 @@
 START_SCRIPT
 \x9b\x19\x01`B#\x01\xde\x14  
-INIT \x04\x01\x0c SET_VAR 
-CMD6 .\\Data\\Script\\Bgm.Fob VAR1   
-CMD2 PlayCD RUNF J END 
-SCEC SCE239_001 f SCE_DONE 
-TEXT1 \x10\x85\x01 TEXT2 f
+INIT \x04\x01\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bgm.Fob VAR1   APPlY_2 PlayCD RUNF J END
+INIT_TEXT SCE239_001 f SCE_TEXT TEXT1 \x10\x85\x01 TEXT2 f
  
 拓司は再び、空白の世界に立っていた。@
 隣には、雲居ナタネが立っている。@
@@ -14,11 +11,8 @@ TEXT1 \x10\x85\x01 TEXT2 f
 ナタネ\n　「くすくす。\p誰だって、子供っぽい空想の世界は持っているわ。\n　　\pだから特別あなたが幼稚ってわけでもないと思う」\
 
   
-INIT \xaa\x0c SET_VAR 
-CMD7 .\\Data\\Script\\TextFunc.Fob RUNF b\x02 
-CMD2 TextOn RUNF \x90\x02 END 
-SCEC SCE239_002 \xac\x02 SCE_DONE 
-TEXT1 \x14\x85\x01 TEXT2 o
+INIT \xaa\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF b\x02 APPlY_2 TextOn RUNF \x90\x02 END
+INIT_TEXT SCE239_002 \xac\x02 SCE_TEXT TEXT1 \x14\x85\x01 TEXT2 o
  
 拓司\n　「ありがとう」@
 \nいいながら拓司は、ナタネがそういってくれるのは、自分がそう\nいって欲しいと望んでいるからに他ならないことを理解していた。\n\pただ、その「ありがとう」は、自然に、拓司の心の一番深い場所\nから生まれてきた言葉だった。@
@@ -29,9 +23,8 @@ TEXT1 \x14\x85\x01 TEXT2 o
 いま、この瞬間、そう決まったのだ。\
 
   
-INIT \xf0\x02\x0c SET_VAR  b\x02 \x02 \x90\x02 END 
-SCEC SCE239_003 \xe6\x04 SCE_DONE 
-TEXT1 \x18\x85\x01 TEXT2 \x81
+INIT \xf0\x02\x0c SET_VAR1 b\x02 \x02 \x90\x02 END
+INIT_TEXT SCE239_003 \xe6\x04 SCE_TEXT TEXT1 \x18\x85\x01 TEXT2 \x81
  
 拓司\n　「そういうことなんだな」@
 \nナタネは無言で頷いた。@
@@ -40,9 +33,8 @@ TEXT1 \x18\x85\x01 TEXT2 \x81
 拓司\n　「そうか」\
 
   
-INIT *\x05\x0c SET_VAR  b\x02 \x02 \x90\x02 END 
-SCEC SCE239_004 h\x07 SCE_DONE 
-TEXT1 \x1c\x85\x01 TEXT2 \x87
+INIT *\x05\x0c SET_VAR1 b\x02 \x02 \x90\x02 END
+INIT_TEXT SCE239_004 h\x07 SCE_TEXT TEXT1 \x1c\x85\x01 TEXT2 \x87
  
 拓司はナタネを見つめた。@
 そこにいるナタネは、拓司の世界のなたねの、本来あるべき姿な\nのかもしれなかった。@
@@ -57,9 +49,8 @@ TEXT1 \x1c\x85\x01 TEXT2 \x87
 それが現実なのだ。\
 
   
-INIT \xac\x07\x0c SET_VAR  b\x02 \x02 \x90\x02 END 
-SCEC SCE239_005 \x02\n SCE_DONE 
-TEXT1  \x85\x01 TEXT2 ^
+INIT \xac\x07\x0c SET_VAR1 b\x02 \x02 \x90\x02 END
+INIT_TEXT SCE239_005 \x02\n SCE_TEXT TEXT1  \x85\x01 TEXT2 ^
  
 拓司\n　「雲居さん。\pおれはこれから、ひとつの世界を創る」@
 ナタネ\n　「……」@
@@ -70,9 +61,8 @@ TEXT1  \x85\x01 TEXT2 ^
 拓司\n　「その世界では、きみは－－」\
 
   
-INIT F\n\x0c SET_VAR  b\x02 \x02 \x90\x02 END 
-SCEC SCE239_006 \xf8\x0b SCE_DONE 
-TEXT1 $\x85\x01 TEXT2 *
+INIT F\n\x0c SET_VAR1 b\x02 \x02 \x90\x02 END
+INIT_TEXT SCE239_006 \xf8\x0b SCE_TEXT TEXT1 $\x85\x01 TEXT2 *
  
 ナタネ\n　「さあ、早く創るのよ」@
 \nナタネは微笑んで、いった。@
@@ -80,9 +70,8 @@ TEXT1 $\x85\x01 TEXT2 *
 拓司\n　「そうだな……ああ、そうだよな」\
 
   
-INIT <\x0c\x0c SET_VAR  b\x02 \x02 \x90\x02 END 
-SCEC SCE239_007 \x1e\r SCE_DONE 
-TEXT1 (\x85\x01 TEXT2 U
+INIT <\x0c\x0c SET_VAR1 b\x02 \x02 \x90\x02 END
+INIT_TEXT SCE239_007 \x1e\r SCE_TEXT TEXT1 (\x85\x01 TEXT2 U
  
 拓司は目を閉じた。@
 －－世界を創ろう。@
@@ -91,9 +80,8 @@ TEXT1 (\x85\x01 TEXT2 U
 けれどもいま、その世界を創ろうとしている俺の意志は、選択不\n可能なくじびきの不幸な結果ではない。強制されたものではない。\n\pおれがが創る、おれの世界だ。\
 
   
-INIT b\r\x0c SET_VAR  b\x02 \x02 \x90\x02 END 
-SCEC SCE239_008 \xf0\x0e SCE_DONE 
-TEXT1 ,\x85\x01 TEXT2 B
+INIT b\r\x0c SET_VAR1 b\x02 \x02 \x90\x02 END
+INIT_TEXT SCE239_008 \xf0\x0e SCE_TEXT TEXT1 ,\x85\x01 TEXT2 B
  
 ナタネ\n　「あなたが創る、あなたの世界」@
 \nもはやあらゆる責任は世界にはなく、おれ自身にある。@
@@ -103,9 +91,8 @@ TEXT1 ,\x85\x01 TEXT2 B
 \nナタネ\n　「前に－－」\
 
   
-INIT 4\x0f\x0c SET_VAR  b\x02 \x02 \x90\x02 END 
-SCEC SCE239_009 v\x10 SCE_DONE 
-TEXT1 0\x85\x01 TEXT2 \\
+INIT 4\x0f\x0c SET_VAR1 b\x02 \x02 \x90\x02 END
+INIT_TEXT SCE239_009 v\x10 SCE_TEXT TEXT1 0\x85\x01 TEXT2 \\
  
 動くことで、おれはおれを後に残してきたことを知り、新たなる\nおれを知るのだ。@
 世界がおれをおいていくのだとしたら、おれがおれを動かすしか\nないのだ。@
@@ -120,9 +107,8 @@ TEXT1 0\x85\x01 TEXT2 \\
 いまおれはゆく。\
 
   
-INIT \xba\x10\x0c SET_VAR  b\x02 \x02 \x90\x02 END 
-SCEC SCE239_010 d\x12 SCE_DONE 
-TEXT1 4\x85\x01 TEXT2 $
+INIT \xba\x10\x0c SET_VAR1 b\x02 \x02 \x90\x02 END
+INIT_TEXT SCE239_010 d\x12 SCE_TEXT TEXT1 4\x85\x01 TEXT2 $
  
 ナタネ\n　「光と共に歩め」@
 \n世界の入り口に立って、ゆく。@
@@ -130,18 +116,13 @@ TEXT1 4\x85\x01 TEXT2 $
 世界が決めるのではなく、ただおれが決める。\
 
   
-INIT \xa8\x12\x0c SET_VAR  b\x02 \x02 \x90\x02 END 
-SCEC SCE239_011 r\x13 SCE_DONE 
-TEXT1 8\x85\x01 TEXT2 
+INIT \xa8\x12\x0c SET_VAR1 b\x02 \x02 \x90\x02 END
+INIT_TEXT SCE239_011 r\x13 SCE_TEXT TEXT1 8\x85\x01 TEXT2 
 INIT
  
 拓司\n　「おれは望む－－おれの世界を！」\
 
   
-INIT \xb6\x13\x0c SET_VAR  b\x02 \x02 \x90\x02 END    
-CMD2 StopCD RUNF 0\x14 END   
-INIT \xc8\x0c SET_VAR 
-CMD6 .\\Data\\Script\\Bg.Fob VAR2 f\x14 \x02
-CMD4 BgAutoFadeIn VAR2 \x90\x14 END  b\x02 
-CMD3 TextClose VAR1 \xc0\x14 END 
+INIT \xb6\x13\x0c SET_VAR1 b\x02 \x02 \x90\x02 END NULL APPlY_2 StopCD RUNF 0\x14 END  
+INIT \xc8\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bg.Fob VAR2f\x14 \x02 APPLY_4 BgAutoFadeIn VAR2\x90\x14 END b\x02 APPLY_3 TextClose VAR1 \xc0\x14 END
 END_SCRIPT

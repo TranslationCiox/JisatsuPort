@@ -1,7 +1,6 @@
 START_SCRIPT
 \xb7\x07\x01`B#\x01\xa8\x05
-SCEC SCE207_001 \x06 SCE_DONE 
-TEXT1 \x10S\x01 TEXT2 \xa7
+INIT_TEXT SCE207_001 \x06 SCE_TEXT TEXT1 \x10S\x01 TEXT2 \xa7
  
 拓司\n　「君は、教授はおれにウソを聞かせているという。\pおれをコン\n　　トロールしようとしていると……。\p教授とは何者なんだ？@
 　　なんのために、おれをコントロールしようとしている？」@
@@ -12,17 +11,13 @@ TEXT1 \x10S\x01 TEXT2 \xa7
 拓司\n　「……」\
 
   
-INIT J\x0c SET_VAR 
-CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \x06\x03 
-CMD2 TextOn RUNF 4\x03 END 
-SCEC SCE207_002 P\x03 SCE_DONE 
-TEXT1 \x14S\x01 TEXT2 l
+INIT J\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF \x06\x03 APPlY_2 TextOn RUNF 4\x03 END
+INIT_TEXT SCE207_002 P\x03 SCE_TEXT TEXT1 \x14S\x01 TEXT2 l
  
 ナタネ\n　「あなたの世界は、教授によって完全に破壊された。\p破壊とい\n　　っても物理的な……ビルが壊されたとか人が殺されたとか…\n　　…そういう破壊ではないわ。\p無くなったの。\p完全に消滅した\n　　の。\p教授による侵略は、三次元的な意味では説明できない\n　　……存在と……世界のなりたち自体に関わる破壊行為よ」@
 拓司\n　「……」@
 ナタネ\n　「世界は消滅して……あなただけが生き残った。\p教授はあなた\n　　を恐れている」\
 
   
-INIT \x94\x03\x0c SET_VAR  \x06\x03 \x02 4\x03 END  \x06\x03 
-CMD3 TextClose VAR1 \x8a\x05 END 
+INIT \x94\x03\x0c SET_VAR1 \x06\x03 \x02 4\x03 END \x06\x03 APPLY_3 TextClose VAR1 \x8a\x05 END
 END_SCRIPT

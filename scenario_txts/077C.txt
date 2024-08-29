@@ -1,9 +1,6 @@
 START_SCRIPT
-'\x11\x01`B#\x01@\r
-CMD6 .\\Data\\Script\\Bgm.Fob VAR1 \x06 
-CMD2 StopCD RUNF 0 END 
-SCEC SCE077_001 L SCE_DONE 
-TEXT1 \xf0\x87 TEXT2 ~
+'\x11\x01`B#\x01@\r APPLY_FILE .\\Data\\Script\\Bgm.Fob VAR1 \x06 APPlY_2 StopCD RUNF 0 END
+INIT_TEXT SCE077_001 L SCE_TEXT TEXT1 \xf0\x87 TEXT2 ~
  
 拓司\n　「雲居さんが俺たちには見えないものが見えるというのは…\n　　…信じられないけど……どうやらウソじゃないらしい。@
 　　いままで何度も、雲居さんは『波動』ってやつを感じてき\n　　たし、俺はそれに救われてきた」@
@@ -15,13 +12,9 @@ TEXT1 \xf0\x87 TEXT2 ~
 拓司\n　「俺が行く。\pだから雲居さんは２人をシェルターに連れてい\n　　ってやってくれ」\
 
   
-INIT \x90\x0c SET_VAR 
-CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \xa8\x02 
-CMD2 TextOn RUNF \xd6\x02 END   
-INIT \x08\x01\x0c SET_VAR  \x06 
-CMD2 PlayCD RUNF \x18\x03 END 
-SCEC SCE077_002 4\x03 SCE_DONE 
-TEXT1 \xf4\x87 TEXT2 X
+INIT \x90\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF \xa8\x02 APPlY_2 TextOn RUNF \xd6\x02 END  
+INIT \x08\x01\x0c SET_VAR1 \x06 APPlY_2 PlayCD RUNF \x18\x03 END
+INIT_TEXT SCE077_002 4\x03 SCE_TEXT TEXT1 \xf4\x87 TEXT2 X
  
 早桃\n　「イヤだよ！\p　早桃、やだからね！」@
 拓司\n　「……」@
@@ -33,9 +26,8 @@ TEXT1 \xf4\x87 TEXT2 X
 拓司\n　「紅葉を助けるために、お前たちを危険にさらすわけにはいか\n　　ない」\
 
   
-INIT x\x03\x0c SET_VAR  \xa8\x02 \x02 \xd6\x02 END 
-SCEC SCE077_003 \x12\x05 SCE_DONE 
-TEXT1 \xf8\x87 TEXT2 O
+INIT x\x03\x0c SET_VAR1 \xa8\x02 \x02 \xd6\x02 END
+INIT_TEXT SCE077_003 \x12\x05 SCE_TEXT TEXT1 \xf8\x87 TEXT2 O
  
 早桃\n　「……」@
 拓司\n　「……」@
@@ -45,9 +37,8 @@ TEXT1 \xf8\x87 TEXT2 O
 \n　ぶるぶると震える早桃の肩を、拓司は優しくかき抱いた。\pそれ\n　から肩に担いだカンナを２人に任せ、なたねに尋ねた。\
 
   
-INIT V\x05\x0c SET_VAR  \xa8\x02 \x02 \xd6\x02 END 
-SCEC SCE077_004 \xcc\x06 SCE_DONE 
-TEXT1 \xfc\x87 TEXT2 d
+INIT V\x05\x0c SET_VAR1 \xa8\x02 \x02 \xd6\x02 END
+INIT_TEXT SCE077_004 \xcc\x06 SCE_TEXT TEXT1 \xfc\x87 TEXT2 d
  
 拓司\n　「４階の実験室だな？」@
 なたね\n　「なにが？」@
@@ -59,9 +50,8 @@ TEXT1 \xfc\x87 TEXT2 d
 なたね\n　「ここで虎菱くんを失うのは、地球の戦士たちにとって大きな\n　　痛手。\p哀しいことだわ」\
 
   
-INIT \x10\x07\x0c SET_VAR  \xa8\x02 \x02 \xd6\x02 END 
-SCEC SCE077_005 \xda\x08 SCE_DONE 
-TEXT1 \x88 TEXT2 E
+INIT \x10\x07\x0c SET_VAR1 \xa8\x02 \x02 \xd6\x02 END
+INIT_TEXT SCE077_005 \xda\x08 SCE_TEXT TEXT1 \x88 TEXT2 E
  
 拓司\n　「……死んだら、な」@
 なたね\n　「死ぬわ」@
@@ -71,13 +61,10 @@ TEXT1 \x88 TEXT2 E
 　振り返り振り返り、早桃たち３人の姿が廊下の向こうに消えさ\n　ったのを見送り、拓司はよし、とつぶやいた。\
 
   
-INIT \x1e\t\x0c SET_VAR  \xa8\x02 \x02 \xd6\x02 END  \x06 \x02 0 END   
-INIT <\x0c SET_VAR 
-CMD7 .\\Data\\Script\\TextFunc.fob RUNF \xa0\n 
-CMD3 WaitTime VAR2 \xce\n END   
-INIT \t\x01\x0c SET_VAR  \x06 \x02 \x18\x03 END 
-SCEC SCE077_006 "\x0b SCE_DONE 
-TEXT1 \x04\x88 TEXT2 B
+INIT \x1e\t\x0c SET_VAR1 \xa8\x02 \x02 \xd6\x02 END \x06 \x02 0 END  
+INIT <\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.fob RUNF \xa0\n APPLY_3 WaitTime VAR2\xce\n END  
+INIT \t\x01\x0c SET_VAR1 \x06 \x02 \x18\x03 END
+INIT_TEXT SCE077_006 "\x0b SCE_TEXT TEXT1 \x04\x88 TEXT2 B
  
 　渡り廊下は静まり返っている。@
 　見渡す限り、なにもない。@
@@ -85,13 +72,12 @@ TEXT1 \x04\x88 TEXT2 B
 　波動というのがなんなのかがわからない以上、一気に走り抜け\n　るべきなのか、あるいは静かに前進すべきなのか、それすら判\n　断のしようがない。\
 
   
-INIT f\x0b\x0c SET_VAR  \xa8\x02 \x02 \xd6\x02 END \x03
+INIT f\x0b\x0c SET_VAR1 \xa8\x02 \x02 \xd6\x02 END\x03
 INIT
 CHOICE
 一気に走り抜ける\n慎重に歩いてゆく\n\l0,2,
 ENDCHOICE
 
   
-INIT \xa8\x0c\x0c SET_VAR  \xa8\x02 \x02 \xd6\x02 END  \xa8\x02 
-CMD3 TextClose VAR1 "\r END 
+INIT \xa8\x0c\x0c SET_VAR1 \xa8\x02 \x02 \xd6\x02 END \xa8\x02 APPLY_3 TextClose VAR1 "\r END
 END_SCRIPT

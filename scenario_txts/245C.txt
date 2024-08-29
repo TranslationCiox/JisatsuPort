@@ -1,7 +1,6 @@
 START_SCRIPT
 Q!\x01`B#\x01r\x1b
-SCEC SCE245_001 \x06 SCE_DONE 
-TEXT1 p\x8e\x01 TEXT2 \xb9
+INIT_TEXT SCE245_001 \x06 SCE_TEXT TEXT1 p\x8e\x01 TEXT2 \xb9
  
 拓司\n　「走れッ！」@
 \nいうが早いか、すでに拓司は地を蹴っている。@
@@ -18,11 +17,8 @@ TEXT1 p\x8e\x01 TEXT2 \xb9
 しかし、どこから襲ってくるかわからないむきだしの死に身を晒\nすより、どんなに薄かろうとも鎧をまとっている方がマシだった。\n\
 
   
-INIT J\x0c SET_VAR 
-CMD7 .\\Data\\Script\\TextFunc.Fob RUNF N\x03 
-CMD2 TextOn RUNF |\x03 END 
-SCEC SCE245_002 \x98\x03 SCE_DONE 
-TEXT1 t\x8e\x01 TEXT2 h
+INIT J\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF N\x03 APPlY_2 TextOn RUNF |\x03 END
+INIT_TEXT SCE245_002 \x98\x03 SCE_TEXT TEXT1 t\x8e\x01 TEXT2 h
  
 地鳴りは徐々に大きくなっていく。@
 低く、重く……それは世界の終末を確信させるに十分な不吉さを\n備えていた。@
@@ -32,9 +28,8 @@ TEXT1 t\x8e\x01 TEXT2 h
 亀裂は、あたかも生命を持っているかのように……雪崩落ちる雷\nのように……窓ガラスを走り……\
 
   
-INIT \xdc\x03\x0c SET_VAR  N\x03 \x02 |\x03 END 
-SCEC SCE245_003 \xb6\x05 SCE_DONE 
-TEXT1 x\x8e\x01 TEXT2 \x8c
+INIT \xdc\x03\x0c SET_VAR1 N\x03 \x02 |\x03 END
+INIT_TEXT SCE245_003 \xb6\x05 SCE_TEXT TEXT1 x\x8e\x01 TEXT2 \x8c
  
 ざあっ！@
 \n足の裏から頭のてっぺんへ。@
@@ -46,9 +41,8 @@ TEXT1 x\x8e\x01 TEXT2 \x8c
 /*▲↑停止まで待つ*/\a3,0,0,0,\a4,0,0,0,\n拓司\n　「！」\
 
   
-INIT \xfa\x05\x0c SET_VAR  N\x03 \x02 |\x03 END 
-SCEC SCE245_004 d\x08 SCE_DONE 
-TEXT1 |\x8e\x01 TEXT2 k
+INIT \xfa\x05\x0c SET_VAR1 N\x03 \x02 |\x03 END
+INIT_TEXT SCE245_004 d\x08 SCE_TEXT TEXT1 |\x8e\x01 TEXT2 k
  
 蜥蜴の悲鳴だった。@
 それまで聞いたこともないくらい大きい蜥蜴の悲鳴だった！@
@@ -59,9 +53,8 @@ TEXT1 |\x8e\x01 TEXT2 k
 頭そのものが爆発しないのが不思議だった。\
 
   
-INIT \xa8\x08\x0c SET_VAR  N\x03 \x02 |\x03 END 
-SCEC SCE245_005 \x8e\n SCE_DONE 
-TEXT1 \x80\x8e\x01 TEXT2 }
+INIT \xa8\x08\x0c SET_VAR1 N\x03 \x02 |\x03 END
+INIT_TEXT SCE245_005 \x8e\n SCE_TEXT TEXT1 \x80\x8e\x01 TEXT2 }
  
 拓司\n　「ああああああああああああ！」@
 \n拓司は耳をふさいでうずくまった。@
@@ -73,10 +66,9 @@ TEXT1 \x80\x8e\x01 TEXT2 }
 白目をむき、耳から、鼻から、どす黒い血があふれ出している。\
 
   
-INIT \xd2\n\x0c SET_VAR  N\x03 \x02 |\x03 END 
-SCEC SCE245_006 
-INIT SCE_DONE 
-TEXT1 \x84\x8e\x01 TEXT2 \x99
+INIT \xd2\n\x0c SET_VAR1 N\x03 \x02 |\x03 END
+INIT_TEXT SCE245_006 
+INIT SCE_TEXT TEXT1 \x84\x8e\x01 TEXT2 \x99
  
 拓司\n　「サ・モ・モ・オオオオオ・オオオオ！」@
 \n拓司は叫んだ。@
@@ -92,9 +84,8 @@ TEXT1 \x84\x8e\x01 TEXT2 \x99
 あるいは、解決されるべきものなのだ。\
 
   
-INIT D\r\x0c SET_VAR  N\x03 \x02 |\x03 END 
-SCEC SCE245_007 \xe2\x0f SCE_DONE 
-TEXT1 \x88\x8e\x01 TEXT2 9
+INIT D\r\x0c SET_VAR1 N\x03 \x02 |\x03 END
+INIT_TEXT SCE245_007 \xe2\x0f SCE_TEXT TEXT1 \x88\x8e\x01 TEXT2 9
  
 数メートル向こうに、早桃の姿が見える。@
 拓司は一歩踏み出した。@
@@ -102,9 +93,8 @@ TEXT1 \x88\x8e\x01 TEXT2 9
 そうして一歩……一歩……忘れてしまった歩き方を思い出すかの\nように、拓司はゆっくりと歩き始めた。\
 
   
-INIT &\x10\x0c SET_VAR  N\x03 \x02 |\x03 END 
-SCEC SCE245_008 D\x11 SCE_DONE 
-TEXT1 \x8c\x8e\x01 TEXT2 \xa1
+INIT &\x10\x0c SET_VAR1 N\x03 \x02 |\x03 END
+INIT_TEXT SCE245_008 D\x11 SCE_TEXT TEXT1 \x8c\x8e\x01 TEXT2 \xa1
  
 /*▲SE33　一回再生（再生終了待たず先へ）*/\a2,0,33,0,\a6,0,0,0,キイイイイイイイイイイイイイイイイイイイイイイイイイイイ！@
 /*▲↑　再生終了を待つ*/\a3,0,0,0,\a4,0,0,0,いつの間にか、鼻血が流れ出している。@
@@ -113,9 +103,8 @@ TEXT1 \x8c\x8e\x01 TEXT2 \xa1
 /*▲↑　再生終了を待つ*/\a3,0,0,0,\a4,0,0,0,\nここから俺は始まるのだ。@
 \n/*▲SE33　一回再生（再生終了待たず先へ）*/\a2,0,33,0,\a6,0,0,0,キイイイイイイイイイイイイイイイイイイイイイイイイイイイ！\w\n/*▲↑　再生終了を待つ*/\a3,0,0,0,\a4,0,0,0,\z
   
-INIT \x88\x11\x0c SET_VAR  N\x03 \x02 |\x03 END 
-SCEC SCE245_009 F\x14 SCE_DONE 
-TEXT1 \x90\x8e\x01 TEXT2 I
+INIT \x88\x11\x0c SET_VAR1 N\x03 \x02 |\x03 END
+INIT_TEXT SCE245_009 F\x14 SCE_TEXT TEXT1 \x90\x8e\x01 TEXT2 I
  
 こうして旅が始まったいま、俺にはいまや目的があるのだ。@
 何かから逃げているのではなく、何かに向かっているのだ。@
@@ -125,12 +114,9 @@ TEXT1 \x90\x8e\x01 TEXT2 I
 動くのだ。\
 
   
-INIT \x8a\x14\x0c SET_VAR  N\x03 \x02 |\x03 END   
-INIT 7\x0c SET_VAR 
-CMD6 .\\Data\\Script\\Bg.Fob VAR2 \x02\x16 \x02
-CMD4 BgAutoFadeIn VAR2 ,\x16 END 
-SCEC SCE245_010 P\x16 SCE_DONE 
-TEXT1 \x94\x8e\x01 TEXT2 w
+INIT \x8a\x14\x0c SET_VAR1 N\x03 \x02 |\x03 END  
+INIT 7\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bg.Fob VAR2\x02\x16 \x02 APPLY_4 BgAutoFadeIn VAR2,\x16 END
+INIT_TEXT SCE245_010 P\x16 SCE_TEXT TEXT1 \x94\x8e\x01 TEXT2 w
  
 拓司\n　「早桃！」@
 \n早桃は動かない。@
@@ -145,10 +131,9 @@ TEXT1 \x94\x8e\x01 TEXT2 w
 　　ワハ、ワハ、ワハハハハハハハハハハ！」\
 
   
-INIT \x94\x16\x0c SET_VAR  N\x03 \x02 |\x03 END   
-INIT \xc9\x0c SET_VAR  \x02\x16 \x02 ,\x16 END 
-SCEC SCE245_011 \xde\x18 SCE_DONE 
-TEXT1 \x98\x8e\x01 TEXT2 L
+INIT \x94\x16\x0c SET_VAR1 N\x03 \x02 |\x03 END  
+INIT \xc9\x0c SET_VAR1 \x02\x16 \x02 ,\x16 END
+INIT_TEXT SCE245_011 \xde\x18 SCE_TEXT TEXT1 \x98\x8e\x01 TEXT2 L
  
 ふいに目の前が真っ白になった。@
 すべての音が聞こえなくなった。@
@@ -160,11 +145,7 @@ TEXT1 \x98\x8e\x01 TEXT2 L
 勝ったんだ、と。\
 
   
-INIT "\x19\x0c SET_VAR  N\x03 \x02 |\x03 END   
-INIT \x02\x0c SET_VAR 
-CMD6 .\\Data\\Script\\Bgm.Fob VAR1 \xa6\x1a 
-CMD2 SeStop RUNF \xd0\x1a END  \xa6\x1a 
-CMD2 StopCD RUNF \xf8\x1a END   
-INIT \xc8\x0c SET_VAR  \x02\x16 \x02 ,\x16 END  N\x03 
-CMD3 TextClose VAR1 T\x1b END 
+INIT "\x19\x0c SET_VAR1 N\x03 \x02 |\x03 END  
+INIT \x02\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bgm.Fob VAR1 \xa6\x1a APPlY_2 SeStop RUNF \xd0\x1a END \xa6\x1a APPlY_2 StopCD RUNF \xf8\x1a END  
+INIT \xc8\x0c SET_VAR1 \x02\x16 \x02 ,\x16 END N\x03 APPLY_3 TextClose VAR1 T\x1b END
 END_SCRIPT

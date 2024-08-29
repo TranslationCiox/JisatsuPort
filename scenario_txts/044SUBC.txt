@@ -1,10 +1,7 @@
 START_SCRIPT
 \xb6(\x01`B#\x01F"  
-INIT \x05\x01\x0c SET_VAR 
-CMD6 .\\Data\\Script\\Bgm.Fob VAR1   
-CMD2 PlayCD RUNF J END 
-SCEC SCE044_018 f SCE_DONE 
-TEXT1 \xa4T TEXT2 p
+INIT \x05\x01\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bgm.Fob VAR1   APPlY_2 PlayCD RUNF J END
+INIT_TEXT SCE044_018 f SCE_TEXT TEXT1 \xa4T TEXT2 p
  
 慌てて錦城の顔を見るが、そこには、はっとするような厳しい表\n情があるだけだ。@
 黙っていると、錦城の手がゆっくりと腿の上の方へすべってくる。\n\pぞくぞくと、拓司の背中を電気が走った。@
@@ -16,11 +13,8 @@ TEXT1 \xa4T TEXT2 p
 指先がつい、と動いて、太股のあわせめに潜り込む。@
 睾丸を下から撫でさする。\w\z
   
-INIT \xaa\x0c SET_VAR 
-CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \x8a\x02 
-CMD2 TextOn RUNF \xb8\x02 END 
-SCEC SCE044_019 \xd4\x02 SCE_DONE 
-TEXT1 \xa8T TEXT2 l
+INIT \xaa\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF \x8a\x02 APPlY_2 TextOn RUNF \xb8\x02 END
+INIT_TEXT SCE044_019 \xd4\x02 SCE_TEXT TEXT1 \xa8T TEXT2 l
  
 錦城\n　「……これはなに？　勃起してるじゃない。\p先生の\n　　こと、いやらしい対象としてみてるのね？」@
 \nカッと身体のなかが熱くなるのがわかった。@
@@ -31,9 +25,8 @@ TEXT1 \xa8T TEXT2 l
 拓司\n　「……」@
 錦城\n　「私は、気持ちいいかどうか、聞いてるのよ？」\w\z
   
-INIT \x18\x03\x0c SET_VAR  \x8a\x02 \x02 \xb8\x02 END 
-SCEC SCE044_020 \x02\x05 SCE_DONE 
-TEXT1 \xacT TEXT2 e
+INIT \x18\x03\x0c SET_VAR1 \x8a\x02 \x02 \xb8\x02 END
+INIT_TEXT SCE044_020 \x02\x05 SCE_TEXT TEXT1 \xacT TEXT2 e
  
 拓司はうめいた。@
 男子学生を誘惑する淫乱な女教師。@
@@ -44,9 +37,8 @@ TEXT1 \xacT TEXT2 e
 \n拓司\n　「気持ちいいです」@
 \n錦城は拓司の返事に満足そうに笑った。\w\z
   
-INIT F\x05\x0c SET_VAR  \x8a\x02 \x02 \xb8\x02 END 
-SCEC SCE044_021 \x14\x07 SCE_DONE 
-TEXT1 \xb0T TEXT2 R
+INIT F\x05\x0c SET_VAR1 \x8a\x02 \x02 \xb8\x02 END
+INIT_TEXT SCE044_021 \x14\x07 SCE_TEXT TEXT1 \xb0T TEXT2 R
  
 錦城\n　「そう。よかったわ、喜んでもらえて。ねえ、どうしてほしい？\n　　\pこのまま続けたほうがいいかしら？@
 　　それとも、私にも、してみたい？」@
@@ -56,9 +48,8 @@ TEXT1 \xb0T TEXT2 R
 錦城\n　「そうねえ。それじゃあ、先生の前でしてみせて」@
 拓司\n　「え？」\w\z
   
-INIT X\x07\x0c SET_VAR  \x8a\x02 \x02 \xb8\x02 END 
-SCEC SCE044_022 \xda\x08 SCE_DONE 
-TEXT1 \xb4T TEXT2 ~
+INIT X\x07\x0c SET_VAR1 \x8a\x02 \x02 \xb8\x02 END
+INIT_TEXT SCE044_022 \xda\x08 SCE_TEXT TEXT1 \xb4T TEXT2 ~
  
 錦城の顔が、途端に険しく変わった。@
 手の動きをピタリと止め、汚い物を見るような眼で拓司をにらみ\nつける。@
@@ -69,35 +60,31 @@ TEXT1 \xb4T TEXT2 ~
 一瞬の躊躇を経て、拓司は机から降りて立ち、チャックをおろし\nた。@
 ペ○スをズボンの中から引きずり出し、錦城の前に見せつけるよ\nうに晒す。\w\z
   
-INIT \x1e\t\x0c SET_VAR  \x8a\x02 \x02 \xb8\x02 END 
-SCEC SCE044_023 P\x0b SCE_DONE 
-TEXT1 \xb8T TEXT2 =
+INIT \x1e\t\x0c SET_VAR1 \x8a\x02 \x02 \xb8\x02 END
+INIT_TEXT SCE044_023 P\x0b SCE_TEXT TEXT1 \xb8T TEXT2 =
  
 －－妄想の世界でできることが、どうしてここでできないはずが\nあるんだ？@
 \n錦城は眼を細めて、反り返った若いペ○スを観察している。@
 \n錦城\n　「立派なのね、虎菱くん。素敵よ。\pさあ、先生のこと見なが\n　　ら、自分でして見せて？　ね？」\w\z
   
-INIT \x94\x0b\x0c SET_VAR  \x8a\x02 \x02 \xb8\x02 END 
-SCEC SCE044_024 \xc2\x0c SCE_DONE 
-TEXT1 \xbcT TEXT2 ?
+INIT \x94\x0b\x0c SET_VAR1 \x8a\x02 \x02 \xb8\x02 END
+INIT_TEXT SCE044_024 \xc2\x0c SCE_TEXT TEXT1 \xbcT TEXT2 ?
  
 拓司はペ○スに右手を被せて、ゆっくりと上下にしごき始めた。@
 オナニーを錦城に見られているという状況が、異様な\n興奮を生んでいる。@
 早くも先端は、透明の液をだらしなく吐き出している。@
 ペ○スに視線を貼り付かせたまま、錦城は腕を組んで首を傾げ\w\z
   
-INIT \x06\r\x0c SET_VAR  \x8a\x02 \x02 \xb8\x02 END 
-SCEC SCE044_025 <\x0e SCE_DONE 
-TEXT1 \xc0T TEXT2 @
+INIT \x06\r\x0c SET_VAR1 \x8a\x02 \x02 \xb8\x02 END
+INIT_TEXT SCE044_025 <\x0e SCE_TEXT TEXT1 \xc0T TEXT2 @
  
 錦城\n　「そんなにゆっくりじゃ、いけないでしょう？@
 　　もっと本気でして見せて？\p　それとも先生も少し協力した\n　　ほうがいいのかしら？」@
 拓司\n　「……は、はい」@
 錦城\n　「そう？　それじゃあ、先生の脚、好きなように使っていいわ\n　　よ？」\w\z
   
-INIT \x80\x0e\x0c SET_VAR  \x8a\x02 \x02 \xb8\x02 END 
-SCEC SCE044_026 \xba\x0f SCE_DONE 
-TEXT1 \xc4T TEXT2 T
+INIT \x80\x0e\x0c SET_VAR1 \x8a\x02 \x02 \xb8\x02 END
+INIT_TEXT SCE044_026 \xba\x0f SCE_TEXT TEXT1 \xc4T TEXT2 T
  
 錦城は、何度か脚を振ってヒールを床に落とした。@
 それから、長く美しい脚をすっと、拓司に向かって延ばす。@
@@ -106,9 +93,8 @@ TEXT1 \xc4T TEXT2 T
 この脚を使ってどのようにオナニーをすればいいのだろうか？@
 救いを求める拓司の視線を受けて、錦城はにこりと微笑んだ。\w\z
   
-INIT \xfe\x0f\x0c SET_VAR  \x8a\x02 \x02 \xb8\x02 END 
-SCEC SCE044_027 \x88\x11 SCE_DONE 
-TEXT1 \xc8T TEXT2 \x8b
+INIT \xfe\x0f\x0c SET_VAR1 \x8a\x02 \x02 \xb8\x02 END
+INIT_TEXT SCE044_027 \x88\x11 SCE_TEXT TEXT1 \xc8T TEXT2 \x8b
  
 錦城\n　「あなたが決めるのよ。\p先生の脚を使ってどんなことがした\n　　いか……さあ、どうするの？\p　それとも私の脚じゃ、オナ\n　　ニーもできない？」@
 /*■HCG12　表示*/\a7,-2,-2,0,\a0,83,2,0,\a6,-2,0,0,拓司は、錦城の足首と膝の裏に手を添えて、脚を捧げ持った。@
@@ -120,9 +106,8 @@ TEXT1 \xc8T TEXT2 \x8b
 ただ、それを命じはしなかった。拓司が自ら決めたのだ。@
 錦城はそれを望んでいたのだ。\w\z
   
-INIT \xcc\x11\x0c SET_VAR  \x8a\x02 \x02 \xb8\x02 END 
-SCEC SCE044_028 2\x14 SCE_DONE 
-TEXT1 \xccT TEXT2 p
+INIT \xcc\x11\x0c SET_VAR1 \x8a\x02 \x02 \xb8\x02 END
+INIT_TEXT SCE044_028 2\x14 SCE_TEXT TEXT1 \xccT TEXT2 p
  
 錦城\n　「ふうん……あなたは先生に、おち○ちんを踏みつけにして欲\n　　しいのね？\p　……まったく、どこでそんな変態性欲を覚え\n　　ちゃったのかしら？@
 　　こんなにかちかちにして……いやらしい子」@
@@ -130,9 +115,8 @@ TEXT1 \xccT TEXT2 p
 反り返ったペ○スを、足の裏と拓司の腹でサンドイッチにして、\nぐりぐりと踏みにじる。@
 拓司は足首を両手で捧げ持ったまま、されるがままに震えている。\n\p屈辱的ではあったが、それがかえって劣情を加速させる。\w\z
   
-INIT v\x14\x0c SET_VAR  \x8a\x02 \x02 \xb8\x02 END 
-SCEC SCE044_029 p\x16 SCE_DONE 
-TEXT1 \xd0T TEXT2 Q
+INIT v\x14\x0c SET_VAR1 \x8a\x02 \x02 \xb8\x02 END
+INIT_TEXT SCE044_029 p\x16 SCE_TEXT TEXT1 \xd0T TEXT2 Q
  
 錦城\n　「ねえ、先生の脚、きれい？」@
 拓司\n　「きれい……です……」@
@@ -140,9 +124,8 @@ TEXT1 \xd0T TEXT2 Q
 拓司\n　「は……はい」@
 錦城\n　「でももう、足が疲れちゃったわ。\pほら、こうやって指で挟ん\n　　であげるから……\pあとは自分でしごいて出して見せて」\w\z
   
-INIT \xb4\x16\x0c SET_VAR  \x8a\x02 \x02 \xb8\x02 END 
-SCEC SCE044_030 2\x18 SCE_DONE 
-TEXT1 \xd4T TEXT2 \x9e
+INIT \xb4\x16\x0c SET_VAR1 \x8a\x02 \x02 \xb8\x02 END
+INIT_TEXT SCE044_030 2\x18 SCE_TEXT TEXT1 \xd4T TEXT2 \x9e
  
 錦城は器用に脚の指を広げて、拓司のペ○スをはさみつけた。@
 拓司はその指の上にさらに自分の指を重ね、上下に動かした。@
@@ -156,18 +139,16 @@ TEXT1 \xd4T TEXT2 \x9e
 拓司は錦城の脚から手を離して、よろりと後ろの机に腰を下ろし\nた。\p快感が、腰骨を砕いてしまったかのようだ。@
 脚に力が入らない。\w\z
   
-INIT v\x18\x0c SET_VAR  \x8a\x02 \x02 \xb8\x02 END 
-SCEC SCE044_031 (\x1b SCE_DONE 
-TEXT1 \xd8T TEXT2 4
+INIT v\x18\x0c SET_VAR1 \x8a\x02 \x02 \xb8\x02 END
+INIT_TEXT SCE044_031 (\x1b SCE_TEXT TEXT1 \xd8T TEXT2 4
  
 錦城がつい、と机から立ち上がった。@
 そして拓司の足下にしゃがみこみ、精液まみれのペ○スをハンカ\nチで拭い始めた。@
 拓司はやや意表を突かれた。@
 先ほどまでの高圧的な態度とはまるで正反対の優しさだ。\w\z
   
-INIT l\x1b\x0c SET_VAR  \x8a\x02 \x02 \xb8\x02 END 
-SCEC SCE044_032 v\x1c SCE_DONE 
-TEXT1 \xdcT TEXT2 h
+INIT l\x1b\x0c SET_VAR1 \x8a\x02 \x02 \xb8\x02 END
+INIT_TEXT SCE044_032 v\x1c SCE_TEXT TEXT1 \xdcT TEXT2 h
  
 錦城\n　「ありがとう、虎菱くん。\p恥ずかしかったでしょう？@
 　　でも、あなたが先生のこと、女として認めてくれているって\n　　ことがすごくわかって嬉しかったわ」@
@@ -175,27 +156,21 @@ TEXT1 \xdcT TEXT2 h
 錦城\n　「いいの、気にしないで。\p素敵なものを見せてもらった記念\n　　に、虎菱くんの精液をつけたまま、今日は一日過ごすわ……\n　　本当にありがとう。@
 　　また……今度、いろんなことしましょうね？」\w\z
   
-INIT \xba\x1c\x0c SET_VAR  \x8a\x02 \x02 \xb8\x02 END 
-SCEC SCE044_033 \x94\x1e SCE_DONE 
-TEXT1 \xe0T TEXT2 C
+INIT \xba\x1c\x0c SET_VAR1 \x8a\x02 \x02 \xb8\x02 END
+INIT_TEXT SCE044_033 \x94\x1e SCE_TEXT TEXT1 \xe0T TEXT2 C
  
 錦城は拓司の両頬を包むように手で固定すると、軽くキスをした。\n\p柔らかい香水の匂いと、真っ赤な唇の色が、拓司の頭の中で弾け\nた。@
 唇と唇がさっと触れる程度のものだったにも関わらず、これまで\nしたことのあるキスの中でもっとも衝撃的だった。@
 淫猥なキスだった。\w\z
   
-INIT \xd8\x1e\x0c SET_VAR  \x8a\x02 \x02 \xb8\x02 END   
-INIT \xc8\x0c SET_VAR 
-CMD6 .\\Data\\Script\\Bg.Fob VAR2 8  \x02
-CMD4 BgAutoFadeIn VAR2 b  END    
-CMD2 StopCD RUNF \x92  END 
-SCEC SCE044_034 \xae  SCE_DONE 
-TEXT1 \xe4T TEXT2 <
+INIT \xd8\x1e\x0c SET_VAR1 \x8a\x02 \x02 \xb8\x02 END  
+INIT \xc8\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bg.Fob VAR28  \x02 APPLY_4 BgAutoFadeIn VAR2b  END NULL APPlY_2 StopCD RUNF \x92  END
+INIT_TEXT SCE044_034 \xae  SCE_TEXT TEXT1 \xe4T TEXT2 <
  
 実験室を出て鍵を閉め、二人は廊下で別れた。@
 錦城は別れ際にもニコリと優しい笑みを……@
 共犯者のあいだでのみ交わされる親密な笑みを送った。@
 拓司は呆然とそんな錦城を見送って、それから魂が抜けたような\n足取りで、屋上に向かった。\w\z
   
-INIT \xf2 \x0c SET_VAR  \x8a\x02 \x02 \xb8\x02 END  \x8a\x02 
-CMD3 TextClose VAR1 (" END 
+INIT \xf2 \x0c SET_VAR1 \x8a\x02 \x02 \xb8\x02 END \x8a\x02 APPLY_3 TextClose VAR1 (" END
 END_SCRIPT

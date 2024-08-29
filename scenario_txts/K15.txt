@@ -1,17 +1,11 @@
 START_SCRIPT
 )\x02\x01\xb0\x054\x01\xa4\x01
-SCEC SCEK15_001 \x06 SCE_DONE 
-TEXT1 \xd0\xb0\x01 TEXT2  
+INIT_TEXT SCEK15_001 \x06 SCE_TEXT TEXT1 \xd0\xb0\x01 TEXT2  
  
 お話はこれでおしまい。@
 ゆき？@
 １週間後、ゆきは風邪薬を２００錠のんで、自殺した。@
 おしまい。これで、おしまい。\w\z
   
-INIT J\x0c SET_VAR 
-CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \xea 
-CMD2 TextOn RUNF \x18\x01 END 
-CMD6 .\\Data\\Script\\Bgm.Fob VAR1 4\x01 
-CMD2 StopCD RUNF ^\x01 END  \xea 
-CMD3 TextClose VAR1 \x86\x01 END 
+INIT J\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF \xea APPlY_2 TextOn RUNF \x18\x01 END APPLY_FILE .\\Data\\Script\\Bgm.Fob VAR1 4\x01 APPlY_2 StopCD RUNF ^\x01 END \xea APPLY_3 TextClose VAR1 \x86\x01 END
 END_SCRIPT

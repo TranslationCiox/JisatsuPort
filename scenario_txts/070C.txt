@@ -1,7 +1,6 @@
 START_SCRIPT
 "\x04\x01\xa4\t3\x01\xe0\x02
-SCEC SCE070_001 \x06 SCE_DONE 
-TEXT1 } TEXT2 [
+INIT_TEXT SCE070_001 \x06 SCE_TEXT TEXT1 } TEXT2 [
  
 なたね\n　「駄目！」@
 \nなたねが鋭く静止した。@
@@ -11,14 +10,11 @@ TEXT1 } TEXT2 [
 　　ハドウなんて、ない。\pそんなの全部、この人の空想なんだか\n　　ら！」\
 
   
-INIT J\x0c SET_VAR 
-CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \xd6\x01 
-CMD2 TextOn RUNF \x04\x02 END \x03\x17
+INIT J\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF \xd6\x01 APPlY_2 TextOn RUNF \x04\x02 END\x03\x17
 CHOICE
 なたねの警告を受け入れて別のコースを選ぶ\n早桃の忠告を受け入れて中庭に出る\n\l0,2,
 ENDCHOICE
 
   
-INIT  \x02\x0c SET_VAR  \xd6\x01 \x02 \x04\x02 END  \xd6\x01 
-CMD3 TextClose VAR1 \xc2\x02 END 
+INIT  \x02\x0c SET_VAR1 \xd6\x01 \x02 \x04\x02 END \xd6\x01 APPLY_3 TextClose VAR1 \xc2\x02 END
 END_SCRIPT

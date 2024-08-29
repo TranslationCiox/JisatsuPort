@@ -1,7 +1,6 @@
 START_SCRIPT
 \x19\x04\x01\xa4\t3\x01>\x03
-SCEC SCE213_001 \x06 SCE_DONE 
-TEXT1 p\\\x01 TEXT2 \x98
+INIT_TEXT SCE213_001 \x06 SCE_TEXT TEXT1 p\\\x01 TEXT2 \x98
  
 拓司はガバと身を起こした。@
 /*▲BGM　Track08　再生*/\a2,-1,8,1,窓から、朝日が射し込んでいる。@
@@ -14,8 +13,5 @@ TEXT1 p\\\x01 TEXT2 \x98
 \n－－危ないところだった。\pおれはいま、妄想の深みから生還した\nのだ。\pやはり、最終的に戻ってくるのは……世界の中心は、ここ\nなのだ。\p『白い部屋の世界』は、夢だった。\p教授も、ナタネも、\n青い鳥も、パイプベッドも、換気ファンも、発狂した自分も、全\n部実在しない、想像の産物だったのだ。\
 
   
-INIT J\x0c SET_VAR 
-CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \xca\x02 
-CMD2 TextOn RUNF \xf8\x02 END  \xca\x02 
-CMD3 TextClose VAR1  \x03 END 
+INIT J\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF \xca\x02 APPlY_2 TextOn RUNF \xf8\x02 END \xca\x02 APPLY_3 TextClose VAR1  \x03 END
 END_SCRIPT

@@ -1,7 +1,6 @@
 START_SCRIPT
 <\x10\x01`B#\x01>\r
-SCEC SCE055_001 \x06 SCE_DONE 
-TEXT1 \x90e TEXT2 \x98
+INIT_TEXT SCE055_001 \x06 SCE_TEXT TEXT1 \x90e TEXT2 \x98
  
 　拓司は胸のムカツキを必死に押さえた。@
 　自殺波動などというものが信じられないうえに、なたねが『前\n兆』を察知できるなどという話は初耳だ。\pでたらめだ。\pなたねの\n話は、なにもかもが常軌を逸している。\pその場その場の思いつき\nで、ものをいっているとしか思えない。@
@@ -12,11 +11,8 @@ TEXT1 \x90e TEXT2 \x98
 　小声で、解説をはじめる。\
 
   
-INIT J\x0c SET_VAR 
-CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \xca\x02 
-CMD2 TextOn RUNF \xf8\x02 END 
-SCEC SCE055_002 \x14\x03 SCE_DONE 
-TEXT1 \x94e TEXT2 \xcd
+INIT J\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF \xca\x02 APPlY_2 TextOn RUNF \xf8\x02 END
+INIT_TEXT SCE055_002 \x14\x03 SCE_TEXT TEXT1 \x94e TEXT2 \xcd
  
 なたね\n　「自殺っていうのは、自分がおかれている状況への絶望とかあ\n　　きらめとか、そんな悲しみの感情から生まれるでしょう？@
 　　でも悲しみは、簡単に怒りへと変化する……。\p『どうしてわ\n　　たしばっかり』『そもそもこんなになってしまったのは自分\n　　のせいじゃない』『納得いかない』……そういった怒りの感\n　　情は、他人へと転嫁される。\p誰だって、自分を責めるより他\n　　人を責めていた方がラクだから。\pたとえば、あなたがいま\n　　私に対してイライラしているのと一緒。\pくすくす……」@
@@ -25,9 +21,8 @@ TEXT1 \x94e TEXT2 \xcd
 拓司\n　「……」\
 
   
-INIT X\x03\x0c SET_VAR  \xca\x02 \x02 \xf8\x02 END 
-SCEC SCE055_003 \xc6\x06 SCE_DONE 
-TEXT1 \x98e TEXT2 \x80
+INIT X\x03\x0c SET_VAR1 \xca\x02 \x02 \xf8\x02 END
+INIT_TEXT SCE055_003 \xc6\x06 SCE_TEXT TEXT1 \x98e TEXT2 \x80
  
 なたね\n　「……義妹さん、もともといじめられていたとか、そういうの\n　　あった？」@
 拓司\n　「もういい！\p　そんな話はどうでもいい！\p　五分待つと何があ\n　　るっていうんだ！」@
@@ -39,9 +34,8 @@ TEXT1 \x98e TEXT2 \x80
 \n早桃\n　「怖い……怖い……」\
 
   
-INIT \n\x07\x0c SET_VAR  \xca\x02 \x02 \xf8\x02 END 
-SCEC SCE055_004 D\t SCE_DONE 
-TEXT1 \x9ce TEXT2 t
+INIT \n\x07\x0c SET_VAR1 \xca\x02 \x02 \xf8\x02 END
+INIT_TEXT SCE055_004 D\t SCE_TEXT TEXT1 \x9ce TEXT2 t
  
 \nその様子をひとり静かに見守っていた男子学生が、大声でいった。\n@
 学生\n　「みんな、静かにしろ！」@
@@ -51,14 +45,12 @@ TEXT1 \x9ce TEXT2 t
 \n学生\n　「そこでだ！\p　俺たちが背中を押してやろうと思う！\p　もう生\n　　きていてもしょうがないと思えるくらいのことを、虎菱早桃\n　　にしてやりたいと思う！」\
 
   
-INIT \x88\t\x0c SET_VAR  \xca\x02 \x02 \xf8\x02 END 
-SCEC SCE055_005 \x92\x0b SCE_DONE 
-TEXT1 \x9ce TEXT2 A
+INIT \x88\t\x0c SET_VAR1 \xca\x02 \x02 \xf8\x02 END
+INIT_TEXT SCE055_005 \x92\x0b SCE_TEXT TEXT1 \x9ce TEXT2 A
  
 \n犯せえ！\p　という声が上がった。\pしかし男子学生はそれを片手で\n軽く制した。@
 \n学生\n　「男子がこれだけの人数いると、さすがに全員やるのは無理だ\n　　ろ？\p　それに、こんなウザキャラに、おれらのチ○ポなんか\n　　もったいねえよ。\pそこでだ……！」\
 
   
-INIT \xd6\x0b\x0c SET_VAR  \xca\x02 \x02 \xf8\x02 END  \xca\x02 
-CMD3 TextClose VAR1  \r END 
+INIT \xd6\x0b\x0c SET_VAR1 \xca\x02 \x02 \xf8\x02 END \xca\x02 APPLY_3 TextClose VAR1  \r END
 END_SCRIPT

@@ -1,7 +1,6 @@
 START_SCRIPT
 "\x06\x01\xa4\t3\x01\x18\x05
-SCEC SCE015_001 \x06 SCE_DONE 
-TEXT1 \x10' TEXT2 \xa8
+INIT_TEXT SCE015_001 \x06 SCE_TEXT TEXT1 \x10' TEXT2 \xa8
  
 紅葉\n　「失礼ね、あるわよ！　私はアンタみたいにゴロゴロ過ごしてな\n　　いんだから、アンタよりよっぽどバテバテなの！　バイトだっ\n　　てやってるし、来週はライブに行くし、受験勉強だってそこそ\n　　こ……まあ、一応……ええと……とにかく夏バテしてるわよ！\n　　でも、それを他人にわからせないようにしてるっていうのが、\n　　私のすごいところなわけなのよ」@
 拓司\n　「ウソつけ。ただ体力が有り余ってるだけだろ」@
@@ -10,11 +9,8 @@ TEXT1 \x10' TEXT2 \xa8
 紅葉\n　「アンタさあ、もうちょっと身体鍛えないと、いざというときに\n　　困るよ？」\
 
   
-INIT J\x0c SET_VAR 
-CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \n\x03 
-CMD2 TextOn RUNF 8\x03 END 
-SCEC SCE015_002 T\x03 SCE_DONE 
-TEXT1 \x14' TEXT2 G
+INIT J\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF \n\x03 APPlY_2 TextOn RUNF 8\x03 END
+INIT_TEXT SCE015_002 T\x03 SCE_TEXT TEXT1 \x14' TEXT2 G
  
 拓司\n　「いざというときって、なんだよ？　核戦争が起こって世界が暴\n　　力の時代になったときか？　悪の改造人間が襲いかかってきた\n　　ときか？」@
 紅葉\n　「……まったく、口だけは達者なんだから」@
@@ -23,6 +19,5 @@ TEXT1 \x14' TEXT2 G
 拓司\n　「ふん」\
 
   
-INIT \x98\x03\x0c SET_VAR  \n\x03 \x02 8\x03 END  \n\x03 
-CMD3 TextClose VAR1 \xfa\x04 END 
+INIT \x98\x03\x0c SET_VAR1 \n\x03 \x02 8\x03 END \n\x03 APPLY_3 TextClose VAR1 \xfa\x04 END
 END_SCRIPT

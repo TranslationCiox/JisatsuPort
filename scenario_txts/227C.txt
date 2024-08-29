@@ -1,16 +1,12 @@
 START_SCRIPT
 \xea\x1b\x01`B#\x01 \x17
-SCEC SCE227_001 \x06 SCE_DONE 
-TEXT1 Pr\x01 TEXT2 \x11
+INIT_TEXT SCE227_001 \x06 SCE_TEXT TEXT1 Pr\x01 TEXT2 \x11
  
 \n\n\n\n\n\n\n\n\n\n　　　　　　　　　　　　　『１３日目』\
 
   
-INIT J\x0c SET_VAR 
-CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \xae 
-CMD2 TextOn RUNF \xdc END 
-SCEC SCE227_002 \xf8 SCE_DONE 
-TEXT1 Tr\x01 TEXT2 u
+INIT J\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF \xae APPlY_2 TextOn RUNF \xdc END
+INIT_TEXT SCE227_002 \xf8 SCE_TEXT TEXT1 Tr\x01 TEXT2 u
  
 朝。@
 トイレを使うために実験室に現れた錦城に、カンナがいった。@
@@ -23,9 +19,8 @@ TEXT1 Tr\x01 TEXT2 u
 努めて無表情のカンナを、錦城は勝ち誇って見下ろした。\
 
   
-INIT <\x01\x0c SET_VAR  \xae \x02 \xdc END 
-SCEC SCE227_003 J\x03 SCE_DONE 
-TEXT1 Xr\x01 TEXT2 ]
+INIT <\x01\x0c SET_VAR1 \xae \x02 \xdc END
+INIT_TEXT SCE227_003 J\x03 SCE_TEXT TEXT1 Xr\x01 TEXT2 ]
  
 錦城\n　「あら、昨日はあんなにつっぱってたのに。どういう風の吹き\n　　回し？」@
 カンナ\n　「行きますから、そのかわり、食糧を約束通り配ってください」\n\p錦城\n　「……ふぅん」@
@@ -36,9 +31,8 @@ TEXT1 Xr\x01 TEXT2 ]
 カンナ\n　「……すみませんでした」\
 
   
-INIT \x8e\x03\x0c SET_VAR  \xae \x02 \xdc END 
-SCEC SCE227_004 <\x05 SCE_DONE 
-TEXT1 \\r\x01 TEXT2 S
+INIT \x8e\x03\x0c SET_VAR1 \xae \x02 \xdc END
+INIT_TEXT SCE227_004 <\x05 SCE_TEXT TEXT1 \\r\x01 TEXT2 S
  
 錦城\n　「それだけ？」@
 カンナ\n　「今後は秩序を乱すような行動は慎みます」@
@@ -50,9 +44,8 @@ TEXT1 \\r\x01 TEXT2 S
 カンナ\n　「便器って－－」\
 
   
-INIT \x80\x05\x0c SET_VAR  \xae \x02 \xdc END 
-SCEC SCE227_005 \x06\x07 SCE_DONE 
-TEXT1 `r\x01 TEXT2 u
+INIT \x80\x05\x0c SET_VAR1 \xae \x02 \xdc END
+INIT_TEXT SCE227_005 \x06\x07 SCE_TEXT TEXT1 `r\x01 TEXT2 u
  
 錦城\n　「そのままの意味だけれど。\pいまから、先生のおしっこを飲ん\n　　でくれればそれでいいの」@
 カンナ\n　「な、なにを－－！」@
@@ -66,9 +59,8 @@ TEXT1 `r\x01 TEXT2 u
 錦城\n　「便器」\
 
   
-INIT J\x07\x0c SET_VAR  \xae \x02 \xdc END 
-SCEC SCE227_006 X\t SCE_DONE 
-TEXT1 dr\x01 TEXT2 n
+INIT J\x07\x0c SET_VAR1 \xae \x02 \xdc END
+INIT_TEXT SCE227_006 X\t SCE_TEXT TEXT1 dr\x01 TEXT2 n
  
 錦城は意地悪く言い直した。\p机に腰をかけ、見せつけるように足\nを組む。@
 \n錦城\n　「トイレじゃなくて便器でしょ？\p　きちんといいなおして」@
@@ -80,9 +72,8 @@ TEXT1 dr\x01 TEXT2 n
 カンナ\n　「……よ、喜んで錦城先生の人間便器になります」\
 
   
-INIT \x9c\t\x0c SET_VAR  \xae \x02 \xdc END 
-SCEC SCE227_007 \x8e\x0b SCE_DONE 
-TEXT1 hr\x01 TEXT2 y
+INIT \x9c\t\x0c SET_VAR1 \xae \x02 \xdc END
+INIT_TEXT SCE227_007 \x8e\x0b SCE_TEXT TEXT1 hr\x01 TEXT2 y
  
 錦城\n　「『お願いします。\p私におしっこしてください』」@
 カンナ\n　「お願い……します。\p私におしっこして……ください」@
@@ -94,12 +85,9 @@ TEXT1 hr\x01 TEXT2 y
 カンナ\n　「黙っていて。\p大丈夫だから。\pこんなの、なんでもないから」\
 
   
-INIT \xd2\x0b\x0c SET_VAR  \xae \x02 \xdc END   
-INIT \x05\x01\x0c SET_VAR 
-CMD6 .\\Data\\Script\\Bgm.Fob VAR1 \n\x0e 
-CMD2 PlayCD RUNF 4\x0e END 
-SCEC SCE227_008 P\x0e SCE_DONE 
-TEXT1 lr\x01 TEXT2 \xa1
+INIT \xd2\x0b\x0c SET_VAR1 \xae \x02 \xdc END  
+INIT \x05\x01\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bgm.Fob VAR1 \n\x0e APPlY_2 PlayCD RUNF 4\x0e END
+INIT_TEXT SCE227_008 P\x0e SCE_TEXT TEXT1 lr\x01 TEXT2 \xa1
  
 錦城は、目を逸らさないように、と全員に命じた。@
 見せつけるように下着を脱ぎ、足を開く。@
@@ -109,9 +97,8 @@ TEXT1 lr\x01 TEXT2 \xa1
 /*■HCG18　表示（クロスフェード）*/\a7,-2,-2,0,\a0,89,2,0,\a6,-2,0,0,\n錦城\n　「しっかりみておくのよ。\p誰か一人でも目を反らした場合、彼\n　　女の努力は無駄になりますからね？\p　いい、これは授業なの。\n　　\p生意気な態度をとったガキがどうなるか、それを教えてあげ\n　　ているの。\pほら、便器ちゃん。はやく口をつけなさいよ！」\
 
   
-INIT \x94\x0e\x0c SET_VAR  \xae \x02 \xdc END 
-SCEC SCE227_009 R\x11 SCE_DONE 
-TEXT1 pr\x01 TEXT2 \x8a
+INIT \x94\x0e\x0c SET_VAR1 \xae \x02 \xdc END
+INIT_TEXT SCE227_009 R\x11 SCE_TEXT TEXT1 pr\x01 TEXT2 \x8a
  
 錦城の足のあいだにひざまづき、カンナは目を閉じ、口を開いた。\n\pその口が自分の性器に密着したのを確認してから、錦城は整った\n顔をわずかにゆがめた。@
 放尿が始まった。@
@@ -123,19 +110,14 @@ TEXT1 pr\x01 TEXT2 \x8a
 カンナ\n　「くむ……ごきゅっ……ごきゅ……むぐんん……」\
 
   
-INIT \x96\x11\x0c SET_VAR  \xae \x02 \xdc END 
-SCEC SCE227_010 \xf8\x13 SCE_DONE 
-TEXT1 tr\x01 TEXT2 |
+INIT \x96\x11\x0c SET_VAR1 \xae \x02 \xdc END
+INIT_TEXT SCE227_010 \xf8\x13 SCE_TEXT TEXT1 tr\x01 TEXT2 |
  
 錦城\n　「あら、涙流して喜んでるの？\p　あははは、まったくもう、ど\n　　ういう教育を受けてきたのかしら？\p　このままじゃ将来ロク\n　　な大人にはならないわ。\pいまのうちにしっかり便器として教\n　　育しておいたほうがよさそうね。\pそうすれば就職はお便所に\n　　決定。\p進路指導も楽でいいわ、あはははは！」@
 \n嚥下しきれない尿が、カンナの口の端からボタボタと流れ落ちる。\n\pスカートの上に、錦城の汚液が染みをつくる。@
 錦城はカンナの頭を両手で固定し、狂気に支配された顔で笑い続\nけた。\
 
   
-INIT <\x14\x0c SET_VAR  \xae \x02 \xdc END   
-INIT \xc8\x0c SET_VAR 
-CMD6 .\\Data\\Script\\Bg.Fob VAR2 \x80\x16 \x02
-CMD4 BgAutoFadeIn VAR2 \xaa\x16 END  \n\x0e 
-CMD2 StopCD RUNF \xda\x16 END  \xae 
-CMD3 TextClose VAR1 \x02\x17 END 
+INIT <\x14\x0c SET_VAR1 \xae \x02 \xdc END  
+INIT \xc8\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bg.Fob VAR2\x80\x16 \x02 APPLY_4 BgAutoFadeIn VAR2\xaa\x16 END \n\x0e APPlY_2 StopCD RUNF \xda\x16 END \xae APPLY_3 TextClose VAR1 \x02\x17 END
 END_SCRIPT

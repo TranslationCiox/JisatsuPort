@@ -1,7 +1,6 @@
 START_SCRIPT
 8\x12\x01`B#\x01\x1a\x0f
-SCEC SCE231_001 \x06 SCE_DONE 
-TEXT1 \x90x\x01 TEXT2 r
+INIT_TEXT SCE231_001 \x06 SCE_TEXT TEXT1 \x90x\x01 TEXT2 r
  
 御堂\n　「……動くなよ、虎菱。\pお前だけは勝手にさせねえからな……」\n\p拓司\n　「なんなんだ、お前は……」@
 \n拓司は呆然と言った。言ってから、炎のように怒りがわき上がっ\nてきた。@
@@ -9,11 +8,8 @@ TEXT1 \x90x\x01 TEXT2 r
 御堂\n　「むかつくんだよ……幸せなことに飽きて溜め息ついてるよう\n　　な……てめえみたいな野郎がよ！\p　毎日毎日、生きてるんだ\n　　か死んでるんだかわかんねえ俺みたいな人間だっているんだ\n　　ぞ！」\
 
   
-INIT J\x0c SET_VAR 
-CMD7 .\\Data\\Script\\TextFunc.Fob RUNF 2\x02 
-CMD2 TextOn RUNF `\x02 END 
-SCEC SCE231_002 |\x02 SCE_DONE 
-TEXT1 \x94x\x01 TEXT2 `
+INIT J\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF 2\x02 APPlY_2 TextOn RUNF `\x02 END
+INIT_TEXT SCE231_002 |\x02 SCE_TEXT TEXT1 \x94x\x01 TEXT2 `
  
 拓司\n　「俺だって同じだッ！\p　お前だけが特別だと思うな！」@
 御堂\n　「うるせえッ！\p　俺は無視されたんだよ！\p　おきざりにされた\n　　んだ！\p　なにもかもが俺を素通りして勝手に動いていきやが\n　　る！\p　気にくわねえ！」@
@@ -21,12 +17,9 @@ TEXT1 \x94x\x01 TEXT2 `
 御堂\n　「知ったような口きくんじゃねえ、モヤシッ子が！」\
 
   
-INIT \xc0\x02\x0c SET_VAR  2\x02 \x02 `\x02 END   
-INIT )\x0c SET_VAR 
-CMD6 .\\Data\\Script\\Bg.Fob VAR2 \x94\x04 \x02
-CMD4 BgAutoFadeIn VAR2 \xbe\x04 END 
-SCEC SCE231_003 \xe2\x04 SCE_DONE 
-TEXT1 \x98x\x01 TEXT2 \xc2
+INIT \xc0\x02\x0c SET_VAR1 2\x02 \x02 `\x02 END  
+INIT )\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bg.Fob VAR2\x94\x04 \x02 APPLY_4 BgAutoFadeIn VAR2\xbe\x04 END
+INIT_TEXT SCE231_003 \xe2\x04 SCE_TEXT TEXT1 \x98x\x01 TEXT2 \xc2
  
 奇声を上げながら、なたねが突っ込んできた。\pしかし御堂はそれ\nを軽くいなし、足を払って転倒させた。@
 無様に床に転がったなたねを、御堂はつま先で蹴った。@
@@ -40,9 +33,8 @@ TEXT1 \x98x\x01 TEXT2 \xc2
 自分だけではない、皆の顔に一様に浮かんでいる呆けた表情が証\n明している。\
 
   
-INIT &\x05\x0c SET_VAR  2\x02 \x02 `\x02 END 
-SCEC SCE231_004 h\x08 SCE_DONE 
-TEXT1 \x9cx\x01 TEXT2 s
+INIT &\x05\x0c SET_VAR1 2\x02 \x02 `\x02 END
+INIT_TEXT SCE231_004 h\x08 SCE_TEXT TEXT1 \x9cx\x01 TEXT2 s
  
 そこには静けさがあった。\p暴力とは相容れないはずの、まったり\nとした静けさが。@
 他人が攻撃されているあいだは、自分は攻撃されない。@
@@ -53,9 +45,8 @@ TEXT1 \x9cx\x01 TEXT2 s
 御堂は冷たい目で、足下のなたねを見下ろした。\
 
   
-INIT \xac\x08\x0c SET_VAR  2\x02 \x02 `\x02 END 
-SCEC SCE231_005 \xb2\n SCE_DONE 
-TEXT1 \xa0x\x01 TEXT2 >
+INIT \xac\x08\x0c SET_VAR1 2\x02 \x02 `\x02 END
+INIT_TEXT SCE231_005 \xb2\n SCE_TEXT TEXT1 \xa0x\x01 TEXT2 >
  
 錦城がおそるおそるといった感じで、なたねに歩み寄った。@
 鼻の前に手をかざし、ついで、手首を握る\p。一同はその一挙一動\nを、じっと見つめていた。@
@@ -63,25 +54,16 @@ TEXT1 \xa0x\x01 TEXT2 >
 \n錦城\n　「……死んでる。\p息、してない……」\
 
   
-INIT \xf6\n\x0c SET_VAR  2\x02 \x02 `\x02 END 
-SCEC SCE231_006 (\x0c SCE_DONE 
-TEXT1 \xa4x\x01 TEXT2 \x07.\\Data\\Script\\TextFunc.fob RUNF l\x0c \x02
-CMD6 CheckNormalMessageSkip RUNF \x9a\x0c END  2\x02 \x02
-CMD4 TextWindowOff VAR1 \xd2\x0c END   
-INIT \x02\x0c SET_VAR   \x04
-INIT \x01\x0c SET_VAR   \x08
-INIT \x01\x0c SET_VAR 
-CMD6 .\\Data\\Script\\Bgm.Fob VAR1 D\r 
-CMD2 SePlay RUNF n\r END   
-INIT \xca\x0c SET_VAR   \x04
-INIT \x04\x0c SET_VAR   \x08
-INIT \x01\x0c SET_VAR  \x94\x04 
-CMD3 BgFadeIn VAR2 \xe4\r END   
-INIT \x02\x0c SET_VAR  D\r 
-CMD2 SeStop RUNF *\x0e END   
-INIT \xc8\x0c SET_VAR  \x94\x04 
-CMD2 BgOn VAR2 l\x0e END  2\x02 \x02
-CMD5 TextWindowOnDirect RUNF \x94\x0e END  2\x02 \x02
-CMD5 UpdateScenarioRead RUNF \xc8\x0e END  2\x02 
-CMD3 TextClose VAR1 \xfc\x0e END 
+INIT \xf6\n\x0c SET_VAR1 2\x02 \x02 `\x02 END
+INIT_TEXT SCE231_006 (\x0c SCE_TEXT TEXT1 \xa4x\x01 TEXT2 \x07.\\Data\\Script\\TextFunc.fob RUNF l\x0c \x02 APPLY_FILE CheckNormalMessageSkip RUNF \x9a\x0c END 2\x02 \x02 APPLY_4 TextWindowOff VAR1 \xd2\x0c END  
+INIT \x02\x0c SET_VAR1  \x04
+INIT \x01\x0c SET_VAR1  \x08
+INIT \x01\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bgm.Fob VAR1 D\r APPlY_2 SePlay RUNF n\r END  
+INIT \xca\x0c SET_VAR1  \x04
+INIT \x04\x0c SET_VAR1  \x08
+INIT \x01\x0c SET_VAR1 \x94\x04 APPLY_3 BgFadeIn VAR2\xe4\r END  
+INIT \x02\x0c SET_VAR1 D\r APPlY_2 SeStop RUNF *\x0e END  
+INIT \xc8\x0c SET_VAR1 \x94\x04 APPlY_2 BgOn VAR2l\x0e END 2\x02 
+WAVL TextWindowOnDirect RUNF \x94\x0e END 2\x02 
+WAVL UpdateScenarioRead RUNF \xc8\x0e END 2\x02 APPLY_3 TextClose VAR1 \xfc\x0e END
 END_SCRIPT

@@ -1,13 +1,8 @@
 START_SCRIPT
 e+\x01`B#\x01\xf4$  
-INIT \x05\x01\x0c SET_VAR 
-CMD6 .\\Data\\Script\\Bgm.Fob VAR1   
-CMD2 PlayCD RUNF J END   
-INIT Q\x0c SET_VAR 
-CMD6 .\\Data\\Script\\Bg.Fob VAR2 \x80 \x02
-CMD4 BgAutoFadeIn VAR2 \xaa END 
-SCEC SCE032_001 \xce SCE_DONE 
-TEXT1 \xa0A TEXT2 \xc8
+INIT \x05\x01\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bgm.Fob VAR1   APPlY_2 PlayCD RUNF J END  
+INIT Q\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bg.Fob VAR2\x80 \x02 APPLY_4 BgAutoFadeIn VAR2\xaa END
+INIT_TEXT SCE032_001 \xce SCE_TEXT TEXT1 \xa0A TEXT2 \xc8
  
 組み伏したカンナの身体は、どこか冷たかった。@
 ぐにゃりと柔らかい、肉の塊。@
@@ -24,11 +19,8 @@ TEXT1 \xa0A TEXT2 \xc8
 それをつまみ上げるたびに、ひく、ひくと、ペ○スを包む肉が収縮\nする。\
 
   
-INIT \x12\x01\x0c SET_VAR 
-CMD7 .\\Data\\Script\\TextFunc.Fob RUNF R\x04 
-CMD2 TextOn RUNF \x80\x04 END 
-SCEC SCE032_002 \x9c\x04 SCE_DONE 
-TEXT1 \xa4A TEXT2 \x88
+INIT \x12\x01\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF R\x04 APPlY_2 TextOn RUNF \x80\x04 END
+INIT_TEXT SCE032_002 \x9c\x04 SCE_TEXT TEXT1 \xa4A TEXT2 \x88
  
 そのどれもが、『生きている』肉体の反応だ。@
 しかし、それでもなお、生々しさが足りない。@
@@ -41,9 +33,8 @@ TEXT1 \xa4A TEXT2 \x88
 まるで実験動物を観察するように、拓司の顔をのぞき込んでいる。\n\p恥ずかしさとも怒りともつかぬ激情で、頭にカッと血が上る。\
 
   
-INIT \xe0\x04\x0c SET_VAR  R\x04 \x02 \x80\x04 END 
-SCEC SCE032_003 :\x07 SCE_DONE 
-TEXT1 \xa8A TEXT2 w
+INIT \xe0\x04\x0c SET_VAR1 R\x04 \x02 \x80\x04 END
+INIT_TEXT SCE032_003 :\x07 SCE_TEXT TEXT1 \xa8A TEXT2 w
  
 拓司\n　「……こんなに濡れて締め付けておいて……気取るな……」@
 カンナ\n　「気取ってなんかいないわ。気持ちいいわよ、すごく。@
@@ -53,9 +44,8 @@ TEXT1 \xa8A TEXT2 w
 拓司\n　「うるさい、黙れッ！」\
 
   
-INIT ~\x07\x0c SET_VAR  R\x04 \x02 \x80\x04 END 
-SCEC SCE032_004 \x94\t SCE_DONE 
-TEXT1 \xacA TEXT2 z
+INIT ~\x07\x0c SET_VAR1 R\x04 \x02 \x80\x04 END
+INIT_TEXT SCE032_004 \x94\t SCE_TEXT TEXT1 \xacA TEXT2 z
  
 叫んで拓司は、カンナの手首を覆っている包帯を引きちぎった。@
 真っ白な手首に、幾条もの痛々しい傷跡が走っている。@
@@ -67,9 +57,8 @@ TEXT1 \xacA TEXT2 z
 拓司\n　「……ちっ」\
 
   
-INIT \xd8\t\x0c SET_VAR  R\x04 \x02 \x80\x04 END 
-SCEC SCE032_005 \xfa\x0b SCE_DONE 
-TEXT1 \xb0A TEXT2 \xad
+INIT \xd8\t\x0c SET_VAR1 R\x04 \x02 \x80\x04 END
+INIT_TEXT SCE032_005 \xfa\x0b SCE_TEXT TEXT1 \xb0A TEXT2 \xad
  
 カンナの頭の横に、スカートのポケットに入っていた小物類がまと\nめて置かれている。\pその中から拓司は、パスケースを選んで取り上\nげた。\pぱらりと開くと学生証を挟み込む透明なビニールの部分に、\nそれが入っている。@
 夏の日差しを鈍く照り返す、ステンレスの薄い板。@
@@ -80,9 +69,8 @@ TEXT1 \xb0A TEXT2 \xad
 いままでまったく感じられなかった、生々しいいきものの脈動が、\nある……。\
 
   
-INIT >\x0c\x0c SET_VAR  R\x04 \x02 \x80\x04 END 
-SCEC SCE032_006 ,\x0f SCE_DONE 
-TEXT1 \xb4A TEXT2 \x89
+INIT >\x0c\x0c SET_VAR1 R\x04 \x02 \x80\x04 END
+INIT_TEXT SCE032_006 ,\x0f SCE_TEXT TEXT1 \xb4A TEXT2 \x89
  
 カンナ\n　「……はあ……はあ……」@
 \n青白いカンナの頬に、赤い血の色がさしている。@
@@ -96,9 +84,8 @@ TEXT1 \xb4A TEXT2 \x89
 先ほどまでとなんら変わることのないその運動に、果たしてカンナ\nは、今度は身をよじらせて反応した。\
 
   
-INIT p\x0f\x0c SET_VAR  R\x04 \x02 \x80\x04 END 
-SCEC SCE032_007 \xce\x11 SCE_DONE 
-TEXT1 \xb8A TEXT2 \x9a
+INIT p\x0f\x0c SET_VAR1 R\x04 \x02 \x80\x04 END
+INIT_TEXT SCE032_007 \xce\x11 SCE_TEXT TEXT1 \xb8A TEXT2 \x9a
  
 カンナ\n　「あいっ……い、いじわるしな……いで……ひっ……早く眼を…\n　　…眼を潰して……！」@
 拓司\n　「ふふ……カンナの顔。\pすごく生き生きしてる。\pまるで生きて\n　　いる人間みたいだ」@
@@ -110,9 +97,8 @@ TEXT1 \xb8A TEXT2 \x9a
 カンナが自ら視覚を封じたのを確認してから、拓司はカンナの右\n手首を捧げ持った。\pそこに剃刀の刃をぴたりとあてがう。\
 
   
-INIT \x12\x12\x0c SET_VAR  R\x04 \x02 \x80\x04 END 
-SCEC SCE032_008 \xb4\x14 SCE_DONE 
-TEXT1 \xbcA TEXT2 \x88
+INIT \x12\x12\x0c SET_VAR1 R\x04 \x02 \x80\x04 END
+INIT_TEXT SCE032_008 \xb4\x14 SCE_TEXT TEXT1 \xbcA TEXT2 \x88
  
 拓司\n　「……どうだ？　感じるか？」@
 カンナ\n　「……早く……」@
@@ -127,9 +113,8 @@ TEXT1 \xbcA TEXT2 \x88
 自殺ゲーム。\
 
   
-INIT \xf8\x14\x0c SET_VAR  R\x04 \x02 \x80\x04 END 
-SCEC SCE032_009 R\x17 SCE_DONE 
-TEXT1 \xc0A TEXT2 \xa6
+INIT \xf8\x14\x0c SET_VAR1 R\x04 \x02 \x80\x04 END
+INIT_TEXT SCE032_009 R\x17 SCE_TEXT TEXT1 \xc0A TEXT2 \xa6
  
 \nだくだくと血が流れ出した。@
 出る。@
@@ -146,9 +131,8 @@ TEXT1 \xc0A TEXT2 \xa6
 　　これはまずいかもしれないぜ？」\
 
   
-INIT \x96\x17\x0c SET_VAR  R\x04 \x02 \x80\x04 END 
-SCEC SCE032_010 h\x1a SCE_DONE 
-TEXT1 \xc4A TEXT2 \x95
+INIT \x96\x17\x0c SET_VAR1 R\x04 \x02 \x80\x04 END
+INIT_TEXT SCE032_010 h\x1a SCE_TEXT TEXT1 \xc4A TEXT2 \x95
  
 大げさにいいながら拓司は改めてカンナの両足を脇に抱え、一気\nにペ○スを奥深くまで突き入れた。@
 ぶちゅ、ぶちゅ……と、淫猥な音が結合部から漏れる。@
@@ -160,9 +144,8 @@ TEXT1 \xc4A TEXT2 \x95
 カンナ\n　「すごい……すごく出ていく……きれいに……」\
 
   
-INIT \xac\x1a\x0c SET_VAR  R\x04 \x02 \x80\x04 END 
-SCEC SCE032_011 :\x1d SCE_DONE 
-TEXT1 \xc8A TEXT2 \x90
+INIT \xac\x1a\x0c SET_VAR1 R\x04 \x02 \x80\x04 END
+INIT_TEXT SCE032_011 :\x1d SCE_TEXT TEXT1 \xc8A TEXT2 \x90
  
 拓司のなかで、なにかが唐突に爆発した。@
 胸の底で沸騰しているドロドロしたものがぼっと火柱を上げた。@
@@ -178,9 +161,8 @@ TEXT1 \xc8A TEXT2 \x90
 カンナに気づかれないようそれに手を伸ばし、そして……\
 
   
-INIT ~\x1d\x0c SET_VAR  R\x04 \x02 \x80\x04 END 
-SCEC SCE032_012 \xf8\x1f SCE_DONE 
-TEXT1 \xccA TEXT2 \xab
+INIT ~\x1d\x0c SET_VAR1 R\x04 \x02 \x80\x04 END
+INIT_TEXT SCE032_012 \xf8\x1f SCE_TEXT TEXT1 \xccA TEXT2 \xab
  
 \n/*■CG73　表示（ノンエフェクト）*//*■HCG11　表示（ノンエフェクト）*/\a7,-1,-1,0,\a1,1,202,82,\a6,0,0,0,喉に当てる@
 /*■CG73　表示（ノンエフェクト） *//*■HCG11　表示（ノンエフェクト）*/\a7,-1,-1,0,\a1,1,202,82,\a6,0,0,0,\n横に引く。\pスッとすべらせる。@
@@ -195,19 +177,14 @@ TEXT1 \xccA TEXT2 \xab
 死ぬぞ！\
 
   
-INIT < \x0c SET_VAR  R\x04 \x02 \x80\x04 END 
-SCEC SCE032_013 "# SCE_DONE 
-TEXT1 \xd0A TEXT2 \x17
+INIT < \x0c SET_VAR1 R\x04 \x02 \x80\x04 END
+INIT_TEXT SCE032_013 "# SCE_TEXT TEXT1 \xd0A TEXT2 \x17
  
 \nザザザ……ザザッ……\pザアザザザ……@
 ザアアアアア……ザアザアアアアアアア……\
 
   
-INIT f#\x0c SET_VAR  R\x04 \x02 \x80\x04 END  R\x04 \x02
-CMD4 TextWindowOff VAR1 \x08$ END    
-CMD2 StopCD RUNF 8$ END   
-INIT \xc8\x0c SET_VAR  \x80 
-CMD2 BgOn VAR2 z$ END  R\x04 \x02
-CMD5 TextWindowOnDirect RUNF \xa2$ END  R\x04 
-CMD3 TextClose VAR1 \xd6$ END 
+INIT f#\x0c SET_VAR1 R\x04 \x02 \x80\x04 END R\x04 \x02 APPLY_4 TextWindowOff VAR1 \x08$ END NULL APPlY_2 StopCD RUNF 8$ END  
+INIT \xc8\x0c SET_VAR1 \x80 APPlY_2 BgOn VAR2z$ END R\x04 
+WAVL TextWindowOnDirect RUNF \xa2$ END R\x04 APPLY_3 TextClose VAR1 \xd6$ END
 END_SCRIPT

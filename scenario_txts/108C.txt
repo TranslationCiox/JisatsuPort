@@ -1,19 +1,13 @@
 START_SCRIPT
 \x82\x07\x01`B#\x01\xf2\x05
-SCEC SCE108_001 \x06 SCE_DONE 
-TEXT1 `\xb8 TEXT2 \x11
+INIT_TEXT SCE108_001 \x06 SCE_TEXT TEXT1 `\xb8 TEXT2 \x11
  
 \n\n\n\n\n\n\n\n\n\n　　　　　　　　　　　　　『６日目』\
 
   
-INIT J\x0c SET_VAR 
-CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \xae 
-CMD2 TextOn RUNF \xdc END   
-INIT \x0c\x01\x0c SET_VAR 
-CMD6 .\\Data\\Script\\Bgm.Fob VAR1 \x12\x01 
-CMD2 PlayCD RUNF <\x01 END 
-SCEC SCE108_002 X\x01 SCE_DONE 
-TEXT1 d\xb8 TEXT2 \x87
+INIT J\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF \xae APPlY_2 TextOn RUNF \xdc END  
+INIT \x0c\x01\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bgm.Fob VAR1 \x12\x01 APPlY_2 PlayCD RUNF <\x01 END
+INIT_TEXT SCE108_002 X\x01 SCE_TEXT TEXT1 d\xb8 TEXT2 \x87
  
 早桃の風邪は快方に向かっている。@
 \nめだった衝突はない。\pなたねは淡々と、それまで通り食糧と水を\n配給した。\pしかし、なたねと一同のあいだに生まれた亀裂は、わ\nずかも回復していない。@
@@ -22,9 +16,8 @@ TEXT1 d\xb8 TEXT2 \x87
 \n錦城が、何度も意味ありげな視線を送ってくる。\p催促するような\n非難するような視線だ。\p拓司は気づかないふりをして、それを無\n視した。\
 
   
-INIT \x9c\x01\x0c SET_VAR  \xae \x02 \xdc END 
-SCEC SCE108_003 \xf2\x03 SCE_DONE 
-TEXT1 h\xb8 TEXT2 V
+INIT \x9c\x01\x0c SET_VAR1 \xae \x02 \xdc END
+INIT_TEXT SCE108_003 \xf2\x03 SCE_TEXT TEXT1 h\xb8 TEXT2 V
  
 この日が誕生日だったというカンナのために、夜、一同は歌を歌\nった。@
 馬鹿馬鹿しいとは思ったが、そういったことこそが、いま、必要\nなものに思えた。@
@@ -32,6 +25,5 @@ TEXT1 h\xb8 TEXT2 V
 沈黙の中、なたねの「……馬鹿馬鹿しい」というつぶやきが、奇\n妙に大きく響いた。\
 
   
-INIT 6\x04\x0c SET_VAR  \xae \x02 \xdc END  \xae 
-CMD3 TextClose VAR1 \xd4\x05 END 
+INIT 6\x04\x0c SET_VAR1 \xae \x02 \xdc END \xae APPLY_3 TextClose VAR1 \xd4\x05 END
 END_SCRIPT

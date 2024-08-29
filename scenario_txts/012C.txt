@@ -1,19 +1,13 @@
 START_SCRIPT
 /%\x01`B#\x01`\x1e
-SCEC SCE012_001 \x06 SCE_DONE 
-TEXT1 `" TEXT2 \x0e
+INIT_TEXT SCE012_001 \x06 SCE_TEXT TEXT1 `" TEXT2 \x0e
  
 \n\n\n\n\n\n　　　　　　　　　　　『通学路』\
 
   
-INIT J\x0c SET_VAR 
-CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \xa2 
-CMD2 TextOn RUNF \xd0 END   
-INIT \x05\x01\x0c SET_VAR 
-CMD6 .\\Data\\Script\\Bgm.Fob VAR1 \x06\x01 
-CMD2 PlayCD RUNF 0\x01 END 
-SCEC SCE012_002 L\x01 SCE_DONE 
-TEXT1 d" TEXT2 \x97
+INIT J\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF \xa2 APPlY_2 TextOn RUNF \xd0 END  
+INIT \x05\x01\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bgm.Fob VAR1 \x06\x01 APPlY_2 PlayCD RUNF 0\x01 END
+INIT_TEXT SCE012_002 L\x01 SCE_TEXT TEXT1 d" TEXT2 \x97
  
 　二つしか歳の離れていない、義妹という名の女。@
 　義兄という役割は、拓司が望んで担ったものではない。拓司が中\n　学に上がった時、親が再婚した。それだけのことだ。@
@@ -27,12 +21,9 @@ TEXT1 d" TEXT2 \x97
 　そして二週間前、偶然ドアの隙間から見てしまった光景は、完全\n　に彼の我慢をうち砕いた。\
 
   
-INIT \x90\x01\x0c SET_VAR  \xa2 \x02 \xd0 END   
-INIT L\x0c SET_VAR 
-CMD6 .\\Data\\Script\\Bg.Fob VAR2 @\x04 \x02
-CMD4 BgAutoFadeIn VAR2 j\x04 END 
-SCEC SCE012_003 \x8e\x04 SCE_DONE 
-TEXT1 h" TEXT2 \x7f
+INIT \x90\x01\x0c SET_VAR1 \xa2 \x02 \xd0 END  
+INIT L\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bg.Fob VAR2@\x04 \x02 APPLY_4 BgAutoFadeIn VAR2j\x04 END
+INIT_TEXT SCE012_003 \x8e\x04 SCE_TEXT TEXT1 h" TEXT2 \x7f
  
 　義妹が、義兄である自分を思ってオナニーしている。@
 　それを知ってから、拓司のぼんやりとした世界は、急速にみだら\n　な色に染まっていった。@
@@ -44,9 +35,8 @@ TEXT1 h" TEXT2 \x7f
 　あるいはそうした光景を意識的に作り上げて。\
 
   
-INIT \xd2\x04\x0c SET_VAR  \xa2 \x02 \xd0 END 
-SCEC SCE012_004 \x08\x07 SCE_DONE 
-TEXT1 l" TEXT2 \x97
+INIT \xd2\x04\x0c SET_VAR1 \xa2 \x02 \xd0 END
+INIT_TEXT SCE012_004 \x08\x07 SCE_TEXT TEXT1 l" TEXT2 \x97
  
 　可憐で清純な義妹を、夢のなかで犯した。@
 　犯して犯して犯し抜いた。@
@@ -59,11 +49,9 @@ TEXT1 l" TEXT2 \x97
 　いつものように早桃を犯している最中、はっと、それが夢ではな\n　いことに気づくのではないかと。\
 
   
-INIT L\x07\x0c SET_VAR  \xa2 \x02 \xd0 END   
-INIT \xc8\x0c SET_VAR  @\x04 \x02 j\x04 END  \x06\x01 
-CMD2 StopCD RUNF "\n END 
-SCEC SCE012_005 >\n SCE_DONE 
-TEXT1 p" TEXT2 B
+INIT L\x07\x0c SET_VAR1 \xa2 \x02 \xd0 END  
+INIT \xc8\x0c SET_VAR1 @\x04 \x02 j\x04 END \x06\x01 APPlY_2 StopCD RUNF "\n END
+INIT_TEXT SCE012_005 >\n SCE_TEXT TEXT1 p" TEXT2 B
  
 拓司\n　「最近、どうだ？」@
 \n拓司はいった。@
@@ -74,9 +62,8 @@ TEXT1 p" TEXT2 B
 早桃\n　「上村さんでしょ？」\
 
   
-INIT \x82\n\x0c SET_VAR  \xa2 \x02 \xd0 END 
-SCEC SCE012_006 \xc4\x0b SCE_DONE 
-TEXT1 t" TEXT2 v
+INIT \x82\n\x0c SET_VAR1 \xa2 \x02 \xd0 END
+INIT_TEXT SCE012_006 \xc4\x0b SCE_TEXT TEXT1 t" TEXT2 v
  
 拓司\n　「ああ、そうだったか。そのカミムラとかいう女、まだ……嫌が\n　　らせしてくるのか？」@
 早桃\n　「……ううん。もう、仲直りしたから」@
@@ -87,9 +74,8 @@ TEXT1 t" TEXT2 v
 拓司\n　「ああ。ブン殴ってでもやめさせてやる」\
 
   
-INIT \x08\x0c\x0c SET_VAR  \xa2 \x02 \xd0 END 
-SCEC SCE012_007 \x1a\x0e SCE_DONE 
-TEXT1 x" TEXT2 5
+INIT \x08\x0c\x0c SET_VAR1 \xa2 \x02 \xd0 END
+INIT_TEXT SCE012_007 \x1a\x0e SCE_TEXT TEXT1 x" TEXT2 5
  
 早桃\n　「守って……くれるんだ？」@
 拓司\n　「ああ。\pお前は優しすぎるんだよ。@
@@ -98,9 +84,8 @@ TEXT1 x" TEXT2 5
 早桃\n　「……そうかもね」\
 
   
-INIT ^\x0e\x0c SET_VAR  \xa2 \x02 \xd0 END 
-SCEC SCE012_008 l\x0f SCE_DONE 
-TEXT1 |" TEXT2 \xa2
+INIT ^\x0e\x0c SET_VAR1 \xa2 \x02 \xd0 END
+INIT_TEXT SCE012_008 l\x0f SCE_TEXT TEXT1 |" TEXT2 \xa2
  
 沈んだ空気を振り払おうと、拓司は明るくいった。@
 \n拓司\n　「しかしアレだな、最近の若者はわからないよな！」@
@@ -110,9 +95,8 @@ TEXT1 |" TEXT2 \xa2
 拓司\n　「いや、２歳はデカいって。\p運動系の部活の連中とかさ、今年\n　　の新人はナニ考えてるの全然わからない、っていつもぼやいて\n　　るぜ。\p礼儀とか、常識とか、もう、全然おれたちとは違うっ\n　　て。\p説教してもポカンとされるだけで、まるで宇宙人に地\n　　球の掟を教えてるみたいだって」\
 
   
-INIT \xb0\x0f\x0c SET_VAR  \xa2 \x02 \xd0 END 
-SCEC SCE012_009 r\x12 SCE_DONE 
-TEXT1 \x80" TEXT2 <
+INIT \xb0\x0f\x0c SET_VAR1 \xa2 \x02 \xd0 END
+INIT_TEXT SCE012_009 r\x12 SCE_TEXT TEXT1 \x80" TEXT2 <
  
 早桃\n　「……ということは、おにいちゃんも早桃のこと、ぜんぜんわか\n　　ってないってことかな？」@
 拓司\n　「おれはわかってるさ。もう長いつきあいだからな」@
@@ -121,18 +105,14 @@ TEXT1 \x80" TEXT2 <
 早桃\n　「……」\
 
   
-INIT \xb6\x12\x0c SET_VAR  \xa2 \x02 \xd0 END 
-SCEC SCE012_010 \xe0\x13 SCE_DONE 
-TEXT1 \x84"\x0c" \xa2 \x02
-CMD5 TextWindowOffDirect 0\x14 END   
-INIT \x0c SET_VAR   \x04
-INIT \x14\x0c SET_VAR   \x08
-INIT \x0c SET_VAR  \x06\x01 
-CMD3 SePlayEx VAR2 \xb2\x14 END   
-INIT \x01\x0c SET_VAR  @\x04 \x02
-CMD4 BgNormalFadeIn RUNF \xf8\x14 END   
-INIT \x07\x01\x0c SET_VAR  \x06\x01 \x02 0\x01 END  \xa2 \x02
-CMD4 TextWindowOn VAR2 \\\x15 END \x03\x9d
+INIT \xb6\x12\x0c SET_VAR1 \xa2 \x02 \xd0 END
+INIT_TEXT SCE012_010 \xe0\x13 SCE_TEXT TEXT1 \x84"\x0c" \xa2 
+WAVL TextWindowOffDirect 0\x14 END  
+INIT \x0c SET_VAR1  \x04
+INIT \x14\x0c SET_VAR1  \x08
+INIT \x0c SET_VAR1 \x06\x01 APPLY_3 SePlayEx VAR2\xb2\x14 END  
+INIT \x01\x0c SET_VAR1 @\x04 \x02 APPLY_4 BgNormalFadeIn RUNF \xf8\x14 END  
+INIT \x07\x01\x0c SET_VAR1 \x06\x01 \x02 0\x01 END \xa2 \x02 APPLY_4 TextWindowOn VAR2\\\x15 END\x03\x9d
  
 紅葉\n　「おはよーっ！」@
 早桃\n　「あ……おはようございます」@
@@ -145,9 +125,8 @@ CMD4 TextWindowOn VAR2 \\\x15 END \x03\x9d
 　そんな印象がある。\
 
   
-INIT \x80\x15\x0c SET_VAR  \xa2 \x02 \xd0 END 
-SCEC SCE012_011 .\x18 SCE_DONE 
-TEXT1 \x88" TEXT2 \xa8
+INIT \x80\x15\x0c SET_VAR1 \xa2 \x02 \xd0 END
+INIT_TEXT SCE012_011 .\x18 SCE_TEXT TEXT1 \x88" TEXT2 \xa8
  
 －－いまの自分とは大違いだ、と拓司は思った。@
 彼女は選ぶことができた。\p灰色のカンバスにとけ込むのではなく、\nそこに自由に絵を描いてゆくことを選ぶだけの色が……生命力が…\n紅葉には備わっていたのだ。@
@@ -159,27 +138,23 @@ TEXT1 \x88" TEXT2 \xa8
 \n　そこまで言ったときだった。早桃がおずおずといった。\
 
   
-INIT r\x18\x0c SET_VAR  \xa2 \x02 \xd0 END 
-SCEC SCE012_012 L\x1b SCE_DONE 
-TEXT1 \x8c" TEXT2 3
+INIT r\x18\x0c SET_VAR1 \xa2 \x02 \xd0 END
+INIT_TEXT SCE012_012 L\x1b SCE_TEXT TEXT1 \x8c" TEXT2 3
  
 早桃\n　「あの……おにいちゃん、私、先に行くから。……それじゃあ」\n\p/*　CG02　フェードアウト　（ブラック） */\a7,-2,-2,0,\a0,200,2,0,\a6,-2,0,0,拓司\n　「早桃？」@
 紅葉\n　「早桃ちゃん？」\
 
   
-INIT \x90\x1b\x0c SET_VAR  \xa2 \x02 \xd0 END 
-SCEC SCE012_013 \x96\x1c SCE_DONE 
-TEXT1 \x90" TEXT2 \x07.\\Data\\Script\\TextFunc.fob RUNF \xda\x1c \x02
-CMD6 CheckNormalMessageSkip RUNF \x08\x1d END   
-INIT \x0c SET_VAR   \x04
-INIT \x15\x0c SET_VAR   \x08
-INIT \x0c SET_VAR  \x06\x01 \x02 \xb2\x14 END  \xa2 \x02
-CMD5 UpdateScenarioRead RUNF \xa8\x1d END \x03\x0b
+INIT \x90\x1b\x0c SET_VAR1 \xa2 \x02 \xd0 END
+INIT_TEXT SCE012_013 \x96\x1c SCE_TEXT TEXT1 \x90" TEXT2 \x07.\\Data\\Script\\TextFunc.fob RUNF \xda\x1c \x02 APPLY_FILE CheckNormalMessageSkip RUNF \x08\x1d END  
+INIT \x0c SET_VAR1  \x04
+INIT \x15\x0c SET_VAR1  \x08
+INIT \x0c SET_VAR1 \x06\x01 \x02 \xb2\x14 END \xa2 
+WAVL UpdateScenarioRead RUNF \xa8\x1d END\x03\x0b
 CHOICE
 早桃を追う\n紅葉と登校する\n\l0,2,
 ENDCHOICE
 
   
-INIT \xd0\x1d\x0c SET_VAR  \xa2 \x02 \xd0 END  \xa2 
-CMD3 TextClose VAR1 B\x1e END 
+INIT \xd0\x1d\x0c SET_VAR1 \xa2 \x02 \xd0 END \xa2 APPLY_3 TextClose VAR1 B\x1e END
 END_SCRIPT

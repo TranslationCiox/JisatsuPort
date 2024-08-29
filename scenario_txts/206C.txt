@@ -1,7 +1,6 @@
 START_SCRIPT
 \xcf\x04\x01\xa4\t3\x01:\x03
-SCEC SCE206_001 \x06 SCE_DONE 
-TEXT1 \x80Q\x01 TEXT2 \x97
+INIT_TEXT SCE206_001 \x06 SCE_TEXT TEXT1 \x80Q\x01 TEXT2 \x97
  
 拓司\n　「君はいま、おれに世界の真実を教えてくれた。\pでも、だとし\n　　たら、君は誰なんだ？\p　どうして君がそんなことを知って\n　　いる？」@
 ナタネ\n　「私は雲居ナタネ。\pなぜなら、あなたがそう名付けたから」@
@@ -10,8 +9,5 @@ TEXT1 \x80Q\x01 TEXT2 \x97
 　　あなたは、すべての真実を語って聞かせてくれる者の出現を\n　　……自分を救う者の存在を『願った』。\pだから私は、ここに\n　　『創』られた。\pこの姿……雲居なたねの形として創られた\n　　のは、あなたがそれを望んだから。\p理解できないものの解説\n　　役として、雲居なたねを望んだからなの」\
 
   
-INIT J\x0c SET_VAR 
-CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \xc6\x02 
-CMD2 TextOn RUNF \xf4\x02 END  \xc6\x02 
-CMD3 TextClose VAR1 \x1c\x03 END 
+INIT J\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF \xc6\x02 APPlY_2 TextOn RUNF \xf4\x02 END \xc6\x02 APPLY_3 TextClose VAR1 \x1c\x03 END
 END_SCRIPT

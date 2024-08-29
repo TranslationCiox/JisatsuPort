@@ -1,10 +1,7 @@
 START_SCRIPT
 \x97\r\x01`B#\x01:\x0b  
-INIT \t\x01\x0c SET_VAR 
-CMD6 .\\Data\\Script\\Bgm.Fob VAR1   
-CMD2 PlayCD RUNF J END 
-SCEC SCE034_001 f SCE_DONE 
-TEXT1 \xc0D TEXT2 \xb1
+INIT \t\x01\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bgm.Fob VAR1   APPlY_2 PlayCD RUNF J END
+INIT_TEXT SCE034_001 f SCE_TEXT TEXT1 \xc0D TEXT2 \xb1
  
 　４階。\p賑やかな教室。\pドアは開け放たれている。@
 　中を覗くと、男子学生たちの姿はすでに教室にはない。@
@@ -20,11 +17,8 @@ TEXT1 \xc0D TEXT2 \xb1
 \n　賑やかで温かい教室の空気から、早桃の姿だけが浮き上がって\n見えた。\
 
   
-INIT \xaa\x0c SET_VAR 
-CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \x8e\x03 
-CMD2 TextOn RUNF \xbc\x03 END 
-SCEC SCE034_002 \xd8\x03 SCE_DONE 
-TEXT1 \xc4D TEXT2 y
+INIT \xaa\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF \x8e\x03 APPlY_2 TextOn RUNF \xbc\x03 END
+INIT_TEXT SCE034_002 \xd8\x03 SCE_TEXT TEXT1 \xc4D TEXT2 y
  
 　まるでそこに何か大切なものがあるかのように……@
 あるいは、そこしか見るべき場所がないかのように……@
@@ -38,9 +32,8 @@ TEXT1 \xc4D TEXT2 y
 拓司\n　「いや。\pたまには一緒に飯でも食おうかと思ってさ」\
 
   
-INIT \x1c\x04\x0c SET_VAR  \x8e\x03 \x02 \xbc\x03 END 
-SCEC SCE034_003 :\x06 SCE_DONE 
-TEXT1 \xc8D TEXT2 \\
+INIT \x1c\x04\x0c SET_VAR1 \x8e\x03 \x02 \xbc\x03 END
+INIT_TEXT SCE034_003 :\x06 SCE_TEXT TEXT1 \xc8D TEXT2 \\
  
 早桃\n　「どうして？」@
 拓司\n　「どうしてって……\pなんとなくさ」@
@@ -51,9 +44,8 @@ TEXT1 \xc8D TEXT2 \\
 \n　そんな声が、時折やや大きめに漏れ聞こえる。\n　早桃は必死にそれに気づかない振りをしているが、声が聞こえ\nるたび、目の中に怯えと恥じらいの影がゆらぐ。\
 
   
-INIT ~\x06\x0c SET_VAR  \x8e\x03 \x02 \xbc\x03 END 
-SCEC SCE034_004 (\x08 SCE_DONE 
-TEXT1 \xccD TEXT2 T
+INIT ~\x06\x0c SET_VAR1 \x8e\x03 \x02 \xbc\x03 END
+INIT_TEXT SCE034_004 (\x08 SCE_TEXT TEXT1 \xccD TEXT2 T
  
 　早桃がクラスで孤立しているということはなんとなく把握して\nいるつもりだった。@
 しかし、目の当たりにしたその光景は、あまりにもリアルで、胸\nを締め付けるものだった。@
@@ -64,15 +56,13 @@ TEXT1 \xccD TEXT2 T
 早桃\n　「わけてあげよっか？」\
 
   
-INIT l\x08\x0c SET_VAR  \x8e\x03 \x02 \xbc\x03 END 
-SCEC SCE034_005 \xf6\t SCE_DONE 
-TEXT1 \xd0D TEXT2 '
+INIT l\x08\x0c SET_VAR1 \x8e\x03 \x02 \xbc\x03 END
+INIT_TEXT SCE034_005 \xf6\t SCE_TEXT TEXT1 \xd0D TEXT2 '
  
 拓司\n　「……え？」@
 早桃\n　「これ。\pほとんど口つけてないから」@
 \n　そういって早桃は、ひとかじりしただけのコッペパンを軽く振\nってみせた。\
 
   
-INIT :\n\x0c SET_VAR  \x8e\x03 \x02 \xbc\x03 END  \x8e\x03 
-CMD3 TextClose VAR1 \x1c\x0b END 
+INIT :\n\x0c SET_VAR1 \x8e\x03 \x02 \xbc\x03 END \x8e\x03 APPLY_3 TextClose VAR1 \x1c\x0b END
 END_SCRIPT

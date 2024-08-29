@@ -1,13 +1,8 @@
 START_SCRIPT
 \x9c/\x01`B#\x01\xb6'  
-INIT \n\x0c SET_VAR 
-CMD6 .\\Data\\Script\\Bg.Fob VAR2   \x02
-CMD4 BgAutoFadeIn VAR2 J END   
-INIT \x08\x01\x0c SET_VAR 
-CMD6 .\\Data\\Script\\Bgm.Fob VAR1 \x88 
-CMD2 PlayCD RUNF \xb2 END 
-SCEC SCE033_001 \xce SCE_DONE 
-TEXT1 0C TEXT2 G
+INIT \n\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bg.Fob VAR2  \x02 APPLY_4 BgAutoFadeIn VAR2J END  
+INIT \x08\x01\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bgm.Fob VAR1 \x88 APPlY_2 PlayCD RUNF \xb2 END
+INIT_TEXT SCE033_001 \xce SCE_TEXT TEXT1 0C TEXT2 G
  
 拭ったように、視界からさっと血の色が消え失せた。@
 目の前には月代カンナが立っている。@
@@ -17,11 +12,8 @@ TEXT1 0C TEXT2 G
 カンナ\n　「正解」\
 
   
-INIT \x12\x01\x0c SET_VAR 
-CMD7 .\\Data\\Script\\TextFunc.Fob RUNF N\x02 
-CMD2 TextOn RUNF |\x02 END 
-SCEC SCE033_002 \x98\x02 SCE_DONE 
-TEXT1 4C TEXT2 \xd8
+INIT \x12\x01\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF N\x02 APPlY_2 TextOn RUNF |\x02 END
+INIT_TEXT SCE033_002 \x98\x02 SCE_TEXT TEXT1 4C TEXT2 \xd8
  
 \n月代カンナは両手を首元に回し、すっと、髪の毛を後ろに掻き上\nげた。\p細い首筋があらわになる。\pどこかで見たことがある光景だ\nった。@
 既視感。@
@@ -35,9 +27,8 @@ TEXT1 4C TEXT2 \xd8
 \n－－もしかしていまもおれは妄想の世界にいるのではないか？\
 
   
-INIT \xdc\x02\x0c SET_VAR  N\x02 \x02 |\x02 END 
-SCEC SCE033_003 v\x06 SCE_DONE 
-TEXT1 8C TEXT2 k
+INIT \xdc\x02\x0c SET_VAR1 N\x02 \x02 |\x02 END
+INIT_TEXT SCE033_003 v\x06 SCE_TEXT TEXT1 8C TEXT2 k
  
 思って拓司は足が震えるのを禁じ得なかった。@
 もしかしておれは狂ってしまったのか……？@
@@ -49,11 +40,10 @@ TEXT1 8C TEXT2 k
 拓司\n　「死の……保健室？」\
 
   
-INIT \xba\x06\x0c SET_VAR  N\x02 \x02 |\x02 END   
-INIT \x06\x01\x0c SET_VAR  \x88 \x02 \xb2 END   
-INIT \xc8\x0c SET_VAR    \x02 J END 
-SCEC SCE033_004 \x08\t SCE_DONE 
-TEXT1 <C TEXT2 \x8b
+INIT \xba\x06\x0c SET_VAR1 N\x02 \x02 |\x02 END  
+INIT \x06\x01\x0c SET_VAR1 \x88 \x02 \xb2 END  
+INIT \xc8\x0c SET_VAR1 NULL \x02 J END
+INIT_TEXT SCE033_004 \x08\t SCE_TEXT TEXT1 <C TEXT2 \x8b
  
 カンナ\n　「ええ。\p旧校舎の地下にある……いえ、あった保健室の話なん\n　　だけれどね。\p１４年前、ある事件が起こって、入り口がコン\n　　クリートで固められて封印されたっていう」@
 拓司\n　「なんだそりゃ。学校の怪談ってヤツか？\p　それともアーバン\n　　フォークロア？　カンナらしくないな」@
@@ -64,9 +54,8 @@ TEXT1 <C TEXT2 \x8b
 カンナ\n　「ネットで調べた、事件に関わった人間の名前」\
 
   
-INIT L\t\x0c SET_VAR  N\x02 \x02 |\x02 END 
-SCEC SCE033_005 \xb2\x0b SCE_DONE 
-TEXT1 @C TEXT2 \xb0
+INIT L\t\x0c SET_VAR1 N\x02 \x02 |\x02 END
+INIT_TEXT SCE033_005 \xb2\x0b SCE_TEXT TEXT1 @C TEXT2 \xb0
  
 拓司\n　「まさか……本当にあった話なのか？」@
 カンナ\n　「ええ。\p１４年前、この５人が旧校舎の保健室で……連続自殺\n　　したの」@
@@ -76,9 +65,8 @@ TEXT1 @C TEXT2 \xb0
 　　要するに、『名所』という響きが、自殺願望者にとって体の\n　　いい『きっかけ』になるわけね」\
 
   
-INIT \xf6\x0b\x0c SET_VAR  N\x02 \x02 |\x02 END 
-SCEC SCE033_006 \xf0\x0e SCE_DONE 
-TEXT1 DC TEXT2 W
+INIT \xf6\x0b\x0c SET_VAR1 N\x02 \x02 |\x02 END
+INIT_TEXT SCE033_006 \xf0\x0e SCE_TEXT TEXT1 DC TEXT2 W
  
 拓司\n　「中央線とか、樹海とか」@
 カンナ\n　「でも、私はそうじゃないと思うの。\p場所は、中央線でも樹海\n　　でもなく、保健室でなければならなかったのではないか、と…\n　　…そう思うの」@
@@ -87,9 +75,8 @@ TEXT1 DC TEXT2 W
 拓司\n　「人魂……？」\
 
   
-INIT 4\x0f\x0c SET_VAR  N\x02 \x02 |\x02 END 
-SCEC SCE033_007 \xca\x10 SCE_DONE 
-TEXT1 HC TEXT2 \x86
+INIT 4\x0f\x0c SET_VAR1 N\x02 \x02 |\x02 END
+INIT_TEXT SCE033_007 \xca\x10 SCE_TEXT TEXT1 HC TEXT2 \x86
  
 \n拓司は思わずカンナの顔に見入った。@
 いったい彼女は何を話そうとしているのだろうか？　カンナは心\n霊現象など信じていない。\pカンナが信じるのは死体であり、殺人\nであり、現実の狂気である。\p幽霊だとか呪いだとか、そういった\n現象を信じる連中を……近親憎悪なのかもしれないが……見下し\nているフシもある。@
@@ -97,9 +84,8 @@ TEXT1 HC TEXT2 \x86
 しかし、それと自殺がどのように結びつく？@
 \z
   
-INIT \x0e\x11\x0c SET_VAR  N\x02 \x02 |\x02 END 
-SCEC SCE033_008 `\x13 SCE_DONE 
-TEXT1 LC TEXT2 {
+INIT \x0e\x11\x0c SET_VAR1 N\x02 \x02 |\x02 END
+INIT_TEXT SCE033_008 `\x13 SCE_TEXT TEXT1 LC TEXT2 {
  
 カンナ\n　「人魂の噂は、１４年前、すでに学校にあった……」@
 拓司\n　「おいおい。\pもしかして、自殺した学生たちの魂だっていうん\n　　じゃないだろうな？」@
@@ -109,9 +95,8 @@ TEXT1 LC TEXT2 {
 拓司\n　「……」\
 
   
-INIT \xa4\x13\x0c SET_VAR  N\x02 \x02 |\x02 END 
-SCEC SCE033_009 \xca\x15 SCE_DONE 
-TEXT1 PC TEXT2 \x91
+INIT \xa4\x13\x0c SET_VAR1 N\x02 \x02 |\x02 END
+INIT_TEXT SCE033_009 \xca\x15 SCE_TEXT TEXT1 PC TEXT2 \x91
  
 カンナ\n　「彼らはみな、人魂が『最後は保健室の中に消えていった』と\n　　証言している。\pそして『人魂は綺麗で、少しも怖くなかった\n　　どちらかとういうと、見ていて落ち着く感じがした』って。@
 　　中村真琴に至ってはこういってるわ……『感動して涙が出た\n　　』」@
@@ -119,9 +104,8 @@ TEXT1 PC TEXT2 \x91
 カンナ\n　「でしょう？\p　火の塊というものは、本能的に人間に警戒心を\n　　引き起こすわ。\pそれが超自然的なものであるとしたらなおさ\n　　ら。\pにも関わらず、彼らは人魂を美しいもの……よいものと\n　　して認識している」\w\n拓司\n　「……」@
 \z
   
-INIT \x0e\x16\x0c SET_VAR  N\x02 \x02 |\x02 END 
-SCEC SCE033_010 \x8c\x18 SCE_DONE 
-TEXT1 TC TEXT2 k
+INIT \x0e\x16\x0c SET_VAR1 N\x02 \x02 |\x02 END
+INIT_TEXT SCE033_010 \x8c\x18 SCE_TEXT TEXT1 TC TEXT2 k
  
 カンナ\n　「人魂じゃないのかもしれないわね。\pなにかの象徴……だと思\n　　う」@
 拓司\n　「象徴？」@
@@ -134,9 +118,8 @@ TEXT1 TC TEXT2 k
 カンナ\n　「……」\
 
   
-INIT \xd0\x18\x0c SET_VAR  N\x02 \x02 |\x02 END 
-SCEC SCE033_011 \xb6\x1a SCE_DONE 
-TEXT1 XC TEXT2 \xbc
+INIT \xd0\x18\x0c SET_VAR1 N\x02 \x02 |\x02 END
+INIT_TEXT SCE033_011 \xb6\x1a SCE_TEXT TEXT1 XC TEXT2 \xbc
  
 　月代カンナはポケットから煙草をとりだして、それを口にくわ\n　えた。@
 　カンナによれば、喫煙は緩慢な自殺行為だという。\p喫煙が肉体\n　に与える悪影響を書いた本を読み（できるだけ攻撃的な傾向が\n　ある嫌煙家によるもののほうが好ましい）、しっかりと内容を\n　理解したうえで吸うことが重要だと、カンナはいう。\p無意識の\n　喫煙は、自殺としての意味がないと、カンナはいう……。@
@@ -147,9 +130,8 @@ TEXT1 XC TEXT2 \xbc
 　　なのに、どうして朝、おれに声をかけた？」\
 
   
-INIT \xfa\x1a\x0c SET_VAR  N\x02 \x02 |\x02 END 
-SCEC SCE033_012 $\x1e SCE_DONE 
-TEXT1 \\C TEXT2 \x8f
+INIT \xfa\x1a\x0c SET_VAR1 N\x02 \x02 |\x02 END
+INIT_TEXT SCE033_012 $\x1e SCE_TEXT TEXT1 \\C TEXT2 \x8f
  
 カンナ\n　「かけたかしら？」@
 拓司\n　「……」@
@@ -161,9 +143,8 @@ TEXT1 \\C TEXT2 \x8f
 　　私たちの夢の世界でしか、ね。\pなのに、いま、私たちは現実\n　　の世界でセックスをした。\pそれって、夢の世界の版図が広が\n　　ったってことじゃないかしら？\p　壁の崩壊。\p性器を介した世\n　　界の侵略行為。\pそうはいえない？」\
 
   
-INIT h\x1e\x0c SET_VAR  N\x02 \x02 |\x02 END 
-SCEC SCE033_013 \xde  SCE_DONE 
-TEXT1 `C TEXT2 |
+INIT h\x1e\x0c SET_VAR1 N\x02 \x02 |\x02 END
+INIT_TEXT SCE033_013 \xde  SCE_TEXT TEXT1 `C TEXT2 |
  
 拓司\n　「……くだらない」@
 \n拓司はいったが、さきほど体験した世界のスライド現象……現実\nと妄想の世界を区別できなかった……を思い起こして、ふたたび\nゾッとした。\pその恐怖を振り払うように、拓司は繰り返していっ\nた。@
@@ -173,9 +154,8 @@ TEXT1 `C TEXT2 |
 /*▲BGM　停止　*/\a4,-1,0,0,\nカンナ\n　「……あなた、もしかして裏切ろうとしていない？」\
 
   
-INIT "!\x0c SET_VAR  N\x02 \x02 |\x02 END 
-SCEC SCE033_014 L# SCE_DONE 
-TEXT1 dC TEXT2 -
+INIT "!\x0c SET_VAR1 N\x02 \x02 |\x02 END
+INIT_TEXT SCE033_014 L# SCE_TEXT TEXT1 dC TEXT2 -
  
 拓司\n　「裏切る？」@
 カンナ\n　「そう」@
@@ -186,9 +166,8 @@ TEXT1 dC TEXT2 -
 拓司\n　「……」\
 
   
-INIT \x90#\x0c SET_VAR  N\x02 \x02 |\x02 END 
-SCEC SCE033_015 ~$ SCE_DONE 
-TEXT1 hC TEXT2 k
+INIT \x90#\x0c SET_VAR1 N\x02 \x02 |\x02 END
+INIT_TEXT SCE033_015 ~$ SCE_TEXT TEXT1 hC TEXT2 k
  
 真意を測ろうと、拓司はカンナの表情を探った。\p一瞬、そこには\n何かが宿っているようにも見えたが、結局、なにも見いだすこと\nはできなかった。\pカンナの顔にはいつもの、深い井戸を思わせる\n虚無がこびりついているだけだった。@
 \nカンナ\n　「－－さよなら。\p今晩は私、行かないから」@
@@ -196,12 +175,11 @@ TEXT1 hC TEXT2 k
 バタン、と鉄の扉が閉まる音が背後で響いた。\
 
   
-INIT \xc2$\x0c SET_VAR  N\x02 \x02 |\x02 END \x03$
+INIT \xc2$\x0c SET_VAR1 N\x02 \x02 |\x02 END\x03$
 CHOICE
 拓司は紅葉はどうしているだろうかと考えた\n拓司は今朝の早桃の様子が気になった\n拓司はそのままぼんやりと屋上から地上を眺めていた\n\l0,3,
 ENDCHOICE
 
   
-INIT \xa8&\x0c SET_VAR  N\x02 \x02 |\x02 END  N\x02 
-CMD3 TextClose VAR1 ~' END  N\x02 \x02 ~' END 
+INIT \xa8&\x0c SET_VAR1 N\x02 \x02 |\x02 END N\x02 APPLY_3 TextClose VAR1 ~' END N\x02 \x02 ~' END
 END_SCRIPT

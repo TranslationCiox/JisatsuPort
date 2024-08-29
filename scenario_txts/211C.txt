@@ -1,7 +1,6 @@
 START_SCRIPT
 \xc1\n\x01`B#\x01\xf6\x08
-SCEC SCE211_001 \x06 SCE_DONE 
-TEXT1 PY\x01 TEXT2 \xae
+INIT_TEXT SCE211_001 \x06 SCE_TEXT TEXT1 PY\x01 TEXT2 \xae
  
 もはや世界に定点を見いだすことは不可能だった。@
 『教授が語る世界』と『なたねが語る世界』。@
@@ -15,11 +14,8 @@ TEXT1 PY\x01 TEXT2 \xae
 拓司\n　「おれはおれの世界に戻る」\
 
   
-INIT J\x0c SET_VAR 
-CMD7 .\\Data\\Script\\TextFunc.Fob RUNF "\x03 
-CMD2 TextOn RUNF P\x03 END 
-SCEC SCE211_002 l\x03 SCE_DONE 
-TEXT1 TY\x01 TEXT2 \x86
+INIT J\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF "\x03 APPlY_2 TextOn RUNF P\x03 END
+INIT_TEXT SCE211_002 l\x03 SCE_TEXT TEXT1 TY\x01 TEXT2 \x86
  
 ナタネ\n　「信じないならそれでもいいわ。\pでも、どうやって戻るの？@
 　　あなたは自分の意志で世界を渡り歩くことなんかできない」@
@@ -30,23 +26,17 @@ TEXT1 TY\x01 TEXT2 \x86
 ナタネ\n　「馬鹿なことはやめて」\
 
   
-INIT \xb0\x03\x0c SET_VAR  "\x03 \x02 P\x03 END 
-SCEC SCE211_003 \x02\x06 SCE_DONE 
-TEXT1 XY\x01 TEXT2 I
+INIT \xb0\x03\x0c SET_VAR1 "\x03 \x02 P\x03 END
+INIT_TEXT SCE211_003 \x02\x06 SCE_TEXT TEXT1 XY\x01 TEXT2 I
  
 拓司\n　「ここが現実だったとしたら、俺は死んじまって、それを確認\n　　できないわけだが……それでもいい。\pもうこんなことはたく\n　　さんだ。\pいずれ終わらせなければならない。\pそれが、いまだ\n　　ってことだ」@
 \n拓司は息を止めた。@
 そして躊躇無く自分の下顎を、下から殴りつけた。\
 
   
-INIT F\x06\x0c SET_VAR  "\x03 \x02 P\x03 END   
-INIT \x02\x0c SET_VAR 
-CMD6 .\\Data\\Script\\Bgm.Fob VAR1 \xbe\x07 
-CMD2 SeStop RUNF \xe8\x07 END  "\x03 \x02
-CMD5 TextWindowOffDirect \x10\x08 END   
-INIT \xc8\x0c SET_VAR 
-CMD6 .\\Data\\Script\\Bg.Fob VAR2 R\x08 
-CMD2 BgOn VAR2 |\x08 END  "\x03 \x02
-CMD5 TextWindowOnDirect RUNF \xa4\x08 END  "\x03 
-CMD3 TextClose VAR1 \xd8\x08 END 
+INIT F\x06\x0c SET_VAR1 "\x03 \x02 P\x03 END  
+INIT \x02\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bgm.Fob VAR1 \xbe\x07 APPlY_2 SeStop RUNF \xe8\x07 END "\x03 
+WAVL TextWindowOffDirect \x10\x08 END  
+INIT \xc8\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bg.Fob VAR2R\x08 APPlY_2 BgOn VAR2|\x08 END "\x03 
+WAVL TextWindowOnDirect RUNF \xa4\x08 END "\x03 APPLY_3 TextClose VAR1 \xd8\x08 END
 END_SCRIPT

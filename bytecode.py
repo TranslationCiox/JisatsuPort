@@ -5,7 +5,7 @@ patterns = [
     {
         "pattern": [b'\r', b'\x1e', b'\x8c\x01', b'\r', b'\x02', b'\x1e'],
         # Some kind of variable, that gets assigned a value before a dialogue fragment?
-        "action": "\nTEXT1 "
+        "action": "TEXT1 "
     },
     {
         "pattern": [b'\x0c', b'"', b'\x03'],
@@ -15,32 +15,38 @@ patterns = [
     {
         "pattern": [b'\x02', b'\x1f', b'\xde\x02', b'\x1e', b'\x02', b'5', b' ', b'\x1e', b'\r', b',', b'\x02'],
         # (at the end of scenario files which require a FLAG)
-        "action": "REQUIRE_FLAG "
+        "action": "REQUIRE_SCENARIO_FLAG "
     },
     {
         "pattern": [b'\x06', b'\x0b', b'\x0c', b'\x02', b'"', b'2', b'\xca\x17'],
         # (at the end of BMP loads in CG)
-        "action": "ID_CG"
+        "action": "CG_FLAGS"
     },
     {
         "pattern": [b'\x06', b'\x0b', b'\x0c', b'\x02', b'"', b'2', b'\xa2\x18'],
         # (at the end of BMP loads in BG)
-        "action": "ID_BG"
+        "action": "BG_FLAGS"
     },
     {
-        "pattern": [b'\x02', b'\xc4', b'2', b'\xb6\x0b', b'\x1f', b'\xfe', b'\x1e', b'\x02'],
+        "pattern": [b'\x02', b'\xc4', b'2', b'\xb6\x0b', b'\x1f', b'\xfe', b'\x1e'],
         # (at the end of WAV loads)
-        "action": "ID_WAV"
+        "action": "WAV_FLAGS"
     },
+    {
+        "pattern": [b'\x02', b'\x03', b'\x05'],
+        # Seems to LOAD WAV files
+        "action": "\nWAVL "
+    },
+
     {
         "pattern": [b'\x02', b'\x1f', b'\xb6\x01', b'\x1e', b'\x02', b'5'],
         # (Used a lot in SCENARIOROOT)
-        "action": "ID_SCENARIO "
+        "action": "SCENARIO_FLAGS"
     },
     {
         "pattern": [b'\02', b'\x1f', b'\xde\x02', b'\x1e', b'\x02', b'5'],
         # (Used a lot in SCENARIOROOT)
-        "action": "FLAG_DEPENDANT"
+        "action": "CHOICE_FLAG_REQUIRED"
     },
     {
         "pattern": [b'\x01', b'start', b'\xef', b'i\x01C'],
@@ -54,33 +60,33 @@ patterns = [
     },
     {
         "pattern": [b'v\x81\x1f'],
-        # Seems to CLOSE something
+        # Seems to indicate a var for commands
         "action": " VAR1 "
     },
     {
         "pattern": [b'sv\x81\x1f'],
-        # Seems to OPEN something
-        "action": " VAR2 "
+        # Seems to indicate a var for commands
+        "action": " VAR2"
     },
     {
         "pattern": [b'\x02', b'\x03', b'\x02'],
-        # Goes before commands
-        "action": "\nCMD2 "
+        # seems to apply something.
+        "action": "APPlY_2 "
     },
     {
         "pattern": [b'\x02', b'\x03', b'\x03'],
-        # Goes before commands
-        "action": "\nCMD3 "
+        # seems to apply something.
+        "action": "APPLY_3 "
     },
     {
         "pattern": [b'\x03', b'\x03'],
         # Goes before SCE Calls
-        "action": "\nSCEC "
+        "action": "\nINIT_TEXT "
     },
     {
         "pattern": [b'\x03', b'\x04'],
         # Goes before certain calls (Textbox, BGFADEIN)
-        "action": "\nCMD4 "
+        "action": " APPLY_4 "
     },
     {
         "pattern": [b'\x03', b'\x05'],
@@ -90,12 +96,12 @@ patterns = [
     {
         "pattern": [b'\x03', b'\x06'],
         # Seems to LOAD script FOB calls, sometimes other things.
-        "action": "\nCMD6 "
+        "action": " APPLY_FILE "
     },
     {
         "pattern": [b'\x03', b'\x07'],
         # Seems to LOAD TextFunc.FOB, sometimes other things
-        "action": "\nCMD7 "
+        "action": " APPLY_FILE "
     },
     {
         "pattern": [b'\x03', b'\x08'],
@@ -115,12 +121,12 @@ patterns = [
     {
         "pattern": [b'\x1e', b'\x02', b'5'],
         # Seems to END command statements.
-        "action": " END "
+        "action": " END"
     },
     {
         "pattern": [b'\x02', b'\xef', b'!'],
         # Seems to END CSCEXX_XXX statements.
-        "action": "SCE_DONE"
+        "action": "SCE_TEXT"
     },
     {
         "pattern": [b'\x1f', b'j'],
@@ -140,7 +146,7 @@ patterns = [
     {
         "pattern": [b'\r', b'\x02'],
         # Some kind of COMMAND.
-        "action": " FLG2"
+        "action": " SET_VAR2"
     },
     {
         "pattern": [b'\r'],
@@ -150,8 +156,15 @@ patterns = [
     {
         "pattern": [b'\x02', b'"'],
         # Seems to be related to FLG1
-        "action": " SET_VAR "
+        "action": " SET_VAR1"
     },
+
+    {
+        "pattern": [b'\x1f', b' ', b'\x1e'],
+        # Likely some kind of NULL?
+        "action": " NULL "
+    },
+
     {
         "pattern": [b'\x1e'],
         # Likely a  delimiter (group)

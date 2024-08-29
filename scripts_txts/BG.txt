@@ -1,170 +1,147 @@
 \nBgLoadi\x01C\t-\x01`B#\x01\nBgAutoFadeIn-\x01`B#\x01\x04\x19BgAutoOneIn-\x01`B#\x01\x06\x1cBgNormalFadeOut\x01`B#\x01~\x1eBgNormalFadeIn\x01`B#\x01\x98\x1eBgFadeInadeIn\x01`B#\x01\xa2\x1fBgOneInadeIn\x01`B#\x01\xb8!BgOffInadeIn\x01`B#\x012#GetNowBgIDeIn\x01`B#\x01D#ClearBgIDeIn\x01`B#\x01`#h'\x01\x01  FLG3 r\x15
-CMD5 .\\Data\\CG\\CG01.bmp $ ID_BG
-CMD5 .\\Data\\CG\\CG02.bmp Z ID_BG
-CMD5 .\\Data\\CG\\CG03.bmp \x90 ID_BG
-CMD5 .\\Data\\CG\\CG04.bmp \xc6 ID_BG
-CMD5 .\\Data\\CG\\CG05.bmp \xfc ID_BG
-CMD5 .\\Data\\CG\\CG06.bmp 2\x01 ID_BG
-CMD5 .\\Data\\CG\\CG07.bmp h\x01 ID_BG
-CMD5 .\\Data\\CG\\CG08.bmp \x9e\x01 ID_BG
-CMD5 .\\Data\\CG\\CG09.bmp \xd4\x01 ID_BG
-CMD5 .\\Data\\CG\\CG10.bmp \n\x02 ID_BG
-CMD5 .\\Data\\CG\\CG11.bmp @\x02 ID_BG
-CMD5 .\\Data\\CG\\CG12.bmp v\x02 ID_BG
-CMD5 .\\Data\\CG\\CG13.bmp \xac\x02 ID_BG
-CMD5 .\\Data\\CG\\CG14.bmp \xe2\x02 ID_BG
-CMD5 .\\Data\\CG\\CG15.bmp \x18\x03 ID_BG
-CMD5 .\\Data\\CG\\CG16.bmp N\x03 ID_BG
-CMD5 .\\Data\\CG\\CG17.bmp \x84\x03 ID_BG
-CMD5 .\\Data\\CG\\CG18.bmp \xba\x03 ID_BG
-CMD5 .\\Data\\CG\\CG19.bmp \xf0\x03 ID_BG
-CMD5 .\\Data\\CG\\CG20.bmp &\x04 ID_BG
-CMD5 .\\Data\\CG\\CG21.bmp \\\x04 ID_BG
-CMD5 .\\Data\\CG\\CG22.bmp \x92\x04 ID_BG
-CMD5 .\\Data\\CG\\CG23.bmp \xc8\x04 ID_BG
-CMD5 .\\Data\\CG\\CG24.bmp \xfe\x04 ID_BG
-CMD5 .\\Data\\CG\\CG25.bmp 4\x05 ID_BG
-CMD5 .\\Data\\CG\\CG26.bmp j\x05 ID_BG
-CMD5 .\\Data\\CG\\CG27.bmp \xa0\x05 ID_BG
-CMD5 .\\Data\\CG\\CG28.bmp \xd6\x05 ID_BG
-CMD5 .\\Data\\CG\\CG29.bmp \x0c\x06 ID_BG
-CMD5 .\\Data\\CG\\CG30.bmp B\x06 ID_BG
-CMD5 .\\Data\\CG\\CG31.bmp x\x06 ID_BG
-CMD5 .\\Data\\CG\\CG32.bmp \xae\x06 ID_BG
-CMD5 .\\Data\\CG\\CG33.bmp \xe4\x06 ID_BG
-CMD5 .\\Data\\CG\\CG34.bmp \x1a\x07 ID_BG
-CMD5 .\\Data\\CG\\CG35.bmp P\x07 ID_BG
-CMD5 .\\Data\\CG\\CG36.bmp \x86\x07 ID_BG
-CMD5 .\\Data\\CG\\CG37.bmp \xbc\x07 ID_BG
-CMD5 .\\Data\\CG\\CG38.bmp \xf2\x07 ID_BG
-CMD5 .\\Data\\CG\\CG39.bmp (\x08 ID_BG
-CMD5 .\\Data\\CG\\CG40.bmp ^\x08 ID_BG
-CMD5 .\\Data\\CG\\CG41.bmp \x94\x08 ID_BG
-CMD5 .\\Data\\CG\\CG42.bmp \xca\x08 ID_BG
-CMD5 .\\Data\\CG\\CG43.bmp \t ID_BG
-CMD5 .\\Data\\CG\\CG44.bmp 6\t ID_BG
-CMD5 .\\Data\\CG\\CG45.bmp l\t ID_BG
-CMD5 .\\Data\\CG\\CG46.bmp \xa2\t ID_BG
-CMD5 .\\Data\\CG\\CG47.bmp \xd8\t ID_BG
-CMD5 .\\Data\\CG\\CG48.bmp \x0e\n ID_BG
-CMD5 .\\Data\\CG\\CG49.bmp D\n ID_BG
-CMD5 .\\Data\\CG\\CG50.bmp z\n ID_BG
-CMD5 .\\Data\\CG\\CG51.bmp \xb0\n ID_BG
-CMD5 .\\Data\\CG\\CG52.bmp \xe6\n ID_BG
-CMD5 .\\Data\\CG\\CG53.bmp \x1c\x0b ID_BG
-CMD5 .\\Data\\CG\\CG54.bmp R\x0b ID_BG
-CMD5 .\\Data\\CG\\CG55.bmp \x88\x0b ID_BG
-CMD5 .\\Data\\CG\\CG56.bmp \xbe\x0b ID_BG
-CMD5 .\\Data\\CG\\CG57.bmp \xf4\x0b ID_BG
-CMD5 .\\Data\\CG\\CG58.bmp *\x0c ID_BG
-CMD5 .\\Data\\CG\\CG59.bmp `\x0c ID_BG
-CMD5 .\\Data\\CG\\CG60.bmp \x96\x0c ID_BG
-CMD5 .\\Data\\CG\\CG61.bmp \xcc\x0c ID_BG
-CMD5 .\\Data\\CG\\CG62.bmp \x02\r ID_BG
-CMD5 .\\Data\\CG\\CG63.bmp 8\r ID_BG
-CMD5 .\\Data\\CG\\CG64.bmp n\r ID_BG
-CMD5 .\\Data\\CG\\CG65.bmp \xa4\r ID_BG
-CMD5 .\\Data\\CG\\CG66.bmp \xda\r ID_BG
-CMD5 .\\Data\\CG\\CG67.bmp \x10\x0e ID_BG
-CMD5 .\\Data\\CG\\CG68.bmp F\x0e ID_BG
-CMD5 .\\Data\\CG\\CG69.bmp |\x0e ID_BG
-CMD5 .\\Data\\CG\\CG70.bmp \xb2\x0e ID_BG
-CMD5 .\\Data\\CG\\CG71.bmp \xe8\x0e ID_BG
-CMD5 .\\Data\\CG\\CG72.bmp \x1e\x0f ID_BG
-CMD5 .\\Data\\CG\\HCG01.bmp T\x0f ID_BG
-CMD5 .\\Data\\CG\\HCG02.bmp \x8a\x0f ID_BG
-CMD5 .\\Data\\CG\\HCG03.bmp \xc0\x0f ID_BG
-CMD5 .\\Data\\CG\\HCG04.bmp \xf6\x0f ID_BG
-CMD5 .\\Data\\CG\\HCG05.bmp ,\x10 ID_BG
-CMD5 .\\Data\\CG\\HCG06.bmp b\x10 ID_BG
-CMD5 .\\Data\\CG\\HCG07.bmp \x98\x10 ID_BG
-CMD5 .\\Data\\CG\\HCG08.bmp \xce\x10 ID_BG
-CMD5 .\\Data\\CG\\HCG09.bmp \x04\x11 ID_BG
-CMD5 .\\Data\\CG\\HCG10.bmp :\x11 ID_BG
-CMD5 .\\Data\\CG\\HCG11.bmp p\x11 ID_BG
-CMD5 .\\Data\\CG\\HCG12.bmp \xa6\x11 ID_BG
-CMD5 .\\Data\\CG\\HCG13.bmp \xdc\x11 ID_BG
-CMD5 .\\Data\\CG\\HCG14.bmp \x12\x12 ID_BG
-CMD5 .\\Data\\CG\\HCG15.bmp H\x12 ID_BG
-CMD5 .\\Data\\CG\\HCG16.bmp ~\x12 ID_BG
-CMD5 .\\Data\\CG\\HCG17.bmp \xb4\x12 ID_BG
-CMD5 .\\Data\\CG\\HCG18.bmp \xea\x12 ID_BG
-CMD5 .\\Data\\CG\\HCG19.bmp  \x13 ID_BG
-CMD5 .\\Data\\CG\\HCG20.bmp V\x13 ID_BG
-CMD5 .\\Data\\CG\\HCG21.bmp \x8c\x13 ID_BG
-CMD5 .\\Data\\CG\\HCG22.bmp \xc2\x13 ID_BG
-CMD5 .\\Data\\CG\\HCG23.bmp \xf8\x13 ID_BG
-CMD5 .\\Data\\CG\\HCG24.bmp .\x14 ID_BG
-CMD5 .\\Data\\CG\\Black.bmp d\x14 ID_BG
-CMD5 .\\Data\\CG\\white.bmp \x9a\x14 ID_BG
-CMD5 .\\Data\\CG\\CG73.bmp \xd0\x14 ID_BG
-CMD5 .\\Data\\CG\\red.bmp \x06\x15 ID_BG
-CMD5 .\\Data\\CG\\title.bmp <\x15 ID_BG2\xa2\x18\xa2\x18e \x01T\x02\x8a\x03\xc0\x04\xf6\x05,\x01\x06b\x01\x07\x98\x01\x08\xce\x01\t\x04\x02\n:\x02\x0bp\x02\x0c\xa6\x02
+CMD5 .\\Data\\CG\\CG01.bmp $ BG_FLAGS
+CMD5 .\\Data\\CG\\CG02.bmp Z BG_FLAGS
+CMD5 .\\Data\\CG\\CG03.bmp \x90 BG_FLAGS
+CMD5 .\\Data\\CG\\CG04.bmp \xc6 BG_FLAGS
+CMD5 .\\Data\\CG\\CG05.bmp \xfc BG_FLAGS
+CMD5 .\\Data\\CG\\CG06.bmp 2\x01 BG_FLAGS
+CMD5 .\\Data\\CG\\CG07.bmp h\x01 BG_FLAGS
+CMD5 .\\Data\\CG\\CG08.bmp \x9e\x01 BG_FLAGS
+CMD5 .\\Data\\CG\\CG09.bmp \xd4\x01 BG_FLAGS
+CMD5 .\\Data\\CG\\CG10.bmp \n\x02 BG_FLAGS
+CMD5 .\\Data\\CG\\CG11.bmp @\x02 BG_FLAGS
+CMD5 .\\Data\\CG\\CG12.bmp v\x02 BG_FLAGS
+CMD5 .\\Data\\CG\\CG13.bmp \xac\x02 BG_FLAGS
+CMD5 .\\Data\\CG\\CG14.bmp \xe2\x02 BG_FLAGS
+CMD5 .\\Data\\CG\\CG15.bmp \x18\x03 BG_FLAGS
+CMD5 .\\Data\\CG\\CG16.bmp N\x03 BG_FLAGS
+CMD5 .\\Data\\CG\\CG17.bmp \x84\x03 BG_FLAGS
+CMD5 .\\Data\\CG\\CG18.bmp \xba\x03 BG_FLAGS
+CMD5 .\\Data\\CG\\CG19.bmp \xf0\x03 BG_FLAGS
+CMD5 .\\Data\\CG\\CG20.bmp &\x04 BG_FLAGS
+CMD5 .\\Data\\CG\\CG21.bmp \\\x04 BG_FLAGS
+CMD5 .\\Data\\CG\\CG22.bmp \x92\x04 BG_FLAGS
+CMD5 .\\Data\\CG\\CG23.bmp \xc8\x04 BG_FLAGS
+CMD5 .\\Data\\CG\\CG24.bmp \xfe\x04 BG_FLAGS
+CMD5 .\\Data\\CG\\CG25.bmp 4\x05 BG_FLAGS
+CMD5 .\\Data\\CG\\CG26.bmp j\x05 BG_FLAGS
+CMD5 .\\Data\\CG\\CG27.bmp \xa0\x05 BG_FLAGS
+CMD5 .\\Data\\CG\\CG28.bmp \xd6\x05 BG_FLAGS
+CMD5 .\\Data\\CG\\CG29.bmp \x0c\x06 BG_FLAGS
+CMD5 .\\Data\\CG\\CG30.bmp B\x06 BG_FLAGS
+CMD5 .\\Data\\CG\\CG31.bmp x\x06 BG_FLAGS
+CMD5 .\\Data\\CG\\CG32.bmp \xae\x06 BG_FLAGS
+CMD5 .\\Data\\CG\\CG33.bmp \xe4\x06 BG_FLAGS
+CMD5 .\\Data\\CG\\CG34.bmp \x1a\x07 BG_FLAGS
+CMD5 .\\Data\\CG\\CG35.bmp P\x07 BG_FLAGS
+CMD5 .\\Data\\CG\\CG36.bmp \x86\x07 BG_FLAGS
+CMD5 .\\Data\\CG\\CG37.bmp \xbc\x07 BG_FLAGS
+CMD5 .\\Data\\CG\\CG38.bmp \xf2\x07 BG_FLAGS
+CMD5 .\\Data\\CG\\CG39.bmp (\x08 BG_FLAGS
+CMD5 .\\Data\\CG\\CG40.bmp ^\x08 BG_FLAGS
+CMD5 .\\Data\\CG\\CG41.bmp \x94\x08 BG_FLAGS
+CMD5 .\\Data\\CG\\CG42.bmp \xca\x08 BG_FLAGS
+CMD5 .\\Data\\CG\\CG43.bmp \t BG_FLAGS
+CMD5 .\\Data\\CG\\CG44.bmp 6\t BG_FLAGS
+CMD5 .\\Data\\CG\\CG45.bmp l\t BG_FLAGS
+CMD5 .\\Data\\CG\\CG46.bmp \xa2\t BG_FLAGS
+CMD5 .\\Data\\CG\\CG47.bmp \xd8\t BG_FLAGS
+CMD5 .\\Data\\CG\\CG48.bmp \x0e\n BG_FLAGS
+CMD5 .\\Data\\CG\\CG49.bmp D\n BG_FLAGS
+CMD5 .\\Data\\CG\\CG50.bmp z\n BG_FLAGS
+CMD5 .\\Data\\CG\\CG51.bmp \xb0\n BG_FLAGS
+CMD5 .\\Data\\CG\\CG52.bmp \xe6\n BG_FLAGS
+CMD5 .\\Data\\CG\\CG53.bmp \x1c\x0b BG_FLAGS
+CMD5 .\\Data\\CG\\CG54.bmp R\x0b BG_FLAGS
+CMD5 .\\Data\\CG\\CG55.bmp \x88\x0b BG_FLAGS
+CMD5 .\\Data\\CG\\CG56.bmp \xbe\x0b BG_FLAGS
+CMD5 .\\Data\\CG\\CG57.bmp \xf4\x0b BG_FLAGS
+CMD5 .\\Data\\CG\\CG58.bmp *\x0c BG_FLAGS
+CMD5 .\\Data\\CG\\CG59.bmp `\x0c BG_FLAGS
+CMD5 .\\Data\\CG\\CG60.bmp \x96\x0c BG_FLAGS
+CMD5 .\\Data\\CG\\CG61.bmp \xcc\x0c BG_FLAGS
+CMD5 .\\Data\\CG\\CG62.bmp \x02\r BG_FLAGS
+CMD5 .\\Data\\CG\\CG63.bmp 8\r BG_FLAGS
+CMD5 .\\Data\\CG\\CG64.bmp n\r BG_FLAGS
+CMD5 .\\Data\\CG\\CG65.bmp \xa4\r BG_FLAGS
+CMD5 .\\Data\\CG\\CG66.bmp \xda\r BG_FLAGS
+CMD5 .\\Data\\CG\\CG67.bmp \x10\x0e BG_FLAGS
+CMD5 .\\Data\\CG\\CG68.bmp F\x0e BG_FLAGS
+CMD5 .\\Data\\CG\\CG69.bmp |\x0e BG_FLAGS
+CMD5 .\\Data\\CG\\CG70.bmp \xb2\x0e BG_FLAGS
+CMD5 .\\Data\\CG\\CG71.bmp \xe8\x0e BG_FLAGS
+CMD5 .\\Data\\CG\\CG72.bmp \x1e\x0f BG_FLAGS
+CMD5 .\\Data\\CG\\HCG01.bmp T\x0f BG_FLAGS
+CMD5 .\\Data\\CG\\HCG02.bmp \x8a\x0f BG_FLAGS
+CMD5 .\\Data\\CG\\HCG03.bmp \xc0\x0f BG_FLAGS
+CMD5 .\\Data\\CG\\HCG04.bmp \xf6\x0f BG_FLAGS
+CMD5 .\\Data\\CG\\HCG05.bmp ,\x10 BG_FLAGS
+CMD5 .\\Data\\CG\\HCG06.bmp b\x10 BG_FLAGS
+CMD5 .\\Data\\CG\\HCG07.bmp \x98\x10 BG_FLAGS
+CMD5 .\\Data\\CG\\HCG08.bmp \xce\x10 BG_FLAGS
+CMD5 .\\Data\\CG\\HCG09.bmp \x04\x11 BG_FLAGS
+CMD5 .\\Data\\CG\\HCG10.bmp :\x11 BG_FLAGS
+CMD5 .\\Data\\CG\\HCG11.bmp p\x11 BG_FLAGS
+CMD5 .\\Data\\CG\\HCG12.bmp \xa6\x11 BG_FLAGS
+CMD5 .\\Data\\CG\\HCG13.bmp \xdc\x11 BG_FLAGS
+CMD5 .\\Data\\CG\\HCG14.bmp \x12\x12 BG_FLAGS
+CMD5 .\\Data\\CG\\HCG15.bmp H\x12 BG_FLAGS
+CMD5 .\\Data\\CG\\HCG16.bmp ~\x12 BG_FLAGS
+CMD5 .\\Data\\CG\\HCG17.bmp \xb4\x12 BG_FLAGS
+CMD5 .\\Data\\CG\\HCG18.bmp \xea\x12 BG_FLAGS
+CMD5 .\\Data\\CG\\HCG19.bmp  \x13 BG_FLAGS
+CMD5 .\\Data\\CG\\HCG20.bmp V\x13 BG_FLAGS
+CMD5 .\\Data\\CG\\HCG21.bmp \x8c\x13 BG_FLAGS
+CMD5 .\\Data\\CG\\HCG22.bmp \xc2\x13 BG_FLAGS
+CMD5 .\\Data\\CG\\HCG23.bmp \xf8\x13 BG_FLAGS
+CMD5 .\\Data\\CG\\HCG24.bmp .\x14 BG_FLAGS
+CMD5 .\\Data\\CG\\Black.bmp d\x14 BG_FLAGS
+CMD5 .\\Data\\CG\\white.bmp \x9a\x14 BG_FLAGS
+CMD5 .\\Data\\CG\\CG73.bmp \xd0\x14 BG_FLAGS
+CMD5 .\\Data\\CG\\red.bmp \x06\x15 BG_FLAGS
+CMD5 .\\Data\\CG\\title.bmp <\x15 BG_FLAGS2\xa2\x18\xa2\x18e \x01T\x02\x8a\x03\xc0\x04\xf6\x05,\x01\x06b\x01\x07\x98\x01\x08\xce\x01\t\x04\x02\n:\x02\x0bp\x02\x0c\xa6\x02
 INIT\xdc\x02\x0e\x12\x03\x0fH\x03\x10~\x03\x11\xb4\x03\x12\xea\x03\x13 \x04\x14V\x04\x15\x8c\x04\x16\xc2\x04\x17\xf8\x04\x18.\x05\x19d\x05\x1a\x9a\x05\x1b\xd0\x05\x1c\x06\x06\x1d<\x06 r\x06 \xa8\x06 \xde\x06!\x14\x07"J\x07#\x80\x07$\xb6\x07%\xec\x07&"\x08'X\x08(\x8e\x08)\xc4\x08*\xfa\x08+0\t,f\t-\x9c\t.\xd2\t/\x08\n0>\n1t\n2\xaa\n3\xe0\n4\x16\x0b5L\x0b6\x82\x0b7\xb8\x0b8\xee\x0b9$\x0c:Z\x0c;\x90\x0c<\xc6\x0c=\xfc\x0c>2\r?h\r@\x9e\rA\xd4\rB\n\x0eC@\x0eDv\x0eE\xac\x0eF\xe2\x0eG\x18\x0fHN\x0fI\x84\x0fJ\xba\x0fK\xf0\x0fL&\x10M\\\x10N\x92\x10O\xc8\x10P\xfe\x10Q4\x11Rj\x11S\xa0\x11T\xd6\x11U\x0c\x12VB\x12Wx\x12X\xae\x12Y\xe4\x12Z\x1a\x13[P\x13\\\x86\x13]\xbc\x13^\xf2\x13_(\x14\xc8^\x14\xc9\x94\x14\xca\xca\x14\xcb\x15,\x016\x15 \x06 \x0b
 INIT\x01 \x02  \x04
-INIT \x02  <7\x01\x01\x01\x01\x01\x01\x01\x01
-CMD7 BgAutoFadeIn-old bg:%d\\r* \n\x19 \x02 \xec\x18 \x02#\x04
-CMD7 BgAutoFadeIn-new bg:%d\\r* J\x19 \x02  
+INIT \x02  <7\x01\x01\x01\x01\x01\x01\x01\x01 APPLY_FILE BgAutoFadeIn-old bg:%d\\r* \n\x19 \x02 \xec\x18 \x02#\x04 APPLY_FILE BgAutoFadeIn-new bg:%d\\r* J\x19 \x02  
 INIT \x02#\x04  
 INIT \xec\x18\x0b\x1b\x031\xd4\x19
-SCEC breakbg\\r* \xb4\x19 \x02#\x027\x01\x01  
+INIT_TEXT breakbg\\r* \xb4\x19 \x02#\x027\x01\x01  
 INIT \xda\x19\x0b\x0c\x03"3D#  
-INIT \xc8\x1b\x021\xae\x1a
-CMD6 TextWindowOffDirect\\r* (\x1a \x02#\x02
-CMD7 .\\Data\\Script\\TextFunc.Fob X\x1a \x02
-CMD5 TextWindowOffDirect \x86\x1a END 2\x06\x1b
-CMD4 TextWindowOff\\r \xb4\x1a \x02#\x02 X\x1a \x02
-CMD4 TextWindowOff \xe8\x1a END   
-INIT \xda\x19\x0c\x03"3\x98\x1e \xda\x19 \xc8\x1b\x021\xac\x1b
-CMD6 TextWindowOnDirect\\r* H\x1b \x02#\x02 X\x1a \x02
-CMD5 TextWindowOnDirect \x84\x1b END 2\x04\x1c
-CMD4 TextWindowOn\\r \xb2\x1b \x02#\x02 X\x1a \x02
-CMD4 TextWindowOn \xe6\x1b END 7
-CMD6 BgAutoOn-old bg:%d\\r* \x0c\x1c \x02 \xec\x18 \x02#\x04
-CMD6 BgAutoOn-new bg:%d\\r* H\x1c \x02  
+INIT \xc8\x1b\x021\xae\x1a APPLY_FILE TextWindowOffDirect\\r* (\x1a \x02#\x02 APPLY_FILE .\\Data\\Script\\TextFunc.Fob X\x1a 
+WAVL TextWindowOffDirect \x86\x1a END2\x06\x1b APPLY_4 TextWindowOff\\r \xb4\x1a \x02#\x02 X\x1a \x02 APPLY_4 TextWindowOff \xe8\x1a END  
+INIT \xda\x19\x0c\x03"3\x98\x1e \xda\x19 \xc8\x1b\x021\xac\x1b APPLY_FILE TextWindowOnDirect\\r* H\x1b \x02#\x02 X\x1a 
+WAVL TextWindowOnDirect \x84\x1b END2\x04\x1c APPLY_4 TextWindowOn\\r \xb2\x1b \x02#\x02 X\x1a \x02 APPLY_4 TextWindowOn \xe6\x1b END7 APPLY_FILE BgAutoOn-old bg:%d\\r* \x0c\x1c \x02 \xec\x18 \x02#\x04 APPLY_FILE BgAutoOn-new bg:%d\\r* H\x1c \x02  
 INIT \x02#\x04  
 INIT \xec\x18\x0b\x1b\x031\xce\x1c
-SCEC breakbg\\r* \xae\x1c \x02#\x027\x01\x01  
+INIT_TEXT breakbg\\r* \xae\x1c \x02#\x027\x01\x01  
 INIT \xd4\x1c\x0b\x0c\x03"3D#  
-INIT \xc8\x1b\x021l\x1d
-CMD6 TextWindowOffDirect\\r* "\x1d \x02#\x02 X\x1a \x02 \x86\x1a END 2\xae\x1d
-CMD4 TextWindowOff\\r r\x1d \x02#\x02 X\x1a \x02 \xe8\x1a END   
-INIT \xd4\x1c\x0c\x03"3\xb8! \xd4\x1c \xc8\x1b\x021:\x1e
-CMD6 TextWindowOnDirect\\r* \xf0\x1d \x02#\x02 X\x1a \x02 \x84\x1b END 2|\x1e
-CMD4 TextWindowOn\\r @\x1e \x02#\x02 X\x1a \x02 \xe6\x1b END 7  
-INIT \xc8\x0c SET_VAR 
-CMD7 BgNormalFadeIn-old bg:%d\\r \x9e\x1e \x02 \xec\x18 \x02#\x04
-CMD7 BgNormalFadeIn-new bg:%d\\r \xde\x1e \x02  
+INIT \xc8\x1b\x021l\x1d APPLY_FILE TextWindowOffDirect\\r* "\x1d \x02#\x02 X\x1a \x02 \x86\x1a END2\xae\x1d APPLY_4 TextWindowOff\\r r\x1d \x02#\x02 X\x1a \x02 \xe8\x1a END  
+INIT \xd4\x1c\x0c\x03"3\xb8! \xd4\x1c \xc8\x1b\x021:\x1e APPLY_FILE TextWindowOnDirect\\r* \xf0\x1d \x02#\x02 X\x1a \x02 \x84\x1b END2|\x1e APPLY_4 TextWindowOn\\r @\x1e \x02#\x02 X\x1a \x02 \xe6\x1b END7  
+INIT \xc8\x0c SET_VAR1 APPLY_FILE BgNormalFadeIn-old bg:%d\\r \x9e\x1e \x02 \xec\x18 \x02#\x04 APPLY_FILE BgNormalFadeIn-new bg:%d\\r \xde\x1e \x02  
 INIT \x02#\x04  
 INIT \xec\x18\x0b\x1b\x031h\x1f
-SCEC breakbg\\r* H\x1f \x02#\x027  \x04
-INIT \x10\x0c SET_VAR   \x08
-INIT \x01\x0c SET_VAR 2  
-CMD6 BgFadeIn-old bg:%d\\r* \xa8\x1f \x02 \xec\x18 \x02#\x04
-CMD6 BgFadeIn-new bg:%d\\r* \xe4\x1f \x02  
+INIT_TEXT breakbg\\r* H\x1f \x02#\x027  \x04
+INIT \x10\x0c SET_VAR1  \x08
+INIT \x01\x0c SET_VAR12   APPLY_FILE BgFadeIn-old bg:%d\\r* \xa8\x1f \x02 \xec\x18 \x02#\x04 APPLY_FILE BgFadeIn-new bg:%d\\r* \xe4\x1f \x02  
 INIT \x02#\x04  
 INIT \xec\x18\x0b\x0c\x03"  \x04
 INIT \xf6\x18\x0b\x0c\x03"  \x08
 INIT \x19\x0b\x0c\x03"! \x08
-INIT \x08 FLG2 \x0b
-INIT\x01,\xd8 2\xf0  \xf6\x18 \x01\x0c SET_VAR  \x19 \x0c SET_VAR 2\xf0 2\xf0 \xf0 \x02\x9e \x01\xa4  \xe2\x18 \x0c SET_VAR 3v# \xe2\x18 \x0c SET_VAR   
+INIT \x08 SET_VAR2 \x0b
+INIT\x01,\xd8 2\xf0  \xf6\x18 \x01\x0c SET_VAR1 \x19 \x0c SET_VAR12\xf0 2\xf0 \xf0 \x02\x9e \x01\xa4  \xe2\x18 \x0c SET_VAR13v# \xe2\x18 \x0c SET_VAR1  
 INIT \xec\x18 \x04\x0f\x02 \x90\x01\x0b
-INIT\x0c SET_VAR   \x04
-INIT \x01\x0c SET_VAR 
-CMD6 .\\Data\\Script\\Data.fob n! \x02
-CMD4 SetSystemInfo2 \x98! END 7
-CMD4 BgOn-old bg%d\\r \xbe! \x02 \xec\x18 \x02#\x04
-CMD4 BgOn-new bg%d\\r \xf2! \x02  
+INIT\x0c SET_VAR1  \x04
+INIT \x01\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Data.fob n! \x02 APPLY_4 SetSystemInfo2 \x98! END7 APPLY_4 BgOn-old bg%d\\r \xbe! \x02 \xec\x18 \x02#\x04 APPLY_4 BgOn-new bg%d\\r \xf2! \x02  
 INIT \x02#\x04  
 INIT \xec\x18\x0b\x1b\x031p"
-SCEC breakbg\\r* P" \x02#\x027  
+INIT_TEXT breakbg\\r* P" \x02#\x027  
 INIT \xec\x18\x0b\x0c\x03"  
 INIT \xec\x18\x0c\x03"  \x04
-INIT \x0c SET_VAR 3\n3\xf2&  
+INIT \x0c SET_VAR13\n3\xf2&  
 INIT \xec\x18 \x04\x0f\x02 \x90\x01\x0b
-INIT\x0c SET_VAR   \x04
-INIT \x01\x0c SET_VAR  n! \x02 \x98! END 7  \xa07  
-INIT \xec\x18\x0c\x03"7 \xec\x18 \xff\xff\xff\xff\x0c SET_VAR 7 \x04 B \x04        \x80\x02  \xe0\x01  \x01       C \x04 D \x04 B  
+INIT\x0c SET_VAR1  \x04
+INIT \x01\x0c SET_VAR1 n! \x02 \x98! END7  \xa07  
+INIT \xec\x18\x0c\x03"7 \xec\x18 \xff\xff\xff\xff\x0c SET_VAR17 \x04 B \x04        \x80\x02  \xe0\x01  \x01       C \x04 D \x04 B  
 INIT \xec\x18\x0c\x03"  \x04
-INIT \x0c SET_VAR 3\n3\xf2& \x01  \x01      \x80\x02  \xe0\x01     \x9f \x01 \xa0\x03\x01\x01 \xf6\x18 \x01\x1b\x02 \x19 \x1b\x02\x191\x0e%2\xba&\x010\x01\x01 \x14% \x02 \x01 \xe2 \xd2$ \x01\x0c SET_VAR  \xd2$ \x1b\x02\x031\xba& \x01  \x01  \xd2$ \x02\xa2 \xd2$ \x04\x0c\x02e" \x14% \x02 \xda% \x02\xe3 \xda% \x1b\x021\xb4& \x14% \x02\xe4 \x01 \x922\x0c& \x01    \x01 \xa2 \x01 \xa06         \x80\x02  \xe0\x01     \x9f  \xa0\x03
+INIT \x0c SET_VAR13\n3\xf2& \x01  \x01      \x80\x02  \xe0\x01     \x9f \x01 \xa0\x03\x01\x01 \xf6\x18 \x01\x1b\x02 \x19 \x1b\x02\x191\x0e%2\xba&\x010\x01\x01 \x14% \x02 \x01 \xe2 \xd2$ \x01\x0c SET_VAR1 \xd2$ \x1b\x02\x031\xba& \x01  \x01  \xd2$ \x02\xa2 \xd2$ \x04\x0c\x02e" \x14% \x02 \xda% \x02\xe3 \xda% \x1b\x021\xb4& \x14% \x02\xe4 \x01 \x922\x0c& \x01    \x01 \xa2 \x01 \xa06         \x80\x02  \xe0\x01     \x9f  \xa0\x03
 END_SCRIPT

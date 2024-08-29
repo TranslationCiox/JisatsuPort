@@ -1,26 +1,17 @@
 START_SCRIPT
-\x01\x06\x01\xa4\t3\x01\xa6\x04
-CMD6 .\\Data\\Script\\Bgm.Fob VAR1 \x06 
-CMD2 StopCD RUNF 0 END   
-INIT \xc8\x0c SET_VAR 
-CMD6 .\\Data\\Script\\Bg.Fob VAR2 f \x02
-CMD4 BgAutoFadeIn VAR2 \x90 END 
-SCEC SCE008_001 \xb4 SCE_DONE 
-TEXT1  \x1c TEXT2 1
+\x01\x06\x01\xa4\t3\x01\xa6\x04 APPLY_FILE .\\Data\\Script\\Bgm.Fob VAR1 \x06 APPlY_2 StopCD RUNF 0 END  
+INIT \xc8\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bg.Fob VAR2f \x02 APPLY_4 BgAutoFadeIn VAR2\x90 END
+INIT_TEXT SCE008_001 \xb4 SCE_TEXT TEXT1  \x1c TEXT2 1
  
 拓司\n　「……これが、おれの願望なのか？\p　違う。\pこんなこと、\n　　おれは望んじゃいない」@
 \n拓司は両手で顔を覆った。\pそしてひとつ、大きなためいきの塊\nを吐き出してから目を閉じた。\
 
   
-INIT \xf8\x0c SET_VAR 
-CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \xdc\x01 
-CMD2 TextOn RUNF \n\x02 END 
-SCEC SCE008_002 &\x02 SCE_DONE 
-TEXT1 $\x1c\x0c"  
-INIT \x02\x0c SET_VAR   \x04
-INIT \x06\x0c SET_VAR   \x08
-INIT \x01\x0c SET_VAR  \x06 
-CMD2 SePlay RUNF \xc4\x02 END \x03H
+INIT \xf8\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF \xdc\x01 APPlY_2 TextOn RUNF \n\x02 END
+INIT_TEXT SCE008_002 &\x02 SCE_TEXT TEXT1 $\x1c\x0c"  
+INIT \x02\x0c SET_VAR1  \x04
+INIT \x06\x0c SET_VAR1  \x08
+INIT \x01\x0c SET_VAR1 \x06 APPlY_2 SePlay RUNF \xc4\x02 END\x03H
  
 再び目を開けると、そこには変わらず換気ファンが回り、沈黙が\nたゆたっている。@
 ただ、早桃の姿だけがない。@
@@ -33,8 +24,6 @@ CMD2 SePlay RUNF \xc4\x02 END \x03H
 おそらくは。\
 
   
-INIT \xe0\x02\x0c SET_VAR  \xdc\x01 \x02 \n\x02 END   
-INIT \x02\x0c SET_VAR  \x06 
-CMD2 SeStop RUNF `\x04 END  \xdc\x01 
-CMD3 TextClose VAR1 \x88\x04 END 
+INIT \xe0\x02\x0c SET_VAR1 \xdc\x01 \x02 \n\x02 END  
+INIT \x02\x0c SET_VAR1 \x06 APPlY_2 SeStop RUNF `\x04 END \xdc\x01 APPLY_3 TextClose VAR1 \x88\x04 END
 END_SCRIPT

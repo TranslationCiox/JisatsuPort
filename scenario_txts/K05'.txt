@@ -1,13 +1,8 @@
 START_SCRIPT
 \x84\x13\x01`B#\x01\xb4\x0f  
-INIT \xc8\x0c SET_VAR 
-CMD6 .\\Data\\Script\\Bg.Fob VAR2   \x02
-CMD4 BgAutoFadeIn VAR2 J END   
-INIT \x04\x01\x0c SET_VAR 
-CMD6 .\\Data\\Script\\Bgm.Fob VAR1 \x88 
-CMD2 PlayCD RUNF \xb2 END 
-SCEC SCEK05_A01 \xce SCE_DONE 
-TEXT1 \xa8\xa6\x01 TEXT2 \xb0
+INIT \xc8\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bg.Fob VAR2  \x02 APPLY_4 BgAutoFadeIn VAR2J END  
+INIT \x04\x01\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bgm.Fob VAR1 \x88 APPlY_2 PlayCD RUNF \xb2 END
+INIT_TEXT SCEK05_A01 \xce SCE_TEXT TEXT1 \xa8\xa6\x01 TEXT2 \xb0
  
 　私は飢えた子猫みたいなものだった。@
 食べても食べても、食べたりなかった。@
@@ -20,20 +15,16 @@ TEXT1 \xa8\xa6\x01 TEXT2 \xb0
 私は真剣に考えた。@
 そしてついに、秘密の共有こそが繋がりを深くする鍵に違いない、\nと思い至った。\w\z
   
-INIT \x12\x01\x0c SET_VAR 
-CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \xf2\x03 
-CMD2 TextOn RUNF  \x04 END 
-SCEC SCEK05_A02 <\x04 SCE_DONE 
-TEXT1 \xac\xa6\x01 TEXT2 R
+INIT \x12\x01\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF \xf2\x03 APPlY_2 TextOn RUNF  \x04 END
+INIT_TEXT SCEK05_A02 <\x04 SCE_TEXT TEXT1 \xac\xa6\x01 TEXT2 R
  
 秘密……これまで誰にも話したことのない、胸の中の暗い秘密を\n告白して、共有すること。@
 それが鎖となれば、私たちはもっときつく互いを縛り合えるよう\nな気がした。@
 縛る……そう、私はゆきに縛ってほしかったし、ゆきを縛りたか\nった。@
 二度と逃げられないくらいに互いを縛り合って、深い海の底に一\n緒に沈んでいきたかった。\w\z
   
-INIT \x80\x04\x0c SET_VAR  \xf2\x03 \x02  \x04 END 
-SCEC SCEK05_A03 \x02\x06 SCE_DONE 
-TEXT1 \xb0\xa6\x01 TEXT2 \x9e
+INIT \x80\x04\x0c SET_VAR1 \xf2\x03 \x02  \x04 END
+INIT_TEXT SCEK05_A03 \x02\x06 SCE_TEXT TEXT1 \xb0\xa6\x01 TEXT2 \x9e
  
 　私の提案に、ゆきは気乗りしない様子だった。@
 「秘密を知ることで、もしかしたら相手のことが嫌いになるとい\nうこともあるんじゃないかな？」@
@@ -45,9 +36,8 @@ TEXT1 \xb0\xa6\x01 TEXT2 \x9e
 私はそれを知りたかった。\pゆきのすべてが。@
 結局、私の熱意がゆきを説き伏せる形となった。\w\z
   
-INIT F\x06\x0c SET_VAR  \xf2\x03 \x02  \x04 END 
-SCEC SCEK05_A04 \xf8\x08 SCE_DONE 
-TEXT1 \xb4\xa6\x01 TEXT2 I
+INIT F\x06\x0c SET_VAR1 \xf2\x03 \x02  \x04 END
+INIT_TEXT SCEK05_A04 \xf8\x08 SCE_TEXT TEXT1 \xb4\xa6\x01 TEXT2 I
  
 　あまり話に関係がないから、私が何を告白したのかはここでは\n語らない。@
 いずれにせよ、私の秘密はゆきを動揺させた。@
@@ -56,10 +46,8 @@ TEXT1 \xb4\xa6\x01 TEXT2 I
 そしてゆきの番だった。@
 \n私はゆきに連れられて、町はずれの歩道橋に向かった。\w\z
   
-INIT <\t\x0c SET_VAR  \xf2\x03 \x02  \x04 END  \x88 
-CMD2 StopCD RUNF \xa6\n END 
-SCEC SCEK05_A05 \xc2\n SCE_DONE 
-TEXT1 \xb8\xa6\x01 TEXT2 \xe1
+INIT <\t\x0c SET_VAR1 \xf2\x03 \x02  \x04 END \x88 APPlY_2 StopCD RUNF \xa6\n END
+INIT_TEXT SCEK05_A05 \xc2\n SCE_TEXT TEXT1 \xb8\xa6\x01 TEXT2 \xe1
  
 　７月２７日（－－この日付が重要なの）。@
 風が全然吹かない日の、蒸し暑い夕方だった。@
@@ -77,12 +65,11 @@ TEXT1 \xb8\xa6\x01 TEXT2 \xe1
 せいいっぱいの勇気と不安が、ゆきの顔のなかでせめぎ合ってい\nた。@
 ゆきはこんなところで何を告白するつもりなのか……？\w\z
   
-INIT \x06\x0b\x0c SET_VAR  \xf2\x03 \x02  \x04 END \x03#
+INIT \x06\x0b\x0c SET_VAR1 \xf2\x03 \x02  \x04 END\x03#
 CHOICE
 不安が広がっていった。「もういいよ。帰ろう」と私はいった。\n好奇心が爆発しそうだった。私は沈黙に耐えながら、歩き続けた。\n\l0,2,
 ENDCHOICE
 
   
-INIT \xc4\x0e\x0c SET_VAR  \xf2\x03 \x02  \x04 END  \xf2\x03 
-CMD3 TextClose VAR1 \x96\x0f END 
+INIT \xc4\x0e\x0c SET_VAR1 \xf2\x03 \x02  \x04 END \xf2\x03 APPLY_3 TextClose VAR1 \x96\x0f END
 END_SCRIPT

@@ -1,7 +1,6 @@
 START_SCRIPT
 *\x03\x01\xb0\x044\x01D\x02
-SCEC SCE017_001 \x06 SCE_DONE 
-TEXT1 0* TEXT2 $
+INIT_TEXT SCE017_001 \x06 SCE_TEXT TEXT1 0* TEXT2 $
  
 拓司\n　「……」@
 紅葉\n　「……」@
@@ -11,15 +10,11 @@ TEXT1 0* TEXT2 $
 紅葉\n　「……」@
 拓司\n　「……」\w\z
   
-INIT J\x0c SET_VAR 
-CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \xfa 
-CMD2 TextOn RUNF (\x01 END 
-SCEC SCE017_002 D\x01 SCE_DONE 
-TEXT1 4* TEXT2 \x16
+INIT J\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF \xfa APPlY_2 TextOn RUNF (\x01 END
+INIT_TEXT SCE017_002 D\x01 SCE_TEXT TEXT1 4* TEXT2 \x16
  
 紅葉\n　「……生理？」@
 拓司\n　「お前なあ、もうちょっと女らしい冗談言えよ」\w\z
   
-INIT \x88\x01\x0c SET_VAR  \xfa \x02 (\x01 END  \xfa 
-CMD3 TextClose VAR1 &\x02 END 
+INIT \x88\x01\x0c SET_VAR1 \xfa \x02 (\x01 END \xfa APPLY_3 TextClose VAR1 &\x02 END
 END_SCRIPT

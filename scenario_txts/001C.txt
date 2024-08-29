@@ -1,15 +1,9 @@
 START_SCRIPT
 \x10\x06\x01\xa4\t3\x01&\x05  
-INIT \xc8\x0c SET_VAR 
-CMD6 .\\Data\\Script\\Bg.Fob VAR2   \x02
-CMD4 BgNormalFadeIn RUNF J END   
-INIT \xc8\x0c SET_VAR    
-CMD2 BgOn VAR2 \x94 END   
-INIT \t\x01\x0c SET_VAR 
-CMD6 .\\Data\\Script\\Bgm.Fob VAR1 \xca 
-CMD2 PlayCD RUNF \xf4 END 
-SCEC SCE001_001 \x10\x01 SCE_DONE 
-TEXT1 0\x11 TEXT2 O
+INIT \xc8\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bg.Fob VAR2  \x02 APPLY_4 BgNormalFadeIn RUNF J END  
+INIT \xc8\x0c SET_VAR1 NULL APPlY_2 BgOn VAR2\x94 END  
+INIT \t\x01\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bgm.Fob VAR1 \xca APPlY_2 PlayCD RUNF \xf4 END
+INIT_TEXT SCE001_001 \x10\x01 SCE_TEXT TEXT1 0\x11 TEXT2 O
  
 世界。@
 世界。@
@@ -24,11 +18,8 @@ TEXT1 0\x11 TEXT2 O
 きの世に義界はるなよっにて定でか？\
 
   
-INIT T\x01\x0c SET_VAR 
-CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \xb0\x02 
-CMD2 TextOn RUNF \xde\x02 END 
-SCEC SCE001_002 \xfa\x02 SCE_DONE 
-TEXT1 4\x11 TEXT2 a
+INIT T\x01\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF \xb0\x02 APPlY_2 TextOn RUNF \xde\x02 END
+INIT_TEXT SCE001_002 \xfa\x02 SCE_TEXT TEXT1 4\x11 TEXT2 a
  
 頭にぼんやりと薄い霧がかかっている。@
 ゲル化した思考が、ゆるゆると頭蓋を這って流れ落ちる。@
@@ -41,6 +32,5 @@ TEXT1 4\x11 TEXT2 a
 なにか？\
 
   
-INIT >\x03\x0c SET_VAR  \xb0\x02 FLAG_DEPENDANT \xb0\x02 
-CMD3 TextClose VAR1 \x08\x05 END 
+INIT >\x03\x0c SET_VAR1 \xb0\x02 CHOICE_FLAG_REQUIRED \xb0\x02 APPLY_3 TextClose VAR1 \x08\x05 END
 END_SCRIPT

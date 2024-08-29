@@ -1,7 +1,6 @@
 START_SCRIPT
 u\x03\x01`\x044\x01\xc6\x02
-SCEC SCE059_001 \x06 SCE_DONE 
-TEXT1 \xd0k TEXT2 z
+INIT_TEXT SCE059_001 \x06 SCE_TEXT TEXT1 \xd0k TEXT2 z
  
 拓司\n　「天使って、なんのことだ？」@
 早桃\n　「……え？」@
@@ -15,8 +14,5 @@ TEXT1 \xd0k TEXT2 z
 早桃は何を隠しているのだろうか？\
 
   
-INIT J\x0c SET_VAR 
-CMD7 .\\Data\\Script\\TextFunc.Fob RUNF R\x02 
-CMD2 TextOn RUNF \x80\x02 END  R\x02 
-CMD3 TextClose VAR1 \xa8\x02 END 
+INIT J\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF R\x02 APPlY_2 TextOn RUNF \x80\x02 END R\x02 APPLY_3 TextClose VAR1 \xa8\x02 END
 END_SCRIPT

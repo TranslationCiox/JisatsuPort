@@ -1,22 +1,17 @@
 START_SCRIPT
 4\x05\x01\xa4\t3\x01\x04
-SCEC SCE067_001 \x06 SCE_DONE 
-TEXT1 Px TEXT2 \xb3
+INIT_TEXT SCE067_001 \x06 SCE_TEXT TEXT1 Px TEXT2 \xb3
  
 カンナ\n　「そうね。\pそれだけがすべてじゃないとは思うけど……。@
 　　赤ちゃんは泣くでしょう？\p　泣いてアピールをするの。@
 　　そうするとあやしてもらえる。\pそしてそこで、赤ちゃんはふ\n　　たつの満足を得るの。\p『自分が困っているという意思表示を\n　　したときには誰かが助けてくれる』という安心感。\pそしても\n　　う一つは……『自分が環境に影響を及ぼすことができる』と\n　　いう自信。\pでも、人手が足りない施設ではそういうのは無視\n　　されることが多い。\p『赤ん坊は泣くことが仕事。\p甘やかす必\n　　要はない』ってね。\pそうなると、赤ちゃんはどうなると思う？\n　　\p泣かなくなるのよ。\p静かになって、面会に来た母親がそこか\n　　ら去っても平気になる。\pさて、こういう状態をなんと呼ぶで\n　　しょう？」\
 
   
-INIT J\x0c SET_VAR 
-CMD7 .\\Data\\Script\\TextFunc.Fob RUNF 6\x03 
-CMD2 TextOn RUNF d\x03 END 
-CMD7 
+INIT J\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF 6\x03 APPlY_2 TextOn RUNF d\x03 END APPLY_FILE 
 CHOICE
 克服\n否認\n\l0,2,
 ENDCHOICE
 
   
-INIT \x80\x03\x0c SET_VAR  6\x03 \x02 d\x03 END  6\x03 
-CMD3 TextClose VAR1 \xe2\x03 END 
+INIT \x80\x03\x0c SET_VAR1 6\x03 \x02 d\x03 END 6\x03 APPLY_3 TextClose VAR1 \xe2\x03 END
 END_SCRIPT

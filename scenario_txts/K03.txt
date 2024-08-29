@@ -1,17 +1,13 @@
 START_SCRIPT
 \x1b\x08\x01`B#\x01\x9c\x06
-SCEC SCEK03_001 \x06 SCE_DONE 
-TEXT1 0\xa6\x01 TEXT2 O
+INIT_TEXT SCEK03_001 \x06 SCE_TEXT TEXT1 0\xa6\x01 TEXT2 O
  
 　つきあってみると、若草ゆきのいろいろなことがわかってき\nた。@
 海外文学に詳しかったり、才色兼備であることなどは知っていた\nけれど、\p意外にもホラー映画が好きだったり、\pケーキマニアだっ\nたり、\pマンガに詳しかったり……。@
 一番の驚きは、彼女もまた、女子校の空気に違和感を覚えていると\nいうことだった。\w\z
   
-INIT J\x0c SET_VAR 
-CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \xa6\x01 
-CMD2 TextOn RUNF \xd4\x01 END 
-SCEC SCEK03_002 \xf0\x01 SCE_DONE 
-TEXT1 4\xa6\x01 TEXT2 \xc5
+INIT J\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF \xa6\x01 APPlY_2 TextOn RUNF \xd4\x01 END
+INIT_TEXT SCEK03_002 \xf0\x01 SCE_TEXT TEXT1 4\xa6\x01 TEXT2 \xc5
  
 　若草ゆきは、私ほど極端な形で、自分と世界の間に線を引いては\nいなかった。@
 しかし、周囲に気づかれないように、上手に自分の領域を守ってい\nたのだった。@
@@ -22,14 +18,11 @@ TEXT1 4\xa6\x01 TEXT2 \xc5
 こちらが世界を否定すれば、世界だってこちらを否定し返すという\nことを、彼女は理解していた。@
 学生としては器用すぎるやりかたで、若草ゆきは世界と折り合いを\nつけていたのだった。\w\z
   
-INIT 4\x02\x0c SET_VAR  \xa6\x01 \x02 \xd4\x01 END \x03\x1c
+INIT 4\x02\x0c SET_VAR1 \xa6\x01 \x02 \xd4\x01 END\x03\x1c
 CHOICE
 そうしたゆきのやり方は、卑怯な妥協だと思えた。\nそうしたゆきのやり方は、スマートだと思えた。\n\l0,2,
 ENDCHOICE
 
   
-INIT \x82\x05\x0c SET_VAR  \xa6\x01 \x02 \xd4\x01 END 
-CMD6 .\\Data\\Script\\Bgm.Fob VAR1 ,\x06 
-CMD2 StopCD RUNF V\x06 END  \xa6\x01 
-CMD3 TextClose VAR1 ~\x06 END 
+INIT \x82\x05\x0c SET_VAR1 \xa6\x01 \x02 \xd4\x01 END APPLY_FILE .\\Data\\Script\\Bgm.Fob VAR1 ,\x06 APPlY_2 StopCD RUNF V\x06 END \xa6\x01 APPLY_3 TextClose VAR1 ~\x06 END
 END_SCRIPT

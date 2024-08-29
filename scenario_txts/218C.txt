@@ -1,7 +1,6 @@
 START_SCRIPT
 \xc1\t\x01`B#\x01\xe0\x07
-SCEC SCE218_001 \x06 SCE_DONE 
-TEXT1 @d\x01 TEXT2 6
+INIT_TEXT SCE218_001 \x06 SCE_TEXT TEXT1 @d\x01 TEXT2 6
  
 拓司\n　「やめろ、御堂！」@
 \nいって拓司は突進した。\p御堂の肩にしがみつく。@
@@ -10,11 +9,8 @@ TEXT1 @d\x01 TEXT2 6
 \n重い一撃が顎を捉え、さらに鋭い蹴りが拓司を後方にはじき飛ば\nした。\
 
   
-INIT J\x0c SET_VAR 
-CMD7 .\\Data\\Script\\TextFunc.Fob RUNF B\x01 
-CMD2 TextOn RUNF p\x01 END 
-SCEC SCE218_002 \x8c\x01 SCE_DONE 
-TEXT1 Dd\x01 TEXT2 x
+INIT J\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF B\x01 APPlY_2 TextOn RUNF p\x01 END
+INIT_TEXT SCE218_002 \x8c\x01 SCE_TEXT TEXT1 Dd\x01 TEXT2 x
  
 御堂\n　「勘違いするなよモヤシ小僧。\pお前が今まで物を決めてこられ\n　　たのはお前の力じゃなくて俺の力なんだよ。\p俺がお前を許し\n　　ていたからお前は自由に行動できたんだよ。\pでもこれからは\n　　違うぞ。\pこれからは俺の許可無しでなにもさせやしねえから\n　　な。\pいいか、なにもだ！」@
 \n御堂はじりじりとなたねに歩み寄った。@
@@ -23,12 +19,9 @@ TEXT1 Dd\x01 TEXT2 x
 御堂\n　「この……××××が……思い知れ！\p　思い知れ！」\
 
   
-INIT \xd0\x01\x0c SET_VAR  B\x01 \x02 p\x01 END   
-INIT $\x0c SET_VAR 
-CMD6 .\\Data\\Script\\Bg.Fob VAR2 \x04\x04 \x02
-CMD4 BgAutoFadeIn VAR2 .\x04 END 
-SCEC SCE218_003 R\x04 SCE_DONE 
-TEXT1 Hd\x01 TEXT2 \x9b
+INIT \xd0\x01\x0c SET_VAR1 B\x01 \x02 p\x01 END  
+INIT $\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bg.Fob VAR2\x04\x04 \x02 APPLY_4 BgAutoFadeIn VAR2.\x04 END
+INIT_TEXT SCE218_003 R\x04 SCE_TEXT TEXT1 Hd\x01 TEXT2 \x9b
  
 御堂はなたねの顔面に、容赦のないパンチを雨あられと降らせて\nいる。\p溜まり溜まったストレスをすべて叩き付けるように、な\nたねを殴り続ける。@
 ごつ、ごつ、ごつ！@
@@ -43,9 +36,6 @@ TEXT1 Hd\x01 TEXT2 \x9b
 そしていま、眼前で展開されていることこそ、新しい秩序の骨子\nを為すものであるはずだった。\
 
   
-INIT \x96\x04\x0c SET_VAR  B\x01 \x02 p\x01 END   
-INIT \xc8\x0c SET_VAR  \x04\x04 \x02 .\x04 END 
-CMD6 .\\Data\\Script\\Bgm.Fob VAR1 p\x07 
-CMD2 StopCD RUNF \x9a\x07 END  B\x01 
-CMD3 TextClose VAR1 \xc2\x07 END 
+INIT \x96\x04\x0c SET_VAR1 B\x01 \x02 p\x01 END  
+INIT \xc8\x0c SET_VAR1 \x04\x04 \x02 .\x04 END APPLY_FILE .\\Data\\Script\\Bgm.Fob VAR1 p\x07 APPlY_2 StopCD RUNF \x9a\x07 END B\x01 APPLY_3 TextClose VAR1 \xc2\x07 END
 END_SCRIPT

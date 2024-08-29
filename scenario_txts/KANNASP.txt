@@ -1,38 +1,31 @@
 START_SCRIPT
 \xa9\x08\x01`B#\x01\xf2\x07! 
-INIT \x14 FLG2 \x01 TEXT2 \x08.\\Data\\Script\\Scenario\\k01.Fob RUNF * 
-CMD2 start VAR1 \\ END 
-CMD7 .\\Data\\Script\\TextFunc.Fob RUNF x \x02
-CMD4 GetLastTxtID VAR2 \xa6 END   
+INIT \x14 SET_VAR2 \x01 TEXT2 \x08.\\Data\\Script\\Scenario\\k01.Fob RUNF * APPlY_2 start VAR1 \\ END APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF x \x02 APPLY_4 GetLastTxtID VAR2\xa6 END  
 INIT \x1b\x021&\x01
-CMD8 .\\Data\\Script\\Scenario\\k02.Fob RUNF \xec \x02 \\ END 
-CMD8 .\\Data\\Script\\Scenario\\k03.Fob RUNF ,\x01 \x02 \\ END  x \x02 \xa6 END   
+CMD8 .\\Data\\Script\\Scenario\\k02.Fob RUNF \xec \x02 \\ END
+CMD8 .\\Data\\Script\\Scenario\\k03.Fob RUNF ,\x01 \x02 \\ END x \x02 \xa6 END  
 INIT \x1b\x021\xe8\x01
-CMD8 .\\Data\\Script\\Scenario\\k04.Fob RUNF \xa8\x01 \x02 \\ END 2\xc0\x06
-CMD8 .\\Data\\Script\\Scenario\\k05.Fob \xee\x01 \x02 \\ END  x \x02 \xa6 END   
+CMD8 .\\Data\\Script\\Scenario\\k04.Fob RUNF \xa8\x01 \x02 \\ END2\xc0\x06
+CMD8 .\\Data\\Script\\Scenario\\k05.Fob \xee\x01 \x02 \\ END x \x02 \xa6 END  
 INIT \x1b\x021\xaa\x02
-CMD8 .\\Data\\Script\\Scenario\\k04'.Fob j\x02 \x02 \\ END 2\x8c\x04
-CMD8 .\\Data\\Script\\Scenario\\k05'.Fob \xb0\x02 \x02 \\ END  x \x02 \xa6 END   
+CMD8 .\\Data\\Script\\Scenario\\k04'.Fob j\x02 \x02 \\ END2\x8c\x04
+CMD8 .\\Data\\Script\\Scenario\\k05'.Fob \xb0\x02 \x02 \\ END x \x02 \xa6 END  
 INIT \x1b\x021l\x03
-CMD8 .\\Data\\Script\\Scenario\\k06.Fob ,\x03 \x02 \\ END 2\x07
-CMD8 .\\Data\\Script\\Scenario\\k07.Fob r\x03 \x02 \\ END  x \x02 \xa6 END   
+CMD8 .\\Data\\Script\\Scenario\\k06.Fob ,\x03 \x02 \\ END2\x07
+CMD8 .\\Data\\Script\\Scenario\\k07.Fob r\x03 \x02 \\ END x \x02 \xa6 END  
 INIT \x1b\x021(\x04
-CMD8 .\\Data\\Script\\Scenario\\k08.Fob \xee\x03 \x02 \\ END 
-CMD8 .\\Data\\Script\\Scenario\\k09.Fob .\x04 \x02 \\ END ! 
-INIT \x18 FLG2 \x01 TEXT2 \x08.\\Data\\Script\\Scenario\\k10.Fob \x92\x04 \x02 \\ END 
-CMD8 .\\Data\\Script\\Scenario\\k11.Fob \xd2\x04 \x02 \\ END  x \x02 \xa6 END   
+CMD8 .\\Data\\Script\\Scenario\\k08.Fob \xee\x03 \x02 \\ END
+CMD8 .\\Data\\Script\\Scenario\\k09.Fob .\x04 \x02 \\ END! 
+INIT \x18 SET_VAR2 \x01 TEXT2 \x08.\\Data\\Script\\Scenario\\k10.Fob \x92\x04 \x02 \\ END
+CMD8 .\\Data\\Script\\Scenario\\k11.Fob \xd2\x04 \x02 \\ END x \x02 \xa6 END  
 INIT \x1b\x021\x8e\x05
-CMD8 .\\Data\\Script\\Scenario\\k12.Fob N\x05 \x02 \\ END 2V\x06
-CMD8 .\\Data\\Script\\Scenario\\k13.Fob \x94\x05 \x02 \\ END  x \x02 \xa6 END   
+CMD8 .\\Data\\Script\\Scenario\\k12.Fob N\x05 \x02 \\ END2V\x06
+CMD8 .\\Data\\Script\\Scenario\\k13.Fob \x94\x05 \x02 \\ END x \x02 \xa6 END  
 INIT \x1b\x021P\x06
-CMD8 .\\Data\\Script\\Scenario\\k14.Fob \x10\x06 \x02 \\ END 2V\x062\xc0\x06
-CMD8 .\\Data\\Script\\Scenario\\k14'.Fob \\\x06 \x02 \\ END ! 
-INIT \x1c FLG2 \x01\x0c"2\x07
-CMD8 .\\Data\\Script\\Scenario\\k15.Fob \xc6\x06 \x02 \\ END 
-CMD8 .\\Data\\Script\\Scenario\\k16.Fob \x06\x07 \x02 \\ END   
-INIT \xc8\x0c SET_VAR 
-CMD6 .\\Data\\Script\\Bg.Fob `\x07 \x02
-CMD4 BgAutoFadeIn \x8a\x07 END 
-CMD6 .\\Data\\Script\\Bgm.Fob \xae\x07 
-CMD2 StopCD \xd8\x07 END 
+CMD8 .\\Data\\Script\\Scenario\\k14.Fob \x10\x06 \x02 \\ END2V\x062\xc0\x06
+CMD8 .\\Data\\Script\\Scenario\\k14'.Fob \\\x06 \x02 \\ END! 
+INIT \x1c SET_VAR2 \x01\x0c"2\x07
+CMD8 .\\Data\\Script\\Scenario\\k15.Fob \xc6\x06 \x02 \\ END
+CMD8 .\\Data\\Script\\Scenario\\k16.Fob \x06\x07 \x02 \\ END  
+INIT \xc8\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bg.Fob `\x07 \x02 APPLY_4 BgAutoFadeIn \x8a\x07 END APPLY_FILE .\\Data\\Script\\Bgm.Fob \xae\x07 APPlY_2 StopCD \xd8\x07 END
 END_SCRIPT

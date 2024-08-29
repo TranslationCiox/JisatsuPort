@@ -1,16 +1,12 @@
 START_SCRIPT
 \xe0.\x01`B#\x01((
-SCEC SCE010_001 \x06 SCE_DONE 
-TEXT1 @\x1f TEXT2 \x11
+INIT_TEXT SCE010_001 \x06 SCE_TEXT TEXT1 @\x1f TEXT2 \x11
  
 \n\n\n\n\n\n\n\n\n　　　　　　　　　　　『虎菱家の食卓』\
 
   
-INIT J\x0c SET_VAR 
-CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \xae 
-CMD2 TextOn RUNF \xdc END 
-SCEC SCE010_002 \xf8 SCE_DONE 
-TEXT1 D\x1f TEXT2 a
+INIT J\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF \xae APPlY_2 TextOn RUNF \xdc END
+INIT_TEXT SCE010_002 \xf8 SCE_TEXT TEXT1 D\x1f TEXT2 a
  
 　朝。@
 　食卓の上に、フォークとナイフがきれいに並べられている。@
@@ -23,26 +19,23 @@ TEXT1 D\x1f TEXT2 a
 　－－これを頸動脈に突き立てれば、多分おれは死ぬだろう。\
 
   
-INIT <\x01\x0c SET_VAR  \xae \x02 \xdc END 
-SCEC SCE010_003 \xfa\x02 SCE_DONE 
-TEXT1 H\x1f TEXT2 \x0b
+INIT <\x01\x0c SET_VAR1 \xae \x02 \xdc END
+INIT_TEXT SCE010_003 \xfa\x02 SCE_TEXT TEXT1 H\x1f TEXT2 \x0b
  
 　『死ぬ』こと。@
 \n\n　『死』。\
 
   
-INIT >\x03\x0c SET_VAR  \xae \x02 \xdc END 
-SCEC SCE010_004 \xa4\x03 SCE_DONE 
-TEXT1 L\x1f TEXT2 c
+INIT >\x03\x0c SET_VAR1 \xae \x02 \xdc END
+INIT_TEXT SCE010_004 \xa4\x03 SCE_TEXT TEXT1 L\x1f TEXT2 c
  
 　いまや拓司にとって、死を真剣に考えることこそが、生者とし\n　ての自分を実感する唯一の方法だった。\p死に備わる様々な要素\n　－－痛みであるとか、出血であるとか、恐怖であるとか－－は、\n　まだ、リアルなものとして拓司の中に残っている。@
 　死がどういうものなのか、それははっきりと認識できる。@
 　いま生きている『生』よりも、未体験の『死』を思う方が、拓\n　司にとっては容易であったのだ。\
 
   
-INIT \xe8\x03\x0c SET_VAR  \xae \x02 \xdc END 
-SCEC SCE010_005 \xae\x05 SCE_DONE 
-TEXT1 P\x1f TEXT2 X
+INIT \xe8\x03\x0c SET_VAR1 \xae \x02 \xdc END
+INIT_TEXT SCE010_005 \xae\x05 SCE_TEXT TEXT1 P\x1f TEXT2 X
  
 　その死を、生と並べて置く。@
 　両者に触れ、味わい、嗅ぎ、眺めて相違点を探る。@
@@ -54,9 +47,8 @@ TEXT1 P\x1f TEXT2 X
 　証明終わり。\
 
   
-INIT \xf2\x05\x0c SET_VAR  \xae \x02 \xdc END 
-SCEC SCE010_006 \x8c\x07 SCE_DONE 
-TEXT1 T\x1f TEXT2 \xa6
+INIT \xf2\x05\x0c SET_VAR1 \xae \x02 \xdc END
+INIT_TEXT SCE010_006 \x8c\x07 SCE_TEXT TEXT1 T\x1f TEXT2 \xa6
  
 　しかし、リアルに死を想像することは、なかなか難しい。@
 　なぜならば死を思ったところで本当に死ぬというわけではなく、\n　そして当然の事ながら、死んだ経験など一度もないからである。\n　@
@@ -69,14 +61,11 @@ TEXT1 T\x1f TEXT2 \xa6
 　リアルに、生を意識できる。\
 
   
-INIT \xd0\x07\x0c SET_VAR  \xae \x02 \xdc END 
-SCEC SCE010_007 \xa2\n SCE_DONE 
-TEXT1 X\x1f\x0c"  
-INIT \x0c SET_VAR   \x04
-INIT \x07\x0c SET_VAR   \x08
-INIT \x0c SET_VAR 
-CMD6 .\\Data\\Script\\Bgm.Fob VAR1 4\x0b 
-CMD3 SePlayEx VAR2 ^\x0b END \x03d
+INIT \xd0\x07\x0c SET_VAR1 \xae \x02 \xdc END
+INIT_TEXT SCE010_007 \xa2\n SCE_TEXT TEXT1 X\x1f\x0c"  
+INIT \x0c SET_VAR1  \x04
+INIT \x07\x0c SET_VAR1  \x08
+INIT \x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bgm.Fob VAR1 4\x0b APPLY_3 SePlayEx VAR2^\x0b END\x03d
  
 　間の抜けたテレビの女がいう。@
 \nアナウンサー\n　「－－センセイ、ここ最近、『自殺』という言葉を口にする若\n　　者が増えていますよねえ？」@
@@ -84,9 +73,8 @@ CMD3 SePlayEx VAR2 ^\x0b END \x03d
 \nコメンテーター\n　「－－たとえばです。ときおり飲み会などの席で、こう、ポツ\n　　ンと外れて輪に入れないというか……そういう女の子が、ボ\n　　ソっと『私は霊が見える』といったりすることがありますよ\n　　ね」\
 
   
-INIT ~\x0b\x0c SET_VAR  \xae \x02 \xdc END 
-SCEC SCE010_008 H\r SCE_DONE 
-TEXT1 \\\x1f TEXT2 \xcb
+INIT ~\x0b\x0c SET_VAR1 \xae \x02 \xdc END
+INIT_TEXT SCE010_008 H\r SCE_TEXT TEXT1 \\\x1f TEXT2 \xcb
  
 アナウンサー\n　「あ！　ありますあります！」@
 コメンテーター\n　「『ほら、その隅に白髪のおじいさんが立っている』とか、ま\n　　あ、彼女はそういうことをいうわけです。\p周囲に自殺をほの\n　　めかす若者のメンタリティというのは、どこかそれに似てい\n　　ると思うんです」@
@@ -94,9 +82,8 @@ TEXT1 \\\x1f TEXT2 \xcb
 コメンテーター\n　「飲み会において、彼女には、武器がないわけです。\pそれはた\n　　とえば美しさであったり、話術であったり、愛嬌であったり\n　　と。飲み会の席で有効となるそういったものが、彼女にはな\n　　い。\pだから手軽に存在感をアピールする手段として、『見え\n　　る』と。\p『私にはこんな特殊能力がある』と、いうわけです。\n　　\p『見える』は、美しさも話術も愛嬌も持たない彼女の武器な\n　　わけです。\p真偽は本人にしかわからないけれど、本当だった\n　　としたら、ただごとではないわけですからね」\
 
   
-INIT \x8c\r\x0c SET_VAR  \xae \x02 \xdc END 
-SCEC SCE010_009 \xf2\x10 SCE_DONE 
-TEXT1 `\x1f TEXT2 j
+INIT \x8c\r\x0c SET_VAR1 \xae \x02 \xdc END
+INIT_TEXT SCE010_009 \xf2\x10 SCE_TEXT TEXT1 `\x1f TEXT2 j
  
 アナウンサー\n　「自分の後ろに幽霊がいるかもしれないわけですから！」@
 コメンテーター\n　「ハハ。だから周囲は大騒ぎして、彼女に注目をする……。@
@@ -104,9 +91,8 @@ TEXT1 `\x1f TEXT2 j
 アナウンサー\n　「なるほどォ。いわれてみればそうかもしれませんね」\
 
   
-INIT 6\x11\x0c SET_VAR  \xae \x02 \xdc END 
-SCEC SCE010_010 \x18\x13 SCE_DONE 
-TEXT1 d\x1f TEXT2 \xb5
+INIT 6\x11\x0c SET_VAR1 \xae \x02 \xdc END
+INIT_TEXT SCE010_010 \x18\x13 SCE_TEXT TEXT1 d\x1f TEXT2 \xb5
  
 コメンテーター\n　「一時話題になった、インターネットの『自殺系サイト』を見\n　　ると、わりと分かりやすい。@
 　　そういったサイトの掲示板への書き込みは、『悩み相談』の\n　　ような体裁を取るものが多いのですが、それは『自分はこん\n　　な悩みを持って自殺しようとしている人間です』という、\n　　『私』のアピールなわけです。\p掲示板での彼らは非常に多弁\n　　です。多くの文章はそこそこしっかりしているし、エンター\n　　テインメントとして他人に読んでもらうことをきちんと意識\n　　している。酔っぱらって『学部長死ね』とかね、駅のトイレ\n　　に殴り書きした落書きではないわけです」@
@@ -115,9 +101,8 @@ TEXT1 d\x1f TEXT2 \xb5
 アナウンサー\n　「ウフフ」\
 
   
-INIT \\\x13\x0c SET_VAR  \xae \x02 \xdc END 
-SCEC SCE010_011 j\x16 SCE_DONE 
-TEXT1 h\x1f TEXT2 \xdc
+INIT \\\x13\x0c SET_VAR1 \xae \x02 \xdc END
+INIT_TEXT SCE010_011 j\x16 SCE_TEXT TEXT1 h\x1f TEXT2 \xdc
  
 コメンテーター\n　「ええと……自己紹介ホームページの開設ブームなどを見れば\n　　わかるとおり、人間には、自己をアピールしたい、『私』を\n　　語りたい、という欲求があるわけです。@
 　　しかし、それには他者とは違った才能が必要であり、そして\n　　才能を得るためには努力が要求される。\p飲み会で注目を集め\n　　るために『明日原爆を作って国会を破壊する！』とブチあげ\n　　ても、それには、発言が真実味を帯びるだけのリアリティが\n　　要求されますよね。\p発言した人が理系の人間であるとか、裏\n　　ルートに通じているとか。\pライセンスがいるわけです。だっ\n　　たらライセンスが要求されない……たとえば『明日パチンコ\n　　に行く！』なんてことをアピールしてみる。@
@@ -125,35 +110,31 @@ TEXT1 h\x1f TEXT2 \xdc
 アナウンサー\n　「う～ん・・・・」\
 
   
-INIT \xae\x16\x0c SET_VAR  \xae \x02 \xdc END 
-SCEC SCE010_012 X\x1a SCE_DONE 
-TEXT1 l\x1f TEXT2 \x91
+INIT \xae\x16\x0c SET_VAR1 \xae \x02 \xdc END
+INIT_TEXT SCE010_012 X\x1a SCE_TEXT TEXT1 l\x1f TEXT2 \x91
  
 コメンテーター\n　「このところ『殺人』や『死体写真』などのサブカルチャーが\n　　幅を利かせているのも、競争相手の多いメインカルチャーの\n　　なかで浮上するのがしんどい、という側面があると思うんで\n　　すよ。\p『スノーボードがうまい私』という個性を自分特有の\n　　ものとして確立するのは難しいけれど、『死体写真を集めて\n　　いる変わった私』という個性は簡単に完成するわけです。\p同\n　　じように、『自殺したい』『手首を切ったことがある』とい\n　　うのは、ゼロから生むことができる、安易かつ強力な武器で\n　　あるわけです」@
 \nそしてしかめ面をしたゲストの男がしめくくる。\
 
   
-INIT \x9c\x1a\x0c SET_VAR  \xae \x02 \xdc END 
-SCEC SCE010_013 \x1a\x1d SCE_DONE 
-TEXT1 p\x1f TEXT2 \xb8
+INIT \x9c\x1a\x0c SET_VAR1 \xae \x02 \xdc END
+INIT_TEXT SCE010_013 \x1a\x1d SCE_TEXT TEXT1 p\x1f TEXT2 \xb8
  
 ゲスト\n　「まあ、精神的とか経済的にネ、追いつめられて、真剣に自殺\n　　を考えている人はいるわけなんで、あまり軽々しくは言えな\n　　いんだけどネ。\p若いのがネ、死ぬとかナントカいうのはネ、\n　　要するにネ、ボクラが若いころ、哲学や政治にハマったのと\n　　同じですよ！\p　デカルト読んだり、共産主義を唱えたりね。@
 　　そういうのはね、多くにとっては『哲学する私』『共産主義\n　　を信奉する私』というインテリのスタイルだったわけです。@
 　　ファッションですよ、ファッション」@
 アナウンサー\n　「ファッションとしての自殺、と。\pなんだか凄い話になってし\n　　まいましたが、ええっと……視聴者のみなさんはついてきて\n　　いらっしゃるのでしょうかっ？！」\w\n\n/*SE パチンとテレビのスイッチが切れる音。*/\a2,0,8,0,\a3,0,0,0,\a4,0,0,0,\n\z
   
-INIT ^\x1d\x0c SET_VAR  \xae \x02 \xdc END 
-SCEC SCE010_014 x  SCE_DONE 
-TEXT1 t\x1f TEXT2 {
+INIT ^\x1d\x0c SET_VAR1 \xae \x02 \xdc END
+INIT_TEXT SCE010_014 x  SCE_TEXT TEXT1 t\x1f TEXT2 {
  
 　－－おれの抱えた数字は、そんな簡単に割り切れる数字ではな\n　い。@
 \n　拓司は思った。@
 　いま、テレビで語られていた程度のお安い理屈は、いわれるま\n　でもなく理解していた。\p十分理解できるがゆえに……拓司は恥\n　ずかしかった。\p強烈な恥の意識があった。自殺だ死だと声高に\n　叫ぶことで、自分は『その他大勢のファッション』に身を包む\n　ことになるのではないかと……割り切れる数字に成り下がるの\n　ではないかと……それは弱さの証明に他ならないのではないか\n　と、恥ずかしく思った。\
 
   
-INIT \xbc \x0c SET_VAR  \xae \x02 \xdc END 
-SCEC SCE010_015 \xe2" SCE_DONE 
-TEXT1 x\x1f TEXT2 k
+INIT \xbc \x0c SET_VAR1 \xae \x02 \xdc END
+INIT_TEXT SCE010_015 \xe2" SCE_TEXT TEXT1 x\x1f TEXT2 k
  
 　なんちゃって自殺ごっこをする女子学生。@
 　自殺を口にする若者。@
@@ -162,9 +143,8 @@ TEXT1 x\x1f TEXT2 k
 　自尊心－－若者特有の潔癖さと、そして自分は違うのだという傲\n　慢が、それを許さなかった。\
 
   
-INIT &#\x0c SET_VAR  \xae \x02 \xdc END 
-SCEC SCE010_016 \x0c% SCE_DONE 
-TEXT1 |\x1f TEXT2 \x9d
+INIT &#\x0c SET_VAR1 \xae \x02 \xdc END
+INIT_TEXT SCE010_016 \x0c% SCE_TEXT TEXT1 |\x1f TEXT2 \x9d
  
 　口に出すことで、深刻さを割り引くことができる痛みは多い。@
 　その効力を知っているからこそ、人は冗談めかして、あるいは\n　真剣に、悩みを人に告げる。@
@@ -175,6 +155,5 @@ TEXT1 |\x1f TEXT2 \x9d
 　逃げ場はなかった。\
 
   
-INIT P%\x0c SET_VAR  \xae \x02 \xdc END  \xae 
-CMD3 TextClose VAR1 \n( END 
+INIT P%\x0c SET_VAR1 \xae \x02 \xdc END \xae APPLY_3 TextClose VAR1 \n( END
 END_SCRIPT

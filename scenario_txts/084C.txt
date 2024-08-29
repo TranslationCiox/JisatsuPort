@@ -1,7 +1,6 @@
 START_SCRIPT
 m\x06\x01`B#\x01H\x05
-SCEC SCE084_001 \x06 SCE_DONE 
-TEXT1 \xe0\x92 TEXT2 \xb8
+INIT_TEXT SCE084_001 \x06 SCE_TEXT TEXT1 \xe0\x92 TEXT2 \xb8
  
 目が覚めた。@
 －－おれは気を失っていたのか？\p　それとも、これもまた夢なの\nか？@
@@ -18,11 +17,8 @@ TEXT1 \xe0\x92 TEXT2 \xb8
 頭の中から、すうっと何かが引いていった。\pそれまでの熱狂が嘘\nだったように、冷めた、しらけた感じが－－おなじみの感覚が頭\nの中を支配していた。\
 
   
-INIT J\x0c SET_VAR 
-CMD7 .\\Data\\Script\\TextFunc.Fob RUNF J\x03 
-CMD2 TextOn RUNF x\x03 END 
-SCEC SCE084_002 \x94\x03 SCE_DONE 
-TEXT1 \xe4\x92 TEXT2 C
+INIT J\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF J\x03 APPlY_2 TextOn RUNF x\x03 END
+INIT_TEXT SCE084_002 \x94\x03 SCE_TEXT TEXT1 \xe4\x92 TEXT2 C
  
 －－紅葉は？@
 なんとか気力を奮い起こして、紅葉の姿を探す。@
@@ -30,6 +26,5 @@ TEXT1 \xe4\x92 TEXT2 C
 \n拓司\n　「紅葉！\p　紅葉ッ！」\
 
   
-INIT \xd8\x03\x0c SET_VAR  J\x03 \x02 x\x03 END  J\x03 
-CMD3 TextClose VAR1 *\x05 END 
+INIT \xd8\x03\x0c SET_VAR1 J\x03 \x02 x\x03 END J\x03 APPLY_3 TextClose VAR1 *\x05 END
 END_SCRIPT

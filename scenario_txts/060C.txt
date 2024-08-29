@@ -1,7 +1,6 @@
 START_SCRIPT
 \xd9\x03\x01\xa4\t3\x01\xc4\x02
-SCEC SCE060_001 \x06 SCE_DONE 
-TEXT1 `m TEXT2 B
+INIT_TEXT SCE060_001 \x06 SCE_TEXT TEXT1 `m TEXT2 B
  
 拓司\n　「ここに……いたくない？」@
 \n拓司の問には答えず、早桃はいった。@
@@ -11,16 +10,12 @@ TEXT1 `m TEXT2 B
 拓司\n　「……」\n早桃\n　「ざまあみろって思ってる」\
 
   
-INIT J\x0c SET_VAR 
-CMD7 .\\Data\\Script\\TextFunc.Fob RUNF r\x01 
-CMD2 TextOn RUNF \xa0\x01 END 
-SCEC SCE060_002 \xbc\x01 SCE_DONE 
-TEXT1 dm TEXT2 \x18
+INIT J\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF r\x01 APPlY_2 TextOn RUNF \xa0\x01 END
+INIT_TEXT SCE060_002 \xbc\x01 SCE_TEXT TEXT1 dm TEXT2 \x18
  
 拓司\n　「……」@
 早桃\n　「おにいちゃん、後ろ向いてて。\pジャージに着替えるから」@
 \z
   
-INIT \x02\x0c SET_VAR  r\x01 \x02 \xa0\x01 END  r\x01 
-CMD3 TextClose VAR1 \xa6\x02 END 
+INIT \x02\x0c SET_VAR1 r\x01 \x02 \xa0\x01 END r\x01 APPLY_3 TextClose VAR1 \xa6\x02 END
 END_SCRIPT

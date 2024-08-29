@@ -1,7 +1,6 @@
 START_SCRIPT
 \x0b\x08\x01`B#\x01h\x06
-SCEC SCE006_001 \x06 SCE_DONE 
-TEXT1 \x19 TEXT2 .
+INIT_TEXT SCE006_001 \x06 SCE_TEXT TEXT1 \x19 TEXT2 .
  
 拓司\n　「……出て行け」@
 早桃\n　「どうして？」@
@@ -9,11 +8,8 @@ TEXT1 \x19 TEXT2 .
 早桃\n　「いいんだよ。夢は現実に干渉しない。\pいつもの妄想だか\n　　ら」\
 
   
-INIT J\x0c SET_VAR 
-CMD7 .\\Data\\Script\\TextFunc.Fob RUNF "\x01 
-CMD2 TextOn RUNF P\x01 END 
-SCEC SCE006_002 l\x01 SCE_DONE 
-TEXT1 \x04\x19 TEXT2 \x98
+INIT J\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF "\x01 APPlY_2 TextOn RUNF P\x01 END
+INIT_TEXT SCE006_002 l\x01 SCE_TEXT TEXT1 \x04\x19 TEXT2 \x98
  
 早桃はネグリジェの裾をつまみ、ゆっくりと持ち上げて見せた。@
 /*HCG02*/\a7,-2,-2,0,\a0,73,2,0,\a6,-2,0,0,幼い肉の合わせ目が、あらわになる。@
@@ -26,9 +22,8 @@ TEXT1 \x04\x19 TEXT2 \x98
 早桃のくちびるのあいだに、ぬるっと、濡れ光る肉の塊がすべっ\nた。\n粘り着くような声が、そこからこぼれだした。\
 
   
-INIT \xb0\x01\x0c SET_VAR  "\x01 \x02 P\x01 END 
-SCEC SCE006_003 J\x04 SCE_DONE 
-TEXT1 \x08\x19 TEXT2 C
+INIT \xb0\x01\x0c SET_VAR1 "\x01 \x02 P\x01 END
+INIT_TEXT SCE006_003 J\x04 SCE_TEXT TEXT1 \x08\x19 TEXT2 C
  
 早桃\n　「見せっこ……しよ？\p　早桃にだけ出させるなんて、ずるい。@
 　　おにいちゃんのも、見せて。\pおち○ちん、見せてくれたら…\n　　…おれいにおにいちゃんにいいこと……してあげる。@
@@ -36,12 +31,11 @@ TEXT1 \x08\x19 TEXT2 C
 　　ね？」\
 
   
-INIT \x8e\x04\x0c SET_VAR  "\x01 \x02 P\x01 END \x03\x0c
+INIT \x8e\x04\x0c SET_VAR1 "\x01 \x02 P\x01 END\x03\x0c
 CHOICE
 「……消えろ」\n「……来いよ」\n\l0,2,
 ENDCHOICE
 
   
-INIT \xd4\x05\x0c SET_VAR  "\x01 \x02 P\x01 END  "\x01 
-CMD3 TextClose VAR1 J\x06 END 
+INIT \xd4\x05\x0c SET_VAR1 "\x01 \x02 P\x01 END "\x01 APPLY_3 TextClose VAR1 J\x06 END
 END_SCRIPT

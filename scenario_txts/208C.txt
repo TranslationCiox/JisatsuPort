@@ -1,7 +1,6 @@
 START_SCRIPT
 \xab\x04\x01\xa4\t3\x01\x1e\x03
-SCEC SCE208_001 \x06 SCE_DONE 
-TEXT1 \xa0T\x01 TEXT2 \x90
+INIT_TEXT SCE208_001 \x06 SCE_TEXT TEXT1 \xa0T\x01 TEXT2 \x90
  
 拓司\n　「君は、『学校に籠城した世界』は、おれの過去の記憶だとい\n　　う。\pもしそうだとしたら……結局おれはどうなったんだ？@
 　　籠城した記憶はある。\pでも、いま、どうしてここにいるか\n　　という記憶がない。\pみんなは……早桃や紅葉やカンナはどう\n　　なったんだ？\p　雲居なたねは……御堂は……先生は？」@
@@ -10,8 +9,5 @@ TEXT1 \xa0T\x01 TEXT2 \x90
 ナタネ\n　「……」\
 
   
-INIT J\x0c SET_VAR 
-CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \xaa\x02 
-CMD2 TextOn RUNF \xd8\x02 END  \xaa\x02 
-CMD3 TextClose VAR1 \x03 END 
+INIT J\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF \xaa\x02 APPlY_2 TextOn RUNF \xd8\x02 END \xaa\x02 APPLY_3 TextClose VAR1 \x03 END
 END_SCRIPT

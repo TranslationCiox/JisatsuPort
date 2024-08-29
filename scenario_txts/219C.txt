@@ -1,7 +1,6 @@
 START_SCRIPT
 \x02\x08\x01`B#\x01H\x06
-SCEC SCE219_001 \x06 SCE_DONE 
-TEXT1 \xd0e\x01 TEXT2 ,
+INIT_TEXT SCE219_001 \x06 SCE_TEXT TEXT1 \xd0e\x01 TEXT2 ,
  
 もはや、止めることはできなかった。@
 すべてをせきとめていた何かが、いま、ついに崩れ落ちたのだ。@
@@ -9,14 +8,9 @@ TEXT1 \xd0e\x01 TEXT2 ,
 流されるしかないのだ。\
 
   
-INIT J\x0c SET_VAR 
-CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \x1a\x01 
-CMD2 TextOn RUNF H\x01 END   
-INIT $\x0c SET_VAR 
-CMD6 .\\Data\\Script\\Bg.Fob VAR2 ~\x01 \x02
-CMD4 BgAutoFadeIn VAR2 \xa8\x01 END 
-SCEC SCE219_002 \xcc\x01 SCE_DONE 
-TEXT1 \xd4e\x01 TEXT2 k
+INIT J\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF \x1a\x01 APPlY_2 TextOn RUNF H\x01 END  
+INIT $\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bg.Fob VAR2~\x01 \x02 APPLY_4 BgAutoFadeIn VAR2\xa8\x01 END
+INIT_TEXT SCE219_002 \xcc\x01 SCE_TEXT TEXT1 \xd4e\x01 TEXT2 k
  
 なたね\n　「やめてやめてやめて！@
 　　やあああああめえええろおおおおお！」@
@@ -29,9 +23,8 @@ TEXT1 \xd4e\x01 TEXT2 k
 ぐったりと御堂の下に横たわり、殴られるがままだ。\
 
   
-INIT \x10\x02\x0c SET_VAR  \x1a\x01 \x02 H\x01 END 
-SCEC SCE219_003 \xf6\x03 SCE_DONE 
-TEXT1 \xd8e\x01 TEXT2 L
+INIT \x10\x02\x0c SET_VAR1 \x1a\x01 \x02 H\x01 END
+INIT_TEXT SCE219_003 \xf6\x03 SCE_TEXT TEXT1 \xd8e\x01 TEXT2 L
  
 －－狂ってる。@
 拓司は辺りを見回した。@
@@ -42,9 +35,6 @@ TEXT1 \xd8e\x01 TEXT2 L
 そしていま、眼前で展開されていることこそ、新しい秩序の骨子\nを為すものであるはずだった。\
 
   
-INIT :\x04\x0c SET_VAR  \x1a\x01 \x02 H\x01 END   
-INIT \xc8\x0c SET_VAR  ~\x01 \x02 \xa8\x01 END 
-CMD6 .\\Data\\Script\\Bgm.Fob VAR1 \xd8\x05 
-CMD2 StopCD RUNF \x02\x06 END  \x1a\x01 
-CMD3 TextClose VAR1 *\x06 END 
+INIT :\x04\x0c SET_VAR1 \x1a\x01 \x02 H\x01 END  
+INIT \xc8\x0c SET_VAR1 ~\x01 \x02 \xa8\x01 END APPLY_FILE .\\Data\\Script\\Bgm.Fob VAR1 \xd8\x05 APPlY_2 StopCD RUNF \x02\x06 END \x1a\x01 APPLY_3 TextClose VAR1 *\x06 END
 END_SCRIPT

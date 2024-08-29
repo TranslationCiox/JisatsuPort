@@ -1,7 +1,6 @@
 START_SCRIPT
 +\x08\x01`B#\x01\xf4\x06
-SCEC SCE054_001 \x06 SCE_DONE 
-TEXT1 d TEXT2 \xb2
+INIT_TEXT SCE054_001 \x06 SCE_TEXT TEXT1 d TEXT2 \xb2
  
 　冗談ではない。@
 　五分も待っているわけにはいかない。@
@@ -17,11 +16,8 @@ TEXT1 d TEXT2 \xb2
 　突入前から目星をつけていたほうきを掴んで、無我夢中で振り\n回す。\
 
   
-INIT J\x0c SET_VAR 
-CMD7 .\\Data\\Script\\TextFunc.Fob RUNF 2\x03 
-CMD2 TextOn RUNF `\x03 END 
-SCEC SCE054_002 |\x03 SCE_DONE 
-TEXT1 \x04d TEXT2 \x9a
+INIT J\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF 2\x03 APPlY_2 TextOn RUNF `\x03 END
+INIT_TEXT SCE054_002 |\x03 SCE_TEXT TEXT1 \x04d TEXT2 \x9a
  
 　一人、二人、三人、四人……@
 　突然、背後からのしかかられるような形で床に押し倒された。@
@@ -37,9 +33,6 @@ TEXT1 \x04d TEXT2 \x9a
 　静寂の中、バットが振り下ろされた。@
 \z
   
-INIT \xc0\x03\x0c SET_VAR  2\x03 \x02 `\x03 END   
-INIT \xc8\x0c SET_VAR 
-CMD6 .\\Data\\Script\\Bg.Fob VAR2 |\x06 \x02
-CMD4 BgAutoFadeIn VAR2 \xa6\x06 END  2\x03 
-CMD3 TextClose VAR1 \xd6\x06 END 
+INIT \xc0\x03\x0c SET_VAR1 2\x03 \x02 `\x03 END  
+INIT \xc8\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bg.Fob VAR2|\x06 \x02 APPLY_4 BgAutoFadeIn VAR2\xa6\x06 END 2\x03 APPLY_3 TextClose VAR1 \xd6\x06 END
 END_SCRIPT

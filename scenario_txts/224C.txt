@@ -1,7 +1,6 @@
 START_SCRIPT
 \x17\t\x01`B#\x01\\\x07
-SCEC SCE224_001 \x06 SCE_DONE 
-TEXT1 \xa0m\x01 TEXT2 \xa1
+INIT_TEXT SCE224_001 \x06 SCE_TEXT TEXT1 \xa0m\x01 TEXT2 \xa1
  
 衝動的な怒りに突き動かされて、拓司は動いた。@
 錦城の顔が一気に恐怖に歪む。@
@@ -15,11 +14,8 @@ TEXT1 \xa0m\x01 TEXT2 \xa1
 拓司\n　「！」\
 
   
-INIT J\x0c SET_VAR 
-CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \xee\x02 
-CMD2 TextOn RUNF \x1c\x03 END 
-SCEC SCE224_002 8\x03 SCE_DONE 
-TEXT1 \xa4m\x01 TEXT2 ;
+INIT J\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF \xee\x02 APPlY_2 TextOn RUNF \x1c\x03 END
+INIT_TEXT SCE224_002 8\x03 SCE_TEXT TEXT1 \xa4m\x01 TEXT2 ;
  
 一気に押し倒された。@
 後頭部を床に強打する。@
@@ -37,9 +33,8 @@ TEXT1 \xa4m\x01 TEXT2 ;
 さらに腹。\
 
   
-INIT |\x03\x0c SET_VAR  \xee\x02 \x02 \x1c\x03 END 
-SCEC SCE224_003 \xa2\x04 SCE_DONE 
-TEXT1 \xa8m\x01 TEXT2 Y
+INIT |\x03\x0c SET_VAR1 \xee\x02 \x02 \x1c\x03 END
+INIT_TEXT SCE224_003 \xa2\x04 SCE_TEXT TEXT1 \xa8m\x01 TEXT2 Y
  
 必至で腕を振り回したが、むなしく空を切るばかりだ。@
 －－卑怯だ。\p御堂は絶対に安全な場所からパンチを放ってくる。@
@@ -49,11 +44,6 @@ TEXT1 \xa8m\x01 TEXT2 Y
 \n拓司は意識を失った。\
 
   
-INIT \xe6\x04\x0c SET_VAR  \xee\x02 \x02 \x1c\x03 END   
-INIT \xc8\x0c SET_VAR 
-CMD6 .\\Data\\Script\\Bg.Fob VAR2 \x9e\x06 \x02
-CMD4 BgAutoFadeIn VAR2 \xc8\x06 END 
-CMD6 .\\Data\\Script\\Bgm.Fob VAR1 \xec\x06 
-CMD2 StopCD RUNF \x16\x07 END  \xee\x02 
-CMD3 TextClose VAR1 >\x07 END 
+INIT \xe6\x04\x0c SET_VAR1 \xee\x02 \x02 \x1c\x03 END  
+INIT \xc8\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bg.Fob VAR2\x9e\x06 \x02 APPLY_4 BgAutoFadeIn VAR2\xc8\x06 END APPLY_FILE .\\Data\\Script\\Bgm.Fob VAR1 \xec\x06 APPlY_2 StopCD RUNF \x16\x07 END \xee\x02 APPLY_3 TextClose VAR1 >\x07 END
 END_SCRIPT

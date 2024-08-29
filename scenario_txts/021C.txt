@@ -1,22 +1,14 @@
 START_SCRIPT
 |\x0b\x01`B#\x01\n\t
-SCEC SCE021_001 \x06 SCE_DONE 
-TEXT1 p0 TEXT2 \x10
+INIT_TEXT SCE021_001 \x06 SCE_TEXT TEXT1 p0 TEXT2 \x10
  
 \n\n\n\n\n\n\n\n\n\n　　　　　　　　　『学校／四限』\
 
   
-INIT J\x0c SET_VAR 
-CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \xaa 
-CMD2 TextOn RUNF \xd8 END   
-INIT \x05\x0c SET_VAR 
-CMD6 .\\Data\\Script\\Bg.Fob VAR2 \x0e\x01 \x02
-CMD4 BgAutoFadeIn VAR2 8\x01 END   
-INIT \x08\x01\x0c SET_VAR 
-CMD6 .\\Data\\Script\\Bgm.Fob VAR1 v\x01 
-CMD2 PlayCD RUNF \xa0\x01 END 
-SCEC SCE021_002 \xbc\x01 SCE_DONE 
-TEXT1 t0 TEXT2 q
+INIT J\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF \xaa APPlY_2 TextOn RUNF \xd8 END  
+INIT \x05\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bg.Fob VAR2\x0e\x01 \x02 APPLY_4 BgAutoFadeIn VAR28\x01 END  
+INIT \x08\x01\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bgm.Fob VAR1 v\x01 APPlY_2 PlayCD RUNF \xa0\x01 END
+INIT_TEXT SCE021_002 \xbc\x01 SCE_TEXT TEXT1 t0 TEXT2 q
  
 　拓司にとって、朝が一番鮮やかな時間だ。@
 　時間が経つにつれて、世界の色があせてゆく。@
@@ -32,10 +24,9 @@ TEXT1 t0 TEXT2 q
 　悲鳴をあげることしかできない。\
 
   
-INIT \x02\x0c SET_VAR  \xaa \x02 \xd8 END   
-INIT \xc8\x0c SET_VAR  \x0e\x01 \x02 8\x01 END 
-SCEC SCE021_003 2\x04 SCE_DONE 
-TEXT1 x0 TEXT2 ~
+INIT \x02\x0c SET_VAR1 \xaa \x02 \xd8 END  
+INIT \xc8\x0c SET_VAR1 \x0e\x01 \x02 8\x01 END
+INIT_TEXT SCE021_003 2\x04 SCE_TEXT TEXT1 x0 TEXT2 ~
  
 \n　－－死んじまおうかなあ。@
 \n　拓司はすでに口癖となったその言葉を、呪文のように頭のなかで\n　繰り返した。@
@@ -48,9 +39,8 @@ TEXT1 x0 TEXT2 ~
 　のどの奥から、吐瀉物のような恐怖が込み上がってくる。@
 \z
   
-INIT v\x04\x0c SET_VAR  \xaa \x02 \xd8 END 
-SCEC SCE021_004 \xa8\x06 SCE_DONE 
-TEXT1 |0 TEXT2 Q
+INIT v\x04\x0c SET_VAR1 \xaa \x02 \xd8 END
+INIT_TEXT SCE021_004 \xa8\x06 SCE_TEXT TEXT1 |0 TEXT2 Q
  
 \n　死んじまおうかなあ。@
 　死んじまおうかなあ。@
@@ -60,12 +50,11 @@ TEXT1 |0 TEXT2 Q
 　拓司は自分の大切な人を……妄想の檻の中に……ゆっくりと囲っ\n　ていった。\
 
   
-INIT \xec\x06\x0c SET_VAR  \xaa \x02 \xd8 END \x03\x0f
+INIT \xec\x06\x0c SET_VAR1 \xaa \x02 \xd8 END\x03\x0f
 CHOICE
 早桃を妄想の中で犯す\n紅葉を想像の中で犯す\n\l0,2,
 ENDCHOICE
 
   
-INIT j\x08\x0c SET_VAR  \xaa \x02 \xd8 END  \xaa 
-CMD3 TextClose VAR1 \xec\x08 END 
+INIT j\x08\x0c SET_VAR1 \xaa \x02 \xd8 END \xaa APPLY_3 TextClose VAR1 \xec\x08 END
 END_SCRIPT

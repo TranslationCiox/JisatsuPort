@@ -1,15 +1,10 @@
 START_SCRIPT
 \\\x0b\x01`B#\x01p\t  
-INIT \xc8\x0c SET_VAR 
-CMD6 .\\Data\\Script\\Bg.Fob VAR2   \x02
-CMD4 BgAutoFadeIn VAR2 J END   
-INIT \t\x01\x0c SET_VAR 
-CMD6 .\\Data\\Script\\Bgm.Fob VAR1 \x88 
-CMD2 PlayCD RUNF \xb2 END ! 
-INIT \x14 FLG2 \x0b
+INIT \xc8\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bg.Fob VAR2  \x02 APPLY_4 BgAutoFadeIn VAR2J END  
+INIT \t\x01\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bgm.Fob VAR1 \x88 APPlY_2 PlayCD RUNF \xb2 END! 
+INIT \x14 SET_VAR2 \x0b
 INIT\x01 \x1b1\xea\x05
-SCEC SCE107_001 \x06\x01 SCE_DONE 
-TEXT1 \xd0\xb6 TEXT2 \xb4
+INIT_TEXT SCE107_001 \x06\x01 SCE_TEXT TEXT1 \xd0\xb6 TEXT2 \xb4
  
 こうして１日が終わった。@
 深夜を過ぎても、拓司は眠りにつくことができなかった。@
@@ -18,29 +13,24 @@ TEXT1 \xd0\xb6 TEXT2 \xb4
 拓司は、足下にわずかに人の気配を感じた。\
 
   
-INIT J\x01\x0c SET_VAR 
-CMD7 .\\Data\\Script\\TextFunc.Fob RUNF :\x04 
-CMD2 TextOn RUNF h\x04 END  \x88 
-CMD2 StopCD RUNF \x90\x04 END ! 
-INIT   FLG2 \x0b
+INIT J\x01\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF :\x04 APPlY_2 TextOn RUNF h\x04 END \x88 APPlY_2 StopCD RUNF \x90\x04 END! 
+INIT   SET_VAR2 \x0b
 INIT\x01 \x03\x1b\x041<\x05\x03\x0e
 CHOICE
 それはカンナだった\nそれは錦城だった\n\l0,2,
 ENDCHOICE
 
   
-INIT \xe4\x04\x0c SET_VAR 2\x80\x05
+INIT \xe4\x04\x0c SET_VAR12\x80\x05
 HERO 
 CHOICE
 それはカンナだった\n\l0,1,
 ENDCHOICE
 
   
-INIT B\x05\x0c SET_VAR  :\x04 \x02 h\x04 END  :\x04 \x02
-CMD4 GetLastTxtID VAR2 \xac\x05 END   
+INIT B\x05\x0c SET_VAR1 :\x04 \x02 h\x04 END :\x04 \x02 APPLY_4 GetLastTxtID VAR2\xac\x05 END  
 INIT \x01\x0c\x02d"2@\t
-SCEC SCE107_002 \xf0\x05 SCE_DONE 
-TEXT1 \xd4\xb6 TEXT2 \xa9
+INIT_TEXT SCE107_002 \xf0\x05 SCE_TEXT TEXT1 \xd4\xb6 TEXT2 \xa9
  
 こうして１日が終わった。@
 深夜を過ぎても、拓司は眠りにつくことができなかった。@
@@ -48,7 +38,6 @@ TEXT1 \xd4\xb6 TEXT2 \xa9
 見慣れない天井を見上げながら、拓司はそれまでのことを頭の中\nで整理しようとした。\pしかし、いくつものパズルを適当に寄せ集\nめてぶちまけたかのように、それぞれの情報には統一性も、法則\n性もないように思えた。\pそれは消耗としかいいようのない作業だ\nった。\pおそらく、どんなにピースをひねり回そうとも、パズルは\n完成しないように仕組まれているのだ……。\pしかし、眠れない夜\nには、そんなパズルと戯れるのもまた、良い時間つぶしとなった。\n\p空がようやく白みかけ、ようやく浅いまどろみが頭に霞を作りは\nじめた。\
 
   
-INIT 4\x06\x0c SET_VAR  :\x04 \x02 h\x04 END  \x88 \x02 \x90\x04 END   
-INIT \xff\xff\xff\xff\x0c SET_VAR  :\x04 
-CMD3 TextClose VAR1 R\t END 
+INIT 4\x06\x0c SET_VAR1 :\x04 \x02 h\x04 END \x88 \x02 \x90\x04 END  
+INIT \xff\xff\xff\xff\x0c SET_VAR1 :\x04 APPLY_3 TextClose VAR1 R\t END
 END_SCRIPT

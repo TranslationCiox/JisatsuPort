@@ -1,19 +1,13 @@
 START_SCRIPT
 p*\x01`B#\x01\x1a#  
-INIT \x0c\x01\x0c SET_VAR 
-CMD6 .\\Data\\Script\\Bgm.Fob VAR1   
-CMD2 PlayCD RUNF J END 
-SCEC SCE234_001 f SCE_DONE 
-TEXT1 @}\x01 TEXT2 \x11
+INIT \x0c\x01\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bgm.Fob VAR1   APPlY_2 PlayCD RUNF J END
+INIT_TEXT SCE234_001 f SCE_TEXT TEXT1 @}\x01 TEXT2 \x11
  
 \n\n\n\n\n\n\n\n\n\n　　　　　　　　　　　　『１５日目』\
 
   
-INIT \xaa\x0c SET_VAR 
-CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \x0e\x01 
-CMD2 TextOn RUNF <\x01 END 
-SCEC SCE234_002 X\x01 SCE_DONE 
-TEXT1 D}\x01 TEXT2 \x7f
+INIT \xaa\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF \x0e\x01 APPlY_2 TextOn RUNF <\x01 END
+INIT_TEXT SCE234_002 X\x01 SCE_TEXT TEXT1 D}\x01 TEXT2 \x7f
  
 拓司の予想は、まったく予期せぬ形でうち砕かれた。@
 /*■CG45　表示（クロスフェード）*/\a7,-2,-2,0,\a0,44,2,0,\a6,-2,0,0,\n朝食の配給に現れた御堂は、右目に眼帯を付けていた。@
@@ -27,9 +21,8 @@ TEXT1 D}\x01 TEXT2 \x7f
 その視線から逃れるように、紅葉は俯いた。\
 
   
-INIT \x9c\x01\x0c SET_VAR  \x0e\x01 \x02 <\x01 END 
-SCEC SCE234_003 \xd2\x03 SCE_DONE 
-TEXT1 H}\x01 TEXT2 V
+INIT \x9c\x01\x0c SET_VAR1 \x0e\x01 \x02 <\x01 END
+INIT_TEXT SCE234_003 \xd2\x03 SCE_TEXT TEXT1 H}\x01 TEXT2 V
  
 御堂\n　「この女はな、自分の身の安全のために、お前を売ったんだ」@
 拓司\n　「ウソだ」@
@@ -41,9 +34,8 @@ TEXT1 H}\x01 TEXT2 V
 拓司\n　「……」\
 
   
-INIT \x16\x04\x0c SET_VAR  \x0e\x01 \x02 <\x01 END 
-SCEC SCE234_004 \xa8\x05 SCE_DONE 
-TEXT1 L}\x01 TEXT2 `
+INIT \x16\x04\x0c SET_VAR1 \x0e\x01 \x02 <\x01 END
+INIT_TEXT SCE234_004 \xa8\x05 SCE_TEXT TEXT1 L}\x01 TEXT2 `
  
 紅葉は何もいわなかった。@
 ただ黙っている。@
@@ -55,9 +47,8 @@ TEXT1 L}\x01 TEXT2 `
 \nははは、と御堂が笑った。\p錦城も、さも愉快そうに笑っている。\
 
   
-INIT \xec\x05\x0c SET_VAR  \x0e\x01 \x02 <\x01 END 
-SCEC SCE234_005 \xa6\x07 SCE_DONE 
-TEXT1 P}\x01 TEXT2 \x8e
+INIT \xec\x05\x0c SET_VAR1 \x0e\x01 \x02 <\x01 END
+INIT_TEXT SCE234_005 \xa6\x07 SCE_TEXT TEXT1 P}\x01 TEXT2 \x8e
  
 御堂\n　「お前、よっぽど人望ないんだなあ。\p哀れだぜ。@
 　　……まあ、安心しろ。\pお前を処分したあとで、神凪も罰して@
@@ -70,10 +61,8 @@ TEXT1 P}\x01 TEXT2 \x8e
 \nつかみかかってくる紅葉を一撃で壁まではじき飛ばし、御堂が叫\nんだ。\
 
   
-INIT \xea\x07\x0c SET_VAR  \x0e\x01 \x02 <\x01 END    
-CMD2 StopCD RUNF h\n END 
-SCEC SCE234_006 \x84\n SCE_DONE 
-TEXT1 T}\x01 TEXT2 \x95
+INIT \xea\x07\x0c SET_VAR1 \x0e\x01 \x02 <\x01 END NULL APPlY_2 StopCD RUNF h\n END
+INIT_TEXT SCE234_006 \x84\n SCE_TEXT TEXT1 T}\x01 TEXT2 \x95
  
 御堂\n　「っつーわけで、楽しい処刑の始まりだ！」@
 /*▲BGM　Track10　再生*/\a2,-1,10,1,/*■CG46　表示（クロスフェード）*/\a7,-2,-2,0,\a0,45,2,0,\a6,-2,0,0,\n鳩尾に、狙い澄ました一発がきた。\p予想していたにもかかわらず\n避けられなかった。\p拓司は、もうそれだけで立っていることがで\nきなかった。@
@@ -85,9 +74,8 @@ TEXT1 T}\x01 TEXT2 \x95
 御堂に殺されるかもしれない。\pしかも信じていた紅葉に裏切られ\nて……。\
 
   
-INIT \xc8\n\x0c SET_VAR  \x0e\x01 \x02 <\x01 END 
-SCEC SCE234_007 V\r SCE_DONE 
-TEXT1 X}\x01 TEXT2 \xba
+INIT \xc8\n\x0c SET_VAR1 \x0e\x01 \x02 <\x01 END
+INIT_TEXT SCE234_007 V\r SCE_TEXT TEXT1 X}\x01 TEXT2 \xba
  
 ものすごい衝撃が鼻先を直撃し、目の前に火花が散った。@
 そのままよろけて手を伸ばすと、バシャン、と鋭い音がした。@
@@ -108,9 +96,8 @@ TEXT1 X}\x01 TEXT2 \xba
 /*■黒　表示（ノンエフェクト）*/\a7,-1,-1,0,\a0,200,1,0,\a6,0,0,0,床に倒れる。\
 
   
-INIT \x9a\r\x0c SET_VAR  \x0e\x01 \x02 <\x01 END 
-SCEC SCE234_008 \xbc\x10 SCE_DONE 
-TEXT1 \\}\x01 TEXT2 \x94
+INIT \x9a\r\x0c SET_VAR1 \x0e\x01 \x02 <\x01 END
+INIT_TEXT SCE234_008 \xbc\x10 SCE_TEXT TEXT1 \\}\x01 TEXT2 \x94
  
 　興奮が胸を充たし、あふれ、喉へと込み上がってきた。@
 　俺は自分が雄々しく叫ぶのだと思った。\p咆哮して……煮えたぎ\nった興奮を解き放って御堂に立ち向かうのだと思った。\pしかしそ\nんな叫び声は、いつまでたっても形にならなかった。@
@@ -120,9 +107,8 @@ TEXT1 \\}\x01 TEXT2 \x94
 御堂の残忍な笑い顔が、ぐいっとせり上がって目の前に飛び出し\nた。\
 
   
-INIT \x11\x0c SET_VAR  \x0e\x01 \x02 <\x01 END 
-SCEC SCE234_009 \x8a\x13 SCE_DONE 
-TEXT1 `}\x01 TEXT2 \xe1
+INIT \x11\x0c SET_VAR1 \x0e\x01 \x02 <\x01 END
+INIT_TEXT SCE234_009 \x8a\x13 SCE_TEXT TEXT1 `}\x01 TEXT2 \xe1
  
 御堂\n　「おい虎菱ィ！」@
 拓司\n　「わああああああああああああああああああああああああっ！」\n\p御堂\n　「おい虎菱ィ！」@
@@ -133,12 +119,9 @@ TEXT1 `}\x01 TEXT2 \xe1
 \n叫んで、御堂は拓司の腕を逆に取った。\
 
   
-INIT \xce\x13\x0c SET_VAR  \x0e\x01 \x02 <\x01 END   
-INIT \xcb\x0c SET_VAR 
-CMD6 .\\Data\\Script\\Bg.Fob VAR2 \xa6\x17 
-CMD2 BgOn VAR2 \xd0\x17 END 
-SCEC SCE234_010 \xec\x17 SCE_DONE 
-TEXT1 d}\x01 TEXT2 {
+INIT \xce\x13\x0c SET_VAR1 \x0e\x01 \x02 <\x01 END  
+INIT \xcb\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bg.Fob VAR2\xa6\x17 APPlY_2 BgOn VAR2\xd0\x17 END
+INIT_TEXT SCE234_010 \xec\x17 SCE_TEXT TEXT1 d}\x01 TEXT2 {
  
 御堂\n　「骨折るぞ！\p　骨折るぞ！\p　ホネオルホネオルゾホネオルゾゾ\n　　ゾゾゾ！」@
 \n御堂は逆さにとった拓司の腕を、くいっと軽くひねった。@
@@ -148,9 +131,8 @@ TEXT1 d}\x01 TEXT2 {
 \n拓司\n　「わわわわわわわわわわわわわわわわわわ！！」\
 
   
-INIT 0\x18\x0c SET_VAR  \x0e\x01 \x02 <\x01 END 
-SCEC SCE234_011 V\x1a SCE_DONE 
-TEXT1 h}\x01 TEXT2 ]
+INIT 0\x18\x0c SET_VAR1 \x0e\x01 \x02 <\x01 END
+INIT_TEXT SCE234_011 V\x1a SCE_TEXT TEXT1 h}\x01 TEXT2 ]
  
 御堂\n　「もう一本もイクか、オイ？」@
 錦城\n　「やって！」@
@@ -159,9 +141,8 @@ TEXT1 h}\x01 TEXT2 ]
 拓司\n　「わわわわわわわわわわわわわわわわわわ！！」\
 
   
-INIT \x9a\x1a\x0c SET_VAR  \x0e\x01 \x02 <\x01 END 
-SCEC SCE234_012 H\x1c SCE_DONE 
-TEXT1 l}\x01 TEXT2 \x84
+INIT \x9a\x1a\x0c SET_VAR1 \x0e\x01 \x02 <\x01 END
+INIT_TEXT SCE234_012 H\x1c SCE_TEXT TEXT1 l}\x01 TEXT2 \x84
  
 涙と鼻水がとめどなくあふれ出てきた。@
 情けなかった。@
@@ -179,9 +160,8 @@ TEXT1 l}\x01 TEXT2 \x84
 う・ああ・あ・あ・あ・あ・あ・あ・あ・あ・あ・あ・あ・あ・あ\nああああああああ！\
 
   
-INIT \x8c\x1c\x0c SET_VAR  \x0e\x01 \x02 <\x01 END 
-SCEC SCE234_013 \xd6\x1e SCE_DONE 
-TEXT1 p}\x01 TEXT2 \xa8
+INIT \x8c\x1c\x0c SET_VAR1 \x0e\x01 \x02 <\x01 END
+INIT_TEXT SCE234_013 \xd6\x1e SCE_TEXT TEXT1 p}\x01 TEXT2 \xa8
  
 もう一本の手がギシリと歪んだ。@
 \n拓司\n　「これは夢だ！」@
@@ -191,11 +171,8 @@ TEXT1 p}\x01 TEXT2 \xa8
 　　うわあああああああああああああああああああああああああ\n　　あああああああああああああああああああああああああああ\n　　あああああああああああああああああああああああああああ\n　　あああああああああああああああああああああああああああ\n　　あああああああああああああああああああああああああああ\n　　あああああああああああああああああああああああああああ\n　　あああああああああああああああああああああああ！」\
 
   
-INIT \x1a\x1f\x0c SET_VAR  \x0e\x01 \x02 <\x01 END  \x0e\x01 \x02
-CMD4 TextWindowOff VAR1 " END   
-INIT \xca\x0c SET_VAR  \xa6\x17 \x02
-CMD4 BgNormalFadeIn RUNF J" END    \x02 h\n END   
-INIT \xc8\x0c SET_VAR  \xa6\x17 \x02 \xd0\x17 END  \x0e\x01 \x02
-CMD5 TextWindowOnDirect RUNF \xc8" END  \x0e\x01 
-CMD3 TextClose VAR1 \xfc" END 
+INIT \x1a\x1f\x0c SET_VAR1 \x0e\x01 \x02 <\x01 END \x0e\x01 \x02 APPLY_4 TextWindowOff VAR1 " END  
+INIT \xca\x0c SET_VAR1 \xa6\x17 \x02 APPLY_4 BgNormalFadeIn RUNF J" END NULL \x02 h\n END  
+INIT \xc8\x0c SET_VAR1 \xa6\x17 \x02 \xd0\x17 END \x0e\x01 
+WAVL TextWindowOnDirect RUNF \xc8" END \x0e\x01 APPLY_3 TextClose VAR1 \xfc" END
 END_SCRIPT

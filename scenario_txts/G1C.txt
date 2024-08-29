@@ -1,25 +1,17 @@
 START_SCRIPT
 \xcd\x08\x01`B#\x01\xae\x06  
-INIT C\x0c SET_VAR 
-CMD6 .\\Data\\Script\\Bg.Fob VAR2   \x02
-CMD4 BgAutoFadeIn VAR2 J END   
-INIT \x08\x01\x0c SET_VAR 
-CMD6 .\\Data\\Script\\Bgm.Fob VAR1 \x88 
-CMD2 PlayCD RUNF \xb2 END 
-SCEC SCEG01_001 \xce SCE_DONE 
-TEXT1  \xc5\x01 TEXT2 *
+INIT C\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bg.Fob VAR2  \x02 APPLY_4 BgAutoFadeIn VAR2J END  
+INIT \x08\x01\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bgm.Fob VAR1 \x88 APPlY_2 PlayCD RUNF \xb2 END
+INIT_TEXT SCEG01_001 \xce SCE_TEXT TEXT1  \xc5\x01 TEXT2 *
  
 錦城\n　「……しっ！　私よ、虎菱くん」@
 拓司\n　「……先生？」@
 \n　錦城は微かに笑うと、拓司の横へと体を移動させた。@
 寄り添って寝転がるような形になる。\w\z
   
-INIT \x12\x01\x0c SET_VAR 
-CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \xda\x01 
-CMD2 TextOn RUNF \x08\x02 END   
-INIT \xc8\x0c SET_VAR    \x02 J END 
-SCEC SCEG01_002 X\x02 SCE_DONE 
-TEXT1 $\xc5\x01 TEXT2 z
+INIT \x12\x01\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF \xda\x01 APPlY_2 TextOn RUNF \x08\x02 END  
+INIT \xc8\x0c SET_VAR1 NULL \x02 J END
+INIT_TEXT SCEG01_002 X\x02 SCE_TEXT TEXT1 $\xc5\x01 TEXT2 z
  
 錦城\n　「立派だったわ、虎菱くん」@
 拓司\n　「．．．．．．え？」@
@@ -30,9 +22,8 @@ TEXT1 $\xc5\x01 TEXT2 z
 　　そういう人はね、強いの。@
 　　周囲の状況にながされないで、自分という物を持ち続けられ\n　　るの。\p虎菱くんこそが、リーダーにふさわしいって」\w\z
   
-INIT \x9c\x02\x0c SET_VAR  \xda\x01 \x02 \x08\x02 END 
-SCEC SCEG01_003 \xbe\x04 SCE_DONE 
-TEXT1 (\xc5\x01 TEXT2 H
+INIT \x9c\x02\x0c SET_VAR1 \xda\x01 \x02 \x08\x02 END
+INIT_TEXT SCEG01_003 \xbe\x04 SCE_TEXT TEXT1 (\xc5\x01 TEXT2 H
  
 　指が、そっと拓司の顎に触れた。@
 顎先から耳元へと、ゆっくりと指は移動する。\p冷たい指だ。@
@@ -41,7 +32,5 @@ TEXT1 (\xc5\x01 TEXT2 H
 \n錦城\n　「……先生からのエールだと思って。ね？」\
 
   
-INIT \x02\x05\x0c SET_VAR  \xda\x01 \x02 \x08\x02 END  \x88 
-CMD2 StopCD RUNF h\x06 END  \xda\x01 
-CMD3 TextClose VAR1 \x90\x06 END 
+INIT \x02\x05\x0c SET_VAR1 \xda\x01 \x02 \x08\x02 END \x88 APPlY_2 StopCD RUNF h\x06 END \xda\x01 APPLY_3 TextClose VAR1 \x90\x06 END
 END_SCRIPT

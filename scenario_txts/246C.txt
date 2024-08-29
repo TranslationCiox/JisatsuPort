@@ -1,7 +1,6 @@
 START_SCRIPT
 -2\x01`B#\x01\xae)
-SCEC SCE246_001 \x06 SCE_DONE 
-TEXT1 \x90\x01 TEXT2 \xb9
+INIT_TEXT SCE246_001 \x06 SCE_TEXT TEXT1 \x90\x01 TEXT2 \xb9
  
 拓司\n　「来るぞ、急げ！」@
 \n最終波動。@
@@ -17,11 +16,8 @@ TEXT1 \x90\x01 TEXT2 \xb9
 最終波動がやってくる前に壁を壊し、その向こうにあるものを見\nつけだすのだ。\
 
   
-INIT J\x0c SET_VAR 
-CMD7 .\\Data\\Script\\TextFunc.Fob RUNF N\x03 
-CMD2 TextOn RUNF |\x03 END 
-SCEC SCE246_002 \x98\x03 SCE_DONE 
-TEXT1 \x04\x90\x01 TEXT2 B
+INIT J\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF N\x03 APPlY_2 TextOn RUNF |\x03 END
+INIT_TEXT SCE246_002 \x98\x03 SCE_TEXT TEXT1 \x04\x90\x01 TEXT2 B
  
 拓司たちは掘った。\p壁を崩し続けた。@
 \n地鳴りは徐々に大きくなっていく。@
@@ -29,9 +25,8 @@ TEXT1 \x04\x90\x01 TEXT2 B
 すべてのものがブルブルと振動し、輪郭が歪む。天井から、パラ\nパラとコンクリートの破片が落ちてくる。\
 
   
-INIT \xdc\x03\x0c SET_VAR  N\x03 \x02 |\x03 END 
-SCEC SCE246_003 \x1e\x05 SCE_DONE 
-TEXT1 \x08\x90\x01 TEXT2 F
+INIT \xdc\x03\x0c SET_VAR1 N\x03 \x02 |\x03 END
+INIT_TEXT SCE246_003 \x1e\x05 SCE_TEXT TEXT1 \x08\x90\x01 TEXT2 F
  
 早桃\n　「おにいちゃん、間に合わない！\p　間に合わないよ！」@
 拓司\n　「やるんだ！」@
@@ -41,13 +36,9 @@ TEXT1 \x08\x90\x01 TEXT2 F
 拓司\n　「どこかなんて、ない！\p　逃げ場所はない！\p　ここしかないん\n　　だ。\pここしか、ないんだ！」\
 
   
-INIT b\x05\x0c SET_VAR  N\x03 \x02 |\x03 END 
-CMD6 .\\Data\\Script\\Bgm.Fob VAR1 \xb4\x06 
-CMD2 StopCD RUNF \xde\x06 END   
-INIT \x02\x0c SET_VAR  \xb4\x06 
-CMD2 SeStop RUNF  \x07 END 
-SCEC SCE246_004 <\x07 SCE_DONE 
-TEXT1 \x0c\x90\x01 TEXT2 \x95
+INIT b\x05\x0c SET_VAR1 N\x03 \x02 |\x03 END APPLY_FILE .\\Data\\Script\\Bgm.Fob VAR1 \xb4\x06 APPlY_2 StopCD RUNF \xde\x06 END  
+INIT \x02\x0c SET_VAR1 \xb4\x06 APPlY_2 SeStop RUNF  \x07 END
+INIT_TEXT SCE246_004 <\x07 SCE_TEXT TEXT1 \x0c\x90\x01 TEXT2 \x95
  
 ざあっ！@
 \n足の裏から頭のてっぺんへ。@
@@ -60,9 +51,8 @@ TEXT1 \x0c\x90\x01 TEXT2 \x95
 /*▲↑停止まで待つ*/\a3,0,0,0,\a4,0,0,0,\n拓司\n　「！」\
 
   
-INIT \x80\x07\x0c SET_VAR  N\x03 \x02 |\x03 END 
-SCEC SCE246_005 \x0e\n SCE_DONE 
-TEXT1 \x10\x90\x01 TEXT2 U
+INIT \x80\x07\x0c SET_VAR1 N\x03 \x02 |\x03 END
+INIT_TEXT SCE246_005 \x0e\n SCE_TEXT TEXT1 \x10\x90\x01 TEXT2 U
  
 世界が軋んでいた。@
 耳の奥で生まれたその悲鳴は、耳の奥へ針のようにつきささり、\n脳味噌のなかで爆発した。@
@@ -71,9 +61,8 @@ TEXT1 \x10\x90\x01 TEXT2 U
 頭そのものが爆発しないのが不思議だった。\
 
   
-INIT R\n\x0c SET_VAR  N\x03 \x02 |\x03 END 
-SCEC SCE246_006 \xe0\x0b SCE_DONE 
-TEXT1 \x14\x90\x01 TEXT2 }
+INIT R\n\x0c SET_VAR1 N\x03 \x02 |\x03 END
+INIT_TEXT SCE246_006 \xe0\x0b SCE_TEXT TEXT1 \x14\x90\x01 TEXT2 }
  
 拓司\n　「ああああああああああああ！」@
 \n拓司は耳をふさいでうずくまった。@
@@ -85,9 +74,8 @@ TEXT1 \x14\x90\x01 TEXT2 }
 白目をむき、耳から、鼻から、どす黒い血があふれ出している。\
 
   
-INIT $\x0c\x0c SET_VAR  N\x03 \x02 |\x03 END 
-SCEC SCE246_007 R\x0e SCE_DONE 
-TEXT1 \x18\x90\x01 TEXT2 \xad
+INIT $\x0c\x0c SET_VAR1 N\x03 \x02 |\x03 END
+INIT_TEXT SCE246_007 R\x0e SCE_TEXT TEXT1 \x18\x90\x01 TEXT2 \xad
  
 拓司\n　「サ・モ・モ・オオオオオオ・オオオオ！」@
 \n拓司は叫んだ。@
@@ -106,9 +94,8 @@ TEXT1 \x18\x90\x01 TEXT2 \xad
 俺の手によって。@
 \z
   
-INIT \x96\x0e\x0c SET_VAR  N\x03 \x02 |\x03 END 
-SCEC SCE246_008 \x84\x11 SCE_DONE 
-TEXT1 \x1c\x90\x01 TEXT2 9
+INIT \x96\x0e\x0c SET_VAR1 N\x03 \x02 |\x03 END
+INIT_TEXT SCE246_008 \x84\x11 SCE_TEXT TEXT1 \x1c\x90\x01 TEXT2 9
  
 数メートル向こうに、早桃の姿が見える。@
 拓司は一歩踏み出した。@
@@ -116,9 +103,8 @@ TEXT1 \x1c\x90\x01 TEXT2 9
 そうして一歩……一歩……忘れてしまった歩き方を思い出すかの\nように、拓司はゆっくりと歩き始めた。\
 
   
-INIT \xc8\x11\x0c SET_VAR  N\x03 \x02 |\x03 END 
-SCEC SCE246_009 \xe6\x12 SCE_DONE 
-TEXT1  \x90\x01 TEXT2 \xa2
+INIT \xc8\x11\x0c SET_VAR1 N\x03 \x02 |\x03 END
+INIT_TEXT SCE246_009 \xe6\x12 SCE_TEXT TEXT1  \x90\x01 TEXT2 \xa2
  
 /*▲SE33　一回再生（再生終了待たず先へ）*/\a2,0,33,0,\a6,0,0,0,キイイイイイイイイイイイイイイイイイイイイイイイイイイイ！@
 /*▲↑　再生終了を待つ*/\a3,0,0,0,\a4,0,0,0,\nいつの間にか、鼻血が流れ出している。@
@@ -127,9 +113,8 @@ TEXT1  \x90\x01 TEXT2 \xa2
 /*▲↑　再生終了を待つ*/\a3,0,0,0,\a4,0,0,0,\nここから俺は始まるのだ。@
 \n/*▲SE33　一回再生（再生終了待たず先へ）*/\a2,0,33,0,\a6,0,0,0,キイイイイイイイイイイイイイイイイイイイイイイイイイイイ！\w\n/*▲↑　再生終了を待つ*/\a3,0,0,0,\a4,0,0,0,\z
   
-INIT *\x13\x0c SET_VAR  N\x03 \x02 |\x03 END 
-SCEC SCE246_010 \xec\x15 SCE_DONE 
-TEXT1 $\x90\x01 TEXT2 Q
+INIT *\x13\x0c SET_VAR1 N\x03 \x02 |\x03 END
+INIT_TEXT SCE246_010 \xec\x15 SCE_TEXT TEXT1 $\x90\x01 TEXT2 Q
  
 こうして旅が始まったいま、俺にはいまや目的があるのだ。@
 何かから逃げているのではなく、何かに向かっているのだ。@
@@ -141,9 +126,8 @@ TEXT1 $\x90\x01 TEXT2 Q
 動くのだ。\
 
   
-INIT 0\x16\x0c SET_VAR  N\x03 \x02 |\x03 END 
-SCEC SCE246_011 \xae\x17 SCE_DONE 
-TEXT1 (\x90\x01 TEXT2 w
+INIT 0\x16\x0c SET_VAR1 N\x03 \x02 |\x03 END
+INIT_TEXT SCE246_011 \xae\x17 SCE_TEXT TEXT1 (\x90\x01 TEXT2 w
  
 拓司\n　「早桃！」@
 \n/*■CG56　表示（クロスフェード）*/\a7,-2,-2,0,\a0,55,2,0,\a6,-2,0,0,早桃は動かない。すでに痙攣すらしていない。@
@@ -156,12 +140,9 @@ TEXT1 (\x90\x01 TEXT2 w
 \n拓司\n　「勝った！」\
 
   
-INIT \xf2\x17\x0c SET_VAR  N\x03 \x02 |\x03 END   
-INIT \xc9\x0c SET_VAR 
-CMD6 .\\Data\\Script\\Bg.Fob VAR2 "\x1a \x02
-CMD4 BgAutoFadeIn VAR2 L\x1a END 
-SCEC SCE246_012 p\x1a SCE_DONE 
-TEXT1 ,\x90\x01 TEXT2 Y
+INIT \xf2\x17\x0c SET_VAR1 N\x03 \x02 |\x03 END  
+INIT \xc9\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bg.Fob VAR2"\x1a \x02 APPLY_4 BgAutoFadeIn VAR2L\x1a END
+INIT_TEXT SCE246_012 p\x1a SCE_TEXT TEXT1 ,\x90\x01 TEXT2 Y
  
 瞬間。@
 ふいに目の前が真っ白になった。@
@@ -175,9 +156,8 @@ TEXT1 ,\x90\x01 TEXT2 Y
 \n気がつくと、拓司は世界になっていた。\
 
   
-INIT \xb4\x1a\x0c SET_VAR  N\x03 \x02 |\x03 END 
-SCEC SCE246_013 R\x1c SCE_DONE 
-TEXT1 0\x90\x01 TEXT2 \x8e
+INIT \xb4\x1a\x0c SET_VAR1 N\x03 \x02 |\x03 END
+INIT_TEXT SCE246_013 R\x1c SCE_TEXT TEXT1 0\x90\x01 TEXT2 \x8e
  
 世界に音はなく、ただ真っ白なひかりだけがあった。@
 目の前には見えない壁があって、そこに開いた５ンチ四方ほどの\n穴から、そのひかりは射していた。@
@@ -190,10 +170,9 @@ TEXT1 0\x90\x01 TEXT2 \x8e
 堰を切ったように、ひかりがあふれ出した。\
 
   
-INIT \x96\x1c\x0c SET_VAR  N\x03 \x02 |\x03 END   
-INIT \xc9\x0c SET_VAR  "\x1a \x02 L\x1a END 
-SCEC SCE246_014 <\x1f SCE_DONE 
-TEXT1 4\x90\x01 TEXT2 \x8d
+INIT \x96\x1c\x0c SET_VAR1 N\x03 \x02 |\x03 END  
+INIT \xc9\x0c SET_VAR1 "\x1a \x02 L\x1a END
+INIT_TEXT SCE246_014 <\x1f SCE_TEXT TEXT1 4\x90\x01 TEXT2 \x8d
  
 ひかりに身をまかせながら、拓司はなにもかもがわかったように\n感じていた。@
 絡み合ったすべての謎は解き明かされ、どこにもたどり着かない\n無数の伏線は一直線に真実へと結びついていた。@
@@ -205,9 +184,8 @@ TEXT1 4\x90\x01 TEXT2 \x8d
 感じる、というより拓司はそれらと同じものになった。\
 
   
-INIT \x80\x1f\x0c SET_VAR  N\x03 \x02 |\x03 END 
-SCEC SCE246_015 \xee! SCE_DONE 
-TEXT1 8\x90\x01 TEXT2 \xbf
+INIT \x80\x1f\x0c SET_VAR1 N\x03 \x02 |\x03 END
+INIT_TEXT SCE246_015 \xee! SCE_TEXT TEXT1 8\x90\x01 TEXT2 \xbf
  
 私とは万人であり、万人とは私だった。@
 無私な希望。@
@@ -229,19 +207,17 @@ TEXT1 8\x90\x01 TEXT2 \xbf
 それらの照射。\
 
   
-INIT 2"\x0c SET_VAR  N\x03 \x02 |\x03 END 
-SCEC SCE246_016 h% SCE_DONE 
-TEXT1 <\x90\x01 TEXT2 %
+INIT 2"\x0c SET_VAR1 N\x03 \x02 |\x03 END
+INIT_TEXT SCE246_016 h% SCE_TEXT TEXT1 <\x90\x01 TEXT2 %
  
 さまざまな言葉が浮かんでは消えていった。@
 そこに意味などなかった。@
 しかし、それらはそれらそのもので、意味を越えた真理の塊だっ\nた。\
 
   
-INIT \xac%\x0c SET_VAR  N\x03 \x02 |\x03 END   
-INIT 8\x0c SET_VAR  "\x1a \x02 L\x1a END 
-SCEC SCE246_017 \xae& SCE_DONE 
-TEXT1 @\x90\x01 TEXT2 \x96
+INIT \xac%\x0c SET_VAR1 N\x03 \x02 |\x03 END  
+INIT 8\x0c SET_VAR1 "\x1a \x02 L\x1a END
+INIT_TEXT SCE246_017 \xae& SCE_TEXT TEXT1 @\x90\x01 TEXT2 \x96
  
 早桃\n　「……見える……見えるよ……ドルチェだ……ドルチェがいる」\n@
 早桃がつぶやいた。@
@@ -258,6 +234,5 @@ TEXT1 @\x90\x01 TEXT2 \x96
 \nいつしか、胸の中の黒いかたまりは静かに燃え尽きていた。\
 
   
-INIT \xf2&\x0c SET_VAR  N\x03 \x02 |\x03 END  N\x03 
-CMD3 TextClose VAR1 \x90) END 
+INIT \xf2&\x0c SET_VAR1 N\x03 \x02 |\x03 END N\x03 APPLY_3 TextClose VAR1 \x90) END
 END_SCRIPT

@@ -1,10 +1,7 @@
 START_SCRIPT
 \x07\x0e\x01`B#\x01X\x0b  
-INIT \x08\x01\x0c SET_VAR 
-CMD6 .\\Data\\Script\\Bgm.Fob VAR1   
-CMD2 PlayCD RUNF J END 
-SCEC SCE038_001 f SCE_DONE 
-TEXT1 K TEXT2 a
+INIT \x08\x01\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\Bgm.Fob VAR1   APPlY_2 PlayCD RUNF J END
+INIT_TEXT SCE038_001 f SCE_TEXT TEXT1 K TEXT2 a
  
 話題が奈落へと転がり始めたことを悟った拓司は、慌てて話題を\n転じた。@
 \n拓司\n　「おやじから、夏の旅行の話って、聞いてるか？」@
@@ -15,11 +12,8 @@ TEXT1 K TEXT2 a
 やがて早桃がポツリといった。\
 
   
-INIT \xaa\x0c SET_VAR 
-CMD7 .\\Data\\Script\\TextFunc.Fob RUNF N\x02 
-CMD2 TextOn RUNF |\x02 END 
-SCEC SCE038_002 \x98\x02 SCE_DONE 
-TEXT1 \x04K TEXT2 b
+INIT \xaa\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF N\x02 APPlY_2 TextOn RUNF |\x02 END
+INIT_TEXT SCE038_002 \x98\x02 SCE_TEXT TEXT1 \x04K TEXT2 b
  
 早桃\n　「……ホント？」@
 拓司\n　「ああ。\pでも香港って言われてもなあ。@
@@ -31,9 +25,8 @@ TEXT1 \x04K TEXT2 b
 \n　早桃の顔に、ようやく柔らかい笑顔が戻った。\
 
   
-INIT \xdc\x02\x0c SET_VAR  N\x02 \x02 |\x02 END 
-SCEC SCE038_003 \x9e\x04 SCE_DONE 
-TEXT1 \x08K TEXT2 L
+INIT \xdc\x02\x0c SET_VAR1 N\x02 \x02 |\x02 END
+INIT_TEXT SCE038_003 \x9e\x04 SCE_TEXT TEXT1 \x08K TEXT2 L
  
 早桃\n　「おにいちゃん、カンフー映画好きだもんね」@
 拓司\n　「まあな」@
@@ -45,9 +38,8 @@ TEXT1 \x08K TEXT2 L
 　　あと、香港といえばブランド品の買い物だな」\
 
   
-INIT \xe2\x04\x0c SET_VAR  N\x02 \x02 |\x02 END 
-SCEC SCE038_004 L\x06 SCE_DONE 
-TEXT1 \x0cK TEXT2 P
+INIT \xe2\x04\x0c SET_VAR1 N\x02 \x02 |\x02 END
+INIT_TEXT SCE038_004 L\x06 SCE_TEXT TEXT1 \x0cK TEXT2 P
  
 早桃\n　「うん」@
 拓司\n　「しかし、おふくろはいいだろうけど、早桃はなあ」@
@@ -57,9 +49,8 @@ TEXT1 \x0cK TEXT2 P
 \n拓司\n　「……？」\
 
   
-INIT \x90\x06\x0c SET_VAR  N\x02 \x02 |\x02 END 
-SCEC SCE038_005 \n\x08 SCE_DONE 
-TEXT1 \x10K TEXT2 H
+INIT \x90\x06\x0c SET_VAR1 N\x02 \x02 |\x02 END
+INIT_TEXT SCE038_005 \n\x08 SCE_TEXT TEXT1 \x10K TEXT2 H
  
 早桃\n　「……わかってないんだね、おにいちゃん」@
 拓司\n　「わかってない？　@
@@ -70,9 +61,8 @@ TEXT1 \x10K TEXT2 H
 拓司\n　「……？」\
 
   
-INIT N\x08\x0c SET_VAR  N\x02 \x02 |\x02 END 
-SCEC SCE038_006 \xa8\t SCE_DONE 
-TEXT1 \x14K TEXT2 B
+INIT N\x08\x0c SET_VAR1 N\x02 \x02 |\x02 END
+INIT_TEXT SCE038_006 \xa8\t SCE_TEXT TEXT1 \x14K TEXT2 B
  
 早桃\n　「憧れとか、そんなぼんやりしたものじゃないの。@
 　　もっとはっきりした……@
@@ -82,6 +72,5 @@ TEXT1 \x14K TEXT2 B
 拓司\n　「……」\
 
   
-INIT \xec\t\x0c SET_VAR  N\x02 \x02 |\x02 END  N\x02 
-CMD3 TextClose VAR1 :\x0b END 
+INIT \xec\t\x0c SET_VAR1 N\x02 \x02 |\x02 END N\x02 APPLY_3 TextClose VAR1 :\x0b END
 END_SCRIPT

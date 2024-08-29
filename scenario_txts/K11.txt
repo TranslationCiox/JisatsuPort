@@ -1,7 +1,6 @@
 START_SCRIPT
 \x14\x04\x01\xa4\t3\x01\xf8\x02
-SCEC SCEK11_001 \x06 SCE_DONE 
-TEXT1 \xa9\x01 TEXT2 `
+INIT_TEXT SCEK11_001 \x06 SCE_TEXT TEXT1 \xa9\x01 TEXT2 `
  
 　ゆきが流した涙で私の胸のあたりはぐっしょりと濡れていた。@
 そのしめりけは本当にリアルで、それを胸に感じていると\n「そのうちなんとかなるよ」とか、\n「家出しよう」とか、\nそんな安易ななぐさめはとても口にはできなかった。@
@@ -9,14 +8,11 @@ TEXT1 \xa9\x01 TEXT2 `
 でも、その話を聞きながら、私は、ゆきを救い出す方法をひとつ\n見つけだしていた。@
 しばらく考えてから、私はゆきにいった。\w\z
   
-INIT J\x0c SET_VAR 
-CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \xea\x01 
-CMD2 TextOn RUNF \x18\x02 END \x03\x18
+INIT J\x0c SET_VAR1 APPLY_FILE .\\Data\\Script\\TextFunc.Fob RUNF \xea\x01 APPlY_2 TextOn RUNF \x18\x02 END\x03\x18
 CHOICE
 「大丈夫だよ。私が一緒に死んであげるから」\n「お父さんのこと、一緒に殺そう？」\n\l0,2,
 ENDCHOICE
 
   
-INIT 4\x02\x0c SET_VAR  \xea\x01 \x02 \x18\x02 END  \xea\x01 
-CMD3 TextClose VAR1 \xda\x02 END 
+INIT 4\x02\x0c SET_VAR1 \xea\x01 \x02 \x18\x02 END \xea\x01 APPLY_3 TextClose VAR1 \xda\x02 END
 END_SCRIPT
