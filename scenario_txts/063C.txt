@@ -1,7 +1,17 @@
+<<<<<<< HEAD
 F_SRT
 \xf6\r\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00*\x0b\x00
 CMD03 SCE063_001\x00 \x06\x00\x00 S_END 
 VAR01 TXT1 \x10r SEQ06 \x03\x81\x00\x00
+=======
+FSTR
+\xf6\r\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00*\x0b\x00\x03\x03\x00\x00SCE063_001\x00 \x06\x00\x00 
+SEQ07  
+SEQ01 
+SEQ10 \x10r
+SEQ14 
+SEQ11 \x03\x81\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 カンナ\n　「虎菱くん、あなた、その程度だったんだ」@
 \nカンナが淡々といった。\p顔には落胆の色があった。@
@@ -10,12 +20,32 @@ VAR01 TXT1 \x10r SEQ06 \x03\x81\x00\x00
 /*■黒　表示（クロスフェード）*/\a7,-2,-2,0,\a0,200,2,0,\a6,-2,0,0,/*▲BGM　停止 */\a4,-1,0,0,拓司\n　「よせ、カンナ！」\
 
 \x00\x00\x00  
+<<<<<<< HEAD
 VAR01 J\x00 SET01 FILE2 .\\Data\\Script\\TextFunc.Fob COMMAND_TO_BYTECODE1 n\x02\x00 
 CMD01 TextOn COMMAND_TO_BYTECODE1 \x9c\x02\x00 C_END  
 VAR01 \x0b\x01 SET01 FILE1 .\\Data\\Script\\Bgm.Fob COMMAND_TO_BYTECODE2 \xd2\x02\x00 
 CMD01 PlayCD COMMAND_TO_BYTECODE1 \xfc\x02\x00 
 S_STR SCE063_002\x00 \x18\x03\x00 S_END 
 VAR01 TXT1 \x14r SEQ06 \x03{\x00\x00
+=======
+SEQ01 J\x00
+SEQ14 
+SEQ08 "
+SEQ13 .\\Data\\Script\\TextFunc.Fob SPC01 n\x02\x00 
+SEQ02 TextOn SPC01 \x9c\x02\x00 
+SEQ06   
+SEQ01 \x0b\x01
+SEQ14 
+SEQ08 "
+SEQ12 .\\Data\\Script\\Bgm.Fob SPC02 \xd2\x02\x00 
+SEQ02 PlayCD SPC01 \xfc\x02\x00 
+SEQ05 SCE063_002\x00 \x18\x03\x00 
+SEQ07  
+SEQ01 
+SEQ10 \x14r
+SEQ14 
+SEQ11 \x03{\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 カンナ\n　「無駄な努力だった。\pとっとと死んじゃえばよかった。@
 　　より完璧な死なんか求めず……こうやって」@
@@ -26,9 +56,22 @@ VAR01 TXT1 \x14r SEQ06 \x03{\x00\x00
 　　あなたがクイズに間違えたから……」\
 
 \x00\x00\x00  
+<<<<<<< HEAD
 VAR01 \\\x03 SET01  n\x02\x00 OPER  \x9c\x02\x00 
 S_STR SCE063_003\x00 \x82\x05\x00 S_END 
 VAR01 TXT1 \x18r SEQ06 \x03V\x00\x00
+=======
+SEQ01 \\\x03
+SEQ14 
+SEQ08 " n\x02\x00 
+SEQ08  \x9c\x02\x00 
+SEQ05 SCE063_003\x00 \x82\x05\x00 
+SEQ07  
+SEQ01 
+SEQ10 \x18r
+SEQ14 
+SEQ11 \x03V\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 拓司の胸の中に、罪悪感が広がっていった。@
 理屈では、自分に責任などないということはわかっていたが、目\nの前で死につつあるカンナを見ていると、そんな理屈はこれっぽ\nっちの効果も持たない。@
@@ -39,11 +82,30 @@ VAR01 TXT1 \x18r SEQ06 \x03V\x00\x00
 いつの間にか、足が窓のほうへとむかっている。　\
 
 \x00  
+<<<<<<< HEAD
 VAR01 \xc6\x05 SET01  n\x02\x00 OPER  \x9c\x02\x00 C_END  
 VAR01 \xc8\x00 SET01 FILE1 .\\Data\\Script\\Bg.Fob COMMAND_TO_BYTECODE3 r\x07\x00 
 CMD02 BgAutoFadeIn COMMAND_TO_BYTECODE3 \x9c\x07\x00 
 S_STR SCE063_004\x00 \xc0\x07\x00 S_END 
 VAR01 TXT1 \x1cr SEQ06 \x03D\x00\x00
+=======
+SEQ01 \xc6\x05
+SEQ14 
+SEQ08 " n\x02\x00 
+SEQ08  \x9c\x02\x00 
+SEQ06   
+SEQ01 \xc8\x00
+SEQ14 
+SEQ08 "
+SEQ12 .\\Data\\Script\\Bg.Fob SPC03 r\x07\x00 
+SEQ03 BgAutoFadeIn SPC03 \x9c\x07\x00 
+SEQ05 SCE063_004\x00 \xc0\x07\x00 
+SEQ07  
+SEQ01 
+SEQ10 \x1cr
+SEQ14 
+SEQ11 \x03D\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 もしかしてこれが波動に侵されるということなのか？@
 －－そう思ったときにはもう遅かった。@
@@ -52,9 +114,22 @@ VAR01 TXT1 \x1cr SEQ06 \x03D\x00\x00
 なにもできない。\
 
 \x00\x00\x00  
+<<<<<<< HEAD
 VAR01 \x04\x08 SET01  n\x02\x00 OPER  \x9c\x02\x00 
 S_STR SCE063_005\x00 N\t\x00 S_END 
 VAR01 TXT1  r SEQ06 \x03C\x00\x00
+=======
+SEQ01 \x04\x08
+SEQ14 
+SEQ08 " n\x02\x00 
+SEQ08  \x9c\x02\x00 
+SEQ05 SCE063_005\x00 N\t\x00 
+SEQ07  
+SEQ01 
+SEQ10  r
+SEQ14 
+SEQ11 \x03C\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 早桃\n　「おにいちゃん！」@
 \n早桃の声を遠くに聞きながら、拓司は地面を蹴って、ふわりと空\n中に飛び出していた。@
@@ -64,9 +139,21 @@ VAR01 TXT1  r SEQ06 \x03C\x00\x00
 消えゆく意識の中、拓司は思った。\
 
 \x00  
+<<<<<<< HEAD
 VAR01 \x92\t SET01  n\x02\x00 OPER  \x9c\x02\x00 
 CHOICE_FLAG  \xd2\x02\x00 
 CMD01 StopCD COMMAND_TO_BYTECODE1 \xe4\n\x00 
 CHOICE_FLAG  n\x02\x00 OPER 
 CMD03 TextClose COMMAND_TO_BYTECODE2 \x0c\x0b\x00 
 F_END
+=======
+SEQ01 \x92\t
+SEQ14 
+SEQ08 " n\x02\x00 
+SEQ08  \x9c\x02\x00 
+SEQ06  \xd2\x02\x00 
+SEQ02 StopCD SPC01 \xe4\n\x00 
+SEQ06  n\x02\x00 
+SEQ04 TextClose SPC02 \x0c\x0b\x00 
+FEND
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23

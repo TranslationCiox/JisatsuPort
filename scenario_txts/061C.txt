@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 F_SRT
 \xc5\x05\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xa4\t3\x01\x00\x00\x00\xba\x04\x00
 CMD03 SCE061_001\x00 \x06\x00\x00 S_END 
@@ -6,6 +7,25 @@ VAR01 OPER \x0c
 SEQ05   \x04\x00\x00\r\x00\x00 \x1a\x00 SET01   \x08\x00\x00\r\x00\x00 \x01\x00 SET01 FILE1 .\\Data\\Script\\Bgm.Fob COMMAND_TO_BYTECODE2 \x98\x00\x00 
 CMD01 SePlay COMMAND_TO_BYTECODE1 \xc2\x00\x00 
 CHOICE_FLAG \x03\\\x00\x00
+=======
+FSTR
+\xc5\x05\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xa4\t3\x01\x00\x00\x00\xba\x04\x00\x03\x03\x00\x00SCE061_001\x00 \x06\x00\x00 
+SEQ07  
+SEQ01 
+SEQ10 \xf0n
+SEQ14 
+SEQ11   
+SEQ01 
+SEQ08 \x0c
+SEQ08 "  \x04\x00\x00\r\x00\x00 \x1a\x00
+SEQ14 
+SEQ08 "  \x08\x00\x00\r\x00\x00 \x01\x00
+SEQ14 
+SEQ08 "
+SEQ12 .\\Data\\Script\\Bgm.Fob SPC02 \x98\x00\x00 
+SEQ02 SePlay SPC01 \xc2\x00\x00 
+SEQ06 \x03\\\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 なたね\n　「次は？」@
 拓司\n　「２階……カンナの教室だ」@
@@ -18,6 +38,7 @@ CHOICE_FLAG \x03\\\x00\x00
 なたね\n　「死の話」\
 
 \x00  
+<<<<<<< HEAD
 VAR01 \xde\x00 SET01 FILE2 .\\Data\\Script\\TextFunc.Fob COMMAND_TO_BYTECODE1 n\x02\x00 
 CMD01 TextOn COMMAND_TO_BYTECODE1 \x9c\x02\x00 C_END  
 VAR01 OPER \x0c
@@ -27,13 +48,53 @@ VAR01 <\x00 SET01 FILE2 .\\Data\\Script\\TextFunc.fob COMMAND_TO_BYTECODE1 \x14\
 CMD03 WaitTime COMMAND_TO_BYTECODE3 B\x03\x00 
 S_STR SCE061_002\x00 b\x03\x00 S_END 
 VAR01 TXT1 \xf4n SEQ06 \x03\x12\x00\x00
+=======
+SEQ01 \xde\x00
+SEQ14 
+SEQ08 "
+SEQ13 .\\Data\\Script\\TextFunc.Fob SPC01 n\x02\x00 
+SEQ02 TextOn SPC01 \x9c\x02\x00 
+SEQ06   
+SEQ01 
+SEQ08 \x0c
+SEQ08 " \x98\x00\x00 
+SEQ02 SeStop SPC01 \xde\x02\x00 
+SEQ06   
+SEQ01 <\x00
+SEQ14 
+SEQ08 "
+SEQ13 .\\Data\\Script\\TextFunc.fob SPC01 \x14\x03\x00 
+SEQ04 WaitTime SPC03 B\x03\x00 
+SEQ05 SCE061_002\x00 b\x03\x00 
+SEQ07  
+SEQ01 
+SEQ10 \xf4n
+SEQ14 
+SEQ11 \x03\x12\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 拓司\n　「早桃は廊下で待っていろ。\p雲居さんは……一緒に頼む」\
 
 \x00  
+<<<<<<< HEAD
 VAR01 \xa6\x03 SET01  n\x02\x00 OPER  \x9c\x02\x00 C_END  
 VAR01 \xc9\x00 SET01 FILE1 .\\Data\\Script\\Bg.Fob COMMAND_TO_BYTECODE3 B\x04\x00 
 CMD02 BgAutoFadeIn COMMAND_TO_BYTECODE3 l\x04\x00 
 CHOICE_FLAG  n\x02\x00 OPER 
 CMD03 TextClose COMMAND_TO_BYTECODE2 \x9c\x04\x00 
 F_END
+=======
+SEQ01 \xa6\x03
+SEQ14 
+SEQ08 " n\x02\x00 
+SEQ08  \x9c\x02\x00 
+SEQ06   
+SEQ01 \xc9\x00
+SEQ14 
+SEQ08 "
+SEQ12 .\\Data\\Script\\Bg.Fob SPC03 B\x04\x00 
+SEQ03 BgAutoFadeIn SPC03 l\x04\x00 
+SEQ06  n\x02\x00 
+SEQ04 TextClose SPC02 \x9c\x04\x00 
+FEND
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23

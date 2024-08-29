@@ -1,9 +1,25 @@
+<<<<<<< HEAD
 F_SRT
 \x97\r\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00:\x0b\x00  
 VAR01 \t\x01 SET01 FILE1 .\\Data\\Script\\Bgm.Fob COMMAND_TO_BYTECODE2  \x00\x00 
 CMD01 PlayCD COMMAND_TO_BYTECODE1 J\x00\x00 
 S_STR SCE034_001\x00 f\x00\x00 S_END 
 VAR01 TXT1 \xc0D SEQ06 \x03\xb1\x00\x00
+=======
+FSTR
+\x97\r\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00:\x0b\x00  
+SEQ01 \t\x01
+SEQ14 
+SEQ08 "
+SEQ12 .\\Data\\Script\\Bgm.Fob SPC02  \x00\x00 
+SEQ02 PlayCD SPC01 J\x00\x00 
+SEQ05 SCE034_001\x00 f\x00\x00 
+SEQ07  
+SEQ01 
+SEQ10 \xc0D
+SEQ14 
+SEQ11 \x03\xb1\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 　４階。\p賑やかな教室。\pドアは開け放たれている。@
 　中を覗くと、男子学生たちの姿はすでに教室にはない。@
@@ -19,10 +35,24 @@ VAR01 TXT1 \xc0D SEQ06 \x03\xb1\x00\x00
 \n　賑やかで温かい教室の空気から、早桃の姿だけが浮き上がって\n見えた。\
 
 \x00  
+<<<<<<< HEAD
 VAR01 \xaa\x00 SET01 FILE2 .\\Data\\Script\\TextFunc.Fob COMMAND_TO_BYTECODE1 \x8e\x03\x00 
 CMD01 TextOn COMMAND_TO_BYTECODE1 \xbc\x03\x00 
 S_STR SCE034_002\x00 \xd8\x03\x00 S_END 
 VAR01 TXT1 \xc4D SEQ06 \x03y\x00\x00
+=======
+SEQ01 \xaa\x00
+SEQ14 
+SEQ08 "
+SEQ13 .\\Data\\Script\\TextFunc.Fob SPC01 \x8e\x03\x00 
+SEQ02 TextOn SPC01 \xbc\x03\x00 
+SEQ05 SCE034_002\x00 \xd8\x03\x00 
+SEQ07  
+SEQ01 
+SEQ10 \xc4D
+SEQ14 
+SEQ11 \x03y\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 　まるでそこに何か大切なものがあるかのように……@
 あるいは、そこしか見るべき場所がないかのように……@
@@ -36,9 +66,22 @@ VAR01 TXT1 \xc4D SEQ06 \x03y\x00\x00
 拓司\n　「いや。\pたまには一緒に飯でも食おうかと思ってさ」\
 
 \x00  
+<<<<<<< HEAD
 VAR01 \x1c\x04 SET01  \x8e\x03\x00 OPER  \xbc\x03\x00 
 S_STR SCE034_003\x00 :\x06\x00 S_END 
 VAR01 TXT1 \xc8D SEQ06 \x03\\\x00\x00
+=======
+SEQ01 \x1c\x04
+SEQ14 
+SEQ08 " \x8e\x03\x00 
+SEQ08  \xbc\x03\x00 
+SEQ05 SCE034_003\x00 :\x06\x00 
+SEQ07  
+SEQ01 
+SEQ10 \xc8D
+SEQ14 
+SEQ11 \x03\\\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 早桃\n　「どうして？」@
 拓司\n　「どうしてって……\pなんとなくさ」@
@@ -49,9 +92,22 @@ VAR01 TXT1 \xc8D SEQ06 \x03\\\x00\x00
 \n　そんな声が、時折やや大きめに漏れ聞こえる。\n　早桃は必死にそれに気づかない振りをしているが、声が聞こえ\nるたび、目の中に怯えと恥じらいの影がゆらぐ。\
 
 \x00  
+<<<<<<< HEAD
 VAR01 ~\x06 SET01  \x8e\x03\x00 OPER  \xbc\x03\x00 
 S_STR SCE034_004\x00 (\x08\x00 S_END 
 VAR01 TXT1 \xccD SEQ06 \x03T\x00\x00
+=======
+SEQ01 ~\x06
+SEQ14 
+SEQ08 " \x8e\x03\x00 
+SEQ08  \xbc\x03\x00 
+SEQ05 SCE034_004\x00 (\x08\x00 
+SEQ07  
+SEQ01 
+SEQ10 \xccD
+SEQ14 
+SEQ11 \x03T\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 　早桃がクラスで孤立しているということはなんとなく把握して\nいるつもりだった。@
 しかし、目の当たりにしたその光景は、あまりにもリアルで、胸\nを締め付けるものだった。@
@@ -62,16 +118,39 @@ VAR01 TXT1 \xccD SEQ06 \x03T\x00\x00
 早桃\n　「わけてあげよっか？」\
 
 \x00\x00\x00  
+<<<<<<< HEAD
 VAR01 l\x08 SET01  \x8e\x03\x00 OPER  \xbc\x03\x00 
 S_STR SCE034_005\x00 \xf6\t\x00 S_END 
 VAR01 TXT1 \xd0D SEQ06 \x03'\x00\x00
+=======
+SEQ01 l\x08
+SEQ14 
+SEQ08 " \x8e\x03\x00 
+SEQ08  \xbc\x03\x00 
+SEQ05 SCE034_005\x00 \xf6\t\x00 
+SEQ07  
+SEQ01 
+SEQ10 \xd0D
+SEQ14 
+SEQ11 \x03'\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 拓司\n　「……え？」@
 早桃\n　「これ。\pほとんど口つけてないから」@
 \n　そういって早桃は、ひとかじりしただけのコッペパンを軽く振\nってみせた。\
 
 \x00  
+<<<<<<< HEAD
 VAR01 :\n SET01  \x8e\x03\x00 OPER  \xbc\x03\x00 
 CHOICE_FLAG  \x8e\x03\x00 OPER 
 CMD03 TextClose COMMAND_TO_BYTECODE2 \x1c\x0b\x00 
 F_END
+=======
+SEQ01 :\n
+SEQ14 
+SEQ08 " \x8e\x03\x00 
+SEQ08  \xbc\x03\x00 
+SEQ06  \x8e\x03\x00 
+SEQ04 TextClose SPC02 \x1c\x0b\x00 
+FEND
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23

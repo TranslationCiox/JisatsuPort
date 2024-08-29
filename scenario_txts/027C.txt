@@ -1,11 +1,22 @@
+<<<<<<< HEAD
 F_SRT
 \xa6\x05\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xa4\t3\x01\x00\x00\x00\x82\x04\x00
 CMD03 SCE027_001\x00 \x06\x00\x00 S_END 
 VAR01 TXT1 \xd09 SEQ06 \x03\x10\x00\x00
+=======
+FSTR
+\xa6\x05\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xa4\t3\x01\x00\x00\x00\x82\x04\x00\x03\x03\x00\x00SCE027_001\x00 \x06\x00\x00 
+SEQ07  
+SEQ01 
+SEQ10 \xd09
+SEQ14 
+SEQ11 \x03\x10\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 \n\n\n\n\n\n\n\n\n\n　　　　　　　　　　　『昼休み』\
 
 \x00\x00\x00  
+<<<<<<< HEAD
 VAR01 J\x00 SET01 FILE2 .\\Data\\Script\\TextFunc.Fob COMMAND_TO_BYTECODE1 \xaa\x00\x00 
 CMD01 TextOn COMMAND_TO_BYTECODE1 \xd8\x00\x00 
 S_STR SCE027_002\x00 \xf4\x00\x00 S_END 
@@ -14,6 +25,29 @@ VAR01 OPER \x0c
 SEQ05   \x04\x00\x00\r\x00\x00 \x17\x00 SET01   \x08\x00\x00\r\x00\x00 \x01\x00 SET01 FILE1 .\\Data\\Script\\Bgm.Fob COMMAND_TO_BYTECODE2 \x86\x01\x00 
 CMD01 SePlay COMMAND_TO_BYTECODE1 \xb0\x01\x00 
 CHOICE_FLAG \x03\x84\x00\x00
+=======
+SEQ01 J\x00
+SEQ14 
+SEQ08 "
+SEQ13 .\\Data\\Script\\TextFunc.Fob SPC01 \xaa\x00\x00 
+SEQ02 TextOn SPC01 \xd8\x00\x00 
+SEQ05 SCE027_002\x00 \xf4\x00\x00 
+SEQ07  
+SEQ01 
+SEQ10 \xd49
+SEQ14 
+SEQ11   
+SEQ01 
+SEQ08 \x0c
+SEQ08 "  \x04\x00\x00\r\x00\x00 \x17\x00
+SEQ14 
+SEQ08 "  \x08\x00\x00\r\x00\x00 \x01\x00
+SEQ14 
+SEQ08 "
+SEQ12 .\\Data\\Script\\Bgm.Fob SPC02 \x86\x01\x00 
+SEQ02 SePlay SPC01 \xb0\x01\x00 
+SEQ06 \x03\x84\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 　－－月代カンナはどうしておれに干渉したんだ？@
 \n　拓司は、どうしてもその思いを頭から振り払うことができなかっ\n　た。@
@@ -23,6 +57,7 @@ CHOICE_FLAG \x03\x84\x00\x00
 　　お互いの世界……フフフ。\p私たちの世界以外では、私たちは他\n　　人になるの。\pそうすることで、私たちの世界はより本物になる\n　　……どうかしら？」\
 
 \x00  
+<<<<<<< HEAD
 VAR01 \xcc\x01 SET01  \xaa\x00\x00 OPER  \xd8\x00\x00 C_END  
 VAR01 OPER \x0c
 SEQ05  \x86\x01\x00 
@@ -30,3 +65,17 @@ CMD01 SeStop COMMAND_TO_BYTECODE1 <\x04\x00
 CHOICE_FLAG  \xaa\x00\x00 OPER 
 CMD03 TextClose COMMAND_TO_BYTECODE2 d\x04\x00 
 F_END
+=======
+SEQ01 \xcc\x01
+SEQ14 
+SEQ08 " \xaa\x00\x00 
+SEQ08  \xd8\x00\x00 
+SEQ06   
+SEQ01 
+SEQ08 \x0c
+SEQ08 " \x86\x01\x00 
+SEQ02 SeStop SPC01 <\x04\x00 
+SEQ06  \xaa\x00\x00 
+SEQ04 TextClose SPC02 d\x04\x00 
+FEND
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23

@@ -1,9 +1,24 @@
+<<<<<<< HEAD
 F_SRT
 \x9b\x19\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xde\x14\x00  
 VAR01 \x04\x01 SET01 FILE1 .\\Data\\Script\\Bgm.Fob COMMAND_TO_BYTECODE2  \x00\x00 
 CMD01 PlayCD COMMAND_TO_BYTECODE1 J\x00\x00 
 S_STR SCE239_001\x00 f\x00\x00 S_END 
 VAR01 TXT1 \x10\x85\x01\x0c\x00\x00\x00\x00"\x03f\x00\x00
+=======
+FSTR
+\x9b\x19\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xde\x14\x00  
+SEQ01 \x04\x01
+SEQ14 
+SEQ08 "
+SEQ12 .\\Data\\Script\\Bgm.Fob SPC02  \x00\x00 
+SEQ02 PlayCD SPC01 J\x00\x00 
+SEQ05 SCE239_001\x00 f\x00\x00 
+SEQ07  
+SEQ01 
+SEQ10 \x10\x85\x01\x0c
+SEQ11 \x03f\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 拓司は再び、空白の世界に立っていた。@
 隣には、雲居ナタネが立っている。@
@@ -13,10 +28,23 @@ VAR01 TXT1 \x10\x85\x01\x0c\x00\x00\x00\x00"\x03f\x00\x00
 ナタネ\n　「くすくす。\p誰だって、子供っぽい空想の世界は持っているわ。\n　　\pだから特別あなたが幼稚ってわけでもないと思う」\
 
 \x00\x00\x00  
+<<<<<<< HEAD
 VAR01 \xaa\x00 SET01 FILE2 .\\Data\\Script\\TextFunc.Fob COMMAND_TO_BYTECODE1 b\x02\x00 
 CMD01 TextOn COMMAND_TO_BYTECODE1 \x90\x02\x00 
 S_STR SCE239_002\x00 \xac\x02\x00 S_END 
 VAR01 TXT1 \x14\x85\x01\x0c\x00\x00\x00\x00"\x03o\x00\x00
+=======
+SEQ01 \xaa\x00
+SEQ14 
+SEQ08 "
+SEQ13 .\\Data\\Script\\TextFunc.Fob SPC01 b\x02\x00 
+SEQ02 TextOn SPC01 \x90\x02\x00 
+SEQ05 SCE239_002\x00 \xac\x02\x00 
+SEQ07  
+SEQ01 
+SEQ10 \x14\x85\x01\x0c
+SEQ11 \x03o\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 拓司\n　「ありがとう」@
 \nいいながら拓司は、ナタネがそういってくれるのは、自分がそう\nいって欲しいと望んでいるからに他ならないことを理解していた。\n\pただ、その「ありがとう」は、自然に、拓司の心の一番深い場所\nから生まれてきた言葉だった。@
@@ -27,9 +55,21 @@ VAR01 TXT1 \x14\x85\x01\x0c\x00\x00\x00\x00"\x03o\x00\x00
 いま、この瞬間、そう決まったのだ。\
 
 \x00\x00\x00  
+<<<<<<< HEAD
 VAR01 \xf0\x02 SET01  b\x02\x00 OPER  \x90\x02\x00 
 S_STR SCE239_003\x00 \xe6\x04\x00 S_END 
 VAR01 TXT1 \x18\x85\x01\x0c\x00\x00\x00\x00"\x03\x81\x00\x00
+=======
+SEQ01 \xf0\x02
+SEQ14 
+SEQ08 " b\x02\x00 
+SEQ08  \x90\x02\x00 
+SEQ05 SCE239_003\x00 \xe6\x04\x00 
+SEQ07  
+SEQ01 
+SEQ10 \x18\x85\x01\x0c
+SEQ11 \x03\x81\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 拓司\n　「そういうことなんだな」@
 \nナタネは無言で頷いた。@
@@ -38,9 +78,21 @@ VAR01 TXT1 \x18\x85\x01\x0c\x00\x00\x00\x00"\x03\x81\x00\x00
 拓司\n　「そうか」\
 
 \x00  
+<<<<<<< HEAD
 VAR01 *\x05 SET01  b\x02\x00 OPER  \x90\x02\x00 
 S_STR SCE239_004\x00 h\x07\x00 S_END 
 VAR01 TXT1 \x1c\x85\x01\x0c\x00\x00\x00\x00"\x03\x87\x00\x00
+=======
+SEQ01 *\x05
+SEQ14 
+SEQ08 " b\x02\x00 
+SEQ08  \x90\x02\x00 
+SEQ05 SCE239_004\x00 h\x07\x00 
+SEQ07  
+SEQ01 
+SEQ10 \x1c\x85\x01\x0c
+SEQ11 \x03\x87\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 拓司はナタネを見つめた。@
 そこにいるナタネは、拓司の世界のなたねの、本来あるべき姿な\nのかもしれなかった。@
@@ -55,9 +107,21 @@ VAR01 TXT1 \x1c\x85\x01\x0c\x00\x00\x00\x00"\x03\x87\x00\x00
 それが現実なのだ。\
 
 \x00\x00\x00  
+<<<<<<< HEAD
 VAR01 \xac\x07 SET01  b\x02\x00 OPER  \x90\x02\x00 
 S_STR SCE239_005\x00 \x02\n\x00 S_END 
 VAR01 TXT1  \x85\x01\x0c\x00\x00\x00\x00"\x03^\x00\x00
+=======
+SEQ01 \xac\x07
+SEQ14 
+SEQ08 " b\x02\x00 
+SEQ08  \x90\x02\x00 
+SEQ05 SCE239_005\x00 \x02\n\x00 
+SEQ07  
+SEQ01 
+SEQ10  \x85\x01\x0c
+SEQ11 \x03^\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 拓司\n　「雲居さん。\pおれはこれから、ひとつの世界を創る」@
 ナタネ\n　「……」@
@@ -68,9 +132,21 @@ VAR01 TXT1  \x85\x01\x0c\x00\x00\x00\x00"\x03^\x00\x00
 拓司\n　「その世界では、きみは－－」\
 
 \x00  
+<<<<<<< HEAD
 VAR01 F\n SET01  b\x02\x00 OPER  \x90\x02\x00 
 S_STR SCE239_006\x00 \xf8\x0b\x00 S_END 
 VAR01 TXT1 $\x85\x01\x0c\x00\x00\x00\x00"\x03*\x00\x00
+=======
+SEQ01 F\n
+SEQ14 
+SEQ08 " b\x02\x00 
+SEQ08  \x90\x02\x00 
+SEQ05 SCE239_006\x00 \xf8\x0b\x00 
+SEQ07  
+SEQ01 
+SEQ10 $\x85\x01\x0c
+SEQ11 \x03*\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 ナタネ\n　「さあ、早く創るのよ」@
 \nナタネは微笑んで、いった。@
@@ -78,9 +154,21 @@ VAR01 TXT1 $\x85\x01\x0c\x00\x00\x00\x00"\x03*\x00\x00
 拓司\n　「そうだな……ああ、そうだよな」\
 
 \x00  
+<<<<<<< HEAD
 VAR01 <\x0c SET01  b\x02\x00 OPER  \x90\x02\x00 
 S_STR SCE239_007\x00 \x1e\r\x00 S_END 
 VAR01 TXT1 (\x85\x01\x0c\x00\x00\x00\x00"\x03U\x00\x00
+=======
+SEQ01 <\x0c
+SEQ14 
+SEQ08 " b\x02\x00 
+SEQ08  \x90\x02\x00 
+SEQ05 SCE239_007\x00 \x1e\r\x00 
+SEQ07  
+SEQ01 
+SEQ10 (\x85\x01\x0c
+SEQ11 \x03U\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 拓司は目を閉じた。@
 －－世界を創ろう。@
@@ -89,9 +177,21 @@ VAR01 TXT1 (\x85\x01\x0c\x00\x00\x00\x00"\x03U\x00\x00
 けれどもいま、その世界を創ろうとしている俺の意志は、選択不\n可能なくじびきの不幸な結果ではない。強制されたものではない。\n\pおれがが創る、おれの世界だ。\
 
 \x00\x00\x00  
+<<<<<<< HEAD
 VAR01 b\r SET01  b\x02\x00 OPER  \x90\x02\x00 
 S_STR SCE239_008\x00 \xf0\x0e\x00 S_END 
 VAR01 TXT1 ,\x85\x01\x0c\x00\x00\x00\x00"\x03B\x00\x00
+=======
+SEQ01 b\r
+SEQ14 
+SEQ08 " b\x02\x00 
+SEQ08  \x90\x02\x00 
+SEQ05 SCE239_008\x00 \xf0\x0e\x00 
+SEQ07  
+SEQ01 
+SEQ10 ,\x85\x01\x0c
+SEQ11 \x03B\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 ナタネ\n　「あなたが創る、あなたの世界」@
 \nもはやあらゆる責任は世界にはなく、おれ自身にある。@
@@ -101,9 +201,21 @@ VAR01 TXT1 ,\x85\x01\x0c\x00\x00\x00\x00"\x03B\x00\x00
 \nナタネ\n　「前に－－」\
 
 \x00\x00\x00  
+<<<<<<< HEAD
 VAR01 4\x0f SET01  b\x02\x00 OPER  \x90\x02\x00 
 S_STR SCE239_009\x00 v\x10\x00 S_END 
 VAR01 TXT1 0\x85\x01\x0c\x00\x00\x00\x00"\x03\\\x00\x00
+=======
+SEQ01 4\x0f
+SEQ14 
+SEQ08 " b\x02\x00 
+SEQ08  \x90\x02\x00 
+SEQ05 SCE239_009\x00 v\x10\x00 
+SEQ07  
+SEQ01 
+SEQ10 0\x85\x01\x0c
+SEQ11 \x03\\\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 動くことで、おれはおれを後に残してきたことを知り、新たなる\nおれを知るのだ。@
 世界がおれをおいていくのだとしたら、おれがおれを動かすしか\nないのだ。@
@@ -118,9 +230,21 @@ VAR01 TXT1 0\x85\x01\x0c\x00\x00\x00\x00"\x03\\\x00\x00
 いまおれはゆく。\
 
 \x00  
+<<<<<<< HEAD
 VAR01 \xba\x10 SET01  b\x02\x00 OPER  \x90\x02\x00 
 S_STR SCE239_010\x00 d\x12\x00 S_END 
 VAR01 TXT1 4\x85\x01\x0c\x00\x00\x00\x00"\x03$\x00\x00
+=======
+SEQ01 \xba\x10
+SEQ14 
+SEQ08 " b\x02\x00 
+SEQ08  \x90\x02\x00 
+SEQ05 SCE239_010\x00 d\x12\x00 
+SEQ07  
+SEQ01 
+SEQ10 4\x85\x01\x0c
+SEQ11 \x03$\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 ナタネ\n　「光と共に歩め」@
 \n世界の入り口に立って、ゆく。@
@@ -128,13 +252,26 @@ VAR01 TXT1 4\x85\x01\x0c\x00\x00\x00\x00"\x03$\x00\x00
 世界が決めるのではなく、ただおれが決める。\
 
 \x00\x00\x00  
+<<<<<<< HEAD
 VAR01 \xa8\x12 SET01  b\x02\x00 OPER  \x90\x02\x00 
 S_STR SCE239_011\x00 r\x13\x00 S_END 
 VAR01 TXT1 8\x85\x01\x0c\x00\x00\x00\x00"\x03\r\x00\x00
+=======
+SEQ01 \xa8\x12
+SEQ14 
+SEQ08 " b\x02\x00 
+SEQ08  \x90\x02\x00 
+SEQ05 SCE239_011\x00 r\x13\x00 
+SEQ07  
+SEQ01 
+SEQ10 8\x85\x01\x0c
+SEQ11 \x03\r\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 拓司\n　「おれは望む－－おれの世界を！」\
 
 \x00\x00\x00  
+<<<<<<< HEAD
 VAR01 \xb6\x13 SET01  b\x02\x00 OPER  \x90\x02\x00 
 CHOICE_FLAG   \x00\x00 
 CMD01 StopCD COMMAND_TO_BYTECODE1 0\x14\x00 C_END  
@@ -143,3 +280,20 @@ CMD02 BgAutoFadeIn COMMAND_TO_BYTECODE3 \x90\x14\x00
 CHOICE_FLAG  b\x02\x00 OPER 
 CMD03 TextClose COMMAND_TO_BYTECODE2 \xc0\x14\x00 
 F_END
+=======
+SEQ01 \xb6\x13
+SEQ14 
+SEQ08 " b\x02\x00 
+SEQ08  \x90\x02\x00 
+SEQ06   \x00\x00 
+SEQ02 StopCD SPC01 0\x14\x00 
+SEQ06   
+SEQ01 \xc8\x00
+SEQ14 
+SEQ08 "
+SEQ12 .\\Data\\Script\\Bg.Fob SPC03 f\x14\x00 
+SEQ03 BgAutoFadeIn SPC03 \x90\x14\x00 
+SEQ06  b\x02\x00 
+SEQ04 TextClose SPC02 \xc0\x14\x00 
+FEND
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23

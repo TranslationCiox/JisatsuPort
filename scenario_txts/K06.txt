@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 F_SRT
 \xb8\x04\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xa4\t3\x01\x00\x00\x00d\x03\x00  
 VAR01 \xc8\x00 SET01 FILE1 .\\Data\\Script\\Bg.Fob COMMAND_TO_BYTECODE3  \x00\x00 
@@ -6,6 +7,23 @@ CHOICE_FLAG FILE1 .\\Data\\Script\\Bgm.Fob COMMAND_TO_BYTECODE2 n\x00\x00
 CMD01 StopCD COMMAND_TO_BYTECODE1 \x98\x00\x00 
 S_STR SCEK06_001\x00 \xb4\x00\x00 S_END 
 VAR01 TXT1 \xd0\xa6\x01\x0c\x00\x00\x00\x00"\x03v\x00\x00
+=======
+FSTR
+\xb8\x04\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xa4\t3\x01\x00\x00\x00d\x03\x00  
+SEQ01 \xc8\x00
+SEQ14 
+SEQ08 "
+SEQ12 .\\Data\\Script\\Bg.Fob SPC03  \x00\x00 
+SEQ03 BgAutoFadeIn SPC03 J\x00\x00 
+SEQ06 
+SEQ12 .\\Data\\Script\\Bgm.Fob SPC02 n\x00\x00 
+SEQ02 StopCD SPC01 \x98\x00\x00 
+SEQ05 SCEK06_001\x00 \xb4\x00\x00 
+SEQ07  
+SEQ01 
+SEQ10 \xd0\xa6\x01\x0c
+SEQ11 \x03v\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 　もう帰ろう、と私がいうと、ゆきはほっとしたようだった。@
 けれども安堵の奥には、落胆のかけらがあるように思えた。@
@@ -16,8 +34,19 @@ VAR01 TXT1 \xd0\xa6\x01\x0c\x00\x00\x00\x00"\x03v\x00\x00
 私は結局、ゆきの秘密を最後まで知ることはなかった。@
 それから１週間後、ゆきは風邪薬を２００錠のんで、自殺したの\nだった。\w\z
 \x00  
+<<<<<<< HEAD
 VAR01 \xf8\x00 SET01 FILE2 .\\Data\\Script\\TextFunc.Fob COMMAND_TO_BYTECODE1 \xf0\x02\x00 
 CMD01 TextOn COMMAND_TO_BYTECODE1 \x1e\x03\x00 
 CHOICE_FLAG  \xf0\x02\x00 OPER 
 CMD03 TextClose COMMAND_TO_BYTECODE2 F\x03\x00 
 F_END
+=======
+SEQ01 \xf8\x00
+SEQ14 
+SEQ08 "
+SEQ13 .\\Data\\Script\\TextFunc.Fob SPC01 \xf0\x02\x00 
+SEQ02 TextOn SPC01 \x1e\x03\x00 
+SEQ06  \xf0\x02\x00 
+SEQ04 TextClose SPC02 F\x03\x00 
+FEND
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 F_SRT
 \x8b-\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00,'\x00\x03\t\x00\x00.\\Data\\Script\\Scenario\\048SubC.Fob COMMAND_TO_BYTECODE1 \x06\x00\x00 
 CMD01 start COMMAND_TO_BYTECODE2 <\x00\x00 C_END  
@@ -5,6 +6,23 @@ VAR01 <\x00 SET01 FILE2 .\\Data\\Script\\TextFunc.fob COMMAND_TO_BYTECODE1 r\x00
 CMD03 WaitTime COMMAND_TO_BYTECODE3 \xa0\x00\x00 
 S_STR SCE048_020\x00 \xc0\x00\x00 S_END 
 VAR01 TXT1 \xecZ SEQ06 \x03\xce\x00\x00
+=======
+FSTR
+\x8b-\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00,'\x00\x03\t\x00\x00.\\Data\\Script\\Scenario\\048SubC.Fob SPC01 \x06\x00\x00 
+SEQ02 start SPC02 <\x00\x00 
+SEQ06   
+SEQ01 <\x00
+SEQ14 
+SEQ08 "
+SEQ13 .\\Data\\Script\\TextFunc.fob SPC01 r\x00\x00 
+SEQ04 WaitTime SPC03 \xa0\x00\x00 
+SEQ05 SCE048_020\x00 \xc0\x00\x00 
+SEQ07  
+SEQ01 
+SEQ10 \xecZ
+SEQ14 
+SEQ11 \x03\xce\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 御堂\n　「おい、柏木。\pお前なにやってんだよ……？」@
 \n/*■CG19　表示（ノンエフェクト）↑のCG表示にあわせられるとヨシ！*/\a7,-1,-1,0,\a0,18,1,0,/*▲BGM　Track11　再生*/\a2,-1,11,1,\a6,0,0,0,　全員が呆気にとられた顔で御堂を見やり、それから御堂の視線\nの先へと顔を移動させた。@
@@ -14,10 +32,24 @@ VAR01 TXT1 \xecZ SEQ06 \x03\xce\x00\x00
 　柏木は御堂に付き従うことで自分の居場所をアピールしてきた\nような男で、男子学生からは『つまらない男』としか評価されて\nいなかったし、女子学生からは『御堂の取り巻きのひとり』とし\nか評価されていなかった。\pつまり、柏木という男には、なんの\n主体性もなかった。\p彼は完璧な脇役であり、別の主役なしでは舞\n台に存在していられない。\pそんな男だった。\
 
   
+<<<<<<< HEAD
 VAR01 \x04\x01 SET01 FILE2 .\\Data\\Script\\TextFunc.Fob COMMAND_TO_BYTECODE1 \\\x04\x00 
 CMD01 TextOn COMMAND_TO_BYTECODE1 \x8a\x04\x00 
 S_STR SCE048_021\x00 \xa6\x04\x00 S_END 
 VAR01 TXT1 \xf0Z SEQ06 \x03\x9c\x00\x00
+=======
+SEQ01 \x04\x01
+SEQ14 
+SEQ08 "
+SEQ13 .\\Data\\Script\\TextFunc.Fob SPC01 \\\x04\x00 
+SEQ02 TextOn SPC01 \x8a\x04\x00 
+SEQ05 SCE048_021\x00 \xa6\x04\x00 
+SEQ07  
+SEQ01 
+SEQ10 \xf0Z
+SEQ14 
+SEQ11 \x03\x9c\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 　その柏木が、主役となっていた。@
 　トイレ中の注目を一身に浴びていた。@
@@ -33,9 +65,22 @@ VAR01 TXT1 \xf0Z SEQ06 \x03\x9c\x00\x00
 　シャープペンが突き刺さった耳の穴からは、どす黒い血がたら\n　たらと滝のようにあふれ出している。\
 
 \x00\x00\x00  
+<<<<<<< HEAD
 VAR01 \xea\x04 SET01  \\\x04\x00 OPER  \x8a\x04\x00 
 S_STR SCE048_022\x00 \x94\x07\x00 S_END 
 VAR01 TXT1 \xf4Z SEQ06 \x03J\x00\x00
+=======
+SEQ01 \xea\x04
+SEQ14 
+SEQ08 " \\\x04\x00 
+SEQ08  \x8a\x04\x00 
+SEQ05 SCE048_022\x00 \x94\x07\x00 
+SEQ07  
+SEQ01 
+SEQ10 \xf4Z
+SEQ14 
+SEQ11 \x03J\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 柏木\n　「おれ的にすげえ、つらい！」@
 \n　柏木の眼から、ほろほろと涙があふれ出した。@
@@ -44,9 +89,22 @@ VAR01 TXT1 \xf4Z SEQ06 \x03J\x00\x00
 \n　柏木はいいながら、シャープペンのヘッドをカチカチカチカチ\n　とノックした。\
 
 \x00\x00\x00  
+<<<<<<< HEAD
 VAR01 \xd8\x07 SET01  \\\x04\x00 OPER  \x8a\x04\x00 
 S_STR SCE048_023\x00 :\t\x00 S_END 
 VAR01 TXT1 \xf8Z SEQ06 \x03]\x00\x00
+=======
+SEQ01 \xd8\x07
+SEQ14 
+SEQ08 " \\\x04\x00 
+SEQ08  \x8a\x04\x00 
+SEQ05 SCE048_023\x00 :\t\x00 
+SEQ07  
+SEQ01 
+SEQ10 \xf8Z
+SEQ14 
+SEQ11 \x03]\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 柏木\n　「おれれれれれれれれれれれ」@
 \n　カチカチカチカチカチカチカチ。@
@@ -55,9 +113,22 @@ VAR01 TXT1 \xf8Z SEQ06 \x03]\x00\x00
 \n御堂\n　「芯だよ……」\
 
 \x00  
+<<<<<<< HEAD
 VAR01 ~\t SET01  \\\x04\x00 OPER  \x8a\x04\x00 
 S_STR SCE048_024\x00 ,\x0b\x00 S_END 
 VAR01 TXT1 \xfcZ SEQ06 \x03\xa0\x00\x00
+=======
+SEQ01 ~\t
+SEQ14 
+SEQ08 " \\\x04\x00 
+SEQ08  \x8a\x04\x00 
+SEQ05 SCE048_024\x00 ,\x0b\x00 
+SEQ07  
+SEQ01 
+SEQ10 \xfcZ
+SEQ14 
+SEQ11 \x03\xa0\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 \n　御堂の声は、間抜けな冗談のように響いた。@
 　芯だよ。@
@@ -71,9 +142,22 @@ VAR01 TXT1 \xfcZ SEQ06 \x03\xa0\x00\x00
 　おれたちは呆然とそんな柏木の泣き笑いを見守っていたが、や\n　がて\
 
 \x00  
+<<<<<<< HEAD
 VAR01 p\x0b SET01  \\\x04\x00 OPER  \x8a\x04\x00 
 S_STR SCE048_025\x00 *\x0e\x00 S_END 
 VAR01 TXT1 \x00[ SEQ06 \x03\xb7\x00\x00
+=======
+SEQ01 p\x0b
+SEQ14 
+SEQ08 " \\\x04\x00 
+SEQ08  \x8a\x04\x00 
+SEQ05 SCE048_025\x00 *\x0e\x00 
+SEQ07  
+SEQ01 
+SEQ10 \x00[
+SEQ14 
+SEQ11 \x03\xb7\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 柏木\n　「いてえ」@
 \n　柏木がぽつりとつぶやいた。@
@@ -88,9 +172,22 @@ VAR01 TXT1 \x00[ SEQ06 \x03\xb7\x00\x00
 　あとには拓司となたね、そして柏木の死体だけが残された。\
 
 \x00\x00  
+<<<<<<< HEAD
 VAR01 n\x0e SET01  \\\x04\x00 OPER  \x8a\x04\x00 
 S_STR SCE048_026\x00 \x84\x11\x00 S_END 
 VAR01 TXT1 \x04[ SEQ06 \x03\x9c\x00\x00
+=======
+SEQ01 n\x0e
+SEQ14 
+SEQ08 " \\\x04\x00 
+SEQ08  \x8a\x04\x00 
+SEQ05 SCE048_026\x00 \x84\x11\x00 
+SEQ07  
+SEQ01 
+SEQ10 \x04[
+SEQ14 
+SEQ11 \x03\x9c\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 なたね\n　「……始まったのね」@
 拓司\n　「え？」@
@@ -102,9 +199,22 @@ VAR01 TXT1 \x04[ SEQ06 \x03\x9c\x00\x00
 拓司は慌てて背を向けた。\pいままでさんざん陵辱現場を見ておい\nていまさらという気もしたが、そうするのが礼儀のような気がし\nた。\
 
 \x00  
+<<<<<<< HEAD
 VAR01 \xc8\x11 SET01  \\\x04\x00 OPER  \x8a\x04\x00 
 S_STR SCE048_027\x00 r\x14\x00 S_END 
 VAR01 TXT1 \x08[ SEQ06 \x03w\x00\x00
+=======
+SEQ01 \xc8\x11
+SEQ14 
+SEQ08 " \\\x04\x00 
+SEQ08  \x8a\x04\x00 
+SEQ05 SCE048_027\x00 r\x14\x00 
+SEQ07  
+SEQ01 
+SEQ10 \x08[
+SEQ14 
+SEQ11 \x03w\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 拓司\n　「だ、大丈夫かい？」@
 なたね\n　「……。始まったのね」@
@@ -115,9 +225,22 @@ VAR01 TXT1 \x08[ SEQ06 \x03w\x00\x00
 　チカセンコウガタシンリャクセイブツヘイキ、となたねは厳し\n　く言い直した。\p正確にいうのといわないのとでは、そこに大き\n　な違いがあるとでもいいたそうな口調だ。\
 
 \x00\x00  
+<<<<<<< HEAD
 VAR01 \xb6\x14 SET01  \\\x04\x00 OPER  \x8a\x04\x00 
 S_STR SCE048_028\x00 \xcc\x16\x00 S_END 
 VAR01 TXT1 \x0c[ SEQ06 \x03\xc5\x00\x00
+=======
+SEQ01 \xb6\x14
+SEQ14 
+SEQ08 " \\\x04\x00 
+SEQ08  \x8a\x04\x00 
+SEQ05 SCE048_028\x00 \xcc\x16\x00 
+SEQ07  
+SEQ01 
+SEQ10 \x0c[
+SEQ14 
+SEQ11 \x03\xc5\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 なたね\n　「４６億年前、やつらは地球の地下にいくつもの『シード』を埋\n　　め込んだの。\pやがて人類が宇宙に進出するときがきて……実\n　　際、いまがそのときなんだけれど……そのときに人類が『適\n　　格』でないと判断されたら、『シード』は目覚め、人類完殺\n　　の兵器として稼動し始めるの。\pこれは聖書とか様々な文献に\n　　終末とか悪魔とかいう形で明記されている厳然たる事実なの」\n　　@
 拓司\n　「……」@
@@ -125,9 +248,22 @@ VAR01 TXT1 \x0c[ SEQ06 \x03\xc5\x00\x00
 \nなたね\n　「これは明白に、第四種生物兵器『ビッグ・エンケリュス』の\n　　攻撃だわ。\p『ビッグ・エンケリュス』は地下から波動を送る\n　　の。\p自殺波動。この波動にシンクロしてしまった人間は、自\n　　殺こそが幸福へ至る道だと信じ込んで……彼のように自殺し\n　　てしまうの」\
 
 \x00\x00\x00  
+<<<<<<< HEAD
 VAR01 \x10\x17 SET01  \\\x04\x00 OPER  \x8a\x04\x00 
 S_STR SCE048_029\x00 ^\x1a\x00 S_END 
 VAR01 TXT1 \x10[ SEQ06 \x03\xbb\x00\x00
+=======
+SEQ01 \x10\x17
+SEQ14 
+SEQ08 " \\\x04\x00 
+SEQ08  \x8a\x04\x00 
+SEQ05 SCE048_029\x00 ^\x1a\x00 
+SEQ07  
+SEQ01 
+SEQ10 \x10[
+SEQ14 
+SEQ11 \x03\xbb\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 拓司\n　「……自殺波動？」@
 なたね\n　「そう！　波動よ！　エンケリュスムサベツエンカクジサツハ\n　　ドウコウゲキ！」@
@@ -136,9 +272,22 @@ VAR01 TXT1 \x10[ SEQ06 \x03\xbb\x00\x00
 　　あのね、私、円盤のなかで立体映像を見せられたの！\p　ぬら\n　　ぬらとしていて、黒くて、とてもいやらしくて汚らしい形を\n　　しているの！\p　全長２０キロ！\p　質量は自由に変化させられる\n　　からよくわからないけれど、地中を自由に移動して人類を殺\n　　す究極の侵略兵器で、あなたにはわからないけど私にはわか\n　　るのよ！　なぜなら……」\
 
 \x00\x00\x00  
+<<<<<<< HEAD
 VAR01 \xa2\x1a SET01  \\\x04\x00 OPER  \x8a\x04\x00 
 S_STR SCE048_030\x00 \xc8\x1d\x00 S_END 
 VAR01 TXT1 \x14[ SEQ06 \x03D\x00\x00
+=======
+SEQ01 \xa2\x1a
+SEQ14 
+SEQ08 " \\\x04\x00 
+SEQ08  \x8a\x04\x00 
+SEQ05 SCE048_030\x00 \xc8\x1d\x00 
+SEQ07  
+SEQ01 
+SEQ10 \x14[
+SEQ14 
+SEQ11 \x03D\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 拓司\n　「雲居さん！」@
 \n　拓司はなたねを制した。\p聞いていると自分までおかしくなって\n　しまいそうだ。@
@@ -147,9 +296,22 @@ VAR01 TXT1 \x14[ SEQ06 \x03D\x00\x00
 拓司\n　「……」\
 
 \x00  
+<<<<<<< HEAD
 VAR01 \x0c\x1e SET01  \\\x04\x00 OPER  \x8a\x04\x00 
 S_STR SCE048_031\x00 V\x1f\x00 S_END 
 VAR01 TXT1 \x18[ SEQ06 \x03\xc5\x00\x00
+=======
+SEQ01 \x0c\x1e
+SEQ14 
+SEQ08 " \\\x04\x00 
+SEQ08  \x8a\x04\x00 
+SEQ05 SCE048_031\x00 V\x1f\x00 
+SEQ07  
+SEQ01 
+SEQ10 \x18[
+SEQ14 
+SEQ11 \x03\xc5\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 なたね\n　「エンケリュスは私の身体の中に、たくさんいやらしい液を流\n　　し込んだの。\p気持ち悪かった。\p私をレイプしたのは、正確に\n　　言うと宇宙人じゃなくてエンケリュス。\pいま、わかったこと\n　　だけど。\pエンケリュスの液は、内臓部分から徐々に私をおか\n　　しくしていくの。\pいやらしいことしか考えられなくなって、\n　　勉強とか、できなくなる。\pそれに対抗するために、私は御堂\n　　くんたちに精液をかけてもらっていたの」@
 拓司\n　「もういい！」@
@@ -158,9 +320,22 @@ VAR01 TXT1 \x18[ SEQ06 \x03\xc5\x00\x00
 　－－拓司はそう思った。\
 
 \x00\x00\x00  
+<<<<<<< HEAD
 VAR01 \x9a\x1f SET01  \\\x04\x00 OPER  \x8a\x04\x00 
 S_STR SCE048_032\x00 \xe8"\x00 S_END 
 VAR01 TXT1 \x1c[ SEQ06 \x03[\x00\x00
+=======
+SEQ01 \x9a\x1f
+SEQ14 
+SEQ08 " \\\x04\x00 
+SEQ08  \x8a\x04\x00 
+SEQ05 SCE048_032\x00 \xe8"\x00 
+SEQ07  
+SEQ01 
+SEQ10 \x1c[
+SEQ14 
+SEQ11 \x03[\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 拓司\n　「そんなことより、早く柏木のことを、先生なり警察なりに報\n　　せないと！」@
 なたね\n　「……そうね」@
@@ -170,19 +345,51 @@ VAR01 TXT1 \x1c[ SEQ06 \x03[\x00\x00
 \n　拓司の脇を通り抜け、鏡に向かって髪の毛を整え始める。\
 
 \x00  
+<<<<<<< HEAD
 VAR01 ,# SET01  \\\x04\x00 OPER  \x8a\x04\x00 C_END  
 VAR01 \xc8\x00 SET01 FILE1 .\\Data\\Script\\Bg.Fob COMMAND_TO_BYTECODE3 \xec$\x00 
 CMD02 BgAutoFadeIn COMMAND_TO_BYTECODE3 \x16%\x00 
 S_STR SCE048_033\x00 :%\x00 S_END 
 VAR01 TXT1  [ SEQ06 \x03A\x00\x00
+=======
+SEQ01 ,#
+SEQ14 
+SEQ08 " \\\x04\x00 
+SEQ08  \x8a\x04\x00 
+SEQ06   
+SEQ01 \xc8\x00
+SEQ14 
+SEQ08 "
+SEQ12 .\\Data\\Script\\Bg.Fob SPC03 \xec$\x00 
+SEQ03 BgAutoFadeIn SPC03 \x16%\x00 
+SEQ05 SCE048_033\x00 :%\x00 
+SEQ07  
+SEQ01 
+SEQ10  [
+SEQ14 
+SEQ11 \x03A\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 なたね\n　「あーあ、こんなにばさばさになっちゃった。\p困ったなあ。い\n　　やだなあ」@
 \n　拓司は呆然と、それを見守るしかなかった。\pなたねの動きはゆ\n　っくりしていて、見ているとなにか時間が徐々に停滞してゆく\n　ような、そんな不安な気持ちになった。\
 
 \x00  
+<<<<<<< HEAD
 VAR01 ~% SET01  \\\x04\x00 OPER  \x8a\x04\x00 
 CHOICE_FLAG FILE1 .\\Data\\Script\\Bgm.Fob COMMAND_TO_BYTECODE2 \xbc&\x00 
 CMD01 StopCD COMMAND_TO_BYTECODE1 \xe6&\x00 
 CHOICE_FLAG  \\\x04\x00 OPER 
 CMD03 TextClose COMMAND_TO_BYTECODE2 \x0e'\x00 
 F_END
+=======
+SEQ01 ~%
+SEQ14 
+SEQ08 " \\\x04\x00 
+SEQ08  \x8a\x04\x00 
+SEQ06 
+SEQ12 .\\Data\\Script\\Bgm.Fob SPC02 \xbc&\x00 
+SEQ02 StopCD SPC01 \xe6&\x00 
+SEQ06  \\\x04\x00 
+SEQ04 TextClose SPC02 \x0e'\x00 
+FEND
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23

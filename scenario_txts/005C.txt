@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 F_SRT
 \xaa\n\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00d\x08\x00  
 VAR01 H\x00 SET01 FILE1 .\\Data\\Script\\Bg.Fob COMMAND_TO_BYTECODE3  \x00\x00 
@@ -6,6 +7,27 @@ VAR01 \x05\x01 SET01 FILE1 .\\Data\\Script\\Bgm.Fob COMMAND_TO_BYTECODE2 \x88\x0
 CMD01 PlayCD COMMAND_TO_BYTECODE1 \xb2\x00\x00 
 S_STR SCE005_001\x00 \xce\x00\x00 S_END 
 VAR01 TXT1 p\x17 SEQ06 \x03H\x00\x00
+=======
+FSTR
+\xaa\n\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00d\x08\x00  
+SEQ01 H\x00
+SEQ14 
+SEQ08 "
+SEQ12 .\\Data\\Script\\Bg.Fob SPC03  \x00\x00 
+SEQ03 BgAutoFadeIn SPC03 J\x00\x00 
+SEQ06   
+SEQ01 \x05\x01
+SEQ14 
+SEQ08 "
+SEQ12 .\\Data\\Script\\Bgm.Fob SPC02 \x88\x00\x00 
+SEQ02 PlayCD SPC01 \xb2\x00\x00 
+SEQ05 SCE005_001\x00 \xce\x00\x00 
+SEQ07  
+SEQ01 
+SEQ10 p\x17
+SEQ14 
+SEQ11 \x03H\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 早桃\n　「……おにいちゃん？」@
 \n枕から軽く頭を持ち上げて、足元を見る。@
@@ -15,10 +37,24 @@ VAR01 TXT1 p\x17 SEQ06 \x03H\x00\x00
 なぜなら夜風なんか、これっぽっちも吹いていないじゃないか。\
 
 \x00\x00\x00  
+<<<<<<< HEAD
 VAR01 \x12\x01 SET01 FILE2 .\\Data\\Script\\TextFunc.Fob COMMAND_TO_BYTECODE1 R\x02\x00 
 CMD01 TextOn COMMAND_TO_BYTECODE1 \x80\x02\x00 
 S_STR SCE005_002\x00 \x9c\x02\x00 S_END 
 VAR01 TXT1 t\x17 SEQ06 \x03^\x00\x00
+=======
+SEQ01 \x12\x01
+SEQ14 
+SEQ08 "
+SEQ13 .\\Data\\Script\\TextFunc.Fob SPC01 R\x02\x00 
+SEQ02 TextOn SPC01 \x80\x02\x00 
+SEQ05 SCE005_002\x00 \x9c\x02\x00 
+SEQ07  
+SEQ01 
+SEQ10 t\x17
+SEQ14 
+SEQ11 \x03^\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 拓司\n　「……妄想か？」@
 \n拓司の問いには応えず、早桃は抑揚のない口調でいった。@
@@ -32,9 +68,22 @@ VAR01 TXT1 t\x17 SEQ06 \x03^\x00\x00
 早桃\n　「たぶん」\
 
 \x00\x00\x00  
+<<<<<<< HEAD
 VAR01 \xe0\x02 SET01  R\x02\x00 OPER  \x80\x02\x00 
 S_STR SCE005_003\x00 \x92\x04\x00 S_END 
 VAR01 TXT1 x\x17 SEQ06 \x03\xa8\x00\x00
+=======
+SEQ01 \xe0\x02
+SEQ14 
+SEQ08 " R\x02\x00 
+SEQ08  \x80\x02\x00 
+SEQ05 SCE005_003\x00 \x92\x04\x00 
+SEQ07  
+SEQ01 
+SEQ10 x\x17
+SEQ14 
+SEQ11 \x03\xa8\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 早桃から立ち上る熱気のようなものが、重い夏の空気を微かに歪\nませている。@
 くちびるはわずかに開き、つるりと光っている。@
@@ -49,14 +98,32 @@ VAR01 TXT1 x\x17 SEQ06 \x03\xa8\x00\x00
 早桃はそれを自分の鼻先に持っていき、すうっと、息を吸い込ん\nだ。\
 
 \x00  
+<<<<<<< HEAD
 VAR01 \xd6\x04 SET01  R\x02\x00 OPER  \x80\x02\x00 
 CHOICE_FLAG \x03\x14\x00\x00
+=======
+SEQ01 \xd6\x04
+SEQ14 
+SEQ08 " R\x02\x00 
+SEQ08  \x80\x02\x00 
+SEQ06 \x03\x14\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
 CHOICE
 「……出て行け」と拓司はいった\n「……来いよ」と拓司はいった\n\l0,2,
 ENDCHOICE
 
 \x00\x00\x00  
+<<<<<<< HEAD
 VAR01 \xb0\x07 SET01  R\x02\x00 OPER  \x80\x02\x00 
 CHOICE_FLAG  R\x02\x00 OPER 
 CMD03 TextClose COMMAND_TO_BYTECODE2 F\x08\x00 
 F_END
+=======
+SEQ01 \xb0\x07
+SEQ14 
+SEQ08 " R\x02\x00 
+SEQ08  \x80\x02\x00 
+SEQ06  R\x02\x00 
+SEQ04 TextClose SPC02 F\x08\x00 
+FEND
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23

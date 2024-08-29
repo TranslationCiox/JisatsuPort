@@ -1,9 +1,24 @@
+<<<<<<< HEAD
 F_SRT
 \x7f/\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00d$\x00  
 VAR01 \x04\x01 SET01 FILE1 .\\Data\\Script\\Bgm.Fob COMMAND_TO_BYTECODE2  \x00\x00 
 CMD01 PlayCD COMMAND_TO_BYTECODE1 J\x00\x00 
 S_STR SCES05_001\x00 f\x00\x00 S_END 
 VAR01 TXT1  \xb6\x01\x0c\x00\x00\x00\x00"\x03\x8f\x00\x00
+=======
+FSTR
+\x7f/\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00d$\x00  
+SEQ01 \x04\x01
+SEQ14 
+SEQ08 "
+SEQ12 .\\Data\\Script\\Bgm.Fob SPC02  \x00\x00 
+SEQ02 PlayCD SPC01 J\x00\x00 
+SEQ05 SCES05_001\x00 f\x00\x00 
+SEQ07  
+SEQ01 
+SEQ10  \xb6\x01\x0c
+SEQ11 \x03\x8f\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 お金はいくらあっても足りなかった。@
 かわいい洋服や、アクセサリーをつけるたびに、私はうまくウソ\nがつけるようになっていった。@
@@ -14,10 +29,23 @@ VAR01 TXT1  \xb6\x01\x0c\x00\x00\x00\x00"\x03\x8f\x00\x00
 いつのまにか、やめられなくなっていた。\
 
 \x00\x00\x00  
+<<<<<<< HEAD
 VAR01 \xaa\x00 SET01 FILE2 .\\Data\\Script\\TextFunc.Fob COMMAND_TO_BYTECODE1 \x06\x03\x00 
 CMD01 TextOn COMMAND_TO_BYTECODE1 4\x03\x00 
 S_STR SCES05_002\x00 P\x03\x00 S_END 
 VAR01 TXT1 $\xb6\x01\x0c\x00\x00\x00\x00"\x03\xa3\x00\x00
+=======
+SEQ01 \xaa\x00
+SEQ14 
+SEQ08 "
+SEQ13 .\\Data\\Script\\TextFunc.Fob SPC01 \x06\x03\x00 
+SEQ02 TextOn SPC01 4\x03\x00 
+SEQ05 SCES05_002\x00 P\x03\x00 
+SEQ07  
+SEQ01 
+SEQ10 $\xb6\x01\x0c
+SEQ11 \x03\xa3\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 『そういうことはやめたほうがいいニャ』@
 「ドルチェ。そんなお説教、早桃は聞きたくないよ。\n　うまくやってるもの。\pなにもかもがうまくいってる」@
@@ -30,11 +58,29 @@ VAR01 TXT1 $\xb6\x01\x0c\x00\x00\x00\x00"\x03\xa3\x00\x00
 \nドルチェはすごく悲しそうな顔をして、しょんぼりと肩を落とし\nてどこかに消えていったわ。\
 
 \x00\x00\x00  
+<<<<<<< HEAD
 VAR01 \x94\x03 SET01  \x06\x03\x00 OPER  4\x03\x00 C_END  
 VAR01 ]\x00 SET01 FILE1 .\\Data\\Script\\Bg.Fob COMMAND_TO_BYTECODE3 t\x06\x00 
 CMD02 BgAutoFadeIn COMMAND_TO_BYTECODE3 \x9e\x06\x00 
 S_STR SCES05_003\x00 \xc2\x06\x00 S_END 
 VAR01 TXT1 (\xb6\x01\x0c\x00\x00\x00\x00"\x03e\x00\x00
+=======
+SEQ01 \x94\x03
+SEQ14 
+SEQ08 " \x06\x03\x00 
+SEQ08  4\x03\x00 
+SEQ06   
+SEQ01 ]\x00
+SEQ14 
+SEQ08 "
+SEQ12 .\\Data\\Script\\Bg.Fob SPC03 t\x06\x00 
+SEQ03 BgAutoFadeIn SPC03 \x9e\x06\x00 
+SEQ05 SCES05_003\x00 \xc2\x06\x00 
+SEQ07  
+SEQ01 
+SEQ10 (\xb6\x01\x0c
+SEQ11 \x03e\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 すぐに、手だけで、口だけでって……そういうことをするように\nなった。\pそういうことをしちゃったら、どこまでやっても変わら\nないような気がして、エッチもした。@
 エッチをすると、しなかったときの５倍以上のお金がもらえた。@
@@ -43,10 +89,27 @@ VAR01 TXT1 (\xb6\x01\x0c\x00\x00\x00\x00"\x03e\x00\x00
 そんなとき、お母さんが再婚して……おにいちゃんとあったんだ\nよね。\
 
 \x00  
+<<<<<<< HEAD
 VAR01 \x06\x07 SET01  \x06\x03\x00 OPER  4\x03\x00 C_END  
 VAR01 \xc8\x00 SET01  t\x06\x00 OPER  \x9e\x06\x00 
 S_STR SCES05_004\x00 \x08\t\x00 S_END 
 VAR01 TXT1 ,\xb6\x01\x0c\x00\x00\x00\x00"\x03\xb0\x00\x00
+=======
+SEQ01 \x06\x07
+SEQ14 
+SEQ08 " \x06\x03\x00 
+SEQ08  4\x03\x00 
+SEQ06   
+SEQ01 \xc8\x00
+SEQ14 
+SEQ08 " t\x06\x00 
+SEQ08  \x9e\x06\x00 
+SEQ05 SCES05_004\x00 \x08\t\x00 
+SEQ07  
+SEQ01 
+SEQ10 ,\xb6\x01\x0c
+SEQ11 \x03\xb0\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 海の話、覚えてる？@
 初めて海を見たときの話。@
@@ -58,9 +121,21 @@ VAR01 TXT1 ,\xb6\x01\x0c\x00\x00\x00\x00"\x03\xb0\x00\x00
 私はゼロじゃないって、ずっとそれが証明したかったんだって。\
 
 \x00\x00\x00  
+<<<<<<< HEAD
 VAR01 L\t SET01  \x06\x03\x00 OPER  4\x03\x00 
 S_STR SCES05_005\x00 F\x0c\x00 S_END 
 VAR01 TXT1 0\xb6\x01\x0c\x00\x00\x00\x00"\x03z\x00\x00
+=======
+SEQ01 L\t
+SEQ14 
+SEQ08 " \x06\x03\x00 
+SEQ08  4\x03\x00 
+SEQ05 SCES05_005\x00 F\x0c\x00 
+SEQ07  
+SEQ01 
+SEQ10 0\xb6\x01\x0c
+SEQ11 \x03z\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 「ねえ、ドルチェ。\p早桃、もう援助交際はやめようと思うんだ」\n\p『そうか。\pドルチェはうれしいニャ』@
 「おにいちゃんと釣り合う女の子になりたいの」@
@@ -72,16 +147,30 @@ VAR01 TXT1 0\xb6\x01\x0c\x00\x00\x00\x00"\x03z\x00\x00
 『喧嘩のいいところは、仲直りできることニャ』\
 
 \x00\x00\x00  
+<<<<<<< HEAD
 VAR01 \x8a\x0c SET01  \x06\x03\x00 OPER  4\x03\x00 
 CHOICE_FLAG ! 
 VAR01 \x00\x00\x00\x00\r\x02 \x00\x00\x00\x00\x0b\r\x01 \x00\x00\x00\x00\x1b\x00\x00\x00\x001\x00\x00\x00\x00\xea\x0e\x00 and  \x10\x00 and \xf0\x0e\x00 and \xf0\x0e\x00
 CMD03 SCES05_006\x00 \xf6\x0e\x00 S_END 
 VAR01 TXT1 4\xb6\x01\x0c\x00\x00\x00\x00"\x03\x15\x00\x00
+=======
+SEQ01 \x8a\x0c
+SEQ14 
+SEQ08 " \x06\x03\x00 
+SEQ08  4\x03\x00 
+SEQ06 ! 
+SEQ01 \x00\x00\x00\x00\r\x02 \x00\x00\x00\x00\x0b\r\x01 \x00\x00\x00\x00\x1b\x00\x00\x00\x001\x00\x00\x00\x00\xea\x0e\x002 \x10\x002\xf0\x0e\x002\xf0\x0e\x00\x03\x03\x00\x00SCES05_006\x00 \xf6\x0e\x00 
+SEQ07  
+SEQ01 
+SEQ10 4\xb6\x01\x0c
+SEQ11 \x03\x15\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 お話はこれでおしまい。@
 神父様、聞いてくださってありがとうございました。@
 \z
 \x00  
+<<<<<<< HEAD
 VAR01 :\x0f SET01  \x06\x03\x00 OPER  4\x03\x00 
 CHOICE_FLAG   \x00\x00 
 CMD01 StopCD\x00 \xd4\x0f\x00 C_END  
@@ -89,6 +178,24 @@ VAR01 \xc8\x00 SET01  t\x06\x00 OPER  \x9e\x06\x00
 CHOICE_FLAG 6
 CMD03 SCES05_007\x00 &\x10\x00 S_END 
 VAR01 TXT1 8\xb6\x01\x0c\x00\x00\x00\x00"\x03\xc5\x00\x00
+=======
+SEQ01 :\x0f
+SEQ14 
+SEQ08 " \x06\x03\x00 
+SEQ08  4\x03\x00 
+SEQ06   \x00\x00 
+SEQ02 StopCD\x00 \xd4\x0f\x00 
+SEQ06   
+SEQ01 \xc8\x00
+SEQ14 
+SEQ08 " t\x06\x00 
+SEQ08  \x9e\x06\x00 
+SEQ06 6\x03\x03\x00\x00SCES05_007\x00 &\x10\x00 
+SEQ07  
+SEQ01 
+SEQ10 8\xb6\x01\x0c
+SEQ11 \x03\xc5\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 でもね、結局ドルチェとは仲直りできなかったの。@
 私が援助交際を続けたから。@
@@ -105,9 +212,21 @@ VAR01 TXT1 8\xb6\x01\x0c\x00\x00\x00\x00"\x03\xc5\x00\x00
 ただ単純に、お金が欲しかったの。\
 
 \x00\x00\x00  
+<<<<<<< HEAD
 VAR01 j\x10 SET01  \x06\x03\x00 OPER  4\x03\x00 
 S_STR SCES05_008\x00 \xb8\x13\x00 S_END 
 VAR01 TXT1 <\xb6\x01\x0c\x00\x00\x00\x00"\x03\xb0\x00\x00
+=======
+SEQ01 j\x10
+SEQ14 
+SEQ08 " \x06\x03\x00 
+SEQ08  4\x03\x00 
+SEQ05 SCES05_008\x00 \xb8\x13\x00 
+SEQ07  
+SEQ01 
+SEQ10 <\xb6\x01\x0c
+SEQ11 \x03\xb0\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 『早桃ちゃんは、愛よりもお金のほうが重いと思ってるのかニャ\n　？』@
 「そんなことないよ、ドルチェ！\p　早桃は本当におにいちゃんの\n　ことが好き！」@
@@ -122,9 +241,21 @@ VAR01 TXT1 <\xb6\x01\x0c\x00\x00\x00\x00"\x03\xb0\x00\x00
 そして二度と戻ってこなかった。\
 
 \x00\x00\x00  
+<<<<<<< HEAD
 VAR01 \xfc\x13 SET01  \x06\x03\x00 OPER  4\x03\x00 
 S_STR SCES05_009\x00 \xf6\x16\x00 S_END 
 VAR01 TXT1 @\xb6\x01\x0c\x00\x00\x00\x00"\x03{\x00\x00
+=======
+SEQ01 \xfc\x13
+SEQ14 
+SEQ08 " \x06\x03\x00 
+SEQ08  4\x03\x00 
+SEQ05 SCES05_009\x00 \xf6\x16\x00 
+SEQ07  
+SEQ01 
+SEQ10 @\xb6\x01\x0c
+SEQ11 \x03{\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 私はようやく、自分が崖っぷちに立っているんじゃなくて、もう、\n落ちてるってことに気がついた。@
 ギリギリでバランスをとっていられるような段階はとっくにすぎ\nて、もう、自分ではどうしようもない状況にあるんだって。@
@@ -134,9 +265,21 @@ VAR01 TXT1 @\xb6\x01\x0c\x00\x00\x00\x00"\x03{\x00\x00
 地面にぶつかってバラバラになる瞬間まで、確かに生きてはいる。\n\pでも、バラバラになるのが決められている以上、本当の意味では\n私は死んでいるんだって……。\
 
 \x00\x00\x00  
+<<<<<<< HEAD
 VAR01 :\x17 SET01  \x06\x03\x00 OPER  4\x03\x00 
 S_STR SCES05_010\x00 `\x19\x00 S_END 
 VAR01 TXT1 D\xb6\x01\x0c\x00\x00\x00\x00"\x03;\x00\x00
+=======
+SEQ01 :\x17
+SEQ14 
+SEQ08 " \x06\x03\x00 
+SEQ08  4\x03\x00 
+SEQ05 SCES05_010\x00 `\x19\x00 
+SEQ07  
+SEQ01 
+SEQ10 D\xb6\x01\x0c
+SEQ11 \x03;\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 おにいちゃんにひとりエッチを見せたのは、わざとなの。@
 早桃は、おにいちゃんが思っているみたいな女の子じゃなくて、\n汚くて、いやらしい女の子だって。@
@@ -145,17 +288,41 @@ VAR01 TXT1 D\xb6\x01\x0c\x00\x00\x00\x00"\x03;\x00\x00
 \nそして、罰が下ったんだね。\
 
 \x00\x00\x00  
+<<<<<<< HEAD
 VAR01 \xa4\x19 SET01  \x06\x03\x00 OPER  4\x03\x00 
 S_STR SCES05_011\x00 \xca\x1a\x00 S_END 
 VAR01 TXT1 H\xb6\x01\x0c\x00\x00\x00\x00"\x030\x00\x00
+=======
+SEQ01 \xa4\x19
+SEQ14 
+SEQ08 " \x06\x03\x00 
+SEQ08  4\x03\x00 
+SEQ05 SCES05_011\x00 \xca\x1a\x00 
+SEQ07  
+SEQ01 
+SEQ10 H\xb6\x01\x0c
+SEQ11 \x030\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 語り終えた後、早桃は無言で、自らが作り出した沈黙のなかに沈\nみ込んだ。@
 あるいは、彼女が沈み込んでいったのは、いま自らが言葉に変換\nして現出して見せた暗い闇の中なのかもしれない。\
 
 \x00\x00\x00  
+<<<<<<< HEAD
 VAR01 \x0e\x1b SET01  \x06\x03\x00 OPER  4\x03\x00 
 S_STR SCES05_012\x00 \x08\x1c\x00 S_END 
 VAR01 TXT1 L\xb6\x01\x0c\x00\x00\x00\x00"\x03I\x00\x00
+=======
+SEQ01 \x0e\x1b
+SEQ14 
+SEQ08 " \x06\x03\x00 
+SEQ08  4\x03\x00 
+SEQ05 SCES05_012\x00 \x08\x1c\x00 
+SEQ07  
+SEQ01 
+SEQ10 L\xb6\x01\x0c
+SEQ11 \x03I\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 拓司\n　「俺には、お前を軽蔑する資格はない」@
 早桃\n　「え？」@
@@ -163,9 +330,21 @@ VAR01 TXT1 L\xb6\x01\x0c\x00\x00\x00\x00"\x03I\x00\x00
 　　前科なしの人間なんていない」\
 
 \x00  
+<<<<<<< HEAD
 VAR01 L\x1c SET01  \x06\x03\x00 OPER  4\x03\x00 
 S_STR SCES05_013\x00 \xaa\x1d\x00 S_END 
 VAR01 TXT1 P\xb6\x01\x0c\x00\x00\x00\x00"\x03i\x00\x00
+=======
+SEQ01 L\x1c
+SEQ14 
+SEQ08 " \x06\x03\x00 
+SEQ08  4\x03\x00 
+SEQ05 SCES05_013\x00 \xaa\x1d\x00 
+SEQ07  
+SEQ01 
+SEQ10 P\xb6\x01\x0c
+SEQ11 \x03i\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 早桃\n　「……」@
 拓司\n　「たとえば、猫を袋詰めにして団地から落として殺した」@
@@ -178,9 +357,21 @@ VAR01 TXT1 P\xb6\x01\x0c\x00\x00\x00\x00"\x03i\x00\x00
 　　釣り合ってるんじゃないか？\p　それでも納得ができないって\n　　いうのなら、こうしよう」\
 
 \x00\x00\x00  
+<<<<<<< HEAD
 VAR01 \xee\x1d SET01  \x06\x03\x00 OPER  4\x03\x00 
 S_STR SCES05_014\x00 \xcc\x1f\x00 S_END 
 VAR01 TXT1 T\xb6\x01\x0c\x00\x00\x00\x00"\x03l\x00\x00
+=======
+SEQ01 \xee\x1d
+SEQ14 
+SEQ08 " \x06\x03\x00 
+SEQ08  4\x03\x00 
+SEQ05 SCES05_014\x00 \xcc\x1f\x00 
+SEQ07  
+SEQ01 
+SEQ10 T\xb6\x01\x0c
+SEQ11 \x03l\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 拓司は早桃の額にそっと手をかざし、重々しい声を作っていった。\n@
 拓司\n　「あなたの懺悔は神の元に届けられました。\p神はその勇気をた\n　　たえ、あなたの罪をお許しになるでしょう。\pラーメン」@
@@ -191,9 +382,21 @@ VAR01 TXT1 T\xb6\x01\x0c\x00\x00\x00\x00"\x03l\x00\x00
 拓司\n　「そうだニャ」\
 
 \x00  
+<<<<<<< HEAD
 VAR01 \x10  SET01  \x06\x03\x00 OPER  4\x03\x00 
 S_STR SCES05_015\x00 \xfa!\x00 S_END 
 VAR01 TXT1 X\xb6\x01\x0c\x00\x00\x00\x00"\x03T\x00\x00
+=======
+SEQ01 \x10 
+SEQ14 
+SEQ08 " \x06\x03\x00 
+SEQ08  4\x03\x00 
+SEQ05 SCES05_015\x00 \xfa!\x00 
+SEQ07  
+SEQ01 
+SEQ10 X\xb6\x01\x0c
+SEQ11 \x03T\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 早桃は声を押し殺して笑った。@
 そして拓司の額に手をかざし、いった。@
@@ -203,6 +406,7 @@ VAR01 TXT1 X\xb6\x01\x0c\x00\x00\x00\x00"\x03T\x00\x00
 \n早桃の笑顔を見ながら、拓司は誰かの笑顔というものを、久しぶ\nりに見たなと思っていた。\
 
 \x00\x00\x00  
+<<<<<<< HEAD
 VAR01 >" SET01  \x06\x03\x00 OPER  4\x03\x00 
 CHOICE_FLAG   \x00\x00 OPER  \xd4\x0f\x00 C_END  
 VAR01 \xc8\x00 SET01  t\x06\x00 OPER  \x9e\x06\x00 
@@ -210,3 +414,22 @@ CHOICE_FLAG !
 VAR01 (\x00\x00\r\x02 \x01\x00 SEQ06  \x06\x03\x00 OPER 
 CMD03 TextClose\x00\x00 F$\x00 
 F_END
+=======
+SEQ01 >"
+SEQ14 
+SEQ08 " \x06\x03\x00 
+SEQ08  4\x03\x00 
+SEQ06   \x00\x00 
+SEQ08  \xd4\x0f\x00 
+SEQ06   
+SEQ01 \xc8\x00
+SEQ14 
+SEQ08 " t\x06\x00 
+SEQ08  \x9e\x06\x00 
+SEQ06 ! 
+SEQ01 (\x00\x00\r\x02 \x01\x00
+SEQ14 
+SEQ11  \x06\x03\x00 
+SEQ04 TextClose\x00\x00 F$\x00 
+FEND
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23

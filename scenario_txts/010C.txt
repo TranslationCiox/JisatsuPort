@@ -1,15 +1,39 @@
+<<<<<<< HEAD
 F_SRT
 \xe0.\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00((\x00
 CMD03 SCE010_001\x00 \x06\x00\x00 S_END 
 VAR01 TXT1 @\x1f SEQ06 \x03\x11\x00\x00
+=======
+FSTR
+\xe0.\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00((\x00\x03\x03\x00\x00SCE010_001\x00 \x06\x00\x00 
+SEQ07  
+SEQ01 
+SEQ10 @\x1f
+SEQ14 
+SEQ11 \x03\x11\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 \n\n\n\n\n\n\n\n\n　　　　　　　　　　　『虎菱家の食卓』\
 
 \x00\x00\x00  
+<<<<<<< HEAD
 VAR01 J\x00 SET01 FILE2 .\\Data\\Script\\TextFunc.Fob COMMAND_TO_BYTECODE1 \xae\x00\x00 
 CMD01 TextOn COMMAND_TO_BYTECODE1 \xdc\x00\x00 
 S_STR SCE010_002\x00 \xf8\x00\x00 S_END 
 VAR01 TXT1 D\x1f SEQ06 \x03a\x00\x00
+=======
+SEQ01 J\x00
+SEQ14 
+SEQ08 "
+SEQ13 .\\Data\\Script\\TextFunc.Fob SPC01 \xae\x00\x00 
+SEQ02 TextOn SPC01 \xdc\x00\x00 
+SEQ05 SCE010_002\x00 \xf8\x00\x00 
+SEQ07  
+SEQ01 
+SEQ10 D\x1f
+SEQ14 
+SEQ11 \x03a\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 　朝。@
 　食卓の上に、フォークとナイフがきれいに並べられている。@
@@ -22,26 +46,65 @@ VAR01 TXT1 D\x1f SEQ06 \x03a\x00\x00
 　－－これを頸動脈に突き立てれば、多分おれは死ぬだろう。\
 
 \x00\x00\x00  
+<<<<<<< HEAD
 VAR01 <\x01 SET01  \xae\x00\x00 OPER  \xdc\x00\x00 
 S_STR SCE010_003\x00 \xfa\x02\x00 S_END 
 VAR01 TXT1 H\x1f SEQ06 \x03\x0b\x00\x00
+=======
+SEQ01 <\x01
+SEQ14 
+SEQ08 " \xae\x00\x00 
+SEQ08  \xdc\x00\x00 
+SEQ05 SCE010_003\x00 \xfa\x02\x00 
+SEQ07  
+SEQ01 
+SEQ10 H\x1f
+SEQ14 
+SEQ11 \x03\x0b\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 　『死ぬ』こと。@
 \n\n　『死』。\
 
 \x00  
+<<<<<<< HEAD
 VAR01 >\x03 SET01  \xae\x00\x00 OPER  \xdc\x00\x00 
 S_STR SCE010_004\x00 \xa4\x03\x00 S_END 
 VAR01 TXT1 L\x1f SEQ06 \x03c\x00\x00
+=======
+SEQ01 >\x03
+SEQ14 
+SEQ08 " \xae\x00\x00 
+SEQ08  \xdc\x00\x00 
+SEQ05 SCE010_004\x00 \xa4\x03\x00 
+SEQ07  
+SEQ01 
+SEQ10 L\x1f
+SEQ14 
+SEQ11 \x03c\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 　いまや拓司にとって、死を真剣に考えることこそが、生者とし\n　ての自分を実感する唯一の方法だった。\p死に備わる様々な要素\n　－－痛みであるとか、出血であるとか、恐怖であるとか－－は、\n　まだ、リアルなものとして拓司の中に残っている。@
 　死がどういうものなのか、それははっきりと認識できる。@
 　いま生きている『生』よりも、未体験の『死』を思う方が、拓\n　司にとっては容易であったのだ。\
 
 \x00  
+<<<<<<< HEAD
 VAR01 \xe8\x03 SET01  \xae\x00\x00 OPER  \xdc\x00\x00 
 S_STR SCE010_005\x00 \xae\x05\x00 S_END 
 VAR01 TXT1 P\x1f SEQ06 \x03X\x00\x00
+=======
+SEQ01 \xe8\x03
+SEQ14 
+SEQ08 " \xae\x00\x00 
+SEQ08  \xdc\x00\x00 
+SEQ05 SCE010_005\x00 \xae\x05\x00 
+SEQ07  
+SEQ01 
+SEQ10 P\x1f
+SEQ14 
+SEQ11 \x03X\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 　その死を、生と並べて置く。@
 　両者に触れ、味わい、嗅ぎ、眺めて相違点を探る。@
@@ -53,9 +116,22 @@ VAR01 TXT1 P\x1f SEQ06 \x03X\x00\x00
 　証明終わり。\
 
 \x00\x00\x00  
+<<<<<<< HEAD
 VAR01 \xf2\x05 SET01  \xae\x00\x00 OPER  \xdc\x00\x00 
 S_STR SCE010_006\x00 \x8c\x07\x00 S_END 
 VAR01 TXT1 T\x1f SEQ06 \x03\xa6\x00\x00
+=======
+SEQ01 \xf2\x05
+SEQ14 
+SEQ08 " \xae\x00\x00 
+SEQ08  \xdc\x00\x00 
+SEQ05 SCE010_006\x00 \x8c\x07\x00 
+SEQ07  
+SEQ01 
+SEQ10 T\x1f
+SEQ14 
+SEQ11 \x03\xa6\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 　しかし、リアルに死を想像することは、なかなか難しい。@
 　なぜならば死を思ったところで本当に死ぬというわけではなく、\n　そして当然の事ながら、死んだ経験など一度もないからである。\n　@
@@ -68,12 +144,35 @@ VAR01 TXT1 T\x1f SEQ06 \x03\xa6\x00\x00
 　リアルに、生を意識できる。\
 
 \x00  
+<<<<<<< HEAD
 VAR01 \xd0\x07 SET01  \xae\x00\x00 OPER  \xdc\x00\x00 
 S_STR SCE010_007\x00 \xa2\n\x00 S_END 
 VAR01 TXT1 X\x1f SEQ06   
 VAR01 \x00\x00\x00 SET01   \x04\x00\x00\r\x00\x00 \x07\x00 SET01   \x08\x00\x00\r\x00\x00 \x00\x00\x00 SET01 FILE1 .\\Data\\Script\\Bgm.Fob COMMAND_TO_BYTECODE2 4\x0b\x00 OPER 
 CMD03 SePlayEx COMMAND_TO_BYTECODE3 ^\x0b\x00 
 CHOICE_FLAG \x03d\x00\x00
+=======
+SEQ01 \xd0\x07
+SEQ14 
+SEQ08 " \xae\x00\x00 
+SEQ08  \xdc\x00\x00 
+SEQ05 SCE010_007\x00 \xa2\n\x00 
+SEQ07  
+SEQ01 
+SEQ10 X\x1f
+SEQ14 
+SEQ11   
+SEQ01 \x00\x00\x00
+SEQ14 
+SEQ08 "  \x04\x00\x00\r\x00\x00 \x07\x00
+SEQ14 
+SEQ08 "  \x08\x00\x00\r\x00\x00 \x00\x00\x00
+SEQ14 
+SEQ08 "
+SEQ12 .\\Data\\Script\\Bgm.Fob SPC02 4\x0b\x00 
+SEQ04 SePlayEx SPC03 ^\x0b\x00 
+SEQ06 \x03d\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 　間の抜けたテレビの女がいう。@
 \nアナウンサー\n　「－－センセイ、ここ最近、『自殺』という言葉を口にする若\n　　者が増えていますよねえ？」@
@@ -81,9 +180,22 @@ CHOICE_FLAG \x03d\x00\x00
 \nコメンテーター\n　「－－たとえばです。ときおり飲み会などの席で、こう、ポツ\n　　ンと外れて輪に入れないというか……そういう女の子が、ボ\n　　ソっと『私は霊が見える』といったりすることがありますよ\n　　ね」\
 
 \x00  
+<<<<<<< HEAD
 VAR01 ~\x0b SET01  \xae\x00\x00 OPER  \xdc\x00\x00 
 S_STR SCE010_008\x00 H\r\x00 S_END 
 VAR01 TXT1 \\\x1f SEQ06 \x03\xcb\x00\x00
+=======
+SEQ01 ~\x0b
+SEQ14 
+SEQ08 " \xae\x00\x00 
+SEQ08  \xdc\x00\x00 
+SEQ05 SCE010_008\x00 H\r\x00 
+SEQ07  
+SEQ01 
+SEQ10 \\\x1f
+SEQ14 
+SEQ11 \x03\xcb\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 アナウンサー\n　「あ！　ありますあります！」@
 コメンテーター\n　「『ほら、その隅に白髪のおじいさんが立っている』とか、ま\n　　あ、彼女はそういうことをいうわけです。\p周囲に自殺をほの\n　　めかす若者のメンタリティというのは、どこかそれに似てい\n　　ると思うんです」@
@@ -91,9 +203,22 @@ VAR01 TXT1 \\\x1f SEQ06 \x03\xcb\x00\x00
 コメンテーター\n　「飲み会において、彼女には、武器がないわけです。\pそれはた\n　　とえば美しさであったり、話術であったり、愛嬌であったり\n　　と。飲み会の席で有効となるそういったものが、彼女にはな\n　　い。\pだから手軽に存在感をアピールする手段として、『見え\n　　る』と。\p『私にはこんな特殊能力がある』と、いうわけです。\n　　\p『見える』は、美しさも話術も愛嬌も持たない彼女の武器な\n　　わけです。\p真偽は本人にしかわからないけれど、本当だった\n　　としたら、ただごとではないわけですからね」\
 
 \x00  
+<<<<<<< HEAD
 VAR01 \x8c\r SET01  \xae\x00\x00 OPER  \xdc\x00\x00 
 S_STR SCE010_009\x00 \xf2\x10\x00 S_END 
 VAR01 TXT1 `\x1f SEQ06 \x03SFLAG
+=======
+SEQ01 \x8c\r
+SEQ14 
+SEQ08 " \xae\x00\x00 
+SEQ08  \xdc\x00\x00 
+SEQ05 SCE010_009\x00 \xf2\x10\x00 
+SEQ07  
+SEQ01 
+SEQ10 `\x1f
+SEQ14 
+SEQ11 \x03j\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 アナウンサー\n　「自分の後ろに幽霊がいるかもしれないわけですから！」@
 コメンテーター\n　「ハハ。だから周囲は大騒ぎして、彼女に注目をする……。@
@@ -101,9 +226,22 @@ VAR01 TXT1 `\x1f SEQ06 \x03SFLAG
 アナウンサー\n　「なるほどォ。いわれてみればそうかもしれませんね」\
 
 \x00  
+<<<<<<< HEAD
 VAR01 6\x11 SET01  \xae\x00\x00 OPER  \xdc\x00\x00 
 S_STR SCE010_010\x00 \x18\x13\x00 S_END 
 VAR01 TXT1 d\x1f SEQ06 \x03\xb5\x00\x00
+=======
+SEQ01 6\x11
+SEQ14 
+SEQ08 " \xae\x00\x00 
+SEQ08  \xdc\x00\x00 
+SEQ05 SCE010_010\x00 \x18\x13\x00 
+SEQ07  
+SEQ01 
+SEQ10 d\x1f
+SEQ14 
+SEQ11 \x03\xb5\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 コメンテーター\n　「一時話題になった、インターネットの『自殺系サイト』を見\n　　ると、わりと分かりやすい。@
 　　そういったサイトの掲示板への書き込みは、『悩み相談』の\n　　ような体裁を取るものが多いのですが、それは『自分はこん\n　　な悩みを持って自殺しようとしている人間です』という、\n　　『私』のアピールなわけです。\p掲示板での彼らは非常に多弁\n　　です。多くの文章はそこそこしっかりしているし、エンター\n　　テインメントとして他人に読んでもらうことをきちんと意識\n　　している。酔っぱらって『学部長死ね』とかね、駅のトイレ\n　　に殴り書きした落書きではないわけです」@
@@ -112,9 +250,22 @@ VAR01 TXT1 d\x1f SEQ06 \x03\xb5\x00\x00
 アナウンサー\n　「ウフフ」\
 
 \x00  
+<<<<<<< HEAD
 VAR01 \\\x13 SET01  \xae\x00\x00 OPER  \xdc\x00\x00 
 S_STR SCE010_011\x00 j\x16\x00 S_END 
 VAR01 TXT1 h\x1f SEQ06 \x03\xdc\x00\x00
+=======
+SEQ01 \\\x13
+SEQ14 
+SEQ08 " \xae\x00\x00 
+SEQ08  \xdc\x00\x00 
+SEQ05 SCE010_011\x00 j\x16\x00 
+SEQ07  
+SEQ01 
+SEQ10 h\x1f
+SEQ14 
+SEQ11 \x03\xdc\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 コメンテーター\n　「ええと……自己紹介ホームページの開設ブームなどを見れば\n　　わかるとおり、人間には、自己をアピールしたい、『私』を\n　　語りたい、という欲求があるわけです。@
 　　しかし、それには他者とは違った才能が必要であり、そして\n　　才能を得るためには努力が要求される。\p飲み会で注目を集め\n　　るために『明日原爆を作って国会を破壊する！』とブチあげ\n　　ても、それには、発言が真実味を帯びるだけのリアリティが\n　　要求されますよね。\p発言した人が理系の人間であるとか、裏\n　　ルートに通じているとか。\pライセンスがいるわけです。だっ\n　　たらライセンスが要求されない……たとえば『明日パチンコ\n　　に行く！』なんてことをアピールしてみる。@
@@ -122,35 +273,87 @@ VAR01 TXT1 h\x1f SEQ06 \x03\xdc\x00\x00
 アナウンサー\n　「う～ん・・・・」\
 
 \x00  
+<<<<<<< HEAD
 VAR01 \xae\x16 SET01  \xae\x00\x00 OPER  \xdc\x00\x00 
 S_STR SCE010_012\x00 X\x1a\x00 S_END 
 VAR01 TXT1 l\x1f SEQ06 \x03\x91\x00\x00
+=======
+SEQ01 \xae\x16
+SEQ14 
+SEQ08 " \xae\x00\x00 
+SEQ08  \xdc\x00\x00 
+SEQ05 SCE010_012\x00 X\x1a\x00 
+SEQ07  
+SEQ01 
+SEQ10 l\x1f
+SEQ14 
+SEQ11 \x03\x91\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 コメンテーター\n　「このところ『殺人』や『死体写真』などのサブカルチャーが\n　　幅を利かせているのも、競争相手の多いメインカルチャーの\n　　なかで浮上するのがしんどい、という側面があると思うんで\n　　すよ。\p『スノーボードがうまい私』という個性を自分特有の\n　　ものとして確立するのは難しいけれど、『死体写真を集めて\n　　いる変わった私』という個性は簡単に完成するわけです。\p同\n　　じように、『自殺したい』『手首を切ったことがある』とい\n　　うのは、ゼロから生むことができる、安易かつ強力な武器で\n　　あるわけです」@
 \nそしてしかめ面をしたゲストの男がしめくくる。\
 
 \x00\x00\x00  
+<<<<<<< HEAD
 VAR01 \x9c\x1a SET01  \xae\x00\x00 OPER  \xdc\x00\x00 
 S_STR SCE010_013\x00 \x1a\x1d\x00 S_END 
 VAR01 TXT1 p\x1f SEQ06 \x03\xb8\x00\x00
+=======
+SEQ01 \x9c\x1a
+SEQ14 
+SEQ08 " \xae\x00\x00 
+SEQ08  \xdc\x00\x00 
+SEQ05 SCE010_013\x00 \x1a\x1d\x00 
+SEQ07  
+SEQ01 
+SEQ10 p\x1f
+SEQ14 
+SEQ11 \x03\xb8\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 ゲスト\n　「まあ、精神的とか経済的にネ、追いつめられて、真剣に自殺\n　　を考えている人はいるわけなんで、あまり軽々しくは言えな\n　　いんだけどネ。\p若いのがネ、死ぬとかナントカいうのはネ、\n　　要するにネ、ボクラが若いころ、哲学や政治にハマったのと\n　　同じですよ！\p　デカルト読んだり、共産主義を唱えたりね。@
 　　そういうのはね、多くにとっては『哲学する私』『共産主義\n　　を信奉する私』というインテリのスタイルだったわけです。@
 　　ファッションですよ、ファッション」@
 アナウンサー\n　「ファッションとしての自殺、と。\pなんだか凄い話になってし\n　　まいましたが、ええっと……視聴者のみなさんはついてきて\n　　いらっしゃるのでしょうかっ？！」\w\n\n/*SE パチンとテレビのスイッチが切れる音。*/\a2,0,8,0,\a3,0,0,0,\a4,0,0,0,\n\z
   
+<<<<<<< HEAD
 VAR01 ^\x1d SET01  \xae\x00\x00 OPER  \xdc\x00\x00 
 S_STR SCE010_014\x00 x \x00 S_END 
 VAR01 TXT1 t\x1f SEQ06 \x03{\x00\x00
+=======
+SEQ01 ^\x1d
+SEQ14 
+SEQ08 " \xae\x00\x00 
+SEQ08  \xdc\x00\x00 
+SEQ05 SCE010_014\x00 x \x00 
+SEQ07  
+SEQ01 
+SEQ10 t\x1f
+SEQ14 
+SEQ11 \x03{\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 　－－おれの抱えた数字は、そんな簡単に割り切れる数字ではな\n　い。@
 \n　拓司は思った。@
 　いま、テレビで語られていた程度のお安い理屈は、いわれるま\n　でもなく理解していた。\p十分理解できるがゆえに……拓司は恥\n　ずかしかった。\p強烈な恥の意識があった。自殺だ死だと声高に\n　叫ぶことで、自分は『その他大勢のファッション』に身を包む\n　ことになるのではないかと……割り切れる数字に成り下がるの\n　ではないかと……それは弱さの証明に他ならないのではないか\n　と、恥ずかしく思った。\
 
 \x00\x00\x00  
+<<<<<<< HEAD
 VAR01 \xbc  SET01  \xae\x00\x00 OPER  \xdc\x00\x00 
 S_STR SCE010_015\x00 \xe2"\x00 S_END 
 VAR01 TXT1 x\x1f SEQ06 \x03k\x00\x00
+=======
+SEQ01 \xbc 
+SEQ14 
+SEQ08 " \xae\x00\x00 
+SEQ08  \xdc\x00\x00 
+SEQ05 SCE010_015\x00 \xe2"\x00 
+SEQ07  
+SEQ01 
+SEQ10 x\x1f
+SEQ14 
+SEQ11 \x03k\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 　なんちゃって自殺ごっこをする女子学生。@
 　自殺を口にする若者。@
@@ -159,9 +362,22 @@ VAR01 TXT1 x\x1f SEQ06 \x03k\x00\x00
 　自尊心－－若者特有の潔癖さと、そして自分は違うのだという傲\n　慢が、それを許さなかった。\
 
 \x00  
+<<<<<<< HEAD
 VAR01 &# SET01  \xae\x00\x00 OPER  \xdc\x00\x00 
 S_STR SCE010_016\x00 \x0c%\x00 S_END 
 VAR01 TXT1 |\x1f SEQ06 \x03\x9d\x00\x00
+=======
+SEQ01 &#
+SEQ14 
+SEQ08 " \xae\x00\x00 
+SEQ08  \xdc\x00\x00 
+SEQ05 SCE010_016\x00 \x0c%\x00 
+SEQ07  
+SEQ01 
+SEQ10 |\x1f
+SEQ14 
+SEQ11 \x03\x9d\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 　口に出すことで、深刻さを割り引くことができる痛みは多い。@
 　その効力を知っているからこそ、人は冗談めかして、あるいは\n　真剣に、悩みを人に告げる。@
@@ -172,7 +388,17 @@ VAR01 TXT1 |\x1f SEQ06 \x03\x9d\x00\x00
 　逃げ場はなかった。\
 
 \x00\x00\x00  
+<<<<<<< HEAD
 VAR01 P% SET01  \xae\x00\x00 OPER  \xdc\x00\x00 
 CHOICE_FLAG  \xae\x00\x00 OPER 
 CMD03 TextClose COMMAND_TO_BYTECODE2 \n(\x00 
 F_END
+=======
+SEQ01 P%
+SEQ14 
+SEQ08 " \xae\x00\x00 
+SEQ08  \xdc\x00\x00 
+SEQ06  \xae\x00\x00 
+SEQ04 TextClose SPC02 \n(\x00 
+FEND
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23

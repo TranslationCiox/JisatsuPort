@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 F_SRT
 \x84\x13\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xb4\x0f\x00  
 VAR01 \xc8\x00 SET01 FILE1 .\\Data\\Script\\Bg.Fob COMMAND_TO_BYTECODE3  \x00\x00 
@@ -6,6 +7,26 @@ VAR01 \x04\x01 SET01 FILE1 .\\Data\\Script\\Bgm.Fob COMMAND_TO_BYTECODE2 \x88\x0
 CMD01 PlayCD COMMAND_TO_BYTECODE1 \xb2\x00\x00 
 S_STR SCEK05_A01\x00 \xce\x00\x00 S_END 
 VAR01 TXT1 \xa8\xa6\x01\x0c\x00\x00\x00\x00"\x03\xb0\x00\x00
+=======
+FSTR
+\x84\x13\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xb4\x0f\x00  
+SEQ01 \xc8\x00
+SEQ14 
+SEQ08 "
+SEQ12 .\\Data\\Script\\Bg.Fob SPC03  \x00\x00 
+SEQ03 BgAutoFadeIn SPC03 J\x00\x00 
+SEQ06   
+SEQ01 \x04\x01
+SEQ14 
+SEQ08 "
+SEQ12 .\\Data\\Script\\Bgm.Fob SPC02 \x88\x00\x00 
+SEQ02 PlayCD SPC01 \xb2\x00\x00 
+SEQ05 SCEK05_A01\x00 \xce\x00\x00 
+SEQ07  
+SEQ01 
+SEQ10 \xa8\xa6\x01\x0c
+SEQ11 \x03\xb0\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 　私は飢えた子猫みたいなものだった。@
 食べても食べても、食べたりなかった。@
@@ -18,19 +39,44 @@ VAR01 TXT1 \xa8\xa6\x01\x0c\x00\x00\x00\x00"\x03\xb0\x00\x00
 私は真剣に考えた。@
 そしてついに、秘密の共有こそが繋がりを深くする鍵に違いない、\nと思い至った。\w\z
 \x00  
+<<<<<<< HEAD
 VAR01 \x12\x01 SET01 FILE2 .\\Data\\Script\\TextFunc.Fob COMMAND_TO_BYTECODE1 \xf2\x03\x00 
 CMD01 TextOn COMMAND_TO_BYTECODE1  \x04\x00 
 S_STR SCEK05_A02\x00 <\x04\x00 S_END 
 VAR01 TXT1 \xac\xa6\x01\x0c\x00\x00\x00\x00"\x03R\x00\x00
+=======
+SEQ01 \x12\x01
+SEQ14 
+SEQ08 "
+SEQ13 .\\Data\\Script\\TextFunc.Fob SPC01 \xf2\x03\x00 
+SEQ02 TextOn SPC01  \x04\x00 
+SEQ05 SCEK05_A02\x00 <\x04\x00 
+SEQ07  
+SEQ01 
+SEQ10 \xac\xa6\x01\x0c
+SEQ11 \x03R\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 秘密……これまで誰にも話したことのない、胸の中の暗い秘密を\n告白して、共有すること。@
 それが鎖となれば、私たちはもっときつく互いを縛り合えるよう\nな気がした。@
 縛る……そう、私はゆきに縛ってほしかったし、ゆきを縛りたか\nった。@
 二度と逃げられないくらいに互いを縛り合って、深い海の底に一\n緒に沈んでいきたかった。\w\z
 \x00\x00\x00  
+<<<<<<< HEAD
 VAR01 \x80\x04 SET01  \xf2\x03\x00 OPER   \x04\x00 
 S_STR SCEK05_A03\x00 \x02\x06\x00 S_END 
 VAR01 TXT1 \xb0\xa6\x01\x0c\x00\x00\x00\x00"\x03\x9e\x00\x00
+=======
+SEQ01 \x80\x04
+SEQ14 
+SEQ08 " \xf2\x03\x00 
+SEQ08   \x04\x00 
+SEQ05 SCEK05_A03\x00 \x02\x06\x00 
+SEQ07  
+SEQ01 
+SEQ10 \xb0\xa6\x01\x0c
+SEQ11 \x03\x9e\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 　私の提案に、ゆきは気乗りしない様子だった。@
 「秘密を知ることで、もしかしたら相手のことが嫌いになるとい\nうこともあるんじゃないかな？」@
@@ -42,9 +88,21 @@ VAR01 TXT1 \xb0\xa6\x01\x0c\x00\x00\x00\x00"\x03\x9e\x00\x00
 私はそれを知りたかった。\pゆきのすべてが。@
 結局、私の熱意がゆきを説き伏せる形となった。\w\z
 \x00  
+<<<<<<< HEAD
 VAR01 F\x06 SET01  \xf2\x03\x00 OPER   \x04\x00 
 S_STR SCEK05_A04\x00 \xf8\x08\x00 S_END 
 VAR01 TXT1 \xb4\xa6\x01\x0c\x00\x00\x00\x00"\x03I\x00\x00
+=======
+SEQ01 F\x06
+SEQ14 
+SEQ08 " \xf2\x03\x00 
+SEQ08   \x04\x00 
+SEQ05 SCEK05_A04\x00 \xf8\x08\x00 
+SEQ07  
+SEQ01 
+SEQ10 \xb4\xa6\x01\x0c
+SEQ11 \x03I\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 　あまり話に関係がないから、私が何を告白したのかはここでは\n語らない。@
 いずれにせよ、私の秘密はゆきを動揺させた。@
@@ -53,11 +111,25 @@ VAR01 TXT1 \xb4\xa6\x01\x0c\x00\x00\x00\x00"\x03I\x00\x00
 そしてゆきの番だった。@
 \n私はゆきに連れられて、町はずれの歩道橋に向かった。\w\z
 \x00  
+<<<<<<< HEAD
 VAR01 <\t SET01  \xf2\x03\x00 OPER   \x04\x00 
 CHOICE_FLAG  \x88\x00\x00 
 CMD01 StopCD COMMAND_TO_BYTECODE1 \xa6\n\x00 
 S_STR SCEK05_A05\x00 \xc2\n\x00 S_END 
 VAR01 TXT1 \xb8\xa6\x01\x0c\x00\x00\x00\x00"\x03\xe1\x00\x00
+=======
+SEQ01 <\t
+SEQ14 
+SEQ08 " \xf2\x03\x00 
+SEQ08   \x04\x00 
+SEQ06  \x88\x00\x00 
+SEQ02 StopCD SPC01 \xa6\n\x00 
+SEQ05 SCEK05_A05\x00 \xc2\n\x00 
+SEQ07  
+SEQ01 
+SEQ10 \xb8\xa6\x01\x0c
+SEQ11 \x03\xe1\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 　７月２７日（－－この日付が重要なの）。@
 風が全然吹かない日の、蒸し暑い夕方だった。@
@@ -75,14 +147,32 @@ VAR01 TXT1 \xb8\xa6\x01\x0c\x00\x00\x00\x00"\x03\xe1\x00\x00
 せいいっぱいの勇気と不安が、ゆきの顔のなかでせめぎ合ってい\nた。@
 ゆきはこんなところで何を告白するつもりなのか……？\w\z
 \x00\x00\x00  
+<<<<<<< HEAD
 VAR01 \x06\x0b SET01  \xf2\x03\x00 OPER   \x04\x00 
 CHOICE_FLAG \x03#\x00\x00
+=======
+SEQ01 \x06\x0b
+SEQ14 
+SEQ08 " \xf2\x03\x00 
+SEQ08   \x04\x00 
+SEQ06 \x03#\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
 CHOICE
 不安が広がっていった。「もういいよ。帰ろう」と私はいった。\n好奇心が爆発しそうだった。私は沈黙に耐えながら、歩き続けた。\n\l0,2,
 ENDCHOICE
 
 \x00\x00\x00  
+<<<<<<< HEAD
 VAR01 \xc4\x0e SET01  \xf2\x03\x00 OPER   \x04\x00 
 CHOICE_FLAG  \xf2\x03\x00 OPER 
 CMD03 TextClose COMMAND_TO_BYTECODE2 \x96\x0f\x00 
 F_END
+=======
+SEQ01 \xc4\x0e
+SEQ14 
+SEQ08 " \xf2\x03\x00 
+SEQ08   \x04\x00 
+SEQ06  \xf2\x03\x00 
+SEQ04 TextClose SPC02 \x96\x0f\x00 
+FEND
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23

@@ -1,9 +1,24 @@
+<<<<<<< HEAD
 F_SRT
 \xfb\r\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\x94\x0b\x00  
 VAR01 \x05\x01 SET01 FILE1 .\\Data\\Script\\Bgm.Fob COMMAND_TO_BYTECODE2  \x00\x00 
 CMD01 PlayCD COMMAND_TO_BYTECODE1 J\x00\x00 
 S_STR SCEG02_004\x00 f\x00\x00 S_END 
 VAR01 TXT1 T\xc5\x01\x0c\x00\x00\x00\x00"\x03i\x00\x00
+=======
+FSTR
+\xfb\r\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\x94\x0b\x00  
+SEQ01 \x05\x01
+SEQ14 
+SEQ08 "
+SEQ12 .\\Data\\Script\\Bgm.Fob SPC02  \x00\x00 
+SEQ02 PlayCD SPC01 J\x00\x00 
+SEQ05 SCEG02_004\x00 f\x00\x00 
+SEQ07  
+SEQ01 
+SEQ10 T\xc5\x01\x0c
+SEQ11 \x03i\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 　かさりと音がして、錦城の上半身が、拓司の顔のあたりに被さっ\nた。@
 熱い体温と、ずっしりとした肉の重みが……柔らかく大きな胸が、\n\p拓司の目の前にある。@
@@ -12,12 +27,31 @@ VAR01 TXT1 T\xc5\x01\x0c\x00\x00\x00\x00"\x03i\x00\x00
 錦城\n　「しーっ！　……静かに。\pみんなが目を覚ますわ。@
 　　先生ね、考えたの。\p虎菱くんがこういうのを励みにできれ\n　　ば……って」\w\z
 \x00  
+<<<<<<< HEAD
 VAR01 \xaa\x00 SET01 FILE2 .\\Data\\Script\\TextFunc.Fob COMMAND_TO_BYTECODE1 n\x02\x00 
 CMD01 TextOn COMMAND_TO_BYTECODE1 \x9c\x02\x00 C_END  
 VAR01 ^\x00 SET01 FILE1 .\\Data\\Script\\Bg.Fob COMMAND_TO_BYTECODE3 \xd2\x02\x00 
 CMD02 BgAutoFadeIn COMMAND_TO_BYTECODE3 \xfc\x02\x00 
 S_STR SCEG02_005\x00  \x03\x00 S_END 
 VAR01 TXT1 X\xc5\x01\x0c\x00\x00\x00\x00"\x03R\x00\x00
+=======
+SEQ01 \xaa\x00
+SEQ14 
+SEQ08 "
+SEQ13 .\\Data\\Script\\TextFunc.Fob SPC01 n\x02\x00 
+SEQ02 TextOn SPC01 \x9c\x02\x00 
+SEQ06   
+SEQ01 ^\x00
+SEQ14 
+SEQ08 "
+SEQ12 .\\Data\\Script\\Bg.Fob SPC03 \xd2\x02\x00 
+SEQ03 BgAutoFadeIn SPC03 \xfc\x02\x00 
+SEQ05 SCEG02_005\x00  \x03\x00 
+SEQ07  
+SEQ01 
+SEQ10 X\xc5\x01\x0c
+SEQ11 \x03R\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 錦城の手は、滑るようにチャックの中へと侵入し、拓司のペ○ス\nに触れた。@
 そっとそれをつまみ、ズボンの外にずるりと引きずりだす。@
@@ -27,9 +61,21 @@ VAR01 TXT1 X\xc5\x01\x0c\x00\x00\x00\x00"\x03R\x00\x00
 錦城\n　「よかった」@
 \n錦城は拓司の目をじっと見つめたまま、薄く笑った。\w\z
 \x00  
+<<<<<<< HEAD
 VAR01 d\x03 SET01  n\x02\x00 OPER  \x9c\x02\x00 
 S_STR SCEG02_006\x00 \xe6\x04\x00 S_END 
 VAR01 TXT1 \\\xc5\x01\x0c\x00\x00\x00\x00"\x03R\x00\x00
+=======
+SEQ01 d\x03
+SEQ14 
+SEQ08 " n\x02\x00 
+SEQ08  \x9c\x02\x00 
+SEQ05 SCEG02_006\x00 \xe6\x04\x00 
+SEQ07  
+SEQ01 
+SEQ10 \\\xc5\x01\x0c
+SEQ11 \x03R\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 錦城\n　「さすが、男の子ね。\p熱くて……元気。\pねえ、虎菱くん、気持\n　　ちいい？」@
 拓司\n　「……」@
@@ -38,9 +84,21 @@ VAR01 TXT1 \\\xc5\x01\x0c\x00\x00\x00\x00"\x03R\x00\x00
 拓司\n　「……」@
 黙っていると、錦城の手の動きがひどくゆっくりとしたものに変\nわった。\pじらすように止まり、少し動いてまた止まる。\w\z
 \x00\x00\x00  
+<<<<<<< HEAD
 VAR01 *\x05 SET01  n\x02\x00 OPER  \x9c\x02\x00 
 S_STR SCEG02_007\x00 \xac\x06\x00 S_END 
 VAR01 TXT1 `\xc5\x01\x0c\x00\x00\x00\x00"\x03R\x00\x00
+=======
+SEQ01 *\x05
+SEQ14 
+SEQ08 " n\x02\x00 
+SEQ08  \x9c\x02\x00 
+SEQ05 SCEG02_007\x00 \xac\x06\x00 
+SEQ07  
+SEQ01 
+SEQ10 `\xc5\x01\x0c
+SEQ11 \x03R\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 錦城\n　「先生は聞いているんだけど。\p早いほうがいいの？@
 　　おそいほうがいいの？」@
@@ -51,9 +109,21 @@ VAR01 TXT1 `\xc5\x01\x0c\x00\x00\x00\x00"\x03R\x00\x00
 拓司\n　「もっと……」@
 錦城\n　「いやらしい子ね。先生の手、道具だとでも思ってるのかしら？\n　　ふふふ」\w\z
 \x00  
+<<<<<<< HEAD
 VAR01 \xf0\x06 SET01  n\x02\x00 OPER  \x9c\x02\x00 
 S_STR SCEG02_008\x00 r\x08\x00 S_END 
 VAR01 TXT1 d\xc5\x01\x0c\x00\x00\x00\x00"\x03\x86\x00\x00
+=======
+SEQ01 \xf0\x06
+SEQ14 
+SEQ08 " n\x02\x00 
+SEQ08  \x9c\x02\x00 
+SEQ05 SCEG02_008\x00 r\x08\x00 
+SEQ07  
+SEQ01 
+SEQ10 d\xc5\x01\x0c
+SEQ11 \x03\x86\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 早く激しく……嵐のように手を動かしながら、錦城は拓司の目を\n正面から捉えて離さない。@
 まるで実験動物を観察するように、拓司の目をのぞき込んでいる。\n\p錦城\n　「先生にこんなことさせてるなんて……興奮する？」@
@@ -65,14 +135,32 @@ VAR01 TXT1 d\xc5\x01\x0c\x00\x00\x00\x00"\x03\x86\x00\x00
 拓司\n　「先生……」@
 錦城\n　「ねえ……触りたい？\p　先生の胸、そんなにじっと見つめて\n　　……ねえ、触りたいの？」\w\z
 \x00  
+<<<<<<< HEAD
 VAR01 \xb6\x08 SET01  n\x02\x00 OPER  \x9c\x02\x00 
 CHOICE_FLAG \x03\n\x00\x00
+=======
+SEQ01 \xb6\x08
+SEQ14 
+SEQ08 " n\x02\x00 
+SEQ08  \x9c\x02\x00 
+SEQ06 \x03\n\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
 CHOICE
 「触りたい」\n「……」\n\l0,2,
 ENDCHOICE
 
 \x00  
+<<<<<<< HEAD
 VAR01 \x08\x0b SET01  n\x02\x00 OPER  \x9c\x02\x00 
 CHOICE_FLAG  n\x02\x00 OPER 
 CMD03 TextClose COMMAND_TO_BYTECODE2 v\x0b\x00 
 F_END
+=======
+SEQ01 \x08\x0b
+SEQ14 
+SEQ08 " n\x02\x00 
+SEQ08  \x9c\x02\x00 
+SEQ06  n\x02\x00 
+SEQ04 TextClose SPC02 v\x0b\x00 
+FEND
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23

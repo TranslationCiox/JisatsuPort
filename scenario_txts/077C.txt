@@ -1,8 +1,21 @@
+<<<<<<< HEAD
 F_SRT
 '\x11\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00@\r\x00FILE1 .\\Data\\Script\\Bgm.Fob COMMAND_TO_BYTECODE2 \x06\x00\x00 
 CMD01 StopCD COMMAND_TO_BYTECODE1 0\x00\x00 
 S_STR SCE077_001\x00 L\x00\x00 S_END 
 VAR01 TXT1 \xf0\x87 SEQ06 \x03~\x00\x00
+=======
+FSTR
+'\x11\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00@\r\x00
+SEQ12 .\\Data\\Script\\Bgm.Fob SPC02 \x06\x00\x00 
+SEQ02 StopCD SPC01 0\x00\x00 
+SEQ05 SCE077_001\x00 L\x00\x00 
+SEQ07  
+SEQ01 
+SEQ10 \xf0\x87
+SEQ14 
+SEQ11 \x03~\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 拓司\n　「雲居さんが俺たちには見えないものが見えるというのは…\n　　…信じられないけど……どうやらウソじゃないらしい。@
 　　いままで何度も、雲居さんは『波動』ってやつを感じてき\n　　たし、俺はそれに救われてきた」@
@@ -14,12 +27,31 @@ VAR01 TXT1 \xf0\x87 SEQ06 \x03~\x00\x00
 拓司\n　「俺が行く。\pだから雲居さんは２人をシェルターに連れてい\n　　ってやってくれ」\
 
 \x00  
+<<<<<<< HEAD
 VAR01 \x90\x00 SET01 FILE2 .\\Data\\Script\\TextFunc.Fob COMMAND_TO_BYTECODE1 \xa8\x02\x00 
 CMD01 TextOn COMMAND_TO_BYTECODE1 \xd6\x02\x00 C_END  
 VAR01 \x08\x01 SET01  \x06\x00\x00 
 CMD01 PlayCD COMMAND_TO_BYTECODE1 \x18\x03\x00 
 S_STR SCE077_002\x00 4\x03\x00 S_END 
 VAR01 TXT1 \xf4\x87 SEQ06 \x03X\x00\x00
+=======
+SEQ01 \x90\x00
+SEQ14 
+SEQ08 "
+SEQ13 .\\Data\\Script\\TextFunc.Fob SPC01 \xa8\x02\x00 
+SEQ02 TextOn SPC01 \xd6\x02\x00 
+SEQ06   
+SEQ01 \x08\x01
+SEQ14 
+SEQ08 " \x06\x00\x00 
+SEQ02 PlayCD SPC01 \x18\x03\x00 
+SEQ05 SCE077_002\x00 4\x03\x00 
+SEQ07  
+SEQ01 
+SEQ10 \xf4\x87
+SEQ14 
+SEQ11 \x03X\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 早桃\n　「イヤだよ！\p　早桃、やだからね！」@
 拓司\n　「……」@
@@ -31,9 +63,22 @@ VAR01 TXT1 \xf4\x87 SEQ06 \x03X\x00\x00
 拓司\n　「紅葉を助けるために、お前たちを危険にさらすわけにはいか\n　　ない」\
 
 \x00  
+<<<<<<< HEAD
 VAR01 x\x03 SET01  \xa8\x02\x00 OPER  \xd6\x02\x00 
 S_STR SCE077_003\x00 \x12\x05\x00 S_END 
 VAR01 TXT1 \xf8\x87 SEQ06 \x03O\x00\x00
+=======
+SEQ01 x\x03
+SEQ14 
+SEQ08 " \xa8\x02\x00 
+SEQ08  \xd6\x02\x00 
+SEQ05 SCE077_003\x00 \x12\x05\x00 
+SEQ07  
+SEQ01 
+SEQ10 \xf8\x87
+SEQ14 
+SEQ11 \x03O\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 早桃\n　「……」@
 拓司\n　「……」@
@@ -43,9 +88,22 @@ VAR01 TXT1 \xf8\x87 SEQ06 \x03O\x00\x00
 \n　ぶるぶると震える早桃の肩を、拓司は優しくかき抱いた。\pそれ\n　から肩に担いだカンナを２人に任せ、なたねに尋ねた。\
 
 \x00  
+<<<<<<< HEAD
 VAR01 V\x05 SET01  \xa8\x02\x00 OPER  \xd6\x02\x00 
 S_STR SCE077_004\x00 \xcc\x06\x00 S_END 
 VAR01 TXT1 \xfc\x87 SEQ06 \x03d\x00\x00
+=======
+SEQ01 V\x05
+SEQ14 
+SEQ08 " \xa8\x02\x00 
+SEQ08  \xd6\x02\x00 
+SEQ05 SCE077_004\x00 \xcc\x06\x00 
+SEQ07  
+SEQ01 
+SEQ10 \xfc\x87
+SEQ14 
+SEQ11 \x03d\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 拓司\n　「４階の実験室だな？」@
 なたね\n　「なにが？」@
@@ -57,9 +115,22 @@ VAR01 TXT1 \xfc\x87 SEQ06 \x03d\x00\x00
 なたね\n　「ここで虎菱くんを失うのは、地球の戦士たちにとって大きな\n　　痛手。\p哀しいことだわ」\
 
 \x00\x00\x00  
+<<<<<<< HEAD
 VAR01 \x10\x07 SET01  \xa8\x02\x00 OPER  \xd6\x02\x00 
 S_STR SCE077_005\x00 \xda\x08\x00 S_END 
 VAR01 TXT1 \x00\x88 SEQ06 \x03E\x00\x00
+=======
+SEQ01 \x10\x07
+SEQ14 
+SEQ08 " \xa8\x02\x00 
+SEQ08  \xd6\x02\x00 
+SEQ05 SCE077_005\x00 \xda\x08\x00 
+SEQ07  
+SEQ01 
+SEQ10 \x00\x88
+SEQ14 
+SEQ11 \x03E\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 拓司\n　「……死んだら、な」@
 なたね\n　「死ぬわ」@
@@ -69,6 +140,7 @@ VAR01 TXT1 \x00\x88 SEQ06 \x03E\x00\x00
 　振り返り振り返り、早桃たち３人の姿が廊下の向こうに消えさ\n　ったのを見送り、拓司はよし、とつぶやいた。\
 
 \x00\x00\x00  
+<<<<<<< HEAD
 VAR01 \x1e\t SET01  \xa8\x02\x00 OPER  \xd6\x02\x00 
 CHOICE_FLAG  \x06\x00\x00 OPER  0\x00\x00 C_END  
 VAR01 <\x00 SET01 FILE2 .\\Data\\Script\\TextFunc.fob COMMAND_TO_BYTECODE1 \xa0\n\x00 OPER 
@@ -76,6 +148,31 @@ CMD03 WaitTime COMMAND_TO_BYTECODE3 \xce\n\x00 C_END
 VAR01 \t\x01 SET01  \x06\x00\x00 OPER  \x18\x03\x00 
 S_STR SCE077_006\x00 "\x0b\x00 S_END 
 VAR01 TXT1 \x04\x88 SEQ06 \x03B\x00\x00
+=======
+SEQ01 \x1e\t
+SEQ14 
+SEQ08 " \xa8\x02\x00 
+SEQ08  \xd6\x02\x00 
+SEQ06  \x06\x00\x00 
+SEQ08  0\x00\x00 
+SEQ06   
+SEQ01 <\x00
+SEQ14 
+SEQ08 "
+SEQ13 .\\Data\\Script\\TextFunc.fob SPC01 \xa0\n\x00 
+SEQ04 WaitTime SPC03 \xce\n\x00 
+SEQ06   
+SEQ01 \t\x01
+SEQ14 
+SEQ08 " \x06\x00\x00 
+SEQ08  \x18\x03\x00 
+SEQ05 SCE077_006\x00 "\x0b\x00 
+SEQ07  
+SEQ01 
+SEQ10 \x04\x88
+SEQ14 
+SEQ11 \x03B\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 　渡り廊下は静まり返っている。@
 　見渡す限り、なにもない。@
@@ -83,14 +180,32 @@ VAR01 TXT1 \x04\x88 SEQ06 \x03B\x00\x00
 　波動というのがなんなのかがわからない以上、一気に走り抜け\n　るべきなのか、あるいは静かに前進すべきなのか、それすら判\n　断のしようがない。\
 
 \x00  
+<<<<<<< HEAD
 VAR01 f\x0b SET01  \xa8\x02\x00 OPER  \xd6\x02\x00 
 CHOICE_FLAG \x03\r\x00\x00
+=======
+SEQ01 f\x0b
+SEQ14 
+SEQ08 " \xa8\x02\x00 
+SEQ08  \xd6\x02\x00 
+SEQ06 \x03\r\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
 CHOICE
 一気に走り抜ける\n慎重に歩いてゆく\n\l0,2,
 ENDCHOICE
 
 \x00  
+<<<<<<< HEAD
 VAR01 \xa8\x0c SET01  \xa8\x02\x00 OPER  \xd6\x02\x00 
 CHOICE_FLAG  \xa8\x02\x00 OPER 
 CMD03 TextClose COMMAND_TO_BYTECODE2 "\r\x00 
 F_END
+=======
+SEQ01 \xa8\x0c
+SEQ14 
+SEQ08 " \xa8\x02\x00 
+SEQ08  \xd6\x02\x00 
+SEQ06  \xa8\x02\x00 
+SEQ04 TextClose SPC02 "\r\x00 
+FEND
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23

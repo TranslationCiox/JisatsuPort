@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 F_SRT
 e+\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xf4$\x00  
 VAR01 \x05\x01 SET01 FILE1 .\\Data\\Script\\Bgm.Fob COMMAND_TO_BYTECODE2  \x00\x00 
@@ -6,6 +7,27 @@ VAR01 Q\x00 SET01 FILE1 .\\Data\\Script\\Bg.Fob COMMAND_TO_BYTECODE3 \x80\x00\x0
 CMD02 BgAutoFadeIn COMMAND_TO_BYTECODE3 \xaa\x00\x00 
 S_STR SCE032_001\x00 \xce\x00\x00 S_END 
 VAR01 TXT1 \xa0A SEQ06 \x03\xc8\x00\x00
+=======
+FSTR
+e+\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xf4$\x00  
+SEQ01 \x05\x01
+SEQ14 
+SEQ08 "
+SEQ12 .\\Data\\Script\\Bgm.Fob SPC02  \x00\x00 
+SEQ02 PlayCD SPC01 J\x00\x00 
+SEQ06   
+SEQ01 Q\x00
+SEQ14 
+SEQ08 "
+SEQ12 .\\Data\\Script\\Bg.Fob SPC03 \x80\x00\x00 
+SEQ03 BgAutoFadeIn SPC03 \xaa\x00\x00 
+SEQ05 SCE032_001\x00 \xce\x00\x00 
+SEQ07  
+SEQ01 
+SEQ10 \xa0A
+SEQ14 
+SEQ11 \x03\xc8\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 組み伏したカンナの身体は、どこか冷たかった。@
 ぐにゃりと柔らかい、肉の塊。@
@@ -22,10 +44,24 @@ VAR01 TXT1 \xa0A SEQ06 \x03\xc8\x00\x00
 それをつまみ上げるたびに、ひく、ひくと、ペ○スを包む肉が収縮\nする。\
 
 \x00\x00\x00  
+<<<<<<< HEAD
 VAR01 \x12\x01 SET01 FILE2 .\\Data\\Script\\TextFunc.Fob COMMAND_TO_BYTECODE1 R\x04\x00 
 CMD01 TextOn COMMAND_TO_BYTECODE1 \x80\x04\x00 
 S_STR SCE032_002\x00 \x9c\x04\x00 S_END 
 VAR01 TXT1 \xa4A SEQ06 \x03\x88\x00\x00
+=======
+SEQ01 \x12\x01
+SEQ14 
+SEQ08 "
+SEQ13 .\\Data\\Script\\TextFunc.Fob SPC01 R\x04\x00 
+SEQ02 TextOn SPC01 \x80\x04\x00 
+SEQ05 SCE032_002\x00 \x9c\x04\x00 
+SEQ07  
+SEQ01 
+SEQ10 \xa4A
+SEQ14 
+SEQ11 \x03\x88\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 そのどれもが、『生きている』肉体の反応だ。@
 しかし、それでもなお、生々しさが足りない。@
@@ -38,9 +74,22 @@ VAR01 TXT1 \xa4A SEQ06 \x03\x88\x00\x00
 まるで実験動物を観察するように、拓司の顔をのぞき込んでいる。\n\p恥ずかしさとも怒りともつかぬ激情で、頭にカッと血が上る。\
 
 \x00\x00\x00  
+<<<<<<< HEAD
 VAR01 \xe0\x04 SET01  R\x04\x00 OPER  \x80\x04\x00 
 S_STR SCE032_003\x00 :\x07\x00 S_END 
 VAR01 TXT1 \xa8A SEQ06 \x03w\x00\x00
+=======
+SEQ01 \xe0\x04
+SEQ14 
+SEQ08 " R\x04\x00 
+SEQ08  \x80\x04\x00 
+SEQ05 SCE032_003\x00 :\x07\x00 
+SEQ07  
+SEQ01 
+SEQ10 \xa8A
+SEQ14 
+SEQ11 \x03w\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 拓司\n　「……こんなに濡れて締め付けておいて……気取るな……」@
 カンナ\n　「気取ってなんかいないわ。気持ちいいわよ、すごく。@
@@ -50,9 +99,22 @@ VAR01 TXT1 \xa8A SEQ06 \x03w\x00\x00
 拓司\n　「うるさい、黙れッ！」\
 
 \x00\x00\x00  
+<<<<<<< HEAD
 VAR01 ~\x07 SET01  R\x04\x00 OPER  \x80\x04\x00 
 S_STR SCE032_004\x00 \x94\t\x00 S_END 
 VAR01 TXT1 \xacA SEQ06 \x03z\x00\x00
+=======
+SEQ01 ~\x07
+SEQ14 
+SEQ08 " R\x04\x00 
+SEQ08  \x80\x04\x00 
+SEQ05 SCE032_004\x00 \x94\t\x00 
+SEQ07  
+SEQ01 
+SEQ10 \xacA
+SEQ14 
+SEQ11 \x03z\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 叫んで拓司は、カンナの手首を覆っている包帯を引きちぎった。@
 真っ白な手首に、幾条もの痛々しい傷跡が走っている。@
@@ -64,9 +126,22 @@ VAR01 TXT1 \xacA SEQ06 \x03z\x00\x00
 拓司\n　「……ちっ」\
 
 \x00  
+<<<<<<< HEAD
 VAR01 \xd8\t SET01  R\x04\x00 OPER  \x80\x04\x00 
 S_STR SCE032_005\x00 \xfa\x0b\x00 S_END 
 VAR01 TXT1 \xb0A SEQ06 \x03\xad\x00\x00
+=======
+SEQ01 \xd8\t
+SEQ14 
+SEQ08 " R\x04\x00 
+SEQ08  \x80\x04\x00 
+SEQ05 SCE032_005\x00 \xfa\x0b\x00 
+SEQ07  
+SEQ01 
+SEQ10 \xb0A
+SEQ14 
+SEQ11 \x03\xad\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 カンナの頭の横に、スカートのポケットに入っていた小物類がまと\nめて置かれている。\pその中から拓司は、パスケースを選んで取り上\nげた。\pぱらりと開くと学生証を挟み込む透明なビニールの部分に、\nそれが入っている。@
 夏の日差しを鈍く照り返す、ステンレスの薄い板。@
@@ -77,9 +152,22 @@ VAR01 TXT1 \xb0A SEQ06 \x03\xad\x00\x00
 いままでまったく感じられなかった、生々しいいきものの脈動が、\nある……。\
 
 \x00\x00\x00  
+<<<<<<< HEAD
 VAR01 >\x0c SET01  R\x04\x00 OPER  \x80\x04\x00 
 S_STR SCE032_006\x00 ,\x0f\x00 S_END 
 VAR01 TXT1 \xb4A SEQ06 \x03\x89\x00\x00
+=======
+SEQ01 >\x0c
+SEQ14 
+SEQ08 " R\x04\x00 
+SEQ08  \x80\x04\x00 
+SEQ05 SCE032_006\x00 ,\x0f\x00 
+SEQ07  
+SEQ01 
+SEQ10 \xb4A
+SEQ14 
+SEQ11 \x03\x89\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 カンナ\n　「……はあ……はあ……」@
 \n青白いカンナの頬に、赤い血の色がさしている。@
@@ -93,9 +181,22 @@ VAR01 TXT1 \xb4A SEQ06 \x03\x89\x00\x00
 先ほどまでとなんら変わることのないその運動に、果たしてカンナ\nは、今度は身をよじらせて反応した。\
 
 \x00\x00\x00  
+<<<<<<< HEAD
 VAR01 p\x0f SET01  R\x04\x00 OPER  \x80\x04\x00 
 S_STR SCE032_007\x00 \xce\x11\x00 S_END 
 VAR01 TXT1 \xb8A SEQ06 \x03\x9a\x00\x00
+=======
+SEQ01 p\x0f
+SEQ14 
+SEQ08 " R\x04\x00 
+SEQ08  \x80\x04\x00 
+SEQ05 SCE032_007\x00 \xce\x11\x00 
+SEQ07  
+SEQ01 
+SEQ10 \xb8A
+SEQ14 
+SEQ11 \x03\x9a\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 カンナ\n　「あいっ……い、いじわるしな……いで……ひっ……早く眼を…\n　　…眼を潰して……！」@
 拓司\n　「ふふ……カンナの顔。\pすごく生き生きしてる。\pまるで生きて\n　　いる人間みたいだ」@
@@ -107,9 +208,22 @@ VAR01 TXT1 \xb8A SEQ06 \x03\x9a\x00\x00
 カンナが自ら視覚を封じたのを確認してから、拓司はカンナの右\n手首を捧げ持った。\pそこに剃刀の刃をぴたりとあてがう。\
 
 \x00\x00\x00  
+<<<<<<< HEAD
 VAR01 \x12\x12 SET01  R\x04\x00 OPER  \x80\x04\x00 
 S_STR SCE032_008\x00 \xb4\x14\x00 S_END 
 VAR01 TXT1 \xbcA SEQ06 \x03\x88\x00\x00
+=======
+SEQ01 \x12\x12
+SEQ14 
+SEQ08 " R\x04\x00 
+SEQ08  \x80\x04\x00 
+SEQ05 SCE032_008\x00 \xb4\x14\x00 
+SEQ07  
+SEQ01 
+SEQ10 \xbcA
+SEQ14 
+SEQ11 \x03\x88\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 拓司\n　「……どうだ？　感じるか？」@
 カンナ\n　「……早く……」@
@@ -124,9 +238,22 @@ VAR01 TXT1 \xbcA SEQ06 \x03\x88\x00\x00
 自殺ゲーム。\
 
 \x00\x00\x00  
+<<<<<<< HEAD
 VAR01 \xf8\x14 SET01  R\x04\x00 OPER  \x80\x04\x00 
 S_STR SCE032_009\x00 R\x17\x00 S_END 
 VAR01 TXT1 \xc0A SEQ06 \x03\xa6\x00\x00
+=======
+SEQ01 \xf8\x14
+SEQ14 
+SEQ08 " R\x04\x00 
+SEQ08  \x80\x04\x00 
+SEQ05 SCE032_009\x00 R\x17\x00 
+SEQ07  
+SEQ01 
+SEQ10 \xc0A
+SEQ14 
+SEQ11 \x03\xa6\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 \nだくだくと血が流れ出した。@
 出る。@
@@ -143,9 +270,22 @@ VAR01 TXT1 \xc0A SEQ06 \x03\xa6\x00\x00
 　　これはまずいかもしれないぜ？」\
 
 \x00  
+<<<<<<< HEAD
 VAR01 \x96\x17 SET01  R\x04\x00 OPER  \x80\x04\x00 
 S_STR SCE032_010\x00 h\x1a\x00 S_END 
 VAR01 TXT1 \xc4A SEQ06 \x03\x95\x00\x00
+=======
+SEQ01 \x96\x17
+SEQ14 
+SEQ08 " R\x04\x00 
+SEQ08  \x80\x04\x00 
+SEQ05 SCE032_010\x00 h\x1a\x00 
+SEQ07  
+SEQ01 
+SEQ10 \xc4A
+SEQ14 
+SEQ11 \x03\x95\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 大げさにいいながら拓司は改めてカンナの両足を脇に抱え、一気\nにペ○スを奥深くまで突き入れた。@
 ぶちゅ、ぶちゅ……と、淫猥な音が結合部から漏れる。@
@@ -157,9 +297,22 @@ VAR01 TXT1 \xc4A SEQ06 \x03\x95\x00\x00
 カンナ\n　「すごい……すごく出ていく……きれいに……」\
 
 \x00  
+<<<<<<< HEAD
 VAR01 \xac\x1a SET01  R\x04\x00 OPER  \x80\x04\x00 
 S_STR SCE032_011\x00 :\x1d\x00 S_END 
 VAR01 TXT1 \xc8A SEQ06 \x03\x90\x00\x00
+=======
+SEQ01 \xac\x1a
+SEQ14 
+SEQ08 " R\x04\x00 
+SEQ08  \x80\x04\x00 
+SEQ05 SCE032_011\x00 :\x1d\x00 
+SEQ07  
+SEQ01 
+SEQ10 \xc8A
+SEQ14 
+SEQ11 \x03\x90\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 拓司のなかで、なにかが唐突に爆発した。@
 胸の底で沸騰しているドロドロしたものがぼっと火柱を上げた。@
@@ -175,9 +328,22 @@ VAR01 TXT1 \xc8A SEQ06 \x03\x90\x00\x00
 カンナに気づかれないようそれに手を伸ばし、そして……\
 
 \x00  
+<<<<<<< HEAD
 VAR01 ~\x1d SET01  R\x04\x00 OPER  \x80\x04\x00 
 S_STR SCE032_012\x00 \xf8\x1f\x00 S_END 
 VAR01 TXT1 \xccA SEQ06 \x03\xab\x00\x00
+=======
+SEQ01 ~\x1d
+SEQ14 
+SEQ08 " R\x04\x00 
+SEQ08  \x80\x04\x00 
+SEQ05 SCE032_012\x00 \xf8\x1f\x00 
+SEQ07  
+SEQ01 
+SEQ10 \xccA
+SEQ14 
+SEQ11 \x03\xab\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 \n/*■CG73　表示（ノンエフェクト）*//*■HCG11　表示（ノンエフェクト）*/\a7,-1,-1,0,\a1,1,202,82,\a6,0,0,0,喉に当てる@
 /*■CG73　表示（ノンエフェクト） *//*■HCG11　表示（ノンエフェクト）*/\a7,-1,-1,0,\a1,1,202,82,\a6,0,0,0,\n横に引く。\pスッとすべらせる。@
@@ -192,14 +358,28 @@ VAR01 TXT1 \xccA SEQ06 \x03\xab\x00\x00
 死ぬぞ！\
 
 \x00\x00\x00  
+<<<<<<< HEAD
 VAR01 <  SET01  R\x04\x00 OPER  \x80\x04\x00 
 S_STR SCE032_013\x00 "#\x00 S_END 
 VAR01 TXT1 \xd0A SEQ06 \x03\x17\x00\x00
+=======
+SEQ01 < 
+SEQ14 
+SEQ08 " R\x04\x00 
+SEQ08  \x80\x04\x00 
+SEQ05 SCE032_013\x00 "#\x00 
+SEQ07  
+SEQ01 
+SEQ10 \xd0A
+SEQ14 
+SEQ11 \x03\x17\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 \nザザザ……ザザッ……\pザアザザザ……@
 ザアアアアア……ザアザアアアアアアア……\
 
 \x00  
+<<<<<<< HEAD
 VAR01 f# SET01  R\x04\x00 OPER  \x80\x04\x00 
 CHOICE_FLAG  R\x04\x00 
 CMD02 TextWindowOff COMMAND_TO_BYTECODE2 \x08$\x00 
@@ -212,3 +392,23 @@ CMD04 TextWindowOnDirect COMMAND_TO_BYTECODE1 \xa2$\x00
 CHOICE_FLAG  R\x04\x00 OPER 
 CMD03 TextClose COMMAND_TO_BYTECODE2 \xd6$\x00 
 F_END
+=======
+SEQ01 f#
+SEQ14 
+SEQ08 " R\x04\x00 
+SEQ08  \x80\x04\x00 
+SEQ06  R\x04\x00 
+SEQ03 TextWindowOff SPC02 \x08$\x00 
+SEQ06   \x00\x00 
+SEQ02 StopCD SPC01 8$\x00 
+SEQ06   
+SEQ01 \xc8\x00
+SEQ14 
+SEQ08 " \x80\x00\x00 
+SEQ02 BgOn SPC03 z$\x00 
+SEQ06  R\x04\x00 
+SEQ08 \x03\x05\x00\x00TextWindowOnDirect SPC01 \xa2$\x00 
+SEQ06  R\x04\x00 
+SEQ04 TextClose SPC02 \xd6$\x00 
+FEND
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23

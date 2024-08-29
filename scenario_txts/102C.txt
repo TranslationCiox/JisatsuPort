@@ -1,15 +1,39 @@
+<<<<<<< HEAD
 F_SRT
 #\x1f\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xd0\x19\x00
 CMD03 SCE102_001\x00 \x06\x00\x00 S_END 
 VAR01 TXT1 \x00\xaf SEQ06 \x03\x11\x00\x00
+=======
+FSTR
+#\x1f\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xd0\x19\x00\x03\x03\x00\x00SCE102_001\x00 \x06\x00\x00 
+SEQ07  
+SEQ01 
+SEQ10 \x00\xaf
+SEQ14 
+SEQ11 \x03\x11\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 \n\n\n\n\n\n\n\n\n\n　　　　　　　　　　　　　『５日目』\
 
 \x00\x00\x00  
+<<<<<<< HEAD
 VAR01 J\x00 SET01 FILE2 .\\Data\\Script\\TextFunc.Fob COMMAND_TO_BYTECODE1 \xae\x00\x00 
 CMD01 TextOn COMMAND_TO_BYTECODE1 \xdc\x00\x00 
 S_STR SCE102_002\x00 \xf8\x00\x00 S_END 
 VAR01 TXT1 \x04\xaf SEQ06 \x03\xa5\x00\x00
+=======
+SEQ01 J\x00
+SEQ14 
+SEQ08 "
+SEQ13 .\\Data\\Script\\TextFunc.Fob SPC01 \xae\x00\x00 
+SEQ02 TextOn SPC01 \xdc\x00\x00 
+SEQ05 SCE102_002\x00 \xf8\x00\x00 
+SEQ07  
+SEQ01 
+SEQ10 \x04\xaf
+SEQ14 
+SEQ11 \x03\xa5\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 早桃の様子がおかしいことに気づいたのは、カンナだった。@
 拓司にそっと耳打ちする。@
@@ -20,11 +44,30 @@ VAR01 TXT1 \x04\xaf SEQ06 \x03\xa5\x00\x00
 \nカンナは肩をすくめただけで無言だった。\
 
 \x00\x00  
+<<<<<<< HEAD
 VAR01 <\x01 SET01  \xae\x00\x00 OPER  \xdc\x00\x00 C_END  
 VAR01 \xc8\x00 SET01 FILE1 .\\Data\\Script\\Bg.Fob COMMAND_TO_BYTECODE3 $\x04\x00 
 CMD02 BgAutoFadeIn COMMAND_TO_BYTECODE3 N\x04\x00 
 S_STR SCE102_003\x00 r\x04\x00 S_END 
 VAR01 TXT1 \x08\xaf SEQ06 \x03SFLAG
+=======
+SEQ01 <\x01
+SEQ14 
+SEQ08 " \xae\x00\x00 
+SEQ08  \xdc\x00\x00 
+SEQ06   
+SEQ01 \xc8\x00
+SEQ14 
+SEQ08 "
+SEQ12 .\\Data\\Script\\Bg.Fob SPC03 $\x04\x00 
+SEQ03 BgAutoFadeIn SPC03 N\x04\x00 
+SEQ05 SCE102_003\x00 r\x04\x00 
+SEQ07  
+SEQ01 
+SEQ10 \x08\xaf
+SEQ14 
+SEQ11 \x03j\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 とりあえず拓司は、早桃の様子を見ることにした。@
 午前中、早桃は元気を装っていたが、午後になると気力も尽きた\nのか、ぐったりと壁にもたれかかって動かなくなった。@
@@ -38,9 +81,22 @@ VAR01 TXT1 \x08\xaf SEQ06 \x03SFLAG
 なたね\n　「……」\
 
 \x00  
+<<<<<<< HEAD
 VAR01 \xb6\x04 SET01  \xae\x00\x00 OPER  \xdc\x00\x00 
 S_STR SCE102_004\x00 \x98\x06\x00 S_END 
 VAR01 TXT1 \x0c\xaf SEQ06 \x03p\x00\x00
+=======
+SEQ01 \xb6\x04
+SEQ14 
+SEQ08 " \xae\x00\x00 
+SEQ08  \xdc\x00\x00 
+SEQ05 SCE102_004\x00 \x98\x06\x00 
+SEQ07  
+SEQ01 
+SEQ10 \x0c\xaf
+SEQ14 
+SEQ11 \x03p\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 拓司\n　「聞こえなかったか？\p　風邪薬をくれ」@
 なたね\n　「風邪薬はあるけれど……本当に早桃さんに必要なのかしら？」\n　　@
@@ -51,9 +107,22 @@ VAR01 TXT1 \x0c\xaf SEQ06 \x03p\x00\x00
 拓司\n　「……」\
 
 \x00  
+<<<<<<< HEAD
 VAR01 \xdc\x06 SET01  \xae\x00\x00 OPER  \xdc\x00\x00 
 S_STR SCE102_005\x00 \xd6\x08\x00 S_END 
 VAR01 TXT1 \x10\xaf SEQ06 \x03\x87\x00\x00
+=======
+SEQ01 \xdc\x06
+SEQ14 
+SEQ08 " \xae\x00\x00 
+SEQ08  \xdc\x00\x00 
+SEQ05 SCE102_005\x00 \xd6\x08\x00 
+SEQ07  
+SEQ01 
+SEQ10 \x10\xaf
+SEQ14 
+SEQ11 \x03\x87\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 なたね\n　「伝染病にかかるなんて、自己管理が足りない証拠よ。@
 　　薬は貴重品よ。\p最終聖戦に向けていくらあっても足りないく\n　　らい。\pそれを、早桃さんのような……不適格者に投下するの\n　　はどうなのかしら？\p　虎菱くんが風邪を引いたのなら、私は\n　　こんなことはいわないわ。\p早桃さんは……ねえ？」@
@@ -62,9 +131,22 @@ VAR01 TXT1 \x10\xaf SEQ06 \x03\x87\x00\x00
 \n意外な声に拓司は動きを止めた。\p錦城が、厳しい顔でなたねをに\nらみつけている。\p虚を突かれたのか、なたねも珍しく驚きの表情\nを浮かべている。\
 
 \x00\x00\x00  
+<<<<<<< HEAD
 VAR01 \x1a\t SET01  \xae\x00\x00 OPER  \xdc\x00\x00 
 S_STR SCE102_006\x00 p\x0b\x00 S_END 
 VAR01 TXT1 \x14\xaf SEQ06 \x03\xae\x00\x00
+=======
+SEQ01 \x1a\t
+SEQ14 
+SEQ08 " \xae\x00\x00 
+SEQ08  \xdc\x00\x00 
+SEQ05 SCE102_006\x00 p\x0b\x00 
+SEQ07  
+SEQ01 
+SEQ10 \x14\xaf
+SEQ14 
+SEQ11 \x03\xae\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 錦城\n　「雲居さん。\pあなたは最初、誰にでも中立だと主張したわよ\n　　ね？\p　だからこそ、私たちはあなたに物資の管理人を任せた\n　　の。\pあなたの地位は、ただそれだけの理由に根拠したものな\n　　の。\pみんなの合意に支えられているもの。\p違うかしら？」@
 なたね\n　「……」@
@@ -74,9 +156,22 @@ VAR01 TXT1 \x14\xaf SEQ06 \x03\xae\x00\x00
 錦城\n　「周りが不公平だと感じたら、それは不公平ということなんじ\n　　ゃないかしら？\p　この場における公平さは、あなたの主観が\n　　決めることじゃないわ。\pそれに－－」\
 
 \x00\x00\x00  
+<<<<<<< HEAD
 VAR01 \xb4\x0b SET01  \xae\x00\x00 OPER  \xdc\x00\x00 
 S_STR SCE102_007\x00 \xa6\x0e\x00 S_END 
 VAR01 TXT1 \x18\xaf SEQ06 \x03\xb2\x00\x00
+=======
+SEQ01 \xb4\x0b
+SEQ14 
+SEQ08 " \xae\x00\x00 
+SEQ08  \xdc\x00\x00 
+SEQ05 SCE102_007\x00 \xa6\x0e\x00 
+SEQ07  
+SEQ01 
+SEQ10 \x18\xaf
+SEQ14 
+SEQ11 \x03\xb2\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 なたね\n　「いえ、それは……」@
 錦城\n　「－－それに！」@
@@ -86,9 +181,22 @@ VAR01 TXT1 \x18\xaf SEQ06 \x03\xb2\x00\x00
 \nなたねの顔が青ざめていった。\pなにか反論をしようとするが、口\nがぱくぱくと震えるだけで言葉が出てこない。\pまるで、あふれで\nる言葉が喉に詰まって、窒息寸前であるかのように見える。\
 
 \x00  
+<<<<<<< HEAD
 VAR01 \xea\x0e SET01  \xae\x00\x00 OPER  \xdc\x00\x00 
 S_STR SCE102_008\x00 \xec\x11\x00 S_END 
 VAR01 TXT1 \x1c\xaf SEQ06 \x03\x81\x00\x00
+=======
+SEQ01 \xea\x0e
+SEQ14 
+SEQ08 " \xae\x00\x00 
+SEQ08  \xdc\x00\x00 
+SEQ05 SCE102_008\x00 \xec\x11\x00 
+SEQ07  
+SEQ01 
+SEQ10 \x1c\xaf
+SEQ14 
+SEQ11 \x03\x81\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 錦城\n　「わかってもらえたかしら？\p　だったら黙って薬を持ってきて\n　　ちょうだい。\p……さあ！」@
 \nなたねは完全に打ちのめされた様子だった。\p一同の冷たい視線か\nら逃れるように背を向けて、のっそりと準備室へと入っていく。@
@@ -98,9 +206,22 @@ VAR01 TXT1 \x1c\xaf SEQ06 \x03\x81\x00\x00
 \n紅葉\n　「……なんなのよ、あの態度！」\
 
 \x00\x00\x00  
+<<<<<<< HEAD
 VAR01 0\x12 SET01  \xae\x00\x00 OPER  \xdc\x00\x00 
 S_STR SCE102_009\x00 n\x14\x00 S_END 
 VAR01 TXT1  \xaf SEQ06 \x03\x9c\x00\x00
+=======
+SEQ01 0\x12
+SEQ14 
+SEQ08 " \xae\x00\x00 
+SEQ08  \xdc\x00\x00 
+SEQ05 SCE102_009\x00 n\x14\x00 
+SEQ07  
+SEQ01 
+SEQ10  \xaf
+SEQ14 
+SEQ11 \x03\x9c\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 床に散らばった風邪薬を拾い集めながら、紅葉が舌打ちした。@
 \n紅葉\n　「拓司、あの子、やっぱりおかしいよ。\pあんな子に鍵の管理任\n　　せておくの、不安だな……」@
@@ -110,11 +231,27 @@ VAR01 TXT1  \xaf SEQ06 \x03\x9c\x00\x00
 しかし、それが宇宙人のしわざであるだとか、地底にいる怪物か\nら放たれているだとか、果ては弱い者は死んで当然とだとか、そ\nういった部分になると話は別だ。\p妄想の産物であるとしか思えな\nい。\
 
 \x00  
+<<<<<<< HEAD
 VAR01 \xb2\x14 SET01  \xae\x00\x00 OPER  \xdc\x00\x00 
 CHOICE_FLAG FILE1 .\\Data\\Script\\Bgm.Fob COMMAND_TO_BYTECODE2 \\\x17\x00 
 CMD01 StopCD COMMAND_TO_BYTECODE1 \x86\x17\x00 
 S_STR SCE102_010\x00 \xa2\x17\x00 S_END 
 VAR01 TXT1 $\xaf SEQ06 \x03C\x00\x00
+=======
+SEQ01 \xb2\x14
+SEQ14 
+SEQ08 " \xae\x00\x00 
+SEQ08  \xdc\x00\x00 
+SEQ06 
+SEQ12 .\\Data\\Script\\Bgm.Fob SPC02 \\\x17\x00 
+SEQ02 StopCD SPC01 \x86\x17\x00 
+SEQ05 SCE102_010\x00 \xa2\x17\x00 
+SEQ07  
+SEQ01 
+SEQ10 $\xaf
+SEQ14 
+SEQ11 \x03C\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 紅葉\n　「……ねえ、拓司。\p鍵、とっちゃおうか？」@
 拓司\n　「え？」@
@@ -124,14 +261,32 @@ VAR01 TXT1 $\xaf SEQ06 \x03C\x00\x00
 　　そのほうが、絶対安全だよ？」\
 
 \x00  
+<<<<<<< HEAD
 VAR01 \xe6\x17 SET01  \xae\x00\x00 OPER  \xdc\x00\x00 
 CHOICE_FLAG \x03\x10\x00\x00
+=======
+SEQ01 \xe6\x17
+SEQ14 
+SEQ08 " \xae\x00\x00 
+SEQ08  \xdc\x00\x00 
+SEQ06 \x03\x10\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
 CHOICE
 「それはやめておこう」\n「いいかもしれないな」\n\l0,2,
 ENDCHOICE
 
 \x00  
+<<<<<<< HEAD
 VAR01 ,\x19 SET01  \xae\x00\x00 OPER  \xdc\x00\x00 
 CHOICE_FLAG  \xae\x00\x00 OPER 
 CMD03 TextClose COMMAND_TO_BYTECODE2 \xb2\x19\x00 
 F_END
+=======
+SEQ01 ,\x19
+SEQ14 
+SEQ08 " \xae\x00\x00 
+SEQ08  \xdc\x00\x00 
+SEQ06  \xae\x00\x00 
+SEQ04 TextClose SPC02 \xb2\x19\x00 
+FEND
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23

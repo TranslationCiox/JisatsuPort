@@ -1,7 +1,17 @@
+<<<<<<< HEAD
 F_SRT
 \x0f\x12\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00d\x0f\x00
 CMD03 SCE031_001\x00 \x06\x00\x00 S_END 
 VAR01 TXT1 \x10@ SEQ06 \x03m\x00\x00
+=======
+FSTR
+\x0f\x12\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00d\x0f\x00\x03\x03\x00\x00SCE031_001\x00 \x06\x00\x00 
+SEQ07  
+SEQ01 
+SEQ10 \x10@
+SEQ14 
+SEQ11 \x03m\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 スーパーのビニール袋に野良猫を詰め、廃墟となった五号棟の５階\nの窓からそれを放り投げていた月代カンナ。@
 どうして、という拓司の質問に、カンナはいまと同じ様な哄笑を返\nした。@
@@ -12,10 +22,24 @@ VAR01 TXT1 \x10@ SEQ06 \x03m\x00\x00
 \nその言葉を聞いて－－そして目の奥のどんよりとした無感動を見て\n－－この少女が自分の同類であることを、拓司は一瞬にして悟った\nのだった。\
 
 \x00\x00\x00  
+<<<<<<< HEAD
 VAR01 J\x00 SET01 FILE2 .\\Data\\Script\\TextFunc.Fob COMMAND_TO_BYTECODE1 \x1e\x02\x00 
 CMD01 TextOn COMMAND_TO_BYTECODE1 L\x02\x00 
 S_STR SCE031_002\x00 h\x02\x00 S_END 
 VAR01 TXT1 \x14@ SEQ06 \x03\x90\x00\x00
+=======
+SEQ01 J\x00
+SEQ14 
+SEQ08 "
+SEQ13 .\\Data\\Script\\TextFunc.Fob SPC01 \x1e\x02\x00 
+SEQ02 TextOn SPC01 L\x02\x00 
+SEQ05 SCE031_002\x00 h\x02\x00 
+SEQ07  
+SEQ01 
+SEQ10 \x14@
+SEQ14 
+SEQ11 \x03\x90\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 \n　月代カンナのなかにある暗い穴に、拓司はまっさかさまに落ちて\n　いった。@
 　たとえばインターネットのデスサイト。@
@@ -29,9 +53,22 @@ VAR01 TXT1 \x14@ SEQ06 \x03\x90\x00\x00
 　そこにあるのは確実な死のかたちであり、生きている自分には明\n　らかに所属していないものたちだった。\p拓司は取り憑かれたよう\n　にパソコンの前に張り付き、電脳の波に流されてくる情報をむさ\n　ぼった。\
 
 \x00  
+<<<<<<< HEAD
 VAR01 \xac\x02 SET01  \x1e\x02\x00 OPER  L\x02\x00 
 S_STR SCE031_003\x00 &\x05\x00 S_END 
 VAR01 TXT1 \x18@ SEQ06 \x03\xe1\x00\x00
+=======
+SEQ01 \xac\x02
+SEQ14 
+SEQ08 " \x1e\x02\x00 
+SEQ08  L\x02\x00 
+SEQ05 SCE031_003\x00 &\x05\x00 
+SEQ07  
+SEQ01 
+SEQ10 \x18@
+SEQ14 
+SEQ11 \x03\xe1\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 　月代カンナは、続いて猟奇殺人事件の本を拓司にリリースした。@
 　しっかりとしたルポルタージュもあれば、興味本位のゲテモノも\n　あった。@
@@ -43,9 +80,22 @@ VAR01 TXT1 \x18@ SEQ06 \x03\xe1\x00\x00
 　その他大勢への、陳腐な成り下がり。\
 
 \x00  
+<<<<<<< HEAD
 VAR01 j\x05 SET01  \x1e\x02\x00 OPER  L\x02\x00 
 S_STR SCE031_004\x00 (\t\x00 S_END 
 VAR01 TXT1 \x1c@ SEQ06 \x03\xcb\x00\x00
+=======
+SEQ01 j\x05
+SEQ14 
+SEQ08 " \x1e\x02\x00 
+SEQ08  L\x02\x00 
+SEQ05 SCE031_004\x00 (\t\x00 
+SEQ07  
+SEQ01 
+SEQ10 \x1c@
+SEQ14 
+SEQ11 \x03\xcb\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 拓司は自ら志願して、団地からの『猫落とし』をカンナと一緒に行\nった。@
 強烈な死の体験だった。@
@@ -57,6 +107,7 @@ VAR01 TXT1 \x1c@ SEQ06 \x03\xcb\x00\x00
 そのとき、拓司は初めて女の首を絞めたのだった。\
 
 \x00\x00\x00  
+<<<<<<< HEAD
 VAR01 l\t SET01  \x1e\x02\x00 OPER  L\x02\x00 
 CHOICE_FLAG  \x1e\x02\x00 OPER 
 CMD04 TextWindowOffDirect \xde\x0c\x00 C_END  
@@ -75,3 +126,58 @@ CMD04 TextWindowOnDirect COMMAND_TO_BYTECODE1 \x12\x0f\x00
 CHOICE_FLAG  \x1e\x02\x00 OPER 
 CMD03 TextClose COMMAND_TO_BYTECODE2 F\x0f\x00 
 F_END
+=======
+SEQ01 l\t
+SEQ14 
+SEQ08 " \x1e\x02\x00 
+SEQ08  L\x02\x00 
+SEQ06  \x1e\x02\x00 
+SEQ08 \x03\x05\x00\x00TextWindowOffDirect \xde\x0c\x00 
+SEQ06   
+SEQ01 \xca\x00
+SEQ14 
+SEQ08 "
+SEQ12 .\\Data\\Script\\Bg.Fob SPC03  \r\x00 
+SEQ02 BgOn SPC03 J\r\x00 
+SEQ06   
+SEQ01 \x01\x00
+SEQ14 
+SEQ08 "
+SEQ13 .\\Data\\Script\\TextFunc.fob SPC01 \x80\r\x00 
+SEQ04 WaitTime SPC03 \xae\r\x00 
+SEQ06   
+SEQ01 \xc8\x00
+SEQ14 
+SEQ08 "  \r\x00 
+SEQ08  J\r\x00 
+SEQ06   
+SEQ01 \x01\x00
+SEQ14 
+SEQ08 " \x80\r\x00 
+SEQ08  \xae\r\x00 
+SEQ06   
+SEQ01 \xca\x00
+SEQ14 
+SEQ08 "  \r\x00 
+SEQ08  J\r\x00 
+SEQ06   
+SEQ01 \x01\x00
+SEQ14 
+SEQ08 " \x80\r\x00 
+SEQ08  \xae\r\x00 
+SEQ06   
+SEQ01 \xc8\x00
+SEQ14 
+SEQ08 "  \r\x00 
+SEQ08  J\r\x00 
+SEQ06   
+SEQ01 \x01\x00
+SEQ14 
+SEQ08 " \x80\r\x00 
+SEQ08  \xae\r\x00 
+SEQ06  \x1e\x02\x00 
+SEQ08 \x03\x05\x00\x00TextWindowOnDirect SPC01 \x12\x0f\x00 
+SEQ06  \x1e\x02\x00 
+SEQ04 TextClose SPC02 F\x0f\x00 
+FEND
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23

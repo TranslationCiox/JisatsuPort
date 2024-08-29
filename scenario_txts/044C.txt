@@ -1,19 +1,49 @@
+<<<<<<< HEAD
 F_SRT
 x(\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\x92!\x00  
 VAR01 \xc8\x00 SET01 FILE1 .\\Data\\Script\\Bg.Fob COMMAND_TO_BYTECODE3  \x00\x00 
 CMD02 BgAutoFadeIn COMMAND_TO_BYTECODE3 J\x00\x00 
 S_STR SCE044_001\x00 n\x00\x00 S_END 
 VAR01 TXT1 `T SEQ06 \x03V\x00\x00
+=======
+FSTR
+x(\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\x92!\x00  
+SEQ01 \xc8\x00
+SEQ14 
+SEQ08 "
+SEQ12 .\\Data\\Script\\Bg.Fob SPC03  \x00\x00 
+SEQ03 BgAutoFadeIn SPC03 J\x00\x00 
+SEQ05 SCE044_001\x00 n\x00\x00 
+SEQ07  
+SEQ01 
+SEQ10 `T
+SEQ14 
+SEQ11 \x03V\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 職員室で、錦城が「これよ」と指さしたダンボール箱は、意外と\n小さかった。@
 ところが、何が詰まっているのか、大きさのわりにズシリと重い。\n\p１階の職員室から４階分の階段を上るのはなかなか骨だった。@
 \n錦城\n　「はいはい頑張って。男の子でしょ？　うふふ……」\n\p拓司\n　「勘弁っすよ……どこまで運ぶんですか？」@
 錦城\n　「理科準備室」\w\z
 \x00  
+<<<<<<< HEAD
 VAR01 \xb2\x00 SET01 FILE2 .\\Data\\Script\\TextFunc.Fob COMMAND_TO_BYTECODE1 *\x02\x00 
 CMD01 TextOn COMMAND_TO_BYTECODE1 X\x02\x00 
 S_STR SCE044_002\x00 t\x02\x00 S_END 
 VAR01 TXT1 dT SEQ06 \x03y\x00\x00
+=======
+SEQ01 \xb2\x00
+SEQ14 
+SEQ08 "
+SEQ13 .\\Data\\Script\\TextFunc.Fob SPC01 *\x02\x00 
+SEQ02 TextOn SPC01 X\x02\x00 
+SEQ05 SCE044_002\x00 t\x02\x00 
+SEQ07  
+SEQ01 
+SEQ10 dT
+SEQ14 
+SEQ11 \x03y\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 　理科準備室は、旧校舎の最上階、４階にある。@
 ４階－－理科実験室や視聴覚室といった特別教室が並ぶこの階の\n利用価値は、半年前の新校舎完成によってほとんど消え失せてい\nた。@
@@ -22,10 +52,28 @@ VAR01 TXT1 dT SEQ06 \x03y\x00\x00
 \n錦城は鍵を使って理科実験室のドアを開け、拓司をそこに導き入\nれた。@
 締め切られていた実験室の中にはむっと熱気がこもり、息苦しい\nぐらいだった。\w\z
 \x00  
+<<<<<<< HEAD
 VAR01 \xb8\x02 SET01  *\x02\x00 OPER  X\x02\x00 C_END  
 VAR01 \x0f\x00 SET01   \x00\x00 OPER  J\x00\x00 
 S_STR SCE044_003\x00 \n\x05\x00 S_END 
 VAR01 TXT1 hT SEQ06 \x03o\x00\x00
+=======
+SEQ01 \xb8\x02
+SEQ14 
+SEQ08 " *\x02\x00 
+SEQ08  X\x02\x00 
+SEQ06   
+SEQ01 \x0f\x00
+SEQ14 
+SEQ08 "  \x00\x00 
+SEQ08  J\x00\x00 
+SEQ05 SCE044_003\x00 \n\x05\x00 
+SEQ07  
+SEQ01 
+SEQ10 hT
+SEQ14 
+SEQ11 \x03o\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 錦城\n　「ご苦労様。そのへんの隅に置いてくれればいいわ」@
 拓司\n　「よっこら……せっと」@
@@ -37,28 +85,72 @@ VAR01 TXT1 hT SEQ06 \x03o\x00\x00
 錦城\n　「プリント。紙の束が詰まってるのよ」@
 拓司\n　「はあ。でも、いいんですか、こんなところに荷物置いて」\w\z
 \x00  
+<<<<<<< HEAD
 VAR01 N\x05 SET01  *\x02\x00 OPER  X\x02\x00 
 S_STR SCE044_004\x00 D\x07\x00 S_END 
 VAR01 TXT1 lT SEQ06 \x03L\x00\x00
+=======
+SEQ01 N\x05
+SEQ14 
+SEQ08 " *\x02\x00 
+SEQ08  X\x02\x00 
+SEQ05 SCE044_004\x00 D\x07\x00 
+SEQ07  
+SEQ01 
+SEQ10 lT
+SEQ14 
+SEQ11 \x03L\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 錦城\n　「いいのよ。ここだけの話だけれど、他の先生方もやっている\n　　ことなの。\pなんでもかんでも置いておくには、職員室は狭\n　　すぎて。\pだから、４階は秘密の物置と化している、と。\n　　そういうわけ」@
 拓司\n　「はあ」@
 錦城\n　「それにね、私、ここ、嫌いじゃないのよ」@
 拓司\n　「え？」\w\z
 \x00\x00\x00  
+<<<<<<< HEAD
 VAR01 \x88\x07 SET01  *\x02\x00 OPER  X\x02\x00 C_END  
 VAR01 \xc8\x00 SET01   \x00\x00 OPER  J\x00\x00 
 S_STR SCE044_005\x00 &\t\x00 S_END 
 VAR01 TXT1 pT SEQ06 \x03?\x00\x00
+=======
+SEQ01 \x88\x07
+SEQ14 
+SEQ08 " *\x02\x00 
+SEQ08  X\x02\x00 
+SEQ06   
+SEQ01 \xc8\x00
+SEQ14 
+SEQ08 "  \x00\x00 
+SEQ08  J\x00\x00 
+SEQ05 SCE044_005\x00 &\t\x00 
+SEQ07  
+SEQ01 
+SEQ10 pT
+SEQ14 
+SEQ11 \x03?\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 　錦城はそういって窓まで歩いてゆき、鍵を外して窓をスライド\nさせた。@
 堰を切ったように、爽やかな初夏の風が流れ込んでくる。@
 部屋の中の熱気が、風に圧されて追い出されてゆく。@
 風は、錦城の長い髪をさらさらと揺らして、やがてぴたりと止ん\nだ。\w\z
 \x00  
+<<<<<<< HEAD
 VAR01 j\t SET01  *\x02\x00 OPER  X\x02\x00 
 S_STR SCE044_006\x00 \xa0\n\x00 S_END 
 VAR01 TXT1 tT SEQ06 \x03g\x00\x00
+=======
+SEQ01 j\t
+SEQ14 
+SEQ08 " *\x02\x00 
+SEQ08  X\x02\x00 
+SEQ05 SCE044_006\x00 \xa0\n\x00 
+SEQ07  
+SEQ01 
+SEQ10 tT
+SEQ14 
+SEQ11 \x03g\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 錦城\n　「理科実験室って、どこか懐かしい感じがする。@
 　　学生の時にね、実験室で……ふふふ」@
@@ -70,11 +162,27 @@ VAR01 TXT1 tT SEQ06 \x03g\x00\x00
 錦城\n　「うーん……じゃあ、ちょっとドア閉めてきてくれる？@
 　　ちょっと恥ずかしい話だから」\w\z
 \x00  
+<<<<<<< HEAD
 VAR01 \xe4\n SET01  *\x02\x00 OPER  X\x02\x00 
 CHOICE_FLAG FILE1 .\\Data\\Script\\Bgm.Fob COMMAND_TO_BYTECODE2 \xba\x0c\x00 
 CMD01 StopCD COMMAND_TO_BYTECODE1 \xe4\x0c\x00 
 S_STR SCE044_007\x00 \x00\r\x00 S_END 
 VAR01 TXT1 xT SEQ06 \x03c\x00\x00
+=======
+SEQ01 \xe4\n
+SEQ14 
+SEQ08 " *\x02\x00 
+SEQ08  X\x02\x00 
+SEQ06 
+SEQ12 .\\Data\\Script\\Bgm.Fob SPC02 \xba\x0c\x00 
+SEQ02 StopCD SPC01 \xe4\x0c\x00 
+SEQ05 SCE044_007\x00 \x00\r\x00 
+SEQ07  
+SEQ01 
+SEQ10 xT
+SEQ14 
+SEQ11 \x03c\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 　錦城はいたずらっぽく笑った。@
 いかにも教師然とした錦城しか見たことのない拓司は、なんだか\nどぎまぎしてしまう。@
@@ -82,9 +190,22 @@ VAR01 TXT1 xT SEQ06 \x03c\x00\x00
 振り返ると錦城は、実験用の大きなテーブルに腰を下ろしている\n。@
 拓司はどこに座るべきか一瞬悩んだが、離れすぎるのもおかしい\nような気がして、錦城の向かいのテーブルに同じように腰を下ろ\nした。\w\z
 \x00  
+<<<<<<< HEAD
 VAR01 D\r SET01  *\x02\x00 OPER  X\x02\x00 
 S_STR SCE044_008\x00 \n\x0f\x00 S_END 
 VAR01 TXT1 |T SEQ06 \x03}\x00\x00
+=======
+SEQ01 D\r
+SEQ14 
+SEQ08 " *\x02\x00 
+SEQ08  X\x02\x00 
+SEQ05 SCE044_008\x00 \n\x0f\x00 
+SEQ07  
+SEQ01 
+SEQ10 |T
+SEQ14 
+SEQ11 \x03}\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 錦城\n　「そうだな、どこから話そうかな」@
 拓司\n　「……」@
@@ -94,9 +215,22 @@ VAR01 TXT1 |T SEQ06 \x03}\x00\x00
 錦城\n　「そうね。\p青春時代。\pそれでね、男の子と初めてキスした\n　　のが、実験室だったの」@
 拓司\n　「……」\w\z
 \x00\x00\x00  
+<<<<<<< HEAD
 VAR01 N\x0f SET01  *\x02\x00 OPER  X\x02\x00 
 S_STR SCE044_009\x00 |\x11\x00 S_END 
 VAR01 TXT1 \x80T SEQ06 \x03\x94\x00\x00
+=======
+SEQ01 N\x0f
+SEQ14 
+SEQ08 " *\x02\x00 
+SEQ08  X\x02\x00 
+SEQ05 SCE044_009\x00 |\x11\x00 
+SEQ07  
+SEQ01 
+SEQ10 \x80T
+SEQ14 
+SEQ11 \x03\x94\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 錦城\n　「六限最後の授業が化学の実験でね。私と、その子が、あとか\n　　たづけ役に指名されてしまって。@
 　　でも、嬉しかったな。\pその子のこと、ずっと好きだったか\n　　ら。\pそれまで、話もしたことなかったんだけどね。@
@@ -106,9 +240,22 @@ VAR01 TXT1 \x80T SEQ06 \x03\x94\x00\x00
 錦城\n　「しばらく夢中で話してた。\pそうしたら、突然、ぱたっと話\n　　が途切れて……\p本当にぱったりと途切れちゃって。@
 　　どうしよう、ってドキドキし始めちゃってね、こう、俯いて\n　　いたら、その子がこうやって立ち上がって－－」\w\z
 \x00\x00\x00  
+<<<<<<< HEAD
 VAR01 \xc0\x11 SET01  *\x02\x00 OPER  X\x02\x00 
 S_STR SCE044_010\x00 J\x14\x00 S_END 
 VAR01 TXT1 \x84T SEQ06 \x038\x00\x00
+=======
+SEQ01 \xc0\x11
+SEQ14 
+SEQ08 " *\x02\x00 
+SEQ08  X\x02\x00 
+SEQ05 SCE044_010\x00 J\x14\x00 
+SEQ07  
+SEQ01 
+SEQ10 \x84T
+SEQ14 
+SEQ11 \x038\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 　錦城はすっと立ち上がって身体を移し、拓司のすぐ隣に座りな\nおした。@
 ほとんど肩と肩が触れ合うくらいの距離だ。@
@@ -116,9 +263,22 @@ VAR01 TXT1 \x84T SEQ06 \x038\x00\x00
 \n錦城\n　「－－キスしたの」@
 拓司\n　「……」\w\z
 \x00\x00\x00  
+<<<<<<< HEAD
 VAR01 \x8e\x14 SET01  *\x02\x00 OPER  X\x02\x00 
 S_STR SCE044_011\x00 \xa8\x15\x00 S_END 
 VAR01 TXT1 \x88T SEQ06 \x03g\x00\x00
+=======
+SEQ01 \x8e\x14
+SEQ14 
+SEQ08 " *\x02\x00 
+SEQ08  X\x02\x00 
+SEQ05 SCE044_011\x00 \xa8\x15\x00 
+SEQ07  
+SEQ01 
+SEQ10 \x88T
+SEQ14 
+SEQ11 \x03g\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 　拓司はなんと言えばいいのかわからず、どきまぎとうつむくし\nかなかった。@
 「ハイ、おしまい」と言ってくれれば、「いい話ですね」と返せ\nるような気がした。@
@@ -128,9 +288,22 @@ VAR01 TXT1 \x88T SEQ06 \x03g\x00\x00
 沈黙に耐えかねた拓司がいいかけたときだった。@
 錦城の手がすうっと延び、拓司の腿のあたりにそっと重ねられ\nた。\w\z
 \x00  
+<<<<<<< HEAD
 VAR01 \xec\x15 SET01  *\x02\x00 OPER  X\x02\x00 
 S_STR SCE044_012\x00 \xc2\x17\x00 S_END 
 VAR01 TXT1 \x8cT SEQ06 \x03<\x00\x00
+=======
+SEQ01 \xec\x15
+SEQ14 
+SEQ08 " *\x02\x00 
+SEQ08  X\x02\x00 
+SEQ05 SCE044_012\x00 \xc2\x17\x00 
+SEQ07  
+SEQ01 
+SEQ10 \x8cT
+SEQ14 
+SEQ11 \x03<\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 拓司\n　「？！」@
 錦城\n　「虎菱くん？」@
@@ -139,9 +312,22 @@ VAR01 TXT1 \x8cT SEQ06 \x03<\x00\x00
 拓司\n　「いえ……はあ……まあ、ご想像にお任せします」@
 錦城\n　「ふふ……人の経験は聞けても、自分の経験は話せない？」\w\z
 \x00\x00\x00  
+<<<<<<< HEAD
 VAR01 \x06\x18 SET01  *\x02\x00 OPER  X\x02\x00 
 S_STR SCE044_013\x00 0\x19\x00 S_END 
 VAR01 TXT1 \x90T SEQ06 \x03^\x00\x00
+=======
+SEQ01 \x06\x18
+SEQ14 
+SEQ08 " *\x02\x00 
+SEQ08  X\x02\x00 
+SEQ05 SCE044_013\x00 0\x19\x00 
+SEQ07  
+SEQ01 
+SEQ10 \x90T
+SEQ14 
+SEQ11 \x03^\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 拓司\n　「はあ。まあ。パス１ってことで」@
 錦城\n　「ふうん。それじゃあ、別の質問」@
@@ -153,18 +339,44 @@ VAR01 TXT1 \x90T SEQ06 \x03^\x00\x00
 錦城\n　「それじゃあ……私のこと、おばさんだと思う？」@
 拓司\n　「思わないですよ」\w\z
 \x00  
+<<<<<<< HEAD
 VAR01 t\x19 SET01  *\x02\x00 OPER  X\x02\x00 
 S_STR SCE044_014\x00 &\x1b\x00 S_END 
 VAR01 TXT1 \x94T SEQ06 \x03:\x00\x00
+=======
+SEQ01 t\x19
+SEQ14 
+SEQ08 " *\x02\x00 
+SEQ08  X\x02\x00 
+SEQ05 SCE044_014\x00 &\x1b\x00 
+SEQ07  
+SEQ01 
+SEQ10 \x94T
+SEQ14 
+SEQ11 \x03:\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 拓司は軽くいった。@
 世辞ではなく、錦城は若い。@
 実際は２０代後半なのだろうが、半ばくらいにしか見えない。@
 そしていま、柔らかな笑みを浮かべている錦城は、２０歳そこそ\nこといわれても信じてしまうような若々しさがあった。\w\z
 \x00\x00\x00  
+<<<<<<< HEAD
 VAR01 j\x1b SET01  *\x02\x00 OPER  X\x02\x00 
 S_STR SCE044_015\x00 \x8c\x1c\x00 S_END 
 VAR01 TXT1 \x98T SEQ06 \x03T\x00\x00
+=======
+SEQ01 j\x1b
+SEQ14 
+SEQ08 " *\x02\x00 
+SEQ08  X\x02\x00 
+SEQ05 SCE044_015\x00 \x8c\x1c\x00 
+SEQ07  
+SEQ01 
+SEQ10 \x98T
+SEQ14 
+SEQ11 \x03T\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 拓司\n　「先生、歳のこと気にしてるんですか？」@
 錦城\n　「ふふふ……まあね。\p君たちみたいな若い子のなかにいると\n　　……ね」」@
@@ -174,9 +386,22 @@ VAR01 TXT1 \x98T SEQ06 \x03T\x00\x00
 錦城\n　「本当かしら？」@
 拓司\n　「本当ですってば」\w\z
 \x00  
+<<<<<<< HEAD
 VAR01 \xd0\x1c SET01  *\x02\x00 OPER  X\x02\x00 
 S_STR SCE044_016\x00 Z\x1e\x00 S_END 
 VAR01 TXT1 \x9cT SEQ06 \x034\x00\x00
+=======
+SEQ01 \xd0\x1c
+SEQ14 
+SEQ08 " *\x02\x00 
+SEQ08  X\x02\x00 
+SEQ05 SCE044_016\x00 Z\x1e\x00 
+SEQ07  
+SEQ01 
+SEQ10 \x9cT
+SEQ14 
+SEQ11 \x034\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 錦城\n　「じゃあ、たとえば、先生を見て、いやらしい気持ちになった\n　　りする？」@
 拓司\n　「え？」@
@@ -184,9 +409,22 @@ VAR01 TXT1 \x9cT SEQ06 \x034\x00\x00
 \n錦城は冗談っぽく笑っている。@
 拓司は頭を掻いて、いった。\w\z
 \x00  
+<<<<<<< HEAD
 VAR01 \x9e\x1e SET01  *\x02\x00 OPER  X\x02\x00 
 S_STR SCE044_017\x00 \xa8\x1f\x00 S_END 
 VAR01 TXT1 \xa0T SEQ06 \x03<\x00\x00
+=======
+SEQ01 \x9e\x1e
+SEQ14 
+SEQ08 " *\x02\x00 
+SEQ08  X\x02\x00 
+SEQ05 SCE044_017\x00 \xa8\x1f\x00 
+SEQ07  
+SEQ01 
+SEQ10 \xa0T
+SEQ14 
+SEQ11 \x03<\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 拓司\n　「……まあ、おれも男なんで。きれいな人を見れば、\n　　そういう気持ちになったりはします」@
 錦城\n　「そうなんだ」@
@@ -194,9 +432,21 @@ VAR01 TXT1 \xa0T SEQ06 \x03<\x00\x00
 錦城\n　「じゃあ、先生のこと考えて、オナニーしたこと、ある？」@
 拓司\n　「……」\w\z
 \x00  
+<<<<<<< HEAD
 VAR01 \xec\x1f SET01  *\x02\x00 OPER  X\x02\x00 
 CHOICE_FLAG  *\x02\x00 OPER 
 CMD03 TextClose COMMAND_TO_BYTECODE2 "!\x00 
 CHOICE_FLAG \x03\t\x00\x00.\\Data\\Script\\Scenario\\044subC.Fob COMMAND_TO_BYTECODE1 B!\x00 
 CMD01 start COMMAND_TO_BYTECODE2 x!\x00 
 F_END
+=======
+SEQ01 \xec\x1f
+SEQ14 
+SEQ08 " *\x02\x00 
+SEQ08  X\x02\x00 
+SEQ06  *\x02\x00 
+SEQ04 TextClose SPC02 "!\x00 
+SEQ06 \x03\t\x00\x00.\\Data\\Script\\Scenario\\044subC.Fob SPC01 B!\x00 
+SEQ02 start SPC02 x!\x00 
+FEND
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23

@@ -1,9 +1,24 @@
+<<<<<<< HEAD
 F_SRT
 \xc5\x13\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00n\x10\x00  
 VAR01 \xc9\x00 SET01 FILE1 .\\Data\\Script\\Bg.Fob COMMAND_TO_BYTECODE3  \x00\x00 
 CMD02 BgAutoFadeIn COMMAND_TO_BYTECODE3 J\x00\x00 
 S_STR SCE235_001\x00 n\x00\x00 S_END 
 VAR01 TXT1 \xd0~\x01\x0c\x00\x00\x00\x00"\x03\x19\x00\x00
+=======
+FSTR
+\xc5\x13\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00n\x10\x00  
+SEQ01 \xc9\x00
+SEQ14 
+SEQ08 "
+SEQ12 .\\Data\\Script\\Bg.Fob SPC03  \x00\x00 
+SEQ03 BgAutoFadeIn SPC03 J\x00\x00 
+SEQ05 SCE235_001\x00 n\x00\x00 
+SEQ07  
+SEQ01 
+SEQ10 \xd0~\x01\x0c
+SEQ11 \x03\x19\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 一瞬、白い部屋の天井が見えた。@
 くるくる回る換気ファン。@
@@ -12,6 +27,7 @@ VAR01 TXT1 \xd0~\x01\x0c\x00\x00\x00\x00"\x03\x19\x00\x00
 悪夢。\
 
 \x00\x00\x00  
+<<<<<<< HEAD
 VAR01 \xb2\x00 SET01 FILE2 .\\Data\\Script\\TextFunc.Fob COMMAND_TO_BYTECODE1 6\x01\x00 
 CMD01 TextOn COMMAND_TO_BYTECODE1 d\x01\x00 
 S_STR SCE235_002\x00 \x80\x01\x00 S_END 
@@ -34,6 +50,58 @@ VAR01 OPER \x0c
 SEQ05  F\x02\x00 
 CMD01 SeStop COMMAND_TO_BYTECODE1 \x1c\x04\x00 
 CHOICE_FLAG \x03\x8c\x00\x00
+=======
+SEQ01 \xb2\x00
+SEQ14 
+SEQ08 "
+SEQ13 .\\Data\\Script\\TextFunc.Fob SPC01 6\x01\x00 
+SEQ02 TextOn SPC01 d\x01\x00 
+SEQ05 SCE235_002\x00 \x80\x01\x00 
+SEQ07  
+SEQ01 
+SEQ10 \xd4~\x01\x0c
+SEQ11  6\x01\x00 
+SEQ08 \x03\x05\x00\x00TextWindowOffDirect \xd0\x01\x00 
+SEQ06   
+SEQ01 
+SEQ08 \x0c
+SEQ08 "  \x04\x00\x00\r\x00\x00 \x1b\x00
+SEQ14 
+SEQ08 "  \x08\x00\x00\r\x00\x00 \x00\x00\x00
+SEQ14 
+SEQ08 "
+SEQ12 .\\Data\\Script\\Bgm.Fob SPC02 F\x02\x00 
+SEQ02 SePlay SPC01 p\x02\x00 
+SEQ06   
+SEQ01 \xc8\x00
+SEQ14 
+SEQ08 "  \x00\x00 
+SEQ02 BgOn SPC03 \xb2\x02\x00 
+SEQ06   
+SEQ01 <\x00
+SEQ14 
+SEQ08 "
+SEQ13 .\\Data\\Script\\TextFunc.fob SPC01 \xe8\x02\x00 
+SEQ04 WaitTime SPC03 \x16\x03\x00 
+SEQ06   
+SEQ01 \xc8\x00
+SEQ14 
+SEQ08 "  \x00\x00 
+SEQ03 BgNormalFadeIn SPC01 \\\x03\x00 
+SEQ06   
+SEQ01 \x05\x01
+SEQ14 
+SEQ08 " F\x02\x00 
+SEQ02 PlayCD SPC01 \xa6\x03\x00 
+SEQ06  6\x01\x00 
+SEQ08 \x03\x05\x00\x00TextWindowOnDirect SPC01 \xce\x03\x00 
+SEQ06   
+SEQ01 
+SEQ08 \x0c
+SEQ08 " F\x02\x00 
+SEQ02 SeStop SPC01 \x1c\x04\x00 
+SEQ06 \x03\x8c\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 　うっすらと目を開けると、桃色の塊が動いているのが見えた。@
 \n御堂\n　「おら、おら、おら、もっと泣けよ！\p　なに諦めてんだよ！」@
@@ -44,10 +112,27 @@ CHOICE_FLAG \x03\x8c\x00\x00
 \n……火傷？\
 
 \x00  
+<<<<<<< HEAD
 VAR01 8\x04 SET01  6\x01\x00 OPER  d\x01\x00 C_END  
 VAR01 [\x00 SET01   \x00\x00 OPER  J\x00\x00 
 S_STR SCE235_003\x00 \xd6\x06\x00 S_END 
 VAR01 TXT1 \xd8~\x01\x0c\x00\x00\x00\x00"\x03\x99\x00\x00
+=======
+SEQ01 8\x04
+SEQ14 
+SEQ08 " 6\x01\x00 
+SEQ08  d\x01\x00 
+SEQ06   
+SEQ01 [\x00
+SEQ14 
+SEQ08 "  \x00\x00 
+SEQ08  J\x00\x00 
+SEQ05 SCE235_003\x00 \xd6\x06\x00 
+SEQ07  
+SEQ01 
+SEQ10 \xd8~\x01\x0c
+SEQ11 \x03\x99\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 拓司はその言葉を、虚ろな意識の中で転がした。@
 火傷……紅葉に……火傷？@
@@ -64,9 +149,21 @@ VAR01 TXT1 \xd8~\x01\x0c\x00\x00\x00\x00"\x03\x99\x00\x00
 そのときの火傷なのか……？\
 
 \x00\x00\x00  
+<<<<<<< HEAD
 VAR01 \x1a\x07 SET01  6\x01\x00 OPER  d\x01\x00 
 S_STR SCE235_004\x00 \xb8\t\x00 S_END 
 VAR01 TXT1 \xdc~\x01\x0c\x00\x00\x00\x00"\x03\x8c\x00\x00
+=======
+SEQ01 \x1a\x07
+SEQ14 
+SEQ08 " 6\x01\x00 
+SEQ08  d\x01\x00 
+SEQ05 SCE235_004\x00 \xb8\t\x00 
+SEQ07  
+SEQ01 
+SEQ10 \xdc~\x01\x0c
+SEQ11 \x03\x8c\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 錦城\n　「こんな醜い火傷があるんじゃ、いままで処女だったっていう\n　　のもわかるわね。\p恥ずかしくて見せられたもんじゃないもの。\n　　\pこんなみっともない傷を見たら百年の恋も冷めて、どんな男\n　　の子も逃げ出すわよ。\pあ～カワイソウ。\p私だったら世をはか\n　　なんで自殺するけどわね、あはは」@
 御堂\n　「う、うう……すげえ締め付けだ。\p出すぞ……もうすぐ……出\n　　るぞ」@
@@ -74,9 +171,21 @@ VAR01 TXT1 \xdc~\x01\x0c\x00\x00\x00\x00"\x03\x8c\x00\x00
 御堂\n　「おれとは反対の世界に生きてる健全スポーツ少女を犯してる\n　　って思うだけで何回でも出せる…う…くっ、顔に出すぞ！」\
 
 \x00\x00\x00  
+<<<<<<< HEAD
 VAR01 \xfc\t SET01  6\x01\x00 OPER  d\x01\x00 
 S_STR SCE235_005\x00 f\x0c\x00 S_END 
 VAR01 TXT1 \xe0~\x01\x0c\x00\x00\x00\x00"\x03\xd8\x00\x00
+=======
+SEQ01 \xfc\t
+SEQ14 
+SEQ08 " 6\x01\x00 
+SEQ08  d\x01\x00 
+SEQ05 SCE235_005\x00 f\x0c\x00 
+SEQ07  
+SEQ01 
+SEQ10 \xe0~\x01\x0c
+SEQ11 \x03\xd8\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 　勢い良く放出された精液は、まず、紅葉の鼻先で弾けた。@
 　ペ○スが脈動し、そのたびにねっとりとした液体が、勢いよく\n　顔にひっかかった。\p頬から目、眉に渡って長い白濁のラインが\n　引かれる。\p髪の毛にも飛沫がこびりつき、紅葉の顔は、あっと\n　いうまに惨めなまだら模様に染め上げられた。@
@@ -91,7 +200,17 @@ VAR01 TXT1 \xe0~\x01\x0c\x00\x00\x00\x00"\x03\xd8\x00\x00
 \n/*▲BGM　停止*/\a4,-1,0,0,/*■黒　表示（ノンエフェクト）*/\a7,-1,-1,0,\a0,200,1,0,\a6,0,0,0,拓司の意識が、ふっと遠くなった\
 
 \x00  
+<<<<<<< HEAD
 VAR01 \xaa\x0c SET01  6\x01\x00 OPER  d\x01\x00 
 CHOICE_FLAG  6\x01\x00 OPER 
 CMD03 TextClose COMMAND_TO_BYTECODE2 P\x10\x00 
 F_END
+=======
+SEQ01 \xaa\x0c
+SEQ14 
+SEQ08 " 6\x01\x00 
+SEQ08  d\x01\x00 
+SEQ06  6\x01\x00 
+SEQ04 TextClose SPC02 P\x10\x00 
+FEND
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23

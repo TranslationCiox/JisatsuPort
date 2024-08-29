@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 F_SRT
 \xa1\x13\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\\\x10\x00  
 VAR01 \xc8\x00 SET01 FILE1 .\\Data\\Script\\Bg.Fob COMMAND_TO_BYTECODE3  \x00\x00 
@@ -6,6 +7,26 @@ VAR01 \x08\x01 SET01 FILE1 .\\Data\\Script\\Bgm.Fob COMMAND_TO_BYTECODE2 \x88\x0
 CMD01 PlayCD COMMAND_TO_BYTECODE1 \xb2\x00\x00 
 S_STR SCEK14_001\x00 \xce\x00\x00 S_END 
 VAR01 TXT1 \xb0\xad\x01\x0c\x00\x00\x00\x00"\x03\x9d\x00\x00
+=======
+FSTR
+\xa1\x13\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\\\x10\x00  
+SEQ01 \xc8\x00
+SEQ14 
+SEQ08 "
+SEQ12 .\\Data\\Script\\Bg.Fob SPC03  \x00\x00 
+SEQ03 BgAutoFadeIn SPC03 J\x00\x00 
+SEQ06   
+SEQ01 \x08\x01
+SEQ14 
+SEQ08 "
+SEQ12 .\\Data\\Script\\Bgm.Fob SPC02 \x88\x00\x00 
+SEQ02 PlayCD SPC01 \xb2\x00\x00 
+SEQ05 SCEK14_001\x00 \xce\x00\x00 
+SEQ07  
+SEQ01 
+SEQ10 \xb0\xad\x01\x0c
+SEQ11 \x03\x9d\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 　計画は、それから３日後に実行に移された。@
 カンナのお母さんが実家の法事で家を留守にする日。@
@@ -19,10 +40,23 @@ VAR01 TXT1 \xb0\xad\x01\x0c\x00\x00\x00\x00"\x03\x9d\x00\x00
 憑き物が落ちたようないきいきとした顔が鏡の中にあったのを、\n鮮やかに覚えている。@
 サッパリしていて、自分でもちょっとすてきかな、などと思った\nくらいだった。\w\z
 \x00  
+<<<<<<< HEAD
 VAR01 \x12\x01 SET01 FILE2 .\\Data\\Script\\TextFunc.Fob COMMAND_TO_BYTECODE1 \xa6\x03\x00 
 CMD01 TextOn COMMAND_TO_BYTECODE1 \xd4\x03\x00 
 S_STR SCEK14_002\x00 \xf0\x03\x00 S_END 
 VAR01 TXT1 \xb4\xad\x01\x0c\x00\x00\x00\x00"\x03\xb4\x00\x00
+=======
+SEQ01 \x12\x01
+SEQ14 
+SEQ08 "
+SEQ13 .\\Data\\Script\\TextFunc.Fob SPC01 \xa6\x03\x00 
+SEQ02 TextOn SPC01 \xd4\x03\x00 
+SEQ05 SCEK14_002\x00 \xf0\x03\x00 
+SEQ07  
+SEQ01 
+SEQ10 \xb4\xad\x01\x0c
+SEQ11 \x03\xb4\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 　私はそのまま約束のビジネスホテルに向かった。@
 ××予備校の夏期講習を受ける地方の学生がよく長期利用するホ\nテルで、時期がちょうどそんな時期だったこともあって、私たち\nみたいな学生が２人で向かったからといってとりわけ怪しまれる\nことはないだろうと……そう目星をつけてのことだった。@
@@ -33,9 +67,21 @@ VAR01 TXT1 \xb4\xad\x01\x0c\x00\x00\x00\x00"\x03\xb4\x00\x00
 わくわくしていた。@
 ゆきといっしょに、どこか温泉にでも旅行に出かけるような、そ\nんな気分だった。\w\z
 \x00  
+<<<<<<< HEAD
 VAR01 4\x04 SET01  \xa6\x03\x00 OPER  \xd4\x03\x00 
 S_STR SCEK14_003\x00 >\x07\x00 S_END 
 VAR01 TXT1 \xb8\xad\x01\x0c\x00\x00\x00\x00"\x03k\x00\x00
+=======
+SEQ01 4\x04
+SEQ14 
+SEQ08 " \xa6\x03\x00 
+SEQ08  \xd4\x03\x00 
+SEQ05 SCEK14_003\x00 >\x07\x00 
+SEQ07  
+SEQ01 
+SEQ10 \xb8\xad\x01\x0c
+SEQ11 \x03k\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 　８時を少し回ったころ、ドアがノックされた。@
 「－－月代さん。私」@
@@ -45,9 +91,21 @@ VAR01 TXT1 \xb8\xad\x01\x0c\x00\x00\x00\x00"\x03k\x00\x00
 「うん」とゆきはいった。@
 「終わったよ」\w\z
 \x00\x00\x00  
+<<<<<<< HEAD
 VAR01 \x82\x07 SET01  \xa6\x03\x00 OPER  \xd4\x03\x00 
 S_STR SCEK14_004\x00 h\t\x00 S_END 
 VAR01 TXT1 \xbc\xad\x01\x0c\x00\x00\x00\x00"\x03z\x00\x00
+=======
+SEQ01 \x82\x07
+SEQ14 
+SEQ08 " \xa6\x03\x00 
+SEQ08  \xd4\x03\x00 
+SEQ05 SCEK14_004\x00 h\t\x00 
+SEQ07  
+SEQ01 
+SEQ10 \xbc\xad\x01\x0c
+SEQ11 \x03z\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 ドアの向こうに立っていたゆきは、さすがにひどく疲れているよ\nうに見えたけれど、いま人を殺してきたばかりには見えなかった。\n\p取り乱したような様子もなくて、むしろ穏やかさがゆきのまわり\nには漂っていた。@
 とてもリラックスしているみたいだった。@
@@ -57,9 +115,21 @@ VAR01 TXT1 \xbc\xad\x01\x0c\x00\x00\x00\x00"\x03z\x00\x00
 「かわいいね、その服」と私はいった。@
 「月代さんもかわいいよ」と、ゆきは照れくさそうにいった。\w\z
 \x00  
+<<<<<<< HEAD
 VAR01 \xac\t SET01  \xa6\x03\x00 OPER  \xd4\x03\x00 
 S_STR SCEK14_005\x00 \xce\x0b\x00 S_END 
 VAR01 TXT1 \xc0\xad\x01\x0c\x00\x00\x00\x00"\x03p\x00\x00
+=======
+SEQ01 \xac\t
+SEQ14 
+SEQ08 " \xa6\x03\x00 
+SEQ08  \xd4\x03\x00 
+SEQ05 SCEK14_005\x00 \xce\x0b\x00 
+SEQ07  
+SEQ01 
+SEQ10 \xc0\xad\x01\x0c
+SEQ11 \x03p\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 －－あとでわかったことだけれど、父親は死んではいなかった。\n睡眠中に左胸を包丁でひとつきにされた父親は、その日の昼過ぎ\nに瀕死の重体で発見されて、そして奇跡的に一命を取り留めた。@
 仕事を終えて家を出るときに、ゆきは玄関の鍵を閉め忘れたのだ\nった。@
@@ -67,15 +137,37 @@ VAR01 TXT1 \xc0\xad\x01\x0c\x00\x00\x00\x00"\x03p\x00\x00
 このことは、人生のひとつの真実を表しているように思う。@
 人生はやはり、オチのない悪い冗談なのだという真実を。\w\z
 \x00\x00\x00  
+<<<<<<< HEAD
 VAR01 \x12\x0c SET01  \xa6\x03\x00 OPER  \xd4\x03\x00 
 S_STR SCEK14_006\x00 \x0c\x0e\x00 S_END 
 VAR01 TXT1 \xc4\xad\x01\x0c\x00\x00\x00\x00"\x03SFLAG
+=======
+SEQ01 \x12\x0c
+SEQ14 
+SEQ08 " \xa6\x03\x00 
+SEQ08  \xd4\x03\x00 
+SEQ05 SCEK14_006\x00 \x0c\x0e\x00 
+SEQ07  
+SEQ01 
+SEQ10 \xc4\xad\x01\x0c
+SEQ11 \x03j\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 でも、そんなことはあとでわかったことで、そのときの私たちは、\n何もかもを終わらせたんだという（あるいは終わらせるんだとい\nう）、さっぱりした気分でいっぱいだった。@
 \n私たちは、あらかじめ何軒かのドラッグストアから買い集めてお\nいた××××という薬を鞄から出して、銀紙の上に何瓶分かの錠\n剤をまとめて載せ、ライターであぶって、ドロドロに溶かした。@
 そして、その朝コンビニで買ってきたプレーンヨーグルトに混ぜ\nた。\w\z
 \x00\x00\x00  
+<<<<<<< HEAD
 VAR01 P\x0e SET01  \xa6\x03\x00 OPER  \xd4\x03\x00 
 CHOICE_FLAG  \xa6\x03\x00 OPER 
 CMD03 TextClose COMMAND_TO_BYTECODE2 >\x10\x00 
 F_END
+=======
+SEQ01 P\x0e
+SEQ14 
+SEQ08 " \xa6\x03\x00 
+SEQ08  \xd4\x03\x00 
+SEQ06  \xa6\x03\x00 
+SEQ04 TextClose SPC02 >\x10\x00 
+FEND
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23

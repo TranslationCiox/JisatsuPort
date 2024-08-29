@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 F_SRT
 ?!\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\x9a\x1b\x00  
 VAR01 \x06\x01 SET01 FILE1 .\\Data\\Script\\Bgm.Fob COMMAND_TO_BYTECODE2  \x00\x00 
@@ -6,6 +7,27 @@ VAR01 \xc9\x00 SET01 FILE1 .\\Data\\Script\\Bg.Fob COMMAND_TO_BYTECODE3 \x80\x00
 CMD02 BgAutoFadeIn COMMAND_TO_BYTECODE3 \xaa\x00\x00 
 S_STR SCE024_001\x00 \xce\x00\x00 S_END 
 VAR01 TXT1  5 SEQ06 \x03K\x00\x00
+=======
+FSTR
+?!\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\x9a\x1b\x00  
+SEQ01 \x06\x01
+SEQ14 
+SEQ08 "
+SEQ12 .\\Data\\Script\\Bgm.Fob SPC02  \x00\x00 
+SEQ02 PlayCD SPC01 J\x00\x00 
+SEQ06   
+SEQ01 \xc9\x00
+SEQ14 
+SEQ08 "
+SEQ12 .\\Data\\Script\\Bg.Fob SPC03 \x80\x00\x00 
+SEQ03 BgAutoFadeIn SPC03 \xaa\x00\x00 
+SEQ05 SCE024_001\x00 \xce\x00\x00 
+SEQ07  
+SEQ01 
+SEQ10  5
+SEQ14 
+SEQ11 \x03K\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 『灰色』に引きずられるように現実に返って、拓司ははっと息を呑\nんだ。@
 いつの間にかベッドの上に横になっている。@
@@ -14,10 +36,24 @@ VAR01 TXT1  5 SEQ06 \x03K\x00\x00
 　ザアザアアアアアアア……\
 
 \x00  
+<<<<<<< HEAD
 VAR01 \x12\x01 SET01 FILE2 .\\Data\\Script\\TextFunc.Fob COMMAND_TO_BYTECODE1 ^\x02\x00 
 CMD01 TextOn COMMAND_TO_BYTECODE1 \x8c\x02\x00 
 S_STR SCE024_002\x00 \xa8\x02\x00 S_END 
 VAR01 TXT1 $5 SEQ06 \x03\xb8\x00\x00
+=======
+SEQ01 \x12\x01
+SEQ14 
+SEQ08 "
+SEQ13 .\\Data\\Script\\TextFunc.Fob SPC01 ^\x02\x00 
+SEQ02 TextOn SPC01 \x8c\x02\x00 
+SEQ05 SCE024_002\x00 \xa8\x02\x00 
+SEQ07  
+SEQ01 
+SEQ10 $5
+SEQ14 
+SEQ11 \x03\xb8\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 　回転部分に砂でも噛んでいるのか、音がしている。@
 最初に感じたのは、寝坊したのだ、という焦りだった。\pただ、すぐ\nにそうではないことがわかった。@
@@ -30,9 +66,22 @@ VAR01 TXT1 $5 SEQ06 \x03\xb8\x00\x00
 拓司は立ち上がって、部屋の出口とおぼしき扉の前まで歩いていっ\nた。\p鉄の扉だ。\p扉には取っ手はなく、外に出ることはできない。\nこれでは本当に牢屋だ……。\
 
 \x00\x00\x00  
+<<<<<<< HEAD
 VAR01 \xec\x02 SET01  ^\x02\x00 OPER  \x8c\x02\x00 
 S_STR SCE024_003\x00 \x06\x06\x00 S_END 
 VAR01 TXT1 (5 SEQ06 \x03\x93\x00\x00
+=======
+SEQ01 \xec\x02
+SEQ14 
+SEQ08 " ^\x02\x00 
+SEQ08  \x8c\x02\x00 
+SEQ05 SCE024_003\x00 \x06\x06\x00 
+SEQ07  
+SEQ01 
+SEQ10 (5
+SEQ14 
+SEQ11 \x03\x93\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 ここでようやく、拓司は自分が夢を見ているのだと気づいた。@
 \n夢にしてはずいぶんリアルだ。@
@@ -44,12 +93,30 @@ VAR01 TXT1 (5 SEQ06 \x03\x93\x00\x00
 －－だからなんだっていうんだ？\
 
 \x00  
+<<<<<<< HEAD
 VAR01 J\x06 SET01  ^\x02\x00 OPER  \x8c\x02\x00 C_END  
 VAR01 OPER \x0c
 SEQ05   \x00\x00 
 CMD01 SeStop COMMAND_TO_BYTECODE1 \xf6\x08\x00 
 S_STR SCE024_004\x00 \x12\t\x00 S_END 
 VAR01 TXT1 ,5 SEQ06 \x03\x9a\x00\x00
+=======
+SEQ01 J\x06
+SEQ14 
+SEQ08 " ^\x02\x00 
+SEQ08  \x8c\x02\x00 
+SEQ06   
+SEQ01 
+SEQ08 \x0c
+SEQ08 "  \x00\x00 
+SEQ02 SeStop SPC01 \xf6\x08\x00 
+SEQ05 SCE024_004\x00 \x12\t\x00 
+SEQ07  
+SEQ01 
+SEQ10 ,5
+SEQ14 
+SEQ11 \x03\x9a\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 拓司\n　「さて」@
 \nしきり直すように口に出してみる。@
@@ -67,9 +134,22 @@ VAR01 TXT1 ,5 SEQ06 \x03\x9a\x00\x00
 まだ、この新しい世界に馴染んでいないだけなのだ。\p妄想世界を受\nけ入れたように、そのうちこの夢の世界も自分の一部になっていく\nのだろう……。\
 
 \x00  
+<<<<<<< HEAD
 VAR01 V\t SET01  ^\x02\x00 OPER  \x8c\x02\x00 
 S_STR SCE024_005\x00 \xf8\x0b\x00 S_END 
 VAR01 TXT1 05 SEQ06 \x03c\x00\x00
+=======
+SEQ01 V\t
+SEQ14 
+SEQ08 " ^\x02\x00 
+SEQ08  \x8c\x02\x00 
+SEQ05 SCE024_005\x00 \xf8\x0b\x00 
+SEQ07  
+SEQ01 
+SEQ10 05
+SEQ14 
+SEQ11 \x03c\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 拓司はドアを強く押してみた。\pびくともしない。@
 改めてベッドに横になり、夢よ醒めろ、と念じたが、一向に醒める\n様子はない。@
@@ -78,9 +158,22 @@ VAR01 TXT1 05 SEQ06 \x03c\x00\x00
 そんなことを漠然と考えていると、どこからか小さな声が聞こえて\nきた。\
 
 \x00  
+<<<<<<< HEAD
 VAR01 <\x0c SET01  ^\x02\x00 OPER  \x8c\x02\x00 
 S_STR SCE024_006\x00 \x02\x0e\x00 S_END 
 VAR01 TXT1 45 SEQ06 \x03[\x00\x00
+=======
+SEQ01 <\x0c
+SEQ14 
+SEQ08 " ^\x02\x00 
+SEQ08  \x8c\x02\x00 
+SEQ05 SCE024_006\x00 \x02\x0e\x00 
+SEQ07  
+SEQ01 
+SEQ10 45
+SEQ14 
+SEQ11 \x03[\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 声\n　「……いるんでしょう？！　そこにいるんでしょう……」@
 \nまだ若い、女の声だ。\p声はどうやら壁の向こうから漏れ聞こえてい\nるようだ。@
@@ -91,9 +184,22 @@ VAR01 TXT1 45 SEQ06 \x03[\x00\x00
 \n声に、明るい響きがこもる。\
 
 \x00  
+<<<<<<< HEAD
 VAR01 F\x0e SET01  ^\x02\x00 OPER  \x8c\x02\x00 
 S_STR SCE024_007\x00 \xec\x0f\x00 S_END 
 VAR01 TXT1 85 SEQ06 \x03R\x00\x00
+=======
+SEQ01 F\x0e
+SEQ14 
+SEQ08 " ^\x02\x00 
+SEQ08  \x8c\x02\x00 
+SEQ05 SCE024_007\x00 \xec\x0f\x00 
+SEQ07  
+SEQ01 
+SEQ10 85
+SEQ14 
+SEQ11 \x03R\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 声\n　「よかった！　もしかしてもう逢えないんじゃないかって思って\n　　た！」@
 拓司\n　「いや……人違いじゃないか？」@
@@ -105,9 +211,22 @@ VAR01 TXT1 85 SEQ06 \x03R\x00\x00
 声\n　「やつらよ！」\
 
 \x00\x00\x00  
+<<<<<<< HEAD
 VAR01 0\x10 SET01  ^\x02\x00 OPER  \x8c\x02\x00 
 S_STR SCE024_008\x00 \xb2\x11\x00 S_END 
 VAR01 TXT1 <5 SEQ06 \x03W\x00\x00
+=======
+SEQ01 0\x10
+SEQ14 
+SEQ08 " ^\x02\x00 
+SEQ08  \x8c\x02\x00 
+SEQ05 SCE024_008\x00 \xb2\x11\x00 
+SEQ07  
+SEQ01 
+SEQ10 <5
+SEQ14 
+SEQ11 \x03W\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 拓司\n　「ちょっと待ってくれ！　話がまったくわからない。@
 　　おれは君が探している人間じゃないし、やつらっていうのが誰\n　　のことなのかもわからない。\pだいたい君は誰だ？」@
@@ -115,10 +234,28 @@ VAR01 TXT1 <5 SEQ06 \x03W\x00\x00
 \n声\n　「……ああ……やつら、あなたの記憶を……\p畜生畜生畜生畜生…\n　　…畜生！」\
 
 \x00  
+<<<<<<< HEAD
 VAR01 \xf6\x11 SET01  ^\x02\x00 OPER  \x8c\x02\x00 C_END  
 VAR01 \xca\x00 SET01  \x80\x00\x00 OPER  \xaa\x00\x00 
 S_STR SCE024_009\x00 \xc0\x13\x00 S_END 
 VAR01 TXT1 @5 SEQ06 \x03\xb3\x00\x00
+=======
+SEQ01 \xf6\x11
+SEQ14 
+SEQ08 " ^\x02\x00 
+SEQ08  \x8c\x02\x00 
+SEQ06   
+SEQ01 \xca\x00
+SEQ14 
+SEQ08 " \x80\x00\x00 
+SEQ08  \xaa\x00\x00 
+SEQ05 SCE024_009\x00 \xc0\x13\x00 
+SEQ07  
+SEQ01 
+SEQ10 @5
+SEQ14 
+SEQ11 \x03\xb3\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 \n/*▲SE01　再生（フェードイン）　*/\a2,2,1,0,　ザザザ……ザザッ……\pザアザザザ……ザアアアアア……@
 　ザアザアアアアアアア……@
@@ -128,9 +265,22 @@ VAR01 TXT1 @5 SEQ06 \x03\xb3\x00\x00
 \n声はそこでピタリと止み、二度と聞こえてこなかった。\
 
 \x00  
+<<<<<<< HEAD
 VAR01 \x04\x14 SET01  ^\x02\x00 OPER  \x8c\x02\x00 
 S_STR SCE024_010\x00 \n\x17\x00 S_END 
 VAR01 TXT1 D5 SEQ06 \x03\xd3\x00\x00
+=======
+SEQ01 \x04\x14
+SEQ14 
+SEQ08 " ^\x02\x00 
+SEQ08  \x8c\x02\x00 
+SEQ05 SCE024_010\x00 \n\x17\x00 
+SEQ07  
+SEQ01 
+SEQ10 D5
+SEQ14 
+SEQ11 \x03\xd3\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 かつん、かつん、かつん。@
 ドアの向こうは廊下にでもなっているのだろう、足音は遠くからま\nっすぐ近づいてきて…\pそして拓司のドアの前でピタリと止まった。\n\p静寂。@
@@ -144,6 +294,7 @@ VAR01 TXT1 D5 SEQ06 \x03\xd3\x00\x00
 \n拓司は強く願った。@
 /* SE22 一回再生（再生終わり待たずに…とかできます？）　*/\a2,0,22,0,がちゃり、とドアが開いた。\w\n/* SE22 とめる　*/\a4,0,0,0,\z
 \x00\x00  
+<<<<<<< HEAD
 VAR01 N\x17 SET01  ^\x02\x00 OPER  \x8c\x02\x00 C_END  
 VAR01 \x01\x00 SET01   \x00\x00 OPER  \xf6\x08\x00 C_END  
 VAR01 OPER \x0c
@@ -152,3 +303,27 @@ VAR01 \xc8\x00 SET01  \x80\x00\x00 OPER  \xaa\x00\x00
 CHOICE_FLAG  ^\x02\x00 OPER 
 CMD03 TextClose COMMAND_TO_BYTECODE2 |\x1b\x00 
 F_END
+=======
+SEQ01 N\x17
+SEQ14 
+SEQ08 " ^\x02\x00 
+SEQ08  \x8c\x02\x00 
+SEQ06   
+SEQ01 \x01\x00
+SEQ14 
+SEQ08 "  \x00\x00 
+SEQ08  \xf6\x08\x00 
+SEQ06   
+SEQ01 
+SEQ08 \x0c
+SEQ08 "  \x00\x00 
+SEQ08  \xf6\x08\x00 
+SEQ06   
+SEQ01 \xc8\x00
+SEQ14 
+SEQ08 " \x80\x00\x00 
+SEQ08  \xaa\x00\x00 
+SEQ06  ^\x02\x00 
+SEQ04 TextClose SPC02 |\x1b\x00 
+FEND
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23

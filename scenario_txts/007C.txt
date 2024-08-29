@@ -1,7 +1,17 @@
+<<<<<<< HEAD
 F_SRT
 \x804\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xf6,\x00
 CMD03 SCE007_001\x00 \x06\x00\x00 S_END 
 VAR01 TXT1 \x90\x1a SEQ06 \x03s\x00\x00
+=======
+FSTR
+\x804\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xf6,\x00\x03\x03\x00\x00SCE007_001\x00 \x06\x00\x00 
+SEQ07  
+SEQ01 
+SEQ10 \x90\x1a
+SEQ14 
+SEQ11 \x03s\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 命じられるままに、早桃は拓司のベッドに歩み寄った。@
 ぎしり、と音を立ててベッドに片膝を乗せ、そこを支点にもう一\n方の脚を乗せる。@
@@ -14,12 +24,32 @@ VAR01 TXT1 \x90\x1a SEQ06 \x03s\x00\x00
 ない。\
 
 \x00\x00\x00  
+<<<<<<< HEAD
 VAR01 J\x00 SET01 FILE2 .\\Data\\Script\\TextFunc.Fob COMMAND_TO_BYTECODE1 6\x02\x00 
 CMD01 TextOn COMMAND_TO_BYTECODE1 d\x02\x00 C_END  
 VAR01 J\x00 SET01 FILE1 .\\Data\\Script\\Bg.Fob COMMAND_TO_BYTECODE3 \x9a\x02\x00 
 CMD02 BgAutoFadeIn COMMAND_TO_BYTECODE3 \xc4\x02\x00 
 S_STR SCE007_002\x00 \xe8\x02\x00 S_END 
 VAR01 TXT1 \x94\x1a SEQ06 \x03\xab\x00\x00
+=======
+SEQ01 J\x00
+SEQ14 
+SEQ08 "
+SEQ13 .\\Data\\Script\\TextFunc.Fob SPC01 6\x02\x00 
+SEQ02 TextOn SPC01 d\x02\x00 
+SEQ06   
+SEQ01 J\x00
+SEQ14 
+SEQ08 "
+SEQ12 .\\Data\\Script\\Bg.Fob SPC03 \x9a\x02\x00 
+SEQ03 BgAutoFadeIn SPC03 \xc4\x02\x00 
+SEQ05 SCE007_002\x00 \xe8\x02\x00 
+SEQ07  
+SEQ01 
+SEQ10 \x94\x1a
+SEQ14 
+SEQ11 \x03\xab\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 義妹のほっそりとした指が、拓司の股間に触れた。@
 輪郭をなぞるように、ゆっくりと、パジャマの上を指先が蠢く。@
@@ -36,9 +66,22 @@ VAR01 TXT1 \x94\x1a SEQ06 \x03\xab\x00\x00
 コットンの柔らかい感触と、義妹の指の刺激に、拓司の息が一気\nに荒くなる。\
 
 \x00\x00\x00  
+<<<<<<< HEAD
 VAR01 ,\x03 SET01  6\x02\x00 OPER  d\x02\x00 
 S_STR SCE007_003\x00 \x12\x06\x00 S_END 
 VAR01 TXT1 \x98\x1a SEQ06 \x03q\x00\x00
+=======
+SEQ01 ,\x03
+SEQ14 
+SEQ08 " 6\x02\x00 
+SEQ08  d\x02\x00 
+SEQ05 SCE007_003\x00 \x12\x06\x00 
+SEQ07  
+SEQ01 
+SEQ10 \x98\x1a
+SEQ14 
+SEQ11 \x03q\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 拓司\n　「……早桃」@
 早桃\n　「おにいちゃんにいやらしい目で見られて、早桃もいやらしい\n　　女の子になっちゃった。@
@@ -48,6 +91,7 @@ VAR01 TXT1 \x98\x1a SEQ06 \x03q\x00\x00
 　　お風呂で。\pトイレで。\pおこたのなかで。\pおにいちゃんの机の\n　　下で。\p早桃のクローゼットのなかで……」\
 
 \x00  
+<<<<<<< HEAD
 VAR01 V\x06 SET01  6\x02\x00 OPER  d\x02\x00 
 S_STR SCE007_004\x00 T\x08\x00 S_END 
 VAR01 TXT1 \x9c\x1a SEQ06 \x03"\x00\x00
@@ -57,6 +101,31 @@ VAR01 TXT1 \x9c\x1a SEQ06 \x03"\x00\x00
 VAR01 \x98\x08 SET01  6\x02\x00 OPER  d\x02\x00 
 S_STR SCE007_005\x00 Z\t\x00 S_END 
 VAR01 TXT1 \xa0\x1a SEQ06 \x03\x8d\x00\x00
+=======
+SEQ01 V\x06
+SEQ14 
+SEQ08 " 6\x02\x00 
+SEQ08  d\x02\x00 
+SEQ05 SCE007_004\x00 T\x08\x00 
+SEQ07  
+SEQ01 
+SEQ10 \x9c\x1a
+SEQ14 
+SEQ11 \x03"\x00\x00
+ 
+ぺちゃぺちゃと唾液が絡んだようなしゃべりかたで早桃は続ける。\n\p性器に指を絡めて奉仕しながらみだらな言葉で義兄の興奮を誘う。\n\w\z
+\x00\x00\x00  
+SEQ01 \x98\x08
+SEQ14 
+SEQ08 " 6\x02\x00 
+SEQ08  d\x02\x00 
+SEQ05 SCE007_005\x00 Z\t\x00 
+SEQ07  
+SEQ01 
+SEQ10 \xa0\x1a
+SEQ14 
+SEQ11 \x03\x8d\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 早桃\n　「もうオナニーなんてする必要ないよ。\pエッチな本も買わな\n　　くていい。@
 　　だって、早桃のおててとおくちとおっぱいとおま○ことおし\n　　りで……溜まったときに処理できるんだよ。@
@@ -67,9 +136,22 @@ VAR01 TXT1 \xa0\x1a SEQ06 \x03\x8d\x00\x00
 　　あんまりいないと思うよ、こんなふうに、性欲処理してくれ\n　　る義妹って。」\
 
 \x00\x00\x00  
+<<<<<<< HEAD
 VAR01 \x9e\t SET01  6\x02\x00 OPER  d\x02\x00 
 S_STR SCE007_006\x00 \x0c\x0c\x00 S_END 
 VAR01 TXT1 \xa4\x1a SEQ06 \x03}\x00\x00
+=======
+SEQ01 \x9e\t
+SEQ14 
+SEQ08 " 6\x02\x00 
+SEQ08  d\x02\x00 
+SEQ05 SCE007_006\x00 \x0c\x0c\x00 
+SEQ07  
+SEQ01 
+SEQ10 \xa4\x1a
+SEQ14 
+SEQ11 \x03}\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 拓司\n　「う……早桃」@
 早桃\n　「見せて。おにいちゃんが早桃のパンティに射精するところ」@
@@ -81,9 +163,22 @@ VAR01 TXT1 \xa4\x1a SEQ06 \x03}\x00\x00
 ちょうどクロッチの部分に、たっぷりと、精液が溜まっている。\
 
 \x00\x00\x00  
+<<<<<<< HEAD
 VAR01 P\x0c SET01  6\x02\x00 OPER  d\x02\x00 
 S_STR SCE007_007\x00 ~\x0e\x00 S_END 
 VAR01 TXT1 \xa8\x1a SEQ06 \x03\xaf\x00\x00
+=======
+SEQ01 P\x0c
+SEQ14 
+SEQ08 " 6\x02\x00 
+SEQ08  d\x02\x00 
+SEQ05 SCE007_007\x00 ~\x0e\x00 
+SEQ07  
+SEQ01 
+SEQ10 \xa8\x1a
+SEQ14 
+SEQ11 \x03\xaf\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 早桃\n　「こんなにいっぱい。\pおにいちゃん、すごく溜まってたんだ\n　　ねえ。\p義妹の前でこんなにどくどく精液出しちゃって……\n　　恥ずかしくないの？\p　くすくす……」@
 拓司\n　「はあ、はあ……早桃……」@
@@ -94,9 +189,22 @@ VAR01 TXT1 \xa8\x1a SEQ06 \x03\xaf\x00\x00
 パンティと手はネグリジェの裾に再び消え、そして手だけが裾\nから引き出された。\
 
 \x00  
+<<<<<<< HEAD
 VAR01 \xc2\x0e SET01  6\x02\x00 OPER  d\x02\x00 
 S_STR SCE007_008\x00 \xb8\x11\x00 S_END 
 VAR01 TXT1 \xac\x1a SEQ06 \x03u\x00\x00
+=======
+SEQ01 \xc2\x0e
+SEQ14 
+SEQ08 " 6\x02\x00 
+SEQ08  d\x02\x00 
+SEQ05 SCE007_008\x00 \xb8\x11\x00 
+SEQ07  
+SEQ01 
+SEQ10 \xac\x1a
+SEQ14 
+SEQ11 \x03u\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 早桃\n　「んくっ……はあ……穿き終わったよ。\pおにいちゃんの精液、\n　　いま、早桃のパンティとおま○このあいだに、べったりひっ\n　　ついてるよ。\pぬるぬるして、あったかい。@
 　　おたまじゃくしがいっぱい。\pねえ、おま○このなかに入っち\n　　ゃったらどうしよう？\p　赤ちゃんできちゃうのかなあ……義\n　　兄妹で妊娠しちゃうなんて、パパとママ、驚くだろうなあ…\n　　…」@
@@ -105,9 +213,22 @@ VAR01 TXT1 \xac\x1a SEQ06 \x03u\x00\x00
 拓司\n　「ああ……見たい」\
 
 \x00  
+<<<<<<< HEAD
 VAR01 \xfc\x11 SET01  6\x02\x00 OPER  d\x02\x00 
 S_STR SCE007_009\x00 \n\x14\x00 S_END 
 VAR01 TXT1 \xb0\x1a SEQ06 \x03p\x00\x00
+=======
+SEQ01 \xfc\x11
+SEQ14 
+SEQ08 " 6\x02\x00 
+SEQ08  d\x02\x00 
+SEQ05 SCE007_009\x00 \n\x14\x00 
+SEQ07  
+SEQ01 
+SEQ10 \xb0\x1a
+SEQ14 
+SEQ11 \x03p\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 早桃\n　「ほんと、いやらしいおにいちゃん。\pもしかして、いつも早\n　　桃のパンティ、オカズにしてたの？\p　おち○ちんをこすりつ\n　　けて、汚してたの？\p　精子いっぱい出して、それを何も知ら\n　　ない義妹に穿かせて興奮してたの？@
 　　そうなんだあ……だから早桃、こんなにエッチになっちゃっ\n　　たんだ。@
@@ -115,9 +236,22 @@ VAR01 TXT1 \xb0\x1a SEQ06 \x03p\x00\x00
 　　いいよ。\p見せてあげる」\
 
 \x00\x00\x00  
+<<<<<<< HEAD
 VAR01 N\x14 SET01  6\x02\x00 OPER  d\x02\x00 
 S_STR SCE007_010\x00 H\x16\x00 S_END 
 VAR01 TXT1 \xb4\x1a SEQ06 \x03l\x00\x00
+=======
+SEQ01 N\x14
+SEQ14 
+SEQ08 " 6\x02\x00 
+SEQ08  d\x02\x00 
+SEQ05 SCE007_010\x00 H\x16\x00 
+SEQ07  
+SEQ01 
+SEQ10 \xb4\x1a
+SEQ14 
+SEQ11 \x03l\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 早桃は拓司をまたいだまま、二、三歩ベッドの上を歩くと、今度\nは義兄の首のあたりで腰を下ろして、膝立ちになった。@
 拓司は義妹の腿にはさまれた。@
@@ -129,9 +263,22 @@ VAR01 TXT1 \xb4\x1a SEQ06 \x03l\x00\x00
 精液の匂いと、早桃の体温がむっと鼻をつく。\
 
 \x00  
+<<<<<<< HEAD
 VAR01 \x8c\x16 SET01  6\x02\x00 OPER  d\x02\x00 
 S_STR SCE007_011\x00 v\x18\x00 S_END 
 VAR01 TXT1 \xb8\x1a SEQ06 \x03\x99\x00\x00
+=======
+SEQ01 \x8c\x16
+SEQ14 
+SEQ08 " 6\x02\x00 
+SEQ08  d\x02\x00 
+SEQ05 SCE007_011\x00 v\x18\x00 
+SEQ07  
+SEQ01 
+SEQ10 \xb8\x1a
+SEQ14 
+SEQ11 \x03\x99\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 早桃\n　「ずっと見たかったんでしょう？\p　早桃のここ。@
 　　おにいちゃんの精液でねとねとのおま○こ」@
@@ -144,9 +291,22 @@ VAR01 TXT1 \xb8\x1a SEQ06 \x03\x99\x00\x00
 にちゃにちゃと精液が泡立つ音がする。\
 
 \x00\x00\x00  
+<<<<<<< HEAD
 VAR01 \xba\x18 SET01  6\x02\x00 OPER  d\x02\x00 
 S_STR SCE007_012\x00 X\x1b\x00 S_END 
 VAR01 TXT1 \xbc\x1a SEQ06 \x03`\x00\x00
+=======
+SEQ01 \xba\x18
+SEQ14 
+SEQ08 " 6\x02\x00 
+SEQ08  d\x02\x00 
+SEQ05 SCE007_012\x00 X\x1b\x00 
+SEQ07  
+SEQ01 
+SEQ10 \xbc\x1a
+SEQ14 
+SEQ11 \x03`\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 早桃\n　「はあ、はあ……ねえ、おにいちゃんのパンツも頂戴」@
 \n乞われるまま、拓司はズボンをおろし、脚をばたつかせてブリー\nフを抜き取った。@
@@ -155,10 +315,28 @@ VAR01 TXT1 \xbc\x1a SEQ06 \x03`\x00\x00
 嗅ぎながら、開いている方の手で、再び股間をいじり始める。\
 
 \x00  
+<<<<<<< HEAD
 VAR01 \x9c\x1b SET01  6\x02\x00 OPER  d\x02\x00 C_END  
 VAR01 K\x00 SET01  \x9a\x02\x00 OPER  \xc4\x02\x00 
 S_STR SCE007_013\x00 \x8a\x1d\x00 S_END 
 VAR01 TXT1 \xc0\x1a SEQ06 \x03x\x00\x00
+=======
+SEQ01 \x9c\x1b
+SEQ14 
+SEQ08 " 6\x02\x00 
+SEQ08  d\x02\x00 
+SEQ06   
+SEQ01 K\x00
+SEQ14 
+SEQ08 " \x9a\x02\x00 
+SEQ08  \xc4\x02\x00 
+SEQ05 SCE007_013\x00 \x8a\x1d\x00 
+SEQ07  
+SEQ01 
+SEQ10 \xc0\x1a
+SEQ14 
+SEQ11 \x03x\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 早桃\n　「すごい匂い……。\p早桃も、おにいちゃんのパンツでオナ\n　　ニーしてたんだよ。\p知ってた？@
 　　おしっこと汗と精液の匂いがいっぱいこびりついたパンツの\n　　匂いをこうやって……嗅ぎながら……こんなふうに……オナ\n　　ニーしてたんだよ」@
@@ -168,9 +346,22 @@ VAR01 TXT1 \xc0\x1a SEQ06 \x03x\x00\x00
 \n早桃\n　「……ぺちゃ…ぺちゃ…ぢゅるっ……ぢゅりゅりゅっ……」\
 
 \x00  
+<<<<<<< HEAD
 VAR01 \xce\x1d SET01  6\x02\x00 OPER  d\x02\x00 
 S_STR SCE007_014\x00 \xe8\x1f\x00 S_END 
 VAR01 TXT1 \xc4\x1a SEQ06 \x03T\x00\x00
+=======
+SEQ01 \xce\x1d
+SEQ14 
+SEQ08 " 6\x02\x00 
+SEQ08  d\x02\x00 
+SEQ05 SCE007_014\x00 \xe8\x1f\x00 
+SEQ07  
+SEQ01 
+SEQ10 \xc4\x1a
+SEQ14 
+SEQ11 \x03T\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 義妹が自分のブリーフを口に入れて、しゃぶっている。@
 下品な音を立てながら……義兄にオナニーを見せつけながら……\n興奮するなというほうが無理だった。@
@@ -179,9 +370,22 @@ VAR01 TXT1 \xc4\x1a SEQ06 \x03T\x00\x00
 太股の付け根が精液でぬるぬると光っている。\
 
 \x00  
+<<<<<<< HEAD
 VAR01 ,  SET01  6\x02\x00 OPER  d\x02\x00 
 S_STR SCE007_015\x00 \xb6!\x00 S_END 
 VAR01 TXT1 \xc8\x1a SEQ06 \x03\x8d\x00\x00
+=======
+SEQ01 , 
+SEQ14 
+SEQ08 " 6\x02\x00 
+SEQ08  d\x02\x00 
+SEQ05 SCE007_015\x00 \xb6!\x00 
+SEQ07  
+SEQ01 
+SEQ10 \xc8\x1a
+SEQ14 
+SEQ11 \x03\x8d\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 早桃\n　「おにいちゃんと早桃、変態義兄妹だよね……」@
 拓司\n　「……ああ、そうだ。変態だ……」@
@@ -194,9 +398,22 @@ VAR01 TXT1 \xc8\x1a SEQ06 \x03\x8d\x00\x00
 精液は弧を描いて飛び、腰まで伸びた早桃の髪の毛をべったりと\n汚した。\
 
 \x00  
+<<<<<<< HEAD
 VAR01 \xfa! SET01  6\x02\x00 OPER  d\x02\x00 
 S_STR SCE007_016\x00 h$\x00 S_END 
 VAR01 TXT1 \xcc\x1a SEQ06 \x03\x9c\x00\x00
+=======
+SEQ01 \xfa!
+SEQ14 
+SEQ08 " 6\x02\x00 
+SEQ08  d\x02\x00 
+SEQ05 SCE007_016\x00 h$\x00 
+SEQ07  
+SEQ01 
+SEQ10 \xcc\x1a
+SEQ14 
+SEQ11 \x03\x9c\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 早桃\n　「いくらでも出るんだね。\pからだ、おかしいんじゃないの？\n　　\pほんとうは赤ちゃんを作るための液で、こんなふうに女の\n　　子にひっかけるためのものじゃないんだよ？@
 　　大丈夫？\p　まだ出る？\p　駄目だよ、もっとがんばってくれな\n　　くちゃ。\pこれから早桃のお腹の中にいっぱいいっぱい出さな\n　　くちゃいけないんだから。@
@@ -208,9 +425,22 @@ VAR01 TXT1 \xcc\x1a SEQ06 \x03\x9c\x00\x00
 徐々に笑い声が大きくなっていく。\
 
 \x00\x00\x00  
+<<<<<<< HEAD
 VAR01 \xac$ SET01  6\x02\x00 OPER  d\x02\x00 
 S_STR SCE007_017\x00 V'\x00 S_END 
 VAR01 TXT1 \xd0\x1a SEQ06 \x03\xb4\x00\x00
+=======
+SEQ01 \xac$
+SEQ14 
+SEQ08 " 6\x02\x00 
+SEQ08  d\x02\x00 
+SEQ05 SCE007_017\x00 V'\x00 
+SEQ07  
+SEQ01 
+SEQ10 \xd0\x1a
+SEQ14 
+SEQ11 \x03\xb4\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 拓司\n　「……やめろ」@
 早桃\n　「ワハ、ワハハハハ、ハハハハハハハ！」@
@@ -224,12 +454,33 @@ VAR01 TXT1 \xd0\x1a SEQ06 \x03\xb4\x00\x00
 \n早桃\n　「ウワハハハハハハハザザザ……ザザッ……ザアザザザ……ザ\n　　アアアアア……ザアザアアアアアアア……」\
 
 \x00\x00\x00  
+<<<<<<< HEAD
 VAR01 \x9a' SET01  6\x02\x00 OPER  d\x02\x00 C_END  
 VAR01 \xc8\x00 SET01  \x9a\x02\x00 OPER  \xc4\x02\x00 
 CHOICE_FLAG FILE1 .\\Data\\Script\\Bgm.Fob COMMAND_TO_BYTECODE2 \xd8*\x00 
 CMD01 StopCD COMMAND_TO_BYTECODE1 \x02+\x00 
 S_STR SCE007_018\x00 \x1e+\x00 S_END 
 VAR01 TXT1 \xd4\x1a SEQ06 \x03L\x00\x00
+=======
+SEQ01 \x9a'
+SEQ14 
+SEQ08 " 6\x02\x00 
+SEQ08  d\x02\x00 
+SEQ06   
+SEQ01 \xc8\x00
+SEQ14 
+SEQ08 " \x9a\x02\x00 
+SEQ08  \xc4\x02\x00 
+SEQ06 
+SEQ12 .\\Data\\Script\\Bgm.Fob SPC02 \xd8*\x00 
+SEQ02 StopCD SPC01 \x02+\x00 
+SEQ05 SCE007_018\x00 \x1e+\x00 
+SEQ07  
+SEQ01 
+SEQ10 \xd4\x1a
+SEQ14 
+SEQ11 \x03L\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 拓司は両手で耳を覆った。@
 そして目を閉じた。@
@@ -244,7 +495,17 @@ VAR01 TXT1 \xd4\x1a SEQ06 \x03L\x00\x00
 おそらくは。\
 
 \x00\x00\x00  
+<<<<<<< HEAD
 VAR01 b+ SET01  6\x02\x00 OPER  d\x02\x00 
 CHOICE_FLAG  6\x02\x00 OPER 
 CMD03 TextClose COMMAND_TO_BYTECODE2 \xd8,\x00 
 F_END
+=======
+SEQ01 b+
+SEQ14 
+SEQ08 " 6\x02\x00 
+SEQ08  d\x02\x00 
+SEQ06  6\x02\x00 
+SEQ04 TextClose SPC02 \xd8,\x00 
+FEND
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23

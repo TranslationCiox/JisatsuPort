@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 F_SRT
 \xc7\x10\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\x9c\x0b\x00
 CMD03 SCE240_001\x00 \x06\x00\x00 S_END 
@@ -11,16 +12,57 @@ CMD01 SePlay COMMAND_TO_BYTECODE1 t\x01\x00
 CHOICE_FLAG  J\x00\x00 
 CMD02 TextWindowOn COMMAND_TO_BYTECODE3 \x9c\x01\x00 
 CHOICE_FLAG \x03\x17\x00\x00
+=======
+FSTR
+\xc7\x10\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\x9c\x0b\x00\x03\x03\x00\x00SCE240_001\x00 \x06\x00\x00 
+SEQ07  
+SEQ01 
+SEQ10 \xa0\x86\x01\x0c
+SEQ11 
+SEQ13 .\\Data\\Script\\TextFunc.Fob SPC01 J\x00\x00 
+SEQ03 TextWindowOff SPC02 x\x00\x00 
+SEQ06   
+SEQ01 \xca\x00
+SEQ14 
+SEQ08 "
+SEQ12 .\\Data\\Script\\Bg.Fob SPC03 \xb6\x00\x00 
+SEQ02 BgOn SPC03 \xe0\x00\x00 
+SEQ06   
+SEQ01 
+SEQ08 \x0c
+SEQ08 "  \x04\x00\x00\r\x00\x00 \x01\x00
+SEQ14 
+SEQ08 "  \x08\x00\x00\r\x00\x00 \x01\x00
+SEQ14 
+SEQ08 "
+SEQ12 .\\Data\\Script\\Bgm.Fob SPC02 J\x01\x00 
+SEQ02 SePlay SPC01 t\x01\x00 
+SEQ06  J\x00\x00 
+SEQ03 TextWindowOn SPC03 \x9c\x01\x00 
+SEQ06 \x03\x17\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 親指の先に、硬い物があった。@
 激しいノイズが聞こえる。@
 誰かが腹を殴っている。\
 
 \x00  
+<<<<<<< HEAD
 VAR01 \xc0\x01 SET01  J\x00\x00 
 CMD01 TextOn COMMAND_TO_BYTECODE1 H\x02\x00 
 S_STR SCE240_002\x00 d\x02\x00 S_END 
 VAR01 TXT1 \xa4\x86\x01\x0c\x00\x00\x00\x00"\x03r\x00\x00
+=======
+SEQ01 \xc0\x01
+SEQ14 
+SEQ08 " J\x00\x00 
+SEQ02 TextOn SPC01 H\x02\x00 
+SEQ05 SCE240_002\x00 d\x02\x00 
+SEQ07  
+SEQ01 
+SEQ10 \xa4\x86\x01\x0c
+SEQ11 \x03r\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 カンナ\n　「虎菱くん！　虎菱くん！」@
 /*▲SE01　停止*/\a4,2,0,0,/*■CG50　表示（クロスフェード）*/\a7,-2,-2,0,\a0,49,2,0,\a6,-2,0,0,/*▲BGM　Track11　再生*/\a2,-1,11,1,\n拓司はようやく我に返った。@
@@ -35,18 +77,42 @@ VAR01 TXT1 \xa4\x86\x01\x0c\x00\x00\x00\x00"\x03r\x00\x00
 泣き叫んでいる。\
 
 \x00\x00\x00  
+<<<<<<< HEAD
 VAR01 \xa8\x02 SET01  J\x00\x00 OPER  H\x02\x00 
 S_STR SCE240_003\x00 \xaa\x04\x00 S_END 
 VAR01 TXT1 \xa8\x86\x01\x0c\x00\x00\x00\x00"\x03*\x00\x00
+=======
+SEQ01 \xa8\x02
+SEQ14 
+SEQ08 " J\x00\x00 
+SEQ08  H\x02\x00 
+SEQ05 SCE240_003\x00 \xaa\x04\x00 
+SEQ07  
+SEQ01 
+SEQ10 \xa8\x86\x01\x0c
+SEQ11 \x03*\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 御堂\n　「うわあああああああああああッ！\p　やめろおお！\p　潰れる！@
 　　目、おれの目！」@
 拓司\n　「こういうのはお終いだ、御堂！\p　これでお終いだ！」\
 
 \x00\x00\x00  
+<<<<<<< HEAD
 VAR01 \xee\x04 SET01  J\x00\x00 OPER  H\x02\x00 
 S_STR SCE240_004\x00 \xd0\x05\x00 S_END 
 VAR01 TXT1 \xac\x86\x01\x0c\x00\x00\x00\x00"\x03\x9c\x00\x00
+=======
+SEQ01 \xee\x04
+SEQ14 
+SEQ08 " J\x00\x00 
+SEQ08  H\x02\x00 
+SEQ05 SCE240_004\x00 \xd0\x05\x00 
+SEQ07  
+SEQ01 
+SEQ10 \xac\x86\x01\x0c
+SEQ11 \x03\x9c\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 拓司は叫んだ。@
 そして親指にグイと力を込めた。@
@@ -61,9 +127,21 @@ VAR01 TXT1 \xac\x86\x01\x0c\x00\x00\x00\x00"\x03\x9c\x00\x00
 拓司\n　「終わりだ、全部終わりだ」\
 
 \x00\x00\x00  
+<<<<<<< HEAD
 VAR01 \x14\x06 SET01  J\x00\x00 OPER  H\x02\x00 
 S_STR SCE240_005\x00 \xbe\x08\x00 S_END 
 VAR01 TXT1 \xb0\x86\x01\x0c\x00\x00\x00\x00"\x03b\x00\x00
+=======
+SEQ01 \x14\x06
+SEQ14 
+SEQ08 " J\x00\x00 
+SEQ08  H\x02\x00 
+SEQ05 SCE240_005\x00 \xbe\x08\x00 
+SEQ07  
+SEQ01 
+SEQ10 \xb0\x86\x01\x0c
+SEQ11 \x03b\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 呆気にとられた一同の視線を集めて、拓司は続けた。@
 \n拓司\n　「俺は、この部屋を出る。\p行く先は……光がある場所だ」@
@@ -75,14 +153,36 @@ VAR01 TXT1 \xb0\x86\x01\x0c\x00\x00\x00\x00"\x03b\x00\x00
 拓司はそれを以前、月代カンナの口から聞いたことがあった。\
 
 \x00  
+<<<<<<< HEAD
 VAR01 \x02\t SET01  J\x00\x00 OPER  H\x02\x00 
 S_STR SCE240_006\x00 \xc4\n\x00 S_END 
 VAR01 TXT1 \xb4\x86\x01\x0c\x00\x00\x00\x00"\x03\x0c\x00\x00
+=======
+SEQ01 \x02\t
+SEQ14 
+SEQ08 " J\x00\x00 
+SEQ08  H\x02\x00 
+SEQ05 SCE240_006\x00 \xc4\n\x00 
+SEQ07  
+SEQ01 
+SEQ10 \xb4\x86\x01\x0c
+SEQ11 \x03\x0c\x00\x00
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 拓司\n　「ついてくる人は、いるかい？」\
 
 \x00  
+<<<<<<< HEAD
 VAR01 \x08\x0b SET01  J\x00\x00 OPER  H\x02\x00 
 CHOICE_FLAG  J\x00\x00 OPER 
 CMD03 TextClose COMMAND_TO_BYTECODE2 ~\x0b\x00 
 F_END
+=======
+SEQ01 \x08\x0b
+SEQ14 
+SEQ08 " J\x00\x00 
+SEQ08  H\x02\x00 
+SEQ06  J\x00\x00 
+SEQ04 TextClose SPC02 ~\x0b\x00 
+FEND
+>>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
