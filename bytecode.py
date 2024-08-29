@@ -20,7 +20,7 @@ patterns = [
     {
         "pattern": [b'\x02', b'\x1f', b'\xb6\x01', b'\x1e', b'\x02', b'5'],
         # (Used a lot in SCENARIOROOT)
-        "action": "ID_SCENARIO"
+        "action": "ID_SCENARIO "
     },
     {
         "pattern": [b'\02', b'\x1f', b'\xde\x02', b'\x1e', b'\x02', b'5'],

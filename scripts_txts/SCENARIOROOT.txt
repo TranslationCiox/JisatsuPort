@@ -12,238 +12,238 @@ FLAG \xc8\x0c\x02" \xf8 \x02
 CMD1 BgOn6t\x81\x1fh\x01 END
 SCEN .\\Data\\Script\\Scenario\\001c.Fob \x84\x01 \x02
 CMD1 startt\x81\x1f\xb6\x01 END
-SCEN .\\Data\\Script\\Scenario\\002c.Fob \xd2\x01 ID_SCENARIO
-SCEN .\\Data\\Script\\Scenario\\003c.Fob \x12\x02 ID_SCENARIO
-SCEN .\\Data\\Script\\Scenario\\004c.Fob R\x02 ID_SCENARIO
-SCEN .\\Data\\Script\\Scenario\\005c.Fob \x92\x02 ID_SCENARIO FLAG_PRESENT \x02
+SCEN .\\Data\\Script\\Scenario\\002c.Fob \xd2\x01 ID_SCENARIO 
+SCEN .\\Data\\Script\\Scenario\\003c.Fob \x12\x02 ID_SCENARIO 
+SCEN .\\Data\\Script\\Scenario\\004c.Fob R\x02 ID_SCENARIO 
+SCEN .\\Data\\Script\\Scenario\\005c.Fob \x92\x02 ID_SCENARIO  FLAG_PRESENT \x02
 CMD2 GetLastTxtID6t\x81\x1f\xde\x02 END  
 LOAD_FLAG T\x04
-SCEN .\\Data\\Script\\Scenario\\006c.Fob \x16\x03 ID_SCENARIO FLAG_PRESENT FLAG_DEPENDANT  
+SCEN .\\Data\\Script\\Scenario\\006c.Fob \x16\x03 ID_SCENARIO  FLAG_PRESENT FLAG_DEPENDANT  
 LOAD_FLAG \x10\x04
-SCEN .\\Data\\Script\\Scenario\\008c.Fob \x84\x03 ID_SCENARIO2(\x04
-SCEN .\\Data\\Script\\Scenario\\007c.Fob \xca\x03 ID_SCENARIO2(\x042(\x04(\x04\x02~\x03\x01\xc4\x032l\x04 \xca\x03 ID_SCENARIO2l\x042l\x04l\x04\x02\x10\x03\x01.\x04
-SCEN .\\Data\\Script\\Scenario\\010C.Fob r\x04 ID_SCENARIO
-SCEN .\\Data\\Script\\Scenario\\011C.Fob \xb2\x04 ID_SCENARIO
-SCEN .\\Data\\Script\\Scenario\\012C.Fob \xf2\x04 ID_SCENARIO FLAG_PRESENT FLAG_DEPENDANT  
+SCEN .\\Data\\Script\\Scenario\\008c.Fob \x84\x03 ID_SCENARIO 2(\x04
+SCEN .\\Data\\Script\\Scenario\\007c.Fob \xca\x03 ID_SCENARIO 2(\x042(\x04(\x04\x02~\x03\x01\xc4\x032l\x04 \xca\x03 ID_SCENARIO 2l\x042l\x04l\x04\x02\x10\x03\x01.\x04
+SCEN .\\Data\\Script\\Scenario\\010C.Fob r\x04 ID_SCENARIO 
+SCEN .\\Data\\Script\\Scenario\\011C.Fob \xb2\x04 ID_SCENARIO 
+SCEN .\\Data\\Script\\Scenario\\012C.Fob \xf2\x04 ID_SCENARIO  FLAG_PRESENT FLAG_DEPENDANT  
 LOAD_FLAG R\x07
-SCEN .\\Data\\Script\\Scenario\\013C.Fob `\x05 ID_SCENARIO2j\x07
-SCEN .\\Data\\Script\\Scenario\\014C.Fob \xa6\x05 ID_SCENARIO FLAG_PRESENT FLAG_DEPENDANT  
+SCEN .\\Data\\Script\\Scenario\\013C.Fob `\x05 ID_SCENARIO 2j\x07
+SCEN .\\Data\\Script\\Scenario\\014C.Fob \xa6\x05 ID_SCENARIO  FLAG_PRESENT FLAG_DEPENDANT  
 LOAD_FLAG \xe6\x06
-SCEN .\\Data\\Script\\Scenario\\015C.Fob \x14\x06 ID_SCENARIO2\x06\x07
-SCEN .\\Data\\Script\\Scenario\\016C.Fob Z\x06 ID_SCENARIO2\x06\x07
-SCEN .\\Data\\Script\\Scenario\\017C.Fob \xa0\x06 ID_SCENARIO2\x06\x072\x06\x07\x06\x07\x03\x0e\x06\x01T\x06\x02\x9a\x06
-SCEN .\\Data\\Script\\Scenario\\018C.Fob \x0c\x07 ID_SCENARIO2j\x072j\x07j\x07\x02Z\x05\x01\xa0\x05
-SCEN .\\Data\\Script\\Scenario\\019C.Fob p\x07 ID_SCENARIO
-SCEN .\\Data\\Script\\Scenario\\020C.Fob \xb0\x07 ID_SCENARIO
-SCEN .\\Data\\Script\\Scenario\\021C.Fob \xf0\x07 ID_SCENARIO FLAG_PRESENT FLAG_DEPENDANT  
+SCEN .\\Data\\Script\\Scenario\\015C.Fob \x14\x06 ID_SCENARIO 2\x06\x07
+SCEN .\\Data\\Script\\Scenario\\016C.Fob Z\x06 ID_SCENARIO 2\x06\x07
+SCEN .\\Data\\Script\\Scenario\\017C.Fob \xa0\x06 ID_SCENARIO 2\x06\x072\x06\x07\x06\x07\x03\x0e\x06\x01T\x06\x02\x9a\x06
+SCEN .\\Data\\Script\\Scenario\\018C.Fob \x0c\x07 ID_SCENARIO 2j\x072j\x07j\x07\x02Z\x05\x01\xa0\x05
+SCEN .\\Data\\Script\\Scenario\\019C.Fob p\x07 ID_SCENARIO 
+SCEN .\\Data\\Script\\Scenario\\020C.Fob \xb0\x07 ID_SCENARIO 
+SCEN .\\Data\\Script\\Scenario\\021C.Fob \xf0\x07 ID_SCENARIO  FLAG_PRESENT FLAG_DEPENDANT  
 LOAD_FLAG 2\t! 
 FLAG 
 FLAG\x02 \x0c"
-SCEN .\\Data\\Script\\Scenario\\022C.Fob \x82\x08 ID_SCENARIO2J\t! 
+SCEN .\\Data\\Script\\Scenario\\022C.Fob \x82\x08 ID_SCENARIO 2J\t! 
 FLAG 
 FLAG\x02 \x01\x0c"
-SCEN .\\Data\\Script\\Scenario\\023C.Fob \xec\x08 ID_SCENARIO2J\t2J\tJ\t\x02X\x08\x01\xc2\x08
-SCEN .\\Data\\Script\\Scenario\\024C.Fob P\t ID_SCENARIO
-SCEN .\\Data\\Script\\Scenario\\025C.Fob \x90\t ID_SCENARIO
-SCEN .\\Data\\Script\\Scenario\\026C.Fob \xd0\t ID_SCENARIO
-SCEN .\\Data\\Script\\Scenario\\027C.Fob \x10\n ID_SCENARIO
-SCEN .\\Data\\Script\\Scenario\\028C.Fob P\n ID_SCENARIO
-SCEN .\\Data\\Script\\Scenario\\029C.Fob \x90\n ID_SCENARIO
-SCEN .\\Data\\Script\\Scenario\\030C.Fob \xd0\n ID_SCENARIO
-SCEN .\\Data\\Script\\Scenario\\031C.Fob \x10\x0b ID_SCENARIO
-SCEN .\\Data\\Script\\Scenario\\032C.Fob P\x0b ID_SCENARIO
-SCEN .\\Data\\Script\\Scenario\\033C.Fob \x90\x0b ID_SCENARIO FLAG_PRESENT FLAG_DEPENDANT  
+SCEN .\\Data\\Script\\Scenario\\023C.Fob \xec\x08 ID_SCENARIO 2J\t2J\tJ\t\x02X\x08\x01\xc2\x08
+SCEN .\\Data\\Script\\Scenario\\024C.Fob P\t ID_SCENARIO 
+SCEN .\\Data\\Script\\Scenario\\025C.Fob \x90\t ID_SCENARIO 
+SCEN .\\Data\\Script\\Scenario\\026C.Fob \xd0\t ID_SCENARIO 
+SCEN .\\Data\\Script\\Scenario\\027C.Fob \x10\n ID_SCENARIO 
+SCEN .\\Data\\Script\\Scenario\\028C.Fob P\n ID_SCENARIO 
+SCEN .\\Data\\Script\\Scenario\\029C.Fob \x90\n ID_SCENARIO 
+SCEN .\\Data\\Script\\Scenario\\030C.Fob \xd0\n ID_SCENARIO 
+SCEN .\\Data\\Script\\Scenario\\031C.Fob \x10\x0b ID_SCENARIO 
+SCEN .\\Data\\Script\\Scenario\\032C.Fob P\x0b ID_SCENARIO 
+SCEN .\\Data\\Script\\Scenario\\033C.Fob \x90\x0b ID_SCENARIO  FLAG_PRESENT FLAG_DEPENDANT  
 LOAD_FLAG :\x0f
-SCEN .\\Data\\Script\\Scenario\\035C.Fob \xfe\x0b ID_SCENARIO
-SCEN .\\Data\\Script\\Scenario\\043C.Fob >\x0c ID_SCENARIO2Z\x0f
-SCEN .\\Data\\Script\\Scenario\\034C.Fob \x84\x0c ID_SCENARIO
-SCEN .\\Data\\Script\\Scenario\\037C.Fob \xc4\x0c ID_SCENARIO FLAG_PRESENT FLAG_DEPENDANT  
+SCEN .\\Data\\Script\\Scenario\\035C.Fob \xfe\x0b ID_SCENARIO 
+SCEN .\\Data\\Script\\Scenario\\043C.Fob >\x0c ID_SCENARIO 2Z\x0f
+SCEN .\\Data\\Script\\Scenario\\034C.Fob \x84\x0c ID_SCENARIO 
+SCEN .\\Data\\Script\\Scenario\\037C.Fob \xc4\x0c ID_SCENARIO  FLAG_PRESENT FLAG_DEPENDANT  
 LOAD_FLAG \x90\x0e
-SCEN .\\Data\\Script\\Scenario\\038C.Fob 2\r ID_SCENARIO2\xa8\x0e
-SCEN .\\Data\\Script\\Scenario\\039C.Fob x\r ID_SCENARIO FLAG_PRESENT FLAG_DEPENDANT  
+SCEN .\\Data\\Script\\Scenario\\038C.Fob 2\r ID_SCENARIO 2\xa8\x0e
+SCEN .\\Data\\Script\\Scenario\\039C.Fob x\r ID_SCENARIO  FLAG_PRESENT FLAG_DEPENDANT  
 LOAD_FLAG l\x0e
-SCEN .\\Data\\Script\\Scenario\\040C.Fob \xe6\r ID_SCENARIO2\x84\x0e
-SCEN .\\Data\\Script\\Scenario\\041C.Fob ,\x0e ID_SCENARIO2\x84\x0e\x84\x0e\x02\xe0\r\x01&\x0e2\xa8\x0e2\xa8\x0e\xa8\x0e\x02,\r\x01r\r2Z\x0f
-SCEN .\\Data\\Script\\Scenario\\036C.Fob \xb4\x0e ID_SCENARIO
-SCEN .\\Data\\Script\\Scenario\\044C.Fob \xf4\x0e ID_SCENARIO2Z\x0f2Z\x0fZ\x0f\x03\xf8\x0b\x01~\x0c\x02\xae\x0e
-SCEN .\\Data\\Script\\Scenario\\042C.Fob `\x0f ID_SCENARIO
-SCEN .\\Data\\Script\\Scenario\\045C.Fob \xa0\x0f ID_SCENARIO FLAG_PRESENT FLAG_DEPENDANT  
+SCEN .\\Data\\Script\\Scenario\\040C.Fob \xe6\r ID_SCENARIO 2\x84\x0e
+SCEN .\\Data\\Script\\Scenario\\041C.Fob ,\x0e ID_SCENARIO 2\x84\x0e\x84\x0e\x02\xe0\r\x01&\x0e2\xa8\x0e2\xa8\x0e\xa8\x0e\x02,\r\x01r\r2Z\x0f
+SCEN .\\Data\\Script\\Scenario\\036C.Fob \xb4\x0e ID_SCENARIO 
+SCEN .\\Data\\Script\\Scenario\\044C.Fob \xf4\x0e ID_SCENARIO 2Z\x0f2Z\x0fZ\x0f\x03\xf8\x0b\x01~\x0c\x02\xae\x0e
+SCEN .\\Data\\Script\\Scenario\\042C.Fob `\x0f ID_SCENARIO 
+SCEN .\\Data\\Script\\Scenario\\045C.Fob \xa0\x0f ID_SCENARIO  FLAG_PRESENT FLAG_DEPENDANT  
 LOAD_FLAG \x9a\x10
-SCEN .\\Data\\Script\\Scenario\\046C.Fob \x0e\x10 ID_SCENARIO2\xb2\x10
-SCEN .\\Data\\Script\\Scenario\\047C.Fob T\x10 ID_SCENARIO2\xb2\x102\xb2\x10\xb2\x10\x02\x08\x10\x01N\x10
-SCEN .\\Data\\Script\\Scenario\\048C.Fob \xb8\x10 ID_SCENARIO
-SCEN .\\Data\\Script\\Scenario\\049C.Fob \xf8\x10 ID_SCENARIO
-SCEN .\\Data\\Script\\Scenario\\050C.Fob 8\x11 ID_SCENARIO
-SCEN .\\Data\\Script\\Scenario\\051C.Fob x\x11 ID_SCENARIO FLAG_PRESENT FLAG_DEPENDANT  
+SCEN .\\Data\\Script\\Scenario\\046C.Fob \x0e\x10 ID_SCENARIO 2\xb2\x10
+SCEN .\\Data\\Script\\Scenario\\047C.Fob T\x10 ID_SCENARIO 2\xb2\x102\xb2\x10\xb2\x10\x02\x08\x10\x01N\x10
+SCEN .\\Data\\Script\\Scenario\\048C.Fob \xb8\x10 ID_SCENARIO 
+SCEN .\\Data\\Script\\Scenario\\049C.Fob \xf8\x10 ID_SCENARIO 
+SCEN .\\Data\\Script\\Scenario\\050C.Fob 8\x11 ID_SCENARIO 
+SCEN .\\Data\\Script\\Scenario\\051C.Fob x\x11 ID_SCENARIO  FLAG_PRESENT FLAG_DEPENDANT  
 LOAD_FLAG H\x14
-SCEN .\\Data\\Script\\Scenario\\052C.Fob \xe6\x11 ID_SCENARIO  
+SCEN .\\Data\\Script\\Scenario\\052C.Fob \xe6\x11 ID_SCENARIO   
 FLAG \xff\xff\xff\xff\x0c\x02"2\x04?2`\x14
-SCEN .\\Data\\Script\\Scenario\\053C.Fob L\x12 ID_SCENARIO FLAG_PRESENT FLAG_DEPENDANT  
+SCEN .\\Data\\Script\\Scenario\\053C.Fob L\x12 ID_SCENARIO  FLAG_PRESENT FLAG_DEPENDANT  
 LOAD_FLAG $\x14
-SCEN .\\Data\\Script\\Scenario\\054C.Fob \xba\x12 ID_SCENARIO  
+SCEN .\\Data\\Script\\Scenario\\054C.Fob \xba\x12 ID_SCENARIO   
 FLAG \xff\xff\xff\xff\x0c\x02"2\x04?2<\x14
-SCEN .\\Data\\Script\\Scenario\\055C.Fob  \x13 ID_SCENARIO! 
+SCEN .\\Data\\Script\\Scenario\\055C.Fob  \x13 ID_SCENARIO ! 
 FLAG 
 FLAG\x02 \x0b
 FLAG\x01 \x1b1\xd8\x13
-SCEN .\\Data\\Script\\Scenario\\056C.Fob \x98\x13 ID_SCENARIO2\x18\x14
-SCEN .\\Data\\Script\\Scenario\\057C.Fob \xde\x13 ID_SCENARIO2<\x142<\x14<\x14\x02\xb4\x12\x01\x1a\x132`\x142`\x14`\x14\x02\xe0\x11\x01F\x12
-SCEN .\\Data\\Script\\Scenario\\058C.Fob f\x14 ID_SCENARIO FLAG_PRESENT FLAG_DEPENDANT  
+SCEN .\\Data\\Script\\Scenario\\056C.Fob \x98\x13 ID_SCENARIO 2\x18\x14
+SCEN .\\Data\\Script\\Scenario\\057C.Fob \xde\x13 ID_SCENARIO 2<\x142<\x14<\x14\x02\xb4\x12\x01\x1a\x132`\x142`\x14`\x14\x02\xe0\x11\x01F\x12
+SCEN .\\Data\\Script\\Scenario\\058C.Fob f\x14 ID_SCENARIO  FLAG_PRESENT FLAG_DEPENDANT  
 LOAD_FLAG `\x15
-SCEN .\\Data\\Script\\Scenario\\059C.Fob \xd4\x14 ID_SCENARIO2x\x15
-SCEN .\\Data\\Script\\Scenario\\060C.Fob \x1a\x15 ID_SCENARIO2x\x152x\x15x\x15\x02\xce\x14\x01\x14\x15
-SCEN .\\Data\\Script\\Scenario\\061C.Fob ~\x15 ID_SCENARIO
-SCEN .\\Data\\Script\\Scenario\\062C.Fob \xbe\x15 ID_SCENARIO FLAG_PRESENT FLAG_DEPENDANT  
+SCEN .\\Data\\Script\\Scenario\\059C.Fob \xd4\x14 ID_SCENARIO 2x\x15
+SCEN .\\Data\\Script\\Scenario\\060C.Fob \x1a\x15 ID_SCENARIO 2x\x152x\x15x\x15\x02\xce\x14\x01\x14\x15
+SCEN .\\Data\\Script\\Scenario\\061C.Fob ~\x15 ID_SCENARIO 
+SCEN .\\Data\\Script\\Scenario\\062C.Fob \xbe\x15 ID_SCENARIO  FLAG_PRESENT FLAG_DEPENDANT  
 LOAD_FLAG >\x162$\x192V\x162V\x162V\x16V\x16\x02&\x16\x012\x16
-SCEN .\\Data\\Script\\Scenario\\064C.Fob \\\x16 ID_SCENARIO FLAG_PRESENT FLAG_DEPENDANT  
+SCEN .\\Data\\Script\\Scenario\\064C.Fob \\\x16 ID_SCENARIO  FLAG_PRESENT FLAG_DEPENDANT  
 LOAD_FLAG \xdc\x162$\x192\xf4\x162\xf4\x162\xf4\x16\xf4\x16\x02\xc4\x16\x01\xd0\x16
-SCEN .\\Data\\Script\\Scenario\\065C.Fob \xfa\x16 ID_SCENARIO FLAG_PRESENT FLAG_DEPENDANT  
+SCEN .\\Data\\Script\\Scenario\\065C.Fob \xfa\x16 ID_SCENARIO  FLAG_PRESENT FLAG_DEPENDANT  
 LOAD_FLAG z\x172\x9a\x172$\x192\x9a\x172\x9a\x17\x9a\x17\x03b\x17\x01h\x17\x02h\x17
-SCEN .\\Data\\Script\\Scenario\\066C.Fob \xa0\x17 ID_SCENARIO FLAG_PRESENT FLAG_DEPENDANT  
+SCEN .\\Data\\Script\\Scenario\\066C.Fob \xa0\x17 ID_SCENARIO  FLAG_PRESENT FLAG_DEPENDANT  
 LOAD_FLAG  \x182@\x182$\x192@\x182@\x18@\x18\x03\x08\x18\x01\x0e\x18\x02\x0e\x18
-SCEN .\\Data\\Script\\Scenario\\067C.Fob F\x18 ID_SCENARIO FLAG_PRESENT FLAG_DEPENDANT  
+SCEN .\\Data\\Script\\Scenario\\067C.Fob F\x18 ID_SCENARIO  FLAG_PRESENT FLAG_DEPENDANT  
 LOAD_FLAG \xc6\x182$\x192\xde\x182\xde\x182\xde\x18\xde\x18\x02\xae\x18\x01\xba\x18
-SCEN .\\Data\\Script\\Scenario\\068C.Fob \xe4\x18 ID_SCENARIO2\x84\x19
-SCEN .\\Data\\Script\\Scenario\\063C.Fob *\x19 ID_SCENARIO  
+SCEN .\\Data\\Script\\Scenario\\068C.Fob \xe4\x18 ID_SCENARIO 2\x84\x19
+SCEN .\\Data\\Script\\Scenario\\063C.Fob *\x19 ID_SCENARIO   
 FLAG \xff\xff\xff\xff\x0c\x02"2\x04?
-SCEN .\\Data\\Script\\Scenario\\069C.Fob \x8a\x19 ID_SCENARIO FLAG_PRESENT FLAG_DEPENDANT  
+SCEN .\\Data\\Script\\Scenario\\069C.Fob \x8a\x19 ID_SCENARIO  FLAG_PRESENT FLAG_DEPENDANT  
 LOAD_FLAG ^\x1c
-SCEN .\\Data\\Script\\Scenario\\070C.Fob \xf8\x19 ID_SCENARIO FLAG_PRESENT FLAG_DEPENDANT  
+SCEN .\\Data\\Script\\Scenario\\070C.Fob \xf8\x19 ID_SCENARIO  FLAG_PRESENT FLAG_DEPENDANT  
 LOAD_FLAG \xd2\x1a2\xea\x1a
-SCEN .\\Data\\Script\\Scenario\\072C.Fob l\x1a ID_SCENARIO  
+SCEN .\\Data\\Script\\Scenario\\072C.Fob l\x1a ID_SCENARIO   
 FLAG \xff\xff\xff\xff\x0c\x02"2\x04?2\xea\x1a2\xea\x1a\xea\x1a\x02`\x1a\x01f\x1a
-SCEN .\\Data\\Script\\Scenario\\071C.Fob \xf0\x1a ID_SCENARIO FLAG_PRESENT FLAG_DEPENDANT  
+SCEN .\\Data\\Script\\Scenario\\071C.Fob \xf0\x1a ID_SCENARIO  FLAG_PRESENT FLAG_DEPENDANT  
 LOAD_FLAG *\x1c
-SCEN .\\Data\\Script\\Scenario\\073C.Fob ^\x1b ID_SCENARIO  
+SCEN .\\Data\\Script\\Scenario\\073C.Fob ^\x1b ID_SCENARIO   
 FLAG \xff\xff\xff\xff\x0c\x02"2\x04?2R\x1c
-SCEN .\\Data\\Script\\Scenario\\074C.Fob \xc4\x1b ID_SCENARIO2R\x1c l\x1a ID_SCENARIO2R\x1c2R\x1cR\x1c\x04X\x1b\x01\xbe\x1b\x02\xbe\x1b\x03\x04\x1c2v\x1c2v\x1cv\x1c\x02\xf2\x19\x01\xea\x1a
-SCEN .\\Data\\Script\\Scenario\\075C.Fob |\x1c ID_SCENARIO FLAG_PRESENT FLAG_DEPENDANT  
+SCEN .\\Data\\Script\\Scenario\\074C.Fob \xc4\x1b ID_SCENARIO 2R\x1c l\x1a ID_SCENARIO 2R\x1c2R\x1cR\x1c\x04X\x1b\x01\xbe\x1b\x02\xbe\x1b\x03\x04\x1c2v\x1c2v\x1cv\x1c\x02\xf2\x19\x01\xea\x1a
+SCEN .\\Data\\Script\\Scenario\\075C.Fob |\x1c ID_SCENARIO  FLAG_PRESENT FLAG_DEPENDANT  
 FLAG \x1b\x021\xb8\x1d
-SCEN .\\Data\\Script\\Scenario\\076C.Fob \xf8\x1c ID_SCENARIO
-SCEN .\\Data\\Script\\Scenario\\078C.Fob 8\x1d ID_SCENARIO
-SCEN .\\Data\\Script\\Scenario\\086C.Fob x\x1d ID_SCENARIO2\x14 
-SCEN .\\Data\\Script\\Scenario\\077C.Fob \xbe\x1d ID_SCENARIO
-SCEN .\\Data\\Script\\Scenario\\079C.Fob \xfe\x1d ID_SCENARIO
-SCEN .\\Data\\Script\\Scenario\\080C.Fob >\x1e ID_SCENARIO
-SCEN .\\Data\\Script\\Scenario\\081C.Fob ~\x1e ID_SCENARIO FLAG_PRESENT FLAG_DEPENDANT  
+SCEN .\\Data\\Script\\Scenario\\076C.Fob \xf8\x1c ID_SCENARIO 
+SCEN .\\Data\\Script\\Scenario\\078C.Fob 8\x1d ID_SCENARIO 
+SCEN .\\Data\\Script\\Scenario\\086C.Fob x\x1d ID_SCENARIO 2\x14 
+SCEN .\\Data\\Script\\Scenario\\077C.Fob \xbe\x1d ID_SCENARIO 
+SCEN .\\Data\\Script\\Scenario\\079C.Fob \xfe\x1d ID_SCENARIO 
+SCEN .\\Data\\Script\\Scenario\\080C.Fob >\x1e ID_SCENARIO 
+SCEN .\\Data\\Script\\Scenario\\081C.Fob ~\x1e ID_SCENARIO  FLAG_PRESENT FLAG_DEPENDANT  
 LOAD_FLAG x\x1f
-SCEN .\\Data\\Script\\Scenario\\082C.Fob \xec\x1e ID_SCENARIO2\x90\x1f
-SCEN .\\Data\\Script\\Scenario\\083C.Fob 2\x1f ID_SCENARIO2\x90\x1f2\x90\x1f\x90\x1f\x02\xe6\x1e\x01,\x1f
-SCEN .\\Data\\Script\\Scenario\\084C.Fob \x96\x1f ID_SCENARIO
-HERO .\\Data\\Script\\Scenario\\085aC.Fob \xd6\x1f ID_SCENARIO
-SCEN .\\Data\\Script\\Scenario\\087C.Fob \x1a  ID_SCENARIO
-SCEN .\\Data\\Script\\Scenario\\088C.Fob Z  ID_SCENARIO
-SCEN .\\Data\\Script\\Scenario\\089C.Fob \x9a  ID_SCENARIO
-SCEN .\\Data\\Script\\Scenario\\090C.Fob \xda  ID_SCENARIO
-SCEN .\\Data\\Script\\Scenario\\091C.Fob \x1a! ID_SCENARIO  
+SCEN .\\Data\\Script\\Scenario\\082C.Fob \xec\x1e ID_SCENARIO 2\x90\x1f
+SCEN .\\Data\\Script\\Scenario\\083C.Fob 2\x1f ID_SCENARIO 2\x90\x1f2\x90\x1f\x90\x1f\x02\xe6\x1e\x01,\x1f
+SCEN .\\Data\\Script\\Scenario\\084C.Fob \x96\x1f ID_SCENARIO 
+HERO .\\Data\\Script\\Scenario\\085aC.Fob \xd6\x1f ID_SCENARIO 
+SCEN .\\Data\\Script\\Scenario\\087C.Fob \x1a  ID_SCENARIO 
+SCEN .\\Data\\Script\\Scenario\\088C.Fob Z  ID_SCENARIO 
+SCEN .\\Data\\Script\\Scenario\\089C.Fob \x9a  ID_SCENARIO 
+SCEN .\\Data\\Script\\Scenario\\090C.Fob \xda  ID_SCENARIO 
+SCEN .\\Data\\Script\\Scenario\\091C.Fob \x1a! ID_SCENARIO   
 LOAD_FLAG L"
-HERO .\\Data\\Script\\Scenario\\SamomoSP.Fob n! ID_SCENARIO2l"
-HERO .\\Data\\Script\\Scenario\\kannaSP.Fob \xb8! ID_SCENARIO2l"
-HERO .\\Data\\Script\\Scenario\\KinjouSP.Fob \x02" ID_SCENARIO2l"2l"l"\x03h!\x01\xb2!\x02\xfc!
-SCEN .\\Data\\Script\\Scenario\\092C.Fob r" ID_SCENARIO FLAG_PRESENT FLAG_DEPENDANT  
+HERO .\\Data\\Script\\Scenario\\SamomoSP.Fob n! ID_SCENARIO 2l"
+HERO .\\Data\\Script\\Scenario\\kannaSP.Fob \xb8! ID_SCENARIO 2l"
+HERO .\\Data\\Script\\Scenario\\KinjouSP.Fob \x02" ID_SCENARIO 2l"2l"l"\x03h!\x01\xb2!\x02\xfc!
+SCEN .\\Data\\Script\\Scenario\\092C.Fob r" ID_SCENARIO  FLAG_PRESENT FLAG_DEPENDANT  
 LOAD_FLAG l#
-SCEN .\\Data\\Script\\Scenario\\093C.Fob \xe0" ID_SCENARIO2\x84#
-SCEN .\\Data\\Script\\Scenario\\094C.Fob &# ID_SCENARIO2\x84#2\x84#\x84#\x02\xda"\x01 #
-SCEN .\\Data\\Script\\Scenario\\095C.Fob \x8a# ID_SCENARIO  
-LOAD_FLAG >$ n! ID_SCENARIO2^$ \xb8! ID_SCENARIO2^$ \x02" ID_SCENARIO2^$2^$^$\x03\xd8#\x01\xf8#\x02\x18$
-SCEN .\\Data\\Script\\Scenario\\096C.Fob d$ ID_SCENARIO
-SCEN .\\Data\\Script\\Scenario\\097C.Fob \xa4$ ID_SCENARIO  
-LOAD_FLAG X% n! ID_SCENARIO2x% \xb8! ID_SCENARIO2x% \x02" ID_SCENARIO2x%2x%x%\x03\xf2$\x01\x12%\x022%
-SCEN .\\Data\\Script\\Scenario\\098C.Fob ~% ID_SCENARIO FLAG_PRESENT FLAG_DEPENDANT! 
+SCEN .\\Data\\Script\\Scenario\\093C.Fob \xe0" ID_SCENARIO 2\x84#
+SCEN .\\Data\\Script\\Scenario\\094C.Fob &# ID_SCENARIO 2\x84#2\x84#\x84#\x02\xda"\x01 #
+SCEN .\\Data\\Script\\Scenario\\095C.Fob \x8a# ID_SCENARIO   
+LOAD_FLAG >$ n! ID_SCENARIO 2^$ \xb8! ID_SCENARIO 2^$ \x02" ID_SCENARIO 2^$2^$^$\x03\xd8#\x01\xf8#\x02\x18$
+SCEN .\\Data\\Script\\Scenario\\096C.Fob d$ ID_SCENARIO 
+SCEN .\\Data\\Script\\Scenario\\097C.Fob \xa4$ ID_SCENARIO   
+LOAD_FLAG X% n! ID_SCENARIO 2x% \xb8! ID_SCENARIO 2x% \x02" ID_SCENARIO 2x%2x%x%\x03\xf2$\x01\x12%\x022%
+SCEN .\\Data\\Script\\Scenario\\098C.Fob ~% ID_SCENARIO  FLAG_PRESENT FLAG_DEPENDANT! 
 FLAG \x08
 FLAG\x02  
 FLAG\x0c\x01"  
 LOAD_FLAG \xa2&
-SCEN .\\Data\\Script\\Scenario\\099C.Fob \x16& ID_SCENARIO2\xba&
-SCEN .\\Data\\Script\\Scenario\\100C.Fob \\& ID_SCENARIO2\xba&2\xba&\xba&\x02\x10&\x01V&
-SCEN .\\Data\\Script\\Scenario\\101C.Fob \xc0& ID_SCENARIO  
-LOAD_FLAG t' n! ID_SCENARIO2\x94' \xb8! ID_SCENARIO2\x94' \x02" ID_SCENARIO2\x94'2\x94'\x94'\x03\x0e'\x01.'\x02N'
-SCEN .\\Data\\Script\\Scenario\\102C.Fob \x9a' ID_SCENARIO FLAG_PRESENT FLAG_DEPENDANT  
+SCEN .\\Data\\Script\\Scenario\\099C.Fob \x16& ID_SCENARIO 2\xba&
+SCEN .\\Data\\Script\\Scenario\\100C.Fob \\& ID_SCENARIO 2\xba&2\xba&\xba&\x02\x10&\x01V&
+SCEN .\\Data\\Script\\Scenario\\101C.Fob \xc0& ID_SCENARIO   
+LOAD_FLAG t' n! ID_SCENARIO 2\x94' \xb8! ID_SCENARIO 2\x94' \x02" ID_SCENARIO 2\x94'2\x94'\x94'\x03\x0e'\x01.'\x02N'
+SCEN .\\Data\\Script\\Scenario\\102C.Fob \x9a' ID_SCENARIO  FLAG_PRESENT FLAG_DEPENDANT  
 LOAD_FLAG \xa6)
-SCEN .\\Data\\Script\\Scenario\\103C.Fob \x08( ID_SCENARIO
-SCEN .\\Data\\Script\\Scenario\\105C.Fob H( ID_SCENARIO2\xbe)
-SCEN .\\Data\\Script\\Scenario\\104C.Fob \x8e( ID_SCENARIO FLAG_PRESENT FLAG_DEPENDANT  
-LOAD_FLAG \x82) H( ID_SCENARIO2\x9a)
-SCEN .\\Data\\Script\\Scenario\\106C.Fob \x1c) ID_SCENARIO  
+SCEN .\\Data\\Script\\Scenario\\103C.Fob \x08( ID_SCENARIO 
+SCEN .\\Data\\Script\\Scenario\\105C.Fob H( ID_SCENARIO 2\xbe)
+SCEN .\\Data\\Script\\Scenario\\104C.Fob \x8e( ID_SCENARIO  FLAG_PRESENT FLAG_DEPENDANT  
+LOAD_FLAG \x82) H( ID_SCENARIO 2\x9a)
+SCEN .\\Data\\Script\\Scenario\\106C.Fob \x1c) ID_SCENARIO   
 FLAG \xff\xff\xff\xff\x0c\x02"2\x04?2\x9a)2\x9a)\x9a)\x02\xf6(\x01\x16)2\xbe)2\xbe)\xbe)\x02\x02(\x01\x88(
-SCEN .\\Data\\Script\\Scenario\\107C.Fob \xc4) ID_SCENARIO  
-LOAD_FLAG ^*2~* \xb8! ID_SCENARIO2~* \x02" ID_SCENARIO2~*2~*~*\x03\x12*\x01\x18*\x028*
-SCEN .\\Data\\Script\\Scenario\\108C.Fob \x84* ID_SCENARIO
-SCEN .\\Data\\Script\\Scenario\\109C.Fob \xc4* ID_SCENARIO
-SCEN .\\Data\\Script\\Scenario\\200C.Fob \x04+ ID_SCENARIO
-SCEN .\\Data\\Script\\Scenario\\201C.Fob D+ ID_SCENARIO FLAG_PRESENT FLAG_DEPENDANT  
+SCEN .\\Data\\Script\\Scenario\\107C.Fob \xc4) ID_SCENARIO   
+LOAD_FLAG ^*2~* \xb8! ID_SCENARIO 2~* \x02" ID_SCENARIO 2~*2~*~*\x03\x12*\x01\x18*\x028*
+SCEN .\\Data\\Script\\Scenario\\108C.Fob \x84* ID_SCENARIO 
+SCEN .\\Data\\Script\\Scenario\\109C.Fob \xc4* ID_SCENARIO 
+SCEN .\\Data\\Script\\Scenario\\200C.Fob \x04+ ID_SCENARIO 
+SCEN .\\Data\\Script\\Scenario\\201C.Fob D+ ID_SCENARIO  FLAG_PRESENT FLAG_DEPENDANT  
 LOAD_FLAG \xca.
-SCEN .\\Data\\Script\\Scenario\\203C.Fob \xb2+ ID_SCENARIO
-SCEN .\\Data\\Script\\Scenario\\202C.Fob \xf2+ ID_SCENARIO FLAG_PRESENT FLAG_DEPENDANT  
+SCEN .\\Data\\Script\\Scenario\\203C.Fob \xb2+ ID_SCENARIO 
+SCEN .\\Data\\Script\\Scenario\\202C.Fob \xf2+ ID_SCENARIO  FLAG_PRESENT FLAG_DEPENDANT  
 LOAD_FLAG \xa6.
-SCEN .\\Data\\Script\\Scenario\\205C.Fob `, ID_SCENARIO
-SCEN .\\Data\\Script\\Scenario\\204C.Fob \xa0, ID_SCENARIO
-S204 .\\Data\\Script\\Scenario\\Sce204Sel.Fob \xe0, ID_SCENARIO  
+SCEN .\\Data\\Script\\Scenario\\205C.Fob `, ID_SCENARIO 
+SCEN .\\Data\\Script\\Scenario\\204C.Fob \xa0, ID_SCENARIO 
+S204 .\\Data\\Script\\Scenario\\Sce204Sel.Fob \xe0, ID_SCENARIO   
 LOAD_FLAG z.! 
 FLAG \x0c
 FLAG\x02 \x01\x0cFLAG_PRESENT"
-SCEN .\\Data\\Script\\Scenario\\206C.Fob `- ID_SCENARIO2\xda,! 
+SCEN .\\Data\\Script\\Scenario\\206C.Fob `- ID_SCENARIO 2\xda,! 
 FLAG \x0c
 FLAG\x02 \x02\x0cFLAG_PRESENT"
-SCEN .\\Data\\Script\\Scenario\\207C.Fob \xca- ID_SCENARIO2\xda,! 
+SCEN .\\Data\\Script\\Scenario\\207C.Fob \xca- ID_SCENARIO 2\xda,! 
 FLAG \x0c
 FLAG\x02 \x04\x0cFLAG_PRESENT"
-SCEN .\\Data\\Script\\Scenario\\208C.Fob 4. ID_SCENARIO2\xda,2\x9a.\x9a.\x03\x016-\x02\xa0-\x04\n.2\xbe.2\xbe.\xbe.\x02Z,\x01\x9a,2\xe2.2\xe2.\xe2.\x02\xac+\x01\xec+
-SCEN .\\Data\\Script\\Scenario\\209C.Fob \xe8. ID_SCENARIO FLAG_PRESENT FLAG_DEPENDANT  
+SCEN .\\Data\\Script\\Scenario\\208C.Fob 4. ID_SCENARIO 2\xda,2\x9a.\x9a.\x03\x016-\x02\xa0-\x04\n.2\xbe.2\xbe.\xbe.\x02Z,\x01\x9a,2\xe2.2\xe2.\xe2.\x02\xac+\x01\xec+
+SCEN .\\Data\\Script\\Scenario\\209C.Fob \xe8. ID_SCENARIO  FLAG_PRESENT FLAG_DEPENDANT  
 LOAD_FLAG \xc80
-SCEN .\\Data\\Script\\Scenario\\210C.Fob V/ ID_SCENARIO  
+SCEN .\\Data\\Script\\Scenario\\210C.Fob V/ ID_SCENARIO   
 FLAG \xff\xff\xff\xff\x0c\x02"2\x04?2\xe80
-SCEN .\\Data\\Script\\Scenario\\211C.Fob \xbc/ ID_SCENARIO
-SCEN .\\Data\\Script\\Scenario\\213C.Fob \xfc/ ID_SCENARIO2\xe80
-SCEN .\\Data\\Script\\Scenario\\212C.Fob B0 ID_SCENARIO
-SCEN .\\Data\\Script\\Scenario\\214C.Fob \x820 ID_SCENARIO2\xe802\xe80\xe80\x03P/\x01\xb6/\x02<0
-SCEN .\\Data\\Script\\Scenario\\215C.Fob \xee0 ID_SCENARIO
-SCEN .\\Data\\Script\\Scenario\\216C.Fob .1 ID_SCENARIO  
-LOAD_FLAG \xc21 n! ID_SCENARIO2\xda1 \xb8! ID_SCENARIO2\xda12\xda1\xda1\x02|1\x01\x9c1
-SCEN .\\Data\\Script\\Scenario\\217C.Fob \xe01 ID_SCENARIO FLAG_PRESENT FLAG_DEPENDANT  
+SCEN .\\Data\\Script\\Scenario\\211C.Fob \xbc/ ID_SCENARIO 
+SCEN .\\Data\\Script\\Scenario\\213C.Fob \xfc/ ID_SCENARIO 2\xe80
+SCEN .\\Data\\Script\\Scenario\\212C.Fob B0 ID_SCENARIO 
+SCEN .\\Data\\Script\\Scenario\\214C.Fob \x820 ID_SCENARIO 2\xe802\xe80\xe80\x03P/\x01\xb6/\x02<0
+SCEN .\\Data\\Script\\Scenario\\215C.Fob \xee0 ID_SCENARIO 
+SCEN .\\Data\\Script\\Scenario\\216C.Fob .1 ID_SCENARIO   
+LOAD_FLAG \xc21 n! ID_SCENARIO 2\xda1 \xb8! ID_SCENARIO 2\xda12\xda1\xda1\x02|1\x01\x9c1
+SCEN .\\Data\\Script\\Scenario\\217C.Fob \xe01 ID_SCENARIO  FLAG_PRESENT FLAG_DEPENDANT  
 LOAD_FLAG \xda2
-SCEN .\\Data\\Script\\Scenario\\218C.Fob N2 ID_SCENARIO2\xf22
-SCEN .\\Data\\Script\\Scenario\\219C.Fob \x942 ID_SCENARIO2\xf222\xf22\xf22\x02H2\x01\x8e2
-SCEN .\\Data\\Script\\Scenario\\220C.Fob \xf82 ID_SCENARIO
-SCEN .\\Data\\Script\\Scenario\\221C.Fob 83 ID_SCENARIO FLAG_PRESENT FLAG_DEPENDANT  
+SCEN .\\Data\\Script\\Scenario\\218C.Fob N2 ID_SCENARIO 2\xf22
+SCEN .\\Data\\Script\\Scenario\\219C.Fob \x942 ID_SCENARIO 2\xf222\xf22\xf22\x02H2\x01\x8e2
+SCEN .\\Data\\Script\\Scenario\\220C.Fob \xf82 ID_SCENARIO 
+SCEN .\\Data\\Script\\Scenario\\221C.Fob 83 ID_SCENARIO  FLAG_PRESENT FLAG_DEPENDANT  
 LOAD_FLAG :4! 
 FLAG \x10
 FLAG\x02 \x01\x0c"
-SCEN .\\Data\\Script\\Scenario\\222C.Fob \xca3 ID_SCENARIO2R4! 
+SCEN .\\Data\\Script\\Scenario\\222C.Fob \xca3 ID_SCENARIO 2R4! 
 FLAG \x10
 FLAG\x02 \x0c"2R42R4R4\x02\xa03\x01\n4
-SCEN .\\Data\\Script\\Scenario\\223C.Fob X4 ID_SCENARIO FLAG_PRESENT FLAG_DEPENDANT  
+SCEN .\\Data\\Script\\Scenario\\223C.Fob X4 ID_SCENARIO  FLAG_PRESENT FLAG_DEPENDANT  
 LOAD_FLAG R5
-SCEN .\\Data\\Script\\Scenario\\224C.Fob \xc64 ID_SCENARIO2j5
-SCEN .\\Data\\Script\\Scenario\\225C.Fob \x0c5 ID_SCENARIO2j52j5j5\x02\xc04\x01\x065
-SCEN .\\Data\\Script\\Scenario\\226C.Fob p5 ID_SCENARIO
-SCEN .\\Data\\Script\\Scenario\\227C.Fob \xb05 ID_SCENARIO
-SCEN .\\Data\\Script\\Scenario\\228C.Fob \xf05 ID_SCENARIO FLAG_PRESENT FLAG_DEPENDANT  
+SCEN .\\Data\\Script\\Scenario\\224C.Fob \xc64 ID_SCENARIO 2j5
+SCEN .\\Data\\Script\\Scenario\\225C.Fob \x0c5 ID_SCENARIO 2j52j5j5\x02\xc04\x01\x065
+SCEN .\\Data\\Script\\Scenario\\226C.Fob p5 ID_SCENARIO 
+SCEN .\\Data\\Script\\Scenario\\227C.Fob \xb05 ID_SCENARIO 
+SCEN .\\Data\\Script\\Scenario\\228C.Fob \xf05 ID_SCENARIO  FLAG_PRESENT FLAG_DEPENDANT  
 LOAD_FLAG \xea6
-SCEN .\\Data\\Script\\Scenario\\229C.Fob ^6 ID_SCENARIO2\x027
-SCEN .\\Data\\Script\\Scenario\\230C.Fob \xa46 ID_SCENARIO2\x0272\x027\x027\x02X6\x01\x9e6
-SCEN .\\Data\\Script\\Scenario\\231C.Fob \x087 ID_SCENARIO
-SCEN .\\Data\\Script\\Scenario\\232C.Fob H7 ID_SCENARIO
-SCEN .\\Data\\Script\\Scenario\\233C.Fob \x887 ID_SCENARIO
-SCEN .\\Data\\Script\\Scenario\\234C.Fob \xc87 ID_SCENARIO
-SCEN .\\Data\\Script\\Scenario\\235C.Fob \x088 ID_SCENARIO
-SCEN .\\Data\\Script\\Scenario\\236C.Fob H8 ID_SCENARIO! 
+SCEN .\\Data\\Script\\Scenario\\229C.Fob ^6 ID_SCENARIO 2\x027
+SCEN .\\Data\\Script\\Scenario\\230C.Fob \xa46 ID_SCENARIO 2\x0272\x027\x027\x02X6\x01\x9e6
+SCEN .\\Data\\Script\\Scenario\\231C.Fob \x087 ID_SCENARIO 
+SCEN .\\Data\\Script\\Scenario\\232C.Fob H7 ID_SCENARIO 
+SCEN .\\Data\\Script\\Scenario\\233C.Fob \x887 ID_SCENARIO 
+SCEN .\\Data\\Script\\Scenario\\234C.Fob \xc87 ID_SCENARIO 
+SCEN .\\Data\\Script\\Scenario\\235C.Fob \x088 ID_SCENARIO 
+SCEN .\\Data\\Script\\Scenario\\236C.Fob H8 ID_SCENARIO ! 
 FLAG \x10
 FLAG\x02 \x0b
 FLAG\x01,^9
-SCEN .\\Data\\Script\\Scenario\\237C.Fob \xb28 ID_SCENARIO  
+SCEN .\\Data\\Script\\Scenario\\237C.Fob \xb28 ID_SCENARIO   
 FLAG \xff\xff\xff\xff\x0c\x02"2\x04?2v9
-SCEN .\\Data\\Script\\Scenario\\238C.Fob \x189 ID_SCENARIO2v92v9v9\x02\x01\xac8\x129
-SCEN .\\Data\\Script\\Scenario\\239C.Fob |9 ID_SCENARIO
-SCEN .\\Data\\Script\\Scenario\\240C.Fob \xbc9 ID_SCENARIO! 
+SCEN .\\Data\\Script\\Scenario\\238C.Fob \x189 ID_SCENARIO 2v92v9v9\x02\x01\xac8\x129
+SCEN .\\Data\\Script\\Scenario\\239C.Fob |9 ID_SCENARIO 
+SCEN .\\Data\\Script\\Scenario\\240C.Fob \xbc9 ID_SCENARIO ! 
 FLAG (
 FLAG\x02 \x0b
 FLAG\x01 \x01\x1b1\x8c;
-SCEN .\\Data\\Script\\Scenario\\244C.Fob 4: ID_SCENARIO FLAG_PRESENT FLAG_DEPENDANT  
+SCEN .\\Data\\Script\\Scenario\\244C.Fob 4: ID_SCENARIO  FLAG_PRESENT FLAG_DEPENDANT  
 LOAD_FLAG n;
-SCEN .\\Data\\Script\\Scenario\\245C.Fob \xa2: ID_SCENARIO  
+SCEN .\\Data\\Script\\Scenario\\245C.Fob \xa2: ID_SCENARIO   
 FLAG \x01\x0c\x02"2\x04?2\x86;
-SCEN .\\Data\\Script\\Scenario\\246C.Fob \x08; ID_SCENARIO  
+SCEN .\\Data\\Script\\Scenario\\246C.Fob \x08; ID_SCENARIO   
 FLAG \x0c\x02"2\x04?2\x86;2\x86;\x86;\x02\x9c:\x01\x02;2\xac>! 
 FLAG \x18
 FLAG\x02 \x0b
@@ -251,17 +251,17 @@ FLAG\x01 \x01\x1b!
 FLAG \x1c
 FLAG\x02 \x0b
 FLAG\x01 \x01\x1b\x191T=
-SCEN .\\Data\\Script\\Scenario\\241C.Fob \xfc; ID_SCENARIO FLAG_PRESENT FLAG_DEPENDANT  
+SCEN .\\Data\\Script\\Scenario\\241C.Fob \xfc; ID_SCENARIO  FLAG_PRESENT FLAG_DEPENDANT  
 LOAD_FLAG 6=
-SCEN .\\Data\\Script\\Scenario\\242C.Fob j< ID_SCENARIO  
+SCEN .\\Data\\Script\\Scenario\\242C.Fob j< ID_SCENARIO   
 FLAG \x05\x0c\x02"2\x04?2N=
-SCEN .\\Data\\Script\\Scenario\\243C.Fob \xd0< ID_SCENARIO  
+SCEN .\\Data\\Script\\Scenario\\243C.Fob \xd0< ID_SCENARIO   
 FLAG \x04\x0c\x02"2\x04?2N=2N=N=\x02d<\x01\xca<2\xac>
-SCEN .\\Data\\Script\\Scenario\\247C.Fob Z= ID_SCENARIO FLAG_PRESENT FLAG_DEPENDANT  
+SCEN .\\Data\\Script\\Scenario\\247C.Fob Z= ID_SCENARIO  FLAG_PRESENT FLAG_DEPENDANT  
 LOAD_FLAG \x94>
-SCEN .\\Data\\Script\\Scenario\\248C.Fob \xc8= ID_SCENARIO  
+SCEN .\\Data\\Script\\Scenario\\248C.Fob \xc8= ID_SCENARIO   
 FLAG \x03\x0c\x02"2\x04?2\xac>
-SCEN .\\Data\\Script\\Scenario\\249C.Fob .> ID_SCENARIO  
+SCEN .\\Data\\Script\\Scenario\\249C.Fob .> ID_SCENARIO   
 FLAG \x02\x0c\x02"2\x04?2\xac>2\xac>\xac>\x02\xc2=\x01(>  
 FLAG \xff\xff\xff\xff\x0c\x02"
 WHAT \x96{\x97\x88\x82\xcd\x97\xac\x82\xea\x82\xc4\x82\xb1\x82\xc8\x82\xa2\x82\xbc\x81I\x81I\\r \xcc> \x02#\x02\x01\x01  
