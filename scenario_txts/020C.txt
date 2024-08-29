@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 F_SRT
 \xec\r\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xb0\n\x00\x01\x01\x00\x00\x00\x00\x00\x00 \x06\x00\x00 \x00\x00\x00 SET01  \x06\x00\x00 \x03\x00\x00\x1b\x02\x041\x00\x00\x00\x00\xec\x01\x00  
 VAR01 \xca\x00 SET01 FILE1 .\\Data\\Script\\Bg.Fob COMMAND_TO_BYTECODE3 Z\x00\x00 
@@ -12,55 +11,10 @@ VAR01 \x01\x00 SET01  \xba\x00\x00 OPER  \xe8\x00\x00
 CHOICE_FLAG  \x06\x00\x00 \x01\x00 SEQ15 \x02d" and  \x00\x00
 CMD03 SCE020_001\x00 \xf2\x01\x00 S_END 
 VAR01 TXT1 \xe0. SEQ06 \x03C\x00\x00
-=======
-FSTR
-\xec\r\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xb0\n\x00\x01\x01\x00\x00\x00\x00\x00\x00 \x06\x00\x00 \x00\x00\x00
-SEQ14 
-SEQ08 " \x06\x00\x00 \x03\x00\x00\x1b\x02\x041\x00\x00\x00\x00\xec\x01\x00  
-SEQ01 \xca\x00
-SEQ14 
-SEQ08 "
-SEQ12 .\\Data\\Script\\Bg.Fob SPC03 Z\x00\x00 
-SEQ02 BgOn SPC03 \x84\x00\x00 
-SEQ06   
-SEQ01 \x01\x00
-SEQ14 
-SEQ08 "
-SEQ13 .\\Data\\Script\\TextFunc.fob SPC01 \xba\x00\x00 
-SEQ04 WaitTime SPC03 \xe8\x00\x00 
-SEQ06   
-SEQ01 \x04\x00
-SEQ14 
-SEQ08 " Z\x00\x00 
-SEQ08  \x84\x00\x00 
-SEQ06   
-SEQ01 \x01\x00
-SEQ14 
-SEQ08 " \xba\x00\x00 
-SEQ08  \xe8\x00\x00 
-SEQ06   
-SEQ01 \xc8\x00
-SEQ14 
-SEQ08 " Z\x00\x00 
-SEQ08  \x84\x00\x00 
-SEQ06   
-SEQ01 \x01\x00
-SEQ14 
-SEQ08 " \xba\x00\x00 
-SEQ08  \xe8\x00\x00 
-SEQ06  \x06\x00\x00 \x01\x00
-SEQ14 \x02d"2 \x00\x00\x03\x03\x00\x00SCE020_001\x00 \xf2\x01\x00 
-SEQ07  
-SEQ01 
-SEQ10 \xe0.
-SEQ14 
-SEQ11 \x03C\x00\x00
->>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 カンナ\n　「－－こうしましょう。\pここ以外では、あなたと私は知り合\n　　いでも何でもない。\pお互いの世界に干渉しないし、興味も持た\n　　ない。\pお互いの世界……フフフ。\p私たちの世界以外では、私た\n　　ちは他人になるの。\pそうすることで、私たちの世界は－－」\
 
 \x00  
-<<<<<<< HEAD
 VAR01 6\x02 SET01 FILE2 .\\Data\\Script\\TextFunc.Fob COMMAND_TO_BYTECODE1 b\x03\x00 
 CMD01 TextOn COMMAND_TO_BYTECODE1 \x90\x03\x00 
 CHOICE_FLAG \x01\x01\x00\x00\x00\x00\x00\x00 \xac\x03\x00 \x00\x00\x00 SET01  \xac\x03\x00 \x03\x00\x00\x1b\x02\x041\x00\x00\x00\x00\xca\x04\x00  
@@ -71,42 +25,6 @@ VAR01 \x01\x00 SET01  \xba\x00\x00 OPER  \xe8\x00\x00
 CHOICE_FLAG  \xac\x03\x00 \x01\x00 SEQ15 \x02d" and \xc4\x03\x00
 CMD03 SCE020_002\x00 \xd0\x04\x00 S_END 
 VAR01 TXT1 \xe4. SEQ06 \x03P\x00\x00
-=======
-SEQ01 6\x02
-SEQ14 
-SEQ08 "
-SEQ13 .\\Data\\Script\\TextFunc.Fob SPC01 b\x03\x00 
-SEQ02 TextOn SPC01 \x90\x03\x00 
-SEQ06 \x01\x01\x00\x00\x00\x00\x00\x00 \xac\x03\x00 \x00\x00\x00
-SEQ14 
-SEQ08 " \xac\x03\x00 \x03\x00\x00\x1b\x02\x041\x00\x00\x00\x00\xca\x04\x00  
-SEQ01 \xca\x00
-SEQ14 
-SEQ08 " Z\x00\x00 
-SEQ08  \x84\x00\x00 
-SEQ06   
-SEQ01 \x01\x00
-SEQ14 
-SEQ08 " \xba\x00\x00 
-SEQ08  \xe8\x00\x00 
-SEQ06   
-SEQ01 \xc8\x00
-SEQ14 
-SEQ08 " Z\x00\x00 
-SEQ08  \x84\x00\x00 
-SEQ06   
-SEQ01 \x01\x00
-SEQ14 
-SEQ08 " \xba\x00\x00 
-SEQ08  \xe8\x00\x00 
-SEQ06  \xac\x03\x00 \x01\x00
-SEQ14 \x02d"2\xc4\x03\x00\x03\x03\x00\x00SCE020_002\x00 \xd0\x04\x00 
-SEQ07  
-SEQ01 
-SEQ10 \xe4.
-SEQ14 
-SEQ11 \x03P\x00\x00
->>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 けれどもカンナは干渉した。@
 －－なぜだ？@
@@ -115,30 +33,11 @@ SEQ11 \x03P\x00\x00
 カンナは、足早に道の角を曲がって姿を消した。\
 
 \x00\x00\x00  
-<<<<<<< HEAD
 VAR01 \x14\x05 SET01  b\x03\x00 OPER  \x90\x03\x00 C_END  
 VAR01 \x07\x01 SET01 FILE1 .\\Data\\Script\\Bgm.Fob COMMAND_TO_BYTECODE2 \xa8\x06\x00 
 CMD01 PlayCD COMMAND_TO_BYTECODE1 \xd2\x06\x00 
 S_STR SCE020_003\x00 \xee\x06\x00 S_END 
 VAR01 TXT1 \xe8. SEQ06 \x03R\x00\x00
-=======
-SEQ01 \x14\x05
-SEQ14 
-SEQ08 " b\x03\x00 
-SEQ08  \x90\x03\x00 
-SEQ06   
-SEQ01 \x07\x01
-SEQ14 
-SEQ08 "
-SEQ12 .\\Data\\Script\\Bgm.Fob SPC02 \xa8\x06\x00 
-SEQ02 PlayCD SPC01 \xd2\x06\x00 
-SEQ05 SCE020_003\x00 \xee\x06\x00 
-SEQ07  
-SEQ01 
-SEQ10 \xe8.
-SEQ14 
-SEQ11 \x03R\x00\x00
->>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 \nややあって、紅葉がいった。@
 \n紅葉\n　「……あれって、月代カンナ？」@
@@ -150,22 +49,9 @@ SEQ11 \x03R\x00\x00
 紅葉\n　「岩見くん……うちのクラスの……あの子に告白して振られたん\n　　だって」\
 
 \x00  
-<<<<<<< HEAD
 VAR01 2\x07 SET01  b\x03\x00 OPER  \x90\x03\x00 
 S_STR SCE020_004\x00 \xb4\x08\x00 S_END 
 VAR01 TXT1 \xec. SEQ06 \x03K\x00\x00
-=======
-SEQ01 2\x07
-SEQ14 
-SEQ08 " b\x03\x00 
-SEQ08  \x90\x03\x00 
-SEQ05 SCE020_004\x00 \xb4\x08\x00 
-SEQ07  
-SEQ01 
-SEQ10 \xec.
-SEQ14 
-SEQ11 \x03K\x00\x00
->>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 拓司\n　「噂だろ？」@
 紅葉\n　「岩見くんって、モテるじゃない？　カッコイイし頭もいいし、\n　　スポーツも得意だし。\pでもあの子全然興味ないって感じで。@
@@ -175,21 +61,9 @@ SEQ11 \x03K\x00\x00
 \n紅葉はいって、うつむいた。\
 
 \x00  
-<<<<<<< HEAD
 VAR01 \xf8\x08 SET01  b\x03\x00 OPER  \x90\x03\x00 
 CHOICE_FLAG  \xa8\x06\x00 
 CMD01 StopCD COMMAND_TO_BYTECODE1 j\n\x00 
 CHOICE_FLAG  b\x03\x00 OPER 
 CMD03 TextClose COMMAND_TO_BYTECODE2 \x92\n\x00 
 F_END
-=======
-SEQ01 \xf8\x08
-SEQ14 
-SEQ08 " b\x03\x00 
-SEQ08  \x90\x03\x00 
-SEQ06  \xa8\x06\x00 
-SEQ02 StopCD SPC01 j\n\x00 
-SEQ06  b\x03\x00 
-SEQ04 TextClose SPC02 \x92\n\x00 
-FEND
->>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23

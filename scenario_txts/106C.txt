@@ -1,25 +1,9 @@
-<<<<<<< HEAD
 F_SRT
 <\x10\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00B\r\x00  
 VAR01 "\x00 SET01 FILE1 .\\Data\\Script\\Bg.Fob COMMAND_TO_BYTECODE3  \x00\x00 
 CMD02 BgAutoFadeIn COMMAND_TO_BYTECODE3 J\x00\x00 
 S_STR SCE106_001\x00 n\x00\x00 S_END 
 VAR01 TXT1 @\xb5 SEQ06 \x03\x89\x00\x00
-=======
-FSTR
-<\x10\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00B\r\x00  
-SEQ01 "\x00
-SEQ14 
-SEQ08 "
-SEQ12 .\\Data\\Script\\Bg.Fob SPC03  \x00\x00 
-SEQ03 BgAutoFadeIn SPC03 J\x00\x00 
-SEQ05 SCE106_001\x00 n\x00\x00 
-SEQ07  
-SEQ01 
-SEQ10 @\xb5
-SEQ14 
-SEQ11 \x03\x89\x00\x00
->>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 　それから起こったことを、拓司ははっきりとは覚えていない。@
 すべてが熱病のなかで見た夢のごとく、混然として、切り離すこ\nとができない。@
@@ -33,24 +17,10 @@ SEQ11 \x03\x89\x00\x00
 なたねが鍵を飲み込んだのはそれからかもしれない……@
 そして気がつくと、教室中に血が飛び散っていた。\w\z
 \x00  
-<<<<<<< HEAD
 VAR01 \xb2\x00 SET01 FILE2 .\\Data\\Script\\TextFunc.Fob COMMAND_TO_BYTECODE1 \xf6\x02\x00 
 CMD01 TextOn COMMAND_TO_BYTECODE1 $\x03\x00 
 S_STR SCE106_002\x00 @\x03\x00 S_END 
 VAR01 TXT1 D\xb5 SEQ06 \x03E\x00\x00
-=======
-SEQ01 \xb2\x00
-SEQ14 
-SEQ08 "
-SEQ13 .\\Data\\Script\\TextFunc.Fob SPC01 \xf6\x02\x00 
-SEQ02 TextOn SPC01 $\x03\x00 
-SEQ05 SCE106_002\x00 @\x03\x00 
-SEQ07  
-SEQ01 
-SEQ10 D\xb5
-SEQ14 
-SEQ11 \x03E\x00\x00
->>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 御堂\n　「勝ったあああああ俺が勝ったああああ思い知ったか俺がああ\n　　あああああ！」@
 \n御堂が叫んでいた。@
@@ -59,22 +29,9 @@ SEQ11 \x03E\x00\x00
 てらてらと光る臓物だ。@
 御堂はその中から鍵を探し出そうとしている。\w\z
 \x00  
-<<<<<<< HEAD
 VAR01 \x84\x03 SET01  \xf6\x02\x00 OPER  $\x03\x00 
 S_STR SCE106_003\x00 \xd2\x04\x00 S_END 
 VAR01 TXT1 H\xb5 SEQ06 \x03q\x00\x00
-=======
-SEQ01 \x84\x03
-SEQ14 
-SEQ08 " \xf6\x02\x00 
-SEQ08  $\x03\x00 
-SEQ05 SCE106_003\x00 \xd2\x04\x00 
-SEQ07  
-SEQ01 
-SEQ10 H\xb5
-SEQ14 
-SEQ11 \x03q\x00\x00
->>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 いや、探し出そうとしているのは自分なのか……？@
 スクリーンの中の光景をのぞき込むように、客観的に『自分』を\n見つめている自分がどこかにいる…@
@@ -84,42 +41,16 @@ SEQ11 \x03q\x00\x00
 見よ、死んでいるはずのなたねの口がくわっと開いて、\n\p哄笑をとどろかせている……。@
 \nわは。\w\z
 \x00  
-<<<<<<< HEAD
 VAR01 \x16\x05 SET01  \xf6\x02\x00 OPER  $\x03\x00 
 S_STR SCE106_004\x00 \x14\x07\x00 S_END 
 VAR01 TXT1 L\xb5 SEQ06 \x03+\x00\x00
-=======
-SEQ01 \x16\x05
-SEQ14 
-SEQ08 " \xf6\x02\x00 
-SEQ08  $\x03\x00 
-SEQ05 SCE106_004\x00 \x14\x07\x00 
-SEQ07  
-SEQ01 
-SEQ10 L\xb5
-SEQ14 
-SEQ11 \x03+\x00\x00
->>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 その笑い声は伝染病のようにあたりに広がり、あっというまに部\n屋中を充たした。@
 \nわは、わはは、はははははははははははははははははははははは\nははははははははは！\w\z
 \x00\x00\x00  
-<<<<<<< HEAD
 VAR01 X\x07 SET01  \xf6\x02\x00 OPER  $\x03\x00 
 S_STR SCE106_005\x00 >\x08\x00 S_END 
 VAR01 TXT1 P\xb5 SEQ06 \x03@\x00\x00
-=======
-SEQ01 X\x07
-SEQ14 
-SEQ08 " \xf6\x02\x00 
-SEQ08  $\x03\x00 
-SEQ05 SCE106_005\x00 >\x08\x00 
-SEQ07  
-SEQ01 
-SEQ10 P\xb5
-SEQ14 
-SEQ11 \x03@\x00\x00
->>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 なにもかもがおかしくて、いくらでも笑いがこみ上げてきた。@
 ……なたねの口の中は赤い洞窟のように血に染まっていて……@
@@ -127,61 +58,25 @@ SEQ11 \x03@\x00\x00
 そこに７人の男女がいて、大声で笑っている……@
 腹を抱えてのたうち回っている。\w\z
 \x00\x00\x00  
-<<<<<<< HEAD
 VAR01 \x82\x08 SET01  \xf6\x02\x00 OPER  $\x03\x00 
 S_STR SCE106_006\x00 \xbc\t\x00 S_END 
 VAR01 TXT1 T\xb5 SEQ06 \x03P\x00\x00
-=======
-SEQ01 \x82\x08
-SEQ14 
-SEQ08 " \xf6\x02\x00 
-SEQ08  $\x03\x00 
-SEQ05 SCE106_006\x00 \xbc\t\x00 
-SEQ07  
-SEQ01 
-SEQ10 T\xb5
-SEQ14 
-SEQ11 \x03P\x00\x00
->>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 なるほど、世界とはその程度のものだったのだ。@
 頭のいかれた女の口の中に幻灯のごとく浮かび上がるような……\nそのようなものなのだ。@
 おれは－－と拓司は思った－－おれははなからありもしないもの\nをあると思いこんで、必死でうろつき回っていたのだ。@
 なにもおかしくなどなかったが、いくらでも笑いがこみ上げてき\nた。\w\z
 \x00  
-<<<<<<< HEAD
 VAR01 \x00\n SET01  \xf6\x02\x00 OPER  $\x03\x00 
 S_STR SCE106_007\x00 z\x0b\x00 S_END 
 VAR01 TXT1 X\xb5 SEQ06 \x03H\x00\x00
-=======
-SEQ01 \x00\n
-SEQ14 
-SEQ08 " \xf6\x02\x00 
-SEQ08  $\x03\x00 
-SEQ05 SCE106_007\x00 z\x0b\x00 
-SEQ07  
-SEQ01 
-SEQ10 X\xb5
-SEQ14 
-SEQ11 \x03H\x00\x00
->>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 笑いの渦に身を任せながら、拓司は「終わったな」と感じていた。\n\p世界が溶け落ちていった。@
 なにもかもを……笑い声さえのみこんで、雨だれのように溶けて\n落ちていった。@
 ザザザ……ザザッ……ザアザザザ……ザアアアアア……ザアザア\nアアアアアア……@
 \n最後にそんな音が、聞こえた。\w\z
 \x00  
-<<<<<<< HEAD
 VAR01 \xbe\x0b SET01  \xf6\x02\x00 OPER  $\x03\x00 
 CHOICE_FLAG  \xf6\x02\x00 OPER 
 CMD03 TextClose COMMAND_TO_BYTECODE2 $\r\x00 
 F_END
-=======
-SEQ01 \xbe\x0b
-SEQ14 
-SEQ08 " \xf6\x02\x00 
-SEQ08  $\x03\x00 
-SEQ06  \xf6\x02\x00 
-SEQ04 TextClose SPC02 $\r\x00 
-FEND
->>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23

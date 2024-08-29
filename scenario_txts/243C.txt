@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 F_SRT
 R4\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00X+\x00  
 VAR01 \n\x01 SET01 FILE1 .\\Data\\Script\\Bgm.Fob COMMAND_TO_BYTECODE2  \x00\x00 
@@ -7,26 +6,6 @@ VAR01 \xc8\x00 SET01 FILE1 .\\Data\\Script\\Bg.Fob COMMAND_TO_BYTECODE3 \x80\x00
 CMD02 BgAutoFadeIn COMMAND_TO_BYTECODE3 \xaa\x00\x00 
 S_STR SCE243_001\x00 \xce\x00\x00 S_END 
 VAR01 TXT1 P\x8b\x01\x0c\x00\x00\x00\x00"\x03c\x00\x00
-=======
-FSTR
-R4\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00X+\x00  
-SEQ01 \n\x01
-SEQ14 
-SEQ08 "
-SEQ12 .\\Data\\Script\\Bgm.Fob SPC02  \x00\x00 
-SEQ02 PlayCD SPC01 J\x00\x00 
-SEQ06   
-SEQ01 \xc8\x00
-SEQ14 
-SEQ08 "
-SEQ12 .\\Data\\Script\\Bg.Fob SPC03 \x80\x00\x00 
-SEQ03 BgAutoFadeIn SPC03 \xaa\x00\x00 
-SEQ05 SCE243_001\x00 \xce\x00\x00 
-SEQ07  
-SEQ01 
-SEQ10 P\x8b\x01\x0c
-SEQ11 \x03c\x00\x00
->>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 拓司\n　「来るぞ、急げ！」@
 \n最終波動。@
@@ -36,23 +15,10 @@ SEQ11 \x03c\x00\x00
 ただ、最終波動はひたすら、死のイメージだった。@
 死が定義不可能である以上、波動も同じく、理解の範疇の外にあ\nる。\p漠然とした恐怖ですべてを縛るものとして。\w\z
 \x00  
-<<<<<<< HEAD
 VAR01 \x12\x01 SET01 FILE2 .\\Data\\Script\\TextFunc.Fob COMMAND_TO_BYTECODE1 \xbe\x02\x00 
 CMD01 TextOn COMMAND_TO_BYTECODE1 \xec\x02\x00 
 S_STR SCE243_002\x00 \x08\x03\x00 S_END 
 VAR01 TXT1 T\x8b\x01\x0c\x00\x00\x00\x00"\x03W\x00\x00
-=======
-SEQ01 \x12\x01
-SEQ14 
-SEQ08 "
-SEQ13 .\\Data\\Script\\TextFunc.Fob SPC01 \xbe\x02\x00 
-SEQ02 TextOn SPC01 \xec\x02\x00 
-SEQ05 SCE243_002\x00 \x08\x03\x00 
-SEQ07  
-SEQ01 
-SEQ10 T\x8b\x01\x0c
-SEQ11 \x03W\x00\x00
->>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 それがいま、襲いかかろうとしている。@
 爆発を控えて、いま、エンジンを高らかにふかしている。@
@@ -60,27 +26,10 @@ SEQ11 \x03W\x00\x00
 しかし、すでになすべきことはただひとつだった。@
 最終波動がやってくる前に壁を壊し、その向こうにあるものを見\nつけだすのだ。\w\z
 \x00  
-<<<<<<< HEAD
 VAR01 L\x03 SET01  \xbe\x02\x00 OPER  \xec\x02\x00 C_END  
 VAR01 3\x00 SET01  \x80\x00\x00 OPER  \xaa\x00\x00 
 S_STR SCE243_003\x00 \x16\x05\x00 S_END 
 VAR01 TXT1 X\x8b\x01\x0c\x00\x00\x00\x00"\x03u\x00\x00
-=======
-SEQ01 L\x03
-SEQ14 
-SEQ08 " \xbe\x02\x00 
-SEQ08  \xec\x02\x00 
-SEQ06   
-SEQ01 3\x00
-SEQ14 
-SEQ08 " \x80\x00\x00 
-SEQ08  \xaa\x00\x00 
-SEQ05 SCE243_003\x00 \x16\x05\x00 
-SEQ07  
-SEQ01 
-SEQ10 X\x8b\x01\x0c
-SEQ11 \x03u\x00\x00
->>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 /*▲SE15　２回再生（再生終了まで待つ）*/\a2,0,15,0,\a3,0,0,0,\a4,0,0,0,\a2,0,15,0,\a3,0,0,0,\a4,0,0,0,拓司たちは掘った。@
 /*▲SE15　２回再生（再生終了まで待つ）*/\a2,0,15,0,\a3,0,0,0,\a4,0,0,0,\a2,0,15,0,\a3,0,0,0,\a4,0,0,0,壁を崩し続けた。@
@@ -89,21 +38,9 @@ SEQ11 \x03u\x00\x00
 すべてのものがブルブルと振動し、輪郭が歪む。@
 天井から、パラパラとコンクリートの破片が落ちてくる。\w\z
 \x00  
-<<<<<<< HEAD
 VAR01 Z\x05 SET01  \xbe\x02\x00 OPER  \xec\x02\x00 
 S_STR SCE243_004\x00 h\x07\x00 S_END 
 VAR01 TXT1 \\\x8b\x01\x0c\x00\x00\x00\x00"\x03E\x00\x00
-=======
-SEQ01 Z\x05
-SEQ14 
-SEQ08 " \xbe\x02\x00 
-SEQ08  \xec\x02\x00 
-SEQ05 SCE243_004\x00 h\x07\x00 
-SEQ07  
-SEQ01 
-SEQ10 \\\x8b\x01\x0c
-SEQ11 \x03E\x00\x00
->>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 カンナ\n　「虎菱くん、間に合わない！　間に合わないよ！」@
 拓司\n　「やるんだ！」@
@@ -112,7 +49,6 @@ SEQ11 \x03E\x00\x00
 カンナ\n　「どこかに！」@
 拓司\n　「どこかなんて、ない！　逃げ場所はない！　ここしかないん\n　　だ。\pここしか、ないんだ！」\w\z
 \x00\x00\x00  
-<<<<<<< HEAD
 VAR01 \xac\x07 SET01  \xbe\x02\x00 OPER  \xec\x02\x00 C_END  
 VAR01 \xc8\x00 SET01  \x80\x00\x00 OPER  \xaa\x00\x00 
 CHOICE_FLAG   \x00\x00 
@@ -122,29 +58,6 @@ SEQ05   \x00\x00
 CMD01 SeStop COMMAND_TO_BYTECODE1 |\t\x00 
 S_STR SCE243_005\x00 \x98\t\x00 S_END 
 VAR01 TXT1 `\x8b\x01\x0c\x00\x00\x00\x00"\x03f\x00\x00
-=======
-SEQ01 \xac\x07
-SEQ14 
-SEQ08 " \xbe\x02\x00 
-SEQ08  \xec\x02\x00 
-SEQ06   
-SEQ01 \xc8\x00
-SEQ14 
-SEQ08 " \x80\x00\x00 
-SEQ08  \xaa\x00\x00 
-SEQ06   \x00\x00 
-SEQ02 StopCD SPC01 :\t\x00 
-SEQ06   
-SEQ01 
-SEQ08 \x0c
-SEQ08 "  \x00\x00 
-SEQ02 SeStop SPC01 |\t\x00 
-SEQ05 SCE243_005\x00 \x98\t\x00 
-SEQ07  
-SEQ01 
-SEQ10 `\x8b\x01\x0c
-SEQ11 \x03f\x00\x00
->>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 ざあっ！@
 \n足の裏から頭のてっぺんへ。@
@@ -154,27 +67,10 @@ SEQ11 \x03f\x00\x00
 それは、身体のなかをすり抜けていった。@
 細胞の隙間を縫うように奔り、身体を構成する肉すべてに毒を与\nえて通り過ぎていった。\p死という名の毒素を。\w\z
 \x00  
-<<<<<<< HEAD
 VAR01 \xdc\t SET01  \xbe\x02\x00 OPER  \xec\x02\x00 C_END  
 VAR01 \x0b\x01 SET01   \x00\x00 OPER  J\x00\x00 
 S_STR SCE243_006\x00 \xe2\x0b\x00 S_END 
 VAR01 TXT1 d\x8b\x01\x0c\x00\x00\x00\x00"\x03\x96\x00\x00
-=======
-SEQ01 \xdc\t
-SEQ14 
-SEQ08 " \xbe\x02\x00 
-SEQ08  \xec\x02\x00 
-SEQ06   
-SEQ01 \x0b\x01
-SEQ14 
-SEQ08 "  \x00\x00 
-SEQ08  J\x00\x00 
-SEQ05 SCE243_006\x00 \xe2\x0b\x00 
-SEQ07  
-SEQ01 
-SEQ10 d\x8b\x01\x0c
-SEQ11 \x03\x96\x00\x00
->>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 /*▲SE33　再生（再生終了を待たず先へ進む）*/\a2,0,33,0,\a6,0,0,0,キイイイイイイイイイイイイイイイイイイイイイイイイイイイイ！\n\p\a6,0,0,0,\a4,0,0,0,\n拓司\n　「！」@
 \n蜥蜴の悲鳴だった。@
@@ -185,21 +81,9 @@ SEQ11 \x03\x96\x00\x00
 無限の反射のまっただ中に、新しい悲鳴がさらに雪崩のように流\nれ込んできては反射した。@
 頭そのものが爆発しないのが不思議だった。\w\z
 \x00\x00  
-<<<<<<< HEAD
 VAR01 &\x0c SET01  \xbe\x02\x00 OPER  \xec\x02\x00 
 S_STR SCE243_007\x00 \xb8\x0e\x00 S_END 
 VAR01 TXT1 h\x8b\x01\x0c\x00\x00\x00\x00"\x03}\x00\x00
-=======
-SEQ01 &\x0c
-SEQ14 
-SEQ08 " \xbe\x02\x00 
-SEQ08  \xec\x02\x00 
-SEQ05 SCE243_007\x00 \xb8\x0e\x00 
-SEQ07  
-SEQ01 
-SEQ10 h\x8b\x01\x0c
-SEQ11 \x03}\x00\x00
->>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 拓司\n　「ああああああああああああ！」@
 \n拓司は耳をふさいでうずくまった。@
@@ -210,21 +94,9 @@ SEQ11 \x03}\x00\x00
 やがてぐったりと仰向けに転がると、ぴくぴくと身体を痙攣させ\n始める。@
 白目をむき、耳から、鼻から、どす黒い血があふれ出している。\w\z
 \x00  
-<<<<<<< HEAD
 VAR01 \xfc\x0e SET01  \xbe\x02\x00 OPER  \xec\x02\x00 
 S_STR SCE243_008\x00 *\x11\x00 S_END 
 VAR01 TXT1 l\x8b\x01\x0c\x00\x00\x00\x00"\x03\x94\x00\x00
-=======
-SEQ01 \xfc\x0e
-SEQ14 
-SEQ08 " \xbe\x02\x00 
-SEQ08  \xec\x02\x00 
-SEQ05 SCE243_008\x00 *\x11\x00 
-SEQ07  
-SEQ01 
-SEQ10 l\x8b\x01\x0c
-SEQ11 \x03\x94\x00\x00
->>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 拓司\n　「カ・ン・ナ・ア・アア・アアア・アアアア！」@
 \n拓司は叫んだ。@
@@ -239,21 +111,9 @@ SEQ11 \x03\x94\x00\x00
 いまだ歴然として怪物ではあるものの、すでに姿形はわかってい\nるのだ。@
 檻に閉じこめて、鎖に繋ぐことができる、ただの生き物でしかな\nいのだ。\w\z
 \x00\x00\x00  
-<<<<<<< HEAD
 VAR01 n\x11 SET01  \xbe\x02\x00 OPER  \xec\x02\x00 
 S_STR SCE243_009\x00 \xf8\x13\x00 S_END 
 VAR01 TXT1 p\x8b\x01\x0c\x00\x00\x00\x00"\x03_\x00\x00
-=======
-SEQ01 n\x11
-SEQ14 
-SEQ08 " \xbe\x02\x00 
-SEQ08  \xec\x02\x00 
-SEQ05 SCE243_009\x00 \xf8\x13\x00 
-SEQ07  
-SEQ01 
-SEQ10 p\x8b\x01\x0c
-SEQ11 \x03_\x00\x00
->>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 あふれ出したカンナの物語。\pカンナの世界。\pそれは－－@
 解決されつつあることなのだ。@
@@ -264,21 +124,9 @@ SEQ11 \x03_\x00\x00
 その足をじっと見つめ、そして反対側の足を前に出す。@
 そうして一歩……一歩……忘れてしまった歩き方を思い出すかの\nように、拓司はゆっくりと歩き始めた。\w\z
 \x00  
-<<<<<<< HEAD
 VAR01 <\x14 SET01  \xbe\x02\x00 OPER  \xec\x02\x00 
 S_STR SCE243_010\x00 \xf2\x15\x00 S_END 
 VAR01 TXT1 t\x8b\x01\x0c\x00\x00\x00\x00"\x03o\x00\x00
-=======
-SEQ01 <\x14
-SEQ14 
-SEQ08 " \xbe\x02\x00 
-SEQ08  \xec\x02\x00 
-SEQ05 SCE243_010\x00 \xf2\x15\x00 
-SEQ07  
-SEQ01 
-SEQ10 t\x8b\x01\x0c
-SEQ11 \x03o\x00\x00
->>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 /*▲SE33　ループ再生*/\a2,2,33,0,\a6,0,0,0,キイイイイイイイイイイイイイイイイイイイイイイイイイイイイ\nイイイイイイイ！@
 \nいつの間にか、鼻血が流れ出している。@
@@ -287,24 +135,10 @@ SEQ11 \x03o\x00\x00
 \nここから俺は始まるのだ。@
 \nキイイイイイイイイイイイイイイイイイイイイイイイイイイイイ\nイイイイイイイ！\w/*▲SE　停止*/\a4,2,0,0,\z
   
-<<<<<<< HEAD
 VAR01 6\x16 SET01  \xbe\x02\x00 OPER  \xec\x02\x00 
 CHOICE_FLAG   \x00\x00 OPER  :\t\x00 
 S_STR SCE243_011\x00 F\x18\x00 S_END 
 VAR01 TXT1 x\x8b\x01\x0c\x00\x00\x00\x00"\x03P\x00\x00
-=======
-SEQ01 6\x16
-SEQ14 
-SEQ08 " \xbe\x02\x00 
-SEQ08  \xec\x02\x00 
-SEQ06   \x00\x00 
-SEQ08  :\t\x00 
-SEQ05 SCE243_011\x00 F\x18\x00 
-SEQ07  
-SEQ01 
-SEQ10 x\x8b\x01\x0c
-SEQ11 \x03P\x00\x00
->>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 こうして旅が始まったいま、俺にはいまや目的があるのだ。@
 何かから逃げているのではなく、何かに向かっているのだ。@
@@ -313,21 +147,9 @@ SEQ11 \x03P\x00\x00
 通り過ぎた風景がある。@
 そうして歩き続けることで、自分が常に新しい自分であることを\n知るのだ。\n考えるのではない。\n動くのだ。\w\z
 \x00\x00\x00  
-<<<<<<< HEAD
 VAR01 \x8a\x18 SET01  \xbe\x02\x00 OPER  \xec\x02\x00 
 S_STR SCE243_012\x00 \x04\x1a\x00 S_END 
 VAR01 TXT1 |\x8b\x01\x0c\x00\x00\x00\x00"\x03b\x00\x00
-=======
-SEQ01 \x8a\x18
-SEQ14 
-SEQ08 " \xbe\x02\x00 
-SEQ08  \xec\x02\x00 
-SEQ05 SCE243_012\x00 \x04\x1a\x00 
-SEQ07  
-SEQ01 
-SEQ10 |\x8b\x01\x0c
-SEQ11 \x03b\x00\x00
->>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 拓司\n　「カンナ！」@
 \nカンナは動かない。\pすでに痙攣すらしていない。@
@@ -337,27 +159,10 @@ SEQ11 \x03b\x00\x00
 腹の底から塊がこみあがってくる。@
 悲鳴にも、雄叫びにも似た、熱い塊がぐんぐんとせり上がってく\nる。\pそうして拓司は腹の底から哄笑を放った。\w\z
 \x00\x00\x00  
-<<<<<<< HEAD
 VAR01 H\x1a SET01  \xbe\x02\x00 OPER  \xec\x02\x00 C_END  
 VAR01 4\x00 SET01  \x80\x00\x00 OPER  \xaa\x00\x00 
 S_STR SCE243_013\x00 >\x1c\x00 S_END 
 VAR01 TXT1 \x80\x8b\x01\x0c\x00\x00\x00\x00"\x03U\x00\x00
-=======
-SEQ01 H\x1a
-SEQ14 
-SEQ08 " \xbe\x02\x00 
-SEQ08  \xec\x02\x00 
-SEQ06   
-SEQ01 4\x00
-SEQ14 
-SEQ08 " \x80\x00\x00 
-SEQ08  \xaa\x00\x00 
-SEQ05 SCE243_013\x00 >\x1c\x00 
-SEQ07  
-SEQ01 
-SEQ10 \x80\x8b\x01\x0c
-SEQ11 \x03U\x00\x00
->>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 拓司\n　「勝った！」@
 \n瞬間。@
@@ -370,27 +175,10 @@ SEQ11 \x03U\x00\x00
 俺は勝った。@
 勝ったんだ、と。\w\z
 \x00\x00\x00  
-<<<<<<< HEAD
 VAR01 \x82\x1c SET01  \xbe\x02\x00 OPER  \xec\x02\x00 C_END  
 VAR01 \xc9\x00 SET01  \x80\x00\x00 OPER  \xaa\x00\x00 
 S_STR SCE243_014\x00 D\x1e\x00 S_END 
 VAR01 TXT1 \x84\x8b\x01\x0c\x00\x00\x00\x00"\x03}\x00\x00
-=======
-SEQ01 \x82\x1c
-SEQ14 
-SEQ08 " \xbe\x02\x00 
-SEQ08  \xec\x02\x00 
-SEQ06   
-SEQ01 \xc9\x00
-SEQ14 
-SEQ08 " \x80\x00\x00 
-SEQ08  \xaa\x00\x00 
-SEQ05 SCE243_014\x00 D\x1e\x00 
-SEQ07  
-SEQ01 
-SEQ10 \x84\x8b\x01\x0c
-SEQ11 \x03}\x00\x00
->>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 気がつくと、拓司は世界になっていた。@
 \n世界に音はなく、ただ真っ白なひかりだけがあった。@
@@ -402,27 +190,10 @@ SEQ11 \x03}\x00\x00
 拓司もまた、うん、と頷き、そして２人はするすると手を伸ばし\nていった。@
 ２人の手が触れると、見えない壁は、さらさらと砂のように崩れ\nて消えた。\w\z
 \x00\x00\x00  
-<<<<<<< HEAD
 VAR01 \x88\x1e SET01  \xbe\x02\x00 OPER  \xec\x02\x00 C_END  
 VAR01 \x04\x01 SET01   \x00\x00 OPER  J\x00\x00 
 S_STR SCE243_015\x00 \xea \x00 S_END 
 VAR01 TXT1 \x88\x8b\x01\x0c\x00\x00\x00\x00"\x03\x97\x00\x00
-=======
-SEQ01 \x88\x1e
-SEQ14 
-SEQ08 " \xbe\x02\x00 
-SEQ08  \xec\x02\x00 
-SEQ06   
-SEQ01 \x04\x01
-SEQ14 
-SEQ08 "  \x00\x00 
-SEQ08  J\x00\x00 
-SEQ05 SCE243_015\x00 \xea \x00 
-SEQ07  
-SEQ01 
-SEQ10 \x88\x8b\x01\x0c
-SEQ11 \x03\x97\x00\x00
->>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 堰を切ったように、ひかりがあふれ出した。@
 ひかりに身をまかせながら、拓司はなにもかもがわかったように\n感じていた。@
@@ -434,21 +205,9 @@ SEQ11 \x03\x97\x00\x00
 見る、というよりも感じた。@
 感じる、というより拓司はそれらと同じものになった。\w\z
 \x00  
-<<<<<<< HEAD
 VAR01 .! SET01  \xbe\x02\x00 OPER  \xec\x02\x00 
 S_STR SCE243_016\x00 \xc4#\x00 S_END 
 VAR01 TXT1 \x8c\x8b\x01\x0c\x00\x00\x00\x00"\x03\xe0\x00\x00
-=======
-SEQ01 .!
-SEQ14 
-SEQ08 " \xbe\x02\x00 
-SEQ08  \xec\x02\x00 
-SEQ05 SCE243_016\x00 \xc4#\x00 
-SEQ07  
-SEQ01 
-SEQ10 \x8c\x8b\x01\x0c
-SEQ11 \x03\xe0\x00\x00
->>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 私とは万人であり、万人とは私だった。@
 無私な希望。\p愛の思い出の警鐘。\p生贄。\p抽象的な部類の形容語。@
@@ -467,21 +226,9 @@ SEQ11 \x03\xe0\x00\x00
 そこに意味などなかった。@
 しかし、それらはそれらそのもので、意味を越えた真理の塊だっ\nた。\w\z
 \x00\x00\x00  
-<<<<<<< HEAD
 VAR01 \x08$ SET01  \xbe\x02\x00 OPER  \xec\x02\x00 
 S_STR SCE243_017\x00 \xc2'\x00 S_END 
 VAR01 TXT1 \x90\x8b\x01\x0c\x00\x00\x00\x00"\x03\x8c\x00\x00
-=======
-SEQ01 \x08$
-SEQ14 
-SEQ08 " \xbe\x02\x00 
-SEQ08  \xec\x02\x00 
-SEQ05 SCE243_017\x00 \xc2'\x00 
-SEQ07  
-SEQ01 
-SEQ10 \x90\x8b\x01\x0c
-SEQ11 \x03\x8c\x00\x00
->>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 カンナ\n　「……ゆきちゃん」@
 \nカンナがつぶやいた。@
@@ -496,7 +243,6 @@ SEQ11 \x03\x8c\x00\x00
 拓司はそれを見つめた。@
 じっと視線をそそぎ、それがひかりの中に自らの位置を占めるま\nで目を離さなかった。\w\z
 \x00\x00\x00  
-<<<<<<< HEAD
 VAR01 \x06( SET01  \xbe\x02\x00 OPER  \xec\x02\x00 
 S_STR SCE243_018\x00 p*\x00 S_END 
 VAR01 TXT1 \x94\x8b\x01\x0c\x00\x00\x00\x00"\x03\x10\x00\x00
@@ -507,24 +253,3 @@ VAR01 \xb4* SET01  \xbe\x02\x00 OPER  \xec\x02\x00
 CHOICE_FLAG  \xbe\x02\x00 OPER 
 CMD03 TextClose COMMAND_TO_BYTECODE2 :+\x00 
 F_END
-=======
-SEQ01 \x06(
-SEQ14 
-SEQ08 " \xbe\x02\x00 
-SEQ08  \xec\x02\x00 
-SEQ05 SCE243_018\x00 p*\x00 
-SEQ07  
-SEQ01 
-SEQ10 \x94\x8b\x01\x0c
-SEQ11 \x03\x10\x00\x00
- 
-いつしか、胸の中の黒いかたまりは静かに燃え尽きていた。\w\z
-\x00\x00\x00  
-SEQ01 \xb4*
-SEQ14 
-SEQ08 " \xbe\x02\x00 
-SEQ08  \xec\x02\x00 
-SEQ06  \xbe\x02\x00 
-SEQ04 TextClose SPC02 :+\x00 
-FEND
->>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23

@@ -6,7 +6,6 @@ patterns = [
     {
         "pattern": [b'\x01', b'\x00', b'\x00', b'start', b'\xef', b'i\x01C'],
         # Start the script
-<<<<<<< HEAD
         "action": "F_SRT\n"
     },
     {
@@ -22,47 +21,16 @@ patterns = [
     {
         "pattern": [b'\x00', b'\x0c', b'\x00', b'\x00', b'\x00', b'\x00', b'"'],
         "action": " SEQ06 "
-=======
-        "action": "FSTR\n"
->>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
     },
     {
         "pattern": [b'\x02', b'\x00', b'\x00', b'5', b'6', b'\xf1', b'\x00'],
         # End the script
-<<<<<<< HEAD
         "action": "\nF_END"
     },
     {
         "pattern": [b'\x02', b'\x00', b'\x00', b'5', b'\x03', b'\x03', b'\x00', b'\x00'],
         # Used before SCExxx_xxx scenario calls. Scenario indicators in the scenarios.
         "action": "\nS_STR "
-=======
-        "action": "\nFEND"
-    },
-    {
-        "pattern": [b'\x00', b'\x00', b'\x00', b'\x00', b'\r', b'\x00', b'\x00'],
-        "action": "\nSEQ01"
-    },
-    {
-        "pattern": [b'\x02', b'\x00', b'\x00', b'\x03', b'\x02', b'\x00', b'\x00'],
-        "action": "\nSEQ02 "
-    },
-    {
-        "pattern": [b'\x02', b'\x00', b'\x00', b'\x03', b'\x04', b'\x00', b'\x00'],
-        "action": "\nSEQ03 "
-    },
-    {
-        "pattern": [b'\x02', b'\x00', b'\x00', b'\x03', b'\x03', b'\x00', b'\x00'],
-        "action": "\nSEQ04 "
-    },
-    {
-        "pattern": [b'\x02', b'\x00', b'\x00', b'5', b'\x03', b'\x03', b'\x00', b'\x00'],
-        "action": "\nSEQ05 "
-    },
-    {
-        "pattern": [b'\x02', b'\x00', b'\x00', b'5'],
-        "action": "\nSEQ06 "
->>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
     },
     {
         "pattern": [b'\x02', b'\x00', b'\x00', b'5', b' '],
@@ -70,7 +38,6 @@ patterns = [
         "action": "C_END "
     },
     {
-<<<<<<< HEAD
         "pattern": [b'\x00', b'\x0c', b'\x02', b'\x00', b'\x00', b'"'],
         # Used after VAR01 and the bytecode after it. Maybe to set it?
         "action": " SET01 "
@@ -89,34 +56,6 @@ patterns = [
         "pattern": [b'\x8c\x01', b'\x00', b'\r', b'\x02'],
         # Used after the VAR01 for Text it seems. Might be the dialoguebox?
         "action": "TXT1"
-=======
-        "pattern": [b'\x02', b'\x00', b'\x00'],
-        "action": "\nSEQ08 "
-    },
-    {
-        "pattern": [b'\x02', b'\x00', b'\x00', b'"'],
-        "action": "\nSEQ09 "
-    },
-    {
-        "pattern": [b'\x8c\x01', b'\x00', b'\r', b'\x02'],
-        "action": "\nSEQ10"
-    },
-    {
-        "pattern": [b'\x00', b'\x00', b'\x00', b'\x00', b'"'],
-        "action": "\nSEQ11 "
-    },
-    {
-        "pattern": [b'\x03', b'\x06', b'\x00', b'\x00'],
-        "action": "\nSEQ12 "
-    },
-    {
-        "pattern": [b'\x03', b'\x07', b'\x00', b'\x00'],
-        "action": "\nSEQ13 "
-    },
-    {
-        "pattern": [b'\x00', b'\x0c'],
-        "action": "\nSEQ14 "
->>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
     },
     {
         "pattern": [b'\x02', b'\x00', b'\x00', b'\xef', b'!'],

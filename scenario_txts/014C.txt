@@ -1,37 +1,15 @@
-<<<<<<< HEAD
 F_SRT
 \x8b\x02\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00P\x054\x01\x00\x00\x00b\x01\x00  
 VAR01 \xc8\x00 SET01 FILE1 .\\Data\\Script\\Bg.Fob COMMAND_TO_BYTECODE3  \x00\x00 
 CMD02 BgAutoFadeIn COMMAND_TO_BYTECODE3 J\x00\x00 
 CHOICE_FLAG \x03\x18\x00\x00
-=======
-FSTR
-\x8b\x02\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00P\x054\x01\x00\x00\x00b\x01\x00  
-SEQ01 \xc8\x00
-SEQ14 
-SEQ08 "
-SEQ12 .\\Data\\Script\\Bg.Fob SPC03  \x00\x00 
-SEQ03 BgAutoFadeIn SPC03 J\x00\x00 
-SEQ06 \x03\x18\x00\x00
->>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
 CHOICE
 「お前には夏バテなんて概念は無いんだろうな」\n「髪、切ったのか？」\n「……」\n\l0,3,
 ENDCHOICE
 
 \x00\x00\x00  
-<<<<<<< HEAD
 VAR01 n\x00 SET01 FILE2 .\\Data\\Script\\TextFunc.Fob COMMAND_TO_BYTECODE1 \xee\x00\x00 
 CMD01 TextOn COMMAND_TO_BYTECODE1 \x1c\x01\x00 
 CHOICE_FLAG  \xee\x00\x00 OPER 
 CMD03 TextClose COMMAND_TO_BYTECODE2 D\x01\x00 
 F_END
-=======
-SEQ01 n\x00
-SEQ14 
-SEQ08 "
-SEQ13 .\\Data\\Script\\TextFunc.Fob SPC01 \xee\x00\x00 
-SEQ02 TextOn SPC01 \x1c\x01\x00 
-SEQ06  \xee\x00\x00 
-SEQ04 TextClose SPC02 D\x01\x00 
-FEND
->>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23

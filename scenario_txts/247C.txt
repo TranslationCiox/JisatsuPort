@@ -1,24 +1,9 @@
-<<<<<<< HEAD
 F_SRT
 \x035\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00^+\x00  
 VAR01 9\x00 SET01 FILE1 .\\Data\\Script\\Bg.Fob COMMAND_TO_BYTECODE3  \x00\x00 
 CMD02 BgAutoFadeIn COMMAND_TO_BYTECODE3 J\x00\x00 
 S_STR SCE247_001\x00 n\x00\x00 S_END 
 VAR01 TXT1 \x90\x91\x01\x0c\x00\x00\x00\x00"\x03 \x00\x00
-=======
-FSTR
-\x035\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00^+\x00  
-SEQ01 9\x00
-SEQ14 
-SEQ08 "
-SEQ12 .\\Data\\Script\\Bg.Fob SPC03  \x00\x00 
-SEQ03 BgAutoFadeIn SPC03 J\x00\x00 
-SEQ05 SCE247_001\x00 n\x00\x00 
-SEQ07  
-SEQ01 
-SEQ10 \x90\x91\x01\x0c
-SEQ11 \x03 \x00\x00
->>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 紅葉が立ち上がった。@
 拓司は紅葉の目の奥を見て、ちいさく頷いた。@
@@ -26,23 +11,10 @@ SEQ11 \x03 \x00\x00
 \n拓司\n　「他には……？」\
 
 \x00\x00\x00  
-<<<<<<< HEAD
 VAR01 \xb2\x00 SET01 FILE2 .\\Data\\Script\\TextFunc.Fob COMMAND_TO_BYTECODE1 R\x01\x00 
 CMD01 TextOn COMMAND_TO_BYTECODE1 \x80\x01\x00 
 S_STR SCE247_002\x00 \x9c\x01\x00 S_END 
 VAR01 TXT1 \x94\x91\x01\x0c\x00\x00\x00\x00"\x03k\x00\x00
-=======
-SEQ01 \xb2\x00
-SEQ14 
-SEQ08 "
-SEQ13 .\\Data\\Script\\TextFunc.Fob SPC01 R\x01\x00 
-SEQ02 TextOn SPC01 \x80\x01\x00 
-SEQ05 SCE247_002\x00 \x9c\x01\x00 
-SEQ07  
-SEQ01 
-SEQ10 \x94\x91\x01\x0c
-SEQ11 \x03k\x00\x00
->>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 カンナ\n　「私は……怖い。\p最終波動がないっていうことが……証明でき\n　　ないなら、ここに残る」@
 \nカンナが目を反らした。@
@@ -53,21 +25,9 @@ SEQ11 \x03k\x00\x00
 \n錦城は最後まで強気を装っていた。\
 
 \x00\x00\x00  
-<<<<<<< HEAD
 VAR01 \xe0\x01 SET01  R\x01\x00 OPER  \x80\x01\x00 
 S_STR SCE247_003\x00 \xc6\x03\x00 S_END 
 VAR01 TXT1 \x98\x91\x01\x0c\x00\x00\x00\x00"\x03g\x00\x00
-=======
-SEQ01 \xe0\x01
-SEQ14 
-SEQ08 " R\x01\x00 
-SEQ08  \x80\x01\x00 
-SEQ05 SCE247_003\x00 \xc6\x03\x00 
-SEQ07  
-SEQ01 
-SEQ10 \x98\x91\x01\x0c
-SEQ11 \x03g\x00\x00
->>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 拓司\n　「わかった。\pそれじゃ、紅葉」@
 紅葉\n　「うん……」@
@@ -81,21 +41,9 @@ SEQ11 \x03g\x00\x00
 \n拓司は紅葉を制した。\
 
 \x00  
-<<<<<<< HEAD
 VAR01 \n\x04 SET01  R\x01\x00 OPER  \x80\x01\x00 
 S_STR SCE247_004\x00 \xe0\x05\x00 S_END 
 VAR01 TXT1 \x9c\x91\x01\x0c\x00\x00\x00\x00"\x03`\x00\x00
-=======
-SEQ01 \n\x04
-SEQ14 
-SEQ08 " R\x01\x00 
-SEQ08  \x80\x01\x00 
-SEQ05 SCE247_004\x00 \xe0\x05\x00 
-SEQ07  
-SEQ01 
-SEQ10 \x9c\x91\x01\x0c
-SEQ11 \x03`\x00\x00
->>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 拓司\n　「もう、そんなことは関係ないんだ。\p設定なんかどうでもいい。\n　　\p俺はお前が好きだ。\pおさななじみだとか、背のたかさがどう\n　　だとか、顔立ちがどうだとか、性格がどうだとか、口調がど\n　　うだとか……そんなことを抜きにして、お前という人間が好\n　　きなんだ。\pだから、いいんだ」@
 紅葉\n　「……」@
@@ -103,21 +51,9 @@ SEQ11 \x03`\x00\x00
 紅葉\n　「うん……行こ」\
 
 \x00\x00\x00  
-<<<<<<< HEAD
 VAR01 $\x06 SET01  R\x01\x00 OPER  \x80\x01\x00 
 S_STR SCE247_005\x00 \xde\x07\x00 S_END 
 VAR01 TXT1 \xa0\x91\x01\x0c\x00\x00\x00\x00"\x03)\x00\x00
-=======
-SEQ01 $\x06
-SEQ14 
-SEQ08 " R\x01\x00 
-SEQ08  \x80\x01\x00 
-SEQ05 SCE247_005\x00 \xde\x07\x00 
-SEQ07  
-SEQ01 
-SEQ10 \xa0\x91\x01\x0c
-SEQ11 \x03)\x00\x00
->>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 恐る恐る、紅葉は拓司の手に触れた。@
 拓司はその手を強く握りしめた。@
@@ -125,7 +61,6 @@ SEQ11 \x03)\x00\x00
 ドアを開き、外の世界へと。\
 
 \x00\x00\x00  
-<<<<<<< HEAD
 VAR01 "\x08 SET01  R\x01\x00 OPER  \x80\x01\x00 
 S_STR SCE247_006\x00 \x00\t\x00 S_END 
 VAR01 TXT1 \xa4\x91\x01\x0c\x00\x00\x00\x00"  
@@ -136,37 +71,6 @@ CMD01 SePlay COMMAND_TO_BYTECODE1 \xf0\t\x00 C_END
 VAR01 \t\x01 SET01  \xc6\t\x00 
 CMD01 PlayCD COMMAND_TO_BYTECODE1 2\n\x00 
 CHOICE_FLAG \x03\xbb\x00\x00
-=======
-SEQ01 "\x08
-SEQ14 
-SEQ08 " R\x01\x00 
-SEQ08  \x80\x01\x00 
-SEQ05 SCE247_006\x00 \x00\t\x00 
-SEQ07  
-SEQ01 
-SEQ10 \xa4\x91\x01\x0c
-SEQ11   
-SEQ01 \xc8\x00
-SEQ14 
-SEQ08 "  \x00\x00 
-SEQ08  J\x00\x00 
-SEQ06   
-SEQ01 
-SEQ08 \x0c
-SEQ08 "  \x04\x00\x00\r\x00\x00 \x17\x00
-SEQ14 
-SEQ08 "  \x08\x00\x00\r\x00\x00 \x01\x00
-SEQ14 
-SEQ08 "
-SEQ12 .\\Data\\Script\\Bgm.Fob SPC02 \xc6\t\x00 
-SEQ02 SePlay SPC01 \xf0\t\x00 
-SEQ06   
-SEQ01 \t\x01
-SEQ14 
-SEQ08 " \xc6\t\x00 
-SEQ02 PlayCD SPC01 2\n\x00 
-SEQ06 \x03\xbb\x00\x00
->>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 拓司\n　「これは……」@
 \n思わず絶句した。@
@@ -180,41 +84,17 @@ SEQ06 \x03\xbb\x00\x00
 あの工業団地の廃墟にさらなる歳月の洗礼を加えて、行き着く果\nてまで荒廃を深化させた－－そんな感じがする。\
 
 \x00  
-<<<<<<< HEAD
 VAR01 N\n SET01  R\x01\x00 OPER  \x80\x01\x00 
 S_STR SCE247_007\x00 t\r\x00 S_END 
 VAR01 TXT1 \xa8\x91\x01\x0c\x00\x00\x00\x00"\x03`\x00\x00
-=======
-SEQ01 N\n
-SEQ14 
-SEQ08 " R\x01\x00 
-SEQ08  \x80\x01\x00 
-SEQ05 SCE247_007\x00 t\r\x00 
-SEQ07  
-SEQ01 
-SEQ10 \xa8\x91\x01\x0c
-SEQ11 \x03`\x00\x00
->>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 腐敗した死体が転がっているのを予想していたが、そのようなも\nのはどこにもない。\p骨や服のかけらすら見つけることができない。\n\pただ、壁にべったりとこびりついている染みが、どこか血の痕を\n想起させる。\pまた、しなびた皮膚のような、毛髪の一部のような、\n正体不明のものがべったりと張り付いている壁もある。@
 もしかしたら、それこそが学生たちのなれの果てなのかもしれな\nい……。\
 
 \x00\x00\x00  
-<<<<<<< HEAD
 VAR01 \xb8\r SET01  R\x01\x00 OPER  \x80\x01\x00 
 S_STR SCE247_008\x00 r\x0f\x00 S_END 
 VAR01 TXT1 \xac\x91\x01\x0c\x00\x00\x00\x00"\x03D\x00\x00
-=======
-SEQ01 \xb8\r
-SEQ14 
-SEQ08 " R\x01\x00 
-SEQ08  \x80\x01\x00 
-SEQ05 SCE247_008\x00 r\x0f\x00 
-SEQ07  
-SEQ01 
-SEQ10 \xac\x91\x01\x0c
-SEQ11 \x03D\x00\x00
->>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 紅葉\n　「どうしたの、これ……？\p　まるで……まるで……」@
 拓司\n　「何十年も経っているみたいだ。\pあの部屋にいるあいだに、い\n　　ったい何があったんだ……？」@
@@ -222,41 +102,17 @@ SEQ11 \x03D\x00\x00
 拓司はその手の上に自分の手を重ねて、力強く頷いた。\
 
 \x00\x00\x00  
-<<<<<<< HEAD
 VAR01 \xb6\x0f SET01  R\x01\x00 OPER  \x80\x01\x00 
 S_STR SCE247_009\x00 \x00\x11\x00 S_END 
 VAR01 TXT1 \xb0\x91\x01\x0c\x00\x00\x00\x00"\x03?\x00\x00
-=======
-SEQ01 \xb6\x0f
-SEQ14 
-SEQ08 " R\x01\x00 
-SEQ08  \x80\x01\x00 
-SEQ05 SCE247_009\x00 \x00\x11\x00 
-SEQ07  
-SEQ01 
-SEQ10 \xb0\x91\x01\x0c
-SEQ11 \x03?\x00\x00
->>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 拓司\n　「考えるのはやめよう。\p俺たちは最初から、起こっていること\n　　の意味を考え続けてきた。\p説明できない状況に筋を一本通そ\n　　うと……あがいてきた。\pでも、そんなの無駄なんだ。@
 　　意味がわからないんじゃない。\p意味なんてないんだ」\
 
 \x00  
-<<<<<<< HEAD
 VAR01 D\x11 SET01  R\x01\x00 OPER  \x80\x01\x00 
 S_STR SCE247_010\x00 z\x12\x00 S_END 
 VAR01 TXT1 \xb4\x91\x01\x0c\x00\x00\x00\x00"\x03\x99\x00\x00
-=======
-SEQ01 D\x11
-SEQ14 
-SEQ08 " R\x01\x00 
-SEQ08  \x80\x01\x00 
-SEQ05 SCE247_010\x00 z\x12\x00 
-SEQ07  
-SEQ01 
-SEQ10 \xb4\x91\x01\x0c
-SEQ11 \x03\x99\x00\x00
->>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 ２人の足音は、校舎の中に大きく響き渡った。@
 不自然な響き方だった。@
@@ -269,21 +125,9 @@ SEQ11 \x03\x99\x00\x00
 まっすぐ歩いているつもりなのに、壁に体当たりしているときも\nある。\
 
 \x00\x00\x00  
-<<<<<<< HEAD
 VAR01 \xbe\x12 SET01  R\x01\x00 OPER  \x80\x01\x00 
 S_STR SCE247_011\x00 \\\x15\x00 S_END 
 VAR01 TXT1 \xb8\x91\x01\x0c\x00\x00\x00\x00"\x03M\x00\x00
-=======
-SEQ01 \xbe\x12
-SEQ14 
-SEQ08 " R\x01\x00 
-SEQ08  \x80\x01\x00 
-SEQ05 SCE247_011\x00 \\\x15\x00 
-SEQ07  
-SEQ01 
-SEQ10 \xb8\x91\x01\x0c
-SEQ11 \x03M\x00\x00
->>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 それでも２人は歩き続けた。@
 階段を降り、廊下を歩いてゆく。@
@@ -292,7 +136,6 @@ SEQ11 \x03M\x00\x00
 しかし、拓司は身体の隅々に残ったエネルギーを総動員して、そ\nのまえに立った。\
 
 \x00  
-<<<<<<< HEAD
 VAR01 \xa0\x15 SET01  R\x01\x00 OPER  \x80\x01\x00 C_END  
 VAR01 OPER \x0c
 SEQ05  \xc6\t\x00 
@@ -301,24 +144,6 @@ CHOICE_FLAG  \xc6\t\x00
 CMD01 StopCD COMMAND_TO_BYTECODE1 \\\x17\x00 
 S_STR SCE247_012\x00 x\x17\x00 S_END 
 VAR01 TXT1 \xbc\x91\x01\x0c\x00\x00\x00\x00"\x03D\x00\x00
-=======
-SEQ01 \xa0\x15
-SEQ14 
-SEQ08 " R\x01\x00 
-SEQ08  \x80\x01\x00 
-SEQ06   
-SEQ01 
-SEQ08 \x0c
-SEQ08 " \xc6\t\x00 
-SEQ02 SeStop SPC01 4\x17\x00 
-SEQ06  \xc6\t\x00 
-SEQ02 StopCD SPC01 \\\x17\x00 
-SEQ05 SCE247_012\x00 x\x17\x00 
-SEQ07  
-SEQ01 
-SEQ10 \xbc\x91\x01\x0c
-SEQ11 \x03D\x00\x00
->>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 拓司\n　「……ここだ」@
 \n壁だ。@
@@ -330,21 +155,9 @@ SEQ11 \x03D\x00\x00
 いや、そもそもそこには何かがあるのだろうか？\
 
 \x00\x00\x00  
-<<<<<<< HEAD
 VAR01 \xbc\x17 SET01  R\x01\x00 OPER  \x80\x01\x00 
 S_STR SCE247_013\x00 \x06\x19\x00 S_END 
 VAR01 TXT1 \xc0\x91\x01\x0c\x00\x00\x00\x00"\x03_\x00\x00
-=======
-SEQ01 \xbc\x17
-SEQ14 
-SEQ08 " R\x01\x00 
-SEQ08  \x80\x01\x00 
-SEQ05 SCE247_013\x00 \x06\x19\x00 
-SEQ07  
-SEQ01 
-SEQ10 \xc0\x91\x01\x0c
-SEQ11 \x03_\x00\x00
->>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 拓司は考えなかった。@
 /*▲SE15　ループ再生（停止まで）*/\a2,2,15,1,/*■CG52　表示（クロスフェード）*/\a7,-2,-2,0,\a0,51,2,0,\a6,-2,0,0,手にした椅子の脚を、がつがつと壁に叩き付けてゆく。@
@@ -354,33 +167,12 @@ SEQ11 \x03_\x00\x00
 紅葉\n　「ええ！」\
 
   
-<<<<<<< HEAD
 VAR01 J\x19 SET01  R\x01\x00 OPER  \x80\x01\x00 
 S_STR SCE247_014\x00 \x00\x1b\x00 S_END 
 VAR01 TXT1 \xc4\x91\x01\x0c\x00\x00\x00\x00"  
 VAR01 OPER \x0c
 SEQ05   \x04\x00\x00\r\x00\x00 \x0f\x00 SET01   \x08\x00\x00\r\x00\x00 \x01\x00 SET01  \xc6\t\x00 OPER  \xf0\t\x00 
 CHOICE_FLAG \x03\xae\x00\x00
-=======
-SEQ01 J\x19
-SEQ14 
-SEQ08 " R\x01\x00 
-SEQ08  \x80\x01\x00 
-SEQ05 SCE247_014\x00 \x00\x1b\x00 
-SEQ07  
-SEQ01 
-SEQ10 \xc4\x91\x01\x0c
-SEQ11   
-SEQ01 
-SEQ08 \x0c
-SEQ08 "  \x04\x00\x00\r\x00\x00 \x0f\x00
-SEQ14 
-SEQ08 "  \x08\x00\x00\r\x00\x00 \x01\x00
-SEQ14 
-SEQ08 " \xc6\t\x00 
-SEQ08  \xf0\t\x00 
-SEQ06 \x03\xae\x00\x00
->>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 ２人は取り憑かれたように、椅子の脚を壁に叩き付けた。@
 一箇所に狙いを絞って叩きつけてゆく。@
@@ -395,21 +187,9 @@ SEQ06 \x03\xae\x00\x00
 １０センチほどしかない！\
 
   
-<<<<<<< HEAD
 VAR01 \xac\x1b SET01  R\x01\x00 OPER  \x80\x01\x00 
 S_STR SCE247_015\x00 \x9e\x1e\x00 S_END 
 VAR01 TXT1 \xc8\x91\x01\x0c\x00\x00\x00\x00"\x03\x8d\x00\x00
-=======
-SEQ01 \xac\x1b
-SEQ14 
-SEQ08 " R\x01\x00 
-SEQ08  \x80\x01\x00 
-SEQ05 SCE247_015\x00 \x9e\x1e\x00 
-SEQ07  
-SEQ01 
-SEQ10 \xc8\x91\x01\x0c
-SEQ11 \x03\x8d\x00\x00
->>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 拓司はおそるおそる、穴に顔を近づけた。@
 壁の向こうがどうなっているのか、それだけでも確認して安心し\nておきかった。@
@@ -423,21 +203,9 @@ SEQ11 \x03\x8d\x00\x00
 \nぴったりと穴に顔を張り付かせて、壁の向こうで誰かがこちらを\nのぞき込んでいたのだ。\
 
 \x00\x00\x00  
-<<<<<<< HEAD
 VAR01 \xe2\x1e SET01  R\x01\x00 OPER  \x80\x01\x00 
 S_STR SCE247_016\x00 P!\x00 S_END 
 VAR01 TXT1 \xcc\x91\x01\x0c\x00\x00\x00\x00"\x03m\x00\x00
-=======
-SEQ01 \xe2\x1e
-SEQ14 
-SEQ08 " R\x01\x00 
-SEQ08  \x80\x01\x00 
-SEQ05 SCE247_016\x00 P!\x00 
-SEQ07  
-SEQ01 
-SEQ10 \xcc\x91\x01\x0c
-SEQ11 \x03m\x00\x00
->>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 拓司\n　「だ、誰だッ！」@
 紅葉\n　「どうしたの、拓司？！」@
@@ -449,21 +217,9 @@ SEQ11 \x03m\x00\x00
 \n近づいてきた紅葉を突き飛ばして、拓司は狂ったように壁に体当\nたりを繰り返した。\
 
 \x00\x00\x00  
-<<<<<<< HEAD
 VAR01 \x94! SET01  R\x01\x00 OPER  \x80\x01\x00 
 S_STR SCE247_017\x00 \x82#\x00 S_END 
 VAR01 TXT1 \xd0\x91\x01\x0c\x00\x00\x00\x00"\x03n\x00\x00
-=======
-SEQ01 \x94!
-SEQ14 
-SEQ08 " R\x01\x00 
-SEQ08  \x80\x01\x00 
-SEQ05 SCE247_017\x00 \x82#\x00 
-SEQ07  
-SEQ01 
-SEQ10 \xd0\x91\x01\x0c
-SEQ11 \x03n\x00\x00
->>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 拓司\n　「お前がやったのか？！\p　お前がこんなことの元凶なのかッ？\n　　！\p　ふざけるなよ、畜生！」@
 \n拓司は、穴の奥にどんよりと浮かんでいたその目を見たことがあ\nるように思えた。@
@@ -478,40 +234,16 @@ SEQ11 \x03n\x00\x00
 狂気を呼び込み、それに容易に支配される目だった。\
 
 \x00\x00\x00  
-<<<<<<< HEAD
 VAR01 \xc6# SET01  R\x01\x00 OPER  \x80\x01\x00 
 S_STR SCE247_018\x00 \xb8%\x00 S_END 
 VAR01 TXT1 \xd4\x91\x01\x0c\x00\x00\x00\x00"\x03C\x00\x00
-=======
-SEQ01 \xc6#
-SEQ14 
-SEQ08 " R\x01\x00 
-SEQ08  \x80\x01\x00 
-SEQ05 SCE247_018\x00 \xb8%\x00 
-SEQ07  
-SEQ01 
-SEQ10 \xd4\x91\x01\x0c
-SEQ11 \x03C\x00\x00
->>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 体当たりを繰り返しているうちに、拓司のシャツの肩の部分には\n真っ赤な血が滲み始めた。\pそれに気づいてようやく拓司は体当た\nりをやめ、今度は椅子の脚をふりかぶって、メチャクチャに壁に\n叩き付け始めた。\pガンガンという音が頭が割れそうなくらい大\nきく響き渡る。\
 
 \x00\x00\x00  
-<<<<<<< HEAD
 VAR01 \xfc% SET01  R\x01\x00 OPER  \x80\x01\x00 
 S_STR SCE247_019\x00 B'\x00 S_END 
 VAR01 TXT1 \xd8\x91\x01\x0c\x00\x00\x00\x00"\x03v\x00\x00
-=======
-SEQ01 \xfc%
-SEQ14 
-SEQ08 " R\x01\x00 
-SEQ08  \x80\x01\x00 
-SEQ05 SCE247_019\x00 B'\x00 
-SEQ07  
-SEQ01 
-SEQ10 \xd8\x91\x01\x0c
-SEQ11 \x03v\x00\x00
->>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 紅葉\n　「拓司！\p　拓司！」@
 拓司\n　「！」@
@@ -523,21 +255,9 @@ SEQ11 \x03v\x00\x00
 しかし、そうではないことを、拓司は知っていた。\
 
 \x00\x00  
-<<<<<<< HEAD
 VAR01 \x86' SET01  R\x01\x00 OPER  \x80\x01\x00 
 S_STR SCE247_020\x00 \x98)\x00 S_END 
 VAR01 TXT1 \xdc\x91\x01\x0c\x00\x00\x00\x00"\x03,\x00\x00
-=======
-SEQ01 \x86'
-SEQ14 
-SEQ08 " R\x01\x00 
-SEQ08  \x80\x01\x00 
-SEQ05 SCE247_020\x00 \x98)\x00 
-SEQ07  
-SEQ01 
-SEQ10 \xdc\x91\x01\x0c
-SEQ11 \x03,\x00\x00
->>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 紅葉\n　「ねえ、なに？\p　なんなの、この音ッ？！」@
 拓司\n　「わからない！\p　わからないけど……！」@
@@ -546,32 +266,14 @@ SEQ11 \x03,\x00\x00
 最終波動がやってきたのだ。\
 
 \x00  
-<<<<<<< HEAD
 VAR01 \xdc) SET01  R\x01\x00 OPER  \x80\x01\x00 
 CHOICE_FLAG \x03\r\x00\x00
-=======
-SEQ01 \xdc)
-SEQ14 
-SEQ08 " R\x01\x00 
-SEQ08  \x80\x01\x00 
-SEQ06 \x03\r\x00\x00
->>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
 CHOICE
 シェルターに駆け戻る\n穴を広げる\n\l0,2,
 ENDCHOICE
 
 \x00\x00\x00  
-<<<<<<< HEAD
 VAR01 \xc6* SET01  R\x01\x00 OPER  \x80\x01\x00 
 CHOICE_FLAG  R\x01\x00 OPER 
 CMD03 TextClose COMMAND_TO_BYTECODE2 @+\x00 
 F_END
-=======
-SEQ01 \xc6*
-SEQ14 
-SEQ08 " R\x01\x00 
-SEQ08  \x80\x01\x00 
-SEQ06  R\x01\x00 
-SEQ04 TextClose SPC02 @+\x00 
-FEND
->>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23

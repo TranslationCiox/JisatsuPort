@@ -1,24 +1,9 @@
-<<<<<<< HEAD
 F_SRT
 G\x1a\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00j\x16\x00  
 VAR01 \x04\x01 SET01 FILE1 .\\Data\\Script\\Bgm.Fob COMMAND_TO_BYTECODE2  \x00\x00 
 CMD01 PlayCD COMMAND_TO_BYTECODE1 J\x00\x00 
 S_STR SCES03_001\x00 f\x00\x00 S_END 
 VAR01 TXT1 \xd0\xb5\x01\x0c\x00\x00\x00\x00"\x03\x8b\x00\x00
-=======
-FSTR
-G\x1a\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00j\x16\x00  
-SEQ01 \x04\x01
-SEQ14 
-SEQ08 "
-SEQ12 .\\Data\\Script\\Bgm.Fob SPC02  \x00\x00 
-SEQ02 PlayCD SPC01 J\x00\x00 
-SEQ05 SCES03_001\x00 f\x00\x00 
-SEQ07  
-SEQ01 
-SEQ10 \xd0\xb5\x01\x0c
-SEQ11 \x03\x8b\x00\x00
->>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 ずっと前に手術を受けて、身体はうんと良くなったの。@
 でも、みんなと一緒に運動とかはできなかったし、旅行とかにも\n行けなかった。\pだからかな、なんだかみんなとはあまり仲良くな\nれなかった。\pどんなに一緒にいても、結局最後のところで私は違\nうんだな、って思ってた。@
@@ -30,23 +15,10 @@ SEQ11 \x03\x8b\x00\x00
 よく夢を見たの。\
 
 \x00\x00\x00  
-<<<<<<< HEAD
 VAR01 \xaa\x00 SET01 FILE2 .\\Data\\Script\\TextFunc.Fob COMMAND_TO_BYTECODE1 \xf6\x02\x00 
 CMD01 TextOn COMMAND_TO_BYTECODE1 $\x03\x00 
 S_STR SCES03_002\x00 @\x03\x00 S_END 
 VAR01 TXT1 \xd4\xb5\x01\x0c\x00\x00\x00\x00"\x03\x89\x00\x00
-=======
-SEQ01 \xaa\x00
-SEQ14 
-SEQ08 "
-SEQ13 .\\Data\\Script\\TextFunc.Fob SPC01 \xf6\x02\x00 
-SEQ02 TextOn SPC01 $\x03\x00 
-SEQ05 SCES03_002\x00 @\x03\x00 
-SEQ07  
-SEQ01 
-SEQ10 \xd4\xb5\x01\x0c
-SEQ11 \x03\x89\x00\x00
->>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 クラスのみんなと宇宙船で旅行してるとね、事故が起きるの。@
 脱出ポットには人数制限があって、どうしても１人だけ宇宙船に\n残らなくちゃいけない。\pみんな困った顔で、うつむいてる。@
@@ -59,21 +31,9 @@ SEQ11 \x03\x89\x00\x00
 なんだかとても悲しかった。\
 
 \x00\x00\x00  
-<<<<<<< HEAD
 VAR01 \x84\x03 SET01  \xf6\x02\x00 OPER  $\x03\x00 
 S_STR SCES03_003\x00 \xe2\x05\x00 S_END 
 VAR01 TXT1 \xd8\xb5\x01\x0c\x00\x00\x00\x00"\x03\xde\x00\x00
-=======
-SEQ01 \x84\x03
-SEQ14 
-SEQ08 " \xf6\x02\x00 
-SEQ08  $\x03\x00 
-SEQ05 SCES03_003\x00 \xe2\x05\x00 
-SEQ07  
-SEQ01 
-SEQ10 \xd8\xb5\x01\x0c
-SEQ11 \x03\xde\x00\x00
->>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 手術してからも、本当のお友達はできなかった。@
 ずっと昔は、みんなが気を使って友達のふりをしてくれるのが嫌\nで仕方がなかったけど、学生になってからは、それすらなくなち\nゃった。@
@@ -88,21 +48,9 @@ SEQ11 \x03\xde\x00\x00
 朝は公園でぼんやりして、９時４５分になったら図書館に行って、\nお昼まで本を読むの。\pそれからデパートに行って、いろんなもの\nを見て、屋上に行く\p。平日の昼間の屋上って、誰もいないんだよ。\n\pそんな、誰もいない屋上で、ドルチェとお話ししてた。\
 
 \x00  
-<<<<<<< HEAD
 VAR01 &\x06 SET01  \xf6\x02\x00 OPER  $\x03\x00 
 S_STR SCES03_004\x00 \xd8\t\x00 S_END 
 VAR01 TXT1 \xdc\xb5\x01\x0c\x00\x00\x00\x00"\x03\xa3\x00\x00
-=======
-SEQ01 &\x06
-SEQ14 
-SEQ08 " \xf6\x02\x00 
-SEQ08  $\x03\x00 
-SEQ05 SCES03_004\x00 \xd8\t\x00 
-SEQ07  
-SEQ01 
-SEQ10 \xdc\xb5\x01\x0c
-SEQ11 \x03\xa3\x00\x00
->>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 「ねえドルチェ」@
 『なんニャ、早桃ちゃん？』@
@@ -115,29 +63,11 @@ SEQ11 \x03\xa3\x00\x00
 『答はね、早桃ちゃん。\p風のなかにあるニャ』\
 
 \x00\x00\x00  
-<<<<<<< HEAD
 VAR01 \x1c\n SET01  \xf6\x02\x00 OPER  $\x03\x00 C_END  
 VAR01 B\x00 SET01 FILE1 .\\Data\\Script\\Bg.Fob COMMAND_TO_BYTECODE3 \xfc\x0c\x00 
 CMD02 BgAutoFadeIn COMMAND_TO_BYTECODE3 &\r\x00 
 S_STR SCES03_005\x00 J\r\x00 S_END 
 VAR01 TXT1 \xe0\xb5\x01\x0c\x00\x00\x00\x00"\x03|\x00\x00
-=======
-SEQ01 \x1c\n
-SEQ14 
-SEQ08 " \xf6\x02\x00 
-SEQ08  $\x03\x00 
-SEQ06   
-SEQ01 B\x00
-SEQ14 
-SEQ08 "
-SEQ12 .\\Data\\Script\\Bg.Fob SPC03 \xfc\x0c\x00 
-SEQ03 BgAutoFadeIn SPC03 &\r\x00 
-SEQ05 SCES03_005\x00 J\r\x00 
-SEQ07  
-SEQ01 
-SEQ10 \xe0\xb5\x01\x0c
-SEQ11 \x03|\x00\x00
->>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 ある日、いつもみたいに屋上でぼんやりしていると、声をかけら\nれたの。\pお父さんと同じくらいの歳の人で……あ、前のお父さん\nだよ……すごく優しそうな人だった。@
 一緒にご飯食べない？\p　ってその人はいった。@
@@ -149,27 +79,10 @@ SEQ11 \x03|\x00\x00
 でも、どれくらいなの？　って。\
 
 \x00\x00\x00  
-<<<<<<< HEAD
 VAR01 \x8e\r SET01  \xf6\x02\x00 OPER  $\x03\x00 C_END  
 VAR01 \xc8\x00 SET01  \xfc\x0c\x00 OPER  &\r\x00 
 S_STR SCES03_006\x00 \xec\x0f\x00 S_END 
 VAR01 TXT1 \xe4\xb5\x01\x0c\x00\x00\x00\x00"\x03SFLAG
-=======
-SEQ01 \x8e\r
-SEQ14 
-SEQ08 " \xf6\x02\x00 
-SEQ08  $\x03\x00 
-SEQ06   
-SEQ01 \xc8\x00
-SEQ14 
-SEQ08 " \xfc\x0c\x00 
-SEQ08  &\r\x00 
-SEQ05 SCES03_006\x00 \xec\x0f\x00 
-SEQ07  
-SEQ01 
-SEQ10 \xe4\xb5\x01\x0c
-SEQ11 \x03j\x00\x00
->>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 ……びっくりした？@
 言い訳する気はないよ。\pでも、ひとつだけ信じて欲しいのは、お\n金なんかどうでも良かったってこと。\pただ、こういうときは、値\n段を聞いておくものじゃないかなと思ったから、聞いただけ。@
@@ -180,21 +93,9 @@ SEQ11 \x03j\x00\x00
 特別扱いじゃなくて、普通の、どこにでもいる女の子として扱っ\nてもらってるんだなって。\
 
 \x00  
-<<<<<<< HEAD
 VAR01 0\x10 SET01  \xf6\x02\x00 OPER  $\x03\x00 
 S_STR SCES03_007\x00 \x12\x12\x00 S_END 
 VAR01 TXT1 \xe8\xb5\x01\x0c\x00\x00\x00\x00"\x03\xe2\x00\x00
-=======
-SEQ01 0\x10
-SEQ14 
-SEQ08 " \xf6\x02\x00 
-SEQ08  $\x03\x00 
-SEQ05 SCES03_007\x00 \x12\x12\x00 
-SEQ07  
-SEQ01 
-SEQ10 \xe8\xb5\x01\x0c
-SEQ11 \x03\xe2\x00\x00
->>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 一緒にご飯を食べて、いろんなお話をした。@
 みんな、ウソのお話。早桃は活発なクラスの人気者で、いろいろ\n遊びなんかも経験してる子って設定なの。@
@@ -210,21 +111,9 @@ SEQ11 \x03\xe2\x00\x00
 私は道に落ちている石ころみたいなものじゃなくて、ちゃんと価\n値がある人間なんだって。\
 
 \x00\x00\x00  
-<<<<<<< HEAD
 VAR01 V\x12 SET01  \xf6\x02\x00 OPER  $\x03\x00 
 CHOICE_FLAG   \x00\x00 
 CMD01 StopCD COMMAND_TO_BYTECODE1 $\x16\x00 
 CHOICE_FLAG  \xf6\x02\x00 OPER 
 CMD03 TextClose COMMAND_TO_BYTECODE2 L\x16\x00 
 F_END
-=======
-SEQ01 V\x12
-SEQ14 
-SEQ08 " \xf6\x02\x00 
-SEQ08  $\x03\x00 
-SEQ06   \x00\x00 
-SEQ02 StopCD SPC01 $\x16\x00 
-SEQ06  \xf6\x02\x00 
-SEQ04 TextClose SPC02 L\x16\x00 
-FEND
->>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23

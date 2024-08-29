@@ -1,21 +1,8 @@
-<<<<<<< HEAD
 F_SRT
 \xd6\x06\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\x82\x05\x00FILE1 .\\Data\\Script\\Bgm.Fob COMMAND_TO_BYTECODE2 \x06\x00\x00 
 CMD01 StopCD COMMAND_TO_BYTECODE1 0\x00\x00 
 S_STR SCE094_001\x00 L\x00\x00 S_END 
 VAR01 TXT1 \x80\xa2 SEQ06 \x03\x8e\x00\x00
-=======
-FSTR
-\xd6\x06\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\x82\x05\x00
-SEQ12 .\\Data\\Script\\Bgm.Fob SPC02 \x06\x00\x00 
-SEQ02 StopCD SPC01 0\x00\x00 
-SEQ05 SCE094_001\x00 L\x00\x00 
-SEQ07  
-SEQ01 
-SEQ10 \x80\xa2
-SEQ14 
-SEQ11 \x03\x8e\x00\x00
->>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 御堂の眼に、獰猛なひかりが宿った。@
 \n御堂\n　「虎菱、まさかてめえまでいかれちまったんじゃねえだろうな\n　　？」@
@@ -27,47 +14,17 @@ SEQ11 \x03\x8e\x00\x00
 \n拓司はぴしゃりとさえぎった。\
 
 \x00\x00\x00  
-<<<<<<< HEAD
 VAR01 \x90\x00 SET01 FILE2 .\\Data\\Script\\TextFunc.Fob COMMAND_TO_BYTECODE1 \xe8\x02\x00 
 CMD01 TextOn COMMAND_TO_BYTECODE1 \x16\x03\x00 
 S_STR SCE094_002\x00 2\x03\x00 S_END 
 VAR01 TXT1 \x84\xa2 SEQ06 \x03P\x00\x00
-=======
-SEQ01 \x90\x00
-SEQ14 
-SEQ08 "
-SEQ13 .\\Data\\Script\\TextFunc.Fob SPC01 \xe8\x02\x00 
-SEQ02 TextOn SPC01 \x16\x03\x00 
-SEQ05 SCE094_002\x00 2\x03\x00 
-SEQ07  
-SEQ01 
-SEQ10 \x84\xa2
-SEQ14 
-SEQ11 \x03P\x00\x00
->>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 拓司\n　「『ここを出ていきたい人間は、いつでもそれを実行すること\n　　ができる』。\pこれを最低限のルールにしよう。\p自殺波動とか、\n　　最終波動とか、ラジオからの指令電波とか、わからないこと\n　　が多すぎる。\p何が本当か分からない現状、何が正しい判断な\n　　のか、答は自分の中にしかない。\p自分で判断するんだ」\
 
 \x00  
-<<<<<<< HEAD
 VAR01 v\x03 SET01  \xe8\x02\x00 OPER  \x16\x03\x00 C_END  
 VAR01 \xc8\x00 SET01 FILE1 .\\Data\\Script\\Bg.Fob COMMAND_TO_BYTECODE3 \n\x05\x00 
 CMD02 BgAutoFadeIn COMMAND_TO_BYTECODE3 4\x05\x00 
 CHOICE_FLAG  \xe8\x02\x00 OPER 
 CMD03 TextClose COMMAND_TO_BYTECODE2 d\x05\x00 
 F_END
-=======
-SEQ01 v\x03
-SEQ14 
-SEQ08 " \xe8\x02\x00 
-SEQ08  \x16\x03\x00 
-SEQ06   
-SEQ01 \xc8\x00
-SEQ14 
-SEQ08 "
-SEQ12 .\\Data\\Script\\Bg.Fob SPC03 \n\x05\x00 
-SEQ03 BgAutoFadeIn SPC03 4\x05\x00 
-SEQ06  \xe8\x02\x00 
-SEQ04 TextClose SPC02 d\x05\x00 
-FEND
->>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23

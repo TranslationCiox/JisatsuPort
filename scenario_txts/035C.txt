@@ -1,47 +1,17 @@
-<<<<<<< HEAD
 F_SRT
 \xfb\x08\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\x14\x07\x00  
 VAR01 \x07\x01 SET01 FILE1 .\\Data\\Script\\Bgm.Fob COMMAND_TO_BYTECODE2  \x00\x00 
 CMD01 PlayCD COMMAND_TO_BYTECODE1 J\x00\x00 
 S_STR SCE033_001\x00 f\x00\x00 S_END 
 VAR01 TXT1 PF SEQ06 \x03&\x00\x00
-=======
-FSTR
-\xfb\x08\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\x14\x07\x00  
-SEQ01 \x07\x01
-SEQ14 
-SEQ08 "
-SEQ12 .\\Data\\Script\\Bgm.Fob SPC02  \x00\x00 
-SEQ02 PlayCD SPC01 J\x00\x00 
-SEQ05 SCE033_001\x00 f\x00\x00 
-SEQ07  
-SEQ01 
-SEQ10 PF
-SEQ14 
-SEQ11 \x03&\x00\x00
->>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 拓司の中に、今日の昼食はどうするのか、という紅葉の言葉が引\nっかかっていた。\p拓司は、教室に引き返し、弁当をかじっている\n紅葉に声をかけた。\
 
 \x00\x00\x00  
-<<<<<<< HEAD
 VAR01 \xaa\x00 SET01 FILE2 .\\Data\\Script\\TextFunc.Fob COMMAND_TO_BYTECODE1 b\x01\x00 
 CMD01 TextOn COMMAND_TO_BYTECODE1 \x90\x01\x00 
 S_STR SCE033_002\x00 \xac\x01\x00 S_END 
 VAR01 TXT1 TF SEQ06 \x03J\x00\x00
-=======
-SEQ01 \xaa\x00
-SEQ14 
-SEQ08 "
-SEQ13 .\\Data\\Script\\TextFunc.Fob SPC01 b\x01\x00 
-SEQ02 TextOn SPC01 \x90\x01\x00 
-SEQ05 SCE033_002\x00 \xac\x01\x00 
-SEQ07  
-SEQ01 
-SEQ10 TF
-SEQ14 
-SEQ11 \x03J\x00\x00
->>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 拓司\n　「よう」@
 紅葉\n　「ん？」@
@@ -52,22 +22,9 @@ SEQ11 \x03J\x00\x00
 \n紅葉はあっさりといった。\pなんだか拍子抜けするようないいかた\nだった。\
 
 \x00\x00\x00  
-<<<<<<< HEAD
 VAR01 \xf0\x01 SET01  b\x01\x00 OPER  \x90\x01\x00 
 S_STR SCE033_003\x00 R\x03\x00 S_END 
 VAR01 TXT1 XF SEQ06 \x03H\x00\x00
-=======
-SEQ01 \xf0\x01
-SEQ14 
-SEQ08 " b\x01\x00 
-SEQ08  \x90\x01\x00 
-SEQ05 SCE033_003\x00 R\x03\x00 
-SEQ07  
-SEQ01 
-SEQ10 XF
-SEQ14 
-SEQ11 \x03H\x00\x00
->>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 紅葉\n　「あるよ。\p食べる？\p　だったら屋上までつきあってくれない\n　　かな」@
 拓司\n　「屋上？」@
@@ -76,26 +33,11 @@ SEQ11 \x03H\x00\x00
 紅葉\n　「ちょっと教室じゃ……アレだから。\pいいでしょ、つきあって\n　　よ」\
 
 \x00  
-<<<<<<< HEAD
 VAR01 \x96\x03 SET01  b\x01\x00 OPER  \x90\x01\x00 
 CHOICE_FLAG   \x00\x00 
 CMD01 StopCD COMMAND_TO_BYTECODE1 \xfc\x04\x00 
 S_STR SCE033_004\x00 \x18\x05\x00 S_END 
 VAR01 TXT1 \\F SEQ06 \x03U\x00\x00
-=======
-SEQ01 \x96\x03
-SEQ14 
-SEQ08 " b\x01\x00 
-SEQ08  \x90\x01\x00 
-SEQ06   \x00\x00 
-SEQ02 StopCD SPC01 \xfc\x04\x00 
-SEQ05 SCE033_004\x00 \x18\x05\x00 
-SEQ07  
-SEQ01 
-SEQ10 \\F
-SEQ14 
-SEQ11 \x03U\x00\x00
->>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 －－何か変だ。@
 \n拓司は思った。@
@@ -103,17 +45,7 @@ SEQ11 \x03U\x00\x00
 \n紅葉\n　「他のコたちに気づかれるとナンだから……先に行ってくれな\n　　い？\p　１０分したら、行く」\
 
 \x00  
-<<<<<<< HEAD
 VAR01 \\\x05 SET01  b\x01\x00 OPER  \x90\x01\x00 
 CHOICE_FLAG  b\x01\x00 OPER 
 CMD03 TextClose COMMAND_TO_BYTECODE2 \xf6\x06\x00 
 F_END
-=======
-SEQ01 \\\x05
-SEQ14 
-SEQ08 " b\x01\x00 
-SEQ08  \x90\x01\x00 
-SEQ06  b\x01\x00 
-SEQ04 TextClose SPC02 \xf6\x06\x00 
-FEND
->>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23

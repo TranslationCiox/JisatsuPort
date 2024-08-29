@@ -1,17 +1,7 @@
-<<<<<<< HEAD
 F_SRT
 \xc9\x05\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xa4\t3\x01\x00\x00\x00\xac\x04\x00
 CMD03 SCE074_001\x00 \x06\x00\x00 S_END 
 VAR01 TXT1 @\x83 SEQ06 \x03\xab\x00\x00
-=======
-FSTR
-\xc9\x05\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xa4\t3\x01\x00\x00\x00\xac\x04\x00\x03\x03\x00\x00SCE074_001\x00 \x06\x00\x00 
-SEQ07  
-SEQ01 
-SEQ10 @\x83
-SEQ14 
-SEQ11 \x03\xab\x00\x00
->>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 拓司はまだ、『自殺波動』などというものを信じるつもりはない。\n\pしかし、なたねが、この狂った世界にわずかながら残されている\nいくつかの法則のようなものを知っていることだけは確かなよう\nに思えた。@
 あるいはここは、なたねの世界なのではないか？@
@@ -21,40 +11,16 @@ SEQ11 \x03\xab\x00\x00
 いまや、信じられるものはなたねの言葉しかなかった。\pでたらめ\nな世界にうち立てられた、妄想の真実。\pそれにすがるしか、道は\nないように思えた。\
 
 \x00\x00\x00  
-<<<<<<< HEAD
 VAR01 J\x00 SET01 FILE2 .\\Data\\Script\\TextFunc.Fob COMMAND_TO_BYTECODE1 \x16\x03\x00 
 CMD01 TextOn COMMAND_TO_BYTECODE1 D\x03\x00 
 S_STR SCE074_002\x00 `\x03\x00 S_END 
 VAR01 TXT1 D\x83 SEQ06 \x03)\x00\x00
-=======
-SEQ01 J\x00
-SEQ14 
-SEQ08 "
-SEQ13 .\\Data\\Script\\TextFunc.Fob SPC01 \x16\x03\x00 
-SEQ02 TextOn SPC01 D\x03\x00 
-SEQ05 SCE074_002\x00 `\x03\x00 
-SEQ07  
-SEQ01 
-SEQ10 D\x83
-SEQ14 
-SEQ11 \x03)\x00\x00
->>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 路線変更をしてまもなく進んだとき、またもやなたねが静止をか\nけた。@
 \nなたね\n　「ここも駄目。\pここにも波動がきているわ。\p別の道を選びまし\n　　ょう」\
 
 \x00  
-<<<<<<< HEAD
 VAR01 \xa4\x03 SET01  \x16\x03\x00 OPER  D\x03\x00 
 CHOICE_FLAG  \x16\x03\x00 OPER 
 CMD03 TextClose COMMAND_TO_BYTECODE2 \x8e\x04\x00 
 F_END
-=======
-SEQ01 \xa4\x03
-SEQ14 
-SEQ08 " \x16\x03\x00 
-SEQ08  D\x03\x00 
-SEQ06  \x16\x03\x00 
-SEQ04 TextClose SPC02 \x8e\x04\x00 
-FEND
->>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23

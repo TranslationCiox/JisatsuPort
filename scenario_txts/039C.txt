@@ -1,25 +1,9 @@
-<<<<<<< HEAD
 F_SRT
 \n\x08\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00@\x06\x00  
 VAR01 \x08\x01 SET01 FILE1 .\\Data\\Script\\Bgm.Fob COMMAND_TO_BYTECODE2  \x00\x00 
 CMD01 PlayCD COMMAND_TO_BYTECODE1 J\x00\x00 
 S_STR SCE039_001\x00 f\x00\x00 S_END 
 VAR01 TXT1 \x90L SEQ06 \x03N\x00\x00
-=======
-FSTR
-\n\x08\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00@\x06\x00  
-SEQ01 \x08\x01
-SEQ14 
-SEQ08 "
-SEQ12 .\\Data\\Script\\Bgm.Fob SPC02  \x00\x00 
-SEQ02 PlayCD SPC01 J\x00\x00 
-SEQ05 SCE039_001\x00 f\x00\x00 
-SEQ07  
-SEQ01 
-SEQ10 \x90L
-SEQ14 
-SEQ11 \x03N\x00\x00
->>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 拓司\n　「早桃は、どうなんだ？」@
 \n引き返すことができない場所へと、話題が転がっていることには\n気づいていた。@
@@ -31,24 +15,10 @@ SEQ11 \x03N\x00\x00
 拓司\n　「……」\
 
 \x00\x00\x00  
-<<<<<<< HEAD
 VAR01 \xaa\x00 SET01 FILE2 .\\Data\\Script\\TextFunc.Fob COMMAND_TO_BYTECODE1 \x02\x02\x00 
 CMD01 TextOn COMMAND_TO_BYTECODE1 0\x02\x00 
 S_STR SCE039_002\x00 L\x02\x00 S_END 
 VAR01 TXT1 \x94L SEQ06 \x03W\x00\x00
-=======
-SEQ01 \xaa\x00
-SEQ14 
-SEQ08 "
-SEQ13 .\\Data\\Script\\TextFunc.Fob SPC01 \x02\x02\x00 
-SEQ02 TextOn SPC01 0\x02\x00 
-SEQ05 SCE039_002\x00 L\x02\x00 
-SEQ07  
-SEQ01 
-SEQ10 \x94L
-SEQ14 
-SEQ11 \x03W\x00\x00
->>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 あまりにもあっさりとした口調だったので、拓司は早桃がそれを\n冗談として処理しようとしているのかと思った。@
 しかし、拓司を正面から見据える早桃の表情は、真剣そのものだ\nった。@
@@ -59,22 +29,9 @@ SEQ11 \x03W\x00\x00
 拓司\n　「？」\
 
 \x00\x00\x00  
-<<<<<<< HEAD
 VAR01 \x90\x02 SET01  \x02\x02\x00 OPER  0\x02\x00 
 S_STR SCE039_003\x00 &\x04\x00 S_END 
 VAR01 TXT1 \x98L SEQ06 \x03>\x00\x00
-=======
-SEQ01 \x90\x02
-SEQ14 
-SEQ08 " \x02\x02\x00 
-SEQ08  0\x02\x00 
-SEQ05 SCE039_003\x00 &\x04\x00 
-SEQ07  
-SEQ01 
-SEQ10 \x98L
-SEQ14 
-SEQ11 \x03>\x00\x00
->>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 早桃\n　「わざとドアを開けておいたの。@
 　　おにいちゃんに見てもらおうと思って。@
@@ -83,32 +40,14 @@ SEQ11 \x03>\x00\x00
 拓司\n　「……早桃」@
 \z
 \x00  
-<<<<<<< HEAD
 VAR01 j\x04 SET01  \x02\x02\x00 OPER  0\x02\x00 
 CHOICE_FLAG \x03\x10\x00\x00
-=======
-SEQ01 j\x04
-SEQ14 
-SEQ08 " \x02\x02\x00 
-SEQ08  0\x02\x00 
-SEQ06 \x03\x10\x00\x00
->>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
 CHOICE
 義兄として好きだという\n男として好きだという\n\l0,2,
 ENDCHOICE
 
 \x00\x00\x00  
-<<<<<<< HEAD
 VAR01 \x9c\x05 SET01  \x02\x02\x00 OPER  0\x02\x00 
 CHOICE_FLAG  \x02\x02\x00 OPER 
 CMD03 TextClose COMMAND_TO_BYTECODE2 "\x06\x00 
 F_END
-=======
-SEQ01 \x9c\x05
-SEQ14 
-SEQ08 " \x02\x02\x00 
-SEQ08  0\x02\x00 
-SEQ06  \x02\x02\x00 
-SEQ04 TextClose SPC02 "\x06\x00 
-FEND
->>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23

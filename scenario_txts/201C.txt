@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 F_SRT
 1#\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xd8\x1d\x00
 CMD03 SCE201_001\x00 \x06\x00\x00 S_END 
@@ -9,30 +8,6 @@ VAR01 OPER \x0c
 SEQ05   \x04\x00\x00\r\x00\x00 \x06\x00 SET01   \x08\x00\x00\r\x00\x00 \x01\x00 SET01 FILE1 .\\Data\\Script\\Bgm.Fob COMMAND_TO_BYTECODE2 \x00\x01\x00 
 CMD01 SePlay COMMAND_TO_BYTECODE1 *\x01\x00 
 CHOICE_FLAG \x03\xa0\x00\x00
-=======
-FSTR
-1#\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xd8\x1d\x00\x03\x03\x00\x00SCE201_001\x00 \x06\x00\x00 
-SEQ07  
-SEQ01 
-SEQ10 \xb0I\x01\x0c
-SEQ11   
-SEQ01 \xc9\x00
-SEQ14 
-SEQ08 "
-SEQ12 .\\Data\\Script\\Bg.Fob SPC03 d\x00\x00 
-SEQ03 BgAutoFadeIn SPC03 \x8e\x00\x00 
-SEQ06   
-SEQ01 
-SEQ08 \x0c
-SEQ08 "  \x04\x00\x00\r\x00\x00 \x06\x00
-SEQ14 
-SEQ08 "  \x08\x00\x00\r\x00\x00 \x01\x00
-SEQ14 
-SEQ08 "
-SEQ12 .\\Data\\Script\\Bgm.Fob SPC02 \x00\x01\x00 
-SEQ02 SePlay SPC01 *\x01\x00 
-SEQ06 \x03\xa0\x00\x00
->>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 錆びたシャッターをこじ開けるように、目を開く。@
 薄く開いて、あたりを見る。@
@@ -46,23 +21,10 @@ SEQ06 \x03\xa0\x00\x00
 この『白い部屋の世界』が現実なのだとしたら、それは喜ぶべき\n傾向なのだろう。\pしかし、ここが夢の世界だとしたら……それは\n妄想世界に固定されつつあるということであり……恐怖すべきこ\nとなのだ。\
 
 \x00  
-<<<<<<< HEAD
 VAR01 F\x01 SET01 FILE2 .\\Data\\Script\\TextFunc.Fob COMMAND_TO_BYTECODE1 \xe6\x03\x00 
 CMD01 TextOn COMMAND_TO_BYTECODE1 \x14\x04\x00 
 S_STR SCE201_002\x00 0\x04\x00 S_END 
 VAR01 TXT1 \xb4I\x01\x0c\x00\x00\x00\x00"\x03\x8a\x00\x00
-=======
-SEQ01 F\x01
-SEQ14 
-SEQ08 "
-SEQ13 .\\Data\\Script\\TextFunc.Fob SPC01 \xe6\x03\x00 
-SEQ02 TextOn SPC01 \x14\x04\x00 
-SEQ05 SCE201_002\x00 0\x04\x00 
-SEQ07  
-SEQ01 
-SEQ10 \xb4I\x01\x0c
-SEQ11 \x03\x8a\x00\x00
->>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 わからない。@
 どう思えばいいのかすらわからない。@
@@ -77,21 +39,9 @@ SEQ11 \x03\x8a\x00\x00
 それにしても、似ている。\
 
 \x00  
-<<<<<<< HEAD
 VAR01 t\x04 SET01  \xe6\x03\x00 OPER  \x14\x04\x00 
 S_STR SCE201_003\x00 \xd6\x06\x00 S_END 
 VAR01 TXT1 \xb8I\x01\x0c\x00\x00\x00\x00"\x03\x86\x00\x00
-=======
-SEQ01 t\x04
-SEQ14 
-SEQ08 " \xe6\x03\x00 
-SEQ08  \x14\x04\x00 
-SEQ05 SCE201_003\x00 \xd6\x06\x00 
-SEQ07  
-SEQ01 
-SEQ10 \xb8I\x01\x0c
-SEQ11 \x03\x86\x00\x00
->>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 『学校に籠城している世界』に登場した雲居なたねと、瓜二つ\nりである。\p眼鏡、肩までの黒髪、華奢な身体。\p……ただ、なにか\n印象が違う。\p目だけが違うのだ。@
 『学校に籠城している世界』の雲居なたねの目は、死んでいた。\n\pうつろで、どこにも焦点を結んでいなかった。@
@@ -101,21 +51,9 @@ SEQ11 \x03\x86\x00\x00
 \n矢継ぎ早に尋ねる少女の声を聞いて、拓司はようやく気づいた。\
 
 \x00  
-<<<<<<< HEAD
 VAR01 \x1a\x07 SET01  \xe6\x03\x00 OPER  \x14\x04\x00 
 S_STR SCE201_004\x00 l\t\x00 S_END 
 VAR01 TXT1 \xbcI\x01\x0c\x00\x00\x00\x00"\x03\x84\x00\x00
-=======
-SEQ01 \x1a\x07
-SEQ14 
-SEQ08 " \xe6\x03\x00 
-SEQ08  \x14\x04\x00 
-SEQ05 SCE201_004\x00 l\t\x00 
-SEQ07  
-SEQ01 
-SEQ10 \xbcI\x01\x0c
-SEQ11 \x03\x84\x00\x00
->>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 拓司\n　「最初……壁の向こうから話しかけてきたのは、君だったのか\n　　？」@
 女の子\n　「ええ」@
@@ -125,21 +63,9 @@ SEQ11 \x03\x84\x00\x00
 女の子\n　「そう。\pじゃあ、私も雲居なたねよ。\p紛らわしいようだった\n　　らナタネと呼んで」\
 
 \x00\x00\x00  
-<<<<<<< HEAD
 VAR01 \xb0\t SET01  \xe6\x03\x00 OPER  \x14\x04\x00 
 S_STR SCE201_005\x00 \xfa\x0b\x00 S_END 
 VAR01 TXT1 \xc0I\x01\x0c\x00\x00\x00\x00"\x03\x9e\x00\x00
-=======
-SEQ01 \xb0\t
-SEQ14 
-SEQ08 " \xe6\x03\x00 
-SEQ08  \x14\x04\x00 
-SEQ05 SCE201_005\x00 \xfa\x0b\x00 
-SEQ07  
-SEQ01 
-SEQ10 \xc0I\x01\x0c
-SEQ11 \x03\x9e\x00\x00
->>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 　女の子は－－雲居ナタネは、やや意地悪くフフと笑った。@
 \n拓司\n　「ふざけないでくれ。\p俺は今、本気で混乱してる。\p頭がおかし\n　　くなりそうだ。\pなにがなんだかわからない。\p頼む。話してく\n　　れ。\p教授がいっていたとおり、この世界が『現実』なのか？@
@@ -149,21 +75,9 @@ SEQ11 \x03\x9e\x00\x00
 \nナタネは思案顔を作って沈黙した。\pそして、ベッドに掛けられた\n鳥籠に目を留めて、いった。\
 
 \x00\x00\x00  
-<<<<<<< HEAD
 VAR01 >\x0c SET01  \xe6\x03\x00 OPER  \x14\x04\x00 
 S_STR SCE201_006\x00 \xf0\x0e\x00 S_END 
 VAR01 TXT1 \xc4I\x01\x0c\x00\x00\x00\x00"\x03U\x00\x00
-=======
-SEQ01 >\x0c
-SEQ14 
-SEQ08 " \xe6\x03\x00 
-SEQ08  \x14\x04\x00 
-SEQ05 SCE201_006\x00 \xf0\x0e\x00 
-SEQ07  
-SEQ01 
-SEQ10 \xc4I\x01\x0c
-SEQ11 \x03U\x00\x00
->>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 ナタネ\n　「この鳥は、あなたが創ったの」@
 拓司\n　「創った？」@
@@ -174,21 +88,9 @@ SEQ11 \x03U\x00\x00
 拓司\n　「わからない。\pまったくわからない」\
 
 \x00\x00\x00  
-<<<<<<< HEAD
 VAR01 4\x0f SET01  \xe6\x03\x00 OPER  \x14\x04\x00 
 S_STR SCE201_007\x00 \xc2\x10\x00 S_END 
 VAR01 TXT1 \xc8I\x01\x0c\x00\x00\x00\x00"\x03\x7f\x00\x00
-=======
-SEQ01 4\x0f
-SEQ14 
-SEQ08 " \xe6\x03\x00 
-SEQ08  \x14\x04\x00 
-SEQ05 SCE201_007\x00 \xc2\x10\x00 
-SEQ07  
-SEQ01 
-SEQ10 \xc8I\x01\x0c
-SEQ11 \x03\x7f\x00\x00
->>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 ナタネ\n　「そうね……たとえば神様は世界を創った。\pなんだったかしら\n　　……『光あれ』？\p　そうして世界を創って、人間を創った。@
 　　そうよね？」@
@@ -202,21 +104,9 @@ SEQ11 \x03\x7f\x00\x00
 そうしないと逆さまになったベッドからストンと落下してしまう\nと思ったのだ。\
 
 \x00  
-<<<<<<< HEAD
 VAR01 \x06\x11 SET01  \xe6\x03\x00 OPER  \x14\x04\x00 
 S_STR SCE201_008\x00 <\x13\x00 S_END 
 VAR01 TXT1 \xccI\x01\x0c\x00\x00\x00\x00"\x03\xa5\x00\x00
-=======
-SEQ01 \x06\x11
-SEQ14 
-SEQ08 " \xe6\x03\x00 
-SEQ08  \x14\x04\x00 
-SEQ05 SCE201_008\x00 <\x13\x00 
-SEQ07  
-SEQ01 
-SEQ10 \xccI\x01\x0c
-SEQ11 \x03\xa5\x00\x00
->>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 ……もちろん落ちはしない。@
 それは目眩のようなもので、世界は歴然として反転などしていな\nいからだ。@
@@ -226,21 +116,9 @@ SEQ11 \x03\xa5\x00\x00
 考察は後回しだ。いまは少女の話を聞くことが先決だろう。\
 
 \x00  
-<<<<<<< HEAD
 VAR01 \x80\x13 SET01  \xe6\x03\x00 OPER  \x14\x04\x00 
 S_STR SCE201_009\x00 N\x16\x00 S_END 
 VAR01 TXT1 \xd0I\x01\x0c\x00\x00\x00\x00"\x03n\x00\x00
-=======
-SEQ01 \x80\x13
-SEQ14 
-SEQ08 " \xe6\x03\x00 
-SEQ08  \x14\x04\x00 
-SEQ05 SCE201_009\x00 N\x16\x00 
-SEQ07  
-SEQ01 
-SEQ10 \xd0I\x01\x0c
-SEQ11 \x03n\x00\x00
->>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 拓司\n　「……ＯＫ。\p俺はその鳥を創った。\p神様みたいに『鳥よあれ』\n　　と願って、創った。\pそういうことだな？」@
 ナタネ\n　「『願う』か……なかなかうまい表現ね。\pそう、『創った』と\n　　いうより、『願った』のほうが近いかもしれないわね」@
@@ -250,21 +128,9 @@ SEQ11 \x03n\x00\x00
 ナタネ\n　「誰が決めたの？」\
 
 \x00\x00\x00  
-<<<<<<< HEAD
 VAR01 \x92\x16 SET01  \xe6\x03\x00 OPER  \x14\x04\x00 
 S_STR SCE201_010\x00 \x84\x18\x00 S_END 
 VAR01 TXT1 \xd4I\x01\x0c\x00\x00\x00\x00"\x03\x8b\x00\x00
-=======
-SEQ01 \x92\x16
-SEQ14 
-SEQ08 " \xe6\x03\x00 
-SEQ08  \x14\x04\x00 
-SEQ05 SCE201_010\x00 \x84\x18\x00 
-SEQ07  
-SEQ01 
-SEQ10 \xd4I\x01\x0c
-SEQ11 \x03\x8b\x00\x00
->>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 拓司は絶句した。@
 誰が決めたのかなど知らない。@
@@ -277,21 +143,9 @@ SEQ11 \x03\x8b\x00\x00
 拓司\n　「……ああ」\
 
 \x00  
-<<<<<<< HEAD
 VAR01 \xc8\x18 SET01  \xe6\x03\x00 OPER  \x14\x04\x00 
 S_STR SCE201_011\x00 .\x1b\x00 S_END 
 VAR01 TXT1 \xd8I\x01\x0c\x00\x00\x00\x00"\x03f\x00\x00
-=======
-SEQ01 \xc8\x18
-SEQ14 
-SEQ08 " \xe6\x03\x00 
-SEQ08  \x14\x04\x00 
-SEQ05 SCE201_011\x00 .\x1b\x00 
-SEQ07  
-SEQ01 
-SEQ10 \xd8I\x01\x0c
-SEQ11 \x03f\x00\x00
->>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 ナタネ\n　「まず、ひとつめ\p。あなたは『創る』ことができる。@
 　　神様が光を創ったように、あなたは鳥を創ることができる。@
@@ -299,32 +153,14 @@ SEQ11 \x03f\x00\x00
 　　あなたはかわいそうな病人で、あなたは『創る』ことなどで\n　　きない。そういうふうに信じ込ませようとして、そしてそれ\n　　は成功しつつある……いいわね？」\
 
 \x00  
-<<<<<<< HEAD
 VAR01 r\x1b SET01  \xe6\x03\x00 OPER  \x14\x04\x00 
 CHOICE_FLAG \x03\x0c\x00\x00
-=======
-SEQ01 r\x1b
-SEQ14 
-SEQ08 " \xe6\x03\x00 
-SEQ08  \x14\x04\x00 
-SEQ06 \x03\x0c\x00\x00
->>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
 CHOICE
 もう一度聞く\n黙って続きを聞く\n\l0,2,
 ENDCHOICE
 
 \x00  
-<<<<<<< HEAD
 VAR01 D\x1d SET01  \xe6\x03\x00 OPER  \x14\x04\x00 
 CHOICE_FLAG  \xe6\x03\x00 OPER 
 CMD03 TextClose COMMAND_TO_BYTECODE2 \xba\x1d\x00 
 F_END
-=======
-SEQ01 D\x1d
-SEQ14 
-SEQ08 " \xe6\x03\x00 
-SEQ08  \x14\x04\x00 
-SEQ06  \xe6\x03\x00 
-SEQ04 TextClose SPC02 \xba\x1d\x00 
-FEND
->>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23

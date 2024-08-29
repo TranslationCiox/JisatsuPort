@@ -1,45 +1,17 @@
-<<<<<<< HEAD
 F_SRT
 \x0c\r\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xf0\n\x00  
 VAR01 \x04\x01 SET01 FILE1 .\\Data\\Script\\Bgm.Fob COMMAND_TO_BYTECODE2  \x00\x00 
 CMD01 PlayCD COMMAND_TO_BYTECODE1 J\x00\x00 
 S_STR SCE232_001\x00 f\x00\x00 S_END 
 VAR01 TXT1  z\x01\x0c\x00\x00\x00\x00"\x03\x13\x00\x00
-=======
-FSTR
-\x0c\r\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xf0\n\x00  
-SEQ01 \x04\x01
-SEQ14 
-SEQ08 "
-SEQ12 .\\Data\\Script\\Bgm.Fob SPC02  \x00\x00 
-SEQ02 PlayCD SPC01 J\x00\x00 
-SEQ05 SCE232_001\x00 f\x00\x00 
-SEQ07  
-SEQ01 
-SEQ10  z\x01\x0c
-SEQ11 \x03\x13\x00\x00
->>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 \n\n\n\n\n\n\n\n\n\n　　　　　　　『おんなのこと、うちゅうじん』\
 
 \x00\x00\x00  
-<<<<<<< HEAD
 VAR01 \xaa\x00 SET01 FILE2 .\\Data\\Script\\TextFunc.Fob COMMAND_TO_BYTECODE1 \x16\x01\x00 
 CMD01 TextOn COMMAND_TO_BYTECODE1 D\x01\x00 
 S_STR SCE232_002\x00 `\x01\x00 S_END 
 VAR01 TXT1 $z\x01\x0c\x00\x00\x00\x00"\x03\xdf\x00\x00
-=======
-SEQ01 \xaa\x00
-SEQ14 
-SEQ08 "
-SEQ13 .\\Data\\Script\\TextFunc.Fob SPC01 \x16\x01\x00 
-SEQ02 TextOn SPC01 D\x01\x00 
-SEQ05 SCE232_002\x00 `\x01\x00 
-SEQ07  
-SEQ01 
-SEQ10 $z\x01\x0c
-SEQ11 \x03\xdf\x00\x00
->>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 　あるところに、なたねという女の子がいました。@
 \n　なたねにはお母さんがいませんでした。\pお母さんはなたねが小\nさいときに病気で死んでしまったのです。\pお父さんも、本当のお\n父さんではなく、お母さんの再婚相手でした。\pそれでもなたねは、\n寂しいなんて思うことはありませんでした。@
@@ -49,21 +21,9 @@ SEQ11 \x03\xdf\x00\x00
 　お義父さんはなたねのことを大切に、大切に育ててくれました。\n\p　一度、なたねがひどい風邪を引いたときには、大切なお仕事を\n放り出して看病についてくれました（お義父さんはそのせいで、\n病院をクビになってしまったので、新しい仕事先を探さなければ\nならなくなりました）。\pしかもお義父さんは、勉強をしなさい、\nＴＶは見てはいけません、と、厳しいこともなにひとついいませ\nんでした。\
 
 \x00  
-<<<<<<< HEAD
 VAR01 \xa4\x01 SET01  \x16\x01\x00 OPER  D\x01\x00 
 S_STR SCE232_003\x00 Z\x05\x00 S_END 
 VAR01 TXT1 (z\x01\x0c\x00\x00\x00\x00"\x03\x9e\x00\x00
-=======
-SEQ01 \xa4\x01
-SEQ14 
-SEQ08 " \x16\x01\x00 
-SEQ08  D\x01\x00 
-SEQ05 SCE232_003\x00 Z\x05\x00 
-SEQ07  
-SEQ01 
-SEQ10 (z\x01\x0c
-SEQ11 \x03\x9e\x00\x00
->>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 　なたねはお義父さんが大好きでした。@
 　だから言われなくても勉強をしましたし、ＴＶだって少ししか\n見ませんでした。\pそうすればお義父さんが喜んでくれると思った\nからです。@
@@ -72,7 +32,6 @@ SEQ11 \x03\x9e\x00\x00
 　ときどき「もういやだなあ」と思うこともあって、そんなとき\nお義父さんは「なたね、あまり勉強ばかりしていると、体に毒だ\nよ」と優しく声をかけてくれました。\pなたねは、そんなお義父さ\nんの声を聞くと、逆に「よし、もっとがんばろう！」と思えたの\nでした。\
 
 \x00\x00\x00  
-<<<<<<< HEAD
 VAR01 \x9e\x05 SET01  \x16\x01\x00 OPER  D\x01\x00 
 CHOICE_FLAG  \x16\x01\x00 OPER 
 CMD03 TextClose COMMAND_TO_BYTECODE2 \\\x08\x00 
@@ -82,27 +41,6 @@ VAR01 \xc8\x00 SET01 FILE1 .\\Data\\Script\\Bg.Fob COMMAND_TO_BYTECODE3 \xe8\x08
 CMD02 BgAutoFadeIn COMMAND_TO_BYTECODE3 \x12\t\x00 
 S_STR SCE232_013\x00 6\t\x00 S_END 
 VAR01 TXT1 Pz\x01\x0c\x00\x00\x00\x00"\x03?\x00\x00
-=======
-SEQ01 \x9e\x05
-SEQ14 
-SEQ08 " \x16\x01\x00 
-SEQ08  D\x01\x00 
-SEQ06  \x16\x01\x00 
-SEQ04 TextClose SPC02 \\\x08\x00 
-SEQ06 \x03\t\x00\x00.\\Data\\Script\\Scenario\\232SubC.Fob SPC01 |\x08\x00 
-SEQ02 start SPC02 \xb2\x08\x00 
-SEQ06   
-SEQ01 \xc8\x00
-SEQ14 
-SEQ08 "
-SEQ12 .\\Data\\Script\\Bg.Fob SPC03 \xe8\x08\x00 
-SEQ03 BgAutoFadeIn SPC03 \x12\t\x00 
-SEQ05 SCE232_013\x00 6\t\x00 
-SEQ07  
-SEQ01 
-SEQ10 Pz\x01\x0c
-SEQ11 \x03?\x00\x00
->>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
  
 　どこかへ走ってゆく汽車の@
 　全財産ぶんの切符を　くださいな@
@@ -113,20 +51,8 @@ SEQ11 \x03?\x00\x00
 　ここからはなれてゆきたいのです\
 
 \x00\x00\x00  
-<<<<<<< HEAD
 VAR01 z\t SET01  \x16\x01\x00 OPER  D\x01\x00 
 CHOICE_FLAG   \x00\x00 
 CMD01 StopCD COMMAND_TO_BYTECODE1 \xbc\n\x00 
 CHOICE_FLAG  \x16\x01\x00 OPER  \\\x08\x00 
 F_END
-=======
-SEQ01 z\t
-SEQ14 
-SEQ08 " \x16\x01\x00 
-SEQ08  D\x01\x00 
-SEQ06   \x00\x00 
-SEQ02 StopCD SPC01 \xbc\n\x00 
-SEQ06  \x16\x01\x00 
-SEQ08  \\\x08\x00 
-FEND
->>>>>>> a019600ad1c2bd96c156424f2ab3029130e1fa23
