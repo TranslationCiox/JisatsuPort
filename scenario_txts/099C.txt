@@ -1,7 +1,7 @@
-START
+START_SCRIPT
 B\x05\x01\xa4\t3\x010\x04
 CSCE SCE099_001 \x06 SCE_DONE 
-FLG3 \x8c\x01 FLG2 P\xaa FLG2_SET \x03I
+FLG1 \x8c\x01 FLG2 P\xaa FLG2_SET \x03I
  
 拓司\n　「雲居さんのいうことに一理ある」@
 早桃\n　「おにいちゃん！」@
@@ -9,11 +9,11 @@ FLG3 \x8c\x01 FLG2 P\xaa FLG2_SET \x03I
 \n拓司はなたねをちらりとみやった。@
 なたねはいつもの無表情で、なんの反応もない。\w\z
   
-FLG3 J\x0c FLG3_SET
+FLG1 J\x0c FLG1_SET
 WHAT .\\Data\\Script\\TextFunc.Fob RUNF \x8e\x01 \x02
 CMD1 TextOn RUNF \xbc\x01 END
 CSCE SCE099_002 \xd8\x01 SCE_DONE 
-FLG3 \x8c\x01 FLG2 T\xaa FLG2_SET \x03l
+FLG1 \x8c\x01 FLG2 T\xaa FLG2_SET \x03l
  
 拓司\n　「ただ、お前が騒ぎ立てることでみんなが不安になるという点\n　　のみにおいては、雲居さんは正しい。\pいいかい、早桃。\pみ\n　　んな怖いんだ。\pみんな叫びたいんだ。\pでも、我慢している。@
 　　だから、お前も我慢しなくちゃ－－」@
@@ -21,5 +21,6 @@ FLG3 \x8c\x01 FLG2 T\xaa FLG2_SET \x03l
 いうとなたねは、走るように自分のスペースへと向かい、膝を抱\nえて壁に向かった。@
 \nそれから一日、早桃はおろか、他の誰もひとことも口をきこう\nとはしなかった。\w\z
   
-FLG3 \x1c\x02\x0c FLG3_SET \x8e\x01 \x02 \xbc\x01 END \x8e\x01 \x02
-CSCE TextClosev\x81\x1f\x12\x04 END6\xf1
+FLG1 \x1c\x02\x0c FLG1_SET \x8e\x01 \x02 \xbc\x01 END \x8e\x01 \x02
+CSCE TextClose CLOSE \x12\x04 END
+END_SCRIPT

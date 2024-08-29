@@ -1,10 +1,10 @@
-START
+START_SCRIPT
 \x07\x0e\x01`B#\x01X\x0b  
-FLG3 \x08\x01\x0c FLG3_SET
-FOBT .\\Data\\Script\\Bgm.Fobv\x81\x1f  \x02
+FLG1 \x08\x01\x0c FLG1_SET
+FOBT .\\Data\\Script\\Bgm.Fob CLOSE   \x02
 CMD1 PlayCD RUNF J END
 CSCE SCE038_001 f SCE_DONE 
-FLG3 \x8c\x01 FLG2 K FLG2_SET \x03a
+FLG1 \x8c\x01 FLG2 K FLG2_SET \x03a
  
 話題が奈落へと転がり始めたことを悟った拓司は、慌てて話題を\n転じた。@
 \n拓司\n　「おやじから、夏の旅行の話って、聞いてるか？」@
@@ -15,11 +15,11 @@ FLG3 \x8c\x01 FLG2 K FLG2_SET \x03a
 やがて早桃がポツリといった。\
 
   
-FLG3 \xaa\x0c FLG3_SET
+FLG1 \xaa\x0c FLG1_SET
 WHAT .\\Data\\Script\\TextFunc.Fob RUNF N\x02 \x02
 CMD1 TextOn RUNF |\x02 END
 CSCE SCE038_002 \x98\x02 SCE_DONE 
-FLG3 \x8c\x01 FLG2 \x04K FLG2_SET \x03b
+FLG1 \x8c\x01 FLG2 \x04K FLG2_SET \x03b
  
 早桃\n　「……ホント？」@
 拓司\n　「ああ。\pでも香港って言われてもなあ。@
@@ -31,9 +31,9 @@ FLG3 \x8c\x01 FLG2 \x04K FLG2_SET \x03b
 \n　早桃の顔に、ようやく柔らかい笑顔が戻った。\
 
   
-FLG3 \xdc\x02\x0c FLG3_SET N\x02 \x02 |\x02 END
+FLG1 \xdc\x02\x0c FLG1_SET N\x02 \x02 |\x02 END
 CSCE SCE038_003 \x9e\x04 SCE_DONE 
-FLG3 \x8c\x01 FLG2 \x08K FLG2_SET \x03L
+FLG1 \x8c\x01 FLG2 \x08K FLG2_SET \x03L
  
 早桃\n　「おにいちゃん、カンフー映画好きだもんね」@
 拓司\n　「まあな」@
@@ -45,9 +45,9 @@ FLG3 \x8c\x01 FLG2 \x08K FLG2_SET \x03L
 　　あと、香港といえばブランド品の買い物だな」\
 
   
-FLG3 \xe2\x04\x0c FLG3_SET N\x02 \x02 |\x02 END
+FLG1 \xe2\x04\x0c FLG1_SET N\x02 \x02 |\x02 END
 CSCE SCE038_004 L\x06 SCE_DONE 
-FLG3 \x8c\x01 FLG2 \x0cK FLG2_SET \x03P
+FLG1 \x8c\x01 FLG2 \x0cK FLG2_SET \x03P
  
 早桃\n　「うん」@
 拓司\n　「しかし、おふくろはいいだろうけど、早桃はなあ」@
@@ -57,9 +57,9 @@ FLG3 \x8c\x01 FLG2 \x0cK FLG2_SET \x03P
 \n拓司\n　「……？」\
 
   
-FLG3 \x90\x06\x0c FLG3_SET N\x02 \x02 |\x02 END
+FLG1 \x90\x06\x0c FLG1_SET N\x02 \x02 |\x02 END
 CSCE SCE038_005 \n\x08 SCE_DONE 
-FLG3 \x8c\x01 FLG2 \x10K FLG2_SET \x03H
+FLG1 \x8c\x01 FLG2 \x10K FLG2_SET \x03H
  
 早桃\n　「……わかってないんだね、おにいちゃん」@
 拓司\n　「わかってない？　@
@@ -70,9 +70,9 @@ FLG3 \x8c\x01 FLG2 \x10K FLG2_SET \x03H
 拓司\n　「……？」\
 
   
-FLG3 N\x08\x0c FLG3_SET N\x02 \x02 |\x02 END
+FLG1 N\x08\x0c FLG1_SET N\x02 \x02 |\x02 END
 CSCE SCE038_006 \xa8\t SCE_DONE 
-FLG3 \x8c\x01 FLG2 \x14K FLG2_SET \x03B
+FLG1 \x8c\x01 FLG2 \x14K FLG2_SET \x03B
  
 早桃\n　「憧れとか、そんなぼんやりしたものじゃないの。@
 　　もっとはっきりした……@
@@ -82,5 +82,6 @@ FLG3 \x8c\x01 FLG2 \x14K FLG2_SET \x03B
 拓司\n　「……」\
 
   
-FLG3 \xec\t\x0c FLG3_SET N\x02 \x02 |\x02 END N\x02 \x02
-CSCE TextClosev\x81\x1f:\x0b END6\xf1
+FLG1 \xec\t\x0c FLG1_SET N\x02 \x02 |\x02 END N\x02 \x02
+CSCE TextClose CLOSE :\x0b END
+END_SCRIPT

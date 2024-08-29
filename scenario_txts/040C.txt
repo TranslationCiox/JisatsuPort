@@ -1,10 +1,10 @@
-START
+START_SCRIPT
 v\x0c\x01`B#\x01:\n  
-FLG3 \x07\x01\x0c FLG3_SET
-FOBT .\\Data\\Script\\Bgm.Fobv\x81\x1f  \x02
+FLG1 \x07\x01\x0c FLG1_SET
+FOBT .\\Data\\Script\\Bgm.Fob CLOSE   \x02
 CMD1 PlayCD RUNF J END
 CSCE SCE040_001 f SCE_DONE 
-FLG3 \x8c\x01 FLG2  N FLG2_SET \x036
+FLG1 \x8c\x01 FLG2  N FLG2_SET \x036
  
 拓司\n　「おれもお前のことは好きだ。@
 　　でも、それは－－」\n早桃\n　「義妹として？@
@@ -13,14 +13,14 @@ FLG3 \x8c\x01 FLG2  N FLG2_SET \x036
 それは嘲笑だった。\
 
   
-FLG3 \xaa\x0c FLG3_SET
+FLG1 \xaa\x0c FLG1_SET
 WHAT .\\Data\\Script\\TextFunc.Fob RUNF \xa2\x01 \x02
 CMD1 TextOn RUNF \xd0\x01 END  
-FLG3 D\x0c FLG3_SET
-FOBT .\\Data\\Script\\Bg.Fobsv\x81\x1f\x06\x02 \x02
-CMD2 BgAutoFadeInsv\x81\x1f0\x02 END
+FLG1 D\x0c FLG1_SET
+FOBT .\\Data\\Script\\Bg.Fob OPEN \x06\x02 \x02
+CMD2 BgAutoFadeIn OPEN 0\x02 END
 CSCE SCE040_002 T\x02 SCE_DONE 
-FLG3 \x8c\x01 FLG2 $N FLG2_SET \x03v
+FLG1 \x8c\x01 FLG2 $N FLG2_SET \x03v
  
 早桃\n　「おにいちゃんは気楽でいいよね。@
 　　そんなところでストッパーかけて。@
@@ -32,9 +32,9 @@ FLG3 \x8c\x01 FLG2 $N FLG2_SET \x03v
 拓司\n　「どうだっていいってことはないだろう－－」\
 
   
-FLG3 \x98\x02\x0c FLG3_SET \xa2\x01 \x02 \xd0\x01 END
+FLG1 \x98\x02\x0c FLG1_SET \xa2\x01 \x02 \xd0\x01 END
 CSCE SCE040_003 \xaa\x04 SCE_DONE 
-FLG3 \x8c\x01 FLG2 (N FLG2_SET \x03\xcf
+FLG1 \x8c\x01 FLG2 (N FLG2_SET \x03\xcf
  
 早桃\n　「そういうことじゃないの！@
 　　そんな……\pあたりまえなことにグダグダこだわっていられ\n　　るなんて、幸せ者だよ、おにいちゃんは！@
@@ -50,11 +50,11 @@ FLG3 \x8c\x01 FLG2 (N FLG2_SET \x03\xcf
 目には涙が浮かび、身体は小刻みに震えている。\
 
   
-FLG3 \xee\x04\x0c FLG3_SET \xa2\x01 \x02 \xd0\x01 END  
-FLG3 \xc8\x0c FLG3_SET \x06\x02 \x02
-CMD1 BgOnsv\x81\x1f\x8a\x08 END
+FLG1 \xee\x04\x0c FLG1_SET \xa2\x01 \x02 \xd0\x01 END  
+FLG1 \xc8\x0c FLG1_SET \x06\x02 \x02
+CMD1 BgOn OPEN \x8a\x08 END
 CSCE SCE040_004 \xa6\x08 SCE_DONE 
-FLG3 \x8c\x01 FLG2 ,N FLG2_SET \x03;
+FLG1 \x8c\x01 FLG2 ,N FLG2_SET \x03;
  
 拓司\n　「……落ちてるって、どういうことだ？」@
 早桃\n　「……」@
@@ -63,5 +63,6 @@ FLG3 \x8c\x01 FLG2 ,N FLG2_SET \x03;
 \nいって早桃は、風のように駆けて屋上から去っていった。\
 
   
-FLG3 \xea\x08\x0c FLG3_SET \xa2\x01 \x02 \xd0\x01 END \xa2\x01 \x02
-CSCE TextClosev\x81\x1f\x1c\n END6\xf1
+FLG1 \xea\x08\x0c FLG1_SET \xa2\x01 \x02 \xd0\x01 END \xa2\x01 \x02
+CSCE TextClose CLOSE \x1c\n END
+END_SCRIPT

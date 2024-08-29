@@ -1,16 +1,16 @@
-START
+START_SCRIPT
 &\x08\x01`B#\x01\xcc\x05
 CSCE SCE221_001 \x06 SCE_DONE 
-FLG3 \x8c\x01 FLG2 \xf0h\x01 FLG2_SET \x03\x11
+FLG1 \x8c\x01 FLG2 \xf0h\x01 FLG2_SET \x03\x11
  
 \n\n\n\n\n\n\n\n\n\n　　　　　　　　　　　　　『１０日目』\
 
   
-FLG3 J\x0c FLG3_SET
+FLG1 J\x0c FLG1_SET
 WHAT .\\Data\\Script\\TextFunc.Fob RUNF \xae \x02
 CMD1 TextOn RUNF \xdc END
 CSCE SCE221_002 \xf8 SCE_DONE 
-FLG3 \x8c\x01 FLG2 \xf4h\x01 FLG2_SET \x03\x81
+FLG1 \x8c\x01 FLG2 \xf4h\x01 FLG2_SET \x03\x81
  
 一日が静かに過ぎる。@
 日中、ほとんど会話はない。@
@@ -23,20 +23,21 @@ FLG3 \x8c\x01 FLG2 \xf4h\x01 FLG2_SET \x03\x81
 \n御堂\n　「ふん。\pお前を生かしてやってるのは、波動の監視役としてだ\n　　からな。\pしっかり見張ってろ。\pポカやらかしたら容赦しねえ\n　　からな」\
 
   
-FLG3 <\x01\x0c FLG3_SET \xae \x02 \xdc END
+FLG1 <\x01\x0c FLG1_SET \xae \x02 \xdc END
 CSCE SCE221_003 z\x03 SCE_DONE 
-FLG3 \x8c\x01 FLG2 \xf8h\x01 FLG2_SET \x03:
+FLG1 \x8c\x01 FLG2 \xf8h\x01 FLG2_SET \x03:
  
 誰も御堂を非難をする者はいない。@
 御堂が恐ろしいとか、なたねには当然の報いとか……そういうふ\nうに思うよりも、関心が持てないのだ。@
 自分のことを考えるのに精一杯で、とてもではないが他人の面倒\nなど見ていられないのだ。\
 
   
-FLG3 \xbe\x03\x0c FLG3_SET \xae \x02 \xdc END\x03"
+FLG1 \xbe\x03\x0c FLG1_SET \xae \x02 \xdc END\x03"
 CHOICE
 それでも拓司は、自分の食糧を少し残し、夜、なたねに与えた\n拓司は食糧を腹に収め、いつかくるであろう『そのとき』に備えた\n\l0,2,
 ENDCHOICE
 
   
-FLG3 \xe0\x04\x0c FLG3_SET \xae \x02 \xdc END \xae \x02
-CSCE TextClosev\x81\x1f\xae\x05 END6\xf1
+FLG1 \xe0\x04\x0c FLG1_SET \xae \x02 \xdc END \xae \x02
+CSCE TextClose CLOSE \xae\x05 END
+END_SCRIPT

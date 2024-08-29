@@ -1,7 +1,7 @@
-START
+START_SCRIPT
 \xc9\x05\x01\xa4\t3\x01\xac\x04
 CSCE SCE074_001 \x06 SCE_DONE 
-FLG3 \x8c\x01 FLG2 @\x83 FLG2_SET \x03\xab
+FLG1 \x8c\x01 FLG2 @\x83 FLG2_SET \x03\xab
  
 拓司はまだ、『自殺波動』などというものを信じるつもりはない。\n\pしかし、なたねが、この狂った世界にわずかながら残されている\nいくつかの法則のようなものを知っていることだけは確かなよう\nに思えた。@
 あるいはここは、なたねの世界なのではないか？@
@@ -11,15 +11,16 @@ FLG3 \x8c\x01 FLG2 @\x83 FLG2_SET \x03\xab
 いまや、信じられるものはなたねの言葉しかなかった。\pでたらめ\nな世界にうち立てられた、妄想の真実。\pそれにすがるしか、道は\nないように思えた。\
 
   
-FLG3 J\x0c FLG3_SET
+FLG1 J\x0c FLG1_SET
 WHAT .\\Data\\Script\\TextFunc.Fob RUNF \x16\x03 \x02
 CMD1 TextOn RUNF D\x03 END
 CSCE SCE074_002 `\x03 SCE_DONE 
-FLG3 \x8c\x01 FLG2 D\x83 FLG2_SET \x03)
+FLG1 \x8c\x01 FLG2 D\x83 FLG2_SET \x03)
  
 路線変更をしてまもなく進んだとき、またもやなたねが静止をか\nけた。@
 \nなたね\n　「ここも駄目。\pここにも波動がきているわ。\p別の道を選びまし\n　　ょう」\
 
   
-FLG3 \xa4\x03\x0c FLG3_SET \x16\x03 \x02 D\x03 END \x16\x03 \x02
-CSCE TextClosev\x81\x1f\x8e\x04 END6\xf1
+FLG1 \xa4\x03\x0c FLG1_SET \x16\x03 \x02 D\x03 END \x16\x03 \x02
+CSCE TextClose CLOSE \x8e\x04 END
+END_SCRIPT

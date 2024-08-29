@@ -1,7 +1,7 @@
-START
+START_SCRIPT
 \xd3\x08\x01`B#\x01:\x07
 CSCE SCE047_001 \x06 SCE_DONE 
-FLG3 \x8c\x01 FLG2 \x10Y FLG2_SET \x03~
+FLG1 \x8c\x01 FLG2 \x10Y FLG2_SET \x03~
  
 なたね\n　「お願いします」@
 \nなたねがいった。\p真剣な顔だった。@
@@ -9,11 +9,11 @@ FLG3 \x8c\x01 FLG2 \x10Y FLG2_SET \x03~
 御堂\n　「なたねちゃんがそんなに頼んでるのに、お前、ひどいヤツだ\n　　なア。\p電波系ってだけで最初からシカトってのは、ハッキリ\n　　いって差別だぜ？\p　お前、もうちょっとシャカイテキジャク\n　　シャに対する思いやりってやつを考えろよ、ナ？\p　それとも\n　　なにか、お前、なたねちゃんのことバカにしてんのか？」\
 
   
-FLG3 J\x0c FLG3_SET
+FLG1 J\x0c FLG1_SET
 WHAT .\\Data\\Script\\TextFunc.Fob RUNF b\x02 \x02
 CMD1 TextOn RUNF \x90\x02 END
 CSCE SCE047_002 \xac\x02 SCE_DONE 
-FLG3 \x8c\x01 FLG2 \x14Y FLG2_SET \x03Z
+FLG1 \x8c\x01 FLG2 \x14Y FLG2_SET \x03Z
  
 眼鏡の奥、なたねの目が潤み始めた。@
 \n拓司\n　「わかった。行くよ」@
@@ -21,9 +21,9 @@ FLG3 \x8c\x01 FLG2 \x14Y FLG2_SET \x03Z
 /*■黒　表示（クロスフェード）　*/\a7,-2,-2,0,\a0,200,2,0,\a6,-2,0,0,/*▲BGM　停止　*/\a4,-1,0,0,\n御堂はついてこい、と目で合図を送り、そのまま４階の廊下へと\n曲がって消えてゆく。\n取り巻き連中が、拓司に一瞥を送ってか\nら、あとに続く。\
 
   
-FLG3 \xf0\x02\x0c FLG3_SET b\x02 \x02 \x90\x02 END
+FLG1 \xf0\x02\x0c FLG1_SET b\x02 \x02 \x90\x02 END
 CSCE SCE047_003 \x92\x04 SCE_DONE 
-FLG3 \x8c\x01 FLG2 \x18Y FLG2_SET \x03\x80
+FLG1 \x8c\x01 FLG2 \x18Y FLG2_SET \x03\x80
  
 なたね\n　「行きましょう？」@
 \n　なたねに促されて、拓司もまた、階段を下りて４階へと向かっ\n　た。@
@@ -34,5 +34,6 @@ FLG3 \x8c\x01 FLG2 \x18Y FLG2_SET \x03\x80
 \n　言ってなたねは、躊躇することなく男子トイレへと入っていっ\n　た。\pひとり廊下に取り残された拓司も、慌てて後を追う。\
 
   
-FLG3 \xd6\x04\x0c FLG3_SET b\x02 \x02 \x90\x02 END b\x02 \x02
-CSCE TextClosev\x81\x1f\x1c\x07 END6\xf1
+FLG1 \xd6\x04\x0c FLG1_SET b\x02 \x02 \x90\x02 END b\x02 \x02
+CSCE TextClose CLOSE \x1c\x07 END
+END_SCRIPT

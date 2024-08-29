@@ -1,10 +1,10 @@
-START
+START_SCRIPT
 \x97\r\x01`B#\x01:\x0b  
-FLG3 \t\x01\x0c FLG3_SET
-FOBT .\\Data\\Script\\Bgm.Fobv\x81\x1f  \x02
+FLG1 \t\x01\x0c FLG1_SET
+FOBT .\\Data\\Script\\Bgm.Fob CLOSE   \x02
 CMD1 PlayCD RUNF J END
 CSCE SCE034_001 f SCE_DONE 
-FLG3 \x8c\x01 FLG2 \xc0D FLG2_SET \x03\xb1
+FLG1 \x8c\x01 FLG2 \xc0D FLG2_SET \x03\xb1
  
 　４階。\p賑やかな教室。\pドアは開け放たれている。@
 　中を覗くと、男子学生たちの姿はすでに教室にはない。@
@@ -20,11 +20,11 @@ FLG3 \x8c\x01 FLG2 \xc0D FLG2_SET \x03\xb1
 \n　賑やかで温かい教室の空気から、早桃の姿だけが浮き上がって\n見えた。\
 
   
-FLG3 \xaa\x0c FLG3_SET
+FLG1 \xaa\x0c FLG1_SET
 WHAT .\\Data\\Script\\TextFunc.Fob RUNF \x8e\x03 \x02
 CMD1 TextOn RUNF \xbc\x03 END
 CSCE SCE034_002 \xd8\x03 SCE_DONE 
-FLG3 \x8c\x01 FLG2 \xc4D FLG2_SET \x03y
+FLG1 \x8c\x01 FLG2 \xc4D FLG2_SET \x03y
  
 　まるでそこに何か大切なものがあるかのように……@
 あるいは、そこしか見るべき場所がないかのように……@
@@ -38,9 +38,9 @@ FLG3 \x8c\x01 FLG2 \xc4D FLG2_SET \x03y
 拓司\n　「いや。\pたまには一緒に飯でも食おうかと思ってさ」\
 
   
-FLG3 \x1c\x04\x0c FLG3_SET \x8e\x03 \x02 \xbc\x03 END
+FLG1 \x1c\x04\x0c FLG1_SET \x8e\x03 \x02 \xbc\x03 END
 CSCE SCE034_003 :\x06 SCE_DONE 
-FLG3 \x8c\x01 FLG2 \xc8D FLG2_SET \x03\\
+FLG1 \x8c\x01 FLG2 \xc8D FLG2_SET \x03\\
  
 早桃\n　「どうして？」@
 拓司\n　「どうしてって……\pなんとなくさ」@
@@ -51,9 +51,9 @@ FLG3 \x8c\x01 FLG2 \xc8D FLG2_SET \x03\\
 \n　そんな声が、時折やや大きめに漏れ聞こえる。\n　早桃は必死にそれに気づかない振りをしているが、声が聞こえ\nるたび、目の中に怯えと恥じらいの影がゆらぐ。\
 
   
-FLG3 ~\x06\x0c FLG3_SET \x8e\x03 \x02 \xbc\x03 END
+FLG1 ~\x06\x0c FLG1_SET \x8e\x03 \x02 \xbc\x03 END
 CSCE SCE034_004 (\x08 SCE_DONE 
-FLG3 \x8c\x01 FLG2 \xccD FLG2_SET \x03T
+FLG1 \x8c\x01 FLG2 \xccD FLG2_SET \x03T
  
 　早桃がクラスで孤立しているということはなんとなく把握して\nいるつもりだった。@
 しかし、目の当たりにしたその光景は、あまりにもリアルで、胸\nを締め付けるものだった。@
@@ -64,14 +64,15 @@ FLG3 \x8c\x01 FLG2 \xccD FLG2_SET \x03T
 早桃\n　「わけてあげよっか？」\
 
   
-FLG3 l\x08\x0c FLG3_SET \x8e\x03 \x02 \xbc\x03 END
+FLG1 l\x08\x0c FLG1_SET \x8e\x03 \x02 \xbc\x03 END
 CSCE SCE034_005 \xf6\t SCE_DONE 
-FLG3 \x8c\x01 FLG2 \xd0D FLG2_SET \x03'
+FLG1 \x8c\x01 FLG2 \xd0D FLG2_SET \x03'
  
 拓司\n　「……え？」@
 早桃\n　「これ。\pほとんど口つけてないから」@
 \n　そういって早桃は、ひとかじりしただけのコッペパンを軽く振\nってみせた。\
 
   
-FLG3 :\n\x0c FLG3_SET \x8e\x03 \x02 \xbc\x03 END \x8e\x03 \x02
-CSCE TextClosev\x81\x1f\x1c\x0b END6\xf1
+FLG1 :\n\x0c FLG1_SET \x8e\x03 \x02 \xbc\x03 END \x8e\x03 \x02
+CSCE TextClose CLOSE \x1c\x0b END
+END_SCRIPT

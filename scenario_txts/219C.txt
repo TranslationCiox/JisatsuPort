@@ -1,7 +1,7 @@
-START
+START_SCRIPT
 \x02\x08\x01`B#\x01H\x06
 CSCE SCE219_001 \x06 SCE_DONE 
-FLG3 \x8c\x01 FLG2 \xd0e\x01 FLG2_SET \x03,
+FLG1 \x8c\x01 FLG2 \xd0e\x01 FLG2_SET \x03,
  
 もはや、止めることはできなかった。@
 すべてをせきとめていた何かが、いま、ついに崩れ落ちたのだ。@
@@ -9,14 +9,14 @@ FLG3 \x8c\x01 FLG2 \xd0e\x01 FLG2_SET \x03,
 流されるしかないのだ。\
 
   
-FLG3 J\x0c FLG3_SET
+FLG1 J\x0c FLG1_SET
 WHAT .\\Data\\Script\\TextFunc.Fob RUNF \x1a\x01 \x02
 CMD1 TextOn RUNF H\x01 END  
-FLG3 $\x0c FLG3_SET
-FOBT .\\Data\\Script\\Bg.Fobsv\x81\x1f~\x01 \x02
-CMD2 BgAutoFadeInsv\x81\x1f\xa8\x01 END
+FLG1 $\x0c FLG1_SET
+FOBT .\\Data\\Script\\Bg.Fob OPEN ~\x01 \x02
+CMD2 BgAutoFadeIn OPEN \xa8\x01 END
 CSCE SCE219_002 \xcc\x01 SCE_DONE 
-FLG3 \x8c\x01 FLG2 \xd4e\x01 FLG2_SET \x03k
+FLG1 \x8c\x01 FLG2 \xd4e\x01 FLG2_SET \x03k
  
 なたね\n　「やめてやめてやめて！@
 　　やあああああめえええろおおおおお！」@
@@ -29,9 +29,9 @@ FLG3 \x8c\x01 FLG2 \xd4e\x01 FLG2_SET \x03k
 ぐったりと御堂の下に横たわり、殴られるがままだ。\
 
   
-FLG3 \x10\x02\x0c FLG3_SET \x1a\x01 \x02 H\x01 END
+FLG1 \x10\x02\x0c FLG1_SET \x1a\x01 \x02 H\x01 END
 CSCE SCE219_003 \xf6\x03 SCE_DONE 
-FLG3 \x8c\x01 FLG2 \xd8e\x01 FLG2_SET \x03L
+FLG1 \x8c\x01 FLG2 \xd8e\x01 FLG2_SET \x03L
  
 －－狂ってる。@
 拓司は辺りを見回した。@
@@ -42,8 +42,9 @@ FLG3 \x8c\x01 FLG2 \xd8e\x01 FLG2_SET \x03L
 そしていま、眼前で展開されていることこそ、新しい秩序の骨子\nを為すものであるはずだった。\
 
   
-FLG3 :\x04\x0c FLG3_SET \x1a\x01 \x02 H\x01 END  
-FLG3 \xc8\x0c FLG3_SET ~\x01 \x02 \xa8\x01 END
-FOBT .\\Data\\Script\\Bgm.Fobv\x81\x1f\xd8\x05 \x02
+FLG1 :\x04\x0c FLG1_SET \x1a\x01 \x02 H\x01 END  
+FLG1 \xc8\x0c FLG1_SET ~\x01 \x02 \xa8\x01 END
+FOBT .\\Data\\Script\\Bgm.Fob CLOSE \xd8\x05 \x02
 CMD1 StopCD RUNF \x02\x06 END \x1a\x01 \x02
-CSCE TextClosev\x81\x1f*\x06 END6\xf1
+CSCE TextClose CLOSE *\x06 END
+END_SCRIPT

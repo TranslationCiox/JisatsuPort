@@ -1,23 +1,24 @@
-START
+START_SCRIPT
 O\x03\x01\x90\x044\x01\x84\x03! 
-FLG3   FLG2 \x0b
-FLG3\x01,`\x02
+FLG1   FLG2 \x0b
+FLG1\x01,`\x02
 SCEN .\\Data\\Script\\Scenario\\g1c.Fob RUNF 0 \x02
-CMD1 startv\x81\x1fb END2\x88\x02
+CMD1 start CLOSE b END2\x88\x02
 SCEN .\\Data\\Script\\Scenario\\g2c.Fob RUNF \x84 \x02 b END
 WHAT .\\Data\\Script\\TextFunc.Fob RUNF \xc4 \x02
-CMD2 GetLastTxtIDsv\x81\x1f\xf2 END  
-FLG1 \xbe\x01
-HERO .\\Data\\Script\\Scenario\\g2_1c.Fobsv\x81\x1f*\x01 \x02 b END2\xd6\x01
-HERO .\\Data\\Script\\Scenario\\g2_2c.Fobsv\x81\x1ft\x01 \x02 b END2\xd6\x012\xd6\x01\xd6\x01\x02$\x01\x01n\x012\x88\x02
+CMD2 GetLastTxtID OPEN \xf2 END  
+FLG3 \xbe\x01
+HERO .\\Data\\Script\\Scenario\\g2_1c.Fob OPEN *\x01 \x02 b END2\xd6\x01
+HERO .\\Data\\Script\\Scenario\\g2_2c.Fob OPEN t\x01 \x02 b END2\xd6\x012\xd6\x01\xd6\x01\x02$\x01\x01n\x012\x88\x02
 SCEN .\\Data\\Script\\Scenario\\g3c.Fob RUNF \xe2\x01 \x02 b END2\x88\x02
 SCEN \x82\xe2\x82\xce\x82\xa2\x82\xe6\x81[!!! \x83V\x83i\x83\x8a\x83I\x82\xaa\x82\xcb\x81[\\n (\x02 \x02#\x022\x88\x02\x88\x02\x04*\x01~\x02\xdc\x01\x03"\x02  
-FLG3 \xc8\x0c FLG3_SET
-FOBT .\\Data\\Script\\Bg.Fobsv\x81\x1f\xa8\x02 \x02
-CMD2 BgAutoFadeInsv\x81\x1f\xd2\x02 END
-FOBT .\\Data\\Script\\Bgm.Fobv\x81\x1f\xf6\x02 \x02
+FLG1 \xc8\x0c FLG1_SET
+FOBT .\\Data\\Script\\Bg.Fob OPEN \xa8\x02 \x02
+CMD2 BgAutoFadeIn OPEN \xd2\x02 END
+FOBT .\\Data\\Script\\Bgm.Fob CLOSE \xf6\x02 \x02
 CMD1 StopCD RUNF  \x03 END! 
-FLG3   FLG2! 
-FLG3   FLG2 \x0b
-FLG3\x01 \x01
-FLG3 FLG2_SET 6\xf1
+FLG1   FLG2! 
+FLG1   FLG2 \x0b
+FLG1\x01 \x01
+FLG1 FLG2_SET 
+END_SCRIPT

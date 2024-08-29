@@ -1,7 +1,7 @@
-START
+START_SCRIPT
 \xc1\n\x01`B#\x01\xf6\x08
 CSCE SCE211_001 \x06 SCE_DONE 
-FLG3 \x8c\x01 FLG2 PY\x01 FLG2_SET \x03\xae
+FLG1 \x8c\x01 FLG2 PY\x01 FLG2_SET \x03\xae
  
 もはや世界に定点を見いだすことは不可能だった。@
 『教授が語る世界』と『なたねが語る世界』。@
@@ -15,11 +15,11 @@ FLG3 \x8c\x01 FLG2 PY\x01 FLG2_SET \x03\xae
 拓司\n　「おれはおれの世界に戻る」\
 
   
-FLG3 J\x0c FLG3_SET
+FLG1 J\x0c FLG1_SET
 WHAT .\\Data\\Script\\TextFunc.Fob RUNF "\x03 \x02
 CMD1 TextOn RUNF P\x03 END
 CSCE SCE211_002 l\x03 SCE_DONE 
-FLG3 \x8c\x01 FLG2 TY\x01 FLG2_SET \x03\x86
+FLG1 \x8c\x01 FLG2 TY\x01 FLG2_SET \x03\x86
  
 ナタネ\n　「信じないならそれでもいいわ。\pでも、どうやって戻るの？@
 　　あなたは自分の意志で世界を渡り歩くことなんかできない」@
@@ -30,22 +30,23 @@ FLG3 \x8c\x01 FLG2 TY\x01 FLG2_SET \x03\x86
 ナタネ\n　「馬鹿なことはやめて」\
 
   
-FLG3 \xb0\x03\x0c FLG3_SET "\x03 \x02 P\x03 END
+FLG1 \xb0\x03\x0c FLG1_SET "\x03 \x02 P\x03 END
 CSCE SCE211_003 \x02\x06 SCE_DONE 
-FLG3 \x8c\x01 FLG2 XY\x01 FLG2_SET \x03I
+FLG1 \x8c\x01 FLG2 XY\x01 FLG2_SET \x03I
  
 拓司\n　「ここが現実だったとしたら、俺は死んじまって、それを確認\n　　できないわけだが……それでもいい。\pもうこんなことはたく\n　　さんだ。\pいずれ終わらせなければならない。\pそれが、いまだ\n　　ってことだ」@
 \n拓司は息を止めた。@
 そして躊躇無く自分の下顎を、下から殴りつけた。\
 
   
-FLG3 F\x06\x0c FLG3_SET "\x03 \x02 P\x03 END  
-FLG3 \x02\x0c FLG3_SET
-FOBT .\\Data\\Script\\Bgm.Fobv\x81\x1f\xbe\x07 \x02
+FLG1 F\x06\x0c FLG1_SET "\x03 \x02 P\x03 END  
+FLG1 \x02\x0c FLG1_SET
+FOBT .\\Data\\Script\\Bgm.Fob CLOSE \xbe\x07 \x02
 CMD1 SeStop RUNF \xe8\x07 END "\x03 \x02
 LOAD TextWindowOffDirect \x10\x08 END  
-FLG3 \xc8\x0c FLG3_SET
-FOBT .\\Data\\Script\\Bg.Fobsv\x81\x1fR\x08 \x02
-CMD1 BgOnsv\x81\x1f|\x08 END "\x03 \x02
+FLG1 \xc8\x0c FLG1_SET
+FOBT .\\Data\\Script\\Bg.Fob OPEN R\x08 \x02
+CMD1 BgOn OPEN |\x08 END "\x03 \x02
 LOAD TextWindowOnDirect RUNF \xa4\x08 END "\x03 \x02
-CSCE TextClosev\x81\x1f\xd8\x08 END6\xf1
+CSCE TextClose CLOSE \xd8\x08 END
+END_SCRIPT

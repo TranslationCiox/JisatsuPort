@@ -1,13 +1,13 @@
-START
+START_SCRIPT
 \x84\x13\x01`B#\x01\xb4\x0f  
-FLG3 \xc8\x0c FLG3_SET
-FOBT .\\Data\\Script\\Bg.Fobsv\x81\x1f  \x02
-CMD2 BgAutoFadeInsv\x81\x1fJ END  
-FLG3 \x04\x01\x0c FLG3_SET
-FOBT .\\Data\\Script\\Bgm.Fobv\x81\x1f\x88 \x02
+FLG1 \xc8\x0c FLG1_SET
+FOBT .\\Data\\Script\\Bg.Fob OPEN   \x02
+CMD2 BgAutoFadeIn OPEN J END  
+FLG1 \x04\x01\x0c FLG1_SET
+FOBT .\\Data\\Script\\Bgm.Fob CLOSE \x88 \x02
 CMD1 PlayCD RUNF \xb2 END
 CSCE SCEK05_A01 \xce SCE_DONE 
-FLG3 \x8c\x01 FLG2 \xa8\xa6\x01 FLG2_SET \x03\xb0
+FLG1 \x8c\x01 FLG2 \xa8\xa6\x01 FLG2_SET \x03\xb0
  
 　私は飢えた子猫みたいなものだった。@
 食べても食べても、食べたりなかった。@
@@ -20,20 +20,20 @@ FLG3 \x8c\x01 FLG2 \xa8\xa6\x01 FLG2_SET \x03\xb0
 私は真剣に考えた。@
 そしてついに、秘密の共有こそが繋がりを深くする鍵に違いない、\nと思い至った。\w\z
   
-FLG3 \x12\x01\x0c FLG3_SET
+FLG1 \x12\x01\x0c FLG1_SET
 WHAT .\\Data\\Script\\TextFunc.Fob RUNF \xf2\x03 \x02
 CMD1 TextOn RUNF  \x04 END
 CSCE SCEK05_A02 <\x04 SCE_DONE 
-FLG3 \x8c\x01 FLG2 \xac\xa6\x01 FLG2_SET \x03R
+FLG1 \x8c\x01 FLG2 \xac\xa6\x01 FLG2_SET \x03R
  
 秘密……これまで誰にも話したことのない、胸の中の暗い秘密を\n告白して、共有すること。@
 それが鎖となれば、私たちはもっときつく互いを縛り合えるよう\nな気がした。@
 縛る……そう、私はゆきに縛ってほしかったし、ゆきを縛りたか\nった。@
 二度と逃げられないくらいに互いを縛り合って、深い海の底に一\n緒に沈んでいきたかった。\w\z
   
-FLG3 \x80\x04\x0c FLG3_SET \xf2\x03 \x02  \x04 END
+FLG1 \x80\x04\x0c FLG1_SET \xf2\x03 \x02  \x04 END
 CSCE SCEK05_A03 \x02\x06 SCE_DONE 
-FLG3 \x8c\x01 FLG2 \xb0\xa6\x01 FLG2_SET \x03\x9e
+FLG1 \x8c\x01 FLG2 \xb0\xa6\x01 FLG2_SET \x03\x9e
  
 　私の提案に、ゆきは気乗りしない様子だった。@
 「秘密を知ることで、もしかしたら相手のことが嫌いになるとい\nうこともあるんじゃないかな？」@
@@ -45,9 +45,9 @@ FLG3 \x8c\x01 FLG2 \xb0\xa6\x01 FLG2_SET \x03\x9e
 私はそれを知りたかった。\pゆきのすべてが。@
 結局、私の熱意がゆきを説き伏せる形となった。\w\z
   
-FLG3 F\x06\x0c FLG3_SET \xf2\x03 \x02  \x04 END
+FLG1 F\x06\x0c FLG1_SET \xf2\x03 \x02  \x04 END
 CSCE SCEK05_A04 \xf8\x08 SCE_DONE 
-FLG3 \x8c\x01 FLG2 \xb4\xa6\x01 FLG2_SET \x03I
+FLG1 \x8c\x01 FLG2 \xb4\xa6\x01 FLG2_SET \x03I
  
 　あまり話に関係がないから、私が何を告白したのかはここでは\n語らない。@
 いずれにせよ、私の秘密はゆきを動揺させた。@
@@ -56,10 +56,10 @@ FLG3 \x8c\x01 FLG2 \xb4\xa6\x01 FLG2_SET \x03I
 そしてゆきの番だった。@
 \n私はゆきに連れられて、町はずれの歩道橋に向かった。\w\z
   
-FLG3 <\t\x0c FLG3_SET \xf2\x03 \x02  \x04 END \x88 \x02
+FLG1 <\t\x0c FLG1_SET \xf2\x03 \x02  \x04 END \x88 \x02
 CMD1 StopCD RUNF \xa6\n END
 CSCE SCEK05_A05 \xc2\n SCE_DONE 
-FLG3 \x8c\x01 FLG2 \xb8\xa6\x01 FLG2_SET \x03\xe1
+FLG1 \x8c\x01 FLG2 \xb8\xa6\x01 FLG2_SET \x03\xe1
  
 　７月２７日（－－この日付が重要なの）。@
 風が全然吹かない日の、蒸し暑い夕方だった。@
@@ -77,11 +77,12 @@ FLG3 \x8c\x01 FLG2 \xb8\xa6\x01 FLG2_SET \x03\xe1
 せいいっぱいの勇気と不安が、ゆきの顔のなかでせめぎ合ってい\nた。@
 ゆきはこんなところで何を告白するつもりなのか……？\w\z
   
-FLG3 \x06\x0b\x0c FLG3_SET \xf2\x03 \x02  \x04 END\x03#
+FLG1 \x06\x0b\x0c FLG1_SET \xf2\x03 \x02  \x04 END\x03#
 CHOICE
 不安が広がっていった。「もういいよ。帰ろう」と私はいった。\n好奇心が爆発しそうだった。私は沈黙に耐えながら、歩き続けた。\n\l0,2,
 ENDCHOICE
 
   
-FLG3 \xc4\x0e\x0c FLG3_SET \xf2\x03 \x02  \x04 END \xf2\x03 \x02
-CSCE TextClosev\x81\x1f\x96\x0f END6\xf1
+FLG1 \xc4\x0e\x0c FLG1_SET \xf2\x03 \x02  \x04 END \xf2\x03 \x02
+CSCE TextClose CLOSE \x96\x0f END
+END_SCRIPT

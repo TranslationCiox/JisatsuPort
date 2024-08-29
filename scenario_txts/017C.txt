@@ -1,7 +1,7 @@
-START
+START_SCRIPT
 *\x03\x01\xb0\x044\x01D\x02
 CSCE SCE017_001 \x06 SCE_DONE 
-FLG3 \x8c\x01 FLG2 0* FLG2_SET \x03$
+FLG1 \x8c\x01 FLG2 0* FLG2_SET \x03$
  
 拓司\n　「……」@
 紅葉\n　「……」@
@@ -11,14 +11,15 @@ FLG3 \x8c\x01 FLG2 0* FLG2_SET \x03$
 紅葉\n　「……」@
 拓司\n　「……」\w\z
   
-FLG3 J\x0c FLG3_SET
+FLG1 J\x0c FLG1_SET
 WHAT .\\Data\\Script\\TextFunc.Fob RUNF \xfa \x02
 CMD1 TextOn RUNF (\x01 END
 CSCE SCE017_002 D\x01 SCE_DONE 
-FLG3 \x8c\x01 FLG2 4* FLG2_SET \x03\x16
+FLG1 \x8c\x01 FLG2 4* FLG2_SET \x03\x16
  
 紅葉\n　「……生理？」@
 拓司\n　「お前なあ、もうちょっと女らしい冗談言えよ」\w\z
   
-FLG3 \x88\x01\x0c FLG3_SET \xfa \x02 (\x01 END \xfa \x02
-CSCE TextClosev\x81\x1f&\x02 END6\xf1
+FLG1 \x88\x01\x0c FLG1_SET \xfa \x02 (\x01 END \xfa \x02
+CSCE TextClose CLOSE &\x02 END
+END_SCRIPT

@@ -1,7 +1,7 @@
-START
+START_SCRIPT
 \xfd\x06\x01`B#\x01\x14\x05
 CSCE SCE209_001 \x06 SCE_DONE 
-FLG3 \x8c\x01 FLG2 0V\x01 FLG2_SET \x03\xdc
+FLG1 \x8c\x01 FLG2 0V\x01 FLG2_SET \x03\xdc
  
 ナタネ\n　「話すことはこれだけ。\p私はあなたに『創』られた。@
 　　でも、あなたが眠っているあいだに教授は、私を監禁したわ。\n　　\pでもいま、あなたはもう一度『願』った。\p世界の真実を語る\n　　者の存在を。\pだから私はここに現れた……」@
@@ -11,7 +11,7 @@ FLG3 \x8c\x01 FLG2 0V\x01 FLG2_SET \x03\xdc
 あるいは壮大な嘘というべきか？\
 
   
-FLG3 J\x0c FLG3_SET
+FLG1 J\x0c FLG1_SET
 WHAT .\\Data\\Script\\TextFunc.Fob RUNF \xda\x03 \x02
 CMD1 TextOn RUNF \x08\x04 END\x03#
 CHOICE
@@ -19,5 +19,6 @@ CHOICE
 ENDCHOICE
 
   
-FLG3 $\x04\x0c FLG3_SET \xda\x03 \x02 \x08\x04 END \xda\x03 \x02
-CSCE TextClosev\x81\x1f\xf6\x04 END6\xf1
+FLG1 $\x04\x0c FLG1_SET \xda\x03 \x02 \x08\x04 END \xda\x03 \x02
+CSCE TextClose CLOSE \xf6\x04 END
+END_SCRIPT

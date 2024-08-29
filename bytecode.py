@@ -28,9 +28,29 @@ patterns = [
         "action": "FLAG_DEPENDANT"
     },
     {
+        "pattern": [b'\02', b'\x1f', b'\xde\x02', b'\x1e', b'\x02', b'5'],
+        # (Used a lot in SCENARIOROOT)
+        "action": "FLAG_DEPENDANT"
+    },
+    {
         "pattern": [b'\x01', b'start', b'\xef', b'i\x01C'],
         # Start the script
-        "action": "START\n"
+        "action": "START_SCRIPT\n"
+    },
+    {
+        "pattern": [b'6', b'\xf1'],
+        # Seems to END the script
+        "action": "\nEND_SCRIPT"
+    },
+    {
+        "pattern": [b'v\x81\x1f'],
+        # Seems to CLOSE something
+        "action": " CLOSE "
+    },
+    {
+        "pattern": [b'sv\x81\x1f'],
+        # Seems to OPEN something
+        "action": " OPEN "
     },
     {
         "pattern": [b'\x03', b'\x02'],  # Goes before commands
@@ -77,7 +97,6 @@ patterns = [
         "pattern": [b'\x02', b'\xef', b'!'],  # Seems to END CSCE statements.
         "action": "SCE_DONE"
     },
-
     {
         "pattern": [b'\x1e'],  # Likely a  delimiter (group)
         "action": " "
@@ -92,7 +111,7 @@ patterns = [
     },
     {
         "pattern": [b'\r', b',', b'\x02'],  # Some kind of COMMAND
-        "action": "\nFLG1 "
+        "action": "\nFLG3 "
     },
     {
         "pattern": [b'\r', b'\x02'],  # Some kind of COMMAND.
@@ -104,11 +123,11 @@ patterns = [
     },
     {
         "pattern": [b'\r'],  # Some kind of COMMAND
-        "action": "\nFLG3"
+        "action": "\nFLG1"
     },
     {
-        "pattern": [b'\x02', b'"'],  # Seems to be related to FLG3
-        "action": " FLG3_SET"
+        "pattern": [b'\x02', b'"'],  # Seems to be related to FLG1
+        "action": " FLG1_SET"
     },
     {
         "pattern": [b'j'],  # Seems to indicate if a SCENARIO has a choice (flag).

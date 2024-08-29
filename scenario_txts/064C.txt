@@ -1,12 +1,12 @@
-START
+START_SCRIPT
 <\x05\x01\xa4\t3\x01\x90\x03
 CSCE SCE064_001 \x06 SCE_DONE 
-FLG3 \x8c\x01 FLG2 \xa0s FLG2_SET \x03\x8c
+FLG1 \x8c\x01 FLG2 \xa0s FLG2_SET \x03\x8c
  
 カンナ\n　「普通のイヌは、だんだんと仕掛けを理解していくわ。\pやがて\n　　、最初から柵のそばに立って、部屋が暗くなった途端に反対\n　　側に飛び移るようになる。\pでも、電気ショックを経験してい\n　　るイヌは、回避しようとしないのよ。\p諦めて、じっとショッ\n　　クに耐えるだけなの。\p……それじゃあ応用。\p最初の拘束電気\n　　ショックの際に、鼻先でボタンを押せば電気が止まるという\n　　ことをあらかじめ学習させたイヌはどうだと思う？\p　そうい\n　　うイヌをさっきの部屋に閉じこめたとしたら？\p　もちろん、\n　　部屋には電流を止めるボタンなんかないわよ？」\
 
   
-FLG3 J\x0c FLG3_SET
+FLG1 J\x0c FLG1_SET
 WHAT .\\Data\\Script\\TextFunc.Fob RUNF \x9a\x02 \x02
 CMD1 TextOn RUNF \xc8\x02 END\x03\x12
 CHOICE
@@ -14,5 +14,6 @@ CHOICE
 ENDCHOICE
 
   
-FLG3 \xe4\x02\x0c FLG3_SET \x9a\x02 \x02 \xc8\x02 END \x9a\x02 \x02
-CSCE TextClosev\x81\x1fr\x03 END6\xf1
+FLG1 \xe4\x02\x0c FLG1_SET \x9a\x02 \x02 \xc8\x02 END \x9a\x02 \x02
+CSCE TextClose CLOSE r\x03 END
+END_SCRIPT

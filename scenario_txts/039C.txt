@@ -1,10 +1,10 @@
-START
+START_SCRIPT
 \n\x08\x01`B#\x01@\x06  
-FLG3 \x08\x01\x0c FLG3_SET
-FOBT .\\Data\\Script\\Bgm.Fobv\x81\x1f  \x02
+FLG1 \x08\x01\x0c FLG1_SET
+FOBT .\\Data\\Script\\Bgm.Fob CLOSE   \x02
 CMD1 PlayCD RUNF J END
 CSCE SCE039_001 f SCE_DONE 
-FLG3 \x8c\x01 FLG2 \x90L FLG2_SET \x03N
+FLG1 \x8c\x01 FLG2 \x90L FLG2_SET \x03N
  
 拓司\n　「早桃は、どうなんだ？」@
 \n引き返すことができない場所へと、話題が転がっていることには\n気づいていた。@
@@ -16,11 +16,11 @@ FLG3 \x8c\x01 FLG2 \x90L FLG2_SET \x03N
 拓司\n　「……」\
 
   
-FLG3 \xaa\x0c FLG3_SET
+FLG1 \xaa\x0c FLG1_SET
 WHAT .\\Data\\Script\\TextFunc.Fob RUNF \x02\x02 \x02
 CMD1 TextOn RUNF 0\x02 END
 CSCE SCE039_002 L\x02 SCE_DONE 
-FLG3 \x8c\x01 FLG2 \x94L FLG2_SET \x03W
+FLG1 \x8c\x01 FLG2 \x94L FLG2_SET \x03W
  
 あまりにもあっさりとした口調だったので、拓司は早桃がそれを\n冗談として処理しようとしているのかと思った。@
 しかし、拓司を正面から見据える早桃の表情は、真剣そのものだ\nった。@
@@ -31,9 +31,9 @@ FLG3 \x8c\x01 FLG2 \x94L FLG2_SET \x03W
 拓司\n　「？」\
 
   
-FLG3 \x90\x02\x0c FLG3_SET \x02\x02 \x02 0\x02 END
+FLG1 \x90\x02\x0c FLG1_SET \x02\x02 \x02 0\x02 END
 CSCE SCE039_003 &\x04 SCE_DONE 
-FLG3 \x8c\x01 FLG2 \x98L FLG2_SET \x03>
+FLG1 \x8c\x01 FLG2 \x98L FLG2_SET \x03>
  
 早桃\n　「わざとドアを開けておいたの。@
 　　おにいちゃんに見てもらおうと思って。@
@@ -42,11 +42,12 @@ FLG3 \x8c\x01 FLG2 \x98L FLG2_SET \x03>
 拓司\n　「……早桃」@
 \z
   
-FLG3 j\x04\x0c FLG3_SET \x02\x02 \x02 0\x02 END\x03\x10
+FLG1 j\x04\x0c FLG1_SET \x02\x02 \x02 0\x02 END\x03\x10
 CHOICE
 義兄として好きだという\n男として好きだという\n\l0,2,
 ENDCHOICE
 
   
-FLG3 \x9c\x05\x0c FLG3_SET \x02\x02 \x02 0\x02 END \x02\x02 \x02
-CSCE TextClosev\x81\x1f"\x06 END6\xf1
+FLG1 \x9c\x05\x0c FLG1_SET \x02\x02 \x02 0\x02 END \x02\x02 \x02
+CSCE TextClose CLOSE "\x06 END
+END_SCRIPT

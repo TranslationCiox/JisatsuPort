@@ -1,19 +1,19 @@
-START
+START_SCRIPT
 \x0c\r\x01`B#\x01\xf0\n  
-FLG3 \x04\x01\x0c FLG3_SET
-FOBT .\\Data\\Script\\Bgm.Fobv\x81\x1f  \x02
+FLG1 \x04\x01\x0c FLG1_SET
+FOBT .\\Data\\Script\\Bgm.Fob CLOSE   \x02
 CMD1 PlayCD RUNF J END
 CSCE SCE232_001 f SCE_DONE 
-FLG3 \x8c\x01 FLG2  z\x01 FLG2_SET \x03\x13
+FLG1 \x8c\x01 FLG2  z\x01 FLG2_SET \x03\x13
  
 \n\n\n\n\n\n\n\n\n\n　　　　　　　『おんなのこと、うちゅうじん』\
 
   
-FLG3 \xaa\x0c FLG3_SET
+FLG1 \xaa\x0c FLG1_SET
 WHAT .\\Data\\Script\\TextFunc.Fob RUNF \x16\x01 \x02
 CMD1 TextOn RUNF D\x01 END
 CSCE SCE232_002 `\x01 SCE_DONE 
-FLG3 \x8c\x01 FLG2 $z\x01 FLG2_SET \x03\xdf
+FLG1 \x8c\x01 FLG2 $z\x01 FLG2_SET \x03\xdf
  
 　あるところに、なたねという女の子がいました。@
 \n　なたねにはお母さんがいませんでした。\pお母さんはなたねが小\nさいときに病気で死んでしまったのです。\pお父さんも、本当のお\n父さんではなく、お母さんの再婚相手でした。\pそれでもなたねは、\n寂しいなんて思うことはありませんでした。@
@@ -23,9 +23,9 @@ FLG3 \x8c\x01 FLG2 $z\x01 FLG2_SET \x03\xdf
 　お義父さんはなたねのことを大切に、大切に育ててくれました。\n\p　一度、なたねがひどい風邪を引いたときには、大切なお仕事を\n放り出して看病についてくれました（お義父さんはそのせいで、\n病院をクビになってしまったので、新しい仕事先を探さなければ\nならなくなりました）。\pしかもお義父さんは、勉強をしなさい、\nＴＶは見てはいけません、と、厳しいこともなにひとついいませ\nんでした。\
 
   
-FLG3 \xa4\x01\x0c FLG3_SET \x16\x01 \x02 D\x01 END
+FLG1 \xa4\x01\x0c FLG1_SET \x16\x01 \x02 D\x01 END
 CSCE SCE232_003 Z\x05 SCE_DONE 
-FLG3 \x8c\x01 FLG2 (z\x01 FLG2_SET \x03\x9e
+FLG1 \x8c\x01 FLG2 (z\x01 FLG2_SET \x03\x9e
  
 　なたねはお義父さんが大好きでした。@
 　だから言われなくても勉強をしましたし、ＴＶだって少ししか\n見ませんでした。\pそうすればお義父さんが喜んでくれると思った\nからです。@
@@ -34,15 +34,15 @@ FLG3 \x8c\x01 FLG2 (z\x01 FLG2_SET \x03\x9e
 　ときどき「もういやだなあ」と思うこともあって、そんなとき\nお義父さんは「なたね、あまり勉強ばかりしていると、体に毒だ\nよ」と優しく声をかけてくれました。\pなたねは、そんなお義父さ\nんの声を聞くと、逆に「よし、もっとがんばろう！」と思えたの\nでした。\
 
   
-FLG3 \x9e\x05\x0c FLG3_SET \x16\x01 \x02 D\x01 END \x16\x01 \x02
-CSCE TextClosev\x81\x1f\\\x08 END
+FLG1 \x9e\x05\x0c FLG1_SET \x16\x01 \x02 D\x01 END \x16\x01 \x02
+CSCE TextClose CLOSE \\\x08 END
 HERO .\\Data\\Script\\Scenario\\232SubC.Fob RUNF |\x08 \x02
-CMD1 startv\x81\x1f\xb2\x08 END  
-FLG3 \xc8\x0c FLG3_SET
-FOBT .\\Data\\Script\\Bg.Fobsv\x81\x1f\xe8\x08 \x02
-CMD2 BgAutoFadeInsv\x81\x1f\x12\t END
+CMD1 start CLOSE \xb2\x08 END  
+FLG1 \xc8\x0c FLG1_SET
+FOBT .\\Data\\Script\\Bg.Fob OPEN \xe8\x08 \x02
+CMD2 BgAutoFadeIn OPEN \x12\t END
 CSCE SCE232_013 6\t SCE_DONE 
-FLG3 \x8c\x01 FLG2 Pz\x01 FLG2_SET \x03?
+FLG1 \x8c\x01 FLG2 Pz\x01 FLG2_SET \x03?
  
 　どこかへ走ってゆく汽車の@
 　全財産ぶんの切符を　くださいな@
@@ -53,5 +53,6 @@ FLG3 \x8c\x01 FLG2 Pz\x01 FLG2_SET \x03?
 　ここからはなれてゆきたいのです\
 
   
-FLG3 z\t\x0c FLG3_SET \x16\x01 \x02 D\x01 END   \x02
-CMD1 StopCD RUNF \xbc\n END \x16\x01 \x02 \\\x08 END6\xf1
+FLG1 z\t\x0c FLG1_SET \x16\x01 \x02 D\x01 END   \x02
+CMD1 StopCD RUNF \xbc\n END \x16\x01 \x02 \\\x08 END
+END_SCRIPT

@@ -1,12 +1,12 @@
-START
+START_SCRIPT
 \x16\x05\x01\xa4\t3\x01\\\x03
 CSCE SCE066_001 \x06 SCE_DONE 
-FLG3 \x8c\x01 FLG2 \xc0v FLG2_SET \x03h
+FLG1 \x8c\x01 FLG2 \xc0v FLG2_SET \x03h
  
 カンナ\n　「グッド。\pそれじゃあ、ちょっと目先を変えて『ホスピタリズ\n　　ム』について。\p……人手が足りない施設で育てられた赤ちゃ\n　　んは、親元で育てられている赤ちゃんと比較して死亡率が極\n　　めて高いの。\p別に手続き上のミスとか、目を離したスキに、\n　　ってわけじゃない。\p風邪から肺炎になって、死ぬことが多い。\n　　\p親元にいる赤ちゃんが肺炎になるよりもずっと高い確率で\n　　……どうしてだと思う？」\
 
   
-FLG3 J\x0c FLG3_SET
+FLG1 J\x0c FLG1_SET
 WHAT .\\Data\\Script\\TextFunc.Fob RUNF \n\x02 \x02
 CMD1 TextOn RUNF 8\x02 END\x03)
 CHOICE
@@ -14,5 +14,6 @@ CHOICE
 ENDCHOICE
 
   
-FLG3 T\x02\x0c FLG3_SET \n\x02 \x02 8\x02 END \n\x02 \x02
-CSCE TextClosev\x81\x1f>\x03 END6\xf1
+FLG1 T\x02\x0c FLG1_SET \n\x02 \x02 8\x02 END \n\x02 \x02
+CSCE TextClose CLOSE >\x03 END
+END_SCRIPT

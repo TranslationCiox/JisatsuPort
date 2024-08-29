@@ -1,23 +1,24 @@
-START
+START_SCRIPT
 \xa9\x04\x01\xa4\t3\x01\xb8\x03
 CSCE SCEK02_001 \x06 SCE_DONE 
-FLG3 \x8c\x01 FLG2 \x08\xa6\x01 FLG2_SET \x03T
+FLG1 \x8c\x01 FLG2 \x08\xa6\x01 FLG2_SET \x03T
  
 　翌日も、若草ゆきは私に話しかけてきた。@
 その翌日も、\pまたその翌日も。@
 何日目だったか、覚えていない。\pいいかげんいらいらした私は、\nどうして私につきまとうのかと、若草ゆきに厳しく問いただした。\n\p若草ゆきはいっしゅん呆気にとられた様子だったけれど、やがて\n気弱に笑って\n「お友達になりたいと思ったから」@
 とだけいった。\w\z
   
-FLG3 J\x0c FLG3_SET
+FLG1 J\x0c FLG1_SET
 WHAT .\\Data\\Script\\TextFunc.Fob RUNF \xba\x01 \x02
 CMD1 TextOn RUNF \xe8\x01 END
 CSCE SCEK02_002 \x04\x02 SCE_DONE 
-FLG3 \x8c\x01 FLG2 \x0c\xa6\x01 FLG2_SET \x03C
+FLG1 \x8c\x01 FLG2 \x0c\xa6\x01 FLG2_SET \x03C
  
 　友達には不自由していないはずのゆきが声をかけてくるなんて、\n最初は新手の嫌がらせかと思えた。@
 しかし彼女の笑顔は、魚の小骨みたいに私の心の奥に引っかかっ\nて離れなかった。@
 本当に寂しそうな笑顔だった。@
 その日の夕方、私は自分からゆきを誘ったのだった。\w\z
   
-FLG3 H\x02\x0c FLG3_SET \xba\x01 \x02 \xe8\x01 END \xba\x01 \x02
-CSCE TextClosev\x81\x1f\x9a\x03 END6\xf1
+FLG1 H\x02\x0c FLG1_SET \xba\x01 \x02 \xe8\x01 END \xba\x01 \x02
+CSCE TextClose CLOSE \x9a\x03 END
+END_SCRIPT

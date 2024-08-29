@@ -1,9 +1,9 @@
-START
+START_SCRIPT
 \x7f\x11\x01`B#\x01L\x0e
-FOBT .\\Data\\Script\\Bgm.Fobv\x81\x1f\x06 \x02
+FOBT .\\Data\\Script\\Bgm.Fob CLOSE \x06 \x02
 CMD1 StopCD RUNF 0 END
 CSCE SCE079_001 L SCE_DONE 
-FLG3 \x8c\x01 FLG2 \x10\x8b FLG2_SET \x03\xb1
+FLG1 \x8c\x01 FLG2 \x10\x8b FLG2_SET \x03\xb1
  
 /*▲SE28　再生（終了まで待たず先へ）*/\a2,0,28,0,どくん、どくん、どくん@
 \a4,0,0,0,心臓の音だけが耳の奥で大きく響いている。@
@@ -24,11 +24,11 @@ FLG3 \x8c\x01 FLG2 \x10\x8b FLG2_SET \x03\xb1
 瓶からするりと抜け出せるような気がする。\
 
   
-FLG3 \x90\x0c FLG3_SET
+FLG1 \x90\x0c FLG1_SET
 WHAT .\\Data\\Script\\TextFunc.Fob RUNF t\x03 \x02
 CMD1 TextOn RUNF \xa2\x03 END
 CSCE SCE079_002 \xbe\x03 SCE_DONE 
-FLG3 \x8c\x01 FLG2 \x14\x8b FLG2_SET \x03M
+FLG1 \x8c\x01 FLG2 \x14\x8b FLG2_SET \x03M
  
 \n　死んじまおうかなあ。@
 　死んじまおうかなあ。@
@@ -41,9 +41,9 @@ FLG3 \x8c\x01 FLG2 \x14\x8b FLG2_SET \x03M
 死のう。\
 
   
-FLG3 \x02\x04\x0c FLG3_SET t\x03 \x02 \xa2\x03 END
+FLG1 \x02\x04\x0c FLG1_SET t\x03 \x02 \xa2\x03 END
 CSCE SCE079_003 p\x05 SCE_DONE 
-FLG3 \x8c\x01 FLG2 \x18\x8b FLG2_SET \x03\xb4
+FLG1 \x8c\x01 FLG2 \x18\x8b FLG2_SET \x03\xb4
  
 いつの間にか、足が完全に止まっている。\pただぼんやりと、廊下\nに立ちすくんでいる。@
 \nもしかしてこれが波動に侵されるということなのか？@
@@ -60,16 +60,16 @@ FLG3 \x8c\x01 FLG2 \x18\x8b FLG2_SET \x03\xb4
 どうしてこれを恐れていたのかなど、すでにわからなかった。\
 
   
-FLG3 \xb4\x05\x0c FLG3_SET t\x03 \x02 \xa2\x03 END
+FLG1 \xb4\x05\x0c FLG1_SET t\x03 \x02 \xa2\x03 END
 CSCE SCE079_004 \xbe\x08 SCE_DONE 
-FLG3 \x8c\x01 FLG2 \x1c\x8b FLG2_SET \x03@
+FLG1 \x8c\x01 FLG2 \x1c\x8b FLG2_SET \x03@
  
 学生\n　「……死ぬのか生きるのか、それはもう人間の幸不幸を決定す\n　　る鍵ではないような気さえしてきたのだ。\p死者は完成せられ、\n　　生者は出帆の船のデッキに立ってそれに手を合わせる。\p船は\n　　するする岸壁から離れる。\p「死はよいものだ」……』\
 
   
-FLG3 \x02\t\x0c FLG3_SET t\x03 \x02 \xa2\x03 END
+FLG1 \x02\t\x0c FLG1_SET t\x03 \x02 \xa2\x03 END
 CSCE SCE079_005 <\n SCE_DONE 
-FLG3 \x8c\x01 FLG2  \x8b FLG2_SET \x03P
+FLG1 \x8c\x01 FLG2  \x8b FLG2_SET \x03P
  
 　よいものだ。@
 　死のう。@
@@ -87,9 +87,9 @@ FLG3 \x8c\x01 FLG2  \x8b FLG2_SET \x03P
 　カッター。\
 
   
-FLG3 \x80\n\x0c FLG3_SET t\x03 \x02 \xa2\x03 END
+FLG1 \x80\n\x0c FLG1_SET t\x03 \x02 \xa2\x03 END
 CSCE SCE079_006 \xfa\x0b SCE_DONE 
-FLG3 \x8c\x01 FLG2 $\x8b FLG2_SET \x03+
+FLG1 \x8c\x01 FLG2 $\x8b FLG2_SET \x03+
  
 　カットするものだからカッター。@
 　そうか。@
@@ -103,14 +103,15 @@ FLG3 \x8c\x01 FLG2 $\x8b FLG2_SET \x03+
 　ア。\
 
   
-FLG3 >\x0c\x0c FLG3_SET t\x03 \x02 \xa2\x03 END  
-FLG3 G\x0c FLG3_SET
-FOBT .\\Data\\Script\\Bg.Fobsv\x81\x1f>\r \x02
-CMD2 BgAutoFadeInsv\x81\x1fh\r END
+FLG1 >\x0c\x0c FLG1_SET t\x03 \x02 \xa2\x03 END  
+FLG1 G\x0c FLG1_SET
+FOBT .\\Data\\Script\\Bg.Fob OPEN >\r \x02
+CMD2 BgAutoFadeIn OPEN h\r END
 CSCE SCE079_007 \x8c\r SCE_DONE 
-FLG3 \x8c\x01 FLG2 (\x8b FLG2_SET \x03\x11
+FLG1 \x8c\x01 FLG2 (\x8b FLG2_SET \x03\x11
  
 \n　拓司は芋虫のようにはいずって、自分の教室へと向かった。\
 
   
-FLG3 \xd0\r\x0c FLG3_SET t\x03 \x02 \xa2\x03 END6\xf1
+FLG1 \xd0\r\x0c FLG1_SET t\x03 \x02 \xa2\x03 END
+END_SCRIPT

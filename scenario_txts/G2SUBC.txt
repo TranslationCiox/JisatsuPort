@@ -1,10 +1,10 @@
-START
+START_SCRIPT
 \xfb\r\x01`B#\x01\x94\x0b  
-FLG3 \x05\x01\x0c FLG3_SET
-FOBT .\\Data\\Script\\Bgm.Fobv\x81\x1f  \x02
+FLG1 \x05\x01\x0c FLG1_SET
+FOBT .\\Data\\Script\\Bgm.Fob CLOSE   \x02
 CMD1 PlayCD RUNF J END
 CSCE SCEG02_004 f SCE_DONE 
-FLG3 \x8c\x01 FLG2 T\xc5\x01 FLG2_SET \x03i
+FLG1 \x8c\x01 FLG2 T\xc5\x01 FLG2_SET \x03i
  
 　かさりと音がして、錦城の上半身が、拓司の顔のあたりに被さっ\nた。@
 熱い体温と、ずっしりとした肉の重みが……柔らかく大きな胸が、\n\p拓司の目の前にある。@
@@ -13,14 +13,14 @@ FLG3 \x8c\x01 FLG2 T\xc5\x01 FLG2_SET \x03i
 錦城\n　「しーっ！　……静かに。\pみんなが目を覚ますわ。@
 　　先生ね、考えたの。\p虎菱くんがこういうのを励みにできれ\n　　ば……って」\w\z
   
-FLG3 \xaa\x0c FLG3_SET
+FLG1 \xaa\x0c FLG1_SET
 WHAT .\\Data\\Script\\TextFunc.Fob RUNF n\x02 \x02
 CMD1 TextOn RUNF \x9c\x02 END  
-FLG3 ^\x0c FLG3_SET
-FOBT .\\Data\\Script\\Bg.Fobsv\x81\x1f\xd2\x02 \x02
-CMD2 BgAutoFadeInsv\x81\x1f\xfc\x02 END
+FLG1 ^\x0c FLG1_SET
+FOBT .\\Data\\Script\\Bg.Fob OPEN \xd2\x02 \x02
+CMD2 BgAutoFadeIn OPEN \xfc\x02 END
 CSCE SCEG02_005  \x03 SCE_DONE 
-FLG3 \x8c\x01 FLG2 X\xc5\x01 FLG2_SET \x03R
+FLG1 \x8c\x01 FLG2 X\xc5\x01 FLG2_SET \x03R
  
 錦城の手は、滑るようにチャックの中へと侵入し、拓司のペ○ス\nに触れた。@
 そっとそれをつまみ、ズボンの外にずるりと引きずりだす。@
@@ -30,9 +30,9 @@ FLG3 \x8c\x01 FLG2 X\xc5\x01 FLG2_SET \x03R
 錦城\n　「よかった」@
 \n錦城は拓司の目をじっと見つめたまま、薄く笑った。\w\z
   
-FLG3 d\x03\x0c FLG3_SET n\x02 \x02 \x9c\x02 END
+FLG1 d\x03\x0c FLG1_SET n\x02 \x02 \x9c\x02 END
 CSCE SCEG02_006 \xe6\x04 SCE_DONE 
-FLG3 \x8c\x01 FLG2 \\\xc5\x01 FLG2_SET \x03R
+FLG1 \x8c\x01 FLG2 \\\xc5\x01 FLG2_SET \x03R
  
 錦城\n　「さすが、男の子ね。\p熱くて……元気。\pねえ、虎菱くん、気持\n　　ちいい？」@
 拓司\n　「……」@
@@ -41,9 +41,9 @@ FLG3 \x8c\x01 FLG2 \\\xc5\x01 FLG2_SET \x03R
 拓司\n　「……」@
 黙っていると、錦城の手の動きがひどくゆっくりとしたものに変\nわった。\pじらすように止まり、少し動いてまた止まる。\w\z
   
-FLG3 *\x05\x0c FLG3_SET n\x02 \x02 \x9c\x02 END
+FLG1 *\x05\x0c FLG1_SET n\x02 \x02 \x9c\x02 END
 CSCE SCEG02_007 \xac\x06 SCE_DONE 
-FLG3 \x8c\x01 FLG2 `\xc5\x01 FLG2_SET \x03R
+FLG1 \x8c\x01 FLG2 `\xc5\x01 FLG2_SET \x03R
  
 錦城\n　「先生は聞いているんだけど。\p早いほうがいいの？@
 　　おそいほうがいいの？」@
@@ -54,9 +54,9 @@ FLG3 \x8c\x01 FLG2 `\xc5\x01 FLG2_SET \x03R
 拓司\n　「もっと……」@
 錦城\n　「いやらしい子ね。先生の手、道具だとでも思ってるのかしら？\n　　ふふふ」\w\z
   
-FLG3 \xf0\x06\x0c FLG3_SET n\x02 \x02 \x9c\x02 END
+FLG1 \xf0\x06\x0c FLG1_SET n\x02 \x02 \x9c\x02 END
 CSCE SCEG02_008 r\x08 SCE_DONE 
-FLG3 \x8c\x01 FLG2 d\xc5\x01 FLG2_SET \x03\x86
+FLG1 \x8c\x01 FLG2 d\xc5\x01 FLG2_SET \x03\x86
  
 早く激しく……嵐のように手を動かしながら、錦城は拓司の目を\n正面から捉えて離さない。@
 まるで実験動物を観察するように、拓司の目をのぞき込んでいる。\n\p錦城\n　「先生にこんなことさせてるなんて……興奮する？」@
@@ -68,12 +68,13 @@ FLG3 \x8c\x01 FLG2 d\xc5\x01 FLG2_SET \x03\x86
 拓司\n　「先生……」@
 錦城\n　「ねえ……触りたい？\p　先生の胸、そんなにじっと見つめて\n　　……ねえ、触りたいの？」\w\z
   
-FLG3 \xb6\x08\x0c FLG3_SET n\x02 \x02 \x9c\x02 END
+FLG1 \xb6\x08\x0c FLG1_SET n\x02 \x02 \x9c\x02 END
 S204 
 CHOICE
 「触りたい」\n「……」\n\l0,2,
 ENDCHOICE
 
   
-FLG3 \x08\x0b\x0c FLG3_SET n\x02 \x02 \x9c\x02 END n\x02 \x02
-CSCE TextClosev\x81\x1fv\x0b END6\xf1
+FLG1 \x08\x0b\x0c FLG1_SET n\x02 \x02 \x9c\x02 END n\x02 \x02
+CSCE TextClose CLOSE v\x0b END
+END_SCRIPT

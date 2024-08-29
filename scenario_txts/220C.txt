@@ -1,19 +1,19 @@
-START
+START_SCRIPT
 [\r\x01`B#\x01\xf0\n
 CSCE SCE220_001 \x06 SCE_DONE 
-FLG3 \x8c\x01 FLG2 `g\x01 FLG2_SET \x03\x11
+FLG1 \x8c\x01 FLG2 `g\x01 FLG2_SET \x03\x11
  
 \n\n\n\n\n\n\n\n\n\n　　　　　　　　　　　　　『９日目』\
 
   
-FLG3 J\x0c FLG3_SET
+FLG1 J\x0c FLG1_SET
 WHAT .\\Data\\Script\\TextFunc.Fob RUNF \xae \x02
 CMD1 TextOn RUNF \xdc END  
-FLG3 \x0c\x01\x0c FLG3_SET
-FOBT .\\Data\\Script\\Bgm.Fobv\x81\x1f\x12\x01 \x02
+FLG1 \x0c\x01\x0c FLG1_SET
+FOBT .\\Data\\Script\\Bgm.Fob CLOSE \x12\x01 \x02
 CMD1 PlayCD RUNF <\x01 END
 CSCE SCE220_002 X\x01 SCE_DONE 
-FLG3 \x8c\x01 FLG2 dg\x01 FLG2_SET \x03\x81
+FLG1 \x8c\x01 FLG2 dg\x01 FLG2_SET \x03\x81
  
 鍵の管理は、御堂が受け持つことになった。@
 御堂は、完全に気を失ったなたねから鍵を奪い、その管理を一方\n的に宣言した。\p誰もそれに異を唱える者はなかった。@
@@ -24,20 +24,20 @@ FLG3 \x8c\x01 FLG2 dg\x01 FLG2_SET \x03\x81
 傍らには、錦城の姿があった。\
 
   
-FLG3 \x9c\x01\x0c FLG3_SET \xae \x02 \xdc END
+FLG1 \x9c\x01\x0c FLG1_SET \xae \x02 \xdc END
 CSCE SCE220_003 \xda\x03 SCE_DONE 
-FLG3 \x8c\x01 FLG2 hg\x01 FLG2_SET \x03\x8e
+FLG1 \x8c\x01 FLG2 hg\x01 FLG2_SET \x03\x8e
  
 御堂\n　「安心しろ。\p俺はそこのイカレ女とは違う。\pちゃんといままで\n　　どおり、食糧は平等に配給する。\pただ、部屋をもらうってだ\n　　けだ。\pお前らのパーソナルスペースも２人分広がるわけだし、\n　　文句はねえだろ？」@
 錦城\n　「理屈から言っても、食糧管理者が食糧管理室に常在するって\n　　いうのは合理的だわ。\p今回の雲居さんへの……暴力は……\n　　不可欠だった。\pわかるわね、みんな？\p　こういうことは二度\n　　と起こされてはならないわ。\pだから、その防止の意味でも、\n　　御堂くんがみんなと違う場所にいるということは意味がある\n　　……そうでしょう？」\
 
   
-FLG3 \x1e\x04\x0c FLG3_SET \xae \x02 \xdc END  
-FLG3 &\x0c FLG3_SET
-FOBT .\\Data\\Script\\Bg.Fobsv\x81\x1f\xaa\x06 \x02
-CMD2 BgAutoFadeInsv\x81\x1f\xd4\x06 END
+FLG1 \x1e\x04\x0c FLG1_SET \xae \x02 \xdc END  
+FLG1 &\x0c FLG1_SET
+FOBT .\\Data\\Script\\Bg.Fob OPEN \xaa\x06 \x02
+CMD2 BgAutoFadeIn OPEN \xd4\x06 END
 CSCE SCE220_004 \xf8\x06 SCE_DONE 
-FLG3 \x8c\x01 FLG2 lg\x01 FLG2_SET \x03\xc7
+FLG1 \x8c\x01 FLG2 lg\x01 FLG2_SET \x03\xc7
  
 なたねはナイロンテープで拘束され、部屋の隅に転がされること\nとなった。\p猿ぐつわをかまされ、日に１度、トイレが許可される\nとき、そして最終波動の予兆はないかどうかを尋ねられるときだ\nけ解放される。@
 殴られた顔面は醜く腫れ上がり、青あざにおおわれて痛々しい。@
@@ -50,6 +50,7 @@ FLG3 \x8c\x01 FLG2 lg\x01 FLG2_SET \x03\xc7
 \n御堂は笑った。\
 
   
-FLG3 <\x07\x0c FLG3_SET \xae \x02 \xdc END  
-FLG3 \xc8\x0c FLG3_SET \xaa\x06 \x02 \xd4\x06 END \xae \x02
-CSCE TextClosev\x81\x1f\xd2\n END6\xf1
+FLG1 <\x07\x0c FLG1_SET \xae \x02 \xdc END  
+FLG1 \xc8\x0c FLG1_SET \xaa\x06 \x02 \xd4\x06 END \xae \x02
+CSCE TextClose CLOSE \xd2\n END
+END_SCRIPT

@@ -1,19 +1,19 @@
-START
+START_SCRIPT
 \xa9\x1e\x01`B#\x01Z\x19  
-FLG3 \x06\x01\x0c FLG3_SET
-FOBT .\\Data\\Script\\Bgm.Fobv\x81\x1f  \x02
+FLG1 \x06\x01\x0c FLG1_SET
+FOBT .\\Data\\Script\\Bgm.Fob CLOSE   \x02
 CMD1 PlayCD RUNF J END
 CSCE SCE003_001 f SCE_DONE 
-FLG3 \x8c\x01 FLG2 P\x14 FLG2_SET \x03\x12
+FLG1 \x8c\x01 FLG2 P\x14 FLG2_SET \x03\x12
  
 \n\n\n\n\n\n\n\n\n\n　　　　　　　　　『虎菱拓司と奇妙な音』\
 
   
-FLG3 \xaa\x0c FLG3_SET
+FLG1 \xaa\x0c FLG1_SET
 WHAT .\\Data\\Script\\TextFunc.Fob RUNF \x12\x01 \x02
 CMD1 TextOn RUNF @\x01 END
 CSCE SCE003_002 \\\x01 SCE_DONE 
-FLG3 \x8c\x01 FLG2 T\x14 FLG2_SET \x03\x88
+FLG1 \x8c\x01 FLG2 T\x14 FLG2_SET \x03\x88
  
 　虎菱拓司がその音を聞くようになったのは、今年に入ってまも\n　なくのころだった。@
 \n/*▲SE01　ループ再生（次の停止まで）*/\a2,2,1,1,\a6,0,0,0,　ザザザ……ザザッ……\pザアザザザ……ザアアアアア……@
@@ -24,9 +24,9 @@ FLG3 \x8c\x01 FLG2 T\x14 FLG2_SET \x03\x88
 　近くの工場から聞こえる音かと思ったが、どうやらそうではな\n　い。\
 
   
-FLG3 \xa0\x01\x0c FLG3_SET \x12\x01 \x02 @\x01 END
+FLG1 \xa0\x01\x0c FLG1_SET \x12\x01 \x02 @\x01 END
 CSCE SCE003_003 \xfa\x03 SCE_DONE 
-FLG3 \x8c\x01 FLG2 X\x14 FLG2_SET \x03^
+FLG1 \x8c\x01 FLG2 X\x14 FLG2_SET \x03^
  
 　その音は拓司にしか聞こえないようだった。@
 　彼はすぐに、それが幻聴であることを理解した。@
@@ -36,9 +36,9 @@ FLG3 \x8c\x01 FLG2 X\x14 FLG2_SET \x03^
 　数ヶ月に一度、忘れたころに、その音は拓司の耳のなかで響き\n　渡った。\
 
   
-FLG3 >\x04\x0c FLG3_SET \x12\x01 \x02 @\x01 END
+FLG1 >\x04\x0c FLG1_SET \x12\x01 \x02 @\x01 END
 CSCE SCE003_004 \xf0\x05 SCE_DONE 
-FLG3 \x8c\x01 FLG2 $\x10 FLG2_SET \x03\xaa
+FLG1 \x8c\x01 FLG2 $\x10 FLG2_SET \x03\xaa
  
 /*▲SE01　ループ再生（次の停止まで）*/\a2,2,1,1,\a6,0,0,0,　ザザザ……ザザッ……\pザアザザザ……ザアアアアア……@
 　ザアザアアアアアアア……/*▲SE01　停止*/\a4,2,0,0,\n　拓司は、その音を『灰色』と名付けた。@
@@ -49,9 +49,9 @@ FLG3 \x8c\x01 FLG2 $\x10 FLG2_SET \x03\xaa
 　おれの音に名前があって、なにが悪い？\
 
   
-FLG3 4\x06\x0c FLG3_SET \x12\x01 \x02 @\x01 END
+FLG1 4\x06\x0c FLG1_SET \x12\x01 \x02 @\x01 END
 CSCE SCE003_005 \x16\t SCE_DONE 
-FLG3 \x8c\x01 FLG2 `\x14 FLG2_SET \x03\xa5
+FLG1 \x8c\x01 FLG2 `\x14 FLG2_SET \x03\xa5
  
 /*▲SE01　ループ再生（次の停止まで）*/\a2,2,1,1,\a6,0,0,0,　ザザザ……ザザッ……\pザアザザザ……ザアアアアア……@
 　ザアザアアアアアアア……@
@@ -63,9 +63,9 @@ FLG3 \x8c\x01 FLG2 `\x14 FLG2_SET \x03\xa5
 　狐につままれたような気分になることがたびたびとなった。\
 
   
-FLG3 Z\t\x0c FLG3_SET \x12\x01 \x02 @\x01 END
+FLG1 Z\t\x0c FLG1_SET \x12\x01 \x02 @\x01 END
 CSCE SCE003_006 (\x0c SCE_DONE 
-FLG3 \x8c\x01 FLG2 d\x14 FLG2_SET \x03\xa0
+FLG1 \x8c\x01 FLG2 d\x14 FLG2_SET \x03\xa0
  
 /*▲SE01　ループ再生（次の停止まで*/\a2,2,1,1,\a6,0,0,0,　ザザザ……ザザッ……\pザアザザザ……ザアアアアア……@
 　ザアザアアアアアアア……@
@@ -78,9 +78,9 @@ FLG3 \x8c\x01 FLG2 d\x14 FLG2_SET \x03\xa0
 　なんとなくそれは『現実感』とでも呼ぶべきものの喪失である\n　ように……拓司は感じていた。\
 
   
-FLG3 l\x0c\x0c FLG3_SET \x12\x01 \x02 @\x01 END
+FLG1 l\x0c\x0c FLG1_SET \x12\x01 \x02 @\x01 END
 CSCE SCE003_007 &\x0f SCE_DONE 
-FLG3 \x8c\x01 FLG2 h\x14 FLG2_SET \x03\x94
+FLG1 \x8c\x01 FLG2 h\x14 FLG2_SET \x03\x94
  
 /*▲SE01　ループ再生（次の停止まで）*/\a2,2,1,1,\a6,0,0,0,　ザザザ……ザザッ……\pザアザザザ……ザアアアアア……@
 　ザアザアアアアアアア……@
@@ -92,9 +92,9 @@ FLG3 \x8c\x01 FLG2 h\x14 FLG2_SET \x03\x94
 　風からは薫りと意味が消えていった。\
 
   
-FLG3 j\x0f\x0c FLG3_SET \x12\x01 \x02 @\x01 END
+FLG1 j\x0f\x0c FLG1_SET \x12\x01 \x02 @\x01 END
 CSCE SCE003_008 \xf4\x11 SCE_DONE 
-FLG3 \x8c\x01 FLG2 l\x14 FLG2_SET \x03d
+FLG1 \x8c\x01 FLG2 l\x14 FLG2_SET \x03d
  
 　だんだんと頭のなかがぼやけてくる。@
 　何が起きて、何が起きなかったのか。@
@@ -106,9 +106,9 @@ FLG3 \x8c\x01 FLG2 l\x14 FLG2_SET \x03d
 　自らも灰色に染まることを選んだ。\
 
   
-FLG3 8\x12\x0c FLG3_SET \x12\x01 \x02 @\x01 END
+FLG1 8\x12\x0c FLG1_SET \x12\x01 \x02 @\x01 END
 CSCE SCE003_009 \x02\x14 SCE_DONE 
-FLG3 \x8c\x01 FLG2 p\x14 FLG2_SET \x03$
+FLG1 \x8c\x01 FLG2 p\x14 FLG2_SET \x03$
  
 　そしていま、思っている。@
 　なにをしていいのか。@
@@ -117,9 +117,9 @@ FLG3 \x8c\x01 FLG2 p\x14 FLG2_SET \x03$
 　なにも判断できない。\
 
   
-FLG3 F\x14\x0c FLG3_SET \x12\x01 \x02 @\x01 END
+FLG1 F\x14\x0c FLG1_SET \x12\x01 \x02 @\x01 END
 CSCE SCE003_010 \x10\x15 SCE_DONE 
-FLG3 \x8c\x01 FLG2 t\x14 FLG2_SET \x03t
+FLG1 \x8c\x01 FLG2 t\x14 FLG2_SET \x03t
  
 /*▲SE01　ループ再生（次の停止まで）*/\a2,2,1,1,\a6,0,0,0,　ザザザ……ザザッ……\pザアザザザ……ザアアアアア……@
 　ザアザアアアアアアア……@
@@ -132,9 +132,9 @@ FLG3 \x8c\x01 FLG2 t\x14 FLG2_SET \x03t
 　じっとりと絡みつくような空気が、ざらめいて悲鳴をあ\n　げるような、その音を。\
 
   
-FLG3 T\x15\x0c FLG3_SET \x12\x01 \x02 @\x01 END
+FLG1 T\x15\x0c FLG1_SET \x12\x01 \x02 @\x01 END
 CSCE SCE003_011 ^\x17 SCE_DONE 
-FLG3 \x8c\x01 FLG2 x\x14 FLG2_SET \x03K
+FLG1 \x8c\x01 FLG2 x\x14 FLG2_SET \x03K
  
 /*▲SE03　１回再生（再生終了を待たず次へ）*/\a2,0,3,0,\a6,0,0,0,　キキキキキ……キイキイ……キキキ……キキ……キ@
 \a4,0,0,0,\n　オト。@
@@ -144,6 +144,7 @@ FLG3 \x8c\x01 FLG2 x\x14 FLG2_SET \x03K
 　世界が砂のように灰色になって、そして端から崩れおちてゆく\n　音か？\
 
   
-FLG3 \xa2\x17\x0c FLG3_SET \x12\x01 \x02 @\x01 END   \x02
+FLG1 \xa2\x17\x0c FLG1_SET \x12\x01 \x02 @\x01 END   \x02
 CMD1 StopCD RUNF \x14\x19 END \x12\x01 \x02
-CSCE TextClosev\x81\x1f<\x19 END6\xf1
+CSCE TextClose CLOSE <\x19 END
+END_SCRIPT

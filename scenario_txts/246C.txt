@@ -1,7 +1,7 @@
-START
+START_SCRIPT
 -2\x01`B#\x01\xae)
 CSCE SCE246_001 \x06 SCE_DONE 
-FLG3 \x8c\x01 FLG2 \x90\x01 FLG2_SET \x03\xb9
+FLG1 \x8c\x01 FLG2 \x90\x01 FLG2_SET \x03\xb9
  
 拓司\n　「来るぞ、急げ！」@
 \n最終波動。@
@@ -17,11 +17,11 @@ FLG3 \x8c\x01 FLG2 \x90\x01 FLG2_SET \x03\xb9
 最終波動がやってくる前に壁を壊し、その向こうにあるものを見\nつけだすのだ。\
 
   
-FLG3 J\x0c FLG3_SET
+FLG1 J\x0c FLG1_SET
 WHAT .\\Data\\Script\\TextFunc.Fob RUNF N\x03 \x02
 CMD1 TextOn RUNF |\x03 END
 CSCE SCE246_002 \x98\x03 SCE_DONE 
-FLG3 \x8c\x01 FLG2 \x04\x90\x01 FLG2_SET \x03B
+FLG1 \x8c\x01 FLG2 \x04\x90\x01 FLG2_SET \x03B
  
 拓司たちは掘った。\p壁を崩し続けた。@
 \n地鳴りは徐々に大きくなっていく。@
@@ -29,9 +29,9 @@ FLG3 \x8c\x01 FLG2 \x04\x90\x01 FLG2_SET \x03B
 すべてのものがブルブルと振動し、輪郭が歪む。天井から、パラ\nパラとコンクリートの破片が落ちてくる。\
 
   
-FLG3 \xdc\x03\x0c FLG3_SET N\x03 \x02 |\x03 END
+FLG1 \xdc\x03\x0c FLG1_SET N\x03 \x02 |\x03 END
 CSCE SCE246_003 \x1e\x05 SCE_DONE 
-FLG3 \x8c\x01 FLG2 \x08\x90\x01 FLG2_SET \x03F
+FLG1 \x8c\x01 FLG2 \x08\x90\x01 FLG2_SET \x03F
  
 早桃\n　「おにいちゃん、間に合わない！\p　間に合わないよ！」@
 拓司\n　「やるんだ！」@
@@ -41,13 +41,13 @@ FLG3 \x8c\x01 FLG2 \x08\x90\x01 FLG2_SET \x03F
 拓司\n　「どこかなんて、ない！\p　逃げ場所はない！\p　ここしかないん\n　　だ。\pここしか、ないんだ！」\
 
   
-FLG3 b\x05\x0c FLG3_SET N\x03 \x02 |\x03 END
-FOBT .\\Data\\Script\\Bgm.Fobv\x81\x1f\xb4\x06 \x02
+FLG1 b\x05\x0c FLG1_SET N\x03 \x02 |\x03 END
+FOBT .\\Data\\Script\\Bgm.Fob CLOSE \xb4\x06 \x02
 CMD1 StopCD RUNF \xde\x06 END  
-FLG3 \x02\x0c FLG3_SET \xb4\x06 \x02
+FLG1 \x02\x0c FLG1_SET \xb4\x06 \x02
 CMD1 SeStop RUNF  \x07 END
 CSCE SCE246_004 <\x07 SCE_DONE 
-FLG3 \x8c\x01 FLG2 \x0c\x90\x01 FLG2_SET \x03\x95
+FLG1 \x8c\x01 FLG2 \x0c\x90\x01 FLG2_SET \x03\x95
  
 ざあっ！@
 \n足の裏から頭のてっぺんへ。@
@@ -60,9 +60,9 @@ FLG3 \x8c\x01 FLG2 \x0c\x90\x01 FLG2_SET \x03\x95
 /*▲↑停止まで待つ*/\a3,0,0,0,\a4,0,0,0,\n拓司\n　「！」\
 
   
-FLG3 \x80\x07\x0c FLG3_SET N\x03 \x02 |\x03 END
+FLG1 \x80\x07\x0c FLG1_SET N\x03 \x02 |\x03 END
 CSCE SCE246_005 \x0e\n SCE_DONE 
-FLG3 \x8c\x01 FLG2 \x10\x90\x01 FLG2_SET \x03U
+FLG1 \x8c\x01 FLG2 \x10\x90\x01 FLG2_SET \x03U
  
 世界が軋んでいた。@
 耳の奥で生まれたその悲鳴は、耳の奥へ針のようにつきささり、\n脳味噌のなかで爆発した。@
@@ -71,9 +71,9 @@ FLG3 \x8c\x01 FLG2 \x10\x90\x01 FLG2_SET \x03U
 頭そのものが爆発しないのが不思議だった。\
 
   
-FLG3 R\n\x0c FLG3_SET N\x03 \x02 |\x03 END
+FLG1 R\n\x0c FLG1_SET N\x03 \x02 |\x03 END
 CSCE SCE246_006 \xe0\x0b SCE_DONE 
-FLG3 \x8c\x01 FLG2 \x14\x90\x01 FLG2_SET \x03}
+FLG1 \x8c\x01 FLG2 \x14\x90\x01 FLG2_SET \x03}
  
 拓司\n　「ああああああああああああ！」@
 \n拓司は耳をふさいでうずくまった。@
@@ -85,9 +85,9 @@ FLG3 \x8c\x01 FLG2 \x14\x90\x01 FLG2_SET \x03}
 白目をむき、耳から、鼻から、どす黒い血があふれ出している。\
 
   
-FLG3 $\x0c\x0c FLG3_SET N\x03 \x02 |\x03 END
+FLG1 $\x0c\x0c FLG1_SET N\x03 \x02 |\x03 END
 CSCE SCE246_007 R\x0e SCE_DONE 
-FLG3 \x8c\x01 FLG2 \x18\x90\x01 FLG2_SET \x03\xad
+FLG1 \x8c\x01 FLG2 \x18\x90\x01 FLG2_SET \x03\xad
  
 拓司\n　「サ・モ・モ・オオオオオオ・オオオオ！」@
 \n拓司は叫んだ。@
@@ -106,9 +106,9 @@ FLG3 \x8c\x01 FLG2 \x18\x90\x01 FLG2_SET \x03\xad
 俺の手によって。@
 \z
   
-FLG3 \x96\x0e\x0c FLG3_SET N\x03 \x02 |\x03 END
+FLG1 \x96\x0e\x0c FLG1_SET N\x03 \x02 |\x03 END
 CSCE SCE246_008 \x84\x11 SCE_DONE 
-FLG3 \x8c\x01 FLG2 \x1c\x90\x01 FLG2_SET \x039
+FLG1 \x8c\x01 FLG2 \x1c\x90\x01 FLG2_SET \x039
  
 数メートル向こうに、早桃の姿が見える。@
 拓司は一歩踏み出した。@
@@ -116,9 +116,9 @@ FLG3 \x8c\x01 FLG2 \x1c\x90\x01 FLG2_SET \x039
 そうして一歩……一歩……忘れてしまった歩き方を思い出すかの\nように、拓司はゆっくりと歩き始めた。\
 
   
-FLG3 \xc8\x11\x0c FLG3_SET N\x03 \x02 |\x03 END
+FLG1 \xc8\x11\x0c FLG1_SET N\x03 \x02 |\x03 END
 CSCE SCE246_009 \xe6\x12 SCE_DONE 
-FLG3 \x8c\x01 FLG2  \x90\x01 FLG2_SET \x03\xa2
+FLG1 \x8c\x01 FLG2  \x90\x01 FLG2_SET \x03\xa2
  
 /*▲SE33　一回再生（再生終了待たず先へ）*/\a2,0,33,0,\a6,0,0,0,キイイイイイイイイイイイイイイイイイイイイイイイイイイイ！@
 /*▲↑　再生終了を待つ*/\a3,0,0,0,\a4,0,0,0,\nいつの間にか、鼻血が流れ出している。@
@@ -127,9 +127,9 @@ FLG3 \x8c\x01 FLG2  \x90\x01 FLG2_SET \x03\xa2
 /*▲↑　再生終了を待つ*/\a3,0,0,0,\a4,0,0,0,\nここから俺は始まるのだ。@
 \n/*▲SE33　一回再生（再生終了待たず先へ）*/\a2,0,33,0,\a6,0,0,0,キイイイイイイイイイイイイイイイイイイイイイイイイイイイ！\w\n/*▲↑　再生終了を待つ*/\a3,0,0,0,\a4,0,0,0,\z
   
-FLG3 *\x13\x0c FLG3_SET N\x03 \x02 |\x03 END
+FLG1 *\x13\x0c FLG1_SET N\x03 \x02 |\x03 END
 CSCE SCE246_010 \xec\x15 SCE_DONE 
-FLG3 \x8c\x01 FLG2 $\x90\x01 FLG2_SET \x03Q
+FLG1 \x8c\x01 FLG2 $\x90\x01 FLG2_SET \x03Q
  
 こうして旅が始まったいま、俺にはいまや目的があるのだ。@
 何かから逃げているのではなく、何かに向かっているのだ。@
@@ -141,9 +141,9 @@ FLG3 \x8c\x01 FLG2 $\x90\x01 FLG2_SET \x03Q
 動くのだ。\
 
   
-FLG3 0\x16\x0c FLG3_SET N\x03 \x02 |\x03 END
+FLG1 0\x16\x0c FLG1_SET N\x03 \x02 |\x03 END
 CSCE SCE246_011 \xae\x17 SCE_DONE 
-FLG3 \x8c\x01 FLG2 (\x90\x01 FLG2_SET \x03w
+FLG1 \x8c\x01 FLG2 (\x90\x01 FLG2_SET \x03w
  
 拓司\n　「早桃！」@
 \n/*■CG56　表示（クロスフェード）*/\a7,-2,-2,0,\a0,55,2,0,\a6,-2,0,0,早桃は動かない。すでに痙攣すらしていない。@
@@ -156,12 +156,12 @@ FLG3 \x8c\x01 FLG2 (\x90\x01 FLG2_SET \x03w
 \n拓司\n　「勝った！」\
 
   
-FLG3 \xf2\x17\x0c FLG3_SET N\x03 \x02 |\x03 END  
-FLG3 \xc9\x0c FLG3_SET
-FOBT .\\Data\\Script\\Bg.Fobsv\x81\x1f"\x1a \x02
-CMD2 BgAutoFadeInsv\x81\x1fL\x1a END
+FLG1 \xf2\x17\x0c FLG1_SET N\x03 \x02 |\x03 END  
+FLG1 \xc9\x0c FLG1_SET
+FOBT .\\Data\\Script\\Bg.Fob OPEN "\x1a \x02
+CMD2 BgAutoFadeIn OPEN L\x1a END
 CSCE SCE246_012 p\x1a SCE_DONE 
-FLG3 \x8c\x01 FLG2 ,\x90\x01 FLG2_SET \x03Y
+FLG1 \x8c\x01 FLG2 ,\x90\x01 FLG2_SET \x03Y
  
 瞬間。@
 ふいに目の前が真っ白になった。@
@@ -175,9 +175,9 @@ FLG3 \x8c\x01 FLG2 ,\x90\x01 FLG2_SET \x03Y
 \n気がつくと、拓司は世界になっていた。\
 
   
-FLG3 \xb4\x1a\x0c FLG3_SET N\x03 \x02 |\x03 END
+FLG1 \xb4\x1a\x0c FLG1_SET N\x03 \x02 |\x03 END
 CSCE SCE246_013 R\x1c SCE_DONE 
-FLG3 \x8c\x01 FLG2 0\x90\x01 FLG2_SET \x03\x8e
+FLG1 \x8c\x01 FLG2 0\x90\x01 FLG2_SET \x03\x8e
  
 世界に音はなく、ただ真っ白なひかりだけがあった。@
 目の前には見えない壁があって、そこに開いた５ンチ四方ほどの\n穴から、そのひかりは射していた。@
@@ -190,10 +190,10 @@ FLG3 \x8c\x01 FLG2 0\x90\x01 FLG2_SET \x03\x8e
 堰を切ったように、ひかりがあふれ出した。\
 
   
-FLG3 \x96\x1c\x0c FLG3_SET N\x03 \x02 |\x03 END  
-FLG3 \xc9\x0c FLG3_SET "\x1a \x02 L\x1a END
+FLG1 \x96\x1c\x0c FLG1_SET N\x03 \x02 |\x03 END  
+FLG1 \xc9\x0c FLG1_SET "\x1a \x02 L\x1a END
 CSCE SCE246_014 <\x1f SCE_DONE 
-FLG3 \x8c\x01 FLG2 4\x90\x01 FLG2_SET \x03\x8d
+FLG1 \x8c\x01 FLG2 4\x90\x01 FLG2_SET \x03\x8d
  
 ひかりに身をまかせながら、拓司はなにもかもがわかったように\n感じていた。@
 絡み合ったすべての謎は解き明かされ、どこにもたどり着かない\n無数の伏線は一直線に真実へと結びついていた。@
@@ -205,9 +205,9 @@ FLG3 \x8c\x01 FLG2 4\x90\x01 FLG2_SET \x03\x8d
 感じる、というより拓司はそれらと同じものになった。\
 
   
-FLG3 \x80\x1f\x0c FLG3_SET N\x03 \x02 |\x03 END
+FLG1 \x80\x1f\x0c FLG1_SET N\x03 \x02 |\x03 END
 CSCE SCE246_015 \xee! SCE_DONE 
-FLG3 \x8c\x01 FLG2 8\x90\x01 FLG2_SET \x03\xbf
+FLG1 \x8c\x01 FLG2 8\x90\x01 FLG2_SET \x03\xbf
  
 私とは万人であり、万人とは私だった。@
 無私な希望。@
@@ -229,19 +229,19 @@ FLG3 \x8c\x01 FLG2 8\x90\x01 FLG2_SET \x03\xbf
 それらの照射。\
 
   
-FLG3 2"\x0c FLG3_SET N\x03 \x02 |\x03 END
+FLG1 2"\x0c FLG1_SET N\x03 \x02 |\x03 END
 CSCE SCE246_016 h% SCE_DONE 
-FLG3 \x8c\x01 FLG2 <\x90\x01 FLG2_SET \x03%
+FLG1 \x8c\x01 FLG2 <\x90\x01 FLG2_SET \x03%
  
 さまざまな言葉が浮かんでは消えていった。@
 そこに意味などなかった。@
 しかし、それらはそれらそのもので、意味を越えた真理の塊だっ\nた。\
 
   
-FLG3 \xac%\x0c FLG3_SET N\x03 \x02 |\x03 END  
-FLG3 8\x0c FLG3_SET "\x1a \x02 L\x1a END
+FLG1 \xac%\x0c FLG1_SET N\x03 \x02 |\x03 END  
+FLG1 8\x0c FLG1_SET "\x1a \x02 L\x1a END
 CSCE SCE246_017 \xae& SCE_DONE 
-FLG3 \x8c\x01 FLG2 @\x90\x01 FLG2_SET \x03\x96
+FLG1 \x8c\x01 FLG2 @\x90\x01 FLG2_SET \x03\x96
  
 早桃\n　「……見える……見えるよ……ドルチェだ……ドルチェがいる」\n@
 早桃がつぶやいた。@
@@ -258,5 +258,6 @@ FLG3 \x8c\x01 FLG2 @\x90\x01 FLG2_SET \x03\x96
 \nいつしか、胸の中の黒いかたまりは静かに燃え尽きていた。\
 
   
-FLG3 \xf2&\x0c FLG3_SET N\x03 \x02 |\x03 END N\x03 \x02
-CSCE TextClosev\x81\x1f\x90) END6\xf1
+FLG1 \xf2&\x0c FLG1_SET N\x03 \x02 |\x03 END N\x03 \x02
+CSCE TextClose CLOSE \x90) END
+END_SCRIPT

@@ -1,7 +1,7 @@
-START
+START_SCRIPT
 \xb7\x07\x01`B#\x01\xa8\x05
 CSCE SCE207_001 \x06 SCE_DONE 
-FLG3 \x8c\x01 FLG2 \x10S\x01 FLG2_SET \x03\xa7
+FLG1 \x8c\x01 FLG2 \x10S\x01 FLG2_SET \x03\xa7
  
 拓司\n　「君は、教授はおれにウソを聞かせているという。\pおれをコン\n　　トロールしようとしていると……。\p教授とは何者なんだ？@
 　　なんのために、おれをコントロールしようとしている？」@
@@ -12,16 +12,17 @@ FLG3 \x8c\x01 FLG2 \x10S\x01 FLG2_SET \x03\xa7
 拓司\n　「……」\
 
   
-FLG3 J\x0c FLG3_SET
+FLG1 J\x0c FLG1_SET
 WHAT .\\Data\\Script\\TextFunc.Fob RUNF \x06\x03 \x02
 CMD1 TextOn RUNF 4\x03 END
 CSCE SCE207_002 P\x03 SCE_DONE 
-FLG3 \x8c\x01 FLG2 \x14S\x01 FLG2_SET \x03l
+FLG1 \x8c\x01 FLG2 \x14S\x01 FLG2_SET \x03l
  
 ナタネ\n　「あなたの世界は、教授によって完全に破壊された。\p破壊とい\n　　っても物理的な……ビルが壊されたとか人が殺されたとか…\n　　…そういう破壊ではないわ。\p無くなったの。\p完全に消滅した\n　　の。\p教授による侵略は、三次元的な意味では説明できない\n　　……存在と……世界のなりたち自体に関わる破壊行為よ」@
 拓司\n　「……」@
 ナタネ\n　「世界は消滅して……あなただけが生き残った。\p教授はあなた\n　　を恐れている」\
 
   
-FLG3 \x94\x03\x0c FLG3_SET \x06\x03 \x02 4\x03 END \x06\x03 \x02
-CSCE TextClosev\x81\x1f\x8a\x05 END6\xf1
+FLG1 \x94\x03\x0c FLG1_SET \x06\x03 \x02 4\x03 END \x06\x03 \x02
+CSCE TextClose CLOSE \x8a\x05 END
+END_SCRIPT

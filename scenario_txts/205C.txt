@@ -1,7 +1,7 @@
-START
+START_SCRIPT
 \xd8\x04\x01\xa4\t3\x01*\x04
 CSCE SCE205_001 \x06 SCE_DONE 
-FLG3 \x8c\x01 FLG2 \xf0O\x01 FLG2_SET \x03\xd3
+FLG1 \x8c\x01 FLG2 \xf0O\x01 FLG2_SET \x03\xd3
  
 ナタネ\n　「いま、あなたが体験しているこの世界こそが『現実』よ。@
 　　そして、『学校に籠城している世界』……教授はそれを『あ\n　　なたの妄想が生んだ頭の中の世界』だと信じ込ませようとし\n　　ているけれど、それは罠。\pあなたが見たのは『妄想』ではな\n　　いわ。\p『記憶』よ」@
@@ -15,7 +15,8 @@ FLG3 \x8c\x01 FLG2 \xf0O\x01 FLG2_SET \x03\xd3
 　　妄想の産物ではない。\p波動が襲ってきて、あなたたちは実験\n　　室に籠城した。\pそれは過去の事実なの。\p……いいわね？」\
 
   
-FLG3 J\x0c FLG3_SET
+FLG1 J\x0c FLG1_SET
 WHAT .\\Data\\Script\\TextFunc.Fob RUNF \xb6\x03 \x02
 CMD1 TextOn RUNF \xe4\x03 END \xb6\x03 \x02
-CSCE TextClosev\x81\x1f\x0c\x04 END6\xf1
+CSCE TextClose CLOSE \x0c\x04 END
+END_SCRIPT

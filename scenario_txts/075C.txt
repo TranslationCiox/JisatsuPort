@@ -1,7 +1,7 @@
-START
+START_SCRIPT
 \x82\x17\x01`B#\x01 \x13
 CSCE SCE075_001 \x06 SCE_DONE 
-FLG3 \x8c\x01 FLG2 \xd0\x84 FLG2_SET \x03|
+FLG1 \x8c\x01 FLG2 \xd0\x84 FLG2_SET \x03|
  
 なたね\n　「だめ。\pこの先は危険。\p波動が直接－－」@
 早桃\n　「いい加減にしてよ！」@
@@ -11,11 +11,11 @@ FLG3 \x8c\x01 FLG2 \xd0\x84 FLG2_SET \x03|
 早桃\n　「でも！　おにいちゃん！」\
 
   
-FLG3 J\x0c FLG3_SET
+FLG1 J\x0c FLG1_SET
 WHAT .\\Data\\Script\\TextFunc.Fob RUNF Z\x02 \x02
 CMD1 TextOn RUNF \x88\x02 END
 CSCE SCE075_002 \xa4\x02 SCE_DONE 
-FLG3 \x8c\x01 FLG2 \xd4\x84 FLG2_SET \x03N
+FLG1 \x8c\x01 FLG2 \xd4\x84 FLG2_SET \x03N
  
 なたね\n　「いいのよ、虎菱くん」@
 \n　なたねが遮った。@
@@ -23,9 +23,9 @@ FLG3 \x8c\x01 FLG2 \xd4\x84 FLG2_SET \x03N
 早桃\n　「……」\
 
   
-FLG3 \xe8\x02\x0c FLG3_SET Z\x02 \x02 \x88\x02 END
+FLG1 \xe8\x02\x0c FLG1_SET Z\x02 \x02 \x88\x02 END
 CSCE SCE075_003 Z\x04 SCE_DONE 
-FLG3 \x8c\x01 FLG2 \xd8\x84 FLG2_SET \x03\xc1
+FLG1 \x8c\x01 FLG2 \xd8\x84 FLG2_SET \x03\xc1
  
 なたね\n　「便宜上『波動』と呼んでいるけれど、『波動』は、本来なら\n　　地球の言葉では定義できない存在なの。\pだから、一般的なエ\n　　ネルギーのように、一方から他方へ、直線的に飛ぶというも\n　　のではないの。\pそれ自身の意志で停滞したり、反射したり、\n　　逆流したり、屈折したり。\p秩序や法則はないの。\p無秩序。@
 　　完全なカオスだわ。\pだから、この先の場所みたいに自殺波動\n　　の密度が濃い場所というのが生まれることも－－」\w\n早桃\n　「要するにデタラメってことじゃない！\p　なんのルールもない\n　　ってことはつまり、全部あなたが思いつきでいってるってだ\n　　けでしょ！」@
@@ -33,9 +33,9 @@ FLG3 \x8c\x01 FLG2 \xd8\x84 FLG2_SET \x03\xc1
 早桃\n　「……え？」\
 
   
-FLG3 \x9e\x04\x0c FLG3_SET Z\x02 \x02 \x88\x02 END
+FLG1 \x9e\x04\x0c FLG1_SET Z\x02 \x02 \x88\x02 END
 CSCE SCE075_004 \xdc\x07 SCE_DONE 
-FLG3 \x8c\x01 FLG2 \xdc\x84 FLG2_SET \x03{
+FLG1 \x8c\x01 FLG2 \xdc\x84 FLG2_SET \x03{
  
 　なたねは「シェ\p・ル\p・タ\p・ー」と、ひとことひとことを区切っ\n　て言い返した。@
 \n拓司\n　「シェルターって……核シェルターとか……そのシェルターか\n　　？」@
@@ -44,9 +44,9 @@ FLG3 \x8c\x01 FLG2 \xdc\x84 FLG2_SET \x03{
 なたね\n　「正確に言うと、シェルターはまだ完成していないわ。\pただ、\n　　材料は全部そろえてある。\pこれだけの人数で突貫で作れば、\n　　１時間もかからずに完成すると思う」\
 
   
-FLG3  \x08\x0c FLG3_SET Z\x02 \x02 \x88\x02 END
+FLG1  \x08\x0c FLG1_SET Z\x02 \x02 \x88\x02 END
 CSCE SCE075_005 F\n SCE_DONE 
-FLG3 \x8c\x01 FLG2 \xe0\x84 FLG2_SET \x03]
+FLG1 \x8c\x01 FLG2 \xe0\x84 FLG2_SET \x03]
  
 拓司\n　「……まさか」@
 なたね\n　「４階の理科実験室。\p新実験室ができてから使われていないあ\n　　の教室に、サバイバルに必要な物資はすべてそろえてあるわ」\n　　\p拓司\n　「……冗談だろ？」@
@@ -55,9 +55,9 @@ FLG3 \x8c\x01 FLG2 \xe0\x84 FLG2_SET \x03]
 怒っている。\pそれまでの能面めいた無表情が嘘だったかのように、\nなたねは怒っていた。\
 
   
-FLG3 \x8a\n\x0c FLG3_SET Z\x02 \x02 \x88\x02 END
+FLG1 \x8a\n\x0c FLG1_SET Z\x02 \x02 \x88\x02 END
 CSCE SCE075_006 8\x0c SCE_DONE 
-FLG3 \x8c\x01 FLG2 \xe4\x84 FLG2_SET \x03\xc0
+FLG1 \x8c\x01 FLG2 \xe4\x84 FLG2_SET \x03\xc0
  
 なたね\n　「こんな非常事態に冗談なんて言うはずがないでしょうッ！@
 　　あなたは自覚しているの？！\p　私たちは生き残らなければな\n　　らないのよ！\p　生き残って最終決戦に備えなければならない\n　　の！\p　やつらと戦わなければならないの！\p　やつらは群でや\n　　ってくる！\p　最終決戦には地球上の戦士が集結する国を越え\n　　て人種を越えて思想を越えて主義を越えて性別を越えて集結\n　　して団結して戦って地球を守るために立ち上がる選ばれた戦\n　　士たちが私たちなの最終聖戦に選ばれたの私たちは！\p　それ\n　　なのにそれなのにッ！\p　虎菱くんは自覚が足りないッ！」@
@@ -65,9 +65,9 @@ FLG3 \x8c\x01 FLG2 \xe4\x84 FLG2_SET \x03\xc0
 \nなたね\n　「……質問はそれだけだったよね？」\
 
   
-FLG3 |\x0c\x0c FLG3_SET Z\x02 \x02 \x88\x02 END
+FLG1 |\x0c\x0c FLG1_SET Z\x02 \x02 \x88\x02 END
 CSCE SCE075_007 \xb6\x0f SCE_DONE 
-FLG3 \x8c\x01 FLG2 \xe8\x84 FLG2_SET \x03\x81
+FLG1 \x8c\x01 FLG2 \xe8\x84 FLG2_SET \x03\x81
  
 拓司\n　「……」@
 なたね\n　「さあ、虎菱くん。\pみんなで４階に戻りましょう。\p最終波動に\n　　そなえてシェルターを作らなければならないわ」@
@@ -77,11 +77,12 @@ FLG3 \x8c\x01 FLG2 \xe8\x84 FLG2_SET \x03\x81
 俺は……どうすればいい？\
 
   
-FLG3 \xfa\x0f\x0c FLG3_SET Z\x02 \x02 \x88\x02 END\x03!
+FLG1 \xfa\x0f\x0c FLG1_SET Z\x02 \x02 \x88\x02 END\x03!
 CHOICE
 なたねの言葉に従う。紅葉を見捨てて、シェルターに向かう\nなたね達をシェルターに向かわせて、自分だけ紅葉救出に向かう\n\l0,2,
 ENDCHOICE
 
   
-FLG3 8\x12\x0c FLG3_SET Z\x02 \x02 \x88\x02 END Z\x02 \x02
-CSCE TextClosev\x81\x1f\x02\x13 END6\xf1
+FLG1 8\x12\x0c FLG1_SET Z\x02 \x02 \x88\x02 END Z\x02 \x02
+CSCE TextClose CLOSE \x02\x13 END
+END_SCRIPT

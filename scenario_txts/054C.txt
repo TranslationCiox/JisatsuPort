@@ -1,7 +1,7 @@
-START
+START_SCRIPT
 +\x08\x01`B#\x01\xf4\x06
 CSCE SCE054_001 \x06 SCE_DONE 
-FLG3 \x8c\x01 FLG2 d FLG2_SET \x03\xb2
+FLG1 \x8c\x01 FLG2 d FLG2_SET \x03\xb2
  
 　冗談ではない。@
 　五分も待っているわけにはいかない。@
@@ -17,11 +17,11 @@ FLG3 \x8c\x01 FLG2 d FLG2_SET \x03\xb2
 　突入前から目星をつけていたほうきを掴んで、無我夢中で振り\n回す。\
 
   
-FLG3 J\x0c FLG3_SET
+FLG1 J\x0c FLG1_SET
 WHAT .\\Data\\Script\\TextFunc.Fob RUNF 2\x03 \x02
 CMD1 TextOn RUNF `\x03 END
 CSCE SCE054_002 |\x03 SCE_DONE 
-FLG3 \x8c\x01 FLG2 \x04d FLG2_SET \x03\x9a
+FLG1 \x8c\x01 FLG2 \x04d FLG2_SET \x03\x9a
  
 　一人、二人、三人、四人……@
 　突然、背後からのしかかられるような形で床に押し倒された。@
@@ -37,8 +37,9 @@ FLG3 \x8c\x01 FLG2 \x04d FLG2_SET \x03\x9a
 　静寂の中、バットが振り下ろされた。@
 \z
   
-FLG3 \xc0\x03\x0c FLG3_SET 2\x03 \x02 `\x03 END  
-FLG3 \xc8\x0c FLG3_SET
-FOBT .\\Data\\Script\\Bg.Fobsv\x81\x1f|\x06 \x02
-CMD2 BgAutoFadeInsv\x81\x1f\xa6\x06 END 2\x03 \x02
-CSCE TextClosev\x81\x1f\xd6\x06 END6\xf1
+FLG1 \xc0\x03\x0c FLG1_SET 2\x03 \x02 `\x03 END  
+FLG1 \xc8\x0c FLG1_SET
+FOBT .\\Data\\Script\\Bg.Fob OPEN |\x06 \x02
+CMD2 BgAutoFadeIn OPEN \xa6\x06 END 2\x03 \x02
+CSCE TextClose CLOSE \xd6\x06 END
+END_SCRIPT

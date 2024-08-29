@@ -1,10 +1,10 @@
-START
+START_SCRIPT
 l-\x01`B#\x014&  
-FLG3 \t\x01\x0c FLG3_SET
-FOBT .\\Data\\Script\\Bgm.Fobv\x81\x1f  \x02
+FLG1 \t\x01\x0c FLG1_SET
+FOBT .\\Data\\Script\\Bgm.Fob CLOSE   \x02
 CMD1 PlayCD RUNF J END
 CSCE SCE043_001 f SCE_DONE 
-FLG3 \x8c\x01 FLG2 \xd0R FLG2_SET \x03\x88
+FLG1 \x8c\x01 FLG2 \xd0R FLG2_SET \x03\x88
  
 　　屋上は一般学生の立ち入りが禁じられ、階段と屋上を繋ぐ鉄\n　の扉には錠が下ろされている。@
 　拓司が自由に出入りしているのは合い鍵を持っているからだ。@
@@ -15,11 +15,11 @@ FLG3 \x8c\x01 FLG2 \xd0R FLG2_SET \x03\x88
 　だから、あらゆる現実のあれこれから、切り離されるような気\n　がした。\p雲を眺めていると、勉強やら、親の再婚やらの嫌なこ\n　とは、全部忘れられた。\
 
   
-FLG3 \xaa\x0c FLG3_SET
+FLG1 \xaa\x0c FLG1_SET
 WHAT .\\Data\\Script\\TextFunc.Fob RUNF \xea\x02 \x02
 CMD1 TextOn RUNF \x18\x03 END
 CSCE SCE043_002 4\x03 SCE_DONE 
-FLG3 \x8c\x01 FLG2 \xd4R FLG2_SET \x03\x8e
+FLG1 \x8c\x01 FLG2 \xd4R FLG2_SET \x03\x8e
  
 　昔の話だ。@
 　いま、こうして見上げる雲には、『雲である』という意味しか\n　ない。@
@@ -32,9 +32,9 @@ FLG3 \x8c\x01 FLG2 \xd4R FLG2_SET \x03\x8e
 \n　－－紅葉の顔に浮かんだあの表情は、なんだったのだろう？\
 
   
-FLG3 x\x03\x0c FLG3_SET \xea\x02 \x02 \x18\x03 END
+FLG1 x\x03\x0c FLG1_SET \xea\x02 \x02 \x18\x03 END
 CSCE SCE043_003 \xea\x05 SCE_DONE 
-FLG3 \x8c\x01 FLG2 \xd8R FLG2_SET \x03\xe6
+FLG1 \x8c\x01 FLG2 \xd8R FLG2_SET \x03\xe6
  
 拓司は思った。@
 かつての拓司なら、その表情の中に、様々な意味を見いだしてい\nただろう。@
@@ -48,9 +48,9 @@ FLG3 \x8c\x01 FLG2 \xd8R FLG2_SET \x03\xe6
 \n－－そうとでも考えないと、あのキスは永遠に宙ぶらりんなまま\nだ。\
 
   
-FLG3 .\x06\x0c FLG3_SET \xea\x02 \x02 \x18\x03 END
+FLG1 .\x06\x0c FLG1_SET \xea\x02 \x02 \x18\x03 END
 CSCE SCE043_004 \n SCE_DONE 
-FLG3 \x8c\x01 FLG2 \xdcR FLG2_SET \x03\x9b
+FLG1 \x8c\x01 FLG2 \xdcR FLG2_SET \x03\x9b
  
 無意味の領域で朽ち果てていくには、あの瞬間は完璧すぎた。@
 完璧すぎるが故に、拓司はそこに縛り付けられたまま、どこにも\n行くことができないでいる。@
@@ -61,10 +61,10 @@ FLG3 \x8c\x01 FLG2 \xdcR FLG2_SET \x03\x9b
 驚いたが、それよりもまず、紅葉がこの秘密の場所に、自分たち\n以外の他人を連れてきたと言うことに怒りを禁じ得なかった。\
 
   
-FLG3 D\n\x0c FLG3_SET \xea\x02 \x02 \x18\x03 END  
-FLG3 \n\x01\x0c FLG3_SET   \x02 J END
+FLG1 D\n\x0c FLG1_SET \xea\x02 \x02 \x18\x03 END  
+FLG1 \n\x01\x0c FLG1_SET   \x02 J END
 CSCE SCE043_005 \x1e\r SCE_DONE 
-FLG3 \x8c\x01 FLG2 \xe0R FLG2_SET \x03T
+FLG1 \x8c\x01 FLG2 \xe0R FLG2_SET \x03T
  
 拓司\n　「……どういうことだ？」@
 \n低くいうと、紅葉はややたじろいだ様子だったが、すぐに女子学\n生が間に割って入った。@
@@ -76,9 +76,9 @@ FLG3 \x8c\x01 FLG2 \xe0R FLG2_SET \x03T
 拓司\n　「……？」\
 
   
-FLG3 b\r\x0c FLG3_SET \xea\x02 \x02 \x18\x03 END
+FLG1 b\r\x0c FLG1_SET \xea\x02 \x02 \x18\x03 END
 CSCE SCE043_006 \xec\x0e SCE_DONE 
-FLG3 \x8c\x01 FLG2 \xe4R FLG2_SET \x03]
+FLG1 \x8c\x01 FLG2 \xe4R FLG2_SET \x03]
  
 女子学生\n　「……ふう。\pはっきり言わないとわかんないかなあ？\p　あのね\n　　幼なじみの女の子は、無条件に相手の男に密かな恋心抱いて\n　　るとかって、オタクマンガみたいなコト、都合良く考えてな\n　　い？」@
 拓司\n　「－－紅葉」@
@@ -87,9 +87,9 @@ FLG3 \x8c\x01 FLG2 \xe4R FLG2_SET \x03]
 紅葉\n　「……」\
 
   
-FLG3 0\x0f\x0c FLG3_SET \xea\x02 \x02 \x18\x03 END
+FLG1 0\x0f\x0c FLG1_SET \xea\x02 \x02 \x18\x03 END
 CSCE SCE043_007 \xde\x10 SCE_DONE 
-FLG3 \x8c\x01 FLG2 \xe8R FLG2_SET \x03U
+FLG1 \x8c\x01 FLG2 \xe8R FLG2_SET \x03U
  
 女子学生\n　「－－最低！」@
 女子学生\n　「やめろよ、虎菱！」@
@@ -100,9 +100,9 @@ FLG3 \x8c\x01 FLG2 \xe8R FLG2_SET \x03U
 女子学生\n　「あ～、勘違い男は怖い怖い」\
 
   
-FLG3 "\x11\x0c FLG3_SET \xea\x02 \x02 \x18\x03 END
+FLG1 "\x11\x0c FLG1_SET \xea\x02 \x02 \x18\x03 END
 CSCE SCE043_008 \xb0\x12 SCE_DONE 
-FLG3 \x8c\x01 FLG2 \xecR FLG2_SET \x03\xa6
+FLG1 \x8c\x01 FLG2 \xecR FLG2_SET \x03\xa6
  
 女子学生\n　「最近多いんだよ、幼なじみとか妹とか年下とか、そういう設\n　　定に依存しないと恋愛できないヤツ。\p要するに、自分に自信\n　　がない。\p立場が低い女の前でしかアイデンティティが保てな\n　　い、と」@
 拓司\n　「黙れッ！」@
@@ -111,9 +111,9 @@ FLG3 \x8c\x01 FLG2 \xecR FLG2_SET \x03\xa6
 \n拓司\n　「紅葉。\pどういうことか説明してくれ」\
 
   
-FLG3 \xf4\x12\x0c FLG3_SET \xea\x02 \x02 \x18\x03 END
+FLG1 \xf4\x12\x0c FLG1_SET \xea\x02 \x02 \x18\x03 END
 CSCE SCE043_009 \xc6\x15 SCE_DONE 
-FLG3 \x8c\x01 FLG2 \xf0R FLG2_SET \x03z
+FLG1 \x8c\x01 FLG2 \xf0R FLG2_SET \x03z
  
 紅葉\n　「いいよ」@
 \nついに、紅葉が口を開いた。@
@@ -122,10 +122,10 @@ FLG3 \x8c\x01 FLG2 \xf0R FLG2_SET \x03z
 　　そういうこともあってさ、しかも今日、お弁当がどうのこう\n　　のとかいわれちゃって、ほんと困っちゃって。\pいい機会だか\n　　ら、ここらへんではっきりさせておこうと思って。\pそういう\n　　こと」\
 
   
-FLG3 \n\x16\x0c FLG3_SET \xea\x02 \x02 \x18\x03 END   \x02
+FLG1 \n\x16\x0c FLG1_SET \xea\x02 \x02 \x18\x03 END   \x02
 CMD1 StopCD RUNF 8\x18 END
 CSCE SCE043_010 T\x18 SCE_DONE 
-FLG3 \x8c\x01 FLG2 \xf4R FLG2_SET \x03`
+FLG1 \x8c\x01 FLG2 \xf4R FLG2_SET \x03`
  
 紅葉のいいかたは一方的で、とりつく島がなかった。@
 なにか得意げというか、勝ち誇ったような響きすらある。@
@@ -136,17 +136,17 @@ FLG3 \x8c\x01 FLG2 \xf4R FLG2_SET \x03`
 \n拓司\n　「……わかった」@
 \z
   
-FLG3 \x98\x18\x0c FLG3_SET \xea\x02 \x02 \x18\x03 END
+FLG1 \x98\x18\x0c FLG1_SET \xea\x02 \x02 \x18\x03 END
 CSCE SCE043_011 R\x1a SCE_DONE 
-FLG3 \x8c\x01 FLG2 \xf8R FLG2_SET \x034
+FLG1 \x8c\x01 FLG2 \xf8R FLG2_SET \x034
  
 そういうしかなかった。\pリバーシで、角を取られるとわかってい\nながらもおかなければならない石。\pパスはない。@
 石がおける場合は、置かなければならない。\pそういう状況に、追\nい込まれてしまったのだ。\
 
   
-FLG3 \x96\x1a\x0c FLG3_SET \xea\x02 \x02 \x18\x03 END
+FLG1 \x96\x1a\x0c FLG1_SET \xea\x02 \x02 \x18\x03 END
 CSCE SCE043_012 \xa0\x1b SCE_DONE 
-FLG3 \x8c\x01 FLG2 \xfcR FLG2_SET \x03:
+FLG1 \x8c\x01 FLG2 \xfcR FLG2_SET \x03:
  
 拓司\n　「わかった。もうお前とは一切関わらない」@
 女子学生\n　「あのさー、トラビシ。\p逆恨みすんなよ、紅葉がかわいそうだ\n　　から」@
@@ -154,20 +154,20 @@ FLG3 \x8c\x01 FLG2 \xfcR FLG2_SET \x03:
 女子学生\n　「－－行こう、紅葉？」\
 
   
-FLG3 \xe4\x1b\x0c FLG3_SET \xea\x02 \x02 \x18\x03 END  
-FLG3 \xc8\x0c FLG3_SET
-FOBT .\\Data\\Script\\Bg.Fobsv\x81\x1f \x1d \x02
-CMD2 BgAutoFadeInsv\x81\x1fJ\x1d END
+FLG1 \xe4\x1b\x0c FLG1_SET \xea\x02 \x02 \x18\x03 END  
+FLG1 \xc8\x0c FLG1_SET
+FOBT .\\Data\\Script\\Bg.Fob OPEN  \x1d \x02
+CMD2 BgAutoFadeIn OPEN J\x1d END
 CSCE SCE043_013 n\x1d SCE_DONE 
-FLG3 \x8c\x01 FLG2 S FLG2_SET \x03J
+FLG1 \x8c\x01 FLG2 S FLG2_SET \x03J
  
 そんな言葉を聞きながら、拓司はコンクリートの地面をじっと見\nつめて、紅葉たちが去るのを待った。@
 打ちのめされた気分だった。\pプライドはずたずたに引き裂かれ、\n泥まみれになっていた。\pこのところなかったほどのリアルな痛み\nが胸を充たしていたが、いまはそれも、とても歓迎できそうもな\nい。\
 
   
-FLG3 \xb2\x1d\x0c FLG3_SET \xea\x02 \x02 \x18\x03 END
+FLG1 \xb2\x1d\x0c FLG1_SET \xea\x02 \x02 \x18\x03 END
 CSCE SCE043_014 \x14\x1f SCE_DONE 
-FLG3 \x8c\x01 FLG2 \x04S FLG2_SET \x03\x93
+FLG1 \x8c\x01 FLG2 \x04S FLG2_SET \x03\x93
  
 しかし紅葉たちの気配は、なかなか消えなかった。@
 \n女子学生\n　「－－紅葉？」@
@@ -177,9 +177,9 @@ FLG3 \x8c\x01 FLG2 \x04S FLG2_SET \x03\x93
 さきほど教室でみせた、あの複雑な表情が－－相反する二つの感\n情がせめぎ合っているような……怯えと期待、罪悪感と爽快感、\n悲しみと喜び、そんなものが現れては消え、消えてはまた浮かび\n上がる、あの表情が張り付いている。\
 
   
-FLG3 X\x1f\x0c FLG3_SET \xea\x02 \x02 \x18\x03 END
+FLG1 X\x1f\x0c FLG1_SET \xea\x02 \x02 \x18\x03 END
 CSCE SCE043_015 \xde! SCE_DONE 
-FLG3 \x8c\x01 FLG2 \x08S FLG2_SET \x03}
+FLG1 \x8c\x01 FLG2 \x08S FLG2_SET \x03}
  
 女子学生のひとりが、奇妙な空気を振り払うようにいった。@
 \n女子学生\n　「……あ、あんたが、ああいういい方するから、紅葉、困って\n　　るじゃない！」@
@@ -190,9 +190,9 @@ FLG3 \x8c\x01 FLG2 \x08S FLG2_SET \x03}
 \n気まずい沈黙を破ったのは、紅葉だった。\
 
   
-FLG3 ""\x0c FLG3_SET \xea\x02 \x02 \x18\x03 END
+FLG1 ""\x0c FLG1_SET \xea\x02 \x02 \x18\x03 END
 CSCE SCE043_016 P$ SCE_DONE 
-FLG3 \x8c\x01 FLG2 \x0cS FLG2_SET \x03O
+FLG1 \x8c\x01 FLG2 \x0cS FLG2_SET \x03O
  
 紅葉\n　「……行こう」@
 /*■黒　表示（クロスフェード）*/\a7,-2,-2,0,\a0,200,2,0,\a6,-2,0,0,\nそういって紅葉はきびすを返し、屋上の扉をくぐって姿を消した@
@@ -201,5 +201,6 @@ FLG3 \x8c\x01 FLG2 \x0cS FLG2_SET \x03O
 そうして拓司はひとり、奇妙な空白の中にとりのこされた。\
 
   
-FLG3 \x94$\x0c FLG3_SET \xea\x02 \x02 \x18\x03 END \xea\x02 \x02
-CSCE TextClosev\x81\x1f\x16& END6\xf1
+FLG1 \x94$\x0c FLG1_SET \xea\x02 \x02 \x18\x03 END \xea\x02 \x02
+CSCE TextClose CLOSE \x16& END
+END_SCRIPT

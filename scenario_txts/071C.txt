@@ -1,7 +1,7 @@
-START
+START_SCRIPT
 \xf8\x05\x01\xa4\t3\x01\xcc\x03
 CSCE SCE071_001 \x06 SCE_DONE 
-FLG3 \x8c\x01 FLG2 \x90~ FLG2_SET \x03o
+FLG1 \x8c\x01 FLG2 \x90~ FLG2_SET \x03o
  
 拓司たちは２階の渡り廊下を目指して駆けた。@
 しかし、渡り廊下まであとわずか、というところでなたねが立ち\n止まって鋭く叫んだ。@
@@ -12,7 +12,7 @@ FLG3 \x8c\x01 FLG2 \x90~ FLG2_SET \x03o
 ただ、別のコースを選ぶといっても、ここからではひどく遠回り\nな道しか残されていない。\
 
   
-FLG3 J\x0c FLG3_SET
+FLG1 J\x0c FLG1_SET
 WHAT .\\Data\\Script\\TextFunc.Fob RUNF &\x02 \x02
 CMD1 TextOn RUNF T\x02 END\x03>
 CHOICE
@@ -20,5 +20,6 @@ CHOICE
 ENDCHOICE
 
   
-FLG3 p\x02\x0c FLG3_SET &\x02 \x02 T\x02 END &\x02 \x02
-CSCE TextClosev\x81\x1f\xae\x03 END6\xf1
+FLG1 p\x02\x0c FLG1_SET &\x02 \x02 T\x02 END &\x02 \x02
+CSCE TextClose CLOSE \xae\x03 END
+END_SCRIPT

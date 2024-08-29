@@ -1,13 +1,13 @@
-START
+START_SCRIPT
 e+\x01`B#\x01\xf4$  
-FLG3 \x05\x01\x0c FLG3_SET
-FOBT .\\Data\\Script\\Bgm.Fobv\x81\x1f  \x02
+FLG1 \x05\x01\x0c FLG1_SET
+FOBT .\\Data\\Script\\Bgm.Fob CLOSE   \x02
 CMD1 PlayCD RUNF J END  
-FLG3 Q\x0c FLG3_SET
-FOBT .\\Data\\Script\\Bg.Fobsv\x81\x1f\x80 \x02
-CMD2 BgAutoFadeInsv\x81\x1f\xaa END
+FLG1 Q\x0c FLG1_SET
+FOBT .\\Data\\Script\\Bg.Fob OPEN \x80 \x02
+CMD2 BgAutoFadeIn OPEN \xaa END
 CSCE SCE032_001 \xce SCE_DONE 
-FLG3 \x8c\x01 FLG2 \xa0A FLG2_SET \x03\xc8
+FLG1 \x8c\x01 FLG2 \xa0A FLG2_SET \x03\xc8
  
 組み伏したカンナの身体は、どこか冷たかった。@
 ぐにゃりと柔らかい、肉の塊。@
@@ -24,11 +24,11 @@ FLG3 \x8c\x01 FLG2 \xa0A FLG2_SET \x03\xc8
 それをつまみ上げるたびに、ひく、ひくと、ペ○スを包む肉が収縮\nする。\
 
   
-FLG3 \x12\x01\x0c FLG3_SET
+FLG1 \x12\x01\x0c FLG1_SET
 WHAT .\\Data\\Script\\TextFunc.Fob RUNF R\x04 \x02
 CMD1 TextOn RUNF \x80\x04 END
 CSCE SCE032_002 \x9c\x04 SCE_DONE 
-FLG3 \x8c\x01 FLG2 \xa4A FLG2_SET \x03\x88
+FLG1 \x8c\x01 FLG2 \xa4A FLG2_SET \x03\x88
  
 そのどれもが、『生きている』肉体の反応だ。@
 しかし、それでもなお、生々しさが足りない。@
@@ -41,9 +41,9 @@ FLG3 \x8c\x01 FLG2 \xa4A FLG2_SET \x03\x88
 まるで実験動物を観察するように、拓司の顔をのぞき込んでいる。\n\p恥ずかしさとも怒りともつかぬ激情で、頭にカッと血が上る。\
 
   
-FLG3 \xe0\x04\x0c FLG3_SET R\x04 \x02 \x80\x04 END
+FLG1 \xe0\x04\x0c FLG1_SET R\x04 \x02 \x80\x04 END
 CSCE SCE032_003 :\x07 SCE_DONE 
-FLG3 \x8c\x01 FLG2 \xa8A FLG2_SET \x03w
+FLG1 \x8c\x01 FLG2 \xa8A FLG2_SET \x03w
  
 拓司\n　「……こんなに濡れて締め付けておいて……気取るな……」@
 カンナ\n　「気取ってなんかいないわ。気持ちいいわよ、すごく。@
@@ -53,9 +53,9 @@ FLG3 \x8c\x01 FLG2 \xa8A FLG2_SET \x03w
 拓司\n　「うるさい、黙れッ！」\
 
   
-FLG3 ~\x07\x0c FLG3_SET R\x04 \x02 \x80\x04 END
+FLG1 ~\x07\x0c FLG1_SET R\x04 \x02 \x80\x04 END
 CSCE SCE032_004 \x94\t SCE_DONE 
-FLG3 \x8c\x01 FLG2 \xacA FLG2_SET \x03z
+FLG1 \x8c\x01 FLG2 \xacA FLG2_SET \x03z
  
 叫んで拓司は、カンナの手首を覆っている包帯を引きちぎった。@
 真っ白な手首に、幾条もの痛々しい傷跡が走っている。@
@@ -67,9 +67,9 @@ FLG3 \x8c\x01 FLG2 \xacA FLG2_SET \x03z
 拓司\n　「……ちっ」\
 
   
-FLG3 \xd8\t\x0c FLG3_SET R\x04 \x02 \x80\x04 END
+FLG1 \xd8\t\x0c FLG1_SET R\x04 \x02 \x80\x04 END
 CSCE SCE032_005 \xfa\x0b SCE_DONE 
-FLG3 \x8c\x01 FLG2 \xb0A FLG2_SET \x03\xad
+FLG1 \x8c\x01 FLG2 \xb0A FLG2_SET \x03\xad
  
 カンナの頭の横に、スカートのポケットに入っていた小物類がまと\nめて置かれている。\pその中から拓司は、パスケースを選んで取り上\nげた。\pぱらりと開くと学生証を挟み込む透明なビニールの部分に、\nそれが入っている。@
 夏の日差しを鈍く照り返す、ステンレスの薄い板。@
@@ -80,9 +80,9 @@ FLG3 \x8c\x01 FLG2 \xb0A FLG2_SET \x03\xad
 いままでまったく感じられなかった、生々しいいきものの脈動が、\nある……。\
 
   
-FLG3 >\x0c\x0c FLG3_SET R\x04 \x02 \x80\x04 END
+FLG1 >\x0c\x0c FLG1_SET R\x04 \x02 \x80\x04 END
 CSCE SCE032_006 ,\x0f SCE_DONE 
-FLG3 \x8c\x01 FLG2 \xb4A FLG2_SET \x03\x89
+FLG1 \x8c\x01 FLG2 \xb4A FLG2_SET \x03\x89
  
 カンナ\n　「……はあ……はあ……」@
 \n青白いカンナの頬に、赤い血の色がさしている。@
@@ -96,9 +96,9 @@ FLG3 \x8c\x01 FLG2 \xb4A FLG2_SET \x03\x89
 先ほどまでとなんら変わることのないその運動に、果たしてカンナ\nは、今度は身をよじらせて反応した。\
 
   
-FLG3 p\x0f\x0c FLG3_SET R\x04 \x02 \x80\x04 END
+FLG1 p\x0f\x0c FLG1_SET R\x04 \x02 \x80\x04 END
 CSCE SCE032_007 \xce\x11 SCE_DONE 
-FLG3 \x8c\x01 FLG2 \xb8A FLG2_SET \x03\x9a
+FLG1 \x8c\x01 FLG2 \xb8A FLG2_SET \x03\x9a
  
 カンナ\n　「あいっ……い、いじわるしな……いで……ひっ……早く眼を…\n　　…眼を潰して……！」@
 拓司\n　「ふふ……カンナの顔。\pすごく生き生きしてる。\pまるで生きて\n　　いる人間みたいだ」@
@@ -110,9 +110,9 @@ FLG3 \x8c\x01 FLG2 \xb8A FLG2_SET \x03\x9a
 カンナが自ら視覚を封じたのを確認してから、拓司はカンナの右\n手首を捧げ持った。\pそこに剃刀の刃をぴたりとあてがう。\
 
   
-FLG3 \x12\x12\x0c FLG3_SET R\x04 \x02 \x80\x04 END
+FLG1 \x12\x12\x0c FLG1_SET R\x04 \x02 \x80\x04 END
 CSCE SCE032_008 \xb4\x14 SCE_DONE 
-FLG3 \x8c\x01 FLG2 \xbcA FLG2_SET \x03\x88
+FLG1 \x8c\x01 FLG2 \xbcA FLG2_SET \x03\x88
  
 拓司\n　「……どうだ？　感じるか？」@
 カンナ\n　「……早く……」@
@@ -127,9 +127,9 @@ FLG3 \x8c\x01 FLG2 \xbcA FLG2_SET \x03\x88
 自殺ゲーム。\
 
   
-FLG3 \xf8\x14\x0c FLG3_SET R\x04 \x02 \x80\x04 END
+FLG1 \xf8\x14\x0c FLG1_SET R\x04 \x02 \x80\x04 END
 CSCE SCE032_009 R\x17 SCE_DONE 
-FLG3 \x8c\x01 FLG2 \xc0A FLG2_SET \x03\xa6
+FLG1 \x8c\x01 FLG2 \xc0A FLG2_SET \x03\xa6
  
 \nだくだくと血が流れ出した。@
 出る。@
@@ -146,9 +146,9 @@ FLG3 \x8c\x01 FLG2 \xc0A FLG2_SET \x03\xa6
 　　これはまずいかもしれないぜ？」\
 
   
-FLG3 \x96\x17\x0c FLG3_SET R\x04 \x02 \x80\x04 END
+FLG1 \x96\x17\x0c FLG1_SET R\x04 \x02 \x80\x04 END
 CSCE SCE032_010 h\x1a SCE_DONE 
-FLG3 \x8c\x01 FLG2 \xc4A FLG2_SET \x03\x95
+FLG1 \x8c\x01 FLG2 \xc4A FLG2_SET \x03\x95
  
 大げさにいいながら拓司は改めてカンナの両足を脇に抱え、一気\nにペ○スを奥深くまで突き入れた。@
 ぶちゅ、ぶちゅ……と、淫猥な音が結合部から漏れる。@
@@ -160,9 +160,9 @@ FLG3 \x8c\x01 FLG2 \xc4A FLG2_SET \x03\x95
 カンナ\n　「すごい……すごく出ていく……きれいに……」\
 
   
-FLG3 \xac\x1a\x0c FLG3_SET R\x04 \x02 \x80\x04 END
+FLG1 \xac\x1a\x0c FLG1_SET R\x04 \x02 \x80\x04 END
 CSCE SCE032_011 :\x1d SCE_DONE 
-FLG3 \x8c\x01 FLG2 \xc8A FLG2_SET \x03\x90
+FLG1 \x8c\x01 FLG2 \xc8A FLG2_SET \x03\x90
  
 拓司のなかで、なにかが唐突に爆発した。@
 胸の底で沸騰しているドロドロしたものがぼっと火柱を上げた。@
@@ -178,9 +178,9 @@ FLG3 \x8c\x01 FLG2 \xc8A FLG2_SET \x03\x90
 カンナに気づかれないようそれに手を伸ばし、そして……\
 
   
-FLG3 ~\x1d\x0c FLG3_SET R\x04 \x02 \x80\x04 END
+FLG1 ~\x1d\x0c FLG1_SET R\x04 \x02 \x80\x04 END
 CSCE SCE032_012 \xf8\x1f SCE_DONE 
-FLG3 \x8c\x01 FLG2 \xccA FLG2_SET \x03\xab
+FLG1 \x8c\x01 FLG2 \xccA FLG2_SET \x03\xab
  
 \n/*■CG73　表示（ノンエフェクト）*//*■HCG11　表示（ノンエフェクト）*/\a7,-1,-1,0,\a1,1,202,82,\a6,0,0,0,喉に当てる@
 /*■CG73　表示（ノンエフェクト） *//*■HCG11　表示（ノンエフェクト）*/\a7,-1,-1,0,\a1,1,202,82,\a6,0,0,0,\n横に引く。\pスッとすべらせる。@
@@ -195,18 +195,19 @@ FLG3 \x8c\x01 FLG2 \xccA FLG2_SET \x03\xab
 死ぬぞ！\
 
   
-FLG3 < \x0c FLG3_SET R\x04 \x02 \x80\x04 END
+FLG1 < \x0c FLG1_SET R\x04 \x02 \x80\x04 END
 CSCE SCE032_013 "# SCE_DONE 
-FLG3 \x8c\x01 FLG2 \xd0A FLG2_SET \x03\x17
+FLG1 \x8c\x01 FLG2 \xd0A FLG2_SET \x03\x17
  
 \nザザザ……ザザッ……\pザアザザザ……@
 ザアアアアア……ザアザアアアアアアア……\
 
   
-FLG3 f#\x0c FLG3_SET R\x04 \x02 \x80\x04 END R\x04 \x02
-CMD2 TextWindowOffv\x81\x1f\x08$ END   \x02
+FLG1 f#\x0c FLG1_SET R\x04 \x02 \x80\x04 END R\x04 \x02
+CMD2 TextWindowOff CLOSE \x08$ END   \x02
 CMD1 StopCD RUNF 8$ END  
-FLG3 \xc8\x0c FLG3_SET \x80 \x02
-CMD1 BgOnsv\x81\x1fz$ END R\x04 \x02
+FLG1 \xc8\x0c FLG1_SET \x80 \x02
+CMD1 BgOn OPEN z$ END R\x04 \x02
 LOAD TextWindowOnDirect RUNF \xa2$ END R\x04 \x02
-CSCE TextClosev\x81\x1f\xd6$ END6\xf1
+CSCE TextClose CLOSE \xd6$ END
+END_SCRIPT

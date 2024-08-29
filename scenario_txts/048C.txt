@@ -1,12 +1,12 @@
-START
+START_SCRIPT
 \x8b-\x01`B#\x01,'
 HERO .\\Data\\Script\\Scenario\\048SubC.Fob RUNF \x06 \x02
-CMD1 startv\x81\x1f< END  
-FLG3 <\x0c FLG3_SET
+CMD1 start CLOSE < END  
+FLG1 <\x0c FLG1_SET
 WHAT .\\Data\\Script\\TextFunc.fob RUNF r \x02
-CSCE WaitTimesv\x81\x1f\xa0 END
+CSCE WaitTime OPEN \xa0 END
 CSCE SCE048_020 \xc0 SCE_DONE 
-FLG3 \x8c\x01 FLG2 \xecZ FLG2_SET \x03\xce
+FLG1 \x8c\x01 FLG2 \xecZ FLG2_SET \x03\xce
  
 御堂\n　「おい、柏木。\pお前なにやってんだよ……？」@
 \n/*■CG19　表示（ノンエフェクト）↑のCG表示にあわせられるとヨシ！*/\a7,-1,-1,0,\a0,18,1,0,/*▲BGM　Track11　再生*/\a2,-1,11,1,\a6,0,0,0,　全員が呆気にとられた顔で御堂を見やり、それから御堂の視線\nの先へと顔を移動させた。@
@@ -16,11 +16,11 @@ FLG3 \x8c\x01 FLG2 \xecZ FLG2_SET \x03\xce
 　柏木は御堂に付き従うことで自分の居場所をアピールしてきた\nような男で、男子学生からは『つまらない男』としか評価されて\nいなかったし、女子学生からは『御堂の取り巻きのひとり』とし\nか評価されていなかった。\pつまり、柏木という男には、なんの\n主体性もなかった。\p彼は完璧な脇役であり、別の主役なしでは舞\n台に存在していられない。\pそんな男だった。\
 
   
-FLG3 \x04\x01\x0c FLG3_SET
+FLG1 \x04\x01\x0c FLG1_SET
 WHAT .\\Data\\Script\\TextFunc.Fob RUNF \\\x04 \x02
 CMD1 TextOn RUNF \x8a\x04 END
 CSCE SCE048_021 \xa6\x04 SCE_DONE 
-FLG3 \x8c\x01 FLG2 \xf0Z FLG2_SET \x03\x9c
+FLG1 \x8c\x01 FLG2 \xf0Z FLG2_SET \x03\x9c
  
 　その柏木が、主役となっていた。@
 　トイレ中の注目を一身に浴びていた。@
@@ -36,9 +36,9 @@ FLG3 \x8c\x01 FLG2 \xf0Z FLG2_SET \x03\x9c
 　シャープペンが突き刺さった耳の穴からは、どす黒い血がたら\n　たらと滝のようにあふれ出している。\
 
   
-FLG3 \xea\x04\x0c FLG3_SET \\\x04 \x02 \x8a\x04 END
+FLG1 \xea\x04\x0c FLG1_SET \\\x04 \x02 \x8a\x04 END
 CSCE SCE048_022 \x94\x07 SCE_DONE 
-FLG3 \x8c\x01 FLG2 \xf4Z FLG2_SET \x03J
+FLG1 \x8c\x01 FLG2 \xf4Z FLG2_SET \x03J
  
 柏木\n　「おれ的にすげえ、つらい！」@
 \n　柏木の眼から、ほろほろと涙があふれ出した。@
@@ -47,9 +47,9 @@ FLG3 \x8c\x01 FLG2 \xf4Z FLG2_SET \x03J
 \n　柏木はいいながら、シャープペンのヘッドをカチカチカチカチ\n　とノックした。\
 
   
-FLG3 \xd8\x07\x0c FLG3_SET \\\x04 \x02 \x8a\x04 END
+FLG1 \xd8\x07\x0c FLG1_SET \\\x04 \x02 \x8a\x04 END
 CSCE SCE048_023 :\t SCE_DONE 
-FLG3 \x8c\x01 FLG2 \xf8Z FLG2_SET \x03]
+FLG1 \x8c\x01 FLG2 \xf8Z FLG2_SET \x03]
  
 柏木\n　「おれれれれれれれれれれれ」@
 \n　カチカチカチカチカチカチカチ。@
@@ -58,9 +58,9 @@ FLG3 \x8c\x01 FLG2 \xf8Z FLG2_SET \x03]
 \n御堂\n　「芯だよ……」\
 
   
-FLG3 ~\t\x0c FLG3_SET \\\x04 \x02 \x8a\x04 END
+FLG1 ~\t\x0c FLG1_SET \\\x04 \x02 \x8a\x04 END
 CSCE SCE048_024 ,\x0b SCE_DONE 
-FLG3 \x8c\x01 FLG2 \xfcZ FLG2_SET \x03\xa0
+FLG1 \x8c\x01 FLG2 \xfcZ FLG2_SET \x03\xa0
  
 \n　御堂の声は、間抜けな冗談のように響いた。@
 　芯だよ。@
@@ -74,9 +74,9 @@ FLG3 \x8c\x01 FLG2 \xfcZ FLG2_SET \x03\xa0
 　おれたちは呆然とそんな柏木の泣き笑いを見守っていたが、や\n　がて\
 
   
-FLG3 p\x0b\x0c FLG3_SET \\\x04 \x02 \x8a\x04 END
+FLG1 p\x0b\x0c FLG1_SET \\\x04 \x02 \x8a\x04 END
 CSCE SCE048_025 *\x0e SCE_DONE 
-FLG3 \x8c\x01 FLG2 [ FLG2_SET \x03\xb7
+FLG1 \x8c\x01 FLG2 [ FLG2_SET \x03\xb7
  
 柏木\n　「いてえ」@
 \n　柏木がぽつりとつぶやいた。@
@@ -91,9 +91,9 @@ FLG3 \x8c\x01 FLG2 [ FLG2_SET \x03\xb7
 　あとには拓司となたね、そして柏木の死体だけが残された。\
 
   
-FLG3 n\x0e\x0c FLG3_SET \\\x04 \x02 \x8a\x04 END
+FLG1 n\x0e\x0c FLG1_SET \\\x04 \x02 \x8a\x04 END
 CSCE SCE048_026 \x84\x11 SCE_DONE 
-FLG3 \x8c\x01 FLG2 \x04[ FLG2_SET \x03\x9c
+FLG1 \x8c\x01 FLG2 \x04[ FLG2_SET \x03\x9c
  
 なたね\n　「……始まったのね」@
 拓司\n　「え？」@
@@ -105,9 +105,9 @@ FLG3 \x8c\x01 FLG2 \x04[ FLG2_SET \x03\x9c
 拓司は慌てて背を向けた。\pいままでさんざん陵辱現場を見ておい\nていまさらという気もしたが、そうするのが礼儀のような気がし\nた。\
 
   
-FLG3 \xc8\x11\x0c FLG3_SET \\\x04 \x02 \x8a\x04 END
+FLG1 \xc8\x11\x0c FLG1_SET \\\x04 \x02 \x8a\x04 END
 CSCE SCE048_027 r\x14 SCE_DONE 
-FLG3 \x8c\x01 FLG2 \x08[ FLG2_SET \x03w
+FLG1 \x8c\x01 FLG2 \x08[ FLG2_SET \x03w
  
 拓司\n　「だ、大丈夫かい？」@
 なたね\n　「……。始まったのね」@
@@ -118,9 +118,9 @@ FLG3 \x8c\x01 FLG2 \x08[ FLG2_SET \x03w
 　チカセンコウガタシンリャクセイブツヘイキ、となたねは厳し\n　く言い直した。\p正確にいうのといわないのとでは、そこに大き\n　な違いがあるとでもいいたそうな口調だ。\
 
   
-FLG3 \xb6\x14\x0c FLG3_SET \\\x04 \x02 \x8a\x04 END
+FLG1 \xb6\x14\x0c FLG1_SET \\\x04 \x02 \x8a\x04 END
 CSCE SCE048_028 \xcc\x16 SCE_DONE 
-FLG3 \x8c\x01 FLG2 \x0c[ FLG2_SET \x03\xc5
+FLG1 \x8c\x01 FLG2 \x0c[ FLG2_SET \x03\xc5
  
 なたね\n　「４６億年前、やつらは地球の地下にいくつもの『シード』を埋\n　　め込んだの。\pやがて人類が宇宙に進出するときがきて……実\n　　際、いまがそのときなんだけれど……そのときに人類が『適\n　　格』でないと判断されたら、『シード』は目覚め、人類完殺\n　　の兵器として稼動し始めるの。\pこれは聖書とか様々な文献に\n　　終末とか悪魔とかいう形で明記されている厳然たる事実なの」\n　　@
 拓司\n　「……」@
@@ -128,9 +128,9 @@ FLG3 \x8c\x01 FLG2 \x0c[ FLG2_SET \x03\xc5
 \nなたね\n　「これは明白に、第四種生物兵器『ビッグ・エンケリュス』の\n　　攻撃だわ。\p『ビッグ・エンケリュス』は地下から波動を送る\n　　の。\p自殺波動。この波動にシンクロしてしまった人間は、自\n　　殺こそが幸福へ至る道だと信じ込んで……彼のように自殺し\n　　てしまうの」\
 
   
-FLG3 \x10\x17\x0c FLG3_SET \\\x04 \x02 \x8a\x04 END
+FLG1 \x10\x17\x0c FLG1_SET \\\x04 \x02 \x8a\x04 END
 CSCE SCE048_029 ^\x1a SCE_DONE 
-FLG3 \x8c\x01 FLG2 \x10[ FLG2_SET \x03\xbb
+FLG1 \x8c\x01 FLG2 \x10[ FLG2_SET \x03\xbb
  
 拓司\n　「……自殺波動？」@
 なたね\n　「そう！　波動よ！　エンケリュスムサベツエンカクジサツハ\n　　ドウコウゲキ！」@
@@ -139,9 +139,9 @@ FLG3 \x8c\x01 FLG2 \x10[ FLG2_SET \x03\xbb
 　　あのね、私、円盤のなかで立体映像を見せられたの！\p　ぬら\n　　ぬらとしていて、黒くて、とてもいやらしくて汚らしい形を\n　　しているの！\p　全長２０キロ！\p　質量は自由に変化させられる\n　　からよくわからないけれど、地中を自由に移動して人類を殺\n　　す究極の侵略兵器で、あなたにはわからないけど私にはわか\n　　るのよ！　なぜなら……」\
 
   
-FLG3 \xa2\x1a\x0c FLG3_SET \\\x04 \x02 \x8a\x04 END
+FLG1 \xa2\x1a\x0c FLG1_SET \\\x04 \x02 \x8a\x04 END
 CSCE SCE048_030 \xc8\x1d SCE_DONE 
-FLG3 \x8c\x01 FLG2 \x14[ FLG2_SET \x03D
+FLG1 \x8c\x01 FLG2 \x14[ FLG2_SET \x03D
  
 拓司\n　「雲居さん！」@
 \n　拓司はなたねを制した。\p聞いていると自分までおかしくなって\n　しまいそうだ。@
@@ -150,9 +150,9 @@ FLG3 \x8c\x01 FLG2 \x14[ FLG2_SET \x03D
 拓司\n　「……」\
 
   
-FLG3 \x0c\x1e\x0c FLG3_SET \\\x04 \x02 \x8a\x04 END
+FLG1 \x0c\x1e\x0c FLG1_SET \\\x04 \x02 \x8a\x04 END
 CSCE SCE048_031 V\x1f SCE_DONE 
-FLG3 \x8c\x01 FLG2 \x18[ FLG2_SET \x03\xc5
+FLG1 \x8c\x01 FLG2 \x18[ FLG2_SET \x03\xc5
  
 なたね\n　「エンケリュスは私の身体の中に、たくさんいやらしい液を流\n　　し込んだの。\p気持ち悪かった。\p私をレイプしたのは、正確に\n　　言うと宇宙人じゃなくてエンケリュス。\pいま、わかったこと\n　　だけど。\pエンケリュスの液は、内臓部分から徐々に私をおか\n　　しくしていくの。\pいやらしいことしか考えられなくなって、\n　　勉強とか、できなくなる。\pそれに対抗するために、私は御堂\n　　くんたちに精液をかけてもらっていたの」@
 拓司\n　「もういい！」@
@@ -161,9 +161,9 @@ FLG3 \x8c\x01 FLG2 \x18[ FLG2_SET \x03\xc5
 　－－拓司はそう思った。\
 
   
-FLG3 \x9a\x1f\x0c FLG3_SET \\\x04 \x02 \x8a\x04 END
+FLG1 \x9a\x1f\x0c FLG1_SET \\\x04 \x02 \x8a\x04 END
 CSCE SCE048_032 \xe8" SCE_DONE 
-FLG3 \x8c\x01 FLG2 \x1c[ FLG2_SET \x03[
+FLG1 \x8c\x01 FLG2 \x1c[ FLG2_SET \x03[
  
 拓司\n　「そんなことより、早く柏木のことを、先生なり警察なりに報\n　　せないと！」@
 なたね\n　「……そうね」@
@@ -173,18 +173,19 @@ FLG3 \x8c\x01 FLG2 \x1c[ FLG2_SET \x03[
 \n　拓司の脇を通り抜け、鏡に向かって髪の毛を整え始める。\
 
   
-FLG3 ,#\x0c FLG3_SET \\\x04 \x02 \x8a\x04 END  
-FLG3 \xc8\x0c FLG3_SET
-FOBT .\\Data\\Script\\Bg.Fobsv\x81\x1f\xec$ \x02
-CMD2 BgAutoFadeInsv\x81\x1f\x16% END
+FLG1 ,#\x0c FLG1_SET \\\x04 \x02 \x8a\x04 END  
+FLG1 \xc8\x0c FLG1_SET
+FOBT .\\Data\\Script\\Bg.Fob OPEN \xec$ \x02
+CMD2 BgAutoFadeIn OPEN \x16% END
 CSCE SCE048_033 :% SCE_DONE 
-FLG3 \x8c\x01 FLG2  [ FLG2_SET \x03A
+FLG1 \x8c\x01 FLG2  [ FLG2_SET \x03A
  
 なたね\n　「あーあ、こんなにばさばさになっちゃった。\p困ったなあ。い\n　　やだなあ」@
 \n　拓司は呆然と、それを見守るしかなかった。\pなたねの動きはゆ\n　っくりしていて、見ているとなにか時間が徐々に停滞してゆく\n　ような、そんな不安な気持ちになった。\
 
   
-FLG3 ~%\x0c FLG3_SET \\\x04 \x02 \x8a\x04 END
-FOBT .\\Data\\Script\\Bgm.Fobv\x81\x1f\xbc& \x02
+FLG1 ~%\x0c FLG1_SET \\\x04 \x02 \x8a\x04 END
+FOBT .\\Data\\Script\\Bgm.Fob CLOSE \xbc& \x02
 CMD1 StopCD RUNF \xe6& END \\\x04 \x02
-CSCE TextClosev\x81\x1f\x0e' END6\xf1
+CSCE TextClose CLOSE \x0e' END
+END_SCRIPT

@@ -1,7 +1,7 @@
-START
+START_SCRIPT
 6\x08\x01`B#\x01\x9a\x06
 CSCE SCE080_001 \x06 SCE_DONE 
-FLG3 \x8c\x01 FLG2 \xa0\x8c FLG2_SET \x03\x96
+FLG1 \x8c\x01 FLG2 \xa0\x8c FLG2_SET \x03\x96
  
 　廊下をはいずり、階段を転げ落ち、拓司はようやく自分の教\n室にたどり着いた。\pぶつけたりすりむいたりした部分が鈍く痛む。\n\pしかし、そんなことはもう問題ではない。\p何もかも終わるからだ。\n@
 　教室のドアをなんとか引き開けて、拓司は自分の席を目指した。\n　\p机の中には、買ったばかりのカッターがあるはずだった。@
@@ -16,14 +16,14 @@ FLG3 \x8c\x01 FLG2 \xa0\x8c FLG2_SET \x03\x96
 邪魔邪魔。\
 
   
-FLG3 J\x0c FLG3_SET
+FLG1 J\x0c FLG1_SET
 WHAT .\\Data\\Script\\TextFunc.Fob RUNF \xc2\x02 \x02
 CMD1 TextOn RUNF \xf0\x02 END  
-FLG3 \xc8\x0c FLG3_SET
-FOBT .\\Data\\Script\\Bg.Fobsv\x81\x1f&\x03 \x02
-CMD2 BgAutoFadeInsv\x81\x1fP\x03 END
+FLG1 \xc8\x0c FLG1_SET
+FOBT .\\Data\\Script\\Bg.Fob OPEN &\x03 \x02
+CMD2 BgAutoFadeIn OPEN P\x03 END
 CSCE SCE080_002 t\x03 SCE_DONE 
-FLG3 \x8c\x01 FLG2 \xa4\x8c FLG2_SET \x03R
+FLG1 \x8c\x01 FLG2 \xa4\x8c FLG2_SET \x03R
  
 机までたどり着いた拓司は、必死の力を振り絞って身を起こし、\nどっかりと椅子に腰掛けた。@
 ふう、とため息をついて、机の中\nを両手でまさぐる。@
@@ -39,9 +39,9 @@ FLG3 \x8c\x01 FLG2 \xa4\x8c FLG2_SET \x03R
 　ピンポーン！\
 
   
-FLG3 \xb8\x03\x0c FLG3_SET \xc2\x02 \x02 \xf0\x02 END
+FLG1 \xb8\x03\x0c FLG1_SET \xc2\x02 \x02 \xf0\x02 END
 CSCE SCE080_003 :\x05 SCE_DONE 
-FLG3 \x8c\x01 FLG2 \xa8\x8c FLG2_SET \x03.
+FLG1 \x8c\x01 FLG2 \xa8\x8c FLG2_SET \x03.
  
 　そうしてカッターナイフを取り出すと、拓司はキリキリと刃を\n　押し出し、それを喉元に押し当てた。@
 　終わりだ。@
@@ -50,5 +50,6 @@ FLG3 \x8c\x01 FLG2 \xa8\x8c FLG2_SET \x03.
 　終わりだ。\
 
   
-FLG3 ~\x05\x0c FLG3_SET \xc2\x02 \x02 \xf0\x02 END \xc2\x02 \x02
-CSCE TextClosev\x81\x1f|\x06 END6\xf1
+FLG1 ~\x05\x0c FLG1_SET \xc2\x02 \x02 \xf0\x02 END \xc2\x02 \x02
+CSCE TextClose CLOSE |\x06 END
+END_SCRIPT

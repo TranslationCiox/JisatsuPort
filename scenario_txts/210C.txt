@@ -1,7 +1,7 @@
-START
+START_SCRIPT
 .\x10\x01`B#\x01\x10\r
 CSCE SCE210_001 \x06 SCE_DONE 
-FLG3 \x8c\x01 FLG2 \xc0W\x01 FLG2_SET \x03B
+FLG1 \x8c\x01 FLG2 \xc0W\x01 FLG2_SET \x03B
  
 教授はいった。@
 この世界は物理法則と常識が支配する世界だと。@
@@ -10,11 +10,11 @@ FLG3 \x8c\x01 FLG2 \xc0W\x01 FLG2_SET \x03B
 おそらくはおれと同じ……この病院の患者なのだ。\
 
   
-FLG3 J\x0c FLG3_SET
+FLG1 J\x0c FLG1_SET
 WHAT .\\Data\\Script\\TextFunc.Fob RUNF r\x01 \x02
 CMD1 TextOn RUNF \xa0\x01 END
 CSCE SCE210_002 \xbc\x01 SCE_DONE 
-FLG3 \x8c\x01 FLG2 \xc4W\x01 FLG2_SET \x03o
+FLG1 \x8c\x01 FLG2 \xc4W\x01 FLG2_SET \x03o
  
 拓司\n　「でたらめだ。\pそんなＳＦみたいな話を信じるわけにはいかな\n　　い。\p物理法則こそが、唯一の定点だ。@
 　　それを失ったら、おれはもうなにも信じられなくなってしま\n　　う。\pだからこそ、『教授が語る世界』を、おれは真実と考え\n　　る」@
@@ -24,9 +24,9 @@ FLG3 \x8c\x01 FLG2 \xc4W\x01 FLG2_SET \x03o
 拓司は逃げるように目をそらし、ベッドに倒れ込んで毛布を頭か\nらかぶった。\
 
   
-FLG3 \x02\x0c FLG3_SET r\x01 \x02 \xa0\x01 END
+FLG1 \x02\x0c FLG1_SET r\x01 \x02 \xa0\x01 END
 CSCE SCE210_003 \xf6\x03 SCE_DONE 
-FLG3 \x8c\x01 FLG2 \xc8W\x01 FLG2_SET \x03G
+FLG1 \x8c\x01 FLG2 \xc8W\x01 FLG2_SET \x03G
  
 拓司\n　「放っておいてくれ。\pおれは教授を信じて、治療を受ける。@
 　　いかれた頭を元通りに戻すんだ！」@
@@ -36,9 +36,9 @@ FLG3 \x8c\x01 FLG2 \xc8W\x01 FLG2_SET \x03G
 狂っていることを認めなければならない。\
 
   
-FLG3 :\x04\x0c FLG3_SET r\x01 \x02 \xa0\x01 END
+FLG1 :\x04\x0c FLG1_SET r\x01 \x02 \xa0\x01 END
 CSCE SCE210_004 \x90\x05 SCE_DONE 
-FLG3 \x8c\x01 FLG2 \xccW\x01 FLG2_SET \x03\xa5
+FLG1 \x8c\x01 FLG2 \xccW\x01 FLG2_SET \x03\xa5
  
 /*▲SE01　ループ再生（次の停止まで）*/\a2,1,1,1,\a6,0,0,0,ザザザ……ザザッ……\pザアザザザ……ザアアアアア……@
 ザアザアアアアアアア……@
@@ -52,9 +52,9 @@ FLG3 \x8c\x01 FLG2 \xccW\x01 FLG2_SET \x03\xa5
 やがてまたこの部屋で目覚めて、教授にすべてを否定され……\
 
   
-FLG3 \xd4\x05\x0c FLG3_SET r\x01 \x02 \xa0\x01 END
+FLG1 \xd4\x05\x0c FLG1_SET r\x01 \x02 \xa0\x01 END
 CSCE SCE210_005 \xa2\x08 SCE_DONE 
-FLG3 \x8c\x01 FLG2 \xd0W\x01 FLG2_SET \x03Z
+FLG1 \x8c\x01 FLG2 \xd0W\x01 FLG2_SET \x03Z
  
 /*▲SE01　ループ再生（次の停止まで）*/\a2,1,1,1,\a6,0,0,0,ザザザ……ザザッ……\pザアザザザ……ザアアアアア……@
 ザアザアアアアアアア……@
@@ -65,20 +65,21 @@ FLG3 \x8c\x01 FLG2 \xd0W\x01 FLG2_SET \x03Z
 　－－そして中心こそは、狂っているおれなのだ。\
 
   
-FLG3 \xe6\x08\x0c FLG3_SET r\x01 \x02 \xa0\x01 END
+FLG1 \xe6\x08\x0c FLG1_SET r\x01 \x02 \xa0\x01 END
 CSCE SCE210_006 \x88\n SCE_DONE 
-FLG3 \x8c\x01 FLG2 \xd4W\x01 FLG2_SET \x03F
+FLG1 \x8c\x01 FLG2 \xd4W\x01 FLG2_SET \x03F
  
 /*▲SE01　ループ再生（次の停止まで）*/\a2,1,1,1,\a6,0,0,0,ザザザ……ザザッ……\pザアザザザ……ザアアアアア……@
 ザアザアアアアアアア……@
 /*▲SE01　停止*/\a4,1,0,0,\n　拓司はなま暖かいかたまりにゆっくり飲み込まれながら、ただ\n　胎児のように身を丸めて恐怖していた。\
 
   
-FLG3 \xcc\n\x0c FLG3_SET r\x01 \x02 \xa0\x01 END  
-FLG3 \x02\x0c FLG3_SET
-FOBT .\\Data\\Script\\Bgm.Fobv\x81\x1f8\x0c \x02
+FLG1 \xcc\n\x0c FLG1_SET r\x01 \x02 \xa0\x01 END  
+FLG1 \x02\x0c FLG1_SET
+FOBT .\\Data\\Script\\Bgm.Fob CLOSE 8\x0c \x02
 CMD1 SeStop RUNF b\x0c END  
-FLG3 \xc8\x0c FLG3_SET
-FOBT .\\Data\\Script\\Bg.Fobsv\x81\x1f\x98\x0c \x02
-CMD2 BgAutoFadeInsv\x81\x1f\xc2\x0c END r\x01 \x02
-CSCE TextClosev\x81\x1f\xf2\x0c END6\xf1
+FLG1 \xc8\x0c FLG1_SET
+FOBT .\\Data\\Script\\Bg.Fob OPEN \x98\x0c \x02
+CMD2 BgAutoFadeIn OPEN \xc2\x0c END r\x01 \x02
+CSCE TextClose CLOSE \xf2\x0c END
+END_SCRIPT

@@ -1,7 +1,7 @@
-START
+START_SCRIPT
 \x94\x18\x01`B#\x01\xc8\x14
 CSCE SCE057_001 \x06 SCE_DONE 
-FLG3 \x8c\x01 FLG2 \xb0h FLG2_SET \x03t
+FLG1 \x8c\x01 FLG2 \xb0h FLG2_SET \x03t
  
 学生\n　「こいつにションベンひっかけてやろうぜ？」@
 \nその異常な言葉は、しばらく無言の教室の中に行き場無くただよ\nっていた。\pしかしそれは無視されたのではない。\pゆっくりと、染\nみ渡るように教室の全員を犯していったのだ。@
@@ -11,11 +11,11 @@ FLG3 \x8c\x01 FLG2 \xb0h FLG2_SET \x03t
 上村\n　「私しかいないっしょ？\p　このウザキャラ潰すのは私の使命だ\n　　からさ」\
 
   
-FLG3 J\x0c FLG3_SET
+FLG1 J\x0c FLG1_SET
 WHAT .\\Data\\Script\\TextFunc.Fob RUNF :\x02 \x02
 CMD1 TextOn RUNF h\x02 END
 CSCE SCE057_002 \x84\x02 SCE_DONE 
-FLG3 \x8c\x01 FLG2 \xb4h FLG2_SET \x03\x85
+FLG1 \x8c\x01 FLG2 \xb4h FLG2_SET \x03\x85
  
 \nカミムラ－－。@
 拓司はその名前を聞いたことがあった。\pたしか、早桃にいやがら\nせをしているという少女がカミムラといったはずだ……。@
@@ -27,9 +27,9 @@ FLG3 \x8c\x01 FLG2 \xb4h FLG2_SET \x03\x85
 早桃\n　「……」\
 
   
-FLG3 \xc8\x02\x0c FLG3_SET :\x02 \x02 h\x02 END
+FLG1 \xc8\x02\x0c FLG1_SET :\x02 \x02 h\x02 END
 CSCE SCE057_003 \x16\x05 SCE_DONE 
-FLG3 \x8c\x01 FLG2 \xb8h FLG2_SET \x03\x94
+FLG1 \x8c\x01 FLG2 \xb8h FLG2_SET \x03\x94
  
 上村\n　「逃げるつもり？\p　それって間違ってるって。\pこれはさ、あん\n　　たを綺麗にする儀式なんだよ？\p　生きている価値のないあん\n　　たが、身を清めて気持ちよく死ねるようになるための儀式な\n　　んだからさあ。くすくす」@
 /*■CG70　表示（クロスフェード）*/\a7,-2,-2,0,\a0,69,2,0,\a6,-2,0,0,\n途端、早桃に劇的な変化が訪れた。@
@@ -40,9 +40,9 @@ FLG3 \x8c\x01 FLG2 \xb8h FLG2_SET \x03\x94
 上村\n　「そうそう。儀式儀式」\
 
   
-FLG3 Z\x05\x0c FLG3_SET :\x02 \x02 h\x02 END
+FLG1 Z\x05\x0c FLG1_SET :\x02 \x02 h\x02 END
 CSCE SCE057_004 \xe4\x07 SCE_DONE 
-FLG3 \x8c\x01 FLG2 \xbch FLG2_SET \x03\x94
+FLG1 \x8c\x01 FLG2 \xbch FLG2_SET \x03\x94
  
 上村はスカートの中に手を差し入れ、スルスルとショーツを脱い\nだ。\pクラスメイトが見ているというのに、なんの躊躇もない。\n逆に、脱いだショーツをひらひらと振り回して、男子学生たちに\nニヤリと笑いかける余裕さえある。\pさらにはスカートも脱ぎ、下\n半身をあらわにした。@
 男子学生たちがごくりと生唾を飲み込む。@
@@ -54,9 +54,9 @@ FLG3 \x8c\x01 FLG2 \xbch FLG2_SET \x03\x94
 早桃\n　「……」\
 
   
-FLG3 (\x08\x0c FLG3_SET :\x02 \x02 h\x02 END
+FLG1 (\x08\x0c FLG1_SET :\x02 \x02 h\x02 END
 CSCE SCE057_005 \xb2\n SCE_DONE 
-FLG3 \x8c\x01 FLG2 \xc0h FLG2_SET \x03a
+FLG1 \x8c\x01 FLG2 \xc0h FLG2_SET \x03a
  
 上村\n　「あ～ウザイ！　ウザウザ！　見てるだけでぶっ殺したくなる\n　　よ！」@
 早桃\n　「ごめんなさい……か、上村さん……私に……上村さんのおし\n　　っこを……浴びせてください」@
@@ -65,9 +65,9 @@ FLG3 \x8c\x01 FLG2 \xc0h FLG2_SET \x03a
 　上村は椅子をひとつひきずって早桃の前に配し、どっかとそこ\n　に腰を下ろした。\
 
   
-FLG3 \xf6\n\x0c FLG3_SET :\x02 \x02 h\x02 END
+FLG1 \xf6\n\x0c FLG1_SET :\x02 \x02 h\x02 END
 CSCE SCE057_006 \xb4\x0c SCE_DONE 
-FLG3 \x8c\x01 FLG2 \xc4h FLG2_SET \x03\xac
+FLG1 \x8c\x01 FLG2 \xc4h FLG2_SET \x03\xac
  
 上村\n　「ほら、もっと前にはいはいしてきなさいよォ……足下に……\n　　そうそう。いい子ね、ワンワン」@
 /*■HCG16　表示（クロスフェード）*/\a7,-2,-2,0,\a0,87,2,0,\a6,-2,0,0,\n　上村は腰を突きだし、両足を早桃の肩の上にのせた。@
@@ -80,9 +80,9 @@ FLG3 \x8c\x01 FLG2 \xc4h FLG2_SET \x03\xac
 　髪の毛が汚液を吸い込んで、ぺったりと頬にへばりつく。\
 
   
-FLG3 \xf8\x0c\x0c FLG3_SET :\x02 \x02 h\x02 END
+FLG1 \xf8\x0c\x0c FLG1_SET :\x02 \x02 h\x02 END
 CSCE SCE057_007 \xe2\x0f SCE_DONE 
-FLG3 \x8c\x01 FLG2 \xc8h FLG2_SET \x03\x8d
+FLG1 \x8c\x01 FLG2 \xc8h FLG2_SET \x03\x8d
  
 どこかで見た光景だった。@
 辱めのために汚液の的となる女の子。@
@@ -94,9 +94,9 @@ FLG3 \x8c\x01 FLG2 \xc8h FLG2_SET \x03\x8d
 おそらく、御堂たちによるなたねの陵辱、あのあたりから自分は\n妄想の中にいるのだ……。\
 
   
-FLG3 &\x10\x0c FLG3_SET :\x02 \x02 h\x02 END
+FLG1 &\x10\x0c FLG1_SET :\x02 \x02 h\x02 END
 CSCE SCE057_008 \x94\x12 SCE_DONE 
-FLG3 \x8c\x01 FLG2 \xcch FLG2_SET \x03c
+FLG1 \x8c\x01 FLG2 \xcch FLG2_SET \x03c
  
 学生\n　「た、たまんねえ……俺にもかけさせてくれ」@
 学生\n　「あたしも……」@
@@ -106,5 +106,6 @@ FLG3 \x8c\x01 FLG2 \xcch FLG2_SET \x03c
 \n学生たちは我先に早桃へと殺到した。\p男子学生は勃起したペ○ス\nをむき出しにして、女子学生はちぎり捨てるようにスカートとシ\nョーツを脱ぎ捨てて……。\
 
   
-FLG3 \xd8\x12\x0c FLG3_SET :\x02 \x02 h\x02 END :\x02 \x02
-CSCE TextClosev\x81\x1f\xaa\x14 END6\xf1
+FLG1 \xd8\x12\x0c FLG1_SET :\x02 \x02 h\x02 END :\x02 \x02
+CSCE TextClose CLOSE \xaa\x14 END
+END_SCRIPT

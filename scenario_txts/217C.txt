@@ -1,19 +1,19 @@
-START
+START_SCRIPT
 \x12\x13\x01`B#\x01\xa2\x0f
 CSCE SCE217_001 \x06 SCE_DONE 
-FLG3 \x8c\x01 FLG2 \xb0b\x01 FLG2_SET \x03\x11
+FLG1 \x8c\x01 FLG2 \xb0b\x01 FLG2_SET \x03\x11
  
 \n\n\n\n\n\n\n\n\n\n　　　　　　　　　　　　　『８日目』\
 
   
-FLG3 J\x0c FLG3_SET
+FLG1 J\x0c FLG1_SET
 WHAT .\\Data\\Script\\TextFunc.Fob RUNF \xae \x02
 CMD1 TextOn RUNF \xdc END  
-FLG3 \n\x01\x0c FLG3_SET
-FOBT .\\Data\\Script\\Bgm.Fobv\x81\x1f\x12\x01 \x02
+FLG1 \n\x01\x0c FLG1_SET
+FOBT .\\Data\\Script\\Bgm.Fob CLOSE \x12\x01 \x02
 CMD1 PlayCD RUNF <\x01 END
 CSCE SCE217_002 X\x01 SCE_DONE 
-FLG3 \x8c\x01 FLG2 \xb4b\x01 FLG2_SET \x03\x92
+FLG1 \x8c\x01 FLG2 \xb4b\x01 FLG2_SET \x03\x92
  
 御堂\n　「てめえ、なにやってやがる！」@
 \nついに、決定的な出来事が起こった。@
@@ -25,9 +25,9 @@ FLG3 \x8c\x01 FLG2 \xb4b\x01 FLG2_SET \x03\x92
 なたね\n　「……」\
 
   
-FLG3 \x9c\x01\x0c FLG3_SET \xae \x02 \xdc END
+FLG1 \x9c\x01\x0c FLG1_SET \xae \x02 \xdc END
 CSCE SCE217_003 \x1e\x04 SCE_DONE 
-FLG3 \x8c\x01 FLG2 \xb8b\x01 FLG2_SET \x03\xa9
+FLG1 \x8c\x01 FLG2 \xb8b\x01 FLG2_SET \x03\xa9
  
 一同に取り囲まれながらも、なたねに悪びれた様子はない。@
 射すような視線を平然と受け止め、逆に挑戦的な視線を投げ返し\nてくる。@
@@ -39,9 +39,9 @@ FLG3 \x8c\x01 FLG2 \xb8b\x01 FLG2_SET \x03\xa9
 拓司\n　「……？」\
 
   
-FLG3 b\x04\x0c FLG3_SET \xae \x02 \xdc END
+FLG1 b\x04\x0c FLG1_SET \xae \x02 \xdc END
 CSCE SCE217_004 @\x07 SCE_DONE 
-FLG3 \x8c\x01 FLG2 \xbcb\x01 FLG2_SET \x03W
+FLG1 \x8c\x01 FLG2 \xbcb\x01 FLG2_SET \x03W
  
 なたね\n　「……だって、私にはそれだけの価値があるから」@
 拓司\n　「……」@
@@ -49,18 +49,18 @@ FLG3 \x8c\x01 FLG2 \xbcb\x01 FLG2_SET \x03W
 \nなたねは突如立ち上がって、早桃を指さした。\p一同は呆気にとら\nれてなたねを見つめた。\
 
   
-FLG3 \x84\x07\x0c FLG3_SET \xae \x02 \xdc END
+FLG1 \x84\x07\x0c FLG1_SET \xae \x02 \xdc END
 CSCE SCE217_005 \x1a\t SCE_DONE 
-FLG3 \x8c\x01 FLG2 \xc0b\x01 FLG2_SET \x03\xe4
+FLG1 \x8c\x01 FLG2 \xc0b\x01 FLG2_SET \x03\xe4
  
 なたね\n　「お前みたいなナア！\p　生きているだけのバカタレ弱者とは違\n　　うんだ！\p　自分一人じゃ何もできない弱者人種とは違って、\n　　この私は必要な……善なる宇宙生命体に選ばれた人間なんだ\n　　からお前なんかよりいいもの食べるのはあたりまえなんだ！@
 　　あんたたちも一緒！\p　どいつもこいつも、私のことコソコソ\n　　いってバカにしてきて……いい気味だ！\p　ワハ……ワハハハ\n　　ハ！\p　お前らなんか生き残れるもんか！\p　お前らなんか…\n　　…波動で狂って踊り死ぬんだ！\p　ｘ線と赤外線と紫外線とマ\n　　イクロ波がお前らを殺す！\p　攻撃は細胞に対して行われるか\n　　ら避けられない！\p　タクシーより速いからな！\p　警察も自衛\n　　隊も内閣調査室もみんな私を無視して陰からコソコソ電波を\n　　ひっつかせた！\p　駐車違反とか政治汚職とか、そういう攻撃\n　　をしかけてきた！\p　全部わかってるんだからな。\pやつらの洗\n　　脳だろ？\p　全部お見通しなんだよ！」@
 御堂\n　「こいつ……完全にいかれてやがる」\
 
   
-FLG3 ^\t\x0c FLG3_SET \xae \x02 \xdc END
+FLG1 ^\t\x0c FLG1_SET \xae \x02 \xdc END
 CSCE SCE217_006 (\r SCE_DONE 
-FLG3 \x8c\x01 FLG2 \xc4b\x01 FLG2_SET \x03M
+FLG1 \x8c\x01 FLG2 \xc4b\x01 FLG2_SET \x03M
  
 呆然といった御堂よりも、錦城の行動が速かった。@
 なたねの斜め後ろに位置していた錦城は、一気になたねに接近し、\nその背中を容赦なく蹴り飛ばした。\p衝撃にぐらりと姿勢を崩した\nなたねにのしかかって、錦城が叫ぶ。@
@@ -69,11 +69,12 @@ FLG3 \x8c\x01 FLG2 \xc4b\x01 FLG2_SET \x03M
 \n御堂が躍りかかった。\
 
   
-FLG3 l\r\x0c FLG3_SET \xae \x02 \xdc END\x03\x19
+FLG1 l\r\x0c FLG1_SET \xae \x02 \xdc END\x03\x19
 CHOICE
 「やめろ！」　拓司は必至で制止した\n「……」　もはや言うべき言葉は見つからなかった\n\l0,2,
 ENDCHOICE
 
   
-FLG3 \xda\x0e\x0c FLG3_SET \xae \x02 \xdc END \xae \x02
-CSCE TextClosev\x81\x1f\x84\x0f END6\xf1
+FLG1 \xda\x0e\x0c FLG1_SET \xae \x02 \xdc END \xae \x02
+CSCE TextClose CLOSE \x84\x0f END
+END_SCRIPT

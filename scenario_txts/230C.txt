@@ -1,7 +1,7 @@
-START
+START_SCRIPT
 \xff\x02\x01\xe0\x044\x012\x02
 CSCE SCE230_001 \x06 SCE_DONE 
-FLG3 \x8c\x01 FLG2 w\x01 FLG2_SET \x03U
+FLG1 \x8c\x01 FLG2 w\x01 FLG2_SET \x03U
  
 拓司は凍り付いたまま動けなかった。@
 畳針で片目を貫かれてもなお、御堂は決して拓司から注意をそら\nしていなかったのである。@
@@ -10,7 +10,8 @@ FLG3 \x8c\x01 FLG2 w\x01 FLG2_SET \x03U
 動こうとしたカンナを「動くなッ！」と一喝して、御堂はいった。\n\
 
   
-FLG3 J\x0c FLG3_SET
+FLG1 J\x0c FLG1_SET
 WHAT .\\Data\\Script\\TextFunc.Fob RUNF \xbe\x01 \x02
 CMD1 TextOn RUNF \xec\x01 END \xbe\x01 \x02
-CSCE TextClosev\x81\x1f\x14\x02 END6\xf1
+CSCE TextClose CLOSE \x14\x02 END
+END_SCRIPT

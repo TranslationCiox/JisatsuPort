@@ -1,25 +1,25 @@
-START
+START_SCRIPT
 v\x06\x01`B#\x01\xd2\x04  
-FLG3 C\x0c FLG3_SET
-FOBT .\\Data\\Script\\Bg.Fobsv\x81\x1f  \x02
-CMD2 BgAutoFadeInsv\x81\x1fJ END  
-FLG3 \x08\x01\x0c FLG3_SET
-FOBT .\\Data\\Script\\Bgm.Fobv\x81\x1f\x88 \x02
+FLG1 C\x0c FLG1_SET
+FOBT .\\Data\\Script\\Bg.Fob OPEN   \x02
+CMD2 BgAutoFadeIn OPEN J END  
+FLG1 \x08\x01\x0c FLG1_SET
+FOBT .\\Data\\Script\\Bgm.Fob CLOSE \x88 \x02
 CMD1 PlayCD RUNF \xb2 END
 CSCE SCEG03_001 \xce SCE_DONE 
-FLG3 \x8c\x01 FLG2 p\xc5\x01 FLG2_SET \x03)
+FLG1 \x8c\x01 FLG2 p\xc5\x01 FLG2_SET \x03)
  
 錦城\n　「……しっ！　私よ、虎菱くん」@
 拓司\n　「……先生？」@
 \n錦城は微かに笑うと、拓司の横へと体を移動させた。@
 寄り添って寝転がるような形になる。\w\z
   
-FLG3 \x12\x01\x0c FLG3_SET
+FLG1 \x12\x01\x0c FLG1_SET
 WHAT .\\Data\\Script\\TextFunc.Fob RUNF \xd6\x01 \x02
 CMD1 TextOn RUNF \x04\x02 END  
-FLG3 \xc8\x0c FLG3_SET   \x02 J END
+FLG1 \xc8\x0c FLG1_SET   \x02 J END
 CSCE SCEG03_002 T\x02 SCE_DONE 
-FLG3 \x8c\x01 FLG2 t\xc5\x01 FLG2_SET \x03a
+FLG1 \x8c\x01 FLG2 t\xc5\x01 FLG2_SET \x03a
  
 錦城\n　「リーダーとして、今日はどうだった？」@
 拓司\n　「いえ……リーダーといっても形だけですから」@
@@ -29,7 +29,8 @@ FLG3 \x8c\x01 FLG2 t\xc5\x01 FLG2_SET \x03a
 錦城\n　「ふふ。でも、そういう謙虚な虎菱くんが、私は好きよ。@
 　　……さあ、今日もご褒美をあげる」\w\z
   
-FLG3 \x98\x02\x0c FLG3_SET \xd6\x01 \x02 \x04\x02 END \xd6\x01 \x02
-CSCE TextClosev\x81\x1fb\x04 END
-HERO .\\Data\\Script\\Scenario\\G3subC.Fobv\x81\x1f\x82\x04 \x02
-CMD1 startv\x81\x1f\xb8\x04 END6\xf1
+FLG1 \x98\x02\x0c FLG1_SET \xd6\x01 \x02 \x04\x02 END \xd6\x01 \x02
+CSCE TextClose CLOSE b\x04 END
+HERO .\\Data\\Script\\Scenario\\G3subC.Fob CLOSE \x82\x04 \x02
+CMD1 start CLOSE \xb8\x04 END
+END_SCRIPT

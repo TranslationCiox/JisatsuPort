@@ -1,13 +1,13 @@
-START
+START_SCRIPT
 I\x08\x01`B#\x01Z\x06  
-FLG3 \xc8\x0c FLG3_SET
-FOBT .\\Data\\Script\\Bg.Fobsv\x81\x1f  \x02
-CMD2 BgAutoFadeInsv\x81\x1fJ END  
-FLG3 \t\x01\x0c FLG3_SET
-FOBT .\\Data\\Script\\Bgm.Fobv\x81\x1f\x88 \x02
+FLG1 \xc8\x0c FLG1_SET
+FOBT .\\Data\\Script\\Bg.Fob OPEN   \x02
+CMD2 BgAutoFadeIn OPEN J END  
+FLG1 \t\x01\x0c FLG1_SET
+FOBT .\\Data\\Script\\Bgm.Fob CLOSE \x88 \x02
 CMD1 PlayCD RUNF \xb2 END
 CSCE SCE091_001 \xce SCE_DONE 
-FLG3 \x8c\x01 FLG2 \xd0\x9d FLG2_SET \x03\xb6
+FLG1 \x8c\x01 FLG2 \xd0\x9d FLG2_SET \x03\xb6
  
 こうして１日が終わった。@
 深夜を過ぎても、拓司は眠りにつくことができなかった。@
@@ -16,26 +16,27 @@ FLG3 \x8c\x01 FLG2 \xd0\x9d FLG2_SET \x03\xb6
 そのとき拓司は、足下にわずかに人の気配を感じた。\
 
   
-FLG3 \x12\x01\x0c FLG3_SET
+FLG1 \x12\x01\x0c FLG1_SET
 WHAT .\\Data\\Script\\TextFunc.Fob RUNF \n\x04 \x02
 CMD1 TextOn RUNF 8\x04 END \x88 \x02
 CMD1 StopCD RUNF `\x04 END! 
-FLG3 \x14 FLG2 \x0b
-FLG3\x01 \x1b1f\x05\x03\x12
+FLG1 \x14 FLG2 \x0b
+FLG1\x01 \x1b1f\x05\x03\x12
 CHOICE
 それは早桃だった\nそれはカンナだった\nそれは錦城だった\n\l0,3,
 ENDCHOICE
 
   
-FLG3 \xb4\x04\x0c FLG3_SET \n\x04 \x02 8\x04 END \n\x04 \x02
-CMD2 GetLastTxtIDsv\x81\x1fB\x05 END2*\x06\x03
-FLG3
+FLG1 \xb4\x04\x0c FLG1_SET \n\x04 \x02 8\x04 END \n\x04 \x02
+CMD2 GetLastTxtID OPEN B\x05 END2*\x06\x03
+FLG1
 CHOICE
 それは早桃だった\nそれは錦城だった\n\l0,2,
 ENDCHOICE
 
   
-FLG3 l\x05\x0c FLG3_SET \n\x04 \x02 8\x04 END \n\x04 \x02 B\x05 END  
-FLG3 \x01\x1b\x021*\x06  
-FLG3 \x02\x0c FLG3_SET \n\x04 \x02
-CSCE TextClosev\x81\x1f<\x06 END6\xf1
+FLG1 l\x05\x0c FLG1_SET \n\x04 \x02 8\x04 END \n\x04 \x02 B\x05 END  
+FLG1 \x01\x1b\x021*\x06  
+FLG1 \x02\x0c FLG1_SET \n\x04 \x02
+CSCE TextClose CLOSE <\x06 END
+END_SCRIPT
