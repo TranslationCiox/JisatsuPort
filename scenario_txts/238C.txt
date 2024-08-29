@@ -1,9 +1,9 @@
-STRF
+FSTR
 \xa2\x8f\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00Ds\x00\x03\x03\x00\x00SCE238_001\x00 \x06\x00\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x80\x83\x01\x0c
-SEQ05 \x03\x8a\x00\x00
+SEQ10 \x80\x83\x01\x0c
+SEQ11 \x03\x8a\x00\x00
  
 教授\n　「よかった。\p本当に良かった。\pこの前、目を離した隙に隣室の\n　　患者が、この部屋に来ただろう？」@
 /*▲BGM　停止*/\a4,-1,0,0,拓司\n　「隣室の……？」@
@@ -13,21 +13,21 @@ SEQ05 \x03\x8a\x00\x00
 
 \x00\x00\x00  
 SEQ01 J\x00
-SEQ13 
-SEQ04 
-SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 \x92\x02\x00 
+SEQ14 
+SEQ08 "
+SEQ13 .\\Data\\Script\\TextFunc.Fob SPC01 \x92\x02\x00 
 SEQ02 TextOn SPC01 \xc0\x02\x00 
-SEQ10   
+SEQ06   
 SEQ01 \x0c\x01
-SEQ13 
-SEQ04 
-SEQ08 .\\Data\\Script\\Bgm.Fob SPC02 \xf6\x02\x00 
+SEQ14 
+SEQ08 "
+SEQ12 .\\Data\\Script\\Bgm.Fob SPC02 \xf6\x02\x00 
 SEQ02 PlayCD SPC01  \x03\x00 
-SEQ06 SCE238_002\x00 <\x03\x00 
+SEQ05 SCE238_002\x00 <\x03\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x84\x83\x01\x0c
-SEQ05 \x03\xaf\x00\x00
+SEQ10 \x84\x83\x01\x0c
+SEQ11 \x03\xaf\x00\x00
  
 拓司\n　「教授」@
 教授\n　「なにかね？」@
@@ -38,14 +38,14 @@ SEQ05 \x03\xaf\x00\x00
 
 \x00  
 SEQ01 \x80\x03
-SEQ13 
-SEQ04  \x92\x02\x00 
-SEQ12  \xc0\x02\x00 
-SEQ06 SCE238_003\x00 v\x06\x00 
+SEQ14 
+SEQ08 " \x92\x02\x00 
+SEQ08  \xc0\x02\x00 
+SEQ05 SCE238_003\x00 v\x06\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x88\x83\x01\x0c
-SEQ05 \x03\xc6\x00\x00
+SEQ10 \x88\x83\x01\x0c
+SEQ11 \x03\xc6\x00\x00
  
 拓司の視線をおって教授はふりかえり、ぎょと身をすくませた。@
 教授の背後に、高さ２メートルの巨大なアイスクリームパフェが\n屹立していた。@
@@ -56,14 +56,14 @@ SEQ05 \x03\xc6\x00\x00
 
 \x00\x00\x00  
 SEQ01 \xba\x06
-SEQ13 
-SEQ04  \x92\x02\x00 
-SEQ12  \xc0\x02\x00 
-SEQ06 SCE238_004\x00 \x0c\n\x00 
+SEQ14 
+SEQ08 " \x92\x02\x00 
+SEQ08  \xc0\x02\x00 
+SEQ05 SCE238_004\x00 \x0c\n\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x8c\x83\x01\x0c
-SEQ05 \x03\xa1\x00\x00
+SEQ10 \x8c\x83\x01\x0c
+SEQ11 \x03\xa1\x00\x00
  
 拓司\n　「なるほど、そこにあるパフェは、狂ったおれにしか見えない\n　　幻影だと？\p　うまいな。\pなかなかうまい理屈だよ。@
 　　以前のおれだったら騙されていただろうな。\pいいだろう。@
@@ -79,14 +79,14 @@ SEQ05 \x03\xa1\x00\x00
 
 \x00  
 SEQ01 P\n
-SEQ13 
-SEQ04  \x92\x02\x00 
-SEQ12  \xc0\x02\x00 
-SEQ06 SCE238_005\x00 \x0e\r\x00 
+SEQ14 
+SEQ08 " \x92\x02\x00 
+SEQ08  \xc0\x02\x00 
+SEQ05 SCE238_005\x00 \x0e\r\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x90\x83\x01\x0c
-SEQ05 \x03E\x00\x00
+SEQ10 \x90\x83\x01\x0c
+SEQ11 \x03E\x00\x00
  
 拓司\n　「……さあて。\pどういうことか説明してもらおうか……」@
 教授\n　「……」@
@@ -95,14 +95,14 @@ SEQ05 \x03E\x00\x00
 
 \x00\x00\x00  
 SEQ01 R\r
-SEQ13 
-SEQ04  \x92\x02\x00 
-SEQ12  \xc0\x02\x00 
-SEQ06 SCE238_006\x00 \xa0\x0e\x00 
+SEQ14 
+SEQ08 " \x92\x02\x00 
+SEQ08  \xc0\x02\x00 
+SEQ05 SCE238_006\x00 \xa0\x0e\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x94\x83\x01\x0c
-SEQ05 \x03\x98\x00\x00
+SEQ10 \x94\x83\x01\x0c
+SEQ11 \x03\x98\x00\x00
  
 拓司\n　「おれは信じる。\p『雲居ナタネが語った世界』を信じる。@
 　　おれは望む物を創ることができると……たとえばこんなふう\n　　に！」@
@@ -120,14 +120,14 @@ SEQ05 \x03\x98\x00\x00
 
 \x00\x00\x00  
 SEQ01 \xe4\x0e
-SEQ13 
-SEQ04  \x92\x02\x00 
-SEQ12  \xc0\x02\x00 
-SEQ06 SCE238_007\x00 ~\x11\x00 
+SEQ14 
+SEQ08 " \x92\x02\x00 
+SEQ08  \xc0\x02\x00 
+SEQ05 SCE238_007\x00 ~\x11\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x98\x83\x01\x0c
-SEQ05 \x03r\x00\x00
+SEQ10 \x98\x83\x01\x0c
+SEQ11 \x03r\x00\x00
  
 拓司\n　「あんたが宇宙人なのか、なんなのかは知らない。\pでも、おれ\n　　はあんたを否定する。\pあんたが創ったこの白い部屋の世界を\n　　……否定する。\pいままでこの世界で、おれはお前が見る夢で\n　　しかなかった。\pしかし、それはもう終わりだ。\pおれはいま、\n　　おれがおれであることをハッキリと認識した。\pだからおれは\n　　おれだ。\pおれはここにいて、おまえはおれが見る夢になる」@
 教授\n　「……」@
@@ -135,20 +135,20 @@ SEQ05 \x03r\x00\x00
 
 \x00  
 SEQ01 \xc2\x11
-SEQ13 
-SEQ04  \x92\x02\x00 
-SEQ12  \xc0\x02\x00 
-SEQ10   
+SEQ14 
+SEQ08 " \x92\x02\x00 
+SEQ08  \xc0\x02\x00 
+SEQ06   
 SEQ01 \xc8\x00
-SEQ13 
-SEQ04 
-SEQ08 .\\Data\\Script\\Bg.Fob SPC03 \xde\x13\x00 
-SEQ12 \x03\x04\x00\x00BgAutoFadeIn SPC03 \x08\x14\x00 
-SEQ06 SCE238_008\x00 ,\x14\x00 
+SEQ14 
+SEQ08 "
+SEQ12 .\\Data\\Script\\Bg.Fob SPC03 \xde\x13\x00 
+SEQ03 BgAutoFadeIn SPC03 \x08\x14\x00 
+SEQ05 SCE238_008\x00 ,\x14\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x9c\x83\x01\x0c
-SEQ05 \x03v\x00\x00
+SEQ10 \x9c\x83\x01\x0c
+SEQ11 \x03v\x00\x00
  
 文字通り、白い壁が粉微塵と弾けとんだ。\pベッドも、換気ファン\nも、何もかもが破片となって散った。@
 教授が、おお、と驚愕とも悲鳴ともつかぬ声をあげる。@
@@ -159,14 +159,14 @@ SEQ05 \x03v\x00\x00
 
 \x00\x00\x00  
 SEQ01 p\x14
-SEQ13 
-SEQ04  \x92\x02\x00 
-SEQ12  \xc0\x02\x00 
-SEQ06 SCE238_009\x00 \x82\x16\x00 
+SEQ14 
+SEQ08 " \x92\x02\x00 
+SEQ08  \xc0\x02\x00 
+SEQ05 SCE238_009\x00 \x82\x16\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xa0\x83\x01\x0c
-SEQ05 \x03j\x00\x00
+SEQ10 \xa0\x83\x01\x0c
+SEQ11 \x03j\x00\x00
  
 拓司\n　「消えろ」@
 \nひとつの世界を滅亡させた魔人と、その世界最後の生き残りの決\n戦。@
@@ -180,16 +180,16 @@ SEQ05 \x03j\x00\x00
 
 \x00  
 SEQ01 \xc6\x16
-SEQ13 
-SEQ04  \x92\x02\x00 
-SEQ12  \xc0\x02\x00 
-SEQ10  \xf6\x02\x00 
+SEQ14 
+SEQ08 " \x92\x02\x00 
+SEQ08  \xc0\x02\x00 
+SEQ06  \xf6\x02\x00 
 SEQ02 StopCD SPC01 \xb4\x18\x00 
-SEQ06 SCE238_010\x00 \xd0\x18\x00 
+SEQ05 SCE238_010\x00 \xd0\x18\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xa4\x83\x01\x0c
-SEQ05 \x03\xc5\x00\x00
+SEQ10 \xa4\x83\x01\x0c
+SEQ11 \x03\xc5\x00\x00
  
 ハルマゲドンは終わった。@
 あとにはただ、白い空間が残された。@
@@ -210,14 +210,14 @@ SEQ05 \x03\xc5\x00\x00
 
 \x00\x00\x00  
 SEQ01 \x14\x19
-SEQ13 
-SEQ04  \x92\x02\x00 
-SEQ12  \xc0\x02\x00 
-SEQ06 SCE238_011\x00 b\x1c\x00 
+SEQ14 
+SEQ08 " \x92\x02\x00 
+SEQ08  \xc0\x02\x00 
+SEQ05 SCE238_011\x00 b\x1c\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xa8\x83\x01\x0c
-SEQ05 \x03J\x00\x00
+SEQ10 \xa8\x83\x01\x0c
+SEQ11 \x03J\x00\x00
  
 拓司\n　「……そういうことなんだろう、雲居さん？」@
 \n拓司は振り返っていった。@
@@ -230,14 +230,14 @@ SEQ05 \x03J\x00\x00
 
 \x00  
 SEQ01 \xa6\x1c
-SEQ13 
-SEQ04  \x92\x02\x00 
-SEQ12  \xc0\x02\x00 
-SEQ06 SCE238_012\x00 \x08\x1e\x00 
+SEQ14 
+SEQ08 " \x92\x02\x00 
+SEQ08  \xc0\x02\x00 
+SEQ05 SCE238_012\x00 \x08\x1e\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xac\x83\x01\x0c
-SEQ05 \x03`\x00\x00
+SEQ10 \xac\x83\x01\x0c
+SEQ11 \x03`\x00\x00
  
 拓司\n　「どこから作るんだい？\p　太陽は東から昇って西に沈むってこ\n　　とを定義することからかい？\p　万有引力の法則からかい？@
 　　あるいは、おれのしらない世界を世界たらしめている法則が\n　　あるのかい？」@
@@ -248,60 +248,60 @@ SEQ05 \x03`\x00\x00
 
 \x00  
 SEQ01 L\x1e
-SEQ13 
-SEQ04  \x92\x02\x00 
-SEQ12  \xc0\x02\x00 
-SEQ06 SCE238_013\x00 \x06 \x00 
+SEQ14 
+SEQ08 " \x92\x02\x00 
+SEQ08  \xc0\x02\x00 
+SEQ05 SCE238_013\x00 \x06 \x00 
 SEQ07  
 SEQ01 
-SEQ03 \xb0\x83\x01\x0c
-SEQ05  \x92\x02\x00 
-SEQ12 \x03\x05\x00\x00TextWindowOffDirect V \x00 
-SEQ10   
+SEQ10 \xb0\x83\x01\x0c
+SEQ11  \x92\x02\x00 
+SEQ08 \x03\x05\x00\x00TextWindowOffDirect V \x00 
+SEQ06   
 SEQ01 
-SEQ12 \x0c
-SEQ04   \x04\x00\x00\r\x00\x00 \x01\x00
-SEQ13 
-SEQ04   \x08\x00\x00\r\x00\x00 \x00\x00\x00
-SEQ13 
-SEQ04  \xf6\x02\x00 
+SEQ08 \x0c
+SEQ08 "  \x04\x00\x00\r\x00\x00 \x01\x00
+SEQ14 
+SEQ08 "  \x08\x00\x00\r\x00\x00 \x00\x00\x00
+SEQ14 
+SEQ08 " \xf6\x02\x00 
 SEQ02 SePlay SPC01 \xd8 \x00 
-SEQ10   
+SEQ06   
 SEQ01 \xca\x00
-SEQ13 
-SEQ04  \xde\x13\x00 
-SEQ12 \x03\x04\x00\x00BgNormalFadeIn SPC01 \x1a!\x00 
-SEQ10   
+SEQ14 
+SEQ08 " \xde\x13\x00 
+SEQ03 BgNormalFadeIn SPC01 \x1a!\x00 
+SEQ06   
 SEQ01 
-SEQ12 \x0c
-SEQ04  \xf6\x02\x00 
+SEQ08 \x0c
+SEQ08 " \xf6\x02\x00 
 SEQ02 SeWait SPC01 d!\x00 
-SEQ10   
+SEQ06   
 SEQ01 \xc9\x00
-SEQ13 
-SEQ04  \xde\x13\x00 
-SEQ12  \x1a!\x00 
-SEQ10  \x92\x02\x00 
-SEQ12 \x03\x04\x00\x00TextWindowOn SPC03 \xc0!\x00 
-SEQ10 \x03\x12\x00\x00
+SEQ14 
+SEQ08 " \xde\x13\x00 
+SEQ08  \x1a!\x00 
+SEQ06  \x92\x02\x00 
+SEQ03 TextWindowOn SPC03 \xc0!\x00 
+SEQ06 \x03\x12\x00\x00
  
 \n\n\n\n\n\n\n\n\n\n　　　　　　　　　　「あたらしいせかい。」\
 
 \x00  
 SEQ01 \xe4!
-SEQ13 
-SEQ04  \x92\x02\x00 
-SEQ12  \xc0\x02\x00 
-SEQ10   
+SEQ14 
+SEQ08 " \x92\x02\x00 
+SEQ08  \xc0\x02\x00 
+SEQ06   
 SEQ01 \x07\x01
-SEQ13 
-SEQ04  \xf6\x02\x00 
-SEQ12   \x03\x00 
-SEQ06 SCE238_014\x00 \x9a"\x00 
+SEQ14 
+SEQ08 " \xf6\x02\x00 
+SEQ08   \x03\x00 
+SEQ05 SCE238_014\x00 \x9a"\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xb4\x83\x01\x0c
-SEQ05 \x03\x7f\x00\x00
+SEQ10 \xb4\x83\x01\x0c
+SEQ11 \x03\x7f\x00\x00
  
 ドン・ドン・ドン・ドン……@
 \nなにかが身体を押しつぶそうとしている。\pずっしりと重い塊が、\n腹の上に叩き付けられている。@
@@ -315,14 +315,14 @@ SEQ05 \x03\x7f\x00\x00
 
 \x00\x00  
 SEQ01 \xde"
-SEQ13 
-SEQ04  \x92\x02\x00 
-SEQ12  \xc0\x02\x00 
-SEQ06 SCE238_015\x00 \x14%\x00 
+SEQ14 
+SEQ08 " \x92\x02\x00 
+SEQ08  \xc0\x02\x00 
+SEQ05 SCE238_015\x00 \x14%\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xb8\x83\x01\x0c
-SEQ05 \x03~\x00\x00
+SEQ10 \xb8\x83\x01\x0c
+SEQ11 \x03~\x00\x00
  
 義妹の早桃が、拓司の腹の上に腰掛けて頬を膨らませている。@
 窓からは爽やかな朝日が射し込んでいる。@
@@ -335,14 +335,14 @@ SEQ05 \x03~\x00\x00
 
 \x00  
 SEQ01 X%
-SEQ13 
-SEQ04  \x92\x02\x00 
-SEQ12  \xc0\x02\x00 
-SEQ06 SCE238_016\x00 \x8a'\x00 
+SEQ14 
+SEQ08 " \x92\x02\x00 
+SEQ08  \xc0\x02\x00 
+SEQ05 SCE238_016\x00 \x8a'\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xbc\x83\x01\x0c
-SEQ05 \x03~\x00\x00
+SEQ10 \xbc\x83\x01\x0c
+SEQ11 \x03~\x00\x00
  
 拓司\n　「お、お前なあ。\pもうちょっとおしとやかにならないと、嫁の\n　　もらい手がなくなるぞ？」@
 早桃\n　「う、うっさいわね！\p　早桃は……早桃は結婚なんかしないか\n　　らいいもん。\pだって、早桃、早桃……」@
@@ -354,14 +354,14 @@ SEQ05 \x03~\x00\x00
 
 \x00  
 SEQ01 \xce'
-SEQ13 
-SEQ04  \x92\x02\x00 
-SEQ12  \xc0\x02\x00 
-SEQ06 SCE238_017\x00 \x00*\x00 
+SEQ14 
+SEQ08 " \x92\x02\x00 
+SEQ08  \xc0\x02\x00 
+SEQ05 SCE238_017\x00 \x00*\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xc0\x83\x01\x0c
-SEQ05 \x03w\x00\x00
+SEQ10 \xc0\x83\x01\x0c
+SEQ11 \x03w\x00\x00
  
 早桃\n　「起きるまで何度でも殴ってさしあげてよ、おにいさま？（ニ\n　　ヤリ）」@
 拓司\n　「へいへい、起きますよ。\p起きればいいんでしょ……（よっこ\n　　いしょ）」@
@@ -374,14 +374,14 @@ SEQ05 \x03w\x00\x00
 
 \x00  
 SEQ01 D*
-SEQ13 
-SEQ04  \x92\x02\x00 
-SEQ12  \xc0\x02\x00 
-SEQ06 SCE238_018\x00 Z,\x00 
+SEQ14 
+SEQ08 " \x92\x02\x00 
+SEQ08  \xc0\x02\x00 
+SEQ05 SCE238_018\x00 Z,\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xc4\x83\x01\x0c
-SEQ05 \x03^\x00\x00
+SEQ10 \xc4\x83\x01\x0c
+SEQ11 \x03^\x00\x00
  
 早桃\n　「パ、パンツ！」@
 拓司\n　「パンツ？\p　パンツって……あっ！\p　俺、なんで全裸なんだ\n　　っ！」@
@@ -394,28 +394,28 @@ SEQ05 \x03^\x00\x00
 
 \x00  
 SEQ01 \x9e,
-SEQ13 
-SEQ04  \x92\x02\x00 
-SEQ12  \xc0\x02\x00 
-SEQ10  \x92\x02\x00 
-SEQ12 \x03\x04\x00\x00TextWindowOff SPC02 \\.\x00 
-SEQ10   
+SEQ14 
+SEQ08 " \x92\x02\x00 
+SEQ08  \xc0\x02\x00 
+SEQ06  \x92\x02\x00 
+SEQ03 TextWindowOff SPC02 \\.\x00 
+SEQ06   
 SEQ01 \xc8\x00
-SEQ13 
-SEQ04  \xde\x13\x00 
-SEQ12  \x1a!\x00 
-SEQ10   
+SEQ14 
+SEQ08 " \xde\x13\x00 
+SEQ08  \x1a!\x00 
+SEQ06   
 SEQ01 \x00\x00\x00
-SEQ13 
-SEQ04  \xde\x13\x00 
-SEQ12  \x1a!\x00 
-SEQ10  \x92\x02\x00 
-SEQ12  \xc0!\x00 
-SEQ06 SCE238_019\x00 \x02/\x00 
+SEQ14 
+SEQ08 " \xde\x13\x00 
+SEQ08  \x1a!\x00 
+SEQ06  \x92\x02\x00 
+SEQ08  \xc0!\x00 
+SEQ05 SCE238_019\x00 \x02/\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xc8\x83\x01\x0c
-SEQ05 \x03f\x00\x00
+SEQ10 \xc8\x83\x01\x0c
+SEQ11 \x03f\x00\x00
  
 早桃\n　「まったく！\p　年頃の義妹を何だと思ってるのかなー！」@
 \nぷりぷりと怒りながら、早桃は手早く朝食を皿に盛りつけた。@
@@ -428,14 +428,14 @@ SEQ05 \x03f\x00\x00
 
 \x00  
 SEQ01 F/
-SEQ13 
-SEQ04  \x92\x02\x00 
-SEQ12  \xc0\x02\x00 
-SEQ06 SCE238_020\x00 \x181\x00 
+SEQ14 
+SEQ08 " \x92\x02\x00 
+SEQ08  \xc0\x02\x00 
+SEQ05 SCE238_020\x00 \x181\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xcc\x83\x01\x0c
-SEQ05 \x03w\x00\x00
+SEQ10 \xcc\x83\x01\x0c
+SEQ11 \x03w\x00\x00
  
 拓司\n　「あ、あの～……早桃さん？」@
 早桃\n　「ん？」@
@@ -447,14 +447,14 @@ SEQ05 \x03w\x00\x00
 
 \x00  
 SEQ01 \\1
-SEQ13 
-SEQ04  \x92\x02\x00 
-SEQ12  \xc0\x02\x00 
-SEQ06 SCE238_021\x00 r3\x00 
+SEQ14 
+SEQ08 " \x92\x02\x00 
+SEQ08  \xc0\x02\x00 
+SEQ05 SCE238_021\x00 r3\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xd0\x83\x01\x0c
-SEQ05 \x03>\x00\x00
+SEQ10 \xd0\x83\x01\x0c
+SEQ11 \x03>\x00\x00
  
 早桃\n　「……それとね……を……して……で炒めて……で……」@
 拓司\n　「……」@
@@ -463,19 +463,19 @@ SEQ05 \x03>\x00\x00
 
 \x00\x00  
 SEQ01 \xb63
-SEQ13 
-SEQ04  \x92\x02\x00 
-SEQ12  \xc0\x02\x00 
-SEQ10   
+SEQ14 
+SEQ08 " \x92\x02\x00 
+SEQ08  \xc0\x02\x00 
+SEQ06   
 SEQ01 \x00\x00\x00
-SEQ13 
-SEQ04  \xde\x13\x00 
-SEQ12  \x08\x14\x00 
-SEQ06 SCE238_022\x00 \x1c5\x00 
+SEQ14 
+SEQ08 " \xde\x13\x00 
+SEQ08  \x08\x14\x00 
+SEQ05 SCE238_022\x00 \x1c5\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xd4\x83\x01\x0c
-SEQ05 \x03\x9f\x00\x00
+SEQ10 \xd4\x83\x01\x0c
+SEQ11 \x03\x9f\x00\x00
  
 早桃\n　「……というわけなの。\pわかった、おにいちゃん？！」@
 拓司\n　「はあ、はあ……非常によくわかりました。\p学校遅刻しそうな\n　　くらいわかりました」@
@@ -488,14 +488,14 @@ SEQ05 \x03\x9f\x00\x00
 
   
 SEQ01 `5
-SEQ13 
-SEQ04  \x92\x02\x00 
-SEQ12  \xc0\x02\x00 
-SEQ06 SCE238_023\x00 \x168\x00 
+SEQ14 
+SEQ08 " \x92\x02\x00 
+SEQ08  \xc0\x02\x00 
+SEQ05 SCE238_023\x00 \x168\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xd8\x83\x01\x0c
-SEQ05 \x03C\x00\x00
+SEQ10 \xd8\x83\x01\x0c
+SEQ11 \x03C\x00\x00
  
 拓司\n　「そ、そういう問題ではないような……」@
 早桃\n　「早く早く！\p　早く食べないと間に合わないよ！」@
@@ -505,63 +505,63 @@ SEQ05 \x03C\x00\x00
 
 \x00\x00\x00  
 SEQ01 Z8
-SEQ13 
-SEQ04  \x92\x02\x00 
-SEQ12  \xc0\x02\x00 
-SEQ06 SCE238_024\x00 \xa09\x00 
+SEQ14 
+SEQ08 " \x92\x02\x00 
+SEQ08  \xc0\x02\x00 
+SEQ05 SCE238_024\x00 \xa09\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xdc\x83\x01\x0c
-SEQ05  \xf6\x02\x00 
-SEQ12  \xb4\x18\x00 
-SEQ10   
+SEQ10 \xdc\x83\x01\x0c
+SEQ11  \xf6\x02\x00 
+SEQ08  \xb4\x18\x00 
+SEQ06   
 SEQ01 
-SEQ12 \x0c
-SEQ04   \x04\x00\x00\r\x00\x00 \x01\x00
-SEQ13 
-SEQ04   \x08\x00\x00\r\x00\x00 \x00\x00\x00
-SEQ13 
-SEQ04  \xf6\x02\x00 
-SEQ12  \xd8 \x00 
-SEQ10   
+SEQ08 \x0c
+SEQ08 "  \x04\x00\x00\r\x00\x00 \x01\x00
+SEQ14 
+SEQ08 "  \x08\x00\x00\r\x00\x00 \x00\x00\x00
+SEQ14 
+SEQ08 " \xf6\x02\x00 
+SEQ08  \xd8 \x00 
+SEQ06   
 SEQ01 \xc9\x00
-SEQ13 
-SEQ04  \xde\x13\x00 
-SEQ12  \x1a!\x00 
-SEQ10   
+SEQ14 
+SEQ08 " \xde\x13\x00 
+SEQ08  \x1a!\x00 
+SEQ06   
 SEQ01 
-SEQ12 \x0c
-SEQ04  \xf6\x02\x00 
-SEQ12  d!\x00 
-SEQ10   
+SEQ08 \x0c
+SEQ08 " \xf6\x02\x00 
+SEQ08  d!\x00 
+SEQ06   
 SEQ01 \xc9\x00
-SEQ13 
-SEQ04  \xde\x13\x00 
-SEQ12  \x1a!\x00 
-SEQ10 \x03\x12\x00\x00
+SEQ14 
+SEQ08 " \xde\x13\x00 
+SEQ08  \x1a!\x00 
+SEQ06 \x03\x12\x00\x00
  
 \n\n\n\n\n\n\n\n\n\n　　　　　　　　　　「あたらしいせかい。」\
 
 \x00  
 SEQ01 \x02;
-SEQ13 
-SEQ04  \x92\x02\x00 
-SEQ12  \xc0\x02\x00 
-SEQ10   
+SEQ14 
+SEQ08 " \x92\x02\x00 
+SEQ08  \xc0\x02\x00 
+SEQ06   
 SEQ01 \xc8\x00
-SEQ13 
-SEQ04  \xde\x13\x00 
-SEQ12  \x08\x14\x00 
-SEQ10   
+SEQ14 
+SEQ08 " \xde\x13\x00 
+SEQ08  \x08\x14\x00 
+SEQ06   
 SEQ01 \x04\x01
-SEQ13 
-SEQ04  \xf6\x02\x00 
-SEQ12   \x03\x00 
-SEQ06 SCE238_025\x00 \xec;\x00 
+SEQ14 
+SEQ08 " \xf6\x02\x00 
+SEQ08   \x03\x00 
+SEQ05 SCE238_025\x00 \xec;\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xe0\x83\x01\x0c
-SEQ05 \x03Z\x00\x00
+SEQ10 \xe0\x83\x01\x0c
+SEQ11 \x03Z\x00\x00
  
 夢から覚めた拓司はすべてを悟っていた。@
 腕の中には、紅葉の体温がある。\pそれを逃がさないようにぎゅっ\nと抱きしめて、拓司はいった。@
@@ -574,14 +574,14 @@ SEQ05 \x03Z\x00\x00
 
 \x00  
 SEQ01 0<
-SEQ13 
-SEQ04  \x92\x02\x00 
-SEQ12  \xc0\x02\x00 
-SEQ06 SCE238_026\x00 \xd2=\x00 
+SEQ14 
+SEQ08 " \x92\x02\x00 
+SEQ08  \xc0\x02\x00 
+SEQ05 SCE238_026\x00 \xd2=\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xe4\x83\x01\x0c
-SEQ05 \x03:\x00\x00
+SEQ10 \xe4\x83\x01\x0c
+SEQ11 \x03:\x00\x00
  
 拓司\n　「将来、嫁さんにしてやるって」@
 紅葉\n　「……思い出したんだ？」@
@@ -591,19 +591,19 @@ SEQ05 \x03:\x00\x00
 
 \x00  
 SEQ01 \x16>
-SEQ13 
-SEQ04  \x92\x02\x00 
-SEQ12  \xc0\x02\x00 
-SEQ10   
+SEQ14 
+SEQ08 " \x92\x02\x00 
+SEQ08  \xc0\x02\x00 
+SEQ06   
 SEQ01 /\x00
-SEQ13 
-SEQ04  \xde\x13\x00 
-SEQ12  \x08\x14\x00 
-SEQ06 SCE238_027\x00 l?\x00 
+SEQ14 
+SEQ08 " \xde\x13\x00 
+SEQ08  \x08\x14\x00 
+SEQ05 SCE238_027\x00 l?\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xe8\x83\x01\x0c
-SEQ05 \x03r\x00\x00
+SEQ10 \xe8\x83\x01\x0c
+SEQ11 \x03r\x00\x00
  
 紅葉は泣いていた。@
 穏やかな笑顔を浮かべながら、ぽろぽろと大粒の涙を流していた。\n\p拓司が初めて見る、紅葉の涙だった。@
@@ -617,14 +617,14 @@ SEQ05 \x03r\x00\x00
 
 \x00  
 SEQ01 \xb0?
-SEQ13 
-SEQ04  \x92\x02\x00 
-SEQ12  \xc0\x02\x00 
-SEQ06 SCE238_028\x00 \xb2A\x00 
+SEQ14 
+SEQ08 " \x92\x02\x00 
+SEQ08  \xc0\x02\x00 
+SEQ05 SCE238_028\x00 \xb2A\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xec\x83\x01\x0c
-SEQ05 \x03R\x00\x00
+SEQ10 \xec\x83\x01\x0c
+SEQ11 \x03R\x00\x00
  
 拓司\n　「紅葉、こ、これは……？！」@
 紅葉\n　「思い出しちゃったんだね、拓司。\pもう……お別れだよ」@
@@ -634,14 +634,14 @@ SEQ05 \x03R\x00\x00
 
 \x00\x00\x00  
 SEQ01 \xf6A
-SEQ13 
-SEQ04  \x92\x02\x00 
-SEQ12  \xc0\x02\x00 
-SEQ06 SCE238_029\x00 xC\x00 
+SEQ14 
+SEQ08 " \x92\x02\x00 
+SEQ08  \xc0\x02\x00 
+SEQ05 SCE238_029\x00 xC\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xf0\x83\x01\x0c
-SEQ05 \x03^\x00\x00
+SEQ10 \xf0\x83\x01\x0c
+SEQ11 \x03^\x00\x00
  
 拓司\n　「どうしてだ！\p　どうしてなんだ、紅葉！」@
 紅葉\n　「だってあたしは……思い出の国の住人だから」@
@@ -651,14 +651,14 @@ SEQ05 \x03^\x00\x00
 
 \x00  
 SEQ01 \xbcC
-SEQ13 
-SEQ04  \x92\x02\x00 
-SEQ12  \xc0\x02\x00 
-SEQ06 SCE238_030\x00 nE\x00 
+SEQ14 
+SEQ08 " \x92\x02\x00 
+SEQ08  \xc0\x02\x00 
+SEQ05 SCE238_030\x00 nE\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xf4\x83\x01\x0c
-SEQ05 \x03\x85\x00\x00
+SEQ10 \xf4\x83\x01\x0c
+SEQ11 \x03\x85\x00\x00
  
 紅葉\n　「交通事故にあったとき……あなたはこの世界に迷い込んだの。\n　　\p３年前の世界に……あなたの記憶の奥に眠っていた世界に。@
 　　あなたは１５歳の虎菱拓司じゃなくて、１８歳の虎菱拓司な\n　　の。\pそしてこの世界は、あなたが見ている……夢のようなも\n　　のなの」@
@@ -669,14 +669,14 @@ SEQ05 \x03\x85\x00\x00
 
 \x00  
 SEQ01 \xb2E
-SEQ13 
-SEQ04  \x92\x02\x00 
-SEQ12  \xc0\x02\x00 
-SEQ06 SCE238_031\x00 \x00H\x00 
+SEQ14 
+SEQ08 " \x92\x02\x00 
+SEQ08  \xc0\x02\x00 
+SEQ05 SCE238_031\x00 \x00H\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xf8\x83\x01\x0c
-SEQ05 \x03\x8f\x00\x00
+SEQ10 \xf8\x83\x01\x0c
+SEQ11 \x03\x8f\x00\x00
  
 拓司\n　「そんなことはどうでもいい！\p　俺はお前と一緒に……ここで\n　　生きる！\p　この世界で生きていく！」@
 紅葉\n　「だめよ。\p思い出は、消えていくの。\pどんなに大切な思い出も\n　　……忘れちゃう。\p拓司は今、この世界が思い出だってことに\n　　気づいてしまった。\pだから……消えるの」@
@@ -687,14 +687,14 @@ SEQ05 \x03\x8f\x00\x00
 
 \x00  
 SEQ01 DH
-SEQ13 
-SEQ04  \x92\x02\x00 
-SEQ12  \xc0\x02\x00 
-SEQ06 SCE238_032\x00 \xbaJ\x00 
+SEQ14 
+SEQ08 " \x92\x02\x00 
+SEQ08  \xc0\x02\x00 
+SEQ05 SCE238_032\x00 \xbaJ\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xfc\x83\x01\x0c
-SEQ05 \x03p\x00\x00
+SEQ10 \xfc\x83\x01\x0c
+SEQ11 \x03p\x00\x00
  
 紅葉\n　「あなたが思い出さなければいいって……そう思ってた。@
 　　そうすれば、あなたはずっとこの世界の住人で……私はあな\n　　たの恋人でいられたから。\pでも、そんなの間違ってる。@
@@ -706,14 +706,14 @@ SEQ05 \x03p\x00\x00
 
 \x00  
 SEQ01 \xfeJ
-SEQ13 
-SEQ04  \x92\x02\x00 
-SEQ12  \xc0\x02\x00 
-SEQ06 SCE238_033\x00 \xf8L\x00 
+SEQ14 
+SEQ08 " \x92\x02\x00 
+SEQ08  \xc0\x02\x00 
+SEQ05 SCE238_033\x00 \xf8L\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x00\x84\x01\x0c
-SEQ05 \x03\xb0\x00\x00
+SEQ10 \x00\x84\x01\x0c
+SEQ11 \x03\xb0\x00\x00
  
 紅葉\n　「ペンダントの力であなたがホントの世界に帰っちゃうのは辛\n　　い。\pでも……それが正しいことだから。\pあなたには、あなた\n　　の世界がある。\pまだたどり着けないかもしれないけど、本当\n　　の世界が、あなたには用意されているはずだから。@
 　　ペンダントを開いて、拓司」@
@@ -728,14 +728,14 @@ SEQ05 \x03\xb0\x00\x00
 
 \x00\x00  
 SEQ01 <M
-SEQ13 
-SEQ04  \x92\x02\x00 
-SEQ12  \xc0\x02\x00 
-SEQ06 SCE238_034\x00 6P\x00 
+SEQ14 
+SEQ08 " \x92\x02\x00 
+SEQ08  \xc0\x02\x00 
+SEQ05 SCE238_034\x00 6P\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x04\x84\x01\x0c
-SEQ05 \x03`\x00\x00
+SEQ10 \x04\x84\x01\x0c
+SEQ11 \x03`\x00\x00
  
 紅葉\n　「大丈夫。\pホントの世界に戻れば、あたしのことは忘れる。@
 　　この町のことも……なにもかも。\pそうなれば悲しみも消える\n　　から」@
@@ -747,58 +747,58 @@ SEQ05 \x03`\x00\x00
 
 \x00  
 SEQ01 zP
-SEQ13 
-SEQ04  \x92\x02\x00 
-SEQ12  \xc0\x02\x00 
-SEQ06 SCE238_035\x00 4R\x00 
+SEQ14 
+SEQ08 " \x92\x02\x00 
+SEQ08  \xc0\x02\x00 
+SEQ05 SCE238_035\x00 4R\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x08\x84\x01\x0c
-SEQ05 \x03=\x00\x00
+SEQ10 \x08\x84\x01\x0c
+SEQ11 \x03=\x00\x00
  
 紅葉\n　「拓司……精一杯ホントの世界を生きて。\pあたしたちを……思\n　　い出を裏切らないで、生きて。\p怖くなんかないよ、だって、\n　　あたしたちはいつも拓司の中にいるから。\p拓司は、ひとりじ\n　　ゃないから」@
 \nひかりが爆発した。\
 
 \x00\x00\x00  
 SEQ01 xR
-SEQ13 
-SEQ04  \x92\x02\x00 
-SEQ12  \xc0\x02\x00 
-SEQ10   
+SEQ14 
+SEQ08 " \x92\x02\x00 
+SEQ08  \xc0\x02\x00 
+SEQ06   
 SEQ01 \xc8\x00
-SEQ13 
-SEQ04  \xde\x13\x00 
-SEQ12  \x08\x14\x00 
-SEQ10  \xf6\x02\x00 
-SEQ12  \xb4\x18\x00 
-SEQ06 SCE238_036\x00 \xf4S\x00 
+SEQ14 
+SEQ08 " \xde\x13\x00 
+SEQ08  \x08\x14\x00 
+SEQ06  \xf6\x02\x00 
+SEQ08  \xb4\x18\x00 
+SEQ05 SCE238_036\x00 \xf4S\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x0c\x84\x01\x0c
-SEQ05 \x03\x12\x00\x00
+SEQ10 \x0c\x84\x01\x0c
+SEQ11 \x03\x12\x00\x00
  
 \n\n\n\n\n\n\n\n\n\n　　　　　　　　　　「あたらしいせかい。」\
 
 \x00  
 SEQ01 8T
-SEQ13 
-SEQ04  \x92\x02\x00 
-SEQ12  \xc0\x02\x00 
-SEQ10   
+SEQ14 
+SEQ08 " \x92\x02\x00 
+SEQ08  \xc0\x02\x00 
+SEQ06   
 SEQ01 \x08\x01
-SEQ13 
-SEQ04  \xf6\x02\x00 
-SEQ12   \x03\x00 
-SEQ10   
+SEQ14 
+SEQ08 " \xf6\x02\x00 
+SEQ08   \x03\x00 
+SEQ06   
 SEQ01 0\x00
-SEQ13 
-SEQ04  \xde\x13\x00 
-SEQ12  \x08\x14\x00 
-SEQ06 SCE238_037\x00 "U\x00 
+SEQ14 
+SEQ08 " \xde\x13\x00 
+SEQ08  \x08\x14\x00 
+SEQ05 SCE238_037\x00 "U\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x10\x84\x01\x0c
-SEQ05 \x03d\x00\x00
+SEQ10 \x10\x84\x01\x0c
+SEQ11 \x03d\x00\x00
  
 なたねの目には、涙が浮かんでいた。@
 それを見て、拓司はたまらなくせつなくなった。@
@@ -807,14 +807,14 @@ SEQ05 \x03d\x00\x00
 
 \x00  
 SEQ01 fU
-SEQ13 
-SEQ04  \x92\x02\x00 
-SEQ12  \xc0\x02\x00 
-SEQ06 SCE238_038\x00 0W\x00 
+SEQ14 
+SEQ08 " \x92\x02\x00 
+SEQ08  \xc0\x02\x00 
+SEQ05 SCE238_038\x00 0W\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x14\x84\x01\x0c
-SEQ05 \x03\x92\x00\x00
+SEQ10 \x14\x84\x01\x0c
+SEQ11 \x03\x92\x00\x00
  
 なたね\n　「虎菱くんは……私のこと、怖くないの？」@
 拓司\n　「怖い？」@
@@ -823,14 +823,14 @@ SEQ05 \x03\x92\x00\x00
 
 \x00\x00\x00  
 SEQ01 tW
-SEQ13 
-SEQ04  \x92\x02\x00 
-SEQ12  \xc0\x02\x00 
-SEQ06 SCE238_039\x00 \xf6Y\x00 
+SEQ14 
+SEQ08 " \x92\x02\x00 
+SEQ08  \xc0\x02\x00 
+SEQ05 SCE238_039\x00 \xf6Y\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x18\x84\x01\x0c
-SEQ05 \x03^\x00\x00
+SEQ10 \x18\x84\x01\x0c
+SEQ11 \x03^\x00\x00
  
 拓司\n　「人間を信じろ、とは俺にはいえない。\p雲居さんがこれまで\n　　体験してきた辛いこと、哀しいことを、俺は本当の意味で共\n　　有することはできないから。\p雲居さんが流してきた涙の量\n　　を、俺は知らないから。\pだから……おれはこういうことしか\n　　できない」@
 なたね\n　「……」@
@@ -840,14 +840,14 @@ SEQ05 \x03^\x00\x00
 
 \x00\x00\x00  
 SEQ01 :Z
-SEQ13 
-SEQ04  \x92\x02\x00 
-SEQ12  \xc0\x02\x00 
-SEQ06 SCE238_040\x00 \xec[\x00 
+SEQ14 
+SEQ08 " \x92\x02\x00 
+SEQ08  \xc0\x02\x00 
+SEQ05 SCE238_040\x00 \xec[\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x1c\x84\x01\x0c
-SEQ05 \x03g\x00\x00
+SEQ10 \x1c\x84\x01\x0c
+SEQ11 \x03g\x00\x00
  
 なたね\n　「信じて……いいんだね？\p　私、誰かを信じてもいいんだよね\n　　？」@
 拓司\n　「ああ。\p物語の終わりまで、俺が責任持って信じられるヤツに\n　　なってやるさ」@
@@ -857,81 +857,81 @@ SEQ05 \x03g\x00\x00
 
 \x00  
 SEQ01 0\\
-SEQ13 
-SEQ04  \x92\x02\x00 
-SEQ12  \xc0\x02\x00 
-SEQ06 SCE238_041\x00 \x06^\x00 
+SEQ14 
+SEQ08 " \x92\x02\x00 
+SEQ08  \xc0\x02\x00 
+SEQ05 SCE238_041\x00 \x06^\x00 
 SEQ07  
 SEQ01 
-SEQ03  \x84\x01\x0c
-SEQ05  \x92\x02\x00 
-SEQ12  \\.\x00 
-SEQ10  \xf6\x02\x00 
-SEQ12  \xb4\x18\x00 
-SEQ10   
+SEQ10  \x84\x01\x0c
+SEQ11  \x92\x02\x00 
+SEQ08  \\.\x00 
+SEQ06  \xf6\x02\x00 
+SEQ08  \xb4\x18\x00 
+SEQ06   
 SEQ01 
-SEQ12 \x0c
-SEQ04   \x04\x00\x00\r\x00\x00 \x01\x00
-SEQ13 
-SEQ04   \x08\x00\x00\r\x00\x00 \x00\x00\x00
-SEQ13 
-SEQ04  \xf6\x02\x00 
-SEQ12  \xd8 \x00 
-SEQ10   
+SEQ08 \x0c
+SEQ08 "  \x04\x00\x00\r\x00\x00 \x01\x00
+SEQ14 
+SEQ08 "  \x08\x00\x00\r\x00\x00 \x00\x00\x00
+SEQ14 
+SEQ08 " \xf6\x02\x00 
+SEQ08  \xd8 \x00 
+SEQ06   
 SEQ01 \xca\x00
-SEQ13 
-SEQ04  \xde\x13\x00 
-SEQ12  \x1a!\x00 
-SEQ10   
+SEQ14 
+SEQ08 " \xde\x13\x00 
+SEQ08  \x1a!\x00 
+SEQ06   
 SEQ01 
-SEQ12 \x0c
-SEQ04  \xf6\x02\x00 
-SEQ12  d!\x00 
-SEQ10   
+SEQ08 \x0c
+SEQ08 " \xf6\x02\x00 
+SEQ08  d!\x00 
+SEQ06   
 SEQ01 \xc9\x00
-SEQ13 
-SEQ04  \xde\x13\x00 
-SEQ12  \x1a!\x00 
-SEQ10  \x92\x02\x00 
-SEQ12  \xc0!\x00 
-SEQ10 \x03\x13\x00\x00
+SEQ14 
+SEQ08 " \xde\x13\x00 
+SEQ08  \x1a!\x00 
+SEQ06  \x92\x02\x00 
+SEQ08  \xc0!\x00 
+SEQ06 \x03\x13\x00\x00
  
 \n\n\n\n\n\n\n\n\n\n\n　　　　　　　　　　「あたらしいせかい。」\
 
 \x00\x00\x00  
 SEQ01 \x9c_
-SEQ13 
-SEQ04  \x92\x02\x00 
-SEQ12  \xc0\x02\x00 
-SEQ10   
+SEQ14 
+SEQ08 " \x92\x02\x00 
+SEQ08  \xc0\x02\x00 
+SEQ06   
 SEQ01 \xc8\x00
-SEQ13 
-SEQ04  \xde\x13\x00 
-SEQ12  \x08\x14\x00 
-SEQ10   
+SEQ14 
+SEQ08 " \xde\x13\x00 
+SEQ08  \x08\x14\x00 
+SEQ06   
 SEQ01 \n\x01
-SEQ13 
-SEQ04  \xf6\x02\x00 
-SEQ12   \x03\x00 
-SEQ06 SCE238_042\x00 \x8a`\x00 
+SEQ14 
+SEQ08 " \xf6\x02\x00 
+SEQ08   \x03\x00 
+SEQ05 SCE238_042\x00 \x8a`\x00 
 SEQ07  
 SEQ01 
-SEQ03 $\x84\x01\x0c
-SEQ05 \x03\x1b\x00\x00
+SEQ10 $\x84\x01\x0c
+SEQ11 \x03\x1b\x00\x00
  
 拓司は震える手でリターンキーを押した。@
 漆黒のモニターに、滝のように文字が流れ出し、明滅する。\
 
 \x00\x00\x00  
 SEQ01 \xce`
-SEQ13 
-SEQ04  \x92\x02\x00 
-SEQ12  \xc0\x02\x00 
-SEQ06 SCE238_043\x00 ta\x00 
+SEQ14 
+SEQ08 " \x92\x02\x00 
+SEQ08  \xc0\x02\x00 
+SEQ05 SCE238_043\x00 ta\x00 
 SEQ07  
 SEQ01 
-SEQ03 (\x84\x01\x0c
-SEQ05 \x03\xbf\x00\x00
+SEQ10 (\x84\x01\x0c
+SEQ11 \x03\xbf\x00\x00
  
 ×月×日@
 指示書／入力データ設定@
@@ -952,14 +952,14 @@ SEQ05 \x03\xbf\x00\x00
 
 \x00  
 SEQ01 \xb8a
-SEQ13 
-SEQ04  \x92\x02\x00 
-SEQ12  \xc0\x02\x00 
-SEQ06 SCE238_044\x00 \xeed\x00 
+SEQ14 
+SEQ08 " \x92\x02\x00 
+SEQ08  \xc0\x02\x00 
+SEQ05 SCE238_044\x00 \xeed\x00 
 SEQ07  
 SEQ01 
-SEQ03 ,\x84\x01\x0c
-SEQ05 \x031\x00\x00
+SEQ10 ,\x84\x01\x0c
+SEQ11 \x031\x00\x00
  
 拓司は思わず叫んだ。@
 \n拓司\n　「あの世界はバーチャルリアリティだったというのか？！」@
@@ -967,14 +967,14 @@ SEQ05 \x031\x00\x00
 
 \x00  
 SEQ01 2e
-SEQ13 
-SEQ04  \x92\x02\x00 
-SEQ12  \xc0\x02\x00 
-SEQ06 SCE238_045\x00 0f\x00 
+SEQ14 
+SEQ08 " \x92\x02\x00 
+SEQ08  \xc0\x02\x00 
+SEQ05 SCE238_045\x00 0f\x00 
 SEQ07  
 SEQ01 
-SEQ03 0\x84\x01\x0c
-SEQ05 \x03d\x00\x00
+SEQ10 0\x84\x01\x0c
+SEQ11 \x03d\x00\x00
  
 すべての謎は解けた。@
 あの世界が仮想現実だとしたら、異常なまでの現実感の希薄さも\n説明できる。\pしかし、だとしたら……だとしたら……この世界が\n仮想現実でないという保証はどこにあるというのだ？@
@@ -982,14 +982,14 @@ SEQ05 \x03d\x00\x00
 
 \x00  
 SEQ01 tf
-SEQ13 
-SEQ04  \x92\x02\x00 
-SEQ12  \xc0\x02\x00 
-SEQ06 SCE238_046\x00 >h\x00 
+SEQ14 
+SEQ08 " \x92\x02\x00 
+SEQ08  \xc0\x02\x00 
+SEQ05 SCE238_046\x00 >h\x00 
 SEQ07  
 SEQ01 
-SEQ03 4\x84\x01\x0c
-SEQ05 \x03\x80\x00\x00
+SEQ10 4\x84\x01\x0c
+SEQ11 \x03\x80\x00\x00
  
 カンナ\n　「混乱しているのね。\pわかるわ。\p私たちレジスタンスは、『合\n　　わせ鏡』って呼んでいるわ。\p世界の真実を知った人間が陥る\n　　現象よ。\pなにが現実なのかわからなくなる。\p自分は誰かが見\n　　ている夢なんじゃないか？\p　ひどい場合は耐えきれなくれ自\n　　殺してしまう」@
 拓司\n　「俺は……どうすればいい？」@
@@ -998,14 +998,14 @@ SEQ05 \x03\x80\x00\x00
 
 \x00  
 SEQ01 \x82h
-SEQ13 
-SEQ04  \x92\x02\x00 
-SEQ12  \xc0\x02\x00 
-SEQ06 SCE238_047\x00 \xbcj\x00 
+SEQ14 
+SEQ08 " \x92\x02\x00 
+SEQ08  \xc0\x02\x00 
+SEQ05 SCE238_047\x00 \xbcj\x00 
 SEQ07  
 SEQ01 
-SEQ03 8\x84\x01\x0c
-SEQ05 \x03R\x00\x00
+SEQ10 8\x84\x01\x0c
+SEQ11 \x03R\x00\x00
  
 カンナ\n　「そう。\pじゃあ、私を愛するといいわ」@
 拓司\n　「なに？」@
@@ -1016,16 +1016,16 @@ SEQ05 \x03R\x00\x00
 
 \x00\x00\x00  
 SEQ01 \x00k
-SEQ13 
-SEQ04  \x92\x02\x00 
-SEQ12  \xc0\x02\x00 
-SEQ10  \xf6\x02\x00 
-SEQ12  \xb4\x18\x00 
-SEQ06 SCE238_048\x00 \x9cl\x00 
+SEQ14 
+SEQ08 " \x92\x02\x00 
+SEQ08  \xc0\x02\x00 
+SEQ06  \xf6\x02\x00 
+SEQ08  \xb4\x18\x00 
+SEQ05 SCE238_048\x00 \x9cl\x00 
 SEQ07  
 SEQ01 
-SEQ03 <\x84\x01\x0c
-SEQ05 \x036\x00\x00
+SEQ10 <\x84\x01\x0c
+SEQ11 \x036\x00\x00
  
 その時だった。@
 沈黙したはずのレーザー砲台が、きしんだ音を立てた。@
@@ -1035,14 +1035,14 @@ SEQ05 \x036\x00\x00
 
 \x00\x00\x00  
 SEQ01 \xe0l
-SEQ13 
-SEQ04  \x92\x02\x00 
-SEQ12  \xc0\x02\x00 
-SEQ06 SCE238_049\x00 \xf2m\x00 
+SEQ14 
+SEQ08 " \x92\x02\x00 
+SEQ08  \xc0\x02\x00 
+SEQ05 SCE238_049\x00 \xf2m\x00 
 SEQ07  
 SEQ01 
-SEQ03 @\x84\x01\x0c
-SEQ05 \x03q\x00\x00
+SEQ10 @\x84\x01\x0c
+SEQ11 \x03q\x00\x00
  
 拓司\n　「カ、カンナ？！」@
 \n拓司は砲台と自分のあいだに割って入ったカンナを、抱き起こし\nた。@
@@ -1053,19 +1053,19 @@ SEQ05 \x03q\x00\x00
 
 \x00  
 SEQ01 6n
-SEQ13 
-SEQ04  \x92\x02\x00 
-SEQ12  \xc0\x02\x00 
-SEQ10   
+SEQ14 
+SEQ08 " \x92\x02\x00 
+SEQ08  \xc0\x02\x00 
+SEQ06   
 SEQ01 \x04\x01
-SEQ13 
-SEQ04  \xf6\x02\x00 
-SEQ12   \x03\x00 
-SEQ06 SCE238_050\x00 hp\x00 
+SEQ14 
+SEQ08 " \xf6\x02\x00 
+SEQ08   \x03\x00 
+SEQ05 SCE238_050\x00 hp\x00 
 SEQ07  
 SEQ01 
-SEQ03 D\x84\x01\x0c
-SEQ05 \x03-\x00\x00
+SEQ10 D\x84\x01\x0c
+SEQ11 \x03-\x00\x00
  
 拓司\n　「……」@
 カンナ\n　「だって、もう、私、あなたのこと……好きだったから」@
@@ -1073,35 +1073,35 @@ SEQ05 \x03-\x00\x00
 
 \x00\x00\x00  
 SEQ01 \xacp
-SEQ13 
-SEQ04  \x92\x02\x00 
-SEQ12  \xc0\x02\x00 
-SEQ10   
+SEQ14 
+SEQ08 " \x92\x02\x00 
+SEQ08  \xc0\x02\x00 
+SEQ06   
 SEQ01 \xc9\x00
-SEQ13 
-SEQ04  \xde\x13\x00 
-SEQ12  \x08\x14\x00 
-SEQ06 SCE238_051\x00 \xceq\x00 
+SEQ14 
+SEQ08 " \xde\x13\x00 
+SEQ08  \x08\x14\x00 
+SEQ05 SCE238_051\x00 \xceq\x00 
 SEQ07  
 SEQ01 
-SEQ03 H\x84\x01\x0c
-SEQ05 \x03 \x00\x00
+SEQ10 H\x84\x01\x0c
+SEQ11 \x03 \x00\x00
  
 拓司の中で何かが弾けた。@
 それは古い虎菱拓司の死を告げるものであり、同時に新しい虎菱\n拓司の誕生を告げる閃きだった。\
 
 \x00  
 SEQ01 \x12r
-SEQ13 
-SEQ04  \x92\x02\x00 
-SEQ12  \xc0\x02\x00 
-SEQ10  \xf6\x02\x00 
-SEQ12  \xb4\x18\x00 
-SEQ10   
+SEQ14 
+SEQ08 " \x92\x02\x00 
+SEQ08  \xc0\x02\x00 
+SEQ06  \xf6\x02\x00 
+SEQ08  \xb4\x18\x00 
+SEQ06   
 SEQ01 \xc8\x00
-SEQ13 
-SEQ04  \xde\x13\x00 
-SEQ12  \x08\x14\x00 
-SEQ10  \x92\x02\x00 
-SEQ12 \x03\x03\x00\x00TextClose SPC02 &s\x00 
-ENDF
+SEQ14 
+SEQ08 " \xde\x13\x00 
+SEQ08  \x08\x14\x00 
+SEQ06  \x92\x02\x00 
+SEQ04 TextClose SPC02 &s\x00 
+FEND

@@ -1,16 +1,16 @@
-STRF
+FSTR
 \x1a\x10\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xaa\r\x00  
 SEQ01 \t\x01
-SEQ13 
-SEQ04 
-SEQ08 .\\Data\\Script\\Bgm.Fob SPC02  \x00\x00 
+SEQ14 
+SEQ08 "
+SEQ12 .\\Data\\Script\\Bgm.Fob SPC02  \x00\x00 
 SEQ02 PlayCD SPC01 J\x00\x00 
-SEQ06 SCE093_001\x00 f\x00\x00 
+SEQ05 SCE093_001\x00 f\x00\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xf0\xa0
-SEQ13 
-SEQ05 \x03N\x00\x00
+SEQ10 \xf0\xa0
+SEQ14 
+SEQ11 \x03N\x00\x00
  
 拓司\n　「それでも、何日持つのかはハッキリさせて欲しい」@
 \n　拓司はいった。@
@@ -20,16 +20,16 @@ SEQ05 \x03N\x00\x00
 \n拓司は絶句した。\w\z
 \x00\x00\x00  
 SEQ01 \xaa\x00
-SEQ13 
-SEQ04 
-SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 \x02\x02\x00 
+SEQ14 
+SEQ08 "
+SEQ13 .\\Data\\Script\\TextFunc.Fob SPC01 \x02\x02\x00 
 SEQ02 TextOn SPC01 0\x02\x00 
-SEQ06 SCE093_002\x00 L\x02\x00 
+SEQ05 SCE093_002\x00 L\x02\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xf4\xa0
-SEQ13 
-SEQ05 \x03\x82\x00\x00
+SEQ10 \xf4\xa0
+SEQ14 
+SEQ11 \x03\x82\x00\x00
  
 拓司\n　「……１年分あれば……まあ……安心はできるんじゃないか？」\n\pなたね\n　「その根拠は？　最終波動がいつやってくるのか予想不可能な\n　　現状において、どうして１年の備蓄が『安心』を与えるんで\n　　すか？」@
 拓司\n　「……。１年というのはあくまでもたとえだ。@
@@ -40,15 +40,15 @@ SEQ05 \x03\x82\x00\x00
 カンナがそれに反応した。\w\z
 \x00  
 SEQ01 \x90\x02
-SEQ13 
-SEQ04  \x02\x02\x00 
-SEQ12  0\x02\x00 
-SEQ06 SCE093_003\x00 \xd2\x04\x00 
+SEQ14 
+SEQ08 " \x02\x02\x00 
+SEQ08  0\x02\x00 
+SEQ05 SCE093_003\x00 \xd2\x04\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xf8\xa0
-SEQ13 
-SEQ05 \x03\x9d\x00\x00
+SEQ10 \xf8\xa0
+SEQ14 
+SEQ11 \x03\x9d\x00\x00
  
 カンナ\n　「そのいいかたは……どうなのかしら、雲居さん？」@
 なたね\n　「なにかご不満でも？」@
@@ -60,15 +60,15 @@ SEQ05 \x03\x9d\x00\x00
 \n拓司が間に入ることで、カンナとなたねは引き離されたが、あと\nには気まずい空気が残っている。\w\z
 \x00  
 SEQ01 \x16\x05
-SEQ13 
-SEQ04  \x02\x02\x00 
-SEQ12  0\x02\x00 
-SEQ06 SCE093_004\x00 \xc4\x07\x00 
+SEQ14 
+SEQ08 " \x02\x02\x00 
+SEQ08  0\x02\x00 
+SEQ05 SCE093_004\x00 \xc4\x07\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xfc\xa0
-SEQ13 
-SEQ05 \x03\xae\x00\x00
+SEQ10 \xfc\xa0
+SEQ14 
+SEQ11 \x03\xae\x00\x00
  
 なたね\n　「……はっきりさせておきたいんですけど」@
 \nやがてなたねがいった。@
@@ -84,15 +84,15 @@ SEQ05 \x03\xae\x00\x00
 　　いつもいつも散々ウソつき呼ばわりしてきたバカタレどもが\n　　私を信じるしか！　くすくすくすくす」\w\z
 \x00  
 SEQ01 \x08\x08
-SEQ13 
-SEQ04  \x02\x02\x00 
-SEQ12  0\x02\x00 
-SEQ06 SCE093_005\x00 \xfa\n\x00 
+SEQ14 
+SEQ08 " \x02\x02\x00 
+SEQ08  0\x02\x00 
+SEQ05 SCE093_005\x00 \xfa\n\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x00\xa1
-SEQ13 
-SEQ05 \x03^\x00\x00
+SEQ10 \x00\xa1
+SEQ14 
+SEQ11 \x03^\x00\x00
  
 カンナがなにかをいいかけた。@
 \nなたね\n　「あっ！」@
@@ -104,17 +104,17 @@ SEQ05 \x03^\x00\x00
 　　あなたたちが余計なことをいうから聞き逃してしまったでし\n　　ょうが！\p　ああ、惜しい！\p　惜しかったなあ！」\w\z
 \x00  
 SEQ01 >\x0b
-SEQ13 
-SEQ04  \x02\x02\x00 
-SEQ12  0\x02\x00 
-SEQ10   
+SEQ14 
+SEQ08 " \x02\x02\x00 
+SEQ08  0\x02\x00 
+SEQ06   
 SEQ01 \xc8\x00
-SEQ13 
-SEQ04 
-SEQ08 .\\Data\\Script\\Bg.Fob SPC03 \n\r\x00 
-SEQ12 \x03\x04\x00\x00BgAutoFadeIn SPC03 4\r\x00 
-SEQ10   \x00\x00 
+SEQ14 
+SEQ08 "
+SEQ12 .\\Data\\Script\\Bg.Fob SPC03 \n\r\x00 
+SEQ03 BgAutoFadeIn SPC03 4\r\x00 
+SEQ06   \x00\x00 
 SEQ02 StopCD SPC01 d\r\x00 
-SEQ10  \x02\x02\x00 
-SEQ12 \x03\x03\x00\x00TextClose SPC02 \x8c\r\x00 
-ENDF
+SEQ06  \x02\x02\x00 
+SEQ04 TextClose SPC02 \x8c\r\x00 
+FEND

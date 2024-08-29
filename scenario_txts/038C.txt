@@ -1,16 +1,16 @@
-STRF
+FSTR
 \x07\x0e\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00X\x0b\x00  
 SEQ01 \x08\x01
-SEQ13 
-SEQ04 
-SEQ08 .\\Data\\Script\\Bgm.Fob SPC02  \x00\x00 
+SEQ14 
+SEQ08 "
+SEQ12 .\\Data\\Script\\Bgm.Fob SPC02  \x00\x00 
 SEQ02 PlayCD SPC01 J\x00\x00 
-SEQ06 SCE038_001\x00 f\x00\x00 
+SEQ05 SCE038_001\x00 f\x00\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x00K
-SEQ13 
-SEQ05 \x03a\x00\x00
+SEQ10 \x00K
+SEQ14 
+SEQ11 \x03a\x00\x00
  
 話題が奈落へと転がり始めたことを悟った拓司は、慌てて話題を\n転じた。@
 \n拓司\n　「おやじから、夏の旅行の話って、聞いてるか？」@
@@ -22,16 +22,16 @@ SEQ05 \x03a\x00\x00
 
 \x00\x00\x00  
 SEQ01 \xaa\x00
-SEQ13 
-SEQ04 
-SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 N\x02\x00 
+SEQ14 
+SEQ08 "
+SEQ13 .\\Data\\Script\\TextFunc.Fob SPC01 N\x02\x00 
 SEQ02 TextOn SPC01 |\x02\x00 
-SEQ06 SCE038_002\x00 \x98\x02\x00 
+SEQ05 SCE038_002\x00 \x98\x02\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x04K
-SEQ13 
-SEQ05 \x03b\x00\x00
+SEQ10 \x04K
+SEQ14 
+SEQ11 \x03b\x00\x00
  
 早桃\n　「……ホント？」@
 拓司\n　「ああ。\pでも香港って言われてもなあ。@
@@ -44,15 +44,15 @@ SEQ05 \x03b\x00\x00
 
 \x00\x00\x00  
 SEQ01 \xdc\x02
-SEQ13 
-SEQ04  N\x02\x00 
-SEQ12  |\x02\x00 
-SEQ06 SCE038_003\x00 \x9e\x04\x00 
+SEQ14 
+SEQ08 " N\x02\x00 
+SEQ08  |\x02\x00 
+SEQ05 SCE038_003\x00 \x9e\x04\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x08K
-SEQ13 
-SEQ05 \x03L\x00\x00
+SEQ10 \x08K
+SEQ14 
+SEQ11 \x03L\x00\x00
  
 早桃\n　「おにいちゃん、カンフー映画好きだもんね」@
 拓司\n　「まあな」@
@@ -65,15 +65,15 @@ SEQ05 \x03L\x00\x00
 
 \x00  
 SEQ01 \xe2\x04
-SEQ13 
-SEQ04  N\x02\x00 
-SEQ12  |\x02\x00 
-SEQ06 SCE038_004\x00 L\x06\x00 
+SEQ14 
+SEQ08 " N\x02\x00 
+SEQ08  |\x02\x00 
+SEQ05 SCE038_004\x00 L\x06\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x0cK
-SEQ13 
-SEQ05 \x03P\x00\x00
+SEQ10 \x0cK
+SEQ14 
+SEQ11 \x03P\x00\x00
  
 早桃\n　「うん」@
 拓司\n　「しかし、おふくろはいいだろうけど、早桃はなあ」@
@@ -84,15 +84,15 @@ SEQ05 \x03P\x00\x00
 
 \x00\x00\x00  
 SEQ01 \x90\x06
-SEQ13 
-SEQ04  N\x02\x00 
-SEQ12  |\x02\x00 
-SEQ06 SCE038_005\x00 \n\x08\x00 
+SEQ14 
+SEQ08 " N\x02\x00 
+SEQ08  |\x02\x00 
+SEQ05 SCE038_005\x00 \n\x08\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x10K
-SEQ13 
-SEQ05 \x03H\x00\x00
+SEQ10 \x10K
+SEQ14 
+SEQ11 \x03H\x00\x00
  
 早桃\n　「……わかってないんだね、おにいちゃん」@
 拓司\n　「わかってない？　@
@@ -104,15 +104,15 @@ SEQ05 \x03H\x00\x00
 
 \x00  
 SEQ01 N\x08
-SEQ13 
-SEQ04  N\x02\x00 
-SEQ12  |\x02\x00 
-SEQ06 SCE038_006\x00 \xa8\t\x00 
+SEQ14 
+SEQ08 " N\x02\x00 
+SEQ08  |\x02\x00 
+SEQ05 SCE038_006\x00 \xa8\t\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x14K
-SEQ13 
-SEQ05 \x03B\x00\x00
+SEQ10 \x14K
+SEQ14 
+SEQ11 \x03B\x00\x00
  
 早桃\n　「憧れとか、そんなぼんやりしたものじゃないの。@
 　　もっとはっきりした……@
@@ -123,9 +123,9 @@ SEQ05 \x03B\x00\x00
 
 \x00  
 SEQ01 \xec\t
-SEQ13 
-SEQ04  N\x02\x00 
-SEQ12  |\x02\x00 
-SEQ10  N\x02\x00 
-SEQ12 \x03\x03\x00\x00TextClose SPC02 :\x0b\x00 
-ENDF
+SEQ14 
+SEQ08 " N\x02\x00 
+SEQ08  |\x02\x00 
+SEQ06  N\x02\x00 
+SEQ04 TextClose SPC02 :\x0b\x00 
+FEND

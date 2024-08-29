@@ -1,9 +1,9 @@
-STRF
+FSTR
 \xab\x04\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xa4\t3\x01\x00\x00\x00\x1e\x03\x00\x03\x03\x00\x00SCE208_001\x00 \x06\x00\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xa0T\x01\x0c
-SEQ05 \x03\x90\x00\x00
+SEQ10 \xa0T\x01\x0c
+SEQ11 \x03\x90\x00\x00
  
 拓司\n　「君は、『学校に籠城した世界』は、おれの過去の記憶だとい\n　　う。\pもしそうだとしたら……結局おれはどうなったんだ？@
 　　籠城した記憶はある。\pでも、いま、どうしてここにいるか\n　　という記憶がない。\pみんなは……早桃や紅葉やカンナはどう\n　　なったんだ？\p　雲居なたねは……御堂は……先生は？」@
@@ -13,10 +13,10 @@ SEQ05 \x03\x90\x00\x00
 
 \x00\x00\x00  
 SEQ01 J\x00
-SEQ13 
-SEQ04 
-SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 \xaa\x02\x00 
+SEQ14 
+SEQ08 "
+SEQ13 .\\Data\\Script\\TextFunc.Fob SPC01 \xaa\x02\x00 
 SEQ02 TextOn SPC01 \xd8\x02\x00 
-SEQ10  \xaa\x02\x00 
-SEQ12 \x03\x03\x00\x00TextClose SPC02 \x00\x03\x00 
-ENDF
+SEQ06  \xaa\x02\x00 
+SEQ04 TextClose SPC02 \x00\x03\x00 
+FEND

@@ -1,20 +1,20 @@
-STRF
+FSTR
 7\x16\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xde\x11\x00\x03\x03\x00\x00SCE028_001\x00 \x06\x00\x00 
 SEQ07  
 SEQ01 
-SEQ03 `;
-SEQ13 
-SEQ05   
+SEQ10 `;
+SEQ14 
+SEQ11   
 SEQ01 
-SEQ12 \x0c
-SEQ04   \x04\x00\x00\r\x00\x00 \x17\x00
-SEQ13 
-SEQ04   \x08\x00\x00\r\x00\x00 \x01\x00
-SEQ13 
-SEQ04 
-SEQ08 .\\Data\\Script\\Bgm.Fob SPC02 \x98\x00\x00 
+SEQ08 \x0c
+SEQ08 "  \x04\x00\x00\r\x00\x00 \x17\x00
+SEQ14 
+SEQ08 "  \x08\x00\x00\r\x00\x00 \x01\x00
+SEQ14 
+SEQ08 "
+SEQ12 .\\Data\\Script\\Bgm.Fob SPC02 \x98\x00\x00 
 SEQ02 SePlay SPC01 \xc2\x00\x00 
-SEQ10 \x03L\x00\x00
+SEQ06 \x03L\x00\x00
  
 　拓司とカンナが初めて出会ったのは、工業団地の廃墟でだった　@
 　深夜２時過ぎ、いつものように町を徘徊していた拓司は、ふらり\n　と工業団地地区へと迷い込んだ。@
@@ -22,57 +22,57 @@ SEQ10 \x03L\x00\x00
 
 \x00  
 SEQ01 \xde\x00
-SEQ13 
-SEQ04 
-SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 .\x02\x00 
+SEQ14 
+SEQ08 "
+SEQ13 .\\Data\\Script\\TextFunc.Fob SPC01 .\x02\x00 
 SEQ02 TextOn SPC01 \\\x02\x00 
-SEQ10 
-SEQ11 
+SEQ06 
+SEQ13 
 CHOICE
 左へ\n右へ\n\l0,2,
 ENDCHOICE
 
 \x00  
 SEQ01 x\x02
-SEQ13 
-SEQ04  .\x02\x00 
-SEQ12  \\\x02\x00 
-SEQ10  .\x02\x00 
-SEQ12 \x03\x03\x00\x00TextClose SPC02 \xda\x02\x00 
-SEQ06 SCE028_002\x00 \xfa\x02\x00 
+SEQ14 
+SEQ08 " .\x02\x00 
+SEQ08  \\\x02\x00 
+SEQ06  .\x02\x00 
+SEQ04 TextClose SPC02 \xda\x02\x00 
+SEQ05 SCE028_002\x00 \xfa\x02\x00 
 SEQ07  
 SEQ01 
-SEQ03 d;
-SEQ13 
-SEQ05 \x03T\x00\x00
+SEQ10 d;
+SEQ14 
+SEQ11 \x03T\x00\x00
  
 　荒れ果てた鉄筋コンクリートの塊は容易に墓標を想起させ、そし\n　て宿命的に幽霊が出るという噂が立った。@
 　ＴＶで『ウワサの怪奇スポット』との興味本位の紹介をされたせ\n　いか、一時は物好きたちがいくらか訪れてはいたが、数年前、団\n　地を囲むように金網のフェンスが張り巡らされたのを機に、この\n　地は完全に沈黙の場所となった。@
 \z
 \x00\x00\x00  
 SEQ01 >\x03
+SEQ14 
+SEQ08 " .\x02\x00 
+SEQ08  \\\x02\x00 
+SEQ06 
 SEQ13 
-SEQ04  .\x02\x00 
-SEQ12  \\\x02\x00 
-SEQ10 
-SEQ11 
 CHOICE
 左へ\n右へ\n\l0,2,
 ENDCHOICE
 
 \x00  
 SEQ01 \xc8\x04
-SEQ13 
-SEQ04  .\x02\x00 
-SEQ12  \\\x02\x00 
-SEQ10  .\x02\x00 
-SEQ12  \xda\x02\x00 
-SEQ06 SCE028_003\x00 8\x05\x00 
+SEQ14 
+SEQ08 " .\x02\x00 
+SEQ08  \\\x02\x00 
+SEQ06  .\x02\x00 
+SEQ08  \xda\x02\x00 
+SEQ05 SCE028_003\x00 8\x05\x00 
 SEQ07  
 SEQ01 
-SEQ03 h;
-SEQ13 
-SEQ05 \x03\xc9\x00\x00
+SEQ10 h;
+SEQ14 
+SEQ11 \x03\xc9\x00\x00
  
 　フェンスは実際のところ２メートル程度の高さしかなかったから\n　、決して乗り越えられないというわけではない（実際、拓司は簡\n　単にそれを乗り越えることができた）。\p故に、フェンスの設置が\n　物理的に侵入者を阻んだとはいえない。@
 　フェンスの設置がこの廃墟に付け加えたもの……それは物理的で\n　はない、なにか精神的ともいうべき閉塞感だった。@
@@ -84,56 +84,56 @@ SEQ05 \x03\xc9\x00\x00
 
 \x00\x00\x00  
 SEQ01 |\x05
+SEQ14 
+SEQ08 " .\x02\x00 
+SEQ08  \\\x02\x00 
+SEQ06 
 SEQ13 
-SEQ04  .\x02\x00 
-SEQ12  \\\x02\x00 
-SEQ10 
-SEQ11 
 CHOICE
 左へ\n右へ\n\l0,2,
 ENDCHOICE
 
 \x00  
 SEQ01 \xda\x08
-SEQ13 
-SEQ04  .\x02\x00 
-SEQ12  \\\x02\x00 
-SEQ10  .\x02\x00 
-SEQ12  \xda\x02\x00 
-SEQ06 SCE028_004\x00 J\t\x00 
+SEQ14 
+SEQ08 " .\x02\x00 
+SEQ08  \\\x02\x00 
+SEQ06  .\x02\x00 
+SEQ08  \xda\x02\x00 
+SEQ05 SCE028_004\x00 J\t\x00 
 SEQ07  
 SEQ01 
-SEQ03 l;
-SEQ13 
-SEQ05 \x03T\x00\x00
+SEQ10 l;
+SEQ14 
+SEQ11 \x03T\x00\x00
  
 　やがて、歳月と雨と自然作用が金網を赤黒く錆びさせ、この地は\n　さらなる陰惨さをその身にまとうこととなった。\p団地の壁にはベ\n　ッタリと染みができ、不法投棄の粗大ゴミが無秩序にあちこちに\n　転がり始めた。@
 　ふざけて訪れることすらはばかられるくらいの深刻さが、手で触\n　れることができるくらいの確かさで敷地内に漂っていた。\
 
 \x00\x00\x00  
 SEQ01 \x8e\t
+SEQ14 
+SEQ08 " .\x02\x00 
+SEQ08  \\\x02\x00 
+SEQ06 
 SEQ13 
-SEQ04  .\x02\x00 
-SEQ12  \\\x02\x00 
-SEQ10 
-SEQ11 
 CHOICE
 左へ\n右へ\n\l0,2,
 ENDCHOICE
 
 \x00  
 SEQ01 \x18\x0b
-SEQ13 
-SEQ04  .\x02\x00 
-SEQ12  \\\x02\x00 
-SEQ10  .\x02\x00 
-SEQ12  \xda\x02\x00 
-SEQ06 SCE028_005\x00 \x88\x0b\x00 
+SEQ14 
+SEQ08 " .\x02\x00 
+SEQ08  \\\x02\x00 
+SEQ06  .\x02\x00 
+SEQ08  \xda\x02\x00 
+SEQ05 SCE028_005\x00 \x88\x0b\x00 
 SEQ07  
 SEQ01 
-SEQ03 p;
-SEQ13 
-SEQ05 \x03\x92\x00\x00
+SEQ10 p;
+SEQ14 
+SEQ11 \x03\x92\x00\x00
  
 　もっとも、拓司にとって、そうした怪談めいた空気など、少しも\n　恐ろしいものではなかった。@
 　割れた窓から通りを見下ろす真っ白な子供の影や、団地の壁にび\n　っしり張り付いている死人の顔などよりももっと恐ろしいものが\n　世界にはあるということを、拓司は知っていた。@
@@ -143,15 +143,15 @@ SEQ05 \x03\x92\x00\x00
 
 \x00  
 SEQ01 \xcc\x0b
-SEQ13 
-SEQ04  .\x02\x00 
-SEQ12  \\\x02\x00 
-SEQ06 SCE028_006\x00 N\x0e\x00 
+SEQ14 
+SEQ08 " .\x02\x00 
+SEQ08  \\\x02\x00 
+SEQ05 SCE028_006\x00 N\x0e\x00 
 SEQ07  
 SEQ01 
-SEQ03 t;
-SEQ13 
-SEQ05 \x03\xae\x00\x00
+SEQ10 t;
+SEQ14 
+SEQ11 \x03\xae\x00\x00
  
 \n/*▲SE02　一回再生（ファイル再生待たず次へ）*/\a2,0,2,0,　ドザッ！@
 \a4,0,0,0,/*▲SE02　一回再生（ファイル再生待たず次へ）*/\a2,0,2,0,　ドザッ！@
@@ -165,14 +165,14 @@ SEQ05 \x03\xae\x00\x00
 
 \x00\x00\x00  
 SEQ01 \x92\x0e
-SEQ13 
-SEQ04  .\x02\x00 
-SEQ12  \\\x02\x00 
-SEQ10   
+SEQ14 
+SEQ08 " .\x02\x00 
+SEQ08  \\\x02\x00 
+SEQ06   
 SEQ01 
-SEQ12 \x0c
-SEQ04  \x98\x00\x00 
+SEQ08 \x0c
+SEQ08 " \x98\x00\x00 
 SEQ02 SeStop SPC01 \xaa\x11\x00 
-SEQ10  .\x02\x00 
-SEQ12  \xda\x02\x00 
-ENDF
+SEQ06  .\x02\x00 
+SEQ08  \xda\x02\x00 
+FEND

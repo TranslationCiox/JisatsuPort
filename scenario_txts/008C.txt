@@ -1,44 +1,44 @@
-STRF
+FSTR
 \x01\x06\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xa4\t3\x01\x00\x00\x00\xa6\x04\x00
-SEQ08 .\\Data\\Script\\Bgm.Fob SPC02 \x06\x00\x00 
+SEQ12 .\\Data\\Script\\Bgm.Fob SPC02 \x06\x00\x00 
 SEQ02 StopCD SPC01 0\x00\x00 
-SEQ10   
+SEQ06   
 SEQ01 \xc8\x00
-SEQ13 
-SEQ04 
-SEQ08 .\\Data\\Script\\Bg.Fob SPC03 f\x00\x00 
-SEQ12 \x03\x04\x00\x00BgAutoFadeIn SPC03 \x90\x00\x00 
-SEQ06 SCE008_001\x00 \xb4\x00\x00 
+SEQ14 
+SEQ08 "
+SEQ12 .\\Data\\Script\\Bg.Fob SPC03 f\x00\x00 
+SEQ03 BgAutoFadeIn SPC03 \x90\x00\x00 
+SEQ05 SCE008_001\x00 \xb4\x00\x00 
 SEQ07  
 SEQ01 
-SEQ03  \x1c
-SEQ13 
-SEQ05 \x031\x00\x00
+SEQ10  \x1c
+SEQ14 
+SEQ11 \x031\x00\x00
  
 拓司\n　「……これが、おれの願望なのか？\p　違う。\pこんなこと、\n　　おれは望んじゃいない」@
 \n拓司は両手で顔を覆った。\pそしてひとつ、大きなためいきの塊\nを吐き出してから目を閉じた。\
 
 \x00  
 SEQ01 \xf8\x00
-SEQ13 
-SEQ04 
-SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 \xdc\x01\x00 
+SEQ14 
+SEQ08 "
+SEQ13 .\\Data\\Script\\TextFunc.Fob SPC01 \xdc\x01\x00 
 SEQ02 TextOn SPC01 \n\x02\x00 
-SEQ06 SCE008_002\x00 &\x02\x00 
+SEQ05 SCE008_002\x00 &\x02\x00 
 SEQ07  
 SEQ01 
-SEQ03 $\x1c
-SEQ13 
-SEQ05   
+SEQ10 $\x1c
+SEQ14 
+SEQ11   
 SEQ01 
-SEQ12 \x0c
-SEQ04   \x04\x00\x00\r\x00\x00 \x06\x00
-SEQ13 
-SEQ04   \x08\x00\x00\r\x00\x00 \x01\x00
-SEQ13 
-SEQ04  \x06\x00\x00 
+SEQ08 \x0c
+SEQ08 "  \x04\x00\x00\r\x00\x00 \x06\x00
+SEQ14 
+SEQ08 "  \x08\x00\x00\r\x00\x00 \x01\x00
+SEQ14 
+SEQ08 " \x06\x00\x00 
 SEQ02 SePlay SPC01 \xc4\x02\x00 
-SEQ10 \x03H\x00\x00
+SEQ06 \x03H\x00\x00
  
 再び目を開けると、そこには変わらず換気ファンが回り、沈黙が\nたゆたっている。@
 ただ、早桃の姿だけがない。@
@@ -52,14 +52,14 @@ SEQ10 \x03H\x00\x00
 
 \x00\x00\x00  
 SEQ01 \xe0\x02
-SEQ13 
-SEQ04  \xdc\x01\x00 
-SEQ12  \n\x02\x00 
-SEQ10   
+SEQ14 
+SEQ08 " \xdc\x01\x00 
+SEQ08  \n\x02\x00 
+SEQ06   
 SEQ01 
-SEQ12 \x0c
-SEQ04  \x06\x00\x00 
+SEQ08 \x0c
+SEQ08 " \x06\x00\x00 
 SEQ02 SeStop SPC01 `\x04\x00 
-SEQ10  \xdc\x01\x00 
-SEQ12 \x03\x03\x00\x00TextClose SPC02 \x88\x04\x00 
-ENDF
+SEQ06  \xdc\x01\x00 
+SEQ04 TextClose SPC02 \x88\x04\x00 
+FEND

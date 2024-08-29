@@ -1,15 +1,15 @@
-STRF
+FSTR
 \xf7+\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00f$\x00  
 SEQ01 2\x00
-SEQ13 
-SEQ04 
-SEQ08 .\\Data\\Script\\Bg.Fob SPC03  \x00\x00 
-SEQ12 \x03\x04\x00\x00BgAutoFadeIn SPC03 J\x00\x00 
-SEQ06 SCE241_001\x00 n\x00\x00 
+SEQ14 
+SEQ08 "
+SEQ12 .\\Data\\Script\\Bg.Fob SPC03  \x00\x00 
+SEQ03 BgAutoFadeIn SPC03 J\x00\x00 
+SEQ05 SCE241_001\x00 n\x00\x00 
 SEQ07  
 SEQ01 
-SEQ03 0\x88\x01\x0c
-SEQ05 \x03T\x00\x00
+SEQ10 0\x88\x01\x0c
+SEQ11 \x03T\x00\x00
  
 カンナが立ち上がった。@
 拓司はカンナの目の奥を見て、ちいさく頷いた。@
@@ -21,15 +21,15 @@ SEQ05 \x03T\x00\x00
 \n紅葉がうつむく。\w\z
 \x00\x00\x00  
 SEQ01 \xb2\x00
-SEQ13 
-SEQ04 
-SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 "\x02\x00 
+SEQ14 
+SEQ08 "
+SEQ13 .\\Data\\Script\\TextFunc.Fob SPC01 "\x02\x00 
 SEQ02 TextOn SPC01 P\x02\x00 
-SEQ06 SCE241_002\x00 l\x02\x00 
+SEQ05 SCE241_002\x00 l\x02\x00 
 SEQ07  
 SEQ01 
-SEQ03 4\x88\x01\x0c
-SEQ05 \x03=\x00\x00
+SEQ10 4\x88\x01\x0c
+SEQ11 \x03=\x00\x00
  
 錦城\n　「はっ。あなた正気？　出ていくがいいわ勝手に出ていって、\n　　死んでしまうがいいわ！　この人殺し！　人殺しッ！」@
 \n錦城は最後まで強気を装っていた。@
@@ -37,14 +37,14 @@ SEQ05 \x03=\x00\x00
 カンナ\n　「ええ……虎菱くん」\w\z
 \x00  
 SEQ01 \xb0\x02
-SEQ13 
-SEQ04  "\x02\x00 
-SEQ12  P\x02\x00 
-SEQ06 SCE241_003\x00 \xde\x03\x00 
+SEQ14 
+SEQ08 " "\x02\x00 
+SEQ08  P\x02\x00 
+SEQ05 SCE241_003\x00 \xde\x03\x00 
 SEQ07  
 SEQ01 
-SEQ03 8\x88\x01\x0c
-SEQ05 \x03M\x00\x00
+SEQ10 8\x88\x01\x0c
+SEQ11 \x03M\x00\x00
  
 拓司は手を伸ばした。@
 ジンジンと痛む腕をもちあげて、カンナに差し出した。@
@@ -56,14 +56,14 @@ SEQ05 \x03M\x00\x00
 \n拓司はカンナを制した。\w\z
 \x00  
 SEQ01 "\x04
-SEQ13 
-SEQ04  "\x02\x00 
-SEQ12  P\x02\x00 
-SEQ06 SCE241_004\x00 \x90\x05\x00 
+SEQ14 
+SEQ08 " "\x02\x00 
+SEQ08  P\x02\x00 
+SEQ05 SCE241_004\x00 \x90\x05\x00 
 SEQ07  
 SEQ01 
-SEQ03 <\x88\x01\x0c
-SEQ05 \x03\x8e\x00\x00
+SEQ10 <\x88\x01\x0c
+SEQ11 \x03\x8e\x00\x00
  
 拓司\n　「もう、そんなことは関係ないんだ。設定なんかどうでもいい。\n　　\p俺はお前が好きだ。同じ傷を負っているとか、背のたかさが\n　　どうだとか、顔立ちがどうだとか、性格がどうだとか、口調\n　　がどうだとか……そんなことを抜きにして、お前という人間\n　　が好きなんだ。だから、いいんだ」@
 カンナ\n　「……」@
@@ -75,29 +75,29 @@ SEQ05 \x03\x8e\x00\x00
 ドアを開き、外の世界へと。\w\z
 \x00\x00\x00  
 SEQ01 \xd4\x05
-SEQ13 
-SEQ04  "\x02\x00 
-SEQ12  P\x02\x00 
-SEQ06 SCE241_005\x00 F\x08\x00 
+SEQ14 
+SEQ08 " "\x02\x00 
+SEQ08  P\x02\x00 
+SEQ05 SCE241_005\x00 F\x08\x00 
 SEQ07  
 SEQ01 
-SEQ03 @\x88\x01\x0c
-SEQ05   
+SEQ10 @\x88\x01\x0c
+SEQ11   
 SEQ01 \x00\x00\x00
-SEQ13 
-SEQ04   \x04\x00\x00\r\x00\x00 \x17\x00
-SEQ13 
-SEQ04   \x08\x00\x00\r\x00\x00 \x00\x00\x00
-SEQ13 
-SEQ04 
-SEQ08 .\\Data\\Script\\Bgm.Fob SPC02 \xd8\x08\x00 
-SEQ12 \x03\x03\x00\x00SePlayEx SPC03 \x02\t\x00 
-SEQ10   
+SEQ14 
+SEQ08 "  \x04\x00\x00\r\x00\x00 \x17\x00
+SEQ14 
+SEQ08 "  \x08\x00\x00\r\x00\x00 \x00\x00\x00
+SEQ14 
+SEQ08 "
+SEQ12 .\\Data\\Script\\Bgm.Fob SPC02 \xd8\x08\x00 
+SEQ04 SePlayEx SPC03 \x02\t\x00 
+SEQ06   
 SEQ01 \xc8\x00
-SEQ13 
-SEQ04   \x00\x00 
-SEQ12  J\x00\x00 
-SEQ10 \x03)\x00\x00
+SEQ14 
+SEQ08 "  \x00\x00 
+SEQ08  J\x00\x00 
+SEQ06 \x03)\x00\x00
  
 拓司\n　「これは……」@
 \n思わず絶句した。@
@@ -105,14 +105,14 @@ SEQ10 \x03)\x00\x00
 というよりもそこは、拓司の知っているどの場所とも異なってい\nた。\w\z
 \x00  
 SEQ01 V\t
-SEQ13 
-SEQ04  "\x02\x00 
-SEQ12  P\x02\x00 
-SEQ06 SCE241_006\x00 4\n\x00 
+SEQ14 
+SEQ08 " "\x02\x00 
+SEQ08  P\x02\x00 
+SEQ05 SCE241_006\x00 4\n\x00 
 SEQ07  
 SEQ01 
-SEQ03 D\x88\x01\x0c
-SEQ05 \x03\x94\x00\x00
+SEQ10 D\x88\x01\x0c
+SEQ11 \x03\x94\x00\x00
  
 眼前に広がっているのは、究極の荒廃だった。@
 天井にびっしりと張り巡らされたクモの巣にも似て、壁には無数\nのひびが入っている。@
@@ -124,14 +124,14 @@ SEQ05 \x03\x94\x00\x00
 あの工業団地の廃墟にさらなる歳月の洗礼を加えて、行き着く果\nてまで荒廃を深化させた－－そんな感じがする。\w\z
 \x00\x00\x00  
 SEQ01 x\n
-SEQ13 
-SEQ04  "\x02\x00 
-SEQ12  P\x02\x00 
-SEQ06 SCE241_007\x00 \x02\r\x00 
+SEQ14 
+SEQ08 " "\x02\x00 
+SEQ08  P\x02\x00 
+SEQ05 SCE241_007\x00 \x02\r\x00 
 SEQ07  
 SEQ01 
-SEQ03 H\x88\x01\x0c
-SEQ05 \x03`\x00\x00
+SEQ10 H\x88\x01\x0c
+SEQ11 \x03`\x00\x00
  
 腐敗した死体が転がっているのを予想していたが、そのようなも\nのはどこにもない。@
 骨や服のかけらすら見つけることができない。@
@@ -140,14 +140,14 @@ SEQ05 \x03`\x00\x00
 もしかしたら、それこそが学生たちのなれの果てなのかもしれな\nい……。\w\z
 \x00  
 SEQ01 F\r
-SEQ13 
-SEQ04  "\x02\x00 
-SEQ12  P\x02\x00 
-SEQ06 SCE241_008\x00 \x00\x0f\x00 
+SEQ14 
+SEQ08 " "\x02\x00 
+SEQ08  P\x02\x00 
+SEQ05 SCE241_008\x00 \x00\x0f\x00 
 SEQ07  
 SEQ01 
-SEQ03 L\x88\x01\x0c
-SEQ05 \x03\x82\x00\x00
+SEQ10 L\x88\x01\x0c
+SEQ11 \x03\x82\x00\x00
  
 カンナ\n　「どうしたの、これ……？　まるで……まるで……」@
 拓司\n　「何十年も経っているみたいだ。\pあの部屋にいるあいだに、い\n　　ったい何があったんだ……？」@
@@ -156,14 +156,14 @@ SEQ05 \x03\x82\x00\x00
 \n拓司\n　「考えるのはやめよう。\p俺たちは最初から、起こっていること\n　　の意味を考え続けてきた。\p説明できない状況に筋を一本通そ\n　　うと……あがいてきた。\pでも、そんなの無駄なんだ。\p意味がわ\n　　からないんじゃない。\p意味なんてないんだ」\w\z
 \x00\x00\x00  
 SEQ01 D\x0f
-SEQ13 
-SEQ04  "\x02\x00 
-SEQ12  P\x02\x00 
-SEQ06 SCE241_009\x00 \x86\x11\x00 
+SEQ14 
+SEQ08 " "\x02\x00 
+SEQ08  P\x02\x00 
+SEQ05 SCE241_009\x00 \x86\x11\x00 
 SEQ07  
 SEQ01 
-SEQ03 P\x88\x01\x0c
-SEQ05 \x03\xa0\x00\x00
+SEQ10 P\x88\x01\x0c
+SEQ11 \x03\xa0\x00\x00
  
 　２人の足音は、校舎の中に大きく響き渡った。@
 不自然な響き方だった。@
@@ -177,14 +177,14 @@ SEQ05 \x03\xa0\x00\x00
 それでも２人は歩き続けた。\w\z
 \x00  
 SEQ01 \xca\x11
-SEQ13 
-SEQ04  "\x02\x00 
-SEQ12  P\x02\x00 
-SEQ06 SCE241_010\x00 \x84\x14\x00 
+SEQ14 
+SEQ08 " "\x02\x00 
+SEQ08  P\x02\x00 
+SEQ05 SCE241_010\x00 \x84\x14\x00 
 SEQ07  
 SEQ01 
-SEQ03 T\x88\x01\x0c
-SEQ05 \x03M\x00\x00
+SEQ10 T\x88\x01\x0c
+SEQ11 \x03M\x00\x00
  
 　階段を降り、廊下を歩いてゆく。@
 渡り廊下を通って、旧校舎に入る。@
@@ -193,14 +193,14 @@ SEQ05 \x03M\x00\x00
 \n拓司\n　「……ここだ」\w\z
 \x00\x00\x00  
 SEQ01 \xc8\x14
-SEQ13 
-SEQ04  "\x02\x00 
-SEQ12  P\x02\x00 
-SEQ06 SCE241_011\x00 6\x16\x00 
+SEQ14 
+SEQ08 " "\x02\x00 
+SEQ08  P\x02\x00 
+SEQ05 SCE241_011\x00 6\x16\x00 
 SEQ07  
 SEQ01 
-SEQ03 X\x88\x01\x0c
-SEQ05 \x03=\x00\x00
+SEQ10 X\x88\x01\x0c
+SEQ11 \x03=\x00\x00
  
 　壁だ。@
 旧保健室の扉を塗り固めたという壁。@
@@ -210,19 +210,19 @@ SEQ05 \x03=\x00\x00
 いや、そもそもそこには何かがあるのだろうか？\w\z
 \x00\x00\x00  
 SEQ01 z\x16
-SEQ13 
-SEQ04  "\x02\x00 
-SEQ12  P\x02\x00 
-SEQ10   
+SEQ14 
+SEQ08 " "\x02\x00 
+SEQ08  P\x02\x00 
+SEQ06   
 SEQ01 3\x00
-SEQ13 
-SEQ04   \x00\x00 
-SEQ12  J\x00\x00 
-SEQ06 SCE241_012\x00 \xdc\x17\x00 
+SEQ14 
+SEQ08 "  \x00\x00 
+SEQ08  J\x00\x00 
+SEQ05 SCE241_012\x00 \xdc\x17\x00 
 SEQ07  
 SEQ01 
-SEQ03 \\\x88\x01\x0c
-SEQ05 \x03M\x00\x00
+SEQ10 \\\x88\x01\x0c
+SEQ11 \x03M\x00\x00
  
 　拓司は考えなかった。@
 /*▲SE15　再生（再生終了を待たず先へ進む）*/\a2,0,15,0,手にした椅子の脚を、がつがつと壁に叩き付けてゆく。@
@@ -232,14 +232,14 @@ SEQ05 \x03M\x00\x00
 カンナ\n　「ええ！」\w\z
   
 SEQ01  \x18
-SEQ13 
-SEQ04  "\x02\x00 
-SEQ12  P\x02\x00 
-SEQ06 SCE241_013\x00 \x8e\x19\x00 
+SEQ14 
+SEQ08 " "\x02\x00 
+SEQ08  P\x02\x00 
+SEQ05 SCE241_013\x00 \x8e\x19\x00 
 SEQ07  
 SEQ01 
-SEQ03 `\x88\x01\x0c
-SEQ05 \x03y\x00\x00
+SEQ10 `\x88\x01\x0c
+SEQ11 \x03y\x00\x00
  
 /*▲SE15　ループ再生（再生終了を待たず先へ進む）*/\a2,0,15,1,　２人は取り憑かれたように、椅子の脚を壁に叩き付けた。@
 一箇所に狙いを絞って叩きつけてゆく。@
@@ -249,14 +249,14 @@ SEQ05 \x03y\x00\x00
 不浄の地と約束の地を隔てる結界の門を必至で叩き続ける放浪者\n……。\w/*▲SE　停止*/\a4,0,0,0,\z
 \x00\x00  
 SEQ01 \xd2\x19
-SEQ13 
-SEQ04  "\x02\x00 
-SEQ12  P\x02\x00 
-SEQ06 SCE241_014\x00 \xf0\x1b\x00 
+SEQ14 
+SEQ08 " "\x02\x00 
+SEQ08  P\x02\x00 
+SEQ05 SCE241_014\x00 \xf0\x1b\x00 
 SEQ07  
 SEQ01 
-SEQ03 d\x88\x01\x0c
-SEQ05 \x03\x96\x00\x00
+SEQ10 d\x88\x01\x0c
+SEQ11 \x03\x96\x00\x00
  
 拓司\n　「！」@
 \nあっけない手応えに驚くと、ガタン、と大きめのコンクリート片\nが床に落ちた。@
@@ -273,14 +273,14 @@ SEQ05 \x03\x96\x00\x00
 そしてそこに救済が用意されていなかった場合、どうすればいい\nのか？\w\z
 \x00  
 SEQ01 4\x1c
-SEQ13 
-SEQ04  "\x02\x00 
-SEQ12  P\x02\x00 
-SEQ06 SCE241_015\x00 \xc6\x1e\x00 
+SEQ14 
+SEQ08 " "\x02\x00 
+SEQ08  P\x02\x00 
+SEQ05 SCE241_015\x00 \xc6\x1e\x00 
 SEQ07  
 SEQ01 
-SEQ03 h\x88\x01\x0c
-SEQ05 \x03A\x00\x00
+SEQ10 h\x88\x01\x0c
+SEQ11 \x03A\x00\x00
  
 と、突然カンナの手がピタリと止まった。@
 \nカンナ\n　「！」@
@@ -290,37 +290,37 @@ SEQ05 \x03A\x00\x00
 顔には、はっきりとした恐怖が張り付いている。\w\z
 \x00\x00\x00  
 SEQ01 \n\x1f
-SEQ13 
-SEQ04  "\x02\x00 
-SEQ12  P\x02\x00 
-SEQ06 SCE241_016\x00 H \x00 
+SEQ14 
+SEQ08 " "\x02\x00 
+SEQ08  P\x02\x00 
+SEQ05 SCE241_016\x00 H \x00 
 SEQ07  
 SEQ01 
-SEQ03 l\x88\x01\x0c
-SEQ05 \x03#\x00\x00
+SEQ10 l\x88\x01\x0c
+SEQ11 \x03#\x00\x00
  
 カンナ\n　「やっぱり聞こえる！　なに？　なんなの、この音ッ？！」@
 拓司\n　「……音？」@
 \n拓司は作業を中断して、耳を澄ませた。\w\z
 \x00\x00\x00  
 SEQ01 \x8c 
-SEQ13 
-SEQ04  "\x02\x00 
-SEQ12  P\x02\x00 
-SEQ06 SCE241_017\x00 R!\x00 
+SEQ14 
+SEQ08 " "\x02\x00 
+SEQ08  P\x02\x00 
+SEQ05 SCE241_017\x00 R!\x00 
 SEQ07  
 SEQ01 
-SEQ03 p\x88\x01\x0c
-SEQ05   
+SEQ10 p\x88\x01\x0c
+SEQ11   
 SEQ01 
-SEQ12 \x0c
-SEQ04   \x04\x00\x00\r\x00\x00 \x10\x00
-SEQ13 
-SEQ04   \x08\x00\x00\r\x00\x00 \x01\x00
-SEQ13 
-SEQ04  \xd8\x08\x00 
+SEQ08 \x0c
+SEQ08 "  \x04\x00\x00\r\x00\x00 \x10\x00
+SEQ14 
+SEQ08 "  \x08\x00\x00\r\x00\x00 \x01\x00
+SEQ14 
+SEQ08 " \xd8\x08\x00 
 SEQ02 SePlay SPC01 \xf0!\x00 
-SEQ10 \x03b\x00\x00
+SEQ06 \x03b\x00\x00
  
 地の底から、ゴ、ゴ、ゴ、ゴ、ゴ……と低い音が響いてくる。@
 床に散らばったコンクリートの破片が、ビリビリと震えて踊る。@
@@ -333,19 +333,19 @@ SEQ10 \x03b\x00\x00
 最終波動がやってきたのだ。\w\z
 \x00  
 SEQ01 \x0c"
-SEQ13 
-SEQ04  "\x02\x00 
-SEQ12  P\x02\x00 
-SEQ10 \x03\r\x00\x00
+SEQ14 
+SEQ08 " "\x02\x00 
+SEQ08  P\x02\x00 
+SEQ06 \x03\r\x00\x00
 CHOICE
 シェルターに駆け戻る\n穴を広げる\n\l0,2,
 ENDCHOICE
 
 \x00\x00\x00  
 SEQ01 \xce#
-SEQ13 
-SEQ04  "\x02\x00 
-SEQ12  P\x02\x00 
-SEQ10  "\x02\x00 
-SEQ12 \x03\x03\x00\x00TextClose SPC02 H$\x00 
-ENDF
+SEQ14 
+SEQ08 " "\x02\x00 
+SEQ08  P\x02\x00 
+SEQ06  "\x02\x00 
+SEQ04 TextClose SPC02 H$\x00 
+FEND

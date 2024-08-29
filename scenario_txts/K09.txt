@@ -1,9 +1,9 @@
-STRF
+FSTR
 &\x0e\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00l\x0b\x00\x03\x03\x00\x00SCEK09_001\x00 \x06\x00\x00 
 SEQ07  
 SEQ01 
-SEQ03 H\xa7\x01\x0c
-SEQ05 \x03;\x00\x00
+SEQ10 H\xa7\x01\x0c
+SEQ11 \x03;\x00\x00
  
 「ここに落ちている袋、どれくらいあると思う？」\nとゆきはいった。@
 私が黙っていると、ゆきは「１６袋」といった。@
@@ -13,27 +13,27 @@ SEQ05 \x03;\x00\x00
 「猫を？」\w\z
 \x00\x00\x00  
 SEQ01 J\x00
-SEQ13 
-SEQ04 
-SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 V\x01\x00 
+SEQ14 
+SEQ08 "
+SEQ13 .\\Data\\Script\\TextFunc.Fob SPC01 V\x01\x00 
 SEQ02 TextOn SPC01 \x84\x01\x00 
-SEQ10   
+SEQ06   
 SEQ01 \xc8\x00
-SEQ13 
-SEQ04 
-SEQ08 .\\Data\\Script\\Bg.Fob SPC03 \xba\x01\x00 
-SEQ12 \x03\x04\x00\x00BgAutoFadeIn SPC03 \xe4\x01\x00 
-SEQ10   
+SEQ14 
+SEQ08 "
+SEQ12 .\\Data\\Script\\Bg.Fob SPC03 \xba\x01\x00 
+SEQ03 BgAutoFadeIn SPC03 \xe4\x01\x00 
+SEQ06   
 SEQ01 \t\x01
-SEQ13 
-SEQ04 
-SEQ08 .\\Data\\Script\\Bgm.Fob SPC02 "\x02\x00 
+SEQ14 
+SEQ08 "
+SEQ12 .\\Data\\Script\\Bgm.Fob SPC02 "\x02\x00 
 SEQ02 PlayCD SPC01 L\x02\x00 
-SEQ06 SCEK09_002\x00 h\x02\x00 
+SEQ05 SCEK09_002\x00 h\x02\x00 
 SEQ07  
 SEQ01 
-SEQ03 L\xa7\x01\x0c
-SEQ05 \x03\x85\x00\x00
+SEQ10 L\xa7\x01\x0c
+SEQ11 \x03\x85\x00\x00
  
 「ここらへん、野良猫がたくさんいるの。@
 　だからマタタビを使えば簡単に集まる。@
@@ -48,14 +48,14 @@ SEQ05 \x03\x85\x00\x00
 「もうわかったから。ありがとう、ゆきちゃん」\w\z
 \x00  
 SEQ01 \xac\x02
-SEQ13 
-SEQ04  V\x01\x00 
-SEQ12  \x84\x01\x00 
-SEQ06 SCEK09_003\x00 \xfa\x04\x00 
+SEQ14 
+SEQ08 " V\x01\x00 
+SEQ08  \x84\x01\x00 
+SEQ05 SCEK09_003\x00 \xfa\x04\x00 
 SEQ07  
 SEQ01 
-SEQ03 P\xa7\x01\x0c
-SEQ05 \x03y\x00\x00
+SEQ10 P\xa7\x01\x0c
+SEQ11 \x03y\x00\x00
  
 　たぶん、ゆきなりのストレス解消法なのだろうと思った。@
 ちょっと前に話題になった矢ガモとか……そういうもの。@
@@ -65,14 +65,14 @@ SEQ05 \x03y\x00\x00
 でも、秘密の大きさは、私に対する信頼の大きさを意味していた。\n\p信頼の輝きが、秘密の暗さを消し去るくらい明るいと信じてこそ\nの告白である以上、秘密が大きくて暗いほど、私は喜ぶべきなの\nだ。\w\z
 \x00  
 SEQ01 >\x05
-SEQ13 
-SEQ04  V\x01\x00 
-SEQ12  \x84\x01\x00 
-SEQ06 SCEK09_004\x00 \\\x07\x00 
+SEQ14 
+SEQ08 " V\x01\x00 
+SEQ08  \x84\x01\x00 
+SEQ05 SCEK09_004\x00 \\\x07\x00 
 SEQ07  
 SEQ01 
-SEQ03 T\xa7\x01\x0c
-SEQ05 \x03\xd0\x00\x00
+SEQ10 T\xa7\x01\x0c
+SEQ11 \x03\xd0\x00\x00
  
 　私は自分の中に生まれた硬いかたまりをかみ砕き、飲み下した。\n\pそして、自分がゆきの秘密を赦したことを伝えたくて、ゆきを優\nしく抱きしめた。@
 けれどもゆきの身体は、私の腕のなかでいつまでも硬くこわばっ\nて動かず、そこには明らかな拒絶が感じられた。@
@@ -86,11 +86,11 @@ SEQ05 \x03\xd0\x00\x00
 「そうすれば死ぬのが怖くなくなると思うから」\w\z
 \x00\x00\x00  
 SEQ01 \xa0\x07
-SEQ13 
-SEQ04  V\x01\x00 
-SEQ12  \x84\x01\x00 
-SEQ10  "\x02\x00 
+SEQ14 
+SEQ08 " V\x01\x00 
+SEQ08  \x84\x01\x00 
+SEQ06  "\x02\x00 
 SEQ02 StopCD SPC01 &\x0b\x00 
-SEQ10  V\x01\x00 
-SEQ12 \x03\x03\x00\x00TextClose SPC02 N\x0b\x00 
-ENDF
+SEQ06  V\x01\x00 
+SEQ04 TextClose SPC02 N\x0b\x00 
+FEND

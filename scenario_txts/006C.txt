@@ -1,10 +1,10 @@
-STRF
+FSTR
 \x0b\x08\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00h\x06\x00\x03\x03\x00\x00SCE006_001\x00 \x06\x00\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x00\x19
-SEQ13 
-SEQ05 \x03.\x00\x00
+SEQ10 \x00\x19
+SEQ14 
+SEQ11 \x03.\x00\x00
  
 拓司\n　「……出て行け」@
 早桃\n　「どうして？」@
@@ -13,16 +13,16 @@ SEQ05 \x03.\x00\x00
 
 \x00  
 SEQ01 J\x00
-SEQ13 
-SEQ04 
-SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 "\x01\x00 
+SEQ14 
+SEQ08 "
+SEQ13 .\\Data\\Script\\TextFunc.Fob SPC01 "\x01\x00 
 SEQ02 TextOn SPC01 P\x01\x00 
-SEQ06 SCE006_002\x00 l\x01\x00 
+SEQ05 SCE006_002\x00 l\x01\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x04\x19
-SEQ13 
-SEQ05 \x03\x98\x00\x00
+SEQ10 \x04\x19
+SEQ14 
+SEQ11 \x03\x98\x00\x00
  
 早桃はネグリジェの裾をつまみ、ゆっくりと持ち上げて見せた。@
 /*HCG02*/\a7,-2,-2,0,\a0,73,2,0,\a6,-2,0,0,幼い肉の合わせ目が、あらわになる。@
@@ -36,15 +36,15 @@ SEQ05 \x03\x98\x00\x00
 
 \x00\x00  
 SEQ01 \xb0\x01
-SEQ13 
-SEQ04  "\x01\x00 
-SEQ12  P\x01\x00 
-SEQ06 SCE006_003\x00 J\x04\x00 
+SEQ14 
+SEQ08 " "\x01\x00 
+SEQ08  P\x01\x00 
+SEQ05 SCE006_003\x00 J\x04\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x08\x19
-SEQ13 
-SEQ05 \x03C\x00\x00
+SEQ10 \x08\x19
+SEQ14 
+SEQ11 \x03C\x00\x00
  
 早桃\n　「見せっこ……しよ？\p　早桃にだけ出させるなんて、ずるい。@
 　　おにいちゃんのも、見せて。\pおち○ちん、見せてくれたら…\n　　…おれいにおにいちゃんにいいこと……してあげる。@
@@ -53,19 +53,19 @@ SEQ05 \x03C\x00\x00
 
 \x00\x00\x00  
 SEQ01 \x8e\x04
-SEQ13 
-SEQ04  "\x01\x00 
-SEQ12  P\x01\x00 
-SEQ10 \x03\x0c\x00\x00
+SEQ14 
+SEQ08 " "\x01\x00 
+SEQ08  P\x01\x00 
+SEQ06 \x03\x0c\x00\x00
 CHOICE
 「……消えろ」\n「……来いよ」\n\l0,2,
 ENDCHOICE
 
 \x00  
 SEQ01 \xd4\x05
-SEQ13 
-SEQ04  "\x01\x00 
-SEQ12  P\x01\x00 
-SEQ10  "\x01\x00 
-SEQ12 \x03\x03\x00\x00TextClose SPC02 J\x06\x00 
-ENDF
+SEQ14 
+SEQ08 " "\x01\x00 
+SEQ08  P\x01\x00 
+SEQ06  "\x01\x00 
+SEQ04 TextClose SPC02 J\x06\x00 
+FEND

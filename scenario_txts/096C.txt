@@ -1,25 +1,25 @@
-STRF
+FSTR
 \x17\x10\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x000\r\x00\x03\x03\x00\x00SCE096_001\x00 \x06\x00\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xa0\xa5
-SEQ13 
-SEQ05 \x03\x11\x00\x00
+SEQ10 \xa0\xa5
+SEQ14 
+SEQ11 \x03\x11\x00\x00
  
 \n\n\n\n\n\n\n\n\n\n　　　　　　　　　　　　　『３日目』\
 
 \x00\x00\x00  
 SEQ01 J\x00
-SEQ13 
-SEQ04 
-SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 \xae\x00\x00 
+SEQ14 
+SEQ08 "
+SEQ13 .\\Data\\Script\\TextFunc.Fob SPC01 \xae\x00\x00 
 SEQ02 TextOn SPC01 \xdc\x00\x00 
-SEQ06 SCE096_002\x00 \xf8\x00\x00 
+SEQ05 SCE096_002\x00 \xf8\x00\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xa4\xa5
-SEQ13 
-SEQ05 \x03q\x00\x00
+SEQ10 \xa4\xa5
+SEQ14 
+SEQ11 \x03q\x00\x00
  
 　全員の顔に疲労の影を見た拓司は、なたねに提案をした。@
 \n拓司\n　「身体を濡れタオルで洗うのは５日に１回って話だったけど…\n　　…」@
@@ -32,15 +32,15 @@ SEQ05 \x03q\x00\x00
 
 \x00  
 SEQ01 <\x01
-SEQ13 
-SEQ04  \xae\x00\x00 
-SEQ12  \xdc\x00\x00 
-SEQ06 SCE096_003\x00 :\x03\x00 
+SEQ14 
+SEQ08 " \xae\x00\x00 
+SEQ08  \xdc\x00\x00 
+SEQ05 SCE096_003\x00 :\x03\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xa8\xa5
-SEQ13 
-SEQ05 \x03i\x00\x00
+SEQ10 \xa8\xa5
+SEQ14 
+SEQ11 \x03i\x00\x00
  
 なたね\n　「……５日に１回で衛生的には問題はないと思うんですけど」@
 拓司\n　「衛生的な問題じゃない。\p精神的な問題だ」@
@@ -49,27 +49,27 @@ SEQ05 \x03i\x00\x00
 
 \x00  
 SEQ01 ~\x03
-SEQ13 
-SEQ04  \xae\x00\x00 
-SEQ12  \xdc\x00\x00 
-SEQ10   
+SEQ14 
+SEQ08 " \xae\x00\x00 
+SEQ08  \xdc\x00\x00 
+SEQ06   
 SEQ01  \x00
-SEQ13 
-SEQ04 
-SEQ08 .\\Data\\Script\\Bg.Fob SPC03 v\x05\x00 
-SEQ12 \x03\x04\x00\x00BgAutoFadeIn SPC03 \xa0\x05\x00 
-SEQ10   
+SEQ14 
+SEQ08 "
+SEQ12 .\\Data\\Script\\Bg.Fob SPC03 v\x05\x00 
+SEQ03 BgAutoFadeIn SPC03 \xa0\x05\x00 
+SEQ06   
 SEQ01 \x07\x01
-SEQ13 
-SEQ04 
-SEQ08 .\\Data\\Script\\Bgm.Fob SPC02 \xde\x05\x00 
+SEQ14 
+SEQ08 "
+SEQ12 .\\Data\\Script\\Bgm.Fob SPC02 \xde\x05\x00 
 SEQ02 PlayCD SPC01 \x08\x06\x00 
-SEQ06 SCE096_004\x00 $\x06\x00 
+SEQ05 SCE096_004\x00 $\x06\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xac\xa5
-SEQ13 
-SEQ05 \x03q\x00\x00
+SEQ10 \xac\xa5
+SEQ14 
+SEQ11 \x03q\x00\x00
  
 早桃\n　「やったあ！\p　もう身体がべとべとで、気持ち悪くてしかたな\n　　かったんだよね！」@
 カンナ\n　「うう～ん、生き返るぅ～！」@
@@ -82,15 +82,15 @@ SEQ05 \x03q\x00\x00
 
 \x00\x00\x00  
 SEQ01 h\x06
-SEQ13 
-SEQ04  \xae\x00\x00 
-SEQ12  \xdc\x00\x00 
-SEQ06 SCE096_005\x00 f\x08\x00 
+SEQ14 
+SEQ08 " \xae\x00\x00 
+SEQ08  \xdc\x00\x00 
+SEQ05 SCE096_005\x00 f\x08\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xb0\xa5
-SEQ13 
-SEQ05 \x03p\x00\x00
+SEQ10 \xb0\xa5
+SEQ14 
+SEQ11 \x03p\x00\x00
  
 早桃\n　「それにしても、錦城先生はさすがですよね……大人の女の人\n　　って感じで」@
 錦城\n　「ありがとう。\p早桃ちゃんも肌が白くて素敵よ？」@
@@ -101,15 +101,15 @@ SEQ05 \x03p\x00\x00
 
 \x00\x00\x00  
 SEQ01 \xaa\x08
-SEQ13 
-SEQ04  \xae\x00\x00 
-SEQ12  \xdc\x00\x00 
-SEQ06 SCE096_006\x00 \xa4\n\x00 
+SEQ14 
+SEQ08 " \xae\x00\x00 
+SEQ08  \xdc\x00\x00 
+SEQ05 SCE096_006\x00 \xa4\n\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xb4\xa5
-SEQ13 
-SEQ05 \x03y\x00\x00
+SEQ10 \xb4\xa5
+SEQ14 
+SEQ11 \x03y\x00\x00
  
 御堂\n　「虎菱、おめえなかなか粋なことしてくれんじゃねえかよ」@
 拓司\n　「リーダーだからな」@
@@ -121,9 +121,9 @@ SEQ05 \x03y\x00\x00
 
 \x00\x00\x00  
 SEQ01 \xe8\n
-SEQ13 
-SEQ04  \xae\x00\x00 
-SEQ12  \xdc\x00\x00 
-SEQ10  \xae\x00\x00 
-SEQ12 \x03\x03\x00\x00TextClose SPC02 \x12\r\x00 
-ENDF
+SEQ14 
+SEQ08 " \xae\x00\x00 
+SEQ08  \xdc\x00\x00 
+SEQ06  \xae\x00\x00 
+SEQ04 TextClose SPC02 \x12\r\x00 
+FEND

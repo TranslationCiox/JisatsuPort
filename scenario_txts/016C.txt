@@ -1,10 +1,10 @@
-STRF
+FSTR
 \x18\x06\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xa4\t3\x01\x00\x00\x00\xc6\x04\x00\x03\x03\x00\x00SCE016_001\x00 \x06\x00\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xa0(
-SEQ13 
-SEQ05 \x03^\x00\x00
+SEQ10 \xa0(
+SEQ14 
+SEQ11 \x03^\x00\x00
  
 紅葉\n　「……。あのねえ、アンタ、女の子に会うたびそんな適当なこ\n　　といってんじゃないでしょうね？@
 　　『僕はいつも君のこと見てるよ』ってアピール？@
@@ -14,16 +14,16 @@ SEQ05 \x03^\x00\x00
 拓司\n　「……」\w\z
 \x00\x00\x00  
 SEQ01 J\x00
-SEQ13 
-SEQ04 
-SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 \xe2\x01\x00 
+SEQ14 
+SEQ08 "
+SEQ13 .\\Data\\Script\\TextFunc.Fob SPC01 \xe2\x01\x00 
 SEQ02 TextOn SPC01 \x10\x02\x00 
-SEQ06 SCE016_002\x00 ,\x02\x00 
+SEQ05 SCE016_002\x00 ,\x02\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xa4(
-SEQ13 
-SEQ05 \x03(\x00\x00
+SEQ10 \xa4(
+SEQ14 
+SEQ11 \x03(\x00\x00
  
 紅葉\n　「……リップ」@
 拓司\n　「はあ？」@
@@ -33,15 +33,15 @@ SEQ05 \x03(\x00\x00
 拓司\n　「……」\w\z
 \x00\x00\x00  
 SEQ01 p\x02
-SEQ13 
-SEQ04  \xe2\x01\x00 
-SEQ12  \x10\x02\x00 
-SEQ06 SCE016_003\x00 J\x03\x00 
+SEQ14 
+SEQ08 " \xe2\x01\x00 
+SEQ08  \x10\x02\x00 
+SEQ05 SCE016_003\x00 J\x03\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xa8(
-SEQ13 
-SEQ05 \x035\x00\x00
+SEQ10 \xa8(
+SEQ14 
+SEQ11 \x035\x00\x00
  
 沈黙の後、紅葉が突然、えい、と拓司の背中にパンチを飛ばした。\n@
 拓司\n　「いて！　なんだよ、お前！」@
@@ -51,9 +51,9 @@ SEQ05 \x035\x00\x00
 
 \x00  
 SEQ01 \x8e\x03
-SEQ13 
-SEQ04  \xe2\x01\x00 
-SEQ12  \x10\x02\x00 
-SEQ10  \xe2\x01\x00 
-SEQ12 \x03\x03\x00\x00TextClose SPC02 \xa8\x04\x00 
-ENDF
+SEQ14 
+SEQ08 " \xe2\x01\x00 
+SEQ08  \x10\x02\x00 
+SEQ06  \xe2\x01\x00 
+SEQ04 TextClose SPC02 \xa8\x04\x00 
+FEND

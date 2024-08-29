@@ -1,9 +1,9 @@
-STRF
+FSTR
 \x00\x03\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xe0\x044\x01\x00\x00\x00*\x02\x00\x03\x03\x00\x00SCE229_001\x00 \x06\x00\x00 
 SEQ07  
 SEQ01 
-SEQ03 pu\x01\x0c
-SEQ05 \x03S\x00\x00
+SEQ10 pu\x01\x0c
+SEQ11 \x03S\x00\x00
  
 しかし、拓司は動けなかった。@
 畳針で片目を貫かれてもなお、御堂は決して拓司から注意をそら\nしていなかったのである。@
@@ -12,10 +12,10 @@ SEQ05 \x03S\x00\x00
 
 \x00\x00\x00  
 SEQ01 J\x00
-SEQ13 
-SEQ04 
-SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 \xb6\x01\x00 
+SEQ14 
+SEQ08 "
+SEQ13 .\\Data\\Script\\TextFunc.Fob SPC01 \xb6\x01\x00 
 SEQ02 TextOn SPC01 \xe4\x01\x00 
-SEQ10  \xb6\x01\x00 
-SEQ12 \x03\x03\x00\x00TextClose SPC02 \x0c\x02\x00 
-ENDF
+SEQ06  \xb6\x01\x00 
+SEQ04 TextClose SPC02 \x0c\x02\x00 
+FEND

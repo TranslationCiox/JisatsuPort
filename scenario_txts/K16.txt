@@ -1,30 +1,30 @@
-STRF
+FSTR
 \xc1\x11\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xc6\r\x00  
 SEQ01 <\x00
-SEQ13 
-SEQ04 
-SEQ08 .\\Data\\Script\\Bg.Fob SPC03  \x00\x00 
-SEQ12 \x03\x04\x00\x00BgAutoFadeIn SPC03 J\x00\x00 
-SEQ06 SCEK16_001\x00 n\x00\x00 
+SEQ14 
+SEQ08 "
+SEQ12 .\\Data\\Script\\Bg.Fob SPC03  \x00\x00 
+SEQ03 BgAutoFadeIn SPC03 J\x00\x00 
+SEQ05 SCEK16_001\x00 n\x00\x00 
 SEQ07  
 SEQ01 
-SEQ03 `\xb2\x01\x0c
-SEQ05 \x03;\x00\x00
+SEQ10 `\xb2\x01\x0c
+SEQ11 \x03;\x00\x00
  
 語り終えた後、カンナは無言で、自らが作り出した沈黙のなかに\n沈み込んだ。@
 あるいは、彼女が沈み込んでいったのは、いま自らが言葉に変換\nして現出して見せた暗い闇の中なのかもしれない。@
 重い沈黙に耐えかねて、拓司が口を開いた。\w\z
 \x00\x00\x00  
 SEQ01 \xb2\x00
-SEQ13 
-SEQ04 
-SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 \xbe\x01\x00 
+SEQ14 
+SEQ08 "
+SEQ13 .\\Data\\Script\\TextFunc.Fob SPC01 \xbe\x01\x00 
 SEQ02 TextOn SPC01 \xec\x01\x00 
-SEQ06 SCEK16_002\x00 \x08\x02\x00 
+SEQ05 SCEK16_002\x00 \x08\x02\x00 
 SEQ07  
 SEQ01 
-SEQ03 d\xb2\x01\x0c
-SEQ05 \x03e\x00\x00
+SEQ10 d\xb2\x01\x0c
+SEQ11 \x03e\x00\x00
  
 拓司\n　「つまり、俺は、カンナなんだな？」@
 カンナ\n　「……」@
@@ -36,14 +36,14 @@ SEQ05 \x03e\x00\x00
 ようやく口を開いたとき、カンナはなぜか自嘲気味の笑顔を口の\n端に浮かべていた。\w\z
 \x00  
 SEQ01 L\x02
-SEQ13 
-SEQ04  \xbe\x01\x00 
-SEQ12  \xec\x01\x00 
-SEQ06 SCEK16_003\x00 \x1a\x04\x00 
+SEQ14 
+SEQ08 " \xbe\x01\x00 
+SEQ08  \xec\x01\x00 
+SEQ05 SCEK16_003\x00 \x1a\x04\x00 
 SEQ07  
 SEQ01 
-SEQ03 h\xb2\x01\x0c
-SEQ05 \x03\x86\x00\x00
+SEQ10 h\xb2\x01\x0c
+SEQ11 \x03\x86\x00\x00
  
 カンナ\n　「……なんだか、違うものになってしまったみたい」@
 拓司\n　「違うもの？」@
@@ -52,14 +52,14 @@ SEQ05 \x03\x86\x00\x00
 　　このことは、もう私の一部分ではなくて、私がこのことの一\n　　部分で……なのに、なんだかこうやって話してみたら、全然\n　　違うものになってしまったみたい。\pすごく馬鹿げて聞こ\n　　える」\w\z
 \x00  
 SEQ01 ^\x04
-SEQ13 
-SEQ04  \xbe\x01\x00 
-SEQ12  \xec\x01\x00 
-SEQ06 SCEK16_004\x00 \xb0\x06\x00 
+SEQ14 
+SEQ08 " \xbe\x01\x00 
+SEQ08  \xec\x01\x00 
+SEQ05 SCEK16_004\x00 \xb0\x06\x00 
 SEQ07  
 SEQ01 
-SEQ03 l\xb2\x01\x0c
-SEQ05 \x03\x88\x00\x00
+SEQ10 l\xb2\x01\x0c
+SEQ11 \x03\x88\x00\x00
  
 拓司\n　「……」@
 カンナ\n　「どうしてあなたにこんな話、したのかしらね。@
@@ -70,14 +70,14 @@ SEQ05 \x03\x88\x00\x00
 \nカンナは両手をぱっと開いて見せて、おしまい、と繰り返した。\w\z
 \x00\x00\x00  
 SEQ01 \xf4\x06
-SEQ13 
-SEQ04  \xbe\x01\x00 
-SEQ12  \xec\x01\x00 
-SEQ06 SCEK16_005\x00 N\t\x00 
+SEQ14 
+SEQ08 " \xbe\x01\x00 
+SEQ08  \xec\x01\x00 
+SEQ05 SCEK16_005\x00 N\t\x00 
 SEQ07  
 SEQ01 
-SEQ03 p\xb2\x01\x0c
-SEQ05 \x03x\x00\x00
+SEQ10 p\xb2\x01\x0c
+SEQ11 \x03x\x00\x00
  
 カンナ\n　「どうしてなのかしら。全然わからない」@
 拓司\n　「……俺のことが本当に好きになった」@
@@ -90,30 +90,30 @@ SEQ05 \x03x\x00\x00
 　　まとめて読めよ」\w\z
 \x00\x00\x00  
 SEQ01 \x92\t
-SEQ13 
-SEQ04  \xbe\x01\x00 
-SEQ12  \xec\x01\x00 
-SEQ06 SCEK16_006\x00 \xac\x0b\x00 
+SEQ14 
+SEQ08 " \xbe\x01\x00 
+SEQ08  \xec\x01\x00 
+SEQ05 SCEK16_006\x00 \xac\x0b\x00 
 SEQ07  
 SEQ01 
-SEQ03 t\xb2\x01\x0c
-SEQ05 \x03>\x00\x00
+SEQ10 t\xb2\x01\x0c
+SEQ11 \x03>\x00\x00
  
 カンナは信じられないものを見るような顔で拓司を見ていたが、\nやがてクスクスと笑いはじめた。@
 拓司は誰かの笑顔というものを、久しぶりに見たような気がした。\n\pそして、カンナの明るい笑顔というものを見たのは、これがほん\nとうに初めてだった。\w\z
 \x00\x00\x00  
 SEQ01 \xf0\x0b
-SEQ13 
-SEQ04  \xbe\x01\x00 
-SEQ12  \xec\x01\x00 
-SEQ10   
+SEQ14 
+SEQ08 " \xbe\x01\x00 
+SEQ08  \xec\x01\x00 
+SEQ06   
 SEQ01 \xc8\x00
-SEQ13 
-SEQ04   \x00\x00 
-SEQ12  J\x00\x00 
-SEQ10 
-SEQ08 .\\Data\\Script\\Bgm.Fob SPC02 V\r\x00 
+SEQ14 
+SEQ08 "  \x00\x00 
+SEQ08  J\x00\x00 
+SEQ06 
+SEQ12 .\\Data\\Script\\Bgm.Fob SPC02 V\r\x00 
 SEQ02 StopCD SPC01 \x80\r\x00 
-SEQ10  \xbe\x01\x00 
-SEQ12 \x03\x03\x00\x00TextClose SPC02 \xa8\r\x00 
-ENDF
+SEQ06  \xbe\x01\x00 
+SEQ04 TextClose SPC02 \xa8\r\x00 
+FEND

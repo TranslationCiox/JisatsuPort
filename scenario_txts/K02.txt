@@ -1,9 +1,9 @@
-STRF
+FSTR
 \xa9\x04\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xa4\t3\x01\x00\x00\x00\xb8\x03\x00\x03\x03\x00\x00SCEK02_001\x00 \x06\x00\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x08\xa6\x01\x0c
-SEQ05 \x03T\x00\x00
+SEQ10 \x08\xa6\x01\x0c
+SEQ11 \x03T\x00\x00
  
 　翌日も、若草ゆきは私に話しかけてきた。@
 その翌日も、\pまたその翌日も。@
@@ -11,15 +11,15 @@ SEQ05 \x03T\x00\x00
 とだけいった。\w\z
 \x00  
 SEQ01 J\x00
-SEQ13 
-SEQ04 
-SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 \xba\x01\x00 
+SEQ14 
+SEQ08 "
+SEQ13 .\\Data\\Script\\TextFunc.Fob SPC01 \xba\x01\x00 
 SEQ02 TextOn SPC01 \xe8\x01\x00 
-SEQ06 SCEK02_002\x00 \x04\x02\x00 
+SEQ05 SCEK02_002\x00 \x04\x02\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x0c\xa6\x01\x0c
-SEQ05 \x03C\x00\x00
+SEQ10 \x0c\xa6\x01\x0c
+SEQ11 \x03C\x00\x00
  
 　友達には不自由していないはずのゆきが声をかけてくるなんて、\n最初は新手の嫌がらせかと思えた。@
 しかし彼女の笑顔は、魚の小骨みたいに私の心の奥に引っかかっ\nて離れなかった。@
@@ -27,9 +27,9 @@ SEQ05 \x03C\x00\x00
 その日の夕方、私は自分からゆきを誘ったのだった。\w\z
 \x00\x00\x00  
 SEQ01 H\x02
-SEQ13 
-SEQ04  \xba\x01\x00 
-SEQ12  \xe8\x01\x00 
-SEQ10  \xba\x01\x00 
-SEQ12 \x03\x03\x00\x00TextClose SPC02 \x9a\x03\x00 
-ENDF
+SEQ14 
+SEQ08 " \xba\x01\x00 
+SEQ08  \xe8\x01\x00 
+SEQ06  \xba\x01\x00 
+SEQ04 TextClose SPC02 \x9a\x03\x00 
+FEND

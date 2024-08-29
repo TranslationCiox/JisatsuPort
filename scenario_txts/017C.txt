@@ -1,10 +1,10 @@
-STRF
+FSTR
 *\x03\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xb0\x044\x01\x00\x00\x00D\x02\x00\x03\x03\x00\x00SCE017_001\x00 \x06\x00\x00 
 SEQ07  
 SEQ01 
-SEQ03 0*
-SEQ13 
-SEQ05 \x03$\x00\x00
+SEQ10 0*
+SEQ14 
+SEQ11 \x03$\x00\x00
  
 拓司\n　「……」@
 紅葉\n　「……」@
@@ -15,24 +15,24 @@ SEQ05 \x03$\x00\x00
 拓司\n　「……」\w\z
 \x00  
 SEQ01 J\x00
-SEQ13 
-SEQ04 
-SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 \xfa\x00\x00 
+SEQ14 
+SEQ08 "
+SEQ13 .\\Data\\Script\\TextFunc.Fob SPC01 \xfa\x00\x00 
 SEQ02 TextOn SPC01 (\x01\x00 
-SEQ06 SCE017_002\x00 D\x01\x00 
+SEQ05 SCE017_002\x00 D\x01\x00 
 SEQ07  
 SEQ01 
-SEQ03 4*
-SEQ13 
-SEQ05 \x03\x16\x00\x00
+SEQ10 4*
+SEQ14 
+SEQ11 \x03\x16\x00\x00
  
 紅葉\n　「……生理？」@
 拓司\n　「お前なあ、もうちょっと女らしい冗談言えよ」\w\z
 \x00\x00\x00  
 SEQ01 \x88\x01
-SEQ13 
-SEQ04  \xfa\x00\x00 
-SEQ12  (\x01\x00 
-SEQ10  \xfa\x00\x00 
-SEQ12 \x03\x03\x00\x00TextClose SPC02 &\x02\x00 
-ENDF
+SEQ14 
+SEQ08 " \xfa\x00\x00 
+SEQ08  (\x01\x00 
+SEQ06  \xfa\x00\x00 
+SEQ04 TextClose SPC02 &\x02\x00 
+FEND

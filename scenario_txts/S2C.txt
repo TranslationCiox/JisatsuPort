@@ -1,21 +1,21 @@
-STRF
+FSTR
 \xbb\x08\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xe8\x06\x00  
 SEQ01 A\x00
-SEQ13 
-SEQ04 
-SEQ08 .\\Data\\Script\\Bg.Fob SPC03  \x00\x00 
-SEQ12 \x03\x04\x00\x00BgAutoFadeIn SPC03 J\x00\x00 
-SEQ10   
+SEQ14 
+SEQ08 "
+SEQ12 .\\Data\\Script\\Bg.Fob SPC03  \x00\x00 
+SEQ03 BgAutoFadeIn SPC03 J\x00\x00 
+SEQ06   
 SEQ01 \x04\x01
-SEQ13 
-SEQ04 
-SEQ08 .\\Data\\Script\\Bgm.Fob SPC02 \x88\x00\x00 
+SEQ14 
+SEQ08 "
+SEQ12 .\\Data\\Script\\Bgm.Fob SPC02 \x88\x00\x00 
 SEQ02 PlayCD SPC01 \xb2\x00\x00 
-SEQ06 SCES02_001\x00 \xce\x00\x00 
+SEQ05 SCES02_001\x00 \xce\x00\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xa8\xb5\x01\x0c
-SEQ05 \x03p\x00\x00
+SEQ10 \xa8\xb5\x01\x0c
+SEQ11 \x03p\x00\x00
  
 早桃には、子供の頃から空想のお友達がいたの。@
 空想のお友達、なんていうとなんだかアブナイひとみたいでイヤ\nなんだけど……ぜんぜんそんな、特別な感じじゃないの。@
@@ -28,15 +28,15 @@ SEQ05 \x03p\x00\x00
 
 \x00\x00\x00  
 SEQ01 \x12\x01
-SEQ13 
-SEQ04 
-SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 \xf2\x02\x00 
+SEQ14 
+SEQ08 "
+SEQ13 .\\Data\\Script\\TextFunc.Fob SPC01 \xf2\x02\x00 
 SEQ02 TextOn SPC01  \x03\x00 
-SEQ06 SCES02_002\x00 <\x03\x00 
+SEQ05 SCES02_002\x00 <\x03\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xac\xb5\x01\x0c
-SEQ05 \x03\xaa\x00\x00
+SEQ10 \xac\xb5\x01\x0c
+SEQ11 \x03\xaa\x00\x00
  
 それでね、しゃべるときは言葉の最後に『ニャ』ってつけるの。@
 『早桃ちゃんはいつも泣いてばっかりだニャ』@
@@ -51,16 +51,16 @@ SEQ05 \x03\xaa\x00\x00
 
 \x00\x00\x00  
 SEQ01 \x80\x03
-SEQ13 
-SEQ04  \xf2\x02\x00 
-SEQ12   \x03\x00 
-SEQ10   
+SEQ14 
+SEQ08 " \xf2\x02\x00 
+SEQ08   \x03\x00 
+SEQ06   
 SEQ01 \xc8\x00
-SEQ13 
-SEQ04   \x00\x00 
-SEQ12  J\x00\x00 
-SEQ10  \x88\x00\x00 
+SEQ14 
+SEQ08 "  \x00\x00 
+SEQ08  J\x00\x00 
+SEQ06  \x88\x00\x00 
 SEQ02 StopCD SPC01 \xa2\x06\x00 
-SEQ10  \xf2\x02\x00 
-SEQ12 \x03\x03\x00\x00TextClose SPC02 \xca\x06\x00 
-ENDF
+SEQ06  \xf2\x02\x00 
+SEQ04 TextClose SPC02 \xca\x06\x00 
+FEND

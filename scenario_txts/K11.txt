@@ -1,9 +1,9 @@
-STRF
+FSTR
 \x14\x04\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xa4\t3\x01\x00\x00\x00\xf8\x02\x00\x03\x03\x00\x00SCEK11_001\x00 \x06\x00\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x00\xa9\x01\x0c
-SEQ05 \x03`\x00\x00
+SEQ10 \x00\xa9\x01\x0c
+SEQ11 \x03`\x00\x00
  
 　ゆきが流した涙で私の胸のあたりはぐっしょりと濡れていた。@
 そのしめりけは本当にリアルで、それを胸に感じていると\n「そのうちなんとかなるよ」とか、\n「家出しよう」とか、\nそんな安易ななぐさめはとても口にはできなかった。@
@@ -12,20 +12,20 @@ SEQ05 \x03`\x00\x00
 しばらく考えてから、私はゆきにいった。\w\z
 \x00  
 SEQ01 J\x00
-SEQ13 
-SEQ04 
-SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 \xea\x01\x00 
+SEQ14 
+SEQ08 "
+SEQ13 .\\Data\\Script\\TextFunc.Fob SPC01 \xea\x01\x00 
 SEQ02 TextOn SPC01 \x18\x02\x00 
-SEQ10 \x03\x18\x00\x00
+SEQ06 \x03\x18\x00\x00
 CHOICE
 「大丈夫だよ。私が一緒に死んであげるから」\n「お父さんのこと、一緒に殺そう？」\n\l0,2,
 ENDCHOICE
 
 \x00  
 SEQ01 4\x02
-SEQ13 
-SEQ04  \xea\x01\x00 
-SEQ12  \x18\x02\x00 
-SEQ10  \xea\x01\x00 
-SEQ12 \x03\x03\x00\x00TextClose SPC02 \xda\x02\x00 
-ENDF
+SEQ14 
+SEQ08 " \xea\x01\x00 
+SEQ08  \x18\x02\x00 
+SEQ06  \xea\x01\x00 
+SEQ04 TextClose SPC02 \xda\x02\x00 
+FEND

@@ -1,18 +1,18 @@
-STRF
+FSTR
 \x8b-\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00,'\x00\x03\t\x00\x00.\\Data\\Script\\Scenario\\048SubC.Fob SPC01 \x06\x00\x00 
 SEQ02 start SPC02 <\x00\x00 
-SEQ10   
+SEQ06   
 SEQ01 <\x00
-SEQ13 
-SEQ04 
-SEQ11 .\\Data\\Script\\TextFunc.fob SPC01 r\x00\x00 
-SEQ12 \x03\x03\x00\x00WaitTime SPC03 \xa0\x00\x00 
-SEQ06 SCE048_020\x00 \xc0\x00\x00 
+SEQ14 
+SEQ08 "
+SEQ13 .\\Data\\Script\\TextFunc.fob SPC01 r\x00\x00 
+SEQ04 WaitTime SPC03 \xa0\x00\x00 
+SEQ05 SCE048_020\x00 \xc0\x00\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xecZ
-SEQ13 
-SEQ05 \x03\xce\x00\x00
+SEQ10 \xecZ
+SEQ14 
+SEQ11 \x03\xce\x00\x00
  
 御堂\n　「おい、柏木。\pお前なにやってんだよ……？」@
 \n/*■CG19　表示（ノンエフェクト）↑のCG表示にあわせられるとヨシ！*/\a7,-1,-1,0,\a0,18,1,0,/*▲BGM　Track11　再生*/\a2,-1,11,1,\a6,0,0,0,　全員が呆気にとられた顔で御堂を見やり、それから御堂の視線\nの先へと顔を移動させた。@
@@ -23,16 +23,16 @@ SEQ05 \x03\xce\x00\x00
 
   
 SEQ01 \x04\x01
-SEQ13 
-SEQ04 
-SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 \\\x04\x00 
+SEQ14 
+SEQ08 "
+SEQ13 .\\Data\\Script\\TextFunc.Fob SPC01 \\\x04\x00 
 SEQ02 TextOn SPC01 \x8a\x04\x00 
-SEQ06 SCE048_021\x00 \xa6\x04\x00 
+SEQ05 SCE048_021\x00 \xa6\x04\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xf0Z
-SEQ13 
-SEQ05 \x03\x9c\x00\x00
+SEQ10 \xf0Z
+SEQ14 
+SEQ11 \x03\x9c\x00\x00
  
 　その柏木が、主役となっていた。@
 　トイレ中の注目を一身に浴びていた。@
@@ -49,15 +49,15 @@ SEQ05 \x03\x9c\x00\x00
 
 \x00\x00\x00  
 SEQ01 \xea\x04
-SEQ13 
-SEQ04  \\\x04\x00 
-SEQ12  \x8a\x04\x00 
-SEQ06 SCE048_022\x00 \x94\x07\x00 
+SEQ14 
+SEQ08 " \\\x04\x00 
+SEQ08  \x8a\x04\x00 
+SEQ05 SCE048_022\x00 \x94\x07\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xf4Z
-SEQ13 
-SEQ05 \x03J\x00\x00
+SEQ10 \xf4Z
+SEQ14 
+SEQ11 \x03J\x00\x00
  
 柏木\n　「おれ的にすげえ、つらい！」@
 \n　柏木の眼から、ほろほろと涙があふれ出した。@
@@ -67,15 +67,15 @@ SEQ05 \x03J\x00\x00
 
 \x00\x00\x00  
 SEQ01 \xd8\x07
-SEQ13 
-SEQ04  \\\x04\x00 
-SEQ12  \x8a\x04\x00 
-SEQ06 SCE048_023\x00 :\t\x00 
+SEQ14 
+SEQ08 " \\\x04\x00 
+SEQ08  \x8a\x04\x00 
+SEQ05 SCE048_023\x00 :\t\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xf8Z
-SEQ13 
-SEQ05 \x03]\x00\x00
+SEQ10 \xf8Z
+SEQ14 
+SEQ11 \x03]\x00\x00
  
 柏木\n　「おれれれれれれれれれれれ」@
 \n　カチカチカチカチカチカチカチ。@
@@ -85,15 +85,15 @@ SEQ05 \x03]\x00\x00
 
 \x00  
 SEQ01 ~\t
-SEQ13 
-SEQ04  \\\x04\x00 
-SEQ12  \x8a\x04\x00 
-SEQ06 SCE048_024\x00 ,\x0b\x00 
+SEQ14 
+SEQ08 " \\\x04\x00 
+SEQ08  \x8a\x04\x00 
+SEQ05 SCE048_024\x00 ,\x0b\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xfcZ
-SEQ13 
-SEQ05 \x03\xa0\x00\x00
+SEQ10 \xfcZ
+SEQ14 
+SEQ11 \x03\xa0\x00\x00
  
 \n　御堂の声は、間抜けな冗談のように響いた。@
 　芯だよ。@
@@ -108,15 +108,15 @@ SEQ05 \x03\xa0\x00\x00
 
 \x00  
 SEQ01 p\x0b
-SEQ13 
-SEQ04  \\\x04\x00 
-SEQ12  \x8a\x04\x00 
-SEQ06 SCE048_025\x00 *\x0e\x00 
+SEQ14 
+SEQ08 " \\\x04\x00 
+SEQ08  \x8a\x04\x00 
+SEQ05 SCE048_025\x00 *\x0e\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x00[
-SEQ13 
-SEQ05 \x03\xb7\x00\x00
+SEQ10 \x00[
+SEQ14 
+SEQ11 \x03\xb7\x00\x00
  
 柏木\n　「いてえ」@
 \n　柏木がぽつりとつぶやいた。@
@@ -132,15 +132,15 @@ SEQ05 \x03\xb7\x00\x00
 
 \x00\x00  
 SEQ01 n\x0e
-SEQ13 
-SEQ04  \\\x04\x00 
-SEQ12  \x8a\x04\x00 
-SEQ06 SCE048_026\x00 \x84\x11\x00 
+SEQ14 
+SEQ08 " \\\x04\x00 
+SEQ08  \x8a\x04\x00 
+SEQ05 SCE048_026\x00 \x84\x11\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x04[
-SEQ13 
-SEQ05 \x03\x9c\x00\x00
+SEQ10 \x04[
+SEQ14 
+SEQ11 \x03\x9c\x00\x00
  
 なたね\n　「……始まったのね」@
 拓司\n　「え？」@
@@ -153,15 +153,15 @@ SEQ05 \x03\x9c\x00\x00
 
 \x00  
 SEQ01 \xc8\x11
-SEQ13 
-SEQ04  \\\x04\x00 
-SEQ12  \x8a\x04\x00 
-SEQ06 SCE048_027\x00 r\x14\x00 
+SEQ14 
+SEQ08 " \\\x04\x00 
+SEQ08  \x8a\x04\x00 
+SEQ05 SCE048_027\x00 r\x14\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x08[
-SEQ13 
-SEQ05 \x03w\x00\x00
+SEQ10 \x08[
+SEQ14 
+SEQ11 \x03w\x00\x00
  
 拓司\n　「だ、大丈夫かい？」@
 なたね\n　「……。始まったのね」@
@@ -173,15 +173,15 @@ SEQ05 \x03w\x00\x00
 
 \x00\x00  
 SEQ01 \xb6\x14
-SEQ13 
-SEQ04  \\\x04\x00 
-SEQ12  \x8a\x04\x00 
-SEQ06 SCE048_028\x00 \xcc\x16\x00 
+SEQ14 
+SEQ08 " \\\x04\x00 
+SEQ08  \x8a\x04\x00 
+SEQ05 SCE048_028\x00 \xcc\x16\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x0c[
-SEQ13 
-SEQ05 \x03\xc5\x00\x00
+SEQ10 \x0c[
+SEQ14 
+SEQ11 \x03\xc5\x00\x00
  
 なたね\n　「４６億年前、やつらは地球の地下にいくつもの『シード』を埋\n　　め込んだの。\pやがて人類が宇宙に進出するときがきて……実\n　　際、いまがそのときなんだけれど……そのときに人類が『適\n　　格』でないと判断されたら、『シード』は目覚め、人類完殺\n　　の兵器として稼動し始めるの。\pこれは聖書とか様々な文献に\n　　終末とか悪魔とかいう形で明記されている厳然たる事実なの」\n　　@
 拓司\n　「……」@
@@ -190,15 +190,15 @@ SEQ05 \x03\xc5\x00\x00
 
 \x00\x00\x00  
 SEQ01 \x10\x17
-SEQ13 
-SEQ04  \\\x04\x00 
-SEQ12  \x8a\x04\x00 
-SEQ06 SCE048_029\x00 ^\x1a\x00 
+SEQ14 
+SEQ08 " \\\x04\x00 
+SEQ08  \x8a\x04\x00 
+SEQ05 SCE048_029\x00 ^\x1a\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x10[
-SEQ13 
-SEQ05 \x03\xbb\x00\x00
+SEQ10 \x10[
+SEQ14 
+SEQ11 \x03\xbb\x00\x00
  
 拓司\n　「……自殺波動？」@
 なたね\n　「そう！　波動よ！　エンケリュスムサベツエンカクジサツハ\n　　ドウコウゲキ！」@
@@ -208,15 +208,15 @@ SEQ05 \x03\xbb\x00\x00
 
 \x00\x00\x00  
 SEQ01 \xa2\x1a
-SEQ13 
-SEQ04  \\\x04\x00 
-SEQ12  \x8a\x04\x00 
-SEQ06 SCE048_030\x00 \xc8\x1d\x00 
+SEQ14 
+SEQ08 " \\\x04\x00 
+SEQ08  \x8a\x04\x00 
+SEQ05 SCE048_030\x00 \xc8\x1d\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x14[
-SEQ13 
-SEQ05 \x03D\x00\x00
+SEQ10 \x14[
+SEQ14 
+SEQ11 \x03D\x00\x00
  
 拓司\n　「雲居さん！」@
 \n　拓司はなたねを制した。\p聞いていると自分までおかしくなって\n　しまいそうだ。@
@@ -226,15 +226,15 @@ SEQ05 \x03D\x00\x00
 
 \x00  
 SEQ01 \x0c\x1e
-SEQ13 
-SEQ04  \\\x04\x00 
-SEQ12  \x8a\x04\x00 
-SEQ06 SCE048_031\x00 V\x1f\x00 
+SEQ14 
+SEQ08 " \\\x04\x00 
+SEQ08  \x8a\x04\x00 
+SEQ05 SCE048_031\x00 V\x1f\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x18[
-SEQ13 
-SEQ05 \x03\xc5\x00\x00
+SEQ10 \x18[
+SEQ14 
+SEQ11 \x03\xc5\x00\x00
  
 なたね\n　「エンケリュスは私の身体の中に、たくさんいやらしい液を流\n　　し込んだの。\p気持ち悪かった。\p私をレイプしたのは、正確に\n　　言うと宇宙人じゃなくてエンケリュス。\pいま、わかったこと\n　　だけど。\pエンケリュスの液は、内臓部分から徐々に私をおか\n　　しくしていくの。\pいやらしいことしか考えられなくなって、\n　　勉強とか、できなくなる。\pそれに対抗するために、私は御堂\n　　くんたちに精液をかけてもらっていたの」@
 拓司\n　「もういい！」@
@@ -244,15 +244,15 @@ SEQ05 \x03\xc5\x00\x00
 
 \x00\x00\x00  
 SEQ01 \x9a\x1f
-SEQ13 
-SEQ04  \\\x04\x00 
-SEQ12  \x8a\x04\x00 
-SEQ06 SCE048_032\x00 \xe8"\x00 
+SEQ14 
+SEQ08 " \\\x04\x00 
+SEQ08  \x8a\x04\x00 
+SEQ05 SCE048_032\x00 \xe8"\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x1c[
-SEQ13 
-SEQ05 \x03[\x00\x00
+SEQ10 \x1c[
+SEQ14 
+SEQ11 \x03[\x00\x00
  
 拓司\n　「そんなことより、早く柏木のことを、先生なり警察なりに報\n　　せないと！」@
 なたね\n　「……そうね」@
@@ -263,33 +263,33 @@ SEQ05 \x03[\x00\x00
 
 \x00  
 SEQ01 ,#
-SEQ13 
-SEQ04  \\\x04\x00 
-SEQ12  \x8a\x04\x00 
-SEQ10   
+SEQ14 
+SEQ08 " \\\x04\x00 
+SEQ08  \x8a\x04\x00 
+SEQ06   
 SEQ01 \xc8\x00
-SEQ13 
-SEQ04 
-SEQ08 .\\Data\\Script\\Bg.Fob SPC03 \xec$\x00 
-SEQ12 \x03\x04\x00\x00BgAutoFadeIn SPC03 \x16%\x00 
-SEQ06 SCE048_033\x00 :%\x00 
+SEQ14 
+SEQ08 "
+SEQ12 .\\Data\\Script\\Bg.Fob SPC03 \xec$\x00 
+SEQ03 BgAutoFadeIn SPC03 \x16%\x00 
+SEQ05 SCE048_033\x00 :%\x00 
 SEQ07  
 SEQ01 
-SEQ03  [
-SEQ13 
-SEQ05 \x03A\x00\x00
+SEQ10  [
+SEQ14 
+SEQ11 \x03A\x00\x00
  
 なたね\n　「あーあ、こんなにばさばさになっちゃった。\p困ったなあ。い\n　　やだなあ」@
 \n　拓司は呆然と、それを見守るしかなかった。\pなたねの動きはゆ\n　っくりしていて、見ているとなにか時間が徐々に停滞してゆく\n　ような、そんな不安な気持ちになった。\
 
 \x00  
 SEQ01 ~%
-SEQ13 
-SEQ04  \\\x04\x00 
-SEQ12  \x8a\x04\x00 
-SEQ10 
-SEQ08 .\\Data\\Script\\Bgm.Fob SPC02 \xbc&\x00 
+SEQ14 
+SEQ08 " \\\x04\x00 
+SEQ08  \x8a\x04\x00 
+SEQ06 
+SEQ12 .\\Data\\Script\\Bgm.Fob SPC02 \xbc&\x00 
 SEQ02 StopCD SPC01 \xe6&\x00 
-SEQ10  \\\x04\x00 
-SEQ12 \x03\x03\x00\x00TextClose SPC02 \x0e'\x00 
-ENDF
+SEQ06  \\\x04\x00 
+SEQ04 TextClose SPC02 \x0e'\x00 
+FEND

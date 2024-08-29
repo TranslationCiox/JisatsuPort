@@ -1,10 +1,10 @@
-STRF
+FSTR
 \x8a\x0e\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xf0\x0b\x00\x03\x03\x00\x00SCE036_001\x00 \x06\x00\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xe0G
-SEQ13 
-SEQ05 \x03e\x00\x00
+SEQ10 \xe0G
+SEQ14 
+SEQ11 \x03e\x00\x00
  
 錦城\n　「－－虎菱くん？」@
 /*▲BGM8　再生*/\a2,-1,8,1,/*■CG15　表示*/\a7,-2,-2,0,\a0,14,2,0,\a6,-2,0,0,\n　背後からの声にぎくりと振り返ると、そこには現代国語の錦城\n茜子が立っていた。@
@@ -14,16 +14,16 @@ SEQ05 \x03e\x00\x00
 拓司\n　「……」\w\z
 \x00\x00  
 SEQ01 J\x00
-SEQ13 
-SEQ04 
-SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 \xfe\x01\x00 
+SEQ14 
+SEQ08 "
+SEQ13 .\\Data\\Script\\TextFunc.Fob SPC01 \xfe\x01\x00 
 SEQ02 TextOn SPC01 ,\x02\x00 
-SEQ06 SCE036_002\x00 H\x02\x00 
+SEQ05 SCE036_002\x00 H\x02\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xe4G
-SEQ13 
-SEQ05 \x03\x81\x00\x00
+SEQ10 \xe4G
+SEQ14 
+SEQ11 \x03\x81\x00\x00
  
 　うんざりだった。@
 ついに、この学校に残された唯一のマシな場所が無くなってしま\nう……。@
@@ -33,15 +33,15 @@ SEQ05 \x03\x81\x00\x00
 そして……？\w\z
 \x00  
 SEQ01 \x8c\x02
-SEQ13 
-SEQ04  \xfe\x01\x00 
-SEQ12  ,\x02\x00 
-SEQ06 SCE036_003\x00 \xca\x04\x00 
+SEQ14 
+SEQ08 " \xfe\x01\x00 
+SEQ08  ,\x02\x00 
+SEQ05 SCE036_003\x00 \xca\x04\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xe8G
-SEQ13 
-SEQ05 \x03z\x00\x00
+SEQ10 \xe8G
+SEQ14 
+SEQ11 \x03z\x00\x00
  
 /*▲BGM8　再生*/\a2,-1,8,1,/*■CG15　表示　フェードイン*/\a7,-2,-2,0,\a0,14,2,0,\a6,-2,0,0,　拓司ははっと我に返り、驚愕した。@
 錦城をレイプするという考えは、ごく自然に浮かび上がってきた\nものだった。@
@@ -52,15 +52,15 @@ SEQ05 \x03z\x00\x00
 すべてを押しつぶしてしまいそうなくらいに。\w\z
   
 SEQ01 \x0e\x05
-SEQ13 
-SEQ04  \xfe\x01\x00 
-SEQ12  ,\x02\x00 
-SEQ06 SCE036_004\x00 0\x07\x00 
+SEQ14 
+SEQ08 " \xfe\x01\x00 
+SEQ08  ,\x02\x00 
+SEQ05 SCE036_004\x00 0\x07\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xecG
-SEQ13 
-SEQ05 \x03g\x00\x00
+SEQ10 \xecG
+SEQ14 
+SEQ11 \x03g\x00\x00
  
 錦城\n　「虎菱くん？」@
 拓司\n　「……」@
@@ -72,18 +72,18 @@ SEQ05 \x03g\x00\x00
 目が覚めると自宅のベッドにいて、天井を見上げているのかもし\nれないじゃないか……。\w\z
 \x00\x00\x00  
 SEQ01 t\x07
-SEQ13 
-SEQ04  \xfe\x01\x00 
-SEQ12  ,\x02\x00 
-SEQ10 
-SEQ08 .\\Data\\Script\\Bgm.Fob SPC02 J\t\x00 
+SEQ14 
+SEQ08 " \xfe\x01\x00 
+SEQ08  ,\x02\x00 
+SEQ06 
+SEQ12 .\\Data\\Script\\Bgm.Fob SPC02 J\t\x00 
 SEQ02 StopCD SPC01 t\t\x00 
-SEQ06 SCE036_005\x00 \x90\t\x00 
+SEQ05 SCE036_005\x00 \x90\t\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xf0G
-SEQ13 
-SEQ05 \x03n\x00\x00
+SEQ10 \xf0G
+SEQ14 
+SEQ11 \x03n\x00\x00
  
 錦城\n　「……まあ、いいわ」@
 拓司\n　「？」@
@@ -96,9 +96,9 @@ SEQ05 \x03n\x00\x00
 \n\a2,-1,7,1,\a6,0,0,0,錦城がぱちりとウインクした。\w\z
 \x00\x00  
 SEQ01 \xd4\t
-SEQ13 
-SEQ04  \xfe\x01\x00 
-SEQ12  ,\x02\x00 
-SEQ10  \xfe\x01\x00 
-SEQ12 \x03\x03\x00\x00TextClose SPC02 \xd2\x0b\x00 
-ENDF
+SEQ14 
+SEQ08 " \xfe\x01\x00 
+SEQ08  ,\x02\x00 
+SEQ06  \xfe\x01\x00 
+SEQ04 TextClose SPC02 \xd2\x0b\x00 
+FEND

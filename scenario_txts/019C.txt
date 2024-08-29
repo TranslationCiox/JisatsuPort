@@ -1,16 +1,16 @@
-STRF
+FSTR
 \xa3\n\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00d\x08\x00  
 SEQ01 \x07\x01
-SEQ13 
-SEQ04 
-SEQ08 .\\Data\\Script\\Bgm.Fob SPC02  \x00\x00 
+SEQ14 
+SEQ08 "
+SEQ12 .\\Data\\Script\\Bgm.Fob SPC02  \x00\x00 
 SEQ02 PlayCD SPC01 J\x00\x00 
-SEQ06 SCE019_001\x00 f\x00\x00 
+SEQ05 SCE019_001\x00 f\x00\x00 
 SEQ07  
 SEQ01 
-SEQ03 P-
-SEQ13 
-SEQ05 \x03R\x00\x00
+SEQ10 P-
+SEQ14 
+SEQ11 \x03R\x00\x00
  
 紅葉\n　「－－もしも～し？　聞いてますか～、トラビシタクジくん？！\n　　」@
 拓司\n　「……え？」@
@@ -24,16 +24,16 @@ SEQ05 \x03R\x00\x00
 
 \x00  
 SEQ01 \xaa\x00
-SEQ13 
-SEQ04 
-SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 \x12\x02\x00 
+SEQ14 
+SEQ08 "
+SEQ13 .\\Data\\Script\\TextFunc.Fob SPC01 \x12\x02\x00 
 SEQ02 TextOn SPC01 @\x02\x00 
-SEQ06 SCE019_002\x00 \\\x02\x00 
+SEQ05 SCE019_002\x00 \\\x02\x00 
 SEQ07  
 SEQ01 
-SEQ03 T-
-SEQ13 
-SEQ05 \x03L\x00\x00
+SEQ10 T-
+SEQ14 
+SEQ11 \x03L\x00\x00
  
 紅葉\n　「ちゃんとご飯、食べてる？」@
 拓司\n　「まあ、普通に」@
@@ -45,20 +45,20 @@ SEQ05 \x03L\x00\x00
 
 \x00  
 SEQ01 \xa0\x02
-SEQ13 
-SEQ04  \x12\x02\x00 
-SEQ12  @\x02\x00 
-SEQ10   
+SEQ14 
+SEQ08 " \x12\x02\x00 
+SEQ08  @\x02\x00 
+SEQ06   
 SEQ01 \x08\x01
-SEQ13 
-SEQ04   \x00\x00 
-SEQ12  J\x00\x00 
-SEQ06 SCE019_003\x00 >\x04\x00 
+SEQ14 
+SEQ08 "  \x00\x00 
+SEQ08  J\x00\x00 
+SEQ05 SCE019_003\x00 >\x04\x00 
 SEQ07  
 SEQ01 
-SEQ03 X-
-SEQ13 
-SEQ05 \x03A\x00\x00
+SEQ10 X-
+SEQ14 
+SEQ11 \x03A\x00\x00
  
 ？？？\n　「－－おはよう」@
 \n/*　■CG05　表示　（クロスフェード）　*/\a7,-2,-2,0,\a0,4,2,0,\a6,-2,0,0,その声は、すぐ耳元で聞こえた。@
@@ -67,15 +67,15 @@ SEQ05 \x03A\x00\x00
 
 \x00\x00  
 SEQ01 \x82\x04
-SEQ13 
-SEQ04  \x12\x02\x00 
-SEQ12  @\x02\x00 
-SEQ06 SCE019_004\x00 \xc0\x05\x00 
+SEQ14 
+SEQ08 " \x12\x02\x00 
+SEQ08  @\x02\x00 
+SEQ05 SCE019_004\x00 \xc0\x05\x00 
 SEQ07  
 SEQ01 
-SEQ03 \\-
-SEQ13 
-SEQ05 \x03\x7f\x00\x00
+SEQ10 \\-
+SEQ14 
+SEQ11 \x03\x7f\x00\x00
  
 \n月代カンナ。@
 夜の闇を思わせる黒いストレートの髪。@
@@ -90,9 +90,9 @@ SEQ05 \x03\x7f\x00\x00
 
 \x00  
 SEQ01 \x04\x06
-SEQ13 
-SEQ04  \x12\x02\x00 
-SEQ12  @\x02\x00 
-SEQ10  \x12\x02\x00 
-SEQ12 \x03\x03\x00\x00TextClose SPC02 F\x08\x00 
-ENDF
+SEQ14 
+SEQ08 " \x12\x02\x00 
+SEQ08  @\x02\x00 
+SEQ06  \x12\x02\x00 
+SEQ04 TextClose SPC02 F\x08\x00 
+FEND

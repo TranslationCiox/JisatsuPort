@@ -1,10 +1,10 @@
-STRF
+FSTR
 B\x05\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xa4\t3\x01\x00\x00\x000\x04\x00\x03\x03\x00\x00SCE099_001\x00 \x06\x00\x00 
 SEQ07  
 SEQ01 
-SEQ03 P\xaa
-SEQ13 
-SEQ05 \x03I\x00\x00
+SEQ10 P\xaa
+SEQ14 
+SEQ11 \x03I\x00\x00
  
 拓司\n　「雲居さんのいうことに一理ある」@
 早桃\n　「おにいちゃん！」@
@@ -13,16 +13,16 @@ SEQ05 \x03I\x00\x00
 なたねはいつもの無表情で、なんの反応もない。\w\z
 \x00  
 SEQ01 J\x00
-SEQ13 
-SEQ04 
-SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 \x8e\x01\x00 
+SEQ14 
+SEQ08 "
+SEQ13 .\\Data\\Script\\TextFunc.Fob SPC01 \x8e\x01\x00 
 SEQ02 TextOn SPC01 \xbc\x01\x00 
-SEQ06 SCE099_002\x00 \xd8\x01\x00 
+SEQ05 SCE099_002\x00 \xd8\x01\x00 
 SEQ07  
 SEQ01 
-SEQ03 T\xaa
-SEQ13 
-SEQ05 \x03l\x00\x00
+SEQ10 T\xaa
+SEQ14 
+SEQ11 \x03l\x00\x00
  
 拓司\n　「ただ、お前が騒ぎ立てることでみんなが不安になるという点\n　　のみにおいては、雲居さんは正しい。\pいいかい、早桃。\pみ\n　　んな怖いんだ。\pみんな叫びたいんだ。\pでも、我慢している。@
 　　だから、お前も我慢しなくちゃ－－」@
@@ -31,9 +31,9 @@ SEQ05 \x03l\x00\x00
 \nそれから一日、早桃はおろか、他の誰もひとことも口をきこう\nとはしなかった。\w\z
 \x00\x00\x00  
 SEQ01 \x1c\x02
-SEQ13 
-SEQ04  \x8e\x01\x00 
-SEQ12  \xbc\x01\x00 
-SEQ10  \x8e\x01\x00 
-SEQ12 \x03\x03\x00\x00TextClose SPC02 \x12\x04\x00 
-ENDF
+SEQ14 
+SEQ08 " \x8e\x01\x00 
+SEQ08  \xbc\x01\x00 
+SEQ06  \x8e\x01\x00 
+SEQ04 TextClose SPC02 \x12\x04\x00 
+FEND

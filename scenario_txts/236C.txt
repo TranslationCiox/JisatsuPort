@@ -1,100 +1,100 @@
-STRF
+FSTR
 \x98\x11\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\x8a\r\x00\x03\x03\x00\x00SCE236_001\x00 \x06\x00\x00 
 SEQ07  
 SEQ01 
-SEQ03 `\x80\x01\x0c
-SEQ05 
-SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 J\x00\x00 
-SEQ12 \x03\x05\x00\x00TextWindowOffDirect x\x00\x00 
-SEQ10   
+SEQ10 `\x80\x01\x0c
+SEQ11 
+SEQ13 .\\Data\\Script\\TextFunc.Fob SPC01 J\x00\x00 
+SEQ08 \x03\x05\x00\x00TextWindowOffDirect x\x00\x00 
+SEQ06   
 SEQ01 
-SEQ12 \x0c
-SEQ04   \x04\x00\x00\r\x00\x00 \x1b\x00
-SEQ13 
-SEQ04   \x08\x00\x00\r\x00\x00 \x00\x00\x00
-SEQ13 
-SEQ04 
-SEQ08 .\\Data\\Script\\Bgm.Fob SPC02 \xee\x00\x00 
+SEQ08 \x0c
+SEQ08 "  \x04\x00\x00\r\x00\x00 \x1b\x00
+SEQ14 
+SEQ08 "  \x08\x00\x00\r\x00\x00 \x00\x00\x00
+SEQ14 
+SEQ08 "
+SEQ12 .\\Data\\Script\\Bgm.Fob SPC02 \xee\x00\x00 
 SEQ02 SePlay SPC01 \x18\x01\x00 
-SEQ10   
+SEQ06   
 SEQ01 \xca\x00
-SEQ13 
-SEQ04 
-SEQ08 .\\Data\\Script\\Bg.Fob SPC03 N\x01\x00 
+SEQ14 
+SEQ08 "
+SEQ12 .\\Data\\Script\\Bg.Fob SPC03 N\x01\x00 
 SEQ02 BgOn SPC03 x\x01\x00 
-SEQ10   
+SEQ06   
 SEQ01 \x01\x00
-SEQ13 
-SEQ04 
-SEQ11 .\\Data\\Script\\TextFunc.fob SPC01 \xae\x01\x00 
-SEQ12 \x03\x03\x00\x00WaitTime SPC03 \xdc\x01\x00 
-SEQ10   
+SEQ14 
+SEQ08 "
+SEQ13 .\\Data\\Script\\TextFunc.fob SPC01 \xae\x01\x00 
+SEQ04 WaitTime SPC03 \xdc\x01\x00 
+SEQ06   
 SEQ01 \xc8\x00
-SEQ13 
-SEQ04  N\x01\x00 
-SEQ12  x\x01\x00 
-SEQ10   
+SEQ14 
+SEQ08 " N\x01\x00 
+SEQ08  x\x01\x00 
+SEQ06   
 SEQ01 \x01\x00
-SEQ13 
-SEQ04  \xae\x01\x00 
-SEQ12  \xdc\x01\x00 
-SEQ10   
+SEQ14 
+SEQ08 " \xae\x01\x00 
+SEQ08  \xdc\x01\x00 
+SEQ06   
 SEQ01 
-SEQ12 \x0c
-SEQ04  \xee\x00\x00 
+SEQ08 \x0c
+SEQ08 " \xee\x00\x00 
 SEQ02 SeStop SPC01 \x8a\x02\x00 
-SEQ10   
+SEQ06   
 SEQ01 
-SEQ12 \x0c
-SEQ04   \x04\x00\x00\r\x00\x00 \x1b\x00
-SEQ13 
-SEQ04   \x08\x00\x00\r\x00\x00 \x00\x00\x00
-SEQ13 
-SEQ04  \xee\x00\x00 
-SEQ12  \x18\x01\x00 
-SEQ10   
+SEQ08 \x0c
+SEQ08 "  \x04\x00\x00\r\x00\x00 \x1b\x00
+SEQ14 
+SEQ08 "  \x08\x00\x00\r\x00\x00 \x00\x00\x00
+SEQ14 
+SEQ08 " \xee\x00\x00 
+SEQ08  \x18\x01\x00 
+SEQ06   
 SEQ01 \xca\x00
-SEQ13 
-SEQ04  N\x01\x00 
-SEQ12  x\x01\x00 
-SEQ10   
+SEQ14 
+SEQ08 " N\x01\x00 
+SEQ08  x\x01\x00 
+SEQ06   
 SEQ01 \x01\x00
-SEQ13 
-SEQ04  \xae\x01\x00 
-SEQ12  \xdc\x01\x00 
-SEQ10   
+SEQ14 
+SEQ08 " \xae\x01\x00 
+SEQ08  \xdc\x01\x00 
+SEQ06   
 SEQ01 \xc8\x00
-SEQ13 
-SEQ04  N\x01\x00 
-SEQ12  x\x01\x00 
-SEQ10   
+SEQ14 
+SEQ08 " N\x01\x00 
+SEQ08  x\x01\x00 
+SEQ06   
 SEQ01 \x01\x00
-SEQ13 
-SEQ04  \xae\x01\x00 
-SEQ12  \xdc\x01\x00 
-SEQ10   
+SEQ14 
+SEQ08 " \xae\x01\x00 
+SEQ08  \xdc\x01\x00 
+SEQ06   
 SEQ01 <\x00
-SEQ13 
-SEQ04  \xae\x01\x00 
-SEQ12  \xdc\x01\x00 
-SEQ10   
+SEQ14 
+SEQ08 " \xae\x01\x00 
+SEQ08  \xdc\x01\x00 
+SEQ06   
 SEQ01 \xc9\x00
-SEQ13 
-SEQ04  N\x01\x00 
-SEQ12 \x03\x04\x00\x00BgNormalFadeIn SPC01 8\x04\x00 
-SEQ10   
+SEQ14 
+SEQ08 " N\x01\x00 
+SEQ03 BgNormalFadeIn SPC01 8\x04\x00 
+SEQ06   
 SEQ01 \x08\x01
-SEQ13 
-SEQ04  \xee\x00\x00 
+SEQ14 
+SEQ08 " \xee\x00\x00 
 SEQ02 PlayCD SPC01 \x82\x04\x00 
-SEQ10   
+SEQ06   
 SEQ01 
-SEQ12 \x0c
-SEQ04  \xee\x00\x00 
-SEQ12  \x8a\x02\x00 
-SEQ10  J\x00\x00 
-SEQ12 \x03\x04\x00\x00TextWindowOn SPC03 \xde\x04\x00 
-SEQ10 \x03l\x00\x00
+SEQ08 \x0c
+SEQ08 " \xee\x00\x00 
+SEQ08  \x8a\x02\x00 
+SEQ06  J\x00\x00 
+SEQ03 TextWindowOn SPC03 \xde\x04\x00 
+SEQ06 \x03l\x00\x00
  
 白い部屋で目覚めてホッとした気分になったのは、これが初めて\nだった。@
 枕元には教授が座っている。@
@@ -107,14 +107,14 @@ SEQ10 \x03l\x00\x00
 
 \x00  
 SEQ01 \x02\x05
-SEQ13 
-SEQ04  J\x00\x00 
+SEQ14 
+SEQ08 " J\x00\x00 
 SEQ02 TextOn SPC01 \xde\x06\x00 
-SEQ06 SCE236_002\x00 \xfa\x06\x00 
+SEQ05 SCE236_002\x00 \xfa\x06\x00 
 SEQ07  
 SEQ01 
-SEQ03 d\x80\x01\x0c
-SEQ05 \x03g\x00\x00
+SEQ10 d\x80\x01\x0c
+SEQ11 \x03g\x00\x00
  
 拓司の目から、堰を切ったように涙があふれ出した。@
 ベッドから起きあがって教授に触れようとしたが、身体の中心が\n砕け散ってしまったかのように、力が入らない。@
@@ -128,14 +128,14 @@ SEQ05 \x03g\x00\x00
 
 \x00  
 SEQ01 >\x07
-SEQ13 
-SEQ04  J\x00\x00 
-SEQ12  \xde\x06\x00 
-SEQ06 SCE236_003\x00 \x14\t\x00 
+SEQ14 
+SEQ08 " J\x00\x00 
+SEQ08  \xde\x06\x00 
+SEQ05 SCE236_003\x00 \x14\t\x00 
 SEQ07  
 SEQ01 
-SEQ03 h\x80\x01\x0c
-SEQ05 \x03|\x00\x00
+SEQ10 h\x80\x01\x0c
+SEQ11 \x03|\x00\x00
  
 教授\n　「もういい。\p世界について考えるのはよしたまえ。\pこれからは\n　　少しずつ、自分のことを考えていくんだ。\p世界などどうでも\n　　いい。\pどんな世界にいようとも、君は君だ。\pそうだろう？」@
 拓司\n　「……はい」@
@@ -143,14 +143,14 @@ SEQ05 \x03|\x00\x00
 
 \x00\x00\x00  
 SEQ01 X\t
-SEQ13 
-SEQ04  J\x00\x00 
-SEQ12  \xde\x06\x00 
-SEQ06 SCE236_004\x00 \x82\x0b\x00 
+SEQ14 
+SEQ08 " J\x00\x00 
+SEQ08  \xde\x06\x00 
+SEQ05 SCE236_004\x00 \x82\x0b\x00 
 SEQ07  
 SEQ01 
-SEQ03 l\x80\x01\x0c
-SEQ05 \x03X\x00\x00
+SEQ10 l\x80\x01\x0c
+SEQ11 \x03X\x00\x00
  
 拓司\n　「自殺」@
 教授\n　「ああ。\pもしかしたら夢にも、そういった傾向の片鱗が現出し\n　　たのではないかな？」@
@@ -159,9 +159,9 @@ SEQ05 \x03X\x00\x00
 
 \x00\x00\x00  
 SEQ01 \xc6\x0b
-SEQ13 
-SEQ04  J\x00\x00 
-SEQ12  \xde\x06\x00 
-SEQ10  J\x00\x00 
-SEQ12 \x03\x03\x00\x00TextClose SPC02 l\r\x00 
-ENDF
+SEQ14 
+SEQ08 " J\x00\x00 
+SEQ08  \xde\x06\x00 
+SEQ06  J\x00\x00 
+SEQ04 TextClose SPC02 l\r\x00 
+FEND

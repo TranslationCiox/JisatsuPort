@@ -1,16 +1,16 @@
-STRF
+FSTR
 \n\x08\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00@\x06\x00  
 SEQ01 \x08\x01
-SEQ13 
-SEQ04 
-SEQ08 .\\Data\\Script\\Bgm.Fob SPC02  \x00\x00 
+SEQ14 
+SEQ08 "
+SEQ12 .\\Data\\Script\\Bgm.Fob SPC02  \x00\x00 
 SEQ02 PlayCD SPC01 J\x00\x00 
-SEQ06 SCE039_001\x00 f\x00\x00 
+SEQ05 SCE039_001\x00 f\x00\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x90L
-SEQ13 
-SEQ05 \x03N\x00\x00
+SEQ10 \x90L
+SEQ14 
+SEQ11 \x03N\x00\x00
  
 拓司\n　「早桃は、どうなんだ？」@
 \n引き返すことができない場所へと、話題が転がっていることには\n気づいていた。@
@@ -23,16 +23,16 @@ SEQ05 \x03N\x00\x00
 
 \x00\x00\x00  
 SEQ01 \xaa\x00
-SEQ13 
-SEQ04 
-SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 \x02\x02\x00 
+SEQ14 
+SEQ08 "
+SEQ13 .\\Data\\Script\\TextFunc.Fob SPC01 \x02\x02\x00 
 SEQ02 TextOn SPC01 0\x02\x00 
-SEQ06 SCE039_002\x00 L\x02\x00 
+SEQ05 SCE039_002\x00 L\x02\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x94L
-SEQ13 
-SEQ05 \x03W\x00\x00
+SEQ10 \x94L
+SEQ14 
+SEQ11 \x03W\x00\x00
  
 あまりにもあっさりとした口調だったので、拓司は早桃がそれを\n冗談として処理しようとしているのかと思った。@
 しかし、拓司を正面から見据える早桃の表情は、真剣そのものだ\nった。@
@@ -44,15 +44,15 @@ SEQ05 \x03W\x00\x00
 
 \x00\x00\x00  
 SEQ01 \x90\x02
-SEQ13 
-SEQ04  \x02\x02\x00 
-SEQ12  0\x02\x00 
-SEQ06 SCE039_003\x00 &\x04\x00 
+SEQ14 
+SEQ08 " \x02\x02\x00 
+SEQ08  0\x02\x00 
+SEQ05 SCE039_003\x00 &\x04\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x98L
-SEQ13 
-SEQ05 \x03>\x00\x00
+SEQ10 \x98L
+SEQ14 
+SEQ11 \x03>\x00\x00
  
 早桃\n　「わざとドアを開けておいたの。@
 　　おにいちゃんに見てもらおうと思って。@
@@ -62,19 +62,19 @@ SEQ05 \x03>\x00\x00
 \z
 \x00  
 SEQ01 j\x04
-SEQ13 
-SEQ04  \x02\x02\x00 
-SEQ12  0\x02\x00 
-SEQ10 \x03\x10\x00\x00
+SEQ14 
+SEQ08 " \x02\x02\x00 
+SEQ08  0\x02\x00 
+SEQ06 \x03\x10\x00\x00
 CHOICE
 義兄として好きだという\n男として好きだという\n\l0,2,
 ENDCHOICE
 
 \x00\x00\x00  
 SEQ01 \x9c\x05
-SEQ13 
-SEQ04  \x02\x02\x00 
-SEQ12  0\x02\x00 
-SEQ10  \x02\x02\x00 
-SEQ12 \x03\x03\x00\x00TextClose SPC02 "\x06\x00 
-ENDF
+SEQ14 
+SEQ08 " \x02\x02\x00 
+SEQ08  0\x02\x00 
+SEQ06  \x02\x02\x00 
+SEQ04 TextClose SPC02 "\x06\x00 
+FEND

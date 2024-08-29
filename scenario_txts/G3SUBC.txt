@@ -1,15 +1,15 @@
-STRF
+FSTR
 \x00\x07\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xf8\x05\x00  
 SEQ01 \x05\x01
-SEQ13 
-SEQ04 
-SEQ08 .\\Data\\Script\\Bgm.Fob SPC02  \x00\x00 
+SEQ14 
+SEQ08 "
+SEQ12 .\\Data\\Script\\Bgm.Fob SPC02  \x00\x00 
 SEQ02 PlayCD SPC01 J\x00\x00 
-SEQ06 SCEG03_003\x00 f\x00\x00 
+SEQ05 SCEG03_003\x00 f\x00\x00 
 SEQ07  
 SEQ01 
-SEQ03 x\xc5\x01\x0c
-SEQ05 \x03L\x00\x00
+SEQ10 x\xc5\x01\x0c
+SEQ11 \x03L\x00\x00
  
 　拓司の股間をゆっくりとなで回しながらいう。@
 錦城は長い髪を後ろに掻き上げて、唇をそっと拓司の股間に近づ\nけた。@
@@ -17,21 +17,21 @@ SEQ05 \x03L\x00\x00
 \n錦城\n　「静かに……静かにね。\p他の子が目を覚まさないように……\n　　私たちだけの秘密だから……」\w\z
 \x00\x00\x00  
 SEQ01 \xaa\x00
-SEQ13 
-SEQ04 
-SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 \xfa\x01\x00 
+SEQ14 
+SEQ08 "
+SEQ13 .\\Data\\Script\\TextFunc.Fob SPC01 \xfa\x01\x00 
 SEQ02 TextOn SPC01 (\x02\x00 
-SEQ10   
+SEQ06   
 SEQ01 _\x00
-SEQ13 
-SEQ04 
-SEQ08 .\\Data\\Script\\Bg.Fob SPC03 ^\x02\x00 
-SEQ12 \x03\x04\x00\x00BgAutoFadeIn SPC03 \x88\x02\x00 
-SEQ06 SCEG03_004\x00 \xac\x02\x00 
+SEQ14 
+SEQ08 "
+SEQ12 .\\Data\\Script\\Bg.Fob SPC03 ^\x02\x00 
+SEQ03 BgAutoFadeIn SPC03 \x88\x02\x00 
+SEQ05 SCEG03_004\x00 \xac\x02\x00 
 SEQ07  
 SEQ01 
-SEQ03 |\xc5\x01\x0c
-SEQ05 \x03\x92\x00\x00
+SEQ10 |\xc5\x01\x0c
+SEQ11 \x03\x92\x00\x00
  
 　錦城は顔を拓司の股間に埋めて、口だけを使ってペ○スを引き\nずり出した。@
 イヌが餌を食べるときのようなあさましい姿だったが、端正な錦\n城がすると、不思議と儀式めいて美しく見えた。@
@@ -44,16 +44,16 @@ SEQ05 \x03\x92\x00\x00
 　　いってあげましょうか、あなたのおち○ちんの味？」\w\z
 \x00\x00\x00  
 SEQ01 \xf0\x02
-SEQ13 
-SEQ04  \xfa\x01\x00 
-SEQ12  (\x02\x00 
-SEQ10   
+SEQ14 
+SEQ08 " \xfa\x01\x00 
+SEQ08  (\x02\x00 
+SEQ06   
 SEQ01 \xc8\x00
-SEQ13 
-SEQ04  ^\x02\x00 
-SEQ12  \x88\x02\x00 
-SEQ10   \x00\x00 
+SEQ14 
+SEQ08 " ^\x02\x00 
+SEQ08  \x88\x02\x00 
+SEQ06   \x00\x00 
 SEQ02 StopCD SPC01 \xb2\x05\x00 
-SEQ10  \xfa\x01\x00 
-SEQ12 \x03\x03\x00\x00TextClose SPC02 \xda\x05\x00 
-ENDF
+SEQ06  \xfa\x01\x00 
+SEQ04 TextClose SPC02 \xda\x05\x00 
+FEND

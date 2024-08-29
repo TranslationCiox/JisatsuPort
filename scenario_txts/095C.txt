@@ -1,22 +1,22 @@
-STRF
+FSTR
 7\x08\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00R\x06\x00  
 SEQ01 \xc8\x00
-SEQ13 
-SEQ04 
-SEQ08 .\\Data\\Script\\Bg.Fob SPC03  \x00\x00 
-SEQ12 \x03\x04\x00\x00BgAutoFadeIn SPC03 J\x00\x00 
-SEQ10   
+SEQ14 
+SEQ08 "
+SEQ12 .\\Data\\Script\\Bg.Fob SPC03  \x00\x00 
+SEQ03 BgAutoFadeIn SPC03 J\x00\x00 
+SEQ06   
 SEQ01 \t\x01
-SEQ13 
-SEQ04 
-SEQ08 .\\Data\\Script\\Bgm.Fob SPC02 \x88\x00\x00 
+SEQ14 
+SEQ08 "
+SEQ12 .\\Data\\Script\\Bgm.Fob SPC02 \x88\x00\x00 
 SEQ02 PlayCD SPC01 \xb2\x00\x00 
-SEQ06 SCE095_001\x00 \xce\x00\x00 
+SEQ05 SCE095_001\x00 \xce\x00\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x10\xa4
-SEQ13 
-SEQ05 \x03\xb4\x00\x00
+SEQ10 \x10\xa4
+SEQ14 
+SEQ11 \x03\xb4\x00\x00
  
 こうして１日が終わった。@
 深夜を過ぎても、拓司は眠りにつくことができなかった。@
@@ -26,13 +26,13 @@ SEQ05 \x03\xb4\x00\x00
 
 \x00  
 SEQ01 \x12\x01
-SEQ13 
-SEQ04 
-SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 \x02\x04\x00 
+SEQ14 
+SEQ08 "
+SEQ13 .\\Data\\Script\\TextFunc.Fob SPC01 \x02\x04\x00 
 SEQ02 TextOn SPC01 0\x04\x00 
-SEQ10  \x88\x00\x00 
+SEQ06  \x88\x00\x00 
 SEQ02 StopCD SPC01 X\x04\x00 
-SEQ10 ! 
+SEQ06 ! 
 SEQ01 \x14\x00\x00\r\x02 \x00\x00\x00\x00\x0b\r\x01 \x00\x00\x00\x00\x1b\x00\x00\x00\x001\x00\x00\x00\x00^\x05\x00\x03\x12\x00\x00
 CHOICE
 それは早桃だった\nそれはカンナだった\nそれは錦城だった\n\l0,3,
@@ -40,28 +40,28 @@ ENDCHOICE
 
 \x00  
 SEQ01 \xac\x04
-SEQ13 
-SEQ04  \x02\x04\x00 
-SEQ12  0\x04\x00 
-SEQ10  \x02\x04\x00 
-SEQ12 \x03\x04\x00\x00GetLastTxtID SPC03 :\x05\x00 
-SEQ10 2"\x06\x00\x03\r\x00\x00
+SEQ14 
+SEQ08 " \x02\x04\x00 
+SEQ08  0\x04\x00 
+SEQ06  \x02\x04\x00 
+SEQ03 GetLastTxtID SPC03 :\x05\x00 
+SEQ06 2"\x06\x00\x03\r\x00\x00
 CHOICE
 それは早桃だった\nそれは錦城だった\n\l0,2,
 ENDCHOICE
 
 \x00  
 SEQ01 d\x05
-SEQ13 
-SEQ04  \x02\x04\x00 
-SEQ12  0\x04\x00 
-SEQ10  \x02\x04\x00 
-SEQ12  :\x05\x00 
-SEQ10   
+SEQ14 
+SEQ08 " \x02\x04\x00 
+SEQ08  0\x04\x00 
+SEQ06  \x02\x04\x00 
+SEQ08  :\x05\x00 
+SEQ06   
 SEQ01 \x01\x00\x00\x1b
-SEQ12 1\x00\x00\x00\x00"\x06\x00  
+SEQ08 1\x00\x00\x00\x00"\x06\x00  
 SEQ01 
-SEQ12 \x0c
-SEQ04  \x02\x04\x00 
-SEQ12 \x03\x03\x00\x00TextClose SPC02 4\x06\x00 
-ENDF
+SEQ08 \x0c
+SEQ08 " \x02\x04\x00 
+SEQ04 TextClose SPC02 4\x06\x00 
+FEND

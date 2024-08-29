@@ -1,10 +1,10 @@
-STRF
+FSTR
 \xfd5\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00p-\x00\x03\x03\x00\x00SCE045_001\x00 \x06\x00\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xf0U
-SEQ13 
-SEQ05 \x03b\x00\x00
+SEQ10 \xf0U
+SEQ14 
+SEQ11 \x03b\x00\x00
  
 拓司\n　「……！」@
 /*■CG17　表示（クロスフェード）*/\a7,-2,-2,0,\a0,16,2,0,\a6,-2,0,0,/*▲BGM　Track08　再生　*/\a2,-1,8,1,\n　非常扉を開けた拓司は、ハッと息を呑んだ。@
@@ -13,16 +13,16 @@ SEQ05 \x03b\x00\x00
 
 \x00\x00  
 SEQ01 J\x00
-SEQ13 
-SEQ04 
-SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 \xf2\x01\x00 
+SEQ14 
+SEQ08 "
+SEQ13 .\\Data\\Script\\TextFunc.Fob SPC01 \xf2\x01\x00 
 SEQ02 TextOn SPC01  \x02\x00 
-SEQ06 SCE045_002\x00 <\x02\x00 
+SEQ05 SCE045_002\x00 <\x02\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xf4U
-SEQ13 
-SEQ05 \x03\xb7\x00\x00
+SEQ10 \xf4U
+SEQ14 
+SEQ11 \x03\xb7\x00\x00
  
 女の子\n　「こんにちわ」@
 \n　そういって女の子は軽く会釈をしてみせた。\p動きはどことなく\n　ゆったりしていて、それが彼女を官能的に見せ、それと同時に用\n　心深くも見せていた。\pまるで心のずっと奥の方から、絶え間なく\n　外の世界を見張っているような感じの女の子だ。@
@@ -35,15 +35,15 @@ SEQ05 \x03\xb7\x00\x00
 
 \x00  
 SEQ01 \x80\x02
-SEQ13 
-SEQ04  \xf2\x01\x00 
-SEQ12   \x02\x00 
-SEQ06 SCE045_003\x00 \x96\x05\x00 
+SEQ14 
+SEQ08 " \xf2\x01\x00 
+SEQ08   \x02\x00 
+SEQ05 SCE045_003\x00 \x96\x05\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xf8U
-SEQ13 
-SEQ05 \x03]\x00\x00
+SEQ10 \xf8U
+SEQ14 
+SEQ11 \x03]\x00\x00
  
 女の子\n　「お願いします」@
 \n　女の子がいった。@
@@ -55,15 +55,15 @@ SEQ05 \x03]\x00\x00
 
 \x00  
 SEQ01 \xda\x05
-SEQ13 
-SEQ04  \xf2\x01\x00 
-SEQ12   \x02\x00 
-SEQ06 SCE045_004\x00 \x88\x07\x00 
+SEQ14 
+SEQ08 " \xf2\x01\x00 
+SEQ08   \x02\x00 
+SEQ05 SCE045_004\x00 \x88\x07\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xfcU
-SEQ13 
-SEQ05 \x03B\x00\x00
+SEQ10 \xfcU
+SEQ14 
+SEQ11 \x03B\x00\x00
  
 女の子\n　「大切なことがたくさん書いてあります。読んでください」@
 \n　女の子は穏やかな口調でそういうと、その紙を拓司の手のなか\n　に押し込んだ。@
@@ -72,15 +72,15 @@ SEQ05 \x03B\x00\x00
 
 \x00\x00\x00  
 SEQ01 \xcc\x07
-SEQ13 
-SEQ04  \xf2\x01\x00 
-SEQ12   \x02\x00 
-SEQ06 SCE045_005\x00 \x0e\t\x00 
+SEQ14 
+SEQ08 " \xf2\x01\x00 
+SEQ08   \x02\x00 
+SEQ05 SCE045_005\x00 \x0e\t\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x00V
-SEQ13 
-SEQ05 \x03\x17\x01\x00
+SEQ10 \x00V
+SEQ14 
+SEQ11 \x03\x17\x01\x00
  
 　告発ならびに警告としての私がみなさんにお知らせします。@
 　犯罪的凶悪異星人による、シンリャク行為です（リストラジオ\n　ｘ線。赤外線。紫外線。マイクロ波を使用のことです）。@
@@ -89,15 +89,15 @@ SEQ05 \x03\x17\x01\x00
 
 \x00  
 SEQ01 R\t
-SEQ13 
-SEQ04  \xf2\x01\x00 
-SEQ12   \x02\x00 
-SEQ06 SCE045_006\x00 \xe8\r\x00 
+SEQ14 
+SEQ08 " \xf2\x01\x00 
+SEQ08   \x02\x00 
+SEQ05 SCE045_006\x00 \xe8\r\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x04V
-SEQ13 
-SEQ05 \x03O\x00\x00
+SEQ10 \x04V
+SEQ14 
+SEQ11 \x03O\x00\x00
  
 \n　雲居なたね。@
 　ああ、この子が……と拓司は思った。@
@@ -109,15 +109,15 @@ SEQ05 \x03O\x00\x00
 
 \x00  
 SEQ01 ,\x0e
-SEQ13 
-SEQ04  \xf2\x01\x00 
-SEQ12   \x02\x00 
-SEQ06 SCE045_007\x00 \xa2\x0f\x00 
+SEQ14 
+SEQ08 " \xf2\x01\x00 
+SEQ08   \x02\x00 
+SEQ05 SCE045_007\x00 \xa2\x0f\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x08V
-SEQ13 
-SEQ05 \x03\xac\x00\x00
+SEQ10 \x08V
+SEQ14 
+SEQ11 \x03\xac\x00\x00
  
 　－－雲居なたねは何者かにレイプされたらしい。@
 　噂の発生源は定かではないし、それが真実なのかどうかも拓司\nにはわからない。\pしかし雲居なたねが２週間以上学園を休んだ\nのは事実で、校内の学生はみなそれと噂を結びつけて面白がった@
@@ -126,15 +126,15 @@ SEQ05 \x03\xac\x00\x00
 
 \x00  
 SEQ01 \xe6\x0f
-SEQ13 
-SEQ04  \xf2\x01\x00 
-SEQ12   \x02\x00 
-SEQ06 SCE045_008\x00 \xd0\x12\x00 
+SEQ14 
+SEQ08 " \xf2\x01\x00 
+SEQ08   \x02\x00 
+SEQ05 SCE045_008\x00 \xd0\x12\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x0cV
-SEQ13 
-SEQ05 \x03\x96\x00\x00
+SEQ10 \x0cV
+SEQ14 
+SEQ11 \x03\x96\x00\x00
  
 　しかしそういった無責任な噂話は、１ヶ月後、雲居なたねが\n登校を再開したのを期に、ピタリと口にされなくなった。@
 　噂話が、本当だったからだ。@
@@ -143,15 +143,15 @@ SEQ05 \x03\x96\x00\x00
 
 \x00  
 SEQ01 \x14\x13
-SEQ13 
-SEQ04  \xf2\x01\x00 
-SEQ12   \x02\x00 
-SEQ06 SCE045_009\x00 \xa6\x15\x00 
+SEQ14 
+SEQ08 " \xf2\x01\x00 
+SEQ08   \x02\x00 
+SEQ05 SCE045_009\x00 \xa6\x15\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x10V
-SEQ13 
-SEQ05 \x03\x8b\x00\x00
+SEQ10 \x10V
+SEQ14 
+SEQ11 \x03\x8b\x00\x00
  
 　こうして実際に向かい合ったのは初めてだったが、確かにそれ\nは、遠目で見たことのある雲居なたね、そのひとだった。@
 　電波系。@
@@ -162,15 +162,15 @@ SEQ05 \x03\x8b\x00\x00
 
 \x00\x00\x00  
 SEQ01 \xea\x15
-SEQ13 
-SEQ04  \xf2\x01\x00 
-SEQ12   \x02\x00 
-SEQ06 SCE045_010\x00 P\x18\x00 
+SEQ14 
+SEQ08 " \xf2\x01\x00 
+SEQ08   \x02\x00 
+SEQ05 SCE045_010\x00 P\x18\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x14V
-SEQ13 
-SEQ05 \x03W\x00\x00
+SEQ10 \x14V
+SEQ14 
+SEQ11 \x03W\x00\x00
  
 なたね\n　「わかりますか？」@
 拓司\n　「え？」@
@@ -182,15 +182,15 @@ SEQ05 \x03W\x00\x00
 
 \x00  
 SEQ01 \x94\x18
-SEQ13 
-SEQ04  \xf2\x01\x00 
-SEQ12   \x02\x00 
-SEQ06 SCE045_011\x00 *\x1a\x00 
+SEQ14 
+SEQ08 " \xf2\x01\x00 
+SEQ08   \x02\x00 
+SEQ05 SCE045_011\x00 *\x1a\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x18V
-SEQ13 
-SEQ05 \x03O\x00\x00
+SEQ10 \x18V
+SEQ14 
+SEQ11 \x03O\x00\x00
  
 なたね\n　「よかったら、それをコピーして、お友達に配ってほしいんで\n　　す。\p私ひとりの力じゃ、とても世界中にメッセージを届ける\n　　ことはできないから。\pそれに最近、みんな、私からだと、チ\n　　ラシ、うけとってくれないから……」@
 \n　なたねはそういって、もう一度笑った。@
@@ -198,15 +198,15 @@ SEQ05 \x03O\x00\x00
 
 \x00  
 SEQ01 n\x1a
-SEQ13 
-SEQ04  \xf2\x01\x00 
-SEQ12   \x02\x00 
-SEQ06 SCE045_012\x00 \xe4\x1b\x00 
+SEQ14 
+SEQ08 " \xf2\x01\x00 
+SEQ08   \x02\x00 
+SEQ05 SCE045_012\x00 \xe4\x1b\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x1cV
-SEQ13 
-SEQ05 \x03d\x00\x00
+SEQ10 \x1cV
+SEQ14 
+SEQ11 \x03d\x00\x00
  
 　宇宙人。@
 　電波系。@
@@ -220,15 +220,15 @@ SEQ05 \x03d\x00\x00
 
 \x00  
 SEQ01 (\x1c
-SEQ13 
-SEQ04  \xf2\x01\x00 
-SEQ12   \x02\x00 
-SEQ06 SCE045_013\x00 \xf2\x1d\x00 
+SEQ14 
+SEQ08 " \xf2\x01\x00 
+SEQ08   \x02\x00 
+SEQ05 SCE045_013\x00 \xf2\x1d\x00 
 SEQ07  
 SEQ01 
-SEQ03  V
-SEQ13 
-SEQ05 \x03\x8b\x00\x00
+SEQ10  V
+SEQ14 
+SEQ11 \x03\x8b\x00\x00
  
 御堂\n　「おい」@
 /*▲BGM　停止　*/\a4,-1,0,0,/*■CG18　表示（クロスフェード）*/\a7,-2,-2,0,\a0,17,2,0,\a6,-2,0,0,/*▲BGM　Track09　再生　*/\a2,-1,9,1,\n　振り向くと、廊下の壁により掛かって、御堂俊一が立っていた@
@@ -242,15 +242,15 @@ SEQ05 \x03\x8b\x00\x00
 
   
 SEQ01 6\x1e
-SEQ13 
-SEQ04  \xf2\x01\x00 
-SEQ12   \x02\x00 
-SEQ06 SCE045_014\x00 \x9c \x00 
+SEQ14 
+SEQ08 " \xf2\x01\x00 
+SEQ08   \x02\x00 
+SEQ05 SCE045_014\x00 \x9c \x00 
 SEQ07  
 SEQ01 
-SEQ03 $V
-SEQ13 
-SEQ05 \x03V\x00\x00
+SEQ10 $V
+SEQ14 
+SEQ11 \x03V\x00\x00
  
 御堂\n　「クールってやつか？　それともニヒルっていうのか？」@
 拓司\n　「好きなようにいえ」@
@@ -264,15 +264,15 @@ SEQ05 \x03V\x00\x00
 
 \x00  
 SEQ01 \xe0 
-SEQ13 
-SEQ04  \xf2\x01\x00 
-SEQ12   \x02\x00 
-SEQ06 SCE045_015\x00 r"\x00 
+SEQ14 
+SEQ08 " \xf2\x01\x00 
+SEQ08   \x02\x00 
+SEQ05 SCE045_015\x00 r"\x00 
 SEQ07  
 SEQ01 
-SEQ03 (V
-SEQ13 
-SEQ05 \x03[\x00\x00
+SEQ10 (V
+SEQ14 
+SEQ11 \x03[\x00\x00
  
 御堂\n　「なたねちゃんだよ」@
 \n　御堂は顎をしゃくって、拓司の横に立つなたねを示した。@
@@ -284,15 +284,15 @@ SEQ05 \x03[\x00\x00
 
 \x00\x00\x00  
 SEQ01 \xb6"
-SEQ13 
-SEQ04  \xf2\x01\x00 
-SEQ12   \x02\x00 
-SEQ06 SCE045_016\x00 \\$\x00 
+SEQ14 
+SEQ08 " \xf2\x01\x00 
+SEQ08   \x02\x00 
+SEQ05 SCE045_016\x00 \\$\x00 
 SEQ07  
 SEQ01 
-SEQ03 ,V
-SEQ13 
-SEQ05 \x03\x8d\x00\x00
+SEQ10 ,V
+SEQ14 
+SEQ11 \x03\x8d\x00\x00
  
 御堂\n　「協力だよ。\p地球防衛計画に手を貸してるんだよ。@
 　　……そうだよな、なたねちゃん！」@
@@ -306,15 +306,15 @@ SEQ05 \x03\x8d\x00\x00
 
 \x00  
 SEQ01 \xa0$
-SEQ13 
-SEQ04  \xf2\x01\x00 
-SEQ12   \x02\x00 
-SEQ06 SCE045_017\x00 \x0e'\x00 
+SEQ14 
+SEQ08 " \xf2\x01\x00 
+SEQ08   \x02\x00 
+SEQ05 SCE045_017\x00 \x0e'\x00 
 SEQ07  
 SEQ01 
-SEQ03 0V
-SEQ13 
-SEQ05 \x03\x81\x00\x00
+SEQ10 0V
+SEQ14 
+SEQ11 \x03\x81\x00\x00
  
 なたね\n　「だから、私とあなたの出会いもまた、必然なの。\pわかる、虎\n　　菱拓司くん？」@
 \n　フルネームで呼ばれて拓司はギョッとした。\pすぐに御堂がそれ\n　を笑い飛ばす。@
@@ -326,15 +326,15 @@ SEQ05 \x03\x81\x00\x00
 
 \x00\x00\x00  
 SEQ01 R'
-SEQ13 
-SEQ04  \xf2\x01\x00 
-SEQ12   \x02\x00 
-SEQ06 SCE045_019\x00 \x90)\x00 
+SEQ14 
+SEQ08 " \xf2\x01\x00 
+SEQ08   \x02\x00 
+SEQ05 SCE045_019\x00 \x90)\x00 
 SEQ07  
 SEQ01 
-SEQ03 8V
-SEQ13 
-SEQ05 \x03V\x00\x00
+SEQ10 8V
+SEQ14 
+SEQ11 \x03V\x00\x00
  
 拓司\n　「……行こう、雲居さん」@
 \n拓司はいった。@
@@ -348,33 +348,33 @@ SEQ05 \x03V\x00\x00
 
 \x00  
 SEQ01 \xd4)
-SEQ13 
-SEQ04  \xf2\x01\x00 
-SEQ12   \x02\x00 
-SEQ06 SCE045_020\x00 f+\x00 
+SEQ14 
+SEQ08 " \xf2\x01\x00 
+SEQ08   \x02\x00 
+SEQ05 SCE045_020\x00 f+\x00 
 SEQ07  
 SEQ01 
-SEQ03 <V
-SEQ13 
-SEQ05 \x03?\x00\x00
+SEQ10 <V
+SEQ14 
+SEQ11 \x03?\x00\x00
  
 御堂\n　「そうだ、お前も来るか？\p　天才少女雲居なたねさんの学説\n　　によると、人間と人間の出会いにはすべからく意味があるら\n　　しいぜ？\p　ってことは、ここでおれたちが逢ったことも、偶\n　　然じゃないってことだろ？\p　ナ……来いよ、虎菱？」\
 
 \x00  
 SEQ01 \xaa+
-SEQ13 
-SEQ04  \xf2\x01\x00 
-SEQ12   \x02\x00 
-SEQ10 \x03\x0b\x00\x00
+SEQ14 
+SEQ08 " \xf2\x01\x00 
+SEQ08   \x02\x00 
+SEQ06 \x03\x0b\x00\x00
 CHOICE
 御堂に従う\n御堂を無視する\n\l0,2,
 ENDCHOICE
 
 \x00  
 SEQ01 \xe0,
-SEQ13 
-SEQ04  \xf2\x01\x00 
-SEQ12   \x02\x00 
-SEQ10  \xf2\x01\x00 
-SEQ12 \x03\x03\x00\x00TextClose SPC02 R-\x00 
-ENDF
+SEQ14 
+SEQ08 " \xf2\x01\x00 
+SEQ08   \x02\x00 
+SEQ06  \xf2\x01\x00 
+SEQ04 TextClose SPC02 R-\x00 
+FEND

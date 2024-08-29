@@ -1,18 +1,18 @@
-STRF
+FSTR
 \xb8\x04\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xa4\t3\x01\x00\x00\x00d\x03\x00  
 SEQ01 \xc8\x00
-SEQ13 
-SEQ04 
-SEQ08 .\\Data\\Script\\Bg.Fob SPC03  \x00\x00 
-SEQ12 \x03\x04\x00\x00BgAutoFadeIn SPC03 J\x00\x00 
-SEQ10 
-SEQ08 .\\Data\\Script\\Bgm.Fob SPC02 n\x00\x00 
+SEQ14 
+SEQ08 "
+SEQ12 .\\Data\\Script\\Bg.Fob SPC03  \x00\x00 
+SEQ03 BgAutoFadeIn SPC03 J\x00\x00 
+SEQ06 
+SEQ12 .\\Data\\Script\\Bgm.Fob SPC02 n\x00\x00 
 SEQ02 StopCD SPC01 \x98\x00\x00 
-SEQ06 SCEK06_001\x00 \xb4\x00\x00 
+SEQ05 SCEK06_001\x00 \xb4\x00\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xd0\xa6\x01\x0c
-SEQ05 \x03v\x00\x00
+SEQ10 \xd0\xa6\x01\x0c
+SEQ11 \x03v\x00\x00
  
 　もう帰ろう、と私がいうと、ゆきはほっとしたようだった。@
 けれども安堵の奥には、落胆のかけらがあるように思えた。@
@@ -24,10 +24,10 @@ SEQ05 \x03v\x00\x00
 それから１週間後、ゆきは風邪薬を２００錠のんで、自殺したの\nだった。\w\z
 \x00  
 SEQ01 \xf8\x00
-SEQ13 
-SEQ04 
-SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 \xf0\x02\x00 
+SEQ14 
+SEQ08 "
+SEQ13 .\\Data\\Script\\TextFunc.Fob SPC01 \xf0\x02\x00 
 SEQ02 TextOn SPC01 \x1e\x03\x00 
-SEQ10  \xf0\x02\x00 
-SEQ12 \x03\x03\x00\x00TextClose SPC02 F\x03\x00 
-ENDF
+SEQ06  \xf0\x02\x00 
+SEQ04 TextClose SPC02 F\x03\x00 
+FEND

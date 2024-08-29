@@ -1,9 +1,9 @@
-STRF
+FSTR
 )\x02\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xb0\x054\x01\x00\x00\x00\xa4\x01\x00\x03\x03\x00\x00SCEK15_001\x00 \x06\x00\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xd0\xb0\x01\x0c
-SEQ05 \x03 \x00\x00
+SEQ10 \xd0\xb0\x01\x0c
+SEQ11 \x03 \x00\x00
  
 お話はこれでおしまい。@
 ゆき？@
@@ -11,13 +11,13 @@ SEQ05 \x03 \x00\x00
 おしまい。これで、おしまい。\w\z
 \x00\x00\x00  
 SEQ01 J\x00
-SEQ13 
-SEQ04 
-SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 \xea\x00\x00 
+SEQ14 
+SEQ08 "
+SEQ13 .\\Data\\Script\\TextFunc.Fob SPC01 \xea\x00\x00 
 SEQ02 TextOn SPC01 \x18\x01\x00 
-SEQ10 
-SEQ08 .\\Data\\Script\\Bgm.Fob SPC02 4\x01\x00 
+SEQ06 
+SEQ12 .\\Data\\Script\\Bgm.Fob SPC02 4\x01\x00 
 SEQ02 StopCD SPC01 ^\x01\x00 
-SEQ10  \xea\x00\x00 
-SEQ12 \x03\x03\x00\x00TextClose SPC02 \x86\x01\x00 
-ENDF
+SEQ06  \xea\x00\x00 
+SEQ04 TextClose SPC02 \x86\x01\x00 
+FEND

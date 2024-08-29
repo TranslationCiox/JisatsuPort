@@ -1,9 +1,9 @@
-STRF
+FSTR
 \xfd\x06\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\x14\x05\x00\x03\x03\x00\x00SCE209_001\x00 \x06\x00\x00 
 SEQ07  
 SEQ01 
-SEQ03 0V\x01\x0c
-SEQ05 \x03\xdc\x00\x00
+SEQ10 0V\x01\x0c
+SEQ11 \x03\xdc\x00\x00
  
 ナタネ\n　「話すことはこれだけ。\p私はあなたに『創』られた。@
 　　でも、あなたが眠っているあいだに教授は、私を監禁したわ。\n　　\pでもいま、あなたはもう一度『願』った。\p世界の真実を語る\n　　者の存在を。\pだから私はここに現れた……」@
@@ -14,20 +14,20 @@ SEQ05 \x03\xdc\x00\x00
 
 \x00\x00\x00  
 SEQ01 J\x00
-SEQ13 
-SEQ04 
-SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 \xda\x03\x00 
+SEQ14 
+SEQ08 "
+SEQ13 .\\Data\\Script\\TextFunc.Fob SPC01 \xda\x03\x00 
 SEQ02 TextOn SPC01 \x08\x04\x00 
-SEQ10 \x03#\x00\x00
+SEQ06 \x03#\x00\x00
 CHOICE
 「『教授が語る世界』をリアルと信じる」\n「『学校に籠城する世界』をリアルと信じる」\n「『君の語る世界』をリアルと信じる」\n\l0,3,
 ENDCHOICE
 
 \x00\x00\x00  
 SEQ01 $\x04
-SEQ13 
-SEQ04  \xda\x03\x00 
-SEQ12  \x08\x04\x00 
-SEQ10  \xda\x03\x00 
-SEQ12 \x03\x03\x00\x00TextClose SPC02 \xf6\x04\x00 
-ENDF
+SEQ14 
+SEQ08 " \xda\x03\x00 
+SEQ08  \x08\x04\x00 
+SEQ06  \xda\x03\x00 
+SEQ04 TextClose SPC02 \xf6\x04\x00 
+FEND

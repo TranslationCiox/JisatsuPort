@@ -1,10 +1,10 @@
-STRF
+FSTR
 u\x03\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`\x044\x01\x00\x00\x00\xc6\x02\x00\x03\x03\x00\x00SCE059_001\x00 \x06\x00\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xd0k
-SEQ13 
-SEQ05 \x03z\x00\x00
+SEQ10 \xd0k
+SEQ14 
+SEQ11 \x03z\x00\x00
  
 拓司\n　「天使って、なんのことだ？」@
 早桃\n　「……え？」@
@@ -19,10 +19,10 @@ SEQ05 \x03z\x00\x00
 
 \x00  
 SEQ01 J\x00
-SEQ13 
-SEQ04 
-SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 R\x02\x00 
+SEQ14 
+SEQ08 "
+SEQ13 .\\Data\\Script\\TextFunc.Fob SPC01 R\x02\x00 
 SEQ02 TextOn SPC01 \x80\x02\x00 
-SEQ10  R\x02\x00 
-SEQ12 \x03\x03\x00\x00TextClose SPC02 \xa8\x02\x00 
-ENDF
+SEQ06  R\x02\x00 
+SEQ04 TextClose SPC02 \xa8\x02\x00 
+FEND

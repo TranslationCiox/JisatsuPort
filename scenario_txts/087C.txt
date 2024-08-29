@@ -1,13 +1,13 @@
-STRF
+FSTR
 \xc3\n\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xcc\x08\x00
-SEQ08 .\\Data\\Script\\Bgm.Fob SPC02 \x06\x00\x00 
+SEQ12 .\\Data\\Script\\Bgm.Fob SPC02 \x06\x00\x00 
 SEQ02 StopCD SPC01 0\x00\x00 
-SEQ06 SCE087_001\x00 L\x00\x00 
+SEQ05 SCE087_001\x00 L\x00\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x90\x97
-SEQ13 
-SEQ05 \x03\x9e\x00\x00
+SEQ10 \x90\x97
+SEQ14 
+SEQ11 \x03\x9e\x00\x00
  
 　実験室のドアを開けた拓司は、思わず声をあげた。@
 　実験室の壁全体が、銀色に輝いていたのである。\pそして、ムッ\n　と息詰まるようなシンナーの匂い……。@
@@ -21,16 +21,16 @@ SEQ05 \x03\x9e\x00\x00
 
 \x00\x00\x00  
 SEQ01 \x90\x00
-SEQ13 
-SEQ04 
-SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 (\x03\x00 
+SEQ14 
+SEQ08 "
+SEQ13 .\\Data\\Script\\TextFunc.Fob SPC01 (\x03\x00 
 SEQ02 TextOn SPC01 V\x03\x00 
-SEQ06 SCE087_002\x00 r\x03\x00 
+SEQ05 SCE087_002\x00 r\x03\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x94\x97
-SEQ13 
-SEQ05 \x03{\x00\x00
+SEQ10 \x94\x97
+SEQ14 
+SEQ11 \x03{\x00\x00
  
 拓司\n　「コレは……アルミホイル？」@
 早桃\n　「そう。\p雲居さんが段ボール３箱分も用意しておいた……徳\n　　用アルミホイル。\pそれをさっきから、月代先輩と２人で壁に\n　　貼り付けてるの」@
@@ -43,15 +43,15 @@ SEQ05 \x03{\x00\x00
 
 \x00\x00\x00  
 SEQ01 \xb6\x03
-SEQ13 
-SEQ04  (\x03\x00 
-SEQ12  V\x03\x00 
-SEQ06 SCE087_003\x00 \xdc\x05\x00 
+SEQ14 
+SEQ08 " (\x03\x00 
+SEQ08  V\x03\x00 
+SEQ05 SCE087_003\x00 \xdc\x05\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x98\x97
-SEQ13 
-SEQ05 \x03\x92\x00\x00
+SEQ10 \x98\x97
+SEQ14 
+SEQ11 \x03\x92\x00\x00
  
 なたね\n　「気分を害さないで欲しいんだけれど、そう簡単にまさかとか、\n　　言って欲しくないの。\pだってこれは、私が死ぬ思いをしてや\n　　つらの円盤から盗み出してきた機密事項の結晶だから」@
 拓司\n　「……」@
@@ -61,9 +61,9 @@ SEQ05 \x03\x92\x00\x00
 
 \x00\x00\x00  
 SEQ01  \x06
-SEQ13 
-SEQ04  (\x03\x00 
-SEQ12  V\x03\x00 
-SEQ10  (\x03\x00 
-SEQ12 \x03\x03\x00\x00TextClose SPC02 \xae\x08\x00 
-ENDF
+SEQ14 
+SEQ08 " (\x03\x00 
+SEQ08  V\x03\x00 
+SEQ06  (\x03\x00 
+SEQ04 TextClose SPC02 \xae\x08\x00 
+FEND

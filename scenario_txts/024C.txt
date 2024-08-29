@@ -1,22 +1,22 @@
-STRF
+FSTR
 ?!\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\x9a\x1b\x00  
 SEQ01 \x06\x01
-SEQ13 
-SEQ04 
-SEQ08 .\\Data\\Script\\Bgm.Fob SPC02  \x00\x00 
+SEQ14 
+SEQ08 "
+SEQ12 .\\Data\\Script\\Bgm.Fob SPC02  \x00\x00 
 SEQ02 PlayCD SPC01 J\x00\x00 
-SEQ10   
+SEQ06   
 SEQ01 \xc9\x00
-SEQ13 
-SEQ04 
-SEQ08 .\\Data\\Script\\Bg.Fob SPC03 \x80\x00\x00 
-SEQ12 \x03\x04\x00\x00BgAutoFadeIn SPC03 \xaa\x00\x00 
-SEQ06 SCE024_001\x00 \xce\x00\x00 
+SEQ14 
+SEQ08 "
+SEQ12 .\\Data\\Script\\Bg.Fob SPC03 \x80\x00\x00 
+SEQ03 BgAutoFadeIn SPC03 \xaa\x00\x00 
+SEQ05 SCE024_001\x00 \xce\x00\x00 
 SEQ07  
 SEQ01 
-SEQ03  5
-SEQ13 
-SEQ05 \x03K\x00\x00
+SEQ10  5
+SEQ14 
+SEQ11 \x03K\x00\x00
  
 『灰色』に引きずられるように現実に返って、拓司ははっと息を呑\nんだ。@
 いつの間にかベッドの上に横になっている。@
@@ -26,16 +26,16 @@ SEQ05 \x03K\x00\x00
 
 \x00  
 SEQ01 \x12\x01
-SEQ13 
-SEQ04 
-SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 ^\x02\x00 
+SEQ14 
+SEQ08 "
+SEQ13 .\\Data\\Script\\TextFunc.Fob SPC01 ^\x02\x00 
 SEQ02 TextOn SPC01 \x8c\x02\x00 
-SEQ06 SCE024_002\x00 \xa8\x02\x00 
+SEQ05 SCE024_002\x00 \xa8\x02\x00 
 SEQ07  
 SEQ01 
-SEQ03 $5
-SEQ13 
-SEQ05 \x03\xb8\x00\x00
+SEQ10 $5
+SEQ14 
+SEQ11 \x03\xb8\x00\x00
  
 　回転部分に砂でも噛んでいるのか、音がしている。@
 最初に感じたのは、寝坊したのだ、という焦りだった。\pただ、すぐ\nにそうではないことがわかった。@
@@ -49,15 +49,15 @@ SEQ05 \x03\xb8\x00\x00
 
 \x00\x00\x00  
 SEQ01 \xec\x02
-SEQ13 
-SEQ04  ^\x02\x00 
-SEQ12  \x8c\x02\x00 
-SEQ06 SCE024_003\x00 \x06\x06\x00 
+SEQ14 
+SEQ08 " ^\x02\x00 
+SEQ08  \x8c\x02\x00 
+SEQ05 SCE024_003\x00 \x06\x06\x00 
 SEQ07  
 SEQ01 
-SEQ03 (5
-SEQ13 
-SEQ05 \x03\x93\x00\x00
+SEQ10 (5
+SEQ14 
+SEQ11 \x03\x93\x00\x00
  
 ここでようやく、拓司は自分が夢を見ているのだと気づいた。@
 \n夢にしてはずいぶんリアルだ。@
@@ -70,20 +70,20 @@ SEQ05 \x03\x93\x00\x00
 
 \x00  
 SEQ01 J\x06
-SEQ13 
-SEQ04  ^\x02\x00 
-SEQ12  \x8c\x02\x00 
-SEQ10   
+SEQ14 
+SEQ08 " ^\x02\x00 
+SEQ08  \x8c\x02\x00 
+SEQ06   
 SEQ01 
-SEQ12 \x0c
-SEQ04   \x00\x00 
+SEQ08 \x0c
+SEQ08 "  \x00\x00 
 SEQ02 SeStop SPC01 \xf6\x08\x00 
-SEQ06 SCE024_004\x00 \x12\t\x00 
+SEQ05 SCE024_004\x00 \x12\t\x00 
 SEQ07  
 SEQ01 
-SEQ03 ,5
-SEQ13 
-SEQ05 \x03\x9a\x00\x00
+SEQ10 ,5
+SEQ14 
+SEQ11 \x03\x9a\x00\x00
  
 拓司\n　「さて」@
 \nしきり直すように口に出してみる。@
@@ -102,15 +102,15 @@ SEQ05 \x03\x9a\x00\x00
 
 \x00  
 SEQ01 V\t
-SEQ13 
-SEQ04  ^\x02\x00 
-SEQ12  \x8c\x02\x00 
-SEQ06 SCE024_005\x00 \xf8\x0b\x00 
+SEQ14 
+SEQ08 " ^\x02\x00 
+SEQ08  \x8c\x02\x00 
+SEQ05 SCE024_005\x00 \xf8\x0b\x00 
 SEQ07  
 SEQ01 
-SEQ03 05
-SEQ13 
-SEQ05 \x03c\x00\x00
+SEQ10 05
+SEQ14 
+SEQ11 \x03c\x00\x00
  
 拓司はドアを強く押してみた。\pびくともしない。@
 改めてベッドに横になり、夢よ醒めろ、と念じたが、一向に醒める\n様子はない。@
@@ -120,15 +120,15 @@ SEQ05 \x03c\x00\x00
 
 \x00  
 SEQ01 <\x0c
-SEQ13 
-SEQ04  ^\x02\x00 
-SEQ12  \x8c\x02\x00 
-SEQ06 SCE024_006\x00 \x02\x0e\x00 
+SEQ14 
+SEQ08 " ^\x02\x00 
+SEQ08  \x8c\x02\x00 
+SEQ05 SCE024_006\x00 \x02\x0e\x00 
 SEQ07  
 SEQ01 
-SEQ03 45
-SEQ13 
-SEQ05 \x03[\x00\x00
+SEQ10 45
+SEQ14 
+SEQ11 \x03[\x00\x00
  
 声\n　「……いるんでしょう？！　そこにいるんでしょう……」@
 \nまだ若い、女の声だ。\p声はどうやら壁の向こうから漏れ聞こえてい\nるようだ。@
@@ -140,15 +140,15 @@ SEQ05 \x03[\x00\x00
 
 \x00  
 SEQ01 F\x0e
-SEQ13 
-SEQ04  ^\x02\x00 
-SEQ12  \x8c\x02\x00 
-SEQ06 SCE024_007\x00 \xec\x0f\x00 
+SEQ14 
+SEQ08 " ^\x02\x00 
+SEQ08  \x8c\x02\x00 
+SEQ05 SCE024_007\x00 \xec\x0f\x00 
 SEQ07  
 SEQ01 
-SEQ03 85
-SEQ13 
-SEQ05 \x03R\x00\x00
+SEQ10 85
+SEQ14 
+SEQ11 \x03R\x00\x00
  
 声\n　「よかった！　もしかしてもう逢えないんじゃないかって思って\n　　た！」@
 拓司\n　「いや……人違いじゃないか？」@
@@ -161,15 +161,15 @@ SEQ05 \x03R\x00\x00
 
 \x00\x00\x00  
 SEQ01 0\x10
-SEQ13 
-SEQ04  ^\x02\x00 
-SEQ12  \x8c\x02\x00 
-SEQ06 SCE024_008\x00 \xb2\x11\x00 
+SEQ14 
+SEQ08 " ^\x02\x00 
+SEQ08  \x8c\x02\x00 
+SEQ05 SCE024_008\x00 \xb2\x11\x00 
 SEQ07  
 SEQ01 
-SEQ03 <5
-SEQ13 
-SEQ05 \x03W\x00\x00
+SEQ10 <5
+SEQ14 
+SEQ11 \x03W\x00\x00
  
 拓司\n　「ちょっと待ってくれ！　話がまったくわからない。@
 　　おれは君が探している人間じゃないし、やつらっていうのが誰\n　　のことなのかもわからない。\pだいたい君は誰だ？」@
@@ -178,20 +178,20 @@ SEQ05 \x03W\x00\x00
 
 \x00  
 SEQ01 \xf6\x11
-SEQ13 
-SEQ04  ^\x02\x00 
-SEQ12  \x8c\x02\x00 
-SEQ10   
+SEQ14 
+SEQ08 " ^\x02\x00 
+SEQ08  \x8c\x02\x00 
+SEQ06   
 SEQ01 \xca\x00
-SEQ13 
-SEQ04  \x80\x00\x00 
-SEQ12  \xaa\x00\x00 
-SEQ06 SCE024_009\x00 \xc0\x13\x00 
+SEQ14 
+SEQ08 " \x80\x00\x00 
+SEQ08  \xaa\x00\x00 
+SEQ05 SCE024_009\x00 \xc0\x13\x00 
 SEQ07  
 SEQ01 
-SEQ03 @5
-SEQ13 
-SEQ05 \x03\xb3\x00\x00
+SEQ10 @5
+SEQ14 
+SEQ11 \x03\xb3\x00\x00
  
 \n/*▲SE01　再生（フェードイン）　*/\a2,2,1,0,　ザザザ……ザザッ……\pザアザザザ……ザアアアアア……@
 　ザアザアアアアアアア……@
@@ -202,15 +202,15 @@ SEQ05 \x03\xb3\x00\x00
 
 \x00  
 SEQ01 \x04\x14
-SEQ13 
-SEQ04  ^\x02\x00 
-SEQ12  \x8c\x02\x00 
-SEQ06 SCE024_010\x00 \n\x17\x00 
+SEQ14 
+SEQ08 " ^\x02\x00 
+SEQ08  \x8c\x02\x00 
+SEQ05 SCE024_010\x00 \n\x17\x00 
 SEQ07  
 SEQ01 
-SEQ03 D5
-SEQ13 
-SEQ05 \x03\xd3\x00\x00
+SEQ10 D5
+SEQ14 
+SEQ11 \x03\xd3\x00\x00
  
 かつん、かつん、かつん。@
 ドアの向こうは廊下にでもなっているのだろう、足音は遠くからま\nっすぐ近づいてきて…\pそして拓司のドアの前でピタリと止まった。\n\p静寂。@
@@ -225,24 +225,24 @@ SEQ05 \x03\xd3\x00\x00
 /* SE22 一回再生（再生終わり待たずに…とかできます？）　*/\a2,0,22,0,がちゃり、とドアが開いた。\w\n/* SE22 とめる　*/\a4,0,0,0,\z
 \x00\x00  
 SEQ01 N\x17
-SEQ13 
-SEQ04  ^\x02\x00 
-SEQ12  \x8c\x02\x00 
-SEQ10   
+SEQ14 
+SEQ08 " ^\x02\x00 
+SEQ08  \x8c\x02\x00 
+SEQ06   
 SEQ01 \x01\x00
-SEQ13 
-SEQ04   \x00\x00 
-SEQ12  \xf6\x08\x00 
-SEQ10   
+SEQ14 
+SEQ08 "  \x00\x00 
+SEQ08  \xf6\x08\x00 
+SEQ06   
 SEQ01 
-SEQ12 \x0c
-SEQ04   \x00\x00 
-SEQ12  \xf6\x08\x00 
-SEQ10   
+SEQ08 \x0c
+SEQ08 "  \x00\x00 
+SEQ08  \xf6\x08\x00 
+SEQ06   
 SEQ01 \xc8\x00
-SEQ13 
-SEQ04  \x80\x00\x00 
-SEQ12  \xaa\x00\x00 
-SEQ10  ^\x02\x00 
-SEQ12 \x03\x03\x00\x00TextClose SPC02 |\x1b\x00 
-ENDF
+SEQ14 
+SEQ08 " \x80\x00\x00 
+SEQ08  \xaa\x00\x00 
+SEQ06  ^\x02\x00 
+SEQ04 TextClose SPC02 |\x1b\x00 
+FEND

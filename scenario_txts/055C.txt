@@ -1,10 +1,10 @@
-STRF
+FSTR
 <\x10\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00>\r\x00\x03\x03\x00\x00SCE055_001\x00 \x06\x00\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x90e
-SEQ13 
-SEQ05 \x03\x98\x00\x00
+SEQ10 \x90e
+SEQ14 
+SEQ11 \x03\x98\x00\x00
  
 　拓司は胸のムカツキを必死に押さえた。@
 　自殺波動などというものが信じられないうえに、なたねが『前\n兆』を察知できるなどという話は初耳だ。\pでたらめだ。\pなたねの\n話は、なにもかもが常軌を逸している。\pその場その場の思いつき\nで、ものをいっているとしか思えない。@
@@ -16,16 +16,16 @@ SEQ05 \x03\x98\x00\x00
 
 \x00  
 SEQ01 J\x00
-SEQ13 
-SEQ04 
-SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 \xca\x02\x00 
+SEQ14 
+SEQ08 "
+SEQ13 .\\Data\\Script\\TextFunc.Fob SPC01 \xca\x02\x00 
 SEQ02 TextOn SPC01 \xf8\x02\x00 
-SEQ06 SCE055_002\x00 \x14\x03\x00 
+SEQ05 SCE055_002\x00 \x14\x03\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x94e
-SEQ13 
-SEQ05 \x03\xcd\x00\x00
+SEQ10 \x94e
+SEQ14 
+SEQ11 \x03\xcd\x00\x00
  
 なたね\n　「自殺っていうのは、自分がおかれている状況への絶望とかあ\n　　きらめとか、そんな悲しみの感情から生まれるでしょう？@
 　　でも悲しみは、簡単に怒りへと変化する……。\p『どうしてわ\n　　たしばっかり』『そもそもこんなになってしまったのは自分\n　　のせいじゃない』『納得いかない』……そういった怒りの感\n　　情は、他人へと転嫁される。\p誰だって、自分を責めるより他\n　　人を責めていた方がラクだから。\pたとえば、あなたがいま\n　　私に対してイライラしているのと一緒。\pくすくす……」@
@@ -35,15 +35,15 @@ SEQ05 \x03\xcd\x00\x00
 
 \x00  
 SEQ01 X\x03
-SEQ13 
-SEQ04  \xca\x02\x00 
-SEQ12  \xf8\x02\x00 
-SEQ06 SCE055_003\x00 \xc6\x06\x00 
+SEQ14 
+SEQ08 " \xca\x02\x00 
+SEQ08  \xf8\x02\x00 
+SEQ05 SCE055_003\x00 \xc6\x06\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x98e
-SEQ13 
-SEQ05 \x03\x80\x00\x00
+SEQ10 \x98e
+SEQ14 
+SEQ11 \x03\x80\x00\x00
  
 なたね\n　「……義妹さん、もともといじめられていたとか、そういうの\n　　あった？」@
 拓司\n　「もういい！\p　そんな話はどうでもいい！\p　五分待つと何があ\n　　るっていうんだ！」@
@@ -56,15 +56,15 @@ SEQ05 \x03\x80\x00\x00
 
 \x00  
 SEQ01 \n\x07
-SEQ13 
-SEQ04  \xca\x02\x00 
-SEQ12  \xf8\x02\x00 
-SEQ06 SCE055_004\x00 D\t\x00 
+SEQ14 
+SEQ08 " \xca\x02\x00 
+SEQ08  \xf8\x02\x00 
+SEQ05 SCE055_004\x00 D\t\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x9ce
-SEQ13 
-SEQ05 \x03t\x00\x00
+SEQ10 \x9ce
+SEQ14 
+SEQ11 \x03t\x00\x00
  
 \nその様子をひとり静かに見守っていた男子学生が、大声でいった。\n@
 学生\n　「みんな、静かにしろ！」@
@@ -75,24 +75,24 @@ SEQ05 \x03t\x00\x00
 
 \x00\x00\x00  
 SEQ01 \x88\t
-SEQ13 
-SEQ04  \xca\x02\x00 
-SEQ12  \xf8\x02\x00 
-SEQ06 SCE055_005\x00 \x92\x0b\x00 
+SEQ14 
+SEQ08 " \xca\x02\x00 
+SEQ08  \xf8\x02\x00 
+SEQ05 SCE055_005\x00 \x92\x0b\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x9ce
-SEQ13 
-SEQ05 \x03A\x00\x00
+SEQ10 \x9ce
+SEQ14 
+SEQ11 \x03A\x00\x00
  
 \n犯せえ！\p　という声が上がった。\pしかし男子学生はそれを片手で\n軽く制した。@
 \n学生\n　「男子がこれだけの人数いると、さすがに全員やるのは無理だ\n　　ろ？\p　それに、こんなウザキャラに、おれらのチ○ポなんか\n　　もったいねえよ。\pそこでだ……！」\
 
 \x00  
 SEQ01 \xd6\x0b
-SEQ13 
-SEQ04  \xca\x02\x00 
-SEQ12  \xf8\x02\x00 
-SEQ10  \xca\x02\x00 
-SEQ12 \x03\x03\x00\x00TextClose SPC02  \r\x00 
-ENDF
+SEQ14 
+SEQ08 " \xca\x02\x00 
+SEQ08  \xf8\x02\x00 
+SEQ06  \xca\x02\x00 
+SEQ04 TextClose SPC02  \r\x00 
+FEND

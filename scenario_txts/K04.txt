@@ -1,21 +1,21 @@
-STRF
+FSTR
 B\n\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xaa\x07\x00  
 SEQ01 \xc8\x00
-SEQ13 
-SEQ04 
-SEQ08 .\\Data\\Script\\Bg.Fob SPC03  \x00\x00 
-SEQ12 \x03\x04\x00\x00BgAutoFadeIn SPC03 J\x00\x00 
-SEQ10   
+SEQ14 
+SEQ08 "
+SEQ12 .\\Data\\Script\\Bg.Fob SPC03  \x00\x00 
+SEQ03 BgAutoFadeIn SPC03 J\x00\x00 
+SEQ06   
 SEQ01 \x08\x01
-SEQ13 
-SEQ04 
-SEQ08 .\\Data\\Script\\Bgm.Fob SPC02 \x88\x00\x00 
+SEQ14 
+SEQ08 "
+SEQ12 .\\Data\\Script\\Bgm.Fob SPC02 \x88\x00\x00 
 SEQ02 PlayCD SPC01 \xb2\x00\x00 
-SEQ06 SCEK04_001\x00 \xce\x00\x00 
+SEQ05 SCEK04_001\x00 \xce\x00\x00 
 SEQ07  
 SEQ01 
-SEQ03 X\xa6\x01\x0c
-SEQ05 \x03\\\x00\x00
+SEQ10 X\xa6\x01\x0c
+SEQ11 \x03\\\x00\x00
  
 　自分の道を行くつもりであれば、周囲との軋轢が産まれるのは\nやむなしと……私は考えてきた。@
 だから、ゆきのやりかたは、卑怯な妥協にしか思えなかった。@
@@ -23,15 +23,15 @@ SEQ05 \x03\\\x00\x00
 そう考えないと、私がとったその後の行動を、うまく説明するこ\nとができない。\w\z
 \x00  
 SEQ01 \x12\x01
-SEQ13 
-SEQ04 
-SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 \xa2\x02\x00 
+SEQ14 
+SEQ08 "
+SEQ13 .\\Data\\Script\\TextFunc.Fob SPC01 \xa2\x02\x00 
 SEQ02 TextOn SPC01 \xd0\x02\x00 
-SEQ06 SCEK04_002\x00 \xec\x02\x00 
+SEQ05 SCEK04_002\x00 \xec\x02\x00 
 SEQ07  
 SEQ01 
-SEQ03 \\\xa6\x01\x0c
-SEQ05 \x03\x96\x00\x00
+SEQ10 \\\xa6\x01\x0c
+SEQ11 \x03\x96\x00\x00
  
 　私はそれから、できる限りの愛嬌と親切、そして嫌われ者の哀\nれさを投入して、ゆきの信頼を勝ち取ろうと努力した。@
 『いい子』を演じ続けてきたゆきは、ストレスで爆発寸前だった\nのだろう。@
@@ -42,14 +42,14 @@ SEQ05 \x03\x96\x00\x00
 ゆきが完全に寄り掛かってきたころを見計らって、私は計画を最\n終段階に進めた。\w\z
 \x00  
 SEQ01 0\x03
-SEQ13 
-SEQ04  \xa2\x02\x00 
-SEQ12  \xd0\x02\x00 
-SEQ06 SCEK04_003\x00 \xc2\x05\x00 
+SEQ14 
+SEQ08 " \xa2\x02\x00 
+SEQ08  \xd0\x02\x00 
+SEQ05 SCEK04_003\x00 \xc2\x05\x00 
 SEQ07  
 SEQ01 
-SEQ03 `\xa6\x01\x0c
-SEQ05 \x03P\x00\x00
+SEQ10 `\xa6\x01\x0c
+SEQ11 \x03P\x00\x00
  
 ゆきの秘密をあらいざらい書き上げて、廊下に張り出したのだ。@
 \nそんな怪文書を丸々信じるほど学校の連中はバカではなかったし、\nゆきがそれまで築いてきた信頼も脆弱ではなかった。@
@@ -57,9 +57,9 @@ SEQ05 \x03P\x00\x00
 私は、ゆきの地位にダメージを与えようと思ったわけではなかっ\nた。\pゆきの心を破壊してやろうと思ったのだ。\w\z
 \x00  
 SEQ01 \x06\x06
-SEQ13 
-SEQ04  \xa2\x02\x00 
-SEQ12  \xd0\x02\x00 
-SEQ10  \xa2\x02\x00 
-SEQ12 \x03\x03\x00\x00TextClose SPC02 \x8c\x07\x00 
-ENDF
+SEQ14 
+SEQ08 " \xa2\x02\x00 
+SEQ08  \xd0\x02\x00 
+SEQ06  \xa2\x02\x00 
+SEQ04 TextClose SPC02 \x8c\x07\x00 
+FEND

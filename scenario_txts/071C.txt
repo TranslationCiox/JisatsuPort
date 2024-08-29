@@ -1,10 +1,10 @@
-STRF
+FSTR
 \xf8\x05\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xa4\t3\x01\x00\x00\x00\xcc\x03\x00\x03\x03\x00\x00SCE071_001\x00 \x06\x00\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x90~
-SEQ13 
-SEQ05 \x03o\x00\x00
+SEQ10 \x90~
+SEQ14 
+SEQ11 \x03o\x00\x00
  
 拓司たちは２階の渡り廊下を目指して駆けた。@
 しかし、渡り廊下まであとわずか、というところでなたねが立ち\n止まって鋭く叫んだ。@
@@ -16,20 +16,20 @@ SEQ05 \x03o\x00\x00
 
 \x00  
 SEQ01 J\x00
-SEQ13 
-SEQ04 
-SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 &\x02\x00 
+SEQ14 
+SEQ08 "
+SEQ13 .\\Data\\Script\\TextFunc.Fob SPC01 &\x02\x00 
 SEQ02 TextOn SPC01 T\x02\x00 
-SEQ10 \x03>\x00\x00
+SEQ06 \x03>\x00\x00
 CHOICE
 なたねの警告を無視して渡り廊下をそのまま進む\n３階まで上りなおしてそこの渡り廊下に向かい、旧校舎へ移動する\n４階まで上りなおしてそこの渡り廊下に向かい、旧校舎へ移動する\n１階までくだり、一度外に出て、中庭を通って旧校舎へ移動する\n\l0,4,
 ENDCHOICE
 
 \x00\x00\x00  
 SEQ01 p\x02
-SEQ13 
-SEQ04  &\x02\x00 
-SEQ12  T\x02\x00 
-SEQ10  &\x02\x00 
-SEQ12 \x03\x03\x00\x00TextClose SPC02 \xae\x03\x00 
-ENDF
+SEQ14 
+SEQ08 " &\x02\x00 
+SEQ08  T\x02\x00 
+SEQ06  &\x02\x00 
+SEQ04 TextClose SPC02 \xae\x03\x00 
+FEND

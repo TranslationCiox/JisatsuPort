@@ -1,15 +1,15 @@
-STRF
+FSTR
 f\x03\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00p\x044\x01\x00\x00\x00\xd6\x02\x00  
 SEQ01 \xc9\x00
-SEQ13 
-SEQ04 
-SEQ08 .\\Data\\Script\\Bg.Fob SPC03  \x00\x00 
-SEQ12 \x03\x04\x00\x00BgAutoFadeIn SPC03 J\x00\x00 
-SEQ06 SCE203_001\x00 n\x00\x00 
+SEQ14 
+SEQ08 "
+SEQ12 .\\Data\\Script\\Bg.Fob SPC03  \x00\x00 
+SEQ03 BgAutoFadeIn SPC03 J\x00\x00 
+SEQ05 SCE203_001\x00 n\x00\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xd0L\x01\x0c
-SEQ05 \x03d\x00\x00
+SEQ10 \xd0L\x01\x0c
+SEQ11 \x03d\x00\x00
  
 ナタネ\n　「あなたは『創る』ことができる。@
 　　神様が光を創ったように、あなたは鳥を創ることができる。@
@@ -19,10 +19,10 @@ SEQ05 \x03d\x00\x00
 
 \x00\x00\x00  
 SEQ01 \xb2\x00
-SEQ13 
-SEQ04 
-SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 b\x02\x00 
+SEQ14 
+SEQ08 "
+SEQ13 .\\Data\\Script\\TextFunc.Fob SPC01 b\x02\x00 
 SEQ02 TextOn SPC01 \x90\x02\x00 
-SEQ10  b\x02\x00 
-SEQ12 \x03\x03\x00\x00TextClose SPC02 \xb8\x02\x00 
-ENDF
+SEQ06  b\x02\x00 
+SEQ04 TextClose SPC02 \xb8\x02\x00 
+FEND

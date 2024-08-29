@@ -1,16 +1,16 @@
-STRF
+FSTR
 \xa2\x14\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xfc\x10\x00  
 SEQ01 \x08\x01
-SEQ13 
-SEQ04 
-SEQ08 .\\Data\\Script\\Bgm.Fob SPC02  \x00\x00 
+SEQ14 
+SEQ08 "
+SEQ12 .\\Data\\Script\\Bgm.Fob SPC02  \x00\x00 
 SEQ02 PlayCD SPC01 J\x00\x00 
-SEQ06 SCE041_001\x00 f\x00\x00 
+SEQ05 SCE041_001\x00 f\x00\x00 
 SEQ07  
 SEQ01 
-SEQ03  N
-SEQ13 
-SEQ05 \x03x\x00\x00
+SEQ10  N
+SEQ14 
+SEQ11 \x03x\x00\x00
  
 拓司\n　「早桃。\pおれもお前が好きだ。@
 　　義理の兄貴としてじゃなくて－－」@
@@ -24,16 +24,16 @@ SEQ05 \x03x\x00\x00
 
 \x00\x00\x00  
 SEQ01 \xaa\x00
-SEQ13 
-SEQ04 
-SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 \xaa\x02\x00 
+SEQ14 
+SEQ08 "
+SEQ13 .\\Data\\Script\\TextFunc.Fob SPC01 \xaa\x02\x00 
 SEQ02 TextOn SPC01 \xd8\x02\x00 
-SEQ06 SCE041_002\x00 \xf4\x02\x00 
+SEQ05 SCE041_002\x00 \xf4\x02\x00 
 SEQ07  
 SEQ01 
-SEQ03 $N
-SEQ13 
-SEQ05 \x03;\x00\x00
+SEQ10 $N
+SEQ14 
+SEQ11 \x03;\x00\x00
  
 早桃\n　「早桃はおにいちゃんのことが好き。@
 　　おにいちゃんも、早桃のこと好きだっていってくれる。@
@@ -43,23 +43,23 @@ SEQ05 \x03;\x00\x00
 
 \x00\x00\x00  
 SEQ01 8\x03
-SEQ13 
-SEQ04  \xaa\x02\x00 
-SEQ12  \xd8\x02\x00 
-SEQ10   \x00\x00 
+SEQ14 
+SEQ08 " \xaa\x02\x00 
+SEQ08  \xd8\x02\x00 
+SEQ06   \x00\x00 
 SEQ02 StopCD SPC01 j\x04\x00 
-SEQ10   
+SEQ06   
 SEQ01 \xc8\x00
-SEQ13 
-SEQ04 
-SEQ08 .\\Data\\Script\\Bg.Fob SPC03 \xa0\x04\x00 
+SEQ14 
+SEQ08 "
+SEQ12 .\\Data\\Script\\Bg.Fob SPC03 \xa0\x04\x00 
 SEQ02 BgOn SPC03 \xca\x04\x00 
-SEQ06 SCE041_003\x00 \xe6\x04\x00 
+SEQ05 SCE041_003\x00 \xe6\x04\x00 
 SEQ07  
 SEQ01 
-SEQ03 (N
-SEQ13 
-SEQ05 \x03\xa3\x00\x00
+SEQ10 (N
+SEQ14 
+SEQ11 \x03\xa3\x00\x00
  
 早桃\n　「ううん。\pそんなことじゃないの。@
 　　そんなのは、どうでもいいこと。@
@@ -75,15 +75,15 @@ SEQ05 \x03\xa3\x00\x00
 
 \x00\x00\x00  
 SEQ01 *\x05
-SEQ13 
-SEQ04  \xaa\x02\x00 
-SEQ12  \xd8\x02\x00 
-SEQ06 SCE041_004\x00 \xf0\x07\x00 
+SEQ14 
+SEQ08 " \xaa\x02\x00 
+SEQ08  \xd8\x02\x00 
+SEQ05 SCE041_004\x00 \xf0\x07\x00 
 SEQ07  
 SEQ01 
-SEQ03 ,N
-SEQ13 
-SEQ05 \x03\x8e\x00\x00
+SEQ10 ,N
+SEQ14 
+SEQ11 \x03\x8e\x00\x00
  
 わからなかった。@
 しかし、拓司は、わからないということが、どうしてもできなか\nった。@
@@ -99,20 +99,20 @@ SEQ05 \x03\x8e\x00\x00
 
 \x00  
 SEQ01 4\x08
-SEQ13 
-SEQ04  \xaa\x02\x00 
-SEQ12  \xd8\x02\x00 
-SEQ10   
+SEQ14 
+SEQ08 " \xaa\x02\x00 
+SEQ08  \xd8\x02\x00 
+SEQ06   
 SEQ01 \t\x01
-SEQ13 
-SEQ04   \x00\x00 
-SEQ12  J\x00\x00 
-SEQ06 SCE041_005\x00 \xda\n\x00 
+SEQ14 
+SEQ08 "  \x00\x00 
+SEQ08  J\x00\x00 
+SEQ05 SCE041_005\x00 \xda\n\x00 
 SEQ07  
 SEQ01 
-SEQ03 0N
-SEQ13 
-SEQ05 \x03m\x00\x00
+SEQ10 0N
+SEQ14 
+SEQ11 \x03m\x00\x00
  
 早桃\n　「あのね、早桃、お昼休みが怖かったの」@
 拓司\n　「？」@
@@ -124,15 +124,15 @@ SEQ05 \x03m\x00\x00
 
 \x00\x00\x00  
 SEQ01 \x1e\x0b
-SEQ13 
-SEQ04  \xaa\x02\x00 
-SEQ12  \xd8\x02\x00 
-SEQ06 SCE041_006\x00 \x0c\r\x00 
+SEQ14 
+SEQ08 " \xaa\x02\x00 
+SEQ08  \xd8\x02\x00 
+SEQ05 SCE041_006\x00 \x0c\r\x00 
 SEQ07  
 SEQ01 
-SEQ03 4N
-SEQ13 
-SEQ05 \x03\x81\x00\x00
+SEQ10 4N
+SEQ14 
+SEQ11 \x03\x81\x00\x00
  
 早桃\n　「あのね……\pみんな、お友達同士で席くっつけて、お弁当食べた\n　　りするでしょ？@
 　　そうするとね……\p早桃、ひとりなんだなあ、って。@
@@ -146,17 +146,17 @@ SEQ05 \x03\x81\x00\x00
 
 \x00\x00\x00  
 SEQ01 P\r
-SEQ13 
-SEQ04  \xaa\x02\x00 
-SEQ12  \xd8\x02\x00 
-SEQ10   \x00\x00 
-SEQ12  j\x04\x00 
-SEQ06 SCE041_007\x00 \xa8\x0f\x00 
+SEQ14 
+SEQ08 " \xaa\x02\x00 
+SEQ08  \xd8\x02\x00 
+SEQ06   \x00\x00 
+SEQ08  j\x04\x00 
+SEQ05 SCE041_007\x00 \xa8\x0f\x00 
 SEQ07  
 SEQ01 
-SEQ03 8N
-SEQ13 
-SEQ05 \x03+\x00\x00
+SEQ10 8N
+SEQ14 
+SEQ11 \x03+\x00\x00
  
 早桃\n　「ありがと！　おにいちゃん！」@
 \n　早桃はそういって、さっと唇を拓司の頬に重ねた。@
@@ -165,9 +165,9 @@ SEQ05 \x03+\x00\x00
 
 \x00  
 SEQ01 \xec\x0f
-SEQ13 
-SEQ04  \xaa\x02\x00 
-SEQ12  \xd8\x02\x00 
-SEQ10  \xaa\x02\x00 
-SEQ12 \x03\x03\x00\x00TextClose SPC02 \xde\x10\x00 
-ENDF
+SEQ14 
+SEQ08 " \xaa\x02\x00 
+SEQ08  \xd8\x02\x00 
+SEQ06  \xaa\x02\x00 
+SEQ04 TextClose SPC02 \xde\x10\x00 
+FEND

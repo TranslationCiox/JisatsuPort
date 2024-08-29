@@ -1,9 +1,9 @@
-STRF
+FSTR
 \x02\x08\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00H\x06\x00\x03\x03\x00\x00SCE219_001\x00 \x06\x00\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xd0e\x01\x0c
-SEQ05 \x03,\x00\x00
+SEQ10 \xd0e\x01\x0c
+SEQ11 \x03,\x00\x00
  
 もはや、止めることはできなかった。@
 すべてをせきとめていた何かが、いま、ついに崩れ落ちたのだ。@
@@ -12,21 +12,21 @@ SEQ05 \x03,\x00\x00
 
 \x00\x00\x00  
 SEQ01 J\x00
-SEQ13 
-SEQ04 
-SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 \x1a\x01\x00 
+SEQ14 
+SEQ08 "
+SEQ13 .\\Data\\Script\\TextFunc.Fob SPC01 \x1a\x01\x00 
 SEQ02 TextOn SPC01 H\x01\x00 
-SEQ10   
+SEQ06   
 SEQ01 $\x00
-SEQ13 
-SEQ04 
-SEQ08 .\\Data\\Script\\Bg.Fob SPC03 ~\x01\x00 
-SEQ12 \x03\x04\x00\x00BgAutoFadeIn SPC03 \xa8\x01\x00 
-SEQ06 SCE219_002\x00 \xcc\x01\x00 
+SEQ14 
+SEQ08 "
+SEQ12 .\\Data\\Script\\Bg.Fob SPC03 ~\x01\x00 
+SEQ03 BgAutoFadeIn SPC03 \xa8\x01\x00 
+SEQ05 SCE219_002\x00 \xcc\x01\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xd4e\x01\x0c
-SEQ05 \x03k\x00\x00
+SEQ10 \xd4e\x01\x0c
+SEQ11 \x03k\x00\x00
  
 なたね\n　「やめてやめてやめて！@
 　　やあああああめえええろおおおおお！」@
@@ -40,14 +40,14 @@ SEQ05 \x03k\x00\x00
 
 \x00  
 SEQ01 \x10\x02
-SEQ13 
-SEQ04  \x1a\x01\x00 
-SEQ12  H\x01\x00 
-SEQ06 SCE219_003\x00 \xf6\x03\x00 
+SEQ14 
+SEQ08 " \x1a\x01\x00 
+SEQ08  H\x01\x00 
+SEQ05 SCE219_003\x00 \xf6\x03\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xd8e\x01\x0c
-SEQ05 \x03L\x00\x00
+SEQ10 \xd8e\x01\x0c
+SEQ11 \x03L\x00\x00
  
 －－狂ってる。@
 拓司は辺りを見回した。@
@@ -59,17 +59,17 @@ SEQ05 \x03L\x00\x00
 
 \x00  
 SEQ01 :\x04
-SEQ13 
-SEQ04  \x1a\x01\x00 
-SEQ12  H\x01\x00 
-SEQ10   
+SEQ14 
+SEQ08 " \x1a\x01\x00 
+SEQ08  H\x01\x00 
+SEQ06   
 SEQ01 \xc8\x00
-SEQ13 
-SEQ04  ~\x01\x00 
-SEQ12  \xa8\x01\x00 
-SEQ10 
-SEQ08 .\\Data\\Script\\Bgm.Fob SPC02 \xd8\x05\x00 
+SEQ14 
+SEQ08 " ~\x01\x00 
+SEQ08  \xa8\x01\x00 
+SEQ06 
+SEQ12 .\\Data\\Script\\Bgm.Fob SPC02 \xd8\x05\x00 
 SEQ02 StopCD SPC01 \x02\x06\x00 
-SEQ10  \x1a\x01\x00 
-SEQ12 \x03\x03\x00\x00TextClose SPC02 *\x06\x00 
-ENDF
+SEQ06  \x1a\x01\x00 
+SEQ04 TextClose SPC02 *\x06\x00 
+FEND

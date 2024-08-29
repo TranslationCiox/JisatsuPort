@@ -1,10 +1,10 @@
-STRF
+FSTR
 \x9f\x0c\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00H\n\x00\x03\x03\x00\x00SCE105_001\x00 \x06\x00\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xb0\xb3
-SEQ13 
-SEQ05 \x03\xb7\x00\x00
+SEQ10 \xb0\xb3
+SEQ14 
+SEQ11 \x03\xb7\x00\x00
  
 /*▲BGM　停止*/\a4,-1,0,0,/*■黒　表示（ノンエフェクト）*/\a7,-1,-1,0,\a0,200,1,0,\a6,0,0,0,拓司\n　「もういい、御堂！」@
 \n拓司は御堂を制した。@
@@ -17,16 +17,16 @@ SEQ05 \x03\xb7\x00\x00
 
 \x00\x00\x00  
 SEQ01 J\x00
-SEQ13 
-SEQ04 
-SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 F\x03\x00 
+SEQ14 
+SEQ08 "
+SEQ13 .\\Data\\Script\\TextFunc.Fob SPC01 F\x03\x00 
 SEQ02 TextOn SPC01 t\x03\x00 
-SEQ06 SCE105_002\x00 \x90\x03\x00 
+SEQ05 SCE105_002\x00 \x90\x03\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xb4\xb3
-SEQ13 
-SEQ05 \x03\x88\x00\x00
+SEQ10 \xb4\xb3
+SEQ14 
+SEQ11 \x03\x88\x00\x00
  
 御堂はしばらく無言だった。\pそれは、拓司の質問をかみ砕いて味\nわっているかのように見えた。\pやがて、御堂はなにかをいいかけ\nたが、思い立ったように言葉を飲み込んだ。@
 そして、ポツリと、粘り着くような口調でいった。@
@@ -38,15 +38,15 @@ SEQ05 \x03\x88\x00\x00
 
 \x00\x00\x00  
 SEQ01 \xd4\x03
-SEQ13 
-SEQ04  F\x03\x00 
-SEQ12  t\x03\x00 
-SEQ06 SCE105_003\x00 .\x06\x00 
+SEQ14 
+SEQ08 " F\x03\x00 
+SEQ08  t\x03\x00 
+SEQ05 SCE105_003\x00 .\x06\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xb8\xb3
-SEQ13 
-SEQ05 \x03q\x00\x00
+SEQ10 \xb8\xb3
+SEQ14 
+SEQ11 \x03q\x00\x00
  
 拓司\n　「……雲居さん。\p俺たちは……覚悟を……決めている。@
 　　今後、そういう態度をなおしてもらえないようなら、今度こ\n　　そは俺も御堂を止められない……止める気もない」@
@@ -57,15 +57,15 @@ SEQ05 \x03q\x00\x00
 
 \x00  
 SEQ01 r\x06
-SEQ13 
-SEQ04  F\x03\x00 
-SEQ12  t\x03\x00 
-SEQ06 SCE105_004\x00 p\x08\x00 
+SEQ14 
+SEQ08 " F\x03\x00 
+SEQ08  t\x03\x00 
+SEQ05 SCE105_004\x00 p\x08\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xbc\xb3
-SEQ13 
-SEQ05 \x03L\x00\x00
+SEQ10 \xbc\xb3
+SEQ14 
+SEQ11 \x03L\x00\x00
  
 なたね\n　「……」@
 拓司\n　「……」@
@@ -77,9 +77,9 @@ SEQ05 \x03L\x00\x00
 
 \x00\x00\x00  
 SEQ01 \xb4\x08
-SEQ13 
-SEQ04  F\x03\x00 
-SEQ12  t\x03\x00 
-SEQ10  F\x03\x00 
-SEQ12 \x03\x03\x00\x00TextClose SPC02 *\n\x00 
-ENDF
+SEQ14 
+SEQ08 " F\x03\x00 
+SEQ08  t\x03\x00 
+SEQ06  F\x03\x00 
+SEQ04 TextClose SPC02 *\n\x00 
+FEND

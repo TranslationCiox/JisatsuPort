@@ -1,35 +1,35 @@
-STRF
+FSTR
 \xef\x0b\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xc2\t\x00\x03\x03\x00\x00SCE002_001\x00 \x06\x00\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xc0\x12
-SEQ13 
-SEQ05 \x03\x12\x00\x00
+SEQ10 \xc0\x12
+SEQ14 
+SEQ11 \x03\x12\x00\x00
  
 \n\n\n\n\n\n\n\n\n\n　　　　　　『ジサツのための１０１の方法』\
 
 \x00  
 SEQ01 J\x00
-SEQ13 
-SEQ04 
-SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 \xb2\x00\x00 
+SEQ14 
+SEQ08 "
+SEQ13 .\\Data\\Script\\TextFunc.Fob SPC01 \xb2\x00\x00 
 SEQ02 TextOn SPC01 \xe0\x00\x00 
-SEQ06 SCE002_002\x00 \xfc\x00\x00 
+SEQ05 SCE002_002\x00 \xfc\x00\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xc4\x12
-SEQ13 
-SEQ05   
+SEQ10 \xc4\x12
+SEQ14 
+SEQ11   
 SEQ01 
-SEQ12 \x0c
-SEQ04   \x04\x00\x00\r\x00\x00 \x01\x00
-SEQ13 
-SEQ04   \x08\x00\x00\r\x00\x00 \x01\x00
-SEQ13 
-SEQ04 
-SEQ08 .\\Data\\Script\\Bgm.Fob SPC02 \x8e\x01\x00 
+SEQ08 \x0c
+SEQ08 "  \x04\x00\x00\r\x00\x00 \x01\x00
+SEQ14 
+SEQ08 "  \x08\x00\x00\r\x00\x00 \x01\x00
+SEQ14 
+SEQ08 "
+SEQ12 .\\Data\\Script\\Bgm.Fob SPC02 \x8e\x01\x00 
 SEQ02 SePlay SPC01 \xb8\x01\x00 
-SEQ10 \x03\x89\x00\x00
+SEQ06 \x03\x89\x00\x00
  
 学生　「なんだアイツ？」@
 学生　「目立ちたいんだろ？」@
@@ -52,15 +52,15 @@ SEQ10 \x03\x89\x00\x00
 
 \x00\x00\x00  
 SEQ01 \xd4\x01
-SEQ13 
-SEQ04  \xb2\x00\x00 
-SEQ12  \xe0\x00\x00 
-SEQ06 SCE002_003\x00 2\x04\x00 
+SEQ14 
+SEQ08 " \xb2\x00\x00 
+SEQ08  \xe0\x00\x00 
+SEQ05 SCE002_003\x00 2\x04\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xc8\x12
-SEQ13 
-SEQ05 \x03f\x00\x00
+SEQ10 \xc8\x12
+SEQ14 
+SEQ11 \x03f\x00\x00
  
 学生　「なんかの宣伝とか？」@
 学生　「サーカスの宣伝」@
@@ -79,15 +79,15 @@ SEQ05 \x03f\x00\x00
 
 \x00  
 SEQ01 v\x04
-SEQ13 
-SEQ04  \xb2\x00\x00 
-SEQ12  \xe0\x00\x00 
-SEQ06 SCE002_004\x00 H\x06\x00 
+SEQ14 
+SEQ08 " \xb2\x00\x00 
+SEQ08  \xe0\x00\x00 
+SEQ05 SCE002_004\x00 H\x06\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xcc\x12
-SEQ13 
-SEQ05 \x03(\x00\x00
+SEQ10 \xcc\x12
+SEQ14 
+SEQ11 \x03(\x00\x00
  
 学生　「……」@
 学生　「……」@
@@ -100,37 +100,37 @@ SEQ05 \x03(\x00\x00
 
 \x00\x00\x00  
 SEQ01 \x8c\x06
-SEQ13 
-SEQ04  \xb2\x00\x00 
-SEQ12  \xe0\x00\x00 
-SEQ06 SCE002_005\x00 f\x07\x00 
+SEQ14 
+SEQ08 " \xb2\x00\x00 
+SEQ08  \xe0\x00\x00 
+SEQ05 SCE002_005\x00 f\x07\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xd0\x12
-SEQ13 
-SEQ05  \x8e\x01\x00 
+SEQ10 \xd0\x12
+SEQ14 
+SEQ11  \x8e\x01\x00 
 SEQ02 StopCD SPC01 \xb6\x07\x00 
-SEQ10   
+SEQ06   
 SEQ01 
-SEQ12 \x0c
-SEQ04  \x8e\x01\x00 
+SEQ08 \x0c
+SEQ08 " \x8e\x01\x00 
 SEQ02 SeStop SPC01 \xf8\x07\x00 
-SEQ10   
+SEQ06   
 SEQ01 <\x00
-SEQ13 
-SEQ04 
-SEQ11 .\\Data\\Script\\TextFunc.fob SPC01 .\x08\x00 
-SEQ12 \x03\x03\x00\x00WaitTime SPC03 \\\x08\x00 
-SEQ10   
+SEQ14 
+SEQ08 "
+SEQ13 .\\Data\\Script\\TextFunc.fob SPC01 .\x08\x00 
+SEQ04 WaitTime SPC03 \\\x08\x00 
+SEQ06   
 SEQ01 \x00\x00\x00
-SEQ13 
-SEQ04   \x04\x00\x00\r\x00\x00 
-SEQ12 \x0c
-SEQ04   \x08\x00\x00\r\x00\x00 \x00\x00\x00
-SEQ13 
-SEQ04  \x8e\x01\x00 
-SEQ12 \x03\x03\x00\x00SePlayEx SPC03 \xd6\x08\x00 
-SEQ10 \x03\x1a\x00\x00
+SEQ14 
+SEQ08 "  \x04\x00\x00\r\x00\x00 
+SEQ08 \x0c
+SEQ08 "  \x08\x00\x00\r\x00\x00 \x00\x00\x00
+SEQ14 
+SEQ08 " \x8e\x01\x00 
+SEQ04 SePlayEx SPC03 \xd6\x08\x00 
+SEQ06 \x03\x1a\x00\x00
  
 学生　「落ちたよ」@
 学生　「やばいよ」@
@@ -139,9 +139,9 @@ SEQ10 \x03\x1a\x00\x00
 
 \x00\x00\x00  
 SEQ01 \xf6\x08
-SEQ13 
-SEQ04  \xb2\x00\x00 
-SEQ12  \xe0\x00\x00 
-SEQ10  \xb2\x00\x00 
-SEQ12 \x03\x03\x00\x00TextClose SPC02 \xa4\t\x00 
-ENDF
+SEQ14 
+SEQ08 " \xb2\x00\x00 
+SEQ08  \xe0\x00\x00 
+SEQ06  \xb2\x00\x00 
+SEQ04 TextClose SPC02 \xa4\t\x00 
+FEND

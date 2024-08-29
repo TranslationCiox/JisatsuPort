@@ -1,10 +1,10 @@
-STRF
+FSTR
 \x94\x18\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xc8\x14\x00\x03\x03\x00\x00SCE057_001\x00 \x06\x00\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xb0h
-SEQ13 
-SEQ05 \x03t\x00\x00
+SEQ10 \xb0h
+SEQ14 
+SEQ11 \x03t\x00\x00
  
 学生\n　「こいつにションベンひっかけてやろうぜ？」@
 \nその異常な言葉は、しばらく無言の教室の中に行き場無くただよ\nっていた。\pしかしそれは無視されたのではない。\pゆっくりと、染\nみ渡るように教室の全員を犯していったのだ。@
@@ -15,16 +15,16 @@ SEQ05 \x03t\x00\x00
 
 \x00  
 SEQ01 J\x00
-SEQ13 
-SEQ04 
-SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 :\x02\x00 
+SEQ14 
+SEQ08 "
+SEQ13 .\\Data\\Script\\TextFunc.Fob SPC01 :\x02\x00 
 SEQ02 TextOn SPC01 h\x02\x00 
-SEQ06 SCE057_002\x00 \x84\x02\x00 
+SEQ05 SCE057_002\x00 \x84\x02\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xb4h
-SEQ13 
-SEQ05 \x03\x85\x00\x00
+SEQ10 \xb4h
+SEQ14 
+SEQ11 \x03\x85\x00\x00
  
 \nカミムラ－－。@
 拓司はその名前を聞いたことがあった。\pたしか、早桃にいやがら\nせをしているという少女がカミムラといったはずだ……。@
@@ -37,15 +37,15 @@ SEQ05 \x03\x85\x00\x00
 
 \x00  
 SEQ01 \xc8\x02
-SEQ13 
-SEQ04  :\x02\x00 
-SEQ12  h\x02\x00 
-SEQ06 SCE057_003\x00 \x16\x05\x00 
+SEQ14 
+SEQ08 " :\x02\x00 
+SEQ08  h\x02\x00 
+SEQ05 SCE057_003\x00 \x16\x05\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xb8h
-SEQ13 
-SEQ05 \x03\x94\x00\x00
+SEQ10 \xb8h
+SEQ14 
+SEQ11 \x03\x94\x00\x00
  
 上村\n　「逃げるつもり？\p　それって間違ってるって。\pこれはさ、あん\n　　たを綺麗にする儀式なんだよ？\p　生きている価値のないあん\n　　たが、身を清めて気持ちよく死ねるようになるための儀式な\n　　んだからさあ。くすくす」@
 /*■CG70　表示（クロスフェード）*/\a7,-2,-2,0,\a0,69,2,0,\a6,-2,0,0,\n途端、早桃に劇的な変化が訪れた。@
@@ -57,15 +57,15 @@ SEQ05 \x03\x94\x00\x00
 
 \x00  
 SEQ01 Z\x05
-SEQ13 
-SEQ04  :\x02\x00 
-SEQ12  h\x02\x00 
-SEQ06 SCE057_004\x00 \xe4\x07\x00 
+SEQ14 
+SEQ08 " :\x02\x00 
+SEQ08  h\x02\x00 
+SEQ05 SCE057_004\x00 \xe4\x07\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xbch
-SEQ13 
-SEQ05 \x03\x94\x00\x00
+SEQ10 \xbch
+SEQ14 
+SEQ11 \x03\x94\x00\x00
  
 上村はスカートの中に手を差し入れ、スルスルとショーツを脱い\nだ。\pクラスメイトが見ているというのに、なんの躊躇もない。\n逆に、脱いだショーツをひらひらと振り回して、男子学生たちに\nニヤリと笑いかける余裕さえある。\pさらにはスカートも脱ぎ、下\n半身をあらわにした。@
 男子学生たちがごくりと生唾を飲み込む。@
@@ -78,15 +78,15 @@ SEQ05 \x03\x94\x00\x00
 
 \x00\x00\x00  
 SEQ01 (\x08
-SEQ13 
-SEQ04  :\x02\x00 
-SEQ12  h\x02\x00 
-SEQ06 SCE057_005\x00 \xb2\n\x00 
+SEQ14 
+SEQ08 " :\x02\x00 
+SEQ08  h\x02\x00 
+SEQ05 SCE057_005\x00 \xb2\n\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xc0h
-SEQ13 
-SEQ05 \x03a\x00\x00
+SEQ10 \xc0h
+SEQ14 
+SEQ11 \x03a\x00\x00
  
 上村\n　「あ～ウザイ！　ウザウザ！　見てるだけでぶっ殺したくなる\n　　よ！」@
 早桃\n　「ごめんなさい……か、上村さん……私に……上村さんのおし\n　　っこを……浴びせてください」@
@@ -96,15 +96,15 @@ SEQ05 \x03a\x00\x00
 
 \x00  
 SEQ01 \xf6\n
-SEQ13 
-SEQ04  :\x02\x00 
-SEQ12  h\x02\x00 
-SEQ06 SCE057_006\x00 \xb4\x0c\x00 
+SEQ14 
+SEQ08 " :\x02\x00 
+SEQ08  h\x02\x00 
+SEQ05 SCE057_006\x00 \xb4\x0c\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xc4h
-SEQ13 
-SEQ05 \x03\xac\x00\x00
+SEQ10 \xc4h
+SEQ14 
+SEQ11 \x03\xac\x00\x00
  
 上村\n　「ほら、もっと前にはいはいしてきなさいよォ……足下に……\n　　そうそう。いい子ね、ワンワン」@
 /*■HCG16　表示（クロスフェード）*/\a7,-2,-2,0,\a0,87,2,0,\a6,-2,0,0,\n　上村は腰を突きだし、両足を早桃の肩の上にのせた。@
@@ -118,15 +118,15 @@ SEQ05 \x03\xac\x00\x00
 
   
 SEQ01 \xf8\x0c
-SEQ13 
-SEQ04  :\x02\x00 
-SEQ12  h\x02\x00 
-SEQ06 SCE057_007\x00 \xe2\x0f\x00 
+SEQ14 
+SEQ08 " :\x02\x00 
+SEQ08  h\x02\x00 
+SEQ05 SCE057_007\x00 \xe2\x0f\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xc8h
-SEQ13 
-SEQ05 \x03\x8d\x00\x00
+SEQ10 \xc8h
+SEQ14 
+SEQ11 \x03\x8d\x00\x00
  
 どこかで見た光景だった。@
 辱めのために汚液の的となる女の子。@
@@ -139,15 +139,15 @@ SEQ05 \x03\x8d\x00\x00
 
 \x00\x00\x00  
 SEQ01 &\x10
-SEQ13 
-SEQ04  :\x02\x00 
-SEQ12  h\x02\x00 
-SEQ06 SCE057_008\x00 \x94\x12\x00 
+SEQ14 
+SEQ08 " :\x02\x00 
+SEQ08  h\x02\x00 
+SEQ05 SCE057_008\x00 \x94\x12\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xcch
-SEQ13 
-SEQ05 \x03c\x00\x00
+SEQ10 \xcch
+SEQ14 
+SEQ11 \x03c\x00\x00
  
 学生\n　「た、たまんねえ……俺にもかけさせてくれ」@
 学生\n　「あたしも……」@
@@ -158,9 +158,9 @@ SEQ05 \x03c\x00\x00
 
 \x00\x00\x00  
 SEQ01 \xd8\x12
-SEQ13 
-SEQ04  :\x02\x00 
-SEQ12  h\x02\x00 
-SEQ10  :\x02\x00 
-SEQ12 \x03\x03\x00\x00TextClose SPC02 \xaa\x14\x00 
-ENDF
+SEQ14 
+SEQ08 " :\x02\x00 
+SEQ08  h\x02\x00 
+SEQ06  :\x02\x00 
+SEQ04 TextClose SPC02 \xaa\x14\x00 
+FEND

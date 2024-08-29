@@ -1,10 +1,10 @@
-STRF
+FSTR
 \x804\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xf6,\x00\x03\x03\x00\x00SCE007_001\x00 \x06\x00\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x90\x1a
-SEQ13 
-SEQ05 \x03s\x00\x00
+SEQ10 \x90\x1a
+SEQ14 
+SEQ11 \x03s\x00\x00
  
 命じられるままに、早桃は拓司のベッドに歩み寄った。@
 ぎしり、と音を立ててベッドに片膝を乗せ、そこを支点にもう一\n方の脚を乗せる。@
@@ -18,22 +18,22 @@ SEQ05 \x03s\x00\x00
 
 \x00\x00\x00  
 SEQ01 J\x00
-SEQ13 
-SEQ04 
-SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 6\x02\x00 
+SEQ14 
+SEQ08 "
+SEQ13 .\\Data\\Script\\TextFunc.Fob SPC01 6\x02\x00 
 SEQ02 TextOn SPC01 d\x02\x00 
-SEQ10   
+SEQ06   
 SEQ01 J\x00
-SEQ13 
-SEQ04 
-SEQ08 .\\Data\\Script\\Bg.Fob SPC03 \x9a\x02\x00 
-SEQ12 \x03\x04\x00\x00BgAutoFadeIn SPC03 \xc4\x02\x00 
-SEQ06 SCE007_002\x00 \xe8\x02\x00 
+SEQ14 
+SEQ08 "
+SEQ12 .\\Data\\Script\\Bg.Fob SPC03 \x9a\x02\x00 
+SEQ03 BgAutoFadeIn SPC03 \xc4\x02\x00 
+SEQ05 SCE007_002\x00 \xe8\x02\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x94\x1a
-SEQ13 
-SEQ05 \x03\xab\x00\x00
+SEQ10 \x94\x1a
+SEQ14 
+SEQ11 \x03\xab\x00\x00
  
 義妹のほっそりとした指が、拓司の股間に触れた。@
 輪郭をなぞるように、ゆっくりと、パジャマの上を指先が蠢く。@
@@ -51,15 +51,15 @@ SEQ05 \x03\xab\x00\x00
 
 \x00\x00\x00  
 SEQ01 ,\x03
-SEQ13 
-SEQ04  6\x02\x00 
-SEQ12  d\x02\x00 
-SEQ06 SCE007_003\x00 \x12\x06\x00 
+SEQ14 
+SEQ08 " 6\x02\x00 
+SEQ08  d\x02\x00 
+SEQ05 SCE007_003\x00 \x12\x06\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x98\x1a
-SEQ13 
-SEQ05 \x03q\x00\x00
+SEQ10 \x98\x1a
+SEQ14 
+SEQ11 \x03q\x00\x00
  
 拓司\n　「……早桃」@
 早桃\n　「おにいちゃんにいやらしい目で見られて、早桃もいやらしい\n　　女の子になっちゃった。@
@@ -70,28 +70,28 @@ SEQ05 \x03q\x00\x00
 
 \x00  
 SEQ01 V\x06
-SEQ13 
-SEQ04  6\x02\x00 
-SEQ12  d\x02\x00 
-SEQ06 SCE007_004\x00 T\x08\x00 
+SEQ14 
+SEQ08 " 6\x02\x00 
+SEQ08  d\x02\x00 
+SEQ05 SCE007_004\x00 T\x08\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x9c\x1a
-SEQ13 
-SEQ05 \x03"\x00\x00
+SEQ10 \x9c\x1a
+SEQ14 
+SEQ11 \x03"\x00\x00
  
 ぺちゃぺちゃと唾液が絡んだようなしゃべりかたで早桃は続ける。\n\p性器に指を絡めて奉仕しながらみだらな言葉で義兄の興奮を誘う。\n\w\z
 \x00\x00\x00  
 SEQ01 \x98\x08
-SEQ13 
-SEQ04  6\x02\x00 
-SEQ12  d\x02\x00 
-SEQ06 SCE007_005\x00 Z\t\x00 
+SEQ14 
+SEQ08 " 6\x02\x00 
+SEQ08  d\x02\x00 
+SEQ05 SCE007_005\x00 Z\t\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xa0\x1a
-SEQ13 
-SEQ05 \x03\x8d\x00\x00
+SEQ10 \xa0\x1a
+SEQ14 
+SEQ11 \x03\x8d\x00\x00
  
 早桃\n　「もうオナニーなんてする必要ないよ。\pエッチな本も買わな\n　　くていい。@
 　　だって、早桃のおててとおくちとおっぱいとおま○ことおし\n　　りで……溜まったときに処理できるんだよ。@
@@ -103,15 +103,15 @@ SEQ05 \x03\x8d\x00\x00
 
 \x00\x00\x00  
 SEQ01 \x9e\t
-SEQ13 
-SEQ04  6\x02\x00 
-SEQ12  d\x02\x00 
-SEQ06 SCE007_006\x00 \x0c\x0c\x00 
+SEQ14 
+SEQ08 " 6\x02\x00 
+SEQ08  d\x02\x00 
+SEQ05 SCE007_006\x00 \x0c\x0c\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xa4\x1a
-SEQ13 
-SEQ05 \x03}\x00\x00
+SEQ10 \xa4\x1a
+SEQ14 
+SEQ11 \x03}\x00\x00
  
 拓司\n　「う……早桃」@
 早桃\n　「見せて。おにいちゃんが早桃のパンティに射精するところ」@
@@ -124,15 +124,15 @@ SEQ05 \x03}\x00\x00
 
 \x00\x00\x00  
 SEQ01 P\x0c
-SEQ13 
-SEQ04  6\x02\x00 
-SEQ12  d\x02\x00 
-SEQ06 SCE007_007\x00 ~\x0e\x00 
+SEQ14 
+SEQ08 " 6\x02\x00 
+SEQ08  d\x02\x00 
+SEQ05 SCE007_007\x00 ~\x0e\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xa8\x1a
-SEQ13 
-SEQ05 \x03\xaf\x00\x00
+SEQ10 \xa8\x1a
+SEQ14 
+SEQ11 \x03\xaf\x00\x00
  
 早桃\n　「こんなにいっぱい。\pおにいちゃん、すごく溜まってたんだ\n　　ねえ。\p義妹の前でこんなにどくどく精液出しちゃって……\n　　恥ずかしくないの？\p　くすくす……」@
 拓司\n　「はあ、はあ……早桃……」@
@@ -144,15 +144,15 @@ SEQ05 \x03\xaf\x00\x00
 
 \x00  
 SEQ01 \xc2\x0e
-SEQ13 
-SEQ04  6\x02\x00 
-SEQ12  d\x02\x00 
-SEQ06 SCE007_008\x00 \xb8\x11\x00 
+SEQ14 
+SEQ08 " 6\x02\x00 
+SEQ08  d\x02\x00 
+SEQ05 SCE007_008\x00 \xb8\x11\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xac\x1a
-SEQ13 
-SEQ05 \x03u\x00\x00
+SEQ10 \xac\x1a
+SEQ14 
+SEQ11 \x03u\x00\x00
  
 早桃\n　「んくっ……はあ……穿き終わったよ。\pおにいちゃんの精液、\n　　いま、早桃のパンティとおま○このあいだに、べったりひっ\n　　ついてるよ。\pぬるぬるして、あったかい。@
 　　おたまじゃくしがいっぱい。\pねえ、おま○このなかに入っち\n　　ゃったらどうしよう？\p　赤ちゃんできちゃうのかなあ……義\n　　兄妹で妊娠しちゃうなんて、パパとママ、驚くだろうなあ…\n　　…」@
@@ -162,15 +162,15 @@ SEQ05 \x03u\x00\x00
 
 \x00  
 SEQ01 \xfc\x11
-SEQ13 
-SEQ04  6\x02\x00 
-SEQ12  d\x02\x00 
-SEQ06 SCE007_009\x00 \n\x14\x00 
+SEQ14 
+SEQ08 " 6\x02\x00 
+SEQ08  d\x02\x00 
+SEQ05 SCE007_009\x00 \n\x14\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xb0\x1a
-SEQ13 
-SEQ05 \x03p\x00\x00
+SEQ10 \xb0\x1a
+SEQ14 
+SEQ11 \x03p\x00\x00
  
 早桃\n　「ほんと、いやらしいおにいちゃん。\pもしかして、いつも早\n　　桃のパンティ、オカズにしてたの？\p　おち○ちんをこすりつ\n　　けて、汚してたの？\p　精子いっぱい出して、それを何も知ら\n　　ない義妹に穿かせて興奮してたの？@
 　　そうなんだあ……だから早桃、こんなにエッチになっちゃっ\n　　たんだ。@
@@ -179,15 +179,15 @@ SEQ05 \x03p\x00\x00
 
 \x00\x00\x00  
 SEQ01 N\x14
-SEQ13 
-SEQ04  6\x02\x00 
-SEQ12  d\x02\x00 
-SEQ06 SCE007_010\x00 H\x16\x00 
+SEQ14 
+SEQ08 " 6\x02\x00 
+SEQ08  d\x02\x00 
+SEQ05 SCE007_010\x00 H\x16\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xb4\x1a
-SEQ13 
-SEQ05 \x03l\x00\x00
+SEQ10 \xb4\x1a
+SEQ14 
+SEQ11 \x03l\x00\x00
  
 早桃は拓司をまたいだまま、二、三歩ベッドの上を歩くと、今度\nは義兄の首のあたりで腰を下ろして、膝立ちになった。@
 拓司は義妹の腿にはさまれた。@
@@ -200,15 +200,15 @@ SEQ05 \x03l\x00\x00
 
 \x00  
 SEQ01 \x8c\x16
-SEQ13 
-SEQ04  6\x02\x00 
-SEQ12  d\x02\x00 
-SEQ06 SCE007_011\x00 v\x18\x00 
+SEQ14 
+SEQ08 " 6\x02\x00 
+SEQ08  d\x02\x00 
+SEQ05 SCE007_011\x00 v\x18\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xb8\x1a
-SEQ13 
-SEQ05 \x03\x99\x00\x00
+SEQ10 \xb8\x1a
+SEQ14 
+SEQ11 \x03\x99\x00\x00
  
 早桃\n　「ずっと見たかったんでしょう？\p　早桃のここ。@
 　　おにいちゃんの精液でねとねとのおま○こ」@
@@ -222,15 +222,15 @@ SEQ05 \x03\x99\x00\x00
 
 \x00\x00\x00  
 SEQ01 \xba\x18
-SEQ13 
-SEQ04  6\x02\x00 
-SEQ12  d\x02\x00 
-SEQ06 SCE007_012\x00 X\x1b\x00 
+SEQ14 
+SEQ08 " 6\x02\x00 
+SEQ08  d\x02\x00 
+SEQ05 SCE007_012\x00 X\x1b\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xbc\x1a
-SEQ13 
-SEQ05 \x03`\x00\x00
+SEQ10 \xbc\x1a
+SEQ14 
+SEQ11 \x03`\x00\x00
  
 早桃\n　「はあ、はあ……ねえ、おにいちゃんのパンツも頂戴」@
 \n乞われるまま、拓司はズボンをおろし、脚をばたつかせてブリー\nフを抜き取った。@
@@ -240,20 +240,20 @@ SEQ05 \x03`\x00\x00
 
 \x00  
 SEQ01 \x9c\x1b
-SEQ13 
-SEQ04  6\x02\x00 
-SEQ12  d\x02\x00 
-SEQ10   
+SEQ14 
+SEQ08 " 6\x02\x00 
+SEQ08  d\x02\x00 
+SEQ06   
 SEQ01 K\x00
-SEQ13 
-SEQ04  \x9a\x02\x00 
-SEQ12  \xc4\x02\x00 
-SEQ06 SCE007_013\x00 \x8a\x1d\x00 
+SEQ14 
+SEQ08 " \x9a\x02\x00 
+SEQ08  \xc4\x02\x00 
+SEQ05 SCE007_013\x00 \x8a\x1d\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xc0\x1a
-SEQ13 
-SEQ05 \x03x\x00\x00
+SEQ10 \xc0\x1a
+SEQ14 
+SEQ11 \x03x\x00\x00
  
 早桃\n　「すごい匂い……。\p早桃も、おにいちゃんのパンツでオナ\n　　ニーしてたんだよ。\p知ってた？@
 　　おしっこと汗と精液の匂いがいっぱいこびりついたパンツの\n　　匂いをこうやって……嗅ぎながら……こんなふうに……オナ\n　　ニーしてたんだよ」@
@@ -264,15 +264,15 @@ SEQ05 \x03x\x00\x00
 
 \x00  
 SEQ01 \xce\x1d
-SEQ13 
-SEQ04  6\x02\x00 
-SEQ12  d\x02\x00 
-SEQ06 SCE007_014\x00 \xe8\x1f\x00 
+SEQ14 
+SEQ08 " 6\x02\x00 
+SEQ08  d\x02\x00 
+SEQ05 SCE007_014\x00 \xe8\x1f\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xc4\x1a
-SEQ13 
-SEQ05 \x03T\x00\x00
+SEQ10 \xc4\x1a
+SEQ14 
+SEQ11 \x03T\x00\x00
  
 義妹が自分のブリーフを口に入れて、しゃぶっている。@
 下品な音を立てながら……義兄にオナニーを見せつけながら……\n興奮するなというほうが無理だった。@
@@ -282,15 +282,15 @@ SEQ05 \x03T\x00\x00
 
 \x00  
 SEQ01 , 
-SEQ13 
-SEQ04  6\x02\x00 
-SEQ12  d\x02\x00 
-SEQ06 SCE007_015\x00 \xb6!\x00 
+SEQ14 
+SEQ08 " 6\x02\x00 
+SEQ08  d\x02\x00 
+SEQ05 SCE007_015\x00 \xb6!\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xc8\x1a
-SEQ13 
-SEQ05 \x03\x8d\x00\x00
+SEQ10 \xc8\x1a
+SEQ14 
+SEQ11 \x03\x8d\x00\x00
  
 早桃\n　「おにいちゃんと早桃、変態義兄妹だよね……」@
 拓司\n　「……ああ、そうだ。変態だ……」@
@@ -304,15 +304,15 @@ SEQ05 \x03\x8d\x00\x00
 
 \x00  
 SEQ01 \xfa!
-SEQ13 
-SEQ04  6\x02\x00 
-SEQ12  d\x02\x00 
-SEQ06 SCE007_016\x00 h$\x00 
+SEQ14 
+SEQ08 " 6\x02\x00 
+SEQ08  d\x02\x00 
+SEQ05 SCE007_016\x00 h$\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xcc\x1a
-SEQ13 
-SEQ05 \x03\x9c\x00\x00
+SEQ10 \xcc\x1a
+SEQ14 
+SEQ11 \x03\x9c\x00\x00
  
 早桃\n　「いくらでも出るんだね。\pからだ、おかしいんじゃないの？\n　　\pほんとうは赤ちゃんを作るための液で、こんなふうに女の\n　　子にひっかけるためのものじゃないんだよ？@
 　　大丈夫？\p　まだ出る？\p　駄目だよ、もっとがんばってくれな\n　　くちゃ。\pこれから早桃のお腹の中にいっぱいいっぱい出さな\n　　くちゃいけないんだから。@
@@ -325,15 +325,15 @@ SEQ05 \x03\x9c\x00\x00
 
 \x00\x00\x00  
 SEQ01 \xac$
-SEQ13 
-SEQ04  6\x02\x00 
-SEQ12  d\x02\x00 
-SEQ06 SCE007_017\x00 V'\x00 
+SEQ14 
+SEQ08 " 6\x02\x00 
+SEQ08  d\x02\x00 
+SEQ05 SCE007_017\x00 V'\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xd0\x1a
-SEQ13 
-SEQ05 \x03\xb4\x00\x00
+SEQ10 \xd0\x1a
+SEQ14 
+SEQ11 \x03\xb4\x00\x00
  
 拓司\n　「……やめろ」@
 早桃\n　「ワハ、ワハハハハ、ハハハハハハハ！」@
@@ -348,23 +348,23 @@ SEQ05 \x03\xb4\x00\x00
 
 \x00\x00\x00  
 SEQ01 \x9a'
-SEQ13 
-SEQ04  6\x02\x00 
-SEQ12  d\x02\x00 
-SEQ10   
+SEQ14 
+SEQ08 " 6\x02\x00 
+SEQ08  d\x02\x00 
+SEQ06   
 SEQ01 \xc8\x00
-SEQ13 
-SEQ04  \x9a\x02\x00 
-SEQ12  \xc4\x02\x00 
-SEQ10 
-SEQ08 .\\Data\\Script\\Bgm.Fob SPC02 \xd8*\x00 
+SEQ14 
+SEQ08 " \x9a\x02\x00 
+SEQ08  \xc4\x02\x00 
+SEQ06 
+SEQ12 .\\Data\\Script\\Bgm.Fob SPC02 \xd8*\x00 
 SEQ02 StopCD SPC01 \x02+\x00 
-SEQ06 SCE007_018\x00 \x1e+\x00 
+SEQ05 SCE007_018\x00 \x1e+\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xd4\x1a
-SEQ13 
-SEQ05 \x03L\x00\x00
+SEQ10 \xd4\x1a
+SEQ14 
+SEQ11 \x03L\x00\x00
  
 拓司は両手で耳を覆った。@
 そして目を閉じた。@
@@ -380,9 +380,9 @@ SEQ05 \x03L\x00\x00
 
 \x00\x00\x00  
 SEQ01 b+
-SEQ13 
-SEQ04  6\x02\x00 
-SEQ12  d\x02\x00 
-SEQ10  6\x02\x00 
-SEQ12 \x03\x03\x00\x00TextClose SPC02 \xd8,\x00 
-ENDF
+SEQ14 
+SEQ08 " 6\x02\x00 
+SEQ08  d\x02\x00 
+SEQ06  6\x02\x00 
+SEQ04 TextClose SPC02 \xd8,\x00 
+FEND

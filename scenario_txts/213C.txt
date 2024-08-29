@@ -1,9 +1,9 @@
-STRF
+FSTR
 \x19\x04\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xa4\t3\x01\x00\x00\x00>\x03\x00\x03\x03\x00\x00SCE213_001\x00 \x06\x00\x00 
 SEQ07  
 SEQ01 
-SEQ03 p\\\x01\x0c
-SEQ05 \x03\x98\x00\x00
+SEQ10 p\\\x01\x0c
+SEQ11 \x03\x98\x00\x00
  
 拓司はガバと身を起こした。@
 /*▲BGM　Track08　再生*/\a2,-1,8,1,窓から、朝日が射し込んでいる。@
@@ -17,10 +17,10 @@ SEQ05 \x03\x98\x00\x00
 
   
 SEQ01 J\x00
-SEQ13 
-SEQ04 
-SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 \xca\x02\x00 
+SEQ14 
+SEQ08 "
+SEQ13 .\\Data\\Script\\TextFunc.Fob SPC01 \xca\x02\x00 
 SEQ02 TextOn SPC01 \xf8\x02\x00 
-SEQ10  \xca\x02\x00 
-SEQ12 \x03\x03\x00\x00TextClose SPC02  \x03\x00 
-ENDF
+SEQ06  \xca\x02\x00 
+SEQ04 TextClose SPC02  \x03\x00 
+FEND

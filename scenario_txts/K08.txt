@@ -1,9 +1,9 @@
-STRF
+FSTR
 f\x04\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xa4\t3\x01\x00\x00\x00\xbe\x03\x00\x03\x03\x00\x00SCEK08_001\x00 \x06\x00\x00 
 SEQ07  
 SEQ01 
-SEQ03  \xa7\x01\x0c
-SEQ05 \x03\xb8\x00\x00
+SEQ10  \xa7\x01\x0c
+SEQ11 \x03\xb8\x00\x00
  
 「だめよ」とゆきはいった。@
 それまで聞いたこともない、強い口調だった。\pだめよ。@
@@ -19,10 +19,10 @@ SEQ05 \x03\xb8\x00\x00
 非常識であることを十分理解したうえで、彼女は非常識を遂行し\nようとしていた。\p怖かった。\w\z
 \x00  
 SEQ01 J\x00
-SEQ13 
-SEQ04 
-SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 J\x03\x00 
+SEQ14 
+SEQ08 "
+SEQ13 .\\Data\\Script\\TextFunc.Fob SPC01 J\x03\x00 
 SEQ02 TextOn SPC01 x\x03\x00 
-SEQ10  J\x03\x00 
-SEQ12 \x03\x03\x00\x00TextClose SPC02 \xa0\x03\x00 
-ENDF
+SEQ06  J\x03\x00 
+SEQ04 TextClose SPC02 \xa0\x03\x00 
+FEND

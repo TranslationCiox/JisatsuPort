@@ -1,31 +1,31 @@
-STRF
+FSTR
 \xa9\x1e\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00Z\x19\x00  
 SEQ01 \x06\x01
-SEQ13 
-SEQ04 
-SEQ08 .\\Data\\Script\\Bgm.Fob SPC02  \x00\x00 
+SEQ14 
+SEQ08 "
+SEQ12 .\\Data\\Script\\Bgm.Fob SPC02  \x00\x00 
 SEQ02 PlayCD SPC01 J\x00\x00 
-SEQ06 SCE003_001\x00 f\x00\x00 
+SEQ05 SCE003_001\x00 f\x00\x00 
 SEQ07  
 SEQ01 
-SEQ03 P\x14
-SEQ13 
-SEQ05 \x03\x12\x00\x00
+SEQ10 P\x14
+SEQ14 
+SEQ11 \x03\x12\x00\x00
  
 \n\n\n\n\n\n\n\n\n\n　　　　　　　　　『虎菱拓司と奇妙な音』\
 
 \x00\x00\x00  
 SEQ01 \xaa\x00
-SEQ13 
-SEQ04 
-SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 \x12\x01\x00 
+SEQ14 
+SEQ08 "
+SEQ13 .\\Data\\Script\\TextFunc.Fob SPC01 \x12\x01\x00 
 SEQ02 TextOn SPC01 @\x01\x00 
-SEQ06 SCE003_002\x00 \\\x01\x00 
+SEQ05 SCE003_002\x00 \\\x01\x00 
 SEQ07  
 SEQ01 
-SEQ03 T\x14
-SEQ13 
-SEQ05 \x03\x88\x00\x00
+SEQ10 T\x14
+SEQ14 
+SEQ11 \x03\x88\x00\x00
  
 　虎菱拓司がその音を聞くようになったのは、今年に入ってまも\n　なくのころだった。@
 \n/*▲SE01　ループ再生（次の停止まで）*/\a2,2,1,1,\a6,0,0,0,　ザザザ……ザザッ……\pザアザザザ……ザアアアアア……@
@@ -37,15 +37,15 @@ SEQ05 \x03\x88\x00\x00
 
 \x00\x00\x00  
 SEQ01 \xa0\x01
-SEQ13 
-SEQ04  \x12\x01\x00 
-SEQ12  @\x01\x00 
-SEQ06 SCE003_003\x00 \xfa\x03\x00 
+SEQ14 
+SEQ08 " \x12\x01\x00 
+SEQ08  @\x01\x00 
+SEQ05 SCE003_003\x00 \xfa\x03\x00 
 SEQ07  
 SEQ01 
-SEQ03 X\x14
-SEQ13 
-SEQ05 \x03^\x00\x00
+SEQ10 X\x14
+SEQ14 
+SEQ11 \x03^\x00\x00
  
 　その音は拓司にしか聞こえないようだった。@
 　彼はすぐに、それが幻聴であることを理解した。@
@@ -56,15 +56,15 @@ SEQ05 \x03^\x00\x00
 
 \x00  
 SEQ01 >\x04
-SEQ13 
-SEQ04  \x12\x01\x00 
-SEQ12  @\x01\x00 
-SEQ06 SCE003_004\x00 \xf0\x05\x00 
+SEQ14 
+SEQ08 " \x12\x01\x00 
+SEQ08  @\x01\x00 
+SEQ05 SCE003_004\x00 \xf0\x05\x00 
 SEQ07  
 SEQ01 
-SEQ03 $\x10
-SEQ13 
-SEQ05 \x03\xaa\x00\x00
+SEQ10 $\x10
+SEQ14 
+SEQ11 \x03\xaa\x00\x00
  
 /*▲SE01　ループ再生（次の停止まで）*/\a2,2,1,1,\a6,0,0,0,　ザザザ……ザザッ……\pザアザザザ……ザアアアアア……@
 　ザアザアアアアアアア……/*▲SE01　停止*/\a4,2,0,0,\n　拓司は、その音を『灰色』と名付けた。@
@@ -76,15 +76,15 @@ SEQ05 \x03\xaa\x00\x00
 
 \x00  
 SEQ01 4\x06
-SEQ13 
-SEQ04  \x12\x01\x00 
-SEQ12  @\x01\x00 
-SEQ06 SCE003_005\x00 \x16\t\x00 
+SEQ14 
+SEQ08 " \x12\x01\x00 
+SEQ08  @\x01\x00 
+SEQ05 SCE003_005\x00 \x16\t\x00 
 SEQ07  
 SEQ01 
-SEQ03 `\x14
-SEQ13 
-SEQ05 \x03\xa5\x00\x00
+SEQ10 `\x14
+SEQ14 
+SEQ11 \x03\xa5\x00\x00
  
 /*▲SE01　ループ再生（次の停止まで）*/\a2,2,1,1,\a6,0,0,0,　ザザザ……ザザッ……\pザアザザザ……ザアアアアア……@
 　ザアザアアアアアアア……@
@@ -97,15 +97,15 @@ SEQ05 \x03\xa5\x00\x00
 
 \x00\x00\x00  
 SEQ01 Z\t
-SEQ13 
-SEQ04  \x12\x01\x00 
-SEQ12  @\x01\x00 
-SEQ06 SCE003_006\x00 (\x0c\x00 
+SEQ14 
+SEQ08 " \x12\x01\x00 
+SEQ08  @\x01\x00 
+SEQ05 SCE003_006\x00 (\x0c\x00 
 SEQ07  
 SEQ01 
-SEQ03 d\x14
-SEQ13 
-SEQ05 \x03\xa0\x00\x00
+SEQ10 d\x14
+SEQ14 
+SEQ11 \x03\xa0\x00\x00
  
 /*▲SE01　ループ再生（次の停止まで*/\a2,2,1,1,\a6,0,0,0,　ザザザ……ザザッ……\pザアザザザ……ザアアアアア……@
 　ザアザアアアアアアア……@
@@ -119,15 +119,15 @@ SEQ05 \x03\xa0\x00\x00
 
 \x00\x00\x00  
 SEQ01 l\x0c
-SEQ13 
-SEQ04  \x12\x01\x00 
-SEQ12  @\x01\x00 
-SEQ06 SCE003_007\x00 &\x0f\x00 
+SEQ14 
+SEQ08 " \x12\x01\x00 
+SEQ08  @\x01\x00 
+SEQ05 SCE003_007\x00 &\x0f\x00 
 SEQ07  
 SEQ01 
-SEQ03 h\x14
-SEQ13 
-SEQ05 \x03\x94\x00\x00
+SEQ10 h\x14
+SEQ14 
+SEQ11 \x03\x94\x00\x00
  
 /*▲SE01　ループ再生（次の停止まで）*/\a2,2,1,1,\a6,0,0,0,　ザザザ……ザザッ……\pザアザザザ……ザアアアアア……@
 　ザアザアアアアアアア……@
@@ -140,15 +140,15 @@ SEQ05 \x03\x94\x00\x00
 
 \x00\x00\x00  
 SEQ01 j\x0f
-SEQ13 
-SEQ04  \x12\x01\x00 
-SEQ12  @\x01\x00 
-SEQ06 SCE003_008\x00 \xf4\x11\x00 
+SEQ14 
+SEQ08 " \x12\x01\x00 
+SEQ08  @\x01\x00 
+SEQ05 SCE003_008\x00 \xf4\x11\x00 
 SEQ07  
 SEQ01 
-SEQ03 l\x14
-SEQ13 
-SEQ05 \x03d\x00\x00
+SEQ10 l\x14
+SEQ14 
+SEQ11 \x03d\x00\x00
  
 　だんだんと頭のなかがぼやけてくる。@
 　何が起きて、何が起きなかったのか。@
@@ -161,15 +161,15 @@ SEQ05 \x03d\x00\x00
 
 \x00  
 SEQ01 8\x12
-SEQ13 
-SEQ04  \x12\x01\x00 
-SEQ12  @\x01\x00 
-SEQ06 SCE003_009\x00 \x02\x14\x00 
+SEQ14 
+SEQ08 " \x12\x01\x00 
+SEQ08  @\x01\x00 
+SEQ05 SCE003_009\x00 \x02\x14\x00 
 SEQ07  
 SEQ01 
-SEQ03 p\x14
-SEQ13 
-SEQ05 \x03$\x00\x00
+SEQ10 p\x14
+SEQ14 
+SEQ11 \x03$\x00\x00
  
 　そしていま、思っている。@
 　なにをしていいのか。@
@@ -179,15 +179,15 @@ SEQ05 \x03$\x00\x00
 
 \x00\x00\x00  
 SEQ01 F\x14
-SEQ13 
-SEQ04  \x12\x01\x00 
-SEQ12  @\x01\x00 
-SEQ06 SCE003_010\x00 \x10\x15\x00 
+SEQ14 
+SEQ08 " \x12\x01\x00 
+SEQ08  @\x01\x00 
+SEQ05 SCE003_010\x00 \x10\x15\x00 
 SEQ07  
 SEQ01 
-SEQ03 t\x14
-SEQ13 
-SEQ05 \x03t\x00\x00
+SEQ10 t\x14
+SEQ14 
+SEQ11 \x03t\x00\x00
  
 /*▲SE01　ループ再生（次の停止まで）*/\a2,2,1,1,\a6,0,0,0,　ザザザ……ザザッ……\pザアザザザ……ザアアアアア……@
 　ザアザアアアアアアア……@
@@ -201,15 +201,15 @@ SEQ05 \x03t\x00\x00
 
 \x00\x00\x00  
 SEQ01 T\x15
-SEQ13 
-SEQ04  \x12\x01\x00 
-SEQ12  @\x01\x00 
-SEQ06 SCE003_011\x00 ^\x17\x00 
+SEQ14 
+SEQ08 " \x12\x01\x00 
+SEQ08  @\x01\x00 
+SEQ05 SCE003_011\x00 ^\x17\x00 
 SEQ07  
 SEQ01 
-SEQ03 x\x14
-SEQ13 
-SEQ05 \x03K\x00\x00
+SEQ10 x\x14
+SEQ14 
+SEQ11 \x03K\x00\x00
  
 /*▲SE03　１回再生（再生終了を待たず次へ）*/\a2,0,3,0,\a6,0,0,0,　キキキキキ……キイキイ……キキキ……キキ……キ@
 \a4,0,0,0,\n　オト。@
@@ -220,11 +220,11 @@ SEQ05 \x03K\x00\x00
 
 \x00\x00\x00  
 SEQ01 \xa2\x17
-SEQ13 
-SEQ04  \x12\x01\x00 
-SEQ12  @\x01\x00 
-SEQ10   \x00\x00 
+SEQ14 
+SEQ08 " \x12\x01\x00 
+SEQ08  @\x01\x00 
+SEQ06   \x00\x00 
 SEQ02 StopCD SPC01 \x14\x19\x00 
-SEQ10  \x12\x01\x00 
-SEQ12 \x03\x03\x00\x00TextClose SPC02 <\x19\x00 
-ENDF
+SEQ06  \x12\x01\x00 
+SEQ04 TextClose SPC02 <\x19\x00 
+FEND

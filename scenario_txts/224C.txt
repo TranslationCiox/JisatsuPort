@@ -1,9 +1,9 @@
-STRF
+FSTR
 \x17\t\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\\\x07\x00\x03\x03\x00\x00SCE224_001\x00 \x06\x00\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xa0m\x01\x0c
-SEQ05 \x03\xa1\x00\x00
+SEQ10 \xa0m\x01\x0c
+SEQ11 \x03\xa1\x00\x00
  
 衝動的な怒りに突き動かされて、拓司は動いた。@
 錦城の顔が一気に恐怖に歪む。@
@@ -18,15 +18,15 @@ SEQ05 \x03\xa1\x00\x00
 
 \x00\x00\x00  
 SEQ01 J\x00
-SEQ13 
-SEQ04 
-SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 \xee\x02\x00 
+SEQ14 
+SEQ08 "
+SEQ13 .\\Data\\Script\\TextFunc.Fob SPC01 \xee\x02\x00 
 SEQ02 TextOn SPC01 \x1c\x03\x00 
-SEQ06 SCE224_002\x00 8\x03\x00 
+SEQ05 SCE224_002\x00 8\x03\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xa4m\x01\x0c
-SEQ05 \x03;\x00\x00
+SEQ10 \xa4m\x01\x0c
+SEQ11 \x03;\x00\x00
  
 一気に押し倒された。@
 後頭部を床に強打する。@
@@ -45,14 +45,14 @@ SEQ05 \x03;\x00\x00
 
 \x00  
 SEQ01 |\x03
-SEQ13 
-SEQ04  \xee\x02\x00 
-SEQ12  \x1c\x03\x00 
-SEQ06 SCE224_003\x00 \xa2\x04\x00 
+SEQ14 
+SEQ08 " \xee\x02\x00 
+SEQ08  \x1c\x03\x00 
+SEQ05 SCE224_003\x00 \xa2\x04\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xa8m\x01\x0c
-SEQ05 \x03Y\x00\x00
+SEQ10 \xa8m\x01\x0c
+SEQ11 \x03Y\x00\x00
  
 必至で腕を振り回したが、むなしく空を切るばかりだ。@
 －－卑怯だ。\p御堂は絶対に安全な場所からパンチを放ってくる。@
@@ -63,18 +63,18 @@ SEQ05 \x03Y\x00\x00
 
 \x00  
 SEQ01 \xe6\x04
-SEQ13 
-SEQ04  \xee\x02\x00 
-SEQ12  \x1c\x03\x00 
-SEQ10   
+SEQ14 
+SEQ08 " \xee\x02\x00 
+SEQ08  \x1c\x03\x00 
+SEQ06   
 SEQ01 \xc8\x00
-SEQ13 
-SEQ04 
-SEQ08 .\\Data\\Script\\Bg.Fob SPC03 \x9e\x06\x00 
-SEQ12 \x03\x04\x00\x00BgAutoFadeIn SPC03 \xc8\x06\x00 
-SEQ10 
-SEQ08 .\\Data\\Script\\Bgm.Fob SPC02 \xec\x06\x00 
+SEQ14 
+SEQ08 "
+SEQ12 .\\Data\\Script\\Bg.Fob SPC03 \x9e\x06\x00 
+SEQ03 BgAutoFadeIn SPC03 \xc8\x06\x00 
+SEQ06 
+SEQ12 .\\Data\\Script\\Bgm.Fob SPC02 \xec\x06\x00 
 SEQ02 StopCD SPC01 \x16\x07\x00 
-SEQ10  \xee\x02\x00 
-SEQ12 \x03\x03\x00\x00TextClose SPC02 >\x07\x00 
-ENDF
+SEQ06  \xee\x02\x00 
+SEQ04 TextClose SPC02 >\x07\x00 
+FEND

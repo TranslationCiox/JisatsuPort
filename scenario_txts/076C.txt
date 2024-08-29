@@ -1,10 +1,10 @@
-STRF
+FSTR
 F\x08\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xbc\x06\x00\x03\x03\x00\x00SCE076_001\x00 \x06\x00\x00 
 SEQ07  
 SEQ01 
-SEQ03 `\x86
-SEQ13 
-SEQ05 \x03Q\x00\x00
+SEQ10 `\x86
+SEQ14 
+SEQ11 \x03Q\x00\x00
  
 拓司\n　「雲居さんが俺たちには見えないものが見えるというのは…\n　　…信じられないけど……どうやらウソじゃないらしい。@
 　　いままで何度も、雲居さんは『波動』ってやつを感じてき\n　　たし、俺はそれに救われてきた」@
@@ -12,16 +12,16 @@ SEQ05 \x03Q\x00\x00
 
 \x00\x00\x00  
 SEQ01 J\x00
-SEQ13 
-SEQ04 
-SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 \xae\x01\x00 
+SEQ14 
+SEQ08 "
+SEQ13 .\\Data\\Script\\TextFunc.Fob SPC01 \xae\x01\x00 
 SEQ02 TextOn SPC01 \xdc\x01\x00 
-SEQ06 SCE076_002\x00 \xf8\x01\x00 
+SEQ05 SCE076_002\x00 \xf8\x01\x00 
 SEQ07  
 SEQ01 
-SEQ03 d\x86
-SEQ13 
-SEQ05 \x03d\x00\x00
+SEQ10 d\x86
+SEQ14 
+SEQ11 \x03d\x00\x00
  
 早桃\n　「どうしちゃったの、おにいちゃん！\p　この人、おかしいんだ\n　　よ？！\p　やつらとか、戦士とか、最終決戦とか、シェルター\n　　とか、漫画みたいなメチャクチャばっかりじゃない！」@
 拓司\n　「俺だって！\p　……俺だって全部を信じてるわけじゃない。@
@@ -31,15 +31,15 @@ SEQ05 \x03d\x00\x00
 
 \x00  
 SEQ01 <\x02
-SEQ13 
-SEQ04  \xae\x01\x00 
-SEQ12  \xdc\x01\x00 
-SEQ06 SCE076_003\x00 \x06\x04\x00 
+SEQ14 
+SEQ08 " \xae\x01\x00 
+SEQ08  \xdc\x01\x00 
+SEQ05 SCE076_003\x00 \x06\x04\x00 
 SEQ07  
 SEQ01 
-SEQ03 h\x86
-SEQ13 
-SEQ05 \x03r\x00\x00
+SEQ10 h\x86
+SEQ14 
+SEQ11 \x03r\x00\x00
  
 早桃は俯いて、じっと床を睨んでいた。@
 そしてついポツリといった。@
@@ -51,12 +51,12 @@ SEQ05 \x03r\x00\x00
 
 \x00\x00\x00  
 SEQ01 J\x04
-SEQ13 
-SEQ04  \xae\x01\x00 
-SEQ12  \xdc\x01\x00 
-SEQ10 
-SEQ08 .\\Data\\Script\\Bgm.Fob SPC02 L\x06\x00 
+SEQ14 
+SEQ08 " \xae\x01\x00 
+SEQ08  \xdc\x01\x00 
+SEQ06 
+SEQ12 .\\Data\\Script\\Bgm.Fob SPC02 L\x06\x00 
 SEQ02 StopCD SPC01 v\x06\x00 
-SEQ10  \xae\x01\x00 
-SEQ12 \x03\x03\x00\x00TextClose SPC02 \x9e\x06\x00 
-ENDF
+SEQ06  \xae\x01\x00 
+SEQ04 TextClose SPC02 \x9e\x06\x00 
+FEND

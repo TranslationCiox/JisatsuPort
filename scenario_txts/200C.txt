@@ -1,25 +1,25 @@
-STRF
+FSTR
 \xd0%\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00^ \x00\x03\x03\x00\x00SCE200_001\x00 \x06\x00\x00 
 SEQ07  
 SEQ01 
-SEQ03  H\x01\x0c
-SEQ05   
+SEQ10  H\x01\x0c
+SEQ11   
 SEQ01 \xc9\x00
-SEQ13 
-SEQ04 
-SEQ08 .\\Data\\Script\\Bg.Fob SPC03 d\x00\x00 
-SEQ12 \x03\x04\x00\x00BgAutoFadeIn SPC03 \x8e\x00\x00 
-SEQ10   
+SEQ14 
+SEQ08 "
+SEQ12 .\\Data\\Script\\Bg.Fob SPC03 d\x00\x00 
+SEQ03 BgAutoFadeIn SPC03 \x8e\x00\x00 
+SEQ06   
 SEQ01 
-SEQ12 \x0c
-SEQ04   \x04\x00\x00\r\x00\x00 \x06\x00
-SEQ13 
-SEQ04   \x08\x00\x00\r\x00\x00 \x01\x00
-SEQ13 
-SEQ04 
-SEQ08 .\\Data\\Script\\Bgm.Fob SPC02 \x00\x01\x00 
+SEQ08 \x0c
+SEQ08 "  \x04\x00\x00\r\x00\x00 \x06\x00
+SEQ14 
+SEQ08 "  \x08\x00\x00\r\x00\x00 \x01\x00
+SEQ14 
+SEQ08 "
+SEQ12 .\\Data\\Script\\Bgm.Fob SPC02 \x00\x01\x00 
 SEQ02 SePlay SPC01 *\x01\x00 
-SEQ10 \x03v\x00\x00
+SEQ06 \x03v\x00\x00
  
 拓司は、錆びたシャッターをこじあけるように、目を開く。@
 \n白い壁。@
@@ -35,15 +35,15 @@ SEQ10 \x03v\x00\x00
 
 \x00\x00\x00  
 SEQ01 F\x01
-SEQ13 
-SEQ04 
-SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 >\x03\x00 
+SEQ14 
+SEQ08 "
+SEQ13 .\\Data\\Script\\TextFunc.Fob SPC01 >\x03\x00 
 SEQ02 TextOn SPC01 l\x03\x00 
-SEQ06 SCE200_002\x00 \x88\x03\x00 
+SEQ05 SCE200_002\x00 \x88\x03\x00 
 SEQ07  
 SEQ01 
-SEQ03 $H\x01\x0c
-SEQ05 \x03T\x00\x00
+SEQ10 $H\x01\x0c
+SEQ11 \x03T\x00\x00
  
 拓司\n　「……どうも……教授……」@
 教授\n　「……」@
@@ -55,14 +55,14 @@ SEQ05 \x03T\x00\x00
 
 \x00  
 SEQ01 \xcc\x03
-SEQ13 
-SEQ04  >\x03\x00 
-SEQ12  l\x03\x00 
-SEQ06 SCE200_003\x00 V\x05\x00 
+SEQ14 
+SEQ08 " >\x03\x00 
+SEQ08  l\x03\x00 
+SEQ05 SCE200_003\x00 V\x05\x00 
 SEQ07  
 SEQ01 
-SEQ03 (H\x01\x0c
-SEQ05 \x03\xb0\x00\x00
+SEQ10 (H\x01\x0c
+SEQ11 \x03\xb0\x00\x00
  
 拓司\n　「あんたは、『俺の世界』が夢だという！\p　でも、俺は『あん\n　　たの世界』について何も知らない！\p　自分が誰なのかもわか\n　　らないんだ！\p　なのにこの世界が本物だって信じろっていう\n　　のか？！」@
 教授\n　「……」@
@@ -71,14 +71,14 @@ SEQ05 \x03\xb0\x00\x00
 
 \x00\x00\x00  
 SEQ01 \x9a\x05
-SEQ13 
-SEQ04  >\x03\x00 
-SEQ12  l\x03\x00 
-SEQ06 SCE200_004\x00 \x94\x08\x00 
+SEQ14 
+SEQ08 " >\x03\x00 
+SEQ08  l\x03\x00 
+SEQ05 SCE200_004\x00 \x94\x08\x00 
 SEQ07  
 SEQ01 
-SEQ03 ,H\x01\x0c
-SEQ05 \x03\xcb\x00\x00
+SEQ10 ,H\x01\x0c
+SEQ11 \x03\xcb\x00\x00
  
 教授\n　「同情するよ」@
 拓司\n　「同情なんかいらない！\p　答をくれ！\p　現実と妄想の線引きを\n　　くれ！\p　答だ！\p　必要なのは答なんだッ！」@
@@ -90,14 +90,14 @@ SEQ05 \x03\xcb\x00\x00
 
 \x00  
 SEQ01 \xd8\x08
-SEQ13 
-SEQ04  >\x03\x00 
-SEQ12  l\x03\x00 
-SEQ06 SCE200_005\x00 >\x0c\x00 
+SEQ14 
+SEQ08 " >\x03\x00 
+SEQ08  l\x03\x00 
+SEQ05 SCE200_005\x00 >\x0c\x00 
 SEQ07  
 SEQ01 
-SEQ03 0H\x01\x0c
-SEQ05 \x03\xa3\x00\x00
+SEQ10 0H\x01\x0c
+SEQ11 \x03\xa3\x00\x00
  
 教授\n　「答はどこにもない。\p君の中にしかないんだ」@
 拓司\n　「……」@
@@ -107,28 +107,28 @@ SEQ05 \x03\xa3\x00\x00
 
 \x00  
 SEQ01 \x82\x0c
-SEQ13 
-SEQ04  >\x03\x00 
-SEQ12  l\x03\x00 
-SEQ06 SCE200_006\x00 H\x0f\x00 
+SEQ14 
+SEQ08 " >\x03\x00 
+SEQ08  l\x03\x00 
+SEQ05 SCE200_006\x00 H\x0f\x00 
 SEQ07  
 SEQ01 
-SEQ03 4H\x01\x0c
-SEQ05 \x032\x00\x00
+SEQ10 4H\x01\x0c
+SEQ11 \x032\x00\x00
  
 教授\n　「あるいは、私というのは、どこかにいる別の私が見ている夢\n　　にすぎないのかもしれない。\pさらには夢を見ているのは私で\n　　すらなく、他の誰かなのかもしれない」@
 拓司\n　「……」\
 
 \x00\x00\x00  
 SEQ01 \x8c\x0f
-SEQ13 
-SEQ04  >\x03\x00 
-SEQ12  l\x03\x00 
-SEQ06 SCE200_007\x00 \x8e\x10\x00 
+SEQ14 
+SEQ08 " >\x03\x00 
+SEQ08  l\x03\x00 
+SEQ05 SCE200_007\x00 \x8e\x10\x00 
 SEQ07  
 SEQ01 
-SEQ03 8H\x01\x0c
-SEQ05 \x03\xe8\x00\x00
+SEQ10 8H\x01\x0c
+SEQ11 \x03\xe8\x00\x00
  
 教授\n　「答など、ないのだ。\pなにが現実でなにが妄想なのかを決める\n　　のは他人ではなく、本人なのだ。\p私はこう考えるよ。@
 　　－－合理的な世界こそが現実であると。\pいいかね、私だって\n　　夢くらいじゃ見る。\pしかし、それが『夢の世界』であると…\n　　…『現実の世界』ではないと認識するのは、夢の中で起こる\n　　ことが非合理的て脈絡を持たないからだ。\p私は医者だ。@
@@ -139,14 +139,14 @@ SEQ05 \x03\xe8\x00\x00
 
 \x00\x00\x00  
 SEQ01 \xd2\x10
-SEQ13 
-SEQ04  >\x03\x00 
-SEQ12  l\x03\x00 
-SEQ06 SCE200_008\x00 \xac\x14\x00 
+SEQ14 
+SEQ08 " >\x03\x00 
+SEQ08  l\x03\x00 
+SEQ05 SCE200_008\x00 \xac\x14\x00 
 SEQ07  
 SEQ01 
-SEQ03 <H\x01\x0c
-SEQ05 \x03\x95\x00\x00
+SEQ10 <H\x01\x0c
+SEQ11 \x03\x95\x00\x00
  
 教授\n　「君が定義する世界とはなにかね？\p　女が自分の思い通りに動\n　　くことかね？\p　自殺波動かね？」@
 拓司\n　「いえ……」@
@@ -157,14 +157,14 @@ SEQ05 \x03\x95\x00\x00
 
 \x00  
 SEQ01 \xf0\x14
-SEQ13 
-SEQ04  >\x03\x00 
-SEQ12  l\x03\x00 
-SEQ06 SCE200_009\x00 ~\x17\x00 
+SEQ14 
+SEQ08 " >\x03\x00 
+SEQ08  l\x03\x00 
+SEQ05 SCE200_009\x00 ~\x17\x00 
 SEQ07  
 SEQ01 
-SEQ03 @H\x01\x0c
-SEQ05 \x03\x92\x00\x00
+SEQ10 @H\x01\x0c
+SEQ11 \x03\x92\x00\x00
  
 /*▲SE01　再生（再生終わるまで待たずに進む）*/\a2,1,1,1,ザザザ……ザザッ……\pザアザザザ……ザアアアアア……@
 ザアザアアアアアアア……@
@@ -178,14 +178,14 @@ SEQ05 \x03\x92\x00\x00
 
 \x00  
 SEQ01 \xc2\x17
-SEQ13 
-SEQ04  >\x03\x00 
-SEQ12  l\x03\x00 
-SEQ06 SCE200_010\x00 D\x1a\x00 
+SEQ14 
+SEQ08 " >\x03\x00 
+SEQ08  l\x03\x00 
+SEQ05 SCE200_010\x00 D\x1a\x00 
 SEQ07  
 SEQ01 
-SEQ03 DH\x01\x0c
-SEQ05 \x03\x97\x00\x00
+SEQ10 DH\x01\x0c
+SEQ11 \x03\x97\x00\x00
  
 教授\n　「少し眠るといい」@
 拓司\n　「俺は……眠るのが怖い」@
@@ -194,14 +194,14 @@ SEQ05 \x03\x97\x00\x00
 
 \x00\x00\x00  
 SEQ01 \x88\x1a
-SEQ13 
-SEQ04  >\x03\x00 
-SEQ12  l\x03\x00 
-SEQ06 SCE200_011\x00 \x1e\x1d\x00 
+SEQ14 
+SEQ08 " >\x03\x00 
+SEQ08  l\x03\x00 
+SEQ05 SCE200_011\x00 \x1e\x1d\x00 
 SEQ07  
 SEQ01 
-SEQ03 HH\x01\x0c
-SEQ05 \x039\x00\x00
+SEQ10 HH\x01\x0c
+SEQ11 \x039\x00\x00
  
 教授\n　「そう思っているだけだ。\p夢とはそういうものだ。\p夢の中にい\n　　る限り、セットの継ぎ目を見つけることはできない。@
 　　目覚めて、客観的に見ることで、矛盾が浮かび上がってくる\n　　のだよ」@
@@ -209,14 +209,14 @@ SEQ05 \x039\x00\x00
 
 \x00  
 SEQ01 b\x1d
-SEQ13 
-SEQ04  >\x03\x00 
-SEQ12  l\x03\x00 
-SEQ06 SCE200_012\x00 \x80\x1e\x00 
+SEQ14 
+SEQ08 " >\x03\x00 
+SEQ08  l\x03\x00 
+SEQ05 SCE200_012\x00 \x80\x1e\x00 
 SEQ07  
 SEQ01 
-SEQ03 LH\x01\x0c
-SEQ05 \x030\x00\x00
+SEQ10 LH\x01\x0c
+SEQ11 \x030\x00\x00
  
 眠れ俺。@
 眠れ俺。@
@@ -229,19 +229,19 @@ SEQ05 \x030\x00\x00
 
 \x00\x00\x00  
 SEQ01 \xc4\x1e
-SEQ13 
-SEQ04  >\x03\x00 
-SEQ12  l\x03\x00 
-SEQ10   
+SEQ14 
+SEQ08 " >\x03\x00 
+SEQ08  l\x03\x00 
+SEQ06   
 SEQ01 
-SEQ12 \x0c
-SEQ04  \x00\x01\x00 
+SEQ08 \x0c
+SEQ08 " \x00\x01\x00 
 SEQ02 SeStop SPC01 \xe4\x1f\x00 
-SEQ10   
+SEQ06   
 SEQ01 \xc8\x00
-SEQ13 
-SEQ04  d\x00\x00 
-SEQ12  \x8e\x00\x00 
-SEQ10  >\x03\x00 
-SEQ12 \x03\x03\x00\x00TextClose SPC02 @ \x00 
-ENDF
+SEQ14 
+SEQ08 " d\x00\x00 
+SEQ08  \x8e\x00\x00 
+SEQ06  >\x03\x00 
+SEQ04 TextClose SPC02 @ \x00 
+FEND

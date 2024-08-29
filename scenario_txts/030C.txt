@@ -1,25 +1,25 @@
-STRF
+FSTR
 \x8c\x1e\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00&\x18\x00\x03\x03\x00\x00SCE030_001\x00 \x06\x00\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x80>
-SEQ13 
-SEQ05 \x03\x0f\x00\x00
+SEQ10 \x80>
+SEQ14 
+SEQ11 \x03\x0f\x00\x00
  
 \n\n\n\n\n\n\n\n　　　　　　　　　　　　　『屋上』\
 
 \x00  
 SEQ01 J\x00
-SEQ13 
-SEQ04 
-SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 \xa6\x00\x00 
+SEQ14 
+SEQ08 "
+SEQ13 .\\Data\\Script\\TextFunc.Fob SPC01 \xa6\x00\x00 
 SEQ02 TextOn SPC01 \xd4\x00\x00 
-SEQ06 SCE030_002\x00 \xf0\x00\x00 
+SEQ05 SCE030_002\x00 \xf0\x00\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x84>
-SEQ13 
-SEQ05 \x03.\x00\x00
+SEQ10 \x84>
+SEQ14 
+SEQ11 \x03.\x00\x00
  
 　ぱーん@
 　ぱーん@
@@ -29,31 +29,31 @@ SEQ05 \x03.\x00\x00
 
 \x00\x00\x00  
 SEQ01 4\x01
-SEQ13 
-SEQ04  \xa6\x00\x00 
-SEQ12  \xd4\x00\x00 
-SEQ10  \xa6\x00\x00 
-SEQ12 \x03\x04\x00\x00TextWindowOff SPC02 2\x02\x00 
-SEQ10   
+SEQ14 
+SEQ08 " \xa6\x00\x00 
+SEQ08  \xd4\x00\x00 
+SEQ06  \xa6\x00\x00 
+SEQ03 TextWindowOff SPC02 2\x02\x00 
+SEQ06   
 SEQ01 \x08\x01
-SEQ13 
-SEQ04 
-SEQ08 .\\Data\\Script\\Bgm.Fob SPC02 p\x02\x00 
+SEQ14 
+SEQ08 "
+SEQ12 .\\Data\\Script\\Bgm.Fob SPC02 p\x02\x00 
 SEQ02 PlayCD SPC01 \x9a\x02\x00 
-SEQ10   
+SEQ06   
 SEQ01 \x08\x00
-SEQ13 
-SEQ04 
-SEQ08 .\\Data\\Script\\Bg.Fob SPC03 \xd0\x02\x00 
-SEQ12 \x03\x04\x00\x00BgNormalFadeIn SPC01 \xfa\x02\x00 
-SEQ10  \xa6\x00\x00 
-SEQ12 \x03\x04\x00\x00TextWindowOn SPC03 *\x03\x00 
-SEQ06 SCE030_003\x00 N\x03\x00 
+SEQ14 
+SEQ08 "
+SEQ12 .\\Data\\Script\\Bg.Fob SPC03 \xd0\x02\x00 
+SEQ03 BgNormalFadeIn SPC01 \xfa\x02\x00 
+SEQ06  \xa6\x00\x00 
+SEQ03 TextWindowOn SPC03 *\x03\x00 
+SEQ05 SCE030_003\x00 N\x03\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x88>
-SEQ13 
-SEQ05 \x03Q\x00\x00
+SEQ10 \x88>
+SEQ14 
+SEQ11 \x03Q\x00\x00
  
 　ぱーん@
 　ぱーん@
@@ -64,15 +64,15 @@ SEQ05 \x03Q\x00\x00
 
 \x00\x00\x00  
 SEQ01 \x92\x03
-SEQ13 
-SEQ04  \xa6\x00\x00 
-SEQ12  \xd4\x00\x00 
-SEQ06 SCE030_004\x00 \x10\x05\x00 
+SEQ14 
+SEQ08 " \xa6\x00\x00 
+SEQ08  \xd4\x00\x00 
+SEQ05 SCE030_004\x00 \x10\x05\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x8c>
-SEQ13 
-SEQ05 \x03w\x00\x00
+SEQ10 \x8c>
+SEQ14 
+SEQ11 \x03w\x00\x00
  
 \n　男子学生の頭部が、スイカのように砕け散る。@
 　カンナはライフルをスライドさせて、今度は女子学生をターゲッ\n　ティングした。@
@@ -83,15 +83,15 @@ SEQ05 \x03w\x00\x00
 
 \x00\x00\x00  
 SEQ01 T\x05
-SEQ13 
-SEQ04  \xa6\x00\x00 
-SEQ12  \xd4\x00\x00 
-SEQ06 SCE030_005\x00 j\x07\x00 
+SEQ14 
+SEQ08 " \xa6\x00\x00 
+SEQ08  \xd4\x00\x00 
+SEQ05 SCE030_005\x00 j\x07\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x90>
-SEQ13 
-SEQ05 \x03I\x00\x00
+SEQ10 \x90>
+SEQ14 
+SEQ11 \x03I\x00\x00
  
 　いってカンナは振り返り、今度は銃口を拓司に向けた。@
 \nカンナ\n　「クイズです」@
@@ -102,20 +102,20 @@ SEQ05 \x03I\x00\x00
 
 \x00  
 SEQ01 \xae\x07
-SEQ13 
-SEQ04  \xa6\x00\x00 
-SEQ12  \xd4\x00\x00 
-SEQ10   
+SEQ14 
+SEQ08 " \xa6\x00\x00 
+SEQ08  \xd4\x00\x00 
+SEQ06   
 SEQ01 \xc8\x00
-SEQ13 
-SEQ04  \xd0\x02\x00 
-SEQ12 \x03\x04\x00\x00BgAutoFadeIn SPC03 2\t\x00 
-SEQ06 SCE030_006\x00 V\t\x00 
+SEQ14 
+SEQ08 " \xd0\x02\x00 
+SEQ03 BgAutoFadeIn SPC03 2\t\x00 
+SEQ05 SCE030_006\x00 V\t\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x94>
-SEQ13 
-SEQ05 \x03\x7f\x00\x00
+SEQ10 \x94>
+SEQ14 
+SEQ11 \x03\x7f\x00\x00
  
 拓司はそれを無視して、いった。@
 \n拓司\n　「どうしてだ？\p　どうして朝、おれに声をかけた？\p　互いの世界\n　　には干渉しない。\pそういう『約束』だったんじゃないか？」@
@@ -128,15 +128,15 @@ SEQ05 \x03\x7f\x00\x00
 
 \x00  
 SEQ01 \x9a\t
-SEQ13 
-SEQ04  \xa6\x00\x00 
-SEQ12  \xd4\x00\x00 
-SEQ06 SCE030_007\x00 \xd0\x0b\x00 
+SEQ14 
+SEQ08 " \xa6\x00\x00 
+SEQ08  \xd4\x00\x00 
+SEQ05 SCE030_007\x00 \xd0\x0b\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x98>
-SEQ13 
-SEQ05 \x03:\x00\x00
+SEQ10 \x98>
+SEQ14 
+SEQ11 \x03:\x00\x00
  
 拓司\n　「ふざけるな」@
 カンナ\n　「絞めて」@
@@ -149,15 +149,15 @@ SEQ05 \x03:\x00\x00
 
 \x00  
 SEQ01 \x14\x0c
-SEQ13 
-SEQ04  \xa6\x00\x00 
-SEQ12  \xd4\x00\x00 
-SEQ06 SCE030_008\x00 6\r\x00 
+SEQ14 
+SEQ08 " \xa6\x00\x00 
+SEQ08  \xd4\x00\x00 
+SEQ05 SCE030_008\x00 6\r\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x9c>
-SEQ13 
-SEQ05 \x03\x81\x00\x00
+SEQ10 \x9c>
+SEQ14 
+SEQ11 \x03\x81\x00\x00
  
 　細い。\p指先が余るくらい、カンナの首は細い。@
 　掌の中、皮膚の下、肉の奥、そこをごくり、と嚥下されていく唾\n　液の感覚。@
@@ -176,20 +176,20 @@ SEQ05 \x03\x81\x00\x00
 
 \x00\x00\x00  
 SEQ01 z\r
-SEQ13 
-SEQ04  \xa6\x00\x00 
-SEQ12  \xd4\x00\x00 
-SEQ10   
+SEQ14 
+SEQ08 " \xa6\x00\x00 
+SEQ08  \xd4\x00\x00 
+SEQ06   
 SEQ01 \t\x00
-SEQ13 
-SEQ04  \xd0\x02\x00 
-SEQ12  2\t\x00 
-SEQ06 SCE030_009\x00 \xec\x0f\x00 
+SEQ14 
+SEQ08 " \xd0\x02\x00 
+SEQ08  2\t\x00 
+SEQ05 SCE030_009\x00 \xec\x0f\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xa0>
-SEQ13 
-SEQ05 \x03\xa3\x00\x00
+SEQ10 \xa0>
+SEQ14 
+SEQ11 \x03\xa3\x00\x00
  
 　カンナはコンクリの上にへたりこみ、げほげほと咽せた。\pぜいぜ\nいという荒い息に、ときおりうええ、という嗚咽が混じる。\p目の端\nにはうっすらと涙がにじんでいる。\p華奢な肩が激しく上下する。@
 　汗ばんだ頬に、髪の毛が張り付いている。@
@@ -200,15 +200,15 @@ SEQ05 \x03\xa3\x00\x00
 
 \x00\x00\x00  
 SEQ01 0\x10
-SEQ13 
-SEQ04  \xa6\x00\x00 
-SEQ12  \xd4\x00\x00 
-SEQ06 SCE030_010\x00 \xf6\x12\x00 
+SEQ14 
+SEQ08 " \xa6\x00\x00 
+SEQ08  \xd4\x00\x00 
+SEQ05 SCE030_010\x00 \xf6\x12\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xa4>
-SEQ13 
-SEQ05 \x03r\x00\x00
+SEQ10 \xa4>
+SEQ14 
+SEQ11 \x03r\x00\x00
  
 \n哄笑を放つカンナに、拓司はゆっくりと身体を重ねた。@
 身体の下で、柔らかい肉の塊が、ハ、ハ、ハ、と痙攣していた。@
@@ -218,66 +218,66 @@ SEQ05 \x03r\x00\x00
 
 \x00\x00\x00  
 SEQ01 :\x13
-SEQ13 
-SEQ04  \xa6\x00\x00 
-SEQ12  \xd4\x00\x00 
-SEQ10  \xa6\x00\x00 
-SEQ12  2\x02\x00 
-SEQ10   
+SEQ14 
+SEQ08 " \xa6\x00\x00 
+SEQ08  \xd4\x00\x00 
+SEQ06  \xa6\x00\x00 
+SEQ08  2\x02\x00 
+SEQ06   
 SEQ01 \xca\x00
-SEQ13 
-SEQ04  \xd0\x02\x00 
+SEQ14 
+SEQ08 " \xd0\x02\x00 
 SEQ02 BgOn SPC03 |\x15\x00 
-SEQ10   
+SEQ06   
 SEQ01 \x01\x00
-SEQ13 
-SEQ04 
-SEQ11 .\\Data\\Script\\TextFunc.fob SPC01 \xb2\x15\x00 
-SEQ12 \x03\x03\x00\x00WaitTime SPC03 \xe0\x15\x00 
-SEQ10   
+SEQ14 
+SEQ08 "
+SEQ13 .\\Data\\Script\\TextFunc.fob SPC01 \xb2\x15\x00 
+SEQ04 WaitTime SPC03 \xe0\x15\x00 
+SEQ06   
 SEQ01 \t\x00
-SEQ13 
-SEQ04  \xd0\x02\x00 
-SEQ12  |\x15\x00 
-SEQ10   
+SEQ14 
+SEQ08 " \xd0\x02\x00 
+SEQ08  |\x15\x00 
+SEQ06   
 SEQ01 \x01\x00
-SEQ13 
-SEQ04  \xb2\x15\x00 
-SEQ12  \xe0\x15\x00 
-SEQ10   
+SEQ14 
+SEQ08 " \xb2\x15\x00 
+SEQ08  \xe0\x15\x00 
+SEQ06   
 SEQ01 \xca\x00
-SEQ13 
-SEQ04  \xd0\x02\x00 
-SEQ12  |\x15\x00 
-SEQ10   
+SEQ14 
+SEQ08 " \xd0\x02\x00 
+SEQ08  |\x15\x00 
+SEQ06   
 SEQ01 \x01\x00
-SEQ13 
-SEQ04  \xb2\x15\x00 
-SEQ12  \xe0\x15\x00 
-SEQ10   
+SEQ14 
+SEQ08 " \xb2\x15\x00 
+SEQ08  \xe0\x15\x00 
+SEQ06   
 SEQ01 \t\x00
-SEQ13 
-SEQ04  \xd0\x02\x00 
-SEQ12  |\x15\x00 
-SEQ10   
+SEQ14 
+SEQ08 " \xd0\x02\x00 
+SEQ08  |\x15\x00 
+SEQ06   
 SEQ01 \x01\x00
-SEQ13 
-SEQ04  \xb2\x15\x00 
-SEQ12  \xe0\x15\x00 
-SEQ10   
+SEQ14 
+SEQ08 " \xb2\x15\x00 
+SEQ08  \xe0\x15\x00 
+SEQ06   
 SEQ01 <\x00
-SEQ13 
-SEQ04  \xb2\x15\x00 
-SEQ12  \xe0\x15\x00 
-SEQ10   
+SEQ14 
+SEQ08 " \xb2\x15\x00 
+SEQ08  \xe0\x15\x00 
+SEQ06   
 SEQ01 \xc8\x00
-SEQ13 
-SEQ04  \xd0\x02\x00 
-SEQ12  \xfa\x02\x00 
-SEQ10  p\x02\x00 
+SEQ14 
+SEQ08 " \xd0\x02\x00 
+SEQ08  \xfa\x02\x00 
+SEQ06  p\x02\x00 
 SEQ02 StopCD SPC01 \xac\x17\x00 
-SEQ10  \xa6\x00\x00 
-SEQ12 \x03\x05\x00\x00TextWindowOnDirect SPC01 \xd4\x17\x00 
-SEQ10  \xa6\x00\x00 
-SEQ12 \x03\x03\x00\x00TextClose SPC02 \x08\x18\x00 
-ENDF
+SEQ06  \xa6\x00\x00 
+SEQ08 \x03\x05\x00\x00TextWindowOnDirect SPC01 \xd4\x17\x00 
+SEQ06  \xa6\x00\x00 
+SEQ04 TextClose SPC02 \x08\x18\x00 
+FEND

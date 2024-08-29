@@ -1,31 +1,31 @@
-STRF
+FSTR
 \x82\x07\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xf2\x05\x00\x03\x03\x00\x00SCE108_001\x00 \x06\x00\x00 
 SEQ07  
 SEQ01 
-SEQ03 `\xb8
-SEQ13 
-SEQ05 \x03\x11\x00\x00
+SEQ10 `\xb8
+SEQ14 
+SEQ11 \x03\x11\x00\x00
  
 \n\n\n\n\n\n\n\n\n\n　　　　　　　　　　　　　『６日目』\
 
 \x00\x00\x00  
 SEQ01 J\x00
-SEQ13 
-SEQ04 
-SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 \xae\x00\x00 
+SEQ14 
+SEQ08 "
+SEQ13 .\\Data\\Script\\TextFunc.Fob SPC01 \xae\x00\x00 
 SEQ02 TextOn SPC01 \xdc\x00\x00 
-SEQ10   
+SEQ06   
 SEQ01 \x0c\x01
-SEQ13 
-SEQ04 
-SEQ08 .\\Data\\Script\\Bgm.Fob SPC02 \x12\x01\x00 
+SEQ14 
+SEQ08 "
+SEQ12 .\\Data\\Script\\Bgm.Fob SPC02 \x12\x01\x00 
 SEQ02 PlayCD SPC01 <\x01\x00 
-SEQ06 SCE108_002\x00 X\x01\x00 
+SEQ05 SCE108_002\x00 X\x01\x00 
 SEQ07  
 SEQ01 
-SEQ03 d\xb8
-SEQ13 
-SEQ05 \x03\x87\x00\x00
+SEQ10 d\xb8
+SEQ14 
+SEQ11 \x03\x87\x00\x00
  
 早桃の風邪は快方に向かっている。@
 \nめだった衝突はない。\pなたねは淡々と、それまで通り食糧と水を\n配給した。\pしかし、なたねと一同のあいだに生まれた亀裂は、わ\nずかも回復していない。@
@@ -35,15 +35,15 @@ SEQ05 \x03\x87\x00\x00
 
 \x00\x00\x00  
 SEQ01 \x9c\x01
-SEQ13 
-SEQ04  \xae\x00\x00 
-SEQ12  \xdc\x00\x00 
-SEQ06 SCE108_003\x00 \xf2\x03\x00 
+SEQ14 
+SEQ08 " \xae\x00\x00 
+SEQ08  \xdc\x00\x00 
+SEQ05 SCE108_003\x00 \xf2\x03\x00 
 SEQ07  
 SEQ01 
-SEQ03 h\xb8
-SEQ13 
-SEQ05 \x03V\x00\x00
+SEQ10 h\xb8
+SEQ14 
+SEQ11 \x03V\x00\x00
  
 この日が誕生日だったというカンナのために、夜、一同は歌を歌\nった。@
 馬鹿馬鹿しいとは思ったが、そういったことこそが、いま、必要\nなものに思えた。@
@@ -52,9 +52,9 @@ SEQ05 \x03V\x00\x00
 
 \x00  
 SEQ01 6\x04
-SEQ13 
-SEQ04  \xae\x00\x00 
-SEQ12  \xdc\x00\x00 
-SEQ10  \xae\x00\x00 
-SEQ12 \x03\x03\x00\x00TextClose SPC02 \xd4\x05\x00 
-ENDF
+SEQ14 
+SEQ08 " \xae\x00\x00 
+SEQ08  \xdc\x00\x00 
+SEQ06  \xae\x00\x00 
+SEQ04 TextClose SPC02 \xd4\x05\x00 
+FEND

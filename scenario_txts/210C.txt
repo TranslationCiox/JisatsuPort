@@ -1,9 +1,9 @@
-STRF
+FSTR
 .\x10\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\x10\r\x00\x03\x03\x00\x00SCE210_001\x00 \x06\x00\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xc0W\x01\x0c
-SEQ05 \x03B\x00\x00
+SEQ10 \xc0W\x01\x0c
+SEQ11 \x03B\x00\x00
  
 教授はいった。@
 この世界は物理法則と常識が支配する世界だと。@
@@ -13,15 +13,15 @@ SEQ05 \x03B\x00\x00
 
 \x00\x00\x00  
 SEQ01 J\x00
-SEQ13 
-SEQ04 
-SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 r\x01\x00 
+SEQ14 
+SEQ08 "
+SEQ13 .\\Data\\Script\\TextFunc.Fob SPC01 r\x01\x00 
 SEQ02 TextOn SPC01 \xa0\x01\x00 
-SEQ06 SCE210_002\x00 \xbc\x01\x00 
+SEQ05 SCE210_002\x00 \xbc\x01\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xc4W\x01\x0c
-SEQ05 \x03o\x00\x00
+SEQ10 \xc4W\x01\x0c
+SEQ11 \x03o\x00\x00
  
 拓司\n　「でたらめだ。\pそんなＳＦみたいな話を信じるわけにはいかな\n　　い。\p物理法則こそが、唯一の定点だ。@
 　　それを失ったら、おれはもうなにも信じられなくなってしま\n　　う。\pだからこそ、『教授が語る世界』を、おれは真実と考え\n　　る」@
@@ -32,14 +32,14 @@ SEQ05 \x03o\x00\x00
 
 \x00\x00\x00  
 SEQ01 \x00\x02
-SEQ13 
-SEQ04  r\x01\x00 
-SEQ12  \xa0\x01\x00 
-SEQ06 SCE210_003\x00 \xf6\x03\x00 
+SEQ14 
+SEQ08 " r\x01\x00 
+SEQ08  \xa0\x01\x00 
+SEQ05 SCE210_003\x00 \xf6\x03\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xc8W\x01\x0c
-SEQ05 \x03G\x00\x00
+SEQ10 \xc8W\x01\x0c
+SEQ11 \x03G\x00\x00
  
 拓司\n　「放っておいてくれ。\pおれは教授を信じて、治療を受ける。@
 　　いかれた頭を元通りに戻すんだ！」@
@@ -50,14 +50,14 @@ SEQ05 \x03G\x00\x00
 
 \x00\x00\x00  
 SEQ01 :\x04
-SEQ13 
-SEQ04  r\x01\x00 
-SEQ12  \xa0\x01\x00 
-SEQ06 SCE210_004\x00 \x90\x05\x00 
+SEQ14 
+SEQ08 " r\x01\x00 
+SEQ08  \xa0\x01\x00 
+SEQ05 SCE210_004\x00 \x90\x05\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xccW\x01\x0c
-SEQ05 \x03\xa5\x00\x00
+SEQ10 \xccW\x01\x0c
+SEQ11 \x03\xa5\x00\x00
  
 /*▲SE01　ループ再生（次の停止まで）*/\a2,1,1,1,\a6,0,0,0,ザザザ……ザザッ……\pザアザザザ……ザアアアアア……@
 ザアザアアアアアアア……@
@@ -72,14 +72,14 @@ SEQ05 \x03\xa5\x00\x00
 
 \x00\x00\x00  
 SEQ01 \xd4\x05
-SEQ13 
-SEQ04  r\x01\x00 
-SEQ12  \xa0\x01\x00 
-SEQ06 SCE210_005\x00 \xa2\x08\x00 
+SEQ14 
+SEQ08 " r\x01\x00 
+SEQ08  \xa0\x01\x00 
+SEQ05 SCE210_005\x00 \xa2\x08\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xd0W\x01\x0c
-SEQ05 \x03Z\x00\x00
+SEQ10 \xd0W\x01\x0c
+SEQ11 \x03Z\x00\x00
  
 /*▲SE01　ループ再生（次の停止まで）*/\a2,1,1,1,\a6,0,0,0,ザザザ……ザザッ……\pザアザザザ……ザアアアアア……@
 ザアザアアアアアアア……@
@@ -91,14 +91,14 @@ SEQ05 \x03Z\x00\x00
 
 \x00\x00\x00  
 SEQ01 \xe6\x08
-SEQ13 
-SEQ04  r\x01\x00 
-SEQ12  \xa0\x01\x00 
-SEQ06 SCE210_006\x00 \x88\n\x00 
+SEQ14 
+SEQ08 " r\x01\x00 
+SEQ08  \xa0\x01\x00 
+SEQ05 SCE210_006\x00 \x88\n\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xd4W\x01\x0c
-SEQ05 \x03F\x00\x00
+SEQ10 \xd4W\x01\x0c
+SEQ11 \x03F\x00\x00
  
 /*▲SE01　ループ再生（次の停止まで）*/\a2,1,1,1,\a6,0,0,0,ザザザ……ザザッ……\pザアザザザ……ザアアアアア……@
 ザアザアアアアアアア……@
@@ -106,21 +106,21 @@ SEQ05 \x03F\x00\x00
 
 \x00\x00\x00  
 SEQ01 \xcc\n
-SEQ13 
-SEQ04  r\x01\x00 
-SEQ12  \xa0\x01\x00 
-SEQ10   
+SEQ14 
+SEQ08 " r\x01\x00 
+SEQ08  \xa0\x01\x00 
+SEQ06   
 SEQ01 
-SEQ12 \x0c
-SEQ04 
-SEQ08 .\\Data\\Script\\Bgm.Fob SPC02 8\x0c\x00 
+SEQ08 \x0c
+SEQ08 "
+SEQ12 .\\Data\\Script\\Bgm.Fob SPC02 8\x0c\x00 
 SEQ02 SeStop SPC01 b\x0c\x00 
-SEQ10   
+SEQ06   
 SEQ01 \xc8\x00
-SEQ13 
-SEQ04 
-SEQ08 .\\Data\\Script\\Bg.Fob SPC03 \x98\x0c\x00 
-SEQ12 \x03\x04\x00\x00BgAutoFadeIn SPC03 \xc2\x0c\x00 
-SEQ10  r\x01\x00 
-SEQ12 \x03\x03\x00\x00TextClose SPC02 \xf2\x0c\x00 
-ENDF
+SEQ14 
+SEQ08 "
+SEQ12 .\\Data\\Script\\Bg.Fob SPC03 \x98\x0c\x00 
+SEQ03 BgAutoFadeIn SPC03 \xc2\x0c\x00 
+SEQ06  r\x01\x00 
+SEQ04 TextClose SPC02 \xf2\x0c\x00 
+FEND

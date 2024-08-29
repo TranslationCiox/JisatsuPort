@@ -1,10 +1,10 @@
-STRF
+FSTR
 \x88\x1a\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\x02\x16\x00\x03\x03\x00\x00SCE026_001\x00 \x06\x00\x00 
 SEQ07  
 SEQ01 
-SEQ03 @8
-SEQ13 
-SEQ05 \x03\xbf\x00\x00
+SEQ10 @8
+SEQ14 
+SEQ11 \x03\xbf\x00\x00
  
 /*　▲SE09　一回再生　*/\a2,0,9,0,　がらがらと、拓司の灰色の世界が一部スライドして、そこに新\n　たな何かが現れた。@
 \n\a4,0,0,0,/*　■CG08　表示（クロスフェード）　*/\a7,-2,-2,0,\a0,7,2,0,\a6,-2,0,0,御堂\n　「おはよーございまーす」@
@@ -17,16 +17,16 @@ SEQ05 \x03\xbf\x00\x00
 
   
 SEQ01 J\x00
-SEQ13 
-SEQ04 
-SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 f\x03\x00 
+SEQ14 
+SEQ08 "
+SEQ13 .\\Data\\Script\\TextFunc.Fob SPC01 f\x03\x00 
 SEQ02 TextOn SPC01 \x94\x03\x00 
-SEQ06 SCE026_002\x00 \xb0\x03\x00 
+SEQ05 SCE026_002\x00 \xb0\x03\x00 
 SEQ07  
 SEQ01 
-SEQ03 D8
-SEQ13 
-SEQ05 \x03o\x00\x00
+SEQ10 D8
+SEQ14 
+SEQ11 \x03o\x00\x00
  
 御堂\n　「ぎりぎりセーフっすかね、センセイ？」@
 \n　御堂は笑いながら、教室に足を踏み入れようとした。@
@@ -38,21 +38,21 @@ SEQ05 \x03o\x00\x00
 
 \x00  
 SEQ01 \xf4\x03
-SEQ13 
-SEQ04  f\x03\x00 
-SEQ12  \x94\x03\x00 
-SEQ10   
+SEQ14 
+SEQ08 " f\x03\x00 
+SEQ08  \x94\x03\x00 
+SEQ06   
 SEQ01 \n\x01
-SEQ13 
-SEQ04 
-SEQ08 .\\Data\\Script\\Bgm.Fob SPC02 \x04\x06\x00 
+SEQ14 
+SEQ08 "
+SEQ12 .\\Data\\Script\\Bgm.Fob SPC02 \x04\x06\x00 
 SEQ02 PlayCD SPC01 .\x06\x00 
-SEQ06 SCE026_003\x00 J\x06\x00 
+SEQ05 SCE026_003\x00 J\x06\x00 
 SEQ07  
 SEQ01 
-SEQ03 H8
-SEQ13 
-SEQ05 \x03r\x00\x00
+SEQ10 H8
+SEQ14 
+SEQ11 \x03r\x00\x00
  
 錦城\n　「出て行きなさい、御堂くん」@
 御堂\n　「……」@
@@ -66,15 +66,15 @@ SEQ05 \x03r\x00\x00
 
 \x00\x00\x00  
 SEQ01 \x8e\x06
-SEQ13 
-SEQ04  f\x03\x00 
-SEQ12  \x94\x03\x00 
-SEQ06 SCE026_004\x00 \x90\x08\x00 
+SEQ14 
+SEQ08 " f\x03\x00 
+SEQ08  \x94\x03\x00 
+SEQ05 SCE026_004\x00 \x90\x08\x00 
 SEQ07  
 SEQ01 
-SEQ03 L8
-SEQ13 
-SEQ05 \x03`\x00\x00
+SEQ10 L8
+SEQ14 
+SEQ11 \x03`\x00\x00
  
 御堂\n　「先生、日向が丘に一人住まいなんですよね？\p　住所、知ってる\n　　んですよ」@
 錦城\n　「……」@
@@ -84,26 +84,26 @@ SEQ05 \x03`\x00\x00
 
 \x00\x00\x00  
 SEQ01 \xd4\x08
-SEQ13 
-SEQ04  f\x03\x00 
-SEQ12  \x94\x03\x00 
-SEQ06 SCE026_005\x00 \x8e\n\x00 
+SEQ14 
+SEQ08 " f\x03\x00 
+SEQ08  \x94\x03\x00 
+SEQ05 SCE026_005\x00 \x8e\n\x00 
 SEQ07  
 SEQ01 
-SEQ03 P8
-SEQ13 
-SEQ05  \x04\x06\x00 
+SEQ10 P8
+SEQ14 
+SEQ11  \x04\x06\x00 
 SEQ02 StopCD SPC01 \xde\n\x00 
-SEQ10   
+SEQ06   
 SEQ01 \x00\x00\x00
-SEQ13 
-SEQ04   \x04\x00\x00\r\x00\x00 \x0b\x00
-SEQ13 
-SEQ04   \x08\x00\x00\r\x00\x00 \x00\x00\x00
-SEQ13 
-SEQ04  \x04\x06\x00 
-SEQ12 \x03\x03\x00\x00SePlayEx SPC03 T\x0b\x00 
-SEQ10 \x03\x9f\x00\x00
+SEQ14 
+SEQ08 "  \x04\x00\x00\r\x00\x00 \x0b\x00
+SEQ14 
+SEQ08 "  \x08\x00\x00\r\x00\x00 \x00\x00\x00
+SEQ14 
+SEQ08 " \x04\x06\x00 
+SEQ04 SePlayEx SPC03 T\x0b\x00 
+SEQ06 \x03\x9f\x00\x00
  
 　パン！@
 　乾いた音が教室に響き渡った。\pそれは錦城教諭が、御堂の頬を容\n　赦なく張り飛ばした音だった。@
@@ -115,15 +115,15 @@ SEQ10 \x03\x9f\x00\x00
 
 \x00\x00  
 SEQ01 t\x0b
-SEQ13 
-SEQ04  f\x03\x00 
-SEQ12  \x94\x03\x00 
-SEQ06 SCE026_006\x00 *\x0e\x00 
+SEQ14 
+SEQ08 " f\x03\x00 
+SEQ08  \x94\x03\x00 
+SEQ05 SCE026_006\x00 *\x0e\x00 
 SEQ07  
 SEQ01 
-SEQ03 T8
-SEQ13 
-SEQ05 \x03p\x00\x00
+SEQ10 T8
+SEQ14 
+SEQ11 \x03p\x00\x00
  
 御堂\n　「……つまんねえオンナ」@
 錦城\n　「以上。授業を終わります」@
@@ -133,15 +133,15 @@ SEQ05 \x03p\x00\x00
 
 \x00  
 SEQ01 n\x0e
-SEQ13 
-SEQ04  f\x03\x00 
-SEQ12  \x94\x03\x00 
-SEQ06 SCE026_007\x00 h\x10\x00 
+SEQ14 
+SEQ08 " f\x03\x00 
+SEQ08  \x94\x03\x00 
+SEQ05 SCE026_007\x00 h\x10\x00 
 SEQ07  
 SEQ01 
-SEQ03 X8
-SEQ13 
-SEQ05 \x03N\x00\x00
+SEQ10 X8
+SEQ14 
+SEQ11 \x03N\x00\x00
  
 \n　ほどなく教室には興奮と驚嘆の入り交じった声がわき起こった\n　。@
 学生\n　「すげえよな、錦城！」@
@@ -153,20 +153,20 @@ SEQ05 \x03N\x00\x00
 
 \x00\x00\x00  
 SEQ01 \xac\x10
-SEQ13 
-SEQ04  f\x03\x00 
-SEQ12  \x94\x03\x00 
-SEQ10   
+SEQ14 
+SEQ08 " f\x03\x00 
+SEQ08  \x94\x03\x00 
+SEQ06   
 SEQ01 \x06\x01
-SEQ13 
-SEQ04  \x04\x06\x00 
-SEQ12  .\x06\x00 
-SEQ06 SCE026_008\x00 R\x12\x00 
+SEQ14 
+SEQ08 " \x04\x06\x00 
+SEQ08  .\x06\x00 
+SEQ05 SCE026_008\x00 R\x12\x00 
 SEQ07  
 SEQ01 
-SEQ03 \\8
-SEQ13 
-SEQ05 \x03\x85\x00\x00
+SEQ10 \\8
+SEQ14 
+SEQ11 \x03\x85\x00\x00
  
 \n　騒ぎのなかにあって、拓司はひとり、フツフツとわき上がってく\n　る怒りに震えていた。@
 　－－怒り？@
@@ -181,21 +181,21 @@ SEQ05 \x03\x85\x00\x00
 
 \x00  
 SEQ01 \x96\x12
-SEQ13 
-SEQ04  f\x03\x00 
-SEQ12  \x94\x03\x00 
-SEQ10  f\x03\x00 
-SEQ12 \x03\x04\x00\x00TextWindowOff SPC02 \xf0\x14\x00 
-SEQ10   
+SEQ14 
+SEQ08 " f\x03\x00 
+SEQ08  \x94\x03\x00 
+SEQ06  f\x03\x00 
+SEQ03 TextWindowOff SPC02 \xf0\x14\x00 
+SEQ06   
 SEQ01 \xc8\x00
-SEQ13 
-SEQ04 
-SEQ08 .\\Data\\Script\\Bg.Fob SPC03 .\x15\x00 
-SEQ12 \x03\x04\x00\x00BgNormalFadeIn SPC01 X\x15\x00 
-SEQ10  \x04\x06\x00 
-SEQ12  \xde\n\x00 
-SEQ10   \x00\x00 \x00\x00\x00\x00\x92 f\x03\x00 
-SEQ12 \x03\x05\x00\x00TextWindowOnDirect SPC01 \xb0\x15\x00 
-SEQ10  f\x03\x00 
-SEQ12 \x03\x03\x00\x00TextClose SPC02 \xe4\x15\x00 
-ENDF
+SEQ14 
+SEQ08 "
+SEQ12 .\\Data\\Script\\Bg.Fob SPC03 .\x15\x00 
+SEQ03 BgNormalFadeIn SPC01 X\x15\x00 
+SEQ06  \x04\x06\x00 
+SEQ08  \xde\n\x00 
+SEQ06   \x00\x00 \x00\x00\x00\x00\x92 f\x03\x00 
+SEQ08 \x03\x05\x00\x00TextWindowOnDirect SPC01 \xb0\x15\x00 
+SEQ06  f\x03\x00 
+SEQ04 TextClose SPC02 \xe4\x15\x00 
+FEND

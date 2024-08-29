@@ -1,9 +1,9 @@
-STRF
+FSTR
 8\x12\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\x1a\x0f\x00\x03\x03\x00\x00SCE231_001\x00 \x06\x00\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x90x\x01\x0c
-SEQ05 \x03r\x00\x00
+SEQ10 \x90x\x01\x0c
+SEQ11 \x03r\x00\x00
  
 御堂\n　「……動くなよ、虎菱。\pお前だけは勝手にさせねえからな……」\n\p拓司\n　「なんなんだ、お前は……」@
 \n拓司は呆然と言った。言ってから、炎のように怒りがわき上がっ\nてきた。@
@@ -12,15 +12,15 @@ SEQ05 \x03r\x00\x00
 
 \x00\x00\x00  
 SEQ01 J\x00
-SEQ13 
-SEQ04 
-SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 2\x02\x00 
+SEQ14 
+SEQ08 "
+SEQ13 .\\Data\\Script\\TextFunc.Fob SPC01 2\x02\x00 
 SEQ02 TextOn SPC01 `\x02\x00 
-SEQ06 SCE231_002\x00 |\x02\x00 
+SEQ05 SCE231_002\x00 |\x02\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x94x\x01\x0c
-SEQ05 \x03`\x00\x00
+SEQ10 \x94x\x01\x0c
+SEQ11 \x03`\x00\x00
  
 拓司\n　「俺だって同じだッ！\p　お前だけが特別だと思うな！」@
 御堂\n　「うるせえッ！\p　俺は無視されたんだよ！\p　おきざりにされた\n　　んだ！\p　なにもかもが俺を素通りして勝手に動いていきやが\n　　る！\p　気にくわねえ！」@
@@ -29,20 +29,20 @@ SEQ05 \x03`\x00\x00
 
 \x00\x00\x00  
 SEQ01 \xc0\x02
-SEQ13 
-SEQ04  2\x02\x00 
-SEQ12  `\x02\x00 
-SEQ10   
+SEQ14 
+SEQ08 " 2\x02\x00 
+SEQ08  `\x02\x00 
+SEQ06   
 SEQ01 )\x00
-SEQ13 
-SEQ04 
-SEQ08 .\\Data\\Script\\Bg.Fob SPC03 \x94\x04\x00 
-SEQ12 \x03\x04\x00\x00BgAutoFadeIn SPC03 \xbe\x04\x00 
-SEQ06 SCE231_003\x00 \xe2\x04\x00 
+SEQ14 
+SEQ08 "
+SEQ12 .\\Data\\Script\\Bg.Fob SPC03 \x94\x04\x00 
+SEQ03 BgAutoFadeIn SPC03 \xbe\x04\x00 
+SEQ05 SCE231_003\x00 \xe2\x04\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x98x\x01\x0c
-SEQ05 \x03\xc2\x00\x00
+SEQ10 \x98x\x01\x0c
+SEQ11 \x03\xc2\x00\x00
  
 奇声を上げながら、なたねが突っ込んできた。\pしかし御堂はそれ\nを軽くいなし、足を払って転倒させた。@
 無様に床に転がったなたねを、御堂はつま先で蹴った。@
@@ -57,14 +57,14 @@ SEQ05 \x03\xc2\x00\x00
 
 \x00\x00\x00  
 SEQ01 &\x05
-SEQ13 
-SEQ04  2\x02\x00 
-SEQ12  `\x02\x00 
-SEQ06 SCE231_004\x00 h\x08\x00 
+SEQ14 
+SEQ08 " 2\x02\x00 
+SEQ08  `\x02\x00 
+SEQ05 SCE231_004\x00 h\x08\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x9cx\x01\x0c
-SEQ05 \x03s\x00\x00
+SEQ10 \x9cx\x01\x0c
+SEQ11 \x03s\x00\x00
  
 そこには静けさがあった。\p暴力とは相容れないはずの、まったり\nとした静けさが。@
 他人が攻撃されているあいだは、自分は攻撃されない。@
@@ -76,14 +76,14 @@ SEQ05 \x03s\x00\x00
 
 \x00\x00  
 SEQ01 \xac\x08
-SEQ13 
-SEQ04  2\x02\x00 
-SEQ12  `\x02\x00 
-SEQ06 SCE231_005\x00 \xb2\n\x00 
+SEQ14 
+SEQ08 " 2\x02\x00 
+SEQ08  `\x02\x00 
+SEQ05 SCE231_005\x00 \xb2\n\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xa0x\x01\x0c
-SEQ05 \x03>\x00\x00
+SEQ10 \xa0x\x01\x0c
+SEQ11 \x03>\x00\x00
  
 錦城がおそるおそるといった感じで、なたねに歩み寄った。@
 鼻の前に手をかざし、ついで、手首を握る\p。一同はその一挙一動\nを、じっと見つめていた。@
@@ -92,52 +92,52 @@ SEQ05 \x03>\x00\x00
 
 \x00\x00\x00  
 SEQ01 \xf6\n
-SEQ13 
-SEQ04  2\x02\x00 
-SEQ12  `\x02\x00 
-SEQ06 SCE231_006\x00 (\x0c\x00 
+SEQ14 
+SEQ08 " 2\x02\x00 
+SEQ08  `\x02\x00 
+SEQ05 SCE231_006\x00 (\x0c\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xa4x\x01\x0c
-SEQ05 
-SEQ11 .\\Data\\Script\\TextFunc.fob SPC01 l\x0c\x00 
-SEQ12 
-SEQ08 CheckNormalMessageSkip SPC01 \x9a\x0c\x00 
-SEQ10  2\x02\x00 
-SEQ12 \x03\x04\x00\x00TextWindowOff SPC02 \xd2\x0c\x00 
-SEQ10   
+SEQ10 \xa4x\x01\x0c
+SEQ11 
+SEQ13 .\\Data\\Script\\TextFunc.fob SPC01 l\x0c\x00 
+SEQ08 
+SEQ12 CheckNormalMessageSkip SPC01 \x9a\x0c\x00 
+SEQ06  2\x02\x00 
+SEQ03 TextWindowOff SPC02 \xd2\x0c\x00 
+SEQ06   
 SEQ01 
-SEQ12 \x0c
-SEQ04   \x04\x00\x00\r\x00\x00 \x01\x00
-SEQ13 
-SEQ04   \x08\x00\x00\r\x00\x00 \x01\x00
-SEQ13 
-SEQ04 
-SEQ08 .\\Data\\Script\\Bgm.Fob SPC02 D\r\x00 
+SEQ08 \x0c
+SEQ08 "  \x04\x00\x00\r\x00\x00 \x01\x00
+SEQ14 
+SEQ08 "  \x08\x00\x00\r\x00\x00 \x01\x00
+SEQ14 
+SEQ08 "
+SEQ12 .\\Data\\Script\\Bgm.Fob SPC02 D\r\x00 
 SEQ02 SePlay SPC01 n\r\x00 
-SEQ10   
+SEQ06   
 SEQ01 \xca\x00
-SEQ13 
-SEQ04   \x04\x00\x00\r\x00\x00 \x04\x00
-SEQ13 
-SEQ04   \x08\x00\x00\r\x00\x00 \x01\x00
-SEQ13 
-SEQ04  \x94\x04\x00 
-SEQ12 \x03\x03\x00\x00BgFadeIn SPC03 \xe4\r\x00 
-SEQ10   
+SEQ14 
+SEQ08 "  \x04\x00\x00\r\x00\x00 \x04\x00
+SEQ14 
+SEQ08 "  \x08\x00\x00\r\x00\x00 \x01\x00
+SEQ14 
+SEQ08 " \x94\x04\x00 
+SEQ04 BgFadeIn SPC03 \xe4\r\x00 
+SEQ06   
 SEQ01 
-SEQ12 \x0c
-SEQ04  D\r\x00 
+SEQ08 \x0c
+SEQ08 " D\r\x00 
 SEQ02 SeStop SPC01 *\x0e\x00 
-SEQ10   
+SEQ06   
 SEQ01 \xc8\x00
-SEQ13 
-SEQ04  \x94\x04\x00 
+SEQ14 
+SEQ08 " \x94\x04\x00 
 SEQ02 BgOn SPC03 l\x0e\x00 
-SEQ10  2\x02\x00 
-SEQ12 \x03\x05\x00\x00TextWindowOnDirect SPC01 \x94\x0e\x00 
-SEQ10  2\x02\x00 
-SEQ12 \x03\x05\x00\x00UpdateScenarioRead SPC01 \xc8\x0e\x00 
-SEQ10  2\x02\x00 
-SEQ12 \x03\x03\x00\x00TextClose SPC02 \xfc\x0e\x00 
-ENDF
+SEQ06  2\x02\x00 
+SEQ08 \x03\x05\x00\x00TextWindowOnDirect SPC01 \x94\x0e\x00 
+SEQ06  2\x02\x00 
+SEQ08 \x03\x05\x00\x00UpdateScenarioRead SPC01 \xc8\x0e\x00 
+SEQ06  2\x02\x00 
+SEQ04 TextClose SPC02 \xfc\x0e\x00 
+FEND

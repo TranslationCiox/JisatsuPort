@@ -1,10 +1,10 @@
-STRF
+FSTR
 \xf6\r\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00*\x0b\x00\x03\x03\x00\x00SCE063_001\x00 \x06\x00\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x10r
-SEQ13 
-SEQ05 \x03\x81\x00\x00
+SEQ10 \x10r
+SEQ14 
+SEQ11 \x03\x81\x00\x00
  
 カンナ\n　「虎菱くん、あなた、その程度だったんだ」@
 \nカンナが淡々といった。\p顔には落胆の色があった。@
@@ -14,22 +14,22 @@ SEQ05 \x03\x81\x00\x00
 
 \x00\x00\x00  
 SEQ01 J\x00
-SEQ13 
-SEQ04 
-SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 n\x02\x00 
+SEQ14 
+SEQ08 "
+SEQ13 .\\Data\\Script\\TextFunc.Fob SPC01 n\x02\x00 
 SEQ02 TextOn SPC01 \x9c\x02\x00 
-SEQ10   
+SEQ06   
 SEQ01 \x0b\x01
-SEQ13 
-SEQ04 
-SEQ08 .\\Data\\Script\\Bgm.Fob SPC02 \xd2\x02\x00 
+SEQ14 
+SEQ08 "
+SEQ12 .\\Data\\Script\\Bgm.Fob SPC02 \xd2\x02\x00 
 SEQ02 PlayCD SPC01 \xfc\x02\x00 
-SEQ06 SCE063_002\x00 \x18\x03\x00 
+SEQ05 SCE063_002\x00 \x18\x03\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x14r
-SEQ13 
-SEQ05 \x03{\x00\x00
+SEQ10 \x14r
+SEQ14 
+SEQ11 \x03{\x00\x00
  
 カンナ\n　「無駄な努力だった。\pとっとと死んじゃえばよかった。@
 　　より完璧な死なんか求めず……こうやって」@
@@ -41,15 +41,15 @@ SEQ05 \x03{\x00\x00
 
 \x00\x00\x00  
 SEQ01 \\\x03
-SEQ13 
-SEQ04  n\x02\x00 
-SEQ12  \x9c\x02\x00 
-SEQ06 SCE063_003\x00 \x82\x05\x00 
+SEQ14 
+SEQ08 " n\x02\x00 
+SEQ08  \x9c\x02\x00 
+SEQ05 SCE063_003\x00 \x82\x05\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x18r
-SEQ13 
-SEQ05 \x03V\x00\x00
+SEQ10 \x18r
+SEQ14 
+SEQ11 \x03V\x00\x00
  
 拓司の胸の中に、罪悪感が広がっていった。@
 理屈では、自分に責任などないということはわかっていたが、目\nの前で死につつあるカンナを見ていると、そんな理屈はこれっぽ\nっちの効果も持たない。@
@@ -61,21 +61,21 @@ SEQ05 \x03V\x00\x00
 
 \x00  
 SEQ01 \xc6\x05
-SEQ13 
-SEQ04  n\x02\x00 
-SEQ12  \x9c\x02\x00 
-SEQ10   
+SEQ14 
+SEQ08 " n\x02\x00 
+SEQ08  \x9c\x02\x00 
+SEQ06   
 SEQ01 \xc8\x00
-SEQ13 
-SEQ04 
-SEQ08 .\\Data\\Script\\Bg.Fob SPC03 r\x07\x00 
-SEQ12 \x03\x04\x00\x00BgAutoFadeIn SPC03 \x9c\x07\x00 
-SEQ06 SCE063_004\x00 \xc0\x07\x00 
+SEQ14 
+SEQ08 "
+SEQ12 .\\Data\\Script\\Bg.Fob SPC03 r\x07\x00 
+SEQ03 BgAutoFadeIn SPC03 \x9c\x07\x00 
+SEQ05 SCE063_004\x00 \xc0\x07\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x1cr
-SEQ13 
-SEQ05 \x03D\x00\x00
+SEQ10 \x1cr
+SEQ14 
+SEQ11 \x03D\x00\x00
  
 もしかしてこれが波動に侵されるということなのか？@
 －－そう思ったときにはもう遅かった。@
@@ -85,15 +85,15 @@ SEQ05 \x03D\x00\x00
 
 \x00\x00\x00  
 SEQ01 \x04\x08
-SEQ13 
-SEQ04  n\x02\x00 
-SEQ12  \x9c\x02\x00 
-SEQ06 SCE063_005\x00 N\t\x00 
+SEQ14 
+SEQ08 " n\x02\x00 
+SEQ08  \x9c\x02\x00 
+SEQ05 SCE063_005\x00 N\t\x00 
 SEQ07  
 SEQ01 
-SEQ03  r
-SEQ13 
-SEQ05 \x03C\x00\x00
+SEQ10  r
+SEQ14 
+SEQ11 \x03C\x00\x00
  
 早桃\n　「おにいちゃん！」@
 \n早桃の声を遠くに聞きながら、拓司は地面を蹴って、ふわりと空\n中に飛び出していた。@
@@ -104,11 +104,11 @@ SEQ05 \x03C\x00\x00
 
 \x00  
 SEQ01 \x92\t
-SEQ13 
-SEQ04  n\x02\x00 
-SEQ12  \x9c\x02\x00 
-SEQ10  \xd2\x02\x00 
+SEQ14 
+SEQ08 " n\x02\x00 
+SEQ08  \x9c\x02\x00 
+SEQ06  \xd2\x02\x00 
 SEQ02 StopCD SPC01 \xe4\n\x00 
-SEQ10  n\x02\x00 
-SEQ12 \x03\x03\x00\x00TextClose SPC02 \x0c\x0b\x00 
-ENDF
+SEQ06  n\x02\x00 
+SEQ04 TextClose SPC02 \x0c\x0b\x00 
+FEND

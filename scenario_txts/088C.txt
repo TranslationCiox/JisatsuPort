@@ -1,16 +1,16 @@
-STRF
+FSTR
 \xbe#\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xec\x1d\x00  
 SEQ01 \xc8\x00
-SEQ13 
-SEQ04 
-SEQ08 .\\Data\\Script\\Bg.Fob SPC03  \x00\x00 
+SEQ14 
+SEQ08 "
+SEQ12 .\\Data\\Script\\Bg.Fob SPC03  \x00\x00 
 SEQ02 BgOn SPC03 J\x00\x00 
-SEQ06 SCE088_001\x00 f\x00\x00 
+SEQ05 SCE088_001\x00 f\x00\x00 
 SEQ07  
 SEQ01 
-SEQ03  \x99
-SEQ13 
-SEQ05 \x03\x96\x00\x00
+SEQ10  \x99
+SEQ14 
+SEQ11 \x03\x96\x00\x00
  
 御堂\n　「ふざけるな！」@
 \n　御堂が怒りに身体を震わせている。@
@@ -20,16 +20,16 @@ SEQ05 \x03\x96\x00\x00
 
 \x00  
 SEQ01 \xaa\x00
-SEQ13 
-SEQ04 
-SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 "\x03\x00 
+SEQ14 
+SEQ08 "
+SEQ13 .\\Data\\Script\\TextFunc.Fob SPC01 "\x03\x00 
 SEQ02 TextOn SPC01 P\x03\x00 
-SEQ06 SCE088_002\x00 l\x03\x00 
+SEQ05 SCE088_002\x00 l\x03\x00 
 SEQ07  
 SEQ01 
-SEQ03 $\x99
-SEQ13 
-SEQ05 \x03\xaa\x00\x00
+SEQ10 $\x99
+SEQ14 
+SEQ11 \x03\xaa\x00\x00
  
 　静寂がおりた。@
 　御堂の言葉はもっともだった。\p誰もなたねのいうことなど、本\n　心では信じていなかった。@
@@ -43,15 +43,15 @@ SEQ05 \x03\xaa\x00\x00
 
 \x00  
 SEQ01 \xb0\x03
-SEQ13 
-SEQ04  "\x03\x00 
-SEQ12  P\x03\x00 
-SEQ06 SCE088_003\x00 \x92\x06\x00 
+SEQ14 
+SEQ08 " "\x03\x00 
+SEQ08  P\x03\x00 
+SEQ05 SCE088_003\x00 \x92\x06\x00 
 SEQ07  
 SEQ01 
-SEQ03 (\x99
-SEQ13 
-SEQ05 \x03s\x00\x00
+SEQ10 (\x99
+SEQ14 
+SEQ11 \x03s\x00\x00
  
 御堂\n　「うるせえ！\p　もういいってんだよ、電波女！」@
 なたね\n　「……」@
@@ -64,15 +64,15 @@ SEQ05 \x03s\x00\x00
 
 \x00\x00  
 SEQ01 \xd6\x06
-SEQ13 
-SEQ04  "\x03\x00 
-SEQ12  P\x03\x00 
-SEQ06 SCE088_004\x00 \xdc\x08\x00 
+SEQ14 
+SEQ08 " "\x03\x00 
+SEQ08  P\x03\x00 
+SEQ05 SCE088_004\x00 \xdc\x08\x00 
 SEQ07  
 SEQ01 
-SEQ03 ,\x99
-SEQ13 
-SEQ05 \x03\xa2\x00\x00
+SEQ10 ,\x99
+SEQ14 
+SEQ11 \x03\xa2\x00\x00
  
 御堂\n　「……この！」@
 \n　殴りかかろうとする御堂を、拓司と錦城が必死で取り押さえる。\n　@
@@ -84,15 +84,15 @@ SEQ05 \x03\xa2\x00\x00
 
 \x00  
 SEQ01  \t
-SEQ13 
-SEQ04  "\x03\x00 
-SEQ12  P\x03\x00 
-SEQ06 SCE088_005\x00 \xe2\x0b\x00 
+SEQ14 
+SEQ08 " "\x03\x00 
+SEQ08  P\x03\x00 
+SEQ05 SCE088_005\x00 \xe2\x0b\x00 
 SEQ07  
 SEQ01 
-SEQ03 0\x99
-SEQ13 
-SEQ05 \x03\x82\x00\x00
+SEQ10 0\x99
+SEQ14 
+SEQ11 \x03\x82\x00\x00
  
 なたね\n　「ただし－－鍵は私が持っています」@
 \n　なたねは鋭くいって、スカートのポケットから小さな鍵を取り出\n　した。@
@@ -104,15 +104,15 @@ SEQ05 \x03\x82\x00\x00
 
 \x00  
 SEQ01 &\x0c
-SEQ13 
-SEQ04  "\x03\x00 
-SEQ12  P\x03\x00 
-SEQ06 SCE088_006\x00 h\x0e\x00 
+SEQ14 
+SEQ08 " "\x03\x00 
+SEQ08  P\x03\x00 
+SEQ05 SCE088_006\x00 h\x0e\x00 
 SEQ07  
 SEQ01 
-SEQ03 4\x99
-SEQ13 
-SEQ05 \x03\xb1\x00\x00
+SEQ10 4\x99
+SEQ14 
+SEQ11 \x03\xb1\x00\x00
  
 なたね\n　「私たちは団結しなければなりません。\pその点はご同意いただ\n　　けますね？」@
 錦城\n　「……」@
@@ -123,15 +123,15 @@ SEQ05 \x03\xb1\x00\x00
 
 \x00  
 SEQ01 \xac\x0e
-SEQ13 
-SEQ04  "\x03\x00 
-SEQ12  P\x03\x00 
-SEQ06 SCE088_007\x00 \xaa\x11\x00 
+SEQ14 
+SEQ08 " "\x03\x00 
+SEQ08  P\x03\x00 
+SEQ05 SCE088_007\x00 \xaa\x11\x00 
 SEQ07  
 SEQ01 
-SEQ03 8\x99
-SEQ13 
-SEQ05 \x03\x99\x00\x00
+SEQ10 8\x99
+SEQ14 
+SEQ11 \x03\x99\x00\x00
  
 なたね\n　「そうした些細な意見の食い違いは、今後は抑圧されなければ\n　　なりません。\p抑圧するために、私たちのなかの誰かが、私た\n　　ちの管理者にならなければなりません。\pトップから末端に、\n　　完全な形で指令が行き届く強力な縦社会の構築こそが必要で\n　　す」@
 錦城\n　「……あなたが、管理者になるということ……？」@
@@ -143,15 +143,15 @@ SEQ05 \x03\x99\x00\x00
 
 \x00  
 SEQ01 \xee\x11
-SEQ13 
-SEQ04  "\x03\x00 
-SEQ12  P\x03\x00 
-SEQ06 SCE088_008\x00 \x8c\x14\x00 
+SEQ14 
+SEQ08 " "\x03\x00 
+SEQ08  P\x03\x00 
+SEQ05 SCE088_008\x00 \x8c\x14\x00 
 SEQ07  
 SEQ01 
-SEQ03 <\x99
-SEQ13 
-SEQ05 \x03\xb6\x00\x00
+SEQ10 <\x99
+SEQ14 
+SEQ11 \x03\xb6\x00\x00
  
 なたね\n　「管理者の暴走を抑止する装置になるということです」@
 錦城\n　「装置？」@
@@ -161,15 +161,15 @@ SEQ05 \x03\xb6\x00\x00
 
 \x00  
 SEQ01 \xd0\x14
-SEQ13 
-SEQ04  "\x03\x00 
-SEQ12  P\x03\x00 
-SEQ06 SCE088_009\x00 \xe2\x17\x00 
+SEQ14 
+SEQ08 " "\x03\x00 
+SEQ08  P\x03\x00 
+SEQ05 SCE088_009\x00 \xe2\x17\x00 
 SEQ07  
 SEQ01 
-SEQ03 @\x99
-SEQ13 
-SEQ05 \x03\x8f\x00\x00
+SEQ10 @\x99
+SEQ14 
+SEQ11 \x03\x8f\x00\x00
  
 　全員が、なたねの言葉をゆっくりと、慎重にかみ砕いていた。@
 なにか重要なことが、いま決められようとしている。\pそれは運命\nを－－文字通り生と死を内包した運命そのものを－－決める決定\n的なものとなるはずだった。@
@@ -181,15 +181,15 @@ SEQ05 \x03\x8f\x00\x00
 
 \x00\x00\x00  
 SEQ01 &\x18
-SEQ13 
-SEQ04  "\x03\x00 
-SEQ12  P\x03\x00 
-SEQ06 SCE088_010\x00 \x9c\x1a\x00 
+SEQ14 
+SEQ08 " "\x03\x00 
+SEQ08  P\x03\x00 
+SEQ05 SCE088_010\x00 \x9c\x1a\x00 
 SEQ07  
 SEQ01 
-SEQ03 D\x99
-SEQ13 
-SEQ05 \x03d\x00\x00
+SEQ10 D\x99
+SEQ14 
+SEQ11 \x03d\x00\x00
  
 なたね\n　「私の目的は、来たる地球本土決戦に向けて、１人でも多くの\n　　人間を生き残らせることだけですから」@
 \n　なたねの口の端がキューっとつり上がった。@
@@ -199,23 +199,23 @@ SEQ05 \x03d\x00\x00
 
 \x00  
 SEQ01 \xe0\x1a
-SEQ13 
-SEQ04  "\x03\x00 
-SEQ12  P\x03\x00 
-SEQ10 \x03!\x00\x00
+SEQ14 
+SEQ08 " "\x03\x00 
+SEQ08  P\x03\x00 
+SEQ06 \x03!\x00\x00
 CHOICE
 自分に投票した\n紅葉に投票した\nカンナに投票した\n早桃に投票した\n御堂に投票した\n錦城に投票した\nなたねに投票した\n\l0,7,
 ENDCHOICE
 
 \x00  
 SEQ01 \xaa\x1c
-SEQ13 
-SEQ04  "\x03\x00 
-SEQ12  P\x03\x00 
-SEQ10  "\x03\x00 
-SEQ12 \x03\x04\x00\x00GetLastTxtID SPC03 t\x1d\x00 
-SEQ10 ! 
+SEQ14 
+SEQ08 " "\x03\x00 
+SEQ08  P\x03\x00 
+SEQ06  "\x03\x00 
+SEQ03 GetLastTxtID SPC03 t\x1d\x00 
+SEQ06 ! 
 SEQ01 \x04\x00\x00\r\x02  
 SEQ01\x0c\x01\x00\x00" "\x03\x00 
-SEQ12 \x03\x03\x00\x00TextClose SPC02 \xce\x1d\x00 
-ENDF
+SEQ04 TextClose SPC02 \xce\x1d\x00 
+FEND

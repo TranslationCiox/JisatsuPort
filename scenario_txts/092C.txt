@@ -1,34 +1,34 @@
-STRF
+FSTR
 I\x0e\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\\\x0b\x00
-SEQ08 .\\Data\\Script\\Bgm.Fob SPC02 \x06\x00\x00 
+SEQ12 .\\Data\\Script\\Bgm.Fob SPC02 \x06\x00\x00 
 SEQ02 StopCD SPC01 0\x00\x00 
-SEQ10   
+SEQ06   
 SEQ01 \xc8\x00
-SEQ13 
-SEQ04 
-SEQ08 .\\Data\\Script\\Bg.Fob SPC03 f\x00\x00 
-SEQ12 \x03\x04\x00\x00BgAutoFadeIn SPC03 \x90\x00\x00 
-SEQ06 SCE092_001\x00 \xb4\x00\x00 
+SEQ14 
+SEQ08 "
+SEQ12 .\\Data\\Script\\Bg.Fob SPC03 f\x00\x00 
+SEQ03 BgAutoFadeIn SPC03 \x90\x00\x00 
+SEQ05 SCE092_001\x00 \xb4\x00\x00 
 SEQ07  
 SEQ01 
-SEQ03 `\x9f
-SEQ13 
-SEQ05 \x03\x11\x00\x00
+SEQ10 `\x9f
+SEQ14 
+SEQ11 \x03\x11\x00\x00
  
 \n\n\n\n\n\n\n\n\n\n　　　　　　　　　　　　　　『２日目』\
 
 \x00  
 SEQ01 \xf8\x00
-SEQ13 
-SEQ04 
-SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 \\\x01\x00 
+SEQ14 
+SEQ08 "
+SEQ13 .\\Data\\Script\\TextFunc.Fob SPC01 \\\x01\x00 
 SEQ02 TextOn SPC01 \x8a\x01\x00 
-SEQ06 SCE092_002\x00 \xa6\x01\x00 
+SEQ05 SCE092_002\x00 \xa6\x01\x00 
 SEQ07  
 SEQ01 
-SEQ03 d\x9f
-SEQ13 
-SEQ05 \x03\x9b\x00\x00
+SEQ10 d\x9f
+SEQ14 
+SEQ11 \x03\x9b\x00\x00
  
 晴れ。@
 水の分配について、御堂が再びゴネはじめた。@
@@ -41,15 +41,15 @@ SEQ05 \x03\x9b\x00\x00
 
   
 SEQ01 \xea\x01
-SEQ13 
-SEQ04  \\\x01\x00 
-SEQ12  \x8a\x01\x00 
-SEQ06 SCE092_003\x00 \x90\x04\x00 
+SEQ14 
+SEQ08 " \\\x01\x00 
+SEQ08  \x8a\x01\x00 
+SEQ05 SCE092_003\x00 \x90\x04\x00 
 SEQ07  
 SEQ01 
-SEQ03 h\x9f
-SEQ13 
-SEQ05 \x03\x9e\x00\x00
+SEQ10 h\x9f
+SEQ14 
+SEQ11 \x03\x9e\x00\x00
  
 なたね\n　「いえば、秩序の維持に多大な影響が出るからです。\pたとえば\n　　……たとえばですよ？\p　食糧の備蓄が３日分しかないと分か\n　　ったら、みなさんはどうしますか？」@
 御堂\n　「……」@
@@ -61,15 +61,15 @@ SEQ05 \x03\x9e\x00\x00
 
 \x00\x00\x00  
 SEQ01 \xd4\x04
-SEQ13 
-SEQ04  \\\x01\x00 
-SEQ12  \x8a\x01\x00 
-SEQ06 SCE092_004\x00 \x86\x07\x00 
+SEQ14 
+SEQ08 " \\\x01\x00 
+SEQ08  \x8a\x01\x00 
+SEQ05 SCE092_004\x00 \x86\x07\x00 
 SEQ07  
 SEQ01 
-SEQ03 l\x9f
-SEQ13 
-SEQ05 \x03\x9f\x00\x00
+SEQ10 l\x9f
+SEQ14 
+SEQ11 \x03\x9f\x00\x00
  
 御堂\n　「……３日分しかないってのは……本当なのか？」@
 なたね\n　「あくまでもたとえです」@
@@ -81,19 +81,19 @@ SEQ05 \x03\x9f\x00\x00
 
 \x00\x00\x00  
 SEQ01 \xca\x07
-SEQ13 
-SEQ04  \\\x01\x00 
-SEQ12  \x8a\x01\x00 
-SEQ10 \x03 \x00\x00
+SEQ14 
+SEQ08 " \\\x01\x00 
+SEQ08  \x8a\x01\x00 
+SEQ06 \x03 \x00\x00
 CHOICE
 「何日耐えられるのか、はっきりさせてほしい」と拓司はいった\n「雲居さんのいうとおりだ」と拓司はいった\n\l0,2,
 ENDCHOICE
 
 \x00\x00\x00  
 SEQ01 \x80\n
-SEQ13 
-SEQ04  \\\x01\x00 
-SEQ12  \x8a\x01\x00 
-SEQ10  \\\x01\x00 
-SEQ12 \x03\x03\x00\x00TextClose SPC02 >\x0b\x00 
-ENDF
+SEQ14 
+SEQ08 " \\\x01\x00 
+SEQ08  \x8a\x01\x00 
+SEQ06  \\\x01\x00 
+SEQ04 TextClose SPC02 >\x0b\x00 
+FEND

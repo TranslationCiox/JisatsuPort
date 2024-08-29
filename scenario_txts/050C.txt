@@ -1,20 +1,20 @@
-STRF
+FSTR
 \xd3\x15\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\x9e\x12\x00\x03\x03\x00\x00SCE050_001\x00 \x06\x00\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xc0]
-SEQ13 
-SEQ05   
+SEQ10 \xc0]
+SEQ14 
+SEQ11   
 SEQ01 \x00\x00\x00
-SEQ13 
-SEQ04   \x04\x00\x00\r\x00\x00 \x19\x00
-SEQ13 
-SEQ04   \x08\x00\x00\r\x00\x00 \x00\x00\x00
-SEQ13 
-SEQ04 
-SEQ08 .\\Data\\Script\\Bgm.Fob SPC02 \x98\x00\x00 
-SEQ12 \x03\x03\x00\x00SePlayEx SPC03 \xc2\x00\x00 
-SEQ10 \x03\x82\x00\x00
+SEQ14 
+SEQ08 "  \x04\x00\x00\r\x00\x00 \x19\x00
+SEQ14 
+SEQ08 "  \x08\x00\x00\r\x00\x00 \x00\x00\x00
+SEQ14 
+SEQ08 "
+SEQ12 .\\Data\\Script\\Bgm.Fob SPC02 \x98\x00\x00 
+SEQ04 SePlayEx SPC03 \xc2\x00\x00 
+SEQ06 \x03\x82\x00\x00
  
 教室のドアをわずかにスライドさせる。@
 促されて、拓司はおそるおそる隙間から教室をのぞき込むが……\n中では授業が行われているだけだ。@
@@ -25,16 +25,16 @@ SEQ10 \x03\x82\x00\x00
 
 \x00  
 SEQ01 \xe2\x00
-SEQ13 
-SEQ04 
-SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 \n\x03\x00 
+SEQ14 
+SEQ08 "
+SEQ13 .\\Data\\Script\\TextFunc.Fob SPC01 \n\x03\x00 
 SEQ02 TextOn SPC01 8\x03\x00 
-SEQ06 SCE050_002\x00 T\x03\x00 
+SEQ05 SCE050_002\x00 T\x03\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xc4]
-SEQ13 
-SEQ05 \x03o\x00\x00
+SEQ10 \xc4]
+SEQ14 
+SEQ11 \x03o\x00\x00
  
 　恰幅のいい教員はそこまでいうと、手に持っていたカッターを\n自分の喉に押し当て、スッと横に引いた。\p噴水のように血が吹き\n上がる。/*▲BGM　Track11　再生*/\a2,-1,11,1,@
 \n拓司\n　「！」@
@@ -45,15 +45,15 @@ SEQ05 \x03o\x00\x00
 
 \x00\x00\x00  
 SEQ01 \x98\x03
-SEQ13 
-SEQ04  \n\x03\x00 
-SEQ12  8\x03\x00 
-SEQ06 SCE050_003\x00 \x8e\x05\x00 
+SEQ14 
+SEQ08 " \n\x03\x00 
+SEQ08  8\x03\x00 
+SEQ05 SCE050_003\x00 \x8e\x05\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xc8]
-SEQ13 
-SEQ05 \x03\xd9\x00\x00
+SEQ10 \xc8]
+SEQ14 
+SEQ11 \x03\xd9\x00\x00
  
 \n　いつかＴＶで見た、共産主義国家のマスゲーム。@
 　何千もの腕が同時に上げられ、振られ、下がる。@
@@ -67,15 +67,15 @@ SEQ05 \x03\xd9\x00\x00
 
 \x00\x00\x00  
 SEQ01 \xd2\x05
-SEQ13 
-SEQ04  \n\x03\x00 
-SEQ12  8\x03\x00 
-SEQ06 SCE050_004\x00 p\t\x00 
+SEQ14 
+SEQ08 " \n\x03\x00 
+SEQ08  8\x03\x00 
+SEQ05 SCE050_004\x00 p\t\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xcc]
-SEQ13 
-SEQ05 \x03\x8f\x00\x00
+SEQ10 \xcc]
+SEQ14 
+SEQ11 \x03\x8f\x00\x00
  
 　拓司は、ほうけたようにたねを見た。@
 　拓司の視線に気づいたなたねは、しかし平然としていった。@
@@ -85,15 +85,15 @@ SEQ05 \x03\x8f\x00\x00
 
 \x00  
 SEQ01 \xb4\t
-SEQ13 
-SEQ04  \n\x03\x00 
-SEQ12  8\x03\x00 
-SEQ06 SCE050_005\x00 *\x0c\x00 
+SEQ14 
+SEQ08 " \n\x03\x00 
+SEQ08  8\x03\x00 
+SEQ05 SCE050_005\x00 *\x0c\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xd0]
-SEQ13 
-SEQ05 \x03c\x00\x00
+SEQ10 \xd0]
+SEQ14 
+SEQ11 \x03c\x00\x00
  
 なたね\n　「わかるかなあ？　いまの場合、先生が牽引役になっているわ\n　　けよね。\pハーメルンの笛吹き的な装置として。\p結局、みんな\n　　誰かに命令された方が楽なのよね。\p限定されない完全な自由\n　　というのは、逆説的に－－」@
 拓司\n　「黙れッ！」@
@@ -102,15 +102,15 @@ SEQ05 \x03c\x00\x00
 
 \x00\x00\x00  
 SEQ01 n\x0c
-SEQ13 
-SEQ04  \n\x03\x00 
-SEQ12  8\x03\x00 
-SEQ06 SCE050_006\x00 4\x0e\x00 
+SEQ14 
+SEQ08 " \n\x03\x00 
+SEQ08  8\x03\x00 
+SEQ05 SCE050_006\x00 4\x0e\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xd4]
-SEQ13 
-SEQ05 \x03d\x00\x00
+SEQ10 \xd4]
+SEQ14 
+SEQ11 \x03d\x00\x00
  
 　拓司は頭を振った。\pなたねの言葉を頭から振り払う。@
 　いいか。@
@@ -124,15 +124,15 @@ SEQ05 \x03d\x00\x00
 
 \x00\x00\x00  
 SEQ01 x\x0e
-SEQ13 
-SEQ04  \n\x03\x00 
-SEQ12  8\x03\x00 
-SEQ06 SCE050_007\x00 B\x10\x00 
+SEQ14 
+SEQ08 " \n\x03\x00 
+SEQ08  8\x03\x00 
+SEQ05 SCE050_007\x00 B\x10\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xd8]
-SEQ13 
-SEQ05 \x03c\x00\x00
+SEQ10 \xd8]
+SEQ14 
+SEQ11 \x03c\x00\x00
  
 \n　早桃。@
 　紅葉。@
@@ -144,11 +144,11 @@ SEQ05 \x03c\x00\x00
 
 \x00  
 SEQ01 \x86\x10
-SEQ13 
-SEQ04  \n\x03\x00 
-SEQ12  8\x03\x00 
-SEQ10  \x98\x00\x00 
+SEQ14 
+SEQ08 " \n\x03\x00 
+SEQ08  8\x03\x00 
+SEQ06  \x98\x00\x00 
 SEQ02 StopCD SPC01 X\x12\x00 
-SEQ10  \n\x03\x00 
-SEQ12 \x03\x03\x00\x00TextClose SPC02 \x80\x12\x00 
-ENDF
+SEQ06  \n\x03\x00 
+SEQ04 TextClose SPC02 \x80\x12\x00 
+FEND

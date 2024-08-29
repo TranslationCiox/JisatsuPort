@@ -1,25 +1,25 @@
-STRF
+FSTR
 1#\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xd8\x1d\x00\x03\x03\x00\x00SCE201_001\x00 \x06\x00\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xb0I\x01\x0c
-SEQ05   
+SEQ10 \xb0I\x01\x0c
+SEQ11   
 SEQ01 \xc9\x00
-SEQ13 
-SEQ04 
-SEQ08 .\\Data\\Script\\Bg.Fob SPC03 d\x00\x00 
-SEQ12 \x03\x04\x00\x00BgAutoFadeIn SPC03 \x8e\x00\x00 
-SEQ10   
+SEQ14 
+SEQ08 "
+SEQ12 .\\Data\\Script\\Bg.Fob SPC03 d\x00\x00 
+SEQ03 BgAutoFadeIn SPC03 \x8e\x00\x00 
+SEQ06   
 SEQ01 
-SEQ12 \x0c
-SEQ04   \x04\x00\x00\r\x00\x00 \x06\x00
-SEQ13 
-SEQ04   \x08\x00\x00\r\x00\x00 \x01\x00
-SEQ13 
-SEQ04 
-SEQ08 .\\Data\\Script\\Bgm.Fob SPC02 \x00\x01\x00 
+SEQ08 \x0c
+SEQ08 "  \x04\x00\x00\r\x00\x00 \x06\x00
+SEQ14 
+SEQ08 "  \x08\x00\x00\r\x00\x00 \x01\x00
+SEQ14 
+SEQ08 "
+SEQ12 .\\Data\\Script\\Bgm.Fob SPC02 \x00\x01\x00 
 SEQ02 SePlay SPC01 *\x01\x00 
-SEQ10 \x03\xa0\x00\x00
+SEQ06 \x03\xa0\x00\x00
  
 錆びたシャッターをこじ開けるように、目を開く。@
 薄く開いて、あたりを見る。@
@@ -34,15 +34,15 @@ SEQ10 \x03\xa0\x00\x00
 
 \x00  
 SEQ01 F\x01
-SEQ13 
-SEQ04 
-SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 \xe6\x03\x00 
+SEQ14 
+SEQ08 "
+SEQ13 .\\Data\\Script\\TextFunc.Fob SPC01 \xe6\x03\x00 
 SEQ02 TextOn SPC01 \x14\x04\x00 
-SEQ06 SCE201_002\x00 0\x04\x00 
+SEQ05 SCE201_002\x00 0\x04\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xb4I\x01\x0c
-SEQ05 \x03\x8a\x00\x00
+SEQ10 \xb4I\x01\x0c
+SEQ11 \x03\x8a\x00\x00
  
 わからない。@
 どう思えばいいのかすらわからない。@
@@ -58,14 +58,14 @@ SEQ05 \x03\x8a\x00\x00
 
 \x00  
 SEQ01 t\x04
-SEQ13 
-SEQ04  \xe6\x03\x00 
-SEQ12  \x14\x04\x00 
-SEQ06 SCE201_003\x00 \xd6\x06\x00 
+SEQ14 
+SEQ08 " \xe6\x03\x00 
+SEQ08  \x14\x04\x00 
+SEQ05 SCE201_003\x00 \xd6\x06\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xb8I\x01\x0c
-SEQ05 \x03\x86\x00\x00
+SEQ10 \xb8I\x01\x0c
+SEQ11 \x03\x86\x00\x00
  
 『学校に籠城している世界』に登場した雲居なたねと、瓜二つ\nりである。\p眼鏡、肩までの黒髪、華奢な身体。\p……ただ、なにか\n印象が違う。\p目だけが違うのだ。@
 『学校に籠城している世界』の雲居なたねの目は、死んでいた。\n\pうつろで、どこにも焦点を結んでいなかった。@
@@ -76,14 +76,14 @@ SEQ05 \x03\x86\x00\x00
 
 \x00  
 SEQ01 \x1a\x07
-SEQ13 
-SEQ04  \xe6\x03\x00 
-SEQ12  \x14\x04\x00 
-SEQ06 SCE201_004\x00 l\t\x00 
+SEQ14 
+SEQ08 " \xe6\x03\x00 
+SEQ08  \x14\x04\x00 
+SEQ05 SCE201_004\x00 l\t\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xbcI\x01\x0c
-SEQ05 \x03\x84\x00\x00
+SEQ10 \xbcI\x01\x0c
+SEQ11 \x03\x84\x00\x00
  
 拓司\n　「最初……壁の向こうから話しかけてきたのは、君だったのか\n　　？」@
 女の子\n　「ええ」@
@@ -94,14 +94,14 @@ SEQ05 \x03\x84\x00\x00
 
 \x00\x00\x00  
 SEQ01 \xb0\t
-SEQ13 
-SEQ04  \xe6\x03\x00 
-SEQ12  \x14\x04\x00 
-SEQ06 SCE201_005\x00 \xfa\x0b\x00 
+SEQ14 
+SEQ08 " \xe6\x03\x00 
+SEQ08  \x14\x04\x00 
+SEQ05 SCE201_005\x00 \xfa\x0b\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xc0I\x01\x0c
-SEQ05 \x03\x9e\x00\x00
+SEQ10 \xc0I\x01\x0c
+SEQ11 \x03\x9e\x00\x00
  
 　女の子は－－雲居ナタネは、やや意地悪くフフと笑った。@
 \n拓司\n　「ふざけないでくれ。\p俺は今、本気で混乱してる。\p頭がおかし\n　　くなりそうだ。\pなにがなんだかわからない。\p頼む。話してく\n　　れ。\p教授がいっていたとおり、この世界が『現実』なのか？@
@@ -112,14 +112,14 @@ SEQ05 \x03\x9e\x00\x00
 
 \x00\x00\x00  
 SEQ01 >\x0c
-SEQ13 
-SEQ04  \xe6\x03\x00 
-SEQ12  \x14\x04\x00 
-SEQ06 SCE201_006\x00 \xf0\x0e\x00 
+SEQ14 
+SEQ08 " \xe6\x03\x00 
+SEQ08  \x14\x04\x00 
+SEQ05 SCE201_006\x00 \xf0\x0e\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xc4I\x01\x0c
-SEQ05 \x03U\x00\x00
+SEQ10 \xc4I\x01\x0c
+SEQ11 \x03U\x00\x00
  
 ナタネ\n　「この鳥は、あなたが創ったの」@
 拓司\n　「創った？」@
@@ -131,14 +131,14 @@ SEQ05 \x03U\x00\x00
 
 \x00\x00\x00  
 SEQ01 4\x0f
-SEQ13 
-SEQ04  \xe6\x03\x00 
-SEQ12  \x14\x04\x00 
-SEQ06 SCE201_007\x00 \xc2\x10\x00 
+SEQ14 
+SEQ08 " \xe6\x03\x00 
+SEQ08  \x14\x04\x00 
+SEQ05 SCE201_007\x00 \xc2\x10\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xc8I\x01\x0c
-SEQ05 \x03\x7f\x00\x00
+SEQ10 \xc8I\x01\x0c
+SEQ11 \x03\x7f\x00\x00
  
 ナタネ\n　「そうね……たとえば神様は世界を創った。\pなんだったかしら\n　　……『光あれ』？\p　そうして世界を創って、人間を創った。@
 　　そうよね？」@
@@ -153,14 +153,14 @@ SEQ05 \x03\x7f\x00\x00
 
 \x00  
 SEQ01 \x06\x11
-SEQ13 
-SEQ04  \xe6\x03\x00 
-SEQ12  \x14\x04\x00 
-SEQ06 SCE201_008\x00 <\x13\x00 
+SEQ14 
+SEQ08 " \xe6\x03\x00 
+SEQ08  \x14\x04\x00 
+SEQ05 SCE201_008\x00 <\x13\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xccI\x01\x0c
-SEQ05 \x03\xa5\x00\x00
+SEQ10 \xccI\x01\x0c
+SEQ11 \x03\xa5\x00\x00
  
 ……もちろん落ちはしない。@
 それは目眩のようなもので、世界は歴然として反転などしていな\nいからだ。@
@@ -171,14 +171,14 @@ SEQ05 \x03\xa5\x00\x00
 
 \x00  
 SEQ01 \x80\x13
-SEQ13 
-SEQ04  \xe6\x03\x00 
-SEQ12  \x14\x04\x00 
-SEQ06 SCE201_009\x00 N\x16\x00 
+SEQ14 
+SEQ08 " \xe6\x03\x00 
+SEQ08  \x14\x04\x00 
+SEQ05 SCE201_009\x00 N\x16\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xd0I\x01\x0c
-SEQ05 \x03n\x00\x00
+SEQ10 \xd0I\x01\x0c
+SEQ11 \x03n\x00\x00
  
 拓司\n　「……ＯＫ。\p俺はその鳥を創った。\p神様みたいに『鳥よあれ』\n　　と願って、創った。\pそういうことだな？」@
 ナタネ\n　「『願う』か……なかなかうまい表現ね。\pそう、『創った』と\n　　いうより、『願った』のほうが近いかもしれないわね」@
@@ -189,14 +189,14 @@ SEQ05 \x03n\x00\x00
 
 \x00\x00\x00  
 SEQ01 \x92\x16
-SEQ13 
-SEQ04  \xe6\x03\x00 
-SEQ12  \x14\x04\x00 
-SEQ06 SCE201_010\x00 \x84\x18\x00 
+SEQ14 
+SEQ08 " \xe6\x03\x00 
+SEQ08  \x14\x04\x00 
+SEQ05 SCE201_010\x00 \x84\x18\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xd4I\x01\x0c
-SEQ05 \x03\x8b\x00\x00
+SEQ10 \xd4I\x01\x0c
+SEQ11 \x03\x8b\x00\x00
  
 拓司は絶句した。@
 誰が決めたのかなど知らない。@
@@ -210,14 +210,14 @@ SEQ05 \x03\x8b\x00\x00
 
 \x00  
 SEQ01 \xc8\x18
-SEQ13 
-SEQ04  \xe6\x03\x00 
-SEQ12  \x14\x04\x00 
-SEQ06 SCE201_011\x00 .\x1b\x00 
+SEQ14 
+SEQ08 " \xe6\x03\x00 
+SEQ08  \x14\x04\x00 
+SEQ05 SCE201_011\x00 .\x1b\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xd8I\x01\x0c
-SEQ05 \x03f\x00\x00
+SEQ10 \xd8I\x01\x0c
+SEQ11 \x03f\x00\x00
  
 ナタネ\n　「まず、ひとつめ\p。あなたは『創る』ことができる。@
 　　神様が光を創ったように、あなたは鳥を創ることができる。@
@@ -226,19 +226,19 @@ SEQ05 \x03f\x00\x00
 
 \x00  
 SEQ01 r\x1b
-SEQ13 
-SEQ04  \xe6\x03\x00 
-SEQ12  \x14\x04\x00 
-SEQ10 \x03\x0c\x00\x00
+SEQ14 
+SEQ08 " \xe6\x03\x00 
+SEQ08  \x14\x04\x00 
+SEQ06 \x03\x0c\x00\x00
 CHOICE
 もう一度聞く\n黙って続きを聞く\n\l0,2,
 ENDCHOICE
 
 \x00  
 SEQ01 D\x1d
-SEQ13 
-SEQ04  \xe6\x03\x00 
-SEQ12  \x14\x04\x00 
-SEQ10  \xe6\x03\x00 
-SEQ12 \x03\x03\x00\x00TextClose SPC02 \xba\x1d\x00 
-ENDF
+SEQ14 
+SEQ08 " \xe6\x03\x00 
+SEQ08  \x14\x04\x00 
+SEQ06  \xe6\x03\x00 
+SEQ04 TextClose SPC02 \xba\x1d\x00 
+FEND

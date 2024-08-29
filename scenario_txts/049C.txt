@@ -1,16 +1,16 @@
-STRF
+FSTR
 \x0e\x13\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x000\x10\x00  
 SEQ01 \x06\x01
-SEQ13 
-SEQ04 
-SEQ08 .\\Data\\Script\\Bgm.Fob SPC02  \x00\x00 
+SEQ14 
+SEQ08 "
+SEQ12 .\\Data\\Script\\Bgm.Fob SPC02  \x00\x00 
 SEQ02 PlayCD SPC01 J\x00\x00 
-SEQ06 SCE049_001\x00 f\x00\x00 
+SEQ05 SCE049_001\x00 f\x00\x00 
 SEQ07  
 SEQ01 
-SEQ03 0\\
-SEQ13 
-SEQ05 \x03\xe6\x00\x00
+SEQ10 0\\
+SEQ14 
+SEQ11 \x03\xe6\x00\x00
  
 廊下に飛び出すと、そこには現実の空気があった。@
 空気というより、気配というべきか……静かだが、たしか多くの\n人間の気配が感じられる。\p馴染みある学園の空気……いかにもな\n日常の気配だ。@
@@ -22,16 +22,16 @@ SEQ05 \x03\xe6\x00\x00
 
 \x00\x00\x00  
 SEQ01 \xaa\x00
-SEQ13 
-SEQ04 
-SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 b\x04\x00 
+SEQ14 
+SEQ08 "
+SEQ13 .\\Data\\Script\\TextFunc.Fob SPC01 b\x04\x00 
 SEQ02 TextOn SPC01 \x90\x04\x00 
-SEQ06 SCE049_002\x00 \xac\x04\x00 
+SEQ05 SCE049_002\x00 \xac\x04\x00 
 SEQ07  
 SEQ01 
-SEQ03 4\\
-SEQ13 
-SEQ05 \x03q\x00\x00
+SEQ10 4\\
+SEQ14 
+SEQ11 \x03q\x00\x00
  
 拓司は無人の廊下を足早に通り抜け、階段をとんとんと駆け下り\nた。@
 \n拓司\n　「……！」@
@@ -45,15 +45,15 @@ SEQ05 \x03q\x00\x00
 
 \x00  
 SEQ01 \xf0\x04
-SEQ13 
-SEQ04  b\x04\x00 
-SEQ12  \x90\x04\x00 
-SEQ06 SCE049_003\x00 \xee\x06\x00 
+SEQ14 
+SEQ08 " b\x04\x00 
+SEQ08  \x90\x04\x00 
+SEQ05 SCE049_003\x00 \xee\x06\x00 
 SEQ07  
 SEQ01 
-SEQ03 8\\
-SEQ13 
-SEQ05 \x03k\x00\x00
+SEQ10 8\\
+SEQ14 
+SEQ11 \x03k\x00\x00
  
 なたね\n　「どうしたの、虎菱くん？」@
 拓司\n　「いま……誰かが……」@
@@ -70,15 +70,15 @@ SEQ05 \x03k\x00\x00
 
 \x00\x00\x00  
 SEQ01 2\x07
-SEQ13 
-SEQ04  b\x04\x00 
-SEQ12  \x90\x04\x00 
-SEQ06 SCE049_004\x00 \x18\t\x00 
+SEQ14 
+SEQ08 " b\x04\x00 
+SEQ08  \x90\x04\x00 
+SEQ05 SCE049_004\x00 \x18\t\x00 
 SEQ07  
 SEQ01 
-SEQ03 <\\
-SEQ13 
-SEQ05 \x03\xa0\x00\x00
+SEQ10 <\\
+SEQ14 
+SEQ11 \x03\xa0\x00\x00
  
 拓司\n　「あ、ああ。なんでもない……」@
 \n　そうとしかいいようがない。\p実際、なにもありはしないのだか\n　ら。@
@@ -90,15 +90,15 @@ SEQ05 \x03\xa0\x00\x00
 
 \x00\x00\x00  
 SEQ01 \\\t
-SEQ13 
-SEQ04  b\x04\x00 
-SEQ12  \x90\x04\x00 
-SEQ06 SCE049_005\x00 \x16\x0c\x00 
+SEQ14 
+SEQ08 " b\x04\x00 
+SEQ08  \x90\x04\x00 
+SEQ05 SCE049_005\x00 \x16\x0c\x00 
 SEQ07  
 SEQ01 
-SEQ03 @\\
-SEQ13 
-SEQ05 \x03q\x00\x00
+SEQ10 @\\
+SEQ14 
+SEQ11 \x03q\x00\x00
  
 なたね\n　「虎菱くんも感じるのね？\p　この学園は……いいえ、この街は\n　　すでに、エンケリュスの自殺波動の勢力下にあるわ」@
 拓司\n　「……」@
@@ -108,15 +108,15 @@ SEQ05 \x03q\x00\x00
 
 \x00\x00\x00  
 SEQ01 Z\x0c
-SEQ13 
-SEQ04  b\x04\x00 
-SEQ12  \x90\x04\x00 
-SEQ06 SCE049_006\x00 X\x0e\x00 
+SEQ14 
+SEQ08 " b\x04\x00 
+SEQ08  \x90\x04\x00 
+SEQ05 SCE049_006\x00 X\x0e\x00 
 SEQ07  
 SEQ01 
-SEQ03 D\\
-SEQ13 
-SEQ05 \x03B\x00\x00
+SEQ10 D\\
+SEQ14 
+SEQ11 \x03B\x00\x00
  
 　３階まで降りた拓司は、階段の正面の教室へと駆け込んだ。@
 　……いや、駆け込もうとしたところで、背後からガッシと肩を\n　掴まれ、静止させられた。@
@@ -125,11 +125,11 @@ SEQ05 \x03B\x00\x00
 
 \x00\x00\x00  
 SEQ01 \x9c\x0e
-SEQ13 
-SEQ04  b\x04\x00 
-SEQ12  \x90\x04\x00 
-SEQ10   \x00\x00 
+SEQ14 
+SEQ08 " b\x04\x00 
+SEQ08  \x90\x04\x00 
+SEQ06   \x00\x00 
 SEQ02 StopCD SPC01 \xea\x0f\x00 
-SEQ10  b\x04\x00 
-SEQ12 \x03\x03\x00\x00TextClose SPC02 \x12\x10\x00 
-ENDF
+SEQ06  b\x04\x00 
+SEQ04 TextClose SPC02 \x12\x10\x00 
+FEND

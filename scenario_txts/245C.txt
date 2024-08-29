@@ -1,9 +1,9 @@
-STRF
+FSTR
 Q!\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00r\x1b\x00\x03\x03\x00\x00SCE245_001\x00 \x06\x00\x00 
 SEQ07  
 SEQ01 
-SEQ03 p\x8e\x01\x0c
-SEQ05 \x03\xb9\x00\x00
+SEQ10 p\x8e\x01\x0c
+SEQ11 \x03\xb9\x00\x00
  
 拓司\n　「走れッ！」@
 \nいうが早いか、すでに拓司は地を蹴っている。@
@@ -21,15 +21,15 @@ SEQ05 \x03\xb9\x00\x00
 
 \x00  
 SEQ01 J\x00
-SEQ13 
-SEQ04 
-SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 N\x03\x00 
+SEQ14 
+SEQ08 "
+SEQ13 .\\Data\\Script\\TextFunc.Fob SPC01 N\x03\x00 
 SEQ02 TextOn SPC01 |\x03\x00 
-SEQ06 SCE245_002\x00 \x98\x03\x00 
+SEQ05 SCE245_002\x00 \x98\x03\x00 
 SEQ07  
 SEQ01 
-SEQ03 t\x8e\x01\x0c
-SEQ05 \x03h\x00\x00
+SEQ10 t\x8e\x01\x0c
+SEQ11 \x03h\x00\x00
  
 地鳴りは徐々に大きくなっていく。@
 低く、重く……それは世界の終末を確信させるに十分な不吉さを\n備えていた。@
@@ -40,14 +40,14 @@ SEQ05 \x03h\x00\x00
 
 \x00\x00\x00  
 SEQ01 \xdc\x03
-SEQ13 
-SEQ04  N\x03\x00 
-SEQ12  |\x03\x00 
-SEQ06 SCE245_003\x00 \xb6\x05\x00 
+SEQ14 
+SEQ08 " N\x03\x00 
+SEQ08  |\x03\x00 
+SEQ05 SCE245_003\x00 \xb6\x05\x00 
 SEQ07  
 SEQ01 
-SEQ03 x\x8e\x01\x0c
-SEQ05 \x03\x8c\x00\x00
+SEQ10 x\x8e\x01\x0c
+SEQ11 \x03\x8c\x00\x00
  
 ざあっ！@
 \n足の裏から頭のてっぺんへ。@
@@ -60,14 +60,14 @@ SEQ05 \x03\x8c\x00\x00
 
 \x00\x00  
 SEQ01 \xfa\x05
-SEQ13 
-SEQ04  N\x03\x00 
-SEQ12  |\x03\x00 
-SEQ06 SCE245_004\x00 d\x08\x00 
+SEQ14 
+SEQ08 " N\x03\x00 
+SEQ08  |\x03\x00 
+SEQ05 SCE245_004\x00 d\x08\x00 
 SEQ07  
 SEQ01 
-SEQ03 |\x8e\x01\x0c
-SEQ05 \x03k\x00\x00
+SEQ10 |\x8e\x01\x0c
+SEQ11 \x03k\x00\x00
  
 蜥蜴の悲鳴だった。@
 それまで聞いたこともないくらい大きい蜥蜴の悲鳴だった！@
@@ -79,14 +79,14 @@ SEQ05 \x03k\x00\x00
 
 \x00  
 SEQ01 \xa8\x08
-SEQ13 
-SEQ04  N\x03\x00 
-SEQ12  |\x03\x00 
-SEQ06 SCE245_005\x00 \x8e\n\x00 
+SEQ14 
+SEQ08 " N\x03\x00 
+SEQ08  |\x03\x00 
+SEQ05 SCE245_005\x00 \x8e\n\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x80\x8e\x01\x0c
-SEQ05 \x03}\x00\x00
+SEQ10 \x80\x8e\x01\x0c
+SEQ11 \x03}\x00\x00
  
 拓司\n　「ああああああああああああ！」@
 \n拓司は耳をふさいでうずくまった。@
@@ -99,14 +99,14 @@ SEQ05 \x03}\x00\x00
 
 \x00\x00\x00  
 SEQ01 \xd2\n
-SEQ13 
-SEQ04  N\x03\x00 
-SEQ12  |\x03\x00 
-SEQ06 SCE245_006\x00 \x00\r\x00 
+SEQ14 
+SEQ08 " N\x03\x00 
+SEQ08  |\x03\x00 
+SEQ05 SCE245_006\x00 \x00\r\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x84\x8e\x01\x0c
-SEQ05 \x03\x99\x00\x00
+SEQ10 \x84\x8e\x01\x0c
+SEQ11 \x03\x99\x00\x00
  
 拓司\n　「サ・モ・モ・オオオオオ・オオオオ！」@
 \n拓司は叫んだ。@
@@ -123,14 +123,14 @@ SEQ05 \x03\x99\x00\x00
 
 \x00\x00\x00  
 SEQ01 D\r
-SEQ13 
-SEQ04  N\x03\x00 
-SEQ12  |\x03\x00 
-SEQ06 SCE245_007\x00 \xe2\x0f\x00 
+SEQ14 
+SEQ08 " N\x03\x00 
+SEQ08  |\x03\x00 
+SEQ05 SCE245_007\x00 \xe2\x0f\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x88\x8e\x01\x0c
-SEQ05 \x039\x00\x00
+SEQ10 \x88\x8e\x01\x0c
+SEQ11 \x039\x00\x00
  
 数メートル向こうに、早桃の姿が見える。@
 拓司は一歩踏み出した。@
@@ -139,14 +139,14 @@ SEQ05 \x039\x00\x00
 
 \x00  
 SEQ01 &\x10
-SEQ13 
-SEQ04  N\x03\x00 
-SEQ12  |\x03\x00 
-SEQ06 SCE245_008\x00 D\x11\x00 
+SEQ14 
+SEQ08 " N\x03\x00 
+SEQ08  |\x03\x00 
+SEQ05 SCE245_008\x00 D\x11\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x8c\x8e\x01\x0c
-SEQ05 \x03\xa1\x00\x00
+SEQ10 \x8c\x8e\x01\x0c
+SEQ11 \x03\xa1\x00\x00
  
 /*▲SE33　一回再生（再生終了待たず先へ）*/\a2,0,33,0,\a6,0,0,0,キイイイイイイイイイイイイイイイイイイイイイイイイイイイ！@
 /*▲↑　再生終了を待つ*/\a3,0,0,0,\a4,0,0,0,いつの間にか、鼻血が流れ出している。@
@@ -156,14 +156,14 @@ SEQ05 \x03\xa1\x00\x00
 \n/*▲SE33　一回再生（再生終了待たず先へ）*/\a2,0,33,0,\a6,0,0,0,キイイイイイイイイイイイイイイイイイイイイイイイイイイイ！\w\n/*▲↑　再生終了を待つ*/\a3,0,0,0,\a4,0,0,0,\z
   
 SEQ01 \x88\x11
-SEQ13 
-SEQ04  N\x03\x00 
-SEQ12  |\x03\x00 
-SEQ06 SCE245_009\x00 F\x14\x00 
+SEQ14 
+SEQ08 " N\x03\x00 
+SEQ08  |\x03\x00 
+SEQ05 SCE245_009\x00 F\x14\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x90\x8e\x01\x0c
-SEQ05 \x03I\x00\x00
+SEQ10 \x90\x8e\x01\x0c
+SEQ11 \x03I\x00\x00
  
 こうして旅が始まったいま、俺にはいまや目的があるのだ。@
 何かから逃げているのではなく、何かに向かっているのだ。@
@@ -174,20 +174,20 @@ SEQ05 \x03I\x00\x00
 
 \x00\x00\x00  
 SEQ01 \x8a\x14
-SEQ13 
-SEQ04  N\x03\x00 
-SEQ12  |\x03\x00 
-SEQ10   
+SEQ14 
+SEQ08 " N\x03\x00 
+SEQ08  |\x03\x00 
+SEQ06   
 SEQ01 7\x00
-SEQ13 
-SEQ04 
-SEQ08 .\\Data\\Script\\Bg.Fob SPC03 \x02\x16\x00 
-SEQ12 \x03\x04\x00\x00BgAutoFadeIn SPC03 ,\x16\x00 
-SEQ06 SCE245_010\x00 P\x16\x00 
+SEQ14 
+SEQ08 "
+SEQ12 .\\Data\\Script\\Bg.Fob SPC03 \x02\x16\x00 
+SEQ03 BgAutoFadeIn SPC03 ,\x16\x00 
+SEQ05 SCE245_010\x00 P\x16\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x94\x8e\x01\x0c
-SEQ05 \x03w\x00\x00
+SEQ10 \x94\x8e\x01\x0c
+SEQ11 \x03w\x00\x00
  
 拓司\n　「早桃！」@
 \n早桃は動かない。@
@@ -203,19 +203,19 @@ SEQ05 \x03w\x00\x00
 
 \x00  
 SEQ01 \x94\x16
-SEQ13 
-SEQ04  N\x03\x00 
-SEQ12  |\x03\x00 
-SEQ10   
+SEQ14 
+SEQ08 " N\x03\x00 
+SEQ08  |\x03\x00 
+SEQ06   
 SEQ01 \xc9\x00
-SEQ13 
-SEQ04  \x02\x16\x00 
-SEQ12  ,\x16\x00 
-SEQ06 SCE245_011\x00 \xde\x18\x00 
+SEQ14 
+SEQ08 " \x02\x16\x00 
+SEQ08  ,\x16\x00 
+SEQ05 SCE245_011\x00 \xde\x18\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x98\x8e\x01\x0c
-SEQ05 \x03L\x00\x00
+SEQ10 \x98\x8e\x01\x0c
+SEQ11 \x03L\x00\x00
  
 ふいに目の前が真っ白になった。@
 すべての音が聞こえなくなった。@
@@ -228,22 +228,22 @@ SEQ05 \x03L\x00\x00
 
 \x00\x00\x00  
 SEQ01 "\x19
-SEQ13 
-SEQ04  N\x03\x00 
-SEQ12  |\x03\x00 
-SEQ10   
+SEQ14 
+SEQ08 " N\x03\x00 
+SEQ08  |\x03\x00 
+SEQ06   
 SEQ01 
-SEQ12 \x0c
-SEQ04 
-SEQ08 .\\Data\\Script\\Bgm.Fob SPC02 \xa6\x1a\x00 
+SEQ08 \x0c
+SEQ08 "
+SEQ12 .\\Data\\Script\\Bgm.Fob SPC02 \xa6\x1a\x00 
 SEQ02 SeStop SPC01 \xd0\x1a\x00 
-SEQ10  \xa6\x1a\x00 
+SEQ06  \xa6\x1a\x00 
 SEQ02 StopCD SPC01 \xf8\x1a\x00 
-SEQ10   
+SEQ06   
 SEQ01 \xc8\x00
-SEQ13 
-SEQ04  \x02\x16\x00 
-SEQ12  ,\x16\x00 
-SEQ10  N\x03\x00 
-SEQ12 \x03\x03\x00\x00TextClose SPC02 T\x1b\x00 
-ENDF
+SEQ14 
+SEQ08 " \x02\x16\x00 
+SEQ08  ,\x16\x00 
+SEQ06  N\x03\x00 
+SEQ04 TextClose SPC02 T\x1b\x00 
+FEND

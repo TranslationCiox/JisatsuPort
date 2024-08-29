@@ -1,10 +1,10 @@
-STRF
+FSTR
 \xe2\x0c\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00p\n\x00\x03\x03\x00\x00SCE082_001\x00 \x06\x00\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xc0\x8f
-SEQ13 
-SEQ05 \x03\xc4\x00\x00
+SEQ10 \xc0\x8f
+SEQ14 
+SEQ11 \x03\xc4\x00\x00
  
 拓司はベッドから立ち上がり、拘束着の女の子に歩み寄った。@
 看護婦がやや緊張の表情を作る。\p教授が大丈夫だ、という。@
@@ -19,16 +19,16 @@ SEQ05 \x03\xc4\x00\x00
 
 \x00  
 SEQ01 J\x00
-SEQ13 
-SEQ04 
-SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 z\x03\x00 
+SEQ14 
+SEQ08 "
+SEQ13 .\\Data\\Script\\TextFunc.Fob SPC01 z\x03\x00 
 SEQ02 TextOn SPC01 \xa8\x03\x00 
-SEQ06 SCE082_002\x00 \xc4\x03\x00 
+SEQ05 SCE082_002\x00 \xc4\x03\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xc4\x8f
-SEQ13 
-SEQ05 \x03\\\x00\x00
+SEQ10 \xc4\x8f
+SEQ14 
+SEQ11 \x03\\\x00\x00
  
 混乱してきた思考から逃れるように、拓司は頭を振った。@
 そして、目の前にある確かな物を確認しようと、拘束着の女の子\nの肩に手を伸ばした。@
@@ -37,15 +37,15 @@ SEQ05 \x03\\\x00\x00
 /*▲SE　停止*/\a4,2,0,0,/*▲BGM　停止*/\a4,-1,0,0,/*▲SE16　一回再生（再生終わりまで待たないで次へ）*/\a2,0,16,0,\n　ザザザザザザザザザザ\w\n\a4,0,0,0,\z
   
 SEQ01 \x08\x04
-SEQ13 
-SEQ04  z\x03\x00 
-SEQ12  \xa8\x03\x00 
-SEQ06 SCE082_003\x00 \xb2\x05\x00 
+SEQ14 
+SEQ08 " z\x03\x00 
+SEQ08  \xa8\x03\x00 
+SEQ05 SCE082_003\x00 \xb2\x05\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xc8\x8f
-SEQ13 
-SEQ05 \x03i\x00\x00
+SEQ10 \xc8\x8f
+SEQ14 
+SEQ11 \x03i\x00\x00
  
 頭が割れるような大音響だ。\pまた幻聴かとあたりを見れば、教授\nも看護婦も、みな耳を押さえてうずくまっている。\pどうやら本物\nの音らしい。\p聞いていると意識が遠くなるような、奇妙な音だ。@
 音は、拘束着の女の子から発せられてるようだった。@
@@ -53,15 +53,15 @@ SEQ05 \x03i\x00\x00
 /*▲SE16　一回再生（再生終わりまで待たないで次へ）*/\a2,0,16,0,\n　ザザザザザザザザザザ\w\n\a4,0,0,0,\z
   
 SEQ01 \xf6\x05
-SEQ13 
-SEQ04  z\x03\x00 
-SEQ12  \xa8\x03\x00 
-SEQ06 SCE082_004\x00 \xd4\x07\x00 
+SEQ14 
+SEQ08 " z\x03\x00 
+SEQ08  \xa8\x03\x00 
+SEQ05 SCE082_004\x00 \xd4\x07\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xcc\x8f
-SEQ13 
-SEQ05 \x03}\x00\x00
+SEQ10 \xcc\x8f
+SEQ14 
+SEQ11 \x03}\x00\x00
  
 いつの間にか女の子の目に意志の光が宿っている。@
 なにか懇願するように拓司を見つめている。@
@@ -72,9 +72,9 @@ SEQ05 \x03}\x00\x00
 
   
 SEQ01 \x18\x08
-SEQ13 
-SEQ04  z\x03\x00 
-SEQ12  \xa8\x03\x00 
-SEQ10  z\x03\x00 
-SEQ12 \x03\x03\x00\x00TextClose SPC02 R\n\x00 
-ENDF
+SEQ14 
+SEQ08 " z\x03\x00 
+SEQ08  \xa8\x03\x00 
+SEQ06  z\x03\x00 
+SEQ04 TextClose SPC02 R\n\x00 
+FEND

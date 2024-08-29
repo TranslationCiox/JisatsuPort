@@ -1,10 +1,10 @@
-STRF
+FSTR
 \xb7\x03\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00 \x044\x01\x00\x00\x00\xe6\x02\x00\x03\x03\x00\x00SCE103_001\x00 \x06\x00\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x90\xb0
-SEQ13 
-SEQ05 \x03\x82\x00\x00
+SEQ10 \x90\xb0
+SEQ14 
+SEQ11 \x03\x82\x00\x00
  
 紅葉\n　「……どうして？」@
 拓司\n　「なにかが暴力で解決されるってことが証明されたら、たぶん\n　　もう歯止めが利かなくなる。@
@@ -16,10 +16,10 @@ SEQ05 \x03\x82\x00\x00
 \z
 \x00  
 SEQ01 J\x00
-SEQ13 
-SEQ04 
-SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 r\x02\x00 
+SEQ14 
+SEQ08 "
+SEQ13 .\\Data\\Script\\TextFunc.Fob SPC01 r\x02\x00 
 SEQ02 TextOn SPC01 \xa0\x02\x00 
-SEQ10  r\x02\x00 
-SEQ12 \x03\x03\x00\x00TextClose SPC02 \xc8\x02\x00 
-ENDF
+SEQ06  r\x02\x00 
+SEQ04 TextClose SPC02 \xc8\x02\x00 
+FEND

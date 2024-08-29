@@ -1,10 +1,10 @@
-STRF
+FSTR
 \xbf\x06\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00T\x05\x00\x03\x03\x00\x00SCE100_001\x00 \x06\x00\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xe0\xab
-SEQ13 
-SEQ05 \x03q\x00\x00
+SEQ10 \xe0\xab
+SEQ14 
+SEQ11 \x03q\x00\x00
  
 拓司\n　「雲居さんにいっておきたいことがある」@
 なたね\n　「……」@
@@ -12,16 +12,16 @@ SEQ05 \x03q\x00\x00
 
 \x00  
 SEQ01 J\x00
-SEQ13 
-SEQ04 
-SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 .\x02\x00 
+SEQ14 
+SEQ08 "
+SEQ13 .\\Data\\Script\\TextFunc.Fob SPC01 .\x02\x00 
 SEQ02 TextOn SPC01 \\\x02\x00 
-SEQ06 SCE100_002\x00 x\x02\x00 
+SEQ05 SCE100_002\x00 x\x02\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xe4\xab
-SEQ13 
-SEQ05 \x03\x8d\x00\x00
+SEQ10 \xe4\xab
+SEQ14 
+SEQ11 \x03\x8d\x00\x00
  
 早桃\n　「そうよ、そうよ！」@
 拓司\n　「……。\p早桃にもいっておく。\pいいかい、早桃。\pみんな怖いん\n　　だ。\pみんな叫びたいんだ。\pでも、我慢している。\pだから、お\n　　前も我慢しなくちゃいけない」@
@@ -33,9 +33,9 @@ SEQ05 \x03\x8d\x00\x00
 
 \x00\x00\x00  
 SEQ01 \xbc\x02
-SEQ13 
-SEQ04  .\x02\x00 
-SEQ12  \\\x02\x00 
-SEQ10  .\x02\x00 
-SEQ12 \x03\x03\x00\x00TextClose SPC02 6\x05\x00 
-ENDF
+SEQ14 
+SEQ08 " .\x02\x00 
+SEQ08  \\\x02\x00 
+SEQ06  .\x02\x00 
+SEQ04 TextClose SPC02 6\x05\x00 
+FEND

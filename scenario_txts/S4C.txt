@@ -1,15 +1,15 @@
-STRF
+FSTR
 \x1a\x0b\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00>\t\x00  
 SEQ01 \x04\x01
-SEQ13 
-SEQ04 
-SEQ08 .\\Data\\Script\\Bgm.Fob SPC02  \x00\x00 
+SEQ14 
+SEQ08 "
+SEQ12 .\\Data\\Script\\Bgm.Fob SPC02  \x00\x00 
 SEQ02 PlayCD SPC01 J\x00\x00 
-SEQ06 SCES04_001\x00 f\x00\x00 
+SEQ05 SCES04_001\x00 f\x00\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xf8\xb5\x01\x0c
-SEQ05 \x03\x99\x00\x00
+SEQ10 \xf8\xb5\x01\x0c
+SEQ11 \x03\x99\x00\x00
  
 援助交際で怖い目にあったって話も聞いていたけど、たぶんそれ\nはウソだって、そう思ってた。@
 大人がそういうことはやめさせようと作った怖いお話。@
@@ -22,15 +22,15 @@ SEQ05 \x03\x99\x00\x00
 
 \x00\x00\x00  
 SEQ01 \xaa\x00
-SEQ13 
-SEQ04 
-SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 .\x03\x00 
+SEQ14 
+SEQ08 "
+SEQ13 .\\Data\\Script\\TextFunc.Fob SPC01 .\x03\x00 
 SEQ02 TextOn SPC01 \\\x03\x00 
-SEQ06 SCES04_002\x00 x\x03\x00 
+SEQ05 SCES04_002\x00 x\x03\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xfc\xb5\x01\x0c
-SEQ05 \x03\xdd\x00\x00
+SEQ10 \xfc\xb5\x01\x0c
+SEQ11 \x03\xdd\x00\x00
  
 そんなとき、学校の帰り、偶然何人かのクラスの女の子と一緒に\nなって、ピザのお店に寄ったの。@
 すごく緊張して、嫌われないようにしなきゃ、って、ずっとドキ\nドキしてた。\pでも、あんまりうまくお話ができなくて、みんなは\n私に失望しているみたいに見えた。@
@@ -47,25 +47,25 @@ SEQ05 \x03\xdd\x00\x00
 
 \x00\x00\x00  
 SEQ01 \xbc\x03
-SEQ13 
-SEQ04  .\x03\x00 
-SEQ12  \\\x03\x00 
-SEQ06 SCES04_003\x00 j\x07\x00 
+SEQ14 
+SEQ08 " .\x03\x00 
+SEQ08  \\\x03\x00 
+SEQ05 SCES04_003\x00 j\x07\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x00\xb6\x01\x0c
-SEQ05 \x03A\x00\x00
+SEQ10 \x00\xb6\x01\x0c
+SEQ11 \x03A\x00\x00
  
 それから私はみんなにいろんなものをごちそうしたり、プレゼン\nトしたりしはじめた。@
 それで友情を買おうと思ったわけじゃないし、買えるとも思って\nなかった。\pでも、自己の価値は証明できるし、それこそが、私\nがずっと欲しくてたまらなかったものだったから。\
 
 \x00  
 SEQ01 \xae\x07
-SEQ13 
-SEQ04  .\x03\x00 
-SEQ12  \\\x03\x00 
-SEQ10   \x00\x00 
+SEQ14 
+SEQ08 " .\x03\x00 
+SEQ08  \\\x03\x00 
+SEQ06   \x00\x00 
 SEQ02 StopCD SPC01 \xf8\x08\x00 
-SEQ10  .\x03\x00 
-SEQ12 \x03\x03\x00\x00TextClose SPC02  \t\x00 
-ENDF
+SEQ06  .\x03\x00 
+SEQ04 TextClose SPC02  \t\x00 
+FEND

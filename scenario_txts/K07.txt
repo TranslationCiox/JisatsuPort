@@ -1,18 +1,18 @@
-STRF
+FSTR
 v\t\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x008\x07\x00  
 SEQ01 \xc8\x00
-SEQ13 
-SEQ04 
-SEQ08 .\\Data\\Script\\Bg.Fob SPC03  \x00\x00 
-SEQ12 \x03\x04\x00\x00BgAutoFadeIn SPC03 J\x00\x00 
-SEQ10 
-SEQ08 .\\Data\\Script\\Bgm.Fob SPC02 n\x00\x00 
+SEQ14 
+SEQ08 "
+SEQ12 .\\Data\\Script\\Bg.Fob SPC03  \x00\x00 
+SEQ03 BgAutoFadeIn SPC03 J\x00\x00 
+SEQ06 
+SEQ12 .\\Data\\Script\\Bgm.Fob SPC02 n\x00\x00 
 SEQ02 StopCD SPC01 \x98\x00\x00 
-SEQ06 SCEK07_001\x00 \xb4\x00\x00 
+SEQ05 SCEK07_001\x00 \xb4\x00\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xf8\xa6\x01\x0c
-SEQ05 \x03\x8a\x00\x00
+SEQ10 \xf8\xa6\x01\x0c
+SEQ11 \x03\x8a\x00\x00
  
 　目的地は歩道橋だと、私は思っていた。@
 　そこには道と、歩道橋しかなかったからだ。@
@@ -25,15 +25,15 @@ SEQ05 \x03\x8a\x00\x00
 ゆきがここで隠れて煙草でも吸っているということなのだろうか？\n\pだんだん腹が立ってきた。\w\z
 \x00  
 SEQ01 \xf8\x00
-SEQ13 
-SEQ04 
-SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 @\x03\x00 
+SEQ14 
+SEQ08 "
+SEQ13 .\\Data\\Script\\TextFunc.Fob SPC01 @\x03\x00 
 SEQ02 TextOn SPC01 n\x03\x00 
-SEQ06 SCEK07_002\x00 \x8a\x03\x00 
+SEQ05 SCEK07_002\x00 \x8a\x03\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xf8\xa6\x01\x0c
-SEQ05 \x03\x9b\x00\x00
+SEQ10 \xf8\xa6\x01\x0c
+SEQ11 \x03\x9b\x00\x00
  
 　そんなことが秘密だとでもいうつもりか？@
 私が告白した秘密に比べて、喫煙なんてちっぽけすぎる。@
@@ -48,19 +48,19 @@ SEQ05 \x03\x9b\x00\x00
 私は急に怖くなった。\w\z
 \x00  
 SEQ01 \xce\x03
-SEQ13 
-SEQ04  @\x03\x00 
-SEQ12  n\x03\x00 
-SEQ10 \x03\x18\x00\x00
+SEQ14 
+SEQ08 " @\x03\x00 
+SEQ08  n\x03\x00 
+SEQ06 \x03\x18\x00\x00
 CHOICE
 「もういいよ、帰ろう」と私はいった\n「聞かせて」と、私は恐怖を抑えていった。\n\l0,2,
 ENDCHOICE
 
 \x00\x00\x00  
 SEQ01 t\x06
-SEQ13 
-SEQ04  @\x03\x00 
-SEQ12  n\x03\x00 
-SEQ10  @\x03\x00 
-SEQ12 \x03\x03\x00\x00TextClose SPC02 \x1a\x07\x00 
-ENDF
+SEQ14 
+SEQ08 " @\x03\x00 
+SEQ08  n\x03\x00 
+SEQ06  @\x03\x00 
+SEQ04 TextClose SPC02 \x1a\x07\x00 
+FEND

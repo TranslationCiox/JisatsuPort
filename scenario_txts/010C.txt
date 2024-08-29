@@ -1,25 +1,25 @@
-STRF
+FSTR
 \xe0.\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00((\x00\x03\x03\x00\x00SCE010_001\x00 \x06\x00\x00 
 SEQ07  
 SEQ01 
-SEQ03 @\x1f
-SEQ13 
-SEQ05 \x03\x11\x00\x00
+SEQ10 @\x1f
+SEQ14 
+SEQ11 \x03\x11\x00\x00
  
 \n\n\n\n\n\n\n\n\n　　　　　　　　　　　『虎菱家の食卓』\
 
 \x00\x00\x00  
 SEQ01 J\x00
-SEQ13 
-SEQ04 
-SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 \xae\x00\x00 
+SEQ14 
+SEQ08 "
+SEQ13 .\\Data\\Script\\TextFunc.Fob SPC01 \xae\x00\x00 
 SEQ02 TextOn SPC01 \xdc\x00\x00 
-SEQ06 SCE010_002\x00 \xf8\x00\x00 
+SEQ05 SCE010_002\x00 \xf8\x00\x00 
 SEQ07  
 SEQ01 
-SEQ03 D\x1f
-SEQ13 
-SEQ05 \x03a\x00\x00
+SEQ10 D\x1f
+SEQ14 
+SEQ11 \x03a\x00\x00
  
 　朝。@
 　食卓の上に、フォークとナイフがきれいに並べられている。@
@@ -33,30 +33,30 @@ SEQ05 \x03a\x00\x00
 
 \x00\x00\x00  
 SEQ01 <\x01
-SEQ13 
-SEQ04  \xae\x00\x00 
-SEQ12  \xdc\x00\x00 
-SEQ06 SCE010_003\x00 \xfa\x02\x00 
+SEQ14 
+SEQ08 " \xae\x00\x00 
+SEQ08  \xdc\x00\x00 
+SEQ05 SCE010_003\x00 \xfa\x02\x00 
 SEQ07  
 SEQ01 
-SEQ03 H\x1f
-SEQ13 
-SEQ05 \x03\x0b\x00\x00
+SEQ10 H\x1f
+SEQ14 
+SEQ11 \x03\x0b\x00\x00
  
 　『死ぬ』こと。@
 \n\n　『死』。\
 
 \x00  
 SEQ01 >\x03
-SEQ13 
-SEQ04  \xae\x00\x00 
-SEQ12  \xdc\x00\x00 
-SEQ06 SCE010_004\x00 \xa4\x03\x00 
+SEQ14 
+SEQ08 " \xae\x00\x00 
+SEQ08  \xdc\x00\x00 
+SEQ05 SCE010_004\x00 \xa4\x03\x00 
 SEQ07  
 SEQ01 
-SEQ03 L\x1f
-SEQ13 
-SEQ05 \x03c\x00\x00
+SEQ10 L\x1f
+SEQ14 
+SEQ11 \x03c\x00\x00
  
 　いまや拓司にとって、死を真剣に考えることこそが、生者とし\n　ての自分を実感する唯一の方法だった。\p死に備わる様々な要素\n　－－痛みであるとか、出血であるとか、恐怖であるとか－－は、\n　まだ、リアルなものとして拓司の中に残っている。@
 　死がどういうものなのか、それははっきりと認識できる。@
@@ -64,15 +64,15 @@ SEQ05 \x03c\x00\x00
 
 \x00  
 SEQ01 \xe8\x03
-SEQ13 
-SEQ04  \xae\x00\x00 
-SEQ12  \xdc\x00\x00 
-SEQ06 SCE010_005\x00 \xae\x05\x00 
+SEQ14 
+SEQ08 " \xae\x00\x00 
+SEQ08  \xdc\x00\x00 
+SEQ05 SCE010_005\x00 \xae\x05\x00 
 SEQ07  
 SEQ01 
-SEQ03 P\x1f
-SEQ13 
-SEQ05 \x03X\x00\x00
+SEQ10 P\x1f
+SEQ14 
+SEQ11 \x03X\x00\x00
  
 　その死を、生と並べて置く。@
 　両者に触れ、味わい、嗅ぎ、眺めて相違点を探る。@
@@ -85,15 +85,15 @@ SEQ05 \x03X\x00\x00
 
 \x00\x00\x00  
 SEQ01 \xf2\x05
-SEQ13 
-SEQ04  \xae\x00\x00 
-SEQ12  \xdc\x00\x00 
-SEQ06 SCE010_006\x00 \x8c\x07\x00 
+SEQ14 
+SEQ08 " \xae\x00\x00 
+SEQ08  \xdc\x00\x00 
+SEQ05 SCE010_006\x00 \x8c\x07\x00 
 SEQ07  
 SEQ01 
-SEQ03 T\x1f
-SEQ13 
-SEQ05 \x03\xa6\x00\x00
+SEQ10 T\x1f
+SEQ14 
+SEQ11 \x03\xa6\x00\x00
  
 　しかし、リアルに死を想像することは、なかなか難しい。@
 　なぜならば死を思ったところで本当に死ぬというわけではなく、\n　そして当然の事ながら、死んだ経験など一度もないからである。\n　@
@@ -107,25 +107,25 @@ SEQ05 \x03\xa6\x00\x00
 
 \x00  
 SEQ01 \xd0\x07
-SEQ13 
-SEQ04  \xae\x00\x00 
-SEQ12  \xdc\x00\x00 
-SEQ06 SCE010_007\x00 \xa2\n\x00 
+SEQ14 
+SEQ08 " \xae\x00\x00 
+SEQ08  \xdc\x00\x00 
+SEQ05 SCE010_007\x00 \xa2\n\x00 
 SEQ07  
 SEQ01 
-SEQ03 X\x1f
-SEQ13 
-SEQ05   
+SEQ10 X\x1f
+SEQ14 
+SEQ11   
 SEQ01 \x00\x00\x00
-SEQ13 
-SEQ04   \x04\x00\x00\r\x00\x00 \x07\x00
-SEQ13 
-SEQ04   \x08\x00\x00\r\x00\x00 \x00\x00\x00
-SEQ13 
-SEQ04 
-SEQ08 .\\Data\\Script\\Bgm.Fob SPC02 4\x0b\x00 
-SEQ12 \x03\x03\x00\x00SePlayEx SPC03 ^\x0b\x00 
-SEQ10 \x03d\x00\x00
+SEQ14 
+SEQ08 "  \x04\x00\x00\r\x00\x00 \x07\x00
+SEQ14 
+SEQ08 "  \x08\x00\x00\r\x00\x00 \x00\x00\x00
+SEQ14 
+SEQ08 "
+SEQ12 .\\Data\\Script\\Bgm.Fob SPC02 4\x0b\x00 
+SEQ04 SePlayEx SPC03 ^\x0b\x00 
+SEQ06 \x03d\x00\x00
  
 　間の抜けたテレビの女がいう。@
 \nアナウンサー\n　「－－センセイ、ここ最近、『自殺』という言葉を口にする若\n　　者が増えていますよねえ？」@
@@ -134,15 +134,15 @@ SEQ10 \x03d\x00\x00
 
 \x00  
 SEQ01 ~\x0b
-SEQ13 
-SEQ04  \xae\x00\x00 
-SEQ12  \xdc\x00\x00 
-SEQ06 SCE010_008\x00 H\r\x00 
+SEQ14 
+SEQ08 " \xae\x00\x00 
+SEQ08  \xdc\x00\x00 
+SEQ05 SCE010_008\x00 H\r\x00 
 SEQ07  
 SEQ01 
-SEQ03 \\\x1f
-SEQ13 
-SEQ05 \x03\xcb\x00\x00
+SEQ10 \\\x1f
+SEQ14 
+SEQ11 \x03\xcb\x00\x00
  
 アナウンサー\n　「あ！　ありますあります！」@
 コメンテーター\n　「『ほら、その隅に白髪のおじいさんが立っている』とか、ま\n　　あ、彼女はそういうことをいうわけです。\p周囲に自殺をほの\n　　めかす若者のメンタリティというのは、どこかそれに似てい\n　　ると思うんです」@
@@ -151,15 +151,15 @@ SEQ05 \x03\xcb\x00\x00
 
 \x00  
 SEQ01 \x8c\r
-SEQ13 
-SEQ04  \xae\x00\x00 
-SEQ12  \xdc\x00\x00 
-SEQ06 SCE010_009\x00 \xf2\x10\x00 
+SEQ14 
+SEQ08 " \xae\x00\x00 
+SEQ08  \xdc\x00\x00 
+SEQ05 SCE010_009\x00 \xf2\x10\x00 
 SEQ07  
 SEQ01 
-SEQ03 `\x1f
-SEQ13 
-SEQ05 \x03j\x00\x00
+SEQ10 `\x1f
+SEQ14 
+SEQ11 \x03j\x00\x00
  
 アナウンサー\n　「自分の後ろに幽霊がいるかもしれないわけですから！」@
 コメンテーター\n　「ハハ。だから周囲は大騒ぎして、彼女に注目をする……。@
@@ -168,15 +168,15 @@ SEQ05 \x03j\x00\x00
 
 \x00  
 SEQ01 6\x11
-SEQ13 
-SEQ04  \xae\x00\x00 
-SEQ12  \xdc\x00\x00 
-SEQ06 SCE010_010\x00 \x18\x13\x00 
+SEQ14 
+SEQ08 " \xae\x00\x00 
+SEQ08  \xdc\x00\x00 
+SEQ05 SCE010_010\x00 \x18\x13\x00 
 SEQ07  
 SEQ01 
-SEQ03 d\x1f
-SEQ13 
-SEQ05 \x03\xb5\x00\x00
+SEQ10 d\x1f
+SEQ14 
+SEQ11 \x03\xb5\x00\x00
  
 コメンテーター\n　「一時話題になった、インターネットの『自殺系サイト』を見\n　　ると、わりと分かりやすい。@
 　　そういったサイトの掲示板への書き込みは、『悩み相談』の\n　　ような体裁を取るものが多いのですが、それは『自分はこん\n　　な悩みを持って自殺しようとしている人間です』という、\n　　『私』のアピールなわけです。\p掲示板での彼らは非常に多弁\n　　です。多くの文章はそこそこしっかりしているし、エンター\n　　テインメントとして他人に読んでもらうことをきちんと意識\n　　している。酔っぱらって『学部長死ね』とかね、駅のトイレ\n　　に殴り書きした落書きではないわけです」@
@@ -186,15 +186,15 @@ SEQ05 \x03\xb5\x00\x00
 
 \x00  
 SEQ01 \\\x13
-SEQ13 
-SEQ04  \xae\x00\x00 
-SEQ12  \xdc\x00\x00 
-SEQ06 SCE010_011\x00 j\x16\x00 
+SEQ14 
+SEQ08 " \xae\x00\x00 
+SEQ08  \xdc\x00\x00 
+SEQ05 SCE010_011\x00 j\x16\x00 
 SEQ07  
 SEQ01 
-SEQ03 h\x1f
-SEQ13 
-SEQ05 \x03\xdc\x00\x00
+SEQ10 h\x1f
+SEQ14 
+SEQ11 \x03\xdc\x00\x00
  
 コメンテーター\n　「ええと……自己紹介ホームページの開設ブームなどを見れば\n　　わかるとおり、人間には、自己をアピールしたい、『私』を\n　　語りたい、という欲求があるわけです。@
 　　しかし、それには他者とは違った才能が必要であり、そして\n　　才能を得るためには努力が要求される。\p飲み会で注目を集め\n　　るために『明日原爆を作って国会を破壊する！』とブチあげ\n　　ても、それには、発言が真実味を帯びるだけのリアリティが\n　　要求されますよね。\p発言した人が理系の人間であるとか、裏\n　　ルートに通じているとか。\pライセンスがいるわけです。だっ\n　　たらライセンスが要求されない……たとえば『明日パチンコ\n　　に行く！』なんてことをアピールしてみる。@
@@ -203,30 +203,30 @@ SEQ05 \x03\xdc\x00\x00
 
 \x00  
 SEQ01 \xae\x16
-SEQ13 
-SEQ04  \xae\x00\x00 
-SEQ12  \xdc\x00\x00 
-SEQ06 SCE010_012\x00 X\x1a\x00 
+SEQ14 
+SEQ08 " \xae\x00\x00 
+SEQ08  \xdc\x00\x00 
+SEQ05 SCE010_012\x00 X\x1a\x00 
 SEQ07  
 SEQ01 
-SEQ03 l\x1f
-SEQ13 
-SEQ05 \x03\x91\x00\x00
+SEQ10 l\x1f
+SEQ14 
+SEQ11 \x03\x91\x00\x00
  
 コメンテーター\n　「このところ『殺人』や『死体写真』などのサブカルチャーが\n　　幅を利かせているのも、競争相手の多いメインカルチャーの\n　　なかで浮上するのがしんどい、という側面があると思うんで\n　　すよ。\p『スノーボードがうまい私』という個性を自分特有の\n　　ものとして確立するのは難しいけれど、『死体写真を集めて\n　　いる変わった私』という個性は簡単に完成するわけです。\p同\n　　じように、『自殺したい』『手首を切ったことがある』とい\n　　うのは、ゼロから生むことができる、安易かつ強力な武器で\n　　あるわけです」@
 \nそしてしかめ面をしたゲストの男がしめくくる。\
 
 \x00\x00\x00  
 SEQ01 \x9c\x1a
-SEQ13 
-SEQ04  \xae\x00\x00 
-SEQ12  \xdc\x00\x00 
-SEQ06 SCE010_013\x00 \x1a\x1d\x00 
+SEQ14 
+SEQ08 " \xae\x00\x00 
+SEQ08  \xdc\x00\x00 
+SEQ05 SCE010_013\x00 \x1a\x1d\x00 
 SEQ07  
 SEQ01 
-SEQ03 p\x1f
-SEQ13 
-SEQ05 \x03\xb8\x00\x00
+SEQ10 p\x1f
+SEQ14 
+SEQ11 \x03\xb8\x00\x00
  
 ゲスト\n　「まあ、精神的とか経済的にネ、追いつめられて、真剣に自殺\n　　を考えている人はいるわけなんで、あまり軽々しくは言えな\n　　いんだけどネ。\p若いのがネ、死ぬとかナントカいうのはネ、\n　　要するにネ、ボクラが若いころ、哲学や政治にハマったのと\n　　同じですよ！\p　デカルト読んだり、共産主義を唱えたりね。@
 　　そういうのはね、多くにとっては『哲学する私』『共産主義\n　　を信奉する私』というインテリのスタイルだったわけです。@
@@ -234,15 +234,15 @@ SEQ05 \x03\xb8\x00\x00
 アナウンサー\n　「ファッションとしての自殺、と。\pなんだか凄い話になってし\n　　まいましたが、ええっと……視聴者のみなさんはついてきて\n　　いらっしゃるのでしょうかっ？！」\w\n\n/*SE パチンとテレビのスイッチが切れる音。*/\a2,0,8,0,\a3,0,0,0,\a4,0,0,0,\n\z
   
 SEQ01 ^\x1d
-SEQ13 
-SEQ04  \xae\x00\x00 
-SEQ12  \xdc\x00\x00 
-SEQ06 SCE010_014\x00 x \x00 
+SEQ14 
+SEQ08 " \xae\x00\x00 
+SEQ08  \xdc\x00\x00 
+SEQ05 SCE010_014\x00 x \x00 
 SEQ07  
 SEQ01 
-SEQ03 t\x1f
-SEQ13 
-SEQ05 \x03{\x00\x00
+SEQ10 t\x1f
+SEQ14 
+SEQ11 \x03{\x00\x00
  
 　－－おれの抱えた数字は、そんな簡単に割り切れる数字ではな\n　い。@
 \n　拓司は思った。@
@@ -250,15 +250,15 @@ SEQ05 \x03{\x00\x00
 
 \x00\x00\x00  
 SEQ01 \xbc 
-SEQ13 
-SEQ04  \xae\x00\x00 
-SEQ12  \xdc\x00\x00 
-SEQ06 SCE010_015\x00 \xe2"\x00 
+SEQ14 
+SEQ08 " \xae\x00\x00 
+SEQ08  \xdc\x00\x00 
+SEQ05 SCE010_015\x00 \xe2"\x00 
 SEQ07  
 SEQ01 
-SEQ03 x\x1f
-SEQ13 
-SEQ05 \x03k\x00\x00
+SEQ10 x\x1f
+SEQ14 
+SEQ11 \x03k\x00\x00
  
 　なんちゃって自殺ごっこをする女子学生。@
 　自殺を口にする若者。@
@@ -268,15 +268,15 @@ SEQ05 \x03k\x00\x00
 
 \x00  
 SEQ01 &#
-SEQ13 
-SEQ04  \xae\x00\x00 
-SEQ12  \xdc\x00\x00 
-SEQ06 SCE010_016\x00 \x0c%\x00 
+SEQ14 
+SEQ08 " \xae\x00\x00 
+SEQ08  \xdc\x00\x00 
+SEQ05 SCE010_016\x00 \x0c%\x00 
 SEQ07  
 SEQ01 
-SEQ03 |\x1f
-SEQ13 
-SEQ05 \x03\x9d\x00\x00
+SEQ10 |\x1f
+SEQ14 
+SEQ11 \x03\x9d\x00\x00
  
 　口に出すことで、深刻さを割り引くことができる痛みは多い。@
 　その効力を知っているからこそ、人は冗談めかして、あるいは\n　真剣に、悩みを人に告げる。@
@@ -288,9 +288,9 @@ SEQ05 \x03\x9d\x00\x00
 
 \x00\x00\x00  
 SEQ01 P%
-SEQ13 
-SEQ04  \xae\x00\x00 
-SEQ12  \xdc\x00\x00 
-SEQ10  \xae\x00\x00 
-SEQ12 \x03\x03\x00\x00TextClose SPC02 \n(\x00 
-ENDF
+SEQ14 
+SEQ08 " \xae\x00\x00 
+SEQ08  \xdc\x00\x00 
+SEQ06  \xae\x00\x00 
+SEQ04 TextClose SPC02 \n(\x00 
+FEND

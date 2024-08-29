@@ -1,15 +1,15 @@
-STRF
+FSTR
 \x7f/\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00d$\x00  
 SEQ01 \x04\x01
-SEQ13 
-SEQ04 
-SEQ08 .\\Data\\Script\\Bgm.Fob SPC02  \x00\x00 
+SEQ14 
+SEQ08 "
+SEQ12 .\\Data\\Script\\Bgm.Fob SPC02  \x00\x00 
 SEQ02 PlayCD SPC01 J\x00\x00 
-SEQ06 SCES05_001\x00 f\x00\x00 
+SEQ05 SCES05_001\x00 f\x00\x00 
 SEQ07  
 SEQ01 
-SEQ03  \xb6\x01\x0c
-SEQ05 \x03\x8f\x00\x00
+SEQ10  \xb6\x01\x0c
+SEQ11 \x03\x8f\x00\x00
  
 お金はいくらあっても足りなかった。@
 かわいい洋服や、アクセサリーをつけるたびに、私はうまくウソ\nがつけるようになっていった。@
@@ -21,15 +21,15 @@ SEQ05 \x03\x8f\x00\x00
 
 \x00\x00\x00  
 SEQ01 \xaa\x00
-SEQ13 
-SEQ04 
-SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 \x06\x03\x00 
+SEQ14 
+SEQ08 "
+SEQ13 .\\Data\\Script\\TextFunc.Fob SPC01 \x06\x03\x00 
 SEQ02 TextOn SPC01 4\x03\x00 
-SEQ06 SCES05_002\x00 P\x03\x00 
+SEQ05 SCES05_002\x00 P\x03\x00 
 SEQ07  
 SEQ01 
-SEQ03 $\xb6\x01\x0c
-SEQ05 \x03\xa3\x00\x00
+SEQ10 $\xb6\x01\x0c
+SEQ11 \x03\xa3\x00\x00
  
 『そういうことはやめたほうがいいニャ』@
 「ドルチェ。そんなお説教、早桃は聞きたくないよ。\n　うまくやってるもの。\pなにもかもがうまくいってる」@
@@ -43,20 +43,20 @@ SEQ05 \x03\xa3\x00\x00
 
 \x00\x00\x00  
 SEQ01 \x94\x03
-SEQ13 
-SEQ04  \x06\x03\x00 
-SEQ12  4\x03\x00 
-SEQ10   
+SEQ14 
+SEQ08 " \x06\x03\x00 
+SEQ08  4\x03\x00 
+SEQ06   
 SEQ01 ]\x00
-SEQ13 
-SEQ04 
-SEQ08 .\\Data\\Script\\Bg.Fob SPC03 t\x06\x00 
-SEQ12 \x03\x04\x00\x00BgAutoFadeIn SPC03 \x9e\x06\x00 
-SEQ06 SCES05_003\x00 \xc2\x06\x00 
+SEQ14 
+SEQ08 "
+SEQ12 .\\Data\\Script\\Bg.Fob SPC03 t\x06\x00 
+SEQ03 BgAutoFadeIn SPC03 \x9e\x06\x00 
+SEQ05 SCES05_003\x00 \xc2\x06\x00 
 SEQ07  
 SEQ01 
-SEQ03 (\xb6\x01\x0c
-SEQ05 \x03e\x00\x00
+SEQ10 (\xb6\x01\x0c
+SEQ11 \x03e\x00\x00
  
 すぐに、手だけで、口だけでって……そういうことをするように\nなった。\pそういうことをしちゃったら、どこまでやっても変わら\nないような気がして、エッチもした。@
 エッチをすると、しなかったときの５倍以上のお金がもらえた。@
@@ -66,19 +66,19 @@ SEQ05 \x03e\x00\x00
 
 \x00  
 SEQ01 \x06\x07
-SEQ13 
-SEQ04  \x06\x03\x00 
-SEQ12  4\x03\x00 
-SEQ10   
+SEQ14 
+SEQ08 " \x06\x03\x00 
+SEQ08  4\x03\x00 
+SEQ06   
 SEQ01 \xc8\x00
-SEQ13 
-SEQ04  t\x06\x00 
-SEQ12  \x9e\x06\x00 
-SEQ06 SCES05_004\x00 \x08\t\x00 
+SEQ14 
+SEQ08 " t\x06\x00 
+SEQ08  \x9e\x06\x00 
+SEQ05 SCES05_004\x00 \x08\t\x00 
 SEQ07  
 SEQ01 
-SEQ03 ,\xb6\x01\x0c
-SEQ05 \x03\xb0\x00\x00
+SEQ10 ,\xb6\x01\x0c
+SEQ11 \x03\xb0\x00\x00
  
 海の話、覚えてる？@
 初めて海を見たときの話。@
@@ -91,14 +91,14 @@ SEQ05 \x03\xb0\x00\x00
 
 \x00\x00\x00  
 SEQ01 L\t
-SEQ13 
-SEQ04  \x06\x03\x00 
-SEQ12  4\x03\x00 
-SEQ06 SCES05_005\x00 F\x0c\x00 
+SEQ14 
+SEQ08 " \x06\x03\x00 
+SEQ08  4\x03\x00 
+SEQ05 SCES05_005\x00 F\x0c\x00 
 SEQ07  
 SEQ01 
-SEQ03 0\xb6\x01\x0c
-SEQ05 \x03z\x00\x00
+SEQ10 0\xb6\x01\x0c
+SEQ11 \x03z\x00\x00
  
 「ねえ、ドルチェ。\p早桃、もう援助交際はやめようと思うんだ」\n\p『そうか。\pドルチェはうれしいニャ』@
 「おにいちゃんと釣り合う女の子になりたいの」@
@@ -111,36 +111,36 @@ SEQ05 \x03z\x00\x00
 
 \x00\x00\x00  
 SEQ01 \x8a\x0c
-SEQ13 
-SEQ04  \x06\x03\x00 
-SEQ12  4\x03\x00 
-SEQ10 ! 
+SEQ14 
+SEQ08 " \x06\x03\x00 
+SEQ08  4\x03\x00 
+SEQ06 ! 
 SEQ01 \x00\x00\x00\x00\r\x02 \x00\x00\x00\x00\x0b\r\x01 \x00\x00\x00\x00\x1b\x00\x00\x00\x001\x00\x00\x00\x00\xea\x0e\x002 \x10\x002\xf0\x0e\x002\xf0\x0e\x00\x03\x03\x00\x00SCES05_006\x00 \xf6\x0e\x00 
 SEQ07  
 SEQ01 
-SEQ03 4\xb6\x01\x0c
-SEQ05 \x03\x15\x00\x00
+SEQ10 4\xb6\x01\x0c
+SEQ11 \x03\x15\x00\x00
  
 お話はこれでおしまい。@
 神父様、聞いてくださってありがとうございました。@
 \z
 \x00  
 SEQ01 :\x0f
-SEQ13 
-SEQ04  \x06\x03\x00 
-SEQ12  4\x03\x00 
-SEQ10   \x00\x00 
+SEQ14 
+SEQ08 " \x06\x03\x00 
+SEQ08  4\x03\x00 
+SEQ06   \x00\x00 
 SEQ02 StopCD\x00 \xd4\x0f\x00 
-SEQ10   
+SEQ06   
 SEQ01 \xc8\x00
-SEQ13 
-SEQ04  t\x06\x00 
-SEQ12  \x9e\x06\x00 
-SEQ10 6\x03\x03\x00\x00SCES05_007\x00 &\x10\x00 
+SEQ14 
+SEQ08 " t\x06\x00 
+SEQ08  \x9e\x06\x00 
+SEQ06 6\x03\x03\x00\x00SCES05_007\x00 &\x10\x00 
 SEQ07  
 SEQ01 
-SEQ03 8\xb6\x01\x0c
-SEQ05 \x03\xc5\x00\x00
+SEQ10 8\xb6\x01\x0c
+SEQ11 \x03\xc5\x00\x00
  
 でもね、結局ドルチェとは仲直りできなかったの。@
 私が援助交際を続けたから。@
@@ -158,14 +158,14 @@ SEQ05 \x03\xc5\x00\x00
 
 \x00\x00\x00  
 SEQ01 j\x10
-SEQ13 
-SEQ04  \x06\x03\x00 
-SEQ12  4\x03\x00 
-SEQ06 SCES05_008\x00 \xb8\x13\x00 
+SEQ14 
+SEQ08 " \x06\x03\x00 
+SEQ08  4\x03\x00 
+SEQ05 SCES05_008\x00 \xb8\x13\x00 
 SEQ07  
 SEQ01 
-SEQ03 <\xb6\x01\x0c
-SEQ05 \x03\xb0\x00\x00
+SEQ10 <\xb6\x01\x0c
+SEQ11 \x03\xb0\x00\x00
  
 『早桃ちゃんは、愛よりもお金のほうが重いと思ってるのかニャ\n　？』@
 「そんなことないよ、ドルチェ！\p　早桃は本当におにいちゃんの\n　ことが好き！」@
@@ -181,14 +181,14 @@ SEQ05 \x03\xb0\x00\x00
 
 \x00\x00\x00  
 SEQ01 \xfc\x13
-SEQ13 
-SEQ04  \x06\x03\x00 
-SEQ12  4\x03\x00 
-SEQ06 SCES05_009\x00 \xf6\x16\x00 
+SEQ14 
+SEQ08 " \x06\x03\x00 
+SEQ08  4\x03\x00 
+SEQ05 SCES05_009\x00 \xf6\x16\x00 
 SEQ07  
 SEQ01 
-SEQ03 @\xb6\x01\x0c
-SEQ05 \x03{\x00\x00
+SEQ10 @\xb6\x01\x0c
+SEQ11 \x03{\x00\x00
  
 私はようやく、自分が崖っぷちに立っているんじゃなくて、もう、\n落ちてるってことに気がついた。@
 ギリギリでバランスをとっていられるような段階はとっくにすぎ\nて、もう、自分ではどうしようもない状況にあるんだって。@
@@ -199,14 +199,14 @@ SEQ05 \x03{\x00\x00
 
 \x00\x00\x00  
 SEQ01 :\x17
-SEQ13 
-SEQ04  \x06\x03\x00 
-SEQ12  4\x03\x00 
-SEQ06 SCES05_010\x00 `\x19\x00 
+SEQ14 
+SEQ08 " \x06\x03\x00 
+SEQ08  4\x03\x00 
+SEQ05 SCES05_010\x00 `\x19\x00 
 SEQ07  
 SEQ01 
-SEQ03 D\xb6\x01\x0c
-SEQ05 \x03;\x00\x00
+SEQ10 D\xb6\x01\x0c
+SEQ11 \x03;\x00\x00
  
 おにいちゃんにひとりエッチを見せたのは、わざとなの。@
 早桃は、おにいちゃんが思っているみたいな女の子じゃなくて、\n汚くて、いやらしい女の子だって。@
@@ -216,28 +216,28 @@ SEQ05 \x03;\x00\x00
 
 \x00\x00\x00  
 SEQ01 \xa4\x19
-SEQ13 
-SEQ04  \x06\x03\x00 
-SEQ12  4\x03\x00 
-SEQ06 SCES05_011\x00 \xca\x1a\x00 
+SEQ14 
+SEQ08 " \x06\x03\x00 
+SEQ08  4\x03\x00 
+SEQ05 SCES05_011\x00 \xca\x1a\x00 
 SEQ07  
 SEQ01 
-SEQ03 H\xb6\x01\x0c
-SEQ05 \x030\x00\x00
+SEQ10 H\xb6\x01\x0c
+SEQ11 \x030\x00\x00
  
 語り終えた後、早桃は無言で、自らが作り出した沈黙のなかに沈\nみ込んだ。@
 あるいは、彼女が沈み込んでいったのは、いま自らが言葉に変換\nして現出して見せた暗い闇の中なのかもしれない。\
 
 \x00\x00\x00  
 SEQ01 \x0e\x1b
-SEQ13 
-SEQ04  \x06\x03\x00 
-SEQ12  4\x03\x00 
-SEQ06 SCES05_012\x00 \x08\x1c\x00 
+SEQ14 
+SEQ08 " \x06\x03\x00 
+SEQ08  4\x03\x00 
+SEQ05 SCES05_012\x00 \x08\x1c\x00 
 SEQ07  
 SEQ01 
-SEQ03 L\xb6\x01\x0c
-SEQ05 \x03I\x00\x00
+SEQ10 L\xb6\x01\x0c
+SEQ11 \x03I\x00\x00
  
 拓司\n　「俺には、お前を軽蔑する資格はない」@
 早桃\n　「え？」@
@@ -246,14 +246,14 @@ SEQ05 \x03I\x00\x00
 
 \x00  
 SEQ01 L\x1c
-SEQ13 
-SEQ04  \x06\x03\x00 
-SEQ12  4\x03\x00 
-SEQ06 SCES05_013\x00 \xaa\x1d\x00 
+SEQ14 
+SEQ08 " \x06\x03\x00 
+SEQ08  4\x03\x00 
+SEQ05 SCES05_013\x00 \xaa\x1d\x00 
 SEQ07  
 SEQ01 
-SEQ03 P\xb6\x01\x0c
-SEQ05 \x03i\x00\x00
+SEQ10 P\xb6\x01\x0c
+SEQ11 \x03i\x00\x00
  
 早桃\n　「……」@
 拓司\n　「たとえば、猫を袋詰めにして団地から落として殺した」@
@@ -267,14 +267,14 @@ SEQ05 \x03i\x00\x00
 
 \x00\x00\x00  
 SEQ01 \xee\x1d
-SEQ13 
-SEQ04  \x06\x03\x00 
-SEQ12  4\x03\x00 
-SEQ06 SCES05_014\x00 \xcc\x1f\x00 
+SEQ14 
+SEQ08 " \x06\x03\x00 
+SEQ08  4\x03\x00 
+SEQ05 SCES05_014\x00 \xcc\x1f\x00 
 SEQ07  
 SEQ01 
-SEQ03 T\xb6\x01\x0c
-SEQ05 \x03l\x00\x00
+SEQ10 T\xb6\x01\x0c
+SEQ11 \x03l\x00\x00
  
 拓司は早桃の額にそっと手をかざし、重々しい声を作っていった。\n@
 拓司\n　「あなたの懺悔は神の元に届けられました。\p神はその勇気をた\n　　たえ、あなたの罪をお許しになるでしょう。\pラーメン」@
@@ -286,14 +286,14 @@ SEQ05 \x03l\x00\x00
 
 \x00  
 SEQ01 \x10 
-SEQ13 
-SEQ04  \x06\x03\x00 
-SEQ12  4\x03\x00 
-SEQ06 SCES05_015\x00 \xfa!\x00 
+SEQ14 
+SEQ08 " \x06\x03\x00 
+SEQ08  4\x03\x00 
+SEQ05 SCES05_015\x00 \xfa!\x00 
 SEQ07  
 SEQ01 
-SEQ03 X\xb6\x01\x0c
-SEQ05 \x03T\x00\x00
+SEQ10 X\xb6\x01\x0c
+SEQ11 \x03T\x00\x00
  
 早桃は声を押し殺して笑った。@
 そして拓司の額に手をかざし、いった。@
@@ -304,19 +304,19 @@ SEQ05 \x03T\x00\x00
 
 \x00\x00\x00  
 SEQ01 >"
-SEQ13 
-SEQ04  \x06\x03\x00 
-SEQ12  4\x03\x00 
-SEQ10   \x00\x00 
-SEQ12  \xd4\x0f\x00 
-SEQ10   
+SEQ14 
+SEQ08 " \x06\x03\x00 
+SEQ08  4\x03\x00 
+SEQ06   \x00\x00 
+SEQ08  \xd4\x0f\x00 
+SEQ06   
 SEQ01 \xc8\x00
-SEQ13 
-SEQ04  t\x06\x00 
-SEQ12  \x9e\x06\x00 
-SEQ10 ! 
+SEQ14 
+SEQ08 " t\x06\x00 
+SEQ08  \x9e\x06\x00 
+SEQ06 ! 
 SEQ01 (\x00\x00\r\x02 \x01\x00
-SEQ13 
-SEQ05  \x06\x03\x00 
-SEQ12 \x03\x03\x00\x00TextClose\x00\x00 F$\x00 
-ENDF
+SEQ14 
+SEQ11  \x06\x03\x00 
+SEQ04 TextClose\x00\x00 F$\x00 
+FEND

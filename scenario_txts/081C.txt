@@ -1,28 +1,28 @@
-STRF
+FSTR
 A.\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00 '\x00\x03\x03\x00\x00SCE081_001\x00 \x06\x00\x00 
 SEQ07  
 SEQ01 
-SEQ03 0\x8e
-SEQ13 
-SEQ05 
-SEQ08 .\\Data\\Script\\Bgm.Fob SPC02 J\x00\x00 
+SEQ10 0\x8e
+SEQ14 
+SEQ11 
+SEQ12 .\\Data\\Script\\Bgm.Fob SPC02 J\x00\x00 
 SEQ02 StopCD SPC01 t\x00\x00 
-SEQ10   
+SEQ06   
 SEQ01 \xc9\x00
-SEQ13 
-SEQ04 
-SEQ08 .\\Data\\Script\\Bg.Fob SPC03 \xaa\x00\x00 
-SEQ12 \x03\x04\x00\x00BgAutoFadeIn SPC03 \xd4\x00\x00 
-SEQ10   
+SEQ14 
+SEQ08 "
+SEQ12 .\\Data\\Script\\Bg.Fob SPC03 \xaa\x00\x00 
+SEQ03 BgAutoFadeIn SPC03 \xd4\x00\x00 
+SEQ06   
 SEQ01 
-SEQ12 \x0c
-SEQ04   \x04\x00\x00\r\x00\x00 \x06\x00
-SEQ13 
-SEQ04   \x08\x00\x00\r\x00\x00 \x01\x00
-SEQ13 
-SEQ04  J\x00\x00 
+SEQ08 \x0c
+SEQ08 "  \x04\x00\x00\r\x00\x00 \x06\x00
+SEQ14 
+SEQ08 "  \x08\x00\x00\r\x00\x00 \x01\x00
+SEQ14 
+SEQ08 " J\x00\x00 
 SEQ02 SePlay SPC01 R\x01\x00 
-SEQ10 \x03}\x00\x00
+SEQ06 \x03}\x00\x00
  
 男\n　「目が覚めたかね？」@
 \n突然の場違いな声にはっとすると、目の前に見慣れぬ顔があった。\n\p中年の男だ。@
@@ -39,16 +39,16 @@ SEQ10 \x03}\x00\x00
 
 \x00\x00\x00  
 SEQ01 n\x01
-SEQ13 
-SEQ04 
-SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 \x82\x03\x00 
+SEQ14 
+SEQ08 "
+SEQ13 .\\Data\\Script\\TextFunc.Fob SPC01 \x82\x03\x00 
 SEQ02 TextOn SPC01 \xb0\x03\x00 
-SEQ06 SCE081_002\x00 \xcc\x03\x00 
+SEQ05 SCE081_002\x00 \xcc\x03\x00 
 SEQ07  
 SEQ01 
-SEQ03 4\x8e
-SEQ13 
-SEQ05 \x03\x8c\x00\x00
+SEQ10 4\x8e
+SEQ14 
+SEQ11 \x03\x8c\x00\x00
  
 以前授業中に見た夢の世界だ。\p白い部屋だ。@
 しかし－－死んでからも夢を見るものなのだろうか？\p　あるいは、\n夢を見ているということは、まだ自分は死んでいないということ\nなのだろうか？\p　はたまたこれは死後の世界で、自分はすでに死\nんでいるのか……？@
@@ -62,15 +62,15 @@ SEQ05 \x03\x8c\x00\x00
 
 \x00  
 SEQ01 \x10\x04
-SEQ13 
-SEQ04  \x82\x03\x00 
-SEQ12  \xb0\x03\x00 
-SEQ06 SCE081_003\x00 z\x06\x00 
+SEQ14 
+SEQ08 " \x82\x03\x00 
+SEQ08  \xb0\x03\x00 
+SEQ05 SCE081_003\x00 z\x06\x00 
 SEQ07  
 SEQ01 
-SEQ03 8\x8e
-SEQ13 
-SEQ05 \x03p\x00\x00
+SEQ10 8\x8e
+SEQ14 
+SEQ11 \x03p\x00\x00
  
 どこかで聞いたことがある名前だと記憶を探れば、前回も夢の中\nで、『教授』という名前が登場したような気がする。@
 そうだ、壁の向こうから聞こえた少女の声がいっていたのだ……\n「教授に気をつけて」と。@
@@ -80,15 +80,15 @@ SEQ05 \x03p\x00\x00
 
 \x00  
 SEQ01 \xbe\x06
-SEQ13 
-SEQ04  \x82\x03\x00 
-SEQ12  \xb0\x03\x00 
-SEQ06 SCE081_004\x00 \xb8\x08\x00 
+SEQ14 
+SEQ08 " \x82\x03\x00 
+SEQ08  \xb0\x03\x00 
+SEQ05 SCE081_004\x00 \xb8\x08\x00 
 SEQ07  
 SEQ01 
-SEQ03 <\x8e
-SEQ13 
-SEQ05 \x03z\x00\x00
+SEQ10 <\x8e
+SEQ14 
+SEQ11 \x03z\x00\x00
  
 教授\n　「前回までの経験に基づいて、単刀直入に話を進めさせてもら\n　　うよ」@
 \n教授はベッド横の椅子から立ち上がって、いった。@
@@ -98,15 +98,15 @@ SEQ05 \x03z\x00\x00
 
 \x00  
 SEQ01 \xfc\x08
-SEQ13 
-SEQ04  \x82\x03\x00 
-SEQ12  \xb0\x03\x00 
-SEQ06 SCE081_005\x00 \x1e\x0b\x00 
+SEQ14 
+SEQ08 " \x82\x03\x00 
+SEQ08  \xb0\x03\x00 
+SEQ05 SCE081_005\x00 \x1e\x0b\x00 
 SEQ07  
 SEQ01 
-SEQ03 @\x8e
-SEQ13 
-SEQ05 \x03\xa9\x00\x00
+SEQ10 @\x8e
+SEQ14 
+SEQ11 \x03\xa9\x00\x00
  
 拓司は小さく頷いた。\pこれは一体なんの冗談なのだろう？@
 夢にしては手が込んでいる。@
@@ -117,15 +117,15 @@ SEQ05 \x03\xa9\x00\x00
 
 \x00\x00\x00  
 SEQ01 b\x0b
-SEQ13 
-SEQ04  \x82\x03\x00 
-SEQ12  \xb0\x03\x00 
-SEQ06 SCE081_006\x00 @\x0e\x00 
+SEQ14 
+SEQ08 " \x82\x03\x00 
+SEQ08  \xb0\x03\x00 
+SEQ05 SCE081_006\x00 @\x0e\x00 
 SEQ07  
 SEQ01 
-SEQ03 D\x8e
-SEQ13 
-SEQ05 \x03V\x00\x00
+SEQ10 D\x8e
+SEQ14 
+SEQ11 \x03V\x00\x00
  
 拓司\n　「待ってください」@
 \n拓司は教授の話を遮った。@
@@ -136,15 +136,15 @@ SEQ05 \x03V\x00\x00
 
 \x00\x00\x00  
 SEQ01 \x84\x0e
-SEQ13 
-SEQ04  \x82\x03\x00 
-SEQ12  \xb0\x03\x00 
-SEQ06 SCE081_007\x00 \x16\x10\x00 
+SEQ14 
+SEQ08 " \x82\x03\x00 
+SEQ08  \xb0\x03\x00 
+SEQ05 SCE081_007\x00 \x16\x10\x00 
 SEQ07  
 SEQ01 
-SEQ03 H\x8e
-SEQ13 
-SEQ05 \x03\x88\x00\x00
+SEQ10 H\x8e
+SEQ14 
+SEQ11 \x03\x88\x00\x00
  
 拓司\n　「今回？」@
 教授\n　「前回、昏睡から醒めた君は藤田宣久と名乗ったよ。\p盛岡に住\n　　む学生だと」@
@@ -156,15 +156,15 @@ SEQ05 \x03\x88\x00\x00
 
 \x00  
 SEQ01 Z\x10
-SEQ13 
-SEQ04  \x82\x03\x00 
-SEQ12  \xb0\x03\x00 
-SEQ06 SCE081_008\x00 \xb4\x12\x00 
+SEQ14 
+SEQ08 " \x82\x03\x00 
+SEQ08  \xb0\x03\x00 
+SEQ05 SCE081_008\x00 \xb4\x12\x00 
 SEQ07  
 SEQ01 
-SEQ03 L\x8e
-SEQ13 
-SEQ05 \x03\xab\x00\x00
+SEQ10 L\x8e
+SEQ14 
+SEQ11 \x03\xab\x00\x00
  
 教授\n　「君は夢に感化されているのだよ。\p記憶喪失によって真っ白に\n　　なった君の意識に、夢が刷り込まれて、君はそれが真実だと\n　　認識する。\p今回は、それが『虎菱拓司の夢』だったというわ\n　　けだ」@
 拓司\n　「そんなことが……」@
@@ -177,15 +177,15 @@ SEQ05 \x03\xab\x00\x00
 
 \x00  
 SEQ01 \xf8\x12
-SEQ13 
-SEQ04  \x82\x03\x00 
-SEQ12  \xb0\x03\x00 
-SEQ06 SCE081_009\x00 \xde\x15\x00 
+SEQ14 
+SEQ08 " \x82\x03\x00 
+SEQ08  \xb0\x03\x00 
+SEQ05 SCE081_009\x00 \xde\x15\x00 
 SEQ07  
 SEQ01 
-SEQ03 P\x8e
-SEQ13 
-SEQ05 \x03\xa7\x00\x00
+SEQ10 P\x8e
+SEQ14 
+SEQ11 \x03\xa7\x00\x00
  
 教授\n　「混乱しているね。\pいつも目覚めた直後はそうだよ。@
 　　だが安心したまえ。\pすぐに治まる。\p感覚的な問題なのだろう\n　　ね、すぐにこの世界こそが真実の世界であることがわかる。@
@@ -197,15 +197,15 @@ SEQ05 \x03\xa7\x00\x00
 
 \x00\x00\x00  
 SEQ01 "\x16
-SEQ13 
-SEQ04  \x82\x03\x00 
-SEQ12  \xb0\x03\x00 
-SEQ06 SCE081_010\x00 \xf8\x18\x00 
+SEQ14 
+SEQ08 " \x82\x03\x00 
+SEQ08  \xb0\x03\x00 
+SEQ05 SCE081_010\x00 \xf8\x18\x00 
 SEQ07  
 SEQ01 
-SEQ03 T\x8e
-SEQ13 
-SEQ05 \x03\xbb\x00\x00
+SEQ10 T\x8e
+SEQ14 
+SEQ11 \x03\xbb\x00\x00
  
 拓司\n　「ここは……どこなんですか？」@
 教授\n　「都内の××病院の精神科だよ」@
@@ -216,15 +216,15 @@ SEQ05 \x03\xbb\x00\x00
 
 \x00  
 SEQ01 <\x19
-SEQ13 
-SEQ04  \x82\x03\x00 
-SEQ12  \xb0\x03\x00 
-SEQ06 SCE081_011\x00 b\x1c\x00 
+SEQ14 
+SEQ08 " \x82\x03\x00 
+SEQ08  \xb0\x03\x00 
+SEQ05 SCE081_011\x00 b\x1c\x00 
 SEQ07  
 SEQ01 
-SEQ03 X\x8e
-SEQ13 
-SEQ05 \x03U\x00\x00
+SEQ10 X\x8e
+SEQ14 
+SEQ11 \x03U\x00\x00
  
 教授は白衣の胸から煙草を取り出し、口にくわえた。@
 ドンドン。@
@@ -236,25 +236,25 @@ SEQ05 \x03U\x00\x00
 
 \x00\x00\x00  
 SEQ01 \xa6\x1c
-SEQ13 
-SEQ04  \x82\x03\x00 
-SEQ12  \xb0\x03\x00 
-SEQ10   
+SEQ14 
+SEQ08 " \x82\x03\x00 
+SEQ08  \xb0\x03\x00 
+SEQ06   
 SEQ01 \x1c\x00
-SEQ13 
-SEQ04  \xaa\x00\x00 
-SEQ12  \xd4\x00\x00 
-SEQ10   
+SEQ14 
+SEQ08 " \xaa\x00\x00 
+SEQ08  \xd4\x00\x00 
+SEQ06   
 SEQ01 \x08\x01
-SEQ13 
-SEQ04  J\x00\x00 
+SEQ14 
+SEQ08 " J\x00\x00 
 SEQ02 PlayCD SPC01 \x8e\x1e\x00 
-SEQ06 SCE081_012\x00 \xaa\x1e\x00 
+SEQ05 SCE081_012\x00 \xaa\x1e\x00 
 SEQ07  
 SEQ01 
-SEQ03 \\\x8e
-SEQ13 
-SEQ05 \x03\x9e\x00\x00
+SEQ10 \\\x8e
+SEQ14 
+SEQ11 \x03\x9e\x00\x00
  
 雲居なたねだった。\p看護婦の横に立っているのは間違いなく雲\n居なたねだ。@
 それにしてもどうしたことだろう。@
@@ -265,15 +265,15 @@ SEQ05 \x03\x9e\x00\x00
 
 \x00  
 SEQ01 \xee\x1e
-SEQ13 
-SEQ04  \x82\x03\x00 
-SEQ12  \xb0\x03\x00 
-SEQ06 SCE081_013\x00 \xa0!\x00 
+SEQ14 
+SEQ08 " \x82\x03\x00 
+SEQ08  \xb0\x03\x00 
+SEQ05 SCE081_013\x00 \xa0!\x00 
 SEQ07  
 SEQ01 
-SEQ03 `\x8e
-SEQ13 
-SEQ05 \x03\x82\x00\x00
+SEQ10 `\x8e
+SEQ14 
+SEQ11 \x03\x82\x00\x00
  
 拓司\n　「雲居なたねさん。\p俺の……夢の中の学園の同級生です。@
 　　どうして彼女がここに？」@
@@ -284,15 +284,15 @@ SEQ05 \x03\x82\x00\x00
 
 \x00  
 SEQ01 \xe4!
-SEQ13 
-SEQ04  \x82\x03\x00 
-SEQ12  \xb0\x03\x00 
-SEQ06 SCE081_014\x00 &$\x00 
+SEQ14 
+SEQ08 " \x82\x03\x00 
+SEQ08  \xb0\x03\x00 
+SEQ05 SCE081_014\x00 &$\x00 
 SEQ07  
 SEQ01 
-SEQ03 d\x8e
-SEQ13 
-SEQ05 \x03w\x00\x00
+SEQ10 d\x8e
+SEQ14 
+SEQ11 \x03w\x00\x00
  
 教授\n　「残念だがそれはできない。\p彼女は今、鎮静剤を投与されて朦\n　　朧状態だからね。\pなにしろ凶暴な子でね、部屋から出すとき\n　　はこうでもしないと暴れ回って始末に負えないのだよ」@
 拓司\n　「ということは……彼女もここの患者なんですか？」@
@@ -303,19 +303,19 @@ SEQ05 \x03w\x00\x00
 
 \x00\x00\x00  
 SEQ01 j$
-SEQ13 
-SEQ04  \x82\x03\x00 
-SEQ12  \xb0\x03\x00 
-SEQ10 \x03\x0f\x00\x00
+SEQ14 
+SEQ08 " \x82\x03\x00 
+SEQ08  \xb0\x03\x00 
+SEQ06 \x03\x0f\x00\x00
 CHOICE
 拘束着の女の子に近づいて観察する\n鳥を見る\n\l0,2,
 ENDCHOICE
 
 \x00  
 SEQ01 \x80&
-SEQ13 
-SEQ04  \x82\x03\x00 
-SEQ12  \xb0\x03\x00 
-SEQ10  \x82\x03\x00 
-SEQ12 \x03\x03\x00\x00TextClose SPC02 \x02'\x00 
-ENDF
+SEQ14 
+SEQ08 " \x82\x03\x00 
+SEQ08  \xb0\x03\x00 
+SEQ06  \x82\x03\x00 
+SEQ04 TextClose SPC02 \x02'\x00 
+FEND

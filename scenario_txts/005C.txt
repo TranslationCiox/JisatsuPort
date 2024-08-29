@@ -1,22 +1,22 @@
-STRF
+FSTR
 \xaa\n\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00d\x08\x00  
 SEQ01 H\x00
-SEQ13 
-SEQ04 
-SEQ08 .\\Data\\Script\\Bg.Fob SPC03  \x00\x00 
-SEQ12 \x03\x04\x00\x00BgAutoFadeIn SPC03 J\x00\x00 
-SEQ10   
+SEQ14 
+SEQ08 "
+SEQ12 .\\Data\\Script\\Bg.Fob SPC03  \x00\x00 
+SEQ03 BgAutoFadeIn SPC03 J\x00\x00 
+SEQ06   
 SEQ01 \x05\x01
-SEQ13 
-SEQ04 
-SEQ08 .\\Data\\Script\\Bgm.Fob SPC02 \x88\x00\x00 
+SEQ14 
+SEQ08 "
+SEQ12 .\\Data\\Script\\Bgm.Fob SPC02 \x88\x00\x00 
 SEQ02 PlayCD SPC01 \xb2\x00\x00 
-SEQ06 SCE005_001\x00 \xce\x00\x00 
+SEQ05 SCE005_001\x00 \xce\x00\x00 
 SEQ07  
 SEQ01 
-SEQ03 p\x17
-SEQ13 
-SEQ05 \x03H\x00\x00
+SEQ10 p\x17
+SEQ14 
+SEQ11 \x03H\x00\x00
  
 早桃\n　「……おにいちゃん？」@
 \n枕から軽く頭を持ち上げて、足元を見る。@
@@ -27,16 +27,16 @@ SEQ05 \x03H\x00\x00
 
 \x00\x00\x00  
 SEQ01 \x12\x01
-SEQ13 
-SEQ04 
-SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 R\x02\x00 
+SEQ14 
+SEQ08 "
+SEQ13 .\\Data\\Script\\TextFunc.Fob SPC01 R\x02\x00 
 SEQ02 TextOn SPC01 \x80\x02\x00 
-SEQ06 SCE005_002\x00 \x9c\x02\x00 
+SEQ05 SCE005_002\x00 \x9c\x02\x00 
 SEQ07  
 SEQ01 
-SEQ03 t\x17
-SEQ13 
-SEQ05 \x03^\x00\x00
+SEQ10 t\x17
+SEQ14 
+SEQ11 \x03^\x00\x00
  
 拓司\n　「……妄想か？」@
 \n拓司の問いには応えず、早桃は抑揚のない口調でいった。@
@@ -51,15 +51,15 @@ SEQ05 \x03^\x00\x00
 
 \x00\x00\x00  
 SEQ01 \xe0\x02
-SEQ13 
-SEQ04  R\x02\x00 
-SEQ12  \x80\x02\x00 
-SEQ06 SCE005_003\x00 \x92\x04\x00 
+SEQ14 
+SEQ08 " R\x02\x00 
+SEQ08  \x80\x02\x00 
+SEQ05 SCE005_003\x00 \x92\x04\x00 
 SEQ07  
 SEQ01 
-SEQ03 x\x17
-SEQ13 
-SEQ05 \x03\xa8\x00\x00
+SEQ10 x\x17
+SEQ14 
+SEQ11 \x03\xa8\x00\x00
  
 早桃から立ち上る熱気のようなものが、重い夏の空気を微かに歪\nませている。@
 くちびるはわずかに開き、つるりと光っている。@
@@ -75,19 +75,19 @@ SEQ05 \x03\xa8\x00\x00
 
 \x00  
 SEQ01 \xd6\x04
-SEQ13 
-SEQ04  R\x02\x00 
-SEQ12  \x80\x02\x00 
-SEQ10 \x03\x14\x00\x00
+SEQ14 
+SEQ08 " R\x02\x00 
+SEQ08  \x80\x02\x00 
+SEQ06 \x03\x14\x00\x00
 CHOICE
 「……出て行け」と拓司はいった\n「……来いよ」と拓司はいった\n\l0,2,
 ENDCHOICE
 
 \x00\x00\x00  
 SEQ01 \xb0\x07
-SEQ13 
-SEQ04  R\x02\x00 
-SEQ12  \x80\x02\x00 
-SEQ10  R\x02\x00 
-SEQ12 \x03\x03\x00\x00TextClose SPC02 F\x08\x00 
-ENDF
+SEQ14 
+SEQ08 " R\x02\x00 
+SEQ08  \x80\x02\x00 
+SEQ06  R\x02\x00 
+SEQ04 TextClose SPC02 F\x08\x00 
+FEND

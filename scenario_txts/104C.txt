@@ -1,10 +1,10 @@
-STRF
+FSTR
 \xff\x0e\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xe4\x0b\x00\x03\x03\x00\x00SCE104_001\x00 \x06\x00\x00 
 SEQ07  
 SEQ01 
-SEQ03  \xb2
-SEQ13 
-SEQ05 \x03T\x00\x00
+SEQ10  \xb2
+SEQ14 
+SEQ11 \x03T\x00\x00
  
 密かに御堂に話を付け、その日の夕方拓司はなたねに詰め寄った。\n@
 拓司\n　「雲居さん。\pきみは物資管理者としてふさわしくない。@
@@ -14,16 +14,16 @@ SEQ05 \x03T\x00\x00
 
 \x00\x00\x00  
 SEQ01 J\x00
-SEQ13 
-SEQ04 
-SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 \xba\x01\x00 
+SEQ14 
+SEQ08 "
+SEQ13 .\\Data\\Script\\TextFunc.Fob SPC01 \xba\x01\x00 
 SEQ02 TextOn SPC01 \xe8\x01\x00 
-SEQ06 SCE104_002\x00 \x04\x02\x00 
+SEQ05 SCE104_002\x00 \x04\x02\x00 
 SEQ07  
 SEQ01 
-SEQ03 $\xb2
-SEQ13 
-SEQ05 \x03\x7f\x00\x00
+SEQ10 $\xb2
+SEQ14 
+SEQ11 \x03\x7f\x00\x00
  
 なたね\n　「これは、みなさんの総意ですか？」@
 御堂\n　「うるせえ、電波女。\pとっと－－」@
@@ -35,15 +35,15 @@ SEQ05 \x03\x7f\x00\x00
 
 \x00  
 SEQ01 H\x02
-SEQ13 
-SEQ04  \xba\x01\x00 
-SEQ12  \xe8\x01\x00 
-SEQ06 SCE104_003\x00 ~\x04\x00 
+SEQ14 
+SEQ08 " \xba\x01\x00 
+SEQ08  \xe8\x01\x00 
+SEQ05 SCE104_003\x00 ~\x04\x00 
 SEQ07  
 SEQ01 
-SEQ03 (\xb2
-SEQ13 
-SEQ05 \x03D\x00\x00
+SEQ10 (\xb2
+SEQ14 
+SEQ11 \x03D\x00\x00
  
 拓司\n　「違う！」@
 なたね\n　「私です」@
@@ -53,15 +53,15 @@ SEQ05 \x03D\x00\x00
 
 \x00  
 SEQ01 \xc2\x04
-SEQ13 
-SEQ04  \xba\x01\x00 
-SEQ12  \xe8\x01\x00 
-SEQ06 SCE104_004\x00 \x0c\x06\x00 
+SEQ14 
+SEQ08 " \xba\x01\x00 
+SEQ08  \xe8\x01\x00 
+SEQ05 SCE104_004\x00 \x0c\x06\x00 
 SEQ07  
 SEQ01 
-SEQ03 ,\xb2
-SEQ13 
-SEQ05 \x03\xb7\x00\x00
+SEQ10 ,\xb2
+SEQ14 
+SEQ11 \x03\xb7\x00\x00
  
 なたね\n　「だって私が用意したんだから！\p　ここにあるのは全部私のな\n　　だから！\p　さっきから黙って聞いてりゃゴチャゴチャゴチャ\n　　ゴチャゴチャゴチゴチャゴチャゴチャゴチャゴチャゴチャ…\n　　…バカタレが！\p　大バカタレ国民共が！\p　なにもわからない\n　　シロウトのバカタレがなにを偉そうにいってる！\p　私が作っ\n　　たシェルターに住まわしてやってるのに、なんなんだ！@
 　　これまで散々みんなしてコソコソやって、ヒソヒソいってた\n　　くせに、いまになって私に貼り付こうっていうのか？！@
@@ -73,15 +73,15 @@ SEQ05 \x03\xb7\x00\x00
 
 \x00  
 SEQ01 P\x06
-SEQ13 
-SEQ04  \xba\x01\x00 
-SEQ12  \xe8\x01\x00 
-SEQ06 SCE104_005\x00 f\t\x00 
+SEQ14 
+SEQ08 " \xba\x01\x00 
+SEQ08  \xe8\x01\x00 
+SEQ05 SCE104_005\x00 f\t\x00 
 SEQ07  
 SEQ01 
-SEQ03 0\xb2
-SEQ13 
-SEQ05 \x03[\x00\x00
+SEQ10 0\xb2
+SEQ14 
+SEQ11 \x03[\x00\x00
  
 御堂\n　「てめえの腹かっさばいてでも、とらせてもらうからな」@
 なたね\n　「やれるもんか！\p　お前ら一般ピープルにそんな覚悟があるも\n　　んか！」@
@@ -93,19 +93,19 @@ SEQ05 \x03[\x00\x00
 
 \x00  
 SEQ01 \xaa\t
-SEQ13 
-SEQ04  \xba\x01\x00 
-SEQ12  \xe8\x01\x00 
-SEQ10 \x03\x0c\x00\x00
+SEQ14 
+SEQ08 " \xba\x01\x00 
+SEQ08  \xe8\x01\x00 
+SEQ06 \x03\x0c\x00\x00
 CHOICE
 御堂を止める\n黙ってみている\n\l0,2,
 ENDCHOICE
 
 \x00\x00\x00  
 SEQ01 P\x0b
-SEQ13 
-SEQ04  \xba\x01\x00 
-SEQ12  \xe8\x01\x00 
-SEQ10  \xba\x01\x00 
-SEQ12 \x03\x03\x00\x00TextClose SPC02 \xc6\x0b\x00 
-ENDF
+SEQ14 
+SEQ08 " \xba\x01\x00 
+SEQ08  \xe8\x01\x00 
+SEQ06  \xba\x01\x00 
+SEQ04 TextClose SPC02 \xc6\x0b\x00 
+FEND

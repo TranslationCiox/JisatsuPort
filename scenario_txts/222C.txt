@@ -1,9 +1,9 @@
-STRF
+FSTR
 \xd6\x05\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xa4\t3\x01\x00\x00\x00x\x04\x00\x03\x03\x00\x00SCE222_001\x00 \x06\x00\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x80j\x01\x0c
-SEQ05 \x03x\x00\x00
+SEQ10 \x80j\x01\x0c
+SEQ11 \x03x\x00\x00
  
 夜、みんなが寝静まったのを確認してから、拓司はなたねのもと\nに向かった。@
 なたねは起きていた。\p最小限に音量を絞ったラジオから漏れる雑\n音を、黙ってじっと聞いていた。@
@@ -16,15 +16,15 @@ SEQ05 \x03x\x00\x00
 
 \x00  
 SEQ01 J\x00
-SEQ13 
-SEQ04 
-SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 J\x02\x00 
+SEQ14 
+SEQ08 "
+SEQ13 .\\Data\\Script\\TextFunc.Fob SPC01 J\x02\x00 
 SEQ02 TextOn SPC01 x\x02\x00 
-SEQ06 SCE222_002\x00 \x94\x02\x00 
+SEQ05 SCE222_002\x00 \x94\x02\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x84j\x01\x0c
-SEQ05 \x03O\x00\x00
+SEQ10 \x84j\x01\x0c
+SEQ11 \x03O\x00\x00
  
 なたね\n　「……それは」@
 拓司\n　「……？」@
@@ -38,9 +38,9 @@ SEQ05 \x03O\x00\x00
 
 \x00  
 SEQ01 \xd8\x02
-SEQ13 
-SEQ04  J\x02\x00 
-SEQ12  x\x02\x00 
-SEQ10  J\x02\x00 
-SEQ12 \x03\x03\x00\x00TextClose SPC02 Z\x04\x00 
-ENDF
+SEQ14 
+SEQ08 " J\x02\x00 
+SEQ08  x\x02\x00 
+SEQ06  J\x02\x00 
+SEQ04 TextClose SPC02 Z\x04\x00 
+FEND

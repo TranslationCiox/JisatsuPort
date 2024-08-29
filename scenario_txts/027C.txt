@@ -1,35 +1,35 @@
-STRF
+FSTR
 \xa6\x05\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xa4\t3\x01\x00\x00\x00\x82\x04\x00\x03\x03\x00\x00SCE027_001\x00 \x06\x00\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xd09
-SEQ13 
-SEQ05 \x03\x10\x00\x00
+SEQ10 \xd09
+SEQ14 
+SEQ11 \x03\x10\x00\x00
  
 \n\n\n\n\n\n\n\n\n\n　　　　　　　　　　　『昼休み』\
 
 \x00\x00\x00  
 SEQ01 J\x00
-SEQ13 
-SEQ04 
-SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 \xaa\x00\x00 
+SEQ14 
+SEQ08 "
+SEQ13 .\\Data\\Script\\TextFunc.Fob SPC01 \xaa\x00\x00 
 SEQ02 TextOn SPC01 \xd8\x00\x00 
-SEQ06 SCE027_002\x00 \xf4\x00\x00 
+SEQ05 SCE027_002\x00 \xf4\x00\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xd49
-SEQ13 
-SEQ05   
+SEQ10 \xd49
+SEQ14 
+SEQ11   
 SEQ01 
-SEQ12 \x0c
-SEQ04   \x04\x00\x00\r\x00\x00 \x17\x00
-SEQ13 
-SEQ04   \x08\x00\x00\r\x00\x00 \x01\x00
-SEQ13 
-SEQ04 
-SEQ08 .\\Data\\Script\\Bgm.Fob SPC02 \x86\x01\x00 
+SEQ08 \x0c
+SEQ08 "  \x04\x00\x00\r\x00\x00 \x17\x00
+SEQ14 
+SEQ08 "  \x08\x00\x00\r\x00\x00 \x01\x00
+SEQ14 
+SEQ08 "
+SEQ12 .\\Data\\Script\\Bgm.Fob SPC02 \x86\x01\x00 
 SEQ02 SePlay SPC01 \xb0\x01\x00 
-SEQ10 \x03\x84\x00\x00
+SEQ06 \x03\x84\x00\x00
  
 　－－月代カンナはどうしておれに干渉したんだ？@
 \n　拓司は、どうしてもその思いを頭から振り払うことができなかっ\n　た。@
@@ -40,14 +40,14 @@ SEQ10 \x03\x84\x00\x00
 
 \x00  
 SEQ01 \xcc\x01
-SEQ13 
-SEQ04  \xaa\x00\x00 
-SEQ12  \xd8\x00\x00 
-SEQ10   
+SEQ14 
+SEQ08 " \xaa\x00\x00 
+SEQ08  \xd8\x00\x00 
+SEQ06   
 SEQ01 
-SEQ12 \x0c
-SEQ04  \x86\x01\x00 
+SEQ08 \x0c
+SEQ08 " \x86\x01\x00 
 SEQ02 SeStop SPC01 <\x04\x00 
-SEQ10  \xaa\x00\x00 
-SEQ12 \x03\x03\x00\x00TextClose SPC02 d\x04\x00 
-ENDF
+SEQ06  \xaa\x00\x00 
+SEQ04 TextClose SPC02 d\x04\x00 
+FEND

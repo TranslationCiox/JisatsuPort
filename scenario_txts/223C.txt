@@ -1,23 +1,23 @@
-STRF
+FSTR
 J\x0b\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xc2\x08\x00\x03\x03\x00\x00SCE223_001\x00 \x06\x00\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x10l\x01\x0c
-SEQ05 \x03\x11\x00\x00
+SEQ10 \x10l\x01\x0c
+SEQ11 \x03\x11\x00\x00
  
 \n\n\n\n\n\n\n\n\n\n　　　　　　　　　　　　　『１１日目』\
 
 \x00  
 SEQ01 J\x00
-SEQ13 
-SEQ04 
-SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 \xae\x00\x00 
+SEQ14 
+SEQ08 "
+SEQ13 .\\Data\\Script\\TextFunc.Fob SPC01 \xae\x00\x00 
 SEQ02 TextOn SPC01 \xdc\x00\x00 
-SEQ06 SCE223_002\x00 \xf8\x00\x00 
+SEQ05 SCE223_002\x00 \xf8\x00\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x14l\x01\x0c
-SEQ05 \x03o\x00\x00
+SEQ10 \x14l\x01\x0c
+SEQ11 \x03o\x00\x00
  
 錦城\n　「新システム導入のお知らせがあるわ」@
 \n朝。@
@@ -29,14 +29,14 @@ SEQ05 \x03o\x00\x00
 
 \x00\x00\x00  
 SEQ01 <\x01
-SEQ13 
-SEQ04  \xae\x00\x00 
-SEQ12  \xdc\x00\x00 
-SEQ06 SCE223_003\x00 2\x03\x00 
+SEQ14 
+SEQ08 " \xae\x00\x00 
+SEQ08  \xdc\x00\x00 
+SEQ05 SCE223_003\x00 2\x03\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x18l\x01\x0c
-SEQ05 \x03}\x00\x00
+SEQ10 \x18l\x01\x0c
+SEQ11 \x03}\x00\x00
  
 カンナ\n　「『御堂くんの許可』……ねえ」@
 錦城\n　「……なにかいいたいことがあるのかしら、月代さん？」@
@@ -48,14 +48,14 @@ SEQ05 \x03}\x00\x00
 
 \x00  
 SEQ01 v\x03
-SEQ13 
-SEQ04  \xae\x00\x00 
-SEQ12  \xdc\x00\x00 
-SEQ06 SCE223_004\x00 \xa4\x05\x00 
+SEQ14 
+SEQ08 " \xae\x00\x00 
+SEQ08  \xdc\x00\x00 
+SEQ05 SCE223_004\x00 \xa4\x05\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x1cl\x01\x0c
-SEQ05 \x03\x7f\x00\x00
+SEQ10 \x1cl\x01\x0c
+SEQ11 \x03\x7f\x00\x00
  
 錦城とカンナはしばしにらみ合っていたが、やがて錦城が、フッ\nと軽く笑って目をそらした。\pそしてカンナに歩み寄ったかと思う\nと、突如鋭い張り手を頬に見舞った。@
 \nカンナ\n　「……なっ？！」@
@@ -65,19 +65,19 @@ SEQ05 \x03\x7f\x00\x00
 
 \x00  
 SEQ01 \xe8\x05
-SEQ13 
-SEQ04  \xae\x00\x00 
-SEQ12  \xdc\x00\x00 
-SEQ10 \x03\x10\x00\x00
+SEQ14 
+SEQ08 " \xae\x00\x00 
+SEQ08  \xdc\x00\x00 
+SEQ06 \x03\x10\x00\x00
 CHOICE
 拓司は錦城に殴りかかった\n拓司はじっと耐えた\n\l0,2,
 ENDCHOICE
 
 \x00\x00\x00  
 SEQ01 \x1e\x08
-SEQ13 
-SEQ04  \xae\x00\x00 
-SEQ12  \xdc\x00\x00 
-SEQ10  \xae\x00\x00 
-SEQ12 \x03\x03\x00\x00TextClose SPC02 \xa4\x08\x00 
-ENDF
+SEQ14 
+SEQ08 " \xae\x00\x00 
+SEQ08  \xdc\x00\x00 
+SEQ06  \xae\x00\x00 
+SEQ04 TextClose SPC02 \xa4\x08\x00 
+FEND

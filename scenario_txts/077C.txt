@@ -1,13 +1,13 @@
-STRF
+FSTR
 '\x11\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00@\r\x00
-SEQ08 .\\Data\\Script\\Bgm.Fob SPC02 \x06\x00\x00 
+SEQ12 .\\Data\\Script\\Bgm.Fob SPC02 \x06\x00\x00 
 SEQ02 StopCD SPC01 0\x00\x00 
-SEQ06 SCE077_001\x00 L\x00\x00 
+SEQ05 SCE077_001\x00 L\x00\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xf0\x87
-SEQ13 
-SEQ05 \x03~\x00\x00
+SEQ10 \xf0\x87
+SEQ14 
+SEQ11 \x03~\x00\x00
  
 拓司\n　「雲居さんが俺たちには見えないものが見えるというのは…\n　　…信じられないけど……どうやらウソじゃないらしい。@
 　　いままで何度も、雲居さんは『波動』ってやつを感じてき\n　　たし、俺はそれに救われてきた」@
@@ -20,21 +20,21 @@ SEQ05 \x03~\x00\x00
 
 \x00  
 SEQ01 \x90\x00
-SEQ13 
-SEQ04 
-SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 \xa8\x02\x00 
+SEQ14 
+SEQ08 "
+SEQ13 .\\Data\\Script\\TextFunc.Fob SPC01 \xa8\x02\x00 
 SEQ02 TextOn SPC01 \xd6\x02\x00 
-SEQ10   
+SEQ06   
 SEQ01 \x08\x01
-SEQ13 
-SEQ04  \x06\x00\x00 
+SEQ14 
+SEQ08 " \x06\x00\x00 
 SEQ02 PlayCD SPC01 \x18\x03\x00 
-SEQ06 SCE077_002\x00 4\x03\x00 
+SEQ05 SCE077_002\x00 4\x03\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xf4\x87
-SEQ13 
-SEQ05 \x03X\x00\x00
+SEQ10 \xf4\x87
+SEQ14 
+SEQ11 \x03X\x00\x00
  
 早桃\n　「イヤだよ！\p　早桃、やだからね！」@
 拓司\n　「……」@
@@ -47,15 +47,15 @@ SEQ05 \x03X\x00\x00
 
 \x00  
 SEQ01 x\x03
-SEQ13 
-SEQ04  \xa8\x02\x00 
-SEQ12  \xd6\x02\x00 
-SEQ06 SCE077_003\x00 \x12\x05\x00 
+SEQ14 
+SEQ08 " \xa8\x02\x00 
+SEQ08  \xd6\x02\x00 
+SEQ05 SCE077_003\x00 \x12\x05\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xf8\x87
-SEQ13 
-SEQ05 \x03O\x00\x00
+SEQ10 \xf8\x87
+SEQ14 
+SEQ11 \x03O\x00\x00
  
 早桃\n　「……」@
 拓司\n　「……」@
@@ -66,15 +66,15 @@ SEQ05 \x03O\x00\x00
 
 \x00  
 SEQ01 V\x05
-SEQ13 
-SEQ04  \xa8\x02\x00 
-SEQ12  \xd6\x02\x00 
-SEQ06 SCE077_004\x00 \xcc\x06\x00 
+SEQ14 
+SEQ08 " \xa8\x02\x00 
+SEQ08  \xd6\x02\x00 
+SEQ05 SCE077_004\x00 \xcc\x06\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xfc\x87
-SEQ13 
-SEQ05 \x03d\x00\x00
+SEQ10 \xfc\x87
+SEQ14 
+SEQ11 \x03d\x00\x00
  
 拓司\n　「４階の実験室だな？」@
 なたね\n　「なにが？」@
@@ -87,15 +87,15 @@ SEQ05 \x03d\x00\x00
 
 \x00\x00\x00  
 SEQ01 \x10\x07
-SEQ13 
-SEQ04  \xa8\x02\x00 
-SEQ12  \xd6\x02\x00 
-SEQ06 SCE077_005\x00 \xda\x08\x00 
+SEQ14 
+SEQ08 " \xa8\x02\x00 
+SEQ08  \xd6\x02\x00 
+SEQ05 SCE077_005\x00 \xda\x08\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x00\x88
-SEQ13 
-SEQ05 \x03E\x00\x00
+SEQ10 \x00\x88
+SEQ14 
+SEQ11 \x03E\x00\x00
  
 拓司\n　「……死んだら、な」@
 なたね\n　「死ぬわ」@
@@ -106,28 +106,28 @@ SEQ05 \x03E\x00\x00
 
 \x00\x00\x00  
 SEQ01 \x1e\t
-SEQ13 
-SEQ04  \xa8\x02\x00 
-SEQ12  \xd6\x02\x00 
-SEQ10  \x06\x00\x00 
-SEQ12  0\x00\x00 
-SEQ10   
+SEQ14 
+SEQ08 " \xa8\x02\x00 
+SEQ08  \xd6\x02\x00 
+SEQ06  \x06\x00\x00 
+SEQ08  0\x00\x00 
+SEQ06   
 SEQ01 <\x00
-SEQ13 
-SEQ04 
-SEQ11 .\\Data\\Script\\TextFunc.fob SPC01 \xa0\n\x00 
-SEQ12 \x03\x03\x00\x00WaitTime SPC03 \xce\n\x00 
-SEQ10   
+SEQ14 
+SEQ08 "
+SEQ13 .\\Data\\Script\\TextFunc.fob SPC01 \xa0\n\x00 
+SEQ04 WaitTime SPC03 \xce\n\x00 
+SEQ06   
 SEQ01 \t\x01
-SEQ13 
-SEQ04  \x06\x00\x00 
-SEQ12  \x18\x03\x00 
-SEQ06 SCE077_006\x00 "\x0b\x00 
+SEQ14 
+SEQ08 " \x06\x00\x00 
+SEQ08  \x18\x03\x00 
+SEQ05 SCE077_006\x00 "\x0b\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x04\x88
-SEQ13 
-SEQ05 \x03B\x00\x00
+SEQ10 \x04\x88
+SEQ14 
+SEQ11 \x03B\x00\x00
  
 　渡り廊下は静まり返っている。@
 　見渡す限り、なにもない。@
@@ -136,19 +136,19 @@ SEQ05 \x03B\x00\x00
 
 \x00  
 SEQ01 f\x0b
-SEQ13 
-SEQ04  \xa8\x02\x00 
-SEQ12  \xd6\x02\x00 
-SEQ10 \x03\r\x00\x00
+SEQ14 
+SEQ08 " \xa8\x02\x00 
+SEQ08  \xd6\x02\x00 
+SEQ06 \x03\r\x00\x00
 CHOICE
 一気に走り抜ける\n慎重に歩いてゆく\n\l0,2,
 ENDCHOICE
 
 \x00  
 SEQ01 \xa8\x0c
-SEQ13 
-SEQ04  \xa8\x02\x00 
-SEQ12  \xd6\x02\x00 
-SEQ10  \xa8\x02\x00 
-SEQ12 \x03\x03\x00\x00TextClose SPC02 "\r\x00 
-ENDF
+SEQ14 
+SEQ08 " \xa8\x02\x00 
+SEQ08  \xd6\x02\x00 
+SEQ06  \xa8\x02\x00 
+SEQ04 TextClose SPC02 "\r\x00 
+FEND

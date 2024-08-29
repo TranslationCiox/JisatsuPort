@@ -1,10 +1,10 @@
-STRF
+FSTR
 \x0f\x12\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00d\x0f\x00\x03\x03\x00\x00SCE031_001\x00 \x06\x00\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x10@
-SEQ13 
-SEQ05 \x03m\x00\x00
+SEQ10 \x10@
+SEQ14 
+SEQ11 \x03m\x00\x00
  
 スーパーのビニール袋に野良猫を詰め、廃墟となった五号棟の５階\nの窓からそれを放り投げていた月代カンナ。@
 どうして、という拓司の質問に、カンナはいまと同じ様な哄笑を返\nした。@
@@ -16,16 +16,16 @@ SEQ05 \x03m\x00\x00
 
 \x00\x00\x00  
 SEQ01 J\x00
-SEQ13 
-SEQ04 
-SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 \x1e\x02\x00 
+SEQ14 
+SEQ08 "
+SEQ13 .\\Data\\Script\\TextFunc.Fob SPC01 \x1e\x02\x00 
 SEQ02 TextOn SPC01 L\x02\x00 
-SEQ06 SCE031_002\x00 h\x02\x00 
+SEQ05 SCE031_002\x00 h\x02\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x14@
-SEQ13 
-SEQ05 \x03\x90\x00\x00
+SEQ10 \x14@
+SEQ14 
+SEQ11 \x03\x90\x00\x00
  
 \n　月代カンナのなかにある暗い穴に、拓司はまっさかさまに落ちて\n　いった。@
 　たとえばインターネットのデスサイト。@
@@ -40,15 +40,15 @@ SEQ05 \x03\x90\x00\x00
 
 \x00  
 SEQ01 \xac\x02
-SEQ13 
-SEQ04  \x1e\x02\x00 
-SEQ12  L\x02\x00 
-SEQ06 SCE031_003\x00 &\x05\x00 
+SEQ14 
+SEQ08 " \x1e\x02\x00 
+SEQ08  L\x02\x00 
+SEQ05 SCE031_003\x00 &\x05\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x18@
-SEQ13 
-SEQ05 \x03\xe1\x00\x00
+SEQ10 \x18@
+SEQ14 
+SEQ11 \x03\xe1\x00\x00
  
 　月代カンナは、続いて猟奇殺人事件の本を拓司にリリースした。@
 　しっかりとしたルポルタージュもあれば、興味本位のゲテモノも\n　あった。@
@@ -61,15 +61,15 @@ SEQ05 \x03\xe1\x00\x00
 
 \x00  
 SEQ01 j\x05
-SEQ13 
-SEQ04  \x1e\x02\x00 
-SEQ12  L\x02\x00 
-SEQ06 SCE031_004\x00 (\t\x00 
+SEQ14 
+SEQ08 " \x1e\x02\x00 
+SEQ08  L\x02\x00 
+SEQ05 SCE031_004\x00 (\t\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x1c@
-SEQ13 
-SEQ05 \x03\xcb\x00\x00
+SEQ10 \x1c@
+SEQ14 
+SEQ11 \x03\xcb\x00\x00
  
 拓司は自ら志願して、団地からの『猫落とし』をカンナと一緒に行\nった。@
 強烈な死の体験だった。@
@@ -82,55 +82,55 @@ SEQ05 \x03\xcb\x00\x00
 
 \x00\x00\x00  
 SEQ01 l\t
-SEQ13 
-SEQ04  \x1e\x02\x00 
-SEQ12  L\x02\x00 
-SEQ10  \x1e\x02\x00 
-SEQ12 \x03\x05\x00\x00TextWindowOffDirect \xde\x0c\x00 
-SEQ10   
+SEQ14 
+SEQ08 " \x1e\x02\x00 
+SEQ08  L\x02\x00 
+SEQ06  \x1e\x02\x00 
+SEQ08 \x03\x05\x00\x00TextWindowOffDirect \xde\x0c\x00 
+SEQ06   
 SEQ01 \xca\x00
-SEQ13 
-SEQ04 
-SEQ08 .\\Data\\Script\\Bg.Fob SPC03  \r\x00 
+SEQ14 
+SEQ08 "
+SEQ12 .\\Data\\Script\\Bg.Fob SPC03  \r\x00 
 SEQ02 BgOn SPC03 J\r\x00 
-SEQ10   
+SEQ06   
 SEQ01 \x01\x00
-SEQ13 
-SEQ04 
-SEQ11 .\\Data\\Script\\TextFunc.fob SPC01 \x80\r\x00 
-SEQ12 \x03\x03\x00\x00WaitTime SPC03 \xae\r\x00 
-SEQ10   
+SEQ14 
+SEQ08 "
+SEQ13 .\\Data\\Script\\TextFunc.fob SPC01 \x80\r\x00 
+SEQ04 WaitTime SPC03 \xae\r\x00 
+SEQ06   
 SEQ01 \xc8\x00
-SEQ13 
-SEQ04   \r\x00 
-SEQ12  J\r\x00 
-SEQ10   
+SEQ14 
+SEQ08 "  \r\x00 
+SEQ08  J\r\x00 
+SEQ06   
 SEQ01 \x01\x00
-SEQ13 
-SEQ04  \x80\r\x00 
-SEQ12  \xae\r\x00 
-SEQ10   
+SEQ14 
+SEQ08 " \x80\r\x00 
+SEQ08  \xae\r\x00 
+SEQ06   
 SEQ01 \xca\x00
-SEQ13 
-SEQ04   \r\x00 
-SEQ12  J\r\x00 
-SEQ10   
+SEQ14 
+SEQ08 "  \r\x00 
+SEQ08  J\r\x00 
+SEQ06   
 SEQ01 \x01\x00
-SEQ13 
-SEQ04  \x80\r\x00 
-SEQ12  \xae\r\x00 
-SEQ10   
+SEQ14 
+SEQ08 " \x80\r\x00 
+SEQ08  \xae\r\x00 
+SEQ06   
 SEQ01 \xc8\x00
-SEQ13 
-SEQ04   \r\x00 
-SEQ12  J\r\x00 
-SEQ10   
+SEQ14 
+SEQ08 "  \r\x00 
+SEQ08  J\r\x00 
+SEQ06   
 SEQ01 \x01\x00
-SEQ13 
-SEQ04  \x80\r\x00 
-SEQ12  \xae\r\x00 
-SEQ10  \x1e\x02\x00 
-SEQ12 \x03\x05\x00\x00TextWindowOnDirect SPC01 \x12\x0f\x00 
-SEQ10  \x1e\x02\x00 
-SEQ12 \x03\x03\x00\x00TextClose SPC02 F\x0f\x00 
-ENDF
+SEQ14 
+SEQ08 " \x80\r\x00 
+SEQ08  \xae\r\x00 
+SEQ06  \x1e\x02\x00 
+SEQ08 \x03\x05\x00\x00TextWindowOnDirect SPC01 \x12\x0f\x00 
+SEQ06  \x1e\x02\x00 
+SEQ04 TextClose SPC02 F\x0f\x00 
+FEND

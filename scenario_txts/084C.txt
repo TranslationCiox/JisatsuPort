@@ -1,10 +1,10 @@
-STRF
+FSTR
 m\x06\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00H\x05\x00\x03\x03\x00\x00SCE084_001\x00 \x06\x00\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xe0\x92
-SEQ13 
-SEQ05 \x03\xb8\x00\x00
+SEQ10 \xe0\x92
+SEQ14 
+SEQ11 \x03\xb8\x00\x00
  
 目が覚めた。@
 －－おれは気を失っていたのか？\p　それとも、これもまた夢なの\nか？@
@@ -22,16 +22,16 @@ SEQ05 \x03\xb8\x00\x00
 
 \x00\x00\x00  
 SEQ01 J\x00
-SEQ13 
-SEQ04 
-SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 J\x03\x00 
+SEQ14 
+SEQ08 "
+SEQ13 .\\Data\\Script\\TextFunc.Fob SPC01 J\x03\x00 
 SEQ02 TextOn SPC01 x\x03\x00 
-SEQ06 SCE084_002\x00 \x94\x03\x00 
+SEQ05 SCE084_002\x00 \x94\x03\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xe4\x92
-SEQ13 
-SEQ05 \x03C\x00\x00
+SEQ10 \xe4\x92
+SEQ14 
+SEQ11 \x03C\x00\x00
  
 －－紅葉は？@
 なんとか気力を奮い起こして、紅葉の姿を探す。@
@@ -40,9 +40,9 @@ SEQ05 \x03C\x00\x00
 
 \x00\x00\x00  
 SEQ01 \xd8\x03
-SEQ13 
-SEQ04  J\x03\x00 
-SEQ12  x\x03\x00 
-SEQ10  J\x03\x00 
-SEQ12 \x03\x03\x00\x00TextClose SPC02 *\x05\x00 
-ENDF
+SEQ14 
+SEQ08 " J\x03\x00 
+SEQ08  x\x03\x00 
+SEQ06  J\x03\x00 
+SEQ04 TextClose SPC02 *\x05\x00 
+FEND

@@ -1,15 +1,15 @@
-STRF
+FSTR
 G\x1a\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00j\x16\x00  
 SEQ01 \x04\x01
-SEQ13 
-SEQ04 
-SEQ08 .\\Data\\Script\\Bgm.Fob SPC02  \x00\x00 
+SEQ14 
+SEQ08 "
+SEQ12 .\\Data\\Script\\Bgm.Fob SPC02  \x00\x00 
 SEQ02 PlayCD SPC01 J\x00\x00 
-SEQ06 SCES03_001\x00 f\x00\x00 
+SEQ05 SCES03_001\x00 f\x00\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xd0\xb5\x01\x0c
-SEQ05 \x03\x8b\x00\x00
+SEQ10 \xd0\xb5\x01\x0c
+SEQ11 \x03\x8b\x00\x00
  
 ずっと前に手術を受けて、身体はうんと良くなったの。@
 でも、みんなと一緒に運動とかはできなかったし、旅行とかにも\n行けなかった。\pだからかな、なんだかみんなとはあまり仲良くな\nれなかった。\pどんなに一緒にいても、結局最後のところで私は違\nうんだな、って思ってた。@
@@ -22,15 +22,15 @@ SEQ05 \x03\x8b\x00\x00
 
 \x00\x00\x00  
 SEQ01 \xaa\x00
-SEQ13 
-SEQ04 
-SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 \xf6\x02\x00 
+SEQ14 
+SEQ08 "
+SEQ13 .\\Data\\Script\\TextFunc.Fob SPC01 \xf6\x02\x00 
 SEQ02 TextOn SPC01 $\x03\x00 
-SEQ06 SCES03_002\x00 @\x03\x00 
+SEQ05 SCES03_002\x00 @\x03\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xd4\xb5\x01\x0c
-SEQ05 \x03\x89\x00\x00
+SEQ10 \xd4\xb5\x01\x0c
+SEQ11 \x03\x89\x00\x00
  
 クラスのみんなと宇宙船で旅行してるとね、事故が起きるの。@
 脱出ポットには人数制限があって、どうしても１人だけ宇宙船に\n残らなくちゃいけない。\pみんな困った顔で、うつむいてる。@
@@ -44,14 +44,14 @@ SEQ05 \x03\x89\x00\x00
 
 \x00\x00\x00  
 SEQ01 \x84\x03
-SEQ13 
-SEQ04  \xf6\x02\x00 
-SEQ12  $\x03\x00 
-SEQ06 SCES03_003\x00 \xe2\x05\x00 
+SEQ14 
+SEQ08 " \xf6\x02\x00 
+SEQ08  $\x03\x00 
+SEQ05 SCES03_003\x00 \xe2\x05\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xd8\xb5\x01\x0c
-SEQ05 \x03\xde\x00\x00
+SEQ10 \xd8\xb5\x01\x0c
+SEQ11 \x03\xde\x00\x00
  
 手術してからも、本当のお友達はできなかった。@
 ずっと昔は、みんなが気を使って友達のふりをしてくれるのが嫌\nで仕方がなかったけど、学生になってからは、それすらなくなち\nゃった。@
@@ -67,14 +67,14 @@ SEQ05 \x03\xde\x00\x00
 
 \x00  
 SEQ01 &\x06
-SEQ13 
-SEQ04  \xf6\x02\x00 
-SEQ12  $\x03\x00 
-SEQ06 SCES03_004\x00 \xd8\t\x00 
+SEQ14 
+SEQ08 " \xf6\x02\x00 
+SEQ08  $\x03\x00 
+SEQ05 SCES03_004\x00 \xd8\t\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xdc\xb5\x01\x0c
-SEQ05 \x03\xa3\x00\x00
+SEQ10 \xdc\xb5\x01\x0c
+SEQ11 \x03\xa3\x00\x00
  
 「ねえドルチェ」@
 『なんニャ、早桃ちゃん？』@
@@ -88,20 +88,20 @@ SEQ05 \x03\xa3\x00\x00
 
 \x00\x00\x00  
 SEQ01 \x1c\n
-SEQ13 
-SEQ04  \xf6\x02\x00 
-SEQ12  $\x03\x00 
-SEQ10   
+SEQ14 
+SEQ08 " \xf6\x02\x00 
+SEQ08  $\x03\x00 
+SEQ06   
 SEQ01 B\x00
-SEQ13 
-SEQ04 
-SEQ08 .\\Data\\Script\\Bg.Fob SPC03 \xfc\x0c\x00 
-SEQ12 \x03\x04\x00\x00BgAutoFadeIn SPC03 &\r\x00 
-SEQ06 SCES03_005\x00 J\r\x00 
+SEQ14 
+SEQ08 "
+SEQ12 .\\Data\\Script\\Bg.Fob SPC03 \xfc\x0c\x00 
+SEQ03 BgAutoFadeIn SPC03 &\r\x00 
+SEQ05 SCES03_005\x00 J\r\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xe0\xb5\x01\x0c
-SEQ05 \x03|\x00\x00
+SEQ10 \xe0\xb5\x01\x0c
+SEQ11 \x03|\x00\x00
  
 ある日、いつもみたいに屋上でぼんやりしていると、声をかけら\nれたの。\pお父さんと同じくらいの歳の人で……あ、前のお父さん\nだよ……すごく優しそうな人だった。@
 一緒にご飯食べない？\p　ってその人はいった。@
@@ -114,19 +114,19 @@ SEQ05 \x03|\x00\x00
 
 \x00\x00\x00  
 SEQ01 \x8e\r
-SEQ13 
-SEQ04  \xf6\x02\x00 
-SEQ12  $\x03\x00 
-SEQ10   
+SEQ14 
+SEQ08 " \xf6\x02\x00 
+SEQ08  $\x03\x00 
+SEQ06   
 SEQ01 \xc8\x00
-SEQ13 
-SEQ04  \xfc\x0c\x00 
-SEQ12  &\r\x00 
-SEQ06 SCES03_006\x00 \xec\x0f\x00 
+SEQ14 
+SEQ08 " \xfc\x0c\x00 
+SEQ08  &\r\x00 
+SEQ05 SCES03_006\x00 \xec\x0f\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xe4\xb5\x01\x0c
-SEQ05 \x03j\x00\x00
+SEQ10 \xe4\xb5\x01\x0c
+SEQ11 \x03j\x00\x00
  
 ……びっくりした？@
 言い訳する気はないよ。\pでも、ひとつだけ信じて欲しいのは、お\n金なんかどうでも良かったってこと。\pただ、こういうときは、値\n段を聞いておくものじゃないかなと思ったから、聞いただけ。@
@@ -138,14 +138,14 @@ SEQ05 \x03j\x00\x00
 
 \x00  
 SEQ01 0\x10
-SEQ13 
-SEQ04  \xf6\x02\x00 
-SEQ12  $\x03\x00 
-SEQ06 SCES03_007\x00 \x12\x12\x00 
+SEQ14 
+SEQ08 " \xf6\x02\x00 
+SEQ08  $\x03\x00 
+SEQ05 SCES03_007\x00 \x12\x12\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xe8\xb5\x01\x0c
-SEQ05 \x03\xe2\x00\x00
+SEQ10 \xe8\xb5\x01\x0c
+SEQ11 \x03\xe2\x00\x00
  
 一緒にご飯を食べて、いろんなお話をした。@
 みんな、ウソのお話。早桃は活発なクラスの人気者で、いろいろ\n遊びなんかも経験してる子って設定なの。@
@@ -162,11 +162,11 @@ SEQ05 \x03\xe2\x00\x00
 
 \x00\x00\x00  
 SEQ01 V\x12
-SEQ13 
-SEQ04  \xf6\x02\x00 
-SEQ12  $\x03\x00 
-SEQ10   \x00\x00 
+SEQ14 
+SEQ08 " \xf6\x02\x00 
+SEQ08  $\x03\x00 
+SEQ06   \x00\x00 
 SEQ02 StopCD SPC01 $\x16\x00 
-SEQ10  \xf6\x02\x00 
-SEQ12 \x03\x03\x00\x00TextClose SPC02 L\x16\x00 
-ENDF
+SEQ06  \xf6\x02\x00 
+SEQ04 TextClose SPC02 L\x16\x00 
+FEND

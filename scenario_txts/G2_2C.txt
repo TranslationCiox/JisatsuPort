@@ -1,9 +1,9 @@
-STRF
+FSTR
 \x1d\x04\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xa4\t3\x01\x00\x00\x00\x14\x03\x00\x03\x03\x00\x00SCEG02_201\x00 \x06\x00\x00 
 SEQ07  
 SEQ01 
-SEQ03 l\xc5\x01\x0c
-SEQ05 \x03b\x00\x00
+SEQ10 l\xc5\x01\x0c
+SEQ11 \x03b\x00\x00
  
 錦城\n　「もう？\p　もう出ちゃうの？@
 　　そんなにエロい気分になってるの？@
@@ -17,19 +17,19 @@ SEQ05 \x03b\x00\x00
 \z
 \x00\x00\x00  
 SEQ01 J\x00
-SEQ13 
-SEQ04 
-SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 \xf2\x01\x00 
+SEQ14 
+SEQ08 "
+SEQ13 .\\Data\\Script\\TextFunc.Fob SPC01 \xf2\x01\x00 
 SEQ02 TextOn SPC01  \x02\x00 
-SEQ10   
+SEQ06   
 SEQ01 \xc8\x00
-SEQ13 
-SEQ04 
-SEQ08 .\\Data\\Script\\Bg.Fob SPC03 V\x02\x00 
-SEQ12 \x03\x04\x00\x00BgAutoFadeIn SPC03 \x80\x02\x00 
-SEQ10 
-SEQ08 .\\Data\\Script\\Bgm.Fob SPC02 \xa4\x02\x00 
+SEQ14 
+SEQ08 "
+SEQ12 .\\Data\\Script\\Bg.Fob SPC03 V\x02\x00 
+SEQ03 BgAutoFadeIn SPC03 \x80\x02\x00 
+SEQ06 
+SEQ12 .\\Data\\Script\\Bgm.Fob SPC02 \xa4\x02\x00 
 SEQ02 StopCD SPC01 \xce\x02\x00 
-SEQ10  \xf2\x01\x00 
-SEQ12 \x03\x03\x00\x00TextClose SPC02 \xf6\x02\x00 
-ENDF
+SEQ06  \xf2\x01\x00 
+SEQ04 TextClose SPC02 \xf6\x02\x00 
+FEND

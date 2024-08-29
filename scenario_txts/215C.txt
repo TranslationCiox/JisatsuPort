@@ -1,31 +1,31 @@
-STRF
+FSTR
 \xeb\x03\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xa4\t3\x01\x00\x00\x00\xac\x02\x00
-SEQ08 .\\Data\\Script\\Bgm.Fob SPC02 \x06\x00\x00 
+SEQ12 .\\Data\\Script\\Bgm.Fob SPC02 \x06\x00\x00 
 SEQ02 StopCD SPC01 0\x00\x00 
-SEQ06 SCE215_001\x00 L\x00\x00 
+SEQ05 SCE215_001\x00 L\x00\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x90_\x01\x0c
-SEQ05 \x03\x11\x00\x00
+SEQ10 \x90_\x01\x0c
+SEQ11 \x03\x11\x00\x00
  
 \n\n\n\n\n\n\n\n\n\n　　　　　　　　　　　　　『７日目』\
 
 \x00\x00\x00  
 SEQ01 \x90\x00
-SEQ13 
-SEQ04 
-SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 \xf4\x00\x00 
+SEQ14 
+SEQ08 "
+SEQ13 .\\Data\\Script\\TextFunc.Fob SPC01 \xf4\x00\x00 
 SEQ02 TextOn SPC01 "\x01\x00 
-SEQ10   
+SEQ06   
 SEQ01 \x0c\x01
-SEQ13 
-SEQ04  \x06\x00\x00 
+SEQ14 
+SEQ08 " \x06\x00\x00 
 SEQ02 PlayCD SPC01 d\x01\x00 
-SEQ06 SCE215_002\x00 \x80\x01\x00 
+SEQ05 SCE215_002\x00 \x80\x01\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x94_\x01\x0c
-SEQ05 \x03!\x00\x00
+SEQ10 \x94_\x01\x0c
+SEQ11 \x03!\x00\x00
  
 目立った衝突はない。@
 早桃は風邪からほぼ回復したようだ。@
@@ -34,9 +34,9 @@ SEQ05 \x03!\x00\x00
 
 \x00  
 SEQ01 \xc4\x01
-SEQ13 
-SEQ04  \xf4\x00\x00 
-SEQ12  "\x01\x00 
-SEQ10  \xf4\x00\x00 
-SEQ12 \x03\x03\x00\x00TextClose SPC02 \x8e\x02\x00 
-ENDF
+SEQ14 
+SEQ08 " \xf4\x00\x00 
+SEQ08  "\x01\x00 
+SEQ06  \xf4\x00\x00 
+SEQ04 TextClose SPC02 \x8e\x02\x00 
+FEND

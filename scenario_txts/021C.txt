@@ -1,37 +1,37 @@
-STRF
+FSTR
 |\x0b\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\n\t\x00\x03\x03\x00\x00SCE021_001\x00 \x06\x00\x00 
 SEQ07  
 SEQ01 
-SEQ03 p0
-SEQ13 
-SEQ05 \x03\x10\x00\x00
+SEQ10 p0
+SEQ14 
+SEQ11 \x03\x10\x00\x00
  
 \n\n\n\n\n\n\n\n\n\n　　　　　　　　　『学校／四限』\
 
 \x00\x00\x00  
 SEQ01 J\x00
-SEQ13 
-SEQ04 
-SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 \xaa\x00\x00 
+SEQ14 
+SEQ08 "
+SEQ13 .\\Data\\Script\\TextFunc.Fob SPC01 \xaa\x00\x00 
 SEQ02 TextOn SPC01 \xd8\x00\x00 
-SEQ10   
+SEQ06   
 SEQ01 \x05\x00
-SEQ13 
-SEQ04 
-SEQ08 .\\Data\\Script\\Bg.Fob SPC03 \x0e\x01\x00 
-SEQ12 \x03\x04\x00\x00BgAutoFadeIn SPC03 8\x01\x00 
-SEQ10   
+SEQ14 
+SEQ08 "
+SEQ12 .\\Data\\Script\\Bg.Fob SPC03 \x0e\x01\x00 
+SEQ03 BgAutoFadeIn SPC03 8\x01\x00 
+SEQ06   
 SEQ01 \x08\x01
-SEQ13 
-SEQ04 
-SEQ08 .\\Data\\Script\\Bgm.Fob SPC02 v\x01\x00 
+SEQ14 
+SEQ08 "
+SEQ12 .\\Data\\Script\\Bgm.Fob SPC02 v\x01\x00 
 SEQ02 PlayCD SPC01 \xa0\x01\x00 
-SEQ06 SCE021_002\x00 \xbc\x01\x00 
+SEQ05 SCE021_002\x00 \xbc\x01\x00 
 SEQ07  
 SEQ01 
-SEQ03 t0
-SEQ13 
-SEQ05 \x03q\x00\x00
+SEQ10 t0
+SEQ14 
+SEQ11 \x03q\x00\x00
  
 　拓司にとって、朝が一番鮮やかな時間だ。@
 　時間が経つにつれて、世界の色があせてゆく。@
@@ -48,20 +48,20 @@ SEQ05 \x03q\x00\x00
 
 \x00\x00\x00  
 SEQ01 \x00\x02
-SEQ13 
-SEQ04  \xaa\x00\x00 
-SEQ12  \xd8\x00\x00 
-SEQ10   
+SEQ14 
+SEQ08 " \xaa\x00\x00 
+SEQ08  \xd8\x00\x00 
+SEQ06   
 SEQ01 \xc8\x00
-SEQ13 
-SEQ04  \x0e\x01\x00 
-SEQ12  8\x01\x00 
-SEQ06 SCE021_003\x00 2\x04\x00 
+SEQ14 
+SEQ08 " \x0e\x01\x00 
+SEQ08  8\x01\x00 
+SEQ05 SCE021_003\x00 2\x04\x00 
 SEQ07  
 SEQ01 
-SEQ03 x0
-SEQ13 
-SEQ05 \x03~\x00\x00
+SEQ10 x0
+SEQ14 
+SEQ11 \x03~\x00\x00
  
 \n　－－死んじまおうかなあ。@
 \n　拓司はすでに口癖となったその言葉を、呪文のように頭のなかで\n　繰り返した。@
@@ -75,15 +75,15 @@ SEQ05 \x03~\x00\x00
 \z
 \x00\x00\x00  
 SEQ01 v\x04
-SEQ13 
-SEQ04  \xaa\x00\x00 
-SEQ12  \xd8\x00\x00 
-SEQ06 SCE021_004\x00 \xa8\x06\x00 
+SEQ14 
+SEQ08 " \xaa\x00\x00 
+SEQ08  \xd8\x00\x00 
+SEQ05 SCE021_004\x00 \xa8\x06\x00 
 SEQ07  
 SEQ01 
-SEQ03 |0
-SEQ13 
-SEQ05 \x03Q\x00\x00
+SEQ10 |0
+SEQ14 
+SEQ11 \x03Q\x00\x00
  
 \n　死んじまおうかなあ。@
 　死んじまおうかなあ。@
@@ -94,19 +94,19 @@ SEQ05 \x03Q\x00\x00
 
 \x00  
 SEQ01 \xec\x06
-SEQ13 
-SEQ04  \xaa\x00\x00 
-SEQ12  \xd8\x00\x00 
-SEQ10 \x03\x0f\x00\x00
+SEQ14 
+SEQ08 " \xaa\x00\x00 
+SEQ08  \xd8\x00\x00 
+SEQ06 \x03\x0f\x00\x00
 CHOICE
 早桃を妄想の中で犯す\n紅葉を想像の中で犯す\n\l0,2,
 ENDCHOICE
 
 \x00  
 SEQ01 j\x08
-SEQ13 
-SEQ04  \xaa\x00\x00 
-SEQ12  \xd8\x00\x00 
-SEQ10  \xaa\x00\x00 
-SEQ12 \x03\x03\x00\x00TextClose SPC02 \xec\x08\x00 
-ENDF
+SEQ14 
+SEQ08 " \xaa\x00\x00 
+SEQ08  \xd8\x00\x00 
+SEQ06  \xaa\x00\x00 
+SEQ04 TextClose SPC02 \xec\x08\x00 
+FEND

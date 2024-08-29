@@ -1,9 +1,9 @@
-STRF
+FSTR
 R\x04\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xa4\t3\x01\x00\x00\x00<\x03\x00\x03\x03\x00\x00SCEG02_101\x00 \x06\x00\x00 
 SEQ07  
 SEQ01 
-SEQ03 h\xc5\x01\x0c
-SEQ05 \x03\x86\x00\x00
+SEQ10 h\xc5\x01\x0c
+SEQ11 \x03\x86\x00\x00
  
 錦城\n　「エロい子ね……いいわよ。\p許してあげる。@
 　　……どう？　柔らかいでしょう？　つけてないのよ、わかる？\n　　\pあなたに触らせてあげようと思って、下着、つけてこなかっ\n　　たの。\p……昼間からずっとあなたのこと見てたわ。@
@@ -13,13 +13,13 @@ SEQ05 \x03\x86\x00\x00
 　　よっぽど先生のおっぱい、気に入ったのね？\n　　ほんと……いやらしい子だわ」\w\z
 \x00  
 SEQ01 J\x00
-SEQ13 
-SEQ04 
-SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 \x82\x02\x00 
+SEQ14 
+SEQ08 "
+SEQ13 .\\Data\\Script\\TextFunc.Fob SPC01 \x82\x02\x00 
 SEQ02 TextOn SPC01 \xb0\x02\x00 
-SEQ10 
-SEQ08 .\\Data\\Script\\Bgm.Fob SPC02 \xcc\x02\x00 
+SEQ06 
+SEQ12 .\\Data\\Script\\Bgm.Fob SPC02 \xcc\x02\x00 
 SEQ02 StopCD SPC01 \xf6\x02\x00 
-SEQ10  \x82\x02\x00 
-SEQ12 \x03\x03\x00\x00TextClose SPC02 \x1e\x03\x00 
-ENDF
+SEQ06  \x82\x02\x00 
+SEQ04 TextClose SPC02 \x1e\x03\x00 
+FEND

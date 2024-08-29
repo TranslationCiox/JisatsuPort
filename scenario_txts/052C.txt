@@ -1,16 +1,16 @@
-STRF
+FSTR
 \xbf'\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00Z!\x00  
 SEQ01 \x0b\x01
-SEQ13 
-SEQ04 
-SEQ08 .\\Data\\Script\\Bgm.Fob SPC02  \x00\x00 
+SEQ14 
+SEQ08 "
+SEQ12 .\\Data\\Script\\Bgm.Fob SPC02  \x00\x00 
 SEQ02 PlayCD SPC01 J\x00\x00 
-SEQ06 SCE052_001\x00 f\x00\x00 
+SEQ05 SCE052_001\x00 f\x00\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xe0`
-SEQ13 
-SEQ05 \x03\xac\x00\x00
+SEQ10 \xe0`
+SEQ14 
+SEQ11 \x03\xac\x00\x00
  
 　勢いよく扉を引き開けて、拓司は教室に躍り込んだ。@
 \n拓司\n　「早桃！」@
@@ -28,16 +28,16 @@ SEQ05 \x03\xac\x00\x00
 
 \x00  
 SEQ01 \xaa\x00
-SEQ13 
-SEQ04 
-SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 z\x03\x00 
+SEQ14 
+SEQ08 "
+SEQ13 .\\Data\\Script\\TextFunc.Fob SPC01 z\x03\x00 
 SEQ02 TextOn SPC01 \xa8\x03\x00 
-SEQ06 SCE052_002\x00 \xc4\x03\x00 
+SEQ05 SCE052_002\x00 \xc4\x03\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xe4`
-SEQ13 
-SEQ05 \x03]\x00\x00
+SEQ10 \xe4`
+SEQ14 
+SEQ11 \x03]\x00\x00
  
 早桃\n　「おにい……ちゃん？」@
 拓司\n　「早桃！」@
@@ -50,15 +50,15 @@ SEQ05 \x03]\x00\x00
 
 \x00\x00\x00  
 SEQ01 \x08\x04
-SEQ13 
-SEQ04  z\x03\x00 
-SEQ12  \xa8\x03\x00 
-SEQ06 SCE052_003\x00 \xb6\x05\x00 
+SEQ14 
+SEQ08 " z\x03\x00 
+SEQ08  \xa8\x03\x00 
+SEQ05 SCE052_003\x00 \xb6\x05\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xe8`
-SEQ13 
-SEQ05 \x03l\x00\x00
+SEQ10 \xe8`
+SEQ14 
+SEQ11 \x03l\x00\x00
  
 拓司は呆気にとられた。@
 初対面の人間が、正面切っていう話題ではない。@
@@ -73,15 +73,15 @@ SEQ05 \x03l\x00\x00
 
 \x00\x00\x00  
 SEQ01 \xfa\x05
-SEQ13 
-SEQ04  z\x03\x00 
-SEQ12  \xa8\x03\x00 
-SEQ06 SCE052_004\x00 \xe4\x07\x00 
+SEQ14 
+SEQ08 " z\x03\x00 
+SEQ08  \xa8\x03\x00 
+SEQ05 SCE052_004\x00 \xe4\x07\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xec`
-SEQ13 
-SEQ05 \x03{\x00\x00
+SEQ10 \xec`
+SEQ14 
+SEQ11 \x03{\x00\x00
  
 学生\n　「飛ばせたよ」@
 拓司\n　「……飛ばせた？」@
@@ -96,15 +96,15 @@ SEQ05 \x03{\x00\x00
 
 \x00\x00\x00  
 SEQ01 (\x08
-SEQ13 
-SEQ04  z\x03\x00 
-SEQ12  \xa8\x03\x00 
-SEQ06 SCE052_005\x00 N\n\x00 
+SEQ14 
+SEQ08 " z\x03\x00 
+SEQ08  \xa8\x03\x00 
+SEQ05 SCE052_005\x00 N\n\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xf0`
-SEQ13 
-SEQ05 \x03\x96\x00\x00
+SEQ10 \xf0`
+SEQ14 
+SEQ11 \x03\x96\x00\x00
  
 学生は机をガン、と足でけ飛ばした。@
 怒りの爆発をギリギリで抑えている。@
@@ -122,15 +122,15 @@ SEQ05 \x03\x96\x00\x00
 
 \x00  
 SEQ01 \x92\n
-SEQ13 
-SEQ04  z\x03\x00 
-SEQ12  \xa8\x03\x00 
-SEQ06 SCE052_006\x00 $\r\x00 
+SEQ14 
+SEQ08 " z\x03\x00 
+SEQ08  \xa8\x03\x00 
+SEQ05 SCE052_006\x00 $\r\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xf4`
-SEQ13 
-SEQ05 \x03\x93\x00\x00
+SEQ10 \xf4`
+SEQ14 
+SEQ11 \x03\x93\x00\x00
  
 拓司\n　「オイ、落ち着け！\p　いったいどうしたって－－」@
 学生\n　「だから窓から飛んでもらったよ！」@
@@ -145,15 +145,15 @@ SEQ05 \x03\x93\x00\x00
 
 \x00  
 SEQ01 h\r
-SEQ13 
-SEQ04  z\x03\x00 
-SEQ12  \xa8\x03\x00 
-SEQ06 SCE052_007\x00 \xee\x0f\x00 
+SEQ14 
+SEQ08 " z\x03\x00 
+SEQ08  \xa8\x03\x00 
+SEQ05 SCE052_007\x00 \xee\x0f\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xf8`
-SEQ13 
-SEQ05 \x03\x90\x00\x00
+SEQ10 \xf8`
+SEQ14 
+SEQ11 \x03\x90\x00\x00
  
 円陣の中央で、早桃がびくっと身をすくめる。@
 \n学生\n　「澱むんだよ、コイツがいると。@
@@ -170,15 +170,15 @@ SEQ05 \x03\x90\x00\x00
 
 \x00\x00\x00  
 SEQ01 2\x10
-SEQ13 
-SEQ04  z\x03\x00 
-SEQ12  \xa8\x03\x00 
-SEQ06 SCE052_008\x00 \xac\x12\x00 
+SEQ14 
+SEQ08 " z\x03\x00 
+SEQ08  \xa8\x03\x00 
+SEQ05 SCE052_008\x00 \xac\x12\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xfc`
-SEQ13 
-SEQ05 \x03f\x00\x00
+SEQ10 \xfc`
+SEQ14 
+SEQ11 \x03f\x00\x00
  
 早桃\n　「しかたないよ……\p早桃が悪いんだからしかたがないよ」@
 \n拓司\n　「なっ？！」@
@@ -193,15 +193,15 @@ SEQ05 \x03f\x00\x00
 
 \x00  
 SEQ01 \xf0\x12
-SEQ13 
-SEQ04  z\x03\x00 
-SEQ12  \xa8\x03\x00 
-SEQ06 SCE052_009\x00 \xc2\x14\x00 
+SEQ14 
+SEQ08 " z\x03\x00 
+SEQ08  \xa8\x03\x00 
+SEQ05 SCE052_009\x00 \xc2\x14\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x00a
-SEQ13 
-SEQ05 \x03%\x00\x00
+SEQ10 \x00a
+SEQ14 
+SEQ11 \x03%\x00\x00
  
 誰かが「死ね」といった。@
 \n学生\n　「死ねよ」@
@@ -212,15 +212,15 @@ SEQ05 \x03%\x00\x00
 
 \x00\x00\x00  
 SEQ01 \x06\x15
-SEQ13 
-SEQ04  z\x03\x00 
-SEQ12  \xa8\x03\x00 
-SEQ06 SCE052_010\x00 \xd4\x15\x00 
+SEQ14 
+SEQ08 " z\x03\x00 
+SEQ08  \xa8\x03\x00 
+SEQ05 SCE052_010\x00 \xd4\x15\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x04a
-SEQ13 
-SEQ05 \x03\x96\x00\x00
+SEQ10 \x04a
+SEQ14 
+SEQ11 \x03\x96\x00\x00
  
 　死ねよ、死ねよ、死ねよ、死ねよ、死ねよ、死ねよ、死ねよ、\n　死ねよ、死ねよ、死ねよ\n　死ね死ね死ね死ね死ね死ね死ね死ね死ね死ね死ね死ね死ね死ね\n　死ね死ね死ね\n　シネシネシネシネシシネシネシネシネシネシネシネシネシネシ\n　ネシネシネシネシネシネ\n　学生たちの声は、大合唱となって教室にとどろき渡った。@
 \n　シ……足を上げる。@
@@ -231,15 +231,15 @@ SEQ05 \x03\x96\x00\x00
 
 \x00  
 SEQ01 \x18\x16
-SEQ13 
-SEQ04  z\x03\x00 
-SEQ12  \xa8\x03\x00 
-SEQ06 SCE052_011\x00 \xaa\x18\x00 
+SEQ14 
+SEQ08 " z\x03\x00 
+SEQ08  \xa8\x03\x00 
+SEQ05 SCE052_011\x00 \xaa\x18\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x08a
-SEQ13 
-SEQ05 \x03\xb4\x00\x00
+SEQ10 \x08a
+SEQ14 
+SEQ11 \x03\xb4\x00\x00
  
 　足を踏みならす音は太鼓のリズムで、合唱は呪文の詠唱だった。@
 　中世の魔女狩りそのものだった。@
@@ -254,20 +254,20 @@ SEQ05 \x03\xb4\x00\x00
 
 \x00\x00\x00  
 SEQ01 \xee\x18
-SEQ13 
-SEQ04  z\x03\x00 
-SEQ12  \xa8\x03\x00 
-SEQ10   
+SEQ14 
+SEQ08 " z\x03\x00 
+SEQ08  \xa8\x03\x00 
+SEQ06   
 SEQ01 \n\x01
-SEQ13 
-SEQ04   \x00\x00 
-SEQ12  J\x00\x00 
-SEQ06 SCE052_012\x00 ,\x1c\x00 
+SEQ14 
+SEQ08 "  \x00\x00 
+SEQ08  J\x00\x00 
+SEQ05 SCE052_012\x00 ,\x1c\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x0ca
-SEQ13 
-SEQ05 \x03\x9b\x00\x00
+SEQ10 \x0ca
+SEQ14 
+SEQ11 \x03\x9b\x00\x00
  
 猛烈な怒りに突き動かされて、拓司は円陣のなかへと躍り込んだ。@
 \n拓司\n　「オ、オ、オ、オ、オ、オ、ア、ア、ア、ア、ア、ア、ア！」@
@@ -280,15 +280,15 @@ SEQ05 \x03\x9b\x00\x00
 
 \x00  
 SEQ01 p\x1c
-SEQ13 
-SEQ04  z\x03\x00 
-SEQ12  \xa8\x03\x00 
-SEQ06 SCE052_013\x00 \x16\x1f\x00 
+SEQ14 
+SEQ08 " z\x03\x00 
+SEQ08  \xa8\x03\x00 
+SEQ05 SCE052_013\x00 \x16\x1f\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x10a
-SEQ13 
-SEQ05 \x03g\x00\x00
+SEQ10 \x10a
+SEQ14 
+SEQ11 \x03g\x00\x00
  
 　興奮した声、声、声が、教室中を行き交っている。@
 　ウルセチョウシブッコロホネガジャネエオレウルセエタコイテ\nンイタイヨホネガ！\p　ガ！\p　ガ！\p　ホネ！　@
@@ -298,9 +298,9 @@ SEQ05 \x03g\x00\x00
 
 \x00\x00  
 SEQ01 Z\x1f
-SEQ13 
-SEQ04  z\x03\x00 
-SEQ12  \xa8\x03\x00 
-SEQ10  z\x03\x00 
-SEQ12 \x03\x03\x00\x00TextClose SPC02 <!\x00 
-ENDF
+SEQ14 
+SEQ08 " z\x03\x00 
+SEQ08  \xa8\x03\x00 
+SEQ06  z\x03\x00 
+SEQ04 TextClose SPC02 <!\x00 
+FEND

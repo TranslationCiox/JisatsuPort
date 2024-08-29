@@ -1,9 +1,9 @@
-STRF
+FSTR
 \x9d\x03\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00@\x044\x01\x00\x00\x00\xd8\x02\x00\x03\x03\x00\x00SCE225_001\x00 \x06\x00\x00 
 SEQ07  
 SEQ01 
-SEQ03 0o\x01\x0c
-SEQ05 \x03m\x00\x00
+SEQ10 0o\x01\x0c
+SEQ11 \x03m\x00\x00
  
 拓司は歯を食いしばった。@
 まだだ、と胸の中でうめいた。@
@@ -14,13 +14,13 @@ SEQ05 \x03m\x00\x00
 
 \x00\x00\x00  
 SEQ01 J\x00
-SEQ13 
-SEQ04 
-SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 \x1e\x02\x00 
+SEQ14 
+SEQ08 "
+SEQ13 .\\Data\\Script\\TextFunc.Fob SPC01 \x1e\x02\x00 
 SEQ02 TextOn SPC01 L\x02\x00 
-SEQ10 
-SEQ08 .\\Data\\Script\\Bgm.Fob SPC02 h\x02\x00 
+SEQ06 
+SEQ12 .\\Data\\Script\\Bgm.Fob SPC02 h\x02\x00 
 SEQ02 StopCD SPC01 \x92\x02\x00 
-SEQ10  \x1e\x02\x00 
-SEQ12 \x03\x03\x00\x00TextClose SPC02 \xba\x02\x00 
-ENDF
+SEQ06  \x1e\x02\x00 
+SEQ04 TextClose SPC02 \xba\x02\x00 
+FEND

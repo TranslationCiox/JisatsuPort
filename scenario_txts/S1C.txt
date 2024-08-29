@@ -1,15 +1,15 @@
-STRF
+FSTR
 B\x19\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xea\x14\x00  
 SEQ01 @\x00
-SEQ13 
-SEQ04 
-SEQ08 .\\Data\\Script\\Bg.Fob SPC03  \x00\x00 
-SEQ12 \x03\x04\x00\x00BgAutoFadeIn SPC03 J\x00\x00 
-SEQ06 SCES01_001\x00 n\x00\x00 
+SEQ14 
+SEQ08 "
+SEQ12 .\\Data\\Script\\Bg.Fob SPC03  \x00\x00 
+SEQ03 BgAutoFadeIn SPC03 J\x00\x00 
+SEQ05 SCES01_001\x00 n\x00\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x80\xb5\x01\x0c
-SEQ05 \x03w\x00\x00
+SEQ10 \x80\xb5\x01\x0c
+SEQ11 \x03w\x00\x00
  
 早桃\n　「ごめんね」@
 \n早桃はそう話を切りだした。@
@@ -22,15 +22,15 @@ SEQ05 \x03w\x00\x00
 
 \x00  
 SEQ01 \xb2\x00
-SEQ13 
-SEQ04 
-SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 \xae\x02\x00 
+SEQ14 
+SEQ08 "
+SEQ13 .\\Data\\Script\\TextFunc.Fob SPC01 \xae\x02\x00 
 SEQ02 TextOn SPC01 \xdc\x02\x00 
-SEQ06 SCES01_002\x00 \xf8\x02\x00 
+SEQ05 SCES01_002\x00 \xf8\x02\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x84\xb5\x01\x0c
-SEQ05 \x03c\x00\x00
+SEQ10 \x84\xb5\x01\x0c
+SEQ11 \x03c\x00\x00
  
 早桃はしばらく黙り込んで何かを考えている様子だった。@
 やがて@
@@ -43,14 +43,14 @@ SEQ05 \x03c\x00\x00
 
 \x00  
 SEQ01 <\x03
-SEQ13 
-SEQ04  \xae\x02\x00 
-SEQ12  \xdc\x02\x00 
-SEQ06 SCES01_003\x00 \x02\x05\x00 
+SEQ14 
+SEQ08 " \xae\x02\x00 
+SEQ08  \xdc\x02\x00 
+SEQ05 SCES01_003\x00 \x02\x05\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x88\xb5\x01\x0c
-SEQ05 \x03\x9b\x00\x00
+SEQ10 \x88\xb5\x01\x0c
+SEQ11 \x03\x9b\x00\x00
  
 早桃\n　「お母さんはそういうのも含めてお父さんのこと嫌いだったみ\n　　たいだから……。\pそれでね、教会に懺悔室っていうのがある\n　　の、知ってる？」@
 拓司\n　「ああ、電話ボックスみたいなのに入って、神父に自分の罪を\n　　告白する……アレか？」@
@@ -60,14 +60,14 @@ SEQ05 \x03\x9b\x00\x00
 
 \x00\x00\x00  
 SEQ01 F\x05
-SEQ13 
-SEQ04  \xae\x02\x00 
-SEQ12  \xdc\x02\x00 
-SEQ06 SCES01_004\x00 \xec\x07\x00 
+SEQ14 
+SEQ08 " \xae\x02\x00 
+SEQ08  \xdc\x02\x00 
+SEQ05 SCES01_004\x00 \xec\x07\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x8c\xb5\x01\x0c
-SEQ05 \x03\xcd\x00\x00
+SEQ10 \x8c\xb5\x01\x0c
+SEQ11 \x03\xcd\x00\x00
  
 早桃\n　「早桃も、そう思ってた。\p誰だってウソくらいつくことはある\n　　し、悪いことだってする。\pでも、そんなの黙ってればいいこ\n　　とじゃないかって。\pでもね、おにいちゃん。\pそうじゃないの。\n　　\p大きすぎるウソは、やっぱりムシバムの。@
 　　ひっぱっていくの」@
@@ -78,14 +78,14 @@ SEQ05 \x03\xcd\x00\x00
 
 \x00  
 SEQ01 0\x08
-SEQ13 
-SEQ04  \xae\x02\x00 
-SEQ12  \xdc\x02\x00 
-SEQ06 SCES01_005\x00 \x9e\x0b\x00 
+SEQ14 
+SEQ08 " \xae\x02\x00 
+SEQ08  \xdc\x02\x00 
+SEQ05 SCES01_005\x00 \x9e\x0b\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x90\xb5\x01\x0c
-SEQ05 \x03x\x00\x00
+SEQ10 \x90\xb5\x01\x0c
+SEQ11 \x03x\x00\x00
  
 拓司\n　「話せよ」@
 早桃\n　「……」@
@@ -99,14 +99,14 @@ SEQ05 \x03x\x00\x00
 
 \x00\x00\x00  
 SEQ01 \xe2\x0b
-SEQ13 
-SEQ04  \xae\x02\x00 
-SEQ12  \xdc\x02\x00 
-SEQ06 SCES01_006\x00 \xfc\r\x00 
+SEQ14 
+SEQ08 " \xae\x02\x00 
+SEQ08  \xdc\x02\x00 
+SEQ05 SCES01_006\x00 \xfc\r\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x94\xb5\x01\x0c
-SEQ05 \x03E\x00\x00
+SEQ10 \x94\xb5\x01\x0c
+SEQ11 \x03E\x00\x00
  
 早桃はしばらくじっと天井を見上げて無言だった。@
 横顔には、心の中の激しい葛藤が伺えた。@
@@ -115,14 +115,14 @@ SEQ05 \x03E\x00\x00
 
 \x00  
 SEQ01 @\x0e
-SEQ13 
-SEQ04  \xae\x02\x00 
-SEQ12  \xdc\x02\x00 
-SEQ06 SCES01_007\x00 \x8e\x0f\x00 
+SEQ14 
+SEQ08 " \xae\x02\x00 
+SEQ08  \xdc\x02\x00 
+SEQ05 SCES01_007\x00 \x8e\x0f\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x98\xb5\x01\x0c
-SEQ05 \x03\\\x00\x00
+SEQ10 \x98\xb5\x01\x0c
+SEQ11 \x03\\\x00\x00
  
 うまく話せそうにないから、思いついたことから話していくね。@
 ええと……@
@@ -134,14 +134,14 @@ SEQ05 \x03\\\x00\x00
 
 \x00\x00\x00  
 SEQ01 \xd2\x0f
-SEQ13 
-SEQ04  \xae\x02\x00 
-SEQ12  \xdc\x02\x00 
-SEQ06 SCES01_008\x00 |\x11\x00 
+SEQ14 
+SEQ08 " \xae\x02\x00 
+SEQ08  \xdc\x02\x00 
+SEQ05 SCES01_008\x00 |\x11\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x9c\xb5\x01\x0c
-SEQ05 \x03\x93\x00\x00
+SEQ10 \x9c\xb5\x01\x0c
+SEQ11 \x03\x93\x00\x00
  
 初めて見た海は、本で読んだり、テレビで見たりしたのとは全然\n違った。@
 早桃、海の水って、青いものだと思ってたんだよ。@
@@ -155,17 +155,17 @@ SEQ05 \x03\x93\x00\x00
 
 \x00  
 SEQ01 \xc0\x11
-SEQ13 
-SEQ04  \xae\x02\x00 
-SEQ12  \xdc\x02\x00 
-SEQ10 
-SEQ08 .\\Data\\Script\\Bgm.Fob SPC02 F\x14\x00 
+SEQ14 
+SEQ08 " \xae\x02\x00 
+SEQ08  \xdc\x02\x00 
+SEQ06 
+SEQ12 .\\Data\\Script\\Bgm.Fob SPC02 F\x14\x00 
 SEQ02 StopCD SPC01 p\x14\x00 
-SEQ10   
+SEQ06   
 SEQ01 \xc8\x00
-SEQ13 
-SEQ04   \x00\x00 
-SEQ12  J\x00\x00 
-SEQ10  \xae\x02\x00 
-SEQ12 \x03\x03\x00\x00TextClose SPC02 \xcc\x14\x00 
-ENDF
+SEQ14 
+SEQ08 "  \x00\x00 
+SEQ08  J\x00\x00 
+SEQ06  \xae\x02\x00 
+SEQ04 TextClose SPC02 \xcc\x14\x00 
+FEND

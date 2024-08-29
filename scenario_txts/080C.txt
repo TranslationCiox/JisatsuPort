@@ -1,10 +1,10 @@
-STRF
+FSTR
 6\x08\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\x9a\x06\x00\x03\x03\x00\x00SCE080_001\x00 \x06\x00\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xa0\x8c
-SEQ13 
-SEQ05 \x03\x96\x00\x00
+SEQ10 \xa0\x8c
+SEQ14 
+SEQ11 \x03\x96\x00\x00
  
 　廊下をはいずり、階段を転げ落ち、拓司はようやく自分の教\n室にたどり着いた。\pぶつけたりすりむいたりした部分が鈍く痛む。\n\pしかし、そんなことはもう問題ではない。\p何もかも終わるからだ。\n@
 　教室のドアをなんとか引き開けて、拓司は自分の席を目指した。\n　\p机の中には、買ったばかりのカッターがあるはずだった。@
@@ -20,22 +20,22 @@ SEQ05 \x03\x96\x00\x00
 
 \x00  
 SEQ01 J\x00
-SEQ13 
-SEQ04 
-SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 \xc2\x02\x00 
+SEQ14 
+SEQ08 "
+SEQ13 .\\Data\\Script\\TextFunc.Fob SPC01 \xc2\x02\x00 
 SEQ02 TextOn SPC01 \xf0\x02\x00 
-SEQ10   
+SEQ06   
 SEQ01 \xc8\x00
-SEQ13 
-SEQ04 
-SEQ08 .\\Data\\Script\\Bg.Fob SPC03 &\x03\x00 
-SEQ12 \x03\x04\x00\x00BgAutoFadeIn SPC03 P\x03\x00 
-SEQ06 SCE080_002\x00 t\x03\x00 
+SEQ14 
+SEQ08 "
+SEQ12 .\\Data\\Script\\Bg.Fob SPC03 &\x03\x00 
+SEQ03 BgAutoFadeIn SPC03 P\x03\x00 
+SEQ05 SCE080_002\x00 t\x03\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xa4\x8c
-SEQ13 
-SEQ05 \x03R\x00\x00
+SEQ10 \xa4\x8c
+SEQ14 
+SEQ11 \x03R\x00\x00
  
 机までたどり着いた拓司は、必死の力を振り絞って身を起こし、\nどっかりと椅子に腰掛けた。@
 ふう、とため息をついて、机の中\nを両手でまさぐる。@
@@ -52,15 +52,15 @@ SEQ05 \x03R\x00\x00
 
 \x00  
 SEQ01 \xb8\x03
-SEQ13 
-SEQ04  \xc2\x02\x00 
-SEQ12  \xf0\x02\x00 
-SEQ06 SCE080_003\x00 :\x05\x00 
+SEQ14 
+SEQ08 " \xc2\x02\x00 
+SEQ08  \xf0\x02\x00 
+SEQ05 SCE080_003\x00 :\x05\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xa8\x8c
-SEQ13 
-SEQ05 \x03.\x00\x00
+SEQ10 \xa8\x8c
+SEQ14 
+SEQ11 \x03.\x00\x00
  
 　そうしてカッターナイフを取り出すと、拓司はキリキリと刃を\n　押し出し、それを喉元に押し当てた。@
 　終わりだ。@
@@ -70,9 +70,9 @@ SEQ05 \x03.\x00\x00
 
 \x00\x00\x00  
 SEQ01 ~\x05
-SEQ13 
-SEQ04  \xc2\x02\x00 
-SEQ12  \xf0\x02\x00 
-SEQ10  \xc2\x02\x00 
-SEQ12 \x03\x03\x00\x00TextClose SPC02 |\x06\x00 
-ENDF
+SEQ14 
+SEQ08 " \xc2\x02\x00 
+SEQ08  \xf0\x02\x00 
+SEQ06  \xc2\x02\x00 
+SEQ04 TextClose SPC02 |\x06\x00 
+FEND
