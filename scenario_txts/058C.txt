@@ -1,35 +1,20 @@
-STRF
-\xd3%\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xea\x1e\x00
-SEQ08 .\\Data\\Script\\Bgm.Fob SPC02 \x06\x00\x00 
-SEQ02 StopCD SPC01 0\x00\x00 
-SEQ06 SCE058_001\x00 L\x00\x00 
-SEQ07  
-SEQ01 
-SEQ03 @j
-SEQ13 
-SEQ05 \x03\x1b\x00\x00
+F_SRT
+\xd3%\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xea\x1e\x00FILE1 .\\Data\\Script\\Bgm.Fob COMMAND_TO_BYTECODE2 \x06\x00\x00 
+CMD01 StopCD COMMAND_TO_BYTECODE1 0\x00\x00 
+S_STR SCE058_001\x00 L\x00\x00 S_END 
+VAR01 TXT1 @j SEQ06 \x03\x1b\x00\x00
  
 限界だった。@
 時間が何分あまっていようが、もう我慢できない。@
 拓司は一気に教室に駆け込んだ。\
 
 \x00\x00\x00  
-SEQ01 \x90\x00
-SEQ13 
-SEQ04 
-SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 \x1c\x01\x00 
-SEQ02 TextOn SPC01 J\x01\x00 
-SEQ10   
-SEQ01 \n\x01
-SEQ13 
-SEQ04  \x06\x00\x00 
-SEQ02 PlayCD SPC01 \x8c\x01\x00 
-SEQ06 SCE058_002\x00 \xa8\x01\x00 
-SEQ07  
-SEQ01 
-SEQ03 Dj
-SEQ13 
-SEQ05 \x03r\x00\x00
+VAR01 \x90\x00 SET01 FILE2 .\\Data\\Script\\TextFunc.Fob COMMAND_TO_BYTECODE1 \x1c\x01\x00 
+CMD01 TextOn COMMAND_TO_BYTECODE1 J\x01\x00 C_END  
+VAR01 \n\x01 SET01  \x06\x00\x00 
+CMD01 PlayCD COMMAND_TO_BYTECODE1 \x8c\x01\x00 
+S_STR SCE058_002\x00 \xa8\x01\x00 S_END 
+VAR01 TXT1 Dj SEQ06 \x03r\x00\x00
  
 駆け込んできた拓司を見ても、学生たちには何の反応もない。@
 ちらりとつまらなそうに見ただけだ。\p白けた空気が教室には漂っ\nていた。@
@@ -41,16 +26,9 @@ SEQ05 \x03r\x00\x00
 拓司の胸のなかで、どす黒い塊が爆発した。\
 
 \x00  
-SEQ01 \xec\x01
-SEQ13 
-SEQ04  \x1c\x01\x00 
-SEQ12  J\x01\x00 
-SEQ06 SCE058_003\x00 \xee\x03\x00 
-SEQ07  
-SEQ01 
-SEQ03 Hj
-SEQ13 
-SEQ05 \x03\x9a\x00\x00
+VAR01 \xec\x01 SET01  \x1c\x01\x00 OPER  J\x01\x00 
+S_STR SCE058_003\x00 \xee\x03\x00 S_END 
+VAR01 TXT1 Hj SEQ06 \x03\x9a\x00\x00
  
 拓司\n　「オ、オ、オ、オ、オ、オ、ア、ア、ア、ア、ア、ア、ア！」@
 /*■CG22　表示（クロスフェード）*/\a7,-2,-2,0,\a0,21,2,0,\a6,-2,0,0,\n　肺腑の底から声を絞り出して、男だろうが女だろうが、目に入\nった人間すべてに拳を叩き込んでいく。@
@@ -63,22 +41,11 @@ SEQ05 \x03\x9a\x00\x00
 視界が奇妙な色で明滅する。\
 
 \x00  
-SEQ01 2\x04
-SEQ13 
-SEQ04  \x1c\x01\x00 
-SEQ12  J\x01\x00 
-SEQ10   
-SEQ01 \xc8\x00
-SEQ13 
-SEQ04 
-SEQ08 .\\Data\\Script\\Bg.Fob SPC03 \xee\x06\x00 
-SEQ12 \x03\x04\x00\x00BgAutoFadeIn SPC03 \x18\x07\x00 
-SEQ06 SCE058_004\x00 <\x07\x00 
-SEQ07  
-SEQ01 
-SEQ03 Lj
-SEQ13 
-SEQ05 \x03\xab\x00\x00
+VAR01 2\x04 SET01  \x1c\x01\x00 OPER  J\x01\x00 C_END  
+VAR01 \xc8\x00 SET01 FILE1 .\\Data\\Script\\Bg.Fob COMMAND_TO_BYTECODE3 \xee\x06\x00 
+CMD02 BgAutoFadeIn COMMAND_TO_BYTECODE3 \x18\x07\x00 
+S_STR SCE058_004\x00 <\x07\x00 S_END 
+VAR01 TXT1 Lj SEQ06 \x03\xab\x00\x00
  
 　興奮した声、声、声が、教室中を行き交っている。@
 　ウルセチョウシブッコロホネガジャネエオレウルセエタコイテ\nンイタイヨホネガ！　ガ！　ガ！　ホネ！　@
@@ -91,21 +58,10 @@ SEQ05 \x03\xab\x00\x00
 　全員がビクッと身体をこわばらせ、おそるおそる、互いに顔を\n見合わせる。\pなかには反抗的な目でなたねをにらみ続けている者\nもいる。\pしかし、そんな視線をすべて受けてなお、なたねは動じ\nる様子もなく、毅然と立って叫び続けた。\
 
 \x00\x00  
-SEQ01 \x80\x07
-SEQ13 
-SEQ04  \x1c\x01\x00 
-SEQ12  J\x01\x00 
-SEQ10   
-SEQ01 \x0b\x01
-SEQ13 
-SEQ04  \x06\x00\x00 
-SEQ12  \x8c\x01\x00 
-SEQ06 SCE058_005\x00 \x9a\n\x00 
-SEQ07  
-SEQ01 
-SEQ03 Pj
-SEQ13 
-SEQ05 \x03\xc5\x00\x00
+VAR01 \x80\x07 SET01  \x1c\x01\x00 OPER  J\x01\x00 C_END  
+VAR01 \x0b\x01 SET01  \x06\x00\x00 OPER  \x8c\x01\x00 
+S_STR SCE058_005\x00 \x9a\n\x00 S_END 
+VAR01 TXT1 Pj SEQ06 \x03\xc5\x00\x00
  
 なたね\n　「隣を見なさい！\p　自分を見なさい！\p　デタラメで、なんの常\n　　識もありゃしない！\p　　めちゃくちゃじゃない！非常識よ！@
 　　あんたたち、ダメじゃない！\p　ダメ！\p　ダメ！\p　ダメダメダ\n　　メダメダメダメダメダメ！\p　ダメ人間！\p　死んだ方がいいん\n　　じゃないの？！\p　死になさい！\p　死ね！\pシネシネシネシネ！@
@@ -116,16 +72,9 @@ SEQ05 \x03\xc5\x00\x00
 　なたねの子供っぽい罵詈雑言を受けて、彼らは心から傷ついて\nいるのだ。\
 
 \x00\x00\x00  
-SEQ01 \xde\n
-SEQ13 
-SEQ04  \x1c\x01\x00 
-SEQ12  J\x01\x00 
-SEQ06 SCE058_006\x00 ,\x0e\x00 
-SEQ07  
-SEQ01 
-SEQ03 Tj
-SEQ13 
-SEQ05 \x03N\x00\x00
+VAR01 \xde\n SET01  \x1c\x01\x00 OPER  J\x01\x00 
+S_STR SCE058_006\x00 ,\x0e\x00 S_END 
+VAR01 TXT1 Tj SEQ06 \x03N\x00\x00
  
 学生\n　「死ねっていわれたって……どうすれば……」@
 学生\n　「どうしよう……やばいよ……どうしよう……」@
@@ -135,16 +84,9 @@ SEQ05 \x03N\x00\x00
 　そこには窓があった。\
 
 \x00  
-SEQ01 p\x0e
-SEQ13 
-SEQ04  \x1c\x01\x00 
-SEQ12  J\x01\x00 
-SEQ06 SCE058_007\x00 \xe2\x0f\x00 
-SEQ07  
-SEQ01 
-SEQ03 Xj
-SEQ13 
-SEQ05 \x03B\x00\x00
+VAR01 p\x0e SET01  \x1c\x01\x00 OPER  J\x01\x00 
+S_STR SCE058_007\x00 \xe2\x0f\x00 S_END 
+VAR01 TXT1 Xj SEQ06 \x03B\x00\x00
  
 なたね\n　「飛び降りれば、終わりじゃない？」@
 女子学生\n　「終わり」@
@@ -157,16 +99,9 @@ SEQ05 \x03B\x00\x00
 男子学生\n　「終わり」\
 
 \x00\x00\x00  
-SEQ01 &\x10
-SEQ13 
-SEQ04  \x1c\x01\x00 
-SEQ12  J\x01\x00 
-SEQ06 SCE058_006\x00 h\x11\x00 
-SEQ07  
-SEQ01 
-SEQ03 \\j
-SEQ13 
-SEQ05 \x03\x85\x00\x00
+VAR01 &\x10 SET01  \x1c\x01\x00 OPER  J\x01\x00 
+S_STR SCE058_006\x00 h\x11\x00 S_END 
+VAR01 TXT1 \\j SEQ06 \x03\x85\x00\x00
  
 　終わり終わり終わり終わり終わり終わり終わり終わり終わり終\nわり終わり終わ終わり終わり終わり終わり終わり終わり終わり終\nわり終わり終わり終わり終わり終わり終わり終わり終わり終わり@
 \n男子学生が身を乗り出した。\pすっと消えた。@
@@ -176,39 +111,20 @@ SEQ05 \x03\x85\x00\x00
 終わりはすぐにやってきた。\p学生たちは我先にと窓へ殺到し、躊\n躇することもなく飛び降りて消えていった。\p先ほどの喉を切った\n学生たちと同じく、なにか笑ってしまうような光景だった。\
 
 \x00\x00\x00  
-SEQ01 \xac\x11
-SEQ13 
-SEQ04  \x1c\x01\x00 
-SEQ12  J\x01\x00 
-SEQ10  \x06\x00\x00 
-SEQ12  0\x00\x00 
-SEQ06 SCE058_009\x00 \x14\x14\x00 
-SEQ07  
-SEQ01 
-SEQ03 `j
-SEQ13 
-SEQ05 \x03h\x00\x00
+VAR01 \xac\x11 SET01  \x1c\x01\x00 OPER  J\x01\x00 
+CHOICE_FLAG  \x06\x00\x00 OPER  0\x00\x00 
+S_STR SCE058_009\x00 \x14\x14\x00 S_END 
+VAR01 TXT1 `j SEQ06 \x03h\x00\x00
  
 なたね\n　「なにをボーッとしているの、虎菱くん。義妹さんも、飛び降\n　　りてしまうわよ」@
 \n/*■CG24　表示（クロスフェード）　*/\a7,-2,-2,0,\a0,23,2,0,\a6,-2,0,0,ようやく我に返って、拓司は窓辺に足をかけた早桃を、慌てて背\n後から捕まえた。@
 床に押さえつけられても、早桃はまだ何かに取り憑かれたような\n様子で、ブルブルと震えていた。\p拓司はそんな早桃に馬乗りにな\nって、頬に数発、鋭い平手打ちを放った。\
 
 \x00\x00\x00  
-SEQ01 X\x14
-SEQ13 
-SEQ04  \x1c\x01\x00 
-SEQ12  J\x01\x00 
-SEQ10   
-SEQ01 \xc8\x00
-SEQ13 
-SEQ04  \xee\x06\x00 
-SEQ12  \x18\x07\x00 
-SEQ06 SCE058_010\x00 f\x16\x00 
-SEQ07  
-SEQ01 
-SEQ03 dj
-SEQ13 
-SEQ05 \x03v\x00\x00
+VAR01 X\x14 SET01  \x1c\x01\x00 OPER  J\x01\x00 C_END  
+VAR01 \xc8\x00 SET01  \xee\x06\x00 OPER  \x18\x07\x00 
+S_STR SCE058_010\x00 f\x16\x00 S_END 
+VAR01 TXT1 dj SEQ06 \x03v\x00\x00
  
 拓司\n　「落ち着け！　早桃！\p　目を覚ませ！」@
 早桃\n　「ごめんなさいごめんなさいごめんなさいごめんなさいごめん\n　　なさいごめんなさいごめんなさい」@
@@ -220,16 +136,9 @@ SEQ05 \x03v\x00\x00
 早桃\n　「……私はもうたどり着けないから。\pおにいちゃんのこと、好\n　　きになる資格ないから」\
 
 \x00\x00\x00  
-SEQ01 \xaa\x16
-SEQ13 
-SEQ04  \x1c\x01\x00 
-SEQ12  J\x01\x00 
-SEQ06 SCE058_011\x00 \xbc\x18\x00 
-SEQ07  
-SEQ01 
-SEQ03 hj
-SEQ13 
-SEQ05 \x03\x88\x00\x00
+VAR01 \xaa\x16 SET01  \x1c\x01\x00 OPER  J\x01\x00 
+S_STR SCE058_011\x00 \xbc\x18\x00 S_END 
+VAR01 TXT1 hj SEQ06 \x03\x88\x00\x00
  
 　なたねはそんな２人の様子をじっと無言で見つめていたが、し\n　ばらくしてポツリといった。@
 \nなたね\n　「そろそろね」@
@@ -242,16 +151,9 @@ SEQ05 \x03\x88\x00\x00
 　拓司は心配したが、１分もすると、早桃はゆっくりと自分で身\n　体を起こした。\
 
 \x00  
-SEQ01 \x00\x19
-SEQ13 
-SEQ04  \x1c\x01\x00 
-SEQ12  J\x01\x00 
-SEQ06 SCE058_012\x00 Z\x1b\x00 
-SEQ07  
-SEQ01 
-SEQ03 lj
-SEQ13 
-SEQ05 \x03]\x00\x00
+VAR01 \x00\x19 SET01  \x1c\x01\x00 OPER  J\x01\x00 
+S_STR SCE058_012\x00 Z\x1b\x00 S_END 
+VAR01 TXT1 lj SEQ06 \x03]\x00\x00
  
 拓司\n　「大丈夫か、早桃？」@
 早桃\n　「……うん」@
@@ -264,35 +166,22 @@ SEQ05 \x03]\x00\x00
 早桃\n　「大丈夫。早桃は大丈夫だから。\pそれよりも……」\
 
 \x00\x00\x00  
-SEQ01 \x9e\x1b
-SEQ13 
-SEQ04  \x1c\x01\x00 
-SEQ12  J\x01\x00 
-SEQ06 SCE058_013\x00 L\x1d\x00 
-SEQ07  
-SEQ01 
-SEQ03 pj
-SEQ13 
-SEQ05 \x03\x1d\x00\x00
+VAR01 \x9e\x1b SET01  \x1c\x01\x00 OPER  J\x01\x00 
+S_STR SCE058_013\x00 L\x1d\x00 S_END 
+VAR01 TXT1 pj SEQ06 \x03\x1d\x00\x00
  
 拓司\n　「……」@
 早桃\n　「……なんでもない。\p行こう、おにいちゃん。\pここに、いたく\n　　ない……」\
 
 \x00\x00\x00  
-SEQ01 \x90\x1d
-SEQ13 
-SEQ04  \x1c\x01\x00 
-SEQ12  J\x01\x00 
-SEQ10 \x03\x12\x00\x00
+VAR01 \x90\x1d SET01  \x1c\x01\x00 OPER  J\x01\x00 
+CHOICE_FLAG \x03\x12\x00\x00
 CHOICE
 「……天使って、なんだ？」\n「……ここにいたくない？」\n\l0,2,
 ENDCHOICE
 
 \x00  
-SEQ01 >\x1e
-SEQ13 
-SEQ04  \x1c\x01\x00 
-SEQ12  J\x01\x00 
-SEQ10  \x1c\x01\x00 
-SEQ12 \x03\x03\x00\x00TextClose SPC02 \xcc\x1e\x00 
-ENDF
+VAR01 >\x1e SET01  \x1c\x01\x00 OPER  J\x01\x00 
+CHOICE_FLAG  \x1c\x01\x00 OPER 
+CMD03 TextClose COMMAND_TO_BYTECODE2 \xcc\x1e\x00 
+F_END

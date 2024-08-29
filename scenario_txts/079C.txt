@@ -1,13 +1,8 @@
-STRF
-\x7f\x11\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00L\x0e\x00
-SEQ08 .\\Data\\Script\\Bgm.Fob SPC02 \x06\x00\x00 
-SEQ02 StopCD SPC01 0\x00\x00 
-SEQ06 SCE079_001\x00 L\x00\x00 
-SEQ07  
-SEQ01 
-SEQ03 \x10\x8b
-SEQ13 
-SEQ05 \x03\xb1\x00\x00
+F_SRT
+\x7f\x11\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00L\x0e\x00FILE1 .\\Data\\Script\\Bgm.Fob COMMAND_TO_BYTECODE2 \x06\x00\x00 
+CMD01 StopCD COMMAND_TO_BYTECODE1 0\x00\x00 
+S_STR SCE079_001\x00 L\x00\x00 S_END 
+VAR01 TXT1 \x10\x8b SEQ06 \x03\xb1\x00\x00
  
 /*▲SE28　再生（終了まで待たず先へ）*/\a2,0,28,0,どくん、どくん、どくん@
 \a4,0,0,0,心臓の音だけが耳の奥で大きく響いている。@
@@ -28,17 +23,10 @@ SEQ05 \x03\xb1\x00\x00
 瓶からするりと抜け出せるような気がする。\
 
   
-SEQ01 \x90\x00
-SEQ13 
-SEQ04 
-SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 t\x03\x00 
-SEQ02 TextOn SPC01 \xa2\x03\x00 
-SEQ06 SCE079_002\x00 \xbe\x03\x00 
-SEQ07  
-SEQ01 
-SEQ03 \x14\x8b
-SEQ13 
-SEQ05 \x03M\x00\x00
+VAR01 \x90\x00 SET01 FILE2 .\\Data\\Script\\TextFunc.Fob COMMAND_TO_BYTECODE1 t\x03\x00 
+CMD01 TextOn COMMAND_TO_BYTECODE1 \xa2\x03\x00 
+S_STR SCE079_002\x00 \xbe\x03\x00 S_END 
+VAR01 TXT1 \x14\x8b SEQ06 \x03M\x00\x00
  
 \n　死んじまおうかなあ。@
 　死んじまおうかなあ。@
@@ -51,16 +39,9 @@ SEQ05 \x03M\x00\x00
 死のう。\
 
 \x00  
-SEQ01 \x02\x04
-SEQ13 
-SEQ04  t\x03\x00 
-SEQ12  \xa2\x03\x00 
-SEQ06 SCE079_003\x00 p\x05\x00 
-SEQ07  
-SEQ01 
-SEQ03 \x18\x8b
-SEQ13 
-SEQ05 \x03\xb4\x00\x00
+VAR01 \x02\x04 SET01  t\x03\x00 OPER  \xa2\x03\x00 
+S_STR SCE079_003\x00 p\x05\x00 S_END 
+VAR01 TXT1 \x18\x8b SEQ06 \x03\xb4\x00\x00
  
 いつの間にか、足が完全に止まっている。\pただぼんやりと、廊下\nに立ちすくんでいる。@
 \nもしかしてこれが波動に侵されるということなのか？@
@@ -77,30 +58,16 @@ SEQ05 \x03\xb4\x00\x00
 どうしてこれを恐れていたのかなど、すでにわからなかった。\
 
 \x00  
-SEQ01 \xb4\x05
-SEQ13 
-SEQ04  t\x03\x00 
-SEQ12  \xa2\x03\x00 
-SEQ06 SCE079_004\x00 \xbe\x08\x00 
-SEQ07  
-SEQ01 
-SEQ03 \x1c\x8b
-SEQ13 
-SEQ05 \x03@\x00\x00
+VAR01 \xb4\x05 SET01  t\x03\x00 OPER  \xa2\x03\x00 
+S_STR SCE079_004\x00 \xbe\x08\x00 S_END 
+VAR01 TXT1 \x1c\x8b SEQ06 \x03@\x00\x00
  
 学生\n　「……死ぬのか生きるのか、それはもう人間の幸不幸を決定す\n　　る鍵ではないような気さえしてきたのだ。\p死者は完成せられ、\n　　生者は出帆の船のデッキに立ってそれに手を合わせる。\p船は\n　　するする岸壁から離れる。\p「死はよいものだ」……』\
 
 \x00  
-SEQ01 \x02\t
-SEQ13 
-SEQ04  t\x03\x00 
-SEQ12  \xa2\x03\x00 
-SEQ06 SCE079_005\x00 <\n\x00 
-SEQ07  
-SEQ01 
-SEQ03  \x8b
-SEQ13 
-SEQ05 \x03P\x00\x00
+VAR01 \x02\t SET01  t\x03\x00 OPER  \xa2\x03\x00 
+S_STR SCE079_005\x00 <\n\x00 S_END 
+VAR01 TXT1  \x8b SEQ06 \x03P\x00\x00
  
 　よいものだ。@
 　死のう。@
@@ -118,16 +85,9 @@ SEQ05 \x03P\x00\x00
 　カッター。\
 
 \x00\x00\x00  
-SEQ01 \x80\n
-SEQ13 
-SEQ04  t\x03\x00 
-SEQ12  \xa2\x03\x00 
-SEQ06 SCE079_006\x00 \xfa\x0b\x00 
-SEQ07  
-SEQ01 
-SEQ03 $\x8b
-SEQ13 
-SEQ05 \x03+\x00\x00
+VAR01 \x80\n SET01  t\x03\x00 OPER  \xa2\x03\x00 
+S_STR SCE079_006\x00 \xfa\x0b\x00 S_END 
+VAR01 TXT1 $\x8b SEQ06 \x03+\x00\x00
  
 　カットするものだからカッター。@
 　そうか。@
@@ -141,28 +101,14 @@ SEQ05 \x03+\x00\x00
 　ア。\
 
 \x00\x00\x00  
-SEQ01 >\x0c
-SEQ13 
-SEQ04  t\x03\x00 
-SEQ12  \xa2\x03\x00 
-SEQ10   
-SEQ01 G\x00
-SEQ13 
-SEQ04 
-SEQ08 .\\Data\\Script\\Bg.Fob SPC03 >\r\x00 
-SEQ12 \x03\x04\x00\x00BgAutoFadeIn SPC03 h\r\x00 
-SEQ06 SCE079_007\x00 \x8c\r\x00 
-SEQ07  
-SEQ01 
-SEQ03 (\x8b
-SEQ13 
-SEQ05 \x03\x11\x00\x00
+VAR01 >\x0c SET01  t\x03\x00 OPER  \xa2\x03\x00 C_END  
+VAR01 G\x00 SET01 FILE1 .\\Data\\Script\\Bg.Fob COMMAND_TO_BYTECODE3 >\r\x00 
+CMD02 BgAutoFadeIn COMMAND_TO_BYTECODE3 h\r\x00 
+S_STR SCE079_007\x00 \x8c\r\x00 S_END 
+VAR01 TXT1 (\x8b SEQ06 \x03\x11\x00\x00
  
 \n　拓司は芋虫のようにはいずって、自分の教室へと向かった。\
 
 \x00  
-SEQ01 \xd0\r
-SEQ13 
-SEQ04  t\x03\x00 
-SEQ12  \xa2\x03\x00 
-ENDF
+VAR01 \xd0\r SET01  t\x03\x00 OPER  \xa2\x03\x00 
+F_END

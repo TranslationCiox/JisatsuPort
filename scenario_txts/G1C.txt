@@ -1,42 +1,22 @@
-STRF
+F_SRT
 \xcd\x08\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xae\x06\x00  
-SEQ01 C\x00
-SEQ13 
-SEQ04 
-SEQ08 .\\Data\\Script\\Bg.Fob SPC03  \x00\x00 
-SEQ12 \x03\x04\x00\x00BgAutoFadeIn SPC03 J\x00\x00 
-SEQ10   
-SEQ01 \x08\x01
-SEQ13 
-SEQ04 
-SEQ08 .\\Data\\Script\\Bgm.Fob SPC02 \x88\x00\x00 
-SEQ02 PlayCD SPC01 \xb2\x00\x00 
-SEQ06 SCEG01_001\x00 \xce\x00\x00 
-SEQ07  
-SEQ01 
-SEQ03  \xc5\x01\x0c
-SEQ05 \x03*\x00\x00
+VAR01 C\x00 SET01 FILE1 .\\Data\\Script\\Bg.Fob COMMAND_TO_BYTECODE3  \x00\x00 
+CMD02 BgAutoFadeIn COMMAND_TO_BYTECODE3 J\x00\x00 C_END  
+VAR01 \x08\x01 SET01 FILE1 .\\Data\\Script\\Bgm.Fob COMMAND_TO_BYTECODE2 \x88\x00\x00 
+CMD01 PlayCD COMMAND_TO_BYTECODE1 \xb2\x00\x00 
+S_STR SCEG01_001\x00 \xce\x00\x00 S_END 
+VAR01 TXT1  \xc5\x01\x0c\x00\x00\x00\x00"\x03*\x00\x00
  
 錦城\n　「……しっ！　私よ、虎菱くん」@
 拓司\n　「……先生？」@
 \n　錦城は微かに笑うと、拓司の横へと体を移動させた。@
 寄り添って寝転がるような形になる。\w\z
 \x00\x00\x00  
-SEQ01 \x12\x01
-SEQ13 
-SEQ04 
-SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 \xda\x01\x00 
-SEQ02 TextOn SPC01 \x08\x02\x00 
-SEQ10   
-SEQ01 \xc8\x00
-SEQ13 
-SEQ04   \x00\x00 
-SEQ12  J\x00\x00 
-SEQ06 SCEG01_002\x00 X\x02\x00 
-SEQ07  
-SEQ01 
-SEQ03 $\xc5\x01\x0c
-SEQ05 \x03z\x00\x00
+VAR01 \x12\x01 SET01 FILE2 .\\Data\\Script\\TextFunc.Fob COMMAND_TO_BYTECODE1 \xda\x01\x00 
+CMD01 TextOn COMMAND_TO_BYTECODE1 \x08\x02\x00 C_END  
+VAR01 \xc8\x00 SET01   \x00\x00 OPER  J\x00\x00 
+S_STR SCEG01_002\x00 X\x02\x00 S_END 
+VAR01 TXT1 $\xc5\x01\x0c\x00\x00\x00\x00"\x03z\x00\x00
  
 錦城\n　「立派だったわ、虎菱くん」@
 拓司\n　「．．．．．．え？」@
@@ -47,15 +27,9 @@ SEQ05 \x03z\x00\x00
 　　そういう人はね、強いの。@
 　　周囲の状況にながされないで、自分という物を持ち続けられ\n　　るの。\p虎菱くんこそが、リーダーにふさわしいって」\w\z
 \x00  
-SEQ01 \x9c\x02
-SEQ13 
-SEQ04  \xda\x01\x00 
-SEQ12  \x08\x02\x00 
-SEQ06 SCEG01_003\x00 \xbe\x04\x00 
-SEQ07  
-SEQ01 
-SEQ03 (\xc5\x01\x0c
-SEQ05 \x03H\x00\x00
+VAR01 \x9c\x02 SET01  \xda\x01\x00 OPER  \x08\x02\x00 
+S_STR SCEG01_003\x00 \xbe\x04\x00 S_END 
+VAR01 TXT1 (\xc5\x01\x0c\x00\x00\x00\x00"\x03H\x00\x00
  
 　指が、そっと拓司の顎に触れた。@
 顎先から耳元へと、ゆっくりと指は移動する。\p冷たい指だ。@
@@ -64,12 +38,9 @@ SEQ05 \x03H\x00\x00
 \n錦城\n　「……先生からのエールだと思って。ね？」\
 
 \x00\x00\x00  
-SEQ01 \x02\x05
-SEQ13 
-SEQ04  \xda\x01\x00 
-SEQ12  \x08\x02\x00 
-SEQ10  \x88\x00\x00 
-SEQ02 StopCD SPC01 h\x06\x00 
-SEQ10  \xda\x01\x00 
-SEQ12 \x03\x03\x00\x00TextClose SPC02 \x90\x06\x00 
-ENDF
+VAR01 \x02\x05 SET01  \xda\x01\x00 OPER  \x08\x02\x00 
+CHOICE_FLAG  \x88\x00\x00 
+CMD01 StopCD COMMAND_TO_BYTECODE1 h\x06\x00 
+CHOICE_FLAG  \xda\x01\x00 OPER 
+CMD03 TextClose COMMAND_TO_BYTECODE2 \x90\x06\x00 
+F_END

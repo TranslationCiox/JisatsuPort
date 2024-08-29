@@ -1,37 +1,21 @@
-STRF
+F_SRT
 B\n\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xaa\x07\x00  
-SEQ01 \xc8\x00
-SEQ13 
-SEQ04 
-SEQ08 .\\Data\\Script\\Bg.Fob SPC03  \x00\x00 
-SEQ12 \x03\x04\x00\x00BgAutoFadeIn SPC03 J\x00\x00 
-SEQ10   
-SEQ01 \x08\x01
-SEQ13 
-SEQ04 
-SEQ08 .\\Data\\Script\\Bgm.Fob SPC02 \x88\x00\x00 
-SEQ02 PlayCD SPC01 \xb2\x00\x00 
-SEQ06 SCEK04_001\x00 \xce\x00\x00 
-SEQ07  
-SEQ01 
-SEQ03 X\xa6\x01\x0c
-SEQ05 \x03\\\x00\x00
+VAR01 \xc8\x00 SET01 FILE1 .\\Data\\Script\\Bg.Fob COMMAND_TO_BYTECODE3  \x00\x00 
+CMD02 BgAutoFadeIn COMMAND_TO_BYTECODE3 J\x00\x00 C_END  
+VAR01 \x08\x01 SET01 FILE1 .\\Data\\Script\\Bgm.Fob COMMAND_TO_BYTECODE2 \x88\x00\x00 
+CMD01 PlayCD COMMAND_TO_BYTECODE1 \xb2\x00\x00 
+S_STR SCEK04_001\x00 \xce\x00\x00 S_END 
+VAR01 TXT1 X\xa6\x01\x0c\x00\x00\x00\x00"\x03\\\x00\x00
  
 　自分の道を行くつもりであれば、周囲との軋轢が産まれるのは\nやむなしと……私は考えてきた。@
 だから、ゆきのやりかたは、卑怯な妥協にしか思えなかった。@
 多分、嫉妬していたのだと思う。\n自分と同じメンタリティを持ちながらも周囲とうまくやっていけ\nているゆきが、羨ましかったのだろう。@
 そう考えないと、私がとったその後の行動を、うまく説明するこ\nとができない。\w\z
 \x00  
-SEQ01 \x12\x01
-SEQ13 
-SEQ04 
-SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 \xa2\x02\x00 
-SEQ02 TextOn SPC01 \xd0\x02\x00 
-SEQ06 SCEK04_002\x00 \xec\x02\x00 
-SEQ07  
-SEQ01 
-SEQ03 \\\xa6\x01\x0c
-SEQ05 \x03\x96\x00\x00
+VAR01 \x12\x01 SET01 FILE2 .\\Data\\Script\\TextFunc.Fob COMMAND_TO_BYTECODE1 \xa2\x02\x00 
+CMD01 TextOn COMMAND_TO_BYTECODE1 \xd0\x02\x00 
+S_STR SCEK04_002\x00 \xec\x02\x00 S_END 
+VAR01 TXT1 \\\xa6\x01\x0c\x00\x00\x00\x00"\x03\x96\x00\x00
  
 　私はそれから、できる限りの愛嬌と親切、そして嫌われ者の哀\nれさを投入して、ゆきの信頼を勝ち取ろうと努力した。@
 『いい子』を演じ続けてきたゆきは、ストレスで爆発寸前だった\nのだろう。@
@@ -41,25 +25,16 @@ SEQ05 \x03\x96\x00\x00
 信念に対する背信行為を犯したゆきに、罰を与えたのだった。@
 ゆきが完全に寄り掛かってきたころを見計らって、私は計画を最\n終段階に進めた。\w\z
 \x00  
-SEQ01 0\x03
-SEQ13 
-SEQ04  \xa2\x02\x00 
-SEQ12  \xd0\x02\x00 
-SEQ06 SCEK04_003\x00 \xc2\x05\x00 
-SEQ07  
-SEQ01 
-SEQ03 `\xa6\x01\x0c
-SEQ05 \x03P\x00\x00
+VAR01 0\x03 SET01  \xa2\x02\x00 OPER  \xd0\x02\x00 
+S_STR SCEK04_003\x00 \xc2\x05\x00 S_END 
+VAR01 TXT1 `\xa6\x01\x0c\x00\x00\x00\x00"\x03P\x00\x00
  
 ゆきの秘密をあらいざらい書き上げて、廊下に張り出したのだ。@
 \nそんな怪文書を丸々信じるほど学校の連中はバカではなかったし、\nゆきがそれまで築いてきた信頼も脆弱ではなかった。@
 そんなことはわかっていた。@
 私は、ゆきの地位にダメージを与えようと思ったわけではなかっ\nた。\pゆきの心を破壊してやろうと思ったのだ。\w\z
 \x00  
-SEQ01 \x06\x06
-SEQ13 
-SEQ04  \xa2\x02\x00 
-SEQ12  \xd0\x02\x00 
-SEQ10  \xa2\x02\x00 
-SEQ12 \x03\x03\x00\x00TextClose SPC02 \x8c\x07\x00 
-ENDF
+VAR01 \x06\x06 SET01  \xa2\x02\x00 OPER  \xd0\x02\x00 
+CHOICE_FLAG  \xa2\x02\x00 OPER 
+CMD03 TextClose COMMAND_TO_BYTECODE2 \x8c\x07\x00 
+F_END

@@ -1,23 +1,13 @@
-STRF
+F_SRT
 \\\x0b\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00p\t\x00  
-SEQ01 \xc8\x00
-SEQ13 
-SEQ04 
-SEQ08 .\\Data\\Script\\Bg.Fob SPC03  \x00\x00 
-SEQ12 \x03\x04\x00\x00BgAutoFadeIn SPC03 J\x00\x00 
-SEQ10   
-SEQ01 \t\x01
-SEQ13 
-SEQ04 
-SEQ08 .\\Data\\Script\\Bgm.Fob SPC02 \x88\x00\x00 
-SEQ02 PlayCD SPC01 \xb2\x00\x00 
-SEQ10 ! 
-SEQ01 \x14\x00\x00\r\x02 \x00\x00\x00\x00\x0b\r\x01 \x00\x00\x00\x00\x1b\x00\x00\x00\x001\x00\x00\x00\x00\xea\x05\x00\x03\x03\x00\x00SCE107_001\x00 \x06\x01\x00 
-SEQ07  
-SEQ01 
-SEQ03 \xd0\xb6
-SEQ13 
-SEQ05 \x03\xb4\x00\x00
+VAR01 \xc8\x00 SET01 FILE1 .\\Data\\Script\\Bg.Fob COMMAND_TO_BYTECODE3  \x00\x00 
+CMD02 BgAutoFadeIn COMMAND_TO_BYTECODE3 J\x00\x00 C_END  
+VAR01 \t\x01 SET01 FILE1 .\\Data\\Script\\Bgm.Fob COMMAND_TO_BYTECODE2 \x88\x00\x00 
+CMD01 PlayCD COMMAND_TO_BYTECODE1 \xb2\x00\x00 
+CHOICE_FLAG ! 
+VAR01 \x14\x00\x00\r\x02 \x00\x00\x00\x00\x0b\r\x01 \x00\x00\x00\x00\x1b\x00\x00\x00\x001\x00\x00\x00\x00\xea\x05\x00
+CMD03 SCE107_001\x00 \x06\x01\x00 S_END 
+VAR01 TXT1 \xd0\xb6 SEQ06 \x03\xb4\x00\x00
  
 こうして１日が終わった。@
 深夜を過ぎても、拓司は眠りにつくことができなかった。@
@@ -26,42 +16,29 @@ SEQ05 \x03\xb4\x00\x00
 拓司は、足下にわずかに人の気配を感じた。\
 
 \x00  
-SEQ01 J\x01
-SEQ13 
-SEQ04 
-SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 :\x04\x00 
-SEQ02 TextOn SPC01 h\x04\x00 
-SEQ10  \x88\x00\x00 
-SEQ02 StopCD SPC01 \x90\x04\x00 
-SEQ10 ! 
-SEQ01  \x00\x00\r\x02 \x00\x00\x00\x00\x0b\r\x01 \x03\x00\x00\x1b\x00\x00\x041\x00\x00\x00\x00<\x05\x00\x03\x0e\x00\x00
+VAR01 J\x01 SET01 FILE2 .\\Data\\Script\\TextFunc.Fob COMMAND_TO_BYTECODE1 :\x04\x00 
+CMD01 TextOn COMMAND_TO_BYTECODE1 h\x04\x00 
+CHOICE_FLAG  \x88\x00\x00 
+CMD01 StopCD COMMAND_TO_BYTECODE1 \x90\x04\x00 
+CHOICE_FLAG ! 
+VAR01  \x00\x00\r\x02 \x00\x00\x00\x00\x0b\r\x01 \x03\x00\x00\x1b\x00\x00\x041\x00\x00\x00\x00<\x05\x00\x03\x0e\x00\x00
 CHOICE
 それはカンナだった\nそれは錦城だった\n\l0,2,
 ENDCHOICE
 
 \x00\x00\x00  
-SEQ01 \xe4\x04
-SEQ13 
-SEQ04 2\x80\x05\x00\x03\t\x00\x00
+VAR01 \xe4\x04 SET01  and \x80\x05\x00\x03\t\x00\x00
 CHOICE
 それはカンナだった\n\l0,1,
 ENDCHOICE
 
 \x00  
-SEQ01 B\x05
-SEQ13 
-SEQ04  :\x04\x00 
-SEQ12  h\x04\x00 
-SEQ10  :\x04\x00 
-SEQ12 \x03\x04\x00\x00GetLastTxtID SPC03 \xac\x05\x00 
-SEQ10   
-SEQ01 \x01\x00
-SEQ13 \x02d"2@\t\x00\x03\x03\x00\x00SCE107_002\x00 \xf0\x05\x00 
-SEQ07  
-SEQ01 
-SEQ03 \xd4\xb6
-SEQ13 
-SEQ05 \x03\xa9\x00\x00
+VAR01 B\x05 SET01  :\x04\x00 OPER  h\x04\x00 
+CHOICE_FLAG  :\x04\x00 
+CMD02 GetLastTxtID COMMAND_TO_BYTECODE3 \xac\x05\x00 C_END  
+VAR01 \x01\x00 SEQ15 \x02d" and @\t\x00
+CMD03 SCE107_002\x00 \xf0\x05\x00 S_END 
+VAR01 TXT1 \xd4\xb6 SEQ06 \x03\xa9\x00\x00
  
 こうして１日が終わった。@
 深夜を過ぎても、拓司は眠りにつくことができなかった。@
@@ -69,14 +46,9 @@ SEQ05 \x03\xa9\x00\x00
 見慣れない天井を見上げながら、拓司はそれまでのことを頭の中\nで整理しようとした。\pしかし、いくつものパズルを適当に寄せ集\nめてぶちまけたかのように、それぞれの情報には統一性も、法則\n性もないように思えた。\pそれは消耗としかいいようのない作業だ\nった。\pおそらく、どんなにピースをひねり回そうとも、パズルは\n完成しないように仕組まれているのだ……。\pしかし、眠れない夜\nには、そんなパズルと戯れるのもまた、良い時間つぶしとなった。\n\p空がようやく白みかけ、ようやく浅いまどろみが頭に霞を作りは\nじめた。\
 
 \x00  
-SEQ01 4\x06
-SEQ13 
-SEQ04  :\x04\x00 
-SEQ12  h\x04\x00 
-SEQ10  \x88\x00\x00 
-SEQ12  \x90\x04\x00 
-SEQ10   
-SEQ01 \xff\xff\xff\xff\x0c
-SEQ04  :\x04\x00 
-SEQ12 \x03\x03\x00\x00TextClose SPC02 R\t\x00 
-ENDF
+VAR01 4\x06 SET01  :\x04\x00 OPER  h\x04\x00 
+CHOICE_FLAG  \x88\x00\x00 OPER  \x90\x04\x00 C_END  
+VAR01 \xff\xff\xff\xff\x0c
+SEQ05  :\x04\x00 OPER 
+CMD03 TextClose COMMAND_TO_BYTECODE2 R\t\x00 
+F_END

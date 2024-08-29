@@ -1,12 +1,8 @@
-STRF
-\x1f\t\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00|\x07\x00
-SEQ08 .\\Data\\Script\\Bgm.Fob SPC02 \x06\x00\x00 
-SEQ02 StopCD SPC01 0\x00\x00 
-SEQ06 SCEK13_001\x00 L\x00\x00 
-SEQ07  
-SEQ01 
-SEQ03  \xac\x01\x0c
-SEQ05 \x03\xd9\x00\x00
+F_SRT
+\x1f\t\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00|\x07\x00FILE1 .\\Data\\Script\\Bgm.Fob COMMAND_TO_BYTECODE2 \x06\x00\x00 
+CMD01 StopCD COMMAND_TO_BYTECODE1 0\x00\x00 
+S_STR SCEK13_001\x00 L\x00\x00 S_END 
+VAR01 TXT1  \xac\x01\x0c\x00\x00\x00\x00"\x03\xd9\x00\x00
  
 　父親を殺す。@
 ゆきは最初、とても驚いたようだった。@
@@ -19,16 +15,10 @@ SEQ05 \x03\xd9\x00\x00
 「違うの。お父さんを殺すのは、私がするべきことだと思うから。\n\pこんなことをいうのはおかしいかもしれないけれど、お父さんだ\nって人間だもの。\p誰にだって殺されていいってことはないと思う。\n\pだから……私が」@
 自分が蚊帳の外に置かれたような気がして、私は少しムッとした。\n\pこんなに真剣に考えて、殺人という罪まで一緒に犯そうとしてい\nるのに、ゆきは、私がこの件に関しては無関係だと……\n部外者だといっているのだから（－－実際、部外者なんだけれど。\nでも、腹が立ったの）。\w\z
 \x00\x00\x00  
-SEQ01 \x90\x00
-SEQ13 
-SEQ04 
-SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 \x14\x04\x00 
-SEQ02 TextOn SPC01 B\x04\x00 
-SEQ06 SCEK13_002\x00 ^\x04\x00 
-SEQ07  
-SEQ01 
-SEQ03 $\xac\x01\x0c
-SEQ05 \x03~\x00\x00
+VAR01 \x90\x00 SET01 FILE2 .\\Data\\Script\\TextFunc.Fob COMMAND_TO_BYTECODE1 \x14\x04\x00 
+CMD01 TextOn COMMAND_TO_BYTECODE1 B\x04\x00 
+S_STR SCEK13_002\x00 ^\x04\x00 S_END 
+VAR01 TXT1 $\xac\x01\x0c\x00\x00\x00\x00"\x03~\x00\x00
  
 私の不満に気づいたのだろう、ゆきはすぐに申し訳なさそうな顔\nをした。@
 「ごめんね、月代さん。でも、月代さんをないがしろにしている\nとか……そんなつもりじゃない。月代さんの協力がなかったら、\n私はお父さんを殺せないと思うから」@
@@ -40,20 +30,14 @@ SEQ05 \x03~\x00\x00
 「私がお父さんを殺したあと、私と一緒に……死んでくれる？」@
 といった。\w\z
 \x00  
-SEQ01 \xa2\x04
-SEQ13 
-SEQ04  \x14\x04\x00 
-SEQ12  B\x04\x00 
-SEQ10 \x03\x11\x00\x00
+VAR01 \xa2\x04 SET01  \x14\x04\x00 OPER  B\x04\x00 
+CHOICE_FLAG \x03\x11\x00\x00
 CHOICE
 私は「うん」と返した。\n私は「いやだ」と返した。\n\l0,2,
 ENDCHOICE
 
 \x00\x00\x00  
-SEQ01 \xd4\x06
-SEQ13 
-SEQ04  \x14\x04\x00 
-SEQ12  B\x04\x00 
-SEQ10  \x14\x04\x00 
-SEQ12 \x03\x03\x00\x00TextClose SPC02 ^\x07\x00 
-ENDF
+VAR01 \xd4\x06 SET01  \x14\x04\x00 OPER  B\x04\x00 
+CHOICE_FLAG  \x14\x04\x00 OPER 
+CMD03 TextClose COMMAND_TO_BYTECODE2 ^\x07\x00 
+F_END

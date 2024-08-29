@@ -1,20 +1,11 @@
-STRF
-\xdc\x07\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00(\x06\x00\x03\x03\x00\x00SCE051_001\x00 \x06\x00\x00 
-SEQ07  
-SEQ01 
-SEQ03 P_
-SEQ13 
-SEQ05   
-SEQ01 
-SEQ12 \x0c
-SEQ04   \x04\x00\x00\r\x00\x00 \x1a\x00
-SEQ13 
-SEQ04   \x08\x00\x00\r\x00\x00 \x01\x00
-SEQ13 
-SEQ04 
-SEQ08 .\\Data\\Script\\Bgm.Fob SPC02 \x98\x00\x00 
-SEQ02 SePlay SPC01 \xc2\x00\x00 
-SEQ10 \x03\xa2\x00\x00
+F_SRT
+\xdc\x07\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00(\x06\x00
+CMD03 SCE051_001\x00 \x06\x00\x00 S_END 
+VAR01 TXT1 P_ SEQ06   
+VAR01 OPER \x0c
+SEQ05   \x04\x00\x00\r\x00\x00 \x1a\x00 SET01   \x08\x00\x00\r\x00\x00 \x01\x00 SET01 FILE1 .\\Data\\Script\\Bgm.Fob COMMAND_TO_BYTECODE2 \x98\x00\x00 
+CMD01 SePlay COMMAND_TO_BYTECODE1 \xc2\x00\x00 
+CHOICE_FLAG \x03\xa2\x00\x00
  
 　静まり返った廊下に、拓司たちの足音が響く。@
 　ときおり、通り過ぎる教室からなにか激しい音が……机のひっ\n　くり返る音や、なにかを叫んでいる声が……聞こえるが、もう\n　中を覗く気などおきなかった。@
@@ -28,41 +19,26 @@ SEQ10 \x03\xa2\x00\x00
 　焦りと不安が、なたねへの怒りへと転嫁されて、ふつふつと胸\n　の中で煮えたぎっていた。\
 
 \x00  
-SEQ01 \xde\x00
-SEQ13 
-SEQ04 
-SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 \x86\x03\x00 
-SEQ02 TextOn SPC01 \xb4\x03\x00 
-SEQ06 SCE051_002\x00 \xd0\x03\x00 
-SEQ07  
-SEQ01 
-SEQ03 T_
-SEQ13 
-SEQ05 \x03-\x00\x00
+VAR01 \xde\x00 SET01 FILE2 .\\Data\\Script\\TextFunc.Fob COMMAND_TO_BYTECODE1 \x86\x03\x00 
+CMD01 TextOn COMMAND_TO_BYTECODE1 \xb4\x03\x00 
+S_STR SCE051_002\x00 \xd0\x03\x00 S_END 
+VAR01 TXT1 T_ SEQ06 \x03-\x00\x00
  
 なたね\n　「……教室に入る前に……なかを確かめて！　そうしないと危\n　　険だわ！」@
 \nそんな声を背中に聞きながら、拓司は駆けた。\p早桃の教室まで、\nあっという間だった。\
 
 \x00  
-SEQ01 \x14\x04
-SEQ13 
-SEQ04  \x86\x03\x00 
-SEQ12  \xb4\x03\x00 
-SEQ10   
-SEQ01 
-SEQ12 \x0c
-SEQ04  \x98\x00\x00 
-SEQ02 SeStop SPC01 (\x05\x00 
-SEQ10 \x03 \x00\x00
+VAR01 \x14\x04 SET01  \x86\x03\x00 OPER  \xb4\x03\x00 C_END  
+VAR01 OPER \x0c
+SEQ05  \x98\x00\x00 
+CMD01 SeStop COMMAND_TO_BYTECODE1 (\x05\x00 
+CHOICE_FLAG \x03 \x00\x00
 CHOICE
 一刻も待てない。拓司はその勢いのまま、教室に躍り込んだ。\n拓司はなたねの警告に従って、そっと中をのぞき込んだ。\n\l0,2,
 ENDCHOICE
 
 \x00  
-SEQ01 D\x05
-SEQ13 
-SEQ04  \x86\x03\x00 
-SEQ12  \xb4\x03\x00 
-SEQ10  \x86\x03\x00 
-SEQ12 \x03\x03\x00\x00TextClose SPC02 \n\x06\x00 
-ENDF
+VAR01 D\x05 SET01  \x86\x03\x00 OPER  \xb4\x03\x00 
+CHOICE_FLAG  \x86\x03\x00 OPER 
+CMD03 TextClose COMMAND_TO_BYTECODE2 \n\x06\x00 
+F_END

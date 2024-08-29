@@ -1,31 +1,18 @@
-STRF
-\xeb\x03\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xa4\t3\x01\x00\x00\x00\xac\x02\x00
-SEQ08 .\\Data\\Script\\Bgm.Fob SPC02 \x06\x00\x00 
-SEQ02 StopCD SPC01 0\x00\x00 
-SEQ06 SCE215_001\x00 L\x00\x00 
-SEQ07  
-SEQ01 
-SEQ03 \x90_\x01\x0c
-SEQ05 \x03\x11\x00\x00
+F_SRT
+\xeb\x03\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xa4\t3\x01\x00\x00\x00\xac\x02\x00FILE1 .\\Data\\Script\\Bgm.Fob COMMAND_TO_BYTECODE2 \x06\x00\x00 
+CMD01 StopCD COMMAND_TO_BYTECODE1 0\x00\x00 
+S_STR SCE215_001\x00 L\x00\x00 S_END 
+VAR01 TXT1 \x90_\x01\x0c\x00\x00\x00\x00"\x03\x11\x00\x00
  
 \n\n\n\n\n\n\n\n\n\n　　　　　　　　　　　　　『７日目』\
 
 \x00\x00\x00  
-SEQ01 \x90\x00
-SEQ13 
-SEQ04 
-SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 \xf4\x00\x00 
-SEQ02 TextOn SPC01 "\x01\x00 
-SEQ10   
-SEQ01 \x0c\x01
-SEQ13 
-SEQ04  \x06\x00\x00 
-SEQ02 PlayCD SPC01 d\x01\x00 
-SEQ06 SCE215_002\x00 \x80\x01\x00 
-SEQ07  
-SEQ01 
-SEQ03 \x94_\x01\x0c
-SEQ05 \x03!\x00\x00
+VAR01 \x90\x00 SET01 FILE2 .\\Data\\Script\\TextFunc.Fob COMMAND_TO_BYTECODE1 \xf4\x00\x00 
+CMD01 TextOn COMMAND_TO_BYTECODE1 "\x01\x00 C_END  
+VAR01 \x0c\x01 SET01  \x06\x00\x00 
+CMD01 PlayCD COMMAND_TO_BYTECODE1 d\x01\x00 
+S_STR SCE215_002\x00 \x80\x01\x00 S_END 
+VAR01 TXT1 \x94_\x01\x0c\x00\x00\x00\x00"\x03!\x00\x00
  
 目立った衝突はない。@
 早桃は風邪からほぼ回復したようだ。@
@@ -33,10 +20,7 @@ SEQ05 \x03!\x00\x00
 言葉も少ない。\
 
 \x00  
-SEQ01 \xc4\x01
-SEQ13 
-SEQ04  \xf4\x00\x00 
-SEQ12  "\x01\x00 
-SEQ10  \xf4\x00\x00 
-SEQ12 \x03\x03\x00\x00TextClose SPC02 \x8e\x02\x00 
-ENDF
+VAR01 \xc4\x01 SET01  \xf4\x00\x00 OPER  "\x01\x00 
+CHOICE_FLAG  \xf4\x00\x00 OPER 
+CMD03 TextClose COMMAND_TO_BYTECODE2 \x8e\x02\x00 
+F_END

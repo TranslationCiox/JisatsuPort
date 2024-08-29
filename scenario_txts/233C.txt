@@ -1,21 +1,11 @@
-STRF
+F_SRT
 \x9b\x1f\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\n\x1a\x00  
-SEQ01 \n\x01
-SEQ13 
-SEQ04 
-SEQ08 .\\Data\\Script\\Bgm.Fob SPC02  \x00\x00 
-SEQ02 PlayCD SPC01 J\x00\x00 
-SEQ10   
-SEQ01 +\x00
-SEQ13 
-SEQ04 
-SEQ08 .\\Data\\Script\\Bg.Fob SPC03 \x80\x00\x00 
-SEQ12 \x03\x04\x00\x00BgAutoFadeIn SPC03 \xaa\x00\x00 
-SEQ06 SCE233_001\x00 \xce\x00\x00 
-SEQ07  
-SEQ01 
-SEQ03 \xb0{\x01\x0c
-SEQ05 \x03_\x00\x00
+VAR01 \n\x01 SET01 FILE1 .\\Data\\Script\\Bgm.Fob COMMAND_TO_BYTECODE2  \x00\x00 
+CMD01 PlayCD COMMAND_TO_BYTECODE1 J\x00\x00 C_END  
+VAR01 +\x00 SET01 FILE1 .\\Data\\Script\\Bg.Fob COMMAND_TO_BYTECODE3 \x80\x00\x00 
+CMD02 BgAutoFadeIn COMMAND_TO_BYTECODE3 \xaa\x00\x00 
+S_STR SCE233_001\x00 \xce\x00\x00 S_END 
+VAR01 TXT1 \xb0{\x01\x0c\x00\x00\x00\x00"\x03_\x00\x00
  
 朝、拓司は一同を集めていった。@
 \n拓司\n　「もう限界だ。\p御堂を、やる」@
@@ -27,16 +17,10 @@ SEQ05 \x03_\x00\x00
 \n拓司\n　「わからない。\pたぶん……たぶん……」\
 
 \x00  
-SEQ01 \x12\x01
-SEQ13 
-SEQ04 
-SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 \xae\x02\x00 
-SEQ02 TextOn SPC01 \xdc\x02\x00 
-SEQ06 SCE233_002\x00 \xf8\x02\x00 
-SEQ07  
-SEQ01 
-SEQ03 \xb4{\x01\x0c
-SEQ05 \x03\x96\x00\x00
+VAR01 \x12\x01 SET01 FILE2 .\\Data\\Script\\TextFunc.Fob COMMAND_TO_BYTECODE1 \xae\x02\x00 
+CMD01 TextOn COMMAND_TO_BYTECODE1 \xdc\x02\x00 
+S_STR SCE233_002\x00 \xf8\x02\x00 S_END 
+VAR01 TXT1 \xb4{\x01\x0c\x00\x00\x00\x00"\x03\x96\x00\x00
  
 カンナ\n　「－－殺すってこと？」@
 \n沈黙が流れた。@
@@ -50,15 +34,9 @@ SEQ05 \x03\x96\x00\x00
 \n次にそうなるのは、自分かもしれないのだ。\
 
 \x00\x00\x00  
-SEQ01 <\x03
-SEQ13 
-SEQ04  \xae\x02\x00 
-SEQ12  \xdc\x02\x00 
-SEQ06 SCE233_003\x00 \xce\x05\x00 
-SEQ07  
-SEQ01 
-SEQ03 \xb8{\x01\x0c
-SEQ05 \x03\x8c\x00\x00
+VAR01 <\x03 SET01  \xae\x02\x00 OPER  \xdc\x02\x00 
+S_STR SCE233_003\x00 \xce\x05\x00 S_END 
+VAR01 TXT1 \xb8{\x01\x0c\x00\x00\x00\x00"\x03\x8c\x00\x00
  
 紅葉\n　「でも……私たち４人がかりでかかっていったって、きっと御\n　　堂にはかなわないわ。\p錦城もいるし……。\pあいつら、鍵をか\n　　けて準備室に閉じこもってるから、不意打ちだってできない」\n\p拓司\n　「いや、チャンスはある」@
 紅葉\n　「？」@
@@ -68,15 +46,9 @@ SEQ05 \x03\x8c\x00\x00
 \nカンナが冷たくいった。\p紅葉はキッとカンナをにらみつけた。\
 
 \x00  
-SEQ01 \x12\x06
-SEQ13 
-SEQ04  \xae\x02\x00 
-SEQ12  \xdc\x02\x00 
-SEQ06 SCE233_004\x00 |\x08\x00 
-SEQ07  
-SEQ01 
-SEQ03 \xbc{\x01\x0c
-SEQ05 \x03\xb2\x00\x00
+VAR01 \x12\x06 SET01  \xae\x02\x00 OPER  \xdc\x02\x00 
+S_STR SCE233_004\x00 |\x08\x00 S_END 
+VAR01 TXT1 \xbc{\x01\x0c\x00\x00\x00\x00"\x03\xb2\x00\x00
  
 紅葉\n　「月代さん。\pあなたが私たちのために……その……犠牲になっ\n　　てくれたことは感謝してる。\pでも、だからって私が犠牲にな\n　　らなきゃならないっていうのは、おかしいんじゃない？」@
 カンナ\n　「犠牲にならないために、こうやって話し合ってるんじゃない\n　　の？\p　このまま放っておいてもどうせ明日、あなたは御堂た\n　　ちに犯される。\pだったら、少しは抵抗してから犯されるほう\n　　がマシなんじゃないかしら」@
@@ -86,15 +58,9 @@ SEQ05 \x03\xb2\x00\x00
 \n紅葉は髪の毛をかきむしっていった。\p声が徐々に大きくなる。\
 
 \x00\x00\x00  
-SEQ01 \xc0\x08
-SEQ13 
-SEQ04  \xae\x02\x00 
-SEQ12  \xdc\x02\x00 
-SEQ06 SCE233_005\x00 \xc2\x0b\x00 
-SEQ07  
-SEQ01 
-SEQ03 \xc0{\x01\x0c
-SEQ05 \x03\xae\x00\x00
+VAR01 \xc0\x08 SET01  \xae\x02\x00 OPER  \xdc\x02\x00 
+S_STR SCE233_005\x00 \xc2\x0b\x00 S_END 
+VAR01 TXT1 \xc0{\x01\x0c\x00\x00\x00\x00"\x03\xae\x00\x00
  
 紅葉\n　「あんなヤツらに身体を触らせるくらいなら、死んだ方がマシ\n　　！」@
 カンナ\n　「じゃあ、死になさいよ。\pここは自殺の博覧会場だわ。@
@@ -105,15 +71,9 @@ SEQ05 \x03\xae\x00\x00
 　　で、観客はみんなスーッとするって仕掛け」\
 
 \x00  
-SEQ01 \x06\x0c
-SEQ13 
-SEQ04  \xae\x02\x00 
-SEQ12  \xdc\x02\x00 
-SEQ06 SCE233_006\x00 \xf8\x0e\x00 
-SEQ07  
-SEQ01 
-SEQ03 \xc4{\x01\x0c
-SEQ05 \x03\x82\x00\x00
+VAR01 \x06\x0c SET01  \xae\x02\x00 OPER  \xdc\x02\x00 
+S_STR SCE233_006\x00 \xf8\x0e\x00 S_END 
+VAR01 TXT1 \xc4{\x01\x0c\x00\x00\x00\x00"\x03\x82\x00\x00
  
 見かねて拓司は間に入った。@
 このままでは御堂たちが寝ている準備室にまで声が響いてしまい\nそうだ。@
@@ -124,15 +84,9 @@ SEQ05 \x03\x82\x00\x00
 拓司\n　「どう……って……」\
 
 \x00  
-SEQ01 <\x0f
-SEQ13 
-SEQ04  \xae\x02\x00 
-SEQ12  \xdc\x02\x00 
-SEQ06 SCE233_007\x00 ~\x11\x00 
-SEQ07  
-SEQ01 
-SEQ03 \xc8{\x01\x0c
-SEQ05 \x03G\x00\x00
+VAR01 <\x0f SET01  \xae\x02\x00 OPER  \xdc\x02\x00 
+S_STR SCE233_007\x00 ~\x11\x00 S_END 
+VAR01 TXT1 \xc8{\x01\x0c\x00\x00\x00\x00"\x03G\x00\x00
  
 紅葉\n　「なんとも思わないんだ？」@
 拓司\n　「思わないはずないだろう！\p　ムカつくさ。\pだからこそ、こう\n　　やって－－」@
@@ -140,15 +94,9 @@ SEQ05 \x03G\x00\x00
 拓司\n　「……どういう意味だ？」\
 
 \x00\x00\x00  
-SEQ01 \xc2\x11
-SEQ13 
-SEQ04  \xae\x02\x00 
-SEQ12  \xdc\x02\x00 
-SEQ06 SCE233_008\x00 \x18\x13\x00 
-SEQ07  
-SEQ01 
-SEQ03 \xcc{\x01\x0c
-SEQ05 \x03\x95\x00\x00
+VAR01 \xc2\x11 SET01  \xae\x02\x00 OPER  \xdc\x02\x00 
+S_STR SCE233_008\x00 \x18\x13\x00 S_END 
+VAR01 TXT1 \xcc{\x01\x0c\x00\x00\x00\x00"\x03\x95\x00\x00
  
 紅葉\n　「あたしは、あんたにとってなんなのかってことよ！\p　そりゃ、\n　　幼なじみがレイプされたらムカつくでしょうよ！\p　罪もない\n　　女の子がレイプされたらムカつくでしょうよ！\p　しかも相手\n　　は御堂！\p　そりゃ最高にムカつくでしょうよ！\p　でも……そ\n　　ういうことなの？\p　そういうことだからムカつくの？！@
 　　早桃ちゃんや、月代さんがレイプされてムカつくのと、あた\n　　しがレイプされてむかつくっていうのは……\n　　同じことなの？！」@
@@ -157,15 +105,9 @@ SEQ05 \x03\x95\x00\x00
 紅葉\n　「どうしてよ！」\
 
 \x00\x00\x00  
-SEQ01 \\\x13
-SEQ13 
-SEQ04  \xae\x02\x00 
-SEQ12  \xdc\x02\x00 
-SEQ06 SCE233_009\x00 \xea\x15\x00 
-SEQ07  
-SEQ01 
-SEQ03 \xd0{\x01\x0c
-SEQ05 \x03n\x00\x00
+VAR01 \\\x13 SET01  \xae\x02\x00 OPER  \xdc\x02\x00 
+S_STR SCE233_009\x00 \xea\x15\x00 S_END 
+VAR01 TXT1 \xd0{\x01\x0c\x00\x00\x00\x00"\x03n\x00\x00
  
 拓司\n　「答は決まっている。\p『お前は特別だ』と……おれはいう。@
 　　ただ、それが本心から出たのものなのか……あるいはお前を\n　　乗せるためにいったことなのか……それはお前にはわからな\n　　い」@
@@ -175,40 +117,24 @@ SEQ05 \x03n\x00\x00
 \n誰も、何もいわなかった。\
 
 \x00  
-SEQ01 .\x16
-SEQ13 
-SEQ04  \xae\x02\x00 
-SEQ12  \xdc\x02\x00 
-SEQ10   \x00\x00 
-SEQ02 StopCD SPC01 ,\x18\x00 
-SEQ10   
-SEQ01 \xc8\x00
-SEQ13 
-SEQ04  \x80\x00\x00 
-SEQ12  \xaa\x00\x00 
-SEQ06 SCE233_010\x00 |\x18\x00 
-SEQ07  
-SEQ01 
-SEQ03 \xd4{\x01\x0c
-SEQ05 \x03\x0e\x00\x00
+VAR01 .\x16 SET01  \xae\x02\x00 OPER  \xdc\x02\x00 
+CHOICE_FLAG   \x00\x00 
+CMD01 StopCD COMMAND_TO_BYTECODE1 ,\x18\x00 C_END  
+VAR01 \xc8\x00 SET01  \x80\x00\x00 OPER  \xaa\x00\x00 
+S_STR SCE233_010\x00 |\x18\x00 S_END 
+VAR01 TXT1 \xd4{\x01\x0c\x00\x00\x00\x00"\x03\x0e\x00\x00
  
 その晩、紅葉は結局なにも答えずじまいだった。\
 
 \x00\x00\x00  
-SEQ01 \xc0\x18
-SEQ13 
-SEQ04  \xae\x02\x00 
-SEQ12  \xdc\x02\x00 
-SEQ10 \x03\x1d\x00\x00
+VAR01 \xc0\x18 SET01  \xae\x02\x00 OPER  \xdc\x02\x00 
+CHOICE_FLAG \x03\x1d\x00\x00
 CHOICE
 しかし拓司は紅葉が協力してくれるはずだと信じていた\n拓司は、紅葉に頼るのは無理そうだ、と思った。\n\l0,2,
 ENDCHOICE
 
 \x00\x00\x00  
-SEQ01 2\x19
-SEQ13 
-SEQ04  \xae\x02\x00 
-SEQ12  \xdc\x02\x00 
-SEQ10  \xae\x02\x00 
-SEQ12 \x03\x03\x00\x00TextClose SPC02 \xec\x19\x00 
-ENDF
+VAR01 2\x19 SET01  \xae\x02\x00 OPER  \xdc\x02\x00 
+CHOICE_FLAG  \xae\x02\x00 OPER 
+CMD03 TextClose COMMAND_TO_BYTECODE2 \xec\x19\x00 
+F_END

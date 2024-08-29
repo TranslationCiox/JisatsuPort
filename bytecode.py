@@ -2,83 +2,146 @@ import codecs
 import os
 
 patterns = [
+
     {
         "pattern": [b'\x01', b'\x00', b'\x00', b'start', b'\xef', b'i\x01C'],
         # Start the script
-        "action": "STRF\n"
+        "action": "F_SRT\n"
+    },
+    {
+        "pattern": [b'\x00', b'\x00', b'\x00', b'\x00', b'\r', b'\x00', b'\x00', b',', b'\x02'],
+        # Used before scenes which require a dialogue choice.
+        "action": "\nVAR02 "
+    },
+    {
+        "pattern": [b'\x00', b'\x00', b'\x00', b'\x00', b'\r', b'\x00', b'\x00'],
+        # Seems to a variable of some kind.
+        "action": "\nVAR01"
+    },
+    {
+        "pattern": [b'\x00', b'\x0c', b'\x00', b'\x00', b'\x00', b'\x00', b'"'],
+        "action": " SEQ06 "
     },
     {
         "pattern": [b'\x02', b'\x00', b'\x00', b'5', b'6', b'\xf1', b'\x00'],
         # End the script
-        "action": "\nENDF"
-    },
-    {
-        "pattern": [b'\x00', b'\x00', b'\x00', b'\x00', b'\r', b'\x00', b'\x00'],
-        "action": "\nSEQ01"
-    },
-    {
-        "pattern": [b'\x02', b'\x00', b'\x00', b'\x03', b'\x02', b'\x00', b'\x00'],
-        "action": "\nSEQ02 "
-    },
-    {
-        "pattern": [b'\x8c\x01', b'\x00', b'\r', b'\x02'],
-        "action": "\nSEQ03"
-    },
-    {
-        "pattern": [b'\x02', b'\x00', b'\x00', b'"'],
-        "action": "\nSEQ04 "
-    },
-    {
-        "pattern": [b'\x00', b'\x00', b'\x00', b'\x00', b'"'],
-        "action": "\nSEQ05 "
+        "action": "\nF_END"
     },
     {
         "pattern": [b'\x02', b'\x00', b'\x00', b'5', b'\x03', b'\x03', b'\x00', b'\x00'],
-        "action": "\nSEQ06 "
+        # Used before SCExxx_xxx scenario calls. Scenario indicators in the scenarios.
+        "action": "\nS_STR "
     },
     {
-        "pattern": [b'\x02', b'\x00', b'\x00', b'\xef', b'!'],
-        "action": "\nSEQ07 "
+        "pattern": [b'\x02', b'\x00', b'\x00', b'5', b' '],
+        # Used at the end of certain commands like StopCD, WaitTime, SeStop
+        "action": "C_END "
     },
     {
-        "pattern": [b'\x03', b'\x06', b'\x00', b'\x00'],
-        "action": "\nSEQ08 "
+        "pattern": [b'\x00', b'\x0c', b'\x02', b'\x00', b'\x00', b'"'],
+        # Used after VAR01 and the bytecode after it. Maybe to set it?
+        "action": " SET01 "
     },
     {
-        "pattern": [b'\x02', b'\x00', b'\x00', b'5'],
-        "action": "\nSEQ10 "
-    },
-    {
-        "pattern": [b'\x03', b'\x07', b'\x00', b'\x00'],
-        "action": "\nSEQ11 "
-    },
-    {
-        "pattern": [b'\x02', b'\x00', b'\x00'],
-        "action": "\nSEQ12 "
-    },
-    {
-        "pattern": [b'\x00', b'\x0c'],
-        "action": "\nSEQ13 "
+        "pattern": [b'\x02', b'\x00', b'\x00', b'\x03', b'\x02', b'\x00', b'\x00'],
+        # Often times used before commands
+        "action": "\nCMD01 "
     },
     {
         "pattern": [b'\x02', b'\x00', b'\x00', b'\x03', b'\x04', b'\x00', b'\x00'],
-        "action": "\nFILE1 "
+        # Used before BgNormalFadeIn
+        "action": "\nCMD02 "
     },
     {
-        "pattern": [b'\x02', b'\x00', b'\x00', b'\x03', b'\x03', b'\x00', b'\x00'],
-        "action": "\nFILE2 "
+        "pattern": [b'\x8c\x01', b'\x00', b'\r', b'\x02'],
+        # Used after the VAR01 for Text it seems. Might be the dialoguebox?
+        "action": "TXT1"
     },
+    {
+        "pattern": [b'\x02', b'\x00', b'\x00', b'\xef', b'!'],
+        # Used after SCExxx_xxx scenario calls.
+        "action": "S_END"
+    },
+    {
+        "pattern": [b'\x02', b'\x00', b'\x00', b'"'],
+        "action": "\nSEQ05 "
+    },
+    {
+        "pattern": [b'\x02', b'\x00', b'\x00', b'5'],
+        # Used in SCENARIOROOT before each scenario and before each choice in the scenarios with an address.
+        "action": "\nCHOICE_FLAG "
+    },
+    {
+        "pattern": [b'\x02', b'\x00', b'\x00'],
+        "action": "OPER "
+    },
+    {
+        "pattern": [b'\x03', b'\x06', b'\x00', b'\x00'],
+        # Used before files
+        "action": "FILE1 "
+    },
+    {
+        "pattern": [b'\x03', b'\x07', b'\x00', b'\x00'],
+        # Used before calling TextFunc.FOB
+        "action": "FILE2 "
+    },
+    {
+        "pattern": [b'\xb6\x01', b'\x00'],
+        # Used in SCENARIOROOT to end each scenario. Probably set with "CMD01 start COMMAND_TO_BYTECODE3 SCENARIO_start."
+        "action": "SCENARIO_START"
+    },
+
+    {
+        "pattern": [b'j', b'\x00', b'\x00'],
+        # Seems to be related to choices in the game. Scenario flags.
+        "action": "SFLAG"
+    },
+
+    {
+        "pattern": [b'\x03', b'\x03', b'\x00', b'\x00'],
+        # Used before SePlayEx, TextClose, WaitTime
+        "action": "\nCMD03 "
+    },
+    {
+        "pattern": [b'\x03', b'\x05', b'\x00', b'\x00'],
+        # Used before TextWindowOffDirect, InitGameFlagBuffer
+        "action": "\nCMD04 "
+    },
+    {
+        "pattern": [b'\x03', b'\x08', b'\x00', b'\x00'],
+        # Used before Scenario load calls
+        "action": "\nSCEN_LOAD "
+    },
+    {
+        "pattern": [b'\x00', b'\x0c'],
+        "action": " SEQ15 "
+    },
+    {
+        "pattern": [b'\xde\x02', b'\x00'],
+        # Like a series of bytecode used to get the last choice due to
+        # "CMD02 GetLastTxtID COMMAND_TO_BYTECODE1 GET_TEXTID C_END"
+        "action": "GET_TEXTID"
+    },
+
     {
         "pattern": [b'\x81\x1f'],
-        "action": " SPC01 "
+        "action": " COMMAND_TO_BYTECODE1 "
     },
     {
         "pattern": [b'v\x81\x1f'],
-        "action": " SPC02 "
+        "action": " COMMAND_TO_BYTECODE2 "
     },
     {
         "pattern": [b'sv\x81\x1f'],
-        "action": " SPC03 "
+        "action": " COMMAND_TO_BYTECODE3 "
+    },
+    {
+        "pattern": [b't\x81\x1f'],
+        "action": " COMMAND_TO_BYTECODE4 "
+    },
+    {
+        "pattern": [b'6t\x81\x1f'],
+        "action": " COMMAND_TO_BYTECODE5 "
     },
     {
         "pattern": [b'\x1e'],
@@ -89,6 +152,11 @@ patterns = [
         "pattern": [b'\x1f'],
         # Likely a delimiter (record)
         "action": " "
+    },
+    {
+        "pattern": [b'2'],
+        # Likely a delimiter (record)
+        "action": " and "
     },
 ]
 

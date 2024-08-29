@@ -1,44 +1,23 @@
-STRF
-\x01\x06\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xa4\t3\x01\x00\x00\x00\xa6\x04\x00
-SEQ08 .\\Data\\Script\\Bgm.Fob SPC02 \x06\x00\x00 
-SEQ02 StopCD SPC01 0\x00\x00 
-SEQ10   
-SEQ01 \xc8\x00
-SEQ13 
-SEQ04 
-SEQ08 .\\Data\\Script\\Bg.Fob SPC03 f\x00\x00 
-SEQ12 \x03\x04\x00\x00BgAutoFadeIn SPC03 \x90\x00\x00 
-SEQ06 SCE008_001\x00 \xb4\x00\x00 
-SEQ07  
-SEQ01 
-SEQ03  \x1c
-SEQ13 
-SEQ05 \x031\x00\x00
+F_SRT
+\x01\x06\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xa4\t3\x01\x00\x00\x00\xa6\x04\x00FILE1 .\\Data\\Script\\Bgm.Fob COMMAND_TO_BYTECODE2 \x06\x00\x00 
+CMD01 StopCD COMMAND_TO_BYTECODE1 0\x00\x00 C_END  
+VAR01 \xc8\x00 SET01 FILE1 .\\Data\\Script\\Bg.Fob COMMAND_TO_BYTECODE3 f\x00\x00 
+CMD02 BgAutoFadeIn COMMAND_TO_BYTECODE3 \x90\x00\x00 
+S_STR SCE008_001\x00 \xb4\x00\x00 S_END 
+VAR01 TXT1  \x1c SEQ06 \x031\x00\x00
  
 拓司\n　「……これが、おれの願望なのか？\p　違う。\pこんなこと、\n　　おれは望んじゃいない」@
 \n拓司は両手で顔を覆った。\pそしてひとつ、大きなためいきの塊\nを吐き出してから目を閉じた。\
 
 \x00  
-SEQ01 \xf8\x00
-SEQ13 
-SEQ04 
-SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 \xdc\x01\x00 
-SEQ02 TextOn SPC01 \n\x02\x00 
-SEQ06 SCE008_002\x00 &\x02\x00 
-SEQ07  
-SEQ01 
-SEQ03 $\x1c
-SEQ13 
-SEQ05   
-SEQ01 
-SEQ12 \x0c
-SEQ04   \x04\x00\x00\r\x00\x00 \x06\x00
-SEQ13 
-SEQ04   \x08\x00\x00\r\x00\x00 \x01\x00
-SEQ13 
-SEQ04  \x06\x00\x00 
-SEQ02 SePlay SPC01 \xc4\x02\x00 
-SEQ10 \x03H\x00\x00
+VAR01 \xf8\x00 SET01 FILE2 .\\Data\\Script\\TextFunc.Fob COMMAND_TO_BYTECODE1 \xdc\x01\x00 
+CMD01 TextOn COMMAND_TO_BYTECODE1 \n\x02\x00 
+S_STR SCE008_002\x00 &\x02\x00 S_END 
+VAR01 TXT1 $\x1c SEQ06   
+VAR01 OPER \x0c
+SEQ05   \x04\x00\x00\r\x00\x00 \x06\x00 SET01   \x08\x00\x00\r\x00\x00 \x01\x00 SET01  \x06\x00\x00 
+CMD01 SePlay COMMAND_TO_BYTECODE1 \xc4\x02\x00 
+CHOICE_FLAG \x03H\x00\x00
  
 再び目を開けると、そこには変わらず換気ファンが回り、沈黙が\nたゆたっている。@
 ただ、早桃の姿だけがない。@
@@ -51,15 +30,10 @@ SEQ10 \x03H\x00\x00
 おそらくは。\
 
 \x00\x00\x00  
-SEQ01 \xe0\x02
-SEQ13 
-SEQ04  \xdc\x01\x00 
-SEQ12  \n\x02\x00 
-SEQ10   
-SEQ01 
-SEQ12 \x0c
-SEQ04  \x06\x00\x00 
-SEQ02 SeStop SPC01 `\x04\x00 
-SEQ10  \xdc\x01\x00 
-SEQ12 \x03\x03\x00\x00TextClose SPC02 \x88\x04\x00 
-ENDF
+VAR01 \xe0\x02 SET01  \xdc\x01\x00 OPER  \n\x02\x00 C_END  
+VAR01 OPER \x0c
+SEQ05  \x06\x00\x00 
+CMD01 SeStop COMMAND_TO_BYTECODE1 `\x04\x00 
+CHOICE_FLAG  \xdc\x01\x00 OPER 
+CMD03 TextClose COMMAND_TO_BYTECODE2 \x88\x04\x00 
+F_END

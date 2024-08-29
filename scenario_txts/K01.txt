@@ -1,21 +1,11 @@
-STRF
+F_SRT
 \xef\x18\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\x04\x12\x00  
-SEQ01 <\x00
-SEQ13 
-SEQ04 
-SEQ08 .\\Data\\Script\\Bg.Fob SPC03  \x00\x00 
-SEQ12 \x03\x04\x00\x00BgAutoFadeIn SPC03 J\x00\x00 
-SEQ10   
-SEQ01 \x08\x01
-SEQ13 
-SEQ04 
-SEQ08 .\\Data\\Script\\Bgm.Fob SPC02 \x88\x00\x00 
-SEQ02 PlayCD SPC01 \xb2\x00\x00 
-SEQ06 SCEK01_001\x00 \xce\x00\x00 
-SEQ07  
-SEQ01 
-SEQ03 \xe0\xa5\x01\x0c
-SEQ05 \x03Z\x00\x00
+VAR01 <\x00 SET01 FILE1 .\\Data\\Script\\Bg.Fob COMMAND_TO_BYTECODE3  \x00\x00 
+CMD02 BgAutoFadeIn COMMAND_TO_BYTECODE3 J\x00\x00 C_END  
+VAR01 \x08\x01 SET01 FILE1 .\\Data\\Script\\Bgm.Fob COMMAND_TO_BYTECODE2 \x88\x00\x00 
+CMD01 PlayCD COMMAND_TO_BYTECODE1 \xb2\x00\x00 
+S_STR SCEK01_001\x00 \xce\x00\x00 S_END 
+VAR01 TXT1 \xe0\xa5\x01\x0c\x00\x00\x00\x00"\x03Z\x00\x00
  
 カンナ\n　「私、ずいぶんひどいこといったみたいね」@
 \n　カンナはそう話を切りだした。@
@@ -24,16 +14,10 @@ SEQ05 \x03Z\x00\x00
 カンナ\n　「そうね……\pええ、たぶんそう。\pでも、私がいったことは事\n　　実よ」@
 拓司\n　「……」\w\z
 \x00  
-SEQ01 \x12\x01
-SEQ13 
-SEQ04 
-SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 \x9a\x02\x00 
-SEQ02 TextOn SPC01 \xc8\x02\x00 
-SEQ06 SCEK01_002\x00 \xe4\x02\x00 
-SEQ07  
-SEQ01 
-SEQ03 \xe4\xa5\x01\x0c
-SEQ05 \x03\x8b\x00\x00
+VAR01 \x12\x01 SET01 FILE2 .\\Data\\Script\\TextFunc.Fob COMMAND_TO_BYTECODE1 \x9a\x02\x00 
+CMD01 TextOn COMMAND_TO_BYTECODE1 \xc8\x02\x00 
+S_STR SCEK01_002\x00 \xe4\x02\x00 S_END 
+VAR01 TXT1 \xe4\xa5\x01\x0c\x00\x00\x00\x00"\x03\x8b\x00\x00
  
 カンナ\n　「あなたは道具だって……私、いったでしょう？@
 　　それは本当なの。\p死の儀式に必要不可欠な道具だって。@
@@ -45,40 +29,20 @@ SEQ05 \x03\x8b\x00\x00
 カンナ\n　「長い話なんだけれど……聞いてもらえる？」@
 拓司\n　「ああ」\w\z
 \x00  
-SEQ01 (\x03
-SEQ13 
-SEQ04  \x9a\x02\x00 
-SEQ12  \xc8\x02\x00 
-SEQ06 SCEK01_003\x00 \x8e\x05\x00 
-SEQ07  
-SEQ01 
-SEQ03 \xe8\xa5\x01\x0c
-SEQ05 \x03J\x00\x00
+VAR01 (\x03 SET01  \x9a\x02\x00 OPER  \xc8\x02\x00 
+S_STR SCEK01_003\x00 \x8e\x05\x00 S_END 
+VAR01 TXT1 \xe8\xa5\x01\x0c\x00\x00\x00\x00"\x03J\x00\x00
  
 　カンナはしばらくじっと天井を見上げて無言だった。@
 　横顔には、心の中の激しい葛藤が伺えた。@
 　カンナはそうした感情の揺らぎを必死に組み伏して、整理して\n　言葉に変えようともがいているように見えた。@
 　やがてカンナは、ぽつり、ぽつり、と少しずつ自らの死の物語\n　を、語り始めた……。\w\z
 \x00  
-SEQ01 \xd2\x05
-SEQ13 
-SEQ04  \x9a\x02\x00 
-SEQ12  \xc8\x02\x00 
-SEQ10   
-SEQ01 \xc8\x00
-SEQ13 
-SEQ04   \x00\x00 
-SEQ12  J\x00\x00 
-SEQ10   
-SEQ01 \x04\x01
-SEQ13 
-SEQ04  \x88\x00\x00 
-SEQ12  \xb2\x00\x00 
-SEQ06 SCEK01_004\x00 \x9c\x07\x00 
-SEQ07  
-SEQ01 
-SEQ03 \xec\xa5\x01\x0c
-SEQ05 \x03{\x00\x00
+VAR01 \xd2\x05 SET01  \x9a\x02\x00 OPER  \xc8\x02\x00 C_END  
+VAR01 \xc8\x00 SET01   \x00\x00 OPER  J\x00\x00 C_END  
+VAR01 \x04\x01 SET01  \x88\x00\x00 OPER  \xb2\x00\x00 
+S_STR SCEK01_004\x00 \x9c\x07\x00 S_END 
+VAR01 TXT1 \xec\xa5\x01\x0c\x00\x00\x00\x00"\x03{\x00\x00
  
 　女子校というのは本当に特殊なところで、最初から、私はその\n空気に馴染むことができなかった。@
 　女の子同士の恋愛を否定する気はない。@
@@ -87,50 +51,28 @@ SEQ05 \x03{\x00\x00
 　でも、私がそこで頻繁に見かけたベタベタとした関係は、とても\n『恋愛』と呼べるレベルのものではなかった。@
 誰かに甘えたいとか、依存したいとか……\pそういう子供っぽい欲\n求に『恋愛』というレッテルを貼って、いごこちのいい狭い輪を\n強化しているだけ。\w\z
 \x00  
-SEQ01 \xe0\x07
-SEQ13 
-SEQ04  \x9a\x02\x00 
-SEQ12  \xc8\x02\x00 
-SEQ06 SCEK01_005\x00 \x06\n\x00 
-SEQ07  
-SEQ01 
-SEQ03 \xf0\xa5\x01\x0c
-SEQ05 \x03\x95\x00\x00
+VAR01 \xe0\x07 SET01  \x9a\x02\x00 OPER  \xc8\x02\x00 
+S_STR SCEK01_005\x00 \x06\n\x00 S_END 
+VAR01 TXT1 \xf0\xa5\x01\x0c\x00\x00\x00\x00"\x03\x95\x00\x00
  
 　本物の恋愛に傷つく覚悟がない子供たちの演じる、安全な恋愛ご\nっこ。\pそんな気がして、好きになれなかった。@
 女子校における、『おままごと』的な空気はなにも恋愛に限った\n話ではなくて、髪の毛は必ず三つ編みでなければいけないとか、\n学業の妨げになるから異性との交際は禁止とか、保護者同伴なし\nでの映画館への立入は禁止とか……。@
 何もかもが、フェイクなプチ世界を、リアルな世界から守るため\nに作られているようで、うっとおしかった。@
 私が反逆者であることを、周りの人間は感じ取ったのだと思う\n（－－私は、まるで『全部反対！』ってプラカードを掲げて歩\nき回っているデモ隊みたいだったから）。\w\z
 \x00\x00\x00  
-SEQ01 J\n
-SEQ13 
-SEQ04  \x9a\x02\x00 
-SEQ12  \xc8\x02\x00 
-SEQ06 SCEK01_006\x00 \xd8\x0c\x00 
-SEQ07  
-SEQ01 
-SEQ03 \xf4\xa5\x01\x0c
-SEQ05 \x03I\x00\x00
+VAR01 J\n SET01  \x9a\x02\x00 OPER  \xc8\x02\x00 
+S_STR SCEK01_006\x00 \xd8\x0c\x00 S_END 
+VAR01 TXT1 \xf4\xa5\x01\x0c\x00\x00\x00\x00"\x03I\x00\x00
  
 ある女の子からの『告白』を邪険に断ったのをきっかけに、\n私はあっというまにクラスのつまはじきとなった。@
 なんてくだらないんだろう、と思った。@
 こんなゴッコ遊びに参加できなくたって全然構わない、とも思っ\nた。@
 けれど、それでもやっぱり傷つきはした\n（－－そういうものでしょ？）。\w\z
 \x00\x00\x00  
-SEQ01 \x1c\r
-SEQ13 
-SEQ04  \x9a\x02\x00 
-SEQ12  \xc8\x02\x00 
-SEQ10   
-SEQ01 =\x00
-SEQ13 
-SEQ04   \x00\x00 
-SEQ12  J\x00\x00 
-SEQ06 SCEK01_007\x00 \xae\x0e\x00 
-SEQ07  
-SEQ01 
-SEQ03 \xf8\xa5\x01\x0c
-SEQ05 \x03\x86\x00\x00
+VAR01 \x1c\r SET01  \x9a\x02\x00 OPER  \xc8\x02\x00 C_END  
+VAR01 =\x00 SET01   \x00\x00 OPER  J\x00\x00 
+S_STR SCEK01_007\x00 \xae\x0e\x00 S_END 
+VAR01 TXT1 \xf8\xa5\x01\x0c\x00\x00\x00\x00"\x03\x86\x00\x00
  
 　若草ゆきは、もっとうまくやっていた。@
 美人で明るくて、みんなの人気者だった。@
@@ -140,20 +82,14 @@ SEQ05 \x03\x86\x00\x00
 だからある日の放課後、若草ゆきが声をかけてきたときにはとて\nも驚いた。@
 \n「月代さん。よかったら一緒に帰らない？」\w\z
 \x00  
-SEQ01 \xf2\x0e
-SEQ13 
-SEQ04  \x9a\x02\x00 
-SEQ12  \xc8\x02\x00 
-SEQ10 \x03\x17\x00\x00
+VAR01 \xf2\x0e SET01  \x9a\x02\x00 OPER  \xc8\x02\x00 
+CHOICE_FLAG \x03\x17\x00\x00
 CHOICE
 私はすぐさま「悪いけど」と断った\n私はあっけにとられて「うん」といっていた\n\l0,2,
 ENDCHOICE
 
 \x00  
-SEQ01 D\x11
-SEQ13 
-SEQ04  \x9a\x02\x00 
-SEQ12  \xc8\x02\x00 
-SEQ10  \x9a\x02\x00 
-SEQ12 \x03\x03\x00\x00TextClose SPC02 \xe6\x11\x00 
-ENDF
+VAR01 D\x11 SET01  \x9a\x02\x00 OPER  \xc8\x02\x00 
+CHOICE_FLAG  \x9a\x02\x00 OPER 
+CMD03 TextClose COMMAND_TO_BYTECODE2 \xe6\x11\x00 
+F_END

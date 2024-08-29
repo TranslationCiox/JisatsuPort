@@ -1,15 +1,9 @@
-STRF
+F_SRT
 \x1a\x0b\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00>\t\x00  
-SEQ01 \x04\x01
-SEQ13 
-SEQ04 
-SEQ08 .\\Data\\Script\\Bgm.Fob SPC02  \x00\x00 
-SEQ02 PlayCD SPC01 J\x00\x00 
-SEQ06 SCES04_001\x00 f\x00\x00 
-SEQ07  
-SEQ01 
-SEQ03 \xf8\xb5\x01\x0c
-SEQ05 \x03\x99\x00\x00
+VAR01 \x04\x01 SET01 FILE1 .\\Data\\Script\\Bgm.Fob COMMAND_TO_BYTECODE2  \x00\x00 
+CMD01 PlayCD COMMAND_TO_BYTECODE1 J\x00\x00 
+S_STR SCES04_001\x00 f\x00\x00 S_END 
+VAR01 TXT1 \xf8\xb5\x01\x0c\x00\x00\x00\x00"\x03\x99\x00\x00
  
 援助交際で怖い目にあったって話も聞いていたけど、たぶんそれ\nはウソだって、そう思ってた。@
 大人がそういうことはやめさせようと作った怖いお話。@
@@ -21,16 +15,10 @@ SEQ05 \x03\x99\x00\x00
 そういうことをしばらく続けていると、どんどんお金が貯まって\nいった。\
 
 \x00\x00\x00  
-SEQ01 \xaa\x00
-SEQ13 
-SEQ04 
-SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 .\x03\x00 
-SEQ02 TextOn SPC01 \\\x03\x00 
-SEQ06 SCES04_002\x00 x\x03\x00 
-SEQ07  
-SEQ01 
-SEQ03 \xfc\xb5\x01\x0c
-SEQ05 \x03\xdd\x00\x00
+VAR01 \xaa\x00 SET01 FILE2 .\\Data\\Script\\TextFunc.Fob COMMAND_TO_BYTECODE1 .\x03\x00 
+CMD01 TextOn COMMAND_TO_BYTECODE1 \\\x03\x00 
+S_STR SCES04_002\x00 x\x03\x00 S_END 
+VAR01 TXT1 \xfc\xb5\x01\x0c\x00\x00\x00\x00"\x03\xdd\x00\x00
  
 そんなとき、学校の帰り、偶然何人かのクラスの女の子と一緒に\nなって、ピザのお店に寄ったの。@
 すごく緊張して、嫌われないようにしなきゃ、って、ずっとドキ\nドキしてた。\pでも、あんまりうまくお話ができなくて、みんなは\n私に失望しているみたいに見えた。@
@@ -46,26 +34,17 @@ SEQ05 \x03\xdd\x00\x00
 そう思った。\
 
 \x00\x00\x00  
-SEQ01 \xbc\x03
-SEQ13 
-SEQ04  .\x03\x00 
-SEQ12  \\\x03\x00 
-SEQ06 SCES04_003\x00 j\x07\x00 
-SEQ07  
-SEQ01 
-SEQ03 \x00\xb6\x01\x0c
-SEQ05 \x03A\x00\x00
+VAR01 \xbc\x03 SET01  .\x03\x00 OPER  \\\x03\x00 
+S_STR SCES04_003\x00 j\x07\x00 S_END 
+VAR01 TXT1 \x00\xb6\x01\x0c\x00\x00\x00\x00"\x03A\x00\x00
  
 それから私はみんなにいろんなものをごちそうしたり、プレゼン\nトしたりしはじめた。@
 それで友情を買おうと思ったわけじゃないし、買えるとも思って\nなかった。\pでも、自己の価値は証明できるし、それこそが、私\nがずっと欲しくてたまらなかったものだったから。\
 
 \x00  
-SEQ01 \xae\x07
-SEQ13 
-SEQ04  .\x03\x00 
-SEQ12  \\\x03\x00 
-SEQ10   \x00\x00 
-SEQ02 StopCD SPC01 \xf8\x08\x00 
-SEQ10  .\x03\x00 
-SEQ12 \x03\x03\x00\x00TextClose SPC02  \t\x00 
-ENDF
+VAR01 \xae\x07 SET01  .\x03\x00 OPER  \\\x03\x00 
+CHOICE_FLAG   \x00\x00 
+CMD01 StopCD COMMAND_TO_BYTECODE1 \xf8\x08\x00 
+CHOICE_FLAG  .\x03\x00 OPER 
+CMD03 TextClose COMMAND_TO_BYTECODE2  \t\x00 
+F_END

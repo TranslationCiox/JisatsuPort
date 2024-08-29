@@ -1,19 +1,11 @@
-STRF
-\x02\x05\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xa4\t3\x01\x00\x00\x00\xea\x03\x00\x03\x03\x00\x00SCE214_001\x00 \x06\x00\x00 
-SEQ07  
-SEQ01 
-SEQ03 \x00^\x01\x0c
-SEQ05   
-SEQ01 
-SEQ12 \x0c
-SEQ04   \x04\x00\x00\r\x00\x00 \x01\x00
-SEQ13 
-SEQ04   \x08\x00\x00\r\x00\x00 \x01\x00
-SEQ13 
-SEQ04 
-SEQ08 .\\Data\\Script\\Bgm.Fob SPC02 \x98\x00\x00 
-SEQ02 SePlay SPC01 \xc2\x00\x00 
-SEQ10 \x03C\x00\x00
+F_SRT
+\x02\x05\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xa4\t3\x01\x00\x00\x00\xea\x03\x00
+CMD03 SCE214_001\x00 \x06\x00\x00 S_END 
+VAR01 TXT1 \x00^\x01\x0c\x00\x00\x00\x00"  
+VAR01 OPER \x0c
+SEQ05   \x04\x00\x00\r\x00\x00 \x01\x00 SET01   \x08\x00\x00\r\x00\x00 \x01\x00 SET01 FILE1 .\\Data\\Script\\Bgm.Fob COMMAND_TO_BYTECODE2 \x98\x00\x00 
+CMD01 SePlay COMMAND_TO_BYTECODE1 \xc2\x00\x00 
+CHOICE_FLAG \x03C\x00\x00
  
 拓司はガバと身を起こした。@
 頭の横に付けっぱなしのラジオが置かれている。@
@@ -24,16 +16,10 @@ SEQ10 \x03C\x00\x00
 ここは……『学校に籠城する世界』。\
 
 \x00\x00\x00  
-SEQ01 \xde\x00
-SEQ13 
-SEQ04 
-SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 \n\x02\x00 
-SEQ02 TextOn SPC01 8\x02\x00 
-SEQ06 SCE214_002\x00 T\x02\x00 
-SEQ07  
-SEQ01 
-SEQ03 \x04^\x01\x0c
-SEQ05 \x03+\x00\x00
+VAR01 \xde\x00 SET01 FILE2 .\\Data\\Script\\TextFunc.Fob COMMAND_TO_BYTECODE1 \n\x02\x00 
+CMD01 TextOn COMMAND_TO_BYTECODE1 8\x02\x00 
+S_STR SCE214_002\x00 T\x02\x00 S_END 
+VAR01 TXT1 \x04^\x01\x0c\x00\x00\x00\x00"\x03+\x00\x00
  
 拓司\n　「……やれやれ」@
 \n拓司は深呼吸をした。@
@@ -42,15 +28,10 @@ SEQ05 \x03+\x00\x00
 それしかないのだ。\
 
 \x00\x00\x00  
-SEQ01 \x98\x02
-SEQ13 
-SEQ04  \n\x02\x00 
-SEQ12  8\x02\x00 
-SEQ10   
-SEQ01 
-SEQ12 \x0c
-SEQ04  \x98\x00\x00 
-SEQ02 SeStop SPC01 \xa4\x03\x00 
-SEQ10  \n\x02\x00 
-SEQ12 \x03\x03\x00\x00TextClose SPC02 \xcc\x03\x00 
-ENDF
+VAR01 \x98\x02 SET01  \n\x02\x00 OPER  8\x02\x00 C_END  
+VAR01 OPER \x0c
+SEQ05  \x98\x00\x00 
+CMD01 SeStop COMMAND_TO_BYTECODE1 \xa4\x03\x00 
+CHOICE_FLAG  \n\x02\x00 OPER 
+CMD03 TextClose COMMAND_TO_BYTECODE2 \xcc\x03\x00 
+F_END

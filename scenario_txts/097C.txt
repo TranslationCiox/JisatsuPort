@@ -1,22 +1,11 @@
-STRF
+F_SRT
 \x16\x08\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00R\x06\x00  
-SEQ01 \xc8\x00
-SEQ13 
-SEQ04 
-SEQ08 .\\Data\\Script\\Bg.Fob SPC03  \x00\x00 
-SEQ12 \x03\x04\x00\x00BgAutoFadeIn SPC03 J\x00\x00 
-SEQ10   
-SEQ01 \t\x01
-SEQ13 
-SEQ04 
-SEQ08 .\\Data\\Script\\Bgm.Fob SPC02 \x88\x00\x00 
-SEQ02 PlayCD SPC01 \xb2\x00\x00 
-SEQ06 SCE097_001\x00 \xce\x00\x00 
-SEQ07  
-SEQ01 
-SEQ03 0\xa7
-SEQ13 
-SEQ05 \x03\xb4\x00\x00
+VAR01 \xc8\x00 SET01 FILE1 .\\Data\\Script\\Bg.Fob COMMAND_TO_BYTECODE3  \x00\x00 
+CMD02 BgAutoFadeIn COMMAND_TO_BYTECODE3 J\x00\x00 C_END  
+VAR01 \t\x01 SET01 FILE1 .\\Data\\Script\\Bgm.Fob COMMAND_TO_BYTECODE2 \x88\x00\x00 
+CMD01 PlayCD COMMAND_TO_BYTECODE1 \xb2\x00\x00 
+S_STR SCE097_001\x00 \xce\x00\x00 S_END 
+VAR01 TXT1 0\xa7 SEQ06 \x03\xb4\x00\x00
  
 こうして１日が終わった。@
 深夜を過ぎても、拓司は眠りにつくことができなかった。@
@@ -25,43 +14,30 @@ SEQ05 \x03\xb4\x00\x00
 拓司は、足下にわずかに人の気配を感じた。\
 
 \x00\x00\x00  
-SEQ01 \x12\x01
-SEQ13 
-SEQ04 
-SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 \x02\x04\x00 
-SEQ02 TextOn SPC01 0\x04\x00 
-SEQ10  \x88\x00\x00 
-SEQ02 StopCD SPC01 X\x04\x00 
-SEQ10 ! 
-SEQ01 \x14\x00\x00\r\x02 \x00\x00\x00\x00\x0b\r\x01 \x00\x00\x00\x00\x1b\x00\x00\x00\x001\x00\x00\x00\x00^\x05\x00\x03\x12\x00\x00
+VAR01 \x12\x01 SET01 FILE2 .\\Data\\Script\\TextFunc.Fob COMMAND_TO_BYTECODE1 \x02\x04\x00 
+CMD01 TextOn COMMAND_TO_BYTECODE1 0\x04\x00 
+CHOICE_FLAG  \x88\x00\x00 
+CMD01 StopCD COMMAND_TO_BYTECODE1 X\x04\x00 
+CHOICE_FLAG ! 
+VAR01 \x14\x00\x00\r\x02 \x00\x00\x00\x00\x0b\r\x01 \x00\x00\x00\x00\x1b\x00\x00\x00\x001\x00\x00\x00\x00^\x05\x00\x03\x12\x00\x00
 CHOICE
 それは早桃だった\nそれはカンナだった\nそれは錦城だった\n\l0,3,
 ENDCHOICE
 
 \x00  
-SEQ01 \xac\x04
-SEQ13 
-SEQ04  \x02\x04\x00 
-SEQ12  0\x04\x00 
-SEQ10  \x02\x04\x00 
-SEQ12 \x03\x04\x00\x00GetLastTxtID SPC03 :\x05\x00 
-SEQ10 2"\x06\x00\x03\r\x00\x00
+VAR01 \xac\x04 SET01  \x02\x04\x00 OPER  0\x04\x00 
+CHOICE_FLAG  \x02\x04\x00 
+CMD02 GetLastTxtID COMMAND_TO_BYTECODE3 :\x05\x00 
+CHOICE_FLAG  and "\x06\x00\x03\r\x00\x00
 CHOICE
 それは早桃だった\nそれは錦城だった\n\l0,2,
 ENDCHOICE
 
 \x00  
-SEQ01 d\x05
-SEQ13 
-SEQ04  \x02\x04\x00 
-SEQ12  0\x04\x00 
-SEQ10  \x02\x04\x00 
-SEQ12  :\x05\x00 
-SEQ10   
-SEQ01 \x01\x00\x00\x1b
-SEQ12 1\x00\x00\x00\x00"\x06\x00  
-SEQ01 
-SEQ12 \x0c
-SEQ04  \x02\x04\x00 
-SEQ12 \x03\x03\x00\x00TextClose SPC02 4\x06\x00 
-ENDF
+VAR01 d\x05 SET01  \x02\x04\x00 OPER  0\x04\x00 
+CHOICE_FLAG  \x02\x04\x00 OPER  :\x05\x00 C_END  
+VAR01 \x01\x00\x00\x1bOPER 1\x00\x00\x00\x00"\x06\x00  
+VAR01 OPER \x0c
+SEQ05  \x02\x04\x00 OPER 
+CMD03 TextClose COMMAND_TO_BYTECODE2 4\x06\x00 
+F_END

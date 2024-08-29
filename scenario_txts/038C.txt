@@ -1,16 +1,9 @@
-STRF
+F_SRT
 \x07\x0e\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00X\x0b\x00  
-SEQ01 \x08\x01
-SEQ13 
-SEQ04 
-SEQ08 .\\Data\\Script\\Bgm.Fob SPC02  \x00\x00 
-SEQ02 PlayCD SPC01 J\x00\x00 
-SEQ06 SCE038_001\x00 f\x00\x00 
-SEQ07  
-SEQ01 
-SEQ03 \x00K
-SEQ13 
-SEQ05 \x03a\x00\x00
+VAR01 \x08\x01 SET01 FILE1 .\\Data\\Script\\Bgm.Fob COMMAND_TO_BYTECODE2  \x00\x00 
+CMD01 PlayCD COMMAND_TO_BYTECODE1 J\x00\x00 
+S_STR SCE038_001\x00 f\x00\x00 S_END 
+VAR01 TXT1 \x00K SEQ06 \x03a\x00\x00
  
 話題が奈落へと転がり始めたことを悟った拓司は、慌てて話題を\n転じた。@
 \n拓司\n　「おやじから、夏の旅行の話って、聞いてるか？」@
@@ -21,17 +14,10 @@ SEQ05 \x03a\x00\x00
 やがて早桃がポツリといった。\
 
 \x00\x00\x00  
-SEQ01 \xaa\x00
-SEQ13 
-SEQ04 
-SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 N\x02\x00 
-SEQ02 TextOn SPC01 |\x02\x00 
-SEQ06 SCE038_002\x00 \x98\x02\x00 
-SEQ07  
-SEQ01 
-SEQ03 \x04K
-SEQ13 
-SEQ05 \x03b\x00\x00
+VAR01 \xaa\x00 SET01 FILE2 .\\Data\\Script\\TextFunc.Fob COMMAND_TO_BYTECODE1 N\x02\x00 
+CMD01 TextOn COMMAND_TO_BYTECODE1 |\x02\x00 
+S_STR SCE038_002\x00 \x98\x02\x00 S_END 
+VAR01 TXT1 \x04K SEQ06 \x03b\x00\x00
  
 早桃\n　「……ホント？」@
 拓司\n　「ああ。\pでも香港って言われてもなあ。@
@@ -43,16 +29,9 @@ SEQ05 \x03b\x00\x00
 \n　早桃の顔に、ようやく柔らかい笑顔が戻った。\
 
 \x00\x00\x00  
-SEQ01 \xdc\x02
-SEQ13 
-SEQ04  N\x02\x00 
-SEQ12  |\x02\x00 
-SEQ06 SCE038_003\x00 \x9e\x04\x00 
-SEQ07  
-SEQ01 
-SEQ03 \x08K
-SEQ13 
-SEQ05 \x03L\x00\x00
+VAR01 \xdc\x02 SET01  N\x02\x00 OPER  |\x02\x00 
+S_STR SCE038_003\x00 \x9e\x04\x00 S_END 
+VAR01 TXT1 \x08K SEQ06 \x03L\x00\x00
  
 早桃\n　「おにいちゃん、カンフー映画好きだもんね」@
 拓司\n　「まあな」@
@@ -64,16 +43,9 @@ SEQ05 \x03L\x00\x00
 　　あと、香港といえばブランド品の買い物だな」\
 
 \x00  
-SEQ01 \xe2\x04
-SEQ13 
-SEQ04  N\x02\x00 
-SEQ12  |\x02\x00 
-SEQ06 SCE038_004\x00 L\x06\x00 
-SEQ07  
-SEQ01 
-SEQ03 \x0cK
-SEQ13 
-SEQ05 \x03P\x00\x00
+VAR01 \xe2\x04 SET01  N\x02\x00 OPER  |\x02\x00 
+S_STR SCE038_004\x00 L\x06\x00 S_END 
+VAR01 TXT1 \x0cK SEQ06 \x03P\x00\x00
  
 早桃\n　「うん」@
 拓司\n　「しかし、おふくろはいいだろうけど、早桃はなあ」@
@@ -83,16 +55,9 @@ SEQ05 \x03P\x00\x00
 \n拓司\n　「……？」\
 
 \x00\x00\x00  
-SEQ01 \x90\x06
-SEQ13 
-SEQ04  N\x02\x00 
-SEQ12  |\x02\x00 
-SEQ06 SCE038_005\x00 \n\x08\x00 
-SEQ07  
-SEQ01 
-SEQ03 \x10K
-SEQ13 
-SEQ05 \x03H\x00\x00
+VAR01 \x90\x06 SET01  N\x02\x00 OPER  |\x02\x00 
+S_STR SCE038_005\x00 \n\x08\x00 S_END 
+VAR01 TXT1 \x10K SEQ06 \x03H\x00\x00
  
 早桃\n　「……わかってないんだね、おにいちゃん」@
 拓司\n　「わかってない？　@
@@ -103,16 +68,9 @@ SEQ05 \x03H\x00\x00
 拓司\n　「……？」\
 
 \x00  
-SEQ01 N\x08
-SEQ13 
-SEQ04  N\x02\x00 
-SEQ12  |\x02\x00 
-SEQ06 SCE038_006\x00 \xa8\t\x00 
-SEQ07  
-SEQ01 
-SEQ03 \x14K
-SEQ13 
-SEQ05 \x03B\x00\x00
+VAR01 N\x08 SET01  N\x02\x00 OPER  |\x02\x00 
+S_STR SCE038_006\x00 \xa8\t\x00 S_END 
+VAR01 TXT1 \x14K SEQ06 \x03B\x00\x00
  
 早桃\n　「憧れとか、そんなぼんやりしたものじゃないの。@
 　　もっとはっきりした……@
@@ -122,10 +80,7 @@ SEQ05 \x03B\x00\x00
 拓司\n　「……」\
 
 \x00  
-SEQ01 \xec\t
-SEQ13 
-SEQ04  N\x02\x00 
-SEQ12  |\x02\x00 
-SEQ10  N\x02\x00 
-SEQ12 \x03\x03\x00\x00TextClose SPC02 :\x0b\x00 
-ENDF
+VAR01 \xec\t SET01  N\x02\x00 OPER  |\x02\x00 
+CHOICE_FLAG  N\x02\x00 OPER 
+CMD03 TextClose COMMAND_TO_BYTECODE2 :\x0b\x00 
+F_END
