@@ -1,21 +1,19 @@
 START
 &\x1e\x01`B#\x01P\x19
-CSCE SCE226_001 \x06 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \xc0p\x01\x0c"\x03\x11
+CSCE SCE226_001 \x06 SCE_DONE 
+FLG3 \x8c\x01 FLG2 \xc0p\x01 FLG2_SET \x03\x11
  
 \n\n\n\n\n\n\n\n\n\n　　　　　　　　　　　　　『１２日目』\
 
   
-FLAG J\x0c\x02"
+FLG3 J\x0c FLG3_SET
 WHAT .\\Data\\Script\\TextFunc.Fob RUNF \xae \x02
 CMD1 TextOn RUNF \xdc END  
-FLAG \x0c\x01\x0c\x02"
+FLG3 \x0c\x01\x0c FLG3_SET
 FOBT .\\Data\\Script\\Bgm.Fobv\x81\x1f\x12\x01 \x02
 CMD1 PlayCD RUNF <\x01 END
-CSCE SCE226_002 X\x01 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \xc4p\x01\x0c"\x03x
+CSCE SCE226_002 X\x01 SCE_DONE 
+FLG3 \x8c\x01 FLG2 \xc4p\x01 FLG2_SET \x03x
  
 錦城\n　「月代さん。\p御堂くんが呼んでいるわよ」@
 \n昼過ぎ、錦城が薄く笑っていった。@
@@ -25,10 +23,9 @@ FLAG\x02 \xc4p\x01\x0c"\x03x
 錦城\n　「……ふう。\pあなたのせいで、今日も全員が食事抜きになるの\n　　かしらねえ」\
 
   
-FLAG \x9c\x01\x0c\x02" \xae \x02 \xdc END
-CSCE SCE226_003 \xb6\x03 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \xc8p\x01\x0c"\x03d
+FLG3 \x9c\x01\x0c FLG3_SET \xae \x02 \xdc END
+CSCE SCE226_003 \xb6\x03 SCE_DONE 
+FLG3 \x8c\x01 FLG2 \xc8p\x01 FLG2_SET \x03d
  
 カンナ\n　「メッセンジャーが判断することじゃないでしょう？」@
 \n錦城の顔に一瞬、怒りの炎が踊った。\pしかし彼女はそれをすぐに\n収めていった。@
@@ -38,10 +35,9 @@ FLAG\x02 \xc8p\x01\x0c"\x03d
 錦城\n　「今日も全員食事抜きです」\
 
   
-FLAG \xfa\x03\x0c\x02" \xae \x02 \xdc END
-CSCE SCE226_004 \xc4\x05 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \xccp\x01\x0c"\x03\x94
+FLG3 \xfa\x03\x0c FLG3_SET \xae \x02 \xdc END
+CSCE SCE226_004 \xc4\x05 SCE_DONE 
+FLG3 \x8c\x01 FLG2 \xccp\x01 FLG2_SET \x03\x94
  
 勝ち誇ったようにいうと、錦城は準備室に引き上げていった。@
 結局その日も食事の配給は無しとなった。\p２日の絶食は、一同に\n予想以上のダメージを与えた。\pダメージは、肉体的というよりも\n精神的なものだった。\pいまや己の権利のすべてが御堂の管理下に\nあるという事実が、一同の胸を押しつぶした。@
@@ -51,10 +47,9 @@ FLAG\x02 \xccp\x01\x0c"\x03\x94
 早桃\n　「私だってあの２人のやり方はおかしいと思うし……腹もたつ\n　　けど。\pでも、そんなこと口に出したって、意味がないと思う」\n\pカンナ\n　「……」\
 
   
-FLAG \x08\x06\x0c\x02" \xae \x02 \xdc END
-CSCE SCE226_005 \x92\x08 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \xd0p\x01\x0c"\x03\x9d
+FLG3 \x08\x06\x0c FLG3_SET \xae \x02 \xdc END
+CSCE SCE226_005 \x92\x08 SCE_DONE 
+FLG3 \x8c\x01 FLG2 \xd0p\x01 FLG2_SET \x03\x9d
  
 早桃\n　「月代先輩の気が済むってだけでしょ？\p　そのせいでご飯がな\n　　くなるなんて……」@
 カンナ\n　「……要するに、恨み言ってわけ？」@
@@ -66,10 +61,9 @@ FLAG\x02 \xd0p\x01\x0c"\x03\x9d
 早桃\n　「そんな……！」\
 
   
-FLAG \xd6\x08\x0c\x02" \xae \x02 \xdc END
-CSCE SCE226_006 \x84\x0b \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \xd4p\x01\x0c"\x03\x85
+FLG3 \xd6\x08\x0c FLG3_SET \xae \x02 \xdc END
+CSCE SCE226_006 \x84\x0b SCE_DONE 
+FLG3 \x8c\x01 FLG2 \xd4p\x01 FLG2_SET \x03\x85
  
 見かねて拓司があいだにはいる。@
 \n拓司\n　「よせ、みんな気が立ってるんだ」@
@@ -82,10 +76,9 @@ FLAG\x02 \xd4p\x01\x0c"\x03\x85
 /*▲BGM　停止*/\a4,-1,0,0,紅葉\n　「もうたくさんッ！」\
 
   
-FLAG \xc8\x0b\x0c\x02" \xae \x02 \xdc END
-CSCE SCE226_007 \x16\x0e \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \xd8p\x01\x0c"\x03\x85
+FLG3 \xc8\x0b\x0c FLG3_SET \xae \x02 \xdc END
+CSCE SCE226_007 \x16\x0e SCE_DONE 
+FLG3 \x8c\x01 FLG2 \xd8p\x01 FLG2_SET \x03\x85
  
 それまで黙っていた紅葉が叫んだ。\p頭を抱えて立ち上がる。@
 拓司たちは呆気にとられて紅葉を見た。@
@@ -95,10 +88,9 @@ FLAG\x02 \xd8p\x01\x0c"\x03\x85
 拓司\n　「でも、最終波動が……」\
 
   
-FLAG Z\x0e\x0c\x02" \xae \x02 \xdc END
-CSCE SCE226_008 \xa8\x10 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \xdcp\x01\x0c"\x03\xa4
+FLG3 Z\x0e\x0c FLG3_SET \xae \x02 \xdc END
+CSCE SCE226_008 \xa8\x10 SCE_DONE 
+FLG3 \x8c\x01 FLG2 \xdcp\x01 FLG2_SET \x03\xa4
  
 紅葉\n　「そんなものがくるって保証はどこにもないじゃない！@
 　　それに、ここにいたってこのままじゃおかしくなっちゃう！@
@@ -115,10 +107,9 @@ FLAG\x02 \xdcp\x01\x0c"\x03\xa4
 しばらくしてから放たれた言葉は、かすれ、震えていた。\
 
   
-FLAG \xec\x10\x0c\x02" \xae \x02 \xdc END
-CSCE SCE226_009 \xb6\x13 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \xe0p\x01\x0c"\x03u
+FLG3 \xec\x10\x0c FLG3_SET \xae \x02 \xdc END
+CSCE SCE226_009 \xb6\x13 SCE_DONE 
+FLG3 \x8c\x01 FLG2 \xe0p\x01 FLG2_SET \x03u
  
 紅葉\n　「……雲居さん。\pいまは大丈夫？」@
 \nなたねはなにも応えない。\pただ小さくクククと笑っただけだ。@
@@ -131,10 +122,9 @@ FLAG\x02 \xe0p\x01\x0c"\x03u
 \nついになたねが笑いを爆発させた。\pガラガラとした声で、低く低\nく叫んだ。\
 
   
-FLAG \xfa\x13\x0c\x02" \xae \x02 \xdc END
-CSCE SCE226_010 \x08\x16 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \xe4p\x01\x0c"\x03\x9e
+FLG3 \xfa\x13\x0c FLG3_SET \xae \x02 \xdc END
+CSCE SCE226_010 \x08\x16 SCE_DONE 
+FLG3 \x8c\x01 FLG2 \xe4p\x01 FLG2_SET \x03\x9e
  
 なたね\n　「ワハハハ、ウワッハハハハハッハハハハハハハハ！@
 　　そうよ、ない！\p　最終波動なんてない！\p　自殺波動もない！@
@@ -148,6 +138,6 @@ FLAG\x02 \xe4p\x01\x0c"\x03\x9e
 紅葉はその晩、ずっと小さく泣き続けていた。\
 
   
-FLAG L\x16\x0c\x02" \xae \x02 \xdc END \x12\x01 \x02
+FLG3 L\x16\x0c FLG3_SET \xae \x02 \xdc END \x12\x01 \x02
 CMD1 StopCD RUNF \n\x19 END \xae \x02
 CSCE TextClosev\x81\x1f2\x19 END6\xf1

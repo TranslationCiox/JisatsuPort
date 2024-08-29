@@ -1,14 +1,13 @@
 START
 \xaa\n\x01`B#\x01d\x08  
-FLAG H\x0c\x02"
+FLG3 H\x0c FLG3_SET
 FOBT .\\Data\\Script\\Bg.Fobsv\x81\x1f  \x02
 CMD2 BgAutoFadeInsv\x81\x1fJ END  
-FLAG \x05\x01\x0c\x02"
+FLG3 \x05\x01\x0c FLG3_SET
 FOBT .\\Data\\Script\\Bgm.Fobv\x81\x1f\x88 \x02
 CMD1 PlayCD RUNF \xb2 END
-CSCE SCE005_001 \xce \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 p\x17\x0c"\x03H
+CSCE SCE005_001 \xce SCE_DONE 
+FLG3 \x8c\x01 FLG2 p\x17 FLG2_SET \x03H
  
 早桃\n　「……おにいちゃん？」@
 \n枕から軽く頭を持ち上げて、足元を見る。@
@@ -18,12 +17,11 @@ FLAG\x02 p\x17\x0c"\x03H
 なぜなら夜風なんか、これっぽっちも吹いていないじゃないか。\
 
   
-FLAG \x12\x01\x0c\x02"
+FLG3 \x12\x01\x0c FLG3_SET
 WHAT .\\Data\\Script\\TextFunc.Fob RUNF R\x02 \x02
 CMD1 TextOn RUNF \x80\x02 END
-CSCE SCE005_002 \x9c\x02 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 t\x17\x0c"\x03^
+CSCE SCE005_002 \x9c\x02 SCE_DONE 
+FLG3 \x8c\x01 FLG2 t\x17 FLG2_SET \x03^
  
 拓司\n　「……妄想か？」@
 \n拓司の問いには応えず、早桃は抑揚のない口調でいった。@
@@ -37,10 +35,9 @@ FLAG\x02 t\x17\x0c"\x03^
 早桃\n　「たぶん」\
 
   
-FLAG \xe0\x02\x0c\x02" R\x02 \x02 \x80\x02 END
-CSCE SCE005_003 \x92\x04 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 x\x17\x0c"\x03\xa8
+FLG3 \xe0\x02\x0c FLG3_SET R\x02 \x02 \x80\x02 END
+CSCE SCE005_003 \x92\x04 SCE_DONE 
+FLG3 \x8c\x01 FLG2 x\x17 FLG2_SET \x03\xa8
  
 早桃から立ち上る熱気のようなものが、重い夏の空気を微かに歪\nませている。@
 くちびるはわずかに開き、つるりと光っている。@
@@ -55,11 +52,11 @@ FLAG\x02 x\x17\x0c"\x03\xa8
 早桃はそれを自分の鼻先に持っていき、すうっと、息を吸い込ん\nだ。\
 
   
-FLAG \xd6\x04\x0c\x02" R\x02 \x02 \x80\x02 END\x03\x14
+FLG3 \xd6\x04\x0c FLG3_SET R\x02 \x02 \x80\x02 END\x03\x14
 CHOICE
 「……出て行け」と拓司はいった\n「……来いよ」と拓司はいった\n\l0,2,
 ENDCHOICE
 
   
-FLAG \xb0\x07\x0c\x02" R\x02 \x02 \x80\x02 END R\x02 \x02
+FLG3 \xb0\x07\x0c FLG3_SET R\x02 \x02 \x80\x02 END R\x02 \x02
 CSCE TextClosev\x81\x1fF\x08 END6\xf1

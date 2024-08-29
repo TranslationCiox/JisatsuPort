@@ -1,11 +1,10 @@
 START
 \xc5\x05\x01\xa4\t3\x01\xba\x04
-CSCE SCE061_001 \x06 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \xf0n\x0c"  
-FLAG \x02\x0c\x02"  \x04
-FLAG \x1a\x0c\x02"  \x08
-FLAG \x01\x0c\x02"
+CSCE SCE061_001 \x06 SCE_DONE 
+FLG3 \x8c\x01 FLG2 \xf0n FLG2_SET   
+FLG3 \x02\x0c FLG3_SET  \x04
+FLG3 \x1a\x0c FLG3_SET  \x08
+FLG3 \x01\x0c FLG3_SET
 FOBT .\\Data\\Script\\Bgm.Fobv\x81\x1f\x98 \x02
 CMD1 SePlay RUNF \xc2 END\x03\\
  
@@ -20,23 +19,22 @@ CMD1 SePlay RUNF \xc2 END\x03\\
 なたね\n　「死の話」\
 
   
-FLAG \xde\x0c\x02"
+FLG3 \xde\x0c FLG3_SET
 WHAT .\\Data\\Script\\TextFunc.Fob RUNF n\x02 \x02
 CMD1 TextOn RUNF \x9c\x02 END  
-FLAG \x02\x0c\x02" \x98 \x02
+FLG3 \x02\x0c FLG3_SET \x98 \x02
 CMD1 SeStop RUNF \xde\x02 END  
-FLAG <\x0c\x02"
+FLG3 <\x0c FLG3_SET
 WHAT .\\Data\\Script\\TextFunc.fob RUNF \x14\x03 \x02
 CSCE WaitTimesv\x81\x1fB\x03 END
-CSCE SCE061_002 b\x03 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \xf4n\x0c"\x03\x12
+CSCE SCE061_002 b\x03 SCE_DONE 
+FLG3 \x8c\x01 FLG2 \xf4n FLG2_SET \x03\x12
  
 拓司\n　「早桃は廊下で待っていろ。\p雲居さんは……一緒に頼む」\
 
   
-FLAG \xa6\x03\x0c\x02" n\x02 \x02 \x9c\x02 END  
-FLAG \xc9\x0c\x02"
+FLG3 \xa6\x03\x0c FLG3_SET n\x02 \x02 \x9c\x02 END  
+FLG3 \xc9\x0c FLG3_SET
 FOBT .\\Data\\Script\\Bg.Fobsv\x81\x1fB\x04 \x02
 CMD2 BgAutoFadeInsv\x81\x1fl\x04 END n\x02 \x02
 CSCE TextClosev\x81\x1f\x9c\x04 END6\xf1

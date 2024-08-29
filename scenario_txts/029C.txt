@@ -1,8 +1,7 @@
 START
 \x92\x03\x01P\x044\x01\xe2\x02
-CSCE SCE029_001 \x06 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \xf0<\x0c"\x03\x81
+CSCE SCE029_001 \x06 SCE_DONE 
+FLG3 \x8c\x01 FLG2 \xf0< FLG2_SET \x03\x81
  
 拓司はカンナの教室をのぞき込んだ。@
 予想に反して、すぐに目があった。@
@@ -16,7 +15,7 @@ FLAG\x02 \xf0<\x0c"\x03\x81
 \n返事を待つ様子もなくカンナは足早に廊下を歩み去っていった。\
 
   
-FLAG J\x0c\x02"
+FLG3 J\x0c FLG3_SET
 WHAT .\\Data\\Script\\TextFunc.Fob RUNF n\x02 \x02
 CMD1 TextOn RUNF \x9c\x02 END n\x02 \x02
 CSCE TextClosev\x81\x1f\xc4\x02 END6\xf1

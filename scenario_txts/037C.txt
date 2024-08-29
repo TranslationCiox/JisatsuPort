@@ -1,11 +1,10 @@
 START
 \t\x17\x01`B#\x01X\x12  
-FLAG \x08\x01\x0c\x02"
+FLG3 \x08\x01\x0c FLG3_SET
 FOBT .\\Data\\Script\\Bgm.Fobv\x81\x1f  \x02
 CMD1 PlayCD RUNF J END
-CSCE SCE037_001 f \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 pI\x0c"\x03\x8f
+CSCE SCE037_001 f SCE_DONE 
+FLG3 \x8c\x01 FLG2 pI FLG2_SET \x03\x8f
  
 　屋上は一般学生の立ち入りが禁じられ、階段と屋上を繋ぐ鉄の\n扉には錠が下ろされている。@
 　拓司が自由に出入りしているのは、合い鍵を持っているから\nだ。@
@@ -19,12 +18,11 @@ FLAG\x02 pI\x0c"\x03\x8f
 　光景。\
 
   
-FLAG \xaa\x0c\x02"
+FLG3 \xaa\x0c FLG3_SET
 WHAT .\\Data\\Script\\TextFunc.Fob RUNF \x06\x03 \x02
 CMD1 TextOn RUNF 4\x03 END
-CSCE SCE037_002 P\x03 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 tI\x0c"\x03W
+CSCE SCE037_002 P\x03 SCE_DONE 
+FLG3 \x8c\x01 FLG2 tI FLG2_SET \x03W
  
 　世界の輪郭がぼやけ始めたころ、拓司は何時間も屋上に寝転が\nって空を見上げたものだった。@
 　そこに、現実を現実以下のものにしてしまった欠落が、妄想を\n妄想以上のものにしてしまった過剰が……@
@@ -34,10 +32,9 @@ FLAG\x02 tI\x0c"\x03W
 光景がそこにあった。\
 
   
-FLAG \x94\x03\x0c\x02" \x06\x03 \x02 4\x03 END
-CSCE SCE037_003 *\x05 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 xI\x0c"\x03F
+FLG3 \x94\x03\x0c FLG3_SET \x06\x03 \x02 4\x03 END
+CSCE SCE037_003 *\x05 SCE_DONE 
+FLG3 \x8c\x01 FLG2 xI FLG2_SET \x03F
  
 早桃\n　「わあ、気持ちいい！」@
 拓司\n　「……」@
@@ -49,10 +46,9 @@ FLAG\x02 xI\x0c"\x03F
 早桃\n　「ふふふ！」\
 
   
-FLAG n\x05\x0c\x02" \x06\x03 \x02 4\x03 END
-CSCE SCE037_004 \xc0\x06 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 |I\x0c"\x03c
+FLG3 n\x05\x0c FLG3_SET \x06\x03 \x02 4\x03 END
+CSCE SCE037_004 \xc0\x06 SCE_DONE 
+FLG3 \x8c\x01 FLG2 |I FLG2_SET \x03c
  
 　拓司と早桃は、給水塔の陰に、並んで腰を下ろした。@
 早桃がコッペパンを半分にちぎり、やや大きい方を拓司に「はい」\nと手渡す。@
@@ -63,10 +59,9 @@ FLAG\x02 |I\x0c"\x03c
 拓司\n　「いいからそっちよこせ！」\
 
   
-FLAG \x04\x07\x0c\x02" \x06\x03 \x02 4\x03 END
-CSCE SCE037_005 \xca\x08 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \x80I\x0c"\x03C
+FLG3 \x04\x07\x0c FLG3_SET \x06\x03 \x02 4\x03 END
+CSCE SCE037_005 \xca\x08 SCE_DONE 
+FLG3 \x8c\x01 FLG2 \x80I FLG2_SET \x03C
  
 早桃\n　「やだ！　もう！\p　うふふ……」@
 拓司\n　「ははは」@
@@ -77,10 +72,9 @@ FLAG\x02 \x80I\x0c"\x03C
 拓司\n　「……」\
 
   
-FLAG \x0e\t\x0c\x02" \x06\x03 \x02 4\x03 END
-CSCE SCE037_006 T\n \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \x84I\x0c"\x03A
+FLG3 \x0e\t\x0c FLG3_SET \x06\x03 \x02 4\x03 END
+CSCE SCE037_006 T\n SCE_DONE 
+FLG3 \x8c\x01 FLG2 \x84I FLG2_SET \x03A
  
 早桃\n　「……」@
 拓司\n　「……」@
@@ -90,13 +84,12 @@ FLAG\x02 \x84I\x0c"\x03A
 拓司\n　「はは……うっ！」\
 
   
-FLAG \x98\n\x0c\x02" \x06\x03 \x02 4\x03 END  
-FLAG \xc8\x0c\x02"
+FLG3 \x98\n\x0c FLG3_SET \x06\x03 \x02 4\x03 END  
+FLG3 \xc8\x0c FLG3_SET
 FOBT .\\Data\\Script\\Bg.Fobsv\x81\x1f\xf0\x0b \x02
 CMD1 BgOnsv\x81\x1f\x1a\x0c END
-CSCE SCE037_007 6\x0c \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \x88I\x0c"\x03I
+CSCE SCE037_007 6\x0c SCE_DONE 
+FLG3 \x8c\x01 FLG2 \x88I FLG2_SET \x03I
  
 早桃\n　「えっ、、お、おにいちゃん？！」@
 拓司\n　「うううっ！　\pの、喉が……苦し……」@
@@ -108,10 +101,9 @@ FLAG\x02 \x88I\x0c"\x03I
 早桃\n　「……」\
 
   
-FLAG z\x0c\x0c\x02" \x06\x03 \x02 4\x03 END
-CSCE SCE037_008 \xd8\r \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \x8cI\x0c"\x03s
+FLG3 z\x0c\x0c FLG3_SET \x06\x03 \x02 4\x03 END
+CSCE SCE037_008 \xd8\r SCE_DONE 
+FLG3 \x8c\x01 FLG2 \x8cI FLG2_SET \x03s
  
 拓司\n　「……」@
 /*■CG13　表示（クロスフェード）*/\a7,-1,-1,0,\a0,12,1,0,\a6,0,0,0,早桃\n　「早桃パンチ！」@
@@ -123,11 +115,10 @@ FLAG\x02 \x8cI\x0c"\x03s
 　遠くから、ぼんやりとサッカーをしている学生たちの声が聞こ\nえた。\
 
   
-FLAG \x1c\x0e\x0c\x02" \x06\x03 \x02 4\x03 END  
-FLAG \xc8\x0c\x02" \xf0\x0b \x02 \x1a\x0c END
-CSCE SCE037_009 V\x10 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \x90I\x0c"\x038
+FLG3 \x1c\x0e\x0c FLG3_SET \x06\x03 \x02 4\x03 END  
+FLG3 \xc8\x0c FLG3_SET \xf0\x0b \x02 \x1a\x0c END
+CSCE SCE037_009 V\x10 SCE_DONE 
+FLG3 \x8c\x01 FLG2 \x90I FLG2_SET \x038
  
 早桃\n　「おにいちゃん？」@
 拓司\n　「ああ？」@
@@ -138,11 +129,11 @@ FLAG\x02 \x90I\x0c"\x038
 早桃\n　「……どうしてかな？」\
 
   
-FLAG \x9a\x10\x0c\x02" \x06\x03 \x02 4\x03 END\x03\x10
+FLG3 \x9a\x10\x0c FLG3_SET \x06\x03 \x02 4\x03 END\x03\x10
 CHOICE
 話題を逸らす\n早桃はどうなんだ、と逆に問い返す\n\l0,2,
 ENDCHOICE
 
   
-FLAG \xb4\x11\x0c\x02" \x06\x03 \x02 4\x03 END \x06\x03 \x02
+FLG3 \xb4\x11\x0c FLG3_SET \x06\x03 \x02 4\x03 END \x06\x03 \x02
 CSCE TextClosev\x81\x1f:\x12 END6\xf1

@@ -72,6 +72,12 @@ patterns = [
         "pattern": [b'\x1e', b'\x02', b'5'],  # Seems to END command statements.
         "action": " END"
     },
+
+    {
+        "pattern": [b'\x02', b'\xef', b'!'],  # Seems to END CSCE statements.
+        "action": "SCE_DONE"
+    },
+
     {
         "pattern": [b'\x1e'],  # Likely a  delimiter (group)
         "action": " "
@@ -85,16 +91,28 @@ patterns = [
         "action": " RUNF "
     },
     {
-        "pattern": [b'\r', b',', b'\x02'], # Seems to be related to flags. Maybe to read them?
-        "action": "\nLOAD_FLAG "
+        "pattern": [b'\r', b',', b'\x02'],  # Some kind of COMMAND
+        "action": "\nFLG1 "
     },
     {
-        "pattern": [b'\r'],  # Seems to be related to flags.
-        "action": "\nFLAG"
+        "pattern": [b'\r', b'\x02'],  # Some kind of COMMAND.
+        "action": " FLG2"
+    },
+    {
+        "pattern": [b'\x0c', b'"'],  # Seems to be related to FLG2
+        "action": " FLG2_SET "
+    },
+    {
+        "pattern": [b'\r'],  # Some kind of COMMAND
+        "action": "\nFLG3"
+    },
+    {
+        "pattern": [b'\x02', b'"'],  # Seems to be related to FLG3
+        "action": " FLG3_SET"
     },
     {
         "pattern": [b'j'],  # Seems to indicate if a SCENARIO has a choice (flag).
-        "action": "FLAG_PRESENT"
+        "action": "CHOICE_PRESENT"
     },
 ]
 

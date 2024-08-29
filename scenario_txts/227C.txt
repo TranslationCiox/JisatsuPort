@@ -1,18 +1,16 @@
 START
 \xea\x1b\x01`B#\x01 \x17
-CSCE SCE227_001 \x06 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 Pr\x01\x0c"\x03\x11
+CSCE SCE227_001 \x06 SCE_DONE 
+FLG3 \x8c\x01 FLG2 Pr\x01 FLG2_SET \x03\x11
  
 \n\n\n\n\n\n\n\n\n\n　　　　　　　　　　　　　『１３日目』\
 
   
-FLAG J\x0c\x02"
+FLG3 J\x0c FLG3_SET
 WHAT .\\Data\\Script\\TextFunc.Fob RUNF \xae \x02
 CMD1 TextOn RUNF \xdc END
-CSCE SCE227_002 \xf8 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 Tr\x01\x0c"\x03u
+CSCE SCE227_002 \xf8 SCE_DONE 
+FLG3 \x8c\x01 FLG2 Tr\x01 FLG2_SET \x03u
  
 朝。@
 トイレを使うために実験室に現れた錦城に、カンナがいった。@
@@ -25,10 +23,9 @@ FLAG\x02 Tr\x01\x0c"\x03u
 努めて無表情のカンナを、錦城は勝ち誇って見下ろした。\
 
   
-FLAG <\x01\x0c\x02" \xae \x02 \xdc END
-CSCE SCE227_003 J\x03 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 Xr\x01\x0c"\x03]
+FLG3 <\x01\x0c FLG3_SET \xae \x02 \xdc END
+CSCE SCE227_003 J\x03 SCE_DONE 
+FLG3 \x8c\x01 FLG2 Xr\x01 FLG2_SET \x03]
  
 錦城\n　「あら、昨日はあんなにつっぱってたのに。どういう風の吹き\n　　回し？」@
 カンナ\n　「行きますから、そのかわり、食糧を約束通り配ってください」\n\p錦城\n　「……ふぅん」@
@@ -39,10 +36,9 @@ FLAG\x02 Xr\x01\x0c"\x03]
 カンナ\n　「……すみませんでした」\
 
   
-FLAG \x8e\x03\x0c\x02" \xae \x02 \xdc END
-CSCE SCE227_004 <\x05 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \\r\x01\x0c"\x03S
+FLG3 \x8e\x03\x0c FLG3_SET \xae \x02 \xdc END
+CSCE SCE227_004 <\x05 SCE_DONE 
+FLG3 \x8c\x01 FLG2 \\r\x01 FLG2_SET \x03S
  
 錦城\n　「それだけ？」@
 カンナ\n　「今後は秩序を乱すような行動は慎みます」@
@@ -54,10 +50,9 @@ FLAG\x02 \\r\x01\x0c"\x03S
 カンナ\n　「便器って－－」\
 
   
-FLAG \x80\x05\x0c\x02" \xae \x02 \xdc END
-CSCE SCE227_005 \x06\x07 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 `r\x01\x0c"\x03u
+FLG3 \x80\x05\x0c FLG3_SET \xae \x02 \xdc END
+CSCE SCE227_005 \x06\x07 SCE_DONE 
+FLG3 \x8c\x01 FLG2 `r\x01 FLG2_SET \x03u
  
 錦城\n　「そのままの意味だけれど。\pいまから、先生のおしっこを飲ん\n　　でくれればそれでいいの」@
 カンナ\n　「な、なにを－－！」@
@@ -71,10 +66,9 @@ FLAG\x02 `r\x01\x0c"\x03u
 錦城\n　「便器」\
 
   
-FLAG J\x07\x0c\x02" \xae \x02 \xdc END
-CSCE SCE227_006 X\t \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 dr\x01\x0c"\x03n
+FLG3 J\x07\x0c FLG3_SET \xae \x02 \xdc END
+CSCE SCE227_006 X\t SCE_DONE 
+FLG3 \x8c\x01 FLG2 dr\x01 FLG2_SET \x03n
  
 錦城は意地悪く言い直した。\p机に腰をかけ、見せつけるように足\nを組む。@
 \n錦城\n　「トイレじゃなくて便器でしょ？\p　きちんといいなおして」@
@@ -86,10 +80,9 @@ FLAG\x02 dr\x01\x0c"\x03n
 カンナ\n　「……よ、喜んで錦城先生の人間便器になります」\
 
   
-FLAG \x9c\t\x0c\x02" \xae \x02 \xdc END
-CSCE SCE227_007 \x8e\x0b \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 hr\x01\x0c"\x03y
+FLG3 \x9c\t\x0c FLG3_SET \xae \x02 \xdc END
+CSCE SCE227_007 \x8e\x0b SCE_DONE 
+FLG3 \x8c\x01 FLG2 hr\x01 FLG2_SET \x03y
  
 錦城\n　「『お願いします。\p私におしっこしてください』」@
 カンナ\n　「お願い……します。\p私におしっこして……ください」@
@@ -101,13 +94,12 @@ FLAG\x02 hr\x01\x0c"\x03y
 カンナ\n　「黙っていて。\p大丈夫だから。\pこんなの、なんでもないから」\
 
   
-FLAG \xd2\x0b\x0c\x02" \xae \x02 \xdc END  
-FLAG \x05\x01\x0c\x02"
+FLG3 \xd2\x0b\x0c FLG3_SET \xae \x02 \xdc END  
+FLG3 \x05\x01\x0c FLG3_SET
 FOBT .\\Data\\Script\\Bgm.Fobv\x81\x1f\n\x0e \x02
 CMD1 PlayCD RUNF 4\x0e END
-CSCE SCE227_008 P\x0e \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 lr\x01\x0c"\x03\xa1
+CSCE SCE227_008 P\x0e SCE_DONE 
+FLG3 \x8c\x01 FLG2 lr\x01 FLG2_SET \x03\xa1
  
 錦城は、目を逸らさないように、と全員に命じた。@
 見せつけるように下着を脱ぎ、足を開く。@
@@ -117,10 +109,9 @@ FLAG\x02 lr\x01\x0c"\x03\xa1
 /*■HCG18　表示（クロスフェード）*/\a7,-2,-2,0,\a0,89,2,0,\a6,-2,0,0,\n錦城\n　「しっかりみておくのよ。\p誰か一人でも目を反らした場合、彼\n　　女の努力は無駄になりますからね？\p　いい、これは授業なの。\n　　\p生意気な態度をとったガキがどうなるか、それを教えてあげ\n　　ているの。\pほら、便器ちゃん。はやく口をつけなさいよ！」\
 
   
-FLAG \x94\x0e\x0c\x02" \xae \x02 \xdc END
-CSCE SCE227_009 R\x11 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 pr\x01\x0c"\x03\x8a
+FLG3 \x94\x0e\x0c FLG3_SET \xae \x02 \xdc END
+CSCE SCE227_009 R\x11 SCE_DONE 
+FLG3 \x8c\x01 FLG2 pr\x01 FLG2_SET \x03\x8a
  
 錦城の足のあいだにひざまづき、カンナは目を閉じ、口を開いた。\n\pその口が自分の性器に密着したのを確認してから、錦城は整った\n顔をわずかにゆがめた。@
 放尿が始まった。@
@@ -132,18 +123,17 @@ FLAG\x02 pr\x01\x0c"\x03\x8a
 カンナ\n　「くむ……ごきゅっ……ごきゅ……むぐんん……」\
 
   
-FLAG \x96\x11\x0c\x02" \xae \x02 \xdc END
-CSCE SCE227_010 \xf8\x13 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 tr\x01\x0c"\x03|
+FLG3 \x96\x11\x0c FLG3_SET \xae \x02 \xdc END
+CSCE SCE227_010 \xf8\x13 SCE_DONE 
+FLG3 \x8c\x01 FLG2 tr\x01 FLG2_SET \x03|
  
 錦城\n　「あら、涙流して喜んでるの？\p　あははは、まったくもう、ど\n　　ういう教育を受けてきたのかしら？\p　このままじゃ将来ロク\n　　な大人にはならないわ。\pいまのうちにしっかり便器として教\n　　育しておいたほうがよさそうね。\pそうすれば就職はお便所に\n　　決定。\p進路指導も楽でいいわ、あはははは！」@
 \n嚥下しきれない尿が、カンナの口の端からボタボタと流れ落ちる。\n\pスカートの上に、錦城の汚液が染みをつくる。@
 錦城はカンナの頭を両手で固定し、狂気に支配された顔で笑い続\nけた。\
 
   
-FLAG <\x14\x0c\x02" \xae \x02 \xdc END  
-FLAG \xc8\x0c\x02"
+FLG3 <\x14\x0c FLG3_SET \xae \x02 \xdc END  
+FLG3 \xc8\x0c FLG3_SET
 FOBT .\\Data\\Script\\Bg.Fobsv\x81\x1f\x80\x16 \x02
 CMD2 BgAutoFadeInsv\x81\x1f\xaa\x16 END \n\x0e \x02
 CMD1 StopCD RUNF \xda\x16 END \xae \x02

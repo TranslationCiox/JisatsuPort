@@ -1,11 +1,10 @@
 START
 ;8\x01`B#\x01n/  
-FLAG \n\x01\x0c\x02"
+FLG3 \n\x01\x0c FLG3_SET
 FOBT .\\Data\\Script\\Bgm.Fobv\x81\x1f  \x02
 CMD1 PlayCD RUNF J END
-CSCE SCE048_001 f \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \xa0Z\x0c"\x03\x8b
+CSCE SCE048_001 f SCE_DONE 
+FLG3 \x8c\x01 FLG2 \xa0Z FLG2_SET \x03\x8b
  
 　トイレに入った途端、背後から御堂に羽交い締めにされた。@
 　警戒はしていたつもりだったが、多少なりともなんらかのやり\n　とりがあると思っていたのがアダになった。\pまったく抵抗する\n　こともできず、あっというまに自由を奪われる。@
@@ -17,15 +16,14 @@ FLAG\x02 \xa0Z\x0c"\x03\x8b
 　　いいか、てめえに面白いもの見せてやるぜ！　……オイ、早\n　　くやれ！」\
 
   
-FLAG \xaa\x0c\x02"
+FLG3 \xaa\x0c FLG3_SET
 WHAT .\\Data\\Script\\TextFunc.Fob RUNF \xf6\x02 \x02
 CMD1 TextOn RUNF $\x03 END  
-FLAG T\x0c\x02"
+FLG3 T\x0c FLG3_SET
 FOBT .\\Data\\Script\\Bg.Fobsv\x81\x1fZ\x03 \x02
 CMD2 BgAutoFadeInsv\x81\x1f\x84\x03 END
-CSCE SCE048_002 \xa8\x03 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \xa4Z\x0c"\x03\x98
+CSCE SCE048_002 \xa8\x03 SCE_DONE 
+FLG3 \x8c\x01 FLG2 \xa4Z FLG2_SET \x03\x98
  
 \n　御堂が命じると、取り巻きたちが次々とベルトを外し始めた。@
 　何事かと見守っていると、驚いたことに、取り巻きたちはズボ\n　ンをおろして、硬くなったペ○スをむき出しにし始めたではな\n　いか。@
@@ -36,10 +34,9 @@ FLAG\x02 \xa4Z\x0c"\x03\x98
 　トイレの床は湿気で不潔に湿っているが、なたねはそんなこと\n　は気にかける様子もない。\p足をハの字にして、ぺったりと腰を\n　下ろしてしまった。\
 
   
-FLAG \xec\x03\x0c\x02" \xf6\x02 \x02 $\x03 END
-CSCE SCE048_003 \x86\x06 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \xa8Z\x0c"\x03_
+FLG3 \xec\x03\x0c FLG3_SET \xf6\x02 \x02 $\x03 END
+CSCE SCE048_003 \x86\x06 SCE_DONE 
+FLG3 \x8c\x01 FLG2 \xa8Z FLG2_SET \x03_
  
 取り巻き\n　「よし、はじめるよ、なたねちゃん。\pその前に、いつもの、言\n　　ってみようか？」@
 なたね\n　「……」@
@@ -50,10 +47,9 @@ FLAG\x02 \xa8Z\x0c"\x03_
 取り巻き\n　「……」\
 
   
-FLAG \xca\x06\x0c\x02" \xf6\x02 \x02 $\x03 END
-CSCE SCE048_004 \x80\x08 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \xacZ\x0c"\x03\x9c
+FLG3 \xca\x06\x0c FLG3_SET \xf6\x02 \x02 $\x03 END
+CSCE SCE048_004 \x80\x08 SCE_DONE 
+FLG3 \x8c\x01 FLG2 \xacZ FLG2_SET \x03\x9c
  
 なたね\n　「……どうか優等生の雲居なたねに、おち○ちんのことをお\n　　勉強させてください」@
 取り巻き\n　「ハイ、よくいえました！」@
@@ -66,10 +62,9 @@ FLAG\x02 \xacZ\x0c"\x03\x9c
 　４本のペ○スをこすりつけられながら、なたねはだらしなく笑\n　っていた。\
 
   
-FLAG \xc4\x08\x0c\x02" \xf6\x02 \x02 $\x03 END
-CSCE SCE048_005 n\x0b \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \xb0Z\x0c"\x03\xb3
+FLG3 \xc4\x08\x0c FLG3_SET \xf6\x02 \x02 $\x03 END
+CSCE SCE048_005 n\x0b SCE_DONE 
+FLG3 \x8c\x01 FLG2 \xb0Z FLG2_SET \x03\xb3
  
 \nセックスというものが、快感を得て射精をすることとだとするな\nらば、取り巻きたちのそれは、セックスとはいえなかった。@
 ペ○スをひたすら顔にこすりつけている。@
@@ -80,10 +75,9 @@ FLAG\x02 \xb0Z\x0c"\x03\xb3
 取り巻きのひとりが、なたねの髪の毛にペ○スの先端をこすりつ\nけ始めた。\pそれを合図に、顎から首に掛けて、眼鏡のレンズに\n、耳の穴にと、亀頭がこすりつけられる。\pカウパー液が漏れ始\nめたのか、うっすらとナメクジの這ったあとのような軌跡が、あ\nちらこちらに残っている。\
 
   
-FLAG \xb2\x0b\x0c\x02" \xf6\x02 \x02 $\x03 END
-CSCE SCE048_006 \xb8\x0e \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \xb4Z\x0c"\x03\xaf
+FLG3 \xb2\x0b\x0c FLG3_SET \xf6\x02 \x02 $\x03 END
+CSCE SCE048_006 \xb8\x0e SCE_DONE 
+FLG3 \x8c\x01 FLG2 \xb4Z FLG2_SET \x03\xaf
  
 御堂\n　「どうよ？　面白いだろ？　匂い付けだよ」@
 拓司\n　「……」@
@@ -95,10 +89,9 @@ FLAG\x02 \xb4Z\x0c"\x03\xaf
 御堂\n　「敢えてフェラチオとかホンバンとかしないでさ、単なるこす\n　　りつけの道具に……スペルマの的にするっていうのも、ちょ\n　　っといかれてて燃えねえか？\p　女にとっても、すげえ屈辱的\n　　だろ？\p　まあ、なたねちゃんはなんだかよくわかってないみ\n　　たいだけどな、くっくっく」\
 
   
-FLAG \xfc\x0e\x0c\x02" \xf6\x02 \x02 $\x03 END
-CSCE SCE048_007 \xf2\x11 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \xb8Z\x0c"\x03\xb4
+FLG3 \xfc\x0e\x0c FLG3_SET \xf6\x02 \x02 $\x03 END
+CSCE SCE048_007 \xf2\x11 SCE_DONE 
+FLG3 \x8c\x01 FLG2 \xb8Z FLG2_SET \x03\xb4
  
 \nセックスの対象としてすら認めてもらえず、単なるモノとして扱\nわれる少女……。@
 あまりにも非道な行為だったが、拓司はあまり衝撃を受けること\nもなく、平然とそれを受け止めている自分に、やや驚いた。@
@@ -111,10 +104,9 @@ FLAG\x02 \xb8Z\x0c"\x03\xb4
 取り巻きたちの息が、徐々に荒くなっていった。\
 
   
-FLAG 6\x12\x0c\x02" \xf6\x02 \x02 $\x03 END
-CSCE SCE048_008 @\x15 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \xbcZ\x0c"\x03U
+FLG3 6\x12\x0c FLG3_SET \xf6\x02 \x02 $\x03 END
+CSCE SCE048_008 @\x15 SCE_DONE 
+FLG3 \x8c\x01 FLG2 \xbcZ FLG2_SET \x03U
  
 取り巻き\n　「……め、眼鏡とれよ」@
 取り巻き\n　「いいじゃねえか、そのままぶっかけてやろうぜ？」@
@@ -125,21 +117,19 @@ FLAG\x02 \xbcZ\x0c"\x03U
 取り巻き\n　「うっ！」\
 
   
-FLAG \x84\x15\x0c\x02" \xf6\x02 \x02 $\x03 END
-CSCE SCE048_009 \x12\x17 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \xc0Z\x0c"\x03D
+FLG3 \x84\x15\x0c FLG3_SET \xf6\x02 \x02 $\x03 END
+CSCE SCE048_009 \x12\x17 SCE_DONE 
+FLG3 \x8c\x01 FLG2 \xc0Z FLG2_SET \x03D
  
 とりまきの一人が精液をぶちまけた。\pねっとりとしたかたまりが\nなたねの眼鏡の右レンズに命中し、そこで弾けて髪の毛の先に付\n着した。\pもう一人もなたねの鼻先で発射し、左のレンズを縦断す\nるように精液をへばりつかせた。@
 既視感。@
 妄想世界による現実世界の侵犯。\
 
   
-FLAG V\x17\x0c\x02" \xf6\x02 \x02 $\x03 END  
-FLAG U\x0c\x02" Z\x03 \x02 \x84\x03 END
-CSCE SCE048_010 \xd4\x18 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \xc4Z\x0c"\x03q
+FLG3 V\x17\x0c FLG3_SET \xf6\x02 \x02 $\x03 END  
+FLG3 U\x0c FLG3_SET Z\x03 \x02 \x84\x03 END
+CSCE SCE048_010 \xd4\x18 SCE_DONE 
+FLG3 \x8c\x01 FLG2 \xc4Z FLG2_SET \x03q
  
 取り巻き\n　「Ｗ大狙う天才さんの顔面に、劣等ＤＮＡが炸裂！」@
 取り巻き\n　「精液まみれの優等生なんて、聞いたことねえよ」@
@@ -150,10 +140,9 @@ FLAG\x02 \xc4Z\x0c"\x03q
 取り巻き\n　「ただのアホだよ、これじゃ。げらげら」\
 
   
-FLAG \x18\x19\x0c\x02" \xf6\x02 \x02 $\x03 END
-CSCE SCE048_011 \x16\x1b \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \xc8Z\x0c"\x03d
+FLG3 \x18\x19\x0c FLG3_SET \xf6\x02 \x02 $\x03 END
+CSCE SCE048_011 \x16\x1b SCE_DONE 
+FLG3 \x8c\x01 FLG2 \xc8Z FLG2_SET \x03d
  
 取り巻き\n　「男子便所で両手にチ○ポ握って。お前、痴女か？」@
 取り巻き\n　「パパとママが知ったら悲しむよなあ。\pまさか自慢の娘が痴女\n　　だったなんてヨ」@
@@ -162,10 +151,9 @@ FLAG\x02 \xc8Z\x0c"\x03d
 ただ男たちの欲望の的になっているだけだ。\
 
   
-FLAG Z\x1b\x0c\x02" \xf6\x02 \x02 $\x03 END
-CSCE SCE048_012 $\x1d \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \xccZ\x0c"\x03s
+FLG3 Z\x1b\x0c FLG3_SET \xf6\x02 \x02 $\x03 END
+CSCE SCE048_012 $\x1d SCE_DONE 
+FLG3 \x8c\x01 FLG2 \xccZ FLG2_SET \x03s
  
 取り巻き\n　「おら、休まずこすりつけろよ！」@
 取り巻き\n　「くう……そこらへんの女とは違うよな」@
@@ -178,10 +166,9 @@ FLAG\x02 \xccZ\x0c"\x03s
 取り巻き\n　「同時にひっかけてやろうぜ」\
 
   
-FLAG h\x1d\x0c\x02" \xf6\x02 \x02 $\x03 END
-CSCE SCE048_013 n\x1f \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \xd0Z\x0c"\x03\x83
+FLG3 h\x1d\x0c FLG3_SET \xf6\x02 \x02 $\x03 END
+CSCE SCE048_013 n\x1f SCE_DONE 
+FLG3 \x8c\x01 FLG2 \xd0Z FLG2_SET \x03\x83
  
 取り巻き\n　「おらっ、くらえ！」@
 取り巻き\n　「な、なたねっ！　受け止めろっ！」@
@@ -191,11 +178,10 @@ FLAG\x02 \xd0Z\x0c"\x03\x83
 \n見る見るうちに、なたねの顔はこってりとした精液で覆われてい\nく。\p顎からつららのように精液が糸を引き、頭髪もぺったりと頭\n皮にはりついて惨めである。\p唇と眼鏡、そして鼻先にはとりわけ\n多くの精液が浴びせかけられた。\pもう、どこが口なのかもわから\nない状態だ。\
 
   
-FLAG \xb2\x1f\x0c\x02" \xf6\x02 \x02 $\x03 END   \x02
+FLG3 \xb2\x1f\x0c FLG3_SET \xf6\x02 \x02 $\x03 END   \x02
 CMD1 StopCD RUNF \x04" END
-CSCE SCE048_014  " \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \xd4Z\x0c"\x03z
+CSCE SCE048_014  " SCE_DONE 
+FLG3 \x8c\x01 FLG2 \xd4Z FLG2_SET \x03z
  
 /*▲SE27　再生*/\a2,0,27,0,　ザザ。@
 \a4,0,0,0,\n拓司の耳の奥で、例の音が響いた。@
@@ -207,31 +193,27 @@ FLAG\x02 \xd4Z\x0c"\x03z
 　ザアザアアアアアアア……\
 
   
-FLAG d"\x0c\x02" \xf6\x02 \x02 $\x03 END
-CSCE SCE048_015 \x86$ \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \xd8Z\x0c"\x03_
+FLG3 d"\x0c FLG3_SET \xf6\x02 \x02 $\x03 END
+CSCE SCE048_015 \x86$ SCE_DONE 
+FLG3 \x8c\x01 FLG2 \xd8Z FLG2_SET \x03_
  
 取り巻き\n　「ほら、なたねちゃん。うれしいだろう？」\n取り巻き\n　「なたねちゃん、これ握って」\n取り巻き\n　「なたねちゃん、ちょっと口開いて見せて」\n取り巻き\n　「ほら、なたねちゃん」\n取り巻き\n　「なたねちゃん」\n取り巻き\n　「なたねちゃああん」\n取り巻き\n　「なたねっ」\n取り巻き\n　「なたねえええええ」\n取り巻き\n　「おら」\n取り巻き\n　「ザーメン食らえアホ女！」\w\z
   
-FLAG \xca$\x0c\x02" \xf6\x02 \x02 $\x03 END
-CSCE SCE048_016 \x80& \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \xdcZ\x0c"\x03w
+FLG3 \xca$\x0c FLG3_SET \xf6\x02 \x02 $\x03 END
+CSCE SCE048_016 \x80& SCE_DONE 
+FLG3 \x8c\x01 FLG2 \xdcZ FLG2_SET \x03w
  
 取り巻き\n　「電波女！」\n取り巻き\n　「××××！」\n取り巻き\n　「感謝しろよ」\n取り巻き\n　「おれたちが地球を守ってやるから感謝しろよ。ありがとうご\n　　ざいますって言ってみろ！」\n取り巻き\n　「うわ、糸引きまくりだよ」\n取り巻き\n　「こいつ、鼻の穴からちょうちん出してるぜ！　げらげら」\n取り巻き\n　「ぶくぶくやって見ろよ？　ほら、口の端っこでぶくぶくぶく\n　　ぶく……」\n取り巻き\n　「おおっ、すげえ」\n取り巻き\n　「げらげら。みっともねえツラだなあ、優等生！」\w\z
   
-FLAG \xc4&\x0c\x02" \xf6\x02 \x02 $\x03 END
-CSCE SCE048_017 \xda( \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \xe0Z\x0c"\x03p
+FLG3 \xc4&\x0c FLG3_SET \xf6\x02 \x02 $\x03 END
+CSCE SCE048_017 \xda( SCE_DONE 
+FLG3 \x8c\x01 FLG2 \xe0Z FLG2_SET \x03p
  
 取り巻き\n　「お前なんか相手にしてやるのはおれらくらいなんだからな」\n取り巻き\n　「感謝しろよ」\n取り巻き\n　「ボランティアだな、ボランティア」\n取り巻き\n　「公衆便所が！」\n取り巻き\n　「これで４発目だよぉ、なたねぇ！」\n取り巻き\n　「おうっ！　出る！」\n取り巻き\n　「さすがに薄くなってきたなあ、ザーメンも」\n取り巻き\n　「おれもう水みたいなのしか出ねえよ」\n取り巻き\n　「飲ませれば、こいつに？」\n取り巻き\n　「眼ェ開けろ、電波子！」\w\z
   
-FLAG \x1e)\x0c\x02" \xf6\x02 \x02 $\x03 END
-CSCE SCE048_018 \x18+ \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \xe4Z\x0c"\x03{
+FLG3 \x1e)\x0c FLG3_SET \xf6\x02 \x02 $\x03 END
+CSCE SCE048_018 \x18+ SCE_DONE 
+FLG3 \x8c\x01 FLG2 \xe4Z FLG2_SET \x03{
  
 取り巻き\n　「にしてもくせえなあ」@
 取り巻き\n　「絶対染み込んでるよな、細胞まで」@
@@ -243,17 +225,16 @@ FLAG\x02 \xe4Z\x0c"\x03{
 取り巻き\n　「ちげえよ！　スポイトとかで吸い取ってさ、突っ込んで妊娠\n　　させるの」@
 取り巻き\n　「おもしれえな。誰が父親かは絶対わかんねえよな」\w\z
   
-FLAG \\+\x0c\x02" \xf6\x02 \x02 $\x03 END
-CSCE SCE048_019 \x82- \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \xe8Z\x0c"\x030
+FLG3 \\+\x0c FLG3_SET \xf6\x02 \x02 $\x03 END
+CSCE SCE048_019 \x82- SCE_DONE 
+FLG3 \x8c\x01 FLG2 \xe8Z FLG2_SET \x030
  
 取り巻き\n　「おれら４人の特徴併せ持った子供が産まれたりして」\n取り巻き\n　「げらげらげらげら！　おもしれーよソレ！」\n取り巻き\n　「わはははは！」\n取り巻き\n　「うへへへへへ！」\
 
   
-FLAG \xc6-\x0c\x02" \xf6\x02 \x02 $\x03 END  
-FLAG \x02\x0c\x02"   \x02
+FLG3 \xc6-\x0c FLG3_SET \xf6\x02 \x02 $\x03 END  
+FLG3 \x02\x0c FLG3_SET   \x02
 CMD1 SeStop RUNF \xe6. END  
-FLAG \xc8\x0c\x02" Z\x03 \x02
+FLG3 \xc8\x0c FLG3_SET Z\x03 \x02
 CMD1 BgOnsv\x81\x1f(/ END \xf6\x02 \x02
 CSCE TextClosev\x81\x1fP/ END6\xf1

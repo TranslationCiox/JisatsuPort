@@ -1,8 +1,7 @@
 START
 \xff\x0e\x01`B#\x01\xe4\x0b
-CSCE SCE104_001 \x06 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02  \xb2\x0c"\x03T
+CSCE SCE104_001 \x06 SCE_DONE 
+FLG3 \x8c\x01 FLG2  \xb2 FLG2_SET \x03T
  
 密かに御堂に話を付け、その日の夕方拓司はなたねに詰め寄った。\n@
 拓司\n　「雲居さん。\pきみは物資管理者としてふさわしくない。@
@@ -11,12 +10,11 @@ FLAG\x02  \xb2\x0c"\x03T
 \nなたねは一瞬事態が飲み込めない様子で、説明を求めるようにあ\nたりを見回した。\pしかし、カンナも早桃も紅葉も錦城も、じっ\nと冷たい目で見返すばかり。\
 
   
-FLAG J\x0c\x02"
+FLG3 J\x0c FLG3_SET
 WHAT .\\Data\\Script\\TextFunc.Fob RUNF \xba\x01 \x02
 CMD1 TextOn RUNF \xe8\x01 END
-CSCE SCE104_002 \x04\x02 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 $\xb2\x0c"\x03\x7f
+CSCE SCE104_002 \x04\x02 SCE_DONE 
+FLG3 \x8c\x01 FLG2 $\xb2 FLG2_SET \x03\x7f
  
 なたね\n　「これは、みなさんの総意ですか？」@
 御堂\n　「うるせえ、電波女。\pとっと－－」@
@@ -27,10 +25,9 @@ FLAG\x02 $\xb2\x0c"\x03\x7f
 なたね\n　「物資の管理者に適任なのは、私です」\
 
   
-FLAG H\x02\x0c\x02" \xba\x01 \x02 \xe8\x01 END
-CSCE SCE104_003 ~\x04 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 (\xb2\x0c"\x03D
+FLG3 H\x02\x0c FLG3_SET \xba\x01 \x02 \xe8\x01 END
+CSCE SCE104_003 ~\x04 SCE_DONE 
+FLG3 \x8c\x01 FLG2 (\xb2 FLG2_SET \x03D
  
 拓司\n　「違う！」@
 なたね\n　「私です」@
@@ -39,10 +36,9 @@ FLAG\x02 (\xb2\x0c"\x03D
 \nなたねが突如叫んで、拓司を遮った。\
 
   
-FLAG \xc2\x04\x0c\x02" \xba\x01 \x02 \xe8\x01 END
-CSCE SCE104_004 \x0c\x06 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 ,\xb2\x0c"\x03\xb7
+FLG3 \xc2\x04\x0c FLG3_SET \xba\x01 \x02 \xe8\x01 END
+CSCE SCE104_004 \x0c\x06 SCE_DONE 
+FLG3 \x8c\x01 FLG2 ,\xb2 FLG2_SET \x03\xb7
  
 なたね\n　「だって私が用意したんだから！\p　ここにあるのは全部私のな\n　　だから！\p　さっきから黙って聞いてりゃゴチャゴチャゴチャ\n　　ゴチャゴチャゴチゴチャゴチャゴチャゴチャゴチャゴチャ…\n　　…バカタレが！\p　大バカタレ国民共が！\p　なにもわからない\n　　シロウトのバカタレがなにを偉そうにいってる！\p　私が作っ\n　　たシェルターに住まわしてやってるのに、なんなんだ！@
 　　これまで散々みんなしてコソコソやって、ヒソヒソいってた\n　　くせに、いまになって私に貼り付こうっていうのか？！@
@@ -53,10 +49,9 @@ FLAG\x02 ,\xb2\x0c"\x03\xb7
 なたね\n　「……」\
 
   
-FLAG P\x06\x0c\x02" \xba\x01 \x02 \xe8\x01 END
-CSCE SCE104_005 f\t \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 0\xb2\x0c"\x03[
+FLG3 P\x06\x0c FLG3_SET \xba\x01 \x02 \xe8\x01 END
+CSCE SCE104_005 f\t SCE_DONE 
+FLG3 \x8c\x01 FLG2 0\xb2 FLG2_SET \x03[
  
 御堂\n　「てめえの腹かっさばいてでも、とらせてもらうからな」@
 なたね\n　「やれるもんか！\p　お前ら一般ピープルにそんな覚悟があるも\n　　んか！」@
@@ -67,11 +62,11 @@ FLAG\x02 0\xb2\x0c"\x03[
 御堂\n　「……」\
 
   
-FLAG \xaa\t\x0c\x02" \xba\x01 \x02 \xe8\x01 END\x03\x0c
+FLG3 \xaa\t\x0c FLG3_SET \xba\x01 \x02 \xe8\x01 END\x03\x0c
 CHOICE
 御堂を止める\n黙ってみている\n\l0,2,
 ENDCHOICE
 
   
-FLAG P\x0b\x0c\x02" \xba\x01 \x02 \xe8\x01 END \xba\x01 \x02
+FLG3 P\x0b\x0c FLG3_SET \xba\x01 \x02 \xe8\x01 END \xba\x01 \x02
 CSCE TextClosev\x81\x1f\xc6\x0b END6\xf1

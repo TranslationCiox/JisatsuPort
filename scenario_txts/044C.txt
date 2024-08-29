@@ -1,23 +1,21 @@
 START
 x(\x01`B#\x01\x92!  
-FLAG \xc8\x0c\x02"
+FLG3 \xc8\x0c FLG3_SET
 FOBT .\\Data\\Script\\Bg.Fobsv\x81\x1f  \x02
 CMD2 BgAutoFadeInsv\x81\x1fJ END
-CSCE SCE044_001 n \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 `T\x0c"\x03V
+CSCE SCE044_001 n SCE_DONE 
+FLG3 \x8c\x01 FLG2 `T FLG2_SET \x03V
  
 職員室で、錦城が「これよ」と指さしたダンボール箱は、意外と\n小さかった。@
 ところが、何が詰まっているのか、大きさのわりにズシリと重い。\n\p１階の職員室から４階分の階段を上るのはなかなか骨だった。@
 \n錦城\n　「はいはい頑張って。男の子でしょ？　うふふ……」\n\p拓司\n　「勘弁っすよ……どこまで運ぶんですか？」@
 錦城\n　「理科準備室」\w\z
   
-FLAG \xb2\x0c\x02"
+FLG3 \xb2\x0c FLG3_SET
 WHAT .\\Data\\Script\\TextFunc.Fob RUNF *\x02 \x02
 CMD1 TextOn RUNF X\x02 END
-CSCE SCE044_002 t\x02 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 dT\x0c"\x03y
+CSCE SCE044_002 t\x02 SCE_DONE 
+FLG3 \x8c\x01 FLG2 dT FLG2_SET \x03y
  
 　理科準備室は、旧校舎の最上階、４階にある。@
 ４階－－理科実験室や視聴覚室といった特別教室が並ぶこの階の\n利用価値は、半年前の新校舎完成によってほとんど消え失せてい\nた。@
@@ -26,11 +24,10 @@ FLAG\x02 dT\x0c"\x03y
 \n錦城は鍵を使って理科実験室のドアを開け、拓司をそこに導き入\nれた。@
 締め切られていた実験室の中にはむっと熱気がこもり、息苦しい\nぐらいだった。\w\z
   
-FLAG \xb8\x02\x0c\x02" *\x02 \x02 X\x02 END  
-FLAG \x0f\x0c\x02"   \x02 J END
-CSCE SCE044_003 \n\x05 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 hT\x0c"\x03o
+FLG3 \xb8\x02\x0c FLG3_SET *\x02 \x02 X\x02 END  
+FLG3 \x0f\x0c FLG3_SET   \x02 J END
+CSCE SCE044_003 \n\x05 SCE_DONE 
+FLG3 \x8c\x01 FLG2 hT FLG2_SET \x03o
  
 錦城\n　「ご苦労様。そのへんの隅に置いてくれればいいわ」@
 拓司\n　「よっこら……せっと」@
@@ -42,31 +39,28 @@ FLAG\x02 hT\x0c"\x03o
 錦城\n　「プリント。紙の束が詰まってるのよ」@
 拓司\n　「はあ。でも、いいんですか、こんなところに荷物置いて」\w\z
   
-FLAG N\x05\x0c\x02" *\x02 \x02 X\x02 END
-CSCE SCE044_004 D\x07 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 lT\x0c"\x03L
+FLG3 N\x05\x0c FLG3_SET *\x02 \x02 X\x02 END
+CSCE SCE044_004 D\x07 SCE_DONE 
+FLG3 \x8c\x01 FLG2 lT FLG2_SET \x03L
  
 錦城\n　「いいのよ。ここだけの話だけれど、他の先生方もやっている\n　　ことなの。\pなんでもかんでも置いておくには、職員室は狭\n　　すぎて。\pだから、４階は秘密の物置と化している、と。\n　　そういうわけ」@
 拓司\n　「はあ」@
 錦城\n　「それにね、私、ここ、嫌いじゃないのよ」@
 拓司\n　「え？」\w\z
   
-FLAG \x88\x07\x0c\x02" *\x02 \x02 X\x02 END  
-FLAG \xc8\x0c\x02"   \x02 J END
-CSCE SCE044_005 &\t \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 pT\x0c"\x03?
+FLG3 \x88\x07\x0c FLG3_SET *\x02 \x02 X\x02 END  
+FLG3 \xc8\x0c FLG3_SET   \x02 J END
+CSCE SCE044_005 &\t SCE_DONE 
+FLG3 \x8c\x01 FLG2 pT FLG2_SET \x03?
  
 　錦城はそういって窓まで歩いてゆき、鍵を外して窓をスライド\nさせた。@
 堰を切ったように、爽やかな初夏の風が流れ込んでくる。@
 部屋の中の熱気が、風に圧されて追い出されてゆく。@
 風は、錦城の長い髪をさらさらと揺らして、やがてぴたりと止ん\nだ。\w\z
   
-FLAG j\t\x0c\x02" *\x02 \x02 X\x02 END
-CSCE SCE044_006 \xa0\n \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 tT\x0c"\x03g
+FLG3 j\t\x0c FLG3_SET *\x02 \x02 X\x02 END
+CSCE SCE044_006 \xa0\n SCE_DONE 
+FLG3 \x8c\x01 FLG2 tT FLG2_SET \x03g
  
 錦城\n　「理科実験室って、どこか懐かしい感じがする。@
 　　学生の時にね、実験室で……ふふふ」@
@@ -78,13 +72,12 @@ FLAG\x02 tT\x0c"\x03g
 錦城\n　「うーん……じゃあ、ちょっとドア閉めてきてくれる？@
 　　ちょっと恥ずかしい話だから」\w\z
   
-FLAG \xe4\n\x0c\x02" *\x02 \x02 X\x02 END
+FLG3 \xe4\n\x0c FLG3_SET *\x02 \x02 X\x02 END
 FOBT .\\Data\\Script\\Bgm.Fobv\x81\x1f\xba\x0c \x02
 CMD1 StopCD RUNF \xe4\x0c END
 CSCE SCE044_007 
-FLAG \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 xT\x0c"\x03c
+FLG3 SCE_DONE 
+FLG3 \x8c\x01 FLG2 xT FLG2_SET \x03c
  
 　錦城はいたずらっぽく笑った。@
 いかにも教師然とした錦城しか見たことのない拓司は、なんだか\nどぎまぎしてしまう。@
@@ -92,10 +85,9 @@ FLAG\x02 xT\x0c"\x03c
 振り返ると錦城は、実験用の大きなテーブルに腰を下ろしている\n。@
 拓司はどこに座るべきか一瞬悩んだが、離れすぎるのもおかしい\nような気がして、錦城の向かいのテーブルに同じように腰を下ろ\nした。\w\z
   
-FLAG D\r\x0c\x02" *\x02 \x02 X\x02 END
-CSCE SCE044_008 \n\x0f \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 |T\x0c"\x03}
+FLG3 D\r\x0c FLG3_SET *\x02 \x02 X\x02 END
+CSCE SCE044_008 \n\x0f SCE_DONE 
+FLG3 \x8c\x01 FLG2 |T FLG2_SET \x03}
  
 錦城\n　「そうだな、どこから話そうかな」@
 拓司\n　「……」@
@@ -105,10 +97,9 @@ FLAG\x02 |T\x0c"\x03}
 錦城\n　「そうね。\p青春時代。\pそれでね、男の子と初めてキスした\n　　のが、実験室だったの」@
 拓司\n　「……」\w\z
   
-FLAG N\x0f\x0c\x02" *\x02 \x02 X\x02 END
-CSCE SCE044_009 |\x11 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \x80T\x0c"\x03\x94
+FLG3 N\x0f\x0c FLG3_SET *\x02 \x02 X\x02 END
+CSCE SCE044_009 |\x11 SCE_DONE 
+FLG3 \x8c\x01 FLG2 \x80T FLG2_SET \x03\x94
  
 錦城\n　「六限最後の授業が化学の実験でね。私と、その子が、あとか\n　　たづけ役に指名されてしまって。@
 　　でも、嬉しかったな。\pその子のこと、ずっと好きだったか\n　　ら。\pそれまで、話もしたことなかったんだけどね。@
@@ -118,10 +109,9 @@ FLAG\x02 \x80T\x0c"\x03\x94
 錦城\n　「しばらく夢中で話してた。\pそうしたら、突然、ぱたっと話\n　　が途切れて……\p本当にぱったりと途切れちゃって。@
 　　どうしよう、ってドキドキし始めちゃってね、こう、俯いて\n　　いたら、その子がこうやって立ち上がって－－」\w\z
   
-FLAG \xc0\x11\x0c\x02" *\x02 \x02 X\x02 END
-CSCE SCE044_010 J\x14 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \x84T\x0c"\x038
+FLG3 \xc0\x11\x0c FLG3_SET *\x02 \x02 X\x02 END
+CSCE SCE044_010 J\x14 SCE_DONE 
+FLG3 \x8c\x01 FLG2 \x84T FLG2_SET \x038
  
 　錦城はすっと立ち上がって身体を移し、拓司のすぐ隣に座りな\nおした。@
 ほとんど肩と肩が触れ合うくらいの距離だ。@
@@ -129,10 +119,9 @@ FLAG\x02 \x84T\x0c"\x038
 \n錦城\n　「－－キスしたの」@
 拓司\n　「……」\w\z
   
-FLAG \x8e\x14\x0c\x02" *\x02 \x02 X\x02 END
-CSCE SCE044_011 \xa8\x15 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \x88T\x0c"\x03g
+FLG3 \x8e\x14\x0c FLG3_SET *\x02 \x02 X\x02 END
+CSCE SCE044_011 \xa8\x15 SCE_DONE 
+FLG3 \x8c\x01 FLG2 \x88T FLG2_SET \x03g
  
 　拓司はなんと言えばいいのかわからず、どきまぎとうつむくし\nかなかった。@
 「ハイ、おしまい」と言ってくれれば、「いい話ですね」と返せ\nるような気がした。@
@@ -142,10 +131,9 @@ FLAG\x02 \x88T\x0c"\x03g
 沈黙に耐えかねた拓司がいいかけたときだった。@
 錦城の手がすうっと延び、拓司の腿のあたりにそっと重ねられ\nた。\w\z
   
-FLAG \xec\x15\x0c\x02" *\x02 \x02 X\x02 END
-CSCE SCE044_012 \xc2\x17 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \x8cT\x0c"\x03<
+FLG3 \xec\x15\x0c FLG3_SET *\x02 \x02 X\x02 END
+CSCE SCE044_012 \xc2\x17 SCE_DONE 
+FLG3 \x8c\x01 FLG2 \x8cT FLG2_SET \x03<
  
 拓司\n　「？！」@
 錦城\n　「虎菱くん？」@
@@ -154,10 +142,9 @@ FLAG\x02 \x8cT\x0c"\x03<
 拓司\n　「いえ……はあ……まあ、ご想像にお任せします」@
 錦城\n　「ふふ……人の経験は聞けても、自分の経験は話せない？」\w\z
   
-FLAG \x06\x18\x0c\x02" *\x02 \x02 X\x02 END
-CSCE SCE044_013 0\x19 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \x90T\x0c"\x03^
+FLG3 \x06\x18\x0c FLG3_SET *\x02 \x02 X\x02 END
+CSCE SCE044_013 0\x19 SCE_DONE 
+FLG3 \x8c\x01 FLG2 \x90T FLG2_SET \x03^
  
 拓司\n　「はあ。まあ。パス１ってことで」@
 錦城\n　「ふうん。それじゃあ、別の質問」@
@@ -169,20 +156,18 @@ FLAG\x02 \x90T\x0c"\x03^
 錦城\n　「それじゃあ……私のこと、おばさんだと思う？」@
 拓司\n　「思わないですよ」\w\z
   
-FLAG t\x19\x0c\x02" *\x02 \x02 X\x02 END
-CSCE SCE044_014 &\x1b \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \x94T\x0c"\x03:
+FLG3 t\x19\x0c FLG3_SET *\x02 \x02 X\x02 END
+CSCE SCE044_014 &\x1b SCE_DONE 
+FLG3 \x8c\x01 FLG2 \x94T FLG2_SET \x03:
  
 拓司は軽くいった。@
 世辞ではなく、錦城は若い。@
 実際は２０代後半なのだろうが、半ばくらいにしか見えない。@
 そしていま、柔らかな笑みを浮かべている錦城は、２０歳そこそ\nこといわれても信じてしまうような若々しさがあった。\w\z
   
-FLAG j\x1b\x0c\x02" *\x02 \x02 X\x02 END
-CSCE SCE044_015 \x8c\x1c \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \x98T\x0c"\x03T
+FLG3 j\x1b\x0c FLG3_SET *\x02 \x02 X\x02 END
+CSCE SCE044_015 \x8c\x1c SCE_DONE 
+FLG3 \x8c\x01 FLG2 \x98T FLG2_SET \x03T
  
 拓司\n　「先生、歳のこと気にしてるんですか？」@
 錦城\n　「ふふふ……まあね。\p君たちみたいな若い子のなかにいると\n　　……ね」」@
@@ -192,10 +177,9 @@ FLAG\x02 \x98T\x0c"\x03T
 錦城\n　「本当かしら？」@
 拓司\n　「本当ですってば」\w\z
   
-FLAG \xd0\x1c\x0c\x02" *\x02 \x02 X\x02 END
-CSCE SCE044_016 Z\x1e \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \x9cT\x0c"\x034
+FLG3 \xd0\x1c\x0c FLG3_SET *\x02 \x02 X\x02 END
+CSCE SCE044_016 Z\x1e SCE_DONE 
+FLG3 \x8c\x01 FLG2 \x9cT FLG2_SET \x034
  
 錦城\n　「じゃあ、たとえば、先生を見て、いやらしい気持ちになった\n　　りする？」@
 拓司\n　「え？」@
@@ -203,10 +187,9 @@ FLAG\x02 \x9cT\x0c"\x034
 \n錦城は冗談っぽく笑っている。@
 拓司は頭を掻いて、いった。\w\z
   
-FLAG \x9e\x1e\x0c\x02" *\x02 \x02 X\x02 END
-CSCE SCE044_017 \xa8\x1f \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \xa0T\x0c"\x03<
+FLG3 \x9e\x1e\x0c FLG3_SET *\x02 \x02 X\x02 END
+CSCE SCE044_017 \xa8\x1f SCE_DONE 
+FLG3 \x8c\x01 FLG2 \xa0T FLG2_SET \x03<
  
 拓司\n　「……まあ、おれも男なんで。きれいな人を見れば、\n　　そういう気持ちになったりはします」@
 錦城\n　「そうなんだ」@
@@ -214,7 +197,7 @@ FLAG\x02 \xa0T\x0c"\x03<
 錦城\n　「じゃあ、先生のこと考えて、オナニーしたこと、ある？」@
 拓司\n　「……」\w\z
   
-FLAG \xec\x1f\x0c\x02" *\x02 \x02 X\x02 END *\x02 \x02
+FLG3 \xec\x1f\x0c FLG3_SET *\x02 \x02 X\x02 END *\x02 \x02
 CSCE TextClosev\x81\x1f"! END
 HERO .\\Data\\Script\\Scenario\\044subC.Fob RUNF B! \x02
 CMD1 startv\x81\x1fx! END6\xf1

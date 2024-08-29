@@ -1,8 +1,7 @@
 START
 \x0b\x08\x01`B#\x01h\x06
-CSCE SCE006_001 \x06 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \x19\x0c"\x03.
+CSCE SCE006_001 \x06 SCE_DONE 
+FLG3 \x8c\x01 FLG2 \x19 FLG2_SET \x03.
  
 拓司\n　「……出て行け」@
 早桃\n　「どうして？」@
@@ -10,12 +9,11 @@ FLAG\x02 \x19\x0c"\x03.
 早桃\n　「いいんだよ。夢は現実に干渉しない。\pいつもの妄想だか\n　　ら」\
 
   
-FLAG J\x0c\x02"
+FLG3 J\x0c FLG3_SET
 WHAT .\\Data\\Script\\TextFunc.Fob RUNF "\x01 \x02
 CMD1 TextOn RUNF P\x01 END
-CSCE SCE006_002 l\x01 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \x04\x19\x0c"\x03\x98
+CSCE SCE006_002 l\x01 SCE_DONE 
+FLG3 \x8c\x01 FLG2 \x04\x19 FLG2_SET \x03\x98
  
 早桃はネグリジェの裾をつまみ、ゆっくりと持ち上げて見せた。@
 /*HCG02*/\a7,-2,-2,0,\a0,73,2,0,\a6,-2,0,0,幼い肉の合わせ目が、あらわになる。@
@@ -28,10 +26,9 @@ FLAG\x02 \x04\x19\x0c"\x03\x98
 早桃のくちびるのあいだに、ぬるっと、濡れ光る肉の塊がすべっ\nた。\n粘り着くような声が、そこからこぼれだした。\
 
   
-FLAG \xb0\x01\x0c\x02" "\x01 \x02 P\x01 END
-CSCE SCE006_003 J\x04 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \x08\x19\x0c"\x03C
+FLG3 \xb0\x01\x0c FLG3_SET "\x01 \x02 P\x01 END
+CSCE SCE006_003 J\x04 SCE_DONE 
+FLG3 \x8c\x01 FLG2 \x08\x19 FLG2_SET \x03C
  
 早桃\n　「見せっこ……しよ？\p　早桃にだけ出させるなんて、ずるい。@
 　　おにいちゃんのも、見せて。\pおち○ちん、見せてくれたら…\n　　…おれいにおにいちゃんにいいこと……してあげる。@
@@ -39,11 +36,11 @@ FLAG\x02 \x08\x19\x0c"\x03C
 　　ね？」\
 
   
-FLAG \x8e\x04\x0c\x02" "\x01 \x02 P\x01 END\x03\x0c
+FLG3 \x8e\x04\x0c FLG3_SET "\x01 \x02 P\x01 END\x03\x0c
 CHOICE
 「……消えろ」\n「……来いよ」\n\l0,2,
 ENDCHOICE
 
   
-FLAG \xd4\x05\x0c\x02" "\x01 \x02 P\x01 END "\x01 \x02
+FLG3 \xd4\x05\x0c FLG3_SET "\x01 \x02 P\x01 END "\x01 \x02
 CSCE TextClosev\x81\x1fJ\x06 END6\xf1

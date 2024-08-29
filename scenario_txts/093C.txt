@@ -1,11 +1,10 @@
 START
 \x1a\x10\x01`B#\x01\xaa\r  
-FLAG \t\x01\x0c\x02"
+FLG3 \t\x01\x0c FLG3_SET
 FOBT .\\Data\\Script\\Bgm.Fobv\x81\x1f  \x02
 CMD1 PlayCD RUNF J END
-CSCE SCE093_001 f \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \xf0\xa0\x0c"\x03N
+CSCE SCE093_001 f SCE_DONE 
+FLG3 \x8c\x01 FLG2 \xf0\xa0 FLG2_SET \x03N
  
 拓司\n　「それでも、何日持つのかはハッキリさせて欲しい」@
 \n　拓司はいった。@
@@ -14,12 +13,11 @@ FLAG\x02 \xf0\xa0\x0c"\x03N
 拓司\n　「それは……」@
 \n拓司は絶句した。\w\z
   
-FLAG \xaa\x0c\x02"
+FLG3 \xaa\x0c FLG3_SET
 WHAT .\\Data\\Script\\TextFunc.Fob RUNF \x02\x02 \x02
 CMD1 TextOn RUNF 0\x02 END
-CSCE SCE093_002 L\x02 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \xf4\xa0\x0c"\x03\x82
+CSCE SCE093_002 L\x02 SCE_DONE 
+FLG3 \x8c\x01 FLG2 \xf4\xa0 FLG2_SET \x03\x82
  
 拓司\n　「……１年分あれば……まあ……安心はできるんじゃないか？」\n\pなたね\n　「その根拠は？　最終波動がいつやってくるのか予想不可能な\n　　現状において、どうして１年の備蓄が『安心』を与えるんで\n　　すか？」@
 拓司\n　「……。１年というのはあくまでもたとえだ。@
@@ -29,10 +27,9 @@ FLAG\x02 \xf4\xa0\x0c"\x03\x82
 \nなたねは薄笑いを浮かべながらいった。@
 カンナがそれに反応した。\w\z
   
-FLAG \x90\x02\x0c\x02" \x02\x02 \x02 0\x02 END
-CSCE SCE093_003 \xd2\x04 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \xf8\xa0\x0c"\x03\x9d
+FLG3 \x90\x02\x0c FLG3_SET \x02\x02 \x02 0\x02 END
+CSCE SCE093_003 \xd2\x04 SCE_DONE 
+FLG3 \x8c\x01 FLG2 \xf8\xa0 FLG2_SET \x03\x9d
  
 カンナ\n　「そのいいかたは……どうなのかしら、雲居さん？」@
 なたね\n　「なにかご不満でも？」@
@@ -43,10 +40,9 @@ FLAG\x02 \xf8\xa0\x0c"\x03\x9d
 カンナ\n　「さっきのいい方は、そうとられてもおかしくないでしょう！」\n\p拓司\n　「待て！　言い争いはやめよう！」@
 \n拓司が間に入ることで、カンナとなたねは引き離されたが、あと\nには気まずい空気が残っている。\w\z
   
-FLAG \x16\x05\x0c\x02" \x02\x02 \x02 0\x02 END
-CSCE SCE093_004 \xc4\x07 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \xfc\xa0\x0c"\x03\xae
+FLG3 \x16\x05\x0c FLG3_SET \x02\x02 \x02 0\x02 END
+CSCE SCE093_004 \xc4\x07 SCE_DONE 
+FLG3 \x8c\x01 FLG2 \xfc\xa0 FLG2_SET \x03\xae
  
 なたね\n　「……はっきりさせておきたいんですけど」@
 \nやがてなたねがいった。@
@@ -61,10 +57,9 @@ FLAG\x02 \xfc\xa0\x0c"\x03\xae
 　　　みなさんは私を信じるしかないんですよ。@
 　　いつもいつも散々ウソつき呼ばわりしてきたバカタレどもが\n　　私を信じるしか！　くすくすくすくす」\w\z
   
-FLAG \x08\x08\x0c\x02" \x02\x02 \x02 0\x02 END
-CSCE SCE093_005 \xfa\n \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \xa1\x0c"\x03^
+FLG3 \x08\x08\x0c FLG3_SET \x02\x02 \x02 0\x02 END
+CSCE SCE093_005 \xfa\n SCE_DONE 
+FLG3 \x8c\x01 FLG2 \xa1 FLG2_SET \x03^
  
 カンナがなにかをいいかけた。@
 \nなたね\n　「あっ！」@
@@ -75,8 +70,8 @@ FLAG\x02 \xa1\x0c"\x03^
 なたね\n　「……惜しい！　いま、ちょっとだけ母船からきてたのに！@
 　　あなたたちが余計なことをいうから聞き逃してしまったでし\n　　ょうが！\p　ああ、惜しい！\p　惜しかったなあ！」\w\z
   
-FLAG >\x0b\x0c\x02" \x02\x02 \x02 0\x02 END  
-FLAG \xc8\x0c\x02"
+FLG3 >\x0b\x0c FLG3_SET \x02\x02 \x02 0\x02 END  
+FLG3 \xc8\x0c FLG3_SET
 FOBT .\\Data\\Script\\Bg.Fobsv\x81\x1f\n\r \x02
 CMD2 BgAutoFadeInsv\x81\x1f4\r END   \x02
 CMD1 StopCD RUNF d\r END \x02\x02 \x02

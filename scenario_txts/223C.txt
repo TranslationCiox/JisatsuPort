@@ -1,18 +1,16 @@
 START
 J\x0b\x01`B#\x01\xc2\x08
-CSCE SCE223_001 \x06 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \x10l\x01\x0c"\x03\x11
+CSCE SCE223_001 \x06 SCE_DONE 
+FLG3 \x8c\x01 FLG2 \x10l\x01 FLG2_SET \x03\x11
  
 \n\n\n\n\n\n\n\n\n\n　　　　　　　　　　　　　『１１日目』\
 
   
-FLAG J\x0c\x02"
+FLG3 J\x0c FLG3_SET
 WHAT .\\Data\\Script\\TextFunc.Fob RUNF \xae \x02
 CMD1 TextOn RUNF \xdc END
-CSCE SCE223_002 \xf8 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \x14l\x01\x0c"\x03o
+CSCE SCE223_002 \xf8 SCE_DONE 
+FLG3 \x8c\x01 FLG2 \x14l\x01 FLG2_SET \x03o
  
 錦城\n　「新システム導入のお知らせがあるわ」@
 \n朝。@
@@ -23,10 +21,9 @@ FLAG\x02 \x14l\x01\x0c"\x03o
 \nカンナが、フンと鼻で笑った。\
 
   
-FLAG <\x01\x0c\x02" \xae \x02 \xdc END
-CSCE SCE223_003 2\x03 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \x18l\x01\x0c"\x03}
+FLG3 <\x01\x0c FLG3_SET \xae \x02 \xdc END
+CSCE SCE223_003 2\x03 SCE_DONE 
+FLG3 \x8c\x01 FLG2 \x18l\x01 FLG2_SET \x03}
  
 カンナ\n　「『御堂くんの許可』……ねえ」@
 錦城\n　「……なにかいいたいことがあるのかしら、月代さん？」@
@@ -37,10 +34,9 @@ FLAG\x02 \x18l\x01\x0c"\x03}
 カンナ\n　「先生が思っているそのままの意味ですけど」\
 
   
-FLAG v\x03\x0c\x02" \xae \x02 \xdc END
-CSCE SCE223_004 \xa4\x05 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \x1cl\x01\x0c"\x03\x7f
+FLG3 v\x03\x0c FLG3_SET \xae \x02 \xdc END
+CSCE SCE223_004 \xa4\x05 SCE_DONE 
+FLG3 \x8c\x01 FLG2 \x1cl\x01 FLG2_SET \x03\x7f
  
 錦城とカンナはしばしにらみ合っていたが、やがて錦城が、フッ\nと軽く笑って目をそらした。\pそしてカンナに歩み寄ったかと思う\nと、突如鋭い張り手を頬に見舞った。@
 \nカンナ\n　「……なっ？！」@
@@ -49,11 +45,11 @@ FLAG\x02 \x1cl\x01\x0c"\x03\x7f
 \n錦城が勝ち誇ったような目で拓司を見た。\
 
   
-FLAG \xe8\x05\x0c\x02" \xae \x02 \xdc END\x03\x10
+FLG3 \xe8\x05\x0c FLG3_SET \xae \x02 \xdc END\x03\x10
 CHOICE
 拓司は錦城に殴りかかった\n拓司はじっと耐えた\n\l0,2,
 ENDCHOICE
 
   
-FLAG \x1e\x08\x0c\x02" \xae \x02 \xdc END \xae \x02
+FLG3 \x1e\x08\x0c FLG3_SET \xae \x02 \xdc END \xae \x02
 CSCE TextClosev\x81\x1f\xa4\x08 END6\xf1

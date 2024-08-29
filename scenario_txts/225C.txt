@@ -1,8 +1,7 @@
 START
 \x9d\x03\x01@\x044\x01\xd8\x02
-CSCE SCE225_001 \x06 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 0o\x01\x0c"\x03m
+CSCE SCE225_001 \x06 SCE_DONE 
+FLG3 \x8c\x01 FLG2 0o\x01 FLG2_SET \x03m
  
 拓司は歯を食いしばった。@
 まだだ、と胸の中でうめいた。@
@@ -12,7 +11,7 @@ FLAG\x02 0o\x01\x0c"\x03m
 すべてをうち崩すようななにかが、状況を粉々にするようななに\nかが、きっと起こる。\pそのときのために、俺はエネルギーを蓄積\nしなければならない。\pじっと耐えて、強烈な一撃を放つのだ……。\n\p拓司は野獣のように目を光らせて、無言だった。\
 
   
-FLAG J\x0c\x02"
+FLG3 J\x0c FLG3_SET
 WHAT .\\Data\\Script\\TextFunc.Fob RUNF \x1e\x02 \x02
 CMD1 TextOn RUNF L\x02 END
 FOBT .\\Data\\Script\\Bgm.Fobv\x81\x1fh\x02 \x02

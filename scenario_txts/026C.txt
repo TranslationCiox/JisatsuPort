@@ -1,8 +1,7 @@
 START
 \x88\x1a\x01`B#\x01\x02\x16
-CSCE SCE026_001 \x06 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 @8\x0c"\x03\xbf
+CSCE SCE026_001 \x06 SCE_DONE 
+FLG3 \x8c\x01 FLG2 @8 FLG2_SET \x03\xbf
  
 /*　▲SE09　一回再生　*/\a2,0,9,0,　がらがらと、拓司の灰色の世界が一部スライドして、そこに新\n　たな何かが現れた。@
 \n\a4,0,0,0,/*　■CG08　表示（クロスフェード）　*/\a7,-2,-2,0,\a0,7,2,0,\a6,-2,0,0,御堂\n　「おはよーございまーす」@
@@ -14,12 +13,11 @@ FLAG\x02 @8\x0c"\x03\xbf
 　そして御堂の眼には、それらがあながちただの噂で終わるもの\n　ではないと感じさせるだけの説得力が備わっていた。\
 
   
-FLAG J\x0c\x02"
+FLG3 J\x0c FLG3_SET
 WHAT .\\Data\\Script\\TextFunc.Fob RUNF f\x03 \x02
 CMD1 TextOn RUNF \x94\x03 END
-CSCE SCE026_002 \xb0\x03 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 D8\x0c"\x03o
+CSCE SCE026_002 \xb0\x03 SCE_DONE 
+FLG3 \x8c\x01 FLG2 D8 FLG2_SET \x03o
  
 御堂\n　「ぎりぎりセーフっすかね、センセイ？」@
 \n　御堂は笑いながら、教室に足を踏み入れようとした。@
@@ -30,13 +28,12 @@ FLAG\x02 D8\x0c"\x03o
 御堂\n　「……なんだと？」\
 
   
-FLAG \xf4\x03\x0c\x02" f\x03 \x02 \x94\x03 END  
-FLAG \n\x01\x0c\x02"
+FLG3 \xf4\x03\x0c FLG3_SET f\x03 \x02 \x94\x03 END  
+FLG3 \n\x01\x0c FLG3_SET
 FOBT .\\Data\\Script\\Bgm.Fobv\x81\x1f\x04\x06 \x02
 CMD1 PlayCD RUNF .\x06 END
-CSCE SCE026_003 J\x06 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 H8\x0c"\x03r
+CSCE SCE026_003 J\x06 SCE_DONE 
+FLG3 \x8c\x01 FLG2 H8 FLG2_SET \x03r
  
 錦城\n　「出て行きなさい、御堂くん」@
 御堂\n　「……」@
@@ -49,10 +46,9 @@ FLAG\x02 H8\x0c"\x03r
 　やがて御堂が、ニヤリと笑った。\
 
   
-FLAG \x8e\x06\x0c\x02" f\x03 \x02 \x94\x03 END
-CSCE SCE026_004 \x90\x08 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 L8\x0c"\x03`
+FLG3 \x8e\x06\x0c FLG3_SET f\x03 \x02 \x94\x03 END
+CSCE SCE026_004 \x90\x08 SCE_DONE 
+FLG3 \x8c\x01 FLG2 L8 FLG2_SET \x03`
  
 御堂\n　「先生、日向が丘に一人住まいなんですよね？\p　住所、知ってる\n　　んですよ」@
 錦城\n　「……」@
@@ -61,14 +57,13 @@ FLAG\x02 L8\x0c"\x03`
 御堂\n　「女の一人暮らしは危険がいっぱいッスからね。\p気を付けないと\n　　－－」\
 
   
-FLAG \xd4\x08\x0c\x02" f\x03 \x02 \x94\x03 END
-CSCE SCE026_005 \x8e\n \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 P8\x0c" \x04\x06 \x02
+FLG3 \xd4\x08\x0c FLG3_SET f\x03 \x02 \x94\x03 END
+CSCE SCE026_005 \x8e\n SCE_DONE 
+FLG3 \x8c\x01 FLG2 P8 FLG2_SET  \x04\x06 \x02
 CMD1 StopCD RUNF \xde\n END  
-FLAG \x0c\x02"  \x04
-FLAG \x0b\x0c\x02"  \x08
-FLAG \x0c\x02" \x04\x06 \x02
+FLG3 \x0c FLG3_SET  \x04
+FLG3 \x0b\x0c FLG3_SET  \x08
+FLG3 \x0c FLG3_SET \x04\x06 \x02
 CSCE SePlayExsv\x81\x1fT\x0b END\x03\x9f
  
 　パン！@
@@ -80,10 +75,9 @@ CSCE SePlayExsv\x81\x1fT\x0b END\x03\x9f
 　爆発の瞬間、不意を突かれた形となった御堂はしばらく間をおい\n　てから、フン、と鼻で笑った。\
 
   
-FLAG t\x0b\x0c\x02" f\x03 \x02 \x94\x03 END
-CSCE SCE026_006 *\x0e \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 T8\x0c"\x03p
+FLG3 t\x0b\x0c FLG3_SET f\x03 \x02 \x94\x03 END
+CSCE SCE026_006 *\x0e SCE_DONE 
+FLG3 \x8c\x01 FLG2 T8 FLG2_SET \x03p
  
 御堂\n　「……つまんねえオンナ」@
 錦城\n　「以上。授業を終わります」@
@@ -92,10 +86,9 @@ FLAG\x02 T8\x0c"\x03p
 \n　言って錦城教諭は、なにごともなかったかのように軽く御堂から\n　視線を外し、とりわけ急ぐでもなく、平静そのものといった様子\n　で教室から出ていった。\p御堂もまた、鞄を自分の机の上に放り投\n　げ、退室した。\pしかし、精一杯の虚勢といった感じは否めない。\n　勝敗は明らかだった。\
 
   
-FLAG n\x0e\x0c\x02" f\x03 \x02 \x94\x03 END
-CSCE SCE026_007 h\x10 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 X8\x0c"\x03N
+FLG3 n\x0e\x0c FLG3_SET f\x03 \x02 \x94\x03 END
+CSCE SCE026_007 h\x10 SCE_DONE 
+FLG3 \x8c\x01 FLG2 X8 FLG2_SET \x03N
  
 \n　ほどなく教室には興奮と驚嘆の入り交じった声がわき起こった\n　。@
 学生\n　「すげえよな、錦城！」@
@@ -106,11 +99,10 @@ FLAG\x02 X8\x0c"\x03N
 学生\n　「ううー、抱かれてー！」\
 
   
-FLAG \xac\x10\x0c\x02" f\x03 \x02 \x94\x03 END  
-FLAG \x06\x01\x0c\x02" \x04\x06 \x02 .\x06 END
-CSCE SCE026_008 R\x12 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \\8\x0c"\x03\x85
+FLG3 \xac\x10\x0c FLG3_SET f\x03 \x02 \x94\x03 END  
+FLG3 \x06\x01\x0c FLG3_SET \x04\x06 \x02 .\x06 END
+CSCE SCE026_008 R\x12 SCE_DONE 
+FLG3 \x8c\x01 FLG2 \\8 FLG2_SET \x03\x85
  
 \n　騒ぎのなかにあって、拓司はひとり、フツフツとわき上がってく\n　る怒りに震えていた。@
 　－－怒り？@
@@ -124,9 +116,9 @@ FLAG\x02 \\8\x0c"\x03\x85
 　ルーティン・ワーク。\
 
   
-FLAG \x96\x12\x0c\x02" f\x03 \x02 \x94\x03 END f\x03 \x02
+FLG3 \x96\x12\x0c FLG3_SET f\x03 \x02 \x94\x03 END f\x03 \x02
 CMD2 TextWindowOffv\x81\x1f\xf0\x14 END  
-FLAG \xc8\x0c\x02"
+FLG3 \xc8\x0c FLG3_SET
 FOBT .\\Data\\Script\\Bg.Fobsv\x81\x1f.\x15 \x02
 CMD2 BgNormalFadeIn RUNF X\x15 END \x04\x06 \x02 \xde\n END   \x92 f\x03 \x02
 LOAD TextWindowOnDirect RUNF \xb0\x15 END f\x03 \x02

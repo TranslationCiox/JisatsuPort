@@ -1,11 +1,10 @@
 START
 \x9b\x19\x01`B#\x01\xde\x14  
-FLAG \x04\x01\x0c\x02"
+FLG3 \x04\x01\x0c FLG3_SET
 FOBT .\\Data\\Script\\Bgm.Fobv\x81\x1f  \x02
 CMD1 PlayCD RUNF J END
-CSCE SCE239_001 f \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \x10\x85\x01\x0c"\x03f
+CSCE SCE239_001 f SCE_DONE 
+FLG3 \x8c\x01 FLG2 \x10\x85\x01 FLG2_SET \x03f
  
 拓司は再び、空白の世界に立っていた。@
 隣には、雲居ナタネが立っている。@
@@ -15,12 +14,11 @@ FLAG\x02 \x10\x85\x01\x0c"\x03f
 ナタネ\n　「くすくす。\p誰だって、子供っぽい空想の世界は持っているわ。\n　　\pだから特別あなたが幼稚ってわけでもないと思う」\
 
   
-FLAG \xaa\x0c\x02"
+FLG3 \xaa\x0c FLG3_SET
 WHAT .\\Data\\Script\\TextFunc.Fob RUNF b\x02 \x02
 CMD1 TextOn RUNF \x90\x02 END
-CSCE SCE239_002 \xac\x02 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \x14\x85\x01\x0c"\x03o
+CSCE SCE239_002 \xac\x02 SCE_DONE 
+FLG3 \x8c\x01 FLG2 \x14\x85\x01 FLG2_SET \x03o
  
 拓司\n　「ありがとう」@
 \nいいながら拓司は、ナタネがそういってくれるのは、自分がそう\nいって欲しいと望んでいるからに他ならないことを理解していた。\n\pただ、その「ありがとう」は、自然に、拓司の心の一番深い場所\nから生まれてきた言葉だった。@
@@ -31,10 +29,9 @@ FLAG\x02 \x14\x85\x01\x0c"\x03o
 いま、この瞬間、そう決まったのだ。\
 
   
-FLAG \xf0\x02\x0c\x02" b\x02 \x02 \x90\x02 END
-CSCE SCE239_003 \xe6\x04 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \x18\x85\x01\x0c"\x03\x81
+FLG3 \xf0\x02\x0c FLG3_SET b\x02 \x02 \x90\x02 END
+CSCE SCE239_003 \xe6\x04 SCE_DONE 
+FLG3 \x8c\x01 FLG2 \x18\x85\x01 FLG2_SET \x03\x81
  
 拓司\n　「そういうことなんだな」@
 \nナタネは無言で頷いた。@
@@ -43,10 +40,9 @@ FLAG\x02 \x18\x85\x01\x0c"\x03\x81
 拓司\n　「そうか」\
 
   
-FLAG *\x05\x0c\x02" b\x02 \x02 \x90\x02 END
-CSCE SCE239_004 h\x07 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \x1c\x85\x01\x0c"\x03\x87
+FLG3 *\x05\x0c FLG3_SET b\x02 \x02 \x90\x02 END
+CSCE SCE239_004 h\x07 SCE_DONE 
+FLG3 \x8c\x01 FLG2 \x1c\x85\x01 FLG2_SET \x03\x87
  
 拓司はナタネを見つめた。@
 そこにいるナタネは、拓司の世界のなたねの、本来あるべき姿な\nのかもしれなかった。@
@@ -61,10 +57,9 @@ FLAG\x02 \x1c\x85\x01\x0c"\x03\x87
 それが現実なのだ。\
 
   
-FLAG \xac\x07\x0c\x02" b\x02 \x02 \x90\x02 END
-CSCE SCE239_005 \x02\n \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02  \x85\x01\x0c"\x03^
+FLG3 \xac\x07\x0c FLG3_SET b\x02 \x02 \x90\x02 END
+CSCE SCE239_005 \x02\n SCE_DONE 
+FLG3 \x8c\x01 FLG2  \x85\x01 FLG2_SET \x03^
  
 拓司\n　「雲居さん。\pおれはこれから、ひとつの世界を創る」@
 ナタネ\n　「……」@
@@ -75,10 +70,9 @@ FLAG\x02  \x85\x01\x0c"\x03^
 拓司\n　「その世界では、きみは－－」\
 
   
-FLAG F\n\x0c\x02" b\x02 \x02 \x90\x02 END
-CSCE SCE239_006 \xf8\x0b \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 $\x85\x01\x0c"\x03*
+FLG3 F\n\x0c FLG3_SET b\x02 \x02 \x90\x02 END
+CSCE SCE239_006 \xf8\x0b SCE_DONE 
+FLG3 \x8c\x01 FLG2 $\x85\x01 FLG2_SET \x03*
  
 ナタネ\n　「さあ、早く創るのよ」@
 \nナタネは微笑んで、いった。@
@@ -86,10 +80,9 @@ FLAG\x02 $\x85\x01\x0c"\x03*
 拓司\n　「そうだな……ああ、そうだよな」\
 
   
-FLAG <\x0c\x0c\x02" b\x02 \x02 \x90\x02 END
-CSCE SCE239_007 \x1e\r \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 (\x85\x01\x0c"\x03U
+FLG3 <\x0c\x0c FLG3_SET b\x02 \x02 \x90\x02 END
+CSCE SCE239_007 \x1e\r SCE_DONE 
+FLG3 \x8c\x01 FLG2 (\x85\x01 FLG2_SET \x03U
  
 拓司は目を閉じた。@
 －－世界を創ろう。@
@@ -98,10 +91,9 @@ FLAG\x02 (\x85\x01\x0c"\x03U
 けれどもいま、その世界を創ろうとしている俺の意志は、選択不\n可能なくじびきの不幸な結果ではない。強制されたものではない。\n\pおれがが創る、おれの世界だ。\
 
   
-FLAG b\r\x0c\x02" b\x02 \x02 \x90\x02 END
-CSCE SCE239_008 \xf0\x0e \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 ,\x85\x01\x0c"\x03B
+FLG3 b\r\x0c FLG3_SET b\x02 \x02 \x90\x02 END
+CSCE SCE239_008 \xf0\x0e SCE_DONE 
+FLG3 \x8c\x01 FLG2 ,\x85\x01 FLG2_SET \x03B
  
 ナタネ\n　「あなたが創る、あなたの世界」@
 \nもはやあらゆる責任は世界にはなく、おれ自身にある。@
@@ -111,10 +103,9 @@ FLAG\x02 ,\x85\x01\x0c"\x03B
 \nナタネ\n　「前に－－」\
 
   
-FLAG 4\x0f\x0c\x02" b\x02 \x02 \x90\x02 END
-CSCE SCE239_009 v\x10 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 0\x85\x01\x0c"\x03\\
+FLG3 4\x0f\x0c FLG3_SET b\x02 \x02 \x90\x02 END
+CSCE SCE239_009 v\x10 SCE_DONE 
+FLG3 \x8c\x01 FLG2 0\x85\x01 FLG2_SET \x03\\
  
 動くことで、おれはおれを後に残してきたことを知り、新たなる\nおれを知るのだ。@
 世界がおれをおいていくのだとしたら、おれがおれを動かすしか\nないのだ。@
@@ -129,10 +120,9 @@ FLAG\x02 0\x85\x01\x0c"\x03\\
 いまおれはゆく。\
 
   
-FLAG \xba\x10\x0c\x02" b\x02 \x02 \x90\x02 END
-CSCE SCE239_010 d\x12 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 4\x85\x01\x0c"\x03$
+FLG3 \xba\x10\x0c FLG3_SET b\x02 \x02 \x90\x02 END
+CSCE SCE239_010 d\x12 SCE_DONE 
+FLG3 \x8c\x01 FLG2 4\x85\x01 FLG2_SET \x03$
  
 ナタネ\n　「光と共に歩め」@
 \n世界の入り口に立って、ゆく。@
@@ -140,18 +130,17 @@ FLAG\x02 4\x85\x01\x0c"\x03$
 世界が決めるのではなく、ただおれが決める。\
 
   
-FLAG \xa8\x12\x0c\x02" b\x02 \x02 \x90\x02 END
-CSCE SCE239_011 r\x13 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 8\x85\x01\x0c"\x03
-FLAG
+FLG3 \xa8\x12\x0c FLG3_SET b\x02 \x02 \x90\x02 END
+CSCE SCE239_011 r\x13 SCE_DONE 
+FLG3 \x8c\x01 FLG2 8\x85\x01 FLG2_SET \x03
+FLG3
  
 拓司\n　「おれは望む－－おれの世界を！」\
 
   
-FLAG \xb6\x13\x0c\x02" b\x02 \x02 \x90\x02 END   \x02
+FLG3 \xb6\x13\x0c FLG3_SET b\x02 \x02 \x90\x02 END   \x02
 CMD1 StopCD RUNF 0\x14 END  
-FLAG \xc8\x0c\x02"
+FLG3 \xc8\x0c FLG3_SET
 FOBT .\\Data\\Script\\Bg.Fobsv\x81\x1ff\x14 \x02
 CMD2 BgAutoFadeInsv\x81\x1f\x90\x14 END b\x02 \x02
 CSCE TextClosev\x81\x1f\xc0\x14 END6\xf1

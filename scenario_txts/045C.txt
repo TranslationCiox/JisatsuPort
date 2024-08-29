@@ -1,8 +1,7 @@
 START
 \xfd5\x01`B#\x01p-
-CSCE SCE045_001 \x06 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \xf0U\x0c"\x03b
+CSCE SCE045_001 \x06 SCE_DONE 
+FLG3 \x8c\x01 FLG2 \xf0U FLG2_SET \x03b
  
 拓司\n　「……！」@
 /*■CG17　表示（クロスフェード）*/\a7,-2,-2,0,\a0,16,2,0,\a6,-2,0,0,/*▲BGM　Track08　再生　*/\a2,-1,8,1,\n　非常扉を開けた拓司は、ハッと息を呑んだ。@
@@ -10,12 +9,11 @@ FLAG\x02 \xf0U\x0c"\x03b
 　まず目に付いたのが、度の強そうな眼鏡だった。\p眼鏡の端はな\n　ぜか小さくひび割れていて、その奥には穏やかなひかりをたた\n　えた瞳があって……そっと微笑んでいた。\
 
   
-FLAG J\x0c\x02"
+FLG3 J\x0c FLG3_SET
 WHAT .\\Data\\Script\\TextFunc.Fob RUNF \xf2\x01 \x02
 CMD1 TextOn RUNF  \x02 END
-CSCE SCE045_002 <\x02 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \xf4U\x0c"\x03\xb7
+CSCE SCE045_002 <\x02 SCE_DONE 
+FLG3 \x8c\x01 FLG2 \xf4U FLG2_SET \x03\xb7
  
 女の子\n　「こんにちわ」@
 \n　そういって女の子は軽く会釈をしてみせた。\p動きはどことなく\n　ゆったりしていて、それが彼女を官能的に見せ、それと同時に用\n　心深くも見せていた。\pまるで心のずっと奥の方から、絶え間なく\n　外の世界を見張っているような感じの女の子だ。@
@@ -27,10 +25,9 @@ FLAG\x02 \xf4U\x0c"\x03\xb7
 　拓司の身体を通り越した向こう側を……拓司が背負った非常扉\n　を……さらに非常口を通り越した向こう側を……どこでもない\n　はるか向こうの一点を、じっと見つめているのだ。\
 
   
-FLAG \x80\x02\x0c\x02" \xf2\x01 \x02  \x02 END
-CSCE SCE045_003 \x96\x05 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \xf8U\x0c"\x03]
+FLG3 \x80\x02\x0c FLG3_SET \xf2\x01 \x02  \x02 END
+CSCE SCE045_003 \x96\x05 SCE_DONE 
+FLG3 \x8c\x01 FLG2 \xf8U FLG2_SET \x03]
  
 女の子\n　「お願いします」@
 \n　女の子がいった。@
@@ -41,10 +38,9 @@ FLAG\x02 \xf8U\x0c"\x03]
 \n　そういうと彼女は、小脇に抱えたファイルから１枚の紙切れを\n大事そうに取り出した。\pそれはＡ４大の紙切れで、そこにはなにか\nびっしりと文字が書き込まれている。\
 
   
-FLAG \xda\x05\x0c\x02" \xf2\x01 \x02  \x02 END
-CSCE SCE045_004 \x88\x07 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \xfcU\x0c"\x03B
+FLG3 \xda\x05\x0c FLG3_SET \xf2\x01 \x02  \x02 END
+CSCE SCE045_004 \x88\x07 SCE_DONE 
+FLG3 \x8c\x01 FLG2 \xfcU FLG2_SET \x03B
  
 女の子\n　「大切なことがたくさん書いてあります。読んでください」@
 \n　女の子は穏やかな口調でそういうと、その紙を拓司の手のなか\n　に押し込んだ。@
@@ -52,10 +48,9 @@ FLAG\x02 \xfcU\x0c"\x03B
 \n　そこには奇妙な図形や計算式、そして明らかに常軌を逸した文\n　章が踊っていた。\
 
   
-FLAG \xcc\x07\x0c\x02" \xf2\x01 \x02  \x02 END
-CSCE SCE045_005 \x0e\t \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 V\x0c"\x03\x17\x01
+FLG3 \xcc\x07\x0c FLG3_SET \xf2\x01 \x02  \x02 END
+CSCE SCE045_005 \x0e\t SCE_DONE 
+FLG3 \x8c\x01 FLG2 V FLG2_SET \x03\x17\x01
  
 　告発ならびに警告としての私がみなさんにお知らせします。@
 　犯罪的凶悪異星人による、シンリャク行為です（リストラジオ\n　ｘ線。赤外線。紫外線。マイクロ波を使用のことです）。@
@@ -63,10 +58,9 @@ FLAG\x02 V\x0c"\x03\x17\x01
 　電話番号××××－××××。\n　住所×××××××××××……\
 
   
-FLAG R\t\x0c\x02" \xf2\x01 \x02  \x02 END
-CSCE SCE045_006 \xe8\r \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \x04V\x0c"\x03O
+FLG3 R\t\x0c FLG3_SET \xf2\x01 \x02  \x02 END
+CSCE SCE045_006 \xe8\r SCE_DONE 
+FLG3 \x8c\x01 FLG2 \x04V FLG2_SET \x03O
  
 \n　雲居なたね。@
 　ああ、この子が……と拓司は思った。@
@@ -77,10 +71,9 @@ FLAG\x02 \x04V\x0c"\x03O
 　そして雲居なたねは、今年の春、別の意味でさらに有名にな\n　った。\
 
   
-FLAG ,\x0e\x0c\x02" \xf2\x01 \x02  \x02 END
-CSCE SCE045_007 \xa2\x0f \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \x08V\x0c"\x03\xac
+FLG3 ,\x0e\x0c FLG3_SET \xf2\x01 \x02  \x02 END
+CSCE SCE045_007 \xa2\x0f SCE_DONE 
+FLG3 \x8c\x01 FLG2 \x08V FLG2_SET \x03\xac
  
 　－－雲居なたねは何者かにレイプされたらしい。@
 　噂の発生源は定かではないし、それが真実なのかどうかも拓司\nにはわからない。\pしかし雲居なたねが２週間以上学園を休んだ\nのは事実で、校内の学生はみなそれと噂を結びつけて面白がった@
@@ -88,10 +81,9 @@ FLAG\x02 \x08V\x0c"\x03\xac
 　雲居なたねはＵＦＯに拉致されて、宇宙人に身体検査されたら\nしい……優秀な地球人のサンプルとして、身体の奥まで調べ尽く\nされたらしい……よくある話だよね……一種の現実逃避……宇宙\n人にレイプされたと信じることでレイプされたという現実から自\n分を守ってるわけだよ……なんかそういうの小説で読んだ気がす\nる……嘲笑……嘲笑……嘲笑。\
 
   
-FLAG \xe6\x0f\x0c\x02" \xf2\x01 \x02  \x02 END
-CSCE SCE045_008 \xd0\x12 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \x0cV\x0c"\x03\x96
+FLG3 \xe6\x0f\x0c FLG3_SET \xf2\x01 \x02  \x02 END
+CSCE SCE045_008 \xd0\x12 SCE_DONE 
+FLG3 \x8c\x01 FLG2 \x0cV FLG2_SET \x03\x96
  
 　しかしそういった無責任な噂話は、１ヶ月後、雲居なたねが\n登校を再開したのを期に、ピタリと口にされなくなった。@
 　噂話が、本当だったからだ。@
@@ -99,10 +91,9 @@ FLAG\x02 \x0cV\x0c"\x03\x96
 　虚ろな瞳で、誰かまわずその話をして回った。どのようにＵＦ\nＯに拉致されて、どのように身体を調べられたのか？\p　宇宙人は\nどのような外見で、どのような陰謀を企てているのか？\p　地球人\nはどのような対策を練って、どのように対抗しなければならない\nのか……？\p　最初は面白がっていた学生たちも、やがてそれが冗\n談ではすまされないということに気づき、雲居なたねを避ける\nようになっていった。\
 
   
-FLAG \x14\x13\x0c\x02" \xf2\x01 \x02  \x02 END
-CSCE SCE045_009 \xa6\x15 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \x10V\x0c"\x03\x8b
+FLG3 \x14\x13\x0c FLG3_SET \xf2\x01 \x02  \x02 END
+CSCE SCE045_009 \xa6\x15 SCE_DONE 
+FLG3 \x8c\x01 FLG2 \x10V FLG2_SET \x03\x8b
  
 　こうして実際に向かい合ったのは初めてだったが、確かにそれ\nは、遠目で見たことのある雲居なたね、そのひとだった。@
 　電波系。@
@@ -112,10 +103,9 @@ FLAG\x02 \x10V\x0c"\x03\x8b
 　壊れやすい、ガラス細工のようなイメージが。\
 
   
-FLAG \xea\x15\x0c\x02" \xf2\x01 \x02  \x02 END
-CSCE SCE045_010 P\x18 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \x14V\x0c"\x03W
+FLG3 \xea\x15\x0c FLG3_SET \xf2\x01 \x02  \x02 END
+CSCE SCE045_010 P\x18 SCE_DONE 
+FLG3 \x8c\x01 FLG2 \x14V FLG2_SET \x03W
  
 なたね\n　「わかりますか？」@
 拓司\n　「え？」@
@@ -126,20 +116,18 @@ FLAG\x02 \x14V\x0c"\x03W
 \n　なたねは照れくさそうにほほえんだ。\
 
   
-FLAG \x94\x18\x0c\x02" \xf2\x01 \x02  \x02 END
-CSCE SCE045_011 *\x1a \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \x18V\x0c"\x03O
+FLG3 \x94\x18\x0c FLG3_SET \xf2\x01 \x02  \x02 END
+CSCE SCE045_011 *\x1a SCE_DONE 
+FLG3 \x8c\x01 FLG2 \x18V FLG2_SET \x03O
  
 なたね\n　「よかったら、それをコピーして、お友達に配ってほしいんで\n　　す。\p私ひとりの力じゃ、とても世界中にメッセージを届ける\n　　ことはできないから。\pそれに最近、みんな、私からだと、チ\n　　ラシ、うけとってくれないから……」@
 \n　なたねはそういって、もう一度笑った。@
 　寂しそうなほほえみだった。\
 
   
-FLAG n\x1a\x0c\x02" \xf2\x01 \x02  \x02 END
-CSCE SCE045_012 \xe4\x1b \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \x1cV\x0c"\x03d
+FLG3 n\x1a\x0c FLG3_SET \xf2\x01 \x02  \x02 END
+CSCE SCE045_012 \xe4\x1b SCE_DONE 
+FLG3 \x8c\x01 FLG2 \x1cV FLG2_SET \x03d
  
 　宇宙人。@
 　電波系。@
@@ -152,10 +140,9 @@ FLAG\x02 \x1cV\x0c"\x03d
 　真剣に自分と向き合っているのだ。\
 
   
-FLAG (\x1c\x0c\x02" \xf2\x01 \x02  \x02 END
-CSCE SCE045_013 \xf2\x1d \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02  V\x0c"\x03\x8b
+FLG3 (\x1c\x0c FLG3_SET \xf2\x01 \x02  \x02 END
+CSCE SCE045_013 \xf2\x1d SCE_DONE 
+FLG3 \x8c\x01 FLG2  V FLG2_SET \x03\x8b
  
 御堂\n　「おい」@
 /*▲BGM　停止　*/\a4,-1,0,0,/*■CG18　表示（クロスフェード）*/\a7,-2,-2,0,\a0,17,2,0,\a6,-2,0,0,/*▲BGM　Track09　再生　*/\a2,-1,9,1,\n　振り向くと、廊下の壁により掛かって、御堂俊一が立っていた@
@@ -168,10 +155,9 @@ FLAG\x02  V\x0c"\x03\x8b
 \n　御堂はフン、と鼻で笑った。\
 
   
-FLAG 6\x1e\x0c\x02" \xf2\x01 \x02  \x02 END
-CSCE SCE045_014 \x9c  \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 $V\x0c"\x03V
+FLG3 6\x1e\x0c FLG3_SET \xf2\x01 \x02  \x02 END
+CSCE SCE045_014 \x9c  SCE_DONE 
+FLG3 \x8c\x01 FLG2 $V FLG2_SET \x03V
  
 御堂\n　「クールってやつか？　それともニヒルっていうのか？」@
 拓司\n　「好きなようにいえ」@
@@ -184,10 +170,9 @@ FLAG\x02 $V\x0c"\x03V
 拓司\n　「なに？」\
 
   
-FLAG \xe0 \x0c\x02" \xf2\x01 \x02  \x02 END
-CSCE SCE045_015 r" \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 (V\x0c"\x03[
+FLG3 \xe0 \x0c FLG3_SET \xf2\x01 \x02  \x02 END
+CSCE SCE045_015 r" SCE_DONE 
+FLG3 \x8c\x01 FLG2 (V FLG2_SET \x03[
  
 御堂\n　「なたねちゃんだよ」@
 \n　御堂は顎をしゃくって、拓司の横に立つなたねを示した。@
@@ -198,10 +183,9 @@ FLAG\x02 (V\x0c"\x03[
 拓司\n　「……何の話だ？」\
 
   
-FLAG \xb6"\x0c\x02" \xf2\x01 \x02  \x02 END
-CSCE SCE045_016 \\$ \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 ,V\x0c"\x03\x8d
+FLG3 \xb6"\x0c FLG3_SET \xf2\x01 \x02  \x02 END
+CSCE SCE045_016 \\$ SCE_DONE 
+FLG3 \x8c\x01 FLG2 ,V FLG2_SET \x03\x8d
  
 御堂\n　「協力だよ。\p地球防衛計画に手を貸してるんだよ。@
 　　……そうだよな、なたねちゃん！」@
@@ -214,10 +198,9 @@ FLAG\x02 ,V\x0c"\x03\x8d
 拓司\n　「……」\
 
   
-FLAG \xa0$\x0c\x02" \xf2\x01 \x02  \x02 END
-CSCE SCE045_017 \x0e' \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 0V\x0c"\x03\x81
+FLG3 \xa0$\x0c FLG3_SET \xf2\x01 \x02  \x02 END
+CSCE SCE045_017 \x0e' SCE_DONE 
+FLG3 \x8c\x01 FLG2 0V FLG2_SET \x03\x81
  
 なたね\n　「だから、私とあなたの出会いもまた、必然なの。\pわかる、虎\n　　菱拓司くん？」@
 \n　フルネームで呼ばれて拓司はギョッとした。\pすぐに御堂がそれ\n　を笑い飛ばす。@
@@ -228,10 +211,9 @@ FLAG\x02 0V\x0c"\x03\x81
 　無意味な笑いがまきおこる。\
 
   
-FLAG R'\x0c\x02" \xf2\x01 \x02  \x02 END
-CSCE SCE045_019 \x90) \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 8V\x0c"\x03V
+FLG3 R'\x0c FLG3_SET \xf2\x01 \x02  \x02 END
+CSCE SCE045_019 \x90) SCE_DONE 
+FLG3 \x8c\x01 FLG2 8V FLG2_SET \x03V
  
 拓司\n　「……行こう、雲居さん」@
 \n拓司はいった。@
@@ -244,19 +226,18 @@ FLAG\x02 8V\x0c"\x03V
 拓司\n　「……なに？」\
 
   
-FLAG \xd4)\x0c\x02" \xf2\x01 \x02  \x02 END
-CSCE SCE045_020 f+ \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 <V\x0c"\x03?
+FLG3 \xd4)\x0c FLG3_SET \xf2\x01 \x02  \x02 END
+CSCE SCE045_020 f+ SCE_DONE 
+FLG3 \x8c\x01 FLG2 <V FLG2_SET \x03?
  
 御堂\n　「そうだ、お前も来るか？\p　天才少女雲居なたねさんの学説\n　　によると、人間と人間の出会いにはすべからく意味があるら\n　　しいぜ？\p　ってことは、ここでおれたちが逢ったことも、偶\n　　然じゃないってことだろ？\p　ナ……来いよ、虎菱？」\
 
   
-FLAG \xaa+\x0c\x02" \xf2\x01 \x02  \x02 END\x03\x0b
+FLG3 \xaa+\x0c FLG3_SET \xf2\x01 \x02  \x02 END\x03\x0b
 CHOICE
 御堂に従う\n御堂を無視する\n\l0,2,
 ENDCHOICE
 
   
-FLAG \xe0,\x0c\x02" \xf2\x01 \x02  \x02 END \xf2\x01 \x02
+FLG3 \xe0,\x0c FLG3_SET \xf2\x01 \x02  \x02 END \xf2\x01 \x02
 CSCE TextClosev\x81\x1fR- END6\xf1

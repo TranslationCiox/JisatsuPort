@@ -1,8 +1,7 @@
 START
 R\x04\x01\xa4\t3\x01<\x03
-CSCE SCEG02_101 \x06 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 h\xc5\x01\x0c"\x03\x86
+CSCE SCEG02_101 \x06 SCE_DONE 
+FLG3 \x8c\x01 FLG2 h\xc5\x01 FLG2_SET \x03\x86
  
 錦城\n　「エロい子ね……いいわよ。\p許してあげる。@
 　　……どう？　柔らかいでしょう？　つけてないのよ、わかる？\n　　\pあなたに触らせてあげようと思って、下着、つけてこなかっ\n　　たの。\p……昼間からずっとあなたのこと見てたわ。@
@@ -11,7 +10,7 @@ FLAG\x02 h\xc5\x01\x0c"\x03\x86
 　　虎菱くんのあそこ、もう爆発しそうだわ。@
 　　よっぽど先生のおっぱい、気に入ったのね？\n　　ほんと……いやらしい子だわ」\w\z
   
-FLAG J\x0c\x02"
+FLG3 J\x0c FLG3_SET
 WHAT .\\Data\\Script\\TextFunc.Fob RUNF \x82\x02 \x02
 CMD1 TextOn RUNF \xb0\x02 END
 FOBT .\\Data\\Script\\Bgm.Fobv\x81\x1f\xcc\x02 \x02

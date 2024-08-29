@@ -1,14 +1,13 @@
 START
 \x18\x07\x01`B#\x01\x92\x05  
-FLAG \xc8\x0c\x02"
+FLG3 \xc8\x0c FLG3_SET
 FOBT .\\Data\\Script\\Bg.Fobsv\x81\x1f  \x02
 CMD2 BgAutoFadeInsv\x81\x1fJ END  
-FLAG \t\x01\x0c\x02"
+FLG3 \t\x01\x0c FLG3_SET
 FOBT .\\Data\\Script\\Bgm.Fobv\x81\x1f\x88 \x02
 CMD1 PlayCD RUNF \xb2 END
-CSCE SCE216_001 \xce \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02  a\x01\x0c"\x03\xb2
+CSCE SCE216_001 \xce SCE_DONE 
+FLG3 \x8c\x01 FLG2  a\x01 FLG2_SET \x03\xb2
  
 こうして１日が終わった。@
 深夜を過ぎても、拓司は眠りにつくことができなかった。@
@@ -19,24 +18,23 @@ FLAG\x02  a\x01\x0c"\x03\xb2
 それは……\
 
   
-FLAG \x12\x01\x0c\x02"
+FLG3 \x12\x01\x0c FLG3_SET
 WHAT .\\Data\\Script\\TextFunc.Fob RUNF \xfa\x03 \x02
 CMD1 TextOn RUNF (\x04 END! 
-FLAG \x14
-FLAG\x02 \x0b
-FLAG\x01 \x1b1\xd4\x04\x03\x0e
+FLG3 \x14 FLG2 \x0b
+FLG3\x01 \x1b1\xd4\x04\x03\x0e
 CHOICE
 それは早桃だった\nそれはカンナだった\n\l0,2,
 ENDCHOICE
 
   
-FLAG |\x04\x0c\x02"2\x18\x05
+FLG3 |\x04\x0c FLG3_SET2\x18\x05
 HERO 
 CHOICE
 それは早桃だった\n\l0,1,
 ENDCHOICE
 
   
-FLAG \xda\x04\x0c\x02" \xfa\x03 \x02 (\x04 END \xfa\x03 \x02
+FLG3 \xda\x04\x0c FLG3_SET \xfa\x03 \x02 (\x04 END \xfa\x03 \x02
 CMD2 GetLastTxtIDsv\x81\x1fD\x05 END \xfa\x03 \x02
 CSCE TextClosev\x81\x1ft\x05 END6\xf1

@@ -1,8 +1,7 @@
 START
 \xd9\x03\x01\xa4\t3\x01\xc4\x02
-CSCE SCE060_001 \x06 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 `m\x0c"\x03B
+CSCE SCE060_001 \x06 SCE_DONE 
+FLG3 \x8c\x01 FLG2 `m FLG2_SET \x03B
  
 拓司\n　「ここに……いたくない？」@
 \n拓司の問には答えず、早桃はいった。@
@@ -12,16 +11,15 @@ FLAG\x02 `m\x0c"\x03B
 拓司\n　「……」\n早桃\n　「ざまあみろって思ってる」\
 
   
-FLAG J\x0c\x02"
+FLG3 J\x0c FLG3_SET
 WHAT .\\Data\\Script\\TextFunc.Fob RUNF r\x01 \x02
 CMD1 TextOn RUNF \xa0\x01 END
-CSCE SCE060_002 \xbc\x01 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 dm\x0c"\x03\x18
+CSCE SCE060_002 \xbc\x01 SCE_DONE 
+FLG3 \x8c\x01 FLG2 dm FLG2_SET \x03\x18
  
 拓司\n　「……」@
 早桃\n　「おにいちゃん、後ろ向いてて。\pジャージに着替えるから」@
 \z
   
-FLAG \x02\x0c\x02" r\x01 \x02 \xa0\x01 END r\x01 \x02
+FLG3 \x02\x0c FLG3_SET r\x01 \x02 \xa0\x01 END r\x01 \x02
 CSCE TextClosev\x81\x1f\xa6\x02 END6\xf1

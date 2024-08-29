@@ -1,8 +1,7 @@
 START
 \xc1\t\x01`B#\x01\xe0\x07
-CSCE SCE218_001 \x06 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 @d\x01\x0c"\x036
+CSCE SCE218_001 \x06 SCE_DONE 
+FLG3 \x8c\x01 FLG2 @d\x01 FLG2_SET \x036
  
 拓司\n　「やめろ、御堂！」@
 \nいって拓司は突進した。\p御堂の肩にしがみつく。@
@@ -11,12 +10,11 @@ FLAG\x02 @d\x01\x0c"\x036
 \n重い一撃が顎を捉え、さらに鋭い蹴りが拓司を後方にはじき飛ば\nした。\
 
   
-FLAG J\x0c\x02"
+FLG3 J\x0c FLG3_SET
 WHAT .\\Data\\Script\\TextFunc.Fob RUNF B\x01 \x02
 CMD1 TextOn RUNF p\x01 END
-CSCE SCE218_002 \x8c\x01 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 Dd\x01\x0c"\x03x
+CSCE SCE218_002 \x8c\x01 SCE_DONE 
+FLG3 \x8c\x01 FLG2 Dd\x01 FLG2_SET \x03x
  
 御堂\n　「勘違いするなよモヤシ小僧。\pお前が今まで物を決めてこられ\n　　たのはお前の力じゃなくて俺の力なんだよ。\p俺がお前を許し\n　　ていたからお前は自由に行動できたんだよ。\pでもこれからは\n　　違うぞ。\pこれからは俺の許可無しでなにもさせやしねえから\n　　な。\pいいか、なにもだ！」@
 \n御堂はじりじりとなたねに歩み寄った。@
@@ -25,13 +23,12 @@ FLAG\x02 Dd\x01\x0c"\x03x
 御堂\n　「この……××××が……思い知れ！\p　思い知れ！」\
 
   
-FLAG \xd0\x01\x0c\x02" B\x01 \x02 p\x01 END  
-FLAG $\x0c\x02"
+FLG3 \xd0\x01\x0c FLG3_SET B\x01 \x02 p\x01 END  
+FLG3 $\x0c FLG3_SET
 FOBT .\\Data\\Script\\Bg.Fobsv\x81\x1f\x04\x04 \x02
 CMD2 BgAutoFadeInsv\x81\x1f.\x04 END
-CSCE SCE218_003 R\x04 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 Hd\x01\x0c"\x03\x9b
+CSCE SCE218_003 R\x04 SCE_DONE 
+FLG3 \x8c\x01 FLG2 Hd\x01 FLG2_SET \x03\x9b
  
 御堂はなたねの顔面に、容赦のないパンチを雨あられと降らせて\nいる。\p溜まり溜まったストレスをすべて叩き付けるように、な\nたねを殴り続ける。@
 ごつ、ごつ、ごつ！@
@@ -46,8 +43,8 @@ FLAG\x02 Hd\x01\x0c"\x03\x9b
 そしていま、眼前で展開されていることこそ、新しい秩序の骨子\nを為すものであるはずだった。\
 
   
-FLAG \x96\x04\x0c\x02" B\x01 \x02 p\x01 END  
-FLAG \xc8\x0c\x02" \x04\x04 \x02 .\x04 END
+FLG3 \x96\x04\x0c FLG3_SET B\x01 \x02 p\x01 END  
+FLG3 \xc8\x0c FLG3_SET \x04\x04 \x02 .\x04 END
 FOBT .\\Data\\Script\\Bgm.Fobv\x81\x1fp\x07 \x02
 CMD1 StopCD RUNF \x9a\x07 END B\x01 \x02
 CSCE TextClosev\x81\x1f\xc2\x07 END6\xf1

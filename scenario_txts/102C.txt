@@ -1,18 +1,16 @@
 START
 #\x1f\x01`B#\x01\xd0\x19
-CSCE SCE102_001 \x06 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \xaf\x0c"\x03\x11
+CSCE SCE102_001 \x06 SCE_DONE 
+FLG3 \x8c\x01 FLG2 \xaf FLG2_SET \x03\x11
  
 \n\n\n\n\n\n\n\n\n\n　　　　　　　　　　　　　『５日目』\
 
   
-FLAG J\x0c\x02"
+FLG3 J\x0c FLG3_SET
 WHAT .\\Data\\Script\\TextFunc.Fob RUNF \xae \x02
 CMD1 TextOn RUNF \xdc END
-CSCE SCE102_002 \xf8 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \x04\xaf\x0c"\x03\xa5
+CSCE SCE102_002 \xf8 SCE_DONE 
+FLG3 \x8c\x01 FLG2 \x04\xaf FLG2_SET \x03\xa5
  
 早桃の様子がおかしいことに気づいたのは、カンナだった。@
 拓司にそっと耳打ちする。@
@@ -23,13 +21,12 @@ FLAG\x02 \x04\xaf\x0c"\x03\xa5
 \nカンナは肩をすくめただけで無言だった。\
 
   
-FLAG <\x01\x0c\x02" \xae \x02 \xdc END  
-FLAG \xc8\x0c\x02"
+FLG3 <\x01\x0c FLG3_SET \xae \x02 \xdc END  
+FLG3 \xc8\x0c FLG3_SET
 FOBT .\\Data\\Script\\Bg.Fobsv\x81\x1f$\x04 \x02
 CMD2 BgAutoFadeInsv\x81\x1fN\x04 END
-CSCE SCE102_003 r\x04 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \x08\xaf\x0c"\x03FLAG_PRESENT
+CSCE SCE102_003 r\x04 SCE_DONE 
+FLG3 \x8c\x01 FLG2 \x08\xaf FLG2_SET \x03CHOICE_PRESENT
  
 とりあえず拓司は、早桃の様子を見ることにした。@
 午前中、早桃は元気を装っていたが、午後になると気力も尽きた\nのか、ぐったりと壁にもたれかかって動かなくなった。@
@@ -43,10 +40,9 @@ FLAG\x02 \x08\xaf\x0c"\x03FLAG_PRESENT
 なたね\n　「……」\
 
   
-FLAG \xb6\x04\x0c\x02" \xae \x02 \xdc END
-CSCE SCE102_004 \x98\x06 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \x0c\xaf\x0c"\x03p
+FLG3 \xb6\x04\x0c FLG3_SET \xae \x02 \xdc END
+CSCE SCE102_004 \x98\x06 SCE_DONE 
+FLG3 \x8c\x01 FLG2 \x0c\xaf FLG2_SET \x03p
  
 拓司\n　「聞こえなかったか？\p　風邪薬をくれ」@
 なたね\n　「風邪薬はあるけれど……本当に早桃さんに必要なのかしら？」\n　　@
@@ -57,10 +53,9 @@ FLAG\x02 \x0c\xaf\x0c"\x03p
 拓司\n　「……」\
 
   
-FLAG \xdc\x06\x0c\x02" \xae \x02 \xdc END
-CSCE SCE102_005 \xd6\x08 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \x10\xaf\x0c"\x03\x87
+FLG3 \xdc\x06\x0c FLG3_SET \xae \x02 \xdc END
+CSCE SCE102_005 \xd6\x08 SCE_DONE 
+FLG3 \x8c\x01 FLG2 \x10\xaf FLG2_SET \x03\x87
  
 なたね\n　「伝染病にかかるなんて、自己管理が足りない証拠よ。@
 　　薬は貴重品よ。\p最終聖戦に向けていくらあっても足りないく\n　　らい。\pそれを、早桃さんのような……不適格者に投下するの\n　　はどうなのかしら？\p　虎菱くんが風邪を引いたのなら、私は\n　　こんなことはいわないわ。\p早桃さんは……ねえ？」@
@@ -69,10 +64,9 @@ FLAG\x02 \x10\xaf\x0c"\x03\x87
 \n意外な声に拓司は動きを止めた。\p錦城が、厳しい顔でなたねをに\nらみつけている。\p虚を突かれたのか、なたねも珍しく驚きの表情\nを浮かべている。\
 
   
-FLAG \x1a\t\x0c\x02" \xae \x02 \xdc END
-CSCE SCE102_006 p\x0b \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \x14\xaf\x0c"\x03\xae
+FLG3 \x1a\t\x0c FLG3_SET \xae \x02 \xdc END
+CSCE SCE102_006 p\x0b SCE_DONE 
+FLG3 \x8c\x01 FLG2 \x14\xaf FLG2_SET \x03\xae
  
 錦城\n　「雲居さん。\pあなたは最初、誰にでも中立だと主張したわよ\n　　ね？\p　だからこそ、私たちはあなたに物資の管理人を任せた\n　　の。\pあなたの地位は、ただそれだけの理由に根拠したものな\n　　の。\pみんなの合意に支えられているもの。\p違うかしら？」@
 なたね\n　「……」@
@@ -82,10 +76,9 @@ FLAG\x02 \x14\xaf\x0c"\x03\xae
 錦城\n　「周りが不公平だと感じたら、それは不公平ということなんじ\n　　ゃないかしら？\p　この場における公平さは、あなたの主観が\n　　決めることじゃないわ。\pそれに－－」\
 
   
-FLAG \xb4\x0b\x0c\x02" \xae \x02 \xdc END
-CSCE SCE102_007 \xa6\x0e \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \x18\xaf\x0c"\x03\xb2
+FLG3 \xb4\x0b\x0c FLG3_SET \xae \x02 \xdc END
+CSCE SCE102_007 \xa6\x0e SCE_DONE 
+FLG3 \x8c\x01 FLG2 \x18\xaf FLG2_SET \x03\xb2
  
 なたね\n　「いえ、それは……」@
 錦城\n　「－－それに！」@
@@ -95,10 +88,9 @@ FLAG\x02 \x18\xaf\x0c"\x03\xb2
 \nなたねの顔が青ざめていった。\pなにか反論をしようとするが、口\nがぱくぱくと震えるだけで言葉が出てこない。\pまるで、あふれで\nる言葉が喉に詰まって、窒息寸前であるかのように見える。\
 
   
-FLAG \xea\x0e\x0c\x02" \xae \x02 \xdc END
-CSCE SCE102_008 \xec\x11 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \x1c\xaf\x0c"\x03\x81
+FLG3 \xea\x0e\x0c FLG3_SET \xae \x02 \xdc END
+CSCE SCE102_008 \xec\x11 SCE_DONE 
+FLG3 \x8c\x01 FLG2 \x1c\xaf FLG2_SET \x03\x81
  
 錦城\n　「わかってもらえたかしら？\p　だったら黙って薬を持ってきて\n　　ちょうだい。\p……さあ！」@
 \nなたねは完全に打ちのめされた様子だった。\p一同の冷たい視線か\nら逃れるように背を向けて、のっそりと準備室へと入っていく。@
@@ -108,10 +100,9 @@ FLAG\x02 \x1c\xaf\x0c"\x03\x81
 \n紅葉\n　「……なんなのよ、あの態度！」\
 
   
-FLAG 0\x12\x0c\x02" \xae \x02 \xdc END
-CSCE SCE102_009 n\x14 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02  \xaf\x0c"\x03\x9c
+FLG3 0\x12\x0c FLG3_SET \xae \x02 \xdc END
+CSCE SCE102_009 n\x14 SCE_DONE 
+FLG3 \x8c\x01 FLG2  \xaf FLG2_SET \x03\x9c
  
 床に散らばった風邪薬を拾い集めながら、紅葉が舌打ちした。@
 \n紅葉\n　「拓司、あの子、やっぱりおかしいよ。\pあんな子に鍵の管理任\n　　せておくの、不安だな……」@
@@ -121,12 +112,11 @@ FLAG\x02  \xaf\x0c"\x03\x9c
 しかし、それが宇宙人のしわざであるだとか、地底にいる怪物か\nら放たれているだとか、果ては弱い者は死んで当然とだとか、そ\nういった部分になると話は別だ。\p妄想の産物であるとしか思えな\nい。\
 
   
-FLAG \xb2\x14\x0c\x02" \xae \x02 \xdc END
+FLG3 \xb2\x14\x0c FLG3_SET \xae \x02 \xdc END
 FOBT .\\Data\\Script\\Bgm.Fobv\x81\x1f\\\x17 \x02
 CMD1 StopCD RUNF \x86\x17 END
-CSCE SCE102_010 \xa2\x17 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 $\xaf\x0c"\x03C
+CSCE SCE102_010 \xa2\x17 SCE_DONE 
+FLG3 \x8c\x01 FLG2 $\xaf FLG2_SET \x03C
  
 紅葉\n　「……ねえ、拓司。\p鍵、とっちゃおうか？」@
 拓司\n　「え？」@
@@ -136,11 +126,11 @@ FLAG\x02 $\xaf\x0c"\x03C
 　　そのほうが、絶対安全だよ？」\
 
   
-FLAG \xe6\x17\x0c\x02" \xae \x02 \xdc END\x03\x10
+FLG3 \xe6\x17\x0c FLG3_SET \xae \x02 \xdc END\x03\x10
 CHOICE
 「それはやめておこう」\n「いいかもしれないな」\n\l0,2,
 ENDCHOICE
 
   
-FLAG ,\x19\x0c\x02" \xae \x02 \xdc END \xae \x02
+FLG3 ,\x19\x0c FLG3_SET \xae \x02 \xdc END \xae \x02
 CSCE TextClosev\x81\x1f\xb2\x19 END6\xf1

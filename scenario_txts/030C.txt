@@ -1,18 +1,16 @@
 START
 \x8c\x1e\x01`B#\x01&\x18
-CSCE SCE030_001 \x06 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \x80>\x0c"\x03\x0f
+CSCE SCE030_001 \x06 SCE_DONE 
+FLG3 \x8c\x01 FLG2 \x80> FLG2_SET \x03\x0f
  
 \n\n\n\n\n\n\n\n　　　　　　　　　　　　　『屋上』\
 
   
-FLAG J\x0c\x02"
+FLG3 J\x0c FLG3_SET
 WHAT .\\Data\\Script\\TextFunc.Fob RUNF \xa6 \x02
 CMD1 TextOn RUNF \xd4 END
-CSCE SCE030_002 \xf0 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \x84>\x0c"\x03.
+CSCE SCE030_002 \xf0 SCE_DONE 
+FLG3 \x8c\x01 FLG2 \x84> FLG2_SET \x03.
  
 　ぱーん@
 　ぱーん@
@@ -21,18 +19,17 @@ FLAG\x02 \x84>\x0c"\x03.
 　無論ライフルなどがここにあろうはずもなく、それは月代カンナ\n　の唇から漏れる、偽物の銃声にすぎない。\
 
   
-FLAG 4\x01\x0c\x02" \xa6 \x02 \xd4 END \xa6 \x02
+FLG3 4\x01\x0c FLG3_SET \xa6 \x02 \xd4 END \xa6 \x02
 CMD2 TextWindowOffv\x81\x1f2\x02 END  
-FLAG \x08\x01\x0c\x02"
+FLG3 \x08\x01\x0c FLG3_SET
 FOBT .\\Data\\Script\\Bgm.Fobv\x81\x1fp\x02 \x02
 CMD1 PlayCD RUNF \x9a\x02 END  
-FLAG \x08\x0c\x02"
+FLG3 \x08\x0c FLG3_SET
 FOBT .\\Data\\Script\\Bg.Fobsv\x81\x1f\xd0\x02 \x02
 CMD2 BgNormalFadeIn RUNF \xfa\x02 END \xa6 \x02
 CMD2 TextWindowOnsv\x81\x1f*\x03 END
-CSCE SCE030_003 N\x03 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \x88>\x0c"\x03Q
+CSCE SCE030_003 N\x03 SCE_DONE 
+FLG3 \x8c\x01 FLG2 \x88> FLG2_SET \x03Q
  
 　ぱーん@
 　ぱーん@
@@ -42,10 +39,9 @@ FLAG\x02 \x88>\x0c"\x03Q
 \n　ぱーん。\
 
   
-FLAG \x92\x03\x0c\x02" \xa6 \x02 \xd4 END
-CSCE SCE030_004 \x10\x05 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \x8c>\x0c"\x03w
+FLG3 \x92\x03\x0c FLG3_SET \xa6 \x02 \xd4 END
+CSCE SCE030_004 \x10\x05 SCE_DONE 
+FLG3 \x8c\x01 FLG2 \x8c> FLG2_SET \x03w
  
 \n　男子学生の頭部が、スイカのように砕け散る。@
 　カンナはライフルをスライドさせて、今度は女子学生をターゲッ\n　ティングした。@
@@ -55,10 +51,9 @@ FLAG\x02 \x8c>\x0c"\x03w
 \n　ぱーん。\
 
   
-FLAG T\x05\x0c\x02" \xa6 \x02 \xd4 END
-CSCE SCE030_005 j\x07 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \x90>\x0c"\x03I
+FLG3 T\x05\x0c FLG3_SET \xa6 \x02 \xd4 END
+CSCE SCE030_005 j\x07 SCE_DONE 
+FLG3 \x8c\x01 FLG2 \x90> FLG2_SET \x03I
  
 　いってカンナは振り返り、今度は銃口を拓司に向けた。@
 \nカンナ\n　「クイズです」@
@@ -68,12 +63,11 @@ FLAG\x02 \x90>\x0c"\x03I
 カンナ\n　「ぱーん。\p……あなた、死んだわよ」\
 
   
-FLAG \xae\x07\x0c\x02" \xa6 \x02 \xd4 END  
-FLAG \xc8\x0c\x02" \xd0\x02 \x02
+FLG3 \xae\x07\x0c FLG3_SET \xa6 \x02 \xd4 END  
+FLG3 \xc8\x0c FLG3_SET \xd0\x02 \x02
 CMD2 BgAutoFadeInsv\x81\x1f2\t END
-CSCE SCE030_006 V\t \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \x94>\x0c"\x03\x7f
+CSCE SCE030_006 V\t SCE_DONE 
+FLG3 \x8c\x01 FLG2 \x94> FLG2_SET \x03\x7f
  
 拓司はそれを無視して、いった。@
 \n拓司\n　「どうしてだ？\p　どうして朝、おれに声をかけた？\p　互いの世界\n　　には干渉しない。\pそういう『約束』だったんじゃないか？」@
@@ -85,10 +79,9 @@ FLAG\x02 \x94>\x0c"\x03\x7f
 　差し出された首は透き通るように青白く、夏の日差しに覆われた\n　この屋上において、それは場違いな氷細工のように見えた。\
 
   
-FLAG \x9a\t\x0c\x02" \xa6 \x02 \xd4 END
-CSCE SCE030_007 \xd0\x0b \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \x98>\x0c"\x03:
+FLG3 \x9a\t\x0c FLG3_SET \xa6 \x02 \xd4 END
+CSCE SCE030_007 \xd0\x0b SCE_DONE 
+FLG3 \x8c\x01 FLG2 \x98> FLG2_SET \x03:
  
 拓司\n　「ふざけるな」@
 カンナ\n　「絞めて」@
@@ -100,10 +93,9 @@ FLAG\x02 \x98>\x0c"\x03:
 　包み込むように、絞める。\
 
   
-FLAG \x14\x0c\x0c\x02" \xa6 \x02 \xd4 END
-CSCE SCE030_008 6\r \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \x9c>\x0c"\x03\x81
+FLG3 \x14\x0c\x0c FLG3_SET \xa6 \x02 \xd4 END
+CSCE SCE030_008 6\r SCE_DONE 
+FLG3 \x8c\x01 FLG2 \x9c> FLG2_SET \x03\x81
  
 　細い。\p指先が余るくらい、カンナの首は細い。@
 　掌の中、皮膚の下、肉の奥、そこをごくり、と嚥下されていく唾\n　液の感覚。@
@@ -121,11 +113,10 @@ FLAG\x02 \x9c>\x0c"\x03\x81
 　解放。\
 
   
-FLAG z\r\x0c\x02" \xa6 \x02 \xd4 END  
-FLAG \t\x0c\x02" \xd0\x02 \x02 2\t END
-CSCE SCE030_009 \xec\x0f \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \xa0>\x0c"\x03\xa3
+FLG3 z\r\x0c FLG3_SET \xa6 \x02 \xd4 END  
+FLG3 \t\x0c FLG3_SET \xd0\x02 \x02 2\t END
+CSCE SCE030_009 \xec\x0f SCE_DONE 
+FLG3 \x8c\x01 FLG2 \xa0> FLG2_SET \x03\xa3
  
 　カンナはコンクリの上にへたりこみ、げほげほと咽せた。\pぜいぜ\nいという荒い息に、ときおりうええ、という嗚咽が混じる。\p目の端\nにはうっすらと涙がにじんでいる。\p華奢な肩が激しく上下する。@
 　汗ばんだ頬に、髪の毛が張り付いている。@
@@ -135,10 +126,9 @@ FLAG\x02 \xa0>\x0c"\x03\xa3
 カンナ\n　「はは……あははは……ハハハハハハハハ」\
 
   
-FLAG 0\x10\x0c\x02" \xa6 \x02 \xd4 END
-CSCE SCE030_010 \xf6\x12 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \xa4>\x0c"\x03r
+FLG3 0\x10\x0c FLG3_SET \xa6 \x02 \xd4 END
+CSCE SCE030_010 \xf6\x12 SCE_DONE 
+FLG3 \x8c\x01 FLG2 \xa4> FLG2_SET \x03r
  
 \n哄笑を放つカンナに、拓司はゆっくりと身体を重ねた。@
 身体の下で、柔らかい肉の塊が、ハ、ハ、ハ、と痙攣していた。@
@@ -147,20 +137,20 @@ FLAG\x02 \xa4>\x0c"\x03r
 /*■CG73　表示（ノンエフェクト） *//*■CG09　表示（ノンエフェクト） */\a7,1,1,0,\a1,1,202,9,\a6,0,0,0,ハ。\
 
   
-FLAG :\x13\x0c\x02" \xa6 \x02 \xd4 END \xa6 \x02 2\x02 END  
-FLAG \xca\x0c\x02" \xd0\x02 \x02
+FLG3 :\x13\x0c FLG3_SET \xa6 \x02 \xd4 END \xa6 \x02 2\x02 END  
+FLG3 \xca\x0c FLG3_SET \xd0\x02 \x02
 CMD1 BgOnsv\x81\x1f|\x15 END  
-FLAG \x01\x0c\x02"
+FLG3 \x01\x0c FLG3_SET
 WHAT .\\Data\\Script\\TextFunc.fob RUNF \xb2\x15 \x02
 CSCE WaitTimesv\x81\x1f\xe0\x15 END  
-FLAG \t\x0c\x02" \xd0\x02 \x02 |\x15 END  
-FLAG \x01\x0c\x02" \xb2\x15 \x02 \xe0\x15 END  
-FLAG \xca\x0c\x02" \xd0\x02 \x02 |\x15 END  
-FLAG \x01\x0c\x02" \xb2\x15 \x02 \xe0\x15 END  
-FLAG \t\x0c\x02" \xd0\x02 \x02 |\x15 END  
-FLAG \x01\x0c\x02" \xb2\x15 \x02 \xe0\x15 END  
-FLAG <\x0c\x02" \xb2\x15 \x02 \xe0\x15 END  
-FLAG \xc8\x0c\x02" \xd0\x02 \x02 \xfa\x02 END p\x02 \x02
+FLG3 \t\x0c FLG3_SET \xd0\x02 \x02 |\x15 END  
+FLG3 \x01\x0c FLG3_SET \xb2\x15 \x02 \xe0\x15 END  
+FLG3 \xca\x0c FLG3_SET \xd0\x02 \x02 |\x15 END  
+FLG3 \x01\x0c FLG3_SET \xb2\x15 \x02 \xe0\x15 END  
+FLG3 \t\x0c FLG3_SET \xd0\x02 \x02 |\x15 END  
+FLG3 \x01\x0c FLG3_SET \xb2\x15 \x02 \xe0\x15 END  
+FLG3 <\x0c FLG3_SET \xb2\x15 \x02 \xe0\x15 END  
+FLG3 \xc8\x0c FLG3_SET \xd0\x02 \x02 \xfa\x02 END p\x02 \x02
 CMD1 StopCD RUNF \xac\x17 END \xa6 \x02
 LOAD TextWindowOnDirect RUNF \xd4\x17 END \xa6 \x02
 CSCE TextClosev\x81\x1f\x08\x18 END6\xf1

@@ -2,9 +2,8 @@ START
 '\x11\x01`B#\x01@\r
 FOBT .\\Data\\Script\\Bgm.Fobv\x81\x1f\x06 \x02
 CMD1 StopCD RUNF 0 END
-CSCE SCE077_001 L \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \xf0\x87\x0c"\x03~
+CSCE SCE077_001 L SCE_DONE 
+FLG3 \x8c\x01 FLG2 \xf0\x87 FLG2_SET \x03~
  
 拓司\n　「雲居さんが俺たちには見えないものが見えるというのは…\n　　…信じられないけど……どうやらウソじゃないらしい。@
 　　いままで何度も、雲居さんは『波動』ってやつを感じてき\n　　たし、俺はそれに救われてきた」@
@@ -16,14 +15,13 @@ FLAG\x02 \xf0\x87\x0c"\x03~
 拓司\n　「俺が行く。\pだから雲居さんは２人をシェルターに連れてい\n　　ってやってくれ」\
 
   
-FLAG \x90\x0c\x02"
+FLG3 \x90\x0c FLG3_SET
 WHAT .\\Data\\Script\\TextFunc.Fob RUNF \xa8\x02 \x02
 CMD1 TextOn RUNF \xd6\x02 END  
-FLAG \x08\x01\x0c\x02" \x06 \x02
+FLG3 \x08\x01\x0c FLG3_SET \x06 \x02
 CMD1 PlayCD RUNF \x18\x03 END
-CSCE SCE077_002 4\x03 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \xf4\x87\x0c"\x03X
+CSCE SCE077_002 4\x03 SCE_DONE 
+FLG3 \x8c\x01 FLG2 \xf4\x87 FLG2_SET \x03X
  
 早桃\n　「イヤだよ！\p　早桃、やだからね！」@
 拓司\n　「……」@
@@ -35,10 +33,9 @@ FLAG\x02 \xf4\x87\x0c"\x03X
 拓司\n　「紅葉を助けるために、お前たちを危険にさらすわけにはいか\n　　ない」\
 
   
-FLAG x\x03\x0c\x02" \xa8\x02 \x02 \xd6\x02 END
-CSCE SCE077_003 \x12\x05 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \xf8\x87\x0c"\x03O
+FLG3 x\x03\x0c FLG3_SET \xa8\x02 \x02 \xd6\x02 END
+CSCE SCE077_003 \x12\x05 SCE_DONE 
+FLG3 \x8c\x01 FLG2 \xf8\x87 FLG2_SET \x03O
  
 早桃\n　「……」@
 拓司\n　「……」@
@@ -48,10 +45,9 @@ FLAG\x02 \xf8\x87\x0c"\x03O
 \n　ぶるぶると震える早桃の肩を、拓司は優しくかき抱いた。\pそれ\n　から肩に担いだカンナを２人に任せ、なたねに尋ねた。\
 
   
-FLAG V\x05\x0c\x02" \xa8\x02 \x02 \xd6\x02 END
-CSCE SCE077_004 \xcc\x06 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \xfc\x87\x0c"\x03d
+FLG3 V\x05\x0c FLG3_SET \xa8\x02 \x02 \xd6\x02 END
+CSCE SCE077_004 \xcc\x06 SCE_DONE 
+FLG3 \x8c\x01 FLG2 \xfc\x87 FLG2_SET \x03d
  
 拓司\n　「４階の実験室だな？」@
 なたね\n　「なにが？」@
@@ -63,10 +59,9 @@ FLAG\x02 \xfc\x87\x0c"\x03d
 なたね\n　「ここで虎菱くんを失うのは、地球の戦士たちにとって大きな\n　　痛手。\p哀しいことだわ」\
 
   
-FLAG \x10\x07\x0c\x02" \xa8\x02 \x02 \xd6\x02 END
-CSCE SCE077_005 \xda\x08 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \x88\x0c"\x03E
+FLG3 \x10\x07\x0c FLG3_SET \xa8\x02 \x02 \xd6\x02 END
+CSCE SCE077_005 \xda\x08 SCE_DONE 
+FLG3 \x8c\x01 FLG2 \x88 FLG2_SET \x03E
  
 拓司\n　「……死んだら、な」@
 なたね\n　「死ぬわ」@
@@ -76,14 +71,13 @@ FLAG\x02 \x88\x0c"\x03E
 　振り返り振り返り、早桃たち３人の姿が廊下の向こうに消えさ\n　ったのを見送り、拓司はよし、とつぶやいた。\
 
   
-FLAG \x1e\t\x0c\x02" \xa8\x02 \x02 \xd6\x02 END \x06 \x02 0 END  
-FLAG <\x0c\x02"
+FLG3 \x1e\t\x0c FLG3_SET \xa8\x02 \x02 \xd6\x02 END \x06 \x02 0 END  
+FLG3 <\x0c FLG3_SET
 WHAT .\\Data\\Script\\TextFunc.fob RUNF \xa0\n \x02
 CSCE WaitTimesv\x81\x1f\xce\n END  
-FLAG \t\x01\x0c\x02" \x06 \x02 \x18\x03 END
-CSCE SCE077_006 "\x0b \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \x04\x88\x0c"\x03B
+FLG3 \t\x01\x0c FLG3_SET \x06 \x02 \x18\x03 END
+CSCE SCE077_006 "\x0b SCE_DONE 
+FLG3 \x8c\x01 FLG2 \x04\x88 FLG2_SET \x03B
  
 　渡り廊下は静まり返っている。@
 　見渡す限り、なにもない。@
@@ -91,12 +85,12 @@ FLAG\x02 \x04\x88\x0c"\x03B
 　波動というのがなんなのかがわからない以上、一気に走り抜け\n　るべきなのか、あるいは静かに前進すべきなのか、それすら判\n　断のしようがない。\
 
   
-FLAG f\x0b\x0c\x02" \xa8\x02 \x02 \xd6\x02 END\x03
-FLAG
+FLG3 f\x0b\x0c FLG3_SET \xa8\x02 \x02 \xd6\x02 END\x03
+FLG3
 CHOICE
 一気に走り抜ける\n慎重に歩いてゆく\n\l0,2,
 ENDCHOICE
 
   
-FLAG \xa8\x0c\x0c\x02" \xa8\x02 \x02 \xd6\x02 END \xa8\x02 \x02
+FLG3 \xa8\x0c\x0c FLG3_SET \xa8\x02 \x02 \xd6\x02 END \xa8\x02 \x02
 CSCE TextClosev\x81\x1f"\r END6\xf1

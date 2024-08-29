@@ -1,11 +1,10 @@
 START
 \x02\x05\x01\xa4\t3\x01\xea\x03
-CSCE SCE214_001 \x06 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 ^\x01\x0c"  
-FLAG \x02\x0c\x02"  \x04
-FLAG \x01\x0c\x02"  \x08
-FLAG \x01\x0c\x02"
+CSCE SCE214_001 \x06 SCE_DONE 
+FLG3 \x8c\x01 FLG2 ^\x01 FLG2_SET   
+FLG3 \x02\x0c FLG3_SET  \x04
+FLG3 \x01\x0c FLG3_SET  \x08
+FLG3 \x01\x0c FLG3_SET
 FOBT .\\Data\\Script\\Bgm.Fobv\x81\x1f\x98 \x02
 CMD1 SePlay RUNF \xc2 END\x03C
  
@@ -18,12 +17,11 @@ CMD1 SePlay RUNF \xc2 END\x03C
 ここは……『学校に籠城する世界』。\
 
   
-FLAG \xde\x0c\x02"
+FLG3 \xde\x0c FLG3_SET
 WHAT .\\Data\\Script\\TextFunc.Fob RUNF \n\x02 \x02
 CMD1 TextOn RUNF 8\x02 END
-CSCE SCE214_002 T\x02 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \x04^\x01\x0c"\x03+
+CSCE SCE214_002 T\x02 SCE_DONE 
+FLG3 \x8c\x01 FLG2 \x04^\x01 FLG2_SET \x03+
  
 拓司\n　「……やれやれ」@
 \n拓司は深呼吸をした。@
@@ -32,7 +30,7 @@ FLAG\x02 \x04^\x01\x0c"\x03+
 それしかないのだ。\
 
   
-FLAG \x98\x02\x0c\x02" \n\x02 \x02 8\x02 END  
-FLAG \x02\x0c\x02" \x98 \x02
+FLG3 \x98\x02\x0c FLG3_SET \n\x02 \x02 8\x02 END  
+FLG3 \x02\x0c FLG3_SET \x98 \x02
 CMD1 SeStop RUNF \xa4\x03 END \n\x02 \x02
 CSCE TextClosev\x81\x1f\xcc\x03 END6\xf1

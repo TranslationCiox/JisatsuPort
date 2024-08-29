@@ -1,8 +1,7 @@
 START
 u\x03\x01`\x044\x01\xc6\x02
-CSCE SCE059_001 \x06 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \xd0k\x0c"\x03z
+CSCE SCE059_001 \x06 SCE_DONE 
+FLG3 \x8c\x01 FLG2 \xd0k FLG2_SET \x03z
  
 拓司\n　「天使って、なんのことだ？」@
 早桃\n　「……え？」@
@@ -16,7 +15,7 @@ FLAG\x02 \xd0k\x0c"\x03z
 早桃は何を隠しているのだろうか？\
 
   
-FLAG J\x0c\x02"
+FLG3 J\x0c FLG3_SET
 WHAT .\\Data\\Script\\TextFunc.Fob RUNF R\x02 \x02
 CMD1 TextOn RUNF \x80\x02 END R\x02 \x02
 CSCE TextClosev\x81\x1f\xa8\x02 END6\xf1

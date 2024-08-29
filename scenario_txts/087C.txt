@@ -2,9 +2,8 @@ START
 \xc3\n\x01`B#\x01\xcc\x08
 FOBT .\\Data\\Script\\Bgm.Fobv\x81\x1f\x06 \x02
 CMD1 StopCD RUNF 0 END
-CSCE SCE087_001 L \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \x90\x97\x0c"\x03\x9e
+CSCE SCE087_001 L SCE_DONE 
+FLG3 \x8c\x01 FLG2 \x90\x97 FLG2_SET \x03\x9e
  
 　実験室のドアを開けた拓司は、思わず声をあげた。@
 　実験室の壁全体が、銀色に輝いていたのである。\pそして、ムッ\n　と息詰まるようなシンナーの匂い……。@
@@ -17,12 +16,11 @@ FLAG\x02 \x90\x97\x0c"\x03\x9e
 カンナ\n　「ああ、このピカピカね……コレよ」\
 
   
-FLAG \x90\x0c\x02"
+FLG3 \x90\x0c FLG3_SET
 WHAT .\\Data\\Script\\TextFunc.Fob RUNF (\x03 \x02
 CMD1 TextOn RUNF V\x03 END
-CSCE SCE087_002 r\x03 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \x94\x97\x0c"\x03{
+CSCE SCE087_002 r\x03 SCE_DONE 
+FLG3 \x8c\x01 FLG2 \x94\x97 FLG2_SET \x03{
  
 拓司\n　「コレは……アルミホイル？」@
 早桃\n　「そう。\p雲居さんが段ボール３箱分も用意しておいた……徳\n　　用アルミホイル。\pそれをさっきから、月代先輩と２人で壁に\n　　貼り付けてるの」@
@@ -34,10 +32,9 @@ FLAG\x02 \x94\x97\x0c"\x03{
 拓司\n　「まさか！」\
 
   
-FLAG \xb6\x03\x0c\x02" (\x03 \x02 V\x03 END
-CSCE SCE087_003 \xdc\x05 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \x98\x97\x0c"\x03\x92
+FLG3 \xb6\x03\x0c FLG3_SET (\x03 \x02 V\x03 END
+CSCE SCE087_003 \xdc\x05 SCE_DONE 
+FLG3 \x8c\x01 FLG2 \x98\x97 FLG2_SET \x03\x92
  
 なたね\n　「気分を害さないで欲しいんだけれど、そう簡単にまさかとか、\n　　言って欲しくないの。\pだってこれは、私が死ぬ思いをしてや\n　　つらの円盤から盗み出してきた機密事項の結晶だから」@
 拓司\n　「……」@
@@ -46,5 +43,5 @@ FLAG\x02 \x98\x97\x0c"\x03\x92
 なたね\n　「いい？\p　エンケリュスの自殺波動は、アルミホイルで防御す\n　　ることが－－」\
 
   
-FLAG  \x06\x0c\x02" (\x03 \x02 V\x03 END (\x03 \x02
+FLG3  \x06\x0c FLG3_SET (\x03 \x02 V\x03 END (\x03 \x02
 CSCE TextClosev\x81\x1f\xae\x08 END6\xf1

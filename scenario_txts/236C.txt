@@ -1,38 +1,37 @@
 START
 \x98\x11\x01`B#\x01\x8a\r
-CSCE SCE236_001 \x06 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 `\x80\x01\x0c"
+CSCE SCE236_001 \x06 SCE_DONE 
+FLG3 \x8c\x01 FLG2 `\x80\x01 FLG2_SET 
 WHAT .\\Data\\Script\\TextFunc.Fob RUNF J \x02
 LOAD TextWindowOffDirect x END  
-FLAG \x02\x0c\x02"  \x04
-FLAG \x1b\x0c\x02"  \x08
-FLAG \x0c\x02"
+FLG3 \x02\x0c FLG3_SET  \x04
+FLG3 \x1b\x0c FLG3_SET  \x08
+FLG3 \x0c FLG3_SET
 FOBT .\\Data\\Script\\Bgm.Fobv\x81\x1f\xee \x02
 CMD1 SePlay RUNF \x18\x01 END  
-FLAG \xca\x0c\x02"
+FLG3 \xca\x0c FLG3_SET
 FOBT .\\Data\\Script\\Bg.Fobsv\x81\x1fN\x01 \x02
 CMD1 BgOnsv\x81\x1fx\x01 END  
-FLAG \x01\x0c\x02"
+FLG3 \x01\x0c FLG3_SET
 WHAT .\\Data\\Script\\TextFunc.fob RUNF \xae\x01 \x02
 CSCE WaitTimesv\x81\x1f\xdc\x01 END  
-FLAG \xc8\x0c\x02" N\x01 \x02 x\x01 END  
-FLAG \x01\x0c\x02" \xae\x01 \x02 \xdc\x01 END  
-FLAG \x02\x0c\x02" \xee \x02
+FLG3 \xc8\x0c FLG3_SET N\x01 \x02 x\x01 END  
+FLG3 \x01\x0c FLG3_SET \xae\x01 \x02 \xdc\x01 END  
+FLG3 \x02\x0c FLG3_SET \xee \x02
 CMD1 SeStop RUNF \x8a\x02 END  
-FLAG \x02\x0c\x02"  \x04
-FLAG \x1b\x0c\x02"  \x08
-FLAG \x0c\x02" \xee \x02 \x18\x01 END  
-FLAG \xca\x0c\x02" N\x01 \x02 x\x01 END  
-FLAG \x01\x0c\x02" \xae\x01 \x02 \xdc\x01 END  
-FLAG \xc8\x0c\x02" N\x01 \x02 x\x01 END  
-FLAG \x01\x0c\x02" \xae\x01 \x02 \xdc\x01 END  
-FLAG <\x0c\x02" \xae\x01 \x02 \xdc\x01 END  
-FLAG \xc9\x0c\x02" N\x01 \x02
+FLG3 \x02\x0c FLG3_SET  \x04
+FLG3 \x1b\x0c FLG3_SET  \x08
+FLG3 \x0c FLG3_SET \xee \x02 \x18\x01 END  
+FLG3 \xca\x0c FLG3_SET N\x01 \x02 x\x01 END  
+FLG3 \x01\x0c FLG3_SET \xae\x01 \x02 \xdc\x01 END  
+FLG3 \xc8\x0c FLG3_SET N\x01 \x02 x\x01 END  
+FLG3 \x01\x0c FLG3_SET \xae\x01 \x02 \xdc\x01 END  
+FLG3 <\x0c FLG3_SET \xae\x01 \x02 \xdc\x01 END  
+FLG3 \xc9\x0c FLG3_SET N\x01 \x02
 CMD2 BgNormalFadeIn RUNF 8\x04 END  
-FLAG \x08\x01\x0c\x02" \xee \x02
+FLG3 \x08\x01\x0c FLG3_SET \xee \x02
 CMD1 PlayCD RUNF \x82\x04 END  
-FLAG \x02\x0c\x02" \xee \x02 \x8a\x02 END J \x02
+FLG3 \x02\x0c FLG3_SET \xee \x02 \x8a\x02 END J \x02
 CMD2 TextWindowOnsv\x81\x1f\xde\x04 END\x03l
  
 白い部屋で目覚めてホッとした気分になったのは、これが初めて\nだった。@
@@ -45,11 +44,10 @@ CMD2 TextWindowOnsv\x81\x1f\xde\x04 END\x03l
 \n教授が繰り返した。\
 
   
-FLAG \x02\x05\x0c\x02" J \x02
+FLG3 \x02\x05\x0c FLG3_SET J \x02
 CMD1 TextOn RUNF \xde\x06 END
-CSCE SCE236_002 \xfa\x06 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 d\x80\x01\x0c"\x03g
+CSCE SCE236_002 \xfa\x06 SCE_DONE 
+FLG3 \x8c\x01 FLG2 d\x80\x01 FLG2_SET \x03g
  
 拓司の目から、堰を切ったように涙があふれ出した。@
 ベッドから起きあがって教授に触れようとしたが、身体の中心が\n砕け散ってしまったかのように、力が入らない。@
@@ -62,20 +60,18 @@ FLAG\x02 d\x80\x01\x0c"\x03g
 \n拓司\n　「ここが……この世界が……」\
 
   
-FLAG >\x07\x0c\x02" J \x02 \xde\x06 END
-CSCE SCE236_003 \x14\t \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 h\x80\x01\x0c"\x03|
+FLG3 >\x07\x0c FLG3_SET J \x02 \xde\x06 END
+CSCE SCE236_003 \x14\t SCE_DONE 
+FLG3 \x8c\x01 FLG2 h\x80\x01 FLG2_SET \x03|
  
 教授\n　「もういい。\p世界について考えるのはよしたまえ。\pこれからは\n　　少しずつ、自分のことを考えていくんだ。\p世界などどうでも\n　　いい。\pどんな世界にいようとも、君は君だ。\pそうだろう？」@
 拓司\n　「……はい」@
 教授\n　「覚えてはいないだろうが、君はこうした混乱状態を、もう数\n　　度繰り返してきている。\pしかし今回は、いつもとは明らかに\n　　違う。\pいままで君は、混乱の中で精神に限界をきたし、自殺\n　　を図ることまであった。\p死ねば何が本当かがわかると思って、\n　　ね」\
 
   
-FLAG X\t\x0c\x02" J \x02 \xde\x06 END
-CSCE SCE236_004 \x82\x0b \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 l\x80\x01\x0c"\x03X
+FLG3 X\t\x0c FLG3_SET J \x02 \xde\x06 END
+CSCE SCE236_004 \x82\x0b SCE_DONE 
+FLG3 \x8c\x01 FLG2 l\x80\x01 FLG2_SET \x03X
  
 拓司\n　「自殺」@
 教授\n　「ああ。\pもしかしたら夢にも、そういった傾向の片鱗が現出し\n　　たのではないかな？」@
@@ -83,5 +79,5 @@ FLAG\x02 l\x80\x01\x0c"\x03X
 教授\n　「そうか。\pしかし、もう、きみはそうした危険な状況を切り抜\n　　けた。\pきみは階段を一歩、昇ったんだ。\pこれからはどんどん\n　　良くなっていく。\pそれを信じて、私と一緒に頑張ろうじゃな\n　　いか」\
 
   
-FLAG \xc6\x0b\x0c\x02" J \x02 \xde\x06 END J \x02
+FLG3 \xc6\x0b\x0c FLG3_SET J \x02 \xde\x06 END J \x02
 CSCE TextClosev\x81\x1fl\r END6\xf1

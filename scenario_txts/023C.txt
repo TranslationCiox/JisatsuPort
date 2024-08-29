@@ -2,9 +2,8 @@ START
 \xba;\x01`B#\x01\xf02
 FOBT .\\Data\\Script\\Bgm.Fobv\x81\x1f\x06 \x02
 CMD1 StopCD RUNF 0 END
-CSCE SCE023_001 L \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \x903\x0c"\x03\x87
+CSCE SCE023_001 L SCE_DONE 
+FLG3 \x8c\x01 FLG2 \x903 FLG2_SET \x03\x87
  
 拓司は目を閉じて、妄想の糸でひとつの世界を編み始めた。@
 いつ？\p　－－夏休みの最中。真昼だ。@
@@ -20,17 +19,16 @@ FLAG\x02 \x903\x0c"\x03\x87
 紅葉はひどく消耗している。\p乱れた髪の毛が頬に貼り付いている。\n\p泣きはらした目がはれぼったい。\p顔は汗と油でてらてらと光ってい\nるが、唇は対照的に乾いている……。\
 
   
-FLAG \x90\x0c\x02"
+FLG3 \x90\x0c FLG3_SET
 WHAT .\\Data\\Script\\TextFunc.Fob RUNF \xcc\x02 \x02
 CMD1 TextOn RUNF \xfa\x02 END  
-FLAG \x05\x01\x0c\x02" \x06 \x02
+FLG3 \x05\x01\x0c FLG3_SET \x06 \x02
 CMD1 PlayCD RUNF <\x03 END  
-FLAG O\x0c\x02"
+FLG3 O\x0c FLG3_SET
 FOBT .\\Data\\Script\\Bg.Fobsv\x81\x1fr\x03 \x02
 CMD2 BgAutoFadeInsv\x81\x1f\x9c\x03 END
-CSCE SCE023_002 \xc0\x03 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \x943\x0c"\x03\x9a
+CSCE SCE023_002 \xc0\x03 SCE_DONE 
+FLG3 \x8c\x01 FLG2 \x943 FLG2_SET \x03\x9a
  
 紅葉\n　「……たくじ……」@
 \n紅葉が、か細くうめいた。@
@@ -45,10 +43,9 @@ FLAG\x02 \x943\x0c"\x03\x9a
 すべてをうち砕くために。\
 
   
-FLAG \x04\x04\x0c\x02" \xcc\x02 \x02 \xfa\x02 END
-CSCE SCE023_003 \xa6\x06 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \x983\x0c"\x03\xac
+FLG3 \x04\x04\x0c FLG3_SET \xcc\x02 \x02 \xfa\x02 END
+CSCE SCE023_003 \xa6\x06 SCE_DONE 
+FLG3 \x8c\x01 FLG2 \x983 FLG2_SET \x03\xac
  
 拓司\n　「よう、天才スプリンター。@
 　　一生歩けなくなった気分はどうだ？」@
@@ -63,10 +60,9 @@ FLAG\x02 \x983\x0c"\x03\xac
 　　道具としていろいろ使えるからさ……いろいろな」\
 
   
-FLAG \xea\x06\x0c\x02" \xcc\x02 \x02 \xfa\x02 END
-CSCE SCE023_004 \xd4\t \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \x9c3\x0c"\x03y
+FLG3 \xea\x06\x0c FLG3_SET \xcc\x02 \x02 \xfa\x02 END
+CSCE SCE023_004 \xd4\t SCE_DONE 
+FLG3 \x8c\x01 FLG2 \x9c3 FLG2_SET \x03y
  
 紅葉はうつむき、ぶるぶると肩をふるわせた。\pしかし、涙は一向に\nこぼれてこない。@
 すでに２４時間以上この蒸し暑い部屋に閉じこめ続けられ、身体か\nら水分が蒸発しきってしまったのだ。@
@@ -78,10 +74,9 @@ FLAG\x02 \x9c3\x0c"\x03y
 紅葉\n　「……やだ……ひどいこといわないで……」\
 
   
-FLAG \x18\n\x0c\x02" \xcc\x02 \x02 \xfa\x02 END
-CSCE SCE023_005 6\x0c \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \xa03\x0c"\x03\xa1
+FLG3 \x18\n\x0c FLG3_SET \xcc\x02 \x02 \xfa\x02 END
+CSCE SCE023_005 6\x0c SCE_DONE 
+FLG3 \x8c\x01 FLG2 \xa03 FLG2_SET \x03\xa1
  
 拓司\n　「だってくさいものはくさいから仕方ないだろ。\p部活終わってシ\n　　ャワー浴びる前だったんだろ？\p　体中汗でびっしょりだ。@
 　　お前、恥ずかしくないのか？\p　他の女の子がリンスとか香水と\n　　かのにおいをさせてるっていうのに、お前はこんな獣みたいな\n　　においプンプンさせて。\p本当に不潔な女だな」@
@@ -92,10 +87,9 @@ FLAG\x02 \xa03\x0c"\x03\xa1
 紅葉\n　「もういいでしょ！　私の人生メチャクチャにして……もう満足\n　　でしょ？！」\
 
   
-FLAG z\x0c\x0c\x02" \xcc\x02 \x02 \xfa\x02 END
-CSCE SCE023_006 8\x0f \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \xa43\x0c"\x03\x9d
+FLG3 z\x0c\x0c FLG3_SET \xcc\x02 \x02 \xfa\x02 END
+CSCE SCE023_006 8\x0f SCE_DONE 
+FLG3 \x8c\x01 FLG2 \xa43 FLG2_SET \x03\x9d
  
 拓司\n　「いいや。全然満足じゃないね」@
 紅葉\n　「どうして？！　幼なじみなのに……信用してたのに！」@
@@ -104,10 +98,9 @@ FLAG\x02 \xa43\x0c"\x03\x9d
 拓司は、勝ち誇ったように、紅葉の柔らかい恥丘を踏みにじる。@
 屈辱を与えるためでもあるが、もうひとつ、紅葉の尿意を促す意味\nもある。\pずっと排尿を我慢し続けてきた紅葉はもはや限界なのだ。\n\w\z
   
-FLAG |\x0f\x0c\x02" \xcc\x02 \x02 \xfa\x02 END
-CSCE SCE023_007 *\x12 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \xa83\x0c"\x03a
+FLG3 |\x0f\x0c FLG3_SET \xcc\x02 \x02 \xfa\x02 END
+CSCE SCE023_007 *\x12 SCE_DONE 
+FLG3 \x8c\x01 FLG2 \xa83 FLG2_SET \x03a
  
 果たして紅葉は、すぐに苦しそうにいった。@
 \n紅葉\n　「……お願い……トイレに……行かせて」@
@@ -119,10 +112,9 @@ FLAG\x02 \xa83\x0c"\x03a
 拓司\n　「いやだね。いま、おれの前でしてみせろよ」\
 
   
-FLAG n\x12\x0c\x02" \xcc\x02 \x02 \xfa\x02 END
-CSCE SCE023_008 ,\x14 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \xac3\x0c"\x03n
+FLG3 n\x12\x0c FLG3_SET \xcc\x02 \x02 \xfa\x02 END
+CSCE SCE023_008 ,\x14 SCE_DONE 
+FLG3 \x8c\x01 FLG2 \xac3 FLG2_SET \x03n
  
 紅葉\n　「……変態！　あんた、狂ってるわ！」@
 拓司\n　「なんとでもいえ。\pいっとくが、おれはお前を便所に連れていく\n　　気はないからな。\pいまここでしてみせるか、あとでするか、\n　　どっちかだ。\pそしていまここでしてみせる気があるなら……こ\n　　れをやるよ」@
@@ -131,10 +123,9 @@ FLAG\x02 \xac3\x0c"\x03n
 \n紅葉\n　「水……頂戴……」\
 
   
-FLAG p\x14\x0c\x02" \xcc\x02 \x02 \xfa\x02 END
-CSCE SCE023_009 b\x16 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \xb03\x0c"\x03k
+FLG3 p\x14\x0c FLG3_SET \xcc\x02 \x02 \xfa\x02 END
+CSCE SCE023_009 b\x16 SCE_DONE 
+FLG3 \x8c\x01 FLG2 \xb03 FLG2_SET \x03k
  
 拓司\n　「あァ？」@
 紅葉\n　「お水……頂戴」@
@@ -146,10 +137,9 @@ FLAG\x02 \xb03\x0c"\x03k
 紅葉\n　「……」\
 
   
-FLAG \xa6\x16\x0c\x02" \xcc\x02 \x02 \xfa\x02 END
-CSCE SCE023_010 \x8c\x18 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \xb43\x0c"\x03\x91
+FLG3 \xa6\x16\x0c FLG3_SET \xcc\x02 \x02 \xfa\x02 END
+CSCE SCE023_010 \x8c\x18 SCE_DONE 
+FLG3 \x8c\x01 FLG2 \xb43 FLG2_SET \x03\x91
  
 拓司\n　「……まあ、おれはどっちでもいいけどな。\pイヤならいい。@
 　　悪いけどちょっと図書館にでも行って涼んでくるわ。@
@@ -163,10 +153,9 @@ FLAG\x02 \xb43\x0c"\x03\x91
 しかし拓司は許さない。\p顎を掴んで無理矢理顔を上向きにし、冷酷\nに笑う。\
 
   
-FLAG \xd0\x18\x0c\x02" \xcc\x02 \x02 \xfa\x02 END
-CSCE SCE023_011 N\x1b \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \xb83\x0c"\x03\xb9
+FLG3 \xd0\x18\x0c FLG3_SET \xcc\x02 \x02 \xfa\x02 END
+CSCE SCE023_011 N\x1b SCE_DONE 
+FLG3 \x8c\x01 FLG2 \xb83 FLG2_SET \x03\xb9
  
 拓司\n　「どんな顔をしておもらしするのか、見たいからな」@
 \n観念したのか、紅葉はわずかに腰を浮かせて、ぶるるっと震えた。\n\p薄いブルーのパンティに、じわりと染みが生まれた。\p尿はみるみる\nクロッチに染み渡って、やがてあしぐりからだらだらとあふれ出し\nた。@
@@ -177,10 +166,9 @@ FLAG\x02 \xb83\x0c"\x03\xb9
 拓司\n　「おいおいおいおーい、まだ出るのか？\p　よっぽどおれに見られ\n　　るのが嬉しいんだな。\p体中から汗のにおいさせて、ションベン\n　　もらして……おまえ異常なんじゃないか？」\
 
   
-FLAG \x92\x1b\x0c\x02" \xcc\x02 \x02 \xfa\x02 END
-CSCE SCE023_012 \xb0\x1e \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \xbc3\x0c"\x03\x97
+FLG3 \x92\x1b\x0c FLG3_SET \xcc\x02 \x02 \xfa\x02 END
+CSCE SCE023_012 \xb0\x1e SCE_DONE 
+FLG3 \x8c\x01 FLG2 \xbc3 FLG2_SET \x03\x97
  
 \nいくら嘲笑されても一度あふれ出したものはなかなか止まらない。\n\pじょぼじょぼと、紅葉の意志に反して放出され続ける黄色い汚液…\n…。@
 紅葉の肩ががっくりと落ちたのを合図にようやく放出が完了した。\n\p黄色い液が、フローリングの床に無様な池を作っている。@
@@ -190,10 +178,9 @@ FLAG\x02 \xbc3\x0c"\x03\x97
 拓司はおもむろにペ○スを引きずり出し、先端を紅葉の身体に定め\nた。\
 
   
-FLAG \xf4\x1e\x0c\x02" \xcc\x02 \x02 \xfa\x02 END
-CSCE SCE023_013 \x8a! \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \xc03\x0c"\x03v
+FLG3 \xf4\x1e\x0c FLG3_SET \xcc\x02 \x02 \xfa\x02 END
+CSCE SCE023_013 \x8a! SCE_DONE 
+FLG3 \x8c\x01 FLG2 \xc03 FLG2_SET \x03v
  
 紅葉\n　「なっ……？」@
 拓司\n　「たらふく飲めよ」@
@@ -204,20 +191,18 @@ FLAG\x02 \xc03\x0c"\x03v
 \n紅葉　「う……ううっ……」\
 
   
-FLAG \xce!\x0c\x02" \xcc\x02 \x02 \xfa\x02 END
-CSCE SCE023_014 \xe0# \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \xc43\x0c"\x03d
+FLG3 \xce!\x0c FLG3_SET \xcc\x02 \x02 \xfa\x02 END
+CSCE SCE023_014 \xe0# SCE_DONE 
+FLG3 \x8c\x01 FLG2 \xc43 FLG2_SET \x03d
  
 ついに紅葉の抵抗が止んだ\p拘束されて失禁し、幼なじみの放尿の的\nにされるとういう恥辱が、プライドを完全にうち砕いてしまったの\nだろう。\p紅葉はがっくりと俯いて、震えながら汚液を浴び続けた。\n@
 拓司\n　「少しは抵抗しろよ。つまらないだろ？」@
 \n拓司はペ○スの先端を徐々に上に上げていく。\pそれに従って、ほと\nばしり出る尿は、早桃の体を這うように昇っていき、やがて黒い髪\nの毛に降り注いだ。\
 
   
-FLAG $$\x0c\x02" \xcc\x02 \x02 \xfa\x02 END
-CSCE SCE023_015 \xee% \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \xc83\x0c"\x03k
+FLG3 $$\x0c FLG3_SET \xcc\x02 \x02 \xfa\x02 END
+CSCE SCE023_015 \xee% SCE_DONE 
+FLG3 \x8c\x01 FLG2 \xc83 FLG2_SET \x03k
  
 紅葉\n　「やめてよお……髪の毛におしっこなんてかけないでえ……」@
 拓司\n　「髪は女の命か？\p　お前みたいな異臭女がいつまでもそんなこと\n　　いっても仕方ないだろう？\p　ほら、顔あげろよ……あげろ！@
@@ -225,11 +210,10 @@ FLAG\x02 \xc83\x0c"\x03k
 紅葉\n　「う……うむっ……うぷぷ……」\
 
   
-FLAG 2&\x0c\x02" \xcc\x02 \x02 \xfa\x02 END  
-FLAG P\x0c\x02" r\x03 \x02 \x9c\x03 END
-CSCE SCE023_016 L( \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \xcc3\x0c"\x03\x85
+FLG3 2&\x0c FLG3_SET \xcc\x02 \x02 \xfa\x02 END  
+FLG3 P\x0c FLG3_SET r\x03 \x02 \x9c\x03 END
+CSCE SCE023_016 L( SCE_DONE 
+FLG3 \x8c\x01 FLG2 \xcc3 FLG2_SET \x03\x85
  
 硬く目を閉じたまま、紅葉が顔を上にする。\p待ってましたとばかり\nに、拓司はその顔面に狙いを定めた。\p見慣れた幼なじみの顔が、あ\nっという間に汚液に蹂躙されていく。\p鼻面で弾ける黄色いしぶき。\n\p頬を、顎を伝って滝のように流れ落ちる黄色い液体。\pゾクゾクと背\n中を快感が駆け上がっていく。@
 \n拓司\n　「口だ！　早く口を開けろ！」@
@@ -237,10 +221,9 @@ FLAG\x02 \xcc3\x0c"\x03\x85
 拓司\n　「よし……こぼさず飲めよ。\p腹の中までおれのしょんべんを染み\n　　渡らせてやるよ。\p内臓までおしっこまみれの不潔女だ、お前は\n　　！」\
 
   
-FLAG \x90(\x0c\x02" \xcc\x02 \x02 \xfa\x02 END
-CSCE SCE023_017 \xde* \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \xd03\x0c"\x03\xbc
+FLG3 \x90(\x0c FLG3_SET \xcc\x02 \x02 \xfa\x02 END
+CSCE SCE023_017 \xde* SCE_DONE 
+FLG3 \x8c\x01 FLG2 \xd03 FLG2_SET \x03\xbc
  
 叫んで拓司は、紅葉の髪を鷲掴みにした。\p両手で頭を固定して、開\nけっ放しの口の中にペ○スを一気に押し込む。\pペ○スの先端に、紅\n葉の喉の肉が押し当たった。@
 喉の奥で放尿され、呼吸もままならない紅葉。\p必死で頭をふって逃\nれようとするが、拓司はそれを許さない。\pさらに淫猥な言葉を浴び\nせかけ、紅葉の人格を踏みにじっていく。@
@@ -248,10 +231,9 @@ FLAG\x02 \xd03\x0c"\x03\xbc
 　　それとも毎日同じようなもの食ってるんだから、味も同じなの\n　　かな？\p　ははは、嬉しいだろ？\p　ただ、お前んちの親が心配す\n　　ると気の毒だからな。\p立派に便器として生きていますって、写\n　　真に撮って送ってやるよ」\
 
   
-FLAG "+\x0c\x02" \xcc\x02 \x02 \xfa\x02 END
-CSCE SCE023_018 L. \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \xd43\x0c"\x03\x9b
+FLG3 "+\x0c FLG3_SET \xcc\x02 \x02 \xfa\x02 END
+CSCE SCE023_018 L. SCE_DONE 
+FLG3 \x8c\x01 FLG2 \xd43 FLG2_SET \x03\x9b
  
 紅葉は白目をむき、痙攣している。\p鼻の穴からも、尿が逆流して吹\nきこぼれている。\pかろうじて喉を上下させて汚液を飲み下している\nから、死んではいないのだろうが、もはや拓司の言葉を理解してい\nるとは思えない。@
 それでも拓司は、狂ったように言葉を放ち続けた。@
@@ -261,10 +243,9 @@ FLAG\x02 \xd43\x0c"\x03\x9b
 　ザアザアアアアアアア……\
 
   
-FLAG \x90.\x0c\x02" \xcc\x02 \x02 \xfa\x02 END
-CSCE SCE023_019 61 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \xd83\x0c"\x031
+FLG3 \x90.\x0c FLG3_SET \xcc\x02 \x02 \xfa\x02 END
+CSCE SCE023_019 61 SCE_DONE 
+FLG3 \x8c\x01 FLG2 \xd83 FLG2_SET \x031
  
 耳の奥で、『灰色』が響き始めた。@
 ああ、うるさい。@
@@ -274,6 +255,6 @@ FLAG\x02 \xd83\x0c"\x031
 　ザアザアアアアアアア……\
 
   
-FLAG z1\x0c\x02" \xcc\x02 \x02 \xfa\x02 END \x06 \x02 0 END  
-FLAG \xc8\x0c\x02" r\x03 \x02 \x9c\x03 END \xcc\x02 \x02
+FLG3 z1\x0c FLG3_SET \xcc\x02 \x02 \xfa\x02 END \x06 \x02 0 END  
+FLG3 \xc8\x0c FLG3_SET r\x03 \x02 \x9c\x03 END \xcc\x02 \x02
 CSCE TextClosev\x81\x1f\xd22 END6\xf1

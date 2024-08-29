@@ -1,8 +1,7 @@
 START
 "\x04\x01\xa4\t3\x01\xe0\x02
-CSCE SCE070_001 \x06 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 }\x0c"\x03[
+CSCE SCE070_001 \x06 SCE_DONE 
+FLG3 \x8c\x01 FLG2 } FLG2_SET \x03[
  
 なたね\n　「駄目！」@
 \nなたねが鋭く静止した。@
@@ -12,7 +11,7 @@ FLAG\x02 }\x0c"\x03[
 　　ハドウなんて、ない。\pそんなの全部、この人の空想なんだか\n　　ら！」\
 
   
-FLAG J\x0c\x02"
+FLG3 J\x0c FLG3_SET
 WHAT .\\Data\\Script\\TextFunc.Fob RUNF \xd6\x01 \x02
 CMD1 TextOn RUNF \x04\x02 END\x03\x17
 CHOICE
@@ -20,5 +19,5 @@ CHOICE
 ENDCHOICE
 
   
-FLAG  \x02\x0c\x02" \xd6\x01 \x02 \x04\x02 END \xd6\x01 \x02
+FLG3  \x02\x0c FLG3_SET \xd6\x01 \x02 \x04\x02 END \xd6\x01 \x02
 CSCE TextClosev\x81\x1f\xc2\x02 END6\xf1

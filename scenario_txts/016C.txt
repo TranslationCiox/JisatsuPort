@@ -1,8 +1,7 @@
 START
 \x18\x06\x01\xa4\t3\x01\xc6\x04
-CSCE SCE016_001 \x06 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \xa0(\x0c"\x03^
+CSCE SCE016_001 \x06 SCE_DONE 
+FLG3 \x8c\x01 FLG2 \xa0( FLG2_SET \x03^
  
 紅葉\n　「……。あのねえ、アンタ、女の子に会うたびそんな適当なこ\n　　といってんじゃないでしょうね？@
 　　『僕はいつも君のこと見てるよ』ってアピール？@
@@ -11,12 +10,11 @@ FLAG\x02 \xa0(\x0c"\x03^
 紅葉\n　「……」@
 拓司\n　「……」\w\z
   
-FLAG J\x0c\x02"
+FLG3 J\x0c FLG3_SET
 WHAT .\\Data\\Script\\TextFunc.Fob RUNF \xe2\x01 \x02
 CMD1 TextOn RUNF \x10\x02 END
-CSCE SCE016_002 ,\x02 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \xa4(\x0c"\x03(
+CSCE SCE016_002 ,\x02 SCE_DONE 
+FLG3 \x8c\x01 FLG2 \xa4( FLG2_SET \x03(
  
 紅葉\n　「……リップ」@
 拓司\n　「はあ？」@
@@ -25,10 +23,9 @@ FLAG\x02 \xa4(\x0c"\x03(
 紅葉\n　「……」@
 拓司\n　「……」\w\z
   
-FLAG p\x02\x0c\x02" \xe2\x01 \x02 \x10\x02 END
-CSCE SCE016_003 J\x03 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \xa8(\x0c"\x035
+FLG3 p\x02\x0c FLG3_SET \xe2\x01 \x02 \x10\x02 END
+CSCE SCE016_003 J\x03 SCE_DONE 
+FLG3 \x8c\x01 FLG2 \xa8( FLG2_SET \x035
  
 沈黙の後、紅葉が突然、えい、と拓司の背中にパンチを飛ばした。\n@
 拓司\n　「いて！　なんだよ、お前！」@
@@ -37,5 +34,5 @@ FLAG\x02 \xa8(\x0c"\x035
 紅葉\n　「うるさいっ！」\
 
   
-FLAG \x8e\x03\x0c\x02" \xe2\x01 \x02 \x10\x02 END \xe2\x01 \x02
+FLG3 \x8e\x03\x0c FLG3_SET \xe2\x01 \x02 \x10\x02 END \xe2\x01 \x02
 CSCE TextClosev\x81\x1f\xa8\x04 END6\xf1

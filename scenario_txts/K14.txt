@@ -1,14 +1,13 @@
 START
 \xa1\x13\x01`B#\x01\\\x10  
-FLAG \xc8\x0c\x02"
+FLG3 \xc8\x0c FLG3_SET
 FOBT .\\Data\\Script\\Bg.Fobsv\x81\x1f  \x02
 CMD2 BgAutoFadeInsv\x81\x1fJ END  
-FLAG \x08\x01\x0c\x02"
+FLG3 \x08\x01\x0c FLG3_SET
 FOBT .\\Data\\Script\\Bgm.Fobv\x81\x1f\x88 \x02
 CMD1 PlayCD RUNF \xb2 END
-CSCE SCEK14_001 \xce \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \xb0\xad\x01\x0c"\x03\x9d
+CSCE SCEK14_001 \xce SCE_DONE 
+FLG3 \x8c\x01 FLG2 \xb0\xad\x01 FLG2_SET \x03\x9d
  
 　計画は、それから３日後に実行に移された。@
 カンナのお母さんが実家の法事で家を留守にする日。@
@@ -22,12 +21,11 @@ FLAG\x02 \xb0\xad\x01\x0c"\x03\x9d
 憑き物が落ちたようないきいきとした顔が鏡の中にあったのを、\n鮮やかに覚えている。@
 サッパリしていて、自分でもちょっとすてきかな、などと思った\nくらいだった。\w\z
   
-FLAG \x12\x01\x0c\x02"
+FLG3 \x12\x01\x0c FLG3_SET
 WHAT .\\Data\\Script\\TextFunc.Fob RUNF \xa6\x03 \x02
 CMD1 TextOn RUNF \xd4\x03 END
-CSCE SCEK14_002 \xf0\x03 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \xb4\xad\x01\x0c"\x03\xb4
+CSCE SCEK14_002 \xf0\x03 SCE_DONE 
+FLG3 \x8c\x01 FLG2 \xb4\xad\x01 FLG2_SET \x03\xb4
  
 　私はそのまま約束のビジネスホテルに向かった。@
 ××予備校の夏期講習を受ける地方の学生がよく長期利用するホ\nテルで、時期がちょうどそんな時期だったこともあって、私たち\nみたいな学生が２人で向かったからといってとりわけ怪しまれる\nことはないだろうと……そう目星をつけてのことだった。@
@@ -38,10 +36,9 @@ FLAG\x02 \xb4\xad\x01\x0c"\x03\xb4
 わくわくしていた。@
 ゆきといっしょに、どこか温泉にでも旅行に出かけるような、そ\nんな気分だった。\w\z
   
-FLAG 4\x04\x0c\x02" \xa6\x03 \x02 \xd4\x03 END
-CSCE SCEK14_003 >\x07 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \xb8\xad\x01\x0c"\x03k
+FLG3 4\x04\x0c FLG3_SET \xa6\x03 \x02 \xd4\x03 END
+CSCE SCEK14_003 >\x07 SCE_DONE 
+FLG3 \x8c\x01 FLG2 \xb8\xad\x01 FLG2_SET \x03k
  
 　８時を少し回ったころ、ドアがノックされた。@
 「－－月代さん。私」@
@@ -51,10 +48,9 @@ FLAG\x02 \xb8\xad\x01\x0c"\x03k
 「うん」とゆきはいった。@
 「終わったよ」\w\z
   
-FLAG \x82\x07\x0c\x02" \xa6\x03 \x02 \xd4\x03 END
-CSCE SCEK14_004 h\t \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \xbc\xad\x01\x0c"\x03z
+FLG3 \x82\x07\x0c FLG3_SET \xa6\x03 \x02 \xd4\x03 END
+CSCE SCEK14_004 h\t SCE_DONE 
+FLG3 \x8c\x01 FLG2 \xbc\xad\x01 FLG2_SET \x03z
  
 ドアの向こうに立っていたゆきは、さすがにひどく疲れているよ\nうに見えたけれど、いま人を殺してきたばかりには見えなかった。\n\p取り乱したような様子もなくて、むしろ穏やかさがゆきのまわり\nには漂っていた。@
 とてもリラックスしているみたいだった。@
@@ -64,10 +60,9 @@ FLAG\x02 \xbc\xad\x01\x0c"\x03z
 「かわいいね、その服」と私はいった。@
 「月代さんもかわいいよ」と、ゆきは照れくさそうにいった。\w\z
   
-FLAG \xac\t\x0c\x02" \xa6\x03 \x02 \xd4\x03 END
-CSCE SCEK14_005 \xce\x0b \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \xc0\xad\x01\x0c"\x03p
+FLG3 \xac\t\x0c FLG3_SET \xa6\x03 \x02 \xd4\x03 END
+CSCE SCEK14_005 \xce\x0b SCE_DONE 
+FLG3 \x8c\x01 FLG2 \xc0\xad\x01 FLG2_SET \x03p
  
 －－あとでわかったことだけれど、父親は死んではいなかった。\n睡眠中に左胸を包丁でひとつきにされた父親は、その日の昼過ぎ\nに瀕死の重体で発見されて、そして奇跡的に一命を取り留めた。@
 仕事を終えて家を出るときに、ゆきは玄関の鍵を閉め忘れたのだ\nった。@
@@ -75,14 +70,13 @@ FLAG\x02 \xc0\xad\x01\x0c"\x03p
 このことは、人生のひとつの真実を表しているように思う。@
 人生はやはり、オチのない悪い冗談なのだという真実を。\w\z
   
-FLAG \x12\x0c\x0c\x02" \xa6\x03 \x02 \xd4\x03 END
-CSCE SCEK14_006 \x0c\x0e \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \xc4\xad\x01\x0c"\x03FLAG_PRESENT
+FLG3 \x12\x0c\x0c FLG3_SET \xa6\x03 \x02 \xd4\x03 END
+CSCE SCEK14_006 \x0c\x0e SCE_DONE 
+FLG3 \x8c\x01 FLG2 \xc4\xad\x01 FLG2_SET \x03CHOICE_PRESENT
  
 でも、そんなことはあとでわかったことで、そのときの私たちは、\n何もかもを終わらせたんだという（あるいは終わらせるんだとい\nう）、さっぱりした気分でいっぱいだった。@
 \n私たちは、あらかじめ何軒かのドラッグストアから買い集めてお\nいた××××という薬を鞄から出して、銀紙の上に何瓶分かの錠\n剤をまとめて載せ、ライターであぶって、ドロドロに溶かした。@
 そして、その朝コンビニで買ってきたプレーンヨーグルトに混ぜ\nた。\w\z
   
-FLAG P\x0e\x0c\x02" \xa6\x03 \x02 \xd4\x03 END \xa6\x03 \x02
+FLG3 P\x0e\x0c FLG3_SET \xa6\x03 \x02 \xd4\x03 END \xa6\x03 \x02
 CSCE TextClosev\x81\x1f>\x10 END6\xf1

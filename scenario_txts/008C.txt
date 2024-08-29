@@ -2,26 +2,24 @@ START
 \x01\x06\x01\xa4\t3\x01\xa6\x04
 FOBT .\\Data\\Script\\Bgm.Fobv\x81\x1f\x06 \x02
 CMD1 StopCD RUNF 0 END  
-FLAG \xc8\x0c\x02"
+FLG3 \xc8\x0c FLG3_SET
 FOBT .\\Data\\Script\\Bg.Fobsv\x81\x1ff \x02
 CMD2 BgAutoFadeInsv\x81\x1f\x90 END
-CSCE SCE008_001 \xb4 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02  \x1c\x0c"\x031
+CSCE SCE008_001 \xb4 SCE_DONE 
+FLG3 \x8c\x01 FLG2  \x1c FLG2_SET \x031
  
 拓司\n　「……これが、おれの願望なのか？\p　違う。\pこんなこと、\n　　おれは望んじゃいない」@
 \n拓司は両手で顔を覆った。\pそしてひとつ、大きなためいきの塊\nを吐き出してから目を閉じた。\
 
   
-FLAG \xf8\x0c\x02"
+FLG3 \xf8\x0c FLG3_SET
 WHAT .\\Data\\Script\\TextFunc.Fob RUNF \xdc\x01 \x02
 CMD1 TextOn RUNF \n\x02 END
-CSCE SCE008_002 &\x02 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 $\x1c\x0c"  
-FLAG \x02\x0c\x02"  \x04
-FLAG \x06\x0c\x02"  \x08
-FLAG \x01\x0c\x02" \x06 \x02
+CSCE SCE008_002 &\x02 SCE_DONE 
+FLG3 \x8c\x01 FLG2 $\x1c FLG2_SET   
+FLG3 \x02\x0c FLG3_SET  \x04
+FLG3 \x06\x0c FLG3_SET  \x08
+FLG3 \x01\x0c FLG3_SET \x06 \x02
 CMD1 SePlay RUNF \xc4\x02 END\x03H
  
 再び目を開けると、そこには変わらず換気ファンが回り、沈黙が\nたゆたっている。@
@@ -35,7 +33,7 @@ CMD1 SePlay RUNF \xc4\x02 END\x03H
 おそらくは。\
 
   
-FLAG \xe0\x02\x0c\x02" \xdc\x01 \x02 \n\x02 END  
-FLAG \x02\x0c\x02" \x06 \x02
+FLG3 \xe0\x02\x0c FLG3_SET \xdc\x01 \x02 \n\x02 END  
+FLG3 \x02\x0c FLG3_SET \x06 \x02
 CMD1 SeStop RUNF `\x04 END \xdc\x01 \x02
 CSCE TextClosev\x81\x1f\x88\x04 END6\xf1

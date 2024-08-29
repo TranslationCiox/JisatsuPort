@@ -1,16 +1,15 @@
 START
 \x10\x06\x01\xa4\t3\x01&\x05  
-FLAG \xc8\x0c\x02"
+FLG3 \xc8\x0c FLG3_SET
 FOBT .\\Data\\Script\\Bg.Fobsv\x81\x1f  \x02
 CMD2 BgNormalFadeIn RUNF J END  
-FLAG \xc8\x0c\x02"   \x02
+FLG3 \xc8\x0c FLG3_SET   \x02
 CMD1 BgOnsv\x81\x1f\x94 END  
-FLAG \t\x01\x0c\x02"
+FLG3 \t\x01\x0c FLG3_SET
 FOBT .\\Data\\Script\\Bgm.Fobv\x81\x1f\xca \x02
 CMD1 PlayCD RUNF \xf4 END
-CSCE SCE001_001 \x10\x01 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 0\x11\x0c"\x03O
+CSCE SCE001_001 \x10\x01 SCE_DONE 
+FLG3 \x8c\x01 FLG2 0\x11 FLG2_SET \x03O
  
 世界。@
 世界。@
@@ -25,12 +24,11 @@ FLAG\x02 0\x11\x0c"\x03O
 きの世に義界はるなよっにて定でか？\
 
   
-FLAG T\x01\x0c\x02"
+FLG3 T\x01\x0c FLG3_SET
 WHAT .\\Data\\Script\\TextFunc.Fob RUNF \xb0\x02 \x02
 CMD1 TextOn RUNF \xde\x02 END
-CSCE SCE001_002 \xfa\x02 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 4\x11\x0c"\x03a
+CSCE SCE001_002 \xfa\x02 SCE_DONE 
+FLG3 \x8c\x01 FLG2 4\x11 FLG2_SET \x03a
  
 頭にぼんやりと薄い霧がかかっている。@
 ゲル化した思考が、ゆるゆると頭蓋を這って流れ落ちる。@
@@ -43,5 +41,5 @@ FLAG\x02 4\x11\x0c"\x03a
 なにか？\
 
   
-FLAG >\x03\x0c\x02" \xb0\x02 FLAG_DEPENDANT \xb0\x02 \x02
+FLG3 >\x03\x0c FLG3_SET \xb0\x02 FLAG_DEPENDANT \xb0\x02 \x02
 CSCE TextClosev\x81\x1f\x08\x05 END6\xf1

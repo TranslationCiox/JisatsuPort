@@ -1,11 +1,10 @@
 START
 <\x10\x01`B#\x01B\r  
-FLAG "\x0c\x02"
+FLG3 "\x0c FLG3_SET
 FOBT .\\Data\\Script\\Bg.Fobsv\x81\x1f  \x02
 CMD2 BgAutoFadeInsv\x81\x1fJ END
-CSCE SCE106_001 n \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 @\xb5\x0c"\x03\x89
+CSCE SCE106_001 n SCE_DONE 
+FLG3 \x8c\x01 FLG2 @\xb5 FLG2_SET \x03\x89
  
 　それから起こったことを、拓司ははっきりとは覚えていない。@
 すべてが熱病のなかで見た夢のごとく、混然として、切り離すこ\nとができない。@
@@ -19,12 +18,11 @@ FLAG\x02 @\xb5\x0c"\x03\x89
 なたねが鍵を飲み込んだのはそれからかもしれない……@
 そして気がつくと、教室中に血が飛び散っていた。\w\z
   
-FLAG \xb2\x0c\x02"
+FLG3 \xb2\x0c FLG3_SET
 WHAT .\\Data\\Script\\TextFunc.Fob RUNF \xf6\x02 \x02
 CMD1 TextOn RUNF $\x03 END
-CSCE SCE106_002 @\x03 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 D\xb5\x0c"\x03E
+CSCE SCE106_002 @\x03 SCE_DONE 
+FLG3 \x8c\x01 FLG2 D\xb5 FLG2_SET \x03E
  
 御堂\n　「勝ったあああああ俺が勝ったああああ思い知ったか俺がああ\n　　あああああ！」@
 \n御堂が叫んでいた。@
@@ -33,10 +31,9 @@ FLAG\x02 D\xb5\x0c"\x03E
 てらてらと光る臓物だ。@
 御堂はその中から鍵を探し出そうとしている。\w\z
   
-FLAG \x84\x03\x0c\x02" \xf6\x02 \x02 $\x03 END
-CSCE SCE106_003 \xd2\x04 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 H\xb5\x0c"\x03q
+FLG3 \x84\x03\x0c FLG3_SET \xf6\x02 \x02 $\x03 END
+CSCE SCE106_003 \xd2\x04 SCE_DONE 
+FLG3 \x8c\x01 FLG2 H\xb5 FLG2_SET \x03q
  
 いや、探し出そうとしているのは自分なのか……？@
 スクリーンの中の光景をのぞき込むように、客観的に『自分』を\n見つめている自分がどこかにいる…@
@@ -46,18 +43,16 @@ FLAG\x02 H\xb5\x0c"\x03q
 見よ、死んでいるはずのなたねの口がくわっと開いて、\n\p哄笑をとどろかせている……。@
 \nわは。\w\z
   
-FLAG \x16\x05\x0c\x02" \xf6\x02 \x02 $\x03 END
-CSCE SCE106_004 \x14\x07 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 L\xb5\x0c"\x03+
+FLG3 \x16\x05\x0c FLG3_SET \xf6\x02 \x02 $\x03 END
+CSCE SCE106_004 \x14\x07 SCE_DONE 
+FLG3 \x8c\x01 FLG2 L\xb5 FLG2_SET \x03+
  
 その笑い声は伝染病のようにあたりに広がり、あっというまに部\n屋中を充たした。@
 \nわは、わはは、はははははははははははははははははははははは\nははははははははは！\w\z
   
-FLAG X\x07\x0c\x02" \xf6\x02 \x02 $\x03 END
-CSCE SCE106_005 >\x08 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 P\xb5\x0c"\x03@
+FLG3 X\x07\x0c FLG3_SET \xf6\x02 \x02 $\x03 END
+CSCE SCE106_005 >\x08 SCE_DONE 
+FLG3 \x8c\x01 FLG2 P\xb5 FLG2_SET \x03@
  
 なにもかもがおかしくて、いくらでも笑いがこみ上げてきた。@
 ……なたねの口の中は赤い洞窟のように血に染まっていて……@
@@ -65,25 +60,23 @@ FLAG\x02 P\xb5\x0c"\x03@
 そこに７人の男女がいて、大声で笑っている……@
 腹を抱えてのたうち回っている。\w\z
   
-FLAG \x82\x08\x0c\x02" \xf6\x02 \x02 $\x03 END
-CSCE SCE106_006 \xbc\t \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 T\xb5\x0c"\x03P
+FLG3 \x82\x08\x0c FLG3_SET \xf6\x02 \x02 $\x03 END
+CSCE SCE106_006 \xbc\t SCE_DONE 
+FLG3 \x8c\x01 FLG2 T\xb5 FLG2_SET \x03P
  
 なるほど、世界とはその程度のものだったのだ。@
 頭のいかれた女の口の中に幻灯のごとく浮かび上がるような……\nそのようなものなのだ。@
 おれは－－と拓司は思った－－おれははなからありもしないもの\nをあると思いこんで、必死でうろつき回っていたのだ。@
 なにもおかしくなどなかったが、いくらでも笑いがこみ上げてき\nた。\w\z
   
-FLAG \n\x0c\x02" \xf6\x02 \x02 $\x03 END
-CSCE SCE106_007 z\x0b \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 X\xb5\x0c"\x03H
+FLG3 \n\x0c FLG3_SET \xf6\x02 \x02 $\x03 END
+CSCE SCE106_007 z\x0b SCE_DONE 
+FLG3 \x8c\x01 FLG2 X\xb5 FLG2_SET \x03H
  
 笑いの渦に身を任せながら、拓司は「終わったな」と感じていた。\n\p世界が溶け落ちていった。@
 なにもかもを……笑い声さえのみこんで、雨だれのように溶けて\n落ちていった。@
 ザザザ……ザザッ……ザアザザザ……ザアアアアア……ザアザア\nアアアアアア……@
 \n最後にそんな音が、聞こえた。\w\z
   
-FLAG \xbe\x0b\x0c\x02" \xf6\x02 \x02 $\x03 END \xf6\x02 \x02
+FLG3 \xbe\x0b\x0c FLG3_SET \xf6\x02 \x02 $\x03 END \xf6\x02 \x02
 CSCE TextClosev\x81\x1f$\r END6\xf1

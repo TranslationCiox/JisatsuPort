@@ -1,8 +1,7 @@
 START
 j$\x01`B#\x01, 
-CSCE SCE232_004 \x06 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 ,z\x01\x0c"\x03\xa2
+CSCE SCE232_004 \x06 SCE_DONE 
+FLG3 \x8c\x01 FLG2 ,z\x01 FLG2_SET \x03\xa2
  
 　けれども最近、なたねには、お義父さんにもいえない秘密があ\nったのです。@
 　それは夢のことでした。@
@@ -12,12 +11,11 @@ FLAG\x02 ,z\x01\x0c"\x03\xa2
 　夢のなかで宇宙人に見つめられると、なたねは怖くて怖くて身\n動きがとれなくなってしまいうのでした。\p宇宙人はなたねが動\nけないのをいいことに、キスをしたり、身体を触ったりしました。\n\p　そしていつも最後には、管のようなものをなたねのいやらしい\nところに突き刺して、毒の液を身体の中に流し込むのです。\
 
   
-FLAG J\x0c\x02"
+FLG3 J\x0c FLG3_SET
 WHAT .\\Data\\Script\\TextFunc.Fob RUNF \xf2\x02 \x02
 CMD1 TextOn RUNF  \x03 END
-CSCE SCE232_005 <\x03 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 0z\x01\x0c"\x03\xdc
+CSCE SCE232_005 <\x03 SCE_DONE 
+FLG3 \x8c\x01 FLG2 0z\x01 FLG2_SET \x03\xdc
  
 　宇宙人の夢を見た朝は、とても嫌な気分になりました。@
 　頭がガンガン痛くて、胸がムカムカしました。@
@@ -30,10 +28,9 @@ FLAG\x02 0z\x01\x0c"\x03\xdc
 　恥ずかしい気持ちはしましたが、お義父さんしか相談できる人\nがいなかったのです。\
 
   
-FLAG \x80\x03\x0c\x02" \xf2\x02 \x02  \x03 END
-CSCE SCE232_006 *\x07 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 4z\x01\x0c"\x03\xf6
+FLG3 \x80\x03\x0c FLG3_SET \xf2\x02 \x02  \x03 END
+CSCE SCE232_006 *\x07 SCE_DONE 
+FLG3 \x8c\x01 FLG2 4z\x01 FLG2_SET \x03\xf6
  
 　その夜、なたねはお義父さんの部屋のドアをノックしました。@
 　「お義父さん、相談があるの」@
@@ -48,10 +45,9 @@ FLAG\x02 4z\x01\x0c"\x03\xf6
 　なたねはとてもショックでした。\pでも、写真を見ていると、ま\nたいやらしい気持ちがむずむずとわいてきて、気がつくとなたね\nは、写真を１枚ポケットに忍び込ませて、部屋を出ていたのです。\n\
 
   
-FLAG n\x07\x0c\x02" \xf2\x02 \x02  \x03 END
-CSCE SCE232_007 \x80\x0b \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 8z\x01\x0c"\x03\xdd
+FLG3 n\x07\x0c FLG3_SET \xf2\x02 \x02  \x03 END
+CSCE SCE232_007 \x80\x0b SCE_DONE 
+FLG3 \x8c\x01 FLG2 8z\x01 FLG2_SET \x03\xdd
  
 　その写真は、金髪の女の子が、大人の男の人にいやらしいこと\nをされている写真でした。@
 　女の子は、ひとりの男の人のあそこを口にくわえて、もうひと\nりの男の人のあそこを手で握っていました。\p男の人のあそこから\nはいやらしい液が噴き出していて、それは女の子の顔や肩や胸に、\nべったりとこびりついていました。\p女の子はあまった手で、自分\nのいやらしいところを大きく開いて見せていました。@
@@ -59,10 +55,9 @@ FLAG\x02 8z\x01\x0c"\x03\xdd
 　夢のなかで宇宙人にいたずらされるのは、あいかわらず嫌な気\n分でした。\pけれども一度、写真の女の子と同じように、いやらし\nい液を顔にかけられたときは、信じられないくらいどきどきした\n気持ちになりました。\pそして翌朝、そんな自分が情けなくて、悲\nしくて、泣いてしまうのでした。\
 
   
-FLAG \xc4\x0b\x0c\x02" \xf2\x02 \x02  \x03 END
-CSCE SCE232_008 r\x0f \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 <z\x01\x0c"\x03\xf8
+FLG3 \xc4\x0b\x0c FLG3_SET \xf2\x02 \x02  \x03 END
+CSCE SCE232_008 r\x0f SCE_DONE 
+FLG3 \x8c\x01 FLG2 <z\x01 FLG2_SET \x03\xf8
  
 　神様がそんなことをお見逃しになるはずがありません。@
 　なたねの勉強の成績は信じられないくらい下がってしまい、つ\nいにお義父さんが学校に呼び出されてしまうことになりました。@
@@ -75,10 +70,9 @@ FLAG\x02 <z\x01\x0c"\x03\xf8
 　なたねは『夢うらない』の本を読んで、そこに書いてあった悪\nい夢の撃退法を試すことにしました。\p本には、「真っ黒に塗った\n長い針を枕の下に隠しておいて、夢のなかで悪魔に突き刺すと、\n二度と悪夢は見なくなる」と書いてありました。\
 
   
-FLAG \xb6\x0f\x0c\x02" \xf2\x02 \x02  \x03 END
-CSCE SCE232_009 \xd0\x13 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 @z\x01\x0c"\x03\xd3
+FLG3 \xb6\x0f\x0c FLG3_SET \xf2\x02 \x02  \x03 END
+CSCE SCE232_009 \xd0\x13 SCE_DONE 
+FLG3 \x8c\x01 FLG2 @z\x01 FLG2_SET \x03\xd3
  
 　宇宙人がいつもどおりになたねの身体にのしかかったとき、な\nたねはコッソリと枕の下に手を入れました。\p指の先に、眠る前に\n隠しておいた黒くて長い針がひんやりと触れました。@
 　宇宙人の弱点を、一発で突き刺さなければいけません。@
@@ -91,13 +85,12 @@ FLAG\x02 @z\x01\x0c"\x03\xd3
 　えいやっ！\
 
   
-FLAG \x14\x14\x0c\x02" \xf2\x02 \x02  \x03 END  
-FLAG *\x0c\x02"
+FLG3 \x14\x14\x0c FLG3_SET \xf2\x02 \x02  \x03 END  
+FLG3 *\x0c FLG3_SET
 FOBT .\\Data\\Script\\Bg.Fobsv\x81\x1f\xb4\x17 \x02
 CMD1 BgOnsv\x81\x1f\xde\x17 END
-CSCE SCE232_010 \xfa\x17 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 Dz\x01\x0c"\x03\xa2
+CSCE SCE232_010 \xfa\x17 SCE_DONE 
+FLG3 \x8c\x01 FLG2 Dz\x01 FLG2_SET \x03\xa2
  
 　なたねは宇宙人の大きな黒い目に、ぐさりと長い針を突き刺し\nました。@
 　宇宙人は、うぎゃああああああ、と悲鳴を上げ、眼に針をつき\n立たせたまま、走って逃げてゆきました。@
@@ -107,12 +100,11 @@ FLAG\x02 Dz\x01\x0c"\x03\xa2
 　夢から覚めたというのに、なたねのパジャマの前ははだけたま\nま。\pからだはべとべとして、宇宙人がつけた唾の、いやな匂いが\nこびりついています。\pおそるおそる手を伸ばすと、いやらしいと\nころから、見たこともないねばねばした液があふれ出しています。\n\p　そして、開けっ放しの部屋のドアの向こうから、なにか奇妙な\n音が聞こえてくるではあいませんか！\
 
   
-FLAG >\x18\x0c\x02" \xf2\x02 \x02  \x03 END  
-FLAG \xc8\x0c\x02" \xb4\x17 \x02
+FLG3 >\x18\x0c FLG3_SET \xf2\x02 \x02  \x03 END  
+FLG3 \xc8\x0c FLG3_SET \xb4\x17 \x02
 CMD2 BgAutoFadeInsv\x81\x1f&\x1b END
-CSCE SCE232_011 J\x1b \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 Hz\x01\x0c"\x03|
+CSCE SCE232_011 J\x1b SCE_DONE 
+FLG3 \x8c\x01 FLG2 Hz\x01 FLG2_SET \x03|
  
 　うううううう@
 　うううううう@
@@ -131,11 +123,10 @@ FLAG\x02 Hz\x01\x0c"\x03|
 　なたねは思い切って、お義父さんの部屋のドアをばたん！　と\n　開きました。\
 
   
-FLAG \x8e\x1b\x0c\x02" \xf2\x02 \x02  \x03 END  
-FLAG \xcb\x0c\x02" \xb4\x17 \x02 \xde\x17 END
-CSCE SCE232_012 \xec\x1d \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 Lz\x01\x0c"\x03f
+FLG3 \x8e\x1b\x0c FLG3_SET \xf2\x02 \x02  \x03 END  
+FLG3 \xcb\x0c FLG3_SET \xb4\x17 \x02 \xde\x17 END
+CSCE SCE232_012 \xec\x1d SCE_DONE 
+FLG3 \x8c\x01 FLG2 Lz\x01 FLG2_SET \x03f
  
 　そこには、宇宙人のゴムマスクを被ったお義父さんが立ってい\n　ました。@
 　眼からは、まるでアンテナみたいに長い針が突きだしていまし\n　た。@
@@ -147,5 +138,5 @@ FLAG\x02 Lz\x01\x0c"\x03f
 　おしまい。\
 
   
-FLAG 0\x1e\x0c\x02" \xf2\x02 \x02  \x03 END \xf2\x02 \x02
+FLG3 0\x1e\x0c FLG3_SET \xf2\x02 \x02  \x03 END \xf2\x02 \x02
 CSCE TextClosev\x81\x1f\x0e  END6\xf1

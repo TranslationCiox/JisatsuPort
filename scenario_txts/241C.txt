@@ -1,11 +1,10 @@
 START
 \xf7+\x01`B#\x01f$  
-FLAG 2\x0c\x02"
+FLG3 2\x0c FLG3_SET
 FOBT .\\Data\\Script\\Bg.Fobsv\x81\x1f  \x02
 CMD2 BgAutoFadeInsv\x81\x1fJ END
-CSCE SCE241_001 n \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 0\x88\x01\x0c"\x03T
+CSCE SCE241_001 n SCE_DONE 
+FLG3 \x8c\x01 FLG2 0\x88\x01 FLG2_SET \x03T
  
 カンナが立ち上がった。@
 拓司はカンナの目の奥を見て、ちいさく頷いた。@
@@ -16,22 +15,20 @@ FLAG\x02 0\x88\x01\x0c"\x03T
 \n紅葉\n　「どっちでもいい……でもいまは……動きたく……ない」@
 \n紅葉がうつむく。\w\z
   
-FLAG \xb2\x0c\x02"
+FLG3 \xb2\x0c FLG3_SET
 WHAT .\\Data\\Script\\TextFunc.Fob RUNF "\x02 \x02
 CMD1 TextOn RUNF P\x02 END
-CSCE SCE241_002 l\x02 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 4\x88\x01\x0c"\x03=
+CSCE SCE241_002 l\x02 SCE_DONE 
+FLG3 \x8c\x01 FLG2 4\x88\x01 FLG2_SET \x03=
  
 錦城\n　「はっ。あなた正気？　出ていくがいいわ勝手に出ていって、\n　　死んでしまうがいいわ！　この人殺し！　人殺しッ！」@
 \n錦城は最後まで強気を装っていた。@
 \n拓司\n　「わかった。それじゃ、カンナ」@
 カンナ\n　「ええ……虎菱くん」\w\z
   
-FLAG \xb0\x02\x0c\x02" "\x02 \x02 P\x02 END
-CSCE SCE241_003 \xde\x03 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 8\x88\x01\x0c"\x03M
+FLG3 \xb0\x02\x0c FLG3_SET "\x02 \x02 P\x02 END
+CSCE SCE241_003 \xde\x03 SCE_DONE 
+FLG3 \x8c\x01 FLG2 8\x88\x01 FLG2_SET \x03M
  
 拓司は手を伸ばした。@
 ジンジンと痛む腕をもちあげて、カンナに差し出した。@
@@ -42,10 +39,9 @@ FLAG\x02 8\x88\x01\x0c"\x03M
 拓司\n　「いいんだ」@
 \n拓司はカンナを制した。\w\z
   
-FLAG "\x04\x0c\x02" "\x02 \x02 P\x02 END
-CSCE SCE241_004 \x90\x05 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 <\x88\x01\x0c"\x03\x8e
+FLG3 "\x04\x0c FLG3_SET "\x02 \x02 P\x02 END
+CSCE SCE241_004 \x90\x05 SCE_DONE 
+FLG3 \x8c\x01 FLG2 <\x88\x01 FLG2_SET \x03\x8e
  
 拓司\n　「もう、そんなことは関係ないんだ。設定なんかどうでもいい。\n　　\p俺はお前が好きだ。同じ傷を負っているとか、背のたかさが\n　　どうだとか、顔立ちがどうだとか、性格がどうだとか、口調\n　　がどうだとか……そんなことを抜きにして、お前という人間\n　　が好きなんだ。だから、いいんだ」@
 カンナ\n　「……」@
@@ -56,26 +52,24 @@ FLAG\x02 <\x88\x01\x0c"\x03\x8e
 カンナが握り返すのを確認してから、拓司は歩み始めた。@
 ドアを開き、外の世界へと。\w\z
   
-FLAG \xd4\x05\x0c\x02" "\x02 \x02 P\x02 END
-CSCE SCE241_005 F\x08 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 @\x88\x01\x0c"  
-FLAG \x0c\x02"  \x04
-FLAG \x17\x0c\x02"  \x08
-FLAG \x0c\x02"
+FLG3 \xd4\x05\x0c FLG3_SET "\x02 \x02 P\x02 END
+CSCE SCE241_005 F\x08 SCE_DONE 
+FLG3 \x8c\x01 FLG2 @\x88\x01 FLG2_SET   
+FLG3 \x0c FLG3_SET  \x04
+FLG3 \x17\x0c FLG3_SET  \x08
+FLG3 \x0c FLG3_SET
 FOBT .\\Data\\Script\\Bgm.Fobv\x81\x1f\xd8\x08 \x02
 CSCE SePlayExsv\x81\x1f\x02\t END  
-FLAG \xc8\x0c\x02"   \x02 J END\x03)
+FLG3 \xc8\x0c FLG3_SET   \x02 J END\x03)
  
 拓司\n　「これは……」@
 \n思わず絶句した。@
 すでに拓司の知っている学校ではなかった。@
 というよりもそこは、拓司の知っているどの場所とも異なってい\nた。\w\z
   
-FLAG V\t\x0c\x02" "\x02 \x02 P\x02 END
-CSCE SCE241_006 4\n \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 D\x88\x01\x0c"\x03\x94
+FLG3 V\t\x0c FLG3_SET "\x02 \x02 P\x02 END
+CSCE SCE241_006 4\n SCE_DONE 
+FLG3 \x8c\x01 FLG2 D\x88\x01 FLG2_SET \x03\x94
  
 眼前に広がっているのは、究極の荒廃だった。@
 天井にびっしりと張り巡らされたクモの巣にも似て、壁には無数\nのひびが入っている。@
@@ -86,10 +80,9 @@ FLAG\x02 D\x88\x01\x0c"\x03\x94
 まるで、何十年も放棄されていた場所のようだ。@
 あの工業団地の廃墟にさらなる歳月の洗礼を加えて、行き着く果\nてまで荒廃を深化させた－－そんな感じがする。\w\z
   
-FLAG x\n\x0c\x02" "\x02 \x02 P\x02 END
-CSCE SCE241_007 \x02\r \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 H\x88\x01\x0c"\x03`
+FLG3 x\n\x0c FLG3_SET "\x02 \x02 P\x02 END
+CSCE SCE241_007 \x02\r SCE_DONE 
+FLG3 \x8c\x01 FLG2 H\x88\x01 FLG2_SET \x03`
  
 腐敗した死体が転がっているのを予想していたが、そのようなも\nのはどこにもない。@
 骨や服のかけらすら見つけることができない。@
@@ -97,10 +90,9 @@ FLAG\x02 H\x88\x01\x0c"\x03`
 また、しなびた皮膚のような、毛髪の一部のような、正体不明の\nものがべったりと張り付いている壁もある。@
 もしかしたら、それこそが学生たちのなれの果てなのかもしれな\nい……。\w\z
   
-FLAG F\r\x0c\x02" "\x02 \x02 P\x02 END
-CSCE SCE241_008 \x0f \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 L\x88\x01\x0c"\x03\x82
+FLG3 F\r\x0c FLG3_SET "\x02 \x02 P\x02 END
+CSCE SCE241_008 \x0f SCE_DONE 
+FLG3 \x8c\x01 FLG2 L\x88\x01 FLG2_SET \x03\x82
  
 カンナ\n　「どうしたの、これ……？　まるで……まるで……」@
 拓司\n　「何十年も経っているみたいだ。\pあの部屋にいるあいだに、い\n　　ったい何があったんだ……？」@
@@ -108,10 +100,9 @@ FLAG\x02 L\x88\x01\x0c"\x03\x82
 拓司はその手の上に自分の手を重ねて、力強く頷いた。@
 \n拓司\n　「考えるのはやめよう。\p俺たちは最初から、起こっていること\n　　の意味を考え続けてきた。\p説明できない状況に筋を一本通そ\n　　うと……あがいてきた。\pでも、そんなの無駄なんだ。\p意味がわ\n　　からないんじゃない。\p意味なんてないんだ」\w\z
   
-FLAG D\x0f\x0c\x02" "\x02 \x02 P\x02 END
-CSCE SCE241_009 \x86\x11 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 P\x88\x01\x0c"\x03\xa0
+FLG3 D\x0f\x0c FLG3_SET "\x02 \x02 P\x02 END
+CSCE SCE241_009 \x86\x11 SCE_DONE 
+FLG3 \x8c\x01 FLG2 P\x88\x01 FLG2_SET \x03\xa0
  
 　２人の足音は、校舎の中に大きく響き渡った。@
 不自然な響き方だった。@
@@ -124,10 +115,9 @@ FLAG\x02 P\x88\x01\x0c"\x03\xa0
 まっすぐ歩いているつもりなのに、壁に体当たりしているときも\nある。@
 それでも２人は歩き続けた。\w\z
   
-FLAG \xca\x11\x0c\x02" "\x02 \x02 P\x02 END
-CSCE SCE241_010 \x84\x14 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 T\x88\x01\x0c"\x03M
+FLG3 \xca\x11\x0c FLG3_SET "\x02 \x02 P\x02 END
+CSCE SCE241_010 \x84\x14 SCE_DONE 
+FLG3 \x8c\x01 FLG2 T\x88\x01 FLG2_SET \x03M
  
 　階段を降り、廊下を歩いてゆく。@
 渡り廊下を通って、旧校舎に入る。@
@@ -135,10 +125,9 @@ FLAG\x02 T\x88\x01\x0c"\x03M
 しかし、拓司は身体の隅々に残ったエネルギーを総動員して、そ\nのまえに立った。@
 \n拓司\n　「……ここだ」\w\z
   
-FLAG \xc8\x14\x0c\x02" "\x02 \x02 P\x02 END
-CSCE SCE241_011 6\x16 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 X\x88\x01\x0c"\x03=
+FLG3 \xc8\x14\x0c FLG3_SET "\x02 \x02 P\x02 END
+CSCE SCE241_011 6\x16 SCE_DONE 
+FLG3 \x8c\x01 FLG2 X\x88\x01 FLG2_SET \x03=
  
 　壁だ。@
 旧保健室の扉を塗り固めたという壁。@
@@ -147,11 +136,10 @@ FLAG\x02 X\x88\x01\x0c"\x03=
 この壁の奥には何が隠されているのだろうか？@
 いや、そもそもそこには何かがあるのだろうか？\w\z
   
-FLAG z\x16\x0c\x02" "\x02 \x02 P\x02 END  
-FLAG 3\x0c\x02"   \x02 J END
-CSCE SCE241_012 \xdc\x17 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \\\x88\x01\x0c"\x03M
+FLG3 z\x16\x0c FLG3_SET "\x02 \x02 P\x02 END  
+FLG3 3\x0c FLG3_SET   \x02 J END
+CSCE SCE241_012 \xdc\x17 SCE_DONE 
+FLG3 \x8c\x01 FLG2 \\\x88\x01 FLG2_SET \x03M
  
 　拓司は考えなかった。@
 /*▲SE15　再生（再生終了を待たず先へ進む）*/\a2,0,15,0,手にした椅子の脚を、がつがつと壁に叩き付けてゆく。@
@@ -160,10 +148,9 @@ FLAG\x02 \\\x88\x01\x0c"\x03M
 拓司\n　「ああ！　一緒に……」@
 カンナ\n　「ええ！」\w\z
   
-FLAG  \x18\x0c\x02" "\x02 \x02 P\x02 END
-CSCE SCE241_013 \x8e\x19 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 `\x88\x01\x0c"\x03y
+FLG3  \x18\x0c FLG3_SET "\x02 \x02 P\x02 END
+CSCE SCE241_013 \x8e\x19 SCE_DONE 
+FLG3 \x8c\x01 FLG2 `\x88\x01 FLG2_SET \x03y
  
 /*▲SE15　ループ再生（再生終了を待たず先へ進む）*/\a2,0,15,1,　２人は取り憑かれたように、椅子の脚を壁に叩き付けた。@
 一箇所に狙いを絞って叩きつけてゆく。@
@@ -172,10 +159,9 @@ FLAG\x02 `\x88\x01\x0c"\x03y
 跪いて神の赦しと救済を求める罪人。@
 不浄の地と約束の地を隔てる結界の門を必至で叩き続ける放浪者\n……。\w/*▲SE　停止*/\a4,0,0,0,\z
   
-FLAG \xd2\x19\x0c\x02" "\x02 \x02 P\x02 END
-CSCE SCE241_014 \xf0\x1b \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 d\x88\x01\x0c"\x03\x96
+FLG3 \xd2\x19\x0c FLG3_SET "\x02 \x02 P\x02 END
+CSCE SCE241_014 \xf0\x1b SCE_DONE 
+FLG3 \x8c\x01 FLG2 d\x88\x01 FLG2_SET \x03\x96
  
 拓司\n　「！」@
 \nあっけない手応えに驚くと、ガタン、と大きめのコンクリート片\nが床に落ちた。@
@@ -191,10 +177,9 @@ FLAG\x02 d\x88\x01\x0c"\x03\x96
 これは残された最後の意味のある行為なのだ。@
 そしてそこに救済が用意されていなかった場合、どうすればいい\nのか？\w\z
   
-FLAG 4\x1c\x0c\x02" "\x02 \x02 P\x02 END
-CSCE SCE241_015 \xc6\x1e \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 h\x88\x01\x0c"\x03A
+FLG3 4\x1c\x0c FLG3_SET "\x02 \x02 P\x02 END
+CSCE SCE241_015 \xc6\x1e SCE_DONE 
+FLG3 \x8c\x01 FLG2 h\x88\x01 FLG2_SET \x03A
  
 と、突然カンナの手がピタリと止まった。@
 \nカンナ\n　「！」@
@@ -203,22 +188,20 @@ FLAG\x02 h\x88\x01\x0c"\x03A
 \nカンナはすぐに作業に戻ったが、しばらくすると、再び身体を凍\nり付かせた。@
 顔には、はっきりとした恐怖が張り付いている。\w\z
   
-FLAG \n\x1f\x0c\x02" "\x02 \x02 P\x02 END
-CSCE SCE241_016 H  \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 l\x88\x01\x0c"\x03#
+FLG3 \n\x1f\x0c FLG3_SET "\x02 \x02 P\x02 END
+CSCE SCE241_016 H  SCE_DONE 
+FLG3 \x8c\x01 FLG2 l\x88\x01 FLG2_SET \x03#
  
 カンナ\n　「やっぱり聞こえる！　なに？　なんなの、この音ッ？！」@
 拓司\n　「……音？」@
 \n拓司は作業を中断して、耳を澄ませた。\w\z
   
-FLAG \x8c \x0c\x02" "\x02 \x02 P\x02 END
-CSCE SCE241_017 R! \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 p\x88\x01\x0c"  
-FLAG \x02\x0c\x02"  \x04
-FLAG \x10\x0c\x02"  \x08
-FLAG \x01\x0c\x02" \xd8\x08 \x02
+FLG3 \x8c \x0c FLG3_SET "\x02 \x02 P\x02 END
+CSCE SCE241_017 R! SCE_DONE 
+FLG3 \x8c\x01 FLG2 p\x88\x01 FLG2_SET   
+FLG3 \x02\x0c FLG3_SET  \x04
+FLG3 \x10\x0c FLG3_SET  \x08
+FLG3 \x01\x0c FLG3_SET \xd8\x08 \x02
 CMD1 SePlay RUNF \xf0! END\x03b
  
 地の底から、ゴ、ゴ、ゴ、ゴ、ゴ……と低い音が響いてくる。@
@@ -231,12 +214,12 @@ CMD1 SePlay RUNF \xf0! END\x03b
 わかっていた。@
 最終波動がやってきたのだ。\w\z
   
-FLAG \x0c"\x0c\x02" "\x02 \x02 P\x02 END\x03
-FLAG
+FLG3 \x0c"\x0c FLG3_SET "\x02 \x02 P\x02 END\x03
+FLG3
 CHOICE
 シェルターに駆け戻る\n穴を広げる\n\l0,2,
 ENDCHOICE
 
   
-FLAG \xce#\x0c\x02" "\x02 \x02 P\x02 END "\x02 \x02
+FLG3 \xce#\x0c FLG3_SET "\x02 \x02 P\x02 END "\x02 \x02
 CSCE TextClosev\x81\x1fH$ END6\xf1

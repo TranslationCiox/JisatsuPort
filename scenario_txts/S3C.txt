@@ -1,11 +1,10 @@
 START
 G\x1a\x01`B#\x01j\x16  
-FLAG \x04\x01\x0c\x02"
+FLG3 \x04\x01\x0c FLG3_SET
 FOBT .\\Data\\Script\\Bgm.Fobv\x81\x1f  \x02
 CMD1 PlayCD RUNF J END
-CSCE SCES03_001 f \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \xd0\xb5\x01\x0c"\x03\x8b
+CSCE SCES03_001 f SCE_DONE 
+FLG3 \x8c\x01 FLG2 \xd0\xb5\x01 FLG2_SET \x03\x8b
  
 ずっと前に手術を受けて、身体はうんと良くなったの。@
 でも、みんなと一緒に運動とかはできなかったし、旅行とかにも\n行けなかった。\pだからかな、なんだかみんなとはあまり仲良くな\nれなかった。\pどんなに一緒にいても、結局最後のところで私は違\nうんだな、って思ってた。@
@@ -17,12 +16,11 @@ FLAG\x02 \xd0\xb5\x01\x0c"\x03\x8b
 よく夢を見たの。\
 
   
-FLAG \xaa\x0c\x02"
+FLG3 \xaa\x0c FLG3_SET
 WHAT .\\Data\\Script\\TextFunc.Fob RUNF \xf6\x02 \x02
 CMD1 TextOn RUNF $\x03 END
-CSCE SCES03_002 @\x03 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \xd4\xb5\x01\x0c"\x03\x89
+CSCE SCES03_002 @\x03 SCE_DONE 
+FLG3 \x8c\x01 FLG2 \xd4\xb5\x01 FLG2_SET \x03\x89
  
 クラスのみんなと宇宙船で旅行してるとね、事故が起きるの。@
 脱出ポットには人数制限があって、どうしても１人だけ宇宙船に\n残らなくちゃいけない。\pみんな困った顔で、うつむいてる。@
@@ -35,10 +33,9 @@ FLAG\x02 \xd4\xb5\x01\x0c"\x03\x89
 なんだかとても悲しかった。\
 
   
-FLAG \x84\x03\x0c\x02" \xf6\x02 \x02 $\x03 END
-CSCE SCES03_003 \xe2\x05 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \xd8\xb5\x01\x0c"\x03\xde
+FLG3 \x84\x03\x0c FLG3_SET \xf6\x02 \x02 $\x03 END
+CSCE SCES03_003 \xe2\x05 SCE_DONE 
+FLG3 \x8c\x01 FLG2 \xd8\xb5\x01 FLG2_SET \x03\xde
  
 手術してからも、本当のお友達はできなかった。@
 ずっと昔は、みんなが気を使って友達のふりをしてくれるのが嫌\nで仕方がなかったけど、学生になってからは、それすらなくなち\nゃった。@
@@ -53,10 +50,9 @@ FLAG\x02 \xd8\xb5\x01\x0c"\x03\xde
 朝は公園でぼんやりして、９時４５分になったら図書館に行って、\nお昼まで本を読むの。\pそれからデパートに行って、いろんなもの\nを見て、屋上に行く\p。平日の昼間の屋上って、誰もいないんだよ。\n\pそんな、誰もいない屋上で、ドルチェとお話ししてた。\
 
   
-FLAG &\x06\x0c\x02" \xf6\x02 \x02 $\x03 END
-CSCE SCES03_004 \xd8\t \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \xdc\xb5\x01\x0c"\x03\xa3
+FLG3 &\x06\x0c FLG3_SET \xf6\x02 \x02 $\x03 END
+CSCE SCES03_004 \xd8\t SCE_DONE 
+FLG3 \x8c\x01 FLG2 \xdc\xb5\x01 FLG2_SET \x03\xa3
  
 「ねえドルチェ」@
 『なんニャ、早桃ちゃん？』@
@@ -69,13 +65,12 @@ FLAG\x02 \xdc\xb5\x01\x0c"\x03\xa3
 『答はね、早桃ちゃん。\p風のなかにあるニャ』\
 
   
-FLAG \x1c\n\x0c\x02" \xf6\x02 \x02 $\x03 END  
-FLAG B\x0c\x02"
+FLG3 \x1c\n\x0c FLG3_SET \xf6\x02 \x02 $\x03 END  
+FLG3 B\x0c FLG3_SET
 FOBT .\\Data\\Script\\Bg.Fobsv\x81\x1f\xfc\x0c \x02
 CMD2 BgAutoFadeInsv\x81\x1f&\r END
-CSCE SCES03_005 J\r \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \xe0\xb5\x01\x0c"\x03|
+CSCE SCES03_005 J\r SCE_DONE 
+FLG3 \x8c\x01 FLG2 \xe0\xb5\x01 FLG2_SET \x03|
  
 ある日、いつもみたいに屋上でぼんやりしていると、声をかけら\nれたの。\pお父さんと同じくらいの歳の人で……あ、前のお父さん\nだよ……すごく優しそうな人だった。@
 一緒にご飯食べない？\p　ってその人はいった。@
@@ -87,11 +82,10 @@ FLAG\x02 \xe0\xb5\x01\x0c"\x03|
 でも、どれくらいなの？　って。\
 
   
-FLAG \x8e\r\x0c\x02" \xf6\x02 \x02 $\x03 END  
-FLAG \xc8\x0c\x02" \xfc\x0c \x02 &\r END
-CSCE SCES03_006 \xec\x0f \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \xe4\xb5\x01\x0c"\x03FLAG_PRESENT
+FLG3 \x8e\r\x0c FLG3_SET \xf6\x02 \x02 $\x03 END  
+FLG3 \xc8\x0c FLG3_SET \xfc\x0c \x02 &\r END
+CSCE SCES03_006 \xec\x0f SCE_DONE 
+FLG3 \x8c\x01 FLG2 \xe4\xb5\x01 FLG2_SET \x03CHOICE_PRESENT
  
 ……びっくりした？@
 言い訳する気はないよ。\pでも、ひとつだけ信じて欲しいのは、お\n金なんかどうでも良かったってこと。\pただ、こういうときは、値\n段を聞いておくものじゃないかなと思ったから、聞いただけ。@
@@ -102,10 +96,9 @@ FLAG\x02 \xe4\xb5\x01\x0c"\x03FLAG_PRESENT
 特別扱いじゃなくて、普通の、どこにでもいる女の子として扱っ\nてもらってるんだなって。\
 
   
-FLAG 0\x10\x0c\x02" \xf6\x02 \x02 $\x03 END
-CSCE SCES03_007 \x12\x12 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \xe8\xb5\x01\x0c"\x03\xe2
+FLG3 0\x10\x0c FLG3_SET \xf6\x02 \x02 $\x03 END
+CSCE SCES03_007 \x12\x12 SCE_DONE 
+FLG3 \x8c\x01 FLG2 \xe8\xb5\x01 FLG2_SET \x03\xe2
  
 一緒にご飯を食べて、いろんなお話をした。@
 みんな、ウソのお話。早桃は活発なクラスの人気者で、いろいろ\n遊びなんかも経験してる子って設定なの。@
@@ -121,6 +114,6 @@ FLAG\x02 \xe8\xb5\x01\x0c"\x03\xe2
 私は道に落ちている石ころみたいなものじゃなくて、ちゃんと価\n値がある人間なんだって。\
 
   
-FLAG V\x12\x0c\x02" \xf6\x02 \x02 $\x03 END   \x02
+FLG3 V\x12\x0c FLG3_SET \xf6\x02 \x02 $\x03 END   \x02
 CMD1 StopCD RUNF $\x16 END \xf6\x02 \x02
 CSCE TextClosev\x81\x1fL\x16 END6\xf1

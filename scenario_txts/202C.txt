@@ -1,8 +1,7 @@
 START
 \xdd\x05\x01\xa4\t3\x01\xa0\x04
-CSCE SCE202_001 \x06 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 @K\x01\x0c"\x03\xd6
+CSCE SCE202_001 \x06 SCE_DONE 
+FLG3 \x8c\x01 FLG2 @K\x01 FLG2_SET \x03\xd6
  
 ナタネ\n　「次にふたつめ。\pいま、あなたが体験しているこの世界こそが\n　　『現実』よ。\pそして、『学校に籠城している世界』……教授\n　　はそれを『あなたの妄想が生んだ頭の中の世界』だと信じ込\n　　ませようとしているけれど、それは罠。\pあなたが見たのは『\n　　妄想』ではないわ。\p『記憶』よ」@
 拓司\n　「……」@
@@ -11,7 +10,7 @@ FLAG\x02 @K\x01\x0c"\x03\xd6
 　　でも、消しきれなかった記憶の断片が、眠りの中で映画みた\n　　いに甦っている。\p……あなたは過去を繰り返して体験してい\n　　る。\p……つまり、あなたは虎菱拓司なの。\pあなたが記憶して\n　　いる『自分』は、真実よ。\p妄想の産物ではない。\p波動が襲っ\n　　てきて、あなたたちは実験室に籠城した。\pそれは過去の事実\n　　なの。\p……いいわね？」\
 
   
-FLAG J\x0c\x02"
+FLG3 J\x0c FLG3_SET
 WHAT .\\Data\\Script\\TextFunc.Fob RUNF \xc2\x03 \x02
 CMD1 TextOn RUNF \xf0\x03 END\x03\x0c
 CHOICE
@@ -19,5 +18,5 @@ CHOICE
 ENDCHOICE
 
   
-FLAG \x0c\x04\x0c\x02" \xc2\x03 \x02 \xf0\x03 END \xc2\x03 \x02
+FLG3 \x0c\x04\x0c FLG3_SET \xc2\x03 \x02 \xf0\x03 END \xc2\x03 \x02
 CSCE TextClosev\x81\x1f\x82\x04 END6\xf1

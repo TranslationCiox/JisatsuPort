@@ -1,8 +1,7 @@
 START
 \x17\t\x01`B#\x01\\\x07
-CSCE SCE224_001 \x06 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \xa0m\x01\x0c"\x03\xa1
+CSCE SCE224_001 \x06 SCE_DONE 
+FLG3 \x8c\x01 FLG2 \xa0m\x01 FLG2_SET \x03\xa1
  
 衝動的な怒りに突き動かされて、拓司は動いた。@
 錦城の顔が一気に恐怖に歪む。@
@@ -16,12 +15,11 @@ FLAG\x02 \xa0m\x01\x0c"\x03\xa1
 拓司\n　「！」\
 
   
-FLAG J\x0c\x02"
+FLG3 J\x0c FLG3_SET
 WHAT .\\Data\\Script\\TextFunc.Fob RUNF \xee\x02 \x02
 CMD1 TextOn RUNF \x1c\x03 END
-CSCE SCE224_002 8\x03 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \xa4m\x01\x0c"\x03;
+CSCE SCE224_002 8\x03 SCE_DONE 
+FLG3 \x8c\x01 FLG2 \xa4m\x01 FLG2_SET \x03;
  
 一気に押し倒された。@
 後頭部を床に強打する。@
@@ -39,10 +37,9 @@ FLAG\x02 \xa4m\x01\x0c"\x03;
 さらに腹。\
 
   
-FLAG |\x03\x0c\x02" \xee\x02 \x02 \x1c\x03 END
-CSCE SCE224_003 \xa2\x04 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \xa8m\x01\x0c"\x03Y
+FLG3 |\x03\x0c FLG3_SET \xee\x02 \x02 \x1c\x03 END
+CSCE SCE224_003 \xa2\x04 SCE_DONE 
+FLG3 \x8c\x01 FLG2 \xa8m\x01 FLG2_SET \x03Y
  
 必至で腕を振り回したが、むなしく空を切るばかりだ。@
 －－卑怯だ。\p御堂は絶対に安全な場所からパンチを放ってくる。@
@@ -52,8 +49,8 @@ FLAG\x02 \xa8m\x01\x0c"\x03Y
 \n拓司は意識を失った。\
 
   
-FLAG \xe6\x04\x0c\x02" \xee\x02 \x02 \x1c\x03 END  
-FLAG \xc8\x0c\x02"
+FLG3 \xe6\x04\x0c FLG3_SET \xee\x02 \x02 \x1c\x03 END  
+FLG3 \xc8\x0c FLG3_SET
 FOBT .\\Data\\Script\\Bg.Fobsv\x81\x1f\x9e\x06 \x02
 CMD2 BgAutoFadeInsv\x81\x1f\xc8\x06 END
 FOBT .\\Data\\Script\\Bgm.Fobv\x81\x1f\xec\x06 \x02

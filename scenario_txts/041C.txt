@@ -1,11 +1,10 @@
 START
 \xa2\x14\x01`B#\x01\xfc\x10  
-FLAG \x08\x01\x0c\x02"
+FLG3 \x08\x01\x0c FLG3_SET
 FOBT .\\Data\\Script\\Bgm.Fobv\x81\x1f  \x02
 CMD1 PlayCD RUNF J END
-CSCE SCE041_001 f \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02  N\x0c"\x03x
+CSCE SCE041_001 f SCE_DONE 
+FLG3 \x8c\x01 FLG2  N FLG2_SET \x03x
  
 拓司\n　「早桃。\pおれもお前が好きだ。@
 　　義理の兄貴としてじゃなくて－－」@
@@ -18,12 +17,11 @@ FLAG\x02  N\x0c"\x03x
 やがて早桃はポツリといった。\
 
   
-FLAG \xaa\x0c\x02"
+FLG3 \xaa\x0c FLG3_SET
 WHAT .\\Data\\Script\\TextFunc.Fob RUNF \xaa\x02 \x02
 CMD1 TextOn RUNF \xd8\x02 END
-CSCE SCE041_002 \xf4\x02 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 $N\x0c"\x03;
+CSCE SCE041_002 \xf4\x02 SCE_DONE 
+FLG3 \x8c\x01 FLG2 $N FLG2_SET \x03;
  
 早桃\n　「早桃はおにいちゃんのことが好き。@
 　　おにいちゃんも、早桃のこと好きだっていってくれる。@
@@ -32,14 +30,13 @@ FLAG\x02 $N\x0c"\x03;
 \n早桃は小さく首を横に振った。\
 
   
-FLAG 8\x03\x0c\x02" \xaa\x02 \x02 \xd8\x02 END   \x02
+FLG3 8\x03\x0c FLG3_SET \xaa\x02 \x02 \xd8\x02 END   \x02
 CMD1 StopCD RUNF j\x04 END  
-FLAG \xc8\x0c\x02"
+FLG3 \xc8\x0c FLG3_SET
 FOBT .\\Data\\Script\\Bg.Fobsv\x81\x1f\xa0\x04 \x02
 CMD1 BgOnsv\x81\x1f\xca\x04 END
-CSCE SCE041_003 \xe6\x04 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 (N\x0c"\x03\xa3
+CSCE SCE041_003 \xe6\x04 SCE_DONE 
+FLG3 \x8c\x01 FLG2 (N FLG2_SET \x03\xa3
  
 早桃\n　「ううん。\pそんなことじゃないの。@
 　　そんなのは、どうでもいいこと。@
@@ -54,10 +51,9 @@ FLAG\x02 (N\x0c"\x03\xa3
 　　だから、おにいちゃんと恋人にはなれないの。\pわかる？」\
 
   
-FLAG *\x05\x0c\x02" \xaa\x02 \x02 \xd8\x02 END
-CSCE SCE041_004 \xf0\x07 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 ,N\x0c"\x03\x8e
+FLG3 *\x05\x0c FLG3_SET \xaa\x02 \x02 \xd8\x02 END
+CSCE SCE041_004 \xf0\x07 SCE_DONE 
+FLG3 \x8c\x01 FLG2 ,N FLG2_SET \x03\x8e
  
 わからなかった。@
 しかし、拓司は、わからないということが、どうしてもできなか\nった。@
@@ -72,11 +68,10 @@ FLAG\x02 ,N\x0c"\x03\x8e
 拓司\n　「ああ？」\
 
   
-FLAG 4\x08\x0c\x02" \xaa\x02 \x02 \xd8\x02 END  
-FLAG \t\x01\x0c\x02"   \x02 J END
-CSCE SCE041_005 \xda\n \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 0N\x0c"\x03m
+FLG3 4\x08\x0c FLG3_SET \xaa\x02 \x02 \xd8\x02 END  
+FLG3 \t\x01\x0c FLG3_SET   \x02 J END
+CSCE SCE041_005 \xda\n SCE_DONE 
+FLG3 \x8c\x01 FLG2 0N FLG2_SET \x03m
  
 早桃\n　「あのね、早桃、お昼休みが怖かったの」@
 拓司\n　「？」@
@@ -87,10 +82,9 @@ FLAG\x02 0N\x0c"\x03m
 　　もうちょっとで終わるかなって、時計を見るとまだ５分くらい\n　　しか過ぎてなくって。」\
 
   
-FLAG \x1e\x0b\x0c\x02" \xaa\x02 \x02 \xd8\x02 END
-CSCE SCE041_006 \x0c\r \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 4N\x0c"\x03\x81
+FLG3 \x1e\x0b\x0c FLG3_SET \xaa\x02 \x02 \xd8\x02 END
+CSCE SCE041_006 \x0c\r SCE_DONE 
+FLG3 \x8c\x01 FLG2 4N FLG2_SET \x03\x81
  
 早桃\n　「あのね……\pみんな、お友達同士で席くっつけて、お弁当食べた\n　　りするでしょ？@
 　　そうするとね……\p早桃、ひとりなんだなあ、って。@
@@ -103,10 +97,9 @@ FLAG\x02 4N\x0c"\x03\x81
 拓司\n　「早桃－－」\
 
   
-FLAG P\r\x0c\x02" \xaa\x02 \x02 \xd8\x02 END   \x02 j\x04 END
-CSCE SCE041_007 \xa8\x0f \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 8N\x0c"\x03+
+FLG3 P\r\x0c FLG3_SET \xaa\x02 \x02 \xd8\x02 END   \x02 j\x04 END
+CSCE SCE041_007 \xa8\x0f SCE_DONE 
+FLG3 \x8c\x01 FLG2 8N FLG2_SET \x03+
  
 早桃\n　「ありがと！　おにいちゃん！」@
 \n　早桃はそういって、さっと唇を拓司の頬に重ねた。@
@@ -114,5 +107,5 @@ FLAG\x02 8N\x0c"\x03+
 早桃\n　「ダイスキだよ。……おにいちゃん」\
 
   
-FLAG \xec\x0f\x0c\x02" \xaa\x02 \x02 \xd8\x02 END \xaa\x02 \x02
+FLG3 \xec\x0f\x0c FLG3_SET \xaa\x02 \x02 \xd8\x02 END \xaa\x02 \x02
 CSCE TextClosev\x81\x1f\xde\x10 END6\xf1

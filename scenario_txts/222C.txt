@@ -1,8 +1,7 @@
 START
 \xd6\x05\x01\xa4\t3\x01x\x04
-CSCE SCE222_001 \x06 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \x80j\x01\x0c"\x03x
+CSCE SCE222_001 \x06 SCE_DONE 
+FLG3 \x8c\x01 FLG2 \x80j\x01 FLG2_SET \x03x
  
 夜、みんなが寝静まったのを確認してから、拓司はなたねのもと\nに向かった。@
 なたねは起きていた。\p最小限に音量を絞ったラジオから漏れる雑\n音を、黙ってじっと聞いていた。@
@@ -14,12 +13,11 @@ FLAG\x02 \x80j\x01\x0c"\x03x
 心の底をのぞき込むように、なたねは拓司の目をじっと見つめた。\n\pそしてひとこと、いった。\
 
   
-FLAG J\x0c\x02"
+FLG3 J\x0c FLG3_SET
 WHAT .\\Data\\Script\\TextFunc.Fob RUNF J\x02 \x02
 CMD1 TextOn RUNF x\x02 END
-CSCE SCE222_002 \x94\x02 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \x84j\x01\x0c"\x03O
+CSCE SCE222_002 \x94\x02 SCE_DONE 
+FLG3 \x8c\x01 FLG2 \x84j\x01 FLG2_SET \x03O
  
 なたね\n　「……それは」@
 拓司\n　「……？」@
@@ -32,5 +30,5 @@ FLAG\x02 \x84j\x01\x0c"\x03O
 それっきり、なたねは一言も話そうとはしなかった。\
 
   
-FLAG \xd8\x02\x0c\x02" J\x02 \x02 x\x02 END J\x02 \x02
+FLG3 \xd8\x02\x0c FLG3_SET J\x02 \x02 x\x02 END J\x02 \x02
 CSCE TextClosev\x81\x1fZ\x04 END6\xf1

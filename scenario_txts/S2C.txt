@@ -1,14 +1,13 @@
 START
 \xbb\x08\x01`B#\x01\xe8\x06  
-FLAG A\x0c\x02"
+FLG3 A\x0c FLG3_SET
 FOBT .\\Data\\Script\\Bg.Fobsv\x81\x1f  \x02
 CMD2 BgAutoFadeInsv\x81\x1fJ END  
-FLAG \x04\x01\x0c\x02"
+FLG3 \x04\x01\x0c FLG3_SET
 FOBT .\\Data\\Script\\Bgm.Fobv\x81\x1f\x88 \x02
 CMD1 PlayCD RUNF \xb2 END
-CSCE SCES02_001 \xce \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \xa8\xb5\x01\x0c"\x03p
+CSCE SCES02_001 \xce SCE_DONE 
+FLG3 \x8c\x01 FLG2 \xa8\xb5\x01 FLG2_SET \x03p
  
 早桃には、子供の頃から空想のお友達がいたの。@
 空想のお友達、なんていうとなんだかアブナイひとみたいでイヤ\nなんだけど……ぜんぜんそんな、特別な感じじゃないの。@
@@ -20,12 +19,11 @@ FLAG\x02 \xa8\xb5\x01\x0c"\x03p
 羽が生えた猫なの。\
 
   
-FLAG \x12\x01\x0c\x02"
+FLG3 \x12\x01\x0c FLG3_SET
 WHAT .\\Data\\Script\\TextFunc.Fob RUNF \xf2\x02 \x02
 CMD1 TextOn RUNF  \x03 END
-CSCE SCES02_002 <\x03 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \xac\xb5\x01\x0c"\x03\xaa
+CSCE SCES02_002 <\x03 SCE_DONE 
+FLG3 \x8c\x01 FLG2 \xac\xb5\x01 FLG2_SET \x03\xaa
  
 それでね、しゃべるときは言葉の最後に『ニャ』ってつけるの。@
 『早桃ちゃんはいつも泣いてばっかりだニャ』@
@@ -39,7 +37,7 @@ FLAG\x02 \xac\xb5\x01\x0c"\x03\xaa
 『答はね、早桃ちゃん。風のなかにあるニャ』って。\
 
   
-FLAG \x80\x03\x0c\x02" \xf2\x02 \x02  \x03 END  
-FLAG \xc8\x0c\x02"   \x02 J END \x88 \x02
+FLG3 \x80\x03\x0c FLG3_SET \xf2\x02 \x02  \x03 END  
+FLG3 \xc8\x0c FLG3_SET   \x02 J END \x88 \x02
 CMD1 StopCD RUNF \xa2\x06 END \xf2\x02 \x02
 CSCE TextClosev\x81\x1f\xca\x06 END6\xf1

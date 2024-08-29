@@ -1,8 +1,7 @@
 START
 \xa4\x19\x01`B#\x01\x02\x16
-CSCE SCE068_001 \x06 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \xe0y\x0c"\x03\xec
+CSCE SCE068_001 \x06 SCE_DONE 
+FLG3 \x8c\x01 FLG2 \xe0y FLG2_SET \x03\xec
  
 カンナ\n　「ピンポーン！\p　要するに、こういうことよね。\p『好ましくな\n　　い環境を自分が変えられないと知った生き物は、無力感に支\n　　配される』……電気ショックに黙々と耐えたり、泣くことす\n　　らやめて内にこもったり。\p無力感にうちのめされるの。@
 　　そして－－無力感に支配された赤ちゃんは、病気に対する抵\n　　抗力が低くなるの。\pこれは事実よ。\p無力感に囚われると、生\n　　命力が低下する。\p……前に進む意志のない生物は、死ぬ。@
@@ -11,22 +10,20 @@ FLAG\x02 \xe0y\x0c"\x03\xec
 拓司\n　「自ら……命を絶つこと」\
 
   
-FLAG J\x0c\x02"
+FLG3 J\x0c FLG3_SET
 WHAT .\\Data\\Script\\TextFunc.Fob RUNF \x1a\x04 \x02
 CMD1 TextOn RUNF H\x04 END
-CSCE SCE068_002 d\x04 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \xe4y\x0c"\x03\xac
+CSCE SCE068_002 d\x04 SCE_DONE 
+FLG3 \x8c\x01 FLG2 \xe4y FLG2_SET \x03\xac
  
 カンナ\n　「あなた、一回話してくれたことがあったわよね。\p蜥蜴のこと。\n　　\p瓶詰の蜥蜴。\pそうよ、蜥蜴を殺したのは無力感よ。\p蜥蜴は自\n　　分が世界に影響を与えられないことを悟って、死んだ。\pあな\n　　たも同じ。\pあなたは瓶詰の蜥蜴。\p世界はあなたという歯車無\n　　しでも回っていく。\pあなたという歯車は、なんら世界に影響\n　　を及ぼし得ない。\pどうあがいても電流は流されるし、泣き叫\n　　んでも誰もやってこない。\pあなに取り憑いたもの。\pそれは、\n　　無力感という名の死病よ」@
 拓司\n　「……」@
 カンナ\n　「簡単でしょ？\p　イヌとか赤ちゃんの実験で照明されちゃうよ\n　　うなもの。\pその程度なの、あなたは。\pあなたにとって、死は\n　　その程度のもの。\pでも、私は違う！」\
 
   
-FLAG \xa8\x04\x0c\x02" \x1a\x04 \x02 H\x04 END
-CSCE SCE068_003 \x92\x07 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \xe8y\x0c"\x03\xa4
+FLG3 \xa8\x04\x0c FLG3_SET \x1a\x04 \x02 H\x04 END
+CSCE SCE068_003 \x92\x07 SCE_DONE 
+FLG3 \x8c\x01 FLG2 \xe8y FLG2_SET \x03\xa4
  
 拓司\n　「……どう違うんだ？」@
 カンナ\n　「私には赦しが必要なの。\pでも、その赦しは、いまとなっては、\n　　物理的な意味では絶対に与えられない。\pだから儀式化された\n　　赦しが必要なの！」@
@@ -35,13 +32,12 @@ FLAG\x02 \xe8y\x0c"\x03\xa4
 　　決してあなたをバカにしているわけじゃないの。\pあなたの存\n　　在を認めているからこそ、あなたを選んだ……あッ！」\
 
   
-FLAG \xd6\x07\x0c\x02" \x1a\x04 \x02 H\x04 END  
-FLAG \xc8\x0c\x02"
+FLG3 \xd6\x07\x0c FLG3_SET \x1a\x04 \x02 H\x04 END  
+FLG3 \xc8\x0c FLG3_SET
 FOBT .\\Data\\Script\\Bg.Fobsv\x81\x1f\xba\n \x02
 CMD1 BgOnsv\x81\x1f\xe4\n END
-CSCE SCE068_004 \x0b \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \xecy\x0c"\x03f
+CSCE SCE068_004 \x0b SCE_DONE 
+FLG3 \x8c\x01 FLG2 \xecy FLG2_SET \x03f
  
 カンナは叫んだ。@
 ようやく山の後ろに回り込んだ早桃が、足場を蹴って一気にカン\nナに躍りかかったのである。\p瞬間、拓司も前に駆けている。@
@@ -52,10 +48,9 @@ FLAG\x02 \xecy\x0c"\x03f
 早桃\n　「あっ！」\
 
   
-FLAG D\x0b\x0c\x02" \x1a\x04 \x02 H\x04 END
-CSCE SCE068_005 \x16\r \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \xf0y\x0c"\x03~
+FLG3 D\x0b\x0c FLG3_SET \x1a\x04 \x02 H\x04 END
+CSCE SCE068_005 \x16\r SCE_DONE 
+FLG3 \x8c\x01 FLG2 \xf0y FLG2_SET \x03~
  
 カンナと早桃は激しく山の頂上でもみ合っていたが、不安定な足\n場がそれに耐え得るはずもなく、あえなく２人は床に転げ落ちた。\n@
 拓司はもみ合う２人のあいだに割って入り、カンナを背後から羽\n交い締めに取り押さえた。\p狂乱状態のカンナは、後頭部を拓司の\n鼻面にぶつけ、必至の抵抗を見せた。@
@@ -65,14 +60,13 @@ FLAG\x02 \xf0y\x0c"\x03~
 カンナ\n　「ちくしょおおおおおおおお！\p　うわあああああああ！」\
 
   
-FLAG Z\r\x0c\x02" \x1a\x04 \x02 H\x04 END
+FLG3 Z\r\x0c FLG3_SET \x1a\x04 \x02 H\x04 END
 FOBT .\\Data\\Script\\Bgm.Fobv\x81\x1f\x8c\x0f \x02
 CMD1 StopCD RUNF \xb6\x0f END  
-FLAG \xc8\x0c\x02" \xba\n \x02
+FLG3 \xc8\x0c FLG3_SET \xba\n \x02
 CMD2 BgAutoFadeInsv\x81\x1f\xf8\x0f END
-CSCE SCE068_006 \x1c\x10 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \xf4y\x0c"\x03\xa4
+CSCE SCE068_006 \x1c\x10 SCE_DONE 
+FLG3 \x8c\x01 FLG2 \xf4y FLG2_SET \x03\xa4
  
 一同はそうしてしばらくもみ合っていたが、結局、なたねが事態\nを収束させた。\pと、無言で一歩踏み出して、カンナの額に手をか\nざしたのである。\p途端、糸が切れた人形のように、カンナはガッ\nクリと気を失った。\pあっけない幕切れだった。@
 \n拓司\n　「い、いったい……？」@
@@ -83,10 +77,9 @@ FLAG\x02 \xf4y\x0c"\x03\xa4
 拓司\n　「……ふざけるな」@
 \z
   
-FLAG `\x10\x0c\x02" \x1a\x04 \x02 H\x04 END
-CSCE SCE068_007 *\x13 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \xf8y\x0c"\x03\x8c
+FLG3 `\x10\x0c FLG3_SET \x1a\x04 \x02 H\x04 END
+CSCE SCE068_007 *\x13 SCE_DONE 
+FLG3 \x8c\x01 FLG2 \xf8y FLG2_SET \x03\x8c
  
 なたね\n　「だってあなたもレジスタンスのひとりだから。\p目を開いて、\n　　状況を受け入れて。\pそうすれば、あなたにも善なる覚醒が－\n　　－」@
 早桃\n　「もうたくさんッ！」@
@@ -96,5 +89,5 @@ FLAG\x02 \xf8y\x0c"\x03\x8c
 \n拓司\n　「行こう。\p紅葉を助けに」\
 
   
-FLAG n\x13\x0c\x02" \x1a\x04 \x02 H\x04 END \x1a\x04 \x02
+FLG3 n\x13\x0c FLG3_SET \x1a\x04 \x02 H\x04 END \x1a\x04 \x02
 CSCE TextClosev\x81\x1f\xe4\x15 END6\xf1

@@ -1,27 +1,25 @@
 START
 \xcd\x08\x01`B#\x01\xae\x06  
-FLAG C\x0c\x02"
+FLG3 C\x0c FLG3_SET
 FOBT .\\Data\\Script\\Bg.Fobsv\x81\x1f  \x02
 CMD2 BgAutoFadeInsv\x81\x1fJ END  
-FLAG \x08\x01\x0c\x02"
+FLG3 \x08\x01\x0c FLG3_SET
 FOBT .\\Data\\Script\\Bgm.Fobv\x81\x1f\x88 \x02
 CMD1 PlayCD RUNF \xb2 END
-CSCE SCEG01_001 \xce \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02  \xc5\x01\x0c"\x03*
+CSCE SCEG01_001 \xce SCE_DONE 
+FLG3 \x8c\x01 FLG2  \xc5\x01 FLG2_SET \x03*
  
 錦城\n　「……しっ！　私よ、虎菱くん」@
 拓司\n　「……先生？」@
 \n　錦城は微かに笑うと、拓司の横へと体を移動させた。@
 寄り添って寝転がるような形になる。\w\z
   
-FLAG \x12\x01\x0c\x02"
+FLG3 \x12\x01\x0c FLG3_SET
 WHAT .\\Data\\Script\\TextFunc.Fob RUNF \xda\x01 \x02
 CMD1 TextOn RUNF \x08\x02 END  
-FLAG \xc8\x0c\x02"   \x02 J END
-CSCE SCEG01_002 X\x02 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 $\xc5\x01\x0c"\x03z
+FLG3 \xc8\x0c FLG3_SET   \x02 J END
+CSCE SCEG01_002 X\x02 SCE_DONE 
+FLG3 \x8c\x01 FLG2 $\xc5\x01 FLG2_SET \x03z
  
 錦城\n　「立派だったわ、虎菱くん」@
 拓司\n　「．．．．．．え？」@
@@ -32,10 +30,9 @@ FLAG\x02 $\xc5\x01\x0c"\x03z
 　　そういう人はね、強いの。@
 　　周囲の状況にながされないで、自分という物を持ち続けられ\n　　るの。\p虎菱くんこそが、リーダーにふさわしいって」\w\z
   
-FLAG \x9c\x02\x0c\x02" \xda\x01 \x02 \x08\x02 END
-CSCE SCEG01_003 \xbe\x04 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 (\xc5\x01\x0c"\x03H
+FLG3 \x9c\x02\x0c FLG3_SET \xda\x01 \x02 \x08\x02 END
+CSCE SCEG01_003 \xbe\x04 SCE_DONE 
+FLG3 \x8c\x01 FLG2 (\xc5\x01 FLG2_SET \x03H
  
 　指が、そっと拓司の顎に触れた。@
 顎先から耳元へと、ゆっくりと指は移動する。\p冷たい指だ。@
@@ -44,6 +41,6 @@ FLAG\x02 (\xc5\x01\x0c"\x03H
 \n錦城\n　「……先生からのエールだと思って。ね？」\
 
   
-FLAG \x02\x05\x0c\x02" \xda\x01 \x02 \x08\x02 END \x88 \x02
+FLG3 \x02\x05\x0c FLG3_SET \xda\x01 \x02 \x08\x02 END \x88 \x02
 CMD1 StopCD RUNF h\x06 END \xda\x01 \x02
 CSCE TextClosev\x81\x1f\x90\x06 END6\xf1

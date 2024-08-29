@@ -1,11 +1,10 @@
 START
 \x035\x01`B#\x01^+  
-FLAG 9\x0c\x02"
+FLG3 9\x0c FLG3_SET
 FOBT .\\Data\\Script\\Bg.Fobsv\x81\x1f  \x02
 CMD2 BgAutoFadeInsv\x81\x1fJ END
-CSCE SCE247_001 n \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \x90\x91\x01\x0c"\x03 
+CSCE SCE247_001 n SCE_DONE 
+FLG3 \x8c\x01 FLG2 \x90\x91\x01 FLG2_SET \x03 
  
 紅葉が立ち上がった。@
 拓司は紅葉の目の奥を見て、ちいさく頷いた。@
@@ -13,12 +12,11 @@ FLAG\x02 \x90\x91\x01\x0c"\x03
 \n拓司\n　「他には……？」\
 
   
-FLAG \xb2\x0c\x02"
+FLG3 \xb2\x0c FLG3_SET
 WHAT .\\Data\\Script\\TextFunc.Fob RUNF R\x01 \x02
 CMD1 TextOn RUNF \x80\x01 END
-CSCE SCE247_002 \x9c\x01 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \x94\x91\x01\x0c"\x03k
+CSCE SCE247_002 \x9c\x01 SCE_DONE 
+FLG3 \x8c\x01 FLG2 \x94\x91\x01 FLG2_SET \x03k
  
 カンナ\n　「私は……怖い。\p最終波動がないっていうことが……証明でき\n　　ないなら、ここに残る」@
 \nカンナが目を反らした。@
@@ -29,10 +27,9 @@ FLAG\x02 \x94\x91\x01\x0c"\x03k
 \n錦城は最後まで強気を装っていた。\
 
   
-FLAG \xe0\x01\x0c\x02" R\x01 \x02 \x80\x01 END
-CSCE SCE247_003 \xc6\x03 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \x98\x91\x01\x0c"\x03g
+FLG3 \xe0\x01\x0c FLG3_SET R\x01 \x02 \x80\x01 END
+CSCE SCE247_003 \xc6\x03 SCE_DONE 
+FLG3 \x8c\x01 FLG2 \x98\x91\x01 FLG2_SET \x03g
  
 拓司\n　「わかった。\pそれじゃ、紅葉」@
 紅葉\n　「うん……」@
@@ -46,10 +43,9 @@ FLAG\x02 \x98\x91\x01\x0c"\x03g
 \n拓司は紅葉を制した。\
 
   
-FLAG \n\x04\x0c\x02" R\x01 \x02 \x80\x01 END
-CSCE SCE247_004 \xe0\x05 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \x9c\x91\x01\x0c"\x03`
+FLG3 \n\x04\x0c FLG3_SET R\x01 \x02 \x80\x01 END
+CSCE SCE247_004 \xe0\x05 SCE_DONE 
+FLG3 \x8c\x01 FLG2 \x9c\x91\x01 FLG2_SET \x03`
  
 拓司\n　「もう、そんなことは関係ないんだ。\p設定なんかどうでもいい。\n　　\p俺はお前が好きだ。\pおさななじみだとか、背のたかさがどう\n　　だとか、顔立ちがどうだとか、性格がどうだとか、口調がど\n　　うだとか……そんなことを抜きにして、お前という人間が好\n　　きなんだ。\pだから、いいんだ」@
 紅葉\n　「……」@
@@ -57,10 +53,9 @@ FLAG\x02 \x9c\x91\x01\x0c"\x03`
 紅葉\n　「うん……行こ」\
 
   
-FLAG $\x06\x0c\x02" R\x01 \x02 \x80\x01 END
-CSCE SCE247_005 \xde\x07 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \xa0\x91\x01\x0c"\x03)
+FLG3 $\x06\x0c FLG3_SET R\x01 \x02 \x80\x01 END
+CSCE SCE247_005 \xde\x07 SCE_DONE 
+FLG3 \x8c\x01 FLG2 \xa0\x91\x01 FLG2_SET \x03)
  
 恐る恐る、紅葉は拓司の手に触れた。@
 拓司はその手を強く握りしめた。@
@@ -68,17 +63,16 @@ FLAG\x02 \xa0\x91\x01\x0c"\x03)
 ドアを開き、外の世界へと。\
 
   
-FLAG "\x08\x0c\x02" R\x01 \x02 \x80\x01 END
-CSCE SCE247_006 \t \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \xa4\x91\x01\x0c"  
-FLAG \xc8\x0c\x02"   \x02 J END  
-FLAG \x02\x0c\x02"  \x04
-FLAG \x17\x0c\x02"  \x08
-FLAG \x01\x0c\x02"
+FLG3 "\x08\x0c FLG3_SET R\x01 \x02 \x80\x01 END
+CSCE SCE247_006 \t SCE_DONE 
+FLG3 \x8c\x01 FLG2 \xa4\x91\x01 FLG2_SET   
+FLG3 \xc8\x0c FLG3_SET   \x02 J END  
+FLG3 \x02\x0c FLG3_SET  \x04
+FLG3 \x17\x0c FLG3_SET  \x08
+FLG3 \x01\x0c FLG3_SET
 FOBT .\\Data\\Script\\Bgm.Fobv\x81\x1f\xc6\t \x02
 CMD1 SePlay RUNF \xf0\t END  
-FLAG \t\x01\x0c\x02" \xc6\t \x02
+FLG3 \t\x01\x0c FLG3_SET \xc6\t \x02
 CMD1 PlayCD RUNF 2\n END\x03\xbb
  
 拓司\n　「これは……」@
@@ -93,19 +87,17 @@ CMD1 PlayCD RUNF 2\n END\x03\xbb
 あの工業団地の廃墟にさらなる歳月の洗礼を加えて、行き着く果\nてまで荒廃を深化させた－－そんな感じがする。\
 
   
-FLAG N\n\x0c\x02" R\x01 \x02 \x80\x01 END
-CSCE SCE247_007 t\r \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \xa8\x91\x01\x0c"\x03`
+FLG3 N\n\x0c FLG3_SET R\x01 \x02 \x80\x01 END
+CSCE SCE247_007 t\r SCE_DONE 
+FLG3 \x8c\x01 FLG2 \xa8\x91\x01 FLG2_SET \x03`
  
 腐敗した死体が転がっているのを予想していたが、そのようなも\nのはどこにもない。\p骨や服のかけらすら見つけることができない。\n\pただ、壁にべったりとこびりついている染みが、どこか血の痕を\n想起させる。\pまた、しなびた皮膚のような、毛髪の一部のような、\n正体不明のものがべったりと張り付いている壁もある。@
 もしかしたら、それこそが学生たちのなれの果てなのかもしれな\nい……。\
 
   
-FLAG \xb8\r\x0c\x02" R\x01 \x02 \x80\x01 END
-CSCE SCE247_008 r\x0f \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \xac\x91\x01\x0c"\x03D
+FLG3 \xb8\r\x0c FLG3_SET R\x01 \x02 \x80\x01 END
+CSCE SCE247_008 r\x0f SCE_DONE 
+FLG3 \x8c\x01 FLG2 \xac\x91\x01 FLG2_SET \x03D
  
 紅葉\n　「どうしたの、これ……？\p　まるで……まるで……」@
 拓司\n　「何十年も経っているみたいだ。\pあの部屋にいるあいだに、い\n　　ったい何があったんだ……？」@
@@ -113,19 +105,17 @@ FLAG\x02 \xac\x91\x01\x0c"\x03D
 拓司はその手の上に自分の手を重ねて、力強く頷いた。\
 
   
-FLAG \xb6\x0f\x0c\x02" R\x01 \x02 \x80\x01 END
-CSCE SCE247_009 \x11 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \xb0\x91\x01\x0c"\x03?
+FLG3 \xb6\x0f\x0c FLG3_SET R\x01 \x02 \x80\x01 END
+CSCE SCE247_009 \x11 SCE_DONE 
+FLG3 \x8c\x01 FLG2 \xb0\x91\x01 FLG2_SET \x03?
  
 拓司\n　「考えるのはやめよう。\p俺たちは最初から、起こっていること\n　　の意味を考え続けてきた。\p説明できない状況に筋を一本通そ\n　　うと……あがいてきた。\pでも、そんなの無駄なんだ。@
 　　意味がわからないんじゃない。\p意味なんてないんだ」\
 
   
-FLAG D\x11\x0c\x02" R\x01 \x02 \x80\x01 END
-CSCE SCE247_010 z\x12 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \xb4\x91\x01\x0c"\x03\x99
+FLG3 D\x11\x0c FLG3_SET R\x01 \x02 \x80\x01 END
+CSCE SCE247_010 z\x12 SCE_DONE 
+FLG3 \x8c\x01 FLG2 \xb4\x91\x01 FLG2_SET \x03\x99
  
 ２人の足音は、校舎の中に大きく響き渡った。@
 不自然な響き方だった。@
@@ -138,10 +128,9 @@ FLAG\x02 \xb4\x91\x01\x0c"\x03\x99
 まっすぐ歩いているつもりなのに、壁に体当たりしているときも\nある。\
 
   
-FLAG \xbe\x12\x0c\x02" R\x01 \x02 \x80\x01 END
-CSCE SCE247_011 \\\x15 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \xb8\x91\x01\x0c"\x03M
+FLG3 \xbe\x12\x0c FLG3_SET R\x01 \x02 \x80\x01 END
+CSCE SCE247_011 \\\x15 SCE_DONE 
+FLG3 \x8c\x01 FLG2 \xb8\x91\x01 FLG2_SET \x03M
  
 それでも２人は歩き続けた。@
 階段を降り、廊下を歩いてゆく。@
@@ -150,13 +139,12 @@ FLAG\x02 \xb8\x91\x01\x0c"\x03M
 しかし、拓司は身体の隅々に残ったエネルギーを総動員して、そ\nのまえに立った。\
 
   
-FLAG \xa0\x15\x0c\x02" R\x01 \x02 \x80\x01 END  
-FLAG \x02\x0c\x02" \xc6\t \x02
+FLG3 \xa0\x15\x0c FLG3_SET R\x01 \x02 \x80\x01 END  
+FLG3 \x02\x0c FLG3_SET \xc6\t \x02
 CMD1 SeStop RUNF 4\x17 END \xc6\t \x02
 CMD1 StopCD RUNF \\\x17 END
-CSCE SCE247_012 x\x17 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \xbc\x91\x01\x0c"\x03D
+CSCE SCE247_012 x\x17 SCE_DONE 
+FLG3 \x8c\x01 FLG2 \xbc\x91\x01 FLG2_SET \x03D
  
 拓司\n　「……ここだ」@
 \n壁だ。@
@@ -168,10 +156,9 @@ FLAG\x02 \xbc\x91\x01\x0c"\x03D
 いや、そもそもそこには何かがあるのだろうか？\
 
   
-FLAG \xbc\x17\x0c\x02" R\x01 \x02 \x80\x01 END
-CSCE SCE247_013 \x06\x19 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \xc0\x91\x01\x0c"\x03_
+FLG3 \xbc\x17\x0c FLG3_SET R\x01 \x02 \x80\x01 END
+CSCE SCE247_013 \x06\x19 SCE_DONE 
+FLG3 \x8c\x01 FLG2 \xc0\x91\x01 FLG2_SET \x03_
  
 拓司は考えなかった。@
 /*▲SE15　ループ再生（停止まで）*/\a2,2,15,1,/*■CG52　表示（クロスフェード）*/\a7,-2,-2,0,\a0,51,2,0,\a6,-2,0,0,手にした椅子の脚を、がつがつと壁に叩き付けてゆく。@
@@ -181,13 +168,12 @@ FLAG\x02 \xc0\x91\x01\x0c"\x03_
 紅葉\n　「ええ！」\
 
   
-FLAG J\x19\x0c\x02" R\x01 \x02 \x80\x01 END
-CSCE SCE247_014 \x1b \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \xc4\x91\x01\x0c"  
-FLAG \x02\x0c\x02"  \x04
-FLAG \x0f\x0c\x02"  \x08
-FLAG \x01\x0c\x02" \xc6\t \x02 \xf0\t END\x03\xae
+FLG3 J\x19\x0c FLG3_SET R\x01 \x02 \x80\x01 END
+CSCE SCE247_014 \x1b SCE_DONE 
+FLG3 \x8c\x01 FLG2 \xc4\x91\x01 FLG2_SET   
+FLG3 \x02\x0c FLG3_SET  \x04
+FLG3 \x0f\x0c FLG3_SET  \x08
+FLG3 \x01\x0c FLG3_SET \xc6\t \x02 \xf0\t END\x03\xae
  
 ２人は取り憑かれたように、椅子の脚を壁に叩き付けた。@
 一箇所に狙いを絞って叩きつけてゆく。@
@@ -202,10 +188,9 @@ FLAG \x01\x0c\x02" \xc6\t \x02 \xf0\t END\x03\xae
 １０センチほどしかない！\
 
   
-FLAG \xac\x1b\x0c\x02" R\x01 \x02 \x80\x01 END
-CSCE SCE247_015 \x9e\x1e \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \xc8\x91\x01\x0c"\x03\x8d
+FLG3 \xac\x1b\x0c FLG3_SET R\x01 \x02 \x80\x01 END
+CSCE SCE247_015 \x9e\x1e SCE_DONE 
+FLG3 \x8c\x01 FLG2 \xc8\x91\x01 FLG2_SET \x03\x8d
  
 拓司はおそるおそる、穴に顔を近づけた。@
 壁の向こうがどうなっているのか、それだけでも確認して安心し\nておきかった。@
@@ -219,10 +204,9 @@ FLAG\x02 \xc8\x91\x01\x0c"\x03\x8d
 \nぴったりと穴に顔を張り付かせて、壁の向こうで誰かがこちらを\nのぞき込んでいたのだ。\
 
   
-FLAG \xe2\x1e\x0c\x02" R\x01 \x02 \x80\x01 END
-CSCE SCE247_016 P! \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \xcc\x91\x01\x0c"\x03m
+FLG3 \xe2\x1e\x0c FLG3_SET R\x01 \x02 \x80\x01 END
+CSCE SCE247_016 P! SCE_DONE 
+FLG3 \x8c\x01 FLG2 \xcc\x91\x01 FLG2_SET \x03m
  
 拓司\n　「だ、誰だッ！」@
 紅葉\n　「どうしたの、拓司？！」@
@@ -234,10 +218,9 @@ FLAG\x02 \xcc\x91\x01\x0c"\x03m
 \n近づいてきた紅葉を突き飛ばして、拓司は狂ったように壁に体当\nたりを繰り返した。\
 
   
-FLAG \x94!\x0c\x02" R\x01 \x02 \x80\x01 END
-CSCE SCE247_017 \x82# \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \xd0\x91\x01\x0c"\x03n
+FLG3 \x94!\x0c FLG3_SET R\x01 \x02 \x80\x01 END
+CSCE SCE247_017 \x82# SCE_DONE 
+FLG3 \x8c\x01 FLG2 \xd0\x91\x01 FLG2_SET \x03n
  
 拓司\n　「お前がやったのか？！\p　お前がこんなことの元凶なのかッ？\n　　！\p　ふざけるなよ、畜生！」@
 \n拓司は、穴の奥にどんよりと浮かんでいたその目を見たことがあ\nるように思えた。@
@@ -252,18 +235,16 @@ FLAG\x02 \xd0\x91\x01\x0c"\x03n
 狂気を呼び込み、それに容易に支配される目だった。\
 
   
-FLAG \xc6#\x0c\x02" R\x01 \x02 \x80\x01 END
-CSCE SCE247_018 \xb8% \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \xd4\x91\x01\x0c"\x03C
+FLG3 \xc6#\x0c FLG3_SET R\x01 \x02 \x80\x01 END
+CSCE SCE247_018 \xb8% SCE_DONE 
+FLG3 \x8c\x01 FLG2 \xd4\x91\x01 FLG2_SET \x03C
  
 体当たりを繰り返しているうちに、拓司のシャツの肩の部分には\n真っ赤な血が滲み始めた。\pそれに気づいてようやく拓司は体当た\nりをやめ、今度は椅子の脚をふりかぶって、メチャクチャに壁に\n叩き付け始めた。\pガンガンという音が頭が割れそうなくらい大\nきく響き渡る。\
 
   
-FLAG \xfc%\x0c\x02" R\x01 \x02 \x80\x01 END
-CSCE SCE247_019 B' \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \xd8\x91\x01\x0c"\x03v
+FLG3 \xfc%\x0c FLG3_SET R\x01 \x02 \x80\x01 END
+CSCE SCE247_019 B' SCE_DONE 
+FLG3 \x8c\x01 FLG2 \xd8\x91\x01 FLG2_SET \x03v
  
 紅葉\n　「拓司！\p　拓司！」@
 拓司\n　「！」@
@@ -275,10 +256,9 @@ FLAG\x02 \xd8\x91\x01\x0c"\x03v
 しかし、そうではないことを、拓司は知っていた。\
 
   
-FLAG \x86'\x0c\x02" R\x01 \x02 \x80\x01 END
-CSCE SCE247_020 \x98) \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \xdc\x91\x01\x0c"\x03,
+FLG3 \x86'\x0c FLG3_SET R\x01 \x02 \x80\x01 END
+CSCE SCE247_020 \x98) SCE_DONE 
+FLG3 \x8c\x01 FLG2 \xdc\x91\x01 FLG2_SET \x03,
  
 紅葉\n　「ねえ、なに？\p　なんなの、この音ッ？！」@
 拓司\n　「わからない！\p　わからないけど……！」@
@@ -287,12 +267,12 @@ FLAG\x02 \xdc\x91\x01\x0c"\x03,
 最終波動がやってきたのだ。\
 
   
-FLAG \xdc)\x0c\x02" R\x01 \x02 \x80\x01 END\x03
-FLAG
+FLG3 \xdc)\x0c FLG3_SET R\x01 \x02 \x80\x01 END\x03
+FLG3
 CHOICE
 シェルターに駆け戻る\n穴を広げる\n\l0,2,
 ENDCHOICE
 
   
-FLAG \xc6*\x0c\x02" R\x01 \x02 \x80\x01 END R\x01 \x02
+FLG3 \xc6*\x0c FLG3_SET R\x01 \x02 \x80\x01 END R\x01 \x02
 CSCE TextClosev\x81\x1f@+ END6\xf1

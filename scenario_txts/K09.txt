@@ -1,8 +1,7 @@
 START
 &\x0e\x01`B#\x01l\x0b
-CSCE SCEK09_001 \x06 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 H\xa7\x01\x0c"\x03;
+CSCE SCEK09_001 \x06 SCE_DONE 
+FLG3 \x8c\x01 FLG2 H\xa7\x01 FLG2_SET \x03;
  
 「ここに落ちている袋、どれくらいあると思う？」\nとゆきはいった。@
 私が黙っていると、ゆきは「１６袋」といった。@
@@ -11,18 +10,17 @@ FLAG\x02 H\xa7\x01\x0c"\x03;
 「袋に詰めて、落とすの」@
 「猫を？」\w\z
   
-FLAG J\x0c\x02"
+FLG3 J\x0c FLG3_SET
 WHAT .\\Data\\Script\\TextFunc.Fob RUNF V\x01 \x02
 CMD1 TextOn RUNF \x84\x01 END  
-FLAG \xc8\x0c\x02"
+FLG3 \xc8\x0c FLG3_SET
 FOBT .\\Data\\Script\\Bg.Fobsv\x81\x1f\xba\x01 \x02
 CMD2 BgAutoFadeInsv\x81\x1f\xe4\x01 END  
-FLAG \t\x01\x0c\x02"
+FLG3 \t\x01\x0c FLG3_SET
 FOBT .\\Data\\Script\\Bgm.Fobv\x81\x1f"\x02 \x02
 CMD1 PlayCD RUNF L\x02 END
-CSCE SCEK09_002 h\x02 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 L\xa7\x01\x0c"\x03\x85
+CSCE SCEK09_002 h\x02 SCE_DONE 
+FLG3 \x8c\x01 FLG2 L\xa7\x01 FLG2_SET \x03\x85
  
 「ここらへん、野良猫がたくさんいるの。@
 　だからマタタビを使えば簡単に集まる。@
@@ -36,10 +34,9 @@ FLAG\x02 L\xa7\x01\x0c"\x03\x85
 「わかったよ」と私はいって遮った。@
 「もうわかったから。ありがとう、ゆきちゃん」\w\z
   
-FLAG \xac\x02\x0c\x02" V\x01 \x02 \x84\x01 END
-CSCE SCEK09_003 \xfa\x04 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 P\xa7\x01\x0c"\x03y
+FLG3 \xac\x02\x0c FLG3_SET V\x01 \x02 \x84\x01 END
+CSCE SCEK09_003 \xfa\x04 SCE_DONE 
+FLG3 \x8c\x01 FLG2 P\xa7\x01 FLG2_SET \x03y
  
 　たぶん、ゆきなりのストレス解消法なのだろうと思った。@
 ちょっと前に話題になった矢ガモとか……そういうもの。@
@@ -48,10 +45,9 @@ FLAG\x02 P\xa7\x01\x0c"\x03y
 嫌悪と軽蔑がわき上がってくるのも抑えられなかった。@
 でも、秘密の大きさは、私に対する信頼の大きさを意味していた。\n\p信頼の輝きが、秘密の暗さを消し去るくらい明るいと信じてこそ\nの告白である以上、秘密が大きくて暗いほど、私は喜ぶべきなの\nだ。\w\z
   
-FLAG >\x05\x0c\x02" V\x01 \x02 \x84\x01 END
-CSCE SCEK09_004 \\\x07 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 T\xa7\x01\x0c"\x03\xd0
+FLG3 >\x05\x0c FLG3_SET V\x01 \x02 \x84\x01 END
+CSCE SCEK09_004 \\\x07 SCE_DONE 
+FLG3 \x8c\x01 FLG2 T\xa7\x01 FLG2_SET \x03\xd0
  
 　私は自分の中に生まれた硬いかたまりをかみ砕き、飲み下した。\n\pそして、自分がゆきの秘密を赦したことを伝えたくて、ゆきを優\nしく抱きしめた。@
 けれどもゆきの身体は、私の腕のなかでいつまでも硬くこわばっ\nて動かず、そこには明らかな拒絶が感じられた。@
@@ -64,6 +60,6 @@ FLAG\x02 T\xa7\x01\x0c"\x03\xd0
 　しばらく間をおいてから、ゆきはぽつりといった。@
 「そうすれば死ぬのが怖くなくなると思うから」\w\z
   
-FLAG \xa0\x07\x0c\x02" V\x01 \x02 \x84\x01 END "\x02 \x02
+FLG3 \xa0\x07\x0c FLG3_SET V\x01 \x02 \x84\x01 END "\x02 \x02
 CMD1 StopCD RUNF &\x0b END V\x01 \x02
 CSCE TextClosev\x81\x1fN\x0b END6\xf1

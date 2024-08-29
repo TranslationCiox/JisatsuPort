@@ -1,8 +1,7 @@
 START
 \x8a\x0e\x01`B#\x01\xf0\x0b
-CSCE SCE036_001 \x06 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \xe0G\x0c"\x03e
+CSCE SCE036_001 \x06 SCE_DONE 
+FLG3 \x8c\x01 FLG2 \xe0G FLG2_SET \x03e
  
 錦城\n　「－－虎菱くん？」@
 /*▲BGM8　再生*/\a2,-1,8,1,/*■CG15　表示*/\a7,-2,-2,0,\a0,14,2,0,\a6,-2,0,0,\n　背後からの声にぎくりと振り返ると、そこには現代国語の錦城\n茜子が立っていた。@
@@ -11,12 +10,11 @@ FLAG\x02 \xe0G\x0c"\x03e
 　　鍵はかかっていなかったの？」@
 拓司\n　「……」\w\z
   
-FLAG J\x0c\x02"
+FLG3 J\x0c FLG3_SET
 WHAT .\\Data\\Script\\TextFunc.Fob RUNF \xfe\x01 \x02
 CMD1 TextOn RUNF ,\x02 END
-CSCE SCE036_002 H\x02 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \xe4G\x0c"\x03\x81
+CSCE SCE036_002 H\x02 SCE_DONE 
+FLG3 \x8c\x01 FLG2 \xe4G FLG2_SET \x03\x81
  
 　うんざりだった。@
 ついに、この学校に残された唯一のマシな場所が無くなってしま\nう……。@
@@ -25,10 +23,9 @@ FLAG\x02 \xe4G\x0c"\x03\x81
 写真に撮って脅迫して……授業中にリモコンローターでやってや\nろう……\p１日最低５人は学生を誘惑するように命令し、セック\nス中毒にして……\p早桃とレズらせるのもいいな……\p早桃にペニ\nスバンドを着けさせて、目の前で犯させよう……@
 そして……？\w\z
   
-FLAG \x8c\x02\x0c\x02" \xfe\x01 \x02 ,\x02 END
-CSCE SCE036_003 \xca\x04 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \xe8G\x0c"\x03z
+FLG3 \x8c\x02\x0c FLG3_SET \xfe\x01 \x02 ,\x02 END
+CSCE SCE036_003 \xca\x04 SCE_DONE 
+FLG3 \x8c\x01 FLG2 \xe8G FLG2_SET \x03z
  
 /*▲BGM8　再生*/\a2,-1,8,1,/*■CG15　表示　フェードイン*/\a7,-2,-2,0,\a0,14,2,0,\a6,-2,0,0,　拓司ははっと我に返り、驚愕した。@
 錦城をレイプするという考えは、ごく自然に浮かび上がってきた\nものだった。@
@@ -38,10 +35,9 @@ FLAG\x02 \xe8G\x0c"\x03z
 自分でもすでにコントロールできないほどに、妄想世界が膨れあ\nがっている。@
 すべてを押しつぶしてしまいそうなくらいに。\w\z
   
-FLAG \x0e\x05\x0c\x02" \xfe\x01 \x02 ,\x02 END
-CSCE SCE036_004 0\x07 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \xecG\x0c"\x03g
+FLG3 \x0e\x05\x0c FLG3_SET \xfe\x01 \x02 ,\x02 END
+CSCE SCE036_004 0\x07 SCE_DONE 
+FLG3 \x8c\x01 FLG2 \xecG FLG2_SET \x03g
  
 錦城\n　「虎菱くん？」@
 拓司\n　「……」@
@@ -52,12 +48,11 @@ FLAG\x02 \xecG\x0c"\x03g
 もしかしたらこれも妄想か、あるいは夢なのかもしれないじゃな\nいか。@
 目が覚めると自宅のベッドにいて、天井を見上げているのかもし\nれないじゃないか……。\w\z
   
-FLAG t\x07\x0c\x02" \xfe\x01 \x02 ,\x02 END
+FLG3 t\x07\x0c FLG3_SET \xfe\x01 \x02 ,\x02 END
 FOBT .\\Data\\Script\\Bgm.Fobv\x81\x1fJ\t \x02
 CMD1 StopCD RUNF t\t END
-CSCE SCE036_005 \x90\t \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \xf0G\x0c"\x03n
+CSCE SCE036_005 \x90\t SCE_DONE 
+FLG3 \x8c\x01 FLG2 \xf0G FLG2_SET \x03n
  
 錦城\n　「……まあ、いいわ」@
 拓司\n　「？」@
@@ -69,5 +64,5 @@ FLAG\x02 \xf0G\x0c"\x03n
 　　……どう？」@
 \n\a2,-1,7,1,\a6,0,0,0,錦城がぱちりとウインクした。\w\z
   
-FLAG \xd4\t\x0c\x02" \xfe\x01 \x02 ,\x02 END \xfe\x01 \x02
+FLG3 \xd4\t\x0c FLG3_SET \xfe\x01 \x02 ,\x02 END \xfe\x01 \x02
 CSCE TextClosev\x81\x1f\xd2\x0b END6\xf1

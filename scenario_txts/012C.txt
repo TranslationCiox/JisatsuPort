@@ -1,21 +1,19 @@
 START
 /%\x01`B#\x01`\x1e
-CSCE SCE012_001 \x06 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 `"\x0c"\x03\x0e
+CSCE SCE012_001 \x06 SCE_DONE 
+FLG3 \x8c\x01 FLG2 `" FLG2_SET \x03\x0e
  
 \n\n\n\n\n\n　　　　　　　　　　　『通学路』\
 
   
-FLAG J\x0c\x02"
+FLG3 J\x0c FLG3_SET
 WHAT .\\Data\\Script\\TextFunc.Fob RUNF \xa2 \x02
 CMD1 TextOn RUNF \xd0 END  
-FLAG \x05\x01\x0c\x02"
+FLG3 \x05\x01\x0c FLG3_SET
 FOBT .\\Data\\Script\\Bgm.Fobv\x81\x1f\x06\x01 \x02
 CMD1 PlayCD RUNF 0\x01 END
-CSCE SCE012_002 L\x01 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 d"\x0c"\x03\x97
+CSCE SCE012_002 L\x01 SCE_DONE 
+FLG3 \x8c\x01 FLG2 d" FLG2_SET \x03\x97
  
 　二つしか歳の離れていない、義妹という名の女。@
 　義兄という役割は、拓司が望んで担ったものではない。拓司が中\n　学に上がった時、親が再婚した。それだけのことだ。@
@@ -29,13 +27,12 @@ FLAG\x02 d"\x0c"\x03\x97
 　そして二週間前、偶然ドアの隙間から見てしまった光景は、完全\n　に彼の我慢をうち砕いた。\
 
   
-FLAG \x90\x01\x0c\x02" \xa2 \x02 \xd0 END  
-FLAG L\x0c\x02"
+FLG3 \x90\x01\x0c FLG3_SET \xa2 \x02 \xd0 END  
+FLG3 L\x0c FLG3_SET
 FOBT .\\Data\\Script\\Bg.Fobsv\x81\x1f@\x04 \x02
 CMD2 BgAutoFadeInsv\x81\x1fj\x04 END
-CSCE SCE012_003 \x8e\x04 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 h"\x0c"\x03\x7f
+CSCE SCE012_003 \x8e\x04 SCE_DONE 
+FLG3 \x8c\x01 FLG2 h" FLG2_SET \x03\x7f
  
 　義妹が、義兄である自分を思ってオナニーしている。@
 　それを知ってから、拓司のぼんやりとした世界は、急速にみだら\n　な色に染まっていった。@
@@ -47,10 +44,9 @@ FLAG\x02 h"\x0c"\x03\x7f
 　あるいはそうした光景を意識的に作り上げて。\
 
   
-FLAG \xd2\x04\x0c\x02" \xa2 \x02 \xd0 END
-CSCE SCE012_004 \x08\x07 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 l"\x0c"\x03\x97
+FLG3 \xd2\x04\x0c FLG3_SET \xa2 \x02 \xd0 END
+CSCE SCE012_004 \x08\x07 SCE_DONE 
+FLG3 \x8c\x01 FLG2 l" FLG2_SET \x03\x97
  
 　可憐で清純な義妹を、夢のなかで犯した。@
 　犯して犯して犯し抜いた。@
@@ -63,12 +59,11 @@ FLAG\x02 l"\x0c"\x03\x97
 　いつものように早桃を犯している最中、はっと、それが夢ではな\n　いことに気づくのではないかと。\
 
   
-FLAG L\x07\x0c\x02" \xa2 \x02 \xd0 END  
-FLAG \xc8\x0c\x02" @\x04 \x02 j\x04 END \x06\x01 \x02
+FLG3 L\x07\x0c FLG3_SET \xa2 \x02 \xd0 END  
+FLG3 \xc8\x0c FLG3_SET @\x04 \x02 j\x04 END \x06\x01 \x02
 CMD1 StopCD RUNF "\n END
-CSCE SCE012_005 >\n \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 p"\x0c"\x03B
+CSCE SCE012_005 >\n SCE_DONE 
+FLG3 \x8c\x01 FLG2 p" FLG2_SET \x03B
  
 拓司\n　「最近、どうだ？」@
 \n拓司はいった。@
@@ -79,10 +74,9 @@ FLAG\x02 p"\x0c"\x03B
 早桃\n　「上村さんでしょ？」\
 
   
-FLAG \x82\n\x0c\x02" \xa2 \x02 \xd0 END
-CSCE SCE012_006 \xc4\x0b \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 t"\x0c"\x03v
+FLG3 \x82\n\x0c FLG3_SET \xa2 \x02 \xd0 END
+CSCE SCE012_006 \xc4\x0b SCE_DONE 
+FLG3 \x8c\x01 FLG2 t" FLG2_SET \x03v
  
 拓司\n　「ああ、そうだったか。そのカミムラとかいう女、まだ……嫌が\n　　らせしてくるのか？」@
 早桃\n　「……ううん。もう、仲直りしたから」@
@@ -93,10 +87,9 @@ FLAG\x02 t"\x0c"\x03v
 拓司\n　「ああ。ブン殴ってでもやめさせてやる」\
 
   
-FLAG \x08\x0c\x0c\x02" \xa2 \x02 \xd0 END
-CSCE SCE012_007 \x1a\x0e \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 x"\x0c"\x035
+FLG3 \x08\x0c\x0c FLG3_SET \xa2 \x02 \xd0 END
+CSCE SCE012_007 \x1a\x0e SCE_DONE 
+FLG3 \x8c\x01 FLG2 x" FLG2_SET \x035
  
 早桃\n　「守って……くれるんだ？」@
 拓司\n　「ああ。\pお前は優しすぎるんだよ。@
@@ -105,10 +98,9 @@ FLAG\x02 x"\x0c"\x035
 早桃\n　「……そうかもね」\
 
   
-FLAG ^\x0e\x0c\x02" \xa2 \x02 \xd0 END
-CSCE SCE012_008 l\x0f \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 |"\x0c"\x03\xa2
+FLG3 ^\x0e\x0c FLG3_SET \xa2 \x02 \xd0 END
+CSCE SCE012_008 l\x0f SCE_DONE 
+FLG3 \x8c\x01 FLG2 |" FLG2_SET \x03\xa2
  
 沈んだ空気を振り払おうと、拓司は明るくいった。@
 \n拓司\n　「しかしアレだな、最近の若者はわからないよな！」@
@@ -118,10 +110,9 @@ FLAG\x02 |"\x0c"\x03\xa2
 拓司\n　「いや、２歳はデカいって。\p運動系の部活の連中とかさ、今年\n　　の新人はナニ考えてるの全然わからない、っていつもぼやいて\n　　るぜ。\p礼儀とか、常識とか、もう、全然おれたちとは違うっ\n　　て。\p説教してもポカンとされるだけで、まるで宇宙人に地\n　　球の掟を教えてるみたいだって」\
 
   
-FLAG \xb0\x0f\x0c\x02" \xa2 \x02 \xd0 END
-CSCE SCE012_009 r\x12 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \x80"\x0c"\x03<
+FLG3 \xb0\x0f\x0c FLG3_SET \xa2 \x02 \xd0 END
+CSCE SCE012_009 r\x12 SCE_DONE 
+FLG3 \x8c\x01 FLG2 \x80" FLG2_SET \x03<
  
 早桃\n　「……ということは、おにいちゃんも早桃のこと、ぜんぜんわか\n　　ってないってことかな？」@
 拓司\n　「おれはわかってるさ。もう長いつきあいだからな」@
@@ -130,18 +121,17 @@ FLAG\x02 \x80"\x0c"\x03<
 早桃\n　「……」\
 
   
-FLAG \xb6\x12\x0c\x02" \xa2 \x02 \xd0 END
-CSCE SCE012_010 \xe0\x13 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \x84"\x0c" \xa2 \x02
+FLG3 \xb6\x12\x0c FLG3_SET \xa2 \x02 \xd0 END
+CSCE SCE012_010 \xe0\x13 SCE_DONE 
+FLG3 \x8c\x01 FLG2 \x84" FLG2_SET  \xa2 \x02
 LOAD TextWindowOffDirect 0\x14 END  
-FLAG \x0c\x02"  \x04
-FLAG \x14\x0c\x02"  \x08
-FLAG \x0c\x02" \x06\x01 \x02
+FLG3 \x0c FLG3_SET  \x04
+FLG3 \x14\x0c FLG3_SET  \x08
+FLG3 \x0c FLG3_SET \x06\x01 \x02
 CSCE SePlayExsv\x81\x1f\xb2\x14 END  
-FLAG \x01\x0c\x02" @\x04 \x02
+FLG3 \x01\x0c FLG3_SET @\x04 \x02
 CMD2 BgNormalFadeIn RUNF \xf8\x14 END  
-FLAG \x07\x01\x0c\x02" \x06\x01 \x02 0\x01 END \xa2 \x02
+FLG3 \x07\x01\x0c FLG3_SET \x06\x01 \x02 0\x01 END \xa2 \x02
 CMD2 TextWindowOnsv\x81\x1f\\\x15 END\x03\x9d
  
 紅葉\n　「おはよーっ！」@
@@ -155,10 +145,9 @@ CMD2 TextWindowOnsv\x81\x1f\\\x15 END\x03\x9d
 　そんな印象がある。\
 
   
-FLAG \x80\x15\x0c\x02" \xa2 \x02 \xd0 END
-CSCE SCE012_011 .\x18 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \x88"\x0c"\x03\xa8
+FLG3 \x80\x15\x0c FLG3_SET \xa2 \x02 \xd0 END
+CSCE SCE012_011 .\x18 SCE_DONE 
+FLG3 \x8c\x01 FLG2 \x88" FLG2_SET \x03\xa8
  
 －－いまの自分とは大違いだ、と拓司は思った。@
 彼女は選ぶことができた。\p灰色のカンバスにとけ込むのではなく、\nそこに自由に絵を描いてゆくことを選ぶだけの色が……生命力が…\n紅葉には備わっていたのだ。@
@@ -170,29 +159,27 @@ FLAG\x02 \x88"\x0c"\x03\xa8
 \n　そこまで言ったときだった。早桃がおずおずといった。\
 
   
-FLAG r\x18\x0c\x02" \xa2 \x02 \xd0 END
-CSCE SCE012_012 L\x1b \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \x8c"\x0c"\x033
+FLG3 r\x18\x0c FLG3_SET \xa2 \x02 \xd0 END
+CSCE SCE012_012 L\x1b SCE_DONE 
+FLG3 \x8c\x01 FLG2 \x8c" FLG2_SET \x033
  
 早桃\n　「あの……おにいちゃん、私、先に行くから。……それじゃあ」\n\p/*　CG02　フェードアウト　（ブラック） */\a7,-2,-2,0,\a0,200,2,0,\a6,-2,0,0,拓司\n　「早桃？」@
 紅葉\n　「早桃ちゃん？」\
 
   
-FLAG \x90\x1b\x0c\x02" \xa2 \x02 \xd0 END
-CSCE SCE012_013 \x96\x1c \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \x90"\x0c"
+FLG3 \x90\x1b\x0c FLG3_SET \xa2 \x02 \xd0 END
+CSCE SCE012_013 \x96\x1c SCE_DONE 
+FLG3 \x8c\x01 FLG2 \x90" FLG2_SET 
 WHAT .\\Data\\Script\\TextFunc.fob RUNF \xda\x1c \x02
 FOBT CheckNormalMessageSkip RUNF \x08\x1d END  
-FLAG \x0c\x02"  \x04
-FLAG \x15\x0c\x02"  \x08
-FLAG \x0c\x02" \x06\x01 \x02 \xb2\x14 END \xa2 \x02
+FLG3 \x0c FLG3_SET  \x04
+FLG3 \x15\x0c FLG3_SET  \x08
+FLG3 \x0c FLG3_SET \x06\x01 \x02 \xb2\x14 END \xa2 \x02
 LOAD UpdateScenarioRead RUNF \xa8\x1d END\x03\x0b
 CHOICE
 早桃を追う\n紅葉と登校する\n\l0,2,
 ENDCHOICE
 
   
-FLAG \xd0\x1d\x0c\x02" \xa2 \x02 \xd0 END \xa2 \x02
+FLG3 \xd0\x1d\x0c FLG3_SET \xa2 \x02 \xd0 END \xa2 \x02
 CSCE TextClosev\x81\x1fB\x1e END6\xf1

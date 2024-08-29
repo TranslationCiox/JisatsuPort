@@ -1,19 +1,17 @@
 START
 \x03\x10\x01`B#\x01D\r
-CSCE SCE083_001 \x06 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 P\x91\x0c"\x03=
+CSCE SCE083_001 \x06 SCE_DONE 
+FLG3 \x8c\x01 FLG2 P\x91 FLG2_SET \x03=
  
 拓司は枕元に掛けられている鳥かごをのぞき込んだ。@
 なんという種類かはわからないが、どこかで見たことがあるよう\nな、いかにも普通の小鳥だ。@
 ただ、色だけがウソのように青く鮮やかで、屋台で売っているペ\nンキで着色されたヒヨコを思わせる。\w\z
   
-FLAG J\x0c\x02"
+FLG3 J\x0c FLG3_SET
 WHAT .\\Data\\Script\\TextFunc.Fob RUNF ^\x01 \x02
 CMD1 TextOn RUNF \x8c\x01 END
-CSCE SCE083_002 \xa8\x01 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 T\x91\x0c"\x03s
+CSCE SCE083_002 \xa8\x01 SCE_DONE 
+FLG3 \x8c\x01 FLG2 T\x91 FLG2_SET \x03s
  
 教授\n　「気になるかね？」@
 拓司\n　「？　ええ、まあ。この部屋にあるのはこの鳥かごだけですか\n　　らね。\pそりゃあ、気になります」@
@@ -25,10 +23,9 @@ FLAG\x02 T\x91\x0c"\x03s
 \nねばりつくようないいかただった。@
 見れば教授の額には、ちいさな汗が滲んでいる。\w\z
   
-FLAG \xec\x01\x0c\x02" ^\x01 \x02 \x8c\x01 END
-CSCE SCE083_003 \xf2\x03 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 X\x91\x0c"\x03g
+FLG3 \xec\x01\x0c FLG3_SET ^\x01 \x02 \x8c\x01 END
+CSCE SCE083_003 \xf2\x03 SCE_DONE 
+FLG3 \x8c\x01 FLG2 X\x91 FLG2_SET \x03g
  
 拓司\n　「……なにかこの鳥が、俺の過去に関係あるんですか？」@
 教授\n　「……」@
@@ -38,10 +35,9 @@ FLAG\x02 X\x91\x0c"\x03g
 しめきられた白い部屋には、拓司と教授、２人だけが向かい合っ\nて残された。@
 長い沈黙の後、教授が口を開いた。\w\z
   
-FLAG 6\x04\x0c\x02" ^\x01 \x02 \x8c\x01 END
-CSCE SCE083_004 \x0c\x06 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \\\x91\x0c"\x03\x87
+FLG3 6\x04\x0c FLG3_SET ^\x01 \x02 \x8c\x01 END
+CSCE SCE083_004 \x0c\x06 SCE_DONE 
+FLG3 \x8c\x01 FLG2 \\\x91 FLG2_SET \x03\x87
  
 教授\n　「……その鳥はね、ありえない鳥なんだよ」@
 拓司\n　「？」@
@@ -55,10 +51,9 @@ FLAG\x02 \\\x91\x0c"\x03\x87
 \n頭の奥が、ずきんと痛んだ。@
 その痛みは急速に大きく膨れ上がり、すぐに拓司の頭のなかいっ\nぱいに広がった。\w\z
   
-FLAG P\x06\x0c\x02" ^\x01 \x02 \x8c\x01 END
-CSCE SCE083_005 \xa6\x08 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 `\x91\x0c"\x03c
+FLG3 P\x06\x0c FLG3_SET ^\x01 \x02 \x8c\x01 END
+CSCE SCE083_005 \xa6\x08 SCE_DONE 
+FLG3 \x8c\x01 FLG2 `\x91 FLG2_SET \x03c
  
 拓司\n　「意味が……わからない」@
 \n教授が突然、がばと身を乗り出した。@
@@ -69,13 +64,12 @@ FLAG\x02 `\x91\x0c"\x03c
 　　いいかね、これは、新しい生き物なんだよ！@
 　　あらゆる生物学から外れた……神が作ったこの世界の生物な\n　　らぬ……なにかだッ！」\w\z
   
-FLAG \xea\x08\x0c\x02" ^\x01 \x02 \x8c\x01 END  
-FLAG \xca\x0c\x02"
+FLG3 \xea\x08\x0c FLG3_SET ^\x01 \x02 \x8c\x01 END  
+FLG3 \xca\x0c FLG3_SET
 FOBT .\\Data\\Script\\Bg.Fobsv\x81\x1f\xca\n \x02
 CMD2 BgAutoFadeInsv\x81\x1f\xf4\n END
-CSCE SCE083_006 \x18\x0b \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 d\x91\x0c"\x03T
+CSCE SCE083_006 \x18\x0b SCE_DONE 
+FLG3 \x8c\x01 FLG2 d\x91 FLG2_SET \x03T
  
 　ザザザザザザザザザザ@
 \n青い鳥がきしんで、鳴いた。@
@@ -85,6 +79,6 @@ FLAG\x02 d\x91\x0c"\x03T
 \n教授\n　「おまえは誰だ？！　何者なんだ？！　お前は－－」@
 \nスイッチを落としたように、目の前が真っ暗になった。\w\z
   
-FLAG \\\x0b\x0c\x02" ^\x01 \x02 \x8c\x01 END  
-FLAG \xc8\x0c\x02" \xca\n \x02 \xf4\n END ^\x01 \x02
+FLG3 \\\x0b\x0c FLG3_SET ^\x01 \x02 \x8c\x01 END  
+FLG3 \xc8\x0c FLG3_SET \xca\n \x02 \xf4\n END ^\x01 \x02
 CSCE TextClosev\x81\x1f&\r END6\xf1

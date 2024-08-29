@@ -1,18 +1,16 @@
 START
 \x17\x10\x01`B#\x010\r
-CSCE SCE096_001 \x06 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \xa0\xa5\x0c"\x03\x11
+CSCE SCE096_001 \x06 SCE_DONE 
+FLG3 \x8c\x01 FLG2 \xa0\xa5 FLG2_SET \x03\x11
  
 \n\n\n\n\n\n\n\n\n\n　　　　　　　　　　　　　『３日目』\
 
   
-FLAG J\x0c\x02"
+FLG3 J\x0c FLG3_SET
 WHAT .\\Data\\Script\\TextFunc.Fob RUNF \xae \x02
 CMD1 TextOn RUNF \xdc END
-CSCE SCE096_002 \xf8 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \xa4\xa5\x0c"\x03q
+CSCE SCE096_002 \xf8 SCE_DONE 
+FLG3 \x8c\x01 FLG2 \xa4\xa5 FLG2_SET \x03q
  
 　全員の顔に疲労の影を見た拓司は、なたねに提案をした。@
 \n拓司\n　「身体を濡れタオルで洗うのは５日に１回って話だったけど…\n　　…」@
@@ -24,10 +22,9 @@ FLAG\x02 \xa4\xa5\x0c"\x03q
 　　身体を拭くんだ」\
 
   
-FLAG <\x01\x0c\x02" \xae \x02 \xdc END
-CSCE SCE096_003 :\x03 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \xa8\xa5\x0c"\x03i
+FLG3 <\x01\x0c FLG3_SET \xae \x02 \xdc END
+CSCE SCE096_003 :\x03 SCE_DONE 
+FLG3 \x8c\x01 FLG2 \xa8\xa5 FLG2_SET \x03i
  
 なたね\n　「……５日に１回で衛生的には問題はないと思うんですけど」@
 拓司\n　「衛生的な問題じゃない。\p精神的な問題だ」@
@@ -35,16 +32,15 @@ FLAG\x02 \xa8\xa5\x0c"\x03i
 \n　なたねは、準備室から水の入ったポリタンクと、新しいタオル\nを人数分運び出してきた。\p全員で協力して実験器具が詰まった\n棚を移動して壁を作り、そこを即席の『シャワールーム』とした。\n\pもちろん、女性陣のプライバシーを守るためである。\
 
   
-FLAG ~\x03\x0c\x02" \xae \x02 \xdc END  
-FLAG  \x0c\x02"
+FLG3 ~\x03\x0c FLG3_SET \xae \x02 \xdc END  
+FLG3  \x0c FLG3_SET
 FOBT .\\Data\\Script\\Bg.Fobsv\x81\x1fv\x05 \x02
 CMD2 BgAutoFadeInsv\x81\x1f\xa0\x05 END  
-FLAG \x07\x01\x0c\x02"
+FLG3 \x07\x01\x0c FLG3_SET
 FOBT .\\Data\\Script\\Bgm.Fobv\x81\x1f\xde\x05 \x02
 CMD1 PlayCD RUNF \x08\x06 END
-CSCE SCE096_004 $\x06 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \xac\xa5\x0c"\x03q
+CSCE SCE096_004 $\x06 SCE_DONE 
+FLG3 \x8c\x01 FLG2 \xac\xa5 FLG2_SET \x03q
  
 早桃\n　「やったあ！\p　もう身体がべとべとで、気持ち悪くてしかたな\n　　かったんだよね！」@
 カンナ\n　「うう～ん、生き返るぅ～！」@
@@ -56,10 +52,9 @@ FLAG\x02 \xac\xa5\x0c"\x03q
 錦城\n　「ふふふ」\
 
   
-FLAG h\x06\x0c\x02" \xae \x02 \xdc END
-CSCE SCE096_005 f\x08 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \xb0\xa5\x0c"\x03p
+FLG3 h\x06\x0c FLG3_SET \xae \x02 \xdc END
+CSCE SCE096_005 f\x08 SCE_DONE 
+FLG3 \x8c\x01 FLG2 \xb0\xa5 FLG2_SET \x03p
  
 早桃\n　「それにしても、錦城先生はさすがですよね……大人の女の人\n　　って感じで」@
 錦城\n　「ありがとう。\p早桃ちゃんも肌が白くて素敵よ？」@
@@ -69,10 +64,9 @@ FLAG\x02 \xb0\xa5\x0c"\x03p
 \n　言葉は汚いが、御堂の声もどこか明るい。\pひんやりとした水の\n冷たさが、全員の気分を高揚させている。\pなんとなく合宿をして\nいるような、そんな感じすらある。\
 
   
-FLAG \xaa\x08\x0c\x02" \xae \x02 \xdc END
-CSCE SCE096_006 \xa4\n \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \xb4\xa5\x0c"\x03y
+FLG3 \xaa\x08\x0c FLG3_SET \xae \x02 \xdc END
+CSCE SCE096_006 \xa4\n SCE_DONE 
+FLG3 \x8c\x01 FLG2 \xb4\xa5 FLG2_SET \x03y
  
 御堂\n　「虎菱、おめえなかなか粋なことしてくれんじゃねえかよ」@
 拓司\n　「リーダーだからな」@
@@ -83,5 +77,5 @@ FLAG\x02 \xb4\xa5\x0c"\x03y
 \n　誰が御堂に投票したのだろう……拓司はその疑問を頭から無理\nに追い出した。\pとりあえずいまくらいは、さっぱりと明るい気持\nちでいたかった。\
 
   
-FLAG \xe8\n\x0c\x02" \xae \x02 \xdc END \xae \x02
+FLG3 \xe8\n\x0c FLG3_SET \xae \x02 \xdc END \xae \x02
 CSCE TextClosev\x81\x1f\x12\r END6\xf1

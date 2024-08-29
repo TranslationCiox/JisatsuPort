@@ -2,14 +2,13 @@ START
 \xa6\x11\x01`B#\x01,\x0e
 FOBT .\\Data\\Script\\Bgm.Fobv\x81\x1f\x06 \x02
 CMD1 StopCD RUNF 0 END  
-FLAG =\x0c\x02"
+FLG3 =\x0c FLG3_SET
 FOBT .\\Data\\Script\\Bg.Fobsv\x81\x1ff \x02
 CMD2 BgAutoFadeInsv\x81\x1f\x90 END  
-FLAG \x04\x01\x0c\x02" \x06 \x02
+FLG3 \x04\x01\x0c FLG3_SET \x06 \x02
 CMD1 PlayCD RUNF \xda END
-CSCE SCEK05_001 \xf6 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \x80\xa6\x01\x0c"\x03\x96
+CSCE SCEK05_001 \xf6 SCE_DONE 
+FLG3 \x8c\x01 FLG2 \x80\xa6\x01 FLG2_SET \x03\x96
  
 　ゆきのそうしたやり方は、とても新鮮で、スマートに映った。@
 自分の道を行くつもりであれば、周囲との軋轢が産まれるのはや\nむなしと思いこんでいた私に、ゆきは、より高度なやりかたがあ\nると教えてくれた。@
@@ -19,12 +18,11 @@ FLAG\x02 \x80\xa6\x01\x0c"\x03\x96
 　私はゆきを尊敬した。@
 　私のどこに魅力を見つけたのか、ゆきもまた、私をどこか尊敬\nしてくれているような感じがあって、それはとても心地がよかっ\nた。\w\z
   
-FLAG :\x01\x0c\x02"
+FLG3 :\x01\x0c FLG3_SET
 WHAT .\\Data\\Script\\TextFunc.Fob RUNF \xb2\x03 \x02
 CMD1 TextOn RUNF \xe0\x03 END
-CSCE SCEK05_002 \xfc\x03 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \x84\xa6\x01\x0c"\x03~
+CSCE SCEK05_002 \xfc\x03 SCE_DONE 
+FLG3 \x8c\x01 FLG2 \x84\xa6\x01 FLG2_SET \x03~
  
 　１ヶ月も経ったころ－－誤解を恐れずにいうけれど－－\n私は若草ゆきに恋していた。@
 私は、自分がゆきに与えられるものはなんなのだろうか、と考え\nるようになっていた。@
@@ -32,10 +30,9 @@ FLAG\x02 \x84\xa6\x01\x0c"\x03~
 私は自分自身をまじまじと見つめ、そうして自分があまりに薄っ\nぺらで、ゆきに返すような素敵なものをなにひとつ持っていない\nことに初めて気づいた。@
 若草ゆきに恋することで、私は、唐突に自分というものの輪郭を\nはっきり認識させられたのだった。\w\z
   
-FLAG @\x04\x0c\x02" \xb2\x03 \x02 \xe0\x03 END
-CSCE SCEK05_003 r\x06 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \x88\xa6\x01\x0c"\x03_
+FLG3 @\x04\x0c FLG3_SET \xb2\x03 \x02 \xe0\x03 END
+CSCE SCEK05_003 r\x06 SCE_DONE 
+FLG3 \x8c\x01 FLG2 \x88\xa6\x01 FLG2_SET \x03_
  
 　私はこれまで何をやってきたのだろう？@
 足下がガラガラと崩れていくみたいなショックだった。@
@@ -44,10 +41,9 @@ FLAG\x02 \x88\xa6\x01\x0c"\x03_
 何者も容易には侵入できない、立派な城壁だった。@
 けれども私が作り上げたのは城壁だけで、そのなかに城と呼べる\nものがなかったと……私は知った。\w\z
   
-FLAG \xb6\x06\x0c\x02" \xb2\x03 \x02 \xe0\x03 END
-CSCE SCEK05_004 l\x08 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \x8c\xa6\x01\x0c"\x03p
+FLG3 \xb6\x06\x0c FLG3_SET \xb2\x03 \x02 \xe0\x03 END
+CSCE SCEK05_004 l\x08 SCE_DONE 
+FLG3 \x8c\x01 FLG2 \x8c\xa6\x01 FLG2_SET \x03p
  
 　むさぼるように本を読んで、映画を観て、音楽を聴いた。@
 洋服や髪型に気をつけて、できるだけ素敵な女の子として振る舞\nおうと心がけた。@
@@ -58,10 +54,9 @@ FLAG\x02 \x8c\xa6\x01\x0c"\x03p
 私に対する露骨な悪意は、しだいに周囲から影を潜めていった。\nいまの（－－この学校での、ね）@
 私のスタンスは、このころに形作られたのだと思う。\w\z
   
-FLAG \xb0\x08\x0c\x02" \xb2\x03 \x02 \xe0\x03 END
-CSCE SCEK05_005 \xaa\n \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \x90\xa6\x01\x0c"\x03\x8e
+FLG3 \xb0\x08\x0c FLG3_SET \xb2\x03 \x02 \xe0\x03 END
+CSCE SCEK05_005 \xaa\n SCE_DONE 
+FLG3 \x8c\x01 FLG2 \x90\xa6\x01 FLG2_SET \x03\x8e
  
 　私は、自分たちの関係は、周囲のおままごととは違うと思って\nいた。@
 より高い次元での交流……肉体とは別次元の精神的な繋がりだと。\n\p私たちは他の子たちみたいにのべつくまなくベタベタしたりはし\nなかった。@
@@ -70,11 +65,11 @@ FLAG\x02 \x90\xa6\x01\x0c"\x03\x8e
 真に価値あるものが、そこらにありふれているはずはない、と。@
 でも、思いとはうらはらに、私のなかで、徐々に、ゆきに抱きつ\nいて、キスをしたいという願望が膨らんでいった。\w\z
   
-FLAG \xee\n\x0c\x02" \xb2\x03 \x02 \xe0\x03 END\x03\x1a
+FLG3 \xee\n\x0c FLG3_SET \xb2\x03 \x02 \xe0\x03 END\x03\x1a
 CHOICE
 私はゆきに、自分の気持ちを正直に伝えた\nそれでも私は、ゆきとプラトニックな関係を続けた\n\l0,2,
 ENDCHOICE
 
   
-FLAG `\r\x0c\x02" \xb2\x03 \x02 \xe0\x03 END \xb2\x03 \x02
+FLG3 `\r\x0c FLG3_SET \xb2\x03 \x02 \xe0\x03 END \xb2\x03 \x02
 CSCE TextClosev\x81\x1f\x0e\x0e END6\xf1

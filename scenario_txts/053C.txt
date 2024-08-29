@@ -1,11 +1,10 @@
 START
 !\x15\x01`B#\x01r\x11  
-FLAG \x0b\x01\x0c\x02"
+FLG3 \x0b\x01\x0c FLG3_SET
 FOBT .\\Data\\Script\\Bgm.Fobv\x81\x1f  \x02
 CMD1 PlayCD RUNF J END
-CSCE SCE053_001 f \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 pb\x0c"\x03z
+CSCE SCE053_001 f SCE_DONE 
+FLG3 \x8c\x01 FLG2 pb FLG2_SET \x03z
  
 机が乱暴に端々に追いやられ、教室は妙に広々としている。@
 教室の中央に、学生たちが群れている。@
@@ -14,12 +13,11 @@ FLAG\x02 pb\x0c"\x03z
 /*▲BGM　Track11　再生　*//*■CG21　表示（クロスフェード）　*/\a7,-2,-2,0,\a0,20,2,0,\a6,-2,0,0,\n早桃だ。\
 
   
-FLAG \xaa\x0c\x02"
+FLG3 \xaa\x0c FLG3_SET
 WHAT .\\Data\\Script\\TextFunc.Fob RUNF \xb2\x02 \x02
 CMD1 TextOn RUNF \xe0\x02 END
-CSCE SCE053_002 \xfc\x02 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 tb\x0c"\x03C
+CSCE SCE053_002 \xfc\x02 SCE_DONE 
+FLG3 \x8c\x01 FLG2 tb FLG2_SET \x03C
  
 学生\n　「だいたい図々しいんだよ」@
 学生\n　「なんでお前、率先して死なないわけ？」@
@@ -32,10 +30,9 @@ FLAG\x02 tb\x0c"\x03C
 学生\n　「死ねよ」\
 
   
-FLAG @\x03\x0c\x02" \xb2\x02 \x02 \xe0\x02 END
-CSCE SCE053_003 \x86\x04 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 xb\x0c"\x03\x96
+FLG3 @\x03\x0c FLG3_SET \xb2\x02 \x02 \xe0\x02 END
+CSCE SCE053_003 \x86\x04 SCE_DONE 
+FLG3 \x8c\x01 FLG2 xb FLG2_SET \x03\x96
  
 　死ねよ、死ねよ、死ねよ、死ねよ、死ねよ、死ねよ、死ねよ、\n　死ねよ、死ねよ、死ねよ\n　死ね死ね死ね死ね死ね死ね死ね死ね死ね死ね死ね死ね死ね死ね\n　死ね死ね死ね\n　シネシネシネシネシシネシネシネシネシネシネシネシネシネシ\n　ネシネシネシネシネシネ\n　学生たちの声は、大合唱となって教室にとどろき渡った。@
 \n　シ……足を上げる。@
@@ -45,10 +42,9 @@ FLAG\x02 xb\x0c"\x03\x96
 \n　シネシネシネシネシシネシネシネシネシネシネシネシネシネシ\nネシネシネシネシネシネ\n　ドンガドンガドンガドンドンガドンガドンガドンガドンガドン\nガドンガドンガドンガドンガドンガ\
 
   
-FLAG \xca\x04\x0c\x02" \xb2\x02 \x02 \xe0\x02 END
-CSCE SCE053_004 \\\x07 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 |b\x0c"\x03\xb3
+FLG3 \xca\x04\x0c FLG3_SET \xb2\x02 \x02 \xe0\x02 END
+CSCE SCE053_004 \\\x07 SCE_DONE 
+FLG3 \x8c\x01 FLG2 |b FLG2_SET \x03\xb3
  
 　足を踏みならす音は太鼓のリズムで、合唱は呪文の詠唱だった@
 　中世の魔女狩りそのものだった。@
@@ -62,13 +58,12 @@ FLAG\x02 |b\x0c"\x03\xb3
 \n早桃\n　「ごめんなさい……ごめんなさい……ごめんなさい……」\
 
   
-FLAG \xa0\x07\x0c\x02" \xb2\x02 \x02 \xe0\x02 END  
-FLAG \xc8\x0c\x02"
+FLG3 \xa0\x07\x0c FLG3_SET \xb2\x02 \x02 \xe0\x02 END  
+FLG3 \xc8\x0c FLG3_SET
 FOBT .\\Data\\Script\\Bg.Fobsv\x81\x1f\xc0\n \x02
 CMD2 BgAutoFadeInsv\x81\x1f\xea\n END
-CSCE SCE053_005 \x0e\x0b \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \x80b\x0c"\x03r
+CSCE SCE053_005 \x0e\x0b SCE_DONE 
+FLG3 \x8c\x01 FLG2 \x80b FLG2_SET \x03r
  
 早桃がクラスのなかで孤立しているということは知っていた。@
 人見知りの激しい早桃は、いじめの絶好の標的だったのだろう。\nそれにしても－－@
@@ -78,10 +73,9 @@ FLAG\x02 \x80b\x0c"\x03r
 しかしまた、背後から拓司の肩を押さえた者がいる。\
 
   
-FLAG R\x0b\x0c\x02" \xb2\x02 \x02 \xe0\x02 END
-CSCE SCE053_006 T\r \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \x84b\x0c"\x03a
+FLG3 R\x0b\x0c FLG3_SET \xb2\x02 \x02 \xe0\x02 END
+CSCE SCE053_006 T\r SCE_DONE 
+FLG3 \x8c\x01 FLG2 \x84b FLG2_SET \x03a
  
 拓司\n　「離してくれ、雲居さん」@
 なたね\n　「駄目。\pいま入っても義妹さんは救えない。\p多勢に無勢。@
@@ -92,21 +86,20 @@ FLAG\x02 \x84b\x0c"\x03a
 \nなたねはすうっと目を細めて天を見上げ、指先で空中に何かの文\n字を書いた。\pそれから地面に掌をぴったりと当てて、沈黙に沈み\n込んだ。\p拓司のなかで怒りが爆発した。\
 
   
-FLAG \x98\r\x0c\x02" \xb2\x02 \x02 \xe0\x02 END
-CSCE SCE053_007 V\x0f \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \x88b\x0c"\x03>
+FLG3 \x98\r\x0c FLG3_SET \xb2\x02 \x02 \xe0\x02 END
+CSCE SCE053_007 V\x0f SCE_DONE 
+FLG3 \x8c\x01 FLG2 \x88b FLG2_SET \x03>
  
 拓司\n　「ふざけるな、そんな遊びにつきあってるヒマは－－」@
 雲居\n　「間違いない。\pいま、前兆を確認したわ。\p五分後、大きな波が\n　　来るわ。\pそれまで待てば、みんな自滅する。\pそうすれば、危\n　　険を冒さずに義妹さんを助けられるわ」\
 
   
-FLAG \x9a\x0f\x0c\x02" \xb2\x02 \x02 \xe0\x02 END
+FLG3 \x9a\x0f\x0c FLG3_SET \xb2\x02 \x02 \xe0\x02 END
 S204 
 CHOICE
 待っていられない\n待つ\n\l0,2,
 ENDCHOICE
 
   
-FLAG \xcc\x10\x0c\x02" \xb2\x02 \x02 \xe0\x02 END \xb2\x02 \x02
+FLG3 \xcc\x10\x0c FLG3_SET \xb2\x02 \x02 \xe0\x02 END \xb2\x02 \x02
 CSCE TextClosev\x81\x1f:\x11 END \xb2\x02 \x02 :\x11 END6\xf1

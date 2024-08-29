@@ -1,11 +1,10 @@
 START
 \xbe#\x01`B#\x01\xec\x1d  
-FLAG \xc8\x0c\x02"
+FLG3 \xc8\x0c FLG3_SET
 FOBT .\\Data\\Script\\Bg.Fobsv\x81\x1f  \x02
 CMD1 BgOnsv\x81\x1fJ END
-CSCE SCE088_001 f \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02  \x99\x0c"\x03\x96
+CSCE SCE088_001 f SCE_DONE 
+FLG3 \x8c\x01 FLG2  \x99 FLG2_SET \x03\x96
  
 御堂\n　「ふざけるな！」@
 \n　御堂が怒りに身体を震わせている。@
@@ -14,12 +13,11 @@ FLAG\x02  \x99\x0c"\x03\x96
 御堂\n　「うるせえッ！\p　とにかく、こんな狂った女を信じるのは俺は\n　　ゴメンだ！\p　お前らも信じてなんかいねえくせに、信じたフ\n　　リすんのはやめろ！\p　溺れてるからってワラ掴んでどうする\n　　よ！\p　ワラはしょせんワラなんだぞ、てめえら！」　\
 
   
-FLAG \xaa\x0c\x02"
+FLG3 \xaa\x0c FLG3_SET
 WHAT .\\Data\\Script\\TextFunc.Fob RUNF "\x03 \x02
 CMD1 TextOn RUNF P\x03 END
-CSCE SCE088_002 l\x03 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 $\x99\x0c"\x03\xaa
+CSCE SCE088_002 l\x03 SCE_DONE 
+FLG3 \x8c\x01 FLG2 $\x99 FLG2_SET \x03\xaa
  
 　静寂がおりた。@
 　御堂の言葉はもっともだった。\p誰もなたねのいうことなど、本\n　心では信じていなかった。@
@@ -32,10 +30,9 @@ FLAG\x02 $\x99\x0c"\x03\xaa
 　　アルミホイルは窓には張り付けないで。\p反射した波動をはじ\n　　き返す出口が必要だから。\pそうしないと波動が内部で無限反\n　　射を繰り返すことになってしまうから－－」\
 
   
-FLAG \xb0\x03\x0c\x02" "\x03 \x02 P\x03 END
-CSCE SCE088_003 \x92\x06 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 (\x99\x0c"\x03s
+FLG3 \xb0\x03\x0c FLG3_SET "\x03 \x02 P\x03 END
+CSCE SCE088_003 \x92\x06 SCE_DONE 
+FLG3 \x8c\x01 FLG2 (\x99 FLG2_SET \x03s
  
 御堂\n　「うるせえ！\p　もういいってんだよ、電波女！」@
 なたね\n　「……」@
@@ -47,10 +44,9 @@ FLAG\x02 (\x99\x0c"\x03s
 /*▲BGM　Track06　再生*/\a2,-1,6,1,なたね\n　「私たちは団結しなければなりません。\p私たちの目的は、この\n　　非常事態下を生き残ること。\pそうでしょう？\p　だから団結\n　　を乱すような行為は控えてください」\
 
   
-FLAG \xd6\x06\x0c\x02" "\x03 \x02 P\x03 END
-CSCE SCE088_004 \xdc\x08 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 ,\x99\x0c"\x03\xa2
+FLG3 \xd6\x06\x0c FLG3_SET "\x03 \x02 P\x03 END
+CSCE SCE088_004 \xdc\x08 SCE_DONE 
+FLG3 \x8c\x01 FLG2 ,\x99 FLG2_SET \x03\xa2
  
 御堂\n　「……この！」@
 \n　殴りかかろうとする御堂を、拓司と錦城が必死で取り押さえる。\n　@
@@ -61,10 +57,9 @@ FLAG\x02 ,\x99\x0c"\x03\xa2
 \n　全員の視線が、さっと実験準備室の扉へと注がれる。\
 
   
-FLAG  \t\x0c\x02" "\x03 \x02 P\x03 END
-CSCE SCE088_005 \xe2\x0b \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 0\x99\x0c"\x03\x82
+FLG3  \t\x0c FLG3_SET "\x03 \x02 P\x03 END
+CSCE SCE088_005 \xe2\x0b SCE_DONE 
+FLG3 \x8c\x01 FLG2 0\x99 FLG2_SET \x03\x82
  
 なたね\n　「ただし－－鍵は私が持っています」@
 \n　なたねは鋭くいって、スカートのポケットから小さな鍵を取り出\n　した。@
@@ -75,10 +70,9 @@ FLAG\x02 0\x99\x0c"\x03\x82
 錦城\n　「やめなさい、御堂くん！\p……どういうことかしら、雲居さ\n　　ん。\p御堂くんじゃなくても、あなたの話を聞いていると不安\n　　になるわ。\pわかりやすく説明してもらえないかしら？」\
 
   
-FLAG &\x0c\x0c\x02" "\x03 \x02 P\x03 END
-CSCE SCE088_006 h\x0e \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 4\x99\x0c"\x03\xb1
+FLG3 &\x0c\x0c FLG3_SET "\x03 \x02 P\x03 END
+CSCE SCE088_006 h\x0e SCE_DONE 
+FLG3 \x8c\x01 FLG2 4\x99 FLG2_SET \x03\xb1
  
 なたね\n　「私たちは団結しなければなりません。\pその点はご同意いただ\n　　けますね？」@
 錦城\n　「……」@
@@ -88,10 +82,9 @@ FLAG\x02 4\x99\x0c"\x03\xb1
 \n　なたねはそれを無視して続けた。\p異様な緊張が、部屋に充ちて\n　いる。\
 
   
-FLAG \xac\x0e\x0c\x02" "\x03 \x02 P\x03 END
-CSCE SCE088_007 \xaa\x11 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 8\x99\x0c"\x03\x99
+FLG3 \xac\x0e\x0c FLG3_SET "\x03 \x02 P\x03 END
+CSCE SCE088_007 \xaa\x11 SCE_DONE 
+FLG3 \x8c\x01 FLG2 8\x99 FLG2_SET \x03\x99
  
 なたね\n　「そうした些細な意見の食い違いは、今後は抑圧されなければ\n　　なりません。\p抑圧するために、私たちのなかの誰かが、私た\n　　ちの管理者にならなければなりません。\pトップから末端に、\n　　完全な形で指令が行き届く強力な縦社会の構築こそが必要で\n　　す」@
 錦城\n　「……あなたが、管理者になるということ……？」@
@@ -102,10 +95,9 @@ FLAG\x02 8\x99\x0c"\x03\x99
 錦城\n　「どういう意味……？」\
 
   
-FLAG \xee\x11\x0c\x02" "\x03 \x02 P\x03 END
-CSCE SCE088_008 \x8c\x14 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 <\x99\x0c"\x03\xb6
+FLG3 \xee\x11\x0c FLG3_SET "\x03 \x02 P\x03 END
+CSCE SCE088_008 \x8c\x14 SCE_DONE 
+FLG3 \x8c\x01 FLG2 <\x99 FLG2_SET \x03\xb6
  
 なたね\n　「管理者の暴走を抑止する装置になるということです」@
 錦城\n　「装置？」@
@@ -114,10 +106,9 @@ FLAG\x02 <\x99\x0c"\x03\xb6
 なたね\n　「このように、みなさんは、他のみなさんに対して中立ではあ\n　　りません。\pすなわち、不公平な専制君主が生まれる危険性が\n　　あるわけです。\pですから、暴走を抑止する意味で、私が鍵を\n　　管理します。\p一部なりとも、私が権利を所有するというわけ\n　　です。\pもちろん、食糧の管理を受け持つ私が専制君主になる\n　　可能性はあるわけですが、その場合、力ずくでもなんでも、\n　　私から鍵を奪うことは簡単なはずです。\pもっとも、私も私な\n　　りに抵抗はさせてもらうと思いますけれど」\
 
   
-FLAG \xd0\x14\x0c\x02" "\x03 \x02 P\x03 END
-CSCE SCE088_009 \xe2\x17 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 @\x99\x0c"\x03\x8f
+FLG3 \xd0\x14\x0c FLG3_SET "\x03 \x02 P\x03 END
+CSCE SCE088_009 \xe2\x17 SCE_DONE 
+FLG3 \x8c\x01 FLG2 @\x99 FLG2_SET \x03\x8f
  
 　全員が、なたねの言葉をゆっくりと、慎重にかみ砕いていた。@
 なにか重要なことが、いま決められようとしている。\pそれは運命\nを－－文字通り生と死を内包した運命そのものを－－決める決定\n的なものとなるはずだった。@
@@ -128,10 +119,9 @@ FLAG\x02 @\x99\x0c"\x03\x8f
 錦城\n　「そうかしら？」\
 
   
-FLAG &\x18\x0c\x02" "\x03 \x02 P\x03 END
-CSCE SCE088_010 \x9c\x1a \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 D\x99\x0c"\x03d
+FLG3 &\x18\x0c FLG3_SET "\x03 \x02 P\x03 END
+CSCE SCE088_010 \x9c\x1a SCE_DONE 
+FLG3 \x8c\x01 FLG2 D\x99 FLG2_SET \x03d
  
 なたね\n　「私の目的は、来たる地球本土決戦に向けて、１人でも多くの\n　　人間を生き残らせることだけですから」@
 \n　なたねの口の端がキューっとつり上がった。@
@@ -140,15 +130,14 @@ FLAG\x02 D\x99\x0c"\x03d
 拓司は……\
 
   
-FLAG \xe0\x1a\x0c\x02" "\x03 \x02 P\x03 END\x03!
+FLG3 \xe0\x1a\x0c FLG3_SET "\x03 \x02 P\x03 END\x03!
 CHOICE
 自分に投票した\n紅葉に投票した\nカンナに投票した\n早桃に投票した\n御堂に投票した\n錦城に投票した\nなたねに投票した\n\l0,7,
 ENDCHOICE
 
   
-FLAG \xaa\x1c\x0c\x02" "\x03 \x02 P\x03 END "\x03 \x02
+FLG3 \xaa\x1c\x0c FLG3_SET "\x03 \x02 P\x03 END "\x03 \x02
 CMD2 GetLastTxtIDsv\x81\x1ft\x1d END! 
-FLAG \x04
-FLAG\x02  
-FLAG\x0c\x01" "\x03 \x02
+FLG3 \x04 FLG2  
+FLG3\x0c\x01" "\x03 \x02
 CSCE TextClosev\x81\x1f\xce\x1d END6\xf1

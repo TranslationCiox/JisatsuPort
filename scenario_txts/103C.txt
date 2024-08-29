@@ -1,8 +1,7 @@
 START
 \xb7\x03\x01 \x044\x01\xe6\x02
-CSCE SCE103_001 \x06 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \x90\xb0\x0c"\x03\x82
+CSCE SCE103_001 \x06 SCE_DONE 
+FLG3 \x8c\x01 FLG2 \x90\xb0 FLG2_SET \x03\x82
  
 紅葉\n　「……どうして？」@
 拓司\n　「なにかが暴力で解決されるってことが証明されたら、たぶん\n　　もう歯止めが利かなくなる。@
@@ -13,7 +12,7 @@ FLAG\x02 \x90\xb0\x0c"\x03\x82
 紅葉は無言だったが、その沈黙の中に、拓司は明らかに不満の影\nを感じとった。@
 \z
   
-FLAG J\x0c\x02"
+FLG3 J\x0c FLG3_SET
 WHAT .\\Data\\Script\\TextFunc.Fob RUNF r\x02 \x02
 CMD1 TextOn RUNF \xa0\x02 END r\x02 \x02
 CSCE TextClosev\x81\x1f\xc8\x02 END6\xf1

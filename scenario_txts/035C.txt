@@ -1,21 +1,19 @@
 START
 \xfb\x08\x01`B#\x01\x14\x07  
-FLAG \x07\x01\x0c\x02"
+FLG3 \x07\x01\x0c FLG3_SET
 FOBT .\\Data\\Script\\Bgm.Fobv\x81\x1f  \x02
 CMD1 PlayCD RUNF J END
-CSCE SCE033_001 f \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 PF\x0c"\x03&
+CSCE SCE033_001 f SCE_DONE 
+FLG3 \x8c\x01 FLG2 PF FLG2_SET \x03&
  
 拓司の中に、今日の昼食はどうするのか、という紅葉の言葉が引\nっかかっていた。\p拓司は、教室に引き返し、弁当をかじっている\n紅葉に声をかけた。\
 
   
-FLAG \xaa\x0c\x02"
+FLG3 \xaa\x0c FLG3_SET
 WHAT .\\Data\\Script\\TextFunc.Fob RUNF b\x01 \x02
 CMD1 TextOn RUNF \x90\x01 END
-CSCE SCE033_002 \xac\x01 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 TF\x0c"\x03J
+CSCE SCE033_002 \xac\x01 SCE_DONE 
+FLG3 \x8c\x01 FLG2 TF FLG2_SET \x03J
  
 拓司\n　「よう」@
 紅葉\n　「ん？」@
@@ -26,10 +24,9 @@ FLAG\x02 TF\x0c"\x03J
 \n紅葉はあっさりといった。\pなんだか拍子抜けするようないいかた\nだった。\
 
   
-FLAG \xf0\x01\x0c\x02" b\x01 \x02 \x90\x01 END
-CSCE SCE033_003 R\x03 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 XF\x0c"\x03H
+FLG3 \xf0\x01\x0c FLG3_SET b\x01 \x02 \x90\x01 END
+CSCE SCE033_003 R\x03 SCE_DONE 
+FLG3 \x8c\x01 FLG2 XF FLG2_SET \x03H
  
 紅葉\n　「あるよ。\p食べる？\p　だったら屋上までつきあってくれない\n　　かな」@
 拓司\n　「屋上？」@
@@ -38,11 +35,10 @@ FLAG\x02 XF\x0c"\x03H
 紅葉\n　「ちょっと教室じゃ……アレだから。\pいいでしょ、つきあって\n　　よ」\
 
   
-FLAG \x96\x03\x0c\x02" b\x01 \x02 \x90\x01 END   \x02
+FLG3 \x96\x03\x0c FLG3_SET b\x01 \x02 \x90\x01 END   \x02
 CMD1 StopCD RUNF \xfc\x04 END
-CSCE SCE033_004 \x18\x05 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \\F\x0c"\x03U
+CSCE SCE033_004 \x18\x05 SCE_DONE 
+FLG3 \x8c\x01 FLG2 \\F FLG2_SET \x03U
  
 －－何か変だ。@
 \n拓司は思った。@
@@ -50,5 +46,5 @@ FLAG\x02 \\F\x0c"\x03U
 \n紅葉\n　「他のコたちに気づかれるとナンだから……先に行ってくれな\n　　い？\p　１０分したら、行く」\
 
   
-FLAG \\\x05\x0c\x02" b\x01 \x02 \x90\x01 END b\x01 \x02
+FLG3 \\\x05\x0c FLG3_SET b\x01 \x02 \x90\x01 END b\x01 \x02
 CSCE TextClosev\x81\x1f\xf6\x06 END6\xf1

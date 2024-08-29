@@ -1,8 +1,7 @@
 START
 \x14\x04\x01\xa4\t3\x01\xf8\x02
-CSCE SCEK11_001 \x06 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \xa9\x01\x0c"\x03`
+CSCE SCEK11_001 \x06 SCE_DONE 
+FLG3 \x8c\x01 FLG2 \xa9\x01 FLG2_SET \x03`
  
 　ゆきが流した涙で私の胸のあたりはぐっしょりと濡れていた。@
 そのしめりけは本当にリアルで、それを胸に感じていると\n「そのうちなんとかなるよ」とか、\n「家出しよう」とか、\nそんな安易ななぐさめはとても口にはできなかった。@
@@ -10,7 +9,7 @@ FLAG\x02 \xa9\x01\x0c"\x03`
 でも、その話を聞きながら、私は、ゆきを救い出す方法をひとつ\n見つけだしていた。@
 しばらく考えてから、私はゆきにいった。\w\z
   
-FLAG J\x0c\x02"
+FLG3 J\x0c FLG3_SET
 WHAT .\\Data\\Script\\TextFunc.Fob RUNF \xea\x01 \x02
 CMD1 TextOn RUNF \x18\x02 END\x03\x18
 CHOICE
@@ -18,5 +17,5 @@ CHOICE
 ENDCHOICE
 
   
-FLAG 4\x02\x0c\x02" \xea\x01 \x02 \x18\x02 END \xea\x01 \x02
+FLG3 4\x02\x0c FLG3_SET \xea\x01 \x02 \x18\x02 END \xea\x01 \x02
 CSCE TextClosev\x81\x1f\xda\x02 END6\xf1

@@ -1,20 +1,18 @@
 START
 \xbf\x06\x01`B#\x01T\x05
-CSCE SCE100_001 \x06 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \xe0\xab\x0c"\x03q
+CSCE SCE100_001 \x06 SCE_DONE 
+FLG3 \x8c\x01 FLG2 \xe0\xab FLG2_SET \x03q
  
 拓司\n　「雲居さんにいっておきたいことがある」@
 なたね\n　「……」@
 拓司\n　「宇宙人とか電波とか、そういった話はみんなの前では控えて\n　　ほしい。\pそれでなくてもみんな不安なんだ。\pそういう……わ\n　　けのわからないことをいわれると、神経に響く。\pそしてもう\n　　ひとつ。\p早桃に限らず、誰かをスパイ呼ばわりするようなマ\n　　ネは金輪際やめてくれ。\pそれは雲居さんのいう、団結を乱\n　　す行為そのものだ。\p内部崩壊の引き金になりかねない」\
 
   
-FLAG J\x0c\x02"
+FLG3 J\x0c FLG3_SET
 WHAT .\\Data\\Script\\TextFunc.Fob RUNF .\x02 \x02
 CMD1 TextOn RUNF \\\x02 END
-CSCE SCE100_002 x\x02 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \xe4\xab\x0c"\x03\x8d
+CSCE SCE100_002 x\x02 SCE_DONE 
+FLG3 \x8c\x01 FLG2 \xe4\xab FLG2_SET \x03\x8d
  
 早桃\n　「そうよ、そうよ！」@
 拓司\n　「……。\p早桃にもいっておく。\pいいかい、早桃。\pみんな怖いん\n　　だ。\pみんな叫びたいんだ。\pでも、我慢している。\pだから、お\n　　前も我慢しなくちゃいけない」@
@@ -25,5 +23,5 @@ FLAG\x02 \xe4\xab\x0c"\x03\x8d
 /*▲SE01　停止*/\a4,2,0,0,\nただ黙ってラジオの前に戻って、一日中、耳を貼り付かせるよう\nにしてノイズに聞き入っていた。\
 
   
-FLAG \xbc\x02\x0c\x02" .\x02 \x02 \\\x02 END .\x02 \x02
+FLG3 \xbc\x02\x0c FLG3_SET .\x02 \x02 \\\x02 END .\x02 \x02
 CSCE TextClosev\x81\x1f6\x05 END6\xf1

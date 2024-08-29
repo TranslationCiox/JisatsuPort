@@ -1,21 +1,19 @@
 START
 \xef\x0b\x01`B#\x01\xc2\t
-CSCE SCE002_001 \x06 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \xc0\x12\x0c"\x03\x12
+CSCE SCE002_001 \x06 SCE_DONE 
+FLG3 \x8c\x01 FLG2 \xc0\x12 FLG2_SET \x03\x12
  
 \n\n\n\n\n\n\n\n\n\n　　　　　　『ジサツのための１０１の方法』\
 
   
-FLAG J\x0c\x02"
+FLG3 J\x0c FLG3_SET
 WHAT .\\Data\\Script\\TextFunc.Fob RUNF \xb2 \x02
 CMD1 TextOn RUNF \xe0 END
-CSCE SCE002_002 \xfc \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \xc4\x12\x0c"  
-FLAG \x02\x0c\x02"  \x04
-FLAG \x01\x0c\x02"  \x08
-FLAG \x01\x0c\x02"
+CSCE SCE002_002 \xfc SCE_DONE 
+FLG3 \x8c\x01 FLG2 \xc4\x12 FLG2_SET   
+FLG3 \x02\x0c FLG3_SET  \x04
+FLG3 \x01\x0c FLG3_SET  \x08
+FLG3 \x01\x0c FLG3_SET
 FOBT .\\Data\\Script\\Bgm.Fobv\x81\x1f\x8e\x01 \x02
 CMD1 SePlay RUNF \xb8\x01 END\x03\x89
  
@@ -39,10 +37,9 @@ CMD1 SePlay RUNF \xb8\x01 END\x03\x89
 学生　「愉快犯」\
 
   
-FLAG \xd4\x01\x0c\x02" \xb2 \x02 \xe0 END
-CSCE SCE002_003 2\x04 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \xc8\x12\x0c"\x03f
+FLG3 \xd4\x01\x0c FLG3_SET \xb2 \x02 \xe0 END
+CSCE SCE002_003 2\x04 SCE_DONE 
+FLG3 \x8c\x01 FLG2 \xc8\x12 FLG2_SET \x03f
  
 学生　「なんかの宣伝とか？」@
 学生　「サーカスの宣伝」@
@@ -60,10 +57,9 @@ FLAG\x02 \xc8\x12\x0c"\x03f
 学生　「死ぬんじゃない？」\
 
   
-FLAG v\x04\x0c\x02" \xb2 \x02 \xe0 END
-CSCE SCE002_004 H\x06 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \xcc\x12\x0c"\x03(
+FLG3 v\x04\x0c FLG3_SET \xb2 \x02 \xe0 END
+CSCE SCE002_004 H\x06 SCE_DONE 
+FLG3 \x8c\x01 FLG2 \xcc\x12 FLG2_SET \x03(
  
 学生　「……」@
 学生　「……」@
@@ -75,19 +71,18 @@ FLAG\x02 \xcc\x12\x0c"\x03(
 学生　「あっ？！」\
 
   
-FLAG \x8c\x06\x0c\x02" \xb2 \x02 \xe0 END
-CSCE SCE002_005 f\x07 \x02\xef! 
-FLAG \x8c\x01
-FLAG\x02 \xd0\x12\x0c" \x8e\x01 \x02
+FLG3 \x8c\x06\x0c FLG3_SET \xb2 \x02 \xe0 END
+CSCE SCE002_005 f\x07 SCE_DONE 
+FLG3 \x8c\x01 FLG2 \xd0\x12 FLG2_SET  \x8e\x01 \x02
 CMD1 StopCD RUNF \xb6\x07 END  
-FLAG \x02\x0c\x02" \x8e\x01 \x02
+FLG3 \x02\x0c FLG3_SET \x8e\x01 \x02
 CMD1 SeStop RUNF \xf8\x07 END  
-FLAG <\x0c\x02"
+FLG3 <\x0c FLG3_SET
 WHAT .\\Data\\Script\\TextFunc.fob RUNF .\x08 \x02
 CSCE WaitTimesv\x81\x1f\\\x08 END  
-FLAG \x0c\x02"  \x04
-FLAG \x02\x0c\x02"  \x08
-FLAG \x0c\x02" \x8e\x01 \x02
+FLG3 \x0c FLG3_SET  \x04
+FLG3 \x02\x0c FLG3_SET  \x08
+FLG3 \x0c FLG3_SET \x8e\x01 \x02
 CSCE SePlayExsv\x81\x1f\xd6\x08 END\x03\x1a
  
 学生　「落ちたよ」@
@@ -96,5 +91,5 @@ CSCE SePlayExsv\x81\x1f\xd6\x08 END\x03\x1a
 学生　「死んだでしょ」\
 
   
-FLAG \xf6\x08\x0c\x02" \xb2 \x02 \xe0 END \xb2 \x02
+FLG3 \xf6\x08\x0c FLG3_SET \xb2 \x02 \xe0 END \xb2 \x02
 CSCE TextClosev\x81\x1f\xa4\t END6\xf1
