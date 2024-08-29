@@ -1,14 +1,16 @@
 STRF
 \xa6\n\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xbc\x07\x00  
-SEQ01 \\\x00\x00\x0c
+SEQ01 \\\x00
+SEQ13 
 SEQ04 
 SEQ08 .\\Data\\Script\\Bg.Fob SPC03  \x00\x00 
-FILE1 BgAutoFadeIn SPC03 J\x00\x00 
+SEQ12 \x03\x04\x00\x00BgAutoFadeIn SPC03 J\x00\x00 
 SEQ10   
-SEQ01 \x04\x01\x00\x0c
+SEQ01 \x04\x01
+SEQ13 
 SEQ04 
-SEQ08 .\\Data\\Script\\Bgm.Fobv\x81\x1f\x88\x00\x00 
-SEQ02 \x00\x00PlayCD SPC01 \xb2\x00\x00 
+SEQ08 .\\Data\\Script\\Bgm.Fob SPC02 \x88\x00\x00 
+SEQ02 PlayCD SPC01 \xb2\x00\x00 
 SEQ06 SCEK04_A01\x00 \xce\x00\x00 
 SEQ07  
 SEQ01 
@@ -25,14 +27,18 @@ SEQ05 \x03\xe0\x00\x00
 まるで史上初めて火を発見した人類みたいな気分だった。@
 どきどきして、誇らしかった。\w\z
 \x00\x00\x00  
-SEQ01 \x12\x01\x00\x0c
-SEQ04 \x03\x07\x00\x00.\\Data\\Script\\TextFunc.Fob SPC01 \xb2\x04\x00 
-SEQ02 \x00\x00TextOn SPC01 \xe0\x04\x00 
+SEQ01 \x12\x01
+SEQ13 
+SEQ04 
+SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 \xb2\x04\x00 
+SEQ02 TextOn SPC01 \xe0\x04\x00 
 SEQ10   
-SEQ01 \xc8\x00\x00\x0c
-SEQ04   \x00\x00 \x02\x00\x00 J\x00\x00 
+SEQ01 \xc8\x00
+SEQ13 
+SEQ04   \x00\x00 
+SEQ12  J\x00\x00 
 SEQ10  \x88\x00\x00 
-SEQ02 \x00\x00StopCD SPC01 <\x05\x00 
+SEQ02 StopCD SPC01 <\x05\x00 
 SEQ06 SCEK04_A02\x00 X\x05\x00 
 SEQ07  
 SEQ01 
@@ -48,8 +54,10 @@ SEQ05 \x03o\x00\x00
 そしてようやく、ゆきはいった。@
 今日、自分は自殺を決意していたのだと。\w\z
 \x00  
-SEQ01 \x9c\x05\x00\x0c
-SEQ04  \xb2\x04\x00 \x02\x00\x00 \xe0\x04\x00 
+SEQ01 \x9c\x05
+SEQ13 
+SEQ04  \xb2\x04\x00 
+SEQ12  \xe0\x04\x00 
 SEQ10  \xb2\x04\x00 
-FILE2 TextClosev\x81\x1f\x9e\x07\x00 
+SEQ12 \x03\x03\x00\x00TextClose SPC02 \x9e\x07\x00 
 ENDF

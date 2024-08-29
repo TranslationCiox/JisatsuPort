@@ -2,32 +2,40 @@ STRF
 /8\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\x9a/\x00\x03\x03\x00\x00SCE062_001\x00 \x06\x00\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x80p\x00\x0c
+SEQ03 \x80p
+SEQ13 
 SEQ05   
-SEQ01 \x00\x00\x00\x00\x0c
-SEQ04   \x04\x00\x00\r\x00\x00 \t\x00\x00\x0c
-SEQ04   \x08\x00\x00\r\x00\x00 \x00\x00\x00\x00\x0c
+SEQ01 \x00\x00\x00
+SEQ13 
+SEQ04   \x04\x00\x00\r\x00\x00 \t\x00
+SEQ13 
+SEQ04   \x08\x00\x00\r\x00\x00 \x00\x00\x00
+SEQ13 
 SEQ04 
-SEQ08 .\\Data\\Script\\Bgm.Fobv\x81\x1f\x98\x00\x00 
-FILE2 SePlayEx SPC03 \xc2\x00\x00 
+SEQ08 .\\Data\\Script\\Bgm.Fob SPC02 \x98\x00\x00 
+SEQ12 \x03\x03\x00\x00SePlayEx SPC03 \xc2\x00\x00 
 SEQ10 \x03\x13\x00\x00
  
 カンナ\n　「……きたんだ？」@
 \nその声は、頭上から聞こえてきた。\
 
 \x00  
-SEQ01 \xe2\x00\x00\x0c
-SEQ04 \x03\x07\x00\x00.\\Data\\Script\\TextFunc.Fob SPC01 N\x01\x00 
-SEQ02 \x00\x00TextOn SPC01 |\x01\x00 
+SEQ01 \xe2\x00
+SEQ13 
+SEQ04 
+SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 N\x01\x00 
+SEQ02 TextOn SPC01 |\x01\x00 
 SEQ10   
-SEQ01 \x18\x00\x00\x0c
+SEQ01 \x18\x00
+SEQ13 
 SEQ04 
 SEQ08 .\\Data\\Script\\Bg.Fob SPC03 \xb2\x01\x00 
-FILE1 BgAutoFadeIn SPC03 \xdc\x01\x00 
+SEQ12 \x03\x04\x00\x00BgAutoFadeIn SPC03 \xdc\x01\x00 
 SEQ06 SCE062_002\x00 \x00\x02\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x84p\x00\x0c
+SEQ03 \x84p
+SEQ13 
 SEQ05 \x03\xcc\x00\x00
  
 死屍累々とは、文字どおり、このことをいうのだろう。@
@@ -39,12 +47,15 @@ SEQ05 \x03\xcc\x00\x00
 カンナはその頂上に君臨する、死の女王だった。\
 
 \x00\x00\x00  
-SEQ01 D\x02\x00\x0c
-SEQ04  N\x01\x00 \x02\x00\x00 |\x01\x00 
+SEQ01 D\x02
+SEQ13 
+SEQ04  N\x01\x00 
+SEQ12  |\x01\x00 
 SEQ06 SCE062_003\x00 \xae\x05\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x88p\x00\x0c
+SEQ03 \x88p
+SEQ13 
 SEQ05 \x03]\x00\x00
  
 カンナ\n　「生きてたんだ、虎菱くん？\p　まあ、あなたならそうかもしれ\n　　ないわね」@
@@ -56,16 +67,20 @@ SEQ05 \x03]\x00\x00
 拓司\n　「……」\
 
 \x00\x00\x00  
-SEQ01 \xf2\x05\x00\x0c
-SEQ04  N\x01\x00 \x02\x00\x00 |\x01\x00 
+SEQ01 \xf2\x05
+SEQ13 
+SEQ04  N\x01\x00 
+SEQ12  |\x01\x00 
 SEQ10   
-SEQ01 \x0b\x01\x00\x0c
+SEQ01 \x0b\x01
+SEQ13 
 SEQ04  \x98\x00\x00 
-SEQ02 \x00\x00PlayCD SPC01 \xc6\x07\x00 
+SEQ02 PlayCD SPC01 \xc6\x07\x00 
 SEQ06 SCE062_004\x00 \xe2\x07\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x8cp\x00\x0c
+SEQ03 \x8cp
+SEQ13 
 SEQ05 \x03\xb7\x00\x00
  
 カンナ\n　「誰かに死ねって命令されて、はいそうですかって死ねるほど、\n　　私は軽く考えていない！\p　そんな簡単に死ねるなら、とっく\n　　の昔に何百回も死んであげてるわよ！\p　こんな……こんなゴ\n　　ロゴロ転がってるありふれた死にかたになんて、同化できな\n　　い！\p　私にとって死ぬってことは……特別なの！\p　手の届\n　　かない高い場所にひっそりと咲いて……散る……誰にも……」\n　　@
@@ -76,14 +91,17 @@ SEQ05 \x03\xb7\x00\x00
 \n隣に立つなたねが小さくいった。\
 
 \x00  
-SEQ01 &\x08\x00\x0c
-SEQ04  N\x01\x00 \x02\x00\x00 |\x01\x00 
+SEQ01 &\x08
+SEQ13 
+SEQ04  N\x01\x00 
+SEQ12  |\x01\x00 
 SEQ10  \x98\x00\x00 
-SEQ02 \x00\x00StopCD SPC01 H\x0b\x00 
+SEQ02 StopCD SPC01 H\x0b\x00 
 SEQ06 SCE062_005\x00 d\x0b\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x90p\x00\x0c
+SEQ03 \x90p
+SEQ13 
 SEQ05 \x03\xb0\x00\x00
  
 それはそうであろう、男の拓司でさえ、どうにかなってしまいそ\nうなのだ。\p目の前で何十人もの人間が自殺する瞬間を見てしまっ\nたカンナが、平常心で事態を切り抜けることなどできるはずがない\n。\pカンナを正気の縁につなぎ止めているラインは、ギリギリまでに\n細い。\pわずかでもカンナが揺らめけば、そのラインは切れる。@
@@ -95,12 +113,15 @@ SEQ05 \x03\xb0\x00\x00
 カンナ\n　「……あなたも？」\
 
 \x00\x00\x00  
-SEQ01 \xa8\x0b\x00\x0c
-SEQ04  N\x01\x00 \x02\x00\x00 |\x01\x00 
+SEQ01 \xa8\x0b
+SEQ13 
+SEQ04  N\x01\x00 
+SEQ12  |\x01\x00 
 SEQ06 SCE062_006\x00 \xa2\x0e\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x94p\x00\x0c
+SEQ03 \x94p
+SEQ13 
 SEQ05 \x03\x7f\x00\x00
  
 拓司\n　「ああ。\p今朝、テレビでやってた。\p気軽に生き死にを考えて、\n　　それを使って自己アピールをするみたいな若者が多いって…\n　　…」@
@@ -112,12 +133,15 @@ SEQ05 \x03\x7f\x00\x00
 呆気にとられる拓司を無視するようにカンナはしばらく笑い続け\nた。\p腹を抱えて、しまいには息をするのも苦しいらしく、ヒイヒ\nイと笑い続けた。\
 
 \x00  
-SEQ01 \xe6\x0e\x00\x0c
-SEQ04  N\x01\x00 \x02\x00\x00 |\x01\x00 
+SEQ01 \xe6\x0e
+SEQ13 
+SEQ04  N\x01\x00 
+SEQ12  |\x01\x00 
 SEQ06 SCE062_007\x00 \x1c\x11\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x98p\x00\x0c
+SEQ03 \x98p
+SEQ13 
 SEQ05 \x03S\x00\x00
  
 カンナ\n　「……同じ？\p　私と？\p　あなたが？」@
@@ -127,12 +151,15 @@ SEQ05 \x03S\x00\x00
 \nカンナは拓司を鋭く指さして、一気呵成にまくしたてた。\
 
 \x00\x00\x00  
-SEQ01 `\x11\x00\x0c
-SEQ04  N\x01\x00 \x02\x00\x00 |\x01\x00 
+SEQ01 `\x11
+SEQ13 
+SEQ04  N\x01\x00 
+SEQ12  |\x01\x00 
 SEQ06 SCE062_008\x00 \xe6\x12\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x9cp\x00\x0c
+SEQ03 \x9cp
+SEQ13 
 SEQ05 \x03\xfb\x00\x00
  
 カンナ\n　「あなたの死なんて、ありふれたものよ！\p　死にたいけど怖く\n　　て死ねない。\pそんなヒョロヒョロしたあなたの志と同類項で\n　　くくってもらっちゃあ、汚れるの！\p　私の……死の神聖さが\n　　……おとしめられる！\p　あなたなんて、そこらへんの……こ\n　　の下に積み重なってる連中と一緒！\p　平積みの『完璧自殺マ\n　　ニュアル』読んで？\p　『自分には最終手段が残されているっ\n　　て思うことが勇気になる』とかいって？\p　気取るな！\p　現実\n　　と闘う覚悟がない世捨て人気取りが！\pそんなのみんな一緒！@
@@ -142,12 +169,15 @@ SEQ05 \x03\xfb\x00\x00
 　　今の私じゃない。\pなんでもなかった頃の私で…………………\n　　………………………………………………………………………\n　　…………………………………………思い上がるなッ！」\
 
 \x00  
-SEQ01 *\x13\x00\x0c
-SEQ04  N\x01\x00 \x02\x00\x00 |\x01\x00 
+SEQ01 *\x13
+SEQ13 
+SEQ04  N\x01\x00 
+SEQ12  |\x01\x00 
 SEQ06 SCE062_009\x00 P\x17\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xa0p\x00\x0c
+SEQ03 \xa0p
+SEQ13 
 SEQ05 \x03h\x00\x00
  
 拓司\n　「落ち着くんだ、カンナ－－」@
@@ -156,24 +186,30 @@ SEQ05 \x03h\x00\x00
 \nカンナ\n　「この中に、×××××が入ってるわ」\
 
 \x00\x00\x00  
-SEQ01 \x94\x17\x00\x0c
-SEQ04  N\x01\x00 \x02\x00\x00 |\x01\x00 
+SEQ01 \x94\x17
+SEQ13 
+SEQ04  N\x01\x00 
+SEQ12  |\x01\x00 
 SEQ06 SCE062_010\x00 n\x19\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xa4p\x00\x0c
+SEQ03 \xa4p
+SEQ13 
 SEQ05 \x03q\x00\x00
  
 拓司はその名前を、カンナから借りた本で見たことがあった。@
 睡眠薬として使われる規制医薬品で、２グラムのんだだけで確実\nに心臓が止まるといわれる劇薬中の劇薬だ。\pもちろん、薬屋で買\nうことはできないし、それどころか国内では取り扱われていない。\n\pしかし－－カンナならばそれを手に入れることぐらい、造作のな\nいことのように思えた。\p拓司は、五号棟でカンナが××××を飲\nんでいるのを見たことがあったし、勧められて×××××を吸っ\nたこともある。\
 
 \x00  
-SEQ01 \xb2\x19\x00\x0c
-SEQ04  N\x01\x00 \x02\x00\x00 |\x01\x00 
+SEQ01 \xb2\x19
+SEQ13 
+SEQ04  N\x01\x00 
+SEQ12  |\x01\x00 
 SEQ06 SCE062_011\x00 \xb0\x1b\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xa8p\x00\x0c
+SEQ03 \xa8p
+SEQ13 
 SEQ05 \x03z\x00\x00
  
 拓司\n　「どうするつもりだ？」@
@@ -185,12 +221,15 @@ SEQ05 \x03z\x00\x00
 拓司\n　「……」\
 
 \x00  
-SEQ01 \xf4\x1b\x00\x0c
-SEQ04  N\x01\x00 \x02\x00\x00 |\x01\x00 
+SEQ01 \xf4\x1b
+SEQ13 
+SEQ04  N\x01\x00 
+SEQ12  |\x01\x00 
 SEQ06 SCE062_012\x00 \x16\x1e\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xacp\x00\x0c
+SEQ03 \xacp
+SEQ13 
 SEQ05 \x03\xb5\x00\x00
  
 カンナ\n　「ふふふ、興奮しない？\p　私たちは今、ずっと求めていたもの\n　　に直面しているわ。\p崖っぷちにまでいってる。\pそうでしょ？@
@@ -202,12 +241,15 @@ SEQ05 \x03\xb5\x00\x00
 　　死と交わるって文字通りこんな感じ……？\p　ふふ……」\
 
   
-SEQ01 Z\x1e\x00\x0c
-SEQ04  N\x01\x00 \x02\x00\x00 |\x01\x00 
+SEQ01 Z\x1e
+SEQ13 
+SEQ04  N\x01\x00 
+SEQ12  |\x01\x00 
 SEQ06 SCE062_013\x00 h!\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xb0p\x00\x0c
+SEQ03 \xb0p
+SEQ13 
 SEQ05 \x03w\x00\x00
  
 拓司は、狂気に囚われてしまったとしか思えないカンナの様子を\n呆然と見ていたが、とんとん、となたねに腿をつつかれて我に返\nった。@
@@ -218,12 +260,15 @@ SEQ05 \x03w\x00\x00
 \nなたね\n　「……話を続けて」\
 
 \x00  
-SEQ01 \xac!\x00\x0c
-SEQ04  N\x01\x00 \x02\x00\x00 |\x01\x00 
+SEQ01 \xac!
+SEQ13 
+SEQ04  N\x01\x00 
+SEQ12  |\x01\x00 
 SEQ06 SCE062_014\x00 \xc2#\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xb4p\x00\x0c
+SEQ03 \xb4p
+SEQ13 
 SEQ05 \x03\x80\x00\x00
  
 拓司\n　「……？」@
@@ -236,12 +281,15 @@ SEQ05 \x03\x80\x00\x00
 カンナ\n　「－－もちろん」\
 
 \x00  
-SEQ01 \x06$\x00\x0c
-SEQ04  N\x01\x00 \x02\x00\x00 |\x01\x00 
+SEQ01 \x06$
+SEQ13 
+SEQ04  N\x01\x00 
+SEQ12  |\x01\x00 
 SEQ06 SCE062_015\x00 @&\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xb8p\x00\x0c
+SEQ03 \xb8p
+SEQ13 
 SEQ05 \x03f\x00\x00
  
 拓司\n　「本人だって把握しきれていないのに？」@
@@ -254,12 +302,15 @@ SEQ05 \x03f\x00\x00
 拓司\n　「……？」\
 
 \x00\x00\x00  
-SEQ01 \x84&\x00\x0c
-SEQ04  N\x01\x00 \x02\x00\x00 |\x01\x00 
+SEQ01 \x84&
+SEQ13 
+SEQ04  N\x01\x00 
+SEQ12  |\x01\x00 
 SEQ06 SCE062_016\x00 V(\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xbcp\x00\x0c
+SEQ03 \xbcp
+SEQ13 
 SEQ05 \x03\xab\x00\x00
  
 カンナ\n　「屋上での続き。\pこれから私が、あなたに取り憑いたものを解\n　　剖して、ひとつひとつ晒して、説明してあげる。\pその途中に\n　　クイズを挟むわ。\pそうね……『自殺なぜなにク～～～～～イ\n　　ズ！』ってところかしら、ふふ。\pそれに正解したら、あなた\n　　は自分に取り憑いたものの正体を知ることができる。\p間違っ\n　　たら……私は薬を飲む」@
@@ -269,12 +320,15 @@ SEQ05 \x03\xab\x00\x00
 \n拓司\n　「わかった」\
 
 \x00\x00\x00  
-SEQ01 \x9a(\x00\x0c
-SEQ04  N\x01\x00 \x02\x00\x00 |\x01\x00 
+SEQ01 \x9a(
+SEQ13 
+SEQ04  N\x01\x00 
+SEQ12  |\x01\x00 
 SEQ06 SCE062_017\x00 \x80+\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xc0p\x00\x0c
+SEQ03 \xc0p
+SEQ13 
 SEQ05 \x03\xb6\x00\x00
  
 カンナ\n　「ＯＫ。\p準備はいいかしら？\p　重要な場面よ？\p　セーブはした？\n　　\pうふふ……まずは『セーリックマンの実験』の話からいきま\n　　しょうか」@
@@ -283,16 +337,20 @@ SEQ05 \x03\xb6\x00\x00
 　　ここに、さっきの実験を施したイヌと、普通のイヌを入れた\n　　ら、どんなことが起きるでしょう？」\
 
 \x00\x00\x00  
-SEQ01 \xc4+\x00\x0c
-SEQ04  N\x01\x00 \x02\x00\x00 |\x01\x00 
+SEQ01 \xc4+
+SEQ13 
+SEQ04  N\x01\x00 
+SEQ12  |\x01\x00 
 SEQ10 \x03\x18\x00\x00
 CHOICE
 電気ショックを受けたイヌが回避手段を見つける\n普通のイヌが回避手段を見つける\n\l0,2,
 ENDCHOICE
 
 \x00\x00\x00  
-SEQ01 \xd6.\x00\x0c
-SEQ04  N\x01\x00 \x02\x00\x00 |\x01\x00 
+SEQ01 \xd6.
+SEQ13 
+SEQ04  N\x01\x00 
+SEQ12  |\x01\x00 
 SEQ10  N\x01\x00 
-FILE2 TextClosev\x81\x1f|/\x00 
+SEQ12 \x03\x03\x00\x00TextClose SPC02 |/\x00 
 ENDF

@@ -1,25 +1,30 @@
 STRF
 \xfb\x08\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\x14\x07\x00  
-SEQ01 \x07\x01\x00\x0c
+SEQ01 \x07\x01
+SEQ13 
 SEQ04 
-SEQ08 .\\Data\\Script\\Bgm.Fobv\x81\x1f \x00\x00 
-SEQ02 \x00\x00PlayCD SPC01 J\x00\x00 
+SEQ08 .\\Data\\Script\\Bgm.Fob SPC02  \x00\x00 
+SEQ02 PlayCD SPC01 J\x00\x00 
 SEQ06 SCE033_001\x00 f\x00\x00 
 SEQ07  
 SEQ01 
-SEQ03 PF\x00\x0c
+SEQ03 PF
+SEQ13 
 SEQ05 \x03&\x00\x00
  
 拓司の中に、今日の昼食はどうするのか、という紅葉の言葉が引\nっかかっていた。\p拓司は、教室に引き返し、弁当をかじっている\n紅葉に声をかけた。\
 
 \x00\x00\x00  
-SEQ01 \xaa\x00\x00\x0c
-SEQ04 \x03\x07\x00\x00.\\Data\\Script\\TextFunc.Fob SPC01 b\x01\x00 
-SEQ02 \x00\x00TextOn SPC01 \x90\x01\x00 
+SEQ01 \xaa\x00
+SEQ13 
+SEQ04 
+SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 b\x01\x00 
+SEQ02 TextOn SPC01 \x90\x01\x00 
 SEQ06 SCE033_002\x00 \xac\x01\x00 
 SEQ07  
 SEQ01 
-SEQ03 TF\x00\x0c
+SEQ03 TF
+SEQ13 
 SEQ05 \x03J\x00\x00
  
 拓司\n　「よう」@
@@ -31,12 +36,15 @@ SEQ05 \x03J\x00\x00
 \n紅葉はあっさりといった。\pなんだか拍子抜けするようないいかた\nだった。\
 
 \x00\x00\x00  
-SEQ01 \xf0\x01\x00\x0c
-SEQ04  b\x01\x00 \x02\x00\x00 \x90\x01\x00 
+SEQ01 \xf0\x01
+SEQ13 
+SEQ04  b\x01\x00 
+SEQ12  \x90\x01\x00 
 SEQ06 SCE033_003\x00 R\x03\x00 
 SEQ07  
 SEQ01 
-SEQ03 XF\x00\x0c
+SEQ03 XF
+SEQ13 
 SEQ05 \x03H\x00\x00
  
 紅葉\n　「あるよ。\p食べる？\p　だったら屋上までつきあってくれない\n　　かな」@
@@ -46,14 +54,17 @@ SEQ05 \x03H\x00\x00
 紅葉\n　「ちょっと教室じゃ……アレだから。\pいいでしょ、つきあって\n　　よ」\
 
 \x00  
-SEQ01 \x96\x03\x00\x0c
-SEQ04  b\x01\x00 \x02\x00\x00 \x90\x01\x00 
+SEQ01 \x96\x03
+SEQ13 
+SEQ04  b\x01\x00 
+SEQ12  \x90\x01\x00 
 SEQ10   \x00\x00 
-SEQ02 \x00\x00StopCD SPC01 \xfc\x04\x00 
+SEQ02 StopCD SPC01 \xfc\x04\x00 
 SEQ06 SCE033_004\x00 \x18\x05\x00 
 SEQ07  
 SEQ01 
-SEQ03 \\F\x00\x0c
+SEQ03 \\F
+SEQ13 
 SEQ05 \x03U\x00\x00
  
 －－何か変だ。@
@@ -62,8 +73,10 @@ SEQ05 \x03U\x00\x00
 \n紅葉\n　「他のコたちに気づかれるとナンだから……先に行ってくれな\n　　い？\p　１０分したら、行く」\
 
 \x00  
-SEQ01 \\\x05\x00\x0c
-SEQ04  b\x01\x00 \x02\x00\x00 \x90\x01\x00 
+SEQ01 \\\x05
+SEQ13 
+SEQ04  b\x01\x00 
+SEQ12  \x90\x01\x00 
 SEQ10  b\x01\x00 
-FILE2 TextClosev\x81\x1f\xf6\x06\x00 
+SEQ12 \x03\x03\x00\x00TextClose SPC02 \xf6\x06\x00 
 ENDF

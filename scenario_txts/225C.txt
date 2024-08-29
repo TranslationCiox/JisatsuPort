@@ -13,12 +13,14 @@ SEQ05 \x03m\x00\x00
 すべてをうち崩すようななにかが、状況を粉々にするようななに\nかが、きっと起こる。\pそのときのために、俺はエネルギーを蓄積\nしなければならない。\pじっと耐えて、強烈な一撃を放つのだ……。\n\p拓司は野獣のように目を光らせて、無言だった。\
 
 \x00\x00\x00  
-SEQ01 J\x00\x00\x0c
-SEQ04 \x03\x07\x00\x00.\\Data\\Script\\TextFunc.Fob SPC01 \x1e\x02\x00 
-SEQ02 \x00\x00TextOn SPC01 L\x02\x00 
+SEQ01 J\x00
+SEQ13 
+SEQ04 
+SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 \x1e\x02\x00 
+SEQ02 TextOn SPC01 L\x02\x00 
 SEQ10 
-SEQ08 .\\Data\\Script\\Bgm.Fobv\x81\x1fh\x02\x00 
-SEQ02 \x00\x00StopCD SPC01 \x92\x02\x00 
+SEQ08 .\\Data\\Script\\Bgm.Fob SPC02 h\x02\x00 
+SEQ02 StopCD SPC01 \x92\x02\x00 
 SEQ10  \x1e\x02\x00 
-FILE2 TextClosev\x81\x1f\xba\x02\x00 
+SEQ12 \x03\x03\x00\x00TextClose SPC02 \xba\x02\x00 
 ENDF

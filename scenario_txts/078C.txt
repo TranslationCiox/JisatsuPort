@@ -1,13 +1,15 @@
 STRF
 \x86\x07\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x004\x06\x00  
-SEQ01 \t\x01\x00\x0c
+SEQ01 \t\x01
+SEQ13 
 SEQ04 
-SEQ08 .\\Data\\Script\\Bgm.Fobv\x81\x1f \x00\x00 
-SEQ02 \x00\x00PlayCD SPC01 J\x00\x00 
+SEQ08 .\\Data\\Script\\Bgm.Fob SPC02  \x00\x00 
+SEQ02 PlayCD SPC01 J\x00\x00 
 SEQ06 SCE078_001\x00 f\x00\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x80\x89\x00\x0c
+SEQ03 \x80\x89
+SEQ13 
 SEQ05 \x03\xd7\x00\x00
  
 途中、生きている人間には一度も出くわさなかった。@
@@ -26,15 +28,18 @@ SEQ05 \x03\xd7\x00\x00
 だが、恐怖からは守ってくれる……。\
 
 \x00  
-SEQ01 \xaa\x00\x00\x0c
-SEQ04 \x03\x07\x00\x00.\\Data\\Script\\TextFunc.Fob SPC01 &\x04\x00 
-SEQ02 \x00\x00TextOn SPC01 T\x04\x00 
+SEQ01 \xaa\x00
+SEQ13 
+SEQ04 
+SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 &\x04\x00 
+SEQ02 TextOn SPC01 T\x04\x00 
 SEQ10   \x00\x00 
-SEQ02 \x00\x00StopCD SPC01 |\x04\x00 
+SEQ02 StopCD SPC01 |\x04\x00 
 SEQ06 SCE078_002\x00 \x98\x04\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x84\x89\x00\x0c
+SEQ03 \x84\x89
+SEQ13 
 SEQ05 \x03=\x00\x00
  
 なたね\n　「ここよ」@
@@ -43,8 +48,10 @@ SEQ05 \x03=\x00\x00
 なたねはドアを開き、実験室へと足早に入っていった。\
 
 \x00  
-SEQ01 \xdc\x04\x00\x0c
-SEQ04  &\x04\x00 \x02\x00\x00 T\x04\x00 
+SEQ01 \xdc\x04
+SEQ13 
+SEQ04  &\x04\x00 
+SEQ12  T\x04\x00 
 SEQ10  &\x04\x00 
-FILE2 TextClosev\x81\x1f\x16\x06\x00 
+SEQ12 \x03\x03\x00\x00TextClose SPC02 \x16\x06\x00 
 ENDF

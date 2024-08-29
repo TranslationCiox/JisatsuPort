@@ -1,9 +1,10 @@
 STRF
 R3\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00^*\x00  
-SEQ01 6\x00\x00\x0c
+SEQ01 6\x00
+SEQ13 
 SEQ04 
 SEQ08 .\\Data\\Script\\Bg.Fob SPC03  \x00\x00 
-FILE1 BgAutoFadeIn SPC03 J\x00\x00 
+SEQ12 \x03\x04\x00\x00BgAutoFadeIn SPC03 J\x00\x00 
 SEQ06 SCE244_001\x00 n\x00\x00 
 SEQ07  
 SEQ01 
@@ -16,9 +17,11 @@ SEQ05 \x03 \x00\x00
 \n拓司\n　「他には……？」\
 
 \x00\x00\x00  
-SEQ01 \xb2\x00\x00\x0c
-SEQ04 \x03\x07\x00\x00.\\Data\\Script\\TextFunc.Fob SPC01 R\x01\x00 
-SEQ02 \x00\x00TextOn SPC01 \x80\x01\x00 
+SEQ01 \xb2\x00
+SEQ13 
+SEQ04 
+SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 R\x01\x00 
+SEQ02 TextOn SPC01 \x80\x01\x00 
 SEQ06 SCE244_002\x00 \x9c\x01\x00 
 SEQ07  
 SEQ01 
@@ -33,8 +36,10 @@ SEQ05 \x03c\x00\x00
 \n錦城は最後まで強気を装っていた。\
 
 \x00\x00\x00  
-SEQ01 \xe0\x01\x00\x0c
-SEQ04  R\x01\x00 \x02\x00\x00 \x80\x01\x00 
+SEQ01 \xe0\x01
+SEQ13 
+SEQ04  R\x01\x00 
+SEQ12  \x80\x01\x00 
 SEQ06 SCE244_003\x00 \xa6\x03\x00 
 SEQ07  
 SEQ01 
@@ -53,8 +58,10 @@ SEQ05 \x03d\x00\x00
 \n拓司は早桃を制した。@
 \z
 \x00\x00\x00  
-SEQ01 \xea\x03\x00\x0c
-SEQ04  R\x01\x00 \x02\x00\x00 \x80\x01\x00 
+SEQ01 \xea\x03
+SEQ13 
+SEQ04  R\x01\x00 
+SEQ12  \x80\x01\x00 
 SEQ06 SCE244_004\x00 \xb4\x05\x00 
 SEQ07  
 SEQ01 
@@ -71,26 +78,34 @@ SEQ05 \x03\x87\x00\x00
 ドアを開き、外の世界へと。\
 
 \x00  
-SEQ01 \xf8\x05\x00\x0c
-SEQ04  R\x01\x00 \x02\x00\x00 \x80\x01\x00 
+SEQ01 \xf8\x05
+SEQ13 
+SEQ04  R\x01\x00 
+SEQ12  \x80\x01\x00 
 SEQ06 SCE244_005\x00 N\x08\x00 
 SEQ07  
 SEQ01 
 SEQ03 \xf0\x8c\x01\x0c
 SEQ05   
-SEQ01 \xc8\x00\x00\x0c
-SEQ04   \x00\x00 \x02\x00\x00 J\x00\x00 
+SEQ01 \xc8\x00
+SEQ13 
+SEQ04   \x00\x00 
+SEQ12  J\x00\x00 
 SEQ10   
-SEQ01 \x02\x00\x00\x0c
-SEQ04   \x04\x00\x00\r\x00\x00 \x17\x00\x00\x0c
-SEQ04   \x08\x00\x00\r\x00\x00 \x01\x00\x00\x0c
+SEQ01 
+SEQ12 \x0c
+SEQ04   \x04\x00\x00\r\x00\x00 \x17\x00
+SEQ13 
+SEQ04   \x08\x00\x00\r\x00\x00 \x01\x00
+SEQ13 
 SEQ04 
-SEQ08 .\\Data\\Script\\Bgm.Fobv\x81\x1f\x14\t\x00 
-SEQ02 \x00\x00SePlay SPC01 >\t\x00 
+SEQ08 .\\Data\\Script\\Bgm.Fob SPC02 \x14\t\x00 
+SEQ02 SePlay SPC01 >\t\x00 
 SEQ10   
-SEQ01 \t\x01\x00\x0c
+SEQ01 \t\x01
+SEQ13 
 SEQ04  \x14\t\x00 
-SEQ02 \x00\x00PlayCD SPC01 \x80\t\x00 
+SEQ02 PlayCD SPC01 \x80\t\x00 
 SEQ10 \x03\xbb\x00\x00
  
 拓司\n　「これは……」@
@@ -105,8 +120,10 @@ SEQ10 \x03\xbb\x00\x00
 あの工業団地の廃墟にさらなる歳月の洗礼を加えて、行き着く果\nてまで荒廃を深化させた－－そんな感じがする。\
 
 \x00  
-SEQ01 \x9c\t\x00\x0c
-SEQ04  R\x01\x00 \x02\x00\x00 \x80\x01\x00 
+SEQ01 \x9c\t
+SEQ13 
+SEQ04  R\x01\x00 
+SEQ12  \x80\x01\x00 
 SEQ06 SCE244_006\x00 \xc2\x0c\x00 
 SEQ07  
 SEQ01 
@@ -117,8 +134,10 @@ SEQ05 \x03`\x00\x00
 もしかしたら、それこそが学生たちのなれの果てなのかもしれな\nい……。\
 
 \x00\x00\x00  
-SEQ01 \x06\r\x00\x0c
-SEQ04  R\x01\x00 \x02\x00\x00 \x80\x01\x00 
+SEQ01 \x06\r
+SEQ13 
+SEQ04  R\x01\x00 
+SEQ12  \x80\x01\x00 
 SEQ06 SCE244_007\x00 \xc0\x0e\x00 
 SEQ07  
 SEQ01 
@@ -131,8 +150,10 @@ SEQ05 \x03D\x00\x00
 拓司はその手の上に自分の手を重ねて、力強く頷いた。\
 
 \x00\x00\x00  
-SEQ01 \x04\x0f\x00\x0c
-SEQ04  R\x01\x00 \x02\x00\x00 \x80\x01\x00 
+SEQ01 \x04\x0f
+SEQ13 
+SEQ04  R\x01\x00 
+SEQ12  \x80\x01\x00 
 SEQ06 SCE244_008\x00 N\x10\x00 
 SEQ07  
 SEQ01 
@@ -151,8 +172,10 @@ SEQ05 \x03\xd6\x00\x00
 まっすぐ歩いているつもりなのに、壁に体当たりしているときも\nある。\
 
 \x00  
-SEQ01 \x92\x10\x00\x0c
-SEQ04  R\x01\x00 \x02\x00\x00 \x80\x01\x00 
+SEQ01 \x92\x10
+SEQ13 
+SEQ04  R\x01\x00 
+SEQ12  \x80\x01\x00 
 SEQ06 SCE244_009\x00 $\x14\x00 
 SEQ07  
 SEQ01 
@@ -166,14 +189,17 @@ SEQ05 \x03M\x00\x00
 しかし、拓司は身体の隅々に残ったエネルギーを総動員して、そ\nのまえに立った。\
 
 \x00  
-SEQ01 h\x14\x00\x0c
-SEQ04  R\x01\x00 \x02\x00\x00 \x80\x01\x00 
+SEQ01 h\x14
+SEQ13 
+SEQ04  R\x01\x00 
+SEQ12  \x80\x01\x00 
 SEQ10   
-SEQ01 \x02\x00\x00\x0c
+SEQ01 
+SEQ12 \x0c
 SEQ04  \x14\t\x00 
-SEQ02 \x00\x00SeStop SPC01 \xfc\x15\x00 
+SEQ02 SeStop SPC01 \xfc\x15\x00 
 SEQ10  \x14\t\x00 
-SEQ02 \x00\x00StopCD SPC01 $\x16\x00 
+SEQ02 StopCD SPC01 $\x16\x00 
 SEQ06 SCE244_010\x00 @\x16\x00 
 SEQ07  
 SEQ01 
@@ -190,8 +216,10 @@ SEQ05 \x03D\x00\x00
 いや、そもそもそこには何かがあるのだろうか？\
 
 \x00\x00\x00  
-SEQ01 \x84\x16\x00\x0c
-SEQ04  R\x01\x00 \x02\x00\x00 \x80\x01\x00 
+SEQ01 \x84\x16
+SEQ13 
+SEQ04  R\x01\x00 
+SEQ12  \x80\x01\x00 
 SEQ06 SCE244_011\x00 \xce\x17\x00 
 SEQ07  
 SEQ01 
@@ -206,17 +234,23 @@ SEQ05 \x03_\x00\x00
 早桃\n　「うん！」\
 
 \x00\x00  
-SEQ01 \x12\x18\x00\x0c
-SEQ04  R\x01\x00 \x02\x00\x00 \x80\x01\x00 
+SEQ01 \x12\x18
+SEQ13 
+SEQ04  R\x01\x00 
+SEQ12  \x80\x01\x00 
 SEQ06 SCE244_012\x00 \xc8\x19\x00 
 SEQ07  
 SEQ01 
 SEQ03 \x0c\x8d\x01\x0c
 SEQ05   
-SEQ01 \x02\x00\x00\x0c
-SEQ04   \x04\x00\x00\r\x00\x00 \x0f\x00\x00\x0c
-SEQ04   \x08\x00\x00\r\x00\x00 \x01\x00\x00\x0c
-SEQ04  \x14\t\x00 \x02\x00\x00 >\t\x00 
+SEQ01 
+SEQ12 \x0c
+SEQ04   \x04\x00\x00\r\x00\x00 \x0f\x00
+SEQ13 
+SEQ04   \x08\x00\x00\r\x00\x00 \x01\x00
+SEQ13 
+SEQ04  \x14\t\x00 
+SEQ12  >\t\x00 
 SEQ10 \x03\xae\x00\x00
  
 ２人は取り憑かれたように、椅子の脚を壁に叩き付けた。@
@@ -232,8 +266,10 @@ SEQ10 \x03\xae\x00\x00
 １０センチほどしかない！\
 
   
-SEQ01 t\x1a\x00\x0c
-SEQ04  R\x01\x00 \x02\x00\x00 \x80\x01\x00 
+SEQ01 t\x1a
+SEQ13 
+SEQ04  R\x01\x00 
+SEQ12  \x80\x01\x00 
 SEQ06 SCE244_013\x00 f\x1d\x00 
 SEQ07  
 SEQ01 
@@ -252,8 +288,10 @@ SEQ05 \x03\x8d\x00\x00
 \nぴったりと穴に顔を張り付かせて、壁の向こうで誰かがこちらを\nのぞき込んでいたのだ。\
 
 \x00\x00\x00  
-SEQ01 \xaa\x1d\x00\x0c
-SEQ04  R\x01\x00 \x02\x00\x00 \x80\x01\x00 
+SEQ01 \xaa\x1d
+SEQ13 
+SEQ04  R\x01\x00 
+SEQ12  \x80\x01\x00 
 SEQ06 SCE244_014\x00 \x18 \x00 
 SEQ07  
 SEQ01 
@@ -270,8 +308,10 @@ SEQ05 \x03r\x00\x00
 \n近づいてきた早桃を突き飛ばして、拓司は狂ったように壁に体当\nたりを繰り返した。\
 
 \x00  
-SEQ01 \\ \x00\x0c
-SEQ04  R\x01\x00 \x02\x00\x00 \x80\x01\x00 
+SEQ01 \\ 
+SEQ13 
+SEQ04  R\x01\x00 
+SEQ12  \x80\x01\x00 
 SEQ06 SCE244_015\x00 ^"\x00 
 SEQ07  
 SEQ01 
@@ -291,8 +331,10 @@ SEQ05 \x03m\x00\x00
 狂気を呼び込み、それに容易に支配される目だった。\
 
 \x00  
-SEQ01 \xa2"\x00\x0c
-SEQ04  R\x01\x00 \x02\x00\x00 \x80\x01\x00 
+SEQ01 \xa2"
+SEQ13 
+SEQ04  R\x01\x00 
+SEQ12  \x80\x01\x00 
 SEQ06 SCE244_016\x00 \x90$\x00 
 SEQ07  
 SEQ01 
@@ -302,8 +344,10 @@ SEQ05 \x03C\x00\x00
 体当たりを繰り返しているうちに、拓司のシャツの肩の部分には\n真っ赤な血が滲み始めた。\pそれに気づいてようやく拓司は体当た\nりをやめ、今度は椅子の脚をふりかぶって、メチャクチャに壁に\n叩き付け始めた。\pガンガンという音が頭が割れそうなくらい大き\nく響き渡る。@
 \z
 \x00\x00\x00  
-SEQ01 \xd4$\x00\x0c
-SEQ04  R\x01\x00 \x02\x00\x00 \x80\x01\x00 
+SEQ01 \xd4$
+SEQ13 
+SEQ04  R\x01\x00 
+SEQ12  \x80\x01\x00 
 SEQ06 SCE244_017\x00 \x1a&\x00 
 SEQ07  
 SEQ01 
@@ -320,8 +364,10 @@ SEQ05 \x03\x80\x00\x00
 しかし、そうではないことを、拓司は知っていた。@
 \z
 \x00\x00  
-SEQ01 ^&\x00\x0c
-SEQ04  R\x01\x00 \x02\x00\x00 \x80\x01\x00 
+SEQ01 ^&
+SEQ13 
+SEQ04  R\x01\x00 
+SEQ12  \x80\x01\x00 
 SEQ06 SCE244_018\x00 \x98(\x00 
 SEQ07  
 SEQ01 
@@ -335,16 +381,20 @@ SEQ05 \x03,\x00\x00
 最終波動がやってきたのだ。\
 
 \x00  
-SEQ01 \xdc(\x00\x0c
-SEQ04  R\x01\x00 \x02\x00\x00 \x80\x01\x00 
+SEQ01 \xdc(
+SEQ13 
+SEQ04  R\x01\x00 
+SEQ12  \x80\x01\x00 
 SEQ10 \x03\r\x00\x00
 CHOICE
 シェルターに駆け戻る\n穴を広げる\n\l0,2,
 ENDCHOICE
 
 \x00\x00\x00  
-SEQ01 \xc6)\x00\x0c
-SEQ04  R\x01\x00 \x02\x00\x00 \x80\x01\x00 
+SEQ01 \xc6)
+SEQ13 
+SEQ04  R\x01\x00 
+SEQ12  \x80\x01\x00 
 SEQ10  R\x01\x00 
-FILE2 TextClosev\x81\x1f@*\x00 
+SEQ12 \x03\x03\x00\x00TextClose SPC02 @*\x00 
 ENDF

@@ -1,13 +1,15 @@
 STRF
 l-\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x004&\x00  
-SEQ01 \t\x01\x00\x0c
+SEQ01 \t\x01
+SEQ13 
 SEQ04 
-SEQ08 .\\Data\\Script\\Bgm.Fobv\x81\x1f \x00\x00 
-SEQ02 \x00\x00PlayCD SPC01 J\x00\x00 
+SEQ08 .\\Data\\Script\\Bgm.Fob SPC02  \x00\x00 
+SEQ02 PlayCD SPC01 J\x00\x00 
 SEQ06 SCE043_001\x00 f\x00\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xd0R\x00\x0c
+SEQ03 \xd0R
+SEQ13 
 SEQ05 \x03\x88\x00\x00
  
 　　屋上は一般学生の立ち入りが禁じられ、階段と屋上を繋ぐ鉄\n　の扉には錠が下ろされている。@
@@ -19,13 +21,16 @@ SEQ05 \x03\x88\x00\x00
 　だから、あらゆる現実のあれこれから、切り離されるような気\n　がした。\p雲を眺めていると、勉強やら、親の再婚やらの嫌なこ\n　とは、全部忘れられた。\
 
 \x00\x00\x00  
-SEQ01 \xaa\x00\x00\x0c
-SEQ04 \x03\x07\x00\x00.\\Data\\Script\\TextFunc.Fob SPC01 \xea\x02\x00 
-SEQ02 \x00\x00TextOn SPC01 \x18\x03\x00 
+SEQ01 \xaa\x00
+SEQ13 
+SEQ04 
+SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 \xea\x02\x00 
+SEQ02 TextOn SPC01 \x18\x03\x00 
 SEQ06 SCE043_002\x00 4\x03\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xd4R\x00\x0c
+SEQ03 \xd4R
+SEQ13 
 SEQ05 \x03\x8e\x00\x00
  
 　昔の話だ。@
@@ -39,12 +44,15 @@ SEQ05 \x03\x8e\x00\x00
 \n　－－紅葉の顔に浮かんだあの表情は、なんだったのだろう？\
 
 \x00\x00\x00  
-SEQ01 x\x03\x00\x0c
-SEQ04  \xea\x02\x00 \x02\x00\x00 \x18\x03\x00 
+SEQ01 x\x03
+SEQ13 
+SEQ04  \xea\x02\x00 
+SEQ12  \x18\x03\x00 
 SEQ06 SCE043_003\x00 \xea\x05\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xd8R\x00\x0c
+SEQ03 \xd8R
+SEQ13 
 SEQ05 \x03\xe6\x00\x00
  
 拓司は思った。@
@@ -59,12 +67,15 @@ SEQ05 \x03\xe6\x00\x00
 \n－－そうとでも考えないと、あのキスは永遠に宙ぶらりんなまま\nだ。\
 
 \x00  
-SEQ01 .\x06\x00\x0c
-SEQ04  \xea\x02\x00 \x02\x00\x00 \x18\x03\x00 
+SEQ01 .\x06
+SEQ13 
+SEQ04  \xea\x02\x00 
+SEQ12  \x18\x03\x00 
 SEQ06 SCE043_004\x00 \x00\n\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xdcR\x00\x0c
+SEQ03 \xdcR
+SEQ13 
 SEQ05 \x03\x9b\x00\x00
  
 無意味の領域で朽ち果てていくには、あの瞬間は完璧すぎた。@
@@ -76,15 +87,20 @@ SEQ05 \x03\x9b\x00\x00
 驚いたが、それよりもまず、紅葉がこの秘密の場所に、自分たち\n以外の他人を連れてきたと言うことに怒りを禁じ得なかった。\
 
   
-SEQ01 D\n\x00\x0c
-SEQ04  \xea\x02\x00 \x02\x00\x00 \x18\x03\x00 
+SEQ01 D\n
+SEQ13 
+SEQ04  \xea\x02\x00 
+SEQ12  \x18\x03\x00 
 SEQ10   
-SEQ01 \n\x01\x00\x0c
-SEQ04   \x00\x00 \x02\x00\x00 J\x00\x00 
+SEQ01 \n\x01
+SEQ13 
+SEQ04   \x00\x00 
+SEQ12  J\x00\x00 
 SEQ06 SCE043_005\x00 \x1e\r\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xe0R\x00\x0c
+SEQ03 \xe0R
+SEQ13 
 SEQ05 \x03T\x00\x00
  
 拓司\n　「……どういうことだ？」@
@@ -97,12 +113,15 @@ SEQ05 \x03T\x00\x00
 拓司\n　「……？」\
 
 \x00  
-SEQ01 b\r\x00\x0c
-SEQ04  \xea\x02\x00 \x02\x00\x00 \x18\x03\x00 
+SEQ01 b\r
+SEQ13 
+SEQ04  \xea\x02\x00 
+SEQ12  \x18\x03\x00 
 SEQ06 SCE043_006\x00 \xec\x0e\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xe4R\x00\x0c
+SEQ03 \xe4R
+SEQ13 
 SEQ05 \x03]\x00\x00
  
 女子学生\n　「……ふう。\pはっきり言わないとわかんないかなあ？\p　あのね\n　　幼なじみの女の子は、無条件に相手の男に密かな恋心抱いて\n　　るとかって、オタクマンガみたいなコト、都合良く考えてな\n　　い？」@
@@ -112,12 +131,15 @@ SEQ05 \x03]\x00\x00
 紅葉\n　「……」\
 
 \x00  
-SEQ01 0\x0f\x00\x0c
-SEQ04  \xea\x02\x00 \x02\x00\x00 \x18\x03\x00 
+SEQ01 0\x0f
+SEQ13 
+SEQ04  \xea\x02\x00 
+SEQ12  \x18\x03\x00 
 SEQ06 SCE043_007\x00 \xde\x10\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xe8R\x00\x0c
+SEQ03 \xe8R
+SEQ13 
 SEQ05 \x03U\x00\x00
  
 女子学生\n　「－－最低！」@
@@ -129,12 +151,15 @@ SEQ05 \x03U\x00\x00
 女子学生\n　「あ～、勘違い男は怖い怖い」\
 
 \x00\x00\x00  
-SEQ01 "\x11\x00\x0c
-SEQ04  \xea\x02\x00 \x02\x00\x00 \x18\x03\x00 
+SEQ01 "\x11
+SEQ13 
+SEQ04  \xea\x02\x00 
+SEQ12  \x18\x03\x00 
 SEQ06 SCE043_008\x00 \xb0\x12\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xecR\x00\x0c
+SEQ03 \xecR
+SEQ13 
 SEQ05 \x03\xa6\x00\x00
  
 女子学生\n　「最近多いんだよ、幼なじみとか妹とか年下とか、そういう設\n　　定に依存しないと恋愛できないヤツ。\p要するに、自分に自信\n　　がない。\p立場が低い女の前でしかアイデンティティが保てな\n　　い、と」@
@@ -144,12 +169,15 @@ SEQ05 \x03\xa6\x00\x00
 \n拓司\n　「紅葉。\pどういうことか説明してくれ」\
 
 \x00\x00\x00  
-SEQ01 \xf4\x12\x00\x0c
-SEQ04  \xea\x02\x00 \x02\x00\x00 \x18\x03\x00 
+SEQ01 \xf4\x12
+SEQ13 
+SEQ04  \xea\x02\x00 
+SEQ12  \x18\x03\x00 
 SEQ06 SCE043_009\x00 \xc6\x15\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xf0R\x00\x0c
+SEQ03 \xf0R
+SEQ13 
 SEQ05 \x03z\x00\x00
  
 紅葉\n　「いいよ」@
@@ -159,14 +187,17 @@ SEQ05 \x03z\x00\x00
 　　そういうこともあってさ、しかも今日、お弁当がどうのこう\n　　のとかいわれちゃって、ほんと困っちゃって。\pいい機会だか\n　　ら、ここらへんではっきりさせておこうと思って。\pそういう\n　　こと」\
 
 \x00  
-SEQ01 \n\x16\x00\x0c
-SEQ04  \xea\x02\x00 \x02\x00\x00 \x18\x03\x00 
+SEQ01 \n\x16
+SEQ13 
+SEQ04  \xea\x02\x00 
+SEQ12  \x18\x03\x00 
 SEQ10   \x00\x00 
-SEQ02 \x00\x00StopCD SPC01 8\x18\x00 
+SEQ02 StopCD SPC01 8\x18\x00 
 SEQ06 SCE043_010\x00 T\x18\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xf4R\x00\x0c
+SEQ03 \xf4R
+SEQ13 
 SEQ05 \x03`\x00\x00
  
 紅葉のいいかたは一方的で、とりつく島がなかった。@
@@ -178,24 +209,30 @@ SEQ05 \x03`\x00\x00
 \n拓司\n　「……わかった」@
 \z
 \x00  
-SEQ01 \x98\x18\x00\x0c
-SEQ04  \xea\x02\x00 \x02\x00\x00 \x18\x03\x00 
+SEQ01 \x98\x18
+SEQ13 
+SEQ04  \xea\x02\x00 
+SEQ12  \x18\x03\x00 
 SEQ06 SCE043_011\x00 R\x1a\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xf8R\x00\x0c
+SEQ03 \xf8R
+SEQ13 
 SEQ05 \x034\x00\x00
  
 そういうしかなかった。\pリバーシで、角を取られるとわかってい\nながらもおかなければならない石。\pパスはない。@
 石がおける場合は、置かなければならない。\pそういう状況に、追\nい込まれてしまったのだ。\
 
 \x00  
-SEQ01 \x96\x1a\x00\x0c
-SEQ04  \xea\x02\x00 \x02\x00\x00 \x18\x03\x00 
+SEQ01 \x96\x1a
+SEQ13 
+SEQ04  \xea\x02\x00 
+SEQ12  \x18\x03\x00 
 SEQ06 SCE043_012\x00 \xa0\x1b\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xfcR\x00\x0c
+SEQ03 \xfcR
+SEQ13 
 SEQ05 \x03:\x00\x00
  
 拓司\n　「わかった。もうお前とは一切関わらない」@
@@ -204,29 +241,36 @@ SEQ05 \x03:\x00\x00
 女子学生\n　「－－行こう、紅葉？」\
 
 \x00  
-SEQ01 \xe4\x1b\x00\x0c
-SEQ04  \xea\x02\x00 \x02\x00\x00 \x18\x03\x00 
+SEQ01 \xe4\x1b
+SEQ13 
+SEQ04  \xea\x02\x00 
+SEQ12  \x18\x03\x00 
 SEQ10   
-SEQ01 \xc8\x00\x00\x0c
+SEQ01 \xc8\x00
+SEQ13 
 SEQ04 
 SEQ08 .\\Data\\Script\\Bg.Fob SPC03  \x1d\x00 
-FILE1 BgAutoFadeIn SPC03 J\x1d\x00 
+SEQ12 \x03\x04\x00\x00BgAutoFadeIn SPC03 J\x1d\x00 
 SEQ06 SCE043_013\x00 n\x1d\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x00S\x00\x0c
+SEQ03 \x00S
+SEQ13 
 SEQ05 \x03J\x00\x00
  
 そんな言葉を聞きながら、拓司はコンクリートの地面をじっと見\nつめて、紅葉たちが去るのを待った。@
 打ちのめされた気分だった。\pプライドはずたずたに引き裂かれ、\n泥まみれになっていた。\pこのところなかったほどのリアルな痛み\nが胸を充たしていたが、いまはそれも、とても歓迎できそうもな\nい。\
 
 \x00  
-SEQ01 \xb2\x1d\x00\x0c
-SEQ04  \xea\x02\x00 \x02\x00\x00 \x18\x03\x00 
+SEQ01 \xb2\x1d
+SEQ13 
+SEQ04  \xea\x02\x00 
+SEQ12  \x18\x03\x00 
 SEQ06 SCE043_014\x00 \x14\x1f\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x04S\x00\x0c
+SEQ03 \x04S
+SEQ13 
 SEQ05 \x03\x93\x00\x00
  
 しかし紅葉たちの気配は、なかなか消えなかった。@
@@ -237,12 +281,15 @@ SEQ05 \x03\x93\x00\x00
 さきほど教室でみせた、あの複雑な表情が－－相反する二つの感\n情がせめぎ合っているような……怯えと期待、罪悪感と爽快感、\n悲しみと喜び、そんなものが現れては消え、消えてはまた浮かび\n上がる、あの表情が張り付いている。\
 
 \x00\x00  
-SEQ01 X\x1f\x00\x0c
-SEQ04  \xea\x02\x00 \x02\x00\x00 \x18\x03\x00 
+SEQ01 X\x1f
+SEQ13 
+SEQ04  \xea\x02\x00 
+SEQ12  \x18\x03\x00 
 SEQ06 SCE043_015\x00 \xde!\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x08S\x00\x0c
+SEQ03 \x08S
+SEQ13 
 SEQ05 \x03}\x00\x00
  
 女子学生のひとりが、奇妙な空気を振り払うようにいった。@
@@ -254,12 +301,15 @@ SEQ05 \x03}\x00\x00
 \n気まずい沈黙を破ったのは、紅葉だった。\
 
 \x00\x00\x00  
-SEQ01 ""\x00\x0c
-SEQ04  \xea\x02\x00 \x02\x00\x00 \x18\x03\x00 
+SEQ01 ""
+SEQ13 
+SEQ04  \xea\x02\x00 
+SEQ12  \x18\x03\x00 
 SEQ06 SCE043_016\x00 P$\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x0cS\x00\x0c
+SEQ03 \x0cS
+SEQ13 
 SEQ05 \x03O\x00\x00
  
 紅葉\n　「……行こう」@
@@ -269,8 +319,10 @@ SEQ05 \x03O\x00\x00
 そうして拓司はひとり、奇妙な空白の中にとりのこされた。\
 
 \x00\x00  
-SEQ01 \x94$\x00\x0c
-SEQ04  \xea\x02\x00 \x02\x00\x00 \x18\x03\x00 
+SEQ01 \x94$
+SEQ13 
+SEQ04  \xea\x02\x00 
+SEQ12  \x18\x03\x00 
 SEQ10  \xea\x02\x00 
-FILE2 TextClosev\x81\x1f\x16&\x00 
+SEQ12 \x03\x03\x00\x00TextClose SPC02 \x16&\x00 
 ENDF

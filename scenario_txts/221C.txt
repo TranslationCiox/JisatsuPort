@@ -8,9 +8,11 @@ SEQ05 \x03\x11\x00\x00
 \n\n\n\n\n\n\n\n\n\n　　　　　　　　　　　　　『１０日目』\
 
 \x00  
-SEQ01 J\x00\x00\x0c
-SEQ04 \x03\x07\x00\x00.\\Data\\Script\\TextFunc.Fob SPC01 \xae\x00\x00 
-SEQ02 \x00\x00TextOn SPC01 \xdc\x00\x00 
+SEQ01 J\x00
+SEQ13 
+SEQ04 
+SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 \xae\x00\x00 
+SEQ02 TextOn SPC01 \xdc\x00\x00 
 SEQ06 SCE221_002\x00 \xf8\x00\x00 
 SEQ07  
 SEQ01 
@@ -28,8 +30,10 @@ SEQ05 \x03\x81\x00\x00
 \n御堂\n　「ふん。\pお前を生かしてやってるのは、波動の監視役としてだ\n　　からな。\pしっかり見張ってろ。\pポカやらかしたら容赦しねえ\n　　からな」\
 
 \x00\x00\x00  
-SEQ01 <\x01\x00\x0c
-SEQ04  \xae\x00\x00 \x02\x00\x00 \xdc\x00\x00 
+SEQ01 <\x01
+SEQ13 
+SEQ04  \xae\x00\x00 
+SEQ12  \xdc\x00\x00 
 SEQ06 SCE221_003\x00 z\x03\x00 
 SEQ07  
 SEQ01 
@@ -41,16 +45,20 @@ SEQ05 \x03:\x00\x00
 自分のことを考えるのに精一杯で、とてもではないが他人の面倒\nなど見ていられないのだ。\
 
 \x00\x00\x00  
-SEQ01 \xbe\x03\x00\x0c
-SEQ04  \xae\x00\x00 \x02\x00\x00 \xdc\x00\x00 
+SEQ01 \xbe\x03
+SEQ13 
+SEQ04  \xae\x00\x00 
+SEQ12  \xdc\x00\x00 
 SEQ10 \x03"\x00\x00
 CHOICE
 それでも拓司は、自分の食糧を少し残し、夜、なたねに与えた\n拓司は食糧を腹に収め、いつかくるであろう『そのとき』に備えた\n\l0,2,
 ENDCHOICE
 
 \x00  
-SEQ01 \xe0\x04\x00\x0c
-SEQ04  \xae\x00\x00 \x02\x00\x00 \xdc\x00\x00 
+SEQ01 \xe0\x04
+SEQ13 
+SEQ04  \xae\x00\x00 
+SEQ12  \xdc\x00\x00 
 SEQ10  \xae\x00\x00 
-FILE2 TextClosev\x81\x1f\xae\x05\x00 
+SEQ12 \x03\x03\x00\x00TextClose SPC02 \xae\x05\x00 
 ENDF

@@ -11,14 +11,17 @@ SEQ05 \x03,\x00\x00
 流されるしかないのだ。\
 
 \x00\x00\x00  
-SEQ01 J\x00\x00\x0c
-SEQ04 \x03\x07\x00\x00.\\Data\\Script\\TextFunc.Fob SPC01 \x1a\x01\x00 
-SEQ02 \x00\x00TextOn SPC01 H\x01\x00 
+SEQ01 J\x00
+SEQ13 
+SEQ04 
+SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 \x1a\x01\x00 
+SEQ02 TextOn SPC01 H\x01\x00 
 SEQ10   
-SEQ01 $\x00\x00\x0c
+SEQ01 $\x00
+SEQ13 
 SEQ04 
 SEQ08 .\\Data\\Script\\Bg.Fob SPC03 ~\x01\x00 
-FILE1 BgAutoFadeIn SPC03 \xa8\x01\x00 
+SEQ12 \x03\x04\x00\x00BgAutoFadeIn SPC03 \xa8\x01\x00 
 SEQ06 SCE219_002\x00 \xcc\x01\x00 
 SEQ07  
 SEQ01 
@@ -36,8 +39,10 @@ SEQ05 \x03k\x00\x00
 ぐったりと御堂の下に横たわり、殴られるがままだ。\
 
 \x00  
-SEQ01 \x10\x02\x00\x0c
-SEQ04  \x1a\x01\x00 \x02\x00\x00 H\x01\x00 
+SEQ01 \x10\x02
+SEQ13 
+SEQ04  \x1a\x01\x00 
+SEQ12  H\x01\x00 
 SEQ06 SCE219_003\x00 \xf6\x03\x00 
 SEQ07  
 SEQ01 
@@ -53,14 +58,18 @@ SEQ05 \x03L\x00\x00
 そしていま、眼前で展開されていることこそ、新しい秩序の骨子\nを為すものであるはずだった。\
 
 \x00  
-SEQ01 :\x04\x00\x0c
-SEQ04  \x1a\x01\x00 \x02\x00\x00 H\x01\x00 
+SEQ01 :\x04
+SEQ13 
+SEQ04  \x1a\x01\x00 
+SEQ12  H\x01\x00 
 SEQ10   
-SEQ01 \xc8\x00\x00\x0c
-SEQ04  ~\x01\x00 \x02\x00\x00 \xa8\x01\x00 
+SEQ01 \xc8\x00
+SEQ13 
+SEQ04  ~\x01\x00 
+SEQ12  \xa8\x01\x00 
 SEQ10 
-SEQ08 .\\Data\\Script\\Bgm.Fobv\x81\x1f\xd8\x05\x00 
-SEQ02 \x00\x00StopCD SPC01 \x02\x06\x00 
+SEQ08 .\\Data\\Script\\Bgm.Fob SPC02 \xd8\x05\x00 
+SEQ02 StopCD SPC01 \x02\x06\x00 
 SEQ10  \x1a\x01\x00 
-FILE2 TextClosev\x81\x1f*\x06\x00 
+SEQ12 \x03\x03\x00\x00TextClose SPC02 *\x06\x00 
 ENDF

@@ -2,7 +2,8 @@ STRF
 \x82\x17\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00 \x13\x00\x03\x03\x00\x00SCE075_001\x00 \x06\x00\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xd0\x84\x00\x0c
+SEQ03 \xd0\x84
+SEQ13 
 SEQ05 \x03|\x00\x00
  
 なたね\n　「だめ。\pこの先は危険。\p波動が直接－－」@
@@ -13,13 +14,16 @@ SEQ05 \x03|\x00\x00
 早桃\n　「でも！　おにいちゃん！」\
 
 \x00\x00\x00  
-SEQ01 J\x00\x00\x0c
-SEQ04 \x03\x07\x00\x00.\\Data\\Script\\TextFunc.Fob SPC01 Z\x02\x00 
-SEQ02 \x00\x00TextOn SPC01 \x88\x02\x00 
+SEQ01 J\x00
+SEQ13 
+SEQ04 
+SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 Z\x02\x00 
+SEQ02 TextOn SPC01 \x88\x02\x00 
 SEQ06 SCE075_002\x00 \xa4\x02\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xd4\x84\x00\x0c
+SEQ03 \xd4\x84
+SEQ13 
 SEQ05 \x03N\x00\x00
  
 なたね\n　「いいのよ、虎菱くん」@
@@ -28,12 +32,15 @@ SEQ05 \x03N\x00\x00
 早桃\n　「……」\
 
 \x00  
-SEQ01 \xe8\x02\x00\x0c
-SEQ04  Z\x02\x00 \x02\x00\x00 \x88\x02\x00 
+SEQ01 \xe8\x02
+SEQ13 
+SEQ04  Z\x02\x00 
+SEQ12  \x88\x02\x00 
 SEQ06 SCE075_003\x00 Z\x04\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xd8\x84\x00\x0c
+SEQ03 \xd8\x84
+SEQ13 
 SEQ05 \x03\xc1\x00\x00
  
 なたね\n　「便宜上『波動』と呼んでいるけれど、『波動』は、本来なら\n　　地球の言葉では定義できない存在なの。\pだから、一般的なエ\n　　ネルギーのように、一方から他方へ、直線的に飛ぶというも\n　　のではないの。\pそれ自身の意志で停滞したり、反射したり、\n　　逆流したり、屈折したり。\p秩序や法則はないの。\p無秩序。@
@@ -42,12 +49,15 @@ SEQ05 \x03\xc1\x00\x00
 早桃\n　「……え？」\
 
 \x00  
-SEQ01 \x9e\x04\x00\x0c
-SEQ04  Z\x02\x00 \x02\x00\x00 \x88\x02\x00 
+SEQ01 \x9e\x04
+SEQ13 
+SEQ04  Z\x02\x00 
+SEQ12  \x88\x02\x00 
 SEQ06 SCE075_004\x00 \xdc\x07\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xdc\x84\x00\x0c
+SEQ03 \xdc\x84
+SEQ13 
 SEQ05 \x03{\x00\x00
  
 　なたねは「シェ\p・ル\p・タ\p・ー」と、ひとことひとことを区切っ\n　て言い返した。@
@@ -57,12 +67,15 @@ SEQ05 \x03{\x00\x00
 なたね\n　「正確に言うと、シェルターはまだ完成していないわ。\pただ、\n　　材料は全部そろえてある。\pこれだけの人数で突貫で作れば、\n　　１時間もかからずに完成すると思う」\
 
 \x00\x00\x00  
-SEQ01  \x08\x00\x0c
-SEQ04  Z\x02\x00 \x02\x00\x00 \x88\x02\x00 
+SEQ01  \x08
+SEQ13 
+SEQ04  Z\x02\x00 
+SEQ12  \x88\x02\x00 
 SEQ06 SCE075_005\x00 F\n\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xe0\x84\x00\x0c
+SEQ03 \xe0\x84
+SEQ13 
 SEQ05 \x03]\x00\x00
  
 拓司\n　「……まさか」@
@@ -72,12 +85,15 @@ SEQ05 \x03]\x00\x00
 怒っている。\pそれまでの能面めいた無表情が嘘だったかのように、\nなたねは怒っていた。\
 
 \x00  
-SEQ01 \x8a\n\x00\x0c
-SEQ04  Z\x02\x00 \x02\x00\x00 \x88\x02\x00 
+SEQ01 \x8a\n
+SEQ13 
+SEQ04  Z\x02\x00 
+SEQ12  \x88\x02\x00 
 SEQ06 SCE075_006\x00 8\x0c\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xe4\x84\x00\x0c
+SEQ03 \xe4\x84
+SEQ13 
 SEQ05 \x03\xc0\x00\x00
  
 なたね\n　「こんな非常事態に冗談なんて言うはずがないでしょうッ！@
@@ -86,12 +102,15 @@ SEQ05 \x03\xc0\x00\x00
 \nなたね\n　「……質問はそれだけだったよね？」\
 
 \x00\x00\x00  
-SEQ01 |\x0c\x00\x0c
-SEQ04  Z\x02\x00 \x02\x00\x00 \x88\x02\x00 
+SEQ01 |\x0c
+SEQ13 
+SEQ04  Z\x02\x00 
+SEQ12  \x88\x02\x00 
 SEQ06 SCE075_007\x00 \xb6\x0f\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xe8\x84\x00\x0c
+SEQ03 \xe8\x84
+SEQ13 
 SEQ05 \x03\x81\x00\x00
  
 拓司\n　「……」@
@@ -102,16 +121,20 @@ SEQ05 \x03\x81\x00\x00
 俺は……どうすればいい？\
 
   
-SEQ01 \xfa\x0f\x00\x0c
-SEQ04  Z\x02\x00 \x02\x00\x00 \x88\x02\x00 
+SEQ01 \xfa\x0f
+SEQ13 
+SEQ04  Z\x02\x00 
+SEQ12  \x88\x02\x00 
 SEQ10 \x03!\x00\x00
 CHOICE
 なたねの言葉に従う。紅葉を見捨てて、シェルターに向かう\nなたね達をシェルターに向かわせて、自分だけ紅葉救出に向かう\n\l0,2,
 ENDCHOICE
 
 \x00  
-SEQ01 8\x12\x00\x0c
-SEQ04  Z\x02\x00 \x02\x00\x00 \x88\x02\x00 
+SEQ01 8\x12
+SEQ13 
+SEQ04  Z\x02\x00 
+SEQ12  \x88\x02\x00 
 SEQ10  Z\x02\x00 
-FILE2 TextClosev\x81\x1f\x02\x13\x00 
+SEQ12 \x03\x03\x00\x00TextClose SPC02 \x02\x13\x00 
 ENDF

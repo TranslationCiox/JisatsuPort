@@ -17,9 +17,11 @@ SEQ05 \x03s\x00\x00
 死ぬよりはマシだ。\
 
 \x00\x00\x00  
-SEQ01 J\x00\x00\x0c
-SEQ04 \x03\x07\x00\x00.\\Data\\Script\\TextFunc.Fob SPC01 6\x02\x00 
-SEQ02 \x00\x00TextOn SPC01 d\x02\x00 
+SEQ01 J\x00
+SEQ13 
+SEQ04 
+SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 6\x02\x00 
+SEQ02 TextOn SPC01 d\x02\x00 
 SEQ06 SCE237_002\x00 \x80\x02\x00 
 SEQ07  
 SEQ01 
@@ -37,8 +39,10 @@ SEQ05 \x03\x98\x00\x00
 やがてまたこの部屋で目覚めて、教授にすべてを否定され……\
 
 \x00  
-SEQ01 \xc4\x02\x00\x0c
-SEQ04  6\x02\x00 \x02\x00\x00 d\x02\x00 
+SEQ01 \xc4\x02
+SEQ13 
+SEQ04  6\x02\x00 
+SEQ12  d\x02\x00 
 SEQ06 SCE237_003\x00 ^\x05\x00 
 SEQ07  
 SEQ01 
@@ -55,16 +59,19 @@ SEQ05 \x03\x91\x00\x00
 \a4,0,0,0,\n　拓司はなま暖かいかたまりにゆっくり飲み込まれながら、ただ\n胎児のように身を丸めて恐怖していた。\
 
 \x00\x00  
-SEQ01 \xa2\x05\x00\x0c
-SEQ04  6\x02\x00 \x02\x00\x00 d\x02\x00 
+SEQ01 \xa2\x05
+SEQ13 
+SEQ04  6\x02\x00 
+SEQ12  d\x02\x00 
 SEQ10   
-SEQ01 \xc8\x00\x00\x0c
+SEQ01 \xc8\x00
+SEQ13 
 SEQ04 
 SEQ08 .\\Data\\Script\\Bg.Fob SPC03 :\x08\x00 
-FILE1 BgAutoFadeIn SPC03 d\x08\x00 
+SEQ12 \x03\x04\x00\x00BgAutoFadeIn SPC03 d\x08\x00 
 SEQ10 
-SEQ08 .\\Data\\Script\\Bgm.Fobv\x81\x1f\x88\x08\x00 
-SEQ02 \x00\x00StopCD SPC01 \xb2\x08\x00 
+SEQ08 .\\Data\\Script\\Bgm.Fob SPC02 \x88\x08\x00 
+SEQ02 StopCD SPC01 \xb2\x08\x00 
 SEQ10  6\x02\x00 
-FILE2 TextClosev\x81\x1f\xda\x08\x00 
+SEQ12 \x03\x03\x00\x00TextClose SPC02 \xda\x08\x00 
 ENDF

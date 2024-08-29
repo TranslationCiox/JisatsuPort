@@ -2,19 +2,23 @@ STRF
 \x17\x10\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x000\r\x00\x03\x03\x00\x00SCE096_001\x00 \x06\x00\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xa0\xa5\x00\x0c
+SEQ03 \xa0\xa5
+SEQ13 
 SEQ05 \x03\x11\x00\x00
  
 \n\n\n\n\n\n\n\n\n\n　　　　　　　　　　　　　『３日目』\
 
 \x00\x00\x00  
-SEQ01 J\x00\x00\x0c
-SEQ04 \x03\x07\x00\x00.\\Data\\Script\\TextFunc.Fob SPC01 \xae\x00\x00 
-SEQ02 \x00\x00TextOn SPC01 \xdc\x00\x00 
+SEQ01 J\x00
+SEQ13 
+SEQ04 
+SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 \xae\x00\x00 
+SEQ02 TextOn SPC01 \xdc\x00\x00 
 SEQ06 SCE096_002\x00 \xf8\x00\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xa4\xa5\x00\x0c
+SEQ03 \xa4\xa5
+SEQ13 
 SEQ05 \x03q\x00\x00
  
 　全員の顔に疲労の影を見た拓司は、なたねに提案をした。@
@@ -27,12 +31,15 @@ SEQ05 \x03q\x00\x00
 　　身体を拭くんだ」\
 
 \x00  
-SEQ01 <\x01\x00\x0c
-SEQ04  \xae\x00\x00 \x02\x00\x00 \xdc\x00\x00 
+SEQ01 <\x01
+SEQ13 
+SEQ04  \xae\x00\x00 
+SEQ12  \xdc\x00\x00 
 SEQ06 SCE096_003\x00 :\x03\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xa8\xa5\x00\x0c
+SEQ03 \xa8\xa5
+SEQ13 
 SEQ05 \x03i\x00\x00
  
 なたね\n　「……５日に１回で衛生的には問題はないと思うんですけど」@
@@ -41,22 +48,27 @@ SEQ05 \x03i\x00\x00
 \n　なたねは、準備室から水の入ったポリタンクと、新しいタオル\nを人数分運び出してきた。\p全員で協力して実験器具が詰まった\n棚を移動して壁を作り、そこを即席の『シャワールーム』とした。\n\pもちろん、女性陣のプライバシーを守るためである。\
 
 \x00  
-SEQ01 ~\x03\x00\x0c
-SEQ04  \xae\x00\x00 \x02\x00\x00 \xdc\x00\x00 
+SEQ01 ~\x03
+SEQ13 
+SEQ04  \xae\x00\x00 
+SEQ12  \xdc\x00\x00 
 SEQ10   
-SEQ01  \x00\x00\x0c
+SEQ01  \x00
+SEQ13 
 SEQ04 
 SEQ08 .\\Data\\Script\\Bg.Fob SPC03 v\x05\x00 
-FILE1 BgAutoFadeIn SPC03 \xa0\x05\x00 
+SEQ12 \x03\x04\x00\x00BgAutoFadeIn SPC03 \xa0\x05\x00 
 SEQ10   
-SEQ01 \x07\x01\x00\x0c
+SEQ01 \x07\x01
+SEQ13 
 SEQ04 
-SEQ08 .\\Data\\Script\\Bgm.Fobv\x81\x1f\xde\x05\x00 
-SEQ02 \x00\x00PlayCD SPC01 \x08\x06\x00 
+SEQ08 .\\Data\\Script\\Bgm.Fob SPC02 \xde\x05\x00 
+SEQ02 PlayCD SPC01 \x08\x06\x00 
 SEQ06 SCE096_004\x00 $\x06\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xac\xa5\x00\x0c
+SEQ03 \xac\xa5
+SEQ13 
 SEQ05 \x03q\x00\x00
  
 早桃\n　「やったあ！\p　もう身体がべとべとで、気持ち悪くてしかたな\n　　かったんだよね！」@
@@ -69,12 +81,15 @@ SEQ05 \x03q\x00\x00
 錦城\n　「ふふふ」\
 
 \x00\x00\x00  
-SEQ01 h\x06\x00\x0c
-SEQ04  \xae\x00\x00 \x02\x00\x00 \xdc\x00\x00 
+SEQ01 h\x06
+SEQ13 
+SEQ04  \xae\x00\x00 
+SEQ12  \xdc\x00\x00 
 SEQ06 SCE096_005\x00 f\x08\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xb0\xa5\x00\x0c
+SEQ03 \xb0\xa5
+SEQ13 
 SEQ05 \x03p\x00\x00
  
 早桃\n　「それにしても、錦城先生はさすがですよね……大人の女の人\n　　って感じで」@
@@ -85,12 +100,15 @@ SEQ05 \x03p\x00\x00
 \n　言葉は汚いが、御堂の声もどこか明るい。\pひんやりとした水の\n冷たさが、全員の気分を高揚させている。\pなんとなく合宿をして\nいるような、そんな感じすらある。\
 
 \x00\x00\x00  
-SEQ01 \xaa\x08\x00\x0c
-SEQ04  \xae\x00\x00 \x02\x00\x00 \xdc\x00\x00 
+SEQ01 \xaa\x08
+SEQ13 
+SEQ04  \xae\x00\x00 
+SEQ12  \xdc\x00\x00 
 SEQ06 SCE096_006\x00 \xa4\n\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xb4\xa5\x00\x0c
+SEQ03 \xb4\xa5
+SEQ13 
 SEQ05 \x03y\x00\x00
  
 御堂\n　「虎菱、おめえなかなか粋なことしてくれんじゃねえかよ」@
@@ -102,8 +120,10 @@ SEQ05 \x03y\x00\x00
 \n　誰が御堂に投票したのだろう……拓司はその疑問を頭から無理\nに追い出した。\pとりあえずいまくらいは、さっぱりと明るい気持\nちでいたかった。\
 
 \x00\x00\x00  
-SEQ01 \xe8\n\x00\x0c
-SEQ04  \xae\x00\x00 \x02\x00\x00 \xdc\x00\x00 
+SEQ01 \xe8\n
+SEQ13 
+SEQ04  \xae\x00\x00 
+SEQ12  \xdc\x00\x00 
 SEQ10  \xae\x00\x00 
-FILE2 TextClosev\x81\x1f\x12\r\x00 
+SEQ12 \x03\x03\x00\x00TextClose SPC02 \x12\r\x00 
 ENDF

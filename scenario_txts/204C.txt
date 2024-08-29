@@ -12,9 +12,11 @@ SEQ05 \x03\xcb\x00\x00
 \n拓司\n　「君の言うことが信じられないような真実なのか……途方もな\n　　いウソなのか……それはまず置いておこう。\pそれを決める前\n　　に、いくつか質問をさせてくれ」\
 
 \x00\x00\x00  
-SEQ01 J\x00\x00\x0c
-SEQ04 \x03\x07\x00\x00.\\Data\\Script\\TextFunc.Fob SPC01 \x96\x03\x00 
-SEQ02 \x00\x00TextOn SPC01 \xc4\x03\x00 
+SEQ01 J\x00
+SEQ13 
+SEQ04 
+SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 \x96\x03\x00 
+SEQ02 TextOn SPC01 \xc4\x03\x00 
 SEQ10  \x96\x03\x00 
-FILE2 TextClosev\x81\x1f\xec\x03\x00 
+SEQ12 \x03\x03\x00\x00TextClose SPC02 \xec\x03\x00 
 ENDF

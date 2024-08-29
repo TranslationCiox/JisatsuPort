@@ -16,17 +16,20 @@ SEQ05 \x03b\x00\x00
 　　先生の手、こんなにべとべとにして……ふふふ」@
 \z
 \x00\x00\x00  
-SEQ01 J\x00\x00\x0c
-SEQ04 \x03\x07\x00\x00.\\Data\\Script\\TextFunc.Fob SPC01 \xf2\x01\x00 
-SEQ02 \x00\x00TextOn SPC01  \x02\x00 
+SEQ01 J\x00
+SEQ13 
+SEQ04 
+SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 \xf2\x01\x00 
+SEQ02 TextOn SPC01  \x02\x00 
 SEQ10   
-SEQ01 \xc8\x00\x00\x0c
+SEQ01 \xc8\x00
+SEQ13 
 SEQ04 
 SEQ08 .\\Data\\Script\\Bg.Fob SPC03 V\x02\x00 
-FILE1 BgAutoFadeIn SPC03 \x80\x02\x00 
+SEQ12 \x03\x04\x00\x00BgAutoFadeIn SPC03 \x80\x02\x00 
 SEQ10 
-SEQ08 .\\Data\\Script\\Bgm.Fobv\x81\x1f\xa4\x02\x00 
-SEQ02 \x00\x00StopCD SPC01 \xce\x02\x00 
+SEQ08 .\\Data\\Script\\Bgm.Fob SPC02 \xa4\x02\x00 
+SEQ02 StopCD SPC01 \xce\x02\x00 
 SEQ10  \xf2\x01\x00 
-FILE2 TextClosev\x81\x1f\xf6\x02\x00 
+SEQ12 \x03\x03\x00\x00TextClose SPC02 \xf6\x02\x00 
 ENDF

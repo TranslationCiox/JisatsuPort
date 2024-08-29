@@ -15,9 +15,11 @@ SEQ05 \x03d\x00\x00
 拓司は考えたすえに、いった。\
 
 \x00\x00\x00  
-SEQ01 J\x00\x00\x0c
-SEQ04 \x03\x07\x00\x00.\\Data\\Script\\TextFunc.Fob SPC01 \xfa\x01\x00 
-SEQ02 \x00\x00TextOn SPC01 (\x02\x00 
+SEQ01 J\x00
+SEQ13 
+SEQ04 
+SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 \xfa\x01\x00 
+SEQ02 TextOn SPC01 (\x02\x00 
 SEQ06 SCE212_002\x00 D\x02\x00 
 SEQ07  
 SEQ01 
@@ -30,8 +32,10 @@ SEQ05 \x03S\x00\x00
 ナタネ\n　「ええ」\
 
 \x00  
-SEQ01 \x88\x02\x00\x0c
-SEQ04  \xfa\x01\x00 \x02\x00\x00 (\x02\x00 
+SEQ01 \x88\x02
+SEQ13 
+SEQ04  \xfa\x01\x00 
+SEQ12  (\x02\x00 
 SEQ06 SCE212_003\x00 \x0e\x04\x00 
 SEQ07  
 SEQ01 
@@ -46,13 +50,16 @@ SEQ05 \x03\x87\x00\x00
 \n拓司は、目を閉じた。\
 
 \x00  
-SEQ01 R\x04\x00\x0c
-SEQ04  \xfa\x01\x00 \x02\x00\x00 (\x02\x00 
+SEQ01 R\x04
+SEQ13 
+SEQ04  \xfa\x01\x00 
+SEQ12  (\x02\x00 
 SEQ10   
-SEQ01 \xc8\x00\x00\x0c
+SEQ01 \xc8\x00
+SEQ13 
 SEQ04 
 SEQ08 .\\Data\\Script\\Bg.Fob SPC03 \xc2\x06\x00 
-FILE1 BgAutoFadeIn SPC03 \xec\x06\x00 
+SEQ12 \x03\x04\x00\x00BgAutoFadeIn SPC03 \xec\x06\x00 
 SEQ06 SCE212_004\x00 \x10\x07\x00 
 SEQ07  
 SEQ01 
@@ -70,11 +77,15 @@ SEQ05 \x03\x88\x00\x00
 そう思ってしまう。\
 
 \x00  
-SEQ01 T\x07\x00\x0c
-SEQ04  \xfa\x01\x00 \x02\x00\x00 (\x02\x00 
+SEQ01 T\x07
+SEQ13 
+SEQ04  \xfa\x01\x00 
+SEQ12  (\x02\x00 
 SEQ10   
-SEQ01 \xc9\x00\x00\x0c
-SEQ04  \xc2\x06\x00 \x02\x00\x00 \xec\x06\x00 
+SEQ01 \xc9\x00
+SEQ13 
+SEQ04  \xc2\x06\x00 
+SEQ12  \xec\x06\x00 
 SEQ06 SCE212_005\x00 \xe2\t\x00 
 SEQ07  
 SEQ01 
@@ -87,8 +98,10 @@ SEQ05 \x036\x00\x00
 \n拓司\n　「そんな……バカな」\
 
 \x00  
-SEQ01 &\n\x00\x0c
-SEQ04  \xfa\x01\x00 \x02\x00\x00 (\x02\x00 
+SEQ01 &\n
+SEQ13 
+SEQ04  \xfa\x01\x00 
+SEQ12  (\x02\x00 
 SEQ06 SCE212_006\x00 8\x0b\x00 
 SEQ07  
 SEQ01 
@@ -98,8 +111,10 @@ SEQ05 \x03-\x00\x00
 /*▲SE01　ループ再生（次の停止まで）*/\a2,1,1,1,\a6,0,0,0,　ザザザ……ザザッ……\pザアザザザ……ザアアアアア……@
 　ザアザアアアアアアア……\w\n/*▲SE01　停止*/\a4,1,0,0,\z
 \x00\x00\x00  
-SEQ01 |\x0b\x00\x0c
-SEQ04  \xfa\x01\x00 \x02\x00\x00 (\x02\x00 
+SEQ01 |\x0b
+SEQ13 
+SEQ04  \xfa\x01\x00 
+SEQ12  (\x02\x00 
 SEQ06 SCE212_007\x00 j\x0c\x00 
 SEQ07  
 SEQ01 
@@ -120,13 +135,16 @@ SEQ05 \x03d\x00\x00
 \n/*■黒　表示（クロスフェード）*/\a7,-2,-2,0,\a0,200,2,0,\a6,-2,0,0,ようやく浅いまどろみが頭に霞を作りはじめた。\
 
 \x00\x00  
-SEQ01 \xae\x0c\x00\x0c
-SEQ04  \xfa\x01\x00 \x02\x00\x00 (\x02\x00 
+SEQ01 \xae\x0c
+SEQ13 
+SEQ04  \xfa\x01\x00 
+SEQ12  (\x02\x00 
 SEQ10   
-SEQ01 \x02\x00\x00\x0c
+SEQ01 
+SEQ12 \x0c
 SEQ04 
-SEQ08 .\\Data\\Script\\Bgm.Fobv\x81\x1f\x92\x0e\x00 
-SEQ02 \x00\x00SeStop SPC01 \xbc\x0e\x00 
+SEQ08 .\\Data\\Script\\Bgm.Fob SPC02 \x92\x0e\x00 
+SEQ02 SeStop SPC01 \xbc\x0e\x00 
 SEQ10  \xfa\x01\x00 
-FILE2 TextClosev\x81\x1f\xe4\x0e\x00 
+SEQ12 \x03\x03\x00\x00TextClose SPC02 \xe4\x0e\x00 
 ENDF

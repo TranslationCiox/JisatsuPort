@@ -1,14 +1,16 @@
 STRF
 \xa1\x13\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\\\x10\x00  
-SEQ01 \xc8\x00\x00\x0c
+SEQ01 \xc8\x00
+SEQ13 
 SEQ04 
 SEQ08 .\\Data\\Script\\Bg.Fob SPC03  \x00\x00 
-FILE1 BgAutoFadeIn SPC03 J\x00\x00 
+SEQ12 \x03\x04\x00\x00BgAutoFadeIn SPC03 J\x00\x00 
 SEQ10   
-SEQ01 \x08\x01\x00\x0c
+SEQ01 \x08\x01
+SEQ13 
 SEQ04 
-SEQ08 .\\Data\\Script\\Bgm.Fobv\x81\x1f\x88\x00\x00 
-SEQ02 \x00\x00PlayCD SPC01 \xb2\x00\x00 
+SEQ08 .\\Data\\Script\\Bgm.Fob SPC02 \x88\x00\x00 
+SEQ02 PlayCD SPC01 \xb2\x00\x00 
 SEQ06 SCEK14_001\x00 \xce\x00\x00 
 SEQ07  
 SEQ01 
@@ -27,9 +29,11 @@ SEQ05 \x03\x9d\x00\x00
 憑き物が落ちたようないきいきとした顔が鏡の中にあったのを、\n鮮やかに覚えている。@
 サッパリしていて、自分でもちょっとすてきかな、などと思った\nくらいだった。\w\z
 \x00  
-SEQ01 \x12\x01\x00\x0c
-SEQ04 \x03\x07\x00\x00.\\Data\\Script\\TextFunc.Fob SPC01 \xa6\x03\x00 
-SEQ02 \x00\x00TextOn SPC01 \xd4\x03\x00 
+SEQ01 \x12\x01
+SEQ13 
+SEQ04 
+SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 \xa6\x03\x00 
+SEQ02 TextOn SPC01 \xd4\x03\x00 
 SEQ06 SCEK14_002\x00 \xf0\x03\x00 
 SEQ07  
 SEQ01 
@@ -45,8 +49,10 @@ SEQ05 \x03\xb4\x00\x00
 わくわくしていた。@
 ゆきといっしょに、どこか温泉にでも旅行に出かけるような、そ\nんな気分だった。\w\z
 \x00  
-SEQ01 4\x04\x00\x0c
-SEQ04  \xa6\x03\x00 \x02\x00\x00 \xd4\x03\x00 
+SEQ01 4\x04
+SEQ13 
+SEQ04  \xa6\x03\x00 
+SEQ12  \xd4\x03\x00 
 SEQ06 SCEK14_003\x00 >\x07\x00 
 SEQ07  
 SEQ01 
@@ -61,8 +67,10 @@ SEQ05 \x03k\x00\x00
 「うん」とゆきはいった。@
 「終わったよ」\w\z
 \x00\x00\x00  
-SEQ01 \x82\x07\x00\x0c
-SEQ04  \xa6\x03\x00 \x02\x00\x00 \xd4\x03\x00 
+SEQ01 \x82\x07
+SEQ13 
+SEQ04  \xa6\x03\x00 
+SEQ12  \xd4\x03\x00 
 SEQ06 SCEK14_004\x00 h\t\x00 
 SEQ07  
 SEQ01 
@@ -77,8 +85,10 @@ SEQ05 \x03z\x00\x00
 「かわいいね、その服」と私はいった。@
 「月代さんもかわいいよ」と、ゆきは照れくさそうにいった。\w\z
 \x00  
-SEQ01 \xac\t\x00\x0c
-SEQ04  \xa6\x03\x00 \x02\x00\x00 \xd4\x03\x00 
+SEQ01 \xac\t
+SEQ13 
+SEQ04  \xa6\x03\x00 
+SEQ12  \xd4\x03\x00 
 SEQ06 SCEK14_005\x00 \xce\x0b\x00 
 SEQ07  
 SEQ01 
@@ -91,8 +101,10 @@ SEQ05 \x03p\x00\x00
 このことは、人生のひとつの真実を表しているように思う。@
 人生はやはり、オチのない悪い冗談なのだという真実を。\w\z
 \x00\x00\x00  
-SEQ01 \x12\x0c\x00\x0c
-SEQ04  \xa6\x03\x00 \x02\x00\x00 \xd4\x03\x00 
+SEQ01 \x12\x0c
+SEQ13 
+SEQ04  \xa6\x03\x00 
+SEQ12  \xd4\x03\x00 
 SEQ06 SCEK14_006\x00 \x0c\x0e\x00 
 SEQ07  
 SEQ01 
@@ -103,8 +115,10 @@ SEQ05 \x03j\x00\x00
 \n私たちは、あらかじめ何軒かのドラッグストアから買い集めてお\nいた××××という薬を鞄から出して、銀紙の上に何瓶分かの錠\n剤をまとめて載せ、ライターであぶって、ドロドロに溶かした。@
 そして、その朝コンビニで買ってきたプレーンヨーグルトに混ぜ\nた。\w\z
 \x00\x00\x00  
-SEQ01 P\x0e\x00\x0c
-SEQ04  \xa6\x03\x00 \x02\x00\x00 \xd4\x03\x00 
+SEQ01 P\x0e
+SEQ13 
+SEQ04  \xa6\x03\x00 
+SEQ12  \xd4\x03\x00 
 SEQ10  \xa6\x03\x00 
-FILE2 TextClosev\x81\x1f>\x10\x00 
+SEQ12 \x03\x03\x00\x00TextClose SPC02 >\x10\x00 
 ENDF

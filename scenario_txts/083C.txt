@@ -2,20 +2,24 @@ STRF
 \x03\x10\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00D\r\x00\x03\x03\x00\x00SCE083_001\x00 \x06\x00\x00 
 SEQ07  
 SEQ01 
-SEQ03 P\x91\x00\x0c
+SEQ03 P\x91
+SEQ13 
 SEQ05 \x03=\x00\x00
  
 拓司は枕元に掛けられている鳥かごをのぞき込んだ。@
 なんという種類かはわからないが、どこかで見たことがあるよう\nな、いかにも普通の小鳥だ。@
 ただ、色だけがウソのように青く鮮やかで、屋台で売っているペ\nンキで着色されたヒヨコを思わせる。\w\z
 \x00  
-SEQ01 J\x00\x00\x0c
-SEQ04 \x03\x07\x00\x00.\\Data\\Script\\TextFunc.Fob SPC01 ^\x01\x00 
-SEQ02 \x00\x00TextOn SPC01 \x8c\x01\x00 
+SEQ01 J\x00
+SEQ13 
+SEQ04 
+SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 ^\x01\x00 
+SEQ02 TextOn SPC01 \x8c\x01\x00 
 SEQ06 SCE083_002\x00 \xa8\x01\x00 
 SEQ07  
 SEQ01 
-SEQ03 T\x91\x00\x0c
+SEQ03 T\x91
+SEQ13 
 SEQ05 \x03s\x00\x00
  
 教授\n　「気になるかね？」@
@@ -28,12 +32,15 @@ SEQ05 \x03s\x00\x00
 \nねばりつくようないいかただった。@
 見れば教授の額には、ちいさな汗が滲んでいる。\w\z
 \x00\x00\x00  
-SEQ01 \xec\x01\x00\x0c
-SEQ04  ^\x01\x00 \x02\x00\x00 \x8c\x01\x00 
+SEQ01 \xec\x01
+SEQ13 
+SEQ04  ^\x01\x00 
+SEQ12  \x8c\x01\x00 
 SEQ06 SCE083_003\x00 \xf2\x03\x00 
 SEQ07  
 SEQ01 
-SEQ03 X\x91\x00\x0c
+SEQ03 X\x91
+SEQ13 
 SEQ05 \x03g\x00\x00
  
 拓司\n　「……なにかこの鳥が、俺の過去に関係あるんですか？」@
@@ -44,12 +51,15 @@ SEQ05 \x03g\x00\x00
 しめきられた白い部屋には、拓司と教授、２人だけが向かい合っ\nて残された。@
 長い沈黙の後、教授が口を開いた。\w\z
 \x00\x00\x00  
-SEQ01 6\x04\x00\x0c
-SEQ04  ^\x01\x00 \x02\x00\x00 \x8c\x01\x00 
+SEQ01 6\x04
+SEQ13 
+SEQ04  ^\x01\x00 
+SEQ12  \x8c\x01\x00 
 SEQ06 SCE083_004\x00 \x0c\x06\x00 
 SEQ07  
 SEQ01 
-SEQ03 \\\x91\x00\x0c
+SEQ03 \\\x91
+SEQ13 
 SEQ05 \x03\x87\x00\x00
  
 教授\n　「……その鳥はね、ありえない鳥なんだよ」@
@@ -64,12 +74,15 @@ SEQ05 \x03\x87\x00\x00
 \n頭の奥が、ずきんと痛んだ。@
 その痛みは急速に大きく膨れ上がり、すぐに拓司の頭のなかいっ\nぱいに広がった。\w\z
 \x00  
-SEQ01 P\x06\x00\x0c
-SEQ04  ^\x01\x00 \x02\x00\x00 \x8c\x01\x00 
+SEQ01 P\x06
+SEQ13 
+SEQ04  ^\x01\x00 
+SEQ12  \x8c\x01\x00 
 SEQ06 SCE083_005\x00 \xa6\x08\x00 
 SEQ07  
 SEQ01 
-SEQ03 `\x91\x00\x0c
+SEQ03 `\x91
+SEQ13 
 SEQ05 \x03c\x00\x00
  
 拓司\n　「意味が……わからない」@
@@ -81,17 +94,21 @@ SEQ05 \x03c\x00\x00
 　　いいかね、これは、新しい生き物なんだよ！@
 　　あらゆる生物学から外れた……神が作ったこの世界の生物な\n　　らぬ……なにかだッ！」\w\z
 \x00  
-SEQ01 \xea\x08\x00\x0c
-SEQ04  ^\x01\x00 \x02\x00\x00 \x8c\x01\x00 
+SEQ01 \xea\x08
+SEQ13 
+SEQ04  ^\x01\x00 
+SEQ12  \x8c\x01\x00 
 SEQ10   
-SEQ01 \xca\x00\x00\x0c
+SEQ01 \xca\x00
+SEQ13 
 SEQ04 
 SEQ08 .\\Data\\Script\\Bg.Fob SPC03 \xca\n\x00 
-FILE1 BgAutoFadeIn SPC03 \xf4\n\x00 
+SEQ12 \x03\x04\x00\x00BgAutoFadeIn SPC03 \xf4\n\x00 
 SEQ06 SCE083_006\x00 \x18\x0b\x00 
 SEQ07  
 SEQ01 
-SEQ03 d\x91\x00\x0c
+SEQ03 d\x91
+SEQ13 
 SEQ05 \x03T\x00\x00
  
 　ザザザザザザザザザザ@
@@ -102,11 +119,15 @@ SEQ05 \x03T\x00\x00
 \n教授\n　「おまえは誰だ？！　何者なんだ？！　お前は－－」@
 \nスイッチを落としたように、目の前が真っ暗になった。\w\z
 \x00  
-SEQ01 \\\x0b\x00\x0c
-SEQ04  ^\x01\x00 \x02\x00\x00 \x8c\x01\x00 
+SEQ01 \\\x0b
+SEQ13 
+SEQ04  ^\x01\x00 
+SEQ12  \x8c\x01\x00 
 SEQ10   
-SEQ01 \xc8\x00\x00\x0c
-SEQ04  \xca\n\x00 \x02\x00\x00 \xf4\n\x00 
+SEQ01 \xc8\x00
+SEQ13 
+SEQ04  \xca\n\x00 
+SEQ12  \xf4\n\x00 
 SEQ10  ^\x01\x00 
-FILE2 TextClosev\x81\x1f&\r\x00 
+SEQ12 \x03\x03\x00\x00TextClose SPC02 &\r\x00 
 ENDF

@@ -18,9 +18,11 @@ SEQ05 \x03\xb8\x00\x00
 理性的判断を通過した非常識な答。@
 非常識であることを十分理解したうえで、彼女は非常識を遂行し\nようとしていた。\p怖かった。\w\z
 \x00  
-SEQ01 J\x00\x00\x0c
-SEQ04 \x03\x07\x00\x00.\\Data\\Script\\TextFunc.Fob SPC01 J\x03\x00 
-SEQ02 \x00\x00TextOn SPC01 x\x03\x00 
+SEQ01 J\x00
+SEQ13 
+SEQ04 
+SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 J\x03\x00 
+SEQ02 TextOn SPC01 x\x03\x00 
 SEQ10  J\x03\x00 
-FILE2 TextClosev\x81\x1f\xa0\x03\x00 
+SEQ12 \x03\x03\x00\x00TextClose SPC02 \xa0\x03\x00 
 ENDF

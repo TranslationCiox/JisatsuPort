@@ -1,18 +1,21 @@
 STRF
 \x1e\x15\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00Z\x11\x00  
-SEQ01 \x05\x00\x00\x0c
+SEQ01 \x05\x00
+SEQ13 
 SEQ04 
 SEQ08 .\\Data\\Script\\Bg.Fob SPC03  \x00\x00 
-FILE1 BgAutoFadeIn SPC03 J\x00\x00 
+SEQ12 \x03\x04\x00\x00BgAutoFadeIn SPC03 J\x00\x00 
 SEQ10   
-SEQ01 \x08\x01\x00\x0c
+SEQ01 \x08\x01
+SEQ13 
 SEQ04 
-SEQ08 .\\Data\\Script\\Bgm.Fobv\x81\x1f\x88\x00\x00 
-SEQ02 \x00\x00PlayCD SPC01 \xb2\x00\x00 
+SEQ08 .\\Data\\Script\\Bgm.Fob SPC02 \x88\x00\x00 
+SEQ02 PlayCD SPC01 \xb2\x00\x00 
 SEQ06 SCE025_001\x00 \xce\x00\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xb06\x00\x0c
+SEQ03 \xb06
+SEQ13 
 SEQ05 \x03}\x00\x00
  
 錦城\n　「－－太宰の処女短編集のタイトルは『晩年』というわけです\n　　けれど、そこに彼のたどった運命を重ね見ることは難しいこ\n　　とではありません。@
@@ -22,15 +25,18 @@ SEQ05 \x03}\x00\x00
 リアルな夢だった。\
 
 \x00  
-SEQ01 \x12\x01\x00\x0c
-SEQ04 \x03\x07\x00\x00.\\Data\\Script\\TextFunc.Fob SPC01 &\x03\x00 
-SEQ02 \x00\x00TextOn SPC01 T\x03\x00 
+SEQ01 \x12\x01
+SEQ13 
+SEQ04 
+SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 &\x03\x00 
+SEQ02 TextOn SPC01 T\x03\x00 
 SEQ10  \x88\x00\x00 
-SEQ02 \x00\x00StopCD SPC01 |\x03\x00 
+SEQ02 StopCD SPC01 |\x03\x00 
 SEQ06 SCE025_002\x00 \x98\x03\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xb46\x00\x0c
+SEQ03 \xb46
+SEQ13 
 SEQ05 \x03N\x00\x00
  
 錦城\n　「……君！　……菱君！　虎菱君！」@
@@ -42,12 +48,15 @@ SEQ05 \x03N\x00\x00
 錦城\n　「……というように、若者が悩み続けている間にも、『世界の\n　　風車はクルクルと回っている』わけです」\
 
 \x00  
-SEQ01 \xdc\x03\x00\x0c
-SEQ04  &\x03\x00 \x02\x00\x00 T\x03\x00 
+SEQ01 \xdc\x03
+SEQ13 
+SEQ04  &\x03\x00 
+SEQ12  T\x03\x00 
 SEQ06 SCE025_003\x00 N\x05\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xb86\x00\x0c
+SEQ03 \xb86
+SEQ13 
 SEQ05 \x03\xa2\x00\x00
  
 　クラスメイトたちが、クスクスと笑っている。@
@@ -64,12 +73,15 @@ SEQ05 \x03\xa2\x00\x00
 　さきほどの夢の中で感じた、いいようのない恐怖の方がよっぽ\n　どリアルだ。\
 
 \x00\x00\x00  
-SEQ01 \x92\x05\x00\x0c
-SEQ04  &\x03\x00 \x02\x00\x00 T\x03\x00 
+SEQ01 \x92\x05
+SEQ13 
+SEQ04  &\x03\x00 
+SEQ12  T\x03\x00 
 SEQ06 SCE025_004\x00 T\x08\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xbc6\x00\x0c
+SEQ03 \xbc6
+SEQ13 
 SEQ05 \x03\x9c\x00\x00
  
 錦城\n　「結構です。座りなさい虎菱君。@
@@ -78,18 +90,25 @@ SEQ05 \x03\x9c\x00\x00
 /*　■CG07　表示（ノンエフェクト）*/\a7,-1,-1,0,\a0,6,1,0,\a6,0,0,0,カンナ\n　「－－こうしましょう。\pここ以外では、あなたと私は知り合いで\n　　も何でもない。\pお互いの世界に干渉しないし、興味も持たない\n　　。\pお互いの世界……フフフ。\p私たちの世界以外では、私たちは\n　　他人になるの。\pそうすることで、私たちの世界はより本物にな\n　　る……どうかしら？」\
 
 \x00  
-SEQ01 \x98\x08\x00\x0c
-SEQ04  &\x03\x00 \x02\x00\x00 T\x03\x00 
+SEQ01 \x98\x08
+SEQ13 
+SEQ04  &\x03\x00 
+SEQ12  T\x03\x00 
 SEQ10   
-SEQ01 \xc8\x00\x00\x0c
-SEQ04   \x00\x00 \x02\x00\x00 J\x00\x00 
+SEQ01 \xc8\x00
+SEQ13 
+SEQ04   \x00\x00 
+SEQ12  J\x00\x00 
 SEQ10   
-SEQ01 \x06\x01\x00\x0c
-SEQ04  \x88\x00\x00 \x02\x00\x00 \xb2\x00\x00 
+SEQ01 \x06\x01
+SEQ13 
+SEQ04  \x88\x00\x00 
+SEQ12  \xb2\x00\x00 
 SEQ06 SCE025_005\x00 \xaa\x0b\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xc06\x00\x0c
+SEQ03 \xc06
+SEQ13 
 SEQ05 \x03\xa3\x00\x00
  
 世界。@
@@ -113,16 +132,22 @@ SEQ05 \x03\xa3\x00\x00
 なにか？\
 
 \x00  
-SEQ01 \xee\x0b\x00\x0c
-SEQ04  &\x03\x00 \x02\x00\x00 T\x03\x00 
+SEQ01 \xee\x0b
+SEQ13 
+SEQ04  &\x03\x00 
+SEQ12  T\x03\x00 
 SEQ10   
-SEQ01 \x05\x00\x00\x0c
-SEQ04   \x00\x00 \x02\x00\x00 J\x00\x00 
-SEQ10  \x88\x00\x00 \x02\x00\x00 |\x03\x00 
+SEQ01 \x05\x00
+SEQ13 
+SEQ04   \x00\x00 
+SEQ12  J\x00\x00 
+SEQ10  \x88\x00\x00 
+SEQ12  |\x03\x00 
 SEQ06 SCE025_006\x00 \x02\x0f\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xc46\x00\x0c
+SEQ03 \xc46
+SEQ13 
 SEQ05 \x03l\x00\x00
  
 学生\n　「……死ぬのか生きるのか、それはもう人間の幸不幸を決定す\n　　る鍵ではないような気さえしてきたのだ。@
@@ -131,8 +156,10 @@ SEQ05 \x03l\x00\x00
 \n　遠景。\p国旗掲揚塔に渡された綱。\pその上から、葉っぱのように人\n　影が落下する。\pそれは淡々と、なんてことのない風景のように見\n　える。\pサイレント映画のようだ。@
 \z
 \x00\x00\x00  
-SEQ01 F\x0f\x00\x0c
-SEQ04  &\x03\x00 \x02\x00\x00 T\x03\x00 
+SEQ01 F\x0f
+SEQ13 
+SEQ04  &\x03\x00 
+SEQ12  T\x03\x00 
 SEQ10  &\x03\x00 
-FILE2 TextClosev\x81\x1f<\x11\x00 
+SEQ12 \x03\x03\x00\x00TextClose SPC02 <\x11\x00 
 ENDF

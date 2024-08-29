@@ -2,7 +2,8 @@ STRF
 \x94\x18\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xc8\x14\x00\x03\x03\x00\x00SCE057_001\x00 \x06\x00\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xb0h\x00\x0c
+SEQ03 \xb0h
+SEQ13 
 SEQ05 \x03t\x00\x00
  
 学生\n　「こいつにションベンひっかけてやろうぜ？」@
@@ -13,13 +14,16 @@ SEQ05 \x03t\x00\x00
 上村\n　「私しかいないっしょ？\p　このウザキャラ潰すのは私の使命だ\n　　からさ」\
 
 \x00  
-SEQ01 J\x00\x00\x0c
-SEQ04 \x03\x07\x00\x00.\\Data\\Script\\TextFunc.Fob SPC01 :\x02\x00 
-SEQ02 \x00\x00TextOn SPC01 h\x02\x00 
+SEQ01 J\x00
+SEQ13 
+SEQ04 
+SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 :\x02\x00 
+SEQ02 TextOn SPC01 h\x02\x00 
 SEQ06 SCE057_002\x00 \x84\x02\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xb4h\x00\x0c
+SEQ03 \xb4h
+SEQ13 
 SEQ05 \x03\x85\x00\x00
  
 \nカミムラ－－。@
@@ -32,12 +36,15 @@ SEQ05 \x03\x85\x00\x00
 早桃\n　「……」\
 
 \x00  
-SEQ01 \xc8\x02\x00\x0c
-SEQ04  :\x02\x00 \x02\x00\x00 h\x02\x00 
+SEQ01 \xc8\x02
+SEQ13 
+SEQ04  :\x02\x00 
+SEQ12  h\x02\x00 
 SEQ06 SCE057_003\x00 \x16\x05\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xb8h\x00\x0c
+SEQ03 \xb8h
+SEQ13 
 SEQ05 \x03\x94\x00\x00
  
 上村\n　「逃げるつもり？\p　それって間違ってるって。\pこれはさ、あん\n　　たを綺麗にする儀式なんだよ？\p　生きている価値のないあん\n　　たが、身を清めて気持ちよく死ねるようになるための儀式な\n　　んだからさあ。くすくす」@
@@ -49,12 +56,15 @@ SEQ05 \x03\x94\x00\x00
 上村\n　「そうそう。儀式儀式」\
 
 \x00  
-SEQ01 Z\x05\x00\x0c
-SEQ04  :\x02\x00 \x02\x00\x00 h\x02\x00 
+SEQ01 Z\x05
+SEQ13 
+SEQ04  :\x02\x00 
+SEQ12  h\x02\x00 
 SEQ06 SCE057_004\x00 \xe4\x07\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xbch\x00\x0c
+SEQ03 \xbch
+SEQ13 
 SEQ05 \x03\x94\x00\x00
  
 上村はスカートの中に手を差し入れ、スルスルとショーツを脱い\nだ。\pクラスメイトが見ているというのに、なんの躊躇もない。\n逆に、脱いだショーツをひらひらと振り回して、男子学生たちに\nニヤリと笑いかける余裕さえある。\pさらにはスカートも脱ぎ、下\n半身をあらわにした。@
@@ -67,12 +77,15 @@ SEQ05 \x03\x94\x00\x00
 早桃\n　「……」\
 
 \x00\x00\x00  
-SEQ01 (\x08\x00\x0c
-SEQ04  :\x02\x00 \x02\x00\x00 h\x02\x00 
+SEQ01 (\x08
+SEQ13 
+SEQ04  :\x02\x00 
+SEQ12  h\x02\x00 
 SEQ06 SCE057_005\x00 \xb2\n\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xc0h\x00\x0c
+SEQ03 \xc0h
+SEQ13 
 SEQ05 \x03a\x00\x00
  
 上村\n　「あ～ウザイ！　ウザウザ！　見てるだけでぶっ殺したくなる\n　　よ！」@
@@ -82,12 +95,15 @@ SEQ05 \x03a\x00\x00
 　上村は椅子をひとつひきずって早桃の前に配し、どっかとそこ\n　に腰を下ろした。\
 
 \x00  
-SEQ01 \xf6\n\x00\x0c
-SEQ04  :\x02\x00 \x02\x00\x00 h\x02\x00 
+SEQ01 \xf6\n
+SEQ13 
+SEQ04  :\x02\x00 
+SEQ12  h\x02\x00 
 SEQ06 SCE057_006\x00 \xb4\x0c\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xc4h\x00\x0c
+SEQ03 \xc4h
+SEQ13 
 SEQ05 \x03\xac\x00\x00
  
 上村\n　「ほら、もっと前にはいはいしてきなさいよォ……足下に……\n　　そうそう。いい子ね、ワンワン」@
@@ -101,12 +117,15 @@ SEQ05 \x03\xac\x00\x00
 　髪の毛が汚液を吸い込んで、ぺったりと頬にへばりつく。\
 
   
-SEQ01 \xf8\x0c\x00\x0c
-SEQ04  :\x02\x00 \x02\x00\x00 h\x02\x00 
+SEQ01 \xf8\x0c
+SEQ13 
+SEQ04  :\x02\x00 
+SEQ12  h\x02\x00 
 SEQ06 SCE057_007\x00 \xe2\x0f\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xc8h\x00\x0c
+SEQ03 \xc8h
+SEQ13 
 SEQ05 \x03\x8d\x00\x00
  
 どこかで見た光景だった。@
@@ -119,12 +138,15 @@ SEQ05 \x03\x8d\x00\x00
 おそらく、御堂たちによるなたねの陵辱、あのあたりから自分は\n妄想の中にいるのだ……。\
 
 \x00\x00\x00  
-SEQ01 &\x10\x00\x0c
-SEQ04  :\x02\x00 \x02\x00\x00 h\x02\x00 
+SEQ01 &\x10
+SEQ13 
+SEQ04  :\x02\x00 
+SEQ12  h\x02\x00 
 SEQ06 SCE057_008\x00 \x94\x12\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xcch\x00\x0c
+SEQ03 \xcch
+SEQ13 
 SEQ05 \x03c\x00\x00
  
 学生\n　「た、たまんねえ……俺にもかけさせてくれ」@
@@ -135,8 +157,10 @@ SEQ05 \x03c\x00\x00
 \n学生たちは我先に早桃へと殺到した。\p男子学生は勃起したペ○ス\nをむき出しにして、女子学生はちぎり捨てるようにスカートとシ\nョーツを脱ぎ捨てて……。\
 
 \x00\x00\x00  
-SEQ01 \xd8\x12\x00\x0c
-SEQ04  :\x02\x00 \x02\x00\x00 h\x02\x00 
+SEQ01 \xd8\x12
+SEQ13 
+SEQ04  :\x02\x00 
+SEQ12  h\x02\x00 
 SEQ10  :\x02\x00 
-FILE2 TextClosev\x81\x1f\xaa\x14\x00 
+SEQ12 \x03\x03\x00\x00TextClose SPC02 \xaa\x14\x00 
 ENDF

@@ -1,9 +1,10 @@
 STRF
 G\x1a\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00j\x16\x00  
-SEQ01 \x04\x01\x00\x0c
+SEQ01 \x04\x01
+SEQ13 
 SEQ04 
-SEQ08 .\\Data\\Script\\Bgm.Fobv\x81\x1f \x00\x00 
-SEQ02 \x00\x00PlayCD SPC01 J\x00\x00 
+SEQ08 .\\Data\\Script\\Bgm.Fob SPC02  \x00\x00 
+SEQ02 PlayCD SPC01 J\x00\x00 
 SEQ06 SCES03_001\x00 f\x00\x00 
 SEQ07  
 SEQ01 
@@ -20,9 +21,11 @@ SEQ05 \x03\x8b\x00\x00
 よく夢を見たの。\
 
 \x00\x00\x00  
-SEQ01 \xaa\x00\x00\x0c
-SEQ04 \x03\x07\x00\x00.\\Data\\Script\\TextFunc.Fob SPC01 \xf6\x02\x00 
-SEQ02 \x00\x00TextOn SPC01 $\x03\x00 
+SEQ01 \xaa\x00
+SEQ13 
+SEQ04 
+SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 \xf6\x02\x00 
+SEQ02 TextOn SPC01 $\x03\x00 
 SEQ06 SCES03_002\x00 @\x03\x00 
 SEQ07  
 SEQ01 
@@ -40,8 +43,10 @@ SEQ05 \x03\x89\x00\x00
 なんだかとても悲しかった。\
 
 \x00\x00\x00  
-SEQ01 \x84\x03\x00\x0c
-SEQ04  \xf6\x02\x00 \x02\x00\x00 $\x03\x00 
+SEQ01 \x84\x03
+SEQ13 
+SEQ04  \xf6\x02\x00 
+SEQ12  $\x03\x00 
 SEQ06 SCES03_003\x00 \xe2\x05\x00 
 SEQ07  
 SEQ01 
@@ -61,8 +66,10 @@ SEQ05 \x03\xde\x00\x00
 朝は公園でぼんやりして、９時４５分になったら図書館に行って、\nお昼まで本を読むの。\pそれからデパートに行って、いろんなもの\nを見て、屋上に行く\p。平日の昼間の屋上って、誰もいないんだよ。\n\pそんな、誰もいない屋上で、ドルチェとお話ししてた。\
 
 \x00  
-SEQ01 &\x06\x00\x0c
-SEQ04  \xf6\x02\x00 \x02\x00\x00 $\x03\x00 
+SEQ01 &\x06
+SEQ13 
+SEQ04  \xf6\x02\x00 
+SEQ12  $\x03\x00 
 SEQ06 SCES03_004\x00 \xd8\t\x00 
 SEQ07  
 SEQ01 
@@ -80,13 +87,16 @@ SEQ05 \x03\xa3\x00\x00
 『答はね、早桃ちゃん。\p風のなかにあるニャ』\
 
 \x00\x00\x00  
-SEQ01 \x1c\n\x00\x0c
-SEQ04  \xf6\x02\x00 \x02\x00\x00 $\x03\x00 
+SEQ01 \x1c\n
+SEQ13 
+SEQ04  \xf6\x02\x00 
+SEQ12  $\x03\x00 
 SEQ10   
-SEQ01 B\x00\x00\x0c
+SEQ01 B\x00
+SEQ13 
 SEQ04 
 SEQ08 .\\Data\\Script\\Bg.Fob SPC03 \xfc\x0c\x00 
-FILE1 BgAutoFadeIn SPC03 &\r\x00 
+SEQ12 \x03\x04\x00\x00BgAutoFadeIn SPC03 &\r\x00 
 SEQ06 SCES03_005\x00 J\r\x00 
 SEQ07  
 SEQ01 
@@ -103,11 +113,15 @@ SEQ05 \x03|\x00\x00
 でも、どれくらいなの？　って。\
 
 \x00\x00\x00  
-SEQ01 \x8e\r\x00\x0c
-SEQ04  \xf6\x02\x00 \x02\x00\x00 $\x03\x00 
+SEQ01 \x8e\r
+SEQ13 
+SEQ04  \xf6\x02\x00 
+SEQ12  $\x03\x00 
 SEQ10   
-SEQ01 \xc8\x00\x00\x0c
-SEQ04  \xfc\x0c\x00 \x02\x00\x00 &\r\x00 
+SEQ01 \xc8\x00
+SEQ13 
+SEQ04  \xfc\x0c\x00 
+SEQ12  &\r\x00 
 SEQ06 SCES03_006\x00 \xec\x0f\x00 
 SEQ07  
 SEQ01 
@@ -123,8 +137,10 @@ SEQ05 \x03j\x00\x00
 特別扱いじゃなくて、普通の、どこにでもいる女の子として扱っ\nてもらってるんだなって。\
 
 \x00  
-SEQ01 0\x10\x00\x0c
-SEQ04  \xf6\x02\x00 \x02\x00\x00 $\x03\x00 
+SEQ01 0\x10
+SEQ13 
+SEQ04  \xf6\x02\x00 
+SEQ12  $\x03\x00 
 SEQ06 SCES03_007\x00 \x12\x12\x00 
 SEQ07  
 SEQ01 
@@ -145,10 +161,12 @@ SEQ05 \x03\xe2\x00\x00
 私は道に落ちている石ころみたいなものじゃなくて、ちゃんと価\n値がある人間なんだって。\
 
 \x00\x00\x00  
-SEQ01 V\x12\x00\x0c
-SEQ04  \xf6\x02\x00 \x02\x00\x00 $\x03\x00 
+SEQ01 V\x12
+SEQ13 
+SEQ04  \xf6\x02\x00 
+SEQ12  $\x03\x00 
 SEQ10   \x00\x00 
-SEQ02 \x00\x00StopCD SPC01 $\x16\x00 
+SEQ02 StopCD SPC01 $\x16\x00 
 SEQ10  \xf6\x02\x00 
-FILE2 TextClosev\x81\x1fL\x16\x00 
+SEQ12 \x03\x03\x00\x00TextClose SPC02 L\x16\x00 
 ENDF

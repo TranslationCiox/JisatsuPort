@@ -1,18 +1,21 @@
 STRF
 \x8b\x02\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00P\x054\x01\x00\x00\x00b\x01\x00  
-SEQ01 \xc8\x00\x00\x0c
+SEQ01 \xc8\x00
+SEQ13 
 SEQ04 
 SEQ08 .\\Data\\Script\\Bg.Fob SPC03  \x00\x00 
-FILE1 BgAutoFadeIn SPC03 J\x00\x00 
+SEQ12 \x03\x04\x00\x00BgAutoFadeIn SPC03 J\x00\x00 
 SEQ10 \x03\x18\x00\x00
 CHOICE
 「お前には夏バテなんて概念は無いんだろうな」\n「髪、切ったのか？」\n「……」\n\l0,3,
 ENDCHOICE
 
 \x00\x00\x00  
-SEQ01 n\x00\x00\x0c
-SEQ04 \x03\x07\x00\x00.\\Data\\Script\\TextFunc.Fob SPC01 \xee\x00\x00 
-SEQ02 \x00\x00TextOn SPC01 \x1c\x01\x00 
+SEQ01 n\x00
+SEQ13 
+SEQ04 
+SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 \xee\x00\x00 
+SEQ02 TextOn SPC01 \x1c\x01\x00 
 SEQ10  \xee\x00\x00 
-FILE2 TextClosev\x81\x1fD\x01\x00 
+SEQ12 \x03\x03\x00\x00TextClose SPC02 D\x01\x00 
 ENDF

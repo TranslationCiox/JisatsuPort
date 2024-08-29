@@ -8,14 +8,17 @@ SEQ05 \x03\x11\x00\x00
 \n\n\n\n\n\n\n\n\n\n　　　　　　　　　　　　　『８日目』\
 
 \x00\x00\x00  
-SEQ01 J\x00\x00\x0c
-SEQ04 \x03\x07\x00\x00.\\Data\\Script\\TextFunc.Fob SPC01 \xae\x00\x00 
-SEQ02 \x00\x00TextOn SPC01 \xdc\x00\x00 
-SEQ10   
-SEQ01 \n\x01\x00\x0c
+SEQ01 J\x00
+SEQ13 
 SEQ04 
-SEQ08 .\\Data\\Script\\Bgm.Fobv\x81\x1f\x12\x01\x00 
-SEQ02 \x00\x00PlayCD SPC01 <\x01\x00 
+SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 \xae\x00\x00 
+SEQ02 TextOn SPC01 \xdc\x00\x00 
+SEQ10   
+SEQ01 \n\x01
+SEQ13 
+SEQ04 
+SEQ08 .\\Data\\Script\\Bgm.Fob SPC02 \x12\x01\x00 
+SEQ02 PlayCD SPC01 <\x01\x00 
 SEQ06 SCE217_002\x00 X\x01\x00 
 SEQ07  
 SEQ01 
@@ -32,8 +35,10 @@ SEQ05 \x03\x92\x00\x00
 なたね\n　「……」\
 
 \x00\x00\x00  
-SEQ01 \x9c\x01\x00\x0c
-SEQ04  \xae\x00\x00 \x02\x00\x00 \xdc\x00\x00 
+SEQ01 \x9c\x01
+SEQ13 
+SEQ04  \xae\x00\x00 
+SEQ12  \xdc\x00\x00 
 SEQ06 SCE217_003\x00 \x1e\x04\x00 
 SEQ07  
 SEQ01 
@@ -50,8 +55,10 @@ SEQ05 \x03\xa9\x00\x00
 拓司\n　「……？」\
 
 \x00\x00\x00  
-SEQ01 b\x04\x00\x0c
-SEQ04  \xae\x00\x00 \x02\x00\x00 \xdc\x00\x00 
+SEQ01 b\x04
+SEQ13 
+SEQ04  \xae\x00\x00 
+SEQ12  \xdc\x00\x00 
 SEQ06 SCE217_004\x00 @\x07\x00 
 SEQ07  
 SEQ01 
@@ -64,8 +71,10 @@ SEQ05 \x03W\x00\x00
 \nなたねは突如立ち上がって、早桃を指さした。\p一同は呆気にとら\nれてなたねを見つめた。\
 
 \x00  
-SEQ01 \x84\x07\x00\x0c
-SEQ04  \xae\x00\x00 \x02\x00\x00 \xdc\x00\x00 
+SEQ01 \x84\x07
+SEQ13 
+SEQ04  \xae\x00\x00 
+SEQ12  \xdc\x00\x00 
 SEQ06 SCE217_005\x00 \x1a\t\x00 
 SEQ07  
 SEQ01 
@@ -77,8 +86,10 @@ SEQ05 \x03\xe4\x00\x00
 御堂\n　「こいつ……完全にいかれてやがる」\
 
 \x00\x00\x00  
-SEQ01 ^\t\x00\x0c
-SEQ04  \xae\x00\x00 \x02\x00\x00 \xdc\x00\x00 
+SEQ01 ^\t
+SEQ13 
+SEQ04  \xae\x00\x00 
+SEQ12  \xdc\x00\x00 
 SEQ06 SCE217_006\x00 (\r\x00 
 SEQ07  
 SEQ01 
@@ -92,16 +103,20 @@ SEQ05 \x03M\x00\x00
 \n御堂が躍りかかった。\
 
 \x00  
-SEQ01 l\r\x00\x0c
-SEQ04  \xae\x00\x00 \x02\x00\x00 \xdc\x00\x00 
+SEQ01 l\r
+SEQ13 
+SEQ04  \xae\x00\x00 
+SEQ12  \xdc\x00\x00 
 SEQ10 \x03\x19\x00\x00
 CHOICE
 「やめろ！」　拓司は必至で制止した\n「……」　もはや言うべき言葉は見つからなかった\n\l0,2,
 ENDCHOICE
 
 \x00  
-SEQ01 \xda\x0e\x00\x0c
-SEQ04  \xae\x00\x00 \x02\x00\x00 \xdc\x00\x00 
+SEQ01 \xda\x0e
+SEQ13 
+SEQ04  \xae\x00\x00 
+SEQ12  \xdc\x00\x00 
 SEQ10  \xae\x00\x00 
-FILE2 TextClosev\x81\x1f\x84\x0f\x00 
+SEQ12 \x03\x03\x00\x00TextClose SPC02 \x84\x0f\x00 
 ENDF

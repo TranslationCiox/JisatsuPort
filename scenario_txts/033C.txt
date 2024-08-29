@@ -1,18 +1,21 @@
 STRF
 \x9c/\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xb6'\x00  
-SEQ01 \n\x00\x00\x0c
+SEQ01 \n\x00
+SEQ13 
 SEQ04 
 SEQ08 .\\Data\\Script\\Bg.Fob SPC03  \x00\x00 
-FILE1 BgAutoFadeIn SPC03 J\x00\x00 
+SEQ12 \x03\x04\x00\x00BgAutoFadeIn SPC03 J\x00\x00 
 SEQ10   
-SEQ01 \x08\x01\x00\x0c
+SEQ01 \x08\x01
+SEQ13 
 SEQ04 
-SEQ08 .\\Data\\Script\\Bgm.Fobv\x81\x1f\x88\x00\x00 
-SEQ02 \x00\x00PlayCD SPC01 \xb2\x00\x00 
+SEQ08 .\\Data\\Script\\Bgm.Fob SPC02 \x88\x00\x00 
+SEQ02 PlayCD SPC01 \xb2\x00\x00 
 SEQ06 SCE033_001\x00 \xce\x00\x00 
 SEQ07  
 SEQ01 
-SEQ03 0C\x00\x0c
+SEQ03 0C
+SEQ13 
 SEQ05 \x03G\x00\x00
  
 拭ったように、視界からさっと血の色が消え失せた。@
@@ -23,13 +26,16 @@ SEQ05 \x03G\x00\x00
 カンナ\n　「正解」\
 
 \x00  
-SEQ01 \x12\x01\x00\x0c
-SEQ04 \x03\x07\x00\x00.\\Data\\Script\\TextFunc.Fob SPC01 N\x02\x00 
-SEQ02 \x00\x00TextOn SPC01 |\x02\x00 
+SEQ01 \x12\x01
+SEQ13 
+SEQ04 
+SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 N\x02\x00 
+SEQ02 TextOn SPC01 |\x02\x00 
 SEQ06 SCE033_002\x00 \x98\x02\x00 
 SEQ07  
 SEQ01 
-SEQ03 4C\x00\x0c
+SEQ03 4C
+SEQ13 
 SEQ05 \x03\xd8\x00\x00
  
 \n月代カンナは両手を首元に回し、すっと、髪の毛を後ろに掻き上\nげた。\p細い首筋があらわになる。\pどこかで見たことがある光景だ\nった。@
@@ -44,12 +50,15 @@ SEQ05 \x03\xd8\x00\x00
 \n－－もしかしていまもおれは妄想の世界にいるのではないか？\
 
 \x00  
-SEQ01 \xdc\x02\x00\x0c
-SEQ04  N\x02\x00 \x02\x00\x00 |\x02\x00 
+SEQ01 \xdc\x02
+SEQ13 
+SEQ04  N\x02\x00 
+SEQ12  |\x02\x00 
 SEQ06 SCE033_003\x00 v\x06\x00 
 SEQ07  
 SEQ01 
-SEQ03 8C\x00\x0c
+SEQ03 8C
+SEQ13 
 SEQ05 \x03k\x00\x00
  
 思って拓司は足が震えるのを禁じ得なかった。@
@@ -62,18 +71,25 @@ SEQ05 \x03k\x00\x00
 拓司\n　「死の……保健室？」\
 
 \x00\x00\x00  
-SEQ01 \xba\x06\x00\x0c
-SEQ04  N\x02\x00 \x02\x00\x00 |\x02\x00 
+SEQ01 \xba\x06
+SEQ13 
+SEQ04  N\x02\x00 
+SEQ12  |\x02\x00 
 SEQ10   
-SEQ01 \x06\x01\x00\x0c
-SEQ04  \x88\x00\x00 \x02\x00\x00 \xb2\x00\x00 
+SEQ01 \x06\x01
+SEQ13 
+SEQ04  \x88\x00\x00 
+SEQ12  \xb2\x00\x00 
 SEQ10   
-SEQ01 \xc8\x00\x00\x0c
-SEQ04   \x00\x00 \x02\x00\x00 J\x00\x00 
+SEQ01 \xc8\x00
+SEQ13 
+SEQ04   \x00\x00 
+SEQ12  J\x00\x00 
 SEQ06 SCE033_004\x00 \x08\t\x00 
 SEQ07  
 SEQ01 
-SEQ03 <C\x00\x0c
+SEQ03 <C
+SEQ13 
 SEQ05 \x03\x8b\x00\x00
  
 カンナ\n　「ええ。\p旧校舎の地下にある……いえ、あった保健室の話なん\n　　だけれどね。\p１４年前、ある事件が起こって、入り口がコン\n　　クリートで固められて封印されたっていう」@
@@ -85,12 +101,15 @@ SEQ05 \x03\x8b\x00\x00
 カンナ\n　「ネットで調べた、事件に関わった人間の名前」\
 
 \x00  
-SEQ01 L\t\x00\x0c
-SEQ04  N\x02\x00 \x02\x00\x00 |\x02\x00 
+SEQ01 L\t
+SEQ13 
+SEQ04  N\x02\x00 
+SEQ12  |\x02\x00 
 SEQ06 SCE033_005\x00 \xb2\x0b\x00 
 SEQ07  
 SEQ01 
-SEQ03 @C\x00\x0c
+SEQ03 @C
+SEQ13 
 SEQ05 \x03\xb0\x00\x00
  
 拓司\n　「まさか……本当にあった話なのか？」@
@@ -101,12 +120,15 @@ SEQ05 \x03\xb0\x00\x00
 　　要するに、『名所』という響きが、自殺願望者にとって体の\n　　いい『きっかけ』になるわけね」\
 
 \x00\x00\x00  
-SEQ01 \xf6\x0b\x00\x0c
-SEQ04  N\x02\x00 \x02\x00\x00 |\x02\x00 
+SEQ01 \xf6\x0b
+SEQ13 
+SEQ04  N\x02\x00 
+SEQ12  |\x02\x00 
 SEQ06 SCE033_006\x00 \xf0\x0e\x00 
 SEQ07  
 SEQ01 
-SEQ03 DC\x00\x0c
+SEQ03 DC
+SEQ13 
 SEQ05 \x03W\x00\x00
  
 拓司\n　「中央線とか、樹海とか」@
@@ -116,12 +138,15 @@ SEQ05 \x03W\x00\x00
 拓司\n　「人魂……？」\
 
 \x00\x00\x00  
-SEQ01 4\x0f\x00\x0c
-SEQ04  N\x02\x00 \x02\x00\x00 |\x02\x00 
+SEQ01 4\x0f
+SEQ13 
+SEQ04  N\x02\x00 
+SEQ12  |\x02\x00 
 SEQ06 SCE033_007\x00 \xca\x10\x00 
 SEQ07  
 SEQ01 
-SEQ03 HC\x00\x0c
+SEQ03 HC
+SEQ13 
 SEQ05 \x03\x86\x00\x00
  
 \n拓司は思わずカンナの顔に見入った。@
@@ -130,12 +155,15 @@ SEQ05 \x03\x86\x00\x00
 しかし、それと自殺がどのように結びつく？@
 \z
 \x00\x00\x00  
-SEQ01 \x0e\x11\x00\x0c
-SEQ04  N\x02\x00 \x02\x00\x00 |\x02\x00 
+SEQ01 \x0e\x11
+SEQ13 
+SEQ04  N\x02\x00 
+SEQ12  |\x02\x00 
 SEQ06 SCE033_008\x00 `\x13\x00 
 SEQ07  
 SEQ01 
-SEQ03 LC\x00\x0c
+SEQ03 LC
+SEQ13 
 SEQ05 \x03{\x00\x00
  
 カンナ\n　「人魂の噂は、１４年前、すでに学校にあった……」@
@@ -146,12 +174,15 @@ SEQ05 \x03{\x00\x00
 拓司\n　「……」\
 
 \x00  
-SEQ01 \xa4\x13\x00\x0c
-SEQ04  N\x02\x00 \x02\x00\x00 |\x02\x00 
+SEQ01 \xa4\x13
+SEQ13 
+SEQ04  N\x02\x00 
+SEQ12  |\x02\x00 
 SEQ06 SCE033_009\x00 \xca\x15\x00 
 SEQ07  
 SEQ01 
-SEQ03 PC\x00\x0c
+SEQ03 PC
+SEQ13 
 SEQ05 \x03\x91\x00\x00
  
 カンナ\n　「彼らはみな、人魂が『最後は保健室の中に消えていった』と\n　　証言している。\pそして『人魂は綺麗で、少しも怖くなかった\n　　どちらかとういうと、見ていて落ち着く感じがした』って。@
@@ -160,12 +191,15 @@ SEQ05 \x03\x91\x00\x00
 カンナ\n　「でしょう？\p　火の塊というものは、本能的に人間に警戒心を\n　　引き起こすわ。\pそれが超自然的なものであるとしたらなおさ\n　　ら。\pにも関わらず、彼らは人魂を美しいもの……よいものと\n　　して認識している」\w\n拓司\n　「……」@
 \z
 \x00  
-SEQ01 \x0e\x16\x00\x0c
-SEQ04  N\x02\x00 \x02\x00\x00 |\x02\x00 
+SEQ01 \x0e\x16
+SEQ13 
+SEQ04  N\x02\x00 
+SEQ12  |\x02\x00 
 SEQ06 SCE033_010\x00 \x8c\x18\x00 
 SEQ07  
 SEQ01 
-SEQ03 TC\x00\x0c
+SEQ03 TC
+SEQ13 
 SEQ05 \x03k\x00\x00
  
 カンナ\n　「人魂じゃないのかもしれないわね。\pなにかの象徴……だと思\n　　う」@
@@ -179,12 +213,15 @@ SEQ05 \x03k\x00\x00
 カンナ\n　「……」\
 
 \x00  
-SEQ01 \xd0\x18\x00\x0c
-SEQ04  N\x02\x00 \x02\x00\x00 |\x02\x00 
+SEQ01 \xd0\x18
+SEQ13 
+SEQ04  N\x02\x00 
+SEQ12  |\x02\x00 
 SEQ06 SCE033_011\x00 \xb6\x1a\x00 
 SEQ07  
 SEQ01 
-SEQ03 XC\x00\x0c
+SEQ03 XC
+SEQ13 
 SEQ05 \x03\xbc\x00\x00
  
 　月代カンナはポケットから煙草をとりだして、それを口にくわ\n　えた。@
@@ -196,12 +233,15 @@ SEQ05 \x03\xbc\x00\x00
 　　なのに、どうして朝、おれに声をかけた？」\
 
 \x00  
-SEQ01 \xfa\x1a\x00\x0c
-SEQ04  N\x02\x00 \x02\x00\x00 |\x02\x00 
+SEQ01 \xfa\x1a
+SEQ13 
+SEQ04  N\x02\x00 
+SEQ12  |\x02\x00 
 SEQ06 SCE033_012\x00 $\x1e\x00 
 SEQ07  
 SEQ01 
-SEQ03 \\C\x00\x0c
+SEQ03 \\C
+SEQ13 
 SEQ05 \x03\x8f\x00\x00
  
 カンナ\n　「かけたかしら？」@
@@ -214,12 +254,15 @@ SEQ05 \x03\x8f\x00\x00
 　　私たちの夢の世界でしか、ね。\pなのに、いま、私たちは現実\n　　の世界でセックスをした。\pそれって、夢の世界の版図が広が\n　　ったってことじゃないかしら？\p　壁の崩壊。\p性器を介した世\n　　界の侵略行為。\pそうはいえない？」\
 
 \x00\x00\x00  
-SEQ01 h\x1e\x00\x0c
-SEQ04  N\x02\x00 \x02\x00\x00 |\x02\x00 
+SEQ01 h\x1e
+SEQ13 
+SEQ04  N\x02\x00 
+SEQ12  |\x02\x00 
 SEQ06 SCE033_013\x00 \xde \x00 
 SEQ07  
 SEQ01 
-SEQ03 `C\x00\x0c
+SEQ03 `C
+SEQ13 
 SEQ05 \x03|\x00\x00
  
 拓司\n　「……くだらない」@
@@ -230,12 +273,15 @@ SEQ05 \x03|\x00\x00
 /*▲BGM　停止　*/\a4,-1,0,0,\nカンナ\n　「……あなた、もしかして裏切ろうとしていない？」\
 
 \x00\x00\x00  
-SEQ01 "!\x00\x0c
-SEQ04  N\x02\x00 \x02\x00\x00 |\x02\x00 
+SEQ01 "!
+SEQ13 
+SEQ04  N\x02\x00 
+SEQ12  |\x02\x00 
 SEQ06 SCE033_014\x00 L#\x00 
 SEQ07  
 SEQ01 
-SEQ03 dC\x00\x0c
+SEQ03 dC
+SEQ13 
 SEQ05 \x03-\x00\x00
  
 拓司\n　「裏切る？」@
@@ -247,12 +293,15 @@ SEQ05 \x03-\x00\x00
 拓司\n　「……」\
 
 \x00\x00\x00  
-SEQ01 \x90#\x00\x0c
-SEQ04  N\x02\x00 \x02\x00\x00 |\x02\x00 
+SEQ01 \x90#
+SEQ13 
+SEQ04  N\x02\x00 
+SEQ12  |\x02\x00 
 SEQ06 SCE033_015\x00 ~$\x00 
 SEQ07  
 SEQ01 
-SEQ03 hC\x00\x0c
+SEQ03 hC
+SEQ13 
 SEQ05 \x03k\x00\x00
  
 真意を測ろうと、拓司はカンナの表情を探った。\p一瞬、そこには\n何かが宿っているようにも見えたが、結局、なにも見いだすこと\nはできなかった。\pカンナの顔にはいつもの、深い井戸を思わせる\n虚無がこびりついているだけだった。@
@@ -261,17 +310,22 @@ SEQ05 \x03k\x00\x00
 バタン、と鉄の扉が閉まる音が背後で響いた。\
 
 \x00  
-SEQ01 \xc2$\x00\x0c
-SEQ04  N\x02\x00 \x02\x00\x00 |\x02\x00 
+SEQ01 \xc2$
+SEQ13 
+SEQ04  N\x02\x00 
+SEQ12  |\x02\x00 
 SEQ10 \x03$\x00\x00
 CHOICE
 拓司は紅葉はどうしているだろうかと考えた\n拓司は今朝の早桃の様子が気になった\n拓司はそのままぼんやりと屋上から地上を眺めていた\n\l0,3,
 ENDCHOICE
 
 \x00  
-SEQ01 \xa8&\x00\x0c
-SEQ04  N\x02\x00 \x02\x00\x00 |\x02\x00 
+SEQ01 \xa8&
+SEQ13 
+SEQ04  N\x02\x00 
+SEQ12  |\x02\x00 
 SEQ10  N\x02\x00 
-FILE2 TextClosev\x81\x1f~'\x00 
-SEQ10  N\x02\x00 \x02\x00\x00 ~'\x00 
+SEQ12 \x03\x03\x00\x00TextClose SPC02 ~'\x00 
+SEQ10  N\x02\x00 
+SEQ12  ~'\x00 
 ENDF

@@ -4,17 +4,21 @@ SEQ07
 SEQ01 
 SEQ03  H\x01\x0c
 SEQ05   
-SEQ01 \xc9\x00\x00\x0c
+SEQ01 \xc9\x00
+SEQ13 
 SEQ04 
 SEQ08 .\\Data\\Script\\Bg.Fob SPC03 d\x00\x00 
-FILE1 BgAutoFadeIn SPC03 \x8e\x00\x00 
+SEQ12 \x03\x04\x00\x00BgAutoFadeIn SPC03 \x8e\x00\x00 
 SEQ10   
-SEQ01 \x02\x00\x00\x0c
-SEQ04   \x04\x00\x00\r\x00\x00 \x06\x00\x00\x0c
-SEQ04   \x08\x00\x00\r\x00\x00 \x01\x00\x00\x0c
+SEQ01 
+SEQ12 \x0c
+SEQ04   \x04\x00\x00\r\x00\x00 \x06\x00
+SEQ13 
+SEQ04   \x08\x00\x00\r\x00\x00 \x01\x00
+SEQ13 
 SEQ04 
-SEQ08 .\\Data\\Script\\Bgm.Fobv\x81\x1f\x00\x01\x00 
-SEQ02 \x00\x00SePlay SPC01 *\x01\x00 
+SEQ08 .\\Data\\Script\\Bgm.Fob SPC02 \x00\x01\x00 
+SEQ02 SePlay SPC01 *\x01\x00 
 SEQ10 \x03v\x00\x00
  
 拓司は、錆びたシャッターをこじあけるように、目を開く。@
@@ -30,9 +34,11 @@ SEQ10 \x03v\x00\x00
 　　食糧がどうとか、鍵がどうとか……雲居さんという名前も\n　　いっていたね」\
 
 \x00\x00\x00  
-SEQ01 F\x01\x00\x0c
-SEQ04 \x03\x07\x00\x00.\\Data\\Script\\TextFunc.Fob SPC01 >\x03\x00 
-SEQ02 \x00\x00TextOn SPC01 l\x03\x00 
+SEQ01 F\x01
+SEQ13 
+SEQ04 
+SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 >\x03\x00 
+SEQ02 TextOn SPC01 l\x03\x00 
 SEQ06 SCE200_002\x00 \x88\x03\x00 
 SEQ07  
 SEQ01 
@@ -48,8 +54,10 @@ SEQ05 \x03T\x00\x00
 \n腹の中にたまっていたストレスに、バチバチと怒りが放電し、大\n爆発した。\
 
 \x00  
-SEQ01 \xcc\x03\x00\x0c
-SEQ04  >\x03\x00 \x02\x00\x00 l\x03\x00 
+SEQ01 \xcc\x03
+SEQ13 
+SEQ04  >\x03\x00 
+SEQ12  l\x03\x00 
 SEQ06 SCE200_003\x00 V\x05\x00 
 SEQ07  
 SEQ01 
@@ -62,8 +70,10 @@ SEQ05 \x03\xb0\x00\x00
 　　どれが本当の世界なんだ？！」\
 
 \x00\x00\x00  
-SEQ01 \x9a\x05\x00\x0c
-SEQ04  >\x03\x00 \x02\x00\x00 l\x03\x00 
+SEQ01 \x9a\x05
+SEQ13 
+SEQ04  >\x03\x00 
+SEQ12  l\x03\x00 
 SEQ06 SCE200_004\x00 \x94\x08\x00 
 SEQ07  
 SEQ01 
@@ -79,8 +89,10 @@ SEQ05 \x03\xcb\x00\x00
 　悲惨なのは、そんなふうな神経症的不安のなかにあっても、\n『神経症的不安のなかにある自分』を客観的に観察している自\n分の意識……視点が……別のどこかにあるという事実である……。\n\
 
 \x00  
-SEQ01 \xd8\x08\x00\x0c
-SEQ04  >\x03\x00 \x02\x00\x00 l\x03\x00 
+SEQ01 \xd8\x08
+SEQ13 
+SEQ04  >\x03\x00 
+SEQ12  l\x03\x00 
 SEQ06 SCE200_005\x00 >\x0c\x00 
 SEQ07  
 SEQ01 
@@ -94,8 +106,10 @@ SEQ05 \x03\xa3\x00\x00
 拓司\n　「……」\
 
 \x00  
-SEQ01 \x82\x0c\x00\x0c
-SEQ04  >\x03\x00 \x02\x00\x00 l\x03\x00 
+SEQ01 \x82\x0c
+SEQ13 
+SEQ04  >\x03\x00 
+SEQ12  l\x03\x00 
 SEQ06 SCE200_006\x00 H\x0f\x00 
 SEQ07  
 SEQ01 
@@ -106,8 +120,10 @@ SEQ05 \x032\x00\x00
 拓司\n　「……」\
 
 \x00\x00\x00  
-SEQ01 \x8c\x0f\x00\x0c
-SEQ04  >\x03\x00 \x02\x00\x00 l\x03\x00 
+SEQ01 \x8c\x0f
+SEQ13 
+SEQ04  >\x03\x00 
+SEQ12  l\x03\x00 
 SEQ06 SCE200_007\x00 \x8e\x10\x00 
 SEQ07  
 SEQ01 
@@ -122,8 +138,10 @@ SEQ05 \x03\xe8\x00\x00
 拓司\n　「……」\
 
 \x00\x00\x00  
-SEQ01 \xd2\x10\x00\x0c
-SEQ04  >\x03\x00 \x02\x00\x00 l\x03\x00 
+SEQ01 \xd2\x10
+SEQ13 
+SEQ04  >\x03\x00 
+SEQ12  l\x03\x00 
 SEQ06 SCE200_008\x00 \xac\x14\x00 
 SEQ07  
 SEQ01 
@@ -138,8 +156,10 @@ SEQ05 \x03\x95\x00\x00
 　　それだけの話だよ」\
 
 \x00  
-SEQ01 \xf0\x14\x00\x0c
-SEQ04  >\x03\x00 \x02\x00\x00 l\x03\x00 
+SEQ01 \xf0\x14
+SEQ13 
+SEQ04  >\x03\x00 
+SEQ12  l\x03\x00 
 SEQ06 SCE200_009\x00 ~\x17\x00 
 SEQ07  
 SEQ01 
@@ -157,8 +177,10 @@ SEQ05 \x03\x92\x00\x00
 眠って、二度と目覚めなければいいと思った。\p夢も見ずに完全に\n眠っているあいだだけ、自分が自分以外のものではない、完全な\n存在でいられるような気がした。\
 
 \x00  
-SEQ01 \xc2\x17\x00\x0c
-SEQ04  >\x03\x00 \x02\x00\x00 l\x03\x00 
+SEQ01 \xc2\x17
+SEQ13 
+SEQ04  >\x03\x00 
+SEQ12  l\x03\x00 
 SEQ06 SCE200_010\x00 D\x1a\x00 
 SEQ07  
 SEQ01 
@@ -171,8 +193,10 @@ SEQ05 \x03\x97\x00\x00
 拓司\n　「でも、この世界は……遠いような気がする。\p馴染みがないよ\n　　うな……なにも知らない世界だ。\p『おれの世界』のことなら\n　　なんでも知ってるんだ……」\
 
 \x00\x00\x00  
-SEQ01 \x88\x1a\x00\x0c
-SEQ04  >\x03\x00 \x02\x00\x00 l\x03\x00 
+SEQ01 \x88\x1a
+SEQ13 
+SEQ04  >\x03\x00 
+SEQ12  l\x03\x00 
 SEQ06 SCE200_011\x00 \x1e\x1d\x00 
 SEQ07  
 SEQ01 
@@ -184,8 +208,10 @@ SEQ05 \x039\x00\x00
 拓司\n　「……」\
 
 \x00  
-SEQ01 b\x1d\x00\x0c
-SEQ04  >\x03\x00 \x02\x00\x00 l\x03\x00 
+SEQ01 b\x1d
+SEQ13 
+SEQ04  >\x03\x00 
+SEQ12  l\x03\x00 
 SEQ06 SCE200_012\x00 \x80\x1e\x00 
 SEQ07  
 SEQ01 
@@ -202,15 +228,20 @@ SEQ05 \x030\x00\x00
 そのとき、突如、何者かが拓司の肩を掴んだ。\
 
 \x00\x00\x00  
-SEQ01 \xc4\x1e\x00\x0c
-SEQ04  >\x03\x00 \x02\x00\x00 l\x03\x00 
+SEQ01 \xc4\x1e
+SEQ13 
+SEQ04  >\x03\x00 
+SEQ12  l\x03\x00 
 SEQ10   
-SEQ01 \x02\x00\x00\x0c
+SEQ01 
+SEQ12 \x0c
 SEQ04  \x00\x01\x00 
-SEQ02 \x00\x00SeStop SPC01 \xe4\x1f\x00 
+SEQ02 SeStop SPC01 \xe4\x1f\x00 
 SEQ10   
-SEQ01 \xc8\x00\x00\x0c
-SEQ04  d\x00\x00 \x02\x00\x00 \x8e\x00\x00 
+SEQ01 \xc8\x00
+SEQ13 
+SEQ04  d\x00\x00 
+SEQ12  \x8e\x00\x00 
 SEQ10  >\x03\x00 
-FILE2 TextClosev\x81\x1f@ \x00 
+SEQ12 \x03\x03\x00\x00TextClose SPC02 @ \x00 
 ENDF

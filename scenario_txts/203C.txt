@@ -1,9 +1,10 @@
 STRF
 f\x03\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00p\x044\x01\x00\x00\x00\xd6\x02\x00  
-SEQ01 \xc9\x00\x00\x0c
+SEQ01 \xc9\x00
+SEQ13 
 SEQ04 
 SEQ08 .\\Data\\Script\\Bg.Fob SPC03  \x00\x00 
-FILE1 BgAutoFadeIn SPC03 J\x00\x00 
+SEQ12 \x03\x04\x00\x00BgAutoFadeIn SPC03 J\x00\x00 
 SEQ06 SCE203_001\x00 n\x00\x00 
 SEQ07  
 SEQ01 
@@ -17,9 +18,11 @@ SEQ05 \x03d\x00\x00
 　　そういうふうに信じ込ませようとして、そしてそれは成功し\n　　つつある……いいわね？」\
 
 \x00\x00\x00  
-SEQ01 \xb2\x00\x00\x0c
-SEQ04 \x03\x07\x00\x00.\\Data\\Script\\TextFunc.Fob SPC01 b\x02\x00 
-SEQ02 \x00\x00TextOn SPC01 \x90\x02\x00 
+SEQ01 \xb2\x00
+SEQ13 
+SEQ04 
+SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 b\x02\x00 
+SEQ02 TextOn SPC01 \x90\x02\x00 
 SEQ10  b\x02\x00 
-FILE2 TextClosev\x81\x1f\xb8\x02\x00 
+SEQ12 \x03\x03\x00\x00TextClose SPC02 \xb8\x02\x00 
 ENDF

@@ -1,18 +1,21 @@
 STRF
 e+\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xf4$\x00  
-SEQ01 \x05\x01\x00\x0c
+SEQ01 \x05\x01
+SEQ13 
 SEQ04 
-SEQ08 .\\Data\\Script\\Bgm.Fobv\x81\x1f \x00\x00 
-SEQ02 \x00\x00PlayCD SPC01 J\x00\x00 
+SEQ08 .\\Data\\Script\\Bgm.Fob SPC02  \x00\x00 
+SEQ02 PlayCD SPC01 J\x00\x00 
 SEQ10   
-SEQ01 Q\x00\x00\x0c
+SEQ01 Q\x00
+SEQ13 
 SEQ04 
 SEQ08 .\\Data\\Script\\Bg.Fob SPC03 \x80\x00\x00 
-FILE1 BgAutoFadeIn SPC03 \xaa\x00\x00 
+SEQ12 \x03\x04\x00\x00BgAutoFadeIn SPC03 \xaa\x00\x00 
 SEQ06 SCE032_001\x00 \xce\x00\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xa0A\x00\x0c
+SEQ03 \xa0A
+SEQ13 
 SEQ05 \x03\xc8\x00\x00
  
 組み伏したカンナの身体は、どこか冷たかった。@
@@ -30,13 +33,16 @@ SEQ05 \x03\xc8\x00\x00
 それをつまみ上げるたびに、ひく、ひくと、ペ○スを包む肉が収縮\nする。\
 
 \x00\x00\x00  
-SEQ01 \x12\x01\x00\x0c
-SEQ04 \x03\x07\x00\x00.\\Data\\Script\\TextFunc.Fob SPC01 R\x04\x00 
-SEQ02 \x00\x00TextOn SPC01 \x80\x04\x00 
+SEQ01 \x12\x01
+SEQ13 
+SEQ04 
+SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 R\x04\x00 
+SEQ02 TextOn SPC01 \x80\x04\x00 
 SEQ06 SCE032_002\x00 \x9c\x04\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xa4A\x00\x0c
+SEQ03 \xa4A
+SEQ13 
 SEQ05 \x03\x88\x00\x00
  
 そのどれもが、『生きている』肉体の反応だ。@
@@ -50,12 +56,15 @@ SEQ05 \x03\x88\x00\x00
 まるで実験動物を観察するように、拓司の顔をのぞき込んでいる。\n\p恥ずかしさとも怒りともつかぬ激情で、頭にカッと血が上る。\
 
 \x00\x00\x00  
-SEQ01 \xe0\x04\x00\x0c
-SEQ04  R\x04\x00 \x02\x00\x00 \x80\x04\x00 
+SEQ01 \xe0\x04
+SEQ13 
+SEQ04  R\x04\x00 
+SEQ12  \x80\x04\x00 
 SEQ06 SCE032_003\x00 :\x07\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xa8A\x00\x0c
+SEQ03 \xa8A
+SEQ13 
 SEQ05 \x03w\x00\x00
  
 拓司\n　「……こんなに濡れて締め付けておいて……気取るな……」@
@@ -66,12 +75,15 @@ SEQ05 \x03w\x00\x00
 拓司\n　「うるさい、黙れッ！」\
 
 \x00\x00\x00  
-SEQ01 ~\x07\x00\x0c
-SEQ04  R\x04\x00 \x02\x00\x00 \x80\x04\x00 
+SEQ01 ~\x07
+SEQ13 
+SEQ04  R\x04\x00 
+SEQ12  \x80\x04\x00 
 SEQ06 SCE032_004\x00 \x94\t\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xacA\x00\x0c
+SEQ03 \xacA
+SEQ13 
 SEQ05 \x03z\x00\x00
  
 叫んで拓司は、カンナの手首を覆っている包帯を引きちぎった。@
@@ -84,12 +96,15 @@ SEQ05 \x03z\x00\x00
 拓司\n　「……ちっ」\
 
 \x00  
-SEQ01 \xd8\t\x00\x0c
-SEQ04  R\x04\x00 \x02\x00\x00 \x80\x04\x00 
+SEQ01 \xd8\t
+SEQ13 
+SEQ04  R\x04\x00 
+SEQ12  \x80\x04\x00 
 SEQ06 SCE032_005\x00 \xfa\x0b\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xb0A\x00\x0c
+SEQ03 \xb0A
+SEQ13 
 SEQ05 \x03\xad\x00\x00
  
 カンナの頭の横に、スカートのポケットに入っていた小物類がまと\nめて置かれている。\pその中から拓司は、パスケースを選んで取り上\nげた。\pぱらりと開くと学生証を挟み込む透明なビニールの部分に、\nそれが入っている。@
@@ -101,12 +116,15 @@ SEQ05 \x03\xad\x00\x00
 いままでまったく感じられなかった、生々しいいきものの脈動が、\nある……。\
 
 \x00\x00\x00  
-SEQ01 >\x0c\x00\x0c
-SEQ04  R\x04\x00 \x02\x00\x00 \x80\x04\x00 
+SEQ01 >\x0c
+SEQ13 
+SEQ04  R\x04\x00 
+SEQ12  \x80\x04\x00 
 SEQ06 SCE032_006\x00 ,\x0f\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xb4A\x00\x0c
+SEQ03 \xb4A
+SEQ13 
 SEQ05 \x03\x89\x00\x00
  
 カンナ\n　「……はあ……はあ……」@
@@ -121,12 +139,15 @@ SEQ05 \x03\x89\x00\x00
 先ほどまでとなんら変わることのないその運動に、果たしてカンナ\nは、今度は身をよじらせて反応した。\
 
 \x00\x00\x00  
-SEQ01 p\x0f\x00\x0c
-SEQ04  R\x04\x00 \x02\x00\x00 \x80\x04\x00 
+SEQ01 p\x0f
+SEQ13 
+SEQ04  R\x04\x00 
+SEQ12  \x80\x04\x00 
 SEQ06 SCE032_007\x00 \xce\x11\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xb8A\x00\x0c
+SEQ03 \xb8A
+SEQ13 
 SEQ05 \x03\x9a\x00\x00
  
 カンナ\n　「あいっ……い、いじわるしな……いで……ひっ……早く眼を…\n　　…眼を潰して……！」@
@@ -139,12 +160,15 @@ SEQ05 \x03\x9a\x00\x00
 カンナが自ら視覚を封じたのを確認してから、拓司はカンナの右\n手首を捧げ持った。\pそこに剃刀の刃をぴたりとあてがう。\
 
 \x00\x00\x00  
-SEQ01 \x12\x12\x00\x0c
-SEQ04  R\x04\x00 \x02\x00\x00 \x80\x04\x00 
+SEQ01 \x12\x12
+SEQ13 
+SEQ04  R\x04\x00 
+SEQ12  \x80\x04\x00 
 SEQ06 SCE032_008\x00 \xb4\x14\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xbcA\x00\x0c
+SEQ03 \xbcA
+SEQ13 
 SEQ05 \x03\x88\x00\x00
  
 拓司\n　「……どうだ？　感じるか？」@
@@ -160,12 +184,15 @@ SEQ05 \x03\x88\x00\x00
 自殺ゲーム。\
 
 \x00\x00\x00  
-SEQ01 \xf8\x14\x00\x0c
-SEQ04  R\x04\x00 \x02\x00\x00 \x80\x04\x00 
+SEQ01 \xf8\x14
+SEQ13 
+SEQ04  R\x04\x00 
+SEQ12  \x80\x04\x00 
 SEQ06 SCE032_009\x00 R\x17\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xc0A\x00\x0c
+SEQ03 \xc0A
+SEQ13 
 SEQ05 \x03\xa6\x00\x00
  
 \nだくだくと血が流れ出した。@
@@ -183,12 +210,15 @@ SEQ05 \x03\xa6\x00\x00
 　　これはまずいかもしれないぜ？」\
 
 \x00  
-SEQ01 \x96\x17\x00\x0c
-SEQ04  R\x04\x00 \x02\x00\x00 \x80\x04\x00 
+SEQ01 \x96\x17
+SEQ13 
+SEQ04  R\x04\x00 
+SEQ12  \x80\x04\x00 
 SEQ06 SCE032_010\x00 h\x1a\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xc4A\x00\x0c
+SEQ03 \xc4A
+SEQ13 
 SEQ05 \x03\x95\x00\x00
  
 大げさにいいながら拓司は改めてカンナの両足を脇に抱え、一気\nにペ○スを奥深くまで突き入れた。@
@@ -201,12 +231,15 @@ SEQ05 \x03\x95\x00\x00
 カンナ\n　「すごい……すごく出ていく……きれいに……」\
 
 \x00  
-SEQ01 \xac\x1a\x00\x0c
-SEQ04  R\x04\x00 \x02\x00\x00 \x80\x04\x00 
+SEQ01 \xac\x1a
+SEQ13 
+SEQ04  R\x04\x00 
+SEQ12  \x80\x04\x00 
 SEQ06 SCE032_011\x00 :\x1d\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xc8A\x00\x0c
+SEQ03 \xc8A
+SEQ13 
 SEQ05 \x03\x90\x00\x00
  
 拓司のなかで、なにかが唐突に爆発した。@
@@ -223,12 +256,15 @@ SEQ05 \x03\x90\x00\x00
 カンナに気づかれないようそれに手を伸ばし、そして……\
 
 \x00  
-SEQ01 ~\x1d\x00\x0c
-SEQ04  R\x04\x00 \x02\x00\x00 \x80\x04\x00 
+SEQ01 ~\x1d
+SEQ13 
+SEQ04  R\x04\x00 
+SEQ12  \x80\x04\x00 
 SEQ06 SCE032_012\x00 \xf8\x1f\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xccA\x00\x0c
+SEQ03 \xccA
+SEQ13 
 SEQ05 \x03\xab\x00\x00
  
 \n/*■CG73　表示（ノンエフェクト）*//*■HCG11　表示（ノンエフェクト）*/\a7,-1,-1,0,\a1,1,202,82,\a6,0,0,0,喉に当てる@
@@ -244,29 +280,36 @@ SEQ05 \x03\xab\x00\x00
 死ぬぞ！\
 
 \x00\x00\x00  
-SEQ01 < \x00\x0c
-SEQ04  R\x04\x00 \x02\x00\x00 \x80\x04\x00 
+SEQ01 < 
+SEQ13 
+SEQ04  R\x04\x00 
+SEQ12  \x80\x04\x00 
 SEQ06 SCE032_013\x00 "#\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xd0A\x00\x0c
+SEQ03 \xd0A
+SEQ13 
 SEQ05 \x03\x17\x00\x00
  
 \nザザザ……ザザッ……\pザアザザザ……@
 ザアアアアア……ザアザアアアアアアア……\
 
 \x00  
-SEQ01 f#\x00\x0c
-SEQ04  R\x04\x00 \x02\x00\x00 \x80\x04\x00 
+SEQ01 f#
+SEQ13 
+SEQ04  R\x04\x00 
+SEQ12  \x80\x04\x00 
 SEQ10  R\x04\x00 
-FILE1 TextWindowOffv\x81\x1f\x08$\x00 
+SEQ12 \x03\x04\x00\x00TextWindowOff SPC02 \x08$\x00 
 SEQ10   \x00\x00 
-SEQ02 \x00\x00StopCD SPC01 8$\x00 
+SEQ02 StopCD SPC01 8$\x00 
 SEQ10   
-SEQ01 \xc8\x00\x00\x0c
+SEQ01 \xc8\x00
+SEQ13 
 SEQ04  \x80\x00\x00 
-SEQ02 \x00\x00BgOn SPC03 z$\x00 
-SEQ10  R\x04\x00 \x02\x00\x00\x03\x05\x00\x00TextWindowOnDirect SPC01 \xa2$\x00 
+SEQ02 BgOn SPC03 z$\x00 
 SEQ10  R\x04\x00 
-FILE2 TextClosev\x81\x1f\xd6$\x00 
+SEQ12 \x03\x05\x00\x00TextWindowOnDirect SPC01 \xa2$\x00 
+SEQ10  R\x04\x00 
+SEQ12 \x03\x03\x00\x00TextClose SPC02 \xd6$\x00 
 ENDF

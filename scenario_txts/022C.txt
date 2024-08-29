@@ -1,11 +1,12 @@
 STRF
 .\\\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00FM\x00
-SEQ08 .\\Data\\Script\\Bgm.Fobv\x81\x1f\x06\x00\x00 
-SEQ02 \x00\x00StopCD SPC01 0\x00\x00 
+SEQ08 .\\Data\\Script\\Bgm.Fob SPC02 \x06\x00\x00 
+SEQ02 StopCD SPC01 0\x00\x00 
 SEQ06 SCE022_001\x00 L\x00\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x002\x00\x0c
+SEQ03 \x002
+SEQ13 
 SEQ05 \x03\x96\x00\x00
  
 拓司は目を閉じて、妄想の糸でひとつの世界を編み始めた。@
@@ -23,22 +24,27 @@ SEQ05 \x03\x96\x00\x00
 両親が留守なのだから、本当はベッドで堂々と繋がることができ\nるのだ。しかし、敢えてこんな場所を選んだ。それは……\
 
 \x00\x00\x00  
-SEQ01 \x90\x00\x00\x0c
-SEQ04 \x03\x07\x00\x00.\\Data\\Script\\TextFunc.Fob SPC01 \x08\x03\x00 
-SEQ02 \x00\x00TextOn SPC01 6\x03\x00 
+SEQ01 \x90\x00
+SEQ13 
+SEQ04 
+SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 \x08\x03\x00 
+SEQ02 TextOn SPC01 6\x03\x00 
 SEQ10   
-SEQ01 \x05\x01\x00\x0c
+SEQ01 \x05\x01
+SEQ13 
 SEQ04  \x06\x00\x00 
-SEQ02 \x00\x00PlayCD SPC01 x\x03\x00 
+SEQ02 PlayCD SPC01 x\x03\x00 
 SEQ10   
-SEQ01 M\x00\x00\x0c
+SEQ01 M\x00
+SEQ13 
 SEQ04 
 SEQ08 .\\Data\\Script\\Bg.Fob SPC03 \xae\x03\x00 
-FILE1 BgAutoFadeIn SPC03 \xd8\x03\x00 
+SEQ12 \x03\x04\x00\x00BgAutoFadeIn SPC03 \xd8\x03\x00 
 SEQ06 SCE022_002\x00 \xfc\x03\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x042\x00\x0c
+SEQ03 \x042
+SEQ13 
 SEQ05 \x03Q\x00\x00
  
 早桃\n　「うふふ、おにいちゃん、エッチだよね。こういう場所のほう\n　　が萌えるんだ？」@
@@ -49,15 +55,20 @@ SEQ05 \x03Q\x00\x00
 拓司の背後に、別の男が立っているのに気づいたのだ。\
 
 \x00  
-SEQ01 @\x04\x00\x0c
-SEQ04  \x08\x03\x00 \x02\x00\x00 6\x03\x00 
+SEQ01 @\x04
+SEQ13 
+SEQ04  \x08\x03\x00 
+SEQ12  6\x03\x00 
 SEQ10   
-SEQ01 \x05\x01\x00\x0c
-SEQ04  \x06\x00\x00 \x02\x00\x00 x\x03\x00 
+SEQ01 \x05\x01
+SEQ13 
+SEQ04  \x06\x00\x00 
+SEQ12  x\x03\x00 
 SEQ06 SCE022_003\x00 \xf2\x05\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x082\x00\x0c
+SEQ03 \x082
+SEQ13 
 SEQ05 \x03b\x00\x00
  
 早桃\n　「！」@
@@ -69,12 +80,15 @@ SEQ05 \x03b\x00\x00
 便座に腰掛けたまま、早桃が身を固くする。\
 
 \x00\x00\x00  
-SEQ01 6\x06\x00\x0c
-SEQ04  \x08\x03\x00 \x02\x00\x00 6\x03\x00 
+SEQ01 6\x06
+SEQ13 
+SEQ04  \x08\x03\x00 
+SEQ12  6\x03\x00 
 SEQ06 SCE022_004\x00 \xf8\x07\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x0c2\x00\x0c
+SEQ03 \x0c2
+SEQ13 
 SEQ05 \x03`\x00\x00
  
 平野\n　「へへ……こんにちわ～っす、早桃ちゃん♪」@
@@ -88,12 +102,15 @@ SEQ05 \x03`\x00\x00
 　　こづかいがいるんだ」\
 
 \x00  
-SEQ01 <\x08\x00\x0c
-SEQ04  \x08\x03\x00 \x02\x00\x00 6\x03\x00 
+SEQ01 <\x08
+SEQ13 
+SEQ04  \x08\x03\x00 
+SEQ12  6\x03\x00 
 SEQ06 SCE022_005\x00 \xf6\t\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x102\x00\x0c
+SEQ03 \x102
+SEQ13 
 SEQ05 \x03d\x00\x00
  
 早桃\n　「……そんな！」@
@@ -106,12 +123,15 @@ SEQ05 \x03d\x00\x00
 早桃\n　「おにいちゃん……\p早桃のこと愛してるっていってくれたの\n　　に……\p両思いだって……」\
 
 \x00  
-SEQ01 :\n\x00\x0c
-SEQ04  \x08\x03\x00 \x02\x00\x00 6\x03\x00 
+SEQ01 :\n
+SEQ13 
+SEQ04  \x08\x03\x00 
+SEQ12  6\x03\x00 
 SEQ06 SCE022_006\x00 \x04\x0c\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x142\x00\x0c
+SEQ03 \x142
+SEQ13 
 SEQ05 \x037\x00\x00
  
 早桃の大きな目が潤んでいる。@
@@ -121,12 +141,15 @@ SEQ05 \x037\x00\x00
 その傷の深さを目の当たりにすることによって、自らをも傷つけ\nるような言葉を。\
 
 \x00\x00\x00  
-SEQ01 H\x0c\x00\x0c
-SEQ04  \x08\x03\x00 \x02\x00\x00 6\x03\x00 
+SEQ01 H\x0c
+SEQ13 
+SEQ04  \x08\x03\x00 
+SEQ12  6\x03\x00 
 SEQ06 SCE022_007\x00 ^\r\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x182\x00\x0c
+SEQ03 \x182
+SEQ13 
 SEQ05 \x03\xb0\x00\x00
  
 拓司\n　「両思い？@
@@ -144,12 +167,15 @@ SEQ05 \x03\xb0\x00\x00
 早桃\n　「違うよ！　早桃は本当におにいちゃんのこと……」\
 
 \x00  
-SEQ01 \xa2\r\x00\x0c
-SEQ04  \x08\x03\x00 \x02\x00\x00 6\x03\x00 
+SEQ01 \xa2\r
+SEQ13 
+SEQ04  \x08\x03\x00 
+SEQ12  6\x03\x00 
 SEQ06 SCE022_008\x00 \x9c\x10\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x1c2\x00\x0c
+SEQ03 \x1c2
+SEQ13 
 SEQ05 \x03_\x00\x00
  
 拓司\n　「じゃあここで証明してくれよ。@
@@ -162,12 +188,15 @@ SEQ05 \x03_\x00\x00
 \nうつむいて震える早桃を見下ろして、平野は荒い息でいった。\
 
 \x00  
-SEQ01 \xe0\x10\x00\x0c
-SEQ04  \x08\x03\x00 \x02\x00\x00 6\x03\x00 
+SEQ01 \xe0\x10
+SEQ13 
+SEQ04  \x08\x03\x00 
+SEQ12  6\x03\x00 
 SEQ06 SCE022_009\x00 \x96\x12\x00 
 SEQ07  
 SEQ01 
-SEQ03  2\x00\x0c
+SEQ03  2
+SEQ13 
 SEQ05 \x03R\x00\x00
  
 平野\n　「早桃ちゃ～ん？@
@@ -180,16 +209,20 @@ SEQ05 \x03R\x00\x00
 拓司はそれを無視して、平野にいった。\
 
 \x00  
-SEQ01 \xda\x12\x00\x0c
-SEQ04  \x08\x03\x00 \x02\x00\x00 6\x03\x00 
+SEQ01 \xda\x12
+SEQ13 
+SEQ04  \x08\x03\x00 
+SEQ12  6\x03\x00 
 SEQ10   
-SEQ01 \xc8\x00\x00\x0c
+SEQ01 \xc8\x00
+SEQ13 
 SEQ04  \xae\x03\x00 
-SEQ02 \x00\x00BgOn SPC03 \x82\x14\x00 
+SEQ02 BgOn SPC03 \x82\x14\x00 
 SEQ06 SCE022_010\x00 \x9e\x14\x00 
 SEQ07  
 SEQ01 
-SEQ03 $2\x00\x0c
+SEQ03 $2
+SEQ13 
 SEQ05 \x03r\x00\x00
  
 拓司\n　「ホラ、さっさとやれよ。お前、女は初めてなんだろ？　@
@@ -201,12 +234,15 @@ SEQ05 \x03r\x00\x00
 早桃は目をそらして、うつむいたまま動かない。\
 
 \x00  
-SEQ01 \xe2\x14\x00\x0c
-SEQ04  \x08\x03\x00 \x02\x00\x00 6\x03\x00 
+SEQ01 \xe2\x14
+SEQ13 
+SEQ04  \x08\x03\x00 
+SEQ12  6\x03\x00 
 SEQ06 SCE022_011\x00 \xe4\x16\x00 
 SEQ07  
 SEQ01 
-SEQ03 (2\x00\x0c
+SEQ03 (2
+SEQ13 
 SEQ05 \x03e\x00\x00
  
 平野\n　「さあ、早桃ちゃん。@
@@ -220,12 +256,15 @@ SEQ05 \x03e\x00\x00
 そのまま手を上下させ、強制的に撫でさすらせる。\
 
 \x00\x00\x00  
-SEQ01 (\x17\x00\x0c
-SEQ04  \x08\x03\x00 \x02\x00\x00 6\x03\x00 
+SEQ01 (\x17
+SEQ13 
+SEQ04  \x08\x03\x00 
+SEQ12  6\x03\x00 
 SEQ06 SCE022_012\x00 \xf6\x18\x00 
 SEQ07  
 SEQ01 
-SEQ03 ,2\x00\x0c
+SEQ03 ,2
+SEQ13 
 SEQ05 \x03H\x00\x00
  
 平野\n　「ど……どうだい？@
@@ -238,12 +277,15 @@ SEQ05 \x03H\x00\x00
 早桃\n　「……大きい……です」\
 
 \x00\x00\x00  
-SEQ01 :\x19\x00\x0c
-SEQ04  \x08\x03\x00 \x02\x00\x00 6\x03\x00 
+SEQ01 :\x19
+SEQ13 
+SEQ04  \x08\x03\x00 
+SEQ12  6\x03\x00 
 SEQ06 SCE022_013\x00 \x94\x1a\x00 
 SEQ07  
 SEQ01 
-SEQ03 02\x00\x0c
+SEQ03 02
+SEQ13 
 SEQ05 \x03w\x00\x00
  
 その声を確認してから、平野は早桃の手首を解放した。@
@@ -257,12 +299,15 @@ SEQ05 \x03w\x00\x00
 　　大きい……\pです……」\
 
 \x00  
-SEQ01 \xd8\x1a\x00\x0c
-SEQ04  \x08\x03\x00 \x02\x00\x00 6\x03\x00 
+SEQ01 \xd8\x1a
+SEQ13 
+SEQ04  \x08\x03\x00 
+SEQ12  6\x03\x00 
 SEQ06 SCE022_014\x00 \xee\x1c\x00 
 SEQ07  
 SEQ01 
-SEQ03 42\x00\x0c
+SEQ03 42
+SEQ13 
 SEQ05 \x03n\x00\x00
  
 平野\n　「よ、よくいえたね、早桃！@
@@ -276,12 +321,15 @@ SEQ05 \x03n\x00\x00
 \n早桃\n　「う……ううっ」\
 
 \x00  
-SEQ01 2\x1d\x00\x0c
-SEQ04  \x08\x03\x00 \x02\x00\x00 6\x03\x00 
+SEQ01 2\x1d
+SEQ13 
+SEQ04  \x08\x03\x00 
+SEQ12  6\x03\x00 
 SEQ06 SCE022_015\x00 $\x1f\x00 
 SEQ07  
 SEQ01 
-SEQ03 82\x00\x0c
+SEQ03 82
+SEQ13 
 SEQ05 \x03z\x00\x00
  
 平野\n　「ゆ、夢みたいだ。@
@@ -297,12 +345,15 @@ SEQ05 \x03z\x00\x00
 　　うぷっ……\pす、好き……\pですぅ……」\
 
 \x00  
-SEQ01 h\x1f\x00\x0c
-SEQ04  \x08\x03\x00 \x02\x00\x00 6\x03\x00 
+SEQ01 h\x1f
+SEQ13 
+SEQ04  \x08\x03\x00 
+SEQ12  6\x03\x00 
 SEQ06 SCE022_016\x00 \x8a!\x00 
 SEQ07  
 SEQ01 
-SEQ03 <2\x00\x0c
+SEQ03 <2
+SEQ13 
 SEQ05 \x03\x96\x00\x00
  
 目の前で、オタクに犯される義妹。@
@@ -318,12 +369,15 @@ SEQ05 \x03\x96\x00\x00
 無抵抗を貫くことで、この淫猥な行為から自分の意志を消し去ろ\nうとしているのだ。\
 
 \x00  
-SEQ01 \xce!\x00\x0c
-SEQ04  \x08\x03\x00 \x02\x00\x00 6\x03\x00 
+SEQ01 \xce!
+SEQ13 
+SEQ04  \x08\x03\x00 
+SEQ12  6\x03\x00 
 SEQ06 SCE022_017\x00 `$\x00 
 SEQ07  
 SEQ01 
-SEQ03 @2\x00\x0c
+SEQ03 @2
+SEQ13 
 SEQ05 \x03\x7f\x00\x00
  
 不可避の事態が降りかかったのだと……@
@@ -337,12 +391,15 @@ SEQ05 \x03\x7f\x00\x00
 　　さ、早桃が自分でお願いしてごらん？」\
 
 \x00\x00\x00  
-SEQ01 \xa4$\x00\x0c
-SEQ04  \x08\x03\x00 \x02\x00\x00 6\x03\x00 
+SEQ01 \xa4$
+SEQ13 
+SEQ04  \x08\x03\x00 
+SEQ12  6\x03\x00 
 SEQ06 SCE022_018\x00 \xda&\x00 
 SEQ07  
 SEQ01 
-SEQ03 D2\x00\x0c
+SEQ03 D2
+SEQ13 
 SEQ05 \x03b\x00\x00
  
 早桃\n　「……」@
@@ -355,12 +412,15 @@ SEQ05 \x03b\x00\x00
 　　それじゃお望み通り、おま○こにぶち込んで、おにいちゃん\n　　の精子を早桃の卵子に受精させてあげるよ」\
 
 \x00\x00\x00  
-SEQ01 \x1e'\x00\x0c
-SEQ04  \x08\x03\x00 \x02\x00\x00 6\x03\x00 
+SEQ01 \x1e'
+SEQ13 
+SEQ04  \x08\x03\x00 
+SEQ12  6\x03\x00 
 SEQ06 SCE022_019\x00 \xe0(\x00 
 SEQ07  
 SEQ01 
-SEQ03 H2\x00\x0c
+SEQ03 H2
+SEQ13 
 SEQ05 \x03g\x00\x00
  
 早桃\n　「だ、駄目っ！　\p今日は駄目な日なのっ！@
@@ -376,12 +436,15 @@ SEQ05 \x03g\x00\x00
 　　おにいちゃんの精液、お尻の中に射精してくださいっ！」\
 
 \x00\x00\x00  
-SEQ01 $)\x00\x0c
-SEQ04  \x08\x03\x00 \x02\x00\x00 6\x03\x00 
+SEQ01 $)
+SEQ13 
+SEQ04  \x08\x03\x00 
+SEQ12  6\x03\x00 
 SEQ06 SCE022_020\x00 \xfa*\x00 
 SEQ07  
 SEQ01 
-SEQ03 L2\x00\x0c
+SEQ03 L2
+SEQ13 
 SEQ05 \x03\x80\x00\x00
  
 凍り付いたようだった早桃の表情が、ぐしゃっと崩れた。@
@@ -395,12 +458,15 @@ SEQ05 \x03\x80\x00\x00
 拓司\n　「ほら、さっさと立て！」\
 
 \x00\x00\x00  
-SEQ01 >+\x00\x0c
-SEQ04  \x08\x03\x00 \x02\x00\x00 6\x03\x00 
+SEQ01 >+
+SEQ13 
+SEQ04  \x08\x03\x00 
+SEQ12  6\x03\x00 
 SEQ06 SCE022_021\x00 x-\x00 
 SEQ07  
 SEQ01 
-SEQ03 P2\x00\x0c
+SEQ03 P2
+SEQ13 
 SEQ05 \x03\xa8\x00\x00
  
 ビクッと身体をすくませて、弾かれたように早桃が立ち上がる。@
@@ -416,12 +482,15 @@ SEQ05 \x03\xa8\x00\x00
 　　誰の前でもでもこんなにぬるぬるにしちゃうんだ？」\
 
 \x00  
-SEQ01 \xbc-\x00\x0c
-SEQ04  \x08\x03\x00 \x02\x00\x00 6\x03\x00 
+SEQ01 \xbc-
+SEQ13 
+SEQ04  \x08\x03\x00 
+SEQ12  6\x03\x00 
 SEQ06 SCE022_022\x00 \x960\x00 
 SEQ07  
 SEQ01 
-SEQ03 T2\x00\x0c
+SEQ03 T2
+SEQ13 
 SEQ05 \x03^\x00\x00
  
 早桃\n　「ううっ……ひっくっ……」@
@@ -434,12 +503,15 @@ SEQ05 \x03^\x00\x00
 拓司\n　「入れろ」\
 
 \x00\x00\x00  
-SEQ01 \xda0\x00\x0c
-SEQ04  \x08\x03\x00 \x02\x00\x00 6\x03\x00 
+SEQ01 \xda0
+SEQ13 
+SEQ04  \x08\x03\x00 
+SEQ12  6\x03\x00 
 SEQ06 SCE022_023\x00 \x8c2\x00 
 SEQ07  
 SEQ01 
-SEQ03 X2\x00\x0c
+SEQ03 X2
+SEQ13 
 SEQ05 \x03\x8d\x00\x00
  
 早桃の肩がガックリと落ちた。@
@@ -452,15 +524,20 @@ SEQ05 \x03\x8d\x00\x00
 平野は自分でペ○スを握って、先端を早桃のアナルに押し当て、\nそして……\
 
 \x00  
-SEQ01 \xd02\x00\x0c
-SEQ04  \x08\x03\x00 \x02\x00\x00 6\x03\x00 
+SEQ01 \xd02
+SEQ13 
+SEQ04  \x08\x03\x00 
+SEQ12  6\x03\x00 
 SEQ10   
-SEQ01 N\x00\x00\x0c
-SEQ04  \xae\x03\x00 \x02\x00\x00 \xd8\x03\x00 
+SEQ01 N\x00
+SEQ13 
+SEQ04  \xae\x03\x00 
+SEQ12  \xd8\x03\x00 
 SEQ06 SCE022_024\x00 r5\x00 
 SEQ07  
 SEQ01 
-SEQ03 \\2\x00\x0c
+SEQ03 \\2
+SEQ13 
 SEQ05 \x03g\x00\x00
  
 早桃\n　「ひっ、あうううっ！」@
@@ -472,12 +549,15 @@ SEQ05 \x03g\x00\x00
 　　おふっ！」\
 
 \x00  
-SEQ01 \xb65\x00\x0c
-SEQ04  \x08\x03\x00 \x02\x00\x00 6\x03\x00 
+SEQ01 \xb65
+SEQ13 
+SEQ04  \x08\x03\x00 
+SEQ12  6\x03\x00 
 SEQ06 SCE022_025\x00 \x8c7\x00 
 SEQ07  
 SEQ01 
-SEQ03 `2\x00\x0c
+SEQ03 `2
+SEQ13 
 SEQ05 \x03\xa3\x00\x00
  
 平野\n　「すごいよ、早桃ぉ……\pさ、最高だよぉ。@
@@ -492,12 +572,15 @@ SEQ05 \x03\xa3\x00\x00
 　　便所女の早桃は、内臓まで全部おにいちゃんのものだからね\n　　っ！」\
 
 \x00\x00\x00  
-SEQ01 \xd07\x00\x0c
-SEQ04  \x08\x03\x00 \x02\x00\x00 6\x03\x00 
+SEQ01 \xd07
+SEQ13 
+SEQ04  \x08\x03\x00 
+SEQ12  6\x03\x00 
 SEQ06 SCE022_026\x00 \x96:\x00 
 SEQ07  
 SEQ01 
-SEQ03 d2\x00\x0c
+SEQ03 d2
+SEQ13 
 SEQ05 \x03d\x00\x00
  
 早桃\n　「ああっ……あおっ……おあっ！」@
@@ -508,12 +591,15 @@ SEQ05 \x03d\x00\x00
 そしてハダシのままの右脚を伸ばして、むき出しに晒されている\n早桃の性器に親指の先を突っ込んだ。\
 
 \x00  
-SEQ01 \xda:\x00\x0c
-SEQ04  \x08\x03\x00 \x02\x00\x00 6\x03\x00 
+SEQ01 \xda:
+SEQ13 
+SEQ04  \x08\x03\x00 
+SEQ12  6\x03\x00 
 SEQ06 SCE022_027\x00 \xa4<\x00 
 SEQ07  
 SEQ01 
-SEQ03 h2\x00\x0c
+SEQ03 h2
+SEQ13 
 SEQ05 \x03o\x00\x00
  
 早桃\n　「お……おにい……がはっ……おにいちゃ……えふっ！」@
@@ -526,12 +612,15 @@ SEQ05 \x03o\x00\x00
 　　早桃のやつ、うれしくて白目剥いて笑ってるぜ？」\
 
 \x00  
-SEQ01 \xe8<\x00\x0c
-SEQ04  \x08\x03\x00 \x02\x00\x00 6\x03\x00 
+SEQ01 \xe8<
+SEQ13 
+SEQ04  \x08\x03\x00 
+SEQ12  6\x03\x00 
 SEQ06 SCE022_028\x00 \xde>\x00 
 SEQ07  
 SEQ01 
-SEQ03 l2\x00\x0c
+SEQ03 l2
+SEQ13 
 SEQ05 \x03l\x00\x00
  
 平野\n　「と、虎菱くんっ！\p僕もう限界だよ！　@
@@ -544,12 +633,15 @@ SEQ05 \x03l\x00\x00
 　　なんなのおにいちゃん？！」\
 
 \x00  
-SEQ01 "?\x00\x0c
-SEQ04  \x08\x03\x00 \x02\x00\x00 6\x03\x00 
+SEQ01 "?
+SEQ13 
+SEQ04  \x08\x03\x00 
+SEQ12  6\x03\x00 
 SEQ06 SCE022_029\x00 \x0cA\x00 
 SEQ07  
 SEQ01 
-SEQ03 p2\x00\x0c
+SEQ03 p2
+SEQ13 
 SEQ05 \x03\x9b\x00\x00
  
 拓司\n　「そいつがどうしても膣内射精したいっていうからさ。@
@@ -566,12 +658,15 @@ SEQ05 \x03\x9b\x00\x00
 その一瞬の隙をついて、遂に平野のペ○スが早桃を貫いた。\
 
 \x00\x00\x00  
-SEQ01 PA\x00\x0c
-SEQ04  \x08\x03\x00 \x02\x00\x00 6\x03\x00 
+SEQ01 PA
+SEQ13 
+SEQ04  \x08\x03\x00 
+SEQ12  6\x03\x00 
 SEQ06 SCE022_030\x00 \xf6C\x00 
 SEQ07  
 SEQ01 
-SEQ03 t2\x00\x0c
+SEQ03 t2
+SEQ13 
 SEQ05 \x03d\x00\x00
  
 平野\n　「ああっ……入ったよ！@
@@ -586,12 +681,15 @@ SEQ05 \x03d\x00\x00
 　　おにいちゃ……ん」\
 
 \x00  
-SEQ01 :D\x00\x0c
-SEQ04  \x08\x03\x00 \x02\x00\x00 6\x03\x00 
+SEQ01 :D
+SEQ13 
+SEQ04  \x08\x03\x00 
+SEQ12  6\x03\x00 
 SEQ06 SCE022_031\x00 \x04F\x00 
 SEQ07  
 SEQ01 
-SEQ03 x2\x00\x0c
+SEQ03 x2
+SEQ13 
 SEQ05 \x03\xb2\x00\x00
  
 平野\n　「あ、愛してるからなんだよ！@
@@ -610,12 +708,15 @@ SEQ05 \x03\xb2\x00\x00
 　　いえッ！」\
 
 \x00\x00\x00  
-SEQ01 HF\x00\x0c
-SEQ04  \x08\x03\x00 \x02\x00\x00 6\x03\x00 
+SEQ01 HF
+SEQ13 
+SEQ04  \x08\x03\x00 
+SEQ12  6\x03\x00 
 SEQ06 SCE022_032\x00 JI\x00 
 SEQ07  
 SEQ01 
-SEQ03 |2\x00\x0c
+SEQ03 |2
+SEQ13 
 SEQ05 \x03S\x00\x00
  
 早桃\n　「お……おにいちゃん、い、イク……」@
@@ -626,12 +727,15 @@ SEQ05 \x03S\x00\x00
 　　おっぱいも膨らみきってないつるぺた少女に僕の精液が……@
 　　子宮まで全部ぼ、僕の物だぁ……あ、あ、あ、ああっ！」\w\n\n\z
 \x00\x00\x00  
-SEQ01 \x8eI\x00\x0c
-SEQ04  \x08\x03\x00 \x02\x00\x00 6\x03\x00 
+SEQ01 \x8eI
+SEQ13 
+SEQ04  \x08\x03\x00 
+SEQ12  6\x03\x00 
 SEQ06 SCE022_033\x00 \x14K\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x802\x00\x0c
+SEQ03 \x802
+SEQ13 
 SEQ05 \x03R\x00\x00
  
 /*▲SE01　再生（再生終了を待たず先へ進む）*/\a2,2,1,1,　ザザザ……ザザッ……ザアザザザ……ザアアアアア……\nザアザアアアアアアア……\n\n耳の奥で、『灰色』が響き始めた。@
@@ -641,12 +745,15 @@ SEQ05 \x03R\x00\x00
 \n　ザザザ……ザザッ……ザアザザザ……ザアアアアア……\nザアザアアアアアアア……\
 
 \x00\x00\x00  
-SEQ01 XK\x00\x0c
-SEQ04  \x08\x03\x00 \x02\x00\x00 6\x03\x00 
+SEQ01 XK
+SEQ13 
+SEQ04  \x08\x03\x00 
+SEQ12  6\x03\x00 
 SEQ10   
-SEQ01 \x02\x00\x00\x0c
+SEQ01 
+SEQ12 \x0c
 SEQ04  \x06\x00\x00 
-SEQ02 \x00\x00SeStop SPC01 \x00M\x00 
+SEQ02 SeStop SPC01 \x00M\x00 
 SEQ10  \x08\x03\x00 
-FILE2 TextClosev\x81\x1f(M\x00 
+SEQ12 \x03\x03\x00\x00TextClose SPC02 (M\x00 
 ENDF

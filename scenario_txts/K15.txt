@@ -10,12 +10,14 @@ SEQ05 \x03 \x00\x00
 １週間後、ゆきは風邪薬を２００錠のんで、自殺した。@
 おしまい。これで、おしまい。\w\z
 \x00\x00\x00  
-SEQ01 J\x00\x00\x0c
-SEQ04 \x03\x07\x00\x00.\\Data\\Script\\TextFunc.Fob SPC01 \xea\x00\x00 
-SEQ02 \x00\x00TextOn SPC01 \x18\x01\x00 
+SEQ01 J\x00
+SEQ13 
+SEQ04 
+SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 \xea\x00\x00 
+SEQ02 TextOn SPC01 \x18\x01\x00 
 SEQ10 
-SEQ08 .\\Data\\Script\\Bgm.Fobv\x81\x1f4\x01\x00 
-SEQ02 \x00\x00StopCD SPC01 ^\x01\x00 
+SEQ08 .\\Data\\Script\\Bgm.Fob SPC02 4\x01\x00 
+SEQ02 StopCD SPC01 ^\x01\x00 
 SEQ10  \xea\x00\x00 
-FILE2 TextClosev\x81\x1f\x86\x01\x00 
+SEQ12 \x03\x03\x00\x00TextClose SPC02 \x86\x01\x00 
 ENDF

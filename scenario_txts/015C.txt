@@ -2,7 +2,8 @@ STRF
 "\x06\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xa4\t3\x01\x00\x00\x00\x18\x05\x00\x03\x03\x00\x00SCE015_001\x00 \x06\x00\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x10'\x00\x0c
+SEQ03 \x10'
+SEQ13 
 SEQ05 \x03\xa8\x00\x00
  
 紅葉\n　「失礼ね、あるわよ！　私はアンタみたいにゴロゴロ過ごしてな\n　　いんだから、アンタよりよっぽどバテバテなの！　バイトだっ\n　　てやってるし、来週はライブに行くし、受験勉強だってそこそ\n　　こ……まあ、一応……ええと……とにかく夏バテしてるわよ！\n　　でも、それを他人にわからせないようにしてるっていうのが、\n　　私のすごいところなわけなのよ」@
@@ -12,13 +13,16 @@ SEQ05 \x03\xa8\x00\x00
 紅葉\n　「アンタさあ、もうちょっと身体鍛えないと、いざというときに\n　　困るよ？」\
 
 \x00\x00\x00  
-SEQ01 J\x00\x00\x0c
-SEQ04 \x03\x07\x00\x00.\\Data\\Script\\TextFunc.Fob SPC01 \n\x03\x00 
-SEQ02 \x00\x00TextOn SPC01 8\x03\x00 
+SEQ01 J\x00
+SEQ13 
+SEQ04 
+SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 \n\x03\x00 
+SEQ02 TextOn SPC01 8\x03\x00 
 SEQ06 SCE015_002\x00 T\x03\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x14'\x00\x0c
+SEQ03 \x14'
+SEQ13 
 SEQ05 \x03G\x00\x00
  
 拓司\n　「いざというときって、なんだよ？　核戦争が起こって世界が暴\n　　力の時代になったときか？　悪の改造人間が襲いかかってきた\n　　ときか？」@
@@ -28,8 +32,10 @@ SEQ05 \x03G\x00\x00
 拓司\n　「ふん」\
 
 \x00\x00\x00  
-SEQ01 \x98\x03\x00\x0c
-SEQ04  \n\x03\x00 \x02\x00\x00 8\x03\x00 
+SEQ01 \x98\x03
+SEQ13 
+SEQ04  \n\x03\x00 
+SEQ12  8\x03\x00 
 SEQ10  \n\x03\x00 
-FILE2 TextClosev\x81\x1f\xfa\x04\x00 
+SEQ12 \x03\x03\x00\x00TextClose SPC02 \xfa\x04\x00 
 ENDF

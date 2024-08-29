@@ -12,9 +12,11 @@ SEQ05 \x036\x00\x00
 \n重い一撃が顎を捉え、さらに鋭い蹴りが拓司を後方にはじき飛ば\nした。\
 
 \x00  
-SEQ01 J\x00\x00\x0c
-SEQ04 \x03\x07\x00\x00.\\Data\\Script\\TextFunc.Fob SPC01 B\x01\x00 
-SEQ02 \x00\x00TextOn SPC01 p\x01\x00 
+SEQ01 J\x00
+SEQ13 
+SEQ04 
+SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 B\x01\x00 
+SEQ02 TextOn SPC01 p\x01\x00 
 SEQ06 SCE218_002\x00 \x8c\x01\x00 
 SEQ07  
 SEQ01 
@@ -28,13 +30,16 @@ SEQ05 \x03x\x00\x00
 御堂\n　「この……××××が……思い知れ！\p　思い知れ！」\
 
 \x00  
-SEQ01 \xd0\x01\x00\x0c
-SEQ04  B\x01\x00 \x02\x00\x00 p\x01\x00 
+SEQ01 \xd0\x01
+SEQ13 
+SEQ04  B\x01\x00 
+SEQ12  p\x01\x00 
 SEQ10   
-SEQ01 $\x00\x00\x0c
+SEQ01 $\x00
+SEQ13 
 SEQ04 
 SEQ08 .\\Data\\Script\\Bg.Fob SPC03 \x04\x04\x00 
-FILE1 BgAutoFadeIn SPC03 .\x04\x00 
+SEQ12 \x03\x04\x00\x00BgAutoFadeIn SPC03 .\x04\x00 
 SEQ06 SCE218_003\x00 R\x04\x00 
 SEQ07  
 SEQ01 
@@ -54,14 +59,18 @@ SEQ05 \x03\x9b\x00\x00
 そしていま、眼前で展開されていることこそ、新しい秩序の骨子\nを為すものであるはずだった。\
 
 \x00  
-SEQ01 \x96\x04\x00\x0c
-SEQ04  B\x01\x00 \x02\x00\x00 p\x01\x00 
+SEQ01 \x96\x04
+SEQ13 
+SEQ04  B\x01\x00 
+SEQ12  p\x01\x00 
 SEQ10   
-SEQ01 \xc8\x00\x00\x0c
-SEQ04  \x04\x04\x00 \x02\x00\x00 .\x04\x00 
+SEQ01 \xc8\x00
+SEQ13 
+SEQ04  \x04\x04\x00 
+SEQ12  .\x04\x00 
 SEQ10 
-SEQ08 .\\Data\\Script\\Bgm.Fobv\x81\x1fp\x07\x00 
-SEQ02 \x00\x00StopCD SPC01 \x9a\x07\x00 
+SEQ08 .\\Data\\Script\\Bgm.Fob SPC02 p\x07\x00 
+SEQ02 StopCD SPC01 \x9a\x07\x00 
 SEQ10  B\x01\x00 
-FILE2 TextClosev\x81\x1f\xc2\x07\x00 
+SEQ12 \x03\x03\x00\x00TextClose SPC02 \xc2\x07\x00 
 ENDF

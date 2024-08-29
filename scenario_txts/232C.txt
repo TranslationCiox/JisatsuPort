@@ -1,9 +1,10 @@
 STRF
 \x0c\r\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xf0\n\x00  
-SEQ01 \x04\x01\x00\x0c
+SEQ01 \x04\x01
+SEQ13 
 SEQ04 
-SEQ08 .\\Data\\Script\\Bgm.Fobv\x81\x1f \x00\x00 
-SEQ02 \x00\x00PlayCD SPC01 J\x00\x00 
+SEQ08 .\\Data\\Script\\Bgm.Fob SPC02  \x00\x00 
+SEQ02 PlayCD SPC01 J\x00\x00 
 SEQ06 SCE232_001\x00 f\x00\x00 
 SEQ07  
 SEQ01 
@@ -13,9 +14,11 @@ SEQ05 \x03\x13\x00\x00
 \n\n\n\n\n\n\n\n\n\n　　　　　　　『おんなのこと、うちゅうじん』\
 
 \x00\x00\x00  
-SEQ01 \xaa\x00\x00\x0c
-SEQ04 \x03\x07\x00\x00.\\Data\\Script\\TextFunc.Fob SPC01 \x16\x01\x00 
-SEQ02 \x00\x00TextOn SPC01 D\x01\x00 
+SEQ01 \xaa\x00
+SEQ13 
+SEQ04 
+SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 \x16\x01\x00 
+SEQ02 TextOn SPC01 D\x01\x00 
 SEQ06 SCE232_002\x00 `\x01\x00 
 SEQ07  
 SEQ01 
@@ -30,8 +33,10 @@ SEQ05 \x03\xdf\x00\x00
 　お義父さんはなたねのことを大切に、大切に育ててくれました。\n\p　一度、なたねがひどい風邪を引いたときには、大切なお仕事を\n放り出して看病についてくれました（お義父さんはそのせいで、\n病院をクビになってしまったので、新しい仕事先を探さなければ\nならなくなりました）。\pしかもお義父さんは、勉強をしなさい、\nＴＶは見てはいけません、と、厳しいこともなにひとついいませ\nんでした。\
 
 \x00  
-SEQ01 \xa4\x01\x00\x0c
-SEQ04  \x16\x01\x00 \x02\x00\x00 D\x01\x00 
+SEQ01 \xa4\x01
+SEQ13 
+SEQ04  \x16\x01\x00 
+SEQ12  D\x01\x00 
 SEQ06 SCE232_003\x00 Z\x05\x00 
 SEQ07  
 SEQ01 
@@ -45,17 +50,20 @@ SEQ05 \x03\x9e\x00\x00
 　ときどき「もういやだなあ」と思うこともあって、そんなとき\nお義父さんは「なたね、あまり勉強ばかりしていると、体に毒だ\nよ」と優しく声をかけてくれました。\pなたねは、そんなお義父さ\nんの声を聞くと、逆に「よし、もっとがんばろう！」と思えたの\nでした。\
 
 \x00\x00\x00  
-SEQ01 \x9e\x05\x00\x0c
-SEQ04  \x16\x01\x00 \x02\x00\x00 D\x01\x00 
+SEQ01 \x9e\x05
+SEQ13 
+SEQ04  \x16\x01\x00 
+SEQ12  D\x01\x00 
 SEQ10  \x16\x01\x00 
-FILE2 TextClosev\x81\x1f\\\x08\x00 
+SEQ12 \x03\x03\x00\x00TextClose SPC02 \\\x08\x00 
 SEQ10 \x03\t\x00\x00.\\Data\\Script\\Scenario\\232SubC.Fob SPC01 |\x08\x00 
-SEQ02 \x00\x00startv\x81\x1f\xb2\x08\x00 
+SEQ02 start SPC02 \xb2\x08\x00 
 SEQ10   
-SEQ01 \xc8\x00\x00\x0c
+SEQ01 \xc8\x00
+SEQ13 
 SEQ04 
 SEQ08 .\\Data\\Script\\Bg.Fob SPC03 \xe8\x08\x00 
-FILE1 BgAutoFadeIn SPC03 \x12\t\x00 
+SEQ12 \x03\x04\x00\x00BgAutoFadeIn SPC03 \x12\t\x00 
 SEQ06 SCE232_013\x00 6\t\x00 
 SEQ07  
 SEQ01 
@@ -71,9 +79,12 @@ SEQ05 \x03?\x00\x00
 　ここからはなれてゆきたいのです\
 
 \x00\x00\x00  
-SEQ01 z\t\x00\x0c
-SEQ04  \x16\x01\x00 \x02\x00\x00 D\x01\x00 
+SEQ01 z\t
+SEQ13 
+SEQ04  \x16\x01\x00 
+SEQ12  D\x01\x00 
 SEQ10   \x00\x00 
-SEQ02 \x00\x00StopCD SPC01 \xbc\n\x00 
-SEQ10  \x16\x01\x00 \x02\x00\x00 \\\x08\x00 
+SEQ02 StopCD SPC01 \xbc\n\x00 
+SEQ10  \x16\x01\x00 
+SEQ12  \\\x08\x00 
 ENDF

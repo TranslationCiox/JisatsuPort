@@ -2,7 +2,8 @@ STRF
 +\x08\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xf4\x06\x00\x03\x03\x00\x00SCE054_001\x00 \x06\x00\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x00d\x00\x0c
+SEQ03 \x00d
+SEQ13 
 SEQ05 \x03\xb2\x00\x00
  
 　冗談ではない。@
@@ -19,13 +20,16 @@ SEQ05 \x03\xb2\x00\x00
 　突入前から目星をつけていたほうきを掴んで、無我夢中で振り\n回す。\
 
   
-SEQ01 J\x00\x00\x0c
-SEQ04 \x03\x07\x00\x00.\\Data\\Script\\TextFunc.Fob SPC01 2\x03\x00 
-SEQ02 \x00\x00TextOn SPC01 `\x03\x00 
+SEQ01 J\x00
+SEQ13 
+SEQ04 
+SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 2\x03\x00 
+SEQ02 TextOn SPC01 `\x03\x00 
 SEQ06 SCE054_002\x00 |\x03\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x04d\x00\x0c
+SEQ03 \x04d
+SEQ13 
 SEQ05 \x03\x9a\x00\x00
  
 　一人、二人、三人、四人……@
@@ -42,13 +46,16 @@ SEQ05 \x03\x9a\x00\x00
 　静寂の中、バットが振り下ろされた。@
 \z
 \x00\x00\x00  
-SEQ01 \xc0\x03\x00\x0c
-SEQ04  2\x03\x00 \x02\x00\x00 `\x03\x00 
+SEQ01 \xc0\x03
+SEQ13 
+SEQ04  2\x03\x00 
+SEQ12  `\x03\x00 
 SEQ10   
-SEQ01 \xc8\x00\x00\x0c
+SEQ01 \xc8\x00
+SEQ13 
 SEQ04 
 SEQ08 .\\Data\\Script\\Bg.Fob SPC03 |\x06\x00 
-FILE1 BgAutoFadeIn SPC03 \xa6\x06\x00 
+SEQ12 \x03\x04\x00\x00BgAutoFadeIn SPC03 \xa6\x06\x00 
 SEQ10  2\x03\x00 
-FILE2 TextClosev\x81\x1f\xd6\x06\x00 
+SEQ12 \x03\x03\x00\x00TextClose SPC02 \xd6\x06\x00 
 ENDF

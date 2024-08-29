@@ -8,14 +8,17 @@ SEQ05 \x03\x11\x00\x00
 \n\n\n\n\n\n\n\n\n\n　　　　　　　　　　　　『１４日目』\
 
 \x00\x00\x00  
-SEQ01 J\x00\x00\x0c
-SEQ04 \x03\x07\x00\x00.\\Data\\Script\\TextFunc.Fob SPC01 \xae\x00\x00 
-SEQ02 \x00\x00TextOn SPC01 \xdc\x00\x00 
-SEQ10   
-SEQ01 \t\x01\x00\x0c
+SEQ01 J\x00
+SEQ13 
 SEQ04 
-SEQ08 .\\Data\\Script\\Bgm.Fobv\x81\x1f\x12\x01\x00 
-SEQ02 \x00\x00PlayCD SPC01 <\x01\x00 
+SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 \xae\x00\x00 
+SEQ02 TextOn SPC01 \xdc\x00\x00 
+SEQ10   
+SEQ01 \t\x01
+SEQ13 
+SEQ04 
+SEQ08 .\\Data\\Script\\Bgm.Fob SPC02 \x12\x01\x00 
+SEQ02 PlayCD SPC01 <\x01\x00 
 SEQ06 SCE228_002\x00 X\x01\x00 
 SEQ07  
 SEQ01 
@@ -31,8 +34,10 @@ SEQ05 \x03O\x00\x00
 拓司\n　「ふざけるな」\
 
 \x00\x00\x00  
-SEQ01 \x9c\x01\x00\x0c
-SEQ04  \xae\x00\x00 \x02\x00\x00 \xdc\x00\x00 
+SEQ01 \x9c\x01
+SEQ13 
+SEQ04  \xae\x00\x00 
+SEQ12  \xdc\x00\x00 
 SEQ06 SCE228_003\x00 \x12\x03\x00 
 SEQ07  
 SEQ01 
@@ -47,8 +52,10 @@ SEQ05 \x03\x88\x00\x00
 御堂\n　「ここでしてみせろよ。\p一回見てみたかったんだよな、そうい\n　　うのさ。\p……感謝しろよ。\pこんな機会でもなきゃ、義妹とセ\n　　ックスなんかできないぜ？」\
 
 \x00  
-SEQ01 V\x03\x00\x0c
-SEQ04  \xae\x00\x00 \x02\x00\x00 \xdc\x00\x00 
+SEQ01 V\x03
+SEQ13 
+SEQ04  \xae\x00\x00 
+SEQ12  \xdc\x00\x00 
 SEQ06 SCE228_004\x00 \xb0\x05\x00 
 SEQ07  
 SEQ01 
@@ -66,8 +73,10 @@ SEQ05 \x03n\x00\x00
 \n早桃\n　「おにいちゃん……」\
 
 \x00  
-SEQ01 \xf4\x05\x00\x0c
-SEQ04  \xae\x00\x00 \x02\x00\x00 \xdc\x00\x00 
+SEQ01 \xf4\x05
+SEQ13 
+SEQ04  \xae\x00\x00 
+SEQ12  \xdc\x00\x00 
 SEQ06 SCE228_005\x00 \xe6\x07\x00 
 SEQ07  
 SEQ01 
@@ -83,8 +92,10 @@ SEQ05 \x03\x87\x00\x00
 早桃\n　「お、おにいちゃんッ？！\p　大丈夫、おにいちゃん！」\
 
 \x00\x00  
-SEQ01 *\x08\x00\x0c
-SEQ04  \xae\x00\x00 \x02\x00\x00 \xdc\x00\x00 
+SEQ01 *\x08
+SEQ13 
+SEQ04  \xae\x00\x00 
+SEQ12  \xdc\x00\x00 
 SEQ06 SCE228_006\x00 \x80\n\x00 
 SEQ07  
 SEQ01 
@@ -99,8 +110,10 @@ SEQ05 \x03\xaa\x00\x00
 \n黙って様子を見ていた錦城が、あいだに割って入った。\
 
 \x00  
-SEQ01 \xc4\n\x00\x0c
-SEQ04  \xae\x00\x00 \x02\x00\x00 \xdc\x00\x00 
+SEQ01 \xc4\n
+SEQ13 
+SEQ04  \xae\x00\x00 
+SEQ12  \xdc\x00\x00 
 SEQ06 SCE228_007\x00 \xa6\r\x00 
 SEQ07  
 SEQ01 
@@ -116,8 +129,10 @@ SEQ05 \x03\xa9\x00\x00
 　　もっと嫌がって頂戴。\p大切な義妹が嫌がっているにも関わら\n　　ず立つんだととしたら、それは愛で勃起してるんじゃないっ\n　　てことよねえ。\pくすくす」\
 
 \x00  
-SEQ01 \xea\r\x00\x0c
-SEQ04  \xae\x00\x00 \x02\x00\x00 \xdc\x00\x00 
+SEQ01 \xea\r
+SEQ13 
+SEQ04  \xae\x00\x00 
+SEQ12  \xdc\x00\x00 
 SEQ06 SCE228_008\x00 \xc8\x10\x00 
 SEQ07  
 SEQ01 
@@ -131,8 +146,10 @@ SEQ05 \x03\x95\x00\x00
 むっちりとした白いふとももが、ブルマから生えている。\
 
 \x00  
-SEQ01 \x0c\x11\x00\x0c
-SEQ04  \xae\x00\x00 \x02\x00\x00 \xdc\x00\x00 
+SEQ01 \x0c\x11
+SEQ13 
+SEQ04  \xae\x00\x00 
+SEQ12  \xdc\x00\x00 
 SEQ06 SCE228_009\x00 \x9a\x13\x00 
 SEQ07  
 SEQ01 
@@ -147,8 +164,10 @@ SEQ05 \x03\xa1\x00\x00
 錦城\n　「あらあら、敏感ねえ。\pこうやってゆっくり撫でてると……あ\n　　ら、なんだか湿ってるみたいだけど？」\
 
 \x00  
-SEQ01 \xde\x13\x00\x0c
-SEQ04  \xae\x00\x00 \x02\x00\x00 \xdc\x00\x00 
+SEQ01 \xde\x13
+SEQ13 
+SEQ04  \xae\x00\x00 
+SEQ12  \xdc\x00\x00 
 SEQ06 SCE228_010\x00 \x9c\x16\x00 
 SEQ07  
 SEQ01 
@@ -163,8 +182,10 @@ SEQ05 \x03\xa4\x00\x00
 理性では押さえきれない動物的な興奮が、頭の中で膨れ上がって\n爆発寸前だった。\
 
 \x00  
-SEQ01 \xe0\x16\x00\x0c
-SEQ04  \xae\x00\x00 \x02\x00\x00 \xdc\x00\x00 
+SEQ01 \xe0\x16
+SEQ13 
+SEQ04  \xae\x00\x00 
+SEQ12  \xdc\x00\x00 
 SEQ06 SCE228_011\x00 \xaa\x19\x00 
 SEQ07  
 SEQ01 
@@ -181,8 +202,10 @@ SEQ05 \x03\xae\x00\x00
 両者とも、うつむいて目を合わせまいとしている。\pしかし両者と\nも、互いの淫らな姿に興奮しきっている……。\
 
 \x00\x00\x00  
-SEQ01 \xee\x19\x00\x0c
-SEQ04  \xae\x00\x00 \x02\x00\x00 \xdc\x00\x00 
+SEQ01 \xee\x19
+SEQ13 
+SEQ04  \xae\x00\x00 
+SEQ12  \xdc\x00\x00 
 SEQ06 SCE228_012\x00 \xe0\x1c\x00 
 SEQ07  
 SEQ01 
@@ -202,8 +225,10 @@ SEQ05 \x03\xf2\x00\x00
 涙を流しながら錦城は笑っていた。\
 
   
-SEQ01 $\x1d\x00\x0c
-SEQ04  \xae\x00\x00 \x02\x00\x00 \xdc\x00\x00 
+SEQ01 $\x1d
+SEQ13 
+SEQ04  \xae\x00\x00 
+SEQ12  \xdc\x00\x00 
 SEQ06 SCE228_013\x00 &!\x00 
 SEQ07  
 SEQ01 
@@ -221,8 +246,10 @@ SEQ05 \x03\x91\x00\x00
 立ちつくす拓司たちの前で、雲居なたねが高く笑った。\
 
   
-SEQ01 j!\x00\x0c
-SEQ04  \xae\x00\x00 \x02\x00\x00 \xdc\x00\x00 
+SEQ01 j!
+SEQ13 
+SEQ04  \xae\x00\x00 
+SEQ12  \xdc\x00\x00 
 SEQ06 SCE228_014\x00 \xe8#\x00 
 SEQ07  
 SEQ01 
@@ -232,16 +259,20 @@ SEQ05 \x03w\x00\x00
 なたね\n　「あはははははははは！\p　敵を拘束するときは身体検査くらい\n　　するのが常識だろうがこの民間人！\p　戦士である私が、武器\n　　のひとつくらい隠し持っていないとでも思ったかひっつき星\n　　人！\p　これがただの畳針だと思うなよ。\pこれはテスラ式処置\n　　を施して電流を流した特別製の次元毒針だ！\p　物理的ダメー\n　　ジを超えて存在自体にダメージを与えるからお前みたいな宇\n　　宙人にも効果てきめんだ！\p　思い知ったか！\p　思い知ったか\n　　あああああああ！」\
 
 \x00\x00\x00  
-SEQ01 ,$\x00\x0c
-SEQ04  \xae\x00\x00 \x02\x00\x00 \xdc\x00\x00 
+SEQ01 ,$
+SEQ13 
+SEQ04  \xae\x00\x00 
+SEQ12  \xdc\x00\x00 
 SEQ10 \x03\x13\x00\x00
 CHOICE
 拓司は御堂に躍りかかった\n拓司は凍り付いたまま動かなかった\n\l0,2,
 ENDCHOICE
 
 \x00  
-SEQ01 B&\x00\x0c
-SEQ04  \xae\x00\x00 \x02\x00\x00 \xdc\x00\x00 
+SEQ01 B&
+SEQ13 
+SEQ04  \xae\x00\x00 
+SEQ12  \xdc\x00\x00 
 SEQ10  \xae\x00\x00 
-FILE2 TextClosev\x81\x1f\xd4&\x00 
+SEQ12 \x03\x03\x00\x00TextClose SPC02 \xd4&\x00 
 ENDF

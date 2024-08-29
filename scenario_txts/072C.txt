@@ -2,7 +2,8 @@ STRF
 \xc1\x06\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x004\x05\x00\x03\x03\x00\x00SCE072_001\x00 \x06\x00\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x90~\x00\x0c
+SEQ03 \x90~
+SEQ13 
 SEQ05 \x03\\\x00\x00
  
 拓司の返事に、なたねはやれやれと肩をすくめてみせた。@
@@ -10,18 +11,22 @@ SEQ05 \x03\\\x00\x00
 拓司\n　「早桃、行くぞ！」\
 
 \x00  
-SEQ01 J\x00\x00\x0c
-SEQ04 \x03\x07\x00\x00.\\Data\\Script\\TextFunc.Fob SPC01 \xda\x01\x00 
-SEQ02 \x00\x00TextOn SPC01 \x08\x02\x00 
-SEQ10   
-SEQ01 \x0b\x01\x00\x0c
+SEQ01 J\x00
+SEQ13 
 SEQ04 
-SEQ08 .\\Data\\Script\\Bgm.Fobv\x81\x1f>\x02\x00 
-SEQ02 \x00\x00PlayCD SPC01 h\x02\x00 
+SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 \xda\x01\x00 
+SEQ02 TextOn SPC01 \x08\x02\x00 
+SEQ10   
+SEQ01 \x0b\x01
+SEQ13 
+SEQ04 
+SEQ08 .\\Data\\Script\\Bgm.Fob SPC02 >\x02\x00 
+SEQ02 PlayCD SPC01 h\x02\x00 
 SEQ06 SCE072_002\x00 \x84\x02\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x94~\x00\x0c
+SEQ03 \x94~
+SEQ13 
 SEQ05 \x03x\x00\x00
  
 際限のないなたねの妄想話を振り切って、拓司は早桃の手を引い\nた。\pそのまま１階に駆け下りて、玄関から中庭に走り出す。@
@@ -36,10 +41,12 @@ SEQ05 \x03x\x00\x00
 ようやく、終わったんだ、と。\
 
   
-SEQ01 \xc8\x02\x00\x0c
-SEQ04  \xda\x01\x00 \x02\x00\x00 \x08\x02\x00 
+SEQ01 \xc8\x02
+SEQ13 
+SEQ04  \xda\x01\x00 
+SEQ12  \x08\x02\x00 
 SEQ10  >\x02\x00 
-SEQ02 \x00\x00StopCD SPC01 \xee\x04\x00 
+SEQ02 StopCD SPC01 \xee\x04\x00 
 SEQ10  \xda\x01\x00 
-FILE2 TextClosev\x81\x1f\x16\x05\x00 
+SEQ12 \x03\x03\x00\x00TextClose SPC02 \x16\x05\x00 
 ENDF

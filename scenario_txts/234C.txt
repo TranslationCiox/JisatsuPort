@@ -1,9 +1,10 @@
 STRF
 p*\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\x1a#\x00  
-SEQ01 \x0c\x01\x00\x0c
+SEQ01 \x0c\x01
+SEQ13 
 SEQ04 
-SEQ08 .\\Data\\Script\\Bgm.Fobv\x81\x1f \x00\x00 
-SEQ02 \x00\x00PlayCD SPC01 J\x00\x00 
+SEQ08 .\\Data\\Script\\Bgm.Fob SPC02  \x00\x00 
+SEQ02 PlayCD SPC01 J\x00\x00 
 SEQ06 SCE234_001\x00 f\x00\x00 
 SEQ07  
 SEQ01 
@@ -13,9 +14,11 @@ SEQ05 \x03\x11\x00\x00
 \n\n\n\n\n\n\n\n\n\n　　　　　　　　　　　　『１５日目』\
 
 \x00\x00\x00  
-SEQ01 \xaa\x00\x00\x0c
-SEQ04 \x03\x07\x00\x00.\\Data\\Script\\TextFunc.Fob SPC01 \x0e\x01\x00 
-SEQ02 \x00\x00TextOn SPC01 <\x01\x00 
+SEQ01 \xaa\x00
+SEQ13 
+SEQ04 
+SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 \x0e\x01\x00 
+SEQ02 TextOn SPC01 <\x01\x00 
 SEQ06 SCE234_002\x00 X\x01\x00 
 SEQ07  
 SEQ01 
@@ -34,8 +37,10 @@ SEQ05 \x03\x7f\x00\x00
 その視線から逃れるように、紅葉は俯いた。\
 
 \x00\x00\x00  
-SEQ01 \x9c\x01\x00\x0c
-SEQ04  \x0e\x01\x00 \x02\x00\x00 <\x01\x00 
+SEQ01 \x9c\x01
+SEQ13 
+SEQ04  \x0e\x01\x00 
+SEQ12  <\x01\x00 
 SEQ06 SCE234_003\x00 \xd2\x03\x00 
 SEQ07  
 SEQ01 
@@ -52,8 +57,10 @@ SEQ05 \x03V\x00\x00
 拓司\n　「……」\
 
 \x00\x00\x00  
-SEQ01 \x16\x04\x00\x0c
-SEQ04  \x0e\x01\x00 \x02\x00\x00 <\x01\x00 
+SEQ01 \x16\x04
+SEQ13 
+SEQ04  \x0e\x01\x00 
+SEQ12  <\x01\x00 
 SEQ06 SCE234_004\x00 \xa8\x05\x00 
 SEQ07  
 SEQ01 
@@ -70,8 +77,10 @@ SEQ05 \x03`\x00\x00
 \nははは、と御堂が笑った。\p錦城も、さも愉快そうに笑っている。\
 
 \x00  
-SEQ01 \xec\x05\x00\x0c
-SEQ04  \x0e\x01\x00 \x02\x00\x00 <\x01\x00 
+SEQ01 \xec\x05
+SEQ13 
+SEQ04  \x0e\x01\x00 
+SEQ12  <\x01\x00 
 SEQ06 SCE234_005\x00 \xa6\x07\x00 
 SEQ07  
 SEQ01 
@@ -89,10 +98,12 @@ SEQ05 \x03\x8e\x00\x00
 \nつかみかかってくる紅葉を一撃で壁まではじき飛ばし、御堂が叫\nんだ。\
 
 \x00\x00\x00  
-SEQ01 \xea\x07\x00\x0c
-SEQ04  \x0e\x01\x00 \x02\x00\x00 <\x01\x00 
+SEQ01 \xea\x07
+SEQ13 
+SEQ04  \x0e\x01\x00 
+SEQ12  <\x01\x00 
 SEQ10   \x00\x00 
-SEQ02 \x00\x00StopCD SPC01 h\n\x00 
+SEQ02 StopCD SPC01 h\n\x00 
 SEQ06 SCE234_006\x00 \x84\n\x00 
 SEQ07  
 SEQ01 
@@ -109,8 +120,10 @@ SEQ05 \x03\x95\x00\x00
 御堂に殺されるかもしれない。\pしかも信じていた紅葉に裏切られ\nて……。\
 
 \x00\x00\x00  
-SEQ01 \xc8\n\x00\x0c
-SEQ04  \x0e\x01\x00 \x02\x00\x00 <\x01\x00 
+SEQ01 \xc8\n
+SEQ13 
+SEQ04  \x0e\x01\x00 
+SEQ12  <\x01\x00 
 SEQ06 SCE234_007\x00 V\r\x00 
 SEQ07  
 SEQ01 
@@ -136,8 +149,10 @@ SEQ05 \x03\xba\x00\x00
 /*■黒　表示（ノンエフェクト）*/\a7,-1,-1,0,\a0,200,1,0,\a6,0,0,0,床に倒れる。\
 
 \x00  
-SEQ01 \x9a\r\x00\x0c
-SEQ04  \x0e\x01\x00 \x02\x00\x00 <\x01\x00 
+SEQ01 \x9a\r
+SEQ13 
+SEQ04  \x0e\x01\x00 
+SEQ12  <\x01\x00 
 SEQ06 SCE234_008\x00 \xbc\x10\x00 
 SEQ07  
 SEQ01 
@@ -152,8 +167,10 @@ SEQ05 \x03\x94\x00\x00
 御堂の残忍な笑い顔が、ぐいっとせり上がって目の前に飛び出し\nた。\
 
 \x00\x00\x00  
-SEQ01 \x00\x11\x00\x0c
-SEQ04  \x0e\x01\x00 \x02\x00\x00 <\x01\x00 
+SEQ01 \x00\x11
+SEQ13 
+SEQ04  \x0e\x01\x00 
+SEQ12  <\x01\x00 
 SEQ06 SCE234_009\x00 \x8a\x13\x00 
 SEQ07  
 SEQ01 
@@ -169,13 +186,16 @@ SEQ05 \x03\xe1\x00\x00
 \n叫んで、御堂は拓司の腕を逆に取った。\
 
 \x00\x00\x00  
-SEQ01 \xce\x13\x00\x0c
-SEQ04  \x0e\x01\x00 \x02\x00\x00 <\x01\x00 
+SEQ01 \xce\x13
+SEQ13 
+SEQ04  \x0e\x01\x00 
+SEQ12  <\x01\x00 
 SEQ10   
-SEQ01 \xcb\x00\x00\x0c
+SEQ01 \xcb\x00
+SEQ13 
 SEQ04 
 SEQ08 .\\Data\\Script\\Bg.Fob SPC03 \xa6\x17\x00 
-SEQ02 \x00\x00BgOn SPC03 \xd0\x17\x00 
+SEQ02 BgOn SPC03 \xd0\x17\x00 
 SEQ06 SCE234_010\x00 \xec\x17\x00 
 SEQ07  
 SEQ01 
@@ -190,8 +210,10 @@ SEQ05 \x03{\x00\x00
 \n拓司\n　「わわわわわわわわわわわわわわわわわわ！！」\
 
 \x00  
-SEQ01 0\x18\x00\x0c
-SEQ04  \x0e\x01\x00 \x02\x00\x00 <\x01\x00 
+SEQ01 0\x18
+SEQ13 
+SEQ04  \x0e\x01\x00 
+SEQ12  <\x01\x00 
 SEQ06 SCE234_011\x00 V\x1a\x00 
 SEQ07  
 SEQ01 
@@ -205,8 +227,10 @@ SEQ05 \x03]\x00\x00
 拓司\n　「わわわわわわわわわわわわわわわわわわ！！」\
 
 \x00\x00\x00  
-SEQ01 \x9a\x1a\x00\x0c
-SEQ04  \x0e\x01\x00 \x02\x00\x00 <\x01\x00 
+SEQ01 \x9a\x1a
+SEQ13 
+SEQ04  \x0e\x01\x00 
+SEQ12  <\x01\x00 
 SEQ06 SCE234_012\x00 H\x1c\x00 
 SEQ07  
 SEQ01 
@@ -229,8 +253,10 @@ SEQ05 \x03\x84\x00\x00
 う・ああ・あ・あ・あ・あ・あ・あ・あ・あ・あ・あ・あ・あ・あ\nああああああああ！\
 
 \x00  
-SEQ01 \x8c\x1c\x00\x0c
-SEQ04  \x0e\x01\x00 \x02\x00\x00 <\x01\x00 
+SEQ01 \x8c\x1c
+SEQ13 
+SEQ04  \x0e\x01\x00 
+SEQ12  <\x01\x00 
 SEQ06 SCE234_013\x00 \xd6\x1e\x00 
 SEQ07  
 SEQ01 
@@ -245,19 +271,26 @@ SEQ05 \x03\xa8\x00\x00
 　　うわあああああああああああああああああああああああああ\n　　あああああああああああああああああああああああああああ\n　　あああああああああああああああああああああああああああ\n　　あああああああああああああああああああああああああああ\n　　あああああああああああああああああああああああああああ\n　　あああああああああああああああああああああああああああ\n　　あああああああああああああああああああああああ！」\
 
 \x00\x00\x00  
-SEQ01 \x1a\x1f\x00\x0c
-SEQ04  \x0e\x01\x00 \x02\x00\x00 <\x01\x00 
+SEQ01 \x1a\x1f
+SEQ13 
+SEQ04  \x0e\x01\x00 
+SEQ12  <\x01\x00 
 SEQ10  \x0e\x01\x00 
-FILE1 TextWindowOffv\x81\x1f\x00"\x00 
+SEQ12 \x03\x04\x00\x00TextWindowOff SPC02 \x00"\x00 
 SEQ10   
-SEQ01 \xca\x00\x00\x0c
+SEQ01 \xca\x00
+SEQ13 
 SEQ04  \xa6\x17\x00 
-FILE1 BgNormalFadeIn SPC01 J"\x00 
-SEQ10   \x00\x00 \x02\x00\x00 h\n\x00 
+SEQ12 \x03\x04\x00\x00BgNormalFadeIn SPC01 J"\x00 
+SEQ10   \x00\x00 
+SEQ12  h\n\x00 
 SEQ10   
-SEQ01 \xc8\x00\x00\x0c
-SEQ04  \xa6\x17\x00 \x02\x00\x00 \xd0\x17\x00 
-SEQ10  \x0e\x01\x00 \x02\x00\x00\x03\x05\x00\x00TextWindowOnDirect SPC01 \xc8"\x00 
+SEQ01 \xc8\x00
+SEQ13 
+SEQ04  \xa6\x17\x00 
+SEQ12  \xd0\x17\x00 
 SEQ10  \x0e\x01\x00 
-FILE2 TextClosev\x81\x1f\xfc"\x00 
+SEQ12 \x03\x05\x00\x00TextWindowOnDirect SPC01 \xc8"\x00 
+SEQ10  \x0e\x01\x00 
+SEQ12 \x03\x03\x00\x00TextClose SPC02 \xfc"\x00 
 ENDF

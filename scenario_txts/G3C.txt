@@ -1,14 +1,16 @@
 STRF
 v\x06\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xd2\x04\x00  
-SEQ01 C\x00\x00\x0c
+SEQ01 C\x00
+SEQ13 
 SEQ04 
 SEQ08 .\\Data\\Script\\Bg.Fob SPC03  \x00\x00 
-FILE1 BgAutoFadeIn SPC03 J\x00\x00 
+SEQ12 \x03\x04\x00\x00BgAutoFadeIn SPC03 J\x00\x00 
 SEQ10   
-SEQ01 \x08\x01\x00\x0c
+SEQ01 \x08\x01
+SEQ13 
 SEQ04 
-SEQ08 .\\Data\\Script\\Bgm.Fobv\x81\x1f\x88\x00\x00 
-SEQ02 \x00\x00PlayCD SPC01 \xb2\x00\x00 
+SEQ08 .\\Data\\Script\\Bgm.Fob SPC02 \x88\x00\x00 
+SEQ02 PlayCD SPC01 \xb2\x00\x00 
 SEQ06 SCEG03_001\x00 \xce\x00\x00 
 SEQ07  
 SEQ01 
@@ -20,12 +22,16 @@ SEQ05 \x03)\x00\x00
 \n錦城は微かに笑うと、拓司の横へと体を移動させた。@
 寄り添って寝転がるような形になる。\w\z
 \x00  
-SEQ01 \x12\x01\x00\x0c
-SEQ04 \x03\x07\x00\x00.\\Data\\Script\\TextFunc.Fob SPC01 \xd6\x01\x00 
-SEQ02 \x00\x00TextOn SPC01 \x04\x02\x00 
+SEQ01 \x12\x01
+SEQ13 
+SEQ04 
+SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 \xd6\x01\x00 
+SEQ02 TextOn SPC01 \x04\x02\x00 
 SEQ10   
-SEQ01 \xc8\x00\x00\x0c
-SEQ04   \x00\x00 \x02\x00\x00 J\x00\x00 
+SEQ01 \xc8\x00
+SEQ13 
+SEQ04   \x00\x00 
+SEQ12  J\x00\x00 
 SEQ06 SCEG03_002\x00 T\x02\x00 
 SEQ07  
 SEQ01 
@@ -40,10 +46,12 @@ SEQ05 \x03a\x00\x00
 錦城\n　「ふふ。でも、そういう謙虚な虎菱くんが、私は好きよ。@
 　　……さあ、今日もご褒美をあげる」\w\z
 \x00  
-SEQ01 \x98\x02\x00\x0c
-SEQ04  \xd6\x01\x00 \x02\x00\x00 \x04\x02\x00 
+SEQ01 \x98\x02
+SEQ13 
+SEQ04  \xd6\x01\x00 
+SEQ12  \x04\x02\x00 
 SEQ10  \xd6\x01\x00 
-FILE2 TextClosev\x81\x1fb\x04\x00 
-SEQ10 \x03\t\x00\x00.\\Data\\Script\\Scenario\\G3subC.Fobv\x81\x1f\x82\x04\x00 
-SEQ02 \x00\x00startv\x81\x1f\xb8\x04\x00 
+SEQ12 \x03\x03\x00\x00TextClose SPC02 b\x04\x00 
+SEQ10 \x03\t\x00\x00.\\Data\\Script\\Scenario\\G3subC.Fob SPC02 \x82\x04\x00 
+SEQ02 start SPC02 \xb8\x04\x00 
 ENDF

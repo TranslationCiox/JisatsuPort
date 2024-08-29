@@ -2,7 +2,8 @@ STRF
 \xbf\x06\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00T\x05\x00\x03\x03\x00\x00SCE100_001\x00 \x06\x00\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xe0\xab\x00\x0c
+SEQ03 \xe0\xab
+SEQ13 
 SEQ05 \x03q\x00\x00
  
 拓司\n　「雲居さんにいっておきたいことがある」@
@@ -10,13 +11,16 @@ SEQ05 \x03q\x00\x00
 拓司\n　「宇宙人とか電波とか、そういった話はみんなの前では控えて\n　　ほしい。\pそれでなくてもみんな不安なんだ。\pそういう……わ\n　　けのわからないことをいわれると、神経に響く。\pそしてもう\n　　ひとつ。\p早桃に限らず、誰かをスパイ呼ばわりするようなマ\n　　ネは金輪際やめてくれ。\pそれは雲居さんのいう、団結を乱\n　　す行為そのものだ。\p内部崩壊の引き金になりかねない」\
 
 \x00  
-SEQ01 J\x00\x00\x0c
-SEQ04 \x03\x07\x00\x00.\\Data\\Script\\TextFunc.Fob SPC01 .\x02\x00 
-SEQ02 \x00\x00TextOn SPC01 \\\x02\x00 
+SEQ01 J\x00
+SEQ13 
+SEQ04 
+SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 .\x02\x00 
+SEQ02 TextOn SPC01 \\\x02\x00 
 SEQ06 SCE100_002\x00 x\x02\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xe4\xab\x00\x0c
+SEQ03 \xe4\xab
+SEQ13 
 SEQ05 \x03\x8d\x00\x00
  
 早桃\n　「そうよ、そうよ！」@
@@ -28,8 +32,10 @@ SEQ05 \x03\x8d\x00\x00
 /*▲SE01　停止*/\a4,2,0,0,\nただ黙ってラジオの前に戻って、一日中、耳を貼り付かせるよう\nにしてノイズに聞き入っていた。\
 
 \x00\x00\x00  
-SEQ01 \xbc\x02\x00\x0c
-SEQ04  .\x02\x00 \x02\x00\x00 \\\x02\x00 
+SEQ01 \xbc\x02
+SEQ13 
+SEQ04  .\x02\x00 
+SEQ12  \\\x02\x00 
 SEQ10  .\x02\x00 
-FILE2 TextClosev\x81\x1f6\x05\x00 
+SEQ12 \x03\x03\x00\x00TextClose SPC02 6\x05\x00 
 ENDF

@@ -1,18 +1,21 @@
 STRF
 \xaa\n\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00d\x08\x00  
-SEQ01 H\x00\x00\x0c
+SEQ01 H\x00
+SEQ13 
 SEQ04 
 SEQ08 .\\Data\\Script\\Bg.Fob SPC03  \x00\x00 
-FILE1 BgAutoFadeIn SPC03 J\x00\x00 
+SEQ12 \x03\x04\x00\x00BgAutoFadeIn SPC03 J\x00\x00 
 SEQ10   
-SEQ01 \x05\x01\x00\x0c
+SEQ01 \x05\x01
+SEQ13 
 SEQ04 
-SEQ08 .\\Data\\Script\\Bgm.Fobv\x81\x1f\x88\x00\x00 
-SEQ02 \x00\x00PlayCD SPC01 \xb2\x00\x00 
+SEQ08 .\\Data\\Script\\Bgm.Fob SPC02 \x88\x00\x00 
+SEQ02 PlayCD SPC01 \xb2\x00\x00 
 SEQ06 SCE005_001\x00 \xce\x00\x00 
 SEQ07  
 SEQ01 
-SEQ03 p\x17\x00\x0c
+SEQ03 p\x17
+SEQ13 
 SEQ05 \x03H\x00\x00
  
 早桃\n　「……おにいちゃん？」@
@@ -23,13 +26,16 @@ SEQ05 \x03H\x00\x00
 なぜなら夜風なんか、これっぽっちも吹いていないじゃないか。\
 
 \x00\x00\x00  
-SEQ01 \x12\x01\x00\x0c
-SEQ04 \x03\x07\x00\x00.\\Data\\Script\\TextFunc.Fob SPC01 R\x02\x00 
-SEQ02 \x00\x00TextOn SPC01 \x80\x02\x00 
+SEQ01 \x12\x01
+SEQ13 
+SEQ04 
+SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 R\x02\x00 
+SEQ02 TextOn SPC01 \x80\x02\x00 
 SEQ06 SCE005_002\x00 \x9c\x02\x00 
 SEQ07  
 SEQ01 
-SEQ03 t\x17\x00\x0c
+SEQ03 t\x17
+SEQ13 
 SEQ05 \x03^\x00\x00
  
 拓司\n　「……妄想か？」@
@@ -44,12 +50,15 @@ SEQ05 \x03^\x00\x00
 早桃\n　「たぶん」\
 
 \x00\x00\x00  
-SEQ01 \xe0\x02\x00\x0c
-SEQ04  R\x02\x00 \x02\x00\x00 \x80\x02\x00 
+SEQ01 \xe0\x02
+SEQ13 
+SEQ04  R\x02\x00 
+SEQ12  \x80\x02\x00 
 SEQ06 SCE005_003\x00 \x92\x04\x00 
 SEQ07  
 SEQ01 
-SEQ03 x\x17\x00\x0c
+SEQ03 x\x17
+SEQ13 
 SEQ05 \x03\xa8\x00\x00
  
 早桃から立ち上る熱気のようなものが、重い夏の空気を微かに歪\nませている。@
@@ -65,16 +74,20 @@ SEQ05 \x03\xa8\x00\x00
 早桃はそれを自分の鼻先に持っていき、すうっと、息を吸い込ん\nだ。\
 
 \x00  
-SEQ01 \xd6\x04\x00\x0c
-SEQ04  R\x02\x00 \x02\x00\x00 \x80\x02\x00 
+SEQ01 \xd6\x04
+SEQ13 
+SEQ04  R\x02\x00 
+SEQ12  \x80\x02\x00 
 SEQ10 \x03\x14\x00\x00
 CHOICE
 「……出て行け」と拓司はいった\n「……来いよ」と拓司はいった\n\l0,2,
 ENDCHOICE
 
 \x00\x00\x00  
-SEQ01 \xb0\x07\x00\x0c
-SEQ04  R\x02\x00 \x02\x00\x00 \x80\x02\x00 
+SEQ01 \xb0\x07
+SEQ13 
+SEQ04  R\x02\x00 
+SEQ12  \x80\x02\x00 
 SEQ10  R\x02\x00 
-FILE2 TextClosev\x81\x1fF\x08\x00 
+SEQ12 \x03\x03\x00\x00TextClose SPC02 F\x08\x00 
 ENDF

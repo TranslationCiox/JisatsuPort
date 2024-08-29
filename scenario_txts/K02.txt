@@ -10,9 +10,11 @@ SEQ05 \x03T\x00\x00
 何日目だったか、覚えていない。\pいいかげんいらいらした私は、\nどうして私につきまとうのかと、若草ゆきに厳しく問いただした。\n\p若草ゆきはいっしゅん呆気にとられた様子だったけれど、やがて\n気弱に笑って\n「お友達になりたいと思ったから」@
 とだけいった。\w\z
 \x00  
-SEQ01 J\x00\x00\x0c
-SEQ04 \x03\x07\x00\x00.\\Data\\Script\\TextFunc.Fob SPC01 \xba\x01\x00 
-SEQ02 \x00\x00TextOn SPC01 \xe8\x01\x00 
+SEQ01 J\x00
+SEQ13 
+SEQ04 
+SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 \xba\x01\x00 
+SEQ02 TextOn SPC01 \xe8\x01\x00 
 SEQ06 SCEK02_002\x00 \x04\x02\x00 
 SEQ07  
 SEQ01 
@@ -24,8 +26,10 @@ SEQ05 \x03C\x00\x00
 本当に寂しそうな笑顔だった。@
 その日の夕方、私は自分からゆきを誘ったのだった。\w\z
 \x00\x00\x00  
-SEQ01 H\x02\x00\x0c
-SEQ04  \xba\x01\x00 \x02\x00\x00 \xe8\x01\x00 
+SEQ01 H\x02
+SEQ13 
+SEQ04  \xba\x01\x00 
+SEQ12  \xe8\x01\x00 
 SEQ10  \xba\x01\x00 
-FILE2 TextClosev\x81\x1f\x9a\x03\x00 
+SEQ12 \x03\x03\x00\x00TextClose SPC02 \x9a\x03\x00 
 ENDF

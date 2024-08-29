@@ -8,9 +8,11 @@ SEQ05 \x03\x11\x00\x00
 \n\n\n\n\n\n\n\n\n\n　　　　　　　　　　　　　『１３日目』\
 
 \x00  
-SEQ01 J\x00\x00\x0c
-SEQ04 \x03\x07\x00\x00.\\Data\\Script\\TextFunc.Fob SPC01 \xae\x00\x00 
-SEQ02 \x00\x00TextOn SPC01 \xdc\x00\x00 
+SEQ01 J\x00
+SEQ13 
+SEQ04 
+SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 \xae\x00\x00 
+SEQ02 TextOn SPC01 \xdc\x00\x00 
 SEQ06 SCE227_002\x00 \xf8\x00\x00 
 SEQ07  
 SEQ01 
@@ -28,8 +30,10 @@ SEQ05 \x03u\x00\x00
 努めて無表情のカンナを、錦城は勝ち誇って見下ろした。\
 
 \x00\x00\x00  
-SEQ01 <\x01\x00\x0c
-SEQ04  \xae\x00\x00 \x02\x00\x00 \xdc\x00\x00 
+SEQ01 <\x01
+SEQ13 
+SEQ04  \xae\x00\x00 
+SEQ12  \xdc\x00\x00 
 SEQ06 SCE227_003\x00 J\x03\x00 
 SEQ07  
 SEQ01 
@@ -45,8 +49,10 @@ SEQ05 \x03]\x00\x00
 カンナ\n　「……すみませんでした」\
 
 \x00  
-SEQ01 \x8e\x03\x00\x0c
-SEQ04  \xae\x00\x00 \x02\x00\x00 \xdc\x00\x00 
+SEQ01 \x8e\x03
+SEQ13 
+SEQ04  \xae\x00\x00 
+SEQ12  \xdc\x00\x00 
 SEQ06 SCE227_004\x00 <\x05\x00 
 SEQ07  
 SEQ01 
@@ -63,8 +69,10 @@ SEQ05 \x03S\x00\x00
 カンナ\n　「便器って－－」\
 
 \x00  
-SEQ01 \x80\x05\x00\x0c
-SEQ04  \xae\x00\x00 \x02\x00\x00 \xdc\x00\x00 
+SEQ01 \x80\x05
+SEQ13 
+SEQ04  \xae\x00\x00 
+SEQ12  \xdc\x00\x00 
 SEQ06 SCE227_005\x00 \x06\x07\x00 
 SEQ07  
 SEQ01 
@@ -83,8 +91,10 @@ SEQ05 \x03u\x00\x00
 錦城\n　「便器」\
 
 \x00\x00\x00  
-SEQ01 J\x07\x00\x0c
-SEQ04  \xae\x00\x00 \x02\x00\x00 \xdc\x00\x00 
+SEQ01 J\x07
+SEQ13 
+SEQ04  \xae\x00\x00 
+SEQ12  \xdc\x00\x00 
 SEQ06 SCE227_006\x00 X\t\x00 
 SEQ07  
 SEQ01 
@@ -101,8 +111,10 @@ SEQ05 \x03n\x00\x00
 カンナ\n　「……よ、喜んで錦城先生の人間便器になります」\
 
 \x00  
-SEQ01 \x9c\t\x00\x0c
-SEQ04  \xae\x00\x00 \x02\x00\x00 \xdc\x00\x00 
+SEQ01 \x9c\t
+SEQ13 
+SEQ04  \xae\x00\x00 
+SEQ12  \xdc\x00\x00 
 SEQ06 SCE227_007\x00 \x8e\x0b\x00 
 SEQ07  
 SEQ01 
@@ -119,13 +131,16 @@ SEQ05 \x03y\x00\x00
 カンナ\n　「黙っていて。\p大丈夫だから。\pこんなの、なんでもないから」\
 
 \x00\x00\x00  
-SEQ01 \xd2\x0b\x00\x0c
-SEQ04  \xae\x00\x00 \x02\x00\x00 \xdc\x00\x00 
+SEQ01 \xd2\x0b
+SEQ13 
+SEQ04  \xae\x00\x00 
+SEQ12  \xdc\x00\x00 
 SEQ10   
-SEQ01 \x05\x01\x00\x0c
+SEQ01 \x05\x01
+SEQ13 
 SEQ04 
-SEQ08 .\\Data\\Script\\Bgm.Fobv\x81\x1f\n\x0e\x00 
-SEQ02 \x00\x00PlayCD SPC01 4\x0e\x00 
+SEQ08 .\\Data\\Script\\Bgm.Fob SPC02 \n\x0e\x00 
+SEQ02 PlayCD SPC01 4\x0e\x00 
 SEQ06 SCE227_008\x00 P\x0e\x00 
 SEQ07  
 SEQ01 
@@ -140,8 +155,10 @@ SEQ05 \x03\xa1\x00\x00
 /*■HCG18　表示（クロスフェード）*/\a7,-2,-2,0,\a0,89,2,0,\a6,-2,0,0,\n錦城\n　「しっかりみておくのよ。\p誰か一人でも目を反らした場合、彼\n　　女の努力は無駄になりますからね？\p　いい、これは授業なの。\n　　\p生意気な態度をとったガキがどうなるか、それを教えてあげ\n　　ているの。\pほら、便器ちゃん。はやく口をつけなさいよ！」\
 
   
-SEQ01 \x94\x0e\x00\x0c
-SEQ04  \xae\x00\x00 \x02\x00\x00 \xdc\x00\x00 
+SEQ01 \x94\x0e
+SEQ13 
+SEQ04  \xae\x00\x00 
+SEQ12  \xdc\x00\x00 
 SEQ06 SCE227_009\x00 R\x11\x00 
 SEQ07  
 SEQ01 
@@ -158,8 +175,10 @@ SEQ05 \x03\x8a\x00\x00
 カンナ\n　「くむ……ごきゅっ……ごきゅ……むぐんん……」\
 
 \x00\x00\x00  
-SEQ01 \x96\x11\x00\x0c
-SEQ04  \xae\x00\x00 \x02\x00\x00 \xdc\x00\x00 
+SEQ01 \x96\x11
+SEQ13 
+SEQ04  \xae\x00\x00 
+SEQ12  \xdc\x00\x00 
 SEQ06 SCE227_010\x00 \xf8\x13\x00 
 SEQ07  
 SEQ01 
@@ -171,15 +190,18 @@ SEQ05 \x03|\x00\x00
 錦城はカンナの頭を両手で固定し、狂気に支配された顔で笑い続\nけた。\
 
 \x00\x00\x00  
-SEQ01 <\x14\x00\x0c
-SEQ04  \xae\x00\x00 \x02\x00\x00 \xdc\x00\x00 
+SEQ01 <\x14
+SEQ13 
+SEQ04  \xae\x00\x00 
+SEQ12  \xdc\x00\x00 
 SEQ10   
-SEQ01 \xc8\x00\x00\x0c
+SEQ01 \xc8\x00
+SEQ13 
 SEQ04 
 SEQ08 .\\Data\\Script\\Bg.Fob SPC03 \x80\x16\x00 
-FILE1 BgAutoFadeIn SPC03 \xaa\x16\x00 
+SEQ12 \x03\x04\x00\x00BgAutoFadeIn SPC03 \xaa\x16\x00 
 SEQ10  \n\x0e\x00 
-SEQ02 \x00\x00StopCD SPC01 \xda\x16\x00 
+SEQ02 StopCD SPC01 \xda\x16\x00 
 SEQ10  \xae\x00\x00 
-FILE2 TextClosev\x81\x1f\x02\x17\x00 
+SEQ12 \x03\x03\x00\x00TextClose SPC02 \x02\x17\x00 
 ENDF

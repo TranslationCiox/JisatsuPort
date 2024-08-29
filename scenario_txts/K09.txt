@@ -12,19 +12,23 @@ SEQ05 \x03;\x00\x00
 「袋に詰めて、落とすの」@
 「猫を？」\w\z
 \x00\x00\x00  
-SEQ01 J\x00\x00\x0c
-SEQ04 \x03\x07\x00\x00.\\Data\\Script\\TextFunc.Fob SPC01 V\x01\x00 
-SEQ02 \x00\x00TextOn SPC01 \x84\x01\x00 
+SEQ01 J\x00
+SEQ13 
+SEQ04 
+SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 V\x01\x00 
+SEQ02 TextOn SPC01 \x84\x01\x00 
 SEQ10   
-SEQ01 \xc8\x00\x00\x0c
+SEQ01 \xc8\x00
+SEQ13 
 SEQ04 
 SEQ08 .\\Data\\Script\\Bg.Fob SPC03 \xba\x01\x00 
-FILE1 BgAutoFadeIn SPC03 \xe4\x01\x00 
+SEQ12 \x03\x04\x00\x00BgAutoFadeIn SPC03 \xe4\x01\x00 
 SEQ10   
-SEQ01 \t\x01\x00\x0c
+SEQ01 \t\x01
+SEQ13 
 SEQ04 
-SEQ08 .\\Data\\Script\\Bgm.Fobv\x81\x1f"\x02\x00 
-SEQ02 \x00\x00PlayCD SPC01 L\x02\x00 
+SEQ08 .\\Data\\Script\\Bgm.Fob SPC02 "\x02\x00 
+SEQ02 PlayCD SPC01 L\x02\x00 
 SEQ06 SCEK09_002\x00 h\x02\x00 
 SEQ07  
 SEQ01 
@@ -43,8 +47,10 @@ SEQ05 \x03\x85\x00\x00
 「わかったよ」と私はいって遮った。@
 「もうわかったから。ありがとう、ゆきちゃん」\w\z
 \x00  
-SEQ01 \xac\x02\x00\x0c
-SEQ04  V\x01\x00 \x02\x00\x00 \x84\x01\x00 
+SEQ01 \xac\x02
+SEQ13 
+SEQ04  V\x01\x00 
+SEQ12  \x84\x01\x00 
 SEQ06 SCEK09_003\x00 \xfa\x04\x00 
 SEQ07  
 SEQ01 
@@ -58,8 +64,10 @@ SEQ05 \x03y\x00\x00
 嫌悪と軽蔑がわき上がってくるのも抑えられなかった。@
 でも、秘密の大きさは、私に対する信頼の大きさを意味していた。\n\p信頼の輝きが、秘密の暗さを消し去るくらい明るいと信じてこそ\nの告白である以上、秘密が大きくて暗いほど、私は喜ぶべきなの\nだ。\w\z
 \x00  
-SEQ01 >\x05\x00\x0c
-SEQ04  V\x01\x00 \x02\x00\x00 \x84\x01\x00 
+SEQ01 >\x05
+SEQ13 
+SEQ04  V\x01\x00 
+SEQ12  \x84\x01\x00 
 SEQ06 SCEK09_004\x00 \\\x07\x00 
 SEQ07  
 SEQ01 
@@ -77,10 +85,12 @@ SEQ05 \x03\xd0\x00\x00
 　しばらく間をおいてから、ゆきはぽつりといった。@
 「そうすれば死ぬのが怖くなくなると思うから」\w\z
 \x00\x00\x00  
-SEQ01 \xa0\x07\x00\x0c
-SEQ04  V\x01\x00 \x02\x00\x00 \x84\x01\x00 
+SEQ01 \xa0\x07
+SEQ13 
+SEQ04  V\x01\x00 
+SEQ12  \x84\x01\x00 
 SEQ10  "\x02\x00 
-SEQ02 \x00\x00StopCD SPC01 &\x0b\x00 
+SEQ02 StopCD SPC01 &\x0b\x00 
 SEQ10  V\x01\x00 
-FILE2 TextClosev\x81\x1fN\x0b\x00 
+SEQ12 \x03\x03\x00\x00TextClose SPC02 N\x0b\x00 
 ENDF

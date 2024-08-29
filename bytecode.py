@@ -17,7 +17,7 @@ patterns = [
         "action": "\nSEQ01"
     },
     {
-        "pattern": [b'\x02', b'\x00', b'\x00', b'\x03', b'\x02'],
+        "pattern": [b'\x02', b'\x00', b'\x00', b'\x03', b'\x02', b'\x00', b'\x00'],
         "action": "\nSEQ02 "
     },
     {
@@ -45,172 +45,41 @@ patterns = [
         "action": "\nSEQ08 "
     },
     {
-        "pattern": [b'\x02', b'\x00', b'\x00', b'\x03', b'\x03', b'\x00', b'\x00'],
-        "action": "\nFILE2 "
+        "pattern": [b'\x02', b'\x00', b'\x00', b'5'],
+        "action": "\nSEQ10 "
+    },
+    {
+        "pattern": [b'\x03', b'\x07', b'\x00', b'\x00'],
+        "action": "\nSEQ11 "
+    },
+    {
+        "pattern": [b'\x02', b'\x00', b'\x00'],
+        "action": "\nSEQ12 "
+    },
+    {
+        "pattern": [b'\x00', b'\x0c'],
+        "action": "\nSEQ13 "
     },
     {
         "pattern": [b'\x02', b'\x00', b'\x00', b'\x03', b'\x04', b'\x00', b'\x00'],
         "action": "\nFILE1 "
     },
     {
-        "pattern": [b'\x02', b'\x00', b'\x00', b'5'],
-        "action": "\nSEQ10 "
+        "pattern": [b'\x02', b'\x00', b'\x00', b'\x03', b'\x03', b'\x00', b'\x00'],
+        "action": "\nFILE2 "
     },
     {
         "pattern": [b'\x81\x1f'],
         "action": " SPC01 "
     },
     {
-        "pattern": [b's\x81\x1f'],
+        "pattern": [b'v\x81\x1f'],
         "action": " SPC02 "
     },
     {
         "pattern": [b'sv\x81\x1f'],
         "action": " SPC03 "
     },
-    # {
-    #     "pattern": [b'\r', b'\x00', b'\x00', b'\x1e', b'\x8c\x01', b'\x00', b'\r', b'\x02', b'\x1e'],
-    #     # Some kind of variable, that gets assigned a value before a dialogue fragment?
-    #     "action": "TEXT1 "
-    # },
-    # {
-    #     "pattern": [b'\x0c', b'"', b'\x03'],
-    #     # Seems to be related to TEXT1
-    #     "action": " TEXT2 "
-    # },
-    # {
-    #     "pattern": [b'\x02', b'\x1f', b'\xde\x02', b'\x1e', b'\x02', b'5', b' ', b'\x1e', b'\r', b',', b'\x02'],
-    #     # (at the end of scenario files which require a FLAG)
-    #     "action": "REQUIRE_SCENARIO_FLAG "
-    # },
-    # {
-    #     "pattern": [b'\x06', b'\x0b', b'\x0c', b'\x02', b'"', b'2'],
-    #     # (at the end of BMP loads in CG)
-    #     "action": "BMP_FLAGS "
-    # },
-    # {
-    #     "pattern": [b'\x02', b'\xc4', b'2', b'\xb6\x0b', b'\x1f', b'\xfe', b'\x1e'],
-    #     # (at the end of WAV loads)
-    #     "action": "WAV_FLAGS"
-    # },
-    # {
-    #     "pattern": [b'\x02', b'\x03', b'\x05'],
-    #     # Seems to LOAD WAV files
-    #     "action": "\nWAVL "
-    # },
-    #
-    # {
-    #     "pattern": [b'\x02', b'\x1f', b'\xb6\x01', b'\x1e', b'\x02', b'5'],
-    #     # (Used a lot in SCENARIOROOT)
-    #     "action": "SCENARIO_FLAGS "
-    # },
-    # {
-    #     "pattern": [b'\02', b'\x1f', b'\xde\x02', b'\x1e', b'\x02', b'5'],
-    #     # (Used a lot in SCENARIOROOT)
-    #     "action": "CHOICE_FLAG_REQUIRED"
-    # },
-    # {
-    #     "pattern": [b'6', b'\xf1', b'\x00'],
-    #     # Seems to END the script
-    #     "action": "\nEND_SCRIPT"
-    # },
-    # {
-    #     "pattern": [b'v\x81\x1f'],
-    #     # Seems to indicate a var for commands
-    #     "action": " VAR1 "
-    # },
-    # {
-    #     "pattern": [b'sv\x81\x1f'],
-    #     # Seems to indicate a var for commands
-    #     "action": " VAR2"
-    # },
-    # {
-    #     "pattern": [b'\x02', b'\x03', b'\x02'],
-    #     # seems to apply something.
-    #     "action": "APPlY_2 "
-    # },
-    # {
-    #     "pattern": [b'\x02', b'\x03', b'\x03'],
-    #     # seems to apply something.
-    #     "action": "APPLY_3 "
-    # },
-    # {
-    #     "pattern": [b'\x03', b'\x04'],
-    #     # Goes before certain calls (Textbox, BGFADEIN)
-    #     "action": " APPLY_4 "
-    # },
-    # {
-    #     "pattern": [b'\x03', b'\x05'],
-    #     # Seems to LOAD WAV and BMP files
-    #     "action": "\nCMD5 "
-    # },
-    # {
-    #     "pattern": [b'\x03', b'\x06'],
-    #     # Seems to LOAD script FOB calls, sometimes other things.
-    #     "action": "\nAPPLY_FILE "
-    # },
-    # {
-    #     "pattern": [b'\x03', b'\x08'],
-    #     # Seems to LOAD Scenario FOB files.
-    #     "action": "\nCMD8 "
-    # },
-    # {
-    #     "pattern": [b'\x03', b'\t'],
-    #     # Seems to load HEROINE and 085AC Scenario FOB files.
-    #     "action": "\nHERO "
-    # },
-    # {
-    #     "pattern": [b'\x03', b'\n'],
-    #     # Seems to load SCE204SEL Scenario FOB files.
-    #     "action": "\nS204 "
-    # },
-    # {
-    #     "pattern": [b'\x1e', b'\x00', b'\x00', b'\x00', b'\x00'],
-    #     # Seems to END command statements.
-    #     "action": " END"
-    # },
-    # {
-    #     "pattern": [b'\x02', b'\x00', b'\x00', b'\xef', b'!'],
-    #     # Seems to END CSCEXX_XXX statements.
-    #     "action": "SCE_TEXT"
-    # },
-    # {
-    #     "pattern": [b'\x1f', b'j'],
-    #     # Seems to indicate if a SCENARIO has a choice (flag).
-    #     "action": "CHOICE_PRESENT"
-    # },
-    # {
-    #     "pattern": [b'\x81\x1f'],
-    #     # Might be a command terminator
-    #     "action": " RUNF"
-    # },
-    # {
-    #     "pattern": [b'\r', b',', b'\x02'],
-    #     # Some kind of COMMAND
-    #     "action": "FLG3 "
-    # },
-    # {
-    #     "pattern": [b'\r', b'\x02'],
-    #     # Some kind of COMMAND.
-    #     "action": " SET_VAR2"
-    # },
-    # {
-    #     "pattern": [b'\r', b'\x00', b'\x00'],
-    #     # Some kind of COMMAND
-    #     "action": "\nINIT"
-    # },
-    # {
-    #     "pattern": [b'\x02', b'\x00', b'\x00', b'"'],
-    #     # Seems to be related to FLG1
-    #     "action": " INT"
-    # },
-
-    # {
-    #     "pattern": [b'\x1f', b' ', b'\x00', b'\x00', b'\x1e'],
-    #     # Likely some kind of NULL?
-    #     "action": " NULL "
-    # },
-
     {
         "pattern": [b'\x1e'],
         # Likely a  delimiter (group)

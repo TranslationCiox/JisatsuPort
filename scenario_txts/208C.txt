@@ -12,9 +12,11 @@ SEQ05 \x03\x90\x00\x00
 ナタネ\n　「……」\
 
 \x00\x00\x00  
-SEQ01 J\x00\x00\x0c
-SEQ04 \x03\x07\x00\x00.\\Data\\Script\\TextFunc.Fob SPC01 \xaa\x02\x00 
-SEQ02 \x00\x00TextOn SPC01 \xd8\x02\x00 
+SEQ01 J\x00
+SEQ13 
+SEQ04 
+SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 \xaa\x02\x00 
+SEQ02 TextOn SPC01 \xd8\x02\x00 
 SEQ10  \xaa\x02\x00 
-FILE2 TextClosev\x81\x1f\x00\x03\x00 
+SEQ12 \x03\x03\x00\x00TextClose SPC02 \x00\x03\x00 
 ENDF

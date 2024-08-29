@@ -9,9 +9,11 @@ SEQ05 \x03O\x00\x00
 海外文学に詳しかったり、才色兼備であることなどは知っていた\nけれど、\p意外にもホラー映画が好きだったり、\pケーキマニアだっ\nたり、\pマンガに詳しかったり……。@
 一番の驚きは、彼女もまた、女子校の空気に違和感を覚えていると\nいうことだった。\w\z
 \x00\x00\x00  
-SEQ01 J\x00\x00\x0c
-SEQ04 \x03\x07\x00\x00.\\Data\\Script\\TextFunc.Fob SPC01 \xa6\x01\x00 
-SEQ02 \x00\x00TextOn SPC01 \xd4\x01\x00 
+SEQ01 J\x00
+SEQ13 
+SEQ04 
+SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 \xa6\x01\x00 
+SEQ02 TextOn SPC01 \xd4\x01\x00 
 SEQ06 SCEK03_002\x00 \xf0\x01\x00 
 SEQ07  
 SEQ01 
@@ -27,19 +29,23 @@ SEQ05 \x03\xc5\x00\x00
 こちらが世界を否定すれば、世界だってこちらを否定し返すという\nことを、彼女は理解していた。@
 学生としては器用すぎるやりかたで、若草ゆきは世界と折り合いを\nつけていたのだった。\w\z
 \x00\x00\x00  
-SEQ01 4\x02\x00\x0c
-SEQ04  \xa6\x01\x00 \x02\x00\x00 \xd4\x01\x00 
+SEQ01 4\x02
+SEQ13 
+SEQ04  \xa6\x01\x00 
+SEQ12  \xd4\x01\x00 
 SEQ10 \x03\x1c\x00\x00
 CHOICE
 そうしたゆきのやり方は、卑怯な妥協だと思えた。\nそうしたゆきのやり方は、スマートだと思えた。\n\l0,2,
 ENDCHOICE
 
 \x00\x00\x00  
-SEQ01 \x82\x05\x00\x0c
-SEQ04  \xa6\x01\x00 \x02\x00\x00 \xd4\x01\x00 
+SEQ01 \x82\x05
+SEQ13 
+SEQ04  \xa6\x01\x00 
+SEQ12  \xd4\x01\x00 
 SEQ10 
-SEQ08 .\\Data\\Script\\Bgm.Fobv\x81\x1f,\x06\x00 
-SEQ02 \x00\x00StopCD SPC01 V\x06\x00 
+SEQ08 .\\Data\\Script\\Bgm.Fob SPC02 ,\x06\x00 
+SEQ02 StopCD SPC01 V\x06\x00 
 SEQ10  \xa6\x01\x00 
-FILE2 TextClosev\x81\x1f~\x06\x00 
+SEQ12 \x03\x03\x00\x00TextClose SPC02 ~\x06\x00 
 ENDF

@@ -16,9 +16,11 @@ SEQ05 \x03\x98\x00\x00
 \n－－危ないところだった。\pおれはいま、妄想の深みから生還した\nのだ。\pやはり、最終的に戻ってくるのは……世界の中心は、ここ\nなのだ。\p『白い部屋の世界』は、夢だった。\p教授も、ナタネも、\n青い鳥も、パイプベッドも、換気ファンも、発狂した自分も、全\n部実在しない、想像の産物だったのだ。\
 
   
-SEQ01 J\x00\x00\x0c
-SEQ04 \x03\x07\x00\x00.\\Data\\Script\\TextFunc.Fob SPC01 \xca\x02\x00 
-SEQ02 \x00\x00TextOn SPC01 \xf8\x02\x00 
+SEQ01 J\x00
+SEQ13 
+SEQ04 
+SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 \xca\x02\x00 
+SEQ02 TextOn SPC01 \xf8\x02\x00 
 SEQ10  \xca\x02\x00 
-FILE2 TextClosev\x81\x1f \x03\x00 
+SEQ12 \x03\x03\x00\x00TextClose SPC02  \x03\x00 
 ENDF

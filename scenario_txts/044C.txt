@@ -1,13 +1,15 @@
 STRF
 x(\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\x92!\x00  
-SEQ01 \xc8\x00\x00\x0c
+SEQ01 \xc8\x00
+SEQ13 
 SEQ04 
 SEQ08 .\\Data\\Script\\Bg.Fob SPC03  \x00\x00 
-FILE1 BgAutoFadeIn SPC03 J\x00\x00 
+SEQ12 \x03\x04\x00\x00BgAutoFadeIn SPC03 J\x00\x00 
 SEQ06 SCE044_001\x00 n\x00\x00 
 SEQ07  
 SEQ01 
-SEQ03 `T\x00\x0c
+SEQ03 `T
+SEQ13 
 SEQ05 \x03V\x00\x00
  
 職員室で、錦城が「これよ」と指さしたダンボール箱は、意外と\n小さかった。@
@@ -15,13 +17,16 @@ SEQ05 \x03V\x00\x00
 \n錦城\n　「はいはい頑張って。男の子でしょ？　うふふ……」\n\p拓司\n　「勘弁っすよ……どこまで運ぶんですか？」@
 錦城\n　「理科準備室」\w\z
 \x00  
-SEQ01 \xb2\x00\x00\x0c
-SEQ04 \x03\x07\x00\x00.\\Data\\Script\\TextFunc.Fob SPC01 *\x02\x00 
-SEQ02 \x00\x00TextOn SPC01 X\x02\x00 
+SEQ01 \xb2\x00
+SEQ13 
+SEQ04 
+SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 *\x02\x00 
+SEQ02 TextOn SPC01 X\x02\x00 
 SEQ06 SCE044_002\x00 t\x02\x00 
 SEQ07  
 SEQ01 
-SEQ03 dT\x00\x0c
+SEQ03 dT
+SEQ13 
 SEQ05 \x03y\x00\x00
  
 　理科準備室は、旧校舎の最上階、４階にある。@
@@ -31,15 +36,20 @@ SEQ05 \x03y\x00\x00
 \n錦城は鍵を使って理科実験室のドアを開け、拓司をそこに導き入\nれた。@
 締め切られていた実験室の中にはむっと熱気がこもり、息苦しい\nぐらいだった。\w\z
 \x00  
-SEQ01 \xb8\x02\x00\x0c
-SEQ04  *\x02\x00 \x02\x00\x00 X\x02\x00 
+SEQ01 \xb8\x02
+SEQ13 
+SEQ04  *\x02\x00 
+SEQ12  X\x02\x00 
 SEQ10   
-SEQ01 \x0f\x00\x00\x0c
-SEQ04   \x00\x00 \x02\x00\x00 J\x00\x00 
+SEQ01 \x0f\x00
+SEQ13 
+SEQ04   \x00\x00 
+SEQ12  J\x00\x00 
 SEQ06 SCE044_003\x00 \n\x05\x00 
 SEQ07  
 SEQ01 
-SEQ03 hT\x00\x0c
+SEQ03 hT
+SEQ13 
 SEQ05 \x03o\x00\x00
  
 錦城\n　「ご苦労様。そのへんの隅に置いてくれればいいわ」@
@@ -52,12 +62,15 @@ SEQ05 \x03o\x00\x00
 錦城\n　「プリント。紙の束が詰まってるのよ」@
 拓司\n　「はあ。でも、いいんですか、こんなところに荷物置いて」\w\z
 \x00  
-SEQ01 N\x05\x00\x0c
-SEQ04  *\x02\x00 \x02\x00\x00 X\x02\x00 
+SEQ01 N\x05
+SEQ13 
+SEQ04  *\x02\x00 
+SEQ12  X\x02\x00 
 SEQ06 SCE044_004\x00 D\x07\x00 
 SEQ07  
 SEQ01 
-SEQ03 lT\x00\x0c
+SEQ03 lT
+SEQ13 
 SEQ05 \x03L\x00\x00
  
 錦城\n　「いいのよ。ここだけの話だけれど、他の先生方もやっている\n　　ことなの。\pなんでもかんでも置いておくには、職員室は狭\n　　すぎて。\pだから、４階は秘密の物置と化している、と。\n　　そういうわけ」@
@@ -65,15 +78,20 @@ SEQ05 \x03L\x00\x00
 錦城\n　「それにね、私、ここ、嫌いじゃないのよ」@
 拓司\n　「え？」\w\z
 \x00\x00\x00  
-SEQ01 \x88\x07\x00\x0c
-SEQ04  *\x02\x00 \x02\x00\x00 X\x02\x00 
+SEQ01 \x88\x07
+SEQ13 
+SEQ04  *\x02\x00 
+SEQ12  X\x02\x00 
 SEQ10   
-SEQ01 \xc8\x00\x00\x0c
-SEQ04   \x00\x00 \x02\x00\x00 J\x00\x00 
+SEQ01 \xc8\x00
+SEQ13 
+SEQ04   \x00\x00 
+SEQ12  J\x00\x00 
 SEQ06 SCE044_005\x00 &\t\x00 
 SEQ07  
 SEQ01 
-SEQ03 pT\x00\x0c
+SEQ03 pT
+SEQ13 
 SEQ05 \x03?\x00\x00
  
 　錦城はそういって窓まで歩いてゆき、鍵を外して窓をスライド\nさせた。@
@@ -81,12 +99,15 @@ SEQ05 \x03?\x00\x00
 部屋の中の熱気が、風に圧されて追い出されてゆく。@
 風は、錦城の長い髪をさらさらと揺らして、やがてぴたりと止ん\nだ。\w\z
 \x00  
-SEQ01 j\t\x00\x0c
-SEQ04  *\x02\x00 \x02\x00\x00 X\x02\x00 
+SEQ01 j\t
+SEQ13 
+SEQ04  *\x02\x00 
+SEQ12  X\x02\x00 
 SEQ06 SCE044_006\x00 \xa0\n\x00 
 SEQ07  
 SEQ01 
-SEQ03 tT\x00\x0c
+SEQ03 tT
+SEQ13 
 SEQ05 \x03g\x00\x00
  
 錦城\n　「理科実験室って、どこか懐かしい感じがする。@
@@ -99,15 +120,18 @@ SEQ05 \x03g\x00\x00
 錦城\n　「うーん……じゃあ、ちょっとドア閉めてきてくれる？@
 　　ちょっと恥ずかしい話だから」\w\z
 \x00  
-SEQ01 \xe4\n\x00\x0c
-SEQ04  *\x02\x00 \x02\x00\x00 X\x02\x00 
+SEQ01 \xe4\n
+SEQ13 
+SEQ04  *\x02\x00 
+SEQ12  X\x02\x00 
 SEQ10 
-SEQ08 .\\Data\\Script\\Bgm.Fobv\x81\x1f\xba\x0c\x00 
-SEQ02 \x00\x00StopCD SPC01 \xe4\x0c\x00 
+SEQ08 .\\Data\\Script\\Bgm.Fob SPC02 \xba\x0c\x00 
+SEQ02 StopCD SPC01 \xe4\x0c\x00 
 SEQ06 SCE044_007\x00 \x00\r\x00 
 SEQ07  
 SEQ01 
-SEQ03 xT\x00\x0c
+SEQ03 xT
+SEQ13 
 SEQ05 \x03c\x00\x00
  
 　錦城はいたずらっぽく笑った。@
@@ -116,12 +140,15 @@ SEQ05 \x03c\x00\x00
 振り返ると錦城は、実験用の大きなテーブルに腰を下ろしている\n。@
 拓司はどこに座るべきか一瞬悩んだが、離れすぎるのもおかしい\nような気がして、錦城の向かいのテーブルに同じように腰を下ろ\nした。\w\z
 \x00  
-SEQ01 D\r\x00\x0c
-SEQ04  *\x02\x00 \x02\x00\x00 X\x02\x00 
+SEQ01 D\r
+SEQ13 
+SEQ04  *\x02\x00 
+SEQ12  X\x02\x00 
 SEQ06 SCE044_008\x00 \n\x0f\x00 
 SEQ07  
 SEQ01 
-SEQ03 |T\x00\x0c
+SEQ03 |T
+SEQ13 
 SEQ05 \x03}\x00\x00
  
 錦城\n　「そうだな、どこから話そうかな」@
@@ -132,12 +159,15 @@ SEQ05 \x03}\x00\x00
 錦城\n　「そうね。\p青春時代。\pそれでね、男の子と初めてキスした\n　　のが、実験室だったの」@
 拓司\n　「……」\w\z
 \x00\x00\x00  
-SEQ01 N\x0f\x00\x0c
-SEQ04  *\x02\x00 \x02\x00\x00 X\x02\x00 
+SEQ01 N\x0f
+SEQ13 
+SEQ04  *\x02\x00 
+SEQ12  X\x02\x00 
 SEQ06 SCE044_009\x00 |\x11\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x80T\x00\x0c
+SEQ03 \x80T
+SEQ13 
 SEQ05 \x03\x94\x00\x00
  
 錦城\n　「六限最後の授業が化学の実験でね。私と、その子が、あとか\n　　たづけ役に指名されてしまって。@
@@ -148,12 +178,15 @@ SEQ05 \x03\x94\x00\x00
 錦城\n　「しばらく夢中で話してた。\pそうしたら、突然、ぱたっと話\n　　が途切れて……\p本当にぱったりと途切れちゃって。@
 　　どうしよう、ってドキドキし始めちゃってね、こう、俯いて\n　　いたら、その子がこうやって立ち上がって－－」\w\z
 \x00\x00\x00  
-SEQ01 \xc0\x11\x00\x0c
-SEQ04  *\x02\x00 \x02\x00\x00 X\x02\x00 
+SEQ01 \xc0\x11
+SEQ13 
+SEQ04  *\x02\x00 
+SEQ12  X\x02\x00 
 SEQ06 SCE044_010\x00 J\x14\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x84T\x00\x0c
+SEQ03 \x84T
+SEQ13 
 SEQ05 \x038\x00\x00
  
 　錦城はすっと立ち上がって身体を移し、拓司のすぐ隣に座りな\nおした。@
@@ -162,12 +195,15 @@ SEQ05 \x038\x00\x00
 \n錦城\n　「－－キスしたの」@
 拓司\n　「……」\w\z
 \x00\x00\x00  
-SEQ01 \x8e\x14\x00\x0c
-SEQ04  *\x02\x00 \x02\x00\x00 X\x02\x00 
+SEQ01 \x8e\x14
+SEQ13 
+SEQ04  *\x02\x00 
+SEQ12  X\x02\x00 
 SEQ06 SCE044_011\x00 \xa8\x15\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x88T\x00\x0c
+SEQ03 \x88T
+SEQ13 
 SEQ05 \x03g\x00\x00
  
 　拓司はなんと言えばいいのかわからず、どきまぎとうつむくし\nかなかった。@
@@ -178,12 +214,15 @@ SEQ05 \x03g\x00\x00
 沈黙に耐えかねた拓司がいいかけたときだった。@
 錦城の手がすうっと延び、拓司の腿のあたりにそっと重ねられ\nた。\w\z
 \x00  
-SEQ01 \xec\x15\x00\x0c
-SEQ04  *\x02\x00 \x02\x00\x00 X\x02\x00 
+SEQ01 \xec\x15
+SEQ13 
+SEQ04  *\x02\x00 
+SEQ12  X\x02\x00 
 SEQ06 SCE044_012\x00 \xc2\x17\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x8cT\x00\x0c
+SEQ03 \x8cT
+SEQ13 
 SEQ05 \x03<\x00\x00
  
 拓司\n　「？！」@
@@ -193,12 +232,15 @@ SEQ05 \x03<\x00\x00
 拓司\n　「いえ……はあ……まあ、ご想像にお任せします」@
 錦城\n　「ふふ……人の経験は聞けても、自分の経験は話せない？」\w\z
 \x00\x00\x00  
-SEQ01 \x06\x18\x00\x0c
-SEQ04  *\x02\x00 \x02\x00\x00 X\x02\x00 
+SEQ01 \x06\x18
+SEQ13 
+SEQ04  *\x02\x00 
+SEQ12  X\x02\x00 
 SEQ06 SCE044_013\x00 0\x19\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x90T\x00\x0c
+SEQ03 \x90T
+SEQ13 
 SEQ05 \x03^\x00\x00
  
 拓司\n　「はあ。まあ。パス１ってことで」@
@@ -211,12 +253,15 @@ SEQ05 \x03^\x00\x00
 錦城\n　「それじゃあ……私のこと、おばさんだと思う？」@
 拓司\n　「思わないですよ」\w\z
 \x00  
-SEQ01 t\x19\x00\x0c
-SEQ04  *\x02\x00 \x02\x00\x00 X\x02\x00 
+SEQ01 t\x19
+SEQ13 
+SEQ04  *\x02\x00 
+SEQ12  X\x02\x00 
 SEQ06 SCE044_014\x00 &\x1b\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x94T\x00\x0c
+SEQ03 \x94T
+SEQ13 
 SEQ05 \x03:\x00\x00
  
 拓司は軽くいった。@
@@ -224,12 +269,15 @@ SEQ05 \x03:\x00\x00
 実際は２０代後半なのだろうが、半ばくらいにしか見えない。@
 そしていま、柔らかな笑みを浮かべている錦城は、２０歳そこそ\nこといわれても信じてしまうような若々しさがあった。\w\z
 \x00\x00\x00  
-SEQ01 j\x1b\x00\x0c
-SEQ04  *\x02\x00 \x02\x00\x00 X\x02\x00 
+SEQ01 j\x1b
+SEQ13 
+SEQ04  *\x02\x00 
+SEQ12  X\x02\x00 
 SEQ06 SCE044_015\x00 \x8c\x1c\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x98T\x00\x0c
+SEQ03 \x98T
+SEQ13 
 SEQ05 \x03T\x00\x00
  
 拓司\n　「先生、歳のこと気にしてるんですか？」@
@@ -240,12 +288,15 @@ SEQ05 \x03T\x00\x00
 錦城\n　「本当かしら？」@
 拓司\n　「本当ですってば」\w\z
 \x00  
-SEQ01 \xd0\x1c\x00\x0c
-SEQ04  *\x02\x00 \x02\x00\x00 X\x02\x00 
+SEQ01 \xd0\x1c
+SEQ13 
+SEQ04  *\x02\x00 
+SEQ12  X\x02\x00 
 SEQ06 SCE044_016\x00 Z\x1e\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x9cT\x00\x0c
+SEQ03 \x9cT
+SEQ13 
 SEQ05 \x034\x00\x00
  
 錦城\n　「じゃあ、たとえば、先生を見て、いやらしい気持ちになった\n　　りする？」@
@@ -254,12 +305,15 @@ SEQ05 \x034\x00\x00
 \n錦城は冗談っぽく笑っている。@
 拓司は頭を掻いて、いった。\w\z
 \x00  
-SEQ01 \x9e\x1e\x00\x0c
-SEQ04  *\x02\x00 \x02\x00\x00 X\x02\x00 
+SEQ01 \x9e\x1e
+SEQ13 
+SEQ04  *\x02\x00 
+SEQ12  X\x02\x00 
 SEQ06 SCE044_017\x00 \xa8\x1f\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xa0T\x00\x0c
+SEQ03 \xa0T
+SEQ13 
 SEQ05 \x03<\x00\x00
  
 拓司\n　「……まあ、おれも男なんで。きれいな人を見れば、\n　　そういう気持ちになったりはします」@
@@ -268,10 +322,12 @@ SEQ05 \x03<\x00\x00
 錦城\n　「じゃあ、先生のこと考えて、オナニーしたこと、ある？」@
 拓司\n　「……」\w\z
 \x00  
-SEQ01 \xec\x1f\x00\x0c
-SEQ04  *\x02\x00 \x02\x00\x00 X\x02\x00 
+SEQ01 \xec\x1f
+SEQ13 
+SEQ04  *\x02\x00 
+SEQ12  X\x02\x00 
 SEQ10  *\x02\x00 
-FILE2 TextClosev\x81\x1f"!\x00 
+SEQ12 \x03\x03\x00\x00TextClose SPC02 "!\x00 
 SEQ10 \x03\t\x00\x00.\\Data\\Script\\Scenario\\044subC.Fob SPC01 B!\x00 
-SEQ02 \x00\x00startv\x81\x1fx!\x00 
+SEQ02 start SPC02 x!\x00 
 ENDF

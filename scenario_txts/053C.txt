@@ -1,13 +1,15 @@
 STRF
 !\x15\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00r\x11\x00  
-SEQ01 \x0b\x01\x00\x0c
+SEQ01 \x0b\x01
+SEQ13 
 SEQ04 
-SEQ08 .\\Data\\Script\\Bgm.Fobv\x81\x1f \x00\x00 
-SEQ02 \x00\x00PlayCD SPC01 J\x00\x00 
+SEQ08 .\\Data\\Script\\Bgm.Fob SPC02  \x00\x00 
+SEQ02 PlayCD SPC01 J\x00\x00 
 SEQ06 SCE053_001\x00 f\x00\x00 
 SEQ07  
 SEQ01 
-SEQ03 pb\x00\x0c
+SEQ03 pb
+SEQ13 
 SEQ05 \x03z\x00\x00
  
 机が乱暴に端々に追いやられ、教室は妙に広々としている。@
@@ -17,13 +19,16 @@ SEQ05 \x03z\x00\x00
 /*▲BGM　Track11　再生　*//*■CG21　表示（クロスフェード）　*/\a7,-2,-2,0,\a0,20,2,0,\a6,-2,0,0,\n早桃だ。\
 
 \x00  
-SEQ01 \xaa\x00\x00\x0c
-SEQ04 \x03\x07\x00\x00.\\Data\\Script\\TextFunc.Fob SPC01 \xb2\x02\x00 
-SEQ02 \x00\x00TextOn SPC01 \xe0\x02\x00 
+SEQ01 \xaa\x00
+SEQ13 
+SEQ04 
+SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 \xb2\x02\x00 
+SEQ02 TextOn SPC01 \xe0\x02\x00 
 SEQ06 SCE053_002\x00 \xfc\x02\x00 
 SEQ07  
 SEQ01 
-SEQ03 tb\x00\x0c
+SEQ03 tb
+SEQ13 
 SEQ05 \x03C\x00\x00
  
 学生\n　「だいたい図々しいんだよ」@
@@ -37,12 +42,15 @@ SEQ05 \x03C\x00\x00
 学生\n　「死ねよ」\
 
 \x00\x00\x00  
-SEQ01 @\x03\x00\x0c
-SEQ04  \xb2\x02\x00 \x02\x00\x00 \xe0\x02\x00 
+SEQ01 @\x03
+SEQ13 
+SEQ04  \xb2\x02\x00 
+SEQ12  \xe0\x02\x00 
 SEQ06 SCE053_003\x00 \x86\x04\x00 
 SEQ07  
 SEQ01 
-SEQ03 xb\x00\x0c
+SEQ03 xb
+SEQ13 
 SEQ05 \x03\x96\x00\x00
  
 　死ねよ、死ねよ、死ねよ、死ねよ、死ねよ、死ねよ、死ねよ、\n　死ねよ、死ねよ、死ねよ\n　死ね死ね死ね死ね死ね死ね死ね死ね死ね死ね死ね死ね死ね死ね\n　死ね死ね死ね\n　シネシネシネシネシシネシネシネシネシネシネシネシネシネシ\n　ネシネシネシネシネシネ\n　学生たちの声は、大合唱となって教室にとどろき渡った。@
@@ -53,12 +61,15 @@ SEQ05 \x03\x96\x00\x00
 \n　シネシネシネシネシシネシネシネシネシネシネシネシネシネシ\nネシネシネシネシネシネ\n　ドンガドンガドンガドンドンガドンガドンガドンガドンガドン\nガドンガドンガドンガドンガドンガ\
 
 \x00  
-SEQ01 \xca\x04\x00\x0c
-SEQ04  \xb2\x02\x00 \x02\x00\x00 \xe0\x02\x00 
+SEQ01 \xca\x04
+SEQ13 
+SEQ04  \xb2\x02\x00 
+SEQ12  \xe0\x02\x00 
 SEQ06 SCE053_004\x00 \\\x07\x00 
 SEQ07  
 SEQ01 
-SEQ03 |b\x00\x0c
+SEQ03 |b
+SEQ13 
 SEQ05 \x03\xb3\x00\x00
  
 　足を踏みならす音は太鼓のリズムで、合唱は呪文の詠唱だった@
@@ -73,17 +84,21 @@ SEQ05 \x03\xb3\x00\x00
 \n早桃\n　「ごめんなさい……ごめんなさい……ごめんなさい……」\
 
 \x00  
-SEQ01 \xa0\x07\x00\x0c
-SEQ04  \xb2\x02\x00 \x02\x00\x00 \xe0\x02\x00 
+SEQ01 \xa0\x07
+SEQ13 
+SEQ04  \xb2\x02\x00 
+SEQ12  \xe0\x02\x00 
 SEQ10   
-SEQ01 \xc8\x00\x00\x0c
+SEQ01 \xc8\x00
+SEQ13 
 SEQ04 
 SEQ08 .\\Data\\Script\\Bg.Fob SPC03 \xc0\n\x00 
-FILE1 BgAutoFadeIn SPC03 \xea\n\x00 
+SEQ12 \x03\x04\x00\x00BgAutoFadeIn SPC03 \xea\n\x00 
 SEQ06 SCE053_005\x00 \x0e\x0b\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x80b\x00\x0c
+SEQ03 \x80b
+SEQ13 
 SEQ05 \x03r\x00\x00
  
 早桃がクラスのなかで孤立しているということは知っていた。@
@@ -94,12 +109,15 @@ SEQ05 \x03r\x00\x00
 しかしまた、背後から拓司の肩を押さえた者がいる。\
 
 \x00  
-SEQ01 R\x0b\x00\x0c
-SEQ04  \xb2\x02\x00 \x02\x00\x00 \xe0\x02\x00 
+SEQ01 R\x0b
+SEQ13 
+SEQ04  \xb2\x02\x00 
+SEQ12  \xe0\x02\x00 
 SEQ06 SCE053_006\x00 T\r\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x84b\x00\x0c
+SEQ03 \x84b
+SEQ13 
 SEQ05 \x03a\x00\x00
  
 拓司\n　「離してくれ、雲居さん」@
@@ -111,29 +129,37 @@ SEQ05 \x03a\x00\x00
 \nなたねはすうっと目を細めて天を見上げ、指先で空中に何かの文\n字を書いた。\pそれから地面に掌をぴったりと当てて、沈黙に沈み\n込んだ。\p拓司のなかで怒りが爆発した。\
 
 \x00  
-SEQ01 \x98\r\x00\x0c
-SEQ04  \xb2\x02\x00 \x02\x00\x00 \xe0\x02\x00 
+SEQ01 \x98\r
+SEQ13 
+SEQ04  \xb2\x02\x00 
+SEQ12  \xe0\x02\x00 
 SEQ06 SCE053_007\x00 V\x0f\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x88b\x00\x0c
+SEQ03 \x88b
+SEQ13 
 SEQ05 \x03>\x00\x00
  
 拓司\n　「ふざけるな、そんな遊びにつきあってるヒマは－－」@
 雲居\n　「間違いない。\pいま、前兆を確認したわ。\p五分後、大きな波が\n　　来るわ。\pそれまで待てば、みんな自滅する。\pそうすれば、危\n　　険を冒さずに義妹さんを助けられるわ」\
 
 \x00\x00\x00  
-SEQ01 \x9a\x0f\x00\x0c
-SEQ04  \xb2\x02\x00 \x02\x00\x00 \xe0\x02\x00 
+SEQ01 \x9a\x0f
+SEQ13 
+SEQ04  \xb2\x02\x00 
+SEQ12  \xe0\x02\x00 
 SEQ10 \x03\n\x00\x00
 CHOICE
 待っていられない\n待つ\n\l0,2,
 ENDCHOICE
 
 \x00  
-SEQ01 \xcc\x10\x00\x0c
-SEQ04  \xb2\x02\x00 \x02\x00\x00 \xe0\x02\x00 
+SEQ01 \xcc\x10
+SEQ13 
+SEQ04  \xb2\x02\x00 
+SEQ12  \xe0\x02\x00 
 SEQ10  \xb2\x02\x00 
-FILE2 TextClosev\x81\x1f:\x11\x00 
-SEQ10  \xb2\x02\x00 \x02\x00\x00 :\x11\x00 
+SEQ12 \x03\x03\x00\x00TextClose SPC02 :\x11\x00 
+SEQ10  \xb2\x02\x00 
+SEQ12  :\x11\x00 
 ENDF

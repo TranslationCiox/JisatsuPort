@@ -1,13 +1,15 @@
 STRF
 <\x10\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00B\r\x00  
-SEQ01 "\x00\x00\x0c
+SEQ01 "\x00
+SEQ13 
 SEQ04 
 SEQ08 .\\Data\\Script\\Bg.Fob SPC03  \x00\x00 
-FILE1 BgAutoFadeIn SPC03 J\x00\x00 
+SEQ12 \x03\x04\x00\x00BgAutoFadeIn SPC03 J\x00\x00 
 SEQ06 SCE106_001\x00 n\x00\x00 
 SEQ07  
 SEQ01 
-SEQ03 @\xb5\x00\x0c
+SEQ03 @\xb5
+SEQ13 
 SEQ05 \x03\x89\x00\x00
  
 　それから起こったことを、拓司ははっきりとは覚えていない。@
@@ -22,13 +24,16 @@ SEQ05 \x03\x89\x00\x00
 なたねが鍵を飲み込んだのはそれからかもしれない……@
 そして気がつくと、教室中に血が飛び散っていた。\w\z
 \x00  
-SEQ01 \xb2\x00\x00\x0c
-SEQ04 \x03\x07\x00\x00.\\Data\\Script\\TextFunc.Fob SPC01 \xf6\x02\x00 
-SEQ02 \x00\x00TextOn SPC01 $\x03\x00 
+SEQ01 \xb2\x00
+SEQ13 
+SEQ04 
+SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 \xf6\x02\x00 
+SEQ02 TextOn SPC01 $\x03\x00 
 SEQ06 SCE106_002\x00 @\x03\x00 
 SEQ07  
 SEQ01 
-SEQ03 D\xb5\x00\x0c
+SEQ03 D\xb5
+SEQ13 
 SEQ05 \x03E\x00\x00
  
 御堂\n　「勝ったあああああ俺が勝ったああああ思い知ったか俺がああ\n　　あああああ！」@
@@ -38,12 +43,15 @@ SEQ05 \x03E\x00\x00
 てらてらと光る臓物だ。@
 御堂はその中から鍵を探し出そうとしている。\w\z
 \x00  
-SEQ01 \x84\x03\x00\x0c
-SEQ04  \xf6\x02\x00 \x02\x00\x00 $\x03\x00 
+SEQ01 \x84\x03
+SEQ13 
+SEQ04  \xf6\x02\x00 
+SEQ12  $\x03\x00 
 SEQ06 SCE106_003\x00 \xd2\x04\x00 
 SEQ07  
 SEQ01 
-SEQ03 H\xb5\x00\x0c
+SEQ03 H\xb5
+SEQ13 
 SEQ05 \x03q\x00\x00
  
 いや、探し出そうとしているのは自分なのか……？@
@@ -54,23 +62,29 @@ SEQ05 \x03q\x00\x00
 見よ、死んでいるはずのなたねの口がくわっと開いて、\n\p哄笑をとどろかせている……。@
 \nわは。\w\z
 \x00  
-SEQ01 \x16\x05\x00\x0c
-SEQ04  \xf6\x02\x00 \x02\x00\x00 $\x03\x00 
+SEQ01 \x16\x05
+SEQ13 
+SEQ04  \xf6\x02\x00 
+SEQ12  $\x03\x00 
 SEQ06 SCE106_004\x00 \x14\x07\x00 
 SEQ07  
 SEQ01 
-SEQ03 L\xb5\x00\x0c
+SEQ03 L\xb5
+SEQ13 
 SEQ05 \x03+\x00\x00
  
 その笑い声は伝染病のようにあたりに広がり、あっというまに部\n屋中を充たした。@
 \nわは、わはは、はははははははははははははははははははははは\nははははははははは！\w\z
 \x00\x00\x00  
-SEQ01 X\x07\x00\x0c
-SEQ04  \xf6\x02\x00 \x02\x00\x00 $\x03\x00 
+SEQ01 X\x07
+SEQ13 
+SEQ04  \xf6\x02\x00 
+SEQ12  $\x03\x00 
 SEQ06 SCE106_005\x00 >\x08\x00 
 SEQ07  
 SEQ01 
-SEQ03 P\xb5\x00\x0c
+SEQ03 P\xb5
+SEQ13 
 SEQ05 \x03@\x00\x00
  
 なにもかもがおかしくて、いくらでも笑いがこみ上げてきた。@
@@ -79,12 +93,15 @@ SEQ05 \x03@\x00\x00
 そこに７人の男女がいて、大声で笑っている……@
 腹を抱えてのたうち回っている。\w\z
 \x00\x00\x00  
-SEQ01 \x82\x08\x00\x0c
-SEQ04  \xf6\x02\x00 \x02\x00\x00 $\x03\x00 
+SEQ01 \x82\x08
+SEQ13 
+SEQ04  \xf6\x02\x00 
+SEQ12  $\x03\x00 
 SEQ06 SCE106_006\x00 \xbc\t\x00 
 SEQ07  
 SEQ01 
-SEQ03 T\xb5\x00\x0c
+SEQ03 T\xb5
+SEQ13 
 SEQ05 \x03P\x00\x00
  
 なるほど、世界とはその程度のものだったのだ。@
@@ -92,12 +109,15 @@ SEQ05 \x03P\x00\x00
 おれは－－と拓司は思った－－おれははなからありもしないもの\nをあると思いこんで、必死でうろつき回っていたのだ。@
 なにもおかしくなどなかったが、いくらでも笑いがこみ上げてき\nた。\w\z
 \x00  
-SEQ01 \x00\n\x00\x0c
-SEQ04  \xf6\x02\x00 \x02\x00\x00 $\x03\x00 
+SEQ01 \x00\n
+SEQ13 
+SEQ04  \xf6\x02\x00 
+SEQ12  $\x03\x00 
 SEQ06 SCE106_007\x00 z\x0b\x00 
 SEQ07  
 SEQ01 
-SEQ03 X\xb5\x00\x0c
+SEQ03 X\xb5
+SEQ13 
 SEQ05 \x03H\x00\x00
  
 笑いの渦に身を任せながら、拓司は「終わったな」と感じていた。\n\p世界が溶け落ちていった。@
@@ -105,8 +125,10 @@ SEQ05 \x03H\x00\x00
 ザザザ……ザザッ……ザアザザザ……ザアアアアア……ザアザア\nアアアアアア……@
 \n最後にそんな音が、聞こえた。\w\z
 \x00  
-SEQ01 \xbe\x0b\x00\x0c
-SEQ04  \xf6\x02\x00 \x02\x00\x00 $\x03\x00 
+SEQ01 \xbe\x0b
+SEQ13 
+SEQ04  \xf6\x02\x00 
+SEQ12  $\x03\x00 
 SEQ10  \xf6\x02\x00 
-FILE2 TextClosev\x81\x1f$\r\x00 
+SEQ12 \x03\x03\x00\x00TextClose SPC02 $\r\x00 
 ENDF

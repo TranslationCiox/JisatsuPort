@@ -2,7 +2,8 @@ STRF
 \x8a\x0e\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xf0\x0b\x00\x03\x03\x00\x00SCE036_001\x00 \x06\x00\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xe0G\x00\x0c
+SEQ03 \xe0G
+SEQ13 
 SEQ05 \x03e\x00\x00
  
 錦城\n　「－－虎菱くん？」@
@@ -12,13 +13,16 @@ SEQ05 \x03e\x00\x00
 　　鍵はかかっていなかったの？」@
 拓司\n　「……」\w\z
 \x00\x00  
-SEQ01 J\x00\x00\x0c
-SEQ04 \x03\x07\x00\x00.\\Data\\Script\\TextFunc.Fob SPC01 \xfe\x01\x00 
-SEQ02 \x00\x00TextOn SPC01 ,\x02\x00 
+SEQ01 J\x00
+SEQ13 
+SEQ04 
+SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 \xfe\x01\x00 
+SEQ02 TextOn SPC01 ,\x02\x00 
 SEQ06 SCE036_002\x00 H\x02\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xe4G\x00\x0c
+SEQ03 \xe4G
+SEQ13 
 SEQ05 \x03\x81\x00\x00
  
 　うんざりだった。@
@@ -28,12 +32,15 @@ SEQ05 \x03\x81\x00\x00
 写真に撮って脅迫して……授業中にリモコンローターでやってや\nろう……\p１日最低５人は学生を誘惑するように命令し、セック\nス中毒にして……\p早桃とレズらせるのもいいな……\p早桃にペニ\nスバンドを着けさせて、目の前で犯させよう……@
 そして……？\w\z
 \x00  
-SEQ01 \x8c\x02\x00\x0c
-SEQ04  \xfe\x01\x00 \x02\x00\x00 ,\x02\x00 
+SEQ01 \x8c\x02
+SEQ13 
+SEQ04  \xfe\x01\x00 
+SEQ12  ,\x02\x00 
 SEQ06 SCE036_003\x00 \xca\x04\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xe8G\x00\x0c
+SEQ03 \xe8G
+SEQ13 
 SEQ05 \x03z\x00\x00
  
 /*▲BGM8　再生*/\a2,-1,8,1,/*■CG15　表示　フェードイン*/\a7,-2,-2,0,\a0,14,2,0,\a6,-2,0,0,　拓司ははっと我に返り、驚愕した。@
@@ -44,12 +51,15 @@ SEQ05 \x03z\x00\x00
 自分でもすでにコントロールできないほどに、妄想世界が膨れあ\nがっている。@
 すべてを押しつぶしてしまいそうなくらいに。\w\z
   
-SEQ01 \x0e\x05\x00\x0c
-SEQ04  \xfe\x01\x00 \x02\x00\x00 ,\x02\x00 
+SEQ01 \x0e\x05
+SEQ13 
+SEQ04  \xfe\x01\x00 
+SEQ12  ,\x02\x00 
 SEQ06 SCE036_004\x00 0\x07\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xecG\x00\x0c
+SEQ03 \xecG
+SEQ13 
 SEQ05 \x03g\x00\x00
  
 錦城\n　「虎菱くん？」@
@@ -61,15 +71,18 @@ SEQ05 \x03g\x00\x00
 もしかしたらこれも妄想か、あるいは夢なのかもしれないじゃな\nいか。@
 目が覚めると自宅のベッドにいて、天井を見上げているのかもし\nれないじゃないか……。\w\z
 \x00\x00\x00  
-SEQ01 t\x07\x00\x0c
-SEQ04  \xfe\x01\x00 \x02\x00\x00 ,\x02\x00 
+SEQ01 t\x07
+SEQ13 
+SEQ04  \xfe\x01\x00 
+SEQ12  ,\x02\x00 
 SEQ10 
-SEQ08 .\\Data\\Script\\Bgm.Fobv\x81\x1fJ\t\x00 
-SEQ02 \x00\x00StopCD SPC01 t\t\x00 
+SEQ08 .\\Data\\Script\\Bgm.Fob SPC02 J\t\x00 
+SEQ02 StopCD SPC01 t\t\x00 
 SEQ06 SCE036_005\x00 \x90\t\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xf0G\x00\x0c
+SEQ03 \xf0G
+SEQ13 
 SEQ05 \x03n\x00\x00
  
 錦城\n　「……まあ、いいわ」@
@@ -82,8 +95,10 @@ SEQ05 \x03n\x00\x00
 　　……どう？」@
 \n\a2,-1,7,1,\a6,0,0,0,錦城がぱちりとウインクした。\w\z
 \x00\x00  
-SEQ01 \xd4\t\x00\x0c
-SEQ04  \xfe\x01\x00 \x02\x00\x00 ,\x02\x00 
+SEQ01 \xd4\t
+SEQ13 
+SEQ04  \xfe\x01\x00 
+SEQ12  ,\x02\x00 
 SEQ10  \xfe\x01\x00 
-FILE2 TextClosev\x81\x1f\xd2\x0b\x00 
+SEQ12 \x03\x03\x00\x00TextClose SPC02 \xd2\x0b\x00 
 ENDF

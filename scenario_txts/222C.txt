@@ -15,9 +15,11 @@ SEQ05 \x03x\x00\x00
 心の底をのぞき込むように、なたねは拓司の目をじっと見つめた。\n\pそしてひとこと、いった。\
 
 \x00  
-SEQ01 J\x00\x00\x0c
-SEQ04 \x03\x07\x00\x00.\\Data\\Script\\TextFunc.Fob SPC01 J\x02\x00 
-SEQ02 \x00\x00TextOn SPC01 x\x02\x00 
+SEQ01 J\x00
+SEQ13 
+SEQ04 
+SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 J\x02\x00 
+SEQ02 TextOn SPC01 x\x02\x00 
 SEQ06 SCE222_002\x00 \x94\x02\x00 
 SEQ07  
 SEQ01 
@@ -35,8 +37,10 @@ SEQ05 \x03O\x00\x00
 それっきり、なたねは一言も話そうとはしなかった。\
 
 \x00  
-SEQ01 \xd8\x02\x00\x0c
-SEQ04  J\x02\x00 \x02\x00\x00 x\x02\x00 
+SEQ01 \xd8\x02
+SEQ13 
+SEQ04  J\x02\x00 
+SEQ12  x\x02\x00 
 SEQ10  J\x02\x00 
-FILE2 TextClosev\x81\x1fZ\x04\x00 
+SEQ12 \x03\x03\x00\x00TextClose SPC02 Z\x04\x00 
 ENDF

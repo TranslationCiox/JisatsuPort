@@ -1,13 +1,15 @@
 STRF
 v\x0c\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00:\n\x00  
-SEQ01 \x07\x01\x00\x0c
+SEQ01 \x07\x01
+SEQ13 
 SEQ04 
-SEQ08 .\\Data\\Script\\Bgm.Fobv\x81\x1f \x00\x00 
-SEQ02 \x00\x00PlayCD SPC01 J\x00\x00 
+SEQ08 .\\Data\\Script\\Bgm.Fob SPC02  \x00\x00 
+SEQ02 PlayCD SPC01 J\x00\x00 
 SEQ06 SCE040_001\x00 f\x00\x00 
 SEQ07  
 SEQ01 
-SEQ03  N\x00\x0c
+SEQ03  N
+SEQ13 
 SEQ05 \x036\x00\x00
  
 拓司\n　「おれもお前のことは好きだ。@
@@ -17,18 +19,22 @@ SEQ05 \x036\x00\x00
 それは嘲笑だった。\
 
 \x00  
-SEQ01 \xaa\x00\x00\x0c
-SEQ04 \x03\x07\x00\x00.\\Data\\Script\\TextFunc.Fob SPC01 \xa2\x01\x00 
-SEQ02 \x00\x00TextOn SPC01 \xd0\x01\x00 
+SEQ01 \xaa\x00
+SEQ13 
+SEQ04 
+SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 \xa2\x01\x00 
+SEQ02 TextOn SPC01 \xd0\x01\x00 
 SEQ10   
-SEQ01 D\x00\x00\x0c
+SEQ01 D\x00
+SEQ13 
 SEQ04 
 SEQ08 .\\Data\\Script\\Bg.Fob SPC03 \x06\x02\x00 
-FILE1 BgAutoFadeIn SPC03 0\x02\x00 
+SEQ12 \x03\x04\x00\x00BgAutoFadeIn SPC03 0\x02\x00 
 SEQ06 SCE040_002\x00 T\x02\x00 
 SEQ07  
 SEQ01 
-SEQ03 $N\x00\x0c
+SEQ03 $N
+SEQ13 
 SEQ05 \x03v\x00\x00
  
 早桃\n　「おにいちゃんは気楽でいいよね。@
@@ -41,12 +47,15 @@ SEQ05 \x03v\x00\x00
 拓司\n　「どうだっていいってことはないだろう－－」\
 
 \x00  
-SEQ01 \x98\x02\x00\x0c
-SEQ04  \xa2\x01\x00 \x02\x00\x00 \xd0\x01\x00 
+SEQ01 \x98\x02
+SEQ13 
+SEQ04  \xa2\x01\x00 
+SEQ12  \xd0\x01\x00 
 SEQ06 SCE040_003\x00 \xaa\x04\x00 
 SEQ07  
 SEQ01 
-SEQ03 (N\x00\x0c
+SEQ03 (N
+SEQ13 
 SEQ05 \x03\xcf\x00\x00
  
 早桃\n　「そういうことじゃないの！@
@@ -63,16 +72,20 @@ SEQ05 \x03\xcf\x00\x00
 目には涙が浮かび、身体は小刻みに震えている。\
 
 \x00\x00\x00  
-SEQ01 \xee\x04\x00\x0c
-SEQ04  \xa2\x01\x00 \x02\x00\x00 \xd0\x01\x00 
+SEQ01 \xee\x04
+SEQ13 
+SEQ04  \xa2\x01\x00 
+SEQ12  \xd0\x01\x00 
 SEQ10   
-SEQ01 \xc8\x00\x00\x0c
+SEQ01 \xc8\x00
+SEQ13 
 SEQ04  \x06\x02\x00 
-SEQ02 \x00\x00BgOn SPC03 \x8a\x08\x00 
+SEQ02 BgOn SPC03 \x8a\x08\x00 
 SEQ06 SCE040_004\x00 \xa6\x08\x00 
 SEQ07  
 SEQ01 
-SEQ03 ,N\x00\x0c
+SEQ03 ,N
+SEQ13 
 SEQ05 \x03;\x00\x00
  
 拓司\n　「……落ちてるって、どういうことだ？」@
@@ -82,8 +95,10 @@ SEQ05 \x03;\x00\x00
 \nいって早桃は、風のように駆けて屋上から去っていった。\
 
 \x00\x00\x00  
-SEQ01 \xea\x08\x00\x0c
-SEQ04  \xa2\x01\x00 \x02\x00\x00 \xd0\x01\x00 
+SEQ01 \xea\x08
+SEQ13 
+SEQ04  \xa2\x01\x00 
+SEQ12  \xd0\x01\x00 
 SEQ10  \xa2\x01\x00 
-FILE2 TextClosev\x81\x1f\x1c\n\x00 
+SEQ12 \x03\x03\x00\x00TextClose SPC02 \x1c\n\x00 
 ENDF

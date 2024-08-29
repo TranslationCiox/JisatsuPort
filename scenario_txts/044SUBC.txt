@@ -1,13 +1,15 @@
 STRF
 \xb6(\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00F"\x00  
-SEQ01 \x05\x01\x00\x0c
+SEQ01 \x05\x01
+SEQ13 
 SEQ04 
-SEQ08 .\\Data\\Script\\Bgm.Fobv\x81\x1f \x00\x00 
-SEQ02 \x00\x00PlayCD SPC01 J\x00\x00 
+SEQ08 .\\Data\\Script\\Bgm.Fob SPC02  \x00\x00 
+SEQ02 PlayCD SPC01 J\x00\x00 
 SEQ06 SCE044_018\x00 f\x00\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xa4T\x00\x0c
+SEQ03 \xa4T
+SEQ13 
 SEQ05 \x03p\x00\x00
  
 慌てて錦城の顔を見るが、そこには、はっとするような厳しい表\n情があるだけだ。@
@@ -20,13 +22,16 @@ SEQ05 \x03p\x00\x00
 指先がつい、と動いて、太股のあわせめに潜り込む。@
 睾丸を下から撫でさする。\w\z
 \x00  
-SEQ01 \xaa\x00\x00\x0c
-SEQ04 \x03\x07\x00\x00.\\Data\\Script\\TextFunc.Fob SPC01 \x8a\x02\x00 
-SEQ02 \x00\x00TextOn SPC01 \xb8\x02\x00 
+SEQ01 \xaa\x00
+SEQ13 
+SEQ04 
+SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 \x8a\x02\x00 
+SEQ02 TextOn SPC01 \xb8\x02\x00 
 SEQ06 SCE044_019\x00 \xd4\x02\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xa8T\x00\x0c
+SEQ03 \xa8T
+SEQ13 
 SEQ05 \x03l\x00\x00
  
 錦城\n　「……これはなに？　勃起してるじゃない。\p先生の\n　　こと、いやらしい対象としてみてるのね？」@
@@ -38,12 +43,15 @@ SEQ05 \x03l\x00\x00
 拓司\n　「……」@
 錦城\n　「私は、気持ちいいかどうか、聞いてるのよ？」\w\z
 \x00  
-SEQ01 \x18\x03\x00\x0c
-SEQ04  \x8a\x02\x00 \x02\x00\x00 \xb8\x02\x00 
+SEQ01 \x18\x03
+SEQ13 
+SEQ04  \x8a\x02\x00 
+SEQ12  \xb8\x02\x00 
 SEQ06 SCE044_020\x00 \x02\x05\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xacT\x00\x0c
+SEQ03 \xacT
+SEQ13 
 SEQ05 \x03e\x00\x00
  
 拓司はうめいた。@
@@ -55,12 +63,15 @@ SEQ05 \x03e\x00\x00
 \n拓司\n　「気持ちいいです」@
 \n錦城は拓司の返事に満足そうに笑った。\w\z
 \x00  
-SEQ01 F\x05\x00\x0c
-SEQ04  \x8a\x02\x00 \x02\x00\x00 \xb8\x02\x00 
+SEQ01 F\x05
+SEQ13 
+SEQ04  \x8a\x02\x00 
+SEQ12  \xb8\x02\x00 
 SEQ06 SCE044_021\x00 \x14\x07\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xb0T\x00\x0c
+SEQ03 \xb0T
+SEQ13 
 SEQ05 \x03R\x00\x00
  
 錦城\n　「そう。よかったわ、喜んでもらえて。ねえ、どうしてほしい？\n　　\pこのまま続けたほうがいいかしら？@
@@ -71,12 +82,15 @@ SEQ05 \x03R\x00\x00
 錦城\n　「そうねえ。それじゃあ、先生の前でしてみせて」@
 拓司\n　「え？」\w\z
 \x00  
-SEQ01 X\x07\x00\x0c
-SEQ04  \x8a\x02\x00 \x02\x00\x00 \xb8\x02\x00 
+SEQ01 X\x07
+SEQ13 
+SEQ04  \x8a\x02\x00 
+SEQ12  \xb8\x02\x00 
 SEQ06 SCE044_022\x00 \xda\x08\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xb4T\x00\x0c
+SEQ03 \xb4T
+SEQ13 
 SEQ05 \x03~\x00\x00
  
 錦城の顔が、途端に険しく変わった。@
@@ -88,24 +102,30 @@ SEQ05 \x03~\x00\x00
 一瞬の躊躇を経て、拓司は机から降りて立ち、チャックをおろし\nた。@
 ペ○スをズボンの中から引きずり出し、錦城の前に見せつけるよ\nうに晒す。\w\z
 \x00\x00\x00  
-SEQ01 \x1e\t\x00\x0c
-SEQ04  \x8a\x02\x00 \x02\x00\x00 \xb8\x02\x00 
+SEQ01 \x1e\t
+SEQ13 
+SEQ04  \x8a\x02\x00 
+SEQ12  \xb8\x02\x00 
 SEQ06 SCE044_023\x00 P\x0b\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xb8T\x00\x0c
+SEQ03 \xb8T
+SEQ13 
 SEQ05 \x03=\x00\x00
  
 －－妄想の世界でできることが、どうしてここでできないはずが\nあるんだ？@
 \n錦城は眼を細めて、反り返った若いペ○スを観察している。@
 \n錦城\n　「立派なのね、虎菱くん。素敵よ。\pさあ、先生のこと見なが\n　　ら、自分でして見せて？　ね？」\w\z
 \x00  
-SEQ01 \x94\x0b\x00\x0c
-SEQ04  \x8a\x02\x00 \x02\x00\x00 \xb8\x02\x00 
+SEQ01 \x94\x0b
+SEQ13 
+SEQ04  \x8a\x02\x00 
+SEQ12  \xb8\x02\x00 
 SEQ06 SCE044_024\x00 \xc2\x0c\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xbcT\x00\x0c
+SEQ03 \xbcT
+SEQ13 
 SEQ05 \x03?\x00\x00
  
 拓司はペ○スに右手を被せて、ゆっくりと上下にしごき始めた。@
@@ -113,12 +133,15 @@ SEQ05 \x03?\x00\x00
 早くも先端は、透明の液をだらしなく吐き出している。@
 ペ○スに視線を貼り付かせたまま、錦城は腕を組んで首を傾げ\w\z
 \x00  
-SEQ01 \x06\r\x00\x0c
-SEQ04  \x8a\x02\x00 \x02\x00\x00 \xb8\x02\x00 
+SEQ01 \x06\r
+SEQ13 
+SEQ04  \x8a\x02\x00 
+SEQ12  \xb8\x02\x00 
 SEQ06 SCE044_025\x00 <\x0e\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xc0T\x00\x0c
+SEQ03 \xc0T
+SEQ13 
 SEQ05 \x03@\x00\x00
  
 錦城\n　「そんなにゆっくりじゃ、いけないでしょう？@
@@ -126,12 +149,15 @@ SEQ05 \x03@\x00\x00
 拓司\n　「……は、はい」@
 錦城\n　「そう？　それじゃあ、先生の脚、好きなように使っていいわ\n　　よ？」\w\z
 \x00  
-SEQ01 \x80\x0e\x00\x0c
-SEQ04  \x8a\x02\x00 \x02\x00\x00 \xb8\x02\x00 
+SEQ01 \x80\x0e
+SEQ13 
+SEQ04  \x8a\x02\x00 
+SEQ12  \xb8\x02\x00 
 SEQ06 SCE044_026\x00 \xba\x0f\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xc4T\x00\x0c
+SEQ03 \xc4T
+SEQ13 
 SEQ05 \x03T\x00\x00
  
 錦城は、何度か脚を振ってヒールを床に落とした。@
@@ -141,12 +167,15 @@ SEQ05 \x03T\x00\x00
 この脚を使ってどのようにオナニーをすればいいのだろうか？@
 救いを求める拓司の視線を受けて、錦城はにこりと微笑んだ。\w\z
 \x00\x00\x00  
-SEQ01 \xfe\x0f\x00\x0c
-SEQ04  \x8a\x02\x00 \x02\x00\x00 \xb8\x02\x00 
+SEQ01 \xfe\x0f
+SEQ13 
+SEQ04  \x8a\x02\x00 
+SEQ12  \xb8\x02\x00 
 SEQ06 SCE044_027\x00 \x88\x11\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xc8T\x00\x0c
+SEQ03 \xc8T
+SEQ13 
 SEQ05 \x03\x8b\x00\x00
  
 錦城\n　「あなたが決めるのよ。\p先生の脚を使ってどんなことがした\n　　いか……さあ、どうするの？\p　それとも私の脚じゃ、オナ\n　　ニーもできない？」@
@@ -159,12 +188,15 @@ SEQ05 \x03\x8b\x00\x00
 ただ、それを命じはしなかった。拓司が自ら決めたのだ。@
 錦城はそれを望んでいたのだ。\w\z
   
-SEQ01 \xcc\x11\x00\x0c
-SEQ04  \x8a\x02\x00 \x02\x00\x00 \xb8\x02\x00 
+SEQ01 \xcc\x11
+SEQ13 
+SEQ04  \x8a\x02\x00 
+SEQ12  \xb8\x02\x00 
 SEQ06 SCE044_028\x00 2\x14\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xccT\x00\x0c
+SEQ03 \xccT
+SEQ13 
 SEQ05 \x03p\x00\x00
  
 錦城\n　「ふうん……あなたは先生に、おち○ちんを踏みつけにして欲\n　　しいのね？\p　……まったく、どこでそんな変態性欲を覚え\n　　ちゃったのかしら？@
@@ -173,12 +205,15 @@ SEQ05 \x03p\x00\x00
 反り返ったペ○スを、足の裏と拓司の腹でサンドイッチにして、\nぐりぐりと踏みにじる。@
 拓司は足首を両手で捧げ持ったまま、されるがままに震えている。\n\p屈辱的ではあったが、それがかえって劣情を加速させる。\w\z
 \x00  
-SEQ01 v\x14\x00\x0c
-SEQ04  \x8a\x02\x00 \x02\x00\x00 \xb8\x02\x00 
+SEQ01 v\x14
+SEQ13 
+SEQ04  \x8a\x02\x00 
+SEQ12  \xb8\x02\x00 
 SEQ06 SCE044_029\x00 p\x16\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xd0T\x00\x0c
+SEQ03 \xd0T
+SEQ13 
 SEQ05 \x03Q\x00\x00
  
 錦城\n　「ねえ、先生の脚、きれい？」@
@@ -187,12 +222,15 @@ SEQ05 \x03Q\x00\x00
 拓司\n　「は……はい」@
 錦城\n　「でももう、足が疲れちゃったわ。\pほら、こうやって指で挟ん\n　　であげるから……\pあとは自分でしごいて出して見せて」\w\z
 \x00  
-SEQ01 \xb4\x16\x00\x0c
-SEQ04  \x8a\x02\x00 \x02\x00\x00 \xb8\x02\x00 
+SEQ01 \xb4\x16
+SEQ13 
+SEQ04  \x8a\x02\x00 
+SEQ12  \xb8\x02\x00 
 SEQ06 SCE044_030\x00 2\x18\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xd4T\x00\x0c
+SEQ03 \xd4T
+SEQ13 
 SEQ05 \x03\x9e\x00\x00
  
 錦城は器用に脚の指を広げて、拓司のペ○スをはさみつけた。@
@@ -207,12 +245,15 @@ SEQ05 \x03\x9e\x00\x00
 拓司は錦城の脚から手を離して、よろりと後ろの机に腰を下ろし\nた。\p快感が、腰骨を砕いてしまったかのようだ。@
 脚に力が入らない。\w\z
 \x00  
-SEQ01 v\x18\x00\x0c
-SEQ04  \x8a\x02\x00 \x02\x00\x00 \xb8\x02\x00 
+SEQ01 v\x18
+SEQ13 
+SEQ04  \x8a\x02\x00 
+SEQ12  \xb8\x02\x00 
 SEQ06 SCE044_031\x00 (\x1b\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xd8T\x00\x0c
+SEQ03 \xd8T
+SEQ13 
 SEQ05 \x034\x00\x00
  
 錦城がつい、と机から立ち上がった。@
@@ -220,12 +261,15 @@ SEQ05 \x034\x00\x00
 拓司はやや意表を突かれた。@
 先ほどまでの高圧的な態度とはまるで正反対の優しさだ。\w\z
 \x00  
-SEQ01 l\x1b\x00\x0c
-SEQ04  \x8a\x02\x00 \x02\x00\x00 \xb8\x02\x00 
+SEQ01 l\x1b
+SEQ13 
+SEQ04  \x8a\x02\x00 
+SEQ12  \xb8\x02\x00 
 SEQ06 SCE044_032\x00 v\x1c\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xdcT\x00\x0c
+SEQ03 \xdcT
+SEQ13 
 SEQ05 \x03h\x00\x00
  
 錦城\n　「ありがとう、虎菱くん。\p恥ずかしかったでしょう？@
@@ -234,31 +278,38 @@ SEQ05 \x03h\x00\x00
 錦城\n　「いいの、気にしないで。\p素敵なものを見せてもらった記念\n　　に、虎菱くんの精液をつけたまま、今日は一日過ごすわ……\n　　本当にありがとう。@
 　　また……今度、いろんなことしましょうね？」\w\z
 \x00  
-SEQ01 \xba\x1c\x00\x0c
-SEQ04  \x8a\x02\x00 \x02\x00\x00 \xb8\x02\x00 
+SEQ01 \xba\x1c
+SEQ13 
+SEQ04  \x8a\x02\x00 
+SEQ12  \xb8\x02\x00 
 SEQ06 SCE044_033\x00 \x94\x1e\x00 
 SEQ07  
 SEQ01 
-SEQ03 \xe0T\x00\x0c
+SEQ03 \xe0T
+SEQ13 
 SEQ05 \x03C\x00\x00
  
 錦城は拓司の両頬を包むように手で固定すると、軽くキスをした。\n\p柔らかい香水の匂いと、真っ赤な唇の色が、拓司の頭の中で弾け\nた。@
 唇と唇がさっと触れる程度のものだったにも関わらず、これまで\nしたことのあるキスの中でもっとも衝撃的だった。@
 淫猥なキスだった。\w\z
 \x00  
-SEQ01 \xd8\x1e\x00\x0c
-SEQ04  \x8a\x02\x00 \x02\x00\x00 \xb8\x02\x00 
+SEQ01 \xd8\x1e
+SEQ13 
+SEQ04  \x8a\x02\x00 
+SEQ12  \xb8\x02\x00 
 SEQ10   
-SEQ01 \xc8\x00\x00\x0c
+SEQ01 \xc8\x00
+SEQ13 
 SEQ04 
 SEQ08 .\\Data\\Script\\Bg.Fob SPC03 8 \x00 
-FILE1 BgAutoFadeIn SPC03 b \x00 
+SEQ12 \x03\x04\x00\x00BgAutoFadeIn SPC03 b \x00 
 SEQ10   \x00\x00 
-SEQ02 \x00\x00StopCD SPC01 \x92 \x00 
+SEQ02 StopCD SPC01 \x92 \x00 
 SEQ06 SCE044_034\x00 \xae \x00 
 SEQ07  
 SEQ01 
-SEQ03 \xe4T\x00\x0c
+SEQ03 \xe4T
+SEQ13 
 SEQ05 \x03<\x00\x00
  
 実験室を出て鍵を閉め、二人は廊下で別れた。@
@@ -266,8 +317,10 @@ SEQ05 \x03<\x00\x00
 共犯者のあいだでのみ交わされる親密な笑みを送った。@
 拓司は呆然とそんな錦城を見送って、それから魂が抜けたような\n足取りで、屋上に向かった。\w\z
 \x00\x00\x00  
-SEQ01 \xf2 \x00\x0c
-SEQ04  \x8a\x02\x00 \x02\x00\x00 \xb8\x02\x00 
+SEQ01 \xf2 
+SEQ13 
+SEQ04  \x8a\x02\x00 
+SEQ12  \xb8\x02\x00 
 SEQ10  \x8a\x02\x00 
-FILE2 TextClosev\x81\x1f("\x00 
+SEQ12 \x03\x03\x00\x00TextClose SPC02 ("\x00 
 ENDF

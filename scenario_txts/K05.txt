@@ -1,16 +1,18 @@
 STRF
 \xa6\x11\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00,\x0e\x00
-SEQ08 .\\Data\\Script\\Bgm.Fobv\x81\x1f\x06\x00\x00 
-SEQ02 \x00\x00StopCD SPC01 0\x00\x00 
+SEQ08 .\\Data\\Script\\Bgm.Fob SPC02 \x06\x00\x00 
+SEQ02 StopCD SPC01 0\x00\x00 
 SEQ10   
-SEQ01 =\x00\x00\x0c
+SEQ01 =\x00
+SEQ13 
 SEQ04 
 SEQ08 .\\Data\\Script\\Bg.Fob SPC03 f\x00\x00 
-FILE1 BgAutoFadeIn SPC03 \x90\x00\x00 
+SEQ12 \x03\x04\x00\x00BgAutoFadeIn SPC03 \x90\x00\x00 
 SEQ10   
-SEQ01 \x04\x01\x00\x0c
+SEQ01 \x04\x01
+SEQ13 
 SEQ04  \x06\x00\x00 
-SEQ02 \x00\x00PlayCD SPC01 \xda\x00\x00 
+SEQ02 PlayCD SPC01 \xda\x00\x00 
 SEQ06 SCEK05_001\x00 \xf6\x00\x00 
 SEQ07  
 SEQ01 
@@ -25,9 +27,11 @@ SEQ05 \x03\x96\x00\x00
 　私はゆきを尊敬した。@
 　私のどこに魅力を見つけたのか、ゆきもまた、私をどこか尊敬\nしてくれているような感じがあって、それはとても心地がよかっ\nた。\w\z
 \x00  
-SEQ01 :\x01\x00\x0c
-SEQ04 \x03\x07\x00\x00.\\Data\\Script\\TextFunc.Fob SPC01 \xb2\x03\x00 
-SEQ02 \x00\x00TextOn SPC01 \xe0\x03\x00 
+SEQ01 :\x01
+SEQ13 
+SEQ04 
+SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 \xb2\x03\x00 
+SEQ02 TextOn SPC01 \xe0\x03\x00 
 SEQ06 SCEK05_002\x00 \xfc\x03\x00 
 SEQ07  
 SEQ01 
@@ -40,8 +44,10 @@ SEQ05 \x03~\x00\x00
 私は自分自身をまじまじと見つめ、そうして自分があまりに薄っ\nぺらで、ゆきに返すような素敵なものをなにひとつ持っていない\nことに初めて気づいた。@
 若草ゆきに恋することで、私は、唐突に自分というものの輪郭を\nはっきり認識させられたのだった。\w\z
 \x00  
-SEQ01 @\x04\x00\x0c
-SEQ04  \xb2\x03\x00 \x02\x00\x00 \xe0\x03\x00 
+SEQ01 @\x04
+SEQ13 
+SEQ04  \xb2\x03\x00 
+SEQ12  \xe0\x03\x00 
 SEQ06 SCEK05_003\x00 r\x06\x00 
 SEQ07  
 SEQ01 
@@ -55,8 +61,10 @@ SEQ05 \x03_\x00\x00
 何者も容易には侵入できない、立派な城壁だった。@
 けれども私が作り上げたのは城壁だけで、そのなかに城と呼べる\nものがなかったと……私は知った。\w\z
 \x00  
-SEQ01 \xb6\x06\x00\x0c
-SEQ04  \xb2\x03\x00 \x02\x00\x00 \xe0\x03\x00 
+SEQ01 \xb6\x06
+SEQ13 
+SEQ04  \xb2\x03\x00 
+SEQ12  \xe0\x03\x00 
 SEQ06 SCEK05_004\x00 l\x08\x00 
 SEQ07  
 SEQ01 
@@ -72,8 +80,10 @@ SEQ05 \x03p\x00\x00
 私に対する露骨な悪意は、しだいに周囲から影を潜めていった。\nいまの（－－この学校での、ね）@
 私のスタンスは、このころに形作られたのだと思う。\w\z
 \x00  
-SEQ01 \xb0\x08\x00\x0c
-SEQ04  \xb2\x03\x00 \x02\x00\x00 \xe0\x03\x00 
+SEQ01 \xb0\x08
+SEQ13 
+SEQ04  \xb2\x03\x00 
+SEQ12  \xe0\x03\x00 
 SEQ06 SCEK05_005\x00 \xaa\n\x00 
 SEQ07  
 SEQ01 
@@ -87,16 +97,20 @@ SEQ05 \x03\x8e\x00\x00
 真に価値あるものが、そこらにありふれているはずはない、と。@
 でも、思いとはうらはらに、私のなかで、徐々に、ゆきに抱きつ\nいて、キスをしたいという願望が膨らんでいった。\w\z
 \x00\x00\x00  
-SEQ01 \xee\n\x00\x0c
-SEQ04  \xb2\x03\x00 \x02\x00\x00 \xe0\x03\x00 
+SEQ01 \xee\n
+SEQ13 
+SEQ04  \xb2\x03\x00 
+SEQ12  \xe0\x03\x00 
 SEQ10 \x03\x1a\x00\x00
 CHOICE
 私はゆきに、自分の気持ちを正直に伝えた\nそれでも私は、ゆきとプラトニックな関係を続けた\n\l0,2,
 ENDCHOICE
 
 \x00  
-SEQ01 `\r\x00\x0c
-SEQ04  \xb2\x03\x00 \x02\x00\x00 \xe0\x03\x00 
+SEQ01 `\r
+SEQ13 
+SEQ04  \xb2\x03\x00 
+SEQ12  \xe0\x03\x00 
 SEQ10  \xb2\x03\x00 
-FILE2 TextClosev\x81\x1f\x0e\x0e\x00 
+SEQ12 \x03\x03\x00\x00TextClose SPC02 \x0e\x0e\x00 
 ENDF

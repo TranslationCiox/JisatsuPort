@@ -2,7 +2,8 @@ STRF
 <\x10\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00>\r\x00\x03\x03\x00\x00SCE055_001\x00 \x06\x00\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x90e\x00\x0c
+SEQ03 \x90e
+SEQ13 
 SEQ05 \x03\x98\x00\x00
  
 　拓司は胸のムカツキを必死に押さえた。@
@@ -14,13 +15,16 @@ SEQ05 \x03\x98\x00\x00
 　小声で、解説をはじめる。\
 
 \x00  
-SEQ01 J\x00\x00\x0c
-SEQ04 \x03\x07\x00\x00.\\Data\\Script\\TextFunc.Fob SPC01 \xca\x02\x00 
-SEQ02 \x00\x00TextOn SPC01 \xf8\x02\x00 
+SEQ01 J\x00
+SEQ13 
+SEQ04 
+SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 \xca\x02\x00 
+SEQ02 TextOn SPC01 \xf8\x02\x00 
 SEQ06 SCE055_002\x00 \x14\x03\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x94e\x00\x0c
+SEQ03 \x94e
+SEQ13 
 SEQ05 \x03\xcd\x00\x00
  
 なたね\n　「自殺っていうのは、自分がおかれている状況への絶望とかあ\n　　きらめとか、そんな悲しみの感情から生まれるでしょう？@
@@ -30,12 +34,15 @@ SEQ05 \x03\xcd\x00\x00
 拓司\n　「……」\
 
 \x00  
-SEQ01 X\x03\x00\x0c
-SEQ04  \xca\x02\x00 \x02\x00\x00 \xf8\x02\x00 
+SEQ01 X\x03
+SEQ13 
+SEQ04  \xca\x02\x00 
+SEQ12  \xf8\x02\x00 
 SEQ06 SCE055_003\x00 \xc6\x06\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x98e\x00\x0c
+SEQ03 \x98e
+SEQ13 
 SEQ05 \x03\x80\x00\x00
  
 なたね\n　「……義妹さん、もともといじめられていたとか、そういうの\n　　あった？」@
@@ -48,12 +55,15 @@ SEQ05 \x03\x80\x00\x00
 \n早桃\n　「怖い……怖い……」\
 
 \x00  
-SEQ01 \n\x07\x00\x0c
-SEQ04  \xca\x02\x00 \x02\x00\x00 \xf8\x02\x00 
+SEQ01 \n\x07
+SEQ13 
+SEQ04  \xca\x02\x00 
+SEQ12  \xf8\x02\x00 
 SEQ06 SCE055_004\x00 D\t\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x9ce\x00\x0c
+SEQ03 \x9ce
+SEQ13 
 SEQ05 \x03t\x00\x00
  
 \nその様子をひとり静かに見守っていた男子学生が、大声でいった。\n@
@@ -64,20 +74,25 @@ SEQ05 \x03t\x00\x00
 \n学生\n　「そこでだ！\p　俺たちが背中を押してやろうと思う！\p　もう生\n　　きていてもしょうがないと思えるくらいのことを、虎菱早桃\n　　にしてやりたいと思う！」\
 
 \x00\x00\x00  
-SEQ01 \x88\t\x00\x0c
-SEQ04  \xca\x02\x00 \x02\x00\x00 \xf8\x02\x00 
+SEQ01 \x88\t
+SEQ13 
+SEQ04  \xca\x02\x00 
+SEQ12  \xf8\x02\x00 
 SEQ06 SCE055_005\x00 \x92\x0b\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x9ce\x00\x0c
+SEQ03 \x9ce
+SEQ13 
 SEQ05 \x03A\x00\x00
  
 \n犯せえ！\p　という声が上がった。\pしかし男子学生はそれを片手で\n軽く制した。@
 \n学生\n　「男子がこれだけの人数いると、さすがに全員やるのは無理だ\n　　ろ？\p　それに、こんなウザキャラに、おれらのチ○ポなんか\n　　もったいねえよ。\pそこでだ……！」\
 
 \x00  
-SEQ01 \xd6\x0b\x00\x0c
-SEQ04  \xca\x02\x00 \x02\x00\x00 \xf8\x02\x00 
+SEQ01 \xd6\x0b
+SEQ13 
+SEQ04  \xca\x02\x00 
+SEQ12  \xf8\x02\x00 
 SEQ10  \xca\x02\x00 
-FILE2 TextClosev\x81\x1f \r\x00 
+SEQ12 \x03\x03\x00\x00TextClose SPC02  \r\x00 
 ENDF

@@ -14,9 +14,11 @@ SEQ05 \x03\xa7\x00\x00
 拓司\n　「……」\
 
 \x00\x00\x00  
-SEQ01 J\x00\x00\x0c
-SEQ04 \x03\x07\x00\x00.\\Data\\Script\\TextFunc.Fob SPC01 \x06\x03\x00 
-SEQ02 \x00\x00TextOn SPC01 4\x03\x00 
+SEQ01 J\x00
+SEQ13 
+SEQ04 
+SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 \x06\x03\x00 
+SEQ02 TextOn SPC01 4\x03\x00 
 SEQ06 SCE207_002\x00 P\x03\x00 
 SEQ07  
 SEQ01 
@@ -28,8 +30,10 @@ SEQ05 \x03l\x00\x00
 ナタネ\n　「世界は消滅して……あなただけが生き残った。\p教授はあなた\n　　を恐れている」\
 
 \x00  
-SEQ01 \x94\x03\x00\x0c
-SEQ04  \x06\x03\x00 \x02\x00\x00 4\x03\x00 
+SEQ01 \x94\x03
+SEQ13 
+SEQ04  \x06\x03\x00 
+SEQ12  4\x03\x00 
 SEQ10  \x06\x03\x00 
-FILE2 TextClosev\x81\x1f\x8a\x05\x00 
+SEQ12 \x03\x03\x00\x00TextClose SPC02 \x8a\x05\x00 
 ENDF

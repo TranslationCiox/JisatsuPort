@@ -1,14 +1,16 @@
 STRF
 \x84\x13\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xb4\x0f\x00  
-SEQ01 \xc8\x00\x00\x0c
+SEQ01 \xc8\x00
+SEQ13 
 SEQ04 
 SEQ08 .\\Data\\Script\\Bg.Fob SPC03  \x00\x00 
-FILE1 BgAutoFadeIn SPC03 J\x00\x00 
+SEQ12 \x03\x04\x00\x00BgAutoFadeIn SPC03 J\x00\x00 
 SEQ10   
-SEQ01 \x04\x01\x00\x0c
+SEQ01 \x04\x01
+SEQ13 
 SEQ04 
-SEQ08 .\\Data\\Script\\Bgm.Fobv\x81\x1f\x88\x00\x00 
-SEQ02 \x00\x00PlayCD SPC01 \xb2\x00\x00 
+SEQ08 .\\Data\\Script\\Bgm.Fob SPC02 \x88\x00\x00 
+SEQ02 PlayCD SPC01 \xb2\x00\x00 
 SEQ06 SCEK05_A01\x00 \xce\x00\x00 
 SEQ07  
 SEQ01 
@@ -26,9 +28,11 @@ SEQ05 \x03\xb0\x00\x00
 私は真剣に考えた。@
 そしてついに、秘密の共有こそが繋がりを深くする鍵に違いない、\nと思い至った。\w\z
 \x00  
-SEQ01 \x12\x01\x00\x0c
-SEQ04 \x03\x07\x00\x00.\\Data\\Script\\TextFunc.Fob SPC01 \xf2\x03\x00 
-SEQ02 \x00\x00TextOn SPC01  \x04\x00 
+SEQ01 \x12\x01
+SEQ13 
+SEQ04 
+SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 \xf2\x03\x00 
+SEQ02 TextOn SPC01  \x04\x00 
 SEQ06 SCEK05_A02\x00 <\x04\x00 
 SEQ07  
 SEQ01 
@@ -40,8 +44,10 @@ SEQ05 \x03R\x00\x00
 縛る……そう、私はゆきに縛ってほしかったし、ゆきを縛りたか\nった。@
 二度と逃げられないくらいに互いを縛り合って、深い海の底に一\n緒に沈んでいきたかった。\w\z
 \x00\x00\x00  
-SEQ01 \x80\x04\x00\x0c
-SEQ04  \xf2\x03\x00 \x02\x00\x00  \x04\x00 
+SEQ01 \x80\x04
+SEQ13 
+SEQ04  \xf2\x03\x00 
+SEQ12   \x04\x00 
 SEQ06 SCEK05_A03\x00 \x02\x06\x00 
 SEQ07  
 SEQ01 
@@ -58,8 +64,10 @@ SEQ05 \x03\x9e\x00\x00
 私はそれを知りたかった。\pゆきのすべてが。@
 結局、私の熱意がゆきを説き伏せる形となった。\w\z
 \x00  
-SEQ01 F\x06\x00\x0c
-SEQ04  \xf2\x03\x00 \x02\x00\x00  \x04\x00 
+SEQ01 F\x06
+SEQ13 
+SEQ04  \xf2\x03\x00 
+SEQ12   \x04\x00 
 SEQ06 SCEK05_A04\x00 \xf8\x08\x00 
 SEQ07  
 SEQ01 
@@ -73,10 +81,12 @@ SEQ05 \x03I\x00\x00
 そしてゆきの番だった。@
 \n私はゆきに連れられて、町はずれの歩道橋に向かった。\w\z
 \x00  
-SEQ01 <\t\x00\x0c
-SEQ04  \xf2\x03\x00 \x02\x00\x00  \x04\x00 
+SEQ01 <\t
+SEQ13 
+SEQ04  \xf2\x03\x00 
+SEQ12   \x04\x00 
 SEQ10  \x88\x00\x00 
-SEQ02 \x00\x00StopCD SPC01 \xa6\n\x00 
+SEQ02 StopCD SPC01 \xa6\n\x00 
 SEQ06 SCEK05_A05\x00 \xc2\n\x00 
 SEQ07  
 SEQ01 
@@ -99,16 +109,20 @@ SEQ05 \x03\xe1\x00\x00
 せいいっぱいの勇気と不安が、ゆきの顔のなかでせめぎ合ってい\nた。@
 ゆきはこんなところで何を告白するつもりなのか……？\w\z
 \x00\x00\x00  
-SEQ01 \x06\x0b\x00\x0c
-SEQ04  \xf2\x03\x00 \x02\x00\x00  \x04\x00 
+SEQ01 \x06\x0b
+SEQ13 
+SEQ04  \xf2\x03\x00 
+SEQ12   \x04\x00 
 SEQ10 \x03#\x00\x00
 CHOICE
 不安が広がっていった。「もういいよ。帰ろう」と私はいった。\n好奇心が爆発しそうだった。私は沈黙に耐えながら、歩き続けた。\n\l0,2,
 ENDCHOICE
 
 \x00\x00\x00  
-SEQ01 \xc4\x0e\x00\x0c
-SEQ04  \xf2\x03\x00 \x02\x00\x00  \x04\x00 
+SEQ01 \xc4\x0e
+SEQ13 
+SEQ04  \xf2\x03\x00 
+SEQ12   \x04\x00 
 SEQ10  \xf2\x03\x00 
-FILE2 TextClosev\x81\x1f\x96\x0f\x00 
+SEQ12 \x03\x03\x00\x00TextClose SPC02 \x96\x0f\x00 
 ENDF

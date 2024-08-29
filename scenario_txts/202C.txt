@@ -12,17 +12,21 @@ SEQ05 \x03\xd6\x00\x00
 　　でも、消しきれなかった記憶の断片が、眠りの中で映画みた\n　　いに甦っている。\p……あなたは過去を繰り返して体験してい\n　　る。\p……つまり、あなたは虎菱拓司なの。\pあなたが記憶して\n　　いる『自分』は、真実よ。\p妄想の産物ではない。\p波動が襲っ\n　　てきて、あなたたちは実験室に籠城した。\pそれは過去の事実\n　　なの。\p……いいわね？」\
 
 \x00\x00\x00  
-SEQ01 J\x00\x00\x0c
-SEQ04 \x03\x07\x00\x00.\\Data\\Script\\TextFunc.Fob SPC01 \xc2\x03\x00 
-SEQ02 \x00\x00TextOn SPC01 \xf0\x03\x00 
+SEQ01 J\x00
+SEQ13 
+SEQ04 
+SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 \xc2\x03\x00 
+SEQ02 TextOn SPC01 \xf0\x03\x00 
 SEQ10 \x03\x0c\x00\x00
 CHOICE
 もう一度聞く\n黙って続きを聞く\n\l0,2,
 ENDCHOICE
 
 \x00  
-SEQ01 \x0c\x04\x00\x0c
-SEQ04  \xc2\x03\x00 \x02\x00\x00 \xf0\x03\x00 
+SEQ01 \x0c\x04
+SEQ13 
+SEQ04  \xc2\x03\x00 
+SEQ12  \xf0\x03\x00 
 SEQ10  \xc2\x03\x00 
-FILE2 TextClosev\x81\x1f\x82\x04\x00 
+SEQ12 \x03\x03\x00\x00TextClose SPC02 \x82\x04\x00 
 ENDF

@@ -14,9 +14,11 @@ SEQ05 \x03s\x00\x00
 憑き物が落ちたようないきいきとした顔が鏡の中にあったのを、\n鮮やかに覚えている。@
 サッパリしていて、自分でもちょっとすてきかな、などと思った\nくらいだった。\w\z
 \x00  
-SEQ01 J\x00\x00\x0c
-SEQ04 \x03\x07\x00\x00.\\Data\\Script\\TextFunc.Fob SPC01 6\x02\x00 
-SEQ02 \x00\x00TextOn SPC01 d\x02\x00 
+SEQ01 J\x00
+SEQ13 
+SEQ04 
+SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 6\x02\x00 
+SEQ02 TextOn SPC01 d\x02\x00 
 SEQ06 SCEK12_002\x00 \x80\x02\x00 
 SEQ07  
 SEQ01 
@@ -32,8 +34,10 @@ SEQ05 \x03\xb4\x00\x00
 わくわくしていた。@
 ゆきといっしょに、どこか温泉にでも旅行に出かけるような、そ\nんな気分だった。\w\z
 \x00  
-SEQ01 \xc4\x02\x00\x0c
-SEQ04  6\x02\x00 \x02\x00\x00 d\x02\x00 
+SEQ01 \xc4\x02
+SEQ13 
+SEQ04  6\x02\x00 
+SEQ12  d\x02\x00 
 SEQ06 SCEK12_003\x00 \xce\x05\x00 
 SEQ07  
 SEQ01 
@@ -46,8 +50,10 @@ SEQ05 \x03m\x00\x00
 \n　私たちは××××という薬を何軒かのドラッグストアで分けて\n買い集め（知ってるでしょ、××××？）、銀紙の上に何瓶ぶん\nかの錠剤を載せてコンロであぶって、ドロドロに溶かした。@
 そして、薬と一緒に買ってきたプレーンヨーグルトに混ぜた。\w\z
 \x00  
-SEQ01 \x12\x06\x00\x0c
-SEQ04  6\x02\x00 \x02\x00\x00 d\x02\x00 
+SEQ01 \x12\x06
+SEQ13 
+SEQ04  6\x02\x00 
+SEQ12  d\x02\x00 
 SEQ10  6\x02\x00 
-FILE2 TextClosev\x81\x1f\x0c\x08\x00 
+SEQ12 \x03\x03\x00\x00TextClose SPC02 \x0c\x08\x00 
 ENDF

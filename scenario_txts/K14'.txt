@@ -9,19 +9,23 @@ SEQ05 \x03R\x00\x00
 より確実に死ぬにはアルコールも飲まないといけないということ\nは知っていたけれど、私もゆきも、お酒なんて飲んだことはなか\nったから、それはパスした。@
 アルコールの欠落は、薬の増量でまかなえばいいと……さらに一\n瓶ぶんを溶かして、混ぜた。\w\z
 \x00  
-SEQ01 J\x00\x00\x0c
-SEQ04 \x03\x07\x00\x00.\\Data\\Script\\TextFunc.Fob SPC01 \xb2\x01\x00 
-SEQ02 \x00\x00TextOn SPC01 \xe0\x01\x00 
+SEQ01 J\x00
+SEQ13 
+SEQ04 
+SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 \xb2\x01\x00 
+SEQ02 TextOn SPC01 \xe0\x01\x00 
 SEQ10   
-SEQ01 >\x00\x00\x0c
+SEQ01 >\x00
+SEQ13 
 SEQ04 
 SEQ08 .\\Data\\Script\\Bg.Fob SPC03 \x16\x02\x00 
-FILE1 BgAutoFadeIn SPC03 @\x02\x00 
+SEQ12 \x03\x04\x00\x00BgAutoFadeIn SPC03 @\x02\x00 
 SEQ10   
-SEQ01 \x04\x01\x00\x0c
+SEQ01 \x04\x01
+SEQ13 
 SEQ04 
-SEQ08 .\\Data\\Script\\Bgm.Fobv\x81\x1f~\x02\x00 
-SEQ02 \x00\x00PlayCD SPC01 \xa8\x02\x00 
+SEQ08 .\\Data\\Script\\Bgm.Fob SPC02 ~\x02\x00 
+SEQ02 PlayCD SPC01 \xa8\x02\x00 
 SEQ06 SCEK14_A02\x00 \xc4\x02\x00 
 SEQ07  
 SEQ01 
@@ -36,10 +40,12 @@ SEQ05 \x03\xa8\x00\x00
 こんな素敵な気分で、最高の友達と一緒に死ねるなんて、私はし\nあわせだなあ、と思った。@
 繰り返すけれど、少しも怖くはなかった。\w\z
 \x00  
-SEQ01 \x08\x03\x00\x0c
-SEQ04  \xb2\x01\x00 \x02\x00\x00 \xe0\x01\x00 
+SEQ01 \x08\x03
+SEQ13 
+SEQ04  \xb2\x01\x00 
+SEQ12  \xe0\x01\x00 
 SEQ10  ~\x02\x00 
-SEQ02 \x00\x00StopCD SPC01 \xee\x05\x00 
+SEQ02 StopCD SPC01 \xee\x05\x00 
 SEQ06 SCEK14_A03\x00 \n\x06\x00 
 SEQ07  
 SEQ01 
@@ -54,14 +60,20 @@ SEQ05 \x03\\\x00\x00
 どれくらい眠っていたのか、泣いていたのか、よくわからない。@
 私は暖かくてぼんやりとしたかたまりのなかでたゆたっていた。\w\z
 \x00\x00\x00  
-SEQ01 N\x06\x00\x0c
-SEQ04  \xb2\x01\x00 \x02\x00\x00 \xe0\x01\x00 
+SEQ01 N\x06
+SEQ13 
+SEQ04  \xb2\x01\x00 
+SEQ12  \xe0\x01\x00 
 SEQ10   
-SEQ01 \xcb\x00\x00\x0c
-SEQ04  \x16\x02\x00 \x02\x00\x00 @\x02\x00 
+SEQ01 \xcb\x00
+SEQ13 
+SEQ04  \x16\x02\x00 
+SEQ12  @\x02\x00 
 SEQ10   
-SEQ01 \n\x01\x00\x0c
-SEQ04  ~\x02\x00 \x02\x00\x00 \xa8\x02\x00 
+SEQ01 \n\x01
+SEQ13 
+SEQ04  ~\x02\x00 
+SEQ12  \xa8\x02\x00 
 SEQ06 SCEK14_A04\x00 `\x08\x00 
 SEQ07  
 SEQ01 
@@ -77,8 +89,10 @@ SEQ05 \x03\x81\x00\x00
 鼻からもゲロがあふれてきた。涙で何も見えず、何が起こってい\nるのか全然わからなかった。@
 気持ちよく眠って死ねるはずだったのに、どうしてこんなに苦し\nんで死ななければならないの……？\w\z
 \x00  
-SEQ01 \xa4\x08\x00\x0c
-SEQ04  \xb2\x01\x00 \x02\x00\x00 \xe0\x01\x00 
+SEQ01 \xa4\x08
+SEQ13 
+SEQ04  \xb2\x01\x00 
+SEQ12  \xe0\x01\x00 
 SEQ06 SCEK14_A05\x00 \xe2\n\x00 
 SEQ07  
 SEQ01 
@@ -88,11 +102,15 @@ SEQ05 \x031\x00\x00
 　要するに私は薬を飲みすぎたのだった。@
 急性アルコール中毒になるまえに、身体がアルコールを自動的に\n吐き出させるように……\p私の身体は私の意志とは無関係に薬を吐\nき戻させていたのだった。\w\z
 \x00  
-SEQ01 &\x0b\x00\x0c
-SEQ04  \xb2\x01\x00 \x02\x00\x00 \xe0\x01\x00 
+SEQ01 &\x0b
+SEQ13 
+SEQ04  \xb2\x01\x00 
+SEQ12  \xe0\x01\x00 
 SEQ10   
-SEQ01 ?\x00\x00\x0c
-SEQ04  \x16\x02\x00 \x02\x00\x00 @\x02\x00 
+SEQ01 ?\x00
+SEQ13 
+SEQ04  \x16\x02\x00 
+SEQ12  @\x02\x00 
 SEQ06 SCEK14_A06\x00 X\x0c\x00 
 SEQ07  
 SEQ01 
@@ -107,8 +125,10 @@ SEQ05 \x03\\\x00\x00
 そのうち私はあまりの苦しさに意識を失った。@
 /*■背景　黒　表示*/\a7,0,1,0,\a0,200,0,0,/*▲BGM　停止*/\a4,-1,0,0,\a6,0,0,0,そして病院で目を覚ました。\w\z
 \x00\x00\x00  
-SEQ01 \x9c\x0c\x00\x0c
-SEQ04  \xb2\x01\x00 \x02\x00\x00 \xe0\x01\x00 
+SEQ01 \x9c\x0c
+SEQ13 
+SEQ04  \xb2\x01\x00 
+SEQ12  \xe0\x01\x00 
 SEQ06 SCEK14_A07\x00 F\x0e\x00 
 SEQ07  
 SEQ01 
@@ -120,8 +140,10 @@ SEQ05 \x03;\x00\x00
 若草ゆきは死んでいた。@
 そして私は生き残った。\w\z
 \x00  
-SEQ01 \x8a\x0e\x00\x0c
-SEQ04  \xb2\x01\x00 \x02\x00\x00 \xe0\x01\x00 
+SEQ01 \x8a\x0e
+SEQ13 
+SEQ04  \xb2\x01\x00 
+SEQ12  \xe0\x01\x00 
 SEQ06 SCEK14_A08\x00 \xb0\x0f\x00 
 SEQ07  
 SEQ01 
@@ -135,11 +157,15 @@ SEQ05 \x03l\x00\x00
 私にとって死は、そんなに普遍的なものではなくなっていた。@
 死は特別だった。\w\z
 \x00\x00\x00  
-SEQ01 \xf4\x0f\x00\x0c
-SEQ04  \xb2\x01\x00 \x02\x00\x00 \xe0\x01\x00 
+SEQ01 \xf4\x0f
+SEQ13 
+SEQ04  \xb2\x01\x00 
+SEQ12  \xe0\x01\x00 
 SEQ10   
-SEQ01 \x08\x01\x00\x0c
-SEQ04  ~\x02\x00 \x02\x00\x00 \xa8\x02\x00 
+SEQ01 \x08\x01
+SEQ13 
+SEQ04  ~\x02\x00 
+SEQ12  \xa8\x02\x00 
 SEQ06 SCEK14_A09\x00 \x12\x12\x00 
 SEQ07  
 SEQ01 
@@ -155,8 +181,10 @@ SEQ05 \x03e\x00\x00
 でも、振り向くと、いる。@
 「つかまえたぞ。もうお前は逃げられないんだぞ」と。\w\z
 \x00\x00\x00  
-SEQ01 V\x12\x00\x0c
-SEQ04  \xb2\x01\x00 \x02\x00\x00 \xe0\x01\x00 
+SEQ01 V\x12
+SEQ13 
+SEQ04  \xb2\x01\x00 
+SEQ12  \xe0\x01\x00 
 SEQ06 SCEK14_A10\x00 $\x14\x00 
 SEQ07  
 SEQ01 
@@ -172,8 +200,10 @@ SEQ05 \x03Y\x00\x00
 ゆきにおける私が。@
 私には必要だった。\w\z
 \x00  
-SEQ01 h\x14\x00\x0c
-SEQ04  \xb2\x01\x00 \x02\x00\x00 \xe0\x01\x00 
+SEQ01 h\x14
+SEQ13 
+SEQ04  \xb2\x01\x00 
+SEQ12  \xe0\x01\x00 
 SEQ10  \xb2\x01\x00 
-FILE2 TextClosev\x81\x1f\x12\x16\x00 
+SEQ12 \x03\x03\x00\x00TextClose SPC02 \x12\x16\x00 
 ENDF

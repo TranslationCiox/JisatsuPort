@@ -13,9 +13,11 @@ SEQ05 \x03\xa2\x00\x00
 　夢のなかで宇宙人に見つめられると、なたねは怖くて怖くて身\n動きがとれなくなってしまいうのでした。\p宇宙人はなたねが動\nけないのをいいことに、キスをしたり、身体を触ったりしました。\n\p　そしていつも最後には、管のようなものをなたねのいやらしい\nところに突き刺して、毒の液を身体の中に流し込むのです。\
 
 \x00  
-SEQ01 J\x00\x00\x0c
-SEQ04 \x03\x07\x00\x00.\\Data\\Script\\TextFunc.Fob SPC01 \xf2\x02\x00 
-SEQ02 \x00\x00TextOn SPC01  \x03\x00 
+SEQ01 J\x00
+SEQ13 
+SEQ04 
+SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 \xf2\x02\x00 
+SEQ02 TextOn SPC01  \x03\x00 
 SEQ06 SCE232_005\x00 <\x03\x00 
 SEQ07  
 SEQ01 
@@ -33,8 +35,10 @@ SEQ05 \x03\xdc\x00\x00
 　恥ずかしい気持ちはしましたが、お義父さんしか相談できる人\nがいなかったのです。\
 
 \x00  
-SEQ01 \x80\x03\x00\x0c
-SEQ04  \xf2\x02\x00 \x02\x00\x00  \x03\x00 
+SEQ01 \x80\x03
+SEQ13 
+SEQ04  \xf2\x02\x00 
+SEQ12   \x03\x00 
 SEQ06 SCE232_006\x00 *\x07\x00 
 SEQ07  
 SEQ01 
@@ -54,8 +58,10 @@ SEQ05 \x03\xf6\x00\x00
 　なたねはとてもショックでした。\pでも、写真を見ていると、ま\nたいやらしい気持ちがむずむずとわいてきて、気がつくとなたね\nは、写真を１枚ポケットに忍び込ませて、部屋を出ていたのです。\n\
 
 \x00\x00\x00  
-SEQ01 n\x07\x00\x0c
-SEQ04  \xf2\x02\x00 \x02\x00\x00  \x03\x00 
+SEQ01 n\x07
+SEQ13 
+SEQ04  \xf2\x02\x00 
+SEQ12   \x03\x00 
 SEQ06 SCE232_007\x00 \x80\x0b\x00 
 SEQ07  
 SEQ01 
@@ -68,8 +74,10 @@ SEQ05 \x03\xdd\x00\x00
 　夢のなかで宇宙人にいたずらされるのは、あいかわらず嫌な気\n分でした。\pけれども一度、写真の女の子と同じように、いやらし\nい液を顔にかけられたときは、信じられないくらいどきどきした\n気持ちになりました。\pそして翌朝、そんな自分が情けなくて、悲\nしくて、泣いてしまうのでした。\
 
 \x00  
-SEQ01 \xc4\x0b\x00\x0c
-SEQ04  \xf2\x02\x00 \x02\x00\x00  \x03\x00 
+SEQ01 \xc4\x0b
+SEQ13 
+SEQ04  \xf2\x02\x00 
+SEQ12   \x03\x00 
 SEQ06 SCE232_008\x00 r\x0f\x00 
 SEQ07  
 SEQ01 
@@ -87,8 +95,10 @@ SEQ05 \x03\xf8\x00\x00
 　なたねは『夢うらない』の本を読んで、そこに書いてあった悪\nい夢の撃退法を試すことにしました。\p本には、「真っ黒に塗った\n長い針を枕の下に隠しておいて、夢のなかで悪魔に突き刺すと、\n二度と悪夢は見なくなる」と書いてありました。\
 
 \x00\x00\x00  
-SEQ01 \xb6\x0f\x00\x0c
-SEQ04  \xf2\x02\x00 \x02\x00\x00  \x03\x00 
+SEQ01 \xb6\x0f
+SEQ13 
+SEQ04  \xf2\x02\x00 
+SEQ12   \x03\x00 
 SEQ06 SCE232_009\x00 \xd0\x13\x00 
 SEQ07  
 SEQ01 
@@ -106,13 +116,16 @@ SEQ05 \x03\xd3\x00\x00
 　えいやっ！\
 
 \x00\x00\x00  
-SEQ01 \x14\x14\x00\x0c
-SEQ04  \xf2\x02\x00 \x02\x00\x00  \x03\x00 
+SEQ01 \x14\x14
+SEQ13 
+SEQ04  \xf2\x02\x00 
+SEQ12   \x03\x00 
 SEQ10   
-SEQ01 *\x00\x00\x0c
+SEQ01 *\x00
+SEQ13 
 SEQ04 
 SEQ08 .\\Data\\Script\\Bg.Fob SPC03 \xb4\x17\x00 
-SEQ02 \x00\x00BgOn SPC03 \xde\x17\x00 
+SEQ02 BgOn SPC03 \xde\x17\x00 
 SEQ06 SCE232_010\x00 \xfa\x17\x00 
 SEQ07  
 SEQ01 
@@ -127,12 +140,15 @@ SEQ05 \x03\xa2\x00\x00
 　夢から覚めたというのに、なたねのパジャマの前ははだけたま\nま。\pからだはべとべとして、宇宙人がつけた唾の、いやな匂いが\nこびりついています。\pおそるおそる手を伸ばすと、いやらしいと\nころから、見たこともないねばねばした液があふれ出しています。\n\p　そして、開けっ放しの部屋のドアの向こうから、なにか奇妙な\n音が聞こえてくるではあいませんか！\
 
 \x00  
-SEQ01 >\x18\x00\x0c
-SEQ04  \xf2\x02\x00 \x02\x00\x00  \x03\x00 
+SEQ01 >\x18
+SEQ13 
+SEQ04  \xf2\x02\x00 
+SEQ12   \x03\x00 
 SEQ10   
-SEQ01 \xc8\x00\x00\x0c
+SEQ01 \xc8\x00
+SEQ13 
 SEQ04  \xb4\x17\x00 
-FILE1 BgAutoFadeIn SPC03 &\x1b\x00 
+SEQ12 \x03\x04\x00\x00BgAutoFadeIn SPC03 &\x1b\x00 
 SEQ06 SCE232_011\x00 J\x1b\x00 
 SEQ07  
 SEQ01 
@@ -156,11 +172,15 @@ SEQ05 \x03|\x00\x00
 　なたねは思い切って、お義父さんの部屋のドアをばたん！　と\n　開きました。\
 
 \x00  
-SEQ01 \x8e\x1b\x00\x0c
-SEQ04  \xf2\x02\x00 \x02\x00\x00  \x03\x00 
+SEQ01 \x8e\x1b
+SEQ13 
+SEQ04  \xf2\x02\x00 
+SEQ12   \x03\x00 
 SEQ10   
-SEQ01 \xcb\x00\x00\x0c
-SEQ04  \xb4\x17\x00 \x02\x00\x00 \xde\x17\x00 
+SEQ01 \xcb\x00
+SEQ13 
+SEQ04  \xb4\x17\x00 
+SEQ12  \xde\x17\x00 
 SEQ06 SCE232_012\x00 \xec\x1d\x00 
 SEQ07  
 SEQ01 
@@ -177,8 +197,10 @@ SEQ05 \x03f\x00\x00
 　おしまい。\
 
 \x00  
-SEQ01 0\x1e\x00\x0c
-SEQ04  \xf2\x02\x00 \x02\x00\x00  \x03\x00 
+SEQ01 0\x1e
+SEQ13 
+SEQ04  \xf2\x02\x00 
+SEQ12   \x03\x00 
 SEQ10  \xf2\x02\x00 
-FILE2 TextClosev\x81\x1f\x0e \x00 
+SEQ12 \x03\x03\x00\x00TextClose SPC02 \x0e \x00 
 ENDF

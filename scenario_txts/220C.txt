@@ -8,14 +8,17 @@ SEQ05 \x03\x11\x00\x00
 \n\n\n\n\n\n\n\n\n\n　　　　　　　　　　　　　『９日目』\
 
 \x00\x00\x00  
-SEQ01 J\x00\x00\x0c
-SEQ04 \x03\x07\x00\x00.\\Data\\Script\\TextFunc.Fob SPC01 \xae\x00\x00 
-SEQ02 \x00\x00TextOn SPC01 \xdc\x00\x00 
-SEQ10   
-SEQ01 \x0c\x01\x00\x0c
+SEQ01 J\x00
+SEQ13 
 SEQ04 
-SEQ08 .\\Data\\Script\\Bgm.Fobv\x81\x1f\x12\x01\x00 
-SEQ02 \x00\x00PlayCD SPC01 <\x01\x00 
+SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 \xae\x00\x00 
+SEQ02 TextOn SPC01 \xdc\x00\x00 
+SEQ10   
+SEQ01 \x0c\x01
+SEQ13 
+SEQ04 
+SEQ08 .\\Data\\Script\\Bgm.Fob SPC02 \x12\x01\x00 
+SEQ02 PlayCD SPC01 <\x01\x00 
 SEQ06 SCE220_002\x00 X\x01\x00 
 SEQ07  
 SEQ01 
@@ -31,8 +34,10 @@ SEQ05 \x03\x81\x00\x00
 傍らには、錦城の姿があった。\
 
 \x00  
-SEQ01 \x9c\x01\x00\x0c
-SEQ04  \xae\x00\x00 \x02\x00\x00 \xdc\x00\x00 
+SEQ01 \x9c\x01
+SEQ13 
+SEQ04  \xae\x00\x00 
+SEQ12  \xdc\x00\x00 
 SEQ06 SCE220_003\x00 \xda\x03\x00 
 SEQ07  
 SEQ01 
@@ -43,13 +48,16 @@ SEQ05 \x03\x8e\x00\x00
 錦城\n　「理屈から言っても、食糧管理者が食糧管理室に常在するって\n　　いうのは合理的だわ。\p今回の雲居さんへの……暴力は……\n　　不可欠だった。\pわかるわね、みんな？\p　こういうことは二度\n　　と起こされてはならないわ。\pだから、その防止の意味でも、\n　　御堂くんがみんなと違う場所にいるということは意味がある\n　　……そうでしょう？」\
 
 \x00  
-SEQ01 \x1e\x04\x00\x0c
-SEQ04  \xae\x00\x00 \x02\x00\x00 \xdc\x00\x00 
+SEQ01 \x1e\x04
+SEQ13 
+SEQ04  \xae\x00\x00 
+SEQ12  \xdc\x00\x00 
 SEQ10   
-SEQ01 &\x00\x00\x0c
+SEQ01 &\x00
+SEQ13 
 SEQ04 
 SEQ08 .\\Data\\Script\\Bg.Fob SPC03 \xaa\x06\x00 
-FILE1 BgAutoFadeIn SPC03 \xd4\x06\x00 
+SEQ12 \x03\x04\x00\x00BgAutoFadeIn SPC03 \xd4\x06\x00 
 SEQ06 SCE220_004\x00 \xf8\x06\x00 
 SEQ07  
 SEQ01 
@@ -67,11 +75,15 @@ SEQ05 \x03\xc7\x00\x00
 \n御堂は笑った。\
 
 \x00\x00\x00  
-SEQ01 <\x07\x00\x0c
-SEQ04  \xae\x00\x00 \x02\x00\x00 \xdc\x00\x00 
+SEQ01 <\x07
+SEQ13 
+SEQ04  \xae\x00\x00 
+SEQ12  \xdc\x00\x00 
 SEQ10   
-SEQ01 \xc8\x00\x00\x0c
-SEQ04  \xaa\x06\x00 \x02\x00\x00 \xd4\x06\x00 
+SEQ01 \xc8\x00
+SEQ13 
+SEQ04  \xaa\x06\x00 
+SEQ12  \xd4\x06\x00 
 SEQ10  \xae\x00\x00 
-FILE2 TextClosev\x81\x1f\xd2\n\x00 
+SEQ12 \x03\x03\x00\x00TextClose SPC02 \xd2\n\x00 
 ENDF

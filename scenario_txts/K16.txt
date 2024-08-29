@@ -1,9 +1,10 @@
 STRF
 \xc1\x11\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xc6\r\x00  
-SEQ01 <\x00\x00\x0c
+SEQ01 <\x00
+SEQ13 
 SEQ04 
 SEQ08 .\\Data\\Script\\Bg.Fob SPC03  \x00\x00 
-FILE1 BgAutoFadeIn SPC03 J\x00\x00 
+SEQ12 \x03\x04\x00\x00BgAutoFadeIn SPC03 J\x00\x00 
 SEQ06 SCEK16_001\x00 n\x00\x00 
 SEQ07  
 SEQ01 
@@ -14,9 +15,11 @@ SEQ05 \x03;\x00\x00
 あるいは、彼女が沈み込んでいったのは、いま自らが言葉に変換\nして現出して見せた暗い闇の中なのかもしれない。@
 重い沈黙に耐えかねて、拓司が口を開いた。\w\z
 \x00\x00\x00  
-SEQ01 \xb2\x00\x00\x0c
-SEQ04 \x03\x07\x00\x00.\\Data\\Script\\TextFunc.Fob SPC01 \xbe\x01\x00 
-SEQ02 \x00\x00TextOn SPC01 \xec\x01\x00 
+SEQ01 \xb2\x00
+SEQ13 
+SEQ04 
+SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 \xbe\x01\x00 
+SEQ02 TextOn SPC01 \xec\x01\x00 
 SEQ06 SCEK16_002\x00 \x08\x02\x00 
 SEQ07  
 SEQ01 
@@ -32,8 +35,10 @@ SEQ05 \x03e\x00\x00
 \nカンナは黙ったままだった。@
 ようやく口を開いたとき、カンナはなぜか自嘲気味の笑顔を口の\n端に浮かべていた。\w\z
 \x00  
-SEQ01 L\x02\x00\x0c
-SEQ04  \xbe\x01\x00 \x02\x00\x00 \xec\x01\x00 
+SEQ01 L\x02
+SEQ13 
+SEQ04  \xbe\x01\x00 
+SEQ12  \xec\x01\x00 
 SEQ06 SCEK16_003\x00 \x1a\x04\x00 
 SEQ07  
 SEQ01 
@@ -46,8 +51,10 @@ SEQ05 \x03\x86\x00\x00
 　　ずっと、このことは私のなかにあって、もう、数えられない\n　　リピートされて、現実以上にはっきりとした輪郭を持って\n　　た。\pどんな細かいディテールも逃すことなく、私のなかに刻\n　　み込まれていた。@
 　　このことは、もう私の一部分ではなくて、私がこのことの一\n　　部分で……なのに、なんだかこうやって話してみたら、全然\n　　違うものになってしまったみたい。\pすごく馬鹿げて聞こ\n　　える」\w\z
 \x00  
-SEQ01 ^\x04\x00\x0c
-SEQ04  \xbe\x01\x00 \x02\x00\x00 \xec\x01\x00 
+SEQ01 ^\x04
+SEQ13 
+SEQ04  \xbe\x01\x00 
+SEQ12  \xec\x01\x00 
 SEQ06 SCEK16_004\x00 \xb0\x06\x00 
 SEQ07  
 SEQ01 
@@ -62,8 +69,10 @@ SEQ05 \x03\x88\x00\x00
 　　私は舞台にひとり残されてしまった」@
 \nカンナは両手をぱっと開いて見せて、おしまい、と繰り返した。\w\z
 \x00\x00\x00  
-SEQ01 \xf4\x06\x00\x0c
-SEQ04  \xbe\x01\x00 \x02\x00\x00 \xec\x01\x00 
+SEQ01 \xf4\x06
+SEQ13 
+SEQ04  \xbe\x01\x00 
+SEQ12  \xec\x01\x00 
 SEQ06 SCEK16_005\x00 N\t\x00 
 SEQ07  
 SEQ01 
@@ -80,8 +89,10 @@ SEQ05 \x03x\x00\x00
 拓司\n　「今度貸してやる。\pうちに全巻あるから。\p愛蔵版で。@
 　　まとめて読めよ」\w\z
 \x00\x00\x00  
-SEQ01 \x92\t\x00\x0c
-SEQ04  \xbe\x01\x00 \x02\x00\x00 \xec\x01\x00 
+SEQ01 \x92\t
+SEQ13 
+SEQ04  \xbe\x01\x00 
+SEQ12  \xec\x01\x00 
 SEQ06 SCEK16_006\x00 \xac\x0b\x00 
 SEQ07  
 SEQ01 
@@ -91,14 +102,18 @@ SEQ05 \x03>\x00\x00
 カンナは信じられないものを見るような顔で拓司を見ていたが、\nやがてクスクスと笑いはじめた。@
 拓司は誰かの笑顔というものを、久しぶりに見たような気がした。\n\pそして、カンナの明るい笑顔というものを見たのは、これがほん\nとうに初めてだった。\w\z
 \x00\x00\x00  
-SEQ01 \xf0\x0b\x00\x0c
-SEQ04  \xbe\x01\x00 \x02\x00\x00 \xec\x01\x00 
+SEQ01 \xf0\x0b
+SEQ13 
+SEQ04  \xbe\x01\x00 
+SEQ12  \xec\x01\x00 
 SEQ10   
-SEQ01 \xc8\x00\x00\x0c
-SEQ04   \x00\x00 \x02\x00\x00 J\x00\x00 
+SEQ01 \xc8\x00
+SEQ13 
+SEQ04   \x00\x00 
+SEQ12  J\x00\x00 
 SEQ10 
-SEQ08 .\\Data\\Script\\Bgm.Fobv\x81\x1fV\r\x00 
-SEQ02 \x00\x00StopCD SPC01 \x80\r\x00 
+SEQ08 .\\Data\\Script\\Bgm.Fob SPC02 V\r\x00 
+SEQ02 StopCD SPC01 \x80\r\x00 
 SEQ10  \xbe\x01\x00 
-FILE2 TextClosev\x81\x1f\xa8\r\x00 
+SEQ12 \x03\x03\x00\x00TextClose SPC02 \xa8\r\x00 
 ENDF

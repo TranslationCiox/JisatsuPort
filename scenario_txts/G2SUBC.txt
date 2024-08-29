@@ -1,9 +1,10 @@
 STRF
 \xfb\r\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\x94\x0b\x00  
-SEQ01 \x05\x01\x00\x0c
+SEQ01 \x05\x01
+SEQ13 
 SEQ04 
-SEQ08 .\\Data\\Script\\Bgm.Fobv\x81\x1f \x00\x00 
-SEQ02 \x00\x00PlayCD SPC01 J\x00\x00 
+SEQ08 .\\Data\\Script\\Bgm.Fob SPC02  \x00\x00 
+SEQ02 PlayCD SPC01 J\x00\x00 
 SEQ06 SCEG02_004\x00 f\x00\x00 
 SEQ07  
 SEQ01 
@@ -17,14 +18,17 @@ SEQ05 \x03i\x00\x00
 錦城\n　「しーっ！　……静かに。\pみんなが目を覚ますわ。@
 　　先生ね、考えたの。\p虎菱くんがこういうのを励みにできれ\n　　ば……って」\w\z
 \x00  
-SEQ01 \xaa\x00\x00\x0c
-SEQ04 \x03\x07\x00\x00.\\Data\\Script\\TextFunc.Fob SPC01 n\x02\x00 
-SEQ02 \x00\x00TextOn SPC01 \x9c\x02\x00 
+SEQ01 \xaa\x00
+SEQ13 
+SEQ04 
+SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 n\x02\x00 
+SEQ02 TextOn SPC01 \x9c\x02\x00 
 SEQ10   
-SEQ01 ^\x00\x00\x0c
+SEQ01 ^\x00
+SEQ13 
 SEQ04 
 SEQ08 .\\Data\\Script\\Bg.Fob SPC03 \xd2\x02\x00 
-FILE1 BgAutoFadeIn SPC03 \xfc\x02\x00 
+SEQ12 \x03\x04\x00\x00BgAutoFadeIn SPC03 \xfc\x02\x00 
 SEQ06 SCEG02_005\x00  \x03\x00 
 SEQ07  
 SEQ01 
@@ -39,8 +43,10 @@ SEQ05 \x03R\x00\x00
 錦城\n　「よかった」@
 \n錦城は拓司の目をじっと見つめたまま、薄く笑った。\w\z
 \x00  
-SEQ01 d\x03\x00\x0c
-SEQ04  n\x02\x00 \x02\x00\x00 \x9c\x02\x00 
+SEQ01 d\x03
+SEQ13 
+SEQ04  n\x02\x00 
+SEQ12  \x9c\x02\x00 
 SEQ06 SCEG02_006\x00 \xe6\x04\x00 
 SEQ07  
 SEQ01 
@@ -54,8 +60,10 @@ SEQ05 \x03R\x00\x00
 拓司\n　「……」@
 黙っていると、錦城の手の動きがひどくゆっくりとしたものに変\nわった。\pじらすように止まり、少し動いてまた止まる。\w\z
 \x00\x00\x00  
-SEQ01 *\x05\x00\x0c
-SEQ04  n\x02\x00 \x02\x00\x00 \x9c\x02\x00 
+SEQ01 *\x05
+SEQ13 
+SEQ04  n\x02\x00 
+SEQ12  \x9c\x02\x00 
 SEQ06 SCEG02_007\x00 \xac\x06\x00 
 SEQ07  
 SEQ01 
@@ -71,8 +79,10 @@ SEQ05 \x03R\x00\x00
 拓司\n　「もっと……」@
 錦城\n　「いやらしい子ね。先生の手、道具だとでも思ってるのかしら？\n　　ふふふ」\w\z
 \x00  
-SEQ01 \xf0\x06\x00\x0c
-SEQ04  n\x02\x00 \x02\x00\x00 \x9c\x02\x00 
+SEQ01 \xf0\x06
+SEQ13 
+SEQ04  n\x02\x00 
+SEQ12  \x9c\x02\x00 
 SEQ06 SCEG02_008\x00 r\x08\x00 
 SEQ07  
 SEQ01 
@@ -89,16 +99,20 @@ SEQ05 \x03\x86\x00\x00
 拓司\n　「先生……」@
 錦城\n　「ねえ……触りたい？\p　先生の胸、そんなにじっと見つめて\n　　……ねえ、触りたいの？」\w\z
 \x00  
-SEQ01 \xb6\x08\x00\x0c
-SEQ04  n\x02\x00 \x02\x00\x00 \x9c\x02\x00 
+SEQ01 \xb6\x08
+SEQ13 
+SEQ04  n\x02\x00 
+SEQ12  \x9c\x02\x00 
 SEQ10 \x03\n\x00\x00
 CHOICE
 「触りたい」\n「……」\n\l0,2,
 ENDCHOICE
 
 \x00  
-SEQ01 \x08\x0b\x00\x0c
-SEQ04  n\x02\x00 \x02\x00\x00 \x9c\x02\x00 
+SEQ01 \x08\x0b
+SEQ13 
+SEQ04  n\x02\x00 
+SEQ12  \x9c\x02\x00 
 SEQ10  n\x02\x00 
-FILE2 TextClosev\x81\x1fv\x0b\x00 
+SEQ12 \x03\x03\x00\x00TextClose SPC02 v\x0b\x00 
 ENDF

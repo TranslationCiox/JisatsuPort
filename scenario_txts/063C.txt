@@ -2,7 +2,8 @@ STRF
 \xf6\r\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00*\x0b\x00\x03\x03\x00\x00SCE063_001\x00 \x06\x00\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x10r\x00\x0c
+SEQ03 \x10r
+SEQ13 
 SEQ05 \x03\x81\x00\x00
  
 カンナ\n　「虎菱くん、あなた、その程度だったんだ」@
@@ -12,18 +13,22 @@ SEQ05 \x03\x81\x00\x00
 /*■黒　表示（クロスフェード）*/\a7,-2,-2,0,\a0,200,2,0,\a6,-2,0,0,/*▲BGM　停止 */\a4,-1,0,0,拓司\n　「よせ、カンナ！」\
 
 \x00\x00\x00  
-SEQ01 J\x00\x00\x0c
-SEQ04 \x03\x07\x00\x00.\\Data\\Script\\TextFunc.Fob SPC01 n\x02\x00 
-SEQ02 \x00\x00TextOn SPC01 \x9c\x02\x00 
-SEQ10   
-SEQ01 \x0b\x01\x00\x0c
+SEQ01 J\x00
+SEQ13 
 SEQ04 
-SEQ08 .\\Data\\Script\\Bgm.Fobv\x81\x1f\xd2\x02\x00 
-SEQ02 \x00\x00PlayCD SPC01 \xfc\x02\x00 
+SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 n\x02\x00 
+SEQ02 TextOn SPC01 \x9c\x02\x00 
+SEQ10   
+SEQ01 \x0b\x01
+SEQ13 
+SEQ04 
+SEQ08 .\\Data\\Script\\Bgm.Fob SPC02 \xd2\x02\x00 
+SEQ02 PlayCD SPC01 \xfc\x02\x00 
 SEQ06 SCE063_002\x00 \x18\x03\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x14r\x00\x0c
+SEQ03 \x14r
+SEQ13 
 SEQ05 \x03{\x00\x00
  
 カンナ\n　「無駄な努力だった。\pとっとと死んじゃえばよかった。@
@@ -35,12 +40,15 @@ SEQ05 \x03{\x00\x00
 　　あなたがクイズに間違えたから……」\
 
 \x00\x00\x00  
-SEQ01 \\\x03\x00\x0c
-SEQ04  n\x02\x00 \x02\x00\x00 \x9c\x02\x00 
+SEQ01 \\\x03
+SEQ13 
+SEQ04  n\x02\x00 
+SEQ12  \x9c\x02\x00 
 SEQ06 SCE063_003\x00 \x82\x05\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x18r\x00\x0c
+SEQ03 \x18r
+SEQ13 
 SEQ05 \x03V\x00\x00
  
 拓司の胸の中に、罪悪感が広がっていった。@
@@ -52,17 +60,21 @@ SEQ05 \x03V\x00\x00
 いつの間にか、足が窓のほうへとむかっている。　\
 
 \x00  
-SEQ01 \xc6\x05\x00\x0c
-SEQ04  n\x02\x00 \x02\x00\x00 \x9c\x02\x00 
+SEQ01 \xc6\x05
+SEQ13 
+SEQ04  n\x02\x00 
+SEQ12  \x9c\x02\x00 
 SEQ10   
-SEQ01 \xc8\x00\x00\x0c
+SEQ01 \xc8\x00
+SEQ13 
 SEQ04 
 SEQ08 .\\Data\\Script\\Bg.Fob SPC03 r\x07\x00 
-FILE1 BgAutoFadeIn SPC03 \x9c\x07\x00 
+SEQ12 \x03\x04\x00\x00BgAutoFadeIn SPC03 \x9c\x07\x00 
 SEQ06 SCE063_004\x00 \xc0\x07\x00 
 SEQ07  
 SEQ01 
-SEQ03 \x1cr\x00\x0c
+SEQ03 \x1cr
+SEQ13 
 SEQ05 \x03D\x00\x00
  
 もしかしてこれが波動に侵されるということなのか？@
@@ -72,12 +84,15 @@ SEQ05 \x03D\x00\x00
 なにもできない。\
 
 \x00\x00\x00  
-SEQ01 \x04\x08\x00\x0c
-SEQ04  n\x02\x00 \x02\x00\x00 \x9c\x02\x00 
+SEQ01 \x04\x08
+SEQ13 
+SEQ04  n\x02\x00 
+SEQ12  \x9c\x02\x00 
 SEQ06 SCE063_005\x00 N\t\x00 
 SEQ07  
 SEQ01 
-SEQ03  r\x00\x0c
+SEQ03  r
+SEQ13 
 SEQ05 \x03C\x00\x00
  
 早桃\n　「おにいちゃん！」@
@@ -88,10 +103,12 @@ SEQ05 \x03C\x00\x00
 消えゆく意識の中、拓司は思った。\
 
 \x00  
-SEQ01 \x92\t\x00\x0c
-SEQ04  n\x02\x00 \x02\x00\x00 \x9c\x02\x00 
+SEQ01 \x92\t
+SEQ13 
+SEQ04  n\x02\x00 
+SEQ12  \x9c\x02\x00 
 SEQ10  \xd2\x02\x00 
-SEQ02 \x00\x00StopCD SPC01 \xe4\n\x00 
+SEQ02 StopCD SPC01 \xe4\n\x00 
 SEQ10  n\x02\x00 
-FILE2 TextClosev\x81\x1f\x0c\x0b\x00 
+SEQ12 \x03\x03\x00\x00TextClose SPC02 \x0c\x0b\x00 
 ENDF

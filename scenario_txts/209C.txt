@@ -13,17 +13,21 @@ SEQ05 \x03\xdc\x00\x00
 あるいは壮大な嘘というべきか？\
 
 \x00\x00\x00  
-SEQ01 J\x00\x00\x0c
-SEQ04 \x03\x07\x00\x00.\\Data\\Script\\TextFunc.Fob SPC01 \xda\x03\x00 
-SEQ02 \x00\x00TextOn SPC01 \x08\x04\x00 
+SEQ01 J\x00
+SEQ13 
+SEQ04 
+SEQ11 .\\Data\\Script\\TextFunc.Fob SPC01 \xda\x03\x00 
+SEQ02 TextOn SPC01 \x08\x04\x00 
 SEQ10 \x03#\x00\x00
 CHOICE
 「『教授が語る世界』をリアルと信じる」\n「『学校に籠城する世界』をリアルと信じる」\n「『君の語る世界』をリアルと信じる」\n\l0,3,
 ENDCHOICE
 
 \x00\x00\x00  
-SEQ01 $\x04\x00\x0c
-SEQ04  \xda\x03\x00 \x02\x00\x00 \x08\x04\x00 
+SEQ01 $\x04
+SEQ13 
+SEQ04  \xda\x03\x00 
+SEQ12  \x08\x04\x00 
 SEQ10  \xda\x03\x00 
-FILE2 TextClosev\x81\x1f\xf6\x04\x00 
+SEQ12 \x03\x03\x00\x00TextClose SPC02 \xf6\x04\x00 
 ENDF
