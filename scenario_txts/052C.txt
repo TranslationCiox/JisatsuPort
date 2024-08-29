@@ -1,9 +1,9 @@
 F_SRT
 \xbf'\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00Z!\x00  
-VAR01 \x0b\x01 SET01 FILE1 .\\Data\\Script\\Bgm.Fob COMMAND_TO_BYTECODE2  \x00\x00 
+VAR_2B \x0b\x01 SET01 FILE1 .\\Data\\Script\\Bgm.Fob COMMAND_TO_BYTECODE2  \x00\x00 
 CMD01 PlayCD COMMAND_TO_BYTECODE1 J\x00\x00 
 S_STR SCE052_001\x00 f\x00\x00 S_END 
-VAR01 TXT1 \xe0` SEQ06 \x03\xac\x00\x00
+VAR_2B TXT1 \xe0` SEQ06 \x03\xac\x00\x00
  
 　勢いよく扉を引き開けて、拓司は教室に躍り込んだ。@
 \n拓司\n　「早桃！」@
@@ -20,10 +20,10 @@ VAR01 TXT1 \xe0` SEQ06 \x03\xac\x00\x00
 早桃だ。\
 
 \x00  
-VAR01 \xaa\x00 SET01 FILE2 .\\Data\\Script\\TextFunc.Fob COMMAND_TO_BYTECODE1 z\x03\x00 
+VAR_2B \xaa\x00 SET01 FILE2 .\\Data\\Script\\TextFunc.Fob COMMAND_TO_BYTECODE1 z\x03\x00 
 CMD01 TextOn COMMAND_TO_BYTECODE1 \xa8\x03\x00 
 S_STR SCE052_002\x00 \xc4\x03\x00 S_END 
-VAR01 TXT1 \xe4` SEQ06 \x03]\x00\x00
+VAR_2B TXT1 \xe4` SEQ06 \x03]\x00\x00
  
 早桃\n　「おにい……ちゃん？」@
 拓司\n　「早桃！」@
@@ -35,9 +35,10 @@ VAR01 TXT1 \xe4` SEQ06 \x03]\x00\x00
 学生\n　「へえ、そうなんだ、へへ」\
 
 \x00\x00\x00  
-VAR01 \x08\x04 SET01  z\x03\x00 OPER  \xa8\x03\x00 
+VAR_2B \x08\x04 SET01  z\x03\x00 
+ \xa8\x03\x00 
 S_STR SCE052_003\x00 \xb6\x05\x00 S_END 
-VAR01 TXT1 \xe8` SEQ06 \x03l\x00\x00
+VAR_2B TXT1 \xe8` SEQ06 \x03l\x00\x00
  
 拓司は呆気にとられた。@
 初対面の人間が、正面切っていう話題ではない。@
@@ -51,9 +52,10 @@ VAR01 TXT1 \xe8` SEQ06 \x03l\x00\x00
 \nひとりが素っ頓狂な声を上げると、他の者がゲラゲラと笑い声で\n応えた。\
 
 \x00\x00\x00  
-VAR01 \xfa\x05 SET01  z\x03\x00 OPER  \xa8\x03\x00 
+VAR_2B \xfa\x05 SET01  z\x03\x00 
+ \xa8\x03\x00 
 S_STR SCE052_004\x00 \xe4\x07\x00 S_END 
-VAR01 TXT1 \xec` SEQ06 \x03{\x00\x00
+VAR_2B TXT1 \xec` SEQ06 \x03{\x00\x00
  
 学生\n　「飛ばせたよ」@
 拓司\n　「……飛ばせた？」@
@@ -67,9 +69,10 @@ VAR01 TXT1 \xec` SEQ06 \x03{\x00\x00
 　　そんなところで勉強とか青春なんて前向きにやってられるか？\n　　\pやれねえんだよ！」\
 
 \x00\x00\x00  
-VAR01 (\x08 SET01  z\x03\x00 OPER  \xa8\x03\x00 
+VAR_2B (\x08 SET01  z\x03\x00 
+ \xa8\x03\x00 
 S_STR SCE052_005\x00 N\n\x00 S_END 
-VAR01 TXT1 \xf0` SEQ06 \x03\x96\x00\x00
+VAR_2B TXT1 \xf0` SEQ06 \x03\x96\x00\x00
  
 学生は机をガン、と足でけ飛ばした。@
 怒りの爆発をギリギリで抑えている。@
@@ -86,9 +89,10 @@ VAR01 TXT1 \xf0` SEQ06 \x03\x96\x00\x00
 　　俺たちゃアホじゃねえっつーんだよッ！」\
 
 \x00  
-VAR01 \x92\n SET01  z\x03\x00 OPER  \xa8\x03\x00 
+VAR_2B \x92\n SET01  z\x03\x00 
+ \xa8\x03\x00 
 S_STR SCE052_006\x00 $\r\x00 S_END 
-VAR01 TXT1 \xf4` SEQ06 \x03\x93\x00\x00
+VAR_2B TXT1 \xf4` SEQ06 \x03\x93\x00\x00
  
 拓司\n　「オイ、落ち着け！\p　いったいどうしたって－－」@
 学生\n　「だから窓から飛んでもらったよ！」@
@@ -102,9 +106,10 @@ VAR01 TXT1 \xf4` SEQ06 \x03\x93\x00\x00
 　　泣いてごめんなさいごめんなさいっていって、窓まで走って\n　　いって、そのままトップロープ越えのトペ・スイシーダだよ！\n　　\pで、今度は虎菱の番ってわけだ！」\
 
 \x00  
-VAR01 h\r SET01  z\x03\x00 OPER  \xa8\x03\x00 
+VAR_2B h\r SET01  z\x03\x00 
+ \xa8\x03\x00 
 S_STR SCE052_007\x00 \xee\x0f\x00 S_END 
-VAR01 TXT1 \xf8` SEQ06 \x03\x90\x00\x00
+VAR_2B TXT1 \xf8` SEQ06 \x03\x90\x00\x00
  
 円陣の中央で、早桃がびくっと身をすくめる。@
 \n学生\n　「澱むんだよ、コイツがいると。@
@@ -120,9 +125,10 @@ VAR01 TXT1 \xf8` SEQ06 \x03\x90\x00\x00
 しかし、早桃の言葉が、次の言葉をさえぎった。\
 
 \x00\x00\x00  
-VAR01 2\x10 SET01  z\x03\x00 OPER  \xa8\x03\x00 
+VAR_2B 2\x10 SET01  z\x03\x00 
+ \xa8\x03\x00 
 S_STR SCE052_008\x00 \xac\x12\x00 S_END 
-VAR01 TXT1 \xfc` SEQ06 \x03f\x00\x00
+VAR_2B TXT1 \xfc` SEQ06 \x03f\x00\x00
  
 早桃\n　「しかたないよ……\p早桃が悪いんだからしかたがないよ」@
 \n拓司\n　「なっ？！」@
@@ -136,9 +142,10 @@ VAR01 TXT1 \xfc` SEQ06 \x03f\x00\x00
 有罪、有罪、有罪！\
 
 \x00  
-VAR01 \xf0\x12 SET01  z\x03\x00 OPER  \xa8\x03\x00 
+VAR_2B \xf0\x12 SET01  z\x03\x00 
+ \xa8\x03\x00 
 S_STR SCE052_009\x00 \xc2\x14\x00 S_END 
-VAR01 TXT1 \x00a SEQ06 \x03%\x00\x00
+VAR_2B TXT1 \x00a SEQ06 \x03%\x00\x00
  
 誰かが「死ね」といった。@
 \n学生\n　「死ねよ」@
@@ -148,9 +155,10 @@ VAR01 TXT1 \x00a SEQ06 \x03%\x00\x00
 学生\n　「死ねよ」\
 
 \x00\x00\x00  
-VAR01 \x06\x15 SET01  z\x03\x00 OPER  \xa8\x03\x00 
+VAR_2B \x06\x15 SET01  z\x03\x00 
+ \xa8\x03\x00 
 S_STR SCE052_010\x00 \xd4\x15\x00 S_END 
-VAR01 TXT1 \x04a SEQ06 \x03\x96\x00\x00
+VAR_2B TXT1 \x04a SEQ06 \x03\x96\x00\x00
  
 　死ねよ、死ねよ、死ねよ、死ねよ、死ねよ、死ねよ、死ねよ、\n　死ねよ、死ねよ、死ねよ\n　死ね死ね死ね死ね死ね死ね死ね死ね死ね死ね死ね死ね死ね死ね\n　死ね死ね死ね\n　シネシネシネシネシシネシネシネシネシネシネシネシネシネシ\n　ネシネシネシネシネシネ\n　学生たちの声は、大合唱となって教室にとどろき渡った。@
 \n　シ……足を上げる。@
@@ -160,9 +168,10 @@ VAR01 TXT1 \x04a SEQ06 \x03\x96\x00\x00
 \n　シネシネシネシネシシネシネシネシネシネシネシネシネシネシ\nネシネシネシネシネシネ\n　ドンガドンガドンガドンドンガドンガドンガドンガドンガドン\nガドンガドンガドンガドンガドンガ\
 
 \x00  
-VAR01 \x18\x16 SET01  z\x03\x00 OPER  \xa8\x03\x00 
+VAR_2B \x18\x16 SET01  z\x03\x00 
+ \xa8\x03\x00 
 S_STR SCE052_011\x00 \xaa\x18\x00 S_END 
-VAR01 TXT1 \x08a SEQ06 \x03\xb4\x00\x00
+VAR_2B TXT1 \x08a SEQ06 \x03\xb4\x00\x00
  
 　足を踏みならす音は太鼓のリズムで、合唱は呪文の詠唱だった。@
 　中世の魔女狩りそのものだった。@
@@ -176,10 +185,12 @@ VAR01 TXT1 \x08a SEQ06 \x03\xb4\x00\x00
 \n早桃\n　「ごめんなさい……ごめんなさい……ごめんなさい……」\
 
 \x00\x00\x00  
-VAR01 \xee\x18 SET01  z\x03\x00 OPER  \xa8\x03\x00 C_END  
-VAR01 \n\x01 SET01   \x00\x00 OPER  J\x00\x00 
+VAR_2B \xee\x18 SET01  z\x03\x00 
+ \xa8\x03\x00 C_END  
+VAR_2B \n\x01 SET01   \x00\x00 
+ J\x00\x00 
 S_STR SCE052_012\x00 ,\x1c\x00 S_END 
-VAR01 TXT1 \x0ca SEQ06 \x03\x9b\x00\x00
+VAR_2B TXT1 \x0ca SEQ06 \x03\x9b\x00\x00
  
 猛烈な怒りに突き動かされて、拓司は円陣のなかへと躍り込んだ。@
 \n拓司\n　「オ、オ、オ、オ、オ、オ、ア、ア、ア、ア、ア、ア、ア！」@
@@ -191,9 +202,10 @@ VAR01 TXT1 \x0ca SEQ06 \x03\x9b\x00\x00
 視界が奇妙な色で明滅する。\
 
 \x00  
-VAR01 p\x1c SET01  z\x03\x00 OPER  \xa8\x03\x00 
+VAR_2B p\x1c SET01  z\x03\x00 
+ \xa8\x03\x00 
 S_STR SCE052_013\x00 \x16\x1f\x00 S_END 
-VAR01 TXT1 \x10a SEQ06 \x03g\x00\x00
+VAR_2B TXT1 \x10a SEQ06 \x03g\x00\x00
  
 　興奮した声、声、声が、教室中を行き交っている。@
 　ウルセチョウシブッコロホネガジャネエオレウルセエタコイテ\nンイタイヨホネガ！\p　ガ！\p　ガ！\p　ホネ！　@
@@ -202,7 +214,9 @@ VAR01 TXT1 \x10a SEQ06 \x03g\x00\x00
 　静寂の中、バットが振り下ろされた。\
 
 \x00\x00  
-VAR01 Z\x1f SET01  z\x03\x00 OPER  \xa8\x03\x00 
-CHOICE_FLAG  z\x03\x00 OPER 
+VAR_2B Z\x1f SET01  z\x03\x00 
+ \xa8\x03\x00 
+ADDRES_4B  z\x03\x00 
+
 CMD03 TextClose COMMAND_TO_BYTECODE2 <!\x00 
 F_END

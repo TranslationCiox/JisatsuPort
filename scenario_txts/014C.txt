@@ -1,15 +1,16 @@
 F_SRT
 \x8b\x02\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00P\x054\x01\x00\x00\x00b\x01\x00  
-VAR01 \xc8\x00 SET01 FILE1 .\\Data\\Script\\Bg.Fob COMMAND_TO_BYTECODE3  \x00\x00 
+VAR_2B \xc8\x00 SET01 FILE1 .\\Data\\Script\\Bg.Fob COMMAND_TO_BYTECODE3  \x00\x00 
 CMD02 BgAutoFadeIn COMMAND_TO_BYTECODE3 J\x00\x00 
-CHOICE_FLAG \x03\x18\x00\x00
+ADDRES_4B \x03\x18\x00\x00
 CHOICE
 「お前には夏バテなんて概念は無いんだろうな」\n「髪、切ったのか？」\n「……」\n\l0,3,
 ENDCHOICE
 
 \x00\x00\x00  
-VAR01 n\x00 SET01 FILE2 .\\Data\\Script\\TextFunc.Fob COMMAND_TO_BYTECODE1 \xee\x00\x00 
+VAR_2B n\x00 SET01 FILE2 .\\Data\\Script\\TextFunc.Fob COMMAND_TO_BYTECODE1 \xee\x00\x00 
 CMD01 TextOn COMMAND_TO_BYTECODE1 \x1c\x01\x00 
-CHOICE_FLAG  \xee\x00\x00 OPER 
+ADDRES_4B  \xee\x00\x00 
+
 CMD03 TextClose COMMAND_TO_BYTECODE2 D\x01\x00 
 F_END

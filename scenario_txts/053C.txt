@@ -1,9 +1,9 @@
 F_SRT
 !\x15\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00r\x11\x00  
-VAR01 \x0b\x01 SET01 FILE1 .\\Data\\Script\\Bgm.Fob COMMAND_TO_BYTECODE2  \x00\x00 
+VAR_2B \x0b\x01 SET01 FILE1 .\\Data\\Script\\Bgm.Fob COMMAND_TO_BYTECODE2  \x00\x00 
 CMD01 PlayCD COMMAND_TO_BYTECODE1 J\x00\x00 
 S_STR SCE053_001\x00 f\x00\x00 S_END 
-VAR01 TXT1 pb SEQ06 \x03z\x00\x00
+VAR_2B TXT1 pb SEQ06 \x03z\x00\x00
  
 机が乱暴に端々に追いやられ、教室は妙に広々としている。@
 教室の中央に、学生たちが群れている。@
@@ -12,10 +12,10 @@ VAR01 TXT1 pb SEQ06 \x03z\x00\x00
 /*▲BGM　Track11　再生　*//*■CG21　表示（クロスフェード）　*/\a7,-2,-2,0,\a0,20,2,0,\a6,-2,0,0,\n早桃だ。\
 
 \x00  
-VAR01 \xaa\x00 SET01 FILE2 .\\Data\\Script\\TextFunc.Fob COMMAND_TO_BYTECODE1 \xb2\x02\x00 
+VAR_2B \xaa\x00 SET01 FILE2 .\\Data\\Script\\TextFunc.Fob COMMAND_TO_BYTECODE1 \xb2\x02\x00 
 CMD01 TextOn COMMAND_TO_BYTECODE1 \xe0\x02\x00 
 S_STR SCE053_002\x00 \xfc\x02\x00 S_END 
-VAR01 TXT1 tb SEQ06 \x03C\x00\x00
+VAR_2B TXT1 tb SEQ06 \x03C\x00\x00
  
 学生\n　「だいたい図々しいんだよ」@
 学生\n　「なんでお前、率先して死なないわけ？」@
@@ -28,9 +28,10 @@ VAR01 TXT1 tb SEQ06 \x03C\x00\x00
 学生\n　「死ねよ」\
 
 \x00\x00\x00  
-VAR01 @\x03 SET01  \xb2\x02\x00 OPER  \xe0\x02\x00 
+VAR_2B @\x03 SET01  \xb2\x02\x00 
+ \xe0\x02\x00 
 S_STR SCE053_003\x00 \x86\x04\x00 S_END 
-VAR01 TXT1 xb SEQ06 \x03\x96\x00\x00
+VAR_2B TXT1 xb SEQ06 \x03\x96\x00\x00
  
 　死ねよ、死ねよ、死ねよ、死ねよ、死ねよ、死ねよ、死ねよ、\n　死ねよ、死ねよ、死ねよ\n　死ね死ね死ね死ね死ね死ね死ね死ね死ね死ね死ね死ね死ね死ね\n　死ね死ね死ね\n　シネシネシネシネシシネシネシネシネシネシネシネシネシネシ\n　ネシネシネシネシネシネ\n　学生たちの声は、大合唱となって教室にとどろき渡った。@
 \n　シ……足を上げる。@
@@ -40,9 +41,10 @@ VAR01 TXT1 xb SEQ06 \x03\x96\x00\x00
 \n　シネシネシネシネシシネシネシネシネシネシネシネシネシネシ\nネシネシネシネシネシネ\n　ドンガドンガドンガドンドンガドンガドンガドンガドンガドン\nガドンガドンガドンガドンガドンガ\
 
 \x00  
-VAR01 \xca\x04 SET01  \xb2\x02\x00 OPER  \xe0\x02\x00 
+VAR_2B \xca\x04 SET01  \xb2\x02\x00 
+ \xe0\x02\x00 
 S_STR SCE053_004\x00 \\\x07\x00 S_END 
-VAR01 TXT1 |b SEQ06 \x03\xb3\x00\x00
+VAR_2B TXT1 |b SEQ06 \x03\xb3\x00\x00
  
 　足を踏みならす音は太鼓のリズムで、合唱は呪文の詠唱だった@
 　中世の魔女狩りそのものだった。@
@@ -56,11 +58,12 @@ VAR01 TXT1 |b SEQ06 \x03\xb3\x00\x00
 \n早桃\n　「ごめんなさい……ごめんなさい……ごめんなさい……」\
 
 \x00  
-VAR01 \xa0\x07 SET01  \xb2\x02\x00 OPER  \xe0\x02\x00 C_END  
-VAR01 \xc8\x00 SET01 FILE1 .\\Data\\Script\\Bg.Fob COMMAND_TO_BYTECODE3 \xc0\n\x00 
+VAR_2B \xa0\x07 SET01  \xb2\x02\x00 
+ \xe0\x02\x00 C_END  
+VAR_2B \xc8\x00 SET01 FILE1 .\\Data\\Script\\Bg.Fob COMMAND_TO_BYTECODE3 \xc0\n\x00 
 CMD02 BgAutoFadeIn COMMAND_TO_BYTECODE3 \xea\n\x00 
 S_STR SCE053_005\x00 \x0e\x0b\x00 S_END 
-VAR01 TXT1 \x80b SEQ06 \x03r\x00\x00
+VAR_2B TXT1 \x80b SEQ06 \x03r\x00\x00
  
 早桃がクラスのなかで孤立しているということは知っていた。@
 人見知りの激しい早桃は、いじめの絶好の標的だったのだろう。\nそれにしても－－@
@@ -70,9 +73,10 @@ VAR01 TXT1 \x80b SEQ06 \x03r\x00\x00
 しかしまた、背後から拓司の肩を押さえた者がいる。\
 
 \x00  
-VAR01 R\x0b SET01  \xb2\x02\x00 OPER  \xe0\x02\x00 
+VAR_2B R\x0b SET01  \xb2\x02\x00 
+ \xe0\x02\x00 
 S_STR SCE053_006\x00 T\r\x00 S_END 
-VAR01 TXT1 \x84b SEQ06 \x03a\x00\x00
+VAR_2B TXT1 \x84b SEQ06 \x03a\x00\x00
  
 拓司\n　「離してくれ、雲居さん」@
 なたね\n　「駄目。\pいま入っても義妹さんは救えない。\p多勢に無勢。@
@@ -83,23 +87,28 @@ VAR01 TXT1 \x84b SEQ06 \x03a\x00\x00
 \nなたねはすうっと目を細めて天を見上げ、指先で空中に何かの文\n字を書いた。\pそれから地面に掌をぴったりと当てて、沈黙に沈み\n込んだ。\p拓司のなかで怒りが爆発した。\
 
 \x00  
-VAR01 \x98\r SET01  \xb2\x02\x00 OPER  \xe0\x02\x00 
+VAR_2B \x98\r SET01  \xb2\x02\x00 
+ \xe0\x02\x00 
 S_STR SCE053_007\x00 V\x0f\x00 S_END 
-VAR01 TXT1 \x88b SEQ06 \x03>\x00\x00
+VAR_2B TXT1 \x88b SEQ06 \x03>\x00\x00
  
 拓司\n　「ふざけるな、そんな遊びにつきあってるヒマは－－」@
 雲居\n　「間違いない。\pいま、前兆を確認したわ。\p五分後、大きな波が\n　　来るわ。\pそれまで待てば、みんな自滅する。\pそうすれば、危\n　　険を冒さずに義妹さんを助けられるわ」\
 
 \x00\x00\x00  
-VAR01 \x9a\x0f SET01  \xb2\x02\x00 OPER  \xe0\x02\x00 
-CHOICE_FLAG \x03\n\x00\x00
+VAR_2B \x9a\x0f SET01  \xb2\x02\x00 
+ \xe0\x02\x00 
+ADDRES_4B \x03\n\x00\x00
 CHOICE
 待っていられない\n待つ\n\l0,2,
 ENDCHOICE
 
 \x00  
-VAR01 \xcc\x10 SET01  \xb2\x02\x00 OPER  \xe0\x02\x00 
-CHOICE_FLAG  \xb2\x02\x00 OPER 
+VAR_2B \xcc\x10 SET01  \xb2\x02\x00 
+ \xe0\x02\x00 
+ADDRES_4B  \xb2\x02\x00 
+
 CMD03 TextClose COMMAND_TO_BYTECODE2 :\x11\x00 
-CHOICE_FLAG  \xb2\x02\x00 OPER  :\x11\x00 
+ADDRES_4B  \xb2\x02\x00 
+ :\x11\x00 
 F_END

@@ -1,7 +1,7 @@
 F_SRT
 \xf6\n\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xf8\x08\x00
 CMD03 SCE237_001\x00 \x06\x00\x00 S_END 
-VAR01 TXT1 \xf0\x81\x01\x0c\x00\x00\x00\x00"\x03s\x00\x00
+VAR_2B TXT1 \xf0\x81\x01\x0c\x00\x00\x00\x00"\x03s\x00\x00
  
 教授\n　「もう大丈夫だ。\p私を信じたまえ。\pこの世界を信じたまえ。@
 　　少なくとも、ここは安全な世界だ。\p君に害を及ぼすものはな\n　　にもないんだ」@
@@ -15,10 +15,10 @@ VAR01 TXT1 \xf0\x81\x01\x0c\x00\x00\x00\x00"\x03s\x00\x00
 死ぬよりはマシだ。\
 
 \x00\x00\x00  
-VAR01 J\x00 SET01 FILE2 .\\Data\\Script\\TextFunc.Fob COMMAND_TO_BYTECODE1 6\x02\x00 
+VAR_2B J\x00 SET01 FILE2 .\\Data\\Script\\TextFunc.Fob COMMAND_TO_BYTECODE1 6\x02\x00 
 CMD01 TextOn COMMAND_TO_BYTECODE1 d\x02\x00 
 S_STR SCE237_002\x00 \x80\x02\x00 S_END 
-VAR01 TXT1 \xf4\x81\x01\x0c\x00\x00\x00\x00"\x03\x98\x00\x00
+VAR_2B TXT1 \xf4\x81\x01\x0c\x00\x00\x00\x00"\x03\x98\x00\x00
  
 /*▲SE03　１回再生（再生終了を待たず先へ）*/\a2,0,3,0,　キキキキキ……キイキイ……キキキ……キキ……キ@
 \a4,0,0,0,\n軋む音が、耳の音で聞こえた。@
@@ -31,9 +31,10 @@ VAR01 TXT1 \xf4\x81\x01\x0c\x00\x00\x00\x00"\x03\x98\x00\x00
 やがてまたこの部屋で目覚めて、教授にすべてを否定され……\
 
 \x00  
-VAR01 \xc4\x02 SET01  6\x02\x00 OPER  d\x02\x00 
+VAR_2B \xc4\x02 SET01  6\x02\x00 
+ d\x02\x00 
 S_STR SCE237_003\x00 ^\x05\x00 S_END 
-VAR01 TXT1 \xf8\x81\x01\x0c\x00\x00\x00\x00"\x03\x91\x00\x00
+VAR_2B TXT1 \xf8\x81\x01\x0c\x00\x00\x00\x00"\x03\x91\x00\x00
  
 /*▲SE03　１回再生（終了を待たず先へ）*/\a2,0,3,0,　キキキキキ……キイキイ……キキキ……キキ……キ@
 \a4,0,0,0,\n　この悪夢はいつまで続くのだろう？@
@@ -45,11 +46,13 @@ VAR01 TXT1 \xf8\x81\x01\x0c\x00\x00\x00\x00"\x03\x91\x00\x00
 \a4,0,0,0,\n　拓司はなま暖かいかたまりにゆっくり飲み込まれながら、ただ\n胎児のように身を丸めて恐怖していた。\
 
 \x00\x00  
-VAR01 \xa2\x05 SET01  6\x02\x00 OPER  d\x02\x00 C_END  
-VAR01 \xc8\x00 SET01 FILE1 .\\Data\\Script\\Bg.Fob COMMAND_TO_BYTECODE3 :\x08\x00 
+VAR_2B \xa2\x05 SET01  6\x02\x00 
+ d\x02\x00 C_END  
+VAR_2B \xc8\x00 SET01 FILE1 .\\Data\\Script\\Bg.Fob COMMAND_TO_BYTECODE3 :\x08\x00 
 CMD02 BgAutoFadeIn COMMAND_TO_BYTECODE3 d\x08\x00 
-CHOICE_FLAG FILE1 .\\Data\\Script\\Bgm.Fob COMMAND_TO_BYTECODE2 \x88\x08\x00 
+ADDRES_4B FILE1 .\\Data\\Script\\Bgm.Fob COMMAND_TO_BYTECODE2 \x88\x08\x00 
 CMD01 StopCD COMMAND_TO_BYTECODE1 \xb2\x08\x00 
-CHOICE_FLAG  6\x02\x00 OPER 
+ADDRES_4B  6\x02\x00 
+
 CMD03 TextClose COMMAND_TO_BYTECODE2 \xda\x08\x00 
 F_END

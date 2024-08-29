@@ -1,21 +1,21 @@
 F_SRT
 \x00\x07\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xf8\x05\x00  
-VAR01 \x05\x01 SET01 FILE1 .\\Data\\Script\\Bgm.Fob COMMAND_TO_BYTECODE2  \x00\x00 
+VAR_2B \x05\x01 SET01 FILE1 .\\Data\\Script\\Bgm.Fob COMMAND_TO_BYTECODE2  \x00\x00 
 CMD01 PlayCD COMMAND_TO_BYTECODE1 J\x00\x00 
 S_STR SCEG03_003\x00 f\x00\x00 S_END 
-VAR01 TXT1 x\xc5\x01\x0c\x00\x00\x00\x00"\x03L\x00\x00
+VAR_2B TXT1 x\xc5\x01\x0c\x00\x00\x00\x00"\x03L\x00\x00
  
 　拓司の股間をゆっくりとなで回しながらいう。@
 錦城は長い髪を後ろに掻き上げて、唇をそっと拓司の股間に近づ\nけた。@
 カチリ、という音を立ててジッパーの先をくわえ、器用にそれを\n開いていく。@
 \n錦城\n　「静かに……静かにね。\p他の子が目を覚まさないように……\n　　私たちだけの秘密だから……」\w\z
 \x00\x00\x00  
-VAR01 \xaa\x00 SET01 FILE2 .\\Data\\Script\\TextFunc.Fob COMMAND_TO_BYTECODE1 \xfa\x01\x00 
+VAR_2B \xaa\x00 SET01 FILE2 .\\Data\\Script\\TextFunc.Fob COMMAND_TO_BYTECODE1 \xfa\x01\x00 
 CMD01 TextOn COMMAND_TO_BYTECODE1 (\x02\x00 C_END  
-VAR01 _\x00 SET01 FILE1 .\\Data\\Script\\Bg.Fob COMMAND_TO_BYTECODE3 ^\x02\x00 
+VAR_2B _\x00 SET01 FILE1 .\\Data\\Script\\Bg.Fob COMMAND_TO_BYTECODE3 ^\x02\x00 
 CMD02 BgAutoFadeIn COMMAND_TO_BYTECODE3 \x88\x02\x00 
 S_STR SCEG03_004\x00 \xac\x02\x00 S_END 
-VAR01 TXT1 |\xc5\x01\x0c\x00\x00\x00\x00"\x03\x92\x00\x00
+VAR_2B TXT1 |\xc5\x01\x0c\x00\x00\x00\x00"\x03\x92\x00\x00
  
 　錦城は顔を拓司の股間に埋めて、口だけを使ってペ○スを引き\nずり出した。@
 イヌが餌を食べるときのようなあさましい姿だったが、端正な錦\n城がすると、不思議と儀式めいて美しく見えた。@
@@ -27,10 +27,13 @@ VAR01 TXT1 |\xc5\x01\x0c\x00\x00\x00\x00"\x03\x92\x00\x00
 　　興奮するでしょう？\p　どんな味がするか……わかる？@
 　　いってあげましょうか、あなたのおち○ちんの味？」\w\z
 \x00\x00\x00  
-VAR01 \xf0\x02 SET01  \xfa\x01\x00 OPER  (\x02\x00 C_END  
-VAR01 \xc8\x00 SET01  ^\x02\x00 OPER  \x88\x02\x00 
-CHOICE_FLAG   \x00\x00 
+VAR_2B \xf0\x02 SET01  \xfa\x01\x00 
+ (\x02\x00 C_END  
+VAR_2B \xc8\x00 SET01  ^\x02\x00 
+ \x88\x02\x00 
+ADDRES_4B   \x00\x00 
 CMD01 StopCD COMMAND_TO_BYTECODE1 \xb2\x05\x00 
-CHOICE_FLAG  \xfa\x01\x00 OPER 
+ADDRES_4B  \xfa\x01\x00 
+
 CMD03 TextClose COMMAND_TO_BYTECODE2 \xda\x05\x00 
 F_END

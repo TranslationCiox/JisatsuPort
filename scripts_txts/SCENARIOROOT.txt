@@ -1,433 +1,702 @@
 F_SRT
 \x87U\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00|C\x00  
-VAR01 \x00\x00\x00 SET01 FILE1 .\\Data\\Script\\Data.Fob COMMAND_TO_BYTECODE1  \x00\x00 OPER 
+VAR_2B \x00\x00\x00 SET01 FILE1 .\\Data\\Script\\Data.Fob COMMAND_TO_BYTECODE1  \x00\x00 
+
 CMD03 SetGameMode J\x00\x00 
-CHOICE_FLAG FILE2 .\\Data\\Script\\TextFunc.Fob COMMAND_TO_BYTECODE1 SFLAG OPER FILE1 ResetFunctionNormalFlag \x98\x00\x00 
-CHOICE_FLAG   \x00\x00 OPER 
+ADDRES_4B FILE2 .\\Data\\Script\\TextFunc.Fob COMMAND_TO_BYTECODE1 SFLAG 
+FILE1 ResetFunctionNormalFlag \x98\x00\x00 
+ADDRES_4B   \x00\x00 
+
 CMD04 InitGameFlagBuffer COMMAND_TO_BYTECODE1 \xd0\x00\x00 
-CHOICE_FLAG FILE1 .\\Data\\Script\\Bg.Fob COMMAND_TO_BYTECODE5 \xf8\x00\x00 OPER 
+ADDRES_4B FILE1 .\\Data\\Script\\Bg.Fob COMMAND_TO_BYTECODE5 \xf8\x00\x00 
+
 CMD03 ClearBgID COMMAND_TO_BYTECODE4 "\x01\x00 C_END  
-VAR01 \xc8\x00 SET01  \xf8\x00\x00 
+VAR_2B \xc8\x00 SET01  \xf8\x00\x00 
 CMD01 BgOn COMMAND_TO_BYTECODE5 h\x01\x00 
-CHOICE_FLAG 
+ADDRES_4B 
 SCEN_LOAD .\\Data\\Script\\Scenario\\001c.Fob \x84\x01\x00 
 CMD01 start COMMAND_TO_BYTECODE4 SCENARIO_START 
-CHOICE_FLAG 
-SCEN_LOAD .\\Data\\Script\\Scenario\\002c.Fob \xd2\x01\x00 OPER  SCENARIO_START 
-CHOICE_FLAG 
-SCEN_LOAD .\\Data\\Script\\Scenario\\003c.Fob \x12\x02\x00 OPER  SCENARIO_START 
-CHOICE_FLAG 
-SCEN_LOAD .\\Data\\Script\\Scenario\\004c.Fob R\x02\x00 OPER  SCENARIO_START 
-CHOICE_FLAG 
-SCEN_LOAD .\\Data\\Script\\Scenario\\005c.Fob \x92\x02\x00 OPER  SCENARIO_START 
-CHOICE_FLAG  SFLAG 
+ADDRES_4B 
+SCEN_LOAD .\\Data\\Script\\Scenario\\002c.Fob \xd2\x01\x00 
+ SCENARIO_START 
+ADDRES_4B 
+SCEN_LOAD .\\Data\\Script\\Scenario\\003c.Fob \x12\x02\x00 
+ SCENARIO_START 
+ADDRES_4B 
+SCEN_LOAD .\\Data\\Script\\Scenario\\004c.Fob R\x02\x00 
+ SCENARIO_START 
+ADDRES_4B 
+SCEN_LOAD .\\Data\\Script\\Scenario\\005c.Fob \x92\x02\x00 
+ SCENARIO_START 
+ADDRES_4B  SFLAG 
 CMD02 GetLastTxtID COMMAND_TO_BYTECODE5 GET_TEXTID C_END  
-VAR02 T\x04\x00
-SCEN_LOAD .\\Data\\Script\\Scenario\\006c.Fob \x16\x03\x00 OPER  SCENARIO_START 
-CHOICE_FLAG  SFLAG OPER  GET_TEXTID C_END  
-VAR02 \x10\x04\x00
-SCEN_LOAD .\\Data\\Script\\Scenario\\008c.Fob \x84\x03\x00 OPER  SCENARIO_START 
-CHOICE_FLAG  and (\x04\x00
-SCEN_LOAD .\\Data\\Script\\Scenario\\007c.Fob \xca\x03\x00 OPER  SCENARIO_START 
-CHOICE_FLAG  and (\x04\x00 and (\x04\x00(\x04\x00OPER \x00\x00\x00\x00~\x03\x00\x01\x00\x00\xc4\x03\x00 and l\x04\x00 \xca\x03\x00 OPER  SCENARIO_START 
-CHOICE_FLAG  and l\x04\x00 and l\x04\x00l\x04\x00OPER \x00\x00\x00\x00\x10\x03\x00\x01\x00\x00.\x04\x00
-SCEN_LOAD .\\Data\\Script\\Scenario\\010C.Fob r\x04\x00 OPER  SCENARIO_START 
-CHOICE_FLAG 
-SCEN_LOAD .\\Data\\Script\\Scenario\\011C.Fob \xb2\x04\x00 OPER  SCENARIO_START 
-CHOICE_FLAG 
-SCEN_LOAD .\\Data\\Script\\Scenario\\012C.Fob \xf2\x04\x00 OPER  SCENARIO_START 
-CHOICE_FLAG  SFLAG OPER  GET_TEXTID C_END  
-VAR02 R\x07\x00
-SCEN_LOAD .\\Data\\Script\\Scenario\\013C.Fob `\x05\x00 OPER  SCENARIO_START 
-CHOICE_FLAG  and j\x07\x00
-SCEN_LOAD .\\Data\\Script\\Scenario\\014C.Fob \xa6\x05\x00 OPER  SCENARIO_START 
-CHOICE_FLAG  SFLAG OPER  GET_TEXTID C_END  
-VAR02 \xe6\x06\x00
-SCEN_LOAD .\\Data\\Script\\Scenario\\015C.Fob \x14\x06\x00 OPER  SCENARIO_START 
-CHOICE_FLAG  and \x06\x07\x00
-SCEN_LOAD .\\Data\\Script\\Scenario\\016C.Fob Z\x06\x00 OPER  SCENARIO_START 
-CHOICE_FLAG  and \x06\x07\x00
-SCEN_LOAD .\\Data\\Script\\Scenario\\017C.Fob \xa0\x06\x00 OPER  SCENARIO_START 
-CHOICE_FLAG  and \x06\x07\x00 and \x06\x07\x00\x06\x07\x00\x03\x00\x00\x00\x00\x00\x00\x0e\x06\x00\x01\x00\x00T\x06\x00OPER \x9a\x06\x00
-SCEN_LOAD .\\Data\\Script\\Scenario\\018C.Fob \x0c\x07\x00 OPER  SCENARIO_START 
-CHOICE_FLAG  and j\x07\x00 and j\x07\x00j\x07\x00OPER \x00\x00\x00\x00Z\x05\x00\x01\x00\x00\xa0\x05\x00
-SCEN_LOAD .\\Data\\Script\\Scenario\\019C.Fob p\x07\x00 OPER  SCENARIO_START 
-CHOICE_FLAG 
-SCEN_LOAD .\\Data\\Script\\Scenario\\020C.Fob \xb0\x07\x00 OPER  SCENARIO_START 
-CHOICE_FLAG 
-SCEN_LOAD .\\Data\\Script\\Scenario\\021C.Fob \xf0\x07\x00 OPER  SCENARIO_START 
-CHOICE_FLAG  SFLAG OPER  GET_TEXTID C_END  
-VAR02 2\t\x00! 
-VAR01 \x00\x00\x00\x00\r\x02 \x00\x00\x00 SEQ06 
-SCEN_LOAD .\\Data\\Script\\Scenario\\022C.Fob \x82\x08\x00 OPER  SCENARIO_START 
-CHOICE_FLAG  and J\t\x00! 
-VAR01 \x00\x00\x00\x00\r\x02 \x01\x00 SEQ06 
-SCEN_LOAD .\\Data\\Script\\Scenario\\023C.Fob \xec\x08\x00 OPER  SCENARIO_START 
-CHOICE_FLAG  and J\t\x00 and J\t\x00J\t\x00OPER \x00\x00\x00\x00X\x08\x00\x01\x00\x00\xc2\x08\x00
-SCEN_LOAD .\\Data\\Script\\Scenario\\024C.Fob P\t\x00 OPER  SCENARIO_START 
-CHOICE_FLAG 
-SCEN_LOAD .\\Data\\Script\\Scenario\\025C.Fob \x90\t\x00 OPER  SCENARIO_START 
-CHOICE_FLAG 
-SCEN_LOAD .\\Data\\Script\\Scenario\\026C.Fob \xd0\t\x00 OPER  SCENARIO_START 
-CHOICE_FLAG 
-SCEN_LOAD .\\Data\\Script\\Scenario\\027C.Fob \x10\n\x00 OPER  SCENARIO_START 
-CHOICE_FLAG 
-SCEN_LOAD .\\Data\\Script\\Scenario\\028C.Fob P\n\x00 OPER  SCENARIO_START 
-CHOICE_FLAG 
-SCEN_LOAD .\\Data\\Script\\Scenario\\029C.Fob \x90\n\x00 OPER  SCENARIO_START 
-CHOICE_FLAG 
-SCEN_LOAD .\\Data\\Script\\Scenario\\030C.Fob \xd0\n\x00 OPER  SCENARIO_START 
-CHOICE_FLAG 
-SCEN_LOAD .\\Data\\Script\\Scenario\\031C.Fob \x10\x0b\x00 OPER  SCENARIO_START 
-CHOICE_FLAG 
-SCEN_LOAD .\\Data\\Script\\Scenario\\032C.Fob P\x0b\x00 OPER  SCENARIO_START 
-CHOICE_FLAG 
-SCEN_LOAD .\\Data\\Script\\Scenario\\033C.Fob \x90\x0b\x00 OPER  SCENARIO_START 
-CHOICE_FLAG  SFLAG OPER  GET_TEXTID C_END  
-VAR02 :\x0f\x00
-SCEN_LOAD .\\Data\\Script\\Scenario\\035C.Fob \xfe\x0b\x00 OPER  SCENARIO_START 
-CHOICE_FLAG 
-SCEN_LOAD .\\Data\\Script\\Scenario\\043C.Fob >\x0c\x00 OPER  SCENARIO_START 
-CHOICE_FLAG  and Z\x0f\x00
-SCEN_LOAD .\\Data\\Script\\Scenario\\034C.Fob \x84\x0c\x00 OPER  SCENARIO_START 
-CHOICE_FLAG 
-SCEN_LOAD .\\Data\\Script\\Scenario\\037C.Fob \xc4\x0c\x00 OPER  SCENARIO_START 
-CHOICE_FLAG  SFLAG OPER  GET_TEXTID C_END  
-VAR02 \x90\x0e\x00
-SCEN_LOAD .\\Data\\Script\\Scenario\\038C.Fob 2\r\x00 OPER  SCENARIO_START 
-CHOICE_FLAG  and \xa8\x0e\x00
-SCEN_LOAD .\\Data\\Script\\Scenario\\039C.Fob x\r\x00 OPER  SCENARIO_START 
-CHOICE_FLAG  SFLAG OPER  GET_TEXTID C_END  
-VAR02 l\x0e\x00
-SCEN_LOAD .\\Data\\Script\\Scenario\\040C.Fob \xe6\r\x00 OPER  SCENARIO_START 
-CHOICE_FLAG  and \x84\x0e\x00
-SCEN_LOAD .\\Data\\Script\\Scenario\\041C.Fob ,\x0e\x00 OPER  SCENARIO_START 
-CHOICE_FLAG  and \x84\x0e\x00\x84\x0e\x00OPER \x00\x00\x00\x00\xe0\r\x00\x01\x00\x00&\x0e\x00 and \xa8\x0e\x00 and \xa8\x0e\x00\xa8\x0e\x00OPER \x00\x00\x00\x00,\r\x00\x01\x00\x00r\r\x00 and Z\x0f\x00
-SCEN_LOAD .\\Data\\Script\\Scenario\\036C.Fob \xb4\x0e\x00 OPER  SCENARIO_START 
-CHOICE_FLAG 
-SCEN_LOAD .\\Data\\Script\\Scenario\\044C.Fob \xf4\x0e\x00 OPER  SCENARIO_START 
-CHOICE_FLAG  and Z\x0f\x00 and Z\x0f\x00Z\x0f\x00\x03\x00\x00\x00\x00\x00\x00\xf8\x0b\x00\x01\x00\x00~\x0c\x00OPER \xae\x0e\x00
-SCEN_LOAD .\\Data\\Script\\Scenario\\042C.Fob `\x0f\x00 OPER  SCENARIO_START 
-CHOICE_FLAG 
-SCEN_LOAD .\\Data\\Script\\Scenario\\045C.Fob \xa0\x0f\x00 OPER  SCENARIO_START 
-CHOICE_FLAG  SFLAG OPER  GET_TEXTID C_END  
-VAR02 \x9a\x10\x00
-SCEN_LOAD .\\Data\\Script\\Scenario\\046C.Fob \x0e\x10\x00 OPER  SCENARIO_START 
-CHOICE_FLAG  and \xb2\x10\x00
-SCEN_LOAD .\\Data\\Script\\Scenario\\047C.Fob T\x10\x00 OPER  SCENARIO_START 
-CHOICE_FLAG  and \xb2\x10\x00 and \xb2\x10\x00\xb2\x10\x00OPER \x00\x00\x00\x00\x08\x10\x00\x01\x00\x00N\x10\x00
-SCEN_LOAD .\\Data\\Script\\Scenario\\048C.Fob \xb8\x10\x00 OPER  SCENARIO_START 
-CHOICE_FLAG 
-SCEN_LOAD .\\Data\\Script\\Scenario\\049C.Fob \xf8\x10\x00 OPER  SCENARIO_START 
-CHOICE_FLAG 
-SCEN_LOAD .\\Data\\Script\\Scenario\\050C.Fob 8\x11\x00 OPER  SCENARIO_START 
-CHOICE_FLAG 
-SCEN_LOAD .\\Data\\Script\\Scenario\\051C.Fob x\x11\x00 OPER  SCENARIO_START 
-CHOICE_FLAG  SFLAG OPER  GET_TEXTID C_END  
-VAR02 H\x14\x00
-SCEN_LOAD .\\Data\\Script\\Scenario\\052C.Fob \xe6\x11\x00 OPER  SCENARIO_START C_END  
-VAR01 \xff\xff\xff\xff\x0c
+VAR_3B T\x04\x00
+SCEN_LOAD .\\Data\\Script\\Scenario\\006c.Fob \x16\x03\x00 
+ SCENARIO_START 
+ADDRES_4B  SFLAG 
+ GET_TEXTID C_END  
+VAR_3B \x10\x04\x00
+SCEN_LOAD .\\Data\\Script\\Scenario\\008c.Fob \x84\x03\x00 
+ SCENARIO_START 
+ADDRES_4B  and (\x04\x00
+SCEN_LOAD .\\Data\\Script\\Scenario\\007c.Fob \xca\x03\x00 
+ SCENARIO_START 
+ADDRES_4B  and (\x04\x00 and (\x04\x00(\x04\x00
+\x00\x00\x00\x00~\x03\x00\x01\x00\x00\xc4\x03\x00 and l\x04\x00 \xca\x03\x00 
+ SCENARIO_START 
+ADDRES_4B  and l\x04\x00 and l\x04\x00l\x04\x00
+\x00\x00\x00\x00\x10\x03\x00\x01\x00\x00.\x04\x00
+SCEN_LOAD .\\Data\\Script\\Scenario\\010C.Fob r\x04\x00 
+ SCENARIO_START 
+ADDRES_4B 
+SCEN_LOAD .\\Data\\Script\\Scenario\\011C.Fob \xb2\x04\x00 
+ SCENARIO_START 
+ADDRES_4B 
+SCEN_LOAD .\\Data\\Script\\Scenario\\012C.Fob \xf2\x04\x00 
+ SCENARIO_START 
+ADDRES_4B  SFLAG 
+ GET_TEXTID C_END  
+VAR_3B R\x07\x00
+SCEN_LOAD .\\Data\\Script\\Scenario\\013C.Fob `\x05\x00 
+ SCENARIO_START 
+ADDRES_4B  and j\x07\x00
+SCEN_LOAD .\\Data\\Script\\Scenario\\014C.Fob \xa6\x05\x00 
+ SCENARIO_START 
+ADDRES_4B  SFLAG 
+ GET_TEXTID C_END  
+VAR_3B \xe6\x06\x00
+SCEN_LOAD .\\Data\\Script\\Scenario\\015C.Fob \x14\x06\x00 
+ SCENARIO_START 
+ADDRES_4B  and \x06\x07\x00
+SCEN_LOAD .\\Data\\Script\\Scenario\\016C.Fob Z\x06\x00 
+ SCENARIO_START 
+ADDRES_4B  and \x06\x07\x00
+SCEN_LOAD .\\Data\\Script\\Scenario\\017C.Fob \xa0\x06\x00 
+ SCENARIO_START 
+ADDRES_4B  and \x06\x07\x00 and \x06\x07\x00\x06\x07\x00\x03\x00\x00\x00\x00\x00\x00\x0e\x06\x00\x01\x00\x00T\x06\x00
+\x9a\x06\x00
+SCEN_LOAD .\\Data\\Script\\Scenario\\018C.Fob \x0c\x07\x00 
+ SCENARIO_START 
+ADDRES_4B  and j\x07\x00 and j\x07\x00j\x07\x00
+\x00\x00\x00\x00Z\x05\x00\x01\x00\x00\xa0\x05\x00
+SCEN_LOAD .\\Data\\Script\\Scenario\\019C.Fob p\x07\x00 
+ SCENARIO_START 
+ADDRES_4B 
+SCEN_LOAD .\\Data\\Script\\Scenario\\020C.Fob \xb0\x07\x00 
+ SCENARIO_START 
+ADDRES_4B 
+SCEN_LOAD .\\Data\\Script\\Scenario\\021C.Fob \xf0\x07\x00 
+ SCENARIO_START 
+ADDRES_4B  SFLAG 
+ GET_TEXTID C_END  
+VAR_3B 2\t\x00! 
+VAR_2B \x00\x00\x00\x00\r\x02 \x00\x00\x00 SEQ06 
+SCEN_LOAD .\\Data\\Script\\Scenario\\022C.Fob \x82\x08\x00 
+ SCENARIO_START 
+ADDRES_4B  and J\t\x00! 
+VAR_2B \x00\x00\x00\x00\r\x02 \x01\x00 SEQ06 
+SCEN_LOAD .\\Data\\Script\\Scenario\\023C.Fob \xec\x08\x00 
+ SCENARIO_START 
+ADDRES_4B  and J\t\x00 and J\t\x00J\t\x00
+\x00\x00\x00\x00X\x08\x00\x01\x00\x00\xc2\x08\x00
+SCEN_LOAD .\\Data\\Script\\Scenario\\024C.Fob P\t\x00 
+ SCENARIO_START 
+ADDRES_4B 
+SCEN_LOAD .\\Data\\Script\\Scenario\\025C.Fob \x90\t\x00 
+ SCENARIO_START 
+ADDRES_4B 
+SCEN_LOAD .\\Data\\Script\\Scenario\\026C.Fob \xd0\t\x00 
+ SCENARIO_START 
+ADDRES_4B 
+SCEN_LOAD .\\Data\\Script\\Scenario\\027C.Fob \x10\n\x00 
+ SCENARIO_START 
+ADDRES_4B 
+SCEN_LOAD .\\Data\\Script\\Scenario\\028C.Fob P\n\x00 
+ SCENARIO_START 
+ADDRES_4B 
+SCEN_LOAD .\\Data\\Script\\Scenario\\029C.Fob \x90\n\x00 
+ SCENARIO_START 
+ADDRES_4B 
+SCEN_LOAD .\\Data\\Script\\Scenario\\030C.Fob \xd0\n\x00 
+ SCENARIO_START 
+ADDRES_4B 
+SCEN_LOAD .\\Data\\Script\\Scenario\\031C.Fob \x10\x0b\x00 
+ SCENARIO_START 
+ADDRES_4B 
+SCEN_LOAD .\\Data\\Script\\Scenario\\032C.Fob P\x0b\x00 
+ SCENARIO_START 
+ADDRES_4B 
+SCEN_LOAD .\\Data\\Script\\Scenario\\033C.Fob \x90\x0b\x00 
+ SCENARIO_START 
+ADDRES_4B  SFLAG 
+ GET_TEXTID C_END  
+VAR_3B :\x0f\x00
+SCEN_LOAD .\\Data\\Script\\Scenario\\035C.Fob \xfe\x0b\x00 
+ SCENARIO_START 
+ADDRES_4B 
+SCEN_LOAD .\\Data\\Script\\Scenario\\043C.Fob >\x0c\x00 
+ SCENARIO_START 
+ADDRES_4B  and Z\x0f\x00
+SCEN_LOAD .\\Data\\Script\\Scenario\\034C.Fob \x84\x0c\x00 
+ SCENARIO_START 
+ADDRES_4B 
+SCEN_LOAD .\\Data\\Script\\Scenario\\037C.Fob \xc4\x0c\x00 
+ SCENARIO_START 
+ADDRES_4B  SFLAG 
+ GET_TEXTID C_END  
+VAR_3B \x90\x0e\x00
+SCEN_LOAD .\\Data\\Script\\Scenario\\038C.Fob 2\r\x00 
+ SCENARIO_START 
+ADDRES_4B  and \xa8\x0e\x00
+SCEN_LOAD .\\Data\\Script\\Scenario\\039C.Fob x\r\x00 
+ SCENARIO_START 
+ADDRES_4B  SFLAG 
+ GET_TEXTID C_END  
+VAR_3B l\x0e\x00
+SCEN_LOAD .\\Data\\Script\\Scenario\\040C.Fob \xe6\r\x00 
+ SCENARIO_START 
+ADDRES_4B  and \x84\x0e\x00
+SCEN_LOAD .\\Data\\Script\\Scenario\\041C.Fob ,\x0e\x00 
+ SCENARIO_START 
+ADDRES_4B  and \x84\x0e\x00\x84\x0e\x00
+\x00\x00\x00\x00\xe0\r\x00\x01\x00\x00&\x0e\x00 and \xa8\x0e\x00 and \xa8\x0e\x00\xa8\x0e\x00
+\x00\x00\x00\x00,\r\x00\x01\x00\x00r\r\x00 and Z\x0f\x00
+SCEN_LOAD .\\Data\\Script\\Scenario\\036C.Fob \xb4\x0e\x00 
+ SCENARIO_START 
+ADDRES_4B 
+SCEN_LOAD .\\Data\\Script\\Scenario\\044C.Fob \xf4\x0e\x00 
+ SCENARIO_START 
+ADDRES_4B  and Z\x0f\x00 and Z\x0f\x00Z\x0f\x00\x03\x00\x00\x00\x00\x00\x00\xf8\x0b\x00\x01\x00\x00~\x0c\x00
+\xae\x0e\x00
+SCEN_LOAD .\\Data\\Script\\Scenario\\042C.Fob `\x0f\x00 
+ SCENARIO_START 
+ADDRES_4B 
+SCEN_LOAD .\\Data\\Script\\Scenario\\045C.Fob \xa0\x0f\x00 
+ SCENARIO_START 
+ADDRES_4B  SFLAG 
+ GET_TEXTID C_END  
+VAR_3B \x9a\x10\x00
+SCEN_LOAD .\\Data\\Script\\Scenario\\046C.Fob \x0e\x10\x00 
+ SCENARIO_START 
+ADDRES_4B  and \xb2\x10\x00
+SCEN_LOAD .\\Data\\Script\\Scenario\\047C.Fob T\x10\x00 
+ SCENARIO_START 
+ADDRES_4B  and \xb2\x10\x00 and \xb2\x10\x00\xb2\x10\x00
+\x00\x00\x00\x00\x08\x10\x00\x01\x00\x00N\x10\x00
+SCEN_LOAD .\\Data\\Script\\Scenario\\048C.Fob \xb8\x10\x00 
+ SCENARIO_START 
+ADDRES_4B 
+SCEN_LOAD .\\Data\\Script\\Scenario\\049C.Fob \xf8\x10\x00 
+ SCENARIO_START 
+ADDRES_4B 
+SCEN_LOAD .\\Data\\Script\\Scenario\\050C.Fob 8\x11\x00 
+ SCENARIO_START 
+ADDRES_4B 
+SCEN_LOAD .\\Data\\Script\\Scenario\\051C.Fob x\x11\x00 
+ SCENARIO_START 
+ADDRES_4B  SFLAG 
+ GET_TEXTID C_END  
+VAR_3B H\x14\x00
+SCEN_LOAD .\\Data\\Script\\Scenario\\052C.Fob \xe6\x11\x00 
+ SCENARIO_START C_END  
+VAR_2B \xff\xff\xff\xff\x0c
 SEQ05  and \x04?\x00 and `\x14\x00
-SCEN_LOAD .\\Data\\Script\\Scenario\\053C.Fob L\x12\x00 OPER  SCENARIO_START 
-CHOICE_FLAG  SFLAG OPER  GET_TEXTID C_END  
-VAR02 $\x14\x00
-SCEN_LOAD .\\Data\\Script\\Scenario\\054C.Fob \xba\x12\x00 OPER  SCENARIO_START C_END  
-VAR01 \xff\xff\xff\xff\x0c
+SCEN_LOAD .\\Data\\Script\\Scenario\\053C.Fob L\x12\x00 
+ SCENARIO_START 
+ADDRES_4B  SFLAG 
+ GET_TEXTID C_END  
+VAR_3B $\x14\x00
+SCEN_LOAD .\\Data\\Script\\Scenario\\054C.Fob \xba\x12\x00 
+ SCENARIO_START C_END  
+VAR_2B \xff\xff\xff\xff\x0c
 SEQ05  and \x04?\x00 and <\x14\x00
-SCEN_LOAD .\\Data\\Script\\Scenario\\055C.Fob  \x13\x00 OPER  SCENARIO_START 
-CHOICE_FLAG ! 
-VAR01 \x00\x00\x00\x00\r\x02 \x00\x00\x00\x00\x0b\r\x01 \x00\x00\x00\x00\x1b\x00\x00\x00\x001\x00\x00\x00\x00\xd8\x13\x00
-SCEN_LOAD .\\Data\\Script\\Scenario\\056C.Fob \x98\x13\x00 OPER  SCENARIO_START 
-CHOICE_FLAG  and \x18\x14\x00
-SCEN_LOAD .\\Data\\Script\\Scenario\\057C.Fob \xde\x13\x00 OPER  SCENARIO_START 
-CHOICE_FLAG  and <\x14\x00 and <\x14\x00<\x14\x00OPER \x00\x00\x00\x00\xb4\x12\x00\x01\x00\x00\x1a\x13\x00 and `\x14\x00 and `\x14\x00`\x14\x00OPER \x00\x00\x00\x00\xe0\x11\x00\x01\x00\x00F\x12\x00
-SCEN_LOAD .\\Data\\Script\\Scenario\\058C.Fob f\x14\x00 OPER  SCENARIO_START 
-CHOICE_FLAG  SFLAG OPER  GET_TEXTID C_END  
-VAR02 `\x15\x00
-SCEN_LOAD .\\Data\\Script\\Scenario\\059C.Fob \xd4\x14\x00 OPER  SCENARIO_START 
-CHOICE_FLAG  and x\x15\x00
-SCEN_LOAD .\\Data\\Script\\Scenario\\060C.Fob \x1a\x15\x00 OPER  SCENARIO_START 
-CHOICE_FLAG  and x\x15\x00 and x\x15\x00x\x15\x00OPER \x00\x00\x00\x00\xce\x14\x00\x01\x00\x00\x14\x15\x00
-SCEN_LOAD .\\Data\\Script\\Scenario\\061C.Fob ~\x15\x00 OPER  SCENARIO_START 
-CHOICE_FLAG 
-SCEN_LOAD .\\Data\\Script\\Scenario\\062C.Fob \xbe\x15\x00 OPER  SCENARIO_START 
-CHOICE_FLAG  SFLAG OPER  GET_TEXTID C_END  
-VAR02 >\x16\x00 and $\x19\x00 and V\x16\x00 and V\x16\x00 and V\x16\x00V\x16\x00OPER \x00\x00\x00\x00&\x16\x00\x01\x00\x002\x16\x00
-SCEN_LOAD .\\Data\\Script\\Scenario\\064C.Fob \\\x16\x00 OPER  SCENARIO_START 
-CHOICE_FLAG  SFLAG OPER  GET_TEXTID C_END  
-VAR02 \xdc\x16\x00 and $\x19\x00 and \xf4\x16\x00 and \xf4\x16\x00 and \xf4\x16\x00\xf4\x16\x00OPER \x00\x00\x00\x00\xc4\x16\x00\x01\x00\x00\xd0\x16\x00
-SCEN_LOAD .\\Data\\Script\\Scenario\\065C.Fob \xfa\x16\x00 OPER  SCENARIO_START 
-CHOICE_FLAG  SFLAG OPER  GET_TEXTID C_END  
-VAR02 z\x17\x00 and \x9a\x17\x00 and $\x19\x00 and \x9a\x17\x00 and \x9a\x17\x00\x9a\x17\x00\x03\x00\x00\x00\x00\x00\x00b\x17\x00\x01\x00\x00h\x17\x00OPER h\x17\x00
-SCEN_LOAD .\\Data\\Script\\Scenario\\066C.Fob \xa0\x17\x00 OPER  SCENARIO_START 
-CHOICE_FLAG  SFLAG OPER  GET_TEXTID C_END  
-VAR02  \x18\x00 and @\x18\x00 and $\x19\x00 and @\x18\x00 and @\x18\x00@\x18\x00\x03\x00\x00\x00\x00\x00\x00\x08\x18\x00\x01\x00\x00\x0e\x18\x00OPER \x0e\x18\x00
-SCEN_LOAD .\\Data\\Script\\Scenario\\067C.Fob F\x18\x00 OPER  SCENARIO_START 
-CHOICE_FLAG  SFLAG OPER  GET_TEXTID C_END  
-VAR02 \xc6\x18\x00 and $\x19\x00 and \xde\x18\x00 and \xde\x18\x00 and \xde\x18\x00\xde\x18\x00OPER \x00\x00\x00\x00\xae\x18\x00\x01\x00\x00\xba\x18\x00
-SCEN_LOAD .\\Data\\Script\\Scenario\\068C.Fob \xe4\x18\x00 OPER  SCENARIO_START 
-CHOICE_FLAG  and \x84\x19\x00
-SCEN_LOAD .\\Data\\Script\\Scenario\\063C.Fob *\x19\x00 OPER  SCENARIO_START C_END  
-VAR01 \xff\xff\xff\xff\x0c
+SCEN_LOAD .\\Data\\Script\\Scenario\\055C.Fob  \x13\x00 
+ SCENARIO_START 
+ADDRES_4B ! 
+VAR_2B \x00\x00\x00\x00\r\x02 \x00\x00\x00\x00\x0b\r\x01 \x00\x00\x00\x00\x1b\x00\x00\x00\x001\x00\x00\x00\x00\xd8\x13\x00
+SCEN_LOAD .\\Data\\Script\\Scenario\\056C.Fob \x98\x13\x00 
+ SCENARIO_START 
+ADDRES_4B  and \x18\x14\x00
+SCEN_LOAD .\\Data\\Script\\Scenario\\057C.Fob \xde\x13\x00 
+ SCENARIO_START 
+ADDRES_4B  and <\x14\x00 and <\x14\x00<\x14\x00
+\x00\x00\x00\x00\xb4\x12\x00\x01\x00\x00\x1a\x13\x00 and `\x14\x00 and `\x14\x00`\x14\x00
+\x00\x00\x00\x00\xe0\x11\x00\x01\x00\x00F\x12\x00
+SCEN_LOAD .\\Data\\Script\\Scenario\\058C.Fob f\x14\x00 
+ SCENARIO_START 
+ADDRES_4B  SFLAG 
+ GET_TEXTID C_END  
+VAR_3B `\x15\x00
+SCEN_LOAD .\\Data\\Script\\Scenario\\059C.Fob \xd4\x14\x00 
+ SCENARIO_START 
+ADDRES_4B  and x\x15\x00
+SCEN_LOAD .\\Data\\Script\\Scenario\\060C.Fob \x1a\x15\x00 
+ SCENARIO_START 
+ADDRES_4B  and x\x15\x00 and x\x15\x00x\x15\x00
+\x00\x00\x00\x00\xce\x14\x00\x01\x00\x00\x14\x15\x00
+SCEN_LOAD .\\Data\\Script\\Scenario\\061C.Fob ~\x15\x00 
+ SCENARIO_START 
+ADDRES_4B 
+SCEN_LOAD .\\Data\\Script\\Scenario\\062C.Fob \xbe\x15\x00 
+ SCENARIO_START 
+ADDRES_4B  SFLAG 
+ GET_TEXTID C_END  
+VAR_3B >\x16\x00 and $\x19\x00 and V\x16\x00 and V\x16\x00 and V\x16\x00V\x16\x00
+\x00\x00\x00\x00&\x16\x00\x01\x00\x002\x16\x00
+SCEN_LOAD .\\Data\\Script\\Scenario\\064C.Fob \\\x16\x00 
+ SCENARIO_START 
+ADDRES_4B  SFLAG 
+ GET_TEXTID C_END  
+VAR_3B \xdc\x16\x00 and $\x19\x00 and \xf4\x16\x00 and \xf4\x16\x00 and \xf4\x16\x00\xf4\x16\x00
+\x00\x00\x00\x00\xc4\x16\x00\x01\x00\x00\xd0\x16\x00
+SCEN_LOAD .\\Data\\Script\\Scenario\\065C.Fob \xfa\x16\x00 
+ SCENARIO_START 
+ADDRES_4B  SFLAG 
+ GET_TEXTID C_END  
+VAR_3B z\x17\x00 and \x9a\x17\x00 and $\x19\x00 and \x9a\x17\x00 and \x9a\x17\x00\x9a\x17\x00\x03\x00\x00\x00\x00\x00\x00b\x17\x00\x01\x00\x00h\x17\x00
+h\x17\x00
+SCEN_LOAD .\\Data\\Script\\Scenario\\066C.Fob \xa0\x17\x00 
+ SCENARIO_START 
+ADDRES_4B  SFLAG 
+ GET_TEXTID C_END  
+VAR_3B  \x18\x00 and @\x18\x00 and $\x19\x00 and @\x18\x00 and @\x18\x00@\x18\x00\x03\x00\x00\x00\x00\x00\x00\x08\x18\x00\x01\x00\x00\x0e\x18\x00
+\x0e\x18\x00
+SCEN_LOAD .\\Data\\Script\\Scenario\\067C.Fob F\x18\x00 
+ SCENARIO_START 
+ADDRES_4B  SFLAG 
+ GET_TEXTID C_END  
+VAR_3B \xc6\x18\x00 and $\x19\x00 and \xde\x18\x00 and \xde\x18\x00 and \xde\x18\x00\xde\x18\x00
+\x00\x00\x00\x00\xae\x18\x00\x01\x00\x00\xba\x18\x00
+SCEN_LOAD .\\Data\\Script\\Scenario\\068C.Fob \xe4\x18\x00 
+ SCENARIO_START 
+ADDRES_4B  and \x84\x19\x00
+SCEN_LOAD .\\Data\\Script\\Scenario\\063C.Fob *\x19\x00 
+ SCENARIO_START C_END  
+VAR_2B \xff\xff\xff\xff\x0c
 SEQ05  and \x04?\x00
-SCEN_LOAD .\\Data\\Script\\Scenario\\069C.Fob \x8a\x19\x00 OPER  SCENARIO_START 
-CHOICE_FLAG  SFLAG OPER  GET_TEXTID C_END  
-VAR02 ^\x1c\x00
-SCEN_LOAD .\\Data\\Script\\Scenario\\070C.Fob \xf8\x19\x00 OPER  SCENARIO_START 
-CHOICE_FLAG  SFLAG OPER  GET_TEXTID C_END  
-VAR02 \xd2\x1a\x00 and \xea\x1a\x00
-SCEN_LOAD .\\Data\\Script\\Scenario\\072C.Fob l\x1a\x00 OPER  SCENARIO_START C_END  
-VAR01 \xff\xff\xff\xff\x0c
-SEQ05  and \x04?\x00 and \xea\x1a\x00 and \xea\x1a\x00\xea\x1a\x00OPER \x00\x00\x00\x00`\x1a\x00\x01\x00\x00f\x1a\x00
-SCEN_LOAD .\\Data\\Script\\Scenario\\071C.Fob \xf0\x1a\x00 OPER  SCENARIO_START 
-CHOICE_FLAG  SFLAG OPER  GET_TEXTID C_END  
-VAR02 *\x1c\x00
-SCEN_LOAD .\\Data\\Script\\Scenario\\073C.Fob ^\x1b\x00 OPER  SCENARIO_START C_END  
-VAR01 \xff\xff\xff\xff\x0c
+SCEN_LOAD .\\Data\\Script\\Scenario\\069C.Fob \x8a\x19\x00 
+ SCENARIO_START 
+ADDRES_4B  SFLAG 
+ GET_TEXTID C_END  
+VAR_3B ^\x1c\x00
+SCEN_LOAD .\\Data\\Script\\Scenario\\070C.Fob \xf8\x19\x00 
+ SCENARIO_START 
+ADDRES_4B  SFLAG 
+ GET_TEXTID C_END  
+VAR_3B \xd2\x1a\x00 and \xea\x1a\x00
+SCEN_LOAD .\\Data\\Script\\Scenario\\072C.Fob l\x1a\x00 
+ SCENARIO_START C_END  
+VAR_2B \xff\xff\xff\xff\x0c
+SEQ05  and \x04?\x00 and \xea\x1a\x00 and \xea\x1a\x00\xea\x1a\x00
+\x00\x00\x00\x00`\x1a\x00\x01\x00\x00f\x1a\x00
+SCEN_LOAD .\\Data\\Script\\Scenario\\071C.Fob \xf0\x1a\x00 
+ SCENARIO_START 
+ADDRES_4B  SFLAG 
+ GET_TEXTID C_END  
+VAR_3B *\x1c\x00
+SCEN_LOAD .\\Data\\Script\\Scenario\\073C.Fob ^\x1b\x00 
+ SCENARIO_START C_END  
+VAR_2B \xff\xff\xff\xff\x0c
 SEQ05  and \x04?\x00 and R\x1c\x00
-SCEN_LOAD .\\Data\\Script\\Scenario\\074C.Fob \xc4\x1b\x00 OPER  SCENARIO_START 
-CHOICE_FLAG  and R\x1c\x00 l\x1a\x00 OPER  SCENARIO_START 
-CHOICE_FLAG  and R\x1c\x00 and R\x1c\x00R\x1c\x00\x04\x00\x00\x00\x00\x00\x00X\x1b\x00\x01\x00\x00\xbe\x1b\x00OPER \xbe\x1b\x00\x03\x00\x00\x04\x1c\x00 and v\x1c\x00 and v\x1c\x00v\x1c\x00OPER \x00\x00\x00\x00\xf2\x19\x00\x01\x00\x00\xea\x1a\x00
-SCEN_LOAD .\\Data\\Script\\Scenario\\075C.Fob |\x1c\x00 OPER  SCENARIO_START 
-CHOICE_FLAG  SFLAG OPER  GET_TEXTID C_END  
-VAR01 \x00\x00\x00\x00\x1bOPER 1\x00\x00\x00\x00\xb8\x1d\x00
-SCEN_LOAD .\\Data\\Script\\Scenario\\076C.Fob \xf8\x1c\x00 OPER  SCENARIO_START 
-CHOICE_FLAG 
-SCEN_LOAD .\\Data\\Script\\Scenario\\078C.Fob 8\x1d\x00 OPER  SCENARIO_START 
-CHOICE_FLAG 
-SCEN_LOAD .\\Data\\Script\\Scenario\\086C.Fob x\x1d\x00 OPER  SCENARIO_START 
-CHOICE_FLAG  and \x14 \x00
-SCEN_LOAD .\\Data\\Script\\Scenario\\077C.Fob \xbe\x1d\x00 OPER  SCENARIO_START 
-CHOICE_FLAG 
-SCEN_LOAD .\\Data\\Script\\Scenario\\079C.Fob \xfe\x1d\x00 OPER  SCENARIO_START 
-CHOICE_FLAG 
-SCEN_LOAD .\\Data\\Script\\Scenario\\080C.Fob >\x1e\x00 OPER  SCENARIO_START 
-CHOICE_FLAG 
-SCEN_LOAD .\\Data\\Script\\Scenario\\081C.Fob ~\x1e\x00 OPER  SCENARIO_START 
-CHOICE_FLAG  SFLAG OPER  GET_TEXTID C_END  
-VAR02 x\x1f\x00
-SCEN_LOAD .\\Data\\Script\\Scenario\\082C.Fob \xec\x1e\x00 OPER  SCENARIO_START 
-CHOICE_FLAG  and \x90\x1f\x00
-SCEN_LOAD .\\Data\\Script\\Scenario\\083C.Fob 2\x1f\x00 OPER  SCENARIO_START 
-CHOICE_FLAG  and \x90\x1f\x00 and \x90\x1f\x00\x90\x1f\x00OPER \x00\x00\x00\x00\xe6\x1e\x00\x01\x00\x00,\x1f\x00
-SCEN_LOAD .\\Data\\Script\\Scenario\\084C.Fob \x96\x1f\x00 OPER  SCENARIO_START 
-CHOICE_FLAG \x03\t\x00\x00.\\Data\\Script\\Scenario\\085aC.Fob\x00\x00\x00 \xd6\x1f\x00 OPER  SCENARIO_START 
-CHOICE_FLAG 
-SCEN_LOAD .\\Data\\Script\\Scenario\\087C.Fob \x1a \x00 OPER  SCENARIO_START 
-CHOICE_FLAG 
-SCEN_LOAD .\\Data\\Script\\Scenario\\088C.Fob Z \x00 OPER  SCENARIO_START 
-CHOICE_FLAG 
-SCEN_LOAD .\\Data\\Script\\Scenario\\089C.Fob \x9a \x00 OPER  SCENARIO_START 
-CHOICE_FLAG 
-SCEN_LOAD .\\Data\\Script\\Scenario\\090C.Fob \xda \x00 OPER  SCENARIO_START 
-CHOICE_FLAG 
-SCEN_LOAD .\\Data\\Script\\Scenario\\091C.Fob \x1a!\x00 OPER  SCENARIO_START C_END  
-VAR02 L"\x00\x03\t\x00\x00.\\Data\\Script\\Scenario\\SamomoSP.Fob n!\x00 OPER  SCENARIO_START 
-CHOICE_FLAG  and l"\x00\x03\t\x00\x00.\\Data\\Script\\Scenario\\kannaSP.Fob\x00 \xb8!\x00 OPER  SCENARIO_START 
-CHOICE_FLAG  and l"\x00\x03\t\x00\x00.\\Data\\Script\\Scenario\\KinjouSP.Fob \x02"\x00 OPER  SCENARIO_START 
-CHOICE_FLAG  and l"\x00 and l"\x00l"\x00\x03\x00\x00\x00\x00\x00\x00h!\x00\x01\x00\x00\xb2!\x00OPER \xfc!\x00
-SCEN_LOAD .\\Data\\Script\\Scenario\\092C.Fob r"\x00 OPER  SCENARIO_START 
-CHOICE_FLAG  SFLAG OPER  GET_TEXTID C_END  
-VAR02 l#\x00
-SCEN_LOAD .\\Data\\Script\\Scenario\\093C.Fob \xe0"\x00 OPER  SCENARIO_START 
-CHOICE_FLAG  and \x84#\x00
-SCEN_LOAD .\\Data\\Script\\Scenario\\094C.Fob &#\x00 OPER  SCENARIO_START 
-CHOICE_FLAG  and \x84#\x00 and \x84#\x00\x84#\x00OPER \x00\x00\x00\x00\xda"\x00\x01\x00\x00 #\x00
-SCEN_LOAD .\\Data\\Script\\Scenario\\095C.Fob \x8a#\x00 OPER  SCENARIO_START C_END  
-VAR02 >$\x00 n!\x00 OPER  SCENARIO_START 
-CHOICE_FLAG  and ^$\x00 \xb8!\x00 OPER  SCENARIO_START 
-CHOICE_FLAG  and ^$\x00 \x02"\x00 OPER  SCENARIO_START 
-CHOICE_FLAG  and ^$\x00 and ^$\x00^$\x00\x03\x00\x00\x00\x00\x00\x00\xd8#\x00\x01\x00\x00\xf8#\x00OPER \x18$\x00
-SCEN_LOAD .\\Data\\Script\\Scenario\\096C.Fob d$\x00 OPER  SCENARIO_START 
-CHOICE_FLAG 
-SCEN_LOAD .\\Data\\Script\\Scenario\\097C.Fob \xa4$\x00 OPER  SCENARIO_START C_END  
-VAR02 X%\x00 n!\x00 OPER  SCENARIO_START 
-CHOICE_FLAG  and x%\x00 \xb8!\x00 OPER  SCENARIO_START 
-CHOICE_FLAG  and x%\x00 \x02"\x00 OPER  SCENARIO_START 
-CHOICE_FLAG  and x%\x00 and x%\x00x%\x00\x03\x00\x00\x00\x00\x00\x00\xf2$\x00\x01\x00\x00\x12%\x00OPER 2%\x00
-SCEN_LOAD .\\Data\\Script\\Scenario\\098C.Fob ~%\x00 OPER  SCENARIO_START 
-CHOICE_FLAG  SFLAG OPER  GET_TEXTID 
-CHOICE_FLAG ! 
-VAR01 \x08\x00\x00\r\x02  
-VAR01\x0c\x01\x00\x00"  
-VAR02 \xa2&\x00
-SCEN_LOAD .\\Data\\Script\\Scenario\\099C.Fob \x16&\x00 OPER  SCENARIO_START 
-CHOICE_FLAG  and \xba&\x00
-SCEN_LOAD .\\Data\\Script\\Scenario\\100C.Fob \\&\x00 OPER  SCENARIO_START 
-CHOICE_FLAG  and \xba&\x00 and \xba&\x00\xba&\x00OPER \x00\x00\x00\x00\x10&\x00\x01\x00\x00V&\x00
-SCEN_LOAD .\\Data\\Script\\Scenario\\101C.Fob \xc0&\x00 OPER  SCENARIO_START C_END  
-VAR02 t'\x00 n!\x00 OPER  SCENARIO_START 
-CHOICE_FLAG  and \x94'\x00 \xb8!\x00 OPER  SCENARIO_START 
-CHOICE_FLAG  and \x94'\x00 \x02"\x00 OPER  SCENARIO_START 
-CHOICE_FLAG  and \x94'\x00 and \x94'\x00\x94'\x00\x03\x00\x00\x00\x00\x00\x00\x0e'\x00\x01\x00\x00.'\x00OPER N'\x00
-SCEN_LOAD .\\Data\\Script\\Scenario\\102C.Fob \x9a'\x00 OPER  SCENARIO_START 
-CHOICE_FLAG  SFLAG OPER  GET_TEXTID C_END  
-VAR02 \xa6)\x00
-SCEN_LOAD .\\Data\\Script\\Scenario\\103C.Fob \x08(\x00 OPER  SCENARIO_START 
-CHOICE_FLAG 
-SCEN_LOAD .\\Data\\Script\\Scenario\\105C.Fob H(\x00 OPER  SCENARIO_START 
-CHOICE_FLAG  and \xbe)\x00
-SCEN_LOAD .\\Data\\Script\\Scenario\\104C.Fob \x8e(\x00 OPER  SCENARIO_START 
-CHOICE_FLAG  SFLAG OPER  GET_TEXTID C_END  
-VAR02 \x82)\x00 H(\x00 OPER  SCENARIO_START 
-CHOICE_FLAG  and \x9a)\x00
-SCEN_LOAD .\\Data\\Script\\Scenario\\106C.Fob \x1c)\x00 OPER  SCENARIO_START C_END  
-VAR01 \xff\xff\xff\xff\x0c
-SEQ05  and \x04?\x00 and \x9a)\x00 and \x9a)\x00\x9a)\x00OPER \x00\x00\x00\x00\xf6(\x00\x01\x00\x00\x16)\x00 and \xbe)\x00 and \xbe)\x00\xbe)\x00OPER \x00\x00\x00\x00\x02(\x00\x01\x00\x00\x88(\x00
-SCEN_LOAD .\\Data\\Script\\Scenario\\107C.Fob \xc4)\x00 OPER  SCENARIO_START C_END  
-VAR02 ^*\x00 and ~*\x00 \xb8!\x00 OPER  SCENARIO_START 
-CHOICE_FLAG  and ~*\x00 \x02"\x00 OPER  SCENARIO_START 
-CHOICE_FLAG  and ~*\x00 and ~*\x00~*\x00\x03\x00\x00\x00\x00\x00\x00\x12*\x00\x01\x00\x00\x18*\x00OPER 8*\x00
-SCEN_LOAD .\\Data\\Script\\Scenario\\108C.Fob \x84*\x00 OPER  SCENARIO_START 
-CHOICE_FLAG 
-SCEN_LOAD .\\Data\\Script\\Scenario\\109C.Fob \xc4*\x00 OPER  SCENARIO_START 
-CHOICE_FLAG 
-SCEN_LOAD .\\Data\\Script\\Scenario\\200C.Fob \x04+\x00 OPER  SCENARIO_START 
-CHOICE_FLAG 
-SCEN_LOAD .\\Data\\Script\\Scenario\\201C.Fob D+\x00 OPER  SCENARIO_START 
-CHOICE_FLAG  SFLAG OPER  GET_TEXTID C_END  
-VAR02 \xca.\x00
-SCEN_LOAD .\\Data\\Script\\Scenario\\203C.Fob \xb2+\x00 OPER  SCENARIO_START 
-CHOICE_FLAG 
-SCEN_LOAD .\\Data\\Script\\Scenario\\202C.Fob \xf2+\x00 OPER  SCENARIO_START 
-CHOICE_FLAG  SFLAG OPER  GET_TEXTID C_END  
-VAR02 \xa6.\x00
-SCEN_LOAD .\\Data\\Script\\Scenario\\205C.Fob `,\x00 OPER  SCENARIO_START 
-CHOICE_FLAG 
-SCEN_LOAD .\\Data\\Script\\Scenario\\204C.Fob \xa0,\x00 OPER  SCENARIO_START 
-CHOICE_FLAG \x03\n\x00\x00.\\Data\\Script\\Scenario\\Sce204Sel.Fob\x00\x00\x00 \xe0,\x00 OPER  SCENARIO_START C_END  
-VAR02 z.\x00! 
-VAR01 \x0c\x00\x00\r\x02 \x01\x00 SEQ15 \x00\x00j"
-SCEN_LOAD .\\Data\\Script\\Scenario\\206C.Fob `-\x00 OPER  SCENARIO_START 
-CHOICE_FLAG  and \xda,\x00! 
-VAR01 \x0c\x00\x00\r\x02 OPER \x0c\x00\x00j"
-SCEN_LOAD .\\Data\\Script\\Scenario\\207C.Fob \xca-\x00 OPER  SCENARIO_START 
-CHOICE_FLAG  and \xda,\x00! 
-VAR01 \x0c\x00\x00\r\x02 \x04\x00 SEQ15 \x00\x00j"
-SCEN_LOAD .\\Data\\Script\\Scenario\\208C.Fob 4.\x00 OPER  SCENARIO_START 
-CHOICE_FLAG  and \xda,\x00 and \x9a.\x00\x9a.\x00\x03\x00\x00\x01\x00\x006-\x00OPER \xa0-\x00\x04\x00\x00\n.\x00 and \xbe.\x00 and \xbe.\x00\xbe.\x00OPER \x00\x00\x00\x00Z,\x00\x01\x00\x00\x9a,\x00 and \xe2.\x00 and \xe2.\x00\xe2.\x00OPER \x00\x00\x00\x00\xac+\x00\x01\x00\x00\xec+\x00
-SCEN_LOAD .\\Data\\Script\\Scenario\\209C.Fob \xe8.\x00 OPER  SCENARIO_START 
-CHOICE_FLAG  SFLAG OPER  GET_TEXTID C_END  
-VAR02 \xc80\x00
-SCEN_LOAD .\\Data\\Script\\Scenario\\210C.Fob V/\x00 OPER  SCENARIO_START C_END  
-VAR01 \xff\xff\xff\xff\x0c
+SCEN_LOAD .\\Data\\Script\\Scenario\\074C.Fob \xc4\x1b\x00 
+ SCENARIO_START 
+ADDRES_4B  and R\x1c\x00 l\x1a\x00 
+ SCENARIO_START 
+ADDRES_4B  and R\x1c\x00 and R\x1c\x00R\x1c\x00\x04\x00\x00\x00\x00\x00\x00X\x1b\x00\x01\x00\x00\xbe\x1b\x00
+\xbe\x1b\x00\x03\x00\x00\x04\x1c\x00 and v\x1c\x00 and v\x1c\x00v\x1c\x00
+\x00\x00\x00\x00\xf2\x19\x00\x01\x00\x00\xea\x1a\x00
+SCEN_LOAD .\\Data\\Script\\Scenario\\075C.Fob |\x1c\x00 
+ SCENARIO_START 
+ADDRES_4B  SFLAG 
+ GET_TEXTID C_END  
+VAR_2B \x00\x00\x00\x00\x1b
+1\x00\x00\x00\x00\xb8\x1d\x00
+SCEN_LOAD .\\Data\\Script\\Scenario\\076C.Fob \xf8\x1c\x00 
+ SCENARIO_START 
+ADDRES_4B 
+SCEN_LOAD .\\Data\\Script\\Scenario\\078C.Fob 8\x1d\x00 
+ SCENARIO_START 
+ADDRES_4B 
+SCEN_LOAD .\\Data\\Script\\Scenario\\086C.Fob x\x1d\x00 
+ SCENARIO_START 
+ADDRES_4B  and \x14 \x00
+SCEN_LOAD .\\Data\\Script\\Scenario\\077C.Fob \xbe\x1d\x00 
+ SCENARIO_START 
+ADDRES_4B 
+SCEN_LOAD .\\Data\\Script\\Scenario\\079C.Fob \xfe\x1d\x00 
+ SCENARIO_START 
+ADDRES_4B 
+SCEN_LOAD .\\Data\\Script\\Scenario\\080C.Fob >\x1e\x00 
+ SCENARIO_START 
+ADDRES_4B 
+SCEN_LOAD .\\Data\\Script\\Scenario\\081C.Fob ~\x1e\x00 
+ SCENARIO_START 
+ADDRES_4B  SFLAG 
+ GET_TEXTID C_END  
+VAR_3B x\x1f\x00
+SCEN_LOAD .\\Data\\Script\\Scenario\\082C.Fob \xec\x1e\x00 
+ SCENARIO_START 
+ADDRES_4B  and \x90\x1f\x00
+SCEN_LOAD .\\Data\\Script\\Scenario\\083C.Fob 2\x1f\x00 
+ SCENARIO_START 
+ADDRES_4B  and \x90\x1f\x00 and \x90\x1f\x00\x90\x1f\x00
+\x00\x00\x00\x00\xe6\x1e\x00\x01\x00\x00,\x1f\x00
+SCEN_LOAD .\\Data\\Script\\Scenario\\084C.Fob \x96\x1f\x00 
+ SCENARIO_START 
+ADDRES_4B \x03\t\x00\x00.\\Data\\Script\\Scenario\\085aC.Fob\x00\x00\x00 \xd6\x1f\x00 
+ SCENARIO_START 
+ADDRES_4B 
+SCEN_LOAD .\\Data\\Script\\Scenario\\087C.Fob \x1a \x00 
+ SCENARIO_START 
+ADDRES_4B 
+SCEN_LOAD .\\Data\\Script\\Scenario\\088C.Fob Z \x00 
+ SCENARIO_START 
+ADDRES_4B 
+SCEN_LOAD .\\Data\\Script\\Scenario\\089C.Fob \x9a \x00 
+ SCENARIO_START 
+ADDRES_4B 
+SCEN_LOAD .\\Data\\Script\\Scenario\\090C.Fob \xda \x00 
+ SCENARIO_START 
+ADDRES_4B 
+SCEN_LOAD .\\Data\\Script\\Scenario\\091C.Fob \x1a!\x00 
+ SCENARIO_START C_END  
+VAR_3B L"\x00\x03\t\x00\x00.\\Data\\Script\\Scenario\\SamomoSP.Fob n!\x00 
+ SCENARIO_START 
+ADDRES_4B  and l"\x00\x03\t\x00\x00.\\Data\\Script\\Scenario\\kannaSP.Fob\x00 \xb8!\x00 
+ SCENARIO_START 
+ADDRES_4B  and l"\x00\x03\t\x00\x00.\\Data\\Script\\Scenario\\KinjouSP.Fob \x02"\x00 
+ SCENARIO_START 
+ADDRES_4B  and l"\x00 and l"\x00l"\x00\x03\x00\x00\x00\x00\x00\x00h!\x00\x01\x00\x00\xb2!\x00
+\xfc!\x00
+SCEN_LOAD .\\Data\\Script\\Scenario\\092C.Fob r"\x00 
+ SCENARIO_START 
+ADDRES_4B  SFLAG 
+ GET_TEXTID C_END  
+VAR_3B l#\x00
+SCEN_LOAD .\\Data\\Script\\Scenario\\093C.Fob \xe0"\x00 
+ SCENARIO_START 
+ADDRES_4B  and \x84#\x00
+SCEN_LOAD .\\Data\\Script\\Scenario\\094C.Fob &#\x00 
+ SCENARIO_START 
+ADDRES_4B  and \x84#\x00 and \x84#\x00\x84#\x00
+\x00\x00\x00\x00\xda"\x00\x01\x00\x00 #\x00
+SCEN_LOAD .\\Data\\Script\\Scenario\\095C.Fob \x8a#\x00 
+ SCENARIO_START C_END  
+VAR_3B >$\x00 n!\x00 
+ SCENARIO_START 
+ADDRES_4B  and ^$\x00 \xb8!\x00 
+ SCENARIO_START 
+ADDRES_4B  and ^$\x00 \x02"\x00 
+ SCENARIO_START 
+ADDRES_4B  and ^$\x00 and ^$\x00^$\x00\x03\x00\x00\x00\x00\x00\x00\xd8#\x00\x01\x00\x00\xf8#\x00
+\x18$\x00
+SCEN_LOAD .\\Data\\Script\\Scenario\\096C.Fob d$\x00 
+ SCENARIO_START 
+ADDRES_4B 
+SCEN_LOAD .\\Data\\Script\\Scenario\\097C.Fob \xa4$\x00 
+ SCENARIO_START C_END  
+VAR_3B X%\x00 n!\x00 
+ SCENARIO_START 
+ADDRES_4B  and x%\x00 \xb8!\x00 
+ SCENARIO_START 
+ADDRES_4B  and x%\x00 \x02"\x00 
+ SCENARIO_START 
+ADDRES_4B  and x%\x00 and x%\x00x%\x00\x03\x00\x00\x00\x00\x00\x00\xf2$\x00\x01\x00\x00\x12%\x00
+2%\x00
+SCEN_LOAD .\\Data\\Script\\Scenario\\098C.Fob ~%\x00 
+ SCENARIO_START 
+ADDRES_4B  SFLAG 
+ GET_TEXTID 
+ADDRES_4B ! 
+VAR_2B \x08\x00\x00\r\x02  
+VAR_2B\x0c\x01\x00\x00"  
+VAR_3B \xa2&\x00
+SCEN_LOAD .\\Data\\Script\\Scenario\\099C.Fob \x16&\x00 
+ SCENARIO_START 
+ADDRES_4B  and \xba&\x00
+SCEN_LOAD .\\Data\\Script\\Scenario\\100C.Fob \\&\x00 
+ SCENARIO_START 
+ADDRES_4B  and \xba&\x00 and \xba&\x00\xba&\x00
+\x00\x00\x00\x00\x10&\x00\x01\x00\x00V&\x00
+SCEN_LOAD .\\Data\\Script\\Scenario\\101C.Fob \xc0&\x00 
+ SCENARIO_START C_END  
+VAR_3B t'\x00 n!\x00 
+ SCENARIO_START 
+ADDRES_4B  and \x94'\x00 \xb8!\x00 
+ SCENARIO_START 
+ADDRES_4B  and \x94'\x00 \x02"\x00 
+ SCENARIO_START 
+ADDRES_4B  and \x94'\x00 and \x94'\x00\x94'\x00\x03\x00\x00\x00\x00\x00\x00\x0e'\x00\x01\x00\x00.'\x00
+N'\x00
+SCEN_LOAD .\\Data\\Script\\Scenario\\102C.Fob \x9a'\x00 
+ SCENARIO_START 
+ADDRES_4B  SFLAG 
+ GET_TEXTID C_END  
+VAR_3B \xa6)\x00
+SCEN_LOAD .\\Data\\Script\\Scenario\\103C.Fob \x08(\x00 
+ SCENARIO_START 
+ADDRES_4B 
+SCEN_LOAD .\\Data\\Script\\Scenario\\105C.Fob H(\x00 
+ SCENARIO_START 
+ADDRES_4B  and \xbe)\x00
+SCEN_LOAD .\\Data\\Script\\Scenario\\104C.Fob \x8e(\x00 
+ SCENARIO_START 
+ADDRES_4B  SFLAG 
+ GET_TEXTID C_END  
+VAR_3B \x82)\x00 H(\x00 
+ SCENARIO_START 
+ADDRES_4B  and \x9a)\x00
+SCEN_LOAD .\\Data\\Script\\Scenario\\106C.Fob \x1c)\x00 
+ SCENARIO_START C_END  
+VAR_2B \xff\xff\xff\xff\x0c
+SEQ05  and \x04?\x00 and \x9a)\x00 and \x9a)\x00\x9a)\x00
+\x00\x00\x00\x00\xf6(\x00\x01\x00\x00\x16)\x00 and \xbe)\x00 and \xbe)\x00\xbe)\x00
+\x00\x00\x00\x00\x02(\x00\x01\x00\x00\x88(\x00
+SCEN_LOAD .\\Data\\Script\\Scenario\\107C.Fob \xc4)\x00 
+ SCENARIO_START C_END  
+VAR_3B ^*\x00 and ~*\x00 \xb8!\x00 
+ SCENARIO_START 
+ADDRES_4B  and ~*\x00 \x02"\x00 
+ SCENARIO_START 
+ADDRES_4B  and ~*\x00 and ~*\x00~*\x00\x03\x00\x00\x00\x00\x00\x00\x12*\x00\x01\x00\x00\x18*\x00
+8*\x00
+SCEN_LOAD .\\Data\\Script\\Scenario\\108C.Fob \x84*\x00 
+ SCENARIO_START 
+ADDRES_4B 
+SCEN_LOAD .\\Data\\Script\\Scenario\\109C.Fob \xc4*\x00 
+ SCENARIO_START 
+ADDRES_4B 
+SCEN_LOAD .\\Data\\Script\\Scenario\\200C.Fob \x04+\x00 
+ SCENARIO_START 
+ADDRES_4B 
+SCEN_LOAD .\\Data\\Script\\Scenario\\201C.Fob D+\x00 
+ SCENARIO_START 
+ADDRES_4B  SFLAG 
+ GET_TEXTID C_END  
+VAR_3B \xca.\x00
+SCEN_LOAD .\\Data\\Script\\Scenario\\203C.Fob \xb2+\x00 
+ SCENARIO_START 
+ADDRES_4B 
+SCEN_LOAD .\\Data\\Script\\Scenario\\202C.Fob \xf2+\x00 
+ SCENARIO_START 
+ADDRES_4B  SFLAG 
+ GET_TEXTID C_END  
+VAR_3B \xa6.\x00
+SCEN_LOAD .\\Data\\Script\\Scenario\\205C.Fob `,\x00 
+ SCENARIO_START 
+ADDRES_4B 
+SCEN_LOAD .\\Data\\Script\\Scenario\\204C.Fob \xa0,\x00 
+ SCENARIO_START 
+ADDRES_4B \x03\n\x00\x00.\\Data\\Script\\Scenario\\Sce204Sel.Fob\x00\x00\x00 \xe0,\x00 
+ SCENARIO_START C_END  
+VAR_3B z.\x00! 
+VAR_2B \x0c\x00\x00\r\x02 \x01\x00 SEQ15 \x00\x00j"
+SCEN_LOAD .\\Data\\Script\\Scenario\\206C.Fob `-\x00 
+ SCENARIO_START 
+ADDRES_4B  and \xda,\x00! 
+VAR_2B \x0c\x00\x00\r\x02 
+\x0c\x00\x00j"
+SCEN_LOAD .\\Data\\Script\\Scenario\\207C.Fob \xca-\x00 
+ SCENARIO_START 
+ADDRES_4B  and \xda,\x00! 
+VAR_2B \x0c\x00\x00\r\x02 \x04\x00 SEQ15 \x00\x00j"
+SCEN_LOAD .\\Data\\Script\\Scenario\\208C.Fob 4.\x00 
+ SCENARIO_START 
+ADDRES_4B  and \xda,\x00 and \x9a.\x00\x9a.\x00\x03\x00\x00\x01\x00\x006-\x00
+\xa0-\x00\x04\x00\x00\n.\x00 and \xbe.\x00 and \xbe.\x00\xbe.\x00
+\x00\x00\x00\x00Z,\x00\x01\x00\x00\x9a,\x00 and \xe2.\x00 and \xe2.\x00\xe2.\x00
+\x00\x00\x00\x00\xac+\x00\x01\x00\x00\xec+\x00
+SCEN_LOAD .\\Data\\Script\\Scenario\\209C.Fob \xe8.\x00 
+ SCENARIO_START 
+ADDRES_4B  SFLAG 
+ GET_TEXTID C_END  
+VAR_3B \xc80\x00
+SCEN_LOAD .\\Data\\Script\\Scenario\\210C.Fob V/\x00 
+ SCENARIO_START C_END  
+VAR_2B \xff\xff\xff\xff\x0c
 SEQ05  and \x04?\x00 and \xe80\x00
-SCEN_LOAD .\\Data\\Script\\Scenario\\211C.Fob \xbc/\x00 OPER  SCENARIO_START 
-CHOICE_FLAG 
-SCEN_LOAD .\\Data\\Script\\Scenario\\213C.Fob \xfc/\x00 OPER  SCENARIO_START 
-CHOICE_FLAG  and \xe80\x00
-SCEN_LOAD .\\Data\\Script\\Scenario\\212C.Fob B0\x00 OPER  SCENARIO_START 
-CHOICE_FLAG 
-SCEN_LOAD .\\Data\\Script\\Scenario\\214C.Fob \x820\x00 OPER  SCENARIO_START 
-CHOICE_FLAG  and \xe80\x00 and \xe80\x00\xe80\x00\x03\x00\x00\x00\x00\x00\x00P/\x00\x01\x00\x00\xb6/\x00OPER <0\x00
-SCEN_LOAD .\\Data\\Script\\Scenario\\215C.Fob \xee0\x00 OPER  SCENARIO_START 
-CHOICE_FLAG 
-SCEN_LOAD .\\Data\\Script\\Scenario\\216C.Fob .1\x00 OPER  SCENARIO_START C_END  
-VAR02 \xc21\x00 n!\x00 OPER  SCENARIO_START 
-CHOICE_FLAG  and \xda1\x00 \xb8!\x00 OPER  SCENARIO_START 
-CHOICE_FLAG  and \xda1\x00 and \xda1\x00\xda1\x00OPER \x00\x00\x00\x00|1\x00\x01\x00\x00\x9c1\x00
-SCEN_LOAD .\\Data\\Script\\Scenario\\217C.Fob \xe01\x00 OPER  SCENARIO_START 
-CHOICE_FLAG  SFLAG OPER  GET_TEXTID C_END  
-VAR02 \xda2\x00
-SCEN_LOAD .\\Data\\Script\\Scenario\\218C.Fob N2\x00 OPER  SCENARIO_START 
-CHOICE_FLAG  and \xf22\x00
-SCEN_LOAD .\\Data\\Script\\Scenario\\219C.Fob \x942\x00 OPER  SCENARIO_START 
-CHOICE_FLAG  and \xf22\x00 and \xf22\x00\xf22\x00OPER \x00\x00\x00\x00H2\x00\x01\x00\x00\x8e2\x00
-SCEN_LOAD .\\Data\\Script\\Scenario\\220C.Fob \xf82\x00 OPER  SCENARIO_START 
-CHOICE_FLAG 
-SCEN_LOAD .\\Data\\Script\\Scenario\\221C.Fob 83\x00 OPER  SCENARIO_START 
-CHOICE_FLAG  SFLAG OPER  GET_TEXTID C_END  
-VAR02 :4\x00! 
-VAR01 \x10\x00\x00\r\x02 \x01\x00 SEQ06 
-SCEN_LOAD .\\Data\\Script\\Scenario\\222C.Fob \xca3\x00 OPER  SCENARIO_START 
-CHOICE_FLAG  and R4\x00! 
-VAR01 \x10\x00\x00\r\x02 \x00\x00\x00 SEQ06  and R4\x00 and R4\x00R4\x00OPER \x00\x00\x00\x00\xa03\x00\x01\x00\x00\n4\x00
-SCEN_LOAD .\\Data\\Script\\Scenario\\223C.Fob X4\x00 OPER  SCENARIO_START 
-CHOICE_FLAG  SFLAG OPER  GET_TEXTID C_END  
-VAR02 R5\x00
-SCEN_LOAD .\\Data\\Script\\Scenario\\224C.Fob \xc64\x00 OPER  SCENARIO_START 
-CHOICE_FLAG  and j5\x00
-SCEN_LOAD .\\Data\\Script\\Scenario\\225C.Fob \x0c5\x00 OPER  SCENARIO_START 
-CHOICE_FLAG  and j5\x00 and j5\x00j5\x00OPER \x00\x00\x00\x00\xc04\x00\x01\x00\x00\x065\x00
-SCEN_LOAD .\\Data\\Script\\Scenario\\226C.Fob p5\x00 OPER  SCENARIO_START 
-CHOICE_FLAG 
-SCEN_LOAD .\\Data\\Script\\Scenario\\227C.Fob \xb05\x00 OPER  SCENARIO_START 
-CHOICE_FLAG 
-SCEN_LOAD .\\Data\\Script\\Scenario\\228C.Fob \xf05\x00 OPER  SCENARIO_START 
-CHOICE_FLAG  SFLAG OPER  GET_TEXTID C_END  
-VAR02 \xea6\x00
-SCEN_LOAD .\\Data\\Script\\Scenario\\229C.Fob ^6\x00 OPER  SCENARIO_START 
-CHOICE_FLAG  and \x027\x00
-SCEN_LOAD .\\Data\\Script\\Scenario\\230C.Fob \xa46\x00 OPER  SCENARIO_START 
-CHOICE_FLAG  and \x027\x00 and \x027\x00\x027\x00OPER \x00\x00\x00\x00X6\x00\x01\x00\x00\x9e6\x00
-SCEN_LOAD .\\Data\\Script\\Scenario\\231C.Fob \x087\x00 OPER  SCENARIO_START 
-CHOICE_FLAG 
-SCEN_LOAD .\\Data\\Script\\Scenario\\232C.Fob H7\x00 OPER  SCENARIO_START 
-CHOICE_FLAG 
-SCEN_LOAD .\\Data\\Script\\Scenario\\233C.Fob \x887\x00 OPER  SCENARIO_START 
-CHOICE_FLAG 
-SCEN_LOAD .\\Data\\Script\\Scenario\\234C.Fob \xc87\x00 OPER  SCENARIO_START 
-CHOICE_FLAG 
-SCEN_LOAD .\\Data\\Script\\Scenario\\235C.Fob \x088\x00 OPER  SCENARIO_START 
-CHOICE_FLAG 
-SCEN_LOAD .\\Data\\Script\\Scenario\\236C.Fob H8\x00 OPER  SCENARIO_START 
-CHOICE_FLAG ! 
-VAR01 \x10\x00\x00\r\x02 \x00\x00\x00\x00\x0b\r\x01,\x00\x00^9\x00
-SCEN_LOAD .\\Data\\Script\\Scenario\\237C.Fob \xb28\x00 OPER  SCENARIO_START C_END  
-VAR01 \xff\xff\xff\xff\x0c
+SCEN_LOAD .\\Data\\Script\\Scenario\\211C.Fob \xbc/\x00 
+ SCENARIO_START 
+ADDRES_4B 
+SCEN_LOAD .\\Data\\Script\\Scenario\\213C.Fob \xfc/\x00 
+ SCENARIO_START 
+ADDRES_4B  and \xe80\x00
+SCEN_LOAD .\\Data\\Script\\Scenario\\212C.Fob B0\x00 
+ SCENARIO_START 
+ADDRES_4B 
+SCEN_LOAD .\\Data\\Script\\Scenario\\214C.Fob \x820\x00 
+ SCENARIO_START 
+ADDRES_4B  and \xe80\x00 and \xe80\x00\xe80\x00\x03\x00\x00\x00\x00\x00\x00P/\x00\x01\x00\x00\xb6/\x00
+<0\x00
+SCEN_LOAD .\\Data\\Script\\Scenario\\215C.Fob \xee0\x00 
+ SCENARIO_START 
+ADDRES_4B 
+SCEN_LOAD .\\Data\\Script\\Scenario\\216C.Fob .1\x00 
+ SCENARIO_START C_END  
+VAR_3B \xc21\x00 n!\x00 
+ SCENARIO_START 
+ADDRES_4B  and \xda1\x00 \xb8!\x00 
+ SCENARIO_START 
+ADDRES_4B  and \xda1\x00 and \xda1\x00\xda1\x00
+\x00\x00\x00\x00|1\x00\x01\x00\x00\x9c1\x00
+SCEN_LOAD .\\Data\\Script\\Scenario\\217C.Fob \xe01\x00 
+ SCENARIO_START 
+ADDRES_4B  SFLAG 
+ GET_TEXTID C_END  
+VAR_3B \xda2\x00
+SCEN_LOAD .\\Data\\Script\\Scenario\\218C.Fob N2\x00 
+ SCENARIO_START 
+ADDRES_4B  and \xf22\x00
+SCEN_LOAD .\\Data\\Script\\Scenario\\219C.Fob \x942\x00 
+ SCENARIO_START 
+ADDRES_4B  and \xf22\x00 and \xf22\x00\xf22\x00
+\x00\x00\x00\x00H2\x00\x01\x00\x00\x8e2\x00
+SCEN_LOAD .\\Data\\Script\\Scenario\\220C.Fob \xf82\x00 
+ SCENARIO_START 
+ADDRES_4B 
+SCEN_LOAD .\\Data\\Script\\Scenario\\221C.Fob 83\x00 
+ SCENARIO_START 
+ADDRES_4B  SFLAG 
+ GET_TEXTID C_END  
+VAR_3B :4\x00! 
+VAR_2B \x10\x00\x00\r\x02 \x01\x00 SEQ06 
+SCEN_LOAD .\\Data\\Script\\Scenario\\222C.Fob \xca3\x00 
+ SCENARIO_START 
+ADDRES_4B  and R4\x00! 
+VAR_2B \x10\x00\x00\r\x02 \x00\x00\x00 SEQ06  and R4\x00 and R4\x00R4\x00
+\x00\x00\x00\x00\xa03\x00\x01\x00\x00\n4\x00
+SCEN_LOAD .\\Data\\Script\\Scenario\\223C.Fob X4\x00 
+ SCENARIO_START 
+ADDRES_4B  SFLAG 
+ GET_TEXTID C_END  
+VAR_3B R5\x00
+SCEN_LOAD .\\Data\\Script\\Scenario\\224C.Fob \xc64\x00 
+ SCENARIO_START 
+ADDRES_4B  and j5\x00
+SCEN_LOAD .\\Data\\Script\\Scenario\\225C.Fob \x0c5\x00 
+ SCENARIO_START 
+ADDRES_4B  and j5\x00 and j5\x00j5\x00
+\x00\x00\x00\x00\xc04\x00\x01\x00\x00\x065\x00
+SCEN_LOAD .\\Data\\Script\\Scenario\\226C.Fob p5\x00 
+ SCENARIO_START 
+ADDRES_4B 
+SCEN_LOAD .\\Data\\Script\\Scenario\\227C.Fob \xb05\x00 
+ SCENARIO_START 
+ADDRES_4B 
+SCEN_LOAD .\\Data\\Script\\Scenario\\228C.Fob \xf05\x00 
+ SCENARIO_START 
+ADDRES_4B  SFLAG 
+ GET_TEXTID C_END  
+VAR_3B \xea6\x00
+SCEN_LOAD .\\Data\\Script\\Scenario\\229C.Fob ^6\x00 
+ SCENARIO_START 
+ADDRES_4B  and \x027\x00
+SCEN_LOAD .\\Data\\Script\\Scenario\\230C.Fob \xa46\x00 
+ SCENARIO_START 
+ADDRES_4B  and \x027\x00 and \x027\x00\x027\x00
+\x00\x00\x00\x00X6\x00\x01\x00\x00\x9e6\x00
+SCEN_LOAD .\\Data\\Script\\Scenario\\231C.Fob \x087\x00 
+ SCENARIO_START 
+ADDRES_4B 
+SCEN_LOAD .\\Data\\Script\\Scenario\\232C.Fob H7\x00 
+ SCENARIO_START 
+ADDRES_4B 
+SCEN_LOAD .\\Data\\Script\\Scenario\\233C.Fob \x887\x00 
+ SCENARIO_START 
+ADDRES_4B 
+SCEN_LOAD .\\Data\\Script\\Scenario\\234C.Fob \xc87\x00 
+ SCENARIO_START 
+ADDRES_4B 
+SCEN_LOAD .\\Data\\Script\\Scenario\\235C.Fob \x088\x00 
+ SCENARIO_START 
+ADDRES_4B 
+SCEN_LOAD .\\Data\\Script\\Scenario\\236C.Fob H8\x00 
+ SCENARIO_START 
+ADDRES_4B ! 
+VAR_2B \x10\x00\x00\r\x02 \x00\x00\x00\x00\x0b\r\x01,\x00\x00^9\x00
+SCEN_LOAD .\\Data\\Script\\Scenario\\237C.Fob \xb28\x00 
+ SCENARIO_START C_END  
+VAR_2B \xff\xff\xff\xff\x0c
 SEQ05  and \x04?\x00 and v9\x00
-SCEN_LOAD .\\Data\\Script\\Scenario\\238C.Fob \x189\x00 OPER  SCENARIO_START 
-CHOICE_FLAG  and v9\x00 and v9\x00v9\x00OPER \x01\x00\x00\xac8\x00\x00\x00\x00\x00\x129\x00
-SCEN_LOAD .\\Data\\Script\\Scenario\\239C.Fob |9\x00 OPER  SCENARIO_START 
-CHOICE_FLAG 
-SCEN_LOAD .\\Data\\Script\\Scenario\\240C.Fob \xbc9\x00 OPER  SCENARIO_START 
-CHOICE_FLAG ! 
-VAR01 (\x00\x00\r\x02 \x00\x00\x00\x00\x0b\r\x01 \x01\x00\x00\x1b\x00\x00\x00\x001\x00\x00\x00\x00\x8c;\x00
-SCEN_LOAD .\\Data\\Script\\Scenario\\244C.Fob 4:\x00 OPER  SCENARIO_START 
-CHOICE_FLAG  SFLAG OPER  GET_TEXTID C_END  
-VAR02 n;\x00
-SCEN_LOAD .\\Data\\Script\\Scenario\\245C.Fob \xa2:\x00 OPER  SCENARIO_START C_END  
-VAR01 \x01\x00 SET01  and \x04?\x00 and \x86;\x00
-SCEN_LOAD .\\Data\\Script\\Scenario\\246C.Fob \x08;\x00 OPER  SCENARIO_START C_END  
-VAR01 \x00\x00\x00 SET01  and \x04?\x00 and \x86;\x00 and \x86;\x00\x86;\x00OPER \x00\x00\x00\x00\x9c:\x00\x01\x00\x00\x02;\x00 and \xac>\x00! 
-VAR01 \x18\x00\x00\r\x02 \x00\x00\x00\x00\x0b\r\x01 \x01\x00\x00\x1b\x00\x00\x00\x00! 
-VAR01 \x1c\x00\x00\r\x02 \x00\x00\x00\x00\x0b\r\x01 \x01\x00\x00\x1b\x00\x00\x00\x00\x19\x00\x001\x00\x00\x00\x00T=\x00
-SCEN_LOAD .\\Data\\Script\\Scenario\\241C.Fob \xfc;\x00 OPER  SCENARIO_START 
-CHOICE_FLAG  SFLAG OPER  GET_TEXTID C_END  
-VAR02 6=\x00
-SCEN_LOAD .\\Data\\Script\\Scenario\\242C.Fob j<\x00 OPER  SCENARIO_START C_END  
-VAR01 \x05\x00 SET01  and \x04?\x00 and N=\x00
-SCEN_LOAD .\\Data\\Script\\Scenario\\243C.Fob \xd0<\x00 OPER  SCENARIO_START C_END  
-VAR01 \x04\x00 SET01  and \x04?\x00 and N=\x00 and N=\x00N=\x00OPER \x00\x00\x00\x00d<\x00\x01\x00\x00\xca<\x00 and \xac>\x00
-SCEN_LOAD .\\Data\\Script\\Scenario\\247C.Fob Z=\x00 OPER  SCENARIO_START 
-CHOICE_FLAG  SFLAG OPER  GET_TEXTID C_END  
-VAR02 \x94>\x00
-SCEN_LOAD .\\Data\\Script\\Scenario\\248C.Fob \xc8=\x00 OPER  SCENARIO_START C_END  
-VAR01 \x03\x00 SET01  and \x04?\x00 and \xac>\x00
-SCEN_LOAD .\\Data\\Script\\Scenario\\249C.Fob .>\x00 OPER  SCENARIO_START C_END  
-VAR01 OPER \x0c
-SEQ05  and \x04?\x00 and \xac>\x00 and \xac>\x00\xac>\x00OPER \x00\x00\x00\x00\xc2=\x00\x01\x00\x00(>\x00  
-VAR01 \xff\xff\xff\xff\x0c
-SEQ05 FILE2 \x96{\x97\x88\x82\xcd\x97\xac\x82\xea\x82\xc4\x82\xb1\x82\xc8\x82\xa2\x82\xbc\x81I\x81I\\r\x00 \xcc>\x00 OPER #OPER \x01\x01\x00\x00\x00\x00\x00\x00  
-VAR01 \x00?\x00\x0b\x0c\x03\x00\x00"  
-VAR01 \xc8\x00 SET01  \xf8\x00\x00 
+SCEN_LOAD .\\Data\\Script\\Scenario\\238C.Fob \x189\x00 
+ SCENARIO_START 
+ADDRES_4B  and v9\x00 and v9\x00v9\x00
+\x01\x00\x00\xac8\x00\x00\x00\x00\x00\x129\x00
+SCEN_LOAD .\\Data\\Script\\Scenario\\239C.Fob |9\x00 
+ SCENARIO_START 
+ADDRES_4B 
+SCEN_LOAD .\\Data\\Script\\Scenario\\240C.Fob \xbc9\x00 
+ SCENARIO_START 
+ADDRES_4B ! 
+VAR_2B (\x00\x00\r\x02 \x00\x00\x00\x00\x0b\r\x01 \x01\x00\x00\x1b\x00\x00\x00\x001\x00\x00\x00\x00\x8c;\x00
+SCEN_LOAD .\\Data\\Script\\Scenario\\244C.Fob 4:\x00 
+ SCENARIO_START 
+ADDRES_4B  SFLAG 
+ GET_TEXTID C_END  
+VAR_3B n;\x00
+SCEN_LOAD .\\Data\\Script\\Scenario\\245C.Fob \xa2:\x00 
+ SCENARIO_START C_END  
+VAR_2B \x01\x00 SET01  and \x04?\x00 and \x86;\x00
+SCEN_LOAD .\\Data\\Script\\Scenario\\246C.Fob \x08;\x00 
+ SCENARIO_START C_END  
+VAR_2B \x00\x00\x00 SET01  and \x04?\x00 and \x86;\x00 and \x86;\x00\x86;\x00
+\x00\x00\x00\x00\x9c:\x00\x01\x00\x00\x02;\x00 and \xac>\x00! 
+VAR_2B \x18\x00\x00\r\x02 \x00\x00\x00\x00\x0b\r\x01 \x01\x00\x00\x1b\x00\x00\x00\x00! 
+VAR_2B \x1c\x00\x00\r\x02 \x00\x00\x00\x00\x0b\r\x01 \x01\x00\x00\x1b\x00\x00\x00\x00\x19\x00\x001\x00\x00\x00\x00T=\x00
+SCEN_LOAD .\\Data\\Script\\Scenario\\241C.Fob \xfc;\x00 
+ SCENARIO_START 
+ADDRES_4B  SFLAG 
+ GET_TEXTID C_END  
+VAR_3B 6=\x00
+SCEN_LOAD .\\Data\\Script\\Scenario\\242C.Fob j<\x00 
+ SCENARIO_START C_END  
+VAR_2B \x05\x00 SET01  and \x04?\x00 and N=\x00
+SCEN_LOAD .\\Data\\Script\\Scenario\\243C.Fob \xd0<\x00 
+ SCENARIO_START C_END  
+VAR_2B \x04\x00 SET01  and \x04?\x00 and N=\x00 and N=\x00N=\x00
+\x00\x00\x00\x00d<\x00\x01\x00\x00\xca<\x00 and \xac>\x00
+SCEN_LOAD .\\Data\\Script\\Scenario\\247C.Fob Z=\x00 
+ SCENARIO_START 
+ADDRES_4B  SFLAG 
+ GET_TEXTID C_END  
+VAR_3B \x94>\x00
+SCEN_LOAD .\\Data\\Script\\Scenario\\248C.Fob \xc8=\x00 
+ SCENARIO_START C_END  
+VAR_2B \x03\x00 SET01  and \x04?\x00 and \xac>\x00
+SCEN_LOAD .\\Data\\Script\\Scenario\\249C.Fob .>\x00 
+ SCENARIO_START C_END  
+VAR_2B 
+\x0c
+SEQ05  and \x04?\x00 and \xac>\x00 and \xac>\x00\xac>\x00
+\x00\x00\x00\x00\xc2=\x00\x01\x00\x00(>\x00  
+VAR_2B \xff\xff\xff\xff\x0c
+SEQ05 FILE2 \x96{\x97\x88\x82\xcd\x97\xac\x82\xea\x82\xc4\x82\xb1\x82\xc8\x82\xa2\x82\xbc\x81I\x81I\\r\x00 \xcc>\x00 
+#
+\x01\x01\x00\x00\x00\x00\x00\x00  
+VAR_2B \x00?\x00\x0b\x0c\x03\x00\x00"  
+VAR_2B \xc8\x00 SET01  \xf8\x00\x00 
 CMD02 BgAutoFadeIn\x00\x00\x00 L?\x00 
-CHOICE_FLAG  SFLAG OPER 
+ADDRES_4B  SFLAG 
+
 CMD04 TextWindowOffDirect |?\x00 
-CHOICE_FLAG FILE1 .\\Data\\Script\\Bgm.Fob\x00\x00 \xa4?\x00 OPER 
+ADDRES_4B FILE1 .\\Data\\Script\\Bgm.Fob\x00\x00 \xa4?\x00 
+
 CMD03 SeStopAll\x00\x00 \xce?\x00 
-CHOICE_FLAG  \xa4?\x00 
+ADDRES_4B  \xa4?\x00 
 CMD01 StopCD\x00 \xfa?\x00 
-CHOICE_FLAG  \x00?\x00,\x02\xf0B\x00  
-VAR01 \x04\x00 SET01  and 0C\x00! \x04\x00\x00\r\x00\x00 \x00\x00\x00\x00\r\x02 \x01\x00 SEQ06 ! \x04\x00\x00\r\x00\x00 8\x00\x00\r\x02 
-VAR01 \x01\x00 SEQ06   
-VAR01 \x01\x00 SET01  and 0C\x00! \x04\x00\x00\r\x00\x00 \x00\x00\x00\x00\r\x02 \x01\x00 SEQ06 ! \x04\x00\x00\r\x00\x00 8\x00\x00\r\x02 \x04\x00\x00\r\x00\x00 \x01\x00 SEQ06   
-VAR01 \x04\x00 SET01  and 0C\x00! \x04\x00\x00\r\x00\x00 \x00\x00\x00\x00\r\x02 \x01\x00 SEQ06 ! \x04\x00\x00\r\x00\x00 8\x00\x00\r\x02 \x08\x00\x00\r\x00\x00 \x01\x00 SEQ06   
-VAR01 OPER \x0c
+ADDRES_4B  \x00?\x00,\x02\xf0B\x00  
+VAR_2B \x04\x00 SET01  and 0C\x00! \x04\x00\x00\r\x00\x00 \x00\x00\x00\x00\r\x02 \x01\x00 SEQ06 ! \x04\x00\x00\r\x00\x00 8\x00\x00\r\x02 
+VAR_2B \x01\x00 SEQ06   
+VAR_2B \x01\x00 SET01  and 0C\x00! \x04\x00\x00\r\x00\x00 \x00\x00\x00\x00\r\x02 \x01\x00 SEQ06 ! \x04\x00\x00\r\x00\x00 8\x00\x00\r\x02 \x04\x00\x00\r\x00\x00 \x01\x00 SEQ06   
+VAR_2B \x04\x00 SET01  and 0C\x00! \x04\x00\x00\r\x00\x00 \x00\x00\x00\x00\r\x02 \x01\x00 SEQ06 ! \x04\x00\x00\r\x00\x00 8\x00\x00\r\x02 \x08\x00\x00\r\x00\x00 \x01\x00 SEQ06   
+VAR_2B 
+\x0c
 SEQ05  and 0C\x00! \x04\x00\x00\r\x00\x00 \x00\x00\x00\x00\r\x02 \x01\x00 SEQ06 ! \x04\x00\x00\r\x00\x00 8\x00\x00\r\x02 \x0c\x00\x00\r\x00\x00 \x01\x00 SEQ06   
-VAR01 \x04\x00 SET01  and 0C\x00! \x04\x00\x00\r\x00\x00 \x00\x00\x00\x00\r\x02 \x01\x00 SEQ06 ! \x04\x00\x00\r\x00\x00 8\x00\x00\r\x02 \x10\x00\x00\r\x00\x00 \x01\x00 SEQ06   
-VAR01 \x03\x00 SET01  and 0C\x00! \x04\x00\x00\r\x00\x00 \x00\x00\x00\x00\r\x02 \x01\x00 SEQ06 ! \x04\x00\x00\r\x00\x00 8\x00\x00\r\x02 \x14\x00\x00\r\x00\x00 \x01\x00 SEQ06   
-VAR01 \x04\x00 SET01  and 0C\x00 and 0C\x000C\x00\x07\x00\x00\xff\xff\xff\xff\x1e@\x00\x00\x00\x00\x00>@\x00\x01\x00\x00\xb0@\x00OPER "A\x00\x03\x00\x00\x94A\x00\x04\x00\x00\x06B\x00\x05\x00\x00xB\x00
-CMD04 .\\Data\\Script\\0.Fob 6C\x00 OPER 
+VAR_2B \x04\x00 SET01  and 0C\x00! \x04\x00\x00\r\x00\x00 \x00\x00\x00\x00\r\x02 \x01\x00 SEQ06 ! \x04\x00\x00\r\x00\x00 8\x00\x00\r\x02 \x10\x00\x00\r\x00\x00 \x01\x00 SEQ06   
+VAR_2B \x03\x00 SET01  and 0C\x00! \x04\x00\x00\r\x00\x00 \x00\x00\x00\x00\r\x02 \x01\x00 SEQ06 ! \x04\x00\x00\r\x00\x00 8\x00\x00\r\x02 \x14\x00\x00\r\x00\x00 \x01\x00 SEQ06   
+VAR_2B \x04\x00 SET01  and 0C\x00 and 0C\x000C\x00\x07\x00\x00\xff\xff\xff\xff\x1e@\x00\x00\x00\x00\x00>@\x00\x01\x00\x00\xb0@\x00
+"A\x00\x03\x00\x00\x94A\x00\x04\x00\x00\x06B\x00\x05\x00\x00xB\x00
+CMD04 .\\Data\\Script\\0.Fob 6C\x00 
+
 CMD03 AVIStart\x00\x00\x00 \\C\x00 
-CHOICE_FLAG 66\xf1\x00
+ADDRES_4B 66\xf1\x00

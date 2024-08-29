@@ -1,46 +1,52 @@
 F_SRT
 7\x16\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xde\x11\x00
 CMD03 SCE028_001\x00 \x06\x00\x00 S_END 
-VAR01 TXT1 `; SEQ06   
-VAR01 OPER \x0c
+VAR_2B TXT1 `; SEQ06   
+VAR_2B 
+\x0c
 SEQ05   \x04\x00\x00\r\x00\x00 \x17\x00 SET01   \x08\x00\x00\r\x00\x00 \x01\x00 SET01 FILE1 .\\Data\\Script\\Bgm.Fob COMMAND_TO_BYTECODE2 \x98\x00\x00 
 CMD01 SePlay COMMAND_TO_BYTECODE1 \xc2\x00\x00 
-CHOICE_FLAG \x03L\x00\x00
+ADDRES_4B \x03L\x00\x00
  
 　拓司とカンナが初めて出会ったのは、工業団地の廃墟でだった　@
 　深夜２時過ぎ、いつものように町を徘徊していた拓司は、ふらり\n　と工業団地地区へと迷い込んだ。@
 　かつては１００世帯以上が生活していたそれら１２棟の団地は、\n　相次ぐ工場の閉鎖と、老朽化によって、完全に廃棄されて久しか\n　った。\
 
 \x00  
-VAR01 \xde\x00 SET01 FILE2 .\\Data\\Script\\TextFunc.Fob COMMAND_TO_BYTECODE1 .\x02\x00 
+VAR_2B \xde\x00 SET01 FILE2 .\\Data\\Script\\TextFunc.Fob COMMAND_TO_BYTECODE1 .\x02\x00 
 CMD01 TextOn COMMAND_TO_BYTECODE1 \\\x02\x00 
-CHOICE_FLAG FILE2 
+ADDRES_4B FILE2 
 CHOICE
 左へ\n右へ\n\l0,2,
 ENDCHOICE
 
 \x00  
-VAR01 x\x02 SET01  .\x02\x00 OPER  \\\x02\x00 
-CHOICE_FLAG  .\x02\x00 OPER 
+VAR_2B x\x02 SET01  .\x02\x00 
+ \\\x02\x00 
+ADDRES_4B  .\x02\x00 
+
 CMD03 TextClose COMMAND_TO_BYTECODE2 \xda\x02\x00 
 S_STR SCE028_002\x00 \xfa\x02\x00 S_END 
-VAR01 TXT1 d; SEQ06 \x03T\x00\x00
+VAR_2B TXT1 d; SEQ06 \x03T\x00\x00
  
 　荒れ果てた鉄筋コンクリートの塊は容易に墓標を想起させ、そし\n　て宿命的に幽霊が出るという噂が立った。@
 　ＴＶで『ウワサの怪奇スポット』との興味本位の紹介をされたせ\n　いか、一時は物好きたちがいくらか訪れてはいたが、数年前、団\n　地を囲むように金網のフェンスが張り巡らされたのを機に、この\n　地は完全に沈黙の場所となった。@
 \z
 \x00\x00\x00  
-VAR01 >\x03 SET01  .\x02\x00 OPER  \\\x02\x00 
-CHOICE_FLAG FILE2 
+VAR_2B >\x03 SET01  .\x02\x00 
+ \\\x02\x00 
+ADDRES_4B FILE2 
 CHOICE
 左へ\n右へ\n\l0,2,
 ENDCHOICE
 
 \x00  
-VAR01 \xc8\x04 SET01  .\x02\x00 OPER  \\\x02\x00 
-CHOICE_FLAG  .\x02\x00 OPER  \xda\x02\x00 
+VAR_2B \xc8\x04 SET01  .\x02\x00 
+ \\\x02\x00 
+ADDRES_4B  .\x02\x00 
+ \xda\x02\x00 
 S_STR SCE028_003\x00 8\x05\x00 S_END 
-VAR01 TXT1 h; SEQ06 \x03\xc9\x00\x00
+VAR_2B TXT1 h; SEQ06 \x03\xc9\x00\x00
  
 　フェンスは実際のところ２メートル程度の高さしかなかったから\n　、決して乗り越えられないというわけではない（実際、拓司は簡\n　単にそれを乗り越えることができた）。\p故に、フェンスの設置が\n　物理的に侵入者を阻んだとはいえない。@
 　フェンスの設置がこの廃墟に付け加えたもの……それは物理的で\n　はない、なにか精神的ともいうべき閉塞感だった。@
@@ -51,33 +57,39 @@ VAR01 TXT1 h; SEQ06 \x03\xc9\x00\x00
 \n　彼らが言い残した言葉が、伝説の上にさらなる伝説を生んでいっ\n　た。\
 
 \x00\x00\x00  
-VAR01 |\x05 SET01  .\x02\x00 OPER  \\\x02\x00 
-CHOICE_FLAG FILE2 
+VAR_2B |\x05 SET01  .\x02\x00 
+ \\\x02\x00 
+ADDRES_4B FILE2 
 CHOICE
 左へ\n右へ\n\l0,2,
 ENDCHOICE
 
 \x00  
-VAR01 \xda\x08 SET01  .\x02\x00 OPER  \\\x02\x00 
-CHOICE_FLAG  .\x02\x00 OPER  \xda\x02\x00 
+VAR_2B \xda\x08 SET01  .\x02\x00 
+ \\\x02\x00 
+ADDRES_4B  .\x02\x00 
+ \xda\x02\x00 
 S_STR SCE028_004\x00 J\t\x00 S_END 
-VAR01 TXT1 l; SEQ06 \x03T\x00\x00
+VAR_2B TXT1 l; SEQ06 \x03T\x00\x00
  
 　やがて、歳月と雨と自然作用が金網を赤黒く錆びさせ、この地は\n　さらなる陰惨さをその身にまとうこととなった。\p団地の壁にはベ\n　ッタリと染みができ、不法投棄の粗大ゴミが無秩序にあちこちに\n　転がり始めた。@
 　ふざけて訪れることすらはばかられるくらいの深刻さが、手で触\n　れることができるくらいの確かさで敷地内に漂っていた。\
 
 \x00\x00\x00  
-VAR01 \x8e\t SET01  .\x02\x00 OPER  \\\x02\x00 
-CHOICE_FLAG FILE2 
+VAR_2B \x8e\t SET01  .\x02\x00 
+ \\\x02\x00 
+ADDRES_4B FILE2 
 CHOICE
 左へ\n右へ\n\l0,2,
 ENDCHOICE
 
 \x00  
-VAR01 \x18\x0b SET01  .\x02\x00 OPER  \\\x02\x00 
-CHOICE_FLAG  .\x02\x00 OPER  \xda\x02\x00 
+VAR_2B \x18\x0b SET01  .\x02\x00 
+ \\\x02\x00 
+ADDRES_4B  .\x02\x00 
+ \xda\x02\x00 
 S_STR SCE028_005\x00 \x88\x0b\x00 S_END 
-VAR01 TXT1 p; SEQ06 \x03\x92\x00\x00
+VAR_2B TXT1 p; SEQ06 \x03\x92\x00\x00
  
 　もっとも、拓司にとって、そうした怪談めいた空気など、少しも\n　恐ろしいものではなかった。@
 　割れた窓から通りを見下ろす真っ白な子供の影や、団地の壁にび\n　っしり張り付いている死人の顔などよりももっと恐ろしいものが\n　世界にはあるということを、拓司は知っていた。@
@@ -86,9 +98,10 @@ VAR01 TXT1 p; SEQ06 \x03\x92\x00\x00
 　とはいえ、まさか深夜２時に誰かがいるとは思っていなかった。\
 
 \x00  
-VAR01 \xcc\x0b SET01  .\x02\x00 OPER  \\\x02\x00 
+VAR_2B \xcc\x0b SET01  .\x02\x00 
+ \\\x02\x00 
 S_STR SCE028_006\x00 N\x0e\x00 S_END 
-VAR01 TXT1 t; SEQ06 \x03\xae\x00\x00
+VAR_2B TXT1 t; SEQ06 \x03\xae\x00\x00
  
 \n/*▲SE02　一回再生（ファイル再生待たず次へ）*/\a2,0,2,0,　ドザッ！@
 \a4,0,0,0,/*▲SE02　一回再生（ファイル再生待たず次へ）*/\a2,0,2,0,　ドザッ！@
@@ -101,9 +114,12 @@ VAR01 TXT1 t; SEQ06 \x03\xae\x00\x00
 　それが拓司とカンナの出会いだった。\
 
 \x00\x00\x00  
-VAR01 \x92\x0e SET01  .\x02\x00 OPER  \\\x02\x00 C_END  
-VAR01 OPER \x0c
+VAR_2B \x92\x0e SET01  .\x02\x00 
+ \\\x02\x00 C_END  
+VAR_2B 
+\x0c
 SEQ05  \x98\x00\x00 
 CMD01 SeStop COMMAND_TO_BYTECODE1 \xaa\x11\x00 
-CHOICE_FLAG  .\x02\x00 OPER  \xda\x02\x00 
+ADDRES_4B  .\x02\x00 
+ \xda\x02\x00 
 F_END

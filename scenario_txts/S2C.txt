@@ -1,11 +1,11 @@
 F_SRT
 \xbb\x08\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xe8\x06\x00  
-VAR01 A\x00 SET01 FILE1 .\\Data\\Script\\Bg.Fob COMMAND_TO_BYTECODE3  \x00\x00 
+VAR_2B A\x00 SET01 FILE1 .\\Data\\Script\\Bg.Fob COMMAND_TO_BYTECODE3  \x00\x00 
 CMD02 BgAutoFadeIn COMMAND_TO_BYTECODE3 J\x00\x00 C_END  
-VAR01 \x04\x01 SET01 FILE1 .\\Data\\Script\\Bgm.Fob COMMAND_TO_BYTECODE2 \x88\x00\x00 
+VAR_2B \x04\x01 SET01 FILE1 .\\Data\\Script\\Bgm.Fob COMMAND_TO_BYTECODE2 \x88\x00\x00 
 CMD01 PlayCD COMMAND_TO_BYTECODE1 \xb2\x00\x00 
 S_STR SCES02_001\x00 \xce\x00\x00 S_END 
-VAR01 TXT1 \xa8\xb5\x01\x0c\x00\x00\x00\x00"\x03p\x00\x00
+VAR_2B TXT1 \xa8\xb5\x01\x0c\x00\x00\x00\x00"\x03p\x00\x00
  
 早桃には、子供の頃から空想のお友達がいたの。@
 空想のお友達、なんていうとなんだかアブナイひとみたいでイヤ\nなんだけど……ぜんぜんそんな、特別な感じじゃないの。@
@@ -17,10 +17,10 @@ VAR01 TXT1 \xa8\xb5\x01\x0c\x00\x00\x00\x00"\x03p\x00\x00
 羽が生えた猫なの。\
 
 \x00\x00\x00  
-VAR01 \x12\x01 SET01 FILE2 .\\Data\\Script\\TextFunc.Fob COMMAND_TO_BYTECODE1 \xf2\x02\x00 
+VAR_2B \x12\x01 SET01 FILE2 .\\Data\\Script\\TextFunc.Fob COMMAND_TO_BYTECODE1 \xf2\x02\x00 
 CMD01 TextOn COMMAND_TO_BYTECODE1  \x03\x00 
 S_STR SCES02_002\x00 <\x03\x00 S_END 
-VAR01 TXT1 \xac\xb5\x01\x0c\x00\x00\x00\x00"\x03\xaa\x00\x00
+VAR_2B TXT1 \xac\xb5\x01\x0c\x00\x00\x00\x00"\x03\xaa\x00\x00
  
 それでね、しゃべるときは言葉の最後に『ニャ』ってつけるの。@
 『早桃ちゃんはいつも泣いてばっかりだニャ』@
@@ -34,10 +34,13 @@ VAR01 TXT1 \xac\xb5\x01\x0c\x00\x00\x00\x00"\x03\xaa\x00\x00
 『答はね、早桃ちゃん。風のなかにあるニャ』って。\
 
 \x00\x00\x00  
-VAR01 \x80\x03 SET01  \xf2\x02\x00 OPER   \x03\x00 C_END  
-VAR01 \xc8\x00 SET01   \x00\x00 OPER  J\x00\x00 
-CHOICE_FLAG  \x88\x00\x00 
+VAR_2B \x80\x03 SET01  \xf2\x02\x00 
+  \x03\x00 C_END  
+VAR_2B \xc8\x00 SET01   \x00\x00 
+ J\x00\x00 
+ADDRES_4B  \x88\x00\x00 
 CMD01 StopCD COMMAND_TO_BYTECODE1 \xa2\x06\x00 
-CHOICE_FLAG  \xf2\x02\x00 OPER 
+ADDRES_4B  \xf2\x02\x00 
+
 CMD03 TextClose COMMAND_TO_BYTECODE2 \xca\x06\x00 
 F_END

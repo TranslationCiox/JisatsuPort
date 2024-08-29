@@ -1,36 +1,51 @@
 F_SRT
 \x98\x11\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\x8a\r\x00
 CMD03 SCE236_001\x00 \x06\x00\x00 S_END 
-VAR01 TXT1 `\x80\x01\x0c\x00\x00\x00\x00"FILE2 .\\Data\\Script\\TextFunc.Fob COMMAND_TO_BYTECODE1 J\x00\x00 OPER 
+VAR_2B TXT1 `\x80\x01\x0c\x00\x00\x00\x00"FILE2 .\\Data\\Script\\TextFunc.Fob COMMAND_TO_BYTECODE1 J\x00\x00 
+
 CMD04 TextWindowOffDirect x\x00\x00 C_END  
-VAR01 OPER \x0c
+VAR_2B 
+\x0c
 SEQ05   \x04\x00\x00\r\x00\x00 \x1b\x00 SET01   \x08\x00\x00\r\x00\x00 \x00\x00\x00 SET01 FILE1 .\\Data\\Script\\Bgm.Fob COMMAND_TO_BYTECODE2 \xee\x00\x00 
 CMD01 SePlay COMMAND_TO_BYTECODE1 \x18\x01\x00 C_END  
-VAR01 \xca\x00 SET01 FILE1 .\\Data\\Script\\Bg.Fob COMMAND_TO_BYTECODE3 N\x01\x00 
+VAR_2B \xca\x00 SET01 FILE1 .\\Data\\Script\\Bg.Fob COMMAND_TO_BYTECODE3 N\x01\x00 
 CMD01 BgOn COMMAND_TO_BYTECODE3 x\x01\x00 C_END  
-VAR01 \x01\x00 SET01 FILE2 .\\Data\\Script\\TextFunc.fob COMMAND_TO_BYTECODE1 \xae\x01\x00 OPER 
+VAR_2B \x01\x00 SET01 FILE2 .\\Data\\Script\\TextFunc.fob COMMAND_TO_BYTECODE1 \xae\x01\x00 
+
 CMD03 WaitTime COMMAND_TO_BYTECODE3 \xdc\x01\x00 C_END  
-VAR01 \xc8\x00 SET01  N\x01\x00 OPER  x\x01\x00 C_END  
-VAR01 \x01\x00 SET01  \xae\x01\x00 OPER  \xdc\x01\x00 C_END  
-VAR01 OPER \x0c
+VAR_2B \xc8\x00 SET01  N\x01\x00 
+ x\x01\x00 C_END  
+VAR_2B \x01\x00 SET01  \xae\x01\x00 
+ \xdc\x01\x00 C_END  
+VAR_2B 
+\x0c
 SEQ05  \xee\x00\x00 
 CMD01 SeStop COMMAND_TO_BYTECODE1 \x8a\x02\x00 C_END  
-VAR01 OPER \x0c
-SEQ05   \x04\x00\x00\r\x00\x00 \x1b\x00 SET01   \x08\x00\x00\r\x00\x00 \x00\x00\x00 SET01  \xee\x00\x00 OPER  \x18\x01\x00 C_END  
-VAR01 \xca\x00 SET01  N\x01\x00 OPER  x\x01\x00 C_END  
-VAR01 \x01\x00 SET01  \xae\x01\x00 OPER  \xdc\x01\x00 C_END  
-VAR01 \xc8\x00 SET01  N\x01\x00 OPER  x\x01\x00 C_END  
-VAR01 \x01\x00 SET01  \xae\x01\x00 OPER  \xdc\x01\x00 C_END  
-VAR01 <\x00 SET01  \xae\x01\x00 OPER  \xdc\x01\x00 C_END  
-VAR01 \xc9\x00 SET01  N\x01\x00 
+VAR_2B 
+\x0c
+SEQ05   \x04\x00\x00\r\x00\x00 \x1b\x00 SET01   \x08\x00\x00\r\x00\x00 \x00\x00\x00 SET01  \xee\x00\x00 
+ \x18\x01\x00 C_END  
+VAR_2B \xca\x00 SET01  N\x01\x00 
+ x\x01\x00 C_END  
+VAR_2B \x01\x00 SET01  \xae\x01\x00 
+ \xdc\x01\x00 C_END  
+VAR_2B \xc8\x00 SET01  N\x01\x00 
+ x\x01\x00 C_END  
+VAR_2B \x01\x00 SET01  \xae\x01\x00 
+ \xdc\x01\x00 C_END  
+VAR_2B <\x00 SET01  \xae\x01\x00 
+ \xdc\x01\x00 C_END  
+VAR_2B \xc9\x00 SET01  N\x01\x00 
 CMD02 BgNormalFadeIn COMMAND_TO_BYTECODE1 8\x04\x00 C_END  
-VAR01 \x08\x01 SET01  \xee\x00\x00 
+VAR_2B \x08\x01 SET01  \xee\x00\x00 
 CMD01 PlayCD COMMAND_TO_BYTECODE1 \x82\x04\x00 C_END  
-VAR01 OPER \x0c
-SEQ05  \xee\x00\x00 OPER  \x8a\x02\x00 
-CHOICE_FLAG  J\x00\x00 
+VAR_2B 
+\x0c
+SEQ05  \xee\x00\x00 
+ \x8a\x02\x00 
+ADDRES_4B  J\x00\x00 
 CMD02 TextWindowOn COMMAND_TO_BYTECODE3 \xde\x04\x00 
-CHOICE_FLAG \x03l\x00\x00
+ADDRES_4B \x03l\x00\x00
  
 白い部屋で目覚めてホッとした気分になったのは、これが初めて\nだった。@
 枕元には教授が座っている。@
@@ -42,10 +57,10 @@ CHOICE_FLAG \x03l\x00\x00
 \n教授が繰り返した。\
 
 \x00  
-VAR01 \x02\x05 SET01  J\x00\x00 
+VAR_2B \x02\x05 SET01  J\x00\x00 
 CMD01 TextOn COMMAND_TO_BYTECODE1 \xde\x06\x00 
 S_STR SCE236_002\x00 \xfa\x06\x00 S_END 
-VAR01 TXT1 d\x80\x01\x0c\x00\x00\x00\x00"\x03g\x00\x00
+VAR_2B TXT1 d\x80\x01\x0c\x00\x00\x00\x00"\x03g\x00\x00
  
 拓司の目から、堰を切ったように涙があふれ出した。@
 ベッドから起きあがって教授に触れようとしたが、身体の中心が\n砕け散ってしまったかのように、力が入らない。@
@@ -58,18 +73,20 @@ VAR01 TXT1 d\x80\x01\x0c\x00\x00\x00\x00"\x03g\x00\x00
 \n拓司\n　「ここが……この世界が……」\
 
 \x00  
-VAR01 >\x07 SET01  J\x00\x00 OPER  \xde\x06\x00 
+VAR_2B >\x07 SET01  J\x00\x00 
+ \xde\x06\x00 
 S_STR SCE236_003\x00 \x14\t\x00 S_END 
-VAR01 TXT1 h\x80\x01\x0c\x00\x00\x00\x00"\x03|\x00\x00
+VAR_2B TXT1 h\x80\x01\x0c\x00\x00\x00\x00"\x03|\x00\x00
  
 教授\n　「もういい。\p世界について考えるのはよしたまえ。\pこれからは\n　　少しずつ、自分のことを考えていくんだ。\p世界などどうでも\n　　いい。\pどんな世界にいようとも、君は君だ。\pそうだろう？」@
 拓司\n　「……はい」@
 教授\n　「覚えてはいないだろうが、君はこうした混乱状態を、もう数\n　　度繰り返してきている。\pしかし今回は、いつもとは明らかに\n　　違う。\pいままで君は、混乱の中で精神に限界をきたし、自殺\n　　を図ることまであった。\p死ねば何が本当かがわかると思って、\n　　ね」\
 
 \x00\x00\x00  
-VAR01 X\t SET01  J\x00\x00 OPER  \xde\x06\x00 
+VAR_2B X\t SET01  J\x00\x00 
+ \xde\x06\x00 
 S_STR SCE236_004\x00 \x82\x0b\x00 S_END 
-VAR01 TXT1 l\x80\x01\x0c\x00\x00\x00\x00"\x03X\x00\x00
+VAR_2B TXT1 l\x80\x01\x0c\x00\x00\x00\x00"\x03X\x00\x00
  
 拓司\n　「自殺」@
 教授\n　「ああ。\pもしかしたら夢にも、そういった傾向の片鱗が現出し\n　　たのではないかな？」@
@@ -77,7 +94,9 @@ VAR01 TXT1 l\x80\x01\x0c\x00\x00\x00\x00"\x03X\x00\x00
 教授\n　「そうか。\pしかし、もう、きみはそうした危険な状況を切り抜\n　　けた。\pきみは階段を一歩、昇ったんだ。\pこれからはどんどん\n　　良くなっていく。\pそれを信じて、私と一緒に頑張ろうじゃな\n　　いか」\
 
 \x00\x00\x00  
-VAR01 \xc6\x0b SET01  J\x00\x00 OPER  \xde\x06\x00 
-CHOICE_FLAG  J\x00\x00 OPER 
+VAR_2B \xc6\x0b SET01  J\x00\x00 
+ \xde\x06\x00 
+ADDRES_4B  J\x00\x00 
+
 CMD03 TextClose COMMAND_TO_BYTECODE2 l\r\x00 
 F_END

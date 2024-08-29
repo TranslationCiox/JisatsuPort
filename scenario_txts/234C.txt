@@ -1,17 +1,17 @@
 F_SRT
 p*\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\x1a#\x00  
-VAR01 \x0c\x01 SET01 FILE1 .\\Data\\Script\\Bgm.Fob COMMAND_TO_BYTECODE2  \x00\x00 
+VAR_2B \x0c\x01 SET01 FILE1 .\\Data\\Script\\Bgm.Fob COMMAND_TO_BYTECODE2  \x00\x00 
 CMD01 PlayCD COMMAND_TO_BYTECODE1 J\x00\x00 
 S_STR SCE234_001\x00 f\x00\x00 S_END 
-VAR01 TXT1 @}\x01\x0c\x00\x00\x00\x00"\x03\x11\x00\x00
+VAR_2B TXT1 @}\x01\x0c\x00\x00\x00\x00"\x03\x11\x00\x00
  
 \n\n\n\n\n\n\n\n\n\n　　　　　　　　　　　　『１５日目』\
 
 \x00\x00\x00  
-VAR01 \xaa\x00 SET01 FILE2 .\\Data\\Script\\TextFunc.Fob COMMAND_TO_BYTECODE1 \x0e\x01\x00 
+VAR_2B \xaa\x00 SET01 FILE2 .\\Data\\Script\\TextFunc.Fob COMMAND_TO_BYTECODE1 \x0e\x01\x00 
 CMD01 TextOn COMMAND_TO_BYTECODE1 <\x01\x00 
 S_STR SCE234_002\x00 X\x01\x00 S_END 
-VAR01 TXT1 D}\x01\x0c\x00\x00\x00\x00"\x03\x7f\x00\x00
+VAR_2B TXT1 D}\x01\x0c\x00\x00\x00\x00"\x03\x7f\x00\x00
  
 拓司の予想は、まったく予期せぬ形でうち砕かれた。@
 /*■CG45　表示（クロスフェード）*/\a7,-2,-2,0,\a0,44,2,0,\a6,-2,0,0,\n朝食の配給に現れた御堂は、右目に眼帯を付けていた。@
@@ -25,9 +25,10 @@ VAR01 TXT1 D}\x01\x0c\x00\x00\x00\x00"\x03\x7f\x00\x00
 その視線から逃れるように、紅葉は俯いた。\
 
 \x00\x00\x00  
-VAR01 \x9c\x01 SET01  \x0e\x01\x00 OPER  <\x01\x00 
+VAR_2B \x9c\x01 SET01  \x0e\x01\x00 
+ <\x01\x00 
 S_STR SCE234_003\x00 \xd2\x03\x00 S_END 
-VAR01 TXT1 H}\x01\x0c\x00\x00\x00\x00"\x03V\x00\x00
+VAR_2B TXT1 H}\x01\x0c\x00\x00\x00\x00"\x03V\x00\x00
  
 御堂\n　「この女はな、自分の身の安全のために、お前を売ったんだ」@
 拓司\n　「ウソだ」@
@@ -39,9 +40,10 @@ VAR01 TXT1 H}\x01\x0c\x00\x00\x00\x00"\x03V\x00\x00
 拓司\n　「……」\
 
 \x00\x00\x00  
-VAR01 \x16\x04 SET01  \x0e\x01\x00 OPER  <\x01\x00 
+VAR_2B \x16\x04 SET01  \x0e\x01\x00 
+ <\x01\x00 
 S_STR SCE234_004\x00 \xa8\x05\x00 S_END 
-VAR01 TXT1 L}\x01\x0c\x00\x00\x00\x00"\x03`\x00\x00
+VAR_2B TXT1 L}\x01\x0c\x00\x00\x00\x00"\x03`\x00\x00
  
 紅葉は何もいわなかった。@
 ただ黙っている。@
@@ -53,9 +55,10 @@ VAR01 TXT1 L}\x01\x0c\x00\x00\x00\x00"\x03`\x00\x00
 \nははは、と御堂が笑った。\p錦城も、さも愉快そうに笑っている。\
 
 \x00  
-VAR01 \xec\x05 SET01  \x0e\x01\x00 OPER  <\x01\x00 
+VAR_2B \xec\x05 SET01  \x0e\x01\x00 
+ <\x01\x00 
 S_STR SCE234_005\x00 \xa6\x07\x00 S_END 
-VAR01 TXT1 P}\x01\x0c\x00\x00\x00\x00"\x03\x8e\x00\x00
+VAR_2B TXT1 P}\x01\x0c\x00\x00\x00\x00"\x03\x8e\x00\x00
  
 御堂\n　「お前、よっぽど人望ないんだなあ。\p哀れだぜ。@
 　　……まあ、安心しろ。\pお前を処分したあとで、神凪も罰して@
@@ -68,11 +71,12 @@ VAR01 TXT1 P}\x01\x0c\x00\x00\x00\x00"\x03\x8e\x00\x00
 \nつかみかかってくる紅葉を一撃で壁まではじき飛ばし、御堂が叫\nんだ。\
 
 \x00\x00\x00  
-VAR01 \xea\x07 SET01  \x0e\x01\x00 OPER  <\x01\x00 
-CHOICE_FLAG   \x00\x00 
+VAR_2B \xea\x07 SET01  \x0e\x01\x00 
+ <\x01\x00 
+ADDRES_4B   \x00\x00 
 CMD01 StopCD COMMAND_TO_BYTECODE1 h\n\x00 
 S_STR SCE234_006\x00 \x84\n\x00 S_END 
-VAR01 TXT1 T}\x01\x0c\x00\x00\x00\x00"\x03\x95\x00\x00
+VAR_2B TXT1 T}\x01\x0c\x00\x00\x00\x00"\x03\x95\x00\x00
  
 御堂\n　「っつーわけで、楽しい処刑の始まりだ！」@
 /*▲BGM　Track10　再生*/\a2,-1,10,1,/*■CG46　表示（クロスフェード）*/\a7,-2,-2,0,\a0,45,2,0,\a6,-2,0,0,\n鳩尾に、狙い澄ました一発がきた。\p予想していたにもかかわらず\n避けられなかった。\p拓司は、もうそれだけで立っていることがで\nきなかった。@
@@ -84,9 +88,10 @@ VAR01 TXT1 T}\x01\x0c\x00\x00\x00\x00"\x03\x95\x00\x00
 御堂に殺されるかもしれない。\pしかも信じていた紅葉に裏切られ\nて……。\
 
 \x00\x00\x00  
-VAR01 \xc8\n SET01  \x0e\x01\x00 OPER  <\x01\x00 
+VAR_2B \xc8\n SET01  \x0e\x01\x00 
+ <\x01\x00 
 S_STR SCE234_007\x00 V\r\x00 S_END 
-VAR01 TXT1 X}\x01\x0c\x00\x00\x00\x00"\x03\xba\x00\x00
+VAR_2B TXT1 X}\x01\x0c\x00\x00\x00\x00"\x03\xba\x00\x00
  
 ものすごい衝撃が鼻先を直撃し、目の前に火花が散った。@
 そのままよろけて手を伸ばすと、バシャン、と鋭い音がした。@
@@ -107,9 +112,10 @@ VAR01 TXT1 X}\x01\x0c\x00\x00\x00\x00"\x03\xba\x00\x00
 /*■黒　表示（ノンエフェクト）*/\a7,-1,-1,0,\a0,200,1,0,\a6,0,0,0,床に倒れる。\
 
 \x00  
-VAR01 \x9a\r SET01  \x0e\x01\x00 OPER  <\x01\x00 
+VAR_2B \x9a\r SET01  \x0e\x01\x00 
+ <\x01\x00 
 S_STR SCE234_008\x00 \xbc\x10\x00 S_END 
-VAR01 TXT1 \\}\x01\x0c\x00\x00\x00\x00"\x03\x94\x00\x00
+VAR_2B TXT1 \\}\x01\x0c\x00\x00\x00\x00"\x03\x94\x00\x00
  
 　興奮が胸を充たし、あふれ、喉へと込み上がってきた。@
 　俺は自分が雄々しく叫ぶのだと思った。\p咆哮して……煮えたぎ\nった興奮を解き放って御堂に立ち向かうのだと思った。\pしかしそ\nんな叫び声は、いつまでたっても形にならなかった。@
@@ -119,9 +125,10 @@ VAR01 TXT1 \\}\x01\x0c\x00\x00\x00\x00"\x03\x94\x00\x00
 御堂の残忍な笑い顔が、ぐいっとせり上がって目の前に飛び出し\nた。\
 
 \x00\x00\x00  
-VAR01 \x00\x11 SET01  \x0e\x01\x00 OPER  <\x01\x00 
+VAR_2B \x00\x11 SET01  \x0e\x01\x00 
+ <\x01\x00 
 S_STR SCE234_009\x00 \x8a\x13\x00 S_END 
-VAR01 TXT1 `}\x01\x0c\x00\x00\x00\x00"\x03\xe1\x00\x00
+VAR_2B TXT1 `}\x01\x0c\x00\x00\x00\x00"\x03\xe1\x00\x00
  
 御堂\n　「おい虎菱ィ！」@
 拓司\n　「わああああああああああああああああああああああああっ！」\n\p御堂\n　「おい虎菱ィ！」@
@@ -132,11 +139,12 @@ VAR01 TXT1 `}\x01\x0c\x00\x00\x00\x00"\x03\xe1\x00\x00
 \n叫んで、御堂は拓司の腕を逆に取った。\
 
 \x00\x00\x00  
-VAR01 \xce\x13 SET01  \x0e\x01\x00 OPER  <\x01\x00 C_END  
-VAR01 \xcb\x00 SET01 FILE1 .\\Data\\Script\\Bg.Fob COMMAND_TO_BYTECODE3 \xa6\x17\x00 
+VAR_2B \xce\x13 SET01  \x0e\x01\x00 
+ <\x01\x00 C_END  
+VAR_2B \xcb\x00 SET01 FILE1 .\\Data\\Script\\Bg.Fob COMMAND_TO_BYTECODE3 \xa6\x17\x00 
 CMD01 BgOn COMMAND_TO_BYTECODE3 \xd0\x17\x00 
 S_STR SCE234_010\x00 \xec\x17\x00 S_END 
-VAR01 TXT1 d}\x01\x0c\x00\x00\x00\x00"\x03{\x00\x00
+VAR_2B TXT1 d}\x01\x0c\x00\x00\x00\x00"\x03{\x00\x00
  
 御堂\n　「骨折るぞ！\p　骨折るぞ！\p　ホネオルホネオルゾホネオルゾゾ\n　　ゾゾゾ！」@
 \n御堂は逆さにとった拓司の腕を、くいっと軽くひねった。@
@@ -146,9 +154,10 @@ VAR01 TXT1 d}\x01\x0c\x00\x00\x00\x00"\x03{\x00\x00
 \n拓司\n　「わわわわわわわわわわわわわわわわわわ！！」\
 
 \x00  
-VAR01 0\x18 SET01  \x0e\x01\x00 OPER  <\x01\x00 
+VAR_2B 0\x18 SET01  \x0e\x01\x00 
+ <\x01\x00 
 S_STR SCE234_011\x00 V\x1a\x00 S_END 
-VAR01 TXT1 h}\x01\x0c\x00\x00\x00\x00"\x03]\x00\x00
+VAR_2B TXT1 h}\x01\x0c\x00\x00\x00\x00"\x03]\x00\x00
  
 御堂\n　「もう一本もイクか、オイ？」@
 錦城\n　「やって！」@
@@ -157,9 +166,10 @@ VAR01 TXT1 h}\x01\x0c\x00\x00\x00\x00"\x03]\x00\x00
 拓司\n　「わわわわわわわわわわわわわわわわわわ！！」\
 
 \x00\x00\x00  
-VAR01 \x9a\x1a SET01  \x0e\x01\x00 OPER  <\x01\x00 
+VAR_2B \x9a\x1a SET01  \x0e\x01\x00 
+ <\x01\x00 
 S_STR SCE234_012\x00 H\x1c\x00 S_END 
-VAR01 TXT1 l}\x01\x0c\x00\x00\x00\x00"\x03\x84\x00\x00
+VAR_2B TXT1 l}\x01\x0c\x00\x00\x00\x00"\x03\x84\x00\x00
  
 涙と鼻水がとめどなくあふれ出てきた。@
 情けなかった。@
@@ -177,9 +187,10 @@ VAR01 TXT1 l}\x01\x0c\x00\x00\x00\x00"\x03\x84\x00\x00
 う・ああ・あ・あ・あ・あ・あ・あ・あ・あ・あ・あ・あ・あ・あ\nああああああああ！\
 
 \x00  
-VAR01 \x8c\x1c SET01  \x0e\x01\x00 OPER  <\x01\x00 
+VAR_2B \x8c\x1c SET01  \x0e\x01\x00 
+ <\x01\x00 
 S_STR SCE234_013\x00 \xd6\x1e\x00 S_END 
-VAR01 TXT1 p}\x01\x0c\x00\x00\x00\x00"\x03\xa8\x00\x00
+VAR_2B TXT1 p}\x01\x0c\x00\x00\x00\x00"\x03\xa8\x00\x00
  
 もう一本の手がギシリと歪んだ。@
 \n拓司\n　「これは夢だ！」@
@@ -189,15 +200,20 @@ VAR01 TXT1 p}\x01\x0c\x00\x00\x00\x00"\x03\xa8\x00\x00
 　　うわあああああああああああああああああああああああああ\n　　あああああああああああああああああああああああああああ\n　　あああああああああああああああああああああああああああ\n　　あああああああああああああああああああああああああああ\n　　あああああああああああああああああああああああああああ\n　　あああああああああああああああああああああああああああ\n　　あああああああああああああああああああああああ！」\
 
 \x00\x00\x00  
-VAR01 \x1a\x1f SET01  \x0e\x01\x00 OPER  <\x01\x00 
-CHOICE_FLAG  \x0e\x01\x00 
+VAR_2B \x1a\x1f SET01  \x0e\x01\x00 
+ <\x01\x00 
+ADDRES_4B  \x0e\x01\x00 
 CMD02 TextWindowOff COMMAND_TO_BYTECODE2 \x00"\x00 C_END  
-VAR01 \xca\x00 SET01  \xa6\x17\x00 
+VAR_2B \xca\x00 SET01  \xa6\x17\x00 
 CMD02 BgNormalFadeIn COMMAND_TO_BYTECODE1 J"\x00 
-CHOICE_FLAG   \x00\x00 OPER  h\n\x00 C_END  
-VAR01 \xc8\x00 SET01  \xa6\x17\x00 OPER  \xd0\x17\x00 
-CHOICE_FLAG  \x0e\x01\x00 OPER 
+ADDRES_4B   \x00\x00 
+ h\n\x00 C_END  
+VAR_2B \xc8\x00 SET01  \xa6\x17\x00 
+ \xd0\x17\x00 
+ADDRES_4B  \x0e\x01\x00 
+
 CMD04 TextWindowOnDirect COMMAND_TO_BYTECODE1 \xc8"\x00 
-CHOICE_FLAG  \x0e\x01\x00 OPER 
+ADDRES_4B  \x0e\x01\x00 
+
 CMD03 TextClose COMMAND_TO_BYTECODE2 \xfc"\x00 
 F_END

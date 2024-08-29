@@ -10,13 +10,13 @@ patterns = [
     },
     {
         "pattern": [b'\x00', b'\x00', b'\x00', b'\x00', b'\r', b'\x00', b'\x00', b',', b'\x02'],
-        # Used before scenes which require a dialogue choice.
-        "action": "\nVAR02 "
+        # Seems to be used for 3 byte data.
+        "action": "\nVAR_3B "
     },
     {
         "pattern": [b'\x00', b'\x00', b'\x00', b'\x00', b'\r', b'\x00', b'\x00'],
-        # Seems to a variable of some kind.
-        "action": "\nVAR01"
+        # Seems to be used for 2 byte data. Not addresses but numbers.
+        "action": "\nVAR_2B"
     },
     {
         "pattern": [b'\x00', b'\x0c', b'\x00', b'\x00', b'\x00', b'\x00', b'"'],
@@ -68,12 +68,13 @@ patterns = [
     },
     {
         "pattern": [b'\x02', b'\x00', b'\x00', b'5'],
-        # Used in SCENARIOROOT before each scenario and before each choice in the scenarios with an address.
-        "action": "\nCHOICE_FLAG "
+        # Used a lot before 4 Byte addresses. Might be the address for 4 Byte data
+        "action": "\nADDRES_4B "
     },
     {
         "pattern": [b'\x02', b'\x00', b'\x00'],
-        "action": "OPER "
+        # Might be some kind of new line operator?
+        "action": "\n"
     },
     {
         "pattern": [b'\x03', b'\x06', b'\x00', b'\x00'],

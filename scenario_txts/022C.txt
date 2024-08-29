@@ -2,7 +2,7 @@ F_SRT
 .\\\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00FM\x00FILE1 .\\Data\\Script\\Bgm.Fob COMMAND_TO_BYTECODE2 \x06\x00\x00 
 CMD01 StopCD COMMAND_TO_BYTECODE1 0\x00\x00 
 S_STR SCE022_001\x00 L\x00\x00 S_END 
-VAR01 TXT1 \x00 and  SEQ06 \x03\x96\x00\x00
+VAR_2B TXT1 \x00 and  SEQ06 \x03\x96\x00\x00
  
 拓司は目を閉じて、妄想の糸でひとつの世界を編み始めた。@
 いつ？\p　－－親父とお袋が旅行中のある日。@
@@ -19,14 +19,14 @@ VAR01 TXT1 \x00 and  SEQ06 \x03\x96\x00\x00
 両親が留守なのだから、本当はベッドで堂々と繋がることができ\nるのだ。しかし、敢えてこんな場所を選んだ。それは……\
 
 \x00\x00\x00  
-VAR01 \x90\x00 SET01 FILE2 .\\Data\\Script\\TextFunc.Fob COMMAND_TO_BYTECODE1 \x08\x03\x00 
+VAR_2B \x90\x00 SET01 FILE2 .\\Data\\Script\\TextFunc.Fob COMMAND_TO_BYTECODE1 \x08\x03\x00 
 CMD01 TextOn COMMAND_TO_BYTECODE1 6\x03\x00 C_END  
-VAR01 \x05\x01 SET01  \x06\x00\x00 
+VAR_2B \x05\x01 SET01  \x06\x00\x00 
 CMD01 PlayCD COMMAND_TO_BYTECODE1 x\x03\x00 C_END  
-VAR01 M\x00 SET01 FILE1 .\\Data\\Script\\Bg.Fob COMMAND_TO_BYTECODE3 \xae\x03\x00 
+VAR_2B M\x00 SET01 FILE1 .\\Data\\Script\\Bg.Fob COMMAND_TO_BYTECODE3 \xae\x03\x00 
 CMD02 BgAutoFadeIn COMMAND_TO_BYTECODE3 \xd8\x03\x00 
 S_STR SCE022_002\x00 \xfc\x03\x00 S_END 
-VAR01 TXT1 \x042 SEQ06 \x03Q\x00\x00
+VAR_2B TXT1 \x042 SEQ06 \x03Q\x00\x00
  
 早桃\n　「うふふ、おにいちゃん、エッチだよね。こういう場所のほう\n　　が萌えるんだ？」@
 拓司\n　「ああ」@
@@ -36,10 +36,12 @@ VAR01 TXT1 \x042 SEQ06 \x03Q\x00\x00
 拓司の背後に、別の男が立っているのに気づいたのだ。\
 
 \x00  
-VAR01 @\x04 SET01  \x08\x03\x00 OPER  6\x03\x00 C_END  
-VAR01 \x05\x01 SET01  \x06\x00\x00 OPER  x\x03\x00 
+VAR_2B @\x04 SET01  \x08\x03\x00 
+ 6\x03\x00 C_END  
+VAR_2B \x05\x01 SET01  \x06\x00\x00 
+ x\x03\x00 
 S_STR SCE022_003\x00 \xf2\x05\x00 S_END 
-VAR01 TXT1 \x082 SEQ06 \x03b\x00\x00
+VAR_2B TXT1 \x082 SEQ06 \x03b\x00\x00
  
 早桃\n　「！」@
 拓司\n　「さあ、遠慮しないで入れよ」@
@@ -50,9 +52,10 @@ VAR01 TXT1 \x082 SEQ06 \x03b\x00\x00
 便座に腰掛けたまま、早桃が身を固くする。\
 
 \x00\x00\x00  
-VAR01 6\x06 SET01  \x08\x03\x00 OPER  6\x03\x00 
+VAR_2B 6\x06 SET01  \x08\x03\x00 
+ 6\x03\x00 
 S_STR SCE022_004\x00 \xf8\x07\x00 S_END 
-VAR01 TXT1 \x0c2 SEQ06 \x03`\x00\x00
+VAR_2B TXT1 \x0c2 SEQ06 \x03`\x00\x00
  
 平野\n　「へへ……こんにちわ～っす、早桃ちゃん♪」@
 早桃\n　「おにいちゃん……どういうこと？」@
@@ -65,9 +68,10 @@ VAR01 TXT1 \x0c2 SEQ06 \x03`\x00\x00
 　　こづかいがいるんだ」\
 
 \x00  
-VAR01 <\x08 SET01  \x08\x03\x00 OPER  6\x03\x00 
+VAR_2B <\x08 SET01  \x08\x03\x00 
+ 6\x03\x00 
 S_STR SCE022_005\x00 \xf6\t\x00 S_END 
-VAR01 TXT1 \x102 SEQ06 \x03d\x00\x00
+VAR_2B TXT1 \x102 SEQ06 \x03d\x00\x00
  
 早桃\n　「……そんな！」@
 拓司\n　「そんなもこんなもないだろ？@
@@ -79,9 +83,10 @@ VAR01 TXT1 \x102 SEQ06 \x03d\x00\x00
 早桃\n　「おにいちゃん……\p早桃のこと愛してるっていってくれたの\n　　に……\p両思いだって……」\
 
 \x00  
-VAR01 :\n SET01  \x08\x03\x00 OPER  6\x03\x00 
+VAR_2B :\n SET01  \x08\x03\x00 
+ 6\x03\x00 
 S_STR SCE022_006\x00 \x04\x0c\x00 S_END 
-VAR01 TXT1 \x142 SEQ06 \x037\x00\x00
+VAR_2B TXT1 \x142 SEQ06 \x037\x00\x00
  
 早桃の大きな目が潤んでいる。@
 あと一押しだ。拓司は慎重に言葉を選んだ。@
@@ -90,9 +95,10 @@ VAR01 TXT1 \x142 SEQ06 \x037\x00\x00
 その傷の深さを目の当たりにすることによって、自らをも傷つけ\nるような言葉を。\
 
 \x00\x00\x00  
-VAR01 H\x0c SET01  \x08\x03\x00 OPER  6\x03\x00 
+VAR_2B H\x0c SET01  \x08\x03\x00 
+ 6\x03\x00 
 S_STR SCE022_007\x00 ^\r\x00 S_END 
-VAR01 TXT1 \x182 SEQ06 \x03\xb0\x00\x00
+VAR_2B TXT1 \x182 SEQ06 \x03\xb0\x00\x00
  
 拓司\n　「両思い？@
 　　義兄妹でそんなのあるはずないだろ？@
@@ -109,9 +115,10 @@ VAR01 TXT1 \x182 SEQ06 \x03\xb0\x00\x00
 早桃\n　「違うよ！　早桃は本当におにいちゃんのこと……」\
 
 \x00  
-VAR01 \xa2\r SET01  \x08\x03\x00 OPER  6\x03\x00 
+VAR_2B \xa2\r SET01  \x08\x03\x00 
+ 6\x03\x00 
 S_STR SCE022_008\x00 \x9c\x10\x00 S_END 
-VAR01 TXT1 \x1c2 SEQ06 \x03_\x00\x00
+VAR_2B TXT1 \x1c2 SEQ06 \x03_\x00\x00
  
 拓司\n　「じゃあここで証明してくれよ。@
 　　本当に愛してるんなら、おれの言うことは聞けるはずだ\n　　ろ？」\n\p早桃\n　「……」@
@@ -123,9 +130,10 @@ VAR01 TXT1 \x1c2 SEQ06 \x03_\x00\x00
 \nうつむいて震える早桃を見下ろして、平野は荒い息でいった。\
 
 \x00  
-VAR01 \xe0\x10 SET01  \x08\x03\x00 OPER  6\x03\x00 
+VAR_2B \xe0\x10 SET01  \x08\x03\x00 
+ 6\x03\x00 
 S_STR SCE022_009\x00 \x96\x12\x00 S_END 
-VAR01 TXT1  2 SEQ06 \x03R\x00\x00
+VAR_2B TXT1  2 SEQ06 \x03R\x00\x00
  
 平野\n　「早桃ちゃ～ん？@
 　　いまから僕のこと、『おにいちゃん』って呼んでくれるか\n　　な？」@
@@ -137,11 +145,12 @@ VAR01 TXT1  2 SEQ06 \x03R\x00\x00
 拓司はそれを無視して、平野にいった。\
 
 \x00  
-VAR01 \xda\x12 SET01  \x08\x03\x00 OPER  6\x03\x00 C_END  
-VAR01 \xc8\x00 SET01  \xae\x03\x00 
+VAR_2B \xda\x12 SET01  \x08\x03\x00 
+ 6\x03\x00 C_END  
+VAR_2B \xc8\x00 SET01  \xae\x03\x00 
 CMD01 BgOn COMMAND_TO_BYTECODE3 \x82\x14\x00 
 S_STR SCE022_010\x00 \x9e\x14\x00 S_END 
-VAR01 TXT1 $2 SEQ06 \x03r\x00\x00
+VAR_2B TXT1 $2 SEQ06 \x03r\x00\x00
  
 拓司\n　「ホラ、さっさとやれよ。お前、女は初めてなんだろ？　@
 　　好きにしていいんだぞ？」\n平野\n　「いやあ、虎菱くんが見てる前じゃ、ちょっと恥ずいなあ」@
@@ -152,9 +161,10 @@ VAR01 TXT1 $2 SEQ06 \x03r\x00\x00
 早桃は目をそらして、うつむいたまま動かない。\
 
 \x00  
-VAR01 \xe2\x14 SET01  \x08\x03\x00 OPER  6\x03\x00 
+VAR_2B \xe2\x14 SET01  \x08\x03\x00 
+ 6\x03\x00 
 S_STR SCE022_011\x00 \xe4\x16\x00 S_END 
-VAR01 TXT1 (2 SEQ06 \x03e\x00\x00
+VAR_2B TXT1 (2 SEQ06 \x03e\x00\x00
  
 平野\n　「さあ、早桃ちゃん。@
 　　おにいちゃんのここ、触ってみたいだろ？」@
@@ -167,9 +177,10 @@ VAR01 TXT1 (2 SEQ06 \x03e\x00\x00
 そのまま手を上下させ、強制的に撫でさすらせる。\
 
 \x00\x00\x00  
-VAR01 (\x17 SET01  \x08\x03\x00 OPER  6\x03\x00 
+VAR_2B (\x17 SET01  \x08\x03\x00 
+ 6\x03\x00 
 S_STR SCE022_012\x00 \xf6\x18\x00 S_END 
-VAR01 TXT1 ,2 SEQ06 \x03H\x00\x00
+VAR_2B TXT1 ,2 SEQ06 \x03H\x00\x00
  
 平野\n　「ど……どうだい？@
 　　おにいちゃんのおち○ちんを触った感想は？」@
@@ -181,9 +192,10 @@ VAR01 TXT1 ,2 SEQ06 \x03H\x00\x00
 早桃\n　「……大きい……です」\
 
 \x00\x00\x00  
-VAR01 :\x19 SET01  \x08\x03\x00 OPER  6\x03\x00 
+VAR_2B :\x19 SET01  \x08\x03\x00 
+ 6\x03\x00 
 S_STR SCE022_013\x00 \x94\x1a\x00 S_END 
-VAR01 TXT1 02 SEQ06 \x03w\x00\x00
+VAR_2B TXT1 02 SEQ06 \x03w\x00\x00
  
 その声を確認してから、平野は早桃の手首を解放した。@
 続けろ、と目で合図を送り、早桃が自分の意志で撫でさするよう\nにし向ける。@
@@ -196,9 +208,10 @@ VAR01 TXT1 02 SEQ06 \x03w\x00\x00
 　　大きい……\pです……」\
 
 \x00  
-VAR01 \xd8\x1a SET01  \x08\x03\x00 OPER  6\x03\x00 
+VAR_2B \xd8\x1a SET01  \x08\x03\x00 
+ 6\x03\x00 
 S_STR SCE022_014\x00 \xee\x1c\x00 S_END 
-VAR01 TXT1 42 SEQ06 \x03n\x00\x00
+VAR_2B TXT1 42 SEQ06 \x03n\x00\x00
  
 平野\n　「よ、よくいえたね、早桃！@
 　　ご褒美だよ！」@
@@ -211,9 +224,10 @@ VAR01 TXT1 42 SEQ06 \x03n\x00\x00
 \n早桃\n　「う……ううっ」\
 
 \x00  
-VAR01 2\x1d SET01  \x08\x03\x00 OPER  6\x03\x00 
+VAR_2B 2\x1d SET01  \x08\x03\x00 
+ 6\x03\x00 
 S_STR SCE022_015\x00 $\x1f\x00 S_END 
-VAR01 TXT1 82 SEQ06 \x03z\x00\x00
+VAR_2B TXT1 82 SEQ06 \x03z\x00\x00
  
 平野\n　「ゆ、夢みたいだ。@
 　　こんなかわいい子と……\pつるぺたのぷにっ娘と……@
@@ -228,9 +242,10 @@ VAR01 TXT1 82 SEQ06 \x03z\x00\x00
 　　うぷっ……\pす、好き……\pですぅ……」\
 
 \x00  
-VAR01 h\x1f SET01  \x08\x03\x00 OPER  6\x03\x00 
+VAR_2B h\x1f SET01  \x08\x03\x00 
+ 6\x03\x00 
 S_STR SCE022_016\x00 \x8a!\x00 S_END 
-VAR01 TXT1 <2 SEQ06 \x03\x96\x00\x00
+VAR_2B TXT1 <2 SEQ06 \x03\x96\x00\x00
  
 目の前で、オタクに犯される義妹。@
 たった３万で、義兄への純愛を踏みにじられる早桃。@
@@ -245,9 +260,10 @@ VAR01 TXT1 <2 SEQ06 \x03\x96\x00\x00
 無抵抗を貫くことで、この淫猥な行為から自分の意志を消し去ろ\nうとしているのだ。\
 
 \x00  
-VAR01 \xce! SET01  \x08\x03\x00 OPER  6\x03\x00 
+VAR_2B \xce! SET01  \x08\x03\x00 
+ 6\x03\x00 
 S_STR SCE022_017\x00 `$\x00 S_END 
-VAR01 TXT1 @2 SEQ06 \x03\x7f\x00\x00
+VAR_2B TXT1 @2 SEQ06 \x03\x7f\x00\x00
  
 不可避の事態が降りかかったのだと……@
 自分は被害者であって加担者ではなかったと……@
@@ -260,9 +276,10 @@ VAR01 TXT1 @2 SEQ06 \x03\x7f\x00\x00
 　　さ、早桃が自分でお願いしてごらん？」\
 
 \x00\x00\x00  
-VAR01 \xa4$ SET01  \x08\x03\x00 OPER  6\x03\x00 
+VAR_2B \xa4$ SET01  \x08\x03\x00 
+ 6\x03\x00 
 S_STR SCE022_018\x00 \xda&\x00 S_END 
-VAR01 TXT1 D2 SEQ06 \x03b\x00\x00
+VAR_2B TXT1 D2 SEQ06 \x03b\x00\x00
  
 早桃\n　「……」@
 平野\n　「はあ、はあ……どうした、早桃ぉ？」@
@@ -274,9 +291,10 @@ VAR01 TXT1 D2 SEQ06 \x03b\x00\x00
 　　それじゃお望み通り、おま○こにぶち込んで、おにいちゃん\n　　の精子を早桃の卵子に受精させてあげるよ」\
 
 \x00\x00\x00  
-VAR01 \x1e' SET01  \x08\x03\x00 OPER  6\x03\x00 
+VAR_2B \x1e' SET01  \x08\x03\x00 
+ 6\x03\x00 
 S_STR SCE022_019\x00 \xe0(\x00 S_END 
-VAR01 TXT1 H2 SEQ06 \x03g\x00\x00
+VAR_2B TXT1 H2 SEQ06 \x03g\x00\x00
  
 早桃\n　「だ、駄目っ！　\p今日は駄目な日なのっ！@
 　　本当に赤ちゃんできちゃう日なのっ！」@
@@ -291,9 +309,10 @@ VAR01 TXT1 H2 SEQ06 \x03g\x00\x00
 　　おにいちゃんの精液、お尻の中に射精してくださいっ！」\
 
 \x00\x00\x00  
-VAR01 $) SET01  \x08\x03\x00 OPER  6\x03\x00 
+VAR_2B $) SET01  \x08\x03\x00 
+ 6\x03\x00 
 S_STR SCE022_020\x00 \xfa*\x00 S_END 
-VAR01 TXT1 L2 SEQ06 \x03\x80\x00\x00
+VAR_2B TXT1 L2 SEQ06 \x03\x80\x00\x00
  
 凍り付いたようだった早桃の表情が、ぐしゃっと崩れた。@
 ぽろぽろと大粒の涙が頬を伝う。@
@@ -306,9 +325,10 @@ VAR01 TXT1 L2 SEQ06 \x03\x80\x00\x00
 拓司\n　「ほら、さっさと立て！」\
 
 \x00\x00\x00  
-VAR01 >+ SET01  \x08\x03\x00 OPER  6\x03\x00 
+VAR_2B >+ SET01  \x08\x03\x00 
+ 6\x03\x00 
 S_STR SCE022_021\x00 x-\x00 S_END 
-VAR01 TXT1 P2 SEQ06 \x03\xa8\x00\x00
+VAR_2B TXT1 P2 SEQ06 \x03\xa8\x00\x00
  
 ビクッと身体をすくませて、弾かれたように早桃が立ち上がる。@
 平野はその足下にしゃがみ込み、ゆっくりと、なめるようにブル\nマを引き下ろしていった。@
@@ -323,9 +343,10 @@ VAR01 TXT1 P2 SEQ06 \x03\xa8\x00\x00
 　　誰の前でもでもこんなにぬるぬるにしちゃうんだ？」\
 
 \x00  
-VAR01 \xbc- SET01  \x08\x03\x00 OPER  6\x03\x00 
+VAR_2B \xbc- SET01  \x08\x03\x00 
+ 6\x03\x00 
 S_STR SCE022_022\x00 \x960\x00 S_END 
-VAR01 TXT1 T2 SEQ06 \x03^\x00\x00
+VAR_2B TXT1 T2 SEQ06 \x03^\x00\x00
  
 早桃\n　「ううっ……ひっくっ……」@
 \n平野は便座にどっかりと腰をおろした。@
@@ -337,9 +358,10 @@ VAR01 TXT1 T2 SEQ06 \x03^\x00\x00
 拓司\n　「入れろ」\
 
 \x00\x00\x00  
-VAR01 \xda0 SET01  \x08\x03\x00 OPER  6\x03\x00 
+VAR_2B \xda0 SET01  \x08\x03\x00 
+ 6\x03\x00 
 S_STR SCE022_023\x00 \x8c2\x00 S_END 
-VAR01 TXT1 X2 SEQ06 \x03\x8d\x00\x00
+VAR_2B TXT1 X2 SEQ06 \x03\x8d\x00\x00
  
 早桃の肩がガックリと落ちた。@
 最後まで残っていたひとかけらの何かが、完全に砕け散った瞬間\nだった。@
@@ -351,10 +373,12 @@ VAR01 TXT1 X2 SEQ06 \x03\x8d\x00\x00
 平野は自分でペ○スを握って、先端を早桃のアナルに押し当て、\nそして……\
 
 \x00  
-VAR01 \xd02 SET01  \x08\x03\x00 OPER  6\x03\x00 C_END  
-VAR01 N\x00 SET01  \xae\x03\x00 OPER  \xd8\x03\x00 
+VAR_2B \xd02 SET01  \x08\x03\x00 
+ 6\x03\x00 C_END  
+VAR_2B N\x00 SET01  \xae\x03\x00 
+ \xd8\x03\x00 
 S_STR SCE022_024\x00 r5\x00 S_END 
-VAR01 TXT1 \\2 SEQ06 \x03g\x00\x00
+VAR_2B TXT1 \\2 SEQ06 \x03g\x00\x00
  
 早桃\n　「ひっ、あうううっ！」@
 平野\n　「き、きつい……千切れそうだあ……お、おおっ！　」@
@@ -365,9 +389,10 @@ VAR01 TXT1 \\2 SEQ06 \x03g\x00\x00
 　　おふっ！」\
 
 \x00  
-VAR01 \xb65 SET01  \x08\x03\x00 OPER  6\x03\x00 
+VAR_2B \xb65 SET01  \x08\x03\x00 
+ 6\x03\x00 
 S_STR SCE022_025\x00 \x8c7\x00 S_END 
-VAR01 TXT1 `2 SEQ06 \x03\xa3\x00\x00
+VAR_2B TXT1 `2 SEQ06 \x03\xa3\x00\x00
  
 平野\n　「すごいよ、早桃ぉ……\pさ、最高だよぉ。@
 　　こ、こんなに細い身体で……\p体操着着て……\pお人形さん\n　　みたいな早桃が、あ、アナルから直腸にチ○ポぶち込まれて、\n　　トイレでよがり狂ってるなんて……\pゆ、夢みたいだあ……@
@@ -381,9 +406,10 @@ VAR01 TXT1 `2 SEQ06 \x03\xa3\x00\x00
 　　便所女の早桃は、内臓まで全部おにいちゃんのものだからね\n　　っ！」\
 
 \x00\x00\x00  
-VAR01 \xd07 SET01  \x08\x03\x00 OPER  6\x03\x00 
+VAR_2B \xd07 SET01  \x08\x03\x00 
+ 6\x03\x00 
 S_STR SCE022_026\x00 \x96:\x00 S_END 
-VAR01 TXT1 d2 SEQ06 \x03d\x00\x00
+VAR_2B TXT1 d2 SEQ06 \x03d\x00\x00
  
 早桃\n　「ああっ……あおっ……おあっ！」@
 平野\n　「好きだよ早桃！@
@@ -393,9 +419,10 @@ VAR01 TXT1 d2 SEQ06 \x03d\x00\x00
 そしてハダシのままの右脚を伸ばして、むき出しに晒されている\n早桃の性器に親指の先を突っ込んだ。\
 
 \x00  
-VAR01 \xda: SET01  \x08\x03\x00 OPER  6\x03\x00 
+VAR_2B \xda: SET01  \x08\x03\x00 
+ 6\x03\x00 
 S_STR SCE022_027\x00 \xa4<\x00 S_END 
-VAR01 TXT1 h2 SEQ06 \x03o\x00\x00
+VAR_2B TXT1 h2 SEQ06 \x03o\x00\x00
  
 早桃\n　「お……おにい……がはっ……おにいちゃ……えふっ！」@
 拓司\n　「うれしいだろ？@
@@ -407,9 +434,10 @@ VAR01 TXT1 h2 SEQ06 \x03o\x00\x00
 　　早桃のやつ、うれしくて白目剥いて笑ってるぜ？」\
 
 \x00  
-VAR01 \xe8< SET01  \x08\x03\x00 OPER  6\x03\x00 
+VAR_2B \xe8< SET01  \x08\x03\x00 
+ 6\x03\x00 
 S_STR SCE022_028\x00 \xde>\x00 S_END 
-VAR01 TXT1 l2 SEQ06 \x03l\x00\x00
+VAR_2B TXT1 l2 SEQ06 \x03l\x00\x00
  
 平野\n　「と、虎菱くんっ！\p僕もう限界だよ！　@
 　　い、いいんだろ？\p約束どおりにしちゃっていいんだろ？」@
@@ -421,9 +449,10 @@ VAR01 TXT1 l2 SEQ06 \x03l\x00\x00
 　　なんなのおにいちゃん？！」\
 
 \x00  
-VAR01 "? SET01  \x08\x03\x00 OPER  6\x03\x00 
+VAR_2B "? SET01  \x08\x03\x00 
+ 6\x03\x00 
 S_STR SCE022_029\x00 \x0cA\x00 S_END 
-VAR01 TXT1 p2 SEQ06 \x03\x9b\x00\x00
+VAR_2B TXT1 p2 SEQ06 \x03\x9b\x00\x00
  
 拓司\n　「そいつがどうしても膣内射精したいっていうからさ。@
 　　出すときだけは前に入れてもいいぞって、約束したんだよ」@
@@ -439,9 +468,10 @@ VAR01 TXT1 p2 SEQ06 \x03\x9b\x00\x00
 その一瞬の隙をついて、遂に平野のペ○スが早桃を貫いた。\
 
 \x00\x00\x00  
-VAR01 PA SET01  \x08\x03\x00 OPER  6\x03\x00 
+VAR_2B PA SET01  \x08\x03\x00 
+ 6\x03\x00 
 S_STR SCE022_030\x00 \xf6C\x00 S_END 
-VAR01 TXT1 t2 SEQ06 \x03d\x00\x00
+VAR_2B TXT1 t2 SEQ06 \x03d\x00\x00
  
 平野\n　「ああっ……入ったよ！@
 　　わかるかい、早桃ぉ！@
@@ -455,9 +485,10 @@ VAR01 TXT1 t2 SEQ06 \x03d\x00\x00
 　　おにいちゃ……ん」\
 
 \x00  
-VAR01 :D SET01  \x08\x03\x00 OPER  6\x03\x00 
+VAR_2B :D SET01  \x08\x03\x00 
+ 6\x03\x00 
 S_STR SCE022_031\x00 \x04F\x00 S_END 
-VAR01 TXT1 x2 SEQ06 \x03\xb2\x00\x00
+VAR_2B TXT1 x2 SEQ06 \x03\xb2\x00\x00
  
 平野\n　「あ、愛してるからなんだよ！@
 　　愛してるから直腸じゃなくて子宮に出したいんだよ！@
@@ -475,9 +506,10 @@ VAR01 TXT1 x2 SEQ06 \x03\xb2\x00\x00
 　　いえッ！」\
 
 \x00\x00\x00  
-VAR01 HF SET01  \x08\x03\x00 OPER  6\x03\x00 
+VAR_2B HF SET01  \x08\x03\x00 
+ 6\x03\x00 
 S_STR SCE022_032\x00 JI\x00 S_END 
-VAR01 TXT1 |2 SEQ06 \x03S\x00\x00
+VAR_2B TXT1 |2 SEQ06 \x03S\x00\x00
  
 早桃\n　「お……おにいちゃん、い、イク……」@
 平野\n　「おにいちゃんもイクよ、早桃ぉ！@
@@ -487,9 +519,10 @@ VAR01 TXT1 |2 SEQ06 \x03S\x00\x00
 　　おっぱいも膨らみきってないつるぺた少女に僕の精液が……@
 　　子宮まで全部ぼ、僕の物だぁ……あ、あ、あ、ああっ！」\w\n\n\z
 \x00\x00\x00  
-VAR01 \x8eI SET01  \x08\x03\x00 OPER  6\x03\x00 
+VAR_2B \x8eI SET01  \x08\x03\x00 
+ 6\x03\x00 
 S_STR SCE022_033\x00 \x14K\x00 S_END 
-VAR01 TXT1 \x802 SEQ06 \x03R\x00\x00
+VAR_2B TXT1 \x802 SEQ06 \x03R\x00\x00
  
 /*▲SE01　再生（再生終了を待たず先へ進む）*/\a2,2,1,1,　ザザザ……ザザッ……ザアザザザ……ザアアアアア……\nザアザアアアアアアア……\n\n耳の奥で、『灰色』が響き始めた。@
 ああ、うるさい。@
@@ -498,10 +531,13 @@ VAR01 TXT1 \x802 SEQ06 \x03R\x00\x00
 \n　ザザザ……ザザッ……ザアザザザ……ザアアアアア……\nザアザアアアアアアア……\
 
 \x00\x00\x00  
-VAR01 XK SET01  \x08\x03\x00 OPER  6\x03\x00 C_END  
-VAR01 OPER \x0c
+VAR_2B XK SET01  \x08\x03\x00 
+ 6\x03\x00 C_END  
+VAR_2B 
+\x0c
 SEQ05  \x06\x00\x00 
 CMD01 SeStop COMMAND_TO_BYTECODE1 \x00M\x00 
-CHOICE_FLAG  \x08\x03\x00 OPER 
+ADDRES_4B  \x08\x03\x00 
+
 CMD03 TextClose COMMAND_TO_BYTECODE2 (M\x00 
 F_END

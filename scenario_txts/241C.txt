@@ -1,9 +1,9 @@
 F_SRT
 \xf7+\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00f$\x00  
-VAR01  and \x00 SET01 FILE1 .\\Data\\Script\\Bg.Fob COMMAND_TO_BYTECODE3  \x00\x00 
+VAR_2B  and \x00 SET01 FILE1 .\\Data\\Script\\Bg.Fob COMMAND_TO_BYTECODE3  \x00\x00 
 CMD02 BgAutoFadeIn COMMAND_TO_BYTECODE3 J\x00\x00 
 S_STR SCE241_001\x00 n\x00\x00 S_END 
-VAR01 TXT1 0\x88\x01\x0c\x00\x00\x00\x00"\x03T\x00\x00
+VAR_2B TXT1 0\x88\x01\x0c\x00\x00\x00\x00"\x03T\x00\x00
  
 カンナが立ち上がった。@
 拓司はカンナの目の奥を見て、ちいさく頷いた。@
@@ -14,19 +14,20 @@ VAR01 TXT1 0\x88\x01\x0c\x00\x00\x00\x00"\x03T\x00\x00
 \n紅葉\n　「どっちでもいい……でもいまは……動きたく……ない」@
 \n紅葉がうつむく。\w\z
 \x00\x00\x00  
-VAR01 \xb2\x00 SET01 FILE2 .\\Data\\Script\\TextFunc.Fob COMMAND_TO_BYTECODE1 "\x02\x00 
+VAR_2B \xb2\x00 SET01 FILE2 .\\Data\\Script\\TextFunc.Fob COMMAND_TO_BYTECODE1 "\x02\x00 
 CMD01 TextOn COMMAND_TO_BYTECODE1 P\x02\x00 
 S_STR SCE241_002\x00 l\x02\x00 S_END 
-VAR01 TXT1 4\x88\x01\x0c\x00\x00\x00\x00"\x03=\x00\x00
+VAR_2B TXT1 4\x88\x01\x0c\x00\x00\x00\x00"\x03=\x00\x00
  
 錦城\n　「はっ。あなた正気？　出ていくがいいわ勝手に出ていって、\n　　死んでしまうがいいわ！　この人殺し！　人殺しッ！」@
 \n錦城は最後まで強気を装っていた。@
 \n拓司\n　「わかった。それじゃ、カンナ」@
 カンナ\n　「ええ……虎菱くん」\w\z
 \x00  
-VAR01 \xb0\x02 SET01  "\x02\x00 OPER  P\x02\x00 
+VAR_2B \xb0\x02 SET01  "\x02\x00 
+ P\x02\x00 
 S_STR SCE241_003\x00 \xde\x03\x00 S_END 
-VAR01 TXT1 8\x88\x01\x0c\x00\x00\x00\x00"\x03M\x00\x00
+VAR_2B TXT1 8\x88\x01\x0c\x00\x00\x00\x00"\x03M\x00\x00
  
 拓司は手を伸ばした。@
 ジンジンと痛む腕をもちあげて、カンナに差し出した。@
@@ -37,9 +38,10 @@ VAR01 TXT1 8\x88\x01\x0c\x00\x00\x00\x00"\x03M\x00\x00
 拓司\n　「いいんだ」@
 \n拓司はカンナを制した。\w\z
 \x00  
-VAR01 "\x04 SET01  "\x02\x00 OPER  P\x02\x00 
+VAR_2B "\x04 SET01  "\x02\x00 
+ P\x02\x00 
 S_STR SCE241_004\x00 \x90\x05\x00 S_END 
-VAR01 TXT1 <\x88\x01\x0c\x00\x00\x00\x00"\x03\x8e\x00\x00
+VAR_2B TXT1 <\x88\x01\x0c\x00\x00\x00\x00"\x03\x8e\x00\x00
  
 拓司\n　「もう、そんなことは関係ないんだ。設定なんかどうでもいい。\n　　\p俺はお前が好きだ。同じ傷を負っているとか、背のたかさが\n　　どうだとか、顔立ちがどうだとか、性格がどうだとか、口調\n　　がどうだとか……そんなことを抜きにして、お前という人間\n　　が好きなんだ。だから、いいんだ」@
 カンナ\n　「……」@
@@ -50,22 +52,26 @@ VAR01 TXT1 <\x88\x01\x0c\x00\x00\x00\x00"\x03\x8e\x00\x00
 カンナが握り返すのを確認してから、拓司は歩み始めた。@
 ドアを開き、外の世界へと。\w\z
 \x00\x00\x00  
-VAR01 \xd4\x05 SET01  "\x02\x00 OPER  P\x02\x00 
+VAR_2B \xd4\x05 SET01  "\x02\x00 
+ P\x02\x00 
 S_STR SCE241_005\x00 F\x08\x00 S_END 
-VAR01 TXT1 @\x88\x01\x0c\x00\x00\x00\x00"  
-VAR01 \x00\x00\x00 SET01   \x04\x00\x00\r\x00\x00 \x17\x00 SET01   \x08\x00\x00\r\x00\x00 \x00\x00\x00 SET01 FILE1 .\\Data\\Script\\Bgm.Fob COMMAND_TO_BYTECODE2 \xd8\x08\x00 OPER 
+VAR_2B TXT1 @\x88\x01\x0c\x00\x00\x00\x00"  
+VAR_2B \x00\x00\x00 SET01   \x04\x00\x00\r\x00\x00 \x17\x00 SET01   \x08\x00\x00\r\x00\x00 \x00\x00\x00 SET01 FILE1 .\\Data\\Script\\Bgm.Fob COMMAND_TO_BYTECODE2 \xd8\x08\x00 
+
 CMD03 SePlayEx COMMAND_TO_BYTECODE3 \x02\t\x00 C_END  
-VAR01 \xc8\x00 SET01   \x00\x00 OPER  J\x00\x00 
-CHOICE_FLAG \x03)\x00\x00
+VAR_2B \xc8\x00 SET01   \x00\x00 
+ J\x00\x00 
+ADDRES_4B \x03)\x00\x00
  
 拓司\n　「これは……」@
 \n思わず絶句した。@
 すでに拓司の知っている学校ではなかった。@
 というよりもそこは、拓司の知っているどの場所とも異なってい\nた。\w\z
 \x00  
-VAR01 V\t SET01  "\x02\x00 OPER  P\x02\x00 
+VAR_2B V\t SET01  "\x02\x00 
+ P\x02\x00 
 S_STR SCE241_006\x00 4\n\x00 S_END 
-VAR01 TXT1 D\x88\x01\x0c\x00\x00\x00\x00"\x03\x94\x00\x00
+VAR_2B TXT1 D\x88\x01\x0c\x00\x00\x00\x00"\x03\x94\x00\x00
  
 眼前に広がっているのは、究極の荒廃だった。@
 天井にびっしりと張り巡らされたクモの巣にも似て、壁には無数\nのひびが入っている。@
@@ -76,9 +82,10 @@ VAR01 TXT1 D\x88\x01\x0c\x00\x00\x00\x00"\x03\x94\x00\x00
 まるで、何十年も放棄されていた場所のようだ。@
 あの工業団地の廃墟にさらなる歳月の洗礼を加えて、行き着く果\nてまで荒廃を深化させた－－そんな感じがする。\w\z
 \x00\x00\x00  
-VAR01 x\n SET01  "\x02\x00 OPER  P\x02\x00 
+VAR_2B x\n SET01  "\x02\x00 
+ P\x02\x00 
 S_STR SCE241_007\x00 \x02\r\x00 S_END 
-VAR01 TXT1 H\x88\x01\x0c\x00\x00\x00\x00"\x03`\x00\x00
+VAR_2B TXT1 H\x88\x01\x0c\x00\x00\x00\x00"\x03`\x00\x00
  
 腐敗した死体が転がっているのを予想していたが、そのようなも\nのはどこにもない。@
 骨や服のかけらすら見つけることができない。@
@@ -86,9 +93,10 @@ VAR01 TXT1 H\x88\x01\x0c\x00\x00\x00\x00"\x03`\x00\x00
 また、しなびた皮膚のような、毛髪の一部のような、正体不明の\nものがべったりと張り付いている壁もある。@
 もしかしたら、それこそが学生たちのなれの果てなのかもしれな\nい……。\w\z
 \x00  
-VAR01 F\r SET01  "\x02\x00 OPER  P\x02\x00 
+VAR_2B F\r SET01  "\x02\x00 
+ P\x02\x00 
 S_STR SCE241_008\x00 \x00\x0f\x00 S_END 
-VAR01 TXT1 L\x88\x01\x0c\x00\x00\x00\x00"\x03\x82\x00\x00
+VAR_2B TXT1 L\x88\x01\x0c\x00\x00\x00\x00"\x03\x82\x00\x00
  
 カンナ\n　「どうしたの、これ……？　まるで……まるで……」@
 拓司\n　「何十年も経っているみたいだ。\pあの部屋にいるあいだに、い\n　　ったい何があったんだ……？」@
@@ -96,9 +104,10 @@ VAR01 TXT1 L\x88\x01\x0c\x00\x00\x00\x00"\x03\x82\x00\x00
 拓司はその手の上に自分の手を重ねて、力強く頷いた。@
 \n拓司\n　「考えるのはやめよう。\p俺たちは最初から、起こっていること\n　　の意味を考え続けてきた。\p説明できない状況に筋を一本通そ\n　　うと……あがいてきた。\pでも、そんなの無駄なんだ。\p意味がわ\n　　からないんじゃない。\p意味なんてないんだ」\w\z
 \x00\x00\x00  
-VAR01 D\x0f SET01  "\x02\x00 OPER  P\x02\x00 
+VAR_2B D\x0f SET01  "\x02\x00 
+ P\x02\x00 
 S_STR SCE241_009\x00 \x86\x11\x00 S_END 
-VAR01 TXT1 P\x88\x01\x0c\x00\x00\x00\x00"\x03\xa0\x00\x00
+VAR_2B TXT1 P\x88\x01\x0c\x00\x00\x00\x00"\x03\xa0\x00\x00
  
 　２人の足音は、校舎の中に大きく響き渡った。@
 不自然な響き方だった。@
@@ -111,9 +120,10 @@ VAR01 TXT1 P\x88\x01\x0c\x00\x00\x00\x00"\x03\xa0\x00\x00
 まっすぐ歩いているつもりなのに、壁に体当たりしているときも\nある。@
 それでも２人は歩き続けた。\w\z
 \x00  
-VAR01 \xca\x11 SET01  "\x02\x00 OPER  P\x02\x00 
+VAR_2B \xca\x11 SET01  "\x02\x00 
+ P\x02\x00 
 S_STR SCE241_010\x00 \x84\x14\x00 S_END 
-VAR01 TXT1 T\x88\x01\x0c\x00\x00\x00\x00"\x03M\x00\x00
+VAR_2B TXT1 T\x88\x01\x0c\x00\x00\x00\x00"\x03M\x00\x00
  
 　階段を降り、廊下を歩いてゆく。@
 渡り廊下を通って、旧校舎に入る。@
@@ -121,9 +131,10 @@ VAR01 TXT1 T\x88\x01\x0c\x00\x00\x00\x00"\x03M\x00\x00
 しかし、拓司は身体の隅々に残ったエネルギーを総動員して、そ\nのまえに立った。@
 \n拓司\n　「……ここだ」\w\z
 \x00\x00\x00  
-VAR01 \xc8\x14 SET01  "\x02\x00 OPER  P\x02\x00 
+VAR_2B \xc8\x14 SET01  "\x02\x00 
+ P\x02\x00 
 S_STR SCE241_011\x00 6\x16\x00 S_END 
-VAR01 TXT1 X\x88\x01\x0c\x00\x00\x00\x00"\x03=\x00\x00
+VAR_2B TXT1 X\x88\x01\x0c\x00\x00\x00\x00"\x03=\x00\x00
  
 　壁だ。@
 旧保健室の扉を塗り固めたという壁。@
@@ -132,10 +143,12 @@ VAR01 TXT1 X\x88\x01\x0c\x00\x00\x00\x00"\x03=\x00\x00
 この壁の奥には何が隠されているのだろうか？@
 いや、そもそもそこには何かがあるのだろうか？\w\z
 \x00\x00\x00  
-VAR01 z\x16 SET01  "\x02\x00 OPER  P\x02\x00 C_END  
-VAR01 3\x00 SET01   \x00\x00 OPER  J\x00\x00 
+VAR_2B z\x16 SET01  "\x02\x00 
+ P\x02\x00 C_END  
+VAR_2B 3\x00 SET01   \x00\x00 
+ J\x00\x00 
 S_STR SCE241_012\x00 \xdc\x17\x00 S_END 
-VAR01 TXT1 \\\x88\x01\x0c\x00\x00\x00\x00"\x03M\x00\x00
+VAR_2B TXT1 \\\x88\x01\x0c\x00\x00\x00\x00"\x03M\x00\x00
  
 　拓司は考えなかった。@
 /*▲SE15　再生（再生終了を待たず先へ進む）*/\a2,0,15,0,手にした椅子の脚を、がつがつと壁に叩き付けてゆく。@
@@ -144,9 +157,10 @@ VAR01 TXT1 \\\x88\x01\x0c\x00\x00\x00\x00"\x03M\x00\x00
 拓司\n　「ああ！　一緒に……」@
 カンナ\n　「ええ！」\w\z
   
-VAR01  \x18 SET01  "\x02\x00 OPER  P\x02\x00 
+VAR_2B  \x18 SET01  "\x02\x00 
+ P\x02\x00 
 S_STR SCE241_013\x00 \x8e\x19\x00 S_END 
-VAR01 TXT1 `\x88\x01\x0c\x00\x00\x00\x00"\x03y\x00\x00
+VAR_2B TXT1 `\x88\x01\x0c\x00\x00\x00\x00"\x03y\x00\x00
  
 /*▲SE15　ループ再生（再生終了を待たず先へ進む）*/\a2,0,15,1,　２人は取り憑かれたように、椅子の脚を壁に叩き付けた。@
 一箇所に狙いを絞って叩きつけてゆく。@
@@ -155,9 +169,10 @@ VAR01 TXT1 `\x88\x01\x0c\x00\x00\x00\x00"\x03y\x00\x00
 跪いて神の赦しと救済を求める罪人。@
 不浄の地と約束の地を隔てる結界の門を必至で叩き続ける放浪者\n……。\w/*▲SE　停止*/\a4,0,0,0,\z
 \x00\x00  
-VAR01 \xd2\x19 SET01  "\x02\x00 OPER  P\x02\x00 
+VAR_2B \xd2\x19 SET01  "\x02\x00 
+ P\x02\x00 
 S_STR SCE241_014\x00 \xf0\x1b\x00 S_END 
-VAR01 TXT1 d\x88\x01\x0c\x00\x00\x00\x00"\x03\x96\x00\x00
+VAR_2B TXT1 d\x88\x01\x0c\x00\x00\x00\x00"\x03\x96\x00\x00
  
 拓司\n　「！」@
 \nあっけない手応えに驚くと、ガタン、と大きめのコンクリート片\nが床に落ちた。@
@@ -173,9 +188,10 @@ VAR01 TXT1 d\x88\x01\x0c\x00\x00\x00\x00"\x03\x96\x00\x00
 これは残された最後の意味のある行為なのだ。@
 そしてそこに救済が用意されていなかった場合、どうすればいい\nのか？\w\z
 \x00  
-VAR01 4\x1c SET01  "\x02\x00 OPER  P\x02\x00 
+VAR_2B 4\x1c SET01  "\x02\x00 
+ P\x02\x00 
 S_STR SCE241_015\x00 \xc6\x1e\x00 S_END 
-VAR01 TXT1 h\x88\x01\x0c\x00\x00\x00\x00"\x03A\x00\x00
+VAR_2B TXT1 h\x88\x01\x0c\x00\x00\x00\x00"\x03A\x00\x00
  
 と、突然カンナの手がピタリと止まった。@
 \nカンナ\n　「！」@
@@ -184,21 +200,24 @@ VAR01 TXT1 h\x88\x01\x0c\x00\x00\x00\x00"\x03A\x00\x00
 \nカンナはすぐに作業に戻ったが、しばらくすると、再び身体を凍\nり付かせた。@
 顔には、はっきりとした恐怖が張り付いている。\w\z
 \x00\x00\x00  
-VAR01 \n\x1f SET01  "\x02\x00 OPER  P\x02\x00 
+VAR_2B \n\x1f SET01  "\x02\x00 
+ P\x02\x00 
 S_STR SCE241_016\x00 H \x00 S_END 
-VAR01 TXT1 l\x88\x01\x0c\x00\x00\x00\x00"\x03#\x00\x00
+VAR_2B TXT1 l\x88\x01\x0c\x00\x00\x00\x00"\x03#\x00\x00
  
 カンナ\n　「やっぱり聞こえる！　なに？　なんなの、この音ッ？！」@
 拓司\n　「……音？」@
 \n拓司は作業を中断して、耳を澄ませた。\w\z
 \x00\x00\x00  
-VAR01 \x8c  SET01  "\x02\x00 OPER  P\x02\x00 
+VAR_2B \x8c  SET01  "\x02\x00 
+ P\x02\x00 
 S_STR SCE241_017\x00 R!\x00 S_END 
-VAR01 TXT1 p\x88\x01\x0c\x00\x00\x00\x00"  
-VAR01 OPER \x0c
+VAR_2B TXT1 p\x88\x01\x0c\x00\x00\x00\x00"  
+VAR_2B 
+\x0c
 SEQ05   \x04\x00\x00\r\x00\x00 \x10\x00 SET01   \x08\x00\x00\r\x00\x00 \x01\x00 SET01  \xd8\x08\x00 
 CMD01 SePlay COMMAND_TO_BYTECODE1 \xf0!\x00 
-CHOICE_FLAG \x03b\x00\x00
+ADDRES_4B \x03b\x00\x00
  
 地の底から、ゴ、ゴ、ゴ、ゴ、ゴ……と低い音が響いてくる。@
 床に散らばったコンクリートの破片が、ビリビリと震えて踊る。@
@@ -210,14 +229,17 @@ CHOICE_FLAG \x03b\x00\x00
 わかっていた。@
 最終波動がやってきたのだ。\w\z
 \x00  
-VAR01 \x0c" SET01  "\x02\x00 OPER  P\x02\x00 
-CHOICE_FLAG \x03\r\x00\x00
+VAR_2B \x0c" SET01  "\x02\x00 
+ P\x02\x00 
+ADDRES_4B \x03\r\x00\x00
 CHOICE
 シェルターに駆け戻る\n穴を広げる\n\l0,2,
 ENDCHOICE
 
 \x00\x00\x00  
-VAR01 \xce# SET01  "\x02\x00 OPER  P\x02\x00 
-CHOICE_FLAG  "\x02\x00 OPER 
+VAR_2B \xce# SET01  "\x02\x00 
+ P\x02\x00 
+ADDRES_4B  "\x02\x00 
+
 CMD03 TextClose COMMAND_TO_BYTECODE2 H$\x00 
 F_END

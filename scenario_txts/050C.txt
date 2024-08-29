@@ -1,10 +1,11 @@
 F_SRT
 \xd3\x15\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\x9e\x12\x00
 CMD03 SCE050_001\x00 \x06\x00\x00 S_END 
-VAR01 TXT1 \xc0] SEQ06   
-VAR01 \x00\x00\x00 SET01   \x04\x00\x00\r\x00\x00 \x19\x00 SET01   \x08\x00\x00\r\x00\x00 \x00\x00\x00 SET01 FILE1 .\\Data\\Script\\Bgm.Fob COMMAND_TO_BYTECODE2 \x98\x00\x00 OPER 
+VAR_2B TXT1 \xc0] SEQ06   
+VAR_2B \x00\x00\x00 SET01   \x04\x00\x00\r\x00\x00 \x19\x00 SET01   \x08\x00\x00\r\x00\x00 \x00\x00\x00 SET01 FILE1 .\\Data\\Script\\Bgm.Fob COMMAND_TO_BYTECODE2 \x98\x00\x00 
+
 CMD03 SePlayEx COMMAND_TO_BYTECODE3 \xc2\x00\x00 
-CHOICE_FLAG \x03\x82\x00\x00
+ADDRES_4B \x03\x82\x00\x00
  
 教室のドアをわずかにスライドさせる。@
 促されて、拓司はおそるおそる隙間から教室をのぞき込むが……\n中では授業が行われているだけだ。@
@@ -14,10 +15,10 @@ CHOICE_FLAG \x03\x82\x00\x00
 　　これはテストには出ないが、重要なことだぞ」\
 
 \x00  
-VAR01 \xe2\x00 SET01 FILE2 .\\Data\\Script\\TextFunc.Fob COMMAND_TO_BYTECODE1 \n\x03\x00 
+VAR_2B \xe2\x00 SET01 FILE2 .\\Data\\Script\\TextFunc.Fob COMMAND_TO_BYTECODE1 \n\x03\x00 
 CMD01 TextOn COMMAND_TO_BYTECODE1 8\x03\x00 
 S_STR SCE050_002\x00 T\x03\x00 S_END 
-VAR01 TXT1 \xc4] SEQ06 \x03o\x00\x00
+VAR_2B TXT1 \xc4] SEQ06 \x03o\x00\x00
  
 　恰幅のいい教員はそこまでいうと、手に持っていたカッターを\n自分の喉に押し当て、スッと横に引いた。\p噴水のように血が吹き\n上がる。/*▲BGM　Track11　再生*/\a2,-1,11,1,@
 \n拓司\n　「！」@
@@ -27,9 +28,10 @@ VAR01 TXT1 \xc4] SEQ06 \x03o\x00\x00
 ためらいのかけらもない、完璧なアクションだった。\
 
 \x00\x00\x00  
-VAR01 \x98\x03 SET01  \n\x03\x00 OPER  8\x03\x00 
+VAR_2B \x98\x03 SET01  \n\x03\x00 
+ 8\x03\x00 
 S_STR SCE050_003\x00 \x8e\x05\x00 S_END 
-VAR01 TXT1 \xc8] SEQ06 \x03\xd9\x00\x00
+VAR_2B TXT1 \xc8] SEQ06 \x03\xd9\x00\x00
  
 \n　いつかＴＶで見た、共産主義国家のマスゲーム。@
 　何千もの腕が同時に上げられ、振られ、下がる。@
@@ -42,9 +44,10 @@ VAR01 TXT1 \xc8] SEQ06 \x03\xd9\x00\x00
 なんの劇的さもなかった。\pただ、どたん、どたん、と、学生た\nちが机に突っ伏してゆく音だけが連続して聞こえて、それは単\n純に「奇妙」としかいえなかった。\p悲しい感じとか、不気味な感\nじとか、異常な感じとか……そんな、もっともらしい感想が入り\n込む余地はどこにもなかった。\pただ奇妙だった。\
 
 \x00\x00\x00  
-VAR01 \xd2\x05 SET01  \n\x03\x00 OPER  8\x03\x00 
+VAR_2B \xd2\x05 SET01  \n\x03\x00 
+ 8\x03\x00 
 S_STR SCE050_004\x00 p\t\x00 S_END 
-VAR01 TXT1 \xcc] SEQ06 \x03\x8f\x00\x00
+VAR_2B TXT1 \xcc] SEQ06 \x03\x8f\x00\x00
  
 　拓司は、ほうけたようにたねを見た。@
 　拓司の視線に気づいたなたねは、しかし平然としていった。@
@@ -53,9 +56,10 @@ VAR01 TXT1 \xcc] SEQ06 \x03\x8f\x00\x00
 \n拓司\n　「……もういいよ、雲居さん」\
 
 \x00  
-VAR01 \xb4\t SET01  \n\x03\x00 OPER  8\x03\x00 
+VAR_2B \xb4\t SET01  \n\x03\x00 
+ 8\x03\x00 
 S_STR SCE050_005\x00 *\x0c\x00 S_END 
-VAR01 TXT1 \xd0] SEQ06 \x03c\x00\x00
+VAR_2B TXT1 \xd0] SEQ06 \x03c\x00\x00
  
 なたね\n　「わかるかなあ？　いまの場合、先生が牽引役になっているわ\n　　けよね。\pハーメルンの笛吹き的な装置として。\p結局、みんな\n　　誰かに命令された方が楽なのよね。\p限定されない完全な自由\n　　というのは、逆説的に－－」@
 拓司\n　「黙れッ！」@
@@ -63,9 +67,10 @@ VAR01 TXT1 \xd0] SEQ06 \x03c\x00\x00
 \nなたね\n　「広まるわよ。とまらないで広まる。\pみんな死ぬ」\
 
 \x00\x00\x00  
-VAR01 n\x0c SET01  \n\x03\x00 OPER  8\x03\x00 
+VAR_2B n\x0c SET01  \n\x03\x00 
+ 8\x03\x00 
 S_STR SCE050_006\x00 4\x0e\x00 S_END 
-VAR01 TXT1 \xd4] SEQ06 \x03d\x00\x00
+VAR_2B TXT1 \xd4] SEQ06 \x03d\x00\x00
  
 　拓司は頭を振った。\pなたねの言葉を頭から振り払う。@
 　いいか。@
@@ -78,9 +83,10 @@ VAR01 TXT1 \xd4] SEQ06 \x03d\x00\x00
 　何をすべきか！\
 
 \x00\x00\x00  
-VAR01 x\x0e SET01  \n\x03\x00 OPER  8\x03\x00 
+VAR_2B x\x0e SET01  \n\x03\x00 
+ 8\x03\x00 
 S_STR SCE050_007\x00 B\x10\x00 S_END 
-VAR01 TXT1 \xd8] SEQ06 \x03c\x00\x00
+VAR_2B TXT1 \xd8] SEQ06 \x03c\x00\x00
  
 \n　早桃。@
 　紅葉。@
@@ -91,9 +97,11 @@ VAR01 TXT1 \xd8] SEQ06 \x03c\x00\x00
 　この３階廊下をまっすぐ行った突き当たりの教室に、早桃はい\n　る。\
 
 \x00  
-VAR01 \x86\x10 SET01  \n\x03\x00 OPER  8\x03\x00 
-CHOICE_FLAG  \x98\x00\x00 
+VAR_2B \x86\x10 SET01  \n\x03\x00 
+ 8\x03\x00 
+ADDRES_4B  \x98\x00\x00 
 CMD01 StopCD COMMAND_TO_BYTECODE1 X\x12\x00 
-CHOICE_FLAG  \n\x03\x00 OPER 
+ADDRES_4B  \n\x03\x00 
+
 CMD03 TextClose COMMAND_TO_BYTECODE2 \x80\x12\x00 
 F_END

@@ -2,7 +2,7 @@ F_SRT
 \xc3\n\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xcc\x08\x00FILE1 .\\Data\\Script\\Bgm.Fob COMMAND_TO_BYTECODE2 \x06\x00\x00 
 CMD01 StopCD COMMAND_TO_BYTECODE1 0\x00\x00 
 S_STR SCE087_001\x00 L\x00\x00 S_END 
-VAR01 TXT1 \x90\x97 SEQ06 \x03\x9e\x00\x00
+VAR_2B TXT1 \x90\x97 SEQ06 \x03\x9e\x00\x00
  
 　実験室のドアを開けた拓司は、思わず声をあげた。@
 　実験室の壁全体が、銀色に輝いていたのである。\pそして、ムッ\n　と息詰まるようなシンナーの匂い……。@
@@ -15,10 +15,10 @@ VAR01 TXT1 \x90\x97 SEQ06 \x03\x9e\x00\x00
 カンナ\n　「ああ、このピカピカね……コレよ」\
 
 \x00\x00\x00  
-VAR01 \x90\x00 SET01 FILE2 .\\Data\\Script\\TextFunc.Fob COMMAND_TO_BYTECODE1 (\x03\x00 
+VAR_2B \x90\x00 SET01 FILE2 .\\Data\\Script\\TextFunc.Fob COMMAND_TO_BYTECODE1 (\x03\x00 
 CMD01 TextOn COMMAND_TO_BYTECODE1 V\x03\x00 
 S_STR SCE087_002\x00 r\x03\x00 S_END 
-VAR01 TXT1 \x94\x97 SEQ06 \x03{\x00\x00
+VAR_2B TXT1 \x94\x97 SEQ06 \x03{\x00\x00
  
 拓司\n　「コレは……アルミホイル？」@
 早桃\n　「そう。\p雲居さんが段ボール３箱分も用意しておいた……徳\n　　用アルミホイル。\pそれをさっきから、月代先輩と２人で壁に\n　　貼り付けてるの」@
@@ -30,9 +30,10 @@ VAR01 TXT1 \x94\x97 SEQ06 \x03{\x00\x00
 拓司\n　「まさか！」\
 
 \x00\x00\x00  
-VAR01 \xb6\x03 SET01  (\x03\x00 OPER  V\x03\x00 
+VAR_2B \xb6\x03 SET01  (\x03\x00 
+ V\x03\x00 
 S_STR SCE087_003\x00 \xdc\x05\x00 S_END 
-VAR01 TXT1 \x98\x97 SEQ06 \x03\x92\x00\x00
+VAR_2B TXT1 \x98\x97 SEQ06 \x03\x92\x00\x00
  
 なたね\n　「気分を害さないで欲しいんだけれど、そう簡単にまさかとか、\n　　言って欲しくないの。\pだってこれは、私が死ぬ思いをしてや\n　　つらの円盤から盗み出してきた機密事項の結晶だから」@
 拓司\n　「……」@
@@ -41,7 +42,9 @@ VAR01 TXT1 \x98\x97 SEQ06 \x03\x92\x00\x00
 なたね\n　「いい？\p　エンケリュスの自殺波動は、アルミホイルで防御す\n　　ることが－－」\
 
 \x00\x00\x00  
-VAR01  \x06 SET01  (\x03\x00 OPER  V\x03\x00 
-CHOICE_FLAG  (\x03\x00 OPER 
+VAR_2B  \x06 SET01  (\x03\x00 
+ V\x03\x00 
+ADDRES_4B  (\x03\x00 
+
 CMD03 TextClose COMMAND_TO_BYTECODE2 \xae\x08\x00 
 F_END

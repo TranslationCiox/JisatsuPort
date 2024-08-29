@@ -1,7 +1,7 @@
 F_SRT
 .\x10\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\x10\r\x00
 CMD03 SCE210_001\x00 \x06\x00\x00 S_END 
-VAR01 TXT1 \xc0W\x01\x0c\x00\x00\x00\x00"\x03B\x00\x00
+VAR_2B TXT1 \xc0W\x01\x0c\x00\x00\x00\x00"\x03B\x00\x00
  
 教授はいった。@
 この世界は物理法則と常識が支配する世界だと。@
@@ -10,10 +10,10 @@ VAR01 TXT1 \xc0W\x01\x0c\x00\x00\x00\x00"\x03B\x00\x00
 おそらくはおれと同じ……この病院の患者なのだ。\
 
 \x00\x00\x00  
-VAR01 J\x00 SET01 FILE2 .\\Data\\Script\\TextFunc.Fob COMMAND_TO_BYTECODE1 r\x01\x00 
+VAR_2B J\x00 SET01 FILE2 .\\Data\\Script\\TextFunc.Fob COMMAND_TO_BYTECODE1 r\x01\x00 
 CMD01 TextOn COMMAND_TO_BYTECODE1 \xa0\x01\x00 
 S_STR SCE210_002\x00 \xbc\x01\x00 S_END 
-VAR01 TXT1 \xc4W\x01\x0c\x00\x00\x00\x00"\x03o\x00\x00
+VAR_2B TXT1 \xc4W\x01\x0c\x00\x00\x00\x00"\x03o\x00\x00
  
 拓司\n　「でたらめだ。\pそんなＳＦみたいな話を信じるわけにはいかな\n　　い。\p物理法則こそが、唯一の定点だ。@
 　　それを失ったら、おれはもうなにも信じられなくなってしま\n　　う。\pだからこそ、『教授が語る世界』を、おれは真実と考え\n　　る」@
@@ -23,9 +23,10 @@ VAR01 TXT1 \xc4W\x01\x0c\x00\x00\x00\x00"\x03o\x00\x00
 拓司は逃げるように目をそらし、ベッドに倒れ込んで毛布を頭か\nらかぶった。\
 
 \x00\x00\x00  
-VAR01 \x00\x02 SET01  r\x01\x00 OPER  \xa0\x01\x00 
+VAR_2B \x00\x02 SET01  r\x01\x00 
+ \xa0\x01\x00 
 S_STR SCE210_003\x00 \xf6\x03\x00 S_END 
-VAR01 TXT1 \xc8W\x01\x0c\x00\x00\x00\x00"\x03G\x00\x00
+VAR_2B TXT1 \xc8W\x01\x0c\x00\x00\x00\x00"\x03G\x00\x00
  
 拓司\n　「放っておいてくれ。\pおれは教授を信じて、治療を受ける。@
 　　いかれた頭を元通りに戻すんだ！」@
@@ -35,9 +36,10 @@ VAR01 TXT1 \xc8W\x01\x0c\x00\x00\x00\x00"\x03G\x00\x00
 狂っていることを認めなければならない。\
 
 \x00\x00\x00  
-VAR01 :\x04 SET01  r\x01\x00 OPER  \xa0\x01\x00 
+VAR_2B :\x04 SET01  r\x01\x00 
+ \xa0\x01\x00 
 S_STR SCE210_004\x00 \x90\x05\x00 S_END 
-VAR01 TXT1 \xccW\x01\x0c\x00\x00\x00\x00"\x03\xa5\x00\x00
+VAR_2B TXT1 \xccW\x01\x0c\x00\x00\x00\x00"\x03\xa5\x00\x00
  
 /*▲SE01　ループ再生（次の停止まで）*/\a2,1,1,1,\a6,0,0,0,ザザザ……ザザッ……\pザアザザザ……ザアアアアア……@
 ザアザアアアアアアア……@
@@ -51,9 +53,10 @@ VAR01 TXT1 \xccW\x01\x0c\x00\x00\x00\x00"\x03\xa5\x00\x00
 やがてまたこの部屋で目覚めて、教授にすべてを否定され……\
 
 \x00\x00\x00  
-VAR01 \xd4\x05 SET01  r\x01\x00 OPER  \xa0\x01\x00 
+VAR_2B \xd4\x05 SET01  r\x01\x00 
+ \xa0\x01\x00 
 S_STR SCE210_005\x00 \xa2\x08\x00 S_END 
-VAR01 TXT1 \xd0W\x01\x0c\x00\x00\x00\x00"\x03Z\x00\x00
+VAR_2B TXT1 \xd0W\x01\x0c\x00\x00\x00\x00"\x03Z\x00\x00
  
 /*▲SE01　ループ再生（次の停止まで）*/\a2,1,1,1,\a6,0,0,0,ザザザ……ザザッ……\pザアザザザ……ザアアアアア……@
 ザアザアアアアアアア……@
@@ -64,21 +67,25 @@ VAR01 TXT1 \xd0W\x01\x0c\x00\x00\x00\x00"\x03Z\x00\x00
 　－－そして中心こそは、狂っているおれなのだ。\
 
 \x00\x00\x00  
-VAR01 \xe6\x08 SET01  r\x01\x00 OPER  \xa0\x01\x00 
+VAR_2B \xe6\x08 SET01  r\x01\x00 
+ \xa0\x01\x00 
 S_STR SCE210_006\x00 \x88\n\x00 S_END 
-VAR01 TXT1 \xd4W\x01\x0c\x00\x00\x00\x00"\x03F\x00\x00
+VAR_2B TXT1 \xd4W\x01\x0c\x00\x00\x00\x00"\x03F\x00\x00
  
 /*▲SE01　ループ再生（次の停止まで）*/\a2,1,1,1,\a6,0,0,0,ザザザ……ザザッ……\pザアザザザ……ザアアアアア……@
 ザアザアアアアアアア……@
 /*▲SE01　停止*/\a4,1,0,0,\n　拓司はなま暖かいかたまりにゆっくり飲み込まれながら、ただ\n　胎児のように身を丸めて恐怖していた。\
 
 \x00\x00\x00  
-VAR01 \xcc\n SET01  r\x01\x00 OPER  \xa0\x01\x00 C_END  
-VAR01 OPER \x0c
+VAR_2B \xcc\n SET01  r\x01\x00 
+ \xa0\x01\x00 C_END  
+VAR_2B 
+\x0c
 SEQ05 FILE1 .\\Data\\Script\\Bgm.Fob COMMAND_TO_BYTECODE2 8\x0c\x00 
 CMD01 SeStop COMMAND_TO_BYTECODE1 b\x0c\x00 C_END  
-VAR01 \xc8\x00 SET01 FILE1 .\\Data\\Script\\Bg.Fob COMMAND_TO_BYTECODE3 \x98\x0c\x00 
+VAR_2B \xc8\x00 SET01 FILE1 .\\Data\\Script\\Bg.Fob COMMAND_TO_BYTECODE3 \x98\x0c\x00 
 CMD02 BgAutoFadeIn COMMAND_TO_BYTECODE3 \xc2\x0c\x00 
-CHOICE_FLAG  r\x01\x00 OPER 
+ADDRES_4B  r\x01\x00 
+
 CMD03 TextClose COMMAND_TO_BYTECODE2 \xf2\x0c\x00 
 F_END

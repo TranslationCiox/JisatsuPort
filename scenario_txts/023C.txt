@@ -2,7 +2,7 @@ F_SRT
 \xba;\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xf02\x00FILE1 .\\Data\\Script\\Bgm.Fob COMMAND_TO_BYTECODE2 \x06\x00\x00 
 CMD01 StopCD COMMAND_TO_BYTECODE1 0\x00\x00 
 S_STR SCE023_001\x00 L\x00\x00 S_END 
-VAR01 TXT1 \x903 SEQ06 \x03\x87\x00\x00
+VAR_2B TXT1 \x903 SEQ06 \x03\x87\x00\x00
  
 拓司は目を閉じて、妄想の糸でひとつの世界を編み始めた。@
 いつ？\p　－－夏休みの最中。真昼だ。@
@@ -18,14 +18,14 @@ VAR01 TXT1 \x903 SEQ06 \x03\x87\x00\x00
 紅葉はひどく消耗している。\p乱れた髪の毛が頬に貼り付いている。\n\p泣きはらした目がはれぼったい。\p顔は汗と油でてらてらと光ってい\nるが、唇は対照的に乾いている……。\
 
 \x00  
-VAR01 \x90\x00 SET01 FILE2 .\\Data\\Script\\TextFunc.Fob COMMAND_TO_BYTECODE1 \xcc\x02\x00 
+VAR_2B \x90\x00 SET01 FILE2 .\\Data\\Script\\TextFunc.Fob COMMAND_TO_BYTECODE1 \xcc\x02\x00 
 CMD01 TextOn COMMAND_TO_BYTECODE1 \xfa\x02\x00 C_END  
-VAR01 \x05\x01 SET01  \x06\x00\x00 
+VAR_2B \x05\x01 SET01  \x06\x00\x00 
 CMD01 PlayCD COMMAND_TO_BYTECODE1 <\x03\x00 C_END  
-VAR01 O\x00 SET01 FILE1 .\\Data\\Script\\Bg.Fob COMMAND_TO_BYTECODE3 r\x03\x00 
+VAR_2B O\x00 SET01 FILE1 .\\Data\\Script\\Bg.Fob COMMAND_TO_BYTECODE3 r\x03\x00 
 CMD02 BgAutoFadeIn COMMAND_TO_BYTECODE3 \x9c\x03\x00 
 S_STR SCE023_002\x00 \xc0\x03\x00 S_END 
-VAR01 TXT1 \x943 SEQ06 \x03\x9a\x00\x00
+VAR_2B TXT1 \x943 SEQ06 \x03\x9a\x00\x00
  
 紅葉\n　「……たくじ……」@
 \n紅葉が、か細くうめいた。@
@@ -40,9 +40,10 @@ VAR01 TXT1 \x943 SEQ06 \x03\x9a\x00\x00
 すべてをうち砕くために。\
 
 \x00  
-VAR01 \x04\x04 SET01  \xcc\x02\x00 OPER  \xfa\x02\x00 
+VAR_2B \x04\x04 SET01  \xcc\x02\x00 
+ \xfa\x02\x00 
 S_STR SCE023_003\x00 \xa6\x06\x00 S_END 
-VAR01 TXT1 \x983 SEQ06 \x03\xac\x00\x00
+VAR_2B TXT1 \x983 SEQ06 \x03\xac\x00\x00
  
 拓司\n　「よう、天才スプリンター。@
 　　一生歩けなくなった気分はどうだ？」@
@@ -57,9 +58,10 @@ VAR01 TXT1 \x983 SEQ06 \x03\xac\x00\x00
 　　道具としていろいろ使えるからさ……いろいろな」\
 
 \x00\x00\x00  
-VAR01 \xea\x06 SET01  \xcc\x02\x00 OPER  \xfa\x02\x00 
+VAR_2B \xea\x06 SET01  \xcc\x02\x00 
+ \xfa\x02\x00 
 S_STR SCE023_004\x00 \xd4\t\x00 S_END 
-VAR01 TXT1 \x9c3 SEQ06 \x03y\x00\x00
+VAR_2B TXT1 \x9c3 SEQ06 \x03y\x00\x00
  
 紅葉はうつむき、ぶるぶると肩をふるわせた。\pしかし、涙は一向に\nこぼれてこない。@
 すでに２４時間以上この蒸し暑い部屋に閉じこめ続けられ、身体か\nら水分が蒸発しきってしまったのだ。@
@@ -71,9 +73,10 @@ VAR01 TXT1 \x9c3 SEQ06 \x03y\x00\x00
 紅葉\n　「……やだ……ひどいこといわないで……」\
 
 \x00\x00\x00  
-VAR01 \x18\n SET01  \xcc\x02\x00 OPER  \xfa\x02\x00 
+VAR_2B \x18\n SET01  \xcc\x02\x00 
+ \xfa\x02\x00 
 S_STR SCE023_005\x00 6\x0c\x00 S_END 
-VAR01 TXT1 \xa03 SEQ06 \x03\xa1\x00\x00
+VAR_2B TXT1 \xa03 SEQ06 \x03\xa1\x00\x00
  
 拓司\n　「だってくさいものはくさいから仕方ないだろ。\p部活終わってシ\n　　ャワー浴びる前だったんだろ？\p　体中汗でびっしょりだ。@
 　　お前、恥ずかしくないのか？\p　他の女の子がリンスとか香水と\n　　かのにおいをさせてるっていうのに、お前はこんな獣みたいな\n　　においプンプンさせて。\p本当に不潔な女だな」@
@@ -84,9 +87,10 @@ VAR01 TXT1 \xa03 SEQ06 \x03\xa1\x00\x00
 紅葉\n　「もういいでしょ！　私の人生メチャクチャにして……もう満足\n　　でしょ？！」\
 
 \x00  
-VAR01 z\x0c SET01  \xcc\x02\x00 OPER  \xfa\x02\x00 
+VAR_2B z\x0c SET01  \xcc\x02\x00 
+ \xfa\x02\x00 
 S_STR SCE023_006\x00 8\x0f\x00 S_END 
-VAR01 TXT1 \xa43 SEQ06 \x03\x9d\x00\x00
+VAR_2B TXT1 \xa43 SEQ06 \x03\x9d\x00\x00
  
 拓司\n　「いいや。全然満足じゃないね」@
 紅葉\n　「どうして？！　幼なじみなのに……信用してたのに！」@
@@ -95,9 +99,10 @@ VAR01 TXT1 \xa43 SEQ06 \x03\x9d\x00\x00
 拓司は、勝ち誇ったように、紅葉の柔らかい恥丘を踏みにじる。@
 屈辱を与えるためでもあるが、もうひとつ、紅葉の尿意を促す意味\nもある。\pずっと排尿を我慢し続けてきた紅葉はもはや限界なのだ。\n\w\z
 \x00\x00\x00  
-VAR01 |\x0f SET01  \xcc\x02\x00 OPER  \xfa\x02\x00 
+VAR_2B |\x0f SET01  \xcc\x02\x00 
+ \xfa\x02\x00 
 S_STR SCE023_007\x00 *\x12\x00 S_END 
-VAR01 TXT1 \xa83 SEQ06 \x03a\x00\x00
+VAR_2B TXT1 \xa83 SEQ06 \x03a\x00\x00
  
 果たして紅葉は、すぐに苦しそうにいった。@
 \n紅葉\n　「……お願い……トイレに……行かせて」@
@@ -109,9 +114,10 @@ VAR01 TXT1 \xa83 SEQ06 \x03a\x00\x00
 拓司\n　「いやだね。いま、おれの前でしてみせろよ」\
 
 \x00\x00\x00  
-VAR01 n\x12 SET01  \xcc\x02\x00 OPER  \xfa\x02\x00 
+VAR_2B n\x12 SET01  \xcc\x02\x00 
+ \xfa\x02\x00 
 S_STR SCE023_008\x00 ,\x14\x00 S_END 
-VAR01 TXT1 \xac3 SEQ06 \x03n\x00\x00
+VAR_2B TXT1 \xac3 SEQ06 \x03n\x00\x00
  
 紅葉\n　「……変態！　あんた、狂ってるわ！」@
 拓司\n　「なんとでもいえ。\pいっとくが、おれはお前を便所に連れていく\n　　気はないからな。\pいまここでしてみせるか、あとでするか、\n　　どっちかだ。\pそしていまここでしてみせる気があるなら……こ\n　　れをやるよ」@
@@ -120,9 +126,10 @@ VAR01 TXT1 \xac3 SEQ06 \x03n\x00\x00
 \n紅葉\n　「水……頂戴……」\
 
 \x00  
-VAR01 p\x14 SET01  \xcc\x02\x00 OPER  \xfa\x02\x00 
+VAR_2B p\x14 SET01  \xcc\x02\x00 
+ \xfa\x02\x00 
 S_STR SCE023_009\x00 b\x16\x00 S_END 
-VAR01 TXT1 \xb03 SEQ06 \x03k\x00\x00
+VAR_2B TXT1 \xb03 SEQ06 \x03k\x00\x00
  
 拓司\n　「あァ？」@
 紅葉\n　「お水……頂戴」@
@@ -134,9 +141,10 @@ VAR01 TXT1 \xb03 SEQ06 \x03k\x00\x00
 紅葉\n　「……」\
 
 \x00\x00\x00  
-VAR01 \xa6\x16 SET01  \xcc\x02\x00 OPER  \xfa\x02\x00 
+VAR_2B \xa6\x16 SET01  \xcc\x02\x00 
+ \xfa\x02\x00 
 S_STR SCE023_010\x00 \x8c\x18\x00 S_END 
-VAR01 TXT1 \xb43 SEQ06 \x03\x91\x00\x00
+VAR_2B TXT1 \xb43 SEQ06 \x03\x91\x00\x00
  
 拓司\n　「……まあ、おれはどっちでもいいけどな。\pイヤならいい。@
 　　悪いけどちょっと図書館にでも行って涼んでくるわ。@
@@ -150,9 +158,10 @@ VAR01 TXT1 \xb43 SEQ06 \x03\x91\x00\x00
 しかし拓司は許さない。\p顎を掴んで無理矢理顔を上向きにし、冷酷\nに笑う。\
 
 \x00\x00\x00  
-VAR01 \xd0\x18 SET01  \xcc\x02\x00 OPER  \xfa\x02\x00 
+VAR_2B \xd0\x18 SET01  \xcc\x02\x00 
+ \xfa\x02\x00 
 S_STR SCE023_011\x00 N\x1b\x00 S_END 
-VAR01 TXT1 \xb83 SEQ06 \x03\xb9\x00\x00
+VAR_2B TXT1 \xb83 SEQ06 \x03\xb9\x00\x00
  
 拓司\n　「どんな顔をしておもらしするのか、見たいからな」@
 \n観念したのか、紅葉はわずかに腰を浮かせて、ぶるるっと震えた。\n\p薄いブルーのパンティに、じわりと染みが生まれた。\p尿はみるみる\nクロッチに染み渡って、やがてあしぐりからだらだらとあふれ出し\nた。@
@@ -163,9 +172,10 @@ VAR01 TXT1 \xb83 SEQ06 \x03\xb9\x00\x00
 拓司\n　「おいおいおいおーい、まだ出るのか？\p　よっぽどおれに見られ\n　　るのが嬉しいんだな。\p体中から汗のにおいさせて、ションベン\n　　もらして……おまえ異常なんじゃないか？」\
 
 \x00  
-VAR01 \x92\x1b SET01  \xcc\x02\x00 OPER  \xfa\x02\x00 
+VAR_2B \x92\x1b SET01  \xcc\x02\x00 
+ \xfa\x02\x00 
 S_STR SCE023_012\x00 \xb0\x1e\x00 S_END 
-VAR01 TXT1 \xbc3 SEQ06 \x03\x97\x00\x00
+VAR_2B TXT1 \xbc3 SEQ06 \x03\x97\x00\x00
  
 \nいくら嘲笑されても一度あふれ出したものはなかなか止まらない。\n\pじょぼじょぼと、紅葉の意志に反して放出され続ける黄色い汚液…\n…。@
 紅葉の肩ががっくりと落ちたのを合図にようやく放出が完了した。\n\p黄色い液が、フローリングの床に無様な池を作っている。@
@@ -175,9 +185,10 @@ VAR01 TXT1 \xbc3 SEQ06 \x03\x97\x00\x00
 拓司はおもむろにペ○スを引きずり出し、先端を紅葉の身体に定め\nた。\
 
 \x00  
-VAR01 \xf4\x1e SET01  \xcc\x02\x00 OPER  \xfa\x02\x00 
+VAR_2B \xf4\x1e SET01  \xcc\x02\x00 
+ \xfa\x02\x00 
 S_STR SCE023_013\x00 \x8a!\x00 S_END 
-VAR01 TXT1 \xc03 SEQ06 \x03v\x00\x00
+VAR_2B TXT1 \xc03 SEQ06 \x03v\x00\x00
  
 紅葉\n　「なっ……？」@
 拓司\n　「たらふく飲めよ」@
@@ -188,18 +199,20 @@ VAR01 TXT1 \xc03 SEQ06 \x03v\x00\x00
 \n紅葉　「う……ううっ……」\
 
 \x00\x00\x00  
-VAR01 \xce! SET01  \xcc\x02\x00 OPER  \xfa\x02\x00 
+VAR_2B \xce! SET01  \xcc\x02\x00 
+ \xfa\x02\x00 
 S_STR SCE023_014\x00 \xe0#\x00 S_END 
-VAR01 TXT1 \xc43 SEQ06 \x03d\x00\x00
+VAR_2B TXT1 \xc43 SEQ06 \x03d\x00\x00
  
 ついに紅葉の抵抗が止んだ\p拘束されて失禁し、幼なじみの放尿の的\nにされるとういう恥辱が、プライドを完全にうち砕いてしまったの\nだろう。\p紅葉はがっくりと俯いて、震えながら汚液を浴び続けた。\n@
 拓司\n　「少しは抵抗しろよ。つまらないだろ？」@
 \n拓司はペ○スの先端を徐々に上に上げていく。\pそれに従って、ほと\nばしり出る尿は、早桃の体を這うように昇っていき、やがて黒い髪\nの毛に降り注いだ。\
 
 \x00  
-VAR01 $$ SET01  \xcc\x02\x00 OPER  \xfa\x02\x00 
+VAR_2B $$ SET01  \xcc\x02\x00 
+ \xfa\x02\x00 
 S_STR SCE023_015\x00 \xee%\x00 S_END 
-VAR01 TXT1 \xc83 SEQ06 \x03k\x00\x00
+VAR_2B TXT1 \xc83 SEQ06 \x03k\x00\x00
  
 紅葉\n　「やめてよお……髪の毛におしっこなんてかけないでえ……」@
 拓司\n　「髪は女の命か？\p　お前みたいな異臭女がいつまでもそんなこと\n　　いっても仕方ないだろう？\p　ほら、顔あげろよ……あげろ！@
@@ -207,10 +220,12 @@ VAR01 TXT1 \xc83 SEQ06 \x03k\x00\x00
 紅葉\n　「う……うむっ……うぷぷ……」\
 
 \x00\x00\x00  
-VAR01 2& SET01  \xcc\x02\x00 OPER  \xfa\x02\x00 C_END  
-VAR01 P\x00 SET01  r\x03\x00 OPER  \x9c\x03\x00 
+VAR_2B 2& SET01  \xcc\x02\x00 
+ \xfa\x02\x00 C_END  
+VAR_2B P\x00 SET01  r\x03\x00 
+ \x9c\x03\x00 
 S_STR SCE023_016\x00 L(\x00 S_END 
-VAR01 TXT1 \xcc3 SEQ06 \x03\x85\x00\x00
+VAR_2B TXT1 \xcc3 SEQ06 \x03\x85\x00\x00
  
 硬く目を閉じたまま、紅葉が顔を上にする。\p待ってましたとばかり\nに、拓司はその顔面に狙いを定めた。\p見慣れた幼なじみの顔が、あ\nっという間に汚液に蹂躙されていく。\p鼻面で弾ける黄色いしぶき。\n\p頬を、顎を伝って滝のように流れ落ちる黄色い液体。\pゾクゾクと背\n中を快感が駆け上がっていく。@
 \n拓司\n　「口だ！　早く口を開けろ！」@
@@ -218,9 +233,10 @@ VAR01 TXT1 \xcc3 SEQ06 \x03\x85\x00\x00
 拓司\n　「よし……こぼさず飲めよ。\p腹の中までおれのしょんべんを染み\n　　渡らせてやるよ。\p内臓までおしっこまみれの不潔女だ、お前は\n　　！」\
 
 \x00  
-VAR01 \x90( SET01  \xcc\x02\x00 OPER  \xfa\x02\x00 
+VAR_2B \x90( SET01  \xcc\x02\x00 
+ \xfa\x02\x00 
 S_STR SCE023_017\x00 \xde*\x00 S_END 
-VAR01 TXT1 \xd03 SEQ06 \x03\xbc\x00\x00
+VAR_2B TXT1 \xd03 SEQ06 \x03\xbc\x00\x00
  
 叫んで拓司は、紅葉の髪を鷲掴みにした。\p両手で頭を固定して、開\nけっ放しの口の中にペ○スを一気に押し込む。\pペ○スの先端に、紅\n葉の喉の肉が押し当たった。@
 喉の奥で放尿され、呼吸もままならない紅葉。\p必死で頭をふって逃\nれようとするが、拓司はそれを許さない。\pさらに淫猥な言葉を浴び\nせかけ、紅葉の人格を踏みにじっていく。@
@@ -228,9 +244,10 @@ VAR01 TXT1 \xd03 SEQ06 \x03\xbc\x00\x00
 　　それとも毎日同じようなもの食ってるんだから、味も同じなの\n　　かな？\p　ははは、嬉しいだろ？\p　ただ、お前んちの親が心配す\n　　ると気の毒だからな。\p立派に便器として生きていますって、写\n　　真に撮って送ってやるよ」\
 
 \x00  
-VAR01 "+ SET01  \xcc\x02\x00 OPER  \xfa\x02\x00 
+VAR_2B "+ SET01  \xcc\x02\x00 
+ \xfa\x02\x00 
 S_STR SCE023_018\x00 L.\x00 S_END 
-VAR01 TXT1 \xd43 SEQ06 \x03\x9b\x00\x00
+VAR_2B TXT1 \xd43 SEQ06 \x03\x9b\x00\x00
  
 紅葉は白目をむき、痙攣している。\p鼻の穴からも、尿が逆流して吹\nきこぼれている。\pかろうじて喉を上下させて汚液を飲み下している\nから、死んではいないのだろうが、もはや拓司の言葉を理解してい\nるとは思えない。@
 それでも拓司は、狂ったように言葉を放ち続けた。@
@@ -240,9 +257,10 @@ VAR01 TXT1 \xd43 SEQ06 \x03\x9b\x00\x00
 　ザアザアアアアアアア……\
 
 \x00  
-VAR01 \x90. SET01  \xcc\x02\x00 OPER  \xfa\x02\x00 
+VAR_2B \x90. SET01  \xcc\x02\x00 
+ \xfa\x02\x00 
 S_STR SCE023_019\x00 61\x00 S_END 
-VAR01 TXT1 \xd83 SEQ06 \x031\x00\x00
+VAR_2B TXT1 \xd83 SEQ06 \x031\x00\x00
  
 耳の奥で、『灰色』が響き始めた。@
 ああ、うるさい。@
@@ -252,9 +270,13 @@ VAR01 TXT1 \xd83 SEQ06 \x031\x00\x00
 　ザアザアアアアアアア……\
 
 \x00  
-VAR01 z1 SET01  \xcc\x02\x00 OPER  \xfa\x02\x00 
-CHOICE_FLAG  \x06\x00\x00 OPER  0\x00\x00 C_END  
-VAR01 \xc8\x00 SET01  r\x03\x00 OPER  \x9c\x03\x00 
-CHOICE_FLAG  \xcc\x02\x00 OPER 
+VAR_2B z1 SET01  \xcc\x02\x00 
+ \xfa\x02\x00 
+ADDRES_4B  \x06\x00\x00 
+ 0\x00\x00 C_END  
+VAR_2B \xc8\x00 SET01  r\x03\x00 
+ \x9c\x03\x00 
+ADDRES_4B  \xcc\x02\x00 
+
 CMD03 TextClose COMMAND_TO_BYTECODE2 \xd22\x00 
 F_END

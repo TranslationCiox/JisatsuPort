@@ -1,9 +1,9 @@
 F_SRT
 f\x03\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00p\x044\x01\x00\x00\x00\xd6\x02\x00  
-VAR01 \xc9\x00 SET01 FILE1 .\\Data\\Script\\Bg.Fob COMMAND_TO_BYTECODE3  \x00\x00 
+VAR_2B \xc9\x00 SET01 FILE1 .\\Data\\Script\\Bg.Fob COMMAND_TO_BYTECODE3  \x00\x00 
 CMD02 BgAutoFadeIn COMMAND_TO_BYTECODE3 J\x00\x00 
 S_STR SCE203_001\x00 n\x00\x00 S_END 
-VAR01 TXT1 \xd0L\x01\x0c\x00\x00\x00\x00"\x03d\x00\x00
+VAR_2B TXT1 \xd0L\x01\x0c\x00\x00\x00\x00"\x03d\x00\x00
  
 ナタネ\n　「あなたは『創る』ことができる。@
 　　神様が光を創ったように、あなたは鳥を創ることができる。@
@@ -12,8 +12,9 @@ VAR01 TXT1 \xd0L\x01\x0c\x00\x00\x00\x00"\x03d\x00\x00
 　　そういうふうに信じ込ませようとして、そしてそれは成功し\n　　つつある……いいわね？」\
 
 \x00\x00\x00  
-VAR01 \xb2\x00 SET01 FILE2 .\\Data\\Script\\TextFunc.Fob COMMAND_TO_BYTECODE1 b\x02\x00 
+VAR_2B \xb2\x00 SET01 FILE2 .\\Data\\Script\\TextFunc.Fob COMMAND_TO_BYTECODE1 b\x02\x00 
 CMD01 TextOn COMMAND_TO_BYTECODE1 \x90\x02\x00 
-CHOICE_FLAG  b\x02\x00 OPER 
+ADDRES_4B  b\x02\x00 
+
 CMD03 TextClose COMMAND_TO_BYTECODE2 \xb8\x02\x00 
 F_END

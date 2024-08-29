@@ -1,12 +1,12 @@
 F_SRT
 \xa6\x11\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00,\x0e\x00FILE1 .\\Data\\Script\\Bgm.Fob COMMAND_TO_BYTECODE2 \x06\x00\x00 
 CMD01 StopCD COMMAND_TO_BYTECODE1 0\x00\x00 C_END  
-VAR01 =\x00 SET01 FILE1 .\\Data\\Script\\Bg.Fob COMMAND_TO_BYTECODE3 f\x00\x00 
+VAR_2B =\x00 SET01 FILE1 .\\Data\\Script\\Bg.Fob COMMAND_TO_BYTECODE3 f\x00\x00 
 CMD02 BgAutoFadeIn COMMAND_TO_BYTECODE3 \x90\x00\x00 C_END  
-VAR01 \x04\x01 SET01  \x06\x00\x00 
+VAR_2B \x04\x01 SET01  \x06\x00\x00 
 CMD01 PlayCD COMMAND_TO_BYTECODE1 \xda\x00\x00 
 S_STR SCEK05_001\x00 \xf6\x00\x00 S_END 
-VAR01 TXT1 \x80\xa6\x01\x0c\x00\x00\x00\x00"\x03\x96\x00\x00
+VAR_2B TXT1 \x80\xa6\x01\x0c\x00\x00\x00\x00"\x03\x96\x00\x00
  
 　ゆきのそうしたやり方は、とても新鮮で、スマートに映った。@
 自分の道を行くつもりであれば、周囲との軋轢が産まれるのはや\nむなしと思いこんでいた私に、ゆきは、より高度なやりかたがあ\nると教えてくれた。@
@@ -16,10 +16,10 @@ VAR01 TXT1 \x80\xa6\x01\x0c\x00\x00\x00\x00"\x03\x96\x00\x00
 　私はゆきを尊敬した。@
 　私のどこに魅力を見つけたのか、ゆきもまた、私をどこか尊敬\nしてくれているような感じがあって、それはとても心地がよかっ\nた。\w\z
 \x00  
-VAR01 :\x01 SET01 FILE2 .\\Data\\Script\\TextFunc.Fob COMMAND_TO_BYTECODE1 \xb2\x03\x00 
+VAR_2B :\x01 SET01 FILE2 .\\Data\\Script\\TextFunc.Fob COMMAND_TO_BYTECODE1 \xb2\x03\x00 
 CMD01 TextOn COMMAND_TO_BYTECODE1 \xe0\x03\x00 
 S_STR SCEK05_002\x00 \xfc\x03\x00 S_END 
-VAR01 TXT1 \x84\xa6\x01\x0c\x00\x00\x00\x00"\x03~\x00\x00
+VAR_2B TXT1 \x84\xa6\x01\x0c\x00\x00\x00\x00"\x03~\x00\x00
  
 　１ヶ月も経ったころ－－誤解を恐れずにいうけれど－－\n私は若草ゆきに恋していた。@
 私は、自分がゆきに与えられるものはなんなのだろうか、と考え\nるようになっていた。@
@@ -27,9 +27,10 @@ VAR01 TXT1 \x84\xa6\x01\x0c\x00\x00\x00\x00"\x03~\x00\x00
 私は自分自身をまじまじと見つめ、そうして自分があまりに薄っ\nぺらで、ゆきに返すような素敵なものをなにひとつ持っていない\nことに初めて気づいた。@
 若草ゆきに恋することで、私は、唐突に自分というものの輪郭を\nはっきり認識させられたのだった。\w\z
 \x00  
-VAR01 @\x04 SET01  \xb2\x03\x00 OPER  \xe0\x03\x00 
+VAR_2B @\x04 SET01  \xb2\x03\x00 
+ \xe0\x03\x00 
 S_STR SCEK05_003\x00 r\x06\x00 S_END 
-VAR01 TXT1 \x88\xa6\x01\x0c\x00\x00\x00\x00"\x03_\x00\x00
+VAR_2B TXT1 \x88\xa6\x01\x0c\x00\x00\x00\x00"\x03_\x00\x00
  
 　私はこれまで何をやってきたのだろう？@
 足下がガラガラと崩れていくみたいなショックだった。@
@@ -38,9 +39,10 @@ VAR01 TXT1 \x88\xa6\x01\x0c\x00\x00\x00\x00"\x03_\x00\x00
 何者も容易には侵入できない、立派な城壁だった。@
 けれども私が作り上げたのは城壁だけで、そのなかに城と呼べる\nものがなかったと……私は知った。\w\z
 \x00  
-VAR01 \xb6\x06 SET01  \xb2\x03\x00 OPER  \xe0\x03\x00 
+VAR_2B \xb6\x06 SET01  \xb2\x03\x00 
+ \xe0\x03\x00 
 S_STR SCEK05_004\x00 l\x08\x00 S_END 
-VAR01 TXT1 \x8c\xa6\x01\x0c\x00\x00\x00\x00"\x03p\x00\x00
+VAR_2B TXT1 \x8c\xa6\x01\x0c\x00\x00\x00\x00"\x03p\x00\x00
  
 　むさぼるように本を読んで、映画を観て、音楽を聴いた。@
 洋服や髪型に気をつけて、できるだけ素敵な女の子として振る舞\nおうと心がけた。@
@@ -51,9 +53,10 @@ VAR01 TXT1 \x8c\xa6\x01\x0c\x00\x00\x00\x00"\x03p\x00\x00
 私に対する露骨な悪意は、しだいに周囲から影を潜めていった。\nいまの（－－この学校での、ね）@
 私のスタンスは、このころに形作られたのだと思う。\w\z
 \x00  
-VAR01 \xb0\x08 SET01  \xb2\x03\x00 OPER  \xe0\x03\x00 
+VAR_2B \xb0\x08 SET01  \xb2\x03\x00 
+ \xe0\x03\x00 
 S_STR SCEK05_005\x00 \xaa\n\x00 S_END 
-VAR01 TXT1 \x90\xa6\x01\x0c\x00\x00\x00\x00"\x03\x8e\x00\x00
+VAR_2B TXT1 \x90\xa6\x01\x0c\x00\x00\x00\x00"\x03\x8e\x00\x00
  
 　私は、自分たちの関係は、周囲のおままごととは違うと思って\nいた。@
 より高い次元での交流……肉体とは別次元の精神的な繋がりだと。\n\p私たちは他の子たちみたいにのべつくまなくベタベタしたりはし\nなかった。@
@@ -62,14 +65,17 @@ VAR01 TXT1 \x90\xa6\x01\x0c\x00\x00\x00\x00"\x03\x8e\x00\x00
 真に価値あるものが、そこらにありふれているはずはない、と。@
 でも、思いとはうらはらに、私のなかで、徐々に、ゆきに抱きつ\nいて、キスをしたいという願望が膨らんでいった。\w\z
 \x00\x00\x00  
-VAR01 \xee\n SET01  \xb2\x03\x00 OPER  \xe0\x03\x00 
-CHOICE_FLAG \x03\x1a\x00\x00
+VAR_2B \xee\n SET01  \xb2\x03\x00 
+ \xe0\x03\x00 
+ADDRES_4B \x03\x1a\x00\x00
 CHOICE
 私はゆきに、自分の気持ちを正直に伝えた\nそれでも私は、ゆきとプラトニックな関係を続けた\n\l0,2,
 ENDCHOICE
 
 \x00  
-VAR01 `\r SET01  \xb2\x03\x00 OPER  \xe0\x03\x00 
-CHOICE_FLAG  \xb2\x03\x00 OPER 
+VAR_2B `\r SET01  \xb2\x03\x00 
+ \xe0\x03\x00 
+ADDRES_4B  \xb2\x03\x00 
+
 CMD03 TextClose COMMAND_TO_BYTECODE2 \x0e\x0e\x00 
 F_END

@@ -1,11 +1,11 @@
 F_SRT
 \xa6\n\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xbc\x07\x00  
-VAR01 \\\x00 SET01 FILE1 .\\Data\\Script\\Bg.Fob COMMAND_TO_BYTECODE3  \x00\x00 
+VAR_2B \\\x00 SET01 FILE1 .\\Data\\Script\\Bg.Fob COMMAND_TO_BYTECODE3  \x00\x00 
 CMD02 BgAutoFadeIn COMMAND_TO_BYTECODE3 J\x00\x00 C_END  
-VAR01 \x04\x01 SET01 FILE1 .\\Data\\Script\\Bgm.Fob COMMAND_TO_BYTECODE2 \x88\x00\x00 
+VAR_2B \x04\x01 SET01 FILE1 .\\Data\\Script\\Bgm.Fob COMMAND_TO_BYTECODE2 \x88\x00\x00 
 CMD01 PlayCD COMMAND_TO_BYTECODE1 \xb2\x00\x00 
 S_STR SCEK04_A01\x00 \xce\x00\x00 S_END 
-VAR01 TXT1 X\xa6\x01\x0c\x00\x00\x00\x00"\x03\xe0\x00\x00
+VAR_2B TXT1 X\xa6\x01\x0c\x00\x00\x00\x00"\x03\xe0\x00\x00
  
 　あまり本筋に関係がないから詳しくは語らないけれど、\n結局、私はゆきにバージンをあげた（あなたと寝たとき私はもう\nバージンじゃなかったけど、それでもあなたは私と寝た初めての\n男の子だったってわけ）。@
 いまどき処女性に神聖さなんて求めてはいないけれど、それでも\n私は、私たちの関係が新しいステージにスライドしたと感じたも\nのだった。@
@@ -17,13 +17,14 @@ VAR01 TXT1 X\xa6\x01\x0c\x00\x00\x00\x00"\x03\xe0\x00\x00
 まるで史上初めて火を発見した人類みたいな気分だった。@
 どきどきして、誇らしかった。\w\z
 \x00\x00\x00  
-VAR01 \x12\x01 SET01 FILE2 .\\Data\\Script\\TextFunc.Fob COMMAND_TO_BYTECODE1 \xb2\x04\x00 
+VAR_2B \x12\x01 SET01 FILE2 .\\Data\\Script\\TextFunc.Fob COMMAND_TO_BYTECODE1 \xb2\x04\x00 
 CMD01 TextOn COMMAND_TO_BYTECODE1 \xe0\x04\x00 C_END  
-VAR01 \xc8\x00 SET01   \x00\x00 OPER  J\x00\x00 
-CHOICE_FLAG  \x88\x00\x00 
+VAR_2B \xc8\x00 SET01   \x00\x00 
+ J\x00\x00 
+ADDRES_4B  \x88\x00\x00 
 CMD01 StopCD COMMAND_TO_BYTECODE1 <\x05\x00 
 S_STR SCEK04_A02\x00 X\x05\x00 S_END 
-VAR01 TXT1 \\\xa6\x01\x0c\x00\x00\x00\x00"\x03o\x00\x00
+VAR_2B TXT1 \\\xa6\x01\x0c\x00\x00\x00\x00"\x03o\x00\x00
  
 　７月２７日（－－この日付が重要なの）、いつものように抱き\n合っていると、突然ゆきが泣き始めた。@
 絞り出すような悲痛な泣き方だった。@
@@ -34,7 +35,9 @@ VAR01 TXT1 \\\xa6\x01\x0c\x00\x00\x00\x00"\x03o\x00\x00
 そしてようやく、ゆきはいった。@
 今日、自分は自殺を決意していたのだと。\w\z
 \x00  
-VAR01 \x9c\x05 SET01  \xb2\x04\x00 OPER  \xe0\x04\x00 
-CHOICE_FLAG  \xb2\x04\x00 OPER 
+VAR_2B \x9c\x05 SET01  \xb2\x04\x00 
+ \xe0\x04\x00 
+ADDRES_4B  \xb2\x04\x00 
+
 CMD03 TextClose COMMAND_TO_BYTECODE2 \x9e\x07\x00 
 F_END

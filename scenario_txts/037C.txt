@@ -1,9 +1,9 @@
 F_SRT
 \t\x17\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00X\x12\x00  
-VAR01 \x08\x01 SET01 FILE1 .\\Data\\Script\\Bgm.Fob COMMAND_TO_BYTECODE2  \x00\x00 
+VAR_2B \x08\x01 SET01 FILE1 .\\Data\\Script\\Bgm.Fob COMMAND_TO_BYTECODE2  \x00\x00 
 CMD01 PlayCD COMMAND_TO_BYTECODE1 J\x00\x00 
 S_STR SCE037_001\x00 f\x00\x00 S_END 
-VAR01 TXT1 pI SEQ06 \x03\x8f\x00\x00
+VAR_2B TXT1 pI SEQ06 \x03\x8f\x00\x00
  
 　屋上は一般学生の立ち入りが禁じられ、階段と屋上を繋ぐ鉄の\n扉には錠が下ろされている。@
 　拓司が自由に出入りしているのは、合い鍵を持っているから\nだ。@
@@ -17,10 +17,10 @@ VAR01 TXT1 pI SEQ06 \x03\x8f\x00\x00
 　光景。\
 
 \x00\x00\x00  
-VAR01 \xaa\x00 SET01 FILE2 .\\Data\\Script\\TextFunc.Fob COMMAND_TO_BYTECODE1 \x06\x03\x00 
+VAR_2B \xaa\x00 SET01 FILE2 .\\Data\\Script\\TextFunc.Fob COMMAND_TO_BYTECODE1 \x06\x03\x00 
 CMD01 TextOn COMMAND_TO_BYTECODE1 4\x03\x00 
 S_STR SCE037_002\x00 P\x03\x00 S_END 
-VAR01 TXT1 tI SEQ06 \x03W\x00\x00
+VAR_2B TXT1 tI SEQ06 \x03W\x00\x00
  
 　世界の輪郭がぼやけ始めたころ、拓司は何時間も屋上に寝転が\nって空を見上げたものだった。@
 　そこに、現実を現実以下のものにしてしまった欠落が、妄想を\n妄想以上のものにしてしまった過剰が……@
@@ -30,9 +30,10 @@ VAR01 TXT1 tI SEQ06 \x03W\x00\x00
 光景がそこにあった。\
 
 \x00\x00\x00  
-VAR01 \x94\x03 SET01  \x06\x03\x00 OPER  4\x03\x00 
+VAR_2B \x94\x03 SET01  \x06\x03\x00 
+ 4\x03\x00 
 S_STR SCE037_003\x00 *\x05\x00 S_END 
-VAR01 TXT1 xI SEQ06 \x03F\x00\x00
+VAR_2B TXT1 xI SEQ06 \x03F\x00\x00
  
 早桃\n　「わあ、気持ちいい！」@
 拓司\n　「……」@
@@ -44,9 +45,10 @@ VAR01 TXT1 xI SEQ06 \x03F\x00\x00
 早桃\n　「ふふふ！」\
 
 \x00  
-VAR01 n\x05 SET01  \x06\x03\x00 OPER  4\x03\x00 
+VAR_2B n\x05 SET01  \x06\x03\x00 
+ 4\x03\x00 
 S_STR SCE037_004\x00 \xc0\x06\x00 S_END 
-VAR01 TXT1 |I SEQ06 \x03c\x00\x00
+VAR_2B TXT1 |I SEQ06 \x03c\x00\x00
  
 　拓司と早桃は、給水塔の陰に、並んで腰を下ろした。@
 早桃がコッペパンを半分にちぎり、やや大きい方を拓司に「はい」\nと手渡す。@
@@ -57,9 +59,10 @@ VAR01 TXT1 |I SEQ06 \x03c\x00\x00
 拓司\n　「いいからそっちよこせ！」\
 
 \x00\x00\x00  
-VAR01 \x04\x07 SET01  \x06\x03\x00 OPER  4\x03\x00 
+VAR_2B \x04\x07 SET01  \x06\x03\x00 
+ 4\x03\x00 
 S_STR SCE037_005\x00 \xca\x08\x00 S_END 
-VAR01 TXT1 \x80I SEQ06 \x03C\x00\x00
+VAR_2B TXT1 \x80I SEQ06 \x03C\x00\x00
  
 早桃\n　「やだ！　もう！\p　うふふ……」@
 拓司\n　「ははは」@
@@ -70,9 +73,10 @@ VAR01 TXT1 \x80I SEQ06 \x03C\x00\x00
 拓司\n　「……」\
 
 \x00\x00\x00  
-VAR01 \x0e\t SET01  \x06\x03\x00 OPER  4\x03\x00 
+VAR_2B \x0e\t SET01  \x06\x03\x00 
+ 4\x03\x00 
 S_STR SCE037_006\x00 T\n\x00 S_END 
-VAR01 TXT1 \x84I SEQ06 \x03A\x00\x00
+VAR_2B TXT1 \x84I SEQ06 \x03A\x00\x00
  
 早桃\n　「……」@
 拓司\n　「……」@
@@ -82,11 +86,12 @@ VAR01 TXT1 \x84I SEQ06 \x03A\x00\x00
 拓司\n　「はは……うっ！」\
 
 \x00  
-VAR01 \x98\n SET01  \x06\x03\x00 OPER  4\x03\x00 C_END  
-VAR01 \xc8\x00 SET01 FILE1 .\\Data\\Script\\Bg.Fob COMMAND_TO_BYTECODE3 \xf0\x0b\x00 
+VAR_2B \x98\n SET01  \x06\x03\x00 
+ 4\x03\x00 C_END  
+VAR_2B \xc8\x00 SET01 FILE1 .\\Data\\Script\\Bg.Fob COMMAND_TO_BYTECODE3 \xf0\x0b\x00 
 CMD01 BgOn COMMAND_TO_BYTECODE3 \x1a\x0c\x00 
 S_STR SCE037_007\x00 6\x0c\x00 S_END 
-VAR01 TXT1 \x88I SEQ06 \x03I\x00\x00
+VAR_2B TXT1 \x88I SEQ06 \x03I\x00\x00
  
 早桃\n　「えっ、、お、おにいちゃん？！」@
 拓司\n　「うううっ！　\pの、喉が……苦し……」@
@@ -98,9 +103,10 @@ VAR01 TXT1 \x88I SEQ06 \x03I\x00\x00
 早桃\n　「……」\
 
 \x00  
-VAR01 z\x0c SET01  \x06\x03\x00 OPER  4\x03\x00 
+VAR_2B z\x0c SET01  \x06\x03\x00 
+ 4\x03\x00 
 S_STR SCE037_008\x00 \xd8\r\x00 S_END 
-VAR01 TXT1 \x8cI SEQ06 \x03s\x00\x00
+VAR_2B TXT1 \x8cI SEQ06 \x03s\x00\x00
  
 拓司\n　「……」@
 /*■CG13　表示（クロスフェード）*/\a7,-1,-1,0,\a0,12,1,0,\a6,0,0,0,早桃\n　「早桃パンチ！」@
@@ -112,10 +118,12 @@ VAR01 TXT1 \x8cI SEQ06 \x03s\x00\x00
 　遠くから、ぼんやりとサッカーをしている学生たちの声が聞こ\nえた。\
 
   
-VAR01 \x1c\x0e SET01  \x06\x03\x00 OPER  4\x03\x00 C_END  
-VAR01 \xc8\x00 SET01  \xf0\x0b\x00 OPER  \x1a\x0c\x00 
+VAR_2B \x1c\x0e SET01  \x06\x03\x00 
+ 4\x03\x00 C_END  
+VAR_2B \xc8\x00 SET01  \xf0\x0b\x00 
+ \x1a\x0c\x00 
 S_STR SCE037_009\x00 V\x10\x00 S_END 
-VAR01 TXT1 \x90I SEQ06 \x038\x00\x00
+VAR_2B TXT1 \x90I SEQ06 \x038\x00\x00
  
 早桃\n　「おにいちゃん？」@
 拓司\n　「ああ？」@
@@ -126,14 +134,17 @@ VAR01 TXT1 \x90I SEQ06 \x038\x00\x00
 早桃\n　「……どうしてかな？」\
 
 \x00  
-VAR01 \x9a\x10 SET01  \x06\x03\x00 OPER  4\x03\x00 
-CHOICE_FLAG \x03\x10\x00\x00
+VAR_2B \x9a\x10 SET01  \x06\x03\x00 
+ 4\x03\x00 
+ADDRES_4B \x03\x10\x00\x00
 CHOICE
 話題を逸らす\n早桃はどうなんだ、と逆に問い返す\n\l0,2,
 ENDCHOICE
 
 \x00  
-VAR01 \xb4\x11 SET01  \x06\x03\x00 OPER  4\x03\x00 
-CHOICE_FLAG  \x06\x03\x00 OPER 
+VAR_2B \xb4\x11 SET01  \x06\x03\x00 
+ 4\x03\x00 
+ADDRES_4B  \x06\x03\x00 
+
 CMD03 TextClose COMMAND_TO_BYTECODE2 :\x12\x00 
 F_END

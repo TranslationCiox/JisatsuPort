@@ -1,7 +1,7 @@
 F_SRT
 R\x04\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xa4\t3\x01\x00\x00\x00<\x03\x00
 CMD03 SCEG02_101\x00 \x06\x00\x00 S_END 
-VAR01 TXT1 h\xc5\x01\x0c\x00\x00\x00\x00"\x03\x86\x00\x00
+VAR_2B TXT1 h\xc5\x01\x0c\x00\x00\x00\x00"\x03\x86\x00\x00
  
 錦城\n　「エロい子ね……いいわよ。\p許してあげる。@
 　　……どう？　柔らかいでしょう？　つけてないのよ、わかる？\n　　\pあなたに触らせてあげようと思って、下着、つけてこなかっ\n　　たの。\p……昼間からずっとあなたのこと見てたわ。@
@@ -10,10 +10,11 @@ VAR01 TXT1 h\xc5\x01\x0c\x00\x00\x00\x00"\x03\x86\x00\x00
 　　虎菱くんのあそこ、もう爆発しそうだわ。@
 　　よっぽど先生のおっぱい、気に入ったのね？\n　　ほんと……いやらしい子だわ」\w\z
 \x00  
-VAR01 J\x00 SET01 FILE2 .\\Data\\Script\\TextFunc.Fob COMMAND_TO_BYTECODE1 \x82\x02\x00 
+VAR_2B J\x00 SET01 FILE2 .\\Data\\Script\\TextFunc.Fob COMMAND_TO_BYTECODE1 \x82\x02\x00 
 CMD01 TextOn COMMAND_TO_BYTECODE1 \xb0\x02\x00 
-CHOICE_FLAG FILE1 .\\Data\\Script\\Bgm.Fob COMMAND_TO_BYTECODE2 \xcc\x02\x00 
+ADDRES_4B FILE1 .\\Data\\Script\\Bgm.Fob COMMAND_TO_BYTECODE2 \xcc\x02\x00 
 CMD01 StopCD COMMAND_TO_BYTECODE1 \xf6\x02\x00 
-CHOICE_FLAG  \x82\x02\x00 OPER 
+ADDRES_4B  \x82\x02\x00 
+
 CMD03 TextClose COMMAND_TO_BYTECODE2 \x1e\x03\x00 
 F_END

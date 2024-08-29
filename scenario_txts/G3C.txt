@@ -1,22 +1,23 @@
 F_SRT
 v\x06\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xd2\x04\x00  
-VAR01 C\x00 SET01 FILE1 .\\Data\\Script\\Bg.Fob COMMAND_TO_BYTECODE3  \x00\x00 
+VAR_2B C\x00 SET01 FILE1 .\\Data\\Script\\Bg.Fob COMMAND_TO_BYTECODE3  \x00\x00 
 CMD02 BgAutoFadeIn COMMAND_TO_BYTECODE3 J\x00\x00 C_END  
-VAR01 \x08\x01 SET01 FILE1 .\\Data\\Script\\Bgm.Fob COMMAND_TO_BYTECODE2 \x88\x00\x00 
+VAR_2B \x08\x01 SET01 FILE1 .\\Data\\Script\\Bgm.Fob COMMAND_TO_BYTECODE2 \x88\x00\x00 
 CMD01 PlayCD COMMAND_TO_BYTECODE1 \xb2\x00\x00 
 S_STR SCEG03_001\x00 \xce\x00\x00 S_END 
-VAR01 TXT1 p\xc5\x01\x0c\x00\x00\x00\x00"\x03)\x00\x00
+VAR_2B TXT1 p\xc5\x01\x0c\x00\x00\x00\x00"\x03)\x00\x00
  
 錦城\n　「……しっ！　私よ、虎菱くん」@
 拓司\n　「……先生？」@
 \n錦城は微かに笑うと、拓司の横へと体を移動させた。@
 寄り添って寝転がるような形になる。\w\z
 \x00  
-VAR01 \x12\x01 SET01 FILE2 .\\Data\\Script\\TextFunc.Fob COMMAND_TO_BYTECODE1 \xd6\x01\x00 
+VAR_2B \x12\x01 SET01 FILE2 .\\Data\\Script\\TextFunc.Fob COMMAND_TO_BYTECODE1 \xd6\x01\x00 
 CMD01 TextOn COMMAND_TO_BYTECODE1 \x04\x02\x00 C_END  
-VAR01 \xc8\x00 SET01   \x00\x00 OPER  J\x00\x00 
+VAR_2B \xc8\x00 SET01   \x00\x00 
+ J\x00\x00 
 S_STR SCEG03_002\x00 T\x02\x00 S_END 
-VAR01 TXT1 t\xc5\x01\x0c\x00\x00\x00\x00"\x03a\x00\x00
+VAR_2B TXT1 t\xc5\x01\x0c\x00\x00\x00\x00"\x03a\x00\x00
  
 錦城\n　「リーダーとして、今日はどうだった？」@
 拓司\n　「いえ……リーダーといっても形だけですから」@
@@ -26,9 +27,11 @@ VAR01 TXT1 t\xc5\x01\x0c\x00\x00\x00\x00"\x03a\x00\x00
 錦城\n　「ふふ。でも、そういう謙虚な虎菱くんが、私は好きよ。@
 　　……さあ、今日もご褒美をあげる」\w\z
 \x00  
-VAR01 \x98\x02 SET01  \xd6\x01\x00 OPER  \x04\x02\x00 
-CHOICE_FLAG  \xd6\x01\x00 OPER 
+VAR_2B \x98\x02 SET01  \xd6\x01\x00 
+ \x04\x02\x00 
+ADDRES_4B  \xd6\x01\x00 
+
 CMD03 TextClose COMMAND_TO_BYTECODE2 b\x04\x00 
-CHOICE_FLAG \x03\t\x00\x00.\\Data\\Script\\Scenario\\G3subC.Fob COMMAND_TO_BYTECODE2 \x82\x04\x00 
+ADDRES_4B \x03\t\x00\x00.\\Data\\Script\\Scenario\\G3subC.Fob COMMAND_TO_BYTECODE2 \x82\x04\x00 
 CMD01 start COMMAND_TO_BYTECODE2 \xb8\x04\x00 
 F_END

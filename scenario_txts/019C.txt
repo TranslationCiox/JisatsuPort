@@ -1,9 +1,9 @@
 F_SRT
 \xa3\n\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00d\x08\x00  
-VAR01 \x07\x01 SET01 FILE1 .\\Data\\Script\\Bgm.Fob COMMAND_TO_BYTECODE2  \x00\x00 
+VAR_2B \x07\x01 SET01 FILE1 .\\Data\\Script\\Bgm.Fob COMMAND_TO_BYTECODE2  \x00\x00 
 CMD01 PlayCD COMMAND_TO_BYTECODE1 J\x00\x00 
 S_STR SCE019_001\x00 f\x00\x00 S_END 
-VAR01 TXT1 P- SEQ06 \x03R\x00\x00
+VAR_2B TXT1 P- SEQ06 \x03R\x00\x00
  
 紅葉\n　「－－もしも～し？　聞いてますか～、トラビシタクジくん？！\n　　」@
 拓司\n　「……え？」@
@@ -16,10 +16,10 @@ VAR01 TXT1 P- SEQ06 \x03R\x00\x00
 \n　紅葉はナサケナイ、とため息をついた。\
 
 \x00  
-VAR01 \xaa\x00 SET01 FILE2 .\\Data\\Script\\TextFunc.Fob COMMAND_TO_BYTECODE1 \x12\x02\x00 
+VAR_2B \xaa\x00 SET01 FILE2 .\\Data\\Script\\TextFunc.Fob COMMAND_TO_BYTECODE1 \x12\x02\x00 
 CMD01 TextOn COMMAND_TO_BYTECODE1 @\x02\x00 
 S_STR SCE019_002\x00 \\\x02\x00 S_END 
-VAR01 TXT1 T- SEQ06 \x03L\x00\x00
+VAR_2B TXT1 T- SEQ06 \x03L\x00\x00
  
 紅葉\n　「ちゃんとご飯、食べてる？」@
 拓司\n　「まあ、普通に」@
@@ -30,10 +30,12 @@ VAR01 TXT1 T- SEQ06 \x03L\x00\x00
 紅葉\n　「……あ、いや、そのね！　ほら、アンタ今日、お昼ご飯どうす\n　　るのかな、って。\pもし購買のパンとかで済ませるつもりなら－\n　　－」\
 
 \x00  
-VAR01 \xa0\x02 SET01  \x12\x02\x00 OPER  @\x02\x00 C_END  
-VAR01 \x08\x01 SET01   \x00\x00 OPER  J\x00\x00 
+VAR_2B \xa0\x02 SET01  \x12\x02\x00 
+ @\x02\x00 C_END  
+VAR_2B \x08\x01 SET01   \x00\x00 
+ J\x00\x00 
 S_STR SCE019_003\x00 >\x04\x00 S_END 
-VAR01 TXT1 X- SEQ06 \x03A\x00\x00
+VAR_2B TXT1 X- SEQ06 \x03A\x00\x00
  
 ？？？\n　「－－おはよう」@
 \n/*　■CG05　表示　（クロスフェード）　*/\a7,-2,-2,0,\a0,4,2,0,\a6,-2,0,0,その声は、すぐ耳元で聞こえた。@
@@ -41,9 +43,10 @@ VAR01 TXT1 X- SEQ06 \x03A\x00\x00
 拓司はその少女の名前を知っていた。\
 
 \x00\x00  
-VAR01 \x82\x04 SET01  \x12\x02\x00 OPER  @\x02\x00 
+VAR_2B \x82\x04 SET01  \x12\x02\x00 
+ @\x02\x00 
 S_STR SCE019_004\x00 \xc0\x05\x00 S_END 
-VAR01 TXT1 \\- SEQ06 \x03\x7f\x00\x00
+VAR_2B TXT1 \\- SEQ06 \x03\x7f\x00\x00
  
 \n月代カンナ。@
 夜の闇を思わせる黒いストレートの髪。@
@@ -57,7 +60,9 @@ VAR01 TXT1 \\- SEQ06 \x03\x7f\x00\x00
 \n－－どうして月代カンナはおれに声をかけてきたのだろう？\
 
 \x00  
-VAR01 \x04\x06 SET01  \x12\x02\x00 OPER  @\x02\x00 
-CHOICE_FLAG  \x12\x02\x00 OPER 
+VAR_2B \x04\x06 SET01  \x12\x02\x00 
+ @\x02\x00 
+ADDRES_4B  \x12\x02\x00 
+
 CMD03 TextClose COMMAND_TO_BYTECODE2 F\x08\x00 
 F_END

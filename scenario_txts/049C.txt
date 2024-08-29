@@ -1,9 +1,9 @@
 F_SRT
 \x0e\x13\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x000\x10\x00  
-VAR01 \x06\x01 SET01 FILE1 .\\Data\\Script\\Bgm.Fob COMMAND_TO_BYTECODE2  \x00\x00 
+VAR_2B \x06\x01 SET01 FILE1 .\\Data\\Script\\Bgm.Fob COMMAND_TO_BYTECODE2  \x00\x00 
 CMD01 PlayCD COMMAND_TO_BYTECODE1 J\x00\x00 
 S_STR SCE049_001\x00 f\x00\x00 S_END 
-VAR01 TXT1 0\\ SEQ06 \x03\xe6\x00\x00
+VAR_2B TXT1 0\\ SEQ06 \x03\xe6\x00\x00
  
 廊下に飛び出すと、そこには現実の空気があった。@
 空気というより、気配というべきか……静かだが、たしか多くの\n人間の気配が感じられる。\p馴染みある学園の空気……いかにもな\n日常の気配だ。@
@@ -14,10 +14,10 @@ VAR01 TXT1 0\\ SEQ06 \x03\xe6\x00\x00
 柏木の死と、なたねたちの乱交は切り離せない。\pそれをどうごま\nかせばいいのかまだ決めかねているが……人がひとり死んでいる\nのだ。\pさすがに知らん顔というわけにもいくまい。\pそれに、放っ\nておいてもいずれ死体は見つかる。\p事件が膨れ上がって手に負え\nなくなる前に、なんらかの処置を施して、自分となたねに降りか\nかる火の粉を少しでも減らしておいたほうがいいだろう。\
 
 \x00\x00\x00  
-VAR01 \xaa\x00 SET01 FILE2 .\\Data\\Script\\TextFunc.Fob COMMAND_TO_BYTECODE1 b\x04\x00 
+VAR_2B \xaa\x00 SET01 FILE2 .\\Data\\Script\\TextFunc.Fob COMMAND_TO_BYTECODE1 b\x04\x00 
 CMD01 TextOn COMMAND_TO_BYTECODE1 \x90\x04\x00 
 S_STR SCE049_002\x00 \xac\x04\x00 S_END 
-VAR01 TXT1 4\\ SEQ06 \x03q\x00\x00
+VAR_2B TXT1 4\\ SEQ06 \x03q\x00\x00
  
 拓司は無人の廊下を足早に通り抜け、階段をとんとんと駆け下り\nた。@
 \n拓司\n　「……！」@
@@ -30,9 +30,10 @@ VAR01 TXT1 4\\ SEQ06 \x03q\x00\x00
 　あまりに突然のことに、拓司は思わず小さく悲鳴をもらした。\
 
 \x00  
-VAR01 \xf0\x04 SET01  b\x04\x00 OPER  \x90\x04\x00 
+VAR_2B \xf0\x04 SET01  b\x04\x00 
+ \x90\x04\x00 
 S_STR SCE049_003\x00 \xee\x06\x00 S_END 
-VAR01 TXT1 8\\ SEQ06 \x03k\x00\x00
+VAR_2B TXT1 8\\ SEQ06 \x03k\x00\x00
  
 なたね\n　「どうしたの、虎菱くん？」@
 拓司\n　「いま……誰かが……」@
@@ -48,9 +49,10 @@ VAR01 TXT1 8\\ SEQ06 \x03k\x00\x00
 \nなたね\n　「大丈夫、虎菱くん？」\
 
 \x00\x00\x00  
-VAR01 2\x07 SET01  b\x04\x00 OPER  \x90\x04\x00 
+VAR_2B 2\x07 SET01  b\x04\x00 
+ \x90\x04\x00 
 S_STR SCE049_004\x00 \x18\t\x00 S_END 
-VAR01 TXT1 <\\ SEQ06 \x03\xa0\x00\x00
+VAR_2B TXT1 <\\ SEQ06 \x03\xa0\x00\x00
  
 拓司\n　「あ、ああ。なんでもない……」@
 \n　そうとしかいいようがない。\p実際、なにもありはしないのだか\n　ら。@
@@ -61,9 +63,10 @@ VAR01 TXT1 <\\ SEQ06 \x03\xa0\x00\x00
 \n　ちいさくつぶやく。\pぎくりとして見ると、なたねは真剣な表情\n　で、あたりを見回している。\
 
 \x00\x00\x00  
-VAR01 \\\t SET01  b\x04\x00 OPER  \x90\x04\x00 
+VAR_2B \\\t SET01  b\x04\x00 
+ \x90\x04\x00 
 S_STR SCE049_005\x00 \x16\x0c\x00 S_END 
-VAR01 TXT1 @\\ SEQ06 \x03q\x00\x00
+VAR_2B TXT1 @\\ SEQ06 \x03q\x00\x00
  
 なたね\n　「虎菱くんも感じるのね？\p　この学園は……いいえ、この街は\n　　すでに、エンケリュスの自殺波動の勢力下にあるわ」@
 拓司\n　「……」@
@@ -72,9 +75,10 @@ VAR01 TXT1 @\\ SEQ06 \x03q\x00\x00
 　あるいは－－尋ねるのが怖かったのかもしれない。\
 
 \x00\x00\x00  
-VAR01 Z\x0c SET01  b\x04\x00 OPER  \x90\x04\x00 
+VAR_2B Z\x0c SET01  b\x04\x00 
+ \x90\x04\x00 
 S_STR SCE049_006\x00 X\x0e\x00 S_END 
-VAR01 TXT1 D\\ SEQ06 \x03B\x00\x00
+VAR_2B TXT1 D\\ SEQ06 \x03B\x00\x00
  
 　３階まで降りた拓司は、階段の正面の教室へと駆け込んだ。@
 　……いや、駆け込もうとしたところで、背後からガッシと肩を\n　掴まれ、静止させられた。@
@@ -82,9 +86,11 @@ VAR01 TXT1 D\\ SEQ06 \x03B\x00\x00
 \nなたね\n　「駄目。\pこの教室はもう駄目だわ。\p……見て」\
 
 \x00\x00\x00  
-VAR01 \x9c\x0e SET01  b\x04\x00 OPER  \x90\x04\x00 
-CHOICE_FLAG   \x00\x00 
+VAR_2B \x9c\x0e SET01  b\x04\x00 
+ \x90\x04\x00 
+ADDRES_4B   \x00\x00 
 CMD01 StopCD COMMAND_TO_BYTECODE1 \xea\x0f\x00 
-CHOICE_FLAG  b\x04\x00 OPER 
+ADDRES_4B  b\x04\x00 
+
 CMD03 TextClose COMMAND_TO_BYTECODE2 \x12\x10\x00 
 F_END
