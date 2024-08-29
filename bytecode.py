@@ -5,48 +5,68 @@ patterns = [
     {
         "pattern": [b'\x01', b'\x00', b'\x00', b'start', b'\xef', b'i\x01C'],
         # Start the script
-        "action": "START_SCRIPT\n"
+        "action": "STRF\n"
     },
     {
         "pattern": [b'\x02', b'\x00', b'\x00', b'5', b'6', b'\xf1', b'\x00'],
-        # Seems to END the script
-        "action": "\nEND_SCRIPT"
+        # End the script
+        "action": "\nENDF"
     },
     {
         "pattern": [b'\x00', b'\x00', b'\x00', b'\x00', b'\r', b'\x00', b'\x00'],
-        "action": "\nSEQ1"
+        "action": "\nSEQ01"
     },
     {
         "pattern": [b'\x02', b'\x00', b'\x00', b'\x03', b'\x02'],
-        "action": "\nSEQ2"
+        "action": "\nSEQ02 "
     },
     {
         "pattern": [b'\x8c\x01', b'\x00', b'\r', b'\x02'],
-        "action": "\nSEQ3"
+        "action": "\nSEQ03"
     },
     {
         "pattern": [b'\x02', b'\x00', b'\x00', b'"'],
-        "action": "\nSEQ4"
+        "action": "\nSEQ04 "
     },
     {
         "pattern": [b'\x00', b'\x00', b'\x00', b'\x00', b'"'],
-        "action": "\nSEQ5"
+        "action": "\nSEQ05 "
     },
     {
         "pattern": [b'\x02', b'\x00', b'\x00', b'5', b'\x03', b'\x03', b'\x00', b'\x00'],
-        "action": "\nSEQ6 "
+        "action": "\nSEQ06 "
+    },
+    {
+        "pattern": [b'\x02', b'\x00', b'\x00', b'\xef', b'!'],
+        "action": "\nSEQ07 "
+    },
+    {
+        "pattern": [b'\x03', b'\x06', b'\x00', b'\x00'],
+        "action": "\nSEQ08 "
+    },
+    {
+        "pattern": [b'\x02', b'\x00', b'\x00', b'\x03', b'\x03', b'\x00', b'\x00'],
+        "action": "\nFILE2 "
+    },
+    {
+        "pattern": [b'\x02', b'\x00', b'\x00', b'\x03', b'\x04', b'\x00', b'\x00'],
+        "action": "\nFILE1 "
+    },
+    {
+        "pattern": [b'\x02', b'\x00', b'\x00', b'5'],
+        "action": "\nSEQ10 "
     },
     {
         "pattern": [b'\x81\x1f'],
-        "action": " SPC1 "
+        "action": " SPC01 "
     },
     {
         "pattern": [b's\x81\x1f'],
-        "action": " SPC2 "
+        "action": " SPC02 "
     },
     {
         "pattern": [b'sv\x81\x1f'],
-        "action": " SPC2 "
+        "action": " SPC03 "
     },
     # {
     #     "pattern": [b'\r', b'\x00', b'\x00', b'\x1e', b'\x8c\x01', b'\x00', b'\r', b'\x02', b'\x1e'],
