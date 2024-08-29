@@ -1,13 +1,13 @@
 START_SCRIPT
 \xdd\x06\x01`B#\x01\x94\x05  
 FLG1 C\x0c FLG1_SET
-FOBT .\\Data\\Script\\Bg.Fob OPEN   \x02
-CMD2 BgAutoFadeIn OPEN J END  
+CMD6 .\\Data\\Script\\Bg.Fob VAR2   \x02
+CMD4 BgAutoFadeIn VAR2 J END   
 FLG1 \x08\x01\x0c FLG1_SET
-FOBT .\\Data\\Script\\Bgm.Fob CLOSE \x88 \x02
-CMD1 PlayCD RUNF \xb2 END
-CSCE SCEG02_001 \xce SCE_DONE 
-FLG1 \x8c\x01 FLG2 H\xc5\x01 FLG2_SET \x03)
+CMD6 .\\Data\\Script\\Bgm.Fob VAR1 \x88 
+CMD2 PlayCD RUNF \xb2 END 
+SCEC SCEG02_001 \xce SCE_DONE 
+TEXT1 H\xc5\x01 TEXT2 )
  
 錦城\n　「……しっ！　私よ、虎菱くん」@
 拓司\n　「……先生？」@
@@ -15,11 +15,11 @@ FLG1 \x8c\x01 FLG2 H\xc5\x01 FLG2_SET \x03)
 寄り添って寝転がるような形になる。\w\z
   
 FLG1 \x12\x01\x0c FLG1_SET
-WHAT .\\Data\\Script\\TextFunc.Fob RUNF \xd6\x01 \x02
-CMD1 TextOn RUNF \x04\x02 END  
-FLG1 \xc8\x0c FLG1_SET   \x02 J END
-CSCE SCEG02_002 T\x02 SCE_DONE 
-FLG1 \x8c\x01 FLG2 L\xc5\x01 FLG2_SET \x032
+CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \xd6\x01 
+CMD2 TextOn RUNF \x04\x02 END   
+FLG1 \xc8\x0c FLG1_SET   \x02 J END 
+SCEC SCEG02_002 T\x02 SCE_DONE 
+TEXT1 L\xc5\x01 TEXT2 2
  
 錦城\n　「ちょっとお話がしたくて。いいかな？」@
 拓司\n　「……ええ、まあ」@
@@ -28,17 +28,17 @@ FLG1 \x8c\x01 FLG2 L\xc5\x01 FLG2_SET \x032
 錦城\n　「私……恥ずかしいわ」@
 拓司\n　「え？」\w\z
   
-FLG1 \x98\x02\x0c FLG1_SET \xd6\x01 \x02 \x04\x02 END
-CSCE SCEG02_003 \x9a\x03 SCE_DONE 
-FLG1 \x8c\x01 FLG2 P\xc5\x01 FLG2_SET \x03@
+FLG1 \x98\x02\x0c FLG1_SET \xd6\x01 \x02 \x04\x02 END 
+SCEC SCEG02_003 \x9a\x03 SCE_DONE 
+TEXT1 P\xc5\x01 TEXT2 @
  
 錦城\n　「教師という仕事に就きながら、こういう状況では何もできな\n　　い。\p本当は私がみんなを導かなくちゃいけないのに。@
 　　あなたにまかせっきりで。恥ずかしいわ」@
 拓司\n　「……」@
 錦城\n　「私にできることって、なんなんだろうって考えたの」\w\z
   
-FLG1 \xde\x03\x0c FLG1_SET \xd6\x01 \x02 \x04\x02 END \xd6\x01 \x02
-CSCE TextClose CLOSE $\x05 END
-HERO .\\Data\\Script\\Scenario\\G2SubC.Fob CLOSE D\x05 \x02
-CMD1 start CLOSE z\x05 END
+FLG1 \xde\x03\x0c FLG1_SET \xd6\x01 \x02 \x04\x02 END  \xd6\x01 
+CMD3 TextClose VAR1 $\x05 END 
+HERO .\\Data\\Script\\Scenario\\G2SubC.Fob VAR1 D\x05 
+CMD2 start VAR1 z\x05 END 
 END_SCRIPT

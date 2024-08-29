@@ -1,13 +1,13 @@
 START_SCRIPT
 \x1e\x15\x01`B#\x01Z\x11  
 FLG1 \x05\x0c FLG1_SET
-FOBT .\\Data\\Script\\Bg.Fob OPEN   \x02
-CMD2 BgAutoFadeIn OPEN J END  
+CMD6 .\\Data\\Script\\Bg.Fob VAR2   \x02
+CMD4 BgAutoFadeIn VAR2 J END   
 FLG1 \x08\x01\x0c FLG1_SET
-FOBT .\\Data\\Script\\Bgm.Fob CLOSE \x88 \x02
-CMD1 PlayCD RUNF \xb2 END
-CSCE SCE025_001 \xce SCE_DONE 
-FLG1 \x8c\x01 FLG2 \xb06 FLG2_SET \x03}
+CMD6 .\\Data\\Script\\Bgm.Fob VAR1 \x88 
+CMD2 PlayCD RUNF \xb2 END 
+SCEC SCE025_001 \xce SCE_DONE 
+TEXT1 \xb06 TEXT2 }
  
 錦城\n　「－－太宰の処女短編集のタイトルは『晩年』というわけです\n　　けれど、そこに彼のたどった運命を重ね見ることは難しいこ\n　　とではありません。@
 　　ただ、ここでとりあげている『パンドラの筺』に関しては、\n　　そういった先入観を抜きにして、私は論じてみたいと思いま\n　　す。\pそれじゃあ中村君。読んでください」@
@@ -17,11 +17,11 @@ FLG1 \x8c\x01 FLG2 \xb06 FLG2_SET \x03}
 
   
 FLG1 \x12\x01\x0c FLG1_SET
-WHAT .\\Data\\Script\\TextFunc.Fob RUNF &\x03 \x02
-CMD1 TextOn RUNF T\x03 END \x88 \x02
-CMD1 StopCD RUNF |\x03 END
-CSCE SCE025_002 \x98\x03 SCE_DONE 
-FLG1 \x8c\x01 FLG2 \xb46 FLG2_SET \x03N
+CMD7 .\\Data\\Script\\TextFunc.Fob RUNF &\x03 
+CMD2 TextOn RUNF T\x03 END  \x88 
+CMD2 StopCD RUNF |\x03 END 
+SCEC SCE025_002 \x98\x03 SCE_DONE 
+TEXT1 \xb46 TEXT2 N
  
 錦城\n　「……君！　……菱君！　虎菱君！」@
 拓司\n　「……え？」@
@@ -32,9 +32,9 @@ FLG1 \x8c\x01 FLG2 \xb46 FLG2_SET \x03N
 錦城\n　「……というように、若者が悩み続けている間にも、『世界の\n　　風車はクルクルと回っている』わけです」\
 
   
-FLG1 \xdc\x03\x0c FLG1_SET &\x03 \x02 T\x03 END
-CSCE SCE025_003 N\x05 SCE_DONE 
-FLG1 \x8c\x01 FLG2 \xb86 FLG2_SET \x03\xa2
+FLG1 \xdc\x03\x0c FLG1_SET &\x03 \x02 T\x03 END 
+SCEC SCE025_003 N\x05 SCE_DONE 
+TEXT1 \xb86 TEXT2 \xa2
  
 　クラスメイトたちが、クスクスと笑っている。@
 　拓司は教科書をひっくり返して、しかるべき場所を見いだそう\n　と焦った。@
@@ -50,9 +50,9 @@ FLG1 \x8c\x01 FLG2 \xb86 FLG2_SET \x03\xa2
 　さきほどの夢の中で感じた、いいようのない恐怖の方がよっぽ\n　どリアルだ。\
 
   
-FLG1 \x92\x05\x0c FLG1_SET &\x03 \x02 T\x03 END
-CSCE SCE025_004 T\x08 SCE_DONE 
-FLG1 \x8c\x01 FLG2 \xbc6 FLG2_SET \x03\x9c
+FLG1 \x92\x05\x0c FLG1_SET &\x03 \x02 T\x03 END 
+SCEC SCE025_004 T\x08 SCE_DONE 
+TEXT1 \xbc6 TEXT2 \x9c
  
 錦城\n　「結構です。座りなさい虎菱君。@
 　　……篠田さん、かわりにお願い」@
@@ -60,11 +60,11 @@ FLG1 \x8c\x01 FLG2 \xbc6 FLG2_SET \x03\x9c
 /*　■CG07　表示（ノンエフェクト）*/\a7,-1,-1,0,\a0,6,1,0,\a6,0,0,0,カンナ\n　「－－こうしましょう。\pここ以外では、あなたと私は知り合いで\n　　も何でもない。\pお互いの世界に干渉しないし、興味も持たない\n　　。\pお互いの世界……フフフ。\p私たちの世界以外では、私たちは\n　　他人になるの。\pそうすることで、私たちの世界はより本物にな\n　　る……どうかしら？」\
 
   
-FLG1 \x98\x08\x0c FLG1_SET &\x03 \x02 T\x03 END  
-FLG1 \xc8\x0c FLG1_SET   \x02 J END  
-FLG1 \x06\x01\x0c FLG1_SET \x88 \x02 \xb2 END
-CSCE SCE025_005 \xaa\x0b SCE_DONE 
-FLG1 \x8c\x01 FLG2 \xc06 FLG2_SET \x03\xa3
+FLG1 \x98\x08\x0c FLG1_SET &\x03 \x02 T\x03 END   
+FLG1 \xc8\x0c FLG1_SET   \x02 J END   
+FLG1 \x06\x01\x0c FLG1_SET \x88 \x02 \xb2 END 
+SCEC SCE025_005 \xaa\x0b SCE_DONE 
+TEXT1 \xc06 TEXT2 \xa3
  
 世界。@
 世界。@
@@ -87,10 +87,10 @@ FLG1 \x8c\x01 FLG2 \xc06 FLG2_SET \x03\xa3
 なにか？\
 
   
-FLG1 \xee\x0b\x0c FLG1_SET &\x03 \x02 T\x03 END  
-FLG1 \x05\x0c FLG1_SET   \x02 J END \x88 \x02 |\x03 END
-CSCE SCE025_006 \x02\x0f SCE_DONE 
-FLG1 \x8c\x01 FLG2 \xc46 FLG2_SET \x03l
+FLG1 \xee\x0b\x0c FLG1_SET &\x03 \x02 T\x03 END   
+FLG1 \x05\x0c FLG1_SET   \x02 J END  \x88 \x02 |\x03 END 
+SCEC SCE025_006 \x02\x0f SCE_DONE 
+TEXT1 \xc46 TEXT2 l
  
 学生\n　「……死ぬのか生きるのか、それはもう人間の幸不幸を決定す\n　　る鍵ではないような気さえしてきたのだ。@
 　　死者は完成せられ、生者は出帆の船のデッキに立ってそれに\n　　手を合わせる。@
@@ -98,6 +98,6 @@ FLG1 \x8c\x01 FLG2 \xc46 FLG2_SET \x03l
 \n　遠景。\p国旗掲揚塔に渡された綱。\pその上から、葉っぱのように人\n　影が落下する。\pそれは淡々と、なんてことのない風景のように見\n　える。\pサイレント映画のようだ。@
 \z
   
-FLG1 F\x0f\x0c FLG1_SET &\x03 \x02 T\x03 END &\x03 \x02
-CSCE TextClose CLOSE <\x11 END
+FLG1 F\x0f\x0c FLG1_SET &\x03 \x02 T\x03 END  &\x03 
+CMD3 TextClose VAR1 <\x11 END 
 END_SCRIPT

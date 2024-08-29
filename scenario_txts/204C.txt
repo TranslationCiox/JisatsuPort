@@ -1,7 +1,7 @@
 START_SCRIPT
 \xe7\x05\x01\xa4\t3\x01\n\x04
-CSCE SCE204_001 \x06 SCE_DONE 
-FLG1 \x8c\x01 FLG2 `N\x01 FLG2_SET \x03\xcb
+SCEC SCE204_001 \x06 SCE_DONE 
+TEXT1 `N\x01 TEXT2 \xcb
  
 ナタネ\n　「さいごに。\p神様が光を創ったように……あなたは鳥を創るこ\n　　とができる。\pこの鳥は、あなたが創った。\p空中からとりだし\n　　た。\pタマゴはなかったし、ヒナの時代もなかった。\pただ、\n　　そこにいきなりあった。\pそしてこの鳥はいま、鳥ではない。@
 　　『鳥』という名前に自体にはなんの意味もない。\pあなたが『\n　　椅子』と名付ければ、これは『椅子』なの。\p『鳥』というの\n　　は、ひとつの世界が定義した呼称にすぎない。\pつまり……完\n　　全なゼロから……思ったままのものを創り出すということは\n　　すなわち……あなたが世界を定義することができるというこ\n　　となの」@
@@ -11,7 +11,7 @@ FLG1 \x8c\x01 FLG2 `N\x01 FLG2_SET \x03\xcb
 
   
 FLG1 J\x0c FLG1_SET
-WHAT .\\Data\\Script\\TextFunc.Fob RUNF \x96\x03 \x02
-CMD1 TextOn RUNF \xc4\x03 END \x96\x03 \x02
-CSCE TextClose CLOSE \xec\x03 END
+CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \x96\x03 
+CMD2 TextOn RUNF \xc4\x03 END  \x96\x03 
+CMD3 TextClose VAR1 \xec\x03 END 
 END_SCRIPT

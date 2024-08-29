@@ -1,19 +1,19 @@
 START_SCRIPT
 P\x03\x01\x90\x044\x01\xd4\x01
-CSCE SCE065_001 \x06 SCE_DONE 
-FLG1 \x8c\x01 FLG2 0u FLG2_SET \x03\x11
+SCEC SCE065_001 \x06 SCE_DONE 
+TEXT1 0u TEXT2 \x11
  
 カンナ\n　「正解。\pつまり、重要なのはどこか、わかる？」\
 
   
 FLG1 J\x0c FLG1_SET
-WHAT .\\Data\\Script\\TextFunc.Fob RUNF \xae \x02
-CMD1 TextOn RUNF \xdc END\x03 
+CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \xae 
+CMD2 TextOn RUNF \xdc END \x03 
 CHOICE
 最初の電気ショックが回避不可能だったこと\n電流が流れる前に部屋が暗くなること\n電流の痛みになれること\n\l0,3,
 ENDCHOICE
 
   
-FLG1 \xf8\x0c FLG1_SET \xae \x02 \xdc END \xae \x02
-CSCE TextClose CLOSE \xb6\x01 END
+FLG1 \xf8\x0c FLG1_SET \xae \x02 \xdc END  \xae 
+CMD3 TextClose VAR1 \xb6\x01 END 
 END_SCRIPT

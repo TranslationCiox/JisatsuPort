@@ -1,7 +1,7 @@
 START_SCRIPT
 4\x05\x01\xa4\t3\x01\x04
-CSCE SCE067_001 \x06 SCE_DONE 
-FLG1 \x8c\x01 FLG2 Px FLG2_SET \x03\xb3
+SCEC SCE067_001 \x06 SCE_DONE 
+TEXT1 Px TEXT2 \xb3
  
 カンナ\n　「そうね。\pそれだけがすべてじゃないとは思うけど……。@
 　　赤ちゃんは泣くでしょう？\p　泣いてアピールをするの。@
@@ -9,14 +9,14 @@ FLG1 \x8c\x01 FLG2 Px FLG2_SET \x03\xb3
 
   
 FLG1 J\x0c FLG1_SET
-WHAT .\\Data\\Script\\TextFunc.Fob RUNF 6\x03 \x02
-CMD1 TextOn RUNF d\x03 END
-WHAT 
+CMD7 .\\Data\\Script\\TextFunc.Fob RUNF 6\x03 
+CMD2 TextOn RUNF d\x03 END 
+CMD7 
 CHOICE
 克服\n否認\n\l0,2,
 ENDCHOICE
 
   
-FLG1 \x80\x03\x0c FLG1_SET 6\x03 \x02 d\x03 END 6\x03 \x02
-CSCE TextClose CLOSE \xe2\x03 END
+FLG1 \x80\x03\x0c FLG1_SET 6\x03 \x02 d\x03 END  6\x03 
+CMD3 TextClose VAR1 \xe2\x03 END 
 END_SCRIPT

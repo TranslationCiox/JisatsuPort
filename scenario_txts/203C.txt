@@ -1,10 +1,10 @@
 START_SCRIPT
 f\x03\x01p\x044\x01\xd6\x02  
 FLG1 \xc9\x0c FLG1_SET
-FOBT .\\Data\\Script\\Bg.Fob OPEN   \x02
-CMD2 BgAutoFadeIn OPEN J END
-CSCE SCE203_001 n SCE_DONE 
-FLG1 \x8c\x01 FLG2 \xd0L\x01 FLG2_SET \x03d
+CMD6 .\\Data\\Script\\Bg.Fob VAR2   \x02
+CMD4 BgAutoFadeIn VAR2 J END 
+SCEC SCE203_001 n SCE_DONE 
+TEXT1 \xd0L\x01 TEXT2 d
  
 ナタネ\n　「あなたは『創る』ことができる。@
 　　神様が光を創ったように、あなたは鳥を創ることができる。@
@@ -14,7 +14,7 @@ FLG1 \x8c\x01 FLG2 \xd0L\x01 FLG2_SET \x03d
 
   
 FLG1 \xb2\x0c FLG1_SET
-WHAT .\\Data\\Script\\TextFunc.Fob RUNF b\x02 \x02
-CMD1 TextOn RUNF \x90\x02 END b\x02 \x02
-CSCE TextClose CLOSE \xb8\x02 END
+CMD7 .\\Data\\Script\\TextFunc.Fob RUNF b\x02 
+CMD2 TextOn RUNF \x90\x02 END  b\x02 
+CMD3 TextClose VAR1 \xb8\x02 END 
 END_SCRIPT

@@ -1,7 +1,7 @@
 START_SCRIPT
 &\x0e\x01`B#\x01l\x0b
-CSCE SCEK09_001 \x06 SCE_DONE 
-FLG1 \x8c\x01 FLG2 H\xa7\x01 FLG2_SET \x03;
+SCEC SCEK09_001 \x06 SCE_DONE 
+TEXT1 H\xa7\x01 TEXT2 ;
  
 「ここに落ちている袋、どれくらいあると思う？」\nとゆきはいった。@
 私が黙っていると、ゆきは「１６袋」といった。@
@@ -11,16 +11,16 @@ FLG1 \x8c\x01 FLG2 H\xa7\x01 FLG2_SET \x03;
 「猫を？」\w\z
   
 FLG1 J\x0c FLG1_SET
-WHAT .\\Data\\Script\\TextFunc.Fob RUNF V\x01 \x02
-CMD1 TextOn RUNF \x84\x01 END  
+CMD7 .\\Data\\Script\\TextFunc.Fob RUNF V\x01 
+CMD2 TextOn RUNF \x84\x01 END   
 FLG1 \xc8\x0c FLG1_SET
-FOBT .\\Data\\Script\\Bg.Fob OPEN \xba\x01 \x02
-CMD2 BgAutoFadeIn OPEN \xe4\x01 END  
+CMD6 .\\Data\\Script\\Bg.Fob VAR2 \xba\x01 \x02
+CMD4 BgAutoFadeIn VAR2 \xe4\x01 END   
 FLG1 \t\x01\x0c FLG1_SET
-FOBT .\\Data\\Script\\Bgm.Fob CLOSE "\x02 \x02
-CMD1 PlayCD RUNF L\x02 END
-CSCE SCEK09_002 h\x02 SCE_DONE 
-FLG1 \x8c\x01 FLG2 L\xa7\x01 FLG2_SET \x03\x85
+CMD6 .\\Data\\Script\\Bgm.Fob VAR1 "\x02 
+CMD2 PlayCD RUNF L\x02 END 
+SCEC SCEK09_002 h\x02 SCE_DONE 
+TEXT1 L\xa7\x01 TEXT2 \x85
  
 「ここらへん、野良猫がたくさんいるの。@
 　だからマタタビを使えば簡単に集まる。@
@@ -34,9 +34,9 @@ FLG1 \x8c\x01 FLG2 L\xa7\x01 FLG2_SET \x03\x85
 「わかったよ」と私はいって遮った。@
 「もうわかったから。ありがとう、ゆきちゃん」\w\z
   
-FLG1 \xac\x02\x0c FLG1_SET V\x01 \x02 \x84\x01 END
-CSCE SCEK09_003 \xfa\x04 SCE_DONE 
-FLG1 \x8c\x01 FLG2 P\xa7\x01 FLG2_SET \x03y
+FLG1 \xac\x02\x0c FLG1_SET V\x01 \x02 \x84\x01 END 
+SCEC SCEK09_003 \xfa\x04 SCE_DONE 
+TEXT1 P\xa7\x01 TEXT2 y
  
 　たぶん、ゆきなりのストレス解消法なのだろうと思った。@
 ちょっと前に話題になった矢ガモとか……そういうもの。@
@@ -45,9 +45,9 @@ FLG1 \x8c\x01 FLG2 P\xa7\x01 FLG2_SET \x03y
 嫌悪と軽蔑がわき上がってくるのも抑えられなかった。@
 でも、秘密の大きさは、私に対する信頼の大きさを意味していた。\n\p信頼の輝きが、秘密の暗さを消し去るくらい明るいと信じてこそ\nの告白である以上、秘密が大きくて暗いほど、私は喜ぶべきなの\nだ。\w\z
   
-FLG1 >\x05\x0c FLG1_SET V\x01 \x02 \x84\x01 END
-CSCE SCEK09_004 \\\x07 SCE_DONE 
-FLG1 \x8c\x01 FLG2 T\xa7\x01 FLG2_SET \x03\xd0
+FLG1 >\x05\x0c FLG1_SET V\x01 \x02 \x84\x01 END 
+SCEC SCEK09_004 \\\x07 SCE_DONE 
+TEXT1 T\xa7\x01 TEXT2 \xd0
  
 　私は自分の中に生まれた硬いかたまりをかみ砕き、飲み下した。\n\pそして、自分がゆきの秘密を赦したことを伝えたくて、ゆきを優\nしく抱きしめた。@
 けれどもゆきの身体は、私の腕のなかでいつまでも硬くこわばっ\nて動かず、そこには明らかな拒絶が感じられた。@
@@ -60,7 +60,7 @@ FLG1 \x8c\x01 FLG2 T\xa7\x01 FLG2_SET \x03\xd0
 　しばらく間をおいてから、ゆきはぽつりといった。@
 「そうすれば死ぬのが怖くなくなると思うから」\w\z
   
-FLG1 \xa0\x07\x0c FLG1_SET V\x01 \x02 \x84\x01 END "\x02 \x02
-CMD1 StopCD RUNF &\x0b END V\x01 \x02
-CSCE TextClose CLOSE N\x0b END
+FLG1 \xa0\x07\x0c FLG1_SET V\x01 \x02 \x84\x01 END  "\x02 
+CMD2 StopCD RUNF &\x0b END  V\x01 
+CMD3 TextClose VAR1 N\x0b END 
 END_SCRIPT

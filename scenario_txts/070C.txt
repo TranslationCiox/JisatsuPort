@@ -1,7 +1,7 @@
 START_SCRIPT
 "\x04\x01\xa4\t3\x01\xe0\x02
-CSCE SCE070_001 \x06 SCE_DONE 
-FLG1 \x8c\x01 FLG2 } FLG2_SET \x03[
+SCEC SCE070_001 \x06 SCE_DONE 
+TEXT1 } TEXT2 [
  
 なたね\n　「駄目！」@
 \nなたねが鋭く静止した。@
@@ -12,13 +12,13 @@ FLG1 \x8c\x01 FLG2 } FLG2_SET \x03[
 
   
 FLG1 J\x0c FLG1_SET
-WHAT .\\Data\\Script\\TextFunc.Fob RUNF \xd6\x01 \x02
-CMD1 TextOn RUNF \x04\x02 END\x03\x17
+CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \xd6\x01 
+CMD2 TextOn RUNF \x04\x02 END \x03\x17
 CHOICE
 なたねの警告を受け入れて別のコースを選ぶ\n早桃の忠告を受け入れて中庭に出る\n\l0,2,
 ENDCHOICE
 
   
-FLG1  \x02\x0c FLG1_SET \xd6\x01 \x02 \x04\x02 END \xd6\x01 \x02
-CSCE TextClose CLOSE \xc2\x02 END
+FLG1  \x02\x0c FLG1_SET \xd6\x01 \x02 \x04\x02 END  \xd6\x01 
+CMD3 TextClose VAR1 \xc2\x02 END 
 END_SCRIPT

@@ -1,7 +1,7 @@
 START_SCRIPT
 \x0b\x08\x01`B#\x01h\x06
-CSCE SCE006_001 \x06 SCE_DONE 
-FLG1 \x8c\x01 FLG2 \x19 FLG2_SET \x03.
+SCEC SCE006_001 \x06 SCE_DONE 
+TEXT1 \x19 TEXT2 .
  
 拓司\n　「……出て行け」@
 早桃\n　「どうして？」@
@@ -10,10 +10,10 @@ FLG1 \x8c\x01 FLG2 \x19 FLG2_SET \x03.
 
   
 FLG1 J\x0c FLG1_SET
-WHAT .\\Data\\Script\\TextFunc.Fob RUNF "\x01 \x02
-CMD1 TextOn RUNF P\x01 END
-CSCE SCE006_002 l\x01 SCE_DONE 
-FLG1 \x8c\x01 FLG2 \x04\x19 FLG2_SET \x03\x98
+CMD7 .\\Data\\Script\\TextFunc.Fob RUNF "\x01 
+CMD2 TextOn RUNF P\x01 END 
+SCEC SCE006_002 l\x01 SCE_DONE 
+TEXT1 \x04\x19 TEXT2 \x98
  
 早桃はネグリジェの裾をつまみ、ゆっくりと持ち上げて見せた。@
 /*HCG02*/\a7,-2,-2,0,\a0,73,2,0,\a6,-2,0,0,幼い肉の合わせ目が、あらわになる。@
@@ -26,9 +26,9 @@ FLG1 \x8c\x01 FLG2 \x04\x19 FLG2_SET \x03\x98
 早桃のくちびるのあいだに、ぬるっと、濡れ光る肉の塊がすべっ\nた。\n粘り着くような声が、そこからこぼれだした。\
 
   
-FLG1 \xb0\x01\x0c FLG1_SET "\x01 \x02 P\x01 END
-CSCE SCE006_003 J\x04 SCE_DONE 
-FLG1 \x8c\x01 FLG2 \x08\x19 FLG2_SET \x03C
+FLG1 \xb0\x01\x0c FLG1_SET "\x01 \x02 P\x01 END 
+SCEC SCE006_003 J\x04 SCE_DONE 
+TEXT1 \x08\x19 TEXT2 C
  
 早桃\n　「見せっこ……しよ？\p　早桃にだけ出させるなんて、ずるい。@
 　　おにいちゃんのも、見せて。\pおち○ちん、見せてくれたら…\n　　…おれいにおにいちゃんにいいこと……してあげる。@
@@ -36,12 +36,12 @@ FLG1 \x8c\x01 FLG2 \x08\x19 FLG2_SET \x03C
 　　ね？」\
 
   
-FLG1 \x8e\x04\x0c FLG1_SET "\x01 \x02 P\x01 END\x03\x0c
+FLG1 \x8e\x04\x0c FLG1_SET "\x01 \x02 P\x01 END \x03\x0c
 CHOICE
 「……消えろ」\n「……来いよ」\n\l0,2,
 ENDCHOICE
 
   
-FLG1 \xd4\x05\x0c FLG1_SET "\x01 \x02 P\x01 END "\x01 \x02
-CSCE TextClose CLOSE J\x06 END
+FLG1 \xd4\x05\x0c FLG1_SET "\x01 \x02 P\x01 END  "\x01 
+CMD3 TextClose VAR1 J\x06 END 
 END_SCRIPT

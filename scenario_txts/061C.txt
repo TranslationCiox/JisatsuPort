@@ -1,12 +1,12 @@
 START_SCRIPT
 \xc5\x05\x01\xa4\t3\x01\xba\x04
-CSCE SCE061_001 \x06 SCE_DONE 
-FLG1 \x8c\x01 FLG2 \xf0n FLG2_SET   
+SCEC SCE061_001 \x06 SCE_DONE 
+TEXT1 \xf0n\x0c"  
 FLG1 \x02\x0c FLG1_SET  \x04
 FLG1 \x1a\x0c FLG1_SET  \x08
 FLG1 \x01\x0c FLG1_SET
-FOBT .\\Data\\Script\\Bgm.Fob CLOSE \x98 \x02
-CMD1 SePlay RUNF \xc2 END\x03\\
+CMD6 .\\Data\\Script\\Bgm.Fob VAR1 \x98 
+CMD2 SePlay RUNF \xc2 END \x03\\
  
 なたね\n　「次は？」@
 拓司\n　「２階……カンナの教室だ」@
@@ -20,22 +20,22 @@ CMD1 SePlay RUNF \xc2 END\x03\\
 
   
 FLG1 \xde\x0c FLG1_SET
-WHAT .\\Data\\Script\\TextFunc.Fob RUNF n\x02 \x02
-CMD1 TextOn RUNF \x9c\x02 END  
-FLG1 \x02\x0c FLG1_SET \x98 \x02
-CMD1 SeStop RUNF \xde\x02 END  
+CMD7 .\\Data\\Script\\TextFunc.Fob RUNF n\x02 
+CMD2 TextOn RUNF \x9c\x02 END   
+FLG1 \x02\x0c FLG1_SET \x98 
+CMD2 SeStop RUNF \xde\x02 END   
 FLG1 <\x0c FLG1_SET
-WHAT .\\Data\\Script\\TextFunc.fob RUNF \x14\x03 \x02
-CSCE WaitTime OPEN B\x03 END
-CSCE SCE061_002 b\x03 SCE_DONE 
-FLG1 \x8c\x01 FLG2 \xf4n FLG2_SET \x03\x12
+CMD7 .\\Data\\Script\\TextFunc.fob RUNF \x14\x03 
+CMD3 WaitTime VAR2 B\x03 END 
+SCEC SCE061_002 b\x03 SCE_DONE 
+TEXT1 \xf4n TEXT2 \x12
  
 拓司\n　「早桃は廊下で待っていろ。\p雲居さんは……一緒に頼む」\
 
   
-FLG1 \xa6\x03\x0c FLG1_SET n\x02 \x02 \x9c\x02 END  
+FLG1 \xa6\x03\x0c FLG1_SET n\x02 \x02 \x9c\x02 END   
 FLG1 \xc9\x0c FLG1_SET
-FOBT .\\Data\\Script\\Bg.Fob OPEN B\x04 \x02
-CMD2 BgAutoFadeIn OPEN l\x04 END n\x02 \x02
-CSCE TextClose CLOSE \x9c\x04 END
+CMD6 .\\Data\\Script\\Bg.Fob VAR2 B\x04 \x02
+CMD4 BgAutoFadeIn VAR2 l\x04 END  n\x02 
+CMD3 TextClose VAR1 \x9c\x04 END 
 END_SCRIPT

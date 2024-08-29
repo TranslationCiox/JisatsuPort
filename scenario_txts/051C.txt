@@ -1,12 +1,12 @@
 START_SCRIPT
 \xdc\x07\x01`B#\x01(\x06
-CSCE SCE051_001 \x06 SCE_DONE 
-FLG1 \x8c\x01 FLG2 P_ FLG2_SET   
+SCEC SCE051_001 \x06 SCE_DONE 
+TEXT1 P_\x0c"  
 FLG1 \x02\x0c FLG1_SET  \x04
 FLG1 \x1a\x0c FLG1_SET  \x08
 FLG1 \x01\x0c FLG1_SET
-FOBT .\\Data\\Script\\Bgm.Fob CLOSE \x98 \x02
-CMD1 SePlay RUNF \xc2 END\x03\xa2
+CMD6 .\\Data\\Script\\Bgm.Fob VAR1 \x98 
+CMD2 SePlay RUNF \xc2 END \x03\xa2
  
 　静まり返った廊下に、拓司たちの足音が響く。@
 　ときおり、通り過ぎる教室からなにか激しい音が……机のひっ\n　くり返る音や、なにかを叫んでいる声が……聞こえるが、もう\n　中を覗く気などおきなかった。@
@@ -21,23 +21,23 @@ CMD1 SePlay RUNF \xc2 END\x03\xa2
 
   
 FLG1 \xde\x0c FLG1_SET
-WHAT .\\Data\\Script\\TextFunc.Fob RUNF \x86\x03 \x02
-CMD1 TextOn RUNF \xb4\x03 END
-CSCE SCE051_002 \xd0\x03 SCE_DONE 
-FLG1 \x8c\x01 FLG2 T_ FLG2_SET \x03-
+CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \x86\x03 
+CMD2 TextOn RUNF \xb4\x03 END 
+SCEC SCE051_002 \xd0\x03 SCE_DONE 
+TEXT1 T_ TEXT2 -
  
 なたね\n　「……教室に入る前に……なかを確かめて！　そうしないと危\n　　険だわ！」@
 \nそんな声を背中に聞きながら、拓司は駆けた。\p早桃の教室まで、\nあっという間だった。\
 
   
-FLG1 \x14\x04\x0c FLG1_SET \x86\x03 \x02 \xb4\x03 END  
-FLG1 \x02\x0c FLG1_SET \x98 \x02
-CMD1 SeStop RUNF (\x05 END\x03 
+FLG1 \x14\x04\x0c FLG1_SET \x86\x03 \x02 \xb4\x03 END   
+FLG1 \x02\x0c FLG1_SET \x98 
+CMD2 SeStop RUNF (\x05 END \x03 
 CHOICE
 一刻も待てない。拓司はその勢いのまま、教室に躍り込んだ。\n拓司はなたねの警告に従って、そっと中をのぞき込んだ。\n\l0,2,
 ENDCHOICE
 
   
-FLG1 D\x05\x0c FLG1_SET \x86\x03 \x02 \xb4\x03 END \x86\x03 \x02
-CSCE TextClose CLOSE \n\x06 END
+FLG1 D\x05\x0c FLG1_SET \x86\x03 \x02 \xb4\x03 END  \x86\x03 
+CMD3 TextClose VAR1 \n\x06 END 
 END_SCRIPT

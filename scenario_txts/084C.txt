@@ -1,7 +1,7 @@
 START_SCRIPT
 m\x06\x01`B#\x01H\x05
-CSCE SCE084_001 \x06 SCE_DONE 
-FLG1 \x8c\x01 FLG2 \xe0\x92 FLG2_SET \x03\xb8
+SCEC SCE084_001 \x06 SCE_DONE 
+TEXT1 \xe0\x92 TEXT2 \xb8
  
 目が覚めた。@
 －－おれは気を失っていたのか？\p　それとも、これもまた夢なの\nか？@
@@ -19,10 +19,10 @@ FLG1 \x8c\x01 FLG2 \xe0\x92 FLG2_SET \x03\xb8
 
   
 FLG1 J\x0c FLG1_SET
-WHAT .\\Data\\Script\\TextFunc.Fob RUNF J\x03 \x02
-CMD1 TextOn RUNF x\x03 END
-CSCE SCE084_002 \x94\x03 SCE_DONE 
-FLG1 \x8c\x01 FLG2 \xe4\x92 FLG2_SET \x03C
+CMD7 .\\Data\\Script\\TextFunc.Fob RUNF J\x03 
+CMD2 TextOn RUNF x\x03 END 
+SCEC SCE084_002 \x94\x03 SCE_DONE 
+TEXT1 \xe4\x92 TEXT2 C
  
 －－紅葉は？@
 なんとか気力を奮い起こして、紅葉の姿を探す。@
@@ -30,6 +30,6 @@ FLG1 \x8c\x01 FLG2 \xe4\x92 FLG2_SET \x03C
 \n拓司\n　「紅葉！\p　紅葉ッ！」\
 
   
-FLG1 \xd8\x03\x0c FLG1_SET J\x03 \x02 x\x03 END J\x03 \x02
-CSCE TextClose CLOSE *\x05 END
+FLG1 \xd8\x03\x0c FLG1_SET J\x03 \x02 x\x03 END  J\x03 
+CMD3 TextClose VAR1 *\x05 END 
 END_SCRIPT

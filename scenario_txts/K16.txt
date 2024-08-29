@@ -1,20 +1,20 @@
 START_SCRIPT
 \xc1\x11\x01`B#\x01\xc6\r  
 FLG1 <\x0c FLG1_SET
-FOBT .\\Data\\Script\\Bg.Fob OPEN   \x02
-CMD2 BgAutoFadeIn OPEN J END
-CSCE SCEK16_001 n SCE_DONE 
-FLG1 \x8c\x01 FLG2 `\xb2\x01 FLG2_SET \x03;
+CMD6 .\\Data\\Script\\Bg.Fob VAR2   \x02
+CMD4 BgAutoFadeIn VAR2 J END 
+SCEC SCEK16_001 n SCE_DONE 
+TEXT1 `\xb2\x01 TEXT2 ;
  
 語り終えた後、カンナは無言で、自らが作り出した沈黙のなかに\n沈み込んだ。@
 あるいは、彼女が沈み込んでいったのは、いま自らが言葉に変換\nして現出して見せた暗い闇の中なのかもしれない。@
 重い沈黙に耐えかねて、拓司が口を開いた。\w\z
   
 FLG1 \xb2\x0c FLG1_SET
-WHAT .\\Data\\Script\\TextFunc.Fob RUNF \xbe\x01 \x02
-CMD1 TextOn RUNF \xec\x01 END
-CSCE SCEK16_002 \x08\x02 SCE_DONE 
-FLG1 \x8c\x01 FLG2 d\xb2\x01 FLG2_SET \x03e
+CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \xbe\x01 
+CMD2 TextOn RUNF \xec\x01 END 
+SCEC SCEK16_002 \x08\x02 SCE_DONE 
+TEXT1 d\xb2\x01 TEXT2 e
  
 拓司\n　「つまり、俺は、カンナなんだな？」@
 カンナ\n　「……」@
@@ -25,9 +25,9 @@ FLG1 \x8c\x01 FLG2 d\xb2\x01 FLG2_SET \x03e
 \nカンナは黙ったままだった。@
 ようやく口を開いたとき、カンナはなぜか自嘲気味の笑顔を口の\n端に浮かべていた。\w\z
   
-FLG1 L\x02\x0c FLG1_SET \xbe\x01 \x02 \xec\x01 END
-CSCE SCEK16_003 \x1a\x04 SCE_DONE 
-FLG1 \x8c\x01 FLG2 h\xb2\x01 FLG2_SET \x03\x86
+FLG1 L\x02\x0c FLG1_SET \xbe\x01 \x02 \xec\x01 END 
+SCEC SCEK16_003 \x1a\x04 SCE_DONE 
+TEXT1 h\xb2\x01 TEXT2 \x86
  
 カンナ\n　「……なんだか、違うものになってしまったみたい」@
 拓司\n　「違うもの？」@
@@ -35,9 +35,9 @@ FLG1 \x8c\x01 FLG2 h\xb2\x01 FLG2_SET \x03\x86
 　　ずっと、このことは私のなかにあって、もう、数えられない\n　　リピートされて、現実以上にはっきりとした輪郭を持って\n　　た。\pどんな細かいディテールも逃すことなく、私のなかに刻\n　　み込まれていた。@
 　　このことは、もう私の一部分ではなくて、私がこのことの一\n　　部分で……なのに、なんだかこうやって話してみたら、全然\n　　違うものになってしまったみたい。\pすごく馬鹿げて聞こ\n　　える」\w\z
   
-FLG1 ^\x04\x0c FLG1_SET \xbe\x01 \x02 \xec\x01 END
-CSCE SCEK16_004 \xb0\x06 SCE_DONE 
-FLG1 \x8c\x01 FLG2 l\xb2\x01 FLG2_SET \x03\x88
+FLG1 ^\x04\x0c FLG1_SET \xbe\x01 \x02 \xec\x01 END 
+SCEC SCEK16_004 \xb0\x06 SCE_DONE 
+TEXT1 l\xb2\x01 TEXT2 \x88
  
 拓司\n　「……」@
 カンナ\n　「どうしてあなたにこんな話、したのかしらね。@
@@ -47,9 +47,9 @@ FLG1 \x8c\x01 FLG2 l\xb2\x01 FLG2_SET \x03\x88
 　　私は舞台にひとり残されてしまった」@
 \nカンナは両手をぱっと開いて見せて、おしまい、と繰り返した。\w\z
   
-FLG1 \xf4\x06\x0c FLG1_SET \xbe\x01 \x02 \xec\x01 END
-CSCE SCEK16_005 N\t SCE_DONE 
-FLG1 \x8c\x01 FLG2 p\xb2\x01 FLG2_SET \x03x
+FLG1 \xf4\x06\x0c FLG1_SET \xbe\x01 \x02 \xec\x01 END 
+SCEC SCEK16_005 N\t SCE_DONE 
+TEXT1 p\xb2\x01 TEXT2 x
  
 カンナ\n　「どうしてなのかしら。全然わからない」@
 拓司\n　「……俺のことが本当に好きになった」@
@@ -61,16 +61,16 @@ FLG1 \x8c\x01 FLG2 p\xb2\x01 FLG2_SET \x03x
 拓司\n　「今度貸してやる。\pうちに全巻あるから。\p愛蔵版で。@
 　　まとめて読めよ」\w\z
   
-FLG1 \x92\t\x0c FLG1_SET \xbe\x01 \x02 \xec\x01 END
-CSCE SCEK16_006 \xac\x0b SCE_DONE 
-FLG1 \x8c\x01 FLG2 t\xb2\x01 FLG2_SET \x03>
+FLG1 \x92\t\x0c FLG1_SET \xbe\x01 \x02 \xec\x01 END 
+SCEC SCEK16_006 \xac\x0b SCE_DONE 
+TEXT1 t\xb2\x01 TEXT2 >
  
 カンナは信じられないものを見るような顔で拓司を見ていたが、\nやがてクスクスと笑いはじめた。@
 拓司は誰かの笑顔というものを、久しぶりに見たような気がした。\n\pそして、カンナの明るい笑顔というものを見たのは、これがほん\nとうに初めてだった。\w\z
   
-FLG1 \xf0\x0b\x0c FLG1_SET \xbe\x01 \x02 \xec\x01 END  
-FLG1 \xc8\x0c FLG1_SET   \x02 J END
-FOBT .\\Data\\Script\\Bgm.Fob CLOSE V\r \x02
-CMD1 StopCD RUNF \x80\r END \xbe\x01 \x02
-CSCE TextClose CLOSE \xa8\r END
+FLG1 \xf0\x0b\x0c FLG1_SET \xbe\x01 \x02 \xec\x01 END   
+FLG1 \xc8\x0c FLG1_SET   \x02 J END 
+CMD6 .\\Data\\Script\\Bgm.Fob VAR1 V\r 
+CMD2 StopCD RUNF \x80\r END  \xbe\x01 
+CMD3 TextClose VAR1 \xa8\r END 
 END_SCRIPT

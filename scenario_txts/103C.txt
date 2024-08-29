@@ -1,7 +1,7 @@
 START_SCRIPT
 \xb7\x03\x01 \x044\x01\xe6\x02
-CSCE SCE103_001 \x06 SCE_DONE 
-FLG1 \x8c\x01 FLG2 \x90\xb0 FLG2_SET \x03\x82
+SCEC SCE103_001 \x06 SCE_DONE 
+TEXT1 \x90\xb0 TEXT2 \x82
  
 紅葉\n　「……どうして？」@
 拓司\n　「なにかが暴力で解決されるってことが証明されたら、たぶん\n　　もう歯止めが利かなくなる。@
@@ -13,7 +13,7 @@ FLG1 \x8c\x01 FLG2 \x90\xb0 FLG2_SET \x03\x82
 \z
   
 FLG1 J\x0c FLG1_SET
-WHAT .\\Data\\Script\\TextFunc.Fob RUNF r\x02 \x02
-CMD1 TextOn RUNF \xa0\x02 END r\x02 \x02
-CSCE TextClose CLOSE \xc8\x02 END
+CMD7 .\\Data\\Script\\TextFunc.Fob RUNF r\x02 
+CMD2 TextOn RUNF \xa0\x02 END  r\x02 
+CMD3 TextClose VAR1 \xc8\x02 END 
 END_SCRIPT

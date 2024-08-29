@@ -1,12 +1,12 @@
 START_SCRIPT
 \xb8\x04\x01\xa4\t3\x01d\x03  
 FLG1 \xc8\x0c FLG1_SET
-FOBT .\\Data\\Script\\Bg.Fob OPEN   \x02
-CMD2 BgAutoFadeIn OPEN J END
-FOBT .\\Data\\Script\\Bgm.Fob CLOSE n \x02
-CMD1 StopCD RUNF \x98 END
-CSCE SCEK06_001 \xb4 SCE_DONE 
-FLG1 \x8c\x01 FLG2 \xd0\xa6\x01 FLG2_SET \x03v
+CMD6 .\\Data\\Script\\Bg.Fob VAR2   \x02
+CMD4 BgAutoFadeIn VAR2 J END 
+CMD6 .\\Data\\Script\\Bgm.Fob VAR1 n 
+CMD2 StopCD RUNF \x98 END 
+SCEC SCEK06_001 \xb4 SCE_DONE 
+TEXT1 \xd0\xa6\x01 TEXT2 v
  
 　もう帰ろう、と私がいうと、ゆきはほっとしたようだった。@
 けれども安堵の奥には、落胆のかけらがあるように思えた。@
@@ -18,7 +18,7 @@ FLG1 \x8c\x01 FLG2 \xd0\xa6\x01 FLG2_SET \x03v
 それから１週間後、ゆきは風邪薬を２００錠のんで、自殺したの\nだった。\w\z
   
 FLG1 \xf8\x0c FLG1_SET
-WHAT .\\Data\\Script\\TextFunc.Fob RUNF \xf0\x02 \x02
-CMD1 TextOn RUNF \x1e\x03 END \xf0\x02 \x02
-CSCE TextClose CLOSE F\x03 END
+CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \xf0\x02 
+CMD2 TextOn RUNF \x1e\x03 END  \xf0\x02 
+CMD3 TextClose VAR1 F\x03 END 
 END_SCRIPT

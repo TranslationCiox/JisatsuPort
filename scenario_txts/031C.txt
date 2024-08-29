@@ -1,7 +1,7 @@
 START_SCRIPT
 \x0f\x12\x01`B#\x01d\x0f
-CSCE SCE031_001 \x06 SCE_DONE 
-FLG1 \x8c\x01 FLG2 \x10@ FLG2_SET \x03m
+SCEC SCE031_001 \x06 SCE_DONE 
+TEXT1 \x10@ TEXT2 m
  
 スーパーのビニール袋に野良猫を詰め、廃墟となった五号棟の５階\nの窓からそれを放り投げていた月代カンナ。@
 どうして、という拓司の質問に、カンナはいまと同じ様な哄笑を返\nした。@
@@ -13,10 +13,10 @@ FLG1 \x8c\x01 FLG2 \x10@ FLG2_SET \x03m
 
   
 FLG1 J\x0c FLG1_SET
-WHAT .\\Data\\Script\\TextFunc.Fob RUNF \x1e\x02 \x02
-CMD1 TextOn RUNF L\x02 END
-CSCE SCE031_002 h\x02 SCE_DONE 
-FLG1 \x8c\x01 FLG2 \x14@ FLG2_SET \x03\x90
+CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \x1e\x02 
+CMD2 TextOn RUNF L\x02 END 
+SCEC SCE031_002 h\x02 SCE_DONE 
+TEXT1 \x14@ TEXT2 \x90
  
 \n　月代カンナのなかにある暗い穴に、拓司はまっさかさまに落ちて\n　いった。@
 　たとえばインターネットのデスサイト。@
@@ -30,9 +30,9 @@ FLG1 \x8c\x01 FLG2 \x14@ FLG2_SET \x03\x90
 　そこにあるのは確実な死のかたちであり、生きている自分には明\n　らかに所属していないものたちだった。\p拓司は取り憑かれたよう\n　にパソコンの前に張り付き、電脳の波に流されてくる情報をむさ\n　ぼった。\
 
   
-FLG1 \xac\x02\x0c FLG1_SET \x1e\x02 \x02 L\x02 END
-CSCE SCE031_003 &\x05 SCE_DONE 
-FLG1 \x8c\x01 FLG2 \x18@ FLG2_SET \x03\xe1
+FLG1 \xac\x02\x0c FLG1_SET \x1e\x02 \x02 L\x02 END 
+SCEC SCE031_003 &\x05 SCE_DONE 
+TEXT1 \x18@ TEXT2 \xe1
  
 　月代カンナは、続いて猟奇殺人事件の本を拓司にリリースした。@
 　しっかりとしたルポルタージュもあれば、興味本位のゲテモノも\n　あった。@
@@ -44,9 +44,9 @@ FLG1 \x8c\x01 FLG2 \x18@ FLG2_SET \x03\xe1
 　その他大勢への、陳腐な成り下がり。\
 
   
-FLG1 j\x05\x0c FLG1_SET \x1e\x02 \x02 L\x02 END
-CSCE SCE031_004 (\t SCE_DONE 
-FLG1 \x8c\x01 FLG2 \x1c@ FLG2_SET \x03\xcb
+FLG1 j\x05\x0c FLG1_SET \x1e\x02 \x02 L\x02 END 
+SCEC SCE031_004 (\t SCE_DONE 
+TEXT1 \x1c@ TEXT2 \xcb
  
 拓司は自ら志願して、団地からの『猫落とし』をカンナと一緒に行\nった。@
 強烈な死の体験だった。@
@@ -58,20 +58,20 @@ FLG1 \x8c\x01 FLG2 \x1c@ FLG2_SET \x03\xcb
 そのとき、拓司は初めて女の首を絞めたのだった。\
 
   
-FLG1 l\t\x0c FLG1_SET \x1e\x02 \x02 L\x02 END \x1e\x02 \x02
-LOAD TextWindowOffDirect \xde\x0c END  
+FLG1 l\t\x0c FLG1_SET \x1e\x02 \x02 L\x02 END  \x1e\x02 \x02
+CMD5 TextWindowOffDirect \xde\x0c END   
 FLG1 \xca\x0c FLG1_SET
-FOBT .\\Data\\Script\\Bg.Fob OPEN  \r \x02
-CMD1 BgOn OPEN J\r END  
+CMD6 .\\Data\\Script\\Bg.Fob VAR2  \r 
+CMD2 BgOn VAR2 J\r END   
 FLG1 \x01\x0c FLG1_SET
-WHAT .\\Data\\Script\\TextFunc.fob RUNF \x80\r \x02
-CSCE WaitTime OPEN \xae\r END  
-FLG1 \xc8\x0c FLG1_SET  \r \x02 J\r END  
-FLG1 \x01\x0c FLG1_SET \x80\r \x02 \xae\r END  
-FLG1 \xca\x0c FLG1_SET  \r \x02 J\r END  
-FLG1 \x01\x0c FLG1_SET \x80\r \x02 \xae\r END  
-FLG1 \xc8\x0c FLG1_SET  \r \x02 J\r END  
-FLG1 \x01\x0c FLG1_SET \x80\r \x02 \xae\r END \x1e\x02 \x02
-LOAD TextWindowOnDirect RUNF \x12\x0f END \x1e\x02 \x02
-CSCE TextClose CLOSE F\x0f END
+CMD7 .\\Data\\Script\\TextFunc.fob RUNF \x80\r 
+CMD3 WaitTime VAR2 \xae\r END   
+FLG1 \xc8\x0c FLG1_SET  \r \x02 J\r END   
+FLG1 \x01\x0c FLG1_SET \x80\r \x02 \xae\r END   
+FLG1 \xca\x0c FLG1_SET  \r \x02 J\r END   
+FLG1 \x01\x0c FLG1_SET \x80\r \x02 \xae\r END   
+FLG1 \xc8\x0c FLG1_SET  \r \x02 J\r END   
+FLG1 \x01\x0c FLG1_SET \x80\r \x02 \xae\r END  \x1e\x02 \x02
+CMD5 TextWindowOnDirect RUNF \x12\x0f END  \x1e\x02 
+CMD3 TextClose VAR1 F\x0f END 
 END_SCRIPT

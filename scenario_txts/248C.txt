@@ -1,7 +1,7 @@
 START_SCRIPT
 )!\x01`B#\x01B\x1b
-CSCE SCE248_001 \x06 SCE_DONE 
-FLG1 \x8c\x01 FLG2  \x93\x01 FLG2_SET \x03\xb9
+SCEC SCE248_001 \x06 SCE_DONE 
+TEXT1  \x93\x01 TEXT2 \xb9
  
 拓司\n　「走れッ！」@
 \nいうが早いか、すでに拓司は地を蹴っている。@
@@ -19,10 +19,10 @@ FLG1 \x8c\x01 FLG2  \x93\x01 FLG2_SET \x03\xb9
 
   
 FLG1 J\x0c FLG1_SET
-WHAT .\\Data\\Script\\TextFunc.Fob RUNF N\x03 \x02
-CMD1 TextOn RUNF |\x03 END
-CSCE SCE248_002 \x98\x03 SCE_DONE 
-FLG1 \x8c\x01 FLG2 $\x93\x01 FLG2_SET \x03h
+CMD7 .\\Data\\Script\\TextFunc.Fob RUNF N\x03 
+CMD2 TextOn RUNF |\x03 END 
+SCEC SCE248_002 \x98\x03 SCE_DONE 
+TEXT1 $\x93\x01 TEXT2 h
  
 地鳴りは徐々に大きくなっていく。@
 低く、重く……それは世界の終末を確信させるに十分な不吉さを\n備えていた。@
@@ -32,9 +32,9 @@ FLG1 \x8c\x01 FLG2 $\x93\x01 FLG2_SET \x03h
 亀裂は、あたかも生命を持っているかのように……雪崩落ちる雷\nのように……窓ガラスを走り……\
 
   
-FLG1 \xdc\x03\x0c FLG1_SET N\x03 \x02 |\x03 END
-CSCE SCE248_003 \xb6\x05 SCE_DONE 
-FLG1 \x8c\x01 FLG2 (\x93\x01 FLG2_SET \x03\x8c
+FLG1 \xdc\x03\x0c FLG1_SET N\x03 \x02 |\x03 END 
+SCEC SCE248_003 \xb6\x05 SCE_DONE 
+TEXT1 (\x93\x01 TEXT2 \x8c
  
 ざあっ！@
 \n足の裏から頭のてっぺんへ。@
@@ -46,9 +46,9 @@ FLG1 \x8c\x01 FLG2 (\x93\x01 FLG2_SET \x03\x8c
 /*▲↑停止まで待つ*/\a3,0,0,0,\a4,0,0,0,\n拓司\n　「！」\
 
   
-FLG1 \xfa\x05\x0c FLG1_SET N\x03 \x02 |\x03 END
-CSCE SCE248_004 d\x08 SCE_DONE 
-FLG1 \x8c\x01 FLG2 ,\x93\x01 FLG2_SET \x03U
+FLG1 \xfa\x05\x0c FLG1_SET N\x03 \x02 |\x03 END 
+SCEC SCE248_004 d\x08 SCE_DONE 
+TEXT1 ,\x93\x01 TEXT2 U
  
 世界が軋んでいた。@
 耳の奥で生まれたその悲鳴は、耳の奥へ針のようにつきささり、\n脳味噌のなかで爆発した。\p飛び散った破片は頭蓋骨の内側を反射\nして、反射して、反射した。@
@@ -57,9 +57,9 @@ FLG1 \x8c\x01 FLG2 ,\x93\x01 FLG2_SET \x03U
 頭そのものが爆発しないのが不思議だった。\
 
   
-FLG1 \xa8\x08\x0c FLG1_SET N\x03 \x02 |\x03 END
-CSCE SCE248_005 6\n SCE_DONE 
-FLG1 \x8c\x01 FLG2 0\x93\x01 FLG2_SET \x03}
+FLG1 \xa8\x08\x0c FLG1_SET N\x03 \x02 |\x03 END 
+SCEC SCE248_005 6\n SCE_DONE 
+TEXT1 0\x93\x01 TEXT2 }
  
 拓司\n　「ああああああああああああ！」@
 \n拓司は耳をふさいでうずくまった。@
@@ -71,9 +71,9 @@ FLG1 \x8c\x01 FLG2 0\x93\x01 FLG2_SET \x03}
 白目をむき、耳から、鼻から、どす黒い血があふれ出している。\
 
   
-FLG1 z\n\x0c FLG1_SET N\x03 \x02 |\x03 END
-CSCE SCE248_006 \xa8\x0c SCE_DONE 
-FLG1 \x8c\x01 FLG2 4\x93\x01 FLG2_SET \x03\xa4
+FLG1 z\n\x0c FLG1_SET N\x03 \x02 |\x03 END 
+SCEC SCE248_006 \xa8\x0c SCE_DONE 
+TEXT1 4\x93\x01 TEXT2 \xa4
  
 拓司\n　「紅葉イイイイイイイイ！」@
 \n拓司は叫んだ。@
@@ -92,9 +92,9 @@ FLG1 \x8c\x01 FLG2 4\x93\x01 FLG2_SET \x03\xa4
 あるいは、解決されるべきものなのだ。\
 
   
-FLG1 \xec\x0c\x0c FLG1_SET N\x03 \x02 |\x03 END
-CSCE SCE248_007 \xb6\x0f SCE_DONE 
-FLG1 \x8c\x01 FLG2 8\x93\x01 FLG2_SET \x039
+FLG1 \xec\x0c\x0c FLG1_SET N\x03 \x02 |\x03 END 
+SCEC SCE248_007 \xb6\x0f SCE_DONE 
+TEXT1 8\x93\x01 TEXT2 9
  
 数メートル向こうに、紅葉の姿が見える。@
 拓司は一歩踏み出した。@
@@ -102,9 +102,9 @@ FLG1 \x8c\x01 FLG2 8\x93\x01 FLG2_SET \x039
 そうして一歩……一歩……忘れてしまった歩き方を思い出すかの\nように、拓司はゆっくりと歩き始めた。\
 
   
-FLG1 \xfa\x0f\x0c FLG1_SET N\x03 \x02 |\x03 END
-CSCE SCE248_008 \x18\x11 SCE_DONE 
-FLG1 \x8c\x01 FLG2 <\x93\x01 FLG2_SET \x03\xa0
+FLG1 \xfa\x0f\x0c FLG1_SET N\x03 \x02 |\x03 END 
+SCEC SCE248_008 \x18\x11 SCE_DONE 
+TEXT1 <\x93\x01 TEXT2 \xa0
  
 /*▲SE33　一回再生（再生終了待たず先へ）*/\a2,0,33,0,\a6,0,0,0,キイイイイイイイイイイイイイイイイイイイイイイイイイイイ！@
 /*▲↑　再生終了を待つ\a3,0,0,0,\a4,0,0,0,いつの間にか、鼻血が流れ出している。@
@@ -113,9 +113,9 @@ FLG1 \x8c\x01 FLG2 <\x93\x01 FLG2_SET \x03\xa0
 /*▲↑　再生終了を待つ\a3,0,0,0,\a4,0,0,0,\nここから俺は始まるのだ。@
 \n/*▲SE33　一回再生（再生終了待たず先へ）*/\a2,0,33,0,\a6,0,0,0,キイイイイイイイイイイイイイイイイイイイイイイイイイイイ！\w\n/*▲↑　再生終了を待つ*/\a3,0,0,0,\a4,0,0,0,\z
   
-FLG1 \\\x11\x0c FLG1_SET N\x03 \x02 |\x03 END
-CSCE SCE248_009 \x16\x14 SCE_DONE 
-FLG1 \x8c\x01 FLG2 @\x93\x01 FLG2_SET \x03I
+FLG1 \\\x11\x0c FLG1_SET N\x03 \x02 |\x03 END 
+SCEC SCE248_009 \x16\x14 SCE_DONE 
+TEXT1 @\x93\x01 TEXT2 I
  
 こうして旅が始まったいま、俺にはいまや目的があるのだ。@
 何かから逃げているのではなく、何かに向かっているのだ。@
@@ -125,12 +125,12 @@ FLG1 \x8c\x01 FLG2 @\x93\x01 FLG2_SET \x03I
 動くのだ。\
 
   
-FLG1 Z\x14\x0c FLG1_SET N\x03 \x02 |\x03 END  
+FLG1 Z\x14\x0c FLG1_SET N\x03 \x02 |\x03 END   
 FLG1 :\x0c FLG1_SET
-FOBT .\\Data\\Script\\Bg.Fob OPEN \xd2\x15 \x02
-CMD2 BgAutoFadeIn OPEN \xfc\x15 END
-CSCE SCE248_010  \x16 SCE_DONE 
-FLG1 \x8c\x01 FLG2 D\x93\x01 FLG2_SET \x03w
+CMD6 .\\Data\\Script\\Bg.Fob VAR2 \xd2\x15 \x02
+CMD4 BgAutoFadeIn VAR2 \xfc\x15 END 
+SCEC SCE248_010  \x16 SCE_DONE 
+TEXT1 D\x93\x01 TEXT2 w
  
 拓司\n　「紅葉！」@
 \n紅葉は動かない。@
@@ -145,10 +145,10 @@ FLG1 \x8c\x01 FLG2 D\x93\x01 FLG2_SET \x03w
 　　ワハ、ワハ、ワハハハハハハハハハハ！」\
 
   
-FLG1 d\x16\x0c FLG1_SET N\x03 \x02 |\x03 END  
-FLG1 \xc9\x0c FLG1_SET \xd2\x15 \x02 \xfc\x15 END
-CSCE SCE248_011 \xae\x18 SCE_DONE 
-FLG1 \x8c\x01 FLG2 H\x93\x01 FLG2_SET \x03L
+FLG1 d\x16\x0c FLG1_SET N\x03 \x02 |\x03 END   
+FLG1 \xc9\x0c FLG1_SET \xd2\x15 \x02 \xfc\x15 END 
+SCEC SCE248_011 \xae\x18 SCE_DONE 
+TEXT1 H\x93\x01 TEXT2 L
  
 ふいに目の前が真っ白になった。@
 すべての音が聞こえなくなった。@
@@ -160,11 +160,11 @@ FLG1 \x8c\x01 FLG2 H\x93\x01 FLG2_SET \x03L
 勝ったんだ、と。\
 
   
-FLG1 \xf2\x18\x0c FLG1_SET N\x03 \x02 |\x03 END  
+FLG1 \xf2\x18\x0c FLG1_SET N\x03 \x02 |\x03 END   
 FLG1 \x02\x0c FLG1_SET
-FOBT .\\Data\\Script\\Bgm.Fob CLOSE v\x1a \x02
-CMD1 SeStop RUNF \xa0\x1a END v\x1a \x02
-CMD1 StopCD RUNF \xc8\x1a END  
-FLG1 \xc8\x0c FLG1_SET \xd2\x15 \x02 \xfc\x15 END N\x03 \x02
-CSCE TextClose CLOSE $\x1b END
+CMD6 .\\Data\\Script\\Bgm.Fob VAR1 v\x1a 
+CMD2 SeStop RUNF \xa0\x1a END  v\x1a 
+CMD2 StopCD RUNF \xc8\x1a END   
+FLG1 \xc8\x0c FLG1_SET \xd2\x15 \x02 \xfc\x15 END  N\x03 
+CMD3 TextClose VAR1 $\x1b END 
 END_SCRIPT

@@ -1,7 +1,7 @@
 START_SCRIPT
 \x18\x06\x01\xa4\t3\x01\xc6\x04
-CSCE SCE016_001 \x06 SCE_DONE 
-FLG1 \x8c\x01 FLG2 \xa0( FLG2_SET \x03^
+SCEC SCE016_001 \x06 SCE_DONE 
+TEXT1 \xa0( TEXT2 ^
  
 紅葉\n　「……。あのねえ、アンタ、女の子に会うたびそんな適当なこ\n　　といってんじゃないでしょうね？@
 　　『僕はいつも君のこと見てるよ』ってアピール？@
@@ -11,10 +11,10 @@ FLG1 \x8c\x01 FLG2 \xa0( FLG2_SET \x03^
 拓司\n　「……」\w\z
   
 FLG1 J\x0c FLG1_SET
-WHAT .\\Data\\Script\\TextFunc.Fob RUNF \xe2\x01 \x02
-CMD1 TextOn RUNF \x10\x02 END
-CSCE SCE016_002 ,\x02 SCE_DONE 
-FLG1 \x8c\x01 FLG2 \xa4( FLG2_SET \x03(
+CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \xe2\x01 
+CMD2 TextOn RUNF \x10\x02 END 
+SCEC SCE016_002 ,\x02 SCE_DONE 
+TEXT1 \xa4( TEXT2 (
  
 紅葉\n　「……リップ」@
 拓司\n　「はあ？」@
@@ -23,9 +23,9 @@ FLG1 \x8c\x01 FLG2 \xa4( FLG2_SET \x03(
 紅葉\n　「……」@
 拓司\n　「……」\w\z
   
-FLG1 p\x02\x0c FLG1_SET \xe2\x01 \x02 \x10\x02 END
-CSCE SCE016_003 J\x03 SCE_DONE 
-FLG1 \x8c\x01 FLG2 \xa8( FLG2_SET \x035
+FLG1 p\x02\x0c FLG1_SET \xe2\x01 \x02 \x10\x02 END 
+SCEC SCE016_003 J\x03 SCE_DONE 
+TEXT1 \xa8( TEXT2 5
  
 沈黙の後、紅葉が突然、えい、と拓司の背中にパンチを飛ばした。\n@
 拓司\n　「いて！　なんだよ、お前！」@
@@ -34,6 +34,6 @@ FLG1 \x8c\x01 FLG2 \xa8( FLG2_SET \x035
 紅葉\n　「うるさいっ！」\
 
   
-FLG1 \x8e\x03\x0c FLG1_SET \xe2\x01 \x02 \x10\x02 END \xe2\x01 \x02
-CSCE TextClose CLOSE \xa8\x04 END
+FLG1 \x8e\x03\x0c FLG1_SET \xe2\x01 \x02 \x10\x02 END  \xe2\x01 
+CMD3 TextClose VAR1 \xa8\x04 END 
 END_SCRIPT

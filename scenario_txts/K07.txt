@@ -1,12 +1,12 @@
 START_SCRIPT
 v\t\x01`B#\x018\x07  
 FLG1 \xc8\x0c FLG1_SET
-FOBT .\\Data\\Script\\Bg.Fob OPEN   \x02
-CMD2 BgAutoFadeIn OPEN J END
-FOBT .\\Data\\Script\\Bgm.Fob CLOSE n \x02
-CMD1 StopCD RUNF \x98 END
-CSCE SCEK07_001 \xb4 SCE_DONE 
-FLG1 \x8c\x01 FLG2 \xf8\xa6\x01 FLG2_SET \x03\x8a
+CMD6 .\\Data\\Script\\Bg.Fob VAR2   \x02
+CMD4 BgAutoFadeIn VAR2 J END 
+CMD6 .\\Data\\Script\\Bgm.Fob VAR1 n 
+CMD2 StopCD RUNF \x98 END 
+SCEC SCEK07_001 \xb4 SCE_DONE 
+TEXT1 \xf8\xa6\x01 TEXT2 \x8a
  
 　目的地は歩道橋だと、私は思っていた。@
 　そこには道と、歩道橋しかなかったからだ。@
@@ -19,10 +19,10 @@ FLG1 \x8c\x01 FLG2 \xf8\xa6\x01 FLG2_SET \x03\x8a
 ゆきがここで隠れて煙草でも吸っているということなのだろうか？\n\pだんだん腹が立ってきた。\w\z
   
 FLG1 \xf8\x0c FLG1_SET
-WHAT .\\Data\\Script\\TextFunc.Fob RUNF @\x03 \x02
-CMD1 TextOn RUNF n\x03 END
-CSCE SCEK07_002 \x8a\x03 SCE_DONE 
-FLG1 \x8c\x01 FLG2 \xf8\xa6\x01 FLG2_SET \x03\x9b
+CMD7 .\\Data\\Script\\TextFunc.Fob RUNF @\x03 
+CMD2 TextOn RUNF n\x03 END 
+SCEC SCEK07_002 \x8a\x03 SCE_DONE 
+TEXT1 \xf8\xa6\x01 TEXT2 \x9b
  
 　そんなことが秘密だとでもいうつもりか？@
 私が告白した秘密に比べて、喫煙なんてちっぽけすぎる。@
@@ -36,12 +36,12 @@ FLG1 \x8c\x01 FLG2 \xf8\xa6\x01 FLG2_SET \x03\x9b
 聞いてしまったら、私はもうその秘密から逃れることはできない。\n\p興奮が私の中から急速に引いてゆき、白茶けた無感動がかわりに\n広がった。@
 私は急に怖くなった。\w\z
   
-FLG1 \xce\x03\x0c FLG1_SET @\x03 \x02 n\x03 END\x03\x18
+FLG1 \xce\x03\x0c FLG1_SET @\x03 \x02 n\x03 END \x03\x18
 CHOICE
 「もういいよ、帰ろう」と私はいった\n「聞かせて」と、私は恐怖を抑えていった。\n\l0,2,
 ENDCHOICE
 
   
-FLG1 t\x06\x0c FLG1_SET @\x03 \x02 n\x03 END @\x03 \x02
-CSCE TextClose CLOSE \x1a\x07 END
+FLG1 t\x06\x0c FLG1_SET @\x03 \x02 n\x03 END  @\x03 
+CMD3 TextClose VAR1 \x1a\x07 END 
 END_SCRIPT

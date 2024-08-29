@@ -1,13 +1,13 @@
 START_SCRIPT
 \xa6\n\x01`B#\x01\xbc\x07  
 FLG1 \\\x0c FLG1_SET
-FOBT .\\Data\\Script\\Bg.Fob OPEN   \x02
-CMD2 BgAutoFadeIn OPEN J END  
+CMD6 .\\Data\\Script\\Bg.Fob VAR2   \x02
+CMD4 BgAutoFadeIn VAR2 J END   
 FLG1 \x04\x01\x0c FLG1_SET
-FOBT .\\Data\\Script\\Bgm.Fob CLOSE \x88 \x02
-CMD1 PlayCD RUNF \xb2 END
-CSCE SCEK04_A01 \xce SCE_DONE 
-FLG1 \x8c\x01 FLG2 X\xa6\x01 FLG2_SET \x03\xe0
+CMD6 .\\Data\\Script\\Bgm.Fob VAR1 \x88 
+CMD2 PlayCD RUNF \xb2 END 
+SCEC SCEK04_A01 \xce SCE_DONE 
+TEXT1 X\xa6\x01 TEXT2 \xe0
  
 　あまり本筋に関係がないから詳しくは語らないけれど、\n結局、私はゆきにバージンをあげた（あなたと寝たとき私はもう\nバージンじゃなかったけど、それでもあなたは私と寝た初めての\n男の子だったってわけ）。@
 いまどき処女性に神聖さなんて求めてはいないけれど、それでも\n私は、私たちの関係が新しいステージにスライドしたと感じたも\nのだった。@
@@ -20,12 +20,12 @@ FLG1 \x8c\x01 FLG2 X\xa6\x01 FLG2_SET \x03\xe0
 どきどきして、誇らしかった。\w\z
   
 FLG1 \x12\x01\x0c FLG1_SET
-WHAT .\\Data\\Script\\TextFunc.Fob RUNF \xb2\x04 \x02
-CMD1 TextOn RUNF \xe0\x04 END  
-FLG1 \xc8\x0c FLG1_SET   \x02 J END \x88 \x02
-CMD1 StopCD RUNF <\x05 END
-CSCE SCEK04_A02 X\x05 SCE_DONE 
-FLG1 \x8c\x01 FLG2 \\\xa6\x01 FLG2_SET \x03o
+CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \xb2\x04 
+CMD2 TextOn RUNF \xe0\x04 END   
+FLG1 \xc8\x0c FLG1_SET   \x02 J END  \x88 
+CMD2 StopCD RUNF <\x05 END 
+SCEC SCEK04_A02 X\x05 SCE_DONE 
+TEXT1 \\\xa6\x01 TEXT2 o
  
 　７月２７日（－－この日付が重要なの）、いつものように抱き\n合っていると、突然ゆきが泣き始めた。@
 絞り出すような悲痛な泣き方だった。@
@@ -36,6 +36,6 @@ FLG1 \x8c\x01 FLG2 \\\xa6\x01 FLG2_SET \x03o
 そしてようやく、ゆきはいった。@
 今日、自分は自殺を決意していたのだと。\w\z
   
-FLG1 \x9c\x05\x0c FLG1_SET \xb2\x04 \x02 \xe0\x04 END \xb2\x04 \x02
-CSCE TextClose CLOSE \x9e\x07 END
+FLG1 \x9c\x05\x0c FLG1_SET \xb2\x04 \x02 \xe0\x04 END  \xb2\x04 
+CMD3 TextClose VAR1 \x9e\x07 END 
 END_SCRIPT

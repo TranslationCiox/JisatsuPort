@@ -1,7 +1,7 @@
 START_SCRIPT
 <\x10\x01`B#\x01>\r
-CSCE SCE055_001 \x06 SCE_DONE 
-FLG1 \x8c\x01 FLG2 \x90e FLG2_SET \x03\x98
+SCEC SCE055_001 \x06 SCE_DONE 
+TEXT1 \x90e TEXT2 \x98
  
 　拓司は胸のムカツキを必死に押さえた。@
 　自殺波動などというものが信じられないうえに、なたねが『前\n兆』を察知できるなどという話は初耳だ。\pでたらめだ。\pなたねの\n話は、なにもかもが常軌を逸している。\pその場その場の思いつき\nで、ものをいっているとしか思えない。@
@@ -13,10 +13,10 @@ FLG1 \x8c\x01 FLG2 \x90e FLG2_SET \x03\x98
 
   
 FLG1 J\x0c FLG1_SET
-WHAT .\\Data\\Script\\TextFunc.Fob RUNF \xca\x02 \x02
-CMD1 TextOn RUNF \xf8\x02 END
-CSCE SCE055_002 \x14\x03 SCE_DONE 
-FLG1 \x8c\x01 FLG2 \x94e FLG2_SET \x03\xcd
+CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \xca\x02 
+CMD2 TextOn RUNF \xf8\x02 END 
+SCEC SCE055_002 \x14\x03 SCE_DONE 
+TEXT1 \x94e TEXT2 \xcd
  
 なたね\n　「自殺っていうのは、自分がおかれている状況への絶望とかあ\n　　きらめとか、そんな悲しみの感情から生まれるでしょう？@
 　　でも悲しみは、簡単に怒りへと変化する……。\p『どうしてわ\n　　たしばっかり』『そもそもこんなになってしまったのは自分\n　　のせいじゃない』『納得いかない』……そういった怒りの感\n　　情は、他人へと転嫁される。\p誰だって、自分を責めるより他\n　　人を責めていた方がラクだから。\pたとえば、あなたがいま\n　　私に対してイライラしているのと一緒。\pくすくす……」@
@@ -25,9 +25,9 @@ FLG1 \x8c\x01 FLG2 \x94e FLG2_SET \x03\xcd
 拓司\n　「……」\
 
   
-FLG1 X\x03\x0c FLG1_SET \xca\x02 \x02 \xf8\x02 END
-CSCE SCE055_003 \xc6\x06 SCE_DONE 
-FLG1 \x8c\x01 FLG2 \x98e FLG2_SET \x03\x80
+FLG1 X\x03\x0c FLG1_SET \xca\x02 \x02 \xf8\x02 END 
+SCEC SCE055_003 \xc6\x06 SCE_DONE 
+TEXT1 \x98e TEXT2 \x80
  
 なたね\n　「……義妹さん、もともといじめられていたとか、そういうの\n　　あった？」@
 拓司\n　「もういい！\p　そんな話はどうでもいい！\p　五分待つと何があ\n　　るっていうんだ！」@
@@ -39,9 +39,9 @@ FLG1 \x8c\x01 FLG2 \x98e FLG2_SET \x03\x80
 \n早桃\n　「怖い……怖い……」\
 
   
-FLG1 \n\x07\x0c FLG1_SET \xca\x02 \x02 \xf8\x02 END
-CSCE SCE055_004 D\t SCE_DONE 
-FLG1 \x8c\x01 FLG2 \x9ce FLG2_SET \x03t
+FLG1 \n\x07\x0c FLG1_SET \xca\x02 \x02 \xf8\x02 END 
+SCEC SCE055_004 D\t SCE_DONE 
+TEXT1 \x9ce TEXT2 t
  
 \nその様子をひとり静かに見守っていた男子学生が、大声でいった。\n@
 学生\n　「みんな、静かにしろ！」@
@@ -51,14 +51,14 @@ FLG1 \x8c\x01 FLG2 \x9ce FLG2_SET \x03t
 \n学生\n　「そこでだ！\p　俺たちが背中を押してやろうと思う！\p　もう生\n　　きていてもしょうがないと思えるくらいのことを、虎菱早桃\n　　にしてやりたいと思う！」\
 
   
-FLG1 \x88\t\x0c FLG1_SET \xca\x02 \x02 \xf8\x02 END
-CSCE SCE055_005 \x92\x0b SCE_DONE 
-FLG1 \x8c\x01 FLG2 \x9ce FLG2_SET \x03A
+FLG1 \x88\t\x0c FLG1_SET \xca\x02 \x02 \xf8\x02 END 
+SCEC SCE055_005 \x92\x0b SCE_DONE 
+TEXT1 \x9ce TEXT2 A
  
 \n犯せえ！\p　という声が上がった。\pしかし男子学生はそれを片手で\n軽く制した。@
 \n学生\n　「男子がこれだけの人数いると、さすがに全員やるのは無理だ\n　　ろ？\p　それに、こんなウザキャラに、おれらのチ○ポなんか\n　　もったいねえよ。\pそこでだ……！」\
 
   
-FLG1 \xd6\x0b\x0c FLG1_SET \xca\x02 \x02 \xf8\x02 END \xca\x02 \x02
-CSCE TextClose CLOSE  \r END
+FLG1 \xd6\x0b\x0c FLG1_SET \xca\x02 \x02 \xf8\x02 END  \xca\x02 
+CMD3 TextClose VAR1  \r END 
 END_SCRIPT

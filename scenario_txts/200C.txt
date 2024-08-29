@@ -1,15 +1,15 @@
 START_SCRIPT
 \xd0%\x01`B#\x01^ 
-CSCE SCE200_001 \x06 SCE_DONE 
-FLG1 \x8c\x01 FLG2  H\x01 FLG2_SET   
+SCEC SCE200_001 \x06 SCE_DONE 
+TEXT1  H\x01\x0c"  
 FLG1 \xc9\x0c FLG1_SET
-FOBT .\\Data\\Script\\Bg.Fob OPEN d \x02
-CMD2 BgAutoFadeIn OPEN \x8e END  
+CMD6 .\\Data\\Script\\Bg.Fob VAR2 d \x02
+CMD4 BgAutoFadeIn VAR2 \x8e END   
 FLG1 \x02\x0c FLG1_SET  \x04
 FLG1 \x06\x0c FLG1_SET  \x08
 FLG1 \x01\x0c FLG1_SET
-FOBT .\\Data\\Script\\Bgm.Fob CLOSE \x01 \x02
-CMD1 SePlay RUNF *\x01 END\x03v
+CMD6 .\\Data\\Script\\Bgm.Fob VAR1 \x01 
+CMD2 SePlay RUNF *\x01 END \x03v
  
 拓司は、錆びたシャッターをこじあけるように、目を開く。@
 \n白い壁。@
@@ -25,10 +25,10 @@ CMD1 SePlay RUNF *\x01 END\x03v
 
   
 FLG1 F\x01\x0c FLG1_SET
-WHAT .\\Data\\Script\\TextFunc.Fob RUNF >\x03 \x02
-CMD1 TextOn RUNF l\x03 END
-CSCE SCE200_002 \x88\x03 SCE_DONE 
-FLG1 \x8c\x01 FLG2 $H\x01 FLG2_SET \x03T
+CMD7 .\\Data\\Script\\TextFunc.Fob RUNF >\x03 
+CMD2 TextOn RUNF l\x03 END 
+SCEC SCE200_002 \x88\x03 SCE_DONE 
+TEXT1 $H\x01 TEXT2 T
  
 拓司\n　「……どうも……教授……」@
 教授\n　「……」@
@@ -39,9 +39,9 @@ FLG1 \x8c\x01 FLG2 $H\x01 FLG2_SET \x03T
 \n腹の中にたまっていたストレスに、バチバチと怒りが放電し、大\n爆発した。\
 
   
-FLG1 \xcc\x03\x0c FLG1_SET >\x03 \x02 l\x03 END
-CSCE SCE200_003 V\x05 SCE_DONE 
-FLG1 \x8c\x01 FLG2 (H\x01 FLG2_SET \x03\xb0
+FLG1 \xcc\x03\x0c FLG1_SET >\x03 \x02 l\x03 END 
+SCEC SCE200_003 V\x05 SCE_DONE 
+TEXT1 (H\x01 TEXT2 \xb0
  
 拓司\n　「あんたは、『俺の世界』が夢だという！\p　でも、俺は『あん\n　　たの世界』について何も知らない！\p　自分が誰なのかもわか\n　　らないんだ！\p　なのにこの世界が本物だって信じろっていう\n　　のか？！」@
 教授\n　「……」@
@@ -49,9 +49,9 @@ FLG1 \x8c\x01 FLG2 (H\x01 FLG2_SET \x03\xb0
 　　どれが本当の世界なんだ？！」\
 
   
-FLG1 \x9a\x05\x0c FLG1_SET >\x03 \x02 l\x03 END
-CSCE SCE200_004 \x94\x08 SCE_DONE 
-FLG1 \x8c\x01 FLG2 ,H\x01 FLG2_SET \x03\xcb
+FLG1 \x9a\x05\x0c FLG1_SET >\x03 \x02 l\x03 END 
+SCEC SCE200_004 \x94\x08 SCE_DONE 
+TEXT1 ,H\x01 TEXT2 \xcb
  
 教授\n　「同情するよ」@
 拓司\n　「同情なんかいらない！\p　答をくれ！\p　現実と妄想の線引きを\n　　くれ！\p　答だ！\p　必要なのは答なんだッ！」@
@@ -62,9 +62,9 @@ FLG1 \x8c\x01 FLG2 ,H\x01 FLG2_SET \x03\xcb
 　悲惨なのは、そんなふうな神経症的不安のなかにあっても、\n『神経症的不安のなかにある自分』を客観的に観察している自\n分の意識……視点が……別のどこかにあるという事実である……。\n\
 
   
-FLG1 \xd8\x08\x0c FLG1_SET >\x03 \x02 l\x03 END
-CSCE SCE200_005 >\x0c SCE_DONE 
-FLG1 \x8c\x01 FLG2 0H\x01 FLG2_SET \x03\xa3
+FLG1 \xd8\x08\x0c FLG1_SET >\x03 \x02 l\x03 END 
+SCEC SCE200_005 >\x0c SCE_DONE 
+TEXT1 0H\x01 TEXT2 \xa3
  
 教授\n　「答はどこにもない。\p君の中にしかないんだ」@
 拓司\n　「……」@
@@ -73,17 +73,17 @@ FLG1 \x8c\x01 FLG2 0H\x01 FLG2_SET \x03\xa3
 拓司\n　「……」\
 
   
-FLG1 \x82\x0c\x0c FLG1_SET >\x03 \x02 l\x03 END
-CSCE SCE200_006 H\x0f SCE_DONE 
-FLG1 \x8c\x01 FLG2 4H\x01 FLG2_SET \x032
+FLG1 \x82\x0c\x0c FLG1_SET >\x03 \x02 l\x03 END 
+SCEC SCE200_006 H\x0f SCE_DONE 
+TEXT1 4H\x01 TEXT2 2
  
 教授\n　「あるいは、私というのは、どこかにいる別の私が見ている夢\n　　にすぎないのかもしれない。\pさらには夢を見ているのは私で\n　　すらなく、他の誰かなのかもしれない」@
 拓司\n　「……」\
 
   
-FLG1 \x8c\x0f\x0c FLG1_SET >\x03 \x02 l\x03 END
-CSCE SCE200_007 \x8e\x10 SCE_DONE 
-FLG1 \x8c\x01 FLG2 8H\x01 FLG2_SET \x03\xe8
+FLG1 \x8c\x0f\x0c FLG1_SET >\x03 \x02 l\x03 END 
+SCEC SCE200_007 \x8e\x10 SCE_DONE 
+TEXT1 8H\x01 TEXT2 \xe8
  
 教授\n　「答など、ないのだ。\pなにが現実でなにが妄想なのかを決める\n　　のは他人ではなく、本人なのだ。\p私はこう考えるよ。@
 　　－－合理的な世界こそが現実であると。\pいいかね、私だって\n　　夢くらいじゃ見る。\pしかし、それが『夢の世界』であると…\n　　…『現実の世界』ではないと認識するのは、夢の中で起こる\n　　ことが非合理的て脈絡を持たないからだ。\p私は医者だ。@
@@ -93,9 +93,9 @@ FLG1 \x8c\x01 FLG2 8H\x01 FLG2_SET \x03\xe8
 拓司\n　「……」\
 
   
-FLG1 \xd2\x10\x0c FLG1_SET >\x03 \x02 l\x03 END
-CSCE SCE200_008 \xac\x14 SCE_DONE 
-FLG1 \x8c\x01 FLG2 <H\x01 FLG2_SET \x03\x95
+FLG1 \xd2\x10\x0c FLG1_SET >\x03 \x02 l\x03 END 
+SCEC SCE200_008 \xac\x14 SCE_DONE 
+TEXT1 <H\x01 TEXT2 \x95
  
 教授\n　「君が定義する世界とはなにかね？\p　女が自分の思い通りに動\n　　くことかね？\p　自殺波動かね？」@
 拓司\n　「いえ……」@
@@ -105,9 +105,9 @@ FLG1 \x8c\x01 FLG2 <H\x01 FLG2_SET \x03\x95
 　　それだけの話だよ」\
 
   
-FLG1 \xf0\x14\x0c FLG1_SET >\x03 \x02 l\x03 END
-CSCE SCE200_009 ~\x17 SCE_DONE 
-FLG1 \x8c\x01 FLG2 @H\x01 FLG2_SET \x03\x92
+FLG1 \xf0\x14\x0c FLG1_SET >\x03 \x02 l\x03 END 
+SCEC SCE200_009 ~\x17 SCE_DONE 
+TEXT1 @H\x01 TEXT2 \x92
  
 /*▲SE01　再生（再生終わるまで待たずに進む）*/\a2,1,1,1,ザザザ……ザザッ……\pザアザザザ……ザアアアアア……@
 ザアザアアアアアアア……@
@@ -120,9 +120,9 @@ FLG1 \x8c\x01 FLG2 @H\x01 FLG2_SET \x03\x92
 眠って、二度と目覚めなければいいと思った。\p夢も見ずに完全に\n眠っているあいだだけ、自分が自分以外のものではない、完全な\n存在でいられるような気がした。\
 
   
-FLG1 \xc2\x17\x0c FLG1_SET >\x03 \x02 l\x03 END
-CSCE SCE200_010 D\x1a SCE_DONE 
-FLG1 \x8c\x01 FLG2 DH\x01 FLG2_SET \x03\x97
+FLG1 \xc2\x17\x0c FLG1_SET >\x03 \x02 l\x03 END 
+SCEC SCE200_010 D\x1a SCE_DONE 
+TEXT1 DH\x01 TEXT2 \x97
  
 教授\n　「少し眠るといい」@
 拓司\n　「俺は……眠るのが怖い」@
@@ -130,18 +130,18 @@ FLG1 \x8c\x01 FLG2 DH\x01 FLG2_SET \x03\x97
 拓司\n　「でも、この世界は……遠いような気がする。\p馴染みがないよ\n　　うな……なにも知らない世界だ。\p『おれの世界』のことなら\n　　なんでも知ってるんだ……」\
 
   
-FLG1 \x88\x1a\x0c FLG1_SET >\x03 \x02 l\x03 END
-CSCE SCE200_011 \x1e\x1d SCE_DONE 
-FLG1 \x8c\x01 FLG2 HH\x01 FLG2_SET \x039
+FLG1 \x88\x1a\x0c FLG1_SET >\x03 \x02 l\x03 END 
+SCEC SCE200_011 \x1e\x1d SCE_DONE 
+TEXT1 HH\x01 TEXT2 9
  
 教授\n　「そう思っているだけだ。\p夢とはそういうものだ。\p夢の中にい\n　　る限り、セットの継ぎ目を見つけることはできない。@
 　　目覚めて、客観的に見ることで、矛盾が浮かび上がってくる\n　　のだよ」@
 拓司\n　「……」\
 
   
-FLG1 b\x1d\x0c FLG1_SET >\x03 \x02 l\x03 END
-CSCE SCE200_012 \x80\x1e SCE_DONE 
-FLG1 \x8c\x01 FLG2 LH\x01 FLG2_SET \x030
+FLG1 b\x1d\x0c FLG1_SET >\x03 \x02 l\x03 END 
+SCEC SCE200_012 \x80\x1e SCE_DONE 
+TEXT1 LH\x01 TEXT2 0
  
 眠れ俺。@
 眠れ俺。@
@@ -153,9 +153,9 @@ FLG1 \x8c\x01 FLG2 LH\x01 FLG2_SET \x030
 そのとき、突如、何者かが拓司の肩を掴んだ。\
 
   
-FLG1 \xc4\x1e\x0c FLG1_SET >\x03 \x02 l\x03 END  
-FLG1 \x02\x0c FLG1_SET \x01 \x02
-CMD1 SeStop RUNF \xe4\x1f END  
-FLG1 \xc8\x0c FLG1_SET d \x02 \x8e END >\x03 \x02
-CSCE TextClose CLOSE @  END
+FLG1 \xc4\x1e\x0c FLG1_SET >\x03 \x02 l\x03 END   
+FLG1 \x02\x0c FLG1_SET \x01 
+CMD2 SeStop RUNF \xe4\x1f END   
+FLG1 \xc8\x0c FLG1_SET d \x02 \x8e END  >\x03 
+CMD3 TextClose VAR1 @  END 
 END_SCRIPT

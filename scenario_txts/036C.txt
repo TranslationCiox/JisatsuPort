@@ -1,7 +1,7 @@
 START_SCRIPT
 \x8a\x0e\x01`B#\x01\xf0\x0b
-CSCE SCE036_001 \x06 SCE_DONE 
-FLG1 \x8c\x01 FLG2 \xe0G FLG2_SET \x03e
+SCEC SCE036_001 \x06 SCE_DONE 
+TEXT1 \xe0G TEXT2 e
  
 錦城\n　「－－虎菱くん？」@
 /*▲BGM8　再生*/\a2,-1,8,1,/*■CG15　表示*/\a7,-2,-2,0,\a0,14,2,0,\a6,-2,0,0,\n　背後からの声にぎくりと振り返ると、そこには現代国語の錦城\n茜子が立っていた。@
@@ -11,10 +11,10 @@ FLG1 \x8c\x01 FLG2 \xe0G FLG2_SET \x03e
 拓司\n　「……」\w\z
   
 FLG1 J\x0c FLG1_SET
-WHAT .\\Data\\Script\\TextFunc.Fob RUNF \xfe\x01 \x02
-CMD1 TextOn RUNF ,\x02 END
-CSCE SCE036_002 H\x02 SCE_DONE 
-FLG1 \x8c\x01 FLG2 \xe4G FLG2_SET \x03\x81
+CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \xfe\x01 
+CMD2 TextOn RUNF ,\x02 END 
+SCEC SCE036_002 H\x02 SCE_DONE 
+TEXT1 \xe4G TEXT2 \x81
  
 　うんざりだった。@
 ついに、この学校に残された唯一のマシな場所が無くなってしま\nう……。@
@@ -23,9 +23,9 @@ FLG1 \x8c\x01 FLG2 \xe4G FLG2_SET \x03\x81
 写真に撮って脅迫して……授業中にリモコンローターでやってや\nろう……\p１日最低５人は学生を誘惑するように命令し、セック\nス中毒にして……\p早桃とレズらせるのもいいな……\p早桃にペニ\nスバンドを着けさせて、目の前で犯させよう……@
 そして……？\w\z
   
-FLG1 \x8c\x02\x0c FLG1_SET \xfe\x01 \x02 ,\x02 END
-CSCE SCE036_003 \xca\x04 SCE_DONE 
-FLG1 \x8c\x01 FLG2 \xe8G FLG2_SET \x03z
+FLG1 \x8c\x02\x0c FLG1_SET \xfe\x01 \x02 ,\x02 END 
+SCEC SCE036_003 \xca\x04 SCE_DONE 
+TEXT1 \xe8G TEXT2 z
  
 /*▲BGM8　再生*/\a2,-1,8,1,/*■CG15　表示　フェードイン*/\a7,-2,-2,0,\a0,14,2,0,\a6,-2,0,0,　拓司ははっと我に返り、驚愕した。@
 錦城をレイプするという考えは、ごく自然に浮かび上がってきた\nものだった。@
@@ -35,9 +35,9 @@ FLG1 \x8c\x01 FLG2 \xe8G FLG2_SET \x03z
 自分でもすでにコントロールできないほどに、妄想世界が膨れあ\nがっている。@
 すべてを押しつぶしてしまいそうなくらいに。\w\z
   
-FLG1 \x0e\x05\x0c FLG1_SET \xfe\x01 \x02 ,\x02 END
-CSCE SCE036_004 0\x07 SCE_DONE 
-FLG1 \x8c\x01 FLG2 \xecG FLG2_SET \x03g
+FLG1 \x0e\x05\x0c FLG1_SET \xfe\x01 \x02 ,\x02 END 
+SCEC SCE036_004 0\x07 SCE_DONE 
+TEXT1 \xecG TEXT2 g
  
 錦城\n　「虎菱くん？」@
 拓司\n　「……」@
@@ -48,11 +48,11 @@ FLG1 \x8c\x01 FLG2 \xecG FLG2_SET \x03g
 もしかしたらこれも妄想か、あるいは夢なのかもしれないじゃな\nいか。@
 目が覚めると自宅のベッドにいて、天井を見上げているのかもし\nれないじゃないか……。\w\z
   
-FLG1 t\x07\x0c FLG1_SET \xfe\x01 \x02 ,\x02 END
-FOBT .\\Data\\Script\\Bgm.Fob CLOSE J\t \x02
-CMD1 StopCD RUNF t\t END
-CSCE SCE036_005 \x90\t SCE_DONE 
-FLG1 \x8c\x01 FLG2 \xf0G FLG2_SET \x03n
+FLG1 t\x07\x0c FLG1_SET \xfe\x01 \x02 ,\x02 END 
+CMD6 .\\Data\\Script\\Bgm.Fob VAR1 J\t 
+CMD2 StopCD RUNF t\t END 
+SCEC SCE036_005 \x90\t SCE_DONE 
+TEXT1 \xf0G TEXT2 n
  
 錦城\n　「……まあ、いいわ」@
 拓司\n　「？」@
@@ -64,6 +64,6 @@ FLG1 \x8c\x01 FLG2 \xf0G FLG2_SET \x03n
 　　……どう？」@
 \n\a2,-1,7,1,\a6,0,0,0,錦城がぱちりとウインクした。\w\z
   
-FLG1 \xd4\t\x0c FLG1_SET \xfe\x01 \x02 ,\x02 END \xfe\x01 \x02
-CSCE TextClose CLOSE \xd2\x0b END
+FLG1 \xd4\t\x0c FLG1_SET \xfe\x01 \x02 ,\x02 END  \xfe\x01 
+CMD3 TextClose VAR1 \xd2\x0b END 
 END_SCRIPT

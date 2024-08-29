@@ -1,13 +1,13 @@
 START_SCRIPT
 \xcd\x08\x01`B#\x01\xae\x06  
 FLG1 C\x0c FLG1_SET
-FOBT .\\Data\\Script\\Bg.Fob OPEN   \x02
-CMD2 BgAutoFadeIn OPEN J END  
+CMD6 .\\Data\\Script\\Bg.Fob VAR2   \x02
+CMD4 BgAutoFadeIn VAR2 J END   
 FLG1 \x08\x01\x0c FLG1_SET
-FOBT .\\Data\\Script\\Bgm.Fob CLOSE \x88 \x02
-CMD1 PlayCD RUNF \xb2 END
-CSCE SCEG01_001 \xce SCE_DONE 
-FLG1 \x8c\x01 FLG2  \xc5\x01 FLG2_SET \x03*
+CMD6 .\\Data\\Script\\Bgm.Fob VAR1 \x88 
+CMD2 PlayCD RUNF \xb2 END 
+SCEC SCEG01_001 \xce SCE_DONE 
+TEXT1  \xc5\x01 TEXT2 *
  
 錦城\n　「……しっ！　私よ、虎菱くん」@
 拓司\n　「……先生？」@
@@ -15,11 +15,11 @@ FLG1 \x8c\x01 FLG2  \xc5\x01 FLG2_SET \x03*
 寄り添って寝転がるような形になる。\w\z
   
 FLG1 \x12\x01\x0c FLG1_SET
-WHAT .\\Data\\Script\\TextFunc.Fob RUNF \xda\x01 \x02
-CMD1 TextOn RUNF \x08\x02 END  
-FLG1 \xc8\x0c FLG1_SET   \x02 J END
-CSCE SCEG01_002 X\x02 SCE_DONE 
-FLG1 \x8c\x01 FLG2 $\xc5\x01 FLG2_SET \x03z
+CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \xda\x01 
+CMD2 TextOn RUNF \x08\x02 END   
+FLG1 \xc8\x0c FLG1_SET   \x02 J END 
+SCEC SCEG01_002 X\x02 SCE_DONE 
+TEXT1 $\xc5\x01 TEXT2 z
  
 錦城\n　「立派だったわ、虎菱くん」@
 拓司\n　「．．．．．．え？」@
@@ -30,9 +30,9 @@ FLG1 \x8c\x01 FLG2 $\xc5\x01 FLG2_SET \x03z
 　　そういう人はね、強いの。@
 　　周囲の状況にながされないで、自分という物を持ち続けられ\n　　るの。\p虎菱くんこそが、リーダーにふさわしいって」\w\z
   
-FLG1 \x9c\x02\x0c FLG1_SET \xda\x01 \x02 \x08\x02 END
-CSCE SCEG01_003 \xbe\x04 SCE_DONE 
-FLG1 \x8c\x01 FLG2 (\xc5\x01 FLG2_SET \x03H
+FLG1 \x9c\x02\x0c FLG1_SET \xda\x01 \x02 \x08\x02 END 
+SCEC SCEG01_003 \xbe\x04 SCE_DONE 
+TEXT1 (\xc5\x01 TEXT2 H
  
 　指が、そっと拓司の顎に触れた。@
 顎先から耳元へと、ゆっくりと指は移動する。\p冷たい指だ。@
@@ -41,7 +41,7 @@ FLG1 \x8c\x01 FLG2 (\xc5\x01 FLG2_SET \x03H
 \n錦城\n　「……先生からのエールだと思って。ね？」\
 
   
-FLG1 \x02\x05\x0c FLG1_SET \xda\x01 \x02 \x08\x02 END \x88 \x02
-CMD1 StopCD RUNF h\x06 END \xda\x01 \x02
-CSCE TextClose CLOSE \x90\x06 END
+FLG1 \x02\x05\x0c FLG1_SET \xda\x01 \x02 \x08\x02 END  \x88 
+CMD2 StopCD RUNF h\x06 END  \xda\x01 
+CMD3 TextClose VAR1 \x90\x06 END 
 END_SCRIPT

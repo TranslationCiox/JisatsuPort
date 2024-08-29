@@ -1,21 +1,21 @@
 START_SCRIPT
 \xef\x0b\x01`B#\x01\xc2\t
-CSCE SCE002_001 \x06 SCE_DONE 
-FLG1 \x8c\x01 FLG2 \xc0\x12 FLG2_SET \x03\x12
+SCEC SCE002_001 \x06 SCE_DONE 
+TEXT1 \xc0\x12 TEXT2 \x12
  
 \n\n\n\n\n\n\n\n\n\n　　　　　　『ジサツのための１０１の方法』\
 
   
 FLG1 J\x0c FLG1_SET
-WHAT .\\Data\\Script\\TextFunc.Fob RUNF \xb2 \x02
-CMD1 TextOn RUNF \xe0 END
-CSCE SCE002_002 \xfc SCE_DONE 
-FLG1 \x8c\x01 FLG2 \xc4\x12 FLG2_SET   
+CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \xb2 
+CMD2 TextOn RUNF \xe0 END 
+SCEC SCE002_002 \xfc SCE_DONE 
+TEXT1 \xc4\x12\x0c"  
 FLG1 \x02\x0c FLG1_SET  \x04
 FLG1 \x01\x0c FLG1_SET  \x08
 FLG1 \x01\x0c FLG1_SET
-FOBT .\\Data\\Script\\Bgm.Fob CLOSE \x8e\x01 \x02
-CMD1 SePlay RUNF \xb8\x01 END\x03\x89
+CMD6 .\\Data\\Script\\Bgm.Fob VAR1 \x8e\x01 
+CMD2 SePlay RUNF \xb8\x01 END \x03\x89
  
 学生　「なんだアイツ？」@
 学生　「目立ちたいんだろ？」@
@@ -37,9 +37,9 @@ CMD1 SePlay RUNF \xb8\x01 END\x03\x89
 学生　「愉快犯」\
 
   
-FLG1 \xd4\x01\x0c FLG1_SET \xb2 \x02 \xe0 END
-CSCE SCE002_003 2\x04 SCE_DONE 
-FLG1 \x8c\x01 FLG2 \xc8\x12 FLG2_SET \x03f
+FLG1 \xd4\x01\x0c FLG1_SET \xb2 \x02 \xe0 END 
+SCEC SCE002_003 2\x04 SCE_DONE 
+TEXT1 \xc8\x12 TEXT2 f
  
 学生　「なんかの宣伝とか？」@
 学生　「サーカスの宣伝」@
@@ -57,9 +57,9 @@ FLG1 \x8c\x01 FLG2 \xc8\x12 FLG2_SET \x03f
 学生　「死ぬんじゃない？」\
 
   
-FLG1 v\x04\x0c FLG1_SET \xb2 \x02 \xe0 END
-CSCE SCE002_004 H\x06 SCE_DONE 
-FLG1 \x8c\x01 FLG2 \xcc\x12 FLG2_SET \x03(
+FLG1 v\x04\x0c FLG1_SET \xb2 \x02 \xe0 END 
+SCEC SCE002_004 H\x06 SCE_DONE 
+TEXT1 \xcc\x12 TEXT2 (
  
 学生　「……」@
 学生　「……」@
@@ -71,19 +71,19 @@ FLG1 \x8c\x01 FLG2 \xcc\x12 FLG2_SET \x03(
 学生　「あっ？！」\
 
   
-FLG1 \x8c\x06\x0c FLG1_SET \xb2 \x02 \xe0 END
-CSCE SCE002_005 f\x07 SCE_DONE 
-FLG1 \x8c\x01 FLG2 \xd0\x12 FLG2_SET  \x8e\x01 \x02
-CMD1 StopCD RUNF \xb6\x07 END  
-FLG1 \x02\x0c FLG1_SET \x8e\x01 \x02
-CMD1 SeStop RUNF \xf8\x07 END  
+FLG1 \x8c\x06\x0c FLG1_SET \xb2 \x02 \xe0 END 
+SCEC SCE002_005 f\x07 SCE_DONE 
+TEXT1 \xd0\x12\x0c" \x8e\x01 
+CMD2 StopCD RUNF \xb6\x07 END   
+FLG1 \x02\x0c FLG1_SET \x8e\x01 
+CMD2 SeStop RUNF \xf8\x07 END   
 FLG1 <\x0c FLG1_SET
-WHAT .\\Data\\Script\\TextFunc.fob RUNF .\x08 \x02
-CSCE WaitTime OPEN \\\x08 END  
+CMD7 .\\Data\\Script\\TextFunc.fob RUNF .\x08 
+CMD3 WaitTime VAR2 \\\x08 END   
 FLG1 \x0c FLG1_SET  \x04
 FLG1 \x02\x0c FLG1_SET  \x08
-FLG1 \x0c FLG1_SET \x8e\x01 \x02
-CSCE SePlayEx OPEN \xd6\x08 END\x03\x1a
+FLG1 \x0c FLG1_SET \x8e\x01 
+CMD3 SePlayEx VAR2 \xd6\x08 END \x03\x1a
  
 学生　「落ちたよ」@
 学生　「やばいよ」@
@@ -91,6 +91,6 @@ CSCE SePlayEx OPEN \xd6\x08 END\x03\x1a
 学生　「死んだでしょ」\
 
   
-FLG1 \xf6\x08\x0c FLG1_SET \xb2 \x02 \xe0 END \xb2 \x02
-CSCE TextClose CLOSE \xa4\t END
+FLG1 \xf6\x08\x0c FLG1_SET \xb2 \x02 \xe0 END  \xb2 
+CMD3 TextClose VAR1 \xa4\t END 
 END_SCRIPT

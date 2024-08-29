@@ -1,19 +1,19 @@
 START_SCRIPT
 \x82\x07\x01`B#\x01\xf2\x05
-CSCE SCE108_001 \x06 SCE_DONE 
-FLG1 \x8c\x01 FLG2 `\xb8 FLG2_SET \x03\x11
+SCEC SCE108_001 \x06 SCE_DONE 
+TEXT1 `\xb8 TEXT2 \x11
  
 \n\n\n\n\n\n\n\n\n\n　　　　　　　　　　　　　『６日目』\
 
   
 FLG1 J\x0c FLG1_SET
-WHAT .\\Data\\Script\\TextFunc.Fob RUNF \xae \x02
-CMD1 TextOn RUNF \xdc END  
+CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \xae 
+CMD2 TextOn RUNF \xdc END   
 FLG1 \x0c\x01\x0c FLG1_SET
-FOBT .\\Data\\Script\\Bgm.Fob CLOSE \x12\x01 \x02
-CMD1 PlayCD RUNF <\x01 END
-CSCE SCE108_002 X\x01 SCE_DONE 
-FLG1 \x8c\x01 FLG2 d\xb8 FLG2_SET \x03\x87
+CMD6 .\\Data\\Script\\Bgm.Fob VAR1 \x12\x01 
+CMD2 PlayCD RUNF <\x01 END 
+SCEC SCE108_002 X\x01 SCE_DONE 
+TEXT1 d\xb8 TEXT2 \x87
  
 早桃の風邪は快方に向かっている。@
 \nめだった衝突はない。\pなたねは淡々と、それまで通り食糧と水を\n配給した。\pしかし、なたねと一同のあいだに生まれた亀裂は、わ\nずかも回復していない。@
@@ -22,9 +22,9 @@ FLG1 \x8c\x01 FLG2 d\xb8 FLG2_SET \x03\x87
 \n錦城が、何度も意味ありげな視線を送ってくる。\p催促するような\n非難するような視線だ。\p拓司は気づかないふりをして、それを無\n視した。\
 
   
-FLG1 \x9c\x01\x0c FLG1_SET \xae \x02 \xdc END
-CSCE SCE108_003 \xf2\x03 SCE_DONE 
-FLG1 \x8c\x01 FLG2 h\xb8 FLG2_SET \x03V
+FLG1 \x9c\x01\x0c FLG1_SET \xae \x02 \xdc END 
+SCEC SCE108_003 \xf2\x03 SCE_DONE 
+TEXT1 h\xb8 TEXT2 V
  
 この日が誕生日だったというカンナのために、夜、一同は歌を歌\nった。@
 馬鹿馬鹿しいとは思ったが、そういったことこそが、いま、必要\nなものに思えた。@
@@ -32,6 +32,6 @@ FLG1 \x8c\x01 FLG2 h\xb8 FLG2_SET \x03V
 沈黙の中、なたねの「……馬鹿馬鹿しい」というつぶやきが、奇\n妙に大きく響いた。\
 
   
-FLG1 6\x04\x0c FLG1_SET \xae \x02 \xdc END \xae \x02
-CSCE TextClose CLOSE \xd4\x05 END
+FLG1 6\x04\x0c FLG1_SET \xae \x02 \xdc END  \xae 
+CMD3 TextClose VAR1 \xd4\x05 END 
 END_SCRIPT

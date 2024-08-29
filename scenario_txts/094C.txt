@@ -1,9 +1,9 @@
 START_SCRIPT
 \xd6\x06\x01`B#\x01\x82\x05
-FOBT .\\Data\\Script\\Bgm.Fob CLOSE \x06 \x02
-CMD1 StopCD RUNF 0 END
-CSCE SCE094_001 L SCE_DONE 
-FLG1 \x8c\x01 FLG2 \x80\xa2 FLG2_SET \x03\x8e
+CMD6 .\\Data\\Script\\Bgm.Fob VAR1 \x06 
+CMD2 StopCD RUNF 0 END 
+SCEC SCE094_001 L SCE_DONE 
+TEXT1 \x80\xa2 TEXT2 \x8e
  
 御堂の眼に、獰猛なひかりが宿った。@
 \n御堂\n　「虎菱、まさかてめえまでいかれちまったんじゃねえだろうな\n　　？」@
@@ -16,17 +16,17 @@ FLG1 \x8c\x01 FLG2 \x80\xa2 FLG2_SET \x03\x8e
 
   
 FLG1 \x90\x0c FLG1_SET
-WHAT .\\Data\\Script\\TextFunc.Fob RUNF \xe8\x02 \x02
-CMD1 TextOn RUNF \x16\x03 END
-CSCE SCE094_002 2\x03 SCE_DONE 
-FLG1 \x8c\x01 FLG2 \x84\xa2 FLG2_SET \x03P
+CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \xe8\x02 
+CMD2 TextOn RUNF \x16\x03 END 
+SCEC SCE094_002 2\x03 SCE_DONE 
+TEXT1 \x84\xa2 TEXT2 P
  
 拓司\n　「『ここを出ていきたい人間は、いつでもそれを実行すること\n　　ができる』。\pこれを最低限のルールにしよう。\p自殺波動とか、\n　　最終波動とか、ラジオからの指令電波とか、わからないこと\n　　が多すぎる。\p何が本当か分からない現状、何が正しい判断な\n　　のか、答は自分の中にしかない。\p自分で判断するんだ」\
 
   
-FLG1 v\x03\x0c FLG1_SET \xe8\x02 \x02 \x16\x03 END  
+FLG1 v\x03\x0c FLG1_SET \xe8\x02 \x02 \x16\x03 END   
 FLG1 \xc8\x0c FLG1_SET
-FOBT .\\Data\\Script\\Bg.Fob OPEN \n\x05 \x02
-CMD2 BgAutoFadeIn OPEN 4\x05 END \xe8\x02 \x02
-CSCE TextClose CLOSE d\x05 END
+CMD6 .\\Data\\Script\\Bg.Fob VAR2 \n\x05 \x02
+CMD4 BgAutoFadeIn VAR2 4\x05 END  \xe8\x02 
+CMD3 TextClose VAR1 d\x05 END 
 END_SCRIPT

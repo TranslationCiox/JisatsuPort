@@ -1,13 +1,13 @@
 START_SCRIPT
 ?!\x01`B#\x01\x9a\x1b  
 FLG1 \x06\x01\x0c FLG1_SET
-FOBT .\\Data\\Script\\Bgm.Fob CLOSE   \x02
-CMD1 PlayCD RUNF J END  
+CMD6 .\\Data\\Script\\Bgm.Fob VAR1   
+CMD2 PlayCD RUNF J END   
 FLG1 \xc9\x0c FLG1_SET
-FOBT .\\Data\\Script\\Bg.Fob OPEN \x80 \x02
-CMD2 BgAutoFadeIn OPEN \xaa END
-CSCE SCE024_001 \xce SCE_DONE 
-FLG1 \x8c\x01 FLG2  5 FLG2_SET \x03K
+CMD6 .\\Data\\Script\\Bg.Fob VAR2 \x80 \x02
+CMD4 BgAutoFadeIn VAR2 \xaa END 
+SCEC SCE024_001 \xce SCE_DONE 
+TEXT1  5 TEXT2 K
  
 『灰色』に引きずられるように現実に返って、拓司ははっと息を呑\nんだ。@
 いつの間にかベッドの上に横になっている。@
@@ -17,10 +17,10 @@ FLG1 \x8c\x01 FLG2  5 FLG2_SET \x03K
 
   
 FLG1 \x12\x01\x0c FLG1_SET
-WHAT .\\Data\\Script\\TextFunc.Fob RUNF ^\x02 \x02
-CMD1 TextOn RUNF \x8c\x02 END
-CSCE SCE024_002 \xa8\x02 SCE_DONE 
-FLG1 \x8c\x01 FLG2 $5 FLG2_SET \x03\xb8
+CMD7 .\\Data\\Script\\TextFunc.Fob RUNF ^\x02 
+CMD2 TextOn RUNF \x8c\x02 END 
+SCEC SCE024_002 \xa8\x02 SCE_DONE 
+TEXT1 $5 TEXT2 \xb8
  
 　回転部分に砂でも噛んでいるのか、音がしている。@
 最初に感じたのは、寝坊したのだ、という焦りだった。\pただ、すぐ\nにそうではないことがわかった。@
@@ -33,9 +33,9 @@ FLG1 \x8c\x01 FLG2 $5 FLG2_SET \x03\xb8
 拓司は立ち上がって、部屋の出口とおぼしき扉の前まで歩いていっ\nた。\p鉄の扉だ。\p扉には取っ手はなく、外に出ることはできない。\nこれでは本当に牢屋だ……。\
 
   
-FLG1 \xec\x02\x0c FLG1_SET ^\x02 \x02 \x8c\x02 END
-CSCE SCE024_003 \x06\x06 SCE_DONE 
-FLG1 \x8c\x01 FLG2 (5 FLG2_SET \x03\x93
+FLG1 \xec\x02\x0c FLG1_SET ^\x02 \x02 \x8c\x02 END 
+SCEC SCE024_003 \x06\x06 SCE_DONE 
+TEXT1 (5 TEXT2 \x93
  
 ここでようやく、拓司は自分が夢を見ているのだと気づいた。@
 \n夢にしてはずいぶんリアルだ。@
@@ -47,11 +47,11 @@ FLG1 \x8c\x01 FLG2 (5 FLG2_SET \x03\x93
 －－だからなんだっていうんだ？\
 
   
-FLG1 J\x06\x0c FLG1_SET ^\x02 \x02 \x8c\x02 END  
-FLG1 \x02\x0c FLG1_SET   \x02
-CMD1 SeStop RUNF \xf6\x08 END
-CSCE SCE024_004 \x12\t SCE_DONE 
-FLG1 \x8c\x01 FLG2 ,5 FLG2_SET \x03\x9a
+FLG1 J\x06\x0c FLG1_SET ^\x02 \x02 \x8c\x02 END   
+FLG1 \x02\x0c FLG1_SET   
+CMD2 SeStop RUNF \xf6\x08 END 
+SCEC SCE024_004 \x12\t SCE_DONE 
+TEXT1 ,5 TEXT2 \x9a
  
 拓司\n　「さて」@
 \nしきり直すように口に出してみる。@
@@ -69,9 +69,9 @@ FLG1 \x8c\x01 FLG2 ,5 FLG2_SET \x03\x9a
 まだ、この新しい世界に馴染んでいないだけなのだ。\p妄想世界を受\nけ入れたように、そのうちこの夢の世界も自分の一部になっていく\nのだろう……。\
 
   
-FLG1 V\t\x0c FLG1_SET ^\x02 \x02 \x8c\x02 END
-CSCE SCE024_005 \xf8\x0b SCE_DONE 
-FLG1 \x8c\x01 FLG2 05 FLG2_SET \x03c
+FLG1 V\t\x0c FLG1_SET ^\x02 \x02 \x8c\x02 END 
+SCEC SCE024_005 \xf8\x0b SCE_DONE 
+TEXT1 05 TEXT2 c
  
 拓司はドアを強く押してみた。\pびくともしない。@
 改めてベッドに横になり、夢よ醒めろ、と念じたが、一向に醒める\n様子はない。@
@@ -80,9 +80,9 @@ FLG1 \x8c\x01 FLG2 05 FLG2_SET \x03c
 そんなことを漠然と考えていると、どこからか小さな声が聞こえて\nきた。\
 
   
-FLG1 <\x0c\x0c FLG1_SET ^\x02 \x02 \x8c\x02 END
-CSCE SCE024_006 \x02\x0e SCE_DONE 
-FLG1 \x8c\x01 FLG2 45 FLG2_SET \x03[
+FLG1 <\x0c\x0c FLG1_SET ^\x02 \x02 \x8c\x02 END 
+SCEC SCE024_006 \x02\x0e SCE_DONE 
+TEXT1 45 TEXT2 [
  
 声\n　「……いるんでしょう？！　そこにいるんでしょう……」@
 \nまだ若い、女の声だ。\p声はどうやら壁の向こうから漏れ聞こえてい\nるようだ。@
@@ -93,9 +93,9 @@ FLG1 \x8c\x01 FLG2 45 FLG2_SET \x03[
 \n声に、明るい響きがこもる。\
 
   
-FLG1 F\x0e\x0c FLG1_SET ^\x02 \x02 \x8c\x02 END
-CSCE SCE024_007 \xec\x0f SCE_DONE 
-FLG1 \x8c\x01 FLG2 85 FLG2_SET \x03R
+FLG1 F\x0e\x0c FLG1_SET ^\x02 \x02 \x8c\x02 END 
+SCEC SCE024_007 \xec\x0f SCE_DONE 
+TEXT1 85 TEXT2 R
  
 声\n　「よかった！　もしかしてもう逢えないんじゃないかって思って\n　　た！」@
 拓司\n　「いや……人違いじゃないか？」@
@@ -107,9 +107,9 @@ FLG1 \x8c\x01 FLG2 85 FLG2_SET \x03R
 声\n　「やつらよ！」\
 
   
-FLG1 0\x10\x0c FLG1_SET ^\x02 \x02 \x8c\x02 END
-CSCE SCE024_008 \xb2\x11 SCE_DONE 
-FLG1 \x8c\x01 FLG2 <5 FLG2_SET \x03W
+FLG1 0\x10\x0c FLG1_SET ^\x02 \x02 \x8c\x02 END 
+SCEC SCE024_008 \xb2\x11 SCE_DONE 
+TEXT1 <5 TEXT2 W
  
 拓司\n　「ちょっと待ってくれ！　話がまったくわからない。@
 　　おれは君が探している人間じゃないし、やつらっていうのが誰\n　　のことなのかもわからない。\pだいたい君は誰だ？」@
@@ -117,10 +117,10 @@ FLG1 \x8c\x01 FLG2 <5 FLG2_SET \x03W
 \n声\n　「……ああ……やつら、あなたの記憶を……\p畜生畜生畜生畜生…\n　　…畜生！」\
 
   
-FLG1 \xf6\x11\x0c FLG1_SET ^\x02 \x02 \x8c\x02 END  
-FLG1 \xca\x0c FLG1_SET \x80 \x02 \xaa END
-CSCE SCE024_009 \xc0\x13 SCE_DONE 
-FLG1 \x8c\x01 FLG2 @5 FLG2_SET \x03\xb3
+FLG1 \xf6\x11\x0c FLG1_SET ^\x02 \x02 \x8c\x02 END   
+FLG1 \xca\x0c FLG1_SET \x80 \x02 \xaa END 
+SCEC SCE024_009 \xc0\x13 SCE_DONE 
+TEXT1 @5 TEXT2 \xb3
  
 \n/*▲SE01　再生（フェードイン）　*/\a2,2,1,0,　ザザザ……ザザッ……\pザアザザザ……ザアアアアア……@
 　ザアザアアアアアアア……@
@@ -130,9 +130,9 @@ FLG1 \x8c\x01 FLG2 @5 FLG2_SET \x03\xb3
 \n声はそこでピタリと止み、二度と聞こえてこなかった。\
 
   
-FLG1 \x04\x14\x0c FLG1_SET ^\x02 \x02 \x8c\x02 END
-CSCE SCE024_010 \n\x17 SCE_DONE 
-FLG1 \x8c\x01 FLG2 D5 FLG2_SET \x03\xd3
+FLG1 \x04\x14\x0c FLG1_SET ^\x02 \x02 \x8c\x02 END 
+SCEC SCE024_010 \n\x17 SCE_DONE 
+TEXT1 D5 TEXT2 \xd3
  
 かつん、かつん、かつん。@
 ドアの向こうは廊下にでもなっているのだろう、足音は遠くからま\nっすぐ近づいてきて…\pそして拓司のドアの前でピタリと止まった。\n\p静寂。@
@@ -146,9 +146,9 @@ FLG1 \x8c\x01 FLG2 D5 FLG2_SET \x03\xd3
 \n拓司は強く願った。@
 /* SE22 一回再生（再生終わり待たずに…とかできます？）　*/\a2,0,22,0,がちゃり、とドアが開いた。\w\n/* SE22 とめる　*/\a4,0,0,0,\z
   
-FLG1 N\x17\x0c FLG1_SET ^\x02 \x02 \x8c\x02 END  
-FLG1 \x01\x0c FLG1_SET   \x02 \xf6\x08 END  
-FLG1 \x02\x0c FLG1_SET   \x02 \xf6\x08 END  
-FLG1 \xc8\x0c FLG1_SET \x80 \x02 \xaa END ^\x02 \x02
-CSCE TextClose CLOSE |\x1b END
+FLG1 N\x17\x0c FLG1_SET ^\x02 \x02 \x8c\x02 END   
+FLG1 \x01\x0c FLG1_SET   \x02 \xf6\x08 END   
+FLG1 \x02\x0c FLG1_SET   \x02 \xf6\x08 END   
+FLG1 \xc8\x0c FLG1_SET \x80 \x02 \xaa END  ^\x02 
+CMD3 TextClose VAR1 |\x1b END 
 END_SCRIPT

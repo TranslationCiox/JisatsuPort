@@ -1,7 +1,7 @@
 START_SCRIPT
 D\x05\x01\xa4\t3\x018\x04
-CSCE SCE046_001 \x06 SCE_DONE 
-FLG1 \x8c\x01 FLG2 \x80W FLG2_SET \x03\x8b
+SCEC SCE046_001 \x06 SCE_DONE 
+TEXT1 \x80W TEXT2 \x8b
  
 御堂\n　「そうこないとな。@
 　　虎菱、お前、意外とノリいいじゃねえか」@
@@ -15,10 +15,10 @@ FLG1 \x8c\x01 FLG2 \x80W FLG2_SET \x03\x8b
 
   
 FLG1 J\x0c FLG1_SET
-WHAT .\\Data\\Script\\TextFunc.Fob RUNF \x96\x02 \x02
-CMD1 TextOn RUNF \xc4\x02 END
-CSCE SCE046_002 \xe0\x02 SCE_DONE 
-FLG1 \x8c\x01 FLG2 \x84W FLG2_SET \x03,
+CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \x96\x02 
+CMD2 TextOn RUNF \xc4\x02 END 
+SCEC SCE046_002 \xe0\x02 SCE_DONE 
+TEXT1 \x84W TEXT2 ,
  
 拓司\n　「……？」@
 なたね\n　「大丈夫よ」@
@@ -26,6 +26,6 @@ FLG1 \x8c\x01 FLG2 \x84W FLG2_SET \x03,
 ひとり廊下に取り残された拓司も、慌てて後を追う。@
 \z
   
-FLG1 $\x03\x0c FLG1_SET \x96\x02 \x02 \xc4\x02 END \x96\x02 \x02
-CSCE TextClose CLOSE \x1a\x04 END
+FLG1 $\x03\x0c FLG1_SET \x96\x02 \x02 \xc4\x02 END  \x96\x02 
+CMD3 TextClose VAR1 \x1a\x04 END 
 END_SCRIPT

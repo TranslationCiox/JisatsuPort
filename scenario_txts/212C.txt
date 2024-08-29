@@ -1,7 +1,7 @@
 START_SCRIPT
 \x91\x12\x01`B#\x01\x02\x0f
-CSCE SCE212_001 \x06 SCE_DONE 
-FLG1 \x8c\x01 FLG2 \xe0Z\x01 FLG2_SET \x03d
+SCEC SCE212_001 \x06 SCE_DONE 
+TEXT1 \xe0Z\x01 TEXT2 d
  
 もはや世界に定点を見いだすことは不可能だった。@
 『教授が語る世界』と『なたねが語る世界』と『学校に籠城する\n世界』。@
@@ -14,10 +14,10 @@ FLG1 \x8c\x01 FLG2 \xe0Z\x01 FLG2_SET \x03d
 
   
 FLG1 J\x0c FLG1_SET
-WHAT .\\Data\\Script\\TextFunc.Fob RUNF \xfa\x01 \x02
-CMD1 TextOn RUNF (\x02 END
-CSCE SCE212_002 D\x02 SCE_DONE 
-FLG1 \x8c\x01 FLG2 \xe4Z\x01 FLG2_SET \x03S
+CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \xfa\x01 
+CMD2 TextOn RUNF (\x02 END 
+SCEC SCE212_002 D\x02 SCE_DONE 
+TEXT1 \xe4Z\x01 TEXT2 S
  
 拓司\n　「とりあえず、『君の語る世界』を信じよう。\pなぜなら、その\n　　世界がいま、一番簡単に実験にかけられるからだ」@
 ナタネ\n　「……」@
@@ -25,9 +25,9 @@ FLG1 \x8c\x01 FLG2 \xe4Z\x01 FLG2_SET \x03S
 ナタネ\n　「ええ」\
 
   
-FLG1 \x88\x02\x0c FLG1_SET \xfa\x01 \x02 (\x02 END
-CSCE SCE212_003 \x0e\x04 SCE_DONE 
-FLG1 \x8c\x01 FLG2 \xe8Z\x01 FLG2_SET \x03\x87
+FLG1 \x88\x02\x0c FLG1_SET \xfa\x01 \x02 (\x02 END 
+SCEC SCE212_003 \x0e\x04 SCE_DONE 
+TEXT1 \xe8Z\x01 TEXT2 \x87
  
 拓司\n　「もしアイスクリームパフェが出現したとしても、『君の語っ\n　　た世界』が真実であることは証明できない。\pなぜならそれも\n　　また、俺の妄想が生み出した現象かもしれないからだ。@
 　　ただ、アイスクリームパフェが出現しなければ……少なくと\n　　も君の話がウソだということは証明できる。@
@@ -37,12 +37,12 @@ FLG1 \x8c\x01 FLG2 \xe8Z\x01 FLG2_SET \x03\x87
 \n拓司は、目を閉じた。\
 
   
-FLG1 R\x04\x0c FLG1_SET \xfa\x01 \x02 (\x02 END  
+FLG1 R\x04\x0c FLG1_SET \xfa\x01 \x02 (\x02 END   
 FLG1 \xc8\x0c FLG1_SET
-FOBT .\\Data\\Script\\Bg.Fob OPEN \xc2\x06 \x02
-CMD2 BgAutoFadeIn OPEN \xec\x06 END
-CSCE SCE212_004 \x10\x07 SCE_DONE 
-FLG1 \x8c\x01 FLG2 \xecZ\x01 FLG2_SET \x03\x88
+CMD6 .\\Data\\Script\\Bg.Fob VAR2 \xc2\x06 \x02
+CMD4 BgAutoFadeIn VAR2 \xec\x06 END 
+SCEC SCE212_004 \x10\x07 SCE_DONE 
+TEXT1 \xecZ\x01 TEXT2 \x88
  
 意識を集中させ、頭の中にアイスクリームパフェを思い描く。@
 拓司は『ナタネが語る世界』を……自分が『望む』ものを『創』\nれる世界を真剣に信じようと試みた。@
@@ -55,10 +55,10 @@ FLG1 \x8c\x01 FLG2 \xecZ\x01 FLG2_SET \x03\x88
 そう思ってしまう。\
 
   
-FLG1 T\x07\x0c FLG1_SET \xfa\x01 \x02 (\x02 END  
-FLG1 \xc9\x0c FLG1_SET \xc2\x06 \x02 \xec\x06 END
-CSCE SCE212_005 \xe2\t SCE_DONE 
-FLG1 \x8c\x01 FLG2 \xf0Z\x01 FLG2_SET \x036
+FLG1 T\x07\x0c FLG1_SET \xfa\x01 \x02 (\x02 END   
+FLG1 \xc9\x0c FLG1_SET \xc2\x06 \x02 \xec\x06 END 
+SCEC SCE212_005 \xe2\t SCE_DONE 
+TEXT1 \xf0Z\x01 TEXT2 6
  
 拓司は意識集中を諦め、目を開けた。@
 \n拓司\n　「無理だ。\pやっぱり信じられない」@
@@ -66,16 +66,16 @@ FLG1 \x8c\x01 FLG2 \xf0Z\x01 FLG2_SET \x036
 \n拓司\n　「そんな……バカな」\
 
   
-FLG1 &\n\x0c FLG1_SET \xfa\x01 \x02 (\x02 END
-CSCE SCE212_006 8\x0b SCE_DONE 
-FLG1 \x8c\x01 FLG2 \xf4Z\x01 FLG2_SET \x03-
+FLG1 &\n\x0c FLG1_SET \xfa\x01 \x02 (\x02 END 
+SCEC SCE212_006 8\x0b SCE_DONE 
+TEXT1 \xf4Z\x01 TEXT2 -
  
 /*▲SE01　ループ再生（次の停止まで）*/\a2,1,1,1,\a6,0,0,0,　ザザザ……ザザッ……\pザアザザザ……ザアアアアア……@
 　ザアザアアアアアアア……\w\n/*▲SE01　停止*/\a4,1,0,0,\z
   
-FLG1 |\x0b\x0c FLG1_SET \xfa\x01 \x02 (\x02 END
-CSCE SCE212_007 j\x0c SCE_DONE 
-FLG1 \x8c\x01 FLG2 \xf8Z\x01 FLG2_SET \x03d
+FLG1 |\x0b\x0c FLG1_SET \xfa\x01 \x02 (\x02 END 
+SCEC SCE212_007 j\x0c SCE_DONE 
+TEXT1 \xf8Z\x01 TEXT2 d
  
 ノイズが、耳の奥で聞こえた。@
 こめかみがずきずきと痛む。@
@@ -91,9 +91,9 @@ FLG1 \x8c\x01 FLG2 \xf8Z\x01 FLG2_SET \x03d
 \n/*■黒　表示（クロスフェード）*/\a7,-2,-2,0,\a0,200,2,0,\a6,-2,0,0,ようやく浅いまどろみが頭に霞を作りはじめた。\
 
   
-FLG1 \xae\x0c\x0c FLG1_SET \xfa\x01 \x02 (\x02 END  
+FLG1 \xae\x0c\x0c FLG1_SET \xfa\x01 \x02 (\x02 END   
 FLG1 \x02\x0c FLG1_SET
-FOBT .\\Data\\Script\\Bgm.Fob CLOSE \x92\x0e \x02
-CMD1 SeStop RUNF \xbc\x0e END \xfa\x01 \x02
-CSCE TextClose CLOSE \xe4\x0e END
+CMD6 .\\Data\\Script\\Bgm.Fob VAR1 \x92\x0e 
+CMD2 SeStop RUNF \xbc\x0e END  \xfa\x01 
+CMD3 TextClose VAR1 \xe4\x0e END 
 END_SCRIPT

@@ -1,10 +1,10 @@
 START_SCRIPT
 \xc5\x13\x01`B#\x01n\x10  
 FLG1 \xc9\x0c FLG1_SET
-FOBT .\\Data\\Script\\Bg.Fob OPEN   \x02
-CMD2 BgAutoFadeIn OPEN J END
-CSCE SCE235_001 n SCE_DONE 
-FLG1 \x8c\x01 FLG2 \xd0~\x01 FLG2_SET \x03\x19
+CMD6 .\\Data\\Script\\Bg.Fob VAR2   \x02
+CMD4 BgAutoFadeIn VAR2 J END 
+SCEC SCE235_001 n SCE_DONE 
+TEXT1 \xd0~\x01 TEXT2 \x19
  
 一瞬、白い部屋の天井が見えた。@
 くるくる回る換気ファン。@
@@ -14,28 +14,28 @@ FLG1 \x8c\x01 FLG2 \xd0~\x01 FLG2_SET \x03\x19
 
   
 FLG1 \xb2\x0c FLG1_SET
-WHAT .\\Data\\Script\\TextFunc.Fob RUNF 6\x01 \x02
-CMD1 TextOn RUNF d\x01 END
-CSCE SCE235_002 \x80\x01 SCE_DONE 
-FLG1 \x8c\x01 FLG2 \xd4~\x01 FLG2_SET  6\x01 \x02
-LOAD TextWindowOffDirect \xd0\x01 END  
+CMD7 .\\Data\\Script\\TextFunc.Fob RUNF 6\x01 
+CMD2 TextOn RUNF d\x01 END 
+SCEC SCE235_002 \x80\x01 SCE_DONE 
+TEXT1 \xd4~\x01\x0c" 6\x01 \x02
+CMD5 TextWindowOffDirect \xd0\x01 END   
 FLG1 \x02\x0c FLG1_SET  \x04
 FLG1 \x1b\x0c FLG1_SET  \x08
 FLG1 \x0c FLG1_SET
-FOBT .\\Data\\Script\\Bgm.Fob CLOSE F\x02 \x02
-CMD1 SePlay RUNF p\x02 END  
-FLG1 \xc8\x0c FLG1_SET   \x02
-CMD1 BgOn OPEN \xb2\x02 END  
+CMD6 .\\Data\\Script\\Bgm.Fob VAR1 F\x02 
+CMD2 SePlay RUNF p\x02 END   
+FLG1 \xc8\x0c FLG1_SET   
+CMD2 BgOn VAR2 \xb2\x02 END   
 FLG1 <\x0c FLG1_SET
-WHAT .\\Data\\Script\\TextFunc.fob RUNF \xe8\x02 \x02
-CSCE WaitTime OPEN \x16\x03 END  
+CMD7 .\\Data\\Script\\TextFunc.fob RUNF \xe8\x02 
+CMD3 WaitTime VAR2 \x16\x03 END   
 FLG1 \xc8\x0c FLG1_SET   \x02
-CMD2 BgNormalFadeIn RUNF \\\x03 END  
-FLG1 \x05\x01\x0c FLG1_SET F\x02 \x02
-CMD1 PlayCD RUNF \xa6\x03 END 6\x01 \x02
-LOAD TextWindowOnDirect RUNF \xce\x03 END  
-FLG1 \x02\x0c FLG1_SET F\x02 \x02
-CMD1 SeStop RUNF \x1c\x04 END\x03\x8c
+CMD4 BgNormalFadeIn RUNF \\\x03 END   
+FLG1 \x05\x01\x0c FLG1_SET F\x02 
+CMD2 PlayCD RUNF \xa6\x03 END  6\x01 \x02
+CMD5 TextWindowOnDirect RUNF \xce\x03 END   
+FLG1 \x02\x0c FLG1_SET F\x02 
+CMD2 SeStop RUNF \x1c\x04 END \x03\x8c
  
 　うっすらと目を開けると、桃色の塊が動いているのが見えた。@
 \n御堂\n　「おら、おら、おら、もっと泣けよ！\p　なに諦めてんだよ！」@
@@ -46,10 +46,10 @@ CMD1 SeStop RUNF \x1c\x04 END\x03\x8c
 \n……火傷？\
 
   
-FLG1 8\x04\x0c FLG1_SET 6\x01 \x02 d\x01 END  
-FLG1 [\x0c FLG1_SET   \x02 J END
-CSCE SCE235_003 \xd6\x06 SCE_DONE 
-FLG1 \x8c\x01 FLG2 \xd8~\x01 FLG2_SET \x03\x99
+FLG1 8\x04\x0c FLG1_SET 6\x01 \x02 d\x01 END   
+FLG1 [\x0c FLG1_SET   \x02 J END 
+SCEC SCE235_003 \xd6\x06 SCE_DONE 
+TEXT1 \xd8~\x01 TEXT2 \x99
  
 拓司はその言葉を、虚ろな意識の中で転がした。@
 火傷……紅葉に……火傷？@
@@ -66,9 +66,9 @@ FLG1 \x8c\x01 FLG2 \xd8~\x01 FLG2_SET \x03\x99
 そのときの火傷なのか……？\
 
   
-FLG1 \x1a\x07\x0c FLG1_SET 6\x01 \x02 d\x01 END
-CSCE SCE235_004 \xb8\t SCE_DONE 
-FLG1 \x8c\x01 FLG2 \xdc~\x01 FLG2_SET \x03\x8c
+FLG1 \x1a\x07\x0c FLG1_SET 6\x01 \x02 d\x01 END 
+SCEC SCE235_004 \xb8\t SCE_DONE 
+TEXT1 \xdc~\x01 TEXT2 \x8c
  
 錦城\n　「こんな醜い火傷があるんじゃ、いままで処女だったっていう\n　　のもわかるわね。\p恥ずかしくて見せられたもんじゃないもの。\n　　\pこんなみっともない傷を見たら百年の恋も冷めて、どんな男\n　　の子も逃げ出すわよ。\pあ～カワイソウ。\p私だったら世をはか\n　　なんで自殺するけどわね、あはは」@
 御堂\n　「う、うう……すげえ締め付けだ。\p出すぞ……もうすぐ……出\n　　るぞ」@
@@ -76,9 +76,9 @@ FLG1 \x8c\x01 FLG2 \xdc~\x01 FLG2_SET \x03\x8c
 御堂\n　「おれとは反対の世界に生きてる健全スポーツ少女を犯してる\n　　って思うだけで何回でも出せる…う…くっ、顔に出すぞ！」\
 
   
-FLG1 \xfc\t\x0c FLG1_SET 6\x01 \x02 d\x01 END
-CSCE SCE235_005 f\x0c SCE_DONE 
-FLG1 \x8c\x01 FLG2 \xe0~\x01 FLG2_SET \x03\xd8
+FLG1 \xfc\t\x0c FLG1_SET 6\x01 \x02 d\x01 END 
+SCEC SCE235_005 f\x0c SCE_DONE 
+TEXT1 \xe0~\x01 TEXT2 \xd8
  
 　勢い良く放出された精液は、まず、紅葉の鼻先で弾けた。@
 　ペ○スが脈動し、そのたびにねっとりとした液体が、勢いよく\n　顔にひっかかった。\p頬から目、眉に渡って長い白濁のラインが\n　引かれる。\p髪の毛にも飛沫がこびりつき、紅葉の顔は、あっと\n　いうまに惨めなまだら模様に染め上げられた。@
@@ -93,6 +93,6 @@ FLG1 \x8c\x01 FLG2 \xe0~\x01 FLG2_SET \x03\xd8
 \n/*▲BGM　停止*/\a4,-1,0,0,/*■黒　表示（ノンエフェクト）*/\a7,-1,-1,0,\a0,200,1,0,\a6,0,0,0,拓司の意識が、ふっと遠くなった\
 
   
-FLG1 \xaa\x0c\x0c FLG1_SET 6\x01 \x02 d\x01 END 6\x01 \x02
-CSCE TextClose CLOSE P\x10 END
+FLG1 \xaa\x0c\x0c FLG1_SET 6\x01 \x02 d\x01 END  6\x01 
+CMD3 TextClose VAR1 P\x10 END 
 END_SCRIPT

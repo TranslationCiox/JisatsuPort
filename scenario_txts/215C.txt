@@ -1,20 +1,20 @@
 START_SCRIPT
 \xeb\x03\x01\xa4\t3\x01\xac\x02
-FOBT .\\Data\\Script\\Bgm.Fob CLOSE \x06 \x02
-CMD1 StopCD RUNF 0 END
-CSCE SCE215_001 L SCE_DONE 
-FLG1 \x8c\x01 FLG2 \x90_\x01 FLG2_SET \x03\x11
+CMD6 .\\Data\\Script\\Bgm.Fob VAR1 \x06 
+CMD2 StopCD RUNF 0 END 
+SCEC SCE215_001 L SCE_DONE 
+TEXT1 \x90_\x01 TEXT2 \x11
  
 \n\n\n\n\n\n\n\n\n\n　　　　　　　　　　　　　『７日目』\
 
   
 FLG1 \x90\x0c FLG1_SET
-WHAT .\\Data\\Script\\TextFunc.Fob RUNF \xf4 \x02
-CMD1 TextOn RUNF "\x01 END  
-FLG1 \x0c\x01\x0c FLG1_SET \x06 \x02
-CMD1 PlayCD RUNF d\x01 END
-CSCE SCE215_002 \x80\x01 SCE_DONE 
-FLG1 \x8c\x01 FLG2 \x94_\x01 FLG2_SET \x03!
+CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \xf4 
+CMD2 TextOn RUNF "\x01 END   
+FLG1 \x0c\x01\x0c FLG1_SET \x06 
+CMD2 PlayCD RUNF d\x01 END 
+SCEC SCE215_002 \x80\x01 SCE_DONE 
+TEXT1 \x94_\x01 TEXT2 !
  
 目立った衝突はない。@
 早桃は風邪からほぼ回復したようだ。@
@@ -22,6 +22,6 @@ FLG1 \x8c\x01 FLG2 \x94_\x01 FLG2_SET \x03!
 言葉も少ない。\
 
   
-FLG1 \xc4\x01\x0c FLG1_SET \xf4 \x02 "\x01 END \xf4 \x02
-CSCE TextClose CLOSE \x8e\x02 END
+FLG1 \xc4\x01\x0c FLG1_SET \xf4 \x02 "\x01 END  \xf4 
+CMD3 TextClose VAR1 \x8e\x02 END 
 END_SCRIPT

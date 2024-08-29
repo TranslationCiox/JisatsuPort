@@ -1,9 +1,9 @@
 START_SCRIPT
 \xd3%\x01`B#\x01\xea\x1e
-FOBT .\\Data\\Script\\Bgm.Fob CLOSE \x06 \x02
-CMD1 StopCD RUNF 0 END
-CSCE SCE058_001 L SCE_DONE 
-FLG1 \x8c\x01 FLG2 @j FLG2_SET \x03\x1b
+CMD6 .\\Data\\Script\\Bgm.Fob VAR1 \x06 
+CMD2 StopCD RUNF 0 END 
+SCEC SCE058_001 L SCE_DONE 
+TEXT1 @j TEXT2 \x1b
  
 限界だった。@
 時間が何分あまっていようが、もう我慢できない。@
@@ -11,12 +11,12 @@ FLG1 \x8c\x01 FLG2 @j FLG2_SET \x03\x1b
 
   
 FLG1 \x90\x0c FLG1_SET
-WHAT .\\Data\\Script\\TextFunc.Fob RUNF \x1c\x01 \x02
-CMD1 TextOn RUNF J\x01 END  
-FLG1 \n\x01\x0c FLG1_SET \x06 \x02
-CMD1 PlayCD RUNF \x8c\x01 END
-CSCE SCE058_002 \xa8\x01 SCE_DONE 
-FLG1 \x8c\x01 FLG2 Dj FLG2_SET \x03r
+CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \x1c\x01 
+CMD2 TextOn RUNF J\x01 END   
+FLG1 \n\x01\x0c FLG1_SET \x06 
+CMD2 PlayCD RUNF \x8c\x01 END 
+SCEC SCE058_002 \xa8\x01 SCE_DONE 
+TEXT1 Dj TEXT2 r
  
 駆け込んできた拓司を見ても、学生たちには何の反応もない。@
 ちらりとつまらなそうに見ただけだ。\p白けた空気が教室には漂っ\nていた。@
@@ -28,9 +28,9 @@ FLG1 \x8c\x01 FLG2 Dj FLG2_SET \x03r
 拓司の胸のなかで、どす黒い塊が爆発した。\
 
   
-FLG1 \xec\x01\x0c FLG1_SET \x1c\x01 \x02 J\x01 END
-CSCE SCE058_003 \xee\x03 SCE_DONE 
-FLG1 \x8c\x01 FLG2 Hj FLG2_SET \x03\x9a
+FLG1 \xec\x01\x0c FLG1_SET \x1c\x01 \x02 J\x01 END 
+SCEC SCE058_003 \xee\x03 SCE_DONE 
+TEXT1 Hj TEXT2 \x9a
  
 拓司\n　「オ、オ、オ、オ、オ、オ、ア、ア、ア、ア、ア、ア、ア！」@
 /*■CG22　表示（クロスフェード）*/\a7,-2,-2,0,\a0,21,2,0,\a6,-2,0,0,\n　肺腑の底から声を絞り出して、男だろうが女だろうが、目に入\nった人間すべてに拳を叩き込んでいく。@
@@ -43,12 +43,12 @@ FLG1 \x8c\x01 FLG2 Hj FLG2_SET \x03\x9a
 視界が奇妙な色で明滅する。\
 
   
-FLG1 2\x04\x0c FLG1_SET \x1c\x01 \x02 J\x01 END  
+FLG1 2\x04\x0c FLG1_SET \x1c\x01 \x02 J\x01 END   
 FLG1 \xc8\x0c FLG1_SET
-FOBT .\\Data\\Script\\Bg.Fob OPEN \xee\x06 \x02
-CMD2 BgAutoFadeIn OPEN \x18\x07 END
-CSCE SCE058_004 <\x07 SCE_DONE 
-FLG1 \x8c\x01 FLG2 Lj FLG2_SET \x03\xab
+CMD6 .\\Data\\Script\\Bg.Fob VAR2 \xee\x06 \x02
+CMD4 BgAutoFadeIn VAR2 \x18\x07 END 
+SCEC SCE058_004 <\x07 SCE_DONE 
+TEXT1 Lj TEXT2 \xab
  
 　興奮した声、声、声が、教室中を行き交っている。@
 　ウルセチョウシブッコロホネガジャネエオレウルセエタコイテ\nンイタイヨホネガ！　ガ！　ガ！　ホネ！　@
@@ -61,10 +61,10 @@ FLG1 \x8c\x01 FLG2 Lj FLG2_SET \x03\xab
 　全員がビクッと身体をこわばらせ、おそるおそる、互いに顔を\n見合わせる。\pなかには反抗的な目でなたねをにらみ続けている者\nもいる。\pしかし、そんな視線をすべて受けてなお、なたねは動じ\nる様子もなく、毅然と立って叫び続けた。\
 
   
-FLG1 \x80\x07\x0c FLG1_SET \x1c\x01 \x02 J\x01 END  
-FLG1 \x0b\x01\x0c FLG1_SET \x06 \x02 \x8c\x01 END
-CSCE SCE058_005 \x9a\n SCE_DONE 
-FLG1 \x8c\x01 FLG2 Pj FLG2_SET \x03\xc5
+FLG1 \x80\x07\x0c FLG1_SET \x1c\x01 \x02 J\x01 END   
+FLG1 \x0b\x01\x0c FLG1_SET \x06 \x02 \x8c\x01 END 
+SCEC SCE058_005 \x9a\n SCE_DONE 
+TEXT1 Pj TEXT2 \xc5
  
 なたね\n　「隣を見なさい！\p　自分を見なさい！\p　デタラメで、なんの常\n　　識もありゃしない！\p　　めちゃくちゃじゃない！非常識よ！@
 　　あんたたち、ダメじゃない！\p　ダメ！\p　ダメ！\p　ダメダメダ\n　　メダメダメダメダメダメ！\p　ダメ人間！\p　死んだ方がいいん\n　　じゃないの？！\p　死になさい！\p　死ね！\pシネシネシネシネ！@
@@ -75,9 +75,9 @@ FLG1 \x8c\x01 FLG2 Pj FLG2_SET \x03\xc5
 　なたねの子供っぽい罵詈雑言を受けて、彼らは心から傷ついて\nいるのだ。\
 
   
-FLG1 \xde\n\x0c FLG1_SET \x1c\x01 \x02 J\x01 END
-CSCE SCE058_006 ,\x0e SCE_DONE 
-FLG1 \x8c\x01 FLG2 Tj FLG2_SET \x03N
+FLG1 \xde\n\x0c FLG1_SET \x1c\x01 \x02 J\x01 END 
+SCEC SCE058_006 ,\x0e SCE_DONE 
+TEXT1 Tj TEXT2 N
  
 学生\n　「死ねっていわれたって……どうすれば……」@
 学生\n　「どうしよう……やばいよ……どうしよう……」@
@@ -87,9 +87,9 @@ FLG1 \x8c\x01 FLG2 Tj FLG2_SET \x03N
 　そこには窓があった。\
 
   
-FLG1 p\x0e\x0c FLG1_SET \x1c\x01 \x02 J\x01 END
-CSCE SCE058_007 \xe2\x0f SCE_DONE 
-FLG1 \x8c\x01 FLG2 Xj FLG2_SET \x03B
+FLG1 p\x0e\x0c FLG1_SET \x1c\x01 \x02 J\x01 END 
+SCEC SCE058_007 \xe2\x0f SCE_DONE 
+TEXT1 Xj TEXT2 B
  
 なたね\n　「飛び降りれば、終わりじゃない？」@
 女子学生\n　「終わり」@
@@ -102,9 +102,9 @@ FLG1 \x8c\x01 FLG2 Xj FLG2_SET \x03B
 男子学生\n　「終わり」\
 
   
-FLG1 &\x10\x0c FLG1_SET \x1c\x01 \x02 J\x01 END
-CSCE SCE058_006 h\x11 SCE_DONE 
-FLG1 \x8c\x01 FLG2 \\j FLG2_SET \x03\x85
+FLG1 &\x10\x0c FLG1_SET \x1c\x01 \x02 J\x01 END 
+SCEC SCE058_006 h\x11 SCE_DONE 
+TEXT1 \\j TEXT2 \x85
  
 　終わり終わり終わり終わり終わり終わり終わり終わり終わり終\nわり終わり終わ終わり終わり終わり終わり終わり終わり終わり終\nわり終わり終わり終わり終わり終わり終わり終わり終わり終わり@
 \n男子学生が身を乗り出した。\pすっと消えた。@
@@ -114,19 +114,19 @@ FLG1 \x8c\x01 FLG2 \\j FLG2_SET \x03\x85
 終わりはすぐにやってきた。\p学生たちは我先にと窓へ殺到し、躊\n躇することもなく飛び降りて消えていった。\p先ほどの喉を切った\n学生たちと同じく、なにか笑ってしまうような光景だった。\
 
   
-FLG1 \xac\x11\x0c FLG1_SET \x1c\x01 \x02 J\x01 END \x06 \x02 0 END
-CSCE SCE058_009 \x14\x14 SCE_DONE 
-FLG1 \x8c\x01 FLG2 `j FLG2_SET \x03h
+FLG1 \xac\x11\x0c FLG1_SET \x1c\x01 \x02 J\x01 END  \x06 \x02 0 END 
+SCEC SCE058_009 \x14\x14 SCE_DONE 
+TEXT1 `j TEXT2 h
  
 なたね\n　「なにをボーッとしているの、虎菱くん。義妹さんも、飛び降\n　　りてしまうわよ」@
 \n/*■CG24　表示（クロスフェード）　*/\a7,-2,-2,0,\a0,23,2,0,\a6,-2,0,0,ようやく我に返って、拓司は窓辺に足をかけた早桃を、慌てて背\n後から捕まえた。@
 床に押さえつけられても、早桃はまだ何かに取り憑かれたような\n様子で、ブルブルと震えていた。\p拓司はそんな早桃に馬乗りにな\nって、頬に数発、鋭い平手打ちを放った。\
 
   
-FLG1 X\x14\x0c FLG1_SET \x1c\x01 \x02 J\x01 END  
-FLG1 \xc8\x0c FLG1_SET \xee\x06 \x02 \x18\x07 END
-CSCE SCE058_010 f\x16 SCE_DONE 
-FLG1 \x8c\x01 FLG2 dj FLG2_SET \x03v
+FLG1 X\x14\x0c FLG1_SET \x1c\x01 \x02 J\x01 END   
+FLG1 \xc8\x0c FLG1_SET \xee\x06 \x02 \x18\x07 END 
+SCEC SCE058_010 f\x16 SCE_DONE 
+TEXT1 dj TEXT2 v
  
 拓司\n　「落ち着け！　早桃！\p　目を覚ませ！」@
 早桃\n　「ごめんなさいごめんなさいごめんなさいごめんなさいごめん\n　　なさいごめんなさいごめんなさい」@
@@ -138,9 +138,9 @@ FLG1 \x8c\x01 FLG2 dj FLG2_SET \x03v
 早桃\n　「……私はもうたどり着けないから。\pおにいちゃんのこと、好\n　　きになる資格ないから」\
 
   
-FLG1 \xaa\x16\x0c FLG1_SET \x1c\x01 \x02 J\x01 END
-CSCE SCE058_011 \xbc\x18 SCE_DONE 
-FLG1 \x8c\x01 FLG2 hj FLG2_SET \x03\x88
+FLG1 \xaa\x16\x0c FLG1_SET \x1c\x01 \x02 J\x01 END 
+SCEC SCE058_011 \xbc\x18 SCE_DONE 
+TEXT1 hj TEXT2 \x88
  
 　なたねはそんな２人の様子をじっと無言で見つめていたが、し\n　ばらくしてポツリといった。@
 \nなたね\n　「そろそろね」@
@@ -153,9 +153,9 @@ FLG1 \x8c\x01 FLG2 hj FLG2_SET \x03\x88
 　拓司は心配したが、１分もすると、早桃はゆっくりと自分で身\n　体を起こした。\
 
   
-FLG1 \x19\x0c FLG1_SET \x1c\x01 \x02 J\x01 END
-CSCE SCE058_012 Z\x1b SCE_DONE 
-FLG1 \x8c\x01 FLG2 lj FLG2_SET \x03]
+FLG1 \x19\x0c FLG1_SET \x1c\x01 \x02 J\x01 END 
+SCEC SCE058_012 Z\x1b SCE_DONE 
+TEXT1 lj TEXT2 ]
  
 拓司\n　「大丈夫か、早桃？」@
 早桃\n　「……うん」@
@@ -168,20 +168,20 @@ FLG1 \x8c\x01 FLG2 lj FLG2_SET \x03]
 早桃\n　「大丈夫。早桃は大丈夫だから。\pそれよりも……」\
 
   
-FLG1 \x9e\x1b\x0c FLG1_SET \x1c\x01 \x02 J\x01 END
-CSCE SCE058_013 L\x1d SCE_DONE 
-FLG1 \x8c\x01 FLG2 pj FLG2_SET \x03\x1d
+FLG1 \x9e\x1b\x0c FLG1_SET \x1c\x01 \x02 J\x01 END 
+SCEC SCE058_013 L\x1d SCE_DONE 
+TEXT1 pj TEXT2 \x1d
  
 拓司\n　「……」@
 早桃\n　「……なんでもない。\p行こう、おにいちゃん。\pここに、いたく\n　　ない……」\
 
   
-FLG1 \x90\x1d\x0c FLG1_SET \x1c\x01 \x02 J\x01 END\x03\x12
+FLG1 \x90\x1d\x0c FLG1_SET \x1c\x01 \x02 J\x01 END \x03\x12
 CHOICE
 「……天使って、なんだ？」\n「……ここにいたくない？」\n\l0,2,
 ENDCHOICE
 
   
-FLG1 >\x1e\x0c FLG1_SET \x1c\x01 \x02 J\x01 END \x1c\x01 \x02
-CSCE TextClose CLOSE \xcc\x1e END
+FLG1 >\x1e\x0c FLG1_SET \x1c\x01 \x02 J\x01 END  \x1c\x01 
+CMD3 TextClose VAR1 \xcc\x1e END 
 END_SCRIPT

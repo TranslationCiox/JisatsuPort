@@ -1,7 +1,7 @@
 START_SCRIPT
 \xff\x02\x01\xe0\x044\x012\x02
-CSCE SCE230_001 \x06 SCE_DONE 
-FLG1 \x8c\x01 FLG2 w\x01 FLG2_SET \x03U
+SCEC SCE230_001 \x06 SCE_DONE 
+TEXT1 w\x01 TEXT2 U
  
 拓司は凍り付いたまま動けなかった。@
 畳針で片目を貫かれてもなお、御堂は決して拓司から注意をそら\nしていなかったのである。@
@@ -11,7 +11,7 @@ FLG1 \x8c\x01 FLG2 w\x01 FLG2_SET \x03U
 
   
 FLG1 J\x0c FLG1_SET
-WHAT .\\Data\\Script\\TextFunc.Fob RUNF \xbe\x01 \x02
-CMD1 TextOn RUNF \xec\x01 END \xbe\x01 \x02
-CSCE TextClose CLOSE \x14\x02 END
+CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \xbe\x01 
+CMD2 TextOn RUNF \xec\x01 END  \xbe\x01 
+CMD3 TextClose VAR1 \x14\x02 END 
 END_SCRIPT

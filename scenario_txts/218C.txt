@@ -1,7 +1,7 @@
 START_SCRIPT
 \xc1\t\x01`B#\x01\xe0\x07
-CSCE SCE218_001 \x06 SCE_DONE 
-FLG1 \x8c\x01 FLG2 @d\x01 FLG2_SET \x036
+SCEC SCE218_001 \x06 SCE_DONE 
+TEXT1 @d\x01 TEXT2 6
  
 拓司\n　「やめろ、御堂！」@
 \nいって拓司は突進した。\p御堂の肩にしがみつく。@
@@ -11,10 +11,10 @@ FLG1 \x8c\x01 FLG2 @d\x01 FLG2_SET \x036
 
   
 FLG1 J\x0c FLG1_SET
-WHAT .\\Data\\Script\\TextFunc.Fob RUNF B\x01 \x02
-CMD1 TextOn RUNF p\x01 END
-CSCE SCE218_002 \x8c\x01 SCE_DONE 
-FLG1 \x8c\x01 FLG2 Dd\x01 FLG2_SET \x03x
+CMD7 .\\Data\\Script\\TextFunc.Fob RUNF B\x01 
+CMD2 TextOn RUNF p\x01 END 
+SCEC SCE218_002 \x8c\x01 SCE_DONE 
+TEXT1 Dd\x01 TEXT2 x
  
 御堂\n　「勘違いするなよモヤシ小僧。\pお前が今まで物を決めてこられ\n　　たのはお前の力じゃなくて俺の力なんだよ。\p俺がお前を許し\n　　ていたからお前は自由に行動できたんだよ。\pでもこれからは\n　　違うぞ。\pこれからは俺の許可無しでなにもさせやしねえから\n　　な。\pいいか、なにもだ！」@
 \n御堂はじりじりとなたねに歩み寄った。@
@@ -23,12 +23,12 @@ FLG1 \x8c\x01 FLG2 Dd\x01 FLG2_SET \x03x
 御堂\n　「この……××××が……思い知れ！\p　思い知れ！」\
 
   
-FLG1 \xd0\x01\x0c FLG1_SET B\x01 \x02 p\x01 END  
+FLG1 \xd0\x01\x0c FLG1_SET B\x01 \x02 p\x01 END   
 FLG1 $\x0c FLG1_SET
-FOBT .\\Data\\Script\\Bg.Fob OPEN \x04\x04 \x02
-CMD2 BgAutoFadeIn OPEN .\x04 END
-CSCE SCE218_003 R\x04 SCE_DONE 
-FLG1 \x8c\x01 FLG2 Hd\x01 FLG2_SET \x03\x9b
+CMD6 .\\Data\\Script\\Bg.Fob VAR2 \x04\x04 \x02
+CMD4 BgAutoFadeIn VAR2 .\x04 END 
+SCEC SCE218_003 R\x04 SCE_DONE 
+TEXT1 Hd\x01 TEXT2 \x9b
  
 御堂はなたねの顔面に、容赦のないパンチを雨あられと降らせて\nいる。\p溜まり溜まったストレスをすべて叩き付けるように、な\nたねを殴り続ける。@
 ごつ、ごつ、ごつ！@
@@ -43,9 +43,9 @@ FLG1 \x8c\x01 FLG2 Hd\x01 FLG2_SET \x03\x9b
 そしていま、眼前で展開されていることこそ、新しい秩序の骨子\nを為すものであるはずだった。\
 
   
-FLG1 \x96\x04\x0c FLG1_SET B\x01 \x02 p\x01 END  
-FLG1 \xc8\x0c FLG1_SET \x04\x04 \x02 .\x04 END
-FOBT .\\Data\\Script\\Bgm.Fob CLOSE p\x07 \x02
-CMD1 StopCD RUNF \x9a\x07 END B\x01 \x02
-CSCE TextClose CLOSE \xc2\x07 END
+FLG1 \x96\x04\x0c FLG1_SET B\x01 \x02 p\x01 END   
+FLG1 \xc8\x0c FLG1_SET \x04\x04 \x02 .\x04 END 
+CMD6 .\\Data\\Script\\Bgm.Fob VAR1 p\x07 
+CMD2 StopCD RUNF \x9a\x07 END  B\x01 
+CMD3 TextClose VAR1 \xc2\x07 END 
 END_SCRIPT

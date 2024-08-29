@@ -1,21 +1,21 @@
 START_SCRIPT
 I\x0e\x01`B#\x01\\\x0b
-FOBT .\\Data\\Script\\Bgm.Fob CLOSE \x06 \x02
-CMD1 StopCD RUNF 0 END  
+CMD6 .\\Data\\Script\\Bgm.Fob VAR1 \x06 
+CMD2 StopCD RUNF 0 END   
 FLG1 \xc8\x0c FLG1_SET
-FOBT .\\Data\\Script\\Bg.Fob OPEN f \x02
-CMD2 BgAutoFadeIn OPEN \x90 END
-CSCE SCE092_001 \xb4 SCE_DONE 
-FLG1 \x8c\x01 FLG2 `\x9f FLG2_SET \x03\x11
+CMD6 .\\Data\\Script\\Bg.Fob VAR2 f \x02
+CMD4 BgAutoFadeIn VAR2 \x90 END 
+SCEC SCE092_001 \xb4 SCE_DONE 
+TEXT1 `\x9f TEXT2 \x11
  
 \n\n\n\n\n\n\n\n\n\n　　　　　　　　　　　　　　『２日目』\
 
   
 FLG1 \xf8\x0c FLG1_SET
-WHAT .\\Data\\Script\\TextFunc.Fob RUNF \\\x01 \x02
-CMD1 TextOn RUNF \x8a\x01 END
-CSCE SCE092_002 \xa6\x01 SCE_DONE 
-FLG1 \x8c\x01 FLG2 d\x9f FLG2_SET \x03\x9b
+CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \\\x01 
+CMD2 TextOn RUNF \x8a\x01 END 
+SCEC SCE092_002 \xa6\x01 SCE_DONE 
+TEXT1 d\x9f TEXT2 \x9b
  
 晴れ。@
 水の分配について、御堂が再びゴネはじめた。@
@@ -27,9 +27,9 @@ FLG1 \x8c\x01 FLG2 d\x9f FLG2_SET \x03\x9b
 御堂\n　「なに？」\
 
   
-FLG1 \xea\x01\x0c FLG1_SET \\\x01 \x02 \x8a\x01 END
-CSCE SCE092_003 \x90\x04 SCE_DONE 
-FLG1 \x8c\x01 FLG2 h\x9f FLG2_SET \x03\x9e
+FLG1 \xea\x01\x0c FLG1_SET \\\x01 \x02 \x8a\x01 END 
+SCEC SCE092_003 \x90\x04 SCE_DONE 
+TEXT1 h\x9f TEXT2 \x9e
  
 なたね\n　「いえば、秩序の維持に多大な影響が出るからです。\pたとえば\n　　……たとえばですよ？\p　食糧の備蓄が３日分しかないと分か\n　　ったら、みなさんはどうしますか？」@
 御堂\n　「……」@
@@ -40,9 +40,9 @@ FLG1 \x8c\x01 FLG2 h\x9f FLG2_SET \x03\x9e
 粘り着くような沈黙をおいて、御堂がいった。\
 
   
-FLG1 \xd4\x04\x0c FLG1_SET \\\x01 \x02 \x8a\x01 END
-CSCE SCE092_004 \x86\x07 SCE_DONE 
-FLG1 \x8c\x01 FLG2 l\x9f FLG2_SET \x03\x9f
+FLG1 \xd4\x04\x0c FLG1_SET \\\x01 \x02 \x8a\x01 END 
+SCEC SCE092_004 \x86\x07 SCE_DONE 
+TEXT1 l\x9f TEXT2 \x9f
  
 御堂\n　「……３日分しかないってのは……本当なのか？」@
 なたね\n　「あくまでもたとえです」@
@@ -53,12 +53,12 @@ FLG1 \x8c\x01 FLG2 l\x9f FLG2_SET \x03\x9f
 しかし、なたねが口にした『３日』という具体的な例は、理屈を\n越えて一同の上に重くのしかかっていた。\p漠然と遠くに見ていた\n最後の日は、明日、やってくるかもしれないのだ……と。\
 
   
-FLG1 \xca\x07\x0c FLG1_SET \\\x01 \x02 \x8a\x01 END\x03 
+FLG1 \xca\x07\x0c FLG1_SET \\\x01 \x02 \x8a\x01 END \x03 
 CHOICE
 「何日耐えられるのか、はっきりさせてほしい」と拓司はいった\n「雲居さんのいうとおりだ」と拓司はいった\n\l0,2,
 ENDCHOICE
 
   
-FLG1 \x80\n\x0c FLG1_SET \\\x01 \x02 \x8a\x01 END \\\x01 \x02
-CSCE TextClose CLOSE >\x0b END
+FLG1 \x80\n\x0c FLG1_SET \\\x01 \x02 \x8a\x01 END  \\\x01 
+CMD3 TextClose VAR1 >\x0b END 
 END_SCRIPT

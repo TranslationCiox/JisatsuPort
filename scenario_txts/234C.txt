@@ -1,19 +1,19 @@
 START_SCRIPT
 p*\x01`B#\x01\x1a#  
 FLG1 \x0c\x01\x0c FLG1_SET
-FOBT .\\Data\\Script\\Bgm.Fob CLOSE   \x02
-CMD1 PlayCD RUNF J END
-CSCE SCE234_001 f SCE_DONE 
-FLG1 \x8c\x01 FLG2 @}\x01 FLG2_SET \x03\x11
+CMD6 .\\Data\\Script\\Bgm.Fob VAR1   
+CMD2 PlayCD RUNF J END 
+SCEC SCE234_001 f SCE_DONE 
+TEXT1 @}\x01 TEXT2 \x11
  
 \n\n\n\n\n\n\n\n\n\n　　　　　　　　　　　　『１５日目』\
 
   
 FLG1 \xaa\x0c FLG1_SET
-WHAT .\\Data\\Script\\TextFunc.Fob RUNF \x0e\x01 \x02
-CMD1 TextOn RUNF <\x01 END
-CSCE SCE234_002 X\x01 SCE_DONE 
-FLG1 \x8c\x01 FLG2 D}\x01 FLG2_SET \x03\x7f
+CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \x0e\x01 
+CMD2 TextOn RUNF <\x01 END 
+SCEC SCE234_002 X\x01 SCE_DONE 
+TEXT1 D}\x01 TEXT2 \x7f
  
 拓司の予想は、まったく予期せぬ形でうち砕かれた。@
 /*■CG45　表示（クロスフェード）*/\a7,-2,-2,0,\a0,44,2,0,\a6,-2,0,0,\n朝食の配給に現れた御堂は、右目に眼帯を付けていた。@
@@ -27,9 +27,9 @@ FLG1 \x8c\x01 FLG2 D}\x01 FLG2_SET \x03\x7f
 その視線から逃れるように、紅葉は俯いた。\
 
   
-FLG1 \x9c\x01\x0c FLG1_SET \x0e\x01 \x02 <\x01 END
-CSCE SCE234_003 \xd2\x03 SCE_DONE 
-FLG1 \x8c\x01 FLG2 H}\x01 FLG2_SET \x03V
+FLG1 \x9c\x01\x0c FLG1_SET \x0e\x01 \x02 <\x01 END 
+SCEC SCE234_003 \xd2\x03 SCE_DONE 
+TEXT1 H}\x01 TEXT2 V
  
 御堂\n　「この女はな、自分の身の安全のために、お前を売ったんだ」@
 拓司\n　「ウソだ」@
@@ -41,9 +41,9 @@ FLG1 \x8c\x01 FLG2 H}\x01 FLG2_SET \x03V
 拓司\n　「……」\
 
   
-FLG1 \x16\x04\x0c FLG1_SET \x0e\x01 \x02 <\x01 END
-CSCE SCE234_004 \xa8\x05 SCE_DONE 
-FLG1 \x8c\x01 FLG2 L}\x01 FLG2_SET \x03`
+FLG1 \x16\x04\x0c FLG1_SET \x0e\x01 \x02 <\x01 END 
+SCEC SCE234_004 \xa8\x05 SCE_DONE 
+TEXT1 L}\x01 TEXT2 `
  
 紅葉は何もいわなかった。@
 ただ黙っている。@
@@ -55,9 +55,9 @@ FLG1 \x8c\x01 FLG2 L}\x01 FLG2_SET \x03`
 \nははは、と御堂が笑った。\p錦城も、さも愉快そうに笑っている。\
 
   
-FLG1 \xec\x05\x0c FLG1_SET \x0e\x01 \x02 <\x01 END
-CSCE SCE234_005 \xa6\x07 SCE_DONE 
-FLG1 \x8c\x01 FLG2 P}\x01 FLG2_SET \x03\x8e
+FLG1 \xec\x05\x0c FLG1_SET \x0e\x01 \x02 <\x01 END 
+SCEC SCE234_005 \xa6\x07 SCE_DONE 
+TEXT1 P}\x01 TEXT2 \x8e
  
 御堂\n　「お前、よっぽど人望ないんだなあ。\p哀れだぜ。@
 　　……まあ、安心しろ。\pお前を処分したあとで、神凪も罰して@
@@ -70,10 +70,10 @@ FLG1 \x8c\x01 FLG2 P}\x01 FLG2_SET \x03\x8e
 \nつかみかかってくる紅葉を一撃で壁まではじき飛ばし、御堂が叫\nんだ。\
 
   
-FLG1 \xea\x07\x0c FLG1_SET \x0e\x01 \x02 <\x01 END   \x02
-CMD1 StopCD RUNF h\n END
-CSCE SCE234_006 \x84\n SCE_DONE 
-FLG1 \x8c\x01 FLG2 T}\x01 FLG2_SET \x03\x95
+FLG1 \xea\x07\x0c FLG1_SET \x0e\x01 \x02 <\x01 END    
+CMD2 StopCD RUNF h\n END 
+SCEC SCE234_006 \x84\n SCE_DONE 
+TEXT1 T}\x01 TEXT2 \x95
  
 御堂\n　「っつーわけで、楽しい処刑の始まりだ！」@
 /*▲BGM　Track10　再生*/\a2,-1,10,1,/*■CG46　表示（クロスフェード）*/\a7,-2,-2,0,\a0,45,2,0,\a6,-2,0,0,\n鳩尾に、狙い澄ました一発がきた。\p予想していたにもかかわらず\n避けられなかった。\p拓司は、もうそれだけで立っていることがで\nきなかった。@
@@ -85,9 +85,9 @@ FLG1 \x8c\x01 FLG2 T}\x01 FLG2_SET \x03\x95
 御堂に殺されるかもしれない。\pしかも信じていた紅葉に裏切られ\nて……。\
 
   
-FLG1 \xc8\n\x0c FLG1_SET \x0e\x01 \x02 <\x01 END
-CSCE SCE234_007 V\r SCE_DONE 
-FLG1 \x8c\x01 FLG2 X}\x01 FLG2_SET \x03\xba
+FLG1 \xc8\n\x0c FLG1_SET \x0e\x01 \x02 <\x01 END 
+SCEC SCE234_007 V\r SCE_DONE 
+TEXT1 X}\x01 TEXT2 \xba
  
 ものすごい衝撃が鼻先を直撃し、目の前に火花が散った。@
 そのままよろけて手を伸ばすと、バシャン、と鋭い音がした。@
@@ -108,9 +108,9 @@ FLG1 \x8c\x01 FLG2 X}\x01 FLG2_SET \x03\xba
 /*■黒　表示（ノンエフェクト）*/\a7,-1,-1,0,\a0,200,1,0,\a6,0,0,0,床に倒れる。\
 
   
-FLG1 \x9a\r\x0c FLG1_SET \x0e\x01 \x02 <\x01 END
-CSCE SCE234_008 \xbc\x10 SCE_DONE 
-FLG1 \x8c\x01 FLG2 \\}\x01 FLG2_SET \x03\x94
+FLG1 \x9a\r\x0c FLG1_SET \x0e\x01 \x02 <\x01 END 
+SCEC SCE234_008 \xbc\x10 SCE_DONE 
+TEXT1 \\}\x01 TEXT2 \x94
  
 　興奮が胸を充たし、あふれ、喉へと込み上がってきた。@
 　俺は自分が雄々しく叫ぶのだと思った。\p咆哮して……煮えたぎ\nった興奮を解き放って御堂に立ち向かうのだと思った。\pしかしそ\nんな叫び声は、いつまでたっても形にならなかった。@
@@ -120,9 +120,9 @@ FLG1 \x8c\x01 FLG2 \\}\x01 FLG2_SET \x03\x94
 御堂の残忍な笑い顔が、ぐいっとせり上がって目の前に飛び出し\nた。\
 
   
-FLG1 \x11\x0c FLG1_SET \x0e\x01 \x02 <\x01 END
-CSCE SCE234_009 \x8a\x13 SCE_DONE 
-FLG1 \x8c\x01 FLG2 `}\x01 FLG2_SET \x03\xe1
+FLG1 \x11\x0c FLG1_SET \x0e\x01 \x02 <\x01 END 
+SCEC SCE234_009 \x8a\x13 SCE_DONE 
+TEXT1 `}\x01 TEXT2 \xe1
  
 御堂\n　「おい虎菱ィ！」@
 拓司\n　「わああああああああああああああああああああああああっ！」\n\p御堂\n　「おい虎菱ィ！」@
@@ -133,12 +133,12 @@ FLG1 \x8c\x01 FLG2 `}\x01 FLG2_SET \x03\xe1
 \n叫んで、御堂は拓司の腕を逆に取った。\
 
   
-FLG1 \xce\x13\x0c FLG1_SET \x0e\x01 \x02 <\x01 END  
+FLG1 \xce\x13\x0c FLG1_SET \x0e\x01 \x02 <\x01 END   
 FLG1 \xcb\x0c FLG1_SET
-FOBT .\\Data\\Script\\Bg.Fob OPEN \xa6\x17 \x02
-CMD1 BgOn OPEN \xd0\x17 END
-CSCE SCE234_010 \xec\x17 SCE_DONE 
-FLG1 \x8c\x01 FLG2 d}\x01 FLG2_SET \x03{
+CMD6 .\\Data\\Script\\Bg.Fob VAR2 \xa6\x17 
+CMD2 BgOn VAR2 \xd0\x17 END 
+SCEC SCE234_010 \xec\x17 SCE_DONE 
+TEXT1 d}\x01 TEXT2 {
  
 御堂\n　「骨折るぞ！\p　骨折るぞ！\p　ホネオルホネオルゾホネオルゾゾ\n　　ゾゾゾ！」@
 \n御堂は逆さにとった拓司の腕を、くいっと軽くひねった。@
@@ -148,9 +148,9 @@ FLG1 \x8c\x01 FLG2 d}\x01 FLG2_SET \x03{
 \n拓司\n　「わわわわわわわわわわわわわわわわわわ！！」\
 
   
-FLG1 0\x18\x0c FLG1_SET \x0e\x01 \x02 <\x01 END
-CSCE SCE234_011 V\x1a SCE_DONE 
-FLG1 \x8c\x01 FLG2 h}\x01 FLG2_SET \x03]
+FLG1 0\x18\x0c FLG1_SET \x0e\x01 \x02 <\x01 END 
+SCEC SCE234_011 V\x1a SCE_DONE 
+TEXT1 h}\x01 TEXT2 ]
  
 御堂\n　「もう一本もイクか、オイ？」@
 錦城\n　「やって！」@
@@ -159,9 +159,9 @@ FLG1 \x8c\x01 FLG2 h}\x01 FLG2_SET \x03]
 拓司\n　「わわわわわわわわわわわわわわわわわわ！！」\
 
   
-FLG1 \x9a\x1a\x0c FLG1_SET \x0e\x01 \x02 <\x01 END
-CSCE SCE234_012 H\x1c SCE_DONE 
-FLG1 \x8c\x01 FLG2 l}\x01 FLG2_SET \x03\x84
+FLG1 \x9a\x1a\x0c FLG1_SET \x0e\x01 \x02 <\x01 END 
+SCEC SCE234_012 H\x1c SCE_DONE 
+TEXT1 l}\x01 TEXT2 \x84
  
 涙と鼻水がとめどなくあふれ出てきた。@
 情けなかった。@
@@ -179,9 +179,9 @@ FLG1 \x8c\x01 FLG2 l}\x01 FLG2_SET \x03\x84
 う・ああ・あ・あ・あ・あ・あ・あ・あ・あ・あ・あ・あ・あ・あ\nああああああああ！\
 
   
-FLG1 \x8c\x1c\x0c FLG1_SET \x0e\x01 \x02 <\x01 END
-CSCE SCE234_013 \xd6\x1e SCE_DONE 
-FLG1 \x8c\x01 FLG2 p}\x01 FLG2_SET \x03\xa8
+FLG1 \x8c\x1c\x0c FLG1_SET \x0e\x01 \x02 <\x01 END 
+SCEC SCE234_013 \xd6\x1e SCE_DONE 
+TEXT1 p}\x01 TEXT2 \xa8
  
 もう一本の手がギシリと歪んだ。@
 \n拓司\n　「これは夢だ！」@
@@ -191,11 +191,11 @@ FLG1 \x8c\x01 FLG2 p}\x01 FLG2_SET \x03\xa8
 　　うわあああああああああああああああああああああああああ\n　　あああああああああああああああああああああああああああ\n　　あああああああああああああああああああああああああああ\n　　あああああああああああああああああああああああああああ\n　　あああああああああああああああああああああああああああ\n　　あああああああああああああああああああああああああああ\n　　あああああああああああああああああああああああ！」\
 
   
-FLG1 \x1a\x1f\x0c FLG1_SET \x0e\x01 \x02 <\x01 END \x0e\x01 \x02
-CMD2 TextWindowOff CLOSE " END  
+FLG1 \x1a\x1f\x0c FLG1_SET \x0e\x01 \x02 <\x01 END  \x0e\x01 \x02
+CMD4 TextWindowOff VAR1 " END   
 FLG1 \xca\x0c FLG1_SET \xa6\x17 \x02
-CMD2 BgNormalFadeIn RUNF J" END   \x02 h\n END  
-FLG1 \xc8\x0c FLG1_SET \xa6\x17 \x02 \xd0\x17 END \x0e\x01 \x02
-LOAD TextWindowOnDirect RUNF \xc8" END \x0e\x01 \x02
-CSCE TextClose CLOSE \xfc" END
+CMD4 BgNormalFadeIn RUNF J" END    \x02 h\n END   
+FLG1 \xc8\x0c FLG1_SET \xa6\x17 \x02 \xd0\x17 END  \x0e\x01 \x02
+CMD5 TextWindowOnDirect RUNF \xc8" END  \x0e\x01 
+CMD3 TextClose VAR1 \xfc" END 
 END_SCRIPT

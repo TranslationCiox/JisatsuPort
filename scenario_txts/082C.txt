@@ -1,7 +1,7 @@
 START_SCRIPT
 \xe2\x0c\x01`B#\x01p\n
-CSCE SCE082_001 \x06 SCE_DONE 
-FLG1 \x8c\x01 FLG2 \xc0\x8f FLG2_SET \x03\xc4
+SCEC SCE082_001 \x06 SCE_DONE 
+TEXT1 \xc0\x8f TEXT2 \xc4
  
 拓司はベッドから立ち上がり、拘束着の女の子に歩み寄った。@
 看護婦がやや緊張の表情を作る。\p教授が大丈夫だ、という。@
@@ -16,10 +16,10 @@ FLG1 \x8c\x01 FLG2 \xc0\x8f FLG2_SET \x03\xc4
 
   
 FLG1 J\x0c FLG1_SET
-WHAT .\\Data\\Script\\TextFunc.Fob RUNF z\x03 \x02
-CMD1 TextOn RUNF \xa8\x03 END
-CSCE SCE082_002 \xc4\x03 SCE_DONE 
-FLG1 \x8c\x01 FLG2 \xc4\x8f FLG2_SET \x03\\
+CMD7 .\\Data\\Script\\TextFunc.Fob RUNF z\x03 
+CMD2 TextOn RUNF \xa8\x03 END 
+SCEC SCE082_002 \xc4\x03 SCE_DONE 
+TEXT1 \xc4\x8f TEXT2 \\
  
 混乱してきた思考から逃れるように、拓司は頭を振った。@
 そして、目の前にある確かな物を確認しようと、拘束着の女の子\nの肩に手を伸ばした。@
@@ -27,18 +27,18 @@ FLG1 \x8c\x01 FLG2 \xc4\x8f FLG2_SET \x03\\
 何の前触れもなく、低くて重い音がとどろき渡った。@
 /*▲SE　停止*/\a4,2,0,0,/*▲BGM　停止*/\a4,-1,0,0,/*▲SE16　一回再生（再生終わりまで待たないで次へ）*/\a2,0,16,0,\n　ザザザザザザザザザザ\w\n\a4,0,0,0,\z
   
-FLG1 \x08\x04\x0c FLG1_SET z\x03 \x02 \xa8\x03 END
-CSCE SCE082_003 \xb2\x05 SCE_DONE 
-FLG1 \x8c\x01 FLG2 \xc8\x8f FLG2_SET \x03i
+FLG1 \x08\x04\x0c FLG1_SET z\x03 \x02 \xa8\x03 END 
+SCEC SCE082_003 \xb2\x05 SCE_DONE 
+TEXT1 \xc8\x8f TEXT2 i
  
 頭が割れるような大音響だ。\pまた幻聴かとあたりを見れば、教授\nも看護婦も、みな耳を押さえてうずくまっている。\pどうやら本物\nの音らしい。\p聞いていると意識が遠くなるような、奇妙な音だ。@
 音は、拘束着の女の子から発せられてるようだった。@
 女の子のどこからというわけではなく、女の子そのものから放た\nれている。@
 /*▲SE16　一回再生（再生終わりまで待たないで次へ）*/\a2,0,16,0,\n　ザザザザザザザザザザ\w\n\a4,0,0,0,\z
   
-FLG1 \xf6\x05\x0c FLG1_SET z\x03 \x02 \xa8\x03 END
-CSCE SCE082_004 \xd4\x07 SCE_DONE 
-FLG1 \x8c\x01 FLG2 \xcc\x8f FLG2_SET \x03}
+FLG1 \xf6\x05\x0c FLG1_SET z\x03 \x02 \xa8\x03 END 
+SCEC SCE082_004 \xd4\x07 SCE_DONE 
+TEXT1 \xcc\x8f TEXT2 }
  
 いつの間にか女の子の目に意志の光が宿っている。@
 なにか懇願するように拓司を見つめている。@
@@ -48,6 +48,6 @@ FLG1 \x8c\x01 FLG2 \xcc\x8f FLG2_SET \x03}
 /*■黒　表示（クロスフェード）*/\a7,-2,-2,0,\a0,200,2,0,\a6,-2,0,0,目の前が真っ暗になり、拓司は意識を失った。\
 
   
-FLG1 \x18\x08\x0c FLG1_SET z\x03 \x02 \xa8\x03 END z\x03 \x02
-CSCE TextClose CLOSE R\n END
+FLG1 \x18\x08\x0c FLG1_SET z\x03 \x02 \xa8\x03 END  z\x03 
+CMD3 TextClose VAR1 R\n END 
 END_SCRIPT

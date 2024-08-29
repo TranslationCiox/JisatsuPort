@@ -1,7 +1,7 @@
 START_SCRIPT
 \xb5\x06\x01`B#\x01$\x05
-CSCE SCE073_001 \x06 SCE_DONE 
-FLG1 \x8c\x01 FLG2 \xb0\x81 FLG2_SET \x03]
+SCEC SCE073_001 \x06 SCE_DONE 
+TEXT1 \xb0\x81 TEXT2 ]
  
 拓司の返事に、なたねはやれやれと肩をすくめてみせた。@
 \nなたね\n　「悪いけれど、私は一緒にいけないわ。\p私はこの状況を生き延\n　　びなければならないから。\pレジスタンスの一斉蜂起……それ\n　　は最終聖戦になるわ……には絶対に私の力が必要になるか\n　　ら。\p私はキーだから。\p鍵なの。\pわかる？\p　わからないだろう\n　　なあ……」@
@@ -9,13 +9,13 @@ FLG1 \x8c\x01 FLG2 \xb0\x81 FLG2_SET \x03]
 
   
 FLG1 J\x0c FLG1_SET
-WHAT .\\Data\\Script\\TextFunc.Fob RUNF \xde\x01 \x02
-CMD1 TextOn RUNF \x0c\x02 END  
+CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \xde\x01 
+CMD2 TextOn RUNF \x0c\x02 END   
 FLG1 \x0b\x01\x0c FLG1_SET
-FOBT .\\Data\\Script\\Bgm.Fob CLOSE B\x02 \x02
-CMD1 PlayCD RUNF l\x02 END
-CSCE SCE073_002 \x88\x02 SCE_DONE 
-FLG1 \x8c\x01 FLG2 \xb4\x81 FLG2_SET \x03s
+CMD6 .\\Data\\Script\\Bgm.Fob VAR1 B\x02 
+CMD2 PlayCD RUNF l\x02 END 
+SCEC SCE073_002 \x88\x02 SCE_DONE 
+TEXT1 \xb4\x81 TEXT2 s
  
 際限のないなたねの妄想話を振り切って、拓司は早桃の手を引い\nた。\pそのまま渡り廊下に駆け込む。@
 途端。@
@@ -29,7 +29,7 @@ FLG1 \x8c\x01 FLG2 \xb4\x81 FLG2_SET \x03s
 ようやく、終わったんだ、と。\
 
   
-FLG1 \xcc\x02\x0c FLG1_SET \xde\x01 \x02 \x0c\x02 END B\x02 \x02
-CMD1 StopCD RUNF \xde\x04 END \xde\x01 \x02
-CSCE TextClose CLOSE \x06\x05 END
+FLG1 \xcc\x02\x0c FLG1_SET \xde\x01 \x02 \x0c\x02 END  B\x02 
+CMD2 StopCD RUNF \xde\x04 END  \xde\x01 
+CMD3 TextClose VAR1 \x06\x05 END 
 END_SCRIPT

@@ -1,22 +1,22 @@
 START_SCRIPT
 \x1e\x04\x01\xa4\t3\x01\xac\x02  
 FLG1 \t\x01\x0c FLG1_SET
-FOBT .\\Data\\Script\\Bgm.Fob CLOSE   \x02
-CMD1 PlayCD RUNF J END
-CSCE SCE069_001 f SCE_DONE 
-FLG1 \x8c\x01 FLG2 p{ FLG2_SET \x03.
+CMD6 .\\Data\\Script\\Bgm.Fob VAR1   
+CMD2 PlayCD RUNF J END 
+SCEC SCE069_001 f SCE_DONE 
+TEXT1 p{ TEXT2 .
  
 残るは紅葉だけだ。\p紅葉の教室……そこは拓司の教室でもあるわ\nけだが……は、旧校舎１階にある。\pここ、新校舎の２階から紅葉\nの教室まで進むには、いくつかのルートが考えられる。\
 
   
 FLG1 \xaa\x0c FLG1_SET
-WHAT .\\Data\\Script\\TextFunc.Fob RUNF \x82\x01 \x02
-CMD1 TextOn RUNF \xb0\x01 END\x03 
+CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \x82\x01 
+CMD2 TextOn RUNF \xb0\x01 END \x03 
 CHOICE
 １階までくだり、一度外に出て、中庭を通って旧校舎へ移動\n渡り廊下を通って旧校舎に移動。それから１階に向かう\n\l0,2,
 ENDCHOICE
 
   
-FLG1 \xcc\x01\x0c FLG1_SET \x82\x01 \x02 \xb0\x01 END \x82\x01 \x02
-CSCE TextClose CLOSE \x8e\x02 END
+FLG1 \xcc\x01\x0c FLG1_SET \x82\x01 \x02 \xb0\x01 END  \x82\x01 
+CMD3 TextClose VAR1 \x8e\x02 END 
 END_SCRIPT

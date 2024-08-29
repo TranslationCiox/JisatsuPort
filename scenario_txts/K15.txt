@@ -1,7 +1,7 @@
 START_SCRIPT
 )\x02\x01\xb0\x054\x01\xa4\x01
-CSCE SCEK15_001 \x06 SCE_DONE 
-FLG1 \x8c\x01 FLG2 \xd0\xb0\x01 FLG2_SET \x03 
+SCEC SCEK15_001 \x06 SCE_DONE 
+TEXT1 \xd0\xb0\x01 TEXT2  
  
 お話はこれでおしまい。@
 ゆき？@
@@ -9,9 +9,9 @@ FLG1 \x8c\x01 FLG2 \xd0\xb0\x01 FLG2_SET \x03
 おしまい。これで、おしまい。\w\z
   
 FLG1 J\x0c FLG1_SET
-WHAT .\\Data\\Script\\TextFunc.Fob RUNF \xea \x02
-CMD1 TextOn RUNF \x18\x01 END
-FOBT .\\Data\\Script\\Bgm.Fob CLOSE 4\x01 \x02
-CMD1 StopCD RUNF ^\x01 END \xea \x02
-CSCE TextClose CLOSE \x86\x01 END
+CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \xea 
+CMD2 TextOn RUNF \x18\x01 END 
+CMD6 .\\Data\\Script\\Bgm.Fob VAR1 4\x01 
+CMD2 StopCD RUNF ^\x01 END  \xea 
+CMD3 TextClose VAR1 \x86\x01 END 
 END_SCRIPT

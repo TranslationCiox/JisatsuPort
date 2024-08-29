@@ -1,10 +1,10 @@
 START_SCRIPT
 \x7f/\x01`B#\x01d$  
 FLG1 \x04\x01\x0c FLG1_SET
-FOBT .\\Data\\Script\\Bgm.Fob CLOSE   \x02
-CMD1 PlayCD RUNF J END
-CSCE SCES05_001 f SCE_DONE 
-FLG1 \x8c\x01 FLG2  \xb6\x01 FLG2_SET \x03\x8f
+CMD6 .\\Data\\Script\\Bgm.Fob VAR1   
+CMD2 PlayCD RUNF J END 
+SCEC SCES05_001 f SCE_DONE 
+TEXT1  \xb6\x01 TEXT2 \x8f
  
 お金はいくらあっても足りなかった。@
 かわいい洋服や、アクセサリーをつけるたびに、私はうまくウソ\nがつけるようになっていった。@
@@ -16,10 +16,10 @@ FLG1 \x8c\x01 FLG2  \xb6\x01 FLG2_SET \x03\x8f
 
   
 FLG1 \xaa\x0c FLG1_SET
-WHAT .\\Data\\Script\\TextFunc.Fob RUNF \x06\x03 \x02
-CMD1 TextOn RUNF 4\x03 END
-CSCE SCES05_002 P\x03 SCE_DONE 
-FLG1 \x8c\x01 FLG2 $\xb6\x01 FLG2_SET \x03\xa3
+CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \x06\x03 
+CMD2 TextOn RUNF 4\x03 END 
+SCEC SCES05_002 P\x03 SCE_DONE 
+TEXT1 $\xb6\x01 TEXT2 \xa3
  
 『そういうことはやめたほうがいいニャ』@
 「ドルチェ。そんなお説教、早桃は聞きたくないよ。\n　うまくやってるもの。\pなにもかもがうまくいってる」@
@@ -32,12 +32,12 @@ FLG1 \x8c\x01 FLG2 $\xb6\x01 FLG2_SET \x03\xa3
 \nドルチェはすごく悲しそうな顔をして、しょんぼりと肩を落とし\nてどこかに消えていったわ。\
 
   
-FLG1 \x94\x03\x0c FLG1_SET \x06\x03 \x02 4\x03 END  
+FLG1 \x94\x03\x0c FLG1_SET \x06\x03 \x02 4\x03 END   
 FLG1 ]\x0c FLG1_SET
-FOBT .\\Data\\Script\\Bg.Fob OPEN t\x06 \x02
-CMD2 BgAutoFadeIn OPEN \x9e\x06 END
-CSCE SCES05_003 \xc2\x06 SCE_DONE 
-FLG1 \x8c\x01 FLG2 (\xb6\x01 FLG2_SET \x03e
+CMD6 .\\Data\\Script\\Bg.Fob VAR2 t\x06 \x02
+CMD4 BgAutoFadeIn VAR2 \x9e\x06 END 
+SCEC SCES05_003 \xc2\x06 SCE_DONE 
+TEXT1 (\xb6\x01 TEXT2 e
  
 すぐに、手だけで、口だけでって……そういうことをするように\nなった。\pそういうことをしちゃったら、どこまでやっても変わら\nないような気がして、エッチもした。@
 エッチをすると、しなかったときの５倍以上のお金がもらえた。@
@@ -46,10 +46,10 @@ FLG1 \x8c\x01 FLG2 (\xb6\x01 FLG2_SET \x03e
 そんなとき、お母さんが再婚して……おにいちゃんとあったんだ\nよね。\
 
   
-FLG1 \x06\x07\x0c FLG1_SET \x06\x03 \x02 4\x03 END  
-FLG1 \xc8\x0c FLG1_SET t\x06 \x02 \x9e\x06 END
-CSCE SCES05_004 \x08\t SCE_DONE 
-FLG1 \x8c\x01 FLG2 ,\xb6\x01 FLG2_SET \x03\xb0
+FLG1 \x06\x07\x0c FLG1_SET \x06\x03 \x02 4\x03 END   
+FLG1 \xc8\x0c FLG1_SET t\x06 \x02 \x9e\x06 END 
+SCEC SCES05_004 \x08\t SCE_DONE 
+TEXT1 ,\xb6\x01 TEXT2 \xb0
  
 海の話、覚えてる？@
 初めて海を見たときの話。@
@@ -61,9 +61,9 @@ FLG1 \x8c\x01 FLG2 ,\xb6\x01 FLG2_SET \x03\xb0
 私はゼロじゃないって、ずっとそれが証明したかったんだって。\
 
   
-FLG1 L\t\x0c FLG1_SET \x06\x03 \x02 4\x03 END
-CSCE SCES05_005 F\x0c SCE_DONE 
-FLG1 \x8c\x01 FLG2 0\xb6\x01 FLG2_SET \x03z
+FLG1 L\t\x0c FLG1_SET \x06\x03 \x02 4\x03 END 
+SCEC SCES05_005 F\x0c SCE_DONE 
+TEXT1 0\xb6\x01 TEXT2 z
  
 「ねえ、ドルチェ。\p早桃、もう援助交際はやめようと思うんだ」\n\p『そうか。\pドルチェはうれしいニャ』@
 「おにいちゃんと釣り合う女の子になりたいの」@
@@ -75,21 +75,21 @@ FLG1 \x8c\x01 FLG2 0\xb6\x01 FLG2_SET \x03z
 『喧嘩のいいところは、仲直りできることニャ』\
 
   
-FLG1 \x8a\x0c\x0c FLG1_SET \x06\x03 \x02 4\x03 END! 
+FLG1 \x8a\x0c\x0c FLG1_SET \x06\x03 \x02 4\x03 END ! 
 FLG1  FLG2 \x0b
 FLG1\x01 \x1b1\xea\x0e2 \x102\xf0\x0e2\xf0\x0e
-CSCE SCES05_006 \xf6\x0e SCE_DONE 
-FLG1 \x8c\x01 FLG2 4\xb6\x01 FLG2_SET \x03\x15
+SCEC SCES05_006 \xf6\x0e SCE_DONE 
+TEXT1 4\xb6\x01 TEXT2 \x15
  
 お話はこれでおしまい。@
 神父様、聞いてくださってありがとうございました。@
 \z
   
-FLG1 :\x0f\x0c FLG1_SET \x06\x03 \x02 4\x03 END   \x02
-CMD1 StopCD \xd4\x0f END  
-FLG1 \xc8\x0c FLG1_SET t\x06 \x02 \x9e\x06 END6
-CSCE SCES05_007 &\x10 SCE_DONE 
-FLG1 \x8c\x01 FLG2 8\xb6\x01 FLG2_SET \x03\xc5
+FLG1 :\x0f\x0c FLG1_SET \x06\x03 \x02 4\x03 END    
+CMD2 StopCD \xd4\x0f END   
+FLG1 \xc8\x0c FLG1_SET t\x06 \x02 \x9e\x06 END 6
+SCEC SCES05_007 &\x10 SCE_DONE 
+TEXT1 8\xb6\x01 TEXT2 \xc5
  
 でもね、結局ドルチェとは仲直りできなかったの。@
 私が援助交際を続けたから。@
@@ -106,9 +106,9 @@ FLG1 \x8c\x01 FLG2 8\xb6\x01 FLG2_SET \x03\xc5
 ただ単純に、お金が欲しかったの。\
 
   
-FLG1 j\x10\x0c FLG1_SET \x06\x03 \x02 4\x03 END
-CSCE SCES05_008 \xb8\x13 SCE_DONE 
-FLG1 \x8c\x01 FLG2 <\xb6\x01 FLG2_SET \x03\xb0
+FLG1 j\x10\x0c FLG1_SET \x06\x03 \x02 4\x03 END 
+SCEC SCES05_008 \xb8\x13 SCE_DONE 
+TEXT1 <\xb6\x01 TEXT2 \xb0
  
 『早桃ちゃんは、愛よりもお金のほうが重いと思ってるのかニャ\n　？』@
 「そんなことないよ、ドルチェ！\p　早桃は本当におにいちゃんの\n　ことが好き！」@
@@ -123,9 +123,9 @@ FLG1 \x8c\x01 FLG2 <\xb6\x01 FLG2_SET \x03\xb0
 そして二度と戻ってこなかった。\
 
   
-FLG1 \xfc\x13\x0c FLG1_SET \x06\x03 \x02 4\x03 END
-CSCE SCES05_009 \xf6\x16 SCE_DONE 
-FLG1 \x8c\x01 FLG2 @\xb6\x01 FLG2_SET \x03{
+FLG1 \xfc\x13\x0c FLG1_SET \x06\x03 \x02 4\x03 END 
+SCEC SCES05_009 \xf6\x16 SCE_DONE 
+TEXT1 @\xb6\x01 TEXT2 {
  
 私はようやく、自分が崖っぷちに立っているんじゃなくて、もう、\n落ちてるってことに気がついた。@
 ギリギリでバランスをとっていられるような段階はとっくにすぎ\nて、もう、自分ではどうしようもない状況にあるんだって。@
@@ -135,9 +135,9 @@ FLG1 \x8c\x01 FLG2 @\xb6\x01 FLG2_SET \x03{
 地面にぶつかってバラバラになる瞬間まで、確かに生きてはいる。\n\pでも、バラバラになるのが決められている以上、本当の意味では\n私は死んでいるんだって……。\
 
   
-FLG1 :\x17\x0c FLG1_SET \x06\x03 \x02 4\x03 END
-CSCE SCES05_010 `\x19 SCE_DONE 
-FLG1 \x8c\x01 FLG2 D\xb6\x01 FLG2_SET \x03;
+FLG1 :\x17\x0c FLG1_SET \x06\x03 \x02 4\x03 END 
+SCEC SCES05_010 `\x19 SCE_DONE 
+TEXT1 D\xb6\x01 TEXT2 ;
  
 おにいちゃんにひとりエッチを見せたのは、わざとなの。@
 早桃は、おにいちゃんが思っているみたいな女の子じゃなくて、\n汚くて、いやらしい女の子だって。@
@@ -146,17 +146,17 @@ FLG1 \x8c\x01 FLG2 D\xb6\x01 FLG2_SET \x03;
 \nそして、罰が下ったんだね。\
 
   
-FLG1 \xa4\x19\x0c FLG1_SET \x06\x03 \x02 4\x03 END
-CSCE SCES05_011 \xca\x1a SCE_DONE 
-FLG1 \x8c\x01 FLG2 H\xb6\x01 FLG2_SET \x030
+FLG1 \xa4\x19\x0c FLG1_SET \x06\x03 \x02 4\x03 END 
+SCEC SCES05_011 \xca\x1a SCE_DONE 
+TEXT1 H\xb6\x01 TEXT2 0
  
 語り終えた後、早桃は無言で、自らが作り出した沈黙のなかに沈\nみ込んだ。@
 あるいは、彼女が沈み込んでいったのは、いま自らが言葉に変換\nして現出して見せた暗い闇の中なのかもしれない。\
 
   
-FLG1 \x0e\x1b\x0c FLG1_SET \x06\x03 \x02 4\x03 END
-CSCE SCES05_012 \x08\x1c SCE_DONE 
-FLG1 \x8c\x01 FLG2 L\xb6\x01 FLG2_SET \x03I
+FLG1 \x0e\x1b\x0c FLG1_SET \x06\x03 \x02 4\x03 END 
+SCEC SCES05_012 \x08\x1c SCE_DONE 
+TEXT1 L\xb6\x01 TEXT2 I
  
 拓司\n　「俺には、お前を軽蔑する資格はない」@
 早桃\n　「え？」@
@@ -164,9 +164,9 @@ FLG1 \x8c\x01 FLG2 L\xb6\x01 FLG2_SET \x03I
 　　前科なしの人間なんていない」\
 
   
-FLG1 L\x1c\x0c FLG1_SET \x06\x03 \x02 4\x03 END
-CSCE SCES05_013 \xaa\x1d SCE_DONE 
-FLG1 \x8c\x01 FLG2 P\xb6\x01 FLG2_SET \x03i
+FLG1 L\x1c\x0c FLG1_SET \x06\x03 \x02 4\x03 END 
+SCEC SCES05_013 \xaa\x1d SCE_DONE 
+TEXT1 P\xb6\x01 TEXT2 i
  
 早桃\n　「……」@
 拓司\n　「たとえば、猫を袋詰めにして団地から落として殺した」@
@@ -179,9 +179,9 @@ FLG1 \x8c\x01 FLG2 P\xb6\x01 FLG2_SET \x03i
 　　釣り合ってるんじゃないか？\p　それでも納得ができないって\n　　いうのなら、こうしよう」\
 
   
-FLG1 \xee\x1d\x0c FLG1_SET \x06\x03 \x02 4\x03 END
-CSCE SCES05_014 \xcc\x1f SCE_DONE 
-FLG1 \x8c\x01 FLG2 T\xb6\x01 FLG2_SET \x03l
+FLG1 \xee\x1d\x0c FLG1_SET \x06\x03 \x02 4\x03 END 
+SCEC SCES05_014 \xcc\x1f SCE_DONE 
+TEXT1 T\xb6\x01 TEXT2 l
  
 拓司は早桃の額にそっと手をかざし、重々しい声を作っていった。\n@
 拓司\n　「あなたの懺悔は神の元に届けられました。\p神はその勇気をた\n　　たえ、あなたの罪をお許しになるでしょう。\pラーメン」@
@@ -192,9 +192,9 @@ FLG1 \x8c\x01 FLG2 T\xb6\x01 FLG2_SET \x03l
 拓司\n　「そうだニャ」\
 
   
-FLG1 \x10 \x0c FLG1_SET \x06\x03 \x02 4\x03 END
-CSCE SCES05_015 \xfa! SCE_DONE 
-FLG1 \x8c\x01 FLG2 X\xb6\x01 FLG2_SET \x03T
+FLG1 \x10 \x0c FLG1_SET \x06\x03 \x02 4\x03 END 
+SCEC SCES05_015 \xfa! SCE_DONE 
+TEXT1 X\xb6\x01 TEXT2 T
  
 早桃は声を押し殺して笑った。@
 そして拓司の額に手をかざし、いった。@
@@ -204,8 +204,8 @@ FLG1 \x8c\x01 FLG2 X\xb6\x01 FLG2_SET \x03T
 \n早桃の笑顔を見ながら、拓司は誰かの笑顔というものを、久しぶ\nりに見たなと思っていた。\
 
   
-FLG1 >"\x0c FLG1_SET \x06\x03 \x02 4\x03 END   \x02 \xd4\x0f END  
-FLG1 \xc8\x0c FLG1_SET t\x06 \x02 \x9e\x06 END! 
-FLG1 ( FLG2 \x01 FLG2_SET  \x06\x03 \x02
-CSCE TextClose F$ END
+FLG1 >"\x0c FLG1_SET \x06\x03 \x02 4\x03 END    \x02 \xd4\x0f END   
+FLG1 \xc8\x0c FLG1_SET t\x06 \x02 \x9e\x06 END ! 
+FLG1 ( FLG2 \x01\x0c" \x06\x03 
+CMD3 TextClose F$ END 
 END_SCRIPT

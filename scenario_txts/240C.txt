@@ -1,28 +1,27 @@
 START_SCRIPT
 \xc7\x10\x01`B#\x01\x9c\x0b
-CSCE SCE240_001 \x06 SCE_DONE 
-FLG1 \x8c\x01 FLG2 \xa0\x86\x01 FLG2_SET 
-WHAT .\\Data\\Script\\TextFunc.Fob RUNF J \x02
-CMD2 TextWindowOff CLOSE x END  
+SCEC SCE240_001 \x06 SCE_DONE 
+TEXT1 \xa0\x86\x01 TEXT2 \x07.\\Data\\Script\\TextFunc.Fob RUNF J \x02
+CMD4 TextWindowOff VAR1 x END   
 FLG1 \xca\x0c FLG1_SET
-FOBT .\\Data\\Script\\Bg.Fob OPEN \xb6 \x02
-CMD1 BgOn OPEN \xe0 END  
+CMD6 .\\Data\\Script\\Bg.Fob VAR2 \xb6 
+CMD2 BgOn VAR2 \xe0 END   
 FLG1 \x02\x0c FLG1_SET  \x04
 FLG1 \x01\x0c FLG1_SET  \x08
 FLG1 \x01\x0c FLG1_SET
-FOBT .\\Data\\Script\\Bgm.Fob CLOSE J\x01 \x02
-CMD1 SePlay RUNF t\x01 END J \x02
-CMD2 TextWindowOn OPEN \x9c\x01 END\x03\x17
+CMD6 .\\Data\\Script\\Bgm.Fob VAR1 J\x01 
+CMD2 SePlay RUNF t\x01 END  J \x02
+CMD4 TextWindowOn VAR2 \x9c\x01 END \x03\x17
  
 親指の先に、硬い物があった。@
 激しいノイズが聞こえる。@
 誰かが腹を殴っている。\
 
   
-FLG1 \xc0\x01\x0c FLG1_SET J \x02
-CMD1 TextOn RUNF H\x02 END
-CSCE SCE240_002 d\x02 SCE_DONE 
-FLG1 \x8c\x01 FLG2 \xa4\x86\x01 FLG2_SET \x03r
+FLG1 \xc0\x01\x0c FLG1_SET J 
+CMD2 TextOn RUNF H\x02 END 
+SCEC SCE240_002 d\x02 SCE_DONE 
+TEXT1 \xa4\x86\x01 TEXT2 r
  
 カンナ\n　「虎菱くん！　虎菱くん！」@
 /*▲SE01　停止*/\a4,2,0,0,/*■CG50　表示（クロスフェード）*/\a7,-2,-2,0,\a0,49,2,0,\a6,-2,0,0,/*▲BGM　Track11　再生*/\a2,-1,11,1,\n拓司はようやく我に返った。@
@@ -37,18 +36,18 @@ FLG1 \x8c\x01 FLG2 \xa4\x86\x01 FLG2_SET \x03r
 泣き叫んでいる。\
 
   
-FLG1 \xa8\x02\x0c FLG1_SET J \x02 H\x02 END
-CSCE SCE240_003 \xaa\x04 SCE_DONE 
-FLG1 \x8c\x01 FLG2 \xa8\x86\x01 FLG2_SET \x03*
+FLG1 \xa8\x02\x0c FLG1_SET J \x02 H\x02 END 
+SCEC SCE240_003 \xaa\x04 SCE_DONE 
+TEXT1 \xa8\x86\x01 TEXT2 *
  
 御堂\n　「うわあああああああああああッ！\p　やめろおお！\p　潰れる！@
 　　目、おれの目！」@
 拓司\n　「こういうのはお終いだ、御堂！\p　これでお終いだ！」\
 
   
-FLG1 \xee\x04\x0c FLG1_SET J \x02 H\x02 END
-CSCE SCE240_004 \xd0\x05 SCE_DONE 
-FLG1 \x8c\x01 FLG2 \xac\x86\x01 FLG2_SET \x03\x9c
+FLG1 \xee\x04\x0c FLG1_SET J \x02 H\x02 END 
+SCEC SCE240_004 \xd0\x05 SCE_DONE 
+TEXT1 \xac\x86\x01 TEXT2 \x9c
  
 拓司は叫んだ。@
 そして親指にグイと力を込めた。@
@@ -63,9 +62,9 @@ FLG1 \x8c\x01 FLG2 \xac\x86\x01 FLG2_SET \x03\x9c
 拓司\n　「終わりだ、全部終わりだ」\
 
   
-FLG1 \x14\x06\x0c FLG1_SET J \x02 H\x02 END
-CSCE SCE240_005 \xbe\x08 SCE_DONE 
-FLG1 \x8c\x01 FLG2 \xb0\x86\x01 FLG2_SET \x03b
+FLG1 \x14\x06\x0c FLG1_SET J \x02 H\x02 END 
+SCEC SCE240_005 \xbe\x08 SCE_DONE 
+TEXT1 \xb0\x86\x01 TEXT2 b
  
 呆気にとられた一同の視線を集めて、拓司は続けた。@
 \n拓司\n　「俺は、この部屋を出る。\p行く先は……光がある場所だ」@
@@ -77,13 +76,13 @@ FLG1 \x8c\x01 FLG2 \xb0\x86\x01 FLG2_SET \x03b
 拓司はそれを以前、月代カンナの口から聞いたことがあった。\
 
   
-FLG1 \x02\t\x0c FLG1_SET J \x02 H\x02 END
-CSCE SCE240_006 \xc4\n SCE_DONE 
-FLG1 \x8c\x01 FLG2 \xb4\x86\x01 FLG2_SET \x03\x0c
+FLG1 \x02\t\x0c FLG1_SET J \x02 H\x02 END 
+SCEC SCE240_006 \xc4\n SCE_DONE 
+TEXT1 \xb4\x86\x01 TEXT2 \x0c
  
 拓司\n　「ついてくる人は、いるかい？」\
 
   
-FLG1 \x08\x0b\x0c FLG1_SET J \x02 H\x02 END J \x02
-CSCE TextClose CLOSE ~\x0b END
+FLG1 \x08\x0b\x0c FLG1_SET J \x02 H\x02 END  J 
+CMD3 TextClose VAR1 ~\x0b END 
 END_SCRIPT

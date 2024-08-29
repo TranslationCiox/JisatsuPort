@@ -1,26 +1,26 @@
 START_SCRIPT
 \x01\x06\x01\xa4\t3\x01\xa6\x04
-FOBT .\\Data\\Script\\Bgm.Fob CLOSE \x06 \x02
-CMD1 StopCD RUNF 0 END  
+CMD6 .\\Data\\Script\\Bgm.Fob VAR1 \x06 
+CMD2 StopCD RUNF 0 END   
 FLG1 \xc8\x0c FLG1_SET
-FOBT .\\Data\\Script\\Bg.Fob OPEN f \x02
-CMD2 BgAutoFadeIn OPEN \x90 END
-CSCE SCE008_001 \xb4 SCE_DONE 
-FLG1 \x8c\x01 FLG2  \x1c FLG2_SET \x031
+CMD6 .\\Data\\Script\\Bg.Fob VAR2 f \x02
+CMD4 BgAutoFadeIn VAR2 \x90 END 
+SCEC SCE008_001 \xb4 SCE_DONE 
+TEXT1  \x1c TEXT2 1
  
 拓司\n　「……これが、おれの願望なのか？\p　違う。\pこんなこと、\n　　おれは望んじゃいない」@
 \n拓司は両手で顔を覆った。\pそしてひとつ、大きなためいきの塊\nを吐き出してから目を閉じた。\
 
   
 FLG1 \xf8\x0c FLG1_SET
-WHAT .\\Data\\Script\\TextFunc.Fob RUNF \xdc\x01 \x02
-CMD1 TextOn RUNF \n\x02 END
-CSCE SCE008_002 &\x02 SCE_DONE 
-FLG1 \x8c\x01 FLG2 $\x1c FLG2_SET   
+CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \xdc\x01 
+CMD2 TextOn RUNF \n\x02 END 
+SCEC SCE008_002 &\x02 SCE_DONE 
+TEXT1 $\x1c\x0c"  
 FLG1 \x02\x0c FLG1_SET  \x04
 FLG1 \x06\x0c FLG1_SET  \x08
-FLG1 \x01\x0c FLG1_SET \x06 \x02
-CMD1 SePlay RUNF \xc4\x02 END\x03H
+FLG1 \x01\x0c FLG1_SET \x06 
+CMD2 SePlay RUNF \xc4\x02 END \x03H
  
 再び目を開けると、そこには変わらず換気ファンが回り、沈黙が\nたゆたっている。@
 ただ、早桃の姿だけがない。@
@@ -33,8 +33,8 @@ CMD1 SePlay RUNF \xc4\x02 END\x03H
 おそらくは。\
 
   
-FLG1 \xe0\x02\x0c FLG1_SET \xdc\x01 \x02 \n\x02 END  
-FLG1 \x02\x0c FLG1_SET \x06 \x02
-CMD1 SeStop RUNF `\x04 END \xdc\x01 \x02
-CSCE TextClose CLOSE \x88\x04 END
+FLG1 \xe0\x02\x0c FLG1_SET \xdc\x01 \x02 \n\x02 END   
+FLG1 \x02\x0c FLG1_SET \x06 
+CMD2 SeStop RUNF `\x04 END  \xdc\x01 
+CMD3 TextClose VAR1 \x88\x04 END 
 END_SCRIPT

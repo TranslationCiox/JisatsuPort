@@ -1,7 +1,7 @@
 START_SCRIPT
 \x03\x01\xe0\x044\x01*\x02
-CSCE SCE229_001 \x06 SCE_DONE 
-FLG1 \x8c\x01 FLG2 pu\x01 FLG2_SET \x03S
+SCEC SCE229_001 \x06 SCE_DONE 
+TEXT1 pu\x01 TEXT2 S
  
 しかし、拓司は動けなかった。@
 畳針で片目を貫かれてもなお、御堂は決して拓司から注意をそら\nしていなかったのである。@
@@ -10,7 +10,7 @@ FLG1 \x8c\x01 FLG2 pu\x01 FLG2_SET \x03S
 
   
 FLG1 J\x0c FLG1_SET
-WHAT .\\Data\\Script\\TextFunc.Fob RUNF \xb6\x01 \x02
-CMD1 TextOn RUNF \xe4\x01 END \xb6\x01 \x02
-CSCE TextClose CLOSE \x0c\x02 END
+CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \xb6\x01 
+CMD2 TextOn RUNF \xe4\x01 END  \xb6\x01 
+CMD3 TextClose VAR1 \x0c\x02 END 
 END_SCRIPT

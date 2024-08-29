@@ -1,13 +1,13 @@
 START_SCRIPT
 \x16\x08\x01`B#\x01R\x06  
 FLG1 \xc8\x0c FLG1_SET
-FOBT .\\Data\\Script\\Bg.Fob OPEN   \x02
-CMD2 BgAutoFadeIn OPEN J END  
+CMD6 .\\Data\\Script\\Bg.Fob VAR2   \x02
+CMD4 BgAutoFadeIn VAR2 J END   
 FLG1 \t\x01\x0c FLG1_SET
-FOBT .\\Data\\Script\\Bgm.Fob CLOSE \x88 \x02
-CMD1 PlayCD RUNF \xb2 END
-CSCE SCE097_001 \xce SCE_DONE 
-FLG1 \x8c\x01 FLG2 0\xa7 FLG2_SET \x03\xb4
+CMD6 .\\Data\\Script\\Bgm.Fob VAR1 \x88 
+CMD2 PlayCD RUNF \xb2 END 
+SCEC SCE097_001 \xce SCE_DONE 
+TEXT1 0\xa7 TEXT2 \xb4
  
 こうして１日が終わった。@
 深夜を過ぎても、拓司は眠りにつくことができなかった。@
@@ -17,9 +17,9 @@ FLG1 \x8c\x01 FLG2 0\xa7 FLG2_SET \x03\xb4
 
   
 FLG1 \x12\x01\x0c FLG1_SET
-WHAT .\\Data\\Script\\TextFunc.Fob RUNF \x02\x04 \x02
-CMD1 TextOn RUNF 0\x04 END \x88 \x02
-CMD1 StopCD RUNF X\x04 END! 
+CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \x02\x04 
+CMD2 TextOn RUNF 0\x04 END  \x88 
+CMD2 StopCD RUNF X\x04 END ! 
 FLG1 \x14 FLG2 \x0b
 FLG1\x01 \x1b1^\x05\x03\x12
 CHOICE
@@ -27,16 +27,16 @@ CHOICE
 ENDCHOICE
 
   
-FLG1 \xac\x04\x0c FLG1_SET \x02\x04 \x02 0\x04 END \x02\x04 \x02
-CMD2 GetLastTxtID OPEN :\x05 END2"\x06\x03
+FLG1 \xac\x04\x0c FLG1_SET \x02\x04 \x02 0\x04 END  \x02\x04 \x02
+CMD4 GetLastTxtID VAR2 :\x05 END 2"\x06\x03
 FLG1
 CHOICE
 それは早桃だった\nそれは錦城だった\n\l0,2,
 ENDCHOICE
 
   
-FLG1 d\x05\x0c FLG1_SET \x02\x04 \x02 0\x04 END \x02\x04 \x02 :\x05 END  
+FLG1 d\x05\x0c FLG1_SET \x02\x04 \x02 0\x04 END  \x02\x04 \x02 :\x05 END   
 FLG1 \x01\x1b\x021"\x06  
-FLG1 \x02\x0c FLG1_SET \x02\x04 \x02
-CSCE TextClose CLOSE 4\x06 END
+FLG1 \x02\x0c FLG1_SET \x02\x04 
+CMD3 TextClose VAR1 4\x06 END 
 END_SCRIPT

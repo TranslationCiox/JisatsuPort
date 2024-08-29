@@ -1,7 +1,7 @@
 START_SCRIPT
 \x804\x01`B#\x01\xf6,
-CSCE SCE007_001 \x06 SCE_DONE 
-FLG1 \x8c\x01 FLG2 \x90\x1a FLG2_SET \x03s
+SCEC SCE007_001 \x06 SCE_DONE 
+TEXT1 \x90\x1a TEXT2 s
  
 命じられるままに、早桃は拓司のベッドに歩み寄った。@
 ぎしり、と音を立ててベッドに片膝を乗せ、そこを支点にもう一\n方の脚を乗せる。@
@@ -15,13 +15,13 @@ FLG1 \x8c\x01 FLG2 \x90\x1a FLG2_SET \x03s
 
   
 FLG1 J\x0c FLG1_SET
-WHAT .\\Data\\Script\\TextFunc.Fob RUNF 6\x02 \x02
-CMD1 TextOn RUNF d\x02 END  
+CMD7 .\\Data\\Script\\TextFunc.Fob RUNF 6\x02 
+CMD2 TextOn RUNF d\x02 END   
 FLG1 J\x0c FLG1_SET
-FOBT .\\Data\\Script\\Bg.Fob OPEN \x9a\x02 \x02
-CMD2 BgAutoFadeIn OPEN \xc4\x02 END
-CSCE SCE007_002 \xe8\x02 SCE_DONE 
-FLG1 \x8c\x01 FLG2 \x94\x1a FLG2_SET \x03\xab
+CMD6 .\\Data\\Script\\Bg.Fob VAR2 \x9a\x02 \x02
+CMD4 BgAutoFadeIn VAR2 \xc4\x02 END 
+SCEC SCE007_002 \xe8\x02 SCE_DONE 
+TEXT1 \x94\x1a TEXT2 \xab
  
 義妹のほっそりとした指が、拓司の股間に触れた。@
 輪郭をなぞるように、ゆっくりと、パジャマの上を指先が蠢く。@
@@ -38,9 +38,9 @@ FLG1 \x8c\x01 FLG2 \x94\x1a FLG2_SET \x03\xab
 コットンの柔らかい感触と、義妹の指の刺激に、拓司の息が一気\nに荒くなる。\
 
   
-FLG1 ,\x03\x0c FLG1_SET 6\x02 \x02 d\x02 END
-CSCE SCE007_003 \x12\x06 SCE_DONE 
-FLG1 \x8c\x01 FLG2 \x98\x1a FLG2_SET \x03q
+FLG1 ,\x03\x0c FLG1_SET 6\x02 \x02 d\x02 END 
+SCEC SCE007_003 \x12\x06 SCE_DONE 
+TEXT1 \x98\x1a TEXT2 q
  
 拓司\n　「……早桃」@
 早桃\n　「おにいちゃんにいやらしい目で見られて、早桃もいやらしい\n　　女の子になっちゃった。@
@@ -50,15 +50,15 @@ FLG1 \x8c\x01 FLG2 \x98\x1a FLG2_SET \x03q
 　　お風呂で。\pトイレで。\pおこたのなかで。\pおにいちゃんの机の\n　　下で。\p早桃のクローゼットのなかで……」\
 
   
-FLG1 V\x06\x0c FLG1_SET 6\x02 \x02 d\x02 END
-CSCE SCE007_004 T\x08 SCE_DONE 
-FLG1 \x8c\x01 FLG2 \x9c\x1a FLG2_SET \x03"
+FLG1 V\x06\x0c FLG1_SET 6\x02 \x02 d\x02 END 
+SCEC SCE007_004 T\x08 SCE_DONE 
+TEXT1 \x9c\x1a TEXT2 "
  
 ぺちゃぺちゃと唾液が絡んだようなしゃべりかたで早桃は続ける。\n\p性器に指を絡めて奉仕しながらみだらな言葉で義兄の興奮を誘う。\n\w\z
   
-FLG1 \x98\x08\x0c FLG1_SET 6\x02 \x02 d\x02 END
-CSCE SCE007_005 Z\t SCE_DONE 
-FLG1 \x8c\x01 FLG2 \xa0\x1a FLG2_SET \x03\x8d
+FLG1 \x98\x08\x0c FLG1_SET 6\x02 \x02 d\x02 END 
+SCEC SCE007_005 Z\t SCE_DONE 
+TEXT1 \xa0\x1a TEXT2 \x8d
  
 早桃\n　「もうオナニーなんてする必要ないよ。\pエッチな本も買わな\n　　くていい。@
 　　だって、早桃のおててとおくちとおっぱいとおま○ことおし\n　　りで……溜まったときに処理できるんだよ。@
@@ -69,9 +69,9 @@ FLG1 \x8c\x01 FLG2 \xa0\x1a FLG2_SET \x03\x8d
 　　あんまりいないと思うよ、こんなふうに、性欲処理してくれ\n　　る義妹って。」\
 
   
-FLG1 \x9e\t\x0c FLG1_SET 6\x02 \x02 d\x02 END
-CSCE SCE007_006 \x0c\x0c SCE_DONE 
-FLG1 \x8c\x01 FLG2 \xa4\x1a FLG2_SET \x03}
+FLG1 \x9e\t\x0c FLG1_SET 6\x02 \x02 d\x02 END 
+SCEC SCE007_006 \x0c\x0c SCE_DONE 
+TEXT1 \xa4\x1a TEXT2 }
  
 拓司\n　「う……早桃」@
 早桃\n　「見せて。おにいちゃんが早桃のパンティに射精するところ」@
@@ -83,9 +83,9 @@ FLG1 \x8c\x01 FLG2 \xa4\x1a FLG2_SET \x03}
 ちょうどクロッチの部分に、たっぷりと、精液が溜まっている。\
 
   
-FLG1 P\x0c\x0c FLG1_SET 6\x02 \x02 d\x02 END
-CSCE SCE007_007 ~\x0e SCE_DONE 
-FLG1 \x8c\x01 FLG2 \xa8\x1a FLG2_SET \x03\xaf
+FLG1 P\x0c\x0c FLG1_SET 6\x02 \x02 d\x02 END 
+SCEC SCE007_007 ~\x0e SCE_DONE 
+TEXT1 \xa8\x1a TEXT2 \xaf
  
 早桃\n　「こんなにいっぱい。\pおにいちゃん、すごく溜まってたんだ\n　　ねえ。\p義妹の前でこんなにどくどく精液出しちゃって……\n　　恥ずかしくないの？\p　くすくす……」@
 拓司\n　「はあ、はあ……早桃……」@
@@ -96,9 +96,9 @@ FLG1 \x8c\x01 FLG2 \xa8\x1a FLG2_SET \x03\xaf
 パンティと手はネグリジェの裾に再び消え、そして手だけが裾\nから引き出された。\
 
   
-FLG1 \xc2\x0e\x0c FLG1_SET 6\x02 \x02 d\x02 END
-CSCE SCE007_008 \xb8\x11 SCE_DONE 
-FLG1 \x8c\x01 FLG2 \xac\x1a FLG2_SET \x03u
+FLG1 \xc2\x0e\x0c FLG1_SET 6\x02 \x02 d\x02 END 
+SCEC SCE007_008 \xb8\x11 SCE_DONE 
+TEXT1 \xac\x1a TEXT2 u
  
 早桃\n　「んくっ……はあ……穿き終わったよ。\pおにいちゃんの精液、\n　　いま、早桃のパンティとおま○このあいだに、べったりひっ\n　　ついてるよ。\pぬるぬるして、あったかい。@
 　　おたまじゃくしがいっぱい。\pねえ、おま○このなかに入っち\n　　ゃったらどうしよう？\p　赤ちゃんできちゃうのかなあ……義\n　　兄妹で妊娠しちゃうなんて、パパとママ、驚くだろうなあ…\n　　…」@
@@ -107,9 +107,9 @@ FLG1 \x8c\x01 FLG2 \xac\x1a FLG2_SET \x03u
 拓司\n　「ああ……見たい」\
 
   
-FLG1 \xfc\x11\x0c FLG1_SET 6\x02 \x02 d\x02 END
-CSCE SCE007_009 \n\x14 SCE_DONE 
-FLG1 \x8c\x01 FLG2 \xb0\x1a FLG2_SET \x03p
+FLG1 \xfc\x11\x0c FLG1_SET 6\x02 \x02 d\x02 END 
+SCEC SCE007_009 \n\x14 SCE_DONE 
+TEXT1 \xb0\x1a TEXT2 p
  
 早桃\n　「ほんと、いやらしいおにいちゃん。\pもしかして、いつも早\n　　桃のパンティ、オカズにしてたの？\p　おち○ちんをこすりつ\n　　けて、汚してたの？\p　精子いっぱい出して、それを何も知ら\n　　ない義妹に穿かせて興奮してたの？@
 　　そうなんだあ……だから早桃、こんなにエッチになっちゃっ\n　　たんだ。@
@@ -117,9 +117,9 @@ FLG1 \x8c\x01 FLG2 \xb0\x1a FLG2_SET \x03p
 　　いいよ。\p見せてあげる」\
 
   
-FLG1 N\x14\x0c FLG1_SET 6\x02 \x02 d\x02 END
-CSCE SCE007_010 H\x16 SCE_DONE 
-FLG1 \x8c\x01 FLG2 \xb4\x1a FLG2_SET \x03l
+FLG1 N\x14\x0c FLG1_SET 6\x02 \x02 d\x02 END 
+SCEC SCE007_010 H\x16 SCE_DONE 
+TEXT1 \xb4\x1a TEXT2 l
  
 早桃は拓司をまたいだまま、二、三歩ベッドの上を歩くと、今度\nは義兄の首のあたりで腰を下ろして、膝立ちになった。@
 拓司は義妹の腿にはさまれた。@
@@ -131,9 +131,9 @@ FLG1 \x8c\x01 FLG2 \xb4\x1a FLG2_SET \x03l
 精液の匂いと、早桃の体温がむっと鼻をつく。\
 
   
-FLG1 \x8c\x16\x0c FLG1_SET 6\x02 \x02 d\x02 END
-CSCE SCE007_011 v\x18 SCE_DONE 
-FLG1 \x8c\x01 FLG2 \xb8\x1a FLG2_SET \x03\x99
+FLG1 \x8c\x16\x0c FLG1_SET 6\x02 \x02 d\x02 END 
+SCEC SCE007_011 v\x18 SCE_DONE 
+TEXT1 \xb8\x1a TEXT2 \x99
  
 早桃\n　「ずっと見たかったんでしょう？\p　早桃のここ。@
 　　おにいちゃんの精液でねとねとのおま○こ」@
@@ -146,9 +146,9 @@ FLG1 \x8c\x01 FLG2 \xb8\x1a FLG2_SET \x03\x99
 にちゃにちゃと精液が泡立つ音がする。\
 
   
-FLG1 \xba\x18\x0c FLG1_SET 6\x02 \x02 d\x02 END
-CSCE SCE007_012 X\x1b SCE_DONE 
-FLG1 \x8c\x01 FLG2 \xbc\x1a FLG2_SET \x03`
+FLG1 \xba\x18\x0c FLG1_SET 6\x02 \x02 d\x02 END 
+SCEC SCE007_012 X\x1b SCE_DONE 
+TEXT1 \xbc\x1a TEXT2 `
  
 早桃\n　「はあ、はあ……ねえ、おにいちゃんのパンツも頂戴」@
 \n乞われるまま、拓司はズボンをおろし、脚をばたつかせてブリー\nフを抜き取った。@
@@ -157,10 +157,10 @@ FLG1 \x8c\x01 FLG2 \xbc\x1a FLG2_SET \x03`
 嗅ぎながら、開いている方の手で、再び股間をいじり始める。\
 
   
-FLG1 \x9c\x1b\x0c FLG1_SET 6\x02 \x02 d\x02 END  
-FLG1 K\x0c FLG1_SET \x9a\x02 \x02 \xc4\x02 END
-CSCE SCE007_013 \x8a\x1d SCE_DONE 
-FLG1 \x8c\x01 FLG2 \xc0\x1a FLG2_SET \x03x
+FLG1 \x9c\x1b\x0c FLG1_SET 6\x02 \x02 d\x02 END   
+FLG1 K\x0c FLG1_SET \x9a\x02 \x02 \xc4\x02 END 
+SCEC SCE007_013 \x8a\x1d SCE_DONE 
+TEXT1 \xc0\x1a TEXT2 x
  
 早桃\n　「すごい匂い……。\p早桃も、おにいちゃんのパンツでオナ\n　　ニーしてたんだよ。\p知ってた？@
 　　おしっこと汗と精液の匂いがいっぱいこびりついたパンツの\n　　匂いをこうやって……嗅ぎながら……こんなふうに……オナ\n　　ニーしてたんだよ」@
@@ -170,9 +170,9 @@ FLG1 \x8c\x01 FLG2 \xc0\x1a FLG2_SET \x03x
 \n早桃\n　「……ぺちゃ…ぺちゃ…ぢゅるっ……ぢゅりゅりゅっ……」\
 
   
-FLG1 \xce\x1d\x0c FLG1_SET 6\x02 \x02 d\x02 END
-CSCE SCE007_014 \xe8\x1f SCE_DONE 
-FLG1 \x8c\x01 FLG2 \xc4\x1a FLG2_SET \x03T
+FLG1 \xce\x1d\x0c FLG1_SET 6\x02 \x02 d\x02 END 
+SCEC SCE007_014 \xe8\x1f SCE_DONE 
+TEXT1 \xc4\x1a TEXT2 T
  
 義妹が自分のブリーフを口に入れて、しゃぶっている。@
 下品な音を立てながら……義兄にオナニーを見せつけながら……\n興奮するなというほうが無理だった。@
@@ -181,9 +181,9 @@ FLG1 \x8c\x01 FLG2 \xc4\x1a FLG2_SET \x03T
 太股の付け根が精液でぬるぬると光っている。\
 
   
-FLG1 , \x0c FLG1_SET 6\x02 \x02 d\x02 END
-CSCE SCE007_015 \xb6! SCE_DONE 
-FLG1 \x8c\x01 FLG2 \xc8\x1a FLG2_SET \x03\x8d
+FLG1 , \x0c FLG1_SET 6\x02 \x02 d\x02 END 
+SCEC SCE007_015 \xb6! SCE_DONE 
+TEXT1 \xc8\x1a TEXT2 \x8d
  
 早桃\n　「おにいちゃんと早桃、変態義兄妹だよね……」@
 拓司\n　「……ああ、そうだ。変態だ……」@
@@ -196,9 +196,9 @@ FLG1 \x8c\x01 FLG2 \xc8\x1a FLG2_SET \x03\x8d
 精液は弧を描いて飛び、腰まで伸びた早桃の髪の毛をべったりと\n汚した。\
 
   
-FLG1 \xfa!\x0c FLG1_SET 6\x02 \x02 d\x02 END
-CSCE SCE007_016 h$ SCE_DONE 
-FLG1 \x8c\x01 FLG2 \xcc\x1a FLG2_SET \x03\x9c
+FLG1 \xfa!\x0c FLG1_SET 6\x02 \x02 d\x02 END 
+SCEC SCE007_016 h$ SCE_DONE 
+TEXT1 \xcc\x1a TEXT2 \x9c
  
 早桃\n　「いくらでも出るんだね。\pからだ、おかしいんじゃないの？\n　　\pほんとうは赤ちゃんを作るための液で、こんなふうに女の\n　　子にひっかけるためのものじゃないんだよ？@
 　　大丈夫？\p　まだ出る？\p　駄目だよ、もっとがんばってくれな\n　　くちゃ。\pこれから早桃のお腹の中にいっぱいいっぱい出さな\n　　くちゃいけないんだから。@
@@ -210,9 +210,9 @@ FLG1 \x8c\x01 FLG2 \xcc\x1a FLG2_SET \x03\x9c
 徐々に笑い声が大きくなっていく。\
 
   
-FLG1 \xac$\x0c FLG1_SET 6\x02 \x02 d\x02 END
-CSCE SCE007_017 V' SCE_DONE 
-FLG1 \x8c\x01 FLG2 \xd0\x1a FLG2_SET \x03\xb4
+FLG1 \xac$\x0c FLG1_SET 6\x02 \x02 d\x02 END 
+SCEC SCE007_017 V' SCE_DONE 
+TEXT1 \xd0\x1a TEXT2 \xb4
  
 拓司\n　「……やめろ」@
 早桃\n　「ワハ、ワハハハハ、ハハハハハハハ！」@
@@ -226,12 +226,12 @@ FLG1 \x8c\x01 FLG2 \xd0\x1a FLG2_SET \x03\xb4
 \n早桃\n　「ウワハハハハハハハザザザ……ザザッ……ザアザザザ……ザ\n　　アアアアア……ザアザアアアアアアア……」\
 
   
-FLG1 \x9a'\x0c FLG1_SET 6\x02 \x02 d\x02 END  
-FLG1 \xc8\x0c FLG1_SET \x9a\x02 \x02 \xc4\x02 END
-FOBT .\\Data\\Script\\Bgm.Fob CLOSE \xd8* \x02
-CMD1 StopCD RUNF \x02+ END
-CSCE SCE007_018 \x1e+ SCE_DONE 
-FLG1 \x8c\x01 FLG2 \xd4\x1a FLG2_SET \x03L
+FLG1 \x9a'\x0c FLG1_SET 6\x02 \x02 d\x02 END   
+FLG1 \xc8\x0c FLG1_SET \x9a\x02 \x02 \xc4\x02 END 
+CMD6 .\\Data\\Script\\Bgm.Fob VAR1 \xd8* 
+CMD2 StopCD RUNF \x02+ END 
+SCEC SCE007_018 \x1e+ SCE_DONE 
+TEXT1 \xd4\x1a TEXT2 L
  
 拓司は両手で耳を覆った。@
 そして目を閉じた。@
@@ -246,6 +246,6 @@ FLG1 \x8c\x01 FLG2 \xd4\x1a FLG2_SET \x03L
 おそらくは。\
 
   
-FLG1 b+\x0c FLG1_SET 6\x02 \x02 d\x02 END 6\x02 \x02
-CSCE TextClose CLOSE \xd8, END
+FLG1 b+\x0c FLG1_SET 6\x02 \x02 d\x02 END  6\x02 
+CMD3 TextClose VAR1 \xd8, END 
 END_SCRIPT

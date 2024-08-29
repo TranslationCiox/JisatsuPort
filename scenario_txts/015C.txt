@@ -1,7 +1,7 @@
 START_SCRIPT
 "\x06\x01\xa4\t3\x01\x18\x05
-CSCE SCE015_001 \x06 SCE_DONE 
-FLG1 \x8c\x01 FLG2 \x10' FLG2_SET \x03\xa8
+SCEC SCE015_001 \x06 SCE_DONE 
+TEXT1 \x10' TEXT2 \xa8
  
 紅葉\n　「失礼ね、あるわよ！　私はアンタみたいにゴロゴロ過ごしてな\n　　いんだから、アンタよりよっぽどバテバテなの！　バイトだっ\n　　てやってるし、来週はライブに行くし、受験勉強だってそこそ\n　　こ……まあ、一応……ええと……とにかく夏バテしてるわよ！\n　　でも、それを他人にわからせないようにしてるっていうのが、\n　　私のすごいところなわけなのよ」@
 拓司\n　「ウソつけ。ただ体力が有り余ってるだけだろ」@
@@ -11,10 +11,10 @@ FLG1 \x8c\x01 FLG2 \x10' FLG2_SET \x03\xa8
 
   
 FLG1 J\x0c FLG1_SET
-WHAT .\\Data\\Script\\TextFunc.Fob RUNF \n\x03 \x02
-CMD1 TextOn RUNF 8\x03 END
-CSCE SCE015_002 T\x03 SCE_DONE 
-FLG1 \x8c\x01 FLG2 \x14' FLG2_SET \x03G
+CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \n\x03 
+CMD2 TextOn RUNF 8\x03 END 
+SCEC SCE015_002 T\x03 SCE_DONE 
+TEXT1 \x14' TEXT2 G
  
 拓司\n　「いざというときって、なんだよ？　核戦争が起こって世界が暴\n　　力の時代になったときか？　悪の改造人間が襲いかかってきた\n　　ときか？」@
 紅葉\n　「……まったく、口だけは達者なんだから」@
@@ -23,6 +23,6 @@ FLG1 \x8c\x01 FLG2 \x14' FLG2_SET \x03G
 拓司\n　「ふん」\
 
   
-FLG1 \x98\x03\x0c FLG1_SET \n\x03 \x02 8\x03 END \n\x03 \x02
-CSCE TextClose CLOSE \xfa\x04 END
+FLG1 \x98\x03\x0c FLG1_SET \n\x03 \x02 8\x03 END  \n\x03 
+CMD3 TextClose VAR1 \xfa\x04 END 
 END_SCRIPT

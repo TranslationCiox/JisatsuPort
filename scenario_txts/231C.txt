@@ -1,7 +1,7 @@
 START_SCRIPT
 8\x12\x01`B#\x01\x1a\x0f
-CSCE SCE231_001 \x06 SCE_DONE 
-FLG1 \x8c\x01 FLG2 \x90x\x01 FLG2_SET \x03r
+SCEC SCE231_001 \x06 SCE_DONE 
+TEXT1 \x90x\x01 TEXT2 r
  
 御堂\n　「……動くなよ、虎菱。\pお前だけは勝手にさせねえからな……」\n\p拓司\n　「なんなんだ、お前は……」@
 \n拓司は呆然と言った。言ってから、炎のように怒りがわき上がっ\nてきた。@
@@ -10,10 +10,10 @@ FLG1 \x8c\x01 FLG2 \x90x\x01 FLG2_SET \x03r
 
   
 FLG1 J\x0c FLG1_SET
-WHAT .\\Data\\Script\\TextFunc.Fob RUNF 2\x02 \x02
-CMD1 TextOn RUNF `\x02 END
-CSCE SCE231_002 |\x02 SCE_DONE 
-FLG1 \x8c\x01 FLG2 \x94x\x01 FLG2_SET \x03`
+CMD7 .\\Data\\Script\\TextFunc.Fob RUNF 2\x02 
+CMD2 TextOn RUNF `\x02 END 
+SCEC SCE231_002 |\x02 SCE_DONE 
+TEXT1 \x94x\x01 TEXT2 `
  
 拓司\n　「俺だって同じだッ！\p　お前だけが特別だと思うな！」@
 御堂\n　「うるせえッ！\p　俺は無視されたんだよ！\p　おきざりにされた\n　　んだ！\p　なにもかもが俺を素通りして勝手に動いていきやが\n　　る！\p　気にくわねえ！」@
@@ -21,12 +21,12 @@ FLG1 \x8c\x01 FLG2 \x94x\x01 FLG2_SET \x03`
 御堂\n　「知ったような口きくんじゃねえ、モヤシッ子が！」\
 
   
-FLG1 \xc0\x02\x0c FLG1_SET 2\x02 \x02 `\x02 END  
+FLG1 \xc0\x02\x0c FLG1_SET 2\x02 \x02 `\x02 END   
 FLG1 )\x0c FLG1_SET
-FOBT .\\Data\\Script\\Bg.Fob OPEN \x94\x04 \x02
-CMD2 BgAutoFadeIn OPEN \xbe\x04 END
-CSCE SCE231_003 \xe2\x04 SCE_DONE 
-FLG1 \x8c\x01 FLG2 \x98x\x01 FLG2_SET \x03\xc2
+CMD6 .\\Data\\Script\\Bg.Fob VAR2 \x94\x04 \x02
+CMD4 BgAutoFadeIn VAR2 \xbe\x04 END 
+SCEC SCE231_003 \xe2\x04 SCE_DONE 
+TEXT1 \x98x\x01 TEXT2 \xc2
  
 奇声を上げながら、なたねが突っ込んできた。\pしかし御堂はそれ\nを軽くいなし、足を払って転倒させた。@
 無様に床に転がったなたねを、御堂はつま先で蹴った。@
@@ -40,9 +40,9 @@ FLG1 \x8c\x01 FLG2 \x98x\x01 FLG2_SET \x03\xc2
 自分だけではない、皆の顔に一様に浮かんでいる呆けた表情が証\n明している。\
 
   
-FLG1 &\x05\x0c FLG1_SET 2\x02 \x02 `\x02 END
-CSCE SCE231_004 h\x08 SCE_DONE 
-FLG1 \x8c\x01 FLG2 \x9cx\x01 FLG2_SET \x03s
+FLG1 &\x05\x0c FLG1_SET 2\x02 \x02 `\x02 END 
+SCEC SCE231_004 h\x08 SCE_DONE 
+TEXT1 \x9cx\x01 TEXT2 s
  
 そこには静けさがあった。\p暴力とは相容れないはずの、まったり\nとした静けさが。@
 他人が攻撃されているあいだは、自分は攻撃されない。@
@@ -53,9 +53,9 @@ FLG1 \x8c\x01 FLG2 \x9cx\x01 FLG2_SET \x03s
 御堂は冷たい目で、足下のなたねを見下ろした。\
 
   
-FLG1 \xac\x08\x0c FLG1_SET 2\x02 \x02 `\x02 END
-CSCE SCE231_005 \xb2\n SCE_DONE 
-FLG1 \x8c\x01 FLG2 \xa0x\x01 FLG2_SET \x03>
+FLG1 \xac\x08\x0c FLG1_SET 2\x02 \x02 `\x02 END 
+SCEC SCE231_005 \xb2\n SCE_DONE 
+TEXT1 \xa0x\x01 TEXT2 >
  
 錦城がおそるおそるといった感じで、なたねに歩み寄った。@
 鼻の前に手をかざし、ついで、手首を握る\p。一同はその一挙一動\nを、じっと見つめていた。@
@@ -63,26 +63,25 @@ FLG1 \x8c\x01 FLG2 \xa0x\x01 FLG2_SET \x03>
 \n錦城\n　「……死んでる。\p息、してない……」\
 
   
-FLG1 \xf6\n\x0c FLG1_SET 2\x02 \x02 `\x02 END
-CSCE SCE231_006 (\x0c SCE_DONE 
-FLG1 \x8c\x01 FLG2 \xa4x\x01 FLG2_SET 
-WHAT .\\Data\\Script\\TextFunc.fob RUNF l\x0c \x02
-FOBT CheckNormalMessageSkip RUNF \x9a\x0c END 2\x02 \x02
-CMD2 TextWindowOff CLOSE \xd2\x0c END  
+FLG1 \xf6\n\x0c FLG1_SET 2\x02 \x02 `\x02 END 
+SCEC SCE231_006 (\x0c SCE_DONE 
+TEXT1 \xa4x\x01 TEXT2 \x07.\\Data\\Script\\TextFunc.fob RUNF l\x0c \x02
+CMD6 CheckNormalMessageSkip RUNF \x9a\x0c END  2\x02 \x02
+CMD4 TextWindowOff VAR1 \xd2\x0c END   
 FLG1 \x02\x0c FLG1_SET  \x04
 FLG1 \x01\x0c FLG1_SET  \x08
 FLG1 \x01\x0c FLG1_SET
-FOBT .\\Data\\Script\\Bgm.Fob CLOSE D\r \x02
-CMD1 SePlay RUNF n\r END  
+CMD6 .\\Data\\Script\\Bgm.Fob VAR1 D\r 
+CMD2 SePlay RUNF n\r END   
 FLG1 \xca\x0c FLG1_SET  \x04
 FLG1 \x04\x0c FLG1_SET  \x08
-FLG1 \x01\x0c FLG1_SET \x94\x04 \x02
-CSCE BgFadeIn OPEN \xe4\r END  
-FLG1 \x02\x0c FLG1_SET D\r \x02
-CMD1 SeStop RUNF *\x0e END  
-FLG1 \xc8\x0c FLG1_SET \x94\x04 \x02
-CMD1 BgOn OPEN l\x0e END 2\x02 \x02
-LOAD TextWindowOnDirect RUNF \x94\x0e END 2\x02 \x02
-LOAD UpdateScenarioRead RUNF \xc8\x0e END 2\x02 \x02
-CSCE TextClose CLOSE \xfc\x0e END
+FLG1 \x01\x0c FLG1_SET \x94\x04 
+CMD3 BgFadeIn VAR2 \xe4\r END   
+FLG1 \x02\x0c FLG1_SET D\r 
+CMD2 SeStop RUNF *\x0e END   
+FLG1 \xc8\x0c FLG1_SET \x94\x04 
+CMD2 BgOn VAR2 l\x0e END  2\x02 \x02
+CMD5 TextWindowOnDirect RUNF \x94\x0e END  2\x02 \x02
+CMD5 UpdateScenarioRead RUNF \xc8\x0e END  2\x02 
+CMD3 TextClose VAR1 \xfc\x0e END 
 END_SCRIPT

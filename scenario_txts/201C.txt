@@ -1,15 +1,15 @@
 START_SCRIPT
 1#\x01`B#\x01\xd8\x1d
-CSCE SCE201_001 \x06 SCE_DONE 
-FLG1 \x8c\x01 FLG2 \xb0I\x01 FLG2_SET   
+SCEC SCE201_001 \x06 SCE_DONE 
+TEXT1 \xb0I\x01\x0c"  
 FLG1 \xc9\x0c FLG1_SET
-FOBT .\\Data\\Script\\Bg.Fob OPEN d \x02
-CMD2 BgAutoFadeIn OPEN \x8e END  
+CMD6 .\\Data\\Script\\Bg.Fob VAR2 d \x02
+CMD4 BgAutoFadeIn VAR2 \x8e END   
 FLG1 \x02\x0c FLG1_SET  \x04
 FLG1 \x06\x0c FLG1_SET  \x08
 FLG1 \x01\x0c FLG1_SET
-FOBT .\\Data\\Script\\Bgm.Fob CLOSE \x01 \x02
-CMD1 SePlay RUNF *\x01 END\x03\xa0
+CMD6 .\\Data\\Script\\Bgm.Fob VAR1 \x01 
+CMD2 SePlay RUNF *\x01 END \x03\xa0
  
 錆びたシャッターをこじ開けるように、目を開く。@
 薄く開いて、あたりを見る。@
@@ -24,10 +24,10 @@ CMD1 SePlay RUNF *\x01 END\x03\xa0
 
   
 FLG1 F\x01\x0c FLG1_SET
-WHAT .\\Data\\Script\\TextFunc.Fob RUNF \xe6\x03 \x02
-CMD1 TextOn RUNF \x14\x04 END
-CSCE SCE201_002 0\x04 SCE_DONE 
-FLG1 \x8c\x01 FLG2 \xb4I\x01 FLG2_SET \x03\x8a
+CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \xe6\x03 
+CMD2 TextOn RUNF \x14\x04 END 
+SCEC SCE201_002 0\x04 SCE_DONE 
+TEXT1 \xb4I\x01 TEXT2 \x8a
  
 わからない。@
 どう思えばいいのかすらわからない。@
@@ -42,9 +42,9 @@ FLG1 \x8c\x01 FLG2 \xb4I\x01 FLG2_SET \x03\x8a
 それにしても、似ている。\
 
   
-FLG1 t\x04\x0c FLG1_SET \xe6\x03 \x02 \x14\x04 END
-CSCE SCE201_003 \xd6\x06 SCE_DONE 
-FLG1 \x8c\x01 FLG2 \xb8I\x01 FLG2_SET \x03\x86
+FLG1 t\x04\x0c FLG1_SET \xe6\x03 \x02 \x14\x04 END 
+SCEC SCE201_003 \xd6\x06 SCE_DONE 
+TEXT1 \xb8I\x01 TEXT2 \x86
  
 『学校に籠城している世界』に登場した雲居なたねと、瓜二つ\nりである。\p眼鏡、肩までの黒髪、華奢な身体。\p……ただ、なにか\n印象が違う。\p目だけが違うのだ。@
 『学校に籠城している世界』の雲居なたねの目は、死んでいた。\n\pうつろで、どこにも焦点を結んでいなかった。@
@@ -54,9 +54,9 @@ FLG1 \x8c\x01 FLG2 \xb8I\x01 FLG2_SET \x03\x86
 \n矢継ぎ早に尋ねる少女の声を聞いて、拓司はようやく気づいた。\
 
   
-FLG1 \x1a\x07\x0c FLG1_SET \xe6\x03 \x02 \x14\x04 END
-CSCE SCE201_004 l\t SCE_DONE 
-FLG1 \x8c\x01 FLG2 \xbcI\x01 FLG2_SET \x03\x84
+FLG1 \x1a\x07\x0c FLG1_SET \xe6\x03 \x02 \x14\x04 END 
+SCEC SCE201_004 l\t SCE_DONE 
+TEXT1 \xbcI\x01 TEXT2 \x84
  
 拓司\n　「最初……壁の向こうから話しかけてきたのは、君だったのか\n　　？」@
 女の子\n　「ええ」@
@@ -66,9 +66,9 @@ FLG1 \x8c\x01 FLG2 \xbcI\x01 FLG2_SET \x03\x84
 女の子\n　「そう。\pじゃあ、私も雲居なたねよ。\p紛らわしいようだった\n　　らナタネと呼んで」\
 
   
-FLG1 \xb0\t\x0c FLG1_SET \xe6\x03 \x02 \x14\x04 END
-CSCE SCE201_005 \xfa\x0b SCE_DONE 
-FLG1 \x8c\x01 FLG2 \xc0I\x01 FLG2_SET \x03\x9e
+FLG1 \xb0\t\x0c FLG1_SET \xe6\x03 \x02 \x14\x04 END 
+SCEC SCE201_005 \xfa\x0b SCE_DONE 
+TEXT1 \xc0I\x01 TEXT2 \x9e
  
 　女の子は－－雲居ナタネは、やや意地悪くフフと笑った。@
 \n拓司\n　「ふざけないでくれ。\p俺は今、本気で混乱してる。\p頭がおかし\n　　くなりそうだ。\pなにがなんだかわからない。\p頼む。話してく\n　　れ。\p教授がいっていたとおり、この世界が『現実』なのか？@
@@ -78,9 +78,9 @@ FLG1 \x8c\x01 FLG2 \xc0I\x01 FLG2_SET \x03\x9e
 \nナタネは思案顔を作って沈黙した。\pそして、ベッドに掛けられた\n鳥籠に目を留めて、いった。\
 
   
-FLG1 >\x0c\x0c FLG1_SET \xe6\x03 \x02 \x14\x04 END
-CSCE SCE201_006 \xf0\x0e SCE_DONE 
-FLG1 \x8c\x01 FLG2 \xc4I\x01 FLG2_SET \x03U
+FLG1 >\x0c\x0c FLG1_SET \xe6\x03 \x02 \x14\x04 END 
+SCEC SCE201_006 \xf0\x0e SCE_DONE 
+TEXT1 \xc4I\x01 TEXT2 U
  
 ナタネ\n　「この鳥は、あなたが創ったの」@
 拓司\n　「創った？」@
@@ -91,9 +91,9 @@ FLG1 \x8c\x01 FLG2 \xc4I\x01 FLG2_SET \x03U
 拓司\n　「わからない。\pまったくわからない」\
 
   
-FLG1 4\x0f\x0c FLG1_SET \xe6\x03 \x02 \x14\x04 END
-CSCE SCE201_007 \xc2\x10 SCE_DONE 
-FLG1 \x8c\x01 FLG2 \xc8I\x01 FLG2_SET \x03\x7f
+FLG1 4\x0f\x0c FLG1_SET \xe6\x03 \x02 \x14\x04 END 
+SCEC SCE201_007 \xc2\x10 SCE_DONE 
+TEXT1 \xc8I\x01 TEXT2 \x7f
  
 ナタネ\n　「そうね……たとえば神様は世界を創った。\pなんだったかしら\n　　……『光あれ』？\p　そうして世界を創って、人間を創った。@
 　　そうよね？」@
@@ -107,9 +107,9 @@ FLG1 \x8c\x01 FLG2 \xc8I\x01 FLG2_SET \x03\x7f
 そうしないと逆さまになったベッドからストンと落下してしまう\nと思ったのだ。\
 
   
-FLG1 \x06\x11\x0c FLG1_SET \xe6\x03 \x02 \x14\x04 END
-CSCE SCE201_008 <\x13 SCE_DONE 
-FLG1 \x8c\x01 FLG2 \xccI\x01 FLG2_SET \x03\xa5
+FLG1 \x06\x11\x0c FLG1_SET \xe6\x03 \x02 \x14\x04 END 
+SCEC SCE201_008 <\x13 SCE_DONE 
+TEXT1 \xccI\x01 TEXT2 \xa5
  
 ……もちろん落ちはしない。@
 それは目眩のようなもので、世界は歴然として反転などしていな\nいからだ。@
@@ -119,9 +119,9 @@ FLG1 \x8c\x01 FLG2 \xccI\x01 FLG2_SET \x03\xa5
 考察は後回しだ。いまは少女の話を聞くことが先決だろう。\
 
   
-FLG1 \x80\x13\x0c FLG1_SET \xe6\x03 \x02 \x14\x04 END
-CSCE SCE201_009 N\x16 SCE_DONE 
-FLG1 \x8c\x01 FLG2 \xd0I\x01 FLG2_SET \x03n
+FLG1 \x80\x13\x0c FLG1_SET \xe6\x03 \x02 \x14\x04 END 
+SCEC SCE201_009 N\x16 SCE_DONE 
+TEXT1 \xd0I\x01 TEXT2 n
  
 拓司\n　「……ＯＫ。\p俺はその鳥を創った。\p神様みたいに『鳥よあれ』\n　　と願って、創った。\pそういうことだな？」@
 ナタネ\n　「『願う』か……なかなかうまい表現ね。\pそう、『創った』と\n　　いうより、『願った』のほうが近いかもしれないわね」@
@@ -131,9 +131,9 @@ FLG1 \x8c\x01 FLG2 \xd0I\x01 FLG2_SET \x03n
 ナタネ\n　「誰が決めたの？」\
 
   
-FLG1 \x92\x16\x0c FLG1_SET \xe6\x03 \x02 \x14\x04 END
-CSCE SCE201_010 \x84\x18 SCE_DONE 
-FLG1 \x8c\x01 FLG2 \xd4I\x01 FLG2_SET \x03\x8b
+FLG1 \x92\x16\x0c FLG1_SET \xe6\x03 \x02 \x14\x04 END 
+SCEC SCE201_010 \x84\x18 SCE_DONE 
+TEXT1 \xd4I\x01 TEXT2 \x8b
  
 拓司は絶句した。@
 誰が決めたのかなど知らない。@
@@ -146,9 +146,9 @@ FLG1 \x8c\x01 FLG2 \xd4I\x01 FLG2_SET \x03\x8b
 拓司\n　「……ああ」\
 
   
-FLG1 \xc8\x18\x0c FLG1_SET \xe6\x03 \x02 \x14\x04 END
-CSCE SCE201_011 .\x1b SCE_DONE 
-FLG1 \x8c\x01 FLG2 \xd8I\x01 FLG2_SET \x03f
+FLG1 \xc8\x18\x0c FLG1_SET \xe6\x03 \x02 \x14\x04 END 
+SCEC SCE201_011 .\x1b SCE_DONE 
+TEXT1 \xd8I\x01 TEXT2 f
  
 ナタネ\n　「まず、ひとつめ\p。あなたは『創る』ことができる。@
 　　神様が光を創ったように、あなたは鳥を創ることができる。@
@@ -156,12 +156,12 @@ FLG1 \x8c\x01 FLG2 \xd8I\x01 FLG2_SET \x03f
 　　あなたはかわいそうな病人で、あなたは『創る』ことなどで\n　　きない。そういうふうに信じ込ませようとして、そしてそれ\n　　は成功しつつある……いいわね？」\
 
   
-FLG1 r\x1b\x0c FLG1_SET \xe6\x03 \x02 \x14\x04 END\x03\x0c
+FLG1 r\x1b\x0c FLG1_SET \xe6\x03 \x02 \x14\x04 END \x03\x0c
 CHOICE
 もう一度聞く\n黙って続きを聞く\n\l0,2,
 ENDCHOICE
 
   
-FLG1 D\x1d\x0c FLG1_SET \xe6\x03 \x02 \x14\x04 END \xe6\x03 \x02
-CSCE TextClose CLOSE \xba\x1d END
+FLG1 D\x1d\x0c FLG1_SET \xe6\x03 \x02 \x14\x04 END  \xe6\x03 
+CMD3 TextClose VAR1 \xba\x1d END 
 END_SCRIPT

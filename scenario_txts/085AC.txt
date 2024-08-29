@@ -1,10 +1,10 @@
 START_SCRIPT
 \xcf\x1f\x01`B#\x01\xc2\x1a  
 FLG1 \t\x01\x0c FLG1_SET
-FOBT .\\Data\\Script\\Bgm.Fob CLOSE   \x02
-CMD1 PlayCD RUNF J END
-CSCE SCE085a_001 f SCE_DONE 
-FLG1 \x8c\x01 FLG2 p\x94 FLG2_SET \x03\x82
+CMD6 .\\Data\\Script\\Bgm.Fob VAR1   
+CMD2 PlayCD RUNF J END 
+SCEC SCE085a_001 f SCE_DONE 
+TEXT1 p\x94 TEXT2 \x82
  
 無事目を覚ましたものの、茫然自失といった体の紅葉を導いて、\n拓司は４階へ向かった。@
 いまやってきた道を再び戻るのは気が引けたが、もう、回り道を\nするほどの気力は残っていなかった。\pそれに、一度体験してしま\nえばもう大丈夫なのだ、という考えが浮かんできた。\p免疫のよう\nなものができて、もう大丈夫なのだ、と。\p拓司はそんな妄想めい\nた信念にすがって立ち、自殺波動のなかを突っ切った。@
@@ -13,10 +13,10 @@ FLG1 \x8c\x01 FLG2 p\x94 FLG2_SET \x03\x82
 
   
 FLG1 \xaa\x0c FLG1_SET
-WHAT .\\Data\\Script\\TextFunc.Fob RUNF \xd2\x02 \x02
-CMD1 TextOn RUNF \x03 END
-CSCE SCE085a_002 \x1c\x03 SCE_DONE 
-FLG1 \x8c\x01 FLG2 t\x94 FLG2_SET \x03\xd6
+CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \xd2\x02 
+CMD2 TextOn RUNF \x03 END 
+SCEC SCE085a_002 \x1c\x03 SCE_DONE 
+TEXT1 t\x94 TEXT2 \xd6
  
 途中、生きている人間には一度も出くわさなかった。\pもっとも、\n余計な寄り道はせず、ただひたすら４階目指して廊下を歩いてき\nただけだから、もしかしたらどこかの教室に生き残りがいるのか\nもしれない。@
 ただもう、一刻も早くシェルターに逃げ込みたかった。@
@@ -28,9 +28,9 @@ FLG1 \x8c\x01 FLG2 t\x94 FLG2_SET \x03\xd6
 眉唾物の話だが、いまはそれを信じたい。\pおばけが怖くて夜、布\n団を被るのに似ている。\p布団なんかでおばけから身を守れるはず\nがない。\pだが、恐怖からは守ってくれる……。\
 
   
-FLG1 `\x03\x0c FLG1_SET \xd2\x02 \x02 \x03 END
-CSCE SCE085a_003 \xf2\x06 SCE_DONE 
-FLG1 \x8c\x01 FLG2 x\x94 FLG2_SET \x03Z
+FLG1 `\x03\x0c FLG1_SET \xd2\x02 \x02 \x03 END 
+SCEC SCE085a_003 \xf2\x06 SCE_DONE 
+TEXT1 x\x94 TEXT2 Z
  
 なたね\n　「虎菱くん！」@
 \n　四階の階段を上りきったところには、なたねが腕を組んで立っ\nていた。\p階段を駆け上がってきたのが拓司だと確認すると、なた\nねは驚きの声をあげた。@
@@ -40,9 +40,9 @@ FLG1 \x8c\x01 FLG2 x\x94 FLG2_SET \x03Z
 拓司\n　「偶然だよ」\
 
   
-FLG1 6\x07\x0c FLG1_SET \xd2\x02 \x02 \x03 END
-CSCE SCE085a_004 \xd8\x08 SCE_DONE 
-FLG1 \x8c\x01 FLG2 |\x94 FLG2_SET \x03\x9f
+FLG1 6\x07\x0c FLG1_SET \xd2\x02 \x02 \x03 END 
+SCEC SCE085a_004 \xd8\x08 SCE_DONE 
+TEXT1 |\x94 TEXT2 \x9f
  
 なたね\n　「ううん、違う！\p　やっぱり虎菱くんは戦士なのよ！@
 　　だから死ななかったんだわ！\p　すごい、すごい！@
@@ -55,9 +55,9 @@ FLG1 \x8c\x01 FLG2 |\x94 FLG2_SET \x03\x9f
 　拓司たちは身構えたが、果たして現れたのは見慣れた人物であ\n　った。\
 
   
-FLG1 \x1c\t\x0c FLG1_SET \xd2\x02 \x02 \x03 END
-CSCE SCE085a_005 \xd2\x0b SCE_DONE 
-FLG1 \x8c\x01 FLG2 \x80\x94 FLG2_SET \x03e
+FLG1 \x1c\t\x0c FLG1_SET \xd2\x02 \x02 \x03 END 
+SCEC SCE085a_005 \xd2\x0b SCE_DONE 
+TEXT1 \x80\x94 TEXT2 e
  
 　現れたのは御堂と、錦城である。@
 \n御堂\n　「はあ、はあ……お前ら、生きてたのか！」@
@@ -68,9 +68,9 @@ FLG1 \x8c\x01 FLG2 \x80\x94 FLG2_SET \x03e
 錦城\n　「とにかく、無事で良かったわ。\p他に生き残っている人はいる\n　　の？！」\
 
   
-FLG1 \x16\x0c\x0c FLG1_SET \xd2\x02 \x02 \x03 END
-CSCE SCE085a_006 \xe4\r SCE_DONE 
-FLG1 \x8c\x01 FLG2 \x84\x94 FLG2_SET \x03}
+FLG1 \x16\x0c\x0c FLG1_SET \xd2\x02 \x02 \x03 END 
+SCEC SCE085a_006 \xe4\r SCE_DONE 
+TEXT1 \x84\x94 TEXT2 }
  
 錦城\n　「少ないわね。\pでは、ここを拠点にして、まだ無事な学生たち\n　　を探しに行きましょう！\p　他のみんなは実験室の中？@
 　　とりあえずここに集めて－－」@
@@ -82,9 +82,9 @@ FLG1 \x8c\x01 FLG2 \x84\x94 FLG2_SET \x03}
 拓司\n　「いや、御堂。\p……あながち全部デタラメってわけでもなさそ\n　　うだぜ」\
 
   
-FLG1 (\x0e\x0c FLG1_SET \xd2\x02 \x02 \x03 END
-CSCE SCE085a_007 V\x10 SCE_DONE 
-FLG1 \x8c\x01 FLG2 \x88\x94 FLG2_SET \x03i
+FLG1 (\x0e\x0c FLG1_SET \xd2\x02 \x02 \x03 END 
+SCEC SCE085a_007 V\x10 SCE_DONE 
+TEXT1 \x88\x94 TEXT2 i
  
 御堂\n　「なに……？」@
 \n　拓司はこれまでの出来事を、遅れてきた一同に語って聞かせた。\n　\p最後に、なたねが自殺波動と呼んでいる『なにか』が確かに存\n　在するということを……そしてなたねがそれに対抗する手段とし\n　てシェルターを準備していたことを……語った。@
@@ -92,9 +92,9 @@ FLG1 \x8c\x01 FLG2 \x88\x94 FLG2_SET \x03i
 \n錦城はふう、とため息をついて肩をすくめた。\
 
   
-FLG1 \x9a\x10\x0c FLG1_SET \xd2\x02 \x02 \x03 END
-CSCE SCE085a_008 x\x12 SCE_DONE 
-FLG1 \x8c\x01 FLG2 \x8c\x94 FLG2_SET \x03z
+FLG1 \x9a\x10\x0c FLG1_SET \xd2\x02 \x02 \x03 END 
+SCEC SCE085a_008 x\x12 SCE_DONE 
+TEXT1 \x8c\x94 TEXT2 z
  
 錦城\n　「それにしても……雲居さん。\pさっきいっていた最終波動っ\n　　て、いったいなんなの？」@
 なたね\n　「文字通り、最後にやってくる波動のことです」@
@@ -102,9 +102,9 @@ FLG1 \x8c\x01 FLG2 \x8c\x94 FLG2_SET \x03z
 なたね\n　「いま、断続的に襲ってきている波動は、大地震の前の予震み\n　　たいなものにすぎません。\pエンケリュスが本格始動するまえ\n　　の震えみたいなものにすぎない。\pいずれはエンケリュスは完\n　　全に目覚めて、これまでの波動なんて話にならないくらいの\n　　巨大な波動を放ちます。\pそれが最終波動です」\
 
   
-FLG1 \xbc\x12\x0c FLG1_SET \xd2\x02 \x02 \x03 END
-CSCE SCE085a_009 \xde\x14 SCE_DONE 
-FLG1 \x8c\x01 FLG2 \x90\x94 FLG2_SET \x03\x94
+FLG1 \xbc\x12\x0c FLG1_SET \xd2\x02 \x02 \x03 END 
+SCEC SCE085a_009 \xde\x14 SCE_DONE 
+TEXT1 \x90\x94 TEXT2 \x94
  
 錦城\n　「これまでの波動よりも大きい……」@
 なたね\n　「ええ。\pおそらくそれで、地球上の人間はみな死ぬでしょう。@
@@ -113,9 +113,9 @@ FLG1 \x8c\x01 FLG2 \x90\x94 FLG2_SET \x03\x94
 \n御堂\n　「バカバカしい！\p　こんなのの妄想を真に受けてるんじゃねえ\n　　だろうな！」\
 
   
-FLG1 "\x15\x0c FLG1_SET \xd2\x02 \x02 \x03 END
-CSCE SCE085a_010 \xac\x17 SCE_DONE 
-FLG1 \x8c\x01 FLG2 \x94\x94 FLG2_SET \x03^
+FLG1 "\x15\x0c FLG1_SET \xd2\x02 \x02 \x03 END 
+SCEC SCE085a_010 \xac\x17 SCE_DONE 
+TEXT1 \x94\x94 TEXT2 ^
  
 拓司\n　「だったらとっとと学校を出て、好きなところにいったらどう\n　　だ？」@
 御堂\n　「……」@
@@ -125,15 +125,15 @@ FLG1 \x8c\x01 FLG2 \x94\x94 FLG2_SET \x03^
 なたね\n　「１時間後かもしれないし、１週間後かもしれない。\p１０年後\n　　かもしれないし、１分後かも……１秒後かもしれない」\
 
   
-FLG1 \xf0\x17\x0c FLG1_SET \xd2\x02 \x02 \x03 END
-CSCE SCE085a_011 \xa2\x19 SCE_DONE 
-FLG1 \x8c\x01 FLG2 \x98\x94 FLG2_SET \x03 
+FLG1 \xf0\x17\x0c FLG1_SET \xd2\x02 \x02 \x03 END 
+SCEC SCE085a_011 \xa2\x19 SCE_DONE 
+TEXT1 \x98\x94 TEXT2  
  
 御堂\n　「……」@
 なたね\n　「……」@
 御堂\n　「と、とにかく実験室に入ろうじゃねえか。\p話はそれからだ」\
 
   
-FLG1 \xe6\x19\x0c FLG1_SET \xd2\x02 \x02 \x03 END \xd2\x02 \x02
-CSCE TextClose CLOSE \xa4\x1a END
+FLG1 \xe6\x19\x0c FLG1_SET \xd2\x02 \x02 \x03 END  \xd2\x02 
+CMD3 TextClose VAR1 \xa4\x1a END 
 END_SCRIPT

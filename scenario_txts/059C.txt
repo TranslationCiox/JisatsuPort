@@ -1,7 +1,7 @@
 START_SCRIPT
 u\x03\x01`\x044\x01\xc6\x02
-CSCE SCE059_001 \x06 SCE_DONE 
-FLG1 \x8c\x01 FLG2 \xd0k FLG2_SET \x03z
+SCEC SCE059_001 \x06 SCE_DONE 
+TEXT1 \xd0k TEXT2 z
  
 拓司\n　「天使って、なんのことだ？」@
 早桃\n　「……え？」@
@@ -16,7 +16,7 @@ FLG1 \x8c\x01 FLG2 \xd0k FLG2_SET \x03z
 
   
 FLG1 J\x0c FLG1_SET
-WHAT .\\Data\\Script\\TextFunc.Fob RUNF R\x02 \x02
-CMD1 TextOn RUNF \x80\x02 END R\x02 \x02
-CSCE TextClose CLOSE \xa8\x02 END
+CMD7 .\\Data\\Script\\TextFunc.Fob RUNF R\x02 
+CMD2 TextOn RUNF \x80\x02 END  R\x02 
+CMD3 TextClose VAR1 \xa8\x02 END 
 END_SCRIPT

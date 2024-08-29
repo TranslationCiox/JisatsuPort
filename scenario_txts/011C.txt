@@ -1,15 +1,15 @@
 START_SCRIPT
 \x06\x18\x01`B#\x01\x1e\x11
-CSCE SCE011_001 \x06 SCE_DONE 
-FLG1 \x8c\x01 FLG2 \xd0  FLG2_SET   
+SCEC SCE011_001 \x06 SCE_DONE 
+TEXT1 \xd0 \x0c"  
 FLG1 \x0c FLG1_SET  \x04
 FLG1 \x13\x0c FLG1_SET  \x08
 FLG1 \x0c FLG1_SET
-FOBT .\\Data\\Script\\Bgm.Fob CLOSE \x98 \x02
-CSCE SePlayEx OPEN \xc2 END  
+CMD6 .\\Data\\Script\\Bgm.Fob VAR1 \x98 
+CMD3 SePlayEx VAR2 \xc2 END   
 FLG1 \x0c FLG1_SET
-FOBT .\\Data\\Script\\Bg.Fob OPEN \xfc \x02
-CMD2 BgAutoFadeIn OPEN &\x01 END\x03a
+CMD6 .\\Data\\Script\\Bg.Fob VAR2 \xfc \x02
+CMD4 BgAutoFadeIn VAR2 &\x01 END \x03a
  
 早桃\n　「おはよう、おにいちゃん。起きたんだ？」@
 拓司\n　「……おはよう」@
@@ -23,51 +23,51 @@ CMD2 BgAutoFadeIn OPEN &\x01 END\x03a
 
   
 FLG1 J\x01\x0c FLG1_SET
-WHAT .\\Data\\Script\\TextFunc.Fob RUNF \xee\x02 \x02
-CMD1 TextOn RUNF \x1c\x03 END
-CSCE SCE011_002 8\x03 SCE_DONE 
-FLG1 \x8c\x01 FLG2 \xd4  FLG2_SET  \xee\x02 \x02
-LOAD TextWindowOffDirect \x88\x03 END  
+CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \xee\x02 
+CMD2 TextOn RUNF \x1c\x03 END 
+SCEC SCE011_002 8\x03 SCE_DONE 
+TEXT1 \xd4 \x0c" \xee\x02 \x02
+CMD5 TextWindowOffDirect \x88\x03 END   
 FLG1 \x02\x0c FLG1_SET  \x04
 FLG1 \x01\x0c FLG1_SET  \x08
-FLG1 \x01\x0c FLG1_SET \x98 \x02
-CMD1 SePlay RUNF \n\x04 END\x01\x01 &\x04 \x0c FLG1_SET &\x04 \x03\x1b\x02\x041\x86\x05  
-FLG1 \xc9\x0c FLG1_SET \xfc \x02
-CMD1 BgOn OPEN \x86\x04 END  
+FLG1 \x01\x0c FLG1_SET \x98 
+CMD2 SePlay RUNF \n\x04 END \x01\x01 &\x04 \x0c FLG1_SET &\x04 \x03\x1b\x02\x041\x86\x05  
+FLG1 \xc9\x0c FLG1_SET \xfc 
+CMD2 BgOn VAR2 \x86\x04 END   
 FLG1 \x01\x0c FLG1_SET
-WHAT .\\Data\\Script\\TextFunc.fob RUNF \xbc\x04 \x02
-CSCE WaitTime OPEN \xea\x04 END  
-FLG1 \xca\x0c FLG1_SET \xfc \x02 \x86\x04 END  
-FLG1 \x01\x0c FLG1_SET \xbc\x04 \x02 \xea\x04 END &\x04 \x01\x0c\x02d"2>\x04  
-FLG1 \x02\x0c FLG1_SET \x98 \x02
-CMD1 SeStop RUNF \xb2\x05 END  
-FLG1 \x0c FLG1_SET \xfc \x02 \x86\x04 END \xee\x02 \x02
-CMD2 TextWindowOn OPEN \x0e\x06 END\x03\x1c
+CMD7 .\\Data\\Script\\TextFunc.fob RUNF \xbc\x04 
+CMD3 WaitTime VAR2 \xea\x04 END   
+FLG1 \xca\x0c FLG1_SET \xfc \x02 \x86\x04 END   
+FLG1 \x01\x0c FLG1_SET \xbc\x04 \x02 \xea\x04 END  &\x04 \x01\x0c\x02d"2>\x04  
+FLG1 \x02\x0c FLG1_SET \x98 
+CMD2 SeStop RUNF \xb2\x05 END   
+FLG1 \x0c FLG1_SET \xfc \x02 \x86\x04 END  \xee\x02 \x02
+CMD4 TextWindowOn VAR2 \x0e\x06 END \x03\x1c
  
 早桃\n　「おにいちゃん？」@
 拓司\n　「……あ、ああ。ごめん。いただきます」@
 早桃\n　「……うん」\
 
   
-FLG1 2\x06\x0c FLG1_SET \xee\x02 \x02 \x1c\x03 END
-CSCE SCE011_003 \xdc\x06 SCE_DONE 
-FLG1 \x8c\x01 FLG2 \xd8  FLG2_SET  \xee\x02 \x02 \x88\x03 END  
+FLG1 2\x06\x0c FLG1_SET \xee\x02 \x02 \x1c\x03 END 
+SCEC SCE011_003 \xdc\x06 SCE_DONE 
+TEXT1 \xd8 \x0c" \xee\x02 \x02 \x88\x03 END   
 FLG1 \x02\x0c FLG1_SET  \x04
 FLG1 \x01\x0c FLG1_SET  \x08
-FLG1 \x01\x0c FLG1_SET \x98 \x02 \n\x04 END  
+FLG1 \x01\x0c FLG1_SET \x98 \x02 \n\x04 END   
 FLG1 \xca\x0c FLG1_SET \xfc \x02
-CMD2 BgNormalFadeIn RUNF \xc8\x07 END\x01\x01 \xec\x07 \x0c FLG1_SET \xec\x07 \x03\x1b\x02\x041\n\t  
-FLG1 \xc9\x0c FLG1_SET \xfc \x02 \x86\x04 END  
-FLG1 \x01\x0c FLG1_SET \xbc\x04 \x02 \xea\x04 END  
-FLG1 \xca\x0c FLG1_SET \xfc \x02 \x86\x04 END  
-FLG1 \x01\x0c FLG1_SET \xbc\x04 \x02 \xea\x04 END \xec\x07 \x01\x0c\x02d"2\x04\x08  
-FLG1 \xc8\x0c FLG1_SET \xfc \x02 \x86\x04 END  
-FLG1 L\x0c FLG1_SET \xfc \x02 \xc8\x07 END  
-FLG1 <\x0c FLG1_SET \xbc\x04 \x02 \xea\x04 END  
-FLG1 \xc8\x0c FLG1_SET \xfc \x02 \x86\x04 END  
-FLG1 \x02\x0c FLG1_SET \x98 \x02 \xb2\x05 END  
-FLG1 \x04\x01\x0c FLG1_SET \x98 \x02
-CMD1 PlayCD RUNF :\n END \xee\x02 \x02 \x0e\x06 END\x03\x08\x01
+CMD4 BgNormalFadeIn RUNF \xc8\x07 END \x01\x01 \xec\x07 \x0c FLG1_SET \xec\x07 \x03\x1b\x02\x041\n\t  
+FLG1 \xc9\x0c FLG1_SET \xfc \x02 \x86\x04 END   
+FLG1 \x01\x0c FLG1_SET \xbc\x04 \x02 \xea\x04 END   
+FLG1 \xca\x0c FLG1_SET \xfc \x02 \x86\x04 END   
+FLG1 \x01\x0c FLG1_SET \xbc\x04 \x02 \xea\x04 END  \xec\x07 \x01\x0c\x02d"2\x04\x08  
+FLG1 \xc8\x0c FLG1_SET \xfc \x02 \x86\x04 END   
+FLG1 L\x0c FLG1_SET \xfc \x02 \xc8\x07 END   
+FLG1 <\x0c FLG1_SET \xbc\x04 \x02 \xea\x04 END   
+FLG1 \xc8\x0c FLG1_SET \xfc \x02 \x86\x04 END   
+FLG1 \x02\x0c FLG1_SET \x98 \x02 \xb2\x05 END   
+FLG1 \x04\x01\x0c FLG1_SET \x98 
+CMD2 PlayCD RUNF :\n END  \xee\x02 \x02 \x0e\x06 END \x03\x08\x01
  
 早桃\n　「……あ……ああ……うくっ……気持ちい……いい……あはっ…\n　　…指がこんなになかに……入ってる……ふーっ……ふーっ……\n　　こんなに……ぬるぬるで……」@
 /*　SE01再生しながら　ノイズ表示→HCG05表示　を3回繰り返し　*/\a5,0,0,0,\a6,0,0,0,早桃\n　「……もっと……もっといっぱい……あくっ……奥に……気持ち\n　　いいよぅ……」@
@@ -78,18 +78,18 @@ CMD1 PlayCD RUNF :\n END \xee\x02 \x02 \x0e\x06 END\x03\x08\x01
 /*　SE01再生しながら　ノイズ表示→HCG05表示　を3回繰り返し　*/\a5,0,0,0,\a6,0,0,0,早桃\n　「……おにいちゃ……ぁん」\
 
   
-FLG1 p\n\x0c FLG1_SET \xee\x02 \x02 \x1c\x03 END
-CSCE SCE011_004 \xca\x0e SCE_DONE 
-FLG1 \x8c\x01 FLG2 \xdc  FLG2_SET  \xbc\x04 \x02
-FOBT CheckNormalMessageSkip RUNF \x1a\x0f END \xee\x02 \x02 \x88\x03 END  
+FLG1 p\n\x0c FLG1_SET \xee\x02 \x02 \x1c\x03 END 
+SCEC SCE011_004 \xca\x0e SCE_DONE 
+TEXT1 \xdc \x0c" \xbc\x04 \x02
+CMD6 CheckNormalMessageSkip RUNF \x1a\x0f END  \xee\x02 \x02 \x88\x03 END   
 FLG1 \x02\x0c FLG1_SET  \x04
 FLG1 \x01\x0c FLG1_SET  \x08
-FLG1 \x01\x0c FLG1_SET \x98 \x02 \n\x04 END  
-FLG1 \xca\x0c FLG1_SET \xfc \x02 \xc8\x07 END  
-FLG1 <\x0c FLG1_SET \xbc\x04 \x02 \xea\x04 END  
-FLG1 \xc8\x0c FLG1_SET \xfc \x02 \x86\x04 END  
-FLG1 \x02\x0c FLG1_SET \x98 \x02 \xb2\x05 END \x98 \x02
-CMD1 StopCD RUNF \xa4\x10 END \xee\x02 \x02
-LOAD UpdateScenarioRead RUNF \xcc\x10 END \xee\x02 \x02
-CSCE TextClose CLOSE \x11 END
+FLG1 \x01\x0c FLG1_SET \x98 \x02 \n\x04 END   
+FLG1 \xca\x0c FLG1_SET \xfc \x02 \xc8\x07 END   
+FLG1 <\x0c FLG1_SET \xbc\x04 \x02 \xea\x04 END   
+FLG1 \xc8\x0c FLG1_SET \xfc \x02 \x86\x04 END   
+FLG1 \x02\x0c FLG1_SET \x98 \x02 \xb2\x05 END  \x98 
+CMD2 StopCD RUNF \xa4\x10 END  \xee\x02 \x02
+CMD5 UpdateScenarioRead RUNF \xcc\x10 END  \xee\x02 
+CMD3 TextClose VAR1 \x11 END 
 END_SCRIPT

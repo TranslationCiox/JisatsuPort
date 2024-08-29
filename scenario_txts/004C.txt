@@ -1,19 +1,18 @@
 START_SCRIPT
 d\x03\x01\x80\x044\x01h\x02
-CSCE SCE004_001 \x06 SCE_DONE 
-FLG1 \x8c\x01 FLG2 \xe0\x15 FLG2_SET 
-WHAT .\\Data\\Script\\TextFunc.fob RUNF J \x02
-FOBT CheckNormalMessageSkip RUNF x END
-WHAT .\\Data\\Script\\TextFunc.Fob RUNF \xa4 \x02
-LOAD TextWindowOffDirect \xd2 END  
+SCEC SCE004_001 \x06 SCE_DONE 
+TEXT1 \xe0\x15 TEXT2 \x07.\\Data\\Script\\TextFunc.fob RUNF J \x02
+CMD6 CheckNormalMessageSkip RUNF x END 
+CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \xa4 \x02
+CMD5 TextWindowOffDirect \xd2 END   
 FLG1 ,\x01\x0c FLG1_SET
-FOBT .\\Data\\Script\\Bg.Fob OPEN \x14\x01 \x02
-CMD1 BgOn OPEN >\x01 END  
+CMD6 .\\Data\\Script\\Bg.Fob VAR2 \x14\x01 
+CMD2 BgOn VAR2 >\x01 END   
 FLG1 \x0b\x01\x0c FLG1_SET
-FOBT .\\Data\\Script\\Bgm.Fob CLOSE t\x01 \x02
-CMD1 PlayCD RUNF \x9e\x01 END J \x02
-CMD1 WaitKey \xc6\x01 END t\x01 \x02
-CMD1 StopCD RUNF \xee\x01 END \xa4 \x02
-LOAD UpdateScenarioRead RUNF \x16\x02 END \xa4 \x02
-CSCE TextClose CLOSE J\x02 END
+CMD6 .\\Data\\Script\\Bgm.Fob VAR1 t\x01 
+CMD2 PlayCD RUNF \x9e\x01 END  J 
+CMD2 WaitKey \xc6\x01 END  t\x01 
+CMD2 StopCD RUNF \xee\x01 END  \xa4 \x02
+CMD5 UpdateScenarioRead RUNF \x16\x02 END  \xa4 
+CMD3 TextClose VAR1 J\x02 END 
 END_SCRIPT

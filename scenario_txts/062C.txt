@@ -1,25 +1,25 @@
 START_SCRIPT
 /8\x01`B#\x01\x9a/
-CSCE SCE062_001 \x06 SCE_DONE 
-FLG1 \x8c\x01 FLG2 \x80p FLG2_SET   
+SCEC SCE062_001 \x06 SCE_DONE 
+TEXT1 \x80p\x0c"  
 FLG1 \x0c FLG1_SET  \x04
 FLG1 \t\x0c FLG1_SET  \x08
 FLG1 \x0c FLG1_SET
-FOBT .\\Data\\Script\\Bgm.Fob CLOSE \x98 \x02
-CSCE SePlayEx OPEN \xc2 END\x03\x13
+CMD6 .\\Data\\Script\\Bgm.Fob VAR1 \x98 
+CMD3 SePlayEx VAR2 \xc2 END \x03\x13
  
 カンナ\n　「……きたんだ？」@
 \nその声は、頭上から聞こえてきた。\
 
   
 FLG1 \xe2\x0c FLG1_SET
-WHAT .\\Data\\Script\\TextFunc.Fob RUNF N\x01 \x02
-CMD1 TextOn RUNF |\x01 END  
+CMD7 .\\Data\\Script\\TextFunc.Fob RUNF N\x01 
+CMD2 TextOn RUNF |\x01 END   
 FLG1 \x18\x0c FLG1_SET
-FOBT .\\Data\\Script\\Bg.Fob OPEN \xb2\x01 \x02
-CMD2 BgAutoFadeIn OPEN \xdc\x01 END
-CSCE SCE062_002 \x02 SCE_DONE 
-FLG1 \x8c\x01 FLG2 \x84p FLG2_SET \x03\xcc
+CMD6 .\\Data\\Script\\Bg.Fob VAR2 \xb2\x01 \x02
+CMD4 BgAutoFadeIn VAR2 \xdc\x01 END 
+SCEC SCE062_002 \x02 SCE_DONE 
+TEXT1 \x84p TEXT2 \xcc
  
 死屍累々とは、文字どおり、このことをいうのだろう。@
 比喩でもなんでもなく、そこには死体の山があった。@
@@ -30,9 +30,9 @@ FLG1 \x8c\x01 FLG2 \x84p FLG2_SET \x03\xcc
 カンナはその頂上に君臨する、死の女王だった。\
 
   
-FLG1 D\x02\x0c FLG1_SET N\x01 \x02 |\x01 END
-CSCE SCE062_003 \xae\x05 SCE_DONE 
-FLG1 \x8c\x01 FLG2 \x88p FLG2_SET \x03]
+FLG1 D\x02\x0c FLG1_SET N\x01 \x02 |\x01 END 
+SCEC SCE062_003 \xae\x05 SCE_DONE 
+TEXT1 \x88p TEXT2 ]
  
 カンナ\n　「生きてたんだ、虎菱くん？\p　まあ、あなたならそうかもしれ\n　　ないわね」@
 拓司\n　「……無事でよかった」@
@@ -43,11 +43,11 @@ FLG1 \x8c\x01 FLG2 \x88p FLG2_SET \x03]
 拓司\n　「……」\
 
   
-FLG1 \xf2\x05\x0c FLG1_SET N\x01 \x02 |\x01 END  
-FLG1 \x0b\x01\x0c FLG1_SET \x98 \x02
-CMD1 PlayCD RUNF \xc6\x07 END
-CSCE SCE062_004 \xe2\x07 SCE_DONE 
-FLG1 \x8c\x01 FLG2 \x8cp FLG2_SET \x03\xb7
+FLG1 \xf2\x05\x0c FLG1_SET N\x01 \x02 |\x01 END   
+FLG1 \x0b\x01\x0c FLG1_SET \x98 
+CMD2 PlayCD RUNF \xc6\x07 END 
+SCEC SCE062_004 \xe2\x07 SCE_DONE 
+TEXT1 \x8cp TEXT2 \xb7
  
 カンナ\n　「誰かに死ねって命令されて、はいそうですかって死ねるほど、\n　　私は軽く考えていない！\p　そんな簡単に死ねるなら、とっく\n　　の昔に何百回も死んであげてるわよ！\p　こんな……こんなゴ\n　　ロゴロ転がってるありふれた死にかたになんて、同化できな\n　　い！\p　私にとって死ぬってことは……特別なの！\p　手の届\n　　かない高い場所にひっそりと咲いて……散る……誰にも……」\n　　@
 頭をかきむしって、カンナが悲鳴のような叫びを上げた。@
@@ -57,10 +57,10 @@ FLG1 \x8c\x01 FLG2 \x8cp FLG2_SET \x03\xb7
 \n隣に立つなたねが小さくいった。\
 
   
-FLG1 &\x08\x0c FLG1_SET N\x01 \x02 |\x01 END \x98 \x02
-CMD1 StopCD RUNF H\x0b END
-CSCE SCE062_005 d\x0b SCE_DONE 
-FLG1 \x8c\x01 FLG2 \x90p FLG2_SET \x03\xb0
+FLG1 &\x08\x0c FLG1_SET N\x01 \x02 |\x01 END  \x98 
+CMD2 StopCD RUNF H\x0b END 
+SCEC SCE062_005 d\x0b SCE_DONE 
+TEXT1 \x90p TEXT2 \xb0
  
 それはそうであろう、男の拓司でさえ、どうにかなってしまいそ\nうなのだ。\p目の前で何十人もの人間が自殺する瞬間を見てしまっ\nたカンナが、平常心で事態を切り抜けることなどできるはずがない\n。\pカンナを正気の縁につなぎ止めているラインは、ギリギリまでに\n細い。\pわずかでもカンナが揺らめけば、そのラインは切れる。@
 一気に精神の均衡は崩壊し、カンナは壊れて……自殺してしまう\nだろう。@
@@ -71,9 +71,9 @@ FLG1 \x8c\x01 FLG2 \x90p FLG2_SET \x03\xb0
 カンナ\n　「……あなたも？」\
 
   
-FLG1 \xa8\x0b\x0c FLG1_SET N\x01 \x02 |\x01 END
-CSCE SCE062_006 \xa2\x0e SCE_DONE 
-FLG1 \x8c\x01 FLG2 \x94p FLG2_SET \x03\x7f
+FLG1 \xa8\x0b\x0c FLG1_SET N\x01 \x02 |\x01 END 
+SCEC SCE062_006 \xa2\x0e SCE_DONE 
+TEXT1 \x94p TEXT2 \x7f
  
 拓司\n　「ああ。\p今朝、テレビでやってた。\p気軽に生き死にを考えて、\n　　それを使って自己アピールをするみたいな若者が多いって…\n　　…」@
 カンナ\n　「……ふ、ふ、ふふふふ」@
@@ -84,9 +84,9 @@ FLG1 \x8c\x01 FLG2 \x94p FLG2_SET \x03\x7f
 呆気にとられる拓司を無視するようにカンナはしばらく笑い続け\nた。\p腹を抱えて、しまいには息をするのも苦しいらしく、ヒイヒ\nイと笑い続けた。\
 
   
-FLG1 \xe6\x0e\x0c FLG1_SET N\x01 \x02 |\x01 END
-CSCE SCE062_007 \x1c\x11 SCE_DONE 
-FLG1 \x8c\x01 FLG2 \x98p FLG2_SET \x03S
+FLG1 \xe6\x0e\x0c FLG1_SET N\x01 \x02 |\x01 END 
+SCEC SCE062_007 \x1c\x11 SCE_DONE 
+TEXT1 \x98p TEXT2 S
  
 カンナ\n　「……同じ？\p　私と？\p　あなたが？」@
 \n長い長い笑いの後で、ようやくカンナはいった。@
@@ -95,9 +95,9 @@ FLG1 \x8c\x01 FLG2 \x98p FLG2_SET \x03S
 \nカンナは拓司を鋭く指さして、一気呵成にまくしたてた。\
 
   
-FLG1 `\x11\x0c FLG1_SET N\x01 \x02 |\x01 END
-CSCE SCE062_008 \xe6\x12 SCE_DONE 
-FLG1 \x8c\x01 FLG2 \x9cp FLG2_SET \x03\xfb
+FLG1 `\x11\x0c FLG1_SET N\x01 \x02 |\x01 END 
+SCEC SCE062_008 \xe6\x12 SCE_DONE 
+TEXT1 \x9cp TEXT2 \xfb
  
 カンナ\n　「あなたの死なんて、ありふれたものよ！\p　死にたいけど怖く\n　　て死ねない。\pそんなヒョロヒョロしたあなたの志と同類項で\n　　くくってもらっちゃあ、汚れるの！\p　私の……死の神聖さが\n　　……おとしめられる！\p　あなたなんて、そこらへんの……こ\n　　の下に積み重なってる連中と一緒！\p　平積みの『完璧自殺マ\n　　ニュアル』読んで？\p　『自分には最終手段が残されているっ\n　　て思うことが勇気になる』とかいって？\p　気取るな！\p　現実\n　　と闘う覚悟がない世捨て人気取りが！\pそんなのみんな一緒！@
 　　私があなたを案内したのは……私の領域の端っこに招いたの\n　　は……同列の存在を創るためじゃない！\p　あなたは道具！@
@@ -106,9 +106,9 @@ FLG1 \x8c\x01 FLG2 \x9cp FLG2_SET \x03\xfb
 　　今の私じゃない。\pなんでもなかった頃の私で…………………\n　　………………………………………………………………………\n　　…………………………………………思い上がるなッ！」\
 
   
-FLG1 *\x13\x0c FLG1_SET N\x01 \x02 |\x01 END
-CSCE SCE062_009 P\x17 SCE_DONE 
-FLG1 \x8c\x01 FLG2 \xa0p FLG2_SET \x03h
+FLG1 *\x13\x0c FLG1_SET N\x01 \x02 |\x01 END 
+SCEC SCE062_009 P\x17 SCE_DONE 
+TEXT1 \xa0p TEXT2 h
  
 拓司\n　「落ち着くんだ、カンナ－－」@
 カンナ\n　「動くなッ！」@
@@ -116,17 +116,17 @@ FLG1 \x8c\x01 FLG2 \xa0p FLG2_SET \x03h
 \nカンナ\n　「この中に、×××××が入ってるわ」\
 
   
-FLG1 \x94\x17\x0c FLG1_SET N\x01 \x02 |\x01 END
-CSCE SCE062_010 n\x19 SCE_DONE 
-FLG1 \x8c\x01 FLG2 \xa4p FLG2_SET \x03q
+FLG1 \x94\x17\x0c FLG1_SET N\x01 \x02 |\x01 END 
+SCEC SCE062_010 n\x19 SCE_DONE 
+TEXT1 \xa4p TEXT2 q
  
 拓司はその名前を、カンナから借りた本で見たことがあった。@
 睡眠薬として使われる規制医薬品で、２グラムのんだだけで確実\nに心臓が止まるといわれる劇薬中の劇薬だ。\pもちろん、薬屋で買\nうことはできないし、それどころか国内では取り扱われていない。\n\pしかし－－カンナならばそれを手に入れることぐらい、造作のな\nいことのように思えた。\p拓司は、五号棟でカンナが××××を飲\nんでいるのを見たことがあったし、勧められて×××××を吸っ\nたこともある。\
 
   
-FLG1 \xb2\x19\x0c FLG1_SET N\x01 \x02 |\x01 END
-CSCE SCE062_011 \xb0\x1b SCE_DONE 
-FLG1 \x8c\x01 FLG2 \xa8p FLG2_SET \x03z
+FLG1 \xb2\x19\x0c FLG1_SET N\x01 \x02 |\x01 END 
+SCEC SCE062_011 \xb0\x1b SCE_DONE 
+TEXT1 \xa8p TEXT2 z
  
 拓司\n　「どうするつもりだ？」@
 カンナ\n　「あなたが近づいたらこれを飲むからね。\pあなたは私を殺した\n　　ことを一生考えながら、生きていくことになる」@
@@ -137,9 +137,9 @@ FLG1 \x8c\x01 FLG2 \xa8p FLG2_SET \x03z
 拓司\n　「……」\
 
   
-FLG1 \xf4\x1b\x0c FLG1_SET N\x01 \x02 |\x01 END
-CSCE SCE062_012 \x16\x1e SCE_DONE 
-FLG1 \x8c\x01 FLG2 \xacp FLG2_SET \x03\xb5
+FLG1 \xf4\x1b\x0c FLG1_SET N\x01 \x02 |\x01 END 
+SCEC SCE062_012 \x16\x1e SCE_DONE 
+TEXT1 \xacp TEXT2 \xb5
  
 カンナ\n　「ふふふ、興奮しない？\p　私たちは今、ずっと求めていたもの\n　　に直面しているわ。\p崖っぷちにまでいってる。\pそうでしょ？@
 　　猫を落としたり、首を絞めたり……そんなことより、ずっと\n　　先に。\pあと一歩で落ちる。\pそういうところに、私たちは立っ\n　　てる。\p……あなたそういうのに興奮してたわよね、いつも？\n　　\pふふ」@
@@ -150,9 +150,9 @@ FLG1 \x8c\x01 FLG2 \xacp FLG2_SET \x03\xb5
 　　死と交わるって文字通りこんな感じ……？\p　ふふ……」\
 
   
-FLG1 Z\x1e\x0c FLG1_SET N\x01 \x02 |\x01 END
-CSCE SCE062_013 h! SCE_DONE 
-FLG1 \x8c\x01 FLG2 \xb0p FLG2_SET \x03w
+FLG1 Z\x1e\x0c FLG1_SET N\x01 \x02 |\x01 END 
+SCEC SCE062_013 h! SCE_DONE 
+TEXT1 \xb0p TEXT2 w
  
 拓司は、狂気に囚われてしまったとしか思えないカンナの様子を\n呆然と見ていたが、とんとん、となたねに腿をつつかれて我に返\nった。@
 なたねが、目で合図を送っている。@
@@ -162,9 +162,9 @@ FLG1 \x8c\x01 FLG2 \xb0p FLG2_SET \x03w
 \nなたね\n　「……話を続けて」\
 
   
-FLG1 \xac!\x0c FLG1_SET N\x01 \x02 |\x01 END
-CSCE SCE062_014 \xc2# SCE_DONE 
-FLG1 \x8c\x01 FLG2 \xb4p FLG2_SET \x03\x80
+FLG1 \xac!\x0c FLG1_SET N\x01 \x02 |\x01 END 
+SCEC SCE062_014 \xc2# SCE_DONE 
+TEXT1 \xb4p TEXT2 \x80
  
 拓司\n　「……？」@
 なたね\n　「月代さんと話を続けて、気を引くの。\pそのあいだに……」@
@@ -176,9 +176,9 @@ FLG1 \x8c\x01 FLG2 \xb4p FLG2_SET \x03\x80
 カンナ\n　「－－もちろん」\
 
   
-FLG1 \x06$\x0c FLG1_SET N\x01 \x02 |\x01 END
-CSCE SCE062_015 @& SCE_DONE 
-FLG1 \x8c\x01 FLG2 \xb8p FLG2_SET \x03f
+FLG1 \x06$\x0c FLG1_SET N\x01 \x02 |\x01 END 
+SCEC SCE062_015 @& SCE_DONE 
+TEXT1 \xb8p TEXT2 f
  
 拓司\n　「本人だって把握しきれていないのに？」@
 カンナ\n　「もちろん」@
@@ -190,9 +190,9 @@ FLG1 \x8c\x01 FLG2 \xb8p FLG2_SET \x03f
 拓司\n　「……？」\
 
   
-FLG1 \x84&\x0c FLG1_SET N\x01 \x02 |\x01 END
-CSCE SCE062_016 V( SCE_DONE 
-FLG1 \x8c\x01 FLG2 \xbcp FLG2_SET \x03\xab
+FLG1 \x84&\x0c FLG1_SET N\x01 \x02 |\x01 END 
+SCEC SCE062_016 V( SCE_DONE 
+TEXT1 \xbcp TEXT2 \xab
  
 カンナ\n　「屋上での続き。\pこれから私が、あなたに取り憑いたものを解\n　　剖して、ひとつひとつ晒して、説明してあげる。\pその途中に\n　　クイズを挟むわ。\pそうね……『自殺なぜなにク～～～～～イ\n　　ズ！』ってところかしら、ふふ。\pそれに正解したら、あなた\n　　は自分に取り憑いたものの正体を知ることができる。\p間違っ\n　　たら……私は薬を飲む」@
 拓司\n　「そんなのデタラメだ！」@
@@ -201,9 +201,9 @@ FLG1 \x8c\x01 FLG2 \xbcp FLG2_SET \x03\xab
 \n拓司\n　「わかった」\
 
   
-FLG1 \x9a(\x0c FLG1_SET N\x01 \x02 |\x01 END
-CSCE SCE062_017 \x80+ SCE_DONE 
-FLG1 \x8c\x01 FLG2 \xc0p FLG2_SET \x03\xb6
+FLG1 \x9a(\x0c FLG1_SET N\x01 \x02 |\x01 END 
+SCEC SCE062_017 \x80+ SCE_DONE 
+TEXT1 \xc0p TEXT2 \xb6
  
 カンナ\n　「ＯＫ。\p準備はいいかしら？\p　重要な場面よ？\p　セーブはした？\n　　\pうふふ……まずは『セーリックマンの実験』の話からいきま\n　　しょうか」@
 拓司\n　「……」@
@@ -211,12 +211,12 @@ FLG1 \x8c\x01 FLG2 \xc0p FLG2_SET \x03\xb6
 　　ここに、さっきの実験を施したイヌと、普通のイヌを入れた\n　　ら、どんなことが起きるでしょう？」\
 
   
-FLG1 \xc4+\x0c FLG1_SET N\x01 \x02 |\x01 END\x03\x18
+FLG1 \xc4+\x0c FLG1_SET N\x01 \x02 |\x01 END \x03\x18
 CHOICE
 電気ショックを受けたイヌが回避手段を見つける\n普通のイヌが回避手段を見つける\n\l0,2,
 ENDCHOICE
 
   
-FLG1 \xd6.\x0c FLG1_SET N\x01 \x02 |\x01 END N\x01 \x02
-CSCE TextClose CLOSE |/ END
+FLG1 \xd6.\x0c FLG1_SET N\x01 \x02 |\x01 END  N\x01 
+CMD3 TextClose VAR1 |/ END 
 END_SCRIPT

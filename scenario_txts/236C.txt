@@ -1,38 +1,37 @@
 START_SCRIPT
 \x98\x11\x01`B#\x01\x8a\r
-CSCE SCE236_001 \x06 SCE_DONE 
-FLG1 \x8c\x01 FLG2 `\x80\x01 FLG2_SET 
-WHAT .\\Data\\Script\\TextFunc.Fob RUNF J \x02
-LOAD TextWindowOffDirect x END  
+SCEC SCE236_001 \x06 SCE_DONE 
+TEXT1 `\x80\x01 TEXT2 \x07.\\Data\\Script\\TextFunc.Fob RUNF J \x02
+CMD5 TextWindowOffDirect x END   
 FLG1 \x02\x0c FLG1_SET  \x04
 FLG1 \x1b\x0c FLG1_SET  \x08
 FLG1 \x0c FLG1_SET
-FOBT .\\Data\\Script\\Bgm.Fob CLOSE \xee \x02
-CMD1 SePlay RUNF \x18\x01 END  
+CMD6 .\\Data\\Script\\Bgm.Fob VAR1 \xee 
+CMD2 SePlay RUNF \x18\x01 END   
 FLG1 \xca\x0c FLG1_SET
-FOBT .\\Data\\Script\\Bg.Fob OPEN N\x01 \x02
-CMD1 BgOn OPEN x\x01 END  
+CMD6 .\\Data\\Script\\Bg.Fob VAR2 N\x01 
+CMD2 BgOn VAR2 x\x01 END   
 FLG1 \x01\x0c FLG1_SET
-WHAT .\\Data\\Script\\TextFunc.fob RUNF \xae\x01 \x02
-CSCE WaitTime OPEN \xdc\x01 END  
-FLG1 \xc8\x0c FLG1_SET N\x01 \x02 x\x01 END  
-FLG1 \x01\x0c FLG1_SET \xae\x01 \x02 \xdc\x01 END  
-FLG1 \x02\x0c FLG1_SET \xee \x02
-CMD1 SeStop RUNF \x8a\x02 END  
+CMD7 .\\Data\\Script\\TextFunc.fob RUNF \xae\x01 
+CMD3 WaitTime VAR2 \xdc\x01 END   
+FLG1 \xc8\x0c FLG1_SET N\x01 \x02 x\x01 END   
+FLG1 \x01\x0c FLG1_SET \xae\x01 \x02 \xdc\x01 END   
+FLG1 \x02\x0c FLG1_SET \xee 
+CMD2 SeStop RUNF \x8a\x02 END   
 FLG1 \x02\x0c FLG1_SET  \x04
 FLG1 \x1b\x0c FLG1_SET  \x08
-FLG1 \x0c FLG1_SET \xee \x02 \x18\x01 END  
-FLG1 \xca\x0c FLG1_SET N\x01 \x02 x\x01 END  
-FLG1 \x01\x0c FLG1_SET \xae\x01 \x02 \xdc\x01 END  
-FLG1 \xc8\x0c FLG1_SET N\x01 \x02 x\x01 END  
-FLG1 \x01\x0c FLG1_SET \xae\x01 \x02 \xdc\x01 END  
-FLG1 <\x0c FLG1_SET \xae\x01 \x02 \xdc\x01 END  
+FLG1 \x0c FLG1_SET \xee \x02 \x18\x01 END   
+FLG1 \xca\x0c FLG1_SET N\x01 \x02 x\x01 END   
+FLG1 \x01\x0c FLG1_SET \xae\x01 \x02 \xdc\x01 END   
+FLG1 \xc8\x0c FLG1_SET N\x01 \x02 x\x01 END   
+FLG1 \x01\x0c FLG1_SET \xae\x01 \x02 \xdc\x01 END   
+FLG1 <\x0c FLG1_SET \xae\x01 \x02 \xdc\x01 END   
 FLG1 \xc9\x0c FLG1_SET N\x01 \x02
-CMD2 BgNormalFadeIn RUNF 8\x04 END  
-FLG1 \x08\x01\x0c FLG1_SET \xee \x02
-CMD1 PlayCD RUNF \x82\x04 END  
-FLG1 \x02\x0c FLG1_SET \xee \x02 \x8a\x02 END J \x02
-CMD2 TextWindowOn OPEN \xde\x04 END\x03l
+CMD4 BgNormalFadeIn RUNF 8\x04 END   
+FLG1 \x08\x01\x0c FLG1_SET \xee 
+CMD2 PlayCD RUNF \x82\x04 END   
+FLG1 \x02\x0c FLG1_SET \xee \x02 \x8a\x02 END  J \x02
+CMD4 TextWindowOn VAR2 \xde\x04 END \x03l
  
 白い部屋で目覚めてホッとした気分になったのは、これが初めて\nだった。@
 枕元には教授が座っている。@
@@ -44,10 +43,10 @@ CMD2 TextWindowOn OPEN \xde\x04 END\x03l
 \n教授が繰り返した。\
 
   
-FLG1 \x02\x05\x0c FLG1_SET J \x02
-CMD1 TextOn RUNF \xde\x06 END
-CSCE SCE236_002 \xfa\x06 SCE_DONE 
-FLG1 \x8c\x01 FLG2 d\x80\x01 FLG2_SET \x03g
+FLG1 \x02\x05\x0c FLG1_SET J 
+CMD2 TextOn RUNF \xde\x06 END 
+SCEC SCE236_002 \xfa\x06 SCE_DONE 
+TEXT1 d\x80\x01 TEXT2 g
  
 拓司の目から、堰を切ったように涙があふれ出した。@
 ベッドから起きあがって教授に触れようとしたが、身体の中心が\n砕け散ってしまったかのように、力が入らない。@
@@ -60,18 +59,18 @@ FLG1 \x8c\x01 FLG2 d\x80\x01 FLG2_SET \x03g
 \n拓司\n　「ここが……この世界が……」\
 
   
-FLG1 >\x07\x0c FLG1_SET J \x02 \xde\x06 END
-CSCE SCE236_003 \x14\t SCE_DONE 
-FLG1 \x8c\x01 FLG2 h\x80\x01 FLG2_SET \x03|
+FLG1 >\x07\x0c FLG1_SET J \x02 \xde\x06 END 
+SCEC SCE236_003 \x14\t SCE_DONE 
+TEXT1 h\x80\x01 TEXT2 |
  
 教授\n　「もういい。\p世界について考えるのはよしたまえ。\pこれからは\n　　少しずつ、自分のことを考えていくんだ。\p世界などどうでも\n　　いい。\pどんな世界にいようとも、君は君だ。\pそうだろう？」@
 拓司\n　「……はい」@
 教授\n　「覚えてはいないだろうが、君はこうした混乱状態を、もう数\n　　度繰り返してきている。\pしかし今回は、いつもとは明らかに\n　　違う。\pいままで君は、混乱の中で精神に限界をきたし、自殺\n　　を図ることまであった。\p死ねば何が本当かがわかると思って、\n　　ね」\
 
   
-FLG1 X\t\x0c FLG1_SET J \x02 \xde\x06 END
-CSCE SCE236_004 \x82\x0b SCE_DONE 
-FLG1 \x8c\x01 FLG2 l\x80\x01 FLG2_SET \x03X
+FLG1 X\t\x0c FLG1_SET J \x02 \xde\x06 END 
+SCEC SCE236_004 \x82\x0b SCE_DONE 
+TEXT1 l\x80\x01 TEXT2 X
  
 拓司\n　「自殺」@
 教授\n　「ああ。\pもしかしたら夢にも、そういった傾向の片鱗が現出し\n　　たのではないかな？」@
@@ -79,6 +78,6 @@ FLG1 \x8c\x01 FLG2 l\x80\x01 FLG2_SET \x03X
 教授\n　「そうか。\pしかし、もう、きみはそうした危険な状況を切り抜\n　　けた。\pきみは階段を一歩、昇ったんだ。\pこれからはどんどん\n　　良くなっていく。\pそれを信じて、私と一緒に頑張ろうじゃな\n　　いか」\
 
   
-FLG1 \xc6\x0b\x0c FLG1_SET J \x02 \xde\x06 END J \x02
-CSCE TextClose CLOSE l\r END
+FLG1 \xc6\x0b\x0c FLG1_SET J \x02 \xde\x06 END  J 
+CMD3 TextClose VAR1 l\r END 
 END_SCRIPT

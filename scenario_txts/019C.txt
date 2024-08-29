@@ -1,10 +1,10 @@
 START_SCRIPT
 \xa3\n\x01`B#\x01d\x08  
 FLG1 \x07\x01\x0c FLG1_SET
-FOBT .\\Data\\Script\\Bgm.Fob CLOSE   \x02
-CMD1 PlayCD RUNF J END
-CSCE SCE019_001 f SCE_DONE 
-FLG1 \x8c\x01 FLG2 P- FLG2_SET \x03R
+CMD6 .\\Data\\Script\\Bgm.Fob VAR1   
+CMD2 PlayCD RUNF J END 
+SCEC SCE019_001 f SCE_DONE 
+TEXT1 P- TEXT2 R
  
 紅葉\n　「－－もしも～し？　聞いてますか～、トラビシタクジくん？！\n　　」@
 拓司\n　「……え？」@
@@ -18,10 +18,10 @@ FLG1 \x8c\x01 FLG2 P- FLG2_SET \x03R
 
   
 FLG1 \xaa\x0c FLG1_SET
-WHAT .\\Data\\Script\\TextFunc.Fob RUNF \x12\x02 \x02
-CMD1 TextOn RUNF @\x02 END
-CSCE SCE019_002 \\\x02 SCE_DONE 
-FLG1 \x8c\x01 FLG2 T- FLG2_SET \x03L
+CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \x12\x02 
+CMD2 TextOn RUNF @\x02 END 
+SCEC SCE019_002 \\\x02 SCE_DONE 
+TEXT1 T- TEXT2 L
  
 紅葉\n　「ちゃんとご飯、食べてる？」@
 拓司\n　「まあ、普通に」@
@@ -32,10 +32,10 @@ FLG1 \x8c\x01 FLG2 T- FLG2_SET \x03L
 紅葉\n　「……あ、いや、そのね！　ほら、アンタ今日、お昼ご飯どうす\n　　るのかな、って。\pもし購買のパンとかで済ませるつもりなら－\n　　－」\
 
   
-FLG1 \xa0\x02\x0c FLG1_SET \x12\x02 \x02 @\x02 END  
-FLG1 \x08\x01\x0c FLG1_SET   \x02 J END
-CSCE SCE019_003 >\x04 SCE_DONE 
-FLG1 \x8c\x01 FLG2 X- FLG2_SET \x03A
+FLG1 \xa0\x02\x0c FLG1_SET \x12\x02 \x02 @\x02 END   
+FLG1 \x08\x01\x0c FLG1_SET   \x02 J END 
+SCEC SCE019_003 >\x04 SCE_DONE 
+TEXT1 X- TEXT2 A
  
 ？？？\n　「－－おはよう」@
 \n/*　■CG05　表示　（クロスフェード）　*/\a7,-2,-2,0,\a0,4,2,0,\a6,-2,0,0,その声は、すぐ耳元で聞こえた。@
@@ -43,9 +43,9 @@ FLG1 \x8c\x01 FLG2 X- FLG2_SET \x03A
 拓司はその少女の名前を知っていた。\
 
   
-FLG1 \x82\x04\x0c FLG1_SET \x12\x02 \x02 @\x02 END
-CSCE SCE019_004 \xc0\x05 SCE_DONE 
-FLG1 \x8c\x01 FLG2 \\- FLG2_SET \x03\x7f
+FLG1 \x82\x04\x0c FLG1_SET \x12\x02 \x02 @\x02 END 
+SCEC SCE019_004 \xc0\x05 SCE_DONE 
+TEXT1 \\- TEXT2 \x7f
  
 \n月代カンナ。@
 夜の闇を思わせる黒いストレートの髪。@
@@ -59,6 +59,6 @@ FLG1 \x8c\x01 FLG2 \\- FLG2_SET \x03\x7f
 \n－－どうして月代カンナはおれに声をかけてきたのだろう？\
 
   
-FLG1 \x04\x06\x0c FLG1_SET \x12\x02 \x02 @\x02 END \x12\x02 \x02
-CSCE TextClose CLOSE F\x08 END
+FLG1 \x04\x06\x0c FLG1_SET \x12\x02 \x02 @\x02 END  \x12\x02 
+CMD3 TextClose VAR1 F\x08 END 
 END_SCRIPT

@@ -1,7 +1,7 @@
 START_SCRIPT
 \x17\t\x01`B#\x01\\\x07
-CSCE SCE224_001 \x06 SCE_DONE 
-FLG1 \x8c\x01 FLG2 \xa0m\x01 FLG2_SET \x03\xa1
+SCEC SCE224_001 \x06 SCE_DONE 
+TEXT1 \xa0m\x01 TEXT2 \xa1
  
 衝動的な怒りに突き動かされて、拓司は動いた。@
 錦城の顔が一気に恐怖に歪む。@
@@ -16,10 +16,10 @@ FLG1 \x8c\x01 FLG2 \xa0m\x01 FLG2_SET \x03\xa1
 
   
 FLG1 J\x0c FLG1_SET
-WHAT .\\Data\\Script\\TextFunc.Fob RUNF \xee\x02 \x02
-CMD1 TextOn RUNF \x1c\x03 END
-CSCE SCE224_002 8\x03 SCE_DONE 
-FLG1 \x8c\x01 FLG2 \xa4m\x01 FLG2_SET \x03;
+CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \xee\x02 
+CMD2 TextOn RUNF \x1c\x03 END 
+SCEC SCE224_002 8\x03 SCE_DONE 
+TEXT1 \xa4m\x01 TEXT2 ;
  
 一気に押し倒された。@
 後頭部を床に強打する。@
@@ -37,9 +37,9 @@ FLG1 \x8c\x01 FLG2 \xa4m\x01 FLG2_SET \x03;
 さらに腹。\
 
   
-FLG1 |\x03\x0c FLG1_SET \xee\x02 \x02 \x1c\x03 END
-CSCE SCE224_003 \xa2\x04 SCE_DONE 
-FLG1 \x8c\x01 FLG2 \xa8m\x01 FLG2_SET \x03Y
+FLG1 |\x03\x0c FLG1_SET \xee\x02 \x02 \x1c\x03 END 
+SCEC SCE224_003 \xa2\x04 SCE_DONE 
+TEXT1 \xa8m\x01 TEXT2 Y
  
 必至で腕を振り回したが、むなしく空を切るばかりだ。@
 －－卑怯だ。\p御堂は絶対に安全な場所からパンチを放ってくる。@
@@ -49,11 +49,11 @@ FLG1 \x8c\x01 FLG2 \xa8m\x01 FLG2_SET \x03Y
 \n拓司は意識を失った。\
 
   
-FLG1 \xe6\x04\x0c FLG1_SET \xee\x02 \x02 \x1c\x03 END  
+FLG1 \xe6\x04\x0c FLG1_SET \xee\x02 \x02 \x1c\x03 END   
 FLG1 \xc8\x0c FLG1_SET
-FOBT .\\Data\\Script\\Bg.Fob OPEN \x9e\x06 \x02
-CMD2 BgAutoFadeIn OPEN \xc8\x06 END
-FOBT .\\Data\\Script\\Bgm.Fob CLOSE \xec\x06 \x02
-CMD1 StopCD RUNF \x16\x07 END \xee\x02 \x02
-CSCE TextClose CLOSE >\x07 END
+CMD6 .\\Data\\Script\\Bg.Fob VAR2 \x9e\x06 \x02
+CMD4 BgAutoFadeIn VAR2 \xc8\x06 END 
+CMD6 .\\Data\\Script\\Bgm.Fob VAR1 \xec\x06 
+CMD2 StopCD RUNF \x16\x07 END  \xee\x02 
+CMD3 TextClose VAR1 >\x07 END 
 END_SCRIPT

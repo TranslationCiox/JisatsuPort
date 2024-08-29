@@ -1,10 +1,10 @@
 START_SCRIPT
 \x86\x07\x01`B#\x014\x06  
 FLG1 \t\x01\x0c FLG1_SET
-FOBT .\\Data\\Script\\Bgm.Fob CLOSE   \x02
-CMD1 PlayCD RUNF J END
-CSCE SCE078_001 f SCE_DONE 
-FLG1 \x8c\x01 FLG2 \x80\x89 FLG2_SET \x03\xd7
+CMD6 .\\Data\\Script\\Bgm.Fob VAR1   
+CMD2 PlayCD RUNF J END 
+SCEC SCE078_001 f SCE_DONE 
+TEXT1 \x80\x89 TEXT2 \xd7
  
 途中、生きている人間には一度も出くわさなかった。@
 もっとも、余計な寄り道はせず、ただひたすら４階目指して廊下\nを歩いてきただけだから、もしかしたらどこかの教室に生き残り\nがいるのかもしれない。@
@@ -23,11 +23,11 @@ FLG1 \x8c\x01 FLG2 \x80\x89 FLG2_SET \x03\xd7
 
   
 FLG1 \xaa\x0c FLG1_SET
-WHAT .\\Data\\Script\\TextFunc.Fob RUNF &\x04 \x02
-CMD1 TextOn RUNF T\x04 END   \x02
-CMD1 StopCD RUNF |\x04 END
-CSCE SCE078_002 \x98\x04 SCE_DONE 
-FLG1 \x8c\x01 FLG2 \x84\x89 FLG2_SET \x03=
+CMD7 .\\Data\\Script\\TextFunc.Fob RUNF &\x04 
+CMD2 TextOn RUNF T\x04 END    
+CMD2 StopCD RUNF |\x04 END 
+SCEC SCE078_002 \x98\x04 SCE_DONE 
+TEXT1 \x84\x89 TEXT2 =
  
 なたね\n　「ここよ」@
 \nなたねは４階実験室の前でいい、ポケットを探って鍵を取り出し\nた。@
@@ -35,6 +35,6 @@ FLG1 \x8c\x01 FLG2 \x84\x89 FLG2_SET \x03=
 なたねはドアを開き、実験室へと足早に入っていった。\
 
   
-FLG1 \xdc\x04\x0c FLG1_SET &\x04 \x02 T\x04 END &\x04 \x02
-CSCE TextClose CLOSE \x16\x06 END
+FLG1 \xdc\x04\x0c FLG1_SET &\x04 \x02 T\x04 END  &\x04 
+CMD3 TextClose VAR1 \x16\x06 END 
 END_SCRIPT

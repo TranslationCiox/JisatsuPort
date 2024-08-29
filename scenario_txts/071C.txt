@@ -1,7 +1,7 @@
 START_SCRIPT
 \xf8\x05\x01\xa4\t3\x01\xcc\x03
-CSCE SCE071_001 \x06 SCE_DONE 
-FLG1 \x8c\x01 FLG2 \x90~ FLG2_SET \x03o
+SCEC SCE071_001 \x06 SCE_DONE 
+TEXT1 \x90~ TEXT2 o
  
 拓司たちは２階の渡り廊下を目指して駆けた。@
 しかし、渡り廊下まであとわずか、というところでなたねが立ち\n止まって鋭く叫んだ。@
@@ -13,13 +13,13 @@ FLG1 \x8c\x01 FLG2 \x90~ FLG2_SET \x03o
 
   
 FLG1 J\x0c FLG1_SET
-WHAT .\\Data\\Script\\TextFunc.Fob RUNF &\x02 \x02
-CMD1 TextOn RUNF T\x02 END\x03>
+CMD7 .\\Data\\Script\\TextFunc.Fob RUNF &\x02 
+CMD2 TextOn RUNF T\x02 END \x03>
 CHOICE
 なたねの警告を無視して渡り廊下をそのまま進む\n３階まで上りなおしてそこの渡り廊下に向かい、旧校舎へ移動する\n４階まで上りなおしてそこの渡り廊下に向かい、旧校舎へ移動する\n１階までくだり、一度外に出て、中庭を通って旧校舎へ移動する\n\l0,4,
 ENDCHOICE
 
   
-FLG1 p\x02\x0c FLG1_SET &\x02 \x02 T\x02 END &\x02 \x02
-CSCE TextClose CLOSE \xae\x03 END
+FLG1 p\x02\x0c FLG1_SET &\x02 \x02 T\x02 END  &\x02 
+CMD3 TextClose VAR1 \xae\x03 END 
 END_SCRIPT

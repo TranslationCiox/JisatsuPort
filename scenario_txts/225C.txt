@@ -1,7 +1,7 @@
 START_SCRIPT
 \x9d\x03\x01@\x044\x01\xd8\x02
-CSCE SCE225_001 \x06 SCE_DONE 
-FLG1 \x8c\x01 FLG2 0o\x01 FLG2_SET \x03m
+SCEC SCE225_001 \x06 SCE_DONE 
+TEXT1 0o\x01 TEXT2 m
  
 拓司は歯を食いしばった。@
 まだだ、と胸の中でうめいた。@
@@ -12,9 +12,9 @@ FLG1 \x8c\x01 FLG2 0o\x01 FLG2_SET \x03m
 
   
 FLG1 J\x0c FLG1_SET
-WHAT .\\Data\\Script\\TextFunc.Fob RUNF \x1e\x02 \x02
-CMD1 TextOn RUNF L\x02 END
-FOBT .\\Data\\Script\\Bgm.Fob CLOSE h\x02 \x02
-CMD1 StopCD RUNF \x92\x02 END \x1e\x02 \x02
-CSCE TextClose CLOSE \xba\x02 END
+CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \x1e\x02 
+CMD2 TextOn RUNF L\x02 END 
+CMD6 .\\Data\\Script\\Bgm.Fob VAR1 h\x02 
+CMD2 StopCD RUNF \x92\x02 END  \x1e\x02 
+CMD3 TextClose VAR1 \xba\x02 END 
 END_SCRIPT

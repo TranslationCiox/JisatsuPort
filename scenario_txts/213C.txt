@@ -1,7 +1,7 @@
 START_SCRIPT
 \x19\x04\x01\xa4\t3\x01>\x03
-CSCE SCE213_001 \x06 SCE_DONE 
-FLG1 \x8c\x01 FLG2 p\\\x01 FLG2_SET \x03\x98
+SCEC SCE213_001 \x06 SCE_DONE 
+TEXT1 p\\\x01 TEXT2 \x98
  
 拓司はガバと身を起こした。@
 /*▲BGM　Track08　再生*/\a2,-1,8,1,窓から、朝日が射し込んでいる。@
@@ -15,7 +15,7 @@ FLG1 \x8c\x01 FLG2 p\\\x01 FLG2_SET \x03\x98
 
   
 FLG1 J\x0c FLG1_SET
-WHAT .\\Data\\Script\\TextFunc.Fob RUNF \xca\x02 \x02
-CMD1 TextOn RUNF \xf8\x02 END \xca\x02 \x02
-CSCE TextClose CLOSE  \x03 END
+CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \xca\x02 
+CMD2 TextOn RUNF \xf8\x02 END  \xca\x02 
+CMD3 TextClose VAR1  \x03 END 
 END_SCRIPT

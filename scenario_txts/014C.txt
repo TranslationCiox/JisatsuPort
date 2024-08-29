@@ -1,15 +1,15 @@
 START_SCRIPT
 \x8b\x02\x01P\x054\x01b\x01  
 FLG1 \xc8\x0c FLG1_SET
-FOBT .\\Data\\Script\\Bg.Fob OPEN   \x02
-CMD2 BgAutoFadeIn OPEN J END\x03\x18
+CMD6 .\\Data\\Script\\Bg.Fob VAR2   \x02
+CMD4 BgAutoFadeIn VAR2 J END \x03\x18
 CHOICE
 「お前には夏バテなんて概念は無いんだろうな」\n「髪、切ったのか？」\n「……」\n\l0,3,
 ENDCHOICE
 
   
 FLG1 n\x0c FLG1_SET
-WHAT .\\Data\\Script\\TextFunc.Fob RUNF \xee \x02
-CMD1 TextOn RUNF \x1c\x01 END \xee \x02
-CSCE TextClose CLOSE D\x01 END
+CMD7 .\\Data\\Script\\TextFunc.Fob RUNF \xee 
+CMD2 TextOn RUNF \x1c\x01 END  \xee 
+CMD3 TextClose VAR1 D\x01 END 
 END_SCRIPT

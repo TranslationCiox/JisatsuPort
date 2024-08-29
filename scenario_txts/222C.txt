@@ -1,7 +1,7 @@
 START_SCRIPT
 \xd6\x05\x01\xa4\t3\x01x\x04
-CSCE SCE222_001 \x06 SCE_DONE 
-FLG1 \x8c\x01 FLG2 \x80j\x01 FLG2_SET \x03x
+SCEC SCE222_001 \x06 SCE_DONE 
+TEXT1 \x80j\x01 TEXT2 x
  
 夜、みんなが寝静まったのを確認してから、拓司はなたねのもと\nに向かった。@
 なたねは起きていた。\p最小限に音量を絞ったラジオから漏れる雑\n音を、黙ってじっと聞いていた。@
@@ -14,10 +14,10 @@ FLG1 \x8c\x01 FLG2 \x80j\x01 FLG2_SET \x03x
 
   
 FLG1 J\x0c FLG1_SET
-WHAT .\\Data\\Script\\TextFunc.Fob RUNF J\x02 \x02
-CMD1 TextOn RUNF x\x02 END
-CSCE SCE222_002 \x94\x02 SCE_DONE 
-FLG1 \x8c\x01 FLG2 \x84j\x01 FLG2_SET \x03O
+CMD7 .\\Data\\Script\\TextFunc.Fob RUNF J\x02 
+CMD2 TextOn RUNF x\x02 END 
+SCEC SCE222_002 \x94\x02 SCE_DONE 
+TEXT1 \x84j\x01 TEXT2 O
  
 なたね\n　「……それは」@
 拓司\n　「……？」@
@@ -30,6 +30,6 @@ FLG1 \x8c\x01 FLG2 \x84j\x01 FLG2_SET \x03O
 それっきり、なたねは一言も話そうとはしなかった。\
 
   
-FLG1 \xd8\x02\x0c FLG1_SET J\x02 \x02 x\x02 END J\x02 \x02
-CSCE TextClose CLOSE Z\x04 END
+FLG1 \xd8\x02\x0c FLG1_SET J\x02 \x02 x\x02 END  J\x02 
+CMD3 TextClose VAR1 Z\x04 END 
 END_SCRIPT
