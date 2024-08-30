@@ -1,7 +1,8 @@
 START_FILE
 \xa9\x04\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xa4\t3\x01\x00\x00\x00\xb8\x03\x00
-LOAD3 SCEK02_001 REF6 \x06\x00 CALL8
-SEQ1 \x8c\x01 SEQ5 \x08\xa6\x01\x0c\x00\x00\x00\x00"\x03T\x00\x00
+LOAD SCEK02_001 REF6 \x06\x00 CALL7
+SEQ1 \x8c\x01 SEQ4 \x08\xa6\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 　翌日も、若草ゆきは私に話しかけてきた。@
 その翌日も、\pまたその翌日も。@
@@ -9,16 +10,17 @@ SEQ1 \x8c\x01 SEQ5 \x08\xa6\x01\x0c\x00\x00\x00\x00"\x03T\x00\x00
 とだけいった。\w\z
 \x00
 SEQ3 REF7 J\x00 CALL2 
-LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 \xba\x01 CALL8
-LOAD2 TextOn REF1 \xe8\x01 CALL6 
-LOAD3 SCEK02_002 REF6 \x04\x02 CALL8
-SEQ1 \x8c\x01 SEQ5 \x0c\xa6\x01\x0c\x00\x00\x00\x00"\x03C\x00\x00
+LOAD .\\Data\\Script\\TextFunc.Fob REF1 \xba\x01 CALL7
+LOAD TextOn REF1 \xe8\x01 CALL5 
+LOAD SCEK02_002 REF6 \x04\x02 CALL7
+SEQ1 \x8c\x01 SEQ4 \x0c\xa6\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 　友達には不自由していないはずのゆきが声をかけてくるなんて、\n最初は新手の嫌がらせかと思えた。@
 しかし彼女の笑顔は、魚の小骨みたいに私の心の奥に引っかかっ\nて離れなかった。@
 本当に寂しそうな笑顔だった。@
 その日の夕方、私は自分からゆきを誘ったのだった。\w\z
 \x00\x00\x00
-SEQ3 REF7 H\x02 CALL1 \xba\x01 CALL7 \xe8\x01 CALL5 \xba\x01 CALL8
-LOAD3 TextClose REF2 \x9a\x03 CALL6 
+SEQ3 REF7 H\x02 CALL1 \xba\x01 CALL6 \xe8\x01 CALL4 \xba\x01 CALL7
+LOAD TextClose REF2 \x9a\x03 CALL5 
 END_FILE

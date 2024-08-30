@@ -1,7 +1,8 @@
 START_FILE
 \xb7\x07\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xa8\x05\x00
-LOAD3 SCE207_001 REF6 \x06\x00 CALL8
-SEQ1 \x8c\x01 SEQ5 \x10S\x01\x0c\x00\x00\x00\x00"\x03\xa7\x00\x00
+LOAD SCE207_001 REF6 \x06\x00 CALL7
+SEQ1 \x8c\x01 SEQ4 \x10S\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 拓司\n　「君は、教授はおれにウソを聞かせているという。\pおれをコン\n　　トロールしようとしていると……。\p教授とは何者なんだ？@
 　　なんのために、おれをコントロールしようとしている？」@
@@ -13,16 +14,17 @@ SEQ1 \x8c\x01 SEQ5 \x10S\x01\x0c\x00\x00\x00\x00"\x03\xa7\x00\x00
 
 \x00\x00\x00
 SEQ3 REF7 J\x00 CALL2 
-LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 \x06\x03 CALL8
-LOAD2 TextOn REF1 4\x03 CALL6 
-LOAD3 SCE207_002 REF6 P\x03 CALL8
-SEQ1 \x8c\x01 SEQ5 \x14S\x01\x0c\x00\x00\x00\x00"\x03l\x00\x00
+LOAD .\\Data\\Script\\TextFunc.Fob REF1 \x06\x03 CALL7
+LOAD TextOn REF1 4\x03 CALL5 
+LOAD SCE207_002 REF6 P\x03 CALL7
+SEQ1 \x8c\x01 SEQ4 \x14S\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 ナタネ\n　「あなたの世界は、教授によって完全に破壊された。\p破壊とい\n　　っても物理的な……ビルが壊されたとか人が殺されたとか…\n　　…そういう破壊ではないわ。\p無くなったの。\p完全に消滅した\n　　の。\p教授による侵略は、三次元的な意味では説明できない\n　　……存在と……世界のなりたち自体に関わる破壊行為よ」@
 拓司\n　「……」@
 ナタネ\n　「世界は消滅して……あなただけが生き残った。\p教授はあなた\n　　を恐れている」\
 
 \x00
-SEQ3 REF7 \x94\x03 CALL1 \x06\x03 CALL7 4\x03 CALL5 \x06\x03 CALL8
-LOAD3 TextClose REF2 \x8a\x05 CALL6 
+SEQ3 REF7 \x94\x03 CALL1 \x06\x03 CALL6 4\x03 CALL4 \x06\x03 CALL7
+LOAD TextClose REF2 \x8a\x05 CALL5 
 END_FILE

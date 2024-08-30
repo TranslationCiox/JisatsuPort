@@ -1,7 +1,8 @@
 START_FILE
 \xe31\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00^)\x00
-LOAD3 SCE249_001 REF6 \x06\x00 CALL8
-SEQ1 \x8c\x01 SEQ5 \xb0\x94\x01\x0c\x00\x00\x00\x00"\x03\xb9\x00\x00
+LOAD SCE249_001 REF6 \x06\x00 CALL7
+SEQ1 \x8c\x01 SEQ4 \xb0\x94\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 拓司\n　「来るぞ、急げ！」@
 \n最終波動。@
@@ -18,10 +19,11 @@ SEQ1 \x8c\x01 SEQ5 \xb0\x94\x01\x0c\x00\x00\x00\x00"\x03\xb9\x00\x00
 
 \x00
 SEQ3 REF7 J\x00 CALL2 
-LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 N\x03 CALL8
-LOAD2 TextOn REF1 |\x03 CALL6 
-LOAD3 SCE249_002 REF6 \x98\x03 CALL8
-SEQ1 \x8c\x01 SEQ5 \xb4\x94\x01\x0c\x00\x00\x00\x00"\x03B\x00\x00
+LOAD .\\Data\\Script\\TextFunc.Fob REF1 N\x03 CALL7
+LOAD TextOn REF1 |\x03 CALL5 
+LOAD SCE249_002 REF6 \x98\x03 CALL7
+SEQ1 \x8c\x01 SEQ4 \xb4\x94\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 拓司たちは掘った。壁を崩し続けた。@
 \n地鳴りは徐々に大きくなっていく。@
@@ -30,9 +32,10 @@ SEQ1 \x8c\x01 SEQ5 \xb4\x94\x01\x0c\x00\x00\x00\x00"\x03B\x00\x00
 天井から、パラパラとコンクリートの破片が落ちてくる。\
 
 \x00\x00\x00
-SEQ3 REF7 \xdc\x03 CALL1 N\x03 CALL7 |\x03 CALL6 
-LOAD3 SCE249_003 REF6 \x1e\x05 CALL8
-SEQ1 \x8c\x01 SEQ5 \xb8\x94\x01\x0c\x00\x00\x00\x00"\x03D\x00\x00
+SEQ3 REF7 \xdc\x03 CALL1 N\x03 CALL6 |\x03 CALL5 
+LOAD SCE249_003 REF6 \x1e\x05 CALL7
+SEQ1 \x8c\x01 SEQ4 \xb8\x94\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 紅葉\n　「拓司、間に合わない！\p　間に合わないよ！」@
 拓司\n　「やるんだ！」@
@@ -42,13 +45,14 @@ SEQ1 \x8c\x01 SEQ5 \xb8\x94\x01\x0c\x00\x00\x00\x00"\x03D\x00\x00
 拓司\n　「どこかなんて、ない！\p　逃げ場所はない！\p　ここしかないん\n　　だ。\pここしか、ないんだ！」\
 
 \x00
-SEQ3 REF7 b\x05 CALL1 N\x03 CALL7 |\x03 CALL6 
-LOAD6 .\\Data\\Script\\Bgm.Fob REF2 \xac\x06 CALL8
-LOAD2 StopCD REF1 \xd6\x06 CALL6 
-SEQ2 \x02\x00 CALL1 \xac\x06 CALL8
-LOAD2 SeStop REF1 \x18\x07 CALL6 
-LOAD3 SCE249_004 REF6 4\x07 CALL8
-SEQ1 \x8c\x01 SEQ5 \xbc\x94\x01\x0c\x00\x00\x00\x00"\x03\x95\x00\x00
+SEQ3 REF7 b\x05 CALL1 N\x03 CALL6 |\x03 CALL5 
+LOAD .\\Data\\Script\\Bgm.Fob REF2 \xac\x06 CALL7
+LOAD StopCD REF1 \xd6\x06 CALL5 
+SEQ2 \x02\x00 CALL1 \xac\x06 CALL7
+LOAD SeStop REF1 \x18\x07 CALL5 
+LOAD SCE249_004 REF6 4\x07 CALL7
+SEQ1 \x8c\x01 SEQ4 \xbc\x94\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 ざあっ！@
 \n足の裏から頭のてっぺんへ。@
@@ -61,9 +65,10 @@ SEQ1 \x8c\x01 SEQ5 \xbc\x94\x01\x0c\x00\x00\x00\x00"\x03\x95\x00\x00
 /*▲↑停止まで待つ*/\a3,0,0,0,\a4,0,0,0,\n拓司\n　「！」\
 
 \x00\x00
-SEQ3 REF7 x\x07 CALL1 N\x03 CALL7 |\x03 CALL6 
-LOAD3 SCE249_005 REF6 \x06\n CALL8
-SEQ1 \x8c\x01 SEQ5 \xc0\x94\x01\x0c\x00\x00\x00\x00"\x03V\x00\x00
+SEQ3 REF7 x\x07 CALL1 N\x03 CALL6 |\x03 CALL5 
+LOAD SCE249_005 REF6 \x06\n CALL7
+SEQ1 \x8c\x01 SEQ4 \xc0\x94\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 世界が軋んでいた。@
 耳の奥で生まれたその悲鳴は、耳の奥へ針のようにつきささり、\n脳味噌のなかで爆発した。@
@@ -72,9 +77,10 @@ SEQ1 \x8c\x01 SEQ5 \xc0\x94\x01\x0c\x00\x00\x00\x00"\x03V\x00\x00
 頭そのものが爆発しないのが不思議だった。\
 
 \x00\x00\x00
-SEQ3 REF7 J\n CALL1 N\x03 CALL7 |\x03 CALL6 
-LOAD3 SCE249_006 REF6 \xdc\x0b CALL8
-SEQ1 \x8c\x01 SEQ5 \xc4\x94\x01\x0c\x00\x00\x00\x00"\x03}\x00\x00
+SEQ3 REF7 J\n CALL1 N\x03 CALL6 |\x03 CALL5 
+LOAD SCE249_006 REF6 \xdc\x0b CALL7
+SEQ1 \x8c\x01 SEQ4 \xc4\x94\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 拓司\n　「ああああああああああああ！」@
 \n拓司は耳をふさいでうずくまった。@
@@ -86,9 +92,10 @@ SEQ1 \x8c\x01 SEQ5 \xc4\x94\x01\x0c\x00\x00\x00\x00"\x03}\x00\x00
 白目をむき、耳から、鼻から、どす黒い血があふれ出している。\
 
 \x00\x00\x00
-SEQ3 REF7  \x0c CALL1 N\x03 CALL7 |\x03 CALL6 
-LOAD3 SCE249_007 REF6 N\x0e CALL8
-SEQ1 \x8c\x01 SEQ5 \xc8\x94\x01\x0c\x00\x00\x00\x00"\x03\xab\x00\x00
+SEQ3 REF7  \x0c CALL1 N\x03 CALL6 |\x03 CALL5 
+LOAD SCE249_007 REF6 N\x0e CALL7
+SEQ1 \x8c\x01 SEQ4 \xc8\x94\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 拓司\n　「モ・ミ・ジ・イイイイイイイイ！」@
 \n拓司は叫んだ。@
@@ -107,9 +114,10 @@ SEQ1 \x8c\x01 SEQ5 \xc8\x94\x01\x0c\x00\x00\x00\x00"\x03\xab\x00\x00
 俺の手によって。\
 
 \x00
-SEQ3 REF7 \x92\x0e CALL1 N\x03 CALL7 |\x03 CALL6 
-LOAD3 SCE249_008 REF6 x\x11 CALL8
-SEQ1 \x8c\x01 SEQ5 \xcc\x94\x01\x0c\x00\x00\x00\x00"\x039\x00\x00
+SEQ3 REF7 \x92\x0e CALL1 N\x03 CALL6 |\x03 CALL5 
+LOAD SCE249_008 REF6 x\x11 CALL7
+SEQ1 \x8c\x01 SEQ4 \xcc\x94\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 数メートル向こうに、紅葉の姿が見える。@
 拓司は一歩踏み出した。@
@@ -117,9 +125,10 @@ SEQ1 \x8c\x01 SEQ5 \xcc\x94\x01\x0c\x00\x00\x00\x00"\x039\x00\x00
 そうして一歩……一歩……忘れてしまった歩き方を思い出すかの\nように、拓司はゆっくりと歩き始めた。\
 
 \x00
-SEQ3 REF7 \xbc\x11 CALL1 N\x03 CALL7 |\x03 CALL6 
-LOAD3 SCE249_009 REF6 \xda\x12 CALL8
-SEQ1 \x8c\x01 SEQ5 \xd0\x94\x01\x0c\x00\x00\x00\x00"\x03\xa2\x00\x00
+SEQ3 REF7 \xbc\x11 CALL1 N\x03 CALL6 |\x03 CALL5 
+LOAD SCE249_009 REF6 \xda\x12 CALL7
+SEQ1 \x8c\x01 SEQ4 \xd0\x94\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 /*▲SE33　一回再生（再生終了待たず先へ）*/\a2,0,33,0,\a6,0,0,0,キイイイイイイイイイイイイイイイイイイイイイイイイイイイ！@
 /*▲↑　再生終了を待つ*/\a3,0,0,0,\a4,0,0,0,\nいつの間にか、鼻血が流れ出している。@
@@ -128,9 +137,10 @@ SEQ1 \x8c\x01 SEQ5 \xd0\x94\x01\x0c\x00\x00\x00\x00"\x03\xa2\x00\x00
 /*▲↑　再生終了を待つ*/\a3,0,0,0,\a4,0,0,0,\nここから俺は始まるのだ。@
 \n/*▲SE33　一回再生（再生終了待たず先へ）*/\a2,0,33,0,\a6,0,0,0,キイイイイイイイイイイイイイイイイイイイイイイイイイイイ！\w\n/*▲↑　再生終了を待つ*/\a3,0,0,0,\a4,0,0,0,\z
 \x00\x00
-SEQ3 REF7 \x1e\x13 CALL1 N\x03 CALL7 |\x03 CALL6 
-LOAD3 SCE249_010 REF6 \xe0\x15 CALL8
-SEQ1 \x8c\x01 SEQ5 \xd4\x94\x01\x0c\x00\x00\x00\x00"\x03Q\x00\x00
+SEQ3 REF7 \x1e\x13 CALL1 N\x03 CALL6 |\x03 CALL5 
+LOAD SCE249_010 REF6 \xe0\x15 CALL7
+SEQ1 \x8c\x01 SEQ4 \xd4\x94\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 こうして旅が始まったいま、俺にはいまや目的があるのだ。@
 何かから逃げているのではなく、何かに向かっているのだ。@
@@ -142,9 +152,10 @@ SEQ1 \x8c\x01 SEQ5 \xd4\x94\x01\x0c\x00\x00\x00\x00"\x03Q\x00\x00
 動くのだ。\
 
 \x00
-SEQ3 REF7 $\x16 CALL1 N\x03 CALL7 |\x03 CALL6 
-LOAD3 SCE249_011 REF6 \xa2\x17 CALL8
-SEQ1 \x8c\x01 SEQ5 \xd8\x94\x01\x0c\x00\x00\x00\x00"\x03x\x00\x00
+SEQ3 REF7 $\x16 CALL1 N\x03 CALL6 |\x03 CALL5 
+LOAD SCE249_011 REF6 \xa2\x17 CALL7
+SEQ1 \x8c\x01 SEQ4 \xd8\x94\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 拓司\n　「紅葉！」@
 \n/*▲CG59　表示（クロスフェード）*/\a7,-2,-2,0,\a0,58,2,0,\a6,-2,0,0,紅葉は動かない。@
@@ -158,12 +169,13 @@ SEQ1 \x8c\x01 SEQ5 \xd8\x94\x01\x0c\x00\x00\x00\x00"\x03x\x00\x00
 \n拓司\n　「勝った！」\
 
 \x00
-SEQ3 REF7 \xe6\x17 CALL1 N\x03 CALL7 |\x03 CALL6 
+SEQ3 REF7 \xe6\x17 CALL1 N\x03 CALL6 |\x03 CALL5 
 SEQ2 \xc9\x00 CALL2 
-LOAD6 .\\Data\\Script\\Bg.Fob REF3 \x1a\x1a CALL8
-LOAD4 BgAutoFadeIn REF3 D\x1a CALL6 
-LOAD3 SCE249_012 REF6 h\x1a CALL8
-SEQ1 \x8c\x01 SEQ5 \xdc\x94\x01\x0c\x00\x00\x00\x00"\x03Y\x00\x00
+LOAD .\\Data\\Script\\Bg.Fob REF3 \x1a\x1a CALL7
+LOAD BgAutoFadeIn REF3 D\x1a CALL5 
+LOAD SCE249_012 REF6 h\x1a CALL7
+SEQ1 \x8c\x01 SEQ4 \xdc\x94\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 瞬間。@
 ふいに目の前が真っ白になった。@
@@ -177,9 +189,10 @@ SEQ1 \x8c\x01 SEQ5 \xdc\x94\x01\x0c\x00\x00\x00\x00"\x03Y\x00\x00
 \n気がつくと、拓司は世界になっていた。\
 
 \x00\x00\x00
-SEQ3 REF7 \xac\x1a CALL1 N\x03 CALL7 |\x03 CALL6 
-LOAD3 SCE249_013 REF6 J\x1c CALL8
-SEQ1 \x8c\x01 SEQ5 \xe0\x94\x01\x0c\x00\x00\x00\x00"\x03\x8f\x00\x00
+SEQ3 REF7 \xac\x1a CALL1 N\x03 CALL6 |\x03 CALL5 
+LOAD SCE249_013 REF6 J\x1c CALL7
+SEQ1 \x8c\x01 SEQ4 \xe0\x94\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 世界に音はなく、ただ真っ白なひかりだけがあった。@
 目の前には見えない壁があって、そこに開いた５ンチ四方ほどの\n穴から、そのひかりは射していた。@
@@ -193,10 +206,11 @@ SEQ1 \x8c\x01 SEQ5 \xe0\x94\x01\x0c\x00\x00\x00\x00"\x03\x8f\x00\x00
 堰を切ったように、ひかりがあふれ出した。\
 
 \x00\x00\x00
-SEQ3 REF7 \x8e\x1c CALL1 N\x03 CALL7 |\x03 CALL6 
-SEQ2 \xc9\x00 CALL1 \x1a\x1a CALL7 D\x1a CALL6 
-LOAD3 SCE249_014 REF6 8\x1f CALL8
-SEQ1 \x8c\x01 SEQ5 \xe4\x94\x01\x0c\x00\x00\x00\x00"\x03\x8d\x00\x00
+SEQ3 REF7 \x8e\x1c CALL1 N\x03 CALL6 |\x03 CALL5 
+SEQ2 \xc9\x00 CALL1 \x1a\x1a CALL6 D\x1a CALL5 
+LOAD SCE249_014 REF6 8\x1f CALL7
+SEQ1 \x8c\x01 SEQ4 \xe4\x94\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 ひかりに身をまかせながら、拓司はなにもかもがわかったように\n感じていた。@
 絡み合ったすべての謎は解き明かされ、どこにもたどり着かない\n無数の伏線は一直線に真実へと結びついていた。@
@@ -208,9 +222,10 @@ SEQ1 \x8c\x01 SEQ5 \xe4\x94\x01\x0c\x00\x00\x00\x00"\x03\x8d\x00\x00
 感じる、というより拓司はそれらと同じものになった。\
 
 \x00\x00\x00
-SEQ3 REF7 |\x1f CALL1 N\x03 CALL7 |\x03 CALL6 
-LOAD3 SCE249_015 REF6 \xea! CALL8
-SEQ1 \x8c\x01 SEQ5 \xe8\x94\x01\x0c\x00\x00\x00\x00"\x03\xbf\x00\x00
+SEQ3 REF7 |\x1f CALL1 N\x03 CALL6 |\x03 CALL5 
+LOAD SCE249_015 REF6 \xea! CALL7
+SEQ1 \x8c\x01 SEQ4 \xe8\x94\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 私とは万人であり、万人とは私だった。@
 無私な希望。@
@@ -232,19 +247,21 @@ SEQ1 \x8c\x01 SEQ5 \xe8\x94\x01\x0c\x00\x00\x00\x00"\x03\xbf\x00\x00
 それらの照射。\
 
 \x00
-SEQ3 REF7 ." CALL1 N\x03 CALL7 |\x03 CALL6 
-LOAD3 SCE249_016 REF6 d% CALL8
-SEQ1 \x8c\x01 SEQ5 \xec\x94\x01\x0c\x00\x00\x00\x00"\x03%\x00\x00
+SEQ3 REF7 ." CALL1 N\x03 CALL6 |\x03 CALL5 
+LOAD SCE249_016 REF6 d% CALL7
+SEQ1 \x8c\x01 SEQ4 \xec\x94\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 さまざまな言葉が浮かんでは消えていった。@
 そこに意味などなかった。@
 しかし、それらはそれらそのもので、意味を越えた真理の塊だっ\nた。\
 
 \x00\x00\x00
-SEQ3 REF7 \xa8% CALL1 N\x03 CALL7 |\x03 CALL6 
-SEQ2 ;\x00 CALL1 \x1a\x1a CALL7 D\x1a CALL6 
-LOAD3 SCE249_017 REF6 \xaa& CALL8
-SEQ1 \x8c\x01 SEQ5 \xf0\x94\x01\x0c\x00\x00\x00\x00"\x03\x83\x00\x00
+SEQ3 REF7 \xa8% CALL1 N\x03 CALL6 |\x03 CALL5 
+SEQ2 ;\x00 CALL1 \x1a\x1a CALL6 D\x1a CALL5 
+LOAD SCE249_017 REF6 \xaa& CALL7
+SEQ1 \x8c\x01 SEQ4 \xf0\x94\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 紅葉\n　「……傷が……消えていく」@
 \n紅葉がつぶやいた。@
@@ -261,6 +278,6 @@ SEQ1 \x8c\x01 SEQ5 \xf0\x94\x01\x0c\x00\x00\x00\x00"\x03\x83\x00\x00
 \nいつしか、胸の中の黒いかたまりは静かに燃え尽きていた。\
 
 \x00
-SEQ3 REF7 \xee& CALL1 N\x03 CALL7 |\x03 CALL5 N\x03 CALL8
-LOAD3 TextClose REF2 @) CALL6 
+SEQ3 REF7 \xee& CALL1 N\x03 CALL6 |\x03 CALL4 N\x03 CALL7
+LOAD TextClose REF2 @) CALL5 
 END_FILE

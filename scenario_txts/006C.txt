@@ -1,7 +1,8 @@
 START_FILE
 \x0b\x08\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00h\x06\x00
-LOAD3 SCE006_001 REF6 \x06\x00 CALL8
-SEQ1 \x8c\x01 SEQ5 \x00\x19 CALL4 \x03.\x00\x00
+LOAD SCE006_001 REF6 \x06\x00 CALL7
+SEQ1 \x8c\x01 SEQ4 \x00\x19 CALL3 
+LOAD 
  
 拓司\n　「……出て行け」@
 早桃\n　「どうして？」@
@@ -10,10 +11,11 @@ SEQ1 \x8c\x01 SEQ5 \x00\x19 CALL4 \x03.\x00\x00
 
 \x00
 SEQ3 REF7 J\x00 CALL2 
-LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 "\x01 CALL8
-LOAD2 TextOn REF1 P\x01 CALL6 
-LOAD3 SCE006_002 REF6 l\x01 CALL8
-SEQ1 \x8c\x01 SEQ5 \x04\x19 CALL4 \x03\x98\x00\x00
+LOAD .\\Data\\Script\\TextFunc.Fob REF1 "\x01 CALL7
+LOAD TextOn REF1 P\x01 CALL5 
+LOAD SCE006_002 REF6 l\x01 CALL7
+SEQ1 \x8c\x01 SEQ4 \x04\x19 CALL3 
+LOAD 
  
 早桃はネグリジェの裾をつまみ、ゆっくりと持ち上げて見せた。@
 /*HCG02*/\a7,-2,-2,0,\a0,73,2,0,\a6,-2,0,0,幼い肉の合わせ目が、あらわになる。@
@@ -26,9 +28,10 @@ SEQ1 \x8c\x01 SEQ5 \x04\x19 CALL4 \x03\x98\x00\x00
 早桃のくちびるのあいだに、ぬるっと、濡れ光る肉の塊がすべっ\nた。\n粘り着くような声が、そこからこぼれだした。\
 
 \x00\x00
-SEQ3 REF7 \xb0\x01 CALL1 "\x01 CALL7 P\x01 CALL6 
-LOAD3 SCE006_003 REF6 J\x04 CALL8
-SEQ1 \x8c\x01 SEQ5 \x08\x19 CALL4 \x03C\x00\x00
+SEQ3 REF7 \xb0\x01 CALL1 "\x01 CALL6 P\x01 CALL5 
+LOAD SCE006_003 REF6 J\x04 CALL7
+SEQ1 \x8c\x01 SEQ4 \x08\x19 CALL3 
+LOAD 
  
 早桃\n　「見せっこ……しよ？\p　早桃にだけ出させるなんて、ずるい。@
 　　おにいちゃんのも、見せて。\pおち○ちん、見せてくれたら…\n　　…おれいにおにいちゃんにいいこと……してあげる。@
@@ -36,12 +39,13 @@ SEQ1 \x8c\x01 SEQ5 \x08\x19 CALL4 \x03C\x00\x00
 　　ね？」\
 
 \x00\x00\x00
-SEQ3 REF7 \x8e\x04 CALL1 "\x01 CALL7 P\x01 CALL6 \x03\x0c\x00\x00
-CHOICE
+SEQ3 REF7 \x8e\x04 CALL1 "\x01 CALL6 P\x01 CALL5 
+LOAD 
+DIALOGUE_CHOICE_START
 「……消えろ」\n「……来いよ」\n\l0,2,
-ENDCHOICE
+DIALOGUE_CHOICE_END
 
 \x00
-SEQ3 REF7 \xd4\x05 CALL1 "\x01 CALL7 P\x01 CALL5 "\x01 CALL8
-LOAD3 TextClose REF2 J\x06 CALL6 
+SEQ3 REF7 \xd4\x05 CALL1 "\x01 CALL6 P\x01 CALL4 "\x01 CALL7
+LOAD TextClose REF2 J\x06 CALL5 
 END_FILE

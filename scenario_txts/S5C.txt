@@ -1,10 +1,11 @@
 START_FILE
 \x7f/\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00d$\x00
 SEQ2 \x04\x01 CALL2 
-LOAD6 .\\Data\\Script\\Bgm.Fob REF2  \x00 CALL8
-LOAD2 PlayCD REF1 J\x00 CALL6 
-LOAD3 SCES05_001 REF6 f\x00 CALL8
-SEQ1 \x8c\x01 SEQ5  \xb6\x01\x0c\x00\x00\x00\x00"\x03\x8f\x00\x00
+LOAD .\\Data\\Script\\Bgm.Fob REF2  \x00 CALL7
+LOAD PlayCD REF1 J\x00 CALL5 
+LOAD SCES05_001 REF6 f\x00 CALL7
+SEQ1 \x8c\x01 SEQ4  \xb6\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 お金はいくらあっても足りなかった。@
 かわいい洋服や、アクセサリーをつけるたびに、私はうまくウソ\nがつけるようになっていった。@
@@ -16,10 +17,11 @@ SEQ1 \x8c\x01 SEQ5  \xb6\x01\x0c\x00\x00\x00\x00"\x03\x8f\x00\x00
 
 \x00\x00\x00
 SEQ3 REF7 \xaa\x00 CALL2 
-LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 \x06\x03 CALL8
-LOAD2 TextOn REF1 4\x03 CALL6 
-LOAD3 SCES05_002 REF6 P\x03 CALL8
-SEQ1 \x8c\x01 SEQ5 $\xb6\x01\x0c\x00\x00\x00\x00"\x03\xa3\x00\x00
+LOAD .\\Data\\Script\\TextFunc.Fob REF1 \x06\x03 CALL7
+LOAD TextOn REF1 4\x03 CALL5 
+LOAD SCES05_002 REF6 P\x03 CALL7
+SEQ1 \x8c\x01 SEQ4 $\xb6\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 『そういうことはやめたほうがいいニャ』@
 「ドルチェ。そんなお説教、早桃は聞きたくないよ。\n　うまくやってるもの。\pなにもかもがうまくいってる」@
@@ -32,12 +34,13 @@ SEQ1 \x8c\x01 SEQ5 $\xb6\x01\x0c\x00\x00\x00\x00"\x03\xa3\x00\x00
 \nドルチェはすごく悲しそうな顔をして、しょんぼりと肩を落とし\nてどこかに消えていったわ。\
 
 \x00\x00\x00
-SEQ3 REF7 \x94\x03 CALL1 \x06\x03 CALL7 4\x03 CALL6 
+SEQ3 REF7 \x94\x03 CALL1 \x06\x03 CALL6 4\x03 CALL5 
 SEQ2 ]\x00 CALL2 
-LOAD6 .\\Data\\Script\\Bg.Fob REF3 t\x06 CALL8
-LOAD4 BgAutoFadeIn REF3 \x9e\x06 CALL6 
-LOAD3 SCES05_003 REF6 \xc2\x06 CALL8
-SEQ1 \x8c\x01 SEQ5 (\xb6\x01\x0c\x00\x00\x00\x00"\x03e\x00\x00
+LOAD .\\Data\\Script\\Bg.Fob REF3 t\x06 CALL7
+LOAD BgAutoFadeIn REF3 \x9e\x06 CALL5 
+LOAD SCES05_003 REF6 \xc2\x06 CALL7
+SEQ1 \x8c\x01 SEQ4 (\xb6\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 すぐに、手だけで、口だけでって……そういうことをするように\nなった。\pそういうことをしちゃったら、どこまでやっても変わら\nないような気がして、エッチもした。@
 エッチをすると、しなかったときの５倍以上のお金がもらえた。@
@@ -46,10 +49,11 @@ SEQ1 \x8c\x01 SEQ5 (\xb6\x01\x0c\x00\x00\x00\x00"\x03e\x00\x00
 そんなとき、お母さんが再婚して……おにいちゃんとあったんだ\nよね。\
 
 \x00
-SEQ3 REF7 \x06\x07 CALL1 \x06\x03 CALL7 4\x03 CALL6 
-SEQ2 \xc8\x00 CALL1 t\x06 CALL7 \x9e\x06 CALL6 
-LOAD3 SCES05_004 REF6 \x08\t CALL8
-SEQ1 \x8c\x01 SEQ5 ,\xb6\x01\x0c\x00\x00\x00\x00"\x03\xb0\x00\x00
+SEQ3 REF7 \x06\x07 CALL1 \x06\x03 CALL6 4\x03 CALL5 
+SEQ2 \xc8\x00 CALL1 t\x06 CALL6 \x9e\x06 CALL5 
+LOAD SCES05_004 REF6 \x08\t CALL7
+SEQ1 \x8c\x01 SEQ4 ,\xb6\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 海の話、覚えてる？@
 初めて海を見たときの話。@
@@ -61,9 +65,10 @@ SEQ1 \x8c\x01 SEQ5 ,\xb6\x01\x0c\x00\x00\x00\x00"\x03\xb0\x00\x00
 私はゼロじゃないって、ずっとそれが証明したかったんだって。\
 
 \x00\x00\x00
-SEQ3 REF7 L\t CALL1 \x06\x03 CALL7 4\x03 CALL6 
-LOAD3 SCES05_005 REF6 F\x0c CALL8
-SEQ1 \x8c\x01 SEQ5 0\xb6\x01\x0c\x00\x00\x00\x00"\x03z\x00\x00
+SEQ3 REF7 L\t CALL1 \x06\x03 CALL6 4\x03 CALL5 
+LOAD SCES05_005 REF6 F\x0c CALL7
+SEQ1 \x8c\x01 SEQ4 0\xb6\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 「ねえ、ドルチェ。\p早桃、もう援助交際はやめようと思うんだ」\n\p『そうか。\pドルチェはうれしいニャ』@
 「おにいちゃんと釣り合う女の子になりたいの」@
@@ -75,19 +80,21 @@ SEQ1 \x8c\x01 SEQ5 0\xb6\x01\x0c\x00\x00\x00\x00"\x03z\x00\x00
 『喧嘩のいいところは、仲直りできることニャ』\
 
 \x00\x00\x00
-SEQ3 REF7 \x8a\x0c CALL1 \x06\x03 CALL7 4\x03 CALL6 !\x1e\x00\x00\x00\x00\r\x00\x00\x1e\x00\x00\x00 SEQ5 \x00\x00\x00\x00\x0b\r\x01\x1e\x00\x00\x00\x00\x1b\x00\x00\x00\x001\x00\x00\x00\x00\xea\x0e\x002 \x10\x002\xf0\x0e\x002\xf0\x0e\x00
-LOAD3 SCES05_006 REF6 \xf6\x0e CALL8
-SEQ1 \x8c\x01 SEQ5 4\xb6\x01\x0c\x00\x00\x00\x00"\x03\x15\x00\x00
+SEQ3 REF7 \x8a\x0c CALL1 \x06\x03 CALL6 4\x03 CALL5 !\x1e\x00\x00\x00\x00\r\x00\x00\x1e\x00\x00\x00 SEQ4 \x00\x00\x00\x00\x0b\r\x01\x1e\x00\x00\x00\x00\x1b\x00\x00\x00\x001\x00\x00\x00\x00\xea\x0e\x002 \x10\x002\xf0\x0e\x002\xf0\x0e\x00
+LOAD SCES05_006 REF6 \xf6\x0e CALL7
+SEQ1 \x8c\x01 SEQ4 4\xb6\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 お話はこれでおしまい。@
 神父様、聞いてくださってありがとうございました。@
 \z
 \x00
-SEQ3 REF7 :\x0f CALL1 \x06\x03 CALL7 4\x03 CALL5  \x00 CALL8
-LOAD2 StopCD REF6 \xd4\x0f CALL6 
-SEQ2 \xc8\x00 CALL1 t\x06 CALL7 \x9e\x06 CALL6 6
-LOAD3 SCES05_007 REF6 &\x10 CALL8
-SEQ1 \x8c\x01 SEQ5 8\xb6\x01\x0c\x00\x00\x00\x00"\x03\xc5\x00\x00
+SEQ3 REF7 :\x0f CALL1 \x06\x03 CALL6 4\x03 CALL4  \x00 CALL7
+LOAD StopCD REF6 \xd4\x0f CALL5 
+SEQ2 \xc8\x00 CALL1 t\x06 CALL6 \x9e\x06 CALL5 6
+LOAD SCES05_007 REF6 &\x10 CALL7
+SEQ1 \x8c\x01 SEQ4 8\xb6\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 でもね、結局ドルチェとは仲直りできなかったの。@
 私が援助交際を続けたから。@
@@ -104,9 +111,10 @@ SEQ1 \x8c\x01 SEQ5 8\xb6\x01\x0c\x00\x00\x00\x00"\x03\xc5\x00\x00
 ただ単純に、お金が欲しかったの。\
 
 \x00\x00\x00
-SEQ3 REF7 j\x10 CALL1 \x06\x03 CALL7 4\x03 CALL6 
-LOAD3 SCES05_008 REF6 \xb8\x13 CALL8
-SEQ1 \x8c\x01 SEQ5 <\xb6\x01\x0c\x00\x00\x00\x00"\x03\xb0\x00\x00
+SEQ3 REF7 j\x10 CALL1 \x06\x03 CALL6 4\x03 CALL5 
+LOAD SCES05_008 REF6 \xb8\x13 CALL7
+SEQ1 \x8c\x01 SEQ4 <\xb6\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 『早桃ちゃんは、愛よりもお金のほうが重いと思ってるのかニャ\n　？』@
 「そんなことないよ、ドルチェ！\p　早桃は本当におにいちゃんの\n　ことが好き！」@
@@ -121,9 +129,10 @@ SEQ1 \x8c\x01 SEQ5 <\xb6\x01\x0c\x00\x00\x00\x00"\x03\xb0\x00\x00
 そして二度と戻ってこなかった。\
 
 \x00\x00\x00
-SEQ3 REF7 \xfc\x13 CALL1 \x06\x03 CALL7 4\x03 CALL6 
-LOAD3 SCES05_009 REF6 \xf6\x16 CALL8
-SEQ1 \x8c\x01 SEQ5 @\xb6\x01\x0c\x00\x00\x00\x00"\x03{\x00\x00
+SEQ3 REF7 \xfc\x13 CALL1 \x06\x03 CALL6 4\x03 CALL5 
+LOAD SCES05_009 REF6 \xf6\x16 CALL7
+SEQ1 \x8c\x01 SEQ4 @\xb6\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 私はようやく、自分が崖っぷちに立っているんじゃなくて、もう、\n落ちてるってことに気がついた。@
 ギリギリでバランスをとっていられるような段階はとっくにすぎ\nて、もう、自分ではどうしようもない状況にあるんだって。@
@@ -133,9 +142,10 @@ SEQ1 \x8c\x01 SEQ5 @\xb6\x01\x0c\x00\x00\x00\x00"\x03{\x00\x00
 地面にぶつかってバラバラになる瞬間まで、確かに生きてはいる。\n\pでも、バラバラになるのが決められている以上、本当の意味では\n私は死んでいるんだって……。\
 
 \x00\x00\x00
-SEQ3 REF7 :\x17 CALL1 \x06\x03 CALL7 4\x03 CALL6 
-LOAD3 SCES05_010 REF6 `\x19 CALL8
-SEQ1 \x8c\x01 SEQ5 D\xb6\x01\x0c\x00\x00\x00\x00"\x03;\x00\x00
+SEQ3 REF7 :\x17 CALL1 \x06\x03 CALL6 4\x03 CALL5 
+LOAD SCES05_010 REF6 `\x19 CALL7
+SEQ1 \x8c\x01 SEQ4 D\xb6\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 おにいちゃんにひとりエッチを見せたのは、わざとなの。@
 早桃は、おにいちゃんが思っているみたいな女の子じゃなくて、\n汚くて、いやらしい女の子だって。@
@@ -144,17 +154,19 @@ SEQ1 \x8c\x01 SEQ5 D\xb6\x01\x0c\x00\x00\x00\x00"\x03;\x00\x00
 \nそして、罰が下ったんだね。\
 
 \x00\x00\x00
-SEQ3 REF7 \xa4\x19 CALL1 \x06\x03 CALL7 4\x03 CALL6 
-LOAD3 SCES05_011 REF6 \xca\x1a CALL8
-SEQ1 \x8c\x01 SEQ5 H\xb6\x01\x0c\x00\x00\x00\x00"\x030\x00\x00
+SEQ3 REF7 \xa4\x19 CALL1 \x06\x03 CALL6 4\x03 CALL5 
+LOAD SCES05_011 REF6 \xca\x1a CALL7
+SEQ1 \x8c\x01 SEQ4 H\xb6\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 語り終えた後、早桃は無言で、自らが作り出した沈黙のなかに沈\nみ込んだ。@
 あるいは、彼女が沈み込んでいったのは、いま自らが言葉に変換\nして現出して見せた暗い闇の中なのかもしれない。\
 
 \x00\x00\x00
-SEQ3 REF7 \x0e\x1b CALL1 \x06\x03 CALL7 4\x03 CALL6 
-LOAD3 SCES05_012 REF6 \x08\x1c CALL8
-SEQ1 \x8c\x01 SEQ5 L\xb6\x01\x0c\x00\x00\x00\x00"\x03I\x00\x00
+SEQ3 REF7 \x0e\x1b CALL1 \x06\x03 CALL6 4\x03 CALL5 
+LOAD SCES05_012 REF6 \x08\x1c CALL7
+SEQ1 \x8c\x01 SEQ4 L\xb6\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 拓司\n　「俺には、お前を軽蔑する資格はない」@
 早桃\n　「え？」@
@@ -162,9 +174,10 @@ SEQ1 \x8c\x01 SEQ5 L\xb6\x01\x0c\x00\x00\x00\x00"\x03I\x00\x00
 　　前科なしの人間なんていない」\
 
 \x00
-SEQ3 REF7 L\x1c CALL1 \x06\x03 CALL7 4\x03 CALL6 
-LOAD3 SCES05_013 REF6 \xaa\x1d CALL8
-SEQ1 \x8c\x01 SEQ5 P\xb6\x01\x0c\x00\x00\x00\x00"\x03i\x00\x00
+SEQ3 REF7 L\x1c CALL1 \x06\x03 CALL6 4\x03 CALL5 
+LOAD SCES05_013 REF6 \xaa\x1d CALL7
+SEQ1 \x8c\x01 SEQ4 P\xb6\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 早桃\n　「……」@
 拓司\n　「たとえば、猫を袋詰めにして団地から落として殺した」@
@@ -177,9 +190,10 @@ SEQ1 \x8c\x01 SEQ5 P\xb6\x01\x0c\x00\x00\x00\x00"\x03i\x00\x00
 　　釣り合ってるんじゃないか？\p　それでも納得ができないって\n　　いうのなら、こうしよう」\
 
 \x00\x00\x00
-SEQ3 REF7 \xee\x1d CALL1 \x06\x03 CALL7 4\x03 CALL6 
-LOAD3 SCES05_014 REF6 \xcc\x1f CALL8
-SEQ1 \x8c\x01 SEQ5 T\xb6\x01\x0c\x00\x00\x00\x00"\x03l\x00\x00
+SEQ3 REF7 \xee\x1d CALL1 \x06\x03 CALL6 4\x03 CALL5 
+LOAD SCES05_014 REF6 \xcc\x1f CALL7
+SEQ1 \x8c\x01 SEQ4 T\xb6\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 拓司は早桃の額にそっと手をかざし、重々しい声を作っていった。\n@
 拓司\n　「あなたの懺悔は神の元に届けられました。\p神はその勇気をた\n　　たえ、あなたの罪をお許しになるでしょう。\pラーメン」@
@@ -190,9 +204,10 @@ SEQ1 \x8c\x01 SEQ5 T\xb6\x01\x0c\x00\x00\x00\x00"\x03l\x00\x00
 拓司\n　「そうだニャ」\
 
 \x00
-SEQ3 REF7 \x10  CALL1 \x06\x03 CALL7 4\x03 CALL6 
-LOAD3 SCES05_015 REF6 \xfa! CALL8
-SEQ1 \x8c\x01 SEQ5 X\xb6\x01\x0c\x00\x00\x00\x00"\x03T\x00\x00
+SEQ3 REF7 \x10  CALL1 \x06\x03 CALL6 4\x03 CALL5 
+LOAD SCES05_015 REF6 \xfa! CALL7
+SEQ1 \x8c\x01 SEQ4 X\xb6\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 早桃は声を押し殺して笑った。@
 そして拓司の額に手をかざし、いった。@
@@ -202,7 +217,7 @@ SEQ1 \x8c\x01 SEQ5 X\xb6\x01\x0c\x00\x00\x00\x00"\x03T\x00\x00
 \n早桃の笑顔を見ながら、拓司は誰かの笑顔というものを、久しぶ\nりに見たなと思っていた。\
 
 \x00\x00\x00
-SEQ3 REF7 >" CALL1 \x06\x03 CALL7 4\x03 CALL5  \x00 CALL7 \xd4\x0f CALL6 
-SEQ2 \xc8\x00 CALL1 t\x06 CALL7 \x9e\x06 CALL6 !\x1e\x00\x00\x00\x00\r\x00\x00\x1e(\x00 SEQ5 \x01\x00 CALL4 REF7 \x06\x03 CALL8
-LOAD3 TextClose\x00 REF6 F$ CALL6 
+SEQ3 REF7 >" CALL1 \x06\x03 CALL6 4\x03 CALL4  \x00 CALL6 \xd4\x0f CALL5 
+SEQ2 \xc8\x00 CALL1 t\x06 CALL6 \x9e\x06 CALL5 !\x1e\x00\x00\x00\x00\r\x00\x00\x1e(\x00 SEQ4 \x01\x00 CALL3  REF7 \x06\x03 CALL7
+LOAD TextClose\x00 REF6 F$ CALL5 
 END_FILE

@@ -1,10 +1,11 @@
 START_FILE
 f\x03\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00p\x044\x01\x00\x00\x00\xd6\x02\x00
 SEQ2 \xc9\x00 CALL2 
-LOAD6 .\\Data\\Script\\Bg.Fob REF3  \x00 CALL8
-LOAD4 BgAutoFadeIn REF3 J\x00 CALL6 
-LOAD3 SCE203_001 REF6 n\x00 CALL8
-SEQ1 \x8c\x01 SEQ5 \xd0L\x01\x0c\x00\x00\x00\x00"\x03d\x00\x00
+LOAD .\\Data\\Script\\Bg.Fob REF3  \x00 CALL7
+LOAD BgAutoFadeIn REF3 J\x00 CALL5 
+LOAD SCE203_001 REF6 n\x00 CALL7
+SEQ1 \x8c\x01 SEQ4 \xd0L\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 ナタネ\n　「あなたは『創る』ことができる。@
 　　神様が光を創ったように、あなたは鳥を創ることができる。@
@@ -14,7 +15,7 @@ SEQ1 \x8c\x01 SEQ5 \xd0L\x01\x0c\x00\x00\x00\x00"\x03d\x00\x00
 
 \x00\x00\x00
 SEQ3 REF7 \xb2\x00 CALL2 
-LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 b\x02 CALL8
-LOAD2 TextOn REF1 \x90\x02 CALL5 b\x02 CALL8
-LOAD3 TextClose REF2 \xb8\x02 CALL6 
+LOAD .\\Data\\Script\\TextFunc.Fob REF1 b\x02 CALL7
+LOAD TextOn REF1 \x90\x02 CALL4 b\x02 CALL7
+LOAD TextClose REF2 \xb8\x02 CALL5 
 END_FILE

@@ -1,7 +1,8 @@
 START_FILE
 \xf6\n\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xf8\x08\x00
-LOAD3 SCE237_001 REF6 \x06\x00 CALL8
-SEQ1 \x8c\x01 SEQ5 \xf0\x81\x01\x0c\x00\x00\x00\x00"\x03s\x00\x00
+LOAD SCE237_001 REF6 \x06\x00 CALL7
+SEQ1 \x8c\x01 SEQ4 \xf0\x81\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 教授\n　「もう大丈夫だ。\p私を信じたまえ。\pこの世界を信じたまえ。@
 　　少なくとも、ここは安全な世界だ。\p君に害を及ぼすものはな\n　　にもないんだ」@
@@ -16,10 +17,11 @@ SEQ1 \x8c\x01 SEQ5 \xf0\x81\x01\x0c\x00\x00\x00\x00"\x03s\x00\x00
 
 \x00\x00\x00
 SEQ3 REF7 J\x00 CALL2 
-LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 6\x02 CALL8
-LOAD2 TextOn REF1 d\x02 CALL6 
-LOAD3 SCE237_002 REF6 \x80\x02 CALL8
-SEQ1 \x8c\x01 SEQ5 \xf4\x81\x01\x0c\x00\x00\x00\x00"\x03\x98\x00\x00
+LOAD .\\Data\\Script\\TextFunc.Fob REF1 6\x02 CALL7
+LOAD TextOn REF1 d\x02 CALL5 
+LOAD SCE237_002 REF6 \x80\x02 CALL7
+SEQ1 \x8c\x01 SEQ4 \xf4\x81\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 /*▲SE03　１回再生（再生終了を待たず先へ）*/\a2,0,3,0,　キキキキキ……キイキイ……キキキ……キキ……キ@
 \a4,0,0,0,\n軋む音が、耳の音で聞こえた。@
@@ -32,9 +34,10 @@ SEQ1 \x8c\x01 SEQ5 \xf4\x81\x01\x0c\x00\x00\x00\x00"\x03\x98\x00\x00
 やがてまたこの部屋で目覚めて、教授にすべてを否定され……\
 
 \x00
-SEQ3 REF7 \xc4\x02 CALL1 6\x02 CALL7 d\x02 CALL6 
-LOAD3 SCE237_003 REF6 ^\x05 CALL8
-SEQ1 \x8c\x01 SEQ5 \xf8\x81\x01\x0c\x00\x00\x00\x00"\x03\x91\x00\x00
+SEQ3 REF7 \xc4\x02 CALL1 6\x02 CALL6 d\x02 CALL5 
+LOAD SCE237_003 REF6 ^\x05 CALL7
+SEQ1 \x8c\x01 SEQ4 \xf8\x81\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 /*▲SE03　１回再生（終了を待たず先へ）*/\a2,0,3,0,　キキキキキ……キイキイ……キキキ……キキ……キ@
 \a4,0,0,0,\n　この悪夢はいつまで続くのだろう？@
@@ -46,11 +49,11 @@ SEQ1 \x8c\x01 SEQ5 \xf8\x81\x01\x0c\x00\x00\x00\x00"\x03\x91\x00\x00
 \a4,0,0,0,\n　拓司はなま暖かいかたまりにゆっくり飲み込まれながら、ただ\n胎児のように身を丸めて恐怖していた。\
 
 \x00\x00
-SEQ3 REF7 \xa2\x05 CALL1 6\x02 CALL7 d\x02 CALL6 
+SEQ3 REF7 \xa2\x05 CALL1 6\x02 CALL6 d\x02 CALL5 
 SEQ2 \xc8\x00 CALL2 
-LOAD6 .\\Data\\Script\\Bg.Fob REF3 :\x08 CALL8
-LOAD4 BgAutoFadeIn REF3 d\x08 CALL6 
-LOAD6 .\\Data\\Script\\Bgm.Fob REF2 \x88\x08 CALL8
-LOAD2 StopCD REF1 \xb2\x08 CALL5 6\x02 CALL8
-LOAD3 TextClose REF2 \xda\x08 CALL6 
+LOAD .\\Data\\Script\\Bg.Fob REF3 :\x08 CALL7
+LOAD BgAutoFadeIn REF3 d\x08 CALL5 
+LOAD .\\Data\\Script\\Bgm.Fob REF2 \x88\x08 CALL7
+LOAD StopCD REF1 \xb2\x08 CALL4 6\x02 CALL7
+LOAD TextClose REF2 \xda\x08 CALL5 
 END_FILE

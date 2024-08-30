@@ -1,7 +1,8 @@
 START_FILE
 \x82\x17\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00 \x13\x00
-LOAD3 SCE075_001 REF6 \x06\x00 CALL8
-SEQ1 \x8c\x01 SEQ5 \xd0\x84 CALL4 \x03|\x00\x00
+LOAD SCE075_001 REF6 \x06\x00 CALL7
+SEQ1 \x8c\x01 SEQ4 \xd0\x84 CALL3 
+LOAD 
  
 なたね\n　「だめ。\pこの先は危険。\p波動が直接－－」@
 早桃\n　「いい加減にしてよ！」@
@@ -12,10 +13,11 @@ SEQ1 \x8c\x01 SEQ5 \xd0\x84 CALL4 \x03|\x00\x00
 
 \x00\x00\x00
 SEQ3 REF7 J\x00 CALL2 
-LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 Z\x02 CALL8
-LOAD2 TextOn REF1 \x88\x02 CALL6 
-LOAD3 SCE075_002 REF6 \xa4\x02 CALL8
-SEQ1 \x8c\x01 SEQ5 \xd4\x84 CALL4 \x03N\x00\x00
+LOAD .\\Data\\Script\\TextFunc.Fob REF1 Z\x02 CALL7
+LOAD TextOn REF1 \x88\x02 CALL5 
+LOAD SCE075_002 REF6 \xa4\x02 CALL7
+SEQ1 \x8c\x01 SEQ4 \xd4\x84 CALL3 
+LOAD 
  
 なたね\n　「いいのよ、虎菱くん」@
 \n　なたねが遮った。@
@@ -23,9 +25,10 @@ SEQ1 \x8c\x01 SEQ5 \xd4\x84 CALL4 \x03N\x00\x00
 早桃\n　「……」\
 
 \x00
-SEQ3 REF7 \xe8\x02 CALL1 Z\x02 CALL7 \x88\x02 CALL6 
-LOAD3 SCE075_003 REF6 Z\x04 CALL8
-SEQ1 \x8c\x01 SEQ5 \xd8\x84 CALL4 \x03\xc1\x00\x00
+SEQ3 REF7 \xe8\x02 CALL1 Z\x02 CALL6 \x88\x02 CALL5 
+LOAD SCE075_003 REF6 Z\x04 CALL7
+SEQ1 \x8c\x01 SEQ4 \xd8\x84 CALL3 
+LOAD 
  
 なたね\n　「便宜上『波動』と呼んでいるけれど、『波動』は、本来なら\n　　地球の言葉では定義できない存在なの。\pだから、一般的なエ\n　　ネルギーのように、一方から他方へ、直線的に飛ぶというも\n　　のではないの。\pそれ自身の意志で停滞したり、反射したり、\n　　逆流したり、屈折したり。\p秩序や法則はないの。\p無秩序。@
 　　完全なカオスだわ。\pだから、この先の場所みたいに自殺波動\n　　の密度が濃い場所というのが生まれることも－－」\w\n早桃\n　「要するにデタラメってことじゃない！\p　なんのルールもない\n　　ってことはつまり、全部あなたが思いつきでいってるってだ\n　　けでしょ！」@
@@ -33,9 +36,10 @@ SEQ1 \x8c\x01 SEQ5 \xd8\x84 CALL4 \x03\xc1\x00\x00
 早桃\n　「……え？」\
 
 \x00
-SEQ3 REF7 \x9e\x04 CALL1 Z\x02 CALL7 \x88\x02 CALL6 
-LOAD3 SCE075_004 REF6 \xdc\x07 CALL8
-SEQ1 \x8c\x01 SEQ5 \xdc\x84 CALL4 \x03{\x00\x00
+SEQ3 REF7 \x9e\x04 CALL1 Z\x02 CALL6 \x88\x02 CALL5 
+LOAD SCE075_004 REF6 \xdc\x07 CALL7
+SEQ1 \x8c\x01 SEQ4 \xdc\x84 CALL3 
+LOAD 
  
 　なたねは「シェ\p・ル\p・タ\p・ー」と、ひとことひとことを区切っ\n　て言い返した。@
 \n拓司\n　「シェルターって……核シェルターとか……そのシェルターか\n　　？」@
@@ -44,9 +48,10 @@ SEQ1 \x8c\x01 SEQ5 \xdc\x84 CALL4 \x03{\x00\x00
 なたね\n　「正確に言うと、シェルターはまだ完成していないわ。\pただ、\n　　材料は全部そろえてある。\pこれだけの人数で突貫で作れば、\n　　１時間もかからずに完成すると思う」\
 
 \x00\x00\x00
-SEQ3 REF7  \x08 CALL1 Z\x02 CALL7 \x88\x02 CALL6 
-LOAD3 SCE075_005 REF6 F\n CALL8
-SEQ1 \x8c\x01 SEQ5 \xe0\x84 CALL4 \x03]\x00\x00
+SEQ3 REF7  \x08 CALL1 Z\x02 CALL6 \x88\x02 CALL5 
+LOAD SCE075_005 REF6 F\n CALL7
+SEQ1 \x8c\x01 SEQ4 \xe0\x84 CALL3 
+LOAD 
  
 拓司\n　「……まさか」@
 なたね\n　「４階の理科実験室。\p新実験室ができてから使われていないあ\n　　の教室に、サバイバルに必要な物資はすべてそろえてあるわ」\n　　\p拓司\n　「……冗談だろ？」@
@@ -55,9 +60,10 @@ SEQ1 \x8c\x01 SEQ5 \xe0\x84 CALL4 \x03]\x00\x00
 怒っている。\pそれまでの能面めいた無表情が嘘だったかのように、\nなたねは怒っていた。\
 
 \x00
-SEQ3 REF7 \x8a\n CALL1 Z\x02 CALL7 \x88\x02 CALL6 
-LOAD3 SCE075_006 REF6 8\x0c CALL8
-SEQ1 \x8c\x01 SEQ5 \xe4\x84 CALL4 \x03\xc0\x00\x00
+SEQ3 REF7 \x8a\n CALL1 Z\x02 CALL6 \x88\x02 CALL5 
+LOAD SCE075_006 REF6 8\x0c CALL7
+SEQ1 \x8c\x01 SEQ4 \xe4\x84 CALL3 
+LOAD 
  
 なたね\n　「こんな非常事態に冗談なんて言うはずがないでしょうッ！@
 　　あなたは自覚しているの？！\p　私たちは生き残らなければな\n　　らないのよ！\p　生き残って最終決戦に備えなければならない\n　　の！\p　やつらと戦わなければならないの！\p　やつらは群でや\n　　ってくる！\p　最終決戦には地球上の戦士が集結する国を越え\n　　て人種を越えて思想を越えて主義を越えて性別を越えて集結\n　　して団結して戦って地球を守るために立ち上がる選ばれた戦\n　　士たちが私たちなの最終聖戦に選ばれたの私たちは！\p　それ\n　　なのにそれなのにッ！\p　虎菱くんは自覚が足りないッ！」@
@@ -65,9 +71,10 @@ SEQ1 \x8c\x01 SEQ5 \xe4\x84 CALL4 \x03\xc0\x00\x00
 \nなたね\n　「……質問はそれだけだったよね？」\
 
 \x00\x00\x00
-SEQ3 REF7 |\x0c CALL1 Z\x02 CALL7 \x88\x02 CALL6 
-LOAD3 SCE075_007 REF6 \xb6\x0f CALL8
-SEQ1 \x8c\x01 SEQ5 \xe8\x84 CALL4 \x03\x81\x00\x00
+SEQ3 REF7 |\x0c CALL1 Z\x02 CALL6 \x88\x02 CALL5 
+LOAD SCE075_007 REF6 \xb6\x0f CALL7
+SEQ1 \x8c\x01 SEQ4 \xe8\x84 CALL3 
+LOAD 
  
 拓司\n　「……」@
 なたね\n　「さあ、虎菱くん。\pみんなで４階に戻りましょう。\p最終波動に\n　　そなえてシェルターを作らなければならないわ」@
@@ -77,12 +84,13 @@ SEQ1 \x8c\x01 SEQ5 \xe8\x84 CALL4 \x03\x81\x00\x00
 俺は……どうすればいい？\
 
 
-SEQ3 REF7 \xfa\x0f CALL1 Z\x02 CALL7 \x88\x02 CALL6 \x03!\x00\x00
-CHOICE
+SEQ3 REF7 \xfa\x0f CALL1 Z\x02 CALL6 \x88\x02 CALL5 
+LOAD 
+DIALOGUE_CHOICE_START
 なたねの言葉に従う。紅葉を見捨てて、シェルターに向かう\nなたね達をシェルターに向かわせて、自分だけ紅葉救出に向かう\n\l0,2,
-ENDCHOICE
+DIALOGUE_CHOICE_END
 
 \x00
-SEQ3 REF7 8\x12 CALL1 Z\x02 CALL7 \x88\x02 CALL5 Z\x02 CALL8
-LOAD3 TextClose REF2 \x02\x13 CALL6 
+SEQ3 REF7 8\x12 CALL1 Z\x02 CALL6 \x88\x02 CALL4 Z\x02 CALL7
+LOAD TextClose REF2 \x02\x13 CALL5 
 END_FILE

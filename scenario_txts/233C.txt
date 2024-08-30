@@ -1,13 +1,14 @@
 START_FILE
 \x9b\x1f\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\n\x1a\x00
 SEQ2 \n\x01 CALL2 
-LOAD6 .\\Data\\Script\\Bgm.Fob REF2  \x00 CALL8
-LOAD2 PlayCD REF1 J\x00 CALL6 
+LOAD .\\Data\\Script\\Bgm.Fob REF2  \x00 CALL7
+LOAD PlayCD REF1 J\x00 CALL5 
 SEQ2 +\x00 CALL2 
-LOAD6 .\\Data\\Script\\Bg.Fob REF3 \x80\x00 CALL8
-LOAD4 BgAutoFadeIn REF3 \xaa\x00 CALL6 
-LOAD3 SCE233_001 REF6 \xce\x00 CALL8
-SEQ1 \x8c\x01 SEQ5 \xb0{\x01\x0c\x00\x00\x00\x00"\x03_\x00\x00
+LOAD .\\Data\\Script\\Bg.Fob REF3 \x80\x00 CALL7
+LOAD BgAutoFadeIn REF3 \xaa\x00 CALL5 
+LOAD SCE233_001 REF6 \xce\x00 CALL7
+SEQ1 \x8c\x01 SEQ4 \xb0{\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 朝、拓司は一同を集めていった。@
 \n拓司\n　「もう限界だ。\p御堂を、やる」@
@@ -20,10 +21,11 @@ SEQ1 \x8c\x01 SEQ5 \xb0{\x01\x0c\x00\x00\x00\x00"\x03_\x00\x00
 
 \x00
 SEQ3 REF7 \x12\x01 CALL2 
-LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 \xae\x02 CALL8
-LOAD2 TextOn REF1 \xdc\x02 CALL6 
-LOAD3 SCE233_002 REF6 \xf8\x02 CALL8
-SEQ1 \x8c\x01 SEQ5 \xb4{\x01\x0c\x00\x00\x00\x00"\x03\x96\x00\x00
+LOAD .\\Data\\Script\\TextFunc.Fob REF1 \xae\x02 CALL7
+LOAD TextOn REF1 \xdc\x02 CALL5 
+LOAD SCE233_002 REF6 \xf8\x02 CALL7
+SEQ1 \x8c\x01 SEQ4 \xb4{\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 カンナ\n　「－－殺すってこと？」@
 \n沈黙が流れた。@
@@ -37,9 +39,10 @@ SEQ1 \x8c\x01 SEQ5 \xb4{\x01\x0c\x00\x00\x00\x00"\x03\x96\x00\x00
 \n次にそうなるのは、自分かもしれないのだ。\
 
 \x00\x00\x00
-SEQ3 REF7 <\x03 CALL1 \xae\x02 CALL7 \xdc\x02 CALL6 
-LOAD3 SCE233_003 REF6 \xce\x05 CALL8
-SEQ1 \x8c\x01 SEQ5 \xb8{\x01\x0c\x00\x00\x00\x00"\x03\x8c\x00\x00
+SEQ3 REF7 <\x03 CALL1 \xae\x02 CALL6 \xdc\x02 CALL5 
+LOAD SCE233_003 REF6 \xce\x05 CALL7
+SEQ1 \x8c\x01 SEQ4 \xb8{\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 紅葉\n　「でも……私たち４人がかりでかかっていったって、きっと御\n　　堂にはかなわないわ。\p錦城もいるし……。\pあいつら、鍵をか\n　　けて準備室に閉じこもってるから、不意打ちだってできない」\n\p拓司\n　「いや、チャンスはある」@
 紅葉\n　「？」@
@@ -49,9 +52,10 @@ SEQ1 \x8c\x01 SEQ5 \xb8{\x01\x0c\x00\x00\x00\x00"\x03\x8c\x00\x00
 \nカンナが冷たくいった。\p紅葉はキッとカンナをにらみつけた。\
 
 \x00
-SEQ3 REF7 \x12\x06 CALL1 \xae\x02 CALL7 \xdc\x02 CALL6 
-LOAD3 SCE233_004 REF6 |\x08 CALL8
-SEQ1 \x8c\x01 SEQ5 \xbc{\x01\x0c\x00\x00\x00\x00"\x03\xb2\x00\x00
+SEQ3 REF7 \x12\x06 CALL1 \xae\x02 CALL6 \xdc\x02 CALL5 
+LOAD SCE233_004 REF6 |\x08 CALL7
+SEQ1 \x8c\x01 SEQ4 \xbc{\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 紅葉\n　「月代さん。\pあなたが私たちのために……その……犠牲になっ\n　　てくれたことは感謝してる。\pでも、だからって私が犠牲にな\n　　らなきゃならないっていうのは、おかしいんじゃない？」@
 カンナ\n　「犠牲にならないために、こうやって話し合ってるんじゃない\n　　の？\p　このまま放っておいてもどうせ明日、あなたは御堂た\n　　ちに犯される。\pだったら、少しは抵抗してから犯されるほう\n　　がマシなんじゃないかしら」@
@@ -61,9 +65,10 @@ SEQ1 \x8c\x01 SEQ5 \xbc{\x01\x0c\x00\x00\x00\x00"\x03\xb2\x00\x00
 \n紅葉は髪の毛をかきむしっていった。\p声が徐々に大きくなる。\
 
 \x00\x00\x00
-SEQ3 REF7 \xc0\x08 CALL1 \xae\x02 CALL7 \xdc\x02 CALL6 
-LOAD3 SCE233_005 REF6 \xc2\x0b CALL8
-SEQ1 \x8c\x01 SEQ5 \xc0{\x01\x0c\x00\x00\x00\x00"\x03\xae\x00\x00
+SEQ3 REF7 \xc0\x08 CALL1 \xae\x02 CALL6 \xdc\x02 CALL5 
+LOAD SCE233_005 REF6 \xc2\x0b CALL7
+SEQ1 \x8c\x01 SEQ4 \xc0{\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 紅葉\n　「あんなヤツらに身体を触らせるくらいなら、死んだ方がマシ\n　　！」@
 カンナ\n　「じゃあ、死になさいよ。\pここは自殺の博覧会場だわ。@
@@ -74,9 +79,10 @@ SEQ1 \x8c\x01 SEQ5 \xc0{\x01\x0c\x00\x00\x00\x00"\x03\xae\x00\x00
 　　で、観客はみんなスーッとするって仕掛け」\
 
 \x00
-SEQ3 REF7 \x06\x0c CALL1 \xae\x02 CALL7 \xdc\x02 CALL6 
-LOAD3 SCE233_006 REF6 \xf8\x0e CALL8
-SEQ1 \x8c\x01 SEQ5 \xc4{\x01\x0c\x00\x00\x00\x00"\x03\x82\x00\x00
+SEQ3 REF7 \x06\x0c CALL1 \xae\x02 CALL6 \xdc\x02 CALL5 
+LOAD SCE233_006 REF6 \xf8\x0e CALL7
+SEQ1 \x8c\x01 SEQ4 \xc4{\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 見かねて拓司は間に入った。@
 このままでは御堂たちが寝ている準備室にまで声が響いてしまい\nそうだ。@
@@ -87,9 +93,10 @@ SEQ1 \x8c\x01 SEQ5 \xc4{\x01\x0c\x00\x00\x00\x00"\x03\x82\x00\x00
 拓司\n　「どう……って……」\
 
 \x00
-SEQ3 REF7 <\x0f CALL1 \xae\x02 CALL7 \xdc\x02 CALL6 
-LOAD3 SCE233_007 REF6 ~\x11 CALL8
-SEQ1 \x8c\x01 SEQ5 \xc8{\x01\x0c\x00\x00\x00\x00"\x03G\x00\x00
+SEQ3 REF7 <\x0f CALL1 \xae\x02 CALL6 \xdc\x02 CALL5 
+LOAD SCE233_007 REF6 ~\x11 CALL7
+SEQ1 \x8c\x01 SEQ4 \xc8{\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 紅葉\n　「なんとも思わないんだ？」@
 拓司\n　「思わないはずないだろう！\p　ムカつくさ。\pだからこそ、こう\n　　やって－－」@
@@ -97,9 +104,10 @@ SEQ1 \x8c\x01 SEQ5 \xc8{\x01\x0c\x00\x00\x00\x00"\x03G\x00\x00
 拓司\n　「……どういう意味だ？」\
 
 \x00\x00\x00
-SEQ3 REF7 \xc2\x11 CALL1 \xae\x02 CALL7 \xdc\x02 CALL6 
-LOAD3 SCE233_008 REF6 \x18\x13 CALL8
-SEQ1 \x8c\x01 SEQ5 \xcc{\x01\x0c\x00\x00\x00\x00"\x03\x95\x00\x00
+SEQ3 REF7 \xc2\x11 CALL1 \xae\x02 CALL6 \xdc\x02 CALL5 
+LOAD SCE233_008 REF6 \x18\x13 CALL7
+SEQ1 \x8c\x01 SEQ4 \xcc{\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 紅葉\n　「あたしは、あんたにとってなんなのかってことよ！\p　そりゃ、\n　　幼なじみがレイプされたらムカつくでしょうよ！\p　罪もない\n　　女の子がレイプされたらムカつくでしょうよ！\p　しかも相手\n　　は御堂！\p　そりゃ最高にムカつくでしょうよ！\p　でも……そ\n　　ういうことなの？\p　そういうことだからムカつくの？！@
 　　早桃ちゃんや、月代さんがレイプされてムカつくのと、あた\n　　しがレイプされてむかつくっていうのは……\n　　同じことなの？！」@
@@ -108,9 +116,10 @@ SEQ1 \x8c\x01 SEQ5 \xcc{\x01\x0c\x00\x00\x00\x00"\x03\x95\x00\x00
 紅葉\n　「どうしてよ！」\
 
 \x00\x00\x00
-SEQ3 REF7 \\\x13 CALL1 \xae\x02 CALL7 \xdc\x02 CALL6 
-LOAD3 SCE233_009 REF6 \xea\x15 CALL8
-SEQ1 \x8c\x01 SEQ5 \xd0{\x01\x0c\x00\x00\x00\x00"\x03n\x00\x00
+SEQ3 REF7 \\\x13 CALL1 \xae\x02 CALL6 \xdc\x02 CALL5 
+LOAD SCE233_009 REF6 \xea\x15 CALL7
+SEQ1 \x8c\x01 SEQ4 \xd0{\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 拓司\n　「答は決まっている。\p『お前は特別だ』と……おれはいう。@
 　　ただ、それが本心から出たのものなのか……あるいはお前を\n　　乗せるためにいったことなのか……それはお前にはわからな\n　　い」@
@@ -120,21 +129,23 @@ SEQ1 \x8c\x01 SEQ5 \xd0{\x01\x0c\x00\x00\x00\x00"\x03n\x00\x00
 \n誰も、何もいわなかった。\
 
 \x00
-SEQ3 REF7 .\x16 CALL1 \xae\x02 CALL7 \xdc\x02 CALL5  \x00 CALL8
-LOAD2 StopCD REF1 ,\x18 CALL6 
-SEQ2 \xc8\x00 CALL1 \x80\x00 CALL7 \xaa\x00 CALL6 
-LOAD3 SCE233_010 REF6 |\x18 CALL8
-SEQ1 \x8c\x01 SEQ5 \xd4{\x01\x0c\x00\x00\x00\x00"\x03\x0e\x00\x00
+SEQ3 REF7 .\x16 CALL1 \xae\x02 CALL6 \xdc\x02 CALL4  \x00 CALL7
+LOAD StopCD REF1 ,\x18 CALL5 
+SEQ2 \xc8\x00 CALL1 \x80\x00 CALL6 \xaa\x00 CALL5 
+LOAD SCE233_010 REF6 |\x18 CALL7
+SEQ1 \x8c\x01 SEQ4 \xd4{\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 その晩、紅葉は結局なにも答えずじまいだった。\
 
 \x00\x00\x00
-SEQ3 REF7 \xc0\x18 CALL1 \xae\x02 CALL7 \xdc\x02 CALL6 \x03\x1d\x00\x00
-CHOICE
+SEQ3 REF7 \xc0\x18 CALL1 \xae\x02 CALL6 \xdc\x02 CALL5 
+LOAD 
+DIALOGUE_CHOICE_START
 しかし拓司は紅葉が協力してくれるはずだと信じていた\n拓司は、紅葉に頼るのは無理そうだ、と思った。\n\l0,2,
-ENDCHOICE
+DIALOGUE_CHOICE_END
 
 \x00\x00\x00
-SEQ3 REF7 2\x19 CALL1 \xae\x02 CALL7 \xdc\x02 CALL5 \xae\x02 CALL8
-LOAD3 TextClose REF2 \xec\x19 CALL6 
+SEQ3 REF7 2\x19 CALL1 \xae\x02 CALL6 \xdc\x02 CALL4 \xae\x02 CALL7
+LOAD TextClose REF2 \xec\x19 CALL5 
 END_FILE

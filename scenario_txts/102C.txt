@@ -1,16 +1,18 @@
 START_FILE
 #\x1f\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xd0\x19\x00
-LOAD3 SCE102_001 REF6 \x06\x00 CALL8
-SEQ1 \x8c\x01 SEQ5 \x00\xaf CALL4 \x03\x11\x00\x00
+LOAD SCE102_001 REF6 \x06\x00 CALL7
+SEQ1 \x8c\x01 SEQ4 \x00\xaf CALL3 
+LOAD 
  
 \n\n\n\n\n\n\n\n\n\n　　　　　　　　　　　　　『５日目』\
 
 \x00\x00\x00
 SEQ3 REF7 J\x00 CALL2 
-LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 \xae\x00 CALL8
-LOAD2 TextOn REF1 \xdc\x00 CALL6 
-LOAD3 SCE102_002 REF6 \xf8\x00 CALL8
-SEQ1 \x8c\x01 SEQ5 \x04\xaf CALL4 \x03\xa5\x00\x00
+LOAD .\\Data\\Script\\TextFunc.Fob REF1 \xae\x00 CALL7
+LOAD TextOn REF1 \xdc\x00 CALL5 
+LOAD SCE102_002 REF6 \xf8\x00 CALL7
+SEQ1 \x8c\x01 SEQ4 \x04\xaf CALL3 
+LOAD 
  
 早桃の様子がおかしいことに気づいたのは、カンナだった。@
 拓司にそっと耳打ちする。@
@@ -21,12 +23,13 @@ SEQ1 \x8c\x01 SEQ5 \x04\xaf CALL4 \x03\xa5\x00\x00
 \nカンナは肩をすくめただけで無言だった。\
 
 \x00\x00
-SEQ3 REF7 <\x01 CALL1 \xae\x00 CALL7 \xdc\x00 CALL6 
+SEQ3 REF7 <\x01 CALL1 \xae\x00 CALL6 \xdc\x00 CALL5 
 SEQ2 \xc8\x00 CALL2 
-LOAD6 .\\Data\\Script\\Bg.Fob REF3 $\x04 CALL8
-LOAD4 BgAutoFadeIn REF3 N\x04 CALL6 
-LOAD3 SCE102_003 REF6 r\x04 CALL8
-SEQ1 \x8c\x01 SEQ5 \x08\xaf CALL4 \x03j\x00\x00
+LOAD .\\Data\\Script\\Bg.Fob REF3 $\x04 CALL7
+LOAD BgAutoFadeIn REF3 N\x04 CALL5 
+LOAD SCE102_003 REF6 r\x04 CALL7
+SEQ1 \x8c\x01 SEQ4 \x08\xaf CALL3 
+LOAD 
  
 とりあえず拓司は、早桃の様子を見ることにした。@
 午前中、早桃は元気を装っていたが、午後になると気力も尽きた\nのか、ぐったりと壁にもたれかかって動かなくなった。@
@@ -40,9 +43,10 @@ SEQ1 \x8c\x01 SEQ5 \x08\xaf CALL4 \x03j\x00\x00
 なたね\n　「……」\
 
 \x00
-SEQ3 REF7 \xb6\x04 CALL1 \xae\x00 CALL7 \xdc\x00 CALL6 
-LOAD3 SCE102_004 REF6 \x98\x06 CALL8
-SEQ1 \x8c\x01 SEQ5 \x0c\xaf CALL4 \x03p\x00\x00
+SEQ3 REF7 \xb6\x04 CALL1 \xae\x00 CALL6 \xdc\x00 CALL5 
+LOAD SCE102_004 REF6 \x98\x06 CALL7
+SEQ1 \x8c\x01 SEQ4 \x0c\xaf CALL3 
+LOAD 
  
 拓司\n　「聞こえなかったか？\p　風邪薬をくれ」@
 なたね\n　「風邪薬はあるけれど……本当に早桃さんに必要なのかしら？」\n　　@
@@ -53,9 +57,10 @@ SEQ1 \x8c\x01 SEQ5 \x0c\xaf CALL4 \x03p\x00\x00
 拓司\n　「……」\
 
 \x00
-SEQ3 REF7 \xdc\x06 CALL1 \xae\x00 CALL7 \xdc\x00 CALL6 
-LOAD3 SCE102_005 REF6 \xd6\x08 CALL8
-SEQ1 \x8c\x01 SEQ5 \x10\xaf CALL4 \x03\x87\x00\x00
+SEQ3 REF7 \xdc\x06 CALL1 \xae\x00 CALL6 \xdc\x00 CALL5 
+LOAD SCE102_005 REF6 \xd6\x08 CALL7
+SEQ1 \x8c\x01 SEQ4 \x10\xaf CALL3 
+LOAD 
  
 なたね\n　「伝染病にかかるなんて、自己管理が足りない証拠よ。@
 　　薬は貴重品よ。\p最終聖戦に向けていくらあっても足りないく\n　　らい。\pそれを、早桃さんのような……不適格者に投下するの\n　　はどうなのかしら？\p　虎菱くんが風邪を引いたのなら、私は\n　　こんなことはいわないわ。\p早桃さんは……ねえ？」@
@@ -64,9 +69,10 @@ SEQ1 \x8c\x01 SEQ5 \x10\xaf CALL4 \x03\x87\x00\x00
 \n意外な声に拓司は動きを止めた。\p錦城が、厳しい顔でなたねをに\nらみつけている。\p虚を突かれたのか、なたねも珍しく驚きの表情\nを浮かべている。\
 
 \x00\x00\x00
-SEQ3 REF7 \x1a\t CALL1 \xae\x00 CALL7 \xdc\x00 CALL6 
-LOAD3 SCE102_006 REF6 p\x0b CALL8
-SEQ1 \x8c\x01 SEQ5 \x14\xaf CALL4 \x03\xae\x00\x00
+SEQ3 REF7 \x1a\t CALL1 \xae\x00 CALL6 \xdc\x00 CALL5 
+LOAD SCE102_006 REF6 p\x0b CALL7
+SEQ1 \x8c\x01 SEQ4 \x14\xaf CALL3 
+LOAD 
  
 錦城\n　「雲居さん。\pあなたは最初、誰にでも中立だと主張したわよ\n　　ね？\p　だからこそ、私たちはあなたに物資の管理人を任せた\n　　の。\pあなたの地位は、ただそれだけの理由に根拠したものな\n　　の。\pみんなの合意に支えられているもの。\p違うかしら？」@
 なたね\n　「……」@
@@ -76,9 +82,10 @@ SEQ1 \x8c\x01 SEQ5 \x14\xaf CALL4 \x03\xae\x00\x00
 錦城\n　「周りが不公平だと感じたら、それは不公平ということなんじ\n　　ゃないかしら？\p　この場における公平さは、あなたの主観が\n　　決めることじゃないわ。\pそれに－－」\
 
 \x00\x00\x00
-SEQ3 REF7 \xb4\x0b CALL1 \xae\x00 CALL7 \xdc\x00 CALL6 
-LOAD3 SCE102_007 REF6 \xa6\x0e CALL8
-SEQ1 \x8c\x01 SEQ5 \x18\xaf CALL4 \x03\xb2\x00\x00
+SEQ3 REF7 \xb4\x0b CALL1 \xae\x00 CALL6 \xdc\x00 CALL5 
+LOAD SCE102_007 REF6 \xa6\x0e CALL7
+SEQ1 \x8c\x01 SEQ4 \x18\xaf CALL3 
+LOAD 
  
 なたね\n　「いえ、それは……」@
 錦城\n　「－－それに！」@
@@ -88,9 +95,10 @@ SEQ1 \x8c\x01 SEQ5 \x18\xaf CALL4 \x03\xb2\x00\x00
 \nなたねの顔が青ざめていった。\pなにか反論をしようとするが、口\nがぱくぱくと震えるだけで言葉が出てこない。\pまるで、あふれで\nる言葉が喉に詰まって、窒息寸前であるかのように見える。\
 
 \x00
-SEQ3 REF7 \xea\x0e CALL1 \xae\x00 CALL7 \xdc\x00 CALL6 
-LOAD3 SCE102_008 REF6 \xec\x11 CALL8
-SEQ1 \x8c\x01 SEQ5 \x1c\xaf CALL4 \x03\x81\x00\x00
+SEQ3 REF7 \xea\x0e CALL1 \xae\x00 CALL6 \xdc\x00 CALL5 
+LOAD SCE102_008 REF6 \xec\x11 CALL7
+SEQ1 \x8c\x01 SEQ4 \x1c\xaf CALL3 
+LOAD 
  
 錦城\n　「わかってもらえたかしら？\p　だったら黙って薬を持ってきて\n　　ちょうだい。\p……さあ！」@
 \nなたねは完全に打ちのめされた様子だった。\p一同の冷たい視線か\nら逃れるように背を向けて、のっそりと準備室へと入っていく。@
@@ -100,9 +108,10 @@ SEQ1 \x8c\x01 SEQ5 \x1c\xaf CALL4 \x03\x81\x00\x00
 \n紅葉\n　「……なんなのよ、あの態度！」\
 
 \x00\x00\x00
-SEQ3 REF7 0\x12 CALL1 \xae\x00 CALL7 \xdc\x00 CALL6 
-LOAD3 SCE102_009 REF6 n\x14 CALL8
-SEQ1 \x8c\x01 SEQ5  \xaf CALL4 \x03\x9c\x00\x00
+SEQ3 REF7 0\x12 CALL1 \xae\x00 CALL6 \xdc\x00 CALL5 
+LOAD SCE102_009 REF6 n\x14 CALL7
+SEQ1 \x8c\x01 SEQ4  \xaf CALL3 
+LOAD 
  
 床に散らばった風邪薬を拾い集めながら、紅葉が舌打ちした。@
 \n紅葉\n　「拓司、あの子、やっぱりおかしいよ。\pあんな子に鍵の管理任\n　　せておくの、不安だな……」@
@@ -112,11 +121,12 @@ SEQ1 \x8c\x01 SEQ5  \xaf CALL4 \x03\x9c\x00\x00
 しかし、それが宇宙人のしわざであるだとか、地底にいる怪物か\nら放たれているだとか、果ては弱い者は死んで当然とだとか、そ\nういった部分になると話は別だ。\p妄想の産物であるとしか思えな\nい。\
 
 \x00
-SEQ3 REF7 \xb2\x14 CALL1 \xae\x00 CALL7 \xdc\x00 CALL6 
-LOAD6 .\\Data\\Script\\Bgm.Fob REF2 \\\x17 CALL8
-LOAD2 StopCD REF1 \x86\x17 CALL6 
-LOAD3 SCE102_010 REF6 \xa2\x17 CALL8
-SEQ1 \x8c\x01 SEQ5 $\xaf CALL4 \x03C\x00\x00
+SEQ3 REF7 \xb2\x14 CALL1 \xae\x00 CALL6 \xdc\x00 CALL5 
+LOAD .\\Data\\Script\\Bgm.Fob REF2 \\\x17 CALL7
+LOAD StopCD REF1 \x86\x17 CALL5 
+LOAD SCE102_010 REF6 \xa2\x17 CALL7
+SEQ1 \x8c\x01 SEQ4 $\xaf CALL3 
+LOAD 
  
 紅葉\n　「……ねえ、拓司。\p鍵、とっちゃおうか？」@
 拓司\n　「え？」@
@@ -126,12 +136,13 @@ SEQ1 \x8c\x01 SEQ5 $\xaf CALL4 \x03C\x00\x00
 　　そのほうが、絶対安全だよ？」\
 
 \x00
-SEQ3 REF7 \xe6\x17 CALL1 \xae\x00 CALL7 \xdc\x00 CALL6 \x03\x10\x00\x00
-CHOICE
+SEQ3 REF7 \xe6\x17 CALL1 \xae\x00 CALL6 \xdc\x00 CALL5 
+LOAD 
+DIALOGUE_CHOICE_START
 「それはやめておこう」\n「いいかもしれないな」\n\l0,2,
-ENDCHOICE
+DIALOGUE_CHOICE_END
 
 \x00
-SEQ3 REF7 ,\x19 CALL1 \xae\x00 CALL7 \xdc\x00 CALL5 \xae\x00 CALL8
-LOAD3 TextClose REF2 \xb2\x19 CALL6 
+SEQ3 REF7 ,\x19 CALL1 \xae\x00 CALL6 \xdc\x00 CALL4 \xae\x00 CALL7
+LOAD TextClose REF2 \xb2\x19 CALL5 
 END_FILE

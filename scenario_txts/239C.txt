@@ -1,10 +1,11 @@
 START_FILE
 \x9b\x19\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xde\x14\x00
 SEQ2 \x04\x01 CALL2 
-LOAD6 .\\Data\\Script\\Bgm.Fob REF2  \x00 CALL8
-LOAD2 PlayCD REF1 J\x00 CALL6 
-LOAD3 SCE239_001 REF6 f\x00 CALL8
-SEQ1 \x8c\x01 SEQ5 \x10\x85\x01\x0c\x00\x00\x00\x00"\x03f\x00\x00
+LOAD .\\Data\\Script\\Bgm.Fob REF2  \x00 CALL7
+LOAD PlayCD REF1 J\x00 CALL5 
+LOAD SCE239_001 REF6 f\x00 CALL7
+SEQ1 \x8c\x01 SEQ4 \x10\x85\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 拓司は再び、空白の世界に立っていた。@
 隣には、雲居ナタネが立っている。@
@@ -15,10 +16,11 @@ SEQ1 \x8c\x01 SEQ5 \x10\x85\x01\x0c\x00\x00\x00\x00"\x03f\x00\x00
 
 \x00\x00\x00
 SEQ3 REF7 \xaa\x00 CALL2 
-LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 b\x02 CALL8
-LOAD2 TextOn REF1 \x90\x02 CALL6 
-LOAD3 SCE239_002 REF6 \xac\x02 CALL8
-SEQ1 \x8c\x01 SEQ5 \x14\x85\x01\x0c\x00\x00\x00\x00"\x03o\x00\x00
+LOAD .\\Data\\Script\\TextFunc.Fob REF1 b\x02 CALL7
+LOAD TextOn REF1 \x90\x02 CALL5 
+LOAD SCE239_002 REF6 \xac\x02 CALL7
+SEQ1 \x8c\x01 SEQ4 \x14\x85\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 拓司\n　「ありがとう」@
 \nいいながら拓司は、ナタネがそういってくれるのは、自分がそう\nいって欲しいと望んでいるからに他ならないことを理解していた。\n\pただ、その「ありがとう」は、自然に、拓司の心の一番深い場所\nから生まれてきた言葉だった。@
@@ -29,9 +31,10 @@ SEQ1 \x8c\x01 SEQ5 \x14\x85\x01\x0c\x00\x00\x00\x00"\x03o\x00\x00
 いま、この瞬間、そう決まったのだ。\
 
 \x00\x00\x00
-SEQ3 REF7 \xf0\x02 CALL1 b\x02 CALL7 \x90\x02 CALL6 
-LOAD3 SCE239_003 REF6 \xe6\x04 CALL8
-SEQ1 \x8c\x01 SEQ5 \x18\x85\x01\x0c\x00\x00\x00\x00"\x03\x81\x00\x00
+SEQ3 REF7 \xf0\x02 CALL1 b\x02 CALL6 \x90\x02 CALL5 
+LOAD SCE239_003 REF6 \xe6\x04 CALL7
+SEQ1 \x8c\x01 SEQ4 \x18\x85\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 拓司\n　「そういうことなんだな」@
 \nナタネは無言で頷いた。@
@@ -40,9 +43,10 @@ SEQ1 \x8c\x01 SEQ5 \x18\x85\x01\x0c\x00\x00\x00\x00"\x03\x81\x00\x00
 拓司\n　「そうか」\
 
 \x00
-SEQ3 REF7 *\x05 CALL1 b\x02 CALL7 \x90\x02 CALL6 
-LOAD3 SCE239_004 REF6 h\x07 CALL8
-SEQ1 \x8c\x01 SEQ5 \x1c\x85\x01\x0c\x00\x00\x00\x00"\x03\x87\x00\x00
+SEQ3 REF7 *\x05 CALL1 b\x02 CALL6 \x90\x02 CALL5 
+LOAD SCE239_004 REF6 h\x07 CALL7
+SEQ1 \x8c\x01 SEQ4 \x1c\x85\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 拓司はナタネを見つめた。@
 そこにいるナタネは、拓司の世界のなたねの、本来あるべき姿な\nのかもしれなかった。@
@@ -57,9 +61,10 @@ SEQ1 \x8c\x01 SEQ5 \x1c\x85\x01\x0c\x00\x00\x00\x00"\x03\x87\x00\x00
 それが現実なのだ。\
 
 \x00\x00\x00
-SEQ3 REF7 \xac\x07 CALL1 b\x02 CALL7 \x90\x02 CALL6 
-LOAD3 SCE239_005 REF6 \x02\n CALL8
-SEQ1 \x8c\x01 SEQ5  \x85\x01\x0c\x00\x00\x00\x00"\x03^\x00\x00
+SEQ3 REF7 \xac\x07 CALL1 b\x02 CALL6 \x90\x02 CALL5 
+LOAD SCE239_005 REF6 \x02\n CALL7
+SEQ1 \x8c\x01 SEQ4  \x85\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 拓司\n　「雲居さん。\pおれはこれから、ひとつの世界を創る」@
 ナタネ\n　「……」@
@@ -70,9 +75,10 @@ SEQ1 \x8c\x01 SEQ5  \x85\x01\x0c\x00\x00\x00\x00"\x03^\x00\x00
 拓司\n　「その世界では、きみは－－」\
 
 \x00
-SEQ3 REF7 F\n CALL1 b\x02 CALL7 \x90\x02 CALL6 
-LOAD3 SCE239_006 REF6 \xf8\x0b CALL8
-SEQ1 \x8c\x01 SEQ5 $\x85\x01\x0c\x00\x00\x00\x00"\x03*\x00\x00
+SEQ3 REF7 F\n CALL1 b\x02 CALL6 \x90\x02 CALL5 
+LOAD SCE239_006 REF6 \xf8\x0b CALL7
+SEQ1 \x8c\x01 SEQ4 $\x85\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 ナタネ\n　「さあ、早く創るのよ」@
 \nナタネは微笑んで、いった。@
@@ -80,9 +86,10 @@ SEQ1 \x8c\x01 SEQ5 $\x85\x01\x0c\x00\x00\x00\x00"\x03*\x00\x00
 拓司\n　「そうだな……ああ、そうだよな」\
 
 \x00
-SEQ3 REF7 <\x0c CALL1 b\x02 CALL7 \x90\x02 CALL6 
-LOAD3 SCE239_007 REF6 \x1e\r CALL8
-SEQ1 \x8c\x01 SEQ5 (\x85\x01\x0c\x00\x00\x00\x00"\x03U\x00\x00
+SEQ3 REF7 <\x0c CALL1 b\x02 CALL6 \x90\x02 CALL5 
+LOAD SCE239_007 REF6 \x1e\r CALL7
+SEQ1 \x8c\x01 SEQ4 (\x85\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 拓司は目を閉じた。@
 －－世界を創ろう。@
@@ -91,9 +98,10 @@ SEQ1 \x8c\x01 SEQ5 (\x85\x01\x0c\x00\x00\x00\x00"\x03U\x00\x00
 けれどもいま、その世界を創ろうとしている俺の意志は、選択不\n可能なくじびきの不幸な結果ではない。強制されたものではない。\n\pおれがが創る、おれの世界だ。\
 
 \x00\x00\x00
-SEQ3 REF7 b\r CALL1 b\x02 CALL7 \x90\x02 CALL6 
-LOAD3 SCE239_008 REF6 \xf0\x0e CALL8
-SEQ1 \x8c\x01 SEQ5 ,\x85\x01\x0c\x00\x00\x00\x00"\x03B\x00\x00
+SEQ3 REF7 b\r CALL1 b\x02 CALL6 \x90\x02 CALL5 
+LOAD SCE239_008 REF6 \xf0\x0e CALL7
+SEQ1 \x8c\x01 SEQ4 ,\x85\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 ナタネ\n　「あなたが創る、あなたの世界」@
 \nもはやあらゆる責任は世界にはなく、おれ自身にある。@
@@ -103,9 +111,10 @@ SEQ1 \x8c\x01 SEQ5 ,\x85\x01\x0c\x00\x00\x00\x00"\x03B\x00\x00
 \nナタネ\n　「前に－－」\
 
 \x00\x00\x00
-SEQ3 REF7 4\x0f CALL1 b\x02 CALL7 \x90\x02 CALL6 
-LOAD3 SCE239_009 REF6 v\x10 CALL8
-SEQ1 \x8c\x01 SEQ5 0\x85\x01\x0c\x00\x00\x00\x00"\x03\\\x00\x00
+SEQ3 REF7 4\x0f CALL1 b\x02 CALL6 \x90\x02 CALL5 
+LOAD SCE239_009 REF6 v\x10 CALL7
+SEQ1 \x8c\x01 SEQ4 0\x85\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 動くことで、おれはおれを後に残してきたことを知り、新たなる\nおれを知るのだ。@
 世界がおれをおいていくのだとしたら、おれがおれを動かすしか\nないのだ。@
@@ -120,9 +129,10 @@ SEQ1 \x8c\x01 SEQ5 0\x85\x01\x0c\x00\x00\x00\x00"\x03\\\x00\x00
 いまおれはゆく。\
 
 \x00
-SEQ3 REF7 \xba\x10 CALL1 b\x02 CALL7 \x90\x02 CALL6 
-LOAD3 SCE239_010 REF6 d\x12 CALL8
-SEQ1 \x8c\x01 SEQ5 4\x85\x01\x0c\x00\x00\x00\x00"\x03$\x00\x00
+SEQ3 REF7 \xba\x10 CALL1 b\x02 CALL6 \x90\x02 CALL5 
+LOAD SCE239_010 REF6 d\x12 CALL7
+SEQ1 \x8c\x01 SEQ4 4\x85\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 ナタネ\n　「光と共に歩め」@
 \n世界の入り口に立って、ゆく。@
@@ -130,17 +140,18 @@ SEQ1 \x8c\x01 SEQ5 4\x85\x01\x0c\x00\x00\x00\x00"\x03$\x00\x00
 世界が決めるのではなく、ただおれが決める。\
 
 \x00\x00\x00
-SEQ3 REF7 \xa8\x12 CALL1 b\x02 CALL7 \x90\x02 CALL6 
-LOAD3 SCE239_011 REF6 r\x13 CALL8
-SEQ1 \x8c\x01 SEQ5 8\x85\x01\x0c\x00\x00\x00\x00"\x03\r\x00\x00
+SEQ3 REF7 \xa8\x12 CALL1 b\x02 CALL6 \x90\x02 CALL5 
+LOAD SCE239_011 REF6 r\x13 CALL7
+SEQ1 \x8c\x01 SEQ4 8\x85\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 拓司\n　「おれは望む－－おれの世界を！」\
 
 \x00\x00\x00
-SEQ3 REF7 \xb6\x13 CALL1 b\x02 CALL7 \x90\x02 CALL5  \x00 CALL8
-LOAD2 StopCD REF1 0\x14 CALL6 
+SEQ3 REF7 \xb6\x13 CALL1 b\x02 CALL6 \x90\x02 CALL4  \x00 CALL7
+LOAD StopCD REF1 0\x14 CALL5 
 SEQ2 \xc8\x00 CALL2 
-LOAD6 .\\Data\\Script\\Bg.Fob REF3 f\x14 CALL8
-LOAD4 BgAutoFadeIn REF3 \x90\x14 CALL5 b\x02 CALL8
-LOAD3 TextClose REF2 \xc0\x14 CALL6 
+LOAD .\\Data\\Script\\Bg.Fob REF3 f\x14 CALL7
+LOAD BgAutoFadeIn REF3 \x90\x14 CALL4 b\x02 CALL7
+LOAD TextClose REF2 \xc0\x14 CALL5 
 END_FILE

@@ -1,10 +1,11 @@
 START_FILE
 B\x19\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xea\x14\x00
 SEQ2 @\x00 CALL2 
-LOAD6 .\\Data\\Script\\Bg.Fob REF3  \x00 CALL8
-LOAD4 BgAutoFadeIn REF3 J\x00 CALL6 
-LOAD3 SCES01_001 REF6 n\x00 CALL8
-SEQ1 \x8c\x01 SEQ5 \x80\xb5\x01\x0c\x00\x00\x00\x00"\x03w\x00\x00
+LOAD .\\Data\\Script\\Bg.Fob REF3  \x00 CALL7
+LOAD BgAutoFadeIn REF3 J\x00 CALL5 
+LOAD SCES01_001 REF6 n\x00 CALL7
+SEQ1 \x8c\x01 SEQ4 \x80\xb5\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 早桃\n　「ごめんね」@
 \n早桃はそう話を切りだした。@
@@ -17,10 +18,11 @@ SEQ1 \x8c\x01 SEQ5 \x80\xb5\x01\x0c\x00\x00\x00\x00"\x03w\x00\x00
 
 \x00
 SEQ3 REF7 \xb2\x00 CALL2 
-LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 \xae\x02 CALL8
-LOAD2 TextOn REF1 \xdc\x02 CALL6 
-LOAD3 SCES01_002 REF6 \xf8\x02 CALL8
-SEQ1 \x8c\x01 SEQ5 \x84\xb5\x01\x0c\x00\x00\x00\x00"\x03c\x00\x00
+LOAD .\\Data\\Script\\TextFunc.Fob REF1 \xae\x02 CALL7
+LOAD TextOn REF1 \xdc\x02 CALL5 
+LOAD SCES01_002 REF6 \xf8\x02 CALL7
+SEQ1 \x8c\x01 SEQ4 \x84\xb5\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 早桃はしばらく黙り込んで何かを考えている様子だった。@
 やがて@
@@ -32,9 +34,10 @@ SEQ1 \x8c\x01 SEQ5 \x84\xb5\x01\x0c\x00\x00\x00\x00"\x03c\x00\x00
 拓司\n　「へえ。\p初耳だな」\
 
 \x00
-SEQ3 REF7 <\x03 CALL1 \xae\x02 CALL7 \xdc\x02 CALL6 
-LOAD3 SCES01_003 REF6 \x02\x05 CALL8
-SEQ1 \x8c\x01 SEQ5 \x88\xb5\x01\x0c\x00\x00\x00\x00"\x03\x9b\x00\x00
+SEQ3 REF7 <\x03 CALL1 \xae\x02 CALL6 \xdc\x02 CALL5 
+LOAD SCES01_003 REF6 \x02\x05 CALL7
+SEQ1 \x8c\x01 SEQ4 \x88\xb5\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 早桃\n　「お母さんはそういうのも含めてお父さんのこと嫌いだったみ\n　　たいだから……。\pそれでね、教会に懺悔室っていうのがある\n　　の、知ってる？」@
 拓司\n　「ああ、電話ボックスみたいなのに入って、神父に自分の罪を\n　　告白する……アレか？」@
@@ -43,9 +46,10 @@ SEQ1 \x8c\x01 SEQ5 \x88\xb5\x01\x0c\x00\x00\x00\x00"\x03\x9b\x00\x00
 拓司\n　「そういうもんかね。\p昔の人はウソをしまい込むフトコロが小\n　　さかったんだな」\
 
 \x00\x00\x00
-SEQ3 REF7 F\x05 CALL1 \xae\x02 CALL7 \xdc\x02 CALL6 
-LOAD3 SCES01_004 REF6 \xec\x07 CALL8
-SEQ1 \x8c\x01 SEQ5 \x8c\xb5\x01\x0c\x00\x00\x00\x00"\x03\xcd\x00\x00
+SEQ3 REF7 F\x05 CALL1 \xae\x02 CALL6 \xdc\x02 CALL5 
+LOAD SCES01_004 REF6 \xec\x07 CALL7
+SEQ1 \x8c\x01 SEQ4 \x8c\xb5\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 早桃\n　「早桃も、そう思ってた。\p誰だってウソくらいつくことはある\n　　し、悪いことだってする。\pでも、そんなの黙ってればいいこ\n　　とじゃないかって。\pでもね、おにいちゃん。\pそうじゃないの。\n　　\p大きすぎるウソは、やっぱりムシバムの。@
 　　ひっぱっていくの」@
@@ -55,9 +59,10 @@ SEQ1 \x8c\x01 SEQ5 \x8c\xb5\x01\x0c\x00\x00\x00\x00"\x03\xcd\x00\x00
 　　そんな感じ。\pだんだん死んでいくの。\p少しずつ、少しずつい\n　　ろんなものが自分のなかで腐っていって、ウソのなかに吸い\n　　込まれて消えていくの。\p懺悔室は、呪いを解く場所なんだと\n　　……思う」\
 
 \x00
-SEQ3 REF7 0\x08 CALL1 \xae\x02 CALL7 \xdc\x02 CALL6 
-LOAD3 SCES01_005 REF6 \x9e\x0b CALL8
-SEQ1 \x8c\x01 SEQ5 \x90\xb5\x01\x0c\x00\x00\x00\x00"\x03x\x00\x00
+SEQ3 REF7 0\x08 CALL1 \xae\x02 CALL6 \xdc\x02 CALL5 
+LOAD SCES01_005 REF6 \x9e\x0b CALL7
+SEQ1 \x8c\x01 SEQ4 \x90\xb5\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 拓司\n　「話せよ」@
 早桃\n　「……」@
@@ -70,9 +75,10 @@ SEQ1 \x8c\x01 SEQ5 \x90\xb5\x01\x0c\x00\x00\x00\x00"\x03x\x00\x00
 早桃\n　「……わかった」\
 
 \x00\x00\x00
-SEQ3 REF7 \xe2\x0b CALL1 \xae\x02 CALL7 \xdc\x02 CALL6 
-LOAD3 SCES01_006 REF6 \xfc\r CALL8
-SEQ1 \x8c\x01 SEQ5 \x94\xb5\x01\x0c\x00\x00\x00\x00"\x03E\x00\x00
+SEQ3 REF7 \xe2\x0b CALL1 \xae\x02 CALL6 \xdc\x02 CALL5 
+LOAD SCES01_006 REF6 \xfc\r CALL7
+SEQ1 \x8c\x01 SEQ4 \x94\xb5\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 早桃はしばらくじっと天井を見上げて無言だった。@
 横顔には、心の中の激しい葛藤が伺えた。@
@@ -80,9 +86,10 @@ SEQ1 \x8c\x01 SEQ5 \x94\xb5\x01\x0c\x00\x00\x00\x00"\x03E\x00\x00
 やがて早桃は、ぽつり、ぽつり、と少しずつ自らの罪の物語を、\n語り始めた\
 
 \x00
-SEQ3 REF7 @\x0e CALL1 \xae\x02 CALL7 \xdc\x02 CALL6 
-LOAD3 SCES01_007 REF6 \x8e\x0f CALL8
-SEQ1 \x8c\x01 SEQ5 \x98\xb5\x01\x0c\x00\x00\x00\x00"\x03\\\x00\x00
+SEQ3 REF7 @\x0e CALL1 \xae\x02 CALL6 \xdc\x02 CALL5 
+LOAD SCES01_007 REF6 \x8e\x0f CALL7
+SEQ1 \x8c\x01 SEQ4 \x98\xb5\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 うまく話せそうにないから、思いついたことから話していくね。@
 ええと……@
@@ -93,9 +100,10 @@ SEQ1 \x8c\x01 SEQ5 \x98\xb5\x01\x0c\x00\x00\x00\x00"\x03\\\x00\x00
 お父さんとお母さんと一緒に、車で行ったの。\
 
 \x00\x00\x00
-SEQ3 REF7 \xd2\x0f CALL1 \xae\x02 CALL7 \xdc\x02 CALL6 
-LOAD3 SCES01_008 REF6 |\x11 CALL8
-SEQ1 \x8c\x01 SEQ5 \x9c\xb5\x01\x0c\x00\x00\x00\x00"\x03\x93\x00\x00
+SEQ3 REF7 \xd2\x0f CALL1 \xae\x02 CALL6 \xdc\x02 CALL5 
+LOAD SCES01_008 REF6 |\x11 CALL7
+SEQ1 \x8c\x01 SEQ4 \x9c\xb5\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 初めて見た海は、本で読んだり、テレビで見たりしたのとは全然\n違った。@
 早桃、海の水って、青いものだと思ってたんだよ。@
@@ -108,9 +116,9 @@ SEQ1 \x8c\x01 SEQ5 \x9c\xb5\x01\x0c\x00\x00\x00\x00"\x03\x93\x00\x00
 途中がなくて、いきなり、『好き』って気持ちが胸の中にいっぱ\nいになって……泣いちゃった。\
 
 \x00
-SEQ3 REF7 \xc0\x11 CALL1 \xae\x02 CALL7 \xdc\x02 CALL6 
-LOAD6 .\\Data\\Script\\Bgm.Fob REF2 F\x14 CALL8
-LOAD2 StopCD REF1 p\x14 CALL6 
-SEQ2 \xc8\x00 CALL1  \x00 CALL7 J\x00 CALL5 \xae\x02 CALL8
-LOAD3 TextClose REF2 \xcc\x14 CALL6 
+SEQ3 REF7 \xc0\x11 CALL1 \xae\x02 CALL6 \xdc\x02 CALL5 
+LOAD .\\Data\\Script\\Bgm.Fob REF2 F\x14 CALL7
+LOAD StopCD REF1 p\x14 CALL5 
+SEQ2 \xc8\x00 CALL1  \x00 CALL6 J\x00 CALL4 \xae\x02 CALL7
+LOAD TextClose REF2 \xcc\x14 CALL5 
 END_FILE

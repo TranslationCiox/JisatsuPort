@@ -1,13 +1,14 @@
 START_FILE
 R4\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00X+\x00
 SEQ2 \n\x01 CALL2 
-LOAD6 .\\Data\\Script\\Bgm.Fob REF2  \x00 CALL8
-LOAD2 PlayCD REF1 J\x00 CALL6 
+LOAD .\\Data\\Script\\Bgm.Fob REF2  \x00 CALL7
+LOAD PlayCD REF1 J\x00 CALL5 
 SEQ2 \xc8\x00 CALL2 
-LOAD6 .\\Data\\Script\\Bg.Fob REF3 \x80\x00 CALL8
-LOAD4 BgAutoFadeIn REF3 \xaa\x00 CALL6 
-LOAD3 SCE243_001 REF6 \xce\x00 CALL8
-SEQ1 \x8c\x01 SEQ5 P\x8b\x01\x0c\x00\x00\x00\x00"\x03c\x00\x00
+LOAD .\\Data\\Script\\Bg.Fob REF3 \x80\x00 CALL7
+LOAD BgAutoFadeIn REF3 \xaa\x00 CALL5 
+LOAD SCE243_001 REF6 \xce\x00 CALL7
+SEQ1 \x8c\x01 SEQ4 P\x8b\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 拓司\n　「来るぞ、急げ！」@
 \n最終波動。@
@@ -18,10 +19,11 @@ SEQ1 \x8c\x01 SEQ5 P\x8b\x01\x0c\x00\x00\x00\x00"\x03c\x00\x00
 死が定義不可能である以上、波動も同じく、理解の範疇の外にあ\nる。\p漠然とした恐怖ですべてを縛るものとして。\w\z
 \x00
 SEQ3 REF7 \x12\x01 CALL2 
-LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 \xbe\x02 CALL8
-LOAD2 TextOn REF1 \xec\x02 CALL6 
-LOAD3 SCE243_002 REF6 \x08\x03 CALL8
-SEQ1 \x8c\x01 SEQ5 T\x8b\x01\x0c\x00\x00\x00\x00"\x03W\x00\x00
+LOAD .\\Data\\Script\\TextFunc.Fob REF1 \xbe\x02 CALL7
+LOAD TextOn REF1 \xec\x02 CALL5 
+LOAD SCE243_002 REF6 \x08\x03 CALL7
+SEQ1 \x8c\x01 SEQ4 T\x8b\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 それがいま、襲いかかろうとしている。@
 爆発を控えて、いま、エンジンを高らかにふかしている。@
@@ -29,10 +31,11 @@ SEQ1 \x8c\x01 SEQ5 T\x8b\x01\x0c\x00\x00\x00\x00"\x03W\x00\x00
 しかし、すでになすべきことはただひとつだった。@
 最終波動がやってくる前に壁を壊し、その向こうにあるものを見\nつけだすのだ。\w\z
 \x00
-SEQ3 REF7 L\x03 CALL1 \xbe\x02 CALL7 \xec\x02 CALL6 
-SEQ2 3\x00 CALL1 \x80\x00 CALL7 \xaa\x00 CALL6 
-LOAD3 SCE243_003 REF6 \x16\x05 CALL8
-SEQ1 \x8c\x01 SEQ5 X\x8b\x01\x0c\x00\x00\x00\x00"\x03u\x00\x00
+SEQ3 REF7 L\x03 CALL1 \xbe\x02 CALL6 \xec\x02 CALL5 
+SEQ2 3\x00 CALL1 \x80\x00 CALL6 \xaa\x00 CALL5 
+LOAD SCE243_003 REF6 \x16\x05 CALL7
+SEQ1 \x8c\x01 SEQ4 X\x8b\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 /*▲SE15　２回再生（再生終了まで待つ）*/\a2,0,15,0,\a3,0,0,0,\a4,0,0,0,\a2,0,15,0,\a3,0,0,0,\a4,0,0,0,拓司たちは掘った。@
 /*▲SE15　２回再生（再生終了まで待つ）*/\a2,0,15,0,\a3,0,0,0,\a4,0,0,0,\a2,0,15,0,\a3,0,0,0,\a4,0,0,0,壁を崩し続けた。@
@@ -41,9 +44,10 @@ SEQ1 \x8c\x01 SEQ5 X\x8b\x01\x0c\x00\x00\x00\x00"\x03u\x00\x00
 すべてのものがブルブルと振動し、輪郭が歪む。@
 天井から、パラパラとコンクリートの破片が落ちてくる。\w\z
 \x00
-SEQ3 REF7 Z\x05 CALL1 \xbe\x02 CALL7 \xec\x02 CALL6 
-LOAD3 SCE243_004 REF6 h\x07 CALL8
-SEQ1 \x8c\x01 SEQ5 \\\x8b\x01\x0c\x00\x00\x00\x00"\x03E\x00\x00
+SEQ3 REF7 Z\x05 CALL1 \xbe\x02 CALL6 \xec\x02 CALL5 
+LOAD SCE243_004 REF6 h\x07 CALL7
+SEQ1 \x8c\x01 SEQ4 \\\x8b\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 カンナ\n　「虎菱くん、間に合わない！　間に合わないよ！」@
 拓司\n　「やるんだ！」@
@@ -52,13 +56,14 @@ SEQ1 \x8c\x01 SEQ5 \\\x8b\x01\x0c\x00\x00\x00\x00"\x03E\x00\x00
 カンナ\n　「どこかに！」@
 拓司\n　「どこかなんて、ない！　逃げ場所はない！　ここしかないん\n　　だ。\pここしか、ないんだ！」\w\z
 \x00\x00\x00
-SEQ3 REF7 \xac\x07 CALL1 \xbe\x02 CALL7 \xec\x02 CALL6 
-SEQ2 \xc8\x00 CALL1 \x80\x00 CALL7 \xaa\x00 CALL5  \x00 CALL8
-LOAD2 StopCD REF1 :\t CALL6 
-SEQ2 \x02\x00 CALL1  \x00 CALL8
-LOAD2 SeStop REF1 |\t CALL6 
-LOAD3 SCE243_005 REF6 \x98\t CALL8
-SEQ1 \x8c\x01 SEQ5 `\x8b\x01\x0c\x00\x00\x00\x00"\x03f\x00\x00
+SEQ3 REF7 \xac\x07 CALL1 \xbe\x02 CALL6 \xec\x02 CALL5 
+SEQ2 \xc8\x00 CALL1 \x80\x00 CALL6 \xaa\x00 CALL4  \x00 CALL7
+LOAD StopCD REF1 :\t CALL5 
+SEQ2 \x02\x00 CALL1  \x00 CALL7
+LOAD SeStop REF1 |\t CALL5 
+LOAD SCE243_005 REF6 \x98\t CALL7
+SEQ1 \x8c\x01 SEQ4 `\x8b\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 ざあっ！@
 \n足の裏から頭のてっぺんへ。@
@@ -68,10 +73,11 @@ SEQ1 \x8c\x01 SEQ5 `\x8b\x01\x0c\x00\x00\x00\x00"\x03f\x00\x00
 それは、身体のなかをすり抜けていった。@
 細胞の隙間を縫うように奔り、身体を構成する肉すべてに毒を与\nえて通り過ぎていった。\p死という名の毒素を。\w\z
 \x00
-SEQ3 REF7 \xdc\t CALL1 \xbe\x02 CALL7 \xec\x02 CALL6 
-SEQ2 \x0b\x01 CALL1  \x00 CALL7 J\x00 CALL6 
-LOAD3 SCE243_006 REF6 \xe2\x0b CALL8
-SEQ1 \x8c\x01 SEQ5 d\x8b\x01\x0c\x00\x00\x00\x00"\x03\x96\x00\x00
+SEQ3 REF7 \xdc\t CALL1 \xbe\x02 CALL6 \xec\x02 CALL5 
+SEQ2 \x0b\x01 CALL1  \x00 CALL6 J\x00 CALL5 
+LOAD SCE243_006 REF6 \xe2\x0b CALL7
+SEQ1 \x8c\x01 SEQ4 d\x8b\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 /*▲SE33　再生（再生終了を待たず先へ進む）*/\a2,0,33,0,\a6,0,0,0,キイイイイイイイイイイイイイイイイイイイイイイイイイイイイ！\n\p\a6,0,0,0,\a4,0,0,0,\n拓司\n　「！」@
 \n蜥蜴の悲鳴だった。@
@@ -82,9 +88,10 @@ SEQ1 \x8c\x01 SEQ5 d\x8b\x01\x0c\x00\x00\x00\x00"\x03\x96\x00\x00
 無限の反射のまっただ中に、新しい悲鳴がさらに雪崩のように流\nれ込んできては反射した。@
 頭そのものが爆発しないのが不思議だった。\w\z
 \x00\x00
-SEQ3 REF7 &\x0c CALL1 \xbe\x02 CALL7 \xec\x02 CALL6 
-LOAD3 SCE243_007 REF6 \xb8\x0e CALL8
-SEQ1 \x8c\x01 SEQ5 h\x8b\x01\x0c\x00\x00\x00\x00"\x03}\x00\x00
+SEQ3 REF7 &\x0c CALL1 \xbe\x02 CALL6 \xec\x02 CALL5 
+LOAD SCE243_007 REF6 \xb8\x0e CALL7
+SEQ1 \x8c\x01 SEQ4 h\x8b\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 拓司\n　「ああああああああああああ！」@
 \n拓司は耳をふさいでうずくまった。@
@@ -95,9 +102,10 @@ SEQ1 \x8c\x01 SEQ5 h\x8b\x01\x0c\x00\x00\x00\x00"\x03}\x00\x00
 やがてぐったりと仰向けに転がると、ぴくぴくと身体を痙攣させ\n始める。@
 白目をむき、耳から、鼻から、どす黒い血があふれ出している。\w\z
 \x00
-SEQ3 REF7 \xfc\x0e CALL1 \xbe\x02 CALL7 \xec\x02 CALL6 
-LOAD3 SCE243_008 REF6 *\x11 CALL8
-SEQ1 \x8c\x01 SEQ5 l\x8b\x01\x0c\x00\x00\x00\x00"\x03\x94\x00\x00
+SEQ3 REF7 \xfc\x0e CALL1 \xbe\x02 CALL6 \xec\x02 CALL5 
+LOAD SCE243_008 REF6 *\x11 CALL7
+SEQ1 \x8c\x01 SEQ4 l\x8b\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 拓司\n　「カ・ン・ナ・ア・アア・アアア・アアアア！」@
 \n拓司は叫んだ。@
@@ -112,9 +120,10 @@ SEQ1 \x8c\x01 SEQ5 l\x8b\x01\x0c\x00\x00\x00\x00"\x03\x94\x00\x00
 いまだ歴然として怪物ではあるものの、すでに姿形はわかってい\nるのだ。@
 檻に閉じこめて、鎖に繋ぐことができる、ただの生き物でしかな\nいのだ。\w\z
 \x00\x00\x00
-SEQ3 REF7 n\x11 CALL1 \xbe\x02 CALL7 \xec\x02 CALL6 
-LOAD3 SCE243_009 REF6 \xf8\x13 CALL8
-SEQ1 \x8c\x01 SEQ5 p\x8b\x01\x0c\x00\x00\x00\x00"\x03_\x00\x00
+SEQ3 REF7 n\x11 CALL1 \xbe\x02 CALL6 \xec\x02 CALL5 
+LOAD SCE243_009 REF6 \xf8\x13 CALL7
+SEQ1 \x8c\x01 SEQ4 p\x8b\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 あふれ出したカンナの物語。\pカンナの世界。\pそれは－－@
 解決されつつあることなのだ。@
@@ -125,9 +134,10 @@ SEQ1 \x8c\x01 SEQ5 p\x8b\x01\x0c\x00\x00\x00\x00"\x03_\x00\x00
 その足をじっと見つめ、そして反対側の足を前に出す。@
 そうして一歩……一歩……忘れてしまった歩き方を思い出すかの\nように、拓司はゆっくりと歩き始めた。\w\z
 \x00
-SEQ3 REF7 <\x14 CALL1 \xbe\x02 CALL7 \xec\x02 CALL6 
-LOAD3 SCE243_010 REF6 \xf2\x15 CALL8
-SEQ1 \x8c\x01 SEQ5 t\x8b\x01\x0c\x00\x00\x00\x00"\x03o\x00\x00
+SEQ3 REF7 <\x14 CALL1 \xbe\x02 CALL6 \xec\x02 CALL5 
+LOAD SCE243_010 REF6 \xf2\x15 CALL7
+SEQ1 \x8c\x01 SEQ4 t\x8b\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 /*▲SE33　ループ再生*/\a2,2,33,0,\a6,0,0,0,キイイイイイイイイイイイイイイイイイイイイイイイイイイイイ\nイイイイイイイ！@
 \nいつの間にか、鼻血が流れ出している。@
@@ -136,9 +146,10 @@ SEQ1 \x8c\x01 SEQ5 t\x8b\x01\x0c\x00\x00\x00\x00"\x03o\x00\x00
 \nここから俺は始まるのだ。@
 \nキイイイイイイイイイイイイイイイイイイイイイイイイイイイイ\nイイイイイイイ！\w/*▲SE　停止*/\a4,2,0,0,\z
 
-SEQ3 REF7 6\x16 CALL1 \xbe\x02 CALL7 \xec\x02 CALL5  \x00 CALL7 :\t CALL6 
-LOAD3 SCE243_011 REF6 F\x18 CALL8
-SEQ1 \x8c\x01 SEQ5 x\x8b\x01\x0c\x00\x00\x00\x00"\x03P\x00\x00
+SEQ3 REF7 6\x16 CALL1 \xbe\x02 CALL6 \xec\x02 CALL4  \x00 CALL6 :\t CALL5 
+LOAD SCE243_011 REF6 F\x18 CALL7
+SEQ1 \x8c\x01 SEQ4 x\x8b\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 こうして旅が始まったいま、俺にはいまや目的があるのだ。@
 何かから逃げているのではなく、何かに向かっているのだ。@
@@ -147,9 +158,10 @@ SEQ1 \x8c\x01 SEQ5 x\x8b\x01\x0c\x00\x00\x00\x00"\x03P\x00\x00
 通り過ぎた風景がある。@
 そうして歩き続けることで、自分が常に新しい自分であることを\n知るのだ。\n考えるのではない。\n動くのだ。\w\z
 \x00\x00\x00
-SEQ3 REF7 \x8a\x18 CALL1 \xbe\x02 CALL7 \xec\x02 CALL6 
-LOAD3 SCE243_012 REF6 \x04\x1a CALL8
-SEQ1 \x8c\x01 SEQ5 |\x8b\x01\x0c\x00\x00\x00\x00"\x03b\x00\x00
+SEQ3 REF7 \x8a\x18 CALL1 \xbe\x02 CALL6 \xec\x02 CALL5 
+LOAD SCE243_012 REF6 \x04\x1a CALL7
+SEQ1 \x8c\x01 SEQ4 |\x8b\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 拓司\n　「カンナ！」@
 \nカンナは動かない。\pすでに痙攣すらしていない。@
@@ -159,10 +171,11 @@ SEQ1 \x8c\x01 SEQ5 |\x8b\x01\x0c\x00\x00\x00\x00"\x03b\x00\x00
 腹の底から塊がこみあがってくる。@
 悲鳴にも、雄叫びにも似た、熱い塊がぐんぐんとせり上がってく\nる。\pそうして拓司は腹の底から哄笑を放った。\w\z
 \x00\x00\x00
-SEQ3 REF7 H\x1a CALL1 \xbe\x02 CALL7 \xec\x02 CALL6 
-SEQ2 4\x00 CALL1 \x80\x00 CALL7 \xaa\x00 CALL6 
-LOAD3 SCE243_013 REF6 >\x1c CALL8
-SEQ1 \x8c\x01 SEQ5 \x80\x8b\x01\x0c\x00\x00\x00\x00"\x03U\x00\x00
+SEQ3 REF7 H\x1a CALL1 \xbe\x02 CALL6 \xec\x02 CALL5 
+SEQ2 4\x00 CALL1 \x80\x00 CALL6 \xaa\x00 CALL5 
+LOAD SCE243_013 REF6 >\x1c CALL7
+SEQ1 \x8c\x01 SEQ4 \x80\x8b\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 拓司\n　「勝った！」@
 \n瞬間。@
@@ -175,10 +188,11 @@ SEQ1 \x8c\x01 SEQ5 \x80\x8b\x01\x0c\x00\x00\x00\x00"\x03U\x00\x00
 俺は勝った。@
 勝ったんだ、と。\w\z
 \x00\x00\x00
-SEQ3 REF7 \x82\x1c CALL1 \xbe\x02 CALL7 \xec\x02 CALL6 
-SEQ2 \xc9\x00 CALL1 \x80\x00 CALL7 \xaa\x00 CALL6 
-LOAD3 SCE243_014 REF6 D\x1e CALL8
-SEQ1 \x8c\x01 SEQ5 \x84\x8b\x01\x0c\x00\x00\x00\x00"\x03}\x00\x00
+SEQ3 REF7 \x82\x1c CALL1 \xbe\x02 CALL6 \xec\x02 CALL5 
+SEQ2 \xc9\x00 CALL1 \x80\x00 CALL6 \xaa\x00 CALL5 
+LOAD SCE243_014 REF6 D\x1e CALL7
+SEQ1 \x8c\x01 SEQ4 \x84\x8b\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 気がつくと、拓司は世界になっていた。@
 \n世界に音はなく、ただ真っ白なひかりだけがあった。@
@@ -190,10 +204,11 @@ SEQ1 \x8c\x01 SEQ5 \x84\x8b\x01\x0c\x00\x00\x00\x00"\x03}\x00\x00
 拓司もまた、うん、と頷き、そして２人はするすると手を伸ばし\nていった。@
 ２人の手が触れると、見えない壁は、さらさらと砂のように崩れ\nて消えた。\w\z
 \x00\x00\x00
-SEQ3 REF7 \x88\x1e CALL1 \xbe\x02 CALL7 \xec\x02 CALL6 
-SEQ2 \x04\x01 CALL1  \x00 CALL7 J\x00 CALL6 
-LOAD3 SCE243_015 REF6 \xea  CALL8
-SEQ1 \x8c\x01 SEQ5 \x88\x8b\x01\x0c\x00\x00\x00\x00"\x03\x97\x00\x00
+SEQ3 REF7 \x88\x1e CALL1 \xbe\x02 CALL6 \xec\x02 CALL5 
+SEQ2 \x04\x01 CALL1  \x00 CALL6 J\x00 CALL5 
+LOAD SCE243_015 REF6 \xea  CALL7
+SEQ1 \x8c\x01 SEQ4 \x88\x8b\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 堰を切ったように、ひかりがあふれ出した。@
 ひかりに身をまかせながら、拓司はなにもかもがわかったように\n感じていた。@
@@ -205,9 +220,10 @@ SEQ1 \x8c\x01 SEQ5 \x88\x8b\x01\x0c\x00\x00\x00\x00"\x03\x97\x00\x00
 見る、というよりも感じた。@
 感じる、というより拓司はそれらと同じものになった。\w\z
 \x00
-SEQ3 REF7 .! CALL1 \xbe\x02 CALL7 \xec\x02 CALL6 
-LOAD3 SCE243_016 REF6 \xc4# CALL8
-SEQ1 \x8c\x01 SEQ5 \x8c\x8b\x01\x0c\x00\x00\x00\x00"\x03\xe0\x00\x00
+SEQ3 REF7 .! CALL1 \xbe\x02 CALL6 \xec\x02 CALL5 
+LOAD SCE243_016 REF6 \xc4# CALL7
+SEQ1 \x8c\x01 SEQ4 \x8c\x8b\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 私とは万人であり、万人とは私だった。@
 無私な希望。\p愛の思い出の警鐘。\p生贄。\p抽象的な部類の形容語。@
@@ -226,9 +242,10 @@ SEQ1 \x8c\x01 SEQ5 \x8c\x8b\x01\x0c\x00\x00\x00\x00"\x03\xe0\x00\x00
 そこに意味などなかった。@
 しかし、それらはそれらそのもので、意味を越えた真理の塊だっ\nた。\w\z
 \x00\x00\x00
-SEQ3 REF7 \x08$ CALL1 \xbe\x02 CALL7 \xec\x02 CALL6 
-LOAD3 SCE243_017 REF6 \xc2' CALL8
-SEQ1 \x8c\x01 SEQ5 \x90\x8b\x01\x0c\x00\x00\x00\x00"\x03\x8c\x00\x00
+SEQ3 REF7 \x08$ CALL1 \xbe\x02 CALL6 \xec\x02 CALL5 
+LOAD SCE243_017 REF6 \xc2' CALL7
+SEQ1 \x8c\x01 SEQ4 \x90\x8b\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 カンナ\n　「……ゆきちゃん」@
 \nカンナがつぶやいた。@
@@ -243,12 +260,13 @@ SEQ1 \x8c\x01 SEQ5 \x90\x8b\x01\x0c\x00\x00\x00\x00"\x03\x8c\x00\x00
 拓司はそれを見つめた。@
 じっと視線をそそぎ、それがひかりの中に自らの位置を占めるま\nで目を離さなかった。\w\z
 \x00\x00\x00
-SEQ3 REF7 \x06( CALL1 \xbe\x02 CALL7 \xec\x02 CALL6 
-LOAD3 SCE243_018 REF6 p* CALL8
-SEQ1 \x8c\x01 SEQ5 \x94\x8b\x01\x0c\x00\x00\x00\x00"\x03\x10\x00\x00
+SEQ3 REF7 \x06( CALL1 \xbe\x02 CALL6 \xec\x02 CALL5 
+LOAD SCE243_018 REF6 p* CALL7
+SEQ1 \x8c\x01 SEQ4 \x94\x8b\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 いつしか、胸の中の黒いかたまりは静かに燃え尽きていた。\w\z
 \x00\x00\x00
-SEQ3 REF7 \xb4* CALL1 \xbe\x02 CALL7 \xec\x02 CALL5 \xbe\x02 CALL8
-LOAD3 TextClose REF2 :+ CALL6 
+SEQ3 REF7 \xb4* CALL1 \xbe\x02 CALL6 \xec\x02 CALL4 \xbe\x02 CALL7
+LOAD TextClose REF2 :+ CALL5 
 END_FILE

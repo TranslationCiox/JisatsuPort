@@ -1,13 +1,14 @@
 START_FILE
 \x9c/\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xb6'\x00
 SEQ2 \n\x00 CALL2 
-LOAD6 .\\Data\\Script\\Bg.Fob REF3  \x00 CALL8
-LOAD4 BgAutoFadeIn REF3 J\x00 CALL6 
+LOAD .\\Data\\Script\\Bg.Fob REF3  \x00 CALL7
+LOAD BgAutoFadeIn REF3 J\x00 CALL5 
 SEQ2 \x08\x01 CALL2 
-LOAD6 .\\Data\\Script\\Bgm.Fob REF2 \x88\x00 CALL8
-LOAD2 PlayCD REF1 \xb2\x00 CALL6 
-LOAD3 SCE033_001 REF6 \xce\x00 CALL8
-SEQ1 \x8c\x01 SEQ5 0C CALL4 \x03G\x00\x00
+LOAD .\\Data\\Script\\Bgm.Fob REF2 \x88\x00 CALL7
+LOAD PlayCD REF1 \xb2\x00 CALL5 
+LOAD SCE033_001 REF6 \xce\x00 CALL7
+SEQ1 \x8c\x01 SEQ4 0C CALL3 
+LOAD 
  
 拭ったように、視界からさっと血の色が消え失せた。@
 目の前には月代カンナが立っている。@
@@ -18,10 +19,11 @@ SEQ1 \x8c\x01 SEQ5 0C CALL4 \x03G\x00\x00
 
 \x00
 SEQ3 REF7 \x12\x01 CALL2 
-LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 N\x02 CALL8
-LOAD2 TextOn REF1 |\x02 CALL6 
-LOAD3 SCE033_002 REF6 \x98\x02 CALL8
-SEQ1 \x8c\x01 SEQ5 4C CALL4 \x03\xd8\x00\x00
+LOAD .\\Data\\Script\\TextFunc.Fob REF1 N\x02 CALL7
+LOAD TextOn REF1 |\x02 CALL5 
+LOAD SCE033_002 REF6 \x98\x02 CALL7
+SEQ1 \x8c\x01 SEQ4 4C CALL3 
+LOAD 
  
 \n月代カンナは両手を首元に回し、すっと、髪の毛を後ろに掻き上\nげた。\p細い首筋があらわになる。\pどこかで見たことがある光景だ\nった。@
 既視感。@
@@ -35,9 +37,10 @@ SEQ1 \x8c\x01 SEQ5 4C CALL4 \x03\xd8\x00\x00
 \n－－もしかしていまもおれは妄想の世界にいるのではないか？\
 
 \x00
-SEQ3 REF7 \xdc\x02 CALL1 N\x02 CALL7 |\x02 CALL6 
-LOAD3 SCE033_003 REF6 v\x06 CALL8
-SEQ1 \x8c\x01 SEQ5 8C CALL4 \x03k\x00\x00
+SEQ3 REF7 \xdc\x02 CALL1 N\x02 CALL6 |\x02 CALL5 
+LOAD SCE033_003 REF6 v\x06 CALL7
+SEQ1 \x8c\x01 SEQ4 8C CALL3 
+LOAD 
  
 思って拓司は足が震えるのを禁じ得なかった。@
 もしかしておれは狂ってしまったのか……？@
@@ -49,11 +52,12 @@ SEQ1 \x8c\x01 SEQ5 8C CALL4 \x03k\x00\x00
 拓司\n　「死の……保健室？」\
 
 \x00\x00\x00
-SEQ3 REF7 \xba\x06 CALL1 N\x02 CALL7 |\x02 CALL6 
-SEQ2 \x06\x01 CALL1 \x88\x00 CALL7 \xb2\x00 CALL6 
-SEQ2 \xc8\x00 CALL1  \x00 CALL7 J\x00 CALL6 
-LOAD3 SCE033_004 REF6 \x08\t CALL8
-SEQ1 \x8c\x01 SEQ5 <C CALL4 \x03\x8b\x00\x00
+SEQ3 REF7 \xba\x06 CALL1 N\x02 CALL6 |\x02 CALL5 
+SEQ2 \x06\x01 CALL1 \x88\x00 CALL6 \xb2\x00 CALL5 
+SEQ2 \xc8\x00 CALL1  \x00 CALL6 J\x00 CALL5 
+LOAD SCE033_004 REF6 \x08\t CALL7
+SEQ1 \x8c\x01 SEQ4 <C CALL3 
+LOAD 
  
 カンナ\n　「ええ。\p旧校舎の地下にある……いえ、あった保健室の話なん\n　　だけれどね。\p１４年前、ある事件が起こって、入り口がコン\n　　クリートで固められて封印されたっていう」@
 拓司\n　「なんだそりゃ。学校の怪談ってヤツか？\p　それともアーバン\n　　フォークロア？　カンナらしくないな」@
@@ -64,9 +68,10 @@ SEQ1 \x8c\x01 SEQ5 <C CALL4 \x03\x8b\x00\x00
 カンナ\n　「ネットで調べた、事件に関わった人間の名前」\
 
 \x00
-SEQ3 REF7 L\t CALL1 N\x02 CALL7 |\x02 CALL6 
-LOAD3 SCE033_005 REF6 \xb2\x0b CALL8
-SEQ1 \x8c\x01 SEQ5 @C CALL4 \x03\xb0\x00\x00
+SEQ3 REF7 L\t CALL1 N\x02 CALL6 |\x02 CALL5 
+LOAD SCE033_005 REF6 \xb2\x0b CALL7
+SEQ1 \x8c\x01 SEQ4 @C CALL3 
+LOAD 
  
 拓司\n　「まさか……本当にあった話なのか？」@
 カンナ\n　「ええ。\p１４年前、この５人が旧校舎の保健室で……連続自殺\n　　したの」@
@@ -76,9 +81,10 @@ SEQ1 \x8c\x01 SEQ5 @C CALL4 \x03\xb0\x00\x00
 　　要するに、『名所』という響きが、自殺願望者にとって体の\n　　いい『きっかけ』になるわけね」\
 
 \x00\x00\x00
-SEQ3 REF7 \xf6\x0b CALL1 N\x02 CALL7 |\x02 CALL6 
-LOAD3 SCE033_006 REF6 \xf0\x0e CALL8
-SEQ1 \x8c\x01 SEQ5 DC CALL4 \x03W\x00\x00
+SEQ3 REF7 \xf6\x0b CALL1 N\x02 CALL6 |\x02 CALL5 
+LOAD SCE033_006 REF6 \xf0\x0e CALL7
+SEQ1 \x8c\x01 SEQ4 DC CALL3 
+LOAD 
  
 拓司\n　「中央線とか、樹海とか」@
 カンナ\n　「でも、私はそうじゃないと思うの。\p場所は、中央線でも樹海\n　　でもなく、保健室でなければならなかったのではないか、と…\n　　…そう思うの」@
@@ -87,9 +93,10 @@ SEQ1 \x8c\x01 SEQ5 DC CALL4 \x03W\x00\x00
 拓司\n　「人魂……？」\
 
 \x00\x00\x00
-SEQ3 REF7 4\x0f CALL1 N\x02 CALL7 |\x02 CALL6 
-LOAD3 SCE033_007 REF6 \xca\x10 CALL8
-SEQ1 \x8c\x01 SEQ5 HC CALL4 \x03\x86\x00\x00
+SEQ3 REF7 4\x0f CALL1 N\x02 CALL6 |\x02 CALL5 
+LOAD SCE033_007 REF6 \xca\x10 CALL7
+SEQ1 \x8c\x01 SEQ4 HC CALL3 
+LOAD 
  
 \n拓司は思わずカンナの顔に見入った。@
 いったい彼女は何を話そうとしているのだろうか？　カンナは心\n霊現象など信じていない。\pカンナが信じるのは死体であり、殺人\nであり、現実の狂気である。\p幽霊だとか呪いだとか、そういった\n現象を信じる連中を……近親憎悪なのかもしれないが……見下し\nているフシもある。@
@@ -97,9 +104,10 @@ SEQ1 \x8c\x01 SEQ5 HC CALL4 \x03\x86\x00\x00
 しかし、それと自殺がどのように結びつく？@
 \z
 \x00\x00\x00
-SEQ3 REF7 \x0e\x11 CALL1 N\x02 CALL7 |\x02 CALL6 
-LOAD3 SCE033_008 REF6 `\x13 CALL8
-SEQ1 \x8c\x01 SEQ5 LC CALL4 \x03{\x00\x00
+SEQ3 REF7 \x0e\x11 CALL1 N\x02 CALL6 |\x02 CALL5 
+LOAD SCE033_008 REF6 `\x13 CALL7
+SEQ1 \x8c\x01 SEQ4 LC CALL3 
+LOAD 
  
 カンナ\n　「人魂の噂は、１４年前、すでに学校にあった……」@
 拓司\n　「おいおい。\pもしかして、自殺した学生たちの魂だっていうん\n　　じゃないだろうな？」@
@@ -109,9 +117,10 @@ SEQ1 \x8c\x01 SEQ5 LC CALL4 \x03{\x00\x00
 拓司\n　「……」\
 
 \x00
-SEQ3 REF7 \xa4\x13 CALL1 N\x02 CALL7 |\x02 CALL6 
-LOAD3 SCE033_009 REF6 \xca\x15 CALL8
-SEQ1 \x8c\x01 SEQ5 PC CALL4 \x03\x91\x00\x00
+SEQ3 REF7 \xa4\x13 CALL1 N\x02 CALL6 |\x02 CALL5 
+LOAD SCE033_009 REF6 \xca\x15 CALL7
+SEQ1 \x8c\x01 SEQ4 PC CALL3 
+LOAD 
  
 カンナ\n　「彼らはみな、人魂が『最後は保健室の中に消えていった』と\n　　証言している。\pそして『人魂は綺麗で、少しも怖くなかった\n　　どちらかとういうと、見ていて落ち着く感じがした』って。@
 　　中村真琴に至ってはこういってるわ……『感動して涙が出た\n　　』」@
@@ -119,9 +128,10 @@ SEQ1 \x8c\x01 SEQ5 PC CALL4 \x03\x91\x00\x00
 カンナ\n　「でしょう？\p　火の塊というものは、本能的に人間に警戒心を\n　　引き起こすわ。\pそれが超自然的なものであるとしたらなおさ\n　　ら。\pにも関わらず、彼らは人魂を美しいもの……よいものと\n　　して認識している」\w\n拓司\n　「……」@
 \z
 \x00
-SEQ3 REF7 \x0e\x16 CALL1 N\x02 CALL7 |\x02 CALL6 
-LOAD3 SCE033_010 REF6 \x8c\x18 CALL8
-SEQ1 \x8c\x01 SEQ5 TC CALL4 \x03k\x00\x00
+SEQ3 REF7 \x0e\x16 CALL1 N\x02 CALL6 |\x02 CALL5 
+LOAD SCE033_010 REF6 \x8c\x18 CALL7
+SEQ1 \x8c\x01 SEQ4 TC CALL3 
+LOAD 
  
 カンナ\n　「人魂じゃないのかもしれないわね。\pなにかの象徴……だと思\n　　う」@
 拓司\n　「象徴？」@
@@ -134,9 +144,10 @@ SEQ1 \x8c\x01 SEQ5 TC CALL4 \x03k\x00\x00
 カンナ\n　「……」\
 
 \x00
-SEQ3 REF7 \xd0\x18 CALL1 N\x02 CALL7 |\x02 CALL6 
-LOAD3 SCE033_011 REF6 \xb6\x1a CALL8
-SEQ1 \x8c\x01 SEQ5 XC CALL4 \x03\xbc\x00\x00
+SEQ3 REF7 \xd0\x18 CALL1 N\x02 CALL6 |\x02 CALL5 
+LOAD SCE033_011 REF6 \xb6\x1a CALL7
+SEQ1 \x8c\x01 SEQ4 XC CALL3 
+LOAD 
  
 　月代カンナはポケットから煙草をとりだして、それを口にくわ\n　えた。@
 　カンナによれば、喫煙は緩慢な自殺行為だという。\p喫煙が肉体\n　に与える悪影響を書いた本を読み（できるだけ攻撃的な傾向が\n　ある嫌煙家によるもののほうが好ましい）、しっかりと内容を\n　理解したうえで吸うことが重要だと、カンナはいう。\p無意識の\n　喫煙は、自殺としての意味がないと、カンナはいう……。@
@@ -147,9 +158,10 @@ SEQ1 \x8c\x01 SEQ5 XC CALL4 \x03\xbc\x00\x00
 　　なのに、どうして朝、おれに声をかけた？」\
 
 \x00
-SEQ3 REF7 \xfa\x1a CALL1 N\x02 CALL7 |\x02 CALL6 
-LOAD3 SCE033_012 REF6 $\x1e CALL8
-SEQ1 \x8c\x01 SEQ5 \\C CALL4 \x03\x8f\x00\x00
+SEQ3 REF7 \xfa\x1a CALL1 N\x02 CALL6 |\x02 CALL5 
+LOAD SCE033_012 REF6 $\x1e CALL7
+SEQ1 \x8c\x01 SEQ4 \\C CALL3 
+LOAD 
  
 カンナ\n　「かけたかしら？」@
 拓司\n　「……」@
@@ -161,9 +173,10 @@ SEQ1 \x8c\x01 SEQ5 \\C CALL4 \x03\x8f\x00\x00
 　　私たちの夢の世界でしか、ね。\pなのに、いま、私たちは現実\n　　の世界でセックスをした。\pそれって、夢の世界の版図が広が\n　　ったってことじゃないかしら？\p　壁の崩壊。\p性器を介した世\n　　界の侵略行為。\pそうはいえない？」\
 
 \x00\x00\x00
-SEQ3 REF7 h\x1e CALL1 N\x02 CALL7 |\x02 CALL6 
-LOAD3 SCE033_013 REF6 \xde  CALL8
-SEQ1 \x8c\x01 SEQ5 `C CALL4 \x03|\x00\x00
+SEQ3 REF7 h\x1e CALL1 N\x02 CALL6 |\x02 CALL5 
+LOAD SCE033_013 REF6 \xde  CALL7
+SEQ1 \x8c\x01 SEQ4 `C CALL3 
+LOAD 
  
 拓司\n　「……くだらない」@
 \n拓司はいったが、さきほど体験した世界のスライド現象……現実\nと妄想の世界を区別できなかった……を思い起こして、ふたたび\nゾッとした。\pその恐怖を振り払うように、拓司は繰り返していっ\nた。@
@@ -173,9 +186,10 @@ SEQ1 \x8c\x01 SEQ5 `C CALL4 \x03|\x00\x00
 /*▲BGM　停止　*/\a4,-1,0,0,\nカンナ\n　「……あなた、もしかして裏切ろうとしていない？」\
 
 \x00\x00\x00
-SEQ3 REF7 "! CALL1 N\x02 CALL7 |\x02 CALL6 
-LOAD3 SCE033_014 REF6 L# CALL8
-SEQ1 \x8c\x01 SEQ5 dC CALL4 \x03-\x00\x00
+SEQ3 REF7 "! CALL1 N\x02 CALL6 |\x02 CALL5 
+LOAD SCE033_014 REF6 L# CALL7
+SEQ1 \x8c\x01 SEQ4 dC CALL3 
+LOAD 
  
 拓司\n　「裏切る？」@
 カンナ\n　「そう」@
@@ -186,9 +200,10 @@ SEQ1 \x8c\x01 SEQ5 dC CALL4 \x03-\x00\x00
 拓司\n　「……」\
 
 \x00\x00\x00
-SEQ3 REF7 \x90# CALL1 N\x02 CALL7 |\x02 CALL6 
-LOAD3 SCE033_015 REF6 ~$ CALL8
-SEQ1 \x8c\x01 SEQ5 hC CALL4 \x03k\x00\x00
+SEQ3 REF7 \x90# CALL1 N\x02 CALL6 |\x02 CALL5 
+LOAD SCE033_015 REF6 ~$ CALL7
+SEQ1 \x8c\x01 SEQ4 hC CALL3 
+LOAD 
  
 真意を測ろうと、拓司はカンナの表情を探った。\p一瞬、そこには\n何かが宿っているようにも見えたが、結局、なにも見いだすこと\nはできなかった。\pカンナの顔にはいつもの、深い井戸を思わせる\n虚無がこびりついているだけだった。@
 \nカンナ\n　「－－さよなら。\p今晩は私、行かないから」@
@@ -196,12 +211,13 @@ SEQ1 \x8c\x01 SEQ5 hC CALL4 \x03k\x00\x00
 バタン、と鉄の扉が閉まる音が背後で響いた。\
 
 \x00
-SEQ3 REF7 \xc2$ CALL1 N\x02 CALL7 |\x02 CALL6 \x03$\x00\x00
-CHOICE
+SEQ3 REF7 \xc2$ CALL1 N\x02 CALL6 |\x02 CALL5 
+LOAD 
+DIALOGUE_CHOICE_START
 拓司は紅葉はどうしているだろうかと考えた\n拓司は今朝の早桃の様子が気になった\n拓司はそのままぼんやりと屋上から地上を眺めていた\n\l0,3,
-ENDCHOICE
+DIALOGUE_CHOICE_END
 
 \x00
-SEQ3 REF7 \xa8& CALL1 N\x02 CALL7 |\x02 CALL5 N\x02 CALL8
-LOAD3 TextClose REF2 ~' CALL5 N\x02 CALL7 ~' CALL6 
+SEQ3 REF7 \xa8& CALL1 N\x02 CALL6 |\x02 CALL4 N\x02 CALL7
+LOAD TextClose REF2 ~' CALL4 N\x02 CALL6 ~' CALL5 
 END_FILE

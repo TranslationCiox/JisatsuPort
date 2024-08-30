@@ -1,10 +1,11 @@
 START_FILE
 \xf7+\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00f$\x00
 SEQ2 2\x00 CALL2 
-LOAD6 .\\Data\\Script\\Bg.Fob REF3  \x00 CALL8
-LOAD4 BgAutoFadeIn REF3 J\x00 CALL6 
-LOAD3 SCE241_001 REF6 n\x00 CALL8
-SEQ1 \x8c\x01 SEQ5 0\x88\x01\x0c\x00\x00\x00\x00"\x03T\x00\x00
+LOAD .\\Data\\Script\\Bg.Fob REF3  \x00 CALL7
+LOAD BgAutoFadeIn REF3 J\x00 CALL5 
+LOAD SCE241_001 REF6 n\x00 CALL7
+SEQ1 \x8c\x01 SEQ4 0\x88\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 カンナが立ち上がった。@
 拓司はカンナの目の奥を見て、ちいさく頷いた。@
@@ -16,19 +17,21 @@ SEQ1 \x8c\x01 SEQ5 0\x88\x01\x0c\x00\x00\x00\x00"\x03T\x00\x00
 \n紅葉がうつむく。\w\z
 \x00\x00\x00
 SEQ3 REF7 \xb2\x00 CALL2 
-LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 "\x02 CALL8
-LOAD2 TextOn REF1 P\x02 CALL6 
-LOAD3 SCE241_002 REF6 l\x02 CALL8
-SEQ1 \x8c\x01 SEQ5 4\x88\x01\x0c\x00\x00\x00\x00"\x03=\x00\x00
+LOAD .\\Data\\Script\\TextFunc.Fob REF1 "\x02 CALL7
+LOAD TextOn REF1 P\x02 CALL5 
+LOAD SCE241_002 REF6 l\x02 CALL7
+SEQ1 \x8c\x01 SEQ4 4\x88\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 錦城\n　「はっ。あなた正気？　出ていくがいいわ勝手に出ていって、\n　　死んでしまうがいいわ！　この人殺し！　人殺しッ！」@
 \n錦城は最後まで強気を装っていた。@
 \n拓司\n　「わかった。それじゃ、カンナ」@
 カンナ\n　「ええ……虎菱くん」\w\z
 \x00
-SEQ3 REF7 \xb0\x02 CALL1 "\x02 CALL7 P\x02 CALL6 
-LOAD3 SCE241_003 REF6 \xde\x03 CALL8
-SEQ1 \x8c\x01 SEQ5 8\x88\x01\x0c\x00\x00\x00\x00"\x03M\x00\x00
+SEQ3 REF7 \xb0\x02 CALL1 "\x02 CALL6 P\x02 CALL5 
+LOAD SCE241_003 REF6 \xde\x03 CALL7
+SEQ1 \x8c\x01 SEQ4 8\x88\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 拓司は手を伸ばした。@
 ジンジンと痛む腕をもちあげて、カンナに差し出した。@
@@ -39,9 +42,10 @@ SEQ1 \x8c\x01 SEQ5 8\x88\x01\x0c\x00\x00\x00\x00"\x03M\x00\x00
 拓司\n　「いいんだ」@
 \n拓司はカンナを制した。\w\z
 \x00
-SEQ3 REF7 "\x04 CALL1 "\x02 CALL7 P\x02 CALL6 
-LOAD3 SCE241_004 REF6 \x90\x05 CALL8
-SEQ1 \x8c\x01 SEQ5 <\x88\x01\x0c\x00\x00\x00\x00"\x03\x8e\x00\x00
+SEQ3 REF7 "\x04 CALL1 "\x02 CALL6 P\x02 CALL5 
+LOAD SCE241_004 REF6 \x90\x05 CALL7
+SEQ1 \x8c\x01 SEQ4 <\x88\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 拓司\n　「もう、そんなことは関係ないんだ。設定なんかどうでもいい。\n　　\p俺はお前が好きだ。同じ傷を負っているとか、背のたかさが\n　　どうだとか、顔立ちがどうだとか、性格がどうだとか、口調\n　　がどうだとか……そんなことを抜きにして、お前という人間\n　　が好きなんだ。だから、いいんだ」@
 カンナ\n　「……」@
@@ -52,22 +56,24 @@ SEQ1 \x8c\x01 SEQ5 <\x88\x01\x0c\x00\x00\x00\x00"\x03\x8e\x00\x00
 カンナが握り返すのを確認してから、拓司は歩み始めた。@
 ドアを開き、外の世界へと。\w\z
 \x00\x00\x00
-SEQ3 REF7 \xd4\x05 CALL1 "\x02 CALL7 P\x02 CALL6 
-LOAD3 SCE241_005 REF6 F\x08 CALL8
-SEQ1 \x8c\x01 SEQ5 @\x88\x01\x0c\x00\x00\x00\x00"
+SEQ3 REF7 \xd4\x05 CALL1 "\x02 CALL6 P\x02 CALL5 
+LOAD SCE241_005 REF6 F\x08 CALL7
+SEQ1 \x8c\x01 SEQ4 @\x88\x01\x0c\x00\x00\x00\x00"
 SEQ2 \x00\x00\x00 CALL2  \x1e\x04\x00\x00\r\x00\x00\x1e\x17\x00 CALL2  \x1e\x08\x00\x00\r\x00\x00\x1e\x00\x00\x00 CALL2 
-LOAD6 .\\Data\\Script\\Bgm.Fob REF2 \xd8\x08 CALL8
-LOAD3 SePlayEx REF3 \x02\t CALL6 
-SEQ2 \xc8\x00 CALL1  \x00 CALL7 J\x00 CALL6 \x03)\x00\x00
+LOAD .\\Data\\Script\\Bgm.Fob REF2 \xd8\x08 CALL7
+LOAD SePlayEx REF3 \x02\t CALL5 
+SEQ2 \xc8\x00 CALL1  \x00 CALL6 J\x00 CALL5 
+LOAD 
  
 拓司\n　「これは……」@
 \n思わず絶句した。@
 すでに拓司の知っている学校ではなかった。@
 というよりもそこは、拓司の知っているどの場所とも異なってい\nた。\w\z
 \x00
-SEQ3 REF7 V\t CALL1 "\x02 CALL7 P\x02 CALL6 
-LOAD3 SCE241_006 REF6 4\n CALL8
-SEQ1 \x8c\x01 SEQ5 D\x88\x01\x0c\x00\x00\x00\x00"\x03\x94\x00\x00
+SEQ3 REF7 V\t CALL1 "\x02 CALL6 P\x02 CALL5 
+LOAD SCE241_006 REF6 4\n CALL7
+SEQ1 \x8c\x01 SEQ4 D\x88\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 眼前に広がっているのは、究極の荒廃だった。@
 天井にびっしりと張り巡らされたクモの巣にも似て、壁には無数\nのひびが入っている。@
@@ -78,9 +84,10 @@ SEQ1 \x8c\x01 SEQ5 D\x88\x01\x0c\x00\x00\x00\x00"\x03\x94\x00\x00
 まるで、何十年も放棄されていた場所のようだ。@
 あの工業団地の廃墟にさらなる歳月の洗礼を加えて、行き着く果\nてまで荒廃を深化させた－－そんな感じがする。\w\z
 \x00\x00\x00
-SEQ3 REF7 x\n CALL1 "\x02 CALL7 P\x02 CALL6 
-LOAD3 SCE241_007 REF6 \x02\r CALL8
-SEQ1 \x8c\x01 SEQ5 H\x88\x01\x0c\x00\x00\x00\x00"\x03`\x00\x00
+SEQ3 REF7 x\n CALL1 "\x02 CALL6 P\x02 CALL5 
+LOAD SCE241_007 REF6 \x02\r CALL7
+SEQ1 \x8c\x01 SEQ4 H\x88\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 腐敗した死体が転がっているのを予想していたが、そのようなも\nのはどこにもない。@
 骨や服のかけらすら見つけることができない。@
@@ -88,9 +95,10 @@ SEQ1 \x8c\x01 SEQ5 H\x88\x01\x0c\x00\x00\x00\x00"\x03`\x00\x00
 また、しなびた皮膚のような、毛髪の一部のような、正体不明の\nものがべったりと張り付いている壁もある。@
 もしかしたら、それこそが学生たちのなれの果てなのかもしれな\nい……。\w\z
 \x00
-SEQ3 REF7 F\r CALL1 "\x02 CALL7 P\x02 CALL6 
-LOAD3 SCE241_008 REF6 \x00\x0f CALL8
-SEQ1 \x8c\x01 SEQ5 L\x88\x01\x0c\x00\x00\x00\x00"\x03\x82\x00\x00
+SEQ3 REF7 F\r CALL1 "\x02 CALL6 P\x02 CALL5 
+LOAD SCE241_008 REF6 \x00\x0f CALL7
+SEQ1 \x8c\x01 SEQ4 L\x88\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 カンナ\n　「どうしたの、これ……？　まるで……まるで……」@
 拓司\n　「何十年も経っているみたいだ。\pあの部屋にいるあいだに、い\n　　ったい何があったんだ……？」@
@@ -98,9 +106,10 @@ SEQ1 \x8c\x01 SEQ5 L\x88\x01\x0c\x00\x00\x00\x00"\x03\x82\x00\x00
 拓司はその手の上に自分の手を重ねて、力強く頷いた。@
 \n拓司\n　「考えるのはやめよう。\p俺たちは最初から、起こっていること\n　　の意味を考え続けてきた。\p説明できない状況に筋を一本通そ\n　　うと……あがいてきた。\pでも、そんなの無駄なんだ。\p意味がわ\n　　からないんじゃない。\p意味なんてないんだ」\w\z
 \x00\x00\x00
-SEQ3 REF7 D\x0f CALL1 "\x02 CALL7 P\x02 CALL6 
-LOAD3 SCE241_009 REF6 \x86\x11 CALL8
-SEQ1 \x8c\x01 SEQ5 P\x88\x01\x0c\x00\x00\x00\x00"\x03\xa0\x00\x00
+SEQ3 REF7 D\x0f CALL1 "\x02 CALL6 P\x02 CALL5 
+LOAD SCE241_009 REF6 \x86\x11 CALL7
+SEQ1 \x8c\x01 SEQ4 P\x88\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 　２人の足音は、校舎の中に大きく響き渡った。@
 不自然な響き方だった。@
@@ -113,9 +122,10 @@ SEQ1 \x8c\x01 SEQ5 P\x88\x01\x0c\x00\x00\x00\x00"\x03\xa0\x00\x00
 まっすぐ歩いているつもりなのに、壁に体当たりしているときも\nある。@
 それでも２人は歩き続けた。\w\z
 \x00
-SEQ3 REF7 \xca\x11 CALL1 "\x02 CALL7 P\x02 CALL6 
-LOAD3 SCE241_010 REF6 \x84\x14 CALL8
-SEQ1 \x8c\x01 SEQ5 T\x88\x01\x0c\x00\x00\x00\x00"\x03M\x00\x00
+SEQ3 REF7 \xca\x11 CALL1 "\x02 CALL6 P\x02 CALL5 
+LOAD SCE241_010 REF6 \x84\x14 CALL7
+SEQ1 \x8c\x01 SEQ4 T\x88\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 　階段を降り、廊下を歩いてゆく。@
 渡り廊下を通って、旧校舎に入る。@
@@ -123,9 +133,10 @@ SEQ1 \x8c\x01 SEQ5 T\x88\x01\x0c\x00\x00\x00\x00"\x03M\x00\x00
 しかし、拓司は身体の隅々に残ったエネルギーを総動員して、そ\nのまえに立った。@
 \n拓司\n　「……ここだ」\w\z
 \x00\x00\x00
-SEQ3 REF7 \xc8\x14 CALL1 "\x02 CALL7 P\x02 CALL6 
-LOAD3 SCE241_011 REF6 6\x16 CALL8
-SEQ1 \x8c\x01 SEQ5 X\x88\x01\x0c\x00\x00\x00\x00"\x03=\x00\x00
+SEQ3 REF7 \xc8\x14 CALL1 "\x02 CALL6 P\x02 CALL5 
+LOAD SCE241_011 REF6 6\x16 CALL7
+SEQ1 \x8c\x01 SEQ4 X\x88\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 　壁だ。@
 旧保健室の扉を塗り固めたという壁。@
@@ -134,10 +145,11 @@ SEQ1 \x8c\x01 SEQ5 X\x88\x01\x0c\x00\x00\x00\x00"\x03=\x00\x00
 この壁の奥には何が隠されているのだろうか？@
 いや、そもそもそこには何かがあるのだろうか？\w\z
 \x00\x00\x00
-SEQ3 REF7 z\x16 CALL1 "\x02 CALL7 P\x02 CALL6 
-SEQ2 3\x00 CALL1  \x00 CALL7 J\x00 CALL6 
-LOAD3 SCE241_012 REF6 \xdc\x17 CALL8
-SEQ1 \x8c\x01 SEQ5 \\\x88\x01\x0c\x00\x00\x00\x00"\x03M\x00\x00
+SEQ3 REF7 z\x16 CALL1 "\x02 CALL6 P\x02 CALL5 
+SEQ2 3\x00 CALL1  \x00 CALL6 J\x00 CALL5 
+LOAD SCE241_012 REF6 \xdc\x17 CALL7
+SEQ1 \x8c\x01 SEQ4 \\\x88\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 　拓司は考えなかった。@
 /*▲SE15　再生（再生終了を待たず先へ進む）*/\a2,0,15,0,手にした椅子の脚を、がつがつと壁に叩き付けてゆく。@
@@ -146,9 +158,10 @@ SEQ1 \x8c\x01 SEQ5 \\\x88\x01\x0c\x00\x00\x00\x00"\x03M\x00\x00
 拓司\n　「ああ！　一緒に……」@
 カンナ\n　「ええ！」\w\z
 
-SEQ3 REF7  \x18 CALL1 "\x02 CALL7 P\x02 CALL6 
-LOAD3 SCE241_013 REF6 \x8e\x19 CALL8
-SEQ1 \x8c\x01 SEQ5 `\x88\x01\x0c\x00\x00\x00\x00"\x03y\x00\x00
+SEQ3 REF7  \x18 CALL1 "\x02 CALL6 P\x02 CALL5 
+LOAD SCE241_013 REF6 \x8e\x19 CALL7
+SEQ1 \x8c\x01 SEQ4 `\x88\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 /*▲SE15　ループ再生（再生終了を待たず先へ進む）*/\a2,0,15,1,　２人は取り憑かれたように、椅子の脚を壁に叩き付けた。@
 一箇所に狙いを絞って叩きつけてゆく。@
@@ -157,9 +170,10 @@ SEQ1 \x8c\x01 SEQ5 `\x88\x01\x0c\x00\x00\x00\x00"\x03y\x00\x00
 跪いて神の赦しと救済を求める罪人。@
 不浄の地と約束の地を隔てる結界の門を必至で叩き続ける放浪者\n……。\w/*▲SE　停止*/\a4,0,0,0,\z
 \x00\x00
-SEQ3 REF7 \xd2\x19 CALL1 "\x02 CALL7 P\x02 CALL6 
-LOAD3 SCE241_014 REF6 \xf0\x1b CALL8
-SEQ1 \x8c\x01 SEQ5 d\x88\x01\x0c\x00\x00\x00\x00"\x03\x96\x00\x00
+SEQ3 REF7 \xd2\x19 CALL1 "\x02 CALL6 P\x02 CALL5 
+LOAD SCE241_014 REF6 \xf0\x1b CALL7
+SEQ1 \x8c\x01 SEQ4 d\x88\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 拓司\n　「！」@
 \nあっけない手応えに驚くと、ガタン、と大きめのコンクリート片\nが床に落ちた。@
@@ -175,9 +189,10 @@ SEQ1 \x8c\x01 SEQ5 d\x88\x01\x0c\x00\x00\x00\x00"\x03\x96\x00\x00
 これは残された最後の意味のある行為なのだ。@
 そしてそこに救済が用意されていなかった場合、どうすればいい\nのか？\w\z
 \x00
-SEQ3 REF7 4\x1c CALL1 "\x02 CALL7 P\x02 CALL6 
-LOAD3 SCE241_015 REF6 \xc6\x1e CALL8
-SEQ1 \x8c\x01 SEQ5 h\x88\x01\x0c\x00\x00\x00\x00"\x03A\x00\x00
+SEQ3 REF7 4\x1c CALL1 "\x02 CALL6 P\x02 CALL5 
+LOAD SCE241_015 REF6 \xc6\x1e CALL7
+SEQ1 \x8c\x01 SEQ4 h\x88\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 と、突然カンナの手がピタリと止まった。@
 \nカンナ\n　「！」@
@@ -186,19 +201,21 @@ SEQ1 \x8c\x01 SEQ5 h\x88\x01\x0c\x00\x00\x00\x00"\x03A\x00\x00
 \nカンナはすぐに作業に戻ったが、しばらくすると、再び身体を凍\nり付かせた。@
 顔には、はっきりとした恐怖が張り付いている。\w\z
 \x00\x00\x00
-SEQ3 REF7 \n\x1f CALL1 "\x02 CALL7 P\x02 CALL6 
-LOAD3 SCE241_016 REF6 H  CALL8
-SEQ1 \x8c\x01 SEQ5 l\x88\x01\x0c\x00\x00\x00\x00"\x03#\x00\x00
+SEQ3 REF7 \n\x1f CALL1 "\x02 CALL6 P\x02 CALL5 
+LOAD SCE241_016 REF6 H  CALL7
+SEQ1 \x8c\x01 SEQ4 l\x88\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 カンナ\n　「やっぱり聞こえる！　なに？　なんなの、この音ッ？！」@
 拓司\n　「……音？」@
 \n拓司は作業を中断して、耳を澄ませた。\w\z
 \x00\x00\x00
-SEQ3 REF7 \x8c  CALL1 "\x02 CALL7 P\x02 CALL6 
-LOAD3 SCE241_017 REF6 R! CALL8
-SEQ1 \x8c\x01 SEQ5 p\x88\x01\x0c\x00\x00\x00\x00"
-SEQ2 \x02\x00 CALL2  \x1e\x04\x00\x00\r\x00\x00\x1e\x10\x00 CALL2  \x1e\x08\x00\x00\r\x00\x00\x1e\x01\x00 CALL1 \xd8\x08 CALL8
-LOAD2 SePlay REF1 \xf0! CALL6 \x03b\x00\x00
+SEQ3 REF7 \x8c  CALL1 "\x02 CALL6 P\x02 CALL5 
+LOAD SCE241_017 REF6 R! CALL7
+SEQ1 \x8c\x01 SEQ4 p\x88\x01\x0c\x00\x00\x00\x00"
+SEQ2 \x02\x00 CALL2  \x1e\x04\x00\x00\r\x00\x00\x1e\x10\x00 CALL2  \x1e\x08\x00\x00\r\x00\x00\x1e\x01\x00 CALL1 \xd8\x08 CALL7
+LOAD SePlay REF1 \xf0! CALL5 
+LOAD 
  
 地の底から、ゴ、ゴ、ゴ、ゴ、ゴ……と低い音が響いてくる。@
 床に散らばったコンクリートの破片が、ビリビリと震えて踊る。@
@@ -210,12 +227,13 @@ LOAD2 SePlay REF1 \xf0! CALL6 \x03b\x00\x00
 わかっていた。@
 最終波動がやってきたのだ。\w\z
 \x00
-SEQ3 REF7 \x0c" CALL1 "\x02 CALL7 P\x02 CALL6 \x03\r\x00\x00
-CHOICE
+SEQ3 REF7 \x0c" CALL1 "\x02 CALL6 P\x02 CALL5 
+LOAD 
+DIALOGUE_CHOICE_START
 シェルターに駆け戻る\n穴を広げる\n\l0,2,
-ENDCHOICE
+DIALOGUE_CHOICE_END
 
 \x00\x00\x00
-SEQ3 REF7 \xce# CALL1 "\x02 CALL7 P\x02 CALL5 "\x02 CALL8
-LOAD3 TextClose REF2 H$ CALL6 
+SEQ3 REF7 \xce# CALL1 "\x02 CALL6 P\x02 CALL4 "\x02 CALL7
+LOAD TextClose REF2 H$ CALL5 
 END_FILE

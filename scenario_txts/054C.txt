@@ -1,7 +1,8 @@
 START_FILE
 +\x08\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xf4\x06\x00
-LOAD3 SCE054_001 REF6 \x06\x00 CALL8
-SEQ1 \x8c\x01 SEQ5 \x00d CALL4 \x03\xb2\x00\x00
+LOAD SCE054_001 REF6 \x06\x00 CALL7
+SEQ1 \x8c\x01 SEQ4 \x00d CALL3 
+LOAD 
  
 　冗談ではない。@
 　五分も待っているわけにはいかない。@
@@ -18,10 +19,11 @@ SEQ1 \x8c\x01 SEQ5 \x00d CALL4 \x03\xb2\x00\x00
 
 
 SEQ3 REF7 J\x00 CALL2 
-LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 2\x03 CALL8
-LOAD2 TextOn REF1 `\x03 CALL6 
-LOAD3 SCE054_002 REF6 |\x03 CALL8
-SEQ1 \x8c\x01 SEQ5 \x04d CALL4 \x03\x9a\x00\x00
+LOAD .\\Data\\Script\\TextFunc.Fob REF1 2\x03 CALL7
+LOAD TextOn REF1 `\x03 CALL5 
+LOAD SCE054_002 REF6 |\x03 CALL7
+SEQ1 \x8c\x01 SEQ4 \x04d CALL3 
+LOAD 
  
 　一人、二人、三人、四人……@
 　突然、背後からのしかかられるような形で床に押し倒された。@
@@ -37,9 +39,9 @@ SEQ1 \x8c\x01 SEQ5 \x04d CALL4 \x03\x9a\x00\x00
 　静寂の中、バットが振り下ろされた。@
 \z
 \x00\x00\x00
-SEQ3 REF7 \xc0\x03 CALL1 2\x03 CALL7 `\x03 CALL6 
+SEQ3 REF7 \xc0\x03 CALL1 2\x03 CALL6 `\x03 CALL5 
 SEQ2 \xc8\x00 CALL2 
-LOAD6 .\\Data\\Script\\Bg.Fob REF3 |\x06 CALL8
-LOAD4 BgAutoFadeIn REF3 \xa6\x06 CALL5 2\x03 CALL8
-LOAD3 TextClose REF2 \xd6\x06 CALL6 
+LOAD .\\Data\\Script\\Bg.Fob REF3 |\x06 CALL7
+LOAD BgAutoFadeIn REF3 \xa6\x06 CALL4 2\x03 CALL7
+LOAD TextClose REF2 \xd6\x06 CALL5 
 END_FILE

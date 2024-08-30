@@ -1,7 +1,8 @@
 START_FILE
 \x9d\x03\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00@\x044\x01\x00\x00\x00\xd8\x02\x00
-LOAD3 SCE225_001 REF6 \x06\x00 CALL8
-SEQ1 \x8c\x01 SEQ5 0o\x01\x0c\x00\x00\x00\x00"\x03m\x00\x00
+LOAD SCE225_001 REF6 \x06\x00 CALL7
+SEQ1 \x8c\x01 SEQ4 0o\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 拓司は歯を食いしばった。@
 まだだ、と胸の中でうめいた。@
@@ -12,9 +13,9 @@ SEQ1 \x8c\x01 SEQ5 0o\x01\x0c\x00\x00\x00\x00"\x03m\x00\x00
 
 \x00\x00\x00
 SEQ3 REF7 J\x00 CALL2 
-LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 \x1e\x02 CALL8
-LOAD2 TextOn REF1 L\x02 CALL6 
-LOAD6 .\\Data\\Script\\Bgm.Fob REF2 h\x02 CALL8
-LOAD2 StopCD REF1 \x92\x02 CALL5 \x1e\x02 CALL8
-LOAD3 TextClose REF2 \xba\x02 CALL6 
+LOAD .\\Data\\Script\\TextFunc.Fob REF1 \x1e\x02 CALL7
+LOAD TextOn REF1 L\x02 CALL5 
+LOAD .\\Data\\Script\\Bgm.Fob REF2 h\x02 CALL7
+LOAD StopCD REF1 \x92\x02 CALL4 \x1e\x02 CALL7
+LOAD TextClose REF2 \xba\x02 CALL5 
 END_FILE

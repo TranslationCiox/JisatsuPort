@@ -1,7 +1,8 @@
 START_FILE
 .\x10\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\x10\r\x00
-LOAD3 SCE210_001 REF6 \x06\x00 CALL8
-SEQ1 \x8c\x01 SEQ5 \xc0W\x01\x0c\x00\x00\x00\x00"\x03B\x00\x00
+LOAD SCE210_001 REF6 \x06\x00 CALL7
+SEQ1 \x8c\x01 SEQ4 \xc0W\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 教授はいった。@
 この世界は物理法則と常識が支配する世界だと。@
@@ -11,10 +12,11 @@ SEQ1 \x8c\x01 SEQ5 \xc0W\x01\x0c\x00\x00\x00\x00"\x03B\x00\x00
 
 \x00\x00\x00
 SEQ3 REF7 J\x00 CALL2 
-LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 r\x01 CALL8
-LOAD2 TextOn REF1 \xa0\x01 CALL6 
-LOAD3 SCE210_002 REF6 \xbc\x01 CALL8
-SEQ1 \x8c\x01 SEQ5 \xc4W\x01\x0c\x00\x00\x00\x00"\x03o\x00\x00
+LOAD .\\Data\\Script\\TextFunc.Fob REF1 r\x01 CALL7
+LOAD TextOn REF1 \xa0\x01 CALL5 
+LOAD SCE210_002 REF6 \xbc\x01 CALL7
+SEQ1 \x8c\x01 SEQ4 \xc4W\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 拓司\n　「でたらめだ。\pそんなＳＦみたいな話を信じるわけにはいかな\n　　い。\p物理法則こそが、唯一の定点だ。@
 　　それを失ったら、おれはもうなにも信じられなくなってしま\n　　う。\pだからこそ、『教授が語る世界』を、おれは真実と考え\n　　る」@
@@ -24,9 +26,10 @@ SEQ1 \x8c\x01 SEQ5 \xc4W\x01\x0c\x00\x00\x00\x00"\x03o\x00\x00
 拓司は逃げるように目をそらし、ベッドに倒れ込んで毛布を頭か\nらかぶった。\
 
 \x00\x00\x00
-SEQ3 REF7 \x00\x02 CALL1 r\x01 CALL7 \xa0\x01 CALL6 
-LOAD3 SCE210_003 REF6 \xf6\x03 CALL8
-SEQ1 \x8c\x01 SEQ5 \xc8W\x01\x0c\x00\x00\x00\x00"\x03G\x00\x00
+SEQ3 REF7 \x00\x02 CALL1 r\x01 CALL6 \xa0\x01 CALL5 
+LOAD SCE210_003 REF6 \xf6\x03 CALL7
+SEQ1 \x8c\x01 SEQ4 \xc8W\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 拓司\n　「放っておいてくれ。\pおれは教授を信じて、治療を受ける。@
 　　いかれた頭を元通りに戻すんだ！」@
@@ -36,9 +39,10 @@ SEQ1 \x8c\x01 SEQ5 \xc8W\x01\x0c\x00\x00\x00\x00"\x03G\x00\x00
 狂っていることを認めなければならない。\
 
 \x00\x00\x00
-SEQ3 REF7 :\x04 CALL1 r\x01 CALL7 \xa0\x01 CALL6 
-LOAD3 SCE210_004 REF6 \x90\x05 CALL8
-SEQ1 \x8c\x01 SEQ5 \xccW\x01\x0c\x00\x00\x00\x00"\x03\xa5\x00\x00
+SEQ3 REF7 :\x04 CALL1 r\x01 CALL6 \xa0\x01 CALL5 
+LOAD SCE210_004 REF6 \x90\x05 CALL7
+SEQ1 \x8c\x01 SEQ4 \xccW\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 /*▲SE01　ループ再生（次の停止まで）*/\a2,1,1,1,\a6,0,0,0,ザザザ……ザザッ……\pザアザザザ……ザアアアアア……@
 ザアザアアアアアアア……@
@@ -52,9 +56,10 @@ SEQ1 \x8c\x01 SEQ5 \xccW\x01\x0c\x00\x00\x00\x00"\x03\xa5\x00\x00
 やがてまたこの部屋で目覚めて、教授にすべてを否定され……\
 
 \x00\x00\x00
-SEQ3 REF7 \xd4\x05 CALL1 r\x01 CALL7 \xa0\x01 CALL6 
-LOAD3 SCE210_005 REF6 \xa2\x08 CALL8
-SEQ1 \x8c\x01 SEQ5 \xd0W\x01\x0c\x00\x00\x00\x00"\x03Z\x00\x00
+SEQ3 REF7 \xd4\x05 CALL1 r\x01 CALL6 \xa0\x01 CALL5 
+LOAD SCE210_005 REF6 \xa2\x08 CALL7
+SEQ1 \x8c\x01 SEQ4 \xd0W\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 /*▲SE01　ループ再生（次の停止まで）*/\a2,1,1,1,\a6,0,0,0,ザザザ……ザザッ……\pザアザザザ……ザアアアアア……@
 ザアザアアアアアアア……@
@@ -65,21 +70,22 @@ SEQ1 \x8c\x01 SEQ5 \xd0W\x01\x0c\x00\x00\x00\x00"\x03Z\x00\x00
 　－－そして中心こそは、狂っているおれなのだ。\
 
 \x00\x00\x00
-SEQ3 REF7 \xe6\x08 CALL1 r\x01 CALL7 \xa0\x01 CALL6 
-LOAD3 SCE210_006 REF6 \x88\n CALL8
-SEQ1 \x8c\x01 SEQ5 \xd4W\x01\x0c\x00\x00\x00\x00"\x03F\x00\x00
+SEQ3 REF7 \xe6\x08 CALL1 r\x01 CALL6 \xa0\x01 CALL5 
+LOAD SCE210_006 REF6 \x88\n CALL7
+SEQ1 \x8c\x01 SEQ4 \xd4W\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 /*▲SE01　ループ再生（次の停止まで）*/\a2,1,1,1,\a6,0,0,0,ザザザ……ザザッ……\pザアザザザ……ザアアアアア……@
 ザアザアアアアアアア……@
 /*▲SE01　停止*/\a4,1,0,0,\n　拓司はなま暖かいかたまりにゆっくり飲み込まれながら、ただ\n　胎児のように身を丸めて恐怖していた。\
 
 \x00\x00\x00
-SEQ3 REF7 \xcc\n CALL1 r\x01 CALL7 \xa0\x01 CALL6 
+SEQ3 REF7 \xcc\n CALL1 r\x01 CALL6 \xa0\x01 CALL5 
 SEQ2 \x02\x00 CALL2 
-LOAD6 .\\Data\\Script\\Bgm.Fob REF2 8\x0c CALL8
-LOAD2 SeStop REF1 b\x0c CALL6 
+LOAD .\\Data\\Script\\Bgm.Fob REF2 8\x0c CALL7
+LOAD SeStop REF1 b\x0c CALL5 
 SEQ2 \xc8\x00 CALL2 
-LOAD6 .\\Data\\Script\\Bg.Fob REF3 \x98\x0c CALL8
-LOAD4 BgAutoFadeIn REF3 \xc2\x0c CALL5 r\x01 CALL8
-LOAD3 TextClose REF2 \xf2\x0c CALL6 
+LOAD .\\Data\\Script\\Bg.Fob REF3 \x98\x0c CALL7
+LOAD BgAutoFadeIn REF3 \xc2\x0c CALL4 r\x01 CALL7
+LOAD TextClose REF2 \xf2\x0c CALL5 
 END_FILE

@@ -1,37 +1,37 @@
 START_FILE
-\xa9\x08\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xf2\x07\x00!\x1e\x00\x00\x00\x00\r\x00\x00\x1e\x14\x00 SEQ5 \x01\x00 CALL4 
-LOAD8 .\\Data\\Script\\Scenario\\k01.Fob REF1 *\x00 CALL8
-LOAD2 start REF2 \\\x00 CALL6 
-LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 x\x00 CALL8
-LOAD4 GetLastTxtID REF3 \xa6\x00 CALL6 
+\xa9\x08\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xf2\x07\x00!\x1e\x00\x00\x00\x00\r\x00\x00\x1e\x14\x00 SEQ4 \x01\x00 CALL3 
+LOAD .\\Data\\Script\\Scenario\\k01.Fob REF1 *\x00 CALL7
+LOAD start REF2 \\\x00 CALL5 
+LOAD .\\Data\\Script\\TextFunc.Fob REF1 x\x00 CALL7
+LOAD GetLastTxtID REF3 \xa6\x00 CALL5 
 SEQ2 \x00\x00\x00\x00\x1b\x02\x00\x001\x00\x00\x00\x00&\x01\x00
-LOAD8 .\\Data\\Script\\Scenario\\k02.Fob REF1 \xec\x00 CALL7 \\\x00 CALL6 
-LOAD8 .\\Data\\Script\\Scenario\\k03.Fob REF1 ,\x01 CALL7 \\\x00 CALL5 x\x00 CALL7 \xa6\x00 CALL6 
+LOAD .\\Data\\Script\\Scenario\\k02.Fob REF1 \xec\x00 CALL6 \\\x00 CALL5 
+LOAD .\\Data\\Script\\Scenario\\k03.Fob REF1 ,\x01 CALL6 \\\x00 CALL4 x\x00 CALL6 \xa6\x00 CALL5 
 SEQ2 \x00\x00\x00\x00\x1b\x02\x00\x001\x00\x00\x00\x00\xe8\x01\x00
-LOAD8 .\\Data\\Script\\Scenario\\k04.Fob REF1 \xa8\x01 CALL7 \\\x00 CALL6 2\xc0\x06\x00
-LOAD8 .\\Data\\Script\\Scenario\\k05.Fob REF6 \xee\x01 CALL7 \\\x00 CALL5 x\x00 CALL7 \xa6\x00 CALL6 
+LOAD .\\Data\\Script\\Scenario\\k04.Fob REF1 \xa8\x01 CALL6 \\\x00 CALL5 2\xc0\x06\x00
+LOAD .\\Data\\Script\\Scenario\\k05.Fob REF6 \xee\x01 CALL6 \\\x00 CALL4 x\x00 CALL6 \xa6\x00 CALL5 
 SEQ2 \x00\x00\x00\x00\x1b\x02\x00\x001\x00\x00\x00\x00\xaa\x02\x00
-LOAD8 .\\Data\\Script\\Scenario\\k04'.FobREF7 j\x02 CALL7 \\\x00 CALL6 2\x8c\x04\x00
-LOAD8 .\\Data\\Script\\Scenario\\k05'.FobREF7 \xb0\x02 CALL7 \\\x00 CALL5 x\x00 CALL7 \xa6\x00 CALL6 
+LOAD .\\Data\\Script\\Scenario\\k04'.Fob REF7 j\x02 CALL6 \\\x00 CALL5 2\x8c\x04\x00
+LOAD .\\Data\\Script\\Scenario\\k05'.Fob REF7 \xb0\x02 CALL6 \\\x00 CALL4 x\x00 CALL6 \xa6\x00 CALL5 
 SEQ2 \x00\x00\x00\x00\x1b\x02\x00\x001\x00\x00\x00\x00l\x03\x00
-LOAD8 .\\Data\\Script\\Scenario\\k06.Fob REF6 ,\x03 CALL7 \\\x00 CALL6 2\x00\x07\x00
-LOAD8 .\\Data\\Script\\Scenario\\k07.Fob REF6 r\x03 CALL7 \\\x00 CALL5 x\x00 CALL7 \xa6\x00 CALL6 
+LOAD .\\Data\\Script\\Scenario\\k06.Fob REF6 ,\x03 CALL6 \\\x00 CALL5 2\x00\x07\x00
+LOAD .\\Data\\Script\\Scenario\\k07.Fob REF6 r\x03 CALL6 \\\x00 CALL4 x\x00 CALL6 \xa6\x00 CALL5 
 SEQ2 \x00\x00\x00\x00\x1b\x02\x00\x001\x00\x00\x00\x00(\x04\x00
-LOAD8 .\\Data\\Script\\Scenario\\k08.Fob REF6 \xee\x03 CALL7 \\\x00 CALL6 
-LOAD8 .\\Data\\Script\\Scenario\\k09.Fob REF6 .\x04 CALL7 \\\x00 CALL6 !\x1e\x00\x00\x00\x00\r\x00\x00\x1e\x18\x00 SEQ5 \x01\x00 CALL4 
-LOAD8 .\\Data\\Script\\Scenario\\k10.Fob REF6 \x92\x04 CALL7 \\\x00 CALL6 
-LOAD8 .\\Data\\Script\\Scenario\\k11.Fob REF6 \xd2\x04 CALL7 \\\x00 CALL5 x\x00 CALL7 \xa6\x00 CALL6 
+LOAD .\\Data\\Script\\Scenario\\k08.Fob REF6 \xee\x03 CALL6 \\\x00 CALL5 
+LOAD .\\Data\\Script\\Scenario\\k09.Fob REF6 .\x04 CALL6 \\\x00 CALL5 !\x1e\x00\x00\x00\x00\r\x00\x00\x1e\x18\x00 SEQ4 \x01\x00 CALL3 
+LOAD .\\Data\\Script\\Scenario\\k10.Fob REF6 \x92\x04 CALL6 \\\x00 CALL5 
+LOAD .\\Data\\Script\\Scenario\\k11.Fob REF6 \xd2\x04 CALL6 \\\x00 CALL4 x\x00 CALL6 \xa6\x00 CALL5 
 SEQ2 \x00\x00\x00\x00\x1b\x02\x00\x001\x00\x00\x00\x00\x8e\x05\x00
-LOAD8 .\\Data\\Script\\Scenario\\k12.Fob REF6 N\x05 CALL7 \\\x00 CALL6 2V\x06\x00
-LOAD8 .\\Data\\Script\\Scenario\\k13.Fob REF6 \x94\x05 CALL7 \\\x00 CALL5 x\x00 CALL7 \xa6\x00 CALL6 
+LOAD .\\Data\\Script\\Scenario\\k12.Fob REF6 N\x05 CALL6 \\\x00 CALL5 2V\x06\x00
+LOAD .\\Data\\Script\\Scenario\\k13.Fob REF6 \x94\x05 CALL6 \\\x00 CALL4 x\x00 CALL6 \xa6\x00 CALL5 
 SEQ2 \x00\x00\x00\x00\x1b\x02\x00\x001\x00\x00\x00\x00P\x06\x00
-LOAD8 .\\Data\\Script\\Scenario\\k14.Fob REF6 \x10\x06 CALL7 \\\x00 CALL6 2V\x06\x002\xc0\x06\x00
-LOAD8 .\\Data\\Script\\Scenario\\k14'.FobREF7 \\\x06 CALL7 \\\x00 CALL6 !\x1e\x00\x00\x00\x00\r\x00\x00\x1e\x1c\x00 SEQ5 \x01\x00 CALL4 2\x00\x07\x00
-LOAD8 .\\Data\\Script\\Scenario\\k15.Fob REF6 \xc6\x06 CALL7 \\\x00 CALL6 
-LOAD8 .\\Data\\Script\\Scenario\\k16.Fob REF6 \x06\x07 CALL7 \\\x00 CALL6 
+LOAD .\\Data\\Script\\Scenario\\k14.Fob REF6 \x10\x06 CALL6 \\\x00 CALL5 2V\x06\x002\xc0\x06\x00
+LOAD .\\Data\\Script\\Scenario\\k14'.Fob REF7 \\\x06 CALL6 \\\x00 CALL5 !\x1e\x00\x00\x00\x00\r\x00\x00\x1e\x1c\x00 SEQ4 \x01\x00 CALL3 2\x00\x07\x00
+LOAD .\\Data\\Script\\Scenario\\k15.Fob REF6 \xc6\x06 CALL6 \\\x00 CALL5 
+LOAD .\\Data\\Script\\Scenario\\k16.Fob REF6 \x06\x07 CALL6 \\\x00 CALL5 
 SEQ2 \xc8\x00 CALL2 
-LOAD6 .\\Data\\Script\\Bg.Fob\x00\x00 REF6 `\x07 CALL8
-LOAD4 BgAutoFadeIn\x00\x00 REF6 \x8a\x07 CALL6 
-LOAD6 .\\Data\\Script\\Bgm.Fob\x00 REF6 \xae\x07 CALL8
-LOAD2 StopCD REF6 \xd8\x07 CALL6 
+LOAD .\\Data\\Script\\Bg.Fob\x00\x00 REF6 `\x07 CALL7
+LOAD BgAutoFadeIn\x00\x00 REF6 \x8a\x07 CALL5 
+LOAD .\\Data\\Script\\Bgm.Fob\x00 REF6 \xae\x07 CALL7
+LOAD StopCD REF6 \xd8\x07 CALL5 
 END_FILE

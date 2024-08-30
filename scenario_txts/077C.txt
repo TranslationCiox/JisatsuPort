@@ -1,9 +1,10 @@
 START_FILE
 '\x11\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00@\r\x00
-LOAD6 .\\Data\\Script\\Bgm.Fob REF2 \x06\x00 CALL8
-LOAD2 StopCD REF1 0\x00 CALL6 
-LOAD3 SCE077_001 REF6 L\x00 CALL8
-SEQ1 \x8c\x01 SEQ5 \xf0\x87 CALL4 \x03~\x00\x00
+LOAD .\\Data\\Script\\Bgm.Fob REF2 \x06\x00 CALL7
+LOAD StopCD REF1 0\x00 CALL5 
+LOAD SCE077_001 REF6 L\x00 CALL7
+SEQ1 \x8c\x01 SEQ4 \xf0\x87 CALL3 
+LOAD 
  
 拓司\n　「雲居さんが俺たちには見えないものが見えるというのは…\n　　…信じられないけど……どうやらウソじゃないらしい。@
 　　いままで何度も、雲居さんは『波動』ってやつを感じてき\n　　たし、俺はそれに救われてきた」@
@@ -16,12 +17,13 @@ SEQ1 \x8c\x01 SEQ5 \xf0\x87 CALL4 \x03~\x00\x00
 
 \x00
 SEQ3 REF7 \x90\x00 CALL2 
-LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 \xa8\x02 CALL8
-LOAD2 TextOn REF1 \xd6\x02 CALL6 
-SEQ2 \x08\x01 CALL1 \x06\x00 CALL8
-LOAD2 PlayCD REF1 \x18\x03 CALL6 
-LOAD3 SCE077_002 REF6 4\x03 CALL8
-SEQ1 \x8c\x01 SEQ5 \xf4\x87 CALL4 \x03X\x00\x00
+LOAD .\\Data\\Script\\TextFunc.Fob REF1 \xa8\x02 CALL7
+LOAD TextOn REF1 \xd6\x02 CALL5 
+SEQ2 \x08\x01 CALL1 \x06\x00 CALL7
+LOAD PlayCD REF1 \x18\x03 CALL5 
+LOAD SCE077_002 REF6 4\x03 CALL7
+SEQ1 \x8c\x01 SEQ4 \xf4\x87 CALL3 
+LOAD 
  
 早桃\n　「イヤだよ！\p　早桃、やだからね！」@
 拓司\n　「……」@
@@ -33,9 +35,10 @@ SEQ1 \x8c\x01 SEQ5 \xf4\x87 CALL4 \x03X\x00\x00
 拓司\n　「紅葉を助けるために、お前たちを危険にさらすわけにはいか\n　　ない」\
 
 \x00
-SEQ3 REF7 x\x03 CALL1 \xa8\x02 CALL7 \xd6\x02 CALL6 
-LOAD3 SCE077_003 REF6 \x12\x05 CALL8
-SEQ1 \x8c\x01 SEQ5 \xf8\x87 CALL4 \x03O\x00\x00
+SEQ3 REF7 x\x03 CALL1 \xa8\x02 CALL6 \xd6\x02 CALL5 
+LOAD SCE077_003 REF6 \x12\x05 CALL7
+SEQ1 \x8c\x01 SEQ4 \xf8\x87 CALL3 
+LOAD 
  
 早桃\n　「……」@
 拓司\n　「……」@
@@ -45,9 +48,10 @@ SEQ1 \x8c\x01 SEQ5 \xf8\x87 CALL4 \x03O\x00\x00
 \n　ぶるぶると震える早桃の肩を、拓司は優しくかき抱いた。\pそれ\n　から肩に担いだカンナを２人に任せ、なたねに尋ねた。\
 
 \x00
-SEQ3 REF7 V\x05 CALL1 \xa8\x02 CALL7 \xd6\x02 CALL6 
-LOAD3 SCE077_004 REF6 \xcc\x06 CALL8
-SEQ1 \x8c\x01 SEQ5 \xfc\x87 CALL4 \x03d\x00\x00
+SEQ3 REF7 V\x05 CALL1 \xa8\x02 CALL6 \xd6\x02 CALL5 
+LOAD SCE077_004 REF6 \xcc\x06 CALL7
+SEQ1 \x8c\x01 SEQ4 \xfc\x87 CALL3 
+LOAD 
  
 拓司\n　「４階の実験室だな？」@
 なたね\n　「なにが？」@
@@ -59,9 +63,10 @@ SEQ1 \x8c\x01 SEQ5 \xfc\x87 CALL4 \x03d\x00\x00
 なたね\n　「ここで虎菱くんを失うのは、地球の戦士たちにとって大きな\n　　痛手。\p哀しいことだわ」\
 
 \x00\x00\x00
-SEQ3 REF7 \x10\x07 CALL1 \xa8\x02 CALL7 \xd6\x02 CALL6 
-LOAD3 SCE077_005 REF6 \xda\x08 CALL8
-SEQ1 \x8c\x01 SEQ5 \x00\x88 CALL4 \x03E\x00\x00
+SEQ3 REF7 \x10\x07 CALL1 \xa8\x02 CALL6 \xd6\x02 CALL5 
+LOAD SCE077_005 REF6 \xda\x08 CALL7
+SEQ1 \x8c\x01 SEQ4 \x00\x88 CALL3 
+LOAD 
  
 拓司\n　「……死んだら、な」@
 なたね\n　「死ぬわ」@
@@ -71,13 +76,14 @@ SEQ1 \x8c\x01 SEQ5 \x00\x88 CALL4 \x03E\x00\x00
 　振り返り振り返り、早桃たち３人の姿が廊下の向こうに消えさ\n　ったのを見送り、拓司はよし、とつぶやいた。\
 
 \x00\x00\x00
-SEQ3 REF7 \x1e\t CALL1 \xa8\x02 CALL7 \xd6\x02 CALL5 \x06\x00 CALL7 0\x00 CALL6 
+SEQ3 REF7 \x1e\t CALL1 \xa8\x02 CALL6 \xd6\x02 CALL4 \x06\x00 CALL6 0\x00 CALL5 
 SEQ2 <\x00 CALL2 
-LOAD8 .\\Data\\Script\\TextFunc.fob REF1 \xa0\n CALL8
-LOAD3 WaitTime REF3 \xce\n CALL6 
-SEQ2 \t\x01 CALL1 \x06\x00 CALL7 \x18\x03 CALL6 
-LOAD3 SCE077_006 REF6 "\x0b CALL8
-SEQ1 \x8c\x01 SEQ5 \x04\x88 CALL4 \x03B\x00\x00
+LOAD .\\Data\\Script\\TextFunc.fob REF1 \xa0\n CALL7
+LOAD WaitTime REF3 \xce\n CALL5 
+SEQ2 \t\x01 CALL1 \x06\x00 CALL6 \x18\x03 CALL5 
+LOAD SCE077_006 REF6 "\x0b CALL7
+SEQ1 \x8c\x01 SEQ4 \x04\x88 CALL3 
+LOAD 
  
 　渡り廊下は静まり返っている。@
 　見渡す限り、なにもない。@
@@ -85,12 +91,13 @@ SEQ1 \x8c\x01 SEQ5 \x04\x88 CALL4 \x03B\x00\x00
 　波動というのがなんなのかがわからない以上、一気に走り抜け\n　るべきなのか、あるいは静かに前進すべきなのか、それすら判\n　断のしようがない。\
 
 \x00
-SEQ3 REF7 f\x0b CALL1 \xa8\x02 CALL7 \xd6\x02 CALL6 \x03\r\x00\x00
-CHOICE
+SEQ3 REF7 f\x0b CALL1 \xa8\x02 CALL6 \xd6\x02 CALL5 
+LOAD 
+DIALOGUE_CHOICE_START
 一気に走り抜ける\n慎重に歩いてゆく\n\l0,2,
-ENDCHOICE
+DIALOGUE_CHOICE_END
 
 \x00
-SEQ3 REF7 \xa8\x0c CALL1 \xa8\x02 CALL7 \xd6\x02 CALL5 \xa8\x02 CALL8
-LOAD3 TextClose REF2 "\r CALL6 
+SEQ3 REF7 \xa8\x0c CALL1 \xa8\x02 CALL6 \xd6\x02 CALL4 \xa8\x02 CALL7
+LOAD TextClose REF2 "\r CALL5 
 END_FILE

@@ -1,10 +1,11 @@
 START_FILE
 \x1a\x10\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xaa\r\x00
 SEQ2 \t\x01 CALL2 
-LOAD6 .\\Data\\Script\\Bgm.Fob REF2  \x00 CALL8
-LOAD2 PlayCD REF1 J\x00 CALL6 
-LOAD3 SCE093_001 REF6 f\x00 CALL8
-SEQ1 \x8c\x01 SEQ5 \xf0\xa0 CALL4 \x03N\x00\x00
+LOAD .\\Data\\Script\\Bgm.Fob REF2  \x00 CALL7
+LOAD PlayCD REF1 J\x00 CALL5 
+LOAD SCE093_001 REF6 f\x00 CALL7
+SEQ1 \x8c\x01 SEQ4 \xf0\xa0 CALL3 
+LOAD 
  
 拓司\n　「それでも、何日持つのかはハッキリさせて欲しい」@
 \n　拓司はいった。@
@@ -14,10 +15,11 @@ SEQ1 \x8c\x01 SEQ5 \xf0\xa0 CALL4 \x03N\x00\x00
 \n拓司は絶句した。\w\z
 \x00\x00\x00
 SEQ3 REF7 \xaa\x00 CALL2 
-LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 \x02\x02 CALL8
-LOAD2 TextOn REF1 0\x02 CALL6 
-LOAD3 SCE093_002 REF6 L\x02 CALL8
-SEQ1 \x8c\x01 SEQ5 \xf4\xa0 CALL4 \x03\x82\x00\x00
+LOAD .\\Data\\Script\\TextFunc.Fob REF1 \x02\x02 CALL7
+LOAD TextOn REF1 0\x02 CALL5 
+LOAD SCE093_002 REF6 L\x02 CALL7
+SEQ1 \x8c\x01 SEQ4 \xf4\xa0 CALL3 
+LOAD 
  
 拓司\n　「……１年分あれば……まあ……安心はできるんじゃないか？」\n\pなたね\n　「その根拠は？　最終波動がいつやってくるのか予想不可能な\n　　現状において、どうして１年の備蓄が『安心』を与えるんで\n　　すか？」@
 拓司\n　「……。１年というのはあくまでもたとえだ。@
@@ -27,9 +29,10 @@ SEQ1 \x8c\x01 SEQ5 \xf4\xa0 CALL4 \x03\x82\x00\x00
 \nなたねは薄笑いを浮かべながらいった。@
 カンナがそれに反応した。\w\z
 \x00
-SEQ3 REF7 \x90\x02 CALL1 \x02\x02 CALL7 0\x02 CALL6 
-LOAD3 SCE093_003 REF6 \xd2\x04 CALL8
-SEQ1 \x8c\x01 SEQ5 \xf8\xa0 CALL4 \x03\x9d\x00\x00
+SEQ3 REF7 \x90\x02 CALL1 \x02\x02 CALL6 0\x02 CALL5 
+LOAD SCE093_003 REF6 \xd2\x04 CALL7
+SEQ1 \x8c\x01 SEQ4 \xf8\xa0 CALL3 
+LOAD 
  
 カンナ\n　「そのいいかたは……どうなのかしら、雲居さん？」@
 なたね\n　「なにかご不満でも？」@
@@ -40,9 +43,10 @@ SEQ1 \x8c\x01 SEQ5 \xf8\xa0 CALL4 \x03\x9d\x00\x00
 カンナ\n　「さっきのいい方は、そうとられてもおかしくないでしょう！」\n\p拓司\n　「待て！　言い争いはやめよう！」@
 \n拓司が間に入ることで、カンナとなたねは引き離されたが、あと\nには気まずい空気が残っている。\w\z
 \x00
-SEQ3 REF7 \x16\x05 CALL1 \x02\x02 CALL7 0\x02 CALL6 
-LOAD3 SCE093_004 REF6 \xc4\x07 CALL8
-SEQ1 \x8c\x01 SEQ5 \xfc\xa0 CALL4 \x03\xae\x00\x00
+SEQ3 REF7 \x16\x05 CALL1 \x02\x02 CALL6 0\x02 CALL5 
+LOAD SCE093_004 REF6 \xc4\x07 CALL7
+SEQ1 \x8c\x01 SEQ4 \xfc\xa0 CALL3 
+LOAD 
  
 なたね\n　「……はっきりさせておきたいんですけど」@
 \nやがてなたねがいった。@
@@ -57,9 +61,10 @@ SEQ1 \x8c\x01 SEQ5 \xfc\xa0 CALL4 \x03\xae\x00\x00
 　　　みなさんは私を信じるしかないんですよ。@
 　　いつもいつも散々ウソつき呼ばわりしてきたバカタレどもが\n　　私を信じるしか！　くすくすくすくす」\w\z
 \x00
-SEQ3 REF7 \x08\x08 CALL1 \x02\x02 CALL7 0\x02 CALL6 
-LOAD3 SCE093_005 REF6 \xfa\n CALL8
-SEQ1 \x8c\x01 SEQ5 \x00\xa1 CALL4 \x03^\x00\x00
+SEQ3 REF7 \x08\x08 CALL1 \x02\x02 CALL6 0\x02 CALL5 
+LOAD SCE093_005 REF6 \xfa\n CALL7
+SEQ1 \x8c\x01 SEQ4 \x00\xa1 CALL3 
+LOAD 
  
 カンナがなにかをいいかけた。@
 \nなたね\n　「あっ！」@
@@ -70,10 +75,10 @@ SEQ1 \x8c\x01 SEQ5 \x00\xa1 CALL4 \x03^\x00\x00
 なたね\n　「……惜しい！　いま、ちょっとだけ母船からきてたのに！@
 　　あなたたちが余計なことをいうから聞き逃してしまったでし\n　　ょうが！\p　ああ、惜しい！\p　惜しかったなあ！」\w\z
 \x00
-SEQ3 REF7 >\x0b CALL1 \x02\x02 CALL7 0\x02 CALL6 
+SEQ3 REF7 >\x0b CALL1 \x02\x02 CALL6 0\x02 CALL5 
 SEQ2 \xc8\x00 CALL2 
-LOAD6 .\\Data\\Script\\Bg.Fob REF3 \n\r CALL8
-LOAD4 BgAutoFadeIn REF3 4\r CALL5  \x00 CALL8
-LOAD2 StopCD REF1 d\r CALL5 \x02\x02 CALL8
-LOAD3 TextClose REF2 \x8c\r CALL6 
+LOAD .\\Data\\Script\\Bg.Fob REF3 \n\r CALL7
+LOAD BgAutoFadeIn REF3 4\r CALL4  \x00 CALL7
+LOAD StopCD REF1 d\r CALL4 \x02\x02 CALL7
+LOAD TextClose REF2 \x8c\r CALL5 
 END_FILE

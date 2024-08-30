@@ -1,7 +1,8 @@
 START_FILE
 "\x06\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xa4\t3\x01\x00\x00\x00\x18\x05\x00
-LOAD3 SCE015_001 REF6 \x06\x00 CALL8
-SEQ1 \x8c\x01 SEQ5 \x10' CALL4 \x03\xa8\x00\x00
+LOAD SCE015_001 REF6 \x06\x00 CALL7
+SEQ1 \x8c\x01 SEQ4 \x10' CALL3 
+LOAD 
  
 紅葉\n　「失礼ね、あるわよ！　私はアンタみたいにゴロゴロ過ごしてな\n　　いんだから、アンタよりよっぽどバテバテなの！　バイトだっ\n　　てやってるし、来週はライブに行くし、受験勉強だってそこそ\n　　こ……まあ、一応……ええと……とにかく夏バテしてるわよ！\n　　でも、それを他人にわからせないようにしてるっていうのが、\n　　私のすごいところなわけなのよ」@
 拓司\n　「ウソつけ。ただ体力が有り余ってるだけだろ」@
@@ -11,10 +12,11 @@ SEQ1 \x8c\x01 SEQ5 \x10' CALL4 \x03\xa8\x00\x00
 
 \x00\x00\x00
 SEQ3 REF7 J\x00 CALL2 
-LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 \n\x03 CALL8
-LOAD2 TextOn REF1 8\x03 CALL6 
-LOAD3 SCE015_002 REF6 T\x03 CALL8
-SEQ1 \x8c\x01 SEQ5 \x14' CALL4 \x03G\x00\x00
+LOAD .\\Data\\Script\\TextFunc.Fob REF1 \n\x03 CALL7
+LOAD TextOn REF1 8\x03 CALL5 
+LOAD SCE015_002 REF6 T\x03 CALL7
+SEQ1 \x8c\x01 SEQ4 \x14' CALL3 
+LOAD 
  
 拓司\n　「いざというときって、なんだよ？　核戦争が起こって世界が暴\n　　力の時代になったときか？　悪の改造人間が襲いかかってきた\n　　ときか？」@
 紅葉\n　「……まったく、口だけは達者なんだから」@
@@ -23,6 +25,6 @@ SEQ1 \x8c\x01 SEQ5 \x14' CALL4 \x03G\x00\x00
 拓司\n　「ふん」\
 
 \x00\x00\x00
-SEQ3 REF7 \x98\x03 CALL1 \n\x03 CALL7 8\x03 CALL5 \n\x03 CALL8
-LOAD3 TextClose REF2 \xfa\x04 CALL6 
+SEQ3 REF7 \x98\x03 CALL1 \n\x03 CALL6 8\x03 CALL4 \n\x03 CALL7
+LOAD TextClose REF2 \xfa\x04 CALL5 
 END_FILE

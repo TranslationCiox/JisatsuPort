@@ -1,10 +1,11 @@
 START_FILE
 \x86\x07\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x004\x06\x00
 SEQ2 \t\x01 CALL2 
-LOAD6 .\\Data\\Script\\Bgm.Fob REF2  \x00 CALL8
-LOAD2 PlayCD REF1 J\x00 CALL6 
-LOAD3 SCE078_001 REF6 f\x00 CALL8
-SEQ1 \x8c\x01 SEQ5 \x80\x89 CALL4 \x03\xd7\x00\x00
+LOAD .\\Data\\Script\\Bgm.Fob REF2  \x00 CALL7
+LOAD PlayCD REF1 J\x00 CALL5 
+LOAD SCE078_001 REF6 f\x00 CALL7
+SEQ1 \x8c\x01 SEQ4 \x80\x89 CALL3 
+LOAD 
  
 途中、生きている人間には一度も出くわさなかった。@
 もっとも、余計な寄り道はせず、ただひたすら４階目指して廊下\nを歩いてきただけだから、もしかしたらどこかの教室に生き残り\nがいるのかもしれない。@
@@ -23,11 +24,12 @@ SEQ1 \x8c\x01 SEQ5 \x80\x89 CALL4 \x03\xd7\x00\x00
 
 \x00
 SEQ3 REF7 \xaa\x00 CALL2 
-LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 &\x04 CALL8
-LOAD2 TextOn REF1 T\x04 CALL5  \x00 CALL8
-LOAD2 StopCD REF1 |\x04 CALL6 
-LOAD3 SCE078_002 REF6 \x98\x04 CALL8
-SEQ1 \x8c\x01 SEQ5 \x84\x89 CALL4 \x03=\x00\x00
+LOAD .\\Data\\Script\\TextFunc.Fob REF1 &\x04 CALL7
+LOAD TextOn REF1 T\x04 CALL4  \x00 CALL7
+LOAD StopCD REF1 |\x04 CALL5 
+LOAD SCE078_002 REF6 \x98\x04 CALL7
+SEQ1 \x8c\x01 SEQ4 \x84\x89 CALL3 
+LOAD 
  
 なたね\n　「ここよ」@
 \nなたねは４階実験室の前でいい、ポケットを探って鍵を取り出し\nた。@
@@ -35,6 +37,6 @@ SEQ1 \x8c\x01 SEQ5 \x84\x89 CALL4 \x03=\x00\x00
 なたねはドアを開き、実験室へと足早に入っていった。\
 
 \x00
-SEQ3 REF7 \xdc\x04 CALL1 &\x04 CALL7 T\x04 CALL5 &\x04 CALL8
-LOAD3 TextClose REF2 \x16\x06 CALL6 
+SEQ3 REF7 \xdc\x04 CALL1 &\x04 CALL6 T\x04 CALL4 &\x04 CALL7
+LOAD TextClose REF2 \x16\x06 CALL5 
 END_FILE

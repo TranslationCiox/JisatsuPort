@@ -1,19 +1,21 @@
 START_FILE
 [\r\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xf0\n\x00
-LOAD3 SCE220_001 REF6 \x06\x00 CALL8
-SEQ1 \x8c\x01 SEQ5 `g\x01\x0c\x00\x00\x00\x00"\x03\x11\x00\x00
+LOAD SCE220_001 REF6 \x06\x00 CALL7
+SEQ1 \x8c\x01 SEQ4 `g\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 \n\n\n\n\n\n\n\n\n\n　　　　　　　　　　　　　『９日目』\
 
 \x00\x00\x00
 SEQ3 REF7 J\x00 CALL2 
-LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 \xae\x00 CALL8
-LOAD2 TextOn REF1 \xdc\x00 CALL6 
+LOAD .\\Data\\Script\\TextFunc.Fob REF1 \xae\x00 CALL7
+LOAD TextOn REF1 \xdc\x00 CALL5 
 SEQ2 \x0c\x01 CALL2 
-LOAD6 .\\Data\\Script\\Bgm.Fob REF2 \x12\x01 CALL8
-LOAD2 PlayCD REF1 <\x01 CALL6 
-LOAD3 SCE220_002 REF6 X\x01 CALL8
-SEQ1 \x8c\x01 SEQ5 dg\x01\x0c\x00\x00\x00\x00"\x03\x81\x00\x00
+LOAD .\\Data\\Script\\Bgm.Fob REF2 \x12\x01 CALL7
+LOAD PlayCD REF1 <\x01 CALL5 
+LOAD SCE220_002 REF6 X\x01 CALL7
+SEQ1 \x8c\x01 SEQ4 dg\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 鍵の管理は、御堂が受け持つことになった。@
 御堂は、完全に気を失ったなたねから鍵を奪い、その管理を一方\n的に宣言した。\p誰もそれに異を唱える者はなかった。@
@@ -24,20 +26,22 @@ SEQ1 \x8c\x01 SEQ5 dg\x01\x0c\x00\x00\x00\x00"\x03\x81\x00\x00
 傍らには、錦城の姿があった。\
 
 \x00
-SEQ3 REF7 \x9c\x01 CALL1 \xae\x00 CALL7 \xdc\x00 CALL6 
-LOAD3 SCE220_003 REF6 \xda\x03 CALL8
-SEQ1 \x8c\x01 SEQ5 hg\x01\x0c\x00\x00\x00\x00"\x03\x8e\x00\x00
+SEQ3 REF7 \x9c\x01 CALL1 \xae\x00 CALL6 \xdc\x00 CALL5 
+LOAD SCE220_003 REF6 \xda\x03 CALL7
+SEQ1 \x8c\x01 SEQ4 hg\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 御堂\n　「安心しろ。\p俺はそこのイカレ女とは違う。\pちゃんといままで\n　　どおり、食糧は平等に配給する。\pただ、部屋をもらうってだ\n　　けだ。\pお前らのパーソナルスペースも２人分広がるわけだし、\n　　文句はねえだろ？」@
 錦城\n　「理屈から言っても、食糧管理者が食糧管理室に常在するって\n　　いうのは合理的だわ。\p今回の雲居さんへの……暴力は……\n　　不可欠だった。\pわかるわね、みんな？\p　こういうことは二度\n　　と起こされてはならないわ。\pだから、その防止の意味でも、\n　　御堂くんがみんなと違う場所にいるということは意味がある\n　　……そうでしょう？」\
 
 \x00
-SEQ3 REF7 \x1e\x04 CALL1 \xae\x00 CALL7 \xdc\x00 CALL6 
+SEQ3 REF7 \x1e\x04 CALL1 \xae\x00 CALL6 \xdc\x00 CALL5 
 SEQ2 &\x00 CALL2 
-LOAD6 .\\Data\\Script\\Bg.Fob REF3 \xaa\x06 CALL8
-LOAD4 BgAutoFadeIn REF3 \xd4\x06 CALL6 
-LOAD3 SCE220_004 REF6 \xf8\x06 CALL8
-SEQ1 \x8c\x01 SEQ5 lg\x01\x0c\x00\x00\x00\x00"\x03\xc7\x00\x00
+LOAD .\\Data\\Script\\Bg.Fob REF3 \xaa\x06 CALL7
+LOAD BgAutoFadeIn REF3 \xd4\x06 CALL5 
+LOAD SCE220_004 REF6 \xf8\x06 CALL7
+SEQ1 \x8c\x01 SEQ4 lg\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 なたねはナイロンテープで拘束され、部屋の隅に転がされること\nとなった。\p猿ぐつわをかまされ、日に１度、トイレが許可される\nとき、そして最終波動の予兆はないかどうかを尋ねられるときだ\nけ解放される。@
 殴られた顔面は醜く腫れ上がり、青あざにおおわれて痛々しい。@
@@ -50,7 +54,7 @@ SEQ1 \x8c\x01 SEQ5 lg\x01\x0c\x00\x00\x00\x00"\x03\xc7\x00\x00
 \n御堂は笑った。\
 
 \x00\x00\x00
-SEQ3 REF7 <\x07 CALL1 \xae\x00 CALL7 \xdc\x00 CALL6 
-SEQ2 \xc8\x00 CALL1 \xaa\x06 CALL7 \xd4\x06 CALL5 \xae\x00 CALL8
-LOAD3 TextClose REF2 \xd2\n CALL6 
+SEQ3 REF7 <\x07 CALL1 \xae\x00 CALL6 \xdc\x00 CALL5 
+SEQ2 \xc8\x00 CALL1 \xaa\x06 CALL6 \xd4\x06 CALL4 \xae\x00 CALL7
+LOAD TextClose REF2 \xd2\n CALL5 
 END_FILE

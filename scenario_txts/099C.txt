@@ -1,7 +1,8 @@
 START_FILE
 B\x05\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xa4\t3\x01\x00\x00\x000\x04\x00
-LOAD3 SCE099_001 REF6 \x06\x00 CALL8
-SEQ1 \x8c\x01 SEQ5 P\xaa CALL4 \x03I\x00\x00
+LOAD SCE099_001 REF6 \x06\x00 CALL7
+SEQ1 \x8c\x01 SEQ4 P\xaa CALL3 
+LOAD 
  
 拓司\n　「雲居さんのいうことに一理ある」@
 早桃\n　「おにいちゃん！」@
@@ -10,10 +11,11 @@ SEQ1 \x8c\x01 SEQ5 P\xaa CALL4 \x03I\x00\x00
 なたねはいつもの無表情で、なんの反応もない。\w\z
 \x00
 SEQ3 REF7 J\x00 CALL2 
-LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 \x8e\x01 CALL8
-LOAD2 TextOn REF1 \xbc\x01 CALL6 
-LOAD3 SCE099_002 REF6 \xd8\x01 CALL8
-SEQ1 \x8c\x01 SEQ5 T\xaa CALL4 \x03l\x00\x00
+LOAD .\\Data\\Script\\TextFunc.Fob REF1 \x8e\x01 CALL7
+LOAD TextOn REF1 \xbc\x01 CALL5 
+LOAD SCE099_002 REF6 \xd8\x01 CALL7
+SEQ1 \x8c\x01 SEQ4 T\xaa CALL3 
+LOAD 
  
 拓司\n　「ただ、お前が騒ぎ立てることでみんなが不安になるという点\n　　のみにおいては、雲居さんは正しい。\pいいかい、早桃。\pみ\n　　んな怖いんだ。\pみんな叫びたいんだ。\pでも、我慢している。@
 　　だから、お前も我慢しなくちゃ－－」@
@@ -21,6 +23,6 @@ SEQ1 \x8c\x01 SEQ5 T\xaa CALL4 \x03l\x00\x00
 いうとなたねは、走るように自分のスペースへと向かい、膝を抱\nえて壁に向かった。@
 \nそれから一日、早桃はおろか、他の誰もひとことも口をきこう\nとはしなかった。\w\z
 \x00\x00\x00
-SEQ3 REF7 \x1c\x02 CALL1 \x8e\x01 CALL7 \xbc\x01 CALL5 \x8e\x01 CALL8
-LOAD3 TextClose REF2 \x12\x04 CALL6 
+SEQ3 REF7 \x1c\x02 CALL1 \x8e\x01 CALL6 \xbc\x01 CALL4 \x8e\x01 CALL7
+LOAD TextClose REF2 \x12\x04 CALL5 
 END_FILE

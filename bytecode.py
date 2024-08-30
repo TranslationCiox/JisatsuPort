@@ -15,27 +15,27 @@ patterns = [
     {
         "pattern": [b'\x00', b'\x0c', b'\x00', b'\x00', b'\x00', b'\x00', b'"'],
         #
-        "action": " CALL4 "
+        "action": " CALL3 "
     },
     {
         "pattern": [b'\x00', b'\x1e', b'\x02', b'\x00', b'\x00', b'5', b'\x1f'],
         #
-        "action": " CALL5 "
+        "action": " CALL4 "
     },
     {
         "pattern": [b'\x00', b'\x1e', b'\x02', b'\x00', b'\x00', b'5'],
         #
-        "action": " CALL6 "
+        "action": " CALL5 "
     },
     {
         "pattern": [b'\x00', b'\x1e', b'\x02', b'\x00', b'\x00', b'\x1f'],
         #
-        "action": " CALL7 "
+        "action": " CALL6 "
     },
     {
         "pattern": [b'\x00', b'\x1e', b'\x02', b'\x00', b'\x00'],
         #
-        "action": " CALL8"
+        "action": " CALL7"
     },
     {
         "pattern": [b'\xef', b'!', b'\x1e', b'\x00', b'\x00', b'\x00', b'\x00', b'\r', b'\x00', b'\x00', b'\x1e'],
@@ -50,7 +50,7 @@ patterns = [
     {
         "pattern": [b' ',          b'\x1e', b'\x00', b'\x00', b'\x00', b'\x00', b'\r', b'\x00', b'\x00'],
         #
-        "action": "\nSEQ3 "
+        "action": "\nSEQ3"
     },
     {
         "pattern": [                                                   b'\x00', b'\r',          b'\x02', b'\x1e'],
@@ -58,49 +58,9 @@ patterns = [
         "action": " SEQ4 "
     },
     {
-        "pattern": [b'\x03', b'\x02', b'\x00', b'\x00'],
+        "pattern": [b'\x03', None, b'\x00', b'\x00'],
         # BgOn, PlayCD, TextOn
-        "action": "\nLOAD2 "
-    },
-    {
-        "pattern": [b'\x03', b'\x03', b'\x00', b'\x00'],
-        # Before SCExx_xxx calls. E.g. SCE001_002
-        "action": "\nLOAD3 "
-    },
-    {
-        "pattern": [b'\x03', b'\x04', b'\x00', b'\x00'],
-        # BgAutoFadeIn, GetLastTxtID
-        "action": "\nLOAD4 "
-    },
-    {
-        "pattern": [b'\x03', b'\x05', b'\x00', b'\x00'],
-        # TextWindowOffDirect, 0.Fob, InitGameFlagBuffer
-        "action": "\nLOAD5 "
-    },
-    {
-        "pattern": [b'\x03', b'\x06', b'\x00', b'\x00'],
-        # Data.Fob
-        "action": "\nLOAD6 "
-    },
-    {
-        "pattern": [b'\x03', b'\x07', b'\x00', b'\x00'],
-        # TextFunc.Fob
-        "action": "\nLOAD8 "
-    },
-    {
-        "pattern": [b'\x03', b'\x08', b'\x00', b'\x00'],
-        #
-        "action": "\nLOAD8 "
-    },
-    {
-        "pattern": [b'\x03', b'\n', b'\x00', b'\x00'],
-        #
-        "action": "\nLOAD9 "
-    },
-    {
-        "pattern": [b'\x03', b'\t', b'\x00', b'\x00'],
-        #
-        "action": "\nLOAD0 "
+        "action": "\nLOAD "
     },
 
     ########################### 1 Byte ###########################
@@ -138,12 +98,12 @@ patterns = [
     {
         "pattern": [b'\x1f'],
         #
-        "action": "REF7 "
+        "action": " REF7 "
     },
     {
         "pattern": [b',', b'\x02'],
         #
-        "action": "CHOICE "
+        "action": " CHOICE "
     },
 
     ########################### Special ###########################
@@ -237,3 +197,44 @@ def process_files(input_dir="scripts", output_dir="scripts_txts"):
 # Run the processing function
 process_files(input_dir="scenario", output_dir="scenario_txts")
 process_files(input_dir="scripts", output_dir="scripts_txts")
+
+# {
+#     "pattern": [b'\x03', b'\x03', b'\x00', b'\x00'],
+#     # Before SCExx_xxx calls. E.g. SCE001_002
+#     "action": "\nLOAD3 "
+# },
+# {
+#     "pattern": [b'\x03', b'\x04', b'\x00', b'\x00'],
+#     # BgAutoFadeIn, GetLastTxtID
+#     "action": "\nLOAD4 "
+# },
+# {
+#     "pattern": [b'\x03', b'\x05', b'\x00', b'\x00'],
+#     # TextWindowOffDirect, 0.Fob, InitGameFlagBuffer
+#     "action": "\nLOAD5 "
+# },
+# {
+#     "pattern": [b'\x03', b'\x06', b'\x00', b'\x00'],
+#     # Data.Fob
+#     "action": "\nLOAD6 "
+# },
+# {
+#     "pattern": [b'\x03', b'\x07', b'\x00', b'\x00'],
+#     # TextFunc.Fob
+#     "action": "\nLOAD8 "
+# },
+# {
+#     "pattern": [b'\x03', b'\x08', b'\x00', b'\x00'],
+#     #
+#     "action": "\nLOAD8 "
+# },
+# {
+#     "pattern": [b'\x03', b'\n', b'\x00', b'\x00'],
+#     #
+#     "action": "\nLOAD9 "
+# },
+# {
+#     "pattern": [b'\x03', b'\t', b'\x00', b'\x00'],
+#     #
+#     "action": "\nLOAD0 "
+# },

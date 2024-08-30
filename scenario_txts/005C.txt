@@ -1,13 +1,14 @@
 START_FILE
 \xaa\n\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00d\x08\x00
 SEQ2 H\x00 CALL2 
-LOAD6 .\\Data\\Script\\Bg.Fob REF3  \x00 CALL8
-LOAD4 BgAutoFadeIn REF3 J\x00 CALL6 
+LOAD .\\Data\\Script\\Bg.Fob REF3  \x00 CALL7
+LOAD BgAutoFadeIn REF3 J\x00 CALL5 
 SEQ2 \x05\x01 CALL2 
-LOAD6 .\\Data\\Script\\Bgm.Fob REF2 \x88\x00 CALL8
-LOAD2 PlayCD REF1 \xb2\x00 CALL6 
-LOAD3 SCE005_001 REF6 \xce\x00 CALL8
-SEQ1 \x8c\x01 SEQ5 p\x17 CALL4 \x03H\x00\x00
+LOAD .\\Data\\Script\\Bgm.Fob REF2 \x88\x00 CALL7
+LOAD PlayCD REF1 \xb2\x00 CALL5 
+LOAD SCE005_001 REF6 \xce\x00 CALL7
+SEQ1 \x8c\x01 SEQ4 p\x17 CALL3 
+LOAD 
  
 早桃\n　「……おにいちゃん？」@
 \n枕から軽く頭を持ち上げて、足元を見る。@
@@ -18,10 +19,11 @@ SEQ1 \x8c\x01 SEQ5 p\x17 CALL4 \x03H\x00\x00
 
 \x00\x00\x00
 SEQ3 REF7 \x12\x01 CALL2 
-LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 R\x02 CALL8
-LOAD2 TextOn REF1 \x80\x02 CALL6 
-LOAD3 SCE005_002 REF6 \x9c\x02 CALL8
-SEQ1 \x8c\x01 SEQ5 t\x17 CALL4 \x03^\x00\x00
+LOAD .\\Data\\Script\\TextFunc.Fob REF1 R\x02 CALL7
+LOAD TextOn REF1 \x80\x02 CALL5 
+LOAD SCE005_002 REF6 \x9c\x02 CALL7
+SEQ1 \x8c\x01 SEQ4 t\x17 CALL3 
+LOAD 
  
 拓司\n　「……妄想か？」@
 \n拓司の問いには応えず、早桃は抑揚のない口調でいった。@
@@ -35,9 +37,10 @@ SEQ1 \x8c\x01 SEQ5 t\x17 CALL4 \x03^\x00\x00
 早桃\n　「たぶん」\
 
 \x00\x00\x00
-SEQ3 REF7 \xe0\x02 CALL1 R\x02 CALL7 \x80\x02 CALL6 
-LOAD3 SCE005_003 REF6 \x92\x04 CALL8
-SEQ1 \x8c\x01 SEQ5 x\x17 CALL4 \x03\xa8\x00\x00
+SEQ3 REF7 \xe0\x02 CALL1 R\x02 CALL6 \x80\x02 CALL5 
+LOAD SCE005_003 REF6 \x92\x04 CALL7
+SEQ1 \x8c\x01 SEQ4 x\x17 CALL3 
+LOAD 
  
 早桃から立ち上る熱気のようなものが、重い夏の空気を微かに歪\nませている。@
 くちびるはわずかに開き、つるりと光っている。@
@@ -52,12 +55,13 @@ SEQ1 \x8c\x01 SEQ5 x\x17 CALL4 \x03\xa8\x00\x00
 早桃はそれを自分の鼻先に持っていき、すうっと、息を吸い込ん\nだ。\
 
 \x00
-SEQ3 REF7 \xd6\x04 CALL1 R\x02 CALL7 \x80\x02 CALL6 \x03\x14\x00\x00
-CHOICE
+SEQ3 REF7 \xd6\x04 CALL1 R\x02 CALL6 \x80\x02 CALL5 
+LOAD 
+DIALOGUE_CHOICE_START
 「……出て行け」と拓司はいった\n「……来いよ」と拓司はいった\n\l0,2,
-ENDCHOICE
+DIALOGUE_CHOICE_END
 
 \x00\x00\x00
-SEQ3 REF7 \xb0\x07 CALL1 R\x02 CALL7 \x80\x02 CALL5 R\x02 CALL8
-LOAD3 TextClose REF2 F\x08 CALL6 
+SEQ3 REF7 \xb0\x07 CALL1 R\x02 CALL6 \x80\x02 CALL4 R\x02 CALL7
+LOAD TextClose REF2 F\x08 CALL5 
 END_FILE

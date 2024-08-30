@@ -1,10 +1,11 @@
 START_FILE
 <\x10\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00B\r\x00
 SEQ2 "\x00 CALL2 
-LOAD6 .\\Data\\Script\\Bg.Fob REF3  \x00 CALL8
-LOAD4 BgAutoFadeIn REF3 J\x00 CALL6 
-LOAD3 SCE106_001 REF6 n\x00 CALL8
-SEQ1 \x8c\x01 SEQ5 @\xb5 CALL4 \x03\x89\x00\x00
+LOAD .\\Data\\Script\\Bg.Fob REF3  \x00 CALL7
+LOAD BgAutoFadeIn REF3 J\x00 CALL5 
+LOAD SCE106_001 REF6 n\x00 CALL7
+SEQ1 \x8c\x01 SEQ4 @\xb5 CALL3 
+LOAD 
  
 　それから起こったことを、拓司ははっきりとは覚えていない。@
 すべてが熱病のなかで見た夢のごとく、混然として、切り離すこ\nとができない。@
@@ -19,10 +20,11 @@ SEQ1 \x8c\x01 SEQ5 @\xb5 CALL4 \x03\x89\x00\x00
 そして気がつくと、教室中に血が飛び散っていた。\w\z
 \x00
 SEQ3 REF7 \xb2\x00 CALL2 
-LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 \xf6\x02 CALL8
-LOAD2 TextOn REF1 $\x03 CALL6 
-LOAD3 SCE106_002 REF6 @\x03 CALL8
-SEQ1 \x8c\x01 SEQ5 D\xb5 CALL4 \x03E\x00\x00
+LOAD .\\Data\\Script\\TextFunc.Fob REF1 \xf6\x02 CALL7
+LOAD TextOn REF1 $\x03 CALL5 
+LOAD SCE106_002 REF6 @\x03 CALL7
+SEQ1 \x8c\x01 SEQ4 D\xb5 CALL3 
+LOAD 
  
 御堂\n　「勝ったあああああ俺が勝ったああああ思い知ったか俺がああ\n　　あああああ！」@
 \n御堂が叫んでいた。@
@@ -31,9 +33,10 @@ SEQ1 \x8c\x01 SEQ5 D\xb5 CALL4 \x03E\x00\x00
 てらてらと光る臓物だ。@
 御堂はその中から鍵を探し出そうとしている。\w\z
 \x00
-SEQ3 REF7 \x84\x03 CALL1 \xf6\x02 CALL7 $\x03 CALL6 
-LOAD3 SCE106_003 REF6 \xd2\x04 CALL8
-SEQ1 \x8c\x01 SEQ5 H\xb5 CALL4 \x03q\x00\x00
+SEQ3 REF7 \x84\x03 CALL1 \xf6\x02 CALL6 $\x03 CALL5 
+LOAD SCE106_003 REF6 \xd2\x04 CALL7
+SEQ1 \x8c\x01 SEQ4 H\xb5 CALL3 
+LOAD 
  
 いや、探し出そうとしているのは自分なのか……？@
 スクリーンの中の光景をのぞき込むように、客観的に『自分』を\n見つめている自分がどこかにいる…@
@@ -43,16 +46,18 @@ SEQ1 \x8c\x01 SEQ5 H\xb5 CALL4 \x03q\x00\x00
 見よ、死んでいるはずのなたねの口がくわっと開いて、\n\p哄笑をとどろかせている……。@
 \nわは。\w\z
 \x00
-SEQ3 REF7 \x16\x05 CALL1 \xf6\x02 CALL7 $\x03 CALL6 
-LOAD3 SCE106_004 REF6 \x14\x07 CALL8
-SEQ1 \x8c\x01 SEQ5 L\xb5 CALL4 \x03+\x00\x00
+SEQ3 REF7 \x16\x05 CALL1 \xf6\x02 CALL6 $\x03 CALL5 
+LOAD SCE106_004 REF6 \x14\x07 CALL7
+SEQ1 \x8c\x01 SEQ4 L\xb5 CALL3 
+LOAD 
  
 その笑い声は伝染病のようにあたりに広がり、あっというまに部\n屋中を充たした。@
 \nわは、わはは、はははははははははははははははははははははは\nははははははははは！\w\z
 \x00\x00\x00
-SEQ3 REF7 X\x07 CALL1 \xf6\x02 CALL7 $\x03 CALL6 
-LOAD3 SCE106_005 REF6 >\x08 CALL8
-SEQ1 \x8c\x01 SEQ5 P\xb5 CALL4 \x03@\x00\x00
+SEQ3 REF7 X\x07 CALL1 \xf6\x02 CALL6 $\x03 CALL5 
+LOAD SCE106_005 REF6 >\x08 CALL7
+SEQ1 \x8c\x01 SEQ4 P\xb5 CALL3 
+LOAD 
  
 なにもかもがおかしくて、いくらでも笑いがこみ上げてきた。@
 ……なたねの口の中は赤い洞窟のように血に染まっていて……@
@@ -60,24 +65,26 @@ SEQ1 \x8c\x01 SEQ5 P\xb5 CALL4 \x03@\x00\x00
 そこに７人の男女がいて、大声で笑っている……@
 腹を抱えてのたうち回っている。\w\z
 \x00\x00\x00
-SEQ3 REF7 \x82\x08 CALL1 \xf6\x02 CALL7 $\x03 CALL6 
-LOAD3 SCE106_006 REF6 \xbc\t CALL8
-SEQ1 \x8c\x01 SEQ5 T\xb5 CALL4 \x03P\x00\x00
+SEQ3 REF7 \x82\x08 CALL1 \xf6\x02 CALL6 $\x03 CALL5 
+LOAD SCE106_006 REF6 \xbc\t CALL7
+SEQ1 \x8c\x01 SEQ4 T\xb5 CALL3 
+LOAD 
  
 なるほど、世界とはその程度のものだったのだ。@
 頭のいかれた女の口の中に幻灯のごとく浮かび上がるような……\nそのようなものなのだ。@
 おれは－－と拓司は思った－－おれははなからありもしないもの\nをあると思いこんで、必死でうろつき回っていたのだ。@
 なにもおかしくなどなかったが、いくらでも笑いがこみ上げてき\nた。\w\z
 \x00
-SEQ3 REF7 \x00\n CALL1 \xf6\x02 CALL7 $\x03 CALL6 
-LOAD3 SCE106_007 REF6 z\x0b CALL8
-SEQ1 \x8c\x01 SEQ5 X\xb5 CALL4 \x03H\x00\x00
+SEQ3 REF7 \x00\n CALL1 \xf6\x02 CALL6 $\x03 CALL5 
+LOAD SCE106_007 REF6 z\x0b CALL7
+SEQ1 \x8c\x01 SEQ4 X\xb5 CALL3 
+LOAD 
  
 笑いの渦に身を任せながら、拓司は「終わったな」と感じていた。\n\p世界が溶け落ちていった。@
 なにもかもを……笑い声さえのみこんで、雨だれのように溶けて\n落ちていった。@
 ザザザ……ザザッ……ザアザザザ……ザアアアアア……ザアザア\nアアアアアア……@
 \n最後にそんな音が、聞こえた。\w\z
 \x00
-SEQ3 REF7 \xbe\x0b CALL1 \xf6\x02 CALL7 $\x03 CALL5 \xf6\x02 CALL8
-LOAD3 TextClose REF2 $\r CALL6 
+SEQ3 REF7 \xbe\x0b CALL1 \xf6\x02 CALL6 $\x03 CALL4 \xf6\x02 CALL7
+LOAD TextClose REF2 $\r CALL5 
 END_FILE

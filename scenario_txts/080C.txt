@@ -1,7 +1,8 @@
 START_FILE
 6\x08\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\x9a\x06\x00
-LOAD3 SCE080_001 REF6 \x06\x00 CALL8
-SEQ1 \x8c\x01 SEQ5 \xa0\x8c CALL4 \x03\x96\x00\x00
+LOAD SCE080_001 REF6 \x06\x00 CALL7
+SEQ1 \x8c\x01 SEQ4 \xa0\x8c CALL3 
+LOAD 
  
 　廊下をはいずり、階段を転げ落ち、拓司はようやく自分の教\n室にたどり着いた。\pぶつけたりすりむいたりした部分が鈍く痛む。\n\pしかし、そんなことはもう問題ではない。\p何もかも終わるからだ。\n@
 　教室のドアをなんとか引き開けて、拓司は自分の席を目指した。\n　\p机の中には、買ったばかりのカッターがあるはずだった。@
@@ -17,13 +18,14 @@ SEQ1 \x8c\x01 SEQ5 \xa0\x8c CALL4 \x03\x96\x00\x00
 
 \x00
 SEQ3 REF7 J\x00 CALL2 
-LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 \xc2\x02 CALL8
-LOAD2 TextOn REF1 \xf0\x02 CALL6 
+LOAD .\\Data\\Script\\TextFunc.Fob REF1 \xc2\x02 CALL7
+LOAD TextOn REF1 \xf0\x02 CALL5 
 SEQ2 \xc8\x00 CALL2 
-LOAD6 .\\Data\\Script\\Bg.Fob REF3 &\x03 CALL8
-LOAD4 BgAutoFadeIn REF3 P\x03 CALL6 
-LOAD3 SCE080_002 REF6 t\x03 CALL8
-SEQ1 \x8c\x01 SEQ5 \xa4\x8c CALL4 \x03R\x00\x00
+LOAD .\\Data\\Script\\Bg.Fob REF3 &\x03 CALL7
+LOAD BgAutoFadeIn REF3 P\x03 CALL5 
+LOAD SCE080_002 REF6 t\x03 CALL7
+SEQ1 \x8c\x01 SEQ4 \xa4\x8c CALL3 
+LOAD 
  
 机までたどり着いた拓司は、必死の力を振り絞って身を起こし、\nどっかりと椅子に腰掛けた。@
 ふう、とため息をついて、机の中\nを両手でまさぐる。@
@@ -39,9 +41,10 @@ SEQ1 \x8c\x01 SEQ5 \xa4\x8c CALL4 \x03R\x00\x00
 　ピンポーン！\
 
 \x00
-SEQ3 REF7 \xb8\x03 CALL1 \xc2\x02 CALL7 \xf0\x02 CALL6 
-LOAD3 SCE080_003 REF6 :\x05 CALL8
-SEQ1 \x8c\x01 SEQ5 \xa8\x8c CALL4 \x03.\x00\x00
+SEQ3 REF7 \xb8\x03 CALL1 \xc2\x02 CALL6 \xf0\x02 CALL5 
+LOAD SCE080_003 REF6 :\x05 CALL7
+SEQ1 \x8c\x01 SEQ4 \xa8\x8c CALL3 
+LOAD 
  
 　そうしてカッターナイフを取り出すと、拓司はキリキリと刃を\n　押し出し、それを喉元に押し当てた。@
 　終わりだ。@
@@ -50,6 +53,6 @@ SEQ1 \x8c\x01 SEQ5 \xa8\x8c CALL4 \x03.\x00\x00
 　終わりだ。\
 
 \x00\x00\x00
-SEQ3 REF7 ~\x05 CALL1 \xc2\x02 CALL7 \xf0\x02 CALL5 \xc2\x02 CALL8
-LOAD3 TextClose REF2 |\x06 CALL6 
+SEQ3 REF7 ~\x05 CALL1 \xc2\x02 CALL6 \xf0\x02 CALL4 \xc2\x02 CALL7
+LOAD TextClose REF2 |\x06 CALL5 
 END_FILE

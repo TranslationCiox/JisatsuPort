@@ -1,13 +1,14 @@
 START_FILE
 \xd0%\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00^ \x00
-LOAD3 SCE200_001 REF6 \x06\x00 CALL8
-SEQ1 \x8c\x01 SEQ5  H\x01\x0c\x00\x00\x00\x00"
+LOAD SCE200_001 REF6 \x06\x00 CALL7
+SEQ1 \x8c\x01 SEQ4  H\x01\x0c\x00\x00\x00\x00"
 SEQ2 \xc9\x00 CALL2 
-LOAD6 .\\Data\\Script\\Bg.Fob REF3 d\x00 CALL8
-LOAD4 BgAutoFadeIn REF3 \x8e\x00 CALL6 
+LOAD .\\Data\\Script\\Bg.Fob REF3 d\x00 CALL7
+LOAD BgAutoFadeIn REF3 \x8e\x00 CALL5 
 SEQ2 \x02\x00 CALL2  \x1e\x04\x00\x00\r\x00\x00\x1e\x06\x00 CALL2  \x1e\x08\x00\x00\r\x00\x00\x1e\x01\x00 CALL2 
-LOAD6 .\\Data\\Script\\Bgm.Fob REF2 \x00\x01 CALL8
-LOAD2 SePlay REF1 *\x01 CALL6 \x03v\x00\x00
+LOAD .\\Data\\Script\\Bgm.Fob REF2 \x00\x01 CALL7
+LOAD SePlay REF1 *\x01 CALL5 
+LOAD 
  
 拓司は、錆びたシャッターをこじあけるように、目を開く。@
 \n白い壁。@
@@ -23,10 +24,11 @@ LOAD2 SePlay REF1 *\x01 CALL6 \x03v\x00\x00
 
 \x00\x00\x00
 SEQ3 REF7 F\x01 CALL2 
-LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 >\x03 CALL8
-LOAD2 TextOn REF1 l\x03 CALL6 
-LOAD3 SCE200_002 REF6 \x88\x03 CALL8
-SEQ1 \x8c\x01 SEQ5 $H\x01\x0c\x00\x00\x00\x00"\x03T\x00\x00
+LOAD .\\Data\\Script\\TextFunc.Fob REF1 >\x03 CALL7
+LOAD TextOn REF1 l\x03 CALL5 
+LOAD SCE200_002 REF6 \x88\x03 CALL7
+SEQ1 \x8c\x01 SEQ4 $H\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 拓司\n　「……どうも……教授……」@
 教授\n　「……」@
@@ -37,9 +39,10 @@ SEQ1 \x8c\x01 SEQ5 $H\x01\x0c\x00\x00\x00\x00"\x03T\x00\x00
 \n腹の中にたまっていたストレスに、バチバチと怒りが放電し、大\n爆発した。\
 
 \x00
-SEQ3 REF7 \xcc\x03 CALL1 >\x03 CALL7 l\x03 CALL6 
-LOAD3 SCE200_003 REF6 V\x05 CALL8
-SEQ1 \x8c\x01 SEQ5 (H\x01\x0c\x00\x00\x00\x00"\x03\xb0\x00\x00
+SEQ3 REF7 \xcc\x03 CALL1 >\x03 CALL6 l\x03 CALL5 
+LOAD SCE200_003 REF6 V\x05 CALL7
+SEQ1 \x8c\x01 SEQ4 (H\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 拓司\n　「あんたは、『俺の世界』が夢だという！\p　でも、俺は『あん\n　　たの世界』について何も知らない！\p　自分が誰なのかもわか\n　　らないんだ！\p　なのにこの世界が本物だって信じろっていう\n　　のか？！」@
 教授\n　「……」@
@@ -47,9 +50,10 @@ SEQ1 \x8c\x01 SEQ5 (H\x01\x0c\x00\x00\x00\x00"\x03\xb0\x00\x00
 　　どれが本当の世界なんだ？！」\
 
 \x00\x00\x00
-SEQ3 REF7 \x9a\x05 CALL1 >\x03 CALL7 l\x03 CALL6 
-LOAD3 SCE200_004 REF6 \x94\x08 CALL8
-SEQ1 \x8c\x01 SEQ5 ,H\x01\x0c\x00\x00\x00\x00"\x03\xcb\x00\x00
+SEQ3 REF7 \x9a\x05 CALL1 >\x03 CALL6 l\x03 CALL5 
+LOAD SCE200_004 REF6 \x94\x08 CALL7
+SEQ1 \x8c\x01 SEQ4 ,H\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 教授\n　「同情するよ」@
 拓司\n　「同情なんかいらない！\p　答をくれ！\p　現実と妄想の線引きを\n　　くれ！\p　答だ！\p　必要なのは答なんだッ！」@
@@ -60,9 +64,10 @@ SEQ1 \x8c\x01 SEQ5 ,H\x01\x0c\x00\x00\x00\x00"\x03\xcb\x00\x00
 　悲惨なのは、そんなふうな神経症的不安のなかにあっても、\n『神経症的不安のなかにある自分』を客観的に観察している自\n分の意識……視点が……別のどこかにあるという事実である……。\n\
 
 \x00
-SEQ3 REF7 \xd8\x08 CALL1 >\x03 CALL7 l\x03 CALL6 
-LOAD3 SCE200_005 REF6 >\x0c CALL8
-SEQ1 \x8c\x01 SEQ5 0H\x01\x0c\x00\x00\x00\x00"\x03\xa3\x00\x00
+SEQ3 REF7 \xd8\x08 CALL1 >\x03 CALL6 l\x03 CALL5 
+LOAD SCE200_005 REF6 >\x0c CALL7
+SEQ1 \x8c\x01 SEQ4 0H\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 教授\n　「答はどこにもない。\p君の中にしかないんだ」@
 拓司\n　「……」@
@@ -71,17 +76,19 @@ SEQ1 \x8c\x01 SEQ5 0H\x01\x0c\x00\x00\x00\x00"\x03\xa3\x00\x00
 拓司\n　「……」\
 
 \x00
-SEQ3 REF7 \x82\x0c CALL1 >\x03 CALL7 l\x03 CALL6 
-LOAD3 SCE200_006 REF6 H\x0f CALL8
-SEQ1 \x8c\x01 SEQ5 4H\x01\x0c\x00\x00\x00\x00"\x032\x00\x00
+SEQ3 REF7 \x82\x0c CALL1 >\x03 CALL6 l\x03 CALL5 
+LOAD SCE200_006 REF6 H\x0f CALL7
+SEQ1 \x8c\x01 SEQ4 4H\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 教授\n　「あるいは、私というのは、どこかにいる別の私が見ている夢\n　　にすぎないのかもしれない。\pさらには夢を見ているのは私で\n　　すらなく、他の誰かなのかもしれない」@
 拓司\n　「……」\
 
 \x00\x00\x00
-SEQ3 REF7 \x8c\x0f CALL1 >\x03 CALL7 l\x03 CALL6 
-LOAD3 SCE200_007 REF6 \x8e\x10 CALL8
-SEQ1 \x8c\x01 SEQ5 8H\x01\x0c\x00\x00\x00\x00"\x03\xe8\x00\x00
+SEQ3 REF7 \x8c\x0f CALL1 >\x03 CALL6 l\x03 CALL5 
+LOAD SCE200_007 REF6 \x8e\x10 CALL7
+SEQ1 \x8c\x01 SEQ4 8H\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 教授\n　「答など、ないのだ。\pなにが現実でなにが妄想なのかを決める\n　　のは他人ではなく、本人なのだ。\p私はこう考えるよ。@
 　　－－合理的な世界こそが現実であると。\pいいかね、私だって\n　　夢くらいじゃ見る。\pしかし、それが『夢の世界』であると…\n　　…『現実の世界』ではないと認識するのは、夢の中で起こる\n　　ことが非合理的て脈絡を持たないからだ。\p私は医者だ。@
@@ -91,9 +98,10 @@ SEQ1 \x8c\x01 SEQ5 8H\x01\x0c\x00\x00\x00\x00"\x03\xe8\x00\x00
 拓司\n　「……」\
 
 \x00\x00\x00
-SEQ3 REF7 \xd2\x10 CALL1 >\x03 CALL7 l\x03 CALL6 
-LOAD3 SCE200_008 REF6 \xac\x14 CALL8
-SEQ1 \x8c\x01 SEQ5 <H\x01\x0c\x00\x00\x00\x00"\x03\x95\x00\x00
+SEQ3 REF7 \xd2\x10 CALL1 >\x03 CALL6 l\x03 CALL5 
+LOAD SCE200_008 REF6 \xac\x14 CALL7
+SEQ1 \x8c\x01 SEQ4 <H\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 教授\n　「君が定義する世界とはなにかね？\p　女が自分の思い通りに動\n　　くことかね？\p　自殺波動かね？」@
 拓司\n　「いえ……」@
@@ -103,9 +111,10 @@ SEQ1 \x8c\x01 SEQ5 <H\x01\x0c\x00\x00\x00\x00"\x03\x95\x00\x00
 　　それだけの話だよ」\
 
 \x00
-SEQ3 REF7 \xf0\x14 CALL1 >\x03 CALL7 l\x03 CALL6 
-LOAD3 SCE200_009 REF6 ~\x17 CALL8
-SEQ1 \x8c\x01 SEQ5 @H\x01\x0c\x00\x00\x00\x00"\x03\x92\x00\x00
+SEQ3 REF7 \xf0\x14 CALL1 >\x03 CALL6 l\x03 CALL5 
+LOAD SCE200_009 REF6 ~\x17 CALL7
+SEQ1 \x8c\x01 SEQ4 @H\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 /*▲SE01　再生（再生終わるまで待たずに進む）*/\a2,1,1,1,ザザザ……ザザッ……\pザアザザザ……ザアアアアア……@
 ザアザアアアアアアア……@
@@ -118,9 +127,10 @@ SEQ1 \x8c\x01 SEQ5 @H\x01\x0c\x00\x00\x00\x00"\x03\x92\x00\x00
 眠って、二度と目覚めなければいいと思った。\p夢も見ずに完全に\n眠っているあいだだけ、自分が自分以外のものではない、完全な\n存在でいられるような気がした。\
 
 \x00
-SEQ3 REF7 \xc2\x17 CALL1 >\x03 CALL7 l\x03 CALL6 
-LOAD3 SCE200_010 REF6 D\x1a CALL8
-SEQ1 \x8c\x01 SEQ5 DH\x01\x0c\x00\x00\x00\x00"\x03\x97\x00\x00
+SEQ3 REF7 \xc2\x17 CALL1 >\x03 CALL6 l\x03 CALL5 
+LOAD SCE200_010 REF6 D\x1a CALL7
+SEQ1 \x8c\x01 SEQ4 DH\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 教授\n　「少し眠るといい」@
 拓司\n　「俺は……眠るのが怖い」@
@@ -128,18 +138,20 @@ SEQ1 \x8c\x01 SEQ5 DH\x01\x0c\x00\x00\x00\x00"\x03\x97\x00\x00
 拓司\n　「でも、この世界は……遠いような気がする。\p馴染みがないよ\n　　うな……なにも知らない世界だ。\p『おれの世界』のことなら\n　　なんでも知ってるんだ……」\
 
 \x00\x00\x00
-SEQ3 REF7 \x88\x1a CALL1 >\x03 CALL7 l\x03 CALL6 
-LOAD3 SCE200_011 REF6 \x1e\x1d CALL8
-SEQ1 \x8c\x01 SEQ5 HH\x01\x0c\x00\x00\x00\x00"\x039\x00\x00
+SEQ3 REF7 \x88\x1a CALL1 >\x03 CALL6 l\x03 CALL5 
+LOAD SCE200_011 REF6 \x1e\x1d CALL7
+SEQ1 \x8c\x01 SEQ4 HH\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 教授\n　「そう思っているだけだ。\p夢とはそういうものだ。\p夢の中にい\n　　る限り、セットの継ぎ目を見つけることはできない。@
 　　目覚めて、客観的に見ることで、矛盾が浮かび上がってくる\n　　のだよ」@
 拓司\n　「……」\
 
 \x00
-SEQ3 REF7 b\x1d CALL1 >\x03 CALL7 l\x03 CALL6 
-LOAD3 SCE200_012 REF6 \x80\x1e CALL8
-SEQ1 \x8c\x01 SEQ5 LH\x01\x0c\x00\x00\x00\x00"\x030\x00\x00
+SEQ3 REF7 b\x1d CALL1 >\x03 CALL6 l\x03 CALL5 
+LOAD SCE200_012 REF6 \x80\x1e CALL7
+SEQ1 \x8c\x01 SEQ4 LH\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 眠れ俺。@
 眠れ俺。@
@@ -151,9 +163,9 @@ SEQ1 \x8c\x01 SEQ5 LH\x01\x0c\x00\x00\x00\x00"\x030\x00\x00
 そのとき、突如、何者かが拓司の肩を掴んだ。\
 
 \x00\x00\x00
-SEQ3 REF7 \xc4\x1e CALL1 >\x03 CALL7 l\x03 CALL6 
-SEQ2 \x02\x00 CALL1 \x00\x01 CALL8
-LOAD2 SeStop REF1 \xe4\x1f CALL6 
-SEQ2 \xc8\x00 CALL1 d\x00 CALL7 \x8e\x00 CALL5 >\x03 CALL8
-LOAD3 TextClose REF2 @  CALL6 
+SEQ3 REF7 \xc4\x1e CALL1 >\x03 CALL6 l\x03 CALL5 
+SEQ2 \x02\x00 CALL1 \x00\x01 CALL7
+LOAD SeStop REF1 \xe4\x1f CALL5 
+SEQ2 \xc8\x00 CALL1 d\x00 CALL6 \x8e\x00 CALL4 >\x03 CALL7
+LOAD TextClose REF2 @  CALL5 
 END_FILE

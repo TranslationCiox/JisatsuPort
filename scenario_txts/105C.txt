@@ -1,7 +1,8 @@
 START_FILE
 \x9f\x0c\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00H\n\x00
-LOAD3 SCE105_001 REF6 \x06\x00 CALL8
-SEQ1 \x8c\x01 SEQ5 \xb0\xb3 CALL4 \x03\xb7\x00\x00
+LOAD SCE105_001 REF6 \x06\x00 CALL7
+SEQ1 \x8c\x01 SEQ4 \xb0\xb3 CALL3 
+LOAD 
  
 /*▲BGM　停止*/\a4,-1,0,0,/*■黒　表示（ノンエフェクト）*/\a7,-1,-1,0,\a0,200,1,0,\a6,0,0,0,拓司\n　「もういい、御堂！」@
 \n拓司は御堂を制した。@
@@ -14,10 +15,11 @@ SEQ1 \x8c\x01 SEQ5 \xb0\xb3 CALL4 \x03\xb7\x00\x00
 
 \x00\x00\x00
 SEQ3 REF7 J\x00 CALL2 
-LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 F\x03 CALL8
-LOAD2 TextOn REF1 t\x03 CALL6 
-LOAD3 SCE105_002 REF6 \x90\x03 CALL8
-SEQ1 \x8c\x01 SEQ5 \xb4\xb3 CALL4 \x03\x88\x00\x00
+LOAD .\\Data\\Script\\TextFunc.Fob REF1 F\x03 CALL7
+LOAD TextOn REF1 t\x03 CALL5 
+LOAD SCE105_002 REF6 \x90\x03 CALL7
+SEQ1 \x8c\x01 SEQ4 \xb4\xb3 CALL3 
+LOAD 
  
 御堂はしばらく無言だった。\pそれは、拓司の質問をかみ砕いて味\nわっているかのように見えた。\pやがて、御堂はなにかをいいかけ\nたが、思い立ったように言葉を飲み込んだ。@
 そして、ポツリと、粘り着くような口調でいった。@
@@ -28,9 +30,10 @@ SEQ1 \x8c\x01 SEQ5 \xb4\xb3 CALL4 \x03\x88\x00\x00
 拓司は舌先で唇を湿らせ、震える声でいった。\
 
 \x00\x00\x00
-SEQ3 REF7 \xd4\x03 CALL1 F\x03 CALL7 t\x03 CALL6 
-LOAD3 SCE105_003 REF6 .\x06 CALL8
-SEQ1 \x8c\x01 SEQ5 \xb8\xb3 CALL4 \x03q\x00\x00
+SEQ3 REF7 \xd4\x03 CALL1 F\x03 CALL6 t\x03 CALL5 
+LOAD SCE105_003 REF6 .\x06 CALL7
+SEQ1 \x8c\x01 SEQ4 \xb8\xb3 CALL3 
+LOAD 
  
 拓司\n　「……雲居さん。\p俺たちは……覚悟を……決めている。@
 　　今後、そういう態度をなおしてもらえないようなら、今度こ\n　　そは俺も御堂を止められない……止める気もない」@
@@ -40,9 +43,10 @@ SEQ1 \x8c\x01 SEQ5 \xb8\xb3 CALL4 \x03q\x00\x00
 \nなたねはジロリと、上目遣いに拓司を睨んだ。\
 
 \x00
-SEQ3 REF7 r\x06 CALL1 F\x03 CALL7 t\x03 CALL6 
-LOAD3 SCE105_004 REF6 p\x08 CALL8
-SEQ1 \x8c\x01 SEQ5 \xbc\xb3 CALL4 \x03L\x00\x00
+SEQ3 REF7 r\x06 CALL1 F\x03 CALL6 t\x03 CALL5 
+LOAD SCE105_004 REF6 p\x08 CALL7
+SEQ1 \x8c\x01 SEQ4 \xbc\xb3 CALL3 
+LOAD 
  
 なたね\n　「……」@
 拓司\n　「……」@
@@ -53,6 +57,6 @@ SEQ1 \x8c\x01 SEQ5 \xbc\xb3 CALL4 \x03L\x00\x00
 /*▲SE01　停止*/\a4,2,0,0,\nラジオのノイズだけが小さく一晩中続いていた。\
 
 \x00\x00\x00
-SEQ3 REF7 \xb4\x08 CALL1 F\x03 CALL7 t\x03 CALL5 F\x03 CALL8
-LOAD3 TextClose REF2 *\n CALL6 
+SEQ3 REF7 \xb4\x08 CALL1 F\x03 CALL6 t\x03 CALL4 F\x03 CALL7
+LOAD TextClose REF2 *\n CALL5 
 END_FILE

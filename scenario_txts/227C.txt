@@ -1,16 +1,18 @@
 START_FILE
 \xea\x1b\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00 \x17\x00
-LOAD3 SCE227_001 REF6 \x06\x00 CALL8
-SEQ1 \x8c\x01 SEQ5 Pr\x01\x0c\x00\x00\x00\x00"\x03\x11\x00\x00
+LOAD SCE227_001 REF6 \x06\x00 CALL7
+SEQ1 \x8c\x01 SEQ4 Pr\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 \n\n\n\n\n\n\n\n\n\n　　　　　　　　　　　　　『１３日目』\
 
 \x00
 SEQ3 REF7 J\x00 CALL2 
-LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 \xae\x00 CALL8
-LOAD2 TextOn REF1 \xdc\x00 CALL6 
-LOAD3 SCE227_002 REF6 \xf8\x00 CALL8
-SEQ1 \x8c\x01 SEQ5 Tr\x01\x0c\x00\x00\x00\x00"\x03u\x00\x00
+LOAD .\\Data\\Script\\TextFunc.Fob REF1 \xae\x00 CALL7
+LOAD TextOn REF1 \xdc\x00 CALL5 
+LOAD SCE227_002 REF6 \xf8\x00 CALL7
+SEQ1 \x8c\x01 SEQ4 Tr\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 朝。@
 トイレを使うために実験室に現れた錦城に、カンナがいった。@
@@ -23,9 +25,10 @@ SEQ1 \x8c\x01 SEQ5 Tr\x01\x0c\x00\x00\x00\x00"\x03u\x00\x00
 努めて無表情のカンナを、錦城は勝ち誇って見下ろした。\
 
 \x00\x00\x00
-SEQ3 REF7 <\x01 CALL1 \xae\x00 CALL7 \xdc\x00 CALL6 
-LOAD3 SCE227_003 REF6 J\x03 CALL8
-SEQ1 \x8c\x01 SEQ5 Xr\x01\x0c\x00\x00\x00\x00"\x03]\x00\x00
+SEQ3 REF7 <\x01 CALL1 \xae\x00 CALL6 \xdc\x00 CALL5 
+LOAD SCE227_003 REF6 J\x03 CALL7
+SEQ1 \x8c\x01 SEQ4 Xr\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 錦城\n　「あら、昨日はあんなにつっぱってたのに。どういう風の吹き\n　　回し？」@
 カンナ\n　「行きますから、そのかわり、食糧を約束通り配ってください」\n\p錦城\n　「……ふぅん」@
@@ -36,9 +39,10 @@ SEQ1 \x8c\x01 SEQ5 Xr\x01\x0c\x00\x00\x00\x00"\x03]\x00\x00
 カンナ\n　「……すみませんでした」\
 
 \x00
-SEQ3 REF7 \x8e\x03 CALL1 \xae\x00 CALL7 \xdc\x00 CALL6 
-LOAD3 SCE227_004 REF6 <\x05 CALL8
-SEQ1 \x8c\x01 SEQ5 \\r\x01\x0c\x00\x00\x00\x00"\x03S\x00\x00
+SEQ3 REF7 \x8e\x03 CALL1 \xae\x00 CALL6 \xdc\x00 CALL5 
+LOAD SCE227_004 REF6 <\x05 CALL7
+SEQ1 \x8c\x01 SEQ4 \\r\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 錦城\n　「それだけ？」@
 カンナ\n　「今後は秩序を乱すような行動は慎みます」@
@@ -50,9 +54,10 @@ SEQ1 \x8c\x01 SEQ5 \\r\x01\x0c\x00\x00\x00\x00"\x03S\x00\x00
 カンナ\n　「便器って－－」\
 
 \x00
-SEQ3 REF7 \x80\x05 CALL1 \xae\x00 CALL7 \xdc\x00 CALL6 
-LOAD3 SCE227_005 REF6 \x06\x07 CALL8
-SEQ1 \x8c\x01 SEQ5 `r\x01\x0c\x00\x00\x00\x00"\x03u\x00\x00
+SEQ3 REF7 \x80\x05 CALL1 \xae\x00 CALL6 \xdc\x00 CALL5 
+LOAD SCE227_005 REF6 \x06\x07 CALL7
+SEQ1 \x8c\x01 SEQ4 `r\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 錦城\n　「そのままの意味だけれど。\pいまから、先生のおしっこを飲ん\n　　でくれればそれでいいの」@
 カンナ\n　「な、なにを－－！」@
@@ -66,9 +71,10 @@ SEQ1 \x8c\x01 SEQ5 `r\x01\x0c\x00\x00\x00\x00"\x03u\x00\x00
 錦城\n　「便器」\
 
 \x00\x00\x00
-SEQ3 REF7 J\x07 CALL1 \xae\x00 CALL7 \xdc\x00 CALL6 
-LOAD3 SCE227_006 REF6 X\t CALL8
-SEQ1 \x8c\x01 SEQ5 dr\x01\x0c\x00\x00\x00\x00"\x03n\x00\x00
+SEQ3 REF7 J\x07 CALL1 \xae\x00 CALL6 \xdc\x00 CALL5 
+LOAD SCE227_006 REF6 X\t CALL7
+SEQ1 \x8c\x01 SEQ4 dr\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 錦城は意地悪く言い直した。\p机に腰をかけ、見せつけるように足\nを組む。@
 \n錦城\n　「トイレじゃなくて便器でしょ？\p　きちんといいなおして」@
@@ -80,9 +86,10 @@ SEQ1 \x8c\x01 SEQ5 dr\x01\x0c\x00\x00\x00\x00"\x03n\x00\x00
 カンナ\n　「……よ、喜んで錦城先生の人間便器になります」\
 
 \x00
-SEQ3 REF7 \x9c\t CALL1 \xae\x00 CALL7 \xdc\x00 CALL6 
-LOAD3 SCE227_007 REF6 \x8e\x0b CALL8
-SEQ1 \x8c\x01 SEQ5 hr\x01\x0c\x00\x00\x00\x00"\x03y\x00\x00
+SEQ3 REF7 \x9c\t CALL1 \xae\x00 CALL6 \xdc\x00 CALL5 
+LOAD SCE227_007 REF6 \x8e\x0b CALL7
+SEQ1 \x8c\x01 SEQ4 hr\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 錦城\n　「『お願いします。\p私におしっこしてください』」@
 カンナ\n　「お願い……します。\p私におしっこして……ください」@
@@ -94,12 +101,13 @@ SEQ1 \x8c\x01 SEQ5 hr\x01\x0c\x00\x00\x00\x00"\x03y\x00\x00
 カンナ\n　「黙っていて。\p大丈夫だから。\pこんなの、なんでもないから」\
 
 \x00\x00\x00
-SEQ3 REF7 \xd2\x0b CALL1 \xae\x00 CALL7 \xdc\x00 CALL6 
+SEQ3 REF7 \xd2\x0b CALL1 \xae\x00 CALL6 \xdc\x00 CALL5 
 SEQ2 \x05\x01 CALL2 
-LOAD6 .\\Data\\Script\\Bgm.Fob REF2 \n\x0e CALL8
-LOAD2 PlayCD REF1 4\x0e CALL6 
-LOAD3 SCE227_008 REF6 P\x0e CALL8
-SEQ1 \x8c\x01 SEQ5 lr\x01\x0c\x00\x00\x00\x00"\x03\xa1\x00\x00
+LOAD .\\Data\\Script\\Bgm.Fob REF2 \n\x0e CALL7
+LOAD PlayCD REF1 4\x0e CALL5 
+LOAD SCE227_008 REF6 P\x0e CALL7
+SEQ1 \x8c\x01 SEQ4 lr\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 錦城は、目を逸らさないように、と全員に命じた。@
 見せつけるように下着を脱ぎ、足を開く。@
@@ -109,9 +117,10 @@ SEQ1 \x8c\x01 SEQ5 lr\x01\x0c\x00\x00\x00\x00"\x03\xa1\x00\x00
 /*■HCG18　表示（クロスフェード）*/\a7,-2,-2,0,\a0,89,2,0,\a6,-2,0,0,\n錦城\n　「しっかりみておくのよ。\p誰か一人でも目を反らした場合、彼\n　　女の努力は無駄になりますからね？\p　いい、これは授業なの。\n　　\p生意気な態度をとったガキがどうなるか、それを教えてあげ\n　　ているの。\pほら、便器ちゃん。はやく口をつけなさいよ！」\
 
 
-SEQ3 REF7 \x94\x0e CALL1 \xae\x00 CALL7 \xdc\x00 CALL6 
-LOAD3 SCE227_009 REF6 R\x11 CALL8
-SEQ1 \x8c\x01 SEQ5 pr\x01\x0c\x00\x00\x00\x00"\x03\x8a\x00\x00
+SEQ3 REF7 \x94\x0e CALL1 \xae\x00 CALL6 \xdc\x00 CALL5 
+LOAD SCE227_009 REF6 R\x11 CALL7
+SEQ1 \x8c\x01 SEQ4 pr\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 錦城の足のあいだにひざまづき、カンナは目を閉じ、口を開いた。\n\pその口が自分の性器に密着したのを確認してから、錦城は整った\n顔をわずかにゆがめた。@
 放尿が始まった。@
@@ -123,19 +132,20 @@ SEQ1 \x8c\x01 SEQ5 pr\x01\x0c\x00\x00\x00\x00"\x03\x8a\x00\x00
 カンナ\n　「くむ……ごきゅっ……ごきゅ……むぐんん……」\
 
 \x00\x00\x00
-SEQ3 REF7 \x96\x11 CALL1 \xae\x00 CALL7 \xdc\x00 CALL6 
-LOAD3 SCE227_010 REF6 \xf8\x13 CALL8
-SEQ1 \x8c\x01 SEQ5 tr\x01\x0c\x00\x00\x00\x00"\x03|\x00\x00
+SEQ3 REF7 \x96\x11 CALL1 \xae\x00 CALL6 \xdc\x00 CALL5 
+LOAD SCE227_010 REF6 \xf8\x13 CALL7
+SEQ1 \x8c\x01 SEQ4 tr\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 錦城\n　「あら、涙流して喜んでるの？\p　あははは、まったくもう、ど\n　　ういう教育を受けてきたのかしら？\p　このままじゃ将来ロク\n　　な大人にはならないわ。\pいまのうちにしっかり便器として教\n　　育しておいたほうがよさそうね。\pそうすれば就職はお便所に\n　　決定。\p進路指導も楽でいいわ、あはははは！」@
 \n嚥下しきれない尿が、カンナの口の端からボタボタと流れ落ちる。\n\pスカートの上に、錦城の汚液が染みをつくる。@
 錦城はカンナの頭を両手で固定し、狂気に支配された顔で笑い続\nけた。\
 
 \x00\x00\x00
-SEQ3 REF7 <\x14 CALL1 \xae\x00 CALL7 \xdc\x00 CALL6 
+SEQ3 REF7 <\x14 CALL1 \xae\x00 CALL6 \xdc\x00 CALL5 
 SEQ2 \xc8\x00 CALL2 
-LOAD6 .\\Data\\Script\\Bg.Fob REF3 \x80\x16 CALL8
-LOAD4 BgAutoFadeIn REF3 \xaa\x16 CALL5 \n\x0e CALL8
-LOAD2 StopCD REF1 \xda\x16 CALL5 \xae\x00 CALL8
-LOAD3 TextClose REF2 \x02\x17 CALL6 
+LOAD .\\Data\\Script\\Bg.Fob REF3 \x80\x16 CALL7
+LOAD BgAutoFadeIn REF3 \xaa\x16 CALL4 \n\x0e CALL7
+LOAD StopCD REF1 \xda\x16 CALL4 \xae\x00 CALL7
+LOAD TextClose REF2 \x02\x17 CALL5 
 END_FILE

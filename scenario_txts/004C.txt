@@ -1,19 +1,19 @@
 START_FILE
 d\x03\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x80\x044\x01\x00\x00\x00h\x02\x00
-LOAD3 SCE004_001 REF6 \x06\x00 CALL8
-SEQ1 \x8c\x01 SEQ5 \xe0\x15 CALL4 
-LOAD8 .\\Data\\Script\\TextFunc.fob REF1 J\x00 CALL8
-LOAD6 CheckNormalMessageSkip REF1 x\x00 CALL6 
-LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 \xa4\x00 CALL8
-LOAD5 TextWindowOffDirectREF7 \xd2\x00 CALL6 
+LOAD SCE004_001 REF6 \x06\x00 CALL7
+SEQ1 \x8c\x01 SEQ4 \xe0\x15 CALL3 
+LOAD .\\Data\\Script\\TextFunc.fob REF1 J\x00 CALL7
+LOAD CheckNormalMessageSkip REF1 x\x00 CALL5 
+LOAD .\\Data\\Script\\TextFunc.Fob REF1 \xa4\x00 CALL7
+LOAD TextWindowOffDirect REF7 \xd2\x00 CALL5 
 SEQ2 ,\x01 CALL2 
-LOAD6 .\\Data\\Script\\Bg.Fob REF3 \x14\x01 CALL8
-LOAD2 BgOn REF3 >\x01 CALL6 
+LOAD .\\Data\\Script\\Bg.Fob REF3 \x14\x01 CALL7
+LOAD BgOn REF3 >\x01 CALL5 
 SEQ2 \x0b\x01 CALL2 
-LOAD6 .\\Data\\Script\\Bgm.Fob REF2 t\x01 CALL8
-LOAD2 PlayCD REF1 \x9e\x01 CALL5 J\x00 CALL8
-LOAD2 WaitKeyREF7 \xc6\x01 CALL5 t\x01 CALL8
-LOAD2 StopCD REF1 \xee\x01 CALL5 \xa4\x00 CALL8
-LOAD5 UpdateScenarioRead REF1 \x16\x02 CALL5 \xa4\x00 CALL8
-LOAD3 TextClose REF2 J\x02 CALL6 
+LOAD .\\Data\\Script\\Bgm.Fob REF2 t\x01 CALL7
+LOAD PlayCD REF1 \x9e\x01 CALL4 J\x00 CALL7
+LOAD WaitKey REF7 \xc6\x01 CALL4 t\x01 CALL7
+LOAD StopCD REF1 \xee\x01 CALL4 \xa4\x00 CALL7
+LOAD UpdateScenarioRead REF1 \x16\x02 CALL4 \xa4\x00 CALL7
+LOAD TextClose REF2 J\x02 CALL5 
 END_FILE

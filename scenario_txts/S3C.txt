@@ -1,10 +1,11 @@
 START_FILE
 G\x1a\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00j\x16\x00
 SEQ2 \x04\x01 CALL2 
-LOAD6 .\\Data\\Script\\Bgm.Fob REF2  \x00 CALL8
-LOAD2 PlayCD REF1 J\x00 CALL6 
-LOAD3 SCES03_001 REF6 f\x00 CALL8
-SEQ1 \x8c\x01 SEQ5 \xd0\xb5\x01\x0c\x00\x00\x00\x00"\x03\x8b\x00\x00
+LOAD .\\Data\\Script\\Bgm.Fob REF2  \x00 CALL7
+LOAD PlayCD REF1 J\x00 CALL5 
+LOAD SCES03_001 REF6 f\x00 CALL7
+SEQ1 \x8c\x01 SEQ4 \xd0\xb5\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 ずっと前に手術を受けて、身体はうんと良くなったの。@
 でも、みんなと一緒に運動とかはできなかったし、旅行とかにも\n行けなかった。\pだからかな、なんだかみんなとはあまり仲良くな\nれなかった。\pどんなに一緒にいても、結局最後のところで私は違\nうんだな、って思ってた。@
@@ -17,10 +18,11 @@ SEQ1 \x8c\x01 SEQ5 \xd0\xb5\x01\x0c\x00\x00\x00\x00"\x03\x8b\x00\x00
 
 \x00\x00\x00
 SEQ3 REF7 \xaa\x00 CALL2 
-LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 \xf6\x02 CALL8
-LOAD2 TextOn REF1 $\x03 CALL6 
-LOAD3 SCES03_002 REF6 @\x03 CALL8
-SEQ1 \x8c\x01 SEQ5 \xd4\xb5\x01\x0c\x00\x00\x00\x00"\x03\x89\x00\x00
+LOAD .\\Data\\Script\\TextFunc.Fob REF1 \xf6\x02 CALL7
+LOAD TextOn REF1 $\x03 CALL5 
+LOAD SCES03_002 REF6 @\x03 CALL7
+SEQ1 \x8c\x01 SEQ4 \xd4\xb5\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 クラスのみんなと宇宙船で旅行してるとね、事故が起きるの。@
 脱出ポットには人数制限があって、どうしても１人だけ宇宙船に\n残らなくちゃいけない。\pみんな困った顔で、うつむいてる。@
@@ -33,9 +35,10 @@ SEQ1 \x8c\x01 SEQ5 \xd4\xb5\x01\x0c\x00\x00\x00\x00"\x03\x89\x00\x00
 なんだかとても悲しかった。\
 
 \x00\x00\x00
-SEQ3 REF7 \x84\x03 CALL1 \xf6\x02 CALL7 $\x03 CALL6 
-LOAD3 SCES03_003 REF6 \xe2\x05 CALL8
-SEQ1 \x8c\x01 SEQ5 \xd8\xb5\x01\x0c\x00\x00\x00\x00"\x03\xde\x00\x00
+SEQ3 REF7 \x84\x03 CALL1 \xf6\x02 CALL6 $\x03 CALL5 
+LOAD SCES03_003 REF6 \xe2\x05 CALL7
+SEQ1 \x8c\x01 SEQ4 \xd8\xb5\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 手術してからも、本当のお友達はできなかった。@
 ずっと昔は、みんなが気を使って友達のふりをしてくれるのが嫌\nで仕方がなかったけど、学生になってからは、それすらなくなち\nゃった。@
@@ -50,9 +53,10 @@ SEQ1 \x8c\x01 SEQ5 \xd8\xb5\x01\x0c\x00\x00\x00\x00"\x03\xde\x00\x00
 朝は公園でぼんやりして、９時４５分になったら図書館に行って、\nお昼まで本を読むの。\pそれからデパートに行って、いろんなもの\nを見て、屋上に行く\p。平日の昼間の屋上って、誰もいないんだよ。\n\pそんな、誰もいない屋上で、ドルチェとお話ししてた。\
 
 \x00
-SEQ3 REF7 &\x06 CALL1 \xf6\x02 CALL7 $\x03 CALL6 
-LOAD3 SCES03_004 REF6 \xd8\t CALL8
-SEQ1 \x8c\x01 SEQ5 \xdc\xb5\x01\x0c\x00\x00\x00\x00"\x03\xa3\x00\x00
+SEQ3 REF7 &\x06 CALL1 \xf6\x02 CALL6 $\x03 CALL5 
+LOAD SCES03_004 REF6 \xd8\t CALL7
+SEQ1 \x8c\x01 SEQ4 \xdc\xb5\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 「ねえドルチェ」@
 『なんニャ、早桃ちゃん？』@
@@ -65,12 +69,13 @@ SEQ1 \x8c\x01 SEQ5 \xdc\xb5\x01\x0c\x00\x00\x00\x00"\x03\xa3\x00\x00
 『答はね、早桃ちゃん。\p風のなかにあるニャ』\
 
 \x00\x00\x00
-SEQ3 REF7 \x1c\n CALL1 \xf6\x02 CALL7 $\x03 CALL6 
+SEQ3 REF7 \x1c\n CALL1 \xf6\x02 CALL6 $\x03 CALL5 
 SEQ2 B\x00 CALL2 
-LOAD6 .\\Data\\Script\\Bg.Fob REF3 \xfc\x0c CALL8
-LOAD4 BgAutoFadeIn REF3 &\r CALL6 
-LOAD3 SCES03_005 REF6 J\r CALL8
-SEQ1 \x8c\x01 SEQ5 \xe0\xb5\x01\x0c\x00\x00\x00\x00"\x03|\x00\x00
+LOAD .\\Data\\Script\\Bg.Fob REF3 \xfc\x0c CALL7
+LOAD BgAutoFadeIn REF3 &\r CALL5 
+LOAD SCES03_005 REF6 J\r CALL7
+SEQ1 \x8c\x01 SEQ4 \xe0\xb5\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 ある日、いつもみたいに屋上でぼんやりしていると、声をかけら\nれたの。\pお父さんと同じくらいの歳の人で……あ、前のお父さん\nだよ……すごく優しそうな人だった。@
 一緒にご飯食べない？\p　ってその人はいった。@
@@ -82,10 +87,11 @@ SEQ1 \x8c\x01 SEQ5 \xe0\xb5\x01\x0c\x00\x00\x00\x00"\x03|\x00\x00
 でも、どれくらいなの？　って。\
 
 \x00\x00\x00
-SEQ3 REF7 \x8e\r CALL1 \xf6\x02 CALL7 $\x03 CALL6 
-SEQ2 \xc8\x00 CALL1 \xfc\x0c CALL7 &\r CALL6 
-LOAD3 SCES03_006 REF6 \xec\x0f CALL8
-SEQ1 \x8c\x01 SEQ5 \xe4\xb5\x01\x0c\x00\x00\x00\x00"\x03j\x00\x00
+SEQ3 REF7 \x8e\r CALL1 \xf6\x02 CALL6 $\x03 CALL5 
+SEQ2 \xc8\x00 CALL1 \xfc\x0c CALL6 &\r CALL5 
+LOAD SCES03_006 REF6 \xec\x0f CALL7
+SEQ1 \x8c\x01 SEQ4 \xe4\xb5\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 ……びっくりした？@
 言い訳する気はないよ。\pでも、ひとつだけ信じて欲しいのは、お\n金なんかどうでも良かったってこと。\pただ、こういうときは、値\n段を聞いておくものじゃないかなと思ったから、聞いただけ。@
@@ -96,9 +102,10 @@ SEQ1 \x8c\x01 SEQ5 \xe4\xb5\x01\x0c\x00\x00\x00\x00"\x03j\x00\x00
 特別扱いじゃなくて、普通の、どこにでもいる女の子として扱っ\nてもらってるんだなって。\
 
 \x00
-SEQ3 REF7 0\x10 CALL1 \xf6\x02 CALL7 $\x03 CALL6 
-LOAD3 SCES03_007 REF6 \x12\x12 CALL8
-SEQ1 \x8c\x01 SEQ5 \xe8\xb5\x01\x0c\x00\x00\x00\x00"\x03\xe2\x00\x00
+SEQ3 REF7 0\x10 CALL1 \xf6\x02 CALL6 $\x03 CALL5 
+LOAD SCES03_007 REF6 \x12\x12 CALL7
+SEQ1 \x8c\x01 SEQ4 \xe8\xb5\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 一緒にご飯を食べて、いろんなお話をした。@
 みんな、ウソのお話。早桃は活発なクラスの人気者で、いろいろ\n遊びなんかも経験してる子って設定なの。@
@@ -114,7 +121,7 @@ SEQ1 \x8c\x01 SEQ5 \xe8\xb5\x01\x0c\x00\x00\x00\x00"\x03\xe2\x00\x00
 私は道に落ちている石ころみたいなものじゃなくて、ちゃんと価\n値がある人間なんだって。\
 
 \x00\x00\x00
-SEQ3 REF7 V\x12 CALL1 \xf6\x02 CALL7 $\x03 CALL5  \x00 CALL8
-LOAD2 StopCD REF1 $\x16 CALL5 \xf6\x02 CALL8
-LOAD3 TextClose REF2 L\x16 CALL6 
+SEQ3 REF7 V\x12 CALL1 \xf6\x02 CALL6 $\x03 CALL4  \x00 CALL7
+LOAD StopCD REF1 $\x16 CALL4 \xf6\x02 CALL7
+LOAD TextClose REF2 L\x16 CALL5 
 END_FILE

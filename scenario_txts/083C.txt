@@ -1,17 +1,19 @@
 START_FILE
 \x03\x10\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00D\r\x00
-LOAD3 SCE083_001 REF6 \x06\x00 CALL8
-SEQ1 \x8c\x01 SEQ5 P\x91 CALL4 \x03=\x00\x00
+LOAD SCE083_001 REF6 \x06\x00 CALL7
+SEQ1 \x8c\x01 SEQ4 P\x91 CALL3 
+LOAD 
  
 拓司は枕元に掛けられている鳥かごをのぞき込んだ。@
 なんという種類かはわからないが、どこかで見たことがあるよう\nな、いかにも普通の小鳥だ。@
 ただ、色だけがウソのように青く鮮やかで、屋台で売っているペ\nンキで着色されたヒヨコを思わせる。\w\z
 \x00
 SEQ3 REF7 J\x00 CALL2 
-LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 ^\x01 CALL8
-LOAD2 TextOn REF1 \x8c\x01 CALL6 
-LOAD3 SCE083_002 REF6 \xa8\x01 CALL8
-SEQ1 \x8c\x01 SEQ5 T\x91 CALL4 \x03s\x00\x00
+LOAD .\\Data\\Script\\TextFunc.Fob REF1 ^\x01 CALL7
+LOAD TextOn REF1 \x8c\x01 CALL5 
+LOAD SCE083_002 REF6 \xa8\x01 CALL7
+SEQ1 \x8c\x01 SEQ4 T\x91 CALL3 
+LOAD 
  
 教授\n　「気になるかね？」@
 拓司\n　「？　ええ、まあ。この部屋にあるのはこの鳥かごだけですか\n　　らね。\pそりゃあ、気になります」@
@@ -23,9 +25,10 @@ SEQ1 \x8c\x01 SEQ5 T\x91 CALL4 \x03s\x00\x00
 \nねばりつくようないいかただった。@
 見れば教授の額には、ちいさな汗が滲んでいる。\w\z
 \x00\x00\x00
-SEQ3 REF7 \xec\x01 CALL1 ^\x01 CALL7 \x8c\x01 CALL6 
-LOAD3 SCE083_003 REF6 \xf2\x03 CALL8
-SEQ1 \x8c\x01 SEQ5 X\x91 CALL4 \x03g\x00\x00
+SEQ3 REF7 \xec\x01 CALL1 ^\x01 CALL6 \x8c\x01 CALL5 
+LOAD SCE083_003 REF6 \xf2\x03 CALL7
+SEQ1 \x8c\x01 SEQ4 X\x91 CALL3 
+LOAD 
  
 拓司\n　「……なにかこの鳥が、俺の過去に関係あるんですか？」@
 教授\n　「……」@
@@ -35,9 +38,10 @@ SEQ1 \x8c\x01 SEQ5 X\x91 CALL4 \x03g\x00\x00
 しめきられた白い部屋には、拓司と教授、２人だけが向かい合っ\nて残された。@
 長い沈黙の後、教授が口を開いた。\w\z
 \x00\x00\x00
-SEQ3 REF7 6\x04 CALL1 ^\x01 CALL7 \x8c\x01 CALL6 
-LOAD3 SCE083_004 REF6 \x0c\x06 CALL8
-SEQ1 \x8c\x01 SEQ5 \\\x91 CALL4 \x03\x87\x00\x00
+SEQ3 REF7 6\x04 CALL1 ^\x01 CALL6 \x8c\x01 CALL5 
+LOAD SCE083_004 REF6 \x0c\x06 CALL7
+SEQ1 \x8c\x01 SEQ4 \\\x91 CALL3 
+LOAD 
  
 教授\n　「……その鳥はね、ありえない鳥なんだよ」@
 拓司\n　「？」@
@@ -51,9 +55,10 @@ SEQ1 \x8c\x01 SEQ5 \\\x91 CALL4 \x03\x87\x00\x00
 \n頭の奥が、ずきんと痛んだ。@
 その痛みは急速に大きく膨れ上がり、すぐに拓司の頭のなかいっ\nぱいに広がった。\w\z
 \x00
-SEQ3 REF7 P\x06 CALL1 ^\x01 CALL7 \x8c\x01 CALL6 
-LOAD3 SCE083_005 REF6 \xa6\x08 CALL8
-SEQ1 \x8c\x01 SEQ5 `\x91 CALL4 \x03c\x00\x00
+SEQ3 REF7 P\x06 CALL1 ^\x01 CALL6 \x8c\x01 CALL5 
+LOAD SCE083_005 REF6 \xa6\x08 CALL7
+SEQ1 \x8c\x01 SEQ4 `\x91 CALL3 
+LOAD 
  
 拓司\n　「意味が……わからない」@
 \n教授が突然、がばと身を乗り出した。@
@@ -64,12 +69,13 @@ SEQ1 \x8c\x01 SEQ5 `\x91 CALL4 \x03c\x00\x00
 　　いいかね、これは、新しい生き物なんだよ！@
 　　あらゆる生物学から外れた……神が作ったこの世界の生物な\n　　らぬ……なにかだッ！」\w\z
 \x00
-SEQ3 REF7 \xea\x08 CALL1 ^\x01 CALL7 \x8c\x01 CALL6 
+SEQ3 REF7 \xea\x08 CALL1 ^\x01 CALL6 \x8c\x01 CALL5 
 SEQ2 \xca\x00 CALL2 
-LOAD6 .\\Data\\Script\\Bg.Fob REF3 \xca\n CALL8
-LOAD4 BgAutoFadeIn REF3 \xf4\n CALL6 
-LOAD3 SCE083_006 REF6 \x18\x0b CALL8
-SEQ1 \x8c\x01 SEQ5 d\x91 CALL4 \x03T\x00\x00
+LOAD .\\Data\\Script\\Bg.Fob REF3 \xca\n CALL7
+LOAD BgAutoFadeIn REF3 \xf4\n CALL5 
+LOAD SCE083_006 REF6 \x18\x0b CALL7
+SEQ1 \x8c\x01 SEQ4 d\x91 CALL3 
+LOAD 
  
 　ザザザザザザザザザザ@
 \n青い鳥がきしんで、鳴いた。@
@@ -79,7 +85,7 @@ SEQ1 \x8c\x01 SEQ5 d\x91 CALL4 \x03T\x00\x00
 \n教授\n　「おまえは誰だ？！　何者なんだ？！　お前は－－」@
 \nスイッチを落としたように、目の前が真っ暗になった。\w\z
 \x00
-SEQ3 REF7 \\\x0b CALL1 ^\x01 CALL7 \x8c\x01 CALL6 
-SEQ2 \xc8\x00 CALL1 \xca\n CALL7 \xf4\n CALL5 ^\x01 CALL8
-LOAD3 TextClose REF2 &\r CALL6 
+SEQ3 REF7 \\\x0b CALL1 ^\x01 CALL6 \x8c\x01 CALL5 
+SEQ2 \xc8\x00 CALL1 \xca\n CALL6 \xf4\n CALL4 ^\x01 CALL7
+LOAD TextClose REF2 &\r CALL5 
 END_FILE

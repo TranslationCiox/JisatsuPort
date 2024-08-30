@@ -1,12 +1,13 @@
 START_FILE
 \x8b-\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00,'\x00
-LOAD0 .\\Data\\Script\\Scenario\\048SubC.Fob REF1 \x06\x00 CALL8
-LOAD2 start REF2 <\x00 CALL6 
+LOAD .\\Data\\Script\\Scenario\\048SubC.Fob REF1 \x06\x00 CALL7
+LOAD start REF2 <\x00 CALL5 
 SEQ2 <\x00 CALL2 
-LOAD8 .\\Data\\Script\\TextFunc.fob REF1 r\x00 CALL8
-LOAD3 WaitTime REF3 \xa0\x00 CALL6 
-LOAD3 SCE048_020 REF6 \xc0\x00 CALL8
-SEQ1 \x8c\x01 SEQ5 \xecZ CALL4 \x03\xce\x00\x00
+LOAD .\\Data\\Script\\TextFunc.fob REF1 r\x00 CALL7
+LOAD WaitTime REF3 \xa0\x00 CALL5 
+LOAD SCE048_020 REF6 \xc0\x00 CALL7
+SEQ1 \x8c\x01 SEQ4 \xecZ CALL3 
+LOAD 
  
 御堂\n　「おい、柏木。\pお前なにやってんだよ……？」@
 \n/*■CG19　表示（ノンエフェクト）↑のCG表示にあわせられるとヨシ！*/\a7,-1,-1,0,\a0,18,1,0,/*▲BGM　Track11　再生*/\a2,-1,11,1,\a6,0,0,0,　全員が呆気にとられた顔で御堂を見やり、それから御堂の視線\nの先へと顔を移動させた。@
@@ -17,10 +18,11 @@ SEQ1 \x8c\x01 SEQ5 \xecZ CALL4 \x03\xce\x00\x00
 
 
 SEQ3 REF7 \x04\x01 CALL2 
-LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 \\\x04 CALL8
-LOAD2 TextOn REF1 \x8a\x04 CALL6 
-LOAD3 SCE048_021 REF6 \xa6\x04 CALL8
-SEQ1 \x8c\x01 SEQ5 \xf0Z CALL4 \x03\x9c\x00\x00
+LOAD .\\Data\\Script\\TextFunc.Fob REF1 \\\x04 CALL7
+LOAD TextOn REF1 \x8a\x04 CALL5 
+LOAD SCE048_021 REF6 \xa6\x04 CALL7
+SEQ1 \x8c\x01 SEQ4 \xf0Z CALL3 
+LOAD 
  
 　その柏木が、主役となっていた。@
 　トイレ中の注目を一身に浴びていた。@
@@ -36,9 +38,10 @@ SEQ1 \x8c\x01 SEQ5 \xf0Z CALL4 \x03\x9c\x00\x00
 　シャープペンが突き刺さった耳の穴からは、どす黒い血がたら\n　たらと滝のようにあふれ出している。\
 
 \x00\x00\x00
-SEQ3 REF7 \xea\x04 CALL1 \\\x04 CALL7 \x8a\x04 CALL6 
-LOAD3 SCE048_022 REF6 \x94\x07 CALL8
-SEQ1 \x8c\x01 SEQ5 \xf4Z CALL4 \x03J\x00\x00
+SEQ3 REF7 \xea\x04 CALL1 \\\x04 CALL6 \x8a\x04 CALL5 
+LOAD SCE048_022 REF6 \x94\x07 CALL7
+SEQ1 \x8c\x01 SEQ4 \xf4Z CALL3 
+LOAD 
  
 柏木\n　「おれ的にすげえ、つらい！」@
 \n　柏木の眼から、ほろほろと涙があふれ出した。@
@@ -47,9 +50,10 @@ SEQ1 \x8c\x01 SEQ5 \xf4Z CALL4 \x03J\x00\x00
 \n　柏木はいいながら、シャープペンのヘッドをカチカチカチカチ\n　とノックした。\
 
 \x00\x00\x00
-SEQ3 REF7 \xd8\x07 CALL1 \\\x04 CALL7 \x8a\x04 CALL6 
-LOAD3 SCE048_023 REF6 :\t CALL8
-SEQ1 \x8c\x01 SEQ5 \xf8Z CALL4 \x03]\x00\x00
+SEQ3 REF7 \xd8\x07 CALL1 \\\x04 CALL6 \x8a\x04 CALL5 
+LOAD SCE048_023 REF6 :\t CALL7
+SEQ1 \x8c\x01 SEQ4 \xf8Z CALL3 
+LOAD 
  
 柏木\n　「おれれれれれれれれれれれ」@
 \n　カチカチカチカチカチカチカチ。@
@@ -58,9 +62,10 @@ SEQ1 \x8c\x01 SEQ5 \xf8Z CALL4 \x03]\x00\x00
 \n御堂\n　「芯だよ……」\
 
 \x00
-SEQ3 REF7 ~\t CALL1 \\\x04 CALL7 \x8a\x04 CALL6 
-LOAD3 SCE048_024 REF6 ,\x0b CALL8
-SEQ1 \x8c\x01 SEQ5 \xfcZ CALL4 \x03\xa0\x00\x00
+SEQ3 REF7 ~\t CALL1 \\\x04 CALL6 \x8a\x04 CALL5 
+LOAD SCE048_024 REF6 ,\x0b CALL7
+SEQ1 \x8c\x01 SEQ4 \xfcZ CALL3 
+LOAD 
  
 \n　御堂の声は、間抜けな冗談のように響いた。@
 　芯だよ。@
@@ -74,9 +79,10 @@ SEQ1 \x8c\x01 SEQ5 \xfcZ CALL4 \x03\xa0\x00\x00
 　おれたちは呆然とそんな柏木の泣き笑いを見守っていたが、や\n　がて\
 
 \x00
-SEQ3 REF7 p\x0b CALL1 \\\x04 CALL7 \x8a\x04 CALL6 
-LOAD3 SCE048_025 REF6 *\x0e CALL8
-SEQ1 \x8c\x01 SEQ5 \x00[ CALL4 \x03\xb7\x00\x00
+SEQ3 REF7 p\x0b CALL1 \\\x04 CALL6 \x8a\x04 CALL5 
+LOAD SCE048_025 REF6 *\x0e CALL7
+SEQ1 \x8c\x01 SEQ4 \x00[ CALL3 
+LOAD 
  
 柏木\n　「いてえ」@
 \n　柏木がぽつりとつぶやいた。@
@@ -91,9 +97,10 @@ SEQ1 \x8c\x01 SEQ5 \x00[ CALL4 \x03\xb7\x00\x00
 　あとには拓司となたね、そして柏木の死体だけが残された。\
 
 \x00\x00
-SEQ3 REF7 n\x0e CALL1 \\\x04 CALL7 \x8a\x04 CALL6 
-LOAD3 SCE048_026 REF6 \x84\x11 CALL8
-SEQ1 \x8c\x01 SEQ5 \x04[ CALL4 \x03\x9c\x00\x00
+SEQ3 REF7 n\x0e CALL1 \\\x04 CALL6 \x8a\x04 CALL5 
+LOAD SCE048_026 REF6 \x84\x11 CALL7
+SEQ1 \x8c\x01 SEQ4 \x04[ CALL3 
+LOAD 
  
 なたね\n　「……始まったのね」@
 拓司\n　「え？」@
@@ -105,9 +112,10 @@ SEQ1 \x8c\x01 SEQ5 \x04[ CALL4 \x03\x9c\x00\x00
 拓司は慌てて背を向けた。\pいままでさんざん陵辱現場を見ておい\nていまさらという気もしたが、そうするのが礼儀のような気がし\nた。\
 
 \x00
-SEQ3 REF7 \xc8\x11 CALL1 \\\x04 CALL7 \x8a\x04 CALL6 
-LOAD3 SCE048_027 REF6 r\x14 CALL8
-SEQ1 \x8c\x01 SEQ5 \x08[ CALL4 \x03w\x00\x00
+SEQ3 REF7 \xc8\x11 CALL1 \\\x04 CALL6 \x8a\x04 CALL5 
+LOAD SCE048_027 REF6 r\x14 CALL7
+SEQ1 \x8c\x01 SEQ4 \x08[ CALL3 
+LOAD 
  
 拓司\n　「だ、大丈夫かい？」@
 なたね\n　「……。始まったのね」@
@@ -118,9 +126,10 @@ SEQ1 \x8c\x01 SEQ5 \x08[ CALL4 \x03w\x00\x00
 　チカセンコウガタシンリャクセイブツヘイキ、となたねは厳し\n　く言い直した。\p正確にいうのといわないのとでは、そこに大き\n　な違いがあるとでもいいたそうな口調だ。\
 
 \x00\x00
-SEQ3 REF7 \xb6\x14 CALL1 \\\x04 CALL7 \x8a\x04 CALL6 
-LOAD3 SCE048_028 REF6 \xcc\x16 CALL8
-SEQ1 \x8c\x01 SEQ5 \x0c[ CALL4 \x03\xc5\x00\x00
+SEQ3 REF7 \xb6\x14 CALL1 \\\x04 CALL6 \x8a\x04 CALL5 
+LOAD SCE048_028 REF6 \xcc\x16 CALL7
+SEQ1 \x8c\x01 SEQ4 \x0c[ CALL3 
+LOAD 
  
 なたね\n　「４６億年前、やつらは地球の地下にいくつもの『シード』を埋\n　　め込んだの。\pやがて人類が宇宙に進出するときがきて……実\n　　際、いまがそのときなんだけれど……そのときに人類が『適\n　　格』でないと判断されたら、『シード』は目覚め、人類完殺\n　　の兵器として稼動し始めるの。\pこれは聖書とか様々な文献に\n　　終末とか悪魔とかいう形で明記されている厳然たる事実なの」\n　　@
 拓司\n　「……」@
@@ -128,9 +137,10 @@ SEQ1 \x8c\x01 SEQ5 \x0c[ CALL4 \x03\xc5\x00\x00
 \nなたね\n　「これは明白に、第四種生物兵器『ビッグ・エンケリュス』の\n　　攻撃だわ。\p『ビッグ・エンケリュス』は地下から波動を送る\n　　の。\p自殺波動。この波動にシンクロしてしまった人間は、自\n　　殺こそが幸福へ至る道だと信じ込んで……彼のように自殺し\n　　てしまうの」\
 
 \x00\x00\x00
-SEQ3 REF7 \x10\x17 CALL1 \\\x04 CALL7 \x8a\x04 CALL6 
-LOAD3 SCE048_029 REF6 ^\x1a CALL8
-SEQ1 \x8c\x01 SEQ5 \x10[ CALL4 \x03\xbb\x00\x00
+SEQ3 REF7 \x10\x17 CALL1 \\\x04 CALL6 \x8a\x04 CALL5 
+LOAD SCE048_029 REF6 ^\x1a CALL7
+SEQ1 \x8c\x01 SEQ4 \x10[ CALL3 
+LOAD 
  
 拓司\n　「……自殺波動？」@
 なたね\n　「そう！　波動よ！　エンケリュスムサベツエンカクジサツハ\n　　ドウコウゲキ！」@
@@ -139,9 +149,10 @@ SEQ1 \x8c\x01 SEQ5 \x10[ CALL4 \x03\xbb\x00\x00
 　　あのね、私、円盤のなかで立体映像を見せられたの！\p　ぬら\n　　ぬらとしていて、黒くて、とてもいやらしくて汚らしい形を\n　　しているの！\p　全長２０キロ！\p　質量は自由に変化させられる\n　　からよくわからないけれど、地中を自由に移動して人類を殺\n　　す究極の侵略兵器で、あなたにはわからないけど私にはわか\n　　るのよ！　なぜなら……」\
 
 \x00\x00\x00
-SEQ3 REF7 \xa2\x1a CALL1 \\\x04 CALL7 \x8a\x04 CALL6 
-LOAD3 SCE048_030 REF6 \xc8\x1d CALL8
-SEQ1 \x8c\x01 SEQ5 \x14[ CALL4 \x03D\x00\x00
+SEQ3 REF7 \xa2\x1a CALL1 \\\x04 CALL6 \x8a\x04 CALL5 
+LOAD SCE048_030 REF6 \xc8\x1d CALL7
+SEQ1 \x8c\x01 SEQ4 \x14[ CALL3 
+LOAD 
  
 拓司\n　「雲居さん！」@
 \n　拓司はなたねを制した。\p聞いていると自分までおかしくなって\n　しまいそうだ。@
@@ -150,9 +161,10 @@ SEQ1 \x8c\x01 SEQ5 \x14[ CALL4 \x03D\x00\x00
 拓司\n　「……」\
 
 \x00
-SEQ3 REF7 \x0c\x1e CALL1 \\\x04 CALL7 \x8a\x04 CALL6 
-LOAD3 SCE048_031 REF6 V\x1f CALL8
-SEQ1 \x8c\x01 SEQ5 \x18[ CALL4 \x03\xc5\x00\x00
+SEQ3 REF7 \x0c\x1e CALL1 \\\x04 CALL6 \x8a\x04 CALL5 
+LOAD SCE048_031 REF6 V\x1f CALL7
+SEQ1 \x8c\x01 SEQ4 \x18[ CALL3 
+LOAD 
  
 なたね\n　「エンケリュスは私の身体の中に、たくさんいやらしい液を流\n　　し込んだの。\p気持ち悪かった。\p私をレイプしたのは、正確に\n　　言うと宇宙人じゃなくてエンケリュス。\pいま、わかったこと\n　　だけど。\pエンケリュスの液は、内臓部分から徐々に私をおか\n　　しくしていくの。\pいやらしいことしか考えられなくなって、\n　　勉強とか、できなくなる。\pそれに対抗するために、私は御堂\n　　くんたちに精液をかけてもらっていたの」@
 拓司\n　「もういい！」@
@@ -161,9 +173,10 @@ SEQ1 \x8c\x01 SEQ5 \x18[ CALL4 \x03\xc5\x00\x00
 　－－拓司はそう思った。\
 
 \x00\x00\x00
-SEQ3 REF7 \x9a\x1f CALL1 \\\x04 CALL7 \x8a\x04 CALL6 
-LOAD3 SCE048_032 REF6 \xe8" CALL8
-SEQ1 \x8c\x01 SEQ5 \x1c[ CALL4 \x03[\x00\x00
+SEQ3 REF7 \x9a\x1f CALL1 \\\x04 CALL6 \x8a\x04 CALL5 
+LOAD SCE048_032 REF6 \xe8" CALL7
+SEQ1 \x8c\x01 SEQ4 \x1c[ CALL3 
+LOAD 
  
 拓司\n　「そんなことより、早く柏木のことを、先生なり警察なりに報\n　　せないと！」@
 なたね\n　「……そうね」@
@@ -173,19 +186,20 @@ SEQ1 \x8c\x01 SEQ5 \x1c[ CALL4 \x03[\x00\x00
 \n　拓司の脇を通り抜け、鏡に向かって髪の毛を整え始める。\
 
 \x00
-SEQ3 REF7 ,# CALL1 \\\x04 CALL7 \x8a\x04 CALL6 
+SEQ3 REF7 ,# CALL1 \\\x04 CALL6 \x8a\x04 CALL5 
 SEQ2 \xc8\x00 CALL2 
-LOAD6 .\\Data\\Script\\Bg.Fob REF3 \xec$ CALL8
-LOAD4 BgAutoFadeIn REF3 \x16% CALL6 
-LOAD3 SCE048_033 REF6 :% CALL8
-SEQ1 \x8c\x01 SEQ5  [ CALL4 \x03A\x00\x00
+LOAD .\\Data\\Script\\Bg.Fob REF3 \xec$ CALL7
+LOAD BgAutoFadeIn REF3 \x16% CALL5 
+LOAD SCE048_033 REF6 :% CALL7
+SEQ1 \x8c\x01 SEQ4  [ CALL3 
+LOAD 
  
 なたね\n　「あーあ、こんなにばさばさになっちゃった。\p困ったなあ。い\n　　やだなあ」@
 \n　拓司は呆然と、それを見守るしかなかった。\pなたねの動きはゆ\n　っくりしていて、見ているとなにか時間が徐々に停滞してゆく\n　ような、そんな不安な気持ちになった。\
 
 \x00
-SEQ3 REF7 ~% CALL1 \\\x04 CALL7 \x8a\x04 CALL6 
-LOAD6 .\\Data\\Script\\Bgm.Fob REF2 \xbc& CALL8
-LOAD2 StopCD REF1 \xe6& CALL5 \\\x04 CALL8
-LOAD3 TextClose REF2 \x0e' CALL6 
+SEQ3 REF7 ~% CALL1 \\\x04 CALL6 \x8a\x04 CALL5 
+LOAD .\\Data\\Script\\Bgm.Fob REF2 \xbc& CALL7
+LOAD StopCD REF1 \xe6& CALL4 \\\x04 CALL7
+LOAD TextClose REF2 \x0e' CALL5 
 END_FILE

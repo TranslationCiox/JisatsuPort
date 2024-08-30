@@ -1,16 +1,18 @@
 START_FILE
 \x17\x10\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x000\r\x00
-LOAD3 SCE096_001 REF6 \x06\x00 CALL8
-SEQ1 \x8c\x01 SEQ5 \xa0\xa5 CALL4 \x03\x11\x00\x00
+LOAD SCE096_001 REF6 \x06\x00 CALL7
+SEQ1 \x8c\x01 SEQ4 \xa0\xa5 CALL3 
+LOAD 
  
 \n\n\n\n\n\n\n\n\n\n　　　　　　　　　　　　　『３日目』\
 
 \x00\x00\x00
 SEQ3 REF7 J\x00 CALL2 
-LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 \xae\x00 CALL8
-LOAD2 TextOn REF1 \xdc\x00 CALL6 
-LOAD3 SCE096_002 REF6 \xf8\x00 CALL8
-SEQ1 \x8c\x01 SEQ5 \xa4\xa5 CALL4 \x03q\x00\x00
+LOAD .\\Data\\Script\\TextFunc.Fob REF1 \xae\x00 CALL7
+LOAD TextOn REF1 \xdc\x00 CALL5 
+LOAD SCE096_002 REF6 \xf8\x00 CALL7
+SEQ1 \x8c\x01 SEQ4 \xa4\xa5 CALL3 
+LOAD 
  
 　全員の顔に疲労の影を見た拓司は、なたねに提案をした。@
 \n拓司\n　「身体を濡れタオルで洗うのは５日に１回って話だったけど…\n　　…」@
@@ -22,9 +24,10 @@ SEQ1 \x8c\x01 SEQ5 \xa4\xa5 CALL4 \x03q\x00\x00
 　　身体を拭くんだ」\
 
 \x00
-SEQ3 REF7 <\x01 CALL1 \xae\x00 CALL7 \xdc\x00 CALL6 
-LOAD3 SCE096_003 REF6 :\x03 CALL8
-SEQ1 \x8c\x01 SEQ5 \xa8\xa5 CALL4 \x03i\x00\x00
+SEQ3 REF7 <\x01 CALL1 \xae\x00 CALL6 \xdc\x00 CALL5 
+LOAD SCE096_003 REF6 :\x03 CALL7
+SEQ1 \x8c\x01 SEQ4 \xa8\xa5 CALL3 
+LOAD 
  
 なたね\n　「……５日に１回で衛生的には問題はないと思うんですけど」@
 拓司\n　「衛生的な問題じゃない。\p精神的な問題だ」@
@@ -32,15 +35,16 @@ SEQ1 \x8c\x01 SEQ5 \xa8\xa5 CALL4 \x03i\x00\x00
 \n　なたねは、準備室から水の入ったポリタンクと、新しいタオル\nを人数分運び出してきた。\p全員で協力して実験器具が詰まった\n棚を移動して壁を作り、そこを即席の『シャワールーム』とした。\n\pもちろん、女性陣のプライバシーを守るためである。\
 
 \x00
-SEQ3 REF7 ~\x03 CALL1 \xae\x00 CALL7 \xdc\x00 CALL6 
-SEQ2 REF7 \x00 CALL2 
-LOAD6 .\\Data\\Script\\Bg.Fob REF3 v\x05 CALL8
-LOAD4 BgAutoFadeIn REF3 \xa0\x05 CALL6 
+SEQ3 REF7 ~\x03 CALL1 \xae\x00 CALL6 \xdc\x00 CALL5 
+SEQ2  REF7 \x00 CALL2 
+LOAD .\\Data\\Script\\Bg.Fob REF3 v\x05 CALL7
+LOAD BgAutoFadeIn REF3 \xa0\x05 CALL5 
 SEQ2 \x07\x01 CALL2 
-LOAD6 .\\Data\\Script\\Bgm.Fob REF2 \xde\x05 CALL8
-LOAD2 PlayCD REF1 \x08\x06 CALL6 
-LOAD3 SCE096_004 REF6 $\x06 CALL8
-SEQ1 \x8c\x01 SEQ5 \xac\xa5 CALL4 \x03q\x00\x00
+LOAD .\\Data\\Script\\Bgm.Fob REF2 \xde\x05 CALL7
+LOAD PlayCD REF1 \x08\x06 CALL5 
+LOAD SCE096_004 REF6 $\x06 CALL7
+SEQ1 \x8c\x01 SEQ4 \xac\xa5 CALL3 
+LOAD 
  
 早桃\n　「やったあ！\p　もう身体がべとべとで、気持ち悪くてしかたな\n　　かったんだよね！」@
 カンナ\n　「うう～ん、生き返るぅ～！」@
@@ -52,9 +56,10 @@ SEQ1 \x8c\x01 SEQ5 \xac\xa5 CALL4 \x03q\x00\x00
 錦城\n　「ふふふ」\
 
 \x00\x00\x00
-SEQ3 REF7 h\x06 CALL1 \xae\x00 CALL7 \xdc\x00 CALL6 
-LOAD3 SCE096_005 REF6 f\x08 CALL8
-SEQ1 \x8c\x01 SEQ5 \xb0\xa5 CALL4 \x03p\x00\x00
+SEQ3 REF7 h\x06 CALL1 \xae\x00 CALL6 \xdc\x00 CALL5 
+LOAD SCE096_005 REF6 f\x08 CALL7
+SEQ1 \x8c\x01 SEQ4 \xb0\xa5 CALL3 
+LOAD 
  
 早桃\n　「それにしても、錦城先生はさすがですよね……大人の女の人\n　　って感じで」@
 錦城\n　「ありがとう。\p早桃ちゃんも肌が白くて素敵よ？」@
@@ -64,9 +69,10 @@ SEQ1 \x8c\x01 SEQ5 \xb0\xa5 CALL4 \x03p\x00\x00
 \n　言葉は汚いが、御堂の声もどこか明るい。\pひんやりとした水の\n冷たさが、全員の気分を高揚させている。\pなんとなく合宿をして\nいるような、そんな感じすらある。\
 
 \x00\x00\x00
-SEQ3 REF7 \xaa\x08 CALL1 \xae\x00 CALL7 \xdc\x00 CALL6 
-LOAD3 SCE096_006 REF6 \xa4\n CALL8
-SEQ1 \x8c\x01 SEQ5 \xb4\xa5 CALL4 \x03y\x00\x00
+SEQ3 REF7 \xaa\x08 CALL1 \xae\x00 CALL6 \xdc\x00 CALL5 
+LOAD SCE096_006 REF6 \xa4\n CALL7
+SEQ1 \x8c\x01 SEQ4 \xb4\xa5 CALL3 
+LOAD 
  
 御堂\n　「虎菱、おめえなかなか粋なことしてくれんじゃねえかよ」@
 拓司\n　「リーダーだからな」@
@@ -77,6 +83,6 @@ SEQ1 \x8c\x01 SEQ5 \xb4\xa5 CALL4 \x03y\x00\x00
 \n　誰が御堂に投票したのだろう……拓司はその疑問を頭から無理\nに追い出した。\pとりあえずいまくらいは、さっぱりと明るい気持\nちでいたかった。\
 
 \x00\x00\x00
-SEQ3 REF7 \xe8\n CALL1 \xae\x00 CALL7 \xdc\x00 CALL5 \xae\x00 CALL8
-LOAD3 TextClose REF2 \x12\r CALL6 
+SEQ3 REF7 \xe8\n CALL1 \xae\x00 CALL6 \xdc\x00 CALL4 \xae\x00 CALL7
+LOAD TextClose REF2 \x12\r CALL5 
 END_FILE

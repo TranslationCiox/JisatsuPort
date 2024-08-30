@@ -1,7 +1,8 @@
 START_FILE
 \xff\x02\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xe0\x044\x01\x00\x00\x002\x02\x00
-LOAD3 SCE230_001 REF6 \x06\x00 CALL8
-SEQ1 \x8c\x01 SEQ5 \x00w\x01\x0c\x00\x00\x00\x00"\x03U\x00\x00
+LOAD SCE230_001 REF6 \x06\x00 CALL7
+SEQ1 \x8c\x01 SEQ4 \x00w\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 拓司は凍り付いたまま動けなかった。@
 畳針で片目を貫かれてもなお、御堂は決して拓司から注意をそら\nしていなかったのである。@
@@ -11,7 +12,7 @@ SEQ1 \x8c\x01 SEQ5 \x00w\x01\x0c\x00\x00\x00\x00"\x03U\x00\x00
 
 \x00\x00\x00
 SEQ3 REF7 J\x00 CALL2 
-LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 \xbe\x01 CALL8
-LOAD2 TextOn REF1 \xec\x01 CALL5 \xbe\x01 CALL8
-LOAD3 TextClose REF2 \x14\x02 CALL6 
+LOAD .\\Data\\Script\\TextFunc.Fob REF1 \xbe\x01 CALL7
+LOAD TextOn REF1 \xec\x01 CALL4 \xbe\x01 CALL7
+LOAD TextClose REF2 \x14\x02 CALL5 
 END_FILE

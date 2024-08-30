@@ -1,7 +1,8 @@
 START_FILE
 \x88\x1a\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\x02\x16\x00
-LOAD3 SCE026_001 REF6 \x06\x00 CALL8
-SEQ1 \x8c\x01 SEQ5 @8 CALL4 \x03\xbf\x00\x00
+LOAD SCE026_001 REF6 \x06\x00 CALL7
+SEQ1 \x8c\x01 SEQ4 @8 CALL3 
+LOAD 
  
 /*　▲SE09　一回再生　*/\a2,0,9,0,　がらがらと、拓司の灰色の世界が一部スライドして、そこに新\n　たな何かが現れた。@
 \n\a4,0,0,0,/*　■CG08　表示（クロスフェード）　*/\a7,-2,-2,0,\a0,7,2,0,\a6,-2,0,0,御堂\n　「おはよーございまーす」@
@@ -14,10 +15,11 @@ SEQ1 \x8c\x01 SEQ5 @8 CALL4 \x03\xbf\x00\x00
 
 
 SEQ3 REF7 J\x00 CALL2 
-LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 f\x03 CALL8
-LOAD2 TextOn REF1 \x94\x03 CALL6 
-LOAD3 SCE026_002 REF6 \xb0\x03 CALL8
-SEQ1 \x8c\x01 SEQ5 D8 CALL4 \x03o\x00\x00
+LOAD .\\Data\\Script\\TextFunc.Fob REF1 f\x03 CALL7
+LOAD TextOn REF1 \x94\x03 CALL5 
+LOAD SCE026_002 REF6 \xb0\x03 CALL7
+SEQ1 \x8c\x01 SEQ4 D8 CALL3 
+LOAD 
  
 御堂\n　「ぎりぎりセーフっすかね、センセイ？」@
 \n　御堂は笑いながら、教室に足を踏み入れようとした。@
@@ -28,12 +30,13 @@ SEQ1 \x8c\x01 SEQ5 D8 CALL4 \x03o\x00\x00
 御堂\n　「……なんだと？」\
 
 \x00
-SEQ3 REF7 \xf4\x03 CALL1 f\x03 CALL7 \x94\x03 CALL6 
+SEQ3 REF7 \xf4\x03 CALL1 f\x03 CALL6 \x94\x03 CALL5 
 SEQ2 \n\x01 CALL2 
-LOAD6 .\\Data\\Script\\Bgm.Fob REF2 \x04\x06 CALL8
-LOAD2 PlayCD REF1 .\x06 CALL6 
-LOAD3 SCE026_003 REF6 J\x06 CALL8
-SEQ1 \x8c\x01 SEQ5 H8 CALL4 \x03r\x00\x00
+LOAD .\\Data\\Script\\Bgm.Fob REF2 \x04\x06 CALL7
+LOAD PlayCD REF1 .\x06 CALL5 
+LOAD SCE026_003 REF6 J\x06 CALL7
+SEQ1 \x8c\x01 SEQ4 H8 CALL3 
+LOAD 
  
 錦城\n　「出て行きなさい、御堂くん」@
 御堂\n　「……」@
@@ -46,9 +49,10 @@ SEQ1 \x8c\x01 SEQ5 H8 CALL4 \x03r\x00\x00
 　やがて御堂が、ニヤリと笑った。\
 
 \x00\x00\x00
-SEQ3 REF7 \x8e\x06 CALL1 f\x03 CALL7 \x94\x03 CALL6 
-LOAD3 SCE026_004 REF6 \x90\x08 CALL8
-SEQ1 \x8c\x01 SEQ5 L8 CALL4 \x03`\x00\x00
+SEQ3 REF7 \x8e\x06 CALL1 f\x03 CALL6 \x94\x03 CALL5 
+LOAD SCE026_004 REF6 \x90\x08 CALL7
+SEQ1 \x8c\x01 SEQ4 L8 CALL3 
+LOAD 
  
 御堂\n　「先生、日向が丘に一人住まいなんですよね？\p　住所、知ってる\n　　んですよ」@
 錦城\n　「……」@
@@ -57,12 +61,13 @@ SEQ1 \x8c\x01 SEQ5 L8 CALL4 \x03`\x00\x00
 御堂\n　「女の一人暮らしは危険がいっぱいッスからね。\p気を付けないと\n　　－－」\
 
 \x00\x00\x00
-SEQ3 REF7 \xd4\x08 CALL1 f\x03 CALL7 \x94\x03 CALL6 
-LOAD3 SCE026_005 REF6 \x8e\n CALL8
-SEQ1 \x8c\x01 SEQ5 P8 CALL4 REF7 \x04\x06 CALL8
-LOAD2 StopCD REF1 \xde\n CALL6 
-SEQ2 \x00\x00\x00 CALL2  \x1e\x04\x00\x00\r\x00\x00\x1e\x0b\x00 CALL2  \x1e\x08\x00\x00\r\x00\x00\x1e\x00\x00\x00 CALL1 \x04\x06 CALL8
-LOAD3 SePlayEx REF3 T\x0b CALL6 \x03\x9f\x00\x00
+SEQ3 REF7 \xd4\x08 CALL1 f\x03 CALL6 \x94\x03 CALL5 
+LOAD SCE026_005 REF6 \x8e\n CALL7
+SEQ1 \x8c\x01 SEQ4 P8 CALL3  REF7 \x04\x06 CALL7
+LOAD StopCD REF1 \xde\n CALL5 
+SEQ2 \x00\x00\x00 CALL2  \x1e\x04\x00\x00\r\x00\x00\x1e\x0b\x00 CALL2  \x1e\x08\x00\x00\r\x00\x00\x1e\x00\x00\x00 CALL1 \x04\x06 CALL7
+LOAD SePlayEx REF3 T\x0b CALL5 
+LOAD 
  
 　パン！@
 　乾いた音が教室に響き渡った。\pそれは錦城教諭が、御堂の頬を容\n　赦なく張り飛ばした音だった。@
@@ -73,9 +78,10 @@ LOAD3 SePlayEx REF3 T\x0b CALL6 \x03\x9f\x00\x00
 　爆発の瞬間、不意を突かれた形となった御堂はしばらく間をおい\n　てから、フン、と鼻で笑った。\
 
 \x00\x00
-SEQ3 REF7 t\x0b CALL1 f\x03 CALL7 \x94\x03 CALL6 
-LOAD3 SCE026_006 REF6 *\x0e CALL8
-SEQ1 \x8c\x01 SEQ5 T8 CALL4 \x03p\x00\x00
+SEQ3 REF7 t\x0b CALL1 f\x03 CALL6 \x94\x03 CALL5 
+LOAD SCE026_006 REF6 *\x0e CALL7
+SEQ1 \x8c\x01 SEQ4 T8 CALL3 
+LOAD 
  
 御堂\n　「……つまんねえオンナ」@
 錦城\n　「以上。授業を終わります」@
@@ -84,9 +90,10 @@ SEQ1 \x8c\x01 SEQ5 T8 CALL4 \x03p\x00\x00
 \n　言って錦城教諭は、なにごともなかったかのように軽く御堂から\n　視線を外し、とりわけ急ぐでもなく、平静そのものといった様子\n　で教室から出ていった。\p御堂もまた、鞄を自分の机の上に放り投\n　げ、退室した。\pしかし、精一杯の虚勢といった感じは否めない。\n　勝敗は明らかだった。\
 
 \x00
-SEQ3 REF7 n\x0e CALL1 f\x03 CALL7 \x94\x03 CALL6 
-LOAD3 SCE026_007 REF6 h\x10 CALL8
-SEQ1 \x8c\x01 SEQ5 X8 CALL4 \x03N\x00\x00
+SEQ3 REF7 n\x0e CALL1 f\x03 CALL6 \x94\x03 CALL5 
+LOAD SCE026_007 REF6 h\x10 CALL7
+SEQ1 \x8c\x01 SEQ4 X8 CALL3 
+LOAD 
  
 \n　ほどなく教室には興奮と驚嘆の入り交じった声がわき起こった\n　。@
 学生\n　「すげえよな、錦城！」@
@@ -97,10 +104,11 @@ SEQ1 \x8c\x01 SEQ5 X8 CALL4 \x03N\x00\x00
 学生\n　「ううー、抱かれてー！」\
 
 \x00\x00\x00
-SEQ3 REF7 \xac\x10 CALL1 f\x03 CALL7 \x94\x03 CALL6 
-SEQ2 \x06\x01 CALL1 \x04\x06 CALL7 .\x06 CALL6 
-LOAD3 SCE026_008 REF6 R\x12 CALL8
-SEQ1 \x8c\x01 SEQ5 \\8 CALL4 \x03\x85\x00\x00
+SEQ3 REF7 \xac\x10 CALL1 f\x03 CALL6 \x94\x03 CALL5 
+SEQ2 \x06\x01 CALL1 \x04\x06 CALL6 .\x06 CALL5 
+LOAD SCE026_008 REF6 R\x12 CALL7
+SEQ1 \x8c\x01 SEQ4 \\8 CALL3 
+LOAD 
  
 \n　騒ぎのなかにあって、拓司はひとり、フツフツとわき上がってく\n　る怒りに震えていた。@
 　－－怒り？@
@@ -114,11 +122,11 @@ SEQ1 \x8c\x01 SEQ5 \\8 CALL4 \x03\x85\x00\x00
 　ルーティン・ワーク。\
 
 \x00
-SEQ3 REF7 \x96\x12 CALL1 f\x03 CALL7 \x94\x03 CALL5 f\x03 CALL8
-LOAD4 TextWindowOff REF2 \xf0\x14 CALL6 
+SEQ3 REF7 \x96\x12 CALL1 f\x03 CALL6 \x94\x03 CALL4 f\x03 CALL7
+LOAD TextWindowOff REF2 \xf0\x14 CALL5 
 SEQ2 \xc8\x00 CALL2 
-LOAD6 .\\Data\\Script\\Bg.Fob REF3 .\x15 CALL8
-LOAD4 BgNormalFadeIn REF1 X\x15 CALL5 \x04\x06 CALL7 \xde\n CALL6 \x1e\x1e\x00\x00\x1e\x00\x00\x00\x00\x92REF7 f\x03 CALL8
-LOAD5 TextWindowOnDirect REF1 \xb0\x15 CALL5 f\x03 CALL8
-LOAD3 TextClose REF2 \xe4\x15 CALL6 
+LOAD .\\Data\\Script\\Bg.Fob REF3 .\x15 CALL7
+LOAD BgNormalFadeIn REF1 X\x15 CALL4 \x04\x06 CALL6 \xde\n CALL5 \x1e\x1e\x00\x00\x1e\x00\x00\x00\x00\x92 REF7 f\x03 CALL7
+LOAD TextWindowOnDirect REF1 \xb0\x15 CALL4 f\x03 CALL7
+LOAD TextClose REF2 \xe4\x15 CALL5 
 END_FILE

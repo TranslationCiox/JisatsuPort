@@ -1,19 +1,21 @@
 START_FILE
 X.\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xf2&\x00
-LOAD3 SCE228_001 REF6 \x06\x00 CALL8
-SEQ1 \x8c\x01 SEQ5 \xe0s\x01\x0c\x00\x00\x00\x00"\x03\x11\x00\x00
+LOAD SCE228_001 REF6 \x06\x00 CALL7
+SEQ1 \x8c\x01 SEQ4 \xe0s\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 \n\n\n\n\n\n\n\n\n\n　　　　　　　　　　　　『１４日目』\
 
 \x00\x00\x00
 SEQ3 REF7 J\x00 CALL2 
-LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 \xae\x00 CALL8
-LOAD2 TextOn REF1 \xdc\x00 CALL6 
+LOAD .\\Data\\Script\\TextFunc.Fob REF1 \xae\x00 CALL7
+LOAD TextOn REF1 \xdc\x00 CALL5 
 SEQ2 \t\x01 CALL2 
-LOAD6 .\\Data\\Script\\Bgm.Fob REF2 \x12\x01 CALL8
-LOAD2 PlayCD REF1 <\x01 CALL6 
-LOAD3 SCE228_002 REF6 X\x01 CALL8
-SEQ1 \x8c\x01 SEQ5 \xe4s\x01\x0c\x00\x00\x00\x00"\x03O\x00\x00
+LOAD .\\Data\\Script\\Bgm.Fob REF2 \x12\x01 CALL7
+LOAD PlayCD REF1 <\x01 CALL5 
+LOAD SCE228_002 REF6 X\x01 CALL7
+SEQ1 \x8c\x01 SEQ4 \xe4s\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 御堂と錦城の次の標的は、早桃だった。@
 昼過ぎ、実験室に現れた御堂は一同を集め、いった。@
@@ -24,9 +26,10 @@ SEQ1 \x8c\x01 SEQ5 \xe4s\x01\x0c\x00\x00\x00\x00"\x03O\x00\x00
 拓司\n　「ふざけるな」\
 
 \x00\x00\x00
-SEQ3 REF7 \x9c\x01 CALL1 \xae\x00 CALL7 \xdc\x00 CALL6 
-LOAD3 SCE228_003 REF6 \x12\x03 CALL8
-SEQ1 \x8c\x01 SEQ5 \xe8s\x01\x0c\x00\x00\x00\x00"\x03\x88\x00\x00
+SEQ3 REF7 \x9c\x01 CALL1 \xae\x00 CALL6 \xdc\x00 CALL5 
+LOAD SCE228_003 REF6 \x12\x03 CALL7
+SEQ1 \x8c\x01 SEQ4 \xe8s\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 御堂\n　「ふざけてなんかいないさ。\pそんなかわいい子が家の中にいた\n　　ら、我慢できないのが普通だろうが。\p別に血が繋がってるわ\n　　けでもなし、超使い勝手がいい性欲処理道具じゃねえか。@
 　　それとも、モヤシッ子のおまえじゃ、度胸がなくてオナペッ\n　　トにするぐらいが関の山か？\p　……ふふふ」@
@@ -36,9 +39,10 @@ SEQ1 \x8c\x01 SEQ5 \xe8s\x01\x0c\x00\x00\x00\x00"\x03\x88\x00\x00
 御堂\n　「ここでしてみせろよ。\p一回見てみたかったんだよな、そうい\n　　うのさ。\p……感謝しろよ。\pこんな機会でもなきゃ、義妹とセ\n　　ックスなんかできないぜ？」\
 
 \x00
-SEQ3 REF7 V\x03 CALL1 \xae\x00 CALL7 \xdc\x00 CALL6 
-LOAD3 SCE228_004 REF6 \xb0\x05 CALL8
-SEQ1 \x8c\x01 SEQ5 \xecs\x01\x0c\x00\x00\x00\x00"\x03n\x00\x00
+SEQ3 REF7 V\x03 CALL1 \xae\x00 CALL6 \xdc\x00 CALL5 
+LOAD SCE228_004 REF6 \xb0\x05 CALL7
+SEQ1 \x8c\x01 SEQ4 \xecs\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 拓司\n　「断る」@
 御堂\n　「そういう選択肢はお前にはねえんだよ。\pどっちかだ。@
@@ -51,9 +55,10 @@ SEQ1 \x8c\x01 SEQ5 \xecs\x01\x0c\x00\x00\x00\x00"\x03n\x00\x00
 \n早桃\n　「おにいちゃん……」\
 
 \x00
-SEQ3 REF7 \xf4\x05 CALL1 \xae\x00 CALL7 \xdc\x00 CALL6 
-LOAD3 SCE228_005 REF6 \xe6\x07 CALL8
-SEQ1 \x8c\x01 SEQ5 \xf0s\x01\x0c\x00\x00\x00\x00"\x03\x87\x00\x00
+SEQ3 REF7 \xf4\x05 CALL1 \xae\x00 CALL6 \xdc\x00 CALL5 
+LOAD SCE228_005 REF6 \xe6\x07 CALL7
+SEQ1 \x8c\x01 SEQ4 \xf0s\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 拓司\n　「ごめんな。\p恨んでくれても構わない」@
 早桃\n　「ううん。いいの。\p早桃も、あんなヤツにされるより、おにい\n　　ちゃんのほうが……」@
@@ -64,9 +69,10 @@ SEQ1 \x8c\x01 SEQ5 \xf0s\x01\x0c\x00\x00\x00\x00"\x03\x87\x00\x00
 早桃\n　「お、おにいちゃんッ？！\p　大丈夫、おにいちゃん！」\
 
 \x00\x00
-SEQ3 REF7 *\x08 CALL1 \xae\x00 CALL7 \xdc\x00 CALL6 
-LOAD3 SCE228_006 REF6 \x80\n CALL8
-SEQ1 \x8c\x01 SEQ5 \xf4s\x01\x0c\x00\x00\x00\x00"\x03\xaa\x00\x00
+SEQ3 REF7 *\x08 CALL1 \xae\x00 CALL6 \xdc\x00 CALL5 
+LOAD SCE228_006 REF6 \x80\n CALL7
+SEQ1 \x8c\x01 SEQ4 \xf4s\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 御堂\n　「嫌いなんだよね、俺。\pたかだか性欲処理にいろいろ理由くっ\n　　つけるやつらって。\p『愛しているから抱くんだよ』とか『お\n　　前だから勃起するんだよ』とかさ。\p男がそんな理屈で立つか\n　　よ！\p　マ○コ見りゃ立つんだろ！\p　虎菱、え、そうだろうが\n　　よ虎菱！\p　愛してるからじゃなくて、やりたいから立つんだ\n　　ろうがよお！」@
 拓司\n　「ぐっ……」@
@@ -76,9 +82,10 @@ SEQ1 \x8c\x01 SEQ5 \xf4s\x01\x0c\x00\x00\x00\x00"\x03\xaa\x00\x00
 \n黙って様子を見ていた錦城が、あいだに割って入った。\
 
 \x00
-SEQ3 REF7 \xc4\n CALL1 \xae\x00 CALL7 \xdc\x00 CALL6 
-LOAD3 SCE228_007 REF6 \xa6\r CALL8
-SEQ1 \x8c\x01 SEQ5 \xf8s\x01\x0c\x00\x00\x00\x00"\x03\xa9\x00\x00
+SEQ3 REF7 \xc4\n CALL1 \xae\x00 CALL6 \xdc\x00 CALL5 
+LOAD SCE228_007 REF6 \xa6\r CALL7
+SEQ1 \x8c\x01 SEQ4 \xf8s\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 錦城\n　「ねえ、御堂くん。\p虎菱くんに、義妹さんをおかずにオナニー\n　　してもらったらどう？」@
 御堂\n　「ハハハ、そりゃあいい！\p　オナニーに愛なんざねえもんな」@
@@ -89,9 +96,10 @@ SEQ1 \x8c\x01 SEQ5 \xf8s\x01\x0c\x00\x00\x00\x00"\x03\xa9\x00\x00
 　　もっと嫌がって頂戴。\p大切な義妹が嫌がっているにも関わら\n　　ず立つんだととしたら、それは愛で勃起してるんじゃないっ\n　　てことよねえ。\pくすくす」\
 
 \x00
-SEQ3 REF7 \xea\r CALL1 \xae\x00 CALL7 \xdc\x00 CALL6 
-LOAD3 SCE228_008 REF6 \xc8\x10 CALL8
-SEQ1 \x8c\x01 SEQ5 \xfcs\x01\x0c\x00\x00\x00\x00"\x03\x95\x00\x00
+SEQ3 REF7 \xea\r CALL1 \xae\x00 CALL6 \xdc\x00 CALL5 
+LOAD SCE228_008 REF6 \xc8\x10 CALL7
+SEQ1 \x8c\x01 SEQ4 \xfcs\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 早桃\n　「は、離してよお！」@
 錦城\n　「はいはい、あんよを開きましょうね。\p……ズボンも脱いで…\n　　…あら、下にブルマなんて履いてたのね？\p　……ねえ、御堂\n　　くん。\pブルマって、萌える？」@
@@ -100,9 +108,10 @@ SEQ1 \x8c\x01 SEQ5 \xfcs\x01\x0c\x00\x00\x00\x00"\x03\x95\x00\x00
 むっちりとした白いふとももが、ブルマから生えている。\
 
 \x00
-SEQ3 REF7 \x0c\x11 CALL1 \xae\x00 CALL7 \xdc\x00 CALL6 
-LOAD3 SCE228_009 REF6 \x9a\x13 CALL8
-SEQ1 \x8c\x01 SEQ5 \x00t\x01\x0c\x00\x00\x00\x00"\x03\xa1\x00\x00
+SEQ3 REF7 \x0c\x11 CALL1 \xae\x00 CALL6 \xdc\x00 CALL5 
+LOAD SCE228_009 REF6 \x9a\x13 CALL7
+SEQ1 \x8c\x01 SEQ4 \x00t\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 錦城\n　「あら、早桃ちゃん。\pずいぶんふっくらしたおま○こなのねえ。\n　　\pこんな可愛い顔しているのに、いやらしい身体だわ、本当に」\n\p早桃\n　「や、やああ」@
 錦城\n　「そりゃいやよねえ。\pみんなの前で両足拡げられて、盛り上が\n　　ったブルマおま○こをおにいちゃんに見せつけてるんだもの。\n　　\p……御堂くん、虎菱くんにしっかり見せてあげるのよ」@
@@ -112,9 +121,10 @@ SEQ1 \x8c\x01 SEQ5 \x00t\x01\x0c\x00\x00\x00\x00"\x03\xa1\x00\x00
 錦城\n　「あらあら、敏感ねえ。\pこうやってゆっくり撫でてると……あ\n　　ら、なんだか湿ってるみたいだけど？」\
 
 \x00
-SEQ3 REF7 \xde\x13 CALL1 \xae\x00 CALL7 \xdc\x00 CALL6 
-LOAD3 SCE228_010 REF6 \x9c\x16 CALL8
-SEQ1 \x8c\x01 SEQ5 \x04t\x01\x0c\x00\x00\x00\x00"\x03\xa4\x00\x00
+SEQ3 REF7 \xde\x13 CALL1 \xae\x00 CALL6 \xdc\x00 CALL5 
+LOAD SCE228_010 REF6 \x9c\x16 CALL7
+SEQ1 \x8c\x01 SEQ4 \x04t\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 早桃\n　「そ、そんなことないっ！」@
 錦城\n　「ウソおっしゃい。\p虎菱くん、あなたの義妹さん、ブルマの上\n　　から触られただけで濡れてるわよ？\p　すごいわ、この子……\n　　ほうら、きもちいい？\p……いやだわ、見える？\p　指に糸引い\n　　てるわよ？\p　信じられないわ。この様子じゃ、下着はもうぐ\n　　っしょりなんじゃない？\p　そろそろブルマにも恥ずかしい染\n　　みが……」@
@@ -124,9 +134,10 @@ SEQ1 \x8c\x01 SEQ5 \x04t\x01\x0c\x00\x00\x00\x00"\x03\xa4\x00\x00
 理性では押さえきれない動物的な興奮が、頭の中で膨れ上がって\n爆発寸前だった。\
 
 \x00
-SEQ3 REF7 \xe0\x16 CALL1 \xae\x00 CALL7 \xdc\x00 CALL6 
-LOAD3 SCE228_011 REF6 \xaa\x19 CALL8
-SEQ1 \x8c\x01 SEQ5 \x08t\x01\x0c\x00\x00\x00\x00"\x03\xae\x00\x00
+SEQ3 REF7 \xe0\x16 CALL1 \xae\x00 CALL6 \xdc\x00 CALL5 
+LOAD SCE228_011 REF6 \xaa\x19 CALL7
+SEQ1 \x8c\x01 SEQ4 \x08t\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 御堂\n　「おかしいよなあ。\p愛があるんなら勃起しねえはずだよなあ？@
 　　愛してる義妹があんなに嫌がってんだぜ？\p　どうして立つん\n　　だよ？\p　ああ？\p　興奮してんだろ？\p　チ○ポさしこみたくて\n　　仕方ねえんだろ？」@
@@ -138,9 +149,10 @@ SEQ1 \x8c\x01 SEQ5 \x08t\x01\x0c\x00\x00\x00\x00"\x03\xae\x00\x00
 両者とも、うつむいて目を合わせまいとしている。\pしかし両者と\nも、互いの淫らな姿に興奮しきっている……。\
 
 \x00\x00\x00
-SEQ3 REF7 \xee\x19 CALL1 \xae\x00 CALL7 \xdc\x00 CALL6 
-LOAD3 SCE228_012 REF6 \xe0\x1c CALL8
-SEQ1 \x8c\x01 SEQ5 \x0ct\x01\x0c\x00\x00\x00\x00"\x03\xf2\x00\x00
+SEQ3 REF7 \xee\x19 CALL1 \xae\x00 CALL6 \xdc\x00 CALL5 
+LOAD SCE228_012 REF6 \xe0\x1c CALL7
+SEQ1 \x8c\x01 SEQ4 \x0ct\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 その後のことを、拓司は断片的にしか覚えていない。@
 すべては夢の中で起こったことのように思える……いや、そう思\nいたかった。@
@@ -155,9 +167,10 @@ SEQ1 \x8c\x01 SEQ5 \x0ct\x01\x0c\x00\x00\x00\x00"\x03\xf2\x00\x00
 涙を流しながら錦城は笑っていた。\
 
 
-SEQ3 REF7 $\x1d CALL1 \xae\x00 CALL7 \xdc\x00 CALL6 
-LOAD3 SCE228_013 REF6 &! CALL8
-SEQ1 \x8c\x01 SEQ5 \x10t\x01\x0c\x00\x00\x00\x00"\x03\x91\x00\x00
+SEQ3 REF7 $\x1d CALL1 \xae\x00 CALL6 \xdc\x00 CALL5 
+LOAD SCE228_013 REF6 &! CALL7
+SEQ1 \x8c\x01 SEQ4 \x10t\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 御堂はその一部始終を笑いながら眺めていた。しかし常に拓司に\n目をくばっているあたり、あくまで冷静だった。@
 \n御堂\n　「あー面白かった。\pんじゃ、明日はお前だからな。\pマ○コ洗っ\n　　て待ってろよ」@
@@ -170,19 +183,21 @@ SEQ1 \x8c\x01 SEQ5 \x10t\x01\x0c\x00\x00\x00\x00"\x03\x91\x00\x00
 立ちつくす拓司たちの前で、雲居なたねが高く笑った。\
 
 
-SEQ3 REF7 j! CALL1 \xae\x00 CALL7 \xdc\x00 CALL6 
-LOAD3 SCE228_014 REF6 \xe8# CALL8
-SEQ1 \x8c\x01 SEQ5 \x14t\x01\x0c\x00\x00\x00\x00"\x03w\x00\x00
+SEQ3 REF7 j! CALL1 \xae\x00 CALL6 \xdc\x00 CALL5 
+LOAD SCE228_014 REF6 \xe8# CALL7
+SEQ1 \x8c\x01 SEQ4 \x14t\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 なたね\n　「あはははははははは！\p　敵を拘束するときは身体検査くらい\n　　するのが常識だろうがこの民間人！\p　戦士である私が、武器\n　　のひとつくらい隠し持っていないとでも思ったかひっつき星\n　　人！\p　これがただの畳針だと思うなよ。\pこれはテスラ式処置\n　　を施して電流を流した特別製の次元毒針だ！\p　物理的ダメー\n　　ジを超えて存在自体にダメージを与えるからお前みたいな宇\n　　宙人にも効果てきめんだ！\p　思い知ったか！\p　思い知ったか\n　　あああああああ！」\
 
 \x00\x00\x00
-SEQ3 REF7 ,$ CALL1 \xae\x00 CALL7 \xdc\x00 CALL6 \x03\x13\x00\x00
-CHOICE
+SEQ3 REF7 ,$ CALL1 \xae\x00 CALL6 \xdc\x00 CALL5 
+LOAD 
+DIALOGUE_CHOICE_START
 拓司は御堂に躍りかかった\n拓司は凍り付いたまま動かなかった\n\l0,2,
-ENDCHOICE
+DIALOGUE_CHOICE_END
 
 \x00
-SEQ3 REF7 B& CALL1 \xae\x00 CALL7 \xdc\x00 CALL5 \xae\x00 CALL8
-LOAD3 TextClose REF2 \xd4& CALL6 
+SEQ3 REF7 B& CALL1 \xae\x00 CALL6 \xdc\x00 CALL4 \xae\x00 CALL7
+LOAD TextClose REF2 \xd4& CALL5 
 END_FILE

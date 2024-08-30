@@ -1,10 +1,11 @@
 START_FILE
 \x97\r\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00:\x0b\x00
 SEQ2 \t\x01 CALL2 
-LOAD6 .\\Data\\Script\\Bgm.Fob REF2  \x00 CALL8
-LOAD2 PlayCD REF1 J\x00 CALL6 
-LOAD3 SCE034_001 REF6 f\x00 CALL8
-SEQ1 \x8c\x01 SEQ5 \xc0D CALL4 \x03\xb1\x00\x00
+LOAD .\\Data\\Script\\Bgm.Fob REF2  \x00 CALL7
+LOAD PlayCD REF1 J\x00 CALL5 
+LOAD SCE034_001 REF6 f\x00 CALL7
+SEQ1 \x8c\x01 SEQ4 \xc0D CALL3 
+LOAD 
  
 　４階。\p賑やかな教室。\pドアは開け放たれている。@
 　中を覗くと、男子学生たちの姿はすでに教室にはない。@
@@ -21,10 +22,11 @@ SEQ1 \x8c\x01 SEQ5 \xc0D CALL4 \x03\xb1\x00\x00
 
 \x00
 SEQ3 REF7 \xaa\x00 CALL2 
-LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 \x8e\x03 CALL8
-LOAD2 TextOn REF1 \xbc\x03 CALL6 
-LOAD3 SCE034_002 REF6 \xd8\x03 CALL8
-SEQ1 \x8c\x01 SEQ5 \xc4D CALL4 \x03y\x00\x00
+LOAD .\\Data\\Script\\TextFunc.Fob REF1 \x8e\x03 CALL7
+LOAD TextOn REF1 \xbc\x03 CALL5 
+LOAD SCE034_002 REF6 \xd8\x03 CALL7
+SEQ1 \x8c\x01 SEQ4 \xc4D CALL3 
+LOAD 
  
 　まるでそこに何か大切なものがあるかのように……@
 あるいは、そこしか見るべき場所がないかのように……@
@@ -38,9 +40,10 @@ SEQ1 \x8c\x01 SEQ5 \xc4D CALL4 \x03y\x00\x00
 拓司\n　「いや。\pたまには一緒に飯でも食おうかと思ってさ」\
 
 \x00
-SEQ3 REF7 \x1c\x04 CALL1 \x8e\x03 CALL7 \xbc\x03 CALL6 
-LOAD3 SCE034_003 REF6 :\x06 CALL8
-SEQ1 \x8c\x01 SEQ5 \xc8D CALL4 \x03\\\x00\x00
+SEQ3 REF7 \x1c\x04 CALL1 \x8e\x03 CALL6 \xbc\x03 CALL5 
+LOAD SCE034_003 REF6 :\x06 CALL7
+SEQ1 \x8c\x01 SEQ4 \xc8D CALL3 
+LOAD 
  
 早桃\n　「どうして？」@
 拓司\n　「どうしてって……\pなんとなくさ」@
@@ -51,9 +54,10 @@ SEQ1 \x8c\x01 SEQ5 \xc8D CALL4 \x03\\\x00\x00
 \n　そんな声が、時折やや大きめに漏れ聞こえる。\n　早桃は必死にそれに気づかない振りをしているが、声が聞こえ\nるたび、目の中に怯えと恥じらいの影がゆらぐ。\
 
 \x00
-SEQ3 REF7 ~\x06 CALL1 \x8e\x03 CALL7 \xbc\x03 CALL6 
-LOAD3 SCE034_004 REF6 (\x08 CALL8
-SEQ1 \x8c\x01 SEQ5 \xccD CALL4 \x03T\x00\x00
+SEQ3 REF7 ~\x06 CALL1 \x8e\x03 CALL6 \xbc\x03 CALL5 
+LOAD SCE034_004 REF6 (\x08 CALL7
+SEQ1 \x8c\x01 SEQ4 \xccD CALL3 
+LOAD 
  
 　早桃がクラスで孤立しているということはなんとなく把握して\nいるつもりだった。@
 しかし、目の当たりにしたその光景は、あまりにもリアルで、胸\nを締め付けるものだった。@
@@ -64,15 +68,16 @@ SEQ1 \x8c\x01 SEQ5 \xccD CALL4 \x03T\x00\x00
 早桃\n　「わけてあげよっか？」\
 
 \x00\x00\x00
-SEQ3 REF7 l\x08 CALL1 \x8e\x03 CALL7 \xbc\x03 CALL6 
-LOAD3 SCE034_005 REF6 \xf6\t CALL8
-SEQ1 \x8c\x01 SEQ5 \xd0D CALL4 \x03'\x00\x00
+SEQ3 REF7 l\x08 CALL1 \x8e\x03 CALL6 \xbc\x03 CALL5 
+LOAD SCE034_005 REF6 \xf6\t CALL7
+SEQ1 \x8c\x01 SEQ4 \xd0D CALL3 
+LOAD 
  
 拓司\n　「……え？」@
 早桃\n　「これ。\pほとんど口つけてないから」@
 \n　そういって早桃は、ひとかじりしただけのコッペパンを軽く振\nってみせた。\
 
 \x00
-SEQ3 REF7 :\n CALL1 \x8e\x03 CALL7 \xbc\x03 CALL5 \x8e\x03 CALL8
-LOAD3 TextClose REF2 \x1c\x0b CALL6 
+SEQ3 REF7 :\n CALL1 \x8e\x03 CALL6 \xbc\x03 CALL4 \x8e\x03 CALL7
+LOAD TextClose REF2 \x1c\x0b CALL5 
 END_FILE

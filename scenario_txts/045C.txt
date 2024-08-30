@@ -1,7 +1,8 @@
 START_FILE
 \xfd5\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00p-\x00
-LOAD3 SCE045_001 REF6 \x06\x00 CALL8
-SEQ1 \x8c\x01 SEQ5 \xf0U CALL4 \x03b\x00\x00
+LOAD SCE045_001 REF6 \x06\x00 CALL7
+SEQ1 \x8c\x01 SEQ4 \xf0U CALL3 
+LOAD 
  
 拓司\n　「……！」@
 /*■CG17　表示（クロスフェード）*/\a7,-2,-2,0,\a0,16,2,0,\a6,-2,0,0,/*▲BGM　Track08　再生　*/\a2,-1,8,1,\n　非常扉を開けた拓司は、ハッと息を呑んだ。@
@@ -10,10 +11,11 @@ SEQ1 \x8c\x01 SEQ5 \xf0U CALL4 \x03b\x00\x00
 
 \x00\x00
 SEQ3 REF7 J\x00 CALL2 
-LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 \xf2\x01 CALL8
-LOAD2 TextOn REF1  \x02 CALL6 
-LOAD3 SCE045_002 REF6 <\x02 CALL8
-SEQ1 \x8c\x01 SEQ5 \xf4U CALL4 \x03\xb7\x00\x00
+LOAD .\\Data\\Script\\TextFunc.Fob REF1 \xf2\x01 CALL7
+LOAD TextOn REF1  \x02 CALL5 
+LOAD SCE045_002 REF6 <\x02 CALL7
+SEQ1 \x8c\x01 SEQ4 \xf4U CALL3 
+LOAD 
  
 女の子\n　「こんにちわ」@
 \n　そういって女の子は軽く会釈をしてみせた。\p動きはどことなく\n　ゆったりしていて、それが彼女を官能的に見せ、それと同時に用\n　心深くも見せていた。\pまるで心のずっと奥の方から、絶え間なく\n　外の世界を見張っているような感じの女の子だ。@
@@ -25,9 +27,10 @@ SEQ1 \x8c\x01 SEQ5 \xf4U CALL4 \x03\xb7\x00\x00
 　拓司の身体を通り越した向こう側を……拓司が背負った非常扉\n　を……さらに非常口を通り越した向こう側を……どこでもない\n　はるか向こうの一点を、じっと見つめているのだ。\
 
 \x00
-SEQ3 REF7 \x80\x02 CALL1 \xf2\x01 CALL7  \x02 CALL6 
-LOAD3 SCE045_003 REF6 \x96\x05 CALL8
-SEQ1 \x8c\x01 SEQ5 \xf8U CALL4 \x03]\x00\x00
+SEQ3 REF7 \x80\x02 CALL1 \xf2\x01 CALL6  \x02 CALL5 
+LOAD SCE045_003 REF6 \x96\x05 CALL7
+SEQ1 \x8c\x01 SEQ4 \xf8U CALL3 
+LOAD 
  
 女の子\n　「お願いします」@
 \n　女の子がいった。@
@@ -38,9 +41,10 @@ SEQ1 \x8c\x01 SEQ5 \xf8U CALL4 \x03]\x00\x00
 \n　そういうと彼女は、小脇に抱えたファイルから１枚の紙切れを\n大事そうに取り出した。\pそれはＡ４大の紙切れで、そこにはなにか\nびっしりと文字が書き込まれている。\
 
 \x00
-SEQ3 REF7 \xda\x05 CALL1 \xf2\x01 CALL7  \x02 CALL6 
-LOAD3 SCE045_004 REF6 \x88\x07 CALL8
-SEQ1 \x8c\x01 SEQ5 \xfcU CALL4 \x03B\x00\x00
+SEQ3 REF7 \xda\x05 CALL1 \xf2\x01 CALL6  \x02 CALL5 
+LOAD SCE045_004 REF6 \x88\x07 CALL7
+SEQ1 \x8c\x01 SEQ4 \xfcU CALL3 
+LOAD 
  
 女の子\n　「大切なことがたくさん書いてあります。読んでください」@
 \n　女の子は穏やかな口調でそういうと、その紙を拓司の手のなか\n　に押し込んだ。@
@@ -48,9 +52,9 @@ SEQ1 \x8c\x01 SEQ5 \xfcU CALL4 \x03B\x00\x00
 \n　そこには奇妙な図形や計算式、そして明らかに常軌を逸した文\n　章が踊っていた。\
 
 \x00\x00\x00
-SEQ3 REF7 \xcc\x07 CALL1 \xf2\x01 CALL7  \x02 CALL6 
-LOAD3 SCE045_005 REF6 \x0e\t CALL8
-SEQ1 \x8c\x01 SEQ5 \x00V CALL4 \x03\x17\x01\x00
+SEQ3 REF7 \xcc\x07 CALL1 \xf2\x01 CALL6  \x02 CALL5 
+LOAD SCE045_005 REF6 \x0e\t CALL7
+SEQ1 \x8c\x01 SEQ4 \x00V CALL3 \x03\x17\x01\x00
  
 　告発ならびに警告としての私がみなさんにお知らせします。@
 　犯罪的凶悪異星人による、シンリャク行為です（リストラジオ\n　ｘ線。赤外線。紫外線。マイクロ波を使用のことです）。@
@@ -58,9 +62,10 @@ SEQ1 \x8c\x01 SEQ5 \x00V CALL4 \x03\x17\x01\x00
 　電話番号××××－××××。\n　住所×××××××××××……\
 
 \x00
-SEQ3 REF7 R\t CALL1 \xf2\x01 CALL7  \x02 CALL6 
-LOAD3 SCE045_006 REF6 \xe8\r CALL8
-SEQ1 \x8c\x01 SEQ5 \x04V CALL4 \x03O\x00\x00
+SEQ3 REF7 R\t CALL1 \xf2\x01 CALL6  \x02 CALL5 
+LOAD SCE045_006 REF6 \xe8\r CALL7
+SEQ1 \x8c\x01 SEQ4 \x04V CALL3 
+LOAD 
  
 \n　雲居なたね。@
 　ああ、この子が……と拓司は思った。@
@@ -71,9 +76,10 @@ SEQ1 \x8c\x01 SEQ5 \x04V CALL4 \x03O\x00\x00
 　そして雲居なたねは、今年の春、別の意味でさらに有名にな\n　った。\
 
 \x00
-SEQ3 REF7 ,\x0e CALL1 \xf2\x01 CALL7  \x02 CALL6 
-LOAD3 SCE045_007 REF6 \xa2\x0f CALL8
-SEQ1 \x8c\x01 SEQ5 \x08V CALL4 \x03\xac\x00\x00
+SEQ3 REF7 ,\x0e CALL1 \xf2\x01 CALL6  \x02 CALL5 
+LOAD SCE045_007 REF6 \xa2\x0f CALL7
+SEQ1 \x8c\x01 SEQ4 \x08V CALL3 
+LOAD 
  
 　－－雲居なたねは何者かにレイプされたらしい。@
 　噂の発生源は定かではないし、それが真実なのかどうかも拓司\nにはわからない。\pしかし雲居なたねが２週間以上学園を休んだ\nのは事実で、校内の学生はみなそれと噂を結びつけて面白がった@
@@ -81,9 +87,10 @@ SEQ1 \x8c\x01 SEQ5 \x08V CALL4 \x03\xac\x00\x00
 　雲居なたねはＵＦＯに拉致されて、宇宙人に身体検査されたら\nしい……優秀な地球人のサンプルとして、身体の奥まで調べ尽く\nされたらしい……よくある話だよね……一種の現実逃避……宇宙\n人にレイプされたと信じることでレイプされたという現実から自\n分を守ってるわけだよ……なんかそういうの小説で読んだ気がす\nる……嘲笑……嘲笑……嘲笑。\
 
 \x00
-SEQ3 REF7 \xe6\x0f CALL1 \xf2\x01 CALL7  \x02 CALL6 
-LOAD3 SCE045_008 REF6 \xd0\x12 CALL8
-SEQ1 \x8c\x01 SEQ5 \x0cV CALL4 \x03\x96\x00\x00
+SEQ3 REF7 \xe6\x0f CALL1 \xf2\x01 CALL6  \x02 CALL5 
+LOAD SCE045_008 REF6 \xd0\x12 CALL7
+SEQ1 \x8c\x01 SEQ4 \x0cV CALL3 
+LOAD 
  
 　しかしそういった無責任な噂話は、１ヶ月後、雲居なたねが\n登校を再開したのを期に、ピタリと口にされなくなった。@
 　噂話が、本当だったからだ。@
@@ -91,9 +98,10 @@ SEQ1 \x8c\x01 SEQ5 \x0cV CALL4 \x03\x96\x00\x00
 　虚ろな瞳で、誰かまわずその話をして回った。どのようにＵＦ\nＯに拉致されて、どのように身体を調べられたのか？\p　宇宙人は\nどのような外見で、どのような陰謀を企てているのか？\p　地球人\nはどのような対策を練って、どのように対抗しなければならない\nのか……？\p　最初は面白がっていた学生たちも、やがてそれが冗\n談ではすまされないということに気づき、雲居なたねを避ける\nようになっていった。\
 
 \x00
-SEQ3 REF7 \x14\x13 CALL1 \xf2\x01 CALL7  \x02 CALL6 
-LOAD3 SCE045_009 REF6 \xa6\x15 CALL8
-SEQ1 \x8c\x01 SEQ5 \x10V CALL4 \x03\x8b\x00\x00
+SEQ3 REF7 \x14\x13 CALL1 \xf2\x01 CALL6  \x02 CALL5 
+LOAD SCE045_009 REF6 \xa6\x15 CALL7
+SEQ1 \x8c\x01 SEQ4 \x10V CALL3 
+LOAD 
  
 　こうして実際に向かい合ったのは初めてだったが、確かにそれ\nは、遠目で見たことのある雲居なたね、そのひとだった。@
 　電波系。@
@@ -103,9 +111,10 @@ SEQ1 \x8c\x01 SEQ5 \x10V CALL4 \x03\x8b\x00\x00
 　壊れやすい、ガラス細工のようなイメージが。\
 
 \x00\x00\x00
-SEQ3 REF7 \xea\x15 CALL1 \xf2\x01 CALL7  \x02 CALL6 
-LOAD3 SCE045_010 REF6 P\x18 CALL8
-SEQ1 \x8c\x01 SEQ5 \x14V CALL4 \x03W\x00\x00
+SEQ3 REF7 \xea\x15 CALL1 \xf2\x01 CALL6  \x02 CALL5 
+LOAD SCE045_010 REF6 P\x18 CALL7
+SEQ1 \x8c\x01 SEQ4 \x14V CALL3 
+LOAD 
  
 なたね\n　「わかりますか？」@
 拓司\n　「え？」@
@@ -116,18 +125,20 @@ SEQ1 \x8c\x01 SEQ5 \x14V CALL4 \x03W\x00\x00
 \n　なたねは照れくさそうにほほえんだ。\
 
 \x00
-SEQ3 REF7 \x94\x18 CALL1 \xf2\x01 CALL7  \x02 CALL6 
-LOAD3 SCE045_011 REF6 *\x1a CALL8
-SEQ1 \x8c\x01 SEQ5 \x18V CALL4 \x03O\x00\x00
+SEQ3 REF7 \x94\x18 CALL1 \xf2\x01 CALL6  \x02 CALL5 
+LOAD SCE045_011 REF6 *\x1a CALL7
+SEQ1 \x8c\x01 SEQ4 \x18V CALL3 
+LOAD 
  
 なたね\n　「よかったら、それをコピーして、お友達に配ってほしいんで\n　　す。\p私ひとりの力じゃ、とても世界中にメッセージを届ける\n　　ことはできないから。\pそれに最近、みんな、私からだと、チ\n　　ラシ、うけとってくれないから……」@
 \n　なたねはそういって、もう一度笑った。@
 　寂しそうなほほえみだった。\
 
 \x00
-SEQ3 REF7 n\x1a CALL1 \xf2\x01 CALL7  \x02 CALL6 
-LOAD3 SCE045_012 REF6 \xe4\x1b CALL8
-SEQ1 \x8c\x01 SEQ5 \x1cV CALL4 \x03d\x00\x00
+SEQ3 REF7 n\x1a CALL1 \xf2\x01 CALL6  \x02 CALL5 
+LOAD SCE045_012 REF6 \xe4\x1b CALL7
+SEQ1 \x8c\x01 SEQ4 \x1cV CALL3 
+LOAD 
  
 　宇宙人。@
 　電波系。@
@@ -140,9 +151,10 @@ SEQ1 \x8c\x01 SEQ5 \x1cV CALL4 \x03d\x00\x00
 　真剣に自分と向き合っているのだ。\
 
 \x00
-SEQ3 REF7 (\x1c CALL1 \xf2\x01 CALL7  \x02 CALL6 
-LOAD3 SCE045_013 REF6 \xf2\x1d CALL8
-SEQ1 \x8c\x01 SEQ5  V CALL4 \x03\x8b\x00\x00
+SEQ3 REF7 (\x1c CALL1 \xf2\x01 CALL6  \x02 CALL5 
+LOAD SCE045_013 REF6 \xf2\x1d CALL7
+SEQ1 \x8c\x01 SEQ4  V CALL3 
+LOAD 
  
 御堂\n　「おい」@
 /*▲BGM　停止　*/\a4,-1,0,0,/*■CG18　表示（クロスフェード）*/\a7,-2,-2,0,\a0,17,2,0,\a6,-2,0,0,/*▲BGM　Track09　再生　*/\a2,-1,9,1,\n　振り向くと、廊下の壁により掛かって、御堂俊一が立っていた@
@@ -155,9 +167,10 @@ SEQ1 \x8c\x01 SEQ5  V CALL4 \x03\x8b\x00\x00
 \n　御堂はフン、と鼻で笑った。\
 
 
-SEQ3 REF7 6\x1e CALL1 \xf2\x01 CALL7  \x02 CALL6 
-LOAD3 SCE045_014 REF6 \x9c  CALL8
-SEQ1 \x8c\x01 SEQ5 $V CALL4 \x03V\x00\x00
+SEQ3 REF7 6\x1e CALL1 \xf2\x01 CALL6  \x02 CALL5 
+LOAD SCE045_014 REF6 \x9c  CALL7
+SEQ1 \x8c\x01 SEQ4 $V CALL3 
+LOAD 
  
 御堂\n　「クールってやつか？　それともニヒルっていうのか？」@
 拓司\n　「好きなようにいえ」@
@@ -170,9 +183,10 @@ SEQ1 \x8c\x01 SEQ5 $V CALL4 \x03V\x00\x00
 拓司\n　「なに？」\
 
 \x00
-SEQ3 REF7 \xe0  CALL1 \xf2\x01 CALL7  \x02 CALL6 
-LOAD3 SCE045_015 REF6 r" CALL8
-SEQ1 \x8c\x01 SEQ5 (V CALL4 \x03[\x00\x00
+SEQ3 REF7 \xe0  CALL1 \xf2\x01 CALL6  \x02 CALL5 
+LOAD SCE045_015 REF6 r" CALL7
+SEQ1 \x8c\x01 SEQ4 (V CALL3 
+LOAD 
  
 御堂\n　「なたねちゃんだよ」@
 \n　御堂は顎をしゃくって、拓司の横に立つなたねを示した。@
@@ -183,9 +197,10 @@ SEQ1 \x8c\x01 SEQ5 (V CALL4 \x03[\x00\x00
 拓司\n　「……何の話だ？」\
 
 \x00\x00\x00
-SEQ3 REF7 \xb6" CALL1 \xf2\x01 CALL7  \x02 CALL6 
-LOAD3 SCE045_016 REF6 \\$ CALL8
-SEQ1 \x8c\x01 SEQ5 ,V CALL4 \x03\x8d\x00\x00
+SEQ3 REF7 \xb6" CALL1 \xf2\x01 CALL6  \x02 CALL5 
+LOAD SCE045_016 REF6 \\$ CALL7
+SEQ1 \x8c\x01 SEQ4 ,V CALL3 
+LOAD 
  
 御堂\n　「協力だよ。\p地球防衛計画に手を貸してるんだよ。@
 　　……そうだよな、なたねちゃん！」@
@@ -198,9 +213,10 @@ SEQ1 \x8c\x01 SEQ5 ,V CALL4 \x03\x8d\x00\x00
 拓司\n　「……」\
 
 \x00
-SEQ3 REF7 \xa0$ CALL1 \xf2\x01 CALL7  \x02 CALL6 
-LOAD3 SCE045_017 REF6 \x0e' CALL8
-SEQ1 \x8c\x01 SEQ5 0V CALL4 \x03\x81\x00\x00
+SEQ3 REF7 \xa0$ CALL1 \xf2\x01 CALL6  \x02 CALL5 
+LOAD SCE045_017 REF6 \x0e' CALL7
+SEQ1 \x8c\x01 SEQ4 0V CALL3 
+LOAD 
  
 なたね\n　「だから、私とあなたの出会いもまた、必然なの。\pわかる、虎\n　　菱拓司くん？」@
 \n　フルネームで呼ばれて拓司はギョッとした。\pすぐに御堂がそれ\n　を笑い飛ばす。@
@@ -211,9 +227,10 @@ SEQ1 \x8c\x01 SEQ5 0V CALL4 \x03\x81\x00\x00
 　無意味な笑いがまきおこる。\
 
 \x00\x00\x00
-SEQ3 REF7 R' CALL1 \xf2\x01 CALL7  \x02 CALL6 
-LOAD3 SCE045_019 REF6 \x90) CALL8
-SEQ1 \x8c\x01 SEQ5 8V CALL4 \x03V\x00\x00
+SEQ3 REF7 R' CALL1 \xf2\x01 CALL6  \x02 CALL5 
+LOAD SCE045_019 REF6 \x90) CALL7
+SEQ1 \x8c\x01 SEQ4 8V CALL3 
+LOAD 
  
 拓司\n　「……行こう、雲居さん」@
 \n拓司はいった。@
@@ -226,19 +243,21 @@ SEQ1 \x8c\x01 SEQ5 8V CALL4 \x03V\x00\x00
 拓司\n　「……なに？」\
 
 \x00
-SEQ3 REF7 \xd4) CALL1 \xf2\x01 CALL7  \x02 CALL6 
-LOAD3 SCE045_020 REF6 f+ CALL8
-SEQ1 \x8c\x01 SEQ5 <V CALL4 \x03?\x00\x00
+SEQ3 REF7 \xd4) CALL1 \xf2\x01 CALL6  \x02 CALL5 
+LOAD SCE045_020 REF6 f+ CALL7
+SEQ1 \x8c\x01 SEQ4 <V CALL3 
+LOAD 
  
 御堂\n　「そうだ、お前も来るか？\p　天才少女雲居なたねさんの学説\n　　によると、人間と人間の出会いにはすべからく意味があるら\n　　しいぜ？\p　ってことは、ここでおれたちが逢ったことも、偶\n　　然じゃないってことだろ？\p　ナ……来いよ、虎菱？」\
 
 \x00
-SEQ3 REF7 \xaa+ CALL1 \xf2\x01 CALL7  \x02 CALL6 \x03\x0b\x00\x00
-CHOICE
+SEQ3 REF7 \xaa+ CALL1 \xf2\x01 CALL6  \x02 CALL5 
+LOAD 
+DIALOGUE_CHOICE_START
 御堂に従う\n御堂を無視する\n\l0,2,
-ENDCHOICE
+DIALOGUE_CHOICE_END
 
 \x00
-SEQ3 REF7 \xe0, CALL1 \xf2\x01 CALL7  \x02 CALL5 \xf2\x01 CALL8
-LOAD3 TextClose REF2 R- CALL6 
+SEQ3 REF7 \xe0, CALL1 \xf2\x01 CALL6  \x02 CALL4 \xf2\x01 CALL7
+LOAD TextClose REF2 R- CALL5 
 END_FILE

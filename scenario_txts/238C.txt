@@ -1,7 +1,8 @@
 START_FILE
 \xa2\x8f\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00Ds\x00
-LOAD3 SCE238_001 REF6 \x06\x00 CALL8
-SEQ1 \x8c\x01 SEQ5 \x80\x83\x01\x0c\x00\x00\x00\x00"\x03\x8a\x00\x00
+LOAD SCE238_001 REF6 \x06\x00 CALL7
+SEQ1 \x8c\x01 SEQ4 \x80\x83\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 教授\n　「よかった。\p本当に良かった。\pこの前、目を離した隙に隣室の\n　　患者が、この部屋に来ただろう？」@
 /*▲BGM　停止*/\a4,-1,0,0,拓司\n　「隣室の……？」@
@@ -11,13 +12,14 @@ SEQ1 \x8c\x01 SEQ5 \x80\x83\x01\x0c\x00\x00\x00\x00"\x03\x8a\x00\x00
 
 \x00\x00\x00
 SEQ3 REF7 J\x00 CALL2 
-LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 \x92\x02 CALL8
-LOAD2 TextOn REF1 \xc0\x02 CALL6 
+LOAD .\\Data\\Script\\TextFunc.Fob REF1 \x92\x02 CALL7
+LOAD TextOn REF1 \xc0\x02 CALL5 
 SEQ2 \x0c\x01 CALL2 
-LOAD6 .\\Data\\Script\\Bgm.Fob REF2 \xf6\x02 CALL8
-LOAD2 PlayCD REF1  \x03 CALL6 
-LOAD3 SCE238_002 REF6 <\x03 CALL8
-SEQ1 \x8c\x01 SEQ5 \x84\x83\x01\x0c\x00\x00\x00\x00"\x03\xaf\x00\x00
+LOAD .\\Data\\Script\\Bgm.Fob REF2 \xf6\x02 CALL7
+LOAD PlayCD REF1  \x03 CALL5 
+LOAD SCE238_002 REF6 <\x03 CALL7
+SEQ1 \x8c\x01 SEQ4 \x84\x83\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 拓司\n　「教授」@
 教授\n　「なにかね？」@
@@ -27,9 +29,10 @@ SEQ1 \x8c\x01 SEQ5 \x84\x83\x01\x0c\x00\x00\x00\x00"\x03\xaf\x00\x00
 　　スッキリしてる。\p……あんたは『雲居ナタネがこの世界に\n　　存在する』ことを、自分で語ってしまったんだ……だからい\n　　ま、おれは彼女が語ったことを実践して、世界を証明するこ\n　　とができる……こんなふうに」\
 
 \x00
-SEQ3 REF7 \x80\x03 CALL1 \x92\x02 CALL7 \xc0\x02 CALL6 
-LOAD3 SCE238_003 REF6 v\x06 CALL8
-SEQ1 \x8c\x01 SEQ5 \x88\x83\x01\x0c\x00\x00\x00\x00"\x03\xc6\x00\x00
+SEQ3 REF7 \x80\x03 CALL1 \x92\x02 CALL6 \xc0\x02 CALL5 
+LOAD SCE238_003 REF6 v\x06 CALL7
+SEQ1 \x8c\x01 SEQ4 \x88\x83\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 拓司の視線をおって教授はふりかえり、ぎょと身をすくませた。@
 教授の背後に、高さ２メートルの巨大なアイスクリームパフェが\n屹立していた。@
@@ -39,9 +42,10 @@ SEQ1 \x8c\x01 SEQ5 \x88\x83\x01\x0c\x00\x00\x00\x00"\x03\xc6\x00\x00
 　　どこにパフェなどがあると？\p　私は、君が何をいっているの\n　　かさっぱりわからんよ」\
 
 \x00\x00\x00
-SEQ3 REF7 \xba\x06 CALL1 \x92\x02 CALL7 \xc0\x02 CALL6 
-LOAD3 SCE238_004 REF6 \x0c\n CALL8
-SEQ1 \x8c\x01 SEQ5 \x8c\x83\x01\x0c\x00\x00\x00\x00"\x03\xa1\x00\x00
+SEQ3 REF7 \xba\x06 CALL1 \x92\x02 CALL6 \xc0\x02 CALL5 
+LOAD SCE238_004 REF6 \x0c\n CALL7
+SEQ1 \x8c\x01 SEQ4 \x8c\x83\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 拓司\n　「なるほど、そこにあるパフェは、狂ったおれにしか見えない\n　　幻影だと？\p　うまいな。\pなかなかうまい理屈だよ。@
 　　以前のおれだったら騙されていただろうな。\pいいだろう。@
@@ -56,9 +60,10 @@ SEQ1 \x8c\x01 SEQ5 \x8c\x83\x01\x0c\x00\x00\x00\x00"\x03\xa1\x00\x00
 それは、教授が作り上げたニセモノの拓司の姿だったのだ。\
 
 \x00
-SEQ3 REF7 P\n CALL1 \x92\x02 CALL7 \xc0\x02 CALL6 
-LOAD3 SCE238_005 REF6 \x0e\r CALL8
-SEQ1 \x8c\x01 SEQ5 \x90\x83\x01\x0c\x00\x00\x00\x00"\x03E\x00\x00
+SEQ3 REF7 P\n CALL1 \x92\x02 CALL6 \xc0\x02 CALL5 
+LOAD SCE238_005 REF6 \x0e\r CALL7
+SEQ1 \x8c\x01 SEQ4 \x90\x83\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 拓司\n　「……さあて。\pどういうことか説明してもらおうか……」@
 教授\n　「……」@
@@ -66,9 +71,10 @@ SEQ1 \x8c\x01 SEQ5 \x90\x83\x01\x0c\x00\x00\x00\x00"\x03E\x00\x00
 教授\n　「……」\
 
 \x00\x00\x00
-SEQ3 REF7 R\r CALL1 \x92\x02 CALL7 \xc0\x02 CALL6 
-LOAD3 SCE238_006 REF6 \xa0\x0e CALL8
-SEQ1 \x8c\x01 SEQ5 \x94\x83\x01\x0c\x00\x00\x00\x00"\x03\x98\x00\x00
+SEQ3 REF7 R\r CALL1 \x92\x02 CALL6 \xc0\x02 CALL5 
+LOAD SCE238_006 REF6 \xa0\x0e CALL7
+SEQ1 \x8c\x01 SEQ4 \x94\x83\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 拓司\n　「おれは信じる。\p『雲居ナタネが語った世界』を信じる。@
 　　おれは望む物を創ることができると……たとえばこんなふう\n　　に！」@
@@ -85,21 +91,23 @@ SEQ1 \x8c\x01 SEQ5 \x94\x83\x01\x0c\x00\x00\x00\x00"\x03\x98\x00\x00
 教授\n　「……」\
 
 \x00\x00\x00
-SEQ3 REF7 \xe4\x0e CALL1 \x92\x02 CALL7 \xc0\x02 CALL6 
-LOAD3 SCE238_007 REF6 ~\x11 CALL8
-SEQ1 \x8c\x01 SEQ5 \x98\x83\x01\x0c\x00\x00\x00\x00"\x03r\x00\x00
+SEQ3 REF7 \xe4\x0e CALL1 \x92\x02 CALL6 \xc0\x02 CALL5 
+LOAD SCE238_007 REF6 ~\x11 CALL7
+SEQ1 \x8c\x01 SEQ4 \x98\x83\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 拓司\n　「あんたが宇宙人なのか、なんなのかは知らない。\pでも、おれ\n　　はあんたを否定する。\pあんたが創ったこの白い部屋の世界を\n　　……否定する。\pいままでこの世界で、おれはお前が見る夢で\n　　しかなかった。\pしかし、それはもう終わりだ。\pおれはいま、\n　　おれがおれであることをハッキリと認識した。\pだからおれは\n　　おれだ。\pおれはここにいて、おまえはおれが見る夢になる」@
 教授\n　「……」@
 拓司\n　「見ろ。\p世界はいま－－崩れ去る！」\
 
 \x00
-SEQ3 REF7 \xc2\x11 CALL1 \x92\x02 CALL7 \xc0\x02 CALL6 
+SEQ3 REF7 \xc2\x11 CALL1 \x92\x02 CALL6 \xc0\x02 CALL5 
 SEQ2 \xc8\x00 CALL2 
-LOAD6 .\\Data\\Script\\Bg.Fob REF3 \xde\x13 CALL8
-LOAD4 BgAutoFadeIn REF3 \x08\x14 CALL6 
-LOAD3 SCE238_008 REF6 ,\x14 CALL8
-SEQ1 \x8c\x01 SEQ5 \x9c\x83\x01\x0c\x00\x00\x00\x00"\x03v\x00\x00
+LOAD .\\Data\\Script\\Bg.Fob REF3 \xde\x13 CALL7
+LOAD BgAutoFadeIn REF3 \x08\x14 CALL5 
+LOAD SCE238_008 REF6 ,\x14 CALL7
+SEQ1 \x8c\x01 SEQ4 \x9c\x83\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 文字通り、白い壁が粉微塵と弾けとんだ。\pベッドも、換気ファン\nも、何もかもが破片となって散った。@
 教授が、おお、と驚愕とも悲鳴ともつかぬ声をあげる。@
@@ -109,9 +117,10 @@ SEQ1 \x8c\x01 SEQ5 \x9c\x83\x01\x0c\x00\x00\x00\x00"\x03v\x00\x00
 拓司は一瞬、自分の存在が揺らいだのを感じた。\pしかし、それは\nちゃちな手品でしかなかった。\pすべてを理解したいま、拓司は教\n授の攻撃の意味をすべて理解しつくしていた。\
 
 \x00\x00\x00
-SEQ3 REF7 p\x14 CALL1 \x92\x02 CALL7 \xc0\x02 CALL6 
-LOAD3 SCE238_009 REF6 \x82\x16 CALL8
-SEQ1 \x8c\x01 SEQ5 \xa0\x83\x01\x0c\x00\x00\x00\x00"\x03j\x00\x00
+SEQ3 REF7 p\x14 CALL1 \x92\x02 CALL6 \xc0\x02 CALL5 
+LOAD SCE238_009 REF6 \x82\x16 CALL7
+SEQ1 \x8c\x01 SEQ4 \xa0\x83\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 拓司\n　「消えろ」@
 \nひとつの世界を滅亡させた魔人と、その世界最後の生き残りの決\n戦。@
@@ -124,10 +133,11 @@ SEQ1 \x8c\x01 SEQ5 \xa0\x83\x01\x0c\x00\x00\x00\x00"\x03j\x00\x00
 目を覚ますと消えてしまう夢の中の怪物のごとく……そう、まさ\nに教授は拓司の夢となったのだ。\
 
 \x00
-SEQ3 REF7 \xc6\x16 CALL1 \x92\x02 CALL7 \xc0\x02 CALL5 \xf6\x02 CALL8
-LOAD2 StopCD REF1 \xb4\x18 CALL6 
-LOAD3 SCE238_010 REF6 \xd0\x18 CALL8
-SEQ1 \x8c\x01 SEQ5 \xa4\x83\x01\x0c\x00\x00\x00\x00"\x03\xc5\x00\x00
+SEQ3 REF7 \xc6\x16 CALL1 \x92\x02 CALL6 \xc0\x02 CALL4 \xf6\x02 CALL7
+LOAD StopCD REF1 \xb4\x18 CALL5 
+LOAD SCE238_010 REF6 \xd0\x18 CALL7
+SEQ1 \x8c\x01 SEQ4 \xa4\x83\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 ハルマゲドンは終わった。@
 あとにはただ、白い空間が残された。@
@@ -147,9 +157,10 @@ SEQ1 \x8c\x01 SEQ5 \xa4\x83\x01\x0c\x00\x00\x00\x00"\x03\xc5\x00\x00
 そして世界は、おれそのもなのだ。\
 
 \x00\x00\x00
-SEQ3 REF7 \x14\x19 CALL1 \x92\x02 CALL7 \xc0\x02 CALL6 
-LOAD3 SCE238_011 REF6 b\x1c CALL8
-SEQ1 \x8c\x01 SEQ5 \xa8\x83\x01\x0c\x00\x00\x00\x00"\x03J\x00\x00
+SEQ3 REF7 \x14\x19 CALL1 \x92\x02 CALL6 \xc0\x02 CALL5 
+LOAD SCE238_011 REF6 b\x1c CALL7
+SEQ1 \x8c\x01 SEQ4 \xa8\x83\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 拓司\n　「……そういうことなんだろう、雲居さん？」@
 \n拓司は振り返っていった。@
@@ -161,9 +172,10 @@ SEQ1 \x8c\x01 SEQ5 \xa8\x83\x01\x0c\x00\x00\x00\x00"\x03J\x00\x00
 ナタネ\n　「そうね」\
 
 \x00
-SEQ3 REF7 \xa6\x1c CALL1 \x92\x02 CALL7 \xc0\x02 CALL6 
-LOAD3 SCE238_012 REF6 \x08\x1e CALL8
-SEQ1 \x8c\x01 SEQ5 \xac\x83\x01\x0c\x00\x00\x00\x00"\x03`\x00\x00
+SEQ3 REF7 \xa6\x1c CALL1 \x92\x02 CALL6 \xc0\x02 CALL5 
+LOAD SCE238_012 REF6 \x08\x1e CALL7
+SEQ1 \x8c\x01 SEQ4 \xac\x83\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 拓司\n　「どこから作るんだい？\p　太陽は東から昇って西に沈むってこ\n　　とを定義することからかい？\p　万有引力の法則からかい？@
 　　あるいは、おれのしらない世界を世界たらしめている法則が\n　　あるのかい？」@
@@ -173,26 +185,28 @@ SEQ1 \x8c\x01 SEQ5 \xac\x83\x01\x0c\x00\x00\x00\x00"\x03`\x00\x00
 そして世界を創った。\
 
 \x00
-SEQ3 REF7 L\x1e CALL1 \x92\x02 CALL7 \xc0\x02 CALL6 
-LOAD3 SCE238_013 REF6 \x06  CALL8
-SEQ1 \x8c\x01 SEQ5 \xb0\x83\x01\x0c\x00\x00\x00\x00"REF7 \x92\x02 CALL8
-LOAD5 TextWindowOffDirectREF7 V  CALL6 
-SEQ2 \x02\x00 CALL2  \x1e\x04\x00\x00\r\x00\x00\x1e\x01\x00 CALL2  \x1e\x08\x00\x00\r\x00\x00\x1e\x00\x00\x00 CALL1 \xf6\x02 CALL8
-LOAD2 SePlay REF1 \xd8  CALL6 
-SEQ2 \xca\x00 CALL1 \xde\x13 CALL8
-LOAD4 BgNormalFadeIn REF1 \x1a! CALL6 
-SEQ2 \x02\x00 CALL1 \xf6\x02 CALL8
-LOAD2 SeWait REF1 d! CALL6 
-SEQ2 \xc9\x00 CALL1 \xde\x13 CALL7 \x1a! CALL5 \x92\x02 CALL8
-LOAD4 TextWindowOn REF3 \xc0! CALL6 \x03\x12\x00\x00
+SEQ3 REF7 L\x1e CALL1 \x92\x02 CALL6 \xc0\x02 CALL5 
+LOAD SCE238_013 REF6 \x06  CALL7
+SEQ1 \x8c\x01 SEQ4 \xb0\x83\x01\x0c\x00\x00\x00\x00" REF7 \x92\x02 CALL7
+LOAD TextWindowOffDirect REF7 V  CALL5 
+SEQ2 \x02\x00 CALL2  \x1e\x04\x00\x00\r\x00\x00\x1e\x01\x00 CALL2  \x1e\x08\x00\x00\r\x00\x00\x1e\x00\x00\x00 CALL1 \xf6\x02 CALL7
+LOAD SePlay REF1 \xd8  CALL5 
+SEQ2 \xca\x00 CALL1 \xde\x13 CALL7
+LOAD BgNormalFadeIn REF1 \x1a! CALL5 
+SEQ2 \x02\x00 CALL1 \xf6\x02 CALL7
+LOAD SeWait REF1 d! CALL5 
+SEQ2 \xc9\x00 CALL1 \xde\x13 CALL6 \x1a! CALL4 \x92\x02 CALL7
+LOAD TextWindowOn REF3 \xc0! CALL5 
+LOAD 
  
 \n\n\n\n\n\n\n\n\n\n　　　　　　　　　　「あたらしいせかい。」\
 
 \x00
-SEQ3 REF7 \xe4! CALL1 \x92\x02 CALL7 \xc0\x02 CALL6 
-SEQ2 \x07\x01 CALL1 \xf6\x02 CALL7  \x03 CALL6 
-LOAD3 SCE238_014 REF6 \x9a" CALL8
-SEQ1 \x8c\x01 SEQ5 \xb4\x83\x01\x0c\x00\x00\x00\x00"\x03\x7f\x00\x00
+SEQ3 REF7 \xe4! CALL1 \x92\x02 CALL6 \xc0\x02 CALL5 
+SEQ2 \x07\x01 CALL1 \xf6\x02 CALL6  \x03 CALL5 
+LOAD SCE238_014 REF6 \x9a" CALL7
+SEQ1 \x8c\x01 SEQ4 \xb4\x83\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 ドン・ドン・ドン・ドン……@
 \nなにかが身体を押しつぶそうとしている。\pずっしりと重い塊が、\n腹の上に叩き付けられている。@
@@ -205,9 +219,10 @@ SEQ1 \x8c\x01 SEQ5 \xb4\x83\x01\x0c\x00\x00\x00\x00"\x03\x7f\x00\x00
 早桃\n　「おにいちゃんが起きないのが悪いんだからね！」\
 
 \x00\x00
-SEQ3 REF7 \xde" CALL1 \x92\x02 CALL7 \xc0\x02 CALL6 
-LOAD3 SCE238_015 REF6 \x14% CALL8
-SEQ1 \x8c\x01 SEQ5 \xb8\x83\x01\x0c\x00\x00\x00\x00"\x03~\x00\x00
+SEQ3 REF7 \xde" CALL1 \x92\x02 CALL6 \xc0\x02 CALL5 
+LOAD SCE238_015 REF6 \x14% CALL7
+SEQ1 \x8c\x01 SEQ4 \xb8\x83\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 義妹の早桃が、拓司の腹の上に腰掛けて頬を膨らませている。@
 窓からは爽やかな朝日が射し込んでいる。@
@@ -219,9 +234,10 @@ SEQ1 \x8c\x01 SEQ5 \xb8\x83\x01\x0c\x00\x00\x00\x00"\x03~\x00\x00
 早桃\n　「ゲ、とはなによゲ、とはっ！」\
 
 \x00
-SEQ3 REF7 X% CALL1 \x92\x02 CALL7 \xc0\x02 CALL6 
-LOAD3 SCE238_016 REF6 \x8a' CALL8
-SEQ1 \x8c\x01 SEQ5 \xbc\x83\x01\x0c\x00\x00\x00\x00"\x03~\x00\x00
+SEQ3 REF7 X% CALL1 \x92\x02 CALL6 \xc0\x02 CALL5 
+LOAD SCE238_016 REF6 \x8a' CALL7
+SEQ1 \x8c\x01 SEQ4 \xbc\x83\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 拓司\n　「お、お前なあ。\pもうちょっとおしとやかにならないと、嫁の\n　　もらい手がなくなるぞ？」@
 早桃\n　「う、うっさいわね！\p　早桃は……早桃は結婚なんかしないか\n　　らいいもん。\pだって、早桃、早桃……」@
@@ -232,9 +248,10 @@ SEQ1 \x8c\x01 SEQ5 \xbc\x83\x01\x0c\x00\x00\x00\x00"\x03~\x00\x00
 \n拓司\n　「のあああああっ！\p　優しい兄上を何度殴れば気が済むんだ、\n　　この義妹わっ？！」\
 
 \x00
-SEQ3 REF7 \xce' CALL1 \x92\x02 CALL7 \xc0\x02 CALL6 
-LOAD3 SCE238_017 REF6 \x00* CALL8
-SEQ1 \x8c\x01 SEQ5 \xc0\x83\x01\x0c\x00\x00\x00\x00"\x03w\x00\x00
+SEQ3 REF7 \xce' CALL1 \x92\x02 CALL6 \xc0\x02 CALL5 
+LOAD SCE238_017 REF6 \x00* CALL7
+SEQ1 \x8c\x01 SEQ4 \xc0\x83\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 早桃\n　「起きるまで何度でも殴ってさしあげてよ、おにいさま？（ニ\n　　ヤリ）」@
 拓司\n　「へいへい、起きますよ。\p起きればいいんでしょ……（よっこ\n　　いしょ）」@
@@ -246,9 +263,10 @@ SEQ1 \x8c\x01 SEQ5 \xc0\x83\x01\x0c\x00\x00\x00\x00"\x03w\x00\x00
 拓司\n　「だからきゃーきゃー叫ばれても……」\
 
 \x00
-SEQ3 REF7 D* CALL1 \x92\x02 CALL7 \xc0\x02 CALL6 
-LOAD3 SCE238_018 REF6 Z, CALL8
-SEQ1 \x8c\x01 SEQ5 \xc4\x83\x01\x0c\x00\x00\x00\x00"\x03^\x00\x00
+SEQ3 REF7 D* CALL1 \x92\x02 CALL6 \xc0\x02 CALL5 
+LOAD SCE238_018 REF6 Z, CALL7
+SEQ1 \x8c\x01 SEQ4 \xc4\x83\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 早桃\n　「パ、パンツ！」@
 拓司\n　「パンツ？\p　パンツって……あっ！\p　俺、なんで全裸なんだ\n　　っ！」@
@@ -260,12 +278,13 @@ SEQ1 \x8c\x01 SEQ5 \xc4\x83\x01\x0c\x00\x00\x00\x00"\x03^\x00\x00
 \nどぐわああああああああっし！！\
 
 \x00
-SEQ3 REF7 \x9e, CALL1 \x92\x02 CALL7 \xc0\x02 CALL5 \x92\x02 CALL8
-LOAD4 TextWindowOff REF2 \\. CALL6 
-SEQ2 \xc8\x00 CALL1 \xde\x13 CALL7 \x1a! CALL6 
-SEQ2 \x00\x00\x00 CALL1 \xde\x13 CALL7 \x1a! CALL5 \x92\x02 CALL7 \xc0! CALL6 
-LOAD3 SCE238_019 REF6 \x02/ CALL8
-SEQ1 \x8c\x01 SEQ5 \xc8\x83\x01\x0c\x00\x00\x00\x00"\x03f\x00\x00
+SEQ3 REF7 \x9e, CALL1 \x92\x02 CALL6 \xc0\x02 CALL4 \x92\x02 CALL7
+LOAD TextWindowOff REF2 \\. CALL5 
+SEQ2 \xc8\x00 CALL1 \xde\x13 CALL6 \x1a! CALL5 
+SEQ2 \x00\x00\x00 CALL1 \xde\x13 CALL6 \x1a! CALL4 \x92\x02 CALL6 \xc0! CALL5 
+LOAD SCE238_019 REF6 \x02/ CALL7
+SEQ1 \x8c\x01 SEQ4 \xc8\x83\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 早桃\n　「まったく！\p　年頃の義妹を何だと思ってるのかなー！」@
 \nぷりぷりと怒りながら、早桃は手早く朝食を皿に盛りつけた。@
@@ -277,9 +296,10 @@ SEQ1 \x8c\x01 SEQ5 \xc8\x83\x01\x0c\x00\x00\x00\x00"\x03f\x00\x00
 早桃\n　「（にこにこ）」\
 
 \x00
-SEQ3 REF7 F/ CALL1 \x92\x02 CALL7 \xc0\x02 CALL6 
-LOAD3 SCE238_020 REF6 \x181 CALL8
-SEQ1 \x8c\x01 SEQ5 \xcc\x83\x01\x0c\x00\x00\x00\x00"\x03w\x00\x00
+SEQ3 REF7 F/ CALL1 \x92\x02 CALL6 \xc0\x02 CALL5 
+LOAD SCE238_020 REF6 \x181 CALL7
+SEQ1 \x8c\x01 SEQ4 \xcc\x83\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 拓司\n　「あ、あの～……早桃さん？」@
 早桃\n　「ん？」@
@@ -290,9 +310,10 @@ SEQ1 \x8c\x01 SEQ5 \xcc\x83\x01\x0c\x00\x00\x00\x00"\x03w\x00\x00
 拓司\n　「（しまった！　料理の話になると、コイツ、長いんだった…\n　　…）」\
 
 \x00
-SEQ3 REF7 \\1 CALL1 \x92\x02 CALL7 \xc0\x02 CALL6 
-LOAD3 SCE238_021 REF6 r3 CALL8
-SEQ1 \x8c\x01 SEQ5 \xd0\x83\x01\x0c\x00\x00\x00\x00"\x03>\x00\x00
+SEQ3 REF7 \\1 CALL1 \x92\x02 CALL6 \xc0\x02 CALL5 
+LOAD SCE238_021 REF6 r3 CALL7
+SEQ1 \x8c\x01 SEQ4 \xd0\x83\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 早桃\n　「……それとね……を……して……で炒めて……で……」@
 拓司\n　「……」@
@@ -300,10 +321,11 @@ SEQ1 \x8c\x01 SEQ5 \xd0\x83\x01\x0c\x00\x00\x00\x00"\x03>\x00\x00
 /*■黒　表示（クロスフェード）*/\a7,-2,-2,0,\a0,200,2,0,\a6,-2,0,0,～３０分経過～\
 
 \x00\x00
-SEQ3 REF7 \xb63 CALL1 \x92\x02 CALL7 \xc0\x02 CALL6 
-SEQ2 \x00\x00\x00 CALL1 \xde\x13 CALL7 \x08\x14 CALL6 
-LOAD3 SCE238_022 REF6 \x1c5 CALL8
-SEQ1 \x8c\x01 SEQ5 \xd4\x83\x01\x0c\x00\x00\x00\x00"\x03\x9f\x00\x00
+SEQ3 REF7 \xb63 CALL1 \x92\x02 CALL6 \xc0\x02 CALL5 
+SEQ2 \x00\x00\x00 CALL1 \xde\x13 CALL6 \x08\x14 CALL5 
+LOAD SCE238_022 REF6 \x1c5 CALL7
+SEQ1 \x8c\x01 SEQ4 \xd4\x83\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 早桃\n　「……というわけなの。\pわかった、おにいちゃん？！」@
 拓司\n　「はあ、はあ……非常によくわかりました。\p学校遅刻しそうな\n　　くらいわかりました」@
@@ -315,9 +337,10 @@ SEQ1 \x8c\x01 SEQ5 \xd4\x83\x01\x0c\x00\x00\x00\x00"\x03\x9f\x00\x00
 早桃\n　「あたりまえじゃない、キラキラだもの！\p　ひかってなかった\n　　ら、キラキラとはいわないんじゃないの？」\
 
 
-SEQ3 REF7 `5 CALL1 \x92\x02 CALL7 \xc0\x02 CALL6 
-LOAD3 SCE238_023 REF6 \x168 CALL8
-SEQ1 \x8c\x01 SEQ5 \xd8\x83\x01\x0c\x00\x00\x00\x00"\x03C\x00\x00
+SEQ3 REF7 `5 CALL1 \x92\x02 CALL6 \xc0\x02 CALL5 
+LOAD SCE238_023 REF6 \x168 CALL7
+SEQ1 \x8c\x01 SEQ4 \xd8\x83\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 拓司\n　「そ、そういう問題ではないような……」@
 早桃\n　「早く早く！\p　早く食べないと間に合わないよ！」@
@@ -326,22 +349,24 @@ SEQ1 \x8c\x01 SEQ5 \xd8\x83\x01\x0c\x00\x00\x00\x00"\x03C\x00\x00
 拓司\n　「こ、こ、こ、これわあああああああああっ？！？！」\
 
 \x00\x00\x00
-SEQ3 REF7 Z8 CALL1 \x92\x02 CALL7 \xc0\x02 CALL6 
-LOAD3 SCE238_024 REF6 \xa09 CALL8
-SEQ1 \x8c\x01 SEQ5 \xdc\x83\x01\x0c\x00\x00\x00\x00"REF7 \xf6\x02 CALL7 \xb4\x18 CALL6 
-SEQ2 \x02\x00 CALL2  \x1e\x04\x00\x00\r\x00\x00\x1e\x01\x00 CALL2  \x1e\x08\x00\x00\r\x00\x00\x1e\x00\x00\x00 CALL1 \xf6\x02 CALL7 \xd8  CALL6 
-SEQ2 \xc9\x00 CALL1 \xde\x13 CALL7 \x1a! CALL6 
-SEQ2 \x02\x00 CALL1 \xf6\x02 CALL7 d! CALL6 
-SEQ2 \xc9\x00 CALL1 \xde\x13 CALL7 \x1a! CALL6 \x03\x12\x00\x00
+SEQ3 REF7 Z8 CALL1 \x92\x02 CALL6 \xc0\x02 CALL5 
+LOAD SCE238_024 REF6 \xa09 CALL7
+SEQ1 \x8c\x01 SEQ4 \xdc\x83\x01\x0c\x00\x00\x00\x00" REF7 \xf6\x02 CALL6 \xb4\x18 CALL5 
+SEQ2 \x02\x00 CALL2  \x1e\x04\x00\x00\r\x00\x00\x1e\x01\x00 CALL2  \x1e\x08\x00\x00\r\x00\x00\x1e\x00\x00\x00 CALL1 \xf6\x02 CALL6 \xd8  CALL5 
+SEQ2 \xc9\x00 CALL1 \xde\x13 CALL6 \x1a! CALL5 
+SEQ2 \x02\x00 CALL1 \xf6\x02 CALL6 d! CALL5 
+SEQ2 \xc9\x00 CALL1 \xde\x13 CALL6 \x1a! CALL5 
+LOAD 
  
 \n\n\n\n\n\n\n\n\n\n　　　　　　　　　　「あたらしいせかい。」\
 
 \x00
-SEQ3 REF7 \x02; CALL1 \x92\x02 CALL7 \xc0\x02 CALL6 
-SEQ2 \xc8\x00 CALL1 \xde\x13 CALL7 \x08\x14 CALL6 
-SEQ2 \x04\x01 CALL1 \xf6\x02 CALL7  \x03 CALL6 
-LOAD3 SCE238_025 REF6 \xec; CALL8
-SEQ1 \x8c\x01 SEQ5 \xe0\x83\x01\x0c\x00\x00\x00\x00"\x03Z\x00\x00
+SEQ3 REF7 \x02; CALL1 \x92\x02 CALL6 \xc0\x02 CALL5 
+SEQ2 \xc8\x00 CALL1 \xde\x13 CALL6 \x08\x14 CALL5 
+SEQ2 \x04\x01 CALL1 \xf6\x02 CALL6  \x03 CALL5 
+LOAD SCE238_025 REF6 \xec; CALL7
+SEQ1 \x8c\x01 SEQ4 \xe0\x83\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 夢から覚めた拓司はすべてを悟っていた。@
 腕の中には、紅葉の体温がある。\pそれを逃がさないようにぎゅっ\nと抱きしめて、拓司はいった。@
@@ -353,9 +378,10 @@ SEQ1 \x8c\x01 SEQ5 \xe0\x83\x01\x0c\x00\x00\x00\x00"\x03Z\x00\x00
 紅葉\n　「……」\
 
 \x00
-SEQ3 REF7 0< CALL1 \x92\x02 CALL7 \xc0\x02 CALL6 
-LOAD3 SCE238_026 REF6 \xd2= CALL8
-SEQ1 \x8c\x01 SEQ5 \xe4\x83\x01\x0c\x00\x00\x00\x00"\x03:\x00\x00
+SEQ3 REF7 0< CALL1 \x92\x02 CALL6 \xc0\x02 CALL5 
+LOAD SCE238_026 REF6 \xd2= CALL7
+SEQ1 \x8c\x01 SEQ4 \xe4\x83\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 拓司\n　「将来、嫁さんにしてやるって」@
 紅葉\n　「……思い出したんだ？」@
@@ -364,10 +390,11 @@ SEQ1 \x8c\x01 SEQ5 \xe4\x83\x01\x0c\x00\x00\x00\x00"\x03:\x00\x00
 拓司\n　「紅葉？」\
 
 \x00
-SEQ3 REF7 \x16> CALL1 \x92\x02 CALL7 \xc0\x02 CALL6 
-SEQ2 /\x00 CALL1 \xde\x13 CALL7 \x08\x14 CALL6 
-LOAD3 SCE238_027 REF6 l? CALL8
-SEQ1 \x8c\x01 SEQ5 \xe8\x83\x01\x0c\x00\x00\x00\x00"\x03r\x00\x00
+SEQ3 REF7 \x16> CALL1 \x92\x02 CALL6 \xc0\x02 CALL5 
+SEQ2 /\x00 CALL1 \xde\x13 CALL6 \x08\x14 CALL5 
+LOAD SCE238_027 REF6 l? CALL7
+SEQ1 \x8c\x01 SEQ4 \xe8\x83\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 紅葉は泣いていた。@
 穏やかな笑顔を浮かべながら、ぽろぽろと大粒の涙を流していた。\n\p拓司が初めて見る、紅葉の涙だった。@
@@ -380,9 +407,10 @@ SEQ1 \x8c\x01 SEQ5 \xe8\x83\x01\x0c\x00\x00\x00\x00"\x03r\x00\x00
 拓司の腕の中で、紅葉の身体はきらきらと光って消滅しつつあっ\nた。\
 
 \x00
-SEQ3 REF7 \xb0? CALL1 \x92\x02 CALL7 \xc0\x02 CALL6 
-LOAD3 SCE238_028 REF6 \xb2A CALL8
-SEQ1 \x8c\x01 SEQ5 \xec\x83\x01\x0c\x00\x00\x00\x00"\x03R\x00\x00
+SEQ3 REF7 \xb0? CALL1 \x92\x02 CALL6 \xc0\x02 CALL5 
+LOAD SCE238_028 REF6 \xb2A CALL7
+SEQ1 \x8c\x01 SEQ4 \xec\x83\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 拓司\n　「紅葉、こ、これは……？！」@
 紅葉\n　「思い出しちゃったんだね、拓司。\pもう……お別れだよ」@
@@ -391,9 +419,10 @@ SEQ1 \x8c\x01 SEQ5 \xec\x83\x01\x0c\x00\x00\x00\x00"\x03R\x00\x00
 いや、紅葉だけではない。\pまるで霞のように校舎が歪み、夕日が\n歪み……世界が消えつつあった。\
 
 \x00\x00\x00
-SEQ3 REF7 \xf6A CALL1 \x92\x02 CALL7 \xc0\x02 CALL6 
-LOAD3 SCE238_029 REF6 xC CALL8
-SEQ1 \x8c\x01 SEQ5 \xf0\x83\x01\x0c\x00\x00\x00\x00"\x03^\x00\x00
+SEQ3 REF7 \xf6A CALL1 \x92\x02 CALL6 \xc0\x02 CALL5 
+LOAD SCE238_029 REF6 xC CALL7
+SEQ1 \x8c\x01 SEQ4 \xf0\x83\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 拓司\n　「どうしてだ！\p　どうしてなんだ、紅葉！」@
 紅葉\n　「だってあたしは……思い出の国の住人だから」@
@@ -402,9 +431,10 @@ SEQ1 \x8c\x01 SEQ5 \xf0\x83\x01\x0c\x00\x00\x00\x00"\x03^\x00\x00
 それも、消えつつあった。\
 
 \x00
-SEQ3 REF7 \xbcC CALL1 \x92\x02 CALL7 \xc0\x02 CALL6 
-LOAD3 SCE238_030 REF6 nE CALL8
-SEQ1 \x8c\x01 SEQ5 \xf4\x83\x01\x0c\x00\x00\x00\x00"\x03\x85\x00\x00
+SEQ3 REF7 \xbcC CALL1 \x92\x02 CALL6 \xc0\x02 CALL5 
+LOAD SCE238_030 REF6 nE CALL7
+SEQ1 \x8c\x01 SEQ4 \xf4\x83\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 紅葉\n　「交通事故にあったとき……あなたはこの世界に迷い込んだの。\n　　\p３年前の世界に……あなたの記憶の奥に眠っていた世界に。@
 　　あなたは１５歳の虎菱拓司じゃなくて、１８歳の虎菱拓司な\n　　の。\pそしてこの世界は、あなたが見ている……夢のようなも\n　　のなの」@
@@ -414,9 +444,10 @@ SEQ1 \x8c\x01 SEQ5 \xf4\x83\x01\x0c\x00\x00\x00\x00"\x03\x85\x00\x00
 \nでも、と拓司は叫んだ。\
 
 \x00
-SEQ3 REF7 \xb2E CALL1 \x92\x02 CALL7 \xc0\x02 CALL6 
-LOAD3 SCE238_031 REF6 \x00H CALL8
-SEQ1 \x8c\x01 SEQ5 \xf8\x83\x01\x0c\x00\x00\x00\x00"\x03\x8f\x00\x00
+SEQ3 REF7 \xb2E CALL1 \x92\x02 CALL6 \xc0\x02 CALL5 
+LOAD SCE238_031 REF6 \x00H CALL7
+SEQ1 \x8c\x01 SEQ4 \xf8\x83\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 拓司\n　「そんなことはどうでもいい！\p　俺はお前と一緒に……ここで\n　　生きる！\p　この世界で生きていく！」@
 紅葉\n　「だめよ。\p思い出は、消えていくの。\pどんなに大切な思い出も\n　　……忘れちゃう。\p拓司は今、この世界が思い出だってことに\n　　気づいてしまった。\pだから……消えるの」@
@@ -426,9 +457,10 @@ SEQ1 \x8c\x01 SEQ5 \xf8\x83\x01\x0c\x00\x00\x00\x00"\x03\x8f\x00\x00
 拓司はわずかに残った紅葉の気配を……温かさをかき集めるよう\nに、自らの胸をかき抱いた。\
 
 \x00
-SEQ3 REF7 DH CALL1 \x92\x02 CALL7 \xc0\x02 CALL6 
-LOAD3 SCE238_032 REF6 \xbaJ CALL8
-SEQ1 \x8c\x01 SEQ5 \xfc\x83\x01\x0c\x00\x00\x00\x00"\x03p\x00\x00
+SEQ3 REF7 DH CALL1 \x92\x02 CALL6 \xc0\x02 CALL5 
+LOAD SCE238_032 REF6 \xbaJ CALL7
+SEQ1 \x8c\x01 SEQ4 \xfc\x83\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 紅葉\n　「あなたが思い出さなければいいって……そう思ってた。@
 　　そうすれば、あなたはずっとこの世界の住人で……私はあな\n　　たの恋人でいられたから。\pでも、そんなの間違ってる。@
@@ -439,9 +471,10 @@ SEQ1 \x8c\x01 SEQ5 \xfc\x83\x01\x0c\x00\x00\x00\x00"\x03p\x00\x00
 拓司\n　「どうして……」\
 
 \x00
-SEQ3 REF7 \xfeJ CALL1 \x92\x02 CALL7 \xc0\x02 CALL6 
-LOAD3 SCE238_033 REF6 \xf8L CALL8
-SEQ1 \x8c\x01 SEQ5 \x00\x84\x01\x0c\x00\x00\x00\x00"\x03\xb0\x00\x00
+SEQ3 REF7 \xfeJ CALL1 \x92\x02 CALL6 \xc0\x02 CALL5 
+LOAD SCE238_033 REF6 \xf8L CALL7
+SEQ1 \x8c\x01 SEQ4 \x00\x84\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 紅葉\n　「ペンダントの力であなたがホントの世界に帰っちゃうのは辛\n　　い。\pでも……それが正しいことだから。\pあなたには、あなた\n　　の世界がある。\pまだたどり着けないかもしれないけど、本当\n　　の世界が、あなたには用意されているはずだから。@
 　　ペンダントを開いて、拓司」@
@@ -455,9 +488,10 @@ SEQ1 \x8c\x01 SEQ5 \x00\x84\x01\x0c\x00\x00\x00\x00"\x03\xb0\x00\x00
 世界もまた、どこにもない。\
 
 \x00\x00
-SEQ3 REF7 <M CALL1 \x92\x02 CALL7 \xc0\x02 CALL6 
-LOAD3 SCE238_034 REF6 6P CALL8
-SEQ1 \x8c\x01 SEQ5 \x04\x84\x01\x0c\x00\x00\x00\x00"\x03`\x00\x00
+SEQ3 REF7 <M CALL1 \x92\x02 CALL6 \xc0\x02 CALL5 
+LOAD SCE238_034 REF6 6P CALL7
+SEQ1 \x8c\x01 SEQ4 \x04\x84\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 紅葉\n　「大丈夫。\pホントの世界に戻れば、あたしのことは忘れる。@
 　　この町のことも……なにもかも。\pそうなれば悲しみも消える\n　　から」@
@@ -468,27 +502,30 @@ SEQ1 \x8c\x01 SEQ5 \x04\x84\x01\x0c\x00\x00\x00\x00"\x03`\x00\x00
 拓司\n　「ありがとう！」\
 
 \x00
-SEQ3 REF7 zP CALL1 \x92\x02 CALL7 \xc0\x02 CALL6 
-LOAD3 SCE238_035 REF6 4R CALL8
-SEQ1 \x8c\x01 SEQ5 \x08\x84\x01\x0c\x00\x00\x00\x00"\x03=\x00\x00
+SEQ3 REF7 zP CALL1 \x92\x02 CALL6 \xc0\x02 CALL5 
+LOAD SCE238_035 REF6 4R CALL7
+SEQ1 \x8c\x01 SEQ4 \x08\x84\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 紅葉\n　「拓司……精一杯ホントの世界を生きて。\pあたしたちを……思\n　　い出を裏切らないで、生きて。\p怖くなんかないよ、だって、\n　　あたしたちはいつも拓司の中にいるから。\p拓司は、ひとりじ\n　　ゃないから」@
 \nひかりが爆発した。\
 
 \x00\x00\x00
-SEQ3 REF7 xR CALL1 \x92\x02 CALL7 \xc0\x02 CALL6 
-SEQ2 \xc8\x00 CALL1 \xde\x13 CALL7 \x08\x14 CALL5 \xf6\x02 CALL7 \xb4\x18 CALL6 
-LOAD3 SCE238_036 REF6 \xf4S CALL8
-SEQ1 \x8c\x01 SEQ5 \x0c\x84\x01\x0c\x00\x00\x00\x00"\x03\x12\x00\x00
+SEQ3 REF7 xR CALL1 \x92\x02 CALL6 \xc0\x02 CALL5 
+SEQ2 \xc8\x00 CALL1 \xde\x13 CALL6 \x08\x14 CALL4 \xf6\x02 CALL6 \xb4\x18 CALL5 
+LOAD SCE238_036 REF6 \xf4S CALL7
+SEQ1 \x8c\x01 SEQ4 \x0c\x84\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 \n\n\n\n\n\n\n\n\n\n　　　　　　　　　　「あたらしいせかい。」\
 
 \x00
-SEQ3 REF7 8T CALL1 \x92\x02 CALL7 \xc0\x02 CALL6 
-SEQ2 \x08\x01 CALL1 \xf6\x02 CALL7  \x03 CALL6 
-SEQ2 0\x00 CALL1 \xde\x13 CALL7 \x08\x14 CALL6 
-LOAD3 SCE238_037 REF6 "U CALL8
-SEQ1 \x8c\x01 SEQ5 \x10\x84\x01\x0c\x00\x00\x00\x00"\x03d\x00\x00
+SEQ3 REF7 8T CALL1 \x92\x02 CALL6 \xc0\x02 CALL5 
+SEQ2 \x08\x01 CALL1 \xf6\x02 CALL6  \x03 CALL5 
+SEQ2 0\x00 CALL1 \xde\x13 CALL6 \x08\x14 CALL5 
+LOAD SCE238_037 REF6 "U CALL7
+SEQ1 \x8c\x01 SEQ4 \x10\x84\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 なたねの目には、涙が浮かんでいた。@
 それを見て、拓司はたまらなくせつなくなった。@
@@ -496,9 +533,10 @@ SEQ1 \x8c\x01 SEQ5 \x10\x84\x01\x0c\x00\x00\x00\x00"\x03d\x00\x00
 超能力という呪いを背負わされ、道はひとつしかなかったのだ。\
 
 \x00
-SEQ3 REF7 fU CALL1 \x92\x02 CALL7 \xc0\x02 CALL6 
-LOAD3 SCE238_038 REF6 0W CALL8
-SEQ1 \x8c\x01 SEQ5 \x14\x84\x01\x0c\x00\x00\x00\x00"\x03\x92\x00\x00
+SEQ3 REF7 fU CALL1 \x92\x02 CALL6 \xc0\x02 CALL5 
+LOAD SCE238_038 REF6 0W CALL7
+SEQ1 \x8c\x01 SEQ4 \x14\x84\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 なたね\n　「虎菱くんは……私のこと、怖くないの？」@
 拓司\n　「怖い？」@
@@ -506,9 +544,10 @@ SEQ1 \x8c\x01 SEQ5 \x14\x84\x01\x0c\x00\x00\x00\x00"\x03\x92\x00\x00
 拓司\n　「そうだよな……雲居さんの言うとおりだ。\pでもね、雲居\n　　さん。\p誰かと触れ合わなければ、物語だって始まらないんだ」\n\pなたね\n　「……」\
 
 \x00\x00\x00
-SEQ3 REF7 tW CALL1 \x92\x02 CALL7 \xc0\x02 CALL6 
-LOAD3 SCE238_039 REF6 \xf6Y CALL8
-SEQ1 \x8c\x01 SEQ5 \x18\x84\x01\x0c\x00\x00\x00\x00"\x03^\x00\x00
+SEQ3 REF7 tW CALL1 \x92\x02 CALL6 \xc0\x02 CALL5 
+LOAD SCE238_039 REF6 \xf6Y CALL7
+SEQ1 \x8c\x01 SEQ4 \x18\x84\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 拓司\n　「人間を信じろ、とは俺にはいえない。\p雲居さんがこれまで\n　　体験してきた辛いこと、哀しいことを、俺は本当の意味で共\n　　有することはできないから。\p雲居さんが流してきた涙の量\n　　を、俺は知らないから。\pだから……おれはこういうことしか\n　　できない」@
 なたね\n　「……」@
@@ -517,9 +556,10 @@ SEQ1 \x8c\x01 SEQ5 \x18\x84\x01\x0c\x00\x00\x00\x00"\x03^\x00\x00
 \n拓司は無言で頷いた。\
 
 \x00\x00\x00
-SEQ3 REF7 :Z CALL1 \x92\x02 CALL7 \xc0\x02 CALL6 
-LOAD3 SCE238_040 REF6 \xec[ CALL8
-SEQ1 \x8c\x01 SEQ5 \x1c\x84\x01\x0c\x00\x00\x00\x00"\x03g\x00\x00
+SEQ3 REF7 :Z CALL1 \x92\x02 CALL6 \xc0\x02 CALL5 
+LOAD SCE238_040 REF6 \xec[ CALL7
+SEQ1 \x8c\x01 SEQ4 \x1c\x84\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 なたね\n　「信じて……いいんだね？\p　私、誰かを信じてもいいんだよね\n　　？」@
 拓司\n　「ああ。\p物語の終わりまで、俺が責任持って信じられるヤツに\n　　なってやるさ」@
@@ -528,30 +568,33 @@ SEQ1 \x8c\x01 SEQ5 \x1c\x84\x01\x0c\x00\x00\x00\x00"\x03g\x00\x00
 \n拓司の精神は、なたねのそれと溶け合い、そしてひとつとなった\n……。\
 
 \x00
-SEQ3 REF7 0\\ CALL1 \x92\x02 CALL7 \xc0\x02 CALL6 
-LOAD3 SCE238_041 REF6 \x06^ CALL8
-SEQ1 \x8c\x01 SEQ5  \x84\x01\x0c\x00\x00\x00\x00"REF7 \x92\x02 CALL7 \\. CALL5 \xf6\x02 CALL7 \xb4\x18 CALL6 
-SEQ2 \x02\x00 CALL2  \x1e\x04\x00\x00\r\x00\x00\x1e\x01\x00 CALL2  \x1e\x08\x00\x00\r\x00\x00\x1e\x00\x00\x00 CALL1 \xf6\x02 CALL7 \xd8  CALL6 
-SEQ2 \xca\x00 CALL1 \xde\x13 CALL7 \x1a! CALL6 
-SEQ2 \x02\x00 CALL1 \xf6\x02 CALL7 d! CALL6 
-SEQ2 \xc9\x00 CALL1 \xde\x13 CALL7 \x1a! CALL5 \x92\x02 CALL7 \xc0! CALL6 \x03\x13\x00\x00
+SEQ3 REF7 0\\ CALL1 \x92\x02 CALL6 \xc0\x02 CALL5 
+LOAD SCE238_041 REF6 \x06^ CALL7
+SEQ1 \x8c\x01 SEQ4  \x84\x01\x0c\x00\x00\x00\x00" REF7 \x92\x02 CALL6 \\. CALL4 \xf6\x02 CALL6 \xb4\x18 CALL5 
+SEQ2 \x02\x00 CALL2  \x1e\x04\x00\x00\r\x00\x00\x1e\x01\x00 CALL2  \x1e\x08\x00\x00\r\x00\x00\x1e\x00\x00\x00 CALL1 \xf6\x02 CALL6 \xd8  CALL5 
+SEQ2 \xca\x00 CALL1 \xde\x13 CALL6 \x1a! CALL5 
+SEQ2 \x02\x00 CALL1 \xf6\x02 CALL6 d! CALL5 
+SEQ2 \xc9\x00 CALL1 \xde\x13 CALL6 \x1a! CALL4 \x92\x02 CALL6 \xc0! CALL5 
+LOAD 
  
 \n\n\n\n\n\n\n\n\n\n\n　　　　　　　　　　「あたらしいせかい。」\
 
 \x00\x00\x00
-SEQ3 REF7 \x9c_ CALL1 \x92\x02 CALL7 \xc0\x02 CALL6 
-SEQ2 \xc8\x00 CALL1 \xde\x13 CALL7 \x08\x14 CALL6 
-SEQ2 \n\x01 CALL1 \xf6\x02 CALL7  \x03 CALL6 
-LOAD3 SCE238_042 REF6 \x8a` CALL8
-SEQ1 \x8c\x01 SEQ5 $\x84\x01\x0c\x00\x00\x00\x00"\x03\x1b\x00\x00
+SEQ3 REF7 \x9c_ CALL1 \x92\x02 CALL6 \xc0\x02 CALL5 
+SEQ2 \xc8\x00 CALL1 \xde\x13 CALL6 \x08\x14 CALL5 
+SEQ2 \n\x01 CALL1 \xf6\x02 CALL6  \x03 CALL5 
+LOAD SCE238_042 REF6 \x8a` CALL7
+SEQ1 \x8c\x01 SEQ4 $\x84\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 拓司は震える手でリターンキーを押した。@
 漆黒のモニターに、滝のように文字が流れ出し、明滅する。\
 
 \x00\x00\x00
-SEQ3 REF7 \xce` CALL1 \x92\x02 CALL7 \xc0\x02 CALL6 
-LOAD3 SCE238_043 REF6 ta CALL8
-SEQ1 \x8c\x01 SEQ5 (\x84\x01\x0c\x00\x00\x00\x00"\x03\xbf\x00\x00
+SEQ3 REF7 \xce` CALL1 \x92\x02 CALL6 \xc0\x02 CALL5 
+LOAD SCE238_043 REF6 ta CALL7
+SEQ1 \x8c\x01 SEQ4 (\x84\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 ×月×日@
 指示書／入力データ設定@
@@ -571,27 +614,30 @@ SEQ1 \x8c\x01 SEQ5 (\x84\x01\x0c\x00\x00\x00\x00"\x03\xbf\x00\x00
 …………\
 
 \x00
-SEQ3 REF7 \xb8a CALL1 \x92\x02 CALL7 \xc0\x02 CALL6 
-LOAD3 SCE238_044 REF6 \xeed CALL8
-SEQ1 \x8c\x01 SEQ5 ,\x84\x01\x0c\x00\x00\x00\x00"\x031\x00\x00
+SEQ3 REF7 \xb8a CALL1 \x92\x02 CALL6 \xc0\x02 CALL5 
+LOAD SCE238_044 REF6 \xeed CALL7
+SEQ1 \x8c\x01 SEQ4 ,\x84\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 拓司は思わず叫んだ。@
 \n拓司\n　「あの世界はバーチャルリアリティだったというのか？！」@
 カンナ\n　「そう。\pこここそが現実なの。\pあなたが見ていたのは、中央管\n　　理室が作った世界」\
 
 \x00
-SEQ3 REF7 2e CALL1 \x92\x02 CALL7 \xc0\x02 CALL6 
-LOAD3 SCE238_045 REF6 0f CALL8
-SEQ1 \x8c\x01 SEQ5 0\x84\x01\x0c\x00\x00\x00\x00"\x03d\x00\x00
+SEQ3 REF7 2e CALL1 \x92\x02 CALL6 \xc0\x02 CALL5 
+LOAD SCE238_045 REF6 0f CALL7
+SEQ1 \x8c\x01 SEQ4 0\x84\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 すべての謎は解けた。@
 あの世界が仮想現実だとしたら、異常なまでの現実感の希薄さも\n説明できる。\pしかし、だとしたら……だとしたら……この世界が\n仮想現実でないという保証はどこにあるというのだ？@
 妄想世界の上に、先ほどまで現実だと信じて疑わなかった夢の世\n界がある。\pそしてそのさらに上に、この世界がある。\pだとした\nら、その上にさらなる世界があるという可能性は否定できないで\nはないか！\
 
 \x00
-SEQ3 REF7 tf CALL1 \x92\x02 CALL7 \xc0\x02 CALL6 
-LOAD3 SCE238_046 REF6 >h CALL8
-SEQ1 \x8c\x01 SEQ5 4\x84\x01\x0c\x00\x00\x00\x00"\x03\x80\x00\x00
+SEQ3 REF7 tf CALL1 \x92\x02 CALL6 \xc0\x02 CALL5 
+LOAD SCE238_046 REF6 >h CALL7
+SEQ1 \x8c\x01 SEQ4 4\x84\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 カンナ\n　「混乱しているのね。\pわかるわ。\p私たちレジスタンスは、『合\n　　わせ鏡』って呼んでいるわ。\p世界の真実を知った人間が陥る\n　　現象よ。\pなにが現実なのかわからなくなる。\p自分は誰かが見\n　　ている夢なんじゃないか？\p　ひどい場合は耐えきれなくれ自\n　　殺してしまう」@
 拓司\n　「俺は……どうすればいい？」@
@@ -599,9 +645,10 @@ SEQ1 \x8c\x01 SEQ5 4\x84\x01\x0c\x00\x00\x00\x00"\x03\x80\x00\x00
 拓司\n　「無理だ！\p　いきなりこんなこと全部を信じるわけにはいかな\n　　い！」\
 
 \x00
-SEQ3 REF7 \x82h CALL1 \x92\x02 CALL7 \xc0\x02 CALL6 
-LOAD3 SCE238_047 REF6 \xbcj CALL8
-SEQ1 \x8c\x01 SEQ5 8\x84\x01\x0c\x00\x00\x00\x00"\x03R\x00\x00
+SEQ3 REF7 \x82h CALL1 \x92\x02 CALL6 \xc0\x02 CALL5 
+LOAD SCE238_047 REF6 \xbcj CALL7
+SEQ1 \x8c\x01 SEQ4 8\x84\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 カンナ\n　「そう。\pじゃあ、私を愛するといいわ」@
 拓司\n　「なに？」@
@@ -611,9 +658,10 @@ SEQ1 \x8c\x01 SEQ5 8\x84\x01\x0c\x00\x00\x00\x00"\x03R\x00\x00
 拓司\n　「ふざけるな！\p　そんな機械的にできるか！」\
 
 \x00\x00\x00
-SEQ3 REF7 \x00k CALL1 \x92\x02 CALL7 \xc0\x02 CALL5 \xf6\x02 CALL7 \xb4\x18 CALL6 
-LOAD3 SCE238_048 REF6 \x9cl CALL8
-SEQ1 \x8c\x01 SEQ5 <\x84\x01\x0c\x00\x00\x00\x00"\x036\x00\x00
+SEQ3 REF7 \x00k CALL1 \x92\x02 CALL6 \xc0\x02 CALL4 \xf6\x02 CALL6 \xb4\x18 CALL5 
+LOAD SCE238_048 REF6 \x9cl CALL7
+SEQ1 \x8c\x01 SEQ4 <\x84\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 その時だった。@
 沈黙したはずのレーザー砲台が、きしんだ音を立てた。@
@@ -622,9 +670,10 @@ SEQ1 \x8c\x01 SEQ5 <\x84\x01\x0c\x00\x00\x00\x00"\x036\x00\x00
 そしてカンナの胸を貫いた。\
 
 \x00\x00\x00
-SEQ3 REF7 \xe0l CALL1 \x92\x02 CALL7 \xc0\x02 CALL6 
-LOAD3 SCE238_049 REF6 \xf2m CALL8
-SEQ1 \x8c\x01 SEQ5 @\x84\x01\x0c\x00\x00\x00\x00"\x03q\x00\x00
+SEQ3 REF7 \xe0l CALL1 \x92\x02 CALL6 \xc0\x02 CALL5 
+LOAD SCE238_049 REF6 \xf2m CALL7
+SEQ1 \x8c\x01 SEQ4 @\x84\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 拓司\n　「カ、カンナ？！」@
 \n拓司は砲台と自分のあいだに割って入ったカンナを、抱き起こし\nた。@
@@ -634,26 +683,28 @@ SEQ1 \x8c\x01 SEQ5 @\x84\x01\x0c\x00\x00\x00\x00"\x03q\x00\x00
 カンナ\n　「あなたを愛せるって……いったでしょう？\p　アレはね……ウ\n　　ソよ」\
 
 \x00
-SEQ3 REF7 6n CALL1 \x92\x02 CALL7 \xc0\x02 CALL6 
-SEQ2 \x04\x01 CALL1 \xf6\x02 CALL7  \x03 CALL6 
-LOAD3 SCE238_050 REF6 hp CALL8
-SEQ1 \x8c\x01 SEQ5 D\x84\x01\x0c\x00\x00\x00\x00"\x03-\x00\x00
+SEQ3 REF7 6n CALL1 \x92\x02 CALL6 \xc0\x02 CALL5 
+SEQ2 \x04\x01 CALL1 \xf6\x02 CALL6  \x03 CALL5 
+LOAD SCE238_050 REF6 hp CALL7
+SEQ1 \x8c\x01 SEQ4 D\x84\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 拓司\n　「……」@
 カンナ\n　「だって、もう、私、あなたのこと……好きだったから」@
 拓司\n　「カンナ？\p　……カンナ……カンナ、カンナアアアアアアアア\n　　アアッ！」\
 
 \x00\x00\x00
-SEQ3 REF7 \xacp CALL1 \x92\x02 CALL7 \xc0\x02 CALL6 
-SEQ2 \xc9\x00 CALL1 \xde\x13 CALL7 \x08\x14 CALL6 
-LOAD3 SCE238_051 REF6 \xceq CALL8
-SEQ1 \x8c\x01 SEQ5 H\x84\x01\x0c\x00\x00\x00\x00"\x03 \x00\x00
+SEQ3 REF7 \xacp CALL1 \x92\x02 CALL6 \xc0\x02 CALL5 
+SEQ2 \xc9\x00 CALL1 \xde\x13 CALL6 \x08\x14 CALL5 
+LOAD SCE238_051 REF6 \xceq CALL7
+SEQ1 \x8c\x01 SEQ4 H\x84\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 拓司の中で何かが弾けた。@
 それは古い虎菱拓司の死を告げるものであり、同時に新しい虎菱\n拓司の誕生を告げる閃きだった。\
 
 \x00
-SEQ3 REF7 \x12r CALL1 \x92\x02 CALL7 \xc0\x02 CALL5 \xf6\x02 CALL7 \xb4\x18 CALL6 
-SEQ2 \xc8\x00 CALL1 \xde\x13 CALL7 \x08\x14 CALL5 \x92\x02 CALL8
-LOAD3 TextClose REF2 &s CALL6 
+SEQ3 REF7 \x12r CALL1 \x92\x02 CALL6 \xc0\x02 CALL4 \xf6\x02 CALL6 \xb4\x18 CALL5 
+SEQ2 \xc8\x00 CALL1 \xde\x13 CALL6 \x08\x14 CALL4 \x92\x02 CALL7
+LOAD TextClose REF2 &s CALL5 
 END_FILE

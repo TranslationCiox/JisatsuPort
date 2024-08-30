@@ -1,10 +1,11 @@
 START_FILE
 \x1a\x0b\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00>\t\x00
 SEQ2 \x04\x01 CALL2 
-LOAD6 .\\Data\\Script\\Bgm.Fob REF2  \x00 CALL8
-LOAD2 PlayCD REF1 J\x00 CALL6 
-LOAD3 SCES04_001 REF6 f\x00 CALL8
-SEQ1 \x8c\x01 SEQ5 \xf8\xb5\x01\x0c\x00\x00\x00\x00"\x03\x99\x00\x00
+LOAD .\\Data\\Script\\Bgm.Fob REF2  \x00 CALL7
+LOAD PlayCD REF1 J\x00 CALL5 
+LOAD SCES04_001 REF6 f\x00 CALL7
+SEQ1 \x8c\x01 SEQ4 \xf8\xb5\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 援助交際で怖い目にあったって話も聞いていたけど、たぶんそれ\nはウソだって、そう思ってた。@
 大人がそういうことはやめさせようと作った怖いお話。@
@@ -17,10 +18,11 @@ SEQ1 \x8c\x01 SEQ5 \xf8\xb5\x01\x0c\x00\x00\x00\x00"\x03\x99\x00\x00
 
 \x00\x00\x00
 SEQ3 REF7 \xaa\x00 CALL2 
-LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 .\x03 CALL8
-LOAD2 TextOn REF1 \\\x03 CALL6 
-LOAD3 SCES04_002 REF6 x\x03 CALL8
-SEQ1 \x8c\x01 SEQ5 \xfc\xb5\x01\x0c\x00\x00\x00\x00"\x03\xdd\x00\x00
+LOAD .\\Data\\Script\\TextFunc.Fob REF1 .\x03 CALL7
+LOAD TextOn REF1 \\\x03 CALL5 
+LOAD SCES04_002 REF6 x\x03 CALL7
+SEQ1 \x8c\x01 SEQ4 \xfc\xb5\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 そんなとき、学校の帰り、偶然何人かのクラスの女の子と一緒に\nなって、ピザのお店に寄ったの。@
 すごく緊張して、嫌われないようにしなきゃ、って、ずっとドキ\nドキしてた。\pでも、あんまりうまくお話ができなくて、みんなは\n私に失望しているみたいに見えた。@
@@ -36,15 +38,16 @@ SEQ1 \x8c\x01 SEQ5 \xfc\xb5\x01\x0c\x00\x00\x00\x00"\x03\xdd\x00\x00
 そう思った。\
 
 \x00\x00\x00
-SEQ3 REF7 \xbc\x03 CALL1 .\x03 CALL7 \\\x03 CALL6 
-LOAD3 SCES04_003 REF6 j\x07 CALL8
-SEQ1 \x8c\x01 SEQ5 \x00\xb6\x01\x0c\x00\x00\x00\x00"\x03A\x00\x00
+SEQ3 REF7 \xbc\x03 CALL1 .\x03 CALL6 \\\x03 CALL5 
+LOAD SCES04_003 REF6 j\x07 CALL7
+SEQ1 \x8c\x01 SEQ4 \x00\xb6\x01\x0c\x00\x00\x00\x00"
+LOAD 
  
 それから私はみんなにいろんなものをごちそうしたり、プレゼン\nトしたりしはじめた。@
 それで友情を買おうと思ったわけじゃないし、買えるとも思って\nなかった。\pでも、自己の価値は証明できるし、それこそが、私\nがずっと欲しくてたまらなかったものだったから。\
 
 \x00
-SEQ3 REF7 \xae\x07 CALL1 .\x03 CALL7 \\\x03 CALL5  \x00 CALL8
-LOAD2 StopCD REF1 \xf8\x08 CALL5 .\x03 CALL8
-LOAD3 TextClose REF2  \t CALL6 
+SEQ3 REF7 \xae\x07 CALL1 .\x03 CALL6 \\\x03 CALL4  \x00 CALL7
+LOAD StopCD REF1 \xf8\x08 CALL4 .\x03 CALL7
+LOAD TextClose REF2  \t CALL5 
 END_FILE

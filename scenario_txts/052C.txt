@@ -1,10 +1,11 @@
 START_FILE
 \xbf'\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00Z!\x00
 SEQ2 \x0b\x01 CALL2 
-LOAD6 .\\Data\\Script\\Bgm.Fob REF2  \x00 CALL8
-LOAD2 PlayCD REF1 J\x00 CALL6 
-LOAD3 SCE052_001 REF6 f\x00 CALL8
-SEQ1 \x8c\x01 SEQ5 \xe0` CALL4 \x03\xac\x00\x00
+LOAD .\\Data\\Script\\Bgm.Fob REF2  \x00 CALL7
+LOAD PlayCD REF1 J\x00 CALL5 
+LOAD SCE052_001 REF6 f\x00 CALL7
+SEQ1 \x8c\x01 SEQ4 \xe0` CALL3 
+LOAD 
  
 　勢いよく扉を引き開けて、拓司は教室に躍り込んだ。@
 \n拓司\n　「早桃！」@
@@ -22,10 +23,11 @@ SEQ1 \x8c\x01 SEQ5 \xe0` CALL4 \x03\xac\x00\x00
 
 \x00
 SEQ3 REF7 \xaa\x00 CALL2 
-LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 z\x03 CALL8
-LOAD2 TextOn REF1 \xa8\x03 CALL6 
-LOAD3 SCE052_002 REF6 \xc4\x03 CALL8
-SEQ1 \x8c\x01 SEQ5 \xe4` CALL4 \x03]\x00\x00
+LOAD .\\Data\\Script\\TextFunc.Fob REF1 z\x03 CALL7
+LOAD TextOn REF1 \xa8\x03 CALL5 
+LOAD SCE052_002 REF6 \xc4\x03 CALL7
+SEQ1 \x8c\x01 SEQ4 \xe4` CALL3 
+LOAD 
  
 早桃\n　「おにい……ちゃん？」@
 拓司\n　「早桃！」@
@@ -37,9 +39,10 @@ SEQ1 \x8c\x01 SEQ5 \xe4` CALL4 \x03]\x00\x00
 学生\n　「へえ、そうなんだ、へへ」\
 
 \x00\x00\x00
-SEQ3 REF7 \x08\x04 CALL1 z\x03 CALL7 \xa8\x03 CALL6 
-LOAD3 SCE052_003 REF6 \xb6\x05 CALL8
-SEQ1 \x8c\x01 SEQ5 \xe8` CALL4 \x03l\x00\x00
+SEQ3 REF7 \x08\x04 CALL1 z\x03 CALL6 \xa8\x03 CALL5 
+LOAD SCE052_003 REF6 \xb6\x05 CALL7
+SEQ1 \x8c\x01 SEQ4 \xe8` CALL3 
+LOAD 
  
 拓司は呆気にとられた。@
 初対面の人間が、正面切っていう話題ではない。@
@@ -53,9 +56,10 @@ SEQ1 \x8c\x01 SEQ5 \xe8` CALL4 \x03l\x00\x00
 \nひとりが素っ頓狂な声を上げると、他の者がゲラゲラと笑い声で\n応えた。\
 
 \x00\x00\x00
-SEQ3 REF7 \xfa\x05 CALL1 z\x03 CALL7 \xa8\x03 CALL6 
-LOAD3 SCE052_004 REF6 \xe4\x07 CALL8
-SEQ1 \x8c\x01 SEQ5 \xec` CALL4 \x03{\x00\x00
+SEQ3 REF7 \xfa\x05 CALL1 z\x03 CALL6 \xa8\x03 CALL5 
+LOAD SCE052_004 REF6 \xe4\x07 CALL7
+SEQ1 \x8c\x01 SEQ4 \xec` CALL3 
+LOAD 
  
 学生\n　「飛ばせたよ」@
 拓司\n　「……飛ばせた？」@
@@ -69,9 +73,10 @@ SEQ1 \x8c\x01 SEQ5 \xec` CALL4 \x03{\x00\x00
 　　そんなところで勉強とか青春なんて前向きにやってられるか？\n　　\pやれねえんだよ！」\
 
 \x00\x00\x00
-SEQ3 REF7 (\x08 CALL1 z\x03 CALL7 \xa8\x03 CALL6 
-LOAD3 SCE052_005 REF6 N\n CALL8
-SEQ1 \x8c\x01 SEQ5 \xf0` CALL4 \x03\x96\x00\x00
+SEQ3 REF7 (\x08 CALL1 z\x03 CALL6 \xa8\x03 CALL5 
+LOAD SCE052_005 REF6 N\n CALL7
+SEQ1 \x8c\x01 SEQ4 \xf0` CALL3 
+LOAD 
  
 学生は机をガン、と足でけ飛ばした。@
 怒りの爆発をギリギリで抑えている。@
@@ -88,9 +93,10 @@ SEQ1 \x8c\x01 SEQ5 \xf0` CALL4 \x03\x96\x00\x00
 　　俺たちゃアホじゃねえっつーんだよッ！」\
 
 \x00
-SEQ3 REF7 \x92\n CALL1 z\x03 CALL7 \xa8\x03 CALL6 
-LOAD3 SCE052_006 REF6 $\r CALL8
-SEQ1 \x8c\x01 SEQ5 \xf4` CALL4 \x03\x93\x00\x00
+SEQ3 REF7 \x92\n CALL1 z\x03 CALL6 \xa8\x03 CALL5 
+LOAD SCE052_006 REF6 $\r CALL7
+SEQ1 \x8c\x01 SEQ4 \xf4` CALL3 
+LOAD 
  
 拓司\n　「オイ、落ち着け！\p　いったいどうしたって－－」@
 学生\n　「だから窓から飛んでもらったよ！」@
@@ -104,9 +110,10 @@ SEQ1 \x8c\x01 SEQ5 \xf4` CALL4 \x03\x93\x00\x00
 　　泣いてごめんなさいごめんなさいっていって、窓まで走って\n　　いって、そのままトップロープ越えのトペ・スイシーダだよ！\n　　\pで、今度は虎菱の番ってわけだ！」\
 
 \x00
-SEQ3 REF7 h\r CALL1 z\x03 CALL7 \xa8\x03 CALL6 
-LOAD3 SCE052_007 REF6 \xee\x0f CALL8
-SEQ1 \x8c\x01 SEQ5 \xf8` CALL4 \x03\x90\x00\x00
+SEQ3 REF7 h\r CALL1 z\x03 CALL6 \xa8\x03 CALL5 
+LOAD SCE052_007 REF6 \xee\x0f CALL7
+SEQ1 \x8c\x01 SEQ4 \xf8` CALL3 
+LOAD 
  
 円陣の中央で、早桃がびくっと身をすくめる。@
 \n学生\n　「澱むんだよ、コイツがいると。@
@@ -122,9 +129,10 @@ SEQ1 \x8c\x01 SEQ5 \xf8` CALL4 \x03\x90\x00\x00
 しかし、早桃の言葉が、次の言葉をさえぎった。\
 
 \x00\x00\x00
-SEQ3 REF7 2\x10 CALL1 z\x03 CALL7 \xa8\x03 CALL6 
-LOAD3 SCE052_008 REF6 \xac\x12 CALL8
-SEQ1 \x8c\x01 SEQ5 \xfc` CALL4 \x03f\x00\x00
+SEQ3 REF7 2\x10 CALL1 z\x03 CALL6 \xa8\x03 CALL5 
+LOAD SCE052_008 REF6 \xac\x12 CALL7
+SEQ1 \x8c\x01 SEQ4 \xfc` CALL3 
+LOAD 
  
 早桃\n　「しかたないよ……\p早桃が悪いんだからしかたがないよ」@
 \n拓司\n　「なっ？！」@
@@ -138,9 +146,10 @@ SEQ1 \x8c\x01 SEQ5 \xfc` CALL4 \x03f\x00\x00
 有罪、有罪、有罪！\
 
 \x00
-SEQ3 REF7 \xf0\x12 CALL1 z\x03 CALL7 \xa8\x03 CALL6 
-LOAD3 SCE052_009 REF6 \xc2\x14 CALL8
-SEQ1 \x8c\x01 SEQ5 \x00a CALL4 \x03%\x00\x00
+SEQ3 REF7 \xf0\x12 CALL1 z\x03 CALL6 \xa8\x03 CALL5 
+LOAD SCE052_009 REF6 \xc2\x14 CALL7
+SEQ1 \x8c\x01 SEQ4 \x00a CALL3 
+LOAD 
  
 誰かが「死ね」といった。@
 \n学生\n　「死ねよ」@
@@ -150,9 +159,10 @@ SEQ1 \x8c\x01 SEQ5 \x00a CALL4 \x03%\x00\x00
 学生\n　「死ねよ」\
 
 \x00\x00\x00
-SEQ3 REF7 \x06\x15 CALL1 z\x03 CALL7 \xa8\x03 CALL6 
-LOAD3 SCE052_010 REF6 \xd4\x15 CALL8
-SEQ1 \x8c\x01 SEQ5 \x04a CALL4 \x03\x96\x00\x00
+SEQ3 REF7 \x06\x15 CALL1 z\x03 CALL6 \xa8\x03 CALL5 
+LOAD SCE052_010 REF6 \xd4\x15 CALL7
+SEQ1 \x8c\x01 SEQ4 \x04a CALL3 
+LOAD 
  
 　死ねよ、死ねよ、死ねよ、死ねよ、死ねよ、死ねよ、死ねよ、\n　死ねよ、死ねよ、死ねよ\n　死ね死ね死ね死ね死ね死ね死ね死ね死ね死ね死ね死ね死ね死ね\n　死ね死ね死ね\n　シネシネシネシネシシネシネシネシネシネシネシネシネシネシ\n　ネシネシネシネシネシネ\n　学生たちの声は、大合唱となって教室にとどろき渡った。@
 \n　シ……足を上げる。@
@@ -162,9 +172,10 @@ SEQ1 \x8c\x01 SEQ5 \x04a CALL4 \x03\x96\x00\x00
 \n　シネシネシネシネシシネシネシネシネシネシネシネシネシネシ\nネシネシネシネシネシネ\n　ドンガドンガドンガドンドンガドンガドンガドンガドンガドン\nガドンガドンガドンガドンガドンガ\
 
 \x00
-SEQ3 REF7 \x18\x16 CALL1 z\x03 CALL7 \xa8\x03 CALL6 
-LOAD3 SCE052_011 REF6 \xaa\x18 CALL8
-SEQ1 \x8c\x01 SEQ5 \x08a CALL4 \x03\xb4\x00\x00
+SEQ3 REF7 \x18\x16 CALL1 z\x03 CALL6 \xa8\x03 CALL5 
+LOAD SCE052_011 REF6 \xaa\x18 CALL7
+SEQ1 \x8c\x01 SEQ4 \x08a CALL3 
+LOAD 
  
 　足を踏みならす音は太鼓のリズムで、合唱は呪文の詠唱だった。@
 　中世の魔女狩りそのものだった。@
@@ -178,10 +189,11 @@ SEQ1 \x8c\x01 SEQ5 \x08a CALL4 \x03\xb4\x00\x00
 \n早桃\n　「ごめんなさい……ごめんなさい……ごめんなさい……」\
 
 \x00\x00\x00
-SEQ3 REF7 \xee\x18 CALL1 z\x03 CALL7 \xa8\x03 CALL6 
-SEQ2 \n\x01 CALL1  \x00 CALL7 J\x00 CALL6 
-LOAD3 SCE052_012 REF6 ,\x1c CALL8
-SEQ1 \x8c\x01 SEQ5 \x0ca CALL4 \x03\x9b\x00\x00
+SEQ3 REF7 \xee\x18 CALL1 z\x03 CALL6 \xa8\x03 CALL5 
+SEQ2 \n\x01 CALL1  \x00 CALL6 J\x00 CALL5 
+LOAD SCE052_012 REF6 ,\x1c CALL7
+SEQ1 \x8c\x01 SEQ4 \x0ca CALL3 
+LOAD 
  
 猛烈な怒りに突き動かされて、拓司は円陣のなかへと躍り込んだ。@
 \n拓司\n　「オ、オ、オ、オ、オ、オ、ア、ア、ア、ア、ア、ア、ア！」@
@@ -193,9 +205,10 @@ SEQ1 \x8c\x01 SEQ5 \x0ca CALL4 \x03\x9b\x00\x00
 視界が奇妙な色で明滅する。\
 
 \x00
-SEQ3 REF7 p\x1c CALL1 z\x03 CALL7 \xa8\x03 CALL6 
-LOAD3 SCE052_013 REF6 \x16\x1f CALL8
-SEQ1 \x8c\x01 SEQ5 \x10a CALL4 \x03g\x00\x00
+SEQ3 REF7 p\x1c CALL1 z\x03 CALL6 \xa8\x03 CALL5 
+LOAD SCE052_013 REF6 \x16\x1f CALL7
+SEQ1 \x8c\x01 SEQ4 \x10a CALL3 
+LOAD 
  
 　興奮した声、声、声が、教室中を行き交っている。@
 　ウルセチョウシブッコロホネガジャネエオレウルセエタコイテ\nンイタイヨホネガ！\p　ガ！\p　ガ！\p　ホネ！　@
@@ -204,6 +217,6 @@ SEQ1 \x8c\x01 SEQ5 \x10a CALL4 \x03g\x00\x00
 　静寂の中、バットが振り下ろされた。\
 
 \x00\x00
-SEQ3 REF7 Z\x1f CALL1 z\x03 CALL7 \xa8\x03 CALL5 z\x03 CALL8
-LOAD3 TextClose REF2 <! CALL6 
+SEQ3 REF7 Z\x1f CALL1 z\x03 CALL6 \xa8\x03 CALL4 z\x03 CALL7
+LOAD TextClose REF2 <! CALL5 
 END_FILE

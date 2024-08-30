@@ -1,9 +1,10 @@
 START_FILE
 \xba;\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xf02\x00
-LOAD6 .\\Data\\Script\\Bgm.Fob REF2 \x06\x00 CALL8
-LOAD2 StopCD REF1 0\x00 CALL6 
-LOAD3 SCE023_001 REF6 L\x00 CALL8
-SEQ1 \x8c\x01 SEQ5 \x903 CALL4 \x03\x87\x00\x00
+LOAD .\\Data\\Script\\Bgm.Fob REF2 \x06\x00 CALL7
+LOAD StopCD REF1 0\x00 CALL5 
+LOAD SCE023_001 REF6 L\x00 CALL7
+SEQ1 \x8c\x01 SEQ4 \x903 CALL3 
+LOAD 
  
 拓司は目を閉じて、妄想の糸でひとつの世界を編み始めた。@
 いつ？\p　－－夏休みの最中。真昼だ。@
@@ -20,15 +21,16 @@ SEQ1 \x8c\x01 SEQ5 \x903 CALL4 \x03\x87\x00\x00
 
 \x00
 SEQ3 REF7 \x90\x00 CALL2 
-LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 \xcc\x02 CALL8
-LOAD2 TextOn REF1 \xfa\x02 CALL6 
-SEQ2 \x05\x01 CALL1 \x06\x00 CALL8
-LOAD2 PlayCD REF1 <\x03 CALL6 
+LOAD .\\Data\\Script\\TextFunc.Fob REF1 \xcc\x02 CALL7
+LOAD TextOn REF1 \xfa\x02 CALL5 
+SEQ2 \x05\x01 CALL1 \x06\x00 CALL7
+LOAD PlayCD REF1 <\x03 CALL5 
 SEQ2 O\x00 CALL2 
-LOAD6 .\\Data\\Script\\Bg.Fob REF3 r\x03 CALL8
-LOAD4 BgAutoFadeIn REF3 \x9c\x03 CALL6 
-LOAD3 SCE023_002 REF6 \xc0\x03 CALL8
-SEQ1 \x8c\x01 SEQ5 \x943 CALL4 \x03\x9a\x00\x00
+LOAD .\\Data\\Script\\Bg.Fob REF3 r\x03 CALL7
+LOAD BgAutoFadeIn REF3 \x9c\x03 CALL5 
+LOAD SCE023_002 REF6 \xc0\x03 CALL7
+SEQ1 \x8c\x01 SEQ4 \x943 CALL3 
+LOAD 
  
 紅葉\n　「……たくじ……」@
 \n紅葉が、か細くうめいた。@
@@ -43,9 +45,10 @@ SEQ1 \x8c\x01 SEQ5 \x943 CALL4 \x03\x9a\x00\x00
 すべてをうち砕くために。\
 
 \x00
-SEQ3 REF7 \x04\x04 CALL1 \xcc\x02 CALL7 \xfa\x02 CALL6 
-LOAD3 SCE023_003 REF6 \xa6\x06 CALL8
-SEQ1 \x8c\x01 SEQ5 \x983 CALL4 \x03\xac\x00\x00
+SEQ3 REF7 \x04\x04 CALL1 \xcc\x02 CALL6 \xfa\x02 CALL5 
+LOAD SCE023_003 REF6 \xa6\x06 CALL7
+SEQ1 \x8c\x01 SEQ4 \x983 CALL3 
+LOAD 
  
 拓司\n　「よう、天才スプリンター。@
 　　一生歩けなくなった気分はどうだ？」@
@@ -60,9 +63,10 @@ SEQ1 \x8c\x01 SEQ5 \x983 CALL4 \x03\xac\x00\x00
 　　道具としていろいろ使えるからさ……いろいろな」\
 
 \x00\x00\x00
-SEQ3 REF7 \xea\x06 CALL1 \xcc\x02 CALL7 \xfa\x02 CALL6 
-LOAD3 SCE023_004 REF6 \xd4\t CALL8
-SEQ1 \x8c\x01 SEQ5 \x9c3 CALL4 \x03y\x00\x00
+SEQ3 REF7 \xea\x06 CALL1 \xcc\x02 CALL6 \xfa\x02 CALL5 
+LOAD SCE023_004 REF6 \xd4\t CALL7
+SEQ1 \x8c\x01 SEQ4 \x9c3 CALL3 
+LOAD 
  
 紅葉はうつむき、ぶるぶると肩をふるわせた。\pしかし、涙は一向に\nこぼれてこない。@
 すでに２４時間以上この蒸し暑い部屋に閉じこめ続けられ、身体か\nら水分が蒸発しきってしまったのだ。@
@@ -74,9 +78,10 @@ SEQ1 \x8c\x01 SEQ5 \x9c3 CALL4 \x03y\x00\x00
 紅葉\n　「……やだ……ひどいこといわないで……」\
 
 \x00\x00\x00
-SEQ3 REF7 \x18\n CALL1 \xcc\x02 CALL7 \xfa\x02 CALL6 
-LOAD3 SCE023_005 REF6 6\x0c CALL8
-SEQ1 \x8c\x01 SEQ5 \xa03 CALL4 \x03\xa1\x00\x00
+SEQ3 REF7 \x18\n CALL1 \xcc\x02 CALL6 \xfa\x02 CALL5 
+LOAD SCE023_005 REF6 6\x0c CALL7
+SEQ1 \x8c\x01 SEQ4 \xa03 CALL3 
+LOAD 
  
 拓司\n　「だってくさいものはくさいから仕方ないだろ。\p部活終わってシ\n　　ャワー浴びる前だったんだろ？\p　体中汗でびっしょりだ。@
 　　お前、恥ずかしくないのか？\p　他の女の子がリンスとか香水と\n　　かのにおいをさせてるっていうのに、お前はこんな獣みたいな\n　　においプンプンさせて。\p本当に不潔な女だな」@
@@ -87,9 +92,10 @@ SEQ1 \x8c\x01 SEQ5 \xa03 CALL4 \x03\xa1\x00\x00
 紅葉\n　「もういいでしょ！　私の人生メチャクチャにして……もう満足\n　　でしょ？！」\
 
 \x00
-SEQ3 REF7 z\x0c CALL1 \xcc\x02 CALL7 \xfa\x02 CALL6 
-LOAD3 SCE023_006 REF6 8\x0f CALL8
-SEQ1 \x8c\x01 SEQ5 \xa43 CALL4 \x03\x9d\x00\x00
+SEQ3 REF7 z\x0c CALL1 \xcc\x02 CALL6 \xfa\x02 CALL5 
+LOAD SCE023_006 REF6 8\x0f CALL7
+SEQ1 \x8c\x01 SEQ4 \xa43 CALL3 
+LOAD 
  
 拓司\n　「いいや。全然満足じゃないね」@
 紅葉\n　「どうして？！　幼なじみなのに……信用してたのに！」@
@@ -98,9 +104,10 @@ SEQ1 \x8c\x01 SEQ5 \xa43 CALL4 \x03\x9d\x00\x00
 拓司は、勝ち誇ったように、紅葉の柔らかい恥丘を踏みにじる。@
 屈辱を与えるためでもあるが、もうひとつ、紅葉の尿意を促す意味\nもある。\pずっと排尿を我慢し続けてきた紅葉はもはや限界なのだ。\n\w\z
 \x00\x00\x00
-SEQ3 REF7 |\x0f CALL1 \xcc\x02 CALL7 \xfa\x02 CALL6 
-LOAD3 SCE023_007 REF6 *\x12 CALL8
-SEQ1 \x8c\x01 SEQ5 \xa83 CALL4 \x03a\x00\x00
+SEQ3 REF7 |\x0f CALL1 \xcc\x02 CALL6 \xfa\x02 CALL5 
+LOAD SCE023_007 REF6 *\x12 CALL7
+SEQ1 \x8c\x01 SEQ4 \xa83 CALL3 
+LOAD 
  
 果たして紅葉は、すぐに苦しそうにいった。@
 \n紅葉\n　「……お願い……トイレに……行かせて」@
@@ -112,9 +119,10 @@ SEQ1 \x8c\x01 SEQ5 \xa83 CALL4 \x03a\x00\x00
 拓司\n　「いやだね。いま、おれの前でしてみせろよ」\
 
 \x00\x00\x00
-SEQ3 REF7 n\x12 CALL1 \xcc\x02 CALL7 \xfa\x02 CALL6 
-LOAD3 SCE023_008 REF6 ,\x14 CALL8
-SEQ1 \x8c\x01 SEQ5 \xac3 CALL4 \x03n\x00\x00
+SEQ3 REF7 n\x12 CALL1 \xcc\x02 CALL6 \xfa\x02 CALL5 
+LOAD SCE023_008 REF6 ,\x14 CALL7
+SEQ1 \x8c\x01 SEQ4 \xac3 CALL3 
+LOAD 
  
 紅葉\n　「……変態！　あんた、狂ってるわ！」@
 拓司\n　「なんとでもいえ。\pいっとくが、おれはお前を便所に連れていく\n　　気はないからな。\pいまここでしてみせるか、あとでするか、\n　　どっちかだ。\pそしていまここでしてみせる気があるなら……こ\n　　れをやるよ」@
@@ -123,9 +131,10 @@ SEQ1 \x8c\x01 SEQ5 \xac3 CALL4 \x03n\x00\x00
 \n紅葉\n　「水……頂戴……」\
 
 \x00
-SEQ3 REF7 p\x14 CALL1 \xcc\x02 CALL7 \xfa\x02 CALL6 
-LOAD3 SCE023_009 REF6 b\x16 CALL8
-SEQ1 \x8c\x01 SEQ5 \xb03 CALL4 \x03k\x00\x00
+SEQ3 REF7 p\x14 CALL1 \xcc\x02 CALL6 \xfa\x02 CALL5 
+LOAD SCE023_009 REF6 b\x16 CALL7
+SEQ1 \x8c\x01 SEQ4 \xb03 CALL3 
+LOAD 
  
 拓司\n　「あァ？」@
 紅葉\n　「お水……頂戴」@
@@ -137,9 +146,10 @@ SEQ1 \x8c\x01 SEQ5 \xb03 CALL4 \x03k\x00\x00
 紅葉\n　「……」\
 
 \x00\x00\x00
-SEQ3 REF7 \xa6\x16 CALL1 \xcc\x02 CALL7 \xfa\x02 CALL6 
-LOAD3 SCE023_010 REF6 \x8c\x18 CALL8
-SEQ1 \x8c\x01 SEQ5 \xb43 CALL4 \x03\x91\x00\x00
+SEQ3 REF7 \xa6\x16 CALL1 \xcc\x02 CALL6 \xfa\x02 CALL5 
+LOAD SCE023_010 REF6 \x8c\x18 CALL7
+SEQ1 \x8c\x01 SEQ4 \xb43 CALL3 
+LOAD 
  
 拓司\n　「……まあ、おれはどっちでもいいけどな。\pイヤならいい。@
 　　悪いけどちょっと図書館にでも行って涼んでくるわ。@
@@ -153,9 +163,10 @@ SEQ1 \x8c\x01 SEQ5 \xb43 CALL4 \x03\x91\x00\x00
 しかし拓司は許さない。\p顎を掴んで無理矢理顔を上向きにし、冷酷\nに笑う。\
 
 \x00\x00\x00
-SEQ3 REF7 \xd0\x18 CALL1 \xcc\x02 CALL7 \xfa\x02 CALL6 
-LOAD3 SCE023_011 REF6 N\x1b CALL8
-SEQ1 \x8c\x01 SEQ5 \xb83 CALL4 \x03\xb9\x00\x00
+SEQ3 REF7 \xd0\x18 CALL1 \xcc\x02 CALL6 \xfa\x02 CALL5 
+LOAD SCE023_011 REF6 N\x1b CALL7
+SEQ1 \x8c\x01 SEQ4 \xb83 CALL3 
+LOAD 
  
 拓司\n　「どんな顔をしておもらしするのか、見たいからな」@
 \n観念したのか、紅葉はわずかに腰を浮かせて、ぶるるっと震えた。\n\p薄いブルーのパンティに、じわりと染みが生まれた。\p尿はみるみる\nクロッチに染み渡って、やがてあしぐりからだらだらとあふれ出し\nた。@
@@ -166,9 +177,10 @@ SEQ1 \x8c\x01 SEQ5 \xb83 CALL4 \x03\xb9\x00\x00
 拓司\n　「おいおいおいおーい、まだ出るのか？\p　よっぽどおれに見られ\n　　るのが嬉しいんだな。\p体中から汗のにおいさせて、ションベン\n　　もらして……おまえ異常なんじゃないか？」\
 
 \x00
-SEQ3 REF7 \x92\x1b CALL1 \xcc\x02 CALL7 \xfa\x02 CALL6 
-LOAD3 SCE023_012 REF6 \xb0\x1e CALL8
-SEQ1 \x8c\x01 SEQ5 \xbc3 CALL4 \x03\x97\x00\x00
+SEQ3 REF7 \x92\x1b CALL1 \xcc\x02 CALL6 \xfa\x02 CALL5 
+LOAD SCE023_012 REF6 \xb0\x1e CALL7
+SEQ1 \x8c\x01 SEQ4 \xbc3 CALL3 
+LOAD 
  
 \nいくら嘲笑されても一度あふれ出したものはなかなか止まらない。\n\pじょぼじょぼと、紅葉の意志に反して放出され続ける黄色い汚液…\n…。@
 紅葉の肩ががっくりと落ちたのを合図にようやく放出が完了した。\n\p黄色い液が、フローリングの床に無様な池を作っている。@
@@ -178,9 +190,10 @@ SEQ1 \x8c\x01 SEQ5 \xbc3 CALL4 \x03\x97\x00\x00
 拓司はおもむろにペ○スを引きずり出し、先端を紅葉の身体に定め\nた。\
 
 \x00
-SEQ3 REF7 \xf4\x1e CALL1 \xcc\x02 CALL7 \xfa\x02 CALL6 
-LOAD3 SCE023_013 REF6 \x8a! CALL8
-SEQ1 \x8c\x01 SEQ5 \xc03 CALL4 \x03v\x00\x00
+SEQ3 REF7 \xf4\x1e CALL1 \xcc\x02 CALL6 \xfa\x02 CALL5 
+LOAD SCE023_013 REF6 \x8a! CALL7
+SEQ1 \x8c\x01 SEQ4 \xc03 CALL3 
+LOAD 
  
 紅葉\n　「なっ……？」@
 拓司\n　「たらふく飲めよ」@
@@ -191,18 +204,20 @@ SEQ1 \x8c\x01 SEQ5 \xc03 CALL4 \x03v\x00\x00
 \n紅葉　「う……ううっ……」\
 
 \x00\x00\x00
-SEQ3 REF7 \xce! CALL1 \xcc\x02 CALL7 \xfa\x02 CALL6 
-LOAD3 SCE023_014 REF6 \xe0# CALL8
-SEQ1 \x8c\x01 SEQ5 \xc43 CALL4 \x03d\x00\x00
+SEQ3 REF7 \xce! CALL1 \xcc\x02 CALL6 \xfa\x02 CALL5 
+LOAD SCE023_014 REF6 \xe0# CALL7
+SEQ1 \x8c\x01 SEQ4 \xc43 CALL3 
+LOAD 
  
 ついに紅葉の抵抗が止んだ\p拘束されて失禁し、幼なじみの放尿の的\nにされるとういう恥辱が、プライドを完全にうち砕いてしまったの\nだろう。\p紅葉はがっくりと俯いて、震えながら汚液を浴び続けた。\n@
 拓司\n　「少しは抵抗しろよ。つまらないだろ？」@
 \n拓司はペ○スの先端を徐々に上に上げていく。\pそれに従って、ほと\nばしり出る尿は、早桃の体を這うように昇っていき、やがて黒い髪\nの毛に降り注いだ。\
 
 \x00
-SEQ3 REF7 $$ CALL1 \xcc\x02 CALL7 \xfa\x02 CALL6 
-LOAD3 SCE023_015 REF6 \xee% CALL8
-SEQ1 \x8c\x01 SEQ5 \xc83 CALL4 \x03k\x00\x00
+SEQ3 REF7 $$ CALL1 \xcc\x02 CALL6 \xfa\x02 CALL5 
+LOAD SCE023_015 REF6 \xee% CALL7
+SEQ1 \x8c\x01 SEQ4 \xc83 CALL3 
+LOAD 
  
 紅葉\n　「やめてよお……髪の毛におしっこなんてかけないでえ……」@
 拓司\n　「髪は女の命か？\p　お前みたいな異臭女がいつまでもそんなこと\n　　いっても仕方ないだろう？\p　ほら、顔あげろよ……あげろ！@
@@ -210,10 +225,11 @@ SEQ1 \x8c\x01 SEQ5 \xc83 CALL4 \x03k\x00\x00
 紅葉\n　「う……うむっ……うぷぷ……」\
 
 \x00\x00\x00
-SEQ3 REF7 2& CALL1 \xcc\x02 CALL7 \xfa\x02 CALL6 
-SEQ2 P\x00 CALL1 r\x03 CALL7 \x9c\x03 CALL6 
-LOAD3 SCE023_016 REF6 L( CALL8
-SEQ1 \x8c\x01 SEQ5 \xcc3 CALL4 \x03\x85\x00\x00
+SEQ3 REF7 2& CALL1 \xcc\x02 CALL6 \xfa\x02 CALL5 
+SEQ2 P\x00 CALL1 r\x03 CALL6 \x9c\x03 CALL5 
+LOAD SCE023_016 REF6 L( CALL7
+SEQ1 \x8c\x01 SEQ4 \xcc3 CALL3 
+LOAD 
  
 硬く目を閉じたまま、紅葉が顔を上にする。\p待ってましたとばかり\nに、拓司はその顔面に狙いを定めた。\p見慣れた幼なじみの顔が、あ\nっという間に汚液に蹂躙されていく。\p鼻面で弾ける黄色いしぶき。\n\p頬を、顎を伝って滝のように流れ落ちる黄色い液体。\pゾクゾクと背\n中を快感が駆け上がっていく。@
 \n拓司\n　「口だ！　早く口を開けろ！」@
@@ -221,9 +237,10 @@ SEQ1 \x8c\x01 SEQ5 \xcc3 CALL4 \x03\x85\x00\x00
 拓司\n　「よし……こぼさず飲めよ。\p腹の中までおれのしょんべんを染み\n　　渡らせてやるよ。\p内臓までおしっこまみれの不潔女だ、お前は\n　　！」\
 
 \x00
-SEQ3 REF7 \x90( CALL1 \xcc\x02 CALL7 \xfa\x02 CALL6 
-LOAD3 SCE023_017 REF6 \xde* CALL8
-SEQ1 \x8c\x01 SEQ5 \xd03 CALL4 \x03\xbc\x00\x00
+SEQ3 REF7 \x90( CALL1 \xcc\x02 CALL6 \xfa\x02 CALL5 
+LOAD SCE023_017 REF6 \xde* CALL7
+SEQ1 \x8c\x01 SEQ4 \xd03 CALL3 
+LOAD 
  
 叫んで拓司は、紅葉の髪を鷲掴みにした。\p両手で頭を固定して、開\nけっ放しの口の中にペ○スを一気に押し込む。\pペ○スの先端に、紅\n葉の喉の肉が押し当たった。@
 喉の奥で放尿され、呼吸もままならない紅葉。\p必死で頭をふって逃\nれようとするが、拓司はそれを許さない。\pさらに淫猥な言葉を浴び\nせかけ、紅葉の人格を踏みにじっていく。@
@@ -231,9 +248,10 @@ SEQ1 \x8c\x01 SEQ5 \xd03 CALL4 \x03\xbc\x00\x00
 　　それとも毎日同じようなもの食ってるんだから、味も同じなの\n　　かな？\p　ははは、嬉しいだろ？\p　ただ、お前んちの親が心配す\n　　ると気の毒だからな。\p立派に便器として生きていますって、写\n　　真に撮って送ってやるよ」\
 
 \x00
-SEQ3 REF7 "+ CALL1 \xcc\x02 CALL7 \xfa\x02 CALL6 
-LOAD3 SCE023_018 REF6 L. CALL8
-SEQ1 \x8c\x01 SEQ5 \xd43 CALL4 \x03\x9b\x00\x00
+SEQ3 REF7 "+ CALL1 \xcc\x02 CALL6 \xfa\x02 CALL5 
+LOAD SCE023_018 REF6 L. CALL7
+SEQ1 \x8c\x01 SEQ4 \xd43 CALL3 
+LOAD 
  
 紅葉は白目をむき、痙攣している。\p鼻の穴からも、尿が逆流して吹\nきこぼれている。\pかろうじて喉を上下させて汚液を飲み下している\nから、死んではいないのだろうが、もはや拓司の言葉を理解してい\nるとは思えない。@
 それでも拓司は、狂ったように言葉を放ち続けた。@
@@ -243,9 +261,10 @@ SEQ1 \x8c\x01 SEQ5 \xd43 CALL4 \x03\x9b\x00\x00
 　ザアザアアアアアアア……\
 
 \x00
-SEQ3 REF7 \x90. CALL1 \xcc\x02 CALL7 \xfa\x02 CALL6 
-LOAD3 SCE023_019 REF6 61 CALL8
-SEQ1 \x8c\x01 SEQ5 \xd83 CALL4 \x031\x00\x00
+SEQ3 REF7 \x90. CALL1 \xcc\x02 CALL6 \xfa\x02 CALL5 
+LOAD SCE023_019 REF6 61 CALL7
+SEQ1 \x8c\x01 SEQ4 \xd83 CALL3 
+LOAD 
  
 耳の奥で、『灰色』が響き始めた。@
 ああ、うるさい。@
@@ -255,7 +274,7 @@ SEQ1 \x8c\x01 SEQ5 \xd83 CALL4 \x031\x00\x00
 　ザアザアアアアアアア……\
 
 \x00
-SEQ3 REF7 z1 CALL1 \xcc\x02 CALL7 \xfa\x02 CALL5 \x06\x00 CALL7 0\x00 CALL6 
-SEQ2 \xc8\x00 CALL1 r\x03 CALL7 \x9c\x03 CALL5 \xcc\x02 CALL8
-LOAD3 TextClose REF2 \xd22 CALL6 
+SEQ3 REF7 z1 CALL1 \xcc\x02 CALL6 \xfa\x02 CALL4 \x06\x00 CALL6 0\x00 CALL5 
+SEQ2 \xc8\x00 CALL1 r\x03 CALL6 \x9c\x03 CALL4 \xcc\x02 CALL7
+LOAD TextClose REF2 \xd22 CALL5 
 END_FILE
