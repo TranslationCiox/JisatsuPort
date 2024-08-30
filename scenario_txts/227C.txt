@@ -1,15 +1,15 @@
 START_FILE
 \xea\x1b\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00 \x17\x00
-LOAD3 SCE227_001\x00\x1f\x06\x00 FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 Pr\x01\x0c\x00\x00\x00\x00"\x03\x11\x00\x00
+LOAD3 SCE227_001\x00\x1f\x06\x00 SCE_CMD 
+DIALOGUE_1 Pr\x01\x0c\x00\x00\x00\x00"\x03\x11\x00\x00
  
 \n\n\n\n\n\n\n\n\n\n　　　　　　　　　　　　　『１３日目』\
 
 \x00 DIALOGUE_END J\x00 SEQ01
-LOAD7 .\\Data\\Script\\TextFunc.Fob OP01 \xae\x00 FOB_SCE_END
+LOAD7 .\\Data\\Script\\TextFunc.Fob OP01 \xae\x00 SCE_CMD 
 LOAD2 TextOn OP01 \xdc\x00 OP_CMD 
-LOAD3 SCE227_002\x00\x1f\xf8\x00 FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 Tr\x01\x0c\x00\x00\x00\x00"\x03u\x00\x00
+LOAD3 SCE227_002\x00\x1f\xf8\x00 SCE_CMD 
+DIALOGUE_1 Tr\x01\x0c\x00\x00\x00\x00"\x03u\x00\x00
  
 朝。@
 トイレを使うために実験室に現れた錦城に、カンナがいった。@
@@ -21,11 +21,10 @@ LOAD3 SCE227_002\x00\x1f\xf8\x00 FOB_SCE_END
 \n朝からずっと押し黙っているので妙だとは思っていたが……拓司\nたちは目を丸くした。\p早桃は怯えたように、拓司のシャツの袖を\n握りしめた。@
 努めて無表情のカンナを、錦城は勝ち誇って見下ろした。\
 
-\x00\x00\x00 DIALOGUE_END <\x01 SEQ01
-\x1f\xae\x00 FOB_SCE_END
-\x1f\xdc\x00 OP_CMD 
-LOAD3 SCE227_003\x00\x1fJ\x03 FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 Xr\x01\x0c\x00\x00\x00\x00"\x03]\x00\x00
+\x00\x00\x00 DIALOGUE_END <\x01
+SEQ02 \xae\x00 SEQ03 \xdc\x00 OP_CMD 
+LOAD3 SCE227_003\x00\x1fJ\x03 SCE_CMD 
+DIALOGUE_1 Xr\x01\x0c\x00\x00\x00\x00"\x03]\x00\x00
  
 錦城\n　「あら、昨日はあんなにつっぱってたのに。どういう風の吹き\n　　回し？」@
 カンナ\n　「行きますから、そのかわり、食糧を約束通り配ってください」\n\p錦城\n　「……ふぅん」@
@@ -35,11 +34,10 @@ LOAD3 SCE227_003\x00\x1fJ\x03 FOB_SCE_END
 錦城\n　「……」@
 カンナ\n　「……すみませんでした」\
 
-\x00 DIALOGUE_END \x8e\x03 SEQ01
-\x1f\xae\x00 FOB_SCE_END
-\x1f\xdc\x00 OP_CMD 
-LOAD3 SCE227_004\x00\x1f<\x05 FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 \\r\x01\x0c\x00\x00\x00\x00"\x03S\x00\x00
+\x00 DIALOGUE_END \x8e\x03
+SEQ02 \xae\x00 SEQ03 \xdc\x00 OP_CMD 
+LOAD3 SCE227_004\x00\x1f<\x05 SCE_CMD 
+DIALOGUE_1 \\r\x01\x0c\x00\x00\x00\x00"\x03S\x00\x00
  
 錦城\n　「それだけ？」@
 カンナ\n　「今後は秩序を乱すような行動は慎みます」@
@@ -50,11 +48,10 @@ LOAD3 SCE227_004\x00\x1f<\x05 FOB_SCE_END
 錦城\n　「みんなの前で、私の便器になって。\pそうしたら許してあげ\n　　る」@
 カンナ\n　「便器って－－」\
 
-\x00 DIALOGUE_END \x80\x05 SEQ01
-\x1f\xae\x00 FOB_SCE_END
-\x1f\xdc\x00 OP_CMD 
-LOAD3 SCE227_005\x00\x1f\x06\x07 FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 `r\x01\x0c\x00\x00\x00\x00"\x03u\x00\x00
+\x00 DIALOGUE_END \x80\x05
+SEQ02 \xae\x00 SEQ03 \xdc\x00 OP_CMD 
+LOAD3 SCE227_005\x00\x1f\x06\x07 SCE_CMD 
+DIALOGUE_1 `r\x01\x0c\x00\x00\x00\x00"\x03u\x00\x00
  
 錦城\n　「そのままの意味だけれど。\pいまから、先生のおしっこを飲ん\n　　でくれればそれでいいの」@
 カンナ\n　「な、なにを－－！」@
@@ -67,11 +64,10 @@ LOAD3 SCE227_005\x00\x1f\x06\x07 FOB_SCE_END
 カンナ\n　「……トイレに……なります」@
 錦城\n　「便器」\
 
-\x00\x00\x00 DIALOGUE_END J\x07 SEQ01
-\x1f\xae\x00 FOB_SCE_END
-\x1f\xdc\x00 OP_CMD 
-LOAD3 SCE227_006\x00\x1fX\t FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 dr\x01\x0c\x00\x00\x00\x00"\x03n\x00\x00
+\x00\x00\x00 DIALOGUE_END J\x07
+SEQ02 \xae\x00 SEQ03 \xdc\x00 OP_CMD 
+LOAD3 SCE227_006\x00\x1fX\t SCE_CMD 
+DIALOGUE_1 dr\x01\x0c\x00\x00\x00\x00"\x03n\x00\x00
  
 錦城は意地悪く言い直した。\p机に腰をかけ、見せつけるように足\nを組む。@
 \n錦城\n　「トイレじゃなくて便器でしょ？\p　きちんといいなおして」@
@@ -82,11 +78,10 @@ LOAD3 SCE227_006\x00\x1fX\t FOB_SCE_END
 錦城\n　「声が小さい！」@
 カンナ\n　「……よ、喜んで錦城先生の人間便器になります」\
 
-\x00 DIALOGUE_END \x9c\t SEQ01
-\x1f\xae\x00 FOB_SCE_END
-\x1f\xdc\x00 OP_CMD 
-LOAD3 SCE227_007\x00\x1f\x8e\x0b FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 hr\x01\x0c\x00\x00\x00\x00"\x03y\x00\x00
+\x00 DIALOGUE_END \x9c\t
+SEQ02 \xae\x00 SEQ03 \xdc\x00 OP_CMD 
+LOAD3 SCE227_007\x00\x1f\x8e\x0b SCE_CMD 
+DIALOGUE_1 hr\x01\x0c\x00\x00\x00\x00"\x03y\x00\x00
  
 錦城\n　「『お願いします。\p私におしっこしてください』」@
 カンナ\n　「お願い……します。\p私におしっこして……ください」@
@@ -97,13 +92,13 @@ LOAD3 SCE227_007\x00\x1f\x8e\x0b FOB_SCE_END
 \n拓司\n　「カンナ、もう十分だ。\pもう……」@
 カンナ\n　「黙っていて。\p大丈夫だから。\pこんなの、なんでもないから」\
 
-\x00\x00\x00 DIALOGUE_END \xd2\x0b SEQ01
-\x1f\xae\x00 FOB_SCE_END
-\x1f\xdc\x00 OP_CMD  BACKGROUND_OP \x05\x01 SEQ01
-LOAD6 .\\Data\\Script\\Bgm.Fob OP02 \n\x0e FOB_SCE_END
+\x00\x00\x00 DIALOGUE_END \xd2\x0b
+SEQ02 \xae\x00 SEQ03 \xdc\x00 OP_CMD  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x05\x01 SEQ01
+
+LOAD6 .\\Data\\Script\\Bgm.Fob OP02 \n\x0e SCE_CMD 
 LOAD2 PlayCD OP01 4\x0e OP_CMD 
-LOAD3 SCE227_008\x00\x1fP\x0e FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 lr\x01\x0c\x00\x00\x00\x00"\x03\xa1\x00\x00
+LOAD3 SCE227_008\x00\x1fP\x0e SCE_CMD 
+DIALOGUE_1 lr\x01\x0c\x00\x00\x00\x00"\x03\xa1\x00\x00
  
 錦城は、目を逸らさないように、と全員に命じた。@
 見せつけるように下着を脱ぎ、足を開く。@
@@ -112,11 +107,10 @@ LOAD3 SCE227_008\x00\x1fP\x0e FOB_SCE_END
 拓司は目を反らした。\pしかしめざとく錦城がそれを見とがめる。@
 /*■HCG18　表示（クロスフェード）*/\a7,-2,-2,0,\a0,89,2,0,\a6,-2,0,0,\n錦城\n　「しっかりみておくのよ。\p誰か一人でも目を反らした場合、彼\n　　女の努力は無駄になりますからね？\p　いい、これは授業なの。\n　　\p生意気な態度をとったガキがどうなるか、それを教えてあげ\n　　ているの。\pほら、便器ちゃん。はやく口をつけなさいよ！」\
 
- DIALOGUE_END \x94\x0e SEQ01
-\x1f\xae\x00 FOB_SCE_END
-\x1f\xdc\x00 OP_CMD 
-LOAD3 SCE227_009\x00\x1fR\x11 FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 pr\x01\x0c\x00\x00\x00\x00"\x03\x8a\x00\x00
+ DIALOGUE_END \x94\x0e
+SEQ02 \xae\x00 SEQ03 \xdc\x00 OP_CMD 
+LOAD3 SCE227_009\x00\x1fR\x11 SCE_CMD 
+DIALOGUE_1 pr\x01\x0c\x00\x00\x00\x00"\x03\x8a\x00\x00
  
 錦城の足のあいだにひざまづき、カンナは目を閉じ、口を開いた。\n\pその口が自分の性器に密着したのを確認してから、錦城は整った\n顔をわずかにゆがめた。@
 放尿が始まった。@
@@ -127,22 +121,20 @@ LOAD3 SCE227_009\x00\x1fR\x11 FOB_SCE_END
 錦城\n　「た、他人の排泄物を喉を鳴らして飲み下すなんて。\pなんて汚\n　　らしいガキなの？！」@
 カンナ\n　「くむ……ごきゅっ……ごきゅ……むぐんん……」\
 
-\x00\x00\x00 DIALOGUE_END \x96\x11 SEQ01
-\x1f\xae\x00 FOB_SCE_END
-\x1f\xdc\x00 OP_CMD 
-LOAD3 SCE227_010\x00\x1f\xf8\x13 FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 tr\x01\x0c\x00\x00\x00\x00"\x03|\x00\x00
+\x00\x00\x00 DIALOGUE_END \x96\x11
+SEQ02 \xae\x00 SEQ03 \xdc\x00 OP_CMD 
+LOAD3 SCE227_010\x00\x1f\xf8\x13 SCE_CMD 
+DIALOGUE_1 tr\x01\x0c\x00\x00\x00\x00"\x03|\x00\x00
  
 錦城\n　「あら、涙流して喜んでるの？\p　あははは、まったくもう、ど\n　　ういう教育を受けてきたのかしら？\p　このままじゃ将来ロク\n　　な大人にはならないわ。\pいまのうちにしっかり便器として教\n　　育しておいたほうがよさそうね。\pそうすれば就職はお便所に\n　　決定。\p進路指導も楽でいいわ、あはははは！」@
 \n嚥下しきれない尿が、カンナの口の端からボタボタと流れ落ちる。\n\pスカートの上に、錦城の汚液が染みをつくる。@
 錦城はカンナの頭を両手で固定し、狂気に支配された顔で笑い続\nけた。\
 
-\x00\x00\x00 DIALOGUE_END <\x14 SEQ01
-\x1f\xae\x00 FOB_SCE_END
-\x1f\xdc\x00 OP_CMD  BACKGROUND_OP \xc8\x00 SEQ01
-LOAD6 .\\Data\\Script\\Bg.Fob OP03 \x80\x16 FOB_SCE_END
-LOAD4 BgAutoFadeIn OP03 \xaa\x16 OP_CMD \x1f\n\x0e FOB_SCE_END
-LOAD2 StopCD OP01 \xda\x16 OP_CMD \x1f\xae\x00 FOB_SCE_END
+\x00\x00\x00 DIALOGUE_END <\x14
+SEQ02 \xae\x00 SEQ03 \xdc\x00 OP_CMD  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00 SEQ01
 
+LOAD6 .\\Data\\Script\\Bg.Fob OP03 \x80\x16 SCE_CMD 
+LOAD4 BgAutoFadeIn OP03 \xaa\x16 SEQ05 \n\x0e SCE_CMD 
+LOAD2 StopCD OP01 \xda\x16 SEQ05 \xae\x00 SCE_CMD 
 LOAD3 TextClose OP02 \x02\x17 OP_CMD 
 END_FILE

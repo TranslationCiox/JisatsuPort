@@ -1,9 +1,10 @@
 START_FILE
-!\x15\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00r\x11\x00 BACKGROUND_OP \x0b\x01 SEQ01
-LOAD6 .\\Data\\Script\\Bgm.Fob OP02  \x00 FOB_SCE_END
+!\x15\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00r\x11\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x0b\x01 SEQ01
+
+LOAD6 .\\Data\\Script\\Bgm.Fob OP02  \x00 SCE_CMD 
 LOAD2 PlayCD OP01 J\x00 OP_CMD 
-LOAD3 SCE053_001\x00\x1ff\x00 FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 pb BACKGROUND_OP3 z\x00\x00
+LOAD3 SCE053_001\x00\x1ff\x00 SCE_CMD 
+DIALOGUE_1 pb DIALOGUE_2 z\x00\x00
  
 机が乱暴に端々に追いやられ、教室は妙に広々としている。@
 教室の中央に、学生たちが群れている。@
@@ -12,10 +13,10 @@ LOAD3 SCE053_001\x00\x1ff\x00 FOB_SCE_END
 /*▲BGM　Track11　再生　*//*■CG21　表示（クロスフェード）　*/\a7,-2,-2,0,\a0,20,2,0,\a6,-2,0,0,\n早桃だ。\
 
 \x00 DIALOGUE_END \xaa\x00 SEQ01
-LOAD7 .\\Data\\Script\\TextFunc.Fob OP01 \xb2\x02 FOB_SCE_END
+LOAD7 .\\Data\\Script\\TextFunc.Fob OP01 \xb2\x02 SCE_CMD 
 LOAD2 TextOn OP01 \xe0\x02 OP_CMD 
-LOAD3 SCE053_002\x00\x1f\xfc\x02 FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 tb BACKGROUND_OP3 C\x00\x00
+LOAD3 SCE053_002\x00\x1f\xfc\x02 SCE_CMD 
+DIALOGUE_1 tb DIALOGUE_2 C\x00\x00
  
 学生\n　「だいたい図々しいんだよ」@
 学生\n　「なんでお前、率先して死なないわけ？」@
@@ -27,11 +28,10 @@ LOAD3 SCE053_002\x00\x1f\xfc\x02 FOB_SCE_END
 学生\n　「死ねよ」@
 学生\n　「死ねよ」\
 
-\x00\x00\x00 DIALOGUE_END @\x03 SEQ01
-\x1f\xb2\x02 FOB_SCE_END
-\x1f\xe0\x02 OP_CMD 
-LOAD3 SCE053_003\x00\x1f\x86\x04 FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 xb BACKGROUND_OP3 \x96\x00\x00
+\x00\x00\x00 DIALOGUE_END @\x03
+SEQ02 \xb2\x02 SEQ03 \xe0\x02 OP_CMD 
+LOAD3 SCE053_003\x00\x1f\x86\x04 SCE_CMD 
+DIALOGUE_1 xb DIALOGUE_2 \x96\x00\x00
  
 　死ねよ、死ねよ、死ねよ、死ねよ、死ねよ、死ねよ、死ねよ、\n　死ねよ、死ねよ、死ねよ\n　死ね死ね死ね死ね死ね死ね死ね死ね死ね死ね死ね死ね死ね死ね\n　死ね死ね死ね\n　シネシネシネシネシシネシネシネシネシネシネシネシネシネシ\n　ネシネシネシネシネシネ\n　学生たちの声は、大合唱となって教室にとどろき渡った。@
 \n　シ……足を上げる。@
@@ -40,11 +40,10 @@ LOAD3 SCE053_003\x00\x1f\x86\x04 FOB_SCE_END
 　ネ……足を踏み降ろす。@
 \n　シネシネシネシネシシネシネシネシネシネシネシネシネシネシ\nネシネシネシネシネシネ\n　ドンガドンガドンガドンドンガドンガドンガドンガドンガドン\nガドンガドンガドンガドンガドンガ\
 
-\x00 DIALOGUE_END \xca\x04 SEQ01
-\x1f\xb2\x02 FOB_SCE_END
-\x1f\xe0\x02 OP_CMD 
-LOAD3 SCE053_004\x00\x1f\\\x07 FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 |b BACKGROUND_OP3 \xb3\x00\x00
+\x00 DIALOGUE_END \xca\x04
+SEQ02 \xb2\x02 SEQ03 \xe0\x02 OP_CMD 
+LOAD3 SCE053_004\x00\x1f\\\x07 SCE_CMD 
+DIALOGUE_1 |b DIALOGUE_2 \xb3\x00\x00
  
 　足を踏みならす音は太鼓のリズムで、合唱は呪文の詠唱だった@
 　中世の魔女狩りそのものだった。@
@@ -57,13 +56,13 @@ LOAD3 SCE053_004\x00\x1f\\\x07 FOB_SCE_END
 　耐えられるはずがない。\p早桃は円陣の中央で耳を覆い、しゃ\n　がみこんでしまった。@
 \n早桃\n　「ごめんなさい……ごめんなさい……ごめんなさい……」\
 
-\x00 DIALOGUE_END \xa0\x07 SEQ01
-\x1f\xb2\x02 FOB_SCE_END
-\x1f\xe0\x02 OP_CMD  BACKGROUND_OP \xc8\x00 SEQ01
-LOAD6 .\\Data\\Script\\Bg.Fob OP03 \xc0\n FOB_SCE_END
+\x00 DIALOGUE_END \xa0\x07
+SEQ02 \xb2\x02 SEQ03 \xe0\x02 OP_CMD  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00 SEQ01
+
+LOAD6 .\\Data\\Script\\Bg.Fob OP03 \xc0\n SCE_CMD 
 LOAD4 BgAutoFadeIn OP03 \xea\n OP_CMD 
-LOAD3 SCE053_005\x00\x1f\x0e\x0b FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 \x80b BACKGROUND_OP3 r\x00\x00
+LOAD3 SCE053_005\x00\x1f\x0e\x0b SCE_CMD 
+DIALOGUE_1 \x80b DIALOGUE_2 r\x00\x00
  
 早桃がクラスのなかで孤立しているということは知っていた。@
 人見知りの激しい早桃は、いじめの絶好の標的だったのだろう。\nそれにしても－－@
@@ -72,11 +71,10 @@ LOAD3 SCE053_005\x00\x1f\x0e\x0b FOB_SCE_END
 いずれにせよ、このまま黙ってみているわけにはいかない。@
 しかしまた、背後から拓司の肩を押さえた者がいる。\
 
-\x00 DIALOGUE_END R\x0b SEQ01
-\x1f\xb2\x02 FOB_SCE_END
-\x1f\xe0\x02 OP_CMD 
-LOAD3 SCE053_006\x00\x1fT\r FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 \x84b BACKGROUND_OP3 a\x00\x00
+\x00 DIALOGUE_END R\x0b
+SEQ02 \xb2\x02 SEQ03 \xe0\x02 OP_CMD 
+LOAD3 SCE053_006\x00\x1fT\r SCE_CMD 
+DIALOGUE_1 \x84b DIALOGUE_2 a\x00\x00
  
 拓司\n　「離してくれ、雲居さん」@
 なたね\n　「駄目。\pいま入っても義妹さんは救えない。\p多勢に無勢。@
@@ -86,26 +84,21 @@ LOAD3 SCE053_006\x00\x1fT\r FOB_SCE_END
 拓司\n　「な……？」@
 \nなたねはすうっと目を細めて天を見上げ、指先で空中に何かの文\n字を書いた。\pそれから地面に掌をぴったりと当てて、沈黙に沈み\n込んだ。\p拓司のなかで怒りが爆発した。\
 
-\x00 DIALOGUE_END \x98\r SEQ01
-\x1f\xb2\x02 FOB_SCE_END
-\x1f\xe0\x02 OP_CMD 
-LOAD3 SCE053_007\x00\x1fV\x0f FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 \x88b BACKGROUND_OP3 >\x00\x00
+\x00 DIALOGUE_END \x98\r
+SEQ02 \xb2\x02 SEQ03 \xe0\x02 OP_CMD 
+LOAD3 SCE053_007\x00\x1fV\x0f SCE_CMD 
+DIALOGUE_1 \x88b DIALOGUE_2 >\x00\x00
  
 拓司\n　「ふざけるな、そんな遊びにつきあってるヒマは－－」@
 雲居\n　「間違いない。\pいま、前兆を確認したわ。\p五分後、大きな波が\n　　来るわ。\pそれまで待てば、みんな自滅する。\pそうすれば、危\n　　険を冒さずに義妹さんを助けられるわ」\
 
-\x00\x00\x00 DIALOGUE_END \x9a\x0f SEQ01
-\x1f\xb2\x02 FOB_SCE_END
-\x1f\xe0\x02 OP_CMD \x03\n\x00\x00
+\x00\x00\x00 DIALOGUE_END \x9a\x0f
+SEQ02 \xb2\x02 SEQ03 \xe0\x02 OP_CMD \x03\n\x00\x00
 CHOICE
 待っていられない\n待つ\n\l0,2,
 ENDCHOICE
 
-\x00 DIALOGUE_END \xcc\x10 SEQ01
-\x1f\xb2\x02 FOB_SCE_END
-\x1f\xe0\x02 OP_CMD \x1f\xb2\x02 FOB_SCE_END
-
-LOAD3 TextClose OP02 :\x11 OP_CMD \x1f\xb2\x02 FOB_SCE_END
-\x1f:\x11 OP_CMD 
+\x00 DIALOGUE_END \xcc\x10
+SEQ02 \xb2\x02 SEQ03 \xe0\x02 SEQ05 \xb2\x02 SCE_CMD 
+LOAD3 TextClose OP02 :\x11 SEQ05 \xb2\x02 SEQ03 :\x11 OP_CMD 
 END_FILE

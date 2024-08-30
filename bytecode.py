@@ -1,7 +1,35 @@
 import codecs
 import os
-
+#SET_5\x1e\x02\x00\x003B_02 \x1e\x02\x00\x005  \x1e\x00\x00\x00\x00\r\x00\x00
 patterns = [
+    {
+        "pattern": [b'\x00', b'\x1e', b'\x02', b'\x00', b'\x00', b'\x1f', b'\xb6\x01', b'\x00', b'\x1e', b'\x02', b'\x00', b'\x00', b'5', b'\x1f', b'j', b'\x00',
+                    b'\x00', b'\x1e', b'\x02', b'\x00', b'\x00', b'\x1f', b'\xde\x02', b'\x00',
+                    b'\x1e', b'\x02', b'\x00', b'\x00', b'5', b' ', b'\x1e', b'\x00', b'\x00', b'\x00', b'\x00', b'\r',
+                    b'\x00', b'\x00'],
+        # Seems to be a decent indicator of a choice being present.
+        "action": " CHOICE_END"
+    },
+
+    {
+        "pattern": [b'\x1f', b'\xb6\x01', b'\x00', b'\x1e', b'\x02', b'\x00', b'\x00', b'5', b'\x1f', b'j', b'\x00', b'\x00', b'\x1e', b'\x02', b'\x00', b'\x00', b'\x1f', b'\xde\x02', b'\x00',
+                    b'\x1e', b'\x02', b'\x00', b'\x00', b'5', b' ', b'\x1e', b'\x00', b'\x00', b'\x00', b'\x00', b'\r', b'\x00', b'\x00'],
+        # Seems to be a decent indicator of a choice being present.
+        "action": "CHOICE"
+    },
+
+    {
+        "pattern": [b'\x00', b'\x1e', b'\x02', b'\x00', b'\x00', b'\x1f', b'\xb6\x01', b'\x00', b'\x1e', b'\x02', b'\x00', b'\x00', b'5'],
+        # Used after loading FOB files and SCE calls and some long bytecode chains which might also contain something.
+        "action": " SCENARIO_END\n"
+    },
+
+    {
+        "pattern": [b'\x00', b'\x0c', b'\x02', b'\x00', b'\x00', b'"', b'\x1f'],
+        # Used after EVERY block of dialogue EVEN dialogue choice blocks.
+        "action": "\nSEQ02 "
+    },
+
     {
         "pattern": [b'\x00', b'\x0c', b'\x02', b'\x00', b'\x00', b'"'],
         # Used after EVERY block of dialogue EVEN dialogue choice blocks.
@@ -14,21 +42,28 @@ patterns = [
     },
 
     {
-        "pattern": [b'\x1e', b'\x00', b'\x00', b'\x00', b'\x00', b'\r', b'\x00', b'\x00', b'\x1e'],
+        "pattern": [b'\xef', b'!', b'\x1e', b'\x00', b'\x00', b'\x00', b'\x00', b'\r', b'\x00', b'\x00', b'\x1e',
+                    b'\x8c\x01', b'\x00', b'\r', b'\x02', b'\x1e'],
         # Used after certain commands, often time background or textbox related
-        "action": "BACKGROUND_OP "
-    },
-
-    {
-        "pattern": [b'\x8c\x01', b'\x00', b'\r', b'\x02', b'\x1e'],
-        # Used after certain commands, often time background or textbox related
-        "action": "BACKGROUND_OP2 "
+        "action": "\nDIALOGUE_1 "
     },
 
     {
         "pattern": [b'\x00', b'\x0c', b'\x00', b'\x00', b'\x00', b'\x00', b'"', b'\x03'],
         # Used after certain commands, often time background or textbox related
-        "action": " BACKGROUND_OP3 "
+        "action": " DIALOGUE_2 "
+    },
+
+    {
+        "pattern": [b'\x1f', b'\xb6\x01', b'\x00', b'\x1e', b'\x02', b'\x00', b'\x00', b'5'],
+        # Used after every SCENARIO in SCENARIOROOT
+        "action": "SCENARIO "
+    },
+
+    {
+        "pattern": [b'\x00', b'\x1e', b'\x02', b'\x00', b'\x00', b'5', b'\x1f'],
+        # Used in EVERY sequence with commands like e.g. NormalFadeIn
+        "action": " SEQ05 "
     },
 
     {
@@ -36,17 +71,23 @@ patterns = [
         # Used in EVERY sequence with commands like e.g. NormalFadeIn
         "action": " OP_CMD "
     },
+
+    {
+        "pattern": [b'\x00', b'\x1e', b'\x02', b'\x00', b'\x00', b'\x1f'],
+        # Used in EVERY SCExx_xxx command.
+        "action": " SEQ03 "
+    },
+
+    {
+        "pattern": [b'\x00', b'\x1e', b'\x02', b'\x00', b'\x00'],
+        # Used in EVERY SCExx_xxx command.
+        "action": " SCE_CMD "
+    },
     # {
     #     "pattern": [b'J', b'\x00', b'\x00'],
     #     # Used after SetGamemode
     #     "action": " SET_GAMEMODE "
     # },
-
-    {
-        "pattern": [b'\x00', b'\x1e', b'\x02', b'\x00', b'\x00'],
-        # Used after loading FOB files and SCE calls and some long bytecode chains which might also contain something.
-        "action": " FOB_SCE_END\n"
-    },
 
     {
         "pattern": [b'\x1f', b'j', b'\x00', b'\x00'],
@@ -61,7 +102,7 @@ patterns = [
     {
         "pattern": [b'\x03', b'\x02', b'\x00', b'\x00'],
         # BgOn, PlayCD, TextOn
-        "action": "LOAD2 "
+        "action": "\nLOAD2 "
     },
     {
         "pattern": [b'\x03', b'\x03', b'\x00', b'\x00'],
@@ -71,7 +112,7 @@ patterns = [
     {
         "pattern": [b'\x03', b'\x04', b'\x00', b'\x00'],
         # BgAutoFadeIn, GetLastTxtID
-        "action": "LOAD4 "
+        "action": "\nLOAD4 "
     },
     {
         "pattern": [b'\x03', b'\x05', b'\x00', b'\x00'],
@@ -81,7 +122,7 @@ patterns = [
     {
         "pattern": [b'\x03', b'\x06', b'\x00', b'\x00'],
         # Data.Fob
-        "action": "LOAD6 "
+        "action": "\nLOAD6 "
     },
     {
         "pattern": [b'\x03', b'\x07', b'\x00', b'\x00'],
@@ -253,6 +294,7 @@ def save_text(lines, output_path):
 
             line_counter += 1
 
+
 # Main processing loop
 def process_files(input_dir="scripts", output_dir="scripts_txts"):
     if not os.path.exists(output_dir):
@@ -268,18 +310,10 @@ def process_files(input_dir="scripts", output_dir="scripts_txts"):
 
         list_bytes = parse_bytecode(data)
 
-
-        # lines = extract(data, start_codes)
-
         if list_bytes:
-
             output_path = os.path.join(output_dir, fs.replace(".FOB", ".txt"))
             save_text(list_bytes, output_path)
-            # print(f"Processed {output_path}")
         counter += 1
-        # if counter == 2:
-        #     quit(1)
-
 
 
 # Run the processing function

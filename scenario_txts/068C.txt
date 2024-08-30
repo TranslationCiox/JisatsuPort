@@ -1,7 +1,7 @@
 START_FILE
 \xa4\x19\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\x02\x16\x00
-LOAD3 SCE068_001\x00\x1f\x06\x00 FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 \xe0y BACKGROUND_OP3 \xec\x00\x00
+LOAD3 SCE068_001\x00\x1f\x06\x00 SCE_CMD 
+DIALOGUE_1 \xe0y DIALOGUE_2 \xec\x00\x00
  
 カンナ\n　「ピンポーン！\p　要するに、こういうことよね。\p『好ましくな\n　　い環境を自分が変えられないと知った生き物は、無力感に支\n　　配される』……電気ショックに黙々と耐えたり、泣くことす\n　　らやめて内にこもったり。\p無力感にうちのめされるの。@
 　　そして－－無力感に支配された赤ちゃんは、病気に対する抵\n　　抗力が低くなるの。\pこれは事実よ。\p無力感に囚われると、生\n　　命力が低下する。\p……前に進む意志のない生物は、死ぬ。@
@@ -10,20 +10,19 @@ LOAD3 SCE068_001\x00\x1f\x06\x00 FOB_SCE_END
 拓司\n　「自ら……命を絶つこと」\
 
 \x00\x00\x00 DIALOGUE_END J\x00 SEQ01
-LOAD7 .\\Data\\Script\\TextFunc.Fob OP01 \x1a\x04 FOB_SCE_END
+LOAD7 .\\Data\\Script\\TextFunc.Fob OP01 \x1a\x04 SCE_CMD 
 LOAD2 TextOn OP01 H\x04 OP_CMD 
-LOAD3 SCE068_002\x00\x1fd\x04 FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 \xe4y BACKGROUND_OP3 \xac\x00\x00
+LOAD3 SCE068_002\x00\x1fd\x04 SCE_CMD 
+DIALOGUE_1 \xe4y DIALOGUE_2 \xac\x00\x00
  
 カンナ\n　「あなた、一回話してくれたことがあったわよね。\p蜥蜴のこと。\n　　\p瓶詰の蜥蜴。\pそうよ、蜥蜴を殺したのは無力感よ。\p蜥蜴は自\n　　分が世界に影響を与えられないことを悟って、死んだ。\pあな\n　　たも同じ。\pあなたは瓶詰の蜥蜴。\p世界はあなたという歯車無\n　　しでも回っていく。\pあなたという歯車は、なんら世界に影響\n　　を及ぼし得ない。\pどうあがいても電流は流されるし、泣き叫\n　　んでも誰もやってこない。\pあなに取り憑いたもの。\pそれは、\n　　無力感という名の死病よ」@
 拓司\n　「……」@
 カンナ\n　「簡単でしょ？\p　イヌとか赤ちゃんの実験で照明されちゃうよ\n　　うなもの。\pその程度なの、あなたは。\pあなたにとって、死は\n　　その程度のもの。\pでも、私は違う！」\
 
-\x00 DIALOGUE_END \xa8\x04 SEQ01
-\x1f\x1a\x04 FOB_SCE_END
-\x1fH\x04 OP_CMD 
-LOAD3 SCE068_003\x00\x1f\x92\x07 FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 \xe8y BACKGROUND_OP3 \xa4\x00\x00
+\x00 DIALOGUE_END \xa8\x04
+SEQ02 \x1a\x04 SEQ03 H\x04 OP_CMD 
+LOAD3 SCE068_003\x00\x1f\x92\x07 SCE_CMD 
+DIALOGUE_1 \xe8y DIALOGUE_2 \xa4\x00\x00
  
 拓司\n　「……どう違うんだ？」@
 カンナ\n　「私には赦しが必要なの。\pでも、その赦しは、いまとなっては、\n　　物理的な意味では絶対に与えられない。\pだから儀式化された\n　　赦しが必要なの！」@
@@ -31,13 +30,13 @@ LOAD3 SCE068_003\x00\x1f\x92\x07 FOB_SCE_END
 カンナ\n　「虎菱くん、あなた素敵よ。\p頭がいいわ。\pここに積み重なって\n　　る連中が考えているみたいに、数式とかイディオムを丸暗記\n　　するような頭の良さじゃなくて……もっと深い智恵が、あな\n　　たにはある。\pあなたは特別。\pだからあなたを選んだの。@
 　　決してあなたをバカにしているわけじゃないの。\pあなたの存\n　　在を認めているからこそ、あなたを選んだ……あッ！」\
 
-\x00\x00\x00 DIALOGUE_END \xd6\x07 SEQ01
-\x1f\x1a\x04 FOB_SCE_END
-\x1fH\x04 OP_CMD  BACKGROUND_OP \xc8\x00 SEQ01
-LOAD6 .\\Data\\Script\\Bg.Fob OP03 \xba\n FOB_SCE_END
+\x00\x00\x00 DIALOGUE_END \xd6\x07
+SEQ02 \x1a\x04 SEQ03 H\x04 OP_CMD  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00 SEQ01
+
+LOAD6 .\\Data\\Script\\Bg.Fob OP03 \xba\n SCE_CMD 
 LOAD2 BgOn OP03 \xe4\n OP_CMD 
-LOAD3 SCE068_004\x00\x1f\x00\x0b FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 \xecy BACKGROUND_OP3 f\x00\x00
+LOAD3 SCE068_004\x00\x1f\x00\x0b SCE_CMD 
+DIALOGUE_1 \xecy DIALOGUE_2 f\x00\x00
  
 カンナは叫んだ。@
 ようやく山の後ろに回り込んだ早桃が、足場を蹴って一気にカン\nナに躍りかかったのである。\p瞬間、拓司も前に駆けている。@
@@ -47,11 +46,10 @@ LOAD3 SCE068_004\x00\x1f\x00\x0b FOB_SCE_END
 拓司\n　「早桃ォ！　カンナァ！」@
 早桃\n　「あっ！」\
 
-\x00\x00 DIALOGUE_END D\x0b SEQ01
-\x1f\x1a\x04 FOB_SCE_END
-\x1fH\x04 OP_CMD 
-LOAD3 SCE068_005\x00\x1f\x16\r FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 \xf0y BACKGROUND_OP3 ~\x00\x00
+\x00\x00 DIALOGUE_END D\x0b
+SEQ02 \x1a\x04 SEQ03 H\x04 OP_CMD 
+LOAD3 SCE068_005\x00\x1f\x16\r SCE_CMD 
+DIALOGUE_1 \xf0y DIALOGUE_2 ~\x00\x00
  
 カンナと早桃は激しく山の頂上でもみ合っていたが、不安定な足\n場がそれに耐え得るはずもなく、あえなく２人は床に転げ落ちた。\n@
 拓司はもみ合う２人のあいだに割って入り、カンナを背後から羽\n交い締めに取り押さえた。\p狂乱状態のカンナは、後頭部を拓司の\n鼻面にぶつけ、必至の抵抗を見せた。@
@@ -60,14 +58,14 @@ LOAD3 SCE068_005\x00\x1f\x16\r FOB_SCE_END
 早桃\n　「やめて！　やめて！」@
 カンナ\n　「ちくしょおおおおおおおお！\p　うわあああああああ！」\
 
-\x00\x00\x00 DIALOGUE_END Z\r SEQ01
-\x1f\x1a\x04 FOB_SCE_END
-\x1fH\x04 OP_CMD LOAD6 .\\Data\\Script\\Bgm.Fob OP02 \x8c\x0f FOB_SCE_END
-LOAD2 StopCD OP01 \xb6\x0f OP_CMD  BACKGROUND_OP \xc8\x00 SEQ01
-\x1f\xba\n FOB_SCE_END
+\x00\x00\x00 DIALOGUE_END Z\r
+SEQ02 \x1a\x04 SEQ03 H\x04 OP_CMD 
+LOAD6 .\\Data\\Script\\Bgm.Fob OP02 \x8c\x0f SCE_CMD 
+LOAD2 StopCD OP01 \xb6\x0f OP_CMD  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00
+SEQ02 \xba\n SCE_CMD 
 LOAD4 BgAutoFadeIn OP03 \xf8\x0f OP_CMD 
-LOAD3 SCE068_006\x00\x1f\x1c\x10 FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 \xf4y BACKGROUND_OP3 \xa4\x00\x00
+LOAD3 SCE068_006\x00\x1f\x1c\x10 SCE_CMD 
+DIALOGUE_1 \xf4y DIALOGUE_2 \xa4\x00\x00
  
 一同はそうしてしばらくもみ合っていたが、結局、なたねが事態\nを収束させた。\pと、無言で一歩踏み出して、カンナの額に手をか\nざしたのである。\p途端、糸が切れた人形のように、カンナはガッ\nクリと気を失った。\pあっけない幕切れだった。@
 \n拓司\n　「い、いったい……？」@
@@ -77,11 +75,10 @@ LOAD3 SCE068_006\x00\x1f\x1c\x10 FOB_SCE_END
 なたね\n　「あなたにもできるはずよ、虎菱くん」@
 拓司\n　「……ふざけるな」@
 \z
-\x00 DIALOGUE_END `\x10 SEQ01
-\x1f\x1a\x04 FOB_SCE_END
-\x1fH\x04 OP_CMD 
-LOAD3 SCE068_007\x00\x1f*\x13 FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 \xf8y BACKGROUND_OP3 \x8c\x00\x00
+\x00 DIALOGUE_END `\x10
+SEQ02 \x1a\x04 SEQ03 H\x04 OP_CMD 
+LOAD3 SCE068_007\x00\x1f*\x13 SCE_CMD 
+DIALOGUE_1 \xf8y DIALOGUE_2 \x8c\x00\x00
  
 なたね\n　「だってあなたもレジスタンスのひとりだから。\p目を開いて、\n　　状況を受け入れて。\pそうすれば、あなたにも善なる覚醒が－\n　　－」@
 早桃\n　「もうたくさんッ！」@
@@ -90,9 +87,7 @@ LOAD3 SCE068_007\x00\x1f*\x13 FOB_SCE_END
 \n沈黙が落ちた。\pしかし、それに浸っていられるほど、拓司たちに\n時間は残されていなかった。\p拓司はぐったりとしたカンナの身体\nを肩に担ぎあげて、いった。@
 \n拓司\n　「行こう。\p紅葉を助けに」\
 
-\x00 DIALOGUE_END n\x13 SEQ01
-\x1f\x1a\x04 FOB_SCE_END
-\x1fH\x04 OP_CMD \x1f\x1a\x04 FOB_SCE_END
-
+\x00 DIALOGUE_END n\x13
+SEQ02 \x1a\x04 SEQ03 H\x04 SEQ05 \x1a\x04 SCE_CMD 
 LOAD3 TextClose OP02 \xe4\x15 OP_CMD 
 END_FILE

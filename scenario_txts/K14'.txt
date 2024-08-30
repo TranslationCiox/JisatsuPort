@@ -1,20 +1,22 @@
 START_FILE
 E\x1d\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x000\x16\x00
-LOAD3 SCEK14_A01\x00\x1f\x06\x00 FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 @\xaf\x01\x0c\x00\x00\x00\x00"\x03R\x00\x00
+LOAD3 SCEK14_A01\x00\x1f\x06\x00 SCE_CMD 
+DIALOGUE_1 @\xaf\x01\x0c\x00\x00\x00\x00"\x03R\x00\x00
  
 変な味がするといやだったから、マーマレードジャムもスプーン\nひとさじぶん添えた。@
 より確実に死ぬにはアルコールも飲まないといけないということ\nは知っていたけれど、私もゆきも、お酒なんて飲んだことはなか\nったから、それはパスした。@
 アルコールの欠落は、薬の増量でまかなえばいいと……さらに一\n瓶ぶんを溶かして、混ぜた。\w\z
 \x00 DIALOGUE_END J\x00 SEQ01
-LOAD7 .\\Data\\Script\\TextFunc.Fob OP01 \xb2\x01 FOB_SCE_END
-LOAD2 TextOn OP01 \xe0\x01 OP_CMD  BACKGROUND_OP >\x00 SEQ01
-LOAD6 .\\Data\\Script\\Bg.Fob OP03 \x16\x02 FOB_SCE_END
-LOAD4 BgAutoFadeIn OP03 @\x02 OP_CMD  BACKGROUND_OP \x04\x01 SEQ01
-LOAD6 .\\Data\\Script\\Bgm.Fob OP02 ~\x02 FOB_SCE_END
+LOAD7 .\\Data\\Script\\TextFunc.Fob OP01 \xb2\x01 SCE_CMD 
+LOAD2 TextOn OP01 \xe0\x01 OP_CMD  \x1e\x00\x00\x00\x00\r\x00\x00\x1e>\x00 SEQ01
+
+LOAD6 .\\Data\\Script\\Bg.Fob OP03 \x16\x02 SCE_CMD 
+LOAD4 BgAutoFadeIn OP03 @\x02 OP_CMD  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x04\x01 SEQ01
+
+LOAD6 .\\Data\\Script\\Bgm.Fob OP02 ~\x02 SCE_CMD 
 LOAD2 PlayCD OP01 \xa8\x02 OP_CMD 
-LOAD3 SCEK14_A02\x00\x1f\xc4\x02 FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 D\xaf\x01\x0c\x00\x00\x00\x00"\x03\xa8\x00\x00
+LOAD3 SCEK14_A02\x00\x1f\xc4\x02 SCE_CMD 
+DIALOGUE_1 D\xaf\x01\x0c\x00\x00\x00\x00"\x03\xa8\x00\x00
  
 私とゆきはそれらを一気に食べて、そしてベッドに横になって話\nをした。@
 音楽のこととか、学校の噂話とか、昨日のテレビのこととか。@
@@ -23,12 +25,11 @@ LOAD3 SCEK14_A02\x00\x1f\xc4\x02 FOB_SCE_END
 ゆきちゃんはまだ、隣のベッドからいろいろ話しかけてきていた\nけれど、私はもう、彼女がなんといっているのかもよくわからな\nいくらいで、ウン、ウン、と適当に相槌をうつのが精一杯だった。\n\pプールで一日泳いだ後にやってくるような、気持ちのいい眠さだ\nった。@
 こんな素敵な気分で、最高の友達と一緒に死ねるなんて、私はし\nあわせだなあ、と思った。@
 繰り返すけれど、少しも怖くはなかった。\w\z
-\x00 DIALOGUE_END \x08\x03 SEQ01
-\x1f\xb2\x01 FOB_SCE_END
-\x1f\xe0\x01 OP_CMD \x1f~\x02 FOB_SCE_END
+\x00 DIALOGUE_END \x08\x03
+SEQ02 \xb2\x01 SEQ03 \xe0\x01 SEQ05 ~\x02 SCE_CMD 
 LOAD2 StopCD OP01 \xee\x05 OP_CMD 
-LOAD3 SCEK14_A03\x00\x1f\n\x06 FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 H\xaf\x01\x0c\x00\x00\x00\x00"\x03\\\x00\x00
+LOAD3 SCEK14_A03\x00\x1f\n\x06 SCE_CMD 
+DIALOGUE_1 H\xaf\x01\x0c\x00\x00\x00\x00"\x03\\\x00\x00
  
 いつのまにかゆきちゃんも話すのをやめていた。@
 「ゆきちゃん、眠った？」と、私はなんとかそれだけ尋ねた。@
@@ -37,15 +38,12 @@ LOAD3 SCEK14_A03\x00\x1f\n\x06 FOB_SCE_END
 \n凄く嬉しくて、涙がぽろぽろとあふれ出てきた。@
 どれくらい眠っていたのか、泣いていたのか、よくわからない。@
 私は暖かくてぼんやりとしたかたまりのなかでたゆたっていた。\w\z
-\x00\x00\x00 DIALOGUE_END N\x06 SEQ01
-\x1f\xb2\x01 FOB_SCE_END
-\x1f\xe0\x01 OP_CMD  BACKGROUND_OP \xcb\x00 SEQ01
-\x1f\x16\x02 FOB_SCE_END
-\x1f@\x02 OP_CMD  BACKGROUND_OP \n\x01 SEQ01
-\x1f~\x02 FOB_SCE_END
-\x1f\xa8\x02 OP_CMD 
-LOAD3 SCEK14_A04\x00\x1f`\x08 FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 L\xaf\x01\x0c\x00\x00\x00\x00"\x03\x81\x00\x00
+\x00\x00\x00 DIALOGUE_END N\x06
+SEQ02 \xb2\x01 SEQ03 \xe0\x01 OP_CMD  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xcb\x00
+SEQ02 \x16\x02 SEQ03 @\x02 OP_CMD  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\n\x01
+SEQ02 ~\x02 SEQ03 \xa8\x02 OP_CMD 
+LOAD3 SCEK14_A04\x00\x1f`\x08 SCE_CMD 
+DIALOGUE_1 L\xaf\x01\x0c\x00\x00\x00\x00"\x03\x81\x00\x00
  
 しばらくすると猛烈な吐き気が襲ってきて、私はお腹の中のもの\nをベッドの上にすべて吐き出した。@
 それまで経験したことのないくらいの胃の痛みに、私はのたうち\n回った。@
@@ -55,21 +53,18 @@ LOAD3 SCEK14_A04\x00\x1f`\x08 FOB_SCE_END
 吐いた物が気管に詰まって、息ができなかった。@
 鼻からもゲロがあふれてきた。涙で何も見えず、何が起こってい\nるのか全然わからなかった。@
 気持ちよく眠って死ねるはずだったのに、どうしてこんなに苦し\nんで死ななければならないの……？\w\z
-\x00 DIALOGUE_END \xa4\x08 SEQ01
-\x1f\xb2\x01 FOB_SCE_END
-\x1f\xe0\x01 OP_CMD 
-LOAD3 SCEK14_A05\x00\x1f\xe2\n FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 P\xaf\x01\x0c\x00\x00\x00\x00"\x031\x00\x00
+\x00 DIALOGUE_END \xa4\x08
+SEQ02 \xb2\x01 SEQ03 \xe0\x01 OP_CMD 
+LOAD3 SCEK14_A05\x00\x1f\xe2\n SCE_CMD 
+DIALOGUE_1 P\xaf\x01\x0c\x00\x00\x00\x00"\x031\x00\x00
  
 　要するに私は薬を飲みすぎたのだった。@
 急性アルコール中毒になるまえに、身体がアルコールを自動的に\n吐き出させるように……\p私の身体は私の意志とは無関係に薬を吐\nき戻させていたのだった。\w\z
-\x00 DIALOGUE_END &\x0b SEQ01
-\x1f\xb2\x01 FOB_SCE_END
-\x1f\xe0\x01 OP_CMD  BACKGROUND_OP ?\x00 SEQ01
-\x1f\x16\x02 FOB_SCE_END
-\x1f@\x02 OP_CMD 
-LOAD3 SCEK14_A06\x00\x1fX\x0c FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 T\xaf\x01\x0c\x00\x00\x00\x00"\x03\\\x00\x00
+\x00 DIALOGUE_END &\x0b
+SEQ02 \xb2\x01 SEQ03 \xe0\x01 OP_CMD  \x1e\x00\x00\x00\x00\r\x00\x00\x1e?\x00
+SEQ02 \x16\x02 SEQ03 @\x02 OP_CMD 
+LOAD3 SCEK14_A06\x00\x1fX\x0c SCE_CMD 
+DIALOGUE_1 T\xaf\x01\x0c\x00\x00\x00\x00"\x03\\\x00\x00
  
 「ゆきちゃん！　ゆきちゃん！」@
 \n私は、すぐそばで横になっているはずのゆきの名前を、必死で叫\nんだ。@
@@ -78,21 +73,19 @@ LOAD3 SCEK14_A06\x00\x1fX\x0c FOB_SCE_END
 でも、返事はなかった。@
 そのうち私はあまりの苦しさに意識を失った。@
 /*■背景　黒　表示*/\a7,0,1,0,\a0,200,0,0,/*▲BGM　停止*/\a4,-1,0,0,\a6,0,0,0,そして病院で目を覚ました。\w\z
-\x00\x00\x00 DIALOGUE_END \x9c\x0c SEQ01
-\x1f\xb2\x01 FOB_SCE_END
-\x1f\xe0\x01 OP_CMD 
-LOAD3 SCEK14_A07\x00\x1fF\x0e FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 X\xaf\x01\x0c\x00\x00\x00\x00"\x03;\x00\x00
+\x00\x00\x00 DIALOGUE_END \x9c\x0c
+SEQ02 \xb2\x01 SEQ03 \xe0\x01 OP_CMD 
+LOAD3 SCEK14_A07\x00\x1fF\x0e SCE_CMD 
+DIALOGUE_1 X\xaf\x01\x0c\x00\x00\x00\x00"\x03;\x00\x00
  
 　病院に連絡したのは、夕方、部屋に入ってきた清掃係のおばさ\nんだった。@
 おばさんは、ゲロまみれの床の上に倒れている私と、ベッドの上\nで静かに眠っているゆきを見つけたのだった。@
 若草ゆきは死んでいた。@
 そして私は生き残った。\w\z
-\x00 DIALOGUE_END \x8a\x0e SEQ01
-\x1f\xb2\x01 FOB_SCE_END
-\x1f\xe0\x01 OP_CMD 
-LOAD3 SCEK14_A08\x00\x1f\xb0\x0f FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 \\\xaf\x01\x0c\x00\x00\x00\x00"\x03l\x00\x00
+\x00 DIALOGUE_END \x8a\x0e
+SEQ02 \xb2\x01 SEQ03 \xe0\x01 OP_CMD 
+LOAD3 SCEK14_A08\x00\x1f\xb0\x0f SCE_CMD 
+DIALOGUE_1 \\\xaf\x01\x0c\x00\x00\x00\x00"\x03l\x00\x00
  
 あんなに穏やかで、あっさりと受け入れることができた死が、た\nまらなく怖くなっていた。@
 どこか遠い場所にある、わけのわからないものに思えてきた。@
@@ -100,13 +93,11 @@ LOAD3 SCEK14_A08\x00\x1f\xb0\x0f FOB_SCE_END
 どこにでも死はあって、私たちはそれをまるで細かい塵みたいに\n肺の中に吸い込みながら生きている、と。@
 私にとって死は、そんなに普遍的なものではなくなっていた。@
 死は特別だった。\w\z
-\x00\x00\x00 DIALOGUE_END \xf4\x0f SEQ01
-\x1f\xb2\x01 FOB_SCE_END
-\x1f\xe0\x01 OP_CMD  BACKGROUND_OP \x08\x01 SEQ01
-\x1f~\x02 FOB_SCE_END
-\x1f\xa8\x02 OP_CMD 
-LOAD3 SCEK14_A09\x00\x1f\x12\x12 FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 `\xaf\x01\x0c\x00\x00\x00\x00"\x03e\x00\x00
+\x00\x00\x00 DIALOGUE_END \xf4\x0f
+SEQ02 \xb2\x01 SEQ03 \xe0\x01 OP_CMD  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x08\x01
+SEQ02 ~\x02 SEQ03 \xa8\x02 OP_CMD 
+LOAD3 SCEK14_A09\x00\x1f\x12\x12 SCE_CMD 
+DIALOGUE_1 `\xaf\x01\x0c\x00\x00\x00\x00"\x03e\x00\x00
  
 この世界には所属しない呪われた地平にあって、そことここを隔\nてる錆びた門を力ずくで押し開いてやってくるもの。@
 日常とは共存していない非日常。私は、絶対それに馴染むことは\nできない。@
@@ -116,11 +107,10 @@ LOAD3 SCEK14_A09\x00\x1f\x12\x12 FOB_SCE_END
 足音ひとつない。@
 でも、振り向くと、いる。@
 「つかまえたぞ。もうお前は逃げられないんだぞ」と。\w\z
-\x00\x00\x00 DIALOGUE_END V\x12 SEQ01
-\x1f\xb2\x01 FOB_SCE_END
-\x1f\xe0\x01 OP_CMD 
-LOAD3 SCEK14_A10\x00\x1f$\x14 FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 d\xaf\x01\x0c\x00\x00\x00\x00"\x03Y\x00\x00
+\x00\x00\x00 DIALOGUE_END V\x12
+SEQ02 \xb2\x01 SEQ03 \xe0\x01 OP_CMD 
+LOAD3 SCEK14_A10\x00\x1f$\x14 SCE_CMD 
+DIALOGUE_1 d\xaf\x01\x0c\x00\x00\x00\x00"\x03Y\x00\x00
  
 気取らずにいえば、窒息しそうになったときの恐怖と胃洗浄の苦\nしさが、そのまま死のイメージとなって私に取り憑いたのだろう。\n\p死は怖いものだ。\pいまはそう思っている。@
 でも、本気でやろうと思えば、もう一回くらいはやれる。@
@@ -130,9 +120,7 @@ LOAD3 SCEK14_A10\x00\x1f$\x14 FOB_SCE_END
 誕生日が。@
 ゆきにおける私が。@
 私には必要だった。\w\z
-\x00 DIALOGUE_END h\x14 SEQ01
-\x1f\xb2\x01 FOB_SCE_END
-\x1f\xe0\x01 OP_CMD \x1f\xb2\x01 FOB_SCE_END
-
+\x00 DIALOGUE_END h\x14
+SEQ02 \xb2\x01 SEQ03 \xe0\x01 SEQ05 \xb2\x01 SCE_CMD 
 LOAD3 TextClose OP02 \x12\x16 OP_CMD 
 END_FILE

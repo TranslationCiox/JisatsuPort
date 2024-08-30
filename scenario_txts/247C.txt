@@ -1,9 +1,10 @@
 START_FILE
-\x035\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00^+\x00 BACKGROUND_OP 9\x00 SEQ01
-LOAD6 .\\Data\\Script\\Bg.Fob OP03  \x00 FOB_SCE_END
+\x035\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00^+\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1e9\x00 SEQ01
+
+LOAD6 .\\Data\\Script\\Bg.Fob OP03  \x00 SCE_CMD 
 LOAD4 BgAutoFadeIn OP03 J\x00 OP_CMD 
-LOAD3 SCE247_001\x00\x1fn\x00 FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 \x90\x91\x01\x0c\x00\x00\x00\x00"\x03 \x00\x00
+LOAD3 SCE247_001\x00\x1fn\x00 SCE_CMD 
+DIALOGUE_1 \x90\x91\x01\x0c\x00\x00\x00\x00"\x03 \x00\x00
  
 紅葉が立ち上がった。@
 拓司は紅葉の目の奥を見て、ちいさく頷いた。@
@@ -11,10 +12,10 @@ LOAD3 SCE247_001\x00\x1fn\x00 FOB_SCE_END
 \n拓司\n　「他には……？」\
 
 \x00\x00\x00 DIALOGUE_END \xb2\x00 SEQ01
-LOAD7 .\\Data\\Script\\TextFunc.Fob OP01 R\x01 FOB_SCE_END
+LOAD7 .\\Data\\Script\\TextFunc.Fob OP01 R\x01 SCE_CMD 
 LOAD2 TextOn OP01 \x80\x01 OP_CMD 
-LOAD3 SCE247_002\x00\x1f\x9c\x01 FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 \x94\x91\x01\x0c\x00\x00\x00\x00"\x03k\x00\x00
+LOAD3 SCE247_002\x00\x1f\x9c\x01 SCE_CMD 
+DIALOGUE_1 \x94\x91\x01\x0c\x00\x00\x00\x00"\x03k\x00\x00
  
 カンナ\n　「私は……怖い。\p最終波動がないっていうことが……証明でき\n　　ないなら、ここに残る」@
 \nカンナが目を反らした。@
@@ -24,11 +25,10 @@ LOAD3 SCE247_002\x00\x1f\x9c\x01 FOB_SCE_END
 \n錦城\n　「はっ。\pあなた正気？\p　出ていくがいいわ勝手に出ていって、\n　　死んでしまうがいいわ！\p　この人殺し！\p　人殺しッ！」@
 \n錦城は最後まで強気を装っていた。\
 
-\x00\x00\x00 DIALOGUE_END \xe0\x01 SEQ01
-\x1fR\x01 FOB_SCE_END
-\x1f\x80\x01 OP_CMD 
-LOAD3 SCE247_003\x00\x1f\xc6\x03 FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 \x98\x91\x01\x0c\x00\x00\x00\x00"\x03g\x00\x00
+\x00\x00\x00 DIALOGUE_END \xe0\x01
+SEQ02 R\x01 SEQ03 \x80\x01 OP_CMD 
+LOAD3 SCE247_003\x00\x1f\xc6\x03 SCE_CMD 
+DIALOGUE_1 \x98\x91\x01\x0c\x00\x00\x00\x00"\x03g\x00\x00
  
 拓司\n　「わかった。\pそれじゃ、紅葉」@
 紅葉\n　「うん……」@
@@ -41,40 +41,36 @@ LOAD3 SCE247_003\x00\x1f\xc6\x03 FOB_SCE_END
 拓司\n　「いいんだ」@
 \n拓司は紅葉を制した。\
 
-\x00 DIALOGUE_END \n\x04 SEQ01
-\x1fR\x01 FOB_SCE_END
-\x1f\x80\x01 OP_CMD 
-LOAD3 SCE247_004\x00\x1f\xe0\x05 FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 \x9c\x91\x01\x0c\x00\x00\x00\x00"\x03`\x00\x00
+\x00 DIALOGUE_END \n\x04
+SEQ02 R\x01 SEQ03 \x80\x01 OP_CMD 
+LOAD3 SCE247_004\x00\x1f\xe0\x05 SCE_CMD 
+DIALOGUE_1 \x9c\x91\x01\x0c\x00\x00\x00\x00"\x03`\x00\x00
  
 拓司\n　「もう、そんなことは関係ないんだ。\p設定なんかどうでもいい。\n　　\p俺はお前が好きだ。\pおさななじみだとか、背のたかさがどう\n　　だとか、顔立ちがどうだとか、性格がどうだとか、口調がど\n　　うだとか……そんなことを抜きにして、お前という人間が好\n　　きなんだ。\pだから、いいんだ」@
 紅葉\n　「……」@
 拓司\n　「さあ、行こう。\p紅葉」@
 紅葉\n　「うん……行こ」\
 
-\x00\x00\x00 DIALOGUE_END $\x06 SEQ01
-\x1fR\x01 FOB_SCE_END
-\x1f\x80\x01 OP_CMD 
-LOAD3 SCE247_005\x00\x1f\xde\x07 FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 \xa0\x91\x01\x0c\x00\x00\x00\x00"\x03)\x00\x00
+\x00\x00\x00 DIALOGUE_END $\x06
+SEQ02 R\x01 SEQ03 \x80\x01 OP_CMD 
+LOAD3 SCE247_005\x00\x1f\xde\x07 SCE_CMD 
+DIALOGUE_1 \xa0\x91\x01\x0c\x00\x00\x00\x00"\x03)\x00\x00
  
 恐る恐る、紅葉は拓司の手に触れた。@
 拓司はその手を強く握りしめた。@
 紅葉が握り返すのを確認してから、拓司は歩み始めた。@
 ドアを開き、外の世界へと。\
 
-\x00\x00\x00 DIALOGUE_END "\x08 SEQ01
-\x1fR\x01 FOB_SCE_END
-\x1f\x80\x01 OP_CMD 
-LOAD3 SCE247_006\x00\x1f\x00\t FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 \xa4\x91\x01\x0c\x00\x00\x00\x00" BACKGROUND_OP \xc8\x00 SEQ01
-\x1f \x00 FOB_SCE_END
-\x1fJ\x00 OP_CMD  BACKGROUND_OP \x02\x00 SEQ01
- \x1e\x04\x00\x00\r\x00\x00\x1e\x17\x00 SEQ01
+\x00\x00\x00 DIALOGUE_END "\x08
+SEQ02 R\x01 SEQ03 \x80\x01 OP_CMD 
+LOAD3 SCE247_006\x00\x1f\x00\t SCE_CMD 
+DIALOGUE_1 \xa4\x91\x01\x0c\x00\x00\x00\x00" \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00
+SEQ02  \x00 SEQ03 J\x00 OP_CMD  \x1e\x00\x00\x00\x00\r\x00 SCE_CMD \x0c\x02\x00\x00" \x1e\x04\x00\x00\r\x00\x00\x1e\x17\x00 SEQ01
  \x1e\x08\x00\x00\r\x00\x00\x1e\x01\x00 SEQ01
-LOAD6 .\\Data\\Script\\Bgm.Fob OP02 \xc6\t FOB_SCE_END
-LOAD2 SePlay OP01 \xf0\t OP_CMD  BACKGROUND_OP \t\x01 SEQ01
-\x1f\xc6\t FOB_SCE_END
+
+LOAD6 .\\Data\\Script\\Bgm.Fob OP02 \xc6\t SCE_CMD 
+LOAD2 SePlay OP01 \xf0\t OP_CMD  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\t\x01
+SEQ02 \xc6\t SCE_CMD 
 LOAD2 PlayCD OP01 2\n OP_CMD \x03\xbb\x00\x00
  
 拓司\n　「これは……」@
@@ -88,40 +84,36 @@ LOAD2 PlayCD OP01 2\n OP_CMD \x03\xbb\x00\x00
 まるで、何十年も放棄されていた場所のようだ。@
 あの工業団地の廃墟にさらなる歳月の洗礼を加えて、行き着く果\nてまで荒廃を深化させた－－そんな感じがする。\
 
-\x00 DIALOGUE_END N\n SEQ01
-\x1fR\x01 FOB_SCE_END
-\x1f\x80\x01 OP_CMD 
-LOAD3 SCE247_007\x00\x1ft\r FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 \xa8\x91\x01\x0c\x00\x00\x00\x00"\x03`\x00\x00
+\x00 DIALOGUE_END N\n
+SEQ02 R\x01 SEQ03 \x80\x01 OP_CMD 
+LOAD3 SCE247_007\x00\x1ft\r SCE_CMD 
+DIALOGUE_1 \xa8\x91\x01\x0c\x00\x00\x00\x00"\x03`\x00\x00
  
 腐敗した死体が転がっているのを予想していたが、そのようなも\nのはどこにもない。\p骨や服のかけらすら見つけることができない。\n\pただ、壁にべったりとこびりついている染みが、どこか血の痕を\n想起させる。\pまた、しなびた皮膚のような、毛髪の一部のような、\n正体不明のものがべったりと張り付いている壁もある。@
 もしかしたら、それこそが学生たちのなれの果てなのかもしれな\nい……。\
 
-\x00\x00\x00 DIALOGUE_END \xb8\r SEQ01
-\x1fR\x01 FOB_SCE_END
-\x1f\x80\x01 OP_CMD 
-LOAD3 SCE247_008\x00\x1fr\x0f FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 \xac\x91\x01\x0c\x00\x00\x00\x00"\x03D\x00\x00
+\x00\x00\x00 DIALOGUE_END \xb8\r
+SEQ02 R\x01 SEQ03 \x80\x01 OP_CMD 
+LOAD3 SCE247_008\x00\x1fr\x0f SCE_CMD 
+DIALOGUE_1 \xac\x91\x01\x0c\x00\x00\x00\x00"\x03D\x00\x00
  
 紅葉\n　「どうしたの、これ……？\p　まるで……まるで……」@
 拓司\n　「何十年も経っているみたいだ。\pあの部屋にいるあいだに、い\n　　ったい何があったんだ……？」@
 \n紅葉が、無言で拓司の袖をぎゅっと握る。@
 拓司はその手の上に自分の手を重ねて、力強く頷いた。\
 
-\x00\x00\x00 DIALOGUE_END \xb6\x0f SEQ01
-\x1fR\x01 FOB_SCE_END
-\x1f\x80\x01 OP_CMD 
-LOAD3 SCE247_009\x00\x1f\x00\x11 FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 \xb0\x91\x01\x0c\x00\x00\x00\x00"\x03?\x00\x00
+\x00\x00\x00 DIALOGUE_END \xb6\x0f
+SEQ02 R\x01 SEQ03 \x80\x01 OP_CMD 
+LOAD3 SCE247_009\x00\x1f\x00\x11 SCE_CMD 
+DIALOGUE_1 \xb0\x91\x01\x0c\x00\x00\x00\x00"\x03?\x00\x00
  
 拓司\n　「考えるのはやめよう。\p俺たちは最初から、起こっていること\n　　の意味を考え続けてきた。\p説明できない状況に筋を一本通そ\n　　うと……あがいてきた。\pでも、そんなの無駄なんだ。@
 　　意味がわからないんじゃない。\p意味なんてないんだ」\
 
-\x00 DIALOGUE_END D\x11 SEQ01
-\x1fR\x01 FOB_SCE_END
-\x1f\x80\x01 OP_CMD 
-LOAD3 SCE247_010\x00\x1fz\x12 FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 \xb4\x91\x01\x0c\x00\x00\x00\x00"\x03\x99\x00\x00
+\x00 DIALOGUE_END D\x11
+SEQ02 R\x01 SEQ03 \x80\x01 OP_CMD 
+LOAD3 SCE247_010\x00\x1fz\x12 SCE_CMD 
+DIALOGUE_1 \xb4\x91\x01\x0c\x00\x00\x00\x00"\x03\x99\x00\x00
  
 ２人の足音は、校舎の中に大きく響き渡った。@
 不自然な響き方だった。@
@@ -133,11 +125,10 @@ LOAD3 SCE247_010\x00\x1fz\x12 FOB_SCE_END
 地面がひどく急勾配に思える。@
 まっすぐ歩いているつもりなのに、壁に体当たりしているときも\nある。\
 
-\x00\x00\x00 DIALOGUE_END \xbe\x12 SEQ01
-\x1fR\x01 FOB_SCE_END
-\x1f\x80\x01 OP_CMD 
-LOAD3 SCE247_011\x00\x1f\\\x15 FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 \xb8\x91\x01\x0c\x00\x00\x00\x00"\x03M\x00\x00
+\x00\x00\x00 DIALOGUE_END \xbe\x12
+SEQ02 R\x01 SEQ03 \x80\x01 OP_CMD 
+LOAD3 SCE247_011\x00\x1f\\\x15 SCE_CMD 
+DIALOGUE_1 \xb8\x91\x01\x0c\x00\x00\x00\x00"\x03M\x00\x00
  
 それでも２人は歩き続けた。@
 階段を降り、廊下を歩いてゆく。@
@@ -145,14 +136,12 @@ LOAD3 SCE247_011\x00\x1f\\\x15 FOB_SCE_END
 時間にすれば３分ほどであったのだろう、しかし目的地に着いた\nとき、拓司たちは数時間も歩いたような疲労に充たされていた。@
 しかし、拓司は身体の隅々に残ったエネルギーを総動員して、そ\nのまえに立った。\
 
-\x00 DIALOGUE_END \xa0\x15 SEQ01
-\x1fR\x01 FOB_SCE_END
-\x1f\x80\x01 OP_CMD  BACKGROUND_OP \x02\x00 SEQ01
-\x1f\xc6\t FOB_SCE_END
-LOAD2 SeStop OP01 4\x17 OP_CMD \x1f\xc6\t FOB_SCE_END
+\x00 DIALOGUE_END \xa0\x15
+SEQ02 R\x01 SEQ03 \x80\x01 OP_CMD  \x1e\x00\x00\x00\x00\r\x00 SCE_CMD \x0c\x02\x00\x00"\x1f\xc6\t SCE_CMD 
+LOAD2 SeStop OP01 4\x17 SEQ05 \xc6\t SCE_CMD 
 LOAD2 StopCD OP01 \\\x17 OP_CMD 
-LOAD3 SCE247_012\x00\x1fx\x17 FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 \xbc\x91\x01\x0c\x00\x00\x00\x00"\x03D\x00\x00
+LOAD3 SCE247_012\x00\x1fx\x17 SCE_CMD 
+DIALOGUE_1 \xbc\x91\x01\x0c\x00\x00\x00\x00"\x03D\x00\x00
  
 拓司\n　「……ここだ」@
 \n壁だ。@
@@ -163,11 +152,10 @@ LOAD3 SCE247_012\x00\x1fx\x17 FOB_SCE_END
 この壁の奥には何が隠されているのだろうか？@
 いや、そもそもそこには何かがあるのだろうか？\
 
-\x00\x00\x00 DIALOGUE_END \xbc\x17 SEQ01
-\x1fR\x01 FOB_SCE_END
-\x1f\x80\x01 OP_CMD 
-LOAD3 SCE247_013\x00\x1f\x06\x19 FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 \xc0\x91\x01\x0c\x00\x00\x00\x00"\x03_\x00\x00
+\x00\x00\x00 DIALOGUE_END \xbc\x17
+SEQ02 R\x01 SEQ03 \x80\x01 OP_CMD 
+LOAD3 SCE247_013\x00\x1f\x06\x19 SCE_CMD 
+DIALOGUE_1 \xc0\x91\x01\x0c\x00\x00\x00\x00"\x03_\x00\x00
  
 拓司は考えなかった。@
 /*▲SE15　ループ再生（停止まで）*/\a2,2,15,1,/*■CG52　表示（クロスフェード）*/\a7,-2,-2,0,\a0,51,2,0,\a6,-2,0,0,手にした椅子の脚を、がつがつと壁に叩き付けてゆく。@
@@ -176,15 +164,12 @@ LOAD3 SCE247_013\x00\x1f\x06\x19 FOB_SCE_END
 拓司\n　「ああ！\p　一緒に……」@
 紅葉\n　「ええ！」\
 
- DIALOGUE_END J\x19 SEQ01
-\x1fR\x01 FOB_SCE_END
-\x1f\x80\x01 OP_CMD 
-LOAD3 SCE247_014\x00\x1f\x00\x1b FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 \xc4\x91\x01\x0c\x00\x00\x00\x00" BACKGROUND_OP \x02\x00 SEQ01
- \x1e\x04\x00\x00\r\x00\x00\x1e\x0f\x00 SEQ01
- \x1e\x08\x00\x00\r\x00\x00\x1e\x01\x00 SEQ01
-\x1f\xc6\t FOB_SCE_END
-\x1f\xf0\t OP_CMD \x03\xae\x00\x00
+ DIALOGUE_END J\x19
+SEQ02 R\x01 SEQ03 \x80\x01 OP_CMD 
+LOAD3 SCE247_014\x00\x1f\x00\x1b SCE_CMD 
+DIALOGUE_1 \xc4\x91\x01\x0c\x00\x00\x00\x00" \x1e\x00\x00\x00\x00\r\x00 SCE_CMD \x0c\x02\x00\x00" \x1e\x04\x00\x00\r\x00\x00\x1e\x0f\x00 SEQ01
+ \x1e\x08\x00\x00\r\x00\x00\x1e\x01\x00
+SEQ02 \xc6\t SEQ03 \xf0\t OP_CMD \x03\xae\x00\x00
  
 ２人は取り憑かれたように、椅子の脚を壁に叩き付けた。@
 一箇所に狙いを絞って叩きつけてゆく。@
@@ -198,11 +183,10 @@ LOAD3 SCE247_014\x00\x1f\x00\x1b FOB_SCE_END
 壁の厚さはさほどではない。@
 １０センチほどしかない！\
 
- DIALOGUE_END \xac\x1b SEQ01
-\x1fR\x01 FOB_SCE_END
-\x1f\x80\x01 OP_CMD 
-LOAD3 SCE247_015\x00\x1f\x9e\x1e FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 \xc8\x91\x01\x0c\x00\x00\x00\x00"\x03\x8d\x00\x00
+ DIALOGUE_END \xac\x1b
+SEQ02 R\x01 SEQ03 \x80\x01 OP_CMD 
+LOAD3 SCE247_015\x00\x1f\x9e\x1e SCE_CMD 
+DIALOGUE_1 \xc8\x91\x01\x0c\x00\x00\x00\x00"\x03\x8d\x00\x00
  
 拓司はおそるおそる、穴に顔を近づけた。@
 壁の向こうがどうなっているのか、それだけでも確認して安心し\nておきかった。@
@@ -215,11 +199,10 @@ LOAD3 SCE247_015\x00\x1f\x9e\x1e FOB_SCE_END
 \n向こう側から、誰かがこちらを見ていた。@
 \nぴったりと穴に顔を張り付かせて、壁の向こうで誰かがこちらを\nのぞき込んでいたのだ。\
 
-\x00\x00\x00 DIALOGUE_END \xe2\x1e SEQ01
-\x1fR\x01 FOB_SCE_END
-\x1f\x80\x01 OP_CMD 
-LOAD3 SCE247_016\x00\x1fP! FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 \xcc\x91\x01\x0c\x00\x00\x00\x00"\x03m\x00\x00
+\x00\x00\x00 DIALOGUE_END \xe2\x1e
+SEQ02 R\x01 SEQ03 \x80\x01 OP_CMD 
+LOAD3 SCE247_016\x00\x1fP! SCE_CMD 
+DIALOGUE_1 \xcc\x91\x01\x0c\x00\x00\x00\x00"\x03m\x00\x00
  
 拓司\n　「だ、誰だッ！」@
 紅葉\n　「どうしたの、拓司？！」@
@@ -230,11 +213,10 @@ LOAD3 SCE247_016\x00\x1fP! FOB_SCE_END
 紅葉\n　「拓司！\p　きゃっ！」@
 \n近づいてきた紅葉を突き飛ばして、拓司は狂ったように壁に体当\nたりを繰り返した。\
 
-\x00\x00\x00 DIALOGUE_END \x94! SEQ01
-\x1fR\x01 FOB_SCE_END
-\x1f\x80\x01 OP_CMD 
-LOAD3 SCE247_017\x00\x1f\x82# FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 \xd0\x91\x01\x0c\x00\x00\x00\x00"\x03n\x00\x00
+\x00\x00\x00 DIALOGUE_END \x94!
+SEQ02 R\x01 SEQ03 \x80\x01 OP_CMD 
+LOAD3 SCE247_017\x00\x1f\x82# SCE_CMD 
+DIALOGUE_1 \xd0\x91\x01\x0c\x00\x00\x00\x00"\x03n\x00\x00
  
 拓司\n　「お前がやったのか？！\p　お前がこんなことの元凶なのかッ？\n　　！\p　ふざけるなよ、畜生！」@
 \n拓司は、穴の奥にどんよりと浮かんでいたその目を見たことがあ\nるように思えた。@
@@ -248,19 +230,17 @@ LOAD3 SCE247_017\x00\x1f\x82# FOB_SCE_END
 ガラス玉で作られた偽物の目。@
 狂気を呼び込み、それに容易に支配される目だった。\
 
-\x00\x00\x00 DIALOGUE_END \xc6# SEQ01
-\x1fR\x01 FOB_SCE_END
-\x1f\x80\x01 OP_CMD 
-LOAD3 SCE247_018\x00\x1f\xb8% FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 \xd4\x91\x01\x0c\x00\x00\x00\x00"\x03C\x00\x00
+\x00\x00\x00 DIALOGUE_END \xc6#
+SEQ02 R\x01 SEQ03 \x80\x01 OP_CMD 
+LOAD3 SCE247_018\x00\x1f\xb8% SCE_CMD 
+DIALOGUE_1 \xd4\x91\x01\x0c\x00\x00\x00\x00"\x03C\x00\x00
  
 体当たりを繰り返しているうちに、拓司のシャツの肩の部分には\n真っ赤な血が滲み始めた。\pそれに気づいてようやく拓司は体当た\nりをやめ、今度は椅子の脚をふりかぶって、メチャクチャに壁に\n叩き付け始めた。\pガンガンという音が頭が割れそうなくらい大\nきく響き渡る。\
 
-\x00\x00\x00 DIALOGUE_END \xfc% SEQ01
-\x1fR\x01 FOB_SCE_END
-\x1f\x80\x01 OP_CMD 
-LOAD3 SCE247_019\x00\x1fB' FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 \xd8\x91\x01\x0c\x00\x00\x00\x00"\x03v\x00\x00
+\x00\x00\x00 DIALOGUE_END \xfc%
+SEQ02 R\x01 SEQ03 \x80\x01 OP_CMD 
+LOAD3 SCE247_019\x00\x1fB' SCE_CMD 
+DIALOGUE_1 \xd8\x91\x01\x0c\x00\x00\x00\x00"\x03v\x00\x00
  
 紅葉\n　「拓司！\p　拓司！」@
 拓司\n　「！」@
@@ -271,11 +251,10 @@ LOAD3 SCE247_019\x00\x1fB' FOB_SCE_END
 それは、津波や地震の前触れのように思えた。@
 しかし、そうではないことを、拓司は知っていた。\
 
-\x00\x00 DIALOGUE_END \x86' SEQ01
-\x1fR\x01 FOB_SCE_END
-\x1f\x80\x01 OP_CMD 
-LOAD3 SCE247_020\x00\x1f\x98) FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 \xdc\x91\x01\x0c\x00\x00\x00\x00"\x03,\x00\x00
+\x00\x00 DIALOGUE_END \x86'
+SEQ02 R\x01 SEQ03 \x80\x01 OP_CMD 
+LOAD3 SCE247_020\x00\x1f\x98) SCE_CMD 
+DIALOGUE_1 \xdc\x91\x01\x0c\x00\x00\x00\x00"\x03,\x00\x00
  
 紅葉\n　「ねえ、なに？\p　なんなの、この音ッ？！」@
 拓司\n　「わからない！\p　わからないけど……！」@
@@ -283,16 +262,13 @@ LOAD3 SCE247_020\x00\x1f\x98) FOB_SCE_END
 わかっていた。@
 最終波動がやってきたのだ。\
 
-\x00 DIALOGUE_END \xdc) SEQ01
-\x1fR\x01 FOB_SCE_END
-\x1f\x80\x01 OP_CMD \x03\r\x00\x00
+\x00 DIALOGUE_END \xdc)
+SEQ02 R\x01 SEQ03 \x80\x01 OP_CMD \x03\r\x00\x00
 CHOICE
 シェルターに駆け戻る\n穴を広げる\n\l0,2,
 ENDCHOICE
 
-\x00\x00\x00 DIALOGUE_END \xc6* SEQ01
-\x1fR\x01 FOB_SCE_END
-\x1f\x80\x01 OP_CMD \x1fR\x01 FOB_SCE_END
-
+\x00\x00\x00 DIALOGUE_END \xc6*
+SEQ02 R\x01 SEQ03 \x80\x01 SEQ05 R\x01 SCE_CMD 
 LOAD3 TextClose OP02 @+ OP_CMD 
 END_FILE

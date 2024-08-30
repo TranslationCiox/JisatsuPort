@@ -1,9 +1,10 @@
 START_FILE
-B\x19\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xea\x14\x00 BACKGROUND_OP @\x00 SEQ01
-LOAD6 .\\Data\\Script\\Bg.Fob OP03  \x00 FOB_SCE_END
+B\x19\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xea\x14\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1e@\x00 SEQ01
+
+LOAD6 .\\Data\\Script\\Bg.Fob OP03  \x00 SCE_CMD 
 LOAD4 BgAutoFadeIn OP03 J\x00 OP_CMD 
-LOAD3 SCES01_001\x00\x1fn\x00 FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 \x80\xb5\x01\x0c\x00\x00\x00\x00"\x03w\x00\x00
+LOAD3 SCES01_001\x00\x1fn\x00 SCE_CMD 
+DIALOGUE_1 \x80\xb5\x01\x0c\x00\x00\x00\x00"\x03w\x00\x00
  
 早桃\n　「ごめんね」@
 \n早桃はそう話を切りだした。@
@@ -15,10 +16,10 @@ LOAD3 SCES01_001\x00\x1fn\x00 FOB_SCE_END
 拓司\n　「なにをいってるんだ？\p　罰とか、巻き込むとか。\pお前のせい\n　　なはずがないだろう？\p　世界がいかれちまったのは、誰のせ\n　　いでもない」\
 
 \x00 DIALOGUE_END \xb2\x00 SEQ01
-LOAD7 .\\Data\\Script\\TextFunc.Fob OP01 \xae\x02 FOB_SCE_END
+LOAD7 .\\Data\\Script\\TextFunc.Fob OP01 \xae\x02 SCE_CMD 
 LOAD2 TextOn OP01 \xdc\x02 OP_CMD 
-LOAD3 SCES01_002\x00\x1f\xf8\x02 FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 \x84\xb5\x01\x0c\x00\x00\x00\x00"\x03c\x00\x00
+LOAD3 SCES01_002\x00\x1f\xf8\x02 SCE_CMD 
+DIALOGUE_1 \x84\xb5\x01\x0c\x00\x00\x00\x00"\x03c\x00\x00
  
 早桃はしばらく黙り込んで何かを考えている様子だった。@
 やがて@
@@ -29,11 +30,10 @@ LOAD3 SCES01_002\x00\x1f\xf8\x02 FOB_SCE_END
 早桃\n　「前のお父さんがね、神様信じてたんだ。\pだから、子供の頃は\n　　教会によく連れていかれたの」@
 拓司\n　「へえ。\p初耳だな」\
 
-\x00 DIALOGUE_END <\x03 SEQ01
-\x1f\xae\x02 FOB_SCE_END
-\x1f\xdc\x02 OP_CMD 
-LOAD3 SCES01_003\x00\x1f\x02\x05 FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 \x88\xb5\x01\x0c\x00\x00\x00\x00"\x03\x9b\x00\x00
+\x00 DIALOGUE_END <\x03
+SEQ02 \xae\x02 SEQ03 \xdc\x02 OP_CMD 
+LOAD3 SCES01_003\x00\x1f\x02\x05 SCE_CMD 
+DIALOGUE_1 \x88\xb5\x01\x0c\x00\x00\x00\x00"\x03\x9b\x00\x00
  
 早桃\n　「お母さんはそういうのも含めてお父さんのこと嫌いだったみ\n　　たいだから……。\pそれでね、教会に懺悔室っていうのがある\n　　の、知ってる？」@
 拓司\n　「ああ、電話ボックスみたいなのに入って、神父に自分の罪を\n　　告白する……アレか？」@
@@ -41,11 +41,10 @@ LOAD3 SCES01_003\x00\x1f\x02\x05 FOB_SCE_END
 　　だから昔の人は、懺悔室っていう罪の意識を埋める穴を作っ\n　　たんだって」@
 拓司\n　「そういうもんかね。\p昔の人はウソをしまい込むフトコロが小\n　　さかったんだな」\
 
-\x00\x00\x00 DIALOGUE_END F\x05 SEQ01
-\x1f\xae\x02 FOB_SCE_END
-\x1f\xdc\x02 OP_CMD 
-LOAD3 SCES01_004\x00\x1f\xec\x07 FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 \x8c\xb5\x01\x0c\x00\x00\x00\x00"\x03\xcd\x00\x00
+\x00\x00\x00 DIALOGUE_END F\x05
+SEQ02 \xae\x02 SEQ03 \xdc\x02 OP_CMD 
+LOAD3 SCES01_004\x00\x1f\xec\x07 SCE_CMD 
+DIALOGUE_1 \x8c\xb5\x01\x0c\x00\x00\x00\x00"\x03\xcd\x00\x00
  
 早桃\n　「早桃も、そう思ってた。\p誰だってウソくらいつくことはある\n　　し、悪いことだってする。\pでも、そんなの黙ってればいいこ\n　　とじゃないかって。\pでもね、おにいちゃん。\pそうじゃないの。\n　　\p大きすぎるウソは、やっぱりムシバムの。@
 　　ひっぱっていくの」@
@@ -54,11 +53,10 @@ LOAD3 SCES01_004\x00\x1f\xec\x07 FOB_SCE_END
 　　なにもかもが、暗い方に暗い方に転がっていく。\p笑わないで\n　　欲しいんだけど……呪いみたいなものなの。\p映画で、だんだ\n　　ん痩せていく呪いをかけられた人の話があったでしょ？@
 　　そんな感じ。\pだんだん死んでいくの。\p少しずつ、少しずつい\n　　ろんなものが自分のなかで腐っていって、ウソのなかに吸い\n　　込まれて消えていくの。\p懺悔室は、呪いを解く場所なんだと\n　　……思う」\
 
-\x00 DIALOGUE_END 0\x08 SEQ01
-\x1f\xae\x02 FOB_SCE_END
-\x1f\xdc\x02 OP_CMD 
-LOAD3 SCES01_005\x00\x1f\x9e\x0b FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 \x90\xb5\x01\x0c\x00\x00\x00\x00"\x03x\x00\x00
+\x00 DIALOGUE_END 0\x08
+SEQ02 \xae\x02 SEQ03 \xdc\x02 OP_CMD 
+LOAD3 SCES01_005\x00\x1f\x9e\x0b SCE_CMD 
+DIALOGUE_1 \x90\xb5\x01\x0c\x00\x00\x00\x00"\x03x\x00\x00
  
 拓司\n　「話せよ」@
 早桃\n　「……」@
@@ -70,22 +68,20 @@ LOAD3 SCES01_005\x00\x1f\x9e\x0b FOB_SCE_END
 拓司\n　「虎菱拓司にも、いわない」@
 早桃\n　「……わかった」\
 
-\x00\x00\x00 DIALOGUE_END \xe2\x0b SEQ01
-\x1f\xae\x02 FOB_SCE_END
-\x1f\xdc\x02 OP_CMD 
-LOAD3 SCES01_006\x00\x1f\xfc\r FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 \x94\xb5\x01\x0c\x00\x00\x00\x00"\x03E\x00\x00
+\x00\x00\x00 DIALOGUE_END \xe2\x0b
+SEQ02 \xae\x02 SEQ03 \xdc\x02 OP_CMD 
+LOAD3 SCES01_006\x00\x1f\xfc\r SCE_CMD 
+DIALOGUE_1 \x94\xb5\x01\x0c\x00\x00\x00\x00"\x03E\x00\x00
  
 早桃はしばらくじっと天井を見上げて無言だった。@
 横顔には、心の中の激しい葛藤が伺えた。@
 早桃はそうした感情の揺らぎを必死に組み伏して、整理して、言\n葉に変えようともがいているように見えた。@
 やがて早桃は、ぽつり、ぽつり、と少しずつ自らの罪の物語を、\n語り始めた\
 
-\x00 DIALOGUE_END @\x0e SEQ01
-\x1f\xae\x02 FOB_SCE_END
-\x1f\xdc\x02 OP_CMD 
-LOAD3 SCES01_007\x00\x1f\x8e\x0f FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 \x98\xb5\x01\x0c\x00\x00\x00\x00"\x03\\\x00\x00
+\x00 DIALOGUE_END @\x0e
+SEQ02 \xae\x02 SEQ03 \xdc\x02 OP_CMD 
+LOAD3 SCES01_007\x00\x1f\x8e\x0f SCE_CMD 
+DIALOGUE_1 \x98\xb5\x01\x0c\x00\x00\x00\x00"\x03\\\x00\x00
  
 うまく話せそうにないから、思いついたことから話していくね。@
 ええと……@
@@ -95,11 +91,10 @@ LOAD3 SCES01_007\x00\x1f\x8e\x0f FOB_SCE_END
 小学校３年生くらいかな。@
 お父さんとお母さんと一緒に、車で行ったの。\
 
-\x00\x00\x00 DIALOGUE_END \xd2\x0f SEQ01
-\x1f\xae\x02 FOB_SCE_END
-\x1f\xdc\x02 OP_CMD 
-LOAD3 SCES01_008\x00\x1f|\x11 FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 \x9c\xb5\x01\x0c\x00\x00\x00\x00"\x03\x93\x00\x00
+\x00\x00\x00 DIALOGUE_END \xd2\x0f
+SEQ02 \xae\x02 SEQ03 \xdc\x02 OP_CMD 
+LOAD3 SCES01_008\x00\x1f|\x11 SCE_CMD 
+DIALOGUE_1 \x9c\xb5\x01\x0c\x00\x00\x00\x00"\x03\x93\x00\x00
  
 初めて見た海は、本で読んだり、テレビで見たりしたのとは全然\n違った。@
 早桃、海の水って、青いものだと思ってたんだよ。@
@@ -111,12 +106,10 @@ LOAD3 SCES01_008\x00\x1f|\x11 FOB_SCE_END
 綺麗だからとか、広いからとか、そういう理由はあとからくっつ\nいてきたんだと思う。@
 途中がなくて、いきなり、『好き』って気持ちが胸の中にいっぱ\nいになって……泣いちゃった。\
 
-\x00 DIALOGUE_END \xc0\x11 SEQ01
-\x1f\xae\x02 FOB_SCE_END
-\x1f\xdc\x02 OP_CMD LOAD6 .\\Data\\Script\\Bgm.Fob OP02 F\x14 FOB_SCE_END
-LOAD2 StopCD OP01 p\x14 OP_CMD  BACKGROUND_OP \xc8\x00 SEQ01
-\x1f \x00 FOB_SCE_END
-\x1fJ\x00 OP_CMD \x1f\xae\x02 FOB_SCE_END
-
+\x00 DIALOGUE_END \xc0\x11
+SEQ02 \xae\x02 SEQ03 \xdc\x02 OP_CMD 
+LOAD6 .\\Data\\Script\\Bgm.Fob OP02 F\x14 SCE_CMD 
+LOAD2 StopCD OP01 p\x14 OP_CMD  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00
+SEQ02  \x00 SEQ03 J\x00 SEQ05 \xae\x02 SCE_CMD 
 LOAD3 TextClose OP02 \xcc\x14 OP_CMD 
 END_FILE

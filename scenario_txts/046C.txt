@@ -1,7 +1,7 @@
 START_FILE
 D\x05\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xa4\t3\x01\x00\x00\x008\x04\x00
-LOAD3 SCE046_001\x00\x1f\x06\x00 FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 \x80W BACKGROUND_OP3 \x8b\x00\x00
+LOAD3 SCE046_001\x00\x1f\x06\x00 SCE_CMD 
+DIALOGUE_1 \x80W DIALOGUE_2 \x8b\x00\x00
  
 御堂\n　「そうこないとな。@
 　　虎菱、お前、意外とノリいいじゃねえか」@
@@ -14,19 +14,17 @@ LOAD3 SCE046_001\x00\x1f\x06\x00 FOB_SCE_END
 \n　御堂たちは雑談をしながら実験室の前を通り過ぎ、やがて男子\nトイレへと消えた。\
 
 \x00 DIALOGUE_END J\x00 SEQ01
-LOAD7 .\\Data\\Script\\TextFunc.Fob OP01 \x96\x02 FOB_SCE_END
+LOAD7 .\\Data\\Script\\TextFunc.Fob OP01 \x96\x02 SCE_CMD 
 LOAD2 TextOn OP01 \xc4\x02 OP_CMD 
-LOAD3 SCE046_002\x00\x1f\xe0\x02 FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 \x84W BACKGROUND_OP3 ,\x00\x00
+LOAD3 SCE046_002\x00\x1f\xe0\x02 SCE_CMD 
+DIALOGUE_1 \x84W DIALOGUE_2 ,\x00\x00
  
 拓司\n　「……？」@
 なたね\n　「大丈夫よ」@
 \n　言ってなたねは、躊躇することなく男子トイレへと入っていっ\nた。@
 ひとり廊下に取り残された拓司も、慌てて後を追う。@
 \z
-\x00 DIALOGUE_END $\x03 SEQ01
-\x1f\x96\x02 FOB_SCE_END
-\x1f\xc4\x02 OP_CMD \x1f\x96\x02 FOB_SCE_END
-
+\x00 DIALOGUE_END $\x03
+SEQ02 \x96\x02 SEQ03 \xc4\x02 SEQ05 \x96\x02 SCE_CMD 
 LOAD3 TextClose OP02 \x1a\x04 OP_CMD 
 END_FILE

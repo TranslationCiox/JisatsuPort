@@ -1,7 +1,7 @@
 START_FILE
 \xe2\x0c\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00p\n\x00
-LOAD3 SCE082_001\x00\x1f\x06\x00 FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 \xc0\x8f BACKGROUND_OP3 \xc4\x00\x00
+LOAD3 SCE082_001\x00\x1f\x06\x00 SCE_CMD 
+DIALOGUE_1 \xc0\x8f DIALOGUE_2 \xc4\x00\x00
  
 拓司はベッドから立ち上がり、拘束着の女の子に歩み寄った。@
 看護婦がやや緊張の表情を作る。\p教授が大丈夫だ、という。@
@@ -15,31 +15,29 @@ LOAD3 SCE082_001\x00\x1f\x06\x00 FOB_SCE_END
 これが単なる夢なのだとしたら、雲居なたねがこうしてここに\n登場するのには何の不思議もない。\p実在の人物を夢に見ているだ\nけなのだから。\
 
 \x00 DIALOGUE_END J\x00 SEQ01
-LOAD7 .\\Data\\Script\\TextFunc.Fob OP01 z\x03 FOB_SCE_END
+LOAD7 .\\Data\\Script\\TextFunc.Fob OP01 z\x03 SCE_CMD 
 LOAD2 TextOn OP01 \xa8\x03 OP_CMD 
-LOAD3 SCE082_002\x00\x1f\xc4\x03 FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 \xc4\x8f BACKGROUND_OP3 \\\x00\x00
+LOAD3 SCE082_002\x00\x1f\xc4\x03 SCE_CMD 
+DIALOGUE_1 \xc4\x8f DIALOGUE_2 \\\x00\x00
  
 混乱してきた思考から逃れるように、拓司は頭を振った。@
 そして、目の前にある確かな物を確認しようと、拘束着の女の子\nの肩に手を伸ばした。@
 そのときだった。@
 何の前触れもなく、低くて重い音がとどろき渡った。@
 /*▲SE　停止*/\a4,2,0,0,/*▲BGM　停止*/\a4,-1,0,0,/*▲SE16　一回再生（再生終わりまで待たないで次へ）*/\a2,0,16,0,\n　ザザザザザザザザザザ\w\n\a4,0,0,0,\z
- DIALOGUE_END \x08\x04 SEQ01
-\x1fz\x03 FOB_SCE_END
-\x1f\xa8\x03 OP_CMD 
-LOAD3 SCE082_003\x00\x1f\xb2\x05 FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 \xc8\x8f BACKGROUND_OP3 i\x00\x00
+ DIALOGUE_END \x08\x04
+SEQ02 z\x03 SEQ03 \xa8\x03 OP_CMD 
+LOAD3 SCE082_003\x00\x1f\xb2\x05 SCE_CMD 
+DIALOGUE_1 \xc8\x8f DIALOGUE_2 i\x00\x00
  
 頭が割れるような大音響だ。\pまた幻聴かとあたりを見れば、教授\nも看護婦も、みな耳を押さえてうずくまっている。\pどうやら本物\nの音らしい。\p聞いていると意識が遠くなるような、奇妙な音だ。@
 音は、拘束着の女の子から発せられてるようだった。@
 女の子のどこからというわけではなく、女の子そのものから放た\nれている。@
 /*▲SE16　一回再生（再生終わりまで待たないで次へ）*/\a2,0,16,0,\n　ザザザザザザザザザザ\w\n\a4,0,0,0,\z
- DIALOGUE_END \xf6\x05 SEQ01
-\x1fz\x03 FOB_SCE_END
-\x1f\xa8\x03 OP_CMD 
-LOAD3 SCE082_004\x00\x1f\xd4\x07 FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 \xcc\x8f BACKGROUND_OP3 }\x00\x00
+ DIALOGUE_END \xf6\x05
+SEQ02 z\x03 SEQ03 \xa8\x03 OP_CMD 
+LOAD3 SCE082_004\x00\x1f\xd4\x07 SCE_CMD 
+DIALOGUE_1 \xcc\x8f DIALOGUE_2 }\x00\x00
  
 いつの間にか女の子の目に意志の光が宿っている。@
 なにか懇願するように拓司を見つめている。@
@@ -48,9 +46,7 @@ LOAD3 SCE082_004\x00\x1f\xd4\x07 FOB_SCE_END
 \nその意味を認識する時間はなかった。@
 /*■黒　表示（クロスフェード）*/\a7,-2,-2,0,\a0,200,2,0,\a6,-2,0,0,目の前が真っ暗になり、拓司は意識を失った。\
 
- DIALOGUE_END \x18\x08 SEQ01
-\x1fz\x03 FOB_SCE_END
-\x1f\xa8\x03 OP_CMD \x1fz\x03 FOB_SCE_END
-
+ DIALOGUE_END \x18\x08
+SEQ02 z\x03 SEQ03 \xa8\x03 SEQ05 z\x03 SCE_CMD 
 LOAD3 TextClose OP02 R\n OP_CMD 
 END_FILE

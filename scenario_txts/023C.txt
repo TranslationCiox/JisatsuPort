@@ -1,8 +1,9 @@
 START_FILE
-\xba;\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xf02\x00LOAD6 .\\Data\\Script\\Bgm.Fob OP02 \x06\x00 FOB_SCE_END
+\xba;\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xf02\x00
+LOAD6 .\\Data\\Script\\Bgm.Fob OP02 \x06\x00 SCE_CMD 
 LOAD2 StopCD OP01 0\x00 OP_CMD 
-LOAD3 SCE023_001\x00\x1fL\x00 FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 \x903 BACKGROUND_OP3 \x87\x00\x00
+LOAD3 SCE023_001\x00\x1fL\x00 SCE_CMD 
+DIALOGUE_1 \x903 DIALOGUE_2 \x87\x00\x00
  
 拓司は目を閉じて、妄想の糸でひとつの世界を編み始めた。@
 いつ？\p　－－夏休みの最中。真昼だ。@
@@ -18,14 +19,15 @@ LOAD3 SCE023_001\x00\x1fL\x00 FOB_SCE_END
 紅葉はひどく消耗している。\p乱れた髪の毛が頬に貼り付いている。\n\p泣きはらした目がはれぼったい。\p顔は汗と油でてらてらと光ってい\nるが、唇は対照的に乾いている……。\
 
 \x00 DIALOGUE_END \x90\x00 SEQ01
-LOAD7 .\\Data\\Script\\TextFunc.Fob OP01 \xcc\x02 FOB_SCE_END
-LOAD2 TextOn OP01 \xfa\x02 OP_CMD  BACKGROUND_OP \x05\x01 SEQ01
-\x1f\x06\x00 FOB_SCE_END
-LOAD2 PlayCD OP01 <\x03 OP_CMD  BACKGROUND_OP O\x00 SEQ01
-LOAD6 .\\Data\\Script\\Bg.Fob OP03 r\x03 FOB_SCE_END
+LOAD7 .\\Data\\Script\\TextFunc.Fob OP01 \xcc\x02 SCE_CMD 
+LOAD2 TextOn OP01 \xfa\x02 OP_CMD  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x05\x01
+SEQ02 \x06\x00 SCE_CMD 
+LOAD2 PlayCD OP01 <\x03 OP_CMD  \x1e\x00\x00\x00\x00\r\x00\x00\x1eO\x00 SEQ01
+
+LOAD6 .\\Data\\Script\\Bg.Fob OP03 r\x03 SCE_CMD 
 LOAD4 BgAutoFadeIn OP03 \x9c\x03 OP_CMD 
-LOAD3 SCE023_002\x00\x1f\xc0\x03 FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 \x943 BACKGROUND_OP3 \x9a\x00\x00
+LOAD3 SCE023_002\x00\x1f\xc0\x03 SCE_CMD 
+DIALOGUE_1 \x943 DIALOGUE_2 \x9a\x00\x00
  
 紅葉\n　「……たくじ……」@
 \n紅葉が、か細くうめいた。@
@@ -39,11 +41,10 @@ LOAD3 SCE023_002\x00\x1f\xc0\x03 FOB_SCE_END
 逃げられないように。@
 すべてをうち砕くために。\
 
-\x00 DIALOGUE_END \x04\x04 SEQ01
-\x1f\xcc\x02 FOB_SCE_END
-\x1f\xfa\x02 OP_CMD 
-LOAD3 SCE023_003\x00\x1f\xa6\x06 FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 \x983 BACKGROUND_OP3 \xac\x00\x00
+\x00 DIALOGUE_END \x04\x04
+SEQ02 \xcc\x02 SEQ03 \xfa\x02 OP_CMD 
+LOAD3 SCE023_003\x00\x1f\xa6\x06 SCE_CMD 
+DIALOGUE_1 \x983 DIALOGUE_2 \xac\x00\x00
  
 拓司\n　「よう、天才スプリンター。@
 　　一生歩けなくなった気分はどうだ？」@
@@ -57,11 +58,10 @@ LOAD3 SCE023_003\x00\x1f\xa6\x06 FOB_SCE_END
 　　まあ、手は動くようにしておいてやるからな。@
 　　道具としていろいろ使えるからさ……いろいろな」\
 
-\x00\x00\x00 DIALOGUE_END \xea\x06 SEQ01
-\x1f\xcc\x02 FOB_SCE_END
-\x1f\xfa\x02 OP_CMD 
-LOAD3 SCE023_004\x00\x1f\xd4\t FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 \x9c3 BACKGROUND_OP3 y\x00\x00
+\x00\x00\x00 DIALOGUE_END \xea\x06
+SEQ02 \xcc\x02 SEQ03 \xfa\x02 OP_CMD 
+LOAD3 SCE023_004\x00\x1f\xd4\t SCE_CMD 
+DIALOGUE_1 \x9c3 DIALOGUE_2 y\x00\x00
  
 紅葉はうつむき、ぶるぶると肩をふるわせた。\pしかし、涙は一向に\nこぼれてこない。@
 すでに２４時間以上この蒸し暑い部屋に閉じこめ続けられ、身体か\nら水分が蒸発しきってしまったのだ。@
@@ -72,11 +72,10 @@ LOAD3 SCE023_004\x00\x1f\xd4\t FOB_SCE_END
 拓司\n　「くさいな」@
 紅葉\n　「……やだ……ひどいこといわないで……」\
 
-\x00\x00\x00 DIALOGUE_END \x18\n SEQ01
-\x1f\xcc\x02 FOB_SCE_END
-\x1f\xfa\x02 OP_CMD 
-LOAD3 SCE023_005\x00\x1f6\x0c FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 \xa03 BACKGROUND_OP3 \xa1\x00\x00
+\x00\x00\x00 DIALOGUE_END \x18\n
+SEQ02 \xcc\x02 SEQ03 \xfa\x02 OP_CMD 
+LOAD3 SCE023_005\x00\x1f6\x0c SCE_CMD 
+DIALOGUE_1 \xa03 DIALOGUE_2 \xa1\x00\x00
  
 拓司\n　「だってくさいものはくさいから仕方ないだろ。\p部活終わってシ\n　　ャワー浴びる前だったんだろ？\p　体中汗でびっしょりだ。@
 　　お前、恥ずかしくないのか？\p　他の女の子がリンスとか香水と\n　　かのにおいをさせてるっていうのに、お前はこんな獣みたいな\n　　においプンプンさせて。\p本当に不潔な女だな」@
@@ -86,11 +85,10 @@ LOAD3 SCE023_005\x00\x1f6\x0c FOB_SCE_END
 拓司\n　「うるさいぞ、ワキガ女」@
 紅葉\n　「もういいでしょ！　私の人生メチャクチャにして……もう満足\n　　でしょ？！」\
 
-\x00 DIALOGUE_END z\x0c SEQ01
-\x1f\xcc\x02 FOB_SCE_END
-\x1f\xfa\x02 OP_CMD 
-LOAD3 SCE023_006\x00\x1f8\x0f FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 \xa43 BACKGROUND_OP3 \x9d\x00\x00
+\x00 DIALOGUE_END z\x0c
+SEQ02 \xcc\x02 SEQ03 \xfa\x02 OP_CMD 
+LOAD3 SCE023_006\x00\x1f8\x0f SCE_CMD 
+DIALOGUE_1 \xa43 DIALOGUE_2 \x9d\x00\x00
  
 拓司\n　「いいや。全然満足じゃないね」@
 紅葉\n　「どうして？！　幼なじみなのに……信用してたのに！」@
@@ -98,11 +96,10 @@ LOAD3 SCE023_006\x00\x1f8\x0f FOB_SCE_END
 \n拓司は足の裏で、紅葉の股間をグイと踏みつけた。\p紅葉は身をよじ\nって避けようとするが、もうその気力も失せたのか、すぐにぐった\nりとなすがままになってしまう。@
 拓司は、勝ち誇ったように、紅葉の柔らかい恥丘を踏みにじる。@
 屈辱を与えるためでもあるが、もうひとつ、紅葉の尿意を促す意味\nもある。\pずっと排尿を我慢し続けてきた紅葉はもはや限界なのだ。\n\w\z
-\x00\x00\x00 DIALOGUE_END |\x0f SEQ01
-\x1f\xcc\x02 FOB_SCE_END
-\x1f\xfa\x02 OP_CMD 
-LOAD3 SCE023_007\x00\x1f*\x12 FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 \xa83 BACKGROUND_OP3 a\x00\x00
+\x00\x00\x00 DIALOGUE_END |\x0f
+SEQ02 \xcc\x02 SEQ03 \xfa\x02 OP_CMD 
+LOAD3 SCE023_007\x00\x1f*\x12 SCE_CMD 
+DIALOGUE_1 \xa83 DIALOGUE_2 a\x00\x00
  
 果たして紅葉は、すぐに苦しそうにいった。@
 \n紅葉\n　「……お願い……トイレに……行かせて」@
@@ -113,11 +110,10 @@ LOAD3 SCE023_007\x00\x1f*\x12 FOB_SCE_END
 紅葉\n　「……お願い」@
 拓司\n　「いやだね。いま、おれの前でしてみせろよ」\
 
-\x00\x00\x00 DIALOGUE_END n\x12 SEQ01
-\x1f\xcc\x02 FOB_SCE_END
-\x1f\xfa\x02 OP_CMD 
-LOAD3 SCE023_008\x00\x1f,\x14 FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 \xac3 BACKGROUND_OP3 n\x00\x00
+\x00\x00\x00 DIALOGUE_END n\x12
+SEQ02 \xcc\x02 SEQ03 \xfa\x02 OP_CMD 
+LOAD3 SCE023_008\x00\x1f,\x14 SCE_CMD 
+DIALOGUE_1 \xac3 DIALOGUE_2 n\x00\x00
  
 紅葉\n　「……変態！　あんた、狂ってるわ！」@
 拓司\n　「なんとでもいえ。\pいっとくが、おれはお前を便所に連れていく\n　　気はないからな。\pいまここでしてみせるか、あとでするか、\n　　どっちかだ。\pそしていまここでしてみせる気があるなら……こ\n　　れをやるよ」@
@@ -125,11 +121,10 @@ LOAD3 SCE023_008\x00\x1f,\x14 FOB_SCE_END
 紅葉の喉がごくりと隆起した。@
 \n紅葉\n　「水……頂戴……」\
 
-\x00 DIALOGUE_END p\x14 SEQ01
-\x1f\xcc\x02 FOB_SCE_END
-\x1f\xfa\x02 OP_CMD 
-LOAD3 SCE023_009\x00\x1fb\x16 FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 \xb03 BACKGROUND_OP3 k\x00\x00
+\x00 DIALOGUE_END p\x14
+SEQ02 \xcc\x02 SEQ03 \xfa\x02 OP_CMD 
+LOAD3 SCE023_009\x00\x1fb\x16 SCE_CMD 
+DIALOGUE_1 \xb03 DIALOGUE_2 k\x00\x00
  
 拓司\n　「あァ？」@
 紅葉\n　「お水……頂戴」@
@@ -140,11 +135,10 @@ LOAD3 SCE023_009\x00\x1fb\x16 FOB_SCE_END
 拓司\n　「だからいま、おれの目の前で漏らしてみせろよ。\pどうせ限界な\n　　んだろう？\p　一生我慢できるはずはないんだ。いずれ漏らす。\n　　\pどうせ漏らすなら水と引き替えの方がいいんじゃないのか？\n　　」@
 紅葉\n　「……」\
 
-\x00\x00\x00 DIALOGUE_END \xa6\x16 SEQ01
-\x1f\xcc\x02 FOB_SCE_END
-\x1f\xfa\x02 OP_CMD 
-LOAD3 SCE023_010\x00\x1f\x8c\x18 FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 \xb43 BACKGROUND_OP3 \x91\x00\x00
+\x00\x00\x00 DIALOGUE_END \xa6\x16
+SEQ02 \xcc\x02 SEQ03 \xfa\x02 OP_CMD 
+LOAD3 SCE023_010\x00\x1f\x8c\x18 SCE_CMD 
+DIALOGUE_1 \xb43 DIALOGUE_2 \x91\x00\x00
  
 拓司\n　「……まあ、おれはどっちでもいいけどな。\pイヤならいい。@
 　　悪いけどちょっと図書館にでも行って涼んでくるわ。@
@@ -157,11 +151,10 @@ LOAD3 SCE023_010\x00\x1f\x8c\x18 FOB_SCE_END
 耐えきれないのか、顔をうつむきにして拓司から表情を隠そうとす\nる。@
 しかし拓司は許さない。\p顎を掴んで無理矢理顔を上向きにし、冷酷\nに笑う。\
 
-\x00\x00\x00 DIALOGUE_END \xd0\x18 SEQ01
-\x1f\xcc\x02 FOB_SCE_END
-\x1f\xfa\x02 OP_CMD 
-LOAD3 SCE023_011\x00\x1fN\x1b FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 \xb83 BACKGROUND_OP3 \xb9\x00\x00
+\x00\x00\x00 DIALOGUE_END \xd0\x18
+SEQ02 \xcc\x02 SEQ03 \xfa\x02 OP_CMD 
+LOAD3 SCE023_011\x00\x1fN\x1b SCE_CMD 
+DIALOGUE_1 \xb83 DIALOGUE_2 \xb9\x00\x00
  
 拓司\n　「どんな顔をしておもらしするのか、見たいからな」@
 \n観念したのか、紅葉はわずかに腰を浮かせて、ぶるるっと震えた。\n\p薄いブルーのパンティに、じわりと染みが生まれた。\p尿はみるみる\nクロッチに染み渡って、やがてあしぐりからだらだらとあふれ出し\nた。@
@@ -171,11 +164,10 @@ LOAD3 SCE023_011\x00\x1fN\x1b FOB_SCE_END
 紅葉\n　「う……ううっ」@
 拓司\n　「おいおいおいおーい、まだ出るのか？\p　よっぽどおれに見られ\n　　るのが嬉しいんだな。\p体中から汗のにおいさせて、ションベン\n　　もらして……おまえ異常なんじゃないか？」\
 
-\x00 DIALOGUE_END \x92\x1b SEQ01
-\x1f\xcc\x02 FOB_SCE_END
-\x1f\xfa\x02 OP_CMD 
-LOAD3 SCE023_012\x00\x1f\xb0\x1e FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 \xbc3 BACKGROUND_OP3 \x97\x00\x00
+\x00 DIALOGUE_END \x92\x1b
+SEQ02 \xcc\x02 SEQ03 \xfa\x02 OP_CMD 
+LOAD3 SCE023_012\x00\x1f\xb0\x1e SCE_CMD 
+DIALOGUE_1 \xbc3 DIALOGUE_2 \x97\x00\x00
  
 \nいくら嘲笑されても一度あふれ出したものはなかなか止まらない。\n\pじょぼじょぼと、紅葉の意志に反して放出され続ける黄色い汚液…\n…。@
 紅葉の肩ががっくりと落ちたのを合図にようやく放出が完了した。\n\p黄色い液が、フローリングの床に無様な池を作っている。@
@@ -184,11 +176,10 @@ LOAD3 SCE023_012\x00\x1f\xb0\x1e FOB_SCE_END
 \n紅葉の顔にわずかに安堵の色が生まれる。\pしかしそれは、すぐに絶\n望に取って代わられた。@
 拓司はおもむろにペ○スを引きずり出し、先端を紅葉の身体に定め\nた。\
 
-\x00 DIALOGUE_END \xf4\x1e SEQ01
-\x1f\xcc\x02 FOB_SCE_END
-\x1f\xfa\x02 OP_CMD 
-LOAD3 SCE023_013\x00\x1f\x8a! FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 \xc03 BACKGROUND_OP3 v\x00\x00
+\x00 DIALOGUE_END \xf4\x1e
+SEQ02 \xcc\x02 SEQ03 \xfa\x02 OP_CMD 
+LOAD3 SCE023_013\x00\x1f\x8a! SCE_CMD 
+DIALOGUE_1 \xc03 DIALOGUE_2 v\x00\x00
  
 紅葉\n　「なっ……？」@
 拓司\n　「たらふく飲めよ」@
@@ -198,56 +189,50 @@ LOAD3 SCE023_013\x00\x1f\x8a! FOB_SCE_END
 \n尿道から迸った黄色い液体が身をよじらせた紅葉の肩に直撃する。\n\p拓司は狙いを修正して、紅葉の胸のあたりめがけて放尿を続けた。\n\pびしゃびしゃと黄色い飛沫が散る。\p白い制服が、あっというまに汚\n液で染められていく。@
 \n紅葉　「う……ううっ……」\
 
-\x00\x00\x00 DIALOGUE_END \xce! SEQ01
-\x1f\xcc\x02 FOB_SCE_END
-\x1f\xfa\x02 OP_CMD 
-LOAD3 SCE023_014\x00\x1f\xe0# FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 \xc43 BACKGROUND_OP3 d\x00\x00
+\x00\x00\x00 DIALOGUE_END \xce!
+SEQ02 \xcc\x02 SEQ03 \xfa\x02 OP_CMD 
+LOAD3 SCE023_014\x00\x1f\xe0# SCE_CMD 
+DIALOGUE_1 \xc43 DIALOGUE_2 d\x00\x00
  
 ついに紅葉の抵抗が止んだ\p拘束されて失禁し、幼なじみの放尿の的\nにされるとういう恥辱が、プライドを完全にうち砕いてしまったの\nだろう。\p紅葉はがっくりと俯いて、震えながら汚液を浴び続けた。\n@
 拓司\n　「少しは抵抗しろよ。つまらないだろ？」@
 \n拓司はペ○スの先端を徐々に上に上げていく。\pそれに従って、ほと\nばしり出る尿は、早桃の体を這うように昇っていき、やがて黒い髪\nの毛に降り注いだ。\
 
-\x00 DIALOGUE_END $$ SEQ01
-\x1f\xcc\x02 FOB_SCE_END
-\x1f\xfa\x02 OP_CMD 
-LOAD3 SCE023_015\x00\x1f\xee% FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 \xc83 BACKGROUND_OP3 k\x00\x00
+\x00 DIALOGUE_END $$
+SEQ02 \xcc\x02 SEQ03 \xfa\x02 OP_CMD 
+LOAD3 SCE023_015\x00\x1f\xee% SCE_CMD 
+DIALOGUE_1 \xc83 DIALOGUE_2 k\x00\x00
  
 紅葉\n　「やめてよお……髪の毛におしっこなんてかけないでえ……」@
 拓司\n　「髪は女の命か？\p　お前みたいな異臭女がいつまでもそんなこと\n　　いっても仕方ないだろう？\p　ほら、顔あげろよ……あげろ！@
 　　顔を上げて口を開け！　舌を出してみせろ！\p　ほら！　早く\n　　しないとしょんべん終わっちまうぞ？！\p　おもらしまでしてみ\n　　せた努力が無駄になっちまってもいいのか？」@
 紅葉\n　「う……うむっ……うぷぷ……」\
 
-\x00\x00\x00 DIALOGUE_END 2& SEQ01
-\x1f\xcc\x02 FOB_SCE_END
-\x1f\xfa\x02 OP_CMD  BACKGROUND_OP P\x00 SEQ01
-\x1fr\x03 FOB_SCE_END
-\x1f\x9c\x03 OP_CMD 
-LOAD3 SCE023_016\x00\x1fL( FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 \xcc3 BACKGROUND_OP3 \x85\x00\x00
+\x00\x00\x00 DIALOGUE_END 2&
+SEQ02 \xcc\x02 SEQ03 \xfa\x02 OP_CMD  \x1e\x00\x00\x00\x00\r\x00\x00\x1eP\x00
+SEQ02 r\x03 SEQ03 \x9c\x03 OP_CMD 
+LOAD3 SCE023_016\x00\x1fL( SCE_CMD 
+DIALOGUE_1 \xcc3 DIALOGUE_2 \x85\x00\x00
  
 硬く目を閉じたまま、紅葉が顔を上にする。\p待ってましたとばかり\nに、拓司はその顔面に狙いを定めた。\p見慣れた幼なじみの顔が、あ\nっという間に汚液に蹂躙されていく。\p鼻面で弾ける黄色いしぶき。\n\p頬を、顎を伝って滝のように流れ落ちる黄色い液体。\pゾクゾクと背\n中を快感が駆け上がっていく。@
 \n拓司\n　「口だ！　早く口を開けろ！」@
 紅葉\n　「ぶぷっ……うんん……ごぼぼっ……」@
 拓司\n　「よし……こぼさず飲めよ。\p腹の中までおれのしょんべんを染み\n　　渡らせてやるよ。\p内臓までおしっこまみれの不潔女だ、お前は\n　　！」\
 
-\x00 DIALOGUE_END \x90( SEQ01
-\x1f\xcc\x02 FOB_SCE_END
-\x1f\xfa\x02 OP_CMD 
-LOAD3 SCE023_017\x00\x1f\xde* FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 \xd03 BACKGROUND_OP3 \xbc\x00\x00
+\x00 DIALOGUE_END \x90(
+SEQ02 \xcc\x02 SEQ03 \xfa\x02 OP_CMD 
+LOAD3 SCE023_017\x00\x1f\xde* SCE_CMD 
+DIALOGUE_1 \xd03 DIALOGUE_2 \xbc\x00\x00
  
 叫んで拓司は、紅葉の髪を鷲掴みにした。\p両手で頭を固定して、開\nけっ放しの口の中にペ○スを一気に押し込む。\pペ○スの先端に、紅\n葉の喉の肉が押し当たった。@
 喉の奥で放尿され、呼吸もままならない紅葉。\p必死で頭をふって逃\nれようとするが、拓司はそれを許さない。\pさらに淫猥な言葉を浴び\nせかけ、紅葉の人格を踏みにじっていく。@
 \n拓司\n　「……そうだ、早桃にも使わせてやるか？\p　どうせなら義兄妹の\n　　しょんべんの飲み比べもしてみたいだろ？\p　義兄妹っていって\n　　も血が繋がってないから、味はぜんぜん違うと思うぞ？@
 　　それとも毎日同じようなもの食ってるんだから、味も同じなの\n　　かな？\p　ははは、嬉しいだろ？\p　ただ、お前んちの親が心配す\n　　ると気の毒だからな。\p立派に便器として生きていますって、写\n　　真に撮って送ってやるよ」\
 
-\x00 DIALOGUE_END "+ SEQ01
-\x1f\xcc\x02 FOB_SCE_END
-\x1f\xfa\x02 OP_CMD 
-LOAD3 SCE023_018\x00\x1fL. FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 \xd43 BACKGROUND_OP3 \x9b\x00\x00
+\x00 DIALOGUE_END "+
+SEQ02 \xcc\x02 SEQ03 \xfa\x02 OP_CMD 
+LOAD3 SCE023_018\x00\x1fL. SCE_CMD 
+DIALOGUE_1 \xd43 DIALOGUE_2 \x9b\x00\x00
  
 紅葉は白目をむき、痙攣している。\p鼻の穴からも、尿が逆流して吹\nきこぼれている。\pかろうじて喉を上下させて汚液を飲み下している\nから、死んではいないのだろうが、もはや拓司の言葉を理解してい\nるとは思えない。@
 それでも拓司は、狂ったように言葉を放ち続けた。@
@@ -256,11 +241,10 @@ LOAD3 SCE023_018\x00\x1fL. FOB_SCE_END
 \n　ザザザ……ザザッ……\pザアザザザ……ザアアアアア……@
 　ザアザアアアアアアア……\
 
-\x00 DIALOGUE_END \x90. SEQ01
-\x1f\xcc\x02 FOB_SCE_END
-\x1f\xfa\x02 OP_CMD 
-LOAD3 SCE023_019\x00\x1f61 FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 \xd83 BACKGROUND_OP3 1\x00\x00
+\x00 DIALOGUE_END \x90.
+SEQ02 \xcc\x02 SEQ03 \xfa\x02 OP_CMD 
+LOAD3 SCE023_019\x00\x1f61 SCE_CMD 
+DIALOGUE_1 \xd83 DIALOGUE_2 1\x00\x00
  
 耳の奥で、『灰色』が響き始めた。@
 ああ、うるさい。@
@@ -269,12 +253,8 @@ LOAD3 SCE023_019\x00\x1f61 FOB_SCE_END
 \n　ザザザ……ザザッ……\pザアザザザ……ザアアアアア……@
 　ザアザアアアアアアア……\
 
-\x00 DIALOGUE_END z1 SEQ01
-\x1f\xcc\x02 FOB_SCE_END
-\x1f\xfa\x02 OP_CMD \x1f\x06\x00 FOB_SCE_END
-\x1f0\x00 OP_CMD  BACKGROUND_OP \xc8\x00 SEQ01
-\x1fr\x03 FOB_SCE_END
-\x1f\x9c\x03 OP_CMD \x1f\xcc\x02 FOB_SCE_END
-
+\x00 DIALOGUE_END z1
+SEQ02 \xcc\x02 SEQ03 \xfa\x02 SEQ05 \x06\x00 SEQ03 0\x00 OP_CMD  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00
+SEQ02 r\x03 SEQ03 \x9c\x03 SEQ05 \xcc\x02 SCE_CMD 
 LOAD3 TextClose OP02 \xd22 OP_CMD 
 END_FILE

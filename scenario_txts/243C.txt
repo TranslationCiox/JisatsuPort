@@ -1,11 +1,13 @@
 START_FILE
-R4\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00X+\x00 BACKGROUND_OP \n\x01 SEQ01
-LOAD6 .\\Data\\Script\\Bgm.Fob OP02  \x00 FOB_SCE_END
-LOAD2 PlayCD OP01 J\x00 OP_CMD  BACKGROUND_OP \xc8\x00 SEQ01
-LOAD6 .\\Data\\Script\\Bg.Fob OP03 \x80\x00 FOB_SCE_END
+R4\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00X+\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1e\n\x01 SEQ01
+
+LOAD6 .\\Data\\Script\\Bgm.Fob OP02  \x00 SCE_CMD 
+LOAD2 PlayCD OP01 J\x00 OP_CMD  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00 SEQ01
+
+LOAD6 .\\Data\\Script\\Bg.Fob OP03 \x80\x00 SCE_CMD 
 LOAD4 BgAutoFadeIn OP03 \xaa\x00 OP_CMD 
-LOAD3 SCE243_001\x00\x1f\xce\x00 FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 P\x8b\x01\x0c\x00\x00\x00\x00"\x03c\x00\x00
+LOAD3 SCE243_001\x00\x1f\xce\x00 SCE_CMD 
+DIALOGUE_1 P\x8b\x01\x0c\x00\x00\x00\x00"\x03c\x00\x00
  
 拓司\n　「来るぞ、急げ！」@
 \n最終波動。@
@@ -15,23 +17,21 @@ LOAD3 SCE243_001\x00\x1f\xce\x00 FOB_SCE_END
 ただ、最終波動はひたすら、死のイメージだった。@
 死が定義不可能である以上、波動も同じく、理解の範疇の外にあ\nる。\p漠然とした恐怖ですべてを縛るものとして。\w\z
 \x00 DIALOGUE_END \x12\x01 SEQ01
-LOAD7 .\\Data\\Script\\TextFunc.Fob OP01 \xbe\x02 FOB_SCE_END
+LOAD7 .\\Data\\Script\\TextFunc.Fob OP01 \xbe\x02 SCE_CMD 
 LOAD2 TextOn OP01 \xec\x02 OP_CMD 
-LOAD3 SCE243_002\x00\x1f\x08\x03 FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 T\x8b\x01\x0c\x00\x00\x00\x00"\x03W\x00\x00
+LOAD3 SCE243_002\x00\x1f\x08\x03 SCE_CMD 
+DIALOGUE_1 T\x8b\x01\x0c\x00\x00\x00\x00"\x03W\x00\x00
  
 それがいま、襲いかかろうとしている。@
 爆発を控えて、いま、エンジンを高らかにふかしている。@
 この壁の先に待っているものが拓司たちを守ってくれるようなも\nのなのか……\pあるいはそこにあるのかすら……わからない。@
 しかし、すでになすべきことはただひとつだった。@
 最終波動がやってくる前に壁を壊し、その向こうにあるものを見\nつけだすのだ。\w\z
-\x00 DIALOGUE_END L\x03 SEQ01
-\x1f\xbe\x02 FOB_SCE_END
-\x1f\xec\x02 OP_CMD  BACKGROUND_OP 3\x00 SEQ01
-\x1f\x80\x00 FOB_SCE_END
-\x1f\xaa\x00 OP_CMD 
-LOAD3 SCE243_003\x00\x1f\x16\x05 FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 X\x8b\x01\x0c\x00\x00\x00\x00"\x03u\x00\x00
+\x00 DIALOGUE_END L\x03
+SEQ02 \xbe\x02 SEQ03 \xec\x02 OP_CMD  \x1e\x00\x00\x00\x00\r\x00\x00\x1e3\x00
+SEQ02 \x80\x00 SEQ03 \xaa\x00 OP_CMD 
+LOAD3 SCE243_003\x00\x1f\x16\x05 SCE_CMD 
+DIALOGUE_1 X\x8b\x01\x0c\x00\x00\x00\x00"\x03u\x00\x00
  
 /*▲SE15　２回再生（再生終了まで待つ）*/\a2,0,15,0,\a3,0,0,0,\a4,0,0,0,\a2,0,15,0,\a3,0,0,0,\a4,0,0,0,拓司たちは掘った。@
 /*▲SE15　２回再生（再生終了まで待つ）*/\a2,0,15,0,\a3,0,0,0,\a4,0,0,0,\a2,0,15,0,\a3,0,0,0,\a4,0,0,0,壁を崩し続けた。@
@@ -39,11 +39,10 @@ LOAD3 SCE243_003\x00\x1f\x16\x05 FOB_SCE_END
 低く、重く……それは世界の終末を確信させるに十分な不吉さを\n備えていた。@
 すべてのものがブルブルと振動し、輪郭が歪む。@
 天井から、パラパラとコンクリートの破片が落ちてくる。\w\z
-\x00 DIALOGUE_END Z\x05 SEQ01
-\x1f\xbe\x02 FOB_SCE_END
-\x1f\xec\x02 OP_CMD 
-LOAD3 SCE243_004\x00\x1fh\x07 FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 \\\x8b\x01\x0c\x00\x00\x00\x00"\x03E\x00\x00
+\x00 DIALOGUE_END Z\x05
+SEQ02 \xbe\x02 SEQ03 \xec\x02 OP_CMD 
+LOAD3 SCE243_004\x00\x1fh\x07 SCE_CMD 
+DIALOGUE_1 \\\x8b\x01\x0c\x00\x00\x00\x00"\x03E\x00\x00
  
 カンナ\n　「虎菱くん、間に合わない！　間に合わないよ！」@
 拓司\n　「やるんだ！」@
@@ -51,16 +50,13 @@ LOAD3 SCE243_004\x00\x1fh\x07 FOB_SCE_END
 拓司\n　「どこに！」@
 カンナ\n　「どこかに！」@
 拓司\n　「どこかなんて、ない！　逃げ場所はない！　ここしかないん\n　　だ。\pここしか、ないんだ！」\w\z
-\x00\x00\x00 DIALOGUE_END \xac\x07 SEQ01
-\x1f\xbe\x02 FOB_SCE_END
-\x1f\xec\x02 OP_CMD  BACKGROUND_OP \xc8\x00 SEQ01
-\x1f\x80\x00 FOB_SCE_END
-\x1f\xaa\x00 OP_CMD \x1f \x00 FOB_SCE_END
-LOAD2 StopCD OP01 :\t OP_CMD  BACKGROUND_OP \x02\x00 SEQ01
-\x1f \x00 FOB_SCE_END
+\x00\x00\x00 DIALOGUE_END \xac\x07
+SEQ02 \xbe\x02 SEQ03 \xec\x02 OP_CMD  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00
+SEQ02 \x80\x00 SEQ03 \xaa\x00 SEQ05  \x00 SCE_CMD 
+LOAD2 StopCD OP01 :\t OP_CMD  \x1e\x00\x00\x00\x00\r\x00 SCE_CMD \x0c\x02\x00\x00"\x1f \x00 SCE_CMD 
 LOAD2 SeStop OP01 |\t OP_CMD 
-LOAD3 SCE243_005\x00\x1f\x98\t FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 `\x8b\x01\x0c\x00\x00\x00\x00"\x03f\x00\x00
+LOAD3 SCE243_005\x00\x1f\x98\t SCE_CMD 
+DIALOGUE_1 `\x8b\x01\x0c\x00\x00\x00\x00"\x03f\x00\x00
  
 ざあっ！@
 \n足の裏から頭のてっぺんへ。@
@@ -69,13 +65,11 @@ LOAD3 SCE243_005\x00\x1f\x98\t FOB_SCE_END
 爆風のように、すさまじい勢いで自分のなかをなにかが通り過ぎ\nたのがわかった。@
 それは、身体のなかをすり抜けていった。@
 細胞の隙間を縫うように奔り、身体を構成する肉すべてに毒を与\nえて通り過ぎていった。\p死という名の毒素を。\w\z
-\x00 DIALOGUE_END \xdc\t SEQ01
-\x1f\xbe\x02 FOB_SCE_END
-\x1f\xec\x02 OP_CMD  BACKGROUND_OP \x0b\x01 SEQ01
-\x1f \x00 FOB_SCE_END
-\x1fJ\x00 OP_CMD 
-LOAD3 SCE243_006\x00\x1f\xe2\x0b FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 d\x8b\x01\x0c\x00\x00\x00\x00"\x03\x96\x00\x00
+\x00 DIALOGUE_END \xdc\t
+SEQ02 \xbe\x02 SEQ03 \xec\x02 OP_CMD  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x0b\x01
+SEQ02  \x00 SEQ03 J\x00 OP_CMD 
+LOAD3 SCE243_006\x00\x1f\xe2\x0b SCE_CMD 
+DIALOGUE_1 d\x8b\x01\x0c\x00\x00\x00\x00"\x03\x96\x00\x00
  
 /*▲SE33　再生（再生終了を待たず先へ進む）*/\a2,0,33,0,\a6,0,0,0,キイイイイイイイイイイイイイイイイイイイイイイイイイイイイ！\n\p\a6,0,0,0,\a4,0,0,0,\n拓司\n　「！」@
 \n蜥蜴の悲鳴だった。@
@@ -85,11 +79,10 @@ LOAD3 SCE243_006\x00\x1f\xe2\x0b FOB_SCE_END
 飛び散った破片は頭蓋骨の内側を反射して、反射して、反射した。\n\pどこにも出ていかなかった。@
 無限の反射のまっただ中に、新しい悲鳴がさらに雪崩のように流\nれ込んできては反射した。@
 頭そのものが爆発しないのが不思議だった。\w\z
-\x00\x00 DIALOGUE_END &\x0c SEQ01
-\x1f\xbe\x02 FOB_SCE_END
-\x1f\xec\x02 OP_CMD 
-LOAD3 SCE243_007\x00\x1f\xb8\x0e FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 h\x8b\x01\x0c\x00\x00\x00\x00"\x03}\x00\x00
+\x00\x00 DIALOGUE_END &\x0c
+SEQ02 \xbe\x02 SEQ03 \xec\x02 OP_CMD 
+LOAD3 SCE243_007\x00\x1f\xb8\x0e SCE_CMD 
+DIALOGUE_1 h\x8b\x01\x0c\x00\x00\x00\x00"\x03}\x00\x00
  
 拓司\n　「ああああああああああああ！」@
 \n拓司は耳をふさいでうずくまった。@
@@ -99,11 +92,10 @@ LOAD3 SCE243_007\x00\x1f\xb8\x0e FOB_SCE_END
 床にうずくまって身体を団子虫のように丸めたカンナは、自らの\n頭をガンガンと床にたたきつけていた。@
 やがてぐったりと仰向けに転がると、ぴくぴくと身体を痙攣させ\n始める。@
 白目をむき、耳から、鼻から、どす黒い血があふれ出している。\w\z
-\x00 DIALOGUE_END \xfc\x0e SEQ01
-\x1f\xbe\x02 FOB_SCE_END
-\x1f\xec\x02 OP_CMD 
-LOAD3 SCE243_008\x00\x1f*\x11 FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 l\x8b\x01\x0c\x00\x00\x00\x00"\x03\x94\x00\x00
+\x00 DIALOGUE_END \xfc\x0e
+SEQ02 \xbe\x02 SEQ03 \xec\x02 OP_CMD 
+LOAD3 SCE243_008\x00\x1f*\x11 SCE_CMD 
+DIALOGUE_1 l\x8b\x01\x0c\x00\x00\x00\x00"\x03\x94\x00\x00
  
 拓司\n　「カ・ン・ナ・ア・アア・アアア・アアアア！」@
 \n拓司は叫んだ。@
@@ -117,11 +109,10 @@ LOAD3 SCE243_008\x00\x1f*\x11 FOB_SCE_END
 もはやそれは、正体不明の怪物ではない。@
 いまだ歴然として怪物ではあるものの、すでに姿形はわかってい\nるのだ。@
 檻に閉じこめて、鎖に繋ぐことができる、ただの生き物でしかな\nいのだ。\w\z
-\x00\x00\x00 DIALOGUE_END n\x11 SEQ01
-\x1f\xbe\x02 FOB_SCE_END
-\x1f\xec\x02 OP_CMD 
-LOAD3 SCE243_009\x00\x1f\xf8\x13 FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 p\x8b\x01\x0c\x00\x00\x00\x00"\x03_\x00\x00
+\x00\x00\x00 DIALOGUE_END n\x11
+SEQ02 \xbe\x02 SEQ03 \xec\x02 OP_CMD 
+LOAD3 SCE243_009\x00\x1f\xf8\x13 SCE_CMD 
+DIALOGUE_1 p\x8b\x01\x0c\x00\x00\x00\x00"\x03_\x00\x00
  
 あふれ出したカンナの物語。\pカンナの世界。\pそれは－－@
 解決されつつあることなのだ。@
@@ -131,11 +122,10 @@ LOAD3 SCE243_009\x00\x1f\xf8\x13 FOB_SCE_END
 拓司は一歩踏み出した。@
 その足をじっと見つめ、そして反対側の足を前に出す。@
 そうして一歩……一歩……忘れてしまった歩き方を思い出すかの\nように、拓司はゆっくりと歩き始めた。\w\z
-\x00 DIALOGUE_END <\x14 SEQ01
-\x1f\xbe\x02 FOB_SCE_END
-\x1f\xec\x02 OP_CMD 
-LOAD3 SCE243_010\x00\x1f\xf2\x15 FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 t\x8b\x01\x0c\x00\x00\x00\x00"\x03o\x00\x00
+\x00 DIALOGUE_END <\x14
+SEQ02 \xbe\x02 SEQ03 \xec\x02 OP_CMD 
+LOAD3 SCE243_010\x00\x1f\xf2\x15 SCE_CMD 
+DIALOGUE_1 t\x8b\x01\x0c\x00\x00\x00\x00"\x03o\x00\x00
  
 /*▲SE33　ループ再生*/\a2,2,33,0,\a6,0,0,0,キイイイイイイイイイイイイイイイイイイイイイイイイイイイイ\nイイイイイイイ！@
 \nいつの間にか、鼻血が流れ出している。@
@@ -143,12 +133,10 @@ LOAD3 SCE243_010\x00\x1f\xf2\x15 FOB_SCE_END
 \nキイイイイイイイイイイイイイイイイイイイイイイイイイイイイ\nイイイイイイイ！@
 \nここから俺は始まるのだ。@
 \nキイイイイイイイイイイイイイイイイイイイイイイイイイイイイ\nイイイイイイイ！\w/*▲SE　停止*/\a4,2,0,0,\z
- DIALOGUE_END 6\x16 SEQ01
-\x1f\xbe\x02 FOB_SCE_END
-\x1f\xec\x02 OP_CMD \x1f \x00 FOB_SCE_END
-\x1f:\t OP_CMD 
-LOAD3 SCE243_011\x00\x1fF\x18 FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 x\x8b\x01\x0c\x00\x00\x00\x00"\x03P\x00\x00
+ DIALOGUE_END 6\x16
+SEQ02 \xbe\x02 SEQ03 \xec\x02 SEQ05  \x00 SEQ03 :\t OP_CMD 
+LOAD3 SCE243_011\x00\x1fF\x18 SCE_CMD 
+DIALOGUE_1 x\x8b\x01\x0c\x00\x00\x00\x00"\x03P\x00\x00
  
 こうして旅が始まったいま、俺にはいまや目的があるのだ。@
 何かから逃げているのではなく、何かに向かっているのだ。@
@@ -156,11 +144,10 @@ LOAD3 SCE243_011\x00\x1fF\x18 FOB_SCE_END
 振り返れば過去の自分がいる。@
 通り過ぎた風景がある。@
 そうして歩き続けることで、自分が常に新しい自分であることを\n知るのだ。\n考えるのではない。\n動くのだ。\w\z
-\x00\x00\x00 DIALOGUE_END \x8a\x18 SEQ01
-\x1f\xbe\x02 FOB_SCE_END
-\x1f\xec\x02 OP_CMD 
-LOAD3 SCE243_012\x00\x1f\x04\x1a FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 |\x8b\x01\x0c\x00\x00\x00\x00"\x03b\x00\x00
+\x00\x00\x00 DIALOGUE_END \x8a\x18
+SEQ02 \xbe\x02 SEQ03 \xec\x02 OP_CMD 
+LOAD3 SCE243_012\x00\x1f\x04\x1a SCE_CMD 
+DIALOGUE_1 |\x8b\x01\x0c\x00\x00\x00\x00"\x03b\x00\x00
  
 拓司\n　「カンナ！」@
 \nカンナは動かない。\pすでに痙攣すらしていない。@
@@ -169,13 +156,11 @@ LOAD3 SCE243_012\x00\x1f\x04\x1a FOB_SCE_END
 \n動かなくなったカンナの身体をきつく抱きしめていると、頭のな\nかでなにかがショートしたのを感じた。@
 腹の底から塊がこみあがってくる。@
 悲鳴にも、雄叫びにも似た、熱い塊がぐんぐんとせり上がってく\nる。\pそうして拓司は腹の底から哄笑を放った。\w\z
-\x00\x00\x00 DIALOGUE_END H\x1a SEQ01
-\x1f\xbe\x02 FOB_SCE_END
-\x1f\xec\x02 OP_CMD  BACKGROUND_OP 4\x00 SEQ01
-\x1f\x80\x00 FOB_SCE_END
-\x1f\xaa\x00 OP_CMD 
-LOAD3 SCE243_013\x00\x1f>\x1c FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 \x80\x8b\x01\x0c\x00\x00\x00\x00"\x03U\x00\x00
+\x00\x00\x00 DIALOGUE_END H\x1a
+SEQ02 \xbe\x02 SEQ03 \xec\x02 OP_CMD  \x1e\x00\x00\x00\x00\r\x00\x00\x1e4\x00
+SEQ02 \x80\x00 SEQ03 \xaa\x00 OP_CMD 
+LOAD3 SCE243_013\x00\x1f>\x1c SCE_CMD 
+DIALOGUE_1 \x80\x8b\x01\x0c\x00\x00\x00\x00"\x03U\x00\x00
  
 拓司\n　「勝った！」@
 \n瞬間。@
@@ -187,13 +172,11 @@ LOAD3 SCE243_013\x00\x1f>\x1c FOB_SCE_END
 ただ、自分の身体が分子にまで砕けて世界と一体化していくのを\n感じながら、拓司は思った。@
 俺は勝った。@
 勝ったんだ、と。\w\z
-\x00\x00\x00 DIALOGUE_END \x82\x1c SEQ01
-\x1f\xbe\x02 FOB_SCE_END
-\x1f\xec\x02 OP_CMD  BACKGROUND_OP \xc9\x00 SEQ01
-\x1f\x80\x00 FOB_SCE_END
-\x1f\xaa\x00 OP_CMD 
-LOAD3 SCE243_014\x00\x1fD\x1e FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 \x84\x8b\x01\x0c\x00\x00\x00\x00"\x03}\x00\x00
+\x00\x00\x00 DIALOGUE_END \x82\x1c
+SEQ02 \xbe\x02 SEQ03 \xec\x02 OP_CMD  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc9\x00
+SEQ02 \x80\x00 SEQ03 \xaa\x00 OP_CMD 
+LOAD3 SCE243_014\x00\x1fD\x1e SCE_CMD 
+DIALOGUE_1 \x84\x8b\x01\x0c\x00\x00\x00\x00"\x03}\x00\x00
  
 気がつくと、拓司は世界になっていた。@
 \n世界に音はなく、ただ真っ白なひかりだけがあった。@
@@ -204,13 +187,11 @@ LOAD3 SCE243_014\x00\x1fD\x1e FOB_SCE_END
 神妙な顔で、うん、と頷いてみせる。@
 拓司もまた、うん、と頷き、そして２人はするすると手を伸ばし\nていった。@
 ２人の手が触れると、見えない壁は、さらさらと砂のように崩れ\nて消えた。\w\z
-\x00\x00\x00 DIALOGUE_END \x88\x1e SEQ01
-\x1f\xbe\x02 FOB_SCE_END
-\x1f\xec\x02 OP_CMD  BACKGROUND_OP \x04\x01 SEQ01
-\x1f \x00 FOB_SCE_END
-\x1fJ\x00 OP_CMD 
-LOAD3 SCE243_015\x00\x1f\xea  FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 \x88\x8b\x01\x0c\x00\x00\x00\x00"\x03\x97\x00\x00
+\x00\x00\x00 DIALOGUE_END \x88\x1e
+SEQ02 \xbe\x02 SEQ03 \xec\x02 OP_CMD  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x04\x01
+SEQ02  \x00 SEQ03 J\x00 OP_CMD 
+LOAD3 SCE243_015\x00\x1f\xea  SCE_CMD 
+DIALOGUE_1 \x88\x8b\x01\x0c\x00\x00\x00\x00"\x03\x97\x00\x00
  
 堰を切ったように、ひかりがあふれ出した。@
 ひかりに身をまかせながら、拓司はなにもかもがわかったように\n感じていた。@
@@ -221,11 +202,10 @@ LOAD3 SCE243_015\x00\x1f\xea  FOB_SCE_END
 それらを構成する最小の粒子まで、拓司は見ることができた。@
 見る、というよりも感じた。@
 感じる、というより拓司はそれらと同じものになった。\w\z
-\x00 DIALOGUE_END .! SEQ01
-\x1f\xbe\x02 FOB_SCE_END
-\x1f\xec\x02 OP_CMD 
-LOAD3 SCE243_016\x00\x1f\xc4# FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 \x8c\x8b\x01\x0c\x00\x00\x00\x00"\x03\xe0\x00\x00
+\x00 DIALOGUE_END .!
+SEQ02 \xbe\x02 SEQ03 \xec\x02 OP_CMD 
+LOAD3 SCE243_016\x00\x1f\xc4# SCE_CMD 
+DIALOGUE_1 \x8c\x8b\x01\x0c\x00\x00\x00\x00"\x03\xe0\x00\x00
  
 私とは万人であり、万人とは私だった。@
 無私な希望。\p愛の思い出の警鐘。\p生贄。\p抽象的な部類の形容語。@
@@ -243,11 +223,10 @@ LOAD3 SCE243_016\x00\x1f\xc4# FOB_SCE_END
 さまざまな言葉が浮かんでは消えていった。@
 そこに意味などなかった。@
 しかし、それらはそれらそのもので、意味を越えた真理の塊だっ\nた。\w\z
-\x00\x00\x00 DIALOGUE_END \x08$ SEQ01
-\x1f\xbe\x02 FOB_SCE_END
-\x1f\xec\x02 OP_CMD 
-LOAD3 SCE243_017\x00\x1f\xc2' FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 \x90\x8b\x01\x0c\x00\x00\x00\x00"\x03\x8c\x00\x00
+\x00\x00\x00 DIALOGUE_END \x08$
+SEQ02 \xbe\x02 SEQ03 \xec\x02 OP_CMD 
+LOAD3 SCE243_017\x00\x1f\xc2' SCE_CMD 
+DIALOGUE_1 \x90\x8b\x01\x0c\x00\x00\x00\x00"\x03\x8c\x00\x00
  
 カンナ\n　「……ゆきちゃん」@
 \nカンナがつぶやいた。@
@@ -261,16 +240,13 @@ LOAD3 SCE243_017\x00\x1f\xc2' FOB_SCE_END
 俺には何が与えられるのだろう？@
 拓司はそれを見つめた。@
 じっと視線をそそぎ、それがひかりの中に自らの位置を占めるま\nで目を離さなかった。\w\z
-\x00\x00\x00 DIALOGUE_END \x06( SEQ01
-\x1f\xbe\x02 FOB_SCE_END
-\x1f\xec\x02 OP_CMD 
-LOAD3 SCE243_018\x00\x1fp* FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 \x94\x8b\x01\x0c\x00\x00\x00\x00"\x03\x10\x00\x00
+\x00\x00\x00 DIALOGUE_END \x06(
+SEQ02 \xbe\x02 SEQ03 \xec\x02 OP_CMD 
+LOAD3 SCE243_018\x00\x1fp* SCE_CMD 
+DIALOGUE_1 \x94\x8b\x01\x0c\x00\x00\x00\x00"\x03\x10\x00\x00
  
 いつしか、胸の中の黒いかたまりは静かに燃え尽きていた。\w\z
-\x00\x00\x00 DIALOGUE_END \xb4* SEQ01
-\x1f\xbe\x02 FOB_SCE_END
-\x1f\xec\x02 OP_CMD \x1f\xbe\x02 FOB_SCE_END
-
+\x00\x00\x00 DIALOGUE_END \xb4*
+SEQ02 \xbe\x02 SEQ03 \xec\x02 SEQ05 \xbe\x02 SCE_CMD 
 LOAD3 TextClose OP02 :+ OP_CMD 
 END_FILE

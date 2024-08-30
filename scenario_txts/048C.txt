@@ -1,11 +1,10 @@
 START_FILE
-\x8b-\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00,'\x00\x03\t\x00\x00.\\Data\\Script\\Scenario\\048SubC.Fob OP01 \x06\x00 FOB_SCE_END
-LOAD2 start OP02 <\x00 OP_CMD  BACKGROUND_OP <\x00 SEQ01
-LOAD7 .\\Data\\Script\\TextFunc.fob OP01 r\x00 FOB_SCE_END
-
+\x8b-\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00,'\x00\x03\t\x00\x00.\\Data\\Script\\Scenario\\048SubC.Fob OP01 \x06\x00 SCE_CMD 
+LOAD2 start OP02 <\x00 OP_CMD  \x1e\x00\x00\x00\x00\r\x00\x00\x1e<\x00 SEQ01
+LOAD7 .\\Data\\Script\\TextFunc.fob OP01 r\x00 SCE_CMD 
 LOAD3 WaitTime OP03 \xa0\x00 OP_CMD 
-LOAD3 SCE048_020\x00\x1f\xc0\x00 FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 \xecZ BACKGROUND_OP3 \xce\x00\x00
+LOAD3 SCE048_020\x00\x1f\xc0\x00 SCE_CMD 
+DIALOGUE_1 \xecZ DIALOGUE_2 \xce\x00\x00
  
 御堂\n　「おい、柏木。\pお前なにやってんだよ……？」@
 \n/*■CG19　表示（ノンエフェクト）↑のCG表示にあわせられるとヨシ！*/\a7,-1,-1,0,\a0,18,1,0,/*▲BGM　Track11　再生*/\a2,-1,11,1,\a6,0,0,0,　全員が呆気にとられた顔で御堂を見やり、それから御堂の視線\nの先へと顔を移動させた。@
@@ -15,10 +14,10 @@ LOAD3 SCE048_020\x00\x1f\xc0\x00 FOB_SCE_END
 　柏木は御堂に付き従うことで自分の居場所をアピールしてきた\nような男で、男子学生からは『つまらない男』としか評価されて\nいなかったし、女子学生からは『御堂の取り巻きのひとり』とし\nか評価されていなかった。\pつまり、柏木という男には、なんの\n主体性もなかった。\p彼は完璧な脇役であり、別の主役なしでは舞\n台に存在していられない。\pそんな男だった。\
 
  DIALOGUE_END \x04\x01 SEQ01
-LOAD7 .\\Data\\Script\\TextFunc.Fob OP01 \\\x04 FOB_SCE_END
+LOAD7 .\\Data\\Script\\TextFunc.Fob OP01 \\\x04 SCE_CMD 
 LOAD2 TextOn OP01 \x8a\x04 OP_CMD 
-LOAD3 SCE048_021\x00\x1f\xa6\x04 FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 \xf0Z BACKGROUND_OP3 \x9c\x00\x00
+LOAD3 SCE048_021\x00\x1f\xa6\x04 SCE_CMD 
+DIALOGUE_1 \xf0Z DIALOGUE_2 \x9c\x00\x00
  
 　その柏木が、主役となっていた。@
 　トイレ中の注目を一身に浴びていた。@
@@ -33,11 +32,10 @@ LOAD3 SCE048_021\x00\x1f\xa6\x04 FOB_SCE_END
 \n　シャープペンはすでに半分以上、柏木の頭の中に埋まっていた@
 　シャープペンが突き刺さった耳の穴からは、どす黒い血がたら\n　たらと滝のようにあふれ出している。\
 
-\x00\x00\x00 DIALOGUE_END \xea\x04 SEQ01
-\x1f\\\x04 FOB_SCE_END
-\x1f\x8a\x04 OP_CMD 
-LOAD3 SCE048_022\x00\x1f\x94\x07 FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 \xf4Z BACKGROUND_OP3 J\x00\x00
+\x00\x00\x00 DIALOGUE_END \xea\x04
+SEQ02 \\\x04 SEQ03 \x8a\x04 OP_CMD 
+LOAD3 SCE048_022\x00\x1f\x94\x07 SCE_CMD 
+DIALOGUE_1 \xf4Z DIALOGUE_2 J\x00\x00
  
 柏木\n　「おれ的にすげえ、つらい！」@
 \n　柏木の眼から、ほろほろと涙があふれ出した。@
@@ -45,11 +43,10 @@ LOAD3 SCE048_022\x00\x1f\x94\x07 FOB_SCE_END
 \n柏木\n　「おれは、おれは、おれれ、おれれれ、は、は、ははは、はお\n　　れ」@
 \n　柏木はいいながら、シャープペンのヘッドをカチカチカチカチ\n　とノックした。\
 
-\x00\x00\x00 DIALOGUE_END \xd8\x07 SEQ01
-\x1f\\\x04 FOB_SCE_END
-\x1f\x8a\x04 OP_CMD 
-LOAD3 SCE048_023\x00\x1f:\t FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 \xf8Z BACKGROUND_OP3 ]\x00\x00
+\x00\x00\x00 DIALOGUE_END \xd8\x07
+SEQ02 \\\x04 SEQ03 \x8a\x04 OP_CMD 
+LOAD3 SCE048_023\x00\x1f:\t SCE_CMD 
+DIALOGUE_1 \xf8Z DIALOGUE_2 ]\x00\x00
  
 柏木\n　「おれれれれれれれれれれれ」@
 \n　カチカチカチカチカチカチカチ。@
@@ -57,11 +54,10 @@ LOAD3 SCE048_023\x00\x1f:\t FOB_SCE_END
 　それがシャープペンの芯だと理解するのには、しばらくの時間\n　がかかった。@
 \n御堂\n　「芯だよ……」\
 
-\x00 DIALOGUE_END ~\t SEQ01
-\x1f\\\x04 FOB_SCE_END
-\x1f\x8a\x04 OP_CMD 
-LOAD3 SCE048_024\x00\x1f,\x0b FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 \xfcZ BACKGROUND_OP3 \xa0\x00\x00
+\x00 DIALOGUE_END ~\t
+SEQ02 \\\x04 SEQ03 \x8a\x04 OP_CMD 
+LOAD3 SCE048_024\x00\x1f,\x0b SCE_CMD 
+DIALOGUE_1 \xfcZ DIALOGUE_2 \xa0\x00\x00
  
 \n　御堂の声は、間抜けな冗談のように響いた。@
 　芯だよ。@
@@ -74,11 +70,10 @@ LOAD3 SCE048_024\x00\x1f,\x0b FOB_SCE_END
 　それでも柏木は笑っていた。\pまるで、いきなり襲ってきた「死\n　」が彼の理解を超えすぎていたせいで、どう痛みを表現してい\n　いのかがわからないような感じだった。@
 　おれたちは呆然とそんな柏木の泣き笑いを見守っていたが、や\n　がて\
 
-\x00 DIALOGUE_END p\x0b SEQ01
-\x1f\\\x04 FOB_SCE_END
-\x1f\x8a\x04 OP_CMD 
-LOAD3 SCE048_025\x00\x1f*\x0e FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 \x00[ BACKGROUND_OP3 \xb7\x00\x00
+\x00 DIALOGUE_END p\x0b
+SEQ02 \\\x04 SEQ03 \x8a\x04 OP_CMD 
+LOAD3 SCE048_025\x00\x1f*\x0e SCE_CMD 
+DIALOGUE_1 \x00[ DIALOGUE_2 \xb7\x00\x00
  
 柏木\n　「いてえ」@
 \n　柏木がぽつりとつぶやいた。@
@@ -92,11 +87,10 @@ LOAD3 SCE048_025\x00\x1f*\x0e FOB_SCE_END
 　御堂と取り巻きたちは、脱兎のごとくトイレから駆けだしてい\n　った。@
 　あとには拓司となたね、そして柏木の死体だけが残された。\
 
-\x00\x00 DIALOGUE_END n\x0e SEQ01
-\x1f\\\x04 FOB_SCE_END
-\x1f\x8a\x04 OP_CMD 
-LOAD3 SCE048_026\x00\x1f\x84\x11 FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 \x04[ BACKGROUND_OP3 \x9c\x00\x00
+\x00\x00 DIALOGUE_END n\x0e
+SEQ02 \\\x04 SEQ03 \x8a\x04 OP_CMD 
+LOAD3 SCE048_026\x00\x1f\x84\x11 SCE_CMD 
+DIALOGUE_1 \x04[ DIALOGUE_2 \x9c\x00\x00
  
 なたね\n　「……始まったのね」@
 拓司\n　「え？」@
@@ -107,11 +101,10 @@ LOAD3 SCE048_026\x00\x1f\x84\x11 FOB_SCE_END
 /*■CG20　表示（クロスフェード）*/\a7,-2,-2,0,\a0,19,2,0,\a6,-2,0,0,\nなたねはチラシがいっぱいに詰まった紙手提げ袋から、替えの制\n服を取り出した。@
 拓司は慌てて背を向けた。\pいままでさんざん陵辱現場を見ておい\nていまさらという気もしたが、そうするのが礼儀のような気がし\nた。\
 
-\x00 DIALOGUE_END \xc8\x11 SEQ01
-\x1f\\\x04 FOB_SCE_END
-\x1f\x8a\x04 OP_CMD 
-LOAD3 SCE048_027\x00\x1fr\x14 FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 \x08[ BACKGROUND_OP3 w\x00\x00
+\x00 DIALOGUE_END \xc8\x11
+SEQ02 \\\x04 SEQ03 \x8a\x04 OP_CMD 
+LOAD3 SCE048_027\x00\x1fr\x14 SCE_CMD 
+DIALOGUE_1 \x08[ DIALOGUE_2 w\x00\x00
  
 拓司\n　「だ、大丈夫かい？」@
 なたね\n　「……。始まったのね」@
@@ -121,22 +114,20 @@ LOAD3 SCE048_027\x00\x1fr\x14 FOB_SCE_END
 \n　拓司はオウム返しに尋ねた。\pいったい何をいっているのか、ま\n　ったく理解できない。@
 　チカセンコウガタシンリャクセイブツヘイキ、となたねは厳し\n　く言い直した。\p正確にいうのといわないのとでは、そこに大き\n　な違いがあるとでもいいたそうな口調だ。\
 
-\x00\x00 DIALOGUE_END \xb6\x14 SEQ01
-\x1f\\\x04 FOB_SCE_END
-\x1f\x8a\x04 OP_CMD 
-LOAD3 SCE048_028\x00\x1f\xcc\x16 FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 \x0c[ BACKGROUND_OP3 \xc5\x00\x00
+\x00\x00 DIALOGUE_END \xb6\x14
+SEQ02 \\\x04 SEQ03 \x8a\x04 OP_CMD 
+LOAD3 SCE048_028\x00\x1f\xcc\x16 SCE_CMD 
+DIALOGUE_1 \x0c[ DIALOGUE_2 \xc5\x00\x00
  
 なたね\n　「４６億年前、やつらは地球の地下にいくつもの『シード』を埋\n　　め込んだの。\pやがて人類が宇宙に進出するときがきて……実\n　　際、いまがそのときなんだけれど……そのときに人類が『適\n　　格』でないと判断されたら、『シード』は目覚め、人類完殺\n　　の兵器として稼動し始めるの。\pこれは聖書とか様々な文献に\n　　終末とか悪魔とかいう形で明記されている厳然たる事実なの」\n　　@
 拓司\n　「……」@
 \n　鏡に映って見える。\pなたねは太股や髪の毛にこびりついた精液\n　を、ハンカチで静かに拭っている。@
 \nなたね\n　「これは明白に、第四種生物兵器『ビッグ・エンケリュス』の\n　　攻撃だわ。\p『ビッグ・エンケリュス』は地下から波動を送る\n　　の。\p自殺波動。この波動にシンクロしてしまった人間は、自\n　　殺こそが幸福へ至る道だと信じ込んで……彼のように自殺し\n　　てしまうの」\
 
-\x00\x00\x00 DIALOGUE_END \x10\x17 SEQ01
-\x1f\\\x04 FOB_SCE_END
-\x1f\x8a\x04 OP_CMD 
-LOAD3 SCE048_029\x00\x1f^\x1a FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 \x10[ BACKGROUND_OP3 \xbb\x00\x00
+\x00\x00\x00 DIALOGUE_END \x10\x17
+SEQ02 \\\x04 SEQ03 \x8a\x04 OP_CMD 
+LOAD3 SCE048_029\x00\x1f^\x1a SCE_CMD 
+DIALOGUE_1 \x10[ DIALOGUE_2 \xbb\x00\x00
  
 拓司\n　「……自殺波動？」@
 なたね\n　「そう！　波動よ！　エンケリュスムサベツエンカクジサツハ\n　　ドウコウゲキ！」@
@@ -144,11 +135,10 @@ LOAD3 SCE048_029\x00\x1f^\x1a FOB_SCE_END
 \nなたね\n　「エンケリュス……エンケリュス……エンケリュス……わから\n　　ないだろうなあ！\p　ウナギって意味なの！\p　ギリシア語でウ\n　　ナギ！\p　わかんないでしょ！\p　ウナギみたいな形なの！@
 　　あのね、私、円盤のなかで立体映像を見せられたの！\p　ぬら\n　　ぬらとしていて、黒くて、とてもいやらしくて汚らしい形を\n　　しているの！\p　全長２０キロ！\p　質量は自由に変化させられる\n　　からよくわからないけれど、地中を自由に移動して人類を殺\n　　す究極の侵略兵器で、あなたにはわからないけど私にはわか\n　　るのよ！　なぜなら……」\
 
-\x00\x00\x00 DIALOGUE_END \xa2\x1a SEQ01
-\x1f\\\x04 FOB_SCE_END
-\x1f\x8a\x04 OP_CMD 
-LOAD3 SCE048_030\x00\x1f\xc8\x1d FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 \x14[ BACKGROUND_OP3 D\x00\x00
+\x00\x00\x00 DIALOGUE_END \xa2\x1a
+SEQ02 \\\x04 SEQ03 \x8a\x04 OP_CMD 
+LOAD3 SCE048_030\x00\x1f\xc8\x1d SCE_CMD 
+DIALOGUE_1 \x14[ DIALOGUE_2 D\x00\x00
  
 拓司\n　「雲居さん！」@
 \n　拓司はなたねを制した。\p聞いていると自分までおかしくなって\n　しまいそうだ。@
@@ -156,11 +146,10 @@ LOAD3 SCE048_030\x00\x1f\xc8\x1d FOB_SCE_END
 \nなたね\n　「……なぜなら、それは私のなかに入ってきたから」@
 拓司\n　「……」\
 
-\x00 DIALOGUE_END \x0c\x1e SEQ01
-\x1f\\\x04 FOB_SCE_END
-\x1f\x8a\x04 OP_CMD 
-LOAD3 SCE048_031\x00\x1fV\x1f FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 \x18[ BACKGROUND_OP3 \xc5\x00\x00
+\x00 DIALOGUE_END \x0c\x1e
+SEQ02 \\\x04 SEQ03 \x8a\x04 OP_CMD 
+LOAD3 SCE048_031\x00\x1fV\x1f SCE_CMD 
+DIALOGUE_1 \x18[ DIALOGUE_2 \xc5\x00\x00
  
 なたね\n　「エンケリュスは私の身体の中に、たくさんいやらしい液を流\n　　し込んだの。\p気持ち悪かった。\p私をレイプしたのは、正確に\n　　言うと宇宙人じゃなくてエンケリュス。\pいま、わかったこと\n　　だけど。\pエンケリュスの液は、内臓部分から徐々に私をおか\n　　しくしていくの。\pいやらしいことしか考えられなくなって、\n　　勉強とか、できなくなる。\pそれに対抗するために、私は御堂\n　　くんたちに精液をかけてもらっていたの」@
 拓司\n　「もういい！」@
@@ -168,11 +157,10 @@ LOAD3 SCE048_031\x00\x1fV\x1f FOB_SCE_END
 　なたねの妄想に、柏木の自殺がピッタリと当てはまったのかも\n　しれない。\pいずれにせよ、そこに意味などないのだ@
 　－－拓司はそう思った。\
 
-\x00\x00\x00 DIALOGUE_END \x9a\x1f SEQ01
-\x1f\\\x04 FOB_SCE_END
-\x1f\x8a\x04 OP_CMD 
-LOAD3 SCE048_032\x00\x1f\xe8" FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 \x1c[ BACKGROUND_OP3 [\x00\x00
+\x00\x00\x00 DIALOGUE_END \x9a\x1f
+SEQ02 \\\x04 SEQ03 \x8a\x04 OP_CMD 
+LOAD3 SCE048_032\x00\x1f\xe8" SCE_CMD 
+DIALOGUE_1 \x1c[ DIALOGUE_2 [\x00\x00
  
 拓司\n　「そんなことより、早く柏木のことを、先生なり警察なりに報\n　　せないと！」@
 なたね\n　「……そうね」@
@@ -181,21 +169,20 @@ LOAD3 SCE048_032\x00\x1f\xe8" FOB_SCE_END
 なたね\n　「でも、ちょっと待って\p。髪の毛、直さないと」@
 \n　拓司の脇を通り抜け、鏡に向かって髪の毛を整え始める。\
 
-\x00 DIALOGUE_END ,# SEQ01
-\x1f\\\x04 FOB_SCE_END
-\x1f\x8a\x04 OP_CMD  BACKGROUND_OP \xc8\x00 SEQ01
-LOAD6 .\\Data\\Script\\Bg.Fob OP03 \xec$ FOB_SCE_END
+\x00 DIALOGUE_END ,#
+SEQ02 \\\x04 SEQ03 \x8a\x04 OP_CMD  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00 SEQ01
+
+LOAD6 .\\Data\\Script\\Bg.Fob OP03 \xec$ SCE_CMD 
 LOAD4 BgAutoFadeIn OP03 \x16% OP_CMD 
-LOAD3 SCE048_033\x00\x1f:% FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2  [ BACKGROUND_OP3 A\x00\x00
+LOAD3 SCE048_033\x00\x1f:% SCE_CMD 
+DIALOGUE_1  [ DIALOGUE_2 A\x00\x00
  
 なたね\n　「あーあ、こんなにばさばさになっちゃった。\p困ったなあ。い\n　　やだなあ」@
 \n　拓司は呆然と、それを見守るしかなかった。\pなたねの動きはゆ\n　っくりしていて、見ているとなにか時間が徐々に停滞してゆく\n　ような、そんな不安な気持ちになった。\
 
-\x00 DIALOGUE_END ~% SEQ01
-\x1f\\\x04 FOB_SCE_END
-\x1f\x8a\x04 OP_CMD LOAD6 .\\Data\\Script\\Bgm.Fob OP02 \xbc& FOB_SCE_END
-LOAD2 StopCD OP01 \xe6& OP_CMD \x1f\\\x04 FOB_SCE_END
-
+\x00 DIALOGUE_END ~%
+SEQ02 \\\x04 SEQ03 \x8a\x04 OP_CMD 
+LOAD6 .\\Data\\Script\\Bgm.Fob OP02 \xbc& SCE_CMD 
+LOAD2 StopCD OP01 \xe6& SEQ05 \\\x04 SCE_CMD 
 LOAD3 TextClose OP02 \x0e' OP_CMD 
 END_FILE

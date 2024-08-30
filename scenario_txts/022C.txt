@@ -1,8 +1,9 @@
 START_FILE
-.\\\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00FM\x00LOAD6 .\\Data\\Script\\Bgm.Fob OP02 \x06\x00 FOB_SCE_END
+.\\\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00FM\x00
+LOAD6 .\\Data\\Script\\Bgm.Fob OP02 \x06\x00 SCE_CMD 
 LOAD2 StopCD OP01 0\x00 OP_CMD 
-LOAD3 SCE022_001\x00\x1fL\x00 FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 \x002 BACKGROUND_OP3 \x96\x00\x00
+LOAD3 SCE022_001\x00\x1fL\x00 SCE_CMD 
+DIALOGUE_1 \x002 DIALOGUE_2 \x96\x00\x00
  
 拓司は目を閉じて、妄想の糸でひとつの世界を編み始めた。@
 いつ？\p　－－親父とお袋が旅行中のある日。@
@@ -19,14 +20,15 @@ LOAD3 SCE022_001\x00\x1fL\x00 FOB_SCE_END
 両親が留守なのだから、本当はベッドで堂々と繋がることができ\nるのだ。しかし、敢えてこんな場所を選んだ。それは……\
 
 \x00\x00\x00 DIALOGUE_END \x90\x00 SEQ01
-LOAD7 .\\Data\\Script\\TextFunc.Fob OP01 \x08\x03 FOB_SCE_END
-LOAD2 TextOn OP01 6\x03 OP_CMD  BACKGROUND_OP \x05\x01 SEQ01
-\x1f\x06\x00 FOB_SCE_END
-LOAD2 PlayCD OP01 x\x03 OP_CMD  BACKGROUND_OP M\x00 SEQ01
-LOAD6 .\\Data\\Script\\Bg.Fob OP03 \xae\x03 FOB_SCE_END
+LOAD7 .\\Data\\Script\\TextFunc.Fob OP01 \x08\x03 SCE_CMD 
+LOAD2 TextOn OP01 6\x03 OP_CMD  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x05\x01
+SEQ02 \x06\x00 SCE_CMD 
+LOAD2 PlayCD OP01 x\x03 OP_CMD  \x1e\x00\x00\x00\x00\r\x00\x00\x1eM\x00 SEQ01
+
+LOAD6 .\\Data\\Script\\Bg.Fob OP03 \xae\x03 SCE_CMD 
 LOAD4 BgAutoFadeIn OP03 \xd8\x03 OP_CMD 
-LOAD3 SCE022_002\x00\x1f\xfc\x03 FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 \x042 BACKGROUND_OP3 Q\x00\x00
+LOAD3 SCE022_002\x00\x1f\xfc\x03 SCE_CMD 
+DIALOGUE_1 \x042 DIALOGUE_2 Q\x00\x00
  
 早桃\n　「うふふ、おにいちゃん、エッチだよね。こういう場所のほう\n　　が萌えるんだ？」@
 拓司\n　「ああ」@
@@ -35,13 +37,11 @@ LOAD3 SCE022_002\x00\x1f\xfc\x03 FOB_SCE_END
 \n早桃の顔が、さっと青ざめる。@
 拓司の背後に、別の男が立っているのに気づいたのだ。\
 
-\x00 DIALOGUE_END @\x04 SEQ01
-\x1f\x08\x03 FOB_SCE_END
-\x1f6\x03 OP_CMD  BACKGROUND_OP \x05\x01 SEQ01
-\x1f\x06\x00 FOB_SCE_END
-\x1fx\x03 OP_CMD 
-LOAD3 SCE022_003\x00\x1f\xf2\x05 FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 \x082 BACKGROUND_OP3 b\x00\x00
+\x00 DIALOGUE_END @\x04
+SEQ02 \x08\x03 SEQ03 6\x03 OP_CMD  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x05\x01
+SEQ02 \x06\x00 SEQ03 x\x03 OP_CMD 
+LOAD3 SCE022_003\x00\x1f\xf2\x05 SCE_CMD 
+DIALOGUE_1 \x082 DIALOGUE_2 b\x00\x00
  
 早桃\n　「！」@
 拓司\n　「さあ、遠慮しないで入れよ」@
@@ -51,11 +51,10 @@ LOAD3 SCE022_003\x00\x1f\xf2\x05 FOB_SCE_END
 平野はニヤニヤ笑いを満面に張り付けて、トイレの中に一歩踏み\n込んだ。@
 便座に腰掛けたまま、早桃が身を固くする。\
 
-\x00\x00\x00 DIALOGUE_END 6\x06 SEQ01
-\x1f\x08\x03 FOB_SCE_END
-\x1f6\x03 OP_CMD 
-LOAD3 SCE022_004\x00\x1f\xf8\x07 FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 \x0c2 BACKGROUND_OP3 `\x00\x00
+\x00\x00\x00 DIALOGUE_END 6\x06
+SEQ02 \x08\x03 SEQ03 6\x03 OP_CMD 
+LOAD3 SCE022_004\x00\x1f\xf8\x07 SCE_CMD 
+DIALOGUE_1 \x0c2 DIALOGUE_2 `\x00\x00
  
 平野\n　「へへ……こんにちわ～っす、早桃ちゃん♪」@
 早桃\n　「おにいちゃん……どういうこと？」@
@@ -67,11 +66,10 @@ LOAD3 SCE022_004\x00\x1f\xf8\x07 FOB_SCE_END
 　　だったら協力してくれよ。@
 　　こづかいがいるんだ」\
 
-\x00 DIALOGUE_END <\x08 SEQ01
-\x1f\x08\x03 FOB_SCE_END
-\x1f6\x03 OP_CMD 
-LOAD3 SCE022_005\x00\x1f\xf6\t FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 \x102 BACKGROUND_OP3 d\x00\x00
+\x00 DIALOGUE_END <\x08
+SEQ02 \x08\x03 SEQ03 6\x03 OP_CMD 
+LOAD3 SCE022_005\x00\x1f\xf6\t SCE_CMD 
+DIALOGUE_1 \x102 DIALOGUE_2 d\x00\x00
  
 早桃\n　「……そんな！」@
 拓司\n　「そんなもこんなもないだろ？@
@@ -82,11 +80,10 @@ LOAD3 SCE022_005\x00\x1f\xf6\t FOB_SCE_END
 　　もう一生お前とは口もきかないけど、悪く思わないでくれよ\n　　な」@
 早桃\n　「おにいちゃん……\p早桃のこと愛してるっていってくれたの\n　　に……\p両思いだって……」\
 
-\x00 DIALOGUE_END :\n SEQ01
-\x1f\x08\x03 FOB_SCE_END
-\x1f6\x03 OP_CMD 
-LOAD3 SCE022_006\x00\x1f\x04\x0c FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 \x142 BACKGROUND_OP3 7\x00\x00
+\x00 DIALOGUE_END :\n
+SEQ02 \x08\x03 SEQ03 6\x03 OP_CMD 
+LOAD3 SCE022_006\x00\x1f\x04\x0c SCE_CMD 
+DIALOGUE_1 \x142 DIALOGUE_2 7\x00\x00
  
 早桃の大きな目が潤んでいる。@
 あと一押しだ。拓司は慎重に言葉を選んだ。@
@@ -94,11 +91,10 @@ LOAD3 SCE022_006\x00\x1f\x04\x0c FOB_SCE_END
 より深く義妹を傷つける言葉を。@
 その傷の深さを目の当たりにすることによって、自らをも傷つけ\nるような言葉を。\
 
-\x00\x00\x00 DIALOGUE_END H\x0c SEQ01
-\x1f\x08\x03 FOB_SCE_END
-\x1f6\x03 OP_CMD 
-LOAD3 SCE022_007\x00\x1f^\r FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 \x182 BACKGROUND_OP3 \xb0\x00\x00
+\x00\x00\x00 DIALOGUE_END H\x0c
+SEQ02 \x08\x03 SEQ03 6\x03 OP_CMD 
+LOAD3 SCE022_007\x00\x1f^\r SCE_CMD 
+DIALOGUE_1 \x182 DIALOGUE_2 \xb0\x00\x00
  
 拓司\n　「両思い？@
 　　義兄妹でそんなのあるはずないだろ？@
@@ -114,11 +110,10 @@ LOAD3 SCE022_007\x00\x1f^\r FOB_SCE_END
 　　だから愛とか語って理論武装してるんだろ？」@
 早桃\n　「違うよ！　早桃は本当におにいちゃんのこと……」\
 
-\x00 DIALOGUE_END \xa2\r SEQ01
-\x1f\x08\x03 FOB_SCE_END
-\x1f6\x03 OP_CMD 
-LOAD3 SCE022_008\x00\x1f\x9c\x10 FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 \x1c2 BACKGROUND_OP3 _\x00\x00
+\x00 DIALOGUE_END \xa2\r
+SEQ02 \x08\x03 SEQ03 6\x03 OP_CMD 
+LOAD3 SCE022_008\x00\x1f\x9c\x10 SCE_CMD 
+DIALOGUE_1 \x1c2 DIALOGUE_2 _\x00\x00
  
 拓司\n　「じゃあここで証明してくれよ。@
 　　本当に愛してるんなら、おれの言うことは聞けるはずだ\n　　ろ？」\n\p早桃\n　「……」@
@@ -129,11 +124,10 @@ LOAD3 SCE022_008\x00\x1f\x9c\x10 FOB_SCE_END
 早桃\n　「……」@
 \nうつむいて震える早桃を見下ろして、平野は荒い息でいった。\
 
-\x00 DIALOGUE_END \xe0\x10 SEQ01
-\x1f\x08\x03 FOB_SCE_END
-\x1f6\x03 OP_CMD 
-LOAD3 SCE022_009\x00\x1f\x96\x12 FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2  2 BACKGROUND_OP3 R\x00\x00
+\x00 DIALOGUE_END \xe0\x10
+SEQ02 \x08\x03 SEQ03 6\x03 OP_CMD 
+LOAD3 SCE022_009\x00\x1f\x96\x12 SCE_CMD 
+DIALOGUE_1  2 DIALOGUE_2 R\x00\x00
  
 平野\n　「早桃ちゃ～ん？@
 　　いまから僕のこと、『おにいちゃん』って呼んでくれるか\n　　な？」@
@@ -144,13 +138,12 @@ LOAD3 SCE022_009\x00\x1f\x96\x12 FOB_SCE_END
 \n懇願するように見上げる義妹。@
 拓司はそれを無視して、平野にいった。\
 
-\x00 DIALOGUE_END \xda\x12 SEQ01
-\x1f\x08\x03 FOB_SCE_END
-\x1f6\x03 OP_CMD  BACKGROUND_OP \xc8\x00 SEQ01
-\x1f\xae\x03 FOB_SCE_END
+\x00 DIALOGUE_END \xda\x12
+SEQ02 \x08\x03 SEQ03 6\x03 OP_CMD  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00
+SEQ02 \xae\x03 SCE_CMD 
 LOAD2 BgOn OP03 \x82\x14 OP_CMD 
-LOAD3 SCE022_010\x00\x1f\x9e\x14 FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 $2 BACKGROUND_OP3 r\x00\x00
+LOAD3 SCE022_010\x00\x1f\x9e\x14 SCE_CMD 
+DIALOGUE_1 $2 DIALOGUE_2 r\x00\x00
  
 拓司\n　「ホラ、さっさとやれよ。お前、女は初めてなんだろ？　@
 　　好きにしていいんだぞ？」\n平野\n　「いやあ、虎菱くんが見てる前じゃ、ちょっと恥ずいなあ」@
@@ -160,11 +153,10 @@ LOAD3 SCE022_010\x00\x1f\x9e\x14 FOB_SCE_END
 白いブリーフの前を大きく押し上げたペ○スの先端は、すでにカ\nウパー液で湿っている。@
 早桃は目をそらして、うつむいたまま動かない。\
 
-\x00 DIALOGUE_END \xe2\x14 SEQ01
-\x1f\x08\x03 FOB_SCE_END
-\x1f6\x03 OP_CMD 
-LOAD3 SCE022_011\x00\x1f\xe4\x16 FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 (2 BACKGROUND_OP3 e\x00\x00
+\x00 DIALOGUE_END \xe2\x14
+SEQ02 \x08\x03 SEQ03 6\x03 OP_CMD 
+LOAD3 SCE022_011\x00\x1f\xe4\x16 SCE_CMD 
+DIALOGUE_1 (2 DIALOGUE_2 e\x00\x00
  
 平野\n　「さあ、早桃ちゃん。@
 　　おにいちゃんのここ、触ってみたいだろ？」@
@@ -176,11 +168,10 @@ LOAD3 SCE022_011\x00\x1f\xe4\x16 FOB_SCE_END
 しかし平野はお構いなしに、早桃の手を自分のふくらみにあてが\nった。@
 そのまま手を上下させ、強制的に撫でさすらせる。\
 
-\x00\x00\x00 DIALOGUE_END (\x17 SEQ01
-\x1f\x08\x03 FOB_SCE_END
-\x1f6\x03 OP_CMD 
-LOAD3 SCE022_012\x00\x1f\xf6\x18 FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 ,2 BACKGROUND_OP3 H\x00\x00
+\x00\x00\x00 DIALOGUE_END (\x17
+SEQ02 \x08\x03 SEQ03 6\x03 OP_CMD 
+LOAD3 SCE022_012\x00\x1f\xf6\x18 SCE_CMD 
+DIALOGUE_1 ,2 DIALOGUE_2 H\x00\x00
  
 平野\n　「ど……どうだい？@
 　　おにいちゃんのおち○ちんを触った感想は？」@
@@ -191,11 +182,10 @@ LOAD3 SCE022_012\x00\x1f\xf6\x18 FOB_SCE_END
 平野\n　「はあ、はあ……ホラ、早く言ってよ？」@
 早桃\n　「……大きい……です」\
 
-\x00\x00\x00 DIALOGUE_END :\x19 SEQ01
-\x1f\x08\x03 FOB_SCE_END
-\x1f6\x03 OP_CMD 
-LOAD3 SCE022_013\x00\x1f\x94\x1a FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 02 BACKGROUND_OP3 w\x00\x00
+\x00\x00\x00 DIALOGUE_END :\x19
+SEQ02 \x08\x03 SEQ03 6\x03 OP_CMD 
+LOAD3 SCE022_013\x00\x1f\x94\x1a SCE_CMD 
+DIALOGUE_1 02 DIALOGUE_2 w\x00\x00
  
 その声を確認してから、平野は早桃の手首を解放した。@
 続けろ、と目で合図を送り、早桃が自分の意志で撫でさするよう\nにし向ける。@
@@ -207,11 +197,10 @@ LOAD3 SCE022_013\x00\x1f\x94\x1a FOB_SCE_END
 早桃\n　「……おにいちゃんの……\pおち○……ちん……@
 　　大きい……\pです……」\
 
-\x00 DIALOGUE_END \xd8\x1a SEQ01
-\x1f\x08\x03 FOB_SCE_END
-\x1f6\x03 OP_CMD 
-LOAD3 SCE022_014\x00\x1f\xee\x1c FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 42 BACKGROUND_OP3 n\x00\x00
+\x00 DIALOGUE_END \xd8\x1a
+SEQ02 \x08\x03 SEQ03 6\x03 OP_CMD 
+LOAD3 SCE022_014\x00\x1f\xee\x1c SCE_CMD 
+DIALOGUE_1 42 DIALOGUE_2 n\x00\x00
  
 平野\n　「よ、よくいえたね、早桃！@
 　　ご褒美だよ！」@
@@ -223,11 +212,10 @@ LOAD3 SCE022_014\x00\x1f\xee\x1c FOB_SCE_END
 眉をひそめて、固く目を閉じ、顔面への陵辱に耐えている……。@
 \n早桃\n　「う……ううっ」\
 
-\x00 DIALOGUE_END 2\x1d SEQ01
-\x1f\x08\x03 FOB_SCE_END
-\x1f6\x03 OP_CMD 
-LOAD3 SCE022_015\x00\x1f$\x1f FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 82 BACKGROUND_OP3 z\x00\x00
+\x00 DIALOGUE_END 2\x1d
+SEQ02 \x08\x03 SEQ03 6\x03 OP_CMD 
+LOAD3 SCE022_015\x00\x1f$\x1f SCE_CMD 
+DIALOGUE_1 82 DIALOGUE_2 z\x00\x00
  
 平野\n　「ゆ、夢みたいだ。@
 　　こんなかわいい子と……\pつるぺたのぷにっ娘と……@
@@ -241,11 +229,10 @@ LOAD3 SCE022_015\x00\x1f$\x1f FOB_SCE_END
 早桃\n　「はい……\pはいぃ……\pおにいちゃんのこと……@
 　　うぷっ……\pす、好き……\pですぅ……」\
 
-\x00 DIALOGUE_END h\x1f SEQ01
-\x1f\x08\x03 FOB_SCE_END
-\x1f6\x03 OP_CMD 
-LOAD3 SCE022_016\x00\x1f\x8a! FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 <2 BACKGROUND_OP3 \x96\x00\x00
+\x00 DIALOGUE_END h\x1f
+SEQ02 \x08\x03 SEQ03 6\x03 OP_CMD 
+LOAD3 SCE022_016\x00\x1f\x8a! SCE_CMD 
+DIALOGUE_1 <2 DIALOGUE_2 \x96\x00\x00
  
 目の前で、オタクに犯される義妹。@
 たった３万で、義兄への純愛を踏みにじられる早桃。@
@@ -259,11 +246,10 @@ LOAD3 SCE022_016\x00\x1f\x8a! FOB_SCE_END
 抵抗することで、より傷つくことを理解したのだろう。@
 無抵抗を貫くことで、この淫猥な行為から自分の意志を消し去ろ\nうとしているのだ。\
 
-\x00 DIALOGUE_END \xce! SEQ01
-\x1f\x08\x03 FOB_SCE_END
-\x1f6\x03 OP_CMD 
-LOAD3 SCE022_017\x00\x1f`$ FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 @2 BACKGROUND_OP3 \x7f\x00\x00
+\x00 DIALOGUE_END \xce!
+SEQ02 \x08\x03 SEQ03 6\x03 OP_CMD 
+LOAD3 SCE022_017\x00\x1f`$ SCE_CMD 
+DIALOGUE_1 @2 DIALOGUE_2 \x7f\x00\x00
  
 不可避の事態が降りかかったのだと……@
 自分は被害者であって加担者ではなかったと……@
@@ -275,11 +261,10 @@ LOAD3 SCE022_017\x00\x1f`$ FOB_SCE_END
 　　おま○こに入れられてそのおにいちゃんの赤ちゃんを孕むか、\n　　\pそれともお尻に入れられて妊娠だけは避けるか？@
 　　さ、早桃が自分でお願いしてごらん？」\
 
-\x00\x00\x00 DIALOGUE_END \xa4$ SEQ01
-\x1f\x08\x03 FOB_SCE_END
-\x1f6\x03 OP_CMD 
-LOAD3 SCE022_018\x00\x1f\xda& FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 D2 BACKGROUND_OP3 b\x00\x00
+\x00\x00\x00 DIALOGUE_END \xa4$
+SEQ02 \x08\x03 SEQ03 6\x03 OP_CMD 
+LOAD3 SCE022_018\x00\x1f\xda& SCE_CMD 
+DIALOGUE_1 D2 DIALOGUE_2 b\x00\x00
  
 早桃\n　「……」@
 平野\n　「はあ、はあ……どうした、早桃ぉ？」@
@@ -290,11 +275,10 @@ LOAD3 SCE022_018\x00\x1f\xda& FOB_SCE_END
 平野\n　「そうか、そうか。@
 　　それじゃお望み通り、おま○こにぶち込んで、おにいちゃん\n　　の精子を早桃の卵子に受精させてあげるよ」\
 
-\x00\x00\x00 DIALOGUE_END \x1e' SEQ01
-\x1f\x08\x03 FOB_SCE_END
-\x1f6\x03 OP_CMD 
-LOAD3 SCE022_019\x00\x1f\xe0( FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 H2 BACKGROUND_OP3 g\x00\x00
+\x00\x00\x00 DIALOGUE_END \x1e'
+SEQ02 \x08\x03 SEQ03 6\x03 OP_CMD 
+LOAD3 SCE022_019\x00\x1f\xe0( SCE_CMD 
+DIALOGUE_1 H2 DIALOGUE_2 g\x00\x00
  
 早桃\n　「だ、駄目っ！　\p今日は駄目な日なのっ！@
 　　本当に赤ちゃんできちゃう日なのっ！」@
@@ -308,11 +292,10 @@ LOAD3 SCE022_019\x00\x1f\xe0( FOB_SCE_END
 早桃\n　「お尻に出してください！@
 　　おにいちゃんの精液、お尻の中に射精してくださいっ！」\
 
-\x00\x00\x00 DIALOGUE_END $) SEQ01
-\x1f\x08\x03 FOB_SCE_END
-\x1f6\x03 OP_CMD 
-LOAD3 SCE022_020\x00\x1f\xfa* FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 L2 BACKGROUND_OP3 \x80\x00\x00
+\x00\x00\x00 DIALOGUE_END $)
+SEQ02 \x08\x03 SEQ03 6\x03 OP_CMD 
+LOAD3 SCE022_020\x00\x1f\xfa* SCE_CMD 
+DIALOGUE_1 L2 DIALOGUE_2 \x80\x00\x00
  
 凍り付いたようだった早桃の表情が、ぐしゃっと崩れた。@
 ぽろぽろと大粒の涙が頬を伝う。@
@@ -324,11 +307,10 @@ LOAD3 SCE022_020\x00\x1f\xfa* FOB_SCE_END
 　　立っちして、ブルマをぬぎぬぎしようね、早桃ぉ……」@
 拓司\n　「ほら、さっさと立て！」\
 
-\x00\x00\x00 DIALOGUE_END >+ SEQ01
-\x1f\x08\x03 FOB_SCE_END
-\x1f6\x03 OP_CMD 
-LOAD3 SCE022_021\x00\x1fx- FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 P2 BACKGROUND_OP3 \xa8\x00\x00
+\x00\x00\x00 DIALOGUE_END >+
+SEQ02 \x08\x03 SEQ03 6\x03 OP_CMD 
+LOAD3 SCE022_021\x00\x1fx- SCE_CMD 
+DIALOGUE_1 P2 DIALOGUE_2 \xa8\x00\x00
  
 ビクッと身体をすくませて、弾かれたように早桃が立ち上がる。@
 平野はその足下にしゃがみ込み、ゆっくりと、なめるようにブル\nマを引き下ろしていった。@
@@ -342,11 +324,10 @@ LOAD3 SCE022_021\x00\x1fx- FOB_SCE_END
 　　要するに早桃は誰でもいいんだろう？@
 　　誰の前でもでもこんなにぬるぬるにしちゃうんだ？」\
 
-\x00 DIALOGUE_END \xbc- SEQ01
-\x1f\x08\x03 FOB_SCE_END
-\x1f6\x03 OP_CMD 
-LOAD3 SCE022_022\x00\x1f\x960 FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 T2 BACKGROUND_OP3 ^\x00\x00
+\x00 DIALOGUE_END \xbc-
+SEQ02 \x08\x03 SEQ03 6\x03 OP_CMD 
+LOAD3 SCE022_022\x00\x1f\x960 SCE_CMD 
+DIALOGUE_1 T2 DIALOGUE_2 ^\x00\x00
  
 早桃\n　「ううっ……ひっくっ……」@
 \n平野は便座にどっかりと腰をおろした。@
@@ -357,11 +338,10 @@ LOAD3 SCE022_022\x00\x1f\x960 FOB_SCE_END
 早桃\n　「おにいちゃん。もう－－」@
 拓司\n　「入れろ」\
 
-\x00\x00\x00 DIALOGUE_END \xda0 SEQ01
-\x1f\x08\x03 FOB_SCE_END
-\x1f6\x03 OP_CMD 
-LOAD3 SCE022_023\x00\x1f\x8c2 FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 X2 BACKGROUND_OP3 \x8d\x00\x00
+\x00\x00\x00 DIALOGUE_END \xda0
+SEQ02 \x08\x03 SEQ03 6\x03 OP_CMD 
+LOAD3 SCE022_023\x00\x1f\x8c2 SCE_CMD 
+DIALOGUE_1 X2 DIALOGUE_2 \x8d\x00\x00
  
 早桃の肩がガックリと落ちた。@
 最後まで残っていたひとかけらの何かが、完全に砕け散った瞬間\nだった。@
@@ -372,13 +352,11 @@ LOAD3 SCE022_023\x00\x1f\x8c2 FOB_SCE_END
 \n平野の膝の上に座るような形で、早桃は腰をおろした。@
 平野は自分でペ○スを握って、先端を早桃のアナルに押し当て、\nそして……\
 
-\x00 DIALOGUE_END \xd02 SEQ01
-\x1f\x08\x03 FOB_SCE_END
-\x1f6\x03 OP_CMD  BACKGROUND_OP N\x00 SEQ01
-\x1f\xae\x03 FOB_SCE_END
-\x1f\xd8\x03 OP_CMD 
-LOAD3 SCE022_024\x00\x1fr5 FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 \\2 BACKGROUND_OP3 g\x00\x00
+\x00 DIALOGUE_END \xd02
+SEQ02 \x08\x03 SEQ03 6\x03 OP_CMD  \x1e\x00\x00\x00\x00\r\x00\x00\x1eN\x00
+SEQ02 \xae\x03 SEQ03 \xd8\x03 OP_CMD 
+LOAD3 SCE022_024\x00\x1fr5 SCE_CMD 
+DIALOGUE_1 \\2 DIALOGUE_2 g\x00\x00
  
 早桃\n　「ひっ、あうううっ！」@
 平野\n　「き、きつい……千切れそうだあ……お、おおっ！　」@
@@ -388,11 +366,10 @@ LOAD3 SCE022_024\x00\x1fr5 FOB_SCE_END
 \n早桃\n　「うぐっ……ひっ……\pお腹が……\pうあ……息ができな……@
 　　おふっ！」\
 
-\x00 DIALOGUE_END \xb65 SEQ01
-\x1f\x08\x03 FOB_SCE_END
-\x1f6\x03 OP_CMD 
-LOAD3 SCE022_025\x00\x1f\x8c7 FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 `2 BACKGROUND_OP3 \xa3\x00\x00
+\x00 DIALOGUE_END \xb65
+SEQ02 \x08\x03 SEQ03 6\x03 OP_CMD 
+LOAD3 SCE022_025\x00\x1f\x8c7 SCE_CMD 
+DIALOGUE_1 `2 DIALOGUE_2 \xa3\x00\x00
  
 平野\n　「すごいよ、早桃ぉ……\pさ、最高だよぉ。@
 　　こ、こんなに細い身体で……\p体操着着て……\pお人形さん\n　　みたいな早桃が、あ、アナルから直腸にチ○ポぶち込まれて、\n　　トイレでよがり狂ってるなんて……\pゆ、夢みたいだあ……@
@@ -405,11 +382,10 @@ LOAD3 SCE022_025\x00\x1f\x8c7 FOB_SCE_END
 　　もうすぐおにいちゃんのどろどろのやつを、さ、早桃のお腹\n　　の中にぶちまけてあげるからね！@
 　　便所女の早桃は、内臓まで全部おにいちゃんのものだからね\n　　っ！」\
 
-\x00\x00\x00 DIALOGUE_END \xd07 SEQ01
-\x1f\x08\x03 FOB_SCE_END
-\x1f6\x03 OP_CMD 
-LOAD3 SCE022_026\x00\x1f\x96: FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 d2 BACKGROUND_OP3 d\x00\x00
+\x00\x00\x00 DIALOGUE_END \xd07
+SEQ02 \x08\x03 SEQ03 6\x03 OP_CMD 
+LOAD3 SCE022_026\x00\x1f\x96: SCE_CMD 
+DIALOGUE_1 d2 DIALOGUE_2 d\x00\x00
  
 早桃\n　「ああっ……あおっ……おあっ！」@
 平野\n　「好きだよ早桃！@
@@ -418,11 +394,10 @@ LOAD3 SCE022_026\x00\x1f\x96: FOB_SCE_END
 /*■黒　表示（ノンエフェクト）*/\a7,-1,-1,0,\a0,200,1,0,\a6,0,0,0,\n拓司は、繋がって動物のような声を漏らしている２人を見下ろし\nた。@
 そしてハダシのままの右脚を伸ばして、むき出しに晒されている\n早桃の性器に親指の先を突っ込んだ。\
 
-\x00 DIALOGUE_END \xda: SEQ01
-\x1f\x08\x03 FOB_SCE_END
-\x1f6\x03 OP_CMD 
-LOAD3 SCE022_027\x00\x1f\xa4< FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 h2 BACKGROUND_OP3 o\x00\x00
+\x00 DIALOGUE_END \xda:
+SEQ02 \x08\x03 SEQ03 6\x03 OP_CMD 
+LOAD3 SCE022_027\x00\x1f\xa4< SCE_CMD 
+DIALOGUE_1 h2 DIALOGUE_2 o\x00\x00
  
 早桃\n　「お……おにい……がはっ……おにいちゃ……えふっ！」@
 拓司\n　「うれしいだろ？@
@@ -433,11 +408,10 @@ LOAD3 SCE022_027\x00\x1f\xa4< FOB_SCE_END
 拓司\n　「見ろよ平野。@
 　　早桃のやつ、うれしくて白目剥いて笑ってるぜ？」\
 
-\x00 DIALOGUE_END \xe8< SEQ01
-\x1f\x08\x03 FOB_SCE_END
-\x1f6\x03 OP_CMD 
-LOAD3 SCE022_028\x00\x1f\xde> FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 l2 BACKGROUND_OP3 l\x00\x00
+\x00 DIALOGUE_END \xe8<
+SEQ02 \x08\x03 SEQ03 6\x03 OP_CMD 
+LOAD3 SCE022_028\x00\x1f\xde> SCE_CMD 
+DIALOGUE_1 l2 DIALOGUE_2 l\x00\x00
  
 平野\n　「と、虎菱くんっ！\p僕もう限界だよ！　@
 　　い、いいんだろ？\p約束どおりにしちゃっていいんだろ？」@
@@ -448,11 +422,10 @@ LOAD3 SCE022_028\x00\x1f\xde> FOB_SCE_END
 \n早桃\n　「な……なに？！@
 　　なんなのおにいちゃん？！」\
 
-\x00 DIALOGUE_END "? SEQ01
-\x1f\x08\x03 FOB_SCE_END
-\x1f6\x03 OP_CMD 
-LOAD3 SCE022_029\x00\x1f\x0cA FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 p2 BACKGROUND_OP3 \x9b\x00\x00
+\x00 DIALOGUE_END "?
+SEQ02 \x08\x03 SEQ03 6\x03 OP_CMD 
+LOAD3 SCE022_029\x00\x1f\x0cA SCE_CMD 
+DIALOGUE_1 p2 DIALOGUE_2 \x9b\x00\x00
  
 拓司\n　「そいつがどうしても膣内射精したいっていうからさ。@
 　　出すときだけは前に入れてもいいぞって、約束したんだよ」@
@@ -467,11 +440,10 @@ LOAD3 SCE022_029\x00\x1f\x0cA FOB_SCE_END
 ぎくりとして、早桃が見上げる。@
 その一瞬の隙をついて、遂に平野のペ○スが早桃を貫いた。\
 
-\x00\x00\x00 DIALOGUE_END PA SEQ01
-\x1f\x08\x03 FOB_SCE_END
-\x1f6\x03 OP_CMD 
-LOAD3 SCE022_030\x00\x1f\xf6C FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 t2 BACKGROUND_OP3 d\x00\x00
+\x00\x00\x00 DIALOGUE_END PA
+SEQ02 \x08\x03 SEQ03 6\x03 OP_CMD 
+LOAD3 SCE022_030\x00\x1f\xf6C SCE_CMD 
+DIALOGUE_1 t2 DIALOGUE_2 d\x00\x00
  
 平野\n　「ああっ……入ったよ！@
 　　わかるかい、早桃ぉ！@
@@ -484,11 +456,10 @@ LOAD3 SCE022_030\x00\x1f\xf6C FOB_SCE_END
 　　やだよ……\pこんなの、あんまりだよ……@
 　　おにいちゃ……ん」\
 
-\x00 DIALOGUE_END :D SEQ01
-\x1f\x08\x03 FOB_SCE_END
-\x1f6\x03 OP_CMD 
-LOAD3 SCE022_031\x00\x1f\x04F FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 x2 BACKGROUND_OP3 \xb2\x00\x00
+\x00 DIALOGUE_END :D
+SEQ02 \x08\x03 SEQ03 6\x03 OP_CMD 
+LOAD3 SCE022_031\x00\x1f\x04F SCE_CMD 
+DIALOGUE_1 x2 DIALOGUE_2 \xb2\x00\x00
  
 平野\n　「あ、愛してるからなんだよ！@
 　　愛してるから直腸じゃなくて子宮に出したいんだよ！@
@@ -505,11 +476,10 @@ LOAD3 SCE022_031\x00\x1f\x04F FOB_SCE_END
 　　わかってんのか、お前なんかプロステ２より価値ないんだ！@
 　　いえッ！」\
 
-\x00\x00\x00 DIALOGUE_END HF SEQ01
-\x1f\x08\x03 FOB_SCE_END
-\x1f6\x03 OP_CMD 
-LOAD3 SCE022_032\x00\x1fJI FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 |2 BACKGROUND_OP3 S\x00\x00
+\x00\x00\x00 DIALOGUE_END HF
+SEQ02 \x08\x03 SEQ03 6\x03 OP_CMD 
+LOAD3 SCE022_032\x00\x1fJI SCE_CMD 
+DIALOGUE_1 |2 DIALOGUE_2 S\x00\x00
  
 早桃\n　「お……おにいちゃん、い、イク……」@
 平野\n　「おにいちゃんもイクよ、早桃ぉ！@
@@ -518,11 +488,10 @@ LOAD3 SCE022_032\x00\x1fJI FOB_SCE_END
 平野\n　「出る！　\p出るよ早桃ぉ！@
 　　おっぱいも膨らみきってないつるぺた少女に僕の精液が……@
 　　子宮まで全部ぼ、僕の物だぁ……あ、あ、あ、ああっ！」\w\n\n\z
-\x00\x00\x00 DIALOGUE_END \x8eI SEQ01
-\x1f\x08\x03 FOB_SCE_END
-\x1f6\x03 OP_CMD 
-LOAD3 SCE022_033\x00\x1f\x14K FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 \x802 BACKGROUND_OP3 R\x00\x00
+\x00\x00\x00 DIALOGUE_END \x8eI
+SEQ02 \x08\x03 SEQ03 6\x03 OP_CMD 
+LOAD3 SCE022_033\x00\x1f\x14K SCE_CMD 
+DIALOGUE_1 \x802 DIALOGUE_2 R\x00\x00
  
 /*▲SE01　再生（再生終了を待たず先へ進む）*/\a2,2,1,1,　ザザザ……ザザッ……ザアザザザ……ザアアアアア……\nザアザアアアアアアア……\n\n耳の奥で、『灰色』が響き始めた。@
 ああ、うるさい。@
@@ -530,11 +499,8 @@ LOAD3 SCE022_033\x00\x1f\x14K FOB_SCE_END
 うるさいんだよ！@
 \n　ザザザ……ザザッ……ザアザザザ……ザアアアアア……\nザアザアアアアアアア……\
 
-\x00\x00\x00 DIALOGUE_END XK SEQ01
-\x1f\x08\x03 FOB_SCE_END
-\x1f6\x03 OP_CMD  BACKGROUND_OP \x02\x00 SEQ01
-\x1f\x06\x00 FOB_SCE_END
-LOAD2 SeStop OP01 \x00M OP_CMD \x1f\x08\x03 FOB_SCE_END
-
+\x00\x00\x00 DIALOGUE_END XK
+SEQ02 \x08\x03 SEQ03 6\x03 OP_CMD  \x1e\x00\x00\x00\x00\r\x00 SCE_CMD \x0c\x02\x00\x00"\x1f\x06\x00 SCE_CMD 
+LOAD2 SeStop OP01 \x00M SEQ05 \x08\x03 SCE_CMD 
 LOAD3 TextClose OP02 (M OP_CMD 
 END_FILE

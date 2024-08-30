@@ -1,17 +1,18 @@
 START_FILE
 &\x1e\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00P\x19\x00
-LOAD3 SCE226_001\x00\x1f\x06\x00 FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 \xc0p\x01\x0c\x00\x00\x00\x00"\x03\x11\x00\x00
+LOAD3 SCE226_001\x00\x1f\x06\x00 SCE_CMD 
+DIALOGUE_1 \xc0p\x01\x0c\x00\x00\x00\x00"\x03\x11\x00\x00
  
 \n\n\n\n\n\n\n\n\n\n　　　　　　　　　　　　　『１２日目』\
 
 \x00 DIALOGUE_END J\x00 SEQ01
-LOAD7 .\\Data\\Script\\TextFunc.Fob OP01 \xae\x00 FOB_SCE_END
-LOAD2 TextOn OP01 \xdc\x00 OP_CMD  BACKGROUND_OP \x0c\x01 SEQ01
-LOAD6 .\\Data\\Script\\Bgm.Fob OP02 \x12\x01 FOB_SCE_END
+LOAD7 .\\Data\\Script\\TextFunc.Fob OP01 \xae\x00 SCE_CMD 
+LOAD2 TextOn OP01 \xdc\x00 OP_CMD  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x0c\x01 SEQ01
+
+LOAD6 .\\Data\\Script\\Bgm.Fob OP02 \x12\x01 SCE_CMD 
 LOAD2 PlayCD OP01 <\x01 OP_CMD 
-LOAD3 SCE226_002\x00\x1fX\x01 FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 \xc4p\x01\x0c\x00\x00\x00\x00"\x03x\x00\x00
+LOAD3 SCE226_002\x00\x1fX\x01 SCE_CMD 
+DIALOGUE_1 \xc4p\x01\x0c\x00\x00\x00\x00"\x03x\x00\x00
  
 錦城\n　「月代さん。\p御堂くんが呼んでいるわよ」@
 \n昼過ぎ、錦城が薄く笑っていった。@
@@ -20,11 +21,10 @@ LOAD3 SCE226_002\x00\x1fX\x01 FOB_SCE_END
 カンナ\n　「イヤです。\p用があるなら、自分でこっちにくるようにってい\n　　ってください。\pメッセンジャーさん？」@
 錦城\n　「……ふう。\pあなたのせいで、今日も全員が食事抜きになるの\n　　かしらねえ」\
 
-\x00\x00\x00 DIALOGUE_END \x9c\x01 SEQ01
-\x1f\xae\x00 FOB_SCE_END
-\x1f\xdc\x00 OP_CMD 
-LOAD3 SCE226_003\x00\x1f\xb6\x03 FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 \xc8p\x01\x0c\x00\x00\x00\x00"\x03d\x00\x00
+\x00\x00\x00 DIALOGUE_END \x9c\x01
+SEQ02 \xae\x00 SEQ03 \xdc\x00 OP_CMD 
+LOAD3 SCE226_003\x00\x1f\xb6\x03 SCE_CMD 
+DIALOGUE_1 \xc8p\x01\x0c\x00\x00\x00\x00"\x03d\x00\x00
  
 カンナ\n　「メッセンジャーが判断することじゃないでしょう？」@
 \n錦城の顔に一瞬、怒りの炎が踊った。\pしかし彼女はそれをすぐに\n収めていった。@
@@ -33,11 +33,10 @@ LOAD3 SCE226_003\x00\x1f\xb6\x03 FOB_SCE_END
 カンナ\n　「……」@
 錦城\n　「今日も全員食事抜きです」\
 
-\x00 DIALOGUE_END \xfa\x03 SEQ01
-\x1f\xae\x00 FOB_SCE_END
-\x1f\xdc\x00 OP_CMD 
-LOAD3 SCE226_004\x00\x1f\xc4\x05 FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 \xccp\x01\x0c\x00\x00\x00\x00"\x03\x94\x00\x00
+\x00 DIALOGUE_END \xfa\x03
+SEQ02 \xae\x00 SEQ03 \xdc\x00 OP_CMD 
+LOAD3 SCE226_004\x00\x1f\xc4\x05 SCE_CMD 
+DIALOGUE_1 \xccp\x01\x0c\x00\x00\x00\x00"\x03\x94\x00\x00
  
 勝ち誇ったようにいうと、錦城は準備室に引き上げていった。@
 結局その日も食事の配給は無しとなった。\p２日の絶食は、一同に\n予想以上のダメージを与えた。\pダメージは、肉体的というよりも\n精神的なものだった。\pいまや己の権利のすべてが御堂の管理下に\nあるという事実が、一同の胸を押しつぶした。@
@@ -46,11 +45,10 @@ LOAD3 SCE226_004\x00\x1f\xc4\x05 FOB_SCE_END
 カンナ\n　「……。\pどういう意味？」@
 早桃\n　「私だってあの２人のやり方はおかしいと思うし……腹もたつ\n　　けど。\pでも、そんなこと口に出したって、意味がないと思う」\n\pカンナ\n　「……」\
 
-\x00\x00\x00 DIALOGUE_END \x08\x06 SEQ01
-\x1f\xae\x00 FOB_SCE_END
-\x1f\xdc\x00 OP_CMD 
-LOAD3 SCE226_005\x00\x1f\x92\x08 FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 \xd0p\x01\x0c\x00\x00\x00\x00"\x03\x9d\x00\x00
+\x00\x00\x00 DIALOGUE_END \x08\x06
+SEQ02 \xae\x00 SEQ03 \xdc\x00 OP_CMD 
+LOAD3 SCE226_005\x00\x1f\x92\x08 SCE_CMD 
+DIALOGUE_1 \xd0p\x01\x0c\x00\x00\x00\x00"\x03\x9d\x00\x00
  
 早桃\n　「月代先輩の気が済むってだけでしょ？\p　そのせいでご飯がな\n　　くなるなんて……」@
 カンナ\n　「……要するに、恨み言ってわけ？」@
@@ -61,11 +59,10 @@ LOAD3 SCE226_005\x00\x1f\x92\x08 FOB_SCE_END
 カンナ\n　「服従するならとことんやればってこと。\p身体と引き替えに、\n　　お腹を充たせってことよ！」@
 早桃\n　「そんな……！」\
 
-\x00\x00\x00 DIALOGUE_END \xd6\x08 SEQ01
-\x1f\xae\x00 FOB_SCE_END
-\x1f\xdc\x00 OP_CMD 
-LOAD3 SCE226_006\x00\x1f\x84\x0b FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 \xd4p\x01\x0c\x00\x00\x00\x00"\x03\x85\x00\x00
+\x00\x00\x00 DIALOGUE_END \xd6\x08
+SEQ02 \xae\x00 SEQ03 \xdc\x00 OP_CMD 
+LOAD3 SCE226_006\x00\x1f\x84\x0b SCE_CMD 
+DIALOGUE_1 \xd4p\x01\x0c\x00\x00\x00\x00"\x03\x85\x00\x00
  
 見かねて拓司があいだにはいる。@
 \n拓司\n　「よせ、みんな気が立ってるんだ」@
@@ -77,11 +74,10 @@ LOAD3 SCE226_006\x00\x1f\x84\x0b FOB_SCE_END
 拓司\n　「いいかげんにしろ！」@
 /*▲BGM　停止*/\a4,-1,0,0,紅葉\n　「もうたくさんッ！」\
 
-\x00\x00\x00 DIALOGUE_END \xc8\x0b SEQ01
-\x1f\xae\x00 FOB_SCE_END
-\x1f\xdc\x00 OP_CMD 
-LOAD3 SCE226_007\x00\x1f\x16\x0e FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 \xd8p\x01\x0c\x00\x00\x00\x00"\x03\x85\x00\x00
+\x00\x00\x00 DIALOGUE_END \xc8\x0b
+SEQ02 \xae\x00 SEQ03 \xdc\x00 OP_CMD 
+LOAD3 SCE226_007\x00\x1f\x16\x0e SCE_CMD 
+DIALOGUE_1 \xd8p\x01\x0c\x00\x00\x00\x00"\x03\x85\x00\x00
  
 それまで黙っていた紅葉が叫んだ。\p頭を抱えて立ち上がる。@
 拓司たちは呆気にとられて紅葉を見た。@
@@ -90,11 +86,10 @@ LOAD3 SCE226_007\x00\x1f\x16\x0e FOB_SCE_END
 紅葉\n　「波動なんて、そんなもの最初からないのよ！\p　なにか事故み\n　　たいなことが起こって……毒ガスが漏れたとか……そんなふ\n　　うなことがおこってみんな一時的におかしくなっただけだよ！\n　　\pもう一週間以上経って、そんなのなくなったに決まってる！\n　　」@
 拓司\n　「でも、最終波動が……」\
 
-\x00\x00\x00 DIALOGUE_END Z\x0e SEQ01
-\x1f\xae\x00 FOB_SCE_END
-\x1f\xdc\x00 OP_CMD 
-LOAD3 SCE226_008\x00\x1f\xa8\x10 FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 \xdcp\x01\x0c\x00\x00\x00\x00"\x03\xa4\x00\x00
+\x00\x00\x00 DIALOGUE_END Z\x0e
+SEQ02 \xae\x00 SEQ03 \xdc\x00 OP_CMD 
+LOAD3 SCE226_008\x00\x1f\xa8\x10 SCE_CMD 
+DIALOGUE_1 \xdcp\x01\x0c\x00\x00\x00\x00"\x03\xa4\x00\x00
  
 紅葉\n　「そんなものがくるって保証はどこにもないじゃない！@
 　　それに、ここにいたってこのままじゃおかしくなっちゃう！@
@@ -110,11 +105,10 @@ LOAD3 SCE226_008\x00\x1f\xa8\x10 FOB_SCE_END
 その向こうを見つめて、紅葉は動かなかった。@
 しばらくしてから放たれた言葉は、かすれ、震えていた。\
 
-\x00 DIALOGUE_END \xec\x10 SEQ01
-\x1f\xae\x00 FOB_SCE_END
-\x1f\xdc\x00 OP_CMD 
-LOAD3 SCE226_009\x00\x1f\xb6\x13 FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 \xe0p\x01\x0c\x00\x00\x00\x00"\x03u\x00\x00
+\x00 DIALOGUE_END \xec\x10
+SEQ02 \xae\x00 SEQ03 \xdc\x00 OP_CMD 
+LOAD3 SCE226_009\x00\x1f\xb6\x13 SCE_CMD 
+DIALOGUE_1 \xe0p\x01\x0c\x00\x00\x00\x00"\x03u\x00\x00
  
 紅葉\n　「……雲居さん。\pいまは大丈夫？」@
 \nなたねはなにも応えない。\pただ小さくクククと笑っただけだ。@
@@ -126,11 +120,10 @@ LOAD3 SCE226_009\x00\x1f\xb6\x13 FOB_SCE_END
 紅葉\n　「あるはずないじゃない、そんなもの！」@
 \nついになたねが笑いを爆発させた。\pガラガラとした声で、低く低\nく叫んだ。\
 
-\x00\x00\x00 DIALOGUE_END \xfa\x13 SEQ01
-\x1f\xae\x00 FOB_SCE_END
-\x1f\xdc\x00 OP_CMD 
-LOAD3 SCE226_010\x00\x1f\x08\x16 FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 \xe4p\x01\x0c\x00\x00\x00\x00"\x03\x9e\x00\x00
+\x00\x00\x00 DIALOGUE_END \xfa\x13
+SEQ02 \xae\x00 SEQ03 \xdc\x00 OP_CMD 
+LOAD3 SCE226_010\x00\x1f\x08\x16 SCE_CMD 
+DIALOGUE_1 \xe4p\x01\x0c\x00\x00\x00\x00"\x03\x9e\x00\x00
  
 なたね\n　「ワハハハ、ウワッハハハハハッハハハハハハハハ！@
 　　そうよ、ない！\p　最終波動なんてない！\p　自殺波動もない！@
@@ -143,10 +136,8 @@ LOAD3 SCE226_010\x00\x1f\x08\x16 FOB_SCE_END
 拓司はうずくまって泣く紅葉に歩み寄り、ドアを閉め、そして肩\nに手をおいた。@
 紅葉はその晩、ずっと小さく泣き続けていた。\
 
-\x00 DIALOGUE_END L\x16 SEQ01
-\x1f\xae\x00 FOB_SCE_END
-\x1f\xdc\x00 OP_CMD \x1f\x12\x01 FOB_SCE_END
-LOAD2 StopCD OP01 \n\x19 OP_CMD \x1f\xae\x00 FOB_SCE_END
-
+\x00 DIALOGUE_END L\x16
+SEQ02 \xae\x00 SEQ03 \xdc\x00 SEQ05 \x12\x01 SCE_CMD 
+LOAD2 StopCD OP01 \n\x19 SEQ05 \xae\x00 SCE_CMD 
 LOAD3 TextClose OP02 2\x19 OP_CMD 
 END_FILE

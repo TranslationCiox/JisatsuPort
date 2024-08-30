@@ -1,9 +1,10 @@
 START_FILE
-G\x1a\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00j\x16\x00 BACKGROUND_OP \x04\x01 SEQ01
-LOAD6 .\\Data\\Script\\Bgm.Fob OP02  \x00 FOB_SCE_END
+G\x1a\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00j\x16\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x04\x01 SEQ01
+
+LOAD6 .\\Data\\Script\\Bgm.Fob OP02  \x00 SCE_CMD 
 LOAD2 PlayCD OP01 J\x00 OP_CMD 
-LOAD3 SCES03_001\x00\x1ff\x00 FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 \xd0\xb5\x01\x0c\x00\x00\x00\x00"\x03\x8b\x00\x00
+LOAD3 SCES03_001\x00\x1ff\x00 SCE_CMD 
+DIALOGUE_1 \xd0\xb5\x01\x0c\x00\x00\x00\x00"\x03\x8b\x00\x00
  
 ずっと前に手術を受けて、身体はうんと良くなったの。@
 でも、みんなと一緒に運動とかはできなかったし、旅行とかにも\n行けなかった。\pだからかな、なんだかみんなとはあまり仲良くな\nれなかった。\pどんなに一緒にいても、結局最後のところで私は違\nうんだな、って思ってた。@
@@ -15,10 +16,10 @@ LOAD3 SCES03_001\x00\x1ff\x00 FOB_SCE_END
 よく夢を見たの。\
 
 \x00\x00\x00 DIALOGUE_END \xaa\x00 SEQ01
-LOAD7 .\\Data\\Script\\TextFunc.Fob OP01 \xf6\x02 FOB_SCE_END
+LOAD7 .\\Data\\Script\\TextFunc.Fob OP01 \xf6\x02 SCE_CMD 
 LOAD2 TextOn OP01 $\x03 OP_CMD 
-LOAD3 SCES03_002\x00\x1f@\x03 FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 \xd4\xb5\x01\x0c\x00\x00\x00\x00"\x03\x89\x00\x00
+LOAD3 SCES03_002\x00\x1f@\x03 SCE_CMD 
+DIALOGUE_1 \xd4\xb5\x01\x0c\x00\x00\x00\x00"\x03\x89\x00\x00
  
 クラスのみんなと宇宙船で旅行してるとね、事故が起きるの。@
 脱出ポットには人数制限があって、どうしても１人だけ宇宙船に\n残らなくちゃいけない。\pみんな困った顔で、うつむいてる。@
@@ -30,11 +31,10 @@ LOAD3 SCES03_002\x00\x1f@\x03 FOB_SCE_END
 でも、悲しかった。@
 なんだかとても悲しかった。\
 
-\x00\x00\x00 DIALOGUE_END \x84\x03 SEQ01
-\x1f\xf6\x02 FOB_SCE_END
-\x1f$\x03 OP_CMD 
-LOAD3 SCES03_003\x00\x1f\xe2\x05 FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 \xd8\xb5\x01\x0c\x00\x00\x00\x00"\x03\xde\x00\x00
+\x00\x00\x00 DIALOGUE_END \x84\x03
+SEQ02 \xf6\x02 SEQ03 $\x03 OP_CMD 
+LOAD3 SCES03_003\x00\x1f\xe2\x05 SCE_CMD 
+DIALOGUE_1 \xd8\xb5\x01\x0c\x00\x00\x00\x00"\x03\xde\x00\x00
  
 手術してからも、本当のお友達はできなかった。@
 ずっと昔は、みんなが気を使って友達のふりをしてくれるのが嫌\nで仕方がなかったけど、学生になってからは、それすらなくなち\nゃった。@
@@ -48,11 +48,10 @@ LOAD3 SCES03_003\x00\x1f\xe2\x05 FOB_SCE_END
 だから、学校には行かないで、街のなかをぶらぶらしてた。@
 朝は公園でぼんやりして、９時４５分になったら図書館に行って、\nお昼まで本を読むの。\pそれからデパートに行って、いろんなもの\nを見て、屋上に行く\p。平日の昼間の屋上って、誰もいないんだよ。\n\pそんな、誰もいない屋上で、ドルチェとお話ししてた。\
 
-\x00 DIALOGUE_END &\x06 SEQ01
-\x1f\xf6\x02 FOB_SCE_END
-\x1f$\x03 OP_CMD 
-LOAD3 SCES03_004\x00\x1f\xd8\t FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 \xdc\xb5\x01\x0c\x00\x00\x00\x00"\x03\xa3\x00\x00
+\x00 DIALOGUE_END &\x06
+SEQ02 \xf6\x02 SEQ03 $\x03 OP_CMD 
+LOAD3 SCES03_004\x00\x1f\xd8\t SCE_CMD 
+DIALOGUE_1 \xdc\xb5\x01\x0c\x00\x00\x00\x00"\x03\xa3\x00\x00
  
 「ねえドルチェ」@
 『なんニャ、早桃ちゃん？』@
@@ -64,13 +63,13 @@ LOAD3 SCES03_004\x00\x1f\xd8\t FOB_SCE_END
 「ドルチェ、早桃はもう笑う力も残ってないよ。\pどうすればいい\n　のかな？」@
 『答はね、早桃ちゃん。\p風のなかにあるニャ』\
 
-\x00\x00\x00 DIALOGUE_END \x1c\n SEQ01
-\x1f\xf6\x02 FOB_SCE_END
-\x1f$\x03 OP_CMD  BACKGROUND_OP B\x00 SEQ01
-LOAD6 .\\Data\\Script\\Bg.Fob OP03 \xfc\x0c FOB_SCE_END
+\x00\x00\x00 DIALOGUE_END \x1c\n
+SEQ02 \xf6\x02 SEQ03 $\x03 OP_CMD  \x1e\x00\x00\x00\x00\r\x00\x00\x1eB\x00 SEQ01
+
+LOAD6 .\\Data\\Script\\Bg.Fob OP03 \xfc\x0c SCE_CMD 
 LOAD4 BgAutoFadeIn OP03 &\r OP_CMD 
-LOAD3 SCES03_005\x00\x1fJ\r FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 \xe0\xb5\x01\x0c\x00\x00\x00\x00"\x03|\x00\x00
+LOAD3 SCES03_005\x00\x1fJ\r SCE_CMD 
+DIALOGUE_1 \xe0\xb5\x01\x0c\x00\x00\x00\x00"\x03|\x00\x00
  
 ある日、いつもみたいに屋上でぼんやりしていると、声をかけら\nれたの。\pお父さんと同じくらいの歳の人で……あ、前のお父さん\nだよ……すごく優しそうな人だった。@
 一緒にご飯食べない？\p　ってその人はいった。@
@@ -81,13 +80,11 @@ LOAD3 SCES03_005\x00\x1fJ\r FOB_SCE_END
 \nうん、いいよ。\p一緒にご飯食べる。@
 でも、どれくらいなの？　って。\
 
-\x00\x00\x00 DIALOGUE_END \x8e\r SEQ01
-\x1f\xf6\x02 FOB_SCE_END
-\x1f$\x03 OP_CMD  BACKGROUND_OP \xc8\x00 SEQ01
-\x1f\xfc\x0c FOB_SCE_END
-\x1f&\r OP_CMD 
-LOAD3 SCES03_006\x00\x1f\xec\x0f FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 \xe4\xb5\x01\x0c\x00\x00\x00\x00"\x03j\x00\x00
+\x00\x00\x00 DIALOGUE_END \x8e\r
+SEQ02 \xf6\x02 SEQ03 $\x03 OP_CMD  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00
+SEQ02 \xfc\x0c SEQ03 &\r OP_CMD 
+LOAD3 SCES03_006\x00\x1f\xec\x0f SCE_CMD 
+DIALOGUE_1 \xe4\xb5\x01\x0c\x00\x00\x00\x00"\x03j\x00\x00
  
 ……びっくりした？@
 言い訳する気はないよ。\pでも、ひとつだけ信じて欲しいのは、お\n金なんかどうでも良かったってこと。\pただ、こういうときは、値\n段を聞いておくものじゃないかなと思ったから、聞いただけ。@
@@ -97,11 +94,10 @@ LOAD3 SCES03_006\x00\x1f\xec\x0f FOB_SCE_END
 なんだか普通の女の子になったみたいな気がして。@
 特別扱いじゃなくて、普通の、どこにでもいる女の子として扱っ\nてもらってるんだなって。\
 
-\x00 DIALOGUE_END 0\x10 SEQ01
-\x1f\xf6\x02 FOB_SCE_END
-\x1f$\x03 OP_CMD 
-LOAD3 SCES03_007\x00\x1f\x12\x12 FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 \xe8\xb5\x01\x0c\x00\x00\x00\x00"\x03\xe2\x00\x00
+\x00 DIALOGUE_END 0\x10
+SEQ02 \xf6\x02 SEQ03 $\x03 OP_CMD 
+LOAD3 SCES03_007\x00\x1f\x12\x12 SCE_CMD 
+DIALOGUE_1 \xe8\xb5\x01\x0c\x00\x00\x00\x00"\x03\xe2\x00\x00
  
 一緒にご飯を食べて、いろんなお話をした。@
 みんな、ウソのお話。早桃は活発なクラスの人気者で、いろいろ\n遊びなんかも経験してる子って設定なの。@
@@ -116,10 +112,8 @@ LOAD3 SCES03_007\x00\x1f\x12\x12 FOB_SCE_END
 生まれて初めて、私は体が弱い女の子っていうシガラミから切り\n離されて、私そのものとして……認識されたって、思った。@
 私は道に落ちている石ころみたいなものじゃなくて、ちゃんと価\n値がある人間なんだって。\
 
-\x00\x00\x00 DIALOGUE_END V\x12 SEQ01
-\x1f\xf6\x02 FOB_SCE_END
-\x1f$\x03 OP_CMD \x1f \x00 FOB_SCE_END
-LOAD2 StopCD OP01 $\x16 OP_CMD \x1f\xf6\x02 FOB_SCE_END
-
+\x00\x00\x00 DIALOGUE_END V\x12
+SEQ02 \xf6\x02 SEQ03 $\x03 SEQ05  \x00 SCE_CMD 
+LOAD2 StopCD OP01 $\x16 SEQ05 \xf6\x02 SCE_CMD 
 LOAD3 TextClose OP02 L\x16 OP_CMD 
 END_FILE

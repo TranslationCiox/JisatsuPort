@@ -1,11 +1,13 @@
 START_FILE
-\x84\x13\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xb4\x0f\x00 BACKGROUND_OP \xc8\x00 SEQ01
-LOAD6 .\\Data\\Script\\Bg.Fob OP03  \x00 FOB_SCE_END
-LOAD4 BgAutoFadeIn OP03 J\x00 OP_CMD  BACKGROUND_OP \x04\x01 SEQ01
-LOAD6 .\\Data\\Script\\Bgm.Fob OP02 \x88\x00 FOB_SCE_END
+\x84\x13\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xb4\x0f\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00 SEQ01
+
+LOAD6 .\\Data\\Script\\Bg.Fob OP03  \x00 SCE_CMD 
+LOAD4 BgAutoFadeIn OP03 J\x00 OP_CMD  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x04\x01 SEQ01
+
+LOAD6 .\\Data\\Script\\Bgm.Fob OP02 \x88\x00 SCE_CMD 
 LOAD2 PlayCD OP01 \xb2\x00 OP_CMD 
-LOAD3 SCEK05_A01\x00\x1f\xce\x00 FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 \xa8\xa6\x01\x0c\x00\x00\x00\x00"\x03\xb0\x00\x00
+LOAD3 SCEK05_A01\x00\x1f\xce\x00 SCE_CMD 
+DIALOGUE_1 \xa8\xa6\x01\x0c\x00\x00\x00\x00"\x03\xb0\x00\x00
  
 　私は飢えた子猫みたいなものだった。@
 食べても食べても、食べたりなかった。@
@@ -18,20 +20,19 @@ LOAD3 SCEK05_A01\x00\x1f\xce\x00 FOB_SCE_END
 私は真剣に考えた。@
 そしてついに、秘密の共有こそが繋がりを深くする鍵に違いない、\nと思い至った。\w\z
 \x00 DIALOGUE_END \x12\x01 SEQ01
-LOAD7 .\\Data\\Script\\TextFunc.Fob OP01 \xf2\x03 FOB_SCE_END
+LOAD7 .\\Data\\Script\\TextFunc.Fob OP01 \xf2\x03 SCE_CMD 
 LOAD2 TextOn OP01  \x04 OP_CMD 
-LOAD3 SCEK05_A02\x00\x1f<\x04 FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 \xac\xa6\x01\x0c\x00\x00\x00\x00"\x03R\x00\x00
+LOAD3 SCEK05_A02\x00\x1f<\x04 SCE_CMD 
+DIALOGUE_1 \xac\xa6\x01\x0c\x00\x00\x00\x00"\x03R\x00\x00
  
 秘密……これまで誰にも話したことのない、胸の中の暗い秘密を\n告白して、共有すること。@
 それが鎖となれば、私たちはもっときつく互いを縛り合えるよう\nな気がした。@
 縛る……そう、私はゆきに縛ってほしかったし、ゆきを縛りたか\nった。@
 二度と逃げられないくらいに互いを縛り合って、深い海の底に一\n緒に沈んでいきたかった。\w\z
-\x00\x00\x00 DIALOGUE_END \x80\x04 SEQ01
-\x1f\xf2\x03 FOB_SCE_END
-\x1f \x04 OP_CMD 
-LOAD3 SCEK05_A03\x00\x1f\x02\x06 FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 \xb0\xa6\x01\x0c\x00\x00\x00\x00"\x03\x9e\x00\x00
+\x00\x00\x00 DIALOGUE_END \x80\x04
+SEQ02 \xf2\x03 SEQ03  \x04 OP_CMD 
+LOAD3 SCEK05_A03\x00\x1f\x02\x06 SCE_CMD 
+DIALOGUE_1 \xb0\xa6\x01\x0c\x00\x00\x00\x00"\x03\x9e\x00\x00
  
 　私の提案に、ゆきは気乗りしない様子だった。@
 「秘密を知ることで、もしかしたら相手のことが嫌いになるとい\nうこともあるんじゃないかな？」@
@@ -42,11 +43,10 @@ LOAD3 SCEK05_A03\x00\x1f\x02\x06 FOB_SCE_END
 ゆきのなかには、私が知らないゆきがいる。@
 私はそれを知りたかった。\pゆきのすべてが。@
 結局、私の熱意がゆきを説き伏せる形となった。\w\z
-\x00 DIALOGUE_END F\x06 SEQ01
-\x1f\xf2\x03 FOB_SCE_END
-\x1f \x04 OP_CMD 
-LOAD3 SCEK05_A04\x00\x1f\xf8\x08 FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 \xb4\xa6\x01\x0c\x00\x00\x00\x00"\x03I\x00\x00
+\x00 DIALOGUE_END F\x06
+SEQ02 \xf2\x03 SEQ03  \x04 OP_CMD 
+LOAD3 SCEK05_A04\x00\x1f\xf8\x08 SCE_CMD 
+DIALOGUE_1 \xb4\xa6\x01\x0c\x00\x00\x00\x00"\x03I\x00\x00
  
 　あまり話に関係がないから、私が何を告白したのかはここでは\n語らない。@
 いずれにせよ、私の秘密はゆきを動揺させた。@
@@ -54,12 +54,11 @@ LOAD3 SCEK05_A04\x00\x1f\xf8\x08 FOB_SCE_END
 けれどもゆきは私を赦してくれた。\pそういうことだ。@
 そしてゆきの番だった。@
 \n私はゆきに連れられて、町はずれの歩道橋に向かった。\w\z
-\x00 DIALOGUE_END <\t SEQ01
-\x1f\xf2\x03 FOB_SCE_END
-\x1f \x04 OP_CMD \x1f\x88\x00 FOB_SCE_END
+\x00 DIALOGUE_END <\t
+SEQ02 \xf2\x03 SEQ03  \x04 SEQ05 \x88\x00 SCE_CMD 
 LOAD2 StopCD OP01 \xa6\n OP_CMD 
-LOAD3 SCEK05_A05\x00\x1f\xc2\n FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 \xb8\xa6\x01\x0c\x00\x00\x00\x00"\x03\xe1\x00\x00
+LOAD3 SCEK05_A05\x00\x1f\xc2\n SCE_CMD 
+DIALOGUE_1 \xb8\xa6\x01\x0c\x00\x00\x00\x00"\x03\xe1\x00\x00
  
 　７月２７日（－－この日付が重要なの）。@
 風が全然吹かない日の、蒸し暑い夕方だった。@
@@ -76,16 +75,13 @@ LOAD3 SCEK05_A05\x00\x1f\xc2\n FOB_SCE_END
 何を話しかけても、ゆきは無言だった。@
 せいいっぱいの勇気と不安が、ゆきの顔のなかでせめぎ合ってい\nた。@
 ゆきはこんなところで何を告白するつもりなのか……？\w\z
-\x00\x00\x00 DIALOGUE_END \x06\x0b SEQ01
-\x1f\xf2\x03 FOB_SCE_END
-\x1f \x04 OP_CMD \x03#\x00\x00
+\x00\x00\x00 DIALOGUE_END \x06\x0b
+SEQ02 \xf2\x03 SEQ03  \x04 OP_CMD \x03#\x00\x00
 CHOICE
 不安が広がっていった。「もういいよ。帰ろう」と私はいった。\n好奇心が爆発しそうだった。私は沈黙に耐えながら、歩き続けた。\n\l0,2,
 ENDCHOICE
 
-\x00\x00\x00 DIALOGUE_END \xc4\x0e SEQ01
-\x1f\xf2\x03 FOB_SCE_END
-\x1f \x04 OP_CMD \x1f\xf2\x03 FOB_SCE_END
-
+\x00\x00\x00 DIALOGUE_END \xc4\x0e
+SEQ02 \xf2\x03 SEQ03  \x04 SEQ05 \xf2\x03 SCE_CMD 
 LOAD3 TextClose OP02 \x96\x0f OP_CMD 
 END_FILE

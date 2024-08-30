@@ -1,8 +1,9 @@
 START_FILE
-\xc3\n\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xcc\x08\x00LOAD6 .\\Data\\Script\\Bgm.Fob OP02 \x06\x00 FOB_SCE_END
+\xc3\n\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xcc\x08\x00
+LOAD6 .\\Data\\Script\\Bgm.Fob OP02 \x06\x00 SCE_CMD 
 LOAD2 StopCD OP01 0\x00 OP_CMD 
-LOAD3 SCE087_001\x00\x1fL\x00 FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 \x90\x97 BACKGROUND_OP3 \x9e\x00\x00
+LOAD3 SCE087_001\x00\x1fL\x00 SCE_CMD 
+DIALOGUE_1 \x90\x97 DIALOGUE_2 \x9e\x00\x00
  
 　実験室のドアを開けた拓司は、思わず声をあげた。@
 　実験室の壁全体が、銀色に輝いていたのである。\pそして、ムッ\n　と息詰まるようなシンナーの匂い……。@
@@ -15,10 +16,10 @@ LOAD3 SCE087_001\x00\x1fL\x00 FOB_SCE_END
 カンナ\n　「ああ、このピカピカね……コレよ」\
 
 \x00\x00\x00 DIALOGUE_END \x90\x00 SEQ01
-LOAD7 .\\Data\\Script\\TextFunc.Fob OP01 (\x03 FOB_SCE_END
+LOAD7 .\\Data\\Script\\TextFunc.Fob OP01 (\x03 SCE_CMD 
 LOAD2 TextOn OP01 V\x03 OP_CMD 
-LOAD3 SCE087_002\x00\x1fr\x03 FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 \x94\x97 BACKGROUND_OP3 {\x00\x00
+LOAD3 SCE087_002\x00\x1fr\x03 SCE_CMD 
+DIALOGUE_1 \x94\x97 DIALOGUE_2 {\x00\x00
  
 拓司\n　「コレは……アルミホイル？」@
 早桃\n　「そう。\p雲居さんが段ボール３箱分も用意しておいた……徳\n　　用アルミホイル。\pそれをさっきから、月代先輩と２人で壁に\n　　貼り付けてるの」@
@@ -29,11 +30,10 @@ LOAD3 SCE087_002\x00\x1fr\x03 FOB_SCE_END
 \n/*▲BGM　停止*/\a4,-1,0,0,なたね\n　「これがシェルターよ」@
 拓司\n　「まさか！」\
 
-\x00\x00\x00 DIALOGUE_END \xb6\x03 SEQ01
-\x1f(\x03 FOB_SCE_END
-\x1fV\x03 OP_CMD 
-LOAD3 SCE087_003\x00\x1f\xdc\x05 FOB_SCE_END
-2B_01 BACKGROUND_OP BACKGROUND_OP2 \x98\x97 BACKGROUND_OP3 \x92\x00\x00
+\x00\x00\x00 DIALOGUE_END \xb6\x03
+SEQ02 (\x03 SEQ03 V\x03 OP_CMD 
+LOAD3 SCE087_003\x00\x1f\xdc\x05 SCE_CMD 
+DIALOGUE_1 \x98\x97 DIALOGUE_2 \x92\x00\x00
  
 なたね\n　「気分を害さないで欲しいんだけれど、そう簡単にまさかとか、\n　　言って欲しくないの。\pだってこれは、私が死ぬ思いをしてや\n　　つらの円盤から盗み出してきた機密事項の結晶だから」@
 拓司\n　「……」@
@@ -41,9 +41,7 @@ LOAD3 SCE087_003\x00\x1f\xdc\x05 FOB_SCE_END
 拓司\n　「……」@
 なたね\n　「いい？\p　エンケリュスの自殺波動は、アルミホイルで防御す\n　　ることが－－」\
 
-\x00\x00\x00 DIALOGUE_END  \x06 SEQ01
-\x1f(\x03 FOB_SCE_END
-\x1fV\x03 OP_CMD \x1f(\x03 FOB_SCE_END
-
+\x00\x00\x00 DIALOGUE_END  \x06
+SEQ02 (\x03 SEQ03 V\x03 SEQ05 (\x03 SCE_CMD 
 LOAD3 TextClose OP02 \xae\x08 OP_CMD 
 END_FILE
