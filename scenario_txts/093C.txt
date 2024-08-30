@@ -3,7 +3,7 @@ START_FILE
 
 LOAD6 .\\Data\\Script\\Bgm.Fob REF2  \x00 REF_END2 
 LOAD2 PlayCD REF1 J\x00 REF_END1 
-LOAD3 SCE093_001\x00\x1ff\x00 REF_END2 
+LOAD3 SCE093_001 REF6 f\x00 REF_END2 
 DIALOGUE_1 \xf0\xa0 DIALOGUE_2 N\x00\x00
  
 拓司\n　「それでも、何日持つのかはハッキリさせて欲しい」@
@@ -15,7 +15,7 @@ DIALOGUE_1 \xf0\xa0 DIALOGUE_2 N\x00\x00
 \x00\x00\x00 DIALOGUE_END \xaa\x00 SEQ01
 LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \x02\x02 REF_END2 
 LOAD2 TextOn REF1 0\x02 REF_END1 
-LOAD3 SCE093_002\x00\x1fL\x02 REF_END2 
+LOAD3 SCE093_002 REF6 L\x02 REF_END2 
 DIALOGUE_1 \xf4\xa0 DIALOGUE_2 \x82\x00\x00
  
 拓司\n　「……１年分あれば……まあ……安心はできるんじゃないか？」\n\pなたね\n　「その根拠は？　最終波動がいつやってくるのか予想不可能な\n　　現状において、どうして１年の備蓄が『安心』を与えるんで\n　　すか？」@
@@ -27,7 +27,7 @@ DIALOGUE_1 \xf4\xa0 DIALOGUE_2 \x82\x00\x00
 カンナがそれに反応した。\w\z
 \x00 DIALOGUE_END \x90\x02 SEQ01
 \x1f\x02\x02 CALL3 0\x02 REF_END1 
-LOAD3 SCE093_003\x00\x1f\xd2\x04 REF_END2 
+LOAD3 SCE093_003 REF6 \xd2\x04 REF_END2 
 DIALOGUE_1 \xf8\xa0 DIALOGUE_2 \x9d\x00\x00
  
 カンナ\n　「そのいいかたは……どうなのかしら、雲居さん？」@
@@ -40,7 +40,7 @@ DIALOGUE_1 \xf8\xa0 DIALOGUE_2 \x9d\x00\x00
 \n拓司が間に入ることで、カンナとなたねは引き離されたが、あと\nには気まずい空気が残っている。\w\z
 \x00 DIALOGUE_END \x16\x05 SEQ01
 \x1f\x02\x02 CALL3 0\x02 REF_END1 
-LOAD3 SCE093_004\x00\x1f\xc4\x07 REF_END2 
+LOAD3 SCE093_004 REF6 \xc4\x07 REF_END2 
 DIALOGUE_1 \xfc\xa0 DIALOGUE_2 \xae\x00\x00
  
 なたね\n　「……はっきりさせておきたいんですけど」@
@@ -57,7 +57,7 @@ DIALOGUE_1 \xfc\xa0 DIALOGUE_2 \xae\x00\x00
 　　いつもいつも散々ウソつき呼ばわりしてきたバカタレどもが\n　　私を信じるしか！　くすくすくすくす」\w\z
 \x00 DIALOGUE_END \x08\x08 SEQ01
 \x1f\x02\x02 CALL3 0\x02 REF_END1 
-LOAD3 SCE093_005\x00\x1f\xfa\n REF_END2 
+LOAD3 SCE093_005 REF6 \xfa\n REF_END2 
 DIALOGUE_1 \x00\xa1 DIALOGUE_2 ^\x00\x00
  
 カンナがなにかをいいかけた。@

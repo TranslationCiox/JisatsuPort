@@ -2,7 +2,7 @@ START_FILE
 \xc3\n\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xcc\x08\x00
 LOAD6 .\\Data\\Script\\Bgm.Fob REF2 \x06\x00 REF_END2 
 LOAD2 StopCD REF1 0\x00 REF_END1 
-LOAD3 SCE087_001\x00\x1fL\x00 REF_END2 
+LOAD3 SCE087_001 REF6 L\x00 REF_END2 
 DIALOGUE_1 \x90\x97 DIALOGUE_2 \x9e\x00\x00
  
 　実験室のドアを開けた拓司は、思わず声をあげた。@
@@ -18,7 +18,7 @@ DIALOGUE_1 \x90\x97 DIALOGUE_2 \x9e\x00\x00
 \x00\x00\x00 DIALOGUE_END \x90\x00 SEQ01
 LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 (\x03 REF_END2 
 LOAD2 TextOn REF1 V\x03 REF_END1 
-LOAD3 SCE087_002\x00\x1fr\x03 REF_END2 
+LOAD3 SCE087_002 REF6 r\x03 REF_END2 
 DIALOGUE_1 \x94\x97 DIALOGUE_2 {\x00\x00
  
 拓司\n　「コレは……アルミホイル？」@
@@ -32,7 +32,7 @@ DIALOGUE_1 \x94\x97 DIALOGUE_2 {\x00\x00
 
 \x00\x00\x00 DIALOGUE_END \xb6\x03 SEQ01
 \x1f(\x03 CALL3 V\x03 REF_END1 
-LOAD3 SCE087_003\x00\x1f\xdc\x05 REF_END2 
+LOAD3 SCE087_003 REF6 \xdc\x05 REF_END2 
 DIALOGUE_1 \x98\x97 DIALOGUE_2 \x92\x00\x00
  
 なたね\n　「気分を害さないで欲しいんだけれど、そう簡単にまさかとか、\n　　言って欲しくないの。\pだってこれは、私が死ぬ思いをしてや\n　　つらの円盤から盗み出してきた機密事項の結晶だから」@

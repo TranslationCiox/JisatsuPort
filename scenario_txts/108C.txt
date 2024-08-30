@@ -1,6 +1,6 @@
 START_FILE
 \x82\x07\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xf2\x05\x00
-LOAD3 SCE108_001\x00\x1f\x06\x00 REF_END2 
+LOAD3 SCE108_001 REF6 \x06\x00 REF_END2 
 DIALOGUE_1 `\xb8 DIALOGUE_2 \x11\x00\x00
  
 \n\n\n\n\n\n\n\n\n\n　　　　　　　　　　　　　『６日目』\
@@ -11,7 +11,7 @@ LOAD2 TextOn REF1 \xdc\x00 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x0c\x01 
 
 LOAD6 .\\Data\\Script\\Bgm.Fob REF2 \x12\x01 REF_END2 
 LOAD2 PlayCD REF1 <\x01 REF_END1 
-LOAD3 SCE108_002\x00\x1fX\x01 REF_END2 
+LOAD3 SCE108_002 REF6 X\x01 REF_END2 
 DIALOGUE_1 d\xb8 DIALOGUE_2 \x87\x00\x00
  
 早桃の風邪は快方に向かっている。@
@@ -22,7 +22,7 @@ DIALOGUE_1 d\xb8 DIALOGUE_2 \x87\x00\x00
 
 \x00\x00\x00 DIALOGUE_END \x9c\x01 SEQ01
 \x1f\xae\x00 CALL3 \xdc\x00 REF_END1 
-LOAD3 SCE108_003\x00\x1f\xf2\x03 REF_END2 
+LOAD3 SCE108_003 REF6 \xf2\x03 REF_END2 
 DIALOGUE_1 h\xb8 DIALOGUE_2 V\x00\x00
  
 この日が誕生日だったというカンナのために、夜、一同は歌を歌\nった。@

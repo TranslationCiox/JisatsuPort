@@ -6,7 +6,7 @@ LOAD4 BgAutoFadeIn REF3 J\x00 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x04\x
 
 LOAD6 .\\Data\\Script\\Bgm.Fob REF2 \x88\x00 REF_END2 
 LOAD2 PlayCD REF1 \xb2\x00 REF_END1 
-LOAD3 SCEK05_A01\x00\x1f\xce\x00 REF_END2 
+LOAD3 SCEK05_A01 REF6 \xce\x00 REF_END2 
 DIALOGUE_1 \xa8\xa6\x01\x0c\x00\x00\x00\x00"\x03\xb0\x00\x00
  
 　私は飢えた子猫みたいなものだった。@
@@ -22,7 +22,7 @@ DIALOGUE_1 \xa8\xa6\x01\x0c\x00\x00\x00\x00"\x03\xb0\x00\x00
 \x00 DIALOGUE_END \x12\x01 SEQ01
 LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xf2\x03 REF_END2 
 LOAD2 TextOn REF1  \x04 REF_END1 
-LOAD3 SCEK05_A02\x00\x1f<\x04 REF_END2 
+LOAD3 SCEK05_A02 REF6 <\x04 REF_END2 
 DIALOGUE_1 \xac\xa6\x01\x0c\x00\x00\x00\x00"\x03R\x00\x00
  
 秘密……これまで誰にも話したことのない、胸の中の暗い秘密を\n告白して、共有すること。@
@@ -31,7 +31,7 @@ DIALOGUE_1 \xac\xa6\x01\x0c\x00\x00\x00\x00"\x03R\x00\x00
 二度と逃げられないくらいに互いを縛り合って、深い海の底に一\n緒に沈んでいきたかった。\w\z
 \x00\x00\x00 DIALOGUE_END \x80\x04 SEQ01
 \x1f\xf2\x03 CALL3  \x04 REF_END1 
-LOAD3 SCEK05_A03\x00\x1f\x02\x06 REF_END2 
+LOAD3 SCEK05_A03 REF6 \x02\x06 REF_END2 
 DIALOGUE_1 \xb0\xa6\x01\x0c\x00\x00\x00\x00"\x03\x9e\x00\x00
  
 　私の提案に、ゆきは気乗りしない様子だった。@
@@ -45,7 +45,7 @@ DIALOGUE_1 \xb0\xa6\x01\x0c\x00\x00\x00\x00"\x03\x9e\x00\x00
 結局、私の熱意がゆきを説き伏せる形となった。\w\z
 \x00 DIALOGUE_END F\x06 SEQ01
 \x1f\xf2\x03 CALL3  \x04 REF_END1 
-LOAD3 SCEK05_A04\x00\x1f\xf8\x08 REF_END2 
+LOAD3 SCEK05_A04 REF6 \xf8\x08 REF_END2 
 DIALOGUE_1 \xb4\xa6\x01\x0c\x00\x00\x00\x00"\x03I\x00\x00
  
 　あまり話に関係がないから、私が何を告白したのかはここでは\n語らない。@
@@ -57,7 +57,7 @@ DIALOGUE_1 \xb4\xa6\x01\x0c\x00\x00\x00\x00"\x03I\x00\x00
 \x00 DIALOGUE_END <\t SEQ01
 \x1f\xf2\x03 CALL3  \x04 CALL2 \x88\x00 REF_END2 
 LOAD2 StopCD REF1 \xa6\n REF_END1 
-LOAD3 SCEK05_A05\x00\x1f\xc2\n REF_END2 
+LOAD3 SCEK05_A05 REF6 \xc2\n REF_END2 
 DIALOGUE_1 \xb8\xa6\x01\x0c\x00\x00\x00\x00"\x03\xe1\x00\x00
  
 　７月２７日（－－この日付が重要なの）。@

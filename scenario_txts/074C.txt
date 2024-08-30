@@ -1,6 +1,6 @@
 START_FILE
 \xc9\x05\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xa4\t3\x01\x00\x00\x00\xac\x04\x00
-LOAD3 SCE074_001\x00\x1f\x06\x00 REF_END2 
+LOAD3 SCE074_001 REF6 \x06\x00 REF_END2 
 DIALOGUE_1 @\x83 DIALOGUE_2 \xab\x00\x00
  
 拓司はまだ、『自殺波動』などというものを信じるつもりはない。\n\pしかし、なたねが、この狂った世界にわずかながら残されている\nいくつかの法則のようなものを知っていることだけは確かなよう\nに思えた。@
@@ -13,7 +13,7 @@ DIALOGUE_1 @\x83 DIALOGUE_2 \xab\x00\x00
 \x00\x00\x00 DIALOGUE_END J\x00 SEQ01
 LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \x16\x03 REF_END2 
 LOAD2 TextOn REF1 D\x03 REF_END1 
-LOAD3 SCE074_002\x00\x1f`\x03 REF_END2 
+LOAD3 SCE074_002 REF6 `\x03 REF_END2 
 DIALOGUE_1 D\x83 DIALOGUE_2 )\x00\x00
  
 路線変更をしてまもなく進んだとき、またもやなたねが静止をか\nけた。@

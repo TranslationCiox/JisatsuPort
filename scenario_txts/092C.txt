@@ -5,7 +5,7 @@ LOAD2 StopCD REF1 0\x00 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00 SEQ
 
 LOAD6 .\\Data\\Script\\Bg.Fob REF3 f\x00 REF_END2 
 LOAD4 BgAutoFadeIn REF3 \x90\x00 REF_END1 
-LOAD3 SCE092_001\x00\x1f\xb4\x00 REF_END2 
+LOAD3 SCE092_001 REF6 \xb4\x00 REF_END2 
 DIALOGUE_1 `\x9f DIALOGUE_2 \x11\x00\x00
  
 \n\n\n\n\n\n\n\n\n\n　　　　　　　　　　　　　　『２日目』\
@@ -13,7 +13,7 @@ DIALOGUE_1 `\x9f DIALOGUE_2 \x11\x00\x00
 \x00 DIALOGUE_END \xf8\x00 SEQ01
 LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \\\x01 REF_END2 
 LOAD2 TextOn REF1 \x8a\x01 REF_END1 
-LOAD3 SCE092_002\x00\x1f\xa6\x01 REF_END2 
+LOAD3 SCE092_002 REF6 \xa6\x01 REF_END2 
 DIALOGUE_1 d\x9f DIALOGUE_2 \x9b\x00\x00
  
 晴れ。@
@@ -27,7 +27,7 @@ DIALOGUE_1 d\x9f DIALOGUE_2 \x9b\x00\x00
 
  DIALOGUE_END \xea\x01 SEQ01
 \x1f\\\x01 CALL3 \x8a\x01 REF_END1 
-LOAD3 SCE092_003\x00\x1f\x90\x04 REF_END2 
+LOAD3 SCE092_003 REF6 \x90\x04 REF_END2 
 DIALOGUE_1 h\x9f DIALOGUE_2 \x9e\x00\x00
  
 なたね\n　「いえば、秩序の維持に多大な影響が出るからです。\pたとえば\n　　……たとえばですよ？\p　食糧の備蓄が３日分しかないと分か\n　　ったら、みなさんはどうしますか？」@
@@ -40,7 +40,7 @@ DIALOGUE_1 h\x9f DIALOGUE_2 \x9e\x00\x00
 
 \x00\x00\x00 DIALOGUE_END \xd4\x04 SEQ01
 \x1f\\\x01 CALL3 \x8a\x01 REF_END1 
-LOAD3 SCE092_004\x00\x1f\x86\x07 REF_END2 
+LOAD3 SCE092_004 REF6 \x86\x07 REF_END2 
 DIALOGUE_1 l\x9f DIALOGUE_2 \x9f\x00\x00
  
 御堂\n　「……３日分しかないってのは……本当なのか？」@

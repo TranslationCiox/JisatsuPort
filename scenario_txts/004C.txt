@@ -1,6 +1,6 @@
 START_FILE
 d\x03\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x80\x044\x01\x00\x00\x00h\x02\x00
-LOAD3 SCE004_001\x00\x1f\x06\x00 REF_END2 
+LOAD3 SCE004_001 REF6 \x06\x00 REF_END2 
 DIALOGUE_1 \xe0\x15 DIALOGUE_2 \x07\x00\x00.\\Data\\Script\\TextFunc.fob REF1 J\x00 REF_END2 
 LOAD6 CheckNormalMessageSkip REF1 x\x00 REF_END1 LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xa4\x00 REF_END2 LOAD5 TextWindowOffDirect\x1f\xd2\x00 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e,\x01 SEQ01
 

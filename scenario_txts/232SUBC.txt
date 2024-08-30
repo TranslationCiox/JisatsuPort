@@ -1,6 +1,6 @@
 START_FILE
 j$\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00, \x00
-LOAD3 SCE232_004\x00\x1f\x06\x00 REF_END2 
+LOAD3 SCE232_004 REF6 \x06\x00 REF_END2 
 DIALOGUE_1 ,z\x01\x0c\x00\x00\x00\x00"\x03\xa2\x00\x00
  
 　けれども最近、なたねには、お義父さんにもいえない秘密があ\nったのです。@
@@ -13,7 +13,7 @@ DIALOGUE_1 ,z\x01\x0c\x00\x00\x00\x00"\x03\xa2\x00\x00
 \x00 DIALOGUE_END J\x00 SEQ01
 LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xf2\x02 REF_END2 
 LOAD2 TextOn REF1  \x03 REF_END1 
-LOAD3 SCE232_005\x00\x1f<\x03 REF_END2 
+LOAD3 SCE232_005 REF6 <\x03 REF_END2 
 DIALOGUE_1 0z\x01\x0c\x00\x00\x00\x00"\x03\xdc\x00\x00
  
 　宇宙人の夢を見た朝は、とても嫌な気分になりました。@
@@ -28,7 +28,7 @@ DIALOGUE_1 0z\x01\x0c\x00\x00\x00\x00"\x03\xdc\x00\x00
 
 \x00 DIALOGUE_END \x80\x03 SEQ01
 \x1f\xf2\x02 CALL3  \x03 REF_END1 
-LOAD3 SCE232_006\x00\x1f*\x07 REF_END2 
+LOAD3 SCE232_006 REF6 *\x07 REF_END2 
 DIALOGUE_1 4z\x01\x0c\x00\x00\x00\x00"\x03\xf6\x00\x00
  
 　その夜、なたねはお義父さんの部屋のドアをノックしました。@
@@ -45,7 +45,7 @@ DIALOGUE_1 4z\x01\x0c\x00\x00\x00\x00"\x03\xf6\x00\x00
 
 \x00\x00\x00 DIALOGUE_END n\x07 SEQ01
 \x1f\xf2\x02 CALL3  \x03 REF_END1 
-LOAD3 SCE232_007\x00\x1f\x80\x0b REF_END2 
+LOAD3 SCE232_007 REF6 \x80\x0b REF_END2 
 DIALOGUE_1 8z\x01\x0c\x00\x00\x00\x00"\x03\xdd\x00\x00
  
 　その写真は、金髪の女の子が、大人の男の人にいやらしいこと\nをされている写真でした。@
@@ -55,7 +55,7 @@ DIALOGUE_1 8z\x01\x0c\x00\x00\x00\x00"\x03\xdd\x00\x00
 
 \x00 DIALOGUE_END \xc4\x0b SEQ01
 \x1f\xf2\x02 CALL3  \x03 REF_END1 
-LOAD3 SCE232_008\x00\x1fr\x0f REF_END2 
+LOAD3 SCE232_008 REF6 r\x0f REF_END2 
 DIALOGUE_1 <z\x01\x0c\x00\x00\x00\x00"\x03\xf8\x00\x00
  
 　神様がそんなことをお見逃しになるはずがありません。@
@@ -70,7 +70,7 @@ DIALOGUE_1 <z\x01\x0c\x00\x00\x00\x00"\x03\xf8\x00\x00
 
 \x00\x00\x00 DIALOGUE_END \xb6\x0f SEQ01
 \x1f\xf2\x02 CALL3  \x03 REF_END1 
-LOAD3 SCE232_009\x00\x1f\xd0\x13 REF_END2 
+LOAD3 SCE232_009 REF6 \xd0\x13 REF_END2 
 DIALOGUE_1 @z\x01\x0c\x00\x00\x00\x00"\x03\xd3\x00\x00
  
 　宇宙人がいつもどおりになたねの身体にのしかかったとき、な\nたねはコッソリと枕の下に手を入れました。\p指の先に、眠る前に\n隠しておいた黒くて長い針がひんやりと触れました。@
@@ -88,7 +88,7 @@ DIALOGUE_1 @z\x01\x0c\x00\x00\x00\x00"\x03\xd3\x00\x00
 
 LOAD6 .\\Data\\Script\\Bg.Fob REF3 \xb4\x17 REF_END2 
 LOAD2 BgOn REF3 \xde\x17 REF_END1 
-LOAD3 SCE232_010\x00\x1f\xfa\x17 REF_END2 
+LOAD3 SCE232_010 REF6 \xfa\x17 REF_END2 
 DIALOGUE_1 Dz\x01\x0c\x00\x00\x00\x00"\x03\xa2\x00\x00
  
 　なたねは宇宙人の大きな黒い目に、ぐさりと長い針を突き刺し\nました。@
@@ -102,7 +102,7 @@ DIALOGUE_1 Dz\x01\x0c\x00\x00\x00\x00"\x03\xa2\x00\x00
 \x1f\xf2\x02 CALL3  \x03 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00 SEQ01
 \x1f\xb4\x17 REF_END2 
 LOAD4 BgAutoFadeIn REF3 &\x1b REF_END1 
-LOAD3 SCE232_011\x00\x1fJ\x1b REF_END2 
+LOAD3 SCE232_011 REF6 J\x1b REF_END2 
 DIALOGUE_1 Hz\x01\x0c\x00\x00\x00\x00"\x03|\x00\x00
  
 　うううううう@
@@ -124,7 +124,7 @@ DIALOGUE_1 Hz\x01\x0c\x00\x00\x00\x00"\x03|\x00\x00
 \x00 DIALOGUE_END \x8e\x1b SEQ01
 \x1f\xf2\x02 CALL3  \x03 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xcb\x00 SEQ01
 \x1f\xb4\x17 CALL3 \xde\x17 REF_END1 
-LOAD3 SCE232_012\x00\x1f\xec\x1d REF_END2 
+LOAD3 SCE232_012 REF6 \xec\x1d REF_END2 
 DIALOGUE_1 Lz\x01\x0c\x00\x00\x00\x00"\x03f\x00\x00
  
 　そこには、宇宙人のゴムマスクを被ったお義父さんが立ってい\n　ました。@

@@ -2,7 +2,7 @@ START_FILE
 \xeb\x03\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xa4\t3\x01\x00\x00\x00\xac\x02\x00
 LOAD6 .\\Data\\Script\\Bgm.Fob REF2 \x06\x00 REF_END2 
 LOAD2 StopCD REF1 0\x00 REF_END1 
-LOAD3 SCE215_001\x00\x1fL\x00 REF_END2 
+LOAD3 SCE215_001 REF6 L\x00 REF_END2 
 DIALOGUE_1 \x90_\x01\x0c\x00\x00\x00\x00"\x03\x11\x00\x00
  
 \n\n\n\n\n\n\n\n\n\n　　　　　　　　　　　　　『７日目』\
@@ -12,7 +12,7 @@ LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xf4\x00 REF_END2
 LOAD2 TextOn REF1 "\x01 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x0c\x01 SEQ01
 \x1f\x06\x00 REF_END2 
 LOAD2 PlayCD REF1 d\x01 REF_END1 
-LOAD3 SCE215_002\x00\x1f\x80\x01 REF_END2 
+LOAD3 SCE215_002 REF6 \x80\x01 REF_END2 
 DIALOGUE_1 \x94_\x01\x0c\x00\x00\x00\x00"\x03!\x00\x00
  
 目立った衝突はない。@

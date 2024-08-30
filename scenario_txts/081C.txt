@@ -1,6 +1,6 @@
 START_FILE
 A.\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00 '\x00
-LOAD3 SCE081_001\x00\x1f\x06\x00 REF_END2 
+LOAD3 SCE081_001 REF6 \x06\x00 REF_END2 
 DIALOGUE_1 0\x8e DIALOGUE_2 \x06\x00\x00.\\Data\\Script\\Bgm.Fob REF2 J\x00 REF_END2 
 LOAD2 StopCD REF1 t\x00 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc9\x00 SEQ01
 
@@ -26,7 +26,7 @@ LOAD2 SePlay REF1 R\x01 REF_END1 \x03}\x00\x00
 \x00\x00\x00 DIALOGUE_END n\x01 SEQ01
 LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \x82\x03 REF_END2 
 LOAD2 TextOn REF1 \xb0\x03 REF_END1 
-LOAD3 SCE081_002\x00\x1f\xcc\x03 REF_END2 
+LOAD3 SCE081_002 REF6 \xcc\x03 REF_END2 
 DIALOGUE_1 4\x8e DIALOGUE_2 \x8c\x00\x00
  
 以前授業中に見た夢の世界だ。\p白い部屋だ。@
@@ -41,7 +41,7 @@ DIALOGUE_1 4\x8e DIALOGUE_2 \x8c\x00\x00
 
 \x00 DIALOGUE_END \x10\x04 SEQ01
 \x1f\x82\x03 CALL3 \xb0\x03 REF_END1 
-LOAD3 SCE081_003\x00\x1fz\x06 REF_END2 
+LOAD3 SCE081_003 REF6 z\x06 REF_END2 
 DIALOGUE_1 8\x8e DIALOGUE_2 p\x00\x00
  
 どこかで聞いたことがある名前だと記憶を探れば、前回も夢の中\nで、『教授』という名前が登場したような気がする。@
@@ -52,7 +52,7 @@ DIALOGUE_1 8\x8e DIALOGUE_2 p\x00\x00
 
 \x00 DIALOGUE_END \xbe\x06 SEQ01
 \x1f\x82\x03 CALL3 \xb0\x03 REF_END1 
-LOAD3 SCE081_004\x00\x1f\xb8\x08 REF_END2 
+LOAD3 SCE081_004 REF6 \xb8\x08 REF_END2 
 DIALOGUE_1 <\x8e DIALOGUE_2 z\x00\x00
  
 教授\n　「前回までの経験に基づいて、単刀直入に話を進めさせてもら\n　　うよ」@
@@ -63,7 +63,7 @@ DIALOGUE_1 <\x8e DIALOGUE_2 z\x00\x00
 
 \x00 DIALOGUE_END \xfc\x08 SEQ01
 \x1f\x82\x03 CALL3 \xb0\x03 REF_END1 
-LOAD3 SCE081_005\x00\x1f\x1e\x0b REF_END2 
+LOAD3 SCE081_005 REF6 \x1e\x0b REF_END2 
 DIALOGUE_1 @\x8e DIALOGUE_2 \xa9\x00\x00
  
 拓司は小さく頷いた。\pこれは一体なんの冗談なのだろう？@
@@ -75,7 +75,7 @@ DIALOGUE_1 @\x8e DIALOGUE_2 \xa9\x00\x00
 
 \x00\x00\x00 DIALOGUE_END b\x0b SEQ01
 \x1f\x82\x03 CALL3 \xb0\x03 REF_END1 
-LOAD3 SCE081_006\x00\x1f@\x0e REF_END2 
+LOAD3 SCE081_006 REF6 @\x0e REF_END2 
 DIALOGUE_1 D\x8e DIALOGUE_2 V\x00\x00
  
 拓司\n　「待ってください」@
@@ -87,7 +87,7 @@ DIALOGUE_1 D\x8e DIALOGUE_2 V\x00\x00
 
 \x00\x00\x00 DIALOGUE_END \x84\x0e SEQ01
 \x1f\x82\x03 CALL3 \xb0\x03 REF_END1 
-LOAD3 SCE081_007\x00\x1f\x16\x10 REF_END2 
+LOAD3 SCE081_007 REF6 \x16\x10 REF_END2 
 DIALOGUE_1 H\x8e DIALOGUE_2 \x88\x00\x00
  
 拓司\n　「今回？」@
@@ -100,7 +100,7 @@ DIALOGUE_1 H\x8e DIALOGUE_2 \x88\x00\x00
 
 \x00 DIALOGUE_END Z\x10 SEQ01
 \x1f\x82\x03 CALL3 \xb0\x03 REF_END1 
-LOAD3 SCE081_008\x00\x1f\xb4\x12 REF_END2 
+LOAD3 SCE081_008 REF6 \xb4\x12 REF_END2 
 DIALOGUE_1 L\x8e DIALOGUE_2 \xab\x00\x00
  
 教授\n　「君は夢に感化されているのだよ。\p記憶喪失によって真っ白に\n　　なった君の意識に、夢が刷り込まれて、君はそれが真実だと\n　　認識する。\p今回は、それが『虎菱拓司の夢』だったというわ\n　　けだ」@
@@ -114,7 +114,7 @@ DIALOGUE_1 L\x8e DIALOGUE_2 \xab\x00\x00
 
 \x00 DIALOGUE_END \xf8\x12 SEQ01
 \x1f\x82\x03 CALL3 \xb0\x03 REF_END1 
-LOAD3 SCE081_009\x00\x1f\xde\x15 REF_END2 
+LOAD3 SCE081_009 REF6 \xde\x15 REF_END2 
 DIALOGUE_1 P\x8e DIALOGUE_2 \xa7\x00\x00
  
 教授\n　「混乱しているね。\pいつも目覚めた直後はそうだよ。@
@@ -127,7 +127,7 @@ DIALOGUE_1 P\x8e DIALOGUE_2 \xa7\x00\x00
 
 \x00\x00\x00 DIALOGUE_END "\x16 SEQ01
 \x1f\x82\x03 CALL3 \xb0\x03 REF_END1 
-LOAD3 SCE081_010\x00\x1f\xf8\x18 REF_END2 
+LOAD3 SCE081_010 REF6 \xf8\x18 REF_END2 
 DIALOGUE_1 T\x8e DIALOGUE_2 \xbb\x00\x00
  
 拓司\n　「ここは……どこなんですか？」@
@@ -139,7 +139,7 @@ DIALOGUE_1 T\x8e DIALOGUE_2 \xbb\x00\x00
 
 \x00 DIALOGUE_END <\x19 SEQ01
 \x1f\x82\x03 CALL3 \xb0\x03 REF_END1 
-LOAD3 SCE081_011\x00\x1fb\x1c REF_END2 
+LOAD3 SCE081_011 REF6 b\x1c REF_END2 
 DIALOGUE_1 X\x8e DIALOGUE_2 U\x00\x00
  
 教授は白衣の胸から煙草を取り出し、口にくわえた。@
@@ -155,7 +155,7 @@ DIALOGUE_1 X\x8e DIALOGUE_2 U\x00\x00
 \x1f\xaa\x00 CALL3 \xd4\x00 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x08\x01 SEQ01
 \x1fJ\x00 REF_END2 
 LOAD2 PlayCD REF1 \x8e\x1e REF_END1 
-LOAD3 SCE081_012\x00\x1f\xaa\x1e REF_END2 
+LOAD3 SCE081_012 REF6 \xaa\x1e REF_END2 
 DIALOGUE_1 \\\x8e DIALOGUE_2 \x9e\x00\x00
  
 雲居なたねだった。\p看護婦の横に立っているのは間違いなく雲\n居なたねだ。@
@@ -167,7 +167,7 @@ DIALOGUE_1 \\\x8e DIALOGUE_2 \x9e\x00\x00
 
 \x00 DIALOGUE_END \xee\x1e SEQ01
 \x1f\x82\x03 CALL3 \xb0\x03 REF_END1 
-LOAD3 SCE081_013\x00\x1f\xa0! REF_END2 
+LOAD3 SCE081_013 REF6 \xa0! REF_END2 
 DIALOGUE_1 `\x8e DIALOGUE_2 \x82\x00\x00
  
 拓司\n　「雲居なたねさん。\p俺の……夢の中の学園の同級生です。@
@@ -179,7 +179,7 @@ DIALOGUE_1 `\x8e DIALOGUE_2 \x82\x00\x00
 
 \x00 DIALOGUE_END \xe4! SEQ01
 \x1f\x82\x03 CALL3 \xb0\x03 REF_END1 
-LOAD3 SCE081_014\x00\x1f&$ REF_END2 
+LOAD3 SCE081_014 REF6 &$ REF_END2 
 DIALOGUE_1 d\x8e DIALOGUE_2 w\x00\x00
  
 教授\n　「残念だがそれはできない。\p彼女は今、鎮静剤を投与されて朦\n　　朧状態だからね。\pなにしろ凶暴な子でね、部屋から出すとき\n　　はこうでもしないと暴れ回って始末に負えないのだよ」@

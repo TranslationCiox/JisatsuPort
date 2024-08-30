@@ -3,7 +3,7 @@ x(\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\x92!\x00 \
 
 LOAD6 .\\Data\\Script\\Bg.Fob REF3  \x00 REF_END2 
 LOAD4 BgAutoFadeIn REF3 J\x00 REF_END1 
-LOAD3 SCE044_001\x00\x1fn\x00 REF_END2 
+LOAD3 SCE044_001 REF6 n\x00 REF_END2 
 DIALOGUE_1 `T DIALOGUE_2 V\x00\x00
  
 職員室で、錦城が「これよ」と指さしたダンボール箱は、意外と\n小さかった。@
@@ -13,7 +13,7 @@ DIALOGUE_1 `T DIALOGUE_2 V\x00\x00
 \x00 DIALOGUE_END \xb2\x00 SEQ01
 LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 *\x02 REF_END2 
 LOAD2 TextOn REF1 X\x02 REF_END1 
-LOAD3 SCE044_002\x00\x1ft\x02 REF_END2 
+LOAD3 SCE044_002 REF6 t\x02 REF_END2 
 DIALOGUE_1 dT DIALOGUE_2 y\x00\x00
  
 　理科準備室は、旧校舎の最上階、４階にある。@
@@ -25,7 +25,7 @@ DIALOGUE_1 dT DIALOGUE_2 y\x00\x00
 \x00 DIALOGUE_END \xb8\x02 SEQ01
 \x1f*\x02 CALL3 X\x02 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x0f\x00 SEQ01
 \x1f \x00 CALL3 J\x00 REF_END1 
-LOAD3 SCE044_003\x00\x1f\n\x05 REF_END2 
+LOAD3 SCE044_003 REF6 \n\x05 REF_END2 
 DIALOGUE_1 hT DIALOGUE_2 o\x00\x00
  
 錦城\n　「ご苦労様。そのへんの隅に置いてくれればいいわ」@
@@ -39,7 +39,7 @@ DIALOGUE_1 hT DIALOGUE_2 o\x00\x00
 拓司\n　「はあ。でも、いいんですか、こんなところに荷物置いて」\w\z
 \x00 DIALOGUE_END N\x05 SEQ01
 \x1f*\x02 CALL3 X\x02 REF_END1 
-LOAD3 SCE044_004\x00\x1fD\x07 REF_END2 
+LOAD3 SCE044_004 REF6 D\x07 REF_END2 
 DIALOGUE_1 lT DIALOGUE_2 L\x00\x00
  
 錦城\n　「いいのよ。ここだけの話だけれど、他の先生方もやっている\n　　ことなの。\pなんでもかんでも置いておくには、職員室は狭\n　　すぎて。\pだから、４階は秘密の物置と化している、と。\n　　そういうわけ」@
@@ -49,7 +49,7 @@ DIALOGUE_1 lT DIALOGUE_2 L\x00\x00
 \x00\x00\x00 DIALOGUE_END \x88\x07 SEQ01
 \x1f*\x02 CALL3 X\x02 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00 SEQ01
 \x1f \x00 CALL3 J\x00 REF_END1 
-LOAD3 SCE044_005\x00\x1f&\t REF_END2 
+LOAD3 SCE044_005 REF6 &\t REF_END2 
 DIALOGUE_1 pT DIALOGUE_2 ?\x00\x00
  
 　錦城はそういって窓まで歩いてゆき、鍵を外して窓をスライド\nさせた。@
@@ -58,7 +58,7 @@ DIALOGUE_1 pT DIALOGUE_2 ?\x00\x00
 風は、錦城の長い髪をさらさらと揺らして、やがてぴたりと止ん\nだ。\w\z
 \x00 DIALOGUE_END j\t SEQ01
 \x1f*\x02 CALL3 X\x02 REF_END1 
-LOAD3 SCE044_006\x00\x1f\xa0\n REF_END2 
+LOAD3 SCE044_006 REF6 \xa0\n REF_END2 
 DIALOGUE_1 tT DIALOGUE_2 g\x00\x00
  
 錦城\n　「理科実験室って、どこか懐かしい感じがする。@
@@ -74,7 +74,7 @@ DIALOGUE_1 tT DIALOGUE_2 g\x00\x00
 \x1f*\x02 CALL3 X\x02 REF_END1 
 LOAD6 .\\Data\\Script\\Bgm.Fob REF2 \xba\x0c REF_END2 
 LOAD2 StopCD REF1 \xe4\x0c REF_END1 
-LOAD3 SCE044_007\x00\x1f\x00\r REF_END2 
+LOAD3 SCE044_007 REF6 \x00\r REF_END2 
 DIALOGUE_1 xT DIALOGUE_2 c\x00\x00
  
 　錦城はいたずらっぽく笑った。@
@@ -84,7 +84,7 @@ DIALOGUE_1 xT DIALOGUE_2 c\x00\x00
 拓司はどこに座るべきか一瞬悩んだが、離れすぎるのもおかしい\nような気がして、錦城の向かいのテーブルに同じように腰を下ろ\nした。\w\z
 \x00 DIALOGUE_END D\r SEQ01
 \x1f*\x02 CALL3 X\x02 REF_END1 
-LOAD3 SCE044_008\x00\x1f\n\x0f REF_END2 
+LOAD3 SCE044_008 REF6 \n\x0f REF_END2 
 DIALOGUE_1 |T DIALOGUE_2 }\x00\x00
  
 錦城\n　「そうだな、どこから話そうかな」@
@@ -96,7 +96,7 @@ DIALOGUE_1 |T DIALOGUE_2 }\x00\x00
 拓司\n　「……」\w\z
 \x00\x00\x00 DIALOGUE_END N\x0f SEQ01
 \x1f*\x02 CALL3 X\x02 REF_END1 
-LOAD3 SCE044_009\x00\x1f|\x11 REF_END2 
+LOAD3 SCE044_009 REF6 |\x11 REF_END2 
 DIALOGUE_1 \x80T DIALOGUE_2 \x94\x00\x00
  
 錦城\n　「六限最後の授業が化学の実験でね。私と、その子が、あとか\n　　たづけ役に指名されてしまって。@
@@ -108,7 +108,7 @@ DIALOGUE_1 \x80T DIALOGUE_2 \x94\x00\x00
 　　どうしよう、ってドキドキし始めちゃってね、こう、俯いて\n　　いたら、その子がこうやって立ち上がって－－」\w\z
 \x00\x00\x00 DIALOGUE_END \xc0\x11 SEQ01
 \x1f*\x02 CALL3 X\x02 REF_END1 
-LOAD3 SCE044_010\x00\x1fJ\x14 REF_END2 
+LOAD3 SCE044_010 REF6 J\x14 REF_END2 
 DIALOGUE_1 \x84T DIALOGUE_2 8\x00\x00
  
 　錦城はすっと立ち上がって身体を移し、拓司のすぐ隣に座りな\nおした。@
@@ -118,7 +118,7 @@ DIALOGUE_1 \x84T DIALOGUE_2 8\x00\x00
 拓司\n　「……」\w\z
 \x00\x00\x00 DIALOGUE_END \x8e\x14 SEQ01
 \x1f*\x02 CALL3 X\x02 REF_END1 
-LOAD3 SCE044_011\x00\x1f\xa8\x15 REF_END2 
+LOAD3 SCE044_011 REF6 \xa8\x15 REF_END2 
 DIALOGUE_1 \x88T DIALOGUE_2 g\x00\x00
  
 　拓司はなんと言えばいいのかわからず、どきまぎとうつむくし\nかなかった。@
@@ -130,7 +130,7 @@ DIALOGUE_1 \x88T DIALOGUE_2 g\x00\x00
 錦城の手がすうっと延び、拓司の腿のあたりにそっと重ねられ\nた。\w\z
 \x00 DIALOGUE_END \xec\x15 SEQ01
 \x1f*\x02 CALL3 X\x02 REF_END1 
-LOAD3 SCE044_012\x00\x1f\xc2\x17 REF_END2 
+LOAD3 SCE044_012 REF6 \xc2\x17 REF_END2 
 DIALOGUE_1 \x8cT DIALOGUE_2 <\x00\x00
  
 拓司\n　「？！」@
@@ -141,7 +141,7 @@ DIALOGUE_1 \x8cT DIALOGUE_2 <\x00\x00
 錦城\n　「ふふ……人の経験は聞けても、自分の経験は話せない？」\w\z
 \x00\x00\x00 DIALOGUE_END \x06\x18 SEQ01
 \x1f*\x02 CALL3 X\x02 REF_END1 
-LOAD3 SCE044_013\x00\x1f0\x19 REF_END2 
+LOAD3 SCE044_013 REF6 0\x19 REF_END2 
 DIALOGUE_1 \x90T DIALOGUE_2 ^\x00\x00
  
 拓司\n　「はあ。まあ。パス１ってことで」@
@@ -155,7 +155,7 @@ DIALOGUE_1 \x90T DIALOGUE_2 ^\x00\x00
 拓司\n　「思わないですよ」\w\z
 \x00 DIALOGUE_END t\x19 SEQ01
 \x1f*\x02 CALL3 X\x02 REF_END1 
-LOAD3 SCE044_014\x00\x1f&\x1b REF_END2 
+LOAD3 SCE044_014 REF6 &\x1b REF_END2 
 DIALOGUE_1 \x94T DIALOGUE_2 :\x00\x00
  
 拓司は軽くいった。@
@@ -164,7 +164,7 @@ DIALOGUE_1 \x94T DIALOGUE_2 :\x00\x00
 そしていま、柔らかな笑みを浮かべている錦城は、２０歳そこそ\nこといわれても信じてしまうような若々しさがあった。\w\z
 \x00\x00\x00 DIALOGUE_END j\x1b SEQ01
 \x1f*\x02 CALL3 X\x02 REF_END1 
-LOAD3 SCE044_015\x00\x1f\x8c\x1c REF_END2 
+LOAD3 SCE044_015 REF6 \x8c\x1c REF_END2 
 DIALOGUE_1 \x98T DIALOGUE_2 T\x00\x00
  
 拓司\n　「先生、歳のこと気にしてるんですか？」@
@@ -176,7 +176,7 @@ DIALOGUE_1 \x98T DIALOGUE_2 T\x00\x00
 拓司\n　「本当ですってば」\w\z
 \x00 DIALOGUE_END \xd0\x1c SEQ01
 \x1f*\x02 CALL3 X\x02 REF_END1 
-LOAD3 SCE044_016\x00\x1fZ\x1e REF_END2 
+LOAD3 SCE044_016 REF6 Z\x1e REF_END2 
 DIALOGUE_1 \x9cT DIALOGUE_2 4\x00\x00
  
 錦城\n　「じゃあ、たとえば、先生を見て、いやらしい気持ちになった\n　　りする？」@
@@ -186,7 +186,7 @@ DIALOGUE_1 \x9cT DIALOGUE_2 4\x00\x00
 拓司は頭を掻いて、いった。\w\z
 \x00 DIALOGUE_END \x9e\x1e SEQ01
 \x1f*\x02 CALL3 X\x02 REF_END1 
-LOAD3 SCE044_017\x00\x1f\xa8\x1f REF_END2 
+LOAD3 SCE044_017 REF6 \xa8\x1f REF_END2 
 DIALOGUE_1 \xa0T DIALOGUE_2 <\x00\x00
  
 拓司\n　「……まあ、おれも男なんで。きれいな人を見れば、\n　　そういう気持ちになったりはします」@

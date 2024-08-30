@@ -1,6 +1,6 @@
 START_FILE
 \xe0.\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00((\x00
-LOAD3 SCE010_001\x00\x1f\x06\x00 REF_END2 
+LOAD3 SCE010_001 REF6 \x06\x00 REF_END2 
 DIALOGUE_1 @\x1f DIALOGUE_2 \x11\x00\x00
  
 \n\n\n\n\n\n\n\n\n　　　　　　　　　　　『虎菱家の食卓』\
@@ -8,7 +8,7 @@ DIALOGUE_1 @\x1f DIALOGUE_2 \x11\x00\x00
 \x00\x00\x00 DIALOGUE_END J\x00 SEQ01
 LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xae\x00 REF_END2 
 LOAD2 TextOn REF1 \xdc\x00 REF_END1 
-LOAD3 SCE010_002\x00\x1f\xf8\x00 REF_END2 
+LOAD3 SCE010_002 REF6 \xf8\x00 REF_END2 
 DIALOGUE_1 D\x1f DIALOGUE_2 a\x00\x00
  
 　朝。@
@@ -23,7 +23,7 @@ DIALOGUE_1 D\x1f DIALOGUE_2 a\x00\x00
 
 \x00\x00\x00 DIALOGUE_END <\x01 SEQ01
 \x1f\xae\x00 CALL3 \xdc\x00 REF_END1 
-LOAD3 SCE010_003\x00\x1f\xfa\x02 REF_END2 
+LOAD3 SCE010_003 REF6 \xfa\x02 REF_END2 
 DIALOGUE_1 H\x1f DIALOGUE_2 \x0b\x00\x00
  
 　『死ぬ』こと。@
@@ -31,7 +31,7 @@ DIALOGUE_1 H\x1f DIALOGUE_2 \x0b\x00\x00
 
 \x00 DIALOGUE_END >\x03 SEQ01
 \x1f\xae\x00 CALL3 \xdc\x00 REF_END1 
-LOAD3 SCE010_004\x00\x1f\xa4\x03 REF_END2 
+LOAD3 SCE010_004 REF6 \xa4\x03 REF_END2 
 DIALOGUE_1 L\x1f DIALOGUE_2 c\x00\x00
  
 　いまや拓司にとって、死を真剣に考えることこそが、生者とし\n　ての自分を実感する唯一の方法だった。\p死に備わる様々な要素\n　－－痛みであるとか、出血であるとか、恐怖であるとか－－は、\n　まだ、リアルなものとして拓司の中に残っている。@
@@ -40,7 +40,7 @@ DIALOGUE_1 L\x1f DIALOGUE_2 c\x00\x00
 
 \x00 DIALOGUE_END \xe8\x03 SEQ01
 \x1f\xae\x00 CALL3 \xdc\x00 REF_END1 
-LOAD3 SCE010_005\x00\x1f\xae\x05 REF_END2 
+LOAD3 SCE010_005 REF6 \xae\x05 REF_END2 
 DIALOGUE_1 P\x1f DIALOGUE_2 X\x00\x00
  
 　その死を、生と並べて置く。@
@@ -54,7 +54,7 @@ DIALOGUE_1 P\x1f DIALOGUE_2 X\x00\x00
 
 \x00\x00\x00 DIALOGUE_END \xf2\x05 SEQ01
 \x1f\xae\x00 CALL3 \xdc\x00 REF_END1 
-LOAD3 SCE010_006\x00\x1f\x8c\x07 REF_END2 
+LOAD3 SCE010_006 REF6 \x8c\x07 REF_END2 
 DIALOGUE_1 T\x1f DIALOGUE_2 \xa6\x00\x00
  
 　しかし、リアルに死を想像することは、なかなか難しい。@
@@ -69,7 +69,7 @@ DIALOGUE_1 T\x1f DIALOGUE_2 \xa6\x00\x00
 
 \x00 DIALOGUE_END \xd0\x07 SEQ01
 \x1f\xae\x00 CALL3 \xdc\x00 REF_END1 
-LOAD3 SCE010_007\x00\x1f\xa2\n REF_END2 
+LOAD3 SCE010_007 REF6 \xa2\n REF_END2 
 DIALOGUE_1 X\x1f\x00\x0c\x00\x00\x00\x00" \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x00\x00\x00 SEQ01
  \x1e\x04\x00\x00\r\x00\x00\x1e\x07\x00 SEQ01
  \x1e\x08\x00\x00\r\x00\x00\x1e\x00\x00\x00 SEQ01
@@ -84,7 +84,7 @@ LOAD3 SePlayEx REF3 ^\x0b REF_END1 \x03d\x00\x00
 
 \x00 DIALOGUE_END ~\x0b SEQ01
 \x1f\xae\x00 CALL3 \xdc\x00 REF_END1 
-LOAD3 SCE010_008\x00\x1fH\r REF_END2 
+LOAD3 SCE010_008 REF6 H\r REF_END2 
 DIALOGUE_1 \\\x1f DIALOGUE_2 \xcb\x00\x00
  
 アナウンサー\n　「あ！　ありますあります！」@
@@ -94,7 +94,7 @@ DIALOGUE_1 \\\x1f DIALOGUE_2 \xcb\x00\x00
 
 \x00 DIALOGUE_END \x8c\r SEQ01
 \x1f\xae\x00 CALL3 \xdc\x00 REF_END1 
-LOAD3 SCE010_009\x00\x1f\xf2\x10 REF_END2 
+LOAD3 SCE010_009 REF6 \xf2\x10 REF_END2 
 DIALOGUE_1 `\x1f DIALOGUE_2 j\x00\x00
  
 アナウンサー\n　「自分の後ろに幽霊がいるかもしれないわけですから！」@
@@ -104,7 +104,7 @@ DIALOGUE_1 `\x1f DIALOGUE_2 j\x00\x00
 
 \x00 DIALOGUE_END 6\x11 SEQ01
 \x1f\xae\x00 CALL3 \xdc\x00 REF_END1 
-LOAD3 SCE010_010\x00\x1f\x18\x13 REF_END2 
+LOAD3 SCE010_010 REF6 \x18\x13 REF_END2 
 DIALOGUE_1 d\x1f DIALOGUE_2 \xb5\x00\x00
  
 コメンテーター\n　「一時話題になった、インターネットの『自殺系サイト』を見\n　　ると、わりと分かりやすい。@
@@ -115,7 +115,7 @@ DIALOGUE_1 d\x1f DIALOGUE_2 \xb5\x00\x00
 
 \x00 DIALOGUE_END \\\x13 SEQ01
 \x1f\xae\x00 CALL3 \xdc\x00 REF_END1 
-LOAD3 SCE010_011\x00\x1fj\x16 REF_END2 
+LOAD3 SCE010_011 REF6 j\x16 REF_END2 
 DIALOGUE_1 h\x1f DIALOGUE_2 \xdc\x00\x00
  
 コメンテーター\n　「ええと……自己紹介ホームページの開設ブームなどを見れば\n　　わかるとおり、人間には、自己をアピールしたい、『私』を\n　　語りたい、という欲求があるわけです。@
@@ -125,7 +125,7 @@ DIALOGUE_1 h\x1f DIALOGUE_2 \xdc\x00\x00
 
 \x00 DIALOGUE_END \xae\x16 SEQ01
 \x1f\xae\x00 CALL3 \xdc\x00 REF_END1 
-LOAD3 SCE010_012\x00\x1fX\x1a REF_END2 
+LOAD3 SCE010_012 REF6 X\x1a REF_END2 
 DIALOGUE_1 l\x1f DIALOGUE_2 \x91\x00\x00
  
 コメンテーター\n　「このところ『殺人』や『死体写真』などのサブカルチャーが\n　　幅を利かせているのも、競争相手の多いメインカルチャーの\n　　なかで浮上するのがしんどい、という側面があると思うんで\n　　すよ。\p『スノーボードがうまい私』という個性を自分特有の\n　　ものとして確立するのは難しいけれど、『死体写真を集めて\n　　いる変わった私』という個性は簡単に完成するわけです。\p同\n　　じように、『自殺したい』『手首を切ったことがある』とい\n　　うのは、ゼロから生むことができる、安易かつ強力な武器で\n　　あるわけです」@
@@ -133,7 +133,7 @@ DIALOGUE_1 l\x1f DIALOGUE_2 \x91\x00\x00
 
 \x00\x00\x00 DIALOGUE_END \x9c\x1a SEQ01
 \x1f\xae\x00 CALL3 \xdc\x00 REF_END1 
-LOAD3 SCE010_013\x00\x1f\x1a\x1d REF_END2 
+LOAD3 SCE010_013 REF6 \x1a\x1d REF_END2 
 DIALOGUE_1 p\x1f DIALOGUE_2 \xb8\x00\x00
  
 ゲスト\n　「まあ、精神的とか経済的にネ、追いつめられて、真剣に自殺\n　　を考えている人はいるわけなんで、あまり軽々しくは言えな\n　　いんだけどネ。\p若いのがネ、死ぬとかナントカいうのはネ、\n　　要するにネ、ボクラが若いころ、哲学や政治にハマったのと\n　　同じですよ！\p　デカルト読んだり、共産主義を唱えたりね。@
@@ -142,7 +142,7 @@ DIALOGUE_1 p\x1f DIALOGUE_2 \xb8\x00\x00
 アナウンサー\n　「ファッションとしての自殺、と。\pなんだか凄い話になってし\n　　まいましたが、ええっと……視聴者のみなさんはついてきて\n　　いらっしゃるのでしょうかっ？！」\w\n\n/*SE パチンとテレビのスイッチが切れる音。*/\a2,0,8,0,\a3,0,0,0,\a4,0,0,0,\n\z
  DIALOGUE_END ^\x1d SEQ01
 \x1f\xae\x00 CALL3 \xdc\x00 REF_END1 
-LOAD3 SCE010_014\x00\x1fx  REF_END2 
+LOAD3 SCE010_014 REF6 x  REF_END2 
 DIALOGUE_1 t\x1f DIALOGUE_2 {\x00\x00
  
 　－－おれの抱えた数字は、そんな簡単に割り切れる数字ではな\n　い。@
@@ -151,7 +151,7 @@ DIALOGUE_1 t\x1f DIALOGUE_2 {\x00\x00
 
 \x00\x00\x00 DIALOGUE_END \xbc  SEQ01
 \x1f\xae\x00 CALL3 \xdc\x00 REF_END1 
-LOAD3 SCE010_015\x00\x1f\xe2" REF_END2 
+LOAD3 SCE010_015 REF6 \xe2" REF_END2 
 DIALOGUE_1 x\x1f DIALOGUE_2 k\x00\x00
  
 　なんちゃって自殺ごっこをする女子学生。@
@@ -162,7 +162,7 @@ DIALOGUE_1 x\x1f DIALOGUE_2 k\x00\x00
 
 \x00 DIALOGUE_END &# SEQ01
 \x1f\xae\x00 CALL3 \xdc\x00 REF_END1 
-LOAD3 SCE010_016\x00\x1f\x0c% REF_END2 
+LOAD3 SCE010_016 REF6 \x0c% REF_END2 
 DIALOGUE_1 |\x1f DIALOGUE_2 \x9d\x00\x00
  
 　口に出すことで、深刻さを割り引くことができる痛みは多い。@

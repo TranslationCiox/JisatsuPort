@@ -3,7 +3,7 @@ START_FILE
 
 LOAD6 .\\Data\\Script\\Bgm.Fob REF2  \x00 REF_END2 
 LOAD2 PlayCD REF1 J\x00 REF_END1 
-LOAD3 SCE053_001\x00\x1ff\x00 REF_END2 
+LOAD3 SCE053_001 REF6 f\x00 REF_END2 
 DIALOGUE_1 pb DIALOGUE_2 z\x00\x00
  
 机が乱暴に端々に追いやられ、教室は妙に広々としている。@
@@ -15,7 +15,7 @@ DIALOGUE_1 pb DIALOGUE_2 z\x00\x00
 \x00 DIALOGUE_END \xaa\x00 SEQ01
 LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xb2\x02 REF_END2 
 LOAD2 TextOn REF1 \xe0\x02 REF_END1 
-LOAD3 SCE053_002\x00\x1f\xfc\x02 REF_END2 
+LOAD3 SCE053_002 REF6 \xfc\x02 REF_END2 
 DIALOGUE_1 tb DIALOGUE_2 C\x00\x00
  
 学生\n　「だいたい図々しいんだよ」@
@@ -30,7 +30,7 @@ DIALOGUE_1 tb DIALOGUE_2 C\x00\x00
 
 \x00\x00\x00 DIALOGUE_END @\x03 SEQ01
 \x1f\xb2\x02 CALL3 \xe0\x02 REF_END1 
-LOAD3 SCE053_003\x00\x1f\x86\x04 REF_END2 
+LOAD3 SCE053_003 REF6 \x86\x04 REF_END2 
 DIALOGUE_1 xb DIALOGUE_2 \x96\x00\x00
  
 　死ねよ、死ねよ、死ねよ、死ねよ、死ねよ、死ねよ、死ねよ、\n　死ねよ、死ねよ、死ねよ\n　死ね死ね死ね死ね死ね死ね死ね死ね死ね死ね死ね死ね死ね死ね\n　死ね死ね死ね\n　シネシネシネシネシシネシネシネシネシネシネシネシネシネシ\n　ネシネシネシネシネシネ\n　学生たちの声は、大合唱となって教室にとどろき渡った。@
@@ -42,7 +42,7 @@ DIALOGUE_1 xb DIALOGUE_2 \x96\x00\x00
 
 \x00 DIALOGUE_END \xca\x04 SEQ01
 \x1f\xb2\x02 CALL3 \xe0\x02 REF_END1 
-LOAD3 SCE053_004\x00\x1f\\\x07 REF_END2 
+LOAD3 SCE053_004 REF6 \\\x07 REF_END2 
 DIALOGUE_1 |b DIALOGUE_2 \xb3\x00\x00
  
 　足を踏みならす音は太鼓のリズムで、合唱は呪文の詠唱だった@
@@ -61,7 +61,7 @@ DIALOGUE_1 |b DIALOGUE_2 \xb3\x00\x00
 
 LOAD6 .\\Data\\Script\\Bg.Fob REF3 \xc0\n REF_END2 
 LOAD4 BgAutoFadeIn REF3 \xea\n REF_END1 
-LOAD3 SCE053_005\x00\x1f\x0e\x0b REF_END2 
+LOAD3 SCE053_005 REF6 \x0e\x0b REF_END2 
 DIALOGUE_1 \x80b DIALOGUE_2 r\x00\x00
  
 早桃がクラスのなかで孤立しているということは知っていた。@
@@ -73,7 +73,7 @@ DIALOGUE_1 \x80b DIALOGUE_2 r\x00\x00
 
 \x00 DIALOGUE_END R\x0b SEQ01
 \x1f\xb2\x02 CALL3 \xe0\x02 REF_END1 
-LOAD3 SCE053_006\x00\x1fT\r REF_END2 
+LOAD3 SCE053_006 REF6 T\r REF_END2 
 DIALOGUE_1 \x84b DIALOGUE_2 a\x00\x00
  
 拓司\n　「離してくれ、雲居さん」@
@@ -86,7 +86,7 @@ DIALOGUE_1 \x84b DIALOGUE_2 a\x00\x00
 
 \x00 DIALOGUE_END \x98\r SEQ01
 \x1f\xb2\x02 CALL3 \xe0\x02 REF_END1 
-LOAD3 SCE053_007\x00\x1fV\x0f REF_END2 
+LOAD3 SCE053_007 REF6 V\x0f REF_END2 
 DIALOGUE_1 \x88b DIALOGUE_2 >\x00\x00
  
 拓司\n　「ふざけるな、そんな遊びにつきあってるヒマは－－」@

@@ -1,6 +1,6 @@
 START_FILE
 .\x10\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\x10\r\x00
-LOAD3 SCE210_001\x00\x1f\x06\x00 REF_END2 
+LOAD3 SCE210_001 REF6 \x06\x00 REF_END2 
 DIALOGUE_1 \xc0W\x01\x0c\x00\x00\x00\x00"\x03B\x00\x00
  
 教授はいった。@
@@ -12,7 +12,7 @@ DIALOGUE_1 \xc0W\x01\x0c\x00\x00\x00\x00"\x03B\x00\x00
 \x00\x00\x00 DIALOGUE_END J\x00 SEQ01
 LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 r\x01 REF_END2 
 LOAD2 TextOn REF1 \xa0\x01 REF_END1 
-LOAD3 SCE210_002\x00\x1f\xbc\x01 REF_END2 
+LOAD3 SCE210_002 REF6 \xbc\x01 REF_END2 
 DIALOGUE_1 \xc4W\x01\x0c\x00\x00\x00\x00"\x03o\x00\x00
  
 拓司\n　「でたらめだ。\pそんなＳＦみたいな話を信じるわけにはいかな\n　　い。\p物理法則こそが、唯一の定点だ。@
@@ -24,7 +24,7 @@ DIALOGUE_1 \xc4W\x01\x0c\x00\x00\x00\x00"\x03o\x00\x00
 
 \x00\x00\x00 DIALOGUE_END \x00\x02 SEQ01
 \x1fr\x01 CALL3 \xa0\x01 REF_END1 
-LOAD3 SCE210_003\x00\x1f\xf6\x03 REF_END2 
+LOAD3 SCE210_003 REF6 \xf6\x03 REF_END2 
 DIALOGUE_1 \xc8W\x01\x0c\x00\x00\x00\x00"\x03G\x00\x00
  
 拓司\n　「放っておいてくれ。\pおれは教授を信じて、治療を受ける。@
@@ -36,7 +36,7 @@ DIALOGUE_1 \xc8W\x01\x0c\x00\x00\x00\x00"\x03G\x00\x00
 
 \x00\x00\x00 DIALOGUE_END :\x04 SEQ01
 \x1fr\x01 CALL3 \xa0\x01 REF_END1 
-LOAD3 SCE210_004\x00\x1f\x90\x05 REF_END2 
+LOAD3 SCE210_004 REF6 \x90\x05 REF_END2 
 DIALOGUE_1 \xccW\x01\x0c\x00\x00\x00\x00"\x03\xa5\x00\x00
  
 /*▲SE01　ループ再生（次の停止まで）*/\a2,1,1,1,\a6,0,0,0,ザザザ……ザザッ……\pザアザザザ……ザアアアアア……@
@@ -52,7 +52,7 @@ DIALOGUE_1 \xccW\x01\x0c\x00\x00\x00\x00"\x03\xa5\x00\x00
 
 \x00\x00\x00 DIALOGUE_END \xd4\x05 SEQ01
 \x1fr\x01 CALL3 \xa0\x01 REF_END1 
-LOAD3 SCE210_005\x00\x1f\xa2\x08 REF_END2 
+LOAD3 SCE210_005 REF6 \xa2\x08 REF_END2 
 DIALOGUE_1 \xd0W\x01\x0c\x00\x00\x00\x00"\x03Z\x00\x00
  
 /*▲SE01　ループ再生（次の停止まで）*/\a2,1,1,1,\a6,0,0,0,ザザザ……ザザッ……\pザアザザザ……ザアアアアア……@
@@ -65,7 +65,7 @@ DIALOGUE_1 \xd0W\x01\x0c\x00\x00\x00\x00"\x03Z\x00\x00
 
 \x00\x00\x00 DIALOGUE_END \xe6\x08 SEQ01
 \x1fr\x01 CALL3 \xa0\x01 REF_END1 
-LOAD3 SCE210_006\x00\x1f\x88\n REF_END2 
+LOAD3 SCE210_006 REF6 \x88\n REF_END2 
 DIALOGUE_1 \xd4W\x01\x0c\x00\x00\x00\x00"\x03F\x00\x00
  
 /*▲SE01　ループ再生（次の停止まで）*/\a2,1,1,1,\a6,0,0,0,ザザザ……ザザッ……\pザアザザザ……ザアアアアア……@

@@ -1,6 +1,6 @@
 START_FILE
 \x94\x18\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xc8\x14\x00
-LOAD3 SCE057_001\x00\x1f\x06\x00 REF_END2 
+LOAD3 SCE057_001 REF6 \x06\x00 REF_END2 
 DIALOGUE_1 \xb0h DIALOGUE_2 t\x00\x00
  
 学生\n　「こいつにションベンひっかけてやろうぜ？」@
@@ -13,7 +13,7 @@ DIALOGUE_1 \xb0h DIALOGUE_2 t\x00\x00
 \x00 DIALOGUE_END J\x00 SEQ01
 LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 :\x02 REF_END2 
 LOAD2 TextOn REF1 h\x02 REF_END1 
-LOAD3 SCE057_002\x00\x1f\x84\x02 REF_END2 
+LOAD3 SCE057_002 REF6 \x84\x02 REF_END2 
 DIALOGUE_1 \xb4h DIALOGUE_2 \x85\x00\x00
  
 \nカミムラ－－。@
@@ -27,7 +27,7 @@ DIALOGUE_1 \xb4h DIALOGUE_2 \x85\x00\x00
 
 \x00 DIALOGUE_END \xc8\x02 SEQ01
 \x1f:\x02 CALL3 h\x02 REF_END1 
-LOAD3 SCE057_003\x00\x1f\x16\x05 REF_END2 
+LOAD3 SCE057_003 REF6 \x16\x05 REF_END2 
 DIALOGUE_1 \xb8h DIALOGUE_2 \x94\x00\x00
  
 上村\n　「逃げるつもり？\p　それって間違ってるって。\pこれはさ、あん\n　　たを綺麗にする儀式なんだよ？\p　生きている価値のないあん\n　　たが、身を清めて気持ちよく死ねるようになるための儀式な\n　　んだからさあ。くすくす」@
@@ -40,7 +40,7 @@ DIALOGUE_1 \xb8h DIALOGUE_2 \x94\x00\x00
 
 \x00 DIALOGUE_END Z\x05 SEQ01
 \x1f:\x02 CALL3 h\x02 REF_END1 
-LOAD3 SCE057_004\x00\x1f\xe4\x07 REF_END2 
+LOAD3 SCE057_004 REF6 \xe4\x07 REF_END2 
 DIALOGUE_1 \xbch DIALOGUE_2 \x94\x00\x00
  
 上村はスカートの中に手を差し入れ、スルスルとショーツを脱い\nだ。\pクラスメイトが見ているというのに、なんの躊躇もない。\n逆に、脱いだショーツをひらひらと振り回して、男子学生たちに\nニヤリと笑いかける余裕さえある。\pさらにはスカートも脱ぎ、下\n半身をあらわにした。@
@@ -54,7 +54,7 @@ DIALOGUE_1 \xbch DIALOGUE_2 \x94\x00\x00
 
 \x00\x00\x00 DIALOGUE_END (\x08 SEQ01
 \x1f:\x02 CALL3 h\x02 REF_END1 
-LOAD3 SCE057_005\x00\x1f\xb2\n REF_END2 
+LOAD3 SCE057_005 REF6 \xb2\n REF_END2 
 DIALOGUE_1 \xc0h DIALOGUE_2 a\x00\x00
  
 上村\n　「あ～ウザイ！　ウザウザ！　見てるだけでぶっ殺したくなる\n　　よ！」@
@@ -65,7 +65,7 @@ DIALOGUE_1 \xc0h DIALOGUE_2 a\x00\x00
 
 \x00 DIALOGUE_END \xf6\n SEQ01
 \x1f:\x02 CALL3 h\x02 REF_END1 
-LOAD3 SCE057_006\x00\x1f\xb4\x0c REF_END2 
+LOAD3 SCE057_006 REF6 \xb4\x0c REF_END2 
 DIALOGUE_1 \xc4h DIALOGUE_2 \xac\x00\x00
  
 上村\n　「ほら、もっと前にはいはいしてきなさいよォ……足下に……\n　　そうそう。いい子ね、ワンワン」@
@@ -80,7 +80,7 @@ DIALOGUE_1 \xc4h DIALOGUE_2 \xac\x00\x00
 
  DIALOGUE_END \xf8\x0c SEQ01
 \x1f:\x02 CALL3 h\x02 REF_END1 
-LOAD3 SCE057_007\x00\x1f\xe2\x0f REF_END2 
+LOAD3 SCE057_007 REF6 \xe2\x0f REF_END2 
 DIALOGUE_1 \xc8h DIALOGUE_2 \x8d\x00\x00
  
 どこかで見た光景だった。@
@@ -94,7 +94,7 @@ DIALOGUE_1 \xc8h DIALOGUE_2 \x8d\x00\x00
 
 \x00\x00\x00 DIALOGUE_END &\x10 SEQ01
 \x1f:\x02 CALL3 h\x02 REF_END1 
-LOAD3 SCE057_008\x00\x1f\x94\x12 REF_END2 
+LOAD3 SCE057_008 REF6 \x94\x12 REF_END2 
 DIALOGUE_1 \xcch DIALOGUE_2 c\x00\x00
  
 学生\n　「た、たまんねえ……俺にもかけさせてくれ」@

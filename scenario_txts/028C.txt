@@ -1,6 +1,6 @@
 START_FILE
 7\x16\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xde\x11\x00
-LOAD3 SCE028_001\x00\x1f\x06\x00 REF_END2 
+LOAD3 SCE028_001 REF6 \x06\x00 REF_END2 
 DIALOGUE_1 `;\x00\x0c\x00\x00\x00\x00" \x1e\x00\x00\x00\x00\r\x00 REF_END2 \x0c\x02\x00\x00" \x1e\x04\x00\x00\r\x00\x00\x1e\x17\x00 SEQ01
  \x1e\x08\x00\x00\r\x00\x00\x1e\x01\x00 SEQ01
 
@@ -21,7 +21,7 @@ ENDCHOICE
 \x00 DIALOGUE_END x\x02 SEQ01
 \x1f.\x02 CALL3 \\\x02 CALL2 .\x02 REF_END2 
 LOAD3 TextClose REF2 \xda\x02 REF_END1 
-LOAD3 SCE028_002\x00\x1f\xfa\x02 REF_END2 
+LOAD3 SCE028_002 REF6 \xfa\x02 REF_END2 
 DIALOGUE_1 d; DIALOGUE_2 T\x00\x00
  
 　荒れ果てた鉄筋コンクリートの塊は容易に墓標を想起させ、そし\n　て宿命的に幽霊が出るという噂が立った。@
@@ -35,7 +35,7 @@ ENDCHOICE
 
 \x00 DIALOGUE_END \xc8\x04 SEQ01
 \x1f.\x02 CALL3 \\\x02 CALL2 .\x02 CALL3 \xda\x02 REF_END1 
-LOAD3 SCE028_003\x00\x1f8\x05 REF_END2 
+LOAD3 SCE028_003 REF6 8\x05 REF_END2 
 DIALOGUE_1 h; DIALOGUE_2 \xc9\x00\x00
  
 　フェンスは実際のところ２メートル程度の高さしかなかったから\n　、決して乗り越えられないというわけではない（実際、拓司は簡\n　単にそれを乗り越えることができた）。\p故に、フェンスの設置が\n　物理的に侵入者を阻んだとはいえない。@
@@ -54,7 +54,7 @@ ENDCHOICE
 
 \x00 DIALOGUE_END \xda\x08 SEQ01
 \x1f.\x02 CALL3 \\\x02 CALL2 .\x02 CALL3 \xda\x02 REF_END1 
-LOAD3 SCE028_004\x00\x1fJ\t REF_END2 
+LOAD3 SCE028_004 REF6 J\t REF_END2 
 DIALOGUE_1 l; DIALOGUE_2 T\x00\x00
  
 　やがて、歳月と雨と自然作用が金網を赤黒く錆びさせ、この地は\n　さらなる陰惨さをその身にまとうこととなった。\p団地の壁にはベ\n　ッタリと染みができ、不法投棄の粗大ゴミが無秩序にあちこちに\n　転がり始めた。@
@@ -68,7 +68,7 @@ ENDCHOICE
 
 \x00 DIALOGUE_END \x18\x0b SEQ01
 \x1f.\x02 CALL3 \\\x02 CALL2 .\x02 CALL3 \xda\x02 REF_END1 
-LOAD3 SCE028_005\x00\x1f\x88\x0b REF_END2 
+LOAD3 SCE028_005 REF6 \x88\x0b REF_END2 
 DIALOGUE_1 p; DIALOGUE_2 \x92\x00\x00
  
 　もっとも、拓司にとって、そうした怪談めいた空気など、少しも\n　恐ろしいものではなかった。@
@@ -79,7 +79,7 @@ DIALOGUE_1 p; DIALOGUE_2 \x92\x00\x00
 
 \x00 DIALOGUE_END \xcc\x0b SEQ01
 \x1f.\x02 CALL3 \\\x02 REF_END1 
-LOAD3 SCE028_006\x00\x1fN\x0e REF_END2 
+LOAD3 SCE028_006 REF6 N\x0e REF_END2 
 DIALOGUE_1 t; DIALOGUE_2 \xae\x00\x00
  
 \n/*▲SE02　一回再生（ファイル再生待たず次へ）*/\a2,0,2,0,　ドザッ！@

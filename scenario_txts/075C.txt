@@ -1,6 +1,6 @@
 START_FILE
 \x82\x17\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00 \x13\x00
-LOAD3 SCE075_001\x00\x1f\x06\x00 REF_END2 
+LOAD3 SCE075_001 REF6 \x06\x00 REF_END2 
 DIALOGUE_1 \xd0\x84 DIALOGUE_2 |\x00\x00
  
 なたね\n　「だめ。\pこの先は危険。\p波動が直接－－」@
@@ -13,7 +13,7 @@ DIALOGUE_1 \xd0\x84 DIALOGUE_2 |\x00\x00
 \x00\x00\x00 DIALOGUE_END J\x00 SEQ01
 LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 Z\x02 REF_END2 
 LOAD2 TextOn REF1 \x88\x02 REF_END1 
-LOAD3 SCE075_002\x00\x1f\xa4\x02 REF_END2 
+LOAD3 SCE075_002 REF6 \xa4\x02 REF_END2 
 DIALOGUE_1 \xd4\x84 DIALOGUE_2 N\x00\x00
  
 なたね\n　「いいのよ、虎菱くん」@
@@ -23,7 +23,7 @@ DIALOGUE_1 \xd4\x84 DIALOGUE_2 N\x00\x00
 
 \x00 DIALOGUE_END \xe8\x02 SEQ01
 \x1fZ\x02 CALL3 \x88\x02 REF_END1 
-LOAD3 SCE075_003\x00\x1fZ\x04 REF_END2 
+LOAD3 SCE075_003 REF6 Z\x04 REF_END2 
 DIALOGUE_1 \xd8\x84 DIALOGUE_2 \xc1\x00\x00
  
 なたね\n　「便宜上『波動』と呼んでいるけれど、『波動』は、本来なら\n　　地球の言葉では定義できない存在なの。\pだから、一般的なエ\n　　ネルギーのように、一方から他方へ、直線的に飛ぶというも\n　　のではないの。\pそれ自身の意志で停滞したり、反射したり、\n　　逆流したり、屈折したり。\p秩序や法則はないの。\p無秩序。@
@@ -33,7 +33,7 @@ DIALOGUE_1 \xd8\x84 DIALOGUE_2 \xc1\x00\x00
 
 \x00 DIALOGUE_END \x9e\x04 SEQ01
 \x1fZ\x02 CALL3 \x88\x02 REF_END1 
-LOAD3 SCE075_004\x00\x1f\xdc\x07 REF_END2 
+LOAD3 SCE075_004 REF6 \xdc\x07 REF_END2 
 DIALOGUE_1 \xdc\x84 DIALOGUE_2 {\x00\x00
  
 　なたねは「シェ\p・ル\p・タ\p・ー」と、ひとことひとことを区切っ\n　て言い返した。@
@@ -44,7 +44,7 @@ DIALOGUE_1 \xdc\x84 DIALOGUE_2 {\x00\x00
 
 \x00\x00\x00 DIALOGUE_END  \x08 SEQ01
 \x1fZ\x02 CALL3 \x88\x02 REF_END1 
-LOAD3 SCE075_005\x00\x1fF\n REF_END2 
+LOAD3 SCE075_005 REF6 F\n REF_END2 
 DIALOGUE_1 \xe0\x84 DIALOGUE_2 ]\x00\x00
  
 拓司\n　「……まさか」@
@@ -55,7 +55,7 @@ DIALOGUE_1 \xe0\x84 DIALOGUE_2 ]\x00\x00
 
 \x00 DIALOGUE_END \x8a\n SEQ01
 \x1fZ\x02 CALL3 \x88\x02 REF_END1 
-LOAD3 SCE075_006\x00\x1f8\x0c REF_END2 
+LOAD3 SCE075_006 REF6 8\x0c REF_END2 
 DIALOGUE_1 \xe4\x84 DIALOGUE_2 \xc0\x00\x00
  
 なたね\n　「こんな非常事態に冗談なんて言うはずがないでしょうッ！@
@@ -65,7 +65,7 @@ DIALOGUE_1 \xe4\x84 DIALOGUE_2 \xc0\x00\x00
 
 \x00\x00\x00 DIALOGUE_END |\x0c SEQ01
 \x1fZ\x02 CALL3 \x88\x02 REF_END1 
-LOAD3 SCE075_007\x00\x1f\xb6\x0f REF_END2 
+LOAD3 SCE075_007 REF6 \xb6\x0f REF_END2 
 DIALOGUE_1 \xe8\x84 DIALOGUE_2 \x81\x00\x00
  
 拓司\n　「……」@

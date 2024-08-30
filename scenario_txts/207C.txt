@@ -1,6 +1,6 @@
 START_FILE
 \xb7\x07\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xa8\x05\x00
-LOAD3 SCE207_001\x00\x1f\x06\x00 REF_END2 
+LOAD3 SCE207_001 REF6 \x06\x00 REF_END2 
 DIALOGUE_1 \x10S\x01\x0c\x00\x00\x00\x00"\x03\xa7\x00\x00
  
 拓司\n　「君は、教授はおれにウソを聞かせているという。\pおれをコン\n　　トロールしようとしていると……。\p教授とは何者なんだ？@
@@ -14,7 +14,7 @@ DIALOGUE_1 \x10S\x01\x0c\x00\x00\x00\x00"\x03\xa7\x00\x00
 \x00\x00\x00 DIALOGUE_END J\x00 SEQ01
 LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \x06\x03 REF_END2 
 LOAD2 TextOn REF1 4\x03 REF_END1 
-LOAD3 SCE207_002\x00\x1fP\x03 REF_END2 
+LOAD3 SCE207_002 REF6 P\x03 REF_END2 
 DIALOGUE_1 \x14S\x01\x0c\x00\x00\x00\x00"\x03l\x00\x00
  
 ナタネ\n　「あなたの世界は、教授によって完全に破壊された。\p破壊とい\n　　っても物理的な……ビルが壊されたとか人が殺されたとか…\n　　…そういう破壊ではないわ。\p無くなったの。\p完全に消滅した\n　　の。\p教授による侵略は、三次元的な意味では説明できない\n　　……存在と……世界のなりたち自体に関わる破壊行為よ」@

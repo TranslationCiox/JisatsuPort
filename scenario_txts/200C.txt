@@ -1,6 +1,6 @@
 START_FILE
 \xd0%\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00^ \x00
-LOAD3 SCE200_001\x00\x1f\x06\x00 REF_END2 
+LOAD3 SCE200_001 REF6 \x06\x00 REF_END2 
 DIALOGUE_1  H\x01\x0c\x00\x00\x00\x00" \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc9\x00 SEQ01
 
 LOAD6 .\\Data\\Script\\Bg.Fob REF3 d\x00 REF_END2 
@@ -25,7 +25,7 @@ LOAD2 SePlay REF1 *\x01 REF_END1 \x03v\x00\x00
 \x00\x00\x00 DIALOGUE_END F\x01 SEQ01
 LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 >\x03 REF_END2 
 LOAD2 TextOn REF1 l\x03 REF_END1 
-LOAD3 SCE200_002\x00\x1f\x88\x03 REF_END2 
+LOAD3 SCE200_002 REF6 \x88\x03 REF_END2 
 DIALOGUE_1 $H\x01\x0c\x00\x00\x00\x00"\x03T\x00\x00
  
 拓司\n　「……どうも……教授……」@
@@ -38,7 +38,7 @@ DIALOGUE_1 $H\x01\x0c\x00\x00\x00\x00"\x03T\x00\x00
 
 \x00 DIALOGUE_END \xcc\x03 SEQ01
 \x1f>\x03 CALL3 l\x03 REF_END1 
-LOAD3 SCE200_003\x00\x1fV\x05 REF_END2 
+LOAD3 SCE200_003 REF6 V\x05 REF_END2 
 DIALOGUE_1 (H\x01\x0c\x00\x00\x00\x00"\x03\xb0\x00\x00
  
 拓司\n　「あんたは、『俺の世界』が夢だという！\p　でも、俺は『あん\n　　たの世界』について何も知らない！\p　自分が誰なのかもわか\n　　らないんだ！\p　なのにこの世界が本物だって信じろっていう\n　　のか？！」@
@@ -48,7 +48,7 @@ DIALOGUE_1 (H\x01\x0c\x00\x00\x00\x00"\x03\xb0\x00\x00
 
 \x00\x00\x00 DIALOGUE_END \x9a\x05 SEQ01
 \x1f>\x03 CALL3 l\x03 REF_END1 
-LOAD3 SCE200_004\x00\x1f\x94\x08 REF_END2 
+LOAD3 SCE200_004 REF6 \x94\x08 REF_END2 
 DIALOGUE_1 ,H\x01\x0c\x00\x00\x00\x00"\x03\xcb\x00\x00
  
 教授\n　「同情するよ」@
@@ -61,7 +61,7 @@ DIALOGUE_1 ,H\x01\x0c\x00\x00\x00\x00"\x03\xcb\x00\x00
 
 \x00 DIALOGUE_END \xd8\x08 SEQ01
 \x1f>\x03 CALL3 l\x03 REF_END1 
-LOAD3 SCE200_005\x00\x1f>\x0c REF_END2 
+LOAD3 SCE200_005 REF6 >\x0c REF_END2 
 DIALOGUE_1 0H\x01\x0c\x00\x00\x00\x00"\x03\xa3\x00\x00
  
 教授\n　「答はどこにもない。\p君の中にしかないんだ」@
@@ -72,7 +72,7 @@ DIALOGUE_1 0H\x01\x0c\x00\x00\x00\x00"\x03\xa3\x00\x00
 
 \x00 DIALOGUE_END \x82\x0c SEQ01
 \x1f>\x03 CALL3 l\x03 REF_END1 
-LOAD3 SCE200_006\x00\x1fH\x0f REF_END2 
+LOAD3 SCE200_006 REF6 H\x0f REF_END2 
 DIALOGUE_1 4H\x01\x0c\x00\x00\x00\x00"\x032\x00\x00
  
 教授\n　「あるいは、私というのは、どこかにいる別の私が見ている夢\n　　にすぎないのかもしれない。\pさらには夢を見ているのは私で\n　　すらなく、他の誰かなのかもしれない」@
@@ -80,7 +80,7 @@ DIALOGUE_1 4H\x01\x0c\x00\x00\x00\x00"\x032\x00\x00
 
 \x00\x00\x00 DIALOGUE_END \x8c\x0f SEQ01
 \x1f>\x03 CALL3 l\x03 REF_END1 
-LOAD3 SCE200_007\x00\x1f\x8e\x10 REF_END2 
+LOAD3 SCE200_007 REF6 \x8e\x10 REF_END2 
 DIALOGUE_1 8H\x01\x0c\x00\x00\x00\x00"\x03\xe8\x00\x00
  
 教授\n　「答など、ないのだ。\pなにが現実でなにが妄想なのかを決める\n　　のは他人ではなく、本人なのだ。\p私はこう考えるよ。@
@@ -92,7 +92,7 @@ DIALOGUE_1 8H\x01\x0c\x00\x00\x00\x00"\x03\xe8\x00\x00
 
 \x00\x00\x00 DIALOGUE_END \xd2\x10 SEQ01
 \x1f>\x03 CALL3 l\x03 REF_END1 
-LOAD3 SCE200_008\x00\x1f\xac\x14 REF_END2 
+LOAD3 SCE200_008 REF6 \xac\x14 REF_END2 
 DIALOGUE_1 <H\x01\x0c\x00\x00\x00\x00"\x03\x95\x00\x00
  
 教授\n　「君が定義する世界とはなにかね？\p　女が自分の思い通りに動\n　　くことかね？\p　自殺波動かね？」@
@@ -104,7 +104,7 @@ DIALOGUE_1 <H\x01\x0c\x00\x00\x00\x00"\x03\x95\x00\x00
 
 \x00 DIALOGUE_END \xf0\x14 SEQ01
 \x1f>\x03 CALL3 l\x03 REF_END1 
-LOAD3 SCE200_009\x00\x1f~\x17 REF_END2 
+LOAD3 SCE200_009 REF6 ~\x17 REF_END2 
 DIALOGUE_1 @H\x01\x0c\x00\x00\x00\x00"\x03\x92\x00\x00
  
 /*▲SE01　再生（再生終わるまで待たずに進む）*/\a2,1,1,1,ザザザ……ザザッ……\pザアザザザ……ザアアアアア……@
@@ -119,7 +119,7 @@ DIALOGUE_1 @H\x01\x0c\x00\x00\x00\x00"\x03\x92\x00\x00
 
 \x00 DIALOGUE_END \xc2\x17 SEQ01
 \x1f>\x03 CALL3 l\x03 REF_END1 
-LOAD3 SCE200_010\x00\x1fD\x1a REF_END2 
+LOAD3 SCE200_010 REF6 D\x1a REF_END2 
 DIALOGUE_1 DH\x01\x0c\x00\x00\x00\x00"\x03\x97\x00\x00
  
 教授\n　「少し眠るといい」@
@@ -129,7 +129,7 @@ DIALOGUE_1 DH\x01\x0c\x00\x00\x00\x00"\x03\x97\x00\x00
 
 \x00\x00\x00 DIALOGUE_END \x88\x1a SEQ01
 \x1f>\x03 CALL3 l\x03 REF_END1 
-LOAD3 SCE200_011\x00\x1f\x1e\x1d REF_END2 
+LOAD3 SCE200_011 REF6 \x1e\x1d REF_END2 
 DIALOGUE_1 HH\x01\x0c\x00\x00\x00\x00"\x039\x00\x00
  
 教授\n　「そう思っているだけだ。\p夢とはそういうものだ。\p夢の中にい\n　　る限り、セットの継ぎ目を見つけることはできない。@
@@ -138,7 +138,7 @@ DIALOGUE_1 HH\x01\x0c\x00\x00\x00\x00"\x039\x00\x00
 
 \x00 DIALOGUE_END b\x1d SEQ01
 \x1f>\x03 CALL3 l\x03 REF_END1 
-LOAD3 SCE200_012\x00\x1f\x80\x1e REF_END2 
+LOAD3 SCE200_012 REF6 \x80\x1e REF_END2 
 DIALOGUE_1 LH\x01\x0c\x00\x00\x00\x00"\x030\x00\x00
  
 眠れ俺。@

@@ -1,6 +1,6 @@
 START_FILE
 X.\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xf2&\x00
-LOAD3 SCE228_001\x00\x1f\x06\x00 REF_END2 
+LOAD3 SCE228_001 REF6 \x06\x00 REF_END2 
 DIALOGUE_1 \xe0s\x01\x0c\x00\x00\x00\x00"\x03\x11\x00\x00
  
 \n\n\n\n\n\n\n\n\n\n　　　　　　　　　　　　『１４日目』\
@@ -11,7 +11,7 @@ LOAD2 TextOn REF1 \xdc\x00 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\t\x01 SE
 
 LOAD6 .\\Data\\Script\\Bgm.Fob REF2 \x12\x01 REF_END2 
 LOAD2 PlayCD REF1 <\x01 REF_END1 
-LOAD3 SCE228_002\x00\x1fX\x01 REF_END2 
+LOAD3 SCE228_002 REF6 X\x01 REF_END2 
 DIALOGUE_1 \xe4s\x01\x0c\x00\x00\x00\x00"\x03O\x00\x00
  
 御堂と錦城の次の標的は、早桃だった。@
@@ -24,7 +24,7 @@ DIALOGUE_1 \xe4s\x01\x0c\x00\x00\x00\x00"\x03O\x00\x00
 
 \x00\x00\x00 DIALOGUE_END \x9c\x01 SEQ01
 \x1f\xae\x00 CALL3 \xdc\x00 REF_END1 
-LOAD3 SCE228_003\x00\x1f\x12\x03 REF_END2 
+LOAD3 SCE228_003 REF6 \x12\x03 REF_END2 
 DIALOGUE_1 \xe8s\x01\x0c\x00\x00\x00\x00"\x03\x88\x00\x00
  
 御堂\n　「ふざけてなんかいないさ。\pそんなかわいい子が家の中にいた\n　　ら、我慢できないのが普通だろうが。\p別に血が繋がってるわ\n　　けでもなし、超使い勝手がいい性欲処理道具じゃねえか。@
@@ -36,7 +36,7 @@ DIALOGUE_1 \xe8s\x01\x0c\x00\x00\x00\x00"\x03\x88\x00\x00
 
 \x00 DIALOGUE_END V\x03 SEQ01
 \x1f\xae\x00 CALL3 \xdc\x00 REF_END1 
-LOAD3 SCE228_004\x00\x1f\xb0\x05 REF_END2 
+LOAD3 SCE228_004 REF6 \xb0\x05 REF_END2 
 DIALOGUE_1 \xecs\x01\x0c\x00\x00\x00\x00"\x03n\x00\x00
  
 拓司\n　「断る」@
@@ -51,7 +51,7 @@ DIALOGUE_1 \xecs\x01\x0c\x00\x00\x00\x00"\x03n\x00\x00
 
 \x00 DIALOGUE_END \xf4\x05 SEQ01
 \x1f\xae\x00 CALL3 \xdc\x00 REF_END1 
-LOAD3 SCE228_005\x00\x1f\xe6\x07 REF_END2 
+LOAD3 SCE228_005 REF6 \xe6\x07 REF_END2 
 DIALOGUE_1 \xf0s\x01\x0c\x00\x00\x00\x00"\x03\x87\x00\x00
  
 拓司\n　「ごめんな。\p恨んでくれても構わない」@
@@ -64,7 +64,7 @@ DIALOGUE_1 \xf0s\x01\x0c\x00\x00\x00\x00"\x03\x87\x00\x00
 
 \x00\x00 DIALOGUE_END *\x08 SEQ01
 \x1f\xae\x00 CALL3 \xdc\x00 REF_END1 
-LOAD3 SCE228_006\x00\x1f\x80\n REF_END2 
+LOAD3 SCE228_006 REF6 \x80\n REF_END2 
 DIALOGUE_1 \xf4s\x01\x0c\x00\x00\x00\x00"\x03\xaa\x00\x00
  
 御堂\n　「嫌いなんだよね、俺。\pたかだか性欲処理にいろいろ理由くっ\n　　つけるやつらって。\p『愛しているから抱くんだよ』とか『お\n　　前だから勃起するんだよ』とかさ。\p男がそんな理屈で立つか\n　　よ！\p　マ○コ見りゃ立つんだろ！\p　虎菱、え、そうだろうが\n　　よ虎菱！\p　愛してるからじゃなくて、やりたいから立つんだ\n　　ろうがよお！」@
@@ -76,7 +76,7 @@ DIALOGUE_1 \xf4s\x01\x0c\x00\x00\x00\x00"\x03\xaa\x00\x00
 
 \x00 DIALOGUE_END \xc4\n SEQ01
 \x1f\xae\x00 CALL3 \xdc\x00 REF_END1 
-LOAD3 SCE228_007\x00\x1f\xa6\r REF_END2 
+LOAD3 SCE228_007 REF6 \xa6\r REF_END2 
 DIALOGUE_1 \xf8s\x01\x0c\x00\x00\x00\x00"\x03\xa9\x00\x00
  
 錦城\n　「ねえ、御堂くん。\p虎菱くんに、義妹さんをおかずにオナニー\n　　してもらったらどう？」@
@@ -89,7 +89,7 @@ DIALOGUE_1 \xf8s\x01\x0c\x00\x00\x00\x00"\x03\xa9\x00\x00
 
 \x00 DIALOGUE_END \xea\r SEQ01
 \x1f\xae\x00 CALL3 \xdc\x00 REF_END1 
-LOAD3 SCE228_008\x00\x1f\xc8\x10 REF_END2 
+LOAD3 SCE228_008 REF6 \xc8\x10 REF_END2 
 DIALOGUE_1 \xfcs\x01\x0c\x00\x00\x00\x00"\x03\x95\x00\x00
  
 早桃\n　「は、離してよお！」@
@@ -100,7 +100,7 @@ DIALOGUE_1 \xfcs\x01\x0c\x00\x00\x00\x00"\x03\x95\x00\x00
 
 \x00 DIALOGUE_END \x0c\x11 SEQ01
 \x1f\xae\x00 CALL3 \xdc\x00 REF_END1 
-LOAD3 SCE228_009\x00\x1f\x9a\x13 REF_END2 
+LOAD3 SCE228_009 REF6 \x9a\x13 REF_END2 
 DIALOGUE_1 \x00t\x01\x0c\x00\x00\x00\x00"\x03\xa1\x00\x00
  
 錦城\n　「あら、早桃ちゃん。\pずいぶんふっくらしたおま○こなのねえ。\n　　\pこんな可愛い顔しているのに、いやらしい身体だわ、本当に」\n\p早桃\n　「や、やああ」@
@@ -112,7 +112,7 @@ DIALOGUE_1 \x00t\x01\x0c\x00\x00\x00\x00"\x03\xa1\x00\x00
 
 \x00 DIALOGUE_END \xde\x13 SEQ01
 \x1f\xae\x00 CALL3 \xdc\x00 REF_END1 
-LOAD3 SCE228_010\x00\x1f\x9c\x16 REF_END2 
+LOAD3 SCE228_010 REF6 \x9c\x16 REF_END2 
 DIALOGUE_1 \x04t\x01\x0c\x00\x00\x00\x00"\x03\xa4\x00\x00
  
 早桃\n　「そ、そんなことないっ！」@
@@ -124,7 +124,7 @@ DIALOGUE_1 \x04t\x01\x0c\x00\x00\x00\x00"\x03\xa4\x00\x00
 
 \x00 DIALOGUE_END \xe0\x16 SEQ01
 \x1f\xae\x00 CALL3 \xdc\x00 REF_END1 
-LOAD3 SCE228_011\x00\x1f\xaa\x19 REF_END2 
+LOAD3 SCE228_011 REF6 \xaa\x19 REF_END2 
 DIALOGUE_1 \x08t\x01\x0c\x00\x00\x00\x00"\x03\xae\x00\x00
  
 御堂\n　「おかしいよなあ。\p愛があるんなら勃起しねえはずだよなあ？@
@@ -138,7 +138,7 @@ DIALOGUE_1 \x08t\x01\x0c\x00\x00\x00\x00"\x03\xae\x00\x00
 
 \x00\x00\x00 DIALOGUE_END \xee\x19 SEQ01
 \x1f\xae\x00 CALL3 \xdc\x00 REF_END1 
-LOAD3 SCE228_012\x00\x1f\xe0\x1c REF_END2 
+LOAD3 SCE228_012 REF6 \xe0\x1c REF_END2 
 DIALOGUE_1 \x0ct\x01\x0c\x00\x00\x00\x00"\x03\xf2\x00\x00
  
 その後のことを、拓司は断片的にしか覚えていない。@
@@ -155,7 +155,7 @@ DIALOGUE_1 \x0ct\x01\x0c\x00\x00\x00\x00"\x03\xf2\x00\x00
 
  DIALOGUE_END $\x1d SEQ01
 \x1f\xae\x00 CALL3 \xdc\x00 REF_END1 
-LOAD3 SCE228_013\x00\x1f&! REF_END2 
+LOAD3 SCE228_013 REF6 &! REF_END2 
 DIALOGUE_1 \x10t\x01\x0c\x00\x00\x00\x00"\x03\x91\x00\x00
  
 御堂はその一部始終を笑いながら眺めていた。しかし常に拓司に\n目をくばっているあたり、あくまで冷静だった。@
@@ -170,7 +170,7 @@ DIALOGUE_1 \x10t\x01\x0c\x00\x00\x00\x00"\x03\x91\x00\x00
 
  DIALOGUE_END j! SEQ01
 \x1f\xae\x00 CALL3 \xdc\x00 REF_END1 
-LOAD3 SCE228_014\x00\x1f\xe8# REF_END2 
+LOAD3 SCE228_014 REF6 \xe8# REF_END2 
 DIALOGUE_1 \x14t\x01\x0c\x00\x00\x00\x00"\x03w\x00\x00
  
 なたね\n　「あはははははははは！\p　敵を拘束するときは身体検査くらい\n　　するのが常識だろうがこの民間人！\p　戦士である私が、武器\n　　のひとつくらい隠し持っていないとでも思ったかひっつき星\n　　人！\p　これがただの畳針だと思うなよ。\pこれはテスラ式処置\n　　を施して電流を流した特別製の次元毒針だ！\p　物理的ダメー\n　　ジを超えて存在自体にダメージを与えるからお前みたいな宇\n　　宙人にも効果てきめんだ！\p　思い知ったか！\p　思い知ったか\n　　あああああああ！」\

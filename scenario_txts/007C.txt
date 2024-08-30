@@ -1,6 +1,6 @@
 START_FILE
 \x804\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xf6,\x00
-LOAD3 SCE007_001\x00\x1f\x06\x00 REF_END2 
+LOAD3 SCE007_001 REF6 \x06\x00 REF_END2 
 DIALOGUE_1 \x90\x1a DIALOGUE_2 s\x00\x00
  
 命じられるままに、早桃は拓司のベッドに歩み寄った。@
@@ -19,7 +19,7 @@ LOAD2 TextOn REF1 d\x02 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1eJ\x00 SEQ01
 
 LOAD6 .\\Data\\Script\\Bg.Fob REF3 \x9a\x02 REF_END2 
 LOAD4 BgAutoFadeIn REF3 \xc4\x02 REF_END1 
-LOAD3 SCE007_002\x00\x1f\xe8\x02 REF_END2 
+LOAD3 SCE007_002 REF6 \xe8\x02 REF_END2 
 DIALOGUE_1 \x94\x1a DIALOGUE_2 \xab\x00\x00
  
 義妹のほっそりとした指が、拓司の股間に触れた。@
@@ -38,7 +38,7 @@ DIALOGUE_1 \x94\x1a DIALOGUE_2 \xab\x00\x00
 
 \x00\x00\x00 DIALOGUE_END ,\x03 SEQ01
 \x1f6\x02 CALL3 d\x02 REF_END1 
-LOAD3 SCE007_003\x00\x1f\x12\x06 REF_END2 
+LOAD3 SCE007_003 REF6 \x12\x06 REF_END2 
 DIALOGUE_1 \x98\x1a DIALOGUE_2 q\x00\x00
  
 拓司\n　「……早桃」@
@@ -50,13 +50,13 @@ DIALOGUE_1 \x98\x1a DIALOGUE_2 q\x00\x00
 
 \x00 DIALOGUE_END V\x06 SEQ01
 \x1f6\x02 CALL3 d\x02 REF_END1 
-LOAD3 SCE007_004\x00\x1fT\x08 REF_END2 
+LOAD3 SCE007_004 REF6 T\x08 REF_END2 
 DIALOGUE_1 \x9c\x1a DIALOGUE_2 "\x00\x00
  
 ぺちゃぺちゃと唾液が絡んだようなしゃべりかたで早桃は続ける。\n\p性器に指を絡めて奉仕しながらみだらな言葉で義兄の興奮を誘う。\n\w\z
 \x00\x00\x00 DIALOGUE_END \x98\x08 SEQ01
 \x1f6\x02 CALL3 d\x02 REF_END1 
-LOAD3 SCE007_005\x00\x1fZ\t REF_END2 
+LOAD3 SCE007_005 REF6 Z\t REF_END2 
 DIALOGUE_1 \xa0\x1a DIALOGUE_2 \x8d\x00\x00
  
 早桃\n　「もうオナニーなんてする必要ないよ。\pエッチな本も買わな\n　　くていい。@
@@ -69,7 +69,7 @@ DIALOGUE_1 \xa0\x1a DIALOGUE_2 \x8d\x00\x00
 
 \x00\x00\x00 DIALOGUE_END \x9e\t SEQ01
 \x1f6\x02 CALL3 d\x02 REF_END1 
-LOAD3 SCE007_006\x00\x1f\x0c\x0c REF_END2 
+LOAD3 SCE007_006 REF6 \x0c\x0c REF_END2 
 DIALOGUE_1 \xa4\x1a DIALOGUE_2 }\x00\x00
  
 拓司\n　「う……早桃」@
@@ -83,7 +83,7 @@ DIALOGUE_1 \xa4\x1a DIALOGUE_2 }\x00\x00
 
 \x00\x00\x00 DIALOGUE_END P\x0c SEQ01
 \x1f6\x02 CALL3 d\x02 REF_END1 
-LOAD3 SCE007_007\x00\x1f~\x0e REF_END2 
+LOAD3 SCE007_007 REF6 ~\x0e REF_END2 
 DIALOGUE_1 \xa8\x1a DIALOGUE_2 \xaf\x00\x00
  
 早桃\n　「こんなにいっぱい。\pおにいちゃん、すごく溜まってたんだ\n　　ねえ。\p義妹の前でこんなにどくどく精液出しちゃって……\n　　恥ずかしくないの？\p　くすくす……」@
@@ -96,7 +96,7 @@ DIALOGUE_1 \xa8\x1a DIALOGUE_2 \xaf\x00\x00
 
 \x00 DIALOGUE_END \xc2\x0e SEQ01
 \x1f6\x02 CALL3 d\x02 REF_END1 
-LOAD3 SCE007_008\x00\x1f\xb8\x11 REF_END2 
+LOAD3 SCE007_008 REF6 \xb8\x11 REF_END2 
 DIALOGUE_1 \xac\x1a DIALOGUE_2 u\x00\x00
  
 早桃\n　「んくっ……はあ……穿き終わったよ。\pおにいちゃんの精液、\n　　いま、早桃のパンティとおま○このあいだに、べったりひっ\n　　ついてるよ。\pぬるぬるして、あったかい。@
@@ -107,7 +107,7 @@ DIALOGUE_1 \xac\x1a DIALOGUE_2 u\x00\x00
 
 \x00 DIALOGUE_END \xfc\x11 SEQ01
 \x1f6\x02 CALL3 d\x02 REF_END1 
-LOAD3 SCE007_009\x00\x1f\n\x14 REF_END2 
+LOAD3 SCE007_009 REF6 \n\x14 REF_END2 
 DIALOGUE_1 \xb0\x1a DIALOGUE_2 p\x00\x00
  
 早桃\n　「ほんと、いやらしいおにいちゃん。\pもしかして、いつも早\n　　桃のパンティ、オカズにしてたの？\p　おち○ちんをこすりつ\n　　けて、汚してたの？\p　精子いっぱい出して、それを何も知ら\n　　ない義妹に穿かせて興奮してたの？@
@@ -117,7 +117,7 @@ DIALOGUE_1 \xb0\x1a DIALOGUE_2 p\x00\x00
 
 \x00\x00\x00 DIALOGUE_END N\x14 SEQ01
 \x1f6\x02 CALL3 d\x02 REF_END1 
-LOAD3 SCE007_010\x00\x1fH\x16 REF_END2 
+LOAD3 SCE007_010 REF6 H\x16 REF_END2 
 DIALOGUE_1 \xb4\x1a DIALOGUE_2 l\x00\x00
  
 早桃は拓司をまたいだまま、二、三歩ベッドの上を歩くと、今度\nは義兄の首のあたりで腰を下ろして、膝立ちになった。@
@@ -131,7 +131,7 @@ DIALOGUE_1 \xb4\x1a DIALOGUE_2 l\x00\x00
 
 \x00 DIALOGUE_END \x8c\x16 SEQ01
 \x1f6\x02 CALL3 d\x02 REF_END1 
-LOAD3 SCE007_011\x00\x1fv\x18 REF_END2 
+LOAD3 SCE007_011 REF6 v\x18 REF_END2 
 DIALOGUE_1 \xb8\x1a DIALOGUE_2 \x99\x00\x00
  
 早桃\n　「ずっと見たかったんでしょう？\p　早桃のここ。@
@@ -146,7 +146,7 @@ DIALOGUE_1 \xb8\x1a DIALOGUE_2 \x99\x00\x00
 
 \x00\x00\x00 DIALOGUE_END \xba\x18 SEQ01
 \x1f6\x02 CALL3 d\x02 REF_END1 
-LOAD3 SCE007_012\x00\x1fX\x1b REF_END2 
+LOAD3 SCE007_012 REF6 X\x1b REF_END2 
 DIALOGUE_1 \xbc\x1a DIALOGUE_2 `\x00\x00
  
 早桃\n　「はあ、はあ……ねえ、おにいちゃんのパンツも頂戴」@
@@ -158,7 +158,7 @@ DIALOGUE_1 \xbc\x1a DIALOGUE_2 `\x00\x00
 \x00 DIALOGUE_END \x9c\x1b SEQ01
 \x1f6\x02 CALL3 d\x02 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1eK\x00 SEQ01
 \x1f\x9a\x02 CALL3 \xc4\x02 REF_END1 
-LOAD3 SCE007_013\x00\x1f\x8a\x1d REF_END2 
+LOAD3 SCE007_013 REF6 \x8a\x1d REF_END2 
 DIALOGUE_1 \xc0\x1a DIALOGUE_2 x\x00\x00
  
 早桃\n　「すごい匂い……。\p早桃も、おにいちゃんのパンツでオナ\n　　ニーしてたんだよ。\p知ってた？@
@@ -170,7 +170,7 @@ DIALOGUE_1 \xc0\x1a DIALOGUE_2 x\x00\x00
 
 \x00 DIALOGUE_END \xce\x1d SEQ01
 \x1f6\x02 CALL3 d\x02 REF_END1 
-LOAD3 SCE007_014\x00\x1f\xe8\x1f REF_END2 
+LOAD3 SCE007_014 REF6 \xe8\x1f REF_END2 
 DIALOGUE_1 \xc4\x1a DIALOGUE_2 T\x00\x00
  
 義妹が自分のブリーフを口に入れて、しゃぶっている。@
@@ -181,7 +181,7 @@ DIALOGUE_1 \xc4\x1a DIALOGUE_2 T\x00\x00
 
 \x00 DIALOGUE_END ,  SEQ01
 \x1f6\x02 CALL3 d\x02 REF_END1 
-LOAD3 SCE007_015\x00\x1f\xb6! REF_END2 
+LOAD3 SCE007_015 REF6 \xb6! REF_END2 
 DIALOGUE_1 \xc8\x1a DIALOGUE_2 \x8d\x00\x00
  
 早桃\n　「おにいちゃんと早桃、変態義兄妹だよね……」@
@@ -196,7 +196,7 @@ DIALOGUE_1 \xc8\x1a DIALOGUE_2 \x8d\x00\x00
 
 \x00 DIALOGUE_END \xfa! SEQ01
 \x1f6\x02 CALL3 d\x02 REF_END1 
-LOAD3 SCE007_016\x00\x1fh$ REF_END2 
+LOAD3 SCE007_016 REF6 h$ REF_END2 
 DIALOGUE_1 \xcc\x1a DIALOGUE_2 \x9c\x00\x00
  
 早桃\n　「いくらでも出るんだね。\pからだ、おかしいんじゃないの？\n　　\pほんとうは赤ちゃんを作るための液で、こんなふうに女の\n　　子にひっかけるためのものじゃないんだよ？@
@@ -210,7 +210,7 @@ DIALOGUE_1 \xcc\x1a DIALOGUE_2 \x9c\x00\x00
 
 \x00\x00\x00 DIALOGUE_END \xac$ SEQ01
 \x1f6\x02 CALL3 d\x02 REF_END1 
-LOAD3 SCE007_017\x00\x1fV' REF_END2 
+LOAD3 SCE007_017 REF6 V' REF_END2 
 DIALOGUE_1 \xd0\x1a DIALOGUE_2 \xb4\x00\x00
  
 拓司\n　「……やめろ」@
@@ -229,7 +229,7 @@ DIALOGUE_1 \xd0\x1a DIALOGUE_2 \xb4\x00\x00
 \x1f\x9a\x02 CALL3 \xc4\x02 REF_END1 
 LOAD6 .\\Data\\Script\\Bgm.Fob REF2 \xd8* REF_END2 
 LOAD2 StopCD REF1 \x02+ REF_END1 
-LOAD3 SCE007_018\x00\x1f\x1e+ REF_END2 
+LOAD3 SCE007_018 REF6 \x1e+ REF_END2 
 DIALOGUE_1 \xd4\x1a DIALOGUE_2 L\x00\x00
  
 拓司は両手で耳を覆った。@

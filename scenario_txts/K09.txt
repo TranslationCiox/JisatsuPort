@@ -1,6 +1,6 @@
 START_FILE
 &\x0e\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00l\x0b\x00
-LOAD3 SCEK09_001\x00\x1f\x06\x00 REF_END2 
+LOAD3 SCEK09_001 REF6 \x06\x00 REF_END2 
 DIALOGUE_1 H\xa7\x01\x0c\x00\x00\x00\x00"\x03;\x00\x00
  
 「ここに落ちている袋、どれくらいあると思う？」\nとゆきはいった。@
@@ -18,7 +18,7 @@ LOAD4 BgAutoFadeIn REF3 \xe4\x01 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\t\
 
 LOAD6 .\\Data\\Script\\Bgm.Fob REF2 "\x02 REF_END2 
 LOAD2 PlayCD REF1 L\x02 REF_END1 
-LOAD3 SCEK09_002\x00\x1fh\x02 REF_END2 
+LOAD3 SCEK09_002 REF6 h\x02 REF_END2 
 DIALOGUE_1 L\xa7\x01\x0c\x00\x00\x00\x00"\x03\x85\x00\x00
  
 「ここらへん、野良猫がたくさんいるの。@
@@ -34,7 +34,7 @@ DIALOGUE_1 L\xa7\x01\x0c\x00\x00\x00\x00"\x03\x85\x00\x00
 「もうわかったから。ありがとう、ゆきちゃん」\w\z
 \x00 DIALOGUE_END \xac\x02 SEQ01
 \x1fV\x01 CALL3 \x84\x01 REF_END1 
-LOAD3 SCEK09_003\x00\x1f\xfa\x04 REF_END2 
+LOAD3 SCEK09_003 REF6 \xfa\x04 REF_END2 
 DIALOGUE_1 P\xa7\x01\x0c\x00\x00\x00\x00"\x03y\x00\x00
  
 　たぶん、ゆきなりのストレス解消法なのだろうと思った。@
@@ -45,7 +45,7 @@ DIALOGUE_1 P\xa7\x01\x0c\x00\x00\x00\x00"\x03y\x00\x00
 でも、秘密の大きさは、私に対する信頼の大きさを意味していた。\n\p信頼の輝きが、秘密の暗さを消し去るくらい明るいと信じてこそ\nの告白である以上、秘密が大きくて暗いほど、私は喜ぶべきなの\nだ。\w\z
 \x00 DIALOGUE_END >\x05 SEQ01
 \x1fV\x01 CALL3 \x84\x01 REF_END1 
-LOAD3 SCEK09_004\x00\x1f\\\x07 REF_END2 
+LOAD3 SCEK09_004 REF6 \\\x07 REF_END2 
 DIALOGUE_1 T\xa7\x01\x0c\x00\x00\x00\x00"\x03\xd0\x00\x00
  
 　私は自分の中に生まれた硬いかたまりをかみ砕き、飲み下した。\n\pそして、自分がゆきの秘密を赦したことを伝えたくて、ゆきを優\nしく抱きしめた。@

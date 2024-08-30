@@ -1,6 +1,6 @@
 START_FILE
 \xd3\x15\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\x9e\x12\x00
-LOAD3 SCE050_001\x00\x1f\x06\x00 REF_END2 
+LOAD3 SCE050_001 REF6 \x06\x00 REF_END2 
 DIALOGUE_1 \xc0]\x00\x0c\x00\x00\x00\x00" \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x00\x00\x00 SEQ01
  \x1e\x04\x00\x00\r\x00\x00\x1e\x19\x00 SEQ01
  \x1e\x08\x00\x00\r\x00\x00\x1e\x00\x00\x00 SEQ01
@@ -18,7 +18,7 @@ LOAD3 SePlayEx REF3 \xc2\x00 REF_END1 \x03\x82\x00\x00
 \x00 DIALOGUE_END \xe2\x00 SEQ01
 LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \n\x03 REF_END2 
 LOAD2 TextOn REF1 8\x03 REF_END1 
-LOAD3 SCE050_002\x00\x1fT\x03 REF_END2 
+LOAD3 SCE050_002 REF6 T\x03 REF_END2 
 DIALOGUE_1 \xc4] DIALOGUE_2 o\x00\x00
  
 　恰幅のいい教員はそこまでいうと、手に持っていたカッターを\n自分の喉に押し当て、スッと横に引いた。\p噴水のように血が吹き\n上がる。/*▲BGM　Track11　再生*/\a2,-1,11,1,@
@@ -30,7 +30,7 @@ DIALOGUE_1 \xc4] DIALOGUE_2 o\x00\x00
 
 \x00\x00\x00 DIALOGUE_END \x98\x03 SEQ01
 \x1f\n\x03 CALL3 8\x03 REF_END1 
-LOAD3 SCE050_003\x00\x1f\x8e\x05 REF_END2 
+LOAD3 SCE050_003 REF6 \x8e\x05 REF_END2 
 DIALOGUE_1 \xc8] DIALOGUE_2 \xd9\x00\x00
  
 \n　いつかＴＶで見た、共産主義国家のマスゲーム。@
@@ -45,7 +45,7 @@ DIALOGUE_1 \xc8] DIALOGUE_2 \xd9\x00\x00
 
 \x00\x00\x00 DIALOGUE_END \xd2\x05 SEQ01
 \x1f\n\x03 CALL3 8\x03 REF_END1 
-LOAD3 SCE050_004\x00\x1fp\t REF_END2 
+LOAD3 SCE050_004 REF6 p\t REF_END2 
 DIALOGUE_1 \xcc] DIALOGUE_2 \x8f\x00\x00
  
 　拓司は、ほうけたようにたねを見た。@
@@ -56,7 +56,7 @@ DIALOGUE_1 \xcc] DIALOGUE_2 \x8f\x00\x00
 
 \x00 DIALOGUE_END \xb4\t SEQ01
 \x1f\n\x03 CALL3 8\x03 REF_END1 
-LOAD3 SCE050_005\x00\x1f*\x0c REF_END2 
+LOAD3 SCE050_005 REF6 *\x0c REF_END2 
 DIALOGUE_1 \xd0] DIALOGUE_2 c\x00\x00
  
 なたね\n　「わかるかなあ？　いまの場合、先生が牽引役になっているわ\n　　けよね。\pハーメルンの笛吹き的な装置として。\p結局、みんな\n　　誰かに命令された方が楽なのよね。\p限定されない完全な自由\n　　というのは、逆説的に－－」@
@@ -66,7 +66,7 @@ DIALOGUE_1 \xd0] DIALOGUE_2 c\x00\x00
 
 \x00\x00\x00 DIALOGUE_END n\x0c SEQ01
 \x1f\n\x03 CALL3 8\x03 REF_END1 
-LOAD3 SCE050_006\x00\x1f4\x0e REF_END2 
+LOAD3 SCE050_006 REF6 4\x0e REF_END2 
 DIALOGUE_1 \xd4] DIALOGUE_2 d\x00\x00
  
 　拓司は頭を振った。\pなたねの言葉を頭から振り払う。@
@@ -81,7 +81,7 @@ DIALOGUE_1 \xd4] DIALOGUE_2 d\x00\x00
 
 \x00\x00\x00 DIALOGUE_END x\x0e SEQ01
 \x1f\n\x03 CALL3 8\x03 REF_END1 
-LOAD3 SCE050_007\x00\x1fB\x10 REF_END2 
+LOAD3 SCE050_007 REF6 B\x10 REF_END2 
 DIALOGUE_1 \xd8] DIALOGUE_2 c\x00\x00
  
 \n　早桃。@

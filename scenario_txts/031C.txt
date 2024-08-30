@@ -1,6 +1,6 @@
 START_FILE
 \x0f\x12\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00d\x0f\x00
-LOAD3 SCE031_001\x00\x1f\x06\x00 REF_END2 
+LOAD3 SCE031_001 REF6 \x06\x00 REF_END2 
 DIALOGUE_1 \x10@ DIALOGUE_2 m\x00\x00
  
 スーパーのビニール袋に野良猫を詰め、廃墟となった五号棟の５階\nの窓からそれを放り投げていた月代カンナ。@
@@ -14,7 +14,7 @@ DIALOGUE_1 \x10@ DIALOGUE_2 m\x00\x00
 \x00\x00\x00 DIALOGUE_END J\x00 SEQ01
 LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \x1e\x02 REF_END2 
 LOAD2 TextOn REF1 L\x02 REF_END1 
-LOAD3 SCE031_002\x00\x1fh\x02 REF_END2 
+LOAD3 SCE031_002 REF6 h\x02 REF_END2 
 DIALOGUE_1 \x14@ DIALOGUE_2 \x90\x00\x00
  
 \n　月代カンナのなかにある暗い穴に、拓司はまっさかさまに落ちて\n　いった。@
@@ -30,7 +30,7 @@ DIALOGUE_1 \x14@ DIALOGUE_2 \x90\x00\x00
 
 \x00 DIALOGUE_END \xac\x02 SEQ01
 \x1f\x1e\x02 CALL3 L\x02 REF_END1 
-LOAD3 SCE031_003\x00\x1f&\x05 REF_END2 
+LOAD3 SCE031_003 REF6 &\x05 REF_END2 
 DIALOGUE_1 \x18@ DIALOGUE_2 \xe1\x00\x00
  
 　月代カンナは、続いて猟奇殺人事件の本を拓司にリリースした。@
@@ -44,7 +44,7 @@ DIALOGUE_1 \x18@ DIALOGUE_2 \xe1\x00\x00
 
 \x00 DIALOGUE_END j\x05 SEQ01
 \x1f\x1e\x02 CALL3 L\x02 REF_END1 
-LOAD3 SCE031_004\x00\x1f(\t REF_END2 
+LOAD3 SCE031_004 REF6 (\t REF_END2 
 DIALOGUE_1 \x1c@ DIALOGUE_2 \xcb\x00\x00
  
 拓司は自ら志願して、団地からの『猫落とし』をカンナと一緒に行\nった。@

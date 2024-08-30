@@ -3,7 +3,7 @@ START_FILE
 LOAD2 start REF2 <\x00 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e<\x00 SEQ01
 LOAD7 .\\Data\\Script\\TextFunc.fob REF1 r\x00 REF_END2 
 LOAD3 WaitTime REF3 \xa0\x00 REF_END1 
-LOAD3 SCE048_020\x00\x1f\xc0\x00 REF_END2 
+LOAD3 SCE048_020 REF6 \xc0\x00 REF_END2 
 DIALOGUE_1 \xecZ DIALOGUE_2 \xce\x00\x00
  
 御堂\n　「おい、柏木。\pお前なにやってんだよ……？」@
@@ -16,7 +16,7 @@ DIALOGUE_1 \xecZ DIALOGUE_2 \xce\x00\x00
  DIALOGUE_END \x04\x01 SEQ01
 LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \\\x04 REF_END2 
 LOAD2 TextOn REF1 \x8a\x04 REF_END1 
-LOAD3 SCE048_021\x00\x1f\xa6\x04 REF_END2 
+LOAD3 SCE048_021 REF6 \xa6\x04 REF_END2 
 DIALOGUE_1 \xf0Z DIALOGUE_2 \x9c\x00\x00
  
 　その柏木が、主役となっていた。@
@@ -34,7 +34,7 @@ DIALOGUE_1 \xf0Z DIALOGUE_2 \x9c\x00\x00
 
 \x00\x00\x00 DIALOGUE_END \xea\x04 SEQ01
 \x1f\\\x04 CALL3 \x8a\x04 REF_END1 
-LOAD3 SCE048_022\x00\x1f\x94\x07 REF_END2 
+LOAD3 SCE048_022 REF6 \x94\x07 REF_END2 
 DIALOGUE_1 \xf4Z DIALOGUE_2 J\x00\x00
  
 柏木\n　「おれ的にすげえ、つらい！」@
@@ -45,7 +45,7 @@ DIALOGUE_1 \xf4Z DIALOGUE_2 J\x00\x00
 
 \x00\x00\x00 DIALOGUE_END \xd8\x07 SEQ01
 \x1f\\\x04 CALL3 \x8a\x04 REF_END1 
-LOAD3 SCE048_023\x00\x1f:\t REF_END2 
+LOAD3 SCE048_023 REF6 :\t REF_END2 
 DIALOGUE_1 \xf8Z DIALOGUE_2 ]\x00\x00
  
 柏木\n　「おれれれれれれれれれれれ」@
@@ -56,7 +56,7 @@ DIALOGUE_1 \xf8Z DIALOGUE_2 ]\x00\x00
 
 \x00 DIALOGUE_END ~\t SEQ01
 \x1f\\\x04 CALL3 \x8a\x04 REF_END1 
-LOAD3 SCE048_024\x00\x1f,\x0b REF_END2 
+LOAD3 SCE048_024 REF6 ,\x0b REF_END2 
 DIALOGUE_1 \xfcZ DIALOGUE_2 \xa0\x00\x00
  
 \n　御堂の声は、間抜けな冗談のように響いた。@
@@ -72,7 +72,7 @@ DIALOGUE_1 \xfcZ DIALOGUE_2 \xa0\x00\x00
 
 \x00 DIALOGUE_END p\x0b SEQ01
 \x1f\\\x04 CALL3 \x8a\x04 REF_END1 
-LOAD3 SCE048_025\x00\x1f*\x0e REF_END2 
+LOAD3 SCE048_025 REF6 *\x0e REF_END2 
 DIALOGUE_1 \x00[ DIALOGUE_2 \xb7\x00\x00
  
 柏木\n　「いてえ」@
@@ -89,7 +89,7 @@ DIALOGUE_1 \x00[ DIALOGUE_2 \xb7\x00\x00
 
 \x00\x00 DIALOGUE_END n\x0e SEQ01
 \x1f\\\x04 CALL3 \x8a\x04 REF_END1 
-LOAD3 SCE048_026\x00\x1f\x84\x11 REF_END2 
+LOAD3 SCE048_026 REF6 \x84\x11 REF_END2 
 DIALOGUE_1 \x04[ DIALOGUE_2 \x9c\x00\x00
  
 なたね\n　「……始まったのね」@
@@ -103,7 +103,7 @@ DIALOGUE_1 \x04[ DIALOGUE_2 \x9c\x00\x00
 
 \x00 DIALOGUE_END \xc8\x11 SEQ01
 \x1f\\\x04 CALL3 \x8a\x04 REF_END1 
-LOAD3 SCE048_027\x00\x1fr\x14 REF_END2 
+LOAD3 SCE048_027 REF6 r\x14 REF_END2 
 DIALOGUE_1 \x08[ DIALOGUE_2 w\x00\x00
  
 拓司\n　「だ、大丈夫かい？」@
@@ -116,7 +116,7 @@ DIALOGUE_1 \x08[ DIALOGUE_2 w\x00\x00
 
 \x00\x00 DIALOGUE_END \xb6\x14 SEQ01
 \x1f\\\x04 CALL3 \x8a\x04 REF_END1 
-LOAD3 SCE048_028\x00\x1f\xcc\x16 REF_END2 
+LOAD3 SCE048_028 REF6 \xcc\x16 REF_END2 
 DIALOGUE_1 \x0c[ DIALOGUE_2 \xc5\x00\x00
  
 なたね\n　「４６億年前、やつらは地球の地下にいくつもの『シード』を埋\n　　め込んだの。\pやがて人類が宇宙に進出するときがきて……実\n　　際、いまがそのときなんだけれど……そのときに人類が『適\n　　格』でないと判断されたら、『シード』は目覚め、人類完殺\n　　の兵器として稼動し始めるの。\pこれは聖書とか様々な文献に\n　　終末とか悪魔とかいう形で明記されている厳然たる事実なの」\n　　@
@@ -126,7 +126,7 @@ DIALOGUE_1 \x0c[ DIALOGUE_2 \xc5\x00\x00
 
 \x00\x00\x00 DIALOGUE_END \x10\x17 SEQ01
 \x1f\\\x04 CALL3 \x8a\x04 REF_END1 
-LOAD3 SCE048_029\x00\x1f^\x1a REF_END2 
+LOAD3 SCE048_029 REF6 ^\x1a REF_END2 
 DIALOGUE_1 \x10[ DIALOGUE_2 \xbb\x00\x00
  
 拓司\n　「……自殺波動？」@
@@ -137,7 +137,7 @@ DIALOGUE_1 \x10[ DIALOGUE_2 \xbb\x00\x00
 
 \x00\x00\x00 DIALOGUE_END \xa2\x1a SEQ01
 \x1f\\\x04 CALL3 \x8a\x04 REF_END1 
-LOAD3 SCE048_030\x00\x1f\xc8\x1d REF_END2 
+LOAD3 SCE048_030 REF6 \xc8\x1d REF_END2 
 DIALOGUE_1 \x14[ DIALOGUE_2 D\x00\x00
  
 拓司\n　「雲居さん！」@
@@ -148,7 +148,7 @@ DIALOGUE_1 \x14[ DIALOGUE_2 D\x00\x00
 
 \x00 DIALOGUE_END \x0c\x1e SEQ01
 \x1f\\\x04 CALL3 \x8a\x04 REF_END1 
-LOAD3 SCE048_031\x00\x1fV\x1f REF_END2 
+LOAD3 SCE048_031 REF6 V\x1f REF_END2 
 DIALOGUE_1 \x18[ DIALOGUE_2 \xc5\x00\x00
  
 なたね\n　「エンケリュスは私の身体の中に、たくさんいやらしい液を流\n　　し込んだの。\p気持ち悪かった。\p私をレイプしたのは、正確に\n　　言うと宇宙人じゃなくてエンケリュス。\pいま、わかったこと\n　　だけど。\pエンケリュスの液は、内臓部分から徐々に私をおか\n　　しくしていくの。\pいやらしいことしか考えられなくなって、\n　　勉強とか、できなくなる。\pそれに対抗するために、私は御堂\n　　くんたちに精液をかけてもらっていたの」@
@@ -159,7 +159,7 @@ DIALOGUE_1 \x18[ DIALOGUE_2 \xc5\x00\x00
 
 \x00\x00\x00 DIALOGUE_END \x9a\x1f SEQ01
 \x1f\\\x04 CALL3 \x8a\x04 REF_END1 
-LOAD3 SCE048_032\x00\x1f\xe8" REF_END2 
+LOAD3 SCE048_032 REF6 \xe8" REF_END2 
 DIALOGUE_1 \x1c[ DIALOGUE_2 [\x00\x00
  
 拓司\n　「そんなことより、早く柏木のことを、先生なり警察なりに報\n　　せないと！」@
@@ -174,7 +174,7 @@ DIALOGUE_1 \x1c[ DIALOGUE_2 [\x00\x00
 
 LOAD6 .\\Data\\Script\\Bg.Fob REF3 \xec$ REF_END2 
 LOAD4 BgAutoFadeIn REF3 \x16% REF_END1 
-LOAD3 SCE048_033\x00\x1f:% REF_END2 
+LOAD3 SCE048_033 REF6 :% REF_END2 
 DIALOGUE_1  [ DIALOGUE_2 A\x00\x00
  
 なたね\n　「あーあ、こんなにばさばさになっちゃった。\p困ったなあ。い\n　　やだなあ」@

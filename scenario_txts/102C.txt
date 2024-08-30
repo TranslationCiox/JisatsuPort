@@ -1,6 +1,6 @@
 START_FILE
 #\x1f\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xd0\x19\x00
-LOAD3 SCE102_001\x00\x1f\x06\x00 REF_END2 
+LOAD3 SCE102_001 REF6 \x06\x00 REF_END2 
 DIALOGUE_1 \x00\xaf DIALOGUE_2 \x11\x00\x00
  
 \n\n\n\n\n\n\n\n\n\n　　　　　　　　　　　　　『５日目』\
@@ -8,7 +8,7 @@ DIALOGUE_1 \x00\xaf DIALOGUE_2 \x11\x00\x00
 \x00\x00\x00 DIALOGUE_END J\x00 SEQ01
 LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xae\x00 REF_END2 
 LOAD2 TextOn REF1 \xdc\x00 REF_END1 
-LOAD3 SCE102_002\x00\x1f\xf8\x00 REF_END2 
+LOAD3 SCE102_002 REF6 \xf8\x00 REF_END2 
 DIALOGUE_1 \x04\xaf DIALOGUE_2 \xa5\x00\x00
  
 早桃の様子がおかしいことに気づいたのは、カンナだった。@
@@ -24,7 +24,7 @@ DIALOGUE_1 \x04\xaf DIALOGUE_2 \xa5\x00\x00
 
 LOAD6 .\\Data\\Script\\Bg.Fob REF3 $\x04 REF_END2 
 LOAD4 BgAutoFadeIn REF3 N\x04 REF_END1 
-LOAD3 SCE102_003\x00\x1fr\x04 REF_END2 
+LOAD3 SCE102_003 REF6 r\x04 REF_END2 
 DIALOGUE_1 \x08\xaf DIALOGUE_2 j\x00\x00
  
 とりあえず拓司は、早桃の様子を見ることにした。@
@@ -40,7 +40,7 @@ DIALOGUE_1 \x08\xaf DIALOGUE_2 j\x00\x00
 
 \x00 DIALOGUE_END \xb6\x04 SEQ01
 \x1f\xae\x00 CALL3 \xdc\x00 REF_END1 
-LOAD3 SCE102_004\x00\x1f\x98\x06 REF_END2 
+LOAD3 SCE102_004 REF6 \x98\x06 REF_END2 
 DIALOGUE_1 \x0c\xaf DIALOGUE_2 p\x00\x00
  
 拓司\n　「聞こえなかったか？\p　風邪薬をくれ」@
@@ -53,7 +53,7 @@ DIALOGUE_1 \x0c\xaf DIALOGUE_2 p\x00\x00
 
 \x00 DIALOGUE_END \xdc\x06 SEQ01
 \x1f\xae\x00 CALL3 \xdc\x00 REF_END1 
-LOAD3 SCE102_005\x00\x1f\xd6\x08 REF_END2 
+LOAD3 SCE102_005 REF6 \xd6\x08 REF_END2 
 DIALOGUE_1 \x10\xaf DIALOGUE_2 \x87\x00\x00
  
 なたね\n　「伝染病にかかるなんて、自己管理が足りない証拠よ。@
@@ -64,7 +64,7 @@ DIALOGUE_1 \x10\xaf DIALOGUE_2 \x87\x00\x00
 
 \x00\x00\x00 DIALOGUE_END \x1a\t SEQ01
 \x1f\xae\x00 CALL3 \xdc\x00 REF_END1 
-LOAD3 SCE102_006\x00\x1fp\x0b REF_END2 
+LOAD3 SCE102_006 REF6 p\x0b REF_END2 
 DIALOGUE_1 \x14\xaf DIALOGUE_2 \xae\x00\x00
  
 錦城\n　「雲居さん。\pあなたは最初、誰にでも中立だと主張したわよ\n　　ね？\p　だからこそ、私たちはあなたに物資の管理人を任せた\n　　の。\pあなたの地位は、ただそれだけの理由に根拠したものな\n　　の。\pみんなの合意に支えられているもの。\p違うかしら？」@
@@ -76,7 +76,7 @@ DIALOGUE_1 \x14\xaf DIALOGUE_2 \xae\x00\x00
 
 \x00\x00\x00 DIALOGUE_END \xb4\x0b SEQ01
 \x1f\xae\x00 CALL3 \xdc\x00 REF_END1 
-LOAD3 SCE102_007\x00\x1f\xa6\x0e REF_END2 
+LOAD3 SCE102_007 REF6 \xa6\x0e REF_END2 
 DIALOGUE_1 \x18\xaf DIALOGUE_2 \xb2\x00\x00
  
 なたね\n　「いえ、それは……」@
@@ -88,7 +88,7 @@ DIALOGUE_1 \x18\xaf DIALOGUE_2 \xb2\x00\x00
 
 \x00 DIALOGUE_END \xea\x0e SEQ01
 \x1f\xae\x00 CALL3 \xdc\x00 REF_END1 
-LOAD3 SCE102_008\x00\x1f\xec\x11 REF_END2 
+LOAD3 SCE102_008 REF6 \xec\x11 REF_END2 
 DIALOGUE_1 \x1c\xaf DIALOGUE_2 \x81\x00\x00
  
 錦城\n　「わかってもらえたかしら？\p　だったら黙って薬を持ってきて\n　　ちょうだい。\p……さあ！」@
@@ -100,7 +100,7 @@ DIALOGUE_1 \x1c\xaf DIALOGUE_2 \x81\x00\x00
 
 \x00\x00\x00 DIALOGUE_END 0\x12 SEQ01
 \x1f\xae\x00 CALL3 \xdc\x00 REF_END1 
-LOAD3 SCE102_009\x00\x1fn\x14 REF_END2 
+LOAD3 SCE102_009 REF6 n\x14 REF_END2 
 DIALOGUE_1  \xaf DIALOGUE_2 \x9c\x00\x00
  
 床に散らばった風邪薬を拾い集めながら、紅葉が舌打ちした。@
@@ -114,7 +114,7 @@ DIALOGUE_1  \xaf DIALOGUE_2 \x9c\x00\x00
 \x1f\xae\x00 CALL3 \xdc\x00 REF_END1 
 LOAD6 .\\Data\\Script\\Bgm.Fob REF2 \\\x17 REF_END2 
 LOAD2 StopCD REF1 \x86\x17 REF_END1 
-LOAD3 SCE102_010\x00\x1f\xa2\x17 REF_END2 
+LOAD3 SCE102_010 REF6 \xa2\x17 REF_END2 
 DIALOGUE_1 $\xaf DIALOGUE_2 C\x00\x00
  
 紅葉\n　「……ねえ、拓司。\p鍵、とっちゃおうか？」@

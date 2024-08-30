@@ -3,7 +3,7 @@ START_FILE
 
 LOAD6 .\\Data\\Script\\Bg.Fob REF3  \x00 REF_END2 
 LOAD4 BgAutoFadeIn REF3 J\x00 REF_END1 
-LOAD3 SCEK16_001\x00\x1fn\x00 REF_END2 
+LOAD3 SCEK16_001 REF6 n\x00 REF_END2 
 DIALOGUE_1 `\xb2\x01\x0c\x00\x00\x00\x00"\x03;\x00\x00
  
 語り終えた後、カンナは無言で、自らが作り出した沈黙のなかに\n沈み込んだ。@
@@ -12,7 +12,7 @@ DIALOGUE_1 `\xb2\x01\x0c\x00\x00\x00\x00"\x03;\x00\x00
 \x00\x00\x00 DIALOGUE_END \xb2\x00 SEQ01
 LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xbe\x01 REF_END2 
 LOAD2 TextOn REF1 \xec\x01 REF_END1 
-LOAD3 SCEK16_002\x00\x1f\x08\x02 REF_END2 
+LOAD3 SCEK16_002 REF6 \x08\x02 REF_END2 
 DIALOGUE_1 d\xb2\x01\x0c\x00\x00\x00\x00"\x03e\x00\x00
  
 拓司\n　「つまり、俺は、カンナなんだな？」@
@@ -25,7 +25,7 @@ DIALOGUE_1 d\xb2\x01\x0c\x00\x00\x00\x00"\x03e\x00\x00
 ようやく口を開いたとき、カンナはなぜか自嘲気味の笑顔を口の\n端に浮かべていた。\w\z
 \x00 DIALOGUE_END L\x02 SEQ01
 \x1f\xbe\x01 CALL3 \xec\x01 REF_END1 
-LOAD3 SCEK16_003\x00\x1f\x1a\x04 REF_END2 
+LOAD3 SCEK16_003 REF6 \x1a\x04 REF_END2 
 DIALOGUE_1 h\xb2\x01\x0c\x00\x00\x00\x00"\x03\x86\x00\x00
  
 カンナ\n　「……なんだか、違うものになってしまったみたい」@
@@ -35,7 +35,7 @@ DIALOGUE_1 h\xb2\x01\x0c\x00\x00\x00\x00"\x03\x86\x00\x00
 　　このことは、もう私の一部分ではなくて、私がこのことの一\n　　部分で……なのに、なんだかこうやって話してみたら、全然\n　　違うものになってしまったみたい。\pすごく馬鹿げて聞こ\n　　える」\w\z
 \x00 DIALOGUE_END ^\x04 SEQ01
 \x1f\xbe\x01 CALL3 \xec\x01 REF_END1 
-LOAD3 SCEK16_004\x00\x1f\xb0\x06 REF_END2 
+LOAD3 SCEK16_004 REF6 \xb0\x06 REF_END2 
 DIALOGUE_1 l\xb2\x01\x0c\x00\x00\x00\x00"\x03\x88\x00\x00
  
 拓司\n　「……」@
@@ -47,7 +47,7 @@ DIALOGUE_1 l\xb2\x01\x0c\x00\x00\x00\x00"\x03\x88\x00\x00
 \nカンナは両手をぱっと開いて見せて、おしまい、と繰り返した。\w\z
 \x00\x00\x00 DIALOGUE_END \xf4\x06 SEQ01
 \x1f\xbe\x01 CALL3 \xec\x01 REF_END1 
-LOAD3 SCEK16_005\x00\x1fN\t REF_END2 
+LOAD3 SCEK16_005 REF6 N\t REF_END2 
 DIALOGUE_1 p\xb2\x01\x0c\x00\x00\x00\x00"\x03x\x00\x00
  
 カンナ\n　「どうしてなのかしら。全然わからない」@
@@ -61,7 +61,7 @@ DIALOGUE_1 p\xb2\x01\x0c\x00\x00\x00\x00"\x03x\x00\x00
 　　まとめて読めよ」\w\z
 \x00\x00\x00 DIALOGUE_END \x92\t SEQ01
 \x1f\xbe\x01 CALL3 \xec\x01 REF_END1 
-LOAD3 SCEK16_006\x00\x1f\xac\x0b REF_END2 
+LOAD3 SCEK16_006 REF6 \xac\x0b REF_END2 
 DIALOGUE_1 t\xb2\x01\x0c\x00\x00\x00\x00"\x03>\x00\x00
  
 カンナは信じられないものを見るような顔で拓司を見ていたが、\nやがてクスクスと笑いはじめた。@

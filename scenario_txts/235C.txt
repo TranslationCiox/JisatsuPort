@@ -3,7 +3,7 @@ START_FILE
 
 LOAD6 .\\Data\\Script\\Bg.Fob REF3  \x00 REF_END2 
 LOAD4 BgAutoFadeIn REF3 J\x00 REF_END1 
-LOAD3 SCE235_001\x00\x1fn\x00 REF_END2 
+LOAD3 SCE235_001 REF6 n\x00 REF_END2 
 DIALOGUE_1 \xd0~\x01\x0c\x00\x00\x00\x00"\x03\x19\x00\x00
  
 一瞬、白い部屋の天井が見えた。@
@@ -15,7 +15,7 @@ DIALOGUE_1 \xd0~\x01\x0c\x00\x00\x00\x00"\x03\x19\x00\x00
 \x00\x00\x00 DIALOGUE_END \xb2\x00 SEQ01
 LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 6\x01 REF_END2 
 LOAD2 TextOn REF1 d\x01 REF_END1 
-LOAD3 SCE235_002\x00\x1f\x80\x01 REF_END2 
+LOAD3 SCE235_002 REF6 \x80\x01 REF_END2 
 DIALOGUE_1 \xd4~\x01\x0c\x00\x00\x00\x00"\x1f6\x01 REF_END2 LOAD5 TextWindowOffDirect\x1f\xd0\x01 REF_END1  \x1e\x00\x00\x00\x00\r\x00 REF_END2 \x0c\x02\x00\x00" \x1e\x04\x00\x00\r\x00\x00\x1e\x1b\x00 SEQ01
  \x1e\x08\x00\x00\r\x00\x00\x1e\x00\x00\x00 SEQ01
 
@@ -42,7 +42,7 @@ LOAD2 SeStop REF1 \x1c\x04 REF_END1 \x03\x8c\x00\x00
 \x00 DIALOGUE_END 8\x04 SEQ01
 \x1f6\x01 CALL3 d\x01 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e[\x00 SEQ01
 \x1f \x00 CALL3 J\x00 REF_END1 
-LOAD3 SCE235_003\x00\x1f\xd6\x06 REF_END2 
+LOAD3 SCE235_003 REF6 \xd6\x06 REF_END2 
 DIALOGUE_1 \xd8~\x01\x0c\x00\x00\x00\x00"\x03\x99\x00\x00
  
 拓司はその言葉を、虚ろな意識の中で転がした。@
@@ -61,7 +61,7 @@ DIALOGUE_1 \xd8~\x01\x0c\x00\x00\x00\x00"\x03\x99\x00\x00
 
 \x00\x00\x00 DIALOGUE_END \x1a\x07 SEQ01
 \x1f6\x01 CALL3 d\x01 REF_END1 
-LOAD3 SCE235_004\x00\x1f\xb8\t REF_END2 
+LOAD3 SCE235_004 REF6 \xb8\t REF_END2 
 DIALOGUE_1 \xdc~\x01\x0c\x00\x00\x00\x00"\x03\x8c\x00\x00
  
 錦城\n　「こんな醜い火傷があるんじゃ、いままで処女だったっていう\n　　のもわかるわね。\p恥ずかしくて見せられたもんじゃないもの。\n　　\pこんなみっともない傷を見たら百年の恋も冷めて、どんな男\n　　の子も逃げ出すわよ。\pあ～カワイソウ。\p私だったら世をはか\n　　なんで自殺するけどわね、あはは」@
@@ -71,7 +71,7 @@ DIALOGUE_1 \xdc~\x01\x0c\x00\x00\x00\x00"\x03\x8c\x00\x00
 
 \x00\x00\x00 DIALOGUE_END \xfc\t SEQ01
 \x1f6\x01 CALL3 d\x01 REF_END1 
-LOAD3 SCE235_005\x00\x1ff\x0c REF_END2 
+LOAD3 SCE235_005 REF6 f\x0c REF_END2 
 DIALOGUE_1 \xe0~\x01\x0c\x00\x00\x00\x00"\x03\xd8\x00\x00
  
 　勢い良く放出された精液は、まず、紅葉の鼻先で弾けた。@

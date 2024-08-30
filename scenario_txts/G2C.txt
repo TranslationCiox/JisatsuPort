@@ -6,7 +6,7 @@ LOAD4 BgAutoFadeIn REF3 J\x00 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x08\x
 
 LOAD6 .\\Data\\Script\\Bgm.Fob REF2 \x88\x00 REF_END2 
 LOAD2 PlayCD REF1 \xb2\x00 REF_END1 
-LOAD3 SCEG02_001\x00\x1f\xce\x00 REF_END2 
+LOAD3 SCEG02_001 REF6 \xce\x00 REF_END2 
 DIALOGUE_1 H\xc5\x01\x0c\x00\x00\x00\x00"\x03)\x00\x00
  
 錦城\n　「……しっ！　私よ、虎菱くん」@
@@ -17,7 +17,7 @@ DIALOGUE_1 H\xc5\x01\x0c\x00\x00\x00\x00"\x03)\x00\x00
 LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xd6\x01 REF_END2 
 LOAD2 TextOn REF1 \x04\x02 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00 SEQ01
 \x1f \x00 CALL3 J\x00 REF_END1 
-LOAD3 SCEG02_002\x00\x1fT\x02 REF_END2 
+LOAD3 SCEG02_002 REF6 T\x02 REF_END2 
 DIALOGUE_1 L\xc5\x01\x0c\x00\x00\x00\x00"\x032\x00\x00
  
 錦城\n　「ちょっとお話がしたくて。いいかな？」@
@@ -28,7 +28,7 @@ DIALOGUE_1 L\xc5\x01\x0c\x00\x00\x00\x00"\x032\x00\x00
 拓司\n　「え？」\w\z
 \x00 DIALOGUE_END \x98\x02 SEQ01
 \x1f\xd6\x01 CALL3 \x04\x02 REF_END1 
-LOAD3 SCEG02_003\x00\x1f\x9a\x03 REF_END2 
+LOAD3 SCEG02_003 REF6 \x9a\x03 REF_END2 
 DIALOGUE_1 P\xc5\x01\x0c\x00\x00\x00\x00"\x03@\x00\x00
  
 錦城\n　「教師という仕事に就きながら、こういう状況では何もできな\n　　い。\p本当は私がみんなを導かなくちゃいけないのに。@

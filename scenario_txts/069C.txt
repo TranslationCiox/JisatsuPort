@@ -3,7 +3,7 @@ START_FILE
 
 LOAD6 .\\Data\\Script\\Bgm.Fob REF2  \x00 REF_END2 
 LOAD2 PlayCD REF1 J\x00 REF_END1 
-LOAD3 SCE069_001\x00\x1ff\x00 REF_END2 
+LOAD3 SCE069_001 REF6 f\x00 REF_END2 
 DIALOGUE_1 p{ DIALOGUE_2 .\x00\x00
  
 残るは紅葉だけだ。\p紅葉の教室……そこは拓司の教室でもあるわ\nけだが……は、旧校舎１階にある。\pここ、新校舎の２階から紅葉\nの教室まで進むには、いくつかのルートが考えられる。\

@@ -1,6 +1,6 @@
 START_FILE
 /8\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\x9a/\x00
-LOAD3 SCE062_001\x00\x1f\x06\x00 REF_END2 
+LOAD3 SCE062_001 REF6 \x06\x00 REF_END2 
 DIALOGUE_1 \x80p\x00\x0c\x00\x00\x00\x00" \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x00\x00\x00 SEQ01
  \x1e\x04\x00\x00\r\x00\x00\x1e\t\x00 SEQ01
  \x1e\x08\x00\x00\r\x00\x00\x1e\x00\x00\x00 SEQ01
@@ -17,7 +17,7 @@ LOAD2 TextOn REF1 |\x01 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x18\x00 SEQ
 
 LOAD6 .\\Data\\Script\\Bg.Fob REF3 \xb2\x01 REF_END2 
 LOAD4 BgAutoFadeIn REF3 \xdc\x01 REF_END1 
-LOAD3 SCE062_002\x00\x1f\x00\x02 REF_END2 
+LOAD3 SCE062_002 REF6 \x00\x02 REF_END2 
 DIALOGUE_1 \x84p DIALOGUE_2 \xcc\x00\x00
  
 死屍累々とは、文字どおり、このことをいうのだろう。@
@@ -30,7 +30,7 @@ DIALOGUE_1 \x84p DIALOGUE_2 \xcc\x00\x00
 
 \x00\x00\x00 DIALOGUE_END D\x02 SEQ01
 \x1fN\x01 CALL3 |\x01 REF_END1 
-LOAD3 SCE062_003\x00\x1f\xae\x05 REF_END2 
+LOAD3 SCE062_003 REF6 \xae\x05 REF_END2 
 DIALOGUE_1 \x88p DIALOGUE_2 ]\x00\x00
  
 カンナ\n　「生きてたんだ、虎菱くん？\p　まあ、あなたならそうかもしれ\n　　ないわね」@
@@ -45,7 +45,7 @@ DIALOGUE_1 \x88p DIALOGUE_2 ]\x00\x00
 \x1fN\x01 CALL3 |\x01 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x0b\x01 SEQ01
 \x1f\x98\x00 REF_END2 
 LOAD2 PlayCD REF1 \xc6\x07 REF_END1 
-LOAD3 SCE062_004\x00\x1f\xe2\x07 REF_END2 
+LOAD3 SCE062_004 REF6 \xe2\x07 REF_END2 
 DIALOGUE_1 \x8cp DIALOGUE_2 \xb7\x00\x00
  
 カンナ\n　「誰かに死ねって命令されて、はいそうですかって死ねるほど、\n　　私は軽く考えていない！\p　そんな簡単に死ねるなら、とっく\n　　の昔に何百回も死んであげてるわよ！\p　こんな……こんなゴ\n　　ロゴロ転がってるありふれた死にかたになんて、同化できな\n　　い！\p　私にとって死ぬってことは……特別なの！\p　手の届\n　　かない高い場所にひっそりと咲いて……散る……誰にも……」\n　　@
@@ -58,7 +58,7 @@ DIALOGUE_1 \x8cp DIALOGUE_2 \xb7\x00\x00
 \x00 DIALOGUE_END &\x08 SEQ01
 \x1fN\x01 CALL3 |\x01 CALL2 \x98\x00 REF_END2 
 LOAD2 StopCD REF1 H\x0b REF_END1 
-LOAD3 SCE062_005\x00\x1fd\x0b REF_END2 
+LOAD3 SCE062_005 REF6 d\x0b REF_END2 
 DIALOGUE_1 \x90p DIALOGUE_2 \xb0\x00\x00
  
 それはそうであろう、男の拓司でさえ、どうにかなってしまいそ\nうなのだ。\p目の前で何十人もの人間が自殺する瞬間を見てしまっ\nたカンナが、平常心で事態を切り抜けることなどできるはずがない\n。\pカンナを正気の縁につなぎ止めているラインは、ギリギリまでに\n細い。\pわずかでもカンナが揺らめけば、そのラインは切れる。@
@@ -71,7 +71,7 @@ DIALOGUE_1 \x90p DIALOGUE_2 \xb0\x00\x00
 
 \x00\x00\x00 DIALOGUE_END \xa8\x0b SEQ01
 \x1fN\x01 CALL3 |\x01 REF_END1 
-LOAD3 SCE062_006\x00\x1f\xa2\x0e REF_END2 
+LOAD3 SCE062_006 REF6 \xa2\x0e REF_END2 
 DIALOGUE_1 \x94p DIALOGUE_2 \x7f\x00\x00
  
 拓司\n　「ああ。\p今朝、テレビでやってた。\p気軽に生き死にを考えて、\n　　それを使って自己アピールをするみたいな若者が多いって…\n　　…」@
@@ -84,7 +84,7 @@ DIALOGUE_1 \x94p DIALOGUE_2 \x7f\x00\x00
 
 \x00 DIALOGUE_END \xe6\x0e SEQ01
 \x1fN\x01 CALL3 |\x01 REF_END1 
-LOAD3 SCE062_007\x00\x1f\x1c\x11 REF_END2 
+LOAD3 SCE062_007 REF6 \x1c\x11 REF_END2 
 DIALOGUE_1 \x98p DIALOGUE_2 S\x00\x00
  
 カンナ\n　「……同じ？\p　私と？\p　あなたが？」@
@@ -95,7 +95,7 @@ DIALOGUE_1 \x98p DIALOGUE_2 S\x00\x00
 
 \x00\x00\x00 DIALOGUE_END `\x11 SEQ01
 \x1fN\x01 CALL3 |\x01 REF_END1 
-LOAD3 SCE062_008\x00\x1f\xe6\x12 REF_END2 
+LOAD3 SCE062_008 REF6 \xe6\x12 REF_END2 
 DIALOGUE_1 \x9cp DIALOGUE_2 \xfb\x00\x00
  
 カンナ\n　「あなたの死なんて、ありふれたものよ！\p　死にたいけど怖く\n　　て死ねない。\pそんなヒョロヒョロしたあなたの志と同類項で\n　　くくってもらっちゃあ、汚れるの！\p　私の……死の神聖さが\n　　……おとしめられる！\p　あなたなんて、そこらへんの……こ\n　　の下に積み重なってる連中と一緒！\p　平積みの『完璧自殺マ\n　　ニュアル』読んで？\p　『自分には最終手段が残されているっ\n　　て思うことが勇気になる』とかいって？\p　気取るな！\p　現実\n　　と闘う覚悟がない世捨て人気取りが！\pそんなのみんな一緒！@
@@ -106,7 +106,7 @@ DIALOGUE_1 \x9cp DIALOGUE_2 \xfb\x00\x00
 
 \x00 DIALOGUE_END *\x13 SEQ01
 \x1fN\x01 CALL3 |\x01 REF_END1 
-LOAD3 SCE062_009\x00\x1fP\x17 REF_END2 
+LOAD3 SCE062_009 REF6 P\x17 REF_END2 
 DIALOGUE_1 \xa0p DIALOGUE_2 h\x00\x00
  
 拓司\n　「落ち着くんだ、カンナ－－」@
@@ -116,7 +116,7 @@ DIALOGUE_1 \xa0p DIALOGUE_2 h\x00\x00
 
 \x00\x00\x00 DIALOGUE_END \x94\x17 SEQ01
 \x1fN\x01 CALL3 |\x01 REF_END1 
-LOAD3 SCE062_010\x00\x1fn\x19 REF_END2 
+LOAD3 SCE062_010 REF6 n\x19 REF_END2 
 DIALOGUE_1 \xa4p DIALOGUE_2 q\x00\x00
  
 拓司はその名前を、カンナから借りた本で見たことがあった。@
@@ -124,7 +124,7 @@ DIALOGUE_1 \xa4p DIALOGUE_2 q\x00\x00
 
 \x00 DIALOGUE_END \xb2\x19 SEQ01
 \x1fN\x01 CALL3 |\x01 REF_END1 
-LOAD3 SCE062_011\x00\x1f\xb0\x1b REF_END2 
+LOAD3 SCE062_011 REF6 \xb0\x1b REF_END2 
 DIALOGUE_1 \xa8p DIALOGUE_2 z\x00\x00
  
 拓司\n　「どうするつもりだ？」@
@@ -137,7 +137,7 @@ DIALOGUE_1 \xa8p DIALOGUE_2 z\x00\x00
 
 \x00 DIALOGUE_END \xf4\x1b SEQ01
 \x1fN\x01 CALL3 |\x01 REF_END1 
-LOAD3 SCE062_012\x00\x1f\x16\x1e REF_END2 
+LOAD3 SCE062_012 REF6 \x16\x1e REF_END2 
 DIALOGUE_1 \xacp DIALOGUE_2 \xb5\x00\x00
  
 カンナ\n　「ふふふ、興奮しない？\p　私たちは今、ずっと求めていたもの\n　　に直面しているわ。\p崖っぷちにまでいってる。\pそうでしょ？@
@@ -150,7 +150,7 @@ DIALOGUE_1 \xacp DIALOGUE_2 \xb5\x00\x00
 
  DIALOGUE_END Z\x1e SEQ01
 \x1fN\x01 CALL3 |\x01 REF_END1 
-LOAD3 SCE062_013\x00\x1fh! REF_END2 
+LOAD3 SCE062_013 REF6 h! REF_END2 
 DIALOGUE_1 \xb0p DIALOGUE_2 w\x00\x00
  
 拓司は、狂気に囚われてしまったとしか思えないカンナの様子を\n呆然と見ていたが、とんとん、となたねに腿をつつかれて我に返\nった。@
@@ -162,7 +162,7 @@ DIALOGUE_1 \xb0p DIALOGUE_2 w\x00\x00
 
 \x00 DIALOGUE_END \xac! SEQ01
 \x1fN\x01 CALL3 |\x01 REF_END1 
-LOAD3 SCE062_014\x00\x1f\xc2# REF_END2 
+LOAD3 SCE062_014 REF6 \xc2# REF_END2 
 DIALOGUE_1 \xb4p DIALOGUE_2 \x80\x00\x00
  
 拓司\n　「……？」@
@@ -176,7 +176,7 @@ DIALOGUE_1 \xb4p DIALOGUE_2 \x80\x00\x00
 
 \x00 DIALOGUE_END \x06$ SEQ01
 \x1fN\x01 CALL3 |\x01 REF_END1 
-LOAD3 SCE062_015\x00\x1f@& REF_END2 
+LOAD3 SCE062_015 REF6 @& REF_END2 
 DIALOGUE_1 \xb8p DIALOGUE_2 f\x00\x00
  
 拓司\n　「本人だって把握しきれていないのに？」@
@@ -190,7 +190,7 @@ DIALOGUE_1 \xb8p DIALOGUE_2 f\x00\x00
 
 \x00\x00\x00 DIALOGUE_END \x84& SEQ01
 \x1fN\x01 CALL3 |\x01 REF_END1 
-LOAD3 SCE062_016\x00\x1fV( REF_END2 
+LOAD3 SCE062_016 REF6 V( REF_END2 
 DIALOGUE_1 \xbcp DIALOGUE_2 \xab\x00\x00
  
 カンナ\n　「屋上での続き。\pこれから私が、あなたに取り憑いたものを解\n　　剖して、ひとつひとつ晒して、説明してあげる。\pその途中に\n　　クイズを挟むわ。\pそうね……『自殺なぜなにク～～～～～イ\n　　ズ！』ってところかしら、ふふ。\pそれに正解したら、あなた\n　　は自分に取り憑いたものの正体を知ることができる。\p間違っ\n　　たら……私は薬を飲む」@
@@ -201,7 +201,7 @@ DIALOGUE_1 \xbcp DIALOGUE_2 \xab\x00\x00
 
 \x00\x00\x00 DIALOGUE_END \x9a( SEQ01
 \x1fN\x01 CALL3 |\x01 REF_END1 
-LOAD3 SCE062_017\x00\x1f\x80+ REF_END2 
+LOAD3 SCE062_017 REF6 \x80+ REF_END2 
 DIALOGUE_1 \xc0p DIALOGUE_2 \xb6\x00\x00
  
 カンナ\n　「ＯＫ。\p準備はいいかしら？\p　重要な場面よ？\p　セーブはした？\n　　\pうふふ……まずは『セーリックマンの実験』の話からいきま\n　　しょうか」@

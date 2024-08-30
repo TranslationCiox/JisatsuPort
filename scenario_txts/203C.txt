@@ -3,7 +3,7 @@ f\x03\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00p\x044\x01\x00\x00\x00\xd6\
 
 LOAD6 .\\Data\\Script\\Bg.Fob REF3  \x00 REF_END2 
 LOAD4 BgAutoFadeIn REF3 J\x00 REF_END1 
-LOAD3 SCE203_001\x00\x1fn\x00 REF_END2 
+LOAD3 SCE203_001 REF6 n\x00 REF_END2 
 DIALOGUE_1 \xd0L\x01\x0c\x00\x00\x00\x00"\x03d\x00\x00
  
 ナタネ\n　「あなたは『創る』ことができる。@

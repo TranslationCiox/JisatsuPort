@@ -1,6 +1,6 @@
 START_FILE
 \xe2\x0c\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00p\n\x00
-LOAD3 SCE082_001\x00\x1f\x06\x00 REF_END2 
+LOAD3 SCE082_001 REF6 \x06\x00 REF_END2 
 DIALOGUE_1 \xc0\x8f DIALOGUE_2 \xc4\x00\x00
  
 拓司はベッドから立ち上がり、拘束着の女の子に歩み寄った。@
@@ -17,7 +17,7 @@ DIALOGUE_1 \xc0\x8f DIALOGUE_2 \xc4\x00\x00
 \x00 DIALOGUE_END J\x00 SEQ01
 LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 z\x03 REF_END2 
 LOAD2 TextOn REF1 \xa8\x03 REF_END1 
-LOAD3 SCE082_002\x00\x1f\xc4\x03 REF_END2 
+LOAD3 SCE082_002 REF6 \xc4\x03 REF_END2 
 DIALOGUE_1 \xc4\x8f DIALOGUE_2 \\\x00\x00
  
 混乱してきた思考から逃れるように、拓司は頭を振った。@
@@ -27,7 +27,7 @@ DIALOGUE_1 \xc4\x8f DIALOGUE_2 \\\x00\x00
 /*▲SE　停止*/\a4,2,0,0,/*▲BGM　停止*/\a4,-1,0,0,/*▲SE16　一回再生（再生終わりまで待たないで次へ）*/\a2,0,16,0,\n　ザザザザザザザザザザ\w\n\a4,0,0,0,\z
  DIALOGUE_END \x08\x04 SEQ01
 \x1fz\x03 CALL3 \xa8\x03 REF_END1 
-LOAD3 SCE082_003\x00\x1f\xb2\x05 REF_END2 
+LOAD3 SCE082_003 REF6 \xb2\x05 REF_END2 
 DIALOGUE_1 \xc8\x8f DIALOGUE_2 i\x00\x00
  
 頭が割れるような大音響だ。\pまた幻聴かとあたりを見れば、教授\nも看護婦も、みな耳を押さえてうずくまっている。\pどうやら本物\nの音らしい。\p聞いていると意識が遠くなるような、奇妙な音だ。@
@@ -36,7 +36,7 @@ DIALOGUE_1 \xc8\x8f DIALOGUE_2 i\x00\x00
 /*▲SE16　一回再生（再生終わりまで待たないで次へ）*/\a2,0,16,0,\n　ザザザザザザザザザザ\w\n\a4,0,0,0,\z
  DIALOGUE_END \xf6\x05 SEQ01
 \x1fz\x03 CALL3 \xa8\x03 REF_END1 
-LOAD3 SCE082_004\x00\x1f\xd4\x07 REF_END2 
+LOAD3 SCE082_004 REF6 \xd4\x07 REF_END2 
 DIALOGUE_1 \xcc\x8f DIALOGUE_2 }\x00\x00
  
 いつの間にか女の子の目に意志の光が宿っている。@

@@ -5,7 +5,7 @@ LOAD6 .\\Data\\Script\\Bg.Fob REF3  \x00 REF_END2
 LOAD4 BgAutoFadeIn REF3 J\x00 REF_END1 
 LOAD6 .\\Data\\Script\\Bgm.Fob REF2 n\x00 REF_END2 
 LOAD2 StopCD REF1 \x98\x00 REF_END1 
-LOAD3 SCEK06_001\x00\x1f\xb4\x00 REF_END2 
+LOAD3 SCEK06_001 REF6 \xb4\x00 REF_END2 
 DIALOGUE_1 \xd0\xa6\x01\x0c\x00\x00\x00\x00"\x03v\x00\x00
  
 　もう帰ろう、と私がいうと、ゆきはほっとしたようだった。@

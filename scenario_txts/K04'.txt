@@ -6,7 +6,7 @@ LOAD4 BgAutoFadeIn REF3 J\x00 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x04\x
 
 LOAD6 .\\Data\\Script\\Bgm.Fob REF2 \x88\x00 REF_END2 
 LOAD2 PlayCD REF1 \xb2\x00 REF_END1 
-LOAD3 SCEK04_A01\x00\x1f\xce\x00 REF_END2 
+LOAD3 SCEK04_A01 REF6 \xce\x00 REF_END2 
 DIALOGUE_1 X\xa6\x01\x0c\x00\x00\x00\x00"\x03\xe0\x00\x00
  
 　あまり本筋に関係がないから詳しくは語らないけれど、\n結局、私はゆきにバージンをあげた（あなたと寝たとき私はもう\nバージンじゃなかったけど、それでもあなたは私と寝た初めての\n男の子だったってわけ）。@
@@ -23,7 +23,7 @@ LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xb2\x04 REF_END2
 LOAD2 TextOn REF1 \xe0\x04 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00 SEQ01
 \x1f \x00 CALL3 J\x00 CALL2 \x88\x00 REF_END2 
 LOAD2 StopCD REF1 <\x05 REF_END1 
-LOAD3 SCEK04_A02\x00\x1fX\x05 REF_END2 
+LOAD3 SCEK04_A02 REF6 X\x05 REF_END2 
 DIALOGUE_1 \\\xa6\x01\x0c\x00\x00\x00\x00"\x03o\x00\x00
  
 　７月２７日（－－この日付が重要なの）、いつものように抱き\n合っていると、突然ゆきが泣き始めた。@

@@ -1,6 +1,6 @@
 START_FILE
 \xc1\n\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xf6\x08\x00
-LOAD3 SCE211_001\x00\x1f\x06\x00 REF_END2 
+LOAD3 SCE211_001 REF6 \x06\x00 REF_END2 
 DIALOGUE_1 PY\x01\x0c\x00\x00\x00\x00"\x03\xae\x00\x00
  
 もはや世界に定点を見いだすことは不可能だった。@
@@ -17,7 +17,7 @@ DIALOGUE_1 PY\x01\x0c\x00\x00\x00\x00"\x03\xae\x00\x00
 \x00 DIALOGUE_END J\x00 SEQ01
 LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 "\x03 REF_END2 
 LOAD2 TextOn REF1 P\x03 REF_END1 
-LOAD3 SCE211_002\x00\x1fl\x03 REF_END2 
+LOAD3 SCE211_002 REF6 l\x03 REF_END2 
 DIALOGUE_1 TY\x01\x0c\x00\x00\x00\x00"\x03\x86\x00\x00
  
 ナタネ\n　「信じないならそれでもいいわ。\pでも、どうやって戻るの？@
@@ -30,7 +30,7 @@ DIALOGUE_1 TY\x01\x0c\x00\x00\x00\x00"\x03\x86\x00\x00
 
 \x00 DIALOGUE_END \xb0\x03 SEQ01
 \x1f"\x03 CALL3 P\x03 REF_END1 
-LOAD3 SCE211_003\x00\x1f\x02\x06 REF_END2 
+LOAD3 SCE211_003 REF6 \x02\x06 REF_END2 
 DIALOGUE_1 XY\x01\x0c\x00\x00\x00\x00"\x03I\x00\x00
  
 拓司\n　「ここが現実だったとしたら、俺は死んじまって、それを確認\n　　できないわけだが……それでもいい。\pもうこんなことはたく\n　　さんだ。\pいずれ終わらせなければならない。\pそれが、いまだ\n　　ってことだ」@

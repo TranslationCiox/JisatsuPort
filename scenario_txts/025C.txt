@@ -6,7 +6,7 @@ LOAD4 BgAutoFadeIn REF3 J\x00 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x08\x
 
 LOAD6 .\\Data\\Script\\Bgm.Fob REF2 \x88\x00 REF_END2 
 LOAD2 PlayCD REF1 \xb2\x00 REF_END1 
-LOAD3 SCE025_001\x00\x1f\xce\x00 REF_END2 
+LOAD3 SCE025_001 REF6 \xce\x00 REF_END2 
 DIALOGUE_1 \xb06 DIALOGUE_2 }\x00\x00
  
 錦城\n　「－－太宰の処女短編集のタイトルは『晩年』というわけです\n　　けれど、そこに彼のたどった運命を重ね見ることは難しいこ\n　　とではありません。@
@@ -19,7 +19,7 @@ DIALOGUE_1 \xb06 DIALOGUE_2 }\x00\x00
 LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 &\x03 REF_END2 
 LOAD2 TextOn REF1 T\x03 CALL2 \x88\x00 REF_END2 
 LOAD2 StopCD REF1 |\x03 REF_END1 
-LOAD3 SCE025_002\x00\x1f\x98\x03 REF_END2 
+LOAD3 SCE025_002 REF6 \x98\x03 REF_END2 
 DIALOGUE_1 \xb46 DIALOGUE_2 N\x00\x00
  
 錦城\n　「……君！　……菱君！　虎菱君！」@
@@ -32,7 +32,7 @@ DIALOGUE_1 \xb46 DIALOGUE_2 N\x00\x00
 
 \x00 DIALOGUE_END \xdc\x03 SEQ01
 \x1f&\x03 CALL3 T\x03 REF_END1 
-LOAD3 SCE025_003\x00\x1fN\x05 REF_END2 
+LOAD3 SCE025_003 REF6 N\x05 REF_END2 
 DIALOGUE_1 \xb86 DIALOGUE_2 \xa2\x00\x00
  
 　クラスメイトたちが、クスクスと笑っている。@
@@ -50,7 +50,7 @@ DIALOGUE_1 \xb86 DIALOGUE_2 \xa2\x00\x00
 
 \x00\x00\x00 DIALOGUE_END \x92\x05 SEQ01
 \x1f&\x03 CALL3 T\x03 REF_END1 
-LOAD3 SCE025_004\x00\x1fT\x08 REF_END2 
+LOAD3 SCE025_004 REF6 T\x08 REF_END2 
 DIALOGUE_1 \xbc6 DIALOGUE_2 \x9c\x00\x00
  
 錦城\n　「結構です。座りなさい虎菱君。@
@@ -62,7 +62,7 @@ DIALOGUE_1 \xbc6 DIALOGUE_2 \x9c\x00\x00
 \x1f&\x03 CALL3 T\x03 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00 SEQ01
 \x1f \x00 CALL3 J\x00 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x06\x01 SEQ01
 \x1f\x88\x00 CALL3 \xb2\x00 REF_END1 
-LOAD3 SCE025_005\x00\x1f\xaa\x0b REF_END2 
+LOAD3 SCE025_005 REF6 \xaa\x0b REF_END2 
 DIALOGUE_1 \xc06 DIALOGUE_2 \xa3\x00\x00
  
 世界。@
@@ -88,7 +88,7 @@ DIALOGUE_1 \xc06 DIALOGUE_2 \xa3\x00\x00
 \x00 DIALOGUE_END \xee\x0b SEQ01
 \x1f&\x03 CALL3 T\x03 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x05\x00 SEQ01
 \x1f \x00 CALL3 J\x00 CALL2 \x88\x00 CALL3 |\x03 REF_END1 
-LOAD3 SCE025_006\x00\x1f\x02\x0f REF_END2 
+LOAD3 SCE025_006 REF6 \x02\x0f REF_END2 
 DIALOGUE_1 \xc46 DIALOGUE_2 l\x00\x00
  
 学生\n　「……死ぬのか生きるのか、それはもう人間の幸不幸を決定す\n　　る鍵ではないような気さえしてきたのだ。@

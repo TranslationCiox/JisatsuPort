@@ -1,6 +1,6 @@
 START_FILE
 \xff\x0e\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xe4\x0b\x00
-LOAD3 SCE104_001\x00\x1f\x06\x00 REF_END2 
+LOAD3 SCE104_001 REF6 \x06\x00 REF_END2 
 DIALOGUE_1  \xb2 DIALOGUE_2 T\x00\x00
  
 密かに御堂に話を付け、その日の夕方拓司はなたねに詰め寄った。\n@
@@ -12,7 +12,7 @@ DIALOGUE_1  \xb2 DIALOGUE_2 T\x00\x00
 \x00\x00\x00 DIALOGUE_END J\x00 SEQ01
 LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xba\x01 REF_END2 
 LOAD2 TextOn REF1 \xe8\x01 REF_END1 
-LOAD3 SCE104_002\x00\x1f\x04\x02 REF_END2 
+LOAD3 SCE104_002 REF6 \x04\x02 REF_END2 
 DIALOGUE_1 $\xb2 DIALOGUE_2 \x7f\x00\x00
  
 なたね\n　「これは、みなさんの総意ですか？」@
@@ -25,7 +25,7 @@ DIALOGUE_1 $\xb2 DIALOGUE_2 \x7f\x00\x00
 
 \x00 DIALOGUE_END H\x02 SEQ01
 \x1f\xba\x01 CALL3 \xe8\x01 REF_END1 
-LOAD3 SCE104_003\x00\x1f~\x04 REF_END2 
+LOAD3 SCE104_003 REF6 ~\x04 REF_END2 
 DIALOGUE_1 (\xb2 DIALOGUE_2 D\x00\x00
  
 拓司\n　「違う！」@
@@ -36,7 +36,7 @@ DIALOGUE_1 (\xb2 DIALOGUE_2 D\x00\x00
 
 \x00 DIALOGUE_END \xc2\x04 SEQ01
 \x1f\xba\x01 CALL3 \xe8\x01 REF_END1 
-LOAD3 SCE104_004\x00\x1f\x0c\x06 REF_END2 
+LOAD3 SCE104_004 REF6 \x0c\x06 REF_END2 
 DIALOGUE_1 ,\xb2 DIALOGUE_2 \xb7\x00\x00
  
 なたね\n　「だって私が用意したんだから！\p　ここにあるのは全部私のな\n　　だから！\p　さっきから黙って聞いてりゃゴチャゴチャゴチャ\n　　ゴチャゴチャゴチゴチャゴチャゴチャゴチャゴチャゴチャ…\n　　…バカタレが！\p　大バカタレ国民共が！\p　なにもわからない\n　　シロウトのバカタレがなにを偉そうにいってる！\p　私が作っ\n　　たシェルターに住まわしてやってるのに、なんなんだ！@
@@ -49,7 +49,7 @@ DIALOGUE_1 ,\xb2 DIALOGUE_2 \xb7\x00\x00
 
 \x00 DIALOGUE_END P\x06 SEQ01
 \x1f\xba\x01 CALL3 \xe8\x01 REF_END1 
-LOAD3 SCE104_005\x00\x1ff\t REF_END2 
+LOAD3 SCE104_005 REF6 f\t REF_END2 
 DIALOGUE_1 0\xb2 DIALOGUE_2 [\x00\x00
  
 御堂\n　「てめえの腹かっさばいてでも、とらせてもらうからな」@

@@ -3,7 +3,7 @@ START_FILE
 
 LOAD6 .\\Data\\Script\\Bgm.Fob REF2  \x00 REF_END2 
 LOAD2 PlayCD REF1 J\x00 REF_END1 
-LOAD3 SCEG02_004\x00\x1ff\x00 REF_END2 
+LOAD3 SCEG02_004 REF6 f\x00 REF_END2 
 DIALOGUE_1 T\xc5\x01\x0c\x00\x00\x00\x00"\x03i\x00\x00
  
 　かさりと音がして、錦城の上半身が、拓司の顔のあたりに被さっ\nた。@
@@ -18,7 +18,7 @@ LOAD2 TextOn REF1 \x9c\x02 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e^\x00 SEQ
 
 LOAD6 .\\Data\\Script\\Bg.Fob REF3 \xd2\x02 REF_END2 
 LOAD4 BgAutoFadeIn REF3 \xfc\x02 REF_END1 
-LOAD3 SCEG02_005\x00\x1f \x03 REF_END2 
+LOAD3 SCEG02_005 REF6  \x03 REF_END2 
 DIALOGUE_1 X\xc5\x01\x0c\x00\x00\x00\x00"\x03R\x00\x00
  
 錦城の手は、滑るようにチャックの中へと侵入し、拓司のペ○ス\nに触れた。@
@@ -30,7 +30,7 @@ DIALOGUE_1 X\xc5\x01\x0c\x00\x00\x00\x00"\x03R\x00\x00
 \n錦城は拓司の目をじっと見つめたまま、薄く笑った。\w\z
 \x00 DIALOGUE_END d\x03 SEQ01
 \x1fn\x02 CALL3 \x9c\x02 REF_END1 
-LOAD3 SCEG02_006\x00\x1f\xe6\x04 REF_END2 
+LOAD3 SCEG02_006 REF6 \xe6\x04 REF_END2 
 DIALOGUE_1 \\\xc5\x01\x0c\x00\x00\x00\x00"\x03R\x00\x00
  
 錦城\n　「さすが、男の子ね。\p熱くて……元気。\pねえ、虎菱くん、気持\n　　ちいい？」@
@@ -41,7 +41,7 @@ DIALOGUE_1 \\\xc5\x01\x0c\x00\x00\x00\x00"\x03R\x00\x00
 黙っていると、錦城の手の動きがひどくゆっくりとしたものに変\nわった。\pじらすように止まり、少し動いてまた止まる。\w\z
 \x00\x00\x00 DIALOGUE_END *\x05 SEQ01
 \x1fn\x02 CALL3 \x9c\x02 REF_END1 
-LOAD3 SCEG02_007\x00\x1f\xac\x06 REF_END2 
+LOAD3 SCEG02_007 REF6 \xac\x06 REF_END2 
 DIALOGUE_1 `\xc5\x01\x0c\x00\x00\x00\x00"\x03R\x00\x00
  
 錦城\n　「先生は聞いているんだけど。\p早いほうがいいの？@
@@ -54,7 +54,7 @@ DIALOGUE_1 `\xc5\x01\x0c\x00\x00\x00\x00"\x03R\x00\x00
 錦城\n　「いやらしい子ね。先生の手、道具だとでも思ってるのかしら？\n　　ふふふ」\w\z
 \x00 DIALOGUE_END \xf0\x06 SEQ01
 \x1fn\x02 CALL3 \x9c\x02 REF_END1 
-LOAD3 SCEG02_008\x00\x1fr\x08 REF_END2 
+LOAD3 SCEG02_008 REF6 r\x08 REF_END2 
 DIALOGUE_1 d\xc5\x01\x0c\x00\x00\x00\x00"\x03\x86\x00\x00
  
 早く激しく……嵐のように手を動かしながら、錦城は拓司の目を\n正面から捉えて離さない。@

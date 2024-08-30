@@ -6,7 +6,7 @@ LOAD2 PlayCD REF1 J\x00 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00 SEQ
 
 LOAD6 .\\Data\\Script\\Bg.Fob REF3 \x80\x00 REF_END2 
 LOAD4 BgAutoFadeIn REF3 \xaa\x00 REF_END1 
-LOAD3 SCE242_001\x00\x1f\xce\x00 REF_END2 
+LOAD3 SCE242_001 REF6 \xce\x00 REF_END2 
 DIALOGUE_1 \xc0\x89\x01\x0c\x00\x00\x00\x00"\x03t\x00\x00
  
 拓司\n　「走れッ！」@
@@ -21,7 +21,7 @@ DIALOGUE_1 \xc0\x89\x01\x0c\x00\x00\x00\x00"\x03t\x00\x00
 \x00 DIALOGUE_END \x12\x01 SEQ01
 LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \x02\x03 REF_END2 
 LOAD2 TextOn REF1 0\x03 REF_END1 
-LOAD3 SCE242_002\x00\x1fL\x03 REF_END2 
+LOAD3 SCE242_002 REF6 L\x03 REF_END2 
 DIALOGUE_1 \xc4\x89\x01\x0c\x00\x00\x00\x00"\x03F\x00\x00
  
 それがいま、襲いかかろうとしている。@
@@ -30,7 +30,7 @@ DIALOGUE_1 \xc4\x89\x01\x0c\x00\x00\x00\x00"\x03F\x00\x00
 しかし、どこから襲ってくるかわからないむきだしの死に身を晒\nすより、どんなに薄かろうとも鎧をまとっている方がマシだった。\w\z
 \x00\x00\x00 DIALOGUE_END \x90\x03 SEQ01
 \x1f\x02\x03 CALL3 0\x03 REF_END1 
-LOAD3 SCE242_003\x00\x1f\xe2\x04 REF_END2 
+LOAD3 SCE242_003 REF6 \xe2\x04 REF_END2 
 DIALOGUE_1 \xc8\x89\x01\x0c\x00\x00\x00\x00"\x03h\x00\x00
  
 　地鳴りは徐々に大きくなっていく。@
@@ -43,7 +43,7 @@ DIALOGUE_1 \xc8\x89\x01\x0c\x00\x00\x00\x00"\x03h\x00\x00
 \x1f\x02\x03 CALL3 0\x03 CALL2  \x00 REF_END2 
 LOAD2 StopCD REF1 \x0c\x07 REF_END1  \x1e\x00\x00\x00\x00\r\x00 REF_END2 \x0c\x02\x00\x00"\x1f \x00 REF_END2 
 LOAD2 SeStop REF1 N\x07 REF_END1 
-LOAD3 SCE242_004\x00\x1fj\x07 REF_END2 
+LOAD3 SCE242_004 REF6 j\x07 REF_END2 
 DIALOGUE_1 \xcc\x89\x01\x0c\x00\x00\x00\x00"\x03]\x00\x00
  
 ざあっ！@
@@ -56,7 +56,7 @@ DIALOGUE_1 \xcc\x89\x01\x0c\x00\x00\x00\x00"\x03]\x00\x00
 \x00\x00\x00 DIALOGUE_END \xae\x07 SEQ01
 \x1f\x02\x03 CALL3 0\x03 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x0b\x01 SEQ01
 \x1f \x00 CALL3 J\x00 REF_END1 
-LOAD3 SCE242_005\x00\x1f\x90\t REF_END2 
+LOAD3 SCE242_005 REF6 \x90\t REF_END2 
 DIALOGUE_1 \xd0\x89\x01\x0c\x00\x00\x00\x00"\x03\x8a\x00\x00
  
 \a2,0,33,1,\a6,0,0,0,キイイイイイイイイイイイイイイイイイイイイイイイイイイイイ！\n\p\a3,0,0,0,\a4,0,0,0,\n拓司\n　「！」@
@@ -69,7 +69,7 @@ DIALOGUE_1 \xd0\x89\x01\x0c\x00\x00\x00\x00"\x03\x8a\x00\x00
 頭そのものが爆発しないのが不思議だった。\w\z
  DIALOGUE_END \xd4\t SEQ01
 \x1f\x02\x03 CALL3 0\x03 REF_END1 
-LOAD3 SCE242_006\x00\x1f6\x0c REF_END2 
+LOAD3 SCE242_006 REF6 6\x0c REF_END2 
 DIALOGUE_1 \xd4\x89\x01\x0c\x00\x00\x00\x00"\x03}\x00\x00
  
 拓司\n　「ああああああああああああ！」@
@@ -82,7 +82,7 @@ DIALOGUE_1 \xd4\x89\x01\x0c\x00\x00\x00\x00"\x03}\x00\x00
 白目をむき、耳から、鼻から、どす黒い血があふれ出している。\w\z
 \x00 DIALOGUE_END z\x0c SEQ01
 \x1f\x02\x03 CALL3 0\x03 REF_END1 
-LOAD3 SCE242_007\x00\x1f\xa8\x0e REF_END2 
+LOAD3 SCE242_007 REF6 \xa8\x0e REF_END2 
 DIALOGUE_1 \xd8\x89\x01\x0c\x00\x00\x00\x00"\x03\xa1\x00\x00
  
 拓司\n　「カンナアアアアアアアア！」@
@@ -100,7 +100,7 @@ DIALOGUE_1 \xd8\x89\x01\x0c\x00\x00\x00\x00"\x03\xa1\x00\x00
 あるいは、解決されるべきものなのだ。\w\z
 \x00 DIALOGUE_END \xec\x0e SEQ01
 \x1f\x02\x03 CALL3 0\x03 REF_END1 
-LOAD3 SCE242_008\x00\x1f\xaa\x11 REF_END2 
+LOAD3 SCE242_008 REF6 \xaa\x11 REF_END2 
 DIALOGUE_1 \xdc\x89\x01\x0c\x00\x00\x00\x00"\x039\x00\x00
  
 数メートル向こうに、カンナの姿が見える。@
@@ -109,7 +109,7 @@ DIALOGUE_1 \xdc\x89\x01\x0c\x00\x00\x00\x00"\x039\x00\x00
 そうして一歩……一歩……忘れてしまった歩き方を思い出すかの\nように、拓司はゆっくりと歩き始めた。\w\z
 \x00 DIALOGUE_END \xee\x11 SEQ01
 \x1f\x02\x03 CALL3 0\x03 REF_END1 
-LOAD3 SCE242_009\x00\x1f\x0c\x13 REF_END2 
+LOAD3 SCE242_009 REF6 \x0c\x13 REF_END2 
 DIALOGUE_1 \xe0\x89\x01\x0c\x00\x00\x00\x00"\x03m\x00\x00
  
 /*▲SE33　ループ再生*/\a2,2,33,1,キイイイイイイイイイイイイイイイイイイイイイイイイイイイイ\nイイイイイイイ！@
@@ -120,7 +120,7 @@ DIALOGUE_1 \xe0\x89\x01\x0c\x00\x00\x00\x00"\x03m\x00\x00
 \nキイイイイイイイイイイイイイイイイイイイイイイイイイイイイ\nイイイイイイイ！\w/*▲SE　停止*/\a4,2,0,0,\z
 \x00\x00 DIALOGUE_END P\x13 SEQ01
 \x1f\x02\x03 CALL3 0\x03 CALL2  \x00 CALL3 \x0c\x07 REF_END1 
-LOAD3 SCE242_010\x00\x1fX\x15 REF_END2 
+LOAD3 SCE242_010 REF6 X\x15 REF_END2 
 DIALOGUE_1 \xe4\x89\x01\x0c\x00\x00\x00\x00"\x03e\x00\x00
  
 こうして旅が始まったいま、俺にはいまや目的があるのだ。@
@@ -134,7 +134,7 @@ DIALOGUE_1 \xe4\x89\x01\x0c\x00\x00\x00\x00"\x03e\x00\x00
 拓司は、カンナの上に身体を重ねた。\w\z
 \x00 DIALOGUE_END \x9c\x15 SEQ01
 \x1f\x02\x03 CALL3 0\x03 REF_END1 
-LOAD3 SCE242_011\x00\x1fj\x17 REF_END2 
+LOAD3 SCE242_011 REF6 j\x17 REF_END2 
 DIALOGUE_1 \xe8\x89\x01\x0c\x00\x00\x00\x00"\x03g\x00\x00
  
 拓司\n　「カンナ！」@
@@ -146,7 +146,7 @@ DIALOGUE_1 \xe8\x89\x01\x0c\x00\x00\x00\x00"\x03g\x00\x00
 \x00 DIALOGUE_END \xae\x17 SEQ01
 \x1f\x02\x03 CALL3 0\x03 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc9\x00 SEQ01
 \x1f\x80\x00 CALL3 \xaa\x00 REF_END1 
-LOAD3 SCE242_012\x00\x1f\xb8\x19 REF_END2 
+LOAD3 SCE242_012 REF6 \xb8\x19 REF_END2 
 DIALOGUE_1 \xec\x89\x01\x0c\x00\x00\x00\x00"\x03L\x00\x00
  
 ふいに目の前が真っ白になった。@

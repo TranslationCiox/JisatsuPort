@@ -1,6 +1,6 @@
 START_FILE
 )!\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00B\x1b\x00
-LOAD3 SCE248_001\x00\x1f\x06\x00 REF_END2 
+LOAD3 SCE248_001 REF6 \x06\x00 REF_END2 
 DIALOGUE_1  \x93\x01\x0c\x00\x00\x00\x00"\x03\xb9\x00\x00
  
 拓司\n　「走れッ！」@
@@ -20,7 +20,7 @@ DIALOGUE_1  \x93\x01\x0c\x00\x00\x00\x00"\x03\xb9\x00\x00
 \x00 DIALOGUE_END J\x00 SEQ01
 LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 N\x03 REF_END2 
 LOAD2 TextOn REF1 |\x03 REF_END1 
-LOAD3 SCE248_002\x00\x1f\x98\x03 REF_END2 
+LOAD3 SCE248_002 REF6 \x98\x03 REF_END2 
 DIALOGUE_1 $\x93\x01\x0c\x00\x00\x00\x00"\x03h\x00\x00
  
 地鳴りは徐々に大きくなっていく。@
@@ -32,7 +32,7 @@ DIALOGUE_1 $\x93\x01\x0c\x00\x00\x00\x00"\x03h\x00\x00
 
 \x00\x00\x00 DIALOGUE_END \xdc\x03 SEQ01
 \x1fN\x03 CALL3 |\x03 REF_END1 
-LOAD3 SCE248_003\x00\x1f\xb6\x05 REF_END2 
+LOAD3 SCE248_003 REF6 \xb6\x05 REF_END2 
 DIALOGUE_1 (\x93\x01\x0c\x00\x00\x00\x00"\x03\x8c\x00\x00
  
 ざあっ！@
@@ -46,7 +46,7 @@ DIALOGUE_1 (\x93\x01\x0c\x00\x00\x00\x00"\x03\x8c\x00\x00
 
 \x00\x00 DIALOGUE_END \xfa\x05 SEQ01
 \x1fN\x03 CALL3 |\x03 REF_END1 
-LOAD3 SCE248_004\x00\x1fd\x08 REF_END2 
+LOAD3 SCE248_004 REF6 d\x08 REF_END2 
 DIALOGUE_1 ,\x93\x01\x0c\x00\x00\x00\x00"\x03U\x00\x00
  
 世界が軋んでいた。@
@@ -57,7 +57,7 @@ DIALOGUE_1 ,\x93\x01\x0c\x00\x00\x00\x00"\x03U\x00\x00
 
 \x00 DIALOGUE_END \xa8\x08 SEQ01
 \x1fN\x03 CALL3 |\x03 REF_END1 
-LOAD3 SCE248_005\x00\x1f6\n REF_END2 
+LOAD3 SCE248_005 REF6 6\n REF_END2 
 DIALOGUE_1 0\x93\x01\x0c\x00\x00\x00\x00"\x03}\x00\x00
  
 拓司\n　「ああああああああああああ！」@
@@ -71,7 +71,7 @@ DIALOGUE_1 0\x93\x01\x0c\x00\x00\x00\x00"\x03}\x00\x00
 
 \x00\x00\x00 DIALOGUE_END z\n SEQ01
 \x1fN\x03 CALL3 |\x03 REF_END1 
-LOAD3 SCE248_006\x00\x1f\xa8\x0c REF_END2 
+LOAD3 SCE248_006 REF6 \xa8\x0c REF_END2 
 DIALOGUE_1 4\x93\x01\x0c\x00\x00\x00\x00"\x03\xa4\x00\x00
  
 拓司\n　「紅葉イイイイイイイイ！」@
@@ -92,7 +92,7 @@ DIALOGUE_1 4\x93\x01\x0c\x00\x00\x00\x00"\x03\xa4\x00\x00
 
 \x00\x00\x00 DIALOGUE_END \xec\x0c SEQ01
 \x1fN\x03 CALL3 |\x03 REF_END1 
-LOAD3 SCE248_007\x00\x1f\xb6\x0f REF_END2 
+LOAD3 SCE248_007 REF6 \xb6\x0f REF_END2 
 DIALOGUE_1 8\x93\x01\x0c\x00\x00\x00\x00"\x039\x00\x00
  
 数メートル向こうに、紅葉の姿が見える。@
@@ -102,7 +102,7 @@ DIALOGUE_1 8\x93\x01\x0c\x00\x00\x00\x00"\x039\x00\x00
 
 \x00 DIALOGUE_END \xfa\x0f SEQ01
 \x1fN\x03 CALL3 |\x03 REF_END1 
-LOAD3 SCE248_008\x00\x1f\x18\x11 REF_END2 
+LOAD3 SCE248_008 REF6 \x18\x11 REF_END2 
 DIALOGUE_1 <\x93\x01\x0c\x00\x00\x00\x00"\x03\xa0\x00\x00
  
 /*▲SE33　一回再生（再生終了待たず先へ）*/\a2,0,33,0,\a6,0,0,0,キイイイイイイイイイイイイイイイイイイイイイイイイイイイ！@
@@ -113,7 +113,7 @@ DIALOGUE_1 <\x93\x01\x0c\x00\x00\x00\x00"\x03\xa0\x00\x00
 \n/*▲SE33　一回再生（再生終了待たず先へ）*/\a2,0,33,0,\a6,0,0,0,キイイイイイイイイイイイイイイイイイイイイイイイイイイイ！\w\n/*▲↑　再生終了を待つ*/\a3,0,0,0,\a4,0,0,0,\z
  DIALOGUE_END \\\x11 SEQ01
 \x1fN\x03 CALL3 |\x03 REF_END1 
-LOAD3 SCE248_009\x00\x1f\x16\x14 REF_END2 
+LOAD3 SCE248_009 REF6 \x16\x14 REF_END2 
 DIALOGUE_1 @\x93\x01\x0c\x00\x00\x00\x00"\x03I\x00\x00
  
 こうして旅が始まったいま、俺にはいまや目的があるのだ。@
@@ -128,7 +128,7 @@ DIALOGUE_1 @\x93\x01\x0c\x00\x00\x00\x00"\x03I\x00\x00
 
 LOAD6 .\\Data\\Script\\Bg.Fob REF3 \xd2\x15 REF_END2 
 LOAD4 BgAutoFadeIn REF3 \xfc\x15 REF_END1 
-LOAD3 SCE248_010\x00\x1f \x16 REF_END2 
+LOAD3 SCE248_010 REF6  \x16 REF_END2 
 DIALOGUE_1 D\x93\x01\x0c\x00\x00\x00\x00"\x03w\x00\x00
  
 拓司\n　「紅葉！」@
@@ -146,7 +146,7 @@ DIALOGUE_1 D\x93\x01\x0c\x00\x00\x00\x00"\x03w\x00\x00
 \x00 DIALOGUE_END d\x16 SEQ01
 \x1fN\x03 CALL3 |\x03 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc9\x00 SEQ01
 \x1f\xd2\x15 CALL3 \xfc\x15 REF_END1 
-LOAD3 SCE248_011\x00\x1f\xae\x18 REF_END2 
+LOAD3 SCE248_011 REF6 \xae\x18 REF_END2 
 DIALOGUE_1 H\x93\x01\x0c\x00\x00\x00\x00"\x03L\x00\x00
  
 ふいに目の前が真っ白になった。@

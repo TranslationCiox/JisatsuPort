@@ -1,6 +1,6 @@
 START_FILE
 \x08\x1e\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xa4\x18\x00
-LOAD3 SCE086_001\x00\x1f\x06\x00 REF_END2 
+LOAD3 SCE086_001 REF6 \x06\x00 REF_END2 
 DIALOGUE_1 \x00\x96 DIALOGUE_2 8\x00\x00
  
 実験室はなんの変哲もないただの教室でしかない。@
@@ -10,7 +10,7 @@ DIALOGUE_1 \x00\x96 DIALOGUE_2 8\x00\x00
 \x00\x00\x00 DIALOGUE_END J\x00 SEQ01
 LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 J\x01 REF_END2 
 LOAD2 TextOn REF1 x\x01 REF_END1 
-LOAD3 SCE086_002\x00\x1f\x94\x01 REF_END2 
+LOAD3 SCE086_002 REF6 \x94\x01 REF_END2 
 DIALOGUE_1 \x04\x96 DIALOGUE_2 n\x00\x00
  
 なたねは実験室の奥の扉の鍵をさらに開けると、そこからスプレ\nーボンドの缶と、ダンボールに詰まったアルミホイルを持ち出し\nてきた。@
@@ -21,7 +21,7 @@ DIALOGUE_1 \x04\x96 DIALOGUE_2 n\x00\x00
 
 \x00\x00\x00 DIALOGUE_END \xd8\x01 SEQ01
 \x1fJ\x01 CALL3 x\x01 REF_END1 
-LOAD3 SCE086_003\x00\x1f\xca\x03 REF_END2 
+LOAD3 SCE086_003 REF6 \xca\x03 REF_END2 
 DIALOGUE_1 \x08\x96 DIALOGUE_2 ~\x00\x00
  
 なたね\n　「私が円盤に誘拐されたのは知ってるわよね？\p　そのとき、私\n　　は円盤の中をこっそり探って、いろいろな資料を盗み出して\n　　きたのよ。\pあいにく資料はやつらの手先に盗まれてしまって\n　　今はないけれど……それでも資料のほとんどは解析したわ」@
@@ -35,7 +35,7 @@ DIALOGUE_1 \x08\x96 DIALOGUE_2 ~\x00\x00
 
 LOAD6 .\\Data\\Script\\Bgm.Fob REF2 Z\x06 REF_END2 
 LOAD2 PlayCD REF1 \x84\x06 REF_END1 
-LOAD3 SCE086_004\x00\x1f\xa0\x06 REF_END2 
+LOAD3 SCE086_004 REF6 \xa0\x06 REF_END2 
 DIALOGUE_1 \x0c\x96 DIALOGUE_2 w\x00\x00
  
 現れたのは御堂と、錦城と、そして紅葉であった。@
@@ -50,7 +50,7 @@ DIALOGUE_1 \x0c\x96 DIALOGUE_2 w\x00\x00
 
 \x00\x00\x00 DIALOGUE_END \xe4\x06 SEQ01
 \x1fJ\x01 CALL3 x\x01 REF_END1 
-LOAD3 SCE086_005\x00\x1f\xfa\x08 REF_END2 
+LOAD3 SCE086_005 REF6 \xfa\x08 REF_END2 
 DIALOGUE_1 \x10\x96 DIALOGUE_2 G\x00\x00
  
 御堂\n　「はあ、はあ……お前ら、生きてたのか！」@
@@ -60,7 +60,7 @@ DIALOGUE_1 \x10\x96 DIALOGUE_2 G\x00\x00
 
 \x00 DIALOGUE_END >\t SEQ01
 \x1fJ\x01 CALL3 x\x01 REF_END1 
-LOAD3 SCE086_006\x00\x1f\x94\n REF_END2 
+LOAD3 SCE086_006 REF6 \x94\n REF_END2 
 DIALOGUE_1 \x14\x96 DIALOGUE_2 m\x00\x00
  
 錦城\n　「とにかく、無事で良かったわ。\p他に生き残っている人はいる\n　　の？！」@
@@ -74,7 +74,7 @@ DIALOGUE_1 \x14\x96 DIALOGUE_2 m\x00\x00
 \x00\x00\x00 DIALOGUE_END \xd8\n SEQ01
 \x1fJ\x01 CALL3 x\x01 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\t\x01 SEQ01
 \x1fZ\x06 CALL3 \x84\x06 REF_END1 
-LOAD3 SCE086_007\x00\x1f\xfa\x0c REF_END2 
+LOAD3 SCE086_007 REF6 \xfa\x0c REF_END2 
 DIALOGUE_1 \x18\x96 DIALOGUE_2 K\x00\x00
  
 なたね\n　「最終波動がきます。\pシェルターの外にいたら、全員が死ぬこ\n　　とになります」@
@@ -85,7 +85,7 @@ DIALOGUE_1 \x18\x96 DIALOGUE_2 K\x00\x00
 
 \x00\x00\x00 DIALOGUE_END >\r SEQ01
 \x1fJ\x01 CALL3 x\x01 REF_END1 
-LOAD3 SCE086_008\x00\x1f\xa4\x0e REF_END2 
+LOAD3 SCE086_008 REF6 \xa4\x0e REF_END2 
 DIALOGUE_1 \x1c\x96 DIALOGUE_2 _\x00\x00
  
 　拓司はこれまでの出来事を、遅れてきた一同に語って聞かせた。\n\p最後に、なたねが自殺波動と呼んでいる『なにか』が存在するら\nしいことを……そしてなたねがそれに対抗する手段としてシェル\nターを準備していたことを……語った。@
@@ -94,7 +94,7 @@ DIALOGUE_1 \x1c\x96 DIALOGUE_2 _\x00\x00
 
 \x00\x00\x00 DIALOGUE_END \xe8\x0e SEQ01
 \x1fJ\x01 CALL3 x\x01 REF_END1 
-LOAD3 SCE086_009\x00\x1f\x9e\x10 REF_END2 
+LOAD3 SCE086_009 REF6 \x9e\x10 REF_END2 
 DIALOGUE_1  \x96 DIALOGUE_2 \x85\x00\x00
  
 錦城\n　「それにしても……雲居さん。\pさっきいっていた最終波動っ\n　　て、いったいなんなの？」@
@@ -105,7 +105,7 @@ DIALOGUE_1  \x96 DIALOGUE_2 \x85\x00\x00
 
 \x00 DIALOGUE_END \xe2\x10 SEQ01
 \x1fJ\x01 CALL3 x\x01 REF_END1 
-LOAD3 SCE086_010\x00\x1f0\x13 REF_END2 
+LOAD3 SCE086_010 REF6 0\x13 REF_END2 
 DIALOGUE_1 $\x96 DIALOGUE_2 r\x00\x00
  
 なたね\n　「ええ。\pおそらくそれで、地球上の人間はみな死ぬでしょう。@
@@ -114,7 +114,7 @@ DIALOGUE_1 $\x96 DIALOGUE_2 r\x00\x00
 
 \x00 DIALOGUE_END t\x13 SEQ01
 \x1fJ\x01 CALL3 x\x01 REF_END1 
-LOAD3 SCE086_011\x00\x1fv\x15 REF_END2 
+LOAD3 SCE086_011 REF6 v\x15 REF_END2 
 DIALOGUE_1 (\x96 DIALOGUE_2 V\x00\x00
  
 御堂\n　「バカバカしい！\p　こんな××××の妄想を真に受けてるんじ\n　　ゃねえだろうな！」@
@@ -127,7 +127,7 @@ DIALOGUE_1 (\x96 DIALOGUE_2 V\x00\x00
 
 \x00\x00\x00 DIALOGUE_END \xba\x15 SEQ01
 \x1fJ\x01 CALL3 x\x01 REF_END1 
-LOAD3 SCE086_012\x00\x1fL\x17 REF_END2 
+LOAD3 SCE086_012 REF6 L\x17 REF_END2 
 DIALOGUE_1 ,\x96 DIALOGUE_2 ,\x00\x00
  
 なたね\n　「１時間後かもしれないし、１週間後かもしれない。\p１０年後\n　　かもしれないし、１分後かも……１秒後かもしれない」@

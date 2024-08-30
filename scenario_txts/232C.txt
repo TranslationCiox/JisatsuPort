@@ -3,7 +3,7 @@ START_FILE
 
 LOAD6 .\\Data\\Script\\Bgm.Fob REF2  \x00 REF_END2 
 LOAD2 PlayCD REF1 J\x00 REF_END1 
-LOAD3 SCE232_001\x00\x1ff\x00 REF_END2 
+LOAD3 SCE232_001 REF6 f\x00 REF_END2 
 DIALOGUE_1  z\x01\x0c\x00\x00\x00\x00"\x03\x13\x00\x00
  
 \n\n\n\n\n\n\n\n\n\n　　　　　　　『おんなのこと、うちゅうじん』\
@@ -11,7 +11,7 @@ DIALOGUE_1  z\x01\x0c\x00\x00\x00\x00"\x03\x13\x00\x00
 \x00\x00\x00 DIALOGUE_END \xaa\x00 SEQ01
 LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \x16\x01 REF_END2 
 LOAD2 TextOn REF1 D\x01 REF_END1 
-LOAD3 SCE232_002\x00\x1f`\x01 REF_END2 
+LOAD3 SCE232_002 REF6 `\x01 REF_END2 
 DIALOGUE_1 $z\x01\x0c\x00\x00\x00\x00"\x03\xdf\x00\x00
  
 　あるところに、なたねという女の子がいました。@
@@ -23,7 +23,7 @@ DIALOGUE_1 $z\x01\x0c\x00\x00\x00\x00"\x03\xdf\x00\x00
 
 \x00 DIALOGUE_END \xa4\x01 SEQ01
 \x1f\x16\x01 CALL3 D\x01 REF_END1 
-LOAD3 SCE232_003\x00\x1fZ\x05 REF_END2 
+LOAD3 SCE232_003 REF6 Z\x05 REF_END2 
 DIALOGUE_1 (z\x01\x0c\x00\x00\x00\x00"\x03\x9e\x00\x00
  
 　なたねはお義父さんが大好きでした。@
@@ -39,7 +39,7 @@ LOAD2 start REF2 \xb2\x08 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00 S
 
 LOAD6 .\\Data\\Script\\Bg.Fob REF3 \xe8\x08 REF_END2 
 LOAD4 BgAutoFadeIn REF3 \x12\t REF_END1 
-LOAD3 SCE232_013\x00\x1f6\t REF_END2 
+LOAD3 SCE232_013 REF6 6\t REF_END2 
 DIALOGUE_1 Pz\x01\x0c\x00\x00\x00\x00"\x03?\x00\x00
  
 　どこかへ走ってゆく汽車の@

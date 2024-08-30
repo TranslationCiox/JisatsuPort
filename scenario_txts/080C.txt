@@ -1,6 +1,6 @@
 START_FILE
 6\x08\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\x9a\x06\x00
-LOAD3 SCE080_001\x00\x1f\x06\x00 REF_END2 
+LOAD3 SCE080_001 REF6 \x06\x00 REF_END2 
 DIALOGUE_1 \xa0\x8c DIALOGUE_2 \x96\x00\x00
  
 　廊下をはいずり、階段を転げ落ち、拓司はようやく自分の教\n室にたどり着いた。\pぶつけたりすりむいたりした部分が鈍く痛む。\n\pしかし、そんなことはもう問題ではない。\p何もかも終わるからだ。\n@
@@ -21,7 +21,7 @@ LOAD2 TextOn REF1 \xf0\x02 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00 
 
 LOAD6 .\\Data\\Script\\Bg.Fob REF3 &\x03 REF_END2 
 LOAD4 BgAutoFadeIn REF3 P\x03 REF_END1 
-LOAD3 SCE080_002\x00\x1ft\x03 REF_END2 
+LOAD3 SCE080_002 REF6 t\x03 REF_END2 
 DIALOGUE_1 \xa4\x8c DIALOGUE_2 R\x00\x00
  
 机までたどり着いた拓司は、必死の力を振り絞って身を起こし、\nどっかりと椅子に腰掛けた。@
@@ -39,7 +39,7 @@ DIALOGUE_1 \xa4\x8c DIALOGUE_2 R\x00\x00
 
 \x00 DIALOGUE_END \xb8\x03 SEQ01
 \x1f\xc2\x02 CALL3 \xf0\x02 REF_END1 
-LOAD3 SCE080_003\x00\x1f:\x05 REF_END2 
+LOAD3 SCE080_003 REF6 :\x05 REF_END2 
 DIALOGUE_1 \xa8\x8c DIALOGUE_2 .\x00\x00
  
 　そうしてカッターナイフを取り出すと、拓司はキリキリと刃を\n　押し出し、それを喉元に押し当てた。@

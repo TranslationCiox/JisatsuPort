@@ -1,6 +1,6 @@
 START_FILE
 \xa4\x19\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\x02\x16\x00
-LOAD3 SCE068_001\x00\x1f\x06\x00 REF_END2 
+LOAD3 SCE068_001 REF6 \x06\x00 REF_END2 
 DIALOGUE_1 \xe0y DIALOGUE_2 \xec\x00\x00
  
 カンナ\n　「ピンポーン！\p　要するに、こういうことよね。\p『好ましくな\n　　い環境を自分が変えられないと知った生き物は、無力感に支\n　　配される』……電気ショックに黙々と耐えたり、泣くことす\n　　らやめて内にこもったり。\p無力感にうちのめされるの。@
@@ -12,7 +12,7 @@ DIALOGUE_1 \xe0y DIALOGUE_2 \xec\x00\x00
 \x00\x00\x00 DIALOGUE_END J\x00 SEQ01
 LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \x1a\x04 REF_END2 
 LOAD2 TextOn REF1 H\x04 REF_END1 
-LOAD3 SCE068_002\x00\x1fd\x04 REF_END2 
+LOAD3 SCE068_002 REF6 d\x04 REF_END2 
 DIALOGUE_1 \xe4y DIALOGUE_2 \xac\x00\x00
  
 カンナ\n　「あなた、一回話してくれたことがあったわよね。\p蜥蜴のこと。\n　　\p瓶詰の蜥蜴。\pそうよ、蜥蜴を殺したのは無力感よ。\p蜥蜴は自\n　　分が世界に影響を与えられないことを悟って、死んだ。\pあな\n　　たも同じ。\pあなたは瓶詰の蜥蜴。\p世界はあなたという歯車無\n　　しでも回っていく。\pあなたという歯車は、なんら世界に影響\n　　を及ぼし得ない。\pどうあがいても電流は流されるし、泣き叫\n　　んでも誰もやってこない。\pあなに取り憑いたもの。\pそれは、\n　　無力感という名の死病よ」@
@@ -21,7 +21,7 @@ DIALOGUE_1 \xe4y DIALOGUE_2 \xac\x00\x00
 
 \x00 DIALOGUE_END \xa8\x04 SEQ01
 \x1f\x1a\x04 CALL3 H\x04 REF_END1 
-LOAD3 SCE068_003\x00\x1f\x92\x07 REF_END2 
+LOAD3 SCE068_003 REF6 \x92\x07 REF_END2 
 DIALOGUE_1 \xe8y DIALOGUE_2 \xa4\x00\x00
  
 拓司\n　「……どう違うんだ？」@
@@ -35,7 +35,7 @@ DIALOGUE_1 \xe8y DIALOGUE_2 \xa4\x00\x00
 
 LOAD6 .\\Data\\Script\\Bg.Fob REF3 \xba\n REF_END2 
 LOAD2 BgOn REF3 \xe4\n REF_END1 
-LOAD3 SCE068_004\x00\x1f\x00\x0b REF_END2 
+LOAD3 SCE068_004 REF6 \x00\x0b REF_END2 
 DIALOGUE_1 \xecy DIALOGUE_2 f\x00\x00
  
 カンナは叫んだ。@
@@ -48,7 +48,7 @@ DIALOGUE_1 \xecy DIALOGUE_2 f\x00\x00
 
 \x00\x00 DIALOGUE_END D\x0b SEQ01
 \x1f\x1a\x04 CALL3 H\x04 REF_END1 
-LOAD3 SCE068_005\x00\x1f\x16\r REF_END2 
+LOAD3 SCE068_005 REF6 \x16\r REF_END2 
 DIALOGUE_1 \xf0y DIALOGUE_2 ~\x00\x00
  
 カンナと早桃は激しく山の頂上でもみ合っていたが、不安定な足\n場がそれに耐え得るはずもなく、あえなく２人は床に転げ落ちた。\n@
@@ -64,7 +64,7 @@ LOAD6 .\\Data\\Script\\Bgm.Fob REF2 \x8c\x0f REF_END2
 LOAD2 StopCD REF1 \xb6\x0f REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00 SEQ01
 \x1f\xba\n REF_END2 
 LOAD4 BgAutoFadeIn REF3 \xf8\x0f REF_END1 
-LOAD3 SCE068_006\x00\x1f\x1c\x10 REF_END2 
+LOAD3 SCE068_006 REF6 \x1c\x10 REF_END2 
 DIALOGUE_1 \xf4y DIALOGUE_2 \xa4\x00\x00
  
 一同はそうしてしばらくもみ合っていたが、結局、なたねが事態\nを収束させた。\pと、無言で一歩踏み出して、カンナの額に手をか\nざしたのである。\p途端、糸が切れた人形のように、カンナはガッ\nクリと気を失った。\pあっけない幕切れだった。@
@@ -77,7 +77,7 @@ DIALOGUE_1 \xf4y DIALOGUE_2 \xa4\x00\x00
 \z
 \x00 DIALOGUE_END `\x10 SEQ01
 \x1f\x1a\x04 CALL3 H\x04 REF_END1 
-LOAD3 SCE068_007\x00\x1f*\x13 REF_END2 
+LOAD3 SCE068_007 REF6 *\x13 REF_END2 
 DIALOGUE_1 \xf8y DIALOGUE_2 \x8c\x00\x00
  
 なたね\n　「だってあなたもレジスタンスのひとりだから。\p目を開いて、\n　　状況を受け入れて。\pそうすれば、あなたにも善なる覚醒が－\n　　－」@

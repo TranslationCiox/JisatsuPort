@@ -2,7 +2,7 @@ START_FILE
 \x7f\x11\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00L\x0e\x00
 LOAD6 .\\Data\\Script\\Bgm.Fob REF2 \x06\x00 REF_END2 
 LOAD2 StopCD REF1 0\x00 REF_END1 
-LOAD3 SCE079_001\x00\x1fL\x00 REF_END2 
+LOAD3 SCE079_001 REF6 L\x00 REF_END2 
 DIALOGUE_1 \x10\x8b DIALOGUE_2 \xb1\x00\x00
  
 /*▲SE28　再生（終了まで待たず先へ）*/\a2,0,28,0,どくん、どくん、どくん@
@@ -26,7 +26,7 @@ DIALOGUE_1 \x10\x8b DIALOGUE_2 \xb1\x00\x00
  DIALOGUE_END \x90\x00 SEQ01
 LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 t\x03 REF_END2 
 LOAD2 TextOn REF1 \xa2\x03 REF_END1 
-LOAD3 SCE079_002\x00\x1f\xbe\x03 REF_END2 
+LOAD3 SCE079_002 REF6 \xbe\x03 REF_END2 
 DIALOGUE_1 \x14\x8b DIALOGUE_2 M\x00\x00
  
 \n　死んじまおうかなあ。@
@@ -41,7 +41,7 @@ DIALOGUE_1 \x14\x8b DIALOGUE_2 M\x00\x00
 
 \x00 DIALOGUE_END \x02\x04 SEQ01
 \x1ft\x03 CALL3 \xa2\x03 REF_END1 
-LOAD3 SCE079_003\x00\x1fp\x05 REF_END2 
+LOAD3 SCE079_003 REF6 p\x05 REF_END2 
 DIALOGUE_1 \x18\x8b DIALOGUE_2 \xb4\x00\x00
  
 いつの間にか、足が完全に止まっている。\pただぼんやりと、廊下\nに立ちすくんでいる。@
@@ -60,14 +60,14 @@ DIALOGUE_1 \x18\x8b DIALOGUE_2 \xb4\x00\x00
 
 \x00 DIALOGUE_END \xb4\x05 SEQ01
 \x1ft\x03 CALL3 \xa2\x03 REF_END1 
-LOAD3 SCE079_004\x00\x1f\xbe\x08 REF_END2 
+LOAD3 SCE079_004 REF6 \xbe\x08 REF_END2 
 DIALOGUE_1 \x1c\x8b DIALOGUE_2 @\x00\x00
  
 学生\n　「……死ぬのか生きるのか、それはもう人間の幸不幸を決定す\n　　る鍵ではないような気さえしてきたのだ。\p死者は完成せられ、\n　　生者は出帆の船のデッキに立ってそれに手を合わせる。\p船は\n　　するする岸壁から離れる。\p「死はよいものだ」……』\
 
 \x00 DIALOGUE_END \x02\t SEQ01
 \x1ft\x03 CALL3 \xa2\x03 REF_END1 
-LOAD3 SCE079_005\x00\x1f<\n REF_END2 
+LOAD3 SCE079_005 REF6 <\n REF_END2 
 DIALOGUE_1  \x8b DIALOGUE_2 P\x00\x00
  
 　よいものだ。@
@@ -87,7 +87,7 @@ DIALOGUE_1  \x8b DIALOGUE_2 P\x00\x00
 
 \x00\x00\x00 DIALOGUE_END \x80\n SEQ01
 \x1ft\x03 CALL3 \xa2\x03 REF_END1 
-LOAD3 SCE079_006\x00\x1f\xfa\x0b REF_END2 
+LOAD3 SCE079_006 REF6 \xfa\x0b REF_END2 
 DIALOGUE_1 $\x8b DIALOGUE_2 +\x00\x00
  
 　カットするものだからカッター。@
@@ -106,7 +106,7 @@ DIALOGUE_1 $\x8b DIALOGUE_2 +\x00\x00
 
 LOAD6 .\\Data\\Script\\Bg.Fob REF3 >\r REF_END2 
 LOAD4 BgAutoFadeIn REF3 h\r REF_END1 
-LOAD3 SCE079_007\x00\x1f\x8c\r REF_END2 
+LOAD3 SCE079_007 REF6 \x8c\r REF_END2 
 DIALOGUE_1 (\x8b DIALOGUE_2 \x11\x00\x00
  
 \n　拓司は芋虫のようにはいずって、自分の教室へと向かった。\

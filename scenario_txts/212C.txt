@@ -1,6 +1,6 @@
 START_FILE
 \x91\x12\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\x02\x0f\x00
-LOAD3 SCE212_001\x00\x1f\x06\x00 REF_END2 
+LOAD3 SCE212_001 REF6 \x06\x00 REF_END2 
 DIALOGUE_1 \xe0Z\x01\x0c\x00\x00\x00\x00"\x03d\x00\x00
  
 もはや世界に定点を見いだすことは不可能だった。@
@@ -15,7 +15,7 @@ DIALOGUE_1 \xe0Z\x01\x0c\x00\x00\x00\x00"\x03d\x00\x00
 \x00\x00\x00 DIALOGUE_END J\x00 SEQ01
 LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xfa\x01 REF_END2 
 LOAD2 TextOn REF1 (\x02 REF_END1 
-LOAD3 SCE212_002\x00\x1fD\x02 REF_END2 
+LOAD3 SCE212_002 REF6 D\x02 REF_END2 
 DIALOGUE_1 \xe4Z\x01\x0c\x00\x00\x00\x00"\x03S\x00\x00
  
 拓司\n　「とりあえず、『君の語る世界』を信じよう。\pなぜなら、その\n　　世界がいま、一番簡単に実験にかけられるからだ」@
@@ -25,7 +25,7 @@ DIALOGUE_1 \xe4Z\x01\x0c\x00\x00\x00\x00"\x03S\x00\x00
 
 \x00 DIALOGUE_END \x88\x02 SEQ01
 \x1f\xfa\x01 CALL3 (\x02 REF_END1 
-LOAD3 SCE212_003\x00\x1f\x0e\x04 REF_END2 
+LOAD3 SCE212_003 REF6 \x0e\x04 REF_END2 
 DIALOGUE_1 \xe8Z\x01\x0c\x00\x00\x00\x00"\x03\x87\x00\x00
  
 拓司\n　「もしアイスクリームパフェが出現したとしても、『君の語っ\n　　た世界』が真実であることは証明できない。\pなぜならそれも\n　　また、俺の妄想が生み出した現象かもしれないからだ。@
@@ -40,7 +40,7 @@ DIALOGUE_1 \xe8Z\x01\x0c\x00\x00\x00\x00"\x03\x87\x00\x00
 
 LOAD6 .\\Data\\Script\\Bg.Fob REF3 \xc2\x06 REF_END2 
 LOAD4 BgAutoFadeIn REF3 \xec\x06 REF_END1 
-LOAD3 SCE212_004\x00\x1f\x10\x07 REF_END2 
+LOAD3 SCE212_004 REF6 \x10\x07 REF_END2 
 DIALOGUE_1 \xecZ\x01\x0c\x00\x00\x00\x00"\x03\x88\x00\x00
  
 意識を集中させ、頭の中にアイスクリームパフェを思い描く。@
@@ -56,7 +56,7 @@ DIALOGUE_1 \xecZ\x01\x0c\x00\x00\x00\x00"\x03\x88\x00\x00
 \x00 DIALOGUE_END T\x07 SEQ01
 \x1f\xfa\x01 CALL3 (\x02 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc9\x00 SEQ01
 \x1f\xc2\x06 CALL3 \xec\x06 REF_END1 
-LOAD3 SCE212_005\x00\x1f\xe2\t REF_END2 
+LOAD3 SCE212_005 REF6 \xe2\t REF_END2 
 DIALOGUE_1 \xf0Z\x01\x0c\x00\x00\x00\x00"\x036\x00\x00
  
 拓司は意識集中を諦め、目を開けた。@
@@ -66,14 +66,14 @@ DIALOGUE_1 \xf0Z\x01\x0c\x00\x00\x00\x00"\x036\x00\x00
 
 \x00 DIALOGUE_END &\n SEQ01
 \x1f\xfa\x01 CALL3 (\x02 REF_END1 
-LOAD3 SCE212_006\x00\x1f8\x0b REF_END2 
+LOAD3 SCE212_006 REF6 8\x0b REF_END2 
 DIALOGUE_1 \xf4Z\x01\x0c\x00\x00\x00\x00"\x03-\x00\x00
  
 /*▲SE01　ループ再生（次の停止まで）*/\a2,1,1,1,\a6,0,0,0,　ザザザ……ザザッ……\pザアザザザ……ザアアアアア……@
 　ザアザアアアアアアア……\w\n/*▲SE01　停止*/\a4,1,0,0,\z
 \x00\x00\x00 DIALOGUE_END |\x0b SEQ01
 \x1f\xfa\x01 CALL3 (\x02 REF_END1 
-LOAD3 SCE212_007\x00\x1fj\x0c REF_END2 
+LOAD3 SCE212_007 REF6 j\x0c REF_END2 
 DIALOGUE_1 \xf8Z\x01\x0c\x00\x00\x00\x00"\x03d\x00\x00
  
 ノイズが、耳の奥で聞こえた。@

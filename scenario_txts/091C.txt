@@ -6,7 +6,7 @@ LOAD4 BgAutoFadeIn REF3 J\x00 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\t\x01
 
 LOAD6 .\\Data\\Script\\Bgm.Fob REF2 \x88\x00 REF_END2 
 LOAD2 PlayCD REF1 \xb2\x00 REF_END1 
-LOAD3 SCE091_001\x00\x1f\xce\x00 REF_END2 
+LOAD3 SCE091_001 REF6 \xce\x00 REF_END2 
 DIALOGUE_1 \xd0\x9d DIALOGUE_2 \xb6\x00\x00
  
 こうして１日が終わった。@

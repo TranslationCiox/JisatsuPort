@@ -3,7 +3,7 @@ p*\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\x1a#\x00 \
 
 LOAD6 .\\Data\\Script\\Bgm.Fob REF2  \x00 REF_END2 
 LOAD2 PlayCD REF1 J\x00 REF_END1 
-LOAD3 SCE234_001\x00\x1ff\x00 REF_END2 
+LOAD3 SCE234_001 REF6 f\x00 REF_END2 
 DIALOGUE_1 @}\x01\x0c\x00\x00\x00\x00"\x03\x11\x00\x00
  
 \n\n\n\n\n\n\n\n\n\n　　　　　　　　　　　　『１５日目』\
@@ -11,7 +11,7 @@ DIALOGUE_1 @}\x01\x0c\x00\x00\x00\x00"\x03\x11\x00\x00
 \x00\x00\x00 DIALOGUE_END \xaa\x00 SEQ01
 LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \x0e\x01 REF_END2 
 LOAD2 TextOn REF1 <\x01 REF_END1 
-LOAD3 SCE234_002\x00\x1fX\x01 REF_END2 
+LOAD3 SCE234_002 REF6 X\x01 REF_END2 
 DIALOGUE_1 D}\x01\x0c\x00\x00\x00\x00"\x03\x7f\x00\x00
  
 拓司の予想は、まったく予期せぬ形でうち砕かれた。@
@@ -27,7 +27,7 @@ DIALOGUE_1 D}\x01\x0c\x00\x00\x00\x00"\x03\x7f\x00\x00
 
 \x00\x00\x00 DIALOGUE_END \x9c\x01 SEQ01
 \x1f\x0e\x01 CALL3 <\x01 REF_END1 
-LOAD3 SCE234_003\x00\x1f\xd2\x03 REF_END2 
+LOAD3 SCE234_003 REF6 \xd2\x03 REF_END2 
 DIALOGUE_1 H}\x01\x0c\x00\x00\x00\x00"\x03V\x00\x00
  
 御堂\n　「この女はな、自分の身の安全のために、お前を売ったんだ」@
@@ -41,7 +41,7 @@ DIALOGUE_1 H}\x01\x0c\x00\x00\x00\x00"\x03V\x00\x00
 
 \x00\x00\x00 DIALOGUE_END \x16\x04 SEQ01
 \x1f\x0e\x01 CALL3 <\x01 REF_END1 
-LOAD3 SCE234_004\x00\x1f\xa8\x05 REF_END2 
+LOAD3 SCE234_004 REF6 \xa8\x05 REF_END2 
 DIALOGUE_1 L}\x01\x0c\x00\x00\x00\x00"\x03`\x00\x00
  
 紅葉は何もいわなかった。@
@@ -55,7 +55,7 @@ DIALOGUE_1 L}\x01\x0c\x00\x00\x00\x00"\x03`\x00\x00
 
 \x00 DIALOGUE_END \xec\x05 SEQ01
 \x1f\x0e\x01 CALL3 <\x01 REF_END1 
-LOAD3 SCE234_005\x00\x1f\xa6\x07 REF_END2 
+LOAD3 SCE234_005 REF6 \xa6\x07 REF_END2 
 DIALOGUE_1 P}\x01\x0c\x00\x00\x00\x00"\x03\x8e\x00\x00
  
 御堂\n　「お前、よっぽど人望ないんだなあ。\p哀れだぜ。@
@@ -71,7 +71,7 @@ DIALOGUE_1 P}\x01\x0c\x00\x00\x00\x00"\x03\x8e\x00\x00
 \x00\x00\x00 DIALOGUE_END \xea\x07 SEQ01
 \x1f\x0e\x01 CALL3 <\x01 CALL2  \x00 REF_END2 
 LOAD2 StopCD REF1 h\n REF_END1 
-LOAD3 SCE234_006\x00\x1f\x84\n REF_END2 
+LOAD3 SCE234_006 REF6 \x84\n REF_END2 
 DIALOGUE_1 T}\x01\x0c\x00\x00\x00\x00"\x03\x95\x00\x00
  
 御堂\n　「っつーわけで、楽しい処刑の始まりだ！」@
@@ -85,7 +85,7 @@ DIALOGUE_1 T}\x01\x0c\x00\x00\x00\x00"\x03\x95\x00\x00
 
 \x00\x00\x00 DIALOGUE_END \xc8\n SEQ01
 \x1f\x0e\x01 CALL3 <\x01 REF_END1 
-LOAD3 SCE234_007\x00\x1fV\r REF_END2 
+LOAD3 SCE234_007 REF6 V\r REF_END2 
 DIALOGUE_1 X}\x01\x0c\x00\x00\x00\x00"\x03\xba\x00\x00
  
 ものすごい衝撃が鼻先を直撃し、目の前に火花が散った。@
@@ -108,7 +108,7 @@ DIALOGUE_1 X}\x01\x0c\x00\x00\x00\x00"\x03\xba\x00\x00
 
 \x00 DIALOGUE_END \x9a\r SEQ01
 \x1f\x0e\x01 CALL3 <\x01 REF_END1 
-LOAD3 SCE234_008\x00\x1f\xbc\x10 REF_END2 
+LOAD3 SCE234_008 REF6 \xbc\x10 REF_END2 
 DIALOGUE_1 \\}\x01\x0c\x00\x00\x00\x00"\x03\x94\x00\x00
  
 　興奮が胸を充たし、あふれ、喉へと込み上がってきた。@
@@ -120,7 +120,7 @@ DIALOGUE_1 \\}\x01\x0c\x00\x00\x00\x00"\x03\x94\x00\x00
 
 \x00\x00\x00 DIALOGUE_END \x00\x11 SEQ01
 \x1f\x0e\x01 CALL3 <\x01 REF_END1 
-LOAD3 SCE234_009\x00\x1f\x8a\x13 REF_END2 
+LOAD3 SCE234_009 REF6 \x8a\x13 REF_END2 
 DIALOGUE_1 `}\x01\x0c\x00\x00\x00\x00"\x03\xe1\x00\x00
  
 御堂\n　「おい虎菱ィ！」@
@@ -136,7 +136,7 @@ DIALOGUE_1 `}\x01\x0c\x00\x00\x00\x00"\x03\xe1\x00\x00
 
 LOAD6 .\\Data\\Script\\Bg.Fob REF3 \xa6\x17 REF_END2 
 LOAD2 BgOn REF3 \xd0\x17 REF_END1 
-LOAD3 SCE234_010\x00\x1f\xec\x17 REF_END2 
+LOAD3 SCE234_010 REF6 \xec\x17 REF_END2 
 DIALOGUE_1 d}\x01\x0c\x00\x00\x00\x00"\x03{\x00\x00
  
 御堂\n　「骨折るぞ！\p　骨折るぞ！\p　ホネオルホネオルゾホネオルゾゾ\n　　ゾゾゾ！」@
@@ -148,7 +148,7 @@ DIALOGUE_1 d}\x01\x0c\x00\x00\x00\x00"\x03{\x00\x00
 
 \x00 DIALOGUE_END 0\x18 SEQ01
 \x1f\x0e\x01 CALL3 <\x01 REF_END1 
-LOAD3 SCE234_011\x00\x1fV\x1a REF_END2 
+LOAD3 SCE234_011 REF6 V\x1a REF_END2 
 DIALOGUE_1 h}\x01\x0c\x00\x00\x00\x00"\x03]\x00\x00
  
 御堂\n　「もう一本もイクか、オイ？」@
@@ -159,7 +159,7 @@ DIALOGUE_1 h}\x01\x0c\x00\x00\x00\x00"\x03]\x00\x00
 
 \x00\x00\x00 DIALOGUE_END \x9a\x1a SEQ01
 \x1f\x0e\x01 CALL3 <\x01 REF_END1 
-LOAD3 SCE234_012\x00\x1fH\x1c REF_END2 
+LOAD3 SCE234_012 REF6 H\x1c REF_END2 
 DIALOGUE_1 l}\x01\x0c\x00\x00\x00\x00"\x03\x84\x00\x00
  
 涙と鼻水がとめどなくあふれ出てきた。@
@@ -179,7 +179,7 @@ DIALOGUE_1 l}\x01\x0c\x00\x00\x00\x00"\x03\x84\x00\x00
 
 \x00 DIALOGUE_END \x8c\x1c SEQ01
 \x1f\x0e\x01 CALL3 <\x01 REF_END1 
-LOAD3 SCE234_013\x00\x1f\xd6\x1e REF_END2 
+LOAD3 SCE234_013 REF6 \xd6\x1e REF_END2 
 DIALOGUE_1 p}\x01\x0c\x00\x00\x00\x00"\x03\xa8\x00\x00
  
 もう一本の手がギシリと歪んだ。@

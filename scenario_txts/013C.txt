@@ -2,7 +2,7 @@ START_FILE
 f\x10\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00.\r\x00
 LOAD6 .\\Data\\Script\\Bgm.Fob REF2 \x06\x00 REF_END2 
 LOAD2 StopCD REF1 0\x00 REF_END1 
-LOAD3 SCE013_001\x00\x1fL\x00 REF_END2 
+LOAD3 SCE013_001 REF6 L\x00 REF_END2 
 DIALOGUE_1 \xf0# DIALOGUE_2 \x86\x00\x00
  
 拓司\n　「紅葉、ちょっと悪い」@
@@ -17,7 +17,7 @@ DIALOGUE_1 \xf0# DIALOGUE_2 \x86\x00\x00
  DIALOGUE_END \x90\x00 SEQ01
 LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xc8\x02 REF_END2 
 LOAD2 TextOn REF1 \xf6\x02 REF_END1 
-LOAD3 SCE013_002\x00\x1f\x12\x03 REF_END2 
+LOAD3 SCE013_002 REF6 \x12\x03 REF_END2 
 DIALOGUE_1 \xf4# DIALOGUE_2 \x97\x00\x00
  
 /*【画面／演出】　車の急ブレーキ音　キキキキー！//　　　　　　　早桃、どしゃっと転倒する音。しばし間を取っ//てから*//*▲SE31　再生（再生終了まで待つ）*/\a2,0,31,0,\a3,0,0,0,\a4,0,0,0,運転手\n　「……バカヤロー！　死にてえのか！」@
@@ -28,7 +28,7 @@ DIALOGUE_1 \xf4# DIALOGUE_2 \x97\x00\x00
 
  DIALOGUE_END V\x03 SEQ01
 \x1f\xc8\x02 CALL3 \xf6\x02 REF_END1 
-LOAD3 SCE013_003\x00\x1f\xec\x05 REF_END2 
+LOAD3 SCE013_003 REF6 \xec\x05 REF_END2 
 DIALOGUE_1 \xf8# DIALOGUE_2 >\x00\x00
  
 拓司\n　「大丈夫か、早桃？」　@
@@ -40,7 +40,7 @@ DIALOGUE_1 \xf8# DIALOGUE_2 >\x00\x00
 
 \x00\x00\x00 DIALOGUE_END 0\x06 SEQ01
 \x1f\xc8\x02 CALL3 \xf6\x02 REF_END1 
-LOAD3 SCE013_004\x00\x1fb\x07 REF_END2 
+LOAD3 SCE013_004 REF6 b\x07 REF_END2 
 DIALOGUE_1 \xfc# DIALOGUE_2 t\x00\x00
  
 拓司\n　「早桃……」@
@@ -53,14 +53,14 @@ DIALOGUE_1 \xfc# DIALOGUE_2 t\x00\x00
 \nそこまでいってから早桃は顔を覆い、わっと泣き始めた。\w\z
 \x00 DIALOGUE_END \xa6\x07 SEQ01
 \x1f\xc8\x02 CALL3 \xf6\x02 REF_END1 
-LOAD3 SCE013_005\x00\x1f\xb0\t REF_END2 
+LOAD3 SCE013_005 REF6 \xb0\t REF_END2 
 DIALOGUE_1 \x00$ DIALOGUE_2 \x1a\x00\x00
  
 /*■黒　表示（ノンエフェクト）*/\a7,-1,-1,0,\a0,200,1,0,\a6,0,0,0,早桃\n　「……ごめんなさい」\
 
 \x00 DIALOGUE_END \xf4\t SEQ01
 \x1f\xc8\x02 CALL3 \xf6\x02 REF_END1 
-LOAD3 SCE013_006\x00\x1f\x96\n REF_END2 
+LOAD3 SCE013_006 REF6 \x96\n REF_END2 
 DIALOGUE_1 \x04$ DIALOGUE_2 |\x00\x00
  
 /*【画面／演出】　早桃、タタタと駆け去ってゆく。代わって//紅葉、タタタと駆け寄ってくる。//▲SE20　再生（再生終了まで待つ）*/\a2,0,20,0,\a3,0,0,0,\a4,0,0,0,紅葉\n　「……どうしたの？」@

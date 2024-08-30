@@ -1,6 +1,6 @@
 START_FILE
 \x03\x10\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00D\r\x00
-LOAD3 SCE083_001\x00\x1f\x06\x00 REF_END2 
+LOAD3 SCE083_001 REF6 \x06\x00 REF_END2 
 DIALOGUE_1 P\x91 DIALOGUE_2 =\x00\x00
  
 拓司は枕元に掛けられている鳥かごをのぞき込んだ。@
@@ -9,7 +9,7 @@ DIALOGUE_1 P\x91 DIALOGUE_2 =\x00\x00
 \x00 DIALOGUE_END J\x00 SEQ01
 LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 ^\x01 REF_END2 
 LOAD2 TextOn REF1 \x8c\x01 REF_END1 
-LOAD3 SCE083_002\x00\x1f\xa8\x01 REF_END2 
+LOAD3 SCE083_002 REF6 \xa8\x01 REF_END2 
 DIALOGUE_1 T\x91 DIALOGUE_2 s\x00\x00
  
 教授\n　「気になるかね？」@
@@ -23,7 +23,7 @@ DIALOGUE_1 T\x91 DIALOGUE_2 s\x00\x00
 見れば教授の額には、ちいさな汗が滲んでいる。\w\z
 \x00\x00\x00 DIALOGUE_END \xec\x01 SEQ01
 \x1f^\x01 CALL3 \x8c\x01 REF_END1 
-LOAD3 SCE083_003\x00\x1f\xf2\x03 REF_END2 
+LOAD3 SCE083_003 REF6 \xf2\x03 REF_END2 
 DIALOGUE_1 X\x91 DIALOGUE_2 g\x00\x00
  
 拓司\n　「……なにかこの鳥が、俺の過去に関係あるんですか？」@
@@ -35,7 +35,7 @@ DIALOGUE_1 X\x91 DIALOGUE_2 g\x00\x00
 長い沈黙の後、教授が口を開いた。\w\z
 \x00\x00\x00 DIALOGUE_END 6\x04 SEQ01
 \x1f^\x01 CALL3 \x8c\x01 REF_END1 
-LOAD3 SCE083_004\x00\x1f\x0c\x06 REF_END2 
+LOAD3 SCE083_004 REF6 \x0c\x06 REF_END2 
 DIALOGUE_1 \\\x91 DIALOGUE_2 \x87\x00\x00
  
 教授\n　「……その鳥はね、ありえない鳥なんだよ」@
@@ -51,7 +51,7 @@ DIALOGUE_1 \\\x91 DIALOGUE_2 \x87\x00\x00
 その痛みは急速に大きく膨れ上がり、すぐに拓司の頭のなかいっ\nぱいに広がった。\w\z
 \x00 DIALOGUE_END P\x06 SEQ01
 \x1f^\x01 CALL3 \x8c\x01 REF_END1 
-LOAD3 SCE083_005\x00\x1f\xa6\x08 REF_END2 
+LOAD3 SCE083_005 REF6 \xa6\x08 REF_END2 
 DIALOGUE_1 `\x91 DIALOGUE_2 c\x00\x00
  
 拓司\n　「意味が……わからない」@
@@ -67,7 +67,7 @@ DIALOGUE_1 `\x91 DIALOGUE_2 c\x00\x00
 
 LOAD6 .\\Data\\Script\\Bg.Fob REF3 \xca\n REF_END2 
 LOAD4 BgAutoFadeIn REF3 \xf4\n REF_END1 
-LOAD3 SCE083_006\x00\x1f\x18\x0b REF_END2 
+LOAD3 SCE083_006 REF6 \x18\x0b REF_END2 
 DIALOGUE_1 d\x91 DIALOGUE_2 T\x00\x00
  
 　ザザザザザザザザザザ@

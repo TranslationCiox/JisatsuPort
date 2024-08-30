@@ -1,6 +1,6 @@
 START_FILE
 8\x12\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\x1a\x0f\x00
-LOAD3 SCE231_001\x00\x1f\x06\x00 REF_END2 
+LOAD3 SCE231_001 REF6 \x06\x00 REF_END2 
 DIALOGUE_1 \x90x\x01\x0c\x00\x00\x00\x00"\x03r\x00\x00
  
 御堂\n　「……動くなよ、虎菱。\pお前だけは勝手にさせねえからな……」\n\p拓司\n　「なんなんだ、お前は……」@
@@ -11,7 +11,7 @@ DIALOGUE_1 \x90x\x01\x0c\x00\x00\x00\x00"\x03r\x00\x00
 \x00\x00\x00 DIALOGUE_END J\x00 SEQ01
 LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 2\x02 REF_END2 
 LOAD2 TextOn REF1 `\x02 REF_END1 
-LOAD3 SCE231_002\x00\x1f|\x02 REF_END2 
+LOAD3 SCE231_002 REF6 |\x02 REF_END2 
 DIALOGUE_1 \x94x\x01\x0c\x00\x00\x00\x00"\x03`\x00\x00
  
 拓司\n　「俺だって同じだッ！\p　お前だけが特別だと思うな！」@
@@ -24,7 +24,7 @@ DIALOGUE_1 \x94x\x01\x0c\x00\x00\x00\x00"\x03`\x00\x00
 
 LOAD6 .\\Data\\Script\\Bg.Fob REF3 \x94\x04 REF_END2 
 LOAD4 BgAutoFadeIn REF3 \xbe\x04 REF_END1 
-LOAD3 SCE231_003\x00\x1f\xe2\x04 REF_END2 
+LOAD3 SCE231_003 REF6 \xe2\x04 REF_END2 
 DIALOGUE_1 \x98x\x01\x0c\x00\x00\x00\x00"\x03\xc2\x00\x00
  
 奇声を上げながら、なたねが突っ込んできた。\pしかし御堂はそれ\nを軽くいなし、足を払って転倒させた。@
@@ -40,7 +40,7 @@ DIALOGUE_1 \x98x\x01\x0c\x00\x00\x00\x00"\x03\xc2\x00\x00
 
 \x00\x00\x00 DIALOGUE_END &\x05 SEQ01
 \x1f2\x02 CALL3 `\x02 REF_END1 
-LOAD3 SCE231_004\x00\x1fh\x08 REF_END2 
+LOAD3 SCE231_004 REF6 h\x08 REF_END2 
 DIALOGUE_1 \x9cx\x01\x0c\x00\x00\x00\x00"\x03s\x00\x00
  
 そこには静けさがあった。\p暴力とは相容れないはずの、まったり\nとした静けさが。@
@@ -53,7 +53,7 @@ DIALOGUE_1 \x9cx\x01\x0c\x00\x00\x00\x00"\x03s\x00\x00
 
 \x00\x00 DIALOGUE_END \xac\x08 SEQ01
 \x1f2\x02 CALL3 `\x02 REF_END1 
-LOAD3 SCE231_005\x00\x1f\xb2\n REF_END2 
+LOAD3 SCE231_005 REF6 \xb2\n REF_END2 
 DIALOGUE_1 \xa0x\x01\x0c\x00\x00\x00\x00"\x03>\x00\x00
  
 錦城がおそるおそるといった感じで、なたねに歩み寄った。@
@@ -63,7 +63,7 @@ DIALOGUE_1 \xa0x\x01\x0c\x00\x00\x00\x00"\x03>\x00\x00
 
 \x00\x00\x00 DIALOGUE_END \xf6\n SEQ01
 \x1f2\x02 CALL3 `\x02 REF_END1 
-LOAD3 SCE231_006\x00\x1f(\x0c REF_END2 
+LOAD3 SCE231_006 REF6 (\x0c REF_END2 
 DIALOGUE_1 \xa4x\x01\x0c\x00\x00\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.fob REF1 l\x0c REF_END2 
 LOAD6 CheckNormalMessageSkip REF1 \x9a\x0c CALL2 2\x02 REF_END2 
 LOAD4 TextWindowOff REF2 \xd2\x0c REF_END1  \x1e\x00\x00\x00\x00\r\x00 REF_END2 \x0c\x02\x00\x00" \x1e\x04\x00\x00\r\x00\x00\x1e\x01\x00 SEQ01

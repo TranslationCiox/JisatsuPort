@@ -222,6 +222,11 @@ patterns = [
         "action": " REF5 "
     },
     {
+        "pattern": [b'\x00', b'\x1f'],
+        #
+        "action": " REF6 "
+    },
+    {
         "pattern": [b'5'],
         #
         "action": "5 "

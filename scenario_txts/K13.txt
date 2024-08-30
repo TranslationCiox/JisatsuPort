@@ -2,7 +2,7 @@ START_FILE
 \x1f\t\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00|\x07\x00
 LOAD6 .\\Data\\Script\\Bgm.Fob REF2 \x06\x00 REF_END2 
 LOAD2 StopCD REF1 0\x00 REF_END1 
-LOAD3 SCEK13_001\x00\x1fL\x00 REF_END2 
+LOAD3 SCEK13_001 REF6 L\x00 REF_END2 
 DIALOGUE_1  \xac\x01\x0c\x00\x00\x00\x00"\x03\xd9\x00\x00
  
 　父親を殺す。@
@@ -18,7 +18,7 @@ DIALOGUE_1  \xac\x01\x0c\x00\x00\x00\x00"\x03\xd9\x00\x00
 \x00\x00\x00 DIALOGUE_END \x90\x00 SEQ01
 LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \x14\x04 REF_END2 
 LOAD2 TextOn REF1 B\x04 REF_END1 
-LOAD3 SCEK13_002\x00\x1f^\x04 REF_END2 
+LOAD3 SCEK13_002 REF6 ^\x04 REF_END2 
 DIALOGUE_1 $\xac\x01\x0c\x00\x00\x00\x00"\x03~\x00\x00
  
 私の不満に気づいたのだろう、ゆきはすぐに申し訳なさそうな顔\nをした。@

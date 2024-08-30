@@ -3,7 +3,7 @@ START_FILE
 
 LOAD6 .\\Data\\Script\\Bg.Fob REF3  \x00 REF_END2 
 LOAD2 BgOn REF3 J\x00 REF_END1 
-LOAD3 SCE088_001\x00\x1ff\x00 REF_END2 
+LOAD3 SCE088_001 REF6 f\x00 REF_END2 
 DIALOGUE_1  \x99 DIALOGUE_2 \x96\x00\x00
  
 御堂\n　「ふざけるな！」@
@@ -15,7 +15,7 @@ DIALOGUE_1  \x99 DIALOGUE_2 \x96\x00\x00
 \x00 DIALOGUE_END \xaa\x00 SEQ01
 LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 "\x03 REF_END2 
 LOAD2 TextOn REF1 P\x03 REF_END1 
-LOAD3 SCE088_002\x00\x1fl\x03 REF_END2 
+LOAD3 SCE088_002 REF6 l\x03 REF_END2 
 DIALOGUE_1 $\x99 DIALOGUE_2 \xaa\x00\x00
  
 　静寂がおりた。@
@@ -30,7 +30,7 @@ DIALOGUE_1 $\x99 DIALOGUE_2 \xaa\x00\x00
 
 \x00 DIALOGUE_END \xb0\x03 SEQ01
 \x1f"\x03 CALL3 P\x03 REF_END1 
-LOAD3 SCE088_003\x00\x1f\x92\x06 REF_END2 
+LOAD3 SCE088_003 REF6 \x92\x06 REF_END2 
 DIALOGUE_1 (\x99 DIALOGUE_2 s\x00\x00
  
 御堂\n　「うるせえ！\p　もういいってんだよ、電波女！」@
@@ -44,7 +44,7 @@ DIALOGUE_1 (\x99 DIALOGUE_2 s\x00\x00
 
 \x00\x00 DIALOGUE_END \xd6\x06 SEQ01
 \x1f"\x03 CALL3 P\x03 REF_END1 
-LOAD3 SCE088_004\x00\x1f\xdc\x08 REF_END2 
+LOAD3 SCE088_004 REF6 \xdc\x08 REF_END2 
 DIALOGUE_1 ,\x99 DIALOGUE_2 \xa2\x00\x00
  
 御堂\n　「……この！」@
@@ -57,7 +57,7 @@ DIALOGUE_1 ,\x99 DIALOGUE_2 \xa2\x00\x00
 
 \x00 DIALOGUE_END  \t SEQ01
 \x1f"\x03 CALL3 P\x03 REF_END1 
-LOAD3 SCE088_005\x00\x1f\xe2\x0b REF_END2 
+LOAD3 SCE088_005 REF6 \xe2\x0b REF_END2 
 DIALOGUE_1 0\x99 DIALOGUE_2 \x82\x00\x00
  
 なたね\n　「ただし－－鍵は私が持っています」@
@@ -70,7 +70,7 @@ DIALOGUE_1 0\x99 DIALOGUE_2 \x82\x00\x00
 
 \x00 DIALOGUE_END &\x0c SEQ01
 \x1f"\x03 CALL3 P\x03 REF_END1 
-LOAD3 SCE088_006\x00\x1fh\x0e REF_END2 
+LOAD3 SCE088_006 REF6 h\x0e REF_END2 
 DIALOGUE_1 4\x99 DIALOGUE_2 \xb1\x00\x00
  
 なたね\n　「私たちは団結しなければなりません。\pその点はご同意いただ\n　　けますね？」@
@@ -82,7 +82,7 @@ DIALOGUE_1 4\x99 DIALOGUE_2 \xb1\x00\x00
 
 \x00 DIALOGUE_END \xac\x0e SEQ01
 \x1f"\x03 CALL3 P\x03 REF_END1 
-LOAD3 SCE088_007\x00\x1f\xaa\x11 REF_END2 
+LOAD3 SCE088_007 REF6 \xaa\x11 REF_END2 
 DIALOGUE_1 8\x99 DIALOGUE_2 \x99\x00\x00
  
 なたね\n　「そうした些細な意見の食い違いは、今後は抑圧されなければ\n　　なりません。\p抑圧するために、私たちのなかの誰かが、私た\n　　ちの管理者にならなければなりません。\pトップから末端に、\n　　完全な形で指令が行き届く強力な縦社会の構築こそが必要で\n　　す」@
@@ -95,7 +95,7 @@ DIALOGUE_1 8\x99 DIALOGUE_2 \x99\x00\x00
 
 \x00 DIALOGUE_END \xee\x11 SEQ01
 \x1f"\x03 CALL3 P\x03 REF_END1 
-LOAD3 SCE088_008\x00\x1f\x8c\x14 REF_END2 
+LOAD3 SCE088_008 REF6 \x8c\x14 REF_END2 
 DIALOGUE_1 <\x99 DIALOGUE_2 \xb6\x00\x00
  
 なたね\n　「管理者の暴走を抑止する装置になるということです」@
@@ -106,7 +106,7 @@ DIALOGUE_1 <\x99 DIALOGUE_2 \xb6\x00\x00
 
 \x00 DIALOGUE_END \xd0\x14 SEQ01
 \x1f"\x03 CALL3 P\x03 REF_END1 
-LOAD3 SCE088_009\x00\x1f\xe2\x17 REF_END2 
+LOAD3 SCE088_009 REF6 \xe2\x17 REF_END2 
 DIALOGUE_1 @\x99 DIALOGUE_2 \x8f\x00\x00
  
 　全員が、なたねの言葉をゆっくりと、慎重にかみ砕いていた。@
@@ -119,7 +119,7 @@ DIALOGUE_1 @\x99 DIALOGUE_2 \x8f\x00\x00
 
 \x00\x00\x00 DIALOGUE_END &\x18 SEQ01
 \x1f"\x03 CALL3 P\x03 REF_END1 
-LOAD3 SCE088_010\x00\x1f\x9c\x1a REF_END2 
+LOAD3 SCE088_010 REF6 \x9c\x1a REF_END2 
 DIALOGUE_1 D\x99 DIALOGUE_2 d\x00\x00
  
 なたね\n　「私の目的は、来たる地球本土決戦に向けて、１人でも多くの\n　　人間を生き残らせることだけですから」@

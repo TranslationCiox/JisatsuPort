@@ -6,7 +6,7 @@ LOAD4 BgAutoFadeIn REF3 J\x00 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x08\x
 
 LOAD6 .\\Data\\Script\\Bgm.Fob REF2 \x88\x00 REF_END2 
 LOAD2 PlayCD REF1 \xb2\x00 REF_END1 
-LOAD3 SCEG01_001\x00\x1f\xce\x00 REF_END2 
+LOAD3 SCEG01_001 REF6 \xce\x00 REF_END2 
 DIALOGUE_1  \xc5\x01\x0c\x00\x00\x00\x00"\x03*\x00\x00
  
 錦城\n　「……しっ！　私よ、虎菱くん」@
@@ -17,7 +17,7 @@ DIALOGUE_1  \xc5\x01\x0c\x00\x00\x00\x00"\x03*\x00\x00
 LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xda\x01 REF_END2 
 LOAD2 TextOn REF1 \x08\x02 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00 SEQ01
 \x1f \x00 CALL3 J\x00 REF_END1 
-LOAD3 SCEG01_002\x00\x1fX\x02 REF_END2 
+LOAD3 SCEG01_002 REF6 X\x02 REF_END2 
 DIALOGUE_1 $\xc5\x01\x0c\x00\x00\x00\x00"\x03z\x00\x00
  
 錦城\n　「立派だったわ、虎菱くん」@
@@ -30,7 +30,7 @@ DIALOGUE_1 $\xc5\x01\x0c\x00\x00\x00\x00"\x03z\x00\x00
 　　周囲の状況にながされないで、自分という物を持ち続けられ\n　　るの。\p虎菱くんこそが、リーダーにふさわしいって」\w\z
 \x00 DIALOGUE_END \x9c\x02 SEQ01
 \x1f\xda\x01 CALL3 \x08\x02 REF_END1 
-LOAD3 SCEG01_003\x00\x1f\xbe\x04 REF_END2 
+LOAD3 SCEG01_003 REF6 \xbe\x04 REF_END2 
 DIALOGUE_1 (\xc5\x01\x0c\x00\x00\x00\x00"\x03H\x00\x00
  
 　指が、そっと拓司の顎に触れた。@

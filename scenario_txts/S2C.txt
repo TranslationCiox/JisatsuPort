@@ -6,7 +6,7 @@ LOAD4 BgAutoFadeIn REF3 J\x00 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x04\x
 
 LOAD6 .\\Data\\Script\\Bgm.Fob REF2 \x88\x00 REF_END2 
 LOAD2 PlayCD REF1 \xb2\x00 REF_END1 
-LOAD3 SCES02_001\x00\x1f\xce\x00 REF_END2 
+LOAD3 SCES02_001 REF6 \xce\x00 REF_END2 
 DIALOGUE_1 \xa8\xb5\x01\x0c\x00\x00\x00\x00"\x03p\x00\x00
  
 早桃には、子供の頃から空想のお友達がいたの。@
@@ -21,7 +21,7 @@ DIALOGUE_1 \xa8\xb5\x01\x0c\x00\x00\x00\x00"\x03p\x00\x00
 \x00\x00\x00 DIALOGUE_END \x12\x01 SEQ01
 LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xf2\x02 REF_END2 
 LOAD2 TextOn REF1  \x03 REF_END1 
-LOAD3 SCES02_002\x00\x1f<\x03 REF_END2 
+LOAD3 SCES02_002 REF6 <\x03 REF_END2 
 DIALOGUE_1 \xac\xb5\x01\x0c\x00\x00\x00\x00"\x03\xaa\x00\x00
  
 それでね、しゃべるときは言葉の最後に『ニャ』ってつけるの。@

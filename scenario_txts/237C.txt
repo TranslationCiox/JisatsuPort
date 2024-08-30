@@ -1,6 +1,6 @@
 START_FILE
 \xf6\n\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xf8\x08\x00
-LOAD3 SCE237_001\x00\x1f\x06\x00 REF_END2 
+LOAD3 SCE237_001 REF6 \x06\x00 REF_END2 
 DIALOGUE_1 \xf0\x81\x01\x0c\x00\x00\x00\x00"\x03s\x00\x00
  
 教授\n　「もう大丈夫だ。\p私を信じたまえ。\pこの世界を信じたまえ。@
@@ -17,7 +17,7 @@ DIALOGUE_1 \xf0\x81\x01\x0c\x00\x00\x00\x00"\x03s\x00\x00
 \x00\x00\x00 DIALOGUE_END J\x00 SEQ01
 LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 6\x02 REF_END2 
 LOAD2 TextOn REF1 d\x02 REF_END1 
-LOAD3 SCE237_002\x00\x1f\x80\x02 REF_END2 
+LOAD3 SCE237_002 REF6 \x80\x02 REF_END2 
 DIALOGUE_1 \xf4\x81\x01\x0c\x00\x00\x00\x00"\x03\x98\x00\x00
  
 /*▲SE03　１回再生（再生終了を待たず先へ）*/\a2,0,3,0,　キキキキキ……キイキイ……キキキ……キキ……キ@
@@ -32,7 +32,7 @@ DIALOGUE_1 \xf4\x81\x01\x0c\x00\x00\x00\x00"\x03\x98\x00\x00
 
 \x00 DIALOGUE_END \xc4\x02 SEQ01
 \x1f6\x02 CALL3 d\x02 REF_END1 
-LOAD3 SCE237_003\x00\x1f^\x05 REF_END2 
+LOAD3 SCE237_003 REF6 ^\x05 REF_END2 
 DIALOGUE_1 \xf8\x81\x01\x0c\x00\x00\x00\x00"\x03\x91\x00\x00
  
 /*▲SE03　１回再生（終了を待たず先へ）*/\a2,0,3,0,　キキキキキ……キイキイ……キキキ……キキ……キ@

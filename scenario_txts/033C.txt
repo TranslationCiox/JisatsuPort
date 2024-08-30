@@ -6,7 +6,7 @@ LOAD4 BgAutoFadeIn REF3 J\x00 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x08\x
 
 LOAD6 .\\Data\\Script\\Bgm.Fob REF2 \x88\x00 REF_END2 
 LOAD2 PlayCD REF1 \xb2\x00 REF_END1 
-LOAD3 SCE033_001\x00\x1f\xce\x00 REF_END2 
+LOAD3 SCE033_001 REF6 \xce\x00 REF_END2 
 DIALOGUE_1 0C DIALOGUE_2 G\x00\x00
  
 拭ったように、視界からさっと血の色が消え失せた。@
@@ -19,7 +19,7 @@ DIALOGUE_1 0C DIALOGUE_2 G\x00\x00
 \x00 DIALOGUE_END \x12\x01 SEQ01
 LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 N\x02 REF_END2 
 LOAD2 TextOn REF1 |\x02 REF_END1 
-LOAD3 SCE033_002\x00\x1f\x98\x02 REF_END2 
+LOAD3 SCE033_002 REF6 \x98\x02 REF_END2 
 DIALOGUE_1 4C DIALOGUE_2 \xd8\x00\x00
  
 \n月代カンナは両手を首元に回し、すっと、髪の毛を後ろに掻き上\nげた。\p細い首筋があらわになる。\pどこかで見たことがある光景だ\nった。@
@@ -35,7 +35,7 @@ DIALOGUE_1 4C DIALOGUE_2 \xd8\x00\x00
 
 \x00 DIALOGUE_END \xdc\x02 SEQ01
 \x1fN\x02 CALL3 |\x02 REF_END1 
-LOAD3 SCE033_003\x00\x1fv\x06 REF_END2 
+LOAD3 SCE033_003 REF6 v\x06 REF_END2 
 DIALOGUE_1 8C DIALOGUE_2 k\x00\x00
  
 思って拓司は足が震えるのを禁じ得なかった。@
@@ -51,7 +51,7 @@ DIALOGUE_1 8C DIALOGUE_2 k\x00\x00
 \x1fN\x02 CALL3 |\x02 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x06\x01 SEQ01
 \x1f\x88\x00 CALL3 \xb2\x00 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00 SEQ01
 \x1f \x00 CALL3 J\x00 REF_END1 
-LOAD3 SCE033_004\x00\x1f\x08\t REF_END2 
+LOAD3 SCE033_004 REF6 \x08\t REF_END2 
 DIALOGUE_1 <C DIALOGUE_2 \x8b\x00\x00
  
 カンナ\n　「ええ。\p旧校舎の地下にある……いえ、あった保健室の話なん\n　　だけれどね。\p１４年前、ある事件が起こって、入り口がコン\n　　クリートで固められて封印されたっていう」@
@@ -64,7 +64,7 @@ DIALOGUE_1 <C DIALOGUE_2 \x8b\x00\x00
 
 \x00 DIALOGUE_END L\t SEQ01
 \x1fN\x02 CALL3 |\x02 REF_END1 
-LOAD3 SCE033_005\x00\x1f\xb2\x0b REF_END2 
+LOAD3 SCE033_005 REF6 \xb2\x0b REF_END2 
 DIALOGUE_1 @C DIALOGUE_2 \xb0\x00\x00
  
 拓司\n　「まさか……本当にあった話なのか？」@
@@ -76,7 +76,7 @@ DIALOGUE_1 @C DIALOGUE_2 \xb0\x00\x00
 
 \x00\x00\x00 DIALOGUE_END \xf6\x0b SEQ01
 \x1fN\x02 CALL3 |\x02 REF_END1 
-LOAD3 SCE033_006\x00\x1f\xf0\x0e REF_END2 
+LOAD3 SCE033_006 REF6 \xf0\x0e REF_END2 
 DIALOGUE_1 DC DIALOGUE_2 W\x00\x00
  
 拓司\n　「中央線とか、樹海とか」@
@@ -87,7 +87,7 @@ DIALOGUE_1 DC DIALOGUE_2 W\x00\x00
 
 \x00\x00\x00 DIALOGUE_END 4\x0f SEQ01
 \x1fN\x02 CALL3 |\x02 REF_END1 
-LOAD3 SCE033_007\x00\x1f\xca\x10 REF_END2 
+LOAD3 SCE033_007 REF6 \xca\x10 REF_END2 
 DIALOGUE_1 HC DIALOGUE_2 \x86\x00\x00
  
 \n拓司は思わずカンナの顔に見入った。@
@@ -97,7 +97,7 @@ DIALOGUE_1 HC DIALOGUE_2 \x86\x00\x00
 \z
 \x00\x00\x00 DIALOGUE_END \x0e\x11 SEQ01
 \x1fN\x02 CALL3 |\x02 REF_END1 
-LOAD3 SCE033_008\x00\x1f`\x13 REF_END2 
+LOAD3 SCE033_008 REF6 `\x13 REF_END2 
 DIALOGUE_1 LC DIALOGUE_2 {\x00\x00
  
 カンナ\n　「人魂の噂は、１４年前、すでに学校にあった……」@
@@ -109,7 +109,7 @@ DIALOGUE_1 LC DIALOGUE_2 {\x00\x00
 
 \x00 DIALOGUE_END \xa4\x13 SEQ01
 \x1fN\x02 CALL3 |\x02 REF_END1 
-LOAD3 SCE033_009\x00\x1f\xca\x15 REF_END2 
+LOAD3 SCE033_009 REF6 \xca\x15 REF_END2 
 DIALOGUE_1 PC DIALOGUE_2 \x91\x00\x00
  
 カンナ\n　「彼らはみな、人魂が『最後は保健室の中に消えていった』と\n　　証言している。\pそして『人魂は綺麗で、少しも怖くなかった\n　　どちらかとういうと、見ていて落ち着く感じがした』って。@
@@ -119,7 +119,7 @@ DIALOGUE_1 PC DIALOGUE_2 \x91\x00\x00
 \z
 \x00 DIALOGUE_END \x0e\x16 SEQ01
 \x1fN\x02 CALL3 |\x02 REF_END1 
-LOAD3 SCE033_010\x00\x1f\x8c\x18 REF_END2 
+LOAD3 SCE033_010 REF6 \x8c\x18 REF_END2 
 DIALOGUE_1 TC DIALOGUE_2 k\x00\x00
  
 カンナ\n　「人魂じゃないのかもしれないわね。\pなにかの象徴……だと思\n　　う」@
@@ -134,7 +134,7 @@ DIALOGUE_1 TC DIALOGUE_2 k\x00\x00
 
 \x00 DIALOGUE_END \xd0\x18 SEQ01
 \x1fN\x02 CALL3 |\x02 REF_END1 
-LOAD3 SCE033_011\x00\x1f\xb6\x1a REF_END2 
+LOAD3 SCE033_011 REF6 \xb6\x1a REF_END2 
 DIALOGUE_1 XC DIALOGUE_2 \xbc\x00\x00
  
 　月代カンナはポケットから煙草をとりだして、それを口にくわ\n　えた。@
@@ -147,7 +147,7 @@ DIALOGUE_1 XC DIALOGUE_2 \xbc\x00\x00
 
 \x00 DIALOGUE_END \xfa\x1a SEQ01
 \x1fN\x02 CALL3 |\x02 REF_END1 
-LOAD3 SCE033_012\x00\x1f$\x1e REF_END2 
+LOAD3 SCE033_012 REF6 $\x1e REF_END2 
 DIALOGUE_1 \\C DIALOGUE_2 \x8f\x00\x00
  
 カンナ\n　「かけたかしら？」@
@@ -161,7 +161,7 @@ DIALOGUE_1 \\C DIALOGUE_2 \x8f\x00\x00
 
 \x00\x00\x00 DIALOGUE_END h\x1e SEQ01
 \x1fN\x02 CALL3 |\x02 REF_END1 
-LOAD3 SCE033_013\x00\x1f\xde  REF_END2 
+LOAD3 SCE033_013 REF6 \xde  REF_END2 
 DIALOGUE_1 `C DIALOGUE_2 |\x00\x00
  
 拓司\n　「……くだらない」@
@@ -173,7 +173,7 @@ DIALOGUE_1 `C DIALOGUE_2 |\x00\x00
 
 \x00\x00\x00 DIALOGUE_END "! SEQ01
 \x1fN\x02 CALL3 |\x02 REF_END1 
-LOAD3 SCE033_014\x00\x1fL# REF_END2 
+LOAD3 SCE033_014 REF6 L# REF_END2 
 DIALOGUE_1 dC DIALOGUE_2 -\x00\x00
  
 拓司\n　「裏切る？」@
@@ -186,7 +186,7 @@ DIALOGUE_1 dC DIALOGUE_2 -\x00\x00
 
 \x00\x00\x00 DIALOGUE_END \x90# SEQ01
 \x1fN\x02 CALL3 |\x02 REF_END1 
-LOAD3 SCE033_015\x00\x1f~$ REF_END2 
+LOAD3 SCE033_015 REF6 ~$ REF_END2 
 DIALOGUE_1 hC DIALOGUE_2 k\x00\x00
  
 真意を測ろうと、拓司はカンナの表情を探った。\p一瞬、そこには\n何かが宿っているようにも見えたが、結局、なにも見いだすこと\nはできなかった。\pカンナの顔にはいつもの、深い井戸を思わせる\n虚無がこびりついているだけだった。@

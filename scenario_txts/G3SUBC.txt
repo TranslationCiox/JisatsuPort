@@ -3,7 +3,7 @@ START_FILE
 
 LOAD6 .\\Data\\Script\\Bgm.Fob REF2  \x00 REF_END2 
 LOAD2 PlayCD REF1 J\x00 REF_END1 
-LOAD3 SCEG03_003\x00\x1ff\x00 REF_END2 
+LOAD3 SCEG03_003 REF6 f\x00 REF_END2 
 DIALOGUE_1 x\xc5\x01\x0c\x00\x00\x00\x00"\x03L\x00\x00
  
 　拓司の股間をゆっくりとなで回しながらいう。@
@@ -16,7 +16,7 @@ LOAD2 TextOn REF1 (\x02 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e_\x00 SEQ01
 
 LOAD6 .\\Data\\Script\\Bg.Fob REF3 ^\x02 REF_END2 
 LOAD4 BgAutoFadeIn REF3 \x88\x02 REF_END1 
-LOAD3 SCEG03_004\x00\x1f\xac\x02 REF_END2 
+LOAD3 SCEG03_004 REF6 \xac\x02 REF_END2 
 DIALOGUE_1 |\xc5\x01\x0c\x00\x00\x00\x00"\x03\x92\x00\x00
  
 　錦城は顔を拓司の股間に埋めて、口だけを使ってペ○スを引き\nずり出した。@

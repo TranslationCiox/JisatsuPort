@@ -1,6 +1,6 @@
 START_FILE
 E\x1d\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x000\x16\x00
-LOAD3 SCEK14_A01\x00\x1f\x06\x00 REF_END2 
+LOAD3 SCEK14_A01 REF6 \x06\x00 REF_END2 
 DIALOGUE_1 @\xaf\x01\x0c\x00\x00\x00\x00"\x03R\x00\x00
  
 変な味がするといやだったから、マーマレードジャムもスプーン\nひとさじぶん添えた。@
@@ -15,7 +15,7 @@ LOAD4 BgAutoFadeIn REF3 @\x02 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x04\x
 
 LOAD6 .\\Data\\Script\\Bgm.Fob REF2 ~\x02 REF_END2 
 LOAD2 PlayCD REF1 \xa8\x02 REF_END1 
-LOAD3 SCEK14_A02\x00\x1f\xc4\x02 REF_END2 
+LOAD3 SCEK14_A02 REF6 \xc4\x02 REF_END2 
 DIALOGUE_1 D\xaf\x01\x0c\x00\x00\x00\x00"\x03\xa8\x00\x00
  
 私とゆきはそれらを一気に食べて、そしてベッドに横になって話\nをした。@
@@ -28,7 +28,7 @@ DIALOGUE_1 D\xaf\x01\x0c\x00\x00\x00\x00"\x03\xa8\x00\x00
 \x00 DIALOGUE_END \x08\x03 SEQ01
 \x1f\xb2\x01 CALL3 \xe0\x01 CALL2 ~\x02 REF_END2 
 LOAD2 StopCD REF1 \xee\x05 REF_END1 
-LOAD3 SCEK14_A03\x00\x1f\n\x06 REF_END2 
+LOAD3 SCEK14_A03 REF6 \n\x06 REF_END2 
 DIALOGUE_1 H\xaf\x01\x0c\x00\x00\x00\x00"\x03\\\x00\x00
  
 いつのまにかゆきちゃんも話すのをやめていた。@
@@ -42,7 +42,7 @@ DIALOGUE_1 H\xaf\x01\x0c\x00\x00\x00\x00"\x03\\\x00\x00
 \x1f\xb2\x01 CALL3 \xe0\x01 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xcb\x00 SEQ01
 \x1f\x16\x02 CALL3 @\x02 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\n\x01 SEQ01
 \x1f~\x02 CALL3 \xa8\x02 REF_END1 
-LOAD3 SCEK14_A04\x00\x1f`\x08 REF_END2 
+LOAD3 SCEK14_A04 REF6 `\x08 REF_END2 
 DIALOGUE_1 L\xaf\x01\x0c\x00\x00\x00\x00"\x03\x81\x00\x00
  
 しばらくすると猛烈な吐き気が襲ってきて、私はお腹の中のもの\nをベッドの上にすべて吐き出した。@
@@ -55,7 +55,7 @@ DIALOGUE_1 L\xaf\x01\x0c\x00\x00\x00\x00"\x03\x81\x00\x00
 気持ちよく眠って死ねるはずだったのに、どうしてこんなに苦し\nんで死ななければならないの……？\w\z
 \x00 DIALOGUE_END \xa4\x08 SEQ01
 \x1f\xb2\x01 CALL3 \xe0\x01 REF_END1 
-LOAD3 SCEK14_A05\x00\x1f\xe2\n REF_END2 
+LOAD3 SCEK14_A05 REF6 \xe2\n REF_END2 
 DIALOGUE_1 P\xaf\x01\x0c\x00\x00\x00\x00"\x031\x00\x00
  
 　要するに私は薬を飲みすぎたのだった。@
@@ -63,7 +63,7 @@ DIALOGUE_1 P\xaf\x01\x0c\x00\x00\x00\x00"\x031\x00\x00
 \x00 DIALOGUE_END &\x0b SEQ01
 \x1f\xb2\x01 CALL3 \xe0\x01 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e?\x00 SEQ01
 \x1f\x16\x02 CALL3 @\x02 REF_END1 
-LOAD3 SCEK14_A06\x00\x1fX\x0c REF_END2 
+LOAD3 SCEK14_A06 REF6 X\x0c REF_END2 
 DIALOGUE_1 T\xaf\x01\x0c\x00\x00\x00\x00"\x03\\\x00\x00
  
 「ゆきちゃん！　ゆきちゃん！」@
@@ -75,7 +75,7 @@ DIALOGUE_1 T\xaf\x01\x0c\x00\x00\x00\x00"\x03\\\x00\x00
 /*■背景　黒　表示*/\a7,0,1,0,\a0,200,0,0,/*▲BGM　停止*/\a4,-1,0,0,\a6,0,0,0,そして病院で目を覚ました。\w\z
 \x00\x00\x00 DIALOGUE_END \x9c\x0c SEQ01
 \x1f\xb2\x01 CALL3 \xe0\x01 REF_END1 
-LOAD3 SCEK14_A07\x00\x1fF\x0e REF_END2 
+LOAD3 SCEK14_A07 REF6 F\x0e REF_END2 
 DIALOGUE_1 X\xaf\x01\x0c\x00\x00\x00\x00"\x03;\x00\x00
  
 　病院に連絡したのは、夕方、部屋に入ってきた清掃係のおばさ\nんだった。@
@@ -84,7 +84,7 @@ DIALOGUE_1 X\xaf\x01\x0c\x00\x00\x00\x00"\x03;\x00\x00
 そして私は生き残った。\w\z
 \x00 DIALOGUE_END \x8a\x0e SEQ01
 \x1f\xb2\x01 CALL3 \xe0\x01 REF_END1 
-LOAD3 SCEK14_A08\x00\x1f\xb0\x0f REF_END2 
+LOAD3 SCEK14_A08 REF6 \xb0\x0f REF_END2 
 DIALOGUE_1 \\\xaf\x01\x0c\x00\x00\x00\x00"\x03l\x00\x00
  
 あんなに穏やかで、あっさりと受け入れることができた死が、た\nまらなく怖くなっていた。@
@@ -96,7 +96,7 @@ DIALOGUE_1 \\\xaf\x01\x0c\x00\x00\x00\x00"\x03l\x00\x00
 \x00\x00\x00 DIALOGUE_END \xf4\x0f SEQ01
 \x1f\xb2\x01 CALL3 \xe0\x01 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x08\x01 SEQ01
 \x1f~\x02 CALL3 \xa8\x02 REF_END1 
-LOAD3 SCEK14_A09\x00\x1f\x12\x12 REF_END2 
+LOAD3 SCEK14_A09 REF6 \x12\x12 REF_END2 
 DIALOGUE_1 `\xaf\x01\x0c\x00\x00\x00\x00"\x03e\x00\x00
  
 この世界には所属しない呪われた地平にあって、そことここを隔\nてる錆びた門を力ずくで押し開いてやってくるもの。@
@@ -109,7 +109,7 @@ DIALOGUE_1 `\xaf\x01\x0c\x00\x00\x00\x00"\x03e\x00\x00
 「つかまえたぞ。もうお前は逃げられないんだぞ」と。\w\z
 \x00\x00\x00 DIALOGUE_END V\x12 SEQ01
 \x1f\xb2\x01 CALL3 \xe0\x01 REF_END1 
-LOAD3 SCEK14_A10\x00\x1f$\x14 REF_END2 
+LOAD3 SCEK14_A10 REF6 $\x14 REF_END2 
 DIALOGUE_1 d\xaf\x01\x0c\x00\x00\x00\x00"\x03Y\x00\x00
  
 気取らずにいえば、窒息しそうになったときの恐怖と胃洗浄の苦\nしさが、そのまま死のイメージとなって私に取り憑いたのだろう。\n\p死は怖いものだ。\pいまはそう思っている。@

@@ -1,6 +1,6 @@
 START_FILE
 \xc1\x06\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x004\x05\x00
-LOAD3 SCE072_001\x00\x1f\x06\x00 REF_END2 
+LOAD3 SCE072_001 REF6 \x06\x00 REF_END2 
 DIALOGUE_1 \x90~ DIALOGUE_2 \\\x00\x00
  
 拓司の返事に、なたねはやれやれと肩をすくめてみせた。@
@@ -13,7 +13,7 @@ LOAD2 TextOn REF1 \x08\x02 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x0b\x01 
 
 LOAD6 .\\Data\\Script\\Bgm.Fob REF2 >\x02 REF_END2 
 LOAD2 PlayCD REF1 h\x02 REF_END1 
-LOAD3 SCE072_002\x00\x1f\x84\x02 REF_END2 
+LOAD3 SCE072_002 REF6 \x84\x02 REF_END2 
 DIALOGUE_1 \x94~ DIALOGUE_2 x\x00\x00
  
 際限のないなたねの妄想話を振り切って、拓司は早桃の手を引い\nた。\pそのまま１階に駆け下りて、玄関から中庭に走り出す。@

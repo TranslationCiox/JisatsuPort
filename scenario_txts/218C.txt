@@ -1,6 +1,6 @@
 START_FILE
 \xc1\t\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xe0\x07\x00
-LOAD3 SCE218_001\x00\x1f\x06\x00 REF_END2 
+LOAD3 SCE218_001 REF6 \x06\x00 REF_END2 
 DIALOGUE_1 @d\x01\x0c\x00\x00\x00\x00"\x036\x00\x00
  
 拓司\n　「やめろ、御堂！」@
@@ -12,7 +12,7 @@ DIALOGUE_1 @d\x01\x0c\x00\x00\x00\x00"\x036\x00\x00
 \x00 DIALOGUE_END J\x00 SEQ01
 LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 B\x01 REF_END2 
 LOAD2 TextOn REF1 p\x01 REF_END1 
-LOAD3 SCE218_002\x00\x1f\x8c\x01 REF_END2 
+LOAD3 SCE218_002 REF6 \x8c\x01 REF_END2 
 DIALOGUE_1 Dd\x01\x0c\x00\x00\x00\x00"\x03x\x00\x00
  
 御堂\n　「勘違いするなよモヤシ小僧。\pお前が今まで物を決めてこられ\n　　たのはお前の力じゃなくて俺の力なんだよ。\p俺がお前を許し\n　　ていたからお前は自由に行動できたんだよ。\pでもこれからは\n　　違うぞ。\pこれからは俺の許可無しでなにもさせやしねえから\n　　な。\pいいか、なにもだ！」@
@@ -26,7 +26,7 @@ DIALOGUE_1 Dd\x01\x0c\x00\x00\x00\x00"\x03x\x00\x00
 
 LOAD6 .\\Data\\Script\\Bg.Fob REF3 \x04\x04 REF_END2 
 LOAD4 BgAutoFadeIn REF3 .\x04 REF_END1 
-LOAD3 SCE218_003\x00\x1fR\x04 REF_END2 
+LOAD3 SCE218_003 REF6 R\x04 REF_END2 
 DIALOGUE_1 Hd\x01\x0c\x00\x00\x00\x00"\x03\x9b\x00\x00
  
 御堂はなたねの顔面に、容赦のないパンチを雨あられと降らせて\nいる。\p溜まり溜まったストレスをすべて叩き付けるように、な\nたねを殴り続ける。@

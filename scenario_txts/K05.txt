@@ -7,7 +7,7 @@ LOAD6 .\\Data\\Script\\Bg.Fob REF3 f\x00 REF_END2
 LOAD4 BgAutoFadeIn REF3 \x90\x00 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x04\x01 SEQ01
 \x1f\x06\x00 REF_END2 
 LOAD2 PlayCD REF1 \xda\x00 REF_END1 
-LOAD3 SCEK05_001\x00\x1f\xf6\x00 REF_END2 
+LOAD3 SCEK05_001 REF6 \xf6\x00 REF_END2 
 DIALOGUE_1 \x80\xa6\x01\x0c\x00\x00\x00\x00"\x03\x96\x00\x00
  
 　ゆきのそうしたやり方は、とても新鮮で、スマートに映った。@
@@ -20,7 +20,7 @@ DIALOGUE_1 \x80\xa6\x01\x0c\x00\x00\x00\x00"\x03\x96\x00\x00
 \x00 DIALOGUE_END :\x01 SEQ01
 LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xb2\x03 REF_END2 
 LOAD2 TextOn REF1 \xe0\x03 REF_END1 
-LOAD3 SCEK05_002\x00\x1f\xfc\x03 REF_END2 
+LOAD3 SCEK05_002 REF6 \xfc\x03 REF_END2 
 DIALOGUE_1 \x84\xa6\x01\x0c\x00\x00\x00\x00"\x03~\x00\x00
  
 　１ヶ月も経ったころ－－誤解を恐れずにいうけれど－－\n私は若草ゆきに恋していた。@
@@ -30,7 +30,7 @@ DIALOGUE_1 \x84\xa6\x01\x0c\x00\x00\x00\x00"\x03~\x00\x00
 若草ゆきに恋することで、私は、唐突に自分というものの輪郭を\nはっきり認識させられたのだった。\w\z
 \x00 DIALOGUE_END @\x04 SEQ01
 \x1f\xb2\x03 CALL3 \xe0\x03 REF_END1 
-LOAD3 SCEK05_003\x00\x1fr\x06 REF_END2 
+LOAD3 SCEK05_003 REF6 r\x06 REF_END2 
 DIALOGUE_1 \x88\xa6\x01\x0c\x00\x00\x00\x00"\x03_\x00\x00
  
 　私はこれまで何をやってきたのだろう？@
@@ -41,7 +41,7 @@ DIALOGUE_1 \x88\xa6\x01\x0c\x00\x00\x00\x00"\x03_\x00\x00
 けれども私が作り上げたのは城壁だけで、そのなかに城と呼べる\nものがなかったと……私は知った。\w\z
 \x00 DIALOGUE_END \xb6\x06 SEQ01
 \x1f\xb2\x03 CALL3 \xe0\x03 REF_END1 
-LOAD3 SCEK05_004\x00\x1fl\x08 REF_END2 
+LOAD3 SCEK05_004 REF6 l\x08 REF_END2 
 DIALOGUE_1 \x8c\xa6\x01\x0c\x00\x00\x00\x00"\x03p\x00\x00
  
 　むさぼるように本を読んで、映画を観て、音楽を聴いた。@
@@ -54,7 +54,7 @@ DIALOGUE_1 \x8c\xa6\x01\x0c\x00\x00\x00\x00"\x03p\x00\x00
 私のスタンスは、このころに形作られたのだと思う。\w\z
 \x00 DIALOGUE_END \xb0\x08 SEQ01
 \x1f\xb2\x03 CALL3 \xe0\x03 REF_END1 
-LOAD3 SCEK05_005\x00\x1f\xaa\n REF_END2 
+LOAD3 SCEK05_005 REF6 \xaa\n REF_END2 
 DIALOGUE_1 \x90\xa6\x01\x0c\x00\x00\x00\x00"\x03\x8e\x00\x00
  
 　私は、自分たちの関係は、周囲のおままごととは違うと思って\nいた。@

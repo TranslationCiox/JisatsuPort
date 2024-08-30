@@ -1,6 +1,6 @@
 START_FILE
 <\x10\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00>\r\x00
-LOAD3 SCE055_001\x00\x1f\x06\x00 REF_END2 
+LOAD3 SCE055_001 REF6 \x06\x00 REF_END2 
 DIALOGUE_1 \x90e DIALOGUE_2 \x98\x00\x00
  
 　拓司は胸のムカツキを必死に押さえた。@
@@ -14,7 +14,7 @@ DIALOGUE_1 \x90e DIALOGUE_2 \x98\x00\x00
 \x00 DIALOGUE_END J\x00 SEQ01
 LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xca\x02 REF_END2 
 LOAD2 TextOn REF1 \xf8\x02 REF_END1 
-LOAD3 SCE055_002\x00\x1f\x14\x03 REF_END2 
+LOAD3 SCE055_002 REF6 \x14\x03 REF_END2 
 DIALOGUE_1 \x94e DIALOGUE_2 \xcd\x00\x00
  
 なたね\n　「自殺っていうのは、自分がおかれている状況への絶望とかあ\n　　きらめとか、そんな悲しみの感情から生まれるでしょう？@
@@ -25,7 +25,7 @@ DIALOGUE_1 \x94e DIALOGUE_2 \xcd\x00\x00
 
 \x00 DIALOGUE_END X\x03 SEQ01
 \x1f\xca\x02 CALL3 \xf8\x02 REF_END1 
-LOAD3 SCE055_003\x00\x1f\xc6\x06 REF_END2 
+LOAD3 SCE055_003 REF6 \xc6\x06 REF_END2 
 DIALOGUE_1 \x98e DIALOGUE_2 \x80\x00\x00
  
 なたね\n　「……義妹さん、もともといじめられていたとか、そういうの\n　　あった？」@
@@ -39,7 +39,7 @@ DIALOGUE_1 \x98e DIALOGUE_2 \x80\x00\x00
 
 \x00 DIALOGUE_END \n\x07 SEQ01
 \x1f\xca\x02 CALL3 \xf8\x02 REF_END1 
-LOAD3 SCE055_004\x00\x1fD\t REF_END2 
+LOAD3 SCE055_004 REF6 D\t REF_END2 
 DIALOGUE_1 \x9ce DIALOGUE_2 t\x00\x00
  
 \nその様子をひとり静かに見守っていた男子学生が、大声でいった。\n@
@@ -51,7 +51,7 @@ DIALOGUE_1 \x9ce DIALOGUE_2 t\x00\x00
 
 \x00\x00\x00 DIALOGUE_END \x88\t SEQ01
 \x1f\xca\x02 CALL3 \xf8\x02 REF_END1 
-LOAD3 SCE055_005\x00\x1f\x92\x0b REF_END2 
+LOAD3 SCE055_005 REF6 \x92\x0b REF_END2 
 DIALOGUE_1 \x9ce DIALOGUE_2 A\x00\x00
  
 \n犯せえ！\p　という声が上がった。\pしかし男子学生はそれを片手で\n軽く制した。@
