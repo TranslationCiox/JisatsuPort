@@ -3,71 +3,59 @@ import os
 #SET_5\x1e\x02\x00\x003B_02 \x1e\x02\x00\x005  \x1e\x00\x00\x00\x00\r\x00\x00
 patterns = [
     {
-        "pattern": [b'\x00', b'\x1f', b'\xb6\x01', b'\x00', b'\x1e', b'\x02', b'\x00', b'\x00', b'5'],
-        # Used after loading FOB files and SCE calls and some long bytecode chains which might also contain something.
-        "action": " SCENARIO_END\n"
-    },
-    {
-        "pattern": [b'\x00', b'\x0c', b'\x02', b'\x00', b'\x00', b'"', b'\x1f'],
-        # Used after EVERY block of dialogue EVEN dialogue choice blocks.
+        "pattern": [b'\x00', b'\x0c', b'\x02',          b'\x00', b'\x00', b'"', b'\x1f'],
+        #
         "action": " CALL1 "
     },
     {
-        "pattern": [b'\x00', b'\x1e', b'\x02', b'\x00', b'\x00', b'5', b'\x1f'],
-        # Used in EVERY sequence with commands like e.g. NormalFadeIn
+        "pattern": [b'\x00', b'\x0c', b'\x02',          b'\x00', b'\x00', b'"'],
+        #
         "action": " CALL2 "
     },
-
     {
-        "pattern": [b'\x00', b'\x1e', b'\x02', b'\x00', b'\x00', b'\x1f'],
-        # Used in EVERY SCExx_xxx command.
-        "action": " CALL3 "
+        "pattern": [b'\x00', b'\x0c', b'\x00', b'\x00', b'\x00', b'\x00', b'"'],
+        #
+        "action": " CALL4 "
+    },
+    {
+        "pattern": [b'\x00', b'\x1e', b'\x02', b'\x00', b'\x00', b'5', b'\x1f'],
+        #
+        "action": " CALL5 "
     },
     {
         "pattern": [b'\x00', b'\x1e', b'\x02', b'\x00', b'\x00', b'5'],
-        # Used in EVERY sequence with commands like e.g. NormalFadeIn
-        "action": " REF_END1 "
+        #
+        "action": " CALL6 "
+    },
+    {
+        "pattern": [b'\x00', b'\x1e', b'\x02', b'\x00', b'\x00', b'\x1f'],
+        #
+        "action": " CALL7 "
     },
     {
         "pattern": [b'\x00', b'\x1e', b'\x02', b'\x00', b'\x00'],
-        # Used in EVERY SCExx_xxx command.
-        "action": " REF_END2 "
-    },
-    {
-        "pattern": [b'\x00', b'\x0c', b'\x02', b'\x00', b'\x00', b'"'],
-        # Used in EVERY SCExx_xxx command.
-        "action": " REF_END3 "
+        #
+        "action": " CALL8"
     },
     {
         "pattern": [b'\xef', b'!', b'\x1e', b'\x00', b'\x00', b'\x00', b'\x00', b'\r', b'\x00', b'\x00', b'\x1e'],
-        # Used in EVERY SCExx_xxx command.
+        #
         "action": "\nSEQ1 "
     },
     {
-        "pattern": [b'\x00', b'\r', b'\x02', b'\x1e'],
-        # Used in EVERY SCExx_xxx command.
-        "action": " SEQ2 "
-    },
-
-    {
-        "pattern": [b'\x00', b'\x0c', b'\x00', b'\x00', b'\x00', b'\x00', b'"'],
-        # Used in EVERY SCExx_xxx command.
-        "action": " SEQ3 "
+        "pattern": [b' ',          b'\x1e', b'\x00', b'\x00', b'\x00', b'\x00', b'\r', b'\x00', b'\x00', b'\x1e'],
+        #
+        "action": "\nSEQ2 "
     },
     {
-        "pattern": [b' ', b'\x1e', b'\x00', b'\x00', b'\x00', b'\x00', b'\r', b'\x00', b'\x00', b',', b'\x02'],
-        # Used in EVERY SCExx_xxx command.
-        "action": "\nSEQ4 "
+        "pattern": [b' ',          b'\x1e', b'\x00', b'\x00', b'\x00', b'\x00', b'\r', b'\x00', b'\x00'],
+        #
+        "action": "\nSEQ3 "
     },
     {
-        "pattern": [b' ', b'\x1e', b'\x00', b'\x00', b'\x00', b'\x00', b'\r', b'\x00', b'\x00', b'\x1e'],
-        # Used in EVERY SCExx_xxx command.
-        "action": "\nSEQ5 "
-    },
-    {
-        "pattern": [b' ', b'\x1e', b'\x00', b'\x00', b'\x00', b'\x00', b'\r', b'\x00'],
-        # Used in EVERY SCExx_xxx command.
-        "action": "\nSEQ6"
+        "pattern": [                                                   b'\x00', b'\r',          b'\x02', b'\x1e'],
+        #
+        "action": " SEQ4 "
     },
     {
         "pattern": [b'\x03', b'\x02', b'\x00', b'\x00'],
@@ -101,17 +89,17 @@ patterns = [
     },
     {
         "pattern": [b'\x03', b'\x08', b'\x00', b'\x00'],
-        # Scenario files e.g. 029C.Fob
+        #
         "action": "\nLOAD8 "
     },
     {
         "pattern": [b'\x03', b'\n', b'\x00', b'\x00'],
-        # Scenario files e.g. 029C.Fob
+        #
         "action": "\nLOAD9 "
     },
     {
         "pattern": [b'\x03', b'\t', b'\x00', b'\x00'],
-        # Scenario files e.g. 029C.Fob
+        #
         "action": "\nLOAD0 "
     },
 
@@ -129,7 +117,7 @@ patterns = [
     },
     {
         "pattern": [b'sv\x81\x1f'],
-        # Seems to load files.
+        #
         "action": " REF3 "
     },
     {
@@ -150,12 +138,15 @@ patterns = [
     {
         "pattern": [b'\x1f'],
         #
-        "action": " REF7 "
+        "action": "REF7 "
+    },
+    {
+        "pattern": [b',', b'\x02'],
+        #
+        "action": "CHOICE "
     },
 
-
     ########################### Special ###########################
-
     {
         "pattern": [b'\x01', b'\x00', b'\x00', b'start', b'\xef', b'i\x01C'],
         # Start the script
@@ -200,8 +191,8 @@ def save_text(lines, output_path):
 
             if line.decode("932", errors='ignore')[0:2] == "\e":
                 line = line.decode("932", errors='ignore')
-                line = line.replace("\\e\\o", "\nCHOICE\n")
-                line = line.replace("\\E\\z", "\nENDCHOICE\n")
+                line = line.replace("\\e\\o", "\nDIALOGUE_CHOICE_START\n")
+                line = line.replace("\\E\\z", "\nDIALOGUE_CHOICE_END\n")
                 line = line.replace("\\e", "\n \n")
                 line = line.replace("\\p\\n", "@\n")
                 line = line.replace("\\w\\n\\z", "\\\n")
@@ -246,132 +237,3 @@ def process_files(input_dir="scripts", output_dir="scripts_txts"):
 # Run the processing function
 process_files(input_dir="scenario", output_dir="scenario_txts")
 process_files(input_dir="scripts", output_dir="scripts_txts")
-
-# {
-#     "pattern": [b'\x00', b'\x00', b'\x00', b'\x00', b'\r', b'\x00', b'\x00', b',', b'\x02'],
-#     # Seems to be used for 3 byte data.
-#     "action": "\nVAR_3B "
-# },
-# {
-#     "pattern": [b'\x00', b'\x00', b'\x00', b'\x00', b'\r', b'\x00', b'\x00'],
-#     # Seems to be used for 2 byte data. Not addresses but numbers.
-#     "action": "\nVAR_2B"
-# },
-# {
-#     "pattern": [b'\x00', b'\x0c', b'\x00', b'\x00', b'\x00', b'\x00', b'"'],
-#     "action": " SEQ06 "
-# },
-# {
-#     "pattern": [b'\x02', b'\x00', b'\x00', b'5', b'\x03', b'\x03', b'\x00', b'\x00'],
-#     # Used before SCExxx_xxx scenario calls. Scenario indicators in the scenarios.
-#     "action": "\nS_STR "
-# },
-# {
-#     "pattern": [b'\x02', b'\x00', b'\x00', b'5', b' '],
-#     # Used at the end of certain commands like StopCD, WaitTime, SeStop
-#     "action": "C_END "
-# },
-# {
-#     "pattern": [b'\x00', b'\x0c', b'\x02', b'\x00', b'\x00', b'"'],
-#     # Used after VAR01 and the bytecode after it. Maybe to set it?
-#     "action": " SET01 "
-# },
-# {
-#     "pattern": [b'\x02', b'\x00', b'\x00', b'\x03', b'\x02', b'\x00', b'\x00'],
-#     # Often times used before commands
-#     "action": "\nCMD01 "
-# },
-# {
-#     "pattern": [b'\x02', b'\x00', b'\x00', b'\x03', b'\x04', b'\x00', b'\x00'],
-#     # Used before BgNormalFadeIn
-#     "action": "\nCMD02 "
-# },
-# {
-#     "pattern": [b'\x8c\x01', b'\x00', b'\r', b'\x02'],
-#     # Used after the VAR01 for Text it seems. Might be the dialoguebox?
-#     "action": "TXT1"
-# },
-# {
-#     "pattern": [b'\x02', b'\x00', b'\x00', b'\xef', b'!'],
-#     # Used after SCExxx_xxx scenario calls.
-#     "action": "S_END"
-# },
-# {
-#     "pattern": [b'\x02', b'\x00', b'\x00', b'"'],
-#     "action": "\nSEQ05 "
-# },
-# {
-#     "pattern": [b'\x02', b'\x00', b'\x00', b'5'],
-#     # Used a lot before 4 Byte addresses. Might be the address for 4 Byte data
-#     "action": "\nADDRES_4B "
-# },
-
-# {
-#     "pattern": [b'\x03', b'\x06', b'\x00', b'\x00'],
-#     # Used before files
-#     "action": "FILE1 "
-# },
-# {
-#     "pattern": [b'\x03', b'\x07', b'\x00', b'\x00'],
-#     # Used before calling TextFunc.FOB
-#     "action": "FILE2 "
-# },
-# {
-#     "pattern": [b'\xb6\x01', b'\x00'],
-#     # Used in SCENARIOROOT to end each scenario. Probably set with "CMD01 start COMMAND_TO_BYTECODE3 SCENARIO_start."
-#     "action": "SCENARIO_START"
-# },
-#
-# {
-#     "pattern": [b'j', b'\x00', b'\x00'],
-#     # Seems to be related to choices in the game. Scenario flags.
-#     "action": "SFLAG"
-# },
-#
-# {
-#     "pattern": [b'\x03', b'\x03', b'\x00', b'\x00'],
-#     # Used before SePlayEx, TextClose, WaitTime
-#     "action": "\nCMD03 "
-# },
-# {
-#     "pattern": [b'\x03', b'\x05', b'\x00', b'\x00'],
-#     # Used before TextWindowOffDirect, InitGameFlagBuffer
-#     "action": "\nCMD04 "
-# },
-# {
-#     "pattern": [b'\x03', b'\x08', b'\x00', b'\x00'],
-#     # Used before Scenario load calls
-#     "action": "SCEN_LOAD "
-# },
-# {
-#     "pattern": [b'\x00', b'\x0c'],
-#     "action": " SEQ15 "
-# },
-# {
-#     "pattern": [b'\xde\x02', b'\x00'],
-#     # Like a series of bytecode used to get the last choice due to
-#     # "CMD02 GetLastTxtID COMMAND_TO_BYTECODE1 GET_TEXTID C_END"
-#     "action": "GET_TEXTID"
-# },
-
-# {
-#     "pattern": [b'\x1e'],
-#     # Likely a  delimiter (group)
-#     "action": " "
-# },
-# {
-#     "pattern": [b'\x1f'],
-#     # Likely a delimiter (record)
-#     "action": " "
-# },
-
-# {
-#     "pattern": [b'\x00', b'\x00', b'\x00', b'\x00'],
-#     # Script file have lots of 0 padding around functions. This is to make those files clearer.
-#     "action": "\n"
-# },
-# {
-#     "pattern": [b'\x02', b'\x00', b'\x00', b'5', b'6', b'\xf1', b'\x00'],
-#     # End the script
-#     "action": "\nF_END"
-# },

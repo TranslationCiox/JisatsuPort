@@ -1,10 +1,10 @@
 START_FILE
 \xa2\x14\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xfc\x10\x00
-SEQ5 \x08\x01 REF_END3 
-LOAD6 .\\Data\\Script\\Bgm.Fob REF2  \x00 REF_END2 
-LOAD2 PlayCD REF1 J\x00 REF_END1 
-LOAD3 SCE041_001 REF6 f\x00 REF_END2 
-SEQ1 \x8c\x01 SEQ2  N SEQ3 \x03x\x00\x00
+SEQ2 \x08\x01 CALL2 
+LOAD6 .\\Data\\Script\\Bgm.Fob REF2  \x00 CALL8
+LOAD2 PlayCD REF1 J\x00 CALL6 
+LOAD3 SCE041_001 REF6 f\x00 CALL8
+SEQ1 \x8c\x01 SEQ5  N CALL4 \x03x\x00\x00
  
 拓司\n　「早桃。\pおれもお前が好きだ。@
 　　義理の兄貴としてじゃなくて－－」@
@@ -17,11 +17,11 @@ SEQ1 \x8c\x01 SEQ2  N SEQ3 \x03x\x00\x00
 やがて早桃はポツリといった。\
 
 \x00\x00\x00
-SEQ6 REF6 \xaa\x00 REF_END3 
-LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 \xaa\x02 REF_END2 
-LOAD2 TextOn REF1 \xd8\x02 REF_END1 
-LOAD3 SCE041_002 REF6 \xf4\x02 REF_END2 
-SEQ1 \x8c\x01 SEQ2 $N SEQ3 \x03;\x00\x00
+SEQ3 REF7 \xaa\x00 CALL2 
+LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 \xaa\x02 CALL8
+LOAD2 TextOn REF1 \xd8\x02 CALL6 
+LOAD3 SCE041_002 REF6 \xf4\x02 CALL8
+SEQ1 \x8c\x01 SEQ5 $N CALL4 \x03;\x00\x00
  
 早桃\n　「早桃はおにいちゃんのことが好き。@
 　　おにいちゃんも、早桃のこと好きだっていってくれる。@
@@ -30,13 +30,13 @@ SEQ1 \x8c\x01 SEQ2 $N SEQ3 \x03;\x00\x00
 \n早桃は小さく首を横に振った。\
 
 \x00\x00\x00
-SEQ6 REF6 8\x03 CALL1 \xaa\x02 CALL3 \xd8\x02 CALL2  \x00 REF_END2 
-LOAD2 StopCD REF1 j\x04 REF_END1 
-SEQ5 \xc8\x00 REF_END3 
-LOAD6 .\\Data\\Script\\Bg.Fob REF3 \xa0\x04 REF_END2 
-LOAD2 BgOn REF3 \xca\x04 REF_END1 
-LOAD3 SCE041_003 REF6 \xe6\x04 REF_END2 
-SEQ1 \x8c\x01 SEQ2 (N SEQ3 \x03\xa3\x00\x00
+SEQ3 REF7 8\x03 CALL1 \xaa\x02 CALL7 \xd8\x02 CALL5  \x00 CALL8
+LOAD2 StopCD REF1 j\x04 CALL6 
+SEQ2 \xc8\x00 CALL2 
+LOAD6 .\\Data\\Script\\Bg.Fob REF3 \xa0\x04 CALL8
+LOAD2 BgOn REF3 \xca\x04 CALL6 
+LOAD3 SCE041_003 REF6 \xe6\x04 CALL8
+SEQ1 \x8c\x01 SEQ5 (N CALL4 \x03\xa3\x00\x00
  
 早桃\n　「ううん。\pそんなことじゃないの。@
 　　そんなのは、どうでもいいこと。@
@@ -51,9 +51,9 @@ SEQ1 \x8c\x01 SEQ2 (N SEQ3 \x03\xa3\x00\x00
 　　だから、おにいちゃんと恋人にはなれないの。\pわかる？」\
 
 \x00\x00\x00
-SEQ6 REF6 *\x05 CALL1 \xaa\x02 CALL3 \xd8\x02 REF_END1 
-LOAD3 SCE041_004 REF6 \xf0\x07 REF_END2 
-SEQ1 \x8c\x01 SEQ2 ,N SEQ3 \x03\x8e\x00\x00
+SEQ3 REF7 *\x05 CALL1 \xaa\x02 CALL7 \xd8\x02 CALL6 
+LOAD3 SCE041_004 REF6 \xf0\x07 CALL8
+SEQ1 \x8c\x01 SEQ5 ,N CALL4 \x03\x8e\x00\x00
  
 わからなかった。@
 しかし、拓司は、わからないということが、どうしてもできなか\nった。@
@@ -68,10 +68,10 @@ SEQ1 \x8c\x01 SEQ2 ,N SEQ3 \x03\x8e\x00\x00
 拓司\n　「ああ？」\
 
 \x00
-SEQ6 REF6 4\x08 CALL1 \xaa\x02 CALL3 \xd8\x02 REF_END1 
-SEQ5 \t\x01 CALL1  \x00 CALL3 J\x00 REF_END1 
-LOAD3 SCE041_005 REF6 \xda\n REF_END2 
-SEQ1 \x8c\x01 SEQ2 0N SEQ3 \x03m\x00\x00
+SEQ3 REF7 4\x08 CALL1 \xaa\x02 CALL7 \xd8\x02 CALL6 
+SEQ2 \t\x01 CALL1  \x00 CALL7 J\x00 CALL6 
+LOAD3 SCE041_005 REF6 \xda\n CALL8
+SEQ1 \x8c\x01 SEQ5 0N CALL4 \x03m\x00\x00
  
 早桃\n　「あのね、早桃、お昼休みが怖かったの」@
 拓司\n　「？」@
@@ -82,9 +82,9 @@ SEQ1 \x8c\x01 SEQ2 0N SEQ3 \x03m\x00\x00
 　　もうちょっとで終わるかなって、時計を見るとまだ５分くらい\n　　しか過ぎてなくって。」\
 
 \x00\x00\x00
-SEQ6 REF6 \x1e\x0b CALL1 \xaa\x02 CALL3 \xd8\x02 REF_END1 
-LOAD3 SCE041_006 REF6 \x0c\r REF_END2 
-SEQ1 \x8c\x01 SEQ2 4N SEQ3 \x03\x81\x00\x00
+SEQ3 REF7 \x1e\x0b CALL1 \xaa\x02 CALL7 \xd8\x02 CALL6 
+LOAD3 SCE041_006 REF6 \x0c\r CALL8
+SEQ1 \x8c\x01 SEQ5 4N CALL4 \x03\x81\x00\x00
  
 早桃\n　「あのね……\pみんな、お友達同士で席くっつけて、お弁当食べた\n　　りするでしょ？@
 　　そうするとね……\p早桃、ひとりなんだなあ、って。@
@@ -97,9 +97,9 @@ SEQ1 \x8c\x01 SEQ2 4N SEQ3 \x03\x81\x00\x00
 拓司\n　「早桃－－」\
 
 \x00\x00\x00
-SEQ6 REF6 P\r CALL1 \xaa\x02 CALL3 \xd8\x02 CALL2  \x00 CALL3 j\x04 REF_END1 
-LOAD3 SCE041_007 REF6 \xa8\x0f REF_END2 
-SEQ1 \x8c\x01 SEQ2 8N SEQ3 \x03+\x00\x00
+SEQ3 REF7 P\r CALL1 \xaa\x02 CALL7 \xd8\x02 CALL5  \x00 CALL7 j\x04 CALL6 
+LOAD3 SCE041_007 REF6 \xa8\x0f CALL8
+SEQ1 \x8c\x01 SEQ5 8N CALL4 \x03+\x00\x00
  
 早桃\n　「ありがと！　おにいちゃん！」@
 \n　早桃はそういって、さっと唇を拓司の頬に重ねた。@
@@ -107,6 +107,6 @@ SEQ1 \x8c\x01 SEQ2 8N SEQ3 \x03+\x00\x00
 早桃\n　「ダイスキだよ。……おにいちゃん」\
 
 \x00
-SEQ6 REF6 \xec\x0f CALL1 \xaa\x02 CALL3 \xd8\x02 CALL2 \xaa\x02 REF_END2 
-LOAD3 TextClose REF2 \xde\x10 REF_END1 
+SEQ3 REF7 \xec\x0f CALL1 \xaa\x02 CALL7 \xd8\x02 CALL5 \xaa\x02 CALL8
+LOAD3 TextClose REF2 \xde\x10 CALL6 
 END_FILE

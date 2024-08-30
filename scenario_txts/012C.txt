@@ -1,19 +1,19 @@
 START_FILE
 /%\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00`\x1e\x00
-LOAD3 SCE012_001 REF6 \x06\x00 REF_END2 
-SEQ1 \x8c\x01 SEQ2 `" SEQ3 \x03\x0e\x00\x00
+LOAD3 SCE012_001 REF6 \x06\x00 CALL8
+SEQ1 \x8c\x01 SEQ5 `" CALL4 \x03\x0e\x00\x00
  
 \n\n\n\n\n\n　　　　　　　　　　　『通学路』\
 
 \x00\x00\x00
-SEQ6 REF6 J\x00 REF_END3 
-LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 \xa2\x00 REF_END2 
-LOAD2 TextOn REF1 \xd0\x00 REF_END1 
-SEQ5 \x05\x01 REF_END3 
-LOAD6 .\\Data\\Script\\Bgm.Fob REF2 \x06\x01 REF_END2 
-LOAD2 PlayCD REF1 0\x01 REF_END1 
-LOAD3 SCE012_002 REF6 L\x01 REF_END2 
-SEQ1 \x8c\x01 SEQ2 d" SEQ3 \x03\x97\x00\x00
+SEQ3 REF7 J\x00 CALL2 
+LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 \xa2\x00 CALL8
+LOAD2 TextOn REF1 \xd0\x00 CALL6 
+SEQ2 \x05\x01 CALL2 
+LOAD6 .\\Data\\Script\\Bgm.Fob REF2 \x06\x01 CALL8
+LOAD2 PlayCD REF1 0\x01 CALL6 
+LOAD3 SCE012_002 REF6 L\x01 CALL8
+SEQ1 \x8c\x01 SEQ5 d" CALL4 \x03\x97\x00\x00
  
 　二つしか歳の離れていない、義妹という名の女。@
 　義兄という役割は、拓司が望んで担ったものではない。拓司が中\n　学に上がった時、親が再婚した。それだけのことだ。@
@@ -27,12 +27,12 @@ SEQ1 \x8c\x01 SEQ2 d" SEQ3 \x03\x97\x00\x00
 　そして二週間前、偶然ドアの隙間から見てしまった光景は、完全\n　に彼の我慢をうち砕いた。\
 
 \x00
-SEQ6 REF6 \x90\x01 CALL1 \xa2\x00 CALL3 \xd0\x00 REF_END1 
-SEQ5 L\x00 REF_END3 
-LOAD6 .\\Data\\Script\\Bg.Fob REF3 @\x04 REF_END2 
-LOAD4 BgAutoFadeIn REF3 j\x04 REF_END1 
-LOAD3 SCE012_003 REF6 \x8e\x04 REF_END2 
-SEQ1 \x8c\x01 SEQ2 h" SEQ3 \x03\x7f\x00\x00
+SEQ3 REF7 \x90\x01 CALL1 \xa2\x00 CALL7 \xd0\x00 CALL6 
+SEQ2 L\x00 CALL2 
+LOAD6 .\\Data\\Script\\Bg.Fob REF3 @\x04 CALL8
+LOAD4 BgAutoFadeIn REF3 j\x04 CALL6 
+LOAD3 SCE012_003 REF6 \x8e\x04 CALL8
+SEQ1 \x8c\x01 SEQ5 h" CALL4 \x03\x7f\x00\x00
  
 　義妹が、義兄である自分を思ってオナニーしている。@
 　それを知ってから、拓司のぼんやりとした世界は、急速にみだら\n　な色に染まっていった。@
@@ -44,9 +44,9 @@ SEQ1 \x8c\x01 SEQ2 h" SEQ3 \x03\x7f\x00\x00
 　あるいはそうした光景を意識的に作り上げて。\
 
 \x00\x00\x00
-SEQ6 REF6 \xd2\x04 CALL1 \xa2\x00 CALL3 \xd0\x00 REF_END1 
-LOAD3 SCE012_004 REF6 \x08\x07 REF_END2 
-SEQ1 \x8c\x01 SEQ2 l" SEQ3 \x03\x97\x00\x00
+SEQ3 REF7 \xd2\x04 CALL1 \xa2\x00 CALL7 \xd0\x00 CALL6 
+LOAD3 SCE012_004 REF6 \x08\x07 CALL8
+SEQ1 \x8c\x01 SEQ5 l" CALL4 \x03\x97\x00\x00
  
 　可憐で清純な義妹を、夢のなかで犯した。@
 　犯して犯して犯し抜いた。@
@@ -59,11 +59,11 @@ SEQ1 \x8c\x01 SEQ2 l" SEQ3 \x03\x97\x00\x00
 　いつものように早桃を犯している最中、はっと、それが夢ではな\n　いことに気づくのではないかと。\
 
 \x00\x00\x00
-SEQ6 REF6 L\x07 CALL1 \xa2\x00 CALL3 \xd0\x00 REF_END1 
-SEQ5 \xc8\x00 CALL1 @\x04 CALL3 j\x04 CALL2 \x06\x01 REF_END2 
-LOAD2 StopCD REF1 "\n REF_END1 
-LOAD3 SCE012_005 REF6 >\n REF_END2 
-SEQ1 \x8c\x01 SEQ2 p" SEQ3 \x03B\x00\x00
+SEQ3 REF7 L\x07 CALL1 \xa2\x00 CALL7 \xd0\x00 CALL6 
+SEQ2 \xc8\x00 CALL1 @\x04 CALL7 j\x04 CALL5 \x06\x01 CALL8
+LOAD2 StopCD REF1 "\n CALL6 
+LOAD3 SCE012_005 REF6 >\n CALL8
+SEQ1 \x8c\x01 SEQ5 p" CALL4 \x03B\x00\x00
  
 拓司\n　「最近、どうだ？」@
 \n拓司はいった。@
@@ -74,9 +74,9 @@ SEQ1 \x8c\x01 SEQ2 p" SEQ3 \x03B\x00\x00
 早桃\n　「上村さんでしょ？」\
 
 \x00
-SEQ6 REF6 \x82\n CALL1 \xa2\x00 CALL3 \xd0\x00 REF_END1 
-LOAD3 SCE012_006 REF6 \xc4\x0b REF_END2 
-SEQ1 \x8c\x01 SEQ2 t" SEQ3 \x03v\x00\x00
+SEQ3 REF7 \x82\n CALL1 \xa2\x00 CALL7 \xd0\x00 CALL6 
+LOAD3 SCE012_006 REF6 \xc4\x0b CALL8
+SEQ1 \x8c\x01 SEQ5 t" CALL4 \x03v\x00\x00
  
 拓司\n　「ああ、そうだったか。そのカミムラとかいう女、まだ……嫌が\n　　らせしてくるのか？」@
 早桃\n　「……ううん。もう、仲直りしたから」@
@@ -87,9 +87,9 @@ SEQ1 \x8c\x01 SEQ2 t" SEQ3 \x03v\x00\x00
 拓司\n　「ああ。ブン殴ってでもやめさせてやる」\
 
 \x00
-SEQ6 REF6 \x08\x0c CALL1 \xa2\x00 CALL3 \xd0\x00 REF_END1 
-LOAD3 SCE012_007 REF6 \x1a\x0e REF_END2 
-SEQ1 \x8c\x01 SEQ2 x" SEQ3 \x035\x00\x00
+SEQ3 REF7 \x08\x0c CALL1 \xa2\x00 CALL7 \xd0\x00 CALL6 
+LOAD3 SCE012_007 REF6 \x1a\x0e CALL8
+SEQ1 \x8c\x01 SEQ5 x" CALL4 \x035\x00\x00
  
 早桃\n　「守って……くれるんだ？」@
 拓司\n　「ああ。\pお前は優しすぎるんだよ。@
@@ -98,9 +98,9 @@ SEQ1 \x8c\x01 SEQ2 x" SEQ3 \x035\x00\x00
 早桃\n　「……そうかもね」\
 
 \x00
-SEQ6 REF6 ^\x0e CALL1 \xa2\x00 CALL3 \xd0\x00 REF_END1 
-LOAD3 SCE012_008 REF6 l\x0f REF_END2 
-SEQ1 \x8c\x01 SEQ2 |" SEQ3 \x03\xa2\x00\x00
+SEQ3 REF7 ^\x0e CALL1 \xa2\x00 CALL7 \xd0\x00 CALL6 
+LOAD3 SCE012_008 REF6 l\x0f CALL8
+SEQ1 \x8c\x01 SEQ5 |" CALL4 \x03\xa2\x00\x00
  
 沈んだ空気を振り払おうと、拓司は明るくいった。@
 \n拓司\n　「しかしアレだな、最近の若者はわからないよな！」@
@@ -110,9 +110,9 @@ SEQ1 \x8c\x01 SEQ2 |" SEQ3 \x03\xa2\x00\x00
 拓司\n　「いや、２歳はデカいって。\p運動系の部活の連中とかさ、今年\n　　の新人はナニ考えてるの全然わからない、っていつもぼやいて\n　　るぜ。\p礼儀とか、常識とか、もう、全然おれたちとは違うっ\n　　て。\p説教してもポカンとされるだけで、まるで宇宙人に地\n　　球の掟を教えてるみたいだって」\
 
 \x00
-SEQ6 REF6 \xb0\x0f CALL1 \xa2\x00 CALL3 \xd0\x00 REF_END1 
-LOAD3 SCE012_009 REF6 r\x12 REF_END2 
-SEQ1 \x8c\x01 SEQ2 \x80" SEQ3 \x03<\x00\x00
+SEQ3 REF7 \xb0\x0f CALL1 \xa2\x00 CALL7 \xd0\x00 CALL6 
+LOAD3 SCE012_009 REF6 r\x12 CALL8
+SEQ1 \x8c\x01 SEQ5 \x80" CALL4 \x03<\x00\x00
  
 早桃\n　「……ということは、おにいちゃんも早桃のこと、ぜんぜんわか\n　　ってないってことかな？」@
 拓司\n　「おれはわかってるさ。もう長いつきあいだからな」@
@@ -121,16 +121,16 @@ SEQ1 \x8c\x01 SEQ2 \x80" SEQ3 \x03<\x00\x00
 早桃\n　「……」\
 
 \x00\x00\x00
-SEQ6 REF6 \xb6\x12 CALL1 \xa2\x00 CALL3 \xd0\x00 REF_END1 
-LOAD3 SCE012_010 REF6 \xe0\x13 REF_END2 
-SEQ1 \x8c\x01 SEQ2 \x84" SEQ3  REF7 \xa2\x00 REF_END2 
-LOAD5 TextWindowOffDirect REF7 0\x14 REF_END1 
-SEQ5 \x00\x00\x00 REF_END3  \x1e\x04\x00\x00\r\x00\x00\x1e\x14\x00 REF_END3  \x1e\x08\x00\x00\r\x00\x00\x1e\x00\x00\x00 CALL1 \x06\x01 REF_END2 
-LOAD3 SePlayEx REF3 \xb2\x14 REF_END1 
-SEQ5 \x01\x00 CALL1 @\x04 REF_END2 
-LOAD4 BgNormalFadeIn REF1 \xf8\x14 REF_END1 
-SEQ5 \x07\x01 CALL1 \x06\x01 CALL3 0\x01 CALL2 \xa2\x00 REF_END2 
-LOAD4 TextWindowOn REF3 \\\x15 REF_END1 \x03\x9d\x00\x00
+SEQ3 REF7 \xb6\x12 CALL1 \xa2\x00 CALL7 \xd0\x00 CALL6 
+LOAD3 SCE012_010 REF6 \xe0\x13 CALL8
+SEQ1 \x8c\x01 SEQ5 \x84" CALL4 REF7 \xa2\x00 CALL8
+LOAD5 TextWindowOffDirectREF7 0\x14 CALL6 
+SEQ2 \x00\x00\x00 CALL2  \x1e\x04\x00\x00\r\x00\x00\x1e\x14\x00 CALL2  \x1e\x08\x00\x00\r\x00\x00\x1e\x00\x00\x00 CALL1 \x06\x01 CALL8
+LOAD3 SePlayEx REF3 \xb2\x14 CALL6 
+SEQ2 \x01\x00 CALL1 @\x04 CALL8
+LOAD4 BgNormalFadeIn REF1 \xf8\x14 CALL6 
+SEQ2 \x07\x01 CALL1 \x06\x01 CALL7 0\x01 CALL5 \xa2\x00 CALL8
+LOAD4 TextWindowOn REF3 \\\x15 CALL6 \x03\x9d\x00\x00
  
 紅葉\n　「おはよーっ！」@
 早桃\n　「あ……おはようございます」@
@@ -143,9 +143,9 @@ LOAD4 TextWindowOn REF3 \\\x15 REF_END1 \x03\x9d\x00\x00
 　そんな印象がある。\
 
 \x00\x00\x00
-SEQ6 REF6 \x80\x15 CALL1 \xa2\x00 CALL3 \xd0\x00 REF_END1 
-LOAD3 SCE012_011 REF6 .\x18 REF_END2 
-SEQ1 \x8c\x01 SEQ2 \x88" SEQ3 \x03\xa8\x00\x00
+SEQ3 REF7 \x80\x15 CALL1 \xa2\x00 CALL7 \xd0\x00 CALL6 
+LOAD3 SCE012_011 REF6 .\x18 CALL8
+SEQ1 \x8c\x01 SEQ5 \x88" CALL4 \x03\xa8\x00\x00
  
 －－いまの自分とは大違いだ、と拓司は思った。@
 彼女は選ぶことができた。\p灰色のカンバスにとけ込むのではなく、\nそこに自由に絵を描いてゆくことを選ぶだけの色が……生命力が…\n紅葉には備わっていたのだ。@
@@ -157,26 +157,26 @@ SEQ1 \x8c\x01 SEQ2 \x88" SEQ3 \x03\xa8\x00\x00
 \n　そこまで言ったときだった。早桃がおずおずといった。\
 
 \x00\x00\x00
-SEQ6 REF6 r\x18 CALL1 \xa2\x00 CALL3 \xd0\x00 REF_END1 
-LOAD3 SCE012_012 REF6 L\x1b REF_END2 
-SEQ1 \x8c\x01 SEQ2 \x8c" SEQ3 \x033\x00\x00
+SEQ3 REF7 r\x18 CALL1 \xa2\x00 CALL7 \xd0\x00 CALL6 
+LOAD3 SCE012_012 REF6 L\x1b CALL8
+SEQ1 \x8c\x01 SEQ5 \x8c" CALL4 \x033\x00\x00
  
 早桃\n　「あの……おにいちゃん、私、先に行くから。……それじゃあ」\n\p/*　CG02　フェードアウト　（ブラック） */\a7,-2,-2,0,\a0,200,2,0,\a6,-2,0,0,拓司\n　「早桃？」@
 紅葉\n　「早桃ちゃん？」\
 
 \x00\x00\x00
-SEQ6 REF6 \x90\x1b CALL1 \xa2\x00 CALL3 \xd0\x00 REF_END1 
-LOAD3 SCE012_013 REF6 \x96\x1c REF_END2 
-SEQ1 \x8c\x01 SEQ2 \x90" SEQ3 
-LOAD8 .\\Data\\Script\\TextFunc.fob REF1 \xda\x1c REF_END2 
-LOAD6 CheckNormalMessageSkip REF1 \x08\x1d REF_END1 
-SEQ5 \x00\x00\x00 REF_END3  \x1e\x04\x00\x00\r\x00\x00\x1e\x15\x00 REF_END3  \x1e\x08\x00\x00\r\x00\x00\x1e\x00\x00\x00 CALL1 \x06\x01 CALL3 \xb2\x14 CALL2 \xa2\x00 REF_END2 
-LOAD5 UpdateScenarioRead REF1 \xa8\x1d REF_END1 \x03\x0b\x00\x00
+SEQ3 REF7 \x90\x1b CALL1 \xa2\x00 CALL7 \xd0\x00 CALL6 
+LOAD3 SCE012_013 REF6 \x96\x1c CALL8
+SEQ1 \x8c\x01 SEQ5 \x90" CALL4 
+LOAD8 .\\Data\\Script\\TextFunc.fob REF1 \xda\x1c CALL8
+LOAD6 CheckNormalMessageSkip REF1 \x08\x1d CALL6 
+SEQ2 \x00\x00\x00 CALL2  \x1e\x04\x00\x00\r\x00\x00\x1e\x15\x00 CALL2  \x1e\x08\x00\x00\r\x00\x00\x1e\x00\x00\x00 CALL1 \x06\x01 CALL7 \xb2\x14 CALL5 \xa2\x00 CALL8
+LOAD5 UpdateScenarioRead REF1 \xa8\x1d CALL6 \x03\x0b\x00\x00
 CHOICE
 早桃を追う\n紅葉と登校する\n\l0,2,
 ENDCHOICE
 
 \x00
-SEQ6 REF6 \xd0\x1d CALL1 \xa2\x00 CALL3 \xd0\x00 CALL2 \xa2\x00 REF_END2 
-LOAD3 TextClose REF2 B\x1e REF_END1 
+SEQ3 REF7 \xd0\x1d CALL1 \xa2\x00 CALL7 \xd0\x00 CALL5 \xa2\x00 CALL8
+LOAD3 TextClose REF2 B\x1e CALL6 
 END_FILE

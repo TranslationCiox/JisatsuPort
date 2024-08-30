@@ -1,7 +1,7 @@
 START_FILE
 \xc9\x05\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xa4\t3\x01\x00\x00\x00\xac\x04\x00
-LOAD3 SCE074_001 REF6 \x06\x00 REF_END2 
-SEQ1 \x8c\x01 SEQ2 @\x83 SEQ3 \x03\xab\x00\x00
+LOAD3 SCE074_001 REF6 \x06\x00 CALL8
+SEQ1 \x8c\x01 SEQ5 @\x83 CALL4 \x03\xab\x00\x00
  
 拓司はまだ、『自殺波動』などというものを信じるつもりはない。\n\pしかし、なたねが、この狂った世界にわずかながら残されている\nいくつかの法則のようなものを知っていることだけは確かなよう\nに思えた。@
 あるいはここは、なたねの世界なのではないか？@
@@ -11,16 +11,16 @@ SEQ1 \x8c\x01 SEQ2 @\x83 SEQ3 \x03\xab\x00\x00
 いまや、信じられるものはなたねの言葉しかなかった。\pでたらめ\nな世界にうち立てられた、妄想の真実。\pそれにすがるしか、道は\nないように思えた。\
 
 \x00\x00\x00
-SEQ6 REF6 J\x00 REF_END3 
-LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 \x16\x03 REF_END2 
-LOAD2 TextOn REF1 D\x03 REF_END1 
-LOAD3 SCE074_002 REF6 `\x03 REF_END2 
-SEQ1 \x8c\x01 SEQ2 D\x83 SEQ3 \x03)\x00\x00
+SEQ3 REF7 J\x00 CALL2 
+LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 \x16\x03 CALL8
+LOAD2 TextOn REF1 D\x03 CALL6 
+LOAD3 SCE074_002 REF6 `\x03 CALL8
+SEQ1 \x8c\x01 SEQ5 D\x83 CALL4 \x03)\x00\x00
  
 路線変更をしてまもなく進んだとき、またもやなたねが静止をか\nけた。@
 \nなたね\n　「ここも駄目。\pここにも波動がきているわ。\p別の道を選びまし\n　　ょう」\
 
 \x00
-SEQ6 REF6 \xa4\x03 CALL1 \x16\x03 CALL3 D\x03 CALL2 \x16\x03 REF_END2 
-LOAD3 TextClose REF2 \x8e\x04 REF_END1 
+SEQ3 REF7 \xa4\x03 CALL1 \x16\x03 CALL7 D\x03 CALL5 \x16\x03 CALL8
+LOAD3 TextClose REF2 \x8e\x04 CALL6 
 END_FILE

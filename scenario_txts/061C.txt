@@ -1,10 +1,10 @@
 START_FILE
 \xc5\x05\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xa4\t3\x01\x00\x00\x00\xba\x04\x00
-LOAD3 SCE061_001 REF6 \x06\x00 REF_END2 
-SEQ1 \x8c\x01 SEQ2 \xf0n SEQ3 
-SEQ5 \x02\x00 REF_END3  \x1e\x04\x00\x00\r\x00\x00\x1e\x1a\x00 REF_END3  \x1e\x08\x00\x00\r\x00\x00\x1e\x01\x00 REF_END3 
-LOAD6 .\\Data\\Script\\Bgm.Fob REF2 \x98\x00 REF_END2 
-LOAD2 SePlay REF1 \xc2\x00 REF_END1 \x03\\\x00\x00
+LOAD3 SCE061_001 REF6 \x06\x00 CALL8
+SEQ1 \x8c\x01 SEQ5 \xf0n CALL4 
+SEQ2 \x02\x00 CALL2  \x1e\x04\x00\x00\r\x00\x00\x1e\x1a\x00 CALL2  \x1e\x08\x00\x00\r\x00\x00\x1e\x01\x00 CALL2 
+LOAD6 .\\Data\\Script\\Bgm.Fob REF2 \x98\x00 CALL8
+LOAD2 SePlay REF1 \xc2\x00 CALL6 \x03\\\x00\x00
  
 なたね\n　「次は？」@
 拓司\n　「２階……カンナの教室だ」@
@@ -17,23 +17,23 @@ LOAD2 SePlay REF1 \xc2\x00 REF_END1 \x03\\\x00\x00
 なたね\n　「死の話」\
 
 \x00
-SEQ6 REF6 \xde\x00 REF_END3 
-LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 n\x02 REF_END2 
-LOAD2 TextOn REF1 \x9c\x02 REF_END1 
-SEQ5 \x02\x00 CALL1 \x98\x00 REF_END2 
-LOAD2 SeStop REF1 \xde\x02 REF_END1 
-SEQ5 <\x00 REF_END3 
-LOAD8 .\\Data\\Script\\TextFunc.fob REF1 \x14\x03 REF_END2 
-LOAD3 WaitTime REF3 B\x03 REF_END1 
-LOAD3 SCE061_002 REF6 b\x03 REF_END2 
-SEQ1 \x8c\x01 SEQ2 \xf4n SEQ3 \x03\x12\x00\x00
+SEQ3 REF7 \xde\x00 CALL2 
+LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 n\x02 CALL8
+LOAD2 TextOn REF1 \x9c\x02 CALL6 
+SEQ2 \x02\x00 CALL1 \x98\x00 CALL8
+LOAD2 SeStop REF1 \xde\x02 CALL6 
+SEQ2 <\x00 CALL2 
+LOAD8 .\\Data\\Script\\TextFunc.fob REF1 \x14\x03 CALL8
+LOAD3 WaitTime REF3 B\x03 CALL6 
+LOAD3 SCE061_002 REF6 b\x03 CALL8
+SEQ1 \x8c\x01 SEQ5 \xf4n CALL4 \x03\x12\x00\x00
  
 拓司\n　「早桃は廊下で待っていろ。\p雲居さんは……一緒に頼む」\
 
 \x00
-SEQ6 REF6 \xa6\x03 CALL1 n\x02 CALL3 \x9c\x02 REF_END1 
-SEQ5 \xc9\x00 REF_END3 
-LOAD6 .\\Data\\Script\\Bg.Fob REF3 B\x04 REF_END2 
-LOAD4 BgAutoFadeIn REF3 l\x04 CALL2 n\x02 REF_END2 
-LOAD3 TextClose REF2 \x9c\x04 REF_END1 
+SEQ3 REF7 \xa6\x03 CALL1 n\x02 CALL7 \x9c\x02 CALL6 
+SEQ2 \xc9\x00 CALL2 
+LOAD6 .\\Data\\Script\\Bg.Fob REF3 B\x04 CALL8
+LOAD4 BgAutoFadeIn REF3 l\x04 CALL5 n\x02 CALL8
+LOAD3 TextClose REF2 \x9c\x04 CALL6 
 END_FILE

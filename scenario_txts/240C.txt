@@ -1,26 +1,26 @@
 START_FILE
 \xc7\x10\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\x9c\x0b\x00
-LOAD3 SCE240_001 REF6 \x06\x00 REF_END2 
-SEQ1 \x8c\x01 SEQ2 \xa0\x86\x01\x0c\x00\x00\x00\x00"
-LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 J\x00 REF_END2 
-LOAD4 TextWindowOff REF2 x\x00 REF_END1 
-SEQ5 \xca\x00 REF_END3 
-LOAD6 .\\Data\\Script\\Bg.Fob REF3 \xb6\x00 REF_END2 
-LOAD2 BgOn REF3 \xe0\x00 REF_END1 
-SEQ5 \x02\x00 REF_END3  \x1e\x04\x00\x00\r\x00\x00\x1e\x01\x00 REF_END3  \x1e\x08\x00\x00\r\x00\x00\x1e\x01\x00 REF_END3 
-LOAD6 .\\Data\\Script\\Bgm.Fob REF2 J\x01 REF_END2 
-LOAD2 SePlay REF1 t\x01 CALL2 J\x00 REF_END2 
-LOAD4 TextWindowOn REF3 \x9c\x01 REF_END1 \x03\x17\x00\x00
+LOAD3 SCE240_001 REF6 \x06\x00 CALL8
+SEQ1 \x8c\x01 SEQ5 \xa0\x86\x01\x0c\x00\x00\x00\x00"
+LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 J\x00 CALL8
+LOAD4 TextWindowOff REF2 x\x00 CALL6 
+SEQ2 \xca\x00 CALL2 
+LOAD6 .\\Data\\Script\\Bg.Fob REF3 \xb6\x00 CALL8
+LOAD2 BgOn REF3 \xe0\x00 CALL6 
+SEQ2 \x02\x00 CALL2  \x1e\x04\x00\x00\r\x00\x00\x1e\x01\x00 CALL2  \x1e\x08\x00\x00\r\x00\x00\x1e\x01\x00 CALL2 
+LOAD6 .\\Data\\Script\\Bgm.Fob REF2 J\x01 CALL8
+LOAD2 SePlay REF1 t\x01 CALL5 J\x00 CALL8
+LOAD4 TextWindowOn REF3 \x9c\x01 CALL6 \x03\x17\x00\x00
  
 親指の先に、硬い物があった。@
 激しいノイズが聞こえる。@
 誰かが腹を殴っている。\
 
 \x00
-SEQ6 REF6 \xc0\x01 CALL1 J\x00 REF_END2 
-LOAD2 TextOn REF1 H\x02 REF_END1 
-LOAD3 SCE240_002 REF6 d\x02 REF_END2 
-SEQ1 \x8c\x01 SEQ2 \xa4\x86\x01\x0c\x00\x00\x00\x00"\x03r\x00\x00
+SEQ3 REF7 \xc0\x01 CALL1 J\x00 CALL8
+LOAD2 TextOn REF1 H\x02 CALL6 
+LOAD3 SCE240_002 REF6 d\x02 CALL8
+SEQ1 \x8c\x01 SEQ5 \xa4\x86\x01\x0c\x00\x00\x00\x00"\x03r\x00\x00
  
 カンナ\n　「虎菱くん！　虎菱くん！」@
 /*▲SE01　停止*/\a4,2,0,0,/*■CG50　表示（クロスフェード）*/\a7,-2,-2,0,\a0,49,2,0,\a6,-2,0,0,/*▲BGM　Track11　再生*/\a2,-1,11,1,\n拓司はようやく我に返った。@
@@ -35,18 +35,18 @@ SEQ1 \x8c\x01 SEQ2 \xa4\x86\x01\x0c\x00\x00\x00\x00"\x03r\x00\x00
 泣き叫んでいる。\
 
 \x00\x00\x00
-SEQ6 REF6 \xa8\x02 CALL1 J\x00 CALL3 H\x02 REF_END1 
-LOAD3 SCE240_003 REF6 \xaa\x04 REF_END2 
-SEQ1 \x8c\x01 SEQ2 \xa8\x86\x01\x0c\x00\x00\x00\x00"\x03*\x00\x00
+SEQ3 REF7 \xa8\x02 CALL1 J\x00 CALL7 H\x02 CALL6 
+LOAD3 SCE240_003 REF6 \xaa\x04 CALL8
+SEQ1 \x8c\x01 SEQ5 \xa8\x86\x01\x0c\x00\x00\x00\x00"\x03*\x00\x00
  
 御堂\n　「うわあああああああああああッ！\p　やめろおお！\p　潰れる！@
 　　目、おれの目！」@
 拓司\n　「こういうのはお終いだ、御堂！\p　これでお終いだ！」\
 
 \x00\x00\x00
-SEQ6 REF6 \xee\x04 CALL1 J\x00 CALL3 H\x02 REF_END1 
-LOAD3 SCE240_004 REF6 \xd0\x05 REF_END2 
-SEQ1 \x8c\x01 SEQ2 \xac\x86\x01\x0c\x00\x00\x00\x00"\x03\x9c\x00\x00
+SEQ3 REF7 \xee\x04 CALL1 J\x00 CALL7 H\x02 CALL6 
+LOAD3 SCE240_004 REF6 \xd0\x05 CALL8
+SEQ1 \x8c\x01 SEQ5 \xac\x86\x01\x0c\x00\x00\x00\x00"\x03\x9c\x00\x00
  
 拓司は叫んだ。@
 そして親指にグイと力を込めた。@
@@ -61,9 +61,9 @@ SEQ1 \x8c\x01 SEQ2 \xac\x86\x01\x0c\x00\x00\x00\x00"\x03\x9c\x00\x00
 拓司\n　「終わりだ、全部終わりだ」\
 
 \x00\x00\x00
-SEQ6 REF6 \x14\x06 CALL1 J\x00 CALL3 H\x02 REF_END1 
-LOAD3 SCE240_005 REF6 \xbe\x08 REF_END2 
-SEQ1 \x8c\x01 SEQ2 \xb0\x86\x01\x0c\x00\x00\x00\x00"\x03b\x00\x00
+SEQ3 REF7 \x14\x06 CALL1 J\x00 CALL7 H\x02 CALL6 
+LOAD3 SCE240_005 REF6 \xbe\x08 CALL8
+SEQ1 \x8c\x01 SEQ5 \xb0\x86\x01\x0c\x00\x00\x00\x00"\x03b\x00\x00
  
 呆気にとられた一同の視線を集めて、拓司は続けた。@
 \n拓司\n　「俺は、この部屋を出る。\p行く先は……光がある場所だ」@
@@ -75,13 +75,13 @@ SEQ1 \x8c\x01 SEQ2 \xb0\x86\x01\x0c\x00\x00\x00\x00"\x03b\x00\x00
 拓司はそれを以前、月代カンナの口から聞いたことがあった。\
 
 \x00
-SEQ6 REF6 \x02\t CALL1 J\x00 CALL3 H\x02 REF_END1 
-LOAD3 SCE240_006 REF6 \xc4\n REF_END2 
-SEQ1 \x8c\x01 SEQ2 \xb4\x86\x01\x0c\x00\x00\x00\x00"\x03\x0c\x00\x00
+SEQ3 REF7 \x02\t CALL1 J\x00 CALL7 H\x02 CALL6 
+LOAD3 SCE240_006 REF6 \xc4\n CALL8
+SEQ1 \x8c\x01 SEQ5 \xb4\x86\x01\x0c\x00\x00\x00\x00"\x03\x0c\x00\x00
  
 拓司\n　「ついてくる人は、いるかい？」\
 
 \x00
-SEQ6 REF6 \x08\x0b CALL1 J\x00 CALL3 H\x02 CALL2 J\x00 REF_END2 
-LOAD3 TextClose REF2 ~\x0b REF_END1 
+SEQ3 REF7 \x08\x0b CALL1 J\x00 CALL7 H\x02 CALL5 J\x00 CALL8
+LOAD3 TextClose REF2 ~\x0b CALL6 
 END_FILE

@@ -1,15 +1,15 @@
 START_FILE
 \x10\x06\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xa4\t3\x01\x00\x00\x00&\x05\x00
-SEQ5 \xc8\x00 REF_END3 
-LOAD6 .\\Data\\Script\\Bg.Fob REF3  \x00 REF_END2 
-LOAD4 BgNormalFadeIn REF1 J\x00 REF_END1 
-SEQ5 \xc8\x00 CALL1  \x00 REF_END2 
-LOAD2 BgOn REF3 \x94\x00 REF_END1 
-SEQ5 \t\x01 REF_END3 
-LOAD6 .\\Data\\Script\\Bgm.Fob REF2 \xca\x00 REF_END2 
-LOAD2 PlayCD REF1 \xf4\x00 REF_END1 
-LOAD3 SCE001_001 REF6 \x10\x01 REF_END2 
-SEQ1 \x8c\x01 SEQ2 0\x11 SEQ3 \x03O\x00\x00
+SEQ2 \xc8\x00 CALL2 
+LOAD6 .\\Data\\Script\\Bg.Fob REF3  \x00 CALL8
+LOAD4 BgNormalFadeIn REF1 J\x00 CALL6 
+SEQ2 \xc8\x00 CALL1  \x00 CALL8
+LOAD2 BgOn REF3 \x94\x00 CALL6 
+SEQ2 \t\x01 CALL2 
+LOAD6 .\\Data\\Script\\Bgm.Fob REF2 \xca\x00 CALL8
+LOAD2 PlayCD REF1 \xf4\x00 CALL6 
+LOAD3 SCE001_001 REF6 \x10\x01 CALL8
+SEQ1 \x8c\x01 SEQ5 0\x11 CALL4 \x03O\x00\x00
  
 世界。@
 世界。@
@@ -24,11 +24,11 @@ SEQ1 \x8c\x01 SEQ2 0\x11 SEQ3 \x03O\x00\x00
 きの世に義界はるなよっにて定でか？\
 
 \x00\x00\x00
-SEQ6 REF6 T\x01 REF_END3 
-LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 \xb0\x02 REF_END2 
-LOAD2 TextOn REF1 \xde\x02 REF_END1 
-LOAD3 SCE001_002 REF6 \xfa\x02 REF_END2 
-SEQ1 \x8c\x01 SEQ2 4\x11 SEQ3 \x03a\x00\x00
+SEQ3 REF7 T\x01 CALL2 
+LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 \xb0\x02 CALL8
+LOAD2 TextOn REF1 \xde\x02 CALL6 
+LOAD3 SCE001_002 REF6 \xfa\x02 CALL8
+SEQ1 \x8c\x01 SEQ5 4\x11 CALL4 \x03a\x00\x00
  
 頭にぼんやりと薄い霧がかかっている。@
 ゲル化した思考が、ゆるゆると頭蓋を這って流れ落ちる。@
@@ -41,6 +41,6 @@ SEQ1 \x8c\x01 SEQ2 4\x11 SEQ3 \x03a\x00\x00
 なにか？\
 
 \x00\x00\x00
-SEQ6 REF6 >\x03 CALL1 \xb0\x02 CALL3 \xde\x02 CALL2 \xb0\x02 REF_END2 
-LOAD3 TextClose REF2 \x08\x05 REF_END1 
+SEQ3 REF7 >\x03 CALL1 \xb0\x02 CALL7 \xde\x02 CALL5 \xb0\x02 CALL8
+LOAD3 TextClose REF2 \x08\x05 CALL6 
 END_FILE

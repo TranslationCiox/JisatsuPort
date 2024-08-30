@@ -1,19 +1,19 @@
 START_FILE
 p*\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\x1a#\x00
-SEQ5 \x0c\x01 REF_END3 
-LOAD6 .\\Data\\Script\\Bgm.Fob REF2  \x00 REF_END2 
-LOAD2 PlayCD REF1 J\x00 REF_END1 
-LOAD3 SCE234_001 REF6 f\x00 REF_END2 
-SEQ1 \x8c\x01 SEQ2 @}\x01\x0c\x00\x00\x00\x00"\x03\x11\x00\x00
+SEQ2 \x0c\x01 CALL2 
+LOAD6 .\\Data\\Script\\Bgm.Fob REF2  \x00 CALL8
+LOAD2 PlayCD REF1 J\x00 CALL6 
+LOAD3 SCE234_001 REF6 f\x00 CALL8
+SEQ1 \x8c\x01 SEQ5 @}\x01\x0c\x00\x00\x00\x00"\x03\x11\x00\x00
  
 \n\n\n\n\n\n\n\n\n\n　　　　　　　　　　　　『１５日目』\
 
 \x00\x00\x00
-SEQ6 REF6 \xaa\x00 REF_END3 
-LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 \x0e\x01 REF_END2 
-LOAD2 TextOn REF1 <\x01 REF_END1 
-LOAD3 SCE234_002 REF6 X\x01 REF_END2 
-SEQ1 \x8c\x01 SEQ2 D}\x01\x0c\x00\x00\x00\x00"\x03\x7f\x00\x00
+SEQ3 REF7 \xaa\x00 CALL2 
+LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 \x0e\x01 CALL8
+LOAD2 TextOn REF1 <\x01 CALL6 
+LOAD3 SCE234_002 REF6 X\x01 CALL8
+SEQ1 \x8c\x01 SEQ5 D}\x01\x0c\x00\x00\x00\x00"\x03\x7f\x00\x00
  
 拓司の予想は、まったく予期せぬ形でうち砕かれた。@
 /*■CG45　表示（クロスフェード）*/\a7,-2,-2,0,\a0,44,2,0,\a6,-2,0,0,\n朝食の配給に現れた御堂は、右目に眼帯を付けていた。@
@@ -27,9 +27,9 @@ SEQ1 \x8c\x01 SEQ2 D}\x01\x0c\x00\x00\x00\x00"\x03\x7f\x00\x00
 その視線から逃れるように、紅葉は俯いた。\
 
 \x00\x00\x00
-SEQ6 REF6 \x9c\x01 CALL1 \x0e\x01 CALL3 <\x01 REF_END1 
-LOAD3 SCE234_003 REF6 \xd2\x03 REF_END2 
-SEQ1 \x8c\x01 SEQ2 H}\x01\x0c\x00\x00\x00\x00"\x03V\x00\x00
+SEQ3 REF7 \x9c\x01 CALL1 \x0e\x01 CALL7 <\x01 CALL6 
+LOAD3 SCE234_003 REF6 \xd2\x03 CALL8
+SEQ1 \x8c\x01 SEQ5 H}\x01\x0c\x00\x00\x00\x00"\x03V\x00\x00
  
 御堂\n　「この女はな、自分の身の安全のために、お前を売ったんだ」@
 拓司\n　「ウソだ」@
@@ -41,9 +41,9 @@ SEQ1 \x8c\x01 SEQ2 H}\x01\x0c\x00\x00\x00\x00"\x03V\x00\x00
 拓司\n　「……」\
 
 \x00\x00\x00
-SEQ6 REF6 \x16\x04 CALL1 \x0e\x01 CALL3 <\x01 REF_END1 
-LOAD3 SCE234_004 REF6 \xa8\x05 REF_END2 
-SEQ1 \x8c\x01 SEQ2 L}\x01\x0c\x00\x00\x00\x00"\x03`\x00\x00
+SEQ3 REF7 \x16\x04 CALL1 \x0e\x01 CALL7 <\x01 CALL6 
+LOAD3 SCE234_004 REF6 \xa8\x05 CALL8
+SEQ1 \x8c\x01 SEQ5 L}\x01\x0c\x00\x00\x00\x00"\x03`\x00\x00
  
 紅葉は何もいわなかった。@
 ただ黙っている。@
@@ -55,9 +55,9 @@ SEQ1 \x8c\x01 SEQ2 L}\x01\x0c\x00\x00\x00\x00"\x03`\x00\x00
 \nははは、と御堂が笑った。\p錦城も、さも愉快そうに笑っている。\
 
 \x00
-SEQ6 REF6 \xec\x05 CALL1 \x0e\x01 CALL3 <\x01 REF_END1 
-LOAD3 SCE234_005 REF6 \xa6\x07 REF_END2 
-SEQ1 \x8c\x01 SEQ2 P}\x01\x0c\x00\x00\x00\x00"\x03\x8e\x00\x00
+SEQ3 REF7 \xec\x05 CALL1 \x0e\x01 CALL7 <\x01 CALL6 
+LOAD3 SCE234_005 REF6 \xa6\x07 CALL8
+SEQ1 \x8c\x01 SEQ5 P}\x01\x0c\x00\x00\x00\x00"\x03\x8e\x00\x00
  
 御堂\n　「お前、よっぽど人望ないんだなあ。\p哀れだぜ。@
 　　……まあ、安心しろ。\pお前を処分したあとで、神凪も罰して@
@@ -70,10 +70,10 @@ SEQ1 \x8c\x01 SEQ2 P}\x01\x0c\x00\x00\x00\x00"\x03\x8e\x00\x00
 \nつかみかかってくる紅葉を一撃で壁まではじき飛ばし、御堂が叫\nんだ。\
 
 \x00\x00\x00
-SEQ6 REF6 \xea\x07 CALL1 \x0e\x01 CALL3 <\x01 CALL2  \x00 REF_END2 
-LOAD2 StopCD REF1 h\n REF_END1 
-LOAD3 SCE234_006 REF6 \x84\n REF_END2 
-SEQ1 \x8c\x01 SEQ2 T}\x01\x0c\x00\x00\x00\x00"\x03\x95\x00\x00
+SEQ3 REF7 \xea\x07 CALL1 \x0e\x01 CALL7 <\x01 CALL5  \x00 CALL8
+LOAD2 StopCD REF1 h\n CALL6 
+LOAD3 SCE234_006 REF6 \x84\n CALL8
+SEQ1 \x8c\x01 SEQ5 T}\x01\x0c\x00\x00\x00\x00"\x03\x95\x00\x00
  
 御堂\n　「っつーわけで、楽しい処刑の始まりだ！」@
 /*▲BGM　Track10　再生*/\a2,-1,10,1,/*■CG46　表示（クロスフェード）*/\a7,-2,-2,0,\a0,45,2,0,\a6,-2,0,0,\n鳩尾に、狙い澄ました一発がきた。\p予想していたにもかかわらず\n避けられなかった。\p拓司は、もうそれだけで立っていることがで\nきなかった。@
@@ -85,9 +85,9 @@ SEQ1 \x8c\x01 SEQ2 T}\x01\x0c\x00\x00\x00\x00"\x03\x95\x00\x00
 御堂に殺されるかもしれない。\pしかも信じていた紅葉に裏切られ\nて……。\
 
 \x00\x00\x00
-SEQ6 REF6 \xc8\n CALL1 \x0e\x01 CALL3 <\x01 REF_END1 
-LOAD3 SCE234_007 REF6 V\r REF_END2 
-SEQ1 \x8c\x01 SEQ2 X}\x01\x0c\x00\x00\x00\x00"\x03\xba\x00\x00
+SEQ3 REF7 \xc8\n CALL1 \x0e\x01 CALL7 <\x01 CALL6 
+LOAD3 SCE234_007 REF6 V\r CALL8
+SEQ1 \x8c\x01 SEQ5 X}\x01\x0c\x00\x00\x00\x00"\x03\xba\x00\x00
  
 ものすごい衝撃が鼻先を直撃し、目の前に火花が散った。@
 そのままよろけて手を伸ばすと、バシャン、と鋭い音がした。@
@@ -108,9 +108,9 @@ SEQ1 \x8c\x01 SEQ2 X}\x01\x0c\x00\x00\x00\x00"\x03\xba\x00\x00
 /*■黒　表示（ノンエフェクト）*/\a7,-1,-1,0,\a0,200,1,0,\a6,0,0,0,床に倒れる。\
 
 \x00
-SEQ6 REF6 \x9a\r CALL1 \x0e\x01 CALL3 <\x01 REF_END1 
-LOAD3 SCE234_008 REF6 \xbc\x10 REF_END2 
-SEQ1 \x8c\x01 SEQ2 \\}\x01\x0c\x00\x00\x00\x00"\x03\x94\x00\x00
+SEQ3 REF7 \x9a\r CALL1 \x0e\x01 CALL7 <\x01 CALL6 
+LOAD3 SCE234_008 REF6 \xbc\x10 CALL8
+SEQ1 \x8c\x01 SEQ5 \\}\x01\x0c\x00\x00\x00\x00"\x03\x94\x00\x00
  
 　興奮が胸を充たし、あふれ、喉へと込み上がってきた。@
 　俺は自分が雄々しく叫ぶのだと思った。\p咆哮して……煮えたぎ\nった興奮を解き放って御堂に立ち向かうのだと思った。\pしかしそ\nんな叫び声は、いつまでたっても形にならなかった。@
@@ -120,9 +120,9 @@ SEQ1 \x8c\x01 SEQ2 \\}\x01\x0c\x00\x00\x00\x00"\x03\x94\x00\x00
 御堂の残忍な笑い顔が、ぐいっとせり上がって目の前に飛び出し\nた。\
 
 \x00\x00\x00
-SEQ6 REF6 \x00\x11 CALL1 \x0e\x01 CALL3 <\x01 REF_END1 
-LOAD3 SCE234_009 REF6 \x8a\x13 REF_END2 
-SEQ1 \x8c\x01 SEQ2 `}\x01\x0c\x00\x00\x00\x00"\x03\xe1\x00\x00
+SEQ3 REF7 \x00\x11 CALL1 \x0e\x01 CALL7 <\x01 CALL6 
+LOAD3 SCE234_009 REF6 \x8a\x13 CALL8
+SEQ1 \x8c\x01 SEQ5 `}\x01\x0c\x00\x00\x00\x00"\x03\xe1\x00\x00
  
 御堂\n　「おい虎菱ィ！」@
 拓司\n　「わああああああああああああああああああああああああっ！」\n\p御堂\n　「おい虎菱ィ！」@
@@ -133,12 +133,12 @@ SEQ1 \x8c\x01 SEQ2 `}\x01\x0c\x00\x00\x00\x00"\x03\xe1\x00\x00
 \n叫んで、御堂は拓司の腕を逆に取った。\
 
 \x00\x00\x00
-SEQ6 REF6 \xce\x13 CALL1 \x0e\x01 CALL3 <\x01 REF_END1 
-SEQ5 \xcb\x00 REF_END3 
-LOAD6 .\\Data\\Script\\Bg.Fob REF3 \xa6\x17 REF_END2 
-LOAD2 BgOn REF3 \xd0\x17 REF_END1 
-LOAD3 SCE234_010 REF6 \xec\x17 REF_END2 
-SEQ1 \x8c\x01 SEQ2 d}\x01\x0c\x00\x00\x00\x00"\x03{\x00\x00
+SEQ3 REF7 \xce\x13 CALL1 \x0e\x01 CALL7 <\x01 CALL6 
+SEQ2 \xcb\x00 CALL2 
+LOAD6 .\\Data\\Script\\Bg.Fob REF3 \xa6\x17 CALL8
+LOAD2 BgOn REF3 \xd0\x17 CALL6 
+LOAD3 SCE234_010 REF6 \xec\x17 CALL8
+SEQ1 \x8c\x01 SEQ5 d}\x01\x0c\x00\x00\x00\x00"\x03{\x00\x00
  
 御堂\n　「骨折るぞ！\p　骨折るぞ！\p　ホネオルホネオルゾホネオルゾゾ\n　　ゾゾゾ！」@
 \n御堂は逆さにとった拓司の腕を、くいっと軽くひねった。@
@@ -148,9 +148,9 @@ SEQ1 \x8c\x01 SEQ2 d}\x01\x0c\x00\x00\x00\x00"\x03{\x00\x00
 \n拓司\n　「わわわわわわわわわわわわわわわわわわ！！」\
 
 \x00
-SEQ6 REF6 0\x18 CALL1 \x0e\x01 CALL3 <\x01 REF_END1 
-LOAD3 SCE234_011 REF6 V\x1a REF_END2 
-SEQ1 \x8c\x01 SEQ2 h}\x01\x0c\x00\x00\x00\x00"\x03]\x00\x00
+SEQ3 REF7 0\x18 CALL1 \x0e\x01 CALL7 <\x01 CALL6 
+LOAD3 SCE234_011 REF6 V\x1a CALL8
+SEQ1 \x8c\x01 SEQ5 h}\x01\x0c\x00\x00\x00\x00"\x03]\x00\x00
  
 御堂\n　「もう一本もイクか、オイ？」@
 錦城\n　「やって！」@
@@ -159,9 +159,9 @@ SEQ1 \x8c\x01 SEQ2 h}\x01\x0c\x00\x00\x00\x00"\x03]\x00\x00
 拓司\n　「わわわわわわわわわわわわわわわわわわ！！」\
 
 \x00\x00\x00
-SEQ6 REF6 \x9a\x1a CALL1 \x0e\x01 CALL3 <\x01 REF_END1 
-LOAD3 SCE234_012 REF6 H\x1c REF_END2 
-SEQ1 \x8c\x01 SEQ2 l}\x01\x0c\x00\x00\x00\x00"\x03\x84\x00\x00
+SEQ3 REF7 \x9a\x1a CALL1 \x0e\x01 CALL7 <\x01 CALL6 
+LOAD3 SCE234_012 REF6 H\x1c CALL8
+SEQ1 \x8c\x01 SEQ5 l}\x01\x0c\x00\x00\x00\x00"\x03\x84\x00\x00
  
 涙と鼻水がとめどなくあふれ出てきた。@
 情けなかった。@
@@ -179,9 +179,9 @@ SEQ1 \x8c\x01 SEQ2 l}\x01\x0c\x00\x00\x00\x00"\x03\x84\x00\x00
 う・ああ・あ・あ・あ・あ・あ・あ・あ・あ・あ・あ・あ・あ・あ\nああああああああ！\
 
 \x00
-SEQ6 REF6 \x8c\x1c CALL1 \x0e\x01 CALL3 <\x01 REF_END1 
-LOAD3 SCE234_013 REF6 \xd6\x1e REF_END2 
-SEQ1 \x8c\x01 SEQ2 p}\x01\x0c\x00\x00\x00\x00"\x03\xa8\x00\x00
+SEQ3 REF7 \x8c\x1c CALL1 \x0e\x01 CALL7 <\x01 CALL6 
+LOAD3 SCE234_013 REF6 \xd6\x1e CALL8
+SEQ1 \x8c\x01 SEQ5 p}\x01\x0c\x00\x00\x00\x00"\x03\xa8\x00\x00
  
 もう一本の手がギシリと歪んだ。@
 \n拓司\n　「これは夢だ！」@
@@ -191,11 +191,11 @@ SEQ1 \x8c\x01 SEQ2 p}\x01\x0c\x00\x00\x00\x00"\x03\xa8\x00\x00
 　　うわあああああああああああああああああああああああああ\n　　あああああああああああああああああああああああああああ\n　　あああああああああああああああああああああああああああ\n　　あああああああああああああああああああああああああああ\n　　あああああああああああああああああああああああああああ\n　　あああああああああああああああああああああああああああ\n　　あああああああああああああああああああああああ！」\
 
 \x00\x00\x00
-SEQ6 REF6 \x1a\x1f CALL1 \x0e\x01 CALL3 <\x01 CALL2 \x0e\x01 REF_END2 
-LOAD4 TextWindowOff REF2 \x00" REF_END1 
-SEQ5 \xca\x00 CALL1 \xa6\x17 REF_END2 
-LOAD4 BgNormalFadeIn REF1 J" CALL2  \x00 CALL3 h\n REF_END1 
-SEQ5 \xc8\x00 CALL1 \xa6\x17 CALL3 \xd0\x17 CALL2 \x0e\x01 REF_END2 
-LOAD5 TextWindowOnDirect REF1 \xc8" CALL2 \x0e\x01 REF_END2 
-LOAD3 TextClose REF2 \xfc" REF_END1 
+SEQ3 REF7 \x1a\x1f CALL1 \x0e\x01 CALL7 <\x01 CALL5 \x0e\x01 CALL8
+LOAD4 TextWindowOff REF2 \x00" CALL6 
+SEQ2 \xca\x00 CALL1 \xa6\x17 CALL8
+LOAD4 BgNormalFadeIn REF1 J" CALL5  \x00 CALL7 h\n CALL6 
+SEQ2 \xc8\x00 CALL1 \xa6\x17 CALL7 \xd0\x17 CALL5 \x0e\x01 CALL8
+LOAD5 TextWindowOnDirect REF1 \xc8" CALL5 \x0e\x01 CALL8
+LOAD3 TextClose REF2 \xfc" CALL6 
 END_FILE

@@ -1,9 +1,9 @@
 START_FILE
 \x1f\t\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00|\x07\x00
-LOAD6 .\\Data\\Script\\Bgm.Fob REF2 \x06\x00 REF_END2 
-LOAD2 StopCD REF1 0\x00 REF_END1 
-LOAD3 SCEK13_001 REF6 L\x00 REF_END2 
-SEQ1 \x8c\x01 SEQ2  \xac\x01\x0c\x00\x00\x00\x00"\x03\xd9\x00\x00
+LOAD6 .\\Data\\Script\\Bgm.Fob REF2 \x06\x00 CALL8
+LOAD2 StopCD REF1 0\x00 CALL6 
+LOAD3 SCEK13_001 REF6 L\x00 CALL8
+SEQ1 \x8c\x01 SEQ5  \xac\x01\x0c\x00\x00\x00\x00"\x03\xd9\x00\x00
  
 　父親を殺す。@
 ゆきは最初、とても驚いたようだった。@
@@ -16,11 +16,11 @@ SEQ1 \x8c\x01 SEQ2  \xac\x01\x0c\x00\x00\x00\x00"\x03\xd9\x00\x00
 「違うの。お父さんを殺すのは、私がするべきことだと思うから。\n\pこんなことをいうのはおかしいかもしれないけれど、お父さんだ\nって人間だもの。\p誰にだって殺されていいってことはないと思う。\n\pだから……私が」@
 自分が蚊帳の外に置かれたような気がして、私は少しムッとした。\n\pこんなに真剣に考えて、殺人という罪まで一緒に犯そうとしてい\nるのに、ゆきは、私がこの件に関しては無関係だと……\n部外者だといっているのだから（－－実際、部外者なんだけれど。\nでも、腹が立ったの）。\w\z
 \x00\x00\x00
-SEQ6 REF6 \x90\x00 REF_END3 
-LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 \x14\x04 REF_END2 
-LOAD2 TextOn REF1 B\x04 REF_END1 
-LOAD3 SCEK13_002 REF6 ^\x04 REF_END2 
-SEQ1 \x8c\x01 SEQ2 $\xac\x01\x0c\x00\x00\x00\x00"\x03~\x00\x00
+SEQ3 REF7 \x90\x00 CALL2 
+LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 \x14\x04 CALL8
+LOAD2 TextOn REF1 B\x04 CALL6 
+LOAD3 SCEK13_002 REF6 ^\x04 CALL8
+SEQ1 \x8c\x01 SEQ5 $\xac\x01\x0c\x00\x00\x00\x00"\x03~\x00\x00
  
 私の不満に気づいたのだろう、ゆきはすぐに申し訳なさそうな顔\nをした。@
 「ごめんね、月代さん。でも、月代さんをないがしろにしている\nとか……そんなつもりじゃない。月代さんの協力がなかったら、\n私はお父さんを殺せないと思うから」@
@@ -32,12 +32,12 @@ SEQ1 \x8c\x01 SEQ2 $\xac\x01\x0c\x00\x00\x00\x00"\x03~\x00\x00
 「私がお父さんを殺したあと、私と一緒に……死んでくれる？」@
 といった。\w\z
 \x00
-SEQ6 REF6 \xa2\x04 CALL1 \x14\x04 CALL3 B\x04 REF_END1 \x03\x11\x00\x00
+SEQ3 REF7 \xa2\x04 CALL1 \x14\x04 CALL7 B\x04 CALL6 \x03\x11\x00\x00
 CHOICE
 私は「うん」と返した。\n私は「いやだ」と返した。\n\l0,2,
 ENDCHOICE
 
 \x00\x00\x00
-SEQ6 REF6 \xd4\x06 CALL1 \x14\x04 CALL3 B\x04 CALL2 \x14\x04 REF_END2 
-LOAD3 TextClose REF2 ^\x07 REF_END1 
+SEQ3 REF7 \xd4\x06 CALL1 \x14\x04 CALL7 B\x04 CALL5 \x14\x04 CALL8
+LOAD3 TextClose REF2 ^\x07 CALL6 
 END_FILE

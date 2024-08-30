@@ -1,14 +1,14 @@
 START_FILE
 A.\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00 '\x00
-LOAD3 SCE081_001 REF6 \x06\x00 REF_END2 
-SEQ1 \x8c\x01 SEQ2 0\x8e SEQ3 
-LOAD6 .\\Data\\Script\\Bgm.Fob REF2 J\x00 REF_END2 
-LOAD2 StopCD REF1 t\x00 REF_END1 
-SEQ5 \xc9\x00 REF_END3 
-LOAD6 .\\Data\\Script\\Bg.Fob REF3 \xaa\x00 REF_END2 
-LOAD4 BgAutoFadeIn REF3 \xd4\x00 REF_END1 
-SEQ5 \x02\x00 REF_END3  \x1e\x04\x00\x00\r\x00\x00\x1e\x06\x00 REF_END3  \x1e\x08\x00\x00\r\x00\x00\x1e\x01\x00 CALL1 J\x00 REF_END2 
-LOAD2 SePlay REF1 R\x01 REF_END1 \x03}\x00\x00
+LOAD3 SCE081_001 REF6 \x06\x00 CALL8
+SEQ1 \x8c\x01 SEQ5 0\x8e CALL4 
+LOAD6 .\\Data\\Script\\Bgm.Fob REF2 J\x00 CALL8
+LOAD2 StopCD REF1 t\x00 CALL6 
+SEQ2 \xc9\x00 CALL2 
+LOAD6 .\\Data\\Script\\Bg.Fob REF3 \xaa\x00 CALL8
+LOAD4 BgAutoFadeIn REF3 \xd4\x00 CALL6 
+SEQ2 \x02\x00 CALL2  \x1e\x04\x00\x00\r\x00\x00\x1e\x06\x00 CALL2  \x1e\x08\x00\x00\r\x00\x00\x1e\x01\x00 CALL1 J\x00 CALL8
+LOAD2 SePlay REF1 R\x01 CALL6 \x03}\x00\x00
  
 男\n　「目が覚めたかね？」@
 \n突然の場違いな声にはっとすると、目の前に見慣れぬ顔があった。\n\p中年の男だ。@
@@ -24,11 +24,11 @@ LOAD2 SePlay REF1 R\x01 REF_END1 \x03}\x00\x00
 \n拓司\n　「……夢か？」\
 
 \x00\x00\x00
-SEQ6 REF6 n\x01 REF_END3 
-LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 \x82\x03 REF_END2 
-LOAD2 TextOn REF1 \xb0\x03 REF_END1 
-LOAD3 SCE081_002 REF6 \xcc\x03 REF_END2 
-SEQ1 \x8c\x01 SEQ2 4\x8e SEQ3 \x03\x8c\x00\x00
+SEQ3 REF7 n\x01 CALL2 
+LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 \x82\x03 CALL8
+LOAD2 TextOn REF1 \xb0\x03 CALL6 
+LOAD3 SCE081_002 REF6 \xcc\x03 CALL8
+SEQ1 \x8c\x01 SEQ5 4\x8e CALL4 \x03\x8c\x00\x00
  
 以前授業中に見た夢の世界だ。\p白い部屋だ。@
 しかし－－死んでからも夢を見るものなのだろうか？\p　あるいは、\n夢を見ているということは、まだ自分は死んでいないということ\nなのだろうか？\p　はたまたこれは死後の世界で、自分はすでに死\nんでいるのか……？@
@@ -41,9 +41,9 @@ SEQ1 \x8c\x01 SEQ2 4\x8e SEQ3 \x03\x8c\x00\x00
 拓司\n　「……教授」\
 
 \x00
-SEQ6 REF6 \x10\x04 CALL1 \x82\x03 CALL3 \xb0\x03 REF_END1 
-LOAD3 SCE081_003 REF6 z\x06 REF_END2 
-SEQ1 \x8c\x01 SEQ2 8\x8e SEQ3 \x03p\x00\x00
+SEQ3 REF7 \x10\x04 CALL1 \x82\x03 CALL7 \xb0\x03 CALL6 
+LOAD3 SCE081_003 REF6 z\x06 CALL8
+SEQ1 \x8c\x01 SEQ5 8\x8e CALL4 \x03p\x00\x00
  
 どこかで聞いたことがある名前だと記憶を探れば、前回も夢の中\nで、『教授』という名前が登場したような気がする。@
 そうだ、壁の向こうから聞こえた少女の声がいっていたのだ……\n「教授に気をつけて」と。@
@@ -52,9 +52,9 @@ SEQ1 \x8c\x01 SEQ2 8\x8e SEQ3 \x03p\x00\x00
 鼻筋はスッと通って唇はうすく、よく言えば理知的な、悪くいえ\nば酷薄な印象を形作っている。\p白髪が目立つ髪をオールバックに\n流し、油で固めている。\
 
 \x00
-SEQ6 REF6 \xbe\x06 CALL1 \x82\x03 CALL3 \xb0\x03 REF_END1 
-LOAD3 SCE081_004 REF6 \xb8\x08 REF_END2 
-SEQ1 \x8c\x01 SEQ2 <\x8e SEQ3 \x03z\x00\x00
+SEQ3 REF7 \xbe\x06 CALL1 \x82\x03 CALL7 \xb0\x03 CALL6 
+LOAD3 SCE081_004 REF6 \xb8\x08 CALL8
+SEQ1 \x8c\x01 SEQ5 <\x8e CALL4 \x03z\x00\x00
  
 教授\n　「前回までの経験に基づいて、単刀直入に話を進めさせてもら\n　　うよ」@
 \n教授はベッド横の椅子から立ち上がって、いった。@
@@ -63,9 +63,9 @@ SEQ1 \x8c\x01 SEQ2 <\x8e SEQ3 \x03z\x00\x00
 教授\n　「私はこの病院で、きみの症状を調べ始めてもう９ヶ月になる。\n　　\pつまり、きみは私と９ヶ月一緒にいるということになるね。\n　　\pしかしいま、きみは私を初めて見た人間だと思っている……\n　　そうだね？」\
 
 \x00
-SEQ6 REF6 \xfc\x08 CALL1 \x82\x03 CALL3 \xb0\x03 REF_END1 
-LOAD3 SCE081_005 REF6 \x1e\x0b REF_END2 
-SEQ1 \x8c\x01 SEQ2 @\x8e SEQ3 \x03\xa9\x00\x00
+SEQ3 REF7 \xfc\x08 CALL1 \x82\x03 CALL7 \xb0\x03 CALL6 
+LOAD3 SCE081_005 REF6 \x1e\x0b CALL8
+SEQ1 \x8c\x01 SEQ5 @\x8e CALL4 \x03\xa9\x00\x00
  
 拓司は小さく頷いた。\pこれは一体なんの冗談なのだろう？@
 夢にしては手が込んでいる。@
@@ -75,9 +75,9 @@ SEQ1 \x8c\x01 SEQ2 @\x8e SEQ3 \x03\xa9\x00\x00
 教授\n　「ところが君は、あらゆることを忘れている。\pたとえば自分が\n　　誰なのかということも－－」\
 
 \x00\x00\x00
-SEQ6 REF6 b\x0b CALL1 \x82\x03 CALL3 \xb0\x03 REF_END1 
-LOAD3 SCE081_006 REF6 @\x0e REF_END2 
-SEQ1 \x8c\x01 SEQ2 D\x8e SEQ3 \x03V\x00\x00
+SEQ3 REF7 b\x0b CALL1 \x82\x03 CALL7 \xb0\x03 CALL6 
+LOAD3 SCE081_006 REF6 @\x0e CALL8
+SEQ1 \x8c\x01 SEQ5 D\x8e CALL4 \x03V\x00\x00
  
 拓司\n　「待ってください」@
 \n拓司は教授の話を遮った。@
@@ -87,9 +87,9 @@ SEQ1 \x8c\x01 SEQ2 D\x8e SEQ3 \x03V\x00\x00
 教授\n　「なるほど。\p今回は虎菱拓司というのだね、きみの名前は？」\
 
 \x00\x00\x00
-SEQ6 REF6 \x84\x0e CALL1 \x82\x03 CALL3 \xb0\x03 REF_END1 
-LOAD3 SCE081_007 REF6 \x16\x10 REF_END2 
-SEQ1 \x8c\x01 SEQ2 H\x8e SEQ3 \x03\x88\x00\x00
+SEQ3 REF7 \x84\x0e CALL1 \x82\x03 CALL7 \xb0\x03 CALL6 
+LOAD3 SCE081_007 REF6 \x16\x10 CALL8
+SEQ1 \x8c\x01 SEQ5 H\x8e CALL4 \x03\x88\x00\x00
  
 拓司\n　「今回？」@
 教授\n　「前回、昏睡から醒めた君は藤田宣久と名乗ったよ。\p盛岡に住\n　　む学生だと」@
@@ -100,9 +100,9 @@ SEQ1 \x8c\x01 SEQ2 H\x8e SEQ3 \x03\x88\x00\x00
 拓司\n　「……」\
 
 \x00
-SEQ6 REF6 Z\x10 CALL1 \x82\x03 CALL3 \xb0\x03 REF_END1 
-LOAD3 SCE081_008 REF6 \xb4\x12 REF_END2 
-SEQ1 \x8c\x01 SEQ2 L\x8e SEQ3 \x03\xab\x00\x00
+SEQ3 REF7 Z\x10 CALL1 \x82\x03 CALL7 \xb0\x03 CALL6 
+LOAD3 SCE081_008 REF6 \xb4\x12 CALL8
+SEQ1 \x8c\x01 SEQ5 L\x8e CALL4 \x03\xab\x00\x00
  
 教授\n　「君は夢に感化されているのだよ。\p記憶喪失によって真っ白に\n　　なった君の意識に、夢が刷り込まれて、君はそれが真実だと\n　　認識する。\p今回は、それが『虎菱拓司の夢』だったというわ\n　　けだ」@
 拓司\n　「そんなことが……」@
@@ -114,9 +114,9 @@ SEQ1 \x8c\x01 SEQ2 L\x8e SEQ3 \x03\xab\x00\x00
 しかし……先ほどまで体験していた異常な出来事は、とてもでは\nないが現実世界に起きることとは思えない。\pこの世界のほうが、\n現実的といえばよほど現実的だ。\
 
 \x00
-SEQ6 REF6 \xf8\x12 CALL1 \x82\x03 CALL3 \xb0\x03 REF_END1 
-LOAD3 SCE081_009 REF6 \xde\x15 REF_END2 
-SEQ1 \x8c\x01 SEQ2 P\x8e SEQ3 \x03\xa7\x00\x00
+SEQ3 REF7 \xf8\x12 CALL1 \x82\x03 CALL7 \xb0\x03 CALL6 
+LOAD3 SCE081_009 REF6 \xde\x15 CALL8
+SEQ1 \x8c\x01 SEQ5 P\x8e CALL4 \x03\xa7\x00\x00
  
 教授\n　「混乱しているね。\pいつも目覚めた直後はそうだよ。@
 　　だが安心したまえ。\pすぐに治まる。\p感覚的な問題なのだろう\n　　ね、すぐにこの世界こそが真実の世界であることがわかる。@
@@ -127,9 +127,9 @@ SEQ1 \x8c\x01 SEQ2 P\x8e SEQ3 \x03\xa7\x00\x00
 拓司が何かを言い出すのを待っているような様子ではあったが、\nさりとて拓司には話すべきことなど何もない。\pとにかく、混乱が\n頭の中でグルグルと渦巻いているだけだ。\
 
 \x00\x00\x00
-SEQ6 REF6 "\x16 CALL1 \x82\x03 CALL3 \xb0\x03 REF_END1 
-LOAD3 SCE081_010 REF6 \xf8\x18 REF_END2 
-SEQ1 \x8c\x01 SEQ2 T\x8e SEQ3 \x03\xbb\x00\x00
+SEQ3 REF7 "\x16 CALL1 \x82\x03 CALL7 \xb0\x03 CALL6 
+LOAD3 SCE081_010 REF6 \xf8\x18 CALL8
+SEQ1 \x8c\x01 SEQ5 T\x8e CALL4 \x03\xbb\x00\x00
  
 拓司\n　「ここは……どこなんですか？」@
 教授\n　「都内の××病院の精神科だよ」@
@@ -139,9 +139,9 @@ SEQ1 \x8c\x01 SEQ2 T\x8e SEQ3 \x03\xbb\x00\x00
 教授\n　「安心したまえ、君はごくごく普通の学生だよ。\p実は殺人犯だ\n　　とか、宇宙人だとか、そんなことはないんだからね！\p　とり\n　　あえずのところ、私を信じていてくれればいい」\
 
 \x00
-SEQ6 REF6 <\x19 CALL1 \x82\x03 CALL3 \xb0\x03 REF_END1 
-LOAD3 SCE081_011 REF6 b\x1c REF_END2 
-SEQ1 \x8c\x01 SEQ2 X\x8e SEQ3 \x03U\x00\x00
+SEQ3 REF7 <\x19 CALL1 \x82\x03 CALL7 \xb0\x03 CALL6 
+LOAD3 SCE081_011 REF6 b\x1c CALL8
+SEQ1 \x8c\x01 SEQ5 X\x8e CALL4 \x03U\x00\x00
  
 教授は白衣の胸から煙草を取り出し、口にくわえた。@
 ドンドン。@
@@ -152,12 +152,12 @@ SEQ1 \x8c\x01 SEQ2 X\x8e SEQ3 \x03U\x00\x00
 \n拓司\n　「……雲居さん？！」\
 
 \x00\x00\x00
-SEQ6 REF6 \xa6\x1c CALL1 \x82\x03 CALL3 \xb0\x03 REF_END1 
-SEQ5 \x1c\x00 CALL1 \xaa\x00 CALL3 \xd4\x00 REF_END1 
-SEQ5 \x08\x01 CALL1 J\x00 REF_END2 
-LOAD2 PlayCD REF1 \x8e\x1e REF_END1 
-LOAD3 SCE081_012 REF6 \xaa\x1e REF_END2 
-SEQ1 \x8c\x01 SEQ2 \\\x8e SEQ3 \x03\x9e\x00\x00
+SEQ3 REF7 \xa6\x1c CALL1 \x82\x03 CALL7 \xb0\x03 CALL6 
+SEQ2 \x1c\x00 CALL1 \xaa\x00 CALL7 \xd4\x00 CALL6 
+SEQ2 \x08\x01 CALL1 J\x00 CALL8
+LOAD2 PlayCD REF1 \x8e\x1e CALL6 
+LOAD3 SCE081_012 REF6 \xaa\x1e CALL8
+SEQ1 \x8c\x01 SEQ5 \\\x8e CALL4 \x03\x9e\x00\x00
  
 雲居なたねだった。\p看護婦の横に立っているのは間違いなく雲\n居なたねだ。@
 それにしてもどうしたことだろう。@
@@ -167,9 +167,9 @@ SEQ1 \x8c\x01 SEQ2 \\\x8e SEQ3 \x03\x9e\x00\x00
 不審なものを覚えながらも、拓司はこたえた。\
 
 \x00
-SEQ6 REF6 \xee\x1e CALL1 \x82\x03 CALL3 \xb0\x03 REF_END1 
-LOAD3 SCE081_013 REF6 \xa0! REF_END2 
-SEQ1 \x8c\x01 SEQ2 `\x8e SEQ3 \x03\x82\x00\x00
+SEQ3 REF7 \xee\x1e CALL1 \x82\x03 CALL7 \xb0\x03 CALL6 
+LOAD3 SCE081_013 REF6 \xa0! CALL8
+SEQ1 \x8c\x01 SEQ5 `\x8e CALL4 \x03\x82\x00\x00
  
 拓司\n　「雲居なたねさん。\p俺の……夢の中の学園の同級生です。@
 　　どうして彼女がここに？」@
@@ -179,9 +179,9 @@ SEQ1 \x8c\x01 SEQ2 `\x8e SEQ3 \x03\x82\x00\x00
 \n教授は渋い顔をして、頭を振った。\
 
 \x00
-SEQ6 REF6 \xe4! CALL1 \x82\x03 CALL3 \xb0\x03 REF_END1 
-LOAD3 SCE081_014 REF6 &$ REF_END2 
-SEQ1 \x8c\x01 SEQ2 d\x8e SEQ3 \x03w\x00\x00
+SEQ3 REF7 \xe4! CALL1 \x82\x03 CALL7 \xb0\x03 CALL6 
+LOAD3 SCE081_014 REF6 &$ CALL8
+SEQ1 \x8c\x01 SEQ5 d\x8e CALL4 \x03w\x00\x00
  
 教授\n　「残念だがそれはできない。\p彼女は今、鎮静剤を投与されて朦\n　　朧状態だからね。\pなにしろ凶暴な子でね、部屋から出すとき\n　　はこうでもしないと暴れ回って始末に負えないのだよ」@
 拓司\n　「ということは……彼女もここの患者なんですか？」@
@@ -191,12 +191,12 @@ SEQ1 \x8c\x01 SEQ2 d\x8e SEQ3 \x03w\x00\x00
 ばたばたっ、と籠のなかの鳥がひとつ羽ばたきをした。\
 
 \x00\x00\x00
-SEQ6 REF6 j$ CALL1 \x82\x03 CALL3 \xb0\x03 REF_END1 \x03\x0f\x00\x00
+SEQ3 REF7 j$ CALL1 \x82\x03 CALL7 \xb0\x03 CALL6 \x03\x0f\x00\x00
 CHOICE
 拘束着の女の子に近づいて観察する\n鳥を見る\n\l0,2,
 ENDCHOICE
 
 \x00
-SEQ6 REF6 \x80& CALL1 \x82\x03 CALL3 \xb0\x03 CALL2 \x82\x03 REF_END2 
-LOAD3 TextClose REF2 \x02' REF_END1 
+SEQ3 REF7 \x80& CALL1 \x82\x03 CALL7 \xb0\x03 CALL5 \x82\x03 CALL8
+LOAD3 TextClose REF2 \x02' CALL6 
 END_FILE

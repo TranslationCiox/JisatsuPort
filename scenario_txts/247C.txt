@@ -1,10 +1,10 @@
 START_FILE
 \x035\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00^+\x00
-SEQ5 9\x00 REF_END3 
-LOAD6 .\\Data\\Script\\Bg.Fob REF3  \x00 REF_END2 
-LOAD4 BgAutoFadeIn REF3 J\x00 REF_END1 
-LOAD3 SCE247_001 REF6 n\x00 REF_END2 
-SEQ1 \x8c\x01 SEQ2 \x90\x91\x01\x0c\x00\x00\x00\x00"\x03 \x00\x00
+SEQ2 9\x00 CALL2 
+LOAD6 .\\Data\\Script\\Bg.Fob REF3  \x00 CALL8
+LOAD4 BgAutoFadeIn REF3 J\x00 CALL6 
+LOAD3 SCE247_001 REF6 n\x00 CALL8
+SEQ1 \x8c\x01 SEQ5 \x90\x91\x01\x0c\x00\x00\x00\x00"\x03 \x00\x00
  
 紅葉が立ち上がった。@
 拓司は紅葉の目の奥を見て、ちいさく頷いた。@
@@ -12,11 +12,11 @@ SEQ1 \x8c\x01 SEQ2 \x90\x91\x01\x0c\x00\x00\x00\x00"\x03 \x00\x00
 \n拓司\n　「他には……？」\
 
 \x00\x00\x00
-SEQ6 REF6 \xb2\x00 REF_END3 
-LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 R\x01 REF_END2 
-LOAD2 TextOn REF1 \x80\x01 REF_END1 
-LOAD3 SCE247_002 REF6 \x9c\x01 REF_END2 
-SEQ1 \x8c\x01 SEQ2 \x94\x91\x01\x0c\x00\x00\x00\x00"\x03k\x00\x00
+SEQ3 REF7 \xb2\x00 CALL2 
+LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 R\x01 CALL8
+LOAD2 TextOn REF1 \x80\x01 CALL6 
+LOAD3 SCE247_002 REF6 \x9c\x01 CALL8
+SEQ1 \x8c\x01 SEQ5 \x94\x91\x01\x0c\x00\x00\x00\x00"\x03k\x00\x00
  
 カンナ\n　「私は……怖い。\p最終波動がないっていうことが……証明でき\n　　ないなら、ここに残る」@
 \nカンナが目を反らした。@
@@ -27,9 +27,9 @@ SEQ1 \x8c\x01 SEQ2 \x94\x91\x01\x0c\x00\x00\x00\x00"\x03k\x00\x00
 \n錦城は最後まで強気を装っていた。\
 
 \x00\x00\x00
-SEQ6 REF6 \xe0\x01 CALL1 R\x01 CALL3 \x80\x01 REF_END1 
-LOAD3 SCE247_003 REF6 \xc6\x03 REF_END2 
-SEQ1 \x8c\x01 SEQ2 \x98\x91\x01\x0c\x00\x00\x00\x00"\x03g\x00\x00
+SEQ3 REF7 \xe0\x01 CALL1 R\x01 CALL7 \x80\x01 CALL6 
+LOAD3 SCE247_003 REF6 \xc6\x03 CALL8
+SEQ1 \x8c\x01 SEQ5 \x98\x91\x01\x0c\x00\x00\x00\x00"\x03g\x00\x00
  
 拓司\n　「わかった。\pそれじゃ、紅葉」@
 紅葉\n　「うん……」@
@@ -43,9 +43,9 @@ SEQ1 \x8c\x01 SEQ2 \x98\x91\x01\x0c\x00\x00\x00\x00"\x03g\x00\x00
 \n拓司は紅葉を制した。\
 
 \x00
-SEQ6 REF6 \n\x04 CALL1 R\x01 CALL3 \x80\x01 REF_END1 
-LOAD3 SCE247_004 REF6 \xe0\x05 REF_END2 
-SEQ1 \x8c\x01 SEQ2 \x9c\x91\x01\x0c\x00\x00\x00\x00"\x03`\x00\x00
+SEQ3 REF7 \n\x04 CALL1 R\x01 CALL7 \x80\x01 CALL6 
+LOAD3 SCE247_004 REF6 \xe0\x05 CALL8
+SEQ1 \x8c\x01 SEQ5 \x9c\x91\x01\x0c\x00\x00\x00\x00"\x03`\x00\x00
  
 拓司\n　「もう、そんなことは関係ないんだ。\p設定なんかどうでもいい。\n　　\p俺はお前が好きだ。\pおさななじみだとか、背のたかさがどう\n　　だとか、顔立ちがどうだとか、性格がどうだとか、口調がど\n　　うだとか……そんなことを抜きにして、お前という人間が好\n　　きなんだ。\pだから、いいんだ」@
 紅葉\n　「……」@
@@ -53,9 +53,9 @@ SEQ1 \x8c\x01 SEQ2 \x9c\x91\x01\x0c\x00\x00\x00\x00"\x03`\x00\x00
 紅葉\n　「うん……行こ」\
 
 \x00\x00\x00
-SEQ6 REF6 $\x06 CALL1 R\x01 CALL3 \x80\x01 REF_END1 
-LOAD3 SCE247_005 REF6 \xde\x07 REF_END2 
-SEQ1 \x8c\x01 SEQ2 \xa0\x91\x01\x0c\x00\x00\x00\x00"\x03)\x00\x00
+SEQ3 REF7 $\x06 CALL1 R\x01 CALL7 \x80\x01 CALL6 
+LOAD3 SCE247_005 REF6 \xde\x07 CALL8
+SEQ1 \x8c\x01 SEQ5 \xa0\x91\x01\x0c\x00\x00\x00\x00"\x03)\x00\x00
  
 恐る恐る、紅葉は拓司の手に触れた。@
 拓司はその手を強く握りしめた。@
@@ -63,15 +63,15 @@ SEQ1 \x8c\x01 SEQ2 \xa0\x91\x01\x0c\x00\x00\x00\x00"\x03)\x00\x00
 ドアを開き、外の世界へと。\
 
 \x00\x00\x00
-SEQ6 REF6 "\x08 CALL1 R\x01 CALL3 \x80\x01 REF_END1 
-LOAD3 SCE247_006 REF6 \x00\t REF_END2 
-SEQ1 \x8c\x01 SEQ2 \xa4\x91\x01\x0c\x00\x00\x00\x00"
-SEQ5 \xc8\x00 CALL1  \x00 CALL3 J\x00 REF_END1 
-SEQ5 \x02\x00 REF_END3  \x1e\x04\x00\x00\r\x00\x00\x1e\x17\x00 REF_END3  \x1e\x08\x00\x00\r\x00\x00\x1e\x01\x00 REF_END3 
-LOAD6 .\\Data\\Script\\Bgm.Fob REF2 \xc6\t REF_END2 
-LOAD2 SePlay REF1 \xf0\t REF_END1 
-SEQ5 \t\x01 CALL1 \xc6\t REF_END2 
-LOAD2 PlayCD REF1 2\n REF_END1 \x03\xbb\x00\x00
+SEQ3 REF7 "\x08 CALL1 R\x01 CALL7 \x80\x01 CALL6 
+LOAD3 SCE247_006 REF6 \x00\t CALL8
+SEQ1 \x8c\x01 SEQ5 \xa4\x91\x01\x0c\x00\x00\x00\x00"
+SEQ2 \xc8\x00 CALL1  \x00 CALL7 J\x00 CALL6 
+SEQ2 \x02\x00 CALL2  \x1e\x04\x00\x00\r\x00\x00\x1e\x17\x00 CALL2  \x1e\x08\x00\x00\r\x00\x00\x1e\x01\x00 CALL2 
+LOAD6 .\\Data\\Script\\Bgm.Fob REF2 \xc6\t CALL8
+LOAD2 SePlay REF1 \xf0\t CALL6 
+SEQ2 \t\x01 CALL1 \xc6\t CALL8
+LOAD2 PlayCD REF1 2\n CALL6 \x03\xbb\x00\x00
  
 拓司\n　「これは……」@
 \n思わず絶句した。@
@@ -85,17 +85,17 @@ LOAD2 PlayCD REF1 2\n REF_END1 \x03\xbb\x00\x00
 あの工業団地の廃墟にさらなる歳月の洗礼を加えて、行き着く果\nてまで荒廃を深化させた－－そんな感じがする。\
 
 \x00
-SEQ6 REF6 N\n CALL1 R\x01 CALL3 \x80\x01 REF_END1 
-LOAD3 SCE247_007 REF6 t\r REF_END2 
-SEQ1 \x8c\x01 SEQ2 \xa8\x91\x01\x0c\x00\x00\x00\x00"\x03`\x00\x00
+SEQ3 REF7 N\n CALL1 R\x01 CALL7 \x80\x01 CALL6 
+LOAD3 SCE247_007 REF6 t\r CALL8
+SEQ1 \x8c\x01 SEQ5 \xa8\x91\x01\x0c\x00\x00\x00\x00"\x03`\x00\x00
  
 腐敗した死体が転がっているのを予想していたが、そのようなも\nのはどこにもない。\p骨や服のかけらすら見つけることができない。\n\pただ、壁にべったりとこびりついている染みが、どこか血の痕を\n想起させる。\pまた、しなびた皮膚のような、毛髪の一部のような、\n正体不明のものがべったりと張り付いている壁もある。@
 もしかしたら、それこそが学生たちのなれの果てなのかもしれな\nい……。\
 
 \x00\x00\x00
-SEQ6 REF6 \xb8\r CALL1 R\x01 CALL3 \x80\x01 REF_END1 
-LOAD3 SCE247_008 REF6 r\x0f REF_END2 
-SEQ1 \x8c\x01 SEQ2 \xac\x91\x01\x0c\x00\x00\x00\x00"\x03D\x00\x00
+SEQ3 REF7 \xb8\r CALL1 R\x01 CALL7 \x80\x01 CALL6 
+LOAD3 SCE247_008 REF6 r\x0f CALL8
+SEQ1 \x8c\x01 SEQ5 \xac\x91\x01\x0c\x00\x00\x00\x00"\x03D\x00\x00
  
 紅葉\n　「どうしたの、これ……？\p　まるで……まるで……」@
 拓司\n　「何十年も経っているみたいだ。\pあの部屋にいるあいだに、い\n　　ったい何があったんだ……？」@
@@ -103,17 +103,17 @@ SEQ1 \x8c\x01 SEQ2 \xac\x91\x01\x0c\x00\x00\x00\x00"\x03D\x00\x00
 拓司はその手の上に自分の手を重ねて、力強く頷いた。\
 
 \x00\x00\x00
-SEQ6 REF6 \xb6\x0f CALL1 R\x01 CALL3 \x80\x01 REF_END1 
-LOAD3 SCE247_009 REF6 \x00\x11 REF_END2 
-SEQ1 \x8c\x01 SEQ2 \xb0\x91\x01\x0c\x00\x00\x00\x00"\x03?\x00\x00
+SEQ3 REF7 \xb6\x0f CALL1 R\x01 CALL7 \x80\x01 CALL6 
+LOAD3 SCE247_009 REF6 \x00\x11 CALL8
+SEQ1 \x8c\x01 SEQ5 \xb0\x91\x01\x0c\x00\x00\x00\x00"\x03?\x00\x00
  
 拓司\n　「考えるのはやめよう。\p俺たちは最初から、起こっていること\n　　の意味を考え続けてきた。\p説明できない状況に筋を一本通そ\n　　うと……あがいてきた。\pでも、そんなの無駄なんだ。@
 　　意味がわからないんじゃない。\p意味なんてないんだ」\
 
 \x00
-SEQ6 REF6 D\x11 CALL1 R\x01 CALL3 \x80\x01 REF_END1 
-LOAD3 SCE247_010 REF6 z\x12 REF_END2 
-SEQ1 \x8c\x01 SEQ2 \xb4\x91\x01\x0c\x00\x00\x00\x00"\x03\x99\x00\x00
+SEQ3 REF7 D\x11 CALL1 R\x01 CALL7 \x80\x01 CALL6 
+LOAD3 SCE247_010 REF6 z\x12 CALL8
+SEQ1 \x8c\x01 SEQ5 \xb4\x91\x01\x0c\x00\x00\x00\x00"\x03\x99\x00\x00
  
 ２人の足音は、校舎の中に大きく響き渡った。@
 不自然な響き方だった。@
@@ -126,9 +126,9 @@ SEQ1 \x8c\x01 SEQ2 \xb4\x91\x01\x0c\x00\x00\x00\x00"\x03\x99\x00\x00
 まっすぐ歩いているつもりなのに、壁に体当たりしているときも\nある。\
 
 \x00\x00\x00
-SEQ6 REF6 \xbe\x12 CALL1 R\x01 CALL3 \x80\x01 REF_END1 
-LOAD3 SCE247_011 REF6 \\\x15 REF_END2 
-SEQ1 \x8c\x01 SEQ2 \xb8\x91\x01\x0c\x00\x00\x00\x00"\x03M\x00\x00
+SEQ3 REF7 \xbe\x12 CALL1 R\x01 CALL7 \x80\x01 CALL6 
+LOAD3 SCE247_011 REF6 \\\x15 CALL8
+SEQ1 \x8c\x01 SEQ5 \xb8\x91\x01\x0c\x00\x00\x00\x00"\x03M\x00\x00
  
 それでも２人は歩き続けた。@
 階段を降り、廊下を歩いてゆく。@
@@ -137,12 +137,12 @@ SEQ1 \x8c\x01 SEQ2 \xb8\x91\x01\x0c\x00\x00\x00\x00"\x03M\x00\x00
 しかし、拓司は身体の隅々に残ったエネルギーを総動員して、そ\nのまえに立った。\
 
 \x00
-SEQ6 REF6 \xa0\x15 CALL1 R\x01 CALL3 \x80\x01 REF_END1 
-SEQ5 \x02\x00 CALL1 \xc6\t REF_END2 
-LOAD2 SeStop REF1 4\x17 CALL2 \xc6\t REF_END2 
-LOAD2 StopCD REF1 \\\x17 REF_END1 
-LOAD3 SCE247_012 REF6 x\x17 REF_END2 
-SEQ1 \x8c\x01 SEQ2 \xbc\x91\x01\x0c\x00\x00\x00\x00"\x03D\x00\x00
+SEQ3 REF7 \xa0\x15 CALL1 R\x01 CALL7 \x80\x01 CALL6 
+SEQ2 \x02\x00 CALL1 \xc6\t CALL8
+LOAD2 SeStop REF1 4\x17 CALL5 \xc6\t CALL8
+LOAD2 StopCD REF1 \\\x17 CALL6 
+LOAD3 SCE247_012 REF6 x\x17 CALL8
+SEQ1 \x8c\x01 SEQ5 \xbc\x91\x01\x0c\x00\x00\x00\x00"\x03D\x00\x00
  
 拓司\n　「……ここだ」@
 \n壁だ。@
@@ -154,9 +154,9 @@ SEQ1 \x8c\x01 SEQ2 \xbc\x91\x01\x0c\x00\x00\x00\x00"\x03D\x00\x00
 いや、そもそもそこには何かがあるのだろうか？\
 
 \x00\x00\x00
-SEQ6 REF6 \xbc\x17 CALL1 R\x01 CALL3 \x80\x01 REF_END1 
-LOAD3 SCE247_013 REF6 \x06\x19 REF_END2 
-SEQ1 \x8c\x01 SEQ2 \xc0\x91\x01\x0c\x00\x00\x00\x00"\x03_\x00\x00
+SEQ3 REF7 \xbc\x17 CALL1 R\x01 CALL7 \x80\x01 CALL6 
+LOAD3 SCE247_013 REF6 \x06\x19 CALL8
+SEQ1 \x8c\x01 SEQ5 \xc0\x91\x01\x0c\x00\x00\x00\x00"\x03_\x00\x00
  
 拓司は考えなかった。@
 /*▲SE15　ループ再生（停止まで）*/\a2,2,15,1,/*■CG52　表示（クロスフェード）*/\a7,-2,-2,0,\a0,51,2,0,\a6,-2,0,0,手にした椅子の脚を、がつがつと壁に叩き付けてゆく。@
@@ -166,10 +166,10 @@ SEQ1 \x8c\x01 SEQ2 \xc0\x91\x01\x0c\x00\x00\x00\x00"\x03_\x00\x00
 紅葉\n　「ええ！」\
 
 
-SEQ6 REF6 J\x19 CALL1 R\x01 CALL3 \x80\x01 REF_END1 
-LOAD3 SCE247_014 REF6 \x00\x1b REF_END2 
-SEQ1 \x8c\x01 SEQ2 \xc4\x91\x01\x0c\x00\x00\x00\x00"
-SEQ5 \x02\x00 REF_END3  \x1e\x04\x00\x00\r\x00\x00\x1e\x0f\x00 REF_END3  \x1e\x08\x00\x00\r\x00\x00\x1e\x01\x00 CALL1 \xc6\t CALL3 \xf0\t REF_END1 \x03\xae\x00\x00
+SEQ3 REF7 J\x19 CALL1 R\x01 CALL7 \x80\x01 CALL6 
+LOAD3 SCE247_014 REF6 \x00\x1b CALL8
+SEQ1 \x8c\x01 SEQ5 \xc4\x91\x01\x0c\x00\x00\x00\x00"
+SEQ2 \x02\x00 CALL2  \x1e\x04\x00\x00\r\x00\x00\x1e\x0f\x00 CALL2  \x1e\x08\x00\x00\r\x00\x00\x1e\x01\x00 CALL1 \xc6\t CALL7 \xf0\t CALL6 \x03\xae\x00\x00
  
 ２人は取り憑かれたように、椅子の脚を壁に叩き付けた。@
 一箇所に狙いを絞って叩きつけてゆく。@
@@ -184,9 +184,9 @@ SEQ5 \x02\x00 REF_END3  \x1e\x04\x00\x00\r\x00\x00\x1e\x0f\x00 REF_END3  \x1e\x0
 １０センチほどしかない！\
 
 
-SEQ6 REF6 \xac\x1b CALL1 R\x01 CALL3 \x80\x01 REF_END1 
-LOAD3 SCE247_015 REF6 \x9e\x1e REF_END2 
-SEQ1 \x8c\x01 SEQ2 \xc8\x91\x01\x0c\x00\x00\x00\x00"\x03\x8d\x00\x00
+SEQ3 REF7 \xac\x1b CALL1 R\x01 CALL7 \x80\x01 CALL6 
+LOAD3 SCE247_015 REF6 \x9e\x1e CALL8
+SEQ1 \x8c\x01 SEQ5 \xc8\x91\x01\x0c\x00\x00\x00\x00"\x03\x8d\x00\x00
  
 拓司はおそるおそる、穴に顔を近づけた。@
 壁の向こうがどうなっているのか、それだけでも確認して安心し\nておきかった。@
@@ -200,9 +200,9 @@ SEQ1 \x8c\x01 SEQ2 \xc8\x91\x01\x0c\x00\x00\x00\x00"\x03\x8d\x00\x00
 \nぴったりと穴に顔を張り付かせて、壁の向こうで誰かがこちらを\nのぞき込んでいたのだ。\
 
 \x00\x00\x00
-SEQ6 REF6 \xe2\x1e CALL1 R\x01 CALL3 \x80\x01 REF_END1 
-LOAD3 SCE247_016 REF6 P! REF_END2 
-SEQ1 \x8c\x01 SEQ2 \xcc\x91\x01\x0c\x00\x00\x00\x00"\x03m\x00\x00
+SEQ3 REF7 \xe2\x1e CALL1 R\x01 CALL7 \x80\x01 CALL6 
+LOAD3 SCE247_016 REF6 P! CALL8
+SEQ1 \x8c\x01 SEQ5 \xcc\x91\x01\x0c\x00\x00\x00\x00"\x03m\x00\x00
  
 拓司\n　「だ、誰だッ！」@
 紅葉\n　「どうしたの、拓司？！」@
@@ -214,9 +214,9 @@ SEQ1 \x8c\x01 SEQ2 \xcc\x91\x01\x0c\x00\x00\x00\x00"\x03m\x00\x00
 \n近づいてきた紅葉を突き飛ばして、拓司は狂ったように壁に体当\nたりを繰り返した。\
 
 \x00\x00\x00
-SEQ6 REF6 \x94! CALL1 R\x01 CALL3 \x80\x01 REF_END1 
-LOAD3 SCE247_017 REF6 \x82# REF_END2 
-SEQ1 \x8c\x01 SEQ2 \xd0\x91\x01\x0c\x00\x00\x00\x00"\x03n\x00\x00
+SEQ3 REF7 \x94! CALL1 R\x01 CALL7 \x80\x01 CALL6 
+LOAD3 SCE247_017 REF6 \x82# CALL8
+SEQ1 \x8c\x01 SEQ5 \xd0\x91\x01\x0c\x00\x00\x00\x00"\x03n\x00\x00
  
 拓司\n　「お前がやったのか？！\p　お前がこんなことの元凶なのかッ？\n　　！\p　ふざけるなよ、畜生！」@
 \n拓司は、穴の奥にどんよりと浮かんでいたその目を見たことがあ\nるように思えた。@
@@ -231,16 +231,16 @@ SEQ1 \x8c\x01 SEQ2 \xd0\x91\x01\x0c\x00\x00\x00\x00"\x03n\x00\x00
 狂気を呼び込み、それに容易に支配される目だった。\
 
 \x00\x00\x00
-SEQ6 REF6 \xc6# CALL1 R\x01 CALL3 \x80\x01 REF_END1 
-LOAD3 SCE247_018 REF6 \xb8% REF_END2 
-SEQ1 \x8c\x01 SEQ2 \xd4\x91\x01\x0c\x00\x00\x00\x00"\x03C\x00\x00
+SEQ3 REF7 \xc6# CALL1 R\x01 CALL7 \x80\x01 CALL6 
+LOAD3 SCE247_018 REF6 \xb8% CALL8
+SEQ1 \x8c\x01 SEQ5 \xd4\x91\x01\x0c\x00\x00\x00\x00"\x03C\x00\x00
  
 体当たりを繰り返しているうちに、拓司のシャツの肩の部分には\n真っ赤な血が滲み始めた。\pそれに気づいてようやく拓司は体当た\nりをやめ、今度は椅子の脚をふりかぶって、メチャクチャに壁に\n叩き付け始めた。\pガンガンという音が頭が割れそうなくらい大\nきく響き渡る。\
 
 \x00\x00\x00
-SEQ6 REF6 \xfc% CALL1 R\x01 CALL3 \x80\x01 REF_END1 
-LOAD3 SCE247_019 REF6 B' REF_END2 
-SEQ1 \x8c\x01 SEQ2 \xd8\x91\x01\x0c\x00\x00\x00\x00"\x03v\x00\x00
+SEQ3 REF7 \xfc% CALL1 R\x01 CALL7 \x80\x01 CALL6 
+LOAD3 SCE247_019 REF6 B' CALL8
+SEQ1 \x8c\x01 SEQ5 \xd8\x91\x01\x0c\x00\x00\x00\x00"\x03v\x00\x00
  
 紅葉\n　「拓司！\p　拓司！」@
 拓司\n　「！」@
@@ -252,9 +252,9 @@ SEQ1 \x8c\x01 SEQ2 \xd8\x91\x01\x0c\x00\x00\x00\x00"\x03v\x00\x00
 しかし、そうではないことを、拓司は知っていた。\
 
 \x00\x00
-SEQ6 REF6 \x86' CALL1 R\x01 CALL3 \x80\x01 REF_END1 
-LOAD3 SCE247_020 REF6 \x98) REF_END2 
-SEQ1 \x8c\x01 SEQ2 \xdc\x91\x01\x0c\x00\x00\x00\x00"\x03,\x00\x00
+SEQ3 REF7 \x86' CALL1 R\x01 CALL7 \x80\x01 CALL6 
+LOAD3 SCE247_020 REF6 \x98) CALL8
+SEQ1 \x8c\x01 SEQ5 \xdc\x91\x01\x0c\x00\x00\x00\x00"\x03,\x00\x00
  
 紅葉\n　「ねえ、なに？\p　なんなの、この音ッ？！」@
 拓司\n　「わからない！\p　わからないけど……！」@
@@ -263,12 +263,12 @@ SEQ1 \x8c\x01 SEQ2 \xdc\x91\x01\x0c\x00\x00\x00\x00"\x03,\x00\x00
 最終波動がやってきたのだ。\
 
 \x00
-SEQ6 REF6 \xdc) CALL1 R\x01 CALL3 \x80\x01 REF_END1 \x03\r\x00\x00
+SEQ3 REF7 \xdc) CALL1 R\x01 CALL7 \x80\x01 CALL6 \x03\r\x00\x00
 CHOICE
 シェルターに駆け戻る\n穴を広げる\n\l0,2,
 ENDCHOICE
 
 \x00\x00\x00
-SEQ6 REF6 \xc6* CALL1 R\x01 CALL3 \x80\x01 CALL2 R\x01 REF_END2 
-LOAD3 TextClose REF2 @+ REF_END1 
+SEQ3 REF7 \xc6* CALL1 R\x01 CALL7 \x80\x01 CALL5 R\x01 CALL8
+LOAD3 TextClose REF2 @+ CALL6 
 END_FILE

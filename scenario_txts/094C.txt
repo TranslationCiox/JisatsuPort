@@ -1,9 +1,9 @@
 START_FILE
 \xd6\x06\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\x82\x05\x00
-LOAD6 .\\Data\\Script\\Bgm.Fob REF2 \x06\x00 REF_END2 
-LOAD2 StopCD REF1 0\x00 REF_END1 
-LOAD3 SCE094_001 REF6 L\x00 REF_END2 
-SEQ1 \x8c\x01 SEQ2 \x80\xa2 SEQ3 \x03\x8e\x00\x00
+LOAD6 .\\Data\\Script\\Bgm.Fob REF2 \x06\x00 CALL8
+LOAD2 StopCD REF1 0\x00 CALL6 
+LOAD3 SCE094_001 REF6 L\x00 CALL8
+SEQ1 \x8c\x01 SEQ5 \x80\xa2 CALL4 \x03\x8e\x00\x00
  
 御堂の眼に、獰猛なひかりが宿った。@
 \n御堂\n　「虎菱、まさかてめえまでいかれちまったんじゃねえだろうな\n　　？」@
@@ -15,18 +15,18 @@ SEQ1 \x8c\x01 SEQ2 \x80\xa2 SEQ3 \x03\x8e\x00\x00
 \n拓司はぴしゃりとさえぎった。\
 
 \x00\x00\x00
-SEQ6 REF6 \x90\x00 REF_END3 
-LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 \xe8\x02 REF_END2 
-LOAD2 TextOn REF1 \x16\x03 REF_END1 
-LOAD3 SCE094_002 REF6 2\x03 REF_END2 
-SEQ1 \x8c\x01 SEQ2 \x84\xa2 SEQ3 \x03P\x00\x00
+SEQ3 REF7 \x90\x00 CALL2 
+LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 \xe8\x02 CALL8
+LOAD2 TextOn REF1 \x16\x03 CALL6 
+LOAD3 SCE094_002 REF6 2\x03 CALL8
+SEQ1 \x8c\x01 SEQ5 \x84\xa2 CALL4 \x03P\x00\x00
  
 拓司\n　「『ここを出ていきたい人間は、いつでもそれを実行すること\n　　ができる』。\pこれを最低限のルールにしよう。\p自殺波動とか、\n　　最終波動とか、ラジオからの指令電波とか、わからないこと\n　　が多すぎる。\p何が本当か分からない現状、何が正しい判断な\n　　のか、答は自分の中にしかない。\p自分で判断するんだ」\
 
 \x00
-SEQ6 REF6 v\x03 CALL1 \xe8\x02 CALL3 \x16\x03 REF_END1 
-SEQ5 \xc8\x00 REF_END3 
-LOAD6 .\\Data\\Script\\Bg.Fob REF3 \n\x05 REF_END2 
-LOAD4 BgAutoFadeIn REF3 4\x05 CALL2 \xe8\x02 REF_END2 
-LOAD3 TextClose REF2 d\x05 REF_END1 
+SEQ3 REF7 v\x03 CALL1 \xe8\x02 CALL7 \x16\x03 CALL6 
+SEQ2 \xc8\x00 CALL2 
+LOAD6 .\\Data\\Script\\Bg.Fob REF3 \n\x05 CALL8
+LOAD4 BgAutoFadeIn REF3 4\x05 CALL5 \xe8\x02 CALL8
+LOAD3 TextClose REF2 d\x05 CALL6 
 END_FILE

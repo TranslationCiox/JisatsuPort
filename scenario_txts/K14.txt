@@ -1,13 +1,13 @@
 START_FILE
 \xa1\x13\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\\\x10\x00
-SEQ5 \xc8\x00 REF_END3 
-LOAD6 .\\Data\\Script\\Bg.Fob REF3  \x00 REF_END2 
-LOAD4 BgAutoFadeIn REF3 J\x00 REF_END1 
-SEQ5 \x08\x01 REF_END3 
-LOAD6 .\\Data\\Script\\Bgm.Fob REF2 \x88\x00 REF_END2 
-LOAD2 PlayCD REF1 \xb2\x00 REF_END1 
-LOAD3 SCEK14_001 REF6 \xce\x00 REF_END2 
-SEQ1 \x8c\x01 SEQ2 \xb0\xad\x01\x0c\x00\x00\x00\x00"\x03\x9d\x00\x00
+SEQ2 \xc8\x00 CALL2 
+LOAD6 .\\Data\\Script\\Bg.Fob REF3  \x00 CALL8
+LOAD4 BgAutoFadeIn REF3 J\x00 CALL6 
+SEQ2 \x08\x01 CALL2 
+LOAD6 .\\Data\\Script\\Bgm.Fob REF2 \x88\x00 CALL8
+LOAD2 PlayCD REF1 \xb2\x00 CALL6 
+LOAD3 SCEK14_001 REF6 \xce\x00 CALL8
+SEQ1 \x8c\x01 SEQ5 \xb0\xad\x01\x0c\x00\x00\x00\x00"\x03\x9d\x00\x00
  
 　計画は、それから３日後に実行に移された。@
 カンナのお母さんが実家の法事で家を留守にする日。@
@@ -21,11 +21,11 @@ SEQ1 \x8c\x01 SEQ2 \xb0\xad\x01\x0c\x00\x00\x00\x00"\x03\x9d\x00\x00
 憑き物が落ちたようないきいきとした顔が鏡の中にあったのを、\n鮮やかに覚えている。@
 サッパリしていて、自分でもちょっとすてきかな、などと思った\nくらいだった。\w\z
 \x00
-SEQ6 REF6 \x12\x01 REF_END3 
-LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 \xa6\x03 REF_END2 
-LOAD2 TextOn REF1 \xd4\x03 REF_END1 
-LOAD3 SCEK14_002 REF6 \xf0\x03 REF_END2 
-SEQ1 \x8c\x01 SEQ2 \xb4\xad\x01\x0c\x00\x00\x00\x00"\x03\xb4\x00\x00
+SEQ3 REF7 \x12\x01 CALL2 
+LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 \xa6\x03 CALL8
+LOAD2 TextOn REF1 \xd4\x03 CALL6 
+LOAD3 SCEK14_002 REF6 \xf0\x03 CALL8
+SEQ1 \x8c\x01 SEQ5 \xb4\xad\x01\x0c\x00\x00\x00\x00"\x03\xb4\x00\x00
  
 　私はそのまま約束のビジネスホテルに向かった。@
 ××予備校の夏期講習を受ける地方の学生がよく長期利用するホ\nテルで、時期がちょうどそんな時期だったこともあって、私たち\nみたいな学生が２人で向かったからといってとりわけ怪しまれる\nことはないだろうと……そう目星をつけてのことだった。@
@@ -36,9 +36,9 @@ SEQ1 \x8c\x01 SEQ2 \xb4\xad\x01\x0c\x00\x00\x00\x00"\x03\xb4\x00\x00
 わくわくしていた。@
 ゆきといっしょに、どこか温泉にでも旅行に出かけるような、そ\nんな気分だった。\w\z
 \x00
-SEQ6 REF6 4\x04 CALL1 \xa6\x03 CALL3 \xd4\x03 REF_END1 
-LOAD3 SCEK14_003 REF6 >\x07 REF_END2 
-SEQ1 \x8c\x01 SEQ2 \xb8\xad\x01\x0c\x00\x00\x00\x00"\x03k\x00\x00
+SEQ3 REF7 4\x04 CALL1 \xa6\x03 CALL7 \xd4\x03 CALL6 
+LOAD3 SCEK14_003 REF6 >\x07 CALL8
+SEQ1 \x8c\x01 SEQ5 \xb8\xad\x01\x0c\x00\x00\x00\x00"\x03k\x00\x00
  
 　８時を少し回ったころ、ドアがノックされた。@
 「－－月代さん。私」@
@@ -48,9 +48,9 @@ SEQ1 \x8c\x01 SEQ2 \xb8\xad\x01\x0c\x00\x00\x00\x00"\x03k\x00\x00
 「うん」とゆきはいった。@
 「終わったよ」\w\z
 \x00\x00\x00
-SEQ6 REF6 \x82\x07 CALL1 \xa6\x03 CALL3 \xd4\x03 REF_END1 
-LOAD3 SCEK14_004 REF6 h\t REF_END2 
-SEQ1 \x8c\x01 SEQ2 \xbc\xad\x01\x0c\x00\x00\x00\x00"\x03z\x00\x00
+SEQ3 REF7 \x82\x07 CALL1 \xa6\x03 CALL7 \xd4\x03 CALL6 
+LOAD3 SCEK14_004 REF6 h\t CALL8
+SEQ1 \x8c\x01 SEQ5 \xbc\xad\x01\x0c\x00\x00\x00\x00"\x03z\x00\x00
  
 ドアの向こうに立っていたゆきは、さすがにひどく疲れているよ\nうに見えたけれど、いま人を殺してきたばかりには見えなかった。\n\p取り乱したような様子もなくて、むしろ穏やかさがゆきのまわり\nには漂っていた。@
 とてもリラックスしているみたいだった。@
@@ -60,9 +60,9 @@ SEQ1 \x8c\x01 SEQ2 \xbc\xad\x01\x0c\x00\x00\x00\x00"\x03z\x00\x00
 「かわいいね、その服」と私はいった。@
 「月代さんもかわいいよ」と、ゆきは照れくさそうにいった。\w\z
 \x00
-SEQ6 REF6 \xac\t CALL1 \xa6\x03 CALL3 \xd4\x03 REF_END1 
-LOAD3 SCEK14_005 REF6 \xce\x0b REF_END2 
-SEQ1 \x8c\x01 SEQ2 \xc0\xad\x01\x0c\x00\x00\x00\x00"\x03p\x00\x00
+SEQ3 REF7 \xac\t CALL1 \xa6\x03 CALL7 \xd4\x03 CALL6 
+LOAD3 SCEK14_005 REF6 \xce\x0b CALL8
+SEQ1 \x8c\x01 SEQ5 \xc0\xad\x01\x0c\x00\x00\x00\x00"\x03p\x00\x00
  
 －－あとでわかったことだけれど、父親は死んではいなかった。\n睡眠中に左胸を包丁でひとつきにされた父親は、その日の昼過ぎ\nに瀕死の重体で発見されて、そして奇跡的に一命を取り留めた。@
 仕事を終えて家を出るときに、ゆきは玄関の鍵を閉め忘れたのだ\nった。@
@@ -70,14 +70,14 @@ SEQ1 \x8c\x01 SEQ2 \xc0\xad\x01\x0c\x00\x00\x00\x00"\x03p\x00\x00
 このことは、人生のひとつの真実を表しているように思う。@
 人生はやはり、オチのない悪い冗談なのだという真実を。\w\z
 \x00\x00\x00
-SEQ6 REF6 \x12\x0c CALL1 \xa6\x03 CALL3 \xd4\x03 REF_END1 
-LOAD3 SCEK14_006 REF6 \x0c\x0e REF_END2 
-SEQ1 \x8c\x01 SEQ2 \xc4\xad\x01\x0c\x00\x00\x00\x00"\x03j\x00\x00
+SEQ3 REF7 \x12\x0c CALL1 \xa6\x03 CALL7 \xd4\x03 CALL6 
+LOAD3 SCEK14_006 REF6 \x0c\x0e CALL8
+SEQ1 \x8c\x01 SEQ5 \xc4\xad\x01\x0c\x00\x00\x00\x00"\x03j\x00\x00
  
 でも、そんなことはあとでわかったことで、そのときの私たちは、\n何もかもを終わらせたんだという（あるいは終わらせるんだとい\nう）、さっぱりした気分でいっぱいだった。@
 \n私たちは、あらかじめ何軒かのドラッグストアから買い集めてお\nいた××××という薬を鞄から出して、銀紙の上に何瓶分かの錠\n剤をまとめて載せ、ライターであぶって、ドロドロに溶かした。@
 そして、その朝コンビニで買ってきたプレーンヨーグルトに混ぜ\nた。\w\z
 \x00\x00\x00
-SEQ6 REF6 P\x0e CALL1 \xa6\x03 CALL3 \xd4\x03 CALL2 \xa6\x03 REF_END2 
-LOAD3 TextClose REF2 >\x10 REF_END1 
+SEQ3 REF7 P\x0e CALL1 \xa6\x03 CALL7 \xd4\x03 CALL5 \xa6\x03 CALL8
+LOAD3 TextClose REF2 >\x10 CALL6 
 END_FILE

@@ -1,9 +1,9 @@
 START_FILE
 \xc3\n\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xcc\x08\x00
-LOAD6 .\\Data\\Script\\Bgm.Fob REF2 \x06\x00 REF_END2 
-LOAD2 StopCD REF1 0\x00 REF_END1 
-LOAD3 SCE087_001 REF6 L\x00 REF_END2 
-SEQ1 \x8c\x01 SEQ2 \x90\x97 SEQ3 \x03\x9e\x00\x00
+LOAD6 .\\Data\\Script\\Bgm.Fob REF2 \x06\x00 CALL8
+LOAD2 StopCD REF1 0\x00 CALL6 
+LOAD3 SCE087_001 REF6 L\x00 CALL8
+SEQ1 \x8c\x01 SEQ5 \x90\x97 CALL4 \x03\x9e\x00\x00
  
 　実験室のドアを開けた拓司は、思わず声をあげた。@
 　実験室の壁全体が、銀色に輝いていたのである。\pそして、ムッ\n　と息詰まるようなシンナーの匂い……。@
@@ -16,11 +16,11 @@ SEQ1 \x8c\x01 SEQ2 \x90\x97 SEQ3 \x03\x9e\x00\x00
 カンナ\n　「ああ、このピカピカね……コレよ」\
 
 \x00\x00\x00
-SEQ6 REF6 \x90\x00 REF_END3 
-LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 (\x03 REF_END2 
-LOAD2 TextOn REF1 V\x03 REF_END1 
-LOAD3 SCE087_002 REF6 r\x03 REF_END2 
-SEQ1 \x8c\x01 SEQ2 \x94\x97 SEQ3 \x03{\x00\x00
+SEQ3 REF7 \x90\x00 CALL2 
+LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 (\x03 CALL8
+LOAD2 TextOn REF1 V\x03 CALL6 
+LOAD3 SCE087_002 REF6 r\x03 CALL8
+SEQ1 \x8c\x01 SEQ5 \x94\x97 CALL4 \x03{\x00\x00
  
 拓司\n　「コレは……アルミホイル？」@
 早桃\n　「そう。\p雲居さんが段ボール３箱分も用意しておいた……徳\n　　用アルミホイル。\pそれをさっきから、月代先輩と２人で壁に\n　　貼り付けてるの」@
@@ -32,9 +32,9 @@ SEQ1 \x8c\x01 SEQ2 \x94\x97 SEQ3 \x03{\x00\x00
 拓司\n　「まさか！」\
 
 \x00\x00\x00
-SEQ6 REF6 \xb6\x03 CALL1 (\x03 CALL3 V\x03 REF_END1 
-LOAD3 SCE087_003 REF6 \xdc\x05 REF_END2 
-SEQ1 \x8c\x01 SEQ2 \x98\x97 SEQ3 \x03\x92\x00\x00
+SEQ3 REF7 \xb6\x03 CALL1 (\x03 CALL7 V\x03 CALL6 
+LOAD3 SCE087_003 REF6 \xdc\x05 CALL8
+SEQ1 \x8c\x01 SEQ5 \x98\x97 CALL4 \x03\x92\x00\x00
  
 なたね\n　「気分を害さないで欲しいんだけれど、そう簡単にまさかとか、\n　　言って欲しくないの。\pだってこれは、私が死ぬ思いをしてや\n　　つらの円盤から盗み出してきた機密事項の結晶だから」@
 拓司\n　「……」@
@@ -43,6 +43,6 @@ SEQ1 \x8c\x01 SEQ2 \x98\x97 SEQ3 \x03\x92\x00\x00
 なたね\n　「いい？\p　エンケリュスの自殺波動は、アルミホイルで防御す\n　　ることが－－」\
 
 \x00\x00\x00
-SEQ6 REF6  \x06 CALL1 (\x03 CALL3 V\x03 CALL2 (\x03 REF_END2 
-LOAD3 TextClose REF2 \xae\x08 REF_END1 
+SEQ3 REF7  \x06 CALL1 (\x03 CALL7 V\x03 CALL5 (\x03 CALL8
+LOAD3 TextClose REF2 \xae\x08 CALL6 
 END_FILE

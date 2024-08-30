@@ -1,22 +1,22 @@
 START_FILE
 |\x0b\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\n\t\x00
-LOAD3 SCE021_001 REF6 \x06\x00 REF_END2 
-SEQ1 \x8c\x01 SEQ2 p0 SEQ3 \x03\x10\x00\x00
+LOAD3 SCE021_001 REF6 \x06\x00 CALL8
+SEQ1 \x8c\x01 SEQ5 p0 CALL4 \x03\x10\x00\x00
  
 \n\n\n\n\n\n\n\n\n\n　　　　　　　　　『学校／四限』\
 
 \x00\x00\x00
-SEQ6 REF6 J\x00 REF_END3 
-LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 \xaa\x00 REF_END2 
-LOAD2 TextOn REF1 \xd8\x00 REF_END1 
-SEQ5 \x05\x00 REF_END3 
-LOAD6 .\\Data\\Script\\Bg.Fob REF3 \x0e\x01 REF_END2 
-LOAD4 BgAutoFadeIn REF3 8\x01 REF_END1 
-SEQ5 \x08\x01 REF_END3 
-LOAD6 .\\Data\\Script\\Bgm.Fob REF2 v\x01 REF_END2 
-LOAD2 PlayCD REF1 \xa0\x01 REF_END1 
-LOAD3 SCE021_002 REF6 \xbc\x01 REF_END2 
-SEQ1 \x8c\x01 SEQ2 t0 SEQ3 \x03q\x00\x00
+SEQ3 REF7 J\x00 CALL2 
+LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 \xaa\x00 CALL8
+LOAD2 TextOn REF1 \xd8\x00 CALL6 
+SEQ2 \x05\x00 CALL2 
+LOAD6 .\\Data\\Script\\Bg.Fob REF3 \x0e\x01 CALL8
+LOAD4 BgAutoFadeIn REF3 8\x01 CALL6 
+SEQ2 \x08\x01 CALL2 
+LOAD6 .\\Data\\Script\\Bgm.Fob REF2 v\x01 CALL8
+LOAD2 PlayCD REF1 \xa0\x01 CALL6 
+LOAD3 SCE021_002 REF6 \xbc\x01 CALL8
+SEQ1 \x8c\x01 SEQ5 t0 CALL4 \x03q\x00\x00
  
 　拓司にとって、朝が一番鮮やかな時間だ。@
 　時間が経つにつれて、世界の色があせてゆく。@
@@ -32,10 +32,10 @@ SEQ1 \x8c\x01 SEQ2 t0 SEQ3 \x03q\x00\x00
 　悲鳴をあげることしかできない。\
 
 \x00\x00\x00
-SEQ6 REF6 \x00\x02 CALL1 \xaa\x00 CALL3 \xd8\x00 REF_END1 
-SEQ5 \xc8\x00 CALL1 \x0e\x01 CALL3 8\x01 REF_END1 
-LOAD3 SCE021_003 REF6 2\x04 REF_END2 
-SEQ1 \x8c\x01 SEQ2 x0 SEQ3 \x03~\x00\x00
+SEQ3 REF7 \x00\x02 CALL1 \xaa\x00 CALL7 \xd8\x00 CALL6 
+SEQ2 \xc8\x00 CALL1 \x0e\x01 CALL7 8\x01 CALL6 
+LOAD3 SCE021_003 REF6 2\x04 CALL8
+SEQ1 \x8c\x01 SEQ5 x0 CALL4 \x03~\x00\x00
  
 \n　－－死んじまおうかなあ。@
 \n　拓司はすでに口癖となったその言葉を、呪文のように頭のなかで\n　繰り返した。@
@@ -48,9 +48,9 @@ SEQ1 \x8c\x01 SEQ2 x0 SEQ3 \x03~\x00\x00
 　のどの奥から、吐瀉物のような恐怖が込み上がってくる。@
 \z
 \x00\x00\x00
-SEQ6 REF6 v\x04 CALL1 \xaa\x00 CALL3 \xd8\x00 REF_END1 
-LOAD3 SCE021_004 REF6 \xa8\x06 REF_END2 
-SEQ1 \x8c\x01 SEQ2 |0 SEQ3 \x03Q\x00\x00
+SEQ3 REF7 v\x04 CALL1 \xaa\x00 CALL7 \xd8\x00 CALL6 
+LOAD3 SCE021_004 REF6 \xa8\x06 CALL8
+SEQ1 \x8c\x01 SEQ5 |0 CALL4 \x03Q\x00\x00
  
 \n　死んじまおうかなあ。@
 　死んじまおうかなあ。@
@@ -60,12 +60,12 @@ SEQ1 \x8c\x01 SEQ2 |0 SEQ3 \x03Q\x00\x00
 　拓司は自分の大切な人を……妄想の檻の中に……ゆっくりと囲っ\n　ていった。\
 
 \x00
-SEQ6 REF6 \xec\x06 CALL1 \xaa\x00 CALL3 \xd8\x00 REF_END1 \x03\x0f\x00\x00
+SEQ3 REF7 \xec\x06 CALL1 \xaa\x00 CALL7 \xd8\x00 CALL6 \x03\x0f\x00\x00
 CHOICE
 早桃を妄想の中で犯す\n紅葉を想像の中で犯す\n\l0,2,
 ENDCHOICE
 
 \x00
-SEQ6 REF6 j\x08 CALL1 \xaa\x00 CALL3 \xd8\x00 CALL2 \xaa\x00 REF_END2 
-LOAD3 TextClose REF2 \xec\x08 REF_END1 
+SEQ3 REF7 j\x08 CALL1 \xaa\x00 CALL7 \xd8\x00 CALL5 \xaa\x00 CALL8
+LOAD3 TextClose REF2 \xec\x08 CALL6 
 END_FILE

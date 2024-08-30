@@ -1,13 +1,13 @@
 START_FILE
 \x1e\x15\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00Z\x11\x00
-SEQ5 \x05\x00 REF_END3 
-LOAD6 .\\Data\\Script\\Bg.Fob REF3  \x00 REF_END2 
-LOAD4 BgAutoFadeIn REF3 J\x00 REF_END1 
-SEQ5 \x08\x01 REF_END3 
-LOAD6 .\\Data\\Script\\Bgm.Fob REF2 \x88\x00 REF_END2 
-LOAD2 PlayCD REF1 \xb2\x00 REF_END1 
-LOAD3 SCE025_001 REF6 \xce\x00 REF_END2 
-SEQ1 \x8c\x01 SEQ2 \xb06 SEQ3 \x03}\x00\x00
+SEQ2 \x05\x00 CALL2 
+LOAD6 .\\Data\\Script\\Bg.Fob REF3  \x00 CALL8
+LOAD4 BgAutoFadeIn REF3 J\x00 CALL6 
+SEQ2 \x08\x01 CALL2 
+LOAD6 .\\Data\\Script\\Bgm.Fob REF2 \x88\x00 CALL8
+LOAD2 PlayCD REF1 \xb2\x00 CALL6 
+LOAD3 SCE025_001 REF6 \xce\x00 CALL8
+SEQ1 \x8c\x01 SEQ5 \xb06 CALL4 \x03}\x00\x00
  
 錦城\n　「－－太宰の処女短編集のタイトルは『晩年』というわけです\n　　けれど、そこに彼のたどった運命を重ね見ることは難しいこ\n　　とではありません。@
 　　ただ、ここでとりあげている『パンドラの筺』に関しては、\n　　そういった先入観を抜きにして、私は論じてみたいと思いま\n　　す。\pそれじゃあ中村君。読んでください」@
@@ -16,12 +16,12 @@ SEQ1 \x8c\x01 SEQ2 \xb06 SEQ3 \x03}\x00\x00
 リアルな夢だった。\
 
 \x00
-SEQ6 REF6 \x12\x01 REF_END3 
-LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 &\x03 REF_END2 
-LOAD2 TextOn REF1 T\x03 CALL2 \x88\x00 REF_END2 
-LOAD2 StopCD REF1 |\x03 REF_END1 
-LOAD3 SCE025_002 REF6 \x98\x03 REF_END2 
-SEQ1 \x8c\x01 SEQ2 \xb46 SEQ3 \x03N\x00\x00
+SEQ3 REF7 \x12\x01 CALL2 
+LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 &\x03 CALL8
+LOAD2 TextOn REF1 T\x03 CALL5 \x88\x00 CALL8
+LOAD2 StopCD REF1 |\x03 CALL6 
+LOAD3 SCE025_002 REF6 \x98\x03 CALL8
+SEQ1 \x8c\x01 SEQ5 \xb46 CALL4 \x03N\x00\x00
  
 錦城\n　「……君！　……菱君！　虎菱君！」@
 拓司\n　「……え？」@
@@ -32,9 +32,9 @@ SEQ1 \x8c\x01 SEQ2 \xb46 SEQ3 \x03N\x00\x00
 錦城\n　「……というように、若者が悩み続けている間にも、『世界の\n　　風車はクルクルと回っている』わけです」\
 
 \x00
-SEQ6 REF6 \xdc\x03 CALL1 &\x03 CALL3 T\x03 REF_END1 
-LOAD3 SCE025_003 REF6 N\x05 REF_END2 
-SEQ1 \x8c\x01 SEQ2 \xb86 SEQ3 \x03\xa2\x00\x00
+SEQ3 REF7 \xdc\x03 CALL1 &\x03 CALL7 T\x03 CALL6 
+LOAD3 SCE025_003 REF6 N\x05 CALL8
+SEQ1 \x8c\x01 SEQ5 \xb86 CALL4 \x03\xa2\x00\x00
  
 　クラスメイトたちが、クスクスと笑っている。@
 　拓司は教科書をひっくり返して、しかるべき場所を見いだそう\n　と焦った。@
@@ -50,9 +50,9 @@ SEQ1 \x8c\x01 SEQ2 \xb86 SEQ3 \x03\xa2\x00\x00
 　さきほどの夢の中で感じた、いいようのない恐怖の方がよっぽ\n　どリアルだ。\
 
 \x00\x00\x00
-SEQ6 REF6 \x92\x05 CALL1 &\x03 CALL3 T\x03 REF_END1 
-LOAD3 SCE025_004 REF6 T\x08 REF_END2 
-SEQ1 \x8c\x01 SEQ2 \xbc6 SEQ3 \x03\x9c\x00\x00
+SEQ3 REF7 \x92\x05 CALL1 &\x03 CALL7 T\x03 CALL6 
+LOAD3 SCE025_004 REF6 T\x08 CALL8
+SEQ1 \x8c\x01 SEQ5 \xbc6 CALL4 \x03\x9c\x00\x00
  
 錦城\n　「結構です。座りなさい虎菱君。@
 　　……篠田さん、かわりにお願い」@
@@ -60,11 +60,11 @@ SEQ1 \x8c\x01 SEQ2 \xbc6 SEQ3 \x03\x9c\x00\x00
 /*　■CG07　表示（ノンエフェクト）*/\a7,-1,-1,0,\a0,6,1,0,\a6,0,0,0,カンナ\n　「－－こうしましょう。\pここ以外では、あなたと私は知り合いで\n　　も何でもない。\pお互いの世界に干渉しないし、興味も持たない\n　　。\pお互いの世界……フフフ。\p私たちの世界以外では、私たちは\n　　他人になるの。\pそうすることで、私たちの世界はより本物にな\n　　る……どうかしら？」\
 
 \x00
-SEQ6 REF6 \x98\x08 CALL1 &\x03 CALL3 T\x03 REF_END1 
-SEQ5 \xc8\x00 CALL1  \x00 CALL3 J\x00 REF_END1 
-SEQ5 \x06\x01 CALL1 \x88\x00 CALL3 \xb2\x00 REF_END1 
-LOAD3 SCE025_005 REF6 \xaa\x0b REF_END2 
-SEQ1 \x8c\x01 SEQ2 \xc06 SEQ3 \x03\xa3\x00\x00
+SEQ3 REF7 \x98\x08 CALL1 &\x03 CALL7 T\x03 CALL6 
+SEQ2 \xc8\x00 CALL1  \x00 CALL7 J\x00 CALL6 
+SEQ2 \x06\x01 CALL1 \x88\x00 CALL7 \xb2\x00 CALL6 
+LOAD3 SCE025_005 REF6 \xaa\x0b CALL8
+SEQ1 \x8c\x01 SEQ5 \xc06 CALL4 \x03\xa3\x00\x00
  
 世界。@
 世界。@
@@ -87,10 +87,10 @@ SEQ1 \x8c\x01 SEQ2 \xc06 SEQ3 \x03\xa3\x00\x00
 なにか？\
 
 \x00
-SEQ6 REF6 \xee\x0b CALL1 &\x03 CALL3 T\x03 REF_END1 
-SEQ5 \x05\x00 CALL1  \x00 CALL3 J\x00 CALL2 \x88\x00 CALL3 |\x03 REF_END1 
-LOAD3 SCE025_006 REF6 \x02\x0f REF_END2 
-SEQ1 \x8c\x01 SEQ2 \xc46 SEQ3 \x03l\x00\x00
+SEQ3 REF7 \xee\x0b CALL1 &\x03 CALL7 T\x03 CALL6 
+SEQ2 \x05\x00 CALL1  \x00 CALL7 J\x00 CALL5 \x88\x00 CALL7 |\x03 CALL6 
+LOAD3 SCE025_006 REF6 \x02\x0f CALL8
+SEQ1 \x8c\x01 SEQ5 \xc46 CALL4 \x03l\x00\x00
  
 学生\n　「……死ぬのか生きるのか、それはもう人間の幸不幸を決定す\n　　る鍵ではないような気さえしてきたのだ。@
 　　死者は完成せられ、生者は出帆の船のデッキに立ってそれに\n　　手を合わせる。@
@@ -98,6 +98,6 @@ SEQ1 \x8c\x01 SEQ2 \xc46 SEQ3 \x03l\x00\x00
 \n　遠景。\p国旗掲揚塔に渡された綱。\pその上から、葉っぱのように人\n　影が落下する。\pそれは淡々と、なんてことのない風景のように見\n　える。\pサイレント映画のようだ。@
 \z
 \x00\x00\x00
-SEQ6 REF6 F\x0f CALL1 &\x03 CALL3 T\x03 CALL2 &\x03 REF_END2 
-LOAD3 TextClose REF2 <\x11 REF_END1 
+SEQ3 REF7 F\x0f CALL1 &\x03 CALL7 T\x03 CALL5 &\x03 CALL8
+LOAD3 TextClose REF2 <\x11 CALL6 
 END_FILE

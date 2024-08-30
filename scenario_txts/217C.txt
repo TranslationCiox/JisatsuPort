@@ -1,19 +1,19 @@
 START_FILE
 \x12\x13\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xa2\x0f\x00
-LOAD3 SCE217_001 REF6 \x06\x00 REF_END2 
-SEQ1 \x8c\x01 SEQ2 \xb0b\x01\x0c\x00\x00\x00\x00"\x03\x11\x00\x00
+LOAD3 SCE217_001 REF6 \x06\x00 CALL8
+SEQ1 \x8c\x01 SEQ5 \xb0b\x01\x0c\x00\x00\x00\x00"\x03\x11\x00\x00
  
 \n\n\n\n\n\n\n\n\n\n　　　　　　　　　　　　　『８日目』\
 
 \x00\x00\x00
-SEQ6 REF6 J\x00 REF_END3 
-LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 \xae\x00 REF_END2 
-LOAD2 TextOn REF1 \xdc\x00 REF_END1 
-SEQ5 \n\x01 REF_END3 
-LOAD6 .\\Data\\Script\\Bgm.Fob REF2 \x12\x01 REF_END2 
-LOAD2 PlayCD REF1 <\x01 REF_END1 
-LOAD3 SCE217_002 REF6 X\x01 REF_END2 
-SEQ1 \x8c\x01 SEQ2 \xb4b\x01\x0c\x00\x00\x00\x00"\x03\x92\x00\x00
+SEQ3 REF7 J\x00 CALL2 
+LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 \xae\x00 CALL8
+LOAD2 TextOn REF1 \xdc\x00 CALL6 
+SEQ2 \n\x01 CALL2 
+LOAD6 .\\Data\\Script\\Bgm.Fob REF2 \x12\x01 CALL8
+LOAD2 PlayCD REF1 <\x01 CALL6 
+LOAD3 SCE217_002 REF6 X\x01 CALL8
+SEQ1 \x8c\x01 SEQ5 \xb4b\x01\x0c\x00\x00\x00\x00"\x03\x92\x00\x00
  
 御堂\n　「てめえ、なにやってやがる！」@
 \nついに、決定的な出来事が起こった。@
@@ -25,9 +25,9 @@ SEQ1 \x8c\x01 SEQ2 \xb4b\x01\x0c\x00\x00\x00\x00"\x03\x92\x00\x00
 なたね\n　「……」\
 
 \x00\x00\x00
-SEQ6 REF6 \x9c\x01 CALL1 \xae\x00 CALL3 \xdc\x00 REF_END1 
-LOAD3 SCE217_003 REF6 \x1e\x04 REF_END2 
-SEQ1 \x8c\x01 SEQ2 \xb8b\x01\x0c\x00\x00\x00\x00"\x03\xa9\x00\x00
+SEQ3 REF7 \x9c\x01 CALL1 \xae\x00 CALL7 \xdc\x00 CALL6 
+LOAD3 SCE217_003 REF6 \x1e\x04 CALL8
+SEQ1 \x8c\x01 SEQ5 \xb8b\x01\x0c\x00\x00\x00\x00"\x03\xa9\x00\x00
  
 一同に取り囲まれながらも、なたねに悪びれた様子はない。@
 射すような視線を平然と受け止め、逆に挑戦的な視線を投げ返し\nてくる。@
@@ -39,9 +39,9 @@ SEQ1 \x8c\x01 SEQ2 \xb8b\x01\x0c\x00\x00\x00\x00"\x03\xa9\x00\x00
 拓司\n　「……？」\
 
 \x00\x00\x00
-SEQ6 REF6 b\x04 CALL1 \xae\x00 CALL3 \xdc\x00 REF_END1 
-LOAD3 SCE217_004 REF6 @\x07 REF_END2 
-SEQ1 \x8c\x01 SEQ2 \xbcb\x01\x0c\x00\x00\x00\x00"\x03W\x00\x00
+SEQ3 REF7 b\x04 CALL1 \xae\x00 CALL7 \xdc\x00 CALL6 
+LOAD3 SCE217_004 REF6 @\x07 CALL8
+SEQ1 \x8c\x01 SEQ5 \xbcb\x01\x0c\x00\x00\x00\x00"\x03W\x00\x00
  
 なたね\n　「……だって、私にはそれだけの価値があるから」@
 拓司\n　「……」@
@@ -49,18 +49,18 @@ SEQ1 \x8c\x01 SEQ2 \xbcb\x01\x0c\x00\x00\x00\x00"\x03W\x00\x00
 \nなたねは突如立ち上がって、早桃を指さした。\p一同は呆気にとら\nれてなたねを見つめた。\
 
 \x00
-SEQ6 REF6 \x84\x07 CALL1 \xae\x00 CALL3 \xdc\x00 REF_END1 
-LOAD3 SCE217_005 REF6 \x1a\t REF_END2 
-SEQ1 \x8c\x01 SEQ2 \xc0b\x01\x0c\x00\x00\x00\x00"\x03\xe4\x00\x00
+SEQ3 REF7 \x84\x07 CALL1 \xae\x00 CALL7 \xdc\x00 CALL6 
+LOAD3 SCE217_005 REF6 \x1a\t CALL8
+SEQ1 \x8c\x01 SEQ5 \xc0b\x01\x0c\x00\x00\x00\x00"\x03\xe4\x00\x00
  
 なたね\n　「お前みたいなナア！\p　生きているだけのバカタレ弱者とは違\n　　うんだ！\p　自分一人じゃ何もできない弱者人種とは違って、\n　　この私は必要な……善なる宇宙生命体に選ばれた人間なんだ\n　　からお前なんかよりいいもの食べるのはあたりまえなんだ！@
 　　あんたたちも一緒！\p　どいつもこいつも、私のことコソコソ\n　　いってバカにしてきて……いい気味だ！\p　ワハ……ワハハハ\n　　ハ！\p　お前らなんか生き残れるもんか！\p　お前らなんか…\n　　…波動で狂って踊り死ぬんだ！\p　ｘ線と赤外線と紫外線とマ\n　　イクロ波がお前らを殺す！\p　攻撃は細胞に対して行われるか\n　　ら避けられない！\p　タクシーより速いからな！\p　警察も自衛\n　　隊も内閣調査室もみんな私を無視して陰からコソコソ電波を\n　　ひっつかせた！\p　駐車違反とか政治汚職とか、そういう攻撃\n　　をしかけてきた！\p　全部わかってるんだからな。\pやつらの洗\n　　脳だろ？\p　全部お見通しなんだよ！」@
 御堂\n　「こいつ……完全にいかれてやがる」\
 
 \x00\x00\x00
-SEQ6 REF6 ^\t CALL1 \xae\x00 CALL3 \xdc\x00 REF_END1 
-LOAD3 SCE217_006 REF6 (\r REF_END2 
-SEQ1 \x8c\x01 SEQ2 \xc4b\x01\x0c\x00\x00\x00\x00"\x03M\x00\x00
+SEQ3 REF7 ^\t CALL1 \xae\x00 CALL7 \xdc\x00 CALL6 
+LOAD3 SCE217_006 REF6 (\r CALL8
+SEQ1 \x8c\x01 SEQ5 \xc4b\x01\x0c\x00\x00\x00\x00"\x03M\x00\x00
  
 呆然といった御堂よりも、錦城の行動が速かった。@
 なたねの斜め後ろに位置していた錦城は、一気になたねに接近し、\nその背中を容赦なく蹴り飛ばした。\p衝撃にぐらりと姿勢を崩した\nなたねにのしかかって、錦城が叫ぶ。@
@@ -69,12 +69,12 @@ SEQ1 \x8c\x01 SEQ2 \xc4b\x01\x0c\x00\x00\x00\x00"\x03M\x00\x00
 \n御堂が躍りかかった。\
 
 \x00
-SEQ6 REF6 l\r CALL1 \xae\x00 CALL3 \xdc\x00 REF_END1 \x03\x19\x00\x00
+SEQ3 REF7 l\r CALL1 \xae\x00 CALL7 \xdc\x00 CALL6 \x03\x19\x00\x00
 CHOICE
 「やめろ！」　拓司は必至で制止した\n「……」　もはや言うべき言葉は見つからなかった\n\l0,2,
 ENDCHOICE
 
 \x00
-SEQ6 REF6 \xda\x0e CALL1 \xae\x00 CALL3 \xdc\x00 CALL2 \xae\x00 REF_END2 
-LOAD3 TextClose REF2 \x84\x0f REF_END1 
+SEQ3 REF7 \xda\x0e CALL1 \xae\x00 CALL7 \xdc\x00 CALL5 \xae\x00 CALL8
+LOAD3 TextClose REF2 \x84\x0f CALL6 
 END_FILE

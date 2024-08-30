@@ -1,7 +1,7 @@
 START_FILE
 \x02\x08\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00H\x06\x00
-LOAD3 SCE219_001 REF6 \x06\x00 REF_END2 
-SEQ1 \x8c\x01 SEQ2 \xd0e\x01\x0c\x00\x00\x00\x00"\x03,\x00\x00
+LOAD3 SCE219_001 REF6 \x06\x00 CALL8
+SEQ1 \x8c\x01 SEQ5 \xd0e\x01\x0c\x00\x00\x00\x00"\x03,\x00\x00
  
 もはや、止めることはできなかった。@
 すべてをせきとめていた何かが、いま、ついに崩れ落ちたのだ。@
@@ -9,14 +9,14 @@ SEQ1 \x8c\x01 SEQ2 \xd0e\x01\x0c\x00\x00\x00\x00"\x03,\x00\x00
 流されるしかないのだ。\
 
 \x00\x00\x00
-SEQ6 REF6 J\x00 REF_END3 
-LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 \x1a\x01 REF_END2 
-LOAD2 TextOn REF1 H\x01 REF_END1 
-SEQ5 $\x00 REF_END3 
-LOAD6 .\\Data\\Script\\Bg.Fob REF3 ~\x01 REF_END2 
-LOAD4 BgAutoFadeIn REF3 \xa8\x01 REF_END1 
-LOAD3 SCE219_002 REF6 \xcc\x01 REF_END2 
-SEQ1 \x8c\x01 SEQ2 \xd4e\x01\x0c\x00\x00\x00\x00"\x03k\x00\x00
+SEQ3 REF7 J\x00 CALL2 
+LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 \x1a\x01 CALL8
+LOAD2 TextOn REF1 H\x01 CALL6 
+SEQ2 $\x00 CALL2 
+LOAD6 .\\Data\\Script\\Bg.Fob REF3 ~\x01 CALL8
+LOAD4 BgAutoFadeIn REF3 \xa8\x01 CALL6 
+LOAD3 SCE219_002 REF6 \xcc\x01 CALL8
+SEQ1 \x8c\x01 SEQ5 \xd4e\x01\x0c\x00\x00\x00\x00"\x03k\x00\x00
  
 なたね\n　「やめてやめてやめて！@
 　　やあああああめえええろおおおおお！」@
@@ -29,9 +29,9 @@ SEQ1 \x8c\x01 SEQ2 \xd4e\x01\x0c\x00\x00\x00\x00"\x03k\x00\x00
 ぐったりと御堂の下に横たわり、殴られるがままだ。\
 
 \x00
-SEQ6 REF6 \x10\x02 CALL1 \x1a\x01 CALL3 H\x01 REF_END1 
-LOAD3 SCE219_003 REF6 \xf6\x03 REF_END2 
-SEQ1 \x8c\x01 SEQ2 \xd8e\x01\x0c\x00\x00\x00\x00"\x03L\x00\x00
+SEQ3 REF7 \x10\x02 CALL1 \x1a\x01 CALL7 H\x01 CALL6 
+LOAD3 SCE219_003 REF6 \xf6\x03 CALL8
+SEQ1 \x8c\x01 SEQ5 \xd8e\x01\x0c\x00\x00\x00\x00"\x03L\x00\x00
  
 －－狂ってる。@
 拓司は辺りを見回した。@
@@ -42,9 +42,9 @@ SEQ1 \x8c\x01 SEQ2 \xd8e\x01\x0c\x00\x00\x00\x00"\x03L\x00\x00
 そしていま、眼前で展開されていることこそ、新しい秩序の骨子\nを為すものであるはずだった。\
 
 \x00
-SEQ6 REF6 :\x04 CALL1 \x1a\x01 CALL3 H\x01 REF_END1 
-SEQ5 \xc8\x00 CALL1 ~\x01 CALL3 \xa8\x01 REF_END1 
-LOAD6 .\\Data\\Script\\Bgm.Fob REF2 \xd8\x05 REF_END2 
-LOAD2 StopCD REF1 \x02\x06 CALL2 \x1a\x01 REF_END2 
-LOAD3 TextClose REF2 *\x06 REF_END1 
+SEQ3 REF7 :\x04 CALL1 \x1a\x01 CALL7 H\x01 CALL6 
+SEQ2 \xc8\x00 CALL1 ~\x01 CALL7 \xa8\x01 CALL6 
+LOAD6 .\\Data\\Script\\Bgm.Fob REF2 \xd8\x05 CALL8
+LOAD2 StopCD REF1 \x02\x06 CALL5 \x1a\x01 CALL8
+LOAD3 TextClose REF2 *\x06 CALL6 
 END_FILE

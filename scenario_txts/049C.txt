@@ -1,10 +1,10 @@
 START_FILE
 \x0e\x13\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x000\x10\x00
-SEQ5 \x06\x01 REF_END3 
-LOAD6 .\\Data\\Script\\Bgm.Fob REF2  \x00 REF_END2 
-LOAD2 PlayCD REF1 J\x00 REF_END1 
-LOAD3 SCE049_001 REF6 f\x00 REF_END2 
-SEQ1 \x8c\x01 SEQ2 0\\ SEQ3 \x03\xe6\x00\x00
+SEQ2 \x06\x01 CALL2 
+LOAD6 .\\Data\\Script\\Bgm.Fob REF2  \x00 CALL8
+LOAD2 PlayCD REF1 J\x00 CALL6 
+LOAD3 SCE049_001 REF6 f\x00 CALL8
+SEQ1 \x8c\x01 SEQ5 0\\ CALL4 \x03\xe6\x00\x00
  
 廊下に飛び出すと、そこには現実の空気があった。@
 空気というより、気配というべきか……静かだが、たしか多くの\n人間の気配が感じられる。\p馴染みある学園の空気……いかにもな\n日常の気配だ。@
@@ -15,11 +15,11 @@ SEQ1 \x8c\x01 SEQ2 0\\ SEQ3 \x03\xe6\x00\x00
 柏木の死と、なたねたちの乱交は切り離せない。\pそれをどうごま\nかせばいいのかまだ決めかねているが……人がひとり死んでいる\nのだ。\pさすがに知らん顔というわけにもいくまい。\pそれに、放っ\nておいてもいずれ死体は見つかる。\p事件が膨れ上がって手に負え\nなくなる前に、なんらかの処置を施して、自分となたねに降りか\nかる火の粉を少しでも減らしておいたほうがいいだろう。\
 
 \x00\x00\x00
-SEQ6 REF6 \xaa\x00 REF_END3 
-LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 b\x04 REF_END2 
-LOAD2 TextOn REF1 \x90\x04 REF_END1 
-LOAD3 SCE049_002 REF6 \xac\x04 REF_END2 
-SEQ1 \x8c\x01 SEQ2 4\\ SEQ3 \x03q\x00\x00
+SEQ3 REF7 \xaa\x00 CALL2 
+LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 b\x04 CALL8
+LOAD2 TextOn REF1 \x90\x04 CALL6 
+LOAD3 SCE049_002 REF6 \xac\x04 CALL8
+SEQ1 \x8c\x01 SEQ5 4\\ CALL4 \x03q\x00\x00
  
 拓司は無人の廊下を足早に通り抜け、階段をとんとんと駆け下り\nた。@
 \n拓司\n　「……！」@
@@ -32,9 +32,9 @@ SEQ1 \x8c\x01 SEQ2 4\\ SEQ3 \x03q\x00\x00
 　あまりに突然のことに、拓司は思わず小さく悲鳴をもらした。\
 
 \x00
-SEQ6 REF6 \xf0\x04 CALL1 b\x04 CALL3 \x90\x04 REF_END1 
-LOAD3 SCE049_003 REF6 \xee\x06 REF_END2 
-SEQ1 \x8c\x01 SEQ2 8\\ SEQ3 \x03k\x00\x00
+SEQ3 REF7 \xf0\x04 CALL1 b\x04 CALL7 \x90\x04 CALL6 
+LOAD3 SCE049_003 REF6 \xee\x06 CALL8
+SEQ1 \x8c\x01 SEQ5 8\\ CALL4 \x03k\x00\x00
  
 なたね\n　「どうしたの、虎菱くん？」@
 拓司\n　「いま……誰かが……」@
@@ -50,9 +50,9 @@ SEQ1 \x8c\x01 SEQ2 8\\ SEQ3 \x03k\x00\x00
 \nなたね\n　「大丈夫、虎菱くん？」\
 
 \x00\x00\x00
-SEQ6 REF6 2\x07 CALL1 b\x04 CALL3 \x90\x04 REF_END1 
-LOAD3 SCE049_004 REF6 \x18\t REF_END2 
-SEQ1 \x8c\x01 SEQ2 <\\ SEQ3 \x03\xa0\x00\x00
+SEQ3 REF7 2\x07 CALL1 b\x04 CALL7 \x90\x04 CALL6 
+LOAD3 SCE049_004 REF6 \x18\t CALL8
+SEQ1 \x8c\x01 SEQ5 <\\ CALL4 \x03\xa0\x00\x00
  
 拓司\n　「あ、ああ。なんでもない……」@
 \n　そうとしかいいようがない。\p実際、なにもありはしないのだか\n　ら。@
@@ -63,9 +63,9 @@ SEQ1 \x8c\x01 SEQ2 <\\ SEQ3 \x03\xa0\x00\x00
 \n　ちいさくつぶやく。\pぎくりとして見ると、なたねは真剣な表情\n　で、あたりを見回している。\
 
 \x00\x00\x00
-SEQ6 REF6 \\\t CALL1 b\x04 CALL3 \x90\x04 REF_END1 
-LOAD3 SCE049_005 REF6 \x16\x0c REF_END2 
-SEQ1 \x8c\x01 SEQ2 @\\ SEQ3 \x03q\x00\x00
+SEQ3 REF7 \\\t CALL1 b\x04 CALL7 \x90\x04 CALL6 
+LOAD3 SCE049_005 REF6 \x16\x0c CALL8
+SEQ1 \x8c\x01 SEQ5 @\\ CALL4 \x03q\x00\x00
  
 なたね\n　「虎菱くんも感じるのね？\p　この学園は……いいえ、この街は\n　　すでに、エンケリュスの自殺波動の勢力下にあるわ」@
 拓司\n　「……」@
@@ -74,9 +74,9 @@ SEQ1 \x8c\x01 SEQ2 @\\ SEQ3 \x03q\x00\x00
 　あるいは－－尋ねるのが怖かったのかもしれない。\
 
 \x00\x00\x00
-SEQ6 REF6 Z\x0c CALL1 b\x04 CALL3 \x90\x04 REF_END1 
-LOAD3 SCE049_006 REF6 X\x0e REF_END2 
-SEQ1 \x8c\x01 SEQ2 D\\ SEQ3 \x03B\x00\x00
+SEQ3 REF7 Z\x0c CALL1 b\x04 CALL7 \x90\x04 CALL6 
+LOAD3 SCE049_006 REF6 X\x0e CALL8
+SEQ1 \x8c\x01 SEQ5 D\\ CALL4 \x03B\x00\x00
  
 　３階まで降りた拓司は、階段の正面の教室へと駆け込んだ。@
 　……いや、駆け込もうとしたところで、背後からガッシと肩を\n　掴まれ、静止させられた。@
@@ -84,7 +84,7 @@ SEQ1 \x8c\x01 SEQ2 D\\ SEQ3 \x03B\x00\x00
 \nなたね\n　「駄目。\pこの教室はもう駄目だわ。\p……見て」\
 
 \x00\x00\x00
-SEQ6 REF6 \x9c\x0e CALL1 b\x04 CALL3 \x90\x04 CALL2  \x00 REF_END2 
-LOAD2 StopCD REF1 \xea\x0f CALL2 b\x04 REF_END2 
-LOAD3 TextClose REF2 \x12\x10 REF_END1 
+SEQ3 REF7 \x9c\x0e CALL1 b\x04 CALL7 \x90\x04 CALL5  \x00 CALL8
+LOAD2 StopCD REF1 \xea\x0f CALL5 b\x04 CALL8
+LOAD3 TextClose REF2 \x12\x10 CALL6 
 END_FILE

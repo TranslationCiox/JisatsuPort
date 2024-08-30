@@ -1,7 +1,7 @@
 START_FILE
 \x91\x12\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\x02\x0f\x00
-LOAD3 SCE212_001 REF6 \x06\x00 REF_END2 
-SEQ1 \x8c\x01 SEQ2 \xe0Z\x01\x0c\x00\x00\x00\x00"\x03d\x00\x00
+LOAD3 SCE212_001 REF6 \x06\x00 CALL8
+SEQ1 \x8c\x01 SEQ5 \xe0Z\x01\x0c\x00\x00\x00\x00"\x03d\x00\x00
  
 もはや世界に定点を見いだすことは不可能だった。@
 『教授が語る世界』と『なたねが語る世界』と『学校に籠城する\n世界』。@
@@ -13,11 +13,11 @@ SEQ1 \x8c\x01 SEQ2 \xe0Z\x01\x0c\x00\x00\x00\x00"\x03d\x00\x00
 拓司は考えたすえに、いった。\
 
 \x00\x00\x00
-SEQ6 REF6 J\x00 REF_END3 
-LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 \xfa\x01 REF_END2 
-LOAD2 TextOn REF1 (\x02 REF_END1 
-LOAD3 SCE212_002 REF6 D\x02 REF_END2 
-SEQ1 \x8c\x01 SEQ2 \xe4Z\x01\x0c\x00\x00\x00\x00"\x03S\x00\x00
+SEQ3 REF7 J\x00 CALL2 
+LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 \xfa\x01 CALL8
+LOAD2 TextOn REF1 (\x02 CALL6 
+LOAD3 SCE212_002 REF6 D\x02 CALL8
+SEQ1 \x8c\x01 SEQ5 \xe4Z\x01\x0c\x00\x00\x00\x00"\x03S\x00\x00
  
 拓司\n　「とりあえず、『君の語る世界』を信じよう。\pなぜなら、その\n　　世界がいま、一番簡単に実験にかけられるからだ」@
 ナタネ\n　「……」@
@@ -25,9 +25,9 @@ SEQ1 \x8c\x01 SEQ2 \xe4Z\x01\x0c\x00\x00\x00\x00"\x03S\x00\x00
 ナタネ\n　「ええ」\
 
 \x00
-SEQ6 REF6 \x88\x02 CALL1 \xfa\x01 CALL3 (\x02 REF_END1 
-LOAD3 SCE212_003 REF6 \x0e\x04 REF_END2 
-SEQ1 \x8c\x01 SEQ2 \xe8Z\x01\x0c\x00\x00\x00\x00"\x03\x87\x00\x00
+SEQ3 REF7 \x88\x02 CALL1 \xfa\x01 CALL7 (\x02 CALL6 
+LOAD3 SCE212_003 REF6 \x0e\x04 CALL8
+SEQ1 \x8c\x01 SEQ5 \xe8Z\x01\x0c\x00\x00\x00\x00"\x03\x87\x00\x00
  
 拓司\n　「もしアイスクリームパフェが出現したとしても、『君の語っ\n　　た世界』が真実であることは証明できない。\pなぜならそれも\n　　また、俺の妄想が生み出した現象かもしれないからだ。@
 　　ただ、アイスクリームパフェが出現しなければ……少なくと\n　　も君の話がウソだということは証明できる。@
@@ -37,12 +37,12 @@ SEQ1 \x8c\x01 SEQ2 \xe8Z\x01\x0c\x00\x00\x00\x00"\x03\x87\x00\x00
 \n拓司は、目を閉じた。\
 
 \x00
-SEQ6 REF6 R\x04 CALL1 \xfa\x01 CALL3 (\x02 REF_END1 
-SEQ5 \xc8\x00 REF_END3 
-LOAD6 .\\Data\\Script\\Bg.Fob REF3 \xc2\x06 REF_END2 
-LOAD4 BgAutoFadeIn REF3 \xec\x06 REF_END1 
-LOAD3 SCE212_004 REF6 \x10\x07 REF_END2 
-SEQ1 \x8c\x01 SEQ2 \xecZ\x01\x0c\x00\x00\x00\x00"\x03\x88\x00\x00
+SEQ3 REF7 R\x04 CALL1 \xfa\x01 CALL7 (\x02 CALL6 
+SEQ2 \xc8\x00 CALL2 
+LOAD6 .\\Data\\Script\\Bg.Fob REF3 \xc2\x06 CALL8
+LOAD4 BgAutoFadeIn REF3 \xec\x06 CALL6 
+LOAD3 SCE212_004 REF6 \x10\x07 CALL8
+SEQ1 \x8c\x01 SEQ5 \xecZ\x01\x0c\x00\x00\x00\x00"\x03\x88\x00\x00
  
 意識を集中させ、頭の中にアイスクリームパフェを思い描く。@
 拓司は『ナタネが語る世界』を……自分が『望む』ものを『創』\nれる世界を真剣に信じようと試みた。@
@@ -55,10 +55,10 @@ SEQ1 \x8c\x01 SEQ2 \xecZ\x01\x0c\x00\x00\x00\x00"\x03\x88\x00\x00
 そう思ってしまう。\
 
 \x00
-SEQ6 REF6 T\x07 CALL1 \xfa\x01 CALL3 (\x02 REF_END1 
-SEQ5 \xc9\x00 CALL1 \xc2\x06 CALL3 \xec\x06 REF_END1 
-LOAD3 SCE212_005 REF6 \xe2\t REF_END2 
-SEQ1 \x8c\x01 SEQ2 \xf0Z\x01\x0c\x00\x00\x00\x00"\x036\x00\x00
+SEQ3 REF7 T\x07 CALL1 \xfa\x01 CALL7 (\x02 CALL6 
+SEQ2 \xc9\x00 CALL1 \xc2\x06 CALL7 \xec\x06 CALL6 
+LOAD3 SCE212_005 REF6 \xe2\t CALL8
+SEQ1 \x8c\x01 SEQ5 \xf0Z\x01\x0c\x00\x00\x00\x00"\x036\x00\x00
  
 拓司は意識集中を諦め、目を開けた。@
 \n拓司\n　「無理だ。\pやっぱり信じられない」@
@@ -66,16 +66,16 @@ SEQ1 \x8c\x01 SEQ2 \xf0Z\x01\x0c\x00\x00\x00\x00"\x036\x00\x00
 \n拓司\n　「そんな……バカな」\
 
 \x00
-SEQ6 REF6 &\n CALL1 \xfa\x01 CALL3 (\x02 REF_END1 
-LOAD3 SCE212_006 REF6 8\x0b REF_END2 
-SEQ1 \x8c\x01 SEQ2 \xf4Z\x01\x0c\x00\x00\x00\x00"\x03-\x00\x00
+SEQ3 REF7 &\n CALL1 \xfa\x01 CALL7 (\x02 CALL6 
+LOAD3 SCE212_006 REF6 8\x0b CALL8
+SEQ1 \x8c\x01 SEQ5 \xf4Z\x01\x0c\x00\x00\x00\x00"\x03-\x00\x00
  
 /*▲SE01　ループ再生（次の停止まで）*/\a2,1,1,1,\a6,0,0,0,　ザザザ……ザザッ……\pザアザザザ……ザアアアアア……@
 　ザアザアアアアアアア……\w\n/*▲SE01　停止*/\a4,1,0,0,\z
 \x00\x00\x00
-SEQ6 REF6 |\x0b CALL1 \xfa\x01 CALL3 (\x02 REF_END1 
-LOAD3 SCE212_007 REF6 j\x0c REF_END2 
-SEQ1 \x8c\x01 SEQ2 \xf8Z\x01\x0c\x00\x00\x00\x00"\x03d\x00\x00
+SEQ3 REF7 |\x0b CALL1 \xfa\x01 CALL7 (\x02 CALL6 
+LOAD3 SCE212_007 REF6 j\x0c CALL8
+SEQ1 \x8c\x01 SEQ5 \xf8Z\x01\x0c\x00\x00\x00\x00"\x03d\x00\x00
  
 ノイズが、耳の奥で聞こえた。@
 こめかみがずきずきと痛む。@
@@ -91,9 +91,9 @@ SEQ1 \x8c\x01 SEQ2 \xf8Z\x01\x0c\x00\x00\x00\x00"\x03d\x00\x00
 \n/*■黒　表示（クロスフェード）*/\a7,-2,-2,0,\a0,200,2,0,\a6,-2,0,0,ようやく浅いまどろみが頭に霞を作りはじめた。\
 
 \x00\x00
-SEQ6 REF6 \xae\x0c CALL1 \xfa\x01 CALL3 (\x02 REF_END1 
-SEQ5 \x02\x00 REF_END3 
-LOAD6 .\\Data\\Script\\Bgm.Fob REF2 \x92\x0e REF_END2 
-LOAD2 SeStop REF1 \xbc\x0e CALL2 \xfa\x01 REF_END2 
-LOAD3 TextClose REF2 \xe4\x0e REF_END1 
+SEQ3 REF7 \xae\x0c CALL1 \xfa\x01 CALL7 (\x02 CALL6 
+SEQ2 \x02\x00 CALL2 
+LOAD6 .\\Data\\Script\\Bgm.Fob REF2 \x92\x0e CALL8
+LOAD2 SeStop REF1 \xbc\x0e CALL5 \xfa\x01 CALL8
+LOAD3 TextClose REF2 \xe4\x0e CALL6 
 END_FILE

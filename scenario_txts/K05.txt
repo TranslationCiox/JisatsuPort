@@ -1,14 +1,14 @@
 START_FILE
 \xa6\x11\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00,\x0e\x00
-LOAD6 .\\Data\\Script\\Bgm.Fob REF2 \x06\x00 REF_END2 
-LOAD2 StopCD REF1 0\x00 REF_END1 
-SEQ5 =\x00 REF_END3 
-LOAD6 .\\Data\\Script\\Bg.Fob REF3 f\x00 REF_END2 
-LOAD4 BgAutoFadeIn REF3 \x90\x00 REF_END1 
-SEQ5 \x04\x01 CALL1 \x06\x00 REF_END2 
-LOAD2 PlayCD REF1 \xda\x00 REF_END1 
-LOAD3 SCEK05_001 REF6 \xf6\x00 REF_END2 
-SEQ1 \x8c\x01 SEQ2 \x80\xa6\x01\x0c\x00\x00\x00\x00"\x03\x96\x00\x00
+LOAD6 .\\Data\\Script\\Bgm.Fob REF2 \x06\x00 CALL8
+LOAD2 StopCD REF1 0\x00 CALL6 
+SEQ2 =\x00 CALL2 
+LOAD6 .\\Data\\Script\\Bg.Fob REF3 f\x00 CALL8
+LOAD4 BgAutoFadeIn REF3 \x90\x00 CALL6 
+SEQ2 \x04\x01 CALL1 \x06\x00 CALL8
+LOAD2 PlayCD REF1 \xda\x00 CALL6 
+LOAD3 SCEK05_001 REF6 \xf6\x00 CALL8
+SEQ1 \x8c\x01 SEQ5 \x80\xa6\x01\x0c\x00\x00\x00\x00"\x03\x96\x00\x00
  
 　ゆきのそうしたやり方は、とても新鮮で、スマートに映った。@
 自分の道を行くつもりであれば、周囲との軋轢が産まれるのはや\nむなしと思いこんでいた私に、ゆきは、より高度なやりかたがあ\nると教えてくれた。@
@@ -18,11 +18,11 @@ SEQ1 \x8c\x01 SEQ2 \x80\xa6\x01\x0c\x00\x00\x00\x00"\x03\x96\x00\x00
 　私はゆきを尊敬した。@
 　私のどこに魅力を見つけたのか、ゆきもまた、私をどこか尊敬\nしてくれているような感じがあって、それはとても心地がよかっ\nた。\w\z
 \x00
-SEQ6 REF6 :\x01 REF_END3 
-LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 \xb2\x03 REF_END2 
-LOAD2 TextOn REF1 \xe0\x03 REF_END1 
-LOAD3 SCEK05_002 REF6 \xfc\x03 REF_END2 
-SEQ1 \x8c\x01 SEQ2 \x84\xa6\x01\x0c\x00\x00\x00\x00"\x03~\x00\x00
+SEQ3 REF7 :\x01 CALL2 
+LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 \xb2\x03 CALL8
+LOAD2 TextOn REF1 \xe0\x03 CALL6 
+LOAD3 SCEK05_002 REF6 \xfc\x03 CALL8
+SEQ1 \x8c\x01 SEQ5 \x84\xa6\x01\x0c\x00\x00\x00\x00"\x03~\x00\x00
  
 　１ヶ月も経ったころ－－誤解を恐れずにいうけれど－－\n私は若草ゆきに恋していた。@
 私は、自分がゆきに与えられるものはなんなのだろうか、と考え\nるようになっていた。@
@@ -30,9 +30,9 @@ SEQ1 \x8c\x01 SEQ2 \x84\xa6\x01\x0c\x00\x00\x00\x00"\x03~\x00\x00
 私は自分自身をまじまじと見つめ、そうして自分があまりに薄っ\nぺらで、ゆきに返すような素敵なものをなにひとつ持っていない\nことに初めて気づいた。@
 若草ゆきに恋することで、私は、唐突に自分というものの輪郭を\nはっきり認識させられたのだった。\w\z
 \x00
-SEQ6 REF6 @\x04 CALL1 \xb2\x03 CALL3 \xe0\x03 REF_END1 
-LOAD3 SCEK05_003 REF6 r\x06 REF_END2 
-SEQ1 \x8c\x01 SEQ2 \x88\xa6\x01\x0c\x00\x00\x00\x00"\x03_\x00\x00
+SEQ3 REF7 @\x04 CALL1 \xb2\x03 CALL7 \xe0\x03 CALL6 
+LOAD3 SCEK05_003 REF6 r\x06 CALL8
+SEQ1 \x8c\x01 SEQ5 \x88\xa6\x01\x0c\x00\x00\x00\x00"\x03_\x00\x00
  
 　私はこれまで何をやってきたのだろう？@
 足下がガラガラと崩れていくみたいなショックだった。@
@@ -41,9 +41,9 @@ SEQ1 \x8c\x01 SEQ2 \x88\xa6\x01\x0c\x00\x00\x00\x00"\x03_\x00\x00
 何者も容易には侵入できない、立派な城壁だった。@
 けれども私が作り上げたのは城壁だけで、そのなかに城と呼べる\nものがなかったと……私は知った。\w\z
 \x00
-SEQ6 REF6 \xb6\x06 CALL1 \xb2\x03 CALL3 \xe0\x03 REF_END1 
-LOAD3 SCEK05_004 REF6 l\x08 REF_END2 
-SEQ1 \x8c\x01 SEQ2 \x8c\xa6\x01\x0c\x00\x00\x00\x00"\x03p\x00\x00
+SEQ3 REF7 \xb6\x06 CALL1 \xb2\x03 CALL7 \xe0\x03 CALL6 
+LOAD3 SCEK05_004 REF6 l\x08 CALL8
+SEQ1 \x8c\x01 SEQ5 \x8c\xa6\x01\x0c\x00\x00\x00\x00"\x03p\x00\x00
  
 　むさぼるように本を読んで、映画を観て、音楽を聴いた。@
 洋服や髪型に気をつけて、できるだけ素敵な女の子として振る舞\nおうと心がけた。@
@@ -54,9 +54,9 @@ SEQ1 \x8c\x01 SEQ2 \x8c\xa6\x01\x0c\x00\x00\x00\x00"\x03p\x00\x00
 私に対する露骨な悪意は、しだいに周囲から影を潜めていった。\nいまの（－－この学校での、ね）@
 私のスタンスは、このころに形作られたのだと思う。\w\z
 \x00
-SEQ6 REF6 \xb0\x08 CALL1 \xb2\x03 CALL3 \xe0\x03 REF_END1 
-LOAD3 SCEK05_005 REF6 \xaa\n REF_END2 
-SEQ1 \x8c\x01 SEQ2 \x90\xa6\x01\x0c\x00\x00\x00\x00"\x03\x8e\x00\x00
+SEQ3 REF7 \xb0\x08 CALL1 \xb2\x03 CALL7 \xe0\x03 CALL6 
+LOAD3 SCEK05_005 REF6 \xaa\n CALL8
+SEQ1 \x8c\x01 SEQ5 \x90\xa6\x01\x0c\x00\x00\x00\x00"\x03\x8e\x00\x00
  
 　私は、自分たちの関係は、周囲のおままごととは違うと思って\nいた。@
 より高い次元での交流……肉体とは別次元の精神的な繋がりだと。\n\p私たちは他の子たちみたいにのべつくまなくベタベタしたりはし\nなかった。@
@@ -65,12 +65,12 @@ SEQ1 \x8c\x01 SEQ2 \x90\xa6\x01\x0c\x00\x00\x00\x00"\x03\x8e\x00\x00
 真に価値あるものが、そこらにありふれているはずはない、と。@
 でも、思いとはうらはらに、私のなかで、徐々に、ゆきに抱きつ\nいて、キスをしたいという願望が膨らんでいった。\w\z
 \x00\x00\x00
-SEQ6 REF6 \xee\n CALL1 \xb2\x03 CALL3 \xe0\x03 REF_END1 \x03\x1a\x00\x00
+SEQ3 REF7 \xee\n CALL1 \xb2\x03 CALL7 \xe0\x03 CALL6 \x03\x1a\x00\x00
 CHOICE
 私はゆきに、自分の気持ちを正直に伝えた\nそれでも私は、ゆきとプラトニックな関係を続けた\n\l0,2,
 ENDCHOICE
 
 \x00
-SEQ6 REF6 `\r CALL1 \xb2\x03 CALL3 \xe0\x03 CALL2 \xb2\x03 REF_END2 
-LOAD3 TextClose REF2 \x0e\x0e REF_END1 
+SEQ3 REF7 `\r CALL1 \xb2\x03 CALL7 \xe0\x03 CALL5 \xb2\x03 CALL8
+LOAD3 TextClose REF2 \x0e\x0e CALL6 
 END_FILE

@@ -1,7 +1,7 @@
 START_FILE
 m\x06\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00H\x05\x00
-LOAD3 SCE084_001 REF6 \x06\x00 REF_END2 
-SEQ1 \x8c\x01 SEQ2 \xe0\x92 SEQ3 \x03\xb8\x00\x00
+LOAD3 SCE084_001 REF6 \x06\x00 CALL8
+SEQ1 \x8c\x01 SEQ5 \xe0\x92 CALL4 \x03\xb8\x00\x00
  
 目が覚めた。@
 －－おれは気を失っていたのか？\p　それとも、これもまた夢なの\nか？@
@@ -18,11 +18,11 @@ SEQ1 \x8c\x01 SEQ2 \xe0\x92 SEQ3 \x03\xb8\x00\x00
 頭の中から、すうっと何かが引いていった。\pそれまでの熱狂が嘘\nだったように、冷めた、しらけた感じが－－おなじみの感覚が頭\nの中を支配していた。\
 
 \x00\x00\x00
-SEQ6 REF6 J\x00 REF_END3 
-LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 J\x03 REF_END2 
-LOAD2 TextOn REF1 x\x03 REF_END1 
-LOAD3 SCE084_002 REF6 \x94\x03 REF_END2 
-SEQ1 \x8c\x01 SEQ2 \xe4\x92 SEQ3 \x03C\x00\x00
+SEQ3 REF7 J\x00 CALL2 
+LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 J\x03 CALL8
+LOAD2 TextOn REF1 x\x03 CALL6 
+LOAD3 SCE084_002 REF6 \x94\x03 CALL8
+SEQ1 \x8c\x01 SEQ5 \xe4\x92 CALL4 \x03C\x00\x00
  
 －－紅葉は？@
 なんとか気力を奮い起こして、紅葉の姿を探す。@
@@ -30,6 +30,6 @@ SEQ1 \x8c\x01 SEQ2 \xe4\x92 SEQ3 \x03C\x00\x00
 \n拓司\n　「紅葉！\p　紅葉ッ！」\
 
 \x00\x00\x00
-SEQ6 REF6 \xd8\x03 CALL1 J\x03 CALL3 x\x03 CALL2 J\x03 REF_END2 
-LOAD3 TextClose REF2 *\x05 REF_END1 
+SEQ3 REF7 \xd8\x03 CALL1 J\x03 CALL7 x\x03 CALL5 J\x03 CALL8
+LOAD3 TextClose REF2 *\x05 CALL6 
 END_FILE

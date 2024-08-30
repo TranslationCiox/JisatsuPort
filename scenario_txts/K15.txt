@@ -1,17 +1,17 @@
 START_FILE
 )\x02\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xb0\x054\x01\x00\x00\x00\xa4\x01\x00
-LOAD3 SCEK15_001 REF6 \x06\x00 REF_END2 
-SEQ1 \x8c\x01 SEQ2 \xd0\xb0\x01\x0c\x00\x00\x00\x00"\x03 \x00\x00
+LOAD3 SCEK15_001 REF6 \x06\x00 CALL8
+SEQ1 \x8c\x01 SEQ5 \xd0\xb0\x01\x0c\x00\x00\x00\x00"\x03 \x00\x00
  
 お話はこれでおしまい。@
 ゆき？@
 １週間後、ゆきは風邪薬を２００錠のんで、自殺した。@
 おしまい。これで、おしまい。\w\z
 \x00\x00\x00
-SEQ6 REF6 J\x00 REF_END3 
-LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 \xea\x00 REF_END2 
-LOAD2 TextOn REF1 \x18\x01 REF_END1 
-LOAD6 .\\Data\\Script\\Bgm.Fob REF2 4\x01 REF_END2 
-LOAD2 StopCD REF1 ^\x01 CALL2 \xea\x00 REF_END2 
-LOAD3 TextClose REF2 \x86\x01 REF_END1 
+SEQ3 REF7 J\x00 CALL2 
+LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 \xea\x00 CALL8
+LOAD2 TextOn REF1 \x18\x01 CALL6 
+LOAD6 .\\Data\\Script\\Bgm.Fob REF2 4\x01 CALL8
+LOAD2 StopCD REF1 ^\x01 CALL5 \xea\x00 CALL8
+LOAD3 TextClose REF2 \x86\x01 CALL6 
 END_FILE

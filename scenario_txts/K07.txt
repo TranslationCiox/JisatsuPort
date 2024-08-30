@@ -1,12 +1,12 @@
 START_FILE
 v\t\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x008\x07\x00
-SEQ5 \xc8\x00 REF_END3 
-LOAD6 .\\Data\\Script\\Bg.Fob REF3  \x00 REF_END2 
-LOAD4 BgAutoFadeIn REF3 J\x00 REF_END1 
-LOAD6 .\\Data\\Script\\Bgm.Fob REF2 n\x00 REF_END2 
-LOAD2 StopCD REF1 \x98\x00 REF_END1 
-LOAD3 SCEK07_001 REF6 \xb4\x00 REF_END2 
-SEQ1 \x8c\x01 SEQ2 \xf8\xa6\x01\x0c\x00\x00\x00\x00"\x03\x8a\x00\x00
+SEQ2 \xc8\x00 CALL2 
+LOAD6 .\\Data\\Script\\Bg.Fob REF3  \x00 CALL8
+LOAD4 BgAutoFadeIn REF3 J\x00 CALL6 
+LOAD6 .\\Data\\Script\\Bgm.Fob REF2 n\x00 CALL8
+LOAD2 StopCD REF1 \x98\x00 CALL6 
+LOAD3 SCEK07_001 REF6 \xb4\x00 CALL8
+SEQ1 \x8c\x01 SEQ5 \xf8\xa6\x01\x0c\x00\x00\x00\x00"\x03\x8a\x00\x00
  
 　目的地は歩道橋だと、私は思っていた。@
 　そこには道と、歩道橋しかなかったからだ。@
@@ -18,11 +18,11 @@ SEQ1 \x8c\x01 SEQ2 \xf8\xa6\x01\x0c\x00\x00\x00\x00"\x03\x8a\x00\x00
 どういうことだろう？@
 ゆきがここで隠れて煙草でも吸っているということなのだろうか？\n\pだんだん腹が立ってきた。\w\z
 \x00
-SEQ6 REF6 \xf8\x00 REF_END3 
-LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 @\x03 REF_END2 
-LOAD2 TextOn REF1 n\x03 REF_END1 
-LOAD3 SCEK07_002 REF6 \x8a\x03 REF_END2 
-SEQ1 \x8c\x01 SEQ2 \xf8\xa6\x01\x0c\x00\x00\x00\x00"\x03\x9b\x00\x00
+SEQ3 REF7 \xf8\x00 CALL2 
+LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 @\x03 CALL8
+LOAD2 TextOn REF1 n\x03 CALL6 
+LOAD3 SCEK07_002 REF6 \x8a\x03 CALL8
+SEQ1 \x8c\x01 SEQ5 \xf8\xa6\x01\x0c\x00\x00\x00\x00"\x03\x9b\x00\x00
  
 　そんなことが秘密だとでもいうつもりか？@
 私が告白した秘密に比べて、喫煙なんてちっぽけすぎる。@
@@ -36,12 +36,12 @@ SEQ1 \x8c\x01 SEQ2 \xf8\xa6\x01\x0c\x00\x00\x00\x00"\x03\x9b\x00\x00
 聞いてしまったら、私はもうその秘密から逃れることはできない。\n\p興奮が私の中から急速に引いてゆき、白茶けた無感動がかわりに\n広がった。@
 私は急に怖くなった。\w\z
 \x00
-SEQ6 REF6 \xce\x03 CALL1 @\x03 CALL3 n\x03 REF_END1 \x03\x18\x00\x00
+SEQ3 REF7 \xce\x03 CALL1 @\x03 CALL7 n\x03 CALL6 \x03\x18\x00\x00
 CHOICE
 「もういいよ、帰ろう」と私はいった\n「聞かせて」と、私は恐怖を抑えていった。\n\l0,2,
 ENDCHOICE
 
 \x00\x00\x00
-SEQ6 REF6 t\x06 CALL1 @\x03 CALL3 n\x03 CALL2 @\x03 REF_END2 
-LOAD3 TextClose REF2 \x1a\x07 REF_END1 
+SEQ3 REF7 t\x06 CALL1 @\x03 CALL7 n\x03 CALL5 @\x03 CALL8
+LOAD3 TextClose REF2 \x1a\x07 CALL6 
 END_FILE

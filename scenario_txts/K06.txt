@@ -1,12 +1,12 @@
 START_FILE
 \xb8\x04\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xa4\t3\x01\x00\x00\x00d\x03\x00
-SEQ5 \xc8\x00 REF_END3 
-LOAD6 .\\Data\\Script\\Bg.Fob REF3  \x00 REF_END2 
-LOAD4 BgAutoFadeIn REF3 J\x00 REF_END1 
-LOAD6 .\\Data\\Script\\Bgm.Fob REF2 n\x00 REF_END2 
-LOAD2 StopCD REF1 \x98\x00 REF_END1 
-LOAD3 SCEK06_001 REF6 \xb4\x00 REF_END2 
-SEQ1 \x8c\x01 SEQ2 \xd0\xa6\x01\x0c\x00\x00\x00\x00"\x03v\x00\x00
+SEQ2 \xc8\x00 CALL2 
+LOAD6 .\\Data\\Script\\Bg.Fob REF3  \x00 CALL8
+LOAD4 BgAutoFadeIn REF3 J\x00 CALL6 
+LOAD6 .\\Data\\Script\\Bgm.Fob REF2 n\x00 CALL8
+LOAD2 StopCD REF1 \x98\x00 CALL6 
+LOAD3 SCEK06_001 REF6 \xb4\x00 CALL8
+SEQ1 \x8c\x01 SEQ5 \xd0\xa6\x01\x0c\x00\x00\x00\x00"\x03v\x00\x00
  
 　もう帰ろう、と私がいうと、ゆきはほっとしたようだった。@
 けれども安堵の奥には、落胆のかけらがあるように思えた。@
@@ -17,8 +17,8 @@ SEQ1 \x8c\x01 SEQ2 \xd0\xa6\x01\x0c\x00\x00\x00\x00"\x03v\x00\x00
 私は結局、ゆきの秘密を最後まで知ることはなかった。@
 それから１週間後、ゆきは風邪薬を２００錠のんで、自殺したの\nだった。\w\z
 \x00
-SEQ6 REF6 \xf8\x00 REF_END3 
-LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 \xf0\x02 REF_END2 
-LOAD2 TextOn REF1 \x1e\x03 CALL2 \xf0\x02 REF_END2 
-LOAD3 TextClose REF2 F\x03 REF_END1 
+SEQ3 REF7 \xf8\x00 CALL2 
+LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 \xf0\x02 CALL8
+LOAD2 TextOn REF1 \x1e\x03 CALL5 \xf0\x02 CALL8
+LOAD3 TextClose REF2 F\x03 CALL6 
 END_FILE

@@ -1,7 +1,7 @@
 START_FILE
 \xd8\x04\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xa4\t3\x01\x00\x00\x00*\x04\x00
-LOAD3 SCE205_001 REF6 \x06\x00 REF_END2 
-SEQ1 \x8c\x01 SEQ2 \xf0O\x01\x0c\x00\x00\x00\x00"\x03\xd3\x00\x00
+LOAD3 SCE205_001 REF6 \x06\x00 CALL8
+SEQ1 \x8c\x01 SEQ5 \xf0O\x01\x0c\x00\x00\x00\x00"\x03\xd3\x00\x00
  
 ナタネ\n　「いま、あなたが体験しているこの世界こそが『現実』よ。@
 　　そして、『学校に籠城している世界』……教授はそれを『あ\n　　なたの妄想が生んだ頭の中の世界』だと信じ込ませようとし\n　　ているけれど、それは罠。\pあなたが見たのは『妄想』ではな\n　　いわ。\p『記憶』よ」@
@@ -15,8 +15,8 @@ SEQ1 \x8c\x01 SEQ2 \xf0O\x01\x0c\x00\x00\x00\x00"\x03\xd3\x00\x00
 　　妄想の産物ではない。\p波動が襲ってきて、あなたたちは実験\n　　室に籠城した。\pそれは過去の事実なの。\p……いいわね？」\
 
 \x00
-SEQ6 REF6 J\x00 REF_END3 
-LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 \xb6\x03 REF_END2 
-LOAD2 TextOn REF1 \xe4\x03 CALL2 \xb6\x03 REF_END2 
-LOAD3 TextClose REF2 \x0c\x04 REF_END1 
+SEQ3 REF7 J\x00 CALL2 
+LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 \xb6\x03 CALL8
+LOAD2 TextOn REF1 \xe4\x03 CALL5 \xb6\x03 CALL8
+LOAD3 TextClose REF2 \x0c\x04 CALL6 
 END_FILE

@@ -1,7 +1,7 @@
 START_FILE
 *\x03\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xb0\x044\x01\x00\x00\x00D\x02\x00
-LOAD3 SCE017_001 REF6 \x06\x00 REF_END2 
-SEQ1 \x8c\x01 SEQ2 0* SEQ3 \x03$\x00\x00
+LOAD3 SCE017_001 REF6 \x06\x00 CALL8
+SEQ1 \x8c\x01 SEQ5 0* CALL4 \x03$\x00\x00
  
 拓司\n　「……」@
 紅葉\n　「……」@
@@ -11,15 +11,15 @@ SEQ1 \x8c\x01 SEQ2 0* SEQ3 \x03$\x00\x00
 紅葉\n　「……」@
 拓司\n　「……」\w\z
 \x00
-SEQ6 REF6 J\x00 REF_END3 
-LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 \xfa\x00 REF_END2 
-LOAD2 TextOn REF1 (\x01 REF_END1 
-LOAD3 SCE017_002 REF6 D\x01 REF_END2 
-SEQ1 \x8c\x01 SEQ2 4* SEQ3 \x03\x16\x00\x00
+SEQ3 REF7 J\x00 CALL2 
+LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 \xfa\x00 CALL8
+LOAD2 TextOn REF1 (\x01 CALL6 
+LOAD3 SCE017_002 REF6 D\x01 CALL8
+SEQ1 \x8c\x01 SEQ5 4* CALL4 \x03\x16\x00\x00
  
 紅葉\n　「……生理？」@
 拓司\n　「お前なあ、もうちょっと女らしい冗談言えよ」\w\z
 \x00\x00\x00
-SEQ6 REF6 \x88\x01 CALL1 \xfa\x00 CALL3 (\x01 CALL2 \xfa\x00 REF_END2 
-LOAD3 TextClose REF2 &\x02 REF_END1 
+SEQ3 REF7 \x88\x01 CALL1 \xfa\x00 CALL7 (\x01 CALL5 \xfa\x00 CALL8
+LOAD3 TextClose REF2 &\x02 CALL6 
 END_FILE

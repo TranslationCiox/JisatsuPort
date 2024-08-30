@@ -1,44 +1,44 @@
 START_FILE
 7\x16\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xde\x11\x00
-LOAD3 SCE028_001 REF6 \x06\x00 REF_END2 
-SEQ1 \x8c\x01 SEQ2 `; SEQ3 
-SEQ5 \x02\x00 REF_END3  \x1e\x04\x00\x00\r\x00\x00\x1e\x17\x00 REF_END3  \x1e\x08\x00\x00\r\x00\x00\x1e\x01\x00 REF_END3 
-LOAD6 .\\Data\\Script\\Bgm.Fob REF2 \x98\x00 REF_END2 
-LOAD2 SePlay REF1 \xc2\x00 REF_END1 \x03L\x00\x00
+LOAD3 SCE028_001 REF6 \x06\x00 CALL8
+SEQ1 \x8c\x01 SEQ5 `; CALL4 
+SEQ2 \x02\x00 CALL2  \x1e\x04\x00\x00\r\x00\x00\x1e\x17\x00 CALL2  \x1e\x08\x00\x00\r\x00\x00\x1e\x01\x00 CALL2 
+LOAD6 .\\Data\\Script\\Bgm.Fob REF2 \x98\x00 CALL8
+LOAD2 SePlay REF1 \xc2\x00 CALL6 \x03L\x00\x00
  
 　拓司とカンナが初めて出会ったのは、工業団地の廃墟でだった　@
 　深夜２時過ぎ、いつものように町を徘徊していた拓司は、ふらり\n　と工業団地地区へと迷い込んだ。@
 　かつては１００世帯以上が生活していたそれら１２棟の団地は、\n　相次ぐ工場の閉鎖と、老朽化によって、完全に廃棄されて久しか\n　った。\
 
 \x00
-SEQ6 REF6 \xde\x00 REF_END3 
-LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 .\x02 REF_END2 
-LOAD2 TextOn REF1 \\\x02 REF_END1 
+SEQ3 REF7 \xde\x00 CALL2 
+LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 .\x02 CALL8
+LOAD2 TextOn REF1 \\\x02 CALL6 
 LOAD8 
 CHOICE
 左へ\n右へ\n\l0,2,
 ENDCHOICE
 
 \x00
-SEQ6 REF6 x\x02 CALL1 .\x02 CALL3 \\\x02 CALL2 .\x02 REF_END2 
-LOAD3 TextClose REF2 \xda\x02 REF_END1 
-LOAD3 SCE028_002 REF6 \xfa\x02 REF_END2 
-SEQ1 \x8c\x01 SEQ2 d; SEQ3 \x03T\x00\x00
+SEQ3 REF7 x\x02 CALL1 .\x02 CALL7 \\\x02 CALL5 .\x02 CALL8
+LOAD3 TextClose REF2 \xda\x02 CALL6 
+LOAD3 SCE028_002 REF6 \xfa\x02 CALL8
+SEQ1 \x8c\x01 SEQ5 d; CALL4 \x03T\x00\x00
  
 　荒れ果てた鉄筋コンクリートの塊は容易に墓標を想起させ、そし\n　て宿命的に幽霊が出るという噂が立った。@
 　ＴＶで『ウワサの怪奇スポット』との興味本位の紹介をされたせ\n　いか、一時は物好きたちがいくらか訪れてはいたが、数年前、団\n　地を囲むように金網のフェンスが張り巡らされたのを機に、この\n　地は完全に沈黙の場所となった。@
 \z
 \x00\x00\x00
-SEQ6 REF6 >\x03 CALL1 .\x02 CALL3 \\\x02 REF_END1 
+SEQ3 REF7 >\x03 CALL1 .\x02 CALL7 \\\x02 CALL6 
 LOAD8 
 CHOICE
 左へ\n右へ\n\l0,2,
 ENDCHOICE
 
 \x00
-SEQ6 REF6 \xc8\x04 CALL1 .\x02 CALL3 \\\x02 CALL2 .\x02 CALL3 \xda\x02 REF_END1 
-LOAD3 SCE028_003 REF6 8\x05 REF_END2 
-SEQ1 \x8c\x01 SEQ2 h; SEQ3 \x03\xc9\x00\x00
+SEQ3 REF7 \xc8\x04 CALL1 .\x02 CALL7 \\\x02 CALL5 .\x02 CALL7 \xda\x02 CALL6 
+LOAD3 SCE028_003 REF6 8\x05 CALL8
+SEQ1 \x8c\x01 SEQ5 h; CALL4 \x03\xc9\x00\x00
  
 　フェンスは実際のところ２メートル程度の高さしかなかったから\n　、決して乗り越えられないというわけではない（実際、拓司は簡\n　単にそれを乗り越えることができた）。\p故に、フェンスの設置が\n　物理的に侵入者を阻んだとはいえない。@
 　フェンスの設置がこの廃墟に付け加えたもの……それは物理的で\n　はない、なにか精神的ともいうべき閉塞感だった。@
@@ -49,31 +49,31 @@ SEQ1 \x8c\x01 SEQ2 h; SEQ3 \x03\xc9\x00\x00
 \n　彼らが言い残した言葉が、伝説の上にさらなる伝説を生んでいっ\n　た。\
 
 \x00\x00\x00
-SEQ6 REF6 |\x05 CALL1 .\x02 CALL3 \\\x02 REF_END1 
+SEQ3 REF7 |\x05 CALL1 .\x02 CALL7 \\\x02 CALL6 
 LOAD8 
 CHOICE
 左へ\n右へ\n\l0,2,
 ENDCHOICE
 
 \x00
-SEQ6 REF6 \xda\x08 CALL1 .\x02 CALL3 \\\x02 CALL2 .\x02 CALL3 \xda\x02 REF_END1 
-LOAD3 SCE028_004 REF6 J\t REF_END2 
-SEQ1 \x8c\x01 SEQ2 l; SEQ3 \x03T\x00\x00
+SEQ3 REF7 \xda\x08 CALL1 .\x02 CALL7 \\\x02 CALL5 .\x02 CALL7 \xda\x02 CALL6 
+LOAD3 SCE028_004 REF6 J\t CALL8
+SEQ1 \x8c\x01 SEQ5 l; CALL4 \x03T\x00\x00
  
 　やがて、歳月と雨と自然作用が金網を赤黒く錆びさせ、この地は\n　さらなる陰惨さをその身にまとうこととなった。\p団地の壁にはベ\n　ッタリと染みができ、不法投棄の粗大ゴミが無秩序にあちこちに\n　転がり始めた。@
 　ふざけて訪れることすらはばかられるくらいの深刻さが、手で触\n　れることができるくらいの確かさで敷地内に漂っていた。\
 
 \x00\x00\x00
-SEQ6 REF6 \x8e\t CALL1 .\x02 CALL3 \\\x02 REF_END1 
+SEQ3 REF7 \x8e\t CALL1 .\x02 CALL7 \\\x02 CALL6 
 LOAD8 
 CHOICE
 左へ\n右へ\n\l0,2,
 ENDCHOICE
 
 \x00
-SEQ6 REF6 \x18\x0b CALL1 .\x02 CALL3 \\\x02 CALL2 .\x02 CALL3 \xda\x02 REF_END1 
-LOAD3 SCE028_005 REF6 \x88\x0b REF_END2 
-SEQ1 \x8c\x01 SEQ2 p; SEQ3 \x03\x92\x00\x00
+SEQ3 REF7 \x18\x0b CALL1 .\x02 CALL7 \\\x02 CALL5 .\x02 CALL7 \xda\x02 CALL6 
+LOAD3 SCE028_005 REF6 \x88\x0b CALL8
+SEQ1 \x8c\x01 SEQ5 p; CALL4 \x03\x92\x00\x00
  
 　もっとも、拓司にとって、そうした怪談めいた空気など、少しも\n　恐ろしいものではなかった。@
 　割れた窓から通りを見下ろす真っ白な子供の影や、団地の壁にび\n　っしり張り付いている死人の顔などよりももっと恐ろしいものが\n　世界にはあるということを、拓司は知っていた。@
@@ -82,9 +82,9 @@ SEQ1 \x8c\x01 SEQ2 p; SEQ3 \x03\x92\x00\x00
 　とはいえ、まさか深夜２時に誰かがいるとは思っていなかった。\
 
 \x00
-SEQ6 REF6 \xcc\x0b CALL1 .\x02 CALL3 \\\x02 REF_END1 
-LOAD3 SCE028_006 REF6 N\x0e REF_END2 
-SEQ1 \x8c\x01 SEQ2 t; SEQ3 \x03\xae\x00\x00
+SEQ3 REF7 \xcc\x0b CALL1 .\x02 CALL7 \\\x02 CALL6 
+LOAD3 SCE028_006 REF6 N\x0e CALL8
+SEQ1 \x8c\x01 SEQ5 t; CALL4 \x03\xae\x00\x00
  
 \n/*▲SE02　一回再生（ファイル再生待たず次へ）*/\a2,0,2,0,　ドザッ！@
 \a4,0,0,0,/*▲SE02　一回再生（ファイル再生待たず次へ）*/\a2,0,2,0,　ドザッ！@
@@ -97,7 +97,7 @@ SEQ1 \x8c\x01 SEQ2 t; SEQ3 \x03\xae\x00\x00
 　それが拓司とカンナの出会いだった。\
 
 \x00\x00\x00
-SEQ6 REF6 \x92\x0e CALL1 .\x02 CALL3 \\\x02 REF_END1 
-SEQ5 \x02\x00 CALL1 \x98\x00 REF_END2 
-LOAD2 SeStop REF1 \xaa\x11 CALL2 .\x02 CALL3 \xda\x02 REF_END1 
+SEQ3 REF7 \x92\x0e CALL1 .\x02 CALL7 \\\x02 CALL6 
+SEQ2 \x02\x00 CALL1 \x98\x00 CALL8
+LOAD2 SeStop REF1 \xaa\x11 CALL5 .\x02 CALL7 \xda\x02 CALL6 
 END_FILE

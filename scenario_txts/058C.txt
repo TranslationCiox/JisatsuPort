@@ -1,22 +1,22 @@
 START_FILE
 \xd3%\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xea\x1e\x00
-LOAD6 .\\Data\\Script\\Bgm.Fob REF2 \x06\x00 REF_END2 
-LOAD2 StopCD REF1 0\x00 REF_END1 
-LOAD3 SCE058_001 REF6 L\x00 REF_END2 
-SEQ1 \x8c\x01 SEQ2 @j SEQ3 \x03\x1b\x00\x00
+LOAD6 .\\Data\\Script\\Bgm.Fob REF2 \x06\x00 CALL8
+LOAD2 StopCD REF1 0\x00 CALL6 
+LOAD3 SCE058_001 REF6 L\x00 CALL8
+SEQ1 \x8c\x01 SEQ5 @j CALL4 \x03\x1b\x00\x00
  
 限界だった。@
 時間が何分あまっていようが、もう我慢できない。@
 拓司は一気に教室に駆け込んだ。\
 
 \x00\x00\x00
-SEQ6 REF6 \x90\x00 REF_END3 
-LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 \x1c\x01 REF_END2 
-LOAD2 TextOn REF1 J\x01 REF_END1 
-SEQ5 \n\x01 CALL1 \x06\x00 REF_END2 
-LOAD2 PlayCD REF1 \x8c\x01 REF_END1 
-LOAD3 SCE058_002 REF6 \xa8\x01 REF_END2 
-SEQ1 \x8c\x01 SEQ2 Dj SEQ3 \x03r\x00\x00
+SEQ3 REF7 \x90\x00 CALL2 
+LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 \x1c\x01 CALL8
+LOAD2 TextOn REF1 J\x01 CALL6 
+SEQ2 \n\x01 CALL1 \x06\x00 CALL8
+LOAD2 PlayCD REF1 \x8c\x01 CALL6 
+LOAD3 SCE058_002 REF6 \xa8\x01 CALL8
+SEQ1 \x8c\x01 SEQ5 Dj CALL4 \x03r\x00\x00
  
 駆け込んできた拓司を見ても、学生たちには何の反応もない。@
 ちらりとつまらなそうに見ただけだ。\p白けた空気が教室には漂っ\nていた。@
@@ -28,9 +28,9 @@ SEQ1 \x8c\x01 SEQ2 Dj SEQ3 \x03r\x00\x00
 拓司の胸のなかで、どす黒い塊が爆発した。\
 
 \x00
-SEQ6 REF6 \xec\x01 CALL1 \x1c\x01 CALL3 J\x01 REF_END1 
-LOAD3 SCE058_003 REF6 \xee\x03 REF_END2 
-SEQ1 \x8c\x01 SEQ2 Hj SEQ3 \x03\x9a\x00\x00
+SEQ3 REF7 \xec\x01 CALL1 \x1c\x01 CALL7 J\x01 CALL6 
+LOAD3 SCE058_003 REF6 \xee\x03 CALL8
+SEQ1 \x8c\x01 SEQ5 Hj CALL4 \x03\x9a\x00\x00
  
 拓司\n　「オ、オ、オ、オ、オ、オ、ア、ア、ア、ア、ア、ア、ア！」@
 /*■CG22　表示（クロスフェード）*/\a7,-2,-2,0,\a0,21,2,0,\a6,-2,0,0,\n　肺腑の底から声を絞り出して、男だろうが女だろうが、目に入\nった人間すべてに拳を叩き込んでいく。@
@@ -43,12 +43,12 @@ SEQ1 \x8c\x01 SEQ2 Hj SEQ3 \x03\x9a\x00\x00
 視界が奇妙な色で明滅する。\
 
 \x00
-SEQ6 REF6 2\x04 CALL1 \x1c\x01 CALL3 J\x01 REF_END1 
-SEQ5 \xc8\x00 REF_END3 
-LOAD6 .\\Data\\Script\\Bg.Fob REF3 \xee\x06 REF_END2 
-LOAD4 BgAutoFadeIn REF3 \x18\x07 REF_END1 
-LOAD3 SCE058_004 REF6 <\x07 REF_END2 
-SEQ1 \x8c\x01 SEQ2 Lj SEQ3 \x03\xab\x00\x00
+SEQ3 REF7 2\x04 CALL1 \x1c\x01 CALL7 J\x01 CALL6 
+SEQ2 \xc8\x00 CALL2 
+LOAD6 .\\Data\\Script\\Bg.Fob REF3 \xee\x06 CALL8
+LOAD4 BgAutoFadeIn REF3 \x18\x07 CALL6 
+LOAD3 SCE058_004 REF6 <\x07 CALL8
+SEQ1 \x8c\x01 SEQ5 Lj CALL4 \x03\xab\x00\x00
  
 　興奮した声、声、声が、教室中を行き交っている。@
 　ウルセチョウシブッコロホネガジャネエオレウルセエタコイテ\nンイタイヨホネガ！　ガ！　ガ！　ホネ！　@
@@ -61,10 +61,10 @@ SEQ1 \x8c\x01 SEQ2 Lj SEQ3 \x03\xab\x00\x00
 　全員がビクッと身体をこわばらせ、おそるおそる、互いに顔を\n見合わせる。\pなかには反抗的な目でなたねをにらみ続けている者\nもいる。\pしかし、そんな視線をすべて受けてなお、なたねは動じ\nる様子もなく、毅然と立って叫び続けた。\
 
 \x00\x00
-SEQ6 REF6 \x80\x07 CALL1 \x1c\x01 CALL3 J\x01 REF_END1 
-SEQ5 \x0b\x01 CALL1 \x06\x00 CALL3 \x8c\x01 REF_END1 
-LOAD3 SCE058_005 REF6 \x9a\n REF_END2 
-SEQ1 \x8c\x01 SEQ2 Pj SEQ3 \x03\xc5\x00\x00
+SEQ3 REF7 \x80\x07 CALL1 \x1c\x01 CALL7 J\x01 CALL6 
+SEQ2 \x0b\x01 CALL1 \x06\x00 CALL7 \x8c\x01 CALL6 
+LOAD3 SCE058_005 REF6 \x9a\n CALL8
+SEQ1 \x8c\x01 SEQ5 Pj CALL4 \x03\xc5\x00\x00
  
 なたね\n　「隣を見なさい！\p　自分を見なさい！\p　デタラメで、なんの常\n　　識もありゃしない！\p　　めちゃくちゃじゃない！非常識よ！@
 　　あんたたち、ダメじゃない！\p　ダメ！\p　ダメ！\p　ダメダメダ\n　　メダメダメダメダメダメ！\p　ダメ人間！\p　死んだ方がいいん\n　　じゃないの？！\p　死になさい！\p　死ね！\pシネシネシネシネ！@
@@ -75,9 +75,9 @@ SEQ1 \x8c\x01 SEQ2 Pj SEQ3 \x03\xc5\x00\x00
 　なたねの子供っぽい罵詈雑言を受けて、彼らは心から傷ついて\nいるのだ。\
 
 \x00\x00\x00
-SEQ6 REF6 \xde\n CALL1 \x1c\x01 CALL3 J\x01 REF_END1 
-LOAD3 SCE058_006 REF6 ,\x0e REF_END2 
-SEQ1 \x8c\x01 SEQ2 Tj SEQ3 \x03N\x00\x00
+SEQ3 REF7 \xde\n CALL1 \x1c\x01 CALL7 J\x01 CALL6 
+LOAD3 SCE058_006 REF6 ,\x0e CALL8
+SEQ1 \x8c\x01 SEQ5 Tj CALL4 \x03N\x00\x00
  
 学生\n　「死ねっていわれたって……どうすれば……」@
 学生\n　「どうしよう……やばいよ……どうしよう……」@
@@ -87,9 +87,9 @@ SEQ1 \x8c\x01 SEQ2 Tj SEQ3 \x03N\x00\x00
 　そこには窓があった。\
 
 \x00
-SEQ6 REF6 p\x0e CALL1 \x1c\x01 CALL3 J\x01 REF_END1 
-LOAD3 SCE058_007 REF6 \xe2\x0f REF_END2 
-SEQ1 \x8c\x01 SEQ2 Xj SEQ3 \x03B\x00\x00
+SEQ3 REF7 p\x0e CALL1 \x1c\x01 CALL7 J\x01 CALL6 
+LOAD3 SCE058_007 REF6 \xe2\x0f CALL8
+SEQ1 \x8c\x01 SEQ5 Xj CALL4 \x03B\x00\x00
  
 なたね\n　「飛び降りれば、終わりじゃない？」@
 女子学生\n　「終わり」@
@@ -102,9 +102,9 @@ SEQ1 \x8c\x01 SEQ2 Xj SEQ3 \x03B\x00\x00
 男子学生\n　「終わり」\
 
 \x00\x00\x00
-SEQ6 REF6 &\x10 CALL1 \x1c\x01 CALL3 J\x01 REF_END1 
-LOAD3 SCE058_006 REF6 h\x11 REF_END2 
-SEQ1 \x8c\x01 SEQ2 \\j SEQ3 \x03\x85\x00\x00
+SEQ3 REF7 &\x10 CALL1 \x1c\x01 CALL7 J\x01 CALL6 
+LOAD3 SCE058_006 REF6 h\x11 CALL8
+SEQ1 \x8c\x01 SEQ5 \\j CALL4 \x03\x85\x00\x00
  
 　終わり終わり終わり終わり終わり終わり終わり終わり終わり終\nわり終わり終わ終わり終わり終わり終わり終わり終わり終わり終\nわり終わり終わり終わり終わり終わり終わり終わり終わり終わり@
 \n男子学生が身を乗り出した。\pすっと消えた。@
@@ -114,19 +114,19 @@ SEQ1 \x8c\x01 SEQ2 \\j SEQ3 \x03\x85\x00\x00
 終わりはすぐにやってきた。\p学生たちは我先にと窓へ殺到し、躊\n躇することもなく飛び降りて消えていった。\p先ほどの喉を切った\n学生たちと同じく、なにか笑ってしまうような光景だった。\
 
 \x00\x00\x00
-SEQ6 REF6 \xac\x11 CALL1 \x1c\x01 CALL3 J\x01 CALL2 \x06\x00 CALL3 0\x00 REF_END1 
-LOAD3 SCE058_009 REF6 \x14\x14 REF_END2 
-SEQ1 \x8c\x01 SEQ2 `j SEQ3 \x03h\x00\x00
+SEQ3 REF7 \xac\x11 CALL1 \x1c\x01 CALL7 J\x01 CALL5 \x06\x00 CALL7 0\x00 CALL6 
+LOAD3 SCE058_009 REF6 \x14\x14 CALL8
+SEQ1 \x8c\x01 SEQ5 `j CALL4 \x03h\x00\x00
  
 なたね\n　「なにをボーッとしているの、虎菱くん。義妹さんも、飛び降\n　　りてしまうわよ」@
 \n/*■CG24　表示（クロスフェード）　*/\a7,-2,-2,0,\a0,23,2,0,\a6,-2,0,0,ようやく我に返って、拓司は窓辺に足をかけた早桃を、慌てて背\n後から捕まえた。@
 床に押さえつけられても、早桃はまだ何かに取り憑かれたような\n様子で、ブルブルと震えていた。\p拓司はそんな早桃に馬乗りにな\nって、頬に数発、鋭い平手打ちを放った。\
 
 \x00\x00\x00
-SEQ6 REF6 X\x14 CALL1 \x1c\x01 CALL3 J\x01 REF_END1 
-SEQ5 \xc8\x00 CALL1 \xee\x06 CALL3 \x18\x07 REF_END1 
-LOAD3 SCE058_010 REF6 f\x16 REF_END2 
-SEQ1 \x8c\x01 SEQ2 dj SEQ3 \x03v\x00\x00
+SEQ3 REF7 X\x14 CALL1 \x1c\x01 CALL7 J\x01 CALL6 
+SEQ2 \xc8\x00 CALL1 \xee\x06 CALL7 \x18\x07 CALL6 
+LOAD3 SCE058_010 REF6 f\x16 CALL8
+SEQ1 \x8c\x01 SEQ5 dj CALL4 \x03v\x00\x00
  
 拓司\n　「落ち着け！　早桃！\p　目を覚ませ！」@
 早桃\n　「ごめんなさいごめんなさいごめんなさいごめんなさいごめん\n　　なさいごめんなさいごめんなさい」@
@@ -138,9 +138,9 @@ SEQ1 \x8c\x01 SEQ2 dj SEQ3 \x03v\x00\x00
 早桃\n　「……私はもうたどり着けないから。\pおにいちゃんのこと、好\n　　きになる資格ないから」\
 
 \x00\x00\x00
-SEQ6 REF6 \xaa\x16 CALL1 \x1c\x01 CALL3 J\x01 REF_END1 
-LOAD3 SCE058_011 REF6 \xbc\x18 REF_END2 
-SEQ1 \x8c\x01 SEQ2 hj SEQ3 \x03\x88\x00\x00
+SEQ3 REF7 \xaa\x16 CALL1 \x1c\x01 CALL7 J\x01 CALL6 
+LOAD3 SCE058_011 REF6 \xbc\x18 CALL8
+SEQ1 \x8c\x01 SEQ5 hj CALL4 \x03\x88\x00\x00
  
 　なたねはそんな２人の様子をじっと無言で見つめていたが、し\n　ばらくしてポツリといった。@
 \nなたね\n　「そろそろね」@
@@ -153,9 +153,9 @@ SEQ1 \x8c\x01 SEQ2 hj SEQ3 \x03\x88\x00\x00
 　拓司は心配したが、１分もすると、早桃はゆっくりと自分で身\n　体を起こした。\
 
 \x00
-SEQ6 REF6 \x00\x19 CALL1 \x1c\x01 CALL3 J\x01 REF_END1 
-LOAD3 SCE058_012 REF6 Z\x1b REF_END2 
-SEQ1 \x8c\x01 SEQ2 lj SEQ3 \x03]\x00\x00
+SEQ3 REF7 \x00\x19 CALL1 \x1c\x01 CALL7 J\x01 CALL6 
+LOAD3 SCE058_012 REF6 Z\x1b CALL8
+SEQ1 \x8c\x01 SEQ5 lj CALL4 \x03]\x00\x00
  
 拓司\n　「大丈夫か、早桃？」@
 早桃\n　「……うん」@
@@ -168,20 +168,20 @@ SEQ1 \x8c\x01 SEQ2 lj SEQ3 \x03]\x00\x00
 早桃\n　「大丈夫。早桃は大丈夫だから。\pそれよりも……」\
 
 \x00\x00\x00
-SEQ6 REF6 \x9e\x1b CALL1 \x1c\x01 CALL3 J\x01 REF_END1 
-LOAD3 SCE058_013 REF6 L\x1d REF_END2 
-SEQ1 \x8c\x01 SEQ2 pj SEQ3 \x03\x1d\x00\x00
+SEQ3 REF7 \x9e\x1b CALL1 \x1c\x01 CALL7 J\x01 CALL6 
+LOAD3 SCE058_013 REF6 L\x1d CALL8
+SEQ1 \x8c\x01 SEQ5 pj CALL4 \x03\x1d\x00\x00
  
 拓司\n　「……」@
 早桃\n　「……なんでもない。\p行こう、おにいちゃん。\pここに、いたく\n　　ない……」\
 
 \x00\x00\x00
-SEQ6 REF6 \x90\x1d CALL1 \x1c\x01 CALL3 J\x01 REF_END1 \x03\x12\x00\x00
+SEQ3 REF7 \x90\x1d CALL1 \x1c\x01 CALL7 J\x01 CALL6 \x03\x12\x00\x00
 CHOICE
 「……天使って、なんだ？」\n「……ここにいたくない？」\n\l0,2,
 ENDCHOICE
 
 \x00
-SEQ6 REF6 >\x1e CALL1 \x1c\x01 CALL3 J\x01 CALL2 \x1c\x01 REF_END2 
-LOAD3 TextClose REF2 \xcc\x1e REF_END1 
+SEQ3 REF7 >\x1e CALL1 \x1c\x01 CALL7 J\x01 CALL5 \x1c\x01 CALL8
+LOAD3 TextClose REF2 \xcc\x1e CALL6 
 END_FILE

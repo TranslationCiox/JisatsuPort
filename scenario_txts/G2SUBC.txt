@@ -1,10 +1,10 @@
 START_FILE
 \xfb\r\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\x94\x0b\x00
-SEQ5 \x05\x01 REF_END3 
-LOAD6 .\\Data\\Script\\Bgm.Fob REF2  \x00 REF_END2 
-LOAD2 PlayCD REF1 J\x00 REF_END1 
-LOAD3 SCEG02_004 REF6 f\x00 REF_END2 
-SEQ1 \x8c\x01 SEQ2 T\xc5\x01\x0c\x00\x00\x00\x00"\x03i\x00\x00
+SEQ2 \x05\x01 CALL2 
+LOAD6 .\\Data\\Script\\Bgm.Fob REF2  \x00 CALL8
+LOAD2 PlayCD REF1 J\x00 CALL6 
+LOAD3 SCEG02_004 REF6 f\x00 CALL8
+SEQ1 \x8c\x01 SEQ5 T\xc5\x01\x0c\x00\x00\x00\x00"\x03i\x00\x00
  
 　かさりと音がして、錦城の上半身が、拓司の顔のあたりに被さっ\nた。@
 熱い体温と、ずっしりとした肉の重みが……柔らかく大きな胸が、\n\p拓司の目の前にある。@
@@ -13,14 +13,14 @@ SEQ1 \x8c\x01 SEQ2 T\xc5\x01\x0c\x00\x00\x00\x00"\x03i\x00\x00
 錦城\n　「しーっ！　……静かに。\pみんなが目を覚ますわ。@
 　　先生ね、考えたの。\p虎菱くんがこういうのを励みにできれ\n　　ば……って」\w\z
 \x00
-SEQ6 REF6 \xaa\x00 REF_END3 
-LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 n\x02 REF_END2 
-LOAD2 TextOn REF1 \x9c\x02 REF_END1 
-SEQ5 ^\x00 REF_END3 
-LOAD6 .\\Data\\Script\\Bg.Fob REF3 \xd2\x02 REF_END2 
-LOAD4 BgAutoFadeIn REF3 \xfc\x02 REF_END1 
-LOAD3 SCEG02_005 REF6  \x03 REF_END2 
-SEQ1 \x8c\x01 SEQ2 X\xc5\x01\x0c\x00\x00\x00\x00"\x03R\x00\x00
+SEQ3 REF7 \xaa\x00 CALL2 
+LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 n\x02 CALL8
+LOAD2 TextOn REF1 \x9c\x02 CALL6 
+SEQ2 ^\x00 CALL2 
+LOAD6 .\\Data\\Script\\Bg.Fob REF3 \xd2\x02 CALL8
+LOAD4 BgAutoFadeIn REF3 \xfc\x02 CALL6 
+LOAD3 SCEG02_005 REF6  \x03 CALL8
+SEQ1 \x8c\x01 SEQ5 X\xc5\x01\x0c\x00\x00\x00\x00"\x03R\x00\x00
  
 錦城の手は、滑るようにチャックの中へと侵入し、拓司のペ○ス\nに触れた。@
 そっとそれをつまみ、ズボンの外にずるりと引きずりだす。@
@@ -30,9 +30,9 @@ SEQ1 \x8c\x01 SEQ2 X\xc5\x01\x0c\x00\x00\x00\x00"\x03R\x00\x00
 錦城\n　「よかった」@
 \n錦城は拓司の目をじっと見つめたまま、薄く笑った。\w\z
 \x00
-SEQ6 REF6 d\x03 CALL1 n\x02 CALL3 \x9c\x02 REF_END1 
-LOAD3 SCEG02_006 REF6 \xe6\x04 REF_END2 
-SEQ1 \x8c\x01 SEQ2 \\\xc5\x01\x0c\x00\x00\x00\x00"\x03R\x00\x00
+SEQ3 REF7 d\x03 CALL1 n\x02 CALL7 \x9c\x02 CALL6 
+LOAD3 SCEG02_006 REF6 \xe6\x04 CALL8
+SEQ1 \x8c\x01 SEQ5 \\\xc5\x01\x0c\x00\x00\x00\x00"\x03R\x00\x00
  
 錦城\n　「さすが、男の子ね。\p熱くて……元気。\pねえ、虎菱くん、気持\n　　ちいい？」@
 拓司\n　「……」@
@@ -41,9 +41,9 @@ SEQ1 \x8c\x01 SEQ2 \\\xc5\x01\x0c\x00\x00\x00\x00"\x03R\x00\x00
 拓司\n　「……」@
 黙っていると、錦城の手の動きがひどくゆっくりとしたものに変\nわった。\pじらすように止まり、少し動いてまた止まる。\w\z
 \x00\x00\x00
-SEQ6 REF6 *\x05 CALL1 n\x02 CALL3 \x9c\x02 REF_END1 
-LOAD3 SCEG02_007 REF6 \xac\x06 REF_END2 
-SEQ1 \x8c\x01 SEQ2 `\xc5\x01\x0c\x00\x00\x00\x00"\x03R\x00\x00
+SEQ3 REF7 *\x05 CALL1 n\x02 CALL7 \x9c\x02 CALL6 
+LOAD3 SCEG02_007 REF6 \xac\x06 CALL8
+SEQ1 \x8c\x01 SEQ5 `\xc5\x01\x0c\x00\x00\x00\x00"\x03R\x00\x00
  
 錦城\n　「先生は聞いているんだけど。\p早いほうがいいの？@
 　　おそいほうがいいの？」@
@@ -54,9 +54,9 @@ SEQ1 \x8c\x01 SEQ2 `\xc5\x01\x0c\x00\x00\x00\x00"\x03R\x00\x00
 拓司\n　「もっと……」@
 錦城\n　「いやらしい子ね。先生の手、道具だとでも思ってるのかしら？\n　　ふふふ」\w\z
 \x00
-SEQ6 REF6 \xf0\x06 CALL1 n\x02 CALL3 \x9c\x02 REF_END1 
-LOAD3 SCEG02_008 REF6 r\x08 REF_END2 
-SEQ1 \x8c\x01 SEQ2 d\xc5\x01\x0c\x00\x00\x00\x00"\x03\x86\x00\x00
+SEQ3 REF7 \xf0\x06 CALL1 n\x02 CALL7 \x9c\x02 CALL6 
+LOAD3 SCEG02_008 REF6 r\x08 CALL8
+SEQ1 \x8c\x01 SEQ5 d\xc5\x01\x0c\x00\x00\x00\x00"\x03\x86\x00\x00
  
 早く激しく……嵐のように手を動かしながら、錦城は拓司の目を\n正面から捉えて離さない。@
 まるで実験動物を観察するように、拓司の目をのぞき込んでいる。\n\p錦城\n　「先生にこんなことさせてるなんて……興奮する？」@
@@ -68,13 +68,13 @@ SEQ1 \x8c\x01 SEQ2 d\xc5\x01\x0c\x00\x00\x00\x00"\x03\x86\x00\x00
 拓司\n　「先生……」@
 錦城\n　「ねえ……触りたい？\p　先生の胸、そんなにじっと見つめて\n　　……ねえ、触りたいの？」\w\z
 \x00
-SEQ6 REF6 \xb6\x08 CALL1 n\x02 CALL3 \x9c\x02 REF_END1 
+SEQ3 REF7 \xb6\x08 CALL1 n\x02 CALL7 \x9c\x02 CALL6 
 LOAD9 
 CHOICE
 「触りたい」\n「……」\n\l0,2,
 ENDCHOICE
 
 \x00
-SEQ6 REF6 \x08\x0b CALL1 n\x02 CALL3 \x9c\x02 CALL2 n\x02 REF_END2 
-LOAD3 TextClose REF2 v\x0b REF_END1 
+SEQ3 REF7 \x08\x0b CALL1 n\x02 CALL7 \x9c\x02 CALL5 n\x02 CALL8
+LOAD3 TextClose REF2 v\x0b CALL6 
 END_FILE
