@@ -1,6 +1,6 @@
 import codecs
 import os
-#SET_5\x1e\x02\x00\x003B_02 \x1e\x02\x00\x005  \x1e\x00\x00\x00\x00\r\x00\x00
+
 patterns = [
     {
         "pattern": [b'\x00', b'\x0c', b'\x02',          b'\x00', b'\x00', b'"', b'\x1f'],
@@ -110,12 +110,17 @@ patterns = [
     {
         "pattern": [b'\x01', b'\x00', b'\x00', b'start', b'\xef', b'i\x01C'],
         # Start the script
-        "action": "START_FILE\n"
+        "action": "START_FILE "
     },
     {
         "pattern": [b'6', b'\xf1', b'\x00'],
         # End the script
         "action": "\nEND_FILE"
+    },
+    {
+        "pattern": [b'\x01', b'\x00', b'\x00', b'\x00', b'\x00', b'\x00', b'\x00', b'\x00', b'\x00', b'\x00', b'\x00'],
+        # Often between sequences after START_FILE
+        "action": "\nHEADER "
     },
 ]
 

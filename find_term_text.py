@@ -10,7 +10,7 @@ def find_data_strings_in_file(file_path, counter):
             content = file.read()
             content_decoded = content.decode("932", errors='ignore')
             # Use regex to find all occurrences of the search term followed by a string of characters
-            pattern = re.compile(r'playcd', re.IGNORECASE)
+            pattern = re.compile(r'\\xb8\\x01', re.IGNORECASE)
             matches = pattern.findall(content_decoded)
 
             # Print unique matches (optional, if you want to avoid duplicate entries)
@@ -37,5 +37,10 @@ def search_files_in_folder(folder_path):
     print("Matches: ", counter)
 
 
+print("SCRIPTS")
+folder_path = "scripts_txts"
+search_files_in_folder(folder_path)
+
+print("\nSCENARIOS")
 folder_path = "scenario_txts"
 search_files_in_folder(folder_path)
