@@ -14,8 +14,7 @@ DIALOGUE_1 \xf0< DIALOGUE_2 \x81\x00\x00
 \nカンナ　「……屋上で」@
 \n返事を待つ様子もなくカンナは足早に廊下を歩み去っていった。\
 
-\x00\x00\x00 DIALOGUE_END J\x00 SEQ01
-LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 n\x02 REF_END2 
+\x00\x00\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 n\x02 REF_END2 
 LOAD2 TextOn REF1 \x9c\x02 CALL2 n\x02 REF_END2 
 LOAD3 TextClose REF2 \xc4\x02 REF_END1 
 END_FILE

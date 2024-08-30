@@ -1,6 +1,5 @@
 START_FILE
-\x1a\x0b\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00>\t\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x04\x01 SEQ01
-
+\x1a\x0b\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00>\t\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x04\x01\x00\x0c\x02\x00\x00"
 LOAD6 .\\Data\\Script\\Bgm.Fob REF2  \x00 REF_END2 
 LOAD2 PlayCD REF1 J\x00 REF_END1 
 LOAD3 SCES04_001 REF6 f\x00 REF_END2 
@@ -15,8 +14,7 @@ DIALOGUE_1 \xf8\xb5\x01\x0c\x00\x00\x00\x00"\x03\x99\x00\x00
 でも、そういうふうに誘ってもらえるのは悪い気分じゃなかった。\n@
 そういうことをしばらく続けていると、どんどんお金が貯まって\nいった。\
 
-\x00\x00\x00 DIALOGUE_END \xaa\x00 SEQ01
-LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 .\x03 REF_END2 
+\x00\x00\x00 DIALOGUE_END \xaa\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 .\x03 REF_END2 
 LOAD2 TextOn REF1 \\\x03 REF_END1 
 LOAD3 SCES04_002 REF6 x\x03 REF_END2 
 DIALOGUE_1 \xfc\xb5\x01\x0c\x00\x00\x00\x00"\x03\xdd\x00\x00
@@ -34,16 +32,16 @@ DIALOGUE_1 \xfc\xb5\x01\x0c\x00\x00\x00\x00"\x03\xdd\x00\x00
 なあんだ、簡単じゃない。@
 そう思った。\
 
-\x00\x00\x00 DIALOGUE_END \xbc\x03 SEQ01
-\x1f.\x03 CALL3 \\\x03 REF_END1 
+\x00\x00\x00 DIALOGUE_END \xbc\x03
+CALL1 .\x03 CALL3 \\\x03 REF_END1 
 LOAD3 SCES04_003 REF6 j\x07 REF_END2 
 DIALOGUE_1 \x00\xb6\x01\x0c\x00\x00\x00\x00"\x03A\x00\x00
  
 それから私はみんなにいろんなものをごちそうしたり、プレゼン\nトしたりしはじめた。@
 それで友情を買おうと思ったわけじゃないし、買えるとも思って\nなかった。\pでも、自己の価値は証明できるし、それこそが、私\nがずっと欲しくてたまらなかったものだったから。\
 
-\x00 DIALOGUE_END \xae\x07 SEQ01
-\x1f.\x03 CALL3 \\\x03 CALL2  \x00 REF_END2 
+\x00 DIALOGUE_END \xae\x07
+CALL1 .\x03 CALL3 \\\x03 CALL2  \x00 REF_END2 
 LOAD2 StopCD REF1 \xf8\x08 CALL2 .\x03 REF_END2 
 LOAD3 TextClose REF2  \t REF_END1 
 END_FILE

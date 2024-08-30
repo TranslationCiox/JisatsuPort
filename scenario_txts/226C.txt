@@ -5,10 +5,8 @@ DIALOGUE_1 \xc0p\x01\x0c\x00\x00\x00\x00"\x03\x11\x00\x00
  
 \n\n\n\n\n\n\n\n\n\n　　　　　　　　　　　　　『１２日目』\
 
-\x00 DIALOGUE_END J\x00 SEQ01
-LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xae\x00 REF_END2 
-LOAD2 TextOn REF1 \xdc\x00 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x0c\x01 SEQ01
-
+\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xae\x00 REF_END2 
+LOAD2 TextOn REF1 \xdc\x00 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x0c\x01\x00\x0c\x02\x00\x00"
 LOAD6 .\\Data\\Script\\Bgm.Fob REF2 \x12\x01 REF_END2 
 LOAD2 PlayCD REF1 <\x01 REF_END1 
 LOAD3 SCE226_002 REF6 X\x01 REF_END2 
@@ -21,8 +19,8 @@ DIALOGUE_1 \xc4p\x01\x0c\x00\x00\x00\x00"\x03x\x00\x00
 カンナ\n　「イヤです。\p用があるなら、自分でこっちにくるようにってい\n　　ってください。\pメッセンジャーさん？」@
 錦城\n　「……ふう。\pあなたのせいで、今日も全員が食事抜きになるの\n　　かしらねえ」\
 
-\x00\x00\x00 DIALOGUE_END \x9c\x01 SEQ01
-\x1f\xae\x00 CALL3 \xdc\x00 REF_END1 
+\x00\x00\x00 DIALOGUE_END \x9c\x01
+CALL1 \xae\x00 CALL3 \xdc\x00 REF_END1 
 LOAD3 SCE226_003 REF6 \xb6\x03 REF_END2 
 DIALOGUE_1 \xc8p\x01\x0c\x00\x00\x00\x00"\x03d\x00\x00
  
@@ -33,8 +31,8 @@ DIALOGUE_1 \xc8p\x01\x0c\x00\x00\x00\x00"\x03d\x00\x00
 カンナ\n　「……」@
 錦城\n　「今日も全員食事抜きです」\
 
-\x00 DIALOGUE_END \xfa\x03 SEQ01
-\x1f\xae\x00 CALL3 \xdc\x00 REF_END1 
+\x00 DIALOGUE_END \xfa\x03
+CALL1 \xae\x00 CALL3 \xdc\x00 REF_END1 
 LOAD3 SCE226_004 REF6 \xc4\x05 REF_END2 
 DIALOGUE_1 \xccp\x01\x0c\x00\x00\x00\x00"\x03\x94\x00\x00
  
@@ -45,8 +43,8 @@ DIALOGUE_1 \xccp\x01\x0c\x00\x00\x00\x00"\x03\x94\x00\x00
 カンナ\n　「……。\pどういう意味？」@
 早桃\n　「私だってあの２人のやり方はおかしいと思うし……腹もたつ\n　　けど。\pでも、そんなこと口に出したって、意味がないと思う」\n\pカンナ\n　「……」\
 
-\x00\x00\x00 DIALOGUE_END \x08\x06 SEQ01
-\x1f\xae\x00 CALL3 \xdc\x00 REF_END1 
+\x00\x00\x00 DIALOGUE_END \x08\x06
+CALL1 \xae\x00 CALL3 \xdc\x00 REF_END1 
 LOAD3 SCE226_005 REF6 \x92\x08 REF_END2 
 DIALOGUE_1 \xd0p\x01\x0c\x00\x00\x00\x00"\x03\x9d\x00\x00
  
@@ -59,8 +57,8 @@ DIALOGUE_1 \xd0p\x01\x0c\x00\x00\x00\x00"\x03\x9d\x00\x00
 カンナ\n　「服従するならとことんやればってこと。\p身体と引き替えに、\n　　お腹を充たせってことよ！」@
 早桃\n　「そんな……！」\
 
-\x00\x00\x00 DIALOGUE_END \xd6\x08 SEQ01
-\x1f\xae\x00 CALL3 \xdc\x00 REF_END1 
+\x00\x00\x00 DIALOGUE_END \xd6\x08
+CALL1 \xae\x00 CALL3 \xdc\x00 REF_END1 
 LOAD3 SCE226_006 REF6 \x84\x0b REF_END2 
 DIALOGUE_1 \xd4p\x01\x0c\x00\x00\x00\x00"\x03\x85\x00\x00
  
@@ -74,8 +72,8 @@ DIALOGUE_1 \xd4p\x01\x0c\x00\x00\x00\x00"\x03\x85\x00\x00
 拓司\n　「いいかげんにしろ！」@
 /*▲BGM　停止*/\a4,-1,0,0,紅葉\n　「もうたくさんッ！」\
 
-\x00\x00\x00 DIALOGUE_END \xc8\x0b SEQ01
-\x1f\xae\x00 CALL3 \xdc\x00 REF_END1 
+\x00\x00\x00 DIALOGUE_END \xc8\x0b
+CALL1 \xae\x00 CALL3 \xdc\x00 REF_END1 
 LOAD3 SCE226_007 REF6 \x16\x0e REF_END2 
 DIALOGUE_1 \xd8p\x01\x0c\x00\x00\x00\x00"\x03\x85\x00\x00
  
@@ -86,8 +84,8 @@ DIALOGUE_1 \xd8p\x01\x0c\x00\x00\x00\x00"\x03\x85\x00\x00
 紅葉\n　「波動なんて、そんなもの最初からないのよ！\p　なにか事故み\n　　たいなことが起こって……毒ガスが漏れたとか……そんなふ\n　　うなことがおこってみんな一時的におかしくなっただけだよ！\n　　\pもう一週間以上経って、そんなのなくなったに決まってる！\n　　」@
 拓司\n　「でも、最終波動が……」\
 
-\x00\x00\x00 DIALOGUE_END Z\x0e SEQ01
-\x1f\xae\x00 CALL3 \xdc\x00 REF_END1 
+\x00\x00\x00 DIALOGUE_END Z\x0e
+CALL1 \xae\x00 CALL3 \xdc\x00 REF_END1 
 LOAD3 SCE226_008 REF6 \xa8\x10 REF_END2 
 DIALOGUE_1 \xdcp\x01\x0c\x00\x00\x00\x00"\x03\xa4\x00\x00
  
@@ -105,8 +103,8 @@ DIALOGUE_1 \xdcp\x01\x0c\x00\x00\x00\x00"\x03\xa4\x00\x00
 その向こうを見つめて、紅葉は動かなかった。@
 しばらくしてから放たれた言葉は、かすれ、震えていた。\
 
-\x00 DIALOGUE_END \xec\x10 SEQ01
-\x1f\xae\x00 CALL3 \xdc\x00 REF_END1 
+\x00 DIALOGUE_END \xec\x10
+CALL1 \xae\x00 CALL3 \xdc\x00 REF_END1 
 LOAD3 SCE226_009 REF6 \xb6\x13 REF_END2 
 DIALOGUE_1 \xe0p\x01\x0c\x00\x00\x00\x00"\x03u\x00\x00
  
@@ -120,8 +118,8 @@ DIALOGUE_1 \xe0p\x01\x0c\x00\x00\x00\x00"\x03u\x00\x00
 紅葉\n　「あるはずないじゃない、そんなもの！」@
 \nついになたねが笑いを爆発させた。\pガラガラとした声で、低く低\nく叫んだ。\
 
-\x00\x00\x00 DIALOGUE_END \xfa\x13 SEQ01
-\x1f\xae\x00 CALL3 \xdc\x00 REF_END1 
+\x00\x00\x00 DIALOGUE_END \xfa\x13
+CALL1 \xae\x00 CALL3 \xdc\x00 REF_END1 
 LOAD3 SCE226_010 REF6 \x08\x16 REF_END2 
 DIALOGUE_1 \xe4p\x01\x0c\x00\x00\x00\x00"\x03\x9e\x00\x00
  
@@ -136,8 +134,8 @@ DIALOGUE_1 \xe4p\x01\x0c\x00\x00\x00\x00"\x03\x9e\x00\x00
 拓司はうずくまって泣く紅葉に歩み寄り、ドアを閉め、そして肩\nに手をおいた。@
 紅葉はその晩、ずっと小さく泣き続けていた。\
 
-\x00 DIALOGUE_END L\x16 SEQ01
-\x1f\xae\x00 CALL3 \xdc\x00 CALL2 \x12\x01 REF_END2 
+\x00 DIALOGUE_END L\x16
+CALL1 \xae\x00 CALL3 \xdc\x00 CALL2 \x12\x01 REF_END2 
 LOAD2 StopCD REF1 \n\x19 CALL2 \xae\x00 REF_END2 
 LOAD3 TextClose REF2 2\x19 REF_END1 
 END_FILE

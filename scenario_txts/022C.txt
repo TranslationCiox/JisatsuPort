@@ -19,12 +19,10 @@ DIALOGUE_1 \x002 DIALOGUE_2 \x96\x00\x00
 命じたとおり、体操服とブルマに身を包んでいる。顔を紅潮させ\nて、義兄に愛される期待にうち震えている。@
 両親が留守なのだから、本当はベッドで堂々と繋がることができ\nるのだ。しかし、敢えてこんな場所を選んだ。それは……\
 
-\x00\x00\x00 DIALOGUE_END \x90\x00 SEQ01
-LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \x08\x03 REF_END2 
-LOAD2 TextOn REF1 6\x03 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x05\x01 SEQ01
-\x1f\x06\x00 REF_END2 
-LOAD2 PlayCD REF1 x\x03 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1eM\x00 SEQ01
-
+\x00\x00\x00 DIALOGUE_END \x90\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \x08\x03 REF_END2 
+LOAD2 TextOn REF1 6\x03 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x05\x01
+CALL1 \x06\x00 REF_END2 
+LOAD2 PlayCD REF1 x\x03 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1eM\x00\x00\x0c\x02\x00\x00"
 LOAD6 .\\Data\\Script\\Bg.Fob REF3 \xae\x03 REF_END2 
 LOAD4 BgAutoFadeIn REF3 \xd8\x03 REF_END1 
 LOAD3 SCE022_002 REF6 \xfc\x03 REF_END2 
@@ -37,9 +35,9 @@ DIALOGUE_1 \x042 DIALOGUE_2 Q\x00\x00
 \n早桃の顔が、さっと青ざめる。@
 拓司の背後に、別の男が立っているのに気づいたのだ。\
 
-\x00 DIALOGUE_END @\x04 SEQ01
-\x1f\x08\x03 CALL3 6\x03 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x05\x01 SEQ01
-\x1f\x06\x00 CALL3 x\x03 REF_END1 
+\x00 DIALOGUE_END @\x04
+CALL1 \x08\x03 CALL3 6\x03 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x05\x01
+CALL1 \x06\x00 CALL3 x\x03 REF_END1 
 LOAD3 SCE022_003 REF6 \xf2\x05 REF_END2 
 DIALOGUE_1 \x082 DIALOGUE_2 b\x00\x00
  
@@ -51,8 +49,8 @@ DIALOGUE_1 \x082 DIALOGUE_2 b\x00\x00
 平野はニヤニヤ笑いを満面に張り付けて、トイレの中に一歩踏み\n込んだ。@
 便座に腰掛けたまま、早桃が身を固くする。\
 
-\x00\x00\x00 DIALOGUE_END 6\x06 SEQ01
-\x1f\x08\x03 CALL3 6\x03 REF_END1 
+\x00\x00\x00 DIALOGUE_END 6\x06
+CALL1 \x08\x03 CALL3 6\x03 REF_END1 
 LOAD3 SCE022_004 REF6 \xf8\x07 REF_END2 
 DIALOGUE_1 \x0c2 DIALOGUE_2 `\x00\x00
  
@@ -66,8 +64,8 @@ DIALOGUE_1 \x0c2 DIALOGUE_2 `\x00\x00
 　　だったら協力してくれよ。@
 　　こづかいがいるんだ」\
 
-\x00 DIALOGUE_END <\x08 SEQ01
-\x1f\x08\x03 CALL3 6\x03 REF_END1 
+\x00 DIALOGUE_END <\x08
+CALL1 \x08\x03 CALL3 6\x03 REF_END1 
 LOAD3 SCE022_005 REF6 \xf6\t REF_END2 
 DIALOGUE_1 \x102 DIALOGUE_2 d\x00\x00
  
@@ -80,8 +78,8 @@ DIALOGUE_1 \x102 DIALOGUE_2 d\x00\x00
 　　もう一生お前とは口もきかないけど、悪く思わないでくれよ\n　　な」@
 早桃\n　「おにいちゃん……\p早桃のこと愛してるっていってくれたの\n　　に……\p両思いだって……」\
 
-\x00 DIALOGUE_END :\n SEQ01
-\x1f\x08\x03 CALL3 6\x03 REF_END1 
+\x00 DIALOGUE_END :\n
+CALL1 \x08\x03 CALL3 6\x03 REF_END1 
 LOAD3 SCE022_006 REF6 \x04\x0c REF_END2 
 DIALOGUE_1 \x142 DIALOGUE_2 7\x00\x00
  
@@ -91,8 +89,8 @@ DIALOGUE_1 \x142 DIALOGUE_2 7\x00\x00
 より深く義妹を傷つける言葉を。@
 その傷の深さを目の当たりにすることによって、自らをも傷つけ\nるような言葉を。\
 
-\x00\x00\x00 DIALOGUE_END H\x0c SEQ01
-\x1f\x08\x03 CALL3 6\x03 REF_END1 
+\x00\x00\x00 DIALOGUE_END H\x0c
+CALL1 \x08\x03 CALL3 6\x03 REF_END1 
 LOAD3 SCE022_007 REF6 ^\r REF_END2 
 DIALOGUE_1 \x182 DIALOGUE_2 \xb0\x00\x00
  
@@ -110,8 +108,8 @@ DIALOGUE_1 \x182 DIALOGUE_2 \xb0\x00\x00
 　　だから愛とか語って理論武装してるんだろ？」@
 早桃\n　「違うよ！　早桃は本当におにいちゃんのこと……」\
 
-\x00 DIALOGUE_END \xa2\r SEQ01
-\x1f\x08\x03 CALL3 6\x03 REF_END1 
+\x00 DIALOGUE_END \xa2\r
+CALL1 \x08\x03 CALL3 6\x03 REF_END1 
 LOAD3 SCE022_008 REF6 \x9c\x10 REF_END2 
 DIALOGUE_1 \x1c2 DIALOGUE_2 _\x00\x00
  
@@ -124,8 +122,8 @@ DIALOGUE_1 \x1c2 DIALOGUE_2 _\x00\x00
 早桃\n　「……」@
 \nうつむいて震える早桃を見下ろして、平野は荒い息でいった。\
 
-\x00 DIALOGUE_END \xe0\x10 SEQ01
-\x1f\x08\x03 CALL3 6\x03 REF_END1 
+\x00 DIALOGUE_END \xe0\x10
+CALL1 \x08\x03 CALL3 6\x03 REF_END1 
 LOAD3 SCE022_009 REF6 \x96\x12 REF_END2 
 DIALOGUE_1  2 DIALOGUE_2 R\x00\x00
  
@@ -138,9 +136,9 @@ DIALOGUE_1  2 DIALOGUE_2 R\x00\x00
 \n懇願するように見上げる義妹。@
 拓司はそれを無視して、平野にいった。\
 
-\x00 DIALOGUE_END \xda\x12 SEQ01
-\x1f\x08\x03 CALL3 6\x03 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00 SEQ01
-\x1f\xae\x03 REF_END2 
+\x00 DIALOGUE_END \xda\x12
+CALL1 \x08\x03 CALL3 6\x03 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00
+CALL1 \xae\x03 REF_END2 
 LOAD2 BgOn REF3 \x82\x14 REF_END1 
 LOAD3 SCE022_010 REF6 \x9e\x14 REF_END2 
 DIALOGUE_1 $2 DIALOGUE_2 r\x00\x00
@@ -153,8 +151,8 @@ DIALOGUE_1 $2 DIALOGUE_2 r\x00\x00
 白いブリーフの前を大きく押し上げたペ○スの先端は、すでにカ\nウパー液で湿っている。@
 早桃は目をそらして、うつむいたまま動かない。\
 
-\x00 DIALOGUE_END \xe2\x14 SEQ01
-\x1f\x08\x03 CALL3 6\x03 REF_END1 
+\x00 DIALOGUE_END \xe2\x14
+CALL1 \x08\x03 CALL3 6\x03 REF_END1 
 LOAD3 SCE022_011 REF6 \xe4\x16 REF_END2 
 DIALOGUE_1 (2 DIALOGUE_2 e\x00\x00
  
@@ -168,8 +166,8 @@ DIALOGUE_1 (2 DIALOGUE_2 e\x00\x00
 しかし平野はお構いなしに、早桃の手を自分のふくらみにあてが\nった。@
 そのまま手を上下させ、強制的に撫でさすらせる。\
 
-\x00\x00\x00 DIALOGUE_END (\x17 SEQ01
-\x1f\x08\x03 CALL3 6\x03 REF_END1 
+\x00\x00\x00 DIALOGUE_END (\x17
+CALL1 \x08\x03 CALL3 6\x03 REF_END1 
 LOAD3 SCE022_012 REF6 \xf6\x18 REF_END2 
 DIALOGUE_1 ,2 DIALOGUE_2 H\x00\x00
  
@@ -182,8 +180,8 @@ DIALOGUE_1 ,2 DIALOGUE_2 H\x00\x00
 平野\n　「はあ、はあ……ホラ、早く言ってよ？」@
 早桃\n　「……大きい……です」\
 
-\x00\x00\x00 DIALOGUE_END :\x19 SEQ01
-\x1f\x08\x03 CALL3 6\x03 REF_END1 
+\x00\x00\x00 DIALOGUE_END :\x19
+CALL1 \x08\x03 CALL3 6\x03 REF_END1 
 LOAD3 SCE022_013 REF6 \x94\x1a REF_END2 
 DIALOGUE_1 02 DIALOGUE_2 w\x00\x00
  
@@ -197,8 +195,8 @@ DIALOGUE_1 02 DIALOGUE_2 w\x00\x00
 早桃\n　「……おにいちゃんの……\pおち○……ちん……@
 　　大きい……\pです……」\
 
-\x00 DIALOGUE_END \xd8\x1a SEQ01
-\x1f\x08\x03 CALL3 6\x03 REF_END1 
+\x00 DIALOGUE_END \xd8\x1a
+CALL1 \x08\x03 CALL3 6\x03 REF_END1 
 LOAD3 SCE022_014 REF6 \xee\x1c REF_END2 
 DIALOGUE_1 42 DIALOGUE_2 n\x00\x00
  
@@ -212,8 +210,8 @@ DIALOGUE_1 42 DIALOGUE_2 n\x00\x00
 眉をひそめて、固く目を閉じ、顔面への陵辱に耐えている……。@
 \n早桃\n　「う……ううっ」\
 
-\x00 DIALOGUE_END 2\x1d SEQ01
-\x1f\x08\x03 CALL3 6\x03 REF_END1 
+\x00 DIALOGUE_END 2\x1d
+CALL1 \x08\x03 CALL3 6\x03 REF_END1 
 LOAD3 SCE022_015 REF6 $\x1f REF_END2 
 DIALOGUE_1 82 DIALOGUE_2 z\x00\x00
  
@@ -229,8 +227,8 @@ DIALOGUE_1 82 DIALOGUE_2 z\x00\x00
 早桃\n　「はい……\pはいぃ……\pおにいちゃんのこと……@
 　　うぷっ……\pす、好き……\pですぅ……」\
 
-\x00 DIALOGUE_END h\x1f SEQ01
-\x1f\x08\x03 CALL3 6\x03 REF_END1 
+\x00 DIALOGUE_END h\x1f
+CALL1 \x08\x03 CALL3 6\x03 REF_END1 
 LOAD3 SCE022_016 REF6 \x8a! REF_END2 
 DIALOGUE_1 <2 DIALOGUE_2 \x96\x00\x00
  
@@ -246,8 +244,8 @@ DIALOGUE_1 <2 DIALOGUE_2 \x96\x00\x00
 抵抗することで、より傷つくことを理解したのだろう。@
 無抵抗を貫くことで、この淫猥な行為から自分の意志を消し去ろ\nうとしているのだ。\
 
-\x00 DIALOGUE_END \xce! SEQ01
-\x1f\x08\x03 CALL3 6\x03 REF_END1 
+\x00 DIALOGUE_END \xce!
+CALL1 \x08\x03 CALL3 6\x03 REF_END1 
 LOAD3 SCE022_017 REF6 `$ REF_END2 
 DIALOGUE_1 @2 DIALOGUE_2 \x7f\x00\x00
  
@@ -261,8 +259,8 @@ DIALOGUE_1 @2 DIALOGUE_2 \x7f\x00\x00
 　　おま○こに入れられてそのおにいちゃんの赤ちゃんを孕むか、\n　　\pそれともお尻に入れられて妊娠だけは避けるか？@
 　　さ、早桃が自分でお願いしてごらん？」\
 
-\x00\x00\x00 DIALOGUE_END \xa4$ SEQ01
-\x1f\x08\x03 CALL3 6\x03 REF_END1 
+\x00\x00\x00 DIALOGUE_END \xa4$
+CALL1 \x08\x03 CALL3 6\x03 REF_END1 
 LOAD3 SCE022_018 REF6 \xda& REF_END2 
 DIALOGUE_1 D2 DIALOGUE_2 b\x00\x00
  
@@ -275,8 +273,8 @@ DIALOGUE_1 D2 DIALOGUE_2 b\x00\x00
 平野\n　「そうか、そうか。@
 　　それじゃお望み通り、おま○こにぶち込んで、おにいちゃん\n　　の精子を早桃の卵子に受精させてあげるよ」\
 
-\x00\x00\x00 DIALOGUE_END \x1e' SEQ01
-\x1f\x08\x03 CALL3 6\x03 REF_END1 
+\x00\x00\x00 DIALOGUE_END \x1e'
+CALL1 \x08\x03 CALL3 6\x03 REF_END1 
 LOAD3 SCE022_019 REF6 \xe0( REF_END2 
 DIALOGUE_1 H2 DIALOGUE_2 g\x00\x00
  
@@ -292,8 +290,8 @@ DIALOGUE_1 H2 DIALOGUE_2 g\x00\x00
 早桃\n　「お尻に出してください！@
 　　おにいちゃんの精液、お尻の中に射精してくださいっ！」\
 
-\x00\x00\x00 DIALOGUE_END $) SEQ01
-\x1f\x08\x03 CALL3 6\x03 REF_END1 
+\x00\x00\x00 DIALOGUE_END $)
+CALL1 \x08\x03 CALL3 6\x03 REF_END1 
 LOAD3 SCE022_020 REF6 \xfa* REF_END2 
 DIALOGUE_1 L2 DIALOGUE_2 \x80\x00\x00
  
@@ -307,8 +305,8 @@ DIALOGUE_1 L2 DIALOGUE_2 \x80\x00\x00
 　　立っちして、ブルマをぬぎぬぎしようね、早桃ぉ……」@
 拓司\n　「ほら、さっさと立て！」\
 
-\x00\x00\x00 DIALOGUE_END >+ SEQ01
-\x1f\x08\x03 CALL3 6\x03 REF_END1 
+\x00\x00\x00 DIALOGUE_END >+
+CALL1 \x08\x03 CALL3 6\x03 REF_END1 
 LOAD3 SCE022_021 REF6 x- REF_END2 
 DIALOGUE_1 P2 DIALOGUE_2 \xa8\x00\x00
  
@@ -324,8 +322,8 @@ DIALOGUE_1 P2 DIALOGUE_2 \xa8\x00\x00
 　　要するに早桃は誰でもいいんだろう？@
 　　誰の前でもでもこんなにぬるぬるにしちゃうんだ？」\
 
-\x00 DIALOGUE_END \xbc- SEQ01
-\x1f\x08\x03 CALL3 6\x03 REF_END1 
+\x00 DIALOGUE_END \xbc-
+CALL1 \x08\x03 CALL3 6\x03 REF_END1 
 LOAD3 SCE022_022 REF6 \x960 REF_END2 
 DIALOGUE_1 T2 DIALOGUE_2 ^\x00\x00
  
@@ -338,8 +336,8 @@ DIALOGUE_1 T2 DIALOGUE_2 ^\x00\x00
 早桃\n　「おにいちゃん。もう－－」@
 拓司\n　「入れろ」\
 
-\x00\x00\x00 DIALOGUE_END \xda0 SEQ01
-\x1f\x08\x03 CALL3 6\x03 REF_END1 
+\x00\x00\x00 DIALOGUE_END \xda0
+CALL1 \x08\x03 CALL3 6\x03 REF_END1 
 LOAD3 SCE022_023 REF6 \x8c2 REF_END2 
 DIALOGUE_1 X2 DIALOGUE_2 \x8d\x00\x00
  
@@ -352,9 +350,9 @@ DIALOGUE_1 X2 DIALOGUE_2 \x8d\x00\x00
 \n平野の膝の上に座るような形で、早桃は腰をおろした。@
 平野は自分でペ○スを握って、先端を早桃のアナルに押し当て、\nそして……\
 
-\x00 DIALOGUE_END \xd02 SEQ01
-\x1f\x08\x03 CALL3 6\x03 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1eN\x00 SEQ01
-\x1f\xae\x03 CALL3 \xd8\x03 REF_END1 
+\x00 DIALOGUE_END \xd02
+CALL1 \x08\x03 CALL3 6\x03 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1eN\x00
+CALL1 \xae\x03 CALL3 \xd8\x03 REF_END1 
 LOAD3 SCE022_024 REF6 r5 REF_END2 
 DIALOGUE_1 \\2 DIALOGUE_2 g\x00\x00
  
@@ -366,8 +364,8 @@ DIALOGUE_1 \\2 DIALOGUE_2 g\x00\x00
 \n早桃\n　「うぐっ……ひっ……\pお腹が……\pうあ……息ができな……@
 　　おふっ！」\
 
-\x00 DIALOGUE_END \xb65 SEQ01
-\x1f\x08\x03 CALL3 6\x03 REF_END1 
+\x00 DIALOGUE_END \xb65
+CALL1 \x08\x03 CALL3 6\x03 REF_END1 
 LOAD3 SCE022_025 REF6 \x8c7 REF_END2 
 DIALOGUE_1 `2 DIALOGUE_2 \xa3\x00\x00
  
@@ -382,8 +380,8 @@ DIALOGUE_1 `2 DIALOGUE_2 \xa3\x00\x00
 　　もうすぐおにいちゃんのどろどろのやつを、さ、早桃のお腹\n　　の中にぶちまけてあげるからね！@
 　　便所女の早桃は、内臓まで全部おにいちゃんのものだからね\n　　っ！」\
 
-\x00\x00\x00 DIALOGUE_END \xd07 SEQ01
-\x1f\x08\x03 CALL3 6\x03 REF_END1 
+\x00\x00\x00 DIALOGUE_END \xd07
+CALL1 \x08\x03 CALL3 6\x03 REF_END1 
 LOAD3 SCE022_026 REF6 \x96: REF_END2 
 DIALOGUE_1 d2 DIALOGUE_2 d\x00\x00
  
@@ -394,8 +392,8 @@ DIALOGUE_1 d2 DIALOGUE_2 d\x00\x00
 /*■黒　表示（ノンエフェクト）*/\a7,-1,-1,0,\a0,200,1,0,\a6,0,0,0,\n拓司は、繋がって動物のような声を漏らしている２人を見下ろし\nた。@
 そしてハダシのままの右脚を伸ばして、むき出しに晒されている\n早桃の性器に親指の先を突っ込んだ。\
 
-\x00 DIALOGUE_END \xda: SEQ01
-\x1f\x08\x03 CALL3 6\x03 REF_END1 
+\x00 DIALOGUE_END \xda:
+CALL1 \x08\x03 CALL3 6\x03 REF_END1 
 LOAD3 SCE022_027 REF6 \xa4< REF_END2 
 DIALOGUE_1 h2 DIALOGUE_2 o\x00\x00
  
@@ -408,8 +406,8 @@ DIALOGUE_1 h2 DIALOGUE_2 o\x00\x00
 拓司\n　「見ろよ平野。@
 　　早桃のやつ、うれしくて白目剥いて笑ってるぜ？」\
 
-\x00 DIALOGUE_END \xe8< SEQ01
-\x1f\x08\x03 CALL3 6\x03 REF_END1 
+\x00 DIALOGUE_END \xe8<
+CALL1 \x08\x03 CALL3 6\x03 REF_END1 
 LOAD3 SCE022_028 REF6 \xde> REF_END2 
 DIALOGUE_1 l2 DIALOGUE_2 l\x00\x00
  
@@ -422,8 +420,8 @@ DIALOGUE_1 l2 DIALOGUE_2 l\x00\x00
 \n早桃\n　「な……なに？！@
 　　なんなのおにいちゃん？！」\
 
-\x00 DIALOGUE_END "? SEQ01
-\x1f\x08\x03 CALL3 6\x03 REF_END1 
+\x00 DIALOGUE_END "?
+CALL1 \x08\x03 CALL3 6\x03 REF_END1 
 LOAD3 SCE022_029 REF6 \x0cA REF_END2 
 DIALOGUE_1 p2 DIALOGUE_2 \x9b\x00\x00
  
@@ -440,8 +438,8 @@ DIALOGUE_1 p2 DIALOGUE_2 \x9b\x00\x00
 ぎくりとして、早桃が見上げる。@
 その一瞬の隙をついて、遂に平野のペ○スが早桃を貫いた。\
 
-\x00\x00\x00 DIALOGUE_END PA SEQ01
-\x1f\x08\x03 CALL3 6\x03 REF_END1 
+\x00\x00\x00 DIALOGUE_END PA
+CALL1 \x08\x03 CALL3 6\x03 REF_END1 
 LOAD3 SCE022_030 REF6 \xf6C REF_END2 
 DIALOGUE_1 t2 DIALOGUE_2 d\x00\x00
  
@@ -456,8 +454,8 @@ DIALOGUE_1 t2 DIALOGUE_2 d\x00\x00
 　　やだよ……\pこんなの、あんまりだよ……@
 　　おにいちゃ……ん」\
 
-\x00 DIALOGUE_END :D SEQ01
-\x1f\x08\x03 CALL3 6\x03 REF_END1 
+\x00 DIALOGUE_END :D
+CALL1 \x08\x03 CALL3 6\x03 REF_END1 
 LOAD3 SCE022_031 REF6 \x04F REF_END2 
 DIALOGUE_1 x2 DIALOGUE_2 \xb2\x00\x00
  
@@ -476,8 +474,8 @@ DIALOGUE_1 x2 DIALOGUE_2 \xb2\x00\x00
 　　わかってんのか、お前なんかプロステ２より価値ないんだ！@
 　　いえッ！」\
 
-\x00\x00\x00 DIALOGUE_END HF SEQ01
-\x1f\x08\x03 CALL3 6\x03 REF_END1 
+\x00\x00\x00 DIALOGUE_END HF
+CALL1 \x08\x03 CALL3 6\x03 REF_END1 
 LOAD3 SCE022_032 REF6 JI REF_END2 
 DIALOGUE_1 |2 DIALOGUE_2 S\x00\x00
  
@@ -488,8 +486,8 @@ DIALOGUE_1 |2 DIALOGUE_2 S\x00\x00
 平野\n　「出る！　\p出るよ早桃ぉ！@
 　　おっぱいも膨らみきってないつるぺた少女に僕の精液が……@
 　　子宮まで全部ぼ、僕の物だぁ……あ、あ、あ、ああっ！」\w\n\n\z
-\x00\x00\x00 DIALOGUE_END \x8eI SEQ01
-\x1f\x08\x03 CALL3 6\x03 REF_END1 
+\x00\x00\x00 DIALOGUE_END \x8eI
+CALL1 \x08\x03 CALL3 6\x03 REF_END1 
 LOAD3 SCE022_033 REF6 \x14K REF_END2 
 DIALOGUE_1 \x802 DIALOGUE_2 R\x00\x00
  
@@ -499,8 +497,8 @@ DIALOGUE_1 \x802 DIALOGUE_2 R\x00\x00
 うるさいんだよ！@
 \n　ザザザ……ザザッ……ザアザザザ……ザアアアアア……\nザアザアアアアアアア……\
 
-\x00\x00\x00 DIALOGUE_END XK SEQ01
-\x1f\x08\x03 CALL3 6\x03 REF_END1  \x1e\x00\x00\x00\x00\r\x00 REF_END2 \x0c\x02\x00\x00"\x1f\x06\x00 REF_END2 
+\x00\x00\x00 DIALOGUE_END XK
+CALL1 \x08\x03 CALL3 6\x03 REF_END1  \x1e\x00\x00\x00\x00\r\x00 REF_END2 \x0c\x02\x00\x00"\x1f\x06\x00 REF_END2 
 LOAD2 SeStop REF1 \x00M CALL2 \x08\x03 REF_END2 
 LOAD3 TextClose REF2 (M REF_END1 
 END_FILE

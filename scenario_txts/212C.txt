@@ -12,8 +12,7 @@ DIALOGUE_1 \xe0Z\x01\x0c\x00\x00\x00\x00"\x03d\x00\x00
 いずれも信じがたい世界だが、真実かどうかを確認する術は自分\nにはない。@
 拓司は考えたすえに、いった。\
 
-\x00\x00\x00 DIALOGUE_END J\x00 SEQ01
-LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xfa\x01 REF_END2 
+\x00\x00\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xfa\x01 REF_END2 
 LOAD2 TextOn REF1 (\x02 REF_END1 
 LOAD3 SCE212_002 REF6 D\x02 REF_END2 
 DIALOGUE_1 \xe4Z\x01\x0c\x00\x00\x00\x00"\x03S\x00\x00
@@ -23,8 +22,8 @@ DIALOGUE_1 \xe4Z\x01\x0c\x00\x00\x00\x00"\x03S\x00\x00
 拓司\n　「これからおれは、アイスクリームパフェを『望む』。\p君が語\n　　ったことが真実なら、ここにアイスクリームパフェが忽然と\n　　出現するって事だよな？」@
 ナタネ\n　「ええ」\
 
-\x00 DIALOGUE_END \x88\x02 SEQ01
-\x1f\xfa\x01 CALL3 (\x02 REF_END1 
+\x00 DIALOGUE_END \x88\x02
+CALL1 \xfa\x01 CALL3 (\x02 REF_END1 
 LOAD3 SCE212_003 REF6 \x0e\x04 REF_END2 
 DIALOGUE_1 \xe8Z\x01\x0c\x00\x00\x00\x00"\x03\x87\x00\x00
  
@@ -35,9 +34,8 @@ DIALOGUE_1 \xe8Z\x01\x0c\x00\x00\x00\x00"\x03\x87\x00\x00
 ナタネ\n　「ええ」@
 \n拓司は、目を閉じた。\
 
-\x00 DIALOGUE_END R\x04 SEQ01
-\x1f\xfa\x01 CALL3 (\x02 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00 SEQ01
-
+\x00 DIALOGUE_END R\x04
+CALL1 \xfa\x01 CALL3 (\x02 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00\x00\x0c\x02\x00\x00"
 LOAD6 .\\Data\\Script\\Bg.Fob REF3 \xc2\x06 REF_END2 
 LOAD4 BgAutoFadeIn REF3 \xec\x06 REF_END1 
 LOAD3 SCE212_004 REF6 \x10\x07 REF_END2 
@@ -53,9 +51,9 @@ DIALOGUE_1 \xecZ\x01\x0c\x00\x00\x00\x00"\x03\x88\x00\x00
 『教授が語る世界』か『学校に籠城する世界』のいずれかに、世\n界を絞りたい。@
 そう思ってしまう。\
 
-\x00 DIALOGUE_END T\x07 SEQ01
-\x1f\xfa\x01 CALL3 (\x02 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc9\x00 SEQ01
-\x1f\xc2\x06 CALL3 \xec\x06 REF_END1 
+\x00 DIALOGUE_END T\x07
+CALL1 \xfa\x01 CALL3 (\x02 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc9\x00
+CALL1 \xc2\x06 CALL3 \xec\x06 REF_END1 
 LOAD3 SCE212_005 REF6 \xe2\t REF_END2 
 DIALOGUE_1 \xf0Z\x01\x0c\x00\x00\x00\x00"\x036\x00\x00
  
@@ -64,15 +62,15 @@ DIALOGUE_1 \xf0Z\x01\x0c\x00\x00\x00\x00"\x036\x00\x00
 \nそして拓司は見た。\p狭い部屋の床にビッシリと立ち並ぶ、アイ\nスクリームパフェの群を。@
 \n拓司\n　「そんな……バカな」\
 
-\x00 DIALOGUE_END &\n SEQ01
-\x1f\xfa\x01 CALL3 (\x02 REF_END1 
+\x00 DIALOGUE_END &\n
+CALL1 \xfa\x01 CALL3 (\x02 REF_END1 
 LOAD3 SCE212_006 REF6 8\x0b REF_END2 
 DIALOGUE_1 \xf4Z\x01\x0c\x00\x00\x00\x00"\x03-\x00\x00
  
 /*▲SE01　ループ再生（次の停止まで）*/\a2,1,1,1,\a6,0,0,0,　ザザザ……ザザッ……\pザアザザザ……ザアアアアア……@
 　ザアザアアアアアアア……\w\n/*▲SE01　停止*/\a4,1,0,0,\z
-\x00\x00\x00 DIALOGUE_END |\x0b SEQ01
-\x1f\xfa\x01 CALL3 (\x02 REF_END1 
+\x00\x00\x00 DIALOGUE_END |\x0b
+CALL1 \xfa\x01 CALL3 (\x02 REF_END1 
 LOAD3 SCE212_007 REF6 j\x0c REF_END2 
 DIALOGUE_1 \xf8Z\x01\x0c\x00\x00\x00\x00"\x03d\x00\x00
  
@@ -89,8 +87,8 @@ DIALOGUE_1 \xf8Z\x01\x0c\x00\x00\x00\x00"\x03d\x00\x00
 どちらでもいい。@
 \n/*■黒　表示（クロスフェード）*/\a7,-2,-2,0,\a0,200,2,0,\a6,-2,0,0,ようやく浅いまどろみが頭に霞を作りはじめた。\
 
-\x00\x00 DIALOGUE_END \xae\x0c SEQ01
-\x1f\xfa\x01 CALL3 (\x02 REF_END1  \x1e\x00\x00\x00\x00\r\x00 REF_END2 \x0c\x02\x00\x00"
+\x00\x00 DIALOGUE_END \xae\x0c
+CALL1 \xfa\x01 CALL3 (\x02 REF_END1  \x1e\x00\x00\x00\x00\r\x00 REF_END2 \x0c\x02\x00\x00"
 LOAD6 .\\Data\\Script\\Bgm.Fob REF2 \x92\x0e REF_END2 
 LOAD2 SeStop REF1 \xbc\x0e CALL2 \xfa\x01 REF_END2 
 LOAD3 TextClose REF2 \xe4\x0e REF_END1 

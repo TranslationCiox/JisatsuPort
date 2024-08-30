@@ -24,11 +24,11 @@ patterns = [
         "action": " SCENARIO_END\n"
     },
 
-    {
-        "pattern": [b'\x00', b'\x0c', b'\x02', b'\x00', b'\x00', b'"'],
-        # Used after EVERY block of dialogue EVEN dialogue choice blocks.
-        "action": " SEQ01\n"
-    },
+    # {
+    #     "pattern": [b'\x00', b'\x0c', b'\x02', b'\x00', b'\x00', b'"'],
+    #     # Used after EVERY block of dialogue EVEN dialogue choice blocks.
+    #     "action": " SEQ01\n"
+    # },
     {
         "pattern": [b'\x1e', b'\x00', b'\x00', b'\x00', b'\x00', b'\r', b'\x00', b'\x00', b'\x1f'],
         # Used after EVERY block of dialogue EVEN dialogue choice blocks.

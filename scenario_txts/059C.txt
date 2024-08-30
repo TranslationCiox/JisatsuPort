@@ -14,8 +14,7 @@ DIALOGUE_1 \xd0k DIALOGUE_2 z\x00\x00
 \nなたねに目で合図を送って、拓司は後ろを向いた。@
 早桃は何を隠しているのだろうか？\
 
-\x00 DIALOGUE_END J\x00 SEQ01
-LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 R\x02 REF_END2 
+\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 R\x02 REF_END2 
 LOAD2 TextOn REF1 \x80\x02 CALL2 R\x02 REF_END2 
 LOAD3 TextClose REF2 \xa8\x02 REF_END1 
 END_FILE

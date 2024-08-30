@@ -9,8 +9,7 @@ DIALOGUE_1 \x10' DIALOGUE_2 \xa8\x00\x00
 拓司\n　「へいへい。どうせモヤシ君だよ」@
 紅葉\n　「アンタさあ、もうちょっと身体鍛えないと、いざというときに\n　　困るよ？」\
 
-\x00\x00\x00 DIALOGUE_END J\x00 SEQ01
-LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \n\x03 REF_END2 
+\x00\x00\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \n\x03 REF_END2 
 LOAD2 TextOn REF1 8\x03 REF_END1 
 LOAD3 SCE015_002 REF6 T\x03 REF_END2 
 DIALOGUE_1 \x14' DIALOGUE_2 G\x00\x00
@@ -21,7 +20,7 @@ DIALOGUE_1 \x14' DIALOGUE_2 G\x00\x00
 紅葉\n　「ふん」@
 拓司\n　「ふん」\
 
-\x00\x00\x00 DIALOGUE_END \x98\x03 SEQ01
-\x1f\n\x03 CALL3 8\x03 CALL2 \n\x03 REF_END2 
+\x00\x00\x00 DIALOGUE_END \x98\x03
+CALL1 \n\x03 CALL3 8\x03 CALL2 \n\x03 REF_END2 
 LOAD3 TextClose REF2 \xfa\x04 REF_END1 
 END_FILE

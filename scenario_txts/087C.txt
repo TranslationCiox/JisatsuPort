@@ -15,8 +15,7 @@ DIALOGUE_1 \x90\x97 DIALOGUE_2 \x9e\x00\x00
 拓司\n　「ああ。\p紅葉も無事だ。\p……で、こりゃ一体何の真似だ？」@
 カンナ\n　「ああ、このピカピカね……コレよ」\
 
-\x00\x00\x00 DIALOGUE_END \x90\x00 SEQ01
-LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 (\x03 REF_END2 
+\x00\x00\x00 DIALOGUE_END \x90\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 (\x03 REF_END2 
 LOAD2 TextOn REF1 V\x03 REF_END1 
 LOAD3 SCE087_002 REF6 r\x03 REF_END2 
 DIALOGUE_1 \x94\x97 DIALOGUE_2 {\x00\x00
@@ -30,8 +29,8 @@ DIALOGUE_1 \x94\x97 DIALOGUE_2 {\x00\x00
 \n/*▲BGM　停止*/\a4,-1,0,0,なたね\n　「これがシェルターよ」@
 拓司\n　「まさか！」\
 
-\x00\x00\x00 DIALOGUE_END \xb6\x03 SEQ01
-\x1f(\x03 CALL3 V\x03 REF_END1 
+\x00\x00\x00 DIALOGUE_END \xb6\x03
+CALL1 (\x03 CALL3 V\x03 REF_END1 
 LOAD3 SCE087_003 REF6 \xdc\x05 REF_END2 
 DIALOGUE_1 \x98\x97 DIALOGUE_2 \x92\x00\x00
  
@@ -41,7 +40,7 @@ DIALOGUE_1 \x98\x97 DIALOGUE_2 \x92\x00\x00
 拓司\n　「……」@
 なたね\n　「いい？\p　エンケリュスの自殺波動は、アルミホイルで防御す\n　　ることが－－」\
 
-\x00\x00\x00 DIALOGUE_END  \x06 SEQ01
-\x1f(\x03 CALL3 V\x03 CALL2 (\x03 REF_END2 
+\x00\x00\x00 DIALOGUE_END  \x06
+CALL1 (\x03 CALL3 V\x03 CALL2 (\x03 REF_END2 
 LOAD3 TextClose REF2 \xae\x08 REF_END1 
 END_FILE

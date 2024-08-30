@@ -9,8 +9,7 @@ DIALOGUE_1 \xe0y DIALOGUE_2 \xec\x00\x00
 　　残された淘汰はなにかしら？\p　殺すことができない生き物が\n　　淘汰される方法は？」@
 拓司\n　「自ら……命を絶つこと」\
 
-\x00\x00\x00 DIALOGUE_END J\x00 SEQ01
-LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \x1a\x04 REF_END2 
+\x00\x00\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \x1a\x04 REF_END2 
 LOAD2 TextOn REF1 H\x04 REF_END1 
 LOAD3 SCE068_002 REF6 d\x04 REF_END2 
 DIALOGUE_1 \xe4y DIALOGUE_2 \xac\x00\x00
@@ -19,8 +18,8 @@ DIALOGUE_1 \xe4y DIALOGUE_2 \xac\x00\x00
 拓司\n　「……」@
 カンナ\n　「簡単でしょ？\p　イヌとか赤ちゃんの実験で照明されちゃうよ\n　　うなもの。\pその程度なの、あなたは。\pあなたにとって、死は\n　　その程度のもの。\pでも、私は違う！」\
 
-\x00 DIALOGUE_END \xa8\x04 SEQ01
-\x1f\x1a\x04 CALL3 H\x04 REF_END1 
+\x00 DIALOGUE_END \xa8\x04
+CALL1 \x1a\x04 CALL3 H\x04 REF_END1 
 LOAD3 SCE068_003 REF6 \x92\x07 REF_END2 
 DIALOGUE_1 \xe8y DIALOGUE_2 \xa4\x00\x00
  
@@ -30,9 +29,8 @@ DIALOGUE_1 \xe8y DIALOGUE_2 \xa4\x00\x00
 カンナ\n　「虎菱くん、あなた素敵よ。\p頭がいいわ。\pここに積み重なって\n　　る連中が考えているみたいに、数式とかイディオムを丸暗記\n　　するような頭の良さじゃなくて……もっと深い智恵が、あな\n　　たにはある。\pあなたは特別。\pだからあなたを選んだの。@
 　　決してあなたをバカにしているわけじゃないの。\pあなたの存\n　　在を認めているからこそ、あなたを選んだ……あッ！」\
 
-\x00\x00\x00 DIALOGUE_END \xd6\x07 SEQ01
-\x1f\x1a\x04 CALL3 H\x04 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00 SEQ01
-
+\x00\x00\x00 DIALOGUE_END \xd6\x07
+CALL1 \x1a\x04 CALL3 H\x04 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00\x00\x0c\x02\x00\x00"
 LOAD6 .\\Data\\Script\\Bg.Fob REF3 \xba\n REF_END2 
 LOAD2 BgOn REF3 \xe4\n REF_END1 
 LOAD3 SCE068_004 REF6 \x00\x0b REF_END2 
@@ -46,8 +44,8 @@ DIALOGUE_1 \xecy DIALOGUE_2 f\x00\x00
 拓司\n　「早桃ォ！　カンナァ！」@
 早桃\n　「あっ！」\
 
-\x00\x00 DIALOGUE_END D\x0b SEQ01
-\x1f\x1a\x04 CALL3 H\x04 REF_END1 
+\x00\x00 DIALOGUE_END D\x0b
+CALL1 \x1a\x04 CALL3 H\x04 REF_END1 
 LOAD3 SCE068_005 REF6 \x16\r REF_END2 
 DIALOGUE_1 \xf0y DIALOGUE_2 ~\x00\x00
  
@@ -58,11 +56,11 @@ DIALOGUE_1 \xf0y DIALOGUE_2 ~\x00\x00
 早桃\n　「やめて！　やめて！」@
 カンナ\n　「ちくしょおおおおおおおお！\p　うわあああああああ！」\
 
-\x00\x00\x00 DIALOGUE_END Z\r SEQ01
-\x1f\x1a\x04 CALL3 H\x04 REF_END1 
+\x00\x00\x00 DIALOGUE_END Z\r
+CALL1 \x1a\x04 CALL3 H\x04 REF_END1 
 LOAD6 .\\Data\\Script\\Bgm.Fob REF2 \x8c\x0f REF_END2 
-LOAD2 StopCD REF1 \xb6\x0f REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00 SEQ01
-\x1f\xba\n REF_END2 
+LOAD2 StopCD REF1 \xb6\x0f REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00
+CALL1 \xba\n REF_END2 
 LOAD4 BgAutoFadeIn REF3 \xf8\x0f REF_END1 
 LOAD3 SCE068_006 REF6 \x1c\x10 REF_END2 
 DIALOGUE_1 \xf4y DIALOGUE_2 \xa4\x00\x00
@@ -75,8 +73,8 @@ DIALOGUE_1 \xf4y DIALOGUE_2 \xa4\x00\x00
 なたね\n　「あなたにもできるはずよ、虎菱くん」@
 拓司\n　「……ふざけるな」@
 \z
-\x00 DIALOGUE_END `\x10 SEQ01
-\x1f\x1a\x04 CALL3 H\x04 REF_END1 
+\x00 DIALOGUE_END `\x10
+CALL1 \x1a\x04 CALL3 H\x04 REF_END1 
 LOAD3 SCE068_007 REF6 *\x13 REF_END2 
 DIALOGUE_1 \xf8y DIALOGUE_2 \x8c\x00\x00
  
@@ -87,7 +85,7 @@ DIALOGUE_1 \xf8y DIALOGUE_2 \x8c\x00\x00
 \n沈黙が落ちた。\pしかし、それに浸っていられるほど、拓司たちに\n時間は残されていなかった。\p拓司はぐったりとしたカンナの身体\nを肩に担ぎあげて、いった。@
 \n拓司\n　「行こう。\p紅葉を助けに」\
 
-\x00 DIALOGUE_END n\x13 SEQ01
-\x1f\x1a\x04 CALL3 H\x04 CALL2 \x1a\x04 REF_END2 
+\x00 DIALOGUE_END n\x13
+CALL1 \x1a\x04 CALL3 H\x04 CALL2 \x1a\x04 REF_END2 
 LOAD3 TextClose REF2 \xe4\x15 REF_END1 
 END_FILE

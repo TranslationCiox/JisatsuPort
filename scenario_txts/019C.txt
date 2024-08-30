@@ -1,6 +1,5 @@
 START_FILE
-\xa3\n\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00d\x08\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x07\x01 SEQ01
-
+\xa3\n\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00d\x08\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x07\x01\x00\x0c\x02\x00\x00"
 LOAD6 .\\Data\\Script\\Bgm.Fob REF2  \x00 REF_END2 
 LOAD2 PlayCD REF1 J\x00 REF_END1 
 LOAD3 SCE019_001 REF6 f\x00 REF_END2 
@@ -16,8 +15,7 @@ DIALOGUE_1 P- DIALOGUE_2 R\x00\x00
 拓司\n　「らしい」@
 \n　紅葉はナサケナイ、とため息をついた。\
 
-\x00 DIALOGUE_END \xaa\x00 SEQ01
-LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \x12\x02 REF_END2 
+\x00 DIALOGUE_END \xaa\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \x12\x02 REF_END2 
 LOAD2 TextOn REF1 @\x02 REF_END1 
 LOAD3 SCE019_002 REF6 \\\x02 REF_END2 
 DIALOGUE_1 T- DIALOGUE_2 L\x00\x00
@@ -30,9 +28,9 @@ DIALOGUE_1 T- DIALOGUE_2 L\x00\x00
 拓司\n　「？」@
 紅葉\n　「……あ、いや、そのね！　ほら、アンタ今日、お昼ご飯どうす\n　　るのかな、って。\pもし購買のパンとかで済ませるつもりなら－\n　　－」\
 
-\x00 DIALOGUE_END \xa0\x02 SEQ01
-\x1f\x12\x02 CALL3 @\x02 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x08\x01 SEQ01
-\x1f \x00 CALL3 J\x00 REF_END1 
+\x00 DIALOGUE_END \xa0\x02
+CALL1 \x12\x02 CALL3 @\x02 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x08\x01
+CALL1  \x00 CALL3 J\x00 REF_END1 
 LOAD3 SCE019_003 REF6 >\x04 REF_END2 
 DIALOGUE_1 X- DIALOGUE_2 A\x00\x00
  
@@ -41,8 +39,8 @@ DIALOGUE_1 X- DIALOGUE_2 A\x00\x00
 ぎょっとして振り返ると、すぐ後ろにひとりの女の子がひっそ\nり立っている。@
 拓司はその少女の名前を知っていた。\
 
-\x00\x00 DIALOGUE_END \x82\x04 SEQ01
-\x1f\x12\x02 CALL3 @\x02 REF_END1 
+\x00\x00 DIALOGUE_END \x82\x04
+CALL1 \x12\x02 CALL3 @\x02 REF_END1 
 LOAD3 SCE019_004 REF6 \xc0\x05 REF_END2 
 DIALOGUE_1 \\- DIALOGUE_2 \x7f\x00\x00
  
@@ -57,7 +55,7 @@ DIALOGUE_1 \\- DIALOGUE_2 \x7f\x00\x00
 \nしかし、それにしても－－拓司は思った。@
 \n－－どうして月代カンナはおれに声をかけてきたのだろう？\
 
-\x00 DIALOGUE_END \x04\x06 SEQ01
-\x1f\x12\x02 CALL3 @\x02 CALL2 \x12\x02 REF_END2 
+\x00 DIALOGUE_END \x04\x06
+CALL1 \x12\x02 CALL3 @\x02 CALL2 \x12\x02 REF_END2 
 LOAD3 TextClose REF2 F\x08 REF_END1 
 END_FILE

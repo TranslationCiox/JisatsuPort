@@ -8,8 +8,7 @@ DIALOGUE_1 P\xaa DIALOGUE_2 I\x00\x00
 拓司\n　「もちろん、ラジオから指令電波を盗聴するだとか、お前が宇\n　　宙人のスパイだとか、そんなことは俺だって信じていない」@
 \n拓司はなたねをちらりとみやった。@
 なたねはいつもの無表情で、なんの反応もない。\w\z
-\x00 DIALOGUE_END J\x00 SEQ01
-LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \x8e\x01 REF_END2 
+\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \x8e\x01 REF_END2 
 LOAD2 TextOn REF1 \xbc\x01 REF_END1 
 LOAD3 SCE099_002 REF6 \xd8\x01 REF_END2 
 DIALOGUE_1 T\xaa DIALOGUE_2 l\x00\x00
@@ -19,7 +18,7 @@ DIALOGUE_1 T\xaa DIALOGUE_2 l\x00\x00
 なたね\n　「もういい！」@
 いうとなたねは、走るように自分のスペースへと向かい、膝を抱\nえて壁に向かった。@
 \nそれから一日、早桃はおろか、他の誰もひとことも口をきこう\nとはしなかった。\w\z
-\x00\x00\x00 DIALOGUE_END \x1c\x02 SEQ01
-\x1f\x8e\x01 CALL3 \xbc\x01 CALL2 \x8e\x01 REF_END2 
+\x00\x00\x00 DIALOGUE_END \x1c\x02
+CALL1 \x8e\x01 CALL3 \xbc\x01 CALL2 \x8e\x01 REF_END2 
 LOAD3 TextClose REF2 \x12\x04 REF_END1 
 END_FILE

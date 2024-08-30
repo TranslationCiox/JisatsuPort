@@ -8,8 +8,7 @@ DIALOGUE_1 \x00\x19 DIALOGUE_2 .\x00\x00
 拓司\n　「こんなこと、おれは望んじゃいない」@
 早桃\n　「いいんだよ。夢は現実に干渉しない。\pいつもの妄想だか\n　　ら」\
 
-\x00 DIALOGUE_END J\x00 SEQ01
-LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 "\x01 REF_END2 
+\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 "\x01 REF_END2 
 LOAD2 TextOn REF1 P\x01 REF_END1 
 LOAD3 SCE006_002 REF6 l\x01 REF_END2 
 DIALOGUE_1 \x04\x19 DIALOGUE_2 \x98\x00\x00
@@ -24,8 +23,8 @@ DIALOGUE_1 \x04\x19 DIALOGUE_2 \x98\x00\x00
 こんなにもいやらしいものを隠して、早桃は同じ家の\n中で暮らしてきたのだ。@
 早桃のくちびるのあいだに、ぬるっと、濡れ光る肉の塊がすべっ\nた。\n粘り着くような声が、そこからこぼれだした。\
 
-\x00\x00 DIALOGUE_END \xb0\x01 SEQ01
-\x1f"\x01 CALL3 P\x01 REF_END1 
+\x00\x00 DIALOGUE_END \xb0\x01
+CALL1 "\x01 CALL3 P\x01 REF_END1 
 LOAD3 SCE006_003 REF6 J\x04 REF_END2 
 DIALOGUE_1 \x08\x19 DIALOGUE_2 C\x00\x00
  
@@ -34,13 +33,13 @@ DIALOGUE_1 \x08\x19 DIALOGUE_2 C\x00\x00
 　　パパとママには絶対教えられないこと、一緒にしよう？@
 　　ね？」\
 
-\x00\x00\x00 DIALOGUE_END \x8e\x04 SEQ01
-\x1f"\x01 CALL3 P\x01 REF_END1 \x03\x0c\x00\x00
+\x00\x00\x00 DIALOGUE_END \x8e\x04
+CALL1 "\x01 CALL3 P\x01 REF_END1 \x03\x0c\x00\x00
 CHOICE
 「……消えろ」\n「……来いよ」\n\l0,2,
 ENDCHOICE
 
-\x00 DIALOGUE_END \xd4\x05 SEQ01
-\x1f"\x01 CALL3 P\x01 CALL2 "\x01 REF_END2 
+\x00 DIALOGUE_END \xd4\x05
+CALL1 "\x01 CALL3 P\x01 CALL2 "\x01 REF_END2 
 LOAD3 TextClose REF2 J\x06 REF_END1 
 END_FILE

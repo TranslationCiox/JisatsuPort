@@ -18,8 +18,7 @@ LOAD8 .\\Data\\Script\\Scenario\\k13.Fob REF6 \x94\x05 CALL3 \\\x00 CALL2 x\x00 
 LOAD8 .\\Data\\Script\\Scenario\\k14.Fob REF6 \x10\x06 CALL3 \\\x00 REF_END1 2V\x06\x002\xc0\x06\x00
 LOAD8 .\\Data\\Script\\Scenario\\k14'.Fob\x1f\\\x06 CALL3 \\\x00 REF_END1 !\x1e\x00\x00\x00\x00\r\x00\x00\x1e\x1c\x00\x00\r\x02\x1e\x01\x00\x00\x0c\x00\x00\x00\x00"2\x00\x07\x00
 LOAD8 .\\Data\\Script\\Scenario\\k15.Fob REF6 \xc6\x06 CALL3 \\\x00 REF_END1 
-LOAD8 .\\Data\\Script\\Scenario\\k16.Fob REF6 \x06\x07 CALL3 \\\x00 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00 SEQ01
-
+LOAD8 .\\Data\\Script\\Scenario\\k16.Fob REF6 \x06\x07 CALL3 \\\x00 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00\x00\x0c\x02\x00\x00"
 LOAD6 .\\Data\\Script\\Bg.Fob\x00\x00 REF6 `\x07 REF_END2 
 LOAD4 BgAutoFadeIn\x00\x00 REF6 \x8a\x07 REF_END1 
 LOAD6 .\\Data\\Script\\Bgm.Fob\x00 REF6 \xae\x07 REF_END2 

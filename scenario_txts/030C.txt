@@ -5,8 +5,7 @@ DIALOGUE_1 \x80> DIALOGUE_2 \x0f\x00\x00
  
 \n\n\n\n\n\n\n\n　　　　　　　　　　　　　『屋上』\
 
-\x00 DIALOGUE_END J\x00 SEQ01
-LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xa6\x00 REF_END2 
+\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xa6\x00 REF_END2 
 LOAD2 TextOn REF1 \xd4\x00 REF_END1 
 LOAD3 SCE030_002 REF6 \xf0\x00 REF_END2 
 DIALOGUE_1 \x84> DIALOGUE_2 .\x00\x00
@@ -17,13 +16,11 @@ DIALOGUE_1 \x84> DIALOGUE_2 .\x00\x00
 \n　ライフルの音が小さく響く。@
 　無論ライフルなどがここにあろうはずもなく、それは月代カンナ\n　の唇から漏れる、偽物の銃声にすぎない。\
 
-\x00\x00\x00 DIALOGUE_END 4\x01 SEQ01
-\x1f\xa6\x00 CALL3 \xd4\x00 CALL2 \xa6\x00 REF_END2 
-LOAD4 TextWindowOff REF2 2\x02 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x08\x01 SEQ01
-
+\x00\x00\x00 DIALOGUE_END 4\x01
+CALL1 \xa6\x00 CALL3 \xd4\x00 CALL2 \xa6\x00 REF_END2 
+LOAD4 TextWindowOff REF2 2\x02 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x08\x01\x00\x0c\x02\x00\x00"
 LOAD6 .\\Data\\Script\\Bgm.Fob REF2 p\x02 REF_END2 
-LOAD2 PlayCD REF1 \x9a\x02 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x08\x00 SEQ01
-
+LOAD2 PlayCD REF1 \x9a\x02 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x08\x00\x00\x0c\x02\x00\x00"
 LOAD6 .\\Data\\Script\\Bg.Fob REF3 \xd0\x02 REF_END2 
 LOAD4 BgNormalFadeIn REF1 \xfa\x02 CALL2 \xa6\x00 REF_END2 
 LOAD4 TextWindowOn REF3 *\x03 REF_END1 
@@ -37,8 +34,8 @@ DIALOGUE_1 \x88> DIALOGUE_2 Q\x00\x00
 　髪も脱色して、いっぱしのハンサム気取りだ。@
 \n　ぱーん。\
 
-\x00\x00\x00 DIALOGUE_END \x92\x03 SEQ01
-\x1f\xa6\x00 CALL3 \xd4\x00 REF_END1 
+\x00\x00\x00 DIALOGUE_END \x92\x03
+CALL1 \xa6\x00 CALL3 \xd4\x00 REF_END1 
 LOAD3 SCE030_004 REF6 \x10\x05 REF_END2 
 DIALOGUE_1 \x8c> DIALOGUE_2 w\x00\x00
  
@@ -49,8 +46,8 @@ DIALOGUE_1 \x8c> DIALOGUE_2 w\x00\x00
 　－－無駄無駄。@
 \n　ぱーん。\
 
-\x00\x00\x00 DIALOGUE_END T\x05 SEQ01
-\x1f\xa6\x00 CALL3 \xd4\x00 REF_END1 
+\x00\x00\x00 DIALOGUE_END T\x05
+CALL1 \xa6\x00 CALL3 \xd4\x00 REF_END1 
 LOAD3 SCE030_005 REF6 j\x07 REF_END2 
 DIALOGUE_1 \x90> DIALOGUE_2 I\x00\x00
  
@@ -61,9 +58,9 @@ DIALOGUE_1 \x90> DIALOGUE_2 I\x00\x00
 拓司\n　「……」@
 カンナ\n　「ぱーん。\p……あなた、死んだわよ」\
 
-\x00 DIALOGUE_END \xae\x07 SEQ01
-\x1f\xa6\x00 CALL3 \xd4\x00 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00 SEQ01
-\x1f\xd0\x02 REF_END2 
+\x00 DIALOGUE_END \xae\x07
+CALL1 \xa6\x00 CALL3 \xd4\x00 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00
+CALL1 \xd0\x02 REF_END2 
 LOAD4 BgAutoFadeIn REF3 2\t REF_END1 
 LOAD3 SCE030_006 REF6 V\t REF_END2 
 DIALOGUE_1 \x94> DIALOGUE_2 \x7f\x00\x00
@@ -77,8 +74,8 @@ DIALOGUE_1 \x94> DIALOGUE_2 \x7f\x00\x00
 \n　捧げ物を差し出すように、カンナは顎をくいっと上にそらせた。@
 　差し出された首は透き通るように青白く、夏の日差しに覆われた\n　この屋上において、それは場違いな氷細工のように見えた。\
 
-\x00 DIALOGUE_END \x9a\t SEQ01
-\x1f\xa6\x00 CALL3 \xd4\x00 REF_END1 
+\x00 DIALOGUE_END \x9a\t
+CALL1 \xa6\x00 CALL3 \xd4\x00 REF_END1 
 LOAD3 SCE030_007 REF6 \xd0\x0b REF_END2 
 DIALOGUE_1 \x98> DIALOGUE_2 :\x00\x00
  
@@ -91,8 +88,8 @@ DIALOGUE_1 \x98> DIALOGUE_2 :\x00\x00
 \n　乞われるまま、拓司は手を伸ばした。@
 　包み込むように、絞める。\
 
-\x00 DIALOGUE_END \x14\x0c SEQ01
-\x1f\xa6\x00 CALL3 \xd4\x00 REF_END1 
+\x00 DIALOGUE_END \x14\x0c
+CALL1 \xa6\x00 CALL3 \xd4\x00 REF_END1 
 LOAD3 SCE030_008 REF6 6\r REF_END2 
 DIALOGUE_1 \x9c> DIALOGUE_2 \x81\x00\x00
  
@@ -111,9 +108,9 @@ DIALOGUE_1 \x9c> DIALOGUE_2 \x81\x00\x00
 　１。@
 　解放。\
 
-\x00\x00\x00 DIALOGUE_END z\r SEQ01
-\x1f\xa6\x00 CALL3 \xd4\x00 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\t\x00 SEQ01
-\x1f\xd0\x02 CALL3 2\t REF_END1 
+\x00\x00\x00 DIALOGUE_END z\r
+CALL1 \xa6\x00 CALL3 \xd4\x00 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\t\x00
+CALL1 \xd0\x02 CALL3 2\t REF_END1 
 LOAD3 SCE030_009 REF6 \xec\x0f REF_END2 
 DIALOGUE_1 \xa0> DIALOGUE_2 \xa3\x00\x00
  
@@ -124,8 +121,8 @@ DIALOGUE_1 \xa0> DIALOGUE_2 \xa3\x00\x00
 拓司\n　「……」@
 カンナ\n　「はは……あははは……ハハハハハハハハ」\
 
-\x00\x00\x00 DIALOGUE_END 0\x10 SEQ01
-\x1f\xa6\x00 CALL3 \xd4\x00 REF_END1 
+\x00\x00\x00 DIALOGUE_END 0\x10
+CALL1 \xa6\x00 CALL3 \xd4\x00 REF_END1 
 LOAD3 SCE030_010 REF6 \xf6\x12 REF_END2 
 DIALOGUE_1 \xa4> DIALOGUE_2 r\x00\x00
  
@@ -135,20 +132,19 @@ DIALOGUE_1 \xa4> DIALOGUE_2 r\x00\x00
 /*■CG73　表示（ノンエフェクト） *//*■CG09　表示（ノンエフェクト） */\a7,1,1,0,\a1,1,202,9,\a6,0,0,0,ハ。@
 /*■CG73　表示（ノンエフェクト） *//*■CG09　表示（ノンエフェクト） */\a7,1,1,0,\a1,1,202,9,\a6,0,0,0,ハ。\
 
-\x00\x00\x00 DIALOGUE_END :\x13 SEQ01
-\x1f\xa6\x00 CALL3 \xd4\x00 CALL2 \xa6\x00 CALL3 2\x02 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xca\x00 SEQ01
-\x1f\xd0\x02 REF_END2 
-LOAD2 BgOn REF3 |\x15 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x01\x00 SEQ01
-LOAD7 .\\Data\\Script\\TextFunc.fob REF1 \xb2\x15 REF_END2 
-LOAD3 WaitTime REF3 \xe0\x15 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\t\x00 SEQ01
-\x1f\xd0\x02 CALL3 |\x15 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x01\x00 SEQ01
-\x1f\xb2\x15 CALL3 \xe0\x15 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xca\x00 SEQ01
-\x1f\xd0\x02 CALL3 |\x15 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x01\x00 SEQ01
-\x1f\xb2\x15 CALL3 \xe0\x15 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\t\x00 SEQ01
-\x1f\xd0\x02 CALL3 |\x15 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x01\x00 SEQ01
-\x1f\xb2\x15 CALL3 \xe0\x15 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e<\x00 SEQ01
-\x1f\xb2\x15 CALL3 \xe0\x15 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00 SEQ01
-\x1f\xd0\x02 CALL3 \xfa\x02 CALL2 p\x02 REF_END2 
+\x00\x00\x00 DIALOGUE_END :\x13
+CALL1 \xa6\x00 CALL3 \xd4\x00 CALL2 \xa6\x00 CALL3 2\x02 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xca\x00
+CALL1 \xd0\x02 REF_END2 
+LOAD2 BgOn REF3 |\x15 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x01\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.fob REF1 \xb2\x15 REF_END2 
+LOAD3 WaitTime REF3 \xe0\x15 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\t\x00
+CALL1 \xd0\x02 CALL3 |\x15 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x01\x00
+CALL1 \xb2\x15 CALL3 \xe0\x15 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xca\x00
+CALL1 \xd0\x02 CALL3 |\x15 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x01\x00
+CALL1 \xb2\x15 CALL3 \xe0\x15 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\t\x00
+CALL1 \xd0\x02 CALL3 |\x15 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x01\x00
+CALL1 \xb2\x15 CALL3 \xe0\x15 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e<\x00
+CALL1 \xb2\x15 CALL3 \xe0\x15 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00
+CALL1 \xd0\x02 CALL3 \xfa\x02 CALL2 p\x02 REF_END2 
 LOAD2 StopCD REF1 \xac\x17 CALL2 \xa6\x00 REF_END2 LOAD5 TextWindowOnDirect REF1 \xd4\x17 CALL2 \xa6\x00 REF_END2 
 LOAD3 TextClose REF2 \x08\x18 REF_END1 
 END_FILE

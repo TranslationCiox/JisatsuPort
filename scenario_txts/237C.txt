@@ -14,8 +14,7 @@ DIALOGUE_1 \xf0\x81\x01\x0c\x00\x00\x00\x00"\x03s\x00\x00
 いいじゃないか、狂っていても。@
 死ぬよりはマシだ。\
 
-\x00\x00\x00 DIALOGUE_END J\x00 SEQ01
-LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 6\x02 REF_END2 
+\x00\x00\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 6\x02 REF_END2 
 LOAD2 TextOn REF1 d\x02 REF_END1 
 LOAD3 SCE237_002 REF6 \x80\x02 REF_END2 
 DIALOGUE_1 \xf4\x81\x01\x0c\x00\x00\x00\x00"\x03\x98\x00\x00
@@ -30,8 +29,8 @@ DIALOGUE_1 \xf4\x81\x01\x0c\x00\x00\x00\x00"\x03\x98\x00\x00
 そしてそれは、いままでのすべての記憶を流し去って、新たな悪\n夢を……新たな『おれの世界』を脳髄に産み付けるのだろう。@
 やがてまたこの部屋で目覚めて、教授にすべてを否定され……\
 
-\x00 DIALOGUE_END \xc4\x02 SEQ01
-\x1f6\x02 CALL3 d\x02 REF_END1 
+\x00 DIALOGUE_END \xc4\x02
+CALL1 6\x02 CALL3 d\x02 REF_END1 
 LOAD3 SCE237_003 REF6 ^\x05 REF_END2 
 DIALOGUE_1 \xf8\x81\x01\x0c\x00\x00\x00\x00"\x03\x91\x00\x00
  
@@ -44,9 +43,8 @@ DIALOGUE_1 \xf8\x81\x01\x0c\x00\x00\x00\x00"\x03\x91\x00\x00
 \a4,0,0,0,\n　/*▲SE03　１回再生（終了を待たず先へ）*/\a2,0,3,0,　キキキキキ……キイキイ……キキキ……キキ……キ@
 \a4,0,0,0,\n　拓司はなま暖かいかたまりにゆっくり飲み込まれながら、ただ\n胎児のように身を丸めて恐怖していた。\
 
-\x00\x00 DIALOGUE_END \xa2\x05 SEQ01
-\x1f6\x02 CALL3 d\x02 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00 SEQ01
-
+\x00\x00 DIALOGUE_END \xa2\x05
+CALL1 6\x02 CALL3 d\x02 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00\x00\x0c\x02\x00\x00"
 LOAD6 .\\Data\\Script\\Bg.Fob REF3 :\x08 REF_END2 
 LOAD4 BgAutoFadeIn REF3 d\x08 REF_END1 
 LOAD6 .\\Data\\Script\\Bgm.Fob REF2 \x88\x08 REF_END2 

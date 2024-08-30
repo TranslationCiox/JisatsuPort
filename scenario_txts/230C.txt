@@ -9,8 +9,7 @@ DIALOGUE_1 \x00w\x01\x0c\x00\x00\x00\x00"\x03U\x00\x00
 それでも左目は、ギラリと凄惨な光をたたえて拓司に据えられて\nいる。@
 動こうとしたカンナを「動くなッ！」と一喝して、御堂はいった。\n\
 
-\x00\x00\x00 DIALOGUE_END J\x00 SEQ01
-LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xbe\x01 REF_END2 
+\x00\x00\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xbe\x01 REF_END2 
 LOAD2 TextOn REF1 \xec\x01 CALL2 \xbe\x01 REF_END2 
 LOAD3 TextClose REF2 \x14\x02 REF_END1 
 END_FILE

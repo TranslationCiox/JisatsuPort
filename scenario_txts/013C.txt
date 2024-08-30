@@ -14,8 +14,7 @@ DIALOGUE_1 \xf0# DIALOGUE_2 \x86\x00\x00
 　わけがわからないのは拓司である。\pいったい何事かと速度をさ\nらに上げると、それに気づいたのか、早桃も全力疾走を始める。@
 \n拓司\n　「早桃！　……あっ！」\
 
- DIALOGUE_END \x90\x00 SEQ01
-LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xc8\x02 REF_END2 
+ DIALOGUE_END \x90\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xc8\x02 REF_END2 
 LOAD2 TextOn REF1 \xf6\x02 REF_END1 
 LOAD3 SCE013_002 REF6 \x12\x03 REF_END2 
 DIALOGUE_1 \xf4# DIALOGUE_2 \x97\x00\x00
@@ -26,8 +25,8 @@ DIALOGUE_1 \xf4# DIALOGUE_2 \x97\x00\x00
 \n　拓司は慌てて早桃の元に駆け寄った。転倒の衝撃で鞄の鍵が開\nいてしまったのだろう、教科書やら文房具やらが、道路に散乱し\nている。@
 　駆け寄った拓司を無視して、早桃は黙々と荷物を拾い始めた。\
 
- DIALOGUE_END V\x03 SEQ01
-\x1f\xc8\x02 CALL3 \xf6\x02 REF_END1 
+ DIALOGUE_END V\x03
+CALL1 \xc8\x02 CALL3 \xf6\x02 REF_END1 
 LOAD3 SCE013_003 REF6 \xec\x05 REF_END2 
 DIALOGUE_1 \xf8# DIALOGUE_2 >\x00\x00
  
@@ -38,8 +37,8 @@ DIALOGUE_1 \xf8# DIALOGUE_2 >\x00\x00
 拓司\n　「どうしたってんだよ……あ？！」@
 \n　拓司は息を呑んだ。\n　キッと振り仰いだ早桃の瞳は、涙で泉のように潤んでいた。\
 
-\x00\x00\x00 DIALOGUE_END 0\x06 SEQ01
-\x1f\xc8\x02 CALL3 \xf6\x02 REF_END1 
+\x00\x00\x00 DIALOGUE_END 0\x06
+CALL1 \xc8\x02 CALL3 \xf6\x02 REF_END1 
 LOAD3 SCE013_004 REF6 b\x07 REF_END2 
 DIALOGUE_1 \xfc# DIALOGUE_2 t\x00\x00
  
@@ -51,15 +50,15 @@ DIALOGUE_1 \xfc# DIALOGUE_2 t\x00\x00
 　　ずるいよ、おにいちゃん、知ってるくせに……見てたくせに\n　　！\p早桃が知らないと思ってるの？\p　知ってるんだよ？@
 　　おにいちゃんがどんなこと考えてるかなんて、全部わかって\n　　るんだから！」@
 \nそこまでいってから早桃は顔を覆い、わっと泣き始めた。\w\z
-\x00 DIALOGUE_END \xa6\x07 SEQ01
-\x1f\xc8\x02 CALL3 \xf6\x02 REF_END1 
+\x00 DIALOGUE_END \xa6\x07
+CALL1 \xc8\x02 CALL3 \xf6\x02 REF_END1 
 LOAD3 SCE013_005 REF6 \xb0\t REF_END2 
 DIALOGUE_1 \x00$ DIALOGUE_2 \x1a\x00\x00
  
 /*■黒　表示（ノンエフェクト）*/\a7,-1,-1,0,\a0,200,1,0,\a6,0,0,0,早桃\n　「……ごめんなさい」\
 
-\x00 DIALOGUE_END \xf4\t SEQ01
-\x1f\xc8\x02 CALL3 \xf6\x02 REF_END1 
+\x00 DIALOGUE_END \xf4\t
+CALL1 \xc8\x02 CALL3 \xf6\x02 REF_END1 
 LOAD3 SCE013_006 REF6 \x96\n REF_END2 
 DIALOGUE_1 \x04$ DIALOGUE_2 |\x00\x00
  
@@ -67,7 +66,7 @@ DIALOGUE_1 \x04$ DIALOGUE_2 |\x00\x00
 拓司\n　「なんでもない。……なんでもないんだ」@
 \n　早桃の中でも、なにかが限界を迎えようとしている。\n　すでになにかが起こり始めていた。終わりに向けて、それはと\nどまることなく転がっていくのだろう。スイッチは押されてしま\nった。それは、目の前のあらゆるものをなぎ倒しながら、転がり\n続けていくのだ。@
 \z
- DIALOGUE_END \xda\n SEQ01
-\x1f\xc8\x02 CALL3 \xf6\x02 CALL2 \xc8\x02 REF_END2 
+ DIALOGUE_END \xda\n
+CALL1 \xc8\x02 CALL3 \xf6\x02 CALL2 \xc8\x02 REF_END2 
 LOAD3 TextClose REF2 \x10\r REF_END1 
 END_FILE

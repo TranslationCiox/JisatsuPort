@@ -1,6 +1,5 @@
 START_FILE
-\x0e\x13\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x000\x10\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x06\x01 SEQ01
-
+\x0e\x13\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x000\x10\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x06\x01\x00\x0c\x02\x00\x00"
 LOAD6 .\\Data\\Script\\Bgm.Fob REF2  \x00 REF_END2 
 LOAD2 PlayCD REF1 J\x00 REF_END1 
 LOAD3 SCE049_001 REF6 f\x00 REF_END2 
@@ -14,8 +13,7 @@ DIALOGUE_1 0\\ DIALOGUE_2 \xe6\x00\x00
 とりあえず近場の教室－－三階の教室に向かい、そこにいる教員\nに事態を報告するつもりだ。@
 柏木の死と、なたねたちの乱交は切り離せない。\pそれをどうごま\nかせばいいのかまだ決めかねているが……人がひとり死んでいる\nのだ。\pさすがに知らん顔というわけにもいくまい。\pそれに、放っ\nておいてもいずれ死体は見つかる。\p事件が膨れ上がって手に負え\nなくなる前に、なんらかの処置を施して、自分となたねに降りか\nかる火の粉を少しでも減らしておいたほうがいいだろう。\
 
-\x00\x00\x00 DIALOGUE_END \xaa\x00 SEQ01
-LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 b\x04 REF_END2 
+\x00\x00\x00 DIALOGUE_END \xaa\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 b\x04 REF_END2 
 LOAD2 TextOn REF1 \x90\x04 REF_END1 
 LOAD3 SCE049_002 REF6 \xac\x04 REF_END2 
 DIALOGUE_1 4\\ DIALOGUE_2 q\x00\x00
@@ -30,8 +28,8 @@ DIALOGUE_1 4\\ DIALOGUE_2 q\x00\x00
 　おかしいと首をひねる間もなく、スウッと、拓司のすぐ隣を誰\n　かが通り抜けた。@
 　あまりに突然のことに、拓司は思わず小さく悲鳴をもらした。\
 
-\x00 DIALOGUE_END \xf0\x04 SEQ01
-\x1fb\x04 CALL3 \x90\x04 REF_END1 
+\x00 DIALOGUE_END \xf0\x04
+CALL1 b\x04 CALL3 \x90\x04 REF_END1 
 LOAD3 SCE049_003 REF6 \xee\x06 REF_END2 
 DIALOGUE_1 8\\ DIALOGUE_2 k\x00\x00
  
@@ -48,8 +46,8 @@ DIALOGUE_1 8\\ DIALOGUE_2 k\x00\x00
 　なたねが、拓司の肩に優しく手を添えていた。@
 \nなたね\n　「大丈夫、虎菱くん？」\
 
-\x00\x00\x00 DIALOGUE_END 2\x07 SEQ01
-\x1fb\x04 CALL3 \x90\x04 REF_END1 
+\x00\x00\x00 DIALOGUE_END 2\x07
+CALL1 b\x04 CALL3 \x90\x04 REF_END1 
 LOAD3 SCE049_004 REF6 \x18\t REF_END2 
 DIALOGUE_1 <\\ DIALOGUE_2 \xa0\x00\x00
  
@@ -61,8 +59,8 @@ DIALOGUE_1 <\\ DIALOGUE_2 \xa0\x00\x00
 \nなたね\n　「空気構造が変わっているわ」@
 \n　ちいさくつぶやく。\pぎくりとして見ると、なたねは真剣な表情\n　で、あたりを見回している。\
 
-\x00\x00\x00 DIALOGUE_END \\\t SEQ01
-\x1fb\x04 CALL3 \x90\x04 REF_END1 
+\x00\x00\x00 DIALOGUE_END \\\t
+CALL1 b\x04 CALL3 \x90\x04 REF_END1 
 LOAD3 SCE049_005 REF6 \x16\x0c REF_END2 
 DIALOGUE_1 @\\ DIALOGUE_2 q\x00\x00
  
@@ -72,8 +70,8 @@ DIALOGUE_1 @\\ DIALOGUE_2 q\x00\x00
 \n　なにが？\p　とは尋ねなかった。\pこれ以上彼女の妄想に引きずり\n　込まれるのはごめんだった。@
 　あるいは－－尋ねるのが怖かったのかもしれない。\
 
-\x00\x00\x00 DIALOGUE_END Z\x0c SEQ01
-\x1fb\x04 CALL3 \x90\x04 REF_END1 
+\x00\x00\x00 DIALOGUE_END Z\x0c
+CALL1 b\x04 CALL3 \x90\x04 REF_END1 
 LOAD3 SCE049_006 REF6 X\x0e REF_END2 
 DIALOGUE_1 D\\ DIALOGUE_2 B\x00\x00
  
@@ -82,8 +80,8 @@ DIALOGUE_1 D\\ DIALOGUE_2 B\x00\x00
 　なたねが、怖い顔で拓司を見つめている。@
 \nなたね\n　「駄目。\pこの教室はもう駄目だわ。\p……見て」\
 
-\x00\x00\x00 DIALOGUE_END \x9c\x0e SEQ01
-\x1fb\x04 CALL3 \x90\x04 CALL2  \x00 REF_END2 
+\x00\x00\x00 DIALOGUE_END \x9c\x0e
+CALL1 b\x04 CALL3 \x90\x04 CALL2  \x00 REF_END2 
 LOAD2 StopCD REF1 \xea\x0f CALL2 b\x04 REF_END2 
 LOAD3 TextClose REF2 \x12\x10 REF_END1 
 END_FILE

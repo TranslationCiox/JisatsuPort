@@ -12,8 +12,7 @@ DIALOGUE_1 \xb0\xb3 DIALOGUE_2 \xb7\x00\x00
 御堂\n　「まだ覚悟が決まらねえのかよ、虎菱？」@
 拓司\n　「覚悟？\p……それは誰かを殺してでも生き残るってことか？」\
 
-\x00\x00\x00 DIALOGUE_END J\x00 SEQ01
-LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 F\x03 REF_END2 
+\x00\x00\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 F\x03 REF_END2 
 LOAD2 TextOn REF1 t\x03 REF_END1 
 LOAD3 SCE105_002 REF6 \x90\x03 REF_END2 
 DIALOGUE_1 \xb4\xb3 DIALOGUE_2 \x88\x00\x00
@@ -26,8 +25,8 @@ DIALOGUE_1 \xb4\xb3 DIALOGUE_2 \x88\x00\x00
 頬の内側は、まるで砂漠みたいにカラカラだ。@
 拓司は舌先で唇を湿らせ、震える声でいった。\
 
-\x00\x00\x00 DIALOGUE_END \xd4\x03 SEQ01
-\x1fF\x03 CALL3 t\x03 REF_END1 
+\x00\x00\x00 DIALOGUE_END \xd4\x03
+CALL1 F\x03 CALL3 t\x03 REF_END1 
 LOAD3 SCE105_003 REF6 .\x06 REF_END2 
 DIALOGUE_1 \xb8\xb3 DIALOGUE_2 q\x00\x00
  
@@ -38,8 +37,8 @@ DIALOGUE_1 \xb8\xb3 DIALOGUE_2 q\x00\x00
 なたね\n　「……」@
 \nなたねはジロリと、上目遣いに拓司を睨んだ。\
 
-\x00 DIALOGUE_END r\x06 SEQ01
-\x1fF\x03 CALL3 t\x03 REF_END1 
+\x00 DIALOGUE_END r\x06
+CALL1 F\x03 CALL3 t\x03 REF_END1 
 LOAD3 SCE105_004 REF6 p\x08 REF_END2 
 DIALOGUE_1 \xbc\xb3 DIALOGUE_2 L\x00\x00
  
@@ -51,7 +50,7 @@ DIALOGUE_1 \xbc\xb3 DIALOGUE_2 L\x00\x00
 ざー。@
 /*▲SE01　停止*/\a4,2,0,0,\nラジオのノイズだけが小さく一晩中続いていた。\
 
-\x00\x00\x00 DIALOGUE_END \xb4\x08 SEQ01
-\x1fF\x03 CALL3 t\x03 CALL2 F\x03 REF_END2 
+\x00\x00\x00 DIALOGUE_END \xb4\x08
+CALL1 F\x03 CALL3 t\x03 CALL2 F\x03 REF_END2 
 LOAD3 TextClose REF2 *\n REF_END1 
 END_FILE

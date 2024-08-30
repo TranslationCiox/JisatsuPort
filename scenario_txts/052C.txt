@@ -1,6 +1,5 @@
 START_FILE
-\xbf'\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00Z!\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x0b\x01 SEQ01
-
+\xbf'\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00Z!\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x0b\x01\x00\x0c\x02\x00\x00"
 LOAD6 .\\Data\\Script\\Bgm.Fob REF2  \x00 REF_END2 
 LOAD2 PlayCD REF1 J\x00 REF_END1 
 LOAD3 SCE052_001 REF6 f\x00 REF_END2 
@@ -20,8 +19,7 @@ DIALOGUE_1 \xe0` DIALOGUE_2 \xac\x00\x00
 円陣の中央には、ひとりの女の子が立ちすくんでいる。@
 早桃だ。\
 
-\x00 DIALOGUE_END \xaa\x00 SEQ01
-LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 z\x03 REF_END2 
+\x00 DIALOGUE_END \xaa\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 z\x03 REF_END2 
 LOAD2 TextOn REF1 \xa8\x03 REF_END1 
 LOAD3 SCE052_002 REF6 \xc4\x03 REF_END2 
 DIALOGUE_1 \xe4` DIALOGUE_2 ]\x00\x00
@@ -35,8 +33,8 @@ DIALOGUE_1 \xe4` DIALOGUE_2 ]\x00\x00
 学生\n　「聞いたことある。\pアレだろ、ホントの兄妹じゃないって」@
 学生\n　「へえ、そうなんだ、へへ」\
 
-\x00\x00\x00 DIALOGUE_END \x08\x04 SEQ01
-\x1fz\x03 CALL3 \xa8\x03 REF_END1 
+\x00\x00\x00 DIALOGUE_END \x08\x04
+CALL1 z\x03 CALL3 \xa8\x03 REF_END1 
 LOAD3 SCE052_003 REF6 \xb6\x05 REF_END2 
 DIALOGUE_1 \xe8` DIALOGUE_2 l\x00\x00
  
@@ -51,8 +49,8 @@ DIALOGUE_1 \xe8` DIALOGUE_2 l\x00\x00
 \n学生\n　「教員ン？」@
 \nひとりが素っ頓狂な声を上げると、他の者がゲラゲラと笑い声で\n応えた。\
 
-\x00\x00\x00 DIALOGUE_END \xfa\x05 SEQ01
-\x1fz\x03 CALL3 \xa8\x03 REF_END1 
+\x00\x00\x00 DIALOGUE_END \xfa\x05
+CALL1 z\x03 CALL3 \xa8\x03 REF_END1 
 LOAD3 SCE052_004 REF6 \xe4\x07 REF_END2 
 DIALOGUE_1 \xec` DIALOGUE_2 {\x00\x00
  
@@ -67,8 +65,8 @@ DIALOGUE_1 \xec` DIALOGUE_2 {\x00\x00
 　　どんよりしちゃってるんだよ、このクラス。@
 　　そんなところで勉強とか青春なんて前向きにやってられるか？\n　　\pやれねえんだよ！」\
 
-\x00\x00\x00 DIALOGUE_END (\x08 SEQ01
-\x1fz\x03 CALL3 \xa8\x03 REF_END1 
+\x00\x00\x00 DIALOGUE_END (\x08
+CALL1 z\x03 CALL3 \xa8\x03 REF_END1 
 LOAD3 SCE052_005 REF6 N\n REF_END2 
 DIALOGUE_1 \xf0` DIALOGUE_2 \x96\x00\x00
  
@@ -86,8 +84,8 @@ DIALOGUE_1 \xf0` DIALOGUE_2 \x96\x00\x00
 　　そんなの、バレバレだよ！@
 　　俺たちゃアホじゃねえっつーんだよッ！」\
 
-\x00 DIALOGUE_END \x92\n SEQ01
-\x1fz\x03 CALL3 \xa8\x03 REF_END1 
+\x00 DIALOGUE_END \x92\n
+CALL1 z\x03 CALL3 \xa8\x03 REF_END1 
 LOAD3 SCE052_006 REF6 $\r REF_END2 
 DIALOGUE_1 \xf4` DIALOGUE_2 \x93\x00\x00
  
@@ -102,8 +100,8 @@ DIALOGUE_1 \xf4` DIALOGUE_2 \x93\x00\x00
 　　否定して、断罪した！\p　泣いてたよ、あいつ。@
 　　泣いてごめんなさいごめんなさいっていって、窓まで走って\n　　いって、そのままトップロープ越えのトペ・スイシーダだよ！\n　　\pで、今度は虎菱の番ってわけだ！」\
 
-\x00 DIALOGUE_END h\r SEQ01
-\x1fz\x03 CALL3 \xa8\x03 REF_END1 
+\x00 DIALOGUE_END h\r
+CALL1 z\x03 CALL3 \xa8\x03 REF_END1 
 LOAD3 SCE052_007 REF6 \xee\x0f REF_END2 
 DIALOGUE_1 \xf8` DIALOGUE_2 \x90\x00\x00
  
@@ -120,8 +118,8 @@ DIALOGUE_1 \xf8` DIALOGUE_2 \x90\x00\x00
 \n拓司は一喝した。@
 しかし、早桃の言葉が、次の言葉をさえぎった。\
 
-\x00\x00\x00 DIALOGUE_END 2\x10 SEQ01
-\x1fz\x03 CALL3 \xa8\x03 REF_END1 
+\x00\x00\x00 DIALOGUE_END 2\x10
+CALL1 z\x03 CALL3 \xa8\x03 REF_END1 
 LOAD3 SCE052_008 REF6 \xac\x12 REF_END2 
 DIALOGUE_1 \xfc` DIALOGUE_2 f\x00\x00
  
@@ -136,8 +134,8 @@ DIALOGUE_1 \xfc` DIALOGUE_2 f\x00\x00
 有罪、有罪、有罪！@
 有罪、有罪、有罪！\
 
-\x00 DIALOGUE_END \xf0\x12 SEQ01
-\x1fz\x03 CALL3 \xa8\x03 REF_END1 
+\x00 DIALOGUE_END \xf0\x12
+CALL1 z\x03 CALL3 \xa8\x03 REF_END1 
 LOAD3 SCE052_009 REF6 \xc2\x14 REF_END2 
 DIALOGUE_1 \x00a DIALOGUE_2 %\x00\x00
  
@@ -148,8 +146,8 @@ DIALOGUE_1 \x00a DIALOGUE_2 %\x00\x00
 学生\n　「死ねよ」@
 学生\n　「死ねよ」\
 
-\x00\x00\x00 DIALOGUE_END \x06\x15 SEQ01
-\x1fz\x03 CALL3 \xa8\x03 REF_END1 
+\x00\x00\x00 DIALOGUE_END \x06\x15
+CALL1 z\x03 CALL3 \xa8\x03 REF_END1 
 LOAD3 SCE052_010 REF6 \xd4\x15 REF_END2 
 DIALOGUE_1 \x04a DIALOGUE_2 \x96\x00\x00
  
@@ -160,8 +158,8 @@ DIALOGUE_1 \x04a DIALOGUE_2 \x96\x00\x00
 　ネ……足を踏み降ろす。@
 \n　シネシネシネシネシシネシネシネシネシネシネシネシネシネシ\nネシネシネシネシネシネ\n　ドンガドンガドンガドンドンガドンガドンガドンガドンガドン\nガドンガドンガドンガドンガドンガ\
 
-\x00 DIALOGUE_END \x18\x16 SEQ01
-\x1fz\x03 CALL3 \xa8\x03 REF_END1 
+\x00 DIALOGUE_END \x18\x16
+CALL1 z\x03 CALL3 \xa8\x03 REF_END1 
 LOAD3 SCE052_011 REF6 \xaa\x18 REF_END2 
 DIALOGUE_1 \x08a DIALOGUE_2 \xb4\x00\x00
  
@@ -176,9 +174,9 @@ DIALOGUE_1 \x08a DIALOGUE_2 \xb4\x00\x00
 　耐えられるはずがない。\p早桃は円陣の中央で耳を覆い、しゃ\n　がみこんでしまった。@
 \n早桃\n　「ごめんなさい……ごめんなさい……ごめんなさい……」\
 
-\x00\x00\x00 DIALOGUE_END \xee\x18 SEQ01
-\x1fz\x03 CALL3 \xa8\x03 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\n\x01 SEQ01
-\x1f \x00 CALL3 J\x00 REF_END1 
+\x00\x00\x00 DIALOGUE_END \xee\x18
+CALL1 z\x03 CALL3 \xa8\x03 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\n\x01
+CALL1  \x00 CALL3 J\x00 REF_END1 
 LOAD3 SCE052_012 REF6 ,\x1c REF_END2 
 DIALOGUE_1 \x0ca DIALOGUE_2 \x9b\x00\x00
  
@@ -191,8 +189,8 @@ DIALOGUE_1 \x0ca DIALOGUE_2 \x9b\x00\x00
 胸が押さえつけられて、息すらできない。いつのまにやられたの\nか、鼻から血がだくだくとあふれ出る。@
 視界が奇妙な色で明滅する。\
 
-\x00 DIALOGUE_END p\x1c SEQ01
-\x1fz\x03 CALL3 \xa8\x03 REF_END1 
+\x00 DIALOGUE_END p\x1c
+CALL1 z\x03 CALL3 \xa8\x03 REF_END1 
 LOAD3 SCE052_013 REF6 \x16\x1f REF_END2 
 DIALOGUE_1 \x10a DIALOGUE_2 g\x00\x00
  
@@ -202,7 +200,7 @@ DIALOGUE_1 \x10a DIALOGUE_2 g\x00\x00
 /*■黒　表示（ノンエフェクト）.*/\a7,-1,-1,0,\a0,200,1,0,\a6,0,0,0,/*▲BGM　停止*/\a4,-1,0,0,　やがて潮が引くように、声が収まっていった。@
 　静寂の中、バットが振り下ろされた。\
 
-\x00\x00 DIALOGUE_END Z\x1f SEQ01
-\x1fz\x03 CALL3 \xa8\x03 CALL2 z\x03 REF_END2 
+\x00\x00 DIALOGUE_END Z\x1f
+CALL1 z\x03 CALL3 \xa8\x03 CALL2 z\x03 REF_END2 
 LOAD3 TextClose REF2 <! REF_END1 
 END_FILE

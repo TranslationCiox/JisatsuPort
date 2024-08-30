@@ -9,8 +9,7 @@ DIALOGUE_1 \xc0W\x01\x0c\x00\x00\x00\x00"\x03B\x00\x00
 雲居ナタネと名乗るこの少女は、いかれているのだ。@
 おそらくはおれと同じ……この病院の患者なのだ。\
 
-\x00\x00\x00 DIALOGUE_END J\x00 SEQ01
-LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 r\x01 REF_END2 
+\x00\x00\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 r\x01 REF_END2 
 LOAD2 TextOn REF1 \xa0\x01 REF_END1 
 LOAD3 SCE210_002 REF6 \xbc\x01 REF_END2 
 DIALOGUE_1 \xc4W\x01\x0c\x00\x00\x00\x00"\x03o\x00\x00
@@ -22,8 +21,8 @@ DIALOGUE_1 \xc4W\x01\x0c\x00\x00\x00\x00"\x03o\x00\x00
 それはとても悲しい表情で、拓司の胸はズキリと痛んだ。@
 拓司は逃げるように目をそらし、ベッドに倒れ込んで毛布を頭か\nらかぶった。\
 
-\x00\x00\x00 DIALOGUE_END \x00\x02 SEQ01
-\x1fr\x01 CALL3 \xa0\x01 REF_END1 
+\x00\x00\x00 DIALOGUE_END \x00\x02
+CALL1 r\x01 CALL3 \xa0\x01 REF_END1 
 LOAD3 SCE210_003 REF6 \xf6\x03 REF_END2 
 DIALOGUE_1 \xc8W\x01\x0c\x00\x00\x00\x00"\x03G\x00\x00
  
@@ -34,8 +33,8 @@ DIALOGUE_1 \xc8W\x01\x0c\x00\x00\x00\x00"\x03G\x00\x00
 おれは狂っているんだ。@
 狂っていることを認めなければならない。\
 
-\x00\x00\x00 DIALOGUE_END :\x04 SEQ01
-\x1fr\x01 CALL3 \xa0\x01 REF_END1 
+\x00\x00\x00 DIALOGUE_END :\x04
+CALL1 r\x01 CALL3 \xa0\x01 REF_END1 
 LOAD3 SCE210_004 REF6 \x90\x05 REF_END2 
 DIALOGUE_1 \xccW\x01\x0c\x00\x00\x00\x00"\x03\xa5\x00\x00
  
@@ -50,8 +49,8 @@ DIALOGUE_1 \xccW\x01\x0c\x00\x00\x00\x00"\x03\xa5\x00\x00
 そしてそれは、いままでのすべての記憶を流し去って、新たな悪\n夢を……新たな『おれの世界』を脳髄に産み付けるのだろう。@
 やがてまたこの部屋で目覚めて、教授にすべてを否定され……\
 
-\x00\x00\x00 DIALOGUE_END \xd4\x05 SEQ01
-\x1fr\x01 CALL3 \xa0\x01 REF_END1 
+\x00\x00\x00 DIALOGUE_END \xd4\x05
+CALL1 r\x01 CALL3 \xa0\x01 REF_END1 
 LOAD3 SCE210_005 REF6 \xa2\x08 REF_END2 
 DIALOGUE_1 \xd0W\x01\x0c\x00\x00\x00\x00"\x03Z\x00\x00
  
@@ -63,8 +62,8 @@ DIALOGUE_1 \xd0W\x01\x0c\x00\x00\x00\x00"\x03Z\x00\x00
 　あるのは中心だけだ。@
 　－－そして中心こそは、狂っているおれなのだ。\
 
-\x00\x00\x00 DIALOGUE_END \xe6\x08 SEQ01
-\x1fr\x01 CALL3 \xa0\x01 REF_END1 
+\x00\x00\x00 DIALOGUE_END \xe6\x08
+CALL1 r\x01 CALL3 \xa0\x01 REF_END1 
 LOAD3 SCE210_006 REF6 \x88\n REF_END2 
 DIALOGUE_1 \xd4W\x01\x0c\x00\x00\x00\x00"\x03F\x00\x00
  
@@ -72,11 +71,10 @@ DIALOGUE_1 \xd4W\x01\x0c\x00\x00\x00\x00"\x03F\x00\x00
 ザアザアアアアアアア……@
 /*▲SE01　停止*/\a4,1,0,0,\n　拓司はなま暖かいかたまりにゆっくり飲み込まれながら、ただ\n　胎児のように身を丸めて恐怖していた。\
 
-\x00\x00\x00 DIALOGUE_END \xcc\n SEQ01
-\x1fr\x01 CALL3 \xa0\x01 REF_END1  \x1e\x00\x00\x00\x00\r\x00 REF_END2 \x0c\x02\x00\x00"
+\x00\x00\x00 DIALOGUE_END \xcc\n
+CALL1 r\x01 CALL3 \xa0\x01 REF_END1  \x1e\x00\x00\x00\x00\r\x00 REF_END2 \x0c\x02\x00\x00"
 LOAD6 .\\Data\\Script\\Bgm.Fob REF2 8\x0c REF_END2 
-LOAD2 SeStop REF1 b\x0c REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00 SEQ01
-
+LOAD2 SeStop REF1 b\x0c REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00\x00\x0c\x02\x00\x00"
 LOAD6 .\\Data\\Script\\Bg.Fob REF3 \x98\x0c REF_END2 
 LOAD4 BgAutoFadeIn REF3 \xc2\x0c CALL2 r\x01 REF_END2 
 LOAD3 TextClose REF2 \xf2\x0c REF_END1 

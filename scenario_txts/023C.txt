@@ -18,12 +18,10 @@ DIALOGUE_1 \x903 DIALOGUE_2 \x87\x00\x00
 紅葉の呼吸音。@
 紅葉はひどく消耗している。\p乱れた髪の毛が頬に貼り付いている。\n\p泣きはらした目がはれぼったい。\p顔は汗と油でてらてらと光ってい\nるが、唇は対照的に乾いている……。\
 
-\x00 DIALOGUE_END \x90\x00 SEQ01
-LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xcc\x02 REF_END2 
-LOAD2 TextOn REF1 \xfa\x02 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x05\x01 SEQ01
-\x1f\x06\x00 REF_END2 
-LOAD2 PlayCD REF1 <\x03 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1eO\x00 SEQ01
-
+\x00 DIALOGUE_END \x90\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xcc\x02 REF_END2 
+LOAD2 TextOn REF1 \xfa\x02 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x05\x01
+CALL1 \x06\x00 REF_END2 
+LOAD2 PlayCD REF1 <\x03 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1eO\x00\x00\x0c\x02\x00\x00"
 LOAD6 .\\Data\\Script\\Bg.Fob REF3 r\x03 REF_END2 
 LOAD4 BgAutoFadeIn REF3 \x9c\x03 REF_END1 
 LOAD3 SCE023_002 REF6 \xc0\x03 REF_END2 
@@ -41,8 +39,8 @@ DIALOGUE_1 \x943 DIALOGUE_2 \x9a\x00\x00
 逃げられないように。@
 すべてをうち砕くために。\
 
-\x00 DIALOGUE_END \x04\x04 SEQ01
-\x1f\xcc\x02 CALL3 \xfa\x02 REF_END1 
+\x00 DIALOGUE_END \x04\x04
+CALL1 \xcc\x02 CALL3 \xfa\x02 REF_END1 
 LOAD3 SCE023_003 REF6 \xa6\x06 REF_END2 
 DIALOGUE_1 \x983 DIALOGUE_2 \xac\x00\x00
  
@@ -58,8 +56,8 @@ DIALOGUE_1 \x983 DIALOGUE_2 \xac\x00\x00
 　　まあ、手は動くようにしておいてやるからな。@
 　　道具としていろいろ使えるからさ……いろいろな」\
 
-\x00\x00\x00 DIALOGUE_END \xea\x06 SEQ01
-\x1f\xcc\x02 CALL3 \xfa\x02 REF_END1 
+\x00\x00\x00 DIALOGUE_END \xea\x06
+CALL1 \xcc\x02 CALL3 \xfa\x02 REF_END1 
 LOAD3 SCE023_004 REF6 \xd4\t REF_END2 
 DIALOGUE_1 \x9c3 DIALOGUE_2 y\x00\x00
  
@@ -72,8 +70,8 @@ DIALOGUE_1 \x9c3 DIALOGUE_2 y\x00\x00
 拓司\n　「くさいな」@
 紅葉\n　「……やだ……ひどいこといわないで……」\
 
-\x00\x00\x00 DIALOGUE_END \x18\n SEQ01
-\x1f\xcc\x02 CALL3 \xfa\x02 REF_END1 
+\x00\x00\x00 DIALOGUE_END \x18\n
+CALL1 \xcc\x02 CALL3 \xfa\x02 REF_END1 
 LOAD3 SCE023_005 REF6 6\x0c REF_END2 
 DIALOGUE_1 \xa03 DIALOGUE_2 \xa1\x00\x00
  
@@ -85,8 +83,8 @@ DIALOGUE_1 \xa03 DIALOGUE_2 \xa1\x00\x00
 拓司\n　「うるさいぞ、ワキガ女」@
 紅葉\n　「もういいでしょ！　私の人生メチャクチャにして……もう満足\n　　でしょ？！」\
 
-\x00 DIALOGUE_END z\x0c SEQ01
-\x1f\xcc\x02 CALL3 \xfa\x02 REF_END1 
+\x00 DIALOGUE_END z\x0c
+CALL1 \xcc\x02 CALL3 \xfa\x02 REF_END1 
 LOAD3 SCE023_006 REF6 8\x0f REF_END2 
 DIALOGUE_1 \xa43 DIALOGUE_2 \x9d\x00\x00
  
@@ -96,8 +94,8 @@ DIALOGUE_1 \xa43 DIALOGUE_2 \x9d\x00\x00
 \n拓司は足の裏で、紅葉の股間をグイと踏みつけた。\p紅葉は身をよじ\nって避けようとするが、もうその気力も失せたのか、すぐにぐった\nりとなすがままになってしまう。@
 拓司は、勝ち誇ったように、紅葉の柔らかい恥丘を踏みにじる。@
 屈辱を与えるためでもあるが、もうひとつ、紅葉の尿意を促す意味\nもある。\pずっと排尿を我慢し続けてきた紅葉はもはや限界なのだ。\n\w\z
-\x00\x00\x00 DIALOGUE_END |\x0f SEQ01
-\x1f\xcc\x02 CALL3 \xfa\x02 REF_END1 
+\x00\x00\x00 DIALOGUE_END |\x0f
+CALL1 \xcc\x02 CALL3 \xfa\x02 REF_END1 
 LOAD3 SCE023_007 REF6 *\x12 REF_END2 
 DIALOGUE_1 \xa83 DIALOGUE_2 a\x00\x00
  
@@ -110,8 +108,8 @@ DIALOGUE_1 \xa83 DIALOGUE_2 a\x00\x00
 紅葉\n　「……お願い」@
 拓司\n　「いやだね。いま、おれの前でしてみせろよ」\
 
-\x00\x00\x00 DIALOGUE_END n\x12 SEQ01
-\x1f\xcc\x02 CALL3 \xfa\x02 REF_END1 
+\x00\x00\x00 DIALOGUE_END n\x12
+CALL1 \xcc\x02 CALL3 \xfa\x02 REF_END1 
 LOAD3 SCE023_008 REF6 ,\x14 REF_END2 
 DIALOGUE_1 \xac3 DIALOGUE_2 n\x00\x00
  
@@ -121,8 +119,8 @@ DIALOGUE_1 \xac3 DIALOGUE_2 n\x00\x00
 紅葉の喉がごくりと隆起した。@
 \n紅葉\n　「水……頂戴……」\
 
-\x00 DIALOGUE_END p\x14 SEQ01
-\x1f\xcc\x02 CALL3 \xfa\x02 REF_END1 
+\x00 DIALOGUE_END p\x14
+CALL1 \xcc\x02 CALL3 \xfa\x02 REF_END1 
 LOAD3 SCE023_009 REF6 b\x16 REF_END2 
 DIALOGUE_1 \xb03 DIALOGUE_2 k\x00\x00
  
@@ -135,8 +133,8 @@ DIALOGUE_1 \xb03 DIALOGUE_2 k\x00\x00
 拓司\n　「だからいま、おれの目の前で漏らしてみせろよ。\pどうせ限界な\n　　んだろう？\p　一生我慢できるはずはないんだ。いずれ漏らす。\n　　\pどうせ漏らすなら水と引き替えの方がいいんじゃないのか？\n　　」@
 紅葉\n　「……」\
 
-\x00\x00\x00 DIALOGUE_END \xa6\x16 SEQ01
-\x1f\xcc\x02 CALL3 \xfa\x02 REF_END1 
+\x00\x00\x00 DIALOGUE_END \xa6\x16
+CALL1 \xcc\x02 CALL3 \xfa\x02 REF_END1 
 LOAD3 SCE023_010 REF6 \x8c\x18 REF_END2 
 DIALOGUE_1 \xb43 DIALOGUE_2 \x91\x00\x00
  
@@ -151,8 +149,8 @@ DIALOGUE_1 \xb43 DIALOGUE_2 \x91\x00\x00
 耐えきれないのか、顔をうつむきにして拓司から表情を隠そうとす\nる。@
 しかし拓司は許さない。\p顎を掴んで無理矢理顔を上向きにし、冷酷\nに笑う。\
 
-\x00\x00\x00 DIALOGUE_END \xd0\x18 SEQ01
-\x1f\xcc\x02 CALL3 \xfa\x02 REF_END1 
+\x00\x00\x00 DIALOGUE_END \xd0\x18
+CALL1 \xcc\x02 CALL3 \xfa\x02 REF_END1 
 LOAD3 SCE023_011 REF6 N\x1b REF_END2 
 DIALOGUE_1 \xb83 DIALOGUE_2 \xb9\x00\x00
  
@@ -164,8 +162,8 @@ DIALOGUE_1 \xb83 DIALOGUE_2 \xb9\x00\x00
 紅葉\n　「う……ううっ」@
 拓司\n　「おいおいおいおーい、まだ出るのか？\p　よっぽどおれに見られ\n　　るのが嬉しいんだな。\p体中から汗のにおいさせて、ションベン\n　　もらして……おまえ異常なんじゃないか？」\
 
-\x00 DIALOGUE_END \x92\x1b SEQ01
-\x1f\xcc\x02 CALL3 \xfa\x02 REF_END1 
+\x00 DIALOGUE_END \x92\x1b
+CALL1 \xcc\x02 CALL3 \xfa\x02 REF_END1 
 LOAD3 SCE023_012 REF6 \xb0\x1e REF_END2 
 DIALOGUE_1 \xbc3 DIALOGUE_2 \x97\x00\x00
  
@@ -176,8 +174,8 @@ DIALOGUE_1 \xbc3 DIALOGUE_2 \x97\x00\x00
 \n紅葉の顔にわずかに安堵の色が生まれる。\pしかしそれは、すぐに絶\n望に取って代わられた。@
 拓司はおもむろにペ○スを引きずり出し、先端を紅葉の身体に定め\nた。\
 
-\x00 DIALOGUE_END \xf4\x1e SEQ01
-\x1f\xcc\x02 CALL3 \xfa\x02 REF_END1 
+\x00 DIALOGUE_END \xf4\x1e
+CALL1 \xcc\x02 CALL3 \xfa\x02 REF_END1 
 LOAD3 SCE023_013 REF6 \x8a! REF_END2 
 DIALOGUE_1 \xc03 DIALOGUE_2 v\x00\x00
  
@@ -189,8 +187,8 @@ DIALOGUE_1 \xc03 DIALOGUE_2 v\x00\x00
 \n尿道から迸った黄色い液体が身をよじらせた紅葉の肩に直撃する。\n\p拓司は狙いを修正して、紅葉の胸のあたりめがけて放尿を続けた。\n\pびしゃびしゃと黄色い飛沫が散る。\p白い制服が、あっというまに汚\n液で染められていく。@
 \n紅葉　「う……ううっ……」\
 
-\x00\x00\x00 DIALOGUE_END \xce! SEQ01
-\x1f\xcc\x02 CALL3 \xfa\x02 REF_END1 
+\x00\x00\x00 DIALOGUE_END \xce!
+CALL1 \xcc\x02 CALL3 \xfa\x02 REF_END1 
 LOAD3 SCE023_014 REF6 \xe0# REF_END2 
 DIALOGUE_1 \xc43 DIALOGUE_2 d\x00\x00
  
@@ -198,8 +196,8 @@ DIALOGUE_1 \xc43 DIALOGUE_2 d\x00\x00
 拓司\n　「少しは抵抗しろよ。つまらないだろ？」@
 \n拓司はペ○スの先端を徐々に上に上げていく。\pそれに従って、ほと\nばしり出る尿は、早桃の体を這うように昇っていき、やがて黒い髪\nの毛に降り注いだ。\
 
-\x00 DIALOGUE_END $$ SEQ01
-\x1f\xcc\x02 CALL3 \xfa\x02 REF_END1 
+\x00 DIALOGUE_END $$
+CALL1 \xcc\x02 CALL3 \xfa\x02 REF_END1 
 LOAD3 SCE023_015 REF6 \xee% REF_END2 
 DIALOGUE_1 \xc83 DIALOGUE_2 k\x00\x00
  
@@ -208,9 +206,9 @@ DIALOGUE_1 \xc83 DIALOGUE_2 k\x00\x00
 　　顔を上げて口を開け！　舌を出してみせろ！\p　ほら！　早く\n　　しないとしょんべん終わっちまうぞ？！\p　おもらしまでしてみ\n　　せた努力が無駄になっちまってもいいのか？」@
 紅葉\n　「う……うむっ……うぷぷ……」\
 
-\x00\x00\x00 DIALOGUE_END 2& SEQ01
-\x1f\xcc\x02 CALL3 \xfa\x02 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1eP\x00 SEQ01
-\x1fr\x03 CALL3 \x9c\x03 REF_END1 
+\x00\x00\x00 DIALOGUE_END 2&
+CALL1 \xcc\x02 CALL3 \xfa\x02 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1eP\x00
+CALL1 r\x03 CALL3 \x9c\x03 REF_END1 
 LOAD3 SCE023_016 REF6 L( REF_END2 
 DIALOGUE_1 \xcc3 DIALOGUE_2 \x85\x00\x00
  
@@ -219,8 +217,8 @@ DIALOGUE_1 \xcc3 DIALOGUE_2 \x85\x00\x00
 紅葉\n　「ぶぷっ……うんん……ごぼぼっ……」@
 拓司\n　「よし……こぼさず飲めよ。\p腹の中までおれのしょんべんを染み\n　　渡らせてやるよ。\p内臓までおしっこまみれの不潔女だ、お前は\n　　！」\
 
-\x00 DIALOGUE_END \x90( SEQ01
-\x1f\xcc\x02 CALL3 \xfa\x02 REF_END1 
+\x00 DIALOGUE_END \x90(
+CALL1 \xcc\x02 CALL3 \xfa\x02 REF_END1 
 LOAD3 SCE023_017 REF6 \xde* REF_END2 
 DIALOGUE_1 \xd03 DIALOGUE_2 \xbc\x00\x00
  
@@ -229,8 +227,8 @@ DIALOGUE_1 \xd03 DIALOGUE_2 \xbc\x00\x00
 \n拓司\n　「……そうだ、早桃にも使わせてやるか？\p　どうせなら義兄妹の\n　　しょんべんの飲み比べもしてみたいだろ？\p　義兄妹っていって\n　　も血が繋がってないから、味はぜんぜん違うと思うぞ？@
 　　それとも毎日同じようなもの食ってるんだから、味も同じなの\n　　かな？\p　ははは、嬉しいだろ？\p　ただ、お前んちの親が心配す\n　　ると気の毒だからな。\p立派に便器として生きていますって、写\n　　真に撮って送ってやるよ」\
 
-\x00 DIALOGUE_END "+ SEQ01
-\x1f\xcc\x02 CALL3 \xfa\x02 REF_END1 
+\x00 DIALOGUE_END "+
+CALL1 \xcc\x02 CALL3 \xfa\x02 REF_END1 
 LOAD3 SCE023_018 REF6 L. REF_END2 
 DIALOGUE_1 \xd43 DIALOGUE_2 \x9b\x00\x00
  
@@ -241,8 +239,8 @@ DIALOGUE_1 \xd43 DIALOGUE_2 \x9b\x00\x00
 \n　ザザザ……ザザッ……\pザアザザザ……ザアアアアア……@
 　ザアザアアアアアアア……\
 
-\x00 DIALOGUE_END \x90. SEQ01
-\x1f\xcc\x02 CALL3 \xfa\x02 REF_END1 
+\x00 DIALOGUE_END \x90.
+CALL1 \xcc\x02 CALL3 \xfa\x02 REF_END1 
 LOAD3 SCE023_019 REF6 61 REF_END2 
 DIALOGUE_1 \xd83 DIALOGUE_2 1\x00\x00
  
@@ -253,8 +251,8 @@ DIALOGUE_1 \xd83 DIALOGUE_2 1\x00\x00
 \n　ザザザ……ザザッ……\pザアザザザ……ザアアアアア……@
 　ザアザアアアアアアア……\
 
-\x00 DIALOGUE_END z1 SEQ01
-\x1f\xcc\x02 CALL3 \xfa\x02 CALL2 \x06\x00 CALL3 0\x00 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00 SEQ01
-\x1fr\x03 CALL3 \x9c\x03 CALL2 \xcc\x02 REF_END2 
+\x00 DIALOGUE_END z1
+CALL1 \xcc\x02 CALL3 \xfa\x02 CALL2 \x06\x00 CALL3 0\x00 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00
+CALL1 r\x03 CALL3 \x9c\x03 CALL2 \xcc\x02 REF_END2 
 LOAD3 TextClose REF2 \xd22 REF_END1 
 END_FILE

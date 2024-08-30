@@ -5,8 +5,7 @@ DIALOGUE_1 \xa0\xa5 DIALOGUE_2 \x11\x00\x00
  
 \n\n\n\n\n\n\n\n\n\n　　　　　　　　　　　　　『３日目』\
 
-\x00\x00\x00 DIALOGUE_END J\x00 SEQ01
-LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xae\x00 REF_END2 
+\x00\x00\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xae\x00 REF_END2 
 LOAD2 TextOn REF1 \xdc\x00 REF_END1 
 LOAD3 SCE096_002 REF6 \xf8\x00 REF_END2 
 DIALOGUE_1 \xa4\xa5 DIALOGUE_2 q\x00\x00
@@ -20,8 +19,8 @@ DIALOGUE_1 \xa4\xa5 DIALOGUE_2 q\x00\x00
 なたね\n　「……水は無駄にはできません」\w\n拓司\n　「だろうね。\pでも、無駄にするわけじゃない。@
 　　身体を拭くんだ」\
 
-\x00 DIALOGUE_END <\x01 SEQ01
-\x1f\xae\x00 CALL3 \xdc\x00 REF_END1 
+\x00 DIALOGUE_END <\x01
+CALL1 \xae\x00 CALL3 \xdc\x00 REF_END1 
 LOAD3 SCE096_003 REF6 :\x03 REF_END2 
 DIALOGUE_1 \xa8\xa5 DIALOGUE_2 i\x00\x00
  
@@ -30,12 +29,10 @@ DIALOGUE_1 \xa8\xa5 DIALOGUE_2 i\x00\x00
 なたね\n　「……そう。\pリーダーはあなただから」@
 \n　なたねは、準備室から水の入ったポリタンクと、新しいタオル\nを人数分運び出してきた。\p全員で協力して実験器具が詰まった\n棚を移動して壁を作り、そこを即席の『シャワールーム』とした。\n\pもちろん、女性陣のプライバシーを守るためである。\
 
-\x00 DIALOGUE_END ~\x03 SEQ01
-\x1f\xae\x00 CALL3 \xdc\x00 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x1f\x00 SEQ01
-
+\x00 DIALOGUE_END ~\x03
+CALL1 \xae\x00 CALL3 \xdc\x00 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x1f\x00\x00\x0c\x02\x00\x00"
 LOAD6 .\\Data\\Script\\Bg.Fob REF3 v\x05 REF_END2 
-LOAD4 BgAutoFadeIn REF3 \xa0\x05 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x07\x01 SEQ01
-
+LOAD4 BgAutoFadeIn REF3 \xa0\x05 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x07\x01\x00\x0c\x02\x00\x00"
 LOAD6 .\\Data\\Script\\Bgm.Fob REF2 \xde\x05 REF_END2 
 LOAD2 PlayCD REF1 \x08\x06 REF_END1 
 LOAD3 SCE096_004 REF6 $\x06 REF_END2 
@@ -50,8 +47,8 @@ DIALOGUE_1 \xac\xa5 DIALOGUE_2 q\x00\x00
 紅葉\n　「わっ！　バカ！\p　触るなっ！」@
 錦城\n　「ふふふ」\
 
-\x00\x00\x00 DIALOGUE_END h\x06 SEQ01
-\x1f\xae\x00 CALL3 \xdc\x00 REF_END1 
+\x00\x00\x00 DIALOGUE_END h\x06
+CALL1 \xae\x00 CALL3 \xdc\x00 REF_END1 
 LOAD3 SCE096_005 REF6 f\x08 REF_END2 
 DIALOGUE_1 \xb0\xa5 DIALOGUE_2 p\x00\x00
  
@@ -62,8 +59,8 @@ DIALOGUE_1 \xb0\xa5 DIALOGUE_2 p\x00\x00
 　　犯すぞ、まったく！」@
 \n　言葉は汚いが、御堂の声もどこか明るい。\pひんやりとした水の\n冷たさが、全員の気分を高揚させている。\pなんとなく合宿をして\nいるような、そんな感じすらある。\
 
-\x00\x00\x00 DIALOGUE_END \xaa\x08 SEQ01
-\x1f\xae\x00 CALL3 \xdc\x00 REF_END1 
+\x00\x00\x00 DIALOGUE_END \xaa\x08
+CALL1 \xae\x00 CALL3 \xdc\x00 REF_END1 
 LOAD3 SCE096_006 REF6 \xa4\n REF_END2 
 DIALOGUE_1 \xb4\xa5 DIALOGUE_2 y\x00\x00
  
@@ -75,7 +72,7 @@ DIALOGUE_1 \xb4\xa5 DIALOGUE_2 y\x00\x00
 拓司\n　「……そうか」@
 \n　誰が御堂に投票したのだろう……拓司はその疑問を頭から無理\nに追い出した。\pとりあえずいまくらいは、さっぱりと明るい気持\nちでいたかった。\
 
-\x00\x00\x00 DIALOGUE_END \xe8\n SEQ01
-\x1f\xae\x00 CALL3 \xdc\x00 CALL2 \xae\x00 REF_END2 
+\x00\x00\x00 DIALOGUE_END \xe8\n
+CALL1 \xae\x00 CALL3 \xdc\x00 CALL2 \xae\x00 REF_END2 
 LOAD3 TextClose REF2 \x12\r REF_END1 
 END_FILE

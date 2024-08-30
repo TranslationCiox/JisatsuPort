@@ -10,14 +10,13 @@ DIALOGUE_1 0V\x01\x0c\x00\x00\x00\x00"\x03\xdc\x00\x00
 \n壮大な話である。@
 あるいは壮大な嘘というべきか？\
 
-\x00\x00\x00 DIALOGUE_END J\x00 SEQ01
-LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xda\x03 REF_END2 
+\x00\x00\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xda\x03 REF_END2 
 LOAD2 TextOn REF1 \x08\x04 REF_END1 \x03#\x00\x00
 CHOICE
 「『教授が語る世界』をリアルと信じる」\n「『学校に籠城する世界』をリアルと信じる」\n「『君の語る世界』をリアルと信じる」\n\l0,3,
 ENDCHOICE
 
-\x00\x00\x00 DIALOGUE_END $\x04 SEQ01
-\x1f\xda\x03 CALL3 \x08\x04 CALL2 \xda\x03 REF_END2 
+\x00\x00\x00 DIALOGUE_END $\x04
+CALL1 \xda\x03 CALL3 \x08\x04 CALL2 \xda\x03 REF_END2 
 LOAD3 TextClose REF2 \xf6\x04 REF_END1 
 END_FILE

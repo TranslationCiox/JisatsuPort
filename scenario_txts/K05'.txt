@@ -1,9 +1,7 @@
 START_FILE
-\x84\x13\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xb4\x0f\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00 SEQ01
-
+\x84\x13\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xb4\x0f\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00\x00\x0c\x02\x00\x00"
 LOAD6 .\\Data\\Script\\Bg.Fob REF3  \x00 REF_END2 
-LOAD4 BgAutoFadeIn REF3 J\x00 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x04\x01 SEQ01
-
+LOAD4 BgAutoFadeIn REF3 J\x00 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x04\x01\x00\x0c\x02\x00\x00"
 LOAD6 .\\Data\\Script\\Bgm.Fob REF2 \x88\x00 REF_END2 
 LOAD2 PlayCD REF1 \xb2\x00 REF_END1 
 LOAD3 SCEK05_A01 REF6 \xce\x00 REF_END2 
@@ -19,8 +17,7 @@ DIALOGUE_1 \xa8\xa6\x01\x0c\x00\x00\x00\x00"\x03\xb0\x00\x00
 どうすればもっと深くゆきと繋がれるのか。@
 私は真剣に考えた。@
 そしてついに、秘密の共有こそが繋がりを深くする鍵に違いない、\nと思い至った。\w\z
-\x00 DIALOGUE_END \x12\x01 SEQ01
-LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xf2\x03 REF_END2 
+\x00 DIALOGUE_END \x12\x01\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xf2\x03 REF_END2 
 LOAD2 TextOn REF1  \x04 REF_END1 
 LOAD3 SCEK05_A02 REF6 <\x04 REF_END2 
 DIALOGUE_1 \xac\xa6\x01\x0c\x00\x00\x00\x00"\x03R\x00\x00
@@ -29,8 +26,8 @@ DIALOGUE_1 \xac\xa6\x01\x0c\x00\x00\x00\x00"\x03R\x00\x00
 それが鎖となれば、私たちはもっときつく互いを縛り合えるよう\nな気がした。@
 縛る……そう、私はゆきに縛ってほしかったし、ゆきを縛りたか\nった。@
 二度と逃げられないくらいに互いを縛り合って、深い海の底に一\n緒に沈んでいきたかった。\w\z
-\x00\x00\x00 DIALOGUE_END \x80\x04 SEQ01
-\x1f\xf2\x03 CALL3  \x04 REF_END1 
+\x00\x00\x00 DIALOGUE_END \x80\x04
+CALL1 \xf2\x03 CALL3  \x04 REF_END1 
 LOAD3 SCEK05_A03 REF6 \x02\x06 REF_END2 
 DIALOGUE_1 \xb0\xa6\x01\x0c\x00\x00\x00\x00"\x03\x9e\x00\x00
  
@@ -43,8 +40,8 @@ DIALOGUE_1 \xb0\xa6\x01\x0c\x00\x00\x00\x00"\x03\x9e\x00\x00
 ゆきのなかには、私が知らないゆきがいる。@
 私はそれを知りたかった。\pゆきのすべてが。@
 結局、私の熱意がゆきを説き伏せる形となった。\w\z
-\x00 DIALOGUE_END F\x06 SEQ01
-\x1f\xf2\x03 CALL3  \x04 REF_END1 
+\x00 DIALOGUE_END F\x06
+CALL1 \xf2\x03 CALL3  \x04 REF_END1 
 LOAD3 SCEK05_A04 REF6 \xf8\x08 REF_END2 
 DIALOGUE_1 \xb4\xa6\x01\x0c\x00\x00\x00\x00"\x03I\x00\x00
  
@@ -54,8 +51,8 @@ DIALOGUE_1 \xb4\xa6\x01\x0c\x00\x00\x00\x00"\x03I\x00\x00
 けれどもゆきは私を赦してくれた。\pそういうことだ。@
 そしてゆきの番だった。@
 \n私はゆきに連れられて、町はずれの歩道橋に向かった。\w\z
-\x00 DIALOGUE_END <\t SEQ01
-\x1f\xf2\x03 CALL3  \x04 CALL2 \x88\x00 REF_END2 
+\x00 DIALOGUE_END <\t
+CALL1 \xf2\x03 CALL3  \x04 CALL2 \x88\x00 REF_END2 
 LOAD2 StopCD REF1 \xa6\n REF_END1 
 LOAD3 SCEK05_A05 REF6 \xc2\n REF_END2 
 DIALOGUE_1 \xb8\xa6\x01\x0c\x00\x00\x00\x00"\x03\xe1\x00\x00
@@ -75,13 +72,13 @@ DIALOGUE_1 \xb8\xa6\x01\x0c\x00\x00\x00\x00"\x03\xe1\x00\x00
 何を話しかけても、ゆきは無言だった。@
 せいいっぱいの勇気と不安が、ゆきの顔のなかでせめぎ合ってい\nた。@
 ゆきはこんなところで何を告白するつもりなのか……？\w\z
-\x00\x00\x00 DIALOGUE_END \x06\x0b SEQ01
-\x1f\xf2\x03 CALL3  \x04 REF_END1 \x03#\x00\x00
+\x00\x00\x00 DIALOGUE_END \x06\x0b
+CALL1 \xf2\x03 CALL3  \x04 REF_END1 \x03#\x00\x00
 CHOICE
 不安が広がっていった。「もういいよ。帰ろう」と私はいった。\n好奇心が爆発しそうだった。私は沈黙に耐えながら、歩き続けた。\n\l0,2,
 ENDCHOICE
 
-\x00\x00\x00 DIALOGUE_END \xc4\x0e SEQ01
-\x1f\xf2\x03 CALL3  \x04 CALL2 \xf2\x03 REF_END2 
+\x00\x00\x00 DIALOGUE_END \xc4\x0e
+CALL1 \xf2\x03 CALL3  \x04 CALL2 \xf2\x03 REF_END2 
 LOAD3 TextClose REF2 \x96\x0f REF_END1 
 END_FILE

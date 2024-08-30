@@ -13,8 +13,7 @@ DIALOGUE_1 p\\\x01\x0c\x00\x00\x00\x00"\x03\x98\x00\x00
 真実の世界だ。@
 \n－－危ないところだった。\pおれはいま、妄想の深みから生還した\nのだ。\pやはり、最終的に戻ってくるのは……世界の中心は、ここ\nなのだ。\p『白い部屋の世界』は、夢だった。\p教授も、ナタネも、\n青い鳥も、パイプベッドも、換気ファンも、発狂した自分も、全\n部実在しない、想像の産物だったのだ。\
 
- DIALOGUE_END J\x00 SEQ01
-LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xca\x02 REF_END2 
+ DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xca\x02 REF_END2 
 LOAD2 TextOn REF1 \xf8\x02 CALL2 \xca\x02 REF_END2 
 LOAD3 TextClose REF2  \x03 REF_END1 
 END_FILE

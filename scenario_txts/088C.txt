@@ -1,6 +1,5 @@
 START_FILE
-\xbe#\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xec\x1d\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00 SEQ01
-
+\xbe#\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xec\x1d\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00\x00\x0c\x02\x00\x00"
 LOAD6 .\\Data\\Script\\Bg.Fob REF3  \x00 REF_END2 
 LOAD2 BgOn REF3 J\x00 REF_END1 
 LOAD3 SCE088_001 REF6 f\x00 REF_END2 
@@ -12,8 +11,7 @@ DIALOGUE_1  \x99 DIALOGUE_2 \x96\x00\x00
 なたね\n　「アルミホイルよ、御堂くん」@
 御堂\n　「うるせえッ！\p　とにかく、こんな狂った女を信じるのは俺は\n　　ゴメンだ！\p　お前らも信じてなんかいねえくせに、信じたフ\n　　リすんのはやめろ！\p　溺れてるからってワラ掴んでどうする\n　　よ！\p　ワラはしょせんワラなんだぞ、てめえら！」　\
 
-\x00 DIALOGUE_END \xaa\x00 SEQ01
-LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 "\x03 REF_END2 
+\x00 DIALOGUE_END \xaa\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 "\x03 REF_END2 
 LOAD2 TextOn REF1 P\x03 REF_END1 
 LOAD3 SCE088_002 REF6 l\x03 REF_END2 
 DIALOGUE_1 $\x99 DIALOGUE_2 \xaa\x00\x00
@@ -28,8 +26,8 @@ DIALOGUE_1 $\x99 DIALOGUE_2 \xaa\x00\x00
 　　最終波動は次の瞬間に襲ってくるかもしれないから。@
 　　アルミホイルは窓には張り付けないで。\p反射した波動をはじ\n　　き返す出口が必要だから。\pそうしないと波動が内部で無限反\n　　射を繰り返すことになってしまうから－－」\
 
-\x00 DIALOGUE_END \xb0\x03 SEQ01
-\x1f"\x03 CALL3 P\x03 REF_END1 
+\x00 DIALOGUE_END \xb0\x03
+CALL1 "\x03 CALL3 P\x03 REF_END1 
 LOAD3 SCE088_003 REF6 \x92\x06 REF_END2 
 DIALOGUE_1 (\x99 DIALOGUE_2 s\x00\x00
  
@@ -42,8 +40,8 @@ DIALOGUE_1 (\x99 DIALOGUE_2 s\x00\x00
 御堂\n　「なんだと……？」@
 /*▲BGM　Track06　再生*/\a2,-1,6,1,なたね\n　「私たちは団結しなければなりません。\p私たちの目的は、この\n　　非常事態下を生き残ること。\pそうでしょう？\p　だから団結\n　　を乱すような行為は控えてください」\
 
-\x00\x00 DIALOGUE_END \xd6\x06 SEQ01
-\x1f"\x03 CALL3 P\x03 REF_END1 
+\x00\x00 DIALOGUE_END \xd6\x06
+CALL1 "\x03 CALL3 P\x03 REF_END1 
 LOAD3 SCE088_004 REF6 \xdc\x08 REF_END2 
 DIALOGUE_1 ,\x99 DIALOGUE_2 \xa2\x00\x00
  
@@ -55,8 +53,8 @@ DIALOGUE_1 ,\x99 DIALOGUE_2 \xa2\x00\x00
 　　その他消耗品。\pラジオ。\p電池。\pもちろんこのアルミホイルも。\n　　\p生存に必要となる物は、隣の実験準備室の棚に隠してありま\n　　す」@
 \n　全員の視線が、さっと実験準備室の扉へと注がれる。\
 
-\x00 DIALOGUE_END  \t SEQ01
-\x1f"\x03 CALL3 P\x03 REF_END1 
+\x00 DIALOGUE_END  \t
+CALL1 "\x03 CALL3 P\x03 REF_END1 
 LOAD3 SCE088_005 REF6 \xe2\x0b REF_END2 
 DIALOGUE_1 0\x99 DIALOGUE_2 \x82\x00\x00
  
@@ -68,8 +66,8 @@ DIALOGUE_1 0\x99 DIALOGUE_2 \x82\x00\x00
 御堂\n　「……おい！」@
 錦城\n　「やめなさい、御堂くん！\p……どういうことかしら、雲居さ\n　　ん。\p御堂くんじゃなくても、あなたの話を聞いていると不安\n　　になるわ。\pわかりやすく説明してもらえないかしら？」\
 
-\x00 DIALOGUE_END &\x0c SEQ01
-\x1f"\x03 CALL3 P\x03 REF_END1 
+\x00 DIALOGUE_END &\x0c
+CALL1 "\x03 CALL3 P\x03 REF_END1 
 LOAD3 SCE088_006 REF6 h\x0e REF_END2 
 DIALOGUE_1 4\x99 DIALOGUE_2 \xb1\x00\x00
  
@@ -80,8 +78,8 @@ DIALOGUE_1 4\x99 DIALOGUE_2 \xb1\x00\x00
 錦城\n　「伝染性のある病気にかかったら……どうするかって……どう\n　　いうこと？」@
 \n　なたねはそれを無視して続けた。\p異様な緊張が、部屋に充ちて\n　いる。\
 
-\x00 DIALOGUE_END \xac\x0e SEQ01
-\x1f"\x03 CALL3 P\x03 REF_END1 
+\x00 DIALOGUE_END \xac\x0e
+CALL1 "\x03 CALL3 P\x03 REF_END1 
 LOAD3 SCE088_007 REF6 \xaa\x11 REF_END2 
 DIALOGUE_1 8\x99 DIALOGUE_2 \x99\x00\x00
  
@@ -93,8 +91,8 @@ DIALOGUE_1 8\x99 DIALOGUE_2 \x99\x00\x00
 　　私は鍵を管理しますが、管理者に従属します。\p私は管理者に\n　　はなりませんが、管理者を監視します」@
 錦城\n　「どういう意味……？」\
 
-\x00 DIALOGUE_END \xee\x11 SEQ01
-\x1f"\x03 CALL3 P\x03 REF_END1 
+\x00 DIALOGUE_END \xee\x11
+CALL1 "\x03 CALL3 P\x03 REF_END1 
 LOAD3 SCE088_008 REF6 \x8c\x14 REF_END2 
 DIALOGUE_1 <\x99 DIALOGUE_2 \xb6\x00\x00
  
@@ -104,8 +102,8 @@ DIALOGUE_1 <\x99 DIALOGUE_2 \xb6\x00\x00
 錦城\n　「……それで？」@
 なたね\n　「このように、みなさんは、他のみなさんに対して中立ではあ\n　　りません。\pすなわち、不公平な専制君主が生まれる危険性が\n　　あるわけです。\pですから、暴走を抑止する意味で、私が鍵を\n　　管理します。\p一部なりとも、私が権利を所有するというわけ\n　　です。\pもちろん、食糧の管理を受け持つ私が専制君主になる\n　　可能性はあるわけですが、その場合、力ずくでもなんでも、\n　　私から鍵を奪うことは簡単なはずです。\pもっとも、私も私な\n　　りに抵抗はさせてもらうと思いますけれど」\
 
-\x00 DIALOGUE_END \xd0\x14 SEQ01
-\x1f"\x03 CALL3 P\x03 REF_END1 
+\x00 DIALOGUE_END \xd0\x14
+CALL1 "\x03 CALL3 P\x03 REF_END1 
 LOAD3 SCE088_009 REF6 \xe2\x17 REF_END2 
 DIALOGUE_1 @\x99 DIALOGUE_2 \x8f\x00\x00
  
@@ -117,8 +115,8 @@ DIALOGUE_1 @\x99 DIALOGUE_2 \x8f\x00\x00
 なたね\n　「私は中立です」@
 錦城\n　「そうかしら？」\
 
-\x00\x00\x00 DIALOGUE_END &\x18 SEQ01
-\x1f"\x03 CALL3 P\x03 REF_END1 
+\x00\x00\x00 DIALOGUE_END &\x18
+CALL1 "\x03 CALL3 P\x03 REF_END1 
 LOAD3 SCE088_010 REF6 \x9c\x1a REF_END2 
 DIALOGUE_1 D\x99 DIALOGUE_2 d\x00\x00
  
@@ -128,14 +126,14 @@ DIALOGUE_1 D\x99 DIALOGUE_2 d\x00\x00
 /*▲BGM　停止*/\a4,-1,0,0,\n部屋中にアルミホイルを張り付けた後、無記名の投票が行われた。\n\p『管理者』を選ぶための投票だ。@
 拓司は……\
 
-\x00 DIALOGUE_END \xe0\x1a SEQ01
-\x1f"\x03 CALL3 P\x03 REF_END1 \x03!\x00\x00
+\x00 DIALOGUE_END \xe0\x1a
+CALL1 "\x03 CALL3 P\x03 REF_END1 \x03!\x00\x00
 CHOICE
 自分に投票した\n紅葉に投票した\nカンナに投票した\n早桃に投票した\n御堂に投票した\n錦城に投票した\nなたねに投票した\n\l0,7,
 ENDCHOICE
 
-\x00 DIALOGUE_END \xaa\x1c SEQ01
-\x1f"\x03 CALL3 P\x03 CALL2 "\x03 REF_END2 
+\x00 DIALOGUE_END \xaa\x1c
+CALL1 "\x03 CALL3 P\x03 CALL2 "\x03 REF_END2 
 LOAD4 GetLastTxtID REF3 t\x1d REF_END1 !\x1e\x00\x00\x00\x00\r\x00\x00\x1e\x04\x00\x00\r\x02 \x1e\x00\x00\x00\x00\r\x00\x00\x0c\x01\x00\x00"\x1f"\x03 REF_END2 
 LOAD3 TextClose REF2 \xce\x1d REF_END1 
 END_FILE

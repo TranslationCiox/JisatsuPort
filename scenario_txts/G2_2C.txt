@@ -13,10 +13,8 @@ DIALOGUE_1 l\xc5\x01\x0c\x00\x00\x00\x00"\x03b\x00\x00
 錦城\n　「こんなにたくさん出して……いやらしい子。@
 　　先生の手、こんなにべとべとにして……ふふふ」@
 \z
-\x00\x00\x00 DIALOGUE_END J\x00 SEQ01
-LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xf2\x01 REF_END2 
-LOAD2 TextOn REF1  \x02 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00 SEQ01
-
+\x00\x00\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xf2\x01 REF_END2 
+LOAD2 TextOn REF1  \x02 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00\x00\x0c\x02\x00\x00"
 LOAD6 .\\Data\\Script\\Bg.Fob REF3 V\x02 REF_END2 
 LOAD4 BgAutoFadeIn REF3 \x80\x02 REF_END1 
 LOAD6 .\\Data\\Script\\Bgm.Fob REF2 \xa4\x02 REF_END2 

@@ -15,8 +15,7 @@ DIALOGUE_1  \xa7\x01\x0c\x00\x00\x00\x00"\x03\xb8\x00\x00
 氷みたいに冷たく、冴えていた。@
 理性的判断を通過した非常識な答。@
 非常識であることを十分理解したうえで、彼女は非常識を遂行し\nようとしていた。\p怖かった。\w\z
-\x00 DIALOGUE_END J\x00 SEQ01
-LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 J\x03 REF_END2 
+\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 J\x03 REF_END2 
 LOAD2 TextOn REF1 x\x03 CALL2 J\x03 REF_END2 
 LOAD3 TextClose REF2 \xa0\x03 REF_END1 
 END_FILE

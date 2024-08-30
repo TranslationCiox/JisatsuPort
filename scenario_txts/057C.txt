@@ -10,8 +10,7 @@ DIALOGUE_1 \xb0h DIALOGUE_2 t\x00\x00
 \n学生\n　「へへ……やっぱり最初は上村か？」@
 上村\n　「私しかいないっしょ？\p　このウザキャラ潰すのは私の使命だ\n　　からさ」\
 
-\x00 DIALOGUE_END J\x00 SEQ01
-LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 :\x02 REF_END2 
+\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 :\x02 REF_END2 
 LOAD2 TextOn REF1 h\x02 REF_END1 
 LOAD3 SCE057_002 REF6 \x84\x02 REF_END2 
 DIALOGUE_1 \xb4h DIALOGUE_2 \x85\x00\x00
@@ -25,8 +24,8 @@ DIALOGUE_1 \xb4h DIALOGUE_2 \x85\x00\x00
 上村\n　「お前がいるだけで教室の空気が澱むんだよ！」@
 早桃\n　「……」\
 
-\x00 DIALOGUE_END \xc8\x02 SEQ01
-\x1f:\x02 CALL3 h\x02 REF_END1 
+\x00 DIALOGUE_END \xc8\x02
+CALL1 :\x02 CALL3 h\x02 REF_END1 
 LOAD3 SCE057_003 REF6 \x16\x05 REF_END2 
 DIALOGUE_1 \xb8h DIALOGUE_2 \x94\x00\x00
  
@@ -38,8 +37,8 @@ DIALOGUE_1 \xb8h DIALOGUE_2 \x94\x00\x00
 \n早桃\n　「儀式……身を清めて……死ねるための……儀式」@
 上村\n　「そうそう。儀式儀式」\
 
-\x00 DIALOGUE_END Z\x05 SEQ01
-\x1f:\x02 CALL3 h\x02 REF_END1 
+\x00 DIALOGUE_END Z\x05
+CALL1 :\x02 CALL3 h\x02 REF_END1 
 LOAD3 SCE057_004 REF6 \xe4\x07 REF_END2 
 DIALOGUE_1 \xbch DIALOGUE_2 \x94\x00\x00
  
@@ -52,8 +51,8 @@ DIALOGUE_1 \xbch DIALOGUE_2 \x94\x00\x00
 \n上村\n　「おしっこかけてくださいってお願いしろっていってんだよ、\n　　バカ！」@
 早桃\n　「……」\
 
-\x00\x00\x00 DIALOGUE_END (\x08 SEQ01
-\x1f:\x02 CALL3 h\x02 REF_END1 
+\x00\x00\x00 DIALOGUE_END (\x08
+CALL1 :\x02 CALL3 h\x02 REF_END1 
 LOAD3 SCE057_005 REF6 \xb2\n REF_END2 
 DIALOGUE_1 \xc0h DIALOGUE_2 a\x00\x00
  
@@ -63,8 +62,8 @@ DIALOGUE_1 \xc0h DIALOGUE_2 a\x00\x00
 \n　命じられるまま、早桃は犬のように這いつくばる。@
 　上村は椅子をひとつひきずって早桃の前に配し、どっかとそこ\n　に腰を下ろした。\
 
-\x00 DIALOGUE_END \xf6\n SEQ01
-\x1f:\x02 CALL3 h\x02 REF_END1 
+\x00 DIALOGUE_END \xf6\n
+CALL1 :\x02 CALL3 h\x02 REF_END1 
 LOAD3 SCE057_006 REF6 \xb4\x0c REF_END2 
 DIALOGUE_1 \xc4h DIALOGUE_2 \xac\x00\x00
  
@@ -78,8 +77,8 @@ DIALOGUE_1 \xc4h DIALOGUE_2 \xac\x00\x00
 　頬を伝って流れ落ちた汚液が、床に溜まりを作る。@
 　髪の毛が汚液を吸い込んで、ぺったりと頬にへばりつく。\
 
- DIALOGUE_END \xf8\x0c SEQ01
-\x1f:\x02 CALL3 h\x02 REF_END1 
+ DIALOGUE_END \xf8\x0c
+CALL1 :\x02 CALL3 h\x02 REF_END1 
 LOAD3 SCE057_007 REF6 \xe2\x0f REF_END2 
 DIALOGUE_1 \xc8h DIALOGUE_2 \x8d\x00\x00
  
@@ -92,8 +91,8 @@ DIALOGUE_1 \xc8h DIALOGUE_2 \x8d\x00\x00
 そう考えれば、波動やら集団自殺やらも説明が付く。@
 おそらく、御堂たちによるなたねの陵辱、あのあたりから自分は\n妄想の中にいるのだ……。\
 
-\x00\x00\x00 DIALOGUE_END &\x10 SEQ01
-\x1f:\x02 CALL3 h\x02 REF_END1 
+\x00\x00\x00 DIALOGUE_END &\x10
+CALL1 :\x02 CALL3 h\x02 REF_END1 
 LOAD3 SCE057_008 REF6 \x94\x12 REF_END2 
 DIALOGUE_1 \xcch DIALOGUE_2 c\x00\x00
  
@@ -104,7 +103,7 @@ DIALOGUE_1 \xcch DIALOGUE_2 c\x00\x00
 学生\n　「喜んでるんだろう？」@
 \n学生たちは我先に早桃へと殺到した。\p男子学生は勃起したペ○ス\nをむき出しにして、女子学生はちぎり捨てるようにスカートとシ\nョーツを脱ぎ捨てて……。\
 
-\x00\x00\x00 DIALOGUE_END \xd8\x12 SEQ01
-\x1f:\x02 CALL3 h\x02 CALL2 :\x02 REF_END2 
+\x00\x00\x00 DIALOGUE_END \xd8\x12
+CALL1 :\x02 CALL3 h\x02 CALL2 :\x02 REF_END2 
 LOAD3 TextClose REF2 \xaa\x14 REF_END1 
 END_FILE

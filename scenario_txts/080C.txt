@@ -15,10 +15,8 @@ DIALOGUE_1 \xa0\x8c DIALOGUE_2 \x96\x00\x00
 なんだこりゃ。@
 邪魔邪魔。\
 
-\x00 DIALOGUE_END J\x00 SEQ01
-LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xc2\x02 REF_END2 
-LOAD2 TextOn REF1 \xf0\x02 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00 SEQ01
-
+\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xc2\x02 REF_END2 
+LOAD2 TextOn REF1 \xf0\x02 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00\x00\x0c\x02\x00\x00"
 LOAD6 .\\Data\\Script\\Bg.Fob REF3 &\x03 REF_END2 
 LOAD4 BgAutoFadeIn REF3 P\x03 REF_END1 
 LOAD3 SCE080_002 REF6 t\x03 REF_END2 
@@ -37,8 +35,8 @@ DIALOGUE_1 \xa4\x8c DIALOGUE_2 R\x00\x00
 　－－カッター。@
 　ピンポーン！\
 
-\x00 DIALOGUE_END \xb8\x03 SEQ01
-\x1f\xc2\x02 CALL3 \xf0\x02 REF_END1 
+\x00 DIALOGUE_END \xb8\x03
+CALL1 \xc2\x02 CALL3 \xf0\x02 REF_END1 
 LOAD3 SCE080_003 REF6 :\x05 REF_END2 
 DIALOGUE_1 \xa8\x8c DIALOGUE_2 .\x00\x00
  
@@ -48,7 +46,7 @@ DIALOGUE_1 \xa8\x8c DIALOGUE_2 .\x00\x00
 　さあ。@
 　終わりだ。\
 
-\x00\x00\x00 DIALOGUE_END ~\x05 SEQ01
-\x1f\xc2\x02 CALL3 \xf0\x02 CALL2 \xc2\x02 REF_END2 
+\x00\x00\x00 DIALOGUE_END ~\x05
+CALL1 \xc2\x02 CALL3 \xf0\x02 CALL2 \xc2\x02 REF_END2 
 LOAD3 TextClose REF2 |\x06 REF_END1 
 END_FILE

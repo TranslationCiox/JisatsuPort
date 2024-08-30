@@ -13,8 +13,7 @@ DIALOGUE_1 \x80W DIALOGUE_2 \x8b\x00\x00
 ただ、遠く校庭から、ぼんやりとした声が聞こえてくるだけだ。@
 \n　御堂たちは雑談をしながら実験室の前を通り過ぎ、やがて男子\nトイレへと消えた。\
 
-\x00 DIALOGUE_END J\x00 SEQ01
-LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \x96\x02 REF_END2 
+\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \x96\x02 REF_END2 
 LOAD2 TextOn REF1 \xc4\x02 REF_END1 
 LOAD3 SCE046_002 REF6 \xe0\x02 REF_END2 
 DIALOGUE_1 \x84W DIALOGUE_2 ,\x00\x00
@@ -24,7 +23,7 @@ DIALOGUE_1 \x84W DIALOGUE_2 ,\x00\x00
 \n　言ってなたねは、躊躇することなく男子トイレへと入っていっ\nた。@
 ひとり廊下に取り残された拓司も、慌てて後を追う。@
 \z
-\x00 DIALOGUE_END $\x03 SEQ01
-\x1f\x96\x02 CALL3 \xc4\x02 CALL2 \x96\x02 REF_END2 
+\x00 DIALOGUE_END $\x03
+CALL1 \x96\x02 CALL3 \xc4\x02 CALL2 \x96\x02 REF_END2 
 LOAD3 TextClose REF2 \x1a\x04 REF_END1 
 END_FILE

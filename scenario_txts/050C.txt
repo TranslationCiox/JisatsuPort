@@ -1,10 +1,7 @@
 START_FILE
 \xd3\x15\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\x9e\x12\x00
 LOAD3 SCE050_001 REF6 \x06\x00 REF_END2 
-DIALOGUE_1 \xc0]\x00\x0c\x00\x00\x00\x00" \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x00\x00\x00 SEQ01
- \x1e\x04\x00\x00\r\x00\x00\x1e\x19\x00 SEQ01
- \x1e\x08\x00\x00\r\x00\x00\x1e\x00\x00\x00 SEQ01
-
+DIALOGUE_1 \xc0]\x00\x0c\x00\x00\x00\x00" \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x00\x00\x00\x00\x0c\x02\x00\x00" \x1e\x04\x00\x00\r\x00\x00\x1e\x19\x00\x00\x0c\x02\x00\x00" \x1e\x08\x00\x00\r\x00\x00\x1e\x00\x00\x00\x00\x0c\x02\x00\x00"
 LOAD6 .\\Data\\Script\\Bgm.Fob REF2 \x98\x00 REF_END2 
 LOAD3 SePlayEx REF3 \xc2\x00 REF_END1 \x03\x82\x00\x00
  
@@ -15,8 +12,7 @@ LOAD3 SePlayEx REF3 \xc2\x00 REF_END1 \x03\x82\x00\x00
 \n教師\n　「いいか。\p刃物を扱うわけだから少し怖い気もするかもしれん\n　　でもみんなで心をひとつにすれば大丈夫だ。\pこれはオレが常\n　　日頃いっていることだから、わかるな？\p　……よし。\pカッタ\n　　ーを持っていない者は、使い終わった者に借りるように。@
 　　これはテストには出ないが、重要なことだぞ」\
 
-\x00 DIALOGUE_END \xe2\x00 SEQ01
-LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \n\x03 REF_END2 
+\x00 DIALOGUE_END \xe2\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \n\x03 REF_END2 
 LOAD2 TextOn REF1 8\x03 REF_END1 
 LOAD3 SCE050_002 REF6 T\x03 REF_END2 
 DIALOGUE_1 \xc4] DIALOGUE_2 o\x00\x00
@@ -28,8 +24,8 @@ DIALOGUE_1 \xc4] DIALOGUE_2 o\x00\x00
 教員の動きをトレースするように、学生たちが次々と自分の喉を\n掻き切っていった。@
 ためらいのかけらもない、完璧なアクションだった。\
 
-\x00\x00\x00 DIALOGUE_END \x98\x03 SEQ01
-\x1f\n\x03 CALL3 8\x03 REF_END1 
+\x00\x00\x00 DIALOGUE_END \x98\x03
+CALL1 \n\x03 CALL3 8\x03 REF_END1 
 LOAD3 SCE050_003 REF6 \x8e\x05 REF_END2 
 DIALOGUE_1 \xc8] DIALOGUE_2 \xd9\x00\x00
  
@@ -43,8 +39,8 @@ DIALOGUE_1 \xc8] DIALOGUE_2 \xd9\x00\x00
 ブシューッ、とも、ヒュウーッとも……なんの音もしなかった@
 なんの劇的さもなかった。\pただ、どたん、どたん、と、学生た\nちが机に突っ伏してゆく音だけが連続して聞こえて、それは単\n純に「奇妙」としかいえなかった。\p悲しい感じとか、不気味な感\nじとか、異常な感じとか……そんな、もっともらしい感想が入り\n込む余地はどこにもなかった。\pただ奇妙だった。\
 
-\x00\x00\x00 DIALOGUE_END \xd2\x05 SEQ01
-\x1f\n\x03 CALL3 8\x03 REF_END1 
+\x00\x00\x00 DIALOGUE_END \xd2\x05
+CALL1 \n\x03 CALL3 8\x03 REF_END1 
 LOAD3 SCE050_004 REF6 p\t REF_END2 
 DIALOGUE_1 \xcc] DIALOGUE_2 \x8f\x00\x00
  
@@ -54,8 +50,8 @@ DIALOGUE_1 \xcc] DIALOGUE_2 \x8f\x00\x00
 \n　どことなく、得意げな話し方だった。\p聞いていると、拓司の胸\nに、いいようのないいらつきが広がっていった。@
 \n拓司\n　「……もういいよ、雲居さん」\
 
-\x00 DIALOGUE_END \xb4\t SEQ01
-\x1f\n\x03 CALL3 8\x03 REF_END1 
+\x00 DIALOGUE_END \xb4\t
+CALL1 \n\x03 CALL3 8\x03 REF_END1 
 LOAD3 SCE050_005 REF6 *\x0c REF_END2 
 DIALOGUE_1 \xd0] DIALOGUE_2 c\x00\x00
  
@@ -64,8 +60,8 @@ DIALOGUE_1 \xd0] DIALOGUE_2 c\x00\x00
 \n　なたねは傷ついたように口をつぐみ、それから軽く肩をすくめ\n　た。@
 \nなたね\n　「広まるわよ。とまらないで広まる。\pみんな死ぬ」\
 
-\x00\x00\x00 DIALOGUE_END n\x0c SEQ01
-\x1f\n\x03 CALL3 8\x03 REF_END1 
+\x00\x00\x00 DIALOGUE_END n\x0c
+CALL1 \n\x03 CALL3 8\x03 REF_END1 
 LOAD3 SCE050_006 REF6 4\x0e REF_END2 
 DIALOGUE_1 \xd4] DIALOGUE_2 d\x00\x00
  
@@ -79,8 +75,8 @@ DIALOGUE_1 \xd4] DIALOGUE_2 d\x00\x00
 　考えろ！@
 　何をすべきか！\
 
-\x00\x00\x00 DIALOGUE_END x\x0e SEQ01
-\x1f\n\x03 CALL3 8\x03 REF_END1 
+\x00\x00\x00 DIALOGUE_END x\x0e
+CALL1 \n\x03 CALL3 8\x03 REF_END1 
 LOAD3 SCE050_007 REF6 B\x10 REF_END2 
 DIALOGUE_1 \xd8] DIALOGUE_2 c\x00\x00
  
@@ -92,8 +88,8 @@ DIALOGUE_1 \xd8] DIALOGUE_2 c\x00\x00
 　ここから一番近い教室といえば……早桃の教室だ。@
 　この３階廊下をまっすぐ行った突き当たりの教室に、早桃はい\n　る。\
 
-\x00 DIALOGUE_END \x86\x10 SEQ01
-\x1f\n\x03 CALL3 8\x03 CALL2 \x98\x00 REF_END2 
+\x00 DIALOGUE_END \x86\x10
+CALL1 \n\x03 CALL3 8\x03 CALL2 \x98\x00 REF_END2 
 LOAD2 StopCD REF1 X\x12 CALL2 \n\x03 REF_END2 
 LOAD3 TextClose REF2 \x80\x12 REF_END1 
 END_FILE

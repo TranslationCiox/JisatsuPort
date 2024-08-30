@@ -7,8 +7,7 @@ DIALOGUE_1 `\x86 DIALOGUE_2 Q\x00\x00
 　　いままで何度も、雲居さんは『波動』ってやつを感じてき\n　　たし、俺はそれに救われてきた」@
 早桃\n　「おにいちゃん！\p　じゃあ、神凪先輩を見捨てるっていうの\n　　？！」\n拓司\n　「……」\
 
-\x00\x00\x00 DIALOGUE_END J\x00 SEQ01
-LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xae\x01 REF_END2 
+\x00\x00\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xae\x01 REF_END2 
 LOAD2 TextOn REF1 \xdc\x01 REF_END1 
 LOAD3 SCE076_002 REF6 \xf8\x01 REF_END2 
 DIALOGUE_1 d\x86 DIALOGUE_2 d\x00\x00
@@ -19,8 +18,8 @@ DIALOGUE_1 d\x86 DIALOGUE_2 d\x00\x00
 早桃\n　「……」@
 拓司\n　「紅葉を助けたい気持ちは、誰にも負けないつもりだ……」\
 
-\x00 DIALOGUE_END <\x02 SEQ01
-\x1f\xae\x01 CALL3 \xdc\x01 REF_END1 
+\x00 DIALOGUE_END <\x02
+CALL1 \xae\x01 CALL3 \xdc\x01 REF_END1 
 LOAD3 SCE076_003 REF6 \x06\x04 REF_END2 
 DIALOGUE_1 h\x86 DIALOGUE_2 r\x00\x00
  
@@ -32,8 +31,8 @@ DIALOGUE_1 h\x86 DIALOGUE_2 r\x00\x00
 \nなたね\n　「シェルター……シェルター……シェルター……シェルター…\n　　…シェルター」@
 \nぶつぶつと呪文のようにくり返すなたねの背中を追いながら、拓\n司は心の底に絶望をかみしめていた。\
 
-\x00\x00\x00 DIALOGUE_END J\x04 SEQ01
-\x1f\xae\x01 CALL3 \xdc\x01 REF_END1 
+\x00\x00\x00 DIALOGUE_END J\x04
+CALL1 \xae\x01 CALL3 \xdc\x01 REF_END1 
 LOAD6 .\\Data\\Script\\Bgm.Fob REF2 L\x06 REF_END2 
 LOAD2 StopCD REF1 v\x06 CALL2 \xae\x01 REF_END2 
 LOAD3 TextClose REF2 \x9e\x06 REF_END1 

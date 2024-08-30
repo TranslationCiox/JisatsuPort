@@ -1,6 +1,5 @@
 START_FILE
-v\t\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x008\x07\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00 SEQ01
-
+v\t\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x008\x07\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00\x00\x0c\x02\x00\x00"
 LOAD6 .\\Data\\Script\\Bg.Fob REF3  \x00 REF_END2 
 LOAD4 BgAutoFadeIn REF3 J\x00 REF_END1 
 LOAD6 .\\Data\\Script\\Bgm.Fob REF2 n\x00 REF_END2 
@@ -17,8 +16,7 @@ DIALOGUE_1 \xf8\xa6\x01\x0c\x00\x00\x00\x00"\x03\x8a\x00\x00
 訳が分からず、私はゆきと地面のゴミを交互に見比べた。@
 どういうことだろう？@
 ゆきがここで隠れて煙草でも吸っているということなのだろうか？\n\pだんだん腹が立ってきた。\w\z
-\x00 DIALOGUE_END \xf8\x00 SEQ01
-LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 @\x03 REF_END2 
+\x00 DIALOGUE_END \xf8\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 @\x03 REF_END2 
 LOAD2 TextOn REF1 n\x03 REF_END1 
 LOAD3 SCEK07_002 REF6 \x8a\x03 REF_END2 
 DIALOGUE_1 \xf8\xa6\x01\x0c\x00\x00\x00\x00"\x03\x9b\x00\x00
@@ -34,13 +32,13 @@ DIALOGUE_1 \xf8\xa6\x01\x0c\x00\x00\x00\x00"\x03\x9b\x00\x00
 あまりにもどす黒い、私の覚悟を越える秘密の匂いがした。@
 聞いてしまったら、私はもうその秘密から逃れることはできない。\n\p興奮が私の中から急速に引いてゆき、白茶けた無感動がかわりに\n広がった。@
 私は急に怖くなった。\w\z
-\x00 DIALOGUE_END \xce\x03 SEQ01
-\x1f@\x03 CALL3 n\x03 REF_END1 \x03\x18\x00\x00
+\x00 DIALOGUE_END \xce\x03
+CALL1 @\x03 CALL3 n\x03 REF_END1 \x03\x18\x00\x00
 CHOICE
 「もういいよ、帰ろう」と私はいった\n「聞かせて」と、私は恐怖を抑えていった。\n\l0,2,
 ENDCHOICE
 
-\x00\x00\x00 DIALOGUE_END t\x06 SEQ01
-\x1f@\x03 CALL3 n\x03 CALL2 @\x03 REF_END2 
+\x00\x00\x00 DIALOGUE_END t\x06
+CALL1 @\x03 CALL3 n\x03 CALL2 @\x03 REF_END2 
 LOAD3 TextClose REF2 \x1a\x07 REF_END1 
 END_FILE

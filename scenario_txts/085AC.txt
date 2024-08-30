@@ -1,6 +1,5 @@
 START_FILE
-\xcf\x1f\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xc2\x1a\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1e\t\x01 SEQ01
-
+\xcf\x1f\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xc2\x1a\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1e\t\x01\x00\x0c\x02\x00\x00"
 LOAD6 .\\Data\\Script\\Bgm.Fob REF2  \x00 REF_END2 
 LOAD2 PlayCD REF1 J\x00 REF_END1 
 LOAD3 SCE085a_001\x1ff\x00 REF_END2 
@@ -11,8 +10,7 @@ DIALOGUE_1 p\x94 DIALOGUE_2 \x82\x00\x00
 再び、死の誘惑が襲いかかることはなかった。@
 免疫ができたせいなのか、すでに波動が拡散した後なのかは……わ\nからなかったが。\
 
-\x00 DIALOGUE_END \xaa\x00 SEQ01
-LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xd2\x02 REF_END2 
+\x00 DIALOGUE_END \xaa\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xd2\x02 REF_END2 
 LOAD2 TextOn REF1 \x00\x03 REF_END1 
 LOAD3 SCE085a_002\x1f\x1c\x03 REF_END2 
 DIALOGUE_1 t\x94 DIALOGUE_2 \xd6\x00\x00
@@ -26,8 +24,8 @@ DIALOGUE_1 t\x94 DIALOGUE_2 \xd6\x00\x00
 なたねの口から聞いた時にはほとんど信じられなかったシェルタ\nーの存在が、いまや拓司の唯一の心の支えになっている。@
 眉唾物の話だが、いまはそれを信じたい。\pおばけが怖くて夜、布\n団を被るのに似ている。\p布団なんかでおばけから身を守れるはず\nがない。\pだが、恐怖からは守ってくれる……。\
 
-\x00 DIALOGUE_END `\x03 SEQ01
-\x1f\xd2\x02 CALL3 \x00\x03 REF_END1 
+\x00 DIALOGUE_END `\x03
+CALL1 \xd2\x02 CALL3 \x00\x03 REF_END1 
 LOAD3 SCE085a_003\x1f\xf2\x06 REF_END2 
 DIALOGUE_1 x\x94 DIALOGUE_2 Z\x00\x00
  
@@ -38,8 +36,8 @@ DIALOGUE_1 x\x94 DIALOGUE_2 Z\x00\x00
 なたね\n　「どうやったの？\p　どうやって波動から身を守ったの？！」@
 拓司\n　「偶然だよ」\
 
-\x00 DIALOGUE_END 6\x07 SEQ01
-\x1f\xd2\x02 CALL3 \x00\x03 REF_END1 
+\x00 DIALOGUE_END 6\x07
+CALL1 \xd2\x02 CALL3 \x00\x03 REF_END1 
 LOAD3 SCE085a_004\x1f\xd8\x08 REF_END2 
 DIALOGUE_1 |\x94 DIALOGUE_2 \x9f\x00\x00
  
@@ -53,8 +51,8 @@ DIALOGUE_1 |\x94 DIALOGUE_2 \x9f\x00\x00
 　誰だ？！@
 　拓司たちは身構えたが、果たして現れたのは見慣れた人物であ\n　った。\
 
- DIALOGUE_END \x1c\t SEQ01
-\x1f\xd2\x02 CALL3 \x00\x03 REF_END1 
+ DIALOGUE_END \x1c\t
+CALL1 \xd2\x02 CALL3 \x00\x03 REF_END1 
 LOAD3 SCE085a_005\x1f\xd2\x0b REF_END2 
 DIALOGUE_1 \x80\x94 DIALOGUE_2 e\x00\x00
  
@@ -66,8 +64,8 @@ DIALOGUE_1 \x80\x94 DIALOGUE_2 e\x00\x00
 拓司\n　「俺だってわからないさ」@
 錦城\n　「とにかく、無事で良かったわ。\p他に生き残っている人はいる\n　　の？！」\
 
-\x00 DIALOGUE_END \x16\x0c SEQ01
-\x1f\xd2\x02 CALL3 \x00\x03 REF_END1 
+\x00 DIALOGUE_END \x16\x0c
+CALL1 \xd2\x02 CALL3 \x00\x03 REF_END1 
 LOAD3 SCE085a_006\x1f\xe4\r REF_END2 
 DIALOGUE_1 \x84\x94 DIALOGUE_2 }\x00\x00
  
@@ -80,8 +78,8 @@ DIALOGUE_1 \x84\x94 DIALOGUE_2 }\x00\x00
 御堂\n　「クソッ、まだいってやがるぜ、この電波女！」@
 拓司\n　「いや、御堂。\p……あながち全部デタラメってわけでもなさそ\n　　うだぜ」\
 
-\x00 DIALOGUE_END (\x0e SEQ01
-\x1f\xd2\x02 CALL3 \x00\x03 REF_END1 
+\x00 DIALOGUE_END (\x0e
+CALL1 \xd2\x02 CALL3 \x00\x03 REF_END1 
 LOAD3 SCE085a_007\x1fV\x10 REF_END2 
 DIALOGUE_1 \x88\x94 DIALOGUE_2 i\x00\x00
  
@@ -90,8 +88,8 @@ DIALOGUE_1 \x88\x94 DIALOGUE_2 i\x00\x00
 \n錦城\n　「信じがたい話ではあるけれど、もう、信じられないものは山\n　　ほど見てしまった後だし」@
 \n錦城はふう、とため息をついて肩をすくめた。\
 
-\x00\x00\x00 DIALOGUE_END \x9a\x10 SEQ01
-\x1f\xd2\x02 CALL3 \x00\x03 REF_END1 
+\x00\x00\x00 DIALOGUE_END \x9a\x10
+CALL1 \xd2\x02 CALL3 \x00\x03 REF_END1 
 LOAD3 SCE085a_008\x1fx\x12 REF_END2 
 DIALOGUE_1 \x8c\x94 DIALOGUE_2 z\x00\x00
  
@@ -100,8 +98,8 @@ DIALOGUE_1 \x8c\x94 DIALOGUE_2 z\x00\x00
 錦城\n　「……」@
 なたね\n　「いま、断続的に襲ってきている波動は、大地震の前の予震み\n　　たいなものにすぎません。\pエンケリュスが本格始動するまえ\n　　の震えみたいなものにすぎない。\pいずれはエンケリュスは完\n　　全に目覚めて、これまでの波動なんて話にならないくらいの\n　　巨大な波動を放ちます。\pそれが最終波動です」\
 
-\x00\x00\x00 DIALOGUE_END \xbc\x12 SEQ01
-\x1f\xd2\x02 CALL3 \x00\x03 REF_END1 
+\x00\x00\x00 DIALOGUE_END \xbc\x12
+CALL1 \xd2\x02 CALL3 \x00\x03 REF_END1 
 LOAD3 SCE085a_009\x1f\xde\x14 REF_END2 
 DIALOGUE_1 \x90\x94 DIALOGUE_2 \x94\x00\x00
  
@@ -111,8 +109,8 @@ DIALOGUE_1 \x90\x94 DIALOGUE_2 \x94\x00\x00
 \nここまで黙っていた御堂が、たまりかねたように叫んだ。@
 \n御堂\n　「バカバカしい！\p　こんなのの妄想を真に受けてるんじゃねえ\n　　だろうな！」\
 
-\x00 DIALOGUE_END "\x15 SEQ01
-\x1f\xd2\x02 CALL3 \x00\x03 REF_END1 
+\x00 DIALOGUE_END "\x15
+CALL1 \xd2\x02 CALL3 \x00\x03 REF_END1 
 LOAD3 SCE085a_010\x1f\xac\x17 REF_END2 
 DIALOGUE_1 \x94\x94 DIALOGUE_2 ^\x00\x00
  
@@ -123,8 +121,8 @@ DIALOGUE_1 \x94\x94 DIALOGUE_2 ^\x00\x00
 御堂\n　「あァ？」@
 なたね\n　「１時間後かもしれないし、１週間後かもしれない。\p１０年後\n　　かもしれないし、１分後かも……１秒後かもしれない」\
 
-\x00 DIALOGUE_END \xf0\x17 SEQ01
-\x1f\xd2\x02 CALL3 \x00\x03 REF_END1 
+\x00 DIALOGUE_END \xf0\x17
+CALL1 \xd2\x02 CALL3 \x00\x03 REF_END1 
 LOAD3 SCE085a_011\x1f\xa2\x19 REF_END2 
 DIALOGUE_1 \x98\x94 DIALOGUE_2 \x1e\x00\x00
  
@@ -132,7 +130,7 @@ DIALOGUE_1 \x98\x94 DIALOGUE_2 \x1e\x00\x00
 なたね\n　「……」@
 御堂\n　「と、とにかく実験室に入ろうじゃねえか。\p話はそれからだ」\
 
-\x00\x00\x00 DIALOGUE_END \xe6\x19 SEQ01
-\x1f\xd2\x02 CALL3 \x00\x03 CALL2 \xd2\x02 REF_END2 
+\x00\x00\x00 DIALOGUE_END \xe6\x19
+CALL1 \xd2\x02 CALL3 \x00\x03 CALL2 \xd2\x02 REF_END2 
 LOAD3 TextClose REF2 \xa4\x1a REF_END1 
 END_FILE

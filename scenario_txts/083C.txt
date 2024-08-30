@@ -6,8 +6,7 @@ DIALOGUE_1 P\x91 DIALOGUE_2 =\x00\x00
 拓司は枕元に掛けられている鳥かごをのぞき込んだ。@
 なんという種類かはわからないが、どこかで見たことがあるよう\nな、いかにも普通の小鳥だ。@
 ただ、色だけがウソのように青く鮮やかで、屋台で売っているペ\nンキで着色されたヒヨコを思わせる。\w\z
-\x00 DIALOGUE_END J\x00 SEQ01
-LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 ^\x01 REF_END2 
+\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 ^\x01 REF_END2 
 LOAD2 TextOn REF1 \x8c\x01 REF_END1 
 LOAD3 SCE083_002 REF6 \xa8\x01 REF_END2 
 DIALOGUE_1 T\x91 DIALOGUE_2 s\x00\x00
@@ -21,8 +20,8 @@ DIALOGUE_1 T\x91 DIALOGUE_2 s\x00\x00
 　　無意識に、君の注意をその鳥に向けさせたのかもしれないぞ\n　　？」@
 \nねばりつくようないいかただった。@
 見れば教授の額には、ちいさな汗が滲んでいる。\w\z
-\x00\x00\x00 DIALOGUE_END \xec\x01 SEQ01
-\x1f^\x01 CALL3 \x8c\x01 REF_END1 
+\x00\x00\x00 DIALOGUE_END \xec\x01
+CALL1 ^\x01 CALL3 \x8c\x01 REF_END1 
 LOAD3 SCE083_003 REF6 \xf2\x03 REF_END2 
 DIALOGUE_1 X\x91 DIALOGUE_2 g\x00\x00
  
@@ -33,8 +32,8 @@ DIALOGUE_1 X\x91 DIALOGUE_2 g\x00\x00
 教授が目で合図を送ると、看護婦は拘束着の女の子を連れて部屋\nから退出した。@
 しめきられた白い部屋には、拓司と教授、２人だけが向かい合っ\nて残された。@
 長い沈黙の後、教授が口を開いた。\w\z
-\x00\x00\x00 DIALOGUE_END 6\x04 SEQ01
-\x1f^\x01 CALL3 \x8c\x01 REF_END1 
+\x00\x00\x00 DIALOGUE_END 6\x04
+CALL1 ^\x01 CALL3 \x8c\x01 REF_END1 
 LOAD3 SCE083_004 REF6 \x0c\x06 REF_END2 
 DIALOGUE_1 \\\x91 DIALOGUE_2 \x87\x00\x00
  
@@ -49,8 +48,8 @@ DIALOGUE_1 \\\x91 DIALOGUE_2 \x87\x00\x00
 拓司\n　「意味が分かりません」@
 \n頭の奥が、ずきんと痛んだ。@
 その痛みは急速に大きく膨れ上がり、すぐに拓司の頭のなかいっ\nぱいに広がった。\w\z
-\x00 DIALOGUE_END P\x06 SEQ01
-\x1f^\x01 CALL3 \x8c\x01 REF_END1 
+\x00 DIALOGUE_END P\x06
+CALL1 ^\x01 CALL3 \x8c\x01 REF_END1 
 LOAD3 SCE083_005 REF6 \xa6\x08 REF_END2 
 DIALOGUE_1 `\x91 DIALOGUE_2 c\x00\x00
  
@@ -62,9 +61,8 @@ DIALOGUE_1 `\x91 DIALOGUE_2 c\x00\x00
 教授\n　「きみがわからなければ、他の誰にもわかるはずがないッ！@
 　　いいかね、これは、新しい生き物なんだよ！@
 　　あらゆる生物学から外れた……神が作ったこの世界の生物な\n　　らぬ……なにかだッ！」\w\z
-\x00 DIALOGUE_END \xea\x08 SEQ01
-\x1f^\x01 CALL3 \x8c\x01 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xca\x00 SEQ01
-
+\x00 DIALOGUE_END \xea\x08
+CALL1 ^\x01 CALL3 \x8c\x01 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xca\x00\x00\x0c\x02\x00\x00"
 LOAD6 .\\Data\\Script\\Bg.Fob REF3 \xca\n REF_END2 
 LOAD4 BgAutoFadeIn REF3 \xf4\n REF_END1 
 LOAD3 SCE083_006 REF6 \x18\x0b REF_END2 
@@ -77,8 +75,8 @@ DIALOGUE_1 d\x91 DIALOGUE_2 T\x00\x00
 \n　ザザザザザザザザザザ@
 \n教授\n　「おまえは誰だ？！　何者なんだ？！　お前は－－」@
 \nスイッチを落としたように、目の前が真っ暗になった。\w\z
-\x00 DIALOGUE_END \\\x0b SEQ01
-\x1f^\x01 CALL3 \x8c\x01 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00 SEQ01
-\x1f\xca\n CALL3 \xf4\n CALL2 ^\x01 REF_END2 
+\x00 DIALOGUE_END \\\x0b
+CALL1 ^\x01 CALL3 \x8c\x01 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00
+CALL1 \xca\n CALL3 \xf4\n CALL2 ^\x01 REF_END2 
 LOAD3 TextClose REF2 &\r REF_END1 
 END_FILE
