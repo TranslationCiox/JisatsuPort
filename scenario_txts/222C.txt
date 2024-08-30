@@ -13,8 +13,8 @@ SEQ1 \x8c\x01 SEQ2 \x80j\x01\x0c\x00\x00\x00\x00"\x03x\x00\x00
 心の底をのぞき込むように、なたねは拓司の目をじっと見つめた。\n\pそしてひとこと、いった。\
 
 \x00
-SEQ4  REF6 J\x00 REF_END3 
-LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 J\x02 REF_END2 
+SEQ6 REF6 J\x00 REF_END3 
+LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 J\x02 REF_END2 
 LOAD2 TextOn REF1 x\x02 REF_END1 
 LOAD3 SCE222_002 REF6 \x94\x02 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \x84j\x01\x0c\x00\x00\x00\x00"\x03O\x00\x00
@@ -30,6 +30,6 @@ SEQ1 \x8c\x01 SEQ2 \x84j\x01\x0c\x00\x00\x00\x00"\x03O\x00\x00
 それっきり、なたねは一言も話そうとはしなかった。\
 
 \x00
-SEQ4  REF6 \xd8\x02 CALL1 J\x02 CALL3 x\x02 CALL2 J\x02 REF_END2 
+SEQ6 REF6 \xd8\x02 CALL1 J\x02 CALL3 x\x02 CALL2 J\x02 REF_END2 
 LOAD3 TextClose REF2 Z\x04 REF_END1 
 END_FILE

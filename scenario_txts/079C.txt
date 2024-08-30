@@ -24,8 +24,8 @@ SEQ1 \x8c\x01 SEQ2 \x10\x8b SEQ3 \x03\xb1\x00\x00
 瓶からするりと抜け出せるような気がする。\
 
 
-SEQ4  REF6 \x90\x00 REF_END3 
-LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 t\x03 REF_END2 
+SEQ6 REF6 \x90\x00 REF_END3 
+LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 t\x03 REF_END2 
 LOAD2 TextOn REF1 \xa2\x03 REF_END1 
 LOAD3 SCE079_002 REF6 \xbe\x03 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \x14\x8b SEQ3 \x03M\x00\x00
@@ -41,7 +41,7 @@ SEQ1 \x8c\x01 SEQ2 \x14\x8b SEQ3 \x03M\x00\x00
 死のう。\
 
 \x00
-SEQ4  REF6 \x02\x04 CALL1 t\x03 CALL3 \xa2\x03 REF_END1 
+SEQ6 REF6 \x02\x04 CALL1 t\x03 CALL3 \xa2\x03 REF_END1 
 LOAD3 SCE079_003 REF6 p\x05 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \x18\x8b SEQ3 \x03\xb4\x00\x00
  
@@ -60,14 +60,14 @@ SEQ1 \x8c\x01 SEQ2 \x18\x8b SEQ3 \x03\xb4\x00\x00
 どうしてこれを恐れていたのかなど、すでにわからなかった。\
 
 \x00
-SEQ4  REF6 \xb4\x05 CALL1 t\x03 CALL3 \xa2\x03 REF_END1 
+SEQ6 REF6 \xb4\x05 CALL1 t\x03 CALL3 \xa2\x03 REF_END1 
 LOAD3 SCE079_004 REF6 \xbe\x08 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \x1c\x8b SEQ3 \x03@\x00\x00
  
 学生\n　「……死ぬのか生きるのか、それはもう人間の幸不幸を決定す\n　　る鍵ではないような気さえしてきたのだ。\p死者は完成せられ、\n　　生者は出帆の船のデッキに立ってそれに手を合わせる。\p船は\n　　するする岸壁から離れる。\p「死はよいものだ」……』\
 
 \x00
-SEQ4  REF6 \x02\t CALL1 t\x03 CALL3 \xa2\x03 REF_END1 
+SEQ6 REF6 \x02\t CALL1 t\x03 CALL3 \xa2\x03 REF_END1 
 LOAD3 SCE079_005 REF6 <\n REF_END2 
 SEQ1 \x8c\x01 SEQ2  \x8b SEQ3 \x03P\x00\x00
  
@@ -87,7 +87,7 @@ SEQ1 \x8c\x01 SEQ2  \x8b SEQ3 \x03P\x00\x00
 　カッター。\
 
 \x00\x00\x00
-SEQ4  REF6 \x80\n CALL1 t\x03 CALL3 \xa2\x03 REF_END1 
+SEQ6 REF6 \x80\n CALL1 t\x03 CALL3 \xa2\x03 REF_END1 
 LOAD3 SCE079_006 REF6 \xfa\x0b REF_END2 
 SEQ1 \x8c\x01 SEQ2 $\x8b SEQ3 \x03+\x00\x00
  
@@ -103,8 +103,8 @@ SEQ1 \x8c\x01 SEQ2 $\x8b SEQ3 \x03+\x00\x00
 　ア。\
 
 \x00\x00\x00
-SEQ4  REF6 >\x0c CALL1 t\x03 CALL3 \xa2\x03 REF_END1 
-SEQ4 \x00\x1eG\x00 REF_END3 
+SEQ6 REF6 >\x0c CALL1 t\x03 CALL3 \xa2\x03 REF_END1 
+SEQ5 G\x00 REF_END3 
 LOAD6 .\\Data\\Script\\Bg.Fob REF3 >\r REF_END2 
 LOAD4 BgAutoFadeIn REF3 h\r REF_END1 
 LOAD3 SCE079_007 REF6 \x8c\r REF_END2 
@@ -113,5 +113,5 @@ SEQ1 \x8c\x01 SEQ2 (\x8b SEQ3 \x03\x11\x00\x00
 \n　拓司は芋虫のようにはいずって、自分の教室へと向かった。\
 
 \x00
-SEQ4  REF6 \xd0\r CALL1 t\x03 CALL3 \xa2\x03 REF_END1 
+SEQ6 REF6 \xd0\r CALL1 t\x03 CALL3 \xa2\x03 REF_END1 
 END_FILE

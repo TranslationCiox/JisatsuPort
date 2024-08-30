@@ -10,8 +10,8 @@ SEQ1 \x8c\x01 SEQ2 @d\x01\x0c\x00\x00\x00\x00"\x036\x00\x00
 \n重い一撃が顎を捉え、さらに鋭い蹴りが拓司を後方にはじき飛ば\nした。\
 
 \x00
-SEQ4  REF6 J\x00 REF_END3 
-LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 B\x01 REF_END2 
+SEQ6 REF6 J\x00 REF_END3 
+LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 B\x01 REF_END2 
 LOAD2 TextOn REF1 p\x01 REF_END1 
 LOAD3 SCE218_002 REF6 \x8c\x01 REF_END2 
 SEQ1 \x8c\x01 SEQ2 Dd\x01\x0c\x00\x00\x00\x00"\x03x\x00\x00
@@ -23,8 +23,8 @@ SEQ1 \x8c\x01 SEQ2 Dd\x01\x0c\x00\x00\x00\x00"\x03x\x00\x00
 御堂\n　「この……××××が……思い知れ！\p　思い知れ！」\
 
 \x00
-SEQ4  REF6 \xd0\x01 CALL1 B\x01 CALL3 p\x01 REF_END1 
-SEQ4 \x00\x1e$\x00 REF_END3 
+SEQ6 REF6 \xd0\x01 CALL1 B\x01 CALL3 p\x01 REF_END1 
+SEQ5 $\x00 REF_END3 
 LOAD6 .\\Data\\Script\\Bg.Fob REF3 \x04\x04 REF_END2 
 LOAD4 BgAutoFadeIn REF3 .\x04 REF_END1 
 LOAD3 SCE218_003 REF6 R\x04 REF_END2 
@@ -43,8 +43,8 @@ SEQ1 \x8c\x01 SEQ2 Hd\x01\x0c\x00\x00\x00\x00"\x03\x9b\x00\x00
 そしていま、眼前で展開されていることこそ、新しい秩序の骨子\nを為すものであるはずだった。\
 
 \x00
-SEQ4  REF6 \x96\x04 CALL1 B\x01 CALL3 p\x01 REF_END1 
-SEQ4 \x00\x1e\xc8\x00 CALL1 \x04\x04 CALL3 .\x04 REF_END1 
+SEQ6 REF6 \x96\x04 CALL1 B\x01 CALL3 p\x01 REF_END1 
+SEQ5 \xc8\x00 CALL1 \x04\x04 CALL3 .\x04 REF_END1 
 LOAD6 .\\Data\\Script\\Bgm.Fob REF2 p\x07 REF_END2 
 LOAD2 StopCD REF1 \x9a\x07 CALL2 B\x01 REF_END2 
 LOAD3 TextClose REF2 \xc2\x07 REF_END1 

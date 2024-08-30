@@ -1,9 +1,9 @@
 START_FILE
 \xb3\x18\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00v\x14\x00
-SEQ4 \x00\x1e\xc8\x00 REF_END3 
+SEQ5 \xc8\x00 REF_END3 
 LOAD6 .\\Data\\Script\\Bg.Fob REF3  \x00 REF_END2 
 LOAD4 BgAutoFadeIn REF3 J\x00 REF_END1 
-SEQ4 \x00\x1e\x08\x01 REF_END3 
+SEQ5 \x08\x01 REF_END3 
 LOAD6 .\\Data\\Script\\Bgm.Fob REF2 \x88\x00 REF_END2 
 LOAD2 PlayCD REF1 \xb2\x00 REF_END1 
 LOAD3 SCEK10_001 REF6 \xce\x00 REF_END2 
@@ -15,8 +15,8 @@ SEQ1 \x8c\x01 SEQ2 \xe0\xa5\x01\x0c\x00\x00\x00\x00"\x03q\x00\x00
 つまり、父親が望めば（お酒を飲んだときとか、夕食の味が薄す\nぎたときとか、ひいきの野球チームが負けたときとか、天気が悪\nかったときとかね）\nルールはいつでも『破られた』ことになった。@
 父親は、ルールを破った罪で、ゆきの母親を容赦なく罰した。\w\z
 \x00
-SEQ4  REF6 \x12\x01 REF_END3 
-LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xf6\x02 REF_END2 
+SEQ6 REF6 \x12\x01 REF_END3 
+LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 \xf6\x02 REF_END2 
 LOAD2 TextOn REF1 $\x03 REF_END1 
 LOAD3 SCEK10_002 REF6 @\x03 REF_END2 
 SEQ1 \x8c\x01 SEQ2 t\xa7\x01\x0c\x00\x00\x00\x00"\x03\x82\x00\x00
@@ -30,7 +30,7 @@ SEQ1 \x8c\x01 SEQ2 t\xa7\x01\x0c\x00\x00\x00\x00"\x03\x82\x00\x00
 「お前もパパに逆らったら、こうなるんだからな」@
 ゆきは怖くて仕方がなかったけれど、黙って見ているしかなかっ\nた。\w\z
 \x00
-SEQ4  REF6 \x84\x03 CALL1 \xf6\x02 CALL3 $\x03 REF_END1 
+SEQ6 REF6 \x84\x03 CALL1 \xf6\x02 CALL3 $\x03 REF_END1 
 LOAD3 SCEK10_003 REF6 \xc6\x05 REF_END2 
 SEQ1 \x8c\x01 SEQ2 x\xa7\x01\x0c\x00\x00\x00\x00"\x03*\x00\x00
  
@@ -38,7 +38,7 @@ SEQ1 \x8c\x01 SEQ2 x\xa7\x01\x0c\x00\x00\x00\x00"\x03*\x00\x00
 母親は、歯を食いしばって耐えていた。@
 そして父親がいないところで、声を押し殺して泣いた。\w\z
 \x00
-SEQ4  REF6 \n\x06 CALL1 \xf6\x02 CALL3 $\x03 REF_END1 
+SEQ6 REF6 \n\x06 CALL1 \xf6\x02 CALL3 $\x03 REF_END1 
 LOAD3 SCEK10_004 REF6 \xec\x06 REF_END2 
 SEQ1 \x8c\x01 SEQ2 |\xa7\x01\x0c\x00\x00\x00\x00"\x03E\x00\x00
  
@@ -47,7 +47,7 @@ SEQ1 \x8c\x01 SEQ2 |\xa7\x01\x0c\x00\x00\x00\x00"\x03E\x00\x00
 「そうね」と母親はいった。@
 「明日、ゆきちゃんと一緒にどこかに行きましょうね」\w\z
 \x00
-SEQ4  REF6 0\x07 CALL1 \xf6\x02 CALL3 $\x03 REF_END1 
+SEQ6 REF6 0\x07 CALL1 \xf6\x02 CALL3 $\x03 REF_END1 
 LOAD3 SCEK10_005 REF6 ~\x08 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \x80\xa7\x01\x0c\x00\x00\x00\x00"\x03i\x00\x00
  
@@ -57,7 +57,7 @@ SEQ1 \x8c\x01 SEQ2 \x80\xa7\x01\x0c\x00\x00\x00\x00"\x03i\x00\x00
 　しかし母親はその晩、いつまで待ってもゆきの部屋には現れな\nかった。@
 翌朝、何事もなかったように台所で朝食を作る母親の姿を見て、\nゆきは深く傷つき、落胆した。\w\z
 \x00\x00\x00
-SEQ4  REF6 \xc2\x08 CALL1 \xf6\x02 CALL3 $\x03 REF_END1 
+SEQ6 REF6 \xc2\x08 CALL1 \xf6\x02 CALL3 $\x03 REF_END1 
 LOAD3 SCEK10_006 REF6 \xa0\n REF_END2 
 SEQ1 \x8c\x01 SEQ2 \x84\xa7\x01\x0c\x00\x00\x00\x00"\x03v\x00\x00
  
@@ -66,7 +66,7 @@ SEQ1 \x8c\x01 SEQ2 \x84\xa7\x01\x0c\x00\x00\x00\x00"\x03v\x00\x00
 なにか呪われた秘密のようなものが、母親と父親の間には隠され\nているのではないかとさえ考えた。@
 しかしそのうち、事態はそれほど複雑ではないということがわか\nってきた。\w\z
 \x00
-SEQ4  REF6 \xe4\n CALL1 \xf6\x02 CALL3 $\x03 REF_END1 
+SEQ6 REF6 \xe4\n CALL1 \xf6\x02 CALL3 $\x03 REF_END1 
 LOAD3 SCEK10_007 REF6 \xf6\x0c REF_END2 
 SEQ1 \x8c\x01 SEQ2 \x88\xa7\x01\x0c\x00\x00\x00\x00"\x03\xcd\x00\x00
  
@@ -82,7 +82,7 @@ SEQ1 \x8c\x01 SEQ2 \x88\xa7\x01\x0c\x00\x00\x00\x00"\x03\xcd\x00\x00
 一度そう考えると、もう逃げることができなくなっていた。@
 ゆきは、脅迫神経症的に、大人になることを恐れるようになって\nいった……。\w\z
 \x00
-SEQ4  REF6 :\r CALL1 \xf6\x02 CALL3 $\x03 REF_END1 
+SEQ6 REF6 :\r CALL1 \xf6\x02 CALL3 $\x03 REF_END1 
 LOAD3 SCEK10_008 REF6 \xa8\x10 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \x8c\xa7\x01\x0c\x00\x00\x00\x00"\x03x\x00\x00
  
@@ -95,7 +95,7 @@ SEQ1 \x8c\x01 SEQ2 \x8c\xa7\x01\x0c\x00\x00\x00\x00"\x03x\x00\x00
 ゆきは台所から包丁を持ち出して部屋に戻って、喉を突こうとし\nた。@
 でも、できなかった（もちろん、怖かったからよ）。\w\z
 \x00
-SEQ4  REF6 \xec\x10 CALL1 \xf6\x02 CALL3 $\x03 REF_END1 
+SEQ6 REF6 \xec\x10 CALL1 \xf6\x02 CALL3 $\x03 REF_END1 
 LOAD3 SCEK10_009 REF6 \x06\x13 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \x90\xa7\x01\x0c\x00\x00\x00\x00"\x032\x00\x00
  
@@ -104,6 +104,6 @@ SEQ1 \x8c\x01 SEQ2 \x90\xa7\x01\x0c\x00\x00\x00\x00"\x032\x00\x00
 そしてその日、７月２７日、誕生日。@
 \nでもゆきは死ぬことができなかった（もちろん、怖かったからよ）\n\w\z
 \x00\x00\x00
-SEQ4  REF6 J\x13 CALL1 \xf6\x02 CALL3 $\x03 CALL2 \xf6\x02 REF_END2 
+SEQ6 REF6 J\x13 CALL1 \xf6\x02 CALL3 $\x03 CALL2 \xf6\x02 REF_END2 
 LOAD3 TextClose REF2 X\x14 REF_END1 
 END_FILE

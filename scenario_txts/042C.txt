@@ -11,8 +11,8 @@ SEQ1 \x8c\x01 SEQ2 @Q SEQ3 \x03L\x00\x00
 /*▲BGM　Track06　再生*/\a2,-1,6,1,\n\n　死んじまおうかなあ。\
 
 
-SEQ4  REF6 J\x00 REF_END3 
-LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \x9a\x01 REF_END2 
+SEQ6 REF6 J\x00 REF_END3 
+LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 \x9a\x01 REF_END2 
 LOAD2 TextOn REF1 \xc8\x01 REF_END1 
 LOAD3 SCE042_002 REF6 \xe4\x01 REF_END2 
 SEQ1 \x8c\x01 SEQ2 DQ SEQ3 \x03\xe4\x00\x00
@@ -22,7 +22,7 @@ SEQ1 \x8c\x01 SEQ2 DQ SEQ3 \x03\xe4\x00\x00
 　結局のところ、死というものは、言葉にしても意味のないもの\nあるいは言葉にすることによって意味が失われてしまうようなも\nのなのだ。\p故に人間は死を恐れる。\p理解できないからだ。\
 
 \x00\x00\x00
-SEQ4  REF6 (\x02 CALL1 \x9a\x01 CALL3 \xc8\x01 REF_END1 
+SEQ6 REF6 (\x02 CALL1 \x9a\x01 CALL3 \xc8\x01 REF_END1 
 LOAD3 SCE042_003 REF6 \xf2\x05 REF_END2 
 SEQ1 \x8c\x01 SEQ2 HQ SEQ3 \x03\x9b\x00\x00
  
@@ -40,7 +40,7 @@ SEQ1 \x8c\x01 SEQ2 HQ SEQ3 \x03\x9b\x00\x00
 　救済の方法ではないか？\
 
 \x00
-SEQ4  REF6 6\x06 CALL1 \x9a\x01 CALL3 \xc8\x01 REF_END1 
+SEQ6 REF6 6\x06 CALL1 \x9a\x01 CALL3 \xc8\x01 REF_END1 
 LOAD3 SCE042_004 REF6 \xdc\x08 REF_END2 
 SEQ1 \x8c\x01 SEQ2 LQ SEQ3 \x03&\x00\x00
  
@@ -49,10 +49,10 @@ SEQ1 \x8c\x01 SEQ2 LQ SEQ3 \x03&\x00\x00
 　そして死ぬほどの勇気は、拓司にはない。\
 
 \x00\x00\x00
-SEQ4  REF6  \t CALL1 \x9a\x01 CALL3 \xc8\x01 REF_END1 
+SEQ6 REF6  \t CALL1 \x9a\x01 CALL3 \xc8\x01 REF_END1 
 LOAD6 .\\Data\\Script\\Bgm.Fob REF2 \xf2\t REF_END2 
 LOAD2 StopCD REF1 \x1c\n REF_END1 
-SEQ4 \x00\x1e\x00\x00\x00 REF_END3  \x1e\x04\x00\x00\r\x00\x00\x1e\x18\x00 REF_END3  \x1e\x08\x00\x00\r\x00\x00\x1e\x00\x00\x00 CALL1 \xf2\t REF_END2 
+SEQ5 \x00\x00\x00 REF_END3  \x1e\x04\x00\x00\r\x00\x00\x1e\x18\x00 REF_END3  \x1e\x08\x00\x00\r\x00\x00\x1e\x00\x00\x00 CALL1 \xf2\t REF_END2 
 LOAD3 SePlayEx REF3 \x92\n REF_END1 \x1e<\x00\x00\x1e\x00\x00\x00\x00\x92 REF7 \x9a\x01 REF_END2 
 LOAD3 TextClose REF2 \xcc\n REF_END1 
 END_FILE

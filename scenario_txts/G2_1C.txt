@@ -10,8 +10,8 @@ SEQ1 \x8c\x01 SEQ2 h\xc5\x01\x0c\x00\x00\x00\x00"\x03\x86\x00\x00
 　　虎菱くんのあそこ、もう爆発しそうだわ。@
 　　よっぽど先生のおっぱい、気に入ったのね？\n　　ほんと……いやらしい子だわ」\w\z
 \x00
-SEQ4  REF6 J\x00 REF_END3 
-LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \x82\x02 REF_END2 
+SEQ6 REF6 J\x00 REF_END3 
+LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 \x82\x02 REF_END2 
 LOAD2 TextOn REF1 \xb0\x02 REF_END1 
 LOAD6 .\\Data\\Script\\Bgm.Fob REF2 \xcc\x02 REF_END2 
 LOAD2 StopCD REF1 \xf6\x02 CALL2 \x82\x02 REF_END2 

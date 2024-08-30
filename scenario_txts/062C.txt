@@ -2,7 +2,7 @@ START_FILE
 /8\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\x9a/\x00
 LOAD3 SCE062_001 REF6 \x06\x00 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \x80p SEQ3 
-SEQ4 \x00\x1e\x00\x00\x00 REF_END3  \x1e\x04\x00\x00\r\x00\x00\x1e\t\x00 REF_END3  \x1e\x08\x00\x00\r\x00\x00\x1e\x00\x00\x00 REF_END3 
+SEQ5 \x00\x00\x00 REF_END3  \x1e\x04\x00\x00\r\x00\x00\x1e\t\x00 REF_END3  \x1e\x08\x00\x00\r\x00\x00\x1e\x00\x00\x00 REF_END3 
 LOAD6 .\\Data\\Script\\Bgm.Fob REF2 \x98\x00 REF_END2 
 LOAD3 SePlayEx REF3 \xc2\x00 REF_END1 \x03\x13\x00\x00
  
@@ -10,10 +10,10 @@ LOAD3 SePlayEx REF3 \xc2\x00 REF_END1 \x03\x13\x00\x00
 \nその声は、頭上から聞こえてきた。\
 
 \x00
-SEQ4  REF6 \xe2\x00 REF_END3 
-LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 N\x01 REF_END2 
+SEQ6 REF6 \xe2\x00 REF_END3 
+LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 N\x01 REF_END2 
 LOAD2 TextOn REF1 |\x01 REF_END1 
-SEQ4 \x00\x1e\x18\x00 REF_END3 
+SEQ5 \x18\x00 REF_END3 
 LOAD6 .\\Data\\Script\\Bg.Fob REF3 \xb2\x01 REF_END2 
 LOAD4 BgAutoFadeIn REF3 \xdc\x01 REF_END1 
 LOAD3 SCE062_002 REF6 \x00\x02 REF_END2 
@@ -28,7 +28,7 @@ SEQ1 \x8c\x01 SEQ2 \x84p SEQ3 \x03\xcc\x00\x00
 カンナはその頂上に君臨する、死の女王だった。\
 
 \x00\x00\x00
-SEQ4  REF6 D\x02 CALL1 N\x01 CALL3 |\x01 REF_END1 
+SEQ6 REF6 D\x02 CALL1 N\x01 CALL3 |\x01 REF_END1 
 LOAD3 SCE062_003 REF6 \xae\x05 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \x88p SEQ3 \x03]\x00\x00
  
@@ -41,8 +41,8 @@ SEQ1 \x8c\x01 SEQ2 \x88p SEQ3 \x03]\x00\x00
 拓司\n　「……」\
 
 \x00\x00\x00
-SEQ4  REF6 \xf2\x05 CALL1 N\x01 CALL3 |\x01 REF_END1 
-SEQ4 \x00\x1e\x0b\x01 CALL1 \x98\x00 REF_END2 
+SEQ6 REF6 \xf2\x05 CALL1 N\x01 CALL3 |\x01 REF_END1 
+SEQ5 \x0b\x01 CALL1 \x98\x00 REF_END2 
 LOAD2 PlayCD REF1 \xc6\x07 REF_END1 
 LOAD3 SCE062_004 REF6 \xe2\x07 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \x8cp SEQ3 \x03\xb7\x00\x00
@@ -55,7 +55,7 @@ SEQ1 \x8c\x01 SEQ2 \x8cp SEQ3 \x03\xb7\x00\x00
 \n隣に立つなたねが小さくいった。\
 
 \x00
-SEQ4  REF6 &\x08 CALL1 N\x01 CALL3 |\x01 CALL2 \x98\x00 REF_END2 
+SEQ6 REF6 &\x08 CALL1 N\x01 CALL3 |\x01 CALL2 \x98\x00 REF_END2 
 LOAD2 StopCD REF1 H\x0b REF_END1 
 LOAD3 SCE062_005 REF6 d\x0b REF_END2 
 SEQ1 \x8c\x01 SEQ2 \x90p SEQ3 \x03\xb0\x00\x00
@@ -69,7 +69,7 @@ SEQ1 \x8c\x01 SEQ2 \x90p SEQ3 \x03\xb0\x00\x00
 カンナ\n　「……あなたも？」\
 
 \x00\x00\x00
-SEQ4  REF6 \xa8\x0b CALL1 N\x01 CALL3 |\x01 REF_END1 
+SEQ6 REF6 \xa8\x0b CALL1 N\x01 CALL3 |\x01 REF_END1 
 LOAD3 SCE062_006 REF6 \xa2\x0e REF_END2 
 SEQ1 \x8c\x01 SEQ2 \x94p SEQ3 \x03\x7f\x00\x00
  
@@ -82,7 +82,7 @@ SEQ1 \x8c\x01 SEQ2 \x94p SEQ3 \x03\x7f\x00\x00
 呆気にとられる拓司を無視するようにカンナはしばらく笑い続け\nた。\p腹を抱えて、しまいには息をするのも苦しいらしく、ヒイヒ\nイと笑い続けた。\
 
 \x00
-SEQ4  REF6 \xe6\x0e CALL1 N\x01 CALL3 |\x01 REF_END1 
+SEQ6 REF6 \xe6\x0e CALL1 N\x01 CALL3 |\x01 REF_END1 
 LOAD3 SCE062_007 REF6 \x1c\x11 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \x98p SEQ3 \x03S\x00\x00
  
@@ -93,7 +93,7 @@ SEQ1 \x8c\x01 SEQ2 \x98p SEQ3 \x03S\x00\x00
 \nカンナは拓司を鋭く指さして、一気呵成にまくしたてた。\
 
 \x00\x00\x00
-SEQ4  REF6 `\x11 CALL1 N\x01 CALL3 |\x01 REF_END1 
+SEQ6 REF6 `\x11 CALL1 N\x01 CALL3 |\x01 REF_END1 
 LOAD3 SCE062_008 REF6 \xe6\x12 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \x9cp SEQ3 \x03\xfb\x00\x00
  
@@ -104,7 +104,7 @@ SEQ1 \x8c\x01 SEQ2 \x9cp SEQ3 \x03\xfb\x00\x00
 　　今の私じゃない。\pなんでもなかった頃の私で…………………\n　　………………………………………………………………………\n　　…………………………………………思い上がるなッ！」\
 
 \x00
-SEQ4  REF6 *\x13 CALL1 N\x01 CALL3 |\x01 REF_END1 
+SEQ6 REF6 *\x13 CALL1 N\x01 CALL3 |\x01 REF_END1 
 LOAD3 SCE062_009 REF6 P\x17 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \xa0p SEQ3 \x03h\x00\x00
  
@@ -114,7 +114,7 @@ SEQ1 \x8c\x01 SEQ2 \xa0p SEQ3 \x03h\x00\x00
 \nカンナ\n　「この中に、×××××が入ってるわ」\
 
 \x00\x00\x00
-SEQ4  REF6 \x94\x17 CALL1 N\x01 CALL3 |\x01 REF_END1 
+SEQ6 REF6 \x94\x17 CALL1 N\x01 CALL3 |\x01 REF_END1 
 LOAD3 SCE062_010 REF6 n\x19 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \xa4p SEQ3 \x03q\x00\x00
  
@@ -122,7 +122,7 @@ SEQ1 \x8c\x01 SEQ2 \xa4p SEQ3 \x03q\x00\x00
 睡眠薬として使われる規制医薬品で、２グラムのんだだけで確実\nに心臓が止まるといわれる劇薬中の劇薬だ。\pもちろん、薬屋で買\nうことはできないし、それどころか国内では取り扱われていない。\n\pしかし－－カンナならばそれを手に入れることぐらい、造作のな\nいことのように思えた。\p拓司は、五号棟でカンナが××××を飲\nんでいるのを見たことがあったし、勧められて×××××を吸っ\nたこともある。\
 
 \x00
-SEQ4  REF6 \xb2\x19 CALL1 N\x01 CALL3 |\x01 REF_END1 
+SEQ6 REF6 \xb2\x19 CALL1 N\x01 CALL3 |\x01 REF_END1 
 LOAD3 SCE062_011 REF6 \xb0\x1b REF_END2 
 SEQ1 \x8c\x01 SEQ2 \xa8p SEQ3 \x03z\x00\x00
  
@@ -135,7 +135,7 @@ SEQ1 \x8c\x01 SEQ2 \xa8p SEQ3 \x03z\x00\x00
 拓司\n　「……」\
 
 \x00
-SEQ4  REF6 \xf4\x1b CALL1 N\x01 CALL3 |\x01 REF_END1 
+SEQ6 REF6 \xf4\x1b CALL1 N\x01 CALL3 |\x01 REF_END1 
 LOAD3 SCE062_012 REF6 \x16\x1e REF_END2 
 SEQ1 \x8c\x01 SEQ2 \xacp SEQ3 \x03\xb5\x00\x00
  
@@ -148,7 +148,7 @@ SEQ1 \x8c\x01 SEQ2 \xacp SEQ3 \x03\xb5\x00\x00
 　　死と交わるって文字通りこんな感じ……？\p　ふふ……」\
 
 
-SEQ4  REF6 Z\x1e CALL1 N\x01 CALL3 |\x01 REF_END1 
+SEQ6 REF6 Z\x1e CALL1 N\x01 CALL3 |\x01 REF_END1 
 LOAD3 SCE062_013 REF6 h! REF_END2 
 SEQ1 \x8c\x01 SEQ2 \xb0p SEQ3 \x03w\x00\x00
  
@@ -160,7 +160,7 @@ SEQ1 \x8c\x01 SEQ2 \xb0p SEQ3 \x03w\x00\x00
 \nなたね\n　「……話を続けて」\
 
 \x00
-SEQ4  REF6 \xac! CALL1 N\x01 CALL3 |\x01 REF_END1 
+SEQ6 REF6 \xac! CALL1 N\x01 CALL3 |\x01 REF_END1 
 LOAD3 SCE062_014 REF6 \xc2# REF_END2 
 SEQ1 \x8c\x01 SEQ2 \xb4p SEQ3 \x03\x80\x00\x00
  
@@ -174,7 +174,7 @@ SEQ1 \x8c\x01 SEQ2 \xb4p SEQ3 \x03\x80\x00\x00
 カンナ\n　「－－もちろん」\
 
 \x00
-SEQ4  REF6 \x06$ CALL1 N\x01 CALL3 |\x01 REF_END1 
+SEQ6 REF6 \x06$ CALL1 N\x01 CALL3 |\x01 REF_END1 
 LOAD3 SCE062_015 REF6 @& REF_END2 
 SEQ1 \x8c\x01 SEQ2 \xb8p SEQ3 \x03f\x00\x00
  
@@ -188,7 +188,7 @@ SEQ1 \x8c\x01 SEQ2 \xb8p SEQ3 \x03f\x00\x00
 拓司\n　「……？」\
 
 \x00\x00\x00
-SEQ4  REF6 \x84& CALL1 N\x01 CALL3 |\x01 REF_END1 
+SEQ6 REF6 \x84& CALL1 N\x01 CALL3 |\x01 REF_END1 
 LOAD3 SCE062_016 REF6 V( REF_END2 
 SEQ1 \x8c\x01 SEQ2 \xbcp SEQ3 \x03\xab\x00\x00
  
@@ -199,7 +199,7 @@ SEQ1 \x8c\x01 SEQ2 \xbcp SEQ3 \x03\xab\x00\x00
 \n拓司\n　「わかった」\
 
 \x00\x00\x00
-SEQ4  REF6 \x9a( CALL1 N\x01 CALL3 |\x01 REF_END1 
+SEQ6 REF6 \x9a( CALL1 N\x01 CALL3 |\x01 REF_END1 
 LOAD3 SCE062_017 REF6 \x80+ REF_END2 
 SEQ1 \x8c\x01 SEQ2 \xc0p SEQ3 \x03\xb6\x00\x00
  
@@ -209,12 +209,12 @@ SEQ1 \x8c\x01 SEQ2 \xc0p SEQ3 \x03\xb6\x00\x00
 　　ここに、さっきの実験を施したイヌと、普通のイヌを入れた\n　　ら、どんなことが起きるでしょう？」\
 
 \x00\x00\x00
-SEQ4  REF6 \xc4+ CALL1 N\x01 CALL3 |\x01 REF_END1 \x03\x18\x00\x00
+SEQ6 REF6 \xc4+ CALL1 N\x01 CALL3 |\x01 REF_END1 \x03\x18\x00\x00
 CHOICE
 電気ショックを受けたイヌが回避手段を見つける\n普通のイヌが回避手段を見つける\n\l0,2,
 ENDCHOICE
 
 \x00\x00\x00
-SEQ4  REF6 \xd6. CALL1 N\x01 CALL3 |\x01 CALL2 N\x01 REF_END2 
+SEQ6 REF6 \xd6. CALL1 N\x01 CALL3 |\x01 CALL2 N\x01 REF_END2 
 LOAD3 TextClose REF2 |/ REF_END1 
 END_FILE

@@ -2,7 +2,7 @@ START_FILE
 \xd3\x15\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\x9e\x12\x00
 LOAD3 SCE050_001 REF6 \x06\x00 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \xc0] SEQ3 
-SEQ4 \x00\x1e\x00\x00\x00 REF_END3  \x1e\x04\x00\x00\r\x00\x00\x1e\x19\x00 REF_END3  \x1e\x08\x00\x00\r\x00\x00\x1e\x00\x00\x00 REF_END3 
+SEQ5 \x00\x00\x00 REF_END3  \x1e\x04\x00\x00\r\x00\x00\x1e\x19\x00 REF_END3  \x1e\x08\x00\x00\r\x00\x00\x1e\x00\x00\x00 REF_END3 
 LOAD6 .\\Data\\Script\\Bgm.Fob REF2 \x98\x00 REF_END2 
 LOAD3 SePlayEx REF3 \xc2\x00 REF_END1 \x03\x82\x00\x00
  
@@ -14,8 +14,8 @@ LOAD3 SePlayEx REF3 \xc2\x00 REF_END1 \x03\x82\x00\x00
 　　これはテストには出ないが、重要なことだぞ」\
 
 \x00
-SEQ4  REF6 \xe2\x00 REF_END3 
-LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \n\x03 REF_END2 
+SEQ6 REF6 \xe2\x00 REF_END3 
+LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 \n\x03 REF_END2 
 LOAD2 TextOn REF1 8\x03 REF_END1 
 LOAD3 SCE050_002 REF6 T\x03 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \xc4] SEQ3 \x03o\x00\x00
@@ -28,7 +28,7 @@ SEQ1 \x8c\x01 SEQ2 \xc4] SEQ3 \x03o\x00\x00
 ためらいのかけらもない、完璧なアクションだった。\
 
 \x00\x00\x00
-SEQ4  REF6 \x98\x03 CALL1 \n\x03 CALL3 8\x03 REF_END1 
+SEQ6 REF6 \x98\x03 CALL1 \n\x03 CALL3 8\x03 REF_END1 
 LOAD3 SCE050_003 REF6 \x8e\x05 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \xc8] SEQ3 \x03\xd9\x00\x00
  
@@ -43,7 +43,7 @@ SEQ1 \x8c\x01 SEQ2 \xc8] SEQ3 \x03\xd9\x00\x00
 なんの劇的さもなかった。\pただ、どたん、どたん、と、学生た\nちが机に突っ伏してゆく音だけが連続して聞こえて、それは単\n純に「奇妙」としかいえなかった。\p悲しい感じとか、不気味な感\nじとか、異常な感じとか……そんな、もっともらしい感想が入り\n込む余地はどこにもなかった。\pただ奇妙だった。\
 
 \x00\x00\x00
-SEQ4  REF6 \xd2\x05 CALL1 \n\x03 CALL3 8\x03 REF_END1 
+SEQ6 REF6 \xd2\x05 CALL1 \n\x03 CALL3 8\x03 REF_END1 
 LOAD3 SCE050_004 REF6 p\t REF_END2 
 SEQ1 \x8c\x01 SEQ2 \xcc] SEQ3 \x03\x8f\x00\x00
  
@@ -54,7 +54,7 @@ SEQ1 \x8c\x01 SEQ2 \xcc] SEQ3 \x03\x8f\x00\x00
 \n拓司\n　「……もういいよ、雲居さん」\
 
 \x00
-SEQ4  REF6 \xb4\t CALL1 \n\x03 CALL3 8\x03 REF_END1 
+SEQ6 REF6 \xb4\t CALL1 \n\x03 CALL3 8\x03 REF_END1 
 LOAD3 SCE050_005 REF6 *\x0c REF_END2 
 SEQ1 \x8c\x01 SEQ2 \xd0] SEQ3 \x03c\x00\x00
  
@@ -64,7 +64,7 @@ SEQ1 \x8c\x01 SEQ2 \xd0] SEQ3 \x03c\x00\x00
 \nなたね\n　「広まるわよ。とまらないで広まる。\pみんな死ぬ」\
 
 \x00\x00\x00
-SEQ4  REF6 n\x0c CALL1 \n\x03 CALL3 8\x03 REF_END1 
+SEQ6 REF6 n\x0c CALL1 \n\x03 CALL3 8\x03 REF_END1 
 LOAD3 SCE050_006 REF6 4\x0e REF_END2 
 SEQ1 \x8c\x01 SEQ2 \xd4] SEQ3 \x03d\x00\x00
  
@@ -79,7 +79,7 @@ SEQ1 \x8c\x01 SEQ2 \xd4] SEQ3 \x03d\x00\x00
 　何をすべきか！\
 
 \x00\x00\x00
-SEQ4  REF6 x\x0e CALL1 \n\x03 CALL3 8\x03 REF_END1 
+SEQ6 REF6 x\x0e CALL1 \n\x03 CALL3 8\x03 REF_END1 
 LOAD3 SCE050_007 REF6 B\x10 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \xd8] SEQ3 \x03c\x00\x00
  
@@ -92,7 +92,7 @@ SEQ1 \x8c\x01 SEQ2 \xd8] SEQ3 \x03c\x00\x00
 　この３階廊下をまっすぐ行った突き当たりの教室に、早桃はい\n　る。\
 
 \x00
-SEQ4  REF6 \x86\x10 CALL1 \n\x03 CALL3 8\x03 CALL2 \x98\x00 REF_END2 
+SEQ6 REF6 \x86\x10 CALL1 \n\x03 CALL3 8\x03 CALL2 \x98\x00 REF_END2 
 LOAD2 StopCD REF1 X\x12 CALL2 \n\x03 REF_END2 
 LOAD3 TextClose REF2 \x80\x12 REF_END1 
 END_FILE

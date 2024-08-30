@@ -6,8 +6,8 @@ SEQ1 \x8c\x01 SEQ2 \x10l\x01\x0c\x00\x00\x00\x00"\x03\x11\x00\x00
 \n\n\n\n\n\n\n\n\n\n　　　　　　　　　　　　　『１１日目』\
 
 \x00
-SEQ4  REF6 J\x00 REF_END3 
-LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xae\x00 REF_END2 
+SEQ6 REF6 J\x00 REF_END3 
+LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 \xae\x00 REF_END2 
 LOAD2 TextOn REF1 \xdc\x00 REF_END1 
 LOAD3 SCE223_002 REF6 \xf8\x00 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \x14l\x01\x0c\x00\x00\x00\x00"\x03o\x00\x00
@@ -21,7 +21,7 @@ SEQ1 \x8c\x01 SEQ2 \x14l\x01\x0c\x00\x00\x00\x00"\x03o\x00\x00
 \nカンナが、フンと鼻で笑った。\
 
 \x00\x00\x00
-SEQ4  REF6 <\x01 CALL1 \xae\x00 CALL3 \xdc\x00 REF_END1 
+SEQ6 REF6 <\x01 CALL1 \xae\x00 CALL3 \xdc\x00 REF_END1 
 LOAD3 SCE223_003 REF6 2\x03 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \x18l\x01\x0c\x00\x00\x00\x00"\x03}\x00\x00
  
@@ -34,7 +34,7 @@ SEQ1 \x8c\x01 SEQ2 \x18l\x01\x0c\x00\x00\x00\x00"\x03}\x00\x00
 カンナ\n　「先生が思っているそのままの意味ですけど」\
 
 \x00
-SEQ4  REF6 v\x03 CALL1 \xae\x00 CALL3 \xdc\x00 REF_END1 
+SEQ6 REF6 v\x03 CALL1 \xae\x00 CALL3 \xdc\x00 REF_END1 
 LOAD3 SCE223_004 REF6 \xa4\x05 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \x1cl\x01\x0c\x00\x00\x00\x00"\x03\x7f\x00\x00
  
@@ -45,12 +45,12 @@ SEQ1 \x8c\x01 SEQ2 \x1cl\x01\x0c\x00\x00\x00\x00"\x03\x7f\x00\x00
 \n錦城が勝ち誇ったような目で拓司を見た。\
 
 \x00
-SEQ4  REF6 \xe8\x05 CALL1 \xae\x00 CALL3 \xdc\x00 REF_END1 \x03\x10\x00\x00
+SEQ6 REF6 \xe8\x05 CALL1 \xae\x00 CALL3 \xdc\x00 REF_END1 \x03\x10\x00\x00
 CHOICE
 拓司は錦城に殴りかかった\n拓司はじっと耐えた\n\l0,2,
 ENDCHOICE
 
 \x00\x00\x00
-SEQ4  REF6 \x1e\x08 CALL1 \xae\x00 CALL3 \xdc\x00 CALL2 \xae\x00 REF_END2 
+SEQ6 REF6 \x1e\x08 CALL1 \xae\x00 CALL3 \xdc\x00 CALL2 \xae\x00 REF_END2 
 LOAD3 TextClose REF2 \xa4\x08 REF_END1 
 END_FILE

@@ -9,14 +9,14 @@ SEQ1 \x8c\x01 SEQ2 \x00\xa9\x01\x0c\x00\x00\x00\x00"\x03`\x00\x00
 でも、その話を聞きながら、私は、ゆきを救い出す方法をひとつ\n見つけだしていた。@
 しばらく考えてから、私はゆきにいった。\w\z
 \x00
-SEQ4  REF6 J\x00 REF_END3 
-LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xea\x01 REF_END2 
+SEQ6 REF6 J\x00 REF_END3 
+LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 \xea\x01 REF_END2 
 LOAD2 TextOn REF1 \x18\x02 REF_END1 \x03\x18\x00\x00
 CHOICE
 「大丈夫だよ。私が一緒に死んであげるから」\n「お父さんのこと、一緒に殺そう？」\n\l0,2,
 ENDCHOICE
 
 \x00
-SEQ4  REF6 4\x02 CALL1 \xea\x01 CALL3 \x18\x02 CALL2 \xea\x01 REF_END2 
+SEQ6 REF6 4\x02 CALL1 \xea\x01 CALL3 \x18\x02 CALL2 \xea\x01 REF_END2 
 LOAD3 TextClose REF2 \xda\x02 REF_END1 
 END_FILE

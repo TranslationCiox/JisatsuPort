@@ -1,6 +1,6 @@
 START_FILE
 \xbe#\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xec\x1d\x00
-SEQ4 \x00\x1e\xc8\x00 REF_END3 
+SEQ5 \xc8\x00 REF_END3 
 LOAD6 .\\Data\\Script\\Bg.Fob REF3  \x00 REF_END2 
 LOAD2 BgOn REF3 J\x00 REF_END1 
 LOAD3 SCE088_001 REF6 f\x00 REF_END2 
@@ -13,8 +13,8 @@ SEQ1 \x8c\x01 SEQ2  \x99 SEQ3 \x03\x96\x00\x00
 御堂\n　「うるせえッ！\p　とにかく、こんな狂った女を信じるのは俺は\n　　ゴメンだ！\p　お前らも信じてなんかいねえくせに、信じたフ\n　　リすんのはやめろ！\p　溺れてるからってワラ掴んでどうする\n　　よ！\p　ワラはしょせんワラなんだぞ、てめえら！」　\
 
 \x00
-SEQ4  REF6 \xaa\x00 REF_END3 
-LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 "\x03 REF_END2 
+SEQ6 REF6 \xaa\x00 REF_END3 
+LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 "\x03 REF_END2 
 LOAD2 TextOn REF1 P\x03 REF_END1 
 LOAD3 SCE088_002 REF6 l\x03 REF_END2 
 SEQ1 \x8c\x01 SEQ2 $\x99 SEQ3 \x03\xaa\x00\x00
@@ -30,7 +30,7 @@ SEQ1 \x8c\x01 SEQ2 $\x99 SEQ3 \x03\xaa\x00\x00
 　　アルミホイルは窓には張り付けないで。\p反射した波動をはじ\n　　き返す出口が必要だから。\pそうしないと波動が内部で無限反\n　　射を繰り返すことになってしまうから－－」\
 
 \x00
-SEQ4  REF6 \xb0\x03 CALL1 "\x03 CALL3 P\x03 REF_END1 
+SEQ6 REF6 \xb0\x03 CALL1 "\x03 CALL3 P\x03 REF_END1 
 LOAD3 SCE088_003 REF6 \x92\x06 REF_END2 
 SEQ1 \x8c\x01 SEQ2 (\x99 SEQ3 \x03s\x00\x00
  
@@ -44,7 +44,7 @@ SEQ1 \x8c\x01 SEQ2 (\x99 SEQ3 \x03s\x00\x00
 /*▲BGM　Track06　再生*/\a2,-1,6,1,なたね\n　「私たちは団結しなければなりません。\p私たちの目的は、この\n　　非常事態下を生き残ること。\pそうでしょう？\p　だから団結\n　　を乱すような行為は控えてください」\
 
 \x00\x00
-SEQ4  REF6 \xd6\x06 CALL1 "\x03 CALL3 P\x03 REF_END1 
+SEQ6 REF6 \xd6\x06 CALL1 "\x03 CALL3 P\x03 REF_END1 
 LOAD3 SCE088_004 REF6 \xdc\x08 REF_END2 
 SEQ1 \x8c\x01 SEQ2 ,\x99 SEQ3 \x03\xa2\x00\x00
  
@@ -57,7 +57,7 @@ SEQ1 \x8c\x01 SEQ2 ,\x99 SEQ3 \x03\xa2\x00\x00
 \n　全員の視線が、さっと実験準備室の扉へと注がれる。\
 
 \x00
-SEQ4  REF6  \t CALL1 "\x03 CALL3 P\x03 REF_END1 
+SEQ6 REF6  \t CALL1 "\x03 CALL3 P\x03 REF_END1 
 LOAD3 SCE088_005 REF6 \xe2\x0b REF_END2 
 SEQ1 \x8c\x01 SEQ2 0\x99 SEQ3 \x03\x82\x00\x00
  
@@ -70,7 +70,7 @@ SEQ1 \x8c\x01 SEQ2 0\x99 SEQ3 \x03\x82\x00\x00
 錦城\n　「やめなさい、御堂くん！\p……どういうことかしら、雲居さ\n　　ん。\p御堂くんじゃなくても、あなたの話を聞いていると不安\n　　になるわ。\pわかりやすく説明してもらえないかしら？」\
 
 \x00
-SEQ4  REF6 &\x0c CALL1 "\x03 CALL3 P\x03 REF_END1 
+SEQ6 REF6 &\x0c CALL1 "\x03 CALL3 P\x03 REF_END1 
 LOAD3 SCE088_006 REF6 h\x0e REF_END2 
 SEQ1 \x8c\x01 SEQ2 4\x99 SEQ3 \x03\xb1\x00\x00
  
@@ -82,7 +82,7 @@ SEQ1 \x8c\x01 SEQ2 4\x99 SEQ3 \x03\xb1\x00\x00
 \n　なたねはそれを無視して続けた。\p異様な緊張が、部屋に充ちて\n　いる。\
 
 \x00
-SEQ4  REF6 \xac\x0e CALL1 "\x03 CALL3 P\x03 REF_END1 
+SEQ6 REF6 \xac\x0e CALL1 "\x03 CALL3 P\x03 REF_END1 
 LOAD3 SCE088_007 REF6 \xaa\x11 REF_END2 
 SEQ1 \x8c\x01 SEQ2 8\x99 SEQ3 \x03\x99\x00\x00
  
@@ -95,7 +95,7 @@ SEQ1 \x8c\x01 SEQ2 8\x99 SEQ3 \x03\x99\x00\x00
 錦城\n　「どういう意味……？」\
 
 \x00
-SEQ4  REF6 \xee\x11 CALL1 "\x03 CALL3 P\x03 REF_END1 
+SEQ6 REF6 \xee\x11 CALL1 "\x03 CALL3 P\x03 REF_END1 
 LOAD3 SCE088_008 REF6 \x8c\x14 REF_END2 
 SEQ1 \x8c\x01 SEQ2 <\x99 SEQ3 \x03\xb6\x00\x00
  
@@ -106,7 +106,7 @@ SEQ1 \x8c\x01 SEQ2 <\x99 SEQ3 \x03\xb6\x00\x00
 なたね\n　「このように、みなさんは、他のみなさんに対して中立ではあ\n　　りません。\pすなわち、不公平な専制君主が生まれる危険性が\n　　あるわけです。\pですから、暴走を抑止する意味で、私が鍵を\n　　管理します。\p一部なりとも、私が権利を所有するというわけ\n　　です。\pもちろん、食糧の管理を受け持つ私が専制君主になる\n　　可能性はあるわけですが、その場合、力ずくでもなんでも、\n　　私から鍵を奪うことは簡単なはずです。\pもっとも、私も私な\n　　りに抵抗はさせてもらうと思いますけれど」\
 
 \x00
-SEQ4  REF6 \xd0\x14 CALL1 "\x03 CALL3 P\x03 REF_END1 
+SEQ6 REF6 \xd0\x14 CALL1 "\x03 CALL3 P\x03 REF_END1 
 LOAD3 SCE088_009 REF6 \xe2\x17 REF_END2 
 SEQ1 \x8c\x01 SEQ2 @\x99 SEQ3 \x03\x8f\x00\x00
  
@@ -119,7 +119,7 @@ SEQ1 \x8c\x01 SEQ2 @\x99 SEQ3 \x03\x8f\x00\x00
 錦城\n　「そうかしら？」\
 
 \x00\x00\x00
-SEQ4  REF6 &\x18 CALL1 "\x03 CALL3 P\x03 REF_END1 
+SEQ6 REF6 &\x18 CALL1 "\x03 CALL3 P\x03 REF_END1 
 LOAD3 SCE088_010 REF6 \x9c\x1a REF_END2 
 SEQ1 \x8c\x01 SEQ2 D\x99 SEQ3 \x03d\x00\x00
  
@@ -130,14 +130,14 @@ SEQ1 \x8c\x01 SEQ2 D\x99 SEQ3 \x03d\x00\x00
 拓司は……\
 
 \x00
-SEQ4  REF6 \xe0\x1a CALL1 "\x03 CALL3 P\x03 REF_END1 \x03!\x00\x00
+SEQ6 REF6 \xe0\x1a CALL1 "\x03 CALL3 P\x03 REF_END1 \x03!\x00\x00
 CHOICE
 自分に投票した\n紅葉に投票した\nカンナに投票した\n早桃に投票した\n御堂に投票した\n錦城に投票した\nなたねに投票した\n\l0,7,
 ENDCHOICE
 
 \x00
-SEQ4  REF6 \xaa\x1c CALL1 "\x03 CALL3 P\x03 CALL2 "\x03 REF_END2 
+SEQ6 REF6 \xaa\x1c CALL1 "\x03 CALL3 P\x03 CALL2 "\x03 REF_END2 
 LOAD4 GetLastTxtID REF3 t\x1d REF_END1 !\x1e\x00\x00\x00\x00\r\x00\x00\x1e\x04\x00\x00\r\x02
-SEQ4 \x00\x0c\x01\x00\x00" REF7 "\x03 REF_END2 
+SEQ6\x00\x0c\x01\x00\x00" REF7 "\x03 REF_END2 
 LOAD3 TextClose REF2 \xce\x1d REF_END1 
 END_FILE

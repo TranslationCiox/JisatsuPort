@@ -8,10 +8,10 @@ SEQ1 \x8c\x01 SEQ2 \xb0\x81 SEQ3 \x03]\x00\x00
 拓司\n　「早桃、行くぞ！」\
 
 \x00\x00\x00
-SEQ4  REF6 J\x00 REF_END3 
-LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xde\x01 REF_END2 
+SEQ6 REF6 J\x00 REF_END3 
+LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 \xde\x01 REF_END2 
 LOAD2 TextOn REF1 \x0c\x02 REF_END1 
-SEQ4 \x00\x1e\x0b\x01 REF_END3 
+SEQ5 \x0b\x01 REF_END3 
 LOAD6 .\\Data\\Script\\Bgm.Fob REF2 B\x02 REF_END2 
 LOAD2 PlayCD REF1 l\x02 REF_END1 
 LOAD3 SCE073_002 REF6 \x88\x02 REF_END2 
@@ -29,7 +29,7 @@ SEQ1 \x8c\x01 SEQ2 \xb4\x81 SEQ3 \x03s\x00\x00
 ようやく、終わったんだ、と。\
 
 \x00\x00
-SEQ4  REF6 \xcc\x02 CALL1 \xde\x01 CALL3 \x0c\x02 CALL2 B\x02 REF_END2 
+SEQ6 REF6 \xcc\x02 CALL1 \xde\x01 CALL3 \x0c\x02 CALL2 B\x02 REF_END2 
 LOAD2 StopCD REF1 \xde\x04 CALL2 \xde\x01 REF_END2 
 LOAD3 TextClose REF2 \x06\x05 REF_END1 
 END_FILE

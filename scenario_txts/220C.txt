@@ -6,10 +6,10 @@ SEQ1 \x8c\x01 SEQ2 `g\x01\x0c\x00\x00\x00\x00"\x03\x11\x00\x00
 \n\n\n\n\n\n\n\n\n\n　　　　　　　　　　　　　『９日目』\
 
 \x00\x00\x00
-SEQ4  REF6 J\x00 REF_END3 
-LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xae\x00 REF_END2 
+SEQ6 REF6 J\x00 REF_END3 
+LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 \xae\x00 REF_END2 
 LOAD2 TextOn REF1 \xdc\x00 REF_END1 
-SEQ4 \x00\x1e\x0c\x01 REF_END3 
+SEQ5 \x0c\x01 REF_END3 
 LOAD6 .\\Data\\Script\\Bgm.Fob REF2 \x12\x01 REF_END2 
 LOAD2 PlayCD REF1 <\x01 REF_END1 
 LOAD3 SCE220_002 REF6 X\x01 REF_END2 
@@ -24,7 +24,7 @@ SEQ1 \x8c\x01 SEQ2 dg\x01\x0c\x00\x00\x00\x00"\x03\x81\x00\x00
 傍らには、錦城の姿があった。\
 
 \x00
-SEQ4  REF6 \x9c\x01 CALL1 \xae\x00 CALL3 \xdc\x00 REF_END1 
+SEQ6 REF6 \x9c\x01 CALL1 \xae\x00 CALL3 \xdc\x00 REF_END1 
 LOAD3 SCE220_003 REF6 \xda\x03 REF_END2 
 SEQ1 \x8c\x01 SEQ2 hg\x01\x0c\x00\x00\x00\x00"\x03\x8e\x00\x00
  
@@ -32,8 +32,8 @@ SEQ1 \x8c\x01 SEQ2 hg\x01\x0c\x00\x00\x00\x00"\x03\x8e\x00\x00
 錦城\n　「理屈から言っても、食糧管理者が食糧管理室に常在するって\n　　いうのは合理的だわ。\p今回の雲居さんへの……暴力は……\n　　不可欠だった。\pわかるわね、みんな？\p　こういうことは二度\n　　と起こされてはならないわ。\pだから、その防止の意味でも、\n　　御堂くんがみんなと違う場所にいるということは意味がある\n　　……そうでしょう？」\
 
 \x00
-SEQ4  REF6 \x1e\x04 CALL1 \xae\x00 CALL3 \xdc\x00 REF_END1 
-SEQ4 \x00\x1e&\x00 REF_END3 
+SEQ6 REF6 \x1e\x04 CALL1 \xae\x00 CALL3 \xdc\x00 REF_END1 
+SEQ5 &\x00 REF_END3 
 LOAD6 .\\Data\\Script\\Bg.Fob REF3 \xaa\x06 REF_END2 
 LOAD4 BgAutoFadeIn REF3 \xd4\x06 REF_END1 
 LOAD3 SCE220_004 REF6 \xf8\x06 REF_END2 
@@ -50,7 +50,7 @@ SEQ1 \x8c\x01 SEQ2 lg\x01\x0c\x00\x00\x00\x00"\x03\xc7\x00\x00
 \n御堂は笑った。\
 
 \x00\x00\x00
-SEQ4  REF6 <\x07 CALL1 \xae\x00 CALL3 \xdc\x00 REF_END1 
-SEQ4 \x00\x1e\xc8\x00 CALL1 \xaa\x06 CALL3 \xd4\x06 CALL2 \xae\x00 REF_END2 
+SEQ6 REF6 <\x07 CALL1 \xae\x00 CALL3 \xdc\x00 REF_END1 
+SEQ5 \xc8\x00 CALL1 \xaa\x06 CALL3 \xd4\x06 CALL2 \xae\x00 REF_END2 
 LOAD3 TextClose REF2 \xd2\n REF_END1 
 END_FILE

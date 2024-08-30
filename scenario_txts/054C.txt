@@ -17,8 +17,8 @@ SEQ1 \x8c\x01 SEQ2 \x00d SEQ3 \x03\xb2\x00\x00
 　突入前から目星をつけていたほうきを掴んで、無我夢中で振り\n回す。\
 
 
-SEQ4  REF6 J\x00 REF_END3 
-LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 2\x03 REF_END2 
+SEQ6 REF6 J\x00 REF_END3 
+LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 2\x03 REF_END2 
 LOAD2 TextOn REF1 `\x03 REF_END1 
 LOAD3 SCE054_002 REF6 |\x03 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \x04d SEQ3 \x03\x9a\x00\x00
@@ -37,8 +37,8 @@ SEQ1 \x8c\x01 SEQ2 \x04d SEQ3 \x03\x9a\x00\x00
 　静寂の中、バットが振り下ろされた。@
 \z
 \x00\x00\x00
-SEQ4  REF6 \xc0\x03 CALL1 2\x03 CALL3 `\x03 REF_END1 
-SEQ4 \x00\x1e\xc8\x00 REF_END3 
+SEQ6 REF6 \xc0\x03 CALL1 2\x03 CALL3 `\x03 REF_END1 
+SEQ5 \xc8\x00 REF_END3 
 LOAD6 .\\Data\\Script\\Bg.Fob REF3 |\x06 REF_END2 
 LOAD4 BgAutoFadeIn REF3 \xa6\x06 CALL2 2\x03 REF_END2 
 LOAD3 TextClose REF2 \xd6\x06 REF_END1 

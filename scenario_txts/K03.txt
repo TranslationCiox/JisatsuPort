@@ -7,8 +7,8 @@ SEQ1 \x8c\x01 SEQ2 0\xa6\x01\x0c\x00\x00\x00\x00"\x03O\x00\x00
 海外文学に詳しかったり、才色兼備であることなどは知っていた\nけれど、\p意外にもホラー映画が好きだったり、\pケーキマニアだっ\nたり、\pマンガに詳しかったり……。@
 一番の驚きは、彼女もまた、女子校の空気に違和感を覚えていると\nいうことだった。\w\z
 \x00\x00\x00
-SEQ4  REF6 J\x00 REF_END3 
-LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xa6\x01 REF_END2 
+SEQ6 REF6 J\x00 REF_END3 
+LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 \xa6\x01 REF_END2 
 LOAD2 TextOn REF1 \xd4\x01 REF_END1 
 LOAD3 SCEK03_002 REF6 \xf0\x01 REF_END2 
 SEQ1 \x8c\x01 SEQ2 4\xa6\x01\x0c\x00\x00\x00\x00"\x03\xc5\x00\x00
@@ -22,13 +22,13 @@ SEQ1 \x8c\x01 SEQ2 4\xa6\x01\x0c\x00\x00\x00\x00"\x03\xc5\x00\x00
 こちらが世界を否定すれば、世界だってこちらを否定し返すという\nことを、彼女は理解していた。@
 学生としては器用すぎるやりかたで、若草ゆきは世界と折り合いを\nつけていたのだった。\w\z
 \x00\x00\x00
-SEQ4  REF6 4\x02 CALL1 \xa6\x01 CALL3 \xd4\x01 REF_END1 \x03\x1c\x00\x00
+SEQ6 REF6 4\x02 CALL1 \xa6\x01 CALL3 \xd4\x01 REF_END1 \x03\x1c\x00\x00
 CHOICE
 そうしたゆきのやり方は、卑怯な妥協だと思えた。\nそうしたゆきのやり方は、スマートだと思えた。\n\l0,2,
 ENDCHOICE
 
 \x00\x00\x00
-SEQ4  REF6 \x82\x05 CALL1 \xa6\x01 CALL3 \xd4\x01 REF_END1 
+SEQ6 REF6 \x82\x05 CALL1 \xa6\x01 CALL3 \xd4\x01 REF_END1 
 LOAD6 .\\Data\\Script\\Bgm.Fob REF2 ,\x06 REF_END2 
 LOAD2 StopCD REF1 V\x06 CALL2 \xa6\x01 REF_END2 
 LOAD3 TextClose REF2 ~\x06 REF_END1 

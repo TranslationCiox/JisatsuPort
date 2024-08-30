@@ -12,8 +12,8 @@ SEQ1 \x8c\x01 SEQ2 \x90\xaa\x01\x0c\x00\x00\x00\x00"\x03s\x00\x00
 憑き物が落ちたようないきいきとした顔が鏡の中にあったのを、\n鮮やかに覚えている。@
 サッパリしていて、自分でもちょっとすてきかな、などと思った\nくらいだった。\w\z
 \x00
-SEQ4  REF6 J\x00 REF_END3 
-LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 6\x02 REF_END2 
+SEQ6 REF6 J\x00 REF_END3 
+LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 6\x02 REF_END2 
 LOAD2 TextOn REF1 d\x02 REF_END1 
 LOAD3 SCEK12_002 REF6 \x80\x02 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \x90\xaa\x01\x0c\x00\x00\x00\x00"\x03\xb4\x00\x00
@@ -27,7 +27,7 @@ SEQ1 \x8c\x01 SEQ2 \x90\xaa\x01\x0c\x00\x00\x00\x00"\x03\xb4\x00\x00
 わくわくしていた。@
 ゆきといっしょに、どこか温泉にでも旅行に出かけるような、そ\nんな気分だった。\w\z
 \x00
-SEQ4  REF6 \xc4\x02 CALL1 6\x02 CALL3 d\x02 REF_END1 
+SEQ6 REF6 \xc4\x02 CALL1 6\x02 CALL3 d\x02 REF_END1 
 LOAD3 SCEK12_003 REF6 \xce\x05 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \x90\xaa\x01\x0c\x00\x00\x00\x00"\x03m\x00\x00
  
@@ -37,6 +37,6 @@ SEQ1 \x8c\x01 SEQ2 \x90\xaa\x01\x0c\x00\x00\x00\x00"\x03m\x00\x00
 \n　私たちは××××という薬を何軒かのドラッグストアで分けて\n買い集め（知ってるでしょ、××××？）、銀紙の上に何瓶ぶん\nかの錠剤を載せてコンロであぶって、ドロドロに溶かした。@
 そして、薬と一緒に買ってきたプレーンヨーグルトに混ぜた。\w\z
 \x00
-SEQ4  REF6 \x12\x06 CALL1 6\x02 CALL3 d\x02 CALL2 6\x02 REF_END2 
+SEQ6 REF6 \x12\x06 CALL1 6\x02 CALL3 d\x02 CALL2 6\x02 REF_END2 
 LOAD3 TextClose REF2 \x0c\x08 REF_END1 
 END_FILE

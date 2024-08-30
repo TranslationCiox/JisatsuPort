@@ -1,6 +1,6 @@
 START_FILE
 \x00\x07\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xf8\x05\x00
-SEQ4 \x00\x1e\x05\x01 REF_END3 
+SEQ5 \x05\x01 REF_END3 
 LOAD6 .\\Data\\Script\\Bgm.Fob REF2  \x00 REF_END2 
 LOAD2 PlayCD REF1 J\x00 REF_END1 
 LOAD3 SCEG03_003 REF6 f\x00 REF_END2 
@@ -11,10 +11,10 @@ SEQ1 \x8c\x01 SEQ2 x\xc5\x01\x0c\x00\x00\x00\x00"\x03L\x00\x00
 カチリ、という音を立ててジッパーの先をくわえ、器用にそれを\n開いていく。@
 \n錦城\n　「静かに……静かにね。\p他の子が目を覚まさないように……\n　　私たちだけの秘密だから……」\w\z
 \x00\x00\x00
-SEQ4  REF6 \xaa\x00 REF_END3 
-LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xfa\x01 REF_END2 
+SEQ6 REF6 \xaa\x00 REF_END3 
+LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 \xfa\x01 REF_END2 
 LOAD2 TextOn REF1 (\x02 REF_END1 
-SEQ4 \x00\x1e_\x00 REF_END3 
+SEQ5 _\x00 REF_END3 
 LOAD6 .\\Data\\Script\\Bg.Fob REF3 ^\x02 REF_END2 
 LOAD4 BgAutoFadeIn REF3 \x88\x02 REF_END1 
 LOAD3 SCEG03_004 REF6 \xac\x02 REF_END2 
@@ -30,8 +30,8 @@ SEQ1 \x8c\x01 SEQ2 |\xc5\x01\x0c\x00\x00\x00\x00"\x03\x92\x00\x00
 　　興奮するでしょう？\p　どんな味がするか……わかる？@
 　　いってあげましょうか、あなたのおち○ちんの味？」\w\z
 \x00\x00\x00
-SEQ4  REF6 \xf0\x02 CALL1 \xfa\x01 CALL3 (\x02 REF_END1 
-SEQ4 \x00\x1e\xc8\x00 CALL1 ^\x02 CALL3 \x88\x02 CALL2  \x00 REF_END2 
+SEQ6 REF6 \xf0\x02 CALL1 \xfa\x01 CALL3 (\x02 REF_END1 
+SEQ5 \xc8\x00 CALL1 ^\x02 CALL3 \x88\x02 CALL2  \x00 REF_END2 
 LOAD2 StopCD REF1 \xb2\x05 CALL2 \xfa\x01 REF_END2 
 LOAD3 TextClose REF2 \xda\x05 REF_END1 
 END_FILE

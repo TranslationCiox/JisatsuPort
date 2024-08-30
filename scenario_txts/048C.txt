@@ -2,8 +2,8 @@ START_FILE
 \x8b-\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00,'\x00
 LOAD0 .\\Data\\Script\\Scenario\\048SubC.Fob REF1 \x06\x00 REF_END2 
 LOAD2 start REF2 <\x00 REF_END1 
-SEQ4 \x00\x1e<\x00 REF_END3 
-LOAD7 .\\Data\\Script\\TextFunc.fob REF1 r\x00 REF_END2 
+SEQ5 <\x00 REF_END3 
+LOAD8 .\\Data\\Script\\TextFunc.fob REF1 r\x00 REF_END2 
 LOAD3 WaitTime REF3 \xa0\x00 REF_END1 
 LOAD3 SCE048_020 REF6 \xc0\x00 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \xecZ SEQ3 \x03\xce\x00\x00
@@ -16,8 +16,8 @@ SEQ1 \x8c\x01 SEQ2 \xecZ SEQ3 \x03\xce\x00\x00
 　柏木は御堂に付き従うことで自分の居場所をアピールしてきた\nような男で、男子学生からは『つまらない男』としか評価されて\nいなかったし、女子学生からは『御堂の取り巻きのひとり』とし\nか評価されていなかった。\pつまり、柏木という男には、なんの\n主体性もなかった。\p彼は完璧な脇役であり、別の主役なしでは舞\n台に存在していられない。\pそんな男だった。\
 
 
-SEQ4  REF6 \x04\x01 REF_END3 
-LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \\\x04 REF_END2 
+SEQ6 REF6 \x04\x01 REF_END3 
+LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 \\\x04 REF_END2 
 LOAD2 TextOn REF1 \x8a\x04 REF_END1 
 LOAD3 SCE048_021 REF6 \xa6\x04 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \xf0Z SEQ3 \x03\x9c\x00\x00
@@ -36,7 +36,7 @@ SEQ1 \x8c\x01 SEQ2 \xf0Z SEQ3 \x03\x9c\x00\x00
 　シャープペンが突き刺さった耳の穴からは、どす黒い血がたら\n　たらと滝のようにあふれ出している。\
 
 \x00\x00\x00
-SEQ4  REF6 \xea\x04 CALL1 \\\x04 CALL3 \x8a\x04 REF_END1 
+SEQ6 REF6 \xea\x04 CALL1 \\\x04 CALL3 \x8a\x04 REF_END1 
 LOAD3 SCE048_022 REF6 \x94\x07 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \xf4Z SEQ3 \x03J\x00\x00
  
@@ -47,7 +47,7 @@ SEQ1 \x8c\x01 SEQ2 \xf4Z SEQ3 \x03J\x00\x00
 \n　柏木はいいながら、シャープペンのヘッドをカチカチカチカチ\n　とノックした。\
 
 \x00\x00\x00
-SEQ4  REF6 \xd8\x07 CALL1 \\\x04 CALL3 \x8a\x04 REF_END1 
+SEQ6 REF6 \xd8\x07 CALL1 \\\x04 CALL3 \x8a\x04 REF_END1 
 LOAD3 SCE048_023 REF6 :\t REF_END2 
 SEQ1 \x8c\x01 SEQ2 \xf8Z SEQ3 \x03]\x00\x00
  
@@ -58,7 +58,7 @@ SEQ1 \x8c\x01 SEQ2 \xf8Z SEQ3 \x03]\x00\x00
 \n御堂\n　「芯だよ……」\
 
 \x00
-SEQ4  REF6 ~\t CALL1 \\\x04 CALL3 \x8a\x04 REF_END1 
+SEQ6 REF6 ~\t CALL1 \\\x04 CALL3 \x8a\x04 REF_END1 
 LOAD3 SCE048_024 REF6 ,\x0b REF_END2 
 SEQ1 \x8c\x01 SEQ2 \xfcZ SEQ3 \x03\xa0\x00\x00
  
@@ -74,7 +74,7 @@ SEQ1 \x8c\x01 SEQ2 \xfcZ SEQ3 \x03\xa0\x00\x00
 　おれたちは呆然とそんな柏木の泣き笑いを見守っていたが、や\n　がて\
 
 \x00
-SEQ4  REF6 p\x0b CALL1 \\\x04 CALL3 \x8a\x04 REF_END1 
+SEQ6 REF6 p\x0b CALL1 \\\x04 CALL3 \x8a\x04 REF_END1 
 LOAD3 SCE048_025 REF6 *\x0e REF_END2 
 SEQ1 \x8c\x01 SEQ2 \x00[ SEQ3 \x03\xb7\x00\x00
  
@@ -91,7 +91,7 @@ SEQ1 \x8c\x01 SEQ2 \x00[ SEQ3 \x03\xb7\x00\x00
 　あとには拓司となたね、そして柏木の死体だけが残された。\
 
 \x00\x00
-SEQ4  REF6 n\x0e CALL1 \\\x04 CALL3 \x8a\x04 REF_END1 
+SEQ6 REF6 n\x0e CALL1 \\\x04 CALL3 \x8a\x04 REF_END1 
 LOAD3 SCE048_026 REF6 \x84\x11 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \x04[ SEQ3 \x03\x9c\x00\x00
  
@@ -105,7 +105,7 @@ SEQ1 \x8c\x01 SEQ2 \x04[ SEQ3 \x03\x9c\x00\x00
 拓司は慌てて背を向けた。\pいままでさんざん陵辱現場を見ておい\nていまさらという気もしたが、そうするのが礼儀のような気がし\nた。\
 
 \x00
-SEQ4  REF6 \xc8\x11 CALL1 \\\x04 CALL3 \x8a\x04 REF_END1 
+SEQ6 REF6 \xc8\x11 CALL1 \\\x04 CALL3 \x8a\x04 REF_END1 
 LOAD3 SCE048_027 REF6 r\x14 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \x08[ SEQ3 \x03w\x00\x00
  
@@ -118,7 +118,7 @@ SEQ1 \x8c\x01 SEQ2 \x08[ SEQ3 \x03w\x00\x00
 　チカセンコウガタシンリャクセイブツヘイキ、となたねは厳し\n　く言い直した。\p正確にいうのといわないのとでは、そこに大き\n　な違いがあるとでもいいたそうな口調だ。\
 
 \x00\x00
-SEQ4  REF6 \xb6\x14 CALL1 \\\x04 CALL3 \x8a\x04 REF_END1 
+SEQ6 REF6 \xb6\x14 CALL1 \\\x04 CALL3 \x8a\x04 REF_END1 
 LOAD3 SCE048_028 REF6 \xcc\x16 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \x0c[ SEQ3 \x03\xc5\x00\x00
  
@@ -128,7 +128,7 @@ SEQ1 \x8c\x01 SEQ2 \x0c[ SEQ3 \x03\xc5\x00\x00
 \nなたね\n　「これは明白に、第四種生物兵器『ビッグ・エンケリュス』の\n　　攻撃だわ。\p『ビッグ・エンケリュス』は地下から波動を送る\n　　の。\p自殺波動。この波動にシンクロしてしまった人間は、自\n　　殺こそが幸福へ至る道だと信じ込んで……彼のように自殺し\n　　てしまうの」\
 
 \x00\x00\x00
-SEQ4  REF6 \x10\x17 CALL1 \\\x04 CALL3 \x8a\x04 REF_END1 
+SEQ6 REF6 \x10\x17 CALL1 \\\x04 CALL3 \x8a\x04 REF_END1 
 LOAD3 SCE048_029 REF6 ^\x1a REF_END2 
 SEQ1 \x8c\x01 SEQ2 \x10[ SEQ3 \x03\xbb\x00\x00
  
@@ -139,7 +139,7 @@ SEQ1 \x8c\x01 SEQ2 \x10[ SEQ3 \x03\xbb\x00\x00
 　　あのね、私、円盤のなかで立体映像を見せられたの！\p　ぬら\n　　ぬらとしていて、黒くて、とてもいやらしくて汚らしい形を\n　　しているの！\p　全長２０キロ！\p　質量は自由に変化させられる\n　　からよくわからないけれど、地中を自由に移動して人類を殺\n　　す究極の侵略兵器で、あなたにはわからないけど私にはわか\n　　るのよ！　なぜなら……」\
 
 \x00\x00\x00
-SEQ4  REF6 \xa2\x1a CALL1 \\\x04 CALL3 \x8a\x04 REF_END1 
+SEQ6 REF6 \xa2\x1a CALL1 \\\x04 CALL3 \x8a\x04 REF_END1 
 LOAD3 SCE048_030 REF6 \xc8\x1d REF_END2 
 SEQ1 \x8c\x01 SEQ2 \x14[ SEQ3 \x03D\x00\x00
  
@@ -150,7 +150,7 @@ SEQ1 \x8c\x01 SEQ2 \x14[ SEQ3 \x03D\x00\x00
 拓司\n　「……」\
 
 \x00
-SEQ4  REF6 \x0c\x1e CALL1 \\\x04 CALL3 \x8a\x04 REF_END1 
+SEQ6 REF6 \x0c\x1e CALL1 \\\x04 CALL3 \x8a\x04 REF_END1 
 LOAD3 SCE048_031 REF6 V\x1f REF_END2 
 SEQ1 \x8c\x01 SEQ2 \x18[ SEQ3 \x03\xc5\x00\x00
  
@@ -161,7 +161,7 @@ SEQ1 \x8c\x01 SEQ2 \x18[ SEQ3 \x03\xc5\x00\x00
 　－－拓司はそう思った。\
 
 \x00\x00\x00
-SEQ4  REF6 \x9a\x1f CALL1 \\\x04 CALL3 \x8a\x04 REF_END1 
+SEQ6 REF6 \x9a\x1f CALL1 \\\x04 CALL3 \x8a\x04 REF_END1 
 LOAD3 SCE048_032 REF6 \xe8" REF_END2 
 SEQ1 \x8c\x01 SEQ2 \x1c[ SEQ3 \x03[\x00\x00
  
@@ -173,8 +173,8 @@ SEQ1 \x8c\x01 SEQ2 \x1c[ SEQ3 \x03[\x00\x00
 \n　拓司の脇を通り抜け、鏡に向かって髪の毛を整え始める。\
 
 \x00
-SEQ4  REF6 ,# CALL1 \\\x04 CALL3 \x8a\x04 REF_END1 
-SEQ4 \x00\x1e\xc8\x00 REF_END3 
+SEQ6 REF6 ,# CALL1 \\\x04 CALL3 \x8a\x04 REF_END1 
+SEQ5 \xc8\x00 REF_END3 
 LOAD6 .\\Data\\Script\\Bg.Fob REF3 \xec$ REF_END2 
 LOAD4 BgAutoFadeIn REF3 \x16% REF_END1 
 LOAD3 SCE048_033 REF6 :% REF_END2 
@@ -184,7 +184,7 @@ SEQ1 \x8c\x01 SEQ2  [ SEQ3 \x03A\x00\x00
 \n　拓司は呆然と、それを見守るしかなかった。\pなたねの動きはゆ\n　っくりしていて、見ているとなにか時間が徐々に停滞してゆく\n　ような、そんな不安な気持ちになった。\
 
 \x00
-SEQ4  REF6 ~% CALL1 \\\x04 CALL3 \x8a\x04 REF_END1 
+SEQ6 REF6 ~% CALL1 \\\x04 CALL3 \x8a\x04 REF_END1 
 LOAD6 .\\Data\\Script\\Bgm.Fob REF2 \xbc& REF_END2 
 LOAD2 StopCD REF1 \xe6& CALL2 \\\x04 REF_END2 
 LOAD3 TextClose REF2 \x0e' REF_END1 

@@ -2,7 +2,7 @@ START_FILE
 \xdc\x07\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00(\x06\x00
 LOAD3 SCE051_001 REF6 \x06\x00 REF_END2 
 SEQ1 \x8c\x01 SEQ2 P_ SEQ3 
-SEQ4  REF_END2 \x0c\x02\x00\x00" \x1e\x04\x00\x00\r\x00\x00\x1e\x1a\x00 REF_END3  \x1e\x08\x00\x00\r\x00\x00\x1e\x01\x00 REF_END3 
+SEQ5 \x02\x00 REF_END3  \x1e\x04\x00\x00\r\x00\x00\x1e\x1a\x00 REF_END3  \x1e\x08\x00\x00\r\x00\x00\x1e\x01\x00 REF_END3 
 LOAD6 .\\Data\\Script\\Bgm.Fob REF2 \x98\x00 REF_END2 
 LOAD2 SePlay REF1 \xc2\x00 REF_END1 \x03\xa2\x00\x00
  
@@ -18,8 +18,8 @@ LOAD2 SePlay REF1 \xc2\x00 REF_END1 \x03\xa2\x00\x00
 　焦りと不安が、なたねへの怒りへと転嫁されて、ふつふつと胸\n　の中で煮えたぎっていた。\
 
 \x00
-SEQ4  REF6 \xde\x00 REF_END3 
-LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \x86\x03 REF_END2 
+SEQ6 REF6 \xde\x00 REF_END3 
+LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 \x86\x03 REF_END2 
 LOAD2 TextOn REF1 \xb4\x03 REF_END1 
 LOAD3 SCE051_002 REF6 \xd0\x03 REF_END2 
 SEQ1 \x8c\x01 SEQ2 T_ SEQ3 \x03-\x00\x00
@@ -28,14 +28,14 @@ SEQ1 \x8c\x01 SEQ2 T_ SEQ3 \x03-\x00\x00
 \nそんな声を背中に聞きながら、拓司は駆けた。\p早桃の教室まで、\nあっという間だった。\
 
 \x00
-SEQ4  REF6 \x14\x04 CALL1 \x86\x03 CALL3 \xb4\x03 REF_END1 
-SEQ4  REF_END2 \x0c\x02\x00\x00" REF7 \x98\x00 REF_END2 
+SEQ6 REF6 \x14\x04 CALL1 \x86\x03 CALL3 \xb4\x03 REF_END1 
+SEQ5 \x02\x00 CALL1 \x98\x00 REF_END2 
 LOAD2 SeStop REF1 (\x05 REF_END1 \x03 \x00\x00
 CHOICE
 一刻も待てない。拓司はその勢いのまま、教室に躍り込んだ。\n拓司はなたねの警告に従って、そっと中をのぞき込んだ。\n\l0,2,
 ENDCHOICE
 
 \x00
-SEQ4  REF6 D\x05 CALL1 \x86\x03 CALL3 \xb4\x03 CALL2 \x86\x03 REF_END2 
+SEQ6 REF6 D\x05 CALL1 \x86\x03 CALL3 \xb4\x03 CALL2 \x86\x03 REF_END2 
 LOAD3 TextClose REF2 \n\x06 REF_END1 
 END_FILE

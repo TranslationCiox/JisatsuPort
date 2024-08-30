@@ -1,6 +1,6 @@
 START_FILE
 !\x15\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00r\x11\x00
-SEQ4 \x00\x1e\x0b\x01 REF_END3 
+SEQ5 \x0b\x01 REF_END3 
 LOAD6 .\\Data\\Script\\Bgm.Fob REF2  \x00 REF_END2 
 LOAD2 PlayCD REF1 J\x00 REF_END1 
 LOAD3 SCE053_001 REF6 f\x00 REF_END2 
@@ -13,8 +13,8 @@ SEQ1 \x8c\x01 SEQ2 pb SEQ3 \x03z\x00\x00
 /*▲BGM　Track11　再生　*//*■CG21　表示（クロスフェード）　*/\a7,-2,-2,0,\a0,20,2,0,\a6,-2,0,0,\n早桃だ。\
 
 \x00
-SEQ4  REF6 \xaa\x00 REF_END3 
-LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xb2\x02 REF_END2 
+SEQ6 REF6 \xaa\x00 REF_END3 
+LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 \xb2\x02 REF_END2 
 LOAD2 TextOn REF1 \xe0\x02 REF_END1 
 LOAD3 SCE053_002 REF6 \xfc\x02 REF_END2 
 SEQ1 \x8c\x01 SEQ2 tb SEQ3 \x03C\x00\x00
@@ -30,7 +30,7 @@ SEQ1 \x8c\x01 SEQ2 tb SEQ3 \x03C\x00\x00
 学生\n　「死ねよ」\
 
 \x00\x00\x00
-SEQ4  REF6 @\x03 CALL1 \xb2\x02 CALL3 \xe0\x02 REF_END1 
+SEQ6 REF6 @\x03 CALL1 \xb2\x02 CALL3 \xe0\x02 REF_END1 
 LOAD3 SCE053_003 REF6 \x86\x04 REF_END2 
 SEQ1 \x8c\x01 SEQ2 xb SEQ3 \x03\x96\x00\x00
  
@@ -42,7 +42,7 @@ SEQ1 \x8c\x01 SEQ2 xb SEQ3 \x03\x96\x00\x00
 \n　シネシネシネシネシシネシネシネシネシネシネシネシネシネシ\nネシネシネシネシネシネ\n　ドンガドンガドンガドンドンガドンガドンガドンガドンガドン\nガドンガドンガドンガドンガドンガ\
 
 \x00
-SEQ4  REF6 \xca\x04 CALL1 \xb2\x02 CALL3 \xe0\x02 REF_END1 
+SEQ6 REF6 \xca\x04 CALL1 \xb2\x02 CALL3 \xe0\x02 REF_END1 
 LOAD3 SCE053_004 REF6 \\\x07 REF_END2 
 SEQ1 \x8c\x01 SEQ2 |b SEQ3 \x03\xb3\x00\x00
  
@@ -58,8 +58,8 @@ SEQ1 \x8c\x01 SEQ2 |b SEQ3 \x03\xb3\x00\x00
 \n早桃\n　「ごめんなさい……ごめんなさい……ごめんなさい……」\
 
 \x00
-SEQ4  REF6 \xa0\x07 CALL1 \xb2\x02 CALL3 \xe0\x02 REF_END1 
-SEQ4 \x00\x1e\xc8\x00 REF_END3 
+SEQ6 REF6 \xa0\x07 CALL1 \xb2\x02 CALL3 \xe0\x02 REF_END1 
+SEQ5 \xc8\x00 REF_END3 
 LOAD6 .\\Data\\Script\\Bg.Fob REF3 \xc0\n REF_END2 
 LOAD4 BgAutoFadeIn REF3 \xea\n REF_END1 
 LOAD3 SCE053_005 REF6 \x0e\x0b REF_END2 
@@ -73,7 +73,7 @@ SEQ1 \x8c\x01 SEQ2 \x80b SEQ3 \x03r\x00\x00
 しかしまた、背後から拓司の肩を押さえた者がいる。\
 
 \x00
-SEQ4  REF6 R\x0b CALL1 \xb2\x02 CALL3 \xe0\x02 REF_END1 
+SEQ6 REF6 R\x0b CALL1 \xb2\x02 CALL3 \xe0\x02 REF_END1 
 LOAD3 SCE053_006 REF6 T\r REF_END2 
 SEQ1 \x8c\x01 SEQ2 \x84b SEQ3 \x03a\x00\x00
  
@@ -86,7 +86,7 @@ SEQ1 \x8c\x01 SEQ2 \x84b SEQ3 \x03a\x00\x00
 \nなたねはすうっと目を細めて天を見上げ、指先で空中に何かの文\n字を書いた。\pそれから地面に掌をぴったりと当てて、沈黙に沈み\n込んだ。\p拓司のなかで怒りが爆発した。\
 
 \x00
-SEQ4  REF6 \x98\r CALL1 \xb2\x02 CALL3 \xe0\x02 REF_END1 
+SEQ6 REF6 \x98\r CALL1 \xb2\x02 CALL3 \xe0\x02 REF_END1 
 LOAD3 SCE053_007 REF6 V\x0f REF_END2 
 SEQ1 \x8c\x01 SEQ2 \x88b SEQ3 \x03>\x00\x00
  
@@ -94,13 +94,13 @@ SEQ1 \x8c\x01 SEQ2 \x88b SEQ3 \x03>\x00\x00
 雲居\n　「間違いない。\pいま、前兆を確認したわ。\p五分後、大きな波が\n　　来るわ。\pそれまで待てば、みんな自滅する。\pそうすれば、危\n　　険を冒さずに義妹さんを助けられるわ」\
 
 \x00\x00\x00
-SEQ4  REF6 \x9a\x0f CALL1 \xb2\x02 CALL3 \xe0\x02 REF_END1 
+SEQ6 REF6 \x9a\x0f CALL1 \xb2\x02 CALL3 \xe0\x02 REF_END1 
 LOAD9 
 CHOICE
 待っていられない\n待つ\n\l0,2,
 ENDCHOICE
 
 \x00
-SEQ4  REF6 \xcc\x10 CALL1 \xb2\x02 CALL3 \xe0\x02 CALL2 \xb2\x02 REF_END2 
+SEQ6 REF6 \xcc\x10 CALL1 \xb2\x02 CALL3 \xe0\x02 CALL2 \xb2\x02 REF_END2 
 LOAD3 TextClose REF2 :\x11 CALL2 \xb2\x02 CALL3 :\x11 REF_END1 
 END_FILE

@@ -7,13 +7,13 @@ SEQ1 \x8c\x01 SEQ2 @\xaf\x01\x0c\x00\x00\x00\x00"\x03R\x00\x00
 より確実に死ぬにはアルコールも飲まないといけないということ\nは知っていたけれど、私もゆきも、お酒なんて飲んだことはなか\nったから、それはパスした。@
 アルコールの欠落は、薬の増量でまかなえばいいと……さらに一\n瓶ぶんを溶かして、混ぜた。\w\z
 \x00
-SEQ4  REF6 J\x00 REF_END3 
-LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xb2\x01 REF_END2 
+SEQ6 REF6 J\x00 REF_END3 
+LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 \xb2\x01 REF_END2 
 LOAD2 TextOn REF1 \xe0\x01 REF_END1 
-SEQ4 \x00\x1e>\x00 REF_END3 
+SEQ5 >\x00 REF_END3 
 LOAD6 .\\Data\\Script\\Bg.Fob REF3 \x16\x02 REF_END2 
 LOAD4 BgAutoFadeIn REF3 @\x02 REF_END1 
-SEQ4 \x00\x1e\x04\x01 REF_END3 
+SEQ5 \x04\x01 REF_END3 
 LOAD6 .\\Data\\Script\\Bgm.Fob REF2 ~\x02 REF_END2 
 LOAD2 PlayCD REF1 \xa8\x02 REF_END1 
 LOAD3 SCEK14_A02 REF6 \xc4\x02 REF_END2 
@@ -27,7 +27,7 @@ SEQ1 \x8c\x01 SEQ2 D\xaf\x01\x0c\x00\x00\x00\x00"\x03\xa8\x00\x00
 こんな素敵な気分で、最高の友達と一緒に死ねるなんて、私はし\nあわせだなあ、と思った。@
 繰り返すけれど、少しも怖くはなかった。\w\z
 \x00
-SEQ4  REF6 \x08\x03 CALL1 \xb2\x01 CALL3 \xe0\x01 CALL2 ~\x02 REF_END2 
+SEQ6 REF6 \x08\x03 CALL1 \xb2\x01 CALL3 \xe0\x01 CALL2 ~\x02 REF_END2 
 LOAD2 StopCD REF1 \xee\x05 REF_END1 
 LOAD3 SCEK14_A03 REF6 \n\x06 REF_END2 
 SEQ1 \x8c\x01 SEQ2 H\xaf\x01\x0c\x00\x00\x00\x00"\x03\\\x00\x00
@@ -40,9 +40,9 @@ SEQ1 \x8c\x01 SEQ2 H\xaf\x01\x0c\x00\x00\x00\x00"\x03\\\x00\x00
 どれくらい眠っていたのか、泣いていたのか、よくわからない。@
 私は暖かくてぼんやりとしたかたまりのなかでたゆたっていた。\w\z
 \x00\x00\x00
-SEQ4  REF6 N\x06 CALL1 \xb2\x01 CALL3 \xe0\x01 REF_END1 
-SEQ4 \x00\x1e\xcb\x00 CALL1 \x16\x02 CALL3 @\x02 REF_END1 
-SEQ4 \x00\x1e\n\x01 CALL1 ~\x02 CALL3 \xa8\x02 REF_END1 
+SEQ6 REF6 N\x06 CALL1 \xb2\x01 CALL3 \xe0\x01 REF_END1 
+SEQ5 \xcb\x00 CALL1 \x16\x02 CALL3 @\x02 REF_END1 
+SEQ5 \n\x01 CALL1 ~\x02 CALL3 \xa8\x02 REF_END1 
 LOAD3 SCEK14_A04 REF6 `\x08 REF_END2 
 SEQ1 \x8c\x01 SEQ2 L\xaf\x01\x0c\x00\x00\x00\x00"\x03\x81\x00\x00
  
@@ -55,15 +55,15 @@ SEQ1 \x8c\x01 SEQ2 L\xaf\x01\x0c\x00\x00\x00\x00"\x03\x81\x00\x00
 鼻からもゲロがあふれてきた。涙で何も見えず、何が起こってい\nるのか全然わからなかった。@
 気持ちよく眠って死ねるはずだったのに、どうしてこんなに苦し\nんで死ななければならないの……？\w\z
 \x00
-SEQ4  REF6 \xa4\x08 CALL1 \xb2\x01 CALL3 \xe0\x01 REF_END1 
+SEQ6 REF6 \xa4\x08 CALL1 \xb2\x01 CALL3 \xe0\x01 REF_END1 
 LOAD3 SCEK14_A05 REF6 \xe2\n REF_END2 
 SEQ1 \x8c\x01 SEQ2 P\xaf\x01\x0c\x00\x00\x00\x00"\x031\x00\x00
  
 　要するに私は薬を飲みすぎたのだった。@
 急性アルコール中毒になるまえに、身体がアルコールを自動的に\n吐き出させるように……\p私の身体は私の意志とは無関係に薬を吐\nき戻させていたのだった。\w\z
 \x00
-SEQ4  REF6 &\x0b CALL1 \xb2\x01 CALL3 \xe0\x01 REF_END1 
-SEQ4 \x00\x1e?\x00 CALL1 \x16\x02 CALL3 @\x02 REF_END1 
+SEQ6 REF6 &\x0b CALL1 \xb2\x01 CALL3 \xe0\x01 REF_END1 
+SEQ5 ?\x00 CALL1 \x16\x02 CALL3 @\x02 REF_END1 
 LOAD3 SCEK14_A06 REF6 X\x0c REF_END2 
 SEQ1 \x8c\x01 SEQ2 T\xaf\x01\x0c\x00\x00\x00\x00"\x03\\\x00\x00
  
@@ -75,7 +75,7 @@ SEQ1 \x8c\x01 SEQ2 T\xaf\x01\x0c\x00\x00\x00\x00"\x03\\\x00\x00
 そのうち私はあまりの苦しさに意識を失った。@
 /*■背景　黒　表示*/\a7,0,1,0,\a0,200,0,0,/*▲BGM　停止*/\a4,-1,0,0,\a6,0,0,0,そして病院で目を覚ました。\w\z
 \x00\x00\x00
-SEQ4  REF6 \x9c\x0c CALL1 \xb2\x01 CALL3 \xe0\x01 REF_END1 
+SEQ6 REF6 \x9c\x0c CALL1 \xb2\x01 CALL3 \xe0\x01 REF_END1 
 LOAD3 SCEK14_A07 REF6 F\x0e REF_END2 
 SEQ1 \x8c\x01 SEQ2 X\xaf\x01\x0c\x00\x00\x00\x00"\x03;\x00\x00
  
@@ -84,7 +84,7 @@ SEQ1 \x8c\x01 SEQ2 X\xaf\x01\x0c\x00\x00\x00\x00"\x03;\x00\x00
 若草ゆきは死んでいた。@
 そして私は生き残った。\w\z
 \x00
-SEQ4  REF6 \x8a\x0e CALL1 \xb2\x01 CALL3 \xe0\x01 REF_END1 
+SEQ6 REF6 \x8a\x0e CALL1 \xb2\x01 CALL3 \xe0\x01 REF_END1 
 LOAD3 SCEK14_A08 REF6 \xb0\x0f REF_END2 
 SEQ1 \x8c\x01 SEQ2 \\\xaf\x01\x0c\x00\x00\x00\x00"\x03l\x00\x00
  
@@ -95,8 +95,8 @@ SEQ1 \x8c\x01 SEQ2 \\\xaf\x01\x0c\x00\x00\x00\x00"\x03l\x00\x00
 私にとって死は、そんなに普遍的なものではなくなっていた。@
 死は特別だった。\w\z
 \x00\x00\x00
-SEQ4  REF6 \xf4\x0f CALL1 \xb2\x01 CALL3 \xe0\x01 REF_END1 
-SEQ4 \x00\x1e\x08\x01 CALL1 ~\x02 CALL3 \xa8\x02 REF_END1 
+SEQ6 REF6 \xf4\x0f CALL1 \xb2\x01 CALL3 \xe0\x01 REF_END1 
+SEQ5 \x08\x01 CALL1 ~\x02 CALL3 \xa8\x02 REF_END1 
 LOAD3 SCEK14_A09 REF6 \x12\x12 REF_END2 
 SEQ1 \x8c\x01 SEQ2 `\xaf\x01\x0c\x00\x00\x00\x00"\x03e\x00\x00
  
@@ -109,7 +109,7 @@ SEQ1 \x8c\x01 SEQ2 `\xaf\x01\x0c\x00\x00\x00\x00"\x03e\x00\x00
 でも、振り向くと、いる。@
 「つかまえたぞ。もうお前は逃げられないんだぞ」と。\w\z
 \x00\x00\x00
-SEQ4  REF6 V\x12 CALL1 \xb2\x01 CALL3 \xe0\x01 REF_END1 
+SEQ6 REF6 V\x12 CALL1 \xb2\x01 CALL3 \xe0\x01 REF_END1 
 LOAD3 SCEK14_A10 REF6 $\x14 REF_END2 
 SEQ1 \x8c\x01 SEQ2 d\xaf\x01\x0c\x00\x00\x00\x00"\x03Y\x00\x00
  
@@ -122,6 +122,6 @@ SEQ1 \x8c\x01 SEQ2 d\xaf\x01\x0c\x00\x00\x00\x00"\x03Y\x00\x00
 ゆきにおける私が。@
 私には必要だった。\w\z
 \x00
-SEQ4  REF6 h\x14 CALL1 \xb2\x01 CALL3 \xe0\x01 CALL2 \xb2\x01 REF_END2 
+SEQ6 REF6 h\x14 CALL1 \xb2\x01 CALL3 \xe0\x01 CALL2 \xb2\x01 REF_END2 
 LOAD3 TextClose REF2 \x12\x16 REF_END1 
 END_FILE

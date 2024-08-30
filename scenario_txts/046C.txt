@@ -14,8 +14,8 @@ SEQ1 \x8c\x01 SEQ2 \x80W SEQ3 \x03\x8b\x00\x00
 \n　御堂たちは雑談をしながら実験室の前を通り過ぎ、やがて男子\nトイレへと消えた。\
 
 \x00
-SEQ4  REF6 J\x00 REF_END3 
-LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \x96\x02 REF_END2 
+SEQ6 REF6 J\x00 REF_END3 
+LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 \x96\x02 REF_END2 
 LOAD2 TextOn REF1 \xc4\x02 REF_END1 
 LOAD3 SCE046_002 REF6 \xe0\x02 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \x84W SEQ3 \x03,\x00\x00
@@ -26,6 +26,6 @@ SEQ1 \x8c\x01 SEQ2 \x84W SEQ3 \x03,\x00\x00
 ひとり廊下に取り残された拓司も、慌てて後を追う。@
 \z
 \x00
-SEQ4  REF6 $\x03 CALL1 \x96\x02 CALL3 \xc4\x02 CALL2 \x96\x02 REF_END2 
+SEQ6 REF6 $\x03 CALL1 \x96\x02 CALL3 \xc4\x02 CALL2 \x96\x02 REF_END2 
 LOAD3 TextClose REF2 \x1a\x04 REF_END1 
 END_FILE

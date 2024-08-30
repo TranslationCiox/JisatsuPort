@@ -14,10 +14,10 @@ SEQ1 \x8c\x01 SEQ2 l\xc5\x01\x0c\x00\x00\x00\x00"\x03b\x00\x00
 　　先生の手、こんなにべとべとにして……ふふふ」@
 \z
 \x00\x00\x00
-SEQ4  REF6 J\x00 REF_END3 
-LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xf2\x01 REF_END2 
+SEQ6 REF6 J\x00 REF_END3 
+LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 \xf2\x01 REF_END2 
 LOAD2 TextOn REF1  \x02 REF_END1 
-SEQ4 \x00\x1e\xc8\x00 REF_END3 
+SEQ5 \xc8\x00 REF_END3 
 LOAD6 .\\Data\\Script\\Bg.Fob REF3 V\x02 REF_END2 
 LOAD4 BgAutoFadeIn REF3 \x80\x02 REF_END1 
 LOAD6 .\\Data\\Script\\Bgm.Fob REF2 \xa4\x02 REF_END2 

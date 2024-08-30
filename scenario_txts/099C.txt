@@ -9,8 +9,8 @@ SEQ1 \x8c\x01 SEQ2 P\xaa SEQ3 \x03I\x00\x00
 \n拓司はなたねをちらりとみやった。@
 なたねはいつもの無表情で、なんの反応もない。\w\z
 \x00
-SEQ4  REF6 J\x00 REF_END3 
-LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \x8e\x01 REF_END2 
+SEQ6 REF6 J\x00 REF_END3 
+LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 \x8e\x01 REF_END2 
 LOAD2 TextOn REF1 \xbc\x01 REF_END1 
 LOAD3 SCE099_002 REF6 \xd8\x01 REF_END2 
 SEQ1 \x8c\x01 SEQ2 T\xaa SEQ3 \x03l\x00\x00
@@ -21,6 +21,6 @@ SEQ1 \x8c\x01 SEQ2 T\xaa SEQ3 \x03l\x00\x00
 いうとなたねは、走るように自分のスペースへと向かい、膝を抱\nえて壁に向かった。@
 \nそれから一日、早桃はおろか、他の誰もひとことも口をきこう\nとはしなかった。\w\z
 \x00\x00\x00
-SEQ4  REF6 \x1c\x02 CALL1 \x8e\x01 CALL3 \xbc\x01 CALL2 \x8e\x01 REF_END2 
+SEQ6 REF6 \x1c\x02 CALL1 \x8e\x01 CALL3 \xbc\x01 CALL2 \x8e\x01 REF_END2 
 LOAD3 TextClose REF2 \x12\x04 REF_END1 
 END_FILE

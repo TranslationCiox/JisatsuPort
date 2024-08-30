@@ -11,8 +11,8 @@ SEQ1 \x8c\x01 SEQ2 0* SEQ3 \x03$\x00\x00
 紅葉\n　「……」@
 拓司\n　「……」\w\z
 \x00
-SEQ4  REF6 J\x00 REF_END3 
-LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xfa\x00 REF_END2 
+SEQ6 REF6 J\x00 REF_END3 
+LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 \xfa\x00 REF_END2 
 LOAD2 TextOn REF1 (\x01 REF_END1 
 LOAD3 SCE017_002 REF6 D\x01 REF_END2 
 SEQ1 \x8c\x01 SEQ2 4* SEQ3 \x03\x16\x00\x00
@@ -20,6 +20,6 @@ SEQ1 \x8c\x01 SEQ2 4* SEQ3 \x03\x16\x00\x00
 紅葉\n　「……生理？」@
 拓司\n　「お前なあ、もうちょっと女らしい冗談言えよ」\w\z
 \x00\x00\x00
-SEQ4  REF6 \x88\x01 CALL1 \xfa\x00 CALL3 (\x01 CALL2 \xfa\x00 REF_END2 
+SEQ6 REF6 \x88\x01 CALL1 \xfa\x00 CALL3 (\x01 CALL2 \xfa\x00 REF_END2 
 LOAD3 TextClose REF2 &\x02 REF_END1 
 END_FILE

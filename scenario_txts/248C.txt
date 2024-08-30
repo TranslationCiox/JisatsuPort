@@ -18,8 +18,8 @@ SEQ1 \x8c\x01 SEQ2  \x93\x01\x0c\x00\x00\x00\x00"\x03\xb9\x00\x00
 しかし、どこから襲ってくるかわからないむきだしの死に身を晒\nすより、どんなに薄かろうとも鎧をまとっている方がマシだった。\n\
 
 \x00
-SEQ4  REF6 J\x00 REF_END3 
-LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 N\x03 REF_END2 
+SEQ6 REF6 J\x00 REF_END3 
+LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 N\x03 REF_END2 
 LOAD2 TextOn REF1 |\x03 REF_END1 
 LOAD3 SCE248_002 REF6 \x98\x03 REF_END2 
 SEQ1 \x8c\x01 SEQ2 $\x93\x01\x0c\x00\x00\x00\x00"\x03h\x00\x00
@@ -32,7 +32,7 @@ SEQ1 \x8c\x01 SEQ2 $\x93\x01\x0c\x00\x00\x00\x00"\x03h\x00\x00
 亀裂は、あたかも生命を持っているかのように……雪崩落ちる雷\nのように……窓ガラスを走り……\
 
 \x00\x00\x00
-SEQ4  REF6 \xdc\x03 CALL1 N\x03 CALL3 |\x03 REF_END1 
+SEQ6 REF6 \xdc\x03 CALL1 N\x03 CALL3 |\x03 REF_END1 
 LOAD3 SCE248_003 REF6 \xb6\x05 REF_END2 
 SEQ1 \x8c\x01 SEQ2 (\x93\x01\x0c\x00\x00\x00\x00"\x03\x8c\x00\x00
  
@@ -46,7 +46,7 @@ SEQ1 \x8c\x01 SEQ2 (\x93\x01\x0c\x00\x00\x00\x00"\x03\x8c\x00\x00
 /*▲↑停止まで待つ*/\a3,0,0,0,\a4,0,0,0,\n拓司\n　「！」\
 
 \x00\x00
-SEQ4  REF6 \xfa\x05 CALL1 N\x03 CALL3 |\x03 REF_END1 
+SEQ6 REF6 \xfa\x05 CALL1 N\x03 CALL3 |\x03 REF_END1 
 LOAD3 SCE248_004 REF6 d\x08 REF_END2 
 SEQ1 \x8c\x01 SEQ2 ,\x93\x01\x0c\x00\x00\x00\x00"\x03U\x00\x00
  
@@ -57,7 +57,7 @@ SEQ1 \x8c\x01 SEQ2 ,\x93\x01\x0c\x00\x00\x00\x00"\x03U\x00\x00
 頭そのものが爆発しないのが不思議だった。\
 
 \x00
-SEQ4  REF6 \xa8\x08 CALL1 N\x03 CALL3 |\x03 REF_END1 
+SEQ6 REF6 \xa8\x08 CALL1 N\x03 CALL3 |\x03 REF_END1 
 LOAD3 SCE248_005 REF6 6\n REF_END2 
 SEQ1 \x8c\x01 SEQ2 0\x93\x01\x0c\x00\x00\x00\x00"\x03}\x00\x00
  
@@ -71,7 +71,7 @@ SEQ1 \x8c\x01 SEQ2 0\x93\x01\x0c\x00\x00\x00\x00"\x03}\x00\x00
 白目をむき、耳から、鼻から、どす黒い血があふれ出している。\
 
 \x00\x00\x00
-SEQ4  REF6 z\n CALL1 N\x03 CALL3 |\x03 REF_END1 
+SEQ6 REF6 z\n CALL1 N\x03 CALL3 |\x03 REF_END1 
 LOAD3 SCE248_006 REF6 \xa8\x0c REF_END2 
 SEQ1 \x8c\x01 SEQ2 4\x93\x01\x0c\x00\x00\x00\x00"\x03\xa4\x00\x00
  
@@ -92,7 +92,7 @@ SEQ1 \x8c\x01 SEQ2 4\x93\x01\x0c\x00\x00\x00\x00"\x03\xa4\x00\x00
 あるいは、解決されるべきものなのだ。\
 
 \x00\x00\x00
-SEQ4  REF6 \xec\x0c CALL1 N\x03 CALL3 |\x03 REF_END1 
+SEQ6 REF6 \xec\x0c CALL1 N\x03 CALL3 |\x03 REF_END1 
 LOAD3 SCE248_007 REF6 \xb6\x0f REF_END2 
 SEQ1 \x8c\x01 SEQ2 8\x93\x01\x0c\x00\x00\x00\x00"\x039\x00\x00
  
@@ -102,7 +102,7 @@ SEQ1 \x8c\x01 SEQ2 8\x93\x01\x0c\x00\x00\x00\x00"\x039\x00\x00
 そうして一歩……一歩……忘れてしまった歩き方を思い出すかの\nように、拓司はゆっくりと歩き始めた。\
 
 \x00
-SEQ4  REF6 \xfa\x0f CALL1 N\x03 CALL3 |\x03 REF_END1 
+SEQ6 REF6 \xfa\x0f CALL1 N\x03 CALL3 |\x03 REF_END1 
 LOAD3 SCE248_008 REF6 \x18\x11 REF_END2 
 SEQ1 \x8c\x01 SEQ2 <\x93\x01\x0c\x00\x00\x00\x00"\x03\xa0\x00\x00
  
@@ -113,7 +113,7 @@ SEQ1 \x8c\x01 SEQ2 <\x93\x01\x0c\x00\x00\x00\x00"\x03\xa0\x00\x00
 /*▲↑　再生終了を待つ\a3,0,0,0,\a4,0,0,0,\nここから俺は始まるのだ。@
 \n/*▲SE33　一回再生（再生終了待たず先へ）*/\a2,0,33,0,\a6,0,0,0,キイイイイイイイイイイイイイイイイイイイイイイイイイイイ！\w\n/*▲↑　再生終了を待つ*/\a3,0,0,0,\a4,0,0,0,\z
 
-SEQ4  REF6 \\\x11 CALL1 N\x03 CALL3 |\x03 REF_END1 
+SEQ6 REF6 \\\x11 CALL1 N\x03 CALL3 |\x03 REF_END1 
 LOAD3 SCE248_009 REF6 \x16\x14 REF_END2 
 SEQ1 \x8c\x01 SEQ2 @\x93\x01\x0c\x00\x00\x00\x00"\x03I\x00\x00
  
@@ -125,8 +125,8 @@ SEQ1 \x8c\x01 SEQ2 @\x93\x01\x0c\x00\x00\x00\x00"\x03I\x00\x00
 動くのだ。\
 
 \x00\x00\x00
-SEQ4  REF6 Z\x14 CALL1 N\x03 CALL3 |\x03 REF_END1 
-SEQ4 \x00\x1e:\x00 REF_END3 
+SEQ6 REF6 Z\x14 CALL1 N\x03 CALL3 |\x03 REF_END1 
+SEQ5 :\x00 REF_END3 
 LOAD6 .\\Data\\Script\\Bg.Fob REF3 \xd2\x15 REF_END2 
 LOAD4 BgAutoFadeIn REF3 \xfc\x15 REF_END1 
 LOAD3 SCE248_010 REF6  \x16 REF_END2 
@@ -145,8 +145,8 @@ SEQ1 \x8c\x01 SEQ2 D\x93\x01\x0c\x00\x00\x00\x00"\x03w\x00\x00
 　　ワハ、ワハ、ワハハハハハハハハハハ！」\
 
 \x00
-SEQ4  REF6 d\x16 CALL1 N\x03 CALL3 |\x03 REF_END1 
-SEQ4 \x00\x1e\xc9\x00 CALL1 \xd2\x15 CALL3 \xfc\x15 REF_END1 
+SEQ6 REF6 d\x16 CALL1 N\x03 CALL3 |\x03 REF_END1 
+SEQ5 \xc9\x00 CALL1 \xd2\x15 CALL3 \xfc\x15 REF_END1 
 LOAD3 SCE248_011 REF6 \xae\x18 REF_END2 
 SEQ1 \x8c\x01 SEQ2 H\x93\x01\x0c\x00\x00\x00\x00"\x03L\x00\x00
  
@@ -160,11 +160,11 @@ SEQ1 \x8c\x01 SEQ2 H\x93\x01\x0c\x00\x00\x00\x00"\x03L\x00\x00
 勝ったんだ、と。\
 
 \x00\x00\x00
-SEQ4  REF6 \xf2\x18 CALL1 N\x03 CALL3 |\x03 REF_END1 
-SEQ4  REF_END2 \x0c\x02\x00\x00"
+SEQ6 REF6 \xf2\x18 CALL1 N\x03 CALL3 |\x03 REF_END1 
+SEQ5 \x02\x00 REF_END3 
 LOAD6 .\\Data\\Script\\Bgm.Fob REF2 v\x1a REF_END2 
 LOAD2 SeStop REF1 \xa0\x1a CALL2 v\x1a REF_END2 
 LOAD2 StopCD REF1 \xc8\x1a REF_END1 
-SEQ4 \x00\x1e\xc8\x00 CALL1 \xd2\x15 CALL3 \xfc\x15 CALL2 N\x03 REF_END2 
+SEQ5 \xc8\x00 CALL1 \xd2\x15 CALL3 \xfc\x15 CALL2 N\x03 REF_END2 
 LOAD3 TextClose REF2 $\x1b REF_END1 
 END_FILE

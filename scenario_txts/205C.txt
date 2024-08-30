@@ -15,8 +15,8 @@ SEQ1 \x8c\x01 SEQ2 \xf0O\x01\x0c\x00\x00\x00\x00"\x03\xd3\x00\x00
 　　妄想の産物ではない。\p波動が襲ってきて、あなたたちは実験\n　　室に籠城した。\pそれは過去の事実なの。\p……いいわね？」\
 
 \x00
-SEQ4  REF6 J\x00 REF_END3 
-LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xb6\x03 REF_END2 
+SEQ6 REF6 J\x00 REF_END3 
+LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 \xb6\x03 REF_END2 
 LOAD2 TextOn REF1 \xe4\x03 CALL2 \xb6\x03 REF_END2 
 LOAD3 TextClose REF2 \x0c\x04 REF_END1 
 END_FILE

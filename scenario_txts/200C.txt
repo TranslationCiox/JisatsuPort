@@ -2,10 +2,10 @@ START_FILE
 \xd0%\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00^ \x00
 LOAD3 SCE200_001 REF6 \x06\x00 REF_END2 
 SEQ1 \x8c\x01 SEQ2  H\x01\x0c\x00\x00\x00\x00"
-SEQ4 \x00\x1e\xc9\x00 REF_END3 
+SEQ5 \xc9\x00 REF_END3 
 LOAD6 .\\Data\\Script\\Bg.Fob REF3 d\x00 REF_END2 
 LOAD4 BgAutoFadeIn REF3 \x8e\x00 REF_END1 
-SEQ4  REF_END2 \x0c\x02\x00\x00" \x1e\x04\x00\x00\r\x00\x00\x1e\x06\x00 REF_END3  \x1e\x08\x00\x00\r\x00\x00\x1e\x01\x00 REF_END3 
+SEQ5 \x02\x00 REF_END3  \x1e\x04\x00\x00\r\x00\x00\x1e\x06\x00 REF_END3  \x1e\x08\x00\x00\r\x00\x00\x1e\x01\x00 REF_END3 
 LOAD6 .\\Data\\Script\\Bgm.Fob REF2 \x00\x01 REF_END2 
 LOAD2 SePlay REF1 *\x01 REF_END1 \x03v\x00\x00
  
@@ -22,8 +22,8 @@ LOAD2 SePlay REF1 *\x01 REF_END1 \x03v\x00\x00
 　　食糧がどうとか、鍵がどうとか……雲居さんという名前も\n　　いっていたね」\
 
 \x00\x00\x00
-SEQ4  REF6 F\x01 REF_END3 
-LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 >\x03 REF_END2 
+SEQ6 REF6 F\x01 REF_END3 
+LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 >\x03 REF_END2 
 LOAD2 TextOn REF1 l\x03 REF_END1 
 LOAD3 SCE200_002 REF6 \x88\x03 REF_END2 
 SEQ1 \x8c\x01 SEQ2 $H\x01\x0c\x00\x00\x00\x00"\x03T\x00\x00
@@ -37,7 +37,7 @@ SEQ1 \x8c\x01 SEQ2 $H\x01\x0c\x00\x00\x00\x00"\x03T\x00\x00
 \n腹の中にたまっていたストレスに、バチバチと怒りが放電し、大\n爆発した。\
 
 \x00
-SEQ4  REF6 \xcc\x03 CALL1 >\x03 CALL3 l\x03 REF_END1 
+SEQ6 REF6 \xcc\x03 CALL1 >\x03 CALL3 l\x03 REF_END1 
 LOAD3 SCE200_003 REF6 V\x05 REF_END2 
 SEQ1 \x8c\x01 SEQ2 (H\x01\x0c\x00\x00\x00\x00"\x03\xb0\x00\x00
  
@@ -47,7 +47,7 @@ SEQ1 \x8c\x01 SEQ2 (H\x01\x0c\x00\x00\x00\x00"\x03\xb0\x00\x00
 　　どれが本当の世界なんだ？！」\
 
 \x00\x00\x00
-SEQ4  REF6 \x9a\x05 CALL1 >\x03 CALL3 l\x03 REF_END1 
+SEQ6 REF6 \x9a\x05 CALL1 >\x03 CALL3 l\x03 REF_END1 
 LOAD3 SCE200_004 REF6 \x94\x08 REF_END2 
 SEQ1 \x8c\x01 SEQ2 ,H\x01\x0c\x00\x00\x00\x00"\x03\xcb\x00\x00
  
@@ -60,7 +60,7 @@ SEQ1 \x8c\x01 SEQ2 ,H\x01\x0c\x00\x00\x00\x00"\x03\xcb\x00\x00
 　悲惨なのは、そんなふうな神経症的不安のなかにあっても、\n『神経症的不安のなかにある自分』を客観的に観察している自\n分の意識……視点が……別のどこかにあるという事実である……。\n\
 
 \x00
-SEQ4  REF6 \xd8\x08 CALL1 >\x03 CALL3 l\x03 REF_END1 
+SEQ6 REF6 \xd8\x08 CALL1 >\x03 CALL3 l\x03 REF_END1 
 LOAD3 SCE200_005 REF6 >\x0c REF_END2 
 SEQ1 \x8c\x01 SEQ2 0H\x01\x0c\x00\x00\x00\x00"\x03\xa3\x00\x00
  
@@ -71,7 +71,7 @@ SEQ1 \x8c\x01 SEQ2 0H\x01\x0c\x00\x00\x00\x00"\x03\xa3\x00\x00
 拓司\n　「……」\
 
 \x00
-SEQ4  REF6 \x82\x0c CALL1 >\x03 CALL3 l\x03 REF_END1 
+SEQ6 REF6 \x82\x0c CALL1 >\x03 CALL3 l\x03 REF_END1 
 LOAD3 SCE200_006 REF6 H\x0f REF_END2 
 SEQ1 \x8c\x01 SEQ2 4H\x01\x0c\x00\x00\x00\x00"\x032\x00\x00
  
@@ -79,7 +79,7 @@ SEQ1 \x8c\x01 SEQ2 4H\x01\x0c\x00\x00\x00\x00"\x032\x00\x00
 拓司\n　「……」\
 
 \x00\x00\x00
-SEQ4  REF6 \x8c\x0f CALL1 >\x03 CALL3 l\x03 REF_END1 
+SEQ6 REF6 \x8c\x0f CALL1 >\x03 CALL3 l\x03 REF_END1 
 LOAD3 SCE200_007 REF6 \x8e\x10 REF_END2 
 SEQ1 \x8c\x01 SEQ2 8H\x01\x0c\x00\x00\x00\x00"\x03\xe8\x00\x00
  
@@ -91,7 +91,7 @@ SEQ1 \x8c\x01 SEQ2 8H\x01\x0c\x00\x00\x00\x00"\x03\xe8\x00\x00
 拓司\n　「……」\
 
 \x00\x00\x00
-SEQ4  REF6 \xd2\x10 CALL1 >\x03 CALL3 l\x03 REF_END1 
+SEQ6 REF6 \xd2\x10 CALL1 >\x03 CALL3 l\x03 REF_END1 
 LOAD3 SCE200_008 REF6 \xac\x14 REF_END2 
 SEQ1 \x8c\x01 SEQ2 <H\x01\x0c\x00\x00\x00\x00"\x03\x95\x00\x00
  
@@ -103,7 +103,7 @@ SEQ1 \x8c\x01 SEQ2 <H\x01\x0c\x00\x00\x00\x00"\x03\x95\x00\x00
 　　それだけの話だよ」\
 
 \x00
-SEQ4  REF6 \xf0\x14 CALL1 >\x03 CALL3 l\x03 REF_END1 
+SEQ6 REF6 \xf0\x14 CALL1 >\x03 CALL3 l\x03 REF_END1 
 LOAD3 SCE200_009 REF6 ~\x17 REF_END2 
 SEQ1 \x8c\x01 SEQ2 @H\x01\x0c\x00\x00\x00\x00"\x03\x92\x00\x00
  
@@ -118,7 +118,7 @@ SEQ1 \x8c\x01 SEQ2 @H\x01\x0c\x00\x00\x00\x00"\x03\x92\x00\x00
 眠って、二度と目覚めなければいいと思った。\p夢も見ずに完全に\n眠っているあいだだけ、自分が自分以外のものではない、完全な\n存在でいられるような気がした。\
 
 \x00
-SEQ4  REF6 \xc2\x17 CALL1 >\x03 CALL3 l\x03 REF_END1 
+SEQ6 REF6 \xc2\x17 CALL1 >\x03 CALL3 l\x03 REF_END1 
 LOAD3 SCE200_010 REF6 D\x1a REF_END2 
 SEQ1 \x8c\x01 SEQ2 DH\x01\x0c\x00\x00\x00\x00"\x03\x97\x00\x00
  
@@ -128,7 +128,7 @@ SEQ1 \x8c\x01 SEQ2 DH\x01\x0c\x00\x00\x00\x00"\x03\x97\x00\x00
 拓司\n　「でも、この世界は……遠いような気がする。\p馴染みがないよ\n　　うな……なにも知らない世界だ。\p『おれの世界』のことなら\n　　なんでも知ってるんだ……」\
 
 \x00\x00\x00
-SEQ4  REF6 \x88\x1a CALL1 >\x03 CALL3 l\x03 REF_END1 
+SEQ6 REF6 \x88\x1a CALL1 >\x03 CALL3 l\x03 REF_END1 
 LOAD3 SCE200_011 REF6 \x1e\x1d REF_END2 
 SEQ1 \x8c\x01 SEQ2 HH\x01\x0c\x00\x00\x00\x00"\x039\x00\x00
  
@@ -137,7 +137,7 @@ SEQ1 \x8c\x01 SEQ2 HH\x01\x0c\x00\x00\x00\x00"\x039\x00\x00
 拓司\n　「……」\
 
 \x00
-SEQ4  REF6 b\x1d CALL1 >\x03 CALL3 l\x03 REF_END1 
+SEQ6 REF6 b\x1d CALL1 >\x03 CALL3 l\x03 REF_END1 
 LOAD3 SCE200_012 REF6 \x80\x1e REF_END2 
 SEQ1 \x8c\x01 SEQ2 LH\x01\x0c\x00\x00\x00\x00"\x030\x00\x00
  
@@ -151,9 +151,9 @@ SEQ1 \x8c\x01 SEQ2 LH\x01\x0c\x00\x00\x00\x00"\x030\x00\x00
 そのとき、突如、何者かが拓司の肩を掴んだ。\
 
 \x00\x00\x00
-SEQ4  REF6 \xc4\x1e CALL1 >\x03 CALL3 l\x03 REF_END1 
-SEQ4  REF_END2 \x0c\x02\x00\x00" REF7 \x00\x01 REF_END2 
+SEQ6 REF6 \xc4\x1e CALL1 >\x03 CALL3 l\x03 REF_END1 
+SEQ5 \x02\x00 CALL1 \x00\x01 REF_END2 
 LOAD2 SeStop REF1 \xe4\x1f REF_END1 
-SEQ4 \x00\x1e\xc8\x00 CALL1 d\x00 CALL3 \x8e\x00 CALL2 >\x03 REF_END2 
+SEQ5 \xc8\x00 CALL1 d\x00 CALL3 \x8e\x00 CALL2 >\x03 REF_END2 
 LOAD3 TextClose REF2 @  REF_END1 
 END_FILE

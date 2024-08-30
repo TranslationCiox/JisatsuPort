@@ -19,12 +19,12 @@ SEQ1 \x8c\x01 SEQ2 \x903 SEQ3 \x03\x87\x00\x00
 紅葉はひどく消耗している。\p乱れた髪の毛が頬に貼り付いている。\n\p泣きはらした目がはれぼったい。\p顔は汗と油でてらてらと光ってい\nるが、唇は対照的に乾いている……。\
 
 \x00
-SEQ4  REF6 \x90\x00 REF_END3 
-LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xcc\x02 REF_END2 
+SEQ6 REF6 \x90\x00 REF_END3 
+LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 \xcc\x02 REF_END2 
 LOAD2 TextOn REF1 \xfa\x02 REF_END1 
-SEQ4 \x00\x1e\x05\x01 CALL1 \x06\x00 REF_END2 
+SEQ5 \x05\x01 CALL1 \x06\x00 REF_END2 
 LOAD2 PlayCD REF1 <\x03 REF_END1 
-SEQ4 \x00\x1eO\x00 REF_END3 
+SEQ5 O\x00 REF_END3 
 LOAD6 .\\Data\\Script\\Bg.Fob REF3 r\x03 REF_END2 
 LOAD4 BgAutoFadeIn REF3 \x9c\x03 REF_END1 
 LOAD3 SCE023_002 REF6 \xc0\x03 REF_END2 
@@ -43,7 +43,7 @@ SEQ1 \x8c\x01 SEQ2 \x943 SEQ3 \x03\x9a\x00\x00
 すべてをうち砕くために。\
 
 \x00
-SEQ4  REF6 \x04\x04 CALL1 \xcc\x02 CALL3 \xfa\x02 REF_END1 
+SEQ6 REF6 \x04\x04 CALL1 \xcc\x02 CALL3 \xfa\x02 REF_END1 
 LOAD3 SCE023_003 REF6 \xa6\x06 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \x983 SEQ3 \x03\xac\x00\x00
  
@@ -60,7 +60,7 @@ SEQ1 \x8c\x01 SEQ2 \x983 SEQ3 \x03\xac\x00\x00
 　　道具としていろいろ使えるからさ……いろいろな」\
 
 \x00\x00\x00
-SEQ4  REF6 \xea\x06 CALL1 \xcc\x02 CALL3 \xfa\x02 REF_END1 
+SEQ6 REF6 \xea\x06 CALL1 \xcc\x02 CALL3 \xfa\x02 REF_END1 
 LOAD3 SCE023_004 REF6 \xd4\t REF_END2 
 SEQ1 \x8c\x01 SEQ2 \x9c3 SEQ3 \x03y\x00\x00
  
@@ -74,7 +74,7 @@ SEQ1 \x8c\x01 SEQ2 \x9c3 SEQ3 \x03y\x00\x00
 紅葉\n　「……やだ……ひどいこといわないで……」\
 
 \x00\x00\x00
-SEQ4  REF6 \x18\n CALL1 \xcc\x02 CALL3 \xfa\x02 REF_END1 
+SEQ6 REF6 \x18\n CALL1 \xcc\x02 CALL3 \xfa\x02 REF_END1 
 LOAD3 SCE023_005 REF6 6\x0c REF_END2 
 SEQ1 \x8c\x01 SEQ2 \xa03 SEQ3 \x03\xa1\x00\x00
  
@@ -87,7 +87,7 @@ SEQ1 \x8c\x01 SEQ2 \xa03 SEQ3 \x03\xa1\x00\x00
 紅葉\n　「もういいでしょ！　私の人生メチャクチャにして……もう満足\n　　でしょ？！」\
 
 \x00
-SEQ4  REF6 z\x0c CALL1 \xcc\x02 CALL3 \xfa\x02 REF_END1 
+SEQ6 REF6 z\x0c CALL1 \xcc\x02 CALL3 \xfa\x02 REF_END1 
 LOAD3 SCE023_006 REF6 8\x0f REF_END2 
 SEQ1 \x8c\x01 SEQ2 \xa43 SEQ3 \x03\x9d\x00\x00
  
@@ -98,7 +98,7 @@ SEQ1 \x8c\x01 SEQ2 \xa43 SEQ3 \x03\x9d\x00\x00
 拓司は、勝ち誇ったように、紅葉の柔らかい恥丘を踏みにじる。@
 屈辱を与えるためでもあるが、もうひとつ、紅葉の尿意を促す意味\nもある。\pずっと排尿を我慢し続けてきた紅葉はもはや限界なのだ。\n\w\z
 \x00\x00\x00
-SEQ4  REF6 |\x0f CALL1 \xcc\x02 CALL3 \xfa\x02 REF_END1 
+SEQ6 REF6 |\x0f CALL1 \xcc\x02 CALL3 \xfa\x02 REF_END1 
 LOAD3 SCE023_007 REF6 *\x12 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \xa83 SEQ3 \x03a\x00\x00
  
@@ -112,7 +112,7 @@ SEQ1 \x8c\x01 SEQ2 \xa83 SEQ3 \x03a\x00\x00
 拓司\n　「いやだね。いま、おれの前でしてみせろよ」\
 
 \x00\x00\x00
-SEQ4  REF6 n\x12 CALL1 \xcc\x02 CALL3 \xfa\x02 REF_END1 
+SEQ6 REF6 n\x12 CALL1 \xcc\x02 CALL3 \xfa\x02 REF_END1 
 LOAD3 SCE023_008 REF6 ,\x14 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \xac3 SEQ3 \x03n\x00\x00
  
@@ -123,7 +123,7 @@ SEQ1 \x8c\x01 SEQ2 \xac3 SEQ3 \x03n\x00\x00
 \n紅葉\n　「水……頂戴……」\
 
 \x00
-SEQ4  REF6 p\x14 CALL1 \xcc\x02 CALL3 \xfa\x02 REF_END1 
+SEQ6 REF6 p\x14 CALL1 \xcc\x02 CALL3 \xfa\x02 REF_END1 
 LOAD3 SCE023_009 REF6 b\x16 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \xb03 SEQ3 \x03k\x00\x00
  
@@ -137,7 +137,7 @@ SEQ1 \x8c\x01 SEQ2 \xb03 SEQ3 \x03k\x00\x00
 紅葉\n　「……」\
 
 \x00\x00\x00
-SEQ4  REF6 \xa6\x16 CALL1 \xcc\x02 CALL3 \xfa\x02 REF_END1 
+SEQ6 REF6 \xa6\x16 CALL1 \xcc\x02 CALL3 \xfa\x02 REF_END1 
 LOAD3 SCE023_010 REF6 \x8c\x18 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \xb43 SEQ3 \x03\x91\x00\x00
  
@@ -153,7 +153,7 @@ SEQ1 \x8c\x01 SEQ2 \xb43 SEQ3 \x03\x91\x00\x00
 しかし拓司は許さない。\p顎を掴んで無理矢理顔を上向きにし、冷酷\nに笑う。\
 
 \x00\x00\x00
-SEQ4  REF6 \xd0\x18 CALL1 \xcc\x02 CALL3 \xfa\x02 REF_END1 
+SEQ6 REF6 \xd0\x18 CALL1 \xcc\x02 CALL3 \xfa\x02 REF_END1 
 LOAD3 SCE023_011 REF6 N\x1b REF_END2 
 SEQ1 \x8c\x01 SEQ2 \xb83 SEQ3 \x03\xb9\x00\x00
  
@@ -166,7 +166,7 @@ SEQ1 \x8c\x01 SEQ2 \xb83 SEQ3 \x03\xb9\x00\x00
 拓司\n　「おいおいおいおーい、まだ出るのか？\p　よっぽどおれに見られ\n　　るのが嬉しいんだな。\p体中から汗のにおいさせて、ションベン\n　　もらして……おまえ異常なんじゃないか？」\
 
 \x00
-SEQ4  REF6 \x92\x1b CALL1 \xcc\x02 CALL3 \xfa\x02 REF_END1 
+SEQ6 REF6 \x92\x1b CALL1 \xcc\x02 CALL3 \xfa\x02 REF_END1 
 LOAD3 SCE023_012 REF6 \xb0\x1e REF_END2 
 SEQ1 \x8c\x01 SEQ2 \xbc3 SEQ3 \x03\x97\x00\x00
  
@@ -178,7 +178,7 @@ SEQ1 \x8c\x01 SEQ2 \xbc3 SEQ3 \x03\x97\x00\x00
 拓司はおもむろにペ○スを引きずり出し、先端を紅葉の身体に定め\nた。\
 
 \x00
-SEQ4  REF6 \xf4\x1e CALL1 \xcc\x02 CALL3 \xfa\x02 REF_END1 
+SEQ6 REF6 \xf4\x1e CALL1 \xcc\x02 CALL3 \xfa\x02 REF_END1 
 LOAD3 SCE023_013 REF6 \x8a! REF_END2 
 SEQ1 \x8c\x01 SEQ2 \xc03 SEQ3 \x03v\x00\x00
  
@@ -191,7 +191,7 @@ SEQ1 \x8c\x01 SEQ2 \xc03 SEQ3 \x03v\x00\x00
 \n紅葉　「う……ううっ……」\
 
 \x00\x00\x00
-SEQ4  REF6 \xce! CALL1 \xcc\x02 CALL3 \xfa\x02 REF_END1 
+SEQ6 REF6 \xce! CALL1 \xcc\x02 CALL3 \xfa\x02 REF_END1 
 LOAD3 SCE023_014 REF6 \xe0# REF_END2 
 SEQ1 \x8c\x01 SEQ2 \xc43 SEQ3 \x03d\x00\x00
  
@@ -200,7 +200,7 @@ SEQ1 \x8c\x01 SEQ2 \xc43 SEQ3 \x03d\x00\x00
 \n拓司はペ○スの先端を徐々に上に上げていく。\pそれに従って、ほと\nばしり出る尿は、早桃の体を這うように昇っていき、やがて黒い髪\nの毛に降り注いだ。\
 
 \x00
-SEQ4  REF6 $$ CALL1 \xcc\x02 CALL3 \xfa\x02 REF_END1 
+SEQ6 REF6 $$ CALL1 \xcc\x02 CALL3 \xfa\x02 REF_END1 
 LOAD3 SCE023_015 REF6 \xee% REF_END2 
 SEQ1 \x8c\x01 SEQ2 \xc83 SEQ3 \x03k\x00\x00
  
@@ -210,8 +210,8 @@ SEQ1 \x8c\x01 SEQ2 \xc83 SEQ3 \x03k\x00\x00
 紅葉\n　「う……うむっ……うぷぷ……」\
 
 \x00\x00\x00
-SEQ4  REF6 2& CALL1 \xcc\x02 CALL3 \xfa\x02 REF_END1 
-SEQ4 \x00\x1eP\x00 CALL1 r\x03 CALL3 \x9c\x03 REF_END1 
+SEQ6 REF6 2& CALL1 \xcc\x02 CALL3 \xfa\x02 REF_END1 
+SEQ5 P\x00 CALL1 r\x03 CALL3 \x9c\x03 REF_END1 
 LOAD3 SCE023_016 REF6 L( REF_END2 
 SEQ1 \x8c\x01 SEQ2 \xcc3 SEQ3 \x03\x85\x00\x00
  
@@ -221,7 +221,7 @@ SEQ1 \x8c\x01 SEQ2 \xcc3 SEQ3 \x03\x85\x00\x00
 拓司\n　「よし……こぼさず飲めよ。\p腹の中までおれのしょんべんを染み\n　　渡らせてやるよ。\p内臓までおしっこまみれの不潔女だ、お前は\n　　！」\
 
 \x00
-SEQ4  REF6 \x90( CALL1 \xcc\x02 CALL3 \xfa\x02 REF_END1 
+SEQ6 REF6 \x90( CALL1 \xcc\x02 CALL3 \xfa\x02 REF_END1 
 LOAD3 SCE023_017 REF6 \xde* REF_END2 
 SEQ1 \x8c\x01 SEQ2 \xd03 SEQ3 \x03\xbc\x00\x00
  
@@ -231,7 +231,7 @@ SEQ1 \x8c\x01 SEQ2 \xd03 SEQ3 \x03\xbc\x00\x00
 　　それとも毎日同じようなもの食ってるんだから、味も同じなの\n　　かな？\p　ははは、嬉しいだろ？\p　ただ、お前んちの親が心配す\n　　ると気の毒だからな。\p立派に便器として生きていますって、写\n　　真に撮って送ってやるよ」\
 
 \x00
-SEQ4  REF6 "+ CALL1 \xcc\x02 CALL3 \xfa\x02 REF_END1 
+SEQ6 REF6 "+ CALL1 \xcc\x02 CALL3 \xfa\x02 REF_END1 
 LOAD3 SCE023_018 REF6 L. REF_END2 
 SEQ1 \x8c\x01 SEQ2 \xd43 SEQ3 \x03\x9b\x00\x00
  
@@ -243,7 +243,7 @@ SEQ1 \x8c\x01 SEQ2 \xd43 SEQ3 \x03\x9b\x00\x00
 　ザアザアアアアアアア……\
 
 \x00
-SEQ4  REF6 \x90. CALL1 \xcc\x02 CALL3 \xfa\x02 REF_END1 
+SEQ6 REF6 \x90. CALL1 \xcc\x02 CALL3 \xfa\x02 REF_END1 
 LOAD3 SCE023_019 REF6 61 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \xd83 SEQ3 \x031\x00\x00
  
@@ -255,7 +255,7 @@ SEQ1 \x8c\x01 SEQ2 \xd83 SEQ3 \x031\x00\x00
 　ザアザアアアアアアア……\
 
 \x00
-SEQ4  REF6 z1 CALL1 \xcc\x02 CALL3 \xfa\x02 CALL2 \x06\x00 CALL3 0\x00 REF_END1 
-SEQ4 \x00\x1e\xc8\x00 CALL1 r\x03 CALL3 \x9c\x03 CALL2 \xcc\x02 REF_END2 
+SEQ6 REF6 z1 CALL1 \xcc\x02 CALL3 \xfa\x02 CALL2 \x06\x00 CALL3 0\x00 REF_END1 
+SEQ5 \xc8\x00 CALL1 r\x03 CALL3 \x9c\x03 CALL2 \xcc\x02 REF_END2 
 LOAD3 TextClose REF2 \xd22 REF_END1 
 END_FILE

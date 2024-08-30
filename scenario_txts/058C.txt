@@ -10,10 +10,10 @@ SEQ1 \x8c\x01 SEQ2 @j SEQ3 \x03\x1b\x00\x00
 拓司は一気に教室に駆け込んだ。\
 
 \x00\x00\x00
-SEQ4  REF6 \x90\x00 REF_END3 
-LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \x1c\x01 REF_END2 
+SEQ6 REF6 \x90\x00 REF_END3 
+LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 \x1c\x01 REF_END2 
 LOAD2 TextOn REF1 J\x01 REF_END1 
-SEQ4 \x00\x1e\n\x01 CALL1 \x06\x00 REF_END2 
+SEQ5 \n\x01 CALL1 \x06\x00 REF_END2 
 LOAD2 PlayCD REF1 \x8c\x01 REF_END1 
 LOAD3 SCE058_002 REF6 \xa8\x01 REF_END2 
 SEQ1 \x8c\x01 SEQ2 Dj SEQ3 \x03r\x00\x00
@@ -28,7 +28,7 @@ SEQ1 \x8c\x01 SEQ2 Dj SEQ3 \x03r\x00\x00
 拓司の胸のなかで、どす黒い塊が爆発した。\
 
 \x00
-SEQ4  REF6 \xec\x01 CALL1 \x1c\x01 CALL3 J\x01 REF_END1 
+SEQ6 REF6 \xec\x01 CALL1 \x1c\x01 CALL3 J\x01 REF_END1 
 LOAD3 SCE058_003 REF6 \xee\x03 REF_END2 
 SEQ1 \x8c\x01 SEQ2 Hj SEQ3 \x03\x9a\x00\x00
  
@@ -43,8 +43,8 @@ SEQ1 \x8c\x01 SEQ2 Hj SEQ3 \x03\x9a\x00\x00
 視界が奇妙な色で明滅する。\
 
 \x00
-SEQ4  REF6 2\x04 CALL1 \x1c\x01 CALL3 J\x01 REF_END1 
-SEQ4 \x00\x1e\xc8\x00 REF_END3 
+SEQ6 REF6 2\x04 CALL1 \x1c\x01 CALL3 J\x01 REF_END1 
+SEQ5 \xc8\x00 REF_END3 
 LOAD6 .\\Data\\Script\\Bg.Fob REF3 \xee\x06 REF_END2 
 LOAD4 BgAutoFadeIn REF3 \x18\x07 REF_END1 
 LOAD3 SCE058_004 REF6 <\x07 REF_END2 
@@ -61,8 +61,8 @@ SEQ1 \x8c\x01 SEQ2 Lj SEQ3 \x03\xab\x00\x00
 　全員がビクッと身体をこわばらせ、おそるおそる、互いに顔を\n見合わせる。\pなかには反抗的な目でなたねをにらみ続けている者\nもいる。\pしかし、そんな視線をすべて受けてなお、なたねは動じ\nる様子もなく、毅然と立って叫び続けた。\
 
 \x00\x00
-SEQ4  REF6 \x80\x07 CALL1 \x1c\x01 CALL3 J\x01 REF_END1 
-SEQ4 \x00\x1e\x0b\x01 CALL1 \x06\x00 CALL3 \x8c\x01 REF_END1 
+SEQ6 REF6 \x80\x07 CALL1 \x1c\x01 CALL3 J\x01 REF_END1 
+SEQ5 \x0b\x01 CALL1 \x06\x00 CALL3 \x8c\x01 REF_END1 
 LOAD3 SCE058_005 REF6 \x9a\n REF_END2 
 SEQ1 \x8c\x01 SEQ2 Pj SEQ3 \x03\xc5\x00\x00
  
@@ -75,7 +75,7 @@ SEQ1 \x8c\x01 SEQ2 Pj SEQ3 \x03\xc5\x00\x00
 　なたねの子供っぽい罵詈雑言を受けて、彼らは心から傷ついて\nいるのだ。\
 
 \x00\x00\x00
-SEQ4  REF6 \xde\n CALL1 \x1c\x01 CALL3 J\x01 REF_END1 
+SEQ6 REF6 \xde\n CALL1 \x1c\x01 CALL3 J\x01 REF_END1 
 LOAD3 SCE058_006 REF6 ,\x0e REF_END2 
 SEQ1 \x8c\x01 SEQ2 Tj SEQ3 \x03N\x00\x00
  
@@ -87,7 +87,7 @@ SEQ1 \x8c\x01 SEQ2 Tj SEQ3 \x03N\x00\x00
 　そこには窓があった。\
 
 \x00
-SEQ4  REF6 p\x0e CALL1 \x1c\x01 CALL3 J\x01 REF_END1 
+SEQ6 REF6 p\x0e CALL1 \x1c\x01 CALL3 J\x01 REF_END1 
 LOAD3 SCE058_007 REF6 \xe2\x0f REF_END2 
 SEQ1 \x8c\x01 SEQ2 Xj SEQ3 \x03B\x00\x00
  
@@ -102,7 +102,7 @@ SEQ1 \x8c\x01 SEQ2 Xj SEQ3 \x03B\x00\x00
 男子学生\n　「終わり」\
 
 \x00\x00\x00
-SEQ4  REF6 &\x10 CALL1 \x1c\x01 CALL3 J\x01 REF_END1 
+SEQ6 REF6 &\x10 CALL1 \x1c\x01 CALL3 J\x01 REF_END1 
 LOAD3 SCE058_006 REF6 h\x11 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \\j SEQ3 \x03\x85\x00\x00
  
@@ -114,7 +114,7 @@ SEQ1 \x8c\x01 SEQ2 \\j SEQ3 \x03\x85\x00\x00
 終わりはすぐにやってきた。\p学生たちは我先にと窓へ殺到し、躊\n躇することもなく飛び降りて消えていった。\p先ほどの喉を切った\n学生たちと同じく、なにか笑ってしまうような光景だった。\
 
 \x00\x00\x00
-SEQ4  REF6 \xac\x11 CALL1 \x1c\x01 CALL3 J\x01 CALL2 \x06\x00 CALL3 0\x00 REF_END1 
+SEQ6 REF6 \xac\x11 CALL1 \x1c\x01 CALL3 J\x01 CALL2 \x06\x00 CALL3 0\x00 REF_END1 
 LOAD3 SCE058_009 REF6 \x14\x14 REF_END2 
 SEQ1 \x8c\x01 SEQ2 `j SEQ3 \x03h\x00\x00
  
@@ -123,8 +123,8 @@ SEQ1 \x8c\x01 SEQ2 `j SEQ3 \x03h\x00\x00
 床に押さえつけられても、早桃はまだ何かに取り憑かれたような\n様子で、ブルブルと震えていた。\p拓司はそんな早桃に馬乗りにな\nって、頬に数発、鋭い平手打ちを放った。\
 
 \x00\x00\x00
-SEQ4  REF6 X\x14 CALL1 \x1c\x01 CALL3 J\x01 REF_END1 
-SEQ4 \x00\x1e\xc8\x00 CALL1 \xee\x06 CALL3 \x18\x07 REF_END1 
+SEQ6 REF6 X\x14 CALL1 \x1c\x01 CALL3 J\x01 REF_END1 
+SEQ5 \xc8\x00 CALL1 \xee\x06 CALL3 \x18\x07 REF_END1 
 LOAD3 SCE058_010 REF6 f\x16 REF_END2 
 SEQ1 \x8c\x01 SEQ2 dj SEQ3 \x03v\x00\x00
  
@@ -138,7 +138,7 @@ SEQ1 \x8c\x01 SEQ2 dj SEQ3 \x03v\x00\x00
 早桃\n　「……私はもうたどり着けないから。\pおにいちゃんのこと、好\n　　きになる資格ないから」\
 
 \x00\x00\x00
-SEQ4  REF6 \xaa\x16 CALL1 \x1c\x01 CALL3 J\x01 REF_END1 
+SEQ6 REF6 \xaa\x16 CALL1 \x1c\x01 CALL3 J\x01 REF_END1 
 LOAD3 SCE058_011 REF6 \xbc\x18 REF_END2 
 SEQ1 \x8c\x01 SEQ2 hj SEQ3 \x03\x88\x00\x00
  
@@ -153,7 +153,7 @@ SEQ1 \x8c\x01 SEQ2 hj SEQ3 \x03\x88\x00\x00
 　拓司は心配したが、１分もすると、早桃はゆっくりと自分で身\n　体を起こした。\
 
 \x00
-SEQ4  REF6 \x00\x19 CALL1 \x1c\x01 CALL3 J\x01 REF_END1 
+SEQ6 REF6 \x00\x19 CALL1 \x1c\x01 CALL3 J\x01 REF_END1 
 LOAD3 SCE058_012 REF6 Z\x1b REF_END2 
 SEQ1 \x8c\x01 SEQ2 lj SEQ3 \x03]\x00\x00
  
@@ -168,7 +168,7 @@ SEQ1 \x8c\x01 SEQ2 lj SEQ3 \x03]\x00\x00
 早桃\n　「大丈夫。早桃は大丈夫だから。\pそれよりも……」\
 
 \x00\x00\x00
-SEQ4  REF6 \x9e\x1b CALL1 \x1c\x01 CALL3 J\x01 REF_END1 
+SEQ6 REF6 \x9e\x1b CALL1 \x1c\x01 CALL3 J\x01 REF_END1 
 LOAD3 SCE058_013 REF6 L\x1d REF_END2 
 SEQ1 \x8c\x01 SEQ2 pj SEQ3 \x03\x1d\x00\x00
  
@@ -176,12 +176,12 @@ SEQ1 \x8c\x01 SEQ2 pj SEQ3 \x03\x1d\x00\x00
 早桃\n　「……なんでもない。\p行こう、おにいちゃん。\pここに、いたく\n　　ない……」\
 
 \x00\x00\x00
-SEQ4  REF6 \x90\x1d CALL1 \x1c\x01 CALL3 J\x01 REF_END1 \x03\x12\x00\x00
+SEQ6 REF6 \x90\x1d CALL1 \x1c\x01 CALL3 J\x01 REF_END1 \x03\x12\x00\x00
 CHOICE
 「……天使って、なんだ？」\n「……ここにいたくない？」\n\l0,2,
 ENDCHOICE
 
 \x00
-SEQ4  REF6 >\x1e CALL1 \x1c\x01 CALL3 J\x01 CALL2 \x1c\x01 REF_END2 
+SEQ6 REF6 >\x1e CALL1 \x1c\x01 CALL3 J\x01 CALL2 \x1c\x01 REF_END2 
 LOAD3 TextClose REF2 \xcc\x1e REF_END1 
 END_FILE

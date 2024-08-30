@@ -1,6 +1,6 @@
 START_FILE
 \x0e\x13\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x000\x10\x00
-SEQ4 \x00\x1e\x06\x01 REF_END3 
+SEQ5 \x06\x01 REF_END3 
 LOAD6 .\\Data\\Script\\Bgm.Fob REF2  \x00 REF_END2 
 LOAD2 PlayCD REF1 J\x00 REF_END1 
 LOAD3 SCE049_001 REF6 f\x00 REF_END2 
@@ -15,8 +15,8 @@ SEQ1 \x8c\x01 SEQ2 0\\ SEQ3 \x03\xe6\x00\x00
 柏木の死と、なたねたちの乱交は切り離せない。\pそれをどうごま\nかせばいいのかまだ決めかねているが……人がひとり死んでいる\nのだ。\pさすがに知らん顔というわけにもいくまい。\pそれに、放っ\nておいてもいずれ死体は見つかる。\p事件が膨れ上がって手に負え\nなくなる前に、なんらかの処置を施して、自分となたねに降りか\nかる火の粉を少しでも減らしておいたほうがいいだろう。\
 
 \x00\x00\x00
-SEQ4  REF6 \xaa\x00 REF_END3 
-LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 b\x04 REF_END2 
+SEQ6 REF6 \xaa\x00 REF_END3 
+LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 b\x04 REF_END2 
 LOAD2 TextOn REF1 \x90\x04 REF_END1 
 LOAD3 SCE049_002 REF6 \xac\x04 REF_END2 
 SEQ1 \x8c\x01 SEQ2 4\\ SEQ3 \x03q\x00\x00
@@ -32,7 +32,7 @@ SEQ1 \x8c\x01 SEQ2 4\\ SEQ3 \x03q\x00\x00
 　あまりに突然のことに、拓司は思わず小さく悲鳴をもらした。\
 
 \x00
-SEQ4  REF6 \xf0\x04 CALL1 b\x04 CALL3 \x90\x04 REF_END1 
+SEQ6 REF6 \xf0\x04 CALL1 b\x04 CALL3 \x90\x04 REF_END1 
 LOAD3 SCE049_003 REF6 \xee\x06 REF_END2 
 SEQ1 \x8c\x01 SEQ2 8\\ SEQ3 \x03k\x00\x00
  
@@ -50,7 +50,7 @@ SEQ1 \x8c\x01 SEQ2 8\\ SEQ3 \x03k\x00\x00
 \nなたね\n　「大丈夫、虎菱くん？」\
 
 \x00\x00\x00
-SEQ4  REF6 2\x07 CALL1 b\x04 CALL3 \x90\x04 REF_END1 
+SEQ6 REF6 2\x07 CALL1 b\x04 CALL3 \x90\x04 REF_END1 
 LOAD3 SCE049_004 REF6 \x18\t REF_END2 
 SEQ1 \x8c\x01 SEQ2 <\\ SEQ3 \x03\xa0\x00\x00
  
@@ -63,7 +63,7 @@ SEQ1 \x8c\x01 SEQ2 <\\ SEQ3 \x03\xa0\x00\x00
 \n　ちいさくつぶやく。\pぎくりとして見ると、なたねは真剣な表情\n　で、あたりを見回している。\
 
 \x00\x00\x00
-SEQ4  REF6 \\\t CALL1 b\x04 CALL3 \x90\x04 REF_END1 
+SEQ6 REF6 \\\t CALL1 b\x04 CALL3 \x90\x04 REF_END1 
 LOAD3 SCE049_005 REF6 \x16\x0c REF_END2 
 SEQ1 \x8c\x01 SEQ2 @\\ SEQ3 \x03q\x00\x00
  
@@ -74,7 +74,7 @@ SEQ1 \x8c\x01 SEQ2 @\\ SEQ3 \x03q\x00\x00
 　あるいは－－尋ねるのが怖かったのかもしれない。\
 
 \x00\x00\x00
-SEQ4  REF6 Z\x0c CALL1 b\x04 CALL3 \x90\x04 REF_END1 
+SEQ6 REF6 Z\x0c CALL1 b\x04 CALL3 \x90\x04 REF_END1 
 LOAD3 SCE049_006 REF6 X\x0e REF_END2 
 SEQ1 \x8c\x01 SEQ2 D\\ SEQ3 \x03B\x00\x00
  
@@ -84,7 +84,7 @@ SEQ1 \x8c\x01 SEQ2 D\\ SEQ3 \x03B\x00\x00
 \nなたね\n　「駄目。\pこの教室はもう駄目だわ。\p……見て」\
 
 \x00\x00\x00
-SEQ4  REF6 \x9c\x0e CALL1 b\x04 CALL3 \x90\x04 CALL2  \x00 REF_END2 
+SEQ6 REF6 \x9c\x0e CALL1 b\x04 CALL3 \x90\x04 CALL2  \x00 REF_END2 
 LOAD2 StopCD REF1 \xea\x0f CALL2 b\x04 REF_END2 
 LOAD3 TextClose REF2 \x12\x10 REF_END1 
 END_FILE

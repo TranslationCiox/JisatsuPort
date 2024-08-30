@@ -16,8 +16,8 @@ SEQ1 \x8c\x01 SEQ2 \x90\x97 SEQ3 \x03\x9e\x00\x00
 カンナ\n　「ああ、このピカピカね……コレよ」\
 
 \x00\x00\x00
-SEQ4  REF6 \x90\x00 REF_END3 
-LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 (\x03 REF_END2 
+SEQ6 REF6 \x90\x00 REF_END3 
+LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 (\x03 REF_END2 
 LOAD2 TextOn REF1 V\x03 REF_END1 
 LOAD3 SCE087_002 REF6 r\x03 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \x94\x97 SEQ3 \x03{\x00\x00
@@ -32,7 +32,7 @@ SEQ1 \x8c\x01 SEQ2 \x94\x97 SEQ3 \x03{\x00\x00
 拓司\n　「まさか！」\
 
 \x00\x00\x00
-SEQ4  REF6 \xb6\x03 CALL1 (\x03 CALL3 V\x03 REF_END1 
+SEQ6 REF6 \xb6\x03 CALL1 (\x03 CALL3 V\x03 REF_END1 
 LOAD3 SCE087_003 REF6 \xdc\x05 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \x98\x97 SEQ3 \x03\x92\x00\x00
  
@@ -43,6 +43,6 @@ SEQ1 \x8c\x01 SEQ2 \x98\x97 SEQ3 \x03\x92\x00\x00
 なたね\n　「いい？\p　エンケリュスの自殺波動は、アルミホイルで防御す\n　　ることが－－」\
 
 \x00\x00\x00
-SEQ4  REF6  \x06 CALL1 (\x03 CALL3 V\x03 CALL2 (\x03 REF_END2 
+SEQ6 REF6  \x06 CALL1 (\x03 CALL3 V\x03 CALL2 (\x03 REF_END2 
 LOAD3 TextClose REF2 \xae\x08 REF_END1 
 END_FILE

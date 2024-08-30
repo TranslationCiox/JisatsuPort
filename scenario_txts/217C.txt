@@ -6,10 +6,10 @@ SEQ1 \x8c\x01 SEQ2 \xb0b\x01\x0c\x00\x00\x00\x00"\x03\x11\x00\x00
 \n\n\n\n\n\n\n\n\n\n　　　　　　　　　　　　　『８日目』\
 
 \x00\x00\x00
-SEQ4  REF6 J\x00 REF_END3 
-LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xae\x00 REF_END2 
+SEQ6 REF6 J\x00 REF_END3 
+LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 \xae\x00 REF_END2 
 LOAD2 TextOn REF1 \xdc\x00 REF_END1 
-SEQ4 \x00\x1e\n\x01 REF_END3 
+SEQ5 \n\x01 REF_END3 
 LOAD6 .\\Data\\Script\\Bgm.Fob REF2 \x12\x01 REF_END2 
 LOAD2 PlayCD REF1 <\x01 REF_END1 
 LOAD3 SCE217_002 REF6 X\x01 REF_END2 
@@ -25,7 +25,7 @@ SEQ1 \x8c\x01 SEQ2 \xb4b\x01\x0c\x00\x00\x00\x00"\x03\x92\x00\x00
 なたね\n　「……」\
 
 \x00\x00\x00
-SEQ4  REF6 \x9c\x01 CALL1 \xae\x00 CALL3 \xdc\x00 REF_END1 
+SEQ6 REF6 \x9c\x01 CALL1 \xae\x00 CALL3 \xdc\x00 REF_END1 
 LOAD3 SCE217_003 REF6 \x1e\x04 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \xb8b\x01\x0c\x00\x00\x00\x00"\x03\xa9\x00\x00
  
@@ -39,7 +39,7 @@ SEQ1 \x8c\x01 SEQ2 \xb8b\x01\x0c\x00\x00\x00\x00"\x03\xa9\x00\x00
 拓司\n　「……？」\
 
 \x00\x00\x00
-SEQ4  REF6 b\x04 CALL1 \xae\x00 CALL3 \xdc\x00 REF_END1 
+SEQ6 REF6 b\x04 CALL1 \xae\x00 CALL3 \xdc\x00 REF_END1 
 LOAD3 SCE217_004 REF6 @\x07 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \xbcb\x01\x0c\x00\x00\x00\x00"\x03W\x00\x00
  
@@ -49,7 +49,7 @@ SEQ1 \x8c\x01 SEQ2 \xbcb\x01\x0c\x00\x00\x00\x00"\x03W\x00\x00
 \nなたねは突如立ち上がって、早桃を指さした。\p一同は呆気にとら\nれてなたねを見つめた。\
 
 \x00
-SEQ4  REF6 \x84\x07 CALL1 \xae\x00 CALL3 \xdc\x00 REF_END1 
+SEQ6 REF6 \x84\x07 CALL1 \xae\x00 CALL3 \xdc\x00 REF_END1 
 LOAD3 SCE217_005 REF6 \x1a\t REF_END2 
 SEQ1 \x8c\x01 SEQ2 \xc0b\x01\x0c\x00\x00\x00\x00"\x03\xe4\x00\x00
  
@@ -58,7 +58,7 @@ SEQ1 \x8c\x01 SEQ2 \xc0b\x01\x0c\x00\x00\x00\x00"\x03\xe4\x00\x00
 御堂\n　「こいつ……完全にいかれてやがる」\
 
 \x00\x00\x00
-SEQ4  REF6 ^\t CALL1 \xae\x00 CALL3 \xdc\x00 REF_END1 
+SEQ6 REF6 ^\t CALL1 \xae\x00 CALL3 \xdc\x00 REF_END1 
 LOAD3 SCE217_006 REF6 (\r REF_END2 
 SEQ1 \x8c\x01 SEQ2 \xc4b\x01\x0c\x00\x00\x00\x00"\x03M\x00\x00
  
@@ -69,12 +69,12 @@ SEQ1 \x8c\x01 SEQ2 \xc4b\x01\x0c\x00\x00\x00\x00"\x03M\x00\x00
 \n御堂が躍りかかった。\
 
 \x00
-SEQ4  REF6 l\r CALL1 \xae\x00 CALL3 \xdc\x00 REF_END1 \x03\x19\x00\x00
+SEQ6 REF6 l\r CALL1 \xae\x00 CALL3 \xdc\x00 REF_END1 \x03\x19\x00\x00
 CHOICE
 「やめろ！」　拓司は必至で制止した\n「……」　もはや言うべき言葉は見つからなかった\n\l0,2,
 ENDCHOICE
 
 \x00
-SEQ4  REF6 \xda\x0e CALL1 \xae\x00 CALL3 \xdc\x00 CALL2 \xae\x00 REF_END2 
+SEQ6 REF6 \xda\x0e CALL1 \xae\x00 CALL3 \xdc\x00 CALL2 \xae\x00 REF_END2 
 LOAD3 TextClose REF2 \x84\x0f REF_END1 
 END_FILE

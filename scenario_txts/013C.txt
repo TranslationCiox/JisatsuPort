@@ -15,8 +15,8 @@ SEQ1 \x8c\x01 SEQ2 \xf0# SEQ3 \x03\x86\x00\x00
 \n拓司\n　「早桃！　……あっ！」\
 
 
-SEQ4  REF6 \x90\x00 REF_END3 
-LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xc8\x02 REF_END2 
+SEQ6 REF6 \x90\x00 REF_END3 
+LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 \xc8\x02 REF_END2 
 LOAD2 TextOn REF1 \xf6\x02 REF_END1 
 LOAD3 SCE013_002 REF6 \x12\x03 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \xf4# SEQ3 \x03\x97\x00\x00
@@ -28,7 +28,7 @@ SEQ1 \x8c\x01 SEQ2 \xf4# SEQ3 \x03\x97\x00\x00
 　駆け寄った拓司を無視して、早桃は黙々と荷物を拾い始めた。\
 
 
-SEQ4  REF6 V\x03 CALL1 \xc8\x02 CALL3 \xf6\x02 REF_END1 
+SEQ6 REF6 V\x03 CALL1 \xc8\x02 CALL3 \xf6\x02 REF_END1 
 LOAD3 SCE013_003 REF6 \xec\x05 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \xf8# SEQ3 \x03>\x00\x00
  
@@ -40,7 +40,7 @@ SEQ1 \x8c\x01 SEQ2 \xf8# SEQ3 \x03>\x00\x00
 \n　拓司は息を呑んだ。\n　キッと振り仰いだ早桃の瞳は、涙で泉のように潤んでいた。\
 
 \x00\x00\x00
-SEQ4  REF6 0\x06 CALL1 \xc8\x02 CALL3 \xf6\x02 REF_END1 
+SEQ6 REF6 0\x06 CALL1 \xc8\x02 CALL3 \xf6\x02 REF_END1 
 LOAD3 SCE013_004 REF6 b\x07 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \xfc# SEQ3 \x03t\x00\x00
  
@@ -53,14 +53,14 @@ SEQ1 \x8c\x01 SEQ2 \xfc# SEQ3 \x03t\x00\x00
 　　おにいちゃんがどんなこと考えてるかなんて、全部わかって\n　　るんだから！」@
 \nそこまでいってから早桃は顔を覆い、わっと泣き始めた。\w\z
 \x00
-SEQ4  REF6 \xa6\x07 CALL1 \xc8\x02 CALL3 \xf6\x02 REF_END1 
+SEQ6 REF6 \xa6\x07 CALL1 \xc8\x02 CALL3 \xf6\x02 REF_END1 
 LOAD3 SCE013_005 REF6 \xb0\t REF_END2 
 SEQ1 \x8c\x01 SEQ2 \x00$ SEQ3 \x03\x1a\x00\x00
  
 /*■黒　表示（ノンエフェクト）*/\a7,-1,-1,0,\a0,200,1,0,\a6,0,0,0,早桃\n　「……ごめんなさい」\
 
 \x00
-SEQ4  REF6 \xf4\t CALL1 \xc8\x02 CALL3 \xf6\x02 REF_END1 
+SEQ6 REF6 \xf4\t CALL1 \xc8\x02 CALL3 \xf6\x02 REF_END1 
 LOAD3 SCE013_006 REF6 \x96\n REF_END2 
 SEQ1 \x8c\x01 SEQ2 \x04$ SEQ3 \x03|\x00\x00
  
@@ -69,6 +69,6 @@ SEQ1 \x8c\x01 SEQ2 \x04$ SEQ3 \x03|\x00\x00
 \n　早桃の中でも、なにかが限界を迎えようとしている。\n　すでになにかが起こり始めていた。終わりに向けて、それはと\nどまることなく転がっていくのだろう。スイッチは押されてしま\nった。それは、目の前のあらゆるものをなぎ倒しながら、転がり\n続けていくのだ。@
 \z
 
-SEQ4  REF6 \xda\n CALL1 \xc8\x02 CALL3 \xf6\x02 CALL2 \xc8\x02 REF_END2 
+SEQ6 REF6 \xda\n CALL1 \xc8\x02 CALL3 \xf6\x02 CALL2 \xc8\x02 REF_END2 
 LOAD3 TextClose REF2 \x10\r REF_END1 
 END_FILE

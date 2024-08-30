@@ -1,9 +1,9 @@
 START_FILE
 \x9c/\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xb6'\x00
-SEQ4 \x00\x1e\n\x00 REF_END3 
+SEQ5 \n\x00 REF_END3 
 LOAD6 .\\Data\\Script\\Bg.Fob REF3  \x00 REF_END2 
 LOAD4 BgAutoFadeIn REF3 J\x00 REF_END1 
-SEQ4 \x00\x1e\x08\x01 REF_END3 
+SEQ5 \x08\x01 REF_END3 
 LOAD6 .\\Data\\Script\\Bgm.Fob REF2 \x88\x00 REF_END2 
 LOAD2 PlayCD REF1 \xb2\x00 REF_END1 
 LOAD3 SCE033_001 REF6 \xce\x00 REF_END2 
@@ -17,8 +17,8 @@ SEQ1 \x8c\x01 SEQ2 0C SEQ3 \x03G\x00\x00
 カンナ\n　「正解」\
 
 \x00
-SEQ4  REF6 \x12\x01 REF_END3 
-LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 N\x02 REF_END2 
+SEQ6 REF6 \x12\x01 REF_END3 
+LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 N\x02 REF_END2 
 LOAD2 TextOn REF1 |\x02 REF_END1 
 LOAD3 SCE033_002 REF6 \x98\x02 REF_END2 
 SEQ1 \x8c\x01 SEQ2 4C SEQ3 \x03\xd8\x00\x00
@@ -35,7 +35,7 @@ SEQ1 \x8c\x01 SEQ2 4C SEQ3 \x03\xd8\x00\x00
 \n－－もしかしていまもおれは妄想の世界にいるのではないか？\
 
 \x00
-SEQ4  REF6 \xdc\x02 CALL1 N\x02 CALL3 |\x02 REF_END1 
+SEQ6 REF6 \xdc\x02 CALL1 N\x02 CALL3 |\x02 REF_END1 
 LOAD3 SCE033_003 REF6 v\x06 REF_END2 
 SEQ1 \x8c\x01 SEQ2 8C SEQ3 \x03k\x00\x00
  
@@ -49,9 +49,9 @@ SEQ1 \x8c\x01 SEQ2 8C SEQ3 \x03k\x00\x00
 拓司\n　「死の……保健室？」\
 
 \x00\x00\x00
-SEQ4  REF6 \xba\x06 CALL1 N\x02 CALL3 |\x02 REF_END1 
-SEQ4 \x00\x1e\x06\x01 CALL1 \x88\x00 CALL3 \xb2\x00 REF_END1 
-SEQ4 \x00\x1e\xc8\x00 CALL1  \x00 CALL3 J\x00 REF_END1 
+SEQ6 REF6 \xba\x06 CALL1 N\x02 CALL3 |\x02 REF_END1 
+SEQ5 \x06\x01 CALL1 \x88\x00 CALL3 \xb2\x00 REF_END1 
+SEQ5 \xc8\x00 CALL1  \x00 CALL3 J\x00 REF_END1 
 LOAD3 SCE033_004 REF6 \x08\t REF_END2 
 SEQ1 \x8c\x01 SEQ2 <C SEQ3 \x03\x8b\x00\x00
  
@@ -64,7 +64,7 @@ SEQ1 \x8c\x01 SEQ2 <C SEQ3 \x03\x8b\x00\x00
 カンナ\n　「ネットで調べた、事件に関わった人間の名前」\
 
 \x00
-SEQ4  REF6 L\t CALL1 N\x02 CALL3 |\x02 REF_END1 
+SEQ6 REF6 L\t CALL1 N\x02 CALL3 |\x02 REF_END1 
 LOAD3 SCE033_005 REF6 \xb2\x0b REF_END2 
 SEQ1 \x8c\x01 SEQ2 @C SEQ3 \x03\xb0\x00\x00
  
@@ -76,7 +76,7 @@ SEQ1 \x8c\x01 SEQ2 @C SEQ3 \x03\xb0\x00\x00
 　　要するに、『名所』という響きが、自殺願望者にとって体の\n　　いい『きっかけ』になるわけね」\
 
 \x00\x00\x00
-SEQ4  REF6 \xf6\x0b CALL1 N\x02 CALL3 |\x02 REF_END1 
+SEQ6 REF6 \xf6\x0b CALL1 N\x02 CALL3 |\x02 REF_END1 
 LOAD3 SCE033_006 REF6 \xf0\x0e REF_END2 
 SEQ1 \x8c\x01 SEQ2 DC SEQ3 \x03W\x00\x00
  
@@ -87,7 +87,7 @@ SEQ1 \x8c\x01 SEQ2 DC SEQ3 \x03W\x00\x00
 拓司\n　「人魂……？」\
 
 \x00\x00\x00
-SEQ4  REF6 4\x0f CALL1 N\x02 CALL3 |\x02 REF_END1 
+SEQ6 REF6 4\x0f CALL1 N\x02 CALL3 |\x02 REF_END1 
 LOAD3 SCE033_007 REF6 \xca\x10 REF_END2 
 SEQ1 \x8c\x01 SEQ2 HC SEQ3 \x03\x86\x00\x00
  
@@ -97,7 +97,7 @@ SEQ1 \x8c\x01 SEQ2 HC SEQ3 \x03\x86\x00\x00
 しかし、それと自殺がどのように結びつく？@
 \z
 \x00\x00\x00
-SEQ4  REF6 \x0e\x11 CALL1 N\x02 CALL3 |\x02 REF_END1 
+SEQ6 REF6 \x0e\x11 CALL1 N\x02 CALL3 |\x02 REF_END1 
 LOAD3 SCE033_008 REF6 `\x13 REF_END2 
 SEQ1 \x8c\x01 SEQ2 LC SEQ3 \x03{\x00\x00
  
@@ -109,7 +109,7 @@ SEQ1 \x8c\x01 SEQ2 LC SEQ3 \x03{\x00\x00
 拓司\n　「……」\
 
 \x00
-SEQ4  REF6 \xa4\x13 CALL1 N\x02 CALL3 |\x02 REF_END1 
+SEQ6 REF6 \xa4\x13 CALL1 N\x02 CALL3 |\x02 REF_END1 
 LOAD3 SCE033_009 REF6 \xca\x15 REF_END2 
 SEQ1 \x8c\x01 SEQ2 PC SEQ3 \x03\x91\x00\x00
  
@@ -119,7 +119,7 @@ SEQ1 \x8c\x01 SEQ2 PC SEQ3 \x03\x91\x00\x00
 カンナ\n　「でしょう？\p　火の塊というものは、本能的に人間に警戒心を\n　　引き起こすわ。\pそれが超自然的なものであるとしたらなおさ\n　　ら。\pにも関わらず、彼らは人魂を美しいもの……よいものと\n　　して認識している」\w\n拓司\n　「……」@
 \z
 \x00
-SEQ4  REF6 \x0e\x16 CALL1 N\x02 CALL3 |\x02 REF_END1 
+SEQ6 REF6 \x0e\x16 CALL1 N\x02 CALL3 |\x02 REF_END1 
 LOAD3 SCE033_010 REF6 \x8c\x18 REF_END2 
 SEQ1 \x8c\x01 SEQ2 TC SEQ3 \x03k\x00\x00
  
@@ -134,7 +134,7 @@ SEQ1 \x8c\x01 SEQ2 TC SEQ3 \x03k\x00\x00
 カンナ\n　「……」\
 
 \x00
-SEQ4  REF6 \xd0\x18 CALL1 N\x02 CALL3 |\x02 REF_END1 
+SEQ6 REF6 \xd0\x18 CALL1 N\x02 CALL3 |\x02 REF_END1 
 LOAD3 SCE033_011 REF6 \xb6\x1a REF_END2 
 SEQ1 \x8c\x01 SEQ2 XC SEQ3 \x03\xbc\x00\x00
  
@@ -147,7 +147,7 @@ SEQ1 \x8c\x01 SEQ2 XC SEQ3 \x03\xbc\x00\x00
 　　なのに、どうして朝、おれに声をかけた？」\
 
 \x00
-SEQ4  REF6 \xfa\x1a CALL1 N\x02 CALL3 |\x02 REF_END1 
+SEQ6 REF6 \xfa\x1a CALL1 N\x02 CALL3 |\x02 REF_END1 
 LOAD3 SCE033_012 REF6 $\x1e REF_END2 
 SEQ1 \x8c\x01 SEQ2 \\C SEQ3 \x03\x8f\x00\x00
  
@@ -161,7 +161,7 @@ SEQ1 \x8c\x01 SEQ2 \\C SEQ3 \x03\x8f\x00\x00
 　　私たちの夢の世界でしか、ね。\pなのに、いま、私たちは現実\n　　の世界でセックスをした。\pそれって、夢の世界の版図が広が\n　　ったってことじゃないかしら？\p　壁の崩壊。\p性器を介した世\n　　界の侵略行為。\pそうはいえない？」\
 
 \x00\x00\x00
-SEQ4  REF6 h\x1e CALL1 N\x02 CALL3 |\x02 REF_END1 
+SEQ6 REF6 h\x1e CALL1 N\x02 CALL3 |\x02 REF_END1 
 LOAD3 SCE033_013 REF6 \xde  REF_END2 
 SEQ1 \x8c\x01 SEQ2 `C SEQ3 \x03|\x00\x00
  
@@ -173,7 +173,7 @@ SEQ1 \x8c\x01 SEQ2 `C SEQ3 \x03|\x00\x00
 /*▲BGM　停止　*/\a4,-1,0,0,\nカンナ\n　「……あなた、もしかして裏切ろうとしていない？」\
 
 \x00\x00\x00
-SEQ4  REF6 "! CALL1 N\x02 CALL3 |\x02 REF_END1 
+SEQ6 REF6 "! CALL1 N\x02 CALL3 |\x02 REF_END1 
 LOAD3 SCE033_014 REF6 L# REF_END2 
 SEQ1 \x8c\x01 SEQ2 dC SEQ3 \x03-\x00\x00
  
@@ -186,7 +186,7 @@ SEQ1 \x8c\x01 SEQ2 dC SEQ3 \x03-\x00\x00
 拓司\n　「……」\
 
 \x00\x00\x00
-SEQ4  REF6 \x90# CALL1 N\x02 CALL3 |\x02 REF_END1 
+SEQ6 REF6 \x90# CALL1 N\x02 CALL3 |\x02 REF_END1 
 LOAD3 SCE033_015 REF6 ~$ REF_END2 
 SEQ1 \x8c\x01 SEQ2 hC SEQ3 \x03k\x00\x00
  
@@ -196,12 +196,12 @@ SEQ1 \x8c\x01 SEQ2 hC SEQ3 \x03k\x00\x00
 バタン、と鉄の扉が閉まる音が背後で響いた。\
 
 \x00
-SEQ4  REF6 \xc2$ CALL1 N\x02 CALL3 |\x02 REF_END1 \x03$\x00\x00
+SEQ6 REF6 \xc2$ CALL1 N\x02 CALL3 |\x02 REF_END1 \x03$\x00\x00
 CHOICE
 拓司は紅葉はどうしているだろうかと考えた\n拓司は今朝の早桃の様子が気になった\n拓司はそのままぼんやりと屋上から地上を眺めていた\n\l0,3,
 ENDCHOICE
 
 \x00
-SEQ4  REF6 \xa8& CALL1 N\x02 CALL3 |\x02 CALL2 N\x02 REF_END2 
+SEQ6 REF6 \xa8& CALL1 N\x02 CALL3 |\x02 CALL2 N\x02 REF_END2 
 LOAD3 TextClose REF2 ~' CALL2 N\x02 CALL3 ~' REF_END1 
 END_FILE

@@ -12,14 +12,14 @@ SEQ1 \x8c\x01 SEQ2 \x90~ SEQ3 \x03o\x00\x00
 ただ、別のコースを選ぶといっても、ここからではひどく遠回り\nな道しか残されていない。\
 
 \x00
-SEQ4  REF6 J\x00 REF_END3 
-LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 &\x02 REF_END2 
+SEQ6 REF6 J\x00 REF_END3 
+LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 &\x02 REF_END2 
 LOAD2 TextOn REF1 T\x02 REF_END1 \x03>\x00\x00
 CHOICE
 なたねの警告を無視して渡り廊下をそのまま進む\n３階まで上りなおしてそこの渡り廊下に向かい、旧校舎へ移動する\n４階まで上りなおしてそこの渡り廊下に向かい、旧校舎へ移動する\n１階までくだり、一度外に出て、中庭を通って旧校舎へ移動する\n\l0,4,
 ENDCHOICE
 
 \x00\x00\x00
-SEQ4  REF6 p\x02 CALL1 &\x02 CALL3 T\x02 CALL2 &\x02 REF_END2 
+SEQ6 REF6 p\x02 CALL1 &\x02 CALL3 T\x02 CALL2 &\x02 REF_END2 
 LOAD3 TextClose REF2 \xae\x03 REF_END1 
 END_FILE

@@ -12,8 +12,8 @@ SEQ1 \x8c\x01 SEQ2 \x10@ SEQ3 \x03m\x00\x00
 \nその言葉を聞いて－－そして目の奥のどんよりとした無感動を見て\n－－この少女が自分の同類であることを、拓司は一瞬にして悟った\nのだった。\
 
 \x00\x00\x00
-SEQ4  REF6 J\x00 REF_END3 
-LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \x1e\x02 REF_END2 
+SEQ6 REF6 J\x00 REF_END3 
+LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 \x1e\x02 REF_END2 
 LOAD2 TextOn REF1 L\x02 REF_END1 
 LOAD3 SCE031_002 REF6 h\x02 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \x14@ SEQ3 \x03\x90\x00\x00
@@ -30,7 +30,7 @@ SEQ1 \x8c\x01 SEQ2 \x14@ SEQ3 \x03\x90\x00\x00
 　そこにあるのは確実な死のかたちであり、生きている自分には明\n　らかに所属していないものたちだった。\p拓司は取り憑かれたよう\n　にパソコンの前に張り付き、電脳の波に流されてくる情報をむさ\n　ぼった。\
 
 \x00
-SEQ4  REF6 \xac\x02 CALL1 \x1e\x02 CALL3 L\x02 REF_END1 
+SEQ6 REF6 \xac\x02 CALL1 \x1e\x02 CALL3 L\x02 REF_END1 
 LOAD3 SCE031_003 REF6 &\x05 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \x18@ SEQ3 \x03\xe1\x00\x00
  
@@ -44,7 +44,7 @@ SEQ1 \x8c\x01 SEQ2 \x18@ SEQ3 \x03\xe1\x00\x00
 　その他大勢への、陳腐な成り下がり。\
 
 \x00
-SEQ4  REF6 j\x05 CALL1 \x1e\x02 CALL3 L\x02 REF_END1 
+SEQ6 REF6 j\x05 CALL1 \x1e\x02 CALL3 L\x02 REF_END1 
 LOAD3 SCE031_004 REF6 (\t REF_END2 
 SEQ1 \x8c\x01 SEQ2 \x1c@ SEQ3 \x03\xcb\x00\x00
  
@@ -58,20 +58,20 @@ SEQ1 \x8c\x01 SEQ2 \x1c@ SEQ3 \x03\xcb\x00\x00
 そのとき、拓司は初めて女の首を絞めたのだった。\
 
 \x00\x00\x00
-SEQ4  REF6 l\t CALL1 \x1e\x02 CALL3 L\x02 CALL2 \x1e\x02 REF_END2 
+SEQ6 REF6 l\t CALL1 \x1e\x02 CALL3 L\x02 CALL2 \x1e\x02 REF_END2 
 LOAD5 TextWindowOffDirect REF7 \xde\x0c REF_END1 
-SEQ4 \x00\x1e\xca\x00 REF_END3 
+SEQ5 \xca\x00 REF_END3 
 LOAD6 .\\Data\\Script\\Bg.Fob REF3  \r REF_END2 
 LOAD2 BgOn REF3 J\r REF_END1 
-SEQ4 \x00\x1e\x01\x00 REF_END3 
-LOAD7 .\\Data\\Script\\TextFunc.fob REF1 \x80\r REF_END2 
+SEQ5 \x01\x00 REF_END3 
+LOAD8 .\\Data\\Script\\TextFunc.fob REF1 \x80\r REF_END2 
 LOAD3 WaitTime REF3 \xae\r REF_END1 
-SEQ4 \x00\x1e\xc8\x00 CALL1  \r CALL3 J\r REF_END1 
-SEQ4 \x00\x1e\x01\x00 CALL1 \x80\r CALL3 \xae\r REF_END1 
-SEQ4 \x00\x1e\xca\x00 CALL1  \r CALL3 J\r REF_END1 
-SEQ4 \x00\x1e\x01\x00 CALL1 \x80\r CALL3 \xae\r REF_END1 
-SEQ4 \x00\x1e\xc8\x00 CALL1  \r CALL3 J\r REF_END1 
-SEQ4 \x00\x1e\x01\x00 CALL1 \x80\r CALL3 \xae\r CALL2 \x1e\x02 REF_END2 
+SEQ5 \xc8\x00 CALL1  \r CALL3 J\r REF_END1 
+SEQ5 \x01\x00 CALL1 \x80\r CALL3 \xae\r REF_END1 
+SEQ5 \xca\x00 CALL1  \r CALL3 J\r REF_END1 
+SEQ5 \x01\x00 CALL1 \x80\r CALL3 \xae\r REF_END1 
+SEQ5 \xc8\x00 CALL1  \r CALL3 J\r REF_END1 
+SEQ5 \x01\x00 CALL1 \x80\r CALL3 \xae\r CALL2 \x1e\x02 REF_END2 
 LOAD5 TextWindowOnDirect REF1 \x12\x0f CALL2 \x1e\x02 REF_END2 
 LOAD3 TextClose REF2 F\x0f REF_END1 
 END_FILE

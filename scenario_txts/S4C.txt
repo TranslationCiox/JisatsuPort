@@ -1,6 +1,6 @@
 START_FILE
 \x1a\x0b\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00>\t\x00
-SEQ4 \x00\x1e\x04\x01 REF_END3 
+SEQ5 \x04\x01 REF_END3 
 LOAD6 .\\Data\\Script\\Bgm.Fob REF2  \x00 REF_END2 
 LOAD2 PlayCD REF1 J\x00 REF_END1 
 LOAD3 SCES04_001 REF6 f\x00 REF_END2 
@@ -16,8 +16,8 @@ SEQ1 \x8c\x01 SEQ2 \xf8\xb5\x01\x0c\x00\x00\x00\x00"\x03\x99\x00\x00
 そういうことをしばらく続けていると、どんどんお金が貯まって\nいった。\
 
 \x00\x00\x00
-SEQ4  REF6 \xaa\x00 REF_END3 
-LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 .\x03 REF_END2 
+SEQ6 REF6 \xaa\x00 REF_END3 
+LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 .\x03 REF_END2 
 LOAD2 TextOn REF1 \\\x03 REF_END1 
 LOAD3 SCES04_002 REF6 x\x03 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \xfc\xb5\x01\x0c\x00\x00\x00\x00"\x03\xdd\x00\x00
@@ -36,7 +36,7 @@ SEQ1 \x8c\x01 SEQ2 \xfc\xb5\x01\x0c\x00\x00\x00\x00"\x03\xdd\x00\x00
 そう思った。\
 
 \x00\x00\x00
-SEQ4  REF6 \xbc\x03 CALL1 .\x03 CALL3 \\\x03 REF_END1 
+SEQ6 REF6 \xbc\x03 CALL1 .\x03 CALL3 \\\x03 REF_END1 
 LOAD3 SCES04_003 REF6 j\x07 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \x00\xb6\x01\x0c\x00\x00\x00\x00"\x03A\x00\x00
  
@@ -44,7 +44,7 @@ SEQ1 \x8c\x01 SEQ2 \x00\xb6\x01\x0c\x00\x00\x00\x00"\x03A\x00\x00
 それで友情を買おうと思ったわけじゃないし、買えるとも思って\nなかった。\pでも、自己の価値は証明できるし、それこそが、私\nがずっと欲しくてたまらなかったものだったから。\
 
 \x00
-SEQ4  REF6 \xae\x07 CALL1 .\x03 CALL3 \\\x03 CALL2  \x00 REF_END2 
+SEQ6 REF6 \xae\x07 CALL1 .\x03 CALL3 \\\x03 CALL2  \x00 REF_END2 
 LOAD2 StopCD REF1 \xf8\x08 CALL2 .\x03 REF_END2 
 LOAD3 TextClose REF2  \t REF_END1 
 END_FILE

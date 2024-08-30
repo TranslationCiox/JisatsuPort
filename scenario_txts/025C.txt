@@ -1,9 +1,9 @@
 START_FILE
 \x1e\x15\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00Z\x11\x00
-SEQ4 \x00\x1e\x05\x00 REF_END3 
+SEQ5 \x05\x00 REF_END3 
 LOAD6 .\\Data\\Script\\Bg.Fob REF3  \x00 REF_END2 
 LOAD4 BgAutoFadeIn REF3 J\x00 REF_END1 
-SEQ4 \x00\x1e\x08\x01 REF_END3 
+SEQ5 \x08\x01 REF_END3 
 LOAD6 .\\Data\\Script\\Bgm.Fob REF2 \x88\x00 REF_END2 
 LOAD2 PlayCD REF1 \xb2\x00 REF_END1 
 LOAD3 SCE025_001 REF6 \xce\x00 REF_END2 
@@ -16,8 +16,8 @@ SEQ1 \x8c\x01 SEQ2 \xb06 SEQ3 \x03}\x00\x00
 リアルな夢だった。\
 
 \x00
-SEQ4  REF6 \x12\x01 REF_END3 
-LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 &\x03 REF_END2 
+SEQ6 REF6 \x12\x01 REF_END3 
+LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 &\x03 REF_END2 
 LOAD2 TextOn REF1 T\x03 CALL2 \x88\x00 REF_END2 
 LOAD2 StopCD REF1 |\x03 REF_END1 
 LOAD3 SCE025_002 REF6 \x98\x03 REF_END2 
@@ -32,7 +32,7 @@ SEQ1 \x8c\x01 SEQ2 \xb46 SEQ3 \x03N\x00\x00
 錦城\n　「……というように、若者が悩み続けている間にも、『世界の\n　　風車はクルクルと回っている』わけです」\
 
 \x00
-SEQ4  REF6 \xdc\x03 CALL1 &\x03 CALL3 T\x03 REF_END1 
+SEQ6 REF6 \xdc\x03 CALL1 &\x03 CALL3 T\x03 REF_END1 
 LOAD3 SCE025_003 REF6 N\x05 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \xb86 SEQ3 \x03\xa2\x00\x00
  
@@ -50,7 +50,7 @@ SEQ1 \x8c\x01 SEQ2 \xb86 SEQ3 \x03\xa2\x00\x00
 　さきほどの夢の中で感じた、いいようのない恐怖の方がよっぽ\n　どリアルだ。\
 
 \x00\x00\x00
-SEQ4  REF6 \x92\x05 CALL1 &\x03 CALL3 T\x03 REF_END1 
+SEQ6 REF6 \x92\x05 CALL1 &\x03 CALL3 T\x03 REF_END1 
 LOAD3 SCE025_004 REF6 T\x08 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \xbc6 SEQ3 \x03\x9c\x00\x00
  
@@ -60,9 +60,9 @@ SEQ1 \x8c\x01 SEQ2 \xbc6 SEQ3 \x03\x9c\x00\x00
 /*　■CG07　表示（ノンエフェクト）*/\a7,-1,-1,0,\a0,6,1,0,\a6,0,0,0,カンナ\n　「－－こうしましょう。\pここ以外では、あなたと私は知り合いで\n　　も何でもない。\pお互いの世界に干渉しないし、興味も持たない\n　　。\pお互いの世界……フフフ。\p私たちの世界以外では、私たちは\n　　他人になるの。\pそうすることで、私たちの世界はより本物にな\n　　る……どうかしら？」\
 
 \x00
-SEQ4  REF6 \x98\x08 CALL1 &\x03 CALL3 T\x03 REF_END1 
-SEQ4 \x00\x1e\xc8\x00 CALL1  \x00 CALL3 J\x00 REF_END1 
-SEQ4 \x00\x1e\x06\x01 CALL1 \x88\x00 CALL3 \xb2\x00 REF_END1 
+SEQ6 REF6 \x98\x08 CALL1 &\x03 CALL3 T\x03 REF_END1 
+SEQ5 \xc8\x00 CALL1  \x00 CALL3 J\x00 REF_END1 
+SEQ5 \x06\x01 CALL1 \x88\x00 CALL3 \xb2\x00 REF_END1 
 LOAD3 SCE025_005 REF6 \xaa\x0b REF_END2 
 SEQ1 \x8c\x01 SEQ2 \xc06 SEQ3 \x03\xa3\x00\x00
  
@@ -87,8 +87,8 @@ SEQ1 \x8c\x01 SEQ2 \xc06 SEQ3 \x03\xa3\x00\x00
 なにか？\
 
 \x00
-SEQ4  REF6 \xee\x0b CALL1 &\x03 CALL3 T\x03 REF_END1 
-SEQ4 \x00\x1e\x05\x00 CALL1  \x00 CALL3 J\x00 CALL2 \x88\x00 CALL3 |\x03 REF_END1 
+SEQ6 REF6 \xee\x0b CALL1 &\x03 CALL3 T\x03 REF_END1 
+SEQ5 \x05\x00 CALL1  \x00 CALL3 J\x00 CALL2 \x88\x00 CALL3 |\x03 REF_END1 
 LOAD3 SCE025_006 REF6 \x02\x0f REF_END2 
 SEQ1 \x8c\x01 SEQ2 \xc46 SEQ3 \x03l\x00\x00
  
@@ -98,6 +98,6 @@ SEQ1 \x8c\x01 SEQ2 \xc46 SEQ3 \x03l\x00\x00
 \n　遠景。\p国旗掲揚塔に渡された綱。\pその上から、葉っぱのように人\n　影が落下する。\pそれは淡々と、なんてことのない風景のように見\n　える。\pサイレント映画のようだ。@
 \z
 \x00\x00\x00
-SEQ4  REF6 F\x0f CALL1 &\x03 CALL3 T\x03 CALL2 &\x03 REF_END2 
+SEQ6 REF6 F\x0f CALL1 &\x03 CALL3 T\x03 CALL2 &\x03 REF_END2 
 LOAD3 TextClose REF2 <\x11 REF_END1 
 END_FILE

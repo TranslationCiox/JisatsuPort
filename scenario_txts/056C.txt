@@ -10,8 +10,8 @@ SEQ1 \x8c\x01 SEQ2  g SEQ3 \x03J\x00\x00
 怯えて眺める早桃の顔にも、明らかな嫌悪が浮かんでいる。\
 
 \x00
-SEQ4  REF6 J\x00 REF_END3 
-LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \x92\x01 REF_END2 
+SEQ6 REF6 J\x00 REF_END3 
+LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 \x92\x01 REF_END2 
 LOAD2 TextOn REF1 \xc0\x01 REF_END1 
 LOAD3 SCE056_002 REF6 \xdc\x01 REF_END2 
 SEQ1 \x8c\x01 SEQ2 $g SEQ3 \x03n\x00\x00
@@ -26,7 +26,7 @@ SEQ1 \x8c\x01 SEQ2 $g SEQ3 \x03n\x00\x00
 　　じっくり観察しようじゃないか！」\
 
 \x00\x00\x00
-SEQ4  REF6  \x02 CALL1 \x92\x01 CALL3 \xc0\x01 REF_END1 
+SEQ6 REF6  \x02 CALL1 \x92\x01 CALL3 \xc0\x01 REF_END1 
 LOAD3 SCE056_003 REF6 \x12\x04 REF_END2 
 SEQ1 \x8c\x01 SEQ2 (g SEQ3 \x03W\x00\x00
  
@@ -40,7 +40,7 @@ SEQ1 \x8c\x01 SEQ2 (g SEQ3 \x03W\x00\x00
 早桃\n　「い……いやっ！\p　やめて、やめてえっ！」\
 
 \x00\x00\x00
-SEQ4  REF6 V\x04 CALL1 \x92\x01 CALL3 \xc0\x01 REF_END1 
+SEQ6 REF6 V\x04 CALL1 \x92\x01 CALL3 \xc0\x01 REF_END1 
 LOAD3 SCE056_004 REF6 \xec\x05 REF_END2 
 SEQ1 \x8c\x01 SEQ2 ,g SEQ3 \x03\x8e\x00\x00
  
@@ -52,7 +52,7 @@ SEQ1 \x8c\x01 SEQ2 ,g SEQ3 \x03\x8e\x00\x00
 ２人を取り囲んだクラスの全員が、どっと笑い声を上げた。\
 
 \x00\x00\x00
-SEQ4  REF6 0\x06 CALL1 \x92\x01 CALL3 \xc0\x01 REF_END1 
+SEQ6 REF6 0\x06 CALL1 \x92\x01 CALL3 \xc0\x01 REF_END1 
 LOAD3 SCE056_005 REF6 \xa2\x08 REF_END2 
 SEQ1 \x8c\x01 SEQ2 0g SEQ3 \x03c\x00\x00
  
@@ -64,7 +64,7 @@ SEQ1 \x8c\x01 SEQ2 0g SEQ3 \x03c\x00\x00
 しかしその怒りはクラスメイトたちにではなく、早桃に……自分\nよりも弱い立場の人間へと向けられた。\
 
 \x00\x00\x00
-SEQ4  REF6 \xe6\x08 CALL1 \x92\x01 CALL3 \xc0\x01 REF_END1 
+SEQ6 REF6 \xe6\x08 CALL1 \x92\x01 CALL3 \xc0\x01 REF_END1 
 LOAD3 SCE056_006 REF6 \xac\n REF_END2 
 SEQ1 \x8c\x01 SEQ2 4g SEQ3 \x03\xc5\x00\x00
  
@@ -75,7 +75,7 @@ SEQ1 \x8c\x01 SEQ2 4g SEQ3 \x03\xc5\x00\x00
 そしてチャックをおろして、すでに固く反り返ったペ○スを露出\nさせる。\
 
 \x00
-SEQ4  REF6 \xf0\n CALL1 \x92\x01 CALL3 \xc0\x01 REF_END1 
+SEQ6 REF6 \xf0\n CALL1 \x92\x01 CALL3 \xc0\x01 REF_END1 
 LOAD3 SCE056_007 REF6 >\x0e REF_END2 
 SEQ1 \x8c\x01 SEQ2 8g SEQ3 \x03b\x00\x00
  
@@ -87,8 +87,8 @@ SEQ1 \x8c\x01 SEQ2 8g SEQ3 \x03b\x00\x00
 学生\n　「豚のガキ孕まされるんだぜ？\p　人間としちゃ、生きてらんね\n　　えよなあ～、げらげら！」\
 
 \x00\x00\x00
-SEQ4  REF6 \x82\x0e CALL1 \x92\x01 CALL3 \xc0\x01 REF_END1 
-SEQ4 \x00\x1eV\x00 REF_END3 
+SEQ6 REF6 \x82\x0e CALL1 \x92\x01 CALL3 \xc0\x01 REF_END1 
+SEQ5 V\x00 REF_END3 
 LOAD6 .\\Data\\Script\\Bg.Fob REF3 ^\x10 REF_END2 
 LOAD4 BgAutoFadeIn REF3 \x88\x10 REF_END1 
 LOAD3 SCE056_008 REF6 \xac\x10 REF_END2 
@@ -102,7 +102,7 @@ SEQ1 \x8c\x01 SEQ2 <g SEQ3 \x03u\x00\x00
 学生たちからも嘲笑がとぶが、少年は意に介する様子もなく、た\nだひたすら早桃の上で腰を上下させている。\
 
 \x00\x00\x00
-SEQ4  REF6 \xf0\x10 CALL1 \x92\x01 CALL3 \xc0\x01 REF_END1 
+SEQ6 REF6 \xf0\x10 CALL1 \x92\x01 CALL3 \xc0\x01 REF_END1 
 LOAD3 SCE056_009 REF6 \xfe\x12 REF_END2 
 SEQ1 \x8c\x01 SEQ2 @g SEQ3 \x03\xb8\x00\x00
  
@@ -115,7 +115,7 @@ SEQ1 \x8c\x01 SEQ2 @g SEQ3 \x03\xb8\x00\x00
 しかし拓司はなにもすることができない。\
 
 \x00
-SEQ4  REF6 B\x13 CALL1 \x92\x01 CALL3 \xc0\x01 REF_END1 
+SEQ6 REF6 B\x13 CALL1 \x92\x01 CALL3 \xc0\x01 REF_END1 
 LOAD3 SCE056_010 REF6 \\\x16 REF_END2 
 SEQ1 \x8c\x01 SEQ2 Dg SEQ3 \x03\x86\x00\x00
  
@@ -129,7 +129,7 @@ SEQ1 \x8c\x01 SEQ2 Dg SEQ3 \x03\x86\x00\x00
 \n早桃\n　「……お……おにい……ちゃ……ん」\
 
 \x00\x00\x00
-SEQ4  REF6 \xa0\x16 CALL1 \x92\x01 CALL3 \xc0\x01 REF_END1 
+SEQ6 REF6 \xa0\x16 CALL1 \x92\x01 CALL3 \xc0\x01 REF_END1 
 LOAD3 SCE056_011 REF6 \xf2\x18 REF_END2 
 SEQ1 \x8c\x01 SEQ2 Hg SEQ3 \x03k\x00\x00
  
@@ -142,7 +142,7 @@ SEQ1 \x8c\x01 SEQ2 Hg SEQ3 \x03k\x00\x00
 身体をぶるぶると震わせて、抵抗がぱたりと止んだのだ。\
 
 \x00\x00\x00
-SEQ4  REF6 6\x19 CALL1 \x92\x01 CALL3 \xc0\x01 REF_END1 
+SEQ6 REF6 6\x19 CALL1 \x92\x01 CALL3 \xc0\x01 REF_END1 
 LOAD3 SCE056_012 REF6 \x1c\x1b REF_END2 
 SEQ1 \x8c\x01 SEQ2 Lg SEQ3 \x03\xa4\x00\x00
  
@@ -155,8 +155,8 @@ SEQ1 \x8c\x01 SEQ2 Lg SEQ3 \x03\xa4\x00\x00
 早桃\n　「ふうっ……うくっ……お、お願い……します……はあ……」\
 
 \x00\x00\x00
-SEQ4  REF6 `\x1b CALL1 \x92\x01 CALL3 \xc0\x01 REF_END1 
-SEQ4 \x00\x1eV\x00 CALL1 ^\x10 CALL3 \x88\x10 REF_END1 
+SEQ6 REF6 `\x1b CALL1 \x92\x01 CALL3 \xc0\x01 REF_END1 
+SEQ5 V\x00 CALL1 ^\x10 CALL3 \x88\x10 REF_END1 
 LOAD3 SCE056_013 REF6 ^\x1e REF_END2 
 SEQ1 \x8c\x01 SEQ2 Pg SEQ3 \x03\xba\x00\x00
  
@@ -171,7 +171,7 @@ SEQ1 \x8c\x01 SEQ2 Pg SEQ3 \x03\xba\x00\x00
 \n－－これは……現実ではないのではないか？\
 
 \x00
-SEQ4  REF6 \xa2\x1e CALL1 \x92\x01 CALL3 \xc0\x01 REF_END1 
+SEQ6 REF6 \xa2\x1e CALL1 \x92\x01 CALL3 \xc0\x01 REF_END1 
 LOAD3 SCE056_014 REF6 \xc4! REF_END2 
 SEQ1 \x8c\x01 SEQ2 Tg SEQ3 \x03\x9b\x00\x00
  
@@ -183,7 +183,7 @@ SEQ1 \x8c\x01 SEQ2 Tg SEQ3 \x03\x9b\x00\x00
 トン吉\n　「い、淫乱妹め！」\
 
 \x00\x00\x00
-SEQ4  REF6 \x08" CALL1 \x92\x01 CALL3 \xc0\x01 REF_END1 
+SEQ6 REF6 \x08" CALL1 \x92\x01 CALL3 \xc0\x01 REF_END1 
 LOAD3 SCE056_015 REF6 \xae$ REF_END2 
 SEQ1 \x8c\x01 SEQ2 Xg SEQ3 \x03s\x00\x00
  
@@ -194,8 +194,8 @@ SEQ1 \x8c\x01 SEQ2 Xg SEQ3 \x03s\x00\x00
 それまで息を呑んで見守っていた学生たちが、一斉に拍手で囃し\n立てる。\
 
 \x00\x00\x00
-SEQ4  REF6 \xf2$ CALL1 \x92\x01 CALL3 \xc0\x01 REF_END1 
-SEQ4 \x00\x1e\xc8\x00 CALL1 ^\x10 CALL3 \x88\x10 REF_END1 
+SEQ6 REF6 \xf2$ CALL1 \x92\x01 CALL3 \xc0\x01 REF_END1 
+SEQ5 \xc8\x00 CALL1 ^\x10 CALL3 \x88\x10 REF_END1 
 LOAD3 SCE056_016 REF6 ,' REF_END2 
 SEQ1 \x8c\x01 SEQ2 \\g SEQ3 \x03z\x00\x00
  
@@ -209,7 +209,7 @@ SEQ1 \x8c\x01 SEQ2 \\g SEQ3 \x03z\x00\x00
 しかもさらに－－\
 
 \x00
-SEQ4  REF6 p' CALL1 \x92\x01 CALL3 \xc0\x01 REF_END1 
+SEQ6 REF6 p' CALL1 \x92\x01 CALL3 \xc0\x01 REF_END1 
 LOAD3 SCE056_017 REF6 \x92) REF_END2 
 SEQ1 \x8c\x01 SEQ2 `g SEQ3 \x03.\x00\x00
  
@@ -217,6 +217,6 @@ SEQ1 \x8c\x01 SEQ2 `g SEQ3 \x03.\x00\x00
 早桃\n　「……はい。\pおにいちゃんのチ○ポ、早桃のおくちできれいに\n　　させてください……」\
 
 \x00
-SEQ4  REF6 \xd6) CALL1 \x92\x01 CALL3 \xc0\x01 CALL2 \x92\x01 REF_END2 
+SEQ6 REF6 \xd6) CALL1 \x92\x01 CALL3 \xc0\x01 CALL2 \x92\x01 REF_END2 
 LOAD3 TextClose REF2 \xd4* REF_END1 
 END_FILE

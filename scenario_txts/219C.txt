@@ -9,10 +9,10 @@ SEQ1 \x8c\x01 SEQ2 \xd0e\x01\x0c\x00\x00\x00\x00"\x03,\x00\x00
 流されるしかないのだ。\
 
 \x00\x00\x00
-SEQ4  REF6 J\x00 REF_END3 
-LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \x1a\x01 REF_END2 
+SEQ6 REF6 J\x00 REF_END3 
+LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 \x1a\x01 REF_END2 
 LOAD2 TextOn REF1 H\x01 REF_END1 
-SEQ4 \x00\x1e$\x00 REF_END3 
+SEQ5 $\x00 REF_END3 
 LOAD6 .\\Data\\Script\\Bg.Fob REF3 ~\x01 REF_END2 
 LOAD4 BgAutoFadeIn REF3 \xa8\x01 REF_END1 
 LOAD3 SCE219_002 REF6 \xcc\x01 REF_END2 
@@ -29,7 +29,7 @@ SEQ1 \x8c\x01 SEQ2 \xd4e\x01\x0c\x00\x00\x00\x00"\x03k\x00\x00
 ぐったりと御堂の下に横たわり、殴られるがままだ。\
 
 \x00
-SEQ4  REF6 \x10\x02 CALL1 \x1a\x01 CALL3 H\x01 REF_END1 
+SEQ6 REF6 \x10\x02 CALL1 \x1a\x01 CALL3 H\x01 REF_END1 
 LOAD3 SCE219_003 REF6 \xf6\x03 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \xd8e\x01\x0c\x00\x00\x00\x00"\x03L\x00\x00
  
@@ -42,8 +42,8 @@ SEQ1 \x8c\x01 SEQ2 \xd8e\x01\x0c\x00\x00\x00\x00"\x03L\x00\x00
 そしていま、眼前で展開されていることこそ、新しい秩序の骨子\nを為すものであるはずだった。\
 
 \x00
-SEQ4  REF6 :\x04 CALL1 \x1a\x01 CALL3 H\x01 REF_END1 
-SEQ4 \x00\x1e\xc8\x00 CALL1 ~\x01 CALL3 \xa8\x01 REF_END1 
+SEQ6 REF6 :\x04 CALL1 \x1a\x01 CALL3 H\x01 REF_END1 
+SEQ5 \xc8\x00 CALL1 ~\x01 CALL3 \xa8\x01 REF_END1 
 LOAD6 .\\Data\\Script\\Bgm.Fob REF2 \xd8\x05 REF_END2 
 LOAD2 StopCD REF1 \x02\x06 CALL2 \x1a\x01 REF_END2 
 LOAD3 TextClose REF2 *\x06 REF_END1 

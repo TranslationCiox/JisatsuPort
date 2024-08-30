@@ -1,6 +1,6 @@
 START_FILE
 <\x10\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00B\r\x00
-SEQ4 \x00\x1e"\x00 REF_END3 
+SEQ5 "\x00 REF_END3 
 LOAD6 .\\Data\\Script\\Bg.Fob REF3  \x00 REF_END2 
 LOAD4 BgAutoFadeIn REF3 J\x00 REF_END1 
 LOAD3 SCE106_001 REF6 n\x00 REF_END2 
@@ -18,8 +18,8 @@ SEQ1 \x8c\x01 SEQ2 @\xb5 SEQ3 \x03\x89\x00\x00
 なたねが鍵を飲み込んだのはそれからかもしれない……@
 そして気がつくと、教室中に血が飛び散っていた。\w\z
 \x00
-SEQ4  REF6 \xb2\x00 REF_END3 
-LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xf6\x02 REF_END2 
+SEQ6 REF6 \xb2\x00 REF_END3 
+LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 \xf6\x02 REF_END2 
 LOAD2 TextOn REF1 $\x03 REF_END1 
 LOAD3 SCE106_002 REF6 @\x03 REF_END2 
 SEQ1 \x8c\x01 SEQ2 D\xb5 SEQ3 \x03E\x00\x00
@@ -31,7 +31,7 @@ SEQ1 \x8c\x01 SEQ2 D\xb5 SEQ3 \x03E\x00\x00
 てらてらと光る臓物だ。@
 御堂はその中から鍵を探し出そうとしている。\w\z
 \x00
-SEQ4  REF6 \x84\x03 CALL1 \xf6\x02 CALL3 $\x03 REF_END1 
+SEQ6 REF6 \x84\x03 CALL1 \xf6\x02 CALL3 $\x03 REF_END1 
 LOAD3 SCE106_003 REF6 \xd2\x04 REF_END2 
 SEQ1 \x8c\x01 SEQ2 H\xb5 SEQ3 \x03q\x00\x00
  
@@ -43,14 +43,14 @@ SEQ1 \x8c\x01 SEQ2 H\xb5 SEQ3 \x03q\x00\x00
 見よ、死んでいるはずのなたねの口がくわっと開いて、\n\p哄笑をとどろかせている……。@
 \nわは。\w\z
 \x00
-SEQ4  REF6 \x16\x05 CALL1 \xf6\x02 CALL3 $\x03 REF_END1 
+SEQ6 REF6 \x16\x05 CALL1 \xf6\x02 CALL3 $\x03 REF_END1 
 LOAD3 SCE106_004 REF6 \x14\x07 REF_END2 
 SEQ1 \x8c\x01 SEQ2 L\xb5 SEQ3 \x03+\x00\x00
  
 その笑い声は伝染病のようにあたりに広がり、あっというまに部\n屋中を充たした。@
 \nわは、わはは、はははははははははははははははははははははは\nははははははははは！\w\z
 \x00\x00\x00
-SEQ4  REF6 X\x07 CALL1 \xf6\x02 CALL3 $\x03 REF_END1 
+SEQ6 REF6 X\x07 CALL1 \xf6\x02 CALL3 $\x03 REF_END1 
 LOAD3 SCE106_005 REF6 >\x08 REF_END2 
 SEQ1 \x8c\x01 SEQ2 P\xb5 SEQ3 \x03@\x00\x00
  
@@ -60,7 +60,7 @@ SEQ1 \x8c\x01 SEQ2 P\xb5 SEQ3 \x03@\x00\x00
 そこに７人の男女がいて、大声で笑っている……@
 腹を抱えてのたうち回っている。\w\z
 \x00\x00\x00
-SEQ4  REF6 \x82\x08 CALL1 \xf6\x02 CALL3 $\x03 REF_END1 
+SEQ6 REF6 \x82\x08 CALL1 \xf6\x02 CALL3 $\x03 REF_END1 
 LOAD3 SCE106_006 REF6 \xbc\t REF_END2 
 SEQ1 \x8c\x01 SEQ2 T\xb5 SEQ3 \x03P\x00\x00
  
@@ -69,7 +69,7 @@ SEQ1 \x8c\x01 SEQ2 T\xb5 SEQ3 \x03P\x00\x00
 おれは－－と拓司は思った－－おれははなからありもしないもの\nをあると思いこんで、必死でうろつき回っていたのだ。@
 なにもおかしくなどなかったが、いくらでも笑いがこみ上げてき\nた。\w\z
 \x00
-SEQ4  REF6 \x00\n CALL1 \xf6\x02 CALL3 $\x03 REF_END1 
+SEQ6 REF6 \x00\n CALL1 \xf6\x02 CALL3 $\x03 REF_END1 
 LOAD3 SCE106_007 REF6 z\x0b REF_END2 
 SEQ1 \x8c\x01 SEQ2 X\xb5 SEQ3 \x03H\x00\x00
  
@@ -78,6 +78,6 @@ SEQ1 \x8c\x01 SEQ2 X\xb5 SEQ3 \x03H\x00\x00
 ザザザ……ザザッ……ザアザザザ……ザアアアアア……ザアザア\nアアアアアア……@
 \n最後にそんな音が、聞こえた。\w\z
 \x00
-SEQ4  REF6 \xbe\x0b CALL1 \xf6\x02 CALL3 $\x03 CALL2 \xf6\x02 REF_END2 
+SEQ6 REF6 \xbe\x0b CALL1 \xf6\x02 CALL3 $\x03 CALL2 \xf6\x02 REF_END2 
 LOAD3 TextClose REF2 $\r REF_END1 
 END_FILE

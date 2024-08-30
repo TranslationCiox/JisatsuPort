@@ -15,8 +15,8 @@ SEQ1 \x8c\x01 SEQ2 \x80\xa2 SEQ3 \x03\x8e\x00\x00
 \n拓司はぴしゃりとさえぎった。\
 
 \x00\x00\x00
-SEQ4  REF6 \x90\x00 REF_END3 
-LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xe8\x02 REF_END2 
+SEQ6 REF6 \x90\x00 REF_END3 
+LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 \xe8\x02 REF_END2 
 LOAD2 TextOn REF1 \x16\x03 REF_END1 
 LOAD3 SCE094_002 REF6 2\x03 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \x84\xa2 SEQ3 \x03P\x00\x00
@@ -24,8 +24,8 @@ SEQ1 \x8c\x01 SEQ2 \x84\xa2 SEQ3 \x03P\x00\x00
 拓司\n　「『ここを出ていきたい人間は、いつでもそれを実行すること\n　　ができる』。\pこれを最低限のルールにしよう。\p自殺波動とか、\n　　最終波動とか、ラジオからの指令電波とか、わからないこと\n　　が多すぎる。\p何が本当か分からない現状、何が正しい判断な\n　　のか、答は自分の中にしかない。\p自分で判断するんだ」\
 
 \x00
-SEQ4  REF6 v\x03 CALL1 \xe8\x02 CALL3 \x16\x03 REF_END1 
-SEQ4 \x00\x1e\xc8\x00 REF_END3 
+SEQ6 REF6 v\x03 CALL1 \xe8\x02 CALL3 \x16\x03 REF_END1 
+SEQ5 \xc8\x00 REF_END3 
 LOAD6 .\\Data\\Script\\Bg.Fob REF3 \n\x05 REF_END2 
 LOAD4 BgAutoFadeIn REF3 4\x05 CALL2 \xe8\x02 REF_END2 
 LOAD3 TextClose REF2 d\x05 REF_END1 

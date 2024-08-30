@@ -10,8 +10,8 @@ SEQ1 \x8c\x01 SEQ2 \x10' SEQ3 \x03\xa8\x00\x00
 紅葉\n　「アンタさあ、もうちょっと身体鍛えないと、いざというときに\n　　困るよ？」\
 
 \x00\x00\x00
-SEQ4  REF6 J\x00 REF_END3 
-LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \n\x03 REF_END2 
+SEQ6 REF6 J\x00 REF_END3 
+LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 \n\x03 REF_END2 
 LOAD2 TextOn REF1 8\x03 REF_END1 
 LOAD3 SCE015_002 REF6 T\x03 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \x14' SEQ3 \x03G\x00\x00
@@ -23,6 +23,6 @@ SEQ1 \x8c\x01 SEQ2 \x14' SEQ3 \x03G\x00\x00
 拓司\n　「ふん」\
 
 \x00\x00\x00
-SEQ4  REF6 \x98\x03 CALL1 \n\x03 CALL3 8\x03 CALL2 \n\x03 REF_END2 
+SEQ6 REF6 \x98\x03 CALL1 \n\x03 CALL3 8\x03 CALL2 \n\x03 REF_END2 
 LOAD3 TextClose REF2 \xfa\x04 REF_END1 
 END_FILE

@@ -1,6 +1,6 @@
 START_FILE
 \x97\r\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00:\x0b\x00
-SEQ4 \x00\x1e\t\x01 REF_END3 
+SEQ5 \t\x01 REF_END3 
 LOAD6 .\\Data\\Script\\Bgm.Fob REF2  \x00 REF_END2 
 LOAD2 PlayCD REF1 J\x00 REF_END1 
 LOAD3 SCE034_001 REF6 f\x00 REF_END2 
@@ -20,8 +20,8 @@ SEQ1 \x8c\x01 SEQ2 \xc0D SEQ3 \x03\xb1\x00\x00
 \n　賑やかで温かい教室の空気から、早桃の姿だけが浮き上がって\n見えた。\
 
 \x00
-SEQ4  REF6 \xaa\x00 REF_END3 
-LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \x8e\x03 REF_END2 
+SEQ6 REF6 \xaa\x00 REF_END3 
+LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 \x8e\x03 REF_END2 
 LOAD2 TextOn REF1 \xbc\x03 REF_END1 
 LOAD3 SCE034_002 REF6 \xd8\x03 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \xc4D SEQ3 \x03y\x00\x00
@@ -38,7 +38,7 @@ SEQ1 \x8c\x01 SEQ2 \xc4D SEQ3 \x03y\x00\x00
 拓司\n　「いや。\pたまには一緒に飯でも食おうかと思ってさ」\
 
 \x00
-SEQ4  REF6 \x1c\x04 CALL1 \x8e\x03 CALL3 \xbc\x03 REF_END1 
+SEQ6 REF6 \x1c\x04 CALL1 \x8e\x03 CALL3 \xbc\x03 REF_END1 
 LOAD3 SCE034_003 REF6 :\x06 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \xc8D SEQ3 \x03\\\x00\x00
  
@@ -51,7 +51,7 @@ SEQ1 \x8c\x01 SEQ2 \xc8D SEQ3 \x03\\\x00\x00
 \n　そんな声が、時折やや大きめに漏れ聞こえる。\n　早桃は必死にそれに気づかない振りをしているが、声が聞こえ\nるたび、目の中に怯えと恥じらいの影がゆらぐ。\
 
 \x00
-SEQ4  REF6 ~\x06 CALL1 \x8e\x03 CALL3 \xbc\x03 REF_END1 
+SEQ6 REF6 ~\x06 CALL1 \x8e\x03 CALL3 \xbc\x03 REF_END1 
 LOAD3 SCE034_004 REF6 (\x08 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \xccD SEQ3 \x03T\x00\x00
  
@@ -64,7 +64,7 @@ SEQ1 \x8c\x01 SEQ2 \xccD SEQ3 \x03T\x00\x00
 早桃\n　「わけてあげよっか？」\
 
 \x00\x00\x00
-SEQ4  REF6 l\x08 CALL1 \x8e\x03 CALL3 \xbc\x03 REF_END1 
+SEQ6 REF6 l\x08 CALL1 \x8e\x03 CALL3 \xbc\x03 REF_END1 
 LOAD3 SCE034_005 REF6 \xf6\t REF_END2 
 SEQ1 \x8c\x01 SEQ2 \xd0D SEQ3 \x03'\x00\x00
  
@@ -73,6 +73,6 @@ SEQ1 \x8c\x01 SEQ2 \xd0D SEQ3 \x03'\x00\x00
 \n　そういって早桃は、ひとかじりしただけのコッペパンを軽く振\nってみせた。\
 
 \x00
-SEQ4  REF6 :\n CALL1 \x8e\x03 CALL3 \xbc\x03 CALL2 \x8e\x03 REF_END2 
+SEQ6 REF6 :\n CALL1 \x8e\x03 CALL3 \xbc\x03 CALL2 \x8e\x03 REF_END2 
 LOAD3 TextClose REF2 \x1c\x0b REF_END1 
 END_FILE

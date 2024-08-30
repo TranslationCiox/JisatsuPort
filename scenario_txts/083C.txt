@@ -7,8 +7,8 @@ SEQ1 \x8c\x01 SEQ2 P\x91 SEQ3 \x03=\x00\x00
 なんという種類かはわからないが、どこかで見たことがあるよう\nな、いかにも普通の小鳥だ。@
 ただ、色だけがウソのように青く鮮やかで、屋台で売っているペ\nンキで着色されたヒヨコを思わせる。\w\z
 \x00
-SEQ4  REF6 J\x00 REF_END3 
-LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 ^\x01 REF_END2 
+SEQ6 REF6 J\x00 REF_END3 
+LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 ^\x01 REF_END2 
 LOAD2 TextOn REF1 \x8c\x01 REF_END1 
 LOAD3 SCE083_002 REF6 \xa8\x01 REF_END2 
 SEQ1 \x8c\x01 SEQ2 T\x91 SEQ3 \x03s\x00\x00
@@ -23,7 +23,7 @@ SEQ1 \x8c\x01 SEQ2 T\x91 SEQ3 \x03s\x00\x00
 \nねばりつくようないいかただった。@
 見れば教授の額には、ちいさな汗が滲んでいる。\w\z
 \x00\x00\x00
-SEQ4  REF6 \xec\x01 CALL1 ^\x01 CALL3 \x8c\x01 REF_END1 
+SEQ6 REF6 \xec\x01 CALL1 ^\x01 CALL3 \x8c\x01 REF_END1 
 LOAD3 SCE083_003 REF6 \xf2\x03 REF_END2 
 SEQ1 \x8c\x01 SEQ2 X\x91 SEQ3 \x03g\x00\x00
  
@@ -35,7 +35,7 @@ SEQ1 \x8c\x01 SEQ2 X\x91 SEQ3 \x03g\x00\x00
 しめきられた白い部屋には、拓司と教授、２人だけが向かい合っ\nて残された。@
 長い沈黙の後、教授が口を開いた。\w\z
 \x00\x00\x00
-SEQ4  REF6 6\x04 CALL1 ^\x01 CALL3 \x8c\x01 REF_END1 
+SEQ6 REF6 6\x04 CALL1 ^\x01 CALL3 \x8c\x01 REF_END1 
 LOAD3 SCE083_004 REF6 \x0c\x06 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \\\x91 SEQ3 \x03\x87\x00\x00
  
@@ -51,7 +51,7 @@ SEQ1 \x8c\x01 SEQ2 \\\x91 SEQ3 \x03\x87\x00\x00
 \n頭の奥が、ずきんと痛んだ。@
 その痛みは急速に大きく膨れ上がり、すぐに拓司の頭のなかいっ\nぱいに広がった。\w\z
 \x00
-SEQ4  REF6 P\x06 CALL1 ^\x01 CALL3 \x8c\x01 REF_END1 
+SEQ6 REF6 P\x06 CALL1 ^\x01 CALL3 \x8c\x01 REF_END1 
 LOAD3 SCE083_005 REF6 \xa6\x08 REF_END2 
 SEQ1 \x8c\x01 SEQ2 `\x91 SEQ3 \x03c\x00\x00
  
@@ -64,8 +64,8 @@ SEQ1 \x8c\x01 SEQ2 `\x91 SEQ3 \x03c\x00\x00
 　　いいかね、これは、新しい生き物なんだよ！@
 　　あらゆる生物学から外れた……神が作ったこの世界の生物な\n　　らぬ……なにかだッ！」\w\z
 \x00
-SEQ4  REF6 \xea\x08 CALL1 ^\x01 CALL3 \x8c\x01 REF_END1 
-SEQ4 \x00\x1e\xca\x00 REF_END3 
+SEQ6 REF6 \xea\x08 CALL1 ^\x01 CALL3 \x8c\x01 REF_END1 
+SEQ5 \xca\x00 REF_END3 
 LOAD6 .\\Data\\Script\\Bg.Fob REF3 \xca\n REF_END2 
 LOAD4 BgAutoFadeIn REF3 \xf4\n REF_END1 
 LOAD3 SCE083_006 REF6 \x18\x0b REF_END2 
@@ -79,7 +79,7 @@ SEQ1 \x8c\x01 SEQ2 d\x91 SEQ3 \x03T\x00\x00
 \n教授\n　「おまえは誰だ？！　何者なんだ？！　お前は－－」@
 \nスイッチを落としたように、目の前が真っ暗になった。\w\z
 \x00
-SEQ4  REF6 \\\x0b CALL1 ^\x01 CALL3 \x8c\x01 REF_END1 
-SEQ4 \x00\x1e\xc8\x00 CALL1 \xca\n CALL3 \xf4\n CALL2 ^\x01 REF_END2 
+SEQ6 REF6 \\\x0b CALL1 ^\x01 CALL3 \x8c\x01 REF_END1 
+SEQ5 \xc8\x00 CALL1 \xca\n CALL3 \xf4\n CALL2 ^\x01 REF_END2 
 LOAD3 TextClose REF2 &\r REF_END1 
 END_FILE

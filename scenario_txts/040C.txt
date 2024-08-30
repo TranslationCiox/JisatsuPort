@@ -1,6 +1,6 @@
 START_FILE
 v\x0c\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00:\n\x00
-SEQ4 \x00\x1e\x07\x01 REF_END3 
+SEQ5 \x07\x01 REF_END3 
 LOAD6 .\\Data\\Script\\Bgm.Fob REF2  \x00 REF_END2 
 LOAD2 PlayCD REF1 J\x00 REF_END1 
 LOAD3 SCE040_001 REF6 f\x00 REF_END2 
@@ -13,10 +13,10 @@ SEQ1 \x8c\x01 SEQ2  N SEQ3 \x036\x00\x00
 それは嘲笑だった。\
 
 \x00
-SEQ4  REF6 \xaa\x00 REF_END3 
-LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xa2\x01 REF_END2 
+SEQ6 REF6 \xaa\x00 REF_END3 
+LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 \xa2\x01 REF_END2 
 LOAD2 TextOn REF1 \xd0\x01 REF_END1 
-SEQ4 \x00\x1eD\x00 REF_END3 
+SEQ5 D\x00 REF_END3 
 LOAD6 .\\Data\\Script\\Bg.Fob REF3 \x06\x02 REF_END2 
 LOAD4 BgAutoFadeIn REF3 0\x02 REF_END1 
 LOAD3 SCE040_002 REF6 T\x02 REF_END2 
@@ -32,7 +32,7 @@ SEQ1 \x8c\x01 SEQ2 $N SEQ3 \x03v\x00\x00
 拓司\n　「どうだっていいってことはないだろう－－」\
 
 \x00
-SEQ4  REF6 \x98\x02 CALL1 \xa2\x01 CALL3 \xd0\x01 REF_END1 
+SEQ6 REF6 \x98\x02 CALL1 \xa2\x01 CALL3 \xd0\x01 REF_END1 
 LOAD3 SCE040_003 REF6 \xaa\x04 REF_END2 
 SEQ1 \x8c\x01 SEQ2 (N SEQ3 \x03\xcf\x00\x00
  
@@ -50,8 +50,8 @@ SEQ1 \x8c\x01 SEQ2 (N SEQ3 \x03\xcf\x00\x00
 目には涙が浮かび、身体は小刻みに震えている。\
 
 \x00\x00\x00
-SEQ4  REF6 \xee\x04 CALL1 \xa2\x01 CALL3 \xd0\x01 REF_END1 
-SEQ4 \x00\x1e\xc8\x00 CALL1 \x06\x02 REF_END2 
+SEQ6 REF6 \xee\x04 CALL1 \xa2\x01 CALL3 \xd0\x01 REF_END1 
+SEQ5 \xc8\x00 CALL1 \x06\x02 REF_END2 
 LOAD2 BgOn REF3 \x8a\x08 REF_END1 
 LOAD3 SCE040_004 REF6 \xa6\x08 REF_END2 
 SEQ1 \x8c\x01 SEQ2 ,N SEQ3 \x03;\x00\x00
@@ -63,6 +63,6 @@ SEQ1 \x8c\x01 SEQ2 ,N SEQ3 \x03;\x00\x00
 \nいって早桃は、風のように駆けて屋上から去っていった。\
 
 \x00\x00\x00
-SEQ4  REF6 \xea\x08 CALL1 \xa2\x01 CALL3 \xd0\x01 CALL2 \xa2\x01 REF_END2 
+SEQ6 REF6 \xea\x08 CALL1 \xa2\x01 CALL3 \xd0\x01 CALL2 \xa2\x01 REF_END2 
 LOAD3 TextClose REF2 \x1c\n REF_END1 
 END_FILE

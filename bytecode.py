@@ -89,9 +89,19 @@ patterns = [
         "action": " SEQ3 "
     },
     {
-        "pattern": [b' ', b'\x1e', b'\x00', b'\x00', b'\x00', b'\x00', b'\r', b'\x00'],
+        "pattern": [b' ', b'\x1e', b'\x00', b'\x00', b'\x00', b'\x00', b'\r', b'\x00', b'\x00', b',', b'\x02'],
         # Used in EVERY SCExx_xxx command.
         "action": "\nSEQ4 "
+    },
+    {
+        "pattern": [b' ', b'\x1e', b'\x00', b'\x00', b'\x00', b'\x00', b'\r', b'\x00', b'\x00', b'\x1e'],
+        # Used in EVERY SCExx_xxx command.
+        "action": "\nSEQ5 "
+    },
+    {
+        "pattern": [b' ', b'\x1e', b'\x00', b'\x00', b'\x00', b'\x00', b'\r', b'\x00'],
+        # Used in EVERY SCExx_xxx command.
+        "action": "\nSEQ6"
     },
     {
         "pattern": [b'\x03', b'\x02', b'\x00', b'\x00'],
@@ -121,7 +131,7 @@ patterns = [
     {
         "pattern": [b'\x03', b'\x07', b'\x00', b'\x00'],
         # TextFunc.Fob
-        "action": "\nLOAD7 "
+        "action": "\nLOAD8 "
     },
     {
         "pattern": [b'\x03', b'\x08', b'\x00', b'\x00'],
@@ -137,14 +147,6 @@ patterns = [
         "pattern": [b'\x03', b'\t', b'\x00', b'\x00'],
         # Scenario files e.g. 029C.Fob
         "action": "\nLOAD0 "
-    },
-
-    ########################### 2 Bytes ###########################
-
-    {
-        "pattern": [b',', b'\x02'],
-        #
-        "action": "2B_02 "
     },
 
     ########################### 1 Byte ###########################

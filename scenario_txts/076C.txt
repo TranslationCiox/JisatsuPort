@@ -8,8 +8,8 @@ SEQ1 \x8c\x01 SEQ2 `\x86 SEQ3 \x03Q\x00\x00
 早桃\n　「おにいちゃん！\p　じゃあ、神凪先輩を見捨てるっていうの\n　　？！」\n拓司\n　「……」\
 
 \x00\x00\x00
-SEQ4  REF6 J\x00 REF_END3 
-LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xae\x01 REF_END2 
+SEQ6 REF6 J\x00 REF_END3 
+LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 \xae\x01 REF_END2 
 LOAD2 TextOn REF1 \xdc\x01 REF_END1 
 LOAD3 SCE076_002 REF6 \xf8\x01 REF_END2 
 SEQ1 \x8c\x01 SEQ2 d\x86 SEQ3 \x03d\x00\x00
@@ -21,7 +21,7 @@ SEQ1 \x8c\x01 SEQ2 d\x86 SEQ3 \x03d\x00\x00
 拓司\n　「紅葉を助けたい気持ちは、誰にも負けないつもりだ……」\
 
 \x00
-SEQ4  REF6 <\x02 CALL1 \xae\x01 CALL3 \xdc\x01 REF_END1 
+SEQ6 REF6 <\x02 CALL1 \xae\x01 CALL3 \xdc\x01 REF_END1 
 LOAD3 SCE076_003 REF6 \x06\x04 REF_END2 
 SEQ1 \x8c\x01 SEQ2 h\x86 SEQ3 \x03r\x00\x00
  
@@ -34,7 +34,7 @@ SEQ1 \x8c\x01 SEQ2 h\x86 SEQ3 \x03r\x00\x00
 \nぶつぶつと呪文のようにくり返すなたねの背中を追いながら、拓\n司は心の底に絶望をかみしめていた。\
 
 \x00\x00\x00
-SEQ4  REF6 J\x04 CALL1 \xae\x01 CALL3 \xdc\x01 REF_END1 
+SEQ6 REF6 J\x04 CALL1 \xae\x01 CALL3 \xdc\x01 REF_END1 
 LOAD6 .\\Data\\Script\\Bgm.Fob REF2 L\x06 REF_END2 
 LOAD2 StopCD REF1 v\x06 CALL2 \xae\x01 REF_END2 
 LOAD3 TextClose REF2 \x9e\x06 REF_END1 

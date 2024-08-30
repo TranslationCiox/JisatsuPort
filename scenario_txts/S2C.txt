@@ -1,9 +1,9 @@
 START_FILE
 \xbb\x08\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xe8\x06\x00
-SEQ4 \x00\x1eA\x00 REF_END3 
+SEQ5 A\x00 REF_END3 
 LOAD6 .\\Data\\Script\\Bg.Fob REF3  \x00 REF_END2 
 LOAD4 BgAutoFadeIn REF3 J\x00 REF_END1 
-SEQ4 \x00\x1e\x04\x01 REF_END3 
+SEQ5 \x04\x01 REF_END3 
 LOAD6 .\\Data\\Script\\Bgm.Fob REF2 \x88\x00 REF_END2 
 LOAD2 PlayCD REF1 \xb2\x00 REF_END1 
 LOAD3 SCES02_001 REF6 \xce\x00 REF_END2 
@@ -19,8 +19,8 @@ SEQ1 \x8c\x01 SEQ2 \xa8\xb5\x01\x0c\x00\x00\x00\x00"\x03p\x00\x00
 羽が生えた猫なの。\
 
 \x00\x00\x00
-SEQ4  REF6 \x12\x01 REF_END3 
-LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xf2\x02 REF_END2 
+SEQ6 REF6 \x12\x01 REF_END3 
+LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 \xf2\x02 REF_END2 
 LOAD2 TextOn REF1  \x03 REF_END1 
 LOAD3 SCES02_002 REF6 <\x03 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \xac\xb5\x01\x0c\x00\x00\x00\x00"\x03\xaa\x00\x00
@@ -37,8 +37,8 @@ SEQ1 \x8c\x01 SEQ2 \xac\xb5\x01\x0c\x00\x00\x00\x00"\x03\xaa\x00\x00
 『答はね、早桃ちゃん。風のなかにあるニャ』って。\
 
 \x00\x00\x00
-SEQ4  REF6 \x80\x03 CALL1 \xf2\x02 CALL3  \x03 REF_END1 
-SEQ4 \x00\x1e\xc8\x00 CALL1  \x00 CALL3 J\x00 CALL2 \x88\x00 REF_END2 
+SEQ6 REF6 \x80\x03 CALL1 \xf2\x02 CALL3  \x03 REF_END1 
+SEQ5 \xc8\x00 CALL1  \x00 CALL3 J\x00 CALL2 \x88\x00 REF_END2 
 LOAD2 StopCD REF1 \xa2\x06 CALL2 \xf2\x02 REF_END2 
 LOAD3 TextClose REF2 \xca\x06 REF_END1 
 END_FILE

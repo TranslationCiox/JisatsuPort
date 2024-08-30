@@ -15,8 +15,8 @@ SEQ1 \x8c\x01 SEQ2 \xf0< SEQ3 \x03\x81\x00\x00
 \n返事を待つ様子もなくカンナは足早に廊下を歩み去っていった。\
 
 \x00\x00\x00
-SEQ4  REF6 J\x00 REF_END3 
-LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 n\x02 REF_END2 
+SEQ6 REF6 J\x00 REF_END3 
+LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 n\x02 REF_END2 
 LOAD2 TextOn REF1 \x9c\x02 CALL2 n\x02 REF_END2 
 LOAD3 TextClose REF2 \xc4\x02 REF_END1 
 END_FILE

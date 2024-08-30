@@ -8,10 +8,10 @@ SEQ1 \x8c\x01 SEQ2 \x90_\x01\x0c\x00\x00\x00\x00"\x03\x11\x00\x00
 \n\n\n\n\n\n\n\n\n\n　　　　　　　　　　　　　『７日目』\
 
 \x00\x00\x00
-SEQ4  REF6 \x90\x00 REF_END3 
-LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xf4\x00 REF_END2 
+SEQ6 REF6 \x90\x00 REF_END3 
+LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 \xf4\x00 REF_END2 
 LOAD2 TextOn REF1 "\x01 REF_END1 
-SEQ4 \x00\x1e\x0c\x01 CALL1 \x06\x00 REF_END2 
+SEQ5 \x0c\x01 CALL1 \x06\x00 REF_END2 
 LOAD2 PlayCD REF1 d\x01 REF_END1 
 LOAD3 SCE215_002 REF6 \x80\x01 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \x94_\x01\x0c\x00\x00\x00\x00"\x03!\x00\x00
@@ -22,6 +22,6 @@ SEQ1 \x8c\x01 SEQ2 \x94_\x01\x0c\x00\x00\x00\x00"\x03!\x00\x00
 言葉も少ない。\
 
 \x00
-SEQ4  REF6 \xc4\x01 CALL1 \xf4\x00 CALL3 "\x01 CALL2 \xf4\x00 REF_END2 
+SEQ6 REF6 \xc4\x01 CALL1 \xf4\x00 CALL3 "\x01 CALL2 \xf4\x00 REF_END2 
 LOAD3 TextClose REF2 \x8e\x02 REF_END1 
 END_FILE

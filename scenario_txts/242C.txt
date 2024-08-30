@@ -1,9 +1,9 @@
 START_FILE
 4!\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\x90\x1b\x00
-SEQ4 \x00\x1e\n\x01 REF_END3 
+SEQ5 \n\x01 REF_END3 
 LOAD6 .\\Data\\Script\\Bgm.Fob REF2  \x00 REF_END2 
 LOAD2 PlayCD REF1 J\x00 REF_END1 
-SEQ4 \x00\x1e\xc8\x00 REF_END3 
+SEQ5 \xc8\x00 REF_END3 
 LOAD6 .\\Data\\Script\\Bg.Fob REF3 \x80\x00 REF_END2 
 LOAD4 BgAutoFadeIn REF3 \xaa\x00 REF_END1 
 LOAD3 SCE242_001 REF6 \xce\x00 REF_END2 
@@ -19,8 +19,8 @@ SEQ1 \x8c\x01 SEQ2 \xc0\x89\x01\x0c\x00\x00\x00\x00"\x03t\x00\x00
 ただ、最終波動はひたすら、死のイメージだった。@
 死が定義不可能である以上、波動も同じく、理解の範疇の外にあ\nる。\p漠然とした恐怖ですべてを縛るものとして。\w\z
 \x00
-SEQ4  REF6 \x12\x01 REF_END3 
-LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \x02\x03 REF_END2 
+SEQ6 REF6 \x12\x01 REF_END3 
+LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 \x02\x03 REF_END2 
 LOAD2 TextOn REF1 0\x03 REF_END1 
 LOAD3 SCE242_002 REF6 L\x03 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \xc4\x89\x01\x0c\x00\x00\x00\x00"\x03F\x00\x00
@@ -30,7 +30,7 @@ SEQ1 \x8c\x01 SEQ2 \xc4\x89\x01\x0c\x00\x00\x00\x00"\x03F\x00\x00
 あの銀紙のシェルターがそれに耐えうるのかどうかも。@
 しかし、どこから襲ってくるかわからないむきだしの死に身を晒\nすより、どんなに薄かろうとも鎧をまとっている方がマシだった。\w\z
 \x00\x00\x00
-SEQ4  REF6 \x90\x03 CALL1 \x02\x03 CALL3 0\x03 REF_END1 
+SEQ6 REF6 \x90\x03 CALL1 \x02\x03 CALL3 0\x03 REF_END1 
 LOAD3 SCE242_003 REF6 \xe2\x04 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \xc8\x89\x01\x0c\x00\x00\x00\x00"\x03h\x00\x00
  
@@ -41,9 +41,9 @@ SEQ1 \x8c\x01 SEQ2 \xc8\x89\x01\x0c\x00\x00\x00\x00"\x03h\x00\x00
 ピシ、という鋭い音に視線を送ると、廊下の側面にはめ込まれた\n窓ガラスのすべてに亀裂が入ってる。@
 亀裂は、あたかも生命を持っているかのように……雪崩落ちる雷\nのように……窓ガラスを走り……\w\z
 \x00\x00\x00
-SEQ4  REF6 &\x05 CALL1 \x02\x03 CALL3 0\x03 CALL2  \x00 REF_END2 
+SEQ6 REF6 &\x05 CALL1 \x02\x03 CALL3 0\x03 CALL2  \x00 REF_END2 
 LOAD2 StopCD REF1 \x0c\x07 REF_END1 
-SEQ4  REF_END2 \x0c\x02\x00\x00" REF7  \x00 REF_END2 
+SEQ5 \x02\x00 CALL1  \x00 REF_END2 
 LOAD2 SeStop REF1 N\x07 REF_END1 
 LOAD3 SCE242_004 REF6 j\x07 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \xcc\x89\x01\x0c\x00\x00\x00\x00"\x03]\x00\x00
@@ -56,8 +56,8 @@ SEQ1 \x8c\x01 SEQ2 \xcc\x89\x01\x0c\x00\x00\x00\x00"\x03]\x00\x00
 その風は、身体のなかをすり抜けていった。@
 細胞の隙間を縫うように奔り、身体を構成する肉すべてに毒を与\nえて通り過ぎていった。\w\z
 \x00\x00\x00
-SEQ4  REF6 \xae\x07 CALL1 \x02\x03 CALL3 0\x03 REF_END1 
-SEQ4 \x00\x1e\x0b\x01 CALL1  \x00 CALL3 J\x00 REF_END1 
+SEQ6 REF6 \xae\x07 CALL1 \x02\x03 CALL3 0\x03 REF_END1 
+SEQ5 \x0b\x01 CALL1  \x00 CALL3 J\x00 REF_END1 
 LOAD3 SCE242_005 REF6 \x90\t REF_END2 
 SEQ1 \x8c\x01 SEQ2 \xd0\x89\x01\x0c\x00\x00\x00\x00"\x03\x8a\x00\x00
  
@@ -70,7 +70,7 @@ SEQ1 \x8c\x01 SEQ2 \xd0\x89\x01\x0c\x00\x00\x00\x00"\x03\x8a\x00\x00
 夢幻に反射を繰り返して、さらに新しい悲鳴が雪崩のように流れ\n込んできては反射した。@
 頭そのものが爆発しないのが不思議だった。\w\z
 
-SEQ4  REF6 \xd4\t CALL1 \x02\x03 CALL3 0\x03 REF_END1 
+SEQ6 REF6 \xd4\t CALL1 \x02\x03 CALL3 0\x03 REF_END1 
 LOAD3 SCE242_006 REF6 6\x0c REF_END2 
 SEQ1 \x8c\x01 SEQ2 \xd4\x89\x01\x0c\x00\x00\x00\x00"\x03}\x00\x00
  
@@ -83,7 +83,7 @@ SEQ1 \x8c\x01 SEQ2 \xd4\x89\x01\x0c\x00\x00\x00\x00"\x03}\x00\x00
 やがてぐったりと仰向けに転がると、ぴくぴくと身体を痙攣させ\n始める。@
 白目をむき、耳から、鼻から、どす黒い血があふれ出している。\w\z
 \x00
-SEQ4  REF6 z\x0c CALL1 \x02\x03 CALL3 0\x03 REF_END1 
+SEQ6 REF6 z\x0c CALL1 \x02\x03 CALL3 0\x03 REF_END1 
 LOAD3 SCE242_007 REF6 \xa8\x0e REF_END2 
 SEQ1 \x8c\x01 SEQ2 \xd8\x89\x01\x0c\x00\x00\x00\x00"\x03\xa1\x00\x00
  
@@ -101,7 +101,7 @@ SEQ1 \x8c\x01 SEQ2 \xd8\x89\x01\x0c\x00\x00\x00\x00"\x03\xa1\x00\x00
 解決されつつあることなのだ。@
 あるいは、解決されるべきものなのだ。\w\z
 \x00
-SEQ4  REF6 \xec\x0e CALL1 \x02\x03 CALL3 0\x03 REF_END1 
+SEQ6 REF6 \xec\x0e CALL1 \x02\x03 CALL3 0\x03 REF_END1 
 LOAD3 SCE242_008 REF6 \xaa\x11 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \xdc\x89\x01\x0c\x00\x00\x00\x00"\x039\x00\x00
  
@@ -110,7 +110,7 @@ SEQ1 \x8c\x01 SEQ2 \xdc\x89\x01\x0c\x00\x00\x00\x00"\x039\x00\x00
 その足をじっと見つめ、そして反対側の足を前に出す。@
 そうして一歩……一歩……忘れてしまった歩き方を思い出すかの\nように、拓司はゆっくりと歩き始めた。\w\z
 \x00
-SEQ4  REF6 \xee\x11 CALL1 \x02\x03 CALL3 0\x03 REF_END1 
+SEQ6 REF6 \xee\x11 CALL1 \x02\x03 CALL3 0\x03 REF_END1 
 LOAD3 SCE242_009 REF6 \x0c\x13 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \xe0\x89\x01\x0c\x00\x00\x00\x00"\x03m\x00\x00
  
@@ -121,7 +121,7 @@ SEQ1 \x8c\x01 SEQ2 \xe0\x89\x01\x0c\x00\x00\x00\x00"\x03m\x00\x00
 \nここから俺は始まるのだ。@
 \nキイイイイイイイイイイイイイイイイイイイイイイイイイイイイ\nイイイイイイイ！\w/*▲SE　停止*/\a4,2,0,0,\z
 \x00\x00
-SEQ4  REF6 P\x13 CALL1 \x02\x03 CALL3 0\x03 CALL2  \x00 CALL3 \x0c\x07 REF_END1 
+SEQ6 REF6 P\x13 CALL1 \x02\x03 CALL3 0\x03 CALL2  \x00 CALL3 \x0c\x07 REF_END1 
 LOAD3 SCE242_010 REF6 X\x15 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \xe4\x89\x01\x0c\x00\x00\x00\x00"\x03e\x00\x00
  
@@ -135,7 +135,7 @@ SEQ1 \x8c\x01 SEQ2 \xe4\x89\x01\x0c\x00\x00\x00\x00"\x03e\x00\x00
 \nカンナは動かない。\nすでに痙攣すらしていない。@
 拓司は、カンナの上に身体を重ねた。\w\z
 \x00
-SEQ4  REF6 \x9c\x15 CALL1 \x02\x03 CALL3 0\x03 REF_END1 
+SEQ6 REF6 \x9c\x15 CALL1 \x02\x03 CALL3 0\x03 REF_END1 
 LOAD3 SCE242_011 REF6 j\x17 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \xe8\x89\x01\x0c\x00\x00\x00\x00"\x03g\x00\x00
  
@@ -146,8 +146,8 @@ SEQ1 \x8c\x01 SEQ2 \xe8\x89\x01\x0c\x00\x00\x00\x00"\x03g\x00\x00
 \n/*■CG53　表示*/\a7,-2,-2,0,\a0,52,2,0,\a6,-2,0,0,拓司\n　「俺は勝った！　勝ったんだ！@
 　　ワハ、ワハ、ワハハハハハハハハハハ！」\w\z
 \x00
-SEQ4  REF6 \xae\x17 CALL1 \x02\x03 CALL3 0\x03 REF_END1 
-SEQ4 \x00\x1e\xc9\x00 CALL1 \x80\x00 CALL3 \xaa\x00 REF_END1 
+SEQ6 REF6 \xae\x17 CALL1 \x02\x03 CALL3 0\x03 REF_END1 
+SEQ5 \xc9\x00 CALL1 \x80\x00 CALL3 \xaa\x00 REF_END1 
 LOAD3 SCE242_012 REF6 \xb8\x19 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \xec\x89\x01\x0c\x00\x00\x00\x00"\x03L\x00\x00
  
@@ -160,6 +160,6 @@ SEQ1 \x8c\x01 SEQ2 \xec\x89\x01\x0c\x00\x00\x00\x00"\x03L\x00\x00
 俺は勝った。@
 勝ったんだ、と。\w\z
 \x00\x00\x00
-SEQ4  REF6 \xfc\x19 CALL1 \x02\x03 CALL3 0\x03 CALL2 \x02\x03 REF_END2 
+SEQ6 REF6 \xfc\x19 CALL1 \x02\x03 CALL3 0\x03 CALL2 \x02\x03 REF_END2 
 LOAD3 TextClose REF2 r\x1b REF_END1 
 END_FILE

@@ -1,9 +1,9 @@
 START_FILE
 B\n\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xaa\x07\x00
-SEQ4 \x00\x1e\xc8\x00 REF_END3 
+SEQ5 \xc8\x00 REF_END3 
 LOAD6 .\\Data\\Script\\Bg.Fob REF3  \x00 REF_END2 
 LOAD4 BgAutoFadeIn REF3 J\x00 REF_END1 
-SEQ4 \x00\x1e\x08\x01 REF_END3 
+SEQ5 \x08\x01 REF_END3 
 LOAD6 .\\Data\\Script\\Bgm.Fob REF2 \x88\x00 REF_END2 
 LOAD2 PlayCD REF1 \xb2\x00 REF_END1 
 LOAD3 SCEK04_001 REF6 \xce\x00 REF_END2 
@@ -14,8 +14,8 @@ SEQ1 \x8c\x01 SEQ2 X\xa6\x01\x0c\x00\x00\x00\x00"\x03\\\x00\x00
 多分、嫉妬していたのだと思う。\n自分と同じメンタリティを持ちながらも周囲とうまくやっていけ\nているゆきが、羨ましかったのだろう。@
 そう考えないと、私がとったその後の行動を、うまく説明するこ\nとができない。\w\z
 \x00
-SEQ4  REF6 \x12\x01 REF_END3 
-LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xa2\x02 REF_END2 
+SEQ6 REF6 \x12\x01 REF_END3 
+LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 \xa2\x02 REF_END2 
 LOAD2 TextOn REF1 \xd0\x02 REF_END1 
 LOAD3 SCEK04_002 REF6 \xec\x02 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \\\xa6\x01\x0c\x00\x00\x00\x00"\x03\x96\x00\x00
@@ -28,7 +28,7 @@ SEQ1 \x8c\x01 SEQ2 \\\xa6\x01\x0c\x00\x00\x00\x00"\x03\x96\x00\x00
 信念に対する背信行為を犯したゆきに、罰を与えたのだった。@
 ゆきが完全に寄り掛かってきたころを見計らって、私は計画を最\n終段階に進めた。\w\z
 \x00
-SEQ4  REF6 0\x03 CALL1 \xa2\x02 CALL3 \xd0\x02 REF_END1 
+SEQ6 REF6 0\x03 CALL1 \xa2\x02 CALL3 \xd0\x02 REF_END1 
 LOAD3 SCEK04_003 REF6 \xc2\x05 REF_END2 
 SEQ1 \x8c\x01 SEQ2 `\xa6\x01\x0c\x00\x00\x00\x00"\x03P\x00\x00
  
@@ -37,6 +37,6 @@ SEQ1 \x8c\x01 SEQ2 `\xa6\x01\x0c\x00\x00\x00\x00"\x03P\x00\x00
 そんなことはわかっていた。@
 私は、ゆきの地位にダメージを与えようと思ったわけではなかっ\nた。\pゆきの心を破壊してやろうと思ったのだ。\w\z
 \x00
-SEQ4  REF6 \x06\x06 CALL1 \xa2\x02 CALL3 \xd0\x02 CALL2 \xa2\x02 REF_END2 
+SEQ6 REF6 \x06\x06 CALL1 \xa2\x02 CALL3 \xd0\x02 CALL2 \xa2\x02 REF_END2 
 LOAD3 TextClose REF2 \x8c\x07 REF_END1 
 END_FILE

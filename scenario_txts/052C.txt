@@ -1,6 +1,6 @@
 START_FILE
 \xbf'\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00Z!\x00
-SEQ4 \x00\x1e\x0b\x01 REF_END3 
+SEQ5 \x0b\x01 REF_END3 
 LOAD6 .\\Data\\Script\\Bgm.Fob REF2  \x00 REF_END2 
 LOAD2 PlayCD REF1 J\x00 REF_END1 
 LOAD3 SCE052_001 REF6 f\x00 REF_END2 
@@ -21,8 +21,8 @@ SEQ1 \x8c\x01 SEQ2 \xe0` SEQ3 \x03\xac\x00\x00
 早桃だ。\
 
 \x00
-SEQ4  REF6 \xaa\x00 REF_END3 
-LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 z\x03 REF_END2 
+SEQ6 REF6 \xaa\x00 REF_END3 
+LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 z\x03 REF_END2 
 LOAD2 TextOn REF1 \xa8\x03 REF_END1 
 LOAD3 SCE052_002 REF6 \xc4\x03 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \xe4` SEQ3 \x03]\x00\x00
@@ -37,7 +37,7 @@ SEQ1 \x8c\x01 SEQ2 \xe4` SEQ3 \x03]\x00\x00
 学生\n　「へえ、そうなんだ、へへ」\
 
 \x00\x00\x00
-SEQ4  REF6 \x08\x04 CALL1 z\x03 CALL3 \xa8\x03 REF_END1 
+SEQ6 REF6 \x08\x04 CALL1 z\x03 CALL3 \xa8\x03 REF_END1 
 LOAD3 SCE052_003 REF6 \xb6\x05 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \xe8` SEQ3 \x03l\x00\x00
  
@@ -53,7 +53,7 @@ SEQ1 \x8c\x01 SEQ2 \xe8` SEQ3 \x03l\x00\x00
 \nひとりが素っ頓狂な声を上げると、他の者がゲラゲラと笑い声で\n応えた。\
 
 \x00\x00\x00
-SEQ4  REF6 \xfa\x05 CALL1 z\x03 CALL3 \xa8\x03 REF_END1 
+SEQ6 REF6 \xfa\x05 CALL1 z\x03 CALL3 \xa8\x03 REF_END1 
 LOAD3 SCE052_004 REF6 \xe4\x07 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \xec` SEQ3 \x03{\x00\x00
  
@@ -69,7 +69,7 @@ SEQ1 \x8c\x01 SEQ2 \xec` SEQ3 \x03{\x00\x00
 　　そんなところで勉強とか青春なんて前向きにやってられるか？\n　　\pやれねえんだよ！」\
 
 \x00\x00\x00
-SEQ4  REF6 (\x08 CALL1 z\x03 CALL3 \xa8\x03 REF_END1 
+SEQ6 REF6 (\x08 CALL1 z\x03 CALL3 \xa8\x03 REF_END1 
 LOAD3 SCE052_005 REF6 N\n REF_END2 
 SEQ1 \x8c\x01 SEQ2 \xf0` SEQ3 \x03\x96\x00\x00
  
@@ -88,7 +88,7 @@ SEQ1 \x8c\x01 SEQ2 \xf0` SEQ3 \x03\x96\x00\x00
 　　俺たちゃアホじゃねえっつーんだよッ！」\
 
 \x00
-SEQ4  REF6 \x92\n CALL1 z\x03 CALL3 \xa8\x03 REF_END1 
+SEQ6 REF6 \x92\n CALL1 z\x03 CALL3 \xa8\x03 REF_END1 
 LOAD3 SCE052_006 REF6 $\r REF_END2 
 SEQ1 \x8c\x01 SEQ2 \xf4` SEQ3 \x03\x93\x00\x00
  
@@ -104,7 +104,7 @@ SEQ1 \x8c\x01 SEQ2 \xf4` SEQ3 \x03\x93\x00\x00
 　　泣いてごめんなさいごめんなさいっていって、窓まで走って\n　　いって、そのままトップロープ越えのトペ・スイシーダだよ！\n　　\pで、今度は虎菱の番ってわけだ！」\
 
 \x00
-SEQ4  REF6 h\r CALL1 z\x03 CALL3 \xa8\x03 REF_END1 
+SEQ6 REF6 h\r CALL1 z\x03 CALL3 \xa8\x03 REF_END1 
 LOAD3 SCE052_007 REF6 \xee\x0f REF_END2 
 SEQ1 \x8c\x01 SEQ2 \xf8` SEQ3 \x03\x90\x00\x00
  
@@ -122,7 +122,7 @@ SEQ1 \x8c\x01 SEQ2 \xf8` SEQ3 \x03\x90\x00\x00
 しかし、早桃の言葉が、次の言葉をさえぎった。\
 
 \x00\x00\x00
-SEQ4  REF6 2\x10 CALL1 z\x03 CALL3 \xa8\x03 REF_END1 
+SEQ6 REF6 2\x10 CALL1 z\x03 CALL3 \xa8\x03 REF_END1 
 LOAD3 SCE052_008 REF6 \xac\x12 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \xfc` SEQ3 \x03f\x00\x00
  
@@ -138,7 +138,7 @@ SEQ1 \x8c\x01 SEQ2 \xfc` SEQ3 \x03f\x00\x00
 有罪、有罪、有罪！\
 
 \x00
-SEQ4  REF6 \xf0\x12 CALL1 z\x03 CALL3 \xa8\x03 REF_END1 
+SEQ6 REF6 \xf0\x12 CALL1 z\x03 CALL3 \xa8\x03 REF_END1 
 LOAD3 SCE052_009 REF6 \xc2\x14 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \x00a SEQ3 \x03%\x00\x00
  
@@ -150,7 +150,7 @@ SEQ1 \x8c\x01 SEQ2 \x00a SEQ3 \x03%\x00\x00
 学生\n　「死ねよ」\
 
 \x00\x00\x00
-SEQ4  REF6 \x06\x15 CALL1 z\x03 CALL3 \xa8\x03 REF_END1 
+SEQ6 REF6 \x06\x15 CALL1 z\x03 CALL3 \xa8\x03 REF_END1 
 LOAD3 SCE052_010 REF6 \xd4\x15 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \x04a SEQ3 \x03\x96\x00\x00
  
@@ -162,7 +162,7 @@ SEQ1 \x8c\x01 SEQ2 \x04a SEQ3 \x03\x96\x00\x00
 \n　シネシネシネシネシシネシネシネシネシネシネシネシネシネシ\nネシネシネシネシネシネ\n　ドンガドンガドンガドンドンガドンガドンガドンガドンガドン\nガドンガドンガドンガドンガドンガ\
 
 \x00
-SEQ4  REF6 \x18\x16 CALL1 z\x03 CALL3 \xa8\x03 REF_END1 
+SEQ6 REF6 \x18\x16 CALL1 z\x03 CALL3 \xa8\x03 REF_END1 
 LOAD3 SCE052_011 REF6 \xaa\x18 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \x08a SEQ3 \x03\xb4\x00\x00
  
@@ -178,8 +178,8 @@ SEQ1 \x8c\x01 SEQ2 \x08a SEQ3 \x03\xb4\x00\x00
 \n早桃\n　「ごめんなさい……ごめんなさい……ごめんなさい……」\
 
 \x00\x00\x00
-SEQ4  REF6 \xee\x18 CALL1 z\x03 CALL3 \xa8\x03 REF_END1 
-SEQ4 \x00\x1e\n\x01 CALL1  \x00 CALL3 J\x00 REF_END1 
+SEQ6 REF6 \xee\x18 CALL1 z\x03 CALL3 \xa8\x03 REF_END1 
+SEQ5 \n\x01 CALL1  \x00 CALL3 J\x00 REF_END1 
 LOAD3 SCE052_012 REF6 ,\x1c REF_END2 
 SEQ1 \x8c\x01 SEQ2 \x0ca SEQ3 \x03\x9b\x00\x00
  
@@ -193,7 +193,7 @@ SEQ1 \x8c\x01 SEQ2 \x0ca SEQ3 \x03\x9b\x00\x00
 視界が奇妙な色で明滅する。\
 
 \x00
-SEQ4  REF6 p\x1c CALL1 z\x03 CALL3 \xa8\x03 REF_END1 
+SEQ6 REF6 p\x1c CALL1 z\x03 CALL3 \xa8\x03 REF_END1 
 LOAD3 SCE052_013 REF6 \x16\x1f REF_END2 
 SEQ1 \x8c\x01 SEQ2 \x10a SEQ3 \x03g\x00\x00
  
@@ -204,6 +204,6 @@ SEQ1 \x8c\x01 SEQ2 \x10a SEQ3 \x03g\x00\x00
 　静寂の中、バットが振り下ろされた。\
 
 \x00\x00
-SEQ4  REF6 Z\x1f CALL1 z\x03 CALL3 \xa8\x03 CALL2 z\x03 REF_END2 
+SEQ6 REF6 Z\x1f CALL1 z\x03 CALL3 \xa8\x03 CALL2 z\x03 REF_END2 
 LOAD3 TextClose REF2 <! REF_END1 
 END_FILE

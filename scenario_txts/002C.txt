@@ -6,12 +6,12 @@ SEQ1 \x8c\x01 SEQ2 \xc0\x12 SEQ3 \x03\x12\x00\x00
 \n\n\n\n\n\n\n\n\n\n　　　　　　『ジサツのための１０１の方法』\
 
 \x00
-SEQ4  REF6 J\x00 REF_END3 
-LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xb2\x00 REF_END2 
+SEQ6 REF6 J\x00 REF_END3 
+LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 \xb2\x00 REF_END2 
 LOAD2 TextOn REF1 \xe0\x00 REF_END1 
 LOAD3 SCE002_002 REF6 \xfc\x00 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \xc4\x12 SEQ3 
-SEQ4  REF_END2 \x0c\x02\x00\x00" \x1e\x04\x00\x00\r\x00\x00\x1e\x01\x00 REF_END3  \x1e\x08\x00\x00\r\x00\x00\x1e\x01\x00 REF_END3 
+SEQ5 \x02\x00 REF_END3  \x1e\x04\x00\x00\r\x00\x00\x1e\x01\x00 REF_END3  \x1e\x08\x00\x00\r\x00\x00\x1e\x01\x00 REF_END3 
 LOAD6 .\\Data\\Script\\Bgm.Fob REF2 \x8e\x01 REF_END2 
 LOAD2 SePlay REF1 \xb8\x01 REF_END1 \x03\x89\x00\x00
  
@@ -35,7 +35,7 @@ LOAD2 SePlay REF1 \xb8\x01 REF_END1 \x03\x89\x00\x00
 学生　「愉快犯」\
 
 \x00\x00\x00
-SEQ4  REF6 \xd4\x01 CALL1 \xb2\x00 CALL3 \xe0\x00 REF_END1 
+SEQ6 REF6 \xd4\x01 CALL1 \xb2\x00 CALL3 \xe0\x00 REF_END1 
 LOAD3 SCE002_003 REF6 2\x04 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \xc8\x12 SEQ3 \x03f\x00\x00
  
@@ -55,7 +55,7 @@ SEQ1 \x8c\x01 SEQ2 \xc8\x12 SEQ3 \x03f\x00\x00
 学生　「死ぬんじゃない？」\
 
 \x00
-SEQ4  REF6 v\x04 CALL1 \xb2\x00 CALL3 \xe0\x00 REF_END1 
+SEQ6 REF6 v\x04 CALL1 \xb2\x00 CALL3 \xe0\x00 REF_END1 
 LOAD3 SCE002_004 REF6 H\x06 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \xcc\x12 SEQ3 \x03(\x00\x00
  
@@ -69,16 +69,16 @@ SEQ1 \x8c\x01 SEQ2 \xcc\x12 SEQ3 \x03(\x00\x00
 学生　「あっ？！」\
 
 \x00\x00\x00
-SEQ4  REF6 \x8c\x06 CALL1 \xb2\x00 CALL3 \xe0\x00 REF_END1 
+SEQ6 REF6 \x8c\x06 CALL1 \xb2\x00 CALL3 \xe0\x00 REF_END1 
 LOAD3 SCE002_005 REF6 f\x07 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \xd0\x12 SEQ3  REF7 \x8e\x01 REF_END2 
 LOAD2 StopCD REF1 \xb6\x07 REF_END1 
-SEQ4  REF_END2 \x0c\x02\x00\x00" REF7 \x8e\x01 REF_END2 
+SEQ5 \x02\x00 CALL1 \x8e\x01 REF_END2 
 LOAD2 SeStop REF1 \xf8\x07 REF_END1 
-SEQ4 \x00\x1e<\x00 REF_END3 
-LOAD7 .\\Data\\Script\\TextFunc.fob REF1 .\x08 REF_END2 
+SEQ5 <\x00 REF_END3 
+LOAD8 .\\Data\\Script\\TextFunc.fob REF1 .\x08 REF_END2 
 LOAD3 WaitTime REF3 \\\x08 REF_END1 
-SEQ4 \x00\x1e\x00\x00\x00 REF_END3  \x1e\x04\x00\x00\r\x00 REF_END2 \x0c\x02\x00\x00" \x1e\x08\x00\x00\r\x00\x00\x1e\x00\x00\x00 CALL1 \x8e\x01 REF_END2 
+SEQ5 \x00\x00\x00 REF_END3  \x1e\x04\x00\x00\r\x00 REF_END2 \x0c\x02\x00\x00" \x1e\x08\x00\x00\r\x00\x00\x1e\x00\x00\x00 CALL1 \x8e\x01 REF_END2 
 LOAD3 SePlayEx REF3 \xd6\x08 REF_END1 \x03\x1a\x00\x00
  
 学生　「落ちたよ」@
@@ -87,6 +87,6 @@ LOAD3 SePlayEx REF3 \xd6\x08 REF_END1 \x03\x1a\x00\x00
 学生　「死んだでしょ」\
 
 \x00\x00\x00
-SEQ4  REF6 \xf6\x08 CALL1 \xb2\x00 CALL3 \xe0\x00 CALL2 \xb2\x00 REF_END2 
+SEQ6 REF6 \xf6\x08 CALL1 \xb2\x00 CALL3 \xe0\x00 CALL2 \xb2\x00 REF_END2 
 LOAD3 TextClose REF2 \xa4\t REF_END1 
 END_FILE

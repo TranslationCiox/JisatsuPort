@@ -1,9 +1,9 @@
 START_FILE
 \xa6\n\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xbc\x07\x00
-SEQ4 \x00\x1e\\\x00 REF_END3 
+SEQ5 \\\x00 REF_END3 
 LOAD6 .\\Data\\Script\\Bg.Fob REF3  \x00 REF_END2 
 LOAD4 BgAutoFadeIn REF3 J\x00 REF_END1 
-SEQ4 \x00\x1e\x04\x01 REF_END3 
+SEQ5 \x04\x01 REF_END3 
 LOAD6 .\\Data\\Script\\Bgm.Fob REF2 \x88\x00 REF_END2 
 LOAD2 PlayCD REF1 \xb2\x00 REF_END1 
 LOAD3 SCEK04_A01 REF6 \xce\x00 REF_END2 
@@ -19,10 +19,10 @@ SEQ1 \x8c\x01 SEQ2 X\xa6\x01\x0c\x00\x00\x00\x00"\x03\xe0\x00\x00
 まるで史上初めて火を発見した人類みたいな気分だった。@
 どきどきして、誇らしかった。\w\z
 \x00\x00\x00
-SEQ4  REF6 \x12\x01 REF_END3 
-LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xb2\x04 REF_END2 
+SEQ6 REF6 \x12\x01 REF_END3 
+LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 \xb2\x04 REF_END2 
 LOAD2 TextOn REF1 \xe0\x04 REF_END1 
-SEQ4 \x00\x1e\xc8\x00 CALL1  \x00 CALL3 J\x00 CALL2 \x88\x00 REF_END2 
+SEQ5 \xc8\x00 CALL1  \x00 CALL3 J\x00 CALL2 \x88\x00 REF_END2 
 LOAD2 StopCD REF1 <\x05 REF_END1 
 LOAD3 SCEK04_A02 REF6 X\x05 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \\\xa6\x01\x0c\x00\x00\x00\x00"\x03o\x00\x00
@@ -36,6 +36,6 @@ SEQ1 \x8c\x01 SEQ2 \\\xa6\x01\x0c\x00\x00\x00\x00"\x03o\x00\x00
 そしてようやく、ゆきはいった。@
 今日、自分は自殺を決意していたのだと。\w\z
 \x00
-SEQ4  REF6 \x9c\x05 CALL1 \xb2\x04 CALL3 \xe0\x04 CALL2 \xb2\x04 REF_END2 
+SEQ6 REF6 \x9c\x05 CALL1 \xb2\x04 CALL3 \xe0\x04 CALL2 \xb2\x04 REF_END2 
 LOAD3 TextClose REF2 \x9e\x07 REF_END1 
 END_FILE

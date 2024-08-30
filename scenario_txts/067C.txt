@@ -8,15 +8,15 @@ SEQ1 \x8c\x01 SEQ2 Px SEQ3 \x03\xb3\x00\x00
 　　そうするとあやしてもらえる。\pそしてそこで、赤ちゃんはふ\n　　たつの満足を得るの。\p『自分が困っているという意思表示を\n　　したときには誰かが助けてくれる』という安心感。\pそしても\n　　う一つは……『自分が環境に影響を及ぼすことができる』と\n　　いう自信。\pでも、人手が足りない施設ではそういうのは無視\n　　されることが多い。\p『赤ん坊は泣くことが仕事。\p甘やかす必\n　　要はない』ってね。\pそうなると、赤ちゃんはどうなると思う？\n　　\p泣かなくなるのよ。\p静かになって、面会に来た母親がそこか\n　　ら去っても平気になる。\pさて、こういう状態をなんと呼ぶで\n　　しょう？」\
 
 \x00\x00\x00
-SEQ4  REF6 J\x00 REF_END3 
-LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 6\x03 REF_END2 
+SEQ6 REF6 J\x00 REF_END3 
+LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 6\x03 REF_END2 
 LOAD2 TextOn REF1 d\x03 REF_END1 
-LOAD7 
+LOAD8 
 CHOICE
 克服\n否認\n\l0,2,
 ENDCHOICE
 
 \x00
-SEQ4  REF6 \x80\x03 CALL1 6\x03 CALL3 d\x03 CALL2 6\x03 REF_END2 
+SEQ6 REF6 \x80\x03 CALL1 6\x03 CALL3 d\x03 CALL2 6\x03 REF_END2 
 LOAD3 TextClose REF2 \xe2\x03 REF_END1 
 END_FILE

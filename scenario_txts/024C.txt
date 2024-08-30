@@ -1,9 +1,9 @@
 START_FILE
 ?!\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\x9a\x1b\x00
-SEQ4 \x00\x1e\x06\x01 REF_END3 
+SEQ5 \x06\x01 REF_END3 
 LOAD6 .\\Data\\Script\\Bgm.Fob REF2  \x00 REF_END2 
 LOAD2 PlayCD REF1 J\x00 REF_END1 
-SEQ4 \x00\x1e\xc9\x00 REF_END3 
+SEQ5 \xc9\x00 REF_END3 
 LOAD6 .\\Data\\Script\\Bg.Fob REF3 \x80\x00 REF_END2 
 LOAD4 BgAutoFadeIn REF3 \xaa\x00 REF_END1 
 LOAD3 SCE024_001 REF6 \xce\x00 REF_END2 
@@ -16,8 +16,8 @@ SEQ1 \x8c\x01 SEQ2  5 SEQ3 \x03K\x00\x00
 　ザアザアアアアアアア……\
 
 \x00
-SEQ4  REF6 \x12\x01 REF_END3 
-LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 ^\x02 REF_END2 
+SEQ6 REF6 \x12\x01 REF_END3 
+LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 ^\x02 REF_END2 
 LOAD2 TextOn REF1 \x8c\x02 REF_END1 
 LOAD3 SCE024_002 REF6 \xa8\x02 REF_END2 
 SEQ1 \x8c\x01 SEQ2 $5 SEQ3 \x03\xb8\x00\x00
@@ -33,7 +33,7 @@ SEQ1 \x8c\x01 SEQ2 $5 SEQ3 \x03\xb8\x00\x00
 拓司は立ち上がって、部屋の出口とおぼしき扉の前まで歩いていっ\nた。\p鉄の扉だ。\p扉には取っ手はなく、外に出ることはできない。\nこれでは本当に牢屋だ……。\
 
 \x00\x00\x00
-SEQ4  REF6 \xec\x02 CALL1 ^\x02 CALL3 \x8c\x02 REF_END1 
+SEQ6 REF6 \xec\x02 CALL1 ^\x02 CALL3 \x8c\x02 REF_END1 
 LOAD3 SCE024_003 REF6 \x06\x06 REF_END2 
 SEQ1 \x8c\x01 SEQ2 (5 SEQ3 \x03\x93\x00\x00
  
@@ -47,8 +47,8 @@ SEQ1 \x8c\x01 SEQ2 (5 SEQ3 \x03\x93\x00\x00
 －－だからなんだっていうんだ？\
 
 \x00
-SEQ4  REF6 J\x06 CALL1 ^\x02 CALL3 \x8c\x02 REF_END1 
-SEQ4  REF_END2 \x0c\x02\x00\x00" REF7  \x00 REF_END2 
+SEQ6 REF6 J\x06 CALL1 ^\x02 CALL3 \x8c\x02 REF_END1 
+SEQ5 \x02\x00 CALL1  \x00 REF_END2 
 LOAD2 SeStop REF1 \xf6\x08 REF_END1 
 LOAD3 SCE024_004 REF6 \x12\t REF_END2 
 SEQ1 \x8c\x01 SEQ2 ,5 SEQ3 \x03\x9a\x00\x00
@@ -69,7 +69,7 @@ SEQ1 \x8c\x01 SEQ2 ,5 SEQ3 \x03\x9a\x00\x00
 まだ、この新しい世界に馴染んでいないだけなのだ。\p妄想世界を受\nけ入れたように、そのうちこの夢の世界も自分の一部になっていく\nのだろう……。\
 
 \x00
-SEQ4  REF6 V\t CALL1 ^\x02 CALL3 \x8c\x02 REF_END1 
+SEQ6 REF6 V\t CALL1 ^\x02 CALL3 \x8c\x02 REF_END1 
 LOAD3 SCE024_005 REF6 \xf8\x0b REF_END2 
 SEQ1 \x8c\x01 SEQ2 05 SEQ3 \x03c\x00\x00
  
@@ -80,7 +80,7 @@ SEQ1 \x8c\x01 SEQ2 05 SEQ3 \x03c\x00\x00
 そんなことを漠然と考えていると、どこからか小さな声が聞こえて\nきた。\
 
 \x00
-SEQ4  REF6 <\x0c CALL1 ^\x02 CALL3 \x8c\x02 REF_END1 
+SEQ6 REF6 <\x0c CALL1 ^\x02 CALL3 \x8c\x02 REF_END1 
 LOAD3 SCE024_006 REF6 \x02\x0e REF_END2 
 SEQ1 \x8c\x01 SEQ2 45 SEQ3 \x03[\x00\x00
  
@@ -93,7 +93,7 @@ SEQ1 \x8c\x01 SEQ2 45 SEQ3 \x03[\x00\x00
 \n声に、明るい響きがこもる。\
 
 \x00
-SEQ4  REF6 F\x0e CALL1 ^\x02 CALL3 \x8c\x02 REF_END1 
+SEQ6 REF6 F\x0e CALL1 ^\x02 CALL3 \x8c\x02 REF_END1 
 LOAD3 SCE024_007 REF6 \xec\x0f REF_END2 
 SEQ1 \x8c\x01 SEQ2 85 SEQ3 \x03R\x00\x00
  
@@ -107,7 +107,7 @@ SEQ1 \x8c\x01 SEQ2 85 SEQ3 \x03R\x00\x00
 声\n　「やつらよ！」\
 
 \x00\x00\x00
-SEQ4  REF6 0\x10 CALL1 ^\x02 CALL3 \x8c\x02 REF_END1 
+SEQ6 REF6 0\x10 CALL1 ^\x02 CALL3 \x8c\x02 REF_END1 
 LOAD3 SCE024_008 REF6 \xb2\x11 REF_END2 
 SEQ1 \x8c\x01 SEQ2 <5 SEQ3 \x03W\x00\x00
  
@@ -117,8 +117,8 @@ SEQ1 \x8c\x01 SEQ2 <5 SEQ3 \x03W\x00\x00
 \n声\n　「……ああ……やつら、あなたの記憶を……\p畜生畜生畜生畜生…\n　　…畜生！」\
 
 \x00
-SEQ4  REF6 \xf6\x11 CALL1 ^\x02 CALL3 \x8c\x02 REF_END1 
-SEQ4 \x00\x1e\xca\x00 CALL1 \x80\x00 CALL3 \xaa\x00 REF_END1 
+SEQ6 REF6 \xf6\x11 CALL1 ^\x02 CALL3 \x8c\x02 REF_END1 
+SEQ5 \xca\x00 CALL1 \x80\x00 CALL3 \xaa\x00 REF_END1 
 LOAD3 SCE024_009 REF6 \xc0\x13 REF_END2 
 SEQ1 \x8c\x01 SEQ2 @5 SEQ3 \x03\xb3\x00\x00
  
@@ -130,7 +130,7 @@ SEQ1 \x8c\x01 SEQ2 @5 SEQ3 \x03\xb3\x00\x00
 \n声はそこでピタリと止み、二度と聞こえてこなかった。\
 
 \x00
-SEQ4  REF6 \x04\x14 CALL1 ^\x02 CALL3 \x8c\x02 REF_END1 
+SEQ6 REF6 \x04\x14 CALL1 ^\x02 CALL3 \x8c\x02 REF_END1 
 LOAD3 SCE024_010 REF6 \n\x17 REF_END2 
 SEQ1 \x8c\x01 SEQ2 D5 SEQ3 \x03\xd3\x00\x00
  
@@ -146,9 +146,9 @@ SEQ1 \x8c\x01 SEQ2 D5 SEQ3 \x03\xd3\x00\x00
 \n拓司は強く願った。@
 /* SE22 一回再生（再生終わり待たずに…とかできます？）　*/\a2,0,22,0,がちゃり、とドアが開いた。\w\n/* SE22 とめる　*/\a4,0,0,0,\z
 \x00\x00
-SEQ4  REF6 N\x17 CALL1 ^\x02 CALL3 \x8c\x02 REF_END1 
-SEQ4 \x00\x1e\x01\x00 CALL1  \x00 CALL3 \xf6\x08 REF_END1 
-SEQ4  REF_END2 \x0c\x02\x00\x00" REF7  \x00 CALL3 \xf6\x08 REF_END1 
-SEQ4 \x00\x1e\xc8\x00 CALL1 \x80\x00 CALL3 \xaa\x00 CALL2 ^\x02 REF_END2 
+SEQ6 REF6 N\x17 CALL1 ^\x02 CALL3 \x8c\x02 REF_END1 
+SEQ5 \x01\x00 CALL1  \x00 CALL3 \xf6\x08 REF_END1 
+SEQ5 \x02\x00 CALL1  \x00 CALL3 \xf6\x08 REF_END1 
+SEQ5 \xc8\x00 CALL1 \x80\x00 CALL3 \xaa\x00 CALL2 ^\x02 REF_END2 
 LOAD3 TextClose REF2 |\x1b REF_END1 
 END_FILE

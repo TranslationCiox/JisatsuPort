@@ -1,6 +1,6 @@
 START_FILE
 x(\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\x92!\x00
-SEQ4 \x00\x1e\xc8\x00 REF_END3 
+SEQ5 \xc8\x00 REF_END3 
 LOAD6 .\\Data\\Script\\Bg.Fob REF3  \x00 REF_END2 
 LOAD4 BgAutoFadeIn REF3 J\x00 REF_END1 
 LOAD3 SCE044_001 REF6 n\x00 REF_END2 
@@ -11,8 +11,8 @@ SEQ1 \x8c\x01 SEQ2 `T SEQ3 \x03V\x00\x00
 \n錦城\n　「はいはい頑張って。男の子でしょ？　うふふ……」\n\p拓司\n　「勘弁っすよ……どこまで運ぶんですか？」@
 錦城\n　「理科準備室」\w\z
 \x00
-SEQ4  REF6 \xb2\x00 REF_END3 
-LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 *\x02 REF_END2 
+SEQ6 REF6 \xb2\x00 REF_END3 
+LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 *\x02 REF_END2 
 LOAD2 TextOn REF1 X\x02 REF_END1 
 LOAD3 SCE044_002 REF6 t\x02 REF_END2 
 SEQ1 \x8c\x01 SEQ2 dT SEQ3 \x03y\x00\x00
@@ -24,8 +24,8 @@ SEQ1 \x8c\x01 SEQ2 dT SEQ3 \x03y\x00\x00
 \n錦城は鍵を使って理科実験室のドアを開け、拓司をそこに導き入\nれた。@
 締め切られていた実験室の中にはむっと熱気がこもり、息苦しい\nぐらいだった。\w\z
 \x00
-SEQ4  REF6 \xb8\x02 CALL1 *\x02 CALL3 X\x02 REF_END1 
-SEQ4 \x00\x1e\x0f\x00 CALL1  \x00 CALL3 J\x00 REF_END1 
+SEQ6 REF6 \xb8\x02 CALL1 *\x02 CALL3 X\x02 REF_END1 
+SEQ5 \x0f\x00 CALL1  \x00 CALL3 J\x00 REF_END1 
 LOAD3 SCE044_003 REF6 \n\x05 REF_END2 
 SEQ1 \x8c\x01 SEQ2 hT SEQ3 \x03o\x00\x00
  
@@ -39,7 +39,7 @@ SEQ1 \x8c\x01 SEQ2 hT SEQ3 \x03o\x00\x00
 錦城\n　「プリント。紙の束が詰まってるのよ」@
 拓司\n　「はあ。でも、いいんですか、こんなところに荷物置いて」\w\z
 \x00
-SEQ4  REF6 N\x05 CALL1 *\x02 CALL3 X\x02 REF_END1 
+SEQ6 REF6 N\x05 CALL1 *\x02 CALL3 X\x02 REF_END1 
 LOAD3 SCE044_004 REF6 D\x07 REF_END2 
 SEQ1 \x8c\x01 SEQ2 lT SEQ3 \x03L\x00\x00
  
@@ -48,8 +48,8 @@ SEQ1 \x8c\x01 SEQ2 lT SEQ3 \x03L\x00\x00
 錦城\n　「それにね、私、ここ、嫌いじゃないのよ」@
 拓司\n　「え？」\w\z
 \x00\x00\x00
-SEQ4  REF6 \x88\x07 CALL1 *\x02 CALL3 X\x02 REF_END1 
-SEQ4 \x00\x1e\xc8\x00 CALL1  \x00 CALL3 J\x00 REF_END1 
+SEQ6 REF6 \x88\x07 CALL1 *\x02 CALL3 X\x02 REF_END1 
+SEQ5 \xc8\x00 CALL1  \x00 CALL3 J\x00 REF_END1 
 LOAD3 SCE044_005 REF6 &\t REF_END2 
 SEQ1 \x8c\x01 SEQ2 pT SEQ3 \x03?\x00\x00
  
@@ -58,7 +58,7 @@ SEQ1 \x8c\x01 SEQ2 pT SEQ3 \x03?\x00\x00
 部屋の中の熱気が、風に圧されて追い出されてゆく。@
 風は、錦城の長い髪をさらさらと揺らして、やがてぴたりと止ん\nだ。\w\z
 \x00
-SEQ4  REF6 j\t CALL1 *\x02 CALL3 X\x02 REF_END1 
+SEQ6 REF6 j\t CALL1 *\x02 CALL3 X\x02 REF_END1 
 LOAD3 SCE044_006 REF6 \xa0\n REF_END2 
 SEQ1 \x8c\x01 SEQ2 tT SEQ3 \x03g\x00\x00
  
@@ -72,7 +72,7 @@ SEQ1 \x8c\x01 SEQ2 tT SEQ3 \x03g\x00\x00
 錦城\n　「うーん……じゃあ、ちょっとドア閉めてきてくれる？@
 　　ちょっと恥ずかしい話だから」\w\z
 \x00
-SEQ4  REF6 \xe4\n CALL1 *\x02 CALL3 X\x02 REF_END1 
+SEQ6 REF6 \xe4\n CALL1 *\x02 CALL3 X\x02 REF_END1 
 LOAD6 .\\Data\\Script\\Bgm.Fob REF2 \xba\x0c REF_END2 
 LOAD2 StopCD REF1 \xe4\x0c REF_END1 
 LOAD3 SCE044_007 REF6 \x00\r REF_END2 
@@ -84,7 +84,7 @@ SEQ1 \x8c\x01 SEQ2 xT SEQ3 \x03c\x00\x00
 振り返ると錦城は、実験用の大きなテーブルに腰を下ろしている\n。@
 拓司はどこに座るべきか一瞬悩んだが、離れすぎるのもおかしい\nような気がして、錦城の向かいのテーブルに同じように腰を下ろ\nした。\w\z
 \x00
-SEQ4  REF6 D\r CALL1 *\x02 CALL3 X\x02 REF_END1 
+SEQ6 REF6 D\r CALL1 *\x02 CALL3 X\x02 REF_END1 
 LOAD3 SCE044_008 REF6 \n\x0f REF_END2 
 SEQ1 \x8c\x01 SEQ2 |T SEQ3 \x03}\x00\x00
  
@@ -96,7 +96,7 @@ SEQ1 \x8c\x01 SEQ2 |T SEQ3 \x03}\x00\x00
 錦城\n　「そうね。\p青春時代。\pそれでね、男の子と初めてキスした\n　　のが、実験室だったの」@
 拓司\n　「……」\w\z
 \x00\x00\x00
-SEQ4  REF6 N\x0f CALL1 *\x02 CALL3 X\x02 REF_END1 
+SEQ6 REF6 N\x0f CALL1 *\x02 CALL3 X\x02 REF_END1 
 LOAD3 SCE044_009 REF6 |\x11 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \x80T SEQ3 \x03\x94\x00\x00
  
@@ -108,7 +108,7 @@ SEQ1 \x8c\x01 SEQ2 \x80T SEQ3 \x03\x94\x00\x00
 錦城\n　「しばらく夢中で話してた。\pそうしたら、突然、ぱたっと話\n　　が途切れて……\p本当にぱったりと途切れちゃって。@
 　　どうしよう、ってドキドキし始めちゃってね、こう、俯いて\n　　いたら、その子がこうやって立ち上がって－－」\w\z
 \x00\x00\x00
-SEQ4  REF6 \xc0\x11 CALL1 *\x02 CALL3 X\x02 REF_END1 
+SEQ6 REF6 \xc0\x11 CALL1 *\x02 CALL3 X\x02 REF_END1 
 LOAD3 SCE044_010 REF6 J\x14 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \x84T SEQ3 \x038\x00\x00
  
@@ -118,7 +118,7 @@ SEQ1 \x8c\x01 SEQ2 \x84T SEQ3 \x038\x00\x00
 \n錦城\n　「－－キスしたの」@
 拓司\n　「……」\w\z
 \x00\x00\x00
-SEQ4  REF6 \x8e\x14 CALL1 *\x02 CALL3 X\x02 REF_END1 
+SEQ6 REF6 \x8e\x14 CALL1 *\x02 CALL3 X\x02 REF_END1 
 LOAD3 SCE044_011 REF6 \xa8\x15 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \x88T SEQ3 \x03g\x00\x00
  
@@ -130,7 +130,7 @@ SEQ1 \x8c\x01 SEQ2 \x88T SEQ3 \x03g\x00\x00
 沈黙に耐えかねた拓司がいいかけたときだった。@
 錦城の手がすうっと延び、拓司の腿のあたりにそっと重ねられ\nた。\w\z
 \x00
-SEQ4  REF6 \xec\x15 CALL1 *\x02 CALL3 X\x02 REF_END1 
+SEQ6 REF6 \xec\x15 CALL1 *\x02 CALL3 X\x02 REF_END1 
 LOAD3 SCE044_012 REF6 \xc2\x17 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \x8cT SEQ3 \x03<\x00\x00
  
@@ -141,7 +141,7 @@ SEQ1 \x8c\x01 SEQ2 \x8cT SEQ3 \x03<\x00\x00
 拓司\n　「いえ……はあ……まあ、ご想像にお任せします」@
 錦城\n　「ふふ……人の経験は聞けても、自分の経験は話せない？」\w\z
 \x00\x00\x00
-SEQ4  REF6 \x06\x18 CALL1 *\x02 CALL3 X\x02 REF_END1 
+SEQ6 REF6 \x06\x18 CALL1 *\x02 CALL3 X\x02 REF_END1 
 LOAD3 SCE044_013 REF6 0\x19 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \x90T SEQ3 \x03^\x00\x00
  
@@ -155,7 +155,7 @@ SEQ1 \x8c\x01 SEQ2 \x90T SEQ3 \x03^\x00\x00
 錦城\n　「それじゃあ……私のこと、おばさんだと思う？」@
 拓司\n　「思わないですよ」\w\z
 \x00
-SEQ4  REF6 t\x19 CALL1 *\x02 CALL3 X\x02 REF_END1 
+SEQ6 REF6 t\x19 CALL1 *\x02 CALL3 X\x02 REF_END1 
 LOAD3 SCE044_014 REF6 &\x1b REF_END2 
 SEQ1 \x8c\x01 SEQ2 \x94T SEQ3 \x03:\x00\x00
  
@@ -164,7 +164,7 @@ SEQ1 \x8c\x01 SEQ2 \x94T SEQ3 \x03:\x00\x00
 実際は２０代後半なのだろうが、半ばくらいにしか見えない。@
 そしていま、柔らかな笑みを浮かべている錦城は、２０歳そこそ\nこといわれても信じてしまうような若々しさがあった。\w\z
 \x00\x00\x00
-SEQ4  REF6 j\x1b CALL1 *\x02 CALL3 X\x02 REF_END1 
+SEQ6 REF6 j\x1b CALL1 *\x02 CALL3 X\x02 REF_END1 
 LOAD3 SCE044_015 REF6 \x8c\x1c REF_END2 
 SEQ1 \x8c\x01 SEQ2 \x98T SEQ3 \x03T\x00\x00
  
@@ -176,7 +176,7 @@ SEQ1 \x8c\x01 SEQ2 \x98T SEQ3 \x03T\x00\x00
 錦城\n　「本当かしら？」@
 拓司\n　「本当ですってば」\w\z
 \x00
-SEQ4  REF6 \xd0\x1c CALL1 *\x02 CALL3 X\x02 REF_END1 
+SEQ6 REF6 \xd0\x1c CALL1 *\x02 CALL3 X\x02 REF_END1 
 LOAD3 SCE044_016 REF6 Z\x1e REF_END2 
 SEQ1 \x8c\x01 SEQ2 \x9cT SEQ3 \x034\x00\x00
  
@@ -186,7 +186,7 @@ SEQ1 \x8c\x01 SEQ2 \x9cT SEQ3 \x034\x00\x00
 \n錦城は冗談っぽく笑っている。@
 拓司は頭を掻いて、いった。\w\z
 \x00
-SEQ4  REF6 \x9e\x1e CALL1 *\x02 CALL3 X\x02 REF_END1 
+SEQ6 REF6 \x9e\x1e CALL1 *\x02 CALL3 X\x02 REF_END1 
 LOAD3 SCE044_017 REF6 \xa8\x1f REF_END2 
 SEQ1 \x8c\x01 SEQ2 \xa0T SEQ3 \x03<\x00\x00
  
@@ -196,7 +196,7 @@ SEQ1 \x8c\x01 SEQ2 \xa0T SEQ3 \x03<\x00\x00
 錦城\n　「じゃあ、先生のこと考えて、オナニーしたこと、ある？」@
 拓司\n　「……」\w\z
 \x00
-SEQ4  REF6 \xec\x1f CALL1 *\x02 CALL3 X\x02 CALL2 *\x02 REF_END2 
+SEQ6 REF6 \xec\x1f CALL1 *\x02 CALL3 X\x02 CALL2 *\x02 REF_END2 
 LOAD3 TextClose REF2 "! REF_END1 
 LOAD0 .\\Data\\Script\\Scenario\\044subC.Fob REF1 B! REF_END2 
 LOAD2 start REF2 x! REF_END1 

@@ -10,8 +10,8 @@ SEQ1 \x8c\x01 SEQ2 \xe0G SEQ3 \x03e\x00\x00
 　　鍵はかかっていなかったの？」@
 拓司\n　「……」\w\z
 \x00\x00
-SEQ4  REF6 J\x00 REF_END3 
-LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xfe\x01 REF_END2 
+SEQ6 REF6 J\x00 REF_END3 
+LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 \xfe\x01 REF_END2 
 LOAD2 TextOn REF1 ,\x02 REF_END1 
 LOAD3 SCE036_002 REF6 H\x02 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \xe4G SEQ3 \x03\x81\x00\x00
@@ -23,7 +23,7 @@ SEQ1 \x8c\x01 SEQ2 \xe4G SEQ3 \x03\x81\x00\x00
 写真に撮って脅迫して……授業中にリモコンローターでやってや\nろう……\p１日最低５人は学生を誘惑するように命令し、セック\nス中毒にして……\p早桃とレズらせるのもいいな……\p早桃にペニ\nスバンドを着けさせて、目の前で犯させよう……@
 そして……？\w\z
 \x00
-SEQ4  REF6 \x8c\x02 CALL1 \xfe\x01 CALL3 ,\x02 REF_END1 
+SEQ6 REF6 \x8c\x02 CALL1 \xfe\x01 CALL3 ,\x02 REF_END1 
 LOAD3 SCE036_003 REF6 \xca\x04 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \xe8G SEQ3 \x03z\x00\x00
  
@@ -35,7 +35,7 @@ SEQ1 \x8c\x01 SEQ2 \xe8G SEQ3 \x03z\x00\x00
 自分でもすでにコントロールできないほどに、妄想世界が膨れあ\nがっている。@
 すべてを押しつぶしてしまいそうなくらいに。\w\z
 
-SEQ4  REF6 \x0e\x05 CALL1 \xfe\x01 CALL3 ,\x02 REF_END1 
+SEQ6 REF6 \x0e\x05 CALL1 \xfe\x01 CALL3 ,\x02 REF_END1 
 LOAD3 SCE036_004 REF6 0\x07 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \xecG SEQ3 \x03g\x00\x00
  
@@ -48,7 +48,7 @@ SEQ1 \x8c\x01 SEQ2 \xecG SEQ3 \x03g\x00\x00
 もしかしたらこれも妄想か、あるいは夢なのかもしれないじゃな\nいか。@
 目が覚めると自宅のベッドにいて、天井を見上げているのかもし\nれないじゃないか……。\w\z
 \x00\x00\x00
-SEQ4  REF6 t\x07 CALL1 \xfe\x01 CALL3 ,\x02 REF_END1 
+SEQ6 REF6 t\x07 CALL1 \xfe\x01 CALL3 ,\x02 REF_END1 
 LOAD6 .\\Data\\Script\\Bgm.Fob REF2 J\t REF_END2 
 LOAD2 StopCD REF1 t\t REF_END1 
 LOAD3 SCE036_005 REF6 \x90\t REF_END2 
@@ -64,6 +64,6 @@ SEQ1 \x8c\x01 SEQ2 \xf0G SEQ3 \x03n\x00\x00
 　　……どう？」@
 \n\a2,-1,7,1,\a6,0,0,0,錦城がぱちりとウインクした。\w\z
 \x00\x00
-SEQ4  REF6 \xd4\t CALL1 \xfe\x01 CALL3 ,\x02 CALL2 \xfe\x01 REF_END2 
+SEQ6 REF6 \xd4\t CALL1 \xfe\x01 CALL3 ,\x02 CALL2 \xfe\x01 REF_END2 
 LOAD3 TextClose REF2 \xd2\x0b REF_END1 
 END_FILE

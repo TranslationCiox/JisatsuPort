@@ -1,6 +1,6 @@
 START_FILE
 \xfb\x08\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\x14\x07\x00
-SEQ4 \x00\x1e\x07\x01 REF_END3 
+SEQ5 \x07\x01 REF_END3 
 LOAD6 .\\Data\\Script\\Bgm.Fob REF2  \x00 REF_END2 
 LOAD2 PlayCD REF1 J\x00 REF_END1 
 LOAD3 SCE033_001 REF6 f\x00 REF_END2 
@@ -9,8 +9,8 @@ SEQ1 \x8c\x01 SEQ2 PF SEQ3 \x03&\x00\x00
 拓司の中に、今日の昼食はどうするのか、という紅葉の言葉が引\nっかかっていた。\p拓司は、教室に引き返し、弁当をかじっている\n紅葉に声をかけた。\
 
 \x00\x00\x00
-SEQ4  REF6 \xaa\x00 REF_END3 
-LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 b\x01 REF_END2 
+SEQ6 REF6 \xaa\x00 REF_END3 
+LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 b\x01 REF_END2 
 LOAD2 TextOn REF1 \x90\x01 REF_END1 
 LOAD3 SCE033_002 REF6 \xac\x01 REF_END2 
 SEQ1 \x8c\x01 SEQ2 TF SEQ3 \x03J\x00\x00
@@ -24,7 +24,7 @@ SEQ1 \x8c\x01 SEQ2 TF SEQ3 \x03J\x00\x00
 \n紅葉はあっさりといった。\pなんだか拍子抜けするようないいかた\nだった。\
 
 \x00\x00\x00
-SEQ4  REF6 \xf0\x01 CALL1 b\x01 CALL3 \x90\x01 REF_END1 
+SEQ6 REF6 \xf0\x01 CALL1 b\x01 CALL3 \x90\x01 REF_END1 
 LOAD3 SCE033_003 REF6 R\x03 REF_END2 
 SEQ1 \x8c\x01 SEQ2 XF SEQ3 \x03H\x00\x00
  
@@ -35,7 +35,7 @@ SEQ1 \x8c\x01 SEQ2 XF SEQ3 \x03H\x00\x00
 紅葉\n　「ちょっと教室じゃ……アレだから。\pいいでしょ、つきあって\n　　よ」\
 
 \x00
-SEQ4  REF6 \x96\x03 CALL1 b\x01 CALL3 \x90\x01 CALL2  \x00 REF_END2 
+SEQ6 REF6 \x96\x03 CALL1 b\x01 CALL3 \x90\x01 CALL2  \x00 REF_END2 
 LOAD2 StopCD REF1 \xfc\x04 REF_END1 
 LOAD3 SCE033_004 REF6 \x18\x05 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \\F SEQ3 \x03U\x00\x00
@@ -46,6 +46,6 @@ SEQ1 \x8c\x01 SEQ2 \\F SEQ3 \x03U\x00\x00
 \n紅葉\n　「他のコたちに気づかれるとナンだから……先に行ってくれな\n　　い？\p　１０分したら、行く」\
 
 \x00
-SEQ4  REF6 \\\x05 CALL1 b\x01 CALL3 \x90\x01 CALL2 b\x01 REF_END2 
+SEQ6 REF6 \\\x05 CALL1 b\x01 CALL3 \x90\x01 CALL2 b\x01 REF_END2 
 LOAD3 TextClose REF2 \xf6\x06 REF_END1 
 END_FILE

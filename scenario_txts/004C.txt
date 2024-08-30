@@ -2,14 +2,14 @@ START_FILE
 d\x03\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x80\x044\x01\x00\x00\x00h\x02\x00
 LOAD3 SCE004_001 REF6 \x06\x00 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \xe0\x15 SEQ3 
-LOAD7 .\\Data\\Script\\TextFunc.fob REF1 J\x00 REF_END2 
+LOAD8 .\\Data\\Script\\TextFunc.fob REF1 J\x00 REF_END2 
 LOAD6 CheckNormalMessageSkip REF1 x\x00 REF_END1 
-LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xa4\x00 REF_END2 
+LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 \xa4\x00 REF_END2 
 LOAD5 TextWindowOffDirect REF7 \xd2\x00 REF_END1 
-SEQ4 \x00\x1e,\x01 REF_END3 
+SEQ5 ,\x01 REF_END3 
 LOAD6 .\\Data\\Script\\Bg.Fob REF3 \x14\x01 REF_END2 
 LOAD2 BgOn REF3 >\x01 REF_END1 
-SEQ4 \x00\x1e\x0b\x01 REF_END3 
+SEQ5 \x0b\x01 REF_END3 
 LOAD6 .\\Data\\Script\\Bgm.Fob REF2 t\x01 REF_END2 
 LOAD2 PlayCD REF1 \x9e\x01 CALL2 J\x00 REF_END2 
 LOAD2 WaitKey REF7 \xc6\x01 CALL2 t\x01 REF_END2 

@@ -12,8 +12,8 @@ SEQ1 \x8c\x01 SEQ2 \x90e SEQ3 \x03\x98\x00\x00
 　小声で、解説をはじめる。\
 
 \x00
-SEQ4  REF6 J\x00 REF_END3 
-LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xca\x02 REF_END2 
+SEQ6 REF6 J\x00 REF_END3 
+LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 \xca\x02 REF_END2 
 LOAD2 TextOn REF1 \xf8\x02 REF_END1 
 LOAD3 SCE055_002 REF6 \x14\x03 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \x94e SEQ3 \x03\xcd\x00\x00
@@ -25,7 +25,7 @@ SEQ1 \x8c\x01 SEQ2 \x94e SEQ3 \x03\xcd\x00\x00
 拓司\n　「……」\
 
 \x00
-SEQ4  REF6 X\x03 CALL1 \xca\x02 CALL3 \xf8\x02 REF_END1 
+SEQ6 REF6 X\x03 CALL1 \xca\x02 CALL3 \xf8\x02 REF_END1 
 LOAD3 SCE055_003 REF6 \xc6\x06 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \x98e SEQ3 \x03\x80\x00\x00
  
@@ -39,7 +39,7 @@ SEQ1 \x8c\x01 SEQ2 \x98e SEQ3 \x03\x80\x00\x00
 \n早桃\n　「怖い……怖い……」\
 
 \x00
-SEQ4  REF6 \n\x07 CALL1 \xca\x02 CALL3 \xf8\x02 REF_END1 
+SEQ6 REF6 \n\x07 CALL1 \xca\x02 CALL3 \xf8\x02 REF_END1 
 LOAD3 SCE055_004 REF6 D\t REF_END2 
 SEQ1 \x8c\x01 SEQ2 \x9ce SEQ3 \x03t\x00\x00
  
@@ -51,7 +51,7 @@ SEQ1 \x8c\x01 SEQ2 \x9ce SEQ3 \x03t\x00\x00
 \n学生\n　「そこでだ！\p　俺たちが背中を押してやろうと思う！\p　もう生\n　　きていてもしょうがないと思えるくらいのことを、虎菱早桃\n　　にしてやりたいと思う！」\
 
 \x00\x00\x00
-SEQ4  REF6 \x88\t CALL1 \xca\x02 CALL3 \xf8\x02 REF_END1 
+SEQ6 REF6 \x88\t CALL1 \xca\x02 CALL3 \xf8\x02 REF_END1 
 LOAD3 SCE055_005 REF6 \x92\x0b REF_END2 
 SEQ1 \x8c\x01 SEQ2 \x9ce SEQ3 \x03A\x00\x00
  
@@ -59,6 +59,6 @@ SEQ1 \x8c\x01 SEQ2 \x9ce SEQ3 \x03A\x00\x00
 \n学生\n　「男子がこれだけの人数いると、さすがに全員やるのは無理だ\n　　ろ？\p　それに、こんなウザキャラに、おれらのチ○ポなんか\n　　もったいねえよ。\pそこでだ……！」\
 
 \x00
-SEQ4  REF6 \xd6\x0b CALL1 \xca\x02 CALL3 \xf8\x02 CALL2 \xca\x02 REF_END2 
+SEQ6 REF6 \xd6\x0b CALL1 \xca\x02 CALL3 \xf8\x02 CALL2 \xca\x02 REF_END2 
 LOAD3 TextClose REF2  \r REF_END1 
 END_FILE

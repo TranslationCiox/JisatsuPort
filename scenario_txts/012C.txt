@@ -6,10 +6,10 @@ SEQ1 \x8c\x01 SEQ2 `" SEQ3 \x03\x0e\x00\x00
 \n\n\n\n\n\n　　　　　　　　　　　『通学路』\
 
 \x00\x00\x00
-SEQ4  REF6 J\x00 REF_END3 
-LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xa2\x00 REF_END2 
+SEQ6 REF6 J\x00 REF_END3 
+LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 \xa2\x00 REF_END2 
 LOAD2 TextOn REF1 \xd0\x00 REF_END1 
-SEQ4 \x00\x1e\x05\x01 REF_END3 
+SEQ5 \x05\x01 REF_END3 
 LOAD6 .\\Data\\Script\\Bgm.Fob REF2 \x06\x01 REF_END2 
 LOAD2 PlayCD REF1 0\x01 REF_END1 
 LOAD3 SCE012_002 REF6 L\x01 REF_END2 
@@ -27,8 +27,8 @@ SEQ1 \x8c\x01 SEQ2 d" SEQ3 \x03\x97\x00\x00
 　そして二週間前、偶然ドアの隙間から見てしまった光景は、完全\n　に彼の我慢をうち砕いた。\
 
 \x00
-SEQ4  REF6 \x90\x01 CALL1 \xa2\x00 CALL3 \xd0\x00 REF_END1 
-SEQ4 \x00\x1eL\x00 REF_END3 
+SEQ6 REF6 \x90\x01 CALL1 \xa2\x00 CALL3 \xd0\x00 REF_END1 
+SEQ5 L\x00 REF_END3 
 LOAD6 .\\Data\\Script\\Bg.Fob REF3 @\x04 REF_END2 
 LOAD4 BgAutoFadeIn REF3 j\x04 REF_END1 
 LOAD3 SCE012_003 REF6 \x8e\x04 REF_END2 
@@ -44,7 +44,7 @@ SEQ1 \x8c\x01 SEQ2 h" SEQ3 \x03\x7f\x00\x00
 　あるいはそうした光景を意識的に作り上げて。\
 
 \x00\x00\x00
-SEQ4  REF6 \xd2\x04 CALL1 \xa2\x00 CALL3 \xd0\x00 REF_END1 
+SEQ6 REF6 \xd2\x04 CALL1 \xa2\x00 CALL3 \xd0\x00 REF_END1 
 LOAD3 SCE012_004 REF6 \x08\x07 REF_END2 
 SEQ1 \x8c\x01 SEQ2 l" SEQ3 \x03\x97\x00\x00
  
@@ -59,8 +59,8 @@ SEQ1 \x8c\x01 SEQ2 l" SEQ3 \x03\x97\x00\x00
 　いつものように早桃を犯している最中、はっと、それが夢ではな\n　いことに気づくのではないかと。\
 
 \x00\x00\x00
-SEQ4  REF6 L\x07 CALL1 \xa2\x00 CALL3 \xd0\x00 REF_END1 
-SEQ4 \x00\x1e\xc8\x00 CALL1 @\x04 CALL3 j\x04 CALL2 \x06\x01 REF_END2 
+SEQ6 REF6 L\x07 CALL1 \xa2\x00 CALL3 \xd0\x00 REF_END1 
+SEQ5 \xc8\x00 CALL1 @\x04 CALL3 j\x04 CALL2 \x06\x01 REF_END2 
 LOAD2 StopCD REF1 "\n REF_END1 
 LOAD3 SCE012_005 REF6 >\n REF_END2 
 SEQ1 \x8c\x01 SEQ2 p" SEQ3 \x03B\x00\x00
@@ -74,7 +74,7 @@ SEQ1 \x8c\x01 SEQ2 p" SEQ3 \x03B\x00\x00
 早桃\n　「上村さんでしょ？」\
 
 \x00
-SEQ4  REF6 \x82\n CALL1 \xa2\x00 CALL3 \xd0\x00 REF_END1 
+SEQ6 REF6 \x82\n CALL1 \xa2\x00 CALL3 \xd0\x00 REF_END1 
 LOAD3 SCE012_006 REF6 \xc4\x0b REF_END2 
 SEQ1 \x8c\x01 SEQ2 t" SEQ3 \x03v\x00\x00
  
@@ -87,7 +87,7 @@ SEQ1 \x8c\x01 SEQ2 t" SEQ3 \x03v\x00\x00
 拓司\n　「ああ。ブン殴ってでもやめさせてやる」\
 
 \x00
-SEQ4  REF6 \x08\x0c CALL1 \xa2\x00 CALL3 \xd0\x00 REF_END1 
+SEQ6 REF6 \x08\x0c CALL1 \xa2\x00 CALL3 \xd0\x00 REF_END1 
 LOAD3 SCE012_007 REF6 \x1a\x0e REF_END2 
 SEQ1 \x8c\x01 SEQ2 x" SEQ3 \x035\x00\x00
  
@@ -98,7 +98,7 @@ SEQ1 \x8c\x01 SEQ2 x" SEQ3 \x035\x00\x00
 早桃\n　「……そうかもね」\
 
 \x00
-SEQ4  REF6 ^\x0e CALL1 \xa2\x00 CALL3 \xd0\x00 REF_END1 
+SEQ6 REF6 ^\x0e CALL1 \xa2\x00 CALL3 \xd0\x00 REF_END1 
 LOAD3 SCE012_008 REF6 l\x0f REF_END2 
 SEQ1 \x8c\x01 SEQ2 |" SEQ3 \x03\xa2\x00\x00
  
@@ -110,7 +110,7 @@ SEQ1 \x8c\x01 SEQ2 |" SEQ3 \x03\xa2\x00\x00
 拓司\n　「いや、２歳はデカいって。\p運動系の部活の連中とかさ、今年\n　　の新人はナニ考えてるの全然わからない、っていつもぼやいて\n　　るぜ。\p礼儀とか、常識とか、もう、全然おれたちとは違うっ\n　　て。\p説教してもポカンとされるだけで、まるで宇宙人に地\n　　球の掟を教えてるみたいだって」\
 
 \x00
-SEQ4  REF6 \xb0\x0f CALL1 \xa2\x00 CALL3 \xd0\x00 REF_END1 
+SEQ6 REF6 \xb0\x0f CALL1 \xa2\x00 CALL3 \xd0\x00 REF_END1 
 LOAD3 SCE012_009 REF6 r\x12 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \x80" SEQ3 \x03<\x00\x00
  
@@ -121,15 +121,15 @@ SEQ1 \x8c\x01 SEQ2 \x80" SEQ3 \x03<\x00\x00
 早桃\n　「……」\
 
 \x00\x00\x00
-SEQ4  REF6 \xb6\x12 CALL1 \xa2\x00 CALL3 \xd0\x00 REF_END1 
+SEQ6 REF6 \xb6\x12 CALL1 \xa2\x00 CALL3 \xd0\x00 REF_END1 
 LOAD3 SCE012_010 REF6 \xe0\x13 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \x84" SEQ3  REF7 \xa2\x00 REF_END2 
 LOAD5 TextWindowOffDirect REF7 0\x14 REF_END1 
-SEQ4 \x00\x1e\x00\x00\x00 REF_END3  \x1e\x04\x00\x00\r\x00\x00\x1e\x14\x00 REF_END3  \x1e\x08\x00\x00\r\x00\x00\x1e\x00\x00\x00 CALL1 \x06\x01 REF_END2 
+SEQ5 \x00\x00\x00 REF_END3  \x1e\x04\x00\x00\r\x00\x00\x1e\x14\x00 REF_END3  \x1e\x08\x00\x00\r\x00\x00\x1e\x00\x00\x00 CALL1 \x06\x01 REF_END2 
 LOAD3 SePlayEx REF3 \xb2\x14 REF_END1 
-SEQ4 \x00\x1e\x01\x00 CALL1 @\x04 REF_END2 
+SEQ5 \x01\x00 CALL1 @\x04 REF_END2 
 LOAD4 BgNormalFadeIn REF1 \xf8\x14 REF_END1 
-SEQ4 \x00\x1e\x07\x01 CALL1 \x06\x01 CALL3 0\x01 CALL2 \xa2\x00 REF_END2 
+SEQ5 \x07\x01 CALL1 \x06\x01 CALL3 0\x01 CALL2 \xa2\x00 REF_END2 
 LOAD4 TextWindowOn REF3 \\\x15 REF_END1 \x03\x9d\x00\x00
  
 紅葉\n　「おはよーっ！」@
@@ -143,7 +143,7 @@ LOAD4 TextWindowOn REF3 \\\x15 REF_END1 \x03\x9d\x00\x00
 　そんな印象がある。\
 
 \x00\x00\x00
-SEQ4  REF6 \x80\x15 CALL1 \xa2\x00 CALL3 \xd0\x00 REF_END1 
+SEQ6 REF6 \x80\x15 CALL1 \xa2\x00 CALL3 \xd0\x00 REF_END1 
 LOAD3 SCE012_011 REF6 .\x18 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \x88" SEQ3 \x03\xa8\x00\x00
  
@@ -157,7 +157,7 @@ SEQ1 \x8c\x01 SEQ2 \x88" SEQ3 \x03\xa8\x00\x00
 \n　そこまで言ったときだった。早桃がおずおずといった。\
 
 \x00\x00\x00
-SEQ4  REF6 r\x18 CALL1 \xa2\x00 CALL3 \xd0\x00 REF_END1 
+SEQ6 REF6 r\x18 CALL1 \xa2\x00 CALL3 \xd0\x00 REF_END1 
 LOAD3 SCE012_012 REF6 L\x1b REF_END2 
 SEQ1 \x8c\x01 SEQ2 \x8c" SEQ3 \x033\x00\x00
  
@@ -165,18 +165,18 @@ SEQ1 \x8c\x01 SEQ2 \x8c" SEQ3 \x033\x00\x00
 紅葉\n　「早桃ちゃん？」\
 
 \x00\x00\x00
-SEQ4  REF6 \x90\x1b CALL1 \xa2\x00 CALL3 \xd0\x00 REF_END1 
+SEQ6 REF6 \x90\x1b CALL1 \xa2\x00 CALL3 \xd0\x00 REF_END1 
 LOAD3 SCE012_013 REF6 \x96\x1c REF_END2 
 SEQ1 \x8c\x01 SEQ2 \x90" SEQ3 
-LOAD7 .\\Data\\Script\\TextFunc.fob REF1 \xda\x1c REF_END2 
+LOAD8 .\\Data\\Script\\TextFunc.fob REF1 \xda\x1c REF_END2 
 LOAD6 CheckNormalMessageSkip REF1 \x08\x1d REF_END1 
-SEQ4 \x00\x1e\x00\x00\x00 REF_END3  \x1e\x04\x00\x00\r\x00\x00\x1e\x15\x00 REF_END3  \x1e\x08\x00\x00\r\x00\x00\x1e\x00\x00\x00 CALL1 \x06\x01 CALL3 \xb2\x14 CALL2 \xa2\x00 REF_END2 
+SEQ5 \x00\x00\x00 REF_END3  \x1e\x04\x00\x00\r\x00\x00\x1e\x15\x00 REF_END3  \x1e\x08\x00\x00\r\x00\x00\x1e\x00\x00\x00 CALL1 \x06\x01 CALL3 \xb2\x14 CALL2 \xa2\x00 REF_END2 
 LOAD5 UpdateScenarioRead REF1 \xa8\x1d REF_END1 \x03\x0b\x00\x00
 CHOICE
 早桃を追う\n紅葉と登校する\n\l0,2,
 ENDCHOICE
 
 \x00
-SEQ4  REF6 \xd0\x1d CALL1 \xa2\x00 CALL3 \xd0\x00 CALL2 \xa2\x00 REF_END2 
+SEQ6 REF6 \xd0\x1d CALL1 \xa2\x00 CALL3 \xd0\x00 CALL2 \xa2\x00 REF_END2 
 LOAD3 TextClose REF2 B\x1e REF_END1 
 END_FILE

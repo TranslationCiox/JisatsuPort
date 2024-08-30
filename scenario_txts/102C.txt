@@ -6,8 +6,8 @@ SEQ1 \x8c\x01 SEQ2 \x00\xaf SEQ3 \x03\x11\x00\x00
 \n\n\n\n\n\n\n\n\n\n　　　　　　　　　　　　　『５日目』\
 
 \x00\x00\x00
-SEQ4  REF6 J\x00 REF_END3 
-LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xae\x00 REF_END2 
+SEQ6 REF6 J\x00 REF_END3 
+LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 \xae\x00 REF_END2 
 LOAD2 TextOn REF1 \xdc\x00 REF_END1 
 LOAD3 SCE102_002 REF6 \xf8\x00 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \x04\xaf SEQ3 \x03\xa5\x00\x00
@@ -21,8 +21,8 @@ SEQ1 \x8c\x01 SEQ2 \x04\xaf SEQ3 \x03\xa5\x00\x00
 \nカンナは肩をすくめただけで無言だった。\
 
 \x00\x00
-SEQ4  REF6 <\x01 CALL1 \xae\x00 CALL3 \xdc\x00 REF_END1 
-SEQ4 \x00\x1e\xc8\x00 REF_END3 
+SEQ6 REF6 <\x01 CALL1 \xae\x00 CALL3 \xdc\x00 REF_END1 
+SEQ5 \xc8\x00 REF_END3 
 LOAD6 .\\Data\\Script\\Bg.Fob REF3 $\x04 REF_END2 
 LOAD4 BgAutoFadeIn REF3 N\x04 REF_END1 
 LOAD3 SCE102_003 REF6 r\x04 REF_END2 
@@ -40,7 +40,7 @@ SEQ1 \x8c\x01 SEQ2 \x08\xaf SEQ3 \x03j\x00\x00
 なたね\n　「……」\
 
 \x00
-SEQ4  REF6 \xb6\x04 CALL1 \xae\x00 CALL3 \xdc\x00 REF_END1 
+SEQ6 REF6 \xb6\x04 CALL1 \xae\x00 CALL3 \xdc\x00 REF_END1 
 LOAD3 SCE102_004 REF6 \x98\x06 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \x0c\xaf SEQ3 \x03p\x00\x00
  
@@ -53,7 +53,7 @@ SEQ1 \x8c\x01 SEQ2 \x0c\xaf SEQ3 \x03p\x00\x00
 拓司\n　「……」\
 
 \x00
-SEQ4  REF6 \xdc\x06 CALL1 \xae\x00 CALL3 \xdc\x00 REF_END1 
+SEQ6 REF6 \xdc\x06 CALL1 \xae\x00 CALL3 \xdc\x00 REF_END1 
 LOAD3 SCE102_005 REF6 \xd6\x08 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \x10\xaf SEQ3 \x03\x87\x00\x00
  
@@ -64,7 +64,7 @@ SEQ1 \x8c\x01 SEQ2 \x10\xaf SEQ3 \x03\x87\x00\x00
 \n意外な声に拓司は動きを止めた。\p錦城が、厳しい顔でなたねをに\nらみつけている。\p虚を突かれたのか、なたねも珍しく驚きの表情\nを浮かべている。\
 
 \x00\x00\x00
-SEQ4  REF6 \x1a\t CALL1 \xae\x00 CALL3 \xdc\x00 REF_END1 
+SEQ6 REF6 \x1a\t CALL1 \xae\x00 CALL3 \xdc\x00 REF_END1 
 LOAD3 SCE102_006 REF6 p\x0b REF_END2 
 SEQ1 \x8c\x01 SEQ2 \x14\xaf SEQ3 \x03\xae\x00\x00
  
@@ -76,7 +76,7 @@ SEQ1 \x8c\x01 SEQ2 \x14\xaf SEQ3 \x03\xae\x00\x00
 錦城\n　「周りが不公平だと感じたら、それは不公平ということなんじ\n　　ゃないかしら？\p　この場における公平さは、あなたの主観が\n　　決めることじゃないわ。\pそれに－－」\
 
 \x00\x00\x00
-SEQ4  REF6 \xb4\x0b CALL1 \xae\x00 CALL3 \xdc\x00 REF_END1 
+SEQ6 REF6 \xb4\x0b CALL1 \xae\x00 CALL3 \xdc\x00 REF_END1 
 LOAD3 SCE102_007 REF6 \xa6\x0e REF_END2 
 SEQ1 \x8c\x01 SEQ2 \x18\xaf SEQ3 \x03\xb2\x00\x00
  
@@ -88,7 +88,7 @@ SEQ1 \x8c\x01 SEQ2 \x18\xaf SEQ3 \x03\xb2\x00\x00
 \nなたねの顔が青ざめていった。\pなにか反論をしようとするが、口\nがぱくぱくと震えるだけで言葉が出てこない。\pまるで、あふれで\nる言葉が喉に詰まって、窒息寸前であるかのように見える。\
 
 \x00
-SEQ4  REF6 \xea\x0e CALL1 \xae\x00 CALL3 \xdc\x00 REF_END1 
+SEQ6 REF6 \xea\x0e CALL1 \xae\x00 CALL3 \xdc\x00 REF_END1 
 LOAD3 SCE102_008 REF6 \xec\x11 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \x1c\xaf SEQ3 \x03\x81\x00\x00
  
@@ -100,7 +100,7 @@ SEQ1 \x8c\x01 SEQ2 \x1c\xaf SEQ3 \x03\x81\x00\x00
 \n紅葉\n　「……なんなのよ、あの態度！」\
 
 \x00\x00\x00
-SEQ4  REF6 0\x12 CALL1 \xae\x00 CALL3 \xdc\x00 REF_END1 
+SEQ6 REF6 0\x12 CALL1 \xae\x00 CALL3 \xdc\x00 REF_END1 
 LOAD3 SCE102_009 REF6 n\x14 REF_END2 
 SEQ1 \x8c\x01 SEQ2  \xaf SEQ3 \x03\x9c\x00\x00
  
@@ -112,7 +112,7 @@ SEQ1 \x8c\x01 SEQ2  \xaf SEQ3 \x03\x9c\x00\x00
 しかし、それが宇宙人のしわざであるだとか、地底にいる怪物か\nら放たれているだとか、果ては弱い者は死んで当然とだとか、そ\nういった部分になると話は別だ。\p妄想の産物であるとしか思えな\nい。\
 
 \x00
-SEQ4  REF6 \xb2\x14 CALL1 \xae\x00 CALL3 \xdc\x00 REF_END1 
+SEQ6 REF6 \xb2\x14 CALL1 \xae\x00 CALL3 \xdc\x00 REF_END1 
 LOAD6 .\\Data\\Script\\Bgm.Fob REF2 \\\x17 REF_END2 
 LOAD2 StopCD REF1 \x86\x17 REF_END1 
 LOAD3 SCE102_010 REF6 \xa2\x17 REF_END2 
@@ -126,12 +126,12 @@ SEQ1 \x8c\x01 SEQ2 $\xaf SEQ3 \x03C\x00\x00
 　　そのほうが、絶対安全だよ？」\
 
 \x00
-SEQ4  REF6 \xe6\x17 CALL1 \xae\x00 CALL3 \xdc\x00 REF_END1 \x03\x10\x00\x00
+SEQ6 REF6 \xe6\x17 CALL1 \xae\x00 CALL3 \xdc\x00 REF_END1 \x03\x10\x00\x00
 CHOICE
 「それはやめておこう」\n「いいかもしれないな」\n\l0,2,
 ENDCHOICE
 
 \x00
-SEQ4  REF6 ,\x19 CALL1 \xae\x00 CALL3 \xdc\x00 CALL2 \xae\x00 REF_END2 
+SEQ6 REF6 ,\x19 CALL1 \xae\x00 CALL3 \xdc\x00 CALL2 \xae\x00 REF_END2 
 LOAD3 TextClose REF2 \xb2\x19 REF_END1 
 END_FILE

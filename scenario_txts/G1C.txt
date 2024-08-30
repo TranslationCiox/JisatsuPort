@@ -1,9 +1,9 @@
 START_FILE
 \xcd\x08\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xae\x06\x00
-SEQ4 \x00\x1eC\x00 REF_END3 
+SEQ5 C\x00 REF_END3 
 LOAD6 .\\Data\\Script\\Bg.Fob REF3  \x00 REF_END2 
 LOAD4 BgAutoFadeIn REF3 J\x00 REF_END1 
-SEQ4 \x00\x1e\x08\x01 REF_END3 
+SEQ5 \x08\x01 REF_END3 
 LOAD6 .\\Data\\Script\\Bgm.Fob REF2 \x88\x00 REF_END2 
 LOAD2 PlayCD REF1 \xb2\x00 REF_END1 
 LOAD3 SCEG01_001 REF6 \xce\x00 REF_END2 
@@ -14,10 +14,10 @@ SEQ1 \x8c\x01 SEQ2  \xc5\x01\x0c\x00\x00\x00\x00"\x03*\x00\x00
 \n　錦城は微かに笑うと、拓司の横へと体を移動させた。@
 寄り添って寝転がるような形になる。\w\z
 \x00\x00\x00
-SEQ4  REF6 \x12\x01 REF_END3 
-LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xda\x01 REF_END2 
+SEQ6 REF6 \x12\x01 REF_END3 
+LOAD8 .\\Data\\Script\\TextFunc.Fob REF1 \xda\x01 REF_END2 
 LOAD2 TextOn REF1 \x08\x02 REF_END1 
-SEQ4 \x00\x1e\xc8\x00 CALL1  \x00 CALL3 J\x00 REF_END1 
+SEQ5 \xc8\x00 CALL1  \x00 CALL3 J\x00 REF_END1 
 LOAD3 SCEG01_002 REF6 X\x02 REF_END2 
 SEQ1 \x8c\x01 SEQ2 $\xc5\x01\x0c\x00\x00\x00\x00"\x03z\x00\x00
  
@@ -30,7 +30,7 @@ SEQ1 \x8c\x01 SEQ2 $\xc5\x01\x0c\x00\x00\x00\x00"\x03z\x00\x00
 　　そういう人はね、強いの。@
 　　周囲の状況にながされないで、自分という物を持ち続けられ\n　　るの。\p虎菱くんこそが、リーダーにふさわしいって」\w\z
 \x00
-SEQ4  REF6 \x9c\x02 CALL1 \xda\x01 CALL3 \x08\x02 REF_END1 
+SEQ6 REF6 \x9c\x02 CALL1 \xda\x01 CALL3 \x08\x02 REF_END1 
 LOAD3 SCEG01_003 REF6 \xbe\x04 REF_END2 
 SEQ1 \x8c\x01 SEQ2 (\xc5\x01\x0c\x00\x00\x00\x00"\x03H\x00\x00
  
@@ -41,7 +41,7 @@ SEQ1 \x8c\x01 SEQ2 (\xc5\x01\x0c\x00\x00\x00\x00"\x03H\x00\x00
 \n錦城\n　「……先生からのエールだと思って。ね？」\
 
 \x00\x00\x00
-SEQ4  REF6 \x02\x05 CALL1 \xda\x01 CALL3 \x08\x02 CALL2 \x88\x00 REF_END2 
+SEQ6 REF6 \x02\x05 CALL1 \xda\x01 CALL3 \x08\x02 CALL2 \x88\x00 REF_END2 
 LOAD2 StopCD REF1 h\x06 CALL2 \xda\x01 REF_END2 
 LOAD3 TextClose REF2 \x90\x06 REF_END1 
 END_FILE
