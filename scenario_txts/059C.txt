@@ -14,7 +14,8 @@ SEQ1 \x8c\x01 SEQ2 \xd0k SEQ3 \x03z\x00\x00
 \nなたねに目で合図を送って、拓司は後ろを向いた。@
 早桃は何を隠しているのだろうか？\
 
-\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 J\x00 REF_END3 
+\x00
+SEQ4  REF6 J\x00 REF_END3 
 LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 R\x02 REF_END2 
 LOAD2 TextOn REF1 \x80\x02 CALL2 R\x02 REF_END2 
 LOAD3 TextClose REF2 \xa8\x02 REF_END1 

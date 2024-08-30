@@ -11,7 +11,8 @@ SEQ1 \x8c\x01 SEQ2 \x10S\x01\x0c\x00\x00\x00\x00"\x03\xa7\x00\x00
 　　……教授が何者なのか、私にもそれはわからないわ。\pただは\n　　っきりしているのは、教授が敵だということ。\pなぜなら教授\n　　こそが、波動を使って世界を滅亡させた張本人だからよ」@
 拓司\n　「……」\
 
-\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 J\x00 REF_END3 
+\x00\x00\x00
+SEQ4  REF6 J\x00 REF_END3 
 LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \x06\x03 REF_END2 
 LOAD2 TextOn REF1 4\x03 REF_END1 
 LOAD3 SCE207_002 REF6 P\x03 REF_END2 
@@ -21,6 +22,7 @@ SEQ1 \x8c\x01 SEQ2 \x14S\x01\x0c\x00\x00\x00\x00"\x03l\x00\x00
 拓司\n　「……」@
 ナタネ\n　「世界は消滅して……あなただけが生き残った。\p教授はあなた\n　　を恐れている」\
 
-\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \x94\x03 CALL1 \x06\x03 CALL3 4\x03 CALL2 \x06\x03 REF_END2 
+\x00
+SEQ4  REF6 \x94\x03 CALL1 \x06\x03 CALL3 4\x03 CALL2 \x06\x03 REF_END2 
 LOAD3 TextClose REF2 \x8a\x05 REF_END1 
 END_FILE

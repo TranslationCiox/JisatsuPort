@@ -14,7 +14,8 @@ SEQ1 \x8c\x01 SEQ2 PY\x01\x0c\x00\x00\x00\x00"\x03\xae\x00\x00
 ナタネ\n　「……」@
 拓司\n　「おれはおれの世界に戻る」\
 
-\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 J\x00 REF_END3 
+\x00
+SEQ4  REF6 J\x00 REF_END3 
 LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 "\x03 REF_END2 
 LOAD2 TextOn REF1 P\x03 REF_END1 
 LOAD3 SCE211_002 REF6 l\x03 REF_END2 
@@ -28,7 +29,8 @@ SEQ1 \x8c\x01 SEQ2 TY\x01\x0c\x00\x00\x00\x00"\x03\x86\x00\x00
 拓司\n　「ああ。\pこの世界が現実でも妄想でも……とにかくこの世界で\n　　の俺は終わる。\p目が覚めて別の場所にいれば、この世界が妄\n　　想だったということだ。\pこれでお終いなら、こここそが現実\n　　だったということになる」@
 ナタネ\n　「馬鹿なことはやめて」\
 
-\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \xb0\x03 CALL1 "\x03 CALL3 P\x03 REF_END1 
+\x00
+SEQ4  REF6 \xb0\x03 CALL1 "\x03 CALL3 P\x03 REF_END1 
 LOAD3 SCE211_003 REF6 \x02\x06 REF_END2 
 SEQ1 \x8c\x01 SEQ2 XY\x01\x0c\x00\x00\x00\x00"\x03I\x00\x00
  
@@ -36,10 +38,13 @@ SEQ1 \x8c\x01 SEQ2 XY\x01\x0c\x00\x00\x00\x00"\x03I\x00\x00
 \n拓司は息を止めた。@
 そして躊躇無く自分の下顎を、下から殴りつけた。\
 
-\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 F\x06 CALL1 "\x03 CALL3 P\x03 REF_END1  \x1e\x00\x00\x00\x00\r\x00 REF_END2 \x0c\x02\x00\x00"
+\x00
+SEQ4  REF6 F\x06 CALL1 "\x03 CALL3 P\x03 REF_END1 
+SEQ4  REF_END2 \x0c\x02\x00\x00"
 LOAD6 .\\Data\\Script\\Bgm.Fob REF2 \xbe\x07 REF_END2 
 LOAD2 SeStop REF1 \xe8\x07 CALL2 "\x03 REF_END2 
-LOAD5 TextWindowOffDirect REF7 \x10\x08 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00 REF_END3 
+LOAD5 TextWindowOffDirect REF7 \x10\x08 REF_END1 
+SEQ4 \x00\x1e\xc8\x00 REF_END3 
 LOAD6 .\\Data\\Script\\Bg.Fob REF3 R\x08 REF_END2 
 LOAD2 BgOn REF3 |\x08 CALL2 "\x03 REF_END2 
 LOAD5 TextWindowOnDirect REF1 \xa4\x08 CALL2 "\x03 REF_END2 

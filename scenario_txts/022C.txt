@@ -19,10 +19,13 @@ SEQ1 \x8c\x01 SEQ2 \x002 SEQ3 \x03\x96\x00\x00
 命じたとおり、体操服とブルマに身を包んでいる。顔を紅潮させ\nて、義兄に愛される期待にうち震えている。@
 両親が留守なのだから、本当はベッドで堂々と繋がることができ\nるのだ。しかし、敢えてこんな場所を選んだ。それは……\
 
-\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \x90\x00 REF_END3 
+\x00\x00\x00
+SEQ4  REF6 \x90\x00 REF_END3 
 LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \x08\x03 REF_END2 
-LOAD2 TextOn REF1 6\x03 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x05\x01 CALL1 \x06\x00 REF_END2 
-LOAD2 PlayCD REF1 x\x03 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1eM\x00 REF_END3 
+LOAD2 TextOn REF1 6\x03 REF_END1 
+SEQ4 \x00\x1e\x05\x01 CALL1 \x06\x00 REF_END2 
+LOAD2 PlayCD REF1 x\x03 REF_END1 
+SEQ4 \x00\x1eM\x00 REF_END3 
 LOAD6 .\\Data\\Script\\Bg.Fob REF3 \xae\x03 REF_END2 
 LOAD4 BgAutoFadeIn REF3 \xd8\x03 REF_END1 
 LOAD3 SCE022_002 REF6 \xfc\x03 REF_END2 
@@ -35,7 +38,9 @@ SEQ1 \x8c\x01 SEQ2 \x042 SEQ3 \x03Q\x00\x00
 \n早桃の顔が、さっと青ざめる。@
 拓司の背後に、別の男が立っているのに気づいたのだ。\
 
-\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 @\x04 CALL1 \x08\x03 CALL3 6\x03 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x05\x01 CALL1 \x06\x00 CALL3 x\x03 REF_END1 
+\x00
+SEQ4  REF6 @\x04 CALL1 \x08\x03 CALL3 6\x03 REF_END1 
+SEQ4 \x00\x1e\x05\x01 CALL1 \x06\x00 CALL3 x\x03 REF_END1 
 LOAD3 SCE022_003 REF6 \xf2\x05 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \x082 SEQ3 \x03b\x00\x00
  
@@ -47,7 +52,8 @@ SEQ1 \x8c\x01 SEQ2 \x082 SEQ3 \x03b\x00\x00
 平野はニヤニヤ笑いを満面に張り付けて、トイレの中に一歩踏み\n込んだ。@
 便座に腰掛けたまま、早桃が身を固くする。\
 
-\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 6\x06 CALL1 \x08\x03 CALL3 6\x03 REF_END1 
+\x00\x00\x00
+SEQ4  REF6 6\x06 CALL1 \x08\x03 CALL3 6\x03 REF_END1 
 LOAD3 SCE022_004 REF6 \xf8\x07 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \x0c2 SEQ3 \x03`\x00\x00
  
@@ -61,7 +67,8 @@ SEQ1 \x8c\x01 SEQ2 \x0c2 SEQ3 \x03`\x00\x00
 　　だったら協力してくれよ。@
 　　こづかいがいるんだ」\
 
-\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 <\x08 CALL1 \x08\x03 CALL3 6\x03 REF_END1 
+\x00
+SEQ4  REF6 <\x08 CALL1 \x08\x03 CALL3 6\x03 REF_END1 
 LOAD3 SCE022_005 REF6 \xf6\t REF_END2 
 SEQ1 \x8c\x01 SEQ2 \x102 SEQ3 \x03d\x00\x00
  
@@ -74,7 +81,8 @@ SEQ1 \x8c\x01 SEQ2 \x102 SEQ3 \x03d\x00\x00
 　　もう一生お前とは口もきかないけど、悪く思わないでくれよ\n　　な」@
 早桃\n　「おにいちゃん……\p早桃のこと愛してるっていってくれたの\n　　に……\p両思いだって……」\
 
-\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 :\n CALL1 \x08\x03 CALL3 6\x03 REF_END1 
+\x00
+SEQ4  REF6 :\n CALL1 \x08\x03 CALL3 6\x03 REF_END1 
 LOAD3 SCE022_006 REF6 \x04\x0c REF_END2 
 SEQ1 \x8c\x01 SEQ2 \x142 SEQ3 \x037\x00\x00
  
@@ -84,7 +92,8 @@ SEQ1 \x8c\x01 SEQ2 \x142 SEQ3 \x037\x00\x00
 より深く義妹を傷つける言葉を。@
 その傷の深さを目の当たりにすることによって、自らをも傷つけ\nるような言葉を。\
 
-\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 H\x0c CALL1 \x08\x03 CALL3 6\x03 REF_END1 
+\x00\x00\x00
+SEQ4  REF6 H\x0c CALL1 \x08\x03 CALL3 6\x03 REF_END1 
 LOAD3 SCE022_007 REF6 ^\r REF_END2 
 SEQ1 \x8c\x01 SEQ2 \x182 SEQ3 \x03\xb0\x00\x00
  
@@ -102,7 +111,8 @@ SEQ1 \x8c\x01 SEQ2 \x182 SEQ3 \x03\xb0\x00\x00
 　　だから愛とか語って理論武装してるんだろ？」@
 早桃\n　「違うよ！　早桃は本当におにいちゃんのこと……」\
 
-\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \xa2\r CALL1 \x08\x03 CALL3 6\x03 REF_END1 
+\x00
+SEQ4  REF6 \xa2\r CALL1 \x08\x03 CALL3 6\x03 REF_END1 
 LOAD3 SCE022_008 REF6 \x9c\x10 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \x1c2 SEQ3 \x03_\x00\x00
  
@@ -115,7 +125,8 @@ SEQ1 \x8c\x01 SEQ2 \x1c2 SEQ3 \x03_\x00\x00
 早桃\n　「……」@
 \nうつむいて震える早桃を見下ろして、平野は荒い息でいった。\
 
-\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \xe0\x10 CALL1 \x08\x03 CALL3 6\x03 REF_END1 
+\x00
+SEQ4  REF6 \xe0\x10 CALL1 \x08\x03 CALL3 6\x03 REF_END1 
 LOAD3 SCE022_009 REF6 \x96\x12 REF_END2 
 SEQ1 \x8c\x01 SEQ2  2 SEQ3 \x03R\x00\x00
  
@@ -128,7 +139,9 @@ SEQ1 \x8c\x01 SEQ2  2 SEQ3 \x03R\x00\x00
 \n懇願するように見上げる義妹。@
 拓司はそれを無視して、平野にいった。\
 
-\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \xda\x12 CALL1 \x08\x03 CALL3 6\x03 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00 CALL1 \xae\x03 REF_END2 
+\x00
+SEQ4  REF6 \xda\x12 CALL1 \x08\x03 CALL3 6\x03 REF_END1 
+SEQ4 \x00\x1e\xc8\x00 CALL1 \xae\x03 REF_END2 
 LOAD2 BgOn REF3 \x82\x14 REF_END1 
 LOAD3 SCE022_010 REF6 \x9e\x14 REF_END2 
 SEQ1 \x8c\x01 SEQ2 $2 SEQ3 \x03r\x00\x00
@@ -141,7 +154,8 @@ SEQ1 \x8c\x01 SEQ2 $2 SEQ3 \x03r\x00\x00
 白いブリーフの前を大きく押し上げたペ○スの先端は、すでにカ\nウパー液で湿っている。@
 早桃は目をそらして、うつむいたまま動かない。\
 
-\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \xe2\x14 CALL1 \x08\x03 CALL3 6\x03 REF_END1 
+\x00
+SEQ4  REF6 \xe2\x14 CALL1 \x08\x03 CALL3 6\x03 REF_END1 
 LOAD3 SCE022_011 REF6 \xe4\x16 REF_END2 
 SEQ1 \x8c\x01 SEQ2 (2 SEQ3 \x03e\x00\x00
  
@@ -155,7 +169,8 @@ SEQ1 \x8c\x01 SEQ2 (2 SEQ3 \x03e\x00\x00
 しかし平野はお構いなしに、早桃の手を自分のふくらみにあてが\nった。@
 そのまま手を上下させ、強制的に撫でさすらせる。\
 
-\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 (\x17 CALL1 \x08\x03 CALL3 6\x03 REF_END1 
+\x00\x00\x00
+SEQ4  REF6 (\x17 CALL1 \x08\x03 CALL3 6\x03 REF_END1 
 LOAD3 SCE022_012 REF6 \xf6\x18 REF_END2 
 SEQ1 \x8c\x01 SEQ2 ,2 SEQ3 \x03H\x00\x00
  
@@ -168,7 +183,8 @@ SEQ1 \x8c\x01 SEQ2 ,2 SEQ3 \x03H\x00\x00
 平野\n　「はあ、はあ……ホラ、早く言ってよ？」@
 早桃\n　「……大きい……です」\
 
-\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 :\x19 CALL1 \x08\x03 CALL3 6\x03 REF_END1 
+\x00\x00\x00
+SEQ4  REF6 :\x19 CALL1 \x08\x03 CALL3 6\x03 REF_END1 
 LOAD3 SCE022_013 REF6 \x94\x1a REF_END2 
 SEQ1 \x8c\x01 SEQ2 02 SEQ3 \x03w\x00\x00
  
@@ -182,7 +198,8 @@ SEQ1 \x8c\x01 SEQ2 02 SEQ3 \x03w\x00\x00
 早桃\n　「……おにいちゃんの……\pおち○……ちん……@
 　　大きい……\pです……」\
 
-\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \xd8\x1a CALL1 \x08\x03 CALL3 6\x03 REF_END1 
+\x00
+SEQ4  REF6 \xd8\x1a CALL1 \x08\x03 CALL3 6\x03 REF_END1 
 LOAD3 SCE022_014 REF6 \xee\x1c REF_END2 
 SEQ1 \x8c\x01 SEQ2 42 SEQ3 \x03n\x00\x00
  
@@ -196,7 +213,8 @@ SEQ1 \x8c\x01 SEQ2 42 SEQ3 \x03n\x00\x00
 眉をひそめて、固く目を閉じ、顔面への陵辱に耐えている……。@
 \n早桃\n　「う……ううっ」\
 
-\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 2\x1d CALL1 \x08\x03 CALL3 6\x03 REF_END1 
+\x00
+SEQ4  REF6 2\x1d CALL1 \x08\x03 CALL3 6\x03 REF_END1 
 LOAD3 SCE022_015 REF6 $\x1f REF_END2 
 SEQ1 \x8c\x01 SEQ2 82 SEQ3 \x03z\x00\x00
  
@@ -212,7 +230,8 @@ SEQ1 \x8c\x01 SEQ2 82 SEQ3 \x03z\x00\x00
 早桃\n　「はい……\pはいぃ……\pおにいちゃんのこと……@
 　　うぷっ……\pす、好き……\pですぅ……」\
 
-\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 h\x1f CALL1 \x08\x03 CALL3 6\x03 REF_END1 
+\x00
+SEQ4  REF6 h\x1f CALL1 \x08\x03 CALL3 6\x03 REF_END1 
 LOAD3 SCE022_016 REF6 \x8a! REF_END2 
 SEQ1 \x8c\x01 SEQ2 <2 SEQ3 \x03\x96\x00\x00
  
@@ -228,7 +247,8 @@ SEQ1 \x8c\x01 SEQ2 <2 SEQ3 \x03\x96\x00\x00
 抵抗することで、より傷つくことを理解したのだろう。@
 無抵抗を貫くことで、この淫猥な行為から自分の意志を消し去ろ\nうとしているのだ。\
 
-\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \xce! CALL1 \x08\x03 CALL3 6\x03 REF_END1 
+\x00
+SEQ4  REF6 \xce! CALL1 \x08\x03 CALL3 6\x03 REF_END1 
 LOAD3 SCE022_017 REF6 `$ REF_END2 
 SEQ1 \x8c\x01 SEQ2 @2 SEQ3 \x03\x7f\x00\x00
  
@@ -242,7 +262,8 @@ SEQ1 \x8c\x01 SEQ2 @2 SEQ3 \x03\x7f\x00\x00
 　　おま○こに入れられてそのおにいちゃんの赤ちゃんを孕むか、\n　　\pそれともお尻に入れられて妊娠だけは避けるか？@
 　　さ、早桃が自分でお願いしてごらん？」\
 
-\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \xa4$ CALL1 \x08\x03 CALL3 6\x03 REF_END1 
+\x00\x00\x00
+SEQ4  REF6 \xa4$ CALL1 \x08\x03 CALL3 6\x03 REF_END1 
 LOAD3 SCE022_018 REF6 \xda& REF_END2 
 SEQ1 \x8c\x01 SEQ2 D2 SEQ3 \x03b\x00\x00
  
@@ -255,7 +276,8 @@ SEQ1 \x8c\x01 SEQ2 D2 SEQ3 \x03b\x00\x00
 平野\n　「そうか、そうか。@
 　　それじゃお望み通り、おま○こにぶち込んで、おにいちゃん\n　　の精子を早桃の卵子に受精させてあげるよ」\
 
-\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \x1e' CALL1 \x08\x03 CALL3 6\x03 REF_END1 
+\x00\x00\x00
+SEQ4  REF6 \x1e' CALL1 \x08\x03 CALL3 6\x03 REF_END1 
 LOAD3 SCE022_019 REF6 \xe0( REF_END2 
 SEQ1 \x8c\x01 SEQ2 H2 SEQ3 \x03g\x00\x00
  
@@ -271,7 +293,8 @@ SEQ1 \x8c\x01 SEQ2 H2 SEQ3 \x03g\x00\x00
 早桃\n　「お尻に出してください！@
 　　おにいちゃんの精液、お尻の中に射精してくださいっ！」\
 
-\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 $) CALL1 \x08\x03 CALL3 6\x03 REF_END1 
+\x00\x00\x00
+SEQ4  REF6 $) CALL1 \x08\x03 CALL3 6\x03 REF_END1 
 LOAD3 SCE022_020 REF6 \xfa* REF_END2 
 SEQ1 \x8c\x01 SEQ2 L2 SEQ3 \x03\x80\x00\x00
  
@@ -285,7 +308,8 @@ SEQ1 \x8c\x01 SEQ2 L2 SEQ3 \x03\x80\x00\x00
 　　立っちして、ブルマをぬぎぬぎしようね、早桃ぉ……」@
 拓司\n　「ほら、さっさと立て！」\
 
-\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 >+ CALL1 \x08\x03 CALL3 6\x03 REF_END1 
+\x00\x00\x00
+SEQ4  REF6 >+ CALL1 \x08\x03 CALL3 6\x03 REF_END1 
 LOAD3 SCE022_021 REF6 x- REF_END2 
 SEQ1 \x8c\x01 SEQ2 P2 SEQ3 \x03\xa8\x00\x00
  
@@ -301,7 +325,8 @@ SEQ1 \x8c\x01 SEQ2 P2 SEQ3 \x03\xa8\x00\x00
 　　要するに早桃は誰でもいいんだろう？@
 　　誰の前でもでもこんなにぬるぬるにしちゃうんだ？」\
 
-\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \xbc- CALL1 \x08\x03 CALL3 6\x03 REF_END1 
+\x00
+SEQ4  REF6 \xbc- CALL1 \x08\x03 CALL3 6\x03 REF_END1 
 LOAD3 SCE022_022 REF6 \x960 REF_END2 
 SEQ1 \x8c\x01 SEQ2 T2 SEQ3 \x03^\x00\x00
  
@@ -314,7 +339,8 @@ SEQ1 \x8c\x01 SEQ2 T2 SEQ3 \x03^\x00\x00
 早桃\n　「おにいちゃん。もう－－」@
 拓司\n　「入れろ」\
 
-\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \xda0 CALL1 \x08\x03 CALL3 6\x03 REF_END1 
+\x00\x00\x00
+SEQ4  REF6 \xda0 CALL1 \x08\x03 CALL3 6\x03 REF_END1 
 LOAD3 SCE022_023 REF6 \x8c2 REF_END2 
 SEQ1 \x8c\x01 SEQ2 X2 SEQ3 \x03\x8d\x00\x00
  
@@ -327,7 +353,9 @@ SEQ1 \x8c\x01 SEQ2 X2 SEQ3 \x03\x8d\x00\x00
 \n平野の膝の上に座るような形で、早桃は腰をおろした。@
 平野は自分でペ○スを握って、先端を早桃のアナルに押し当て、\nそして……\
 
-\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \xd02 CALL1 \x08\x03 CALL3 6\x03 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1eN\x00 CALL1 \xae\x03 CALL3 \xd8\x03 REF_END1 
+\x00
+SEQ4  REF6 \xd02 CALL1 \x08\x03 CALL3 6\x03 REF_END1 
+SEQ4 \x00\x1eN\x00 CALL1 \xae\x03 CALL3 \xd8\x03 REF_END1 
 LOAD3 SCE022_024 REF6 r5 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \\2 SEQ3 \x03g\x00\x00
  
@@ -339,7 +367,8 @@ SEQ1 \x8c\x01 SEQ2 \\2 SEQ3 \x03g\x00\x00
 \n早桃\n　「うぐっ……ひっ……\pお腹が……\pうあ……息ができな……@
 　　おふっ！」\
 
-\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \xb65 CALL1 \x08\x03 CALL3 6\x03 REF_END1 
+\x00
+SEQ4  REF6 \xb65 CALL1 \x08\x03 CALL3 6\x03 REF_END1 
 LOAD3 SCE022_025 REF6 \x8c7 REF_END2 
 SEQ1 \x8c\x01 SEQ2 `2 SEQ3 \x03\xa3\x00\x00
  
@@ -354,7 +383,8 @@ SEQ1 \x8c\x01 SEQ2 `2 SEQ3 \x03\xa3\x00\x00
 　　もうすぐおにいちゃんのどろどろのやつを、さ、早桃のお腹\n　　の中にぶちまけてあげるからね！@
 　　便所女の早桃は、内臓まで全部おにいちゃんのものだからね\n　　っ！」\
 
-\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \xd07 CALL1 \x08\x03 CALL3 6\x03 REF_END1 
+\x00\x00\x00
+SEQ4  REF6 \xd07 CALL1 \x08\x03 CALL3 6\x03 REF_END1 
 LOAD3 SCE022_026 REF6 \x96: REF_END2 
 SEQ1 \x8c\x01 SEQ2 d2 SEQ3 \x03d\x00\x00
  
@@ -365,7 +395,8 @@ SEQ1 \x8c\x01 SEQ2 d2 SEQ3 \x03d\x00\x00
 /*■黒　表示（ノンエフェクト）*/\a7,-1,-1,0,\a0,200,1,0,\a6,0,0,0,\n拓司は、繋がって動物のような声を漏らしている２人を見下ろし\nた。@
 そしてハダシのままの右脚を伸ばして、むき出しに晒されている\n早桃の性器に親指の先を突っ込んだ。\
 
-\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \xda: CALL1 \x08\x03 CALL3 6\x03 REF_END1 
+\x00
+SEQ4  REF6 \xda: CALL1 \x08\x03 CALL3 6\x03 REF_END1 
 LOAD3 SCE022_027 REF6 \xa4< REF_END2 
 SEQ1 \x8c\x01 SEQ2 h2 SEQ3 \x03o\x00\x00
  
@@ -378,7 +409,8 @@ SEQ1 \x8c\x01 SEQ2 h2 SEQ3 \x03o\x00\x00
 拓司\n　「見ろよ平野。@
 　　早桃のやつ、うれしくて白目剥いて笑ってるぜ？」\
 
-\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \xe8< CALL1 \x08\x03 CALL3 6\x03 REF_END1 
+\x00
+SEQ4  REF6 \xe8< CALL1 \x08\x03 CALL3 6\x03 REF_END1 
 LOAD3 SCE022_028 REF6 \xde> REF_END2 
 SEQ1 \x8c\x01 SEQ2 l2 SEQ3 \x03l\x00\x00
  
@@ -391,7 +423,8 @@ SEQ1 \x8c\x01 SEQ2 l2 SEQ3 \x03l\x00\x00
 \n早桃\n　「な……なに？！@
 　　なんなのおにいちゃん？！」\
 
-\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 "? CALL1 \x08\x03 CALL3 6\x03 REF_END1 
+\x00
+SEQ4  REF6 "? CALL1 \x08\x03 CALL3 6\x03 REF_END1 
 LOAD3 SCE022_029 REF6 \x0cA REF_END2 
 SEQ1 \x8c\x01 SEQ2 p2 SEQ3 \x03\x9b\x00\x00
  
@@ -408,7 +441,8 @@ SEQ1 \x8c\x01 SEQ2 p2 SEQ3 \x03\x9b\x00\x00
 ぎくりとして、早桃が見上げる。@
 その一瞬の隙をついて、遂に平野のペ○スが早桃を貫いた。\
 
-\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 PA CALL1 \x08\x03 CALL3 6\x03 REF_END1 
+\x00\x00\x00
+SEQ4  REF6 PA CALL1 \x08\x03 CALL3 6\x03 REF_END1 
 LOAD3 SCE022_030 REF6 \xf6C REF_END2 
 SEQ1 \x8c\x01 SEQ2 t2 SEQ3 \x03d\x00\x00
  
@@ -423,7 +457,8 @@ SEQ1 \x8c\x01 SEQ2 t2 SEQ3 \x03d\x00\x00
 　　やだよ……\pこんなの、あんまりだよ……@
 　　おにいちゃ……ん」\
 
-\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 :D CALL1 \x08\x03 CALL3 6\x03 REF_END1 
+\x00
+SEQ4  REF6 :D CALL1 \x08\x03 CALL3 6\x03 REF_END1 
 LOAD3 SCE022_031 REF6 \x04F REF_END2 
 SEQ1 \x8c\x01 SEQ2 x2 SEQ3 \x03\xb2\x00\x00
  
@@ -442,7 +477,8 @@ SEQ1 \x8c\x01 SEQ2 x2 SEQ3 \x03\xb2\x00\x00
 　　わかってんのか、お前なんかプロステ２より価値ないんだ！@
 　　いえッ！」\
 
-\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 HF CALL1 \x08\x03 CALL3 6\x03 REF_END1 
+\x00\x00\x00
+SEQ4  REF6 HF CALL1 \x08\x03 CALL3 6\x03 REF_END1 
 LOAD3 SCE022_032 REF6 JI REF_END2 
 SEQ1 \x8c\x01 SEQ2 |2 SEQ3 \x03S\x00\x00
  
@@ -453,7 +489,8 @@ SEQ1 \x8c\x01 SEQ2 |2 SEQ3 \x03S\x00\x00
 平野\n　「出る！　\p出るよ早桃ぉ！@
 　　おっぱいも膨らみきってないつるぺた少女に僕の精液が……@
 　　子宮まで全部ぼ、僕の物だぁ……あ、あ、あ、ああっ！」\w\n\n\z
-\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \x8eI CALL1 \x08\x03 CALL3 6\x03 REF_END1 
+\x00\x00\x00
+SEQ4  REF6 \x8eI CALL1 \x08\x03 CALL3 6\x03 REF_END1 
 LOAD3 SCE022_033 REF6 \x14K REF_END2 
 SEQ1 \x8c\x01 SEQ2 \x802 SEQ3 \x03R\x00\x00
  
@@ -463,7 +500,9 @@ SEQ1 \x8c\x01 SEQ2 \x802 SEQ3 \x03R\x00\x00
 うるさいんだよ！@
 \n　ザザザ……ザザッ……ザアザザザ……ザアアアアア……\nザアザアアアアアアア……\
 
-\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 XK CALL1 \x08\x03 CALL3 6\x03 REF_END1  \x1e\x00\x00\x00\x00\r\x00 REF_END2 \x0c\x02\x00\x00" REF7 \x06\x00 REF_END2 
+\x00\x00\x00
+SEQ4  REF6 XK CALL1 \x08\x03 CALL3 6\x03 REF_END1 
+SEQ4  REF_END2 \x0c\x02\x00\x00" REF7 \x06\x00 REF_END2 
 LOAD2 SeStop REF1 \x00M CALL2 \x08\x03 REF_END2 
 LOAD3 TextClose REF2 (M REF_END1 
 END_FILE

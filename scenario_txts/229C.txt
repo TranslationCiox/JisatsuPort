@@ -8,7 +8,8 @@ SEQ1 \x8c\x01 SEQ2 pu\x01\x0c\x00\x00\x00\x00"\x03S\x00\x00
 右目を押さえた手の下から、ダラダラと真っ赤な血が滴りおちて\nいる。\pそれでも左目は、ギラリと凄惨な光をたたえて拓司に据え\nられている。@
 動こうとしたカンナを「動くなッ！」と一喝して、御堂はいった。\n\
 
-\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 J\x00 REF_END3 
+\x00\x00\x00
+SEQ4  REF6 J\x00 REF_END3 
 LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xb6\x01 REF_END2 
 LOAD2 TextOn REF1 \xe4\x01 CALL2 \xb6\x01 REF_END2 
 LOAD3 TextClose REF2 \x0c\x02 REF_END1 

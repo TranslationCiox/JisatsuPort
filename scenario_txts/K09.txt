@@ -9,11 +9,14 @@ SEQ1 \x8c\x01 SEQ2 H\xa7\x01\x0c\x00\x00\x00\x00"\x03;\x00\x00
 「落とす？」@
 「袋に詰めて、落とすの」@
 「猫を？」\w\z
-\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 J\x00 REF_END3 
+\x00\x00\x00
+SEQ4  REF6 J\x00 REF_END3 
 LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 V\x01 REF_END2 
-LOAD2 TextOn REF1 \x84\x01 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00 REF_END3 
+LOAD2 TextOn REF1 \x84\x01 REF_END1 
+SEQ4 \x00\x1e\xc8\x00 REF_END3 
 LOAD6 .\\Data\\Script\\Bg.Fob REF3 \xba\x01 REF_END2 
-LOAD4 BgAutoFadeIn REF3 \xe4\x01 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\t\x01 REF_END3 
+LOAD4 BgAutoFadeIn REF3 \xe4\x01 REF_END1 
+SEQ4 \x00\x1e\t\x01 REF_END3 
 LOAD6 .\\Data\\Script\\Bgm.Fob REF2 "\x02 REF_END2 
 LOAD2 PlayCD REF1 L\x02 REF_END1 
 LOAD3 SCEK09_002 REF6 h\x02 REF_END2 
@@ -30,7 +33,8 @@ SEQ1 \x8c\x01 SEQ2 L\xa7\x01\x0c\x00\x00\x00\x00"\x03\x85\x00\x00
 　全然死ななかった場合は、もう一回袋を拾って－－」@
 「わかったよ」と私はいって遮った。@
 「もうわかったから。ありがとう、ゆきちゃん」\w\z
-\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \xac\x02 CALL1 V\x01 CALL3 \x84\x01 REF_END1 
+\x00
+SEQ4  REF6 \xac\x02 CALL1 V\x01 CALL3 \x84\x01 REF_END1 
 LOAD3 SCEK09_003 REF6 \xfa\x04 REF_END2 
 SEQ1 \x8c\x01 SEQ2 P\xa7\x01\x0c\x00\x00\x00\x00"\x03y\x00\x00
  
@@ -40,7 +44,8 @@ SEQ1 \x8c\x01 SEQ2 P\xa7\x01\x0c\x00\x00\x00\x00"\x03y\x00\x00
 優しいゆきがそんなことをしているなんてショックだった。@
 嫌悪と軽蔑がわき上がってくるのも抑えられなかった。@
 でも、秘密の大きさは、私に対する信頼の大きさを意味していた。\n\p信頼の輝きが、秘密の暗さを消し去るくらい明るいと信じてこそ\nの告白である以上、秘密が大きくて暗いほど、私は喜ぶべきなの\nだ。\w\z
-\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 >\x05 CALL1 V\x01 CALL3 \x84\x01 REF_END1 
+\x00
+SEQ4  REF6 >\x05 CALL1 V\x01 CALL3 \x84\x01 REF_END1 
 LOAD3 SCEK09_004 REF6 \\\x07 REF_END2 
 SEQ1 \x8c\x01 SEQ2 T\xa7\x01\x0c\x00\x00\x00\x00"\x03\xd0\x00\x00
  
@@ -54,7 +59,8 @@ SEQ1 \x8c\x01 SEQ2 T\xa7\x01\x0c\x00\x00\x00\x00"\x03\xd0\x00\x00
 　そうすれば……」@
 　しばらく間をおいてから、ゆきはぽつりといった。@
 「そうすれば死ぬのが怖くなくなると思うから」\w\z
-\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \xa0\x07 CALL1 V\x01 CALL3 \x84\x01 CALL2 "\x02 REF_END2 
+\x00\x00\x00
+SEQ4  REF6 \xa0\x07 CALL1 V\x01 CALL3 \x84\x01 CALL2 "\x02 REF_END2 
 LOAD2 StopCD REF1 &\x0b CALL2 V\x01 REF_END2 
 LOAD3 TextClose REF2 N\x0b REF_END1 
 END_FILE

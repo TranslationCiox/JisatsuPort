@@ -11,7 +11,8 @@ SEQ1 \x8c\x01 SEQ2 \x90\xb0 SEQ3 \x03\x82\x00\x00
 \n集めた薬を手に、紅葉は早桃の元へと去っていった。@
 紅葉は無言だったが、その沈黙の中に、拓司は明らかに不満の影\nを感じとった。@
 \z
-\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 J\x00 REF_END3 
+\x00
+SEQ4  REF6 J\x00 REF_END3 
 LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 r\x02 REF_END2 
 LOAD2 TextOn REF1 \xa0\x02 CALL2 r\x02 REF_END2 
 LOAD3 TextClose REF2 \xc8\x02 REF_END1 

@@ -12,7 +12,8 @@ SEQ1 \x8c\x01 SEQ2 @8 SEQ3 \x03\xbf\x00\x00
 　暴力に彩られた噂。\p最近はドラッグとか、売春とか、そういっ\n　た単語さえ噂には入り交じるようになっていた。@
 　そして御堂の眼には、それらがあながちただの噂で終わるもの\n　ではないと感じさせるだけの説得力が備わっていた。\
 
- \x1e\x00\x00\x00\x00\r\x00 REF6 J\x00 REF_END3 
+
+SEQ4  REF6 J\x00 REF_END3 
 LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 f\x03 REF_END2 
 LOAD2 TextOn REF1 \x94\x03 REF_END1 
 LOAD3 SCE026_002 REF6 \xb0\x03 REF_END2 
@@ -26,7 +27,9 @@ SEQ1 \x8c\x01 SEQ2 D8 SEQ3 \x03o\x00\x00
 錦城\n　「私は、あなたが自ら望んで落ちこぼれていくことにはなんら異\n　　を唱える気はありません。\pただ、他の人間の迷惑となるような\n　　ことはつつしんでください」@
 御堂\n　「……なんだと？」\
 
-\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \xf4\x03 CALL1 f\x03 CALL3 \x94\x03 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\n\x01 REF_END3 
+\x00
+SEQ4  REF6 \xf4\x03 CALL1 f\x03 CALL3 \x94\x03 REF_END1 
+SEQ4 \x00\x1e\n\x01 REF_END3 
 LOAD6 .\\Data\\Script\\Bgm.Fob REF2 \x04\x06 REF_END2 
 LOAD2 PlayCD REF1 .\x06 REF_END1 
 LOAD3 SCE026_003 REF6 J\x06 REF_END2 
@@ -42,7 +45,8 @@ SEQ1 \x8c\x01 SEQ2 H8 SEQ3 \x03r\x00\x00
 　クラスにいる全員が息を押し殺して事態の移行を見守っていた。\n　\p息詰まる静寂のなかに、次に来るであろうすさまじい暴力の予感\n　が……それに対する怯えと興奮が……渦巻いていた。@
 　やがて御堂が、ニヤリと笑った。\
 
-\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \x8e\x06 CALL1 f\x03 CALL3 \x94\x03 REF_END1 
+\x00\x00\x00
+SEQ4  REF6 \x8e\x06 CALL1 f\x03 CALL3 \x94\x03 REF_END1 
 LOAD3 SCE026_004 REF6 \x90\x08 REF_END2 
 SEQ1 \x8c\x01 SEQ2 L8 SEQ3 \x03`\x00\x00
  
@@ -52,10 +56,12 @@ SEQ1 \x8c\x01 SEQ2 L8 SEQ3 \x03`\x00\x00
 錦城\n　「……」@
 御堂\n　「女の一人暮らしは危険がいっぱいッスからね。\p気を付けないと\n　　－－」\
 
-\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \xd4\x08 CALL1 f\x03 CALL3 \x94\x03 REF_END1 
+\x00\x00\x00
+SEQ4  REF6 \xd4\x08 CALL1 f\x03 CALL3 \x94\x03 REF_END1 
 LOAD3 SCE026_005 REF6 \x8e\n REF_END2 
 SEQ1 \x8c\x01 SEQ2 P8 SEQ3  REF7 \x04\x06 REF_END2 
-LOAD2 StopCD REF1 \xde\n REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x00\x00\x00 REF_END3  \x1e\x04\x00\x00\r\x00\x00\x1e\x0b\x00 REF_END3  \x1e\x08\x00\x00\r\x00\x00\x1e\x00\x00\x00 CALL1 \x04\x06 REF_END2 
+LOAD2 StopCD REF1 \xde\n REF_END1 
+SEQ4 \x00\x1e\x00\x00\x00 REF_END3  \x1e\x04\x00\x00\r\x00\x00\x1e\x0b\x00 REF_END3  \x1e\x08\x00\x00\r\x00\x00\x1e\x00\x00\x00 CALL1 \x04\x06 REF_END2 
 LOAD3 SePlayEx REF3 T\x0b REF_END1 \x03\x9f\x00\x00
  
 　パン！@
@@ -66,7 +72,8 @@ LOAD3 SePlayEx REF3 T\x0b REF_END1 \x03\x9f\x00\x00
 \a4,0,0,0,\n　はかったように終業のチャイムが鳴り響いた。@
 　爆発の瞬間、不意を突かれた形となった御堂はしばらく間をおい\n　てから、フン、と鼻で笑った。\
 
-\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 t\x0b CALL1 f\x03 CALL3 \x94\x03 REF_END1 
+\x00\x00
+SEQ4  REF6 t\x0b CALL1 f\x03 CALL3 \x94\x03 REF_END1 
 LOAD3 SCE026_006 REF6 *\x0e REF_END2 
 SEQ1 \x8c\x01 SEQ2 T8 SEQ3 \x03p\x00\x00
  
@@ -76,7 +83,8 @@ SEQ1 \x8c\x01 SEQ2 T8 SEQ3 \x03p\x00\x00
 錦城\n　「勝手になさい」@
 \n　言って錦城教諭は、なにごともなかったかのように軽く御堂から\n　視線を外し、とりわけ急ぐでもなく、平静そのものといった様子\n　で教室から出ていった。\p御堂もまた、鞄を自分の机の上に放り投\n　げ、退室した。\pしかし、精一杯の虚勢といった感じは否めない。\n　勝敗は明らかだった。\
 
-\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 n\x0e CALL1 f\x03 CALL3 \x94\x03 REF_END1 
+\x00
+SEQ4  REF6 n\x0e CALL1 f\x03 CALL3 \x94\x03 REF_END1 
 LOAD3 SCE026_007 REF6 h\x10 REF_END2 
 SEQ1 \x8c\x01 SEQ2 X8 SEQ3 \x03N\x00\x00
  
@@ -88,7 +96,9 @@ SEQ1 \x8c\x01 SEQ2 X8 SEQ3 \x03N\x00\x00
 学生\n　「才色兼備、度胸もあり！」@
 学生\n　「ううー、抱かれてー！」\
 
-\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \xac\x10 CALL1 f\x03 CALL3 \x94\x03 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x06\x01 CALL1 \x04\x06 CALL3 .\x06 REF_END1 
+\x00\x00\x00
+SEQ4  REF6 \xac\x10 CALL1 f\x03 CALL3 \x94\x03 REF_END1 
+SEQ4 \x00\x1e\x06\x01 CALL1 \x04\x06 CALL3 .\x06 REF_END1 
 LOAD3 SCE026_008 REF6 R\x12 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \\8 SEQ3 \x03\x85\x00\x00
  
@@ -103,8 +113,10 @@ SEQ1 \x8c\x01 SEQ2 \\8 SEQ3 \x03\x85\x00\x00
 \n　激しい自己嫌悪が胸を充たし、拓司は死を思った。@
 　ルーティン・ワーク。\
 
-\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \x96\x12 CALL1 f\x03 CALL3 \x94\x03 CALL2 f\x03 REF_END2 
-LOAD4 TextWindowOff REF2 \xf0\x14 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00 REF_END3 
+\x00
+SEQ4  REF6 \x96\x12 CALL1 f\x03 CALL3 \x94\x03 CALL2 f\x03 REF_END2 
+LOAD4 TextWindowOff REF2 \xf0\x14 REF_END1 
+SEQ4 \x00\x1e\xc8\x00 REF_END3 
 LOAD6 .\\Data\\Script\\Bg.Fob REF3 .\x15 REF_END2 
 LOAD4 BgNormalFadeIn REF1 X\x15 CALL2 \x04\x06 CALL3 \xde\n REF_END1 \x1e\x1e\x00\x00\x1e\x00\x00\x00\x00\x92 REF7 f\x03 REF_END2 
 LOAD5 TextWindowOnDirect REF1 \xb0\x15 CALL2 f\x03 REF_END2 

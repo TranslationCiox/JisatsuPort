@@ -8,7 +8,8 @@ SEQ1 \x8c\x01 SEQ2 \xf0U SEQ3 \x03b\x00\x00
 　目の前に、見知らぬ女の子が立っていた。@
 　まず目に付いたのが、度の強そうな眼鏡だった。\p眼鏡の端はな\n　ぜか小さくひび割れていて、その奥には穏やかなひかりをたた\n　えた瞳があって……そっと微笑んでいた。\
 
-\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 J\x00 REF_END3 
+\x00\x00
+SEQ4  REF6 J\x00 REF_END3 
 LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xf2\x01 REF_END2 
 LOAD2 TextOn REF1  \x02 REF_END1 
 LOAD3 SCE045_002 REF6 <\x02 REF_END2 
@@ -23,7 +24,8 @@ SEQ1 \x8c\x01 SEQ2 \xf4U SEQ3 \x03\xb7\x00\x00
 　女の子は正面から拓司を見つめていたが、その瞳は拓司に焦点\n　を結んでいなかった。@
 　拓司の身体を通り越した向こう側を……拓司が背負った非常扉\n　を……さらに非常口を通り越した向こう側を……どこでもない\n　はるか向こうの一点を、じっと見つめているのだ。\
 
-\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \x80\x02 CALL1 \xf2\x01 CALL3  \x02 REF_END1 
+\x00
+SEQ4  REF6 \x80\x02 CALL1 \xf2\x01 CALL3  \x02 REF_END1 
 LOAD3 SCE045_003 REF6 \x96\x05 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \xf8U SEQ3 \x03]\x00\x00
  
@@ -35,7 +37,8 @@ SEQ1 \x8c\x01 SEQ2 \xf8U SEQ3 \x03]\x00\x00
 女の子\n　「これ、お願いします」@
 \n　そういうと彼女は、小脇に抱えたファイルから１枚の紙切れを\n大事そうに取り出した。\pそれはＡ４大の紙切れで、そこにはなにか\nびっしりと文字が書き込まれている。\
 
-\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \xda\x05 CALL1 \xf2\x01 CALL3  \x02 REF_END1 
+\x00
+SEQ4  REF6 \xda\x05 CALL1 \xf2\x01 CALL3  \x02 REF_END1 
 LOAD3 SCE045_004 REF6 \x88\x07 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \xfcU SEQ3 \x03B\x00\x00
  
@@ -44,7 +47,8 @@ SEQ1 \x8c\x01 SEQ2 \xfcU SEQ3 \x03B\x00\x00
 \n拓司\n　「……」@
 \n　そこには奇妙な図形や計算式、そして明らかに常軌を逸した文\n　章が踊っていた。\
 
-\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \xcc\x07 CALL1 \xf2\x01 CALL3  \x02 REF_END1 
+\x00\x00\x00
+SEQ4  REF6 \xcc\x07 CALL1 \xf2\x01 CALL3  \x02 REF_END1 
 LOAD3 SCE045_005 REF6 \x0e\t REF_END2 
 SEQ1 \x8c\x01 SEQ2 \x00V SEQ3 \x03\x17\x01\x00
  
@@ -53,7 +57,8 @@ SEQ1 \x8c\x01 SEQ2 \x00V SEQ3 \x03\x17\x01\x00
 　電磁波の大半が地上に到達する前に消滅し、カオス的な系が、\n　最終的な結果の初期条件（非常に敏感に変化してしまう系だそ\n　うです）、または最終的な結果（到達点）は初期条件（最初の\n　点）によって規定され、私は二つの指輪（核酸＝ＤＮＡ＆ＲＮＡ\n　）を受け取ることにより、凶悪異星人による犯罪行為を未然に防\n　／防止したいと日夜戦い続けています。\p上記、確かにお願いし\n　御ます。\p異星人による、細胞に対して行われる化学反応攻撃（触\n　媒）、構造の単位（グリシン。アルギニン。アラニン。アスパ\n　ラギン。バリン。フェニルアラニン。トリプトファン）が選ば\n　れ、毎日犯されて、苦しめられてきました（これはまだ証明で\n　きません）。\pこうした真実を告発ならびに警告としての私がお\n　知らせします。\p警察、自衛隊、科学組織出身の方々への働きか\n　けと、放送関係のご協力をお願いいたします（精神的なもので\n　も構いません）。\p詳しくは私、雲居なたねまでご相談くださ\n　い。@
 　電話番号××××－××××。\n　住所×××××××××××……\
 
-\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 R\t CALL1 \xf2\x01 CALL3  \x02 REF_END1 
+\x00
+SEQ4  REF6 R\t CALL1 \xf2\x01 CALL3  \x02 REF_END1 
 LOAD3 SCE045_006 REF6 \xe8\r REF_END2 
 SEQ1 \x8c\x01 SEQ2 \x04V SEQ3 \x03O\x00\x00
  
@@ -65,7 +70,8 @@ SEQ1 \x8c\x01 SEQ2 \x04V SEQ3 \x03O\x00\x00
 　Ｔ大合格も間違いないと囁かれる優等生……。@
 　そして雲居なたねは、今年の春、別の意味でさらに有名にな\n　った。\
 
-\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 ,\x0e CALL1 \xf2\x01 CALL3  \x02 REF_END1 
+\x00
+SEQ4  REF6 ,\x0e CALL1 \xf2\x01 CALL3  \x02 REF_END1 
 LOAD3 SCE045_007 REF6 \xa2\x0f REF_END2 
 SEQ1 \x8c\x01 SEQ2 \x08V SEQ3 \x03\xac\x00\x00
  
@@ -74,7 +80,8 @@ SEQ1 \x8c\x01 SEQ2 \x08V SEQ3 \x03\xac\x00\x00
 　噂は噂を呼び、やがて、雲居なたねは「自分が宇宙人にレイ\nプされた」と警察に証言した、という話までもが飛びだした。@
 　雲居なたねはＵＦＯに拉致されて、宇宙人に身体検査されたら\nしい……優秀な地球人のサンプルとして、身体の奥まで調べ尽く\nされたらしい……よくある話だよね……一種の現実逃避……宇宙\n人にレイプされたと信じることでレイプされたという現実から自\n分を守ってるわけだよ……なんかそういうの小説で読んだ気がす\nる……嘲笑……嘲笑……嘲笑。\
 
-\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \xe6\x0f CALL1 \xf2\x01 CALL3  \x02 REF_END1 
+\x00
+SEQ4  REF6 \xe6\x0f CALL1 \xf2\x01 CALL3  \x02 REF_END1 
 LOAD3 SCE045_008 REF6 \xd0\x12 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \x0cV SEQ3 \x03\x96\x00\x00
  
@@ -83,7 +90,8 @@ SEQ1 \x8c\x01 SEQ2 \x0cV SEQ3 \x03\x96\x00\x00
 　雲居なたねは、自分が宇宙人にレイプされたと信じていた。@
 　虚ろな瞳で、誰かまわずその話をして回った。どのようにＵＦ\nＯに拉致されて、どのように身体を調べられたのか？\p　宇宙人は\nどのような外見で、どのような陰謀を企てているのか？\p　地球人\nはどのような対策を練って、どのように対抗しなければならない\nのか……？\p　最初は面白がっていた学生たちも、やがてそれが冗\n談ではすまされないということに気づき、雲居なたねを避ける\nようになっていった。\
 
-\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \x14\x13 CALL1 \xf2\x01 CALL3  \x02 REF_END1 
+\x00
+SEQ4  REF6 \x14\x13 CALL1 \xf2\x01 CALL3  \x02 REF_END1 
 LOAD3 SCE045_009 REF6 \xa6\x15 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \x10V SEQ3 \x03\x8b\x00\x00
  
@@ -94,7 +102,8 @@ SEQ1 \x8c\x01 SEQ2 \x10V SEQ3 \x03\x8b\x00\x00
 \n　それはおそらく、雲居なたねの細い線が生み出した印象なの\nだろう。\pあるいは小さくひび割れた眼鏡が生み出した印象。@
 　壊れやすい、ガラス細工のようなイメージが。\
 
-\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \xea\x15 CALL1 \xf2\x01 CALL3  \x02 REF_END1 
+\x00\x00\x00
+SEQ4  REF6 \xea\x15 CALL1 \xf2\x01 CALL3  \x02 REF_END1 
 LOAD3 SCE045_010 REF6 P\x18 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \x14V SEQ3 \x03W\x00\x00
  
@@ -106,7 +115,8 @@ SEQ1 \x8c\x01 SEQ2 \x14V SEQ3 \x03W\x00\x00
 \nなたね\n　「ありがとう」@
 \n　なたねは照れくさそうにほほえんだ。\
 
-\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \x94\x18 CALL1 \xf2\x01 CALL3  \x02 REF_END1 
+\x00
+SEQ4  REF6 \x94\x18 CALL1 \xf2\x01 CALL3  \x02 REF_END1 
 LOAD3 SCE045_011 REF6 *\x1a REF_END2 
 SEQ1 \x8c\x01 SEQ2 \x18V SEQ3 \x03O\x00\x00
  
@@ -114,7 +124,8 @@ SEQ1 \x8c\x01 SEQ2 \x18V SEQ3 \x03O\x00\x00
 \n　なたねはそういって、もう一度笑った。@
 　寂しそうなほほえみだった。\
 
-\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 n\x1a CALL1 \xf2\x01 CALL3  \x02 REF_END1 
+\x00
+SEQ4  REF6 n\x1a CALL1 \xf2\x01 CALL3  \x02 REF_END1 
 LOAD3 SCE045_012 REF6 \xe4\x1b REF_END2 
 SEQ1 \x8c\x01 SEQ2 \x1cV SEQ3 \x03d\x00\x00
  
@@ -128,7 +139,8 @@ SEQ1 \x8c\x01 SEQ2 \x1cV SEQ3 \x03d\x00\x00
 　彼女はその主人公として、必死に生きている。@
 　真剣に自分と向き合っているのだ。\
 
-\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 (\x1c CALL1 \xf2\x01 CALL3  \x02 REF_END1 
+\x00
+SEQ4  REF6 (\x1c CALL1 \xf2\x01 CALL3  \x02 REF_END1 
 LOAD3 SCE045_013 REF6 \xf2\x1d REF_END2 
 SEQ1 \x8c\x01 SEQ2  V SEQ3 \x03\x8b\x00\x00
  
@@ -142,7 +154,8 @@ SEQ1 \x8c\x01 SEQ2  V SEQ3 \x03\x8b\x00\x00
 御堂\n　「そりゃどうも、か」@
 \n　御堂はフン、と鼻で笑った。\
 
- \x1e\x00\x00\x00\x00\r\x00 REF6 6\x1e CALL1 \xf2\x01 CALL3  \x02 REF_END1 
+
+SEQ4  REF6 6\x1e CALL1 \xf2\x01 CALL3  \x02 REF_END1 
 LOAD3 SCE045_014 REF6 \x9c  REF_END2 
 SEQ1 \x8c\x01 SEQ2 $V SEQ3 \x03V\x00\x00
  
@@ -156,7 +169,8 @@ SEQ1 \x8c\x01 SEQ2 $V SEQ3 \x03V\x00\x00
 御堂\n　「ところで－－おまえもなたねちゃんと知り合いだったのか？」\n　　@
 拓司\n　「なに？」\
 
-\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \xe0  CALL1 \xf2\x01 CALL3  \x02 REF_END1 
+\x00
+SEQ4  REF6 \xe0  CALL1 \xf2\x01 CALL3  \x02 REF_END1 
 LOAD3 SCE045_015 REF6 r" REF_END2 
 SEQ1 \x8c\x01 SEQ2 (V SEQ3 \x03[\x00\x00
  
@@ -168,7 +182,8 @@ SEQ1 \x8c\x01 SEQ2 (V SEQ3 \x03[\x00\x00
 　　おれたち、協力してるんだよ」@
 拓司\n　「……何の話だ？」\
 
-\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \xb6" CALL1 \xf2\x01 CALL3  \x02 REF_END1 
+\x00\x00\x00
+SEQ4  REF6 \xb6" CALL1 \xf2\x01 CALL3  \x02 REF_END1 
 LOAD3 SCE045_016 REF6 \\$ REF_END2 
 SEQ1 \x8c\x01 SEQ2 ,V SEQ3 \x03\x8d\x00\x00
  
@@ -182,7 +197,8 @@ SEQ1 \x8c\x01 SEQ2 ,V SEQ3 \x03\x8d\x00\x00
 　　ひとりひとりの物語は小さいわ。\p極微。\pそれが無限に連なっ\n　　てこそ、世界は動いていくの」@
 拓司\n　「……」\
 
-\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \xa0$ CALL1 \xf2\x01 CALL3  \x02 REF_END1 
+\x00
+SEQ4  REF6 \xa0$ CALL1 \xf2\x01 CALL3  \x02 REF_END1 
 LOAD3 SCE045_017 REF6 \x0e' REF_END2 
 SEQ1 \x8c\x01 SEQ2 0V SEQ3 \x03\x81\x00\x00
  
@@ -194,7 +210,8 @@ SEQ1 \x8c\x01 SEQ2 0V SEQ3 \x03\x81\x00\x00
 \n　ガンプだよガンプ、と取り巻きのひとりがいった。@
 　無意味な笑いがまきおこる。\
 
-\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 R' CALL1 \xf2\x01 CALL3  \x02 REF_END1 
+\x00\x00\x00
+SEQ4  REF6 R' CALL1 \xf2\x01 CALL3  \x02 REF_END1 
 LOAD3 SCE045_019 REF6 \x90) REF_END2 
 SEQ1 \x8c\x01 SEQ2 8V SEQ3 \x03V\x00\x00
  
@@ -208,17 +225,20 @@ SEQ1 \x8c\x01 SEQ2 8V SEQ3 \x03V\x00\x00
 御堂\n　「なたねちゃんと地球防衛ミーティングがあるんだよ」@
 拓司\n　「……なに？」\
 
-\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \xd4) CALL1 \xf2\x01 CALL3  \x02 REF_END1 
+\x00
+SEQ4  REF6 \xd4) CALL1 \xf2\x01 CALL3  \x02 REF_END1 
 LOAD3 SCE045_020 REF6 f+ REF_END2 
 SEQ1 \x8c\x01 SEQ2 <V SEQ3 \x03?\x00\x00
  
 御堂\n　「そうだ、お前も来るか？\p　天才少女雲居なたねさんの学説\n　　によると、人間と人間の出会いにはすべからく意味があるら\n　　しいぜ？\p　ってことは、ここでおれたちが逢ったことも、偶\n　　然じゃないってことだろ？\p　ナ……来いよ、虎菱？」\
 
-\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \xaa+ CALL1 \xf2\x01 CALL3  \x02 REF_END1 \x03\x0b\x00\x00
+\x00
+SEQ4  REF6 \xaa+ CALL1 \xf2\x01 CALL3  \x02 REF_END1 \x03\x0b\x00\x00
 CHOICE
 御堂に従う\n御堂を無視する\n\l0,2,
 ENDCHOICE
 
-\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \xe0, CALL1 \xf2\x01 CALL3  \x02 CALL2 \xf2\x01 REF_END2 
+\x00
+SEQ4  REF6 \xe0, CALL1 \xf2\x01 CALL3  \x02 CALL2 \xf2\x01 REF_END2 
 LOAD3 TextClose REF2 R- REF_END1 
 END_FILE

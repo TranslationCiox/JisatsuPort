@@ -17,7 +17,8 @@ SEQ1 \x8c\x01 SEQ2 \xe0\x92 SEQ3 \x03\xb8\x00\x00
 拓司は机の上に吐瀉物をまき散らした。@
 頭の中から、すうっと何かが引いていった。\pそれまでの熱狂が嘘\nだったように、冷めた、しらけた感じが－－おなじみの感覚が頭\nの中を支配していた。\
 
-\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 J\x00 REF_END3 
+\x00\x00\x00
+SEQ4  REF6 J\x00 REF_END3 
 LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 J\x03 REF_END2 
 LOAD2 TextOn REF1 x\x03 REF_END1 
 LOAD3 SCE084_002 REF6 \x94\x03 REF_END2 
@@ -28,6 +29,7 @@ SEQ1 \x8c\x01 SEQ2 \xe4\x92 SEQ3 \x03C\x00\x00
 あっけなく見つかった。\pロープが切れたのであろう、紅葉はロー\nプを首に巻き付けたまま、床に転がっていた。\p駆け寄るとまだ呼\n吸はある。\p気絶しているだけだ。@
 \n拓司\n　「紅葉！\p　紅葉ッ！」\
 
-\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \xd8\x03 CALL1 J\x03 CALL3 x\x03 CALL2 J\x03 REF_END2 
+\x00\x00\x00
+SEQ4  REF6 \xd8\x03 CALL1 J\x03 CALL3 x\x03 CALL2 J\x03 REF_END2 
 LOAD3 TextClose REF2 *\x05 REF_END1 
 END_FILE

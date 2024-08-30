@@ -5,11 +5,14 @@ SEQ1 \x8c\x01 SEQ2 p0 SEQ3 \x03\x10\x00\x00
  
 \n\n\n\n\n\n\n\n\n\n　　　　　　　　　『学校／四限』\
 
-\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 J\x00 REF_END3 
+\x00\x00\x00
+SEQ4  REF6 J\x00 REF_END3 
 LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xaa\x00 REF_END2 
-LOAD2 TextOn REF1 \xd8\x00 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x05\x00 REF_END3 
+LOAD2 TextOn REF1 \xd8\x00 REF_END1 
+SEQ4 \x00\x1e\x05\x00 REF_END3 
 LOAD6 .\\Data\\Script\\Bg.Fob REF3 \x0e\x01 REF_END2 
-LOAD4 BgAutoFadeIn REF3 8\x01 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x08\x01 REF_END3 
+LOAD4 BgAutoFadeIn REF3 8\x01 REF_END1 
+SEQ4 \x00\x1e\x08\x01 REF_END3 
 LOAD6 .\\Data\\Script\\Bgm.Fob REF2 v\x01 REF_END2 
 LOAD2 PlayCD REF1 \xa0\x01 REF_END1 
 LOAD3 SCE021_002 REF6 \xbc\x01 REF_END2 
@@ -28,7 +31,9 @@ SEQ1 \x8c\x01 SEQ2 t0 SEQ3 \x03q\x00\x00
 　逃げられない。@
 　悲鳴をあげることしかできない。\
 
-\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \x00\x02 CALL1 \xaa\x00 CALL3 \xd8\x00 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00 CALL1 \x0e\x01 CALL3 8\x01 REF_END1 
+\x00\x00\x00
+SEQ4  REF6 \x00\x02 CALL1 \xaa\x00 CALL3 \xd8\x00 REF_END1 
+SEQ4 \x00\x1e\xc8\x00 CALL1 \x0e\x01 CALL3 8\x01 REF_END1 
 LOAD3 SCE021_003 REF6 2\x04 REF_END2 
 SEQ1 \x8c\x01 SEQ2 x0 SEQ3 \x03~\x00\x00
  
@@ -42,7 +47,8 @@ SEQ1 \x8c\x01 SEQ2 x0 SEQ3 \x03~\x00\x00
 　－－そのうち、死にすら、この鈍いひりつきを……真実の痛みを\n　感じられなくなってしまうのではないか？@
 　のどの奥から、吐瀉物のような恐怖が込み上がってくる。@
 \z
-\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 v\x04 CALL1 \xaa\x00 CALL3 \xd8\x00 REF_END1 
+\x00\x00\x00
+SEQ4  REF6 v\x04 CALL1 \xaa\x00 CALL3 \xd8\x00 REF_END1 
 LOAD3 SCE021_004 REF6 \xa8\x06 REF_END2 
 SEQ1 \x8c\x01 SEQ2 |0 SEQ3 \x03Q\x00\x00
  
@@ -53,11 +59,13 @@ SEQ1 \x8c\x01 SEQ2 |0 SEQ3 \x03Q\x00\x00
 　真剣に自殺を考えるくらいの、モラルに反した妄想が。@
 　拓司は自分の大切な人を……妄想の檻の中に……ゆっくりと囲っ\n　ていった。\
 
-\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \xec\x06 CALL1 \xaa\x00 CALL3 \xd8\x00 REF_END1 \x03\x0f\x00\x00
+\x00
+SEQ4  REF6 \xec\x06 CALL1 \xaa\x00 CALL3 \xd8\x00 REF_END1 \x03\x0f\x00\x00
 CHOICE
 早桃を妄想の中で犯す\n紅葉を想像の中で犯す\n\l0,2,
 ENDCHOICE
 
-\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 j\x08 CALL1 \xaa\x00 CALL3 \xd8\x00 CALL2 \xaa\x00 REF_END2 
+\x00
+SEQ4  REF6 j\x08 CALL1 \xaa\x00 CALL3 \xd8\x00 CALL2 \xaa\x00 REF_END2 
 LOAD3 TextClose REF2 \xec\x08 REF_END1 
 END_FILE

@@ -1,5 +1,6 @@
 START_FILE
-l-\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x004&\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1e\t\x01 REF_END3 
+l-\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x004&\x00
+SEQ4 \x00\x1e\t\x01 REF_END3 
 LOAD6 .\\Data\\Script\\Bgm.Fob REF2  \x00 REF_END2 
 LOAD2 PlayCD REF1 J\x00 REF_END1 
 LOAD3 SCE043_001 REF6 f\x00 REF_END2 
@@ -13,7 +14,8 @@ SEQ1 \x8c\x01 SEQ2 \xd0R SEQ3 \x03\x88\x00\x00
 　拓司とこの場所のことを知る人間は、ほとんどいなかった。@
 　だから、あらゆる現実のあれこれから、切り離されるような気\n　がした。\p雲を眺めていると、勉強やら、親の再婚やらの嫌なこ\n　とは、全部忘れられた。\
 
-\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \xaa\x00 REF_END3 
+\x00\x00\x00
+SEQ4  REF6 \xaa\x00 REF_END3 
 LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xea\x02 REF_END2 
 LOAD2 TextOn REF1 \x18\x03 REF_END1 
 LOAD3 SCE043_002 REF6 4\x03 REF_END2 
@@ -29,7 +31,8 @@ SEQ1 \x8c\x01 SEQ2 \xd4R SEQ3 \x03\x8e\x00\x00
 　光景がそこにあった。@
 \n　－－紅葉の顔に浮かんだあの表情は、なんだったのだろう？\
 
-\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 x\x03 CALL1 \xea\x02 CALL3 \x18\x03 REF_END1 
+\x00\x00\x00
+SEQ4  REF6 x\x03 CALL1 \xea\x02 CALL3 \x18\x03 REF_END1 
 LOAD3 SCE043_003 REF6 \xea\x05 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \xd8R SEQ3 \x03\xe6\x00\x00
  
@@ -44,7 +47,8 @@ SEQ1 \x8c\x01 SEQ2 \xd8R SEQ3 \x03\xe6\x00\x00
 しかし、そうした痛手を受けてもなお、「もしかして」という甘\nい幻想がわき起こってくるのを禁じ得ない。@
 \n－－そうとでも考えないと、あのキスは永遠に宙ぶらりんなまま\nだ。\
 
-\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 .\x06 CALL1 \xea\x02 CALL3 \x18\x03 REF_END1 
+\x00
+SEQ4  REF6 .\x06 CALL1 \xea\x02 CALL3 \x18\x03 REF_END1 
 LOAD3 SCE043_004 REF6 \x00\n REF_END2 
 SEQ1 \x8c\x01 SEQ2 \xdcR SEQ3 \x03\x9b\x00\x00
  
@@ -56,7 +60,9 @@ SEQ1 \x8c\x01 SEQ2 \xdcR SEQ3 \x03\x9b\x00\x00
 どれも見慣れたクラスの女の子だ。@
 驚いたが、それよりもまず、紅葉がこの秘密の場所に、自分たち\n以外の他人を連れてきたと言うことに怒りを禁じ得なかった。\
 
- \x1e\x00\x00\x00\x00\r\x00 REF6 D\n CALL1 \xea\x02 CALL3 \x18\x03 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\n\x01 CALL1  \x00 CALL3 J\x00 REF_END1 
+
+SEQ4  REF6 D\n CALL1 \xea\x02 CALL3 \x18\x03 REF_END1 
+SEQ4 \x00\x1e\n\x01 CALL1  \x00 CALL3 J\x00 REF_END1 
 LOAD3 SCE043_005 REF6 \x1e\r REF_END2 
 SEQ1 \x8c\x01 SEQ2 \xe0R SEQ3 \x03T\x00\x00
  
@@ -69,7 +75,8 @@ SEQ1 \x8c\x01 SEQ2 \xe0R SEQ3 \x03T\x00\x00
 女子学生\n　「幼なじみってだけで、勘違いされちゃ困るって」@
 拓司\n　「……？」\
 
-\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 b\r CALL1 \xea\x02 CALL3 \x18\x03 REF_END1 
+\x00
+SEQ4  REF6 b\r CALL1 \xea\x02 CALL3 \x18\x03 REF_END1 
 LOAD3 SCE043_006 REF6 \xec\x0e REF_END2 
 SEQ1 \x8c\x01 SEQ2 \xe4R SEQ3 \x03]\x00\x00
  
@@ -79,7 +86,8 @@ SEQ1 \x8c\x01 SEQ2 \xe4R SEQ3 \x03]\x00\x00
 \n拓司\n　「どういうことだ？　なんなんだ、これは？」@
 紅葉\n　「……」\
 
-\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 0\x0f CALL1 \xea\x02 CALL3 \x18\x03 REF_END1 
+\x00
+SEQ4  REF6 0\x0f CALL1 \xea\x02 CALL3 \x18\x03 REF_END1 
 LOAD3 SCE043_007 REF6 \xde\x10 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \xe8R SEQ3 \x03U\x00\x00
  
@@ -91,7 +99,8 @@ SEQ1 \x8c\x01 SEQ2 \xe8R SEQ3 \x03U\x00\x00
 女子学生\n　「そんなふうにいわれたら、紅葉だって怖くて言えないでしょ\n　　！」@
 女子学生\n　「あ～、勘違い男は怖い怖い」\
 
-\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 "\x11 CALL1 \xea\x02 CALL3 \x18\x03 REF_END1 
+\x00\x00\x00
+SEQ4  REF6 "\x11 CALL1 \xea\x02 CALL3 \x18\x03 REF_END1 
 LOAD3 SCE043_008 REF6 \xb0\x12 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \xecR SEQ3 \x03\xa6\x00\x00
  
@@ -101,7 +110,8 @@ SEQ1 \x8c\x01 SEQ2 \xecR SEQ3 \x03\xa6\x00\x00
 彼女たちがいっている言葉は－－幼なじみが無条件に相手に淡い\n恋心を抱くという都合のいい幻想は－－確かに拓司の中にあるも\nのだった。\pあまりにも都合がいい、そんなに話は単純ではない、\nと思いながらも、わき上がってくるのを抑えられなかった思いで\nある。\pそこを指摘されたのが、痛い。@
 \n拓司\n　「紅葉。\pどういうことか説明してくれ」\
 
-\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \xf4\x12 CALL1 \xea\x02 CALL3 \x18\x03 REF_END1 
+\x00\x00\x00
+SEQ4  REF6 \xf4\x12 CALL1 \xea\x02 CALL3 \x18\x03 REF_END1 
 LOAD3 SCE043_009 REF6 \xc6\x15 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \xf0R SEQ3 \x03z\x00\x00
  
@@ -111,7 +121,8 @@ SEQ1 \x8c\x01 SEQ2 \xf0R SEQ3 \x03z\x00\x00
 　　それにこの前、自分でもよくわからないんだけど……ホラ、\n　　ちょっと……ね？　あったでしょ、いろいろ。@
 　　そういうこともあってさ、しかも今日、お弁当がどうのこう\n　　のとかいわれちゃって、ほんと困っちゃって。\pいい機会だか\n　　ら、ここらへんではっきりさせておこうと思って。\pそういう\n　　こと」\
 
-\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \n\x16 CALL1 \xea\x02 CALL3 \x18\x03 CALL2  \x00 REF_END2 
+\x00
+SEQ4  REF6 \n\x16 CALL1 \xea\x02 CALL3 \x18\x03 CALL2  \x00 REF_END2 
 LOAD2 StopCD REF1 8\x18 REF_END1 
 LOAD3 SCE043_010 REF6 T\x18 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \xf4R SEQ3 \x03`\x00\x00
@@ -124,14 +135,16 @@ SEQ1 \x8c\x01 SEQ2 \xf4R SEQ3 \x03`\x00\x00
 拓司はかつてここまでの直接的な審判を、他人から下されたこと\nなど一度もなかった。@
 \n拓司\n　「……わかった」@
 \z
-\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \x98\x18 CALL1 \xea\x02 CALL3 \x18\x03 REF_END1 
+\x00
+SEQ4  REF6 \x98\x18 CALL1 \xea\x02 CALL3 \x18\x03 REF_END1 
 LOAD3 SCE043_011 REF6 R\x1a REF_END2 
 SEQ1 \x8c\x01 SEQ2 \xf8R SEQ3 \x034\x00\x00
  
 そういうしかなかった。\pリバーシで、角を取られるとわかってい\nながらもおかなければならない石。\pパスはない。@
 石がおける場合は、置かなければならない。\pそういう状況に、追\nい込まれてしまったのだ。\
 
-\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \x96\x1a CALL1 \xea\x02 CALL3 \x18\x03 REF_END1 
+\x00
+SEQ4  REF6 \x96\x1a CALL1 \xea\x02 CALL3 \x18\x03 REF_END1 
 LOAD3 SCE043_012 REF6 \xa0\x1b REF_END2 
 SEQ1 \x8c\x01 SEQ2 \xfcR SEQ3 \x03:\x00\x00
  
@@ -140,7 +153,9 @@ SEQ1 \x8c\x01 SEQ2 \xfcR SEQ3 \x03:\x00\x00
 女子学生\n　「－－もう大丈夫だからね、紅葉？」@
 女子学生\n　「－－行こう、紅葉？」\
 
-\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \xe4\x1b CALL1 \xea\x02 CALL3 \x18\x03 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00 REF_END3 
+\x00
+SEQ4  REF6 \xe4\x1b CALL1 \xea\x02 CALL3 \x18\x03 REF_END1 
+SEQ4 \x00\x1e\xc8\x00 REF_END3 
 LOAD6 .\\Data\\Script\\Bg.Fob REF3  \x1d REF_END2 
 LOAD4 BgAutoFadeIn REF3 J\x1d REF_END1 
 LOAD3 SCE043_013 REF6 n\x1d REF_END2 
@@ -149,7 +164,8 @@ SEQ1 \x8c\x01 SEQ2 \x00S SEQ3 \x03J\x00\x00
 そんな言葉を聞きながら、拓司はコンクリートの地面をじっと見\nつめて、紅葉たちが去るのを待った。@
 打ちのめされた気分だった。\pプライドはずたずたに引き裂かれ、\n泥まみれになっていた。\pこのところなかったほどのリアルな痛み\nが胸を充たしていたが、いまはそれも、とても歓迎できそうもな\nい。\
 
-\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \xb2\x1d CALL1 \xea\x02 CALL3 \x18\x03 REF_END1 
+\x00
+SEQ4  REF6 \xb2\x1d CALL1 \xea\x02 CALL3 \x18\x03 REF_END1 
 LOAD3 SCE043_014 REF6 \x14\x1f REF_END2 
 SEQ1 \x8c\x01 SEQ2 \x04S SEQ3 \x03\x93\x00\x00
  
@@ -160,7 +176,8 @@ SEQ1 \x8c\x01 SEQ2 \x04S SEQ3 \x03\x93\x00\x00
 その顔には、先ほどまでの勝ち誇ったような表情はすでにない。@
 さきほど教室でみせた、あの複雑な表情が－－相反する二つの感\n情がせめぎ合っているような……怯えと期待、罪悪感と爽快感、\n悲しみと喜び、そんなものが現れては消え、消えてはまた浮かび\n上がる、あの表情が張り付いている。\
 
-\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 X\x1f CALL1 \xea\x02 CALL3 \x18\x03 REF_END1 
+\x00\x00
+SEQ4  REF6 X\x1f CALL1 \xea\x02 CALL3 \x18\x03 REF_END1 
 LOAD3 SCE043_015 REF6 \xde! REF_END2 
 SEQ1 \x8c\x01 SEQ2 \x08S SEQ3 \x03}\x00\x00
  
@@ -172,7 +189,8 @@ SEQ1 \x8c\x01 SEQ2 \x08S SEQ3 \x03}\x00\x00
 本当の答は、もっといびつで、一見、とても欠けた場所には当て\nはまりそうもないピースなのだと。@
 \n気まずい沈黙を破ったのは、紅葉だった。\
 
-\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 "" CALL1 \xea\x02 CALL3 \x18\x03 REF_END1 
+\x00\x00\x00
+SEQ4  REF6 "" CALL1 \xea\x02 CALL3 \x18\x03 REF_END1 
 LOAD3 SCE043_016 REF6 P$ REF_END2 
 SEQ1 \x8c\x01 SEQ2 \x0cS SEQ3 \x03O\x00\x00
  
@@ -182,6 +200,7 @@ SEQ1 \x8c\x01 SEQ2 \x0cS SEQ3 \x03O\x00\x00
 何人かは拓司に、いまいましそうな一瞥を残してゆく。@
 そうして拓司はひとり、奇妙な空白の中にとりのこされた。\
 
-\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \x94$ CALL1 \xea\x02 CALL3 \x18\x03 CALL2 \xea\x02 REF_END2 
+\x00\x00
+SEQ4  REF6 \x94$ CALL1 \xea\x02 CALL3 \x18\x03 CALL2 \xea\x02 REF_END2 
 LOAD3 TextClose REF2 \x16& REF_END1 
 END_FILE

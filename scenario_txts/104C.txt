@@ -9,7 +9,8 @@ SEQ1 \x8c\x01 SEQ2  \xb2 SEQ3 \x03T\x00\x00
 なたね\n　「……」@
 \nなたねは一瞬事態が飲み込めない様子で、説明を求めるようにあ\nたりを見回した。\pしかし、カンナも早桃も紅葉も錦城も、じっ\nと冷たい目で見返すばかり。\
 
-\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 J\x00 REF_END3 
+\x00\x00\x00
+SEQ4  REF6 J\x00 REF_END3 
 LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xba\x01 REF_END2 
 LOAD2 TextOn REF1 \xe8\x01 REF_END1 
 LOAD3 SCE104_002 REF6 \x04\x02 REF_END2 
@@ -23,7 +24,8 @@ SEQ1 \x8c\x01 SEQ2 $\xb2 SEQ3 \x03\x7f\x00\x00
 拓司\n　「なにを……！」@
 なたね\n　「物資の管理者に適任なのは、私です」\
 
-\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 H\x02 CALL1 \xba\x01 CALL3 \xe8\x01 REF_END1 
+\x00
+SEQ4  REF6 H\x02 CALL1 \xba\x01 CALL3 \xe8\x01 REF_END1 
 LOAD3 SCE104_003 REF6 ~\x04 REF_END2 
 SEQ1 \x8c\x01 SEQ2 (\xb2 SEQ3 \x03D\x00\x00
  
@@ -33,7 +35,8 @@ SEQ1 \x8c\x01 SEQ2 (\xb2 SEQ3 \x03D\x00\x00
 なたね\n　「だって！」@
 \nなたねが突如叫んで、拓司を遮った。\
 
-\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \xc2\x04 CALL1 \xba\x01 CALL3 \xe8\x01 REF_END1 
+\x00
+SEQ4  REF6 \xc2\x04 CALL1 \xba\x01 CALL3 \xe8\x01 REF_END1 
 LOAD3 SCE104_004 REF6 \x0c\x06 REF_END2 
 SEQ1 \x8c\x01 SEQ2 ,\xb2 SEQ3 \x03\xb7\x00\x00
  
@@ -45,7 +48,8 @@ SEQ1 \x8c\x01 SEQ2 ,\xb2 SEQ3 \x03\xb7\x00\x00
 \n御堂\n　「……やってみろよ。\pお前がどんなことしようとも、鍵はとら\n　　せてもらうからな」@
 なたね\n　「……」\
 
-\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 P\x06 CALL1 \xba\x01 CALL3 \xe8\x01 REF_END1 
+\x00
+SEQ4  REF6 P\x06 CALL1 \xba\x01 CALL3 \xe8\x01 REF_END1 
 LOAD3 SCE104_005 REF6 f\t REF_END2 
 SEQ1 \x8c\x01 SEQ2 0\xb2 SEQ3 \x03[\x00\x00
  
@@ -57,11 +61,13 @@ SEQ1 \x8c\x01 SEQ2 0\xb2 SEQ3 \x03[\x00\x00
 なたね\n　「人殺し！\p　人殺しの大バカタレ国民が！」@
 御堂\n　「……」\
 
-\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \xaa\t CALL1 \xba\x01 CALL3 \xe8\x01 REF_END1 \x03\x0c\x00\x00
+\x00
+SEQ4  REF6 \xaa\t CALL1 \xba\x01 CALL3 \xe8\x01 REF_END1 \x03\x0c\x00\x00
 CHOICE
 御堂を止める\n黙ってみている\n\l0,2,
 ENDCHOICE
 
-\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 P\x0b CALL1 \xba\x01 CALL3 \xe8\x01 CALL2 \xba\x01 REF_END2 
+\x00\x00\x00
+SEQ4  REF6 P\x0b CALL1 \xba\x01 CALL3 \xe8\x01 CALL2 \xba\x01 REF_END2 
 LOAD3 TextClose REF2 \xc6\x0b REF_END1 
 END_FILE

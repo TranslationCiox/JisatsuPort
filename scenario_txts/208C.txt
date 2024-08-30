@@ -9,7 +9,8 @@ SEQ1 \x8c\x01 SEQ2 \xa0T\x01\x0c\x00\x00\x00\x00"\x03\x90\x00\x00
 拓司\n　「……」@
 ナタネ\n　「……」\
 
-\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 J\x00 REF_END3 
+\x00\x00\x00
+SEQ4  REF6 J\x00 REF_END3 
 LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xaa\x02 REF_END2 
 LOAD2 TextOn REF1 \xd8\x02 CALL2 \xaa\x02 REF_END2 
 LOAD3 TextClose REF2 \x00\x03 REF_END1 

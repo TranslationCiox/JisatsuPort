@@ -1,5 +1,6 @@
 START_FILE
-\x07\x0e\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00X\x0b\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x08\x01 REF_END3 
+\x07\x0e\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00X\x0b\x00
+SEQ4 \x00\x1e\x08\x01 REF_END3 
 LOAD6 .\\Data\\Script\\Bgm.Fob REF2  \x00 REF_END2 
 LOAD2 PlayCD REF1 J\x00 REF_END1 
 LOAD3 SCE038_001 REF6 f\x00 REF_END2 
@@ -13,7 +14,8 @@ SEQ1 \x8c\x01 SEQ2 \x00K SEQ3 \x03a\x00\x00
 無表情だったが、それが仮面にすぎないことは、拓司にもすぐに\nわかった。@
 やがて早桃がポツリといった。\
 
-\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \xaa\x00 REF_END3 
+\x00\x00\x00
+SEQ4  REF6 \xaa\x00 REF_END3 
 LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 N\x02 REF_END2 
 LOAD2 TextOn REF1 |\x02 REF_END1 
 LOAD3 SCE038_002 REF6 \x98\x02 REF_END2 
@@ -28,7 +30,8 @@ SEQ1 \x8c\x01 SEQ2 \x04K SEQ3 \x03b\x00\x00
 　　あれ着てマラソンでもしたら、なんだか強くなりそうな気が\n　　する」@
 \n　早桃の顔に、ようやく柔らかい笑顔が戻った。\
 
-\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \xdc\x02 CALL1 N\x02 CALL3 |\x02 REF_END1 
+\x00\x00\x00
+SEQ4  REF6 \xdc\x02 CALL1 N\x02 CALL3 |\x02 REF_END1 
 LOAD3 SCE038_003 REF6 \x9e\x04 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \x08K SEQ3 \x03L\x00\x00
  
@@ -41,7 +44,8 @@ SEQ1 \x8c\x01 SEQ2 \x08K SEQ3 \x03L\x00\x00
 拓司\n　「カンフー……カンフーと……@
 　　あと、香港といえばブランド品の買い物だな」\
 
-\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \xe2\x04 CALL1 N\x02 CALL3 |\x02 REF_END1 
+\x00
+SEQ4  REF6 \xe2\x04 CALL1 N\x02 CALL3 |\x02 REF_END1 
 LOAD3 SCE038_004 REF6 L\x06 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \x0cK SEQ3 \x03P\x00\x00
  
@@ -52,7 +56,8 @@ SEQ1 \x8c\x01 SEQ2 \x0cK SEQ3 \x03P\x00\x00
 \n　そう笑っていった拓司だったが、ふと横を見やって、早桃が真\n剣な顔で自分を見つめているのに気がつき、はっと息を呑んだ。@
 \n拓司\n　「……？」\
 
-\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \x90\x06 CALL1 N\x02 CALL3 |\x02 REF_END1 
+\x00\x00\x00
+SEQ4  REF6 \x90\x06 CALL1 N\x02 CALL3 |\x02 REF_END1 
 LOAD3 SCE038_005 REF6 \n\x08 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \x10K SEQ3 \x03H\x00\x00
  
@@ -64,7 +69,8 @@ SEQ1 \x8c\x01 SEQ2 \x10K SEQ3 \x03H\x00\x00
 早桃\n　「憧れじゃないの」@
 拓司\n　「……？」\
 
-\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 N\x08 CALL1 N\x02 CALL3 |\x02 REF_END1 
+\x00
+SEQ4  REF6 N\x08 CALL1 N\x02 CALL3 |\x02 REF_END1 
 LOAD3 SCE038_006 REF6 \xa8\t REF_END2 
 SEQ1 \x8c\x01 SEQ2 \x14K SEQ3 \x03B\x00\x00
  
@@ -75,6 +81,7 @@ SEQ1 \x8c\x01 SEQ2 \x14K SEQ3 \x03B\x00\x00
 　　おにいちゃんが知らない早桃が、早桃のなかにはいるの」@
 拓司\n　「……」\
 
-\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \xec\t CALL1 N\x02 CALL3 |\x02 CALL2 N\x02 REF_END2 
+\x00
+SEQ4  REF6 \xec\t CALL1 N\x02 CALL3 |\x02 CALL2 N\x02 REF_END2 
 LOAD3 TextClose REF2 :\x0b REF_END1 
 END_FILE

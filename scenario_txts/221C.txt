@@ -5,7 +5,8 @@ SEQ1 \x8c\x01 SEQ2 \xf0h\x01\x0c\x00\x00\x00\x00"\x03\x11\x00\x00
  
 \n\n\n\n\n\n\n\n\n\n　　　　　　　　　　　　　『１０日目』\
 
-\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 J\x00 REF_END3 
+\x00
+SEQ4  REF6 J\x00 REF_END3 
 LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xae\x00 REF_END2 
 LOAD2 TextOn REF1 \xdc\x00 REF_END1 
 LOAD3 SCE221_002 REF6 \xf8\x00 REF_END2 
@@ -21,7 +22,8 @@ SEQ1 \x8c\x01 SEQ2 \xf4h\x01\x0c\x00\x00\x00\x00"\x03\x81\x00\x00
 \nなたねは小さく首を横に振った。@
 \n御堂\n　「ふん。\pお前を生かしてやってるのは、波動の監視役としてだ\n　　からな。\pしっかり見張ってろ。\pポカやらかしたら容赦しねえ\n　　からな」\
 
-\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 <\x01 CALL1 \xae\x00 CALL3 \xdc\x00 REF_END1 
+\x00\x00\x00
+SEQ4  REF6 <\x01 CALL1 \xae\x00 CALL3 \xdc\x00 REF_END1 
 LOAD3 SCE221_003 REF6 z\x03 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \xf8h\x01\x0c\x00\x00\x00\x00"\x03:\x00\x00
  
@@ -29,11 +31,13 @@ SEQ1 \x8c\x01 SEQ2 \xf8h\x01\x0c\x00\x00\x00\x00"\x03:\x00\x00
 御堂が恐ろしいとか、なたねには当然の報いとか……そういうふ\nうに思うよりも、関心が持てないのだ。@
 自分のことを考えるのに精一杯で、とてもではないが他人の面倒\nなど見ていられないのだ。\
 
-\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \xbe\x03 CALL1 \xae\x00 CALL3 \xdc\x00 REF_END1 \x03"\x00\x00
+\x00\x00\x00
+SEQ4  REF6 \xbe\x03 CALL1 \xae\x00 CALL3 \xdc\x00 REF_END1 \x03"\x00\x00
 CHOICE
 それでも拓司は、自分の食糧を少し残し、夜、なたねに与えた\n拓司は食糧を腹に収め、いつかくるであろう『そのとき』に備えた\n\l0,2,
 ENDCHOICE
 
-\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \xe0\x04 CALL1 \xae\x00 CALL3 \xdc\x00 CALL2 \xae\x00 REF_END2 
+\x00
+SEQ4  REF6 \xe0\x04 CALL1 \xae\x00 CALL3 \xdc\x00 CALL2 \xae\x00 REF_END2 
 LOAD3 TextClose REF2 \xae\x05 REF_END1 
 END_FILE

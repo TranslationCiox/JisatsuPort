@@ -10,7 +10,8 @@ SEQ1 \x8c\x01 SEQ2 `m SEQ3 \x03B\x00\x00
 早桃\n　「みんな自殺して、いなくなっちゃって」@
 拓司\n　「……」\n早桃\n　「ざまあみろって思ってる」\
 
-\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 J\x00 REF_END3 
+\x00
+SEQ4  REF6 J\x00 REF_END3 
 LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 r\x01 REF_END2 
 LOAD2 TextOn REF1 \xa0\x01 REF_END1 
 LOAD3 SCE060_002 REF6 \xbc\x01 REF_END2 
@@ -19,6 +20,7 @@ SEQ1 \x8c\x01 SEQ2 dm SEQ3 \x03\x18\x00\x00
 拓司\n　「……」@
 早桃\n　「おにいちゃん、後ろ向いてて。\pジャージに着替えるから」@
 \z
-\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \x00\x02 CALL1 r\x01 CALL3 \xa0\x01 CALL2 r\x01 REF_END2 
+\x00\x00\x00
+SEQ4  REF6 \x00\x02 CALL1 r\x01 CALL3 \xa0\x01 CALL2 r\x01 REF_END2 
 LOAD3 TextClose REF2 \xa6\x02 REF_END1 
 END_FILE

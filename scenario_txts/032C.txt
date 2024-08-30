@@ -1,7 +1,9 @@
 START_FILE
-e+\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xf4$\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x05\x01 REF_END3 
+e+\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xf4$\x00
+SEQ4 \x00\x1e\x05\x01 REF_END3 
 LOAD6 .\\Data\\Script\\Bgm.Fob REF2  \x00 REF_END2 
-LOAD2 PlayCD REF1 J\x00 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1eQ\x00 REF_END3 
+LOAD2 PlayCD REF1 J\x00 REF_END1 
+SEQ4 \x00\x1eQ\x00 REF_END3 
 LOAD6 .\\Data\\Script\\Bg.Fob REF3 \x80\x00 REF_END2 
 LOAD4 BgAutoFadeIn REF3 \xaa\x00 REF_END1 
 LOAD3 SCE032_001 REF6 \xce\x00 REF_END2 
@@ -21,7 +23,8 @@ SEQ1 \x8c\x01 SEQ2 \xa0A SEQ3 \x03\xc8\x00\x00
 薄い皮をめくりあげて、ひくついている敏感な部分。@
 それをつまみ上げるたびに、ひく、ひくと、ペ○スを包む肉が収縮\nする。\
 
-\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \x12\x01 REF_END3 
+\x00\x00\x00
+SEQ4  REF6 \x12\x01 REF_END3 
 LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 R\x04 REF_END2 
 LOAD2 TextOn REF1 \x80\x04 REF_END1 
 LOAD3 SCE032_002 REF6 \x9c\x04 REF_END2 
@@ -37,7 +40,8 @@ SEQ1 \x8c\x01 SEQ2 \xa4A SEQ3 \x03\x88\x00\x00
 \nカンナは笑った。@
 まるで実験動物を観察するように、拓司の顔をのぞき込んでいる。\n\p恥ずかしさとも怒りともつかぬ激情で、頭にカッと血が上る。\
 
-\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \xe0\x04 CALL1 R\x04 CALL3 \x80\x04 REF_END1 
+\x00\x00\x00
+SEQ4  REF6 \xe0\x04 CALL1 R\x04 CALL3 \x80\x04 REF_END1 
 LOAD3 SCE032_003 REF6 :\x07 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \xa8A SEQ3 \x03w\x00\x00
  
@@ -48,7 +52,8 @@ SEQ1 \x8c\x01 SEQ2 \xa8A SEQ3 \x03w\x00\x00
 カンナ\n　「でも……わかるでしょう？　棒っきれを突っ込んで機械的に上\n　　下に動かせば濡れるし、気持ちいいわ。\pそういうふうにできて\n　　いるから。\pでも、それはただの身体の反応で……心の震えじゃ\n　　ない。\pだから－－」@
 拓司\n　「うるさい、黙れッ！」\
 
-\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 ~\x07 CALL1 R\x04 CALL3 \x80\x04 REF_END1 
+\x00\x00\x00
+SEQ4  REF6 ~\x07 CALL1 R\x04 CALL3 \x80\x04 REF_END1 
 LOAD3 SCE032_004 REF6 \x94\t REF_END2 
 SEQ1 \x8c\x01 SEQ2 \xacA SEQ3 \x03z\x00\x00
  
@@ -61,7 +66,8 @@ SEQ1 \x8c\x01 SEQ2 \xacA SEQ3 \x03z\x00\x00
 カンナ\n　「……好きにカテゴライズしてもらって構わないわ」@
 拓司\n　「……ちっ」\
 
-\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \xd8\t CALL1 R\x04 CALL3 \x80\x04 REF_END1 
+\x00
+SEQ4  REF6 \xd8\t CALL1 R\x04 CALL3 \x80\x04 REF_END1 
 LOAD3 SCE032_005 REF6 \xfa\x0b REF_END2 
 SEQ1 \x8c\x01 SEQ2 \xb0A SEQ3 \x03\xad\x00\x00
  
@@ -73,7 +79,8 @@ SEQ1 \x8c\x01 SEQ2 \xb0A SEQ3 \x03\xad\x00\x00
 先ほどまでの冷笑は、すでにカンナの顔にはない。\p一見、仮面のよ\nうな無表情に見えるが……それは偽装にすぎず、その裏には隠しき\nれない性的興奮が脈打っている。@
 いままでまったく感じられなかった、生々しいいきものの脈動が、\nある……。\
 
-\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 >\x0c CALL1 R\x04 CALL3 \x80\x04 REF_END1 
+\x00\x00\x00
+SEQ4  REF6 >\x0c CALL1 R\x04 CALL3 \x80\x04 REF_END1 
 LOAD3 SCE032_006 REF6 ,\x0f REF_END2 
 SEQ1 \x8c\x01 SEQ2 \xb4A SEQ3 \x03\x89\x00\x00
  
@@ -88,7 +95,8 @@ SEQ1 \x8c\x01 SEQ2 \xb4A SEQ3 \x03\x89\x00\x00
 剃刀の刃を歯でくわえて、ひたすら機械的に腰を上下させる。@
 先ほどまでとなんら変わることのないその運動に、果たしてカンナ\nは、今度は身をよじらせて反応した。\
 
-\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 p\x0f CALL1 R\x04 CALL3 \x80\x04 REF_END1 
+\x00\x00\x00
+SEQ4  REF6 p\x0f CALL1 R\x04 CALL3 \x80\x04 REF_END1 
 LOAD3 SCE032_007 REF6 \xce\x11 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \xb8A SEQ3 \x03\x9a\x00\x00
  
@@ -101,7 +109,8 @@ SEQ1 \x8c\x01 SEQ2 \xb8A SEQ3 \x03\x9a\x00\x00
 \nカンナはネクタイを自分の顔に巻き付けた。\p頭の後ろできつく結\nべば、即席の目隠しが完成する。@
 カンナが自ら視覚を封じたのを確認してから、拓司はカンナの右\n手首を捧げ持った。\pそこに剃刀の刃をぴたりとあてがう。\
 
-\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \x12\x12 CALL1 R\x04 CALL3 \x80\x04 REF_END1 
+\x00\x00\x00
+SEQ4  REF6 \x12\x12 CALL1 R\x04 CALL3 \x80\x04 REF_END1 
 LOAD3 SCE032_008 REF6 \xb4\x14 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \xbcA SEQ3 \x03\x88\x00\x00
  
@@ -117,7 +126,8 @@ SEQ1 \x8c\x01 SEQ2 \xbcA SEQ3 \x03\x88\x00\x00
 閉じた世界の閉じたゲーム。@
 自殺ゲーム。\
 
-\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \xf8\x14 CALL1 R\x04 CALL3 \x80\x04 REF_END1 
+\x00\x00\x00
+SEQ4  REF6 \xf8\x14 CALL1 R\x04 CALL3 \x80\x04 REF_END1 
 LOAD3 SCE032_009 REF6 R\x17 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \xc0A SEQ3 \x03\xa6\x00\x00
  
@@ -135,7 +145,8 @@ SEQ1 \x8c\x01 SEQ2 \xc0A SEQ3 \x03\xa6\x00\x00
 拓司\n　「すごい量だ。\p今日は深く切りすぎたのかもしれないな。@
 　　これはまずいかもしれないぜ？」\
 
-\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \x96\x17 CALL1 R\x04 CALL3 \x80\x04 REF_END1 
+\x00
+SEQ4  REF6 \x96\x17 CALL1 R\x04 CALL3 \x80\x04 REF_END1 
 LOAD3 SCE032_010 REF6 h\x1a REF_END2 
 SEQ1 \x8c\x01 SEQ2 \xc4A SEQ3 \x03\x95\x00\x00
  
@@ -148,7 +159,8 @@ SEQ1 \x8c\x01 SEQ2 \xc4A SEQ3 \x03\x95\x00\x00
 拓司\n　「カンナ！」@
 カンナ\n　「すごい……すごく出ていく……きれいに……」\
 
-\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \xac\x1a CALL1 R\x04 CALL3 \x80\x04 REF_END1 
+\x00
+SEQ4  REF6 \xac\x1a CALL1 R\x04 CALL3 \x80\x04 REF_END1 
 LOAD3 SCE032_011 REF6 :\x1d REF_END2 
 SEQ1 \x8c\x01 SEQ2 \xc8A SEQ3 \x03\x90\x00\x00
  
@@ -165,7 +177,8 @@ SEQ1 \x8c\x01 SEQ2 \xc8A SEQ3 \x03\x90\x00\x00
 ちらりと視線を外せば、床の上には剃刀がある。@
 カンナに気づかれないようそれに手を伸ばし、そして……\
 
-\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 ~\x1d CALL1 R\x04 CALL3 \x80\x04 REF_END1 
+\x00
+SEQ4  REF6 ~\x1d CALL1 R\x04 CALL3 \x80\x04 REF_END1 
 LOAD3 SCE032_012 REF6 \xf8\x1f REF_END2 
 SEQ1 \x8c\x01 SEQ2 \xccA SEQ3 \x03\xab\x00\x00
  
@@ -181,16 +194,19 @@ SEQ1 \x8c\x01 SEQ2 \xccA SEQ3 \x03\xab\x00\x00
 死ぬぞ！@
 死ぬぞ！\
 
-\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 <  CALL1 R\x04 CALL3 \x80\x04 REF_END1 
+\x00\x00\x00
+SEQ4  REF6 <  CALL1 R\x04 CALL3 \x80\x04 REF_END1 
 LOAD3 SCE032_013 REF6 "# REF_END2 
 SEQ1 \x8c\x01 SEQ2 \xd0A SEQ3 \x03\x17\x00\x00
  
 \nザザザ……ザザッ……\pザアザザザ……@
 ザアアアアア……ザアザアアアアアアア……\
 
-\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 f# CALL1 R\x04 CALL3 \x80\x04 CALL2 R\x04 REF_END2 
+\x00
+SEQ4  REF6 f# CALL1 R\x04 CALL3 \x80\x04 CALL2 R\x04 REF_END2 
 LOAD4 TextWindowOff REF2 \x08$ CALL2  \x00 REF_END2 
-LOAD2 StopCD REF1 8$ REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00 CALL1 \x80\x00 REF_END2 
+LOAD2 StopCD REF1 8$ REF_END1 
+SEQ4 \x00\x1e\xc8\x00 CALL1 \x80\x00 REF_END2 
 LOAD2 BgOn REF3 z$ CALL2 R\x04 REF_END2 
 LOAD5 TextWindowOnDirect REF1 \xa2$ CALL2 R\x04 REF_END2 
 LOAD3 TextClose REF2 \xd6$ REF_END1 

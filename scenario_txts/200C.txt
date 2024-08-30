@@ -1,9 +1,11 @@
 START_FILE
 \xd0%\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00^ \x00
 LOAD3 SCE200_001 REF6 \x06\x00 REF_END2 
-SEQ1 \x8c\x01 SEQ2  H\x01\x0c\x00\x00\x00\x00" \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc9\x00 REF_END3 
+SEQ1 \x8c\x01 SEQ2  H\x01\x0c\x00\x00\x00\x00"
+SEQ4 \x00\x1e\xc9\x00 REF_END3 
 LOAD6 .\\Data\\Script\\Bg.Fob REF3 d\x00 REF_END2 
-LOAD4 BgAutoFadeIn REF3 \x8e\x00 REF_END1  \x1e\x00\x00\x00\x00\r\x00 REF_END2 \x0c\x02\x00\x00" \x1e\x04\x00\x00\r\x00\x00\x1e\x06\x00 REF_END3  \x1e\x08\x00\x00\r\x00\x00\x1e\x01\x00 REF_END3 
+LOAD4 BgAutoFadeIn REF3 \x8e\x00 REF_END1 
+SEQ4  REF_END2 \x0c\x02\x00\x00" \x1e\x04\x00\x00\r\x00\x00\x1e\x06\x00 REF_END3  \x1e\x08\x00\x00\r\x00\x00\x1e\x01\x00 REF_END3 
 LOAD6 .\\Data\\Script\\Bgm.Fob REF2 \x00\x01 REF_END2 
 LOAD2 SePlay REF1 *\x01 REF_END1 \x03v\x00\x00
  
@@ -19,7 +21,8 @@ LOAD2 SePlay REF1 *\x01 REF_END1 \x03v\x00\x00
 \n教授\n　「大丈夫かね？\p　また、ひどい夢を見ていたようだ。@
 　　食糧がどうとか、鍵がどうとか……雲居さんという名前も\n　　いっていたね」\
 
-\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 F\x01 REF_END3 
+\x00\x00\x00
+SEQ4  REF6 F\x01 REF_END3 
 LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 >\x03 REF_END2 
 LOAD2 TextOn REF1 l\x03 REF_END1 
 LOAD3 SCE200_002 REF6 \x88\x03 REF_END2 
@@ -33,7 +36,8 @@ SEQ1 \x8c\x01 SEQ2 $H\x01\x0c\x00\x00\x00\x00"\x03T\x00\x00
 　　なんで俺ばっかりこんな目に合わなくちゃならないんだ！」@
 \n腹の中にたまっていたストレスに、バチバチと怒りが放電し、大\n爆発した。\
 
-\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \xcc\x03 CALL1 >\x03 CALL3 l\x03 REF_END1 
+\x00
+SEQ4  REF6 \xcc\x03 CALL1 >\x03 CALL3 l\x03 REF_END1 
 LOAD3 SCE200_003 REF6 V\x05 REF_END2 
 SEQ1 \x8c\x01 SEQ2 (H\x01\x0c\x00\x00\x00\x00"\x03\xb0\x00\x00
  
@@ -42,7 +46,8 @@ SEQ1 \x8c\x01 SEQ2 (H\x01\x0c\x00\x00\x00\x00"\x03\xb0\x00\x00
 拓司\n　「女が俺の思うとおりに動く『妄想の世界』！\p　最終波動とか\n　　いう、わけのわからないもののせいで教室に籠城しなきゃな\n　　らない……『俺の世界』！\p　そして、おれが狂っていて定期\n　　的に自分を書き換えては目覚める『あんたの世界』！\p　３つ\n　　の世界があって、どれもが少しずつ混ざり合って滅茶苦茶に\n　　なってる！\p　セックスが俺の世界を浸食して、雲居なたね\n　　があんたの世界に登場する！\p　どこが中心なんだ？！@
 　　どれが本当の世界なんだ？！」\
 
-\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \x9a\x05 CALL1 >\x03 CALL3 l\x03 REF_END1 
+\x00\x00\x00
+SEQ4  REF6 \x9a\x05 CALL1 >\x03 CALL3 l\x03 REF_END1 
 LOAD3 SCE200_004 REF6 \x94\x08 REF_END2 
 SEQ1 \x8c\x01 SEQ2 ,H\x01\x0c\x00\x00\x00\x00"\x03\xcb\x00\x00
  
@@ -54,7 +59,8 @@ SEQ1 \x8c\x01 SEQ2 ,H\x01\x0c\x00\x00\x00\x00"\x03\xcb\x00\x00
 　あたかもシーツの質感こそが自分を世界につなぎ止めている最\n後のロープであるかのように、拓司はシーツをなで続けた。@
 　悲惨なのは、そんなふうな神経症的不安のなかにあっても、\n『神経症的不安のなかにある自分』を客観的に観察している自\n分の意識……視点が……別のどこかにあるという事実である……。\n\
 
-\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \xd8\x08 CALL1 >\x03 CALL3 l\x03 REF_END1 
+\x00
+SEQ4  REF6 \xd8\x08 CALL1 >\x03 CALL3 l\x03 REF_END1 
 LOAD3 SCE200_005 REF6 >\x0c REF_END2 
 SEQ1 \x8c\x01 SEQ2 0H\x01\x0c\x00\x00\x00\x00"\x03\xa3\x00\x00
  
@@ -64,14 +70,16 @@ SEQ1 \x8c\x01 SEQ2 0H\x01\x0c\x00\x00\x00\x00"\x03\xa3\x00\x00
 　　しかしそれは、単なる私の主観だ。\pもしかしたら、すべては\n　　私の妄想なのかもしれない。\pここは病院ではなく、私は座っ\n　　ておらず、そして君なんて本当は存在していないのかもしれ\n　　ない。\p君の承認なんて、無意味だ。\pなぜなら、君が同意した\n　　ということもまた、私の主観にすぎないからだ」@
 拓司\n　「……」\
 
-\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \x82\x0c CALL1 >\x03 CALL3 l\x03 REF_END1 
+\x00
+SEQ4  REF6 \x82\x0c CALL1 >\x03 CALL3 l\x03 REF_END1 
 LOAD3 SCE200_006 REF6 H\x0f REF_END2 
 SEQ1 \x8c\x01 SEQ2 4H\x01\x0c\x00\x00\x00\x00"\x032\x00\x00
  
 教授\n　「あるいは、私というのは、どこかにいる別の私が見ている夢\n　　にすぎないのかもしれない。\pさらには夢を見ているのは私で\n　　すらなく、他の誰かなのかもしれない」@
 拓司\n　「……」\
 
-\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \x8c\x0f CALL1 >\x03 CALL3 l\x03 REF_END1 
+\x00\x00\x00
+SEQ4  REF6 \x8c\x0f CALL1 >\x03 CALL3 l\x03 REF_END1 
 LOAD3 SCE200_007 REF6 \x8e\x10 REF_END2 
 SEQ1 \x8c\x01 SEQ2 8H\x01\x0c\x00\x00\x00\x00"\x03\xe8\x00\x00
  
@@ -82,7 +90,8 @@ SEQ1 \x8c\x01 SEQ2 8H\x01\x0c\x00\x00\x00\x00"\x03\xe8\x00\x00
 　　ゆえに、私はこの世界が『夢の世界』ではないと信じ、私が\n　　私としてここに実在することを信じる」@
 拓司\n　「……」\
 
-\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \xd2\x10 CALL1 >\x03 CALL3 l\x03 REF_END1 
+\x00\x00\x00
+SEQ4  REF6 \xd2\x10 CALL1 >\x03 CALL3 l\x03 REF_END1 
 LOAD3 SCE200_008 REF6 \xac\x14 REF_END2 
 SEQ1 \x8c\x01 SEQ2 <H\x01\x0c\x00\x00\x00\x00"\x03\x95\x00\x00
  
@@ -93,7 +102,8 @@ SEQ1 \x8c\x01 SEQ2 <H\x01\x0c\x00\x00\x00\x00"\x03\x95\x00\x00
 　　そういう世界こそが、君の信じる『現実の世界』なはずだろ\n　　う？\p　……記憶喪失という事実は確かに受け入れがたいだろ\n　　う。\pだがね、それは現実に起こりうることなんだ。\p誰にだっ\n　　て、起こりうることなんだ。\pそれが偶然、君に起こった。@
 　　それだけの話だよ」\
 
-\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \xf0\x14 CALL1 >\x03 CALL3 l\x03 REF_END1 
+\x00
+SEQ4  REF6 \xf0\x14 CALL1 >\x03 CALL3 l\x03 REF_END1 
 LOAD3 SCE200_009 REF6 ~\x17 REF_END2 
 SEQ1 \x8c\x01 SEQ2 @H\x01\x0c\x00\x00\x00\x00"\x03\x92\x00\x00
  
@@ -107,7 +117,8 @@ SEQ1 \x8c\x01 SEQ2 @H\x01\x0c\x00\x00\x00\x00"\x03\x92\x00\x00
 早く眠りたいと思った。@
 眠って、二度と目覚めなければいいと思った。\p夢も見ずに完全に\n眠っているあいだだけ、自分が自分以外のものではない、完全な\n存在でいられるような気がした。\
 
-\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \xc2\x17 CALL1 >\x03 CALL3 l\x03 REF_END1 
+\x00
+SEQ4  REF6 \xc2\x17 CALL1 >\x03 CALL3 l\x03 REF_END1 
 LOAD3 SCE200_010 REF6 D\x1a REF_END2 
 SEQ1 \x8c\x01 SEQ2 DH\x01\x0c\x00\x00\x00\x00"\x03\x97\x00\x00
  
@@ -116,7 +127,8 @@ SEQ1 \x8c\x01 SEQ2 DH\x01\x0c\x00\x00\x00\x00"\x03\x97\x00\x00
 教授\n　「大丈夫だ。\pたかが夢だよ。\p目が覚めれば、ここに戻ってくる。\n　　\p映画と同じだ。\pスクリーンの中の怪物は、決して君に危害を\n　　加えることはできない。\p脅かすだけだ。\p夢を現実と混同する\n　　な。\p現実には何も恐ろしいことなどない。\pここに戻ってくれ\n　　ば、私がいる。\p私を信じてくれ。\p私を現実の象徴としたまえ。\n　　\p君が求める答は、私なんだ」@
 拓司\n　「でも、この世界は……遠いような気がする。\p馴染みがないよ\n　　うな……なにも知らない世界だ。\p『おれの世界』のことなら\n　　なんでも知ってるんだ……」\
 
-\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \x88\x1a CALL1 >\x03 CALL3 l\x03 REF_END1 
+\x00\x00\x00
+SEQ4  REF6 \x88\x1a CALL1 >\x03 CALL3 l\x03 REF_END1 
 LOAD3 SCE200_011 REF6 \x1e\x1d REF_END2 
 SEQ1 \x8c\x01 SEQ2 HH\x01\x0c\x00\x00\x00\x00"\x039\x00\x00
  
@@ -124,7 +136,8 @@ SEQ1 \x8c\x01 SEQ2 HH\x01\x0c\x00\x00\x00\x00"\x039\x00\x00
 　　目覚めて、客観的に見ることで、矛盾が浮かび上がってくる\n　　のだよ」@
 拓司\n　「……」\
 
-\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 b\x1d CALL1 >\x03 CALL3 l\x03 REF_END1 
+\x00
+SEQ4  REF6 b\x1d CALL1 >\x03 CALL3 l\x03 REF_END1 
 LOAD3 SCE200_012 REF6 \x80\x1e REF_END2 
 SEQ1 \x8c\x01 SEQ2 LH\x01\x0c\x00\x00\x00\x00"\x030\x00\x00
  
@@ -137,7 +150,10 @@ SEQ1 \x8c\x01 SEQ2 LH\x01\x0c\x00\x00\x00\x00"\x030\x00\x00
 \nようやく浅いまどろみが頭に霞を作りはじめた。@
 そのとき、突如、何者かが拓司の肩を掴んだ。\
 
-\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \xc4\x1e CALL1 >\x03 CALL3 l\x03 REF_END1  \x1e\x00\x00\x00\x00\r\x00 REF_END2 \x0c\x02\x00\x00" REF7 \x00\x01 REF_END2 
-LOAD2 SeStop REF1 \xe4\x1f REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00 CALL1 d\x00 CALL3 \x8e\x00 CALL2 >\x03 REF_END2 
+\x00\x00\x00
+SEQ4  REF6 \xc4\x1e CALL1 >\x03 CALL3 l\x03 REF_END1 
+SEQ4  REF_END2 \x0c\x02\x00\x00" REF7 \x00\x01 REF_END2 
+LOAD2 SeStop REF1 \xe4\x1f REF_END1 
+SEQ4 \x00\x1e\xc8\x00 CALL1 d\x00 CALL3 \x8e\x00 CALL2 >\x03 REF_END2 
 LOAD3 TextClose REF2 @  REF_END1 
 END_FILE

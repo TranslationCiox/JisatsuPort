@@ -10,13 +10,15 @@ SEQ1 \x8c\x01 SEQ2 \x00} SEQ3 \x03[\x00\x00
 早桃\n　「おにいちゃん！\p　こんな人のいうこと信じちゃだめよ！@
 　　ハドウなんて、ない。\pそんなの全部、この人の空想なんだか\n　　ら！」\
 
-\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 J\x00 REF_END3 
+\x00\x00\x00
+SEQ4  REF6 J\x00 REF_END3 
 LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xd6\x01 REF_END2 
 LOAD2 TextOn REF1 \x04\x02 REF_END1 \x03\x17\x00\x00
 CHOICE
 なたねの警告を受け入れて別のコースを選ぶ\n早桃の忠告を受け入れて中庭に出る\n\l0,2,
 ENDCHOICE
 
-\x00 \x1e\x00\x00\x00\x00\r\x00 REF6  \x02 CALL1 \xd6\x01 CALL3 \x04\x02 CALL2 \xd6\x01 REF_END2 
+\x00
+SEQ4  REF6  \x02 CALL1 \xd6\x01 CALL3 \x04\x02 CALL2 \xd6\x01 REF_END2 
 LOAD3 TextClose REF2 \xc2\x02 REF_END1 
 END_FILE

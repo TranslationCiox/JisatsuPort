@@ -1,5 +1,6 @@
 START_FILE
-\t\x17\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00X\x12\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x08\x01 REF_END3 
+\t\x17\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00X\x12\x00
+SEQ4 \x00\x1e\x08\x01 REF_END3 
 LOAD6 .\\Data\\Script\\Bgm.Fob REF2  \x00 REF_END2 
 LOAD2 PlayCD REF1 J\x00 REF_END1 
 LOAD3 SCE037_001 REF6 f\x00 REF_END2 
@@ -16,7 +17,8 @@ SEQ1 \x8c\x01 SEQ2 pI SEQ3 \x03\x8f\x00\x00
 　なんの心のふるえも呼び起こさない、ただの空と、雲。@
 　光景。\
 
-\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \xaa\x00 REF_END3 
+\x00\x00\x00
+SEQ4  REF6 \xaa\x00 REF_END3 
 LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \x06\x03 REF_END2 
 LOAD2 TextOn REF1 4\x03 REF_END1 
 LOAD3 SCE037_002 REF6 P\x03 REF_END2 
@@ -29,7 +31,8 @@ SEQ1 \x8c\x01 SEQ2 tI SEQ3 \x03W\x00\x00
 　なんの心のふるえも呼び起こさない、ただの空と、雲。@
 光景がそこにあった。\
 
-\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \x94\x03 CALL1 \x06\x03 CALL3 4\x03 REF_END1 
+\x00\x00\x00
+SEQ4  REF6 \x94\x03 CALL1 \x06\x03 CALL3 4\x03 REF_END1 
 LOAD3 SCE037_003 REF6 *\x05 REF_END2 
 SEQ1 \x8c\x01 SEQ2 xI SEQ3 \x03F\x00\x00
  
@@ -42,7 +45,8 @@ SEQ1 \x8c\x01 SEQ2 xI SEQ3 \x03F\x00\x00
 　　お前が尋ねなかっただけだろ」@
 早桃\n　「ふふふ！」\
 
-\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 n\x05 CALL1 \x06\x03 CALL3 4\x03 REF_END1 
+\x00
+SEQ4  REF6 n\x05 CALL1 \x06\x03 CALL3 4\x03 REF_END1 
 LOAD3 SCE037_004 REF6 \xc0\x06 REF_END2 
 SEQ1 \x8c\x01 SEQ2 |I SEQ3 \x03c\x00\x00
  
@@ -54,7 +58,8 @@ SEQ1 \x8c\x01 SEQ2 |I SEQ3 \x03c\x00\x00
 早桃\n　「うそばっかり」@
 拓司\n　「いいからそっちよこせ！」\
 
-\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \x04\x07 CALL1 \x06\x03 CALL3 4\x03 REF_END1 
+\x00\x00\x00
+SEQ4  REF6 \x04\x07 CALL1 \x06\x03 CALL3 4\x03 REF_END1 
 LOAD3 SCE037_005 REF6 \xca\x08 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \x80I SEQ3 \x03C\x00\x00
  
@@ -66,7 +71,8 @@ SEQ1 \x8c\x01 SEQ2 \x80I SEQ3 \x03C\x00\x00
 \n早桃\n　「……それにこっちがわ、少しかじっちゃったから」@
 拓司\n　「……」\
 
-\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \x0e\t CALL1 \x06\x03 CALL3 4\x03 REF_END1 
+\x00\x00\x00
+SEQ4  REF6 \x0e\t CALL1 \x06\x03 CALL3 4\x03 REF_END1 
 LOAD3 SCE037_006 REF6 T\n REF_END2 
 SEQ1 \x8c\x01 SEQ2 \x84I SEQ3 \x03A\x00\x00
  
@@ -77,7 +83,9 @@ SEQ1 \x8c\x01 SEQ2 \x84I SEQ3 \x03A\x00\x00
 \n早桃\n　「もう！　おにいちゃんってば！」@
 拓司\n　「はは……うっ！」\
 
-\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \x98\n CALL1 \x06\x03 CALL3 4\x03 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00 REF_END3 
+\x00
+SEQ4  REF6 \x98\n CALL1 \x06\x03 CALL3 4\x03 REF_END1 
+SEQ4 \x00\x1e\xc8\x00 REF_END3 
 LOAD6 .\\Data\\Script\\Bg.Fob REF3 \xf0\x0b REF_END2 
 LOAD2 BgOn REF3 \x1a\x0c REF_END1 
 LOAD3 SCE037_007 REF6 6\x0c REF_END2 
@@ -92,7 +100,8 @@ SEQ1 \x8c\x01 SEQ2 \x88I SEQ3 \x03I\x00\x00
 拓司\n　「……」@
 早桃\n　「……」\
 
-\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 z\x0c CALL1 \x06\x03 CALL3 4\x03 REF_END1 
+\x00
+SEQ4  REF6 z\x0c CALL1 \x06\x03 CALL3 4\x03 REF_END1 
 LOAD3 SCE037_008 REF6 \xd8\r REF_END2 
 SEQ1 \x8c\x01 SEQ2 \x8cI SEQ3 \x03s\x00\x00
  
@@ -105,7 +114,9 @@ SEQ1 \x8c\x01 SEQ2 \x8cI SEQ3 \x03s\x00\x00
 \n　パンを食べ終わった２人は、そのまま給水塔に頭をもたらせ、\n空を見上げた。\pゆったりとした時間が流れていた。@
 　遠くから、ぼんやりとサッカーをしている学生たちの声が聞こ\nえた。\
 
- \x1e\x00\x00\x00\x00\r\x00 REF6 \x1c\x0e CALL1 \x06\x03 CALL3 4\x03 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00 CALL1 \xf0\x0b CALL3 \x1a\x0c REF_END1 
+
+SEQ4  REF6 \x1c\x0e CALL1 \x06\x03 CALL3 4\x03 REF_END1 
+SEQ4 \x00\x1e\xc8\x00 CALL1 \xf0\x0b CALL3 \x1a\x0c REF_END1 
 LOAD3 SCE037_009 REF6 V\x10 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \x90I SEQ3 \x038\x00\x00
  
@@ -117,11 +128,13 @@ SEQ1 \x8c\x01 SEQ2 \x90I SEQ3 \x038\x00\x00
 拓司\n　「……」@
 早桃\n　「……どうしてかな？」\
 
-\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \x9a\x10 CALL1 \x06\x03 CALL3 4\x03 REF_END1 \x03\x10\x00\x00
+\x00
+SEQ4  REF6 \x9a\x10 CALL1 \x06\x03 CALL3 4\x03 REF_END1 \x03\x10\x00\x00
 CHOICE
 話題を逸らす\n早桃はどうなんだ、と逆に問い返す\n\l0,2,
 ENDCHOICE
 
-\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \xb4\x11 CALL1 \x06\x03 CALL3 4\x03 CALL2 \x06\x03 REF_END2 
+\x00
+SEQ4  REF6 \xb4\x11 CALL1 \x06\x03 CALL3 4\x03 CALL2 \x06\x03 REF_END2 
 LOAD3 TextClose REF2 :\x12 REF_END1 
 END_FILE

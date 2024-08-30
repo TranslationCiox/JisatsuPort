@@ -14,7 +14,8 @@ SEQ1 \x8c\x01 SEQ2 \xc0\x8f SEQ3 \x03\xc4\x00\x00
 俺はいつの間にかこの世界こそが現実で、見慣れた世界が夢なの\nだと信じかかっている。\pそうと決まったわけではない。@
 これが単なる夢なのだとしたら、雲居なたねがこうしてここに\n登場するのには何の不思議もない。\p実在の人物を夢に見ているだ\nけなのだから。\
 
-\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 J\x00 REF_END3 
+\x00
+SEQ4  REF6 J\x00 REF_END3 
 LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 z\x03 REF_END2 
 LOAD2 TextOn REF1 \xa8\x03 REF_END1 
 LOAD3 SCE082_002 REF6 \xc4\x03 REF_END2 
@@ -25,7 +26,8 @@ SEQ1 \x8c\x01 SEQ2 \xc4\x8f SEQ3 \x03\\\x00\x00
 そのときだった。@
 何の前触れもなく、低くて重い音がとどろき渡った。@
 /*▲SE　停止*/\a4,2,0,0,/*▲BGM　停止*/\a4,-1,0,0,/*▲SE16　一回再生（再生終わりまで待たないで次へ）*/\a2,0,16,0,\n　ザザザザザザザザザザ\w\n\a4,0,0,0,\z
- \x1e\x00\x00\x00\x00\r\x00 REF6 \x08\x04 CALL1 z\x03 CALL3 \xa8\x03 REF_END1 
+
+SEQ4  REF6 \x08\x04 CALL1 z\x03 CALL3 \xa8\x03 REF_END1 
 LOAD3 SCE082_003 REF6 \xb2\x05 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \xc8\x8f SEQ3 \x03i\x00\x00
  
@@ -33,7 +35,8 @@ SEQ1 \x8c\x01 SEQ2 \xc8\x8f SEQ3 \x03i\x00\x00
 音は、拘束着の女の子から発せられてるようだった。@
 女の子のどこからというわけではなく、女の子そのものから放た\nれている。@
 /*▲SE16　一回再生（再生終わりまで待たないで次へ）*/\a2,0,16,0,\n　ザザザザザザザザザザ\w\n\a4,0,0,0,\z
- \x1e\x00\x00\x00\x00\r\x00 REF6 \xf6\x05 CALL1 z\x03 CALL3 \xa8\x03 REF_END1 
+
+SEQ4  REF6 \xf6\x05 CALL1 z\x03 CALL3 \xa8\x03 REF_END1 
 LOAD3 SCE082_004 REF6 \xd4\x07 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \xcc\x8f SEQ3 \x03}\x00\x00
  
@@ -44,6 +47,7 @@ SEQ1 \x8c\x01 SEQ2 \xcc\x8f SEQ3 \x03}\x00\x00
 \nその意味を認識する時間はなかった。@
 /*■黒　表示（クロスフェード）*/\a7,-2,-2,0,\a0,200,2,0,\a6,-2,0,0,目の前が真っ暗になり、拓司は意識を失った。\
 
- \x1e\x00\x00\x00\x00\r\x00 REF6 \x18\x08 CALL1 z\x03 CALL3 \xa8\x03 CALL2 z\x03 REF_END2 
+
+SEQ4  REF6 \x18\x08 CALL1 z\x03 CALL3 \xa8\x03 CALL2 z\x03 REF_END2 
 LOAD3 TextClose REF2 R\n REF_END1 
 END_FILE

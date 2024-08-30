@@ -5,11 +5,13 @@ SEQ1 \x8c\x01 SEQ2 \xd09 SEQ3 \x03\x10\x00\x00
  
 \n\n\n\n\n\n\n\n\n\n　　　　　　　　　　　『昼休み』\
 
-\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 J\x00 REF_END3 
+\x00\x00\x00
+SEQ4  REF6 J\x00 REF_END3 
 LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xaa\x00 REF_END2 
 LOAD2 TextOn REF1 \xd8\x00 REF_END1 
 LOAD3 SCE027_002 REF6 \xf4\x00 REF_END2 
-SEQ1 \x8c\x01 SEQ2 \xd49 SEQ3  \x1e\x00\x00\x00\x00\r\x00 REF_END2 \x0c\x02\x00\x00" \x1e\x04\x00\x00\r\x00\x00\x1e\x17\x00 REF_END3  \x1e\x08\x00\x00\r\x00\x00\x1e\x01\x00 REF_END3 
+SEQ1 \x8c\x01 SEQ2 \xd49 SEQ3 
+SEQ4  REF_END2 \x0c\x02\x00\x00" \x1e\x04\x00\x00\r\x00\x00\x1e\x17\x00 REF_END3  \x1e\x08\x00\x00\r\x00\x00\x1e\x01\x00 REF_END3 
 LOAD6 .\\Data\\Script\\Bgm.Fob REF2 \x86\x01 REF_END2 
 LOAD2 SePlay REF1 \xb0\x01 REF_END1 \x03\x84\x00\x00
  
@@ -20,7 +22,9 @@ LOAD2 SePlay REF1 \xb0\x01 REF_END1 \x03\x84\x00\x00
 \nカンナ\n　「－－こうしましょう。\pここ以外では、あなたと私は知り合いで\n　　も何でもない。\pお互いの世界に干渉しないし興味も持たない。@
 　　お互いの世界……フフフ。\p私たちの世界以外では、私たちは他\n　　人になるの。\pそうすることで、私たちの世界はより本物になる\n　　……どうかしら？」\
 
-\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \xcc\x01 CALL1 \xaa\x00 CALL3 \xd8\x00 REF_END1  \x1e\x00\x00\x00\x00\r\x00 REF_END2 \x0c\x02\x00\x00" REF7 \x86\x01 REF_END2 
+\x00
+SEQ4  REF6 \xcc\x01 CALL1 \xaa\x00 CALL3 \xd8\x00 REF_END1 
+SEQ4  REF_END2 \x0c\x02\x00\x00" REF7 \x86\x01 REF_END2 
 LOAD2 SeStop REF1 <\x04 CALL2 \xaa\x00 REF_END2 
 LOAD3 TextClose REF2 d\x04 REF_END1 
 END_FILE

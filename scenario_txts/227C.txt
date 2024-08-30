@@ -5,7 +5,8 @@ SEQ1 \x8c\x01 SEQ2 Pr\x01\x0c\x00\x00\x00\x00"\x03\x11\x00\x00
  
 \n\n\n\n\n\n\n\n\n\n　　　　　　　　　　　　　『１３日目』\
 
-\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 J\x00 REF_END3 
+\x00
+SEQ4  REF6 J\x00 REF_END3 
 LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xae\x00 REF_END2 
 LOAD2 TextOn REF1 \xdc\x00 REF_END1 
 LOAD3 SCE227_002 REF6 \xf8\x00 REF_END2 
@@ -21,7 +22,8 @@ SEQ1 \x8c\x01 SEQ2 Tr\x01\x0c\x00\x00\x00\x00"\x03u\x00\x00
 \n朝からずっと押し黙っているので妙だとは思っていたが……拓司\nたちは目を丸くした。\p早桃は怯えたように、拓司のシャツの袖を\n握りしめた。@
 努めて無表情のカンナを、錦城は勝ち誇って見下ろした。\
 
-\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 <\x01 CALL1 \xae\x00 CALL3 \xdc\x00 REF_END1 
+\x00\x00\x00
+SEQ4  REF6 <\x01 CALL1 \xae\x00 CALL3 \xdc\x00 REF_END1 
 LOAD3 SCE227_003 REF6 J\x03 REF_END2 
 SEQ1 \x8c\x01 SEQ2 Xr\x01\x0c\x00\x00\x00\x00"\x03]\x00\x00
  
@@ -33,7 +35,8 @@ SEQ1 \x8c\x01 SEQ2 Xr\x01\x0c\x00\x00\x00\x00"\x03]\x00\x00
 錦城\n　「……」@
 カンナ\n　「……すみませんでした」\
 
-\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \x8e\x03 CALL1 \xae\x00 CALL3 \xdc\x00 REF_END1 
+\x00
+SEQ4  REF6 \x8e\x03 CALL1 \xae\x00 CALL3 \xdc\x00 REF_END1 
 LOAD3 SCE227_004 REF6 <\x05 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \\r\x01\x0c\x00\x00\x00\x00"\x03S\x00\x00
  
@@ -46,7 +49,8 @@ SEQ1 \x8c\x01 SEQ2 \\r\x01\x0c\x00\x00\x00\x00"\x03S\x00\x00
 錦城\n　「みんなの前で、私の便器になって。\pそうしたら許してあげ\n　　る」@
 カンナ\n　「便器って－－」\
 
-\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \x80\x05 CALL1 \xae\x00 CALL3 \xdc\x00 REF_END1 
+\x00
+SEQ4  REF6 \x80\x05 CALL1 \xae\x00 CALL3 \xdc\x00 REF_END1 
 LOAD3 SCE227_005 REF6 \x06\x07 REF_END2 
 SEQ1 \x8c\x01 SEQ2 `r\x01\x0c\x00\x00\x00\x00"\x03u\x00\x00
  
@@ -61,7 +65,8 @@ SEQ1 \x8c\x01 SEQ2 `r\x01\x0c\x00\x00\x00\x00"\x03u\x00\x00
 カンナ\n　「……トイレに……なります」@
 錦城\n　「便器」\
 
-\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 J\x07 CALL1 \xae\x00 CALL3 \xdc\x00 REF_END1 
+\x00\x00\x00
+SEQ4  REF6 J\x07 CALL1 \xae\x00 CALL3 \xdc\x00 REF_END1 
 LOAD3 SCE227_006 REF6 X\t REF_END2 
 SEQ1 \x8c\x01 SEQ2 dr\x01\x0c\x00\x00\x00\x00"\x03n\x00\x00
  
@@ -74,7 +79,8 @@ SEQ1 \x8c\x01 SEQ2 dr\x01\x0c\x00\x00\x00\x00"\x03n\x00\x00
 錦城\n　「声が小さい！」@
 カンナ\n　「……よ、喜んで錦城先生の人間便器になります」\
 
-\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \x9c\t CALL1 \xae\x00 CALL3 \xdc\x00 REF_END1 
+\x00
+SEQ4  REF6 \x9c\t CALL1 \xae\x00 CALL3 \xdc\x00 REF_END1 
 LOAD3 SCE227_007 REF6 \x8e\x0b REF_END2 
 SEQ1 \x8c\x01 SEQ2 hr\x01\x0c\x00\x00\x00\x00"\x03y\x00\x00
  
@@ -87,7 +93,9 @@ SEQ1 \x8c\x01 SEQ2 hr\x01\x0c\x00\x00\x00\x00"\x03y\x00\x00
 \n拓司\n　「カンナ、もう十分だ。\pもう……」@
 カンナ\n　「黙っていて。\p大丈夫だから。\pこんなの、なんでもないから」\
 
-\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \xd2\x0b CALL1 \xae\x00 CALL3 \xdc\x00 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x05\x01 REF_END3 
+\x00\x00\x00
+SEQ4  REF6 \xd2\x0b CALL1 \xae\x00 CALL3 \xdc\x00 REF_END1 
+SEQ4 \x00\x1e\x05\x01 REF_END3 
 LOAD6 .\\Data\\Script\\Bgm.Fob REF2 \n\x0e REF_END2 
 LOAD2 PlayCD REF1 4\x0e REF_END1 
 LOAD3 SCE227_008 REF6 P\x0e REF_END2 
@@ -100,7 +108,8 @@ SEQ1 \x8c\x01 SEQ2 lr\x01\x0c\x00\x00\x00\x00"\x03\xa1\x00\x00
 拓司は目を反らした。\pしかしめざとく錦城がそれを見とがめる。@
 /*■HCG18　表示（クロスフェード）*/\a7,-2,-2,0,\a0,89,2,0,\a6,-2,0,0,\n錦城\n　「しっかりみておくのよ。\p誰か一人でも目を反らした場合、彼\n　　女の努力は無駄になりますからね？\p　いい、これは授業なの。\n　　\p生意気な態度をとったガキがどうなるか、それを教えてあげ\n　　ているの。\pほら、便器ちゃん。はやく口をつけなさいよ！」\
 
- \x1e\x00\x00\x00\x00\r\x00 REF6 \x94\x0e CALL1 \xae\x00 CALL3 \xdc\x00 REF_END1 
+
+SEQ4  REF6 \x94\x0e CALL1 \xae\x00 CALL3 \xdc\x00 REF_END1 
 LOAD3 SCE227_009 REF6 R\x11 REF_END2 
 SEQ1 \x8c\x01 SEQ2 pr\x01\x0c\x00\x00\x00\x00"\x03\x8a\x00\x00
  
@@ -113,7 +122,8 @@ SEQ1 \x8c\x01 SEQ2 pr\x01\x0c\x00\x00\x00\x00"\x03\x8a\x00\x00
 錦城\n　「た、他人の排泄物を喉を鳴らして飲み下すなんて。\pなんて汚\n　　らしいガキなの？！」@
 カンナ\n　「くむ……ごきゅっ……ごきゅ……むぐんん……」\
 
-\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \x96\x11 CALL1 \xae\x00 CALL3 \xdc\x00 REF_END1 
+\x00\x00\x00
+SEQ4  REF6 \x96\x11 CALL1 \xae\x00 CALL3 \xdc\x00 REF_END1 
 LOAD3 SCE227_010 REF6 \xf8\x13 REF_END2 
 SEQ1 \x8c\x01 SEQ2 tr\x01\x0c\x00\x00\x00\x00"\x03|\x00\x00
  
@@ -121,7 +131,9 @@ SEQ1 \x8c\x01 SEQ2 tr\x01\x0c\x00\x00\x00\x00"\x03|\x00\x00
 \n嚥下しきれない尿が、カンナの口の端からボタボタと流れ落ちる。\n\pスカートの上に、錦城の汚液が染みをつくる。@
 錦城はカンナの頭を両手で固定し、狂気に支配された顔で笑い続\nけた。\
 
-\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 <\x14 CALL1 \xae\x00 CALL3 \xdc\x00 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00 REF_END3 
+\x00\x00\x00
+SEQ4  REF6 <\x14 CALL1 \xae\x00 CALL3 \xdc\x00 REF_END1 
+SEQ4 \x00\x1e\xc8\x00 REF_END3 
 LOAD6 .\\Data\\Script\\Bg.Fob REF3 \x80\x16 REF_END2 
 LOAD4 BgAutoFadeIn REF3 \xaa\x16 CALL2 \n\x0e REF_END2 
 LOAD2 StopCD REF1 \xda\x16 CALL2 \xae\x00 REF_END2 

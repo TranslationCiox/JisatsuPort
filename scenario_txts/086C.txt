@@ -7,7 +7,8 @@ SEQ1 \x8c\x01 SEQ2 \x00\x96 SEQ3 \x038\x00\x00
 拓司の胸の中に、むくむくと、なたねの妄想に踊らされたのでは\nないかという思いが膨らんでくる。@
 \nなたね\n　「安心して下さい。\pこれからシェルター製作を始めます」\
 
-\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 J\x00 REF_END3 
+\x00\x00\x00
+SEQ4  REF6 J\x00 REF_END3 
 LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 J\x01 REF_END2 
 LOAD2 TextOn REF1 x\x01 REF_END1 
 LOAD3 SCE086_002 REF6 \x94\x01 REF_END2 
@@ -19,7 +20,8 @@ SEQ1 \x8c\x01 SEQ2 \x04\x96 SEQ3 \x03n\x00\x00
 なたね\n　「気分を害さないで欲しいんだけれど、そう簡単にまさかとか、\n　　言って欲しくないの。だってこれは、私が死ぬ思いをしてや\n　　つらの円盤から盗み出してきた機密事項の結晶だから」@
 拓司\n　「……」\
 
-\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \xd8\x01 CALL1 J\x01 CALL3 x\x01 REF_END1 
+\x00\x00\x00
+SEQ4  REF6 \xd8\x01 CALL1 J\x01 CALL3 x\x01 REF_END1 
 LOAD3 SCE086_003 REF6 \xca\x03 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \x08\x96 SEQ3 \x03~\x00\x00
  
@@ -29,7 +31,9 @@ SEQ1 \x8c\x01 SEQ2 \x08\x96 SEQ3 \x03~\x00\x00
 　誰だ？！@
 　拓司たちは身構えたが、扉を開けて現れたのは、果たして見慣\n　れた人物であった。\
 
-\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \x0e\x04 CALL1 J\x01 CALL3 x\x01 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x04\x01 REF_END3 
+\x00\x00
+SEQ4  REF6 \x0e\x04 CALL1 J\x01 CALL3 x\x01 REF_END1 
+SEQ4 \x00\x1e\x04\x01 REF_END3 
 LOAD6 .\\Data\\Script\\Bgm.Fob REF2 Z\x06 REF_END2 
 LOAD2 PlayCD REF1 \x84\x06 REF_END1 
 LOAD3 SCE086_004 REF6 \xa0\x06 REF_END2 
@@ -45,7 +49,8 @@ SEQ1 \x8c\x01 SEQ2 \x0c\x96 SEQ3 \x03w\x00\x00
 教室にいったところで、すれ違いだったかもしれない。@
 それでも、見捨てたという事実を、胸の中で正当化することはで\nきなかった。\
 
-\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \xe4\x06 CALL1 J\x01 CALL3 x\x01 REF_END1 
+\x00\x00\x00
+SEQ4  REF6 \xe4\x06 CALL1 J\x01 CALL3 x\x01 REF_END1 
 LOAD3 SCE086_005 REF6 \xfa\x08 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \x10\x96 SEQ3 \x03G\x00\x00
  
@@ -54,7 +59,8 @@ SEQ1 \x8c\x01 SEQ2 \x10\x96 SEQ3 \x03G\x00\x00
 御堂\n　「いったいぜんたい、どうなっちまってるんだ？！\p　どいつも\n　　こいつも狂ったみたいに自殺し始めるわ、襲いかかってくる\n　　わで……わけわかんねえよ！」@
 拓司\n　「俺だってわからないさ」\
 
-\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 >\t CALL1 J\x01 CALL3 x\x01 REF_END1 
+\x00
+SEQ4  REF6 >\t CALL1 J\x01 CALL3 x\x01 REF_END1 
 LOAD3 SCE086_006 REF6 \x94\n REF_END2 
 SEQ1 \x8c\x01 SEQ2 \x14\x96 SEQ3 \x03m\x00\x00
  
@@ -66,7 +72,9 @@ SEQ1 \x8c\x01 SEQ2 \x14\x96 SEQ3 \x03m\x00\x00
 /*▲BGM　停止*/\a4,-1,0,0,なたね\n　「それはやめた方が無難ですね」@
 錦城\n　「……？」\
 
-\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \xd8\n CALL1 J\x01 CALL3 x\x01 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\t\x01 CALL1 Z\x06 CALL3 \x84\x06 REF_END1 
+\x00\x00\x00
+SEQ4  REF6 \xd8\n CALL1 J\x01 CALL3 x\x01 REF_END1 
+SEQ4 \x00\x1e\t\x01 CALL1 Z\x06 CALL3 \x84\x06 REF_END1 
 LOAD3 SCE086_007 REF6 \xfa\x0c REF_END2 
 SEQ1 \x8c\x01 SEQ2 \x18\x96 SEQ3 \x03K\x00\x00
  
@@ -76,7 +84,8 @@ SEQ1 \x8c\x01 SEQ2 \x18\x96 SEQ3 \x03K\x00\x00
 拓司\n　「いや、御堂。\p……あながち全部デタラメってわけでもなさそ\n　　うだぜ」@
 御堂\n　「なに……？」\
 
-\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 >\r CALL1 J\x01 CALL3 x\x01 REF_END1 
+\x00\x00\x00
+SEQ4  REF6 >\r CALL1 J\x01 CALL3 x\x01 REF_END1 
 LOAD3 SCE086_008 REF6 \xa4\x0e REF_END2 
 SEQ1 \x8c\x01 SEQ2 \x1c\x96 SEQ3 \x03_\x00\x00
  
@@ -84,7 +93,8 @@ SEQ1 \x8c\x01 SEQ2 \x1c\x96 SEQ3 \x03_\x00\x00
 \n錦城\n　「信じがたい話ではあるけれど、もう、信じられないものは山\n　　ほど見てしまった後だし」@
 \n錦城はふう、とため息をついて肩をすくめた。\
 
-\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \xe8\x0e CALL1 J\x01 CALL3 x\x01 REF_END1 
+\x00\x00\x00
+SEQ4  REF6 \xe8\x0e CALL1 J\x01 CALL3 x\x01 REF_END1 
 LOAD3 SCE086_009 REF6 \x9e\x10 REF_END2 
 SEQ1 \x8c\x01 SEQ2  \x96 SEQ3 \x03\x85\x00\x00
  
@@ -94,7 +104,8 @@ SEQ1 \x8c\x01 SEQ2  \x96 SEQ3 \x03\x85\x00\x00
 なたね\n　「いま、断続的に襲ってきている波動は、大地震の前の予震み\n　　たいなものにすぎません。\pエンケリュスが本格始動するまえ\n　　の震えみたいなものにすぎない。\pいずれはエンケリュスは完\n　　全に目覚めて、これまでの波動なんて話にならないくらいの\n　　巨大な波動を放ちます。\pそれが最終波動です」@
 錦城\n　「これまでの波動よりも大きい……」\
 
-\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \xe2\x10 CALL1 J\x01 CALL3 x\x01 REF_END1 
+\x00
+SEQ4  REF6 \xe2\x10 CALL1 J\x01 CALL3 x\x01 REF_END1 
 LOAD3 SCE086_010 REF6 0\x13 REF_END2 
 SEQ1 \x8c\x01 SEQ2 $\x96 SEQ3 \x03r\x00\x00
  
@@ -102,7 +113,8 @@ SEQ1 \x8c\x01 SEQ2 $\x96 SEQ3 \x03r\x00\x00
 　　いまはまだ、エンケリュスのマイナスの波動に同調した人間\n　　が自殺しているだけだけれど、最終波動を浴びたら何が起き\n　　るのか、予想もつかない。\p分子レベルまで分解されて塵みた\n　　いになってしまうのかもしれないし、どろどろに溶けてしま\n　　うのかもしれない。\pとにかく確かなのは、みんな死ぬってい\n　　うこと」@
 \nここまで黙っていた御堂が、たまりかねたように叫んだ。\
 
-\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 t\x13 CALL1 J\x01 CALL3 x\x01 REF_END1 
+\x00
+SEQ4  REF6 t\x13 CALL1 J\x01 CALL3 x\x01 REF_END1 
 LOAD3 SCE086_011 REF6 v\x15 REF_END2 
 SEQ1 \x8c\x01 SEQ2 (\x96 SEQ3 \x03V\x00\x00
  
@@ -114,7 +126,8 @@ SEQ1 \x8c\x01 SEQ2 (\x96 SEQ3 \x03V\x00\x00
 なたね\n　「わからない」@
 御堂\n　「あァ？」\
 
-\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \xba\x15 CALL1 J\x01 CALL3 x\x01 REF_END1 
+\x00\x00\x00
+SEQ4  REF6 \xba\x15 CALL1 J\x01 CALL3 x\x01 REF_END1 
 LOAD3 SCE086_012 REF6 L\x17 REF_END2 
 SEQ1 \x8c\x01 SEQ2 ,\x96 SEQ3 \x03,\x00\x00
  
@@ -122,6 +135,7 @@ SEQ1 \x8c\x01 SEQ2 ,\x96 SEQ3 \x03,\x00\x00
 御堂\n　「……」@
 なたね\n　「……」\
 
-\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \x90\x17 CALL1 J\x01 CALL3 x\x01 CALL2 J\x01 REF_END2 
+\x00
+SEQ4  REF6 \x90\x17 CALL1 J\x01 CALL3 x\x01 CALL2 J\x01 REF_END2 
 LOAD3 TextClose REF2 \x86\x18 REF_END1 
 END_FILE

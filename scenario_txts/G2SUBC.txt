@@ -1,5 +1,6 @@
 START_FILE
-\xfb\r\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\x94\x0b\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x05\x01 REF_END3 
+\xfb\r\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\x94\x0b\x00
+SEQ4 \x00\x1e\x05\x01 REF_END3 
 LOAD6 .\\Data\\Script\\Bgm.Fob REF2  \x00 REF_END2 
 LOAD2 PlayCD REF1 J\x00 REF_END1 
 LOAD3 SCEG02_004 REF6 f\x00 REF_END2 
@@ -11,9 +12,11 @@ SEQ1 \x8c\x01 SEQ2 T\xc5\x01\x0c\x00\x00\x00\x00"\x03i\x00\x00
 \n拓司\n　「せ、先生！」@
 錦城\n　「しーっ！　……静かに。\pみんなが目を覚ますわ。@
 　　先生ね、考えたの。\p虎菱くんがこういうのを励みにできれ\n　　ば……って」\w\z
-\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \xaa\x00 REF_END3 
+\x00
+SEQ4  REF6 \xaa\x00 REF_END3 
 LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 n\x02 REF_END2 
-LOAD2 TextOn REF1 \x9c\x02 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e^\x00 REF_END3 
+LOAD2 TextOn REF1 \x9c\x02 REF_END1 
+SEQ4 \x00\x1e^\x00 REF_END3 
 LOAD6 .\\Data\\Script\\Bg.Fob REF3 \xd2\x02 REF_END2 
 LOAD4 BgAutoFadeIn REF3 \xfc\x02 REF_END1 
 LOAD3 SCEG02_005 REF6  \x03 REF_END2 
@@ -26,7 +29,8 @@ SEQ1 \x8c\x01 SEQ2 X\xc5\x01\x0c\x00\x00\x00\x00"\x03R\x00\x00
 拓司\n　「い、いえ……先生」@
 錦城\n　「よかった」@
 \n錦城は拓司の目をじっと見つめたまま、薄く笑った。\w\z
-\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 d\x03 CALL1 n\x02 CALL3 \x9c\x02 REF_END1 
+\x00
+SEQ4  REF6 d\x03 CALL1 n\x02 CALL3 \x9c\x02 REF_END1 
 LOAD3 SCEG02_006 REF6 \xe6\x04 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \\\xc5\x01\x0c\x00\x00\x00\x00"\x03R\x00\x00
  
@@ -36,7 +40,8 @@ SEQ1 \x8c\x01 SEQ2 \\\xc5\x01\x0c\x00\x00\x00\x00"\x03R\x00\x00
 　　遅いほうがいいのかしら？」@
 拓司\n　「……」@
 黙っていると、錦城の手の動きがひどくゆっくりとしたものに変\nわった。\pじらすように止まり、少し動いてまた止まる。\w\z
-\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 *\x05 CALL1 n\x02 CALL3 \x9c\x02 REF_END1 
+\x00\x00\x00
+SEQ4  REF6 *\x05 CALL1 n\x02 CALL3 \x9c\x02 REF_END1 
 LOAD3 SCEG02_007 REF6 \xac\x06 REF_END2 
 SEQ1 \x8c\x01 SEQ2 `\xc5\x01\x0c\x00\x00\x00\x00"\x03R\x00\x00
  
@@ -48,7 +53,8 @@ SEQ1 \x8c\x01 SEQ2 `\xc5\x01\x0c\x00\x00\x00\x00"\x03R\x00\x00
 錦城\n　「これくらい？」@
 拓司\n　「もっと……」@
 錦城\n　「いやらしい子ね。先生の手、道具だとでも思ってるのかしら？\n　　ふふふ」\w\z
-\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \xf0\x06 CALL1 n\x02 CALL3 \x9c\x02 REF_END1 
+\x00
+SEQ4  REF6 \xf0\x06 CALL1 n\x02 CALL3 \x9c\x02 REF_END1 
 LOAD3 SCEG02_008 REF6 r\x08 REF_END2 
 SEQ1 \x8c\x01 SEQ2 d\xc5\x01\x0c\x00\x00\x00\x00"\x03\x86\x00\x00
  
@@ -61,12 +67,14 @@ SEQ1 \x8c\x01 SEQ2 d\xc5\x01\x0c\x00\x00\x00\x00"\x03\x86\x00\x00
 錦城\n　「いくときは『先生いきます』っていうのよ？」@
 拓司\n　「先生……」@
 錦城\n　「ねえ……触りたい？\p　先生の胸、そんなにじっと見つめて\n　　……ねえ、触りたいの？」\w\z
-\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \xb6\x08 CALL1 n\x02 CALL3 \x9c\x02 REF_END1 
+\x00
+SEQ4  REF6 \xb6\x08 CALL1 n\x02 CALL3 \x9c\x02 REF_END1 
 LOAD9 
 CHOICE
 「触りたい」\n「……」\n\l0,2,
 ENDCHOICE
 
-\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \x08\x0b CALL1 n\x02 CALL3 \x9c\x02 CALL2 n\x02 REF_END2 
+\x00
+SEQ4  REF6 \x08\x0b CALL1 n\x02 CALL3 \x9c\x02 CALL2 n\x02 REF_END2 
 LOAD3 TextClose REF2 v\x0b REF_END1 
 END_FILE

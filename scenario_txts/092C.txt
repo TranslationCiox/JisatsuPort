@@ -1,7 +1,8 @@
 START_FILE
 I\x0e\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\\\x0b\x00
 LOAD6 .\\Data\\Script\\Bgm.Fob REF2 \x06\x00 REF_END2 
-LOAD2 StopCD REF1 0\x00 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00 REF_END3 
+LOAD2 StopCD REF1 0\x00 REF_END1 
+SEQ4 \x00\x1e\xc8\x00 REF_END3 
 LOAD6 .\\Data\\Script\\Bg.Fob REF3 f\x00 REF_END2 
 LOAD4 BgAutoFadeIn REF3 \x90\x00 REF_END1 
 LOAD3 SCE092_001 REF6 \xb4\x00 REF_END2 
@@ -9,7 +10,8 @@ SEQ1 \x8c\x01 SEQ2 `\x9f SEQ3 \x03\x11\x00\x00
  
 \n\n\n\n\n\n\n\n\n\n　　　　　　　　　　　　　　『２日目』\
 
-\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \xf8\x00 REF_END3 
+\x00
+SEQ4  REF6 \xf8\x00 REF_END3 
 LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \\\x01 REF_END2 
 LOAD2 TextOn REF1 \x8a\x01 REF_END1 
 LOAD3 SCE092_002 REF6 \xa6\x01 REF_END2 
@@ -24,7 +26,8 @@ SEQ1 \x8c\x01 SEQ2 d\x9f SEQ3 \x03\x9b\x00\x00
 なたね\n　「それはいえません」@
 御堂\n　「なに？」\
 
- \x1e\x00\x00\x00\x00\r\x00 REF6 \xea\x01 CALL1 \\\x01 CALL3 \x8a\x01 REF_END1 
+
+SEQ4  REF6 \xea\x01 CALL1 \\\x01 CALL3 \x8a\x01 REF_END1 
 LOAD3 SCE092_003 REF6 \x90\x04 REF_END2 
 SEQ1 \x8c\x01 SEQ2 h\x9f SEQ3 \x03\x9e\x00\x00
  
@@ -36,7 +39,8 @@ SEQ1 \x8c\x01 SEQ2 h\x9f SEQ3 \x03\x9e\x00\x00
 \n生々しい言葉に、紅葉と早桃が顔をしかめる。@
 粘り着くような沈黙をおいて、御堂がいった。\
 
-\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \xd4\x04 CALL1 \\\x01 CALL3 \x8a\x01 REF_END1 
+\x00\x00\x00
+SEQ4  REF6 \xd4\x04 CALL1 \\\x01 CALL3 \x8a\x01 REF_END1 
 LOAD3 SCE092_004 REF6 \x86\x07 REF_END2 
 SEQ1 \x8c\x01 SEQ2 l\x9f SEQ3 \x03\x9f\x00\x00
  
@@ -48,11 +52,13 @@ SEQ1 \x8c\x01 SEQ2 l\x9f SEQ3 \x03\x9f\x00\x00
 なたねのいうことはもっともだった。\pこうしたサバイバルをあら\nかじめ想定していたなたねだからこそ、じりじりと確実に迫るリ\nミットのプレッシャーに耐えていられるのかもしれない。@
 しかし、なたねが口にした『３日』という具体的な例は、理屈を\n越えて一同の上に重くのしかかっていた。\p漠然と遠くに見ていた\n最後の日は、明日、やってくるかもしれないのだ……と。\
 
-\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \xca\x07 CALL1 \\\x01 CALL3 \x8a\x01 REF_END1 \x03\x1e\x00\x00
+\x00\x00\x00
+SEQ4  REF6 \xca\x07 CALL1 \\\x01 CALL3 \x8a\x01 REF_END1 \x03\x1e\x00\x00
 CHOICE
 「何日耐えられるのか、はっきりさせてほしい」と拓司はいった\n「雲居さんのいうとおりだ」と拓司はいった\n\l0,2,
 ENDCHOICE
 
-\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \x80\n CALL1 \\\x01 CALL3 \x8a\x01 CALL2 \\\x01 REF_END2 
+\x00\x00\x00
+SEQ4  REF6 \x80\n CALL1 \\\x01 CALL3 \x8a\x01 CALL2 \\\x01 REF_END2 
 LOAD3 TextClose REF2 >\x0b REF_END1 
 END_FILE

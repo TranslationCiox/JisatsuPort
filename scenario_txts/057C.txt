@@ -10,7 +10,8 @@ SEQ1 \x8c\x01 SEQ2 \xb0h SEQ3 \x03t\x00\x00
 \n学生\n　「へへ……やっぱり最初は上村か？」@
 上村\n　「私しかいないっしょ？\p　このウザキャラ潰すのは私の使命だ\n　　からさ」\
 
-\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 J\x00 REF_END3 
+\x00
+SEQ4  REF6 J\x00 REF_END3 
 LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 :\x02 REF_END2 
 LOAD2 TextOn REF1 h\x02 REF_END1 
 LOAD3 SCE057_002 REF6 \x84\x02 REF_END2 
@@ -25,7 +26,8 @@ SEQ1 \x8c\x01 SEQ2 \xb4h SEQ3 \x03\x85\x00\x00
 上村\n　「お前がいるだけで教室の空気が澱むんだよ！」@
 早桃\n　「……」\
 
-\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \xc8\x02 CALL1 :\x02 CALL3 h\x02 REF_END1 
+\x00
+SEQ4  REF6 \xc8\x02 CALL1 :\x02 CALL3 h\x02 REF_END1 
 LOAD3 SCE057_003 REF6 \x16\x05 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \xb8h SEQ3 \x03\x94\x00\x00
  
@@ -37,7 +39,8 @@ SEQ1 \x8c\x01 SEQ2 \xb8h SEQ3 \x03\x94\x00\x00
 \n早桃\n　「儀式……身を清めて……死ねるための……儀式」@
 上村\n　「そうそう。儀式儀式」\
 
-\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 Z\x05 CALL1 :\x02 CALL3 h\x02 REF_END1 
+\x00
+SEQ4  REF6 Z\x05 CALL1 :\x02 CALL3 h\x02 REF_END1 
 LOAD3 SCE057_004 REF6 \xe4\x07 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \xbch SEQ3 \x03\x94\x00\x00
  
@@ -50,7 +53,8 @@ SEQ1 \x8c\x01 SEQ2 \xbch SEQ3 \x03\x94\x00\x00
 \n上村\n　「おしっこかけてくださいってお願いしろっていってんだよ、\n　　バカ！」@
 早桃\n　「……」\
 
-\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 (\x08 CALL1 :\x02 CALL3 h\x02 REF_END1 
+\x00\x00\x00
+SEQ4  REF6 (\x08 CALL1 :\x02 CALL3 h\x02 REF_END1 
 LOAD3 SCE057_005 REF6 \xb2\n REF_END2 
 SEQ1 \x8c\x01 SEQ2 \xc0h SEQ3 \x03a\x00\x00
  
@@ -60,7 +64,8 @@ SEQ1 \x8c\x01 SEQ2 \xc0h SEQ3 \x03a\x00\x00
 \n　命じられるまま、早桃は犬のように這いつくばる。@
 　上村は椅子をひとつひきずって早桃の前に配し、どっかとそこ\n　に腰を下ろした。\
 
-\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \xf6\n CALL1 :\x02 CALL3 h\x02 REF_END1 
+\x00
+SEQ4  REF6 \xf6\n CALL1 :\x02 CALL3 h\x02 REF_END1 
 LOAD3 SCE057_006 REF6 \xb4\x0c REF_END2 
 SEQ1 \x8c\x01 SEQ2 \xc4h SEQ3 \x03\xac\x00\x00
  
@@ -74,7 +79,8 @@ SEQ1 \x8c\x01 SEQ2 \xc4h SEQ3 \x03\xac\x00\x00
 　頬を伝って流れ落ちた汚液が、床に溜まりを作る。@
 　髪の毛が汚液を吸い込んで、ぺったりと頬にへばりつく。\
 
- \x1e\x00\x00\x00\x00\r\x00 REF6 \xf8\x0c CALL1 :\x02 CALL3 h\x02 REF_END1 
+
+SEQ4  REF6 \xf8\x0c CALL1 :\x02 CALL3 h\x02 REF_END1 
 LOAD3 SCE057_007 REF6 \xe2\x0f REF_END2 
 SEQ1 \x8c\x01 SEQ2 \xc8h SEQ3 \x03\x8d\x00\x00
  
@@ -87,7 +93,8 @@ SEQ1 \x8c\x01 SEQ2 \xc8h SEQ3 \x03\x8d\x00\x00
 そう考えれば、波動やら集団自殺やらも説明が付く。@
 おそらく、御堂たちによるなたねの陵辱、あのあたりから自分は\n妄想の中にいるのだ……。\
 
-\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 &\x10 CALL1 :\x02 CALL3 h\x02 REF_END1 
+\x00\x00\x00
+SEQ4  REF6 &\x10 CALL1 :\x02 CALL3 h\x02 REF_END1 
 LOAD3 SCE057_008 REF6 \x94\x12 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \xcch SEQ3 \x03c\x00\x00
  
@@ -98,6 +105,7 @@ SEQ1 \x8c\x01 SEQ2 \xcch SEQ3 \x03c\x00\x00
 学生\n　「喜んでるんだろう？」@
 \n学生たちは我先に早桃へと殺到した。\p男子学生は勃起したペ○ス\nをむき出しにして、女子学生はちぎり捨てるようにスカートとシ\nョーツを脱ぎ捨てて……。\
 
-\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \xd8\x12 CALL1 :\x02 CALL3 h\x02 CALL2 :\x02 REF_END2 
+\x00\x00\x00
+SEQ4  REF6 \xd8\x12 CALL1 :\x02 CALL3 h\x02 CALL2 :\x02 REF_END2 
 LOAD3 TextClose REF2 \xaa\x14 REF_END1 
 END_FILE

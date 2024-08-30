@@ -89,6 +89,11 @@ patterns = [
         "action": " SEQ3 "
     },
     {
+        "pattern": [b' ', b'\x1e', b'\x00', b'\x00', b'\x00', b'\x00', b'\r', b'\x00'],
+        # Used in EVERY SCExx_xxx command.
+        "action": "\nSEQ4 "
+    },
+    {
         "pattern": [b'\x03', b'\x02', b'\x00', b'\x00'],
         # BgOn, PlayCD, TextOn
         "action": "\nLOAD2 "

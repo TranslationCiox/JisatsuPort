@@ -13,9 +13,11 @@ SEQ1 \x8c\x01 SEQ2 \x90\x1a SEQ3 \x03s\x00\x00
 ない。@
 ない。\
 
-\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 J\x00 REF_END3 
+\x00\x00\x00
+SEQ4  REF6 J\x00 REF_END3 
 LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 6\x02 REF_END2 
-LOAD2 TextOn REF1 d\x02 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1eJ\x00 REF_END3 
+LOAD2 TextOn REF1 d\x02 REF_END1 
+SEQ4 \x00\x1eJ\x00 REF_END3 
 LOAD6 .\\Data\\Script\\Bg.Fob REF3 \x9a\x02 REF_END2 
 LOAD4 BgAutoFadeIn REF3 \xc4\x02 REF_END1 
 LOAD3 SCE007_002 REF6 \xe8\x02 REF_END2 
@@ -35,7 +37,8 @@ SEQ1 \x8c\x01 SEQ2 \x94\x1a SEQ3 \x03\xab\x00\x00
 ゆっくりと、上下にしごき始める。@
 コットンの柔らかい感触と、義妹の指の刺激に、拓司の息が一気\nに荒くなる。\
 
-\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 ,\x03 CALL1 6\x02 CALL3 d\x02 REF_END1 
+\x00\x00\x00
+SEQ4  REF6 ,\x03 CALL1 6\x02 CALL3 d\x02 REF_END1 
 LOAD3 SCE007_003 REF6 \x12\x06 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \x98\x1a SEQ3 \x03q\x00\x00
  
@@ -46,12 +49,14 @@ SEQ1 \x8c\x01 SEQ2 \x98\x1a SEQ3 \x03q\x00\x00
 　　ママとパパに見つからないところで、おにいちゃんがしたい\n　　ときに。@
 　　お風呂で。\pトイレで。\pおこたのなかで。\pおにいちゃんの机の\n　　下で。\p早桃のクローゼットのなかで……」\
 
-\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 V\x06 CALL1 6\x02 CALL3 d\x02 REF_END1 
+\x00
+SEQ4  REF6 V\x06 CALL1 6\x02 CALL3 d\x02 REF_END1 
 LOAD3 SCE007_004 REF6 T\x08 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \x9c\x1a SEQ3 \x03"\x00\x00
  
 ぺちゃぺちゃと唾液が絡んだようなしゃべりかたで早桃は続ける。\n\p性器に指を絡めて奉仕しながらみだらな言葉で義兄の興奮を誘う。\n\w\z
-\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \x98\x08 CALL1 6\x02 CALL3 d\x02 REF_END1 
+\x00\x00\x00
+SEQ4  REF6 \x98\x08 CALL1 6\x02 CALL3 d\x02 REF_END1 
 LOAD3 SCE007_005 REF6 Z\t REF_END2 
 SEQ1 \x8c\x01 SEQ2 \xa0\x1a SEQ3 \x03\x8d\x00\x00
  
@@ -63,7 +68,8 @@ SEQ1 \x8c\x01 SEQ2 \xa0\x1a SEQ3 \x03\x8d\x00\x00
 　　……よかったねぇ、おにいちゃん。\pこんなにエッチな義妹\n　　がいて。@
 　　あんまりいないと思うよ、こんなふうに、性欲処理してくれ\n　　る義妹って。」\
 
-\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \x9e\t CALL1 6\x02 CALL3 d\x02 REF_END1 
+\x00\x00\x00
+SEQ4  REF6 \x9e\t CALL1 6\x02 CALL3 d\x02 REF_END1 
 LOAD3 SCE007_006 REF6 \x0c\x0c REF_END2 
 SEQ1 \x8c\x01 SEQ2 \xa4\x1a SEQ3 \x03}\x00\x00
  
@@ -76,7 +82,8 @@ SEQ1 \x8c\x01 SEQ2 \xa4\x1a SEQ3 \x03}\x00\x00
 精液で汚されたパンティを、見せつけるように広げる。@
 ちょうどクロッチの部分に、たっぷりと、精液が溜まっている。\
 
-\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 P\x0c CALL1 6\x02 CALL3 d\x02 REF_END1 
+\x00\x00\x00
+SEQ4  REF6 P\x0c CALL1 6\x02 CALL3 d\x02 REF_END1 
 LOAD3 SCE007_007 REF6 ~\x0e REF_END2 
 SEQ1 \x8c\x01 SEQ2 \xa8\x1a SEQ3 \x03\xaf\x00\x00
  
@@ -88,7 +95,8 @@ SEQ1 \x8c\x01 SEQ2 \xa8\x1a SEQ3 \x03\xaf\x00\x00
 クロッチにできたたっぷりとした精液だまりをこぼさないよう、\nあるいは義兄に見せつけるよう、そろり、そろりとパンティを\nひきあげていく。@
 パンティと手はネグリジェの裾に再び消え、そして手だけが裾\nから引き出された。\
 
-\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \xc2\x0e CALL1 6\x02 CALL3 d\x02 REF_END1 
+\x00
+SEQ4  REF6 \xc2\x0e CALL1 6\x02 CALL3 d\x02 REF_END1 
 LOAD3 SCE007_008 REF6 \xb8\x11 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \xac\x1a SEQ3 \x03u\x00\x00
  
@@ -98,7 +106,8 @@ SEQ1 \x8c\x01 SEQ2 \xac\x1a SEQ3 \x03u\x00\x00
 早桃\n　「見たいの？」@
 拓司\n　「ああ……見たい」\
 
-\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \xfc\x11 CALL1 6\x02 CALL3 d\x02 REF_END1 
+\x00
+SEQ4  REF6 \xfc\x11 CALL1 6\x02 CALL3 d\x02 REF_END1 
 LOAD3 SCE007_009 REF6 \n\x14 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \xb0\x1a SEQ3 \x03p\x00\x00
  
@@ -107,7 +116,8 @@ SEQ1 \x8c\x01 SEQ2 \xb0\x1a SEQ3 \x03p\x00\x00
 　　おにいちゃんの精液がしみ込んだパンティ穿いてたから、こ\n　　んなにエッチになっちゃったんだ……@
 　　いいよ。\p見せてあげる」\
 
-\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 N\x14 CALL1 6\x02 CALL3 d\x02 REF_END1 
+\x00\x00\x00
+SEQ4  REF6 N\x14 CALL1 6\x02 CALL3 d\x02 REF_END1 
 LOAD3 SCE007_010 REF6 H\x16 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \xb4\x1a SEQ3 \x03l\x00\x00
  
@@ -120,7 +130,8 @@ SEQ1 \x8c\x01 SEQ2 \xb4\x1a SEQ3 \x03l\x00\x00
 べったりと、クロッチに薄黄色い染みができている。@
 精液の匂いと、早桃の体温がむっと鼻をつく。\
 
-\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \x8c\x16 CALL1 6\x02 CALL3 d\x02 REF_END1 
+\x00
+SEQ4  REF6 \x8c\x16 CALL1 6\x02 CALL3 d\x02 REF_END1 
 LOAD3 SCE007_011 REF6 v\x18 REF_END2 
 SEQ1 \x8c\x01 SEQ2 \xb8\x1a SEQ3 \x03\x99\x00\x00
  
@@ -134,7 +145,8 @@ SEQ1 \x8c\x01 SEQ2 \xb8\x1a SEQ3 \x03\x99\x00\x00
 そのまま、精液でじっとりと湿った性器を、クロッチの上からこ\nすりたてる。@
 にちゃにちゃと精液が泡立つ音がする。\
 
-\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \xba\x18 CALL1 6\x02 CALL3 d\x02 REF_END1 
+\x00\x00\x00
+SEQ4  REF6 \xba\x18 CALL1 6\x02 CALL3 d\x02 REF_END1 
 LOAD3 SCE007_012 REF6 X\x1b REF_END2 
 SEQ1 \x8c\x01 SEQ2 \xbc\x1a SEQ3 \x03`\x00\x00
  
@@ -144,7 +156,9 @@ SEQ1 \x8c\x01 SEQ2 \xbc\x1a SEQ3 \x03`\x00\x00
 義兄からブリーフを受け取ると、それを鼻先に持っていき、くん\nくんと匂いを嗅いだ。@
 嗅ぎながら、開いている方の手で、再び股間をいじり始める。\
 
-\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \x9c\x1b CALL1 6\x02 CALL3 d\x02 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1eK\x00 CALL1 \x9a\x02 CALL3 \xc4\x02 REF_END1 
+\x00
+SEQ4  REF6 \x9c\x1b CALL1 6\x02 CALL3 d\x02 REF_END1 
+SEQ4 \x00\x1eK\x00 CALL1 \x9a\x02 CALL3 \xc4\x02 REF_END1 
 LOAD3 SCE007_013 REF6 \x8a\x1d REF_END2 
 SEQ1 \x8c\x01 SEQ2 \xc0\x1a SEQ3 \x03x\x00\x00
  
@@ -155,7 +169,8 @@ SEQ1 \x8c\x01 SEQ2 \xc0\x1a SEQ3 \x03x\x00\x00
 拓司は義妹の開いた太股のあいだを通して自分のペ○スを握り、\nしごき始めた。@
 \n早桃\n　「……ぺちゃ…ぺちゃ…ぢゅるっ……ぢゅりゅりゅっ……」\
 
-\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \xce\x1d CALL1 6\x02 CALL3 d\x02 REF_END1 
+\x00
+SEQ4  REF6 \xce\x1d CALL1 6\x02 CALL3 d\x02 REF_END1 
 LOAD3 SCE007_014 REF6 \xe8\x1f REF_END2 
 SEQ1 \x8c\x01 SEQ2 \xc4\x1a SEQ3 \x03T\x00\x00
  
@@ -165,7 +180,8 @@ SEQ1 \x8c\x01 SEQ2 \xc4\x1a SEQ3 \x03T\x00\x00
 パンティの隙間から精液がトロトロあふれて、細い指に絡まって\n糸を引く。@
 太股の付け根が精液でぬるぬると光っている。\
 
-\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 ,  CALL1 6\x02 CALL3 d\x02 REF_END1 
+\x00
+SEQ4  REF6 ,  CALL1 6\x02 CALL3 d\x02 REF_END1 
 LOAD3 SCE007_015 REF6 \xb6! REF_END2 
 SEQ1 \x8c\x01 SEQ2 \xc8\x1a SEQ3 \x03\x8d\x00\x00
  
@@ -179,7 +195,8 @@ SEQ1 \x8c\x01 SEQ2 \xc8\x1a SEQ3 \x03\x8d\x00\x00
 \n拓司の腰が跳ね上がり、二回目とは思えない量の精液が迸った。@
 精液は弧を描いて飛び、腰まで伸びた早桃の髪の毛をべったりと\n汚した。\
 
-\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \xfa! CALL1 6\x02 CALL3 d\x02 REF_END1 
+\x00
+SEQ4  REF6 \xfa! CALL1 6\x02 CALL3 d\x02 REF_END1 
 LOAD3 SCE007_016 REF6 h$ REF_END2 
 SEQ1 \x8c\x01 SEQ2 \xcc\x1a SEQ3 \x03\x9c\x00\x00
  
@@ -192,7 +209,8 @@ SEQ1 \x8c\x01 SEQ2 \xcc\x1a SEQ3 \x03\x9c\x00\x00
 \n早桃が小さく笑った。@
 徐々に笑い声が大きくなっていく。\
 
-\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \xac$ CALL1 6\x02 CALL3 d\x02 REF_END1 
+\x00\x00\x00
+SEQ4  REF6 \xac$ CALL1 6\x02 CALL3 d\x02 REF_END1 
 LOAD3 SCE007_017 REF6 V' REF_END2 
 SEQ1 \x8c\x01 SEQ2 \xd0\x1a SEQ3 \x03\xb4\x00\x00
  
@@ -207,7 +225,9 @@ SEQ1 \x8c\x01 SEQ2 \xd0\x1a SEQ3 \x03\xb4\x00\x00
 『灰色』にあわせて、最後にはさながら踊っているかのごとく、\n早桃は身体をくねらせ始めた。@
 \n早桃\n　「ウワハハハハハハハザザザ……ザザッ……ザアザザザ……ザ\n　　アアアアア……ザアザアアアアアアア……」\
 
-\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \x9a' CALL1 6\x02 CALL3 d\x02 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00 CALL1 \x9a\x02 CALL3 \xc4\x02 REF_END1 
+\x00\x00\x00
+SEQ4  REF6 \x9a' CALL1 6\x02 CALL3 d\x02 REF_END1 
+SEQ4 \x00\x1e\xc8\x00 CALL1 \x9a\x02 CALL3 \xc4\x02 REF_END1 
 LOAD6 .\\Data\\Script\\Bgm.Fob REF2 \xd8* REF_END2 
 LOAD2 StopCD REF1 \x02+ REF_END1 
 LOAD3 SCE007_018 REF6 \x1e+ REF_END2 
@@ -225,6 +245,7 @@ SEQ1 \x8c\x01 SEQ2 \xd4\x1a SEQ3 \x03L\x00\x00
 \n現実に戻ったのだ。@
 おそらくは。\
 
-\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 b+ CALL1 6\x02 CALL3 d\x02 CALL2 6\x02 REF_END2 
+\x00\x00\x00
+SEQ4  REF6 b+ CALL1 6\x02 CALL3 d\x02 CALL2 6\x02 REF_END2 
 LOAD3 TextClose REF2 \xd8, REF_END1 
 END_FILE
