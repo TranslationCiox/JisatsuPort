@@ -9,7 +9,8 @@ DIALOGUE_1 @d\x01\x0c\x00\x00\x00\x00"\x036\x00\x00
 御堂\n　「うるせえッ！」@
 \n重い一撃が顎を捉え、さらに鋭い蹴りが拓司を後方にはじき飛ば\nした。\
 
-\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 B\x01 REF_END2 
+\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 B\x01 REF_END2 
 LOAD2 TextOn REF1 p\x01 REF_END1 
 LOAD3 SCE218_002 REF6 \x8c\x01 REF_END2 
 DIALOGUE_1 Dd\x01\x0c\x00\x00\x00\x00"\x03x\x00\x00

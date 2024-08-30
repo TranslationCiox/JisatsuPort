@@ -7,7 +7,8 @@ DIALOGUE_1 \xe0\xab DIALOGUE_2 q\x00\x00
 なたね\n　「……」@
 拓司\n　「宇宙人とか電波とか、そういった話はみんなの前では控えて\n　　ほしい。\pそれでなくてもみんな不安なんだ。\pそういう……わ\n　　けのわからないことをいわれると、神経に響く。\pそしてもう\n　　ひとつ。\p早桃に限らず、誰かをスパイ呼ばわりするようなマ\n　　ネは金輪際やめてくれ。\pそれは雲居さんのいう、団結を乱\n　　す行為そのものだ。\p内部崩壊の引き金になりかねない」\
 
-\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 .\x02 REF_END2 
+\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 .\x02 REF_END2 
 LOAD2 TextOn REF1 \\\x02 REF_END1 
 LOAD3 SCE100_002 REF6 x\x02 REF_END2 
 DIALOGUE_1 \xe4\xab DIALOGUE_2 \x8d\x00\x00

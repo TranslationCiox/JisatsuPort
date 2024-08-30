@@ -13,7 +13,8 @@ DIALOGUE_1 \xe0\xa5\x01\x0c\x00\x00\x00\x00"\x03Z\x00\x00
 \n拓司\n　「別に……気にしてないさ。\p何かに取り憑かれて、混乱してい\n　　ただけだ」@
 カンナ\n　「そうね……\pええ、たぶんそう。\pでも、私がいったことは事\n　　実よ」@
 拓司\n　「……」\w\z
-\x00 DIALOGUE_END \x12\x01\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \x9a\x02 REF_END2 
+\x00 DIALOGUE_END \x12\x01\x00\x0c\x02\x00\x00"
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \x9a\x02 REF_END2 
 LOAD2 TextOn REF1 \xc8\x02 REF_END1 
 LOAD3 SCEK01_002 REF6 \xe4\x02 REF_END2 
 DIALOGUE_1 \xe4\xa5\x01\x0c\x00\x00\x00\x00"\x03\x8b\x00\x00

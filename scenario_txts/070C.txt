@@ -10,7 +10,8 @@ DIALOGUE_1 \x00} DIALOGUE_2 [\x00\x00
 早桃\n　「おにいちゃん！\p　こんな人のいうこと信じちゃだめよ！@
 　　ハドウなんて、ない。\pそんなの全部、この人の空想なんだか\n　　ら！」\
 
-\x00\x00\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xd6\x01 REF_END2 
+\x00\x00\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xd6\x01 REF_END2 
 LOAD2 TextOn REF1 \x04\x02 REF_END1 \x03\x17\x00\x00
 CHOICE
 なたねの警告を受け入れて別のコースを選ぶ\n早桃の忠告を受け入れて中庭に出る\n\l0,2,

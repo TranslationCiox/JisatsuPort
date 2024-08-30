@@ -14,7 +14,8 @@ DIALOGUE_1 \x90L DIALOGUE_2 N\x00\x00
 \n早桃\n　「おにいちゃん」@
 拓司\n　「……」\
 
-\x00\x00\x00 DIALOGUE_END \xaa\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \x02\x02 REF_END2 
+\x00\x00\x00 DIALOGUE_END \xaa\x00\x00\x0c\x02\x00\x00"
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \x02\x02 REF_END2 
 LOAD2 TextOn REF1 0\x02 REF_END1 
 LOAD3 SCE039_002 REF6 L\x02 REF_END2 
 DIALOGUE_1 \x94L DIALOGUE_2 W\x00\x00

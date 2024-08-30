@@ -11,7 +11,8 @@ DIALOGUE_1  N DIALOGUE_2 6\x00\x00
 早桃が笑いながらいった。@
 それは嘲笑だった。\
 
-\x00 DIALOGUE_END \xaa\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xa2\x01 REF_END2 
+\x00 DIALOGUE_END \xaa\x00\x00\x0c\x02\x00\x00"
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xa2\x01 REF_END2 
 LOAD2 TextOn REF1 \xd0\x01 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1eD\x00\x00\x0c\x02\x00\x00"
 LOAD6 .\\Data\\Script\\Bg.Fob REF3 \x06\x02 REF_END2 
 LOAD4 BgAutoFadeIn REF3 0\x02 REF_END1 

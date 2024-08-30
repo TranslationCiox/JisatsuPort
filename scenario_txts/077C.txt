@@ -14,7 +14,8 @@ DIALOGUE_1 \xf0\x87 DIALOGUE_2 ~\x00\x00
 早桃\n　「おにいちゃん？！」@
 拓司\n　「俺が行く。\pだから雲居さんは２人をシェルターに連れてい\n　　ってやってくれ」\
 
-\x00 DIALOGUE_END \x90\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xa8\x02 REF_END2 
+\x00 DIALOGUE_END \x90\x00\x00\x0c\x02\x00\x00"
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xa8\x02 REF_END2 
 LOAD2 TextOn REF1 \xd6\x02 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x08\x01
 CALL1 \x06\x00 REF_END2 
 LOAD2 PlayCD REF1 \x18\x03 REF_END1 
@@ -69,7 +70,8 @@ DIALOGUE_1 \x00\x88 DIALOGUE_2 E\x00\x00
 　振り返り振り返り、早桃たち３人の姿が廊下の向こうに消えさ\n　ったのを見送り、拓司はよし、とつぶやいた。\
 
 \x00\x00\x00 DIALOGUE_END \x1e\t
-CALL1 \xa8\x02 CALL3 \xd6\x02 CALL2 \x06\x00 CALL3 0\x00 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e<\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.fob REF1 \xa0\n REF_END2 
+CALL1 \xa8\x02 CALL3 \xd6\x02 CALL2 \x06\x00 CALL3 0\x00 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e<\x00\x00\x0c\x02\x00\x00"
+LOAD7 .\\Data\\Script\\TextFunc.fob REF1 \xa0\n REF_END2 
 LOAD3 WaitTime REF3 \xce\n REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\t\x01
 CALL1 \x06\x00 CALL3 \x18\x03 REF_END1 
 LOAD3 SCE077_006 REF6 "\x0b REF_END2 

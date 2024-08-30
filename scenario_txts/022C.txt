@@ -19,7 +19,8 @@ DIALOGUE_1 \x002 DIALOGUE_2 \x96\x00\x00
 命じたとおり、体操服とブルマに身を包んでいる。顔を紅潮させ\nて、義兄に愛される期待にうち震えている。@
 両親が留守なのだから、本当はベッドで堂々と繋がることができ\nるのだ。しかし、敢えてこんな場所を選んだ。それは……\
 
-\x00\x00\x00 DIALOGUE_END \x90\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \x08\x03 REF_END2 
+\x00\x00\x00 DIALOGUE_END \x90\x00\x00\x0c\x02\x00\x00"
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \x08\x03 REF_END2 
 LOAD2 TextOn REF1 6\x03 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x05\x01
 CALL1 \x06\x00 REF_END2 
 LOAD2 PlayCD REF1 x\x03 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1eM\x00\x00\x0c\x02\x00\x00"
@@ -498,7 +499,7 @@ DIALOGUE_1 \x802 DIALOGUE_2 R\x00\x00
 \n　ザザザ……ザザッ……ザアザザザ……ザアアアアア……\nザアザアアアアアアア……\
 
 \x00\x00\x00 DIALOGUE_END XK
-CALL1 \x08\x03 CALL3 6\x03 REF_END1  \x1e\x00\x00\x00\x00\r\x00 REF_END2 \x0c\x02\x00\x00"\x1f\x06\x00 REF_END2 
+CALL1 \x08\x03 CALL3 6\x03 REF_END1  \x1e\x00\x00\x00\x00\r\x00 REF_END2 \x0c\x02\x00\x00" REF7 \x06\x00 REF_END2 
 LOAD2 SeStop REF1 \x00M CALL2 \x08\x03 REF_END2 
 LOAD3 TextClose REF2 (M REF_END1 
 END_FILE

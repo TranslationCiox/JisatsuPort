@@ -13,7 +13,8 @@ DIALOGUE_1 \x00K DIALOGUE_2 a\x00\x00
 無表情だったが、それが仮面にすぎないことは、拓司にもすぐに\nわかった。@
 やがて早桃がポツリといった。\
 
-\x00\x00\x00 DIALOGUE_END \xaa\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 N\x02 REF_END2 
+\x00\x00\x00 DIALOGUE_END \xaa\x00\x00\x0c\x02\x00\x00"
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 N\x02 REF_END2 
 LOAD2 TextOn REF1 |\x02 REF_END1 
 LOAD3 SCE038_002 REF6 \x98\x02 REF_END2 
 DIALOGUE_1 \x04K DIALOGUE_2 b\x00\x00

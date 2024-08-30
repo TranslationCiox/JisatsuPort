@@ -14,7 +14,8 @@ DIALOGUE_1 p\x17 DIALOGUE_2 H\x00\x00
 おかしいな、と拓司は思った。@
 なぜなら夜風なんか、これっぽっちも吹いていないじゃないか。\
 
-\x00\x00\x00 DIALOGUE_END \x12\x01\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 R\x02 REF_END2 
+\x00\x00\x00 DIALOGUE_END \x12\x01\x00\x0c\x02\x00\x00"
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 R\x02 REF_END2 
 LOAD2 TextOn REF1 \x80\x02 REF_END1 
 LOAD3 SCE005_002 REF6 \x9c\x02 REF_END2 
 DIALOGUE_1 t\x17 DIALOGUE_2 ^\x00\x00

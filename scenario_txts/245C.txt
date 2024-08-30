@@ -17,7 +17,8 @@ DIALOGUE_1 p\x8e\x01\x0c\x00\x00\x00\x00"\x03\xb9\x00\x00
 あの銀紙のシェルターがそれに耐えうるのかどうかも。@
 しかし、どこから襲ってくるかわからないむきだしの死に身を晒\nすより、どんなに薄かろうとも鎧をまとっている方がマシだった。\n\
 
-\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 N\x03 REF_END2 
+\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 N\x03 REF_END2 
 LOAD2 TextOn REF1 |\x03 REF_END1 
 LOAD3 SCE245_002 REF6 \x98\x03 REF_END2 
 DIALOGUE_1 t\x8e\x01\x0c\x00\x00\x00\x00"\x03h\x00\x00

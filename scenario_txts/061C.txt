@@ -15,9 +15,11 @@ LOAD2 SePlay REF1 \xc2\x00 REF_END1 \x03\\\x00\x00
 拓司\n　「……何の話だ？」@
 なたね\n　「死の話」\
 
-\x00 DIALOGUE_END \xde\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 n\x02 REF_END2 
-LOAD2 TextOn REF1 \x9c\x02 REF_END1  \x1e\x00\x00\x00\x00\r\x00 REF_END2 \x0c\x02\x00\x00"\x1f\x98\x00 REF_END2 
-LOAD2 SeStop REF1 \xde\x02 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e<\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.fob REF1 \x14\x03 REF_END2 
+\x00 DIALOGUE_END \xde\x00\x00\x0c\x02\x00\x00"
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 n\x02 REF_END2 
+LOAD2 TextOn REF1 \x9c\x02 REF_END1  \x1e\x00\x00\x00\x00\r\x00 REF_END2 \x0c\x02\x00\x00" REF7 \x98\x00 REF_END2 
+LOAD2 SeStop REF1 \xde\x02 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e<\x00\x00\x0c\x02\x00\x00"
+LOAD7 .\\Data\\Script\\TextFunc.fob REF1 \x14\x03 REF_END2 
 LOAD3 WaitTime REF3 B\x03 REF_END1 
 LOAD3 SCE061_002 REF6 b\x03 REF_END2 
 DIALOGUE_1 \xf4n DIALOGUE_2 \x12\x00\x00

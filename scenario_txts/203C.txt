@@ -11,7 +11,8 @@ DIALOGUE_1 \xd0L\x01\x0c\x00\x00\x00\x00"\x03d\x00\x00
 　　だからあなたに、ニセモノの認識を与えて、あなたを支配し\n　　ようとしている。\pあなたはかわいそうな病人で、あなたは\n　　『創る』ことなどできない。@
 　　そういうふうに信じ込ませようとして、そしてそれは成功し\n　　つつある……いいわね？」\
 
-\x00\x00\x00 DIALOGUE_END \xb2\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 b\x02 REF_END2 
+\x00\x00\x00 DIALOGUE_END \xb2\x00\x00\x0c\x02\x00\x00"
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 b\x02 REF_END2 
 LOAD2 TextOn REF1 \x90\x02 CALL2 b\x02 REF_END2 
 LOAD3 TextClose REF2 \xb8\x02 REF_END1 
 END_FILE

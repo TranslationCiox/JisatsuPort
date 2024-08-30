@@ -12,7 +12,8 @@ DIALOGUE_1 \x80j\x01\x0c\x00\x00\x00\x00"\x03x\x00\x00
 なたねは機械的に口を動かし、それを嚥下した。@
 心の底をのぞき込むように、なたねは拓司の目をじっと見つめた。\n\pそしてひとこと、いった。\
 
-\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 J\x02 REF_END2 
+\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 J\x02 REF_END2 
 LOAD2 TextOn REF1 x\x02 REF_END1 
 LOAD3 SCE222_002 REF6 \x94\x02 REF_END2 
 DIALOGUE_1 \x84j\x01\x0c\x00\x00\x00\x00"\x03O\x00\x00

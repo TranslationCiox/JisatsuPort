@@ -8,7 +8,8 @@ DIALOGUE_1 P\xaa DIALOGUE_2 I\x00\x00
 拓司\n　「もちろん、ラジオから指令電波を盗聴するだとか、お前が宇\n　　宙人のスパイだとか、そんなことは俺だって信じていない」@
 \n拓司はなたねをちらりとみやった。@
 なたねはいつもの無表情で、なんの反応もない。\w\z
-\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \x8e\x01 REF_END2 
+\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \x8e\x01 REF_END2 
 LOAD2 TextOn REF1 \xbc\x01 REF_END1 
 LOAD3 SCE099_002 REF6 \xd8\x01 REF_END2 
 DIALOGUE_1 T\xaa DIALOGUE_2 l\x00\x00

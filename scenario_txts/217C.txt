@@ -5,7 +5,8 @@ DIALOGUE_1 \xb0b\x01\x0c\x00\x00\x00\x00"\x03\x11\x00\x00
  
 \n\n\n\n\n\n\n\n\n\n　　　　　　　　　　　　　『８日目』\
 
-\x00\x00\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xae\x00 REF_END2 
+\x00\x00\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xae\x00 REF_END2 
 LOAD2 TextOn REF1 \xdc\x00 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\n\x01\x00\x0c\x02\x00\x00"
 LOAD6 .\\Data\\Script\\Bgm.Fob REF2 \x12\x01 REF_END2 
 LOAD2 PlayCD REF1 <\x01 REF_END1 

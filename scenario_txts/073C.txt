@@ -7,7 +7,8 @@ DIALOGUE_1 \xb0\x81 DIALOGUE_2 ]\x00\x00
 \nなたね\n　「悪いけれど、私は一緒にいけないわ。\p私はこの状況を生き延\n　　びなければならないから。\pレジスタンスの一斉蜂起……それ\n　　は最終聖戦になるわ……には絶対に私の力が必要になるか\n　　ら。\p私はキーだから。\p鍵なの。\pわかる？\p　わからないだろう\n　　なあ……」@
 拓司\n　「早桃、行くぞ！」\
 
-\x00\x00\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xde\x01 REF_END2 
+\x00\x00\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xde\x01 REF_END2 
 LOAD2 TextOn REF1 \x0c\x02 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x0b\x01\x00\x0c\x02\x00\x00"
 LOAD6 .\\Data\\Script\\Bgm.Fob REF2 B\x02 REF_END2 
 LOAD2 PlayCD REF1 l\x02 REF_END1 

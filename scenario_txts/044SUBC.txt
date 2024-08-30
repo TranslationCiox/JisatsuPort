@@ -14,7 +14,8 @@ DIALOGUE_1 \xa4T DIALOGUE_2 p\x00\x00
 大人の指だ。@
 指先がつい、と動いて、太股のあわせめに潜り込む。@
 睾丸を下から撫でさする。\w\z
-\x00 DIALOGUE_END \xaa\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \x8a\x02 REF_END2 
+\x00 DIALOGUE_END \xaa\x00\x00\x0c\x02\x00\x00"
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \x8a\x02 REF_END2 
 LOAD2 TextOn REF1 \xb8\x02 REF_END1 
 LOAD3 SCE044_019 REF6 \xd4\x02 REF_END2 
 DIALOGUE_1 \xa8T DIALOGUE_2 l\x00\x00

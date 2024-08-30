@@ -15,7 +15,8 @@ DIALOGUE_1 \x90\x97 DIALOGUE_2 \x9e\x00\x00
 拓司\n　「ああ。\p紅葉も無事だ。\p……で、こりゃ一体何の真似だ？」@
 カンナ\n　「ああ、このピカピカね……コレよ」\
 
-\x00\x00\x00 DIALOGUE_END \x90\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 (\x03 REF_END2 
+\x00\x00\x00 DIALOGUE_END \x90\x00\x00\x0c\x02\x00\x00"
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 (\x03 REF_END2 
 LOAD2 TextOn REF1 V\x03 REF_END1 
 LOAD3 SCE087_002 REF6 r\x03 REF_END2 
 DIALOGUE_1 \x94\x97 DIALOGUE_2 {\x00\x00

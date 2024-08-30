@@ -1,6 +1,8 @@
 START_FILE
-\x8b-\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00,'\x00\x03\t\x00\x00.\\Data\\Script\\Scenario\\048SubC.Fob REF1 \x06\x00 REF_END2 
-LOAD2 start REF2 <\x00 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e<\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.fob REF1 r\x00 REF_END2 
+\x8b-\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00,'\x00
+LOAD0 .\\Data\\Script\\Scenario\\048SubC.Fob REF1 \x06\x00 REF_END2 
+LOAD2 start REF2 <\x00 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e<\x00\x00\x0c\x02\x00\x00"
+LOAD7 .\\Data\\Script\\TextFunc.fob REF1 r\x00 REF_END2 
 LOAD3 WaitTime REF3 \xa0\x00 REF_END1 
 LOAD3 SCE048_020 REF6 \xc0\x00 REF_END2 
 DIALOGUE_1 \xecZ DIALOGUE_2 \xce\x00\x00
@@ -12,7 +14,8 @@ DIALOGUE_1 \xecZ DIALOGUE_2 \xce\x00\x00
 　拓司だけではない。\p他のクラスメイトも同様だろう。@
 　柏木は御堂に付き従うことで自分の居場所をアピールしてきた\nような男で、男子学生からは『つまらない男』としか評価されて\nいなかったし、女子学生からは『御堂の取り巻きのひとり』とし\nか評価されていなかった。\pつまり、柏木という男には、なんの\n主体性もなかった。\p彼は完璧な脇役であり、別の主役なしでは舞\n台に存在していられない。\pそんな男だった。\
 
- DIALOGUE_END \x04\x01\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \\\x04 REF_END2 
+ DIALOGUE_END \x04\x01\x00\x0c\x02\x00\x00"
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \\\x04 REF_END2 
 LOAD2 TextOn REF1 \x8a\x04 REF_END1 
 LOAD3 SCE048_021 REF6 \xa6\x04 REF_END2 
 DIALOGUE_1 \xf0Z DIALOGUE_2 \x9c\x00\x00

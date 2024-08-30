@@ -14,7 +14,8 @@ DIALOGUE_1 \xa0Z DIALOGUE_2 \x8b\x00\x00
 御堂\n　「悟りきったような目で人のこと見てるんじゃねえよ！@
 　　いいか、てめえに面白いもの見せてやるぜ！　……オイ、早\n　　くやれ！」\
 
-\x00 DIALOGUE_END \xaa\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xf6\x02 REF_END2 
+\x00 DIALOGUE_END \xaa\x00\x00\x0c\x02\x00\x00"
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xf6\x02 REF_END2 
 LOAD2 TextOn REF1 $\x03 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1eT\x00\x00\x0c\x02\x00\x00"
 LOAD6 .\\Data\\Script\\Bg.Fob REF3 Z\x03 REF_END2 
 LOAD4 BgAutoFadeIn REF3 \x84\x03 REF_END1 
@@ -228,7 +229,7 @@ DIALOGUE_1 \xe8Z DIALOGUE_2 0\x00\x00
 取り巻き\n　「おれら４人の特徴併せ持った子供が産まれたりして」\n取り巻き\n　「げらげらげらげら！　おもしれーよソレ！」\n取り巻き\n　「わはははは！」\n取り巻き\n　「うへへへへへ！」\
 
 \x00\x00\x00 DIALOGUE_END \xc6-
-CALL1 \xf6\x02 CALL3 $\x03 REF_END1  \x1e\x00\x00\x00\x00\r\x00 REF_END2 \x0c\x02\x00\x00"\x1f \x00 REF_END2 
+CALL1 \xf6\x02 CALL3 $\x03 REF_END1  \x1e\x00\x00\x00\x00\r\x00 REF_END2 \x0c\x02\x00\x00" REF7  \x00 REF_END2 
 LOAD2 SeStop REF1 \xe6. REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00
 CALL1 Z\x03 REF_END2 
 LOAD2 BgOn REF3 (/ CALL2 \xf6\x02 REF_END2 

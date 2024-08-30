@@ -13,7 +13,8 @@ DIALOGUE_1 0\\ DIALOGUE_2 \xe6\x00\x00
 とりあえず近場の教室－－三階の教室に向かい、そこにいる教員\nに事態を報告するつもりだ。@
 柏木の死と、なたねたちの乱交は切り離せない。\pそれをどうごま\nかせばいいのかまだ決めかねているが……人がひとり死んでいる\nのだ。\pさすがに知らん顔というわけにもいくまい。\pそれに、放っ\nておいてもいずれ死体は見つかる。\p事件が膨れ上がって手に負え\nなくなる前に、なんらかの処置を施して、自分となたねに降りか\nかる火の粉を少しでも減らしておいたほうがいいだろう。\
 
-\x00\x00\x00 DIALOGUE_END \xaa\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 b\x04 REF_END2 
+\x00\x00\x00 DIALOGUE_END \xaa\x00\x00\x0c\x02\x00\x00"
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 b\x04 REF_END2 
 LOAD2 TextOn REF1 \x90\x04 REF_END1 
 LOAD3 SCE049_002 REF6 \xac\x04 REF_END2 
 DIALOGUE_1 4\\ DIALOGUE_2 q\x00\x00

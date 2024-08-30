@@ -7,7 +7,8 @@ DIALOGUE_1 \xd0\xb0\x01\x0c\x00\x00\x00\x00"\x03 \x00\x00
 ゆき？@
 １週間後、ゆきは風邪薬を２００錠のんで、自殺した。@
 おしまい。これで、おしまい。\w\z
-\x00\x00\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xea\x00 REF_END2 
+\x00\x00\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xea\x00 REF_END2 
 LOAD2 TextOn REF1 \x18\x01 REF_END1 
 LOAD6 .\\Data\\Script\\Bgm.Fob REF2 4\x01 REF_END2 
 LOAD2 StopCD REF1 ^\x01 CALL2 \xea\x00 REF_END2 

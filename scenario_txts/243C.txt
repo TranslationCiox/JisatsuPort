@@ -14,7 +14,8 @@ DIALOGUE_1 P\x8b\x01\x0c\x00\x00\x00\x00"\x03c\x00\x00
 どんなものなのかわからないまま、彼らはそれを恐れてきた。@
 ただ、最終波動はひたすら、死のイメージだった。@
 死が定義不可能である以上、波動も同じく、理解の範疇の外にあ\nる。\p漠然とした恐怖ですべてを縛るものとして。\w\z
-\x00 DIALOGUE_END \x12\x01\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xbe\x02 REF_END2 
+\x00 DIALOGUE_END \x12\x01\x00\x0c\x02\x00\x00"
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xbe\x02 REF_END2 
 LOAD2 TextOn REF1 \xec\x02 REF_END1 
 LOAD3 SCE243_002 REF6 \x08\x03 REF_END2 
 DIALOGUE_1 T\x8b\x01\x0c\x00\x00\x00\x00"\x03W\x00\x00
@@ -50,7 +51,7 @@ DIALOGUE_1 \\\x8b\x01\x0c\x00\x00\x00\x00"\x03E\x00\x00
 \x00\x00\x00 DIALOGUE_END \xac\x07
 CALL1 \xbe\x02 CALL3 \xec\x02 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00
 CALL1 \x80\x00 CALL3 \xaa\x00 CALL2  \x00 REF_END2 
-LOAD2 StopCD REF1 :\t REF_END1  \x1e\x00\x00\x00\x00\r\x00 REF_END2 \x0c\x02\x00\x00"\x1f \x00 REF_END2 
+LOAD2 StopCD REF1 :\t REF_END1  \x1e\x00\x00\x00\x00\r\x00 REF_END2 \x0c\x02\x00\x00" REF7  \x00 REF_END2 
 LOAD2 SeStop REF1 |\t REF_END1 
 LOAD3 SCE243_005 REF6 \x98\t REF_END2 
 DIALOGUE_1 `\x8b\x01\x0c\x00\x00\x00\x00"\x03f\x00\x00

@@ -12,7 +12,8 @@ DIALOGUE_1 \xe0Z\x01\x0c\x00\x00\x00\x00"\x03d\x00\x00
 いずれも信じがたい世界だが、真実かどうかを確認する術は自分\nにはない。@
 拓司は考えたすえに、いった。\
 
-\x00\x00\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xfa\x01 REF_END2 
+\x00\x00\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xfa\x01 REF_END2 
 LOAD2 TextOn REF1 (\x02 REF_END1 
 LOAD3 SCE212_002 REF6 D\x02 REF_END2 
 DIALOGUE_1 \xe4Z\x01\x0c\x00\x00\x00\x00"\x03S\x00\x00

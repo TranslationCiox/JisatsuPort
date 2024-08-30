@@ -8,7 +8,8 @@ DIALOGUE_1 \xf0U DIALOGUE_2 b\x00\x00
 　目の前に、見知らぬ女の子が立っていた。@
 　まず目に付いたのが、度の強そうな眼鏡だった。\p眼鏡の端はな\n　ぜか小さくひび割れていて、その奥には穏やかなひかりをたた\n　えた瞳があって……そっと微笑んでいた。\
 
-\x00\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xf2\x01 REF_END2 
+\x00\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xf2\x01 REF_END2 
 LOAD2 TextOn REF1  \x02 REF_END1 
 LOAD3 SCE045_002 REF6 <\x02 REF_END2 
 DIALOGUE_1 \xf4U DIALOGUE_2 \xb7\x00\x00

@@ -8,7 +8,8 @@ DIALOGUE_1 `\xb2\x01\x0c\x00\x00\x00\x00"\x03;\x00\x00
 語り終えた後、カンナは無言で、自らが作り出した沈黙のなかに\n沈み込んだ。@
 あるいは、彼女が沈み込んでいったのは、いま自らが言葉に変換\nして現出して見せた暗い闇の中なのかもしれない。@
 重い沈黙に耐えかねて、拓司が口を開いた。\w\z
-\x00\x00\x00 DIALOGUE_END \xb2\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xbe\x01 REF_END2 
+\x00\x00\x00 DIALOGUE_END \xb2\x00\x00\x0c\x02\x00\x00"
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xbe\x01 REF_END2 
 LOAD2 TextOn REF1 \xec\x01 REF_END1 
 LOAD3 SCEK16_002 REF6 \x08\x02 REF_END2 
 DIALOGUE_1 d\xb2\x01\x0c\x00\x00\x00\x00"\x03e\x00\x00

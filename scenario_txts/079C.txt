@@ -23,7 +23,8 @@ DIALOGUE_1 \x10\x8b DIALOGUE_2 \xb1\x00\x00
 いまなら死ねるような気がする。@
 瓶からするりと抜け出せるような気がする。\
 
- DIALOGUE_END \x90\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 t\x03 REF_END2 
+ DIALOGUE_END \x90\x00\x00\x0c\x02\x00\x00"
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 t\x03 REF_END2 
 LOAD2 TextOn REF1 \xa2\x03 REF_END1 
 LOAD3 SCE079_002 REF6 \xbe\x03 REF_END2 
 DIALOGUE_1 \x14\x8b DIALOGUE_2 M\x00\x00

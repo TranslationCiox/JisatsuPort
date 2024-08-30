@@ -10,7 +10,8 @@ DIALOGUE_1 @\x83 DIALOGUE_2 \xab\x00\x00
 そんなふうに思えてくる。@
 いまや、信じられるものはなたねの言葉しかなかった。\pでたらめ\nな世界にうち立てられた、妄想の真実。\pそれにすがるしか、道は\nないように思えた。\
 
-\x00\x00\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \x16\x03 REF_END2 
+\x00\x00\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \x16\x03 REF_END2 
 LOAD2 TextOn REF1 D\x03 REF_END1 
 LOAD3 SCE074_002 REF6 `\x03 REF_END2 
 DIALOGUE_1 D\x83 DIALOGUE_2 )\x00\x00

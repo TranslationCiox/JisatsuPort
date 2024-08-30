@@ -18,7 +18,8 @@ DIALOGUE_1 \xc0D DIALOGUE_2 \xb1\x00\x00
 早桃はぽつんと座っていた。@
 \n　賑やかで温かい教室の空気から、早桃の姿だけが浮き上がって\n見えた。\
 
-\x00 DIALOGUE_END \xaa\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \x8e\x03 REF_END2 
+\x00 DIALOGUE_END \xaa\x00\x00\x0c\x02\x00\x00"
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \x8e\x03 REF_END2 
 LOAD2 TextOn REF1 \xbc\x03 REF_END1 
 LOAD3 SCE034_002 REF6 \xd8\x03 REF_END2 
 DIALOGUE_1 \xc4D DIALOGUE_2 y\x00\x00

@@ -16,7 +16,8 @@ DIALOGUE_1 \x80\xa6\x01\x0c\x00\x00\x00\x00"\x03\x96\x00\x00
 \n　要するに、ゆきは大人だった。@
 　私はゆきを尊敬した。@
 　私のどこに魅力を見つけたのか、ゆきもまた、私をどこか尊敬\nしてくれているような感じがあって、それはとても心地がよかっ\nた。\w\z
-\x00 DIALOGUE_END :\x01\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xb2\x03 REF_END2 
+\x00 DIALOGUE_END :\x01\x00\x0c\x02\x00\x00"
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xb2\x03 REF_END2 
 LOAD2 TextOn REF1 \xe0\x03 REF_END1 
 LOAD3 SCEK05_002 REF6 \xfc\x03 REF_END2 
 DIALOGUE_1 \x84\xa6\x01\x0c\x00\x00\x00\x00"\x03~\x00\x00

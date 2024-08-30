@@ -10,7 +10,8 @@ DIALOGUE_1 @Q DIALOGUE_2 L\x00\x00
 \n　一日はまだ半分しか終わっていない。\pにも関わらず、拓司は消\n　耗しきっていた。@
 /*▲BGM　Track06　再生*/\a2,-1,6,1,\n\n　死んじまおうかなあ。\
 
- DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \x9a\x01 REF_END2 
+ DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \x9a\x01 REF_END2 
 LOAD2 TextOn REF1 \xc8\x01 REF_END1 
 LOAD3 SCE042_002 REF6 \xe4\x01 REF_END2 
 DIALOGUE_1 DQ DIALOGUE_2 \xe4\x00\x00
@@ -51,6 +52,6 @@ CALL1 \x9a\x01 CALL3 \xc8\x01 REF_END1
 LOAD6 .\\Data\\Script\\Bgm.Fob REF2 \xf2\t REF_END2 
 LOAD2 StopCD REF1 \x1c\n REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x00\x00\x00\x00\x0c\x02\x00\x00" \x1e\x04\x00\x00\r\x00\x00\x1e\x18\x00\x00\x0c\x02\x00\x00" \x1e\x08\x00\x00\r\x00\x00\x1e\x00\x00\x00
 CALL1 \xf2\t REF_END2 
-LOAD3 SePlayEx REF3 \x92\n REF_END1 \x1e<\x00\x00\x1e\x00\x00\x00\x00\x92\x1f\x9a\x01 REF_END2 
+LOAD3 SePlayEx REF3 \x92\n REF_END1 \x1e<\x00\x00\x1e\x00\x00\x00\x00\x92 REF7 \x9a\x01 REF_END2 
 LOAD3 TextClose REF2 \xcc\n REF_END1 
 END_FILE

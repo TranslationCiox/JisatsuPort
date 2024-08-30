@@ -14,7 +14,8 @@ DIALOGUE_1 \xc0\x8f DIALOGUE_2 \xc4\x00\x00
 俺はいつの間にかこの世界こそが現実で、見慣れた世界が夢なの\nだと信じかかっている。\pそうと決まったわけではない。@
 これが単なる夢なのだとしたら、雲居なたねがこうしてここに\n登場するのには何の不思議もない。\p実在の人物を夢に見ているだ\nけなのだから。\
 
-\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 z\x03 REF_END2 
+\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 z\x03 REF_END2 
 LOAD2 TextOn REF1 \xa8\x03 REF_END1 
 LOAD3 SCE082_002 REF6 \xc4\x03 REF_END2 
 DIALOGUE_1 \xc4\x8f DIALOGUE_2 \\\x00\x00

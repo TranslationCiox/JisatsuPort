@@ -16,7 +16,8 @@ DIALOGUE_1 \xf8\xa6\x01\x0c\x00\x00\x00\x00"\x03\x8a\x00\x00
 訳が分からず、私はゆきと地面のゴミを交互に見比べた。@
 どういうことだろう？@
 ゆきがここで隠れて煙草でも吸っているということなのだろうか？\n\pだんだん腹が立ってきた。\w\z
-\x00 DIALOGUE_END \xf8\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 @\x03 REF_END2 
+\x00 DIALOGUE_END \xf8\x00\x00\x0c\x02\x00\x00"
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 @\x03 REF_END2 
 LOAD2 TextOn REF1 n\x03 REF_END1 
 LOAD3 SCEK07_002 REF6 \x8a\x03 REF_END2 
 DIALOGUE_1 \xf8\xa6\x01\x0c\x00\x00\x00\x00"\x03\x9b\x00\x00

@@ -9,7 +9,8 @@ DIALOGUE_1  \xb2 DIALOGUE_2 T\x00\x00
 なたね\n　「……」@
 \nなたねは一瞬事態が飲み込めない様子で、説明を求めるようにあ\nたりを見回した。\pしかし、カンナも早桃も紅葉も錦城も、じっ\nと冷たい目で見返すばかり。\
 
-\x00\x00\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xba\x01 REF_END2 
+\x00\x00\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xba\x01 REF_END2 
 LOAD2 TextOn REF1 \xe8\x01 REF_END1 
 LOAD3 SCE104_002 REF6 \x04\x02 REF_END2 
 DIALOGUE_1 $\xb2 DIALOGUE_2 \x7f\x00\x00

@@ -16,7 +16,8 @@ DIALOGUE_1 \x00d DIALOGUE_2 \xb2\x00\x00
 /*■CG22　表示（クロスフェード）*/\a7,1,0,0,\a0,21,0,0,\a6,0,0,0,\n　肺腑の底から声を絞り出して、男だろうが女だろうが、目に入\nった人間すべてに拳を叩き込んでいく。@
 　突入前から目星をつけていたほうきを掴んで、無我夢中で振り\n回す。\
 
- DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 2\x03 REF_END2 
+ DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 2\x03 REF_END2 
 LOAD2 TextOn REF1 `\x03 REF_END1 
 LOAD3 SCE054_002 REF6 |\x03 REF_END2 
 DIALOGUE_1 \x04d DIALOGUE_2 \x9a\x00\x00

@@ -20,7 +20,8 @@ DIALOGUE_1 \x80\x89 DIALOGUE_2 \xd7\x00\x00
 布団なんかでおばけから身を守れるはずがない。@
 だが、恐怖からは守ってくれる……。\
 
-\x00 DIALOGUE_END \xaa\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 &\x04 REF_END2 
+\x00 DIALOGUE_END \xaa\x00\x00\x0c\x02\x00\x00"
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 &\x04 REF_END2 
 LOAD2 TextOn REF1 T\x04 CALL2  \x00 REF_END2 
 LOAD2 StopCD REF1 |\x04 REF_END1 
 LOAD3 SCE078_002 REF6 \x98\x04 REF_END2 

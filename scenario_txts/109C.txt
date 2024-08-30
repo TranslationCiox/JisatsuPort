@@ -11,7 +11,8 @@ DIALOGUE_1 \xf0\xb9 DIALOGUE_2 ^\x00\x00
 \n拓司\n　「く、くもい……」@
 なたね\n　「－－しっ！」\
 
-\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xe2\x01 REF_END2 
+\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xe2\x01 REF_END2 
 LOAD2 TextOn REF1 \x10\x02 REF_END1 
 LOAD3 SCE109_002 REF6 ,\x02 REF_END2 
 DIALOGUE_1 \xf4\xb9 DIALOGUE_2 Q\x00\x00

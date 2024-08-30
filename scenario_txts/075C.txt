@@ -10,7 +10,8 @@ DIALOGUE_1 \xd0\x84 DIALOGUE_2 |\x00\x00
 拓司\n　「よせ、早桃」@
 早桃\n　「でも！　おにいちゃん！」\
 
-\x00\x00\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 Z\x02 REF_END2 
+\x00\x00\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 Z\x02 REF_END2 
 LOAD2 TextOn REF1 \x88\x02 REF_END1 
 LOAD3 SCE075_002 REF6 \xa4\x02 REF_END2 
 DIALOGUE_1 \xd4\x84 DIALOGUE_2 N\x00\x00

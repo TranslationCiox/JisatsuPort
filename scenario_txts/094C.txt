@@ -14,7 +14,8 @@ DIALOGUE_1 \x80\xa2 DIALOGUE_2 \x8e\x00\x00
 拓司\n　「いま、ひとつルールを決めよう」@
 \n拓司はぴしゃりとさえぎった。\
 
-\x00\x00\x00 DIALOGUE_END \x90\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xe8\x02 REF_END2 
+\x00\x00\x00 DIALOGUE_END \x90\x00\x00\x0c\x02\x00\x00"
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xe8\x02 REF_END2 
 LOAD2 TextOn REF1 \x16\x03 REF_END1 
 LOAD3 SCE094_002 REF6 2\x03 REF_END2 
 DIALOGUE_1 \x84\xa2 DIALOGUE_2 P\x00\x00

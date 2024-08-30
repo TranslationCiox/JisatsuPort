@@ -6,7 +6,8 @@ DIALOGUE_1 0\xa6\x01\x0c\x00\x00\x00\x00"\x03O\x00\x00
 　つきあってみると、若草ゆきのいろいろなことがわかってき\nた。@
 海外文学に詳しかったり、才色兼備であることなどは知っていた\nけれど、\p意外にもホラー映画が好きだったり、\pケーキマニアだっ\nたり、\pマンガに詳しかったり……。@
 一番の驚きは、彼女もまた、女子校の空気に違和感を覚えていると\nいうことだった。\w\z
-\x00\x00\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xa6\x01 REF_END2 
+\x00\x00\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xa6\x01 REF_END2 
 LOAD2 TextOn REF1 \xd4\x01 REF_END1 
 LOAD3 SCEK03_002 REF6 \xf0\x01 REF_END2 
 DIALOGUE_1 4\xa6\x01\x0c\x00\x00\x00\x00"\x03\xc5\x00\x00

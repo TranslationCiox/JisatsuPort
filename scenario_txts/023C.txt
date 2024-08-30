@@ -18,7 +18,8 @@ DIALOGUE_1 \x903 DIALOGUE_2 \x87\x00\x00
 紅葉の呼吸音。@
 紅葉はひどく消耗している。\p乱れた髪の毛が頬に貼り付いている。\n\p泣きはらした目がはれぼったい。\p顔は汗と油でてらてらと光ってい\nるが、唇は対照的に乾いている……。\
 
-\x00 DIALOGUE_END \x90\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xcc\x02 REF_END2 
+\x00 DIALOGUE_END \x90\x00\x00\x0c\x02\x00\x00"
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xcc\x02 REF_END2 
 LOAD2 TextOn REF1 \xfa\x02 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x05\x01
 CALL1 \x06\x00 REF_END2 
 LOAD2 PlayCD REF1 <\x03 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1eO\x00\x00\x0c\x02\x00\x00"

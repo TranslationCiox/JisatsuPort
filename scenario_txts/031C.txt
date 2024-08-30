@@ -11,7 +11,8 @@ DIALOGUE_1 \x10@ DIALOGUE_2 m\x00\x00
 \nカンナ\n　「理由なんて無いわ。こうしてると……生きてるって感じがする\n　　の」@
 \nその言葉を聞いて－－そして目の奥のどんよりとした無感動を見て\n－－この少女が自分の同類であることを、拓司は一瞬にして悟った\nのだった。\
 
-\x00\x00\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \x1e\x02 REF_END2 
+\x00\x00\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \x1e\x02 REF_END2 
 LOAD2 TextOn REF1 L\x02 REF_END1 
 LOAD3 SCE031_002 REF6 h\x02 REF_END2 
 DIALOGUE_1 \x14@ DIALOGUE_2 \x90\x00\x00
@@ -56,15 +57,18 @@ DIALOGUE_1 \x1c@ DIALOGUE_2 \xcb\x00\x00
 そのとき、拓司は初めて女の首を絞めたのだった。\
 
 \x00\x00\x00 DIALOGUE_END l\t
-CALL1 \x1e\x02 CALL3 L\x02 CALL2 \x1e\x02 REF_END2 LOAD5 TextWindowOffDirect\x1f\xde\x0c REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xca\x00\x00\x0c\x02\x00\x00"
+CALL1 \x1e\x02 CALL3 L\x02 CALL2 \x1e\x02 REF_END2 
+LOAD5 TextWindowOffDirect REF7 \xde\x0c REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xca\x00\x00\x0c\x02\x00\x00"
 LOAD6 .\\Data\\Script\\Bg.Fob REF3  \r REF_END2 
-LOAD2 BgOn REF3 J\r REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x01\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.fob REF1 \x80\r REF_END2 
+LOAD2 BgOn REF3 J\r REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x01\x00\x00\x0c\x02\x00\x00"
+LOAD7 .\\Data\\Script\\TextFunc.fob REF1 \x80\r REF_END2 
 LOAD3 WaitTime REF3 \xae\r REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00
 CALL1  \r CALL3 J\r REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x01\x00
 CALL1 \x80\r CALL3 \xae\r REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xca\x00
 CALL1  \r CALL3 J\r REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x01\x00
 CALL1 \x80\r CALL3 \xae\r REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00
 CALL1  \r CALL3 J\r REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x01\x00
-CALL1 \x80\r CALL3 \xae\r CALL2 \x1e\x02 REF_END2 LOAD5 TextWindowOnDirect REF1 \x12\x0f CALL2 \x1e\x02 REF_END2 
+CALL1 \x80\r CALL3 \xae\r CALL2 \x1e\x02 REF_END2 
+LOAD5 TextWindowOnDirect REF1 \x12\x0f CALL2 \x1e\x02 REF_END2 
 LOAD3 TextClose REF2 F\x0f REF_END1 
 END_FILE

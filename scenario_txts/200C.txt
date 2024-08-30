@@ -19,7 +19,8 @@ LOAD2 SePlay REF1 *\x01 REF_END1 \x03v\x00\x00
 \n教授\n　「大丈夫かね？\p　また、ひどい夢を見ていたようだ。@
 　　食糧がどうとか、鍵がどうとか……雲居さんという名前も\n　　いっていたね」\
 
-\x00\x00\x00 DIALOGUE_END F\x01\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 >\x03 REF_END2 
+\x00\x00\x00 DIALOGUE_END F\x01\x00\x0c\x02\x00\x00"
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 >\x03 REF_END2 
 LOAD2 TextOn REF1 l\x03 REF_END1 
 LOAD3 SCE200_002 REF6 \x88\x03 REF_END2 
 DIALOGUE_1 $H\x01\x0c\x00\x00\x00\x00"\x03T\x00\x00
@@ -147,7 +148,7 @@ DIALOGUE_1 LH\x01\x0c\x00\x00\x00\x00"\x030\x00\x00
 そのとき、突如、何者かが拓司の肩を掴んだ。\
 
 \x00\x00\x00 DIALOGUE_END \xc4\x1e
-CALL1 >\x03 CALL3 l\x03 REF_END1  \x1e\x00\x00\x00\x00\r\x00 REF_END2 \x0c\x02\x00\x00"\x1f\x00\x01 REF_END2 
+CALL1 >\x03 CALL3 l\x03 REF_END1  \x1e\x00\x00\x00\x00\r\x00 REF_END2 \x0c\x02\x00\x00" REF7 \x00\x01 REF_END2 
 LOAD2 SeStop REF1 \xe4\x1f REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00
 CALL1 d\x00 CALL3 \x8e\x00 CALL2 >\x03 REF_END2 
 LOAD3 TextClose REF2 @  REF_END1 

@@ -16,7 +16,8 @@ DIALOGUE_1 \xb0{\x01\x0c\x00\x00\x00\x00"\x03_\x00\x00
 \n拓司はいった。@
 \n拓司\n　「わからない。\pたぶん……たぶん……」\
 
-\x00 DIALOGUE_END \x12\x01\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xae\x02 REF_END2 
+\x00 DIALOGUE_END \x12\x01\x00\x0c\x02\x00\x00"
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xae\x02 REF_END2 
 LOAD2 TextOn REF1 \xdc\x02 REF_END1 
 LOAD3 SCE233_002 REF6 \xf8\x02 REF_END2 
 DIALOGUE_1 \xb4{\x01\x0c\x00\x00\x00\x00"\x03\x96\x00\x00

@@ -16,7 +16,8 @@ DIALOGUE_1 @\xb5 DIALOGUE_2 \x89\x00\x00
 それから御堂がポケットからバタフライナイフをとりだして……@
 なたねが鍵を飲み込んだのはそれからかもしれない……@
 そして気がつくと、教室中に血が飛び散っていた。\w\z
-\x00 DIALOGUE_END \xb2\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xf6\x02 REF_END2 
+\x00 DIALOGUE_END \xb2\x00\x00\x0c\x02\x00\x00"
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xf6\x02 REF_END2 
 LOAD2 TextOn REF1 $\x03 REF_END1 
 LOAD3 SCE106_002 REF6 @\x03 REF_END2 
 DIALOGUE_1 D\xb5 DIALOGUE_2 E\x00\x00

@@ -17,7 +17,8 @@ DIALOGUE_1 \xe0\x92 DIALOGUE_2 \xb8\x00\x00
 拓司は机の上に吐瀉物をまき散らした。@
 頭の中から、すうっと何かが引いていった。\pそれまでの熱狂が嘘\nだったように、冷めた、しらけた感じが－－おなじみの感覚が頭\nの中を支配していた。\
 
-\x00\x00\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 J\x03 REF_END2 
+\x00\x00\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 J\x03 REF_END2 
 LOAD2 TextOn REF1 x\x03 REF_END1 
 LOAD3 SCE084_002 REF6 \x94\x03 REF_END2 
 DIALOGUE_1 \xe4\x92 DIALOGUE_2 C\x00\x00

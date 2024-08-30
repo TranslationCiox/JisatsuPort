@@ -16,7 +16,8 @@ DIALOGUE_1 \x00\x90\x01\x0c\x00\x00\x00\x00"\x03\xb9\x00\x00
 しかし、すでになすべきことはただひとつだった。@
 最終波動がやってくる前に壁を壊し、その向こうにあるものを見\nつけだすのだ。\
 
-\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 N\x03 REF_END2 
+\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 N\x03 REF_END2 
 LOAD2 TextOn REF1 |\x03 REF_END1 
 LOAD3 SCE246_002 REF6 \x98\x03 REF_END2 
 DIALOGUE_1 \x04\x90\x01\x0c\x00\x00\x00\x00"\x03B\x00\x00
@@ -41,7 +42,7 @@ DIALOGUE_1 \x08\x90\x01\x0c\x00\x00\x00\x00"\x03F\x00\x00
 \x00 DIALOGUE_END b\x05
 CALL1 N\x03 CALL3 |\x03 REF_END1 
 LOAD6 .\\Data\\Script\\Bgm.Fob REF2 \xb4\x06 REF_END2 
-LOAD2 StopCD REF1 \xde\x06 REF_END1  \x1e\x00\x00\x00\x00\r\x00 REF_END2 \x0c\x02\x00\x00"\x1f\xb4\x06 REF_END2 
+LOAD2 StopCD REF1 \xde\x06 REF_END1  \x1e\x00\x00\x00\x00\r\x00 REF_END2 \x0c\x02\x00\x00" REF7 \xb4\x06 REF_END2 
 LOAD2 SeStop REF1  \x07 REF_END1 
 LOAD3 SCE246_004 REF6 <\x07 REF_END2 
 DIALOGUE_1 \x0c\x90\x01\x0c\x00\x00\x00\x00"\x03\x95\x00\x00

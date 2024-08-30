@@ -11,7 +11,8 @@ DIALOGUE_1 T\xc5\x01\x0c\x00\x00\x00\x00"\x03i\x00\x00
 \n拓司\n　「せ、先生！」@
 錦城\n　「しーっ！　……静かに。\pみんなが目を覚ますわ。@
 　　先生ね、考えたの。\p虎菱くんがこういうのを励みにできれ\n　　ば……って」\w\z
-\x00 DIALOGUE_END \xaa\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 n\x02 REF_END2 
+\x00 DIALOGUE_END \xaa\x00\x00\x0c\x02\x00\x00"
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 n\x02 REF_END2 
 LOAD2 TextOn REF1 \x9c\x02 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e^\x00\x00\x0c\x02\x00\x00"
 LOAD6 .\\Data\\Script\\Bg.Fob REF3 \xd2\x02 REF_END2 
 LOAD4 BgAutoFadeIn REF3 \xfc\x02 REF_END1 
@@ -64,7 +65,8 @@ DIALOGUE_1 d\xc5\x01\x0c\x00\x00\x00\x00"\x03\x86\x00\x00
 拓司\n　「先生……」@
 錦城\n　「ねえ……触りたい？\p　先生の胸、そんなにじっと見つめて\n　　……ねえ、触りたいの？」\w\z
 \x00 DIALOGUE_END \xb6\x08
-CALL1 n\x02 CALL3 \x9c\x02 REF_END1 \x03\n\x00\x00
+CALL1 n\x02 CALL3 \x9c\x02 REF_END1 
+LOAD9 
 CHOICE
 「触りたい」\n「……」\n\l0,2,
 ENDCHOICE

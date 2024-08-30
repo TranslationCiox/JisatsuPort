@@ -11,7 +11,8 @@ DIALOGUE_1 \x90e DIALOGUE_2 \x98\x00\x00
 \n　なたねは誇らしげに笑った。\pまるでこの状況を楽しんでいるか\n　のようだ。@
 　小声で、解説をはじめる。\
 
-\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xca\x02 REF_END2 
+\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xca\x02 REF_END2 
 LOAD2 TextOn REF1 \xf8\x02 REF_END1 
 LOAD3 SCE055_002 REF6 \x14\x03 REF_END2 
 DIALOGUE_1 \x94e DIALOGUE_2 \xcd\x00\x00

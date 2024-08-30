@@ -7,7 +7,8 @@ DIALOGUE_1 @}\x01\x0c\x00\x00\x00\x00"\x03\x11\x00\x00
  
 \n\n\n\n\n\n\n\n\n\n　　　　　　　　　　　　『１５日目』\
 
-\x00\x00\x00 DIALOGUE_END \xaa\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \x0e\x01 REF_END2 
+\x00\x00\x00 DIALOGUE_END \xaa\x00\x00\x0c\x02\x00\x00"
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \x0e\x01 REF_END2 
 LOAD2 TextOn REF1 <\x01 REF_END1 
 LOAD3 SCE234_002 REF6 X\x01 REF_END2 
 DIALOGUE_1 D}\x01\x0c\x00\x00\x00\x00"\x03\x7f\x00\x00
@@ -191,6 +192,7 @@ CALL1 \x0e\x01 CALL3 <\x01 CALL2 \x0e\x01 REF_END2
 LOAD4 TextWindowOff REF2 \x00" REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xca\x00
 CALL1 \xa6\x17 REF_END2 
 LOAD4 BgNormalFadeIn REF1 J" CALL2  \x00 CALL3 h\n REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00
-CALL1 \xa6\x17 CALL3 \xd0\x17 CALL2 \x0e\x01 REF_END2 LOAD5 TextWindowOnDirect REF1 \xc8" CALL2 \x0e\x01 REF_END2 
+CALL1 \xa6\x17 CALL3 \xd0\x17 CALL2 \x0e\x01 REF_END2 
+LOAD5 TextWindowOnDirect REF1 \xc8" CALL2 \x0e\x01 REF_END2 
 LOAD3 TextClose REF2 \xfc" REF_END1 
 END_FILE

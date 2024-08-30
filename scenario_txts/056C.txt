@@ -9,7 +9,8 @@ DIALOGUE_1  g DIALOGUE_2 J\x00\x00
 顔と髪は脂ぎって、てらてらと光っている。@
 怯えて眺める早桃の顔にも、明らかな嫌悪が浮かんでいる。\
 
-\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \x92\x01 REF_END2 
+\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \x92\x01 REF_END2 
 LOAD2 TextOn REF1 \xc0\x01 REF_END1 
 LOAD3 SCE056_002 REF6 \xdc\x01 REF_END2 
 DIALOGUE_1 $g DIALOGUE_2 n\x00\x00

@@ -9,8 +9,10 @@ LOAD2 SePlay REF1 \xc2\x00 REF_END1 \x03L\x00\x00
 　深夜２時過ぎ、いつものように町を徘徊していた拓司は、ふらり\n　と工業団地地区へと迷い込んだ。@
 　かつては１００世帯以上が生活していたそれら１２棟の団地は、\n　相次ぐ工場の閉鎖と、老朽化によって、完全に廃棄されて久しか\n　った。\
 
-\x00 DIALOGUE_END \xde\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 .\x02 REF_END2 
-LOAD2 TextOn REF1 \\\x02 REF_END1 LOAD7 
+\x00 DIALOGUE_END \xde\x00\x00\x0c\x02\x00\x00"
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 .\x02 REF_END2 
+LOAD2 TextOn REF1 \\\x02 REF_END1 
+LOAD7 
 CHOICE
 左へ\n右へ\n\l0,2,
 ENDCHOICE
@@ -25,7 +27,8 @@ DIALOGUE_1 d; DIALOGUE_2 T\x00\x00
 　ＴＶで『ウワサの怪奇スポット』との興味本位の紹介をされたせ\n　いか、一時は物好きたちがいくらか訪れてはいたが、数年前、団\n　地を囲むように金網のフェンスが張り巡らされたのを機に、この\n　地は完全に沈黙の場所となった。@
 \z
 \x00\x00\x00 DIALOGUE_END >\x03
-CALL1 .\x02 CALL3 \\\x02 REF_END1 LOAD7 
+CALL1 .\x02 CALL3 \\\x02 REF_END1 
+LOAD7 
 CHOICE
 左へ\n右へ\n\l0,2,
 ENDCHOICE
@@ -44,7 +47,8 @@ DIALOGUE_1 h; DIALOGUE_2 \xc9\x00\x00
 \n　彼らが言い残した言葉が、伝説の上にさらなる伝説を生んでいっ\n　た。\
 
 \x00\x00\x00 DIALOGUE_END |\x05
-CALL1 .\x02 CALL3 \\\x02 REF_END1 LOAD7 
+CALL1 .\x02 CALL3 \\\x02 REF_END1 
+LOAD7 
 CHOICE
 左へ\n右へ\n\l0,2,
 ENDCHOICE
@@ -58,7 +62,8 @@ DIALOGUE_1 l; DIALOGUE_2 T\x00\x00
 　ふざけて訪れることすらはばかられるくらいの深刻さが、手で触\n　れることができるくらいの確かさで敷地内に漂っていた。\
 
 \x00\x00\x00 DIALOGUE_END \x8e\t
-CALL1 .\x02 CALL3 \\\x02 REF_END1 LOAD7 
+CALL1 .\x02 CALL3 \\\x02 REF_END1 
+LOAD7 
 CHOICE
 左へ\n右へ\n\l0,2,
 ENDCHOICE
@@ -90,6 +95,6 @@ DIALOGUE_1 t; DIALOGUE_2 \xae\x00\x00
 　それが拓司とカンナの出会いだった。\
 
 \x00\x00\x00 DIALOGUE_END \x92\x0e
-CALL1 .\x02 CALL3 \\\x02 REF_END1  \x1e\x00\x00\x00\x00\r\x00 REF_END2 \x0c\x02\x00\x00"\x1f\x98\x00 REF_END2 
+CALL1 .\x02 CALL3 \\\x02 REF_END1  \x1e\x00\x00\x00\x00\r\x00 REF_END2 \x0c\x02\x00\x00" REF7 \x98\x00 REF_END2 
 LOAD2 SeStop REF1 \xaa\x11 CALL2 .\x02 CALL3 \xda\x02 REF_END1 
 END_FILE

@@ -7,7 +7,8 @@ DIALOGUE_1 P\x14 DIALOGUE_2 \x12\x00\x00
  
 \n\n\n\n\n\n\n\n\n\n　　　　　　　　　『虎菱拓司と奇妙な音』\
 
-\x00\x00\x00 DIALOGUE_END \xaa\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \x12\x01 REF_END2 
+\x00\x00\x00 DIALOGUE_END \xaa\x00\x00\x0c\x02\x00\x00"
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \x12\x01 REF_END2 
 LOAD2 TextOn REF1 @\x01 REF_END1 
 LOAD3 SCE003_002 REF6 \\\x01 REF_END2 
 DIALOGUE_1 T\x14 DIALOGUE_2 \x88\x00\x00

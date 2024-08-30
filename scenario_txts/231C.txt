@@ -8,7 +8,8 @@ DIALOGUE_1 \x90x\x01\x0c\x00\x00\x00\x00"\x03r\x00\x00
 \n拓司\n　「なんなんだ、お前は！\p　俺がお前に何をした！」@
 御堂\n　「むかつくんだよ……幸せなことに飽きて溜め息ついてるよう\n　　な……てめえみたいな野郎がよ！\p　毎日毎日、生きてるんだ\n　　か死んでるんだかわかんねえ俺みたいな人間だっているんだ\n　　ぞ！」\
 
-\x00\x00\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 2\x02 REF_END2 
+\x00\x00\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 2\x02 REF_END2 
 LOAD2 TextOn REF1 `\x02 REF_END1 
 LOAD3 SCE231_002 REF6 |\x02 REF_END2 
 DIALOGUE_1 \x94x\x01\x0c\x00\x00\x00\x00"\x03`\x00\x00
@@ -62,15 +63,18 @@ DIALOGUE_1 \xa0x\x01\x0c\x00\x00\x00\x00"\x03>\x00\x00
 \x00\x00\x00 DIALOGUE_END \xf6\n
 CALL1 2\x02 CALL3 `\x02 REF_END1 
 LOAD3 SCE231_006 REF6 (\x0c REF_END2 
-DIALOGUE_1 \xa4x\x01\x0c\x00\x00\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.fob REF1 l\x0c REF_END2 
+DIALOGUE_1 \xa4x\x01\x0c\x00\x00\x00\x00"
+LOAD7 .\\Data\\Script\\TextFunc.fob REF1 l\x0c REF_END2 
 LOAD6 CheckNormalMessageSkip REF1 \x9a\x0c CALL2 2\x02 REF_END2 
 LOAD4 TextWindowOff REF2 \xd2\x0c REF_END1  \x1e\x00\x00\x00\x00\r\x00 REF_END2 \x0c\x02\x00\x00" \x1e\x04\x00\x00\r\x00\x00\x1e\x01\x00\x00\x0c\x02\x00\x00" \x1e\x08\x00\x00\r\x00\x00\x1e\x01\x00\x00\x0c\x02\x00\x00"
 LOAD6 .\\Data\\Script\\Bgm.Fob REF2 D\r REF_END2 
 LOAD2 SePlay REF1 n\r REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xca\x00\x00\x0c\x02\x00\x00" \x1e\x04\x00\x00\r\x00\x00\x1e\x04\x00\x00\x0c\x02\x00\x00" \x1e\x08\x00\x00\r\x00\x00\x1e\x01\x00
 CALL1 \x94\x04 REF_END2 
-LOAD3 BgFadeIn REF3 \xe4\r REF_END1  \x1e\x00\x00\x00\x00\r\x00 REF_END2 \x0c\x02\x00\x00"\x1fD\r REF_END2 
+LOAD3 BgFadeIn REF3 \xe4\r REF_END1  \x1e\x00\x00\x00\x00\r\x00 REF_END2 \x0c\x02\x00\x00" REF7 D\r REF_END2 
 LOAD2 SeStop REF1 *\x0e REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00
 CALL1 \x94\x04 REF_END2 
-LOAD2 BgOn REF3 l\x0e CALL2 2\x02 REF_END2 LOAD5 TextWindowOnDirect REF1 \x94\x0e CALL2 2\x02 REF_END2 LOAD5 UpdateScenarioRead REF1 \xc8\x0e CALL2 2\x02 REF_END2 
+LOAD2 BgOn REF3 l\x0e CALL2 2\x02 REF_END2 
+LOAD5 TextWindowOnDirect REF1 \x94\x0e CALL2 2\x02 REF_END2 
+LOAD5 UpdateScenarioRead REF1 \xc8\x0e CALL2 2\x02 REF_END2 
 LOAD3 TextClose REF2 \xfc\x0e REF_END1 
 END_FILE

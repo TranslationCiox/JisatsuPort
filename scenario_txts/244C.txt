@@ -10,7 +10,8 @@ DIALOGUE_1 \xe0\x8c\x01\x0c\x00\x00\x00\x00"\x03 \x00\x00
 早桃も頷き返す。@
 \n拓司\n　「他には……？」\
 
-\x00\x00\x00 DIALOGUE_END \xb2\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 R\x01 REF_END2 
+\x00\x00\x00 DIALOGUE_END \xb2\x00\x00\x0c\x02\x00\x00"
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 R\x01 REF_END2 
 LOAD2 TextOn REF1 \x80\x01 REF_END1 
 LOAD3 SCE244_002 REF6 \x9c\x01 REF_END2 
 DIALOGUE_1 \xe4\x8c\x01\x0c\x00\x00\x00\x00"\x03c\x00\x00
@@ -119,7 +120,7 @@ DIALOGUE_1 \x00\x8d\x01\x0c\x00\x00\x00\x00"\x03M\x00\x00
 しかし、拓司は身体の隅々に残ったエネルギーを総動員して、そ\nのまえに立った。\
 
 \x00 DIALOGUE_END h\x14
-CALL1 R\x01 CALL3 \x80\x01 REF_END1  \x1e\x00\x00\x00\x00\r\x00 REF_END2 \x0c\x02\x00\x00"\x1f\x14\t REF_END2 
+CALL1 R\x01 CALL3 \x80\x01 REF_END1  \x1e\x00\x00\x00\x00\r\x00 REF_END2 \x0c\x02\x00\x00" REF7 \x14\t REF_END2 
 LOAD2 SeStop REF1 \xfc\x15 CALL2 \x14\t REF_END2 
 LOAD2 StopCD REF1 $\x16 REF_END1 
 LOAD3 SCE244_010 REF6 @\x16 REF_END2 

@@ -9,7 +9,8 @@ DIALOGUE_1 \x80Q\x01\x0c\x00\x00\x00\x00"\x03\x97\x00\x00
 ナタネ\n　「私という存在は、あなたが『願』って『創った』ものなの。@
 　　あなたは、すべての真実を語って聞かせてくれる者の出現を\n　　……自分を救う者の存在を『願った』。\pだから私は、ここに\n　　『創』られた。\pこの姿……雲居なたねの形として創られた\n　　のは、あなたがそれを望んだから。\p理解できないものの解説\n　　役として、雲居なたねを望んだからなの」\
 
-\x00\x00\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xc6\x02 REF_END2 
+\x00\x00\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xc6\x02 REF_END2 
 LOAD2 TextOn REF1 \xf4\x02 CALL2 \xc6\x02 REF_END2 
 LOAD3 TextClose REF2 \x1c\x03 REF_END1 
 END_FILE

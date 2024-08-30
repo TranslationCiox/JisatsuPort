@@ -7,8 +7,9 @@ DIALOGUE_1 p{ DIALOGUE_2 .\x00\x00
  
 残るは紅葉だけだ。\p紅葉の教室……そこは拓司の教室でもあるわ\nけだが……は、旧校舎１階にある。\pここ、新校舎の２階から紅葉\nの教室まで進むには、いくつかのルートが考えられる。\
 
-\x00 DIALOGUE_END \xaa\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \x82\x01 REF_END2 
-LOAD2 TextOn REF1 \xb0\x01 REF_END1 \x03\x1f\x00\x00
+\x00 DIALOGUE_END \xaa\x00\x00\x0c\x02\x00\x00"
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \x82\x01 REF_END2 
+LOAD2 TextOn REF1 \xb0\x01 REF_END1 \x03 REF7 \x00\x00
 CHOICE
 １階までくだり、一度外に出て、中庭を通って旧校舎へ移動\n渡り廊下を通って旧校舎に移動。それから１階に向かう\n\l0,2,
 ENDCHOICE

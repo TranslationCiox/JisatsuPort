@@ -5,7 +5,8 @@ DIALOGUE_1 \xa0\xa5 DIALOGUE_2 \x11\x00\x00
  
 \n\n\n\n\n\n\n\n\n\n　　　　　　　　　　　　　『３日目』\
 
-\x00\x00\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xae\x00 REF_END2 
+\x00\x00\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xae\x00 REF_END2 
 LOAD2 TextOn REF1 \xdc\x00 REF_END1 
 LOAD3 SCE096_002 REF6 \xf8\x00 REF_END2 
 DIALOGUE_1 \xa4\xa5 DIALOGUE_2 q\x00\x00
@@ -30,7 +31,7 @@ DIALOGUE_1 \xa8\xa5 DIALOGUE_2 i\x00\x00
 \n　なたねは、準備室から水の入ったポリタンクと、新しいタオル\nを人数分運び出してきた。\p全員で協力して実験器具が詰まった\n棚を移動して壁を作り、そこを即席の『シャワールーム』とした。\n\pもちろん、女性陣のプライバシーを守るためである。\
 
 \x00 DIALOGUE_END ~\x03
-CALL1 \xae\x00 CALL3 \xdc\x00 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x1f\x00\x00\x0c\x02\x00\x00"
+CALL1 \xae\x00 CALL3 \xdc\x00 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e REF7 \x00\x00\x0c\x02\x00\x00"
 LOAD6 .\\Data\\Script\\Bg.Fob REF3 v\x05 REF_END2 
 LOAD4 BgAutoFadeIn REF3 \xa0\x05 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x07\x01\x00\x0c\x02\x00\x00"
 LOAD6 .\\Data\\Script\\Bgm.Fob REF2 \xde\x05 REF_END2 

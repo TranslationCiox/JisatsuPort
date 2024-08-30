@@ -7,7 +7,8 @@ DIALOGUE_1 \x00\x96 DIALOGUE_2 8\x00\x00
 拓司の胸の中に、むくむくと、なたねの妄想に踊らされたのでは\nないかという思いが膨らんでくる。@
 \nなたね\n　「安心して下さい。\pこれからシェルター製作を始めます」\
 
-\x00\x00\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 J\x01 REF_END2 
+\x00\x00\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 J\x01 REF_END2 
 LOAD2 TextOn REF1 x\x01 REF_END1 
 LOAD3 SCE086_002 REF6 \x94\x01 REF_END2 
 DIALOGUE_1 \x04\x96 DIALOGUE_2 n\x00\x00

@@ -9,7 +9,8 @@ DIALOGUE_1 x\xc5\x01\x0c\x00\x00\x00\x00"\x03L\x00\x00
 錦城は長い髪を後ろに掻き上げて、唇をそっと拓司の股間に近づ\nけた。@
 カチリ、という音を立ててジッパーの先をくわえ、器用にそれを\n開いていく。@
 \n錦城\n　「静かに……静かにね。\p他の子が目を覚まさないように……\n　　私たちだけの秘密だから……」\w\z
-\x00\x00\x00 DIALOGUE_END \xaa\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xfa\x01 REF_END2 
+\x00\x00\x00 DIALOGUE_END \xaa\x00\x00\x0c\x02\x00\x00"
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xfa\x01 REF_END2 
 LOAD2 TextOn REF1 (\x02 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e_\x00\x00\x0c\x02\x00\x00"
 LOAD6 .\\Data\\Script\\Bg.Fob REF3 ^\x02 REF_END2 
 LOAD4 BgAutoFadeIn REF3 \x88\x02 REF_END1 

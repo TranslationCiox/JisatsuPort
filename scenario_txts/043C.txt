@@ -13,7 +13,8 @@ DIALOGUE_1 \xd0R DIALOGUE_2 \x88\x00\x00
 　拓司とこの場所のことを知る人間は、ほとんどいなかった。@
 　だから、あらゆる現実のあれこれから、切り離されるような気\n　がした。\p雲を眺めていると、勉強やら、親の再婚やらの嫌なこ\n　とは、全部忘れられた。\
 
-\x00\x00\x00 DIALOGUE_END \xaa\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xea\x02 REF_END2 
+\x00\x00\x00 DIALOGUE_END \xaa\x00\x00\x0c\x02\x00\x00"
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xea\x02 REF_END2 
 LOAD2 TextOn REF1 \x18\x03 REF_END1 
 LOAD3 SCE043_002 REF6 4\x03 REF_END2 
 DIALOGUE_1 \xd4R DIALOGUE_2 \x8e\x00\x00

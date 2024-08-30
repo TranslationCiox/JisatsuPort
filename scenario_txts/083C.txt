@@ -6,7 +6,8 @@ DIALOGUE_1 P\x91 DIALOGUE_2 =\x00\x00
 拓司は枕元に掛けられている鳥かごをのぞき込んだ。@
 なんという種類かはわからないが、どこかで見たことがあるよう\nな、いかにも普通の小鳥だ。@
 ただ、色だけがウソのように青く鮮やかで、屋台で売っているペ\nンキで着色されたヒヨコを思わせる。\w\z
-\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 ^\x01 REF_END2 
+\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 ^\x01 REF_END2 
 LOAD2 TextOn REF1 \x8c\x01 REF_END1 
 LOAD3 SCE083_002 REF6 \xa8\x01 REF_END2 
 DIALOGUE_1 T\x91 DIALOGUE_2 s\x00\x00

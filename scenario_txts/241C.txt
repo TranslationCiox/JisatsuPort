@@ -13,7 +13,8 @@ DIALOGUE_1 0\x88\x01\x0c\x00\x00\x00\x00"\x03T\x00\x00
 \n早桃が目を反らした。@
 \n紅葉\n　「どっちでもいい……でもいまは……動きたく……ない」@
 \n紅葉がうつむく。\w\z
-\x00\x00\x00 DIALOGUE_END \xb2\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 "\x02 REF_END2 
+\x00\x00\x00 DIALOGUE_END \xb2\x00\x00\x0c\x02\x00\x00"
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 "\x02 REF_END2 
 LOAD2 TextOn REF1 P\x02 REF_END1 
 LOAD3 SCE241_002 REF6 l\x02 REF_END2 
 DIALOGUE_1 4\x88\x01\x0c\x00\x00\x00\x00"\x03=\x00\x00

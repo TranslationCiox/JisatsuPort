@@ -8,7 +8,8 @@ DIALOGUE_1 \xd0e\x01\x0c\x00\x00\x00\x00"\x03,\x00\x00
 押し寄せる奔流には、もう対抗できない。@
 流されるしかないのだ。\
 
-\x00\x00\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \x1a\x01 REF_END2 
+\x00\x00\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \x1a\x01 REF_END2 
 LOAD2 TextOn REF1 H\x01 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e$\x00\x00\x0c\x02\x00\x00"
 LOAD6 .\\Data\\Script\\Bg.Fob REF3 ~\x01 REF_END2 
 LOAD4 BgAutoFadeIn REF3 \xa8\x01 REF_END1 

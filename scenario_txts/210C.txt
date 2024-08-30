@@ -9,7 +9,8 @@ DIALOGUE_1 \xc0W\x01\x0c\x00\x00\x00\x00"\x03B\x00\x00
 雲居ナタネと名乗るこの少女は、いかれているのだ。@
 おそらくはおれと同じ……この病院の患者なのだ。\
 
-\x00\x00\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 r\x01 REF_END2 
+\x00\x00\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 r\x01 REF_END2 
 LOAD2 TextOn REF1 \xa0\x01 REF_END1 
 LOAD3 SCE210_002 REF6 \xbc\x01 REF_END2 
 DIALOGUE_1 \xc4W\x01\x0c\x00\x00\x00\x00"\x03o\x00\x00

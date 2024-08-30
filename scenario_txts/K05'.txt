@@ -17,7 +17,8 @@ DIALOGUE_1 \xa8\xa6\x01\x0c\x00\x00\x00\x00"\x03\xb0\x00\x00
 どうすればもっと深くゆきと繋がれるのか。@
 私は真剣に考えた。@
 そしてついに、秘密の共有こそが繋がりを深くする鍵に違いない、\nと思い至った。\w\z
-\x00 DIALOGUE_END \x12\x01\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xf2\x03 REF_END2 
+\x00 DIALOGUE_END \x12\x01\x00\x0c\x02\x00\x00"
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xf2\x03 REF_END2 
 LOAD2 TextOn REF1  \x04 REF_END1 
 LOAD3 SCEK05_A02 REF6 <\x04 REF_END2 
 DIALOGUE_1 \xac\xa6\x01\x0c\x00\x00\x00\x00"\x03R\x00\x00

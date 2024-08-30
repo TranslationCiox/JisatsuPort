@@ -8,7 +8,8 @@ LOAD3 SePlayEx REF3 \xc2\x00 REF_END1 \x03\x13\x00\x00
 カンナ\n　「……きたんだ？」@
 \nその声は、頭上から聞こえてきた。\
 
-\x00 DIALOGUE_END \xe2\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 N\x01 REF_END2 
+\x00 DIALOGUE_END \xe2\x00\x00\x0c\x02\x00\x00"
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 N\x01 REF_END2 
 LOAD2 TextOn REF1 |\x01 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x18\x00\x00\x0c\x02\x00\x00"
 LOAD6 .\\Data\\Script\\Bg.Fob REF3 \xb2\x01 REF_END2 
 LOAD4 BgAutoFadeIn REF3 \xdc\x01 REF_END1 

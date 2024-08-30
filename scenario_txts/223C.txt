@@ -5,7 +5,8 @@ DIALOGUE_1 \x10l\x01\x0c\x00\x00\x00\x00"\x03\x11\x00\x00
  
 \n\n\n\n\n\n\n\n\n\n　　　　　　　　　　　　　『１１日目』\
 
-\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xae\x00 REF_END2 
+\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xae\x00 REF_END2 
 LOAD2 TextOn REF1 \xdc\x00 REF_END1 
 LOAD3 SCE223_002 REF6 \xf8\x00 REF_END2 
 DIALOGUE_1 \x14l\x01\x0c\x00\x00\x00\x00"\x03o\x00\x00

@@ -9,7 +9,8 @@ DIALOGUE_1 \xe0y DIALOGUE_2 \xec\x00\x00
 　　残された淘汰はなにかしら？\p　殺すことができない生き物が\n　　淘汰される方法は？」@
 拓司\n　「自ら……命を絶つこと」\
 
-\x00\x00\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \x1a\x04 REF_END2 
+\x00\x00\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \x1a\x04 REF_END2 
 LOAD2 TextOn REF1 H\x04 REF_END1 
 LOAD3 SCE068_002 REF6 d\x04 REF_END2 
 DIALOGUE_1 \xe4y DIALOGUE_2 \xac\x00\x00

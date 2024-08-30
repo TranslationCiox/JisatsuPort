@@ -14,7 +14,8 @@ DIALOGUE_1 \xa0m\x01\x0c\x00\x00\x00\x00"\x03\xa1\x00\x00
 　　お前がテレビゲームやってるあいだに、俺は身体鍛えてたん\n　　だよ。\pお前がマンガ読んでるあいだ……こういう状況を切り\n　　抜けてきたんだよ」@
 拓司\n　「！」\
 
-\x00\x00\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xee\x02 REF_END2 
+\x00\x00\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xee\x02 REF_END2 
 LOAD2 TextOn REF1 \x1c\x03 REF_END1 
 LOAD3 SCE224_002 REF6 8\x03 REF_END2 
 DIALOGUE_1 \xa4m\x01\x0c\x00\x00\x00\x00"\x03;\x00\x00

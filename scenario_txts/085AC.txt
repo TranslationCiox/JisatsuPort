@@ -2,7 +2,7 @@ START_FILE
 \xcf\x1f\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xc2\x1a\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1e\t\x01\x00\x0c\x02\x00\x00"
 LOAD6 .\\Data\\Script\\Bgm.Fob REF2  \x00 REF_END2 
 LOAD2 PlayCD REF1 J\x00 REF_END1 
-LOAD3 SCE085a_001\x1ff\x00 REF_END2 
+LOAD3 SCE085a_001 REF7 f\x00 REF_END2 
 DIALOGUE_1 p\x94 DIALOGUE_2 \x82\x00\x00
  
 無事目を覚ましたものの、茫然自失といった体の紅葉を導いて、\n拓司は４階へ向かった。@
@@ -10,9 +10,10 @@ DIALOGUE_1 p\x94 DIALOGUE_2 \x82\x00\x00
 再び、死の誘惑が襲いかかることはなかった。@
 免疫ができたせいなのか、すでに波動が拡散した後なのかは……わ\nからなかったが。\
 
-\x00 DIALOGUE_END \xaa\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xd2\x02 REF_END2 
+\x00 DIALOGUE_END \xaa\x00\x00\x0c\x02\x00\x00"
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xd2\x02 REF_END2 
 LOAD2 TextOn REF1 \x00\x03 REF_END1 
-LOAD3 SCE085a_002\x1f\x1c\x03 REF_END2 
+LOAD3 SCE085a_002 REF7 \x1c\x03 REF_END2 
 DIALOGUE_1 t\x94 DIALOGUE_2 \xd6\x00\x00
  
 途中、生きている人間には一度も出くわさなかった。\pもっとも、\n余計な寄り道はせず、ただひたすら４階目指して廊下を歩いてき\nただけだから、もしかしたらどこかの教室に生き残りがいるのか\nもしれない。@
@@ -26,7 +27,7 @@ DIALOGUE_1 t\x94 DIALOGUE_2 \xd6\x00\x00
 
 \x00 DIALOGUE_END `\x03
 CALL1 \xd2\x02 CALL3 \x00\x03 REF_END1 
-LOAD3 SCE085a_003\x1f\xf2\x06 REF_END2 
+LOAD3 SCE085a_003 REF7 \xf2\x06 REF_END2 
 DIALOGUE_1 x\x94 DIALOGUE_2 Z\x00\x00
  
 なたね\n　「虎菱くん！」@
@@ -38,7 +39,7 @@ DIALOGUE_1 x\x94 DIALOGUE_2 Z\x00\x00
 
 \x00 DIALOGUE_END 6\x07
 CALL1 \xd2\x02 CALL3 \x00\x03 REF_END1 
-LOAD3 SCE085a_004\x1f\xd8\x08 REF_END2 
+LOAD3 SCE085a_004 REF7 \xd8\x08 REF_END2 
 DIALOGUE_1 |\x94 DIALOGUE_2 \x9f\x00\x00
  
 なたね\n　「ううん、違う！\p　やっぱり虎菱くんは戦士なのよ！@
@@ -53,7 +54,7 @@ DIALOGUE_1 |\x94 DIALOGUE_2 \x9f\x00\x00
 
  DIALOGUE_END \x1c\t
 CALL1 \xd2\x02 CALL3 \x00\x03 REF_END1 
-LOAD3 SCE085a_005\x1f\xd2\x0b REF_END2 
+LOAD3 SCE085a_005 REF7 \xd2\x0b REF_END2 
 DIALOGUE_1 \x80\x94 DIALOGUE_2 e\x00\x00
  
 　現れたのは御堂と、錦城である。@
@@ -66,7 +67,7 @@ DIALOGUE_1 \x80\x94 DIALOGUE_2 e\x00\x00
 
 \x00 DIALOGUE_END \x16\x0c
 CALL1 \xd2\x02 CALL3 \x00\x03 REF_END1 
-LOAD3 SCE085a_006\x1f\xe4\r REF_END2 
+LOAD3 SCE085a_006 REF7 \xe4\r REF_END2 
 DIALOGUE_1 \x84\x94 DIALOGUE_2 }\x00\x00
  
 錦城\n　「少ないわね。\pでは、ここを拠点にして、まだ無事な学生たち\n　　を探しに行きましょう！\p　他のみんなは実験室の中？@
@@ -80,7 +81,7 @@ DIALOGUE_1 \x84\x94 DIALOGUE_2 }\x00\x00
 
 \x00 DIALOGUE_END (\x0e
 CALL1 \xd2\x02 CALL3 \x00\x03 REF_END1 
-LOAD3 SCE085a_007\x1fV\x10 REF_END2 
+LOAD3 SCE085a_007 REF7 V\x10 REF_END2 
 DIALOGUE_1 \x88\x94 DIALOGUE_2 i\x00\x00
  
 御堂\n　「なに……？」@
@@ -90,7 +91,7 @@ DIALOGUE_1 \x88\x94 DIALOGUE_2 i\x00\x00
 
 \x00\x00\x00 DIALOGUE_END \x9a\x10
 CALL1 \xd2\x02 CALL3 \x00\x03 REF_END1 
-LOAD3 SCE085a_008\x1fx\x12 REF_END2 
+LOAD3 SCE085a_008 REF7 x\x12 REF_END2 
 DIALOGUE_1 \x8c\x94 DIALOGUE_2 z\x00\x00
  
 錦城\n　「それにしても……雲居さん。\pさっきいっていた最終波動っ\n　　て、いったいなんなの？」@
@@ -100,7 +101,7 @@ DIALOGUE_1 \x8c\x94 DIALOGUE_2 z\x00\x00
 
 \x00\x00\x00 DIALOGUE_END \xbc\x12
 CALL1 \xd2\x02 CALL3 \x00\x03 REF_END1 
-LOAD3 SCE085a_009\x1f\xde\x14 REF_END2 
+LOAD3 SCE085a_009 REF7 \xde\x14 REF_END2 
 DIALOGUE_1 \x90\x94 DIALOGUE_2 \x94\x00\x00
  
 錦城\n　「これまでの波動よりも大きい……」@
@@ -111,7 +112,7 @@ DIALOGUE_1 \x90\x94 DIALOGUE_2 \x94\x00\x00
 
 \x00 DIALOGUE_END "\x15
 CALL1 \xd2\x02 CALL3 \x00\x03 REF_END1 
-LOAD3 SCE085a_010\x1f\xac\x17 REF_END2 
+LOAD3 SCE085a_010 REF7 \xac\x17 REF_END2 
 DIALOGUE_1 \x94\x94 DIALOGUE_2 ^\x00\x00
  
 拓司\n　「だったらとっとと学校を出て、好きなところにいったらどう\n　　だ？」@
@@ -123,7 +124,7 @@ DIALOGUE_1 \x94\x94 DIALOGUE_2 ^\x00\x00
 
 \x00 DIALOGUE_END \xf0\x17
 CALL1 \xd2\x02 CALL3 \x00\x03 REF_END1 
-LOAD3 SCE085a_011\x1f\xa2\x19 REF_END2 
+LOAD3 SCE085a_011 REF7 \xa2\x19 REF_END2 
 DIALOGUE_1 \x98\x94 DIALOGUE_2 \x1e\x00\x00
  
 御堂\n　「……」@

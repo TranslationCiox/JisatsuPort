@@ -13,7 +13,8 @@ DIALOGUE_1 \x90\x1a DIALOGUE_2 s\x00\x00
 ない。@
 ない。\
 
-\x00\x00\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 6\x02 REF_END2 
+\x00\x00\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 6\x02 REF_END2 
 LOAD2 TextOn REF1 d\x02 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1eJ\x00\x00\x0c\x02\x00\x00"
 LOAD6 .\\Data\\Script\\Bg.Fob REF3 \x9a\x02 REF_END2 
 LOAD4 BgAutoFadeIn REF3 \xc4\x02 REF_END1 

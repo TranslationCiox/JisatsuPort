@@ -13,7 +13,8 @@ LOAD2 SePlay REF1 \xc2\x00 REF_END1 \x03C\x00\x00
 静かに眠る仲間たち。@
 ここは……『学校に籠城する世界』。\
 
-\x00\x00\x00 DIALOGUE_END \xde\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \n\x02 REF_END2 
+\x00\x00\x00 DIALOGUE_END \xde\x00\x00\x0c\x02\x00\x00"
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \n\x02 REF_END2 
 LOAD2 TextOn REF1 8\x02 REF_END1 
 LOAD3 SCE214_002 REF6 T\x02 REF_END2 
 DIALOGUE_1 \x04^\x01\x0c\x00\x00\x00\x00"\x03+\x00\x00
@@ -25,7 +26,7 @@ DIALOGUE_1 \x04^\x01\x0c\x00\x00\x00\x00"\x03+\x00\x00
 それしかないのだ。\
 
 \x00\x00\x00 DIALOGUE_END \x98\x02
-CALL1 \n\x02 CALL3 8\x02 REF_END1  \x1e\x00\x00\x00\x00\r\x00 REF_END2 \x0c\x02\x00\x00"\x1f\x98\x00 REF_END2 
+CALL1 \n\x02 CALL3 8\x02 REF_END1  \x1e\x00\x00\x00\x00\r\x00 REF_END2 \x0c\x02\x00\x00" REF7 \x98\x00 REF_END2 
 LOAD2 SeStop REF1 \xa4\x03 CALL2 \n\x02 REF_END2 
 LOAD3 TextClose REF2 \xcc\x03 REF_END1 
 END_FILE

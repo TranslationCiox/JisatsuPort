@@ -15,7 +15,8 @@ DIALOGUE_1 \xa0\x8c DIALOGUE_2 \x96\x00\x00
 なんだこりゃ。@
 邪魔邪魔。\
 
-\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xc2\x02 REF_END2 
+\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xc2\x02 REF_END2 
 LOAD2 TextOn REF1 \xf0\x02 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00\x00\x0c\x02\x00\x00"
 LOAD6 .\\Data\\Script\\Bg.Fob REF3 &\x03 REF_END2 
 LOAD4 BgAutoFadeIn REF3 P\x03 REF_END1 

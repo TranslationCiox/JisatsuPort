@@ -7,7 +7,8 @@ DIALOGUE_1 \x08\xa6\x01\x0c\x00\x00\x00\x00"\x03T\x00\x00
 その翌日も、\pまたその翌日も。@
 何日目だったか、覚えていない。\pいいかげんいらいらした私は、\nどうして私につきまとうのかと、若草ゆきに厳しく問いただした。\n\p若草ゆきはいっしゅん呆気にとられた様子だったけれど、やがて\n気弱に笑って\n「お友達になりたいと思ったから」@
 とだけいった。\w\z
-\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xba\x01 REF_END2 
+\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xba\x01 REF_END2 
 LOAD2 TextOn REF1 \xe8\x01 REF_END1 
 LOAD3 SCEK02_002 REF6 \x04\x02 REF_END2 
 DIALOGUE_1 \x0c\xa6\x01\x0c\x00\x00\x00\x00"\x03C\x00\x00

@@ -7,7 +7,8 @@ DIALOGUE_1  z\x01\x0c\x00\x00\x00\x00"\x03\x13\x00\x00
  
 \n\n\n\n\n\n\n\n\n\n　　　　　　　『おんなのこと、うちゅうじん』\
 
-\x00\x00\x00 DIALOGUE_END \xaa\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \x16\x01 REF_END2 
+\x00\x00\x00 DIALOGUE_END \xaa\x00\x00\x0c\x02\x00\x00"
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \x16\x01 REF_END2 
 LOAD2 TextOn REF1 D\x01 REF_END1 
 LOAD3 SCE232_002 REF6 `\x01 REF_END2 
 DIALOGUE_1 $z\x01\x0c\x00\x00\x00\x00"\x03\xdf\x00\x00
@@ -32,7 +33,8 @@ DIALOGUE_1 (z\x01\x0c\x00\x00\x00\x00"\x03\x9e\x00\x00
 
 \x00\x00\x00 DIALOGUE_END \x9e\x05
 CALL1 \x16\x01 CALL3 D\x01 CALL2 \x16\x01 REF_END2 
-LOAD3 TextClose REF2 \\\x08 REF_END1 \x03\t\x00\x00.\\Data\\Script\\Scenario\\232SubC.Fob REF1 |\x08 REF_END2 
+LOAD3 TextClose REF2 \\\x08 REF_END1 
+LOAD0 .\\Data\\Script\\Scenario\\232SubC.Fob REF1 |\x08 REF_END2 
 LOAD2 start REF2 \xb2\x08 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00\x00\x0c\x02\x00\x00"
 LOAD6 .\\Data\\Script\\Bg.Fob REF3 \xe8\x08 REF_END2 
 LOAD4 BgAutoFadeIn REF3 \x12\t REF_END1 

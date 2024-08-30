@@ -9,7 +9,8 @@ DIALOGUE_1 `T DIALOGUE_2 V\x00\x00
 ところが、何が詰まっているのか、大きさのわりにズシリと重い。\n\p１階の職員室から４階分の階段を上るのはなかなか骨だった。@
 \n錦城\n　「はいはい頑張って。男の子でしょ？　うふふ……」\n\p拓司\n　「勘弁っすよ……どこまで運ぶんですか？」@
 錦城\n　「理科準備室」\w\z
-\x00 DIALOGUE_END \xb2\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 *\x02 REF_END2 
+\x00 DIALOGUE_END \xb2\x00\x00\x0c\x02\x00\x00"
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 *\x02 REF_END2 
 LOAD2 TextOn REF1 X\x02 REF_END1 
 LOAD3 SCE044_002 REF6 t\x02 REF_END2 
 DIALOGUE_1 dT DIALOGUE_2 y\x00\x00
@@ -194,6 +195,7 @@ DIALOGUE_1 \xa0T DIALOGUE_2 <\x00\x00
 拓司\n　「……」\w\z
 \x00 DIALOGUE_END \xec\x1f
 CALL1 *\x02 CALL3 X\x02 CALL2 *\x02 REF_END2 
-LOAD3 TextClose REF2 "! REF_END1 \x03\t\x00\x00.\\Data\\Script\\Scenario\\044subC.Fob REF1 B! REF_END2 
+LOAD3 TextClose REF2 "! REF_END1 
+LOAD0 .\\Data\\Script\\Scenario\\044subC.Fob REF1 B! REF_END2 
 LOAD2 start REF2 x! REF_END1 
 END_FILE

@@ -15,7 +15,8 @@ DIALOGUE_1 P- DIALOGUE_2 R\x00\x00
 拓司\n　「らしい」@
 \n　紅葉はナサケナイ、とため息をついた。\
 
-\x00 DIALOGUE_END \xaa\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \x12\x02 REF_END2 
+\x00 DIALOGUE_END \xaa\x00\x00\x0c\x02\x00\x00"
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \x12\x02 REF_END2 
 LOAD2 TextOn REF1 @\x02 REF_END1 
 LOAD3 SCE019_002 REF6 \\\x02 REF_END2 
 DIALOGUE_1 T- DIALOGUE_2 L\x00\x00

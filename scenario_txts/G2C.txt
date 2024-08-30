@@ -11,7 +11,8 @@ DIALOGUE_1 H\xc5\x01\x0c\x00\x00\x00\x00"\x03)\x00\x00
 拓司\n　「……先生？」@
 \n錦城は微かに笑うと、拓司の横へと体を移動させた。@
 寄り添って寝転がるような形になる。\w\z
-\x00 DIALOGUE_END \x12\x01\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xd6\x01 REF_END2 
+\x00 DIALOGUE_END \x12\x01\x00\x0c\x02\x00\x00"
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xd6\x01 REF_END2 
 LOAD2 TextOn REF1 \x04\x02 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00
 CALL1  \x00 CALL3 J\x00 REF_END1 
 LOAD3 SCEG02_002 REF6 T\x02 REF_END2 
@@ -34,6 +35,7 @@ DIALOGUE_1 P\xc5\x01\x0c\x00\x00\x00\x00"\x03@\x00\x00
 錦城\n　「私にできることって、なんなんだろうって考えたの」\w\z
 \x00 DIALOGUE_END \xde\x03
 CALL1 \xd6\x01 CALL3 \x04\x02 CALL2 \xd6\x01 REF_END2 
-LOAD3 TextClose REF2 $\x05 REF_END1 \x03\t\x00\x00.\\Data\\Script\\Scenario\\G2SubC.Fob REF2 D\x05 REF_END2 
+LOAD3 TextClose REF2 $\x05 REF_END1 
+LOAD0 .\\Data\\Script\\Scenario\\G2SubC.Fob REF2 D\x05 REF_END2 
 LOAD2 start REF2 z\x05 REF_END1 
 END_FILE

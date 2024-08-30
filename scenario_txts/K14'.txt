@@ -6,7 +6,8 @@ DIALOGUE_1 @\xaf\x01\x0c\x00\x00\x00\x00"\x03R\x00\x00
 変な味がするといやだったから、マーマレードジャムもスプーン\nひとさじぶん添えた。@
 より確実に死ぬにはアルコールも飲まないといけないということ\nは知っていたけれど、私もゆきも、お酒なんて飲んだことはなか\nったから、それはパスした。@
 アルコールの欠落は、薬の増量でまかなえばいいと……さらに一\n瓶ぶんを溶かして、混ぜた。\w\z
-\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xb2\x01 REF_END2 
+\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xb2\x01 REF_END2 
 LOAD2 TextOn REF1 \xe0\x01 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e>\x00\x00\x0c\x02\x00\x00"
 LOAD6 .\\Data\\Script\\Bg.Fob REF3 \x16\x02 REF_END2 
 LOAD4 BgAutoFadeIn REF3 @\x02 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x04\x01\x00\x0c\x02\x00\x00"

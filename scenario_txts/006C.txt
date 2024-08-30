@@ -8,7 +8,8 @@ DIALOGUE_1 \x00\x19 DIALOGUE_2 .\x00\x00
 拓司\n　「こんなこと、おれは望んじゃいない」@
 早桃\n　「いいんだよ。夢は現実に干渉しない。\pいつもの妄想だか\n　　ら」\
 
-\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 "\x01 REF_END2 
+\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 "\x01 REF_END2 
 LOAD2 TextOn REF1 P\x01 REF_END1 
 LOAD3 SCE006_002 REF6 l\x01 REF_END2 
 DIALOGUE_1 \x04\x19 DIALOGUE_2 \x98\x00\x00

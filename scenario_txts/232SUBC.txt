@@ -10,7 +10,8 @@ DIALOGUE_1 ,z\x01\x0c\x00\x00\x00\x00"\x03\xa2\x00\x00
 　銀色のツルツツした顔にギョロリと大きな目がついていて、耳\nは悪魔みたいにとんがっている、不気味な宇宙人です。@
 　夢のなかで宇宙人に見つめられると、なたねは怖くて怖くて身\n動きがとれなくなってしまいうのでした。\p宇宙人はなたねが動\nけないのをいいことに、キスをしたり、身体を触ったりしました。\n\p　そしていつも最後には、管のようなものをなたねのいやらしい\nところに突き刺して、毒の液を身体の中に流し込むのです。\
 
-\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xf2\x02 REF_END2 
+\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xf2\x02 REF_END2 
 LOAD2 TextOn REF1  \x03 REF_END1 
 LOAD3 SCE232_005 REF6 <\x03 REF_END2 
 DIALOGUE_1 0z\x01\x0c\x00\x00\x00\x00"\x03\xdc\x00\x00

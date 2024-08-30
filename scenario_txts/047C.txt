@@ -8,7 +8,8 @@ DIALOGUE_1 \x10Y DIALOGUE_2 ~\x00\x00
 \nなたね\n　「虎菱くんも協力してください。\p虎菱くんならきっとわかって\n　　もらえると思うから。\pね？　お願い」@
 御堂\n　「なたねちゃんがそんなに頼んでるのに、お前、ひどいヤツだ\n　　なア。\p電波系ってだけで最初からシカトってのは、ハッキリ\n　　いって差別だぜ？\p　お前、もうちょっとシャカイテキジャク\n　　シャに対する思いやりってやつを考えろよ、ナ？\p　それとも\n　　なにか、お前、なたねちゃんのことバカにしてんのか？」\
 
-\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 b\x02 REF_END2 
+\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 b\x02 REF_END2 
 LOAD2 TextOn REF1 \x90\x02 REF_END1 
 LOAD3 SCE047_002 REF6 \xac\x02 REF_END2 
 DIALOGUE_1 \x14Y DIALOGUE_2 Z\x00\x00

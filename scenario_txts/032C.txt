@@ -21,7 +21,8 @@ DIALOGUE_1 \xa0A DIALOGUE_2 \xc8\x00\x00
 薄い皮をめくりあげて、ひくついている敏感な部分。@
 それをつまみ上げるたびに、ひく、ひくと、ペ○スを包む肉が収縮\nする。\
 
-\x00\x00\x00 DIALOGUE_END \x12\x01\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 R\x04 REF_END2 
+\x00\x00\x00 DIALOGUE_END \x12\x01\x00\x0c\x02\x00\x00"
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 R\x04 REF_END2 
 LOAD2 TextOn REF1 \x80\x04 REF_END1 
 LOAD3 SCE032_002 REF6 \x9c\x04 REF_END2 
 DIALOGUE_1 \xa4A DIALOGUE_2 \x88\x00\x00
@@ -203,6 +204,7 @@ CALL1 R\x04 CALL3 \x80\x04 CALL2 R\x04 REF_END2
 LOAD4 TextWindowOff REF2 \x08$ CALL2  \x00 REF_END2 
 LOAD2 StopCD REF1 8$ REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00
 CALL1 \x80\x00 REF_END2 
-LOAD2 BgOn REF3 z$ CALL2 R\x04 REF_END2 LOAD5 TextWindowOnDirect REF1 \xa2$ CALL2 R\x04 REF_END2 
+LOAD2 BgOn REF3 z$ CALL2 R\x04 REF_END2 
+LOAD5 TextWindowOnDirect REF1 \xa2$ CALL2 R\x04 REF_END2 
 LOAD3 TextClose REF2 \xd6$ REF_END1 
 END_FILE

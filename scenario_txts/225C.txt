@@ -10,7 +10,8 @@ DIALOGUE_1 0o\x01\x0c\x00\x00\x00\x00"\x03m\x00\x00
 なにかはわからないが、おおきな契機とでもいうべきものが……\nくる。\pそんな確信があった。@
 すべてをうち崩すようななにかが、状況を粉々にするようななに\nかが、きっと起こる。\pそのときのために、俺はエネルギーを蓄積\nしなければならない。\pじっと耐えて、強烈な一撃を放つのだ……。\n\p拓司は野獣のように目を光らせて、無言だった。\
 
-\x00\x00\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \x1e\x02 REF_END2 
+\x00\x00\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \x1e\x02 REF_END2 
 LOAD2 TextOn REF1 L\x02 REF_END1 
 LOAD6 .\\Data\\Script\\Bgm.Fob REF2 h\x02 REF_END2 
 LOAD2 StopCD REF1 \x92\x02 CALL2 \x1e\x02 REF_END2 

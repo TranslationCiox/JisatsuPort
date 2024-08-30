@@ -21,7 +21,8 @@ DIALOGUE_1 0\x11 DIALOGUE_2 O\x00\x00
 世界定義にはでなのかによってきる？@
 きの世に義界はるなよっにて定でか？\
 
-\x00\x00\x00 DIALOGUE_END T\x01\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xb0\x02 REF_END2 
+\x00\x00\x00 DIALOGUE_END T\x01\x00\x0c\x02\x00\x00"
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xb0\x02 REF_END2 
 LOAD2 TextOn REF1 \xde\x02 REF_END1 
 LOAD3 SCE001_002 REF6 \xfa\x02 REF_END2 
 DIALOGUE_1 4\x11 DIALOGUE_2 a\x00\x00

@@ -13,7 +13,8 @@ DIALOGUE_1 \xc0+ DIALOGUE_2 \x9f\x00\x00
 \n　きっかけがあれば。@
 　たとえば去年の夏、紅葉と交わしたあのキスのような、きっかけ\n　が。\
 
-\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xe6\x02 REF_END2 
+\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xe6\x02 REF_END2 
 LOAD2 TextOn REF1 \x14\x03 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x03\x00\x00\x0c\x02\x00\x00"
 LOAD6 .\\Data\\Script\\Bg.Fob REF3 J\x03 REF_END2 
 LOAD4 BgAutoFadeIn REF3 t\x03 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x04\x01\x00\x0c\x02\x00\x00"
@@ -57,7 +58,8 @@ LOAD4 TextWindowOff REF2 \xd8\x08 CALL2 \xb2\x03 REF_END2
 LOAD2 StopCD REF1 \x08\t REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00
 CALL1 J\x03 REF_END2 
 LOAD4 BgNormalFadeIn REF1 J\t REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x07\x01
-CALL1 \xb2\x03 CALL3 \xdc\x03 CALL2 \xe6\x02 REF_END2 LOAD5 TextWindowOnDirect REF1 \xae\t REF_END1 
+CALL1 \xb2\x03 CALL3 \xdc\x03 CALL2 \xe6\x02 REF_END2 
+LOAD5 TextWindowOnDirect REF1 \xae\t REF_END1 
 LOAD3 SCE018_004 REF6 \xd6\t REF_END2 
 DIALOGUE_1 \xcc+ DIALOGUE_2 \x8a\x00\x00
  

@@ -14,7 +14,8 @@ DIALOGUE_1 \xf0\x81\x01\x0c\x00\x00\x00\x00"\x03s\x00\x00
 いいじゃないか、狂っていても。@
 死ぬよりはマシだ。\
 
-\x00\x00\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 6\x02 REF_END2 
+\x00\x00\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 6\x02 REF_END2 
 LOAD2 TextOn REF1 d\x02 REF_END1 
 LOAD3 SCE237_002 REF6 \x80\x02 REF_END2 
 DIALOGUE_1 \xf4\x81\x01\x0c\x00\x00\x00\x00"\x03\x98\x00\x00

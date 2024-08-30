@@ -11,7 +11,8 @@ DIALOGUE_1 \xf0\xa0 DIALOGUE_2 N\x00\x00
 \nなたね\n　「それでは逆にお尋ねしますけど……何日分あれば安心できる\n　　んですか？\p　１ヶ月分？　１年分？　１０年分？」@
 拓司\n　「それは……」@
 \n拓司は絶句した。\w\z
-\x00\x00\x00 DIALOGUE_END \xaa\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \x02\x02 REF_END2 
+\x00\x00\x00 DIALOGUE_END \xaa\x00\x00\x0c\x02\x00\x00"
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \x02\x02 REF_END2 
 LOAD2 TextOn REF1 0\x02 REF_END1 
 LOAD3 SCE093_002 REF6 L\x02 REF_END2 
 DIALOGUE_1 \xf4\xa0 DIALOGUE_2 \x82\x00\x00

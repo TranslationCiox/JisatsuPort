@@ -14,7 +14,8 @@ DIALOGUE_1 PY\x01\x0c\x00\x00\x00\x00"\x03\xae\x00\x00
 ナタネ\n　「……」@
 拓司\n　「おれはおれの世界に戻る」\
 
-\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 "\x03 REF_END2 
+\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 "\x03 REF_END2 
 LOAD2 TextOn REF1 P\x03 REF_END1 
 LOAD3 SCE211_002 REF6 l\x03 REF_END2 
 DIALOGUE_1 TY\x01\x0c\x00\x00\x00\x00"\x03\x86\x00\x00
@@ -39,8 +40,10 @@ DIALOGUE_1 XY\x01\x0c\x00\x00\x00\x00"\x03I\x00\x00
 \x00 DIALOGUE_END F\x06
 CALL1 "\x03 CALL3 P\x03 REF_END1  \x1e\x00\x00\x00\x00\r\x00 REF_END2 \x0c\x02\x00\x00"
 LOAD6 .\\Data\\Script\\Bgm.Fob REF2 \xbe\x07 REF_END2 
-LOAD2 SeStop REF1 \xe8\x07 CALL2 "\x03 REF_END2 LOAD5 TextWindowOffDirect\x1f\x10\x08 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00\x00\x0c\x02\x00\x00"
+LOAD2 SeStop REF1 \xe8\x07 CALL2 "\x03 REF_END2 
+LOAD5 TextWindowOffDirect REF7 \x10\x08 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00\x00\x0c\x02\x00\x00"
 LOAD6 .\\Data\\Script\\Bg.Fob REF3 R\x08 REF_END2 
-LOAD2 BgOn REF3 |\x08 CALL2 "\x03 REF_END2 LOAD5 TextWindowOnDirect REF1 \xa4\x08 CALL2 "\x03 REF_END2 
+LOAD2 BgOn REF3 |\x08 CALL2 "\x03 REF_END2 
+LOAD5 TextWindowOnDirect REF1 \xa4\x08 CALL2 "\x03 REF_END2 
 LOAD3 TextClose REF2 \xd8\x08 REF_END1 
 END_FILE

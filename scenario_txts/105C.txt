@@ -12,7 +12,8 @@ DIALOGUE_1 \xb0\xb3 DIALOGUE_2 \xb7\x00\x00
 御堂\n　「まだ覚悟が決まらねえのかよ、虎菱？」@
 拓司\n　「覚悟？\p……それは誰かを殺してでも生き残るってことか？」\
 
-\x00\x00\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 F\x03 REF_END2 
+\x00\x00\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 F\x03 REF_END2 
 LOAD2 TextOn REF1 t\x03 REF_END1 
 LOAD3 SCE105_002 REF6 \x90\x03 REF_END2 
 DIALOGUE_1 \xb4\xb3 DIALOGUE_2 \x88\x00\x00

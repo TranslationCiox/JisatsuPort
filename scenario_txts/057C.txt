@@ -10,7 +10,8 @@ DIALOGUE_1 \xb0h DIALOGUE_2 t\x00\x00
 \n学生\n　「へへ……やっぱり最初は上村か？」@
 上村\n　「私しかいないっしょ？\p　このウザキャラ潰すのは私の使命だ\n　　からさ」\
 
-\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 :\x02 REF_END2 
+\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 :\x02 REF_END2 
 LOAD2 TextOn REF1 h\x02 REF_END1 
 LOAD3 SCE057_002 REF6 \x84\x02 REF_END2 
 DIALOGUE_1 \xb4h DIALOGUE_2 \x85\x00\x00

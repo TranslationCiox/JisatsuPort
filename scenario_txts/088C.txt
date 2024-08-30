@@ -11,7 +11,8 @@ DIALOGUE_1  \x99 DIALOGUE_2 \x96\x00\x00
 なたね\n　「アルミホイルよ、御堂くん」@
 御堂\n　「うるせえッ！\p　とにかく、こんな狂った女を信じるのは俺は\n　　ゴメンだ！\p　お前らも信じてなんかいねえくせに、信じたフ\n　　リすんのはやめろ！\p　溺れてるからってワラ掴んでどうする\n　　よ！\p　ワラはしょせんワラなんだぞ、てめえら！」　\
 
-\x00 DIALOGUE_END \xaa\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 "\x03 REF_END2 
+\x00 DIALOGUE_END \xaa\x00\x00\x0c\x02\x00\x00"
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 "\x03 REF_END2 
 LOAD2 TextOn REF1 P\x03 REF_END1 
 LOAD3 SCE088_002 REF6 l\x03 REF_END2 
 DIALOGUE_1 $\x99 DIALOGUE_2 \xaa\x00\x00
@@ -134,6 +135,6 @@ ENDCHOICE
 
 \x00 DIALOGUE_END \xaa\x1c
 CALL1 "\x03 CALL3 P\x03 CALL2 "\x03 REF_END2 
-LOAD4 GetLastTxtID REF3 t\x1d REF_END1 !\x1e\x00\x00\x00\x00\r\x00\x00\x1e\x04\x00\x00\r\x02 \x1e\x00\x00\x00\x00\r\x00\x00\x0c\x01\x00\x00"\x1f"\x03 REF_END2 
+LOAD4 GetLastTxtID REF3 t\x1d REF_END1 !\x1e\x00\x00\x00\x00\r\x00\x00\x1e\x04\x00\x00\r\x02 \x1e\x00\x00\x00\x00\r\x00\x00\x0c\x01\x00\x00" REF7 "\x03 REF_END2 
 LOAD3 TextClose REF2 \xce\x1d REF_END1 
 END_FILE

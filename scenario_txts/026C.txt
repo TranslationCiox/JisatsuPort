@@ -12,7 +12,8 @@ DIALOGUE_1 @8 DIALOGUE_2 \xbf\x00\x00
 　暴力に彩られた噂。\p最近はドラッグとか、売春とか、そういっ\n　た単語さえ噂には入り交じるようになっていた。@
 　そして御堂の眼には、それらがあながちただの噂で終わるもの\n　ではないと感じさせるだけの説得力が備わっていた。\
 
- DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 f\x03 REF_END2 
+ DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 f\x03 REF_END2 
 LOAD2 TextOn REF1 \x94\x03 REF_END1 
 LOAD3 SCE026_002 REF6 \xb0\x03 REF_END2 
 DIALOGUE_1 D8 DIALOGUE_2 o\x00\x00
@@ -56,7 +57,7 @@ DIALOGUE_1 L8 DIALOGUE_2 `\x00\x00
 \x00\x00\x00 DIALOGUE_END \xd4\x08
 CALL1 f\x03 CALL3 \x94\x03 REF_END1 
 LOAD3 SCE026_005 REF6 \x8e\n REF_END2 
-DIALOGUE_1 P8\x00\x0c\x00\x00\x00\x00"\x1f\x04\x06 REF_END2 
+DIALOGUE_1 P8\x00\x0c\x00\x00\x00\x00" REF7 \x04\x06 REF_END2 
 LOAD2 StopCD REF1 \xde\n REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x00\x00\x00\x00\x0c\x02\x00\x00" \x1e\x04\x00\x00\r\x00\x00\x1e\x0b\x00\x00\x0c\x02\x00\x00" \x1e\x08\x00\x00\r\x00\x00\x1e\x00\x00\x00
 CALL1 \x04\x06 REF_END2 
 LOAD3 SePlayEx REF3 T\x0b REF_END1 \x03\x9f\x00\x00
@@ -114,6 +115,7 @@ DIALOGUE_1 \\8 DIALOGUE_2 \x85\x00\x00
 CALL1 f\x03 CALL3 \x94\x03 CALL2 f\x03 REF_END2 
 LOAD4 TextWindowOff REF2 \xf0\x14 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00\x00\x0c\x02\x00\x00"
 LOAD6 .\\Data\\Script\\Bg.Fob REF3 .\x15 REF_END2 
-LOAD4 BgNormalFadeIn REF1 X\x15 CALL2 \x04\x06 CALL3 \xde\n REF_END1 \x1e\x1e\x00\x00\x1e\x00\x00\x00\x00\x92\x1ff\x03 REF_END2 LOAD5 TextWindowOnDirect REF1 \xb0\x15 CALL2 f\x03 REF_END2 
+LOAD4 BgNormalFadeIn REF1 X\x15 CALL2 \x04\x06 CALL3 \xde\n REF_END1 \x1e\x1e\x00\x00\x1e\x00\x00\x00\x00\x92 REF7 f\x03 REF_END2 
+LOAD5 TextWindowOnDirect REF1 \xb0\x15 CALL2 f\x03 REF_END2 
 LOAD3 TextClose REF2 \xe4\x15 REF_END1 
 END_FILE

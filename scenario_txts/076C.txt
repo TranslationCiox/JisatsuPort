@@ -7,7 +7,8 @@ DIALOGUE_1 `\x86 DIALOGUE_2 Q\x00\x00
 　　いままで何度も、雲居さんは『波動』ってやつを感じてき\n　　たし、俺はそれに救われてきた」@
 早桃\n　「おにいちゃん！\p　じゃあ、神凪先輩を見捨てるっていうの\n　　？！」\n拓司\n　「……」\
 
-\x00\x00\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xae\x01 REF_END2 
+\x00\x00\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xae\x01 REF_END2 
 LOAD2 TextOn REF1 \xdc\x01 REF_END1 
 LOAD3 SCE076_002 REF6 \xf8\x01 REF_END2 
 DIALOGUE_1 d\x86 DIALOGUE_2 d\x00\x00

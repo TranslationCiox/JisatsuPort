@@ -7,7 +7,8 @@ DIALOGUE_1 PF DIALOGUE_2 &\x00\x00
  
 拓司の中に、今日の昼食はどうするのか、という紅葉の言葉が引\nっかかっていた。\p拓司は、教室に引き返し、弁当をかじっている\n紅葉に声をかけた。\
 
-\x00\x00\x00 DIALOGUE_END \xaa\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 b\x01 REF_END2 
+\x00\x00\x00 DIALOGUE_END \xaa\x00\x00\x0c\x02\x00\x00"
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 b\x01 REF_END2 
 LOAD2 TextOn REF1 \x90\x01 REF_END1 
 LOAD3 SCE033_002 REF6 \xac\x01 REF_END2 
 DIALOGUE_1 TF DIALOGUE_2 J\x00\x00

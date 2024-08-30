@@ -12,7 +12,8 @@ DIALOGUE_1 \x10\x85\x01\x0c\x00\x00\x00\x00"\x03f\x00\x00
 \n拓司\n　「自分がこんなに安っぽい人間だったとはなあ。\pなにかあると\n　　ピカーって……ワンパターンにもほどがあるよ」@
 ナタネ\n　「くすくす。\p誰だって、子供っぽい空想の世界は持っているわ。\n　　\pだから特別あなたが幼稚ってわけでもないと思う」\
 
-\x00\x00\x00 DIALOGUE_END \xaa\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 b\x02 REF_END2 
+\x00\x00\x00 DIALOGUE_END \xaa\x00\x00\x0c\x02\x00\x00"
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 b\x02 REF_END2 
 LOAD2 TextOn REF1 \x90\x02 REF_END1 
 LOAD3 SCE239_002 REF6 \xac\x02 REF_END2 
 DIALOGUE_1 \x14\x85\x01\x0c\x00\x00\x00\x00"\x03o\x00\x00

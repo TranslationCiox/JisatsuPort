@@ -12,7 +12,8 @@ LOAD3 SePlayEx REF3 \xc2\x00 REF_END1 \x03\x82\x00\x00
 \n教師\n　「いいか。\p刃物を扱うわけだから少し怖い気もするかもしれん\n　　でもみんなで心をひとつにすれば大丈夫だ。\pこれはオレが常\n　　日頃いっていることだから、わかるな？\p　……よし。\pカッタ\n　　ーを持っていない者は、使い終わった者に借りるように。@
 　　これはテストには出ないが、重要なことだぞ」\
 
-\x00 DIALOGUE_END \xe2\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \n\x03 REF_END2 
+\x00 DIALOGUE_END \xe2\x00\x00\x0c\x02\x00\x00"
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \n\x03 REF_END2 
 LOAD2 TextOn REF1 8\x03 REF_END1 
 LOAD3 SCE050_002 REF6 T\x03 REF_END2 
 DIALOGUE_1 \xc4] DIALOGUE_2 o\x00\x00

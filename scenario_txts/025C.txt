@@ -13,7 +13,8 @@ DIALOGUE_1 \xb06 DIALOGUE_2 }\x00\x00
 \n冷たい汗がびっしょりと体を覆っている。@
 リアルな夢だった。\
 
-\x00 DIALOGUE_END \x12\x01\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 &\x03 REF_END2 
+\x00 DIALOGUE_END \x12\x01\x00\x0c\x02\x00\x00"
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 &\x03 REF_END2 
 LOAD2 TextOn REF1 T\x03 CALL2 \x88\x00 REF_END2 
 LOAD2 StopCD REF1 |\x03 REF_END1 
 LOAD3 SCE025_002 REF6 \x98\x03 REF_END2 

@@ -19,7 +19,8 @@ DIALOGUE_1 \xe0` DIALOGUE_2 \xac\x00\x00
 円陣の中央には、ひとりの女の子が立ちすくんでいる。@
 早桃だ。\
 
-\x00 DIALOGUE_END \xaa\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 z\x03 REF_END2 
+\x00 DIALOGUE_END \xaa\x00\x00\x0c\x02\x00\x00"
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 z\x03 REF_END2 
 LOAD2 TextOn REF1 \xa8\x03 REF_END1 
 LOAD3 SCE052_002 REF6 \xc4\x03 REF_END2 
 DIALOGUE_1 \xe4` DIALOGUE_2 ]\x00\x00

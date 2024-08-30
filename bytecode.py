@@ -3,32 +3,23 @@ import os
 #SET_5\x1e\x02\x00\x003B_02 \x1e\x02\x00\x005  \x1e\x00\x00\x00\x00\r\x00\x00
 patterns = [
     {
-        "pattern": [b'\x00', b'\x1e', b'\x02', b'\x00', b'\x00', b'\x1f', b'\xb6\x01', b'\x00', b'\x1e', b'\x02', b'\x00', b'\x00', b'5', b'\x1f', b'j', b'\x00',
-                    b'\x00', b'\x1e', b'\x02', b'\x00', b'\x00', b'\x1f', b'\xde\x02', b'\x00',
-                    b'\x1e', b'\x02', b'\x00', b'\x00', b'5', b' ', b'\x1e', b'\x00', b'\x00', b'\x00', b'\x00', b'\r',
-                    b'\x00', b'\x00'],
+        "pattern": [b'\x1e', b'\x00', b'\x00', b'\x00', b'\x00', b'\r', b'\x00', b'\x00', b',', b'\x02'],
         # Seems to be a decent indicator of a choice being present.
-        "action": " CHOICE_END"
+        "action": "\nCHOICE01 "
     },
-
     {
         "pattern": [b'\x1f', b'\xb6\x01', b'\x00', b'\x1e', b'\x02', b'\x00', b'\x00', b'5', b'\x1f', b'j', b'\x00', b'\x00', b'\x1e', b'\x02', b'\x00', b'\x00', b'\x1f', b'\xde\x02', b'\x00',
                     b'\x1e', b'\x02', b'\x00', b'\x00', b'5', b' ', b'\x1e', b'\x00', b'\x00', b'\x00', b'\x00', b'\r', b'\x00', b'\x00'],
         # Seems to be a decent indicator of a choice being present.
-        "action": "CHOICE"
+        "action": "CHOICE02"
     },
 
     {
-        "pattern": [b'\x00', b'\x1e', b'\x02', b'\x00', b'\x00', b'\x1f', b'\xb6\x01', b'\x00', b'\x1e', b'\x02', b'\x00', b'\x00', b'5'],
+        "pattern": [b'\x00', b'\x1f', b'\xb6\x01', b'\x00', b'\x1e', b'\x02', b'\x00', b'\x00', b'5'],
         # Used after loading FOB files and SCE calls and some long bytecode chains which might also contain something.
         "action": " SCENARIO_END\n"
     },
 
-    # {
-    #     "pattern": [b'\x00', b'\x0c', b'\x02', b'\x00', b'\x00', b'"'],
-    #     # Used after EVERY block of dialogue EVEN dialogue choice blocks.
-    #     "action": " SEQ01\n"
-    # },
     {
         "pattern": [b'\x1e', b'\x00', b'\x00', b'\x00', b'\x00', b'\r', b'\x00', b'\x00', b'\x1f'],
         # Used after EVERY block of dialogue EVEN dialogue choice blocks.
@@ -83,22 +74,8 @@ patterns = [
         # Used in EVERY SCExx_xxx command.
         "action": " REF_END2 "
     },
-    # {
-    #     "pattern": [b'J', b'\x00', b'\x00'],
-    #     # Used after SetGamemode
-    #     "action": " SET_GAMEMODE "
-    # },
 
-    {
-        "pattern": [b'\x1f', b'j', b'\x00', b'\x00'],
-        # Used after 5 is used.
-        "action": "SET_5"
-    },
-    # {
-    #     "pattern": [b'\x1f', None, b'\x00', b'\x00'],
-    #     #
-    #     "action": "4B_05"
-    # },
+
     {
         "pattern": [b'\x03', b'\x02', b'\x00', b'\x00'],
         # BgOn, PlayCD, TextOn
@@ -117,7 +94,7 @@ patterns = [
     {
         "pattern": [b'\x03', b'\x05', b'\x00', b'\x00'],
         # TextWindowOffDirect, 0.Fob, InitGameFlagBuffer
-        "action": "LOAD5 "
+        "action": "\nLOAD5 "
     },
     {
         "pattern": [b'\x03', b'\x06', b'\x00', b'\x00'],
@@ -127,58 +104,22 @@ patterns = [
     {
         "pattern": [b'\x03', b'\x07', b'\x00', b'\x00'],
         # TextFunc.Fob
-        "action": "LOAD7 "
+        "action": "\nLOAD7 "
     },
     {
         "pattern": [b'\x03', b'\x08', b'\x00', b'\x00'],
         # Scenario files e.g. 029C.Fob
         "action": "\nLOAD8 "
     },
-
-    # {
-    #     "pattern": [b'\x03', None, b'\x00', b'\x00'],
-    #     # Before files, commands, and SCExx_xxx calls.
-    #     "action": "\n4B_03 "
-    # },
-
-    # {
-    #     "pattern": [b'\x00', None, b'\x00', b'\x00'],
-    #     # Used before
-    #     "action": "\n4B_02 "
-    # },
-
     {
-        "pattern": [b'\x1f', b'\xB6', b'\x01', b'\x00'],
-        #
-        "action": "\n4B_01 "
-    },
-
-    ########################### 4 Bytes (wildcard) ###########################
-    # {
-    #     "pattern": [b'\x1e', None, b'\x00', b'\x00'],
-    #     # Used before a 4B_02 or 4B_03
-    #     "action": "\n4B_04 "
-    # },
-    # {
-    #     "pattern": [b'\r', b'\x02', b'\x1e', None],
-    #     #
-    #     "action": "\n4B_06"
-    # },
-    ########################### 3 Bytes ###########################
-    {
-        "pattern": [b'\x1f', b'\xb6\x01', b'\x00'],
-        #
-        "action": "3B_01 "
+        "pattern": [b'\x03', b'\n', b'\x00', b'\x00'],
+        # Scenario files e.g. 029C.Fob
+        "action": "\nLOAD9 "
     },
     {
-        "pattern": [b'\x1f', b'\xde\x02', b'\x00'],
-        #
-        "action": "3B_02 "
-    },
-    {
-        "pattern": [b'\x1e', b'\x8c\x01', b'\x00'],
-        #
-        "action": "3B_03 "
+        "pattern": [b'\x03', b'\t', b'\x00', b'\x00'],
+        # Scenario files e.g. 029C.Fob
+        "action": "\nLOAD0 "
     },
 
     ########################### 2 Bytes ###########################
@@ -191,7 +132,7 @@ patterns = [
     {
         "pattern": [b',', b'\x02'],
         #
-        "action": "\n2B_02 "
+        "action": "2B_02 "
     },
 
     ########################### 1 Byte ###########################
@@ -227,10 +168,11 @@ patterns = [
         "action": " REF6 "
     },
     {
-        "pattern": [b'5'],
+        "pattern": [b'\x1f'],
         #
-        "action": "5 "
+        "action": " REF7 "
     },
+
 
     ########################### Special ###########################
 

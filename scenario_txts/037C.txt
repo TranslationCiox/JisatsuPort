@@ -16,7 +16,8 @@ DIALOGUE_1 pI DIALOGUE_2 \x8f\x00\x00
 　なんの心のふるえも呼び起こさない、ただの空と、雲。@
 　光景。\
 
-\x00\x00\x00 DIALOGUE_END \xaa\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \x06\x03 REF_END2 
+\x00\x00\x00 DIALOGUE_END \xaa\x00\x00\x0c\x02\x00\x00"
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \x06\x03 REF_END2 
 LOAD2 TextOn REF1 4\x03 REF_END1 
 LOAD3 SCE037_002 REF6 P\x03 REF_END2 
 DIALOGUE_1 tI DIALOGUE_2 W\x00\x00

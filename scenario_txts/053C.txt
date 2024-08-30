@@ -11,7 +11,8 @@ DIALOGUE_1 pb DIALOGUE_2 z\x00\x00
 円陣の中央には、ひとりの女の子が立ちすくんでいる。@
 /*▲BGM　Track11　再生　*//*■CG21　表示（クロスフェード）　*/\a7,-2,-2,0,\a0,20,2,0,\a6,-2,0,0,\n早桃だ。\
 
-\x00 DIALOGUE_END \xaa\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xb2\x02 REF_END2 
+\x00 DIALOGUE_END \xaa\x00\x00\x0c\x02\x00\x00"
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xb2\x02 REF_END2 
 LOAD2 TextOn REF1 \xe0\x02 REF_END1 
 LOAD3 SCE053_002 REF6 \xfc\x02 REF_END2 
 DIALOGUE_1 tb DIALOGUE_2 C\x00\x00
@@ -90,7 +91,8 @@ DIALOGUE_1 \x88b DIALOGUE_2 >\x00\x00
 雲居\n　「間違いない。\pいま、前兆を確認したわ。\p五分後、大きな波が\n　　来るわ。\pそれまで待てば、みんな自滅する。\pそうすれば、危\n　　険を冒さずに義妹さんを助けられるわ」\
 
 \x00\x00\x00 DIALOGUE_END \x9a\x0f
-CALL1 \xb2\x02 CALL3 \xe0\x02 REF_END1 \x03\n\x00\x00
+CALL1 \xb2\x02 CALL3 \xe0\x02 REF_END1 
+LOAD9 
 CHOICE
 待っていられない\n待つ\n\l0,2,
 ENDCHOICE

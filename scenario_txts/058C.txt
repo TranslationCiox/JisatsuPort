@@ -9,7 +9,8 @@ DIALOGUE_1 @j DIALOGUE_2 \x1b\x00\x00
 時間が何分あまっていようが、もう我慢できない。@
 拓司は一気に教室に駆け込んだ。\
 
-\x00\x00\x00 DIALOGUE_END \x90\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \x1c\x01 REF_END2 
+\x00\x00\x00 DIALOGUE_END \x90\x00\x00\x0c\x02\x00\x00"
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \x1c\x01 REF_END2 
 LOAD2 TextOn REF1 J\x01 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\n\x01
 CALL1 \x06\x00 REF_END2 
 LOAD2 PlayCD REF1 \x8c\x01 REF_END1 

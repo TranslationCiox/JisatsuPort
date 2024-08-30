@@ -9,7 +9,8 @@ DIALOGUE_1 \xa0T\x01\x0c\x00\x00\x00\x00"\x03\x90\x00\x00
 拓司\n　「……」@
 ナタネ\n　「……」\
 
-\x00\x00\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xaa\x02 REF_END2 
+\x00\x00\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xaa\x02 REF_END2 
 LOAD2 TextOn REF1 \xd8\x02 CALL2 \xaa\x02 REF_END2 
 LOAD3 TextClose REF2 \x00\x03 REF_END1 
 END_FILE

@@ -9,7 +9,8 @@ DIALOGUE_1 `N\x01\x0c\x00\x00\x00\x00"\x03\xcb\x00\x00
 拓司はいった。@
 \n拓司\n　「君の言うことが信じられないような真実なのか……途方もな\n　　いウソなのか……それはまず置いておこう。\pそれを決める前\n　　に、いくつか質問をさせてくれ」\
 
-\x00\x00\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \x96\x03 REF_END2 
+\x00\x00\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \x96\x03 REF_END2 
 LOAD2 TextOn REF1 \xc4\x03 CALL2 \x96\x03 REF_END2 
 LOAD3 TextClose REF2 \xec\x03 REF_END1 
 END_FILE

@@ -7,7 +7,8 @@ DIALOGUE_1 \x90_\x01\x0c\x00\x00\x00\x00"\x03\x11\x00\x00
  
 \n\n\n\n\n\n\n\n\n\n　　　　　　　　　　　　　『７日目』\
 
-\x00\x00\x00 DIALOGUE_END \x90\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xf4\x00 REF_END2 
+\x00\x00\x00 DIALOGUE_END \x90\x00\x00\x0c\x02\x00\x00"
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xf4\x00 REF_END2 
 LOAD2 TextOn REF1 "\x01 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x0c\x01
 CALL1 \x06\x00 REF_END2 
 LOAD2 PlayCD REF1 d\x01 REF_END1 

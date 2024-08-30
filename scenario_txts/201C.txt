@@ -18,7 +18,8 @@ LOAD2 SePlay REF1 *\x01 REF_END1 \x03\xa0\x00\x00
 拓司は思った。@
 この『白い部屋の世界』が現実なのだとしたら、それは喜ぶべき\n傾向なのだろう。\pしかし、ここが夢の世界だとしたら……それは\n妄想世界に固定されつつあるということであり……恐怖すべきこ\nとなのだ。\
 
-\x00 DIALOGUE_END F\x01\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xe6\x03 REF_END2 
+\x00 DIALOGUE_END F\x01\x00\x0c\x02\x00\x00"
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xe6\x03 REF_END2 
 LOAD2 TextOn REF1 \x14\x04 REF_END1 
 LOAD3 SCE201_002 REF6 0\x04 REF_END2 
 DIALOGUE_1 \xb4I\x01\x0c\x00\x00\x00\x00"\x03\x8a\x00\x00

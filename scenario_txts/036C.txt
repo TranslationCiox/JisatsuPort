@@ -9,7 +9,8 @@ DIALOGUE_1 \xe0G DIALOGUE_2 e\x00\x00
 \n錦城\n　「階段を女の子が降りていったからなにかと思ってきてみれば\n　　……あなた、どうやってこの場所に入ったの？@
 　　鍵はかかっていなかったの？」@
 拓司\n　「……」\w\z
-\x00\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xfe\x01 REF_END2 
+\x00\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xfe\x01 REF_END2 
 LOAD2 TextOn REF1 ,\x02 REF_END1 
 LOAD3 SCE036_002 REF6 H\x02 REF_END2 
 DIALOGUE_1 \xe4G DIALOGUE_2 \x81\x00\x00

@@ -14,7 +14,8 @@ DIALOGUE_1 \x80\xb5\x01\x0c\x00\x00\x00\x00"\x03w\x00\x00
 早桃\n　「早桃に、罰が当たったんだとおもう。\pそれに、おにいちゃん\n　　まで巻き込んじゃった」@
 拓司\n　「なにをいってるんだ？\p　罰とか、巻き込むとか。\pお前のせい\n　　なはずがないだろう？\p　世界がいかれちまったのは、誰のせ\n　　いでもない」\
 
-\x00 DIALOGUE_END \xb2\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xae\x02 REF_END2 
+\x00 DIALOGUE_END \xb2\x00\x00\x0c\x02\x00\x00"
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xae\x02 REF_END2 
 LOAD2 TextOn REF1 \xdc\x02 REF_END1 
 LOAD3 SCES01_002 REF6 \xf8\x02 REF_END2 
 DIALOGUE_1 \x84\xb5\x01\x0c\x00\x00\x00\x00"\x03c\x00\x00

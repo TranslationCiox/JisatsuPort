@@ -5,7 +5,8 @@ DIALOGUE_1 @\x1f DIALOGUE_2 \x11\x00\x00
  
 \n\n\n\n\n\n\n\n\n　　　　　　　　　　　『虎菱家の食卓』\
 
-\x00\x00\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xae\x00 REF_END2 
+\x00\x00\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xae\x00 REF_END2 
 LOAD2 TextOn REF1 \xdc\x00 REF_END1 
 LOAD3 SCE010_002 REF6 \xf8\x00 REF_END2 
 DIALOGUE_1 D\x1f DIALOGUE_2 a\x00\x00

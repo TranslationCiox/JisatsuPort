@@ -11,7 +11,8 @@ DIALOGUE_1 X\xa6\x01\x0c\x00\x00\x00\x00"\x03\\\x00\x00
 だから、ゆきのやりかたは、卑怯な妥協にしか思えなかった。@
 多分、嫉妬していたのだと思う。\n自分と同じメンタリティを持ちながらも周囲とうまくやっていけ\nているゆきが、羨ましかったのだろう。@
 そう考えないと、私がとったその後の行動を、うまく説明するこ\nとができない。\w\z
-\x00 DIALOGUE_END \x12\x01\x00\x0c\x02\x00\x00"LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xa2\x02 REF_END2 
+\x00 DIALOGUE_END \x12\x01\x00\x0c\x02\x00\x00"
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xa2\x02 REF_END2 
 LOAD2 TextOn REF1 \xd0\x02 REF_END1 
 LOAD3 SCEK04_002 REF6 \xec\x02 REF_END2 
 DIALOGUE_1 \\\xa6\x01\x0c\x00\x00\x00\x00"\x03\x96\x00\x00
