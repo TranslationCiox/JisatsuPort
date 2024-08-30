@@ -3,46 +3,15 @@ import os
 #SET_5\x1e\x02\x00\x003B_02 \x1e\x02\x00\x005  \x1e\x00\x00\x00\x00\r\x00\x00
 patterns = [
     {
-        "pattern": [b'\x1e', b'\x00', b'\x00', b'\x00', b'\x00', b'\r', b'\x00', b'\x00', b',', b'\x02'],
-        # Seems to be a decent indicator of a choice being present.
-        "action": "\nCHOICE01 "
-    },
-    {
         "pattern": [b'\x00', b'\x1f', b'\xb6\x01', b'\x00', b'\x1e', b'\x02', b'\x00', b'\x00', b'5'],
         # Used after loading FOB files and SCE calls and some long bytecode chains which might also contain something.
         "action": " SCENARIO_END\n"
     },
-    # {
-    #     "pattern": [b'\x1e', b'\x00', b'\x00', b'\x00', b'\x00', b'\r', b'\x00', b'\x00', b'\x1f'],
-    #     # Used after EVERY block of dialogue EVEN dialogue choice blocks.
-    #     "action": "DIALOGUE_END "
-    # },
-    #
-    # {
-    #     "pattern": [b'\xef', b'!', b'\x1e', b'\x00', b'\x00', b'\x00', b'\x00', b'\r', b'\x00', b'\x00', b'\x1e',
-    #                 b'\x8c\x01', b'\x00', b'\r', b'\x02', b'\x1e'],
-    #     # Used after certain commands, often time background or textbox related
-    #     "action": "\nDIALOGUE_1 "
-    # },
-
-    # {
-    #     "pattern": [b'\x00', b'\x0c', b'\x00', b'\x00', b'\x00', b'\x00', b'"', b'\x03'],
-    #     # Used after certain commands, often time background or textbox related
-    #     "action": " DIALOGUE_2 "
-    # },
-
-    {
-        "pattern": [b'\x1f', b'\xb6\x01', b'\x00', b'\x1e', b'\x02', b'\x00', b'\x00', b'5'],
-        # Used after every SCENARIO in SCENARIOROOT
-        "action": "SCENARIO "
-    },
-
     {
         "pattern": [b'\x00', b'\x0c', b'\x02', b'\x00', b'\x00', b'"', b'\x1f'],
         # Used after EVERY block of dialogue EVEN dialogue choice blocks.
         "action": " CALL1 "
     },
-
     {
         "pattern": [b'\x00', b'\x1e', b'\x02', b'\x00', b'\x00', b'5', b'\x1f'],
         # Used in EVERY sequence with commands like e.g. NormalFadeIn
@@ -54,13 +23,6 @@ patterns = [
         # Used in EVERY SCExx_xxx command.
         "action": " CALL3 "
     },
-
-    {
-        "pattern": [b'\xef', b'!', b'\x1e', b'\x00', b'\x00', b'\x00', b'\x00', b'\r', b'\x00', b'\x00', b'\x1e'],
-        # Used in EVERY SCExx_xxx command.
-        "action": "\nSEQ1 "
-    },
-
     {
         "pattern": [b'\x00', b'\x1e', b'\x02', b'\x00', b'\x00', b'5'],
         # Used in EVERY sequence with commands like e.g. NormalFadeIn
@@ -71,11 +33,15 @@ patterns = [
         # Used in EVERY SCExx_xxx command.
         "action": " REF_END2 "
     },
-
     {
         "pattern": [b'\x00', b'\x0c', b'\x02', b'\x00', b'\x00', b'"'],
         # Used in EVERY SCExx_xxx command.
         "action": " REF_END3 "
+    },
+    {
+        "pattern": [b'\xef', b'!', b'\x1e', b'\x00', b'\x00', b'\x00', b'\x00', b'\r', b'\x00', b'\x00', b'\x1e'],
+        # Used in EVERY SCExx_xxx command.
+        "action": "\nSEQ1 "
     },
     {
         "pattern": [b'\x00', b'\r', b'\x02', b'\x1e'],
