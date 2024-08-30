@@ -1,6 +1,6 @@
 START_FILE
 .\x10\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\x10\r\x00
-LOAD3 SCE210_001\x00\x1f\x06\x00 SCE_CMD 
+LOAD3 SCE210_001\x00\x1f\x06\x00 REF_END2 
 DIALOGUE_1 \xc0W\x01\x0c\x00\x00\x00\x00"\x03B\x00\x00
  
 教授はいった。@
@@ -10,9 +10,9 @@ DIALOGUE_1 \xc0W\x01\x0c\x00\x00\x00\x00"\x03B\x00\x00
 おそらくはおれと同じ……この病院の患者なのだ。\
 
 \x00\x00\x00 DIALOGUE_END J\x00 SEQ01
-LOAD7 .\\Data\\Script\\TextFunc.Fob OP01 r\x01 SCE_CMD 
-LOAD2 TextOn OP01 \xa0\x01 OP_CMD 
-LOAD3 SCE210_002\x00\x1f\xbc\x01 SCE_CMD 
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 r\x01 REF_END2 
+LOAD2 TextOn REF1 \xa0\x01 REF_END1 
+LOAD3 SCE210_002\x00\x1f\xbc\x01 REF_END2 
 DIALOGUE_1 \xc4W\x01\x0c\x00\x00\x00\x00"\x03o\x00\x00
  
 拓司\n　「でたらめだ。\pそんなＳＦみたいな話を信じるわけにはいかな\n　　い。\p物理法則こそが、唯一の定点だ。@
@@ -22,9 +22,9 @@ DIALOGUE_1 \xc4W\x01\x0c\x00\x00\x00\x00"\x03o\x00\x00
 それはとても悲しい表情で、拓司の胸はズキリと痛んだ。@
 拓司は逃げるように目をそらし、ベッドに倒れ込んで毛布を頭か\nらかぶった。\
 
-\x00\x00\x00 DIALOGUE_END \x00\x02
-SEQ02 r\x01 SEQ03 \xa0\x01 OP_CMD 
-LOAD3 SCE210_003\x00\x1f\xf6\x03 SCE_CMD 
+\x00\x00\x00 DIALOGUE_END \x00\x02 SEQ01
+\x1fr\x01 CALL3 \xa0\x01 REF_END1 
+LOAD3 SCE210_003\x00\x1f\xf6\x03 REF_END2 
 DIALOGUE_1 \xc8W\x01\x0c\x00\x00\x00\x00"\x03G\x00\x00
  
 拓司\n　「放っておいてくれ。\pおれは教授を信じて、治療を受ける。@
@@ -34,9 +34,9 @@ DIALOGUE_1 \xc8W\x01\x0c\x00\x00\x00\x00"\x03G\x00\x00
 おれは狂っているんだ。@
 狂っていることを認めなければならない。\
 
-\x00\x00\x00 DIALOGUE_END :\x04
-SEQ02 r\x01 SEQ03 \xa0\x01 OP_CMD 
-LOAD3 SCE210_004\x00\x1f\x90\x05 SCE_CMD 
+\x00\x00\x00 DIALOGUE_END :\x04 SEQ01
+\x1fr\x01 CALL3 \xa0\x01 REF_END1 
+LOAD3 SCE210_004\x00\x1f\x90\x05 REF_END2 
 DIALOGUE_1 \xccW\x01\x0c\x00\x00\x00\x00"\x03\xa5\x00\x00
  
 /*▲SE01　ループ再生（次の停止まで）*/\a2,1,1,1,\a6,0,0,0,ザザザ……ザザッ……\pザアザザザ……ザアアアアア……@
@@ -50,9 +50,9 @@ DIALOGUE_1 \xccW\x01\x0c\x00\x00\x00\x00"\x03\xa5\x00\x00
 そしてそれは、いままでのすべての記憶を流し去って、新たな悪\n夢を……新たな『おれの世界』を脳髄に産み付けるのだろう。@
 やがてまたこの部屋で目覚めて、教授にすべてを否定され……\
 
-\x00\x00\x00 DIALOGUE_END \xd4\x05
-SEQ02 r\x01 SEQ03 \xa0\x01 OP_CMD 
-LOAD3 SCE210_005\x00\x1f\xa2\x08 SCE_CMD 
+\x00\x00\x00 DIALOGUE_END \xd4\x05 SEQ01
+\x1fr\x01 CALL3 \xa0\x01 REF_END1 
+LOAD3 SCE210_005\x00\x1f\xa2\x08 REF_END2 
 DIALOGUE_1 \xd0W\x01\x0c\x00\x00\x00\x00"\x03Z\x00\x00
  
 /*▲SE01　ループ再生（次の停止まで）*/\a2,1,1,1,\a6,0,0,0,ザザザ……ザザッ……\pザアザザザ……ザアアアアア……@
@@ -63,21 +63,21 @@ DIALOGUE_1 \xd0W\x01\x0c\x00\x00\x00\x00"\x03Z\x00\x00
 　あるのは中心だけだ。@
 　－－そして中心こそは、狂っているおれなのだ。\
 
-\x00\x00\x00 DIALOGUE_END \xe6\x08
-SEQ02 r\x01 SEQ03 \xa0\x01 OP_CMD 
-LOAD3 SCE210_006\x00\x1f\x88\n SCE_CMD 
+\x00\x00\x00 DIALOGUE_END \xe6\x08 SEQ01
+\x1fr\x01 CALL3 \xa0\x01 REF_END1 
+LOAD3 SCE210_006\x00\x1f\x88\n REF_END2 
 DIALOGUE_1 \xd4W\x01\x0c\x00\x00\x00\x00"\x03F\x00\x00
  
 /*▲SE01　ループ再生（次の停止まで）*/\a2,1,1,1,\a6,0,0,0,ザザザ……ザザッ……\pザアザザザ……ザアアアアア……@
 ザアザアアアアアアア……@
 /*▲SE01　停止*/\a4,1,0,0,\n　拓司はなま暖かいかたまりにゆっくり飲み込まれながら、ただ\n　胎児のように身を丸めて恐怖していた。\
 
-\x00\x00\x00 DIALOGUE_END \xcc\n
-SEQ02 r\x01 SEQ03 \xa0\x01 OP_CMD  \x1e\x00\x00\x00\x00\r\x00 SCE_CMD \x0c\x02\x00\x00"
-LOAD6 .\\Data\\Script\\Bgm.Fob OP02 8\x0c SCE_CMD 
-LOAD2 SeStop OP01 b\x0c OP_CMD  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00 SEQ01
+\x00\x00\x00 DIALOGUE_END \xcc\n SEQ01
+\x1fr\x01 CALL3 \xa0\x01 REF_END1  \x1e\x00\x00\x00\x00\r\x00 REF_END2 \x0c\x02\x00\x00"
+LOAD6 .\\Data\\Script\\Bgm.Fob REF2 8\x0c REF_END2 
+LOAD2 SeStop REF1 b\x0c REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00 SEQ01
 
-LOAD6 .\\Data\\Script\\Bg.Fob OP03 \x98\x0c SCE_CMD 
-LOAD4 BgAutoFadeIn OP03 \xc2\x0c SEQ05 r\x01 SCE_CMD 
-LOAD3 TextClose OP02 \xf2\x0c OP_CMD 
+LOAD6 .\\Data\\Script\\Bg.Fob REF3 \x98\x0c REF_END2 
+LOAD4 BgAutoFadeIn REF3 \xc2\x0c CALL2 r\x01 REF_END2 
+LOAD3 TextClose REF2 \xf2\x0c REF_END1 
 END_FILE

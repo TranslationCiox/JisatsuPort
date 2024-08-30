@@ -1,6 +1,6 @@
 START_FILE
 \xa9\x04\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xa4\t3\x01\x00\x00\x00\xb8\x03\x00
-LOAD3 SCEK02_001\x00\x1f\x06\x00 SCE_CMD 
+LOAD3 SCEK02_001\x00\x1f\x06\x00 REF_END2 
 DIALOGUE_1 \x08\xa6\x01\x0c\x00\x00\x00\x00"\x03T\x00\x00
  
 　翌日も、若草ゆきは私に話しかけてきた。@
@@ -8,16 +8,16 @@ DIALOGUE_1 \x08\xa6\x01\x0c\x00\x00\x00\x00"\x03T\x00\x00
 何日目だったか、覚えていない。\pいいかげんいらいらした私は、\nどうして私につきまとうのかと、若草ゆきに厳しく問いただした。\n\p若草ゆきはいっしゅん呆気にとられた様子だったけれど、やがて\n気弱に笑って\n「お友達になりたいと思ったから」@
 とだけいった。\w\z
 \x00 DIALOGUE_END J\x00 SEQ01
-LOAD7 .\\Data\\Script\\TextFunc.Fob OP01 \xba\x01 SCE_CMD 
-LOAD2 TextOn OP01 \xe8\x01 OP_CMD 
-LOAD3 SCEK02_002\x00\x1f\x04\x02 SCE_CMD 
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xba\x01 REF_END2 
+LOAD2 TextOn REF1 \xe8\x01 REF_END1 
+LOAD3 SCEK02_002\x00\x1f\x04\x02 REF_END2 
 DIALOGUE_1 \x0c\xa6\x01\x0c\x00\x00\x00\x00"\x03C\x00\x00
  
 　友達には不自由していないはずのゆきが声をかけてくるなんて、\n最初は新手の嫌がらせかと思えた。@
 しかし彼女の笑顔は、魚の小骨みたいに私の心の奥に引っかかっ\nて離れなかった。@
 本当に寂しそうな笑顔だった。@
 その日の夕方、私は自分からゆきを誘ったのだった。\w\z
-\x00\x00\x00 DIALOGUE_END H\x02
-SEQ02 \xba\x01 SEQ03 \xe8\x01 SEQ05 \xba\x01 SCE_CMD 
-LOAD3 TextClose OP02 \x9a\x03 OP_CMD 
+\x00\x00\x00 DIALOGUE_END H\x02 SEQ01
+\x1f\xba\x01 CALL3 \xe8\x01 CALL2 \xba\x01 REF_END2 
+LOAD3 TextClose REF2 \x9a\x03 REF_END1 
 END_FILE

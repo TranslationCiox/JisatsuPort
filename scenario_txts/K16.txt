@@ -1,18 +1,18 @@
 START_FILE
 \xc1\x11\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xc6\r\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1e<\x00 SEQ01
 
-LOAD6 .\\Data\\Script\\Bg.Fob OP03  \x00 SCE_CMD 
-LOAD4 BgAutoFadeIn OP03 J\x00 OP_CMD 
-LOAD3 SCEK16_001\x00\x1fn\x00 SCE_CMD 
+LOAD6 .\\Data\\Script\\Bg.Fob REF3  \x00 REF_END2 
+LOAD4 BgAutoFadeIn REF3 J\x00 REF_END1 
+LOAD3 SCEK16_001\x00\x1fn\x00 REF_END2 
 DIALOGUE_1 `\xb2\x01\x0c\x00\x00\x00\x00"\x03;\x00\x00
  
 語り終えた後、カンナは無言で、自らが作り出した沈黙のなかに\n沈み込んだ。@
 あるいは、彼女が沈み込んでいったのは、いま自らが言葉に変換\nして現出して見せた暗い闇の中なのかもしれない。@
 重い沈黙に耐えかねて、拓司が口を開いた。\w\z
 \x00\x00\x00 DIALOGUE_END \xb2\x00 SEQ01
-LOAD7 .\\Data\\Script\\TextFunc.Fob OP01 \xbe\x01 SCE_CMD 
-LOAD2 TextOn OP01 \xec\x01 OP_CMD 
-LOAD3 SCEK16_002\x00\x1f\x08\x02 SCE_CMD 
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xbe\x01 REF_END2 
+LOAD2 TextOn REF1 \xec\x01 REF_END1 
+LOAD3 SCEK16_002\x00\x1f\x08\x02 REF_END2 
 DIALOGUE_1 d\xb2\x01\x0c\x00\x00\x00\x00"\x03e\x00\x00
  
 拓司\n　「つまり、俺は、カンナなんだな？」@
@@ -23,9 +23,9 @@ DIALOGUE_1 d\xb2\x01\x0c\x00\x00\x00\x00"\x03e\x00\x00
 　　死を儀式化するとは……そういうことか？」@
 \nカンナは黙ったままだった。@
 ようやく口を開いたとき、カンナはなぜか自嘲気味の笑顔を口の\n端に浮かべていた。\w\z
-\x00 DIALOGUE_END L\x02
-SEQ02 \xbe\x01 SEQ03 \xec\x01 OP_CMD 
-LOAD3 SCEK16_003\x00\x1f\x1a\x04 SCE_CMD 
+\x00 DIALOGUE_END L\x02 SEQ01
+\x1f\xbe\x01 CALL3 \xec\x01 REF_END1 
+LOAD3 SCEK16_003\x00\x1f\x1a\x04 REF_END2 
 DIALOGUE_1 h\xb2\x01\x0c\x00\x00\x00\x00"\x03\x86\x00\x00
  
 カンナ\n　「……なんだか、違うものになってしまったみたい」@
@@ -33,9 +33,9 @@ DIALOGUE_1 h\xb2\x01\x0c\x00\x00\x00\x00"\x03\x86\x00\x00
 カンナ\n　「このことを誰かに話すのは初めて。@
 　　ずっと、このことは私のなかにあって、もう、数えられない\n　　リピートされて、現実以上にはっきりとした輪郭を持って\n　　た。\pどんな細かいディテールも逃すことなく、私のなかに刻\n　　み込まれていた。@
 　　このことは、もう私の一部分ではなくて、私がこのことの一\n　　部分で……なのに、なんだかこうやって話してみたら、全然\n　　違うものになってしまったみたい。\pすごく馬鹿げて聞こ\n　　える」\w\z
-\x00 DIALOGUE_END ^\x04
-SEQ02 \xbe\x01 SEQ03 \xec\x01 OP_CMD 
-LOAD3 SCEK16_004\x00\x1f\xb0\x06 SCE_CMD 
+\x00 DIALOGUE_END ^\x04 SEQ01
+\x1f\xbe\x01 CALL3 \xec\x01 REF_END1 
+LOAD3 SCEK16_004\x00\x1f\xb0\x06 REF_END2 
 DIALOGUE_1 l\xb2\x01\x0c\x00\x00\x00\x00"\x03\x88\x00\x00
  
 拓司\n　「……」@
@@ -45,9 +45,9 @@ DIALOGUE_1 l\xb2\x01\x0c\x00\x00\x00\x00"\x03\x88\x00\x00
 　　その程度。\pあなたはもう、私の手品にはつきあってくれない\n　　でしょう\p。観客がいなくちゃ、手品は成り立たない。@
 　　私は舞台にひとり残されてしまった」@
 \nカンナは両手をぱっと開いて見せて、おしまい、と繰り返した。\w\z
-\x00\x00\x00 DIALOGUE_END \xf4\x06
-SEQ02 \xbe\x01 SEQ03 \xec\x01 OP_CMD 
-LOAD3 SCEK16_005\x00\x1fN\t SCE_CMD 
+\x00\x00\x00 DIALOGUE_END \xf4\x06 SEQ01
+\x1f\xbe\x01 CALL3 \xec\x01 REF_END1 
+LOAD3 SCEK16_005\x00\x1fN\t REF_END2 
 DIALOGUE_1 p\xb2\x01\x0c\x00\x00\x00\x00"\x03x\x00\x00
  
 カンナ\n　「どうしてなのかしら。全然わからない」@
@@ -59,17 +59,17 @@ DIALOGUE_1 p\xb2\x01\x0c\x00\x00\x00\x00"\x03x\x00\x00
 カンナ\n　「ないわよ」@
 拓司\n　「今度貸してやる。\pうちに全巻あるから。\p愛蔵版で。@
 　　まとめて読めよ」\w\z
-\x00\x00\x00 DIALOGUE_END \x92\t
-SEQ02 \xbe\x01 SEQ03 \xec\x01 OP_CMD 
-LOAD3 SCEK16_006\x00\x1f\xac\x0b SCE_CMD 
+\x00\x00\x00 DIALOGUE_END \x92\t SEQ01
+\x1f\xbe\x01 CALL3 \xec\x01 REF_END1 
+LOAD3 SCEK16_006\x00\x1f\xac\x0b REF_END2 
 DIALOGUE_1 t\xb2\x01\x0c\x00\x00\x00\x00"\x03>\x00\x00
  
 カンナは信じられないものを見るような顔で拓司を見ていたが、\nやがてクスクスと笑いはじめた。@
 拓司は誰かの笑顔というものを、久しぶりに見たような気がした。\n\pそして、カンナの明るい笑顔というものを見たのは、これがほん\nとうに初めてだった。\w\z
-\x00\x00\x00 DIALOGUE_END \xf0\x0b
-SEQ02 \xbe\x01 SEQ03 \xec\x01 OP_CMD  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00
-SEQ02  \x00 SEQ03 J\x00 OP_CMD 
-LOAD6 .\\Data\\Script\\Bgm.Fob OP02 V\r SCE_CMD 
-LOAD2 StopCD OP01 \x80\r SEQ05 \xbe\x01 SCE_CMD 
-LOAD3 TextClose OP02 \xa8\r OP_CMD 
+\x00\x00\x00 DIALOGUE_END \xf0\x0b SEQ01
+\x1f\xbe\x01 CALL3 \xec\x01 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00 SEQ01
+\x1f \x00 CALL3 J\x00 REF_END1 
+LOAD6 .\\Data\\Script\\Bgm.Fob REF2 V\r REF_END2 
+LOAD2 StopCD REF1 \x80\r CALL2 \xbe\x01 REF_END2 
+LOAD3 TextClose REF2 \xa8\r REF_END1 
 END_FILE

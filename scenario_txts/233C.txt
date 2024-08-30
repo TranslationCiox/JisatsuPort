@@ -1,12 +1,12 @@
 START_FILE
 \x9b\x1f\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\n\x1a\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1e\n\x01 SEQ01
 
-LOAD6 .\\Data\\Script\\Bgm.Fob OP02  \x00 SCE_CMD 
-LOAD2 PlayCD OP01 J\x00 OP_CMD  \x1e\x00\x00\x00\x00\r\x00\x00\x1e+\x00 SEQ01
+LOAD6 .\\Data\\Script\\Bgm.Fob REF2  \x00 REF_END2 
+LOAD2 PlayCD REF1 J\x00 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e+\x00 SEQ01
 
-LOAD6 .\\Data\\Script\\Bg.Fob OP03 \x80\x00 SCE_CMD 
-LOAD4 BgAutoFadeIn OP03 \xaa\x00 OP_CMD 
-LOAD3 SCE233_001\x00\x1f\xce\x00 SCE_CMD 
+LOAD6 .\\Data\\Script\\Bg.Fob REF3 \x80\x00 REF_END2 
+LOAD4 BgAutoFadeIn REF3 \xaa\x00 REF_END1 
+LOAD3 SCE233_001\x00\x1f\xce\x00 REF_END2 
 DIALOGUE_1 \xb0{\x01\x0c\x00\x00\x00\x00"\x03_\x00\x00
  
 朝、拓司は一同を集めていった。@
@@ -19,9 +19,9 @@ DIALOGUE_1 \xb0{\x01\x0c\x00\x00\x00\x00"\x03_\x00\x00
 \n拓司\n　「わからない。\pたぶん……たぶん……」\
 
 \x00 DIALOGUE_END \x12\x01 SEQ01
-LOAD7 .\\Data\\Script\\TextFunc.Fob OP01 \xae\x02 SCE_CMD 
-LOAD2 TextOn OP01 \xdc\x02 OP_CMD 
-LOAD3 SCE233_002\x00\x1f\xf8\x02 SCE_CMD 
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xae\x02 REF_END2 
+LOAD2 TextOn REF1 \xdc\x02 REF_END1 
+LOAD3 SCE233_002\x00\x1f\xf8\x02 REF_END2 
 DIALOGUE_1 \xb4{\x01\x0c\x00\x00\x00\x00"\x03\x96\x00\x00
  
 カンナ\n　「－－殺すってこと？」@
@@ -35,9 +35,9 @@ DIALOGUE_1 \xb4{\x01\x0c\x00\x00\x00\x00"\x03\x96\x00\x00
 バケツから校庭に廃棄される……排泄物のように。@
 \n次にそうなるのは、自分かもしれないのだ。\
 
-\x00\x00\x00 DIALOGUE_END <\x03
-SEQ02 \xae\x02 SEQ03 \xdc\x02 OP_CMD 
-LOAD3 SCE233_003\x00\x1f\xce\x05 SCE_CMD 
+\x00\x00\x00 DIALOGUE_END <\x03 SEQ01
+\x1f\xae\x02 CALL3 \xdc\x02 REF_END1 
+LOAD3 SCE233_003\x00\x1f\xce\x05 REF_END2 
 DIALOGUE_1 \xb8{\x01\x0c\x00\x00\x00\x00"\x03\x8c\x00\x00
  
 紅葉\n　「でも……私たち４人がかりでかかっていったって、きっと御\n　　堂にはかなわないわ。\p錦城もいるし……。\pあいつら、鍵をか\n　　けて準備室に閉じこもってるから、不意打ちだってできない」\n\p拓司\n　「いや、チャンスはある」@
@@ -47,9 +47,9 @@ DIALOGUE_1 \xb8{\x01\x0c\x00\x00\x00\x00"\x03\x8c\x00\x00
 カンナ\n　「あらあら。\p自分ばっかりラクしようってわけ？」@
 \nカンナが冷たくいった。\p紅葉はキッとカンナをにらみつけた。\
 
-\x00 DIALOGUE_END \x12\x06
-SEQ02 \xae\x02 SEQ03 \xdc\x02 OP_CMD 
-LOAD3 SCE233_004\x00\x1f|\x08 SCE_CMD 
+\x00 DIALOGUE_END \x12\x06 SEQ01
+\x1f\xae\x02 CALL3 \xdc\x02 REF_END1 
+LOAD3 SCE233_004\x00\x1f|\x08 REF_END2 
 DIALOGUE_1 \xbc{\x01\x0c\x00\x00\x00\x00"\x03\xb2\x00\x00
  
 紅葉\n　「月代さん。\pあなたが私たちのために……その……犠牲になっ\n　　てくれたことは感謝してる。\pでも、だからって私が犠牲にな\n　　らなきゃならないっていうのは、おかしいんじゃない？」@
@@ -59,9 +59,9 @@ DIALOGUE_1 \xbc{\x01\x0c\x00\x00\x00\x00"\x03\xb2\x00\x00
 紅葉\n　「あたしは……絶対嫌！」@
 \n紅葉は髪の毛をかきむしっていった。\p声が徐々に大きくなる。\
 
-\x00\x00\x00 DIALOGUE_END \xc0\x08
-SEQ02 \xae\x02 SEQ03 \xdc\x02 OP_CMD 
-LOAD3 SCE233_005\x00\x1f\xc2\x0b SCE_CMD 
+\x00\x00\x00 DIALOGUE_END \xc0\x08 SEQ01
+\x1f\xae\x02 CALL3 \xdc\x02 REF_END1 
+LOAD3 SCE233_005\x00\x1f\xc2\x0b REF_END2 
 DIALOGUE_1 \xc0{\x01\x0c\x00\x00\x00\x00"\x03\xae\x00\x00
  
 紅葉\n　「あんなヤツらに身体を触らせるくらいなら、死んだ方がマシ\n　　！」@
@@ -72,9 +72,9 @@ DIALOGUE_1 \xc0{\x01\x0c\x00\x00\x00\x00"\x03\xae\x00\x00
 カンナ\n　「パニック映画に必ず１人はいるわよね、あなたみたいなキャ\n　　ラ。\p追いつめられるとヒステリー起こして、みんなの足を引\n　　っ張って、自分だけ助かろうとして。\pそういうキャラ、最後\n　　はどうなるか知ってる？\p　死ぬのよ。\pみっともなく死ぬの。@
 　　で、観客はみんなスーッとするって仕掛け」\
 
-\x00 DIALOGUE_END \x06\x0c
-SEQ02 \xae\x02 SEQ03 \xdc\x02 OP_CMD 
-LOAD3 SCE233_006\x00\x1f\xf8\x0e SCE_CMD 
+\x00 DIALOGUE_END \x06\x0c SEQ01
+\x1f\xae\x02 CALL3 \xdc\x02 REF_END1 
+LOAD3 SCE233_006\x00\x1f\xf8\x0e REF_END2 
 DIALOGUE_1 \xc4{\x01\x0c\x00\x00\x00\x00"\x03\x82\x00\x00
  
 見かねて拓司は間に入った。@
@@ -85,9 +85,9 @@ DIALOGUE_1 \xc4{\x01\x0c\x00\x00\x00\x00"\x03\x82\x00\x00
 紅葉\n　「拓司は、あたしが御堂にやられちゃうこと、どう思ってるわ\n　　け？」@
 拓司\n　「どう……って……」\
 
-\x00 DIALOGUE_END <\x0f
-SEQ02 \xae\x02 SEQ03 \xdc\x02 OP_CMD 
-LOAD3 SCE233_007\x00\x1f~\x11 SCE_CMD 
+\x00 DIALOGUE_END <\x0f SEQ01
+\x1f\xae\x02 CALL3 \xdc\x02 REF_END1 
+LOAD3 SCE233_007\x00\x1f~\x11 REF_END2 
 DIALOGUE_1 \xc8{\x01\x0c\x00\x00\x00\x00"\x03G\x00\x00
  
 紅葉\n　「なんとも思わないんだ？」@
@@ -95,9 +95,9 @@ DIALOGUE_1 \xc8{\x01\x0c\x00\x00\x00\x00"\x03G\x00\x00
 紅葉\n　「ムカつくって、なんで？\p　幼なじみだから？\p　罪もない女の\n　　子だから？\p　御堂が嫌いだから？」@
 拓司\n　「……どういう意味だ？」\
 
-\x00\x00\x00 DIALOGUE_END \xc2\x11
-SEQ02 \xae\x02 SEQ03 \xdc\x02 OP_CMD 
-LOAD3 SCE233_008\x00\x1f\x18\x13 SCE_CMD 
+\x00\x00\x00 DIALOGUE_END \xc2\x11 SEQ01
+\x1f\xae\x02 CALL3 \xdc\x02 REF_END1 
+LOAD3 SCE233_008\x00\x1f\x18\x13 REF_END2 
 DIALOGUE_1 \xcc{\x01\x0c\x00\x00\x00\x00"\x03\x95\x00\x00
  
 紅葉\n　「あたしは、あんたにとってなんなのかってことよ！\p　そりゃ、\n　　幼なじみがレイプされたらムカつくでしょうよ！\p　罪もない\n　　女の子がレイプされたらムカつくでしょうよ！\p　しかも相手\n　　は御堂！\p　そりゃ最高にムカつくでしょうよ！\p　でも……そ\n　　ういうことなの？\p　そういうことだからムカつくの？！@
@@ -106,9 +106,9 @@ DIALOGUE_1 \xcc{\x01\x0c\x00\x00\x00\x00"\x03\x95\x00\x00
 \n拓司\n　「……それは、いまは答えられない」@
 紅葉\n　「どうしてよ！」\
 
-\x00\x00\x00 DIALOGUE_END \\\x13
-SEQ02 \xae\x02 SEQ03 \xdc\x02 OP_CMD 
-LOAD3 SCE233_009\x00\x1f\xea\x15 SCE_CMD 
+\x00\x00\x00 DIALOGUE_END \\\x13 SEQ01
+\x1f\xae\x02 CALL3 \xdc\x02 REF_END1 
+LOAD3 SCE233_009\x00\x1f\xea\x15 REF_END2 
 DIALOGUE_1 \xd0{\x01\x0c\x00\x00\x00\x00"\x03n\x00\x00
  
 拓司\n　「答は決まっている。\p『お前は特別だ』と……おれはいう。@
@@ -118,22 +118,22 @@ DIALOGUE_1 \xd0{\x01\x0c\x00\x00\x00\x00"\x03n\x00\x00
 紅葉\n　「……」@
 \n誰も、何もいわなかった。\
 
-\x00 DIALOGUE_END .\x16
-SEQ02 \xae\x02 SEQ03 \xdc\x02 SEQ05  \x00 SCE_CMD 
-LOAD2 StopCD OP01 ,\x18 OP_CMD  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00
-SEQ02 \x80\x00 SEQ03 \xaa\x00 OP_CMD 
-LOAD3 SCE233_010\x00\x1f|\x18 SCE_CMD 
+\x00 DIALOGUE_END .\x16 SEQ01
+\x1f\xae\x02 CALL3 \xdc\x02 CALL2  \x00 REF_END2 
+LOAD2 StopCD REF1 ,\x18 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00 SEQ01
+\x1f\x80\x00 CALL3 \xaa\x00 REF_END1 
+LOAD3 SCE233_010\x00\x1f|\x18 REF_END2 
 DIALOGUE_1 \xd4{\x01\x0c\x00\x00\x00\x00"\x03\x0e\x00\x00
  
 その晩、紅葉は結局なにも答えずじまいだった。\
 
-\x00\x00\x00 DIALOGUE_END \xc0\x18
-SEQ02 \xae\x02 SEQ03 \xdc\x02 OP_CMD \x03\x1d\x00\x00
+\x00\x00\x00 DIALOGUE_END \xc0\x18 SEQ01
+\x1f\xae\x02 CALL3 \xdc\x02 REF_END1 \x03\x1d\x00\x00
 CHOICE
 しかし拓司は紅葉が協力してくれるはずだと信じていた\n拓司は、紅葉に頼るのは無理そうだ、と思った。\n\l0,2,
 ENDCHOICE
 
-\x00\x00\x00 DIALOGUE_END 2\x19
-SEQ02 \xae\x02 SEQ03 \xdc\x02 SEQ05 \xae\x02 SCE_CMD 
-LOAD3 TextClose OP02 \xec\x19 OP_CMD 
+\x00\x00\x00 DIALOGUE_END 2\x19 SEQ01
+\x1f\xae\x02 CALL3 \xdc\x02 CALL2 \xae\x02 REF_END2 
+LOAD3 TextClose REF2 \xec\x19 REF_END1 
 END_FILE

@@ -1,15 +1,15 @@
 START_FILE
 d\x03\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x80\x044\x01\x00\x00\x00h\x02\x00
-LOAD3 SCE004_001\x00\x1f\x06\x00 SCE_CMD 
-DIALOGUE_1 \xe0\x15 DIALOGUE_2 \x07\x00\x00.\\Data\\Script\\TextFunc.fob OP01 J\x00 SCE_CMD 
-LOAD6 CheckNormalMessageSkip OP01 x\x00 OP_CMD LOAD7 .\\Data\\Script\\TextFunc.Fob OP01 \xa4\x00 SCE_CMD LOAD5 TextWindowOffDirect\x1f\xd2\x00 OP_CMD  \x1e\x00\x00\x00\x00\r\x00\x00\x1e,\x01 SEQ01
+LOAD3 SCE004_001\x00\x1f\x06\x00 REF_END2 
+DIALOGUE_1 \xe0\x15 DIALOGUE_2 \x07\x00\x00.\\Data\\Script\\TextFunc.fob REF1 J\x00 REF_END2 
+LOAD6 CheckNormalMessageSkip REF1 x\x00 REF_END1 LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xa4\x00 REF_END2 LOAD5 TextWindowOffDirect\x1f\xd2\x00 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e,\x01 SEQ01
 
-LOAD6 .\\Data\\Script\\Bg.Fob OP03 \x14\x01 SCE_CMD 
-LOAD2 BgOn OP03 >\x01 OP_CMD  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x0b\x01 SEQ01
+LOAD6 .\\Data\\Script\\Bg.Fob REF3 \x14\x01 REF_END2 
+LOAD2 BgOn REF3 >\x01 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x0b\x01 SEQ01
 
-LOAD6 .\\Data\\Script\\Bgm.Fob OP02 t\x01 SCE_CMD 
-LOAD2 PlayCD OP01 \x9e\x01 SEQ05 J\x00 SCE_CMD 
-LOAD2 WaitKey\x1f\xc6\x01 SEQ05 t\x01 SCE_CMD 
-LOAD2 StopCD OP01 \xee\x01 SEQ05 \xa4\x00 SCE_CMD LOAD5 UpdateScenarioRead OP01 \x16\x02 SEQ05 \xa4\x00 SCE_CMD 
-LOAD3 TextClose OP02 J\x02 OP_CMD 
+LOAD6 .\\Data\\Script\\Bgm.Fob REF2 t\x01 REF_END2 
+LOAD2 PlayCD REF1 \x9e\x01 CALL2 J\x00 REF_END2 
+LOAD2 WaitKey\x1f\xc6\x01 CALL2 t\x01 REF_END2 
+LOAD2 StopCD REF1 \xee\x01 CALL2 \xa4\x00 REF_END2 LOAD5 UpdateScenarioRead REF1 \x16\x02 CALL2 \xa4\x00 REF_END2 
+LOAD3 TextClose REF2 J\x02 REF_END1 
 END_FILE

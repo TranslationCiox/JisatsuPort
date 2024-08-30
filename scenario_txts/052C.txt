@@ -1,9 +1,9 @@
 START_FILE
 \xbf'\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00Z!\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x0b\x01 SEQ01
 
-LOAD6 .\\Data\\Script\\Bgm.Fob OP02  \x00 SCE_CMD 
-LOAD2 PlayCD OP01 J\x00 OP_CMD 
-LOAD3 SCE052_001\x00\x1ff\x00 SCE_CMD 
+LOAD6 .\\Data\\Script\\Bgm.Fob REF2  \x00 REF_END2 
+LOAD2 PlayCD REF1 J\x00 REF_END1 
+LOAD3 SCE052_001\x00\x1ff\x00 REF_END2 
 DIALOGUE_1 \xe0` DIALOGUE_2 \xac\x00\x00
  
 　勢いよく扉を引き開けて、拓司は教室に躍り込んだ。@
@@ -21,9 +21,9 @@ DIALOGUE_1 \xe0` DIALOGUE_2 \xac\x00\x00
 早桃だ。\
 
 \x00 DIALOGUE_END \xaa\x00 SEQ01
-LOAD7 .\\Data\\Script\\TextFunc.Fob OP01 z\x03 SCE_CMD 
-LOAD2 TextOn OP01 \xa8\x03 OP_CMD 
-LOAD3 SCE052_002\x00\x1f\xc4\x03 SCE_CMD 
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 z\x03 REF_END2 
+LOAD2 TextOn REF1 \xa8\x03 REF_END1 
+LOAD3 SCE052_002\x00\x1f\xc4\x03 REF_END2 
 DIALOGUE_1 \xe4` DIALOGUE_2 ]\x00\x00
  
 早桃\n　「おにい……ちゃん？」@
@@ -35,9 +35,9 @@ DIALOGUE_1 \xe4` DIALOGUE_2 ]\x00\x00
 学生\n　「聞いたことある。\pアレだろ、ホントの兄妹じゃないって」@
 学生\n　「へえ、そうなんだ、へへ」\
 
-\x00\x00\x00 DIALOGUE_END \x08\x04
-SEQ02 z\x03 SEQ03 \xa8\x03 OP_CMD 
-LOAD3 SCE052_003\x00\x1f\xb6\x05 SCE_CMD 
+\x00\x00\x00 DIALOGUE_END \x08\x04 SEQ01
+\x1fz\x03 CALL3 \xa8\x03 REF_END1 
+LOAD3 SCE052_003\x00\x1f\xb6\x05 REF_END2 
 DIALOGUE_1 \xe8` DIALOGUE_2 l\x00\x00
  
 拓司は呆気にとられた。@
@@ -51,9 +51,9 @@ DIALOGUE_1 \xe8` DIALOGUE_2 l\x00\x00
 \n学生\n　「教員ン？」@
 \nひとりが素っ頓狂な声を上げると、他の者がゲラゲラと笑い声で\n応えた。\
 
-\x00\x00\x00 DIALOGUE_END \xfa\x05
-SEQ02 z\x03 SEQ03 \xa8\x03 OP_CMD 
-LOAD3 SCE052_004\x00\x1f\xe4\x07 SCE_CMD 
+\x00\x00\x00 DIALOGUE_END \xfa\x05 SEQ01
+\x1fz\x03 CALL3 \xa8\x03 REF_END1 
+LOAD3 SCE052_004\x00\x1f\xe4\x07 REF_END2 
 DIALOGUE_1 \xec` DIALOGUE_2 {\x00\x00
  
 学生\n　「飛ばせたよ」@
@@ -67,9 +67,9 @@ DIALOGUE_1 \xec` DIALOGUE_2 {\x00\x00
 　　どんよりしちゃってるんだよ、このクラス。@
 　　そんなところで勉強とか青春なんて前向きにやってられるか？\n　　\pやれねえんだよ！」\
 
-\x00\x00\x00 DIALOGUE_END (\x08
-SEQ02 z\x03 SEQ03 \xa8\x03 OP_CMD 
-LOAD3 SCE052_005\x00\x1fN\n SCE_CMD 
+\x00\x00\x00 DIALOGUE_END (\x08 SEQ01
+\x1fz\x03 CALL3 \xa8\x03 REF_END1 
+LOAD3 SCE052_005\x00\x1fN\n REF_END2 
 DIALOGUE_1 \xf0` DIALOGUE_2 \x96\x00\x00
  
 学生は机をガン、と足でけ飛ばした。@
@@ -86,9 +86,9 @@ DIALOGUE_1 \xf0` DIALOGUE_2 \x96\x00\x00
 　　そんなの、バレバレだよ！@
 　　俺たちゃアホじゃねえっつーんだよッ！」\
 
-\x00 DIALOGUE_END \x92\n
-SEQ02 z\x03 SEQ03 \xa8\x03 OP_CMD 
-LOAD3 SCE052_006\x00\x1f$\r SCE_CMD 
+\x00 DIALOGUE_END \x92\n SEQ01
+\x1fz\x03 CALL3 \xa8\x03 REF_END1 
+LOAD3 SCE052_006\x00\x1f$\r REF_END2 
 DIALOGUE_1 \xf4` DIALOGUE_2 \x93\x00\x00
  
 拓司\n　「オイ、落ち着け！\p　いったいどうしたって－－」@
@@ -102,9 +102,9 @@ DIALOGUE_1 \xf4` DIALOGUE_2 \x93\x00\x00
 　　否定して、断罪した！\p　泣いてたよ、あいつ。@
 　　泣いてごめんなさいごめんなさいっていって、窓まで走って\n　　いって、そのままトップロープ越えのトペ・スイシーダだよ！\n　　\pで、今度は虎菱の番ってわけだ！」\
 
-\x00 DIALOGUE_END h\r
-SEQ02 z\x03 SEQ03 \xa8\x03 OP_CMD 
-LOAD3 SCE052_007\x00\x1f\xee\x0f SCE_CMD 
+\x00 DIALOGUE_END h\r SEQ01
+\x1fz\x03 CALL3 \xa8\x03 REF_END1 
+LOAD3 SCE052_007\x00\x1f\xee\x0f REF_END2 
 DIALOGUE_1 \xf8` DIALOGUE_2 \x90\x00\x00
  
 円陣の中央で、早桃がびくっと身をすくめる。@
@@ -120,9 +120,9 @@ DIALOGUE_1 \xf8` DIALOGUE_2 \x90\x00\x00
 \n拓司は一喝した。@
 しかし、早桃の言葉が、次の言葉をさえぎった。\
 
-\x00\x00\x00 DIALOGUE_END 2\x10
-SEQ02 z\x03 SEQ03 \xa8\x03 OP_CMD 
-LOAD3 SCE052_008\x00\x1f\xac\x12 SCE_CMD 
+\x00\x00\x00 DIALOGUE_END 2\x10 SEQ01
+\x1fz\x03 CALL3 \xa8\x03 REF_END1 
+LOAD3 SCE052_008\x00\x1f\xac\x12 REF_END2 
 DIALOGUE_1 \xfc` DIALOGUE_2 f\x00\x00
  
 早桃\n　「しかたないよ……\p早桃が悪いんだからしかたがないよ」@
@@ -136,9 +136,9 @@ DIALOGUE_1 \xfc` DIALOGUE_2 f\x00\x00
 有罪、有罪、有罪！@
 有罪、有罪、有罪！\
 
-\x00 DIALOGUE_END \xf0\x12
-SEQ02 z\x03 SEQ03 \xa8\x03 OP_CMD 
-LOAD3 SCE052_009\x00\x1f\xc2\x14 SCE_CMD 
+\x00 DIALOGUE_END \xf0\x12 SEQ01
+\x1fz\x03 CALL3 \xa8\x03 REF_END1 
+LOAD3 SCE052_009\x00\x1f\xc2\x14 REF_END2 
 DIALOGUE_1 \x00a DIALOGUE_2 %\x00\x00
  
 誰かが「死ね」といった。@
@@ -148,9 +148,9 @@ DIALOGUE_1 \x00a DIALOGUE_2 %\x00\x00
 学生\n　「死ねよ」@
 学生\n　「死ねよ」\
 
-\x00\x00\x00 DIALOGUE_END \x06\x15
-SEQ02 z\x03 SEQ03 \xa8\x03 OP_CMD 
-LOAD3 SCE052_010\x00\x1f\xd4\x15 SCE_CMD 
+\x00\x00\x00 DIALOGUE_END \x06\x15 SEQ01
+\x1fz\x03 CALL3 \xa8\x03 REF_END1 
+LOAD3 SCE052_010\x00\x1f\xd4\x15 REF_END2 
 DIALOGUE_1 \x04a DIALOGUE_2 \x96\x00\x00
  
 　死ねよ、死ねよ、死ねよ、死ねよ、死ねよ、死ねよ、死ねよ、\n　死ねよ、死ねよ、死ねよ\n　死ね死ね死ね死ね死ね死ね死ね死ね死ね死ね死ね死ね死ね死ね\n　死ね死ね死ね\n　シネシネシネシネシシネシネシネシネシネシネシネシネシネシ\n　ネシネシネシネシネシネ\n　学生たちの声は、大合唱となって教室にとどろき渡った。@
@@ -160,9 +160,9 @@ DIALOGUE_1 \x04a DIALOGUE_2 \x96\x00\x00
 　ネ……足を踏み降ろす。@
 \n　シネシネシネシネシシネシネシネシネシネシネシネシネシネシ\nネシネシネシネシネシネ\n　ドンガドンガドンガドンドンガドンガドンガドンガドンガドン\nガドンガドンガドンガドンガドンガ\
 
-\x00 DIALOGUE_END \x18\x16
-SEQ02 z\x03 SEQ03 \xa8\x03 OP_CMD 
-LOAD3 SCE052_011\x00\x1f\xaa\x18 SCE_CMD 
+\x00 DIALOGUE_END \x18\x16 SEQ01
+\x1fz\x03 CALL3 \xa8\x03 REF_END1 
+LOAD3 SCE052_011\x00\x1f\xaa\x18 REF_END2 
 DIALOGUE_1 \x08a DIALOGUE_2 \xb4\x00\x00
  
 　足を踏みならす音は太鼓のリズムで、合唱は呪文の詠唱だった。@
@@ -176,10 +176,10 @@ DIALOGUE_1 \x08a DIALOGUE_2 \xb4\x00\x00
 　耐えられるはずがない。\p早桃は円陣の中央で耳を覆い、しゃ\n　がみこんでしまった。@
 \n早桃\n　「ごめんなさい……ごめんなさい……ごめんなさい……」\
 
-\x00\x00\x00 DIALOGUE_END \xee\x18
-SEQ02 z\x03 SEQ03 \xa8\x03 OP_CMD  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\n\x01
-SEQ02  \x00 SEQ03 J\x00 OP_CMD 
-LOAD3 SCE052_012\x00\x1f,\x1c SCE_CMD 
+\x00\x00\x00 DIALOGUE_END \xee\x18 SEQ01
+\x1fz\x03 CALL3 \xa8\x03 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\n\x01 SEQ01
+\x1f \x00 CALL3 J\x00 REF_END1 
+LOAD3 SCE052_012\x00\x1f,\x1c REF_END2 
 DIALOGUE_1 \x0ca DIALOGUE_2 \x9b\x00\x00
  
 猛烈な怒りに突き動かされて、拓司は円陣のなかへと躍り込んだ。@
@@ -191,9 +191,9 @@ DIALOGUE_1 \x0ca DIALOGUE_2 \x9b\x00\x00
 胸が押さえつけられて、息すらできない。いつのまにやられたの\nか、鼻から血がだくだくとあふれ出る。@
 視界が奇妙な色で明滅する。\
 
-\x00 DIALOGUE_END p\x1c
-SEQ02 z\x03 SEQ03 \xa8\x03 OP_CMD 
-LOAD3 SCE052_013\x00\x1f\x16\x1f SCE_CMD 
+\x00 DIALOGUE_END p\x1c SEQ01
+\x1fz\x03 CALL3 \xa8\x03 REF_END1 
+LOAD3 SCE052_013\x00\x1f\x16\x1f REF_END2 
 DIALOGUE_1 \x10a DIALOGUE_2 g\x00\x00
  
 　興奮した声、声、声が、教室中を行き交っている。@
@@ -202,7 +202,7 @@ DIALOGUE_1 \x10a DIALOGUE_2 g\x00\x00
 /*■黒　表示（ノンエフェクト）.*/\a7,-1,-1,0,\a0,200,1,0,\a6,0,0,0,/*▲BGM　停止*/\a4,-1,0,0,　やがて潮が引くように、声が収まっていった。@
 　静寂の中、バットが振り下ろされた。\
 
-\x00\x00 DIALOGUE_END Z\x1f
-SEQ02 z\x03 SEQ03 \xa8\x03 SEQ05 z\x03 SCE_CMD 
-LOAD3 TextClose OP02 <! OP_CMD 
+\x00\x00 DIALOGUE_END Z\x1f SEQ01
+\x1fz\x03 CALL3 \xa8\x03 CALL2 z\x03 REF_END2 
+LOAD3 TextClose REF2 <! REF_END1 
 END_FILE

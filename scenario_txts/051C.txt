@@ -1,11 +1,11 @@
 START_FILE
 \xdc\x07\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00(\x06\x00
-LOAD3 SCE051_001\x00\x1f\x06\x00 SCE_CMD 
-DIALOGUE_1 P_\x00\x0c\x00\x00\x00\x00" \x1e\x00\x00\x00\x00\r\x00 SCE_CMD \x0c\x02\x00\x00" \x1e\x04\x00\x00\r\x00\x00\x1e\x1a\x00 SEQ01
+LOAD3 SCE051_001\x00\x1f\x06\x00 REF_END2 
+DIALOGUE_1 P_\x00\x0c\x00\x00\x00\x00" \x1e\x00\x00\x00\x00\r\x00 REF_END2 \x0c\x02\x00\x00" \x1e\x04\x00\x00\r\x00\x00\x1e\x1a\x00 SEQ01
  \x1e\x08\x00\x00\r\x00\x00\x1e\x01\x00 SEQ01
 
-LOAD6 .\\Data\\Script\\Bgm.Fob OP02 \x98\x00 SCE_CMD 
-LOAD2 SePlay OP01 \xc2\x00 OP_CMD \x03\xa2\x00\x00
+LOAD6 .\\Data\\Script\\Bgm.Fob REF2 \x98\x00 REF_END2 
+LOAD2 SePlay REF1 \xc2\x00 REF_END1 \x03\xa2\x00\x00
  
 　静まり返った廊下に、拓司たちの足音が響く。@
 　ときおり、通り過ぎる教室からなにか激しい音が……机のひっ\n　くり返る音や、なにかを叫んでいる声が……聞こえるが、もう\n　中を覗く気などおきなかった。@
@@ -19,22 +19,22 @@ LOAD2 SePlay OP01 \xc2\x00 OP_CMD \x03\xa2\x00\x00
 　焦りと不安が、なたねへの怒りへと転嫁されて、ふつふつと胸\n　の中で煮えたぎっていた。\
 
 \x00 DIALOGUE_END \xde\x00 SEQ01
-LOAD7 .\\Data\\Script\\TextFunc.Fob OP01 \x86\x03 SCE_CMD 
-LOAD2 TextOn OP01 \xb4\x03 OP_CMD 
-LOAD3 SCE051_002\x00\x1f\xd0\x03 SCE_CMD 
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \x86\x03 REF_END2 
+LOAD2 TextOn REF1 \xb4\x03 REF_END1 
+LOAD3 SCE051_002\x00\x1f\xd0\x03 REF_END2 
 DIALOGUE_1 T_ DIALOGUE_2 -\x00\x00
  
 なたね\n　「……教室に入る前に……なかを確かめて！　そうしないと危\n　　険だわ！」@
 \nそんな声を背中に聞きながら、拓司は駆けた。\p早桃の教室まで、\nあっという間だった。\
 
-\x00 DIALOGUE_END \x14\x04
-SEQ02 \x86\x03 SEQ03 \xb4\x03 OP_CMD  \x1e\x00\x00\x00\x00\r\x00 SCE_CMD \x0c\x02\x00\x00"\x1f\x98\x00 SCE_CMD 
-LOAD2 SeStop OP01 (\x05 OP_CMD \x03 \x00\x00
+\x00 DIALOGUE_END \x14\x04 SEQ01
+\x1f\x86\x03 CALL3 \xb4\x03 REF_END1  \x1e\x00\x00\x00\x00\r\x00 REF_END2 \x0c\x02\x00\x00"\x1f\x98\x00 REF_END2 
+LOAD2 SeStop REF1 (\x05 REF_END1 \x03 \x00\x00
 CHOICE
 一刻も待てない。拓司はその勢いのまま、教室に躍り込んだ。\n拓司はなたねの警告に従って、そっと中をのぞき込んだ。\n\l0,2,
 ENDCHOICE
 
-\x00 DIALOGUE_END D\x05
-SEQ02 \x86\x03 SEQ03 \xb4\x03 SEQ05 \x86\x03 SCE_CMD 
-LOAD3 TextClose OP02 \n\x06 OP_CMD 
+\x00 DIALOGUE_END D\x05 SEQ01
+\x1f\x86\x03 CALL3 \xb4\x03 CALL2 \x86\x03 REF_END2 
+LOAD3 TextClose REF2 \n\x06 REF_END1 
 END_FILE

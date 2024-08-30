@@ -1,9 +1,9 @@
 START_FILE
 \x97\r\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00:\x0b\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1e\t\x01 SEQ01
 
-LOAD6 .\\Data\\Script\\Bgm.Fob OP02  \x00 SCE_CMD 
-LOAD2 PlayCD OP01 J\x00 OP_CMD 
-LOAD3 SCE034_001\x00\x1ff\x00 SCE_CMD 
+LOAD6 .\\Data\\Script\\Bgm.Fob REF2  \x00 REF_END2 
+LOAD2 PlayCD REF1 J\x00 REF_END1 
+LOAD3 SCE034_001\x00\x1ff\x00 REF_END2 
 DIALOGUE_1 \xc0D DIALOGUE_2 \xb1\x00\x00
  
 　４階。\p賑やかな教室。\pドアは開け放たれている。@
@@ -20,9 +20,9 @@ DIALOGUE_1 \xc0D DIALOGUE_2 \xb1\x00\x00
 \n　賑やかで温かい教室の空気から、早桃の姿だけが浮き上がって\n見えた。\
 
 \x00 DIALOGUE_END \xaa\x00 SEQ01
-LOAD7 .\\Data\\Script\\TextFunc.Fob OP01 \x8e\x03 SCE_CMD 
-LOAD2 TextOn OP01 \xbc\x03 OP_CMD 
-LOAD3 SCE034_002\x00\x1f\xd8\x03 SCE_CMD 
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \x8e\x03 REF_END2 
+LOAD2 TextOn REF1 \xbc\x03 REF_END1 
+LOAD3 SCE034_002\x00\x1f\xd8\x03 REF_END2 
 DIALOGUE_1 \xc4D DIALOGUE_2 y\x00\x00
  
 　まるでそこに何か大切なものがあるかのように……@
@@ -36,9 +36,9 @@ DIALOGUE_1 \xc4D DIALOGUE_2 y\x00\x00
 \n早桃\n　「あの……\pどうしたの？」@
 拓司\n　「いや。\pたまには一緒に飯でも食おうかと思ってさ」\
 
-\x00 DIALOGUE_END \x1c\x04
-SEQ02 \x8e\x03 SEQ03 \xbc\x03 OP_CMD 
-LOAD3 SCE034_003\x00\x1f:\x06 SCE_CMD 
+\x00 DIALOGUE_END \x1c\x04 SEQ01
+\x1f\x8e\x03 CALL3 \xbc\x03 REF_END1 
+LOAD3 SCE034_003\x00\x1f:\x06 REF_END2 
 DIALOGUE_1 \xc8D DIALOGUE_2 \\\x00\x00
  
 早桃\n　「どうして？」@
@@ -49,9 +49,9 @@ DIALOGUE_1 \xc8D DIALOGUE_2 \\\x00\x00
 女子学生\n　「うぜえよ」@
 \n　そんな声が、時折やや大きめに漏れ聞こえる。\n　早桃は必死にそれに気づかない振りをしているが、声が聞こえ\nるたび、目の中に怯えと恥じらいの影がゆらぐ。\
 
-\x00 DIALOGUE_END ~\x06
-SEQ02 \x8e\x03 SEQ03 \xbc\x03 OP_CMD 
-LOAD3 SCE034_004\x00\x1f(\x08 SCE_CMD 
+\x00 DIALOGUE_END ~\x06 SEQ01
+\x1f\x8e\x03 CALL3 \xbc\x03 REF_END1 
+LOAD3 SCE034_004\x00\x1f(\x08 REF_END2 
 DIALOGUE_1 \xccD DIALOGUE_2 T\x00\x00
  
 　早桃がクラスで孤立しているということはなんとなく把握して\nいるつもりだった。@
@@ -62,16 +62,16 @@ DIALOGUE_1 \xccD DIALOGUE_2 T\x00\x00
 拓司\n　「まだ……食べてない」@
 早桃\n　「わけてあげよっか？」\
 
-\x00\x00\x00 DIALOGUE_END l\x08
-SEQ02 \x8e\x03 SEQ03 \xbc\x03 OP_CMD 
-LOAD3 SCE034_005\x00\x1f\xf6\t SCE_CMD 
+\x00\x00\x00 DIALOGUE_END l\x08 SEQ01
+\x1f\x8e\x03 CALL3 \xbc\x03 REF_END1 
+LOAD3 SCE034_005\x00\x1f\xf6\t REF_END2 
 DIALOGUE_1 \xd0D DIALOGUE_2 '\x00\x00
  
 拓司\n　「……え？」@
 早桃\n　「これ。\pほとんど口つけてないから」@
 \n　そういって早桃は、ひとかじりしただけのコッペパンを軽く振\nってみせた。\
 
-\x00 DIALOGUE_END :\n
-SEQ02 \x8e\x03 SEQ03 \xbc\x03 SEQ05 \x8e\x03 SCE_CMD 
-LOAD3 TextClose OP02 \x1c\x0b OP_CMD 
+\x00 DIALOGUE_END :\n SEQ01
+\x1f\x8e\x03 CALL3 \xbc\x03 CALL2 \x8e\x03 REF_END2 
+LOAD3 TextClose REF2 \x1c\x0b REF_END1 
 END_FILE

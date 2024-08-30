@@ -1,9 +1,9 @@
 START_FILE
 \x00\x07\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xf8\x05\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x05\x01 SEQ01
 
-LOAD6 .\\Data\\Script\\Bgm.Fob OP02  \x00 SCE_CMD 
-LOAD2 PlayCD OP01 J\x00 OP_CMD 
-LOAD3 SCEG03_003\x00\x1ff\x00 SCE_CMD 
+LOAD6 .\\Data\\Script\\Bgm.Fob REF2  \x00 REF_END2 
+LOAD2 PlayCD REF1 J\x00 REF_END1 
+LOAD3 SCEG03_003\x00\x1ff\x00 REF_END2 
 DIALOGUE_1 x\xc5\x01\x0c\x00\x00\x00\x00"\x03L\x00\x00
  
 　拓司の股間をゆっくりとなで回しながらいう。@
@@ -11,12 +11,12 @@ DIALOGUE_1 x\xc5\x01\x0c\x00\x00\x00\x00"\x03L\x00\x00
 カチリ、という音を立ててジッパーの先をくわえ、器用にそれを\n開いていく。@
 \n錦城\n　「静かに……静かにね。\p他の子が目を覚まさないように……\n　　私たちだけの秘密だから……」\w\z
 \x00\x00\x00 DIALOGUE_END \xaa\x00 SEQ01
-LOAD7 .\\Data\\Script\\TextFunc.Fob OP01 \xfa\x01 SCE_CMD 
-LOAD2 TextOn OP01 (\x02 OP_CMD  \x1e\x00\x00\x00\x00\r\x00\x00\x1e_\x00 SEQ01
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xfa\x01 REF_END2 
+LOAD2 TextOn REF1 (\x02 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e_\x00 SEQ01
 
-LOAD6 .\\Data\\Script\\Bg.Fob OP03 ^\x02 SCE_CMD 
-LOAD4 BgAutoFadeIn OP03 \x88\x02 OP_CMD 
-LOAD3 SCEG03_004\x00\x1f\xac\x02 SCE_CMD 
+LOAD6 .\\Data\\Script\\Bg.Fob REF3 ^\x02 REF_END2 
+LOAD4 BgAutoFadeIn REF3 \x88\x02 REF_END1 
+LOAD3 SCEG03_004\x00\x1f\xac\x02 REF_END2 
 DIALOGUE_1 |\xc5\x01\x0c\x00\x00\x00\x00"\x03\x92\x00\x00
  
 　錦城は顔を拓司の股間に埋めて、口だけを使ってペ○スを引き\nずり出した。@
@@ -28,9 +28,9 @@ DIALOGUE_1 |\xc5\x01\x0c\x00\x00\x00\x00"\x03\x92\x00\x00
 　　いやらしい匂い。\pこんなものを先生に舐めさせるなんて……@
 　　興奮するでしょう？\p　どんな味がするか……わかる？@
 　　いってあげましょうか、あなたのおち○ちんの味？」\w\z
-\x00\x00\x00 DIALOGUE_END \xf0\x02
-SEQ02 \xfa\x01 SEQ03 (\x02 OP_CMD  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00
-SEQ02 ^\x02 SEQ03 \x88\x02 SEQ05  \x00 SCE_CMD 
-LOAD2 StopCD OP01 \xb2\x05 SEQ05 \xfa\x01 SCE_CMD 
-LOAD3 TextClose OP02 \xda\x05 OP_CMD 
+\x00\x00\x00 DIALOGUE_END \xf0\x02 SEQ01
+\x1f\xfa\x01 CALL3 (\x02 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00 SEQ01
+\x1f^\x02 CALL3 \x88\x02 CALL2  \x00 REF_END2 
+LOAD2 StopCD REF1 \xb2\x05 CALL2 \xfa\x01 REF_END2 
+LOAD3 TextClose REF2 \xda\x05 REF_END1 
 END_FILE

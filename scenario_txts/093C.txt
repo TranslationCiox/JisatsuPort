@@ -1,9 +1,9 @@
 START_FILE
 \x1a\x10\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xaa\r\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1e\t\x01 SEQ01
 
-LOAD6 .\\Data\\Script\\Bgm.Fob OP02  \x00 SCE_CMD 
-LOAD2 PlayCD OP01 J\x00 OP_CMD 
-LOAD3 SCE093_001\x00\x1ff\x00 SCE_CMD 
+LOAD6 .\\Data\\Script\\Bgm.Fob REF2  \x00 REF_END2 
+LOAD2 PlayCD REF1 J\x00 REF_END1 
+LOAD3 SCE093_001\x00\x1ff\x00 REF_END2 
 DIALOGUE_1 \xf0\xa0 DIALOGUE_2 N\x00\x00
  
 拓司\n　「それでも、何日持つのかはハッキリさせて欲しい」@
@@ -13,9 +13,9 @@ DIALOGUE_1 \xf0\xa0 DIALOGUE_2 N\x00\x00
 拓司\n　「それは……」@
 \n拓司は絶句した。\w\z
 \x00\x00\x00 DIALOGUE_END \xaa\x00 SEQ01
-LOAD7 .\\Data\\Script\\TextFunc.Fob OP01 \x02\x02 SCE_CMD 
-LOAD2 TextOn OP01 0\x02 OP_CMD 
-LOAD3 SCE093_002\x00\x1fL\x02 SCE_CMD 
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \x02\x02 REF_END2 
+LOAD2 TextOn REF1 0\x02 REF_END1 
+LOAD3 SCE093_002\x00\x1fL\x02 REF_END2 
 DIALOGUE_1 \xf4\xa0 DIALOGUE_2 \x82\x00\x00
  
 拓司\n　「……１年分あれば……まあ……安心はできるんじゃないか？」\n\pなたね\n　「その根拠は？　最終波動がいつやってくるのか予想不可能な\n　　現状において、どうして１年の備蓄が『安心』を与えるんで\n　　すか？」@
@@ -25,9 +25,9 @@ DIALOGUE_1 \xf4\xa0 DIALOGUE_2 \x82\x00\x00
 　　よかったですね、みなさん」@
 \nなたねは薄笑いを浮かべながらいった。@
 カンナがそれに反応した。\w\z
-\x00 DIALOGUE_END \x90\x02
-SEQ02 \x02\x02 SEQ03 0\x02 OP_CMD 
-LOAD3 SCE093_003\x00\x1f\xd2\x04 SCE_CMD 
+\x00 DIALOGUE_END \x90\x02 SEQ01
+\x1f\x02\x02 CALL3 0\x02 REF_END1 
+LOAD3 SCE093_003\x00\x1f\xd2\x04 REF_END2 
 DIALOGUE_1 \xf8\xa0 DIALOGUE_2 \x9d\x00\x00
  
 カンナ\n　「そのいいかたは……どうなのかしら、雲居さん？」@
@@ -38,9 +38,9 @@ DIALOGUE_1 \xf8\xa0 DIALOGUE_2 \x9d\x00\x00
 なたね\n　「文句なんて言ってません」@
 カンナ\n　「さっきのいい方は、そうとられてもおかしくないでしょう！」\n\p拓司\n　「待て！　言い争いはやめよう！」@
 \n拓司が間に入ることで、カンナとなたねは引き離されたが、あと\nには気まずい空気が残っている。\w\z
-\x00 DIALOGUE_END \x16\x05
-SEQ02 \x02\x02 SEQ03 0\x02 OP_CMD 
-LOAD3 SCE093_004\x00\x1f\xc4\x07 SCE_CMD 
+\x00 DIALOGUE_END \x16\x05 SEQ01
+\x1f\x02\x02 CALL3 0\x02 REF_END1 
+LOAD3 SCE093_004\x00\x1f\xc4\x07 REF_END2 
 DIALOGUE_1 \xfc\xa0 DIALOGUE_2 \xae\x00\x00
  
 なたね\n　「……はっきりさせておきたいんですけど」@
@@ -55,9 +55,9 @@ DIALOGUE_1 \xfc\xa0 DIALOGUE_2 \xae\x00\x00
 　　できないんじゃないですか？@
 　　　みなさんは私を信じるしかないんですよ。@
 　　いつもいつも散々ウソつき呼ばわりしてきたバカタレどもが\n　　私を信じるしか！　くすくすくすくす」\w\z
-\x00 DIALOGUE_END \x08\x08
-SEQ02 \x02\x02 SEQ03 0\x02 OP_CMD 
-LOAD3 SCE093_005\x00\x1f\xfa\n SCE_CMD 
+\x00 DIALOGUE_END \x08\x08 SEQ01
+\x1f\x02\x02 CALL3 0\x02 REF_END1 
+LOAD3 SCE093_005\x00\x1f\xfa\n REF_END2 
 DIALOGUE_1 \x00\xa1 DIALOGUE_2 ^\x00\x00
  
 カンナがなにかをいいかけた。@
@@ -68,11 +68,11 @@ DIALOGUE_1 \x00\xa1 DIALOGUE_2 ^\x00\x00
 カンナ\n　「……」@
 なたね\n　「……惜しい！　いま、ちょっとだけ母船からきてたのに！@
 　　あなたたちが余計なことをいうから聞き逃してしまったでし\n　　ょうが！\p　ああ、惜しい！\p　惜しかったなあ！」\w\z
-\x00 DIALOGUE_END >\x0b
-SEQ02 \x02\x02 SEQ03 0\x02 OP_CMD  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00 SEQ01
+\x00 DIALOGUE_END >\x0b SEQ01
+\x1f\x02\x02 CALL3 0\x02 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00 SEQ01
 
-LOAD6 .\\Data\\Script\\Bg.Fob OP03 \n\r SCE_CMD 
-LOAD4 BgAutoFadeIn OP03 4\r SEQ05  \x00 SCE_CMD 
-LOAD2 StopCD OP01 d\r SEQ05 \x02\x02 SCE_CMD 
-LOAD3 TextClose OP02 \x8c\r OP_CMD 
+LOAD6 .\\Data\\Script\\Bg.Fob REF3 \n\r REF_END2 
+LOAD4 BgAutoFadeIn REF3 4\r CALL2  \x00 REF_END2 
+LOAD2 StopCD REF1 d\r CALL2 \x02\x02 REF_END2 
+LOAD3 TextClose REF2 \x8c\r REF_END1 
 END_FILE

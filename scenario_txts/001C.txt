@@ -1,14 +1,14 @@
 START_FILE
 \x10\x06\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xa4\t3\x01\x00\x00\x00&\x05\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00 SEQ01
 
-LOAD6 .\\Data\\Script\\Bg.Fob OP03  \x00 SCE_CMD 
-LOAD4 BgNormalFadeIn OP01 J\x00 OP_CMD  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00
-SEQ02  \x00 SCE_CMD 
-LOAD2 BgOn OP03 \x94\x00 OP_CMD  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\t\x01 SEQ01
+LOAD6 .\\Data\\Script\\Bg.Fob REF3  \x00 REF_END2 
+LOAD4 BgNormalFadeIn REF1 J\x00 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00 SEQ01
+\x1f \x00 REF_END2 
+LOAD2 BgOn REF3 \x94\x00 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\t\x01 SEQ01
 
-LOAD6 .\\Data\\Script\\Bgm.Fob OP02 \xca\x00 SCE_CMD 
-LOAD2 PlayCD OP01 \xf4\x00 OP_CMD 
-LOAD3 SCE001_001\x00\x1f\x10\x01 SCE_CMD 
+LOAD6 .\\Data\\Script\\Bgm.Fob REF2 \xca\x00 REF_END2 
+LOAD2 PlayCD REF1 \xf4\x00 REF_END1 
+LOAD3 SCE001_001\x00\x1f\x10\x01 REF_END2 
 DIALOGUE_1 0\x11 DIALOGUE_2 O\x00\x00
  
 世界。@
@@ -24,9 +24,9 @@ DIALOGUE_1 0\x11 DIALOGUE_2 O\x00\x00
 きの世に義界はるなよっにて定でか？\
 
 \x00\x00\x00 DIALOGUE_END T\x01 SEQ01
-LOAD7 .\\Data\\Script\\TextFunc.Fob OP01 \xb0\x02 SCE_CMD 
-LOAD2 TextOn OP01 \xde\x02 OP_CMD 
-LOAD3 SCE001_002\x00\x1f\xfa\x02 SCE_CMD 
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xb0\x02 REF_END2 
+LOAD2 TextOn REF1 \xde\x02 REF_END1 
+LOAD3 SCE001_002\x00\x1f\xfa\x02 REF_END2 
 DIALOGUE_1 4\x11 DIALOGUE_2 a\x00\x00
  
 頭にぼんやりと薄い霧がかかっている。@
@@ -39,7 +39,7 @@ DIALOGUE_1 4\x11 DIALOGUE_2 a\x00\x00
 さらにたとえば……なにか？@
 なにか？\
 
-\x00\x00\x00 DIALOGUE_END >\x03
-SEQ02 \xb0\x02 SEQ03 \xde\x02 SEQ05 \xb0\x02 SCE_CMD 
-LOAD3 TextClose OP02 \x08\x05 OP_CMD 
+\x00\x00\x00 DIALOGUE_END >\x03 SEQ01
+\x1f\xb0\x02 CALL3 \xde\x02 CALL2 \xb0\x02 REF_END2 
+LOAD3 TextClose REF2 \x08\x05 REF_END1 
 END_FILE

@@ -1,6 +1,6 @@
 START_FILE
 \x0f\x12\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00d\x0f\x00
-LOAD3 SCE031_001\x00\x1f\x06\x00 SCE_CMD 
+LOAD3 SCE031_001\x00\x1f\x06\x00 REF_END2 
 DIALOGUE_1 \x10@ DIALOGUE_2 m\x00\x00
  
 スーパーのビニール袋に野良猫を詰め、廃墟となった五号棟の５階\nの窓からそれを放り投げていた月代カンナ。@
@@ -12,9 +12,9 @@ DIALOGUE_1 \x10@ DIALOGUE_2 m\x00\x00
 \nその言葉を聞いて－－そして目の奥のどんよりとした無感動を見て\n－－この少女が自分の同類であることを、拓司は一瞬にして悟った\nのだった。\
 
 \x00\x00\x00 DIALOGUE_END J\x00 SEQ01
-LOAD7 .\\Data\\Script\\TextFunc.Fob OP01 \x1e\x02 SCE_CMD 
-LOAD2 TextOn OP01 L\x02 OP_CMD 
-LOAD3 SCE031_002\x00\x1fh\x02 SCE_CMD 
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \x1e\x02 REF_END2 
+LOAD2 TextOn REF1 L\x02 REF_END1 
+LOAD3 SCE031_002\x00\x1fh\x02 REF_END2 
 DIALOGUE_1 \x14@ DIALOGUE_2 \x90\x00\x00
  
 \n　月代カンナのなかにある暗い穴に、拓司はまっさかさまに落ちて\n　いった。@
@@ -28,9 +28,9 @@ DIALOGUE_1 \x14@ DIALOGUE_2 \x90\x00\x00
 　ショーウインドウに並べられた死、死、死。@
 　そこにあるのは確実な死のかたちであり、生きている自分には明\n　らかに所属していないものたちだった。\p拓司は取り憑かれたよう\n　にパソコンの前に張り付き、電脳の波に流されてくる情報をむさ\n　ぼった。\
 
-\x00 DIALOGUE_END \xac\x02
-SEQ02 \x1e\x02 SEQ03 L\x02 OP_CMD 
-LOAD3 SCE031_003\x00\x1f&\x05 SCE_CMD 
+\x00 DIALOGUE_END \xac\x02 SEQ01
+\x1f\x1e\x02 CALL3 L\x02 REF_END1 
+LOAD3 SCE031_003\x00\x1f&\x05 REF_END2 
 DIALOGUE_1 \x18@ DIALOGUE_2 \xe1\x00\x00
  
 　月代カンナは、続いて猟奇殺人事件の本を拓司にリリースした。@
@@ -42,9 +42,9 @@ DIALOGUE_1 \x18@ DIALOGUE_2 \xe1\x00\x00
 　物珍しさとショックに変わって、おなじみの倦怠感と、そして意\n　外にも『恥ずかしい』という感覚がやってきた。\p自分が、インタ\n　ーネットにしか居場所を見つけられない社会不適合者の一員とな\n　ってしまったような、あるいは訳知り顔のサブカル信者になって\n　しまったような、そんな気がしたのだ。@
 　その他大勢への、陳腐な成り下がり。\
 
-\x00 DIALOGUE_END j\x05
-SEQ02 \x1e\x02 SEQ03 L\x02 OP_CMD 
-LOAD3 SCE031_004\x00\x1f(\t SCE_CMD 
+\x00 DIALOGUE_END j\x05 SEQ01
+\x1f\x1e\x02 CALL3 L\x02 REF_END1 
+LOAD3 SCE031_004\x00\x1f(\t REF_END2 
 DIALOGUE_1 \x1c@ DIALOGUE_2 \xcb\x00\x00
  
 拓司は自ら志願して、団地からの『猫落とし』をカンナと一緒に行\nった。@
@@ -56,18 +56,18 @@ DIALOGUE_1 \x1c@ DIALOGUE_2 \xcb\x00\x00
 拓司は手を伸ばしてカンナの身体を掴み、乱暴に抱き寄せて、口の\n奥にまで届くキスをした。\pカンナの舌が乱暴に拓司の中へねじりこ\nまれ、口の中をねぶり回した。\pそしてカンナはその最中、首を絞め\nて欲しいと懇願したのだった。@
 そのとき、拓司は初めて女の首を絞めたのだった。\
 
-\x00\x00\x00 DIALOGUE_END l\t
-SEQ02 \x1e\x02 SEQ03 L\x02 SEQ05 \x1e\x02 SCE_CMD LOAD5 TextWindowOffDirect\x1f\xde\x0c OP_CMD  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xca\x00 SEQ01
+\x00\x00\x00 DIALOGUE_END l\t SEQ01
+\x1f\x1e\x02 CALL3 L\x02 CALL2 \x1e\x02 REF_END2 LOAD5 TextWindowOffDirect\x1f\xde\x0c REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xca\x00 SEQ01
 
-LOAD6 .\\Data\\Script\\Bg.Fob OP03  \r SCE_CMD 
-LOAD2 BgOn OP03 J\r OP_CMD  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x01\x00 SEQ01
-LOAD7 .\\Data\\Script\\TextFunc.fob OP01 \x80\r SCE_CMD 
-LOAD3 WaitTime OP03 \xae\r OP_CMD  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00
-SEQ02  \r SEQ03 J\r OP_CMD  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x01\x00
-SEQ02 \x80\r SEQ03 \xae\r OP_CMD  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xca\x00
-SEQ02  \r SEQ03 J\r OP_CMD  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x01\x00
-SEQ02 \x80\r SEQ03 \xae\r OP_CMD  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00
-SEQ02  \r SEQ03 J\r OP_CMD  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x01\x00
-SEQ02 \x80\r SEQ03 \xae\r SEQ05 \x1e\x02 SCE_CMD LOAD5 TextWindowOnDirect OP01 \x12\x0f SEQ05 \x1e\x02 SCE_CMD 
-LOAD3 TextClose OP02 F\x0f OP_CMD 
+LOAD6 .\\Data\\Script\\Bg.Fob REF3  \r REF_END2 
+LOAD2 BgOn REF3 J\r REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x01\x00 SEQ01
+LOAD7 .\\Data\\Script\\TextFunc.fob REF1 \x80\r REF_END2 
+LOAD3 WaitTime REF3 \xae\r REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00 SEQ01
+\x1f \r CALL3 J\r REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x01\x00 SEQ01
+\x1f\x80\r CALL3 \xae\r REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xca\x00 SEQ01
+\x1f \r CALL3 J\r REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x01\x00 SEQ01
+\x1f\x80\r CALL3 \xae\r REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00 SEQ01
+\x1f \r CALL3 J\r REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x01\x00 SEQ01
+\x1f\x80\r CALL3 \xae\r CALL2 \x1e\x02 REF_END2 LOAD5 TextWindowOnDirect REF1 \x12\x0f CALL2 \x1e\x02 REF_END2 
+LOAD3 TextClose REF2 F\x0f REF_END1 
 END_FILE

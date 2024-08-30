@@ -1,18 +1,18 @@
 START_FILE
 \x16\x05\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xa4\t3\x01\x00\x00\x00\\\x03\x00
-LOAD3 SCE066_001\x00\x1f\x06\x00 SCE_CMD 
+LOAD3 SCE066_001\x00\x1f\x06\x00 REF_END2 
 DIALOGUE_1 \xc0v DIALOGUE_2 h\x00\x00
  
 カンナ\n　「グッド。\pそれじゃあ、ちょっと目先を変えて『ホスピタリズ\n　　ム』について。\p……人手が足りない施設で育てられた赤ちゃ\n　　んは、親元で育てられている赤ちゃんと比較して死亡率が極\n　　めて高いの。\p別に手続き上のミスとか、目を離したスキに、\n　　ってわけじゃない。\p風邪から肺炎になって、死ぬことが多い。\n　　\p親元にいる赤ちゃんが肺炎になるよりもずっと高い確率で\n　　……どうしてだと思う？」\
 
 \x00 DIALOGUE_END J\x00 SEQ01
-LOAD7 .\\Data\\Script\\TextFunc.Fob OP01 \n\x02 SCE_CMD 
-LOAD2 TextOn OP01 8\x02 OP_CMD \x03)\x00\x00
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \n\x02 REF_END2 
+LOAD2 TextOn REF1 8\x02 REF_END1 \x03)\x00\x00
 CHOICE
 泣いていても放っておかれるせい\n赤ちゃんがたくさんいるという状況が、劣悪な衛生環境を生むから\n他の赤ちゃんがいるという競争心がストレスを生むから\n\l0,3,
 ENDCHOICE
 
-\x00\x00\x00 DIALOGUE_END T\x02
-SEQ02 \n\x02 SEQ03 8\x02 SEQ05 \n\x02 SCE_CMD 
-LOAD3 TextClose OP02 >\x03 OP_CMD 
+\x00\x00\x00 DIALOGUE_END T\x02 SEQ01
+\x1f\n\x02 CALL3 8\x02 CALL2 \n\x02 REF_END2 
+LOAD3 TextClose REF2 >\x03 REF_END1 
 END_FILE

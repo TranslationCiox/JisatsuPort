@@ -1,14 +1,14 @@
 START_FILE
 \xd0%\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00^ \x00
-LOAD3 SCE200_001\x00\x1f\x06\x00 SCE_CMD 
+LOAD3 SCE200_001\x00\x1f\x06\x00 REF_END2 
 DIALOGUE_1  H\x01\x0c\x00\x00\x00\x00" \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc9\x00 SEQ01
 
-LOAD6 .\\Data\\Script\\Bg.Fob OP03 d\x00 SCE_CMD 
-LOAD4 BgAutoFadeIn OP03 \x8e\x00 OP_CMD  \x1e\x00\x00\x00\x00\r\x00 SCE_CMD \x0c\x02\x00\x00" \x1e\x04\x00\x00\r\x00\x00\x1e\x06\x00 SEQ01
+LOAD6 .\\Data\\Script\\Bg.Fob REF3 d\x00 REF_END2 
+LOAD4 BgAutoFadeIn REF3 \x8e\x00 REF_END1  \x1e\x00\x00\x00\x00\r\x00 REF_END2 \x0c\x02\x00\x00" \x1e\x04\x00\x00\r\x00\x00\x1e\x06\x00 SEQ01
  \x1e\x08\x00\x00\r\x00\x00\x1e\x01\x00 SEQ01
 
-LOAD6 .\\Data\\Script\\Bgm.Fob OP02 \x00\x01 SCE_CMD 
-LOAD2 SePlay OP01 *\x01 OP_CMD \x03v\x00\x00
+LOAD6 .\\Data\\Script\\Bgm.Fob REF2 \x00\x01 REF_END2 
+LOAD2 SePlay REF1 *\x01 REF_END1 \x03v\x00\x00
  
 拓司は、錆びたシャッターをこじあけるように、目を開く。@
 \n白い壁。@
@@ -23,9 +23,9 @@ LOAD2 SePlay OP01 *\x01 OP_CMD \x03v\x00\x00
 　　食糧がどうとか、鍵がどうとか……雲居さんという名前も\n　　いっていたね」\
 
 \x00\x00\x00 DIALOGUE_END F\x01 SEQ01
-LOAD7 .\\Data\\Script\\TextFunc.Fob OP01 >\x03 SCE_CMD 
-LOAD2 TextOn OP01 l\x03 OP_CMD 
-LOAD3 SCE200_002\x00\x1f\x88\x03 SCE_CMD 
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 >\x03 REF_END2 
+LOAD2 TextOn REF1 l\x03 REF_END1 
+LOAD3 SCE200_002\x00\x1f\x88\x03 REF_END2 
 DIALOGUE_1 $H\x01\x0c\x00\x00\x00\x00"\x03T\x00\x00
  
 拓司\n　「……どうも……教授……」@
@@ -36,9 +36,9 @@ DIALOGUE_1 $H\x01\x0c\x00\x00\x00\x00"\x03T\x00\x00
 　　なんで俺ばっかりこんな目に合わなくちゃならないんだ！」@
 \n腹の中にたまっていたストレスに、バチバチと怒りが放電し、大\n爆発した。\
 
-\x00 DIALOGUE_END \xcc\x03
-SEQ02 >\x03 SEQ03 l\x03 OP_CMD 
-LOAD3 SCE200_003\x00\x1fV\x05 SCE_CMD 
+\x00 DIALOGUE_END \xcc\x03 SEQ01
+\x1f>\x03 CALL3 l\x03 REF_END1 
+LOAD3 SCE200_003\x00\x1fV\x05 REF_END2 
 DIALOGUE_1 (H\x01\x0c\x00\x00\x00\x00"\x03\xb0\x00\x00
  
 拓司\n　「あんたは、『俺の世界』が夢だという！\p　でも、俺は『あん\n　　たの世界』について何も知らない！\p　自分が誰なのかもわか\n　　らないんだ！\p　なのにこの世界が本物だって信じろっていう\n　　のか？！」@
@@ -46,9 +46,9 @@ DIALOGUE_1 (H\x01\x0c\x00\x00\x00\x00"\x03\xb0\x00\x00
 拓司\n　「女が俺の思うとおりに動く『妄想の世界』！\p　最終波動とか\n　　いう、わけのわからないもののせいで教室に籠城しなきゃな\n　　らない……『俺の世界』！\p　そして、おれが狂っていて定期\n　　的に自分を書き換えては目覚める『あんたの世界』！\p　３つ\n　　の世界があって、どれもが少しずつ混ざり合って滅茶苦茶に\n　　なってる！\p　セックスが俺の世界を浸食して、雲居なたね\n　　があんたの世界に登場する！\p　どこが中心なんだ？！@
 　　どれが本当の世界なんだ？！」\
 
-\x00\x00\x00 DIALOGUE_END \x9a\x05
-SEQ02 >\x03 SEQ03 l\x03 OP_CMD 
-LOAD3 SCE200_004\x00\x1f\x94\x08 SCE_CMD 
+\x00\x00\x00 DIALOGUE_END \x9a\x05 SEQ01
+\x1f>\x03 CALL3 l\x03 REF_END1 
+LOAD3 SCE200_004\x00\x1f\x94\x08 REF_END2 
 DIALOGUE_1 ,H\x01\x0c\x00\x00\x00\x00"\x03\xcb\x00\x00
  
 教授\n　「同情するよ」@
@@ -59,9 +59,9 @@ DIALOGUE_1 ,H\x01\x0c\x00\x00\x00\x00"\x03\xcb\x00\x00
 　あたかもシーツの質感こそが自分を世界につなぎ止めている最\n後のロープであるかのように、拓司はシーツをなで続けた。@
 　悲惨なのは、そんなふうな神経症的不安のなかにあっても、\n『神経症的不安のなかにある自分』を客観的に観察している自\n分の意識……視点が……別のどこかにあるという事実である……。\n\
 
-\x00 DIALOGUE_END \xd8\x08
-SEQ02 >\x03 SEQ03 l\x03 OP_CMD 
-LOAD3 SCE200_005\x00\x1f>\x0c SCE_CMD 
+\x00 DIALOGUE_END \xd8\x08 SEQ01
+\x1f>\x03 CALL3 l\x03 REF_END1 
+LOAD3 SCE200_005\x00\x1f>\x0c REF_END2 
 DIALOGUE_1 0H\x01\x0c\x00\x00\x00\x00"\x03\xa3\x00\x00
  
 教授\n　「答はどこにもない。\p君の中にしかないんだ」@
@@ -70,17 +70,17 @@ DIALOGUE_1 0H\x01\x0c\x00\x00\x00\x00"\x03\xa3\x00\x00
 　　しかしそれは、単なる私の主観だ。\pもしかしたら、すべては\n　　私の妄想なのかもしれない。\pここは病院ではなく、私は座っ\n　　ておらず、そして君なんて本当は存在していないのかもしれ\n　　ない。\p君の承認なんて、無意味だ。\pなぜなら、君が同意した\n　　ということもまた、私の主観にすぎないからだ」@
 拓司\n　「……」\
 
-\x00 DIALOGUE_END \x82\x0c
-SEQ02 >\x03 SEQ03 l\x03 OP_CMD 
-LOAD3 SCE200_006\x00\x1fH\x0f SCE_CMD 
+\x00 DIALOGUE_END \x82\x0c SEQ01
+\x1f>\x03 CALL3 l\x03 REF_END1 
+LOAD3 SCE200_006\x00\x1fH\x0f REF_END2 
 DIALOGUE_1 4H\x01\x0c\x00\x00\x00\x00"\x032\x00\x00
  
 教授\n　「あるいは、私というのは、どこかにいる別の私が見ている夢\n　　にすぎないのかもしれない。\pさらには夢を見ているのは私で\n　　すらなく、他の誰かなのかもしれない」@
 拓司\n　「……」\
 
-\x00\x00\x00 DIALOGUE_END \x8c\x0f
-SEQ02 >\x03 SEQ03 l\x03 OP_CMD 
-LOAD3 SCE200_007\x00\x1f\x8e\x10 SCE_CMD 
+\x00\x00\x00 DIALOGUE_END \x8c\x0f SEQ01
+\x1f>\x03 CALL3 l\x03 REF_END1 
+LOAD3 SCE200_007\x00\x1f\x8e\x10 REF_END2 
 DIALOGUE_1 8H\x01\x0c\x00\x00\x00\x00"\x03\xe8\x00\x00
  
 教授\n　「答など、ないのだ。\pなにが現実でなにが妄想なのかを決める\n　　のは他人ではなく、本人なのだ。\p私はこう考えるよ。@
@@ -90,9 +90,9 @@ DIALOGUE_1 8H\x01\x0c\x00\x00\x00\x00"\x03\xe8\x00\x00
 　　ゆえに、私はこの世界が『夢の世界』ではないと信じ、私が\n　　私としてここに実在することを信じる」@
 拓司\n　「……」\
 
-\x00\x00\x00 DIALOGUE_END \xd2\x10
-SEQ02 >\x03 SEQ03 l\x03 OP_CMD 
-LOAD3 SCE200_008\x00\x1f\xac\x14 SCE_CMD 
+\x00\x00\x00 DIALOGUE_END \xd2\x10 SEQ01
+\x1f>\x03 CALL3 l\x03 REF_END1 
+LOAD3 SCE200_008\x00\x1f\xac\x14 REF_END2 
 DIALOGUE_1 <H\x01\x0c\x00\x00\x00\x00"\x03\x95\x00\x00
  
 教授\n　「君が定義する世界とはなにかね？\p　女が自分の思い通りに動\n　　くことかね？\p　自殺波動かね？」@
@@ -102,9 +102,9 @@ DIALOGUE_1 <H\x01\x0c\x00\x00\x00\x00"\x03\x95\x00\x00
 　　そういう世界こそが、君の信じる『現実の世界』なはずだろ\n　　う？\p　……記憶喪失という事実は確かに受け入れがたいだろ\n　　う。\pだがね、それは現実に起こりうることなんだ。\p誰にだっ\n　　て、起こりうることなんだ。\pそれが偶然、君に起こった。@
 　　それだけの話だよ」\
 
-\x00 DIALOGUE_END \xf0\x14
-SEQ02 >\x03 SEQ03 l\x03 OP_CMD 
-LOAD3 SCE200_009\x00\x1f~\x17 SCE_CMD 
+\x00 DIALOGUE_END \xf0\x14 SEQ01
+\x1f>\x03 CALL3 l\x03 REF_END1 
+LOAD3 SCE200_009\x00\x1f~\x17 REF_END2 
 DIALOGUE_1 @H\x01\x0c\x00\x00\x00\x00"\x03\x92\x00\x00
  
 /*▲SE01　再生（再生終わるまで待たずに進む）*/\a2,1,1,1,ザザザ……ザザッ……\pザアザザザ……ザアアアアア……@
@@ -117,9 +117,9 @@ DIALOGUE_1 @H\x01\x0c\x00\x00\x00\x00"\x03\x92\x00\x00
 早く眠りたいと思った。@
 眠って、二度と目覚めなければいいと思った。\p夢も見ずに完全に\n眠っているあいだだけ、自分が自分以外のものではない、完全な\n存在でいられるような気がした。\
 
-\x00 DIALOGUE_END \xc2\x17
-SEQ02 >\x03 SEQ03 l\x03 OP_CMD 
-LOAD3 SCE200_010\x00\x1fD\x1a SCE_CMD 
+\x00 DIALOGUE_END \xc2\x17 SEQ01
+\x1f>\x03 CALL3 l\x03 REF_END1 
+LOAD3 SCE200_010\x00\x1fD\x1a REF_END2 
 DIALOGUE_1 DH\x01\x0c\x00\x00\x00\x00"\x03\x97\x00\x00
  
 教授\n　「少し眠るといい」@
@@ -127,18 +127,18 @@ DIALOGUE_1 DH\x01\x0c\x00\x00\x00\x00"\x03\x97\x00\x00
 教授\n　「大丈夫だ。\pたかが夢だよ。\p目が覚めれば、ここに戻ってくる。\n　　\p映画と同じだ。\pスクリーンの中の怪物は、決して君に危害を\n　　加えることはできない。\p脅かすだけだ。\p夢を現実と混同する\n　　な。\p現実には何も恐ろしいことなどない。\pここに戻ってくれ\n　　ば、私がいる。\p私を信じてくれ。\p私を現実の象徴としたまえ。\n　　\p君が求める答は、私なんだ」@
 拓司\n　「でも、この世界は……遠いような気がする。\p馴染みがないよ\n　　うな……なにも知らない世界だ。\p『おれの世界』のことなら\n　　なんでも知ってるんだ……」\
 
-\x00\x00\x00 DIALOGUE_END \x88\x1a
-SEQ02 >\x03 SEQ03 l\x03 OP_CMD 
-LOAD3 SCE200_011\x00\x1f\x1e\x1d SCE_CMD 
+\x00\x00\x00 DIALOGUE_END \x88\x1a SEQ01
+\x1f>\x03 CALL3 l\x03 REF_END1 
+LOAD3 SCE200_011\x00\x1f\x1e\x1d REF_END2 
 DIALOGUE_1 HH\x01\x0c\x00\x00\x00\x00"\x039\x00\x00
  
 教授\n　「そう思っているだけだ。\p夢とはそういうものだ。\p夢の中にい\n　　る限り、セットの継ぎ目を見つけることはできない。@
 　　目覚めて、客観的に見ることで、矛盾が浮かび上がってくる\n　　のだよ」@
 拓司\n　「……」\
 
-\x00 DIALOGUE_END b\x1d
-SEQ02 >\x03 SEQ03 l\x03 OP_CMD 
-LOAD3 SCE200_012\x00\x1f\x80\x1e SCE_CMD 
+\x00 DIALOGUE_END b\x1d SEQ01
+\x1f>\x03 CALL3 l\x03 REF_END1 
+LOAD3 SCE200_012\x00\x1f\x80\x1e REF_END2 
 DIALOGUE_1 LH\x01\x0c\x00\x00\x00\x00"\x030\x00\x00
  
 眠れ俺。@
@@ -150,9 +150,9 @@ DIALOGUE_1 LH\x01\x0c\x00\x00\x00\x00"\x030\x00\x00
 \nようやく浅いまどろみが頭に霞を作りはじめた。@
 そのとき、突如、何者かが拓司の肩を掴んだ。\
 
-\x00\x00\x00 DIALOGUE_END \xc4\x1e
-SEQ02 >\x03 SEQ03 l\x03 OP_CMD  \x1e\x00\x00\x00\x00\r\x00 SCE_CMD \x0c\x02\x00\x00"\x1f\x00\x01 SCE_CMD 
-LOAD2 SeStop OP01 \xe4\x1f OP_CMD  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00
-SEQ02 d\x00 SEQ03 \x8e\x00 SEQ05 >\x03 SCE_CMD 
-LOAD3 TextClose OP02 @  OP_CMD 
+\x00\x00\x00 DIALOGUE_END \xc4\x1e SEQ01
+\x1f>\x03 CALL3 l\x03 REF_END1  \x1e\x00\x00\x00\x00\r\x00 REF_END2 \x0c\x02\x00\x00"\x1f\x00\x01 REF_END2 
+LOAD2 SeStop REF1 \xe4\x1f REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00 SEQ01
+\x1fd\x00 CALL3 \x8e\x00 CALL2 >\x03 REF_END2 
+LOAD3 TextClose REF2 @  REF_END1 
 END_FILE

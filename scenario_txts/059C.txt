@@ -1,6 +1,6 @@
 START_FILE
 u\x03\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`\x044\x01\x00\x00\x00\xc6\x02\x00
-LOAD3 SCE059_001\x00\x1f\x06\x00 SCE_CMD 
+LOAD3 SCE059_001\x00\x1f\x06\x00 REF_END2 
 DIALOGUE_1 \xd0k DIALOGUE_2 z\x00\x00
  
 拓司\n　「天使って、なんのことだ？」@
@@ -15,7 +15,7 @@ DIALOGUE_1 \xd0k DIALOGUE_2 z\x00\x00
 早桃は何を隠しているのだろうか？\
 
 \x00 DIALOGUE_END J\x00 SEQ01
-LOAD7 .\\Data\\Script\\TextFunc.Fob OP01 R\x02 SCE_CMD 
-LOAD2 TextOn OP01 \x80\x02 SEQ05 R\x02 SCE_CMD 
-LOAD3 TextClose OP02 \xa8\x02 OP_CMD 
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 R\x02 REF_END2 
+LOAD2 TextOn REF1 \x80\x02 CALL2 R\x02 REF_END2 
+LOAD3 TextClose REF2 \xa8\x02 REF_END1 
 END_FILE

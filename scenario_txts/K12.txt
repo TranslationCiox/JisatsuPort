@@ -1,6 +1,6 @@
 START_FILE
 \x88\t\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00*\x08\x00
-LOAD3 SCEK12_001\x00\x1f\x06\x00 SCE_CMD 
+LOAD3 SCEK12_001\x00\x1f\x06\x00 REF_END2 
 DIALOGUE_1 \x90\xaa\x01\x0c\x00\x00\x00\x00"\x03s\x00\x00
  
 「朝８時に、市内のビジネスホテルで」@
@@ -12,9 +12,9 @@ DIALOGUE_1 \x90\xaa\x01\x0c\x00\x00\x00\x00"\x03s\x00\x00
 憑き物が落ちたようないきいきとした顔が鏡の中にあったのを、\n鮮やかに覚えている。@
 サッパリしていて、自分でもちょっとすてきかな、などと思った\nくらいだった。\w\z
 \x00 DIALOGUE_END J\x00 SEQ01
-LOAD7 .\\Data\\Script\\TextFunc.Fob OP01 6\x02 SCE_CMD 
-LOAD2 TextOn OP01 d\x02 OP_CMD 
-LOAD3 SCEK12_002\x00\x1f\x80\x02 SCE_CMD 
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 6\x02 REF_END2 
+LOAD2 TextOn REF1 d\x02 REF_END1 
+LOAD3 SCEK12_002\x00\x1f\x80\x02 REF_END2 
 DIALOGUE_1 \x90\xaa\x01\x0c\x00\x00\x00\x00"\x03\xb4\x00\x00
  
 　私はそのまま約束のビジネスホテルに向かった。@
@@ -25,9 +25,9 @@ DIALOGUE_1 \x90\xaa\x01\x0c\x00\x00\x00\x00"\x03\xb4\x00\x00
 これから死ぬというのに、ぜんぜん怖いという感じはなかった。@
 わくわくしていた。@
 ゆきといっしょに、どこか温泉にでも旅行に出かけるような、そ\nんな気分だった。\w\z
-\x00 DIALOGUE_END \xc4\x02
-SEQ02 6\x02 SEQ03 d\x02 OP_CMD 
-LOAD3 SCEK12_003\x00\x1f\xce\x05 SCE_CMD 
+\x00 DIALOGUE_END \xc4\x02 SEQ01
+\x1f6\x02 CALL3 d\x02 REF_END1 
+LOAD3 SCEK12_003\x00\x1f\xce\x05 REF_END2 
 DIALOGUE_1 \x90\xaa\x01\x0c\x00\x00\x00\x00"\x03m\x00\x00
  
 　綺麗に死にたいと思った。@
@@ -35,7 +35,7 @@ DIALOGUE_1 \x90\xaa\x01\x0c\x00\x00\x00\x00"\x03m\x00\x00
 痛いのも嫌だった。だから、薬で死のうと思った。@
 \n　私たちは××××という薬を何軒かのドラッグストアで分けて\n買い集め（知ってるでしょ、××××？）、銀紙の上に何瓶ぶん\nかの錠剤を載せてコンロであぶって、ドロドロに溶かした。@
 そして、薬と一緒に買ってきたプレーンヨーグルトに混ぜた。\w\z
-\x00 DIALOGUE_END \x12\x06
-SEQ02 6\x02 SEQ03 d\x02 SEQ05 6\x02 SCE_CMD 
-LOAD3 TextClose OP02 \x0c\x08 OP_CMD 
+\x00 DIALOGUE_END \x12\x06 SEQ01
+\x1f6\x02 CALL3 d\x02 CALL2 6\x02 REF_END2 
+LOAD3 TextClose REF2 \x0c\x08 REF_END1 
 END_FILE

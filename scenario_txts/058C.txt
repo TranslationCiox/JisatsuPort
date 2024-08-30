@@ -1,8 +1,8 @@
 START_FILE
 \xd3%\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xea\x1e\x00
-LOAD6 .\\Data\\Script\\Bgm.Fob OP02 \x06\x00 SCE_CMD 
-LOAD2 StopCD OP01 0\x00 OP_CMD 
-LOAD3 SCE058_001\x00\x1fL\x00 SCE_CMD 
+LOAD6 .\\Data\\Script\\Bgm.Fob REF2 \x06\x00 REF_END2 
+LOAD2 StopCD REF1 0\x00 REF_END1 
+LOAD3 SCE058_001\x00\x1fL\x00 REF_END2 
 DIALOGUE_1 @j DIALOGUE_2 \x1b\x00\x00
  
 限界だった。@
@@ -10,11 +10,11 @@ DIALOGUE_1 @j DIALOGUE_2 \x1b\x00\x00
 拓司は一気に教室に駆け込んだ。\
 
 \x00\x00\x00 DIALOGUE_END \x90\x00 SEQ01
-LOAD7 .\\Data\\Script\\TextFunc.Fob OP01 \x1c\x01 SCE_CMD 
-LOAD2 TextOn OP01 J\x01 OP_CMD  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\n\x01
-SEQ02 \x06\x00 SCE_CMD 
-LOAD2 PlayCD OP01 \x8c\x01 OP_CMD 
-LOAD3 SCE058_002\x00\x1f\xa8\x01 SCE_CMD 
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \x1c\x01 REF_END2 
+LOAD2 TextOn REF1 J\x01 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\n\x01 SEQ01
+\x1f\x06\x00 REF_END2 
+LOAD2 PlayCD REF1 \x8c\x01 REF_END1 
+LOAD3 SCE058_002\x00\x1f\xa8\x01 REF_END2 
 DIALOGUE_1 Dj DIALOGUE_2 r\x00\x00
  
 駆け込んできた拓司を見ても、学生たちには何の反応もない。@
@@ -26,9 +26,9 @@ DIALOGUE_1 Dj DIALOGUE_2 r\x00\x00
 \nゲラゲラと全員が笑った。@
 拓司の胸のなかで、どす黒い塊が爆発した。\
 
-\x00 DIALOGUE_END \xec\x01
-SEQ02 \x1c\x01 SEQ03 J\x01 OP_CMD 
-LOAD3 SCE058_003\x00\x1f\xee\x03 SCE_CMD 
+\x00 DIALOGUE_END \xec\x01 SEQ01
+\x1f\x1c\x01 CALL3 J\x01 REF_END1 
+LOAD3 SCE058_003\x00\x1f\xee\x03 REF_END2 
 DIALOGUE_1 Hj DIALOGUE_2 \x9a\x00\x00
  
 拓司\n　「オ、オ、オ、オ、オ、オ、ア、ア、ア、ア、ア、ア、ア！」@
@@ -41,12 +41,12 @@ DIALOGUE_1 Hj DIALOGUE_2 \x9a\x00\x00
 　いつのまにやられたのか、鼻から血がだくだくとあふれ出る。@
 視界が奇妙な色で明滅する。\
 
-\x00 DIALOGUE_END 2\x04
-SEQ02 \x1c\x01 SEQ03 J\x01 OP_CMD  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00 SEQ01
+\x00 DIALOGUE_END 2\x04 SEQ01
+\x1f\x1c\x01 CALL3 J\x01 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00 SEQ01
 
-LOAD6 .\\Data\\Script\\Bg.Fob OP03 \xee\x06 SCE_CMD 
-LOAD4 BgAutoFadeIn OP03 \x18\x07 OP_CMD 
-LOAD3 SCE058_004\x00\x1f<\x07 SCE_CMD 
+LOAD6 .\\Data\\Script\\Bg.Fob REF3 \xee\x06 REF_END2 
+LOAD4 BgAutoFadeIn REF3 \x18\x07 REF_END1 
+LOAD3 SCE058_004\x00\x1f<\x07 REF_END2 
 DIALOGUE_1 Lj DIALOGUE_2 \xab\x00\x00
  
 　興奮した声、声、声が、教室中を行き交っている。@
@@ -59,10 +59,10 @@ DIALOGUE_1 Lj DIALOGUE_2 \xab\x00\x00
 \n　その声は、鋭い槍のように、教室の学生たちを貫いた。@
 　全員がビクッと身体をこわばらせ、おそるおそる、互いに顔を\n見合わせる。\pなかには反抗的な目でなたねをにらみ続けている者\nもいる。\pしかし、そんな視線をすべて受けてなお、なたねは動じ\nる様子もなく、毅然と立って叫び続けた。\
 
-\x00\x00 DIALOGUE_END \x80\x07
-SEQ02 \x1c\x01 SEQ03 J\x01 OP_CMD  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x0b\x01
-SEQ02 \x06\x00 SEQ03 \x8c\x01 OP_CMD 
-LOAD3 SCE058_005\x00\x1f\x9a\n SCE_CMD 
+\x00\x00 DIALOGUE_END \x80\x07 SEQ01
+\x1f\x1c\x01 CALL3 J\x01 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x0b\x01 SEQ01
+\x1f\x06\x00 CALL3 \x8c\x01 REF_END1 
+LOAD3 SCE058_005\x00\x1f\x9a\n REF_END2 
 DIALOGUE_1 Pj DIALOGUE_2 \xc5\x00\x00
  
 なたね\n　「隣を見なさい！\p　自分を見なさい！\p　デタラメで、なんの常\n　　識もありゃしない！\p　　めちゃくちゃじゃない！非常識よ！@
@@ -73,9 +73,9 @@ DIALOGUE_1 Pj DIALOGUE_2 \xc5\x00\x00
 　傷ついている。@
 　なたねの子供っぽい罵詈雑言を受けて、彼らは心から傷ついて\nいるのだ。\
 
-\x00\x00\x00 DIALOGUE_END \xde\n
-SEQ02 \x1c\x01 SEQ03 J\x01 OP_CMD 
-LOAD3 SCE058_006\x00\x1f,\x0e SCE_CMD 
+\x00\x00\x00 DIALOGUE_END \xde\n SEQ01
+\x1f\x1c\x01 CALL3 J\x01 REF_END1 
+LOAD3 SCE058_006\x00\x1f,\x0e REF_END2 
 DIALOGUE_1 Tj DIALOGUE_2 N\x00\x00
  
 学生\n　「死ねっていわれたって……どうすれば……」@
@@ -85,9 +85,9 @@ DIALOGUE_1 Tj DIALOGUE_2 N\x00\x00
 \n　ざ、ざ、ざ、と波打つように、全員が背後を振り返った。@
 　そこには窓があった。\
 
-\x00 DIALOGUE_END p\x0e
-SEQ02 \x1c\x01 SEQ03 J\x01 OP_CMD 
-LOAD3 SCE058_007\x00\x1f\xe2\x0f SCE_CMD 
+\x00 DIALOGUE_END p\x0e SEQ01
+\x1f\x1c\x01 CALL3 J\x01 REF_END1 
+LOAD3 SCE058_007\x00\x1f\xe2\x0f REF_END2 
 DIALOGUE_1 Xj DIALOGUE_2 B\x00\x00
  
 なたね\n　「飛び降りれば、終わりじゃない？」@
@@ -100,9 +100,9 @@ DIALOGUE_1 Xj DIALOGUE_2 B\x00\x00
 女子学生\n　「終わり」@
 男子学生\n　「終わり」\
 
-\x00\x00\x00 DIALOGUE_END &\x10
-SEQ02 \x1c\x01 SEQ03 J\x01 OP_CMD 
-LOAD3 SCE058_006\x00\x1fh\x11 SCE_CMD 
+\x00\x00\x00 DIALOGUE_END &\x10 SEQ01
+\x1f\x1c\x01 CALL3 J\x01 REF_END1 
+LOAD3 SCE058_006\x00\x1fh\x11 REF_END2 
 DIALOGUE_1 \\j DIALOGUE_2 \x85\x00\x00
  
 　終わり終わり終わり終わり終わり終わり終わり終わり終わり終\nわり終わり終わ終わり終わり終わり終わり終わり終わり終わり終\nわり終わり終わり終わり終わり終わり終わり終わり終わり終わり@
@@ -112,19 +112,19 @@ DIALOGUE_1 \\j DIALOGUE_2 \x85\x00\x00
 それが始まりだった。@
 終わりはすぐにやってきた。\p学生たちは我先にと窓へ殺到し、躊\n躇することもなく飛び降りて消えていった。\p先ほどの喉を切った\n学生たちと同じく、なにか笑ってしまうような光景だった。\
 
-\x00\x00\x00 DIALOGUE_END \xac\x11
-SEQ02 \x1c\x01 SEQ03 J\x01 SEQ05 \x06\x00 SEQ03 0\x00 OP_CMD 
-LOAD3 SCE058_009\x00\x1f\x14\x14 SCE_CMD 
+\x00\x00\x00 DIALOGUE_END \xac\x11 SEQ01
+\x1f\x1c\x01 CALL3 J\x01 CALL2 \x06\x00 CALL3 0\x00 REF_END1 
+LOAD3 SCE058_009\x00\x1f\x14\x14 REF_END2 
 DIALOGUE_1 `j DIALOGUE_2 h\x00\x00
  
 なたね\n　「なにをボーッとしているの、虎菱くん。義妹さんも、飛び降\n　　りてしまうわよ」@
 \n/*■CG24　表示（クロスフェード）　*/\a7,-2,-2,0,\a0,23,2,0,\a6,-2,0,0,ようやく我に返って、拓司は窓辺に足をかけた早桃を、慌てて背\n後から捕まえた。@
 床に押さえつけられても、早桃はまだ何かに取り憑かれたような\n様子で、ブルブルと震えていた。\p拓司はそんな早桃に馬乗りにな\nって、頬に数発、鋭い平手打ちを放った。\
 
-\x00\x00\x00 DIALOGUE_END X\x14
-SEQ02 \x1c\x01 SEQ03 J\x01 OP_CMD  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00
-SEQ02 \xee\x06 SEQ03 \x18\x07 OP_CMD 
-LOAD3 SCE058_010\x00\x1ff\x16 SCE_CMD 
+\x00\x00\x00 DIALOGUE_END X\x14 SEQ01
+\x1f\x1c\x01 CALL3 J\x01 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00 SEQ01
+\x1f\xee\x06 CALL3 \x18\x07 REF_END1 
+LOAD3 SCE058_010\x00\x1ff\x16 REF_END2 
 DIALOGUE_1 dj DIALOGUE_2 v\x00\x00
  
 拓司\n　「落ち着け！　早桃！\p　目を覚ませ！」@
@@ -136,9 +136,9 @@ DIALOGUE_1 dj DIALOGUE_2 v\x00\x00
 拓司\n　「天使？」@
 早桃\n　「……私はもうたどり着けないから。\pおにいちゃんのこと、好\n　　きになる資格ないから」\
 
-\x00\x00\x00 DIALOGUE_END \xaa\x16
-SEQ02 \x1c\x01 SEQ03 J\x01 OP_CMD 
-LOAD3 SCE058_011\x00\x1f\xbc\x18 SCE_CMD 
+\x00\x00\x00 DIALOGUE_END \xaa\x16 SEQ01
+\x1f\x1c\x01 CALL3 J\x01 REF_END1 
+LOAD3 SCE058_011\x00\x1f\xbc\x18 REF_END2 
 DIALOGUE_1 hj DIALOGUE_2 \x88\x00\x00
  
 　なたねはそんな２人の様子をじっと無言で見つめていたが、し\n　ばらくしてポツリといった。@
@@ -151,9 +151,9 @@ DIALOGUE_1 hj DIALOGUE_2 \x88\x00\x00
 　ぐんにゃりと弛緩して、視線はうつろに宙を泳いでいる。@
 　拓司は心配したが、１分もすると、早桃はゆっくりと自分で身\n　体を起こした。\
 
-\x00 DIALOGUE_END \x00\x19
-SEQ02 \x1c\x01 SEQ03 J\x01 OP_CMD 
-LOAD3 SCE058_012\x00\x1fZ\x1b SCE_CMD 
+\x00 DIALOGUE_END \x00\x19 SEQ01
+\x1f\x1c\x01 CALL3 J\x01 REF_END1 
+LOAD3 SCE058_012\x00\x1fZ\x1b REF_END2 
 DIALOGUE_1 lj DIALOGUE_2 ]\x00\x00
  
 拓司\n　「大丈夫か、早桃？」@
@@ -166,21 +166,21 @@ DIALOGUE_1 lj DIALOGUE_2 ]\x00\x00
 \n拓司\n　「無理するな、もう少し寝て－－」@
 早桃\n　「大丈夫。早桃は大丈夫だから。\pそれよりも……」\
 
-\x00\x00\x00 DIALOGUE_END \x9e\x1b
-SEQ02 \x1c\x01 SEQ03 J\x01 OP_CMD 
-LOAD3 SCE058_013\x00\x1fL\x1d SCE_CMD 
+\x00\x00\x00 DIALOGUE_END \x9e\x1b SEQ01
+\x1f\x1c\x01 CALL3 J\x01 REF_END1 
+LOAD3 SCE058_013\x00\x1fL\x1d REF_END2 
 DIALOGUE_1 pj DIALOGUE_2 \x1d\x00\x00
  
 拓司\n　「……」@
 早桃\n　「……なんでもない。\p行こう、おにいちゃん。\pここに、いたく\n　　ない……」\
 
-\x00\x00\x00 DIALOGUE_END \x90\x1d
-SEQ02 \x1c\x01 SEQ03 J\x01 OP_CMD \x03\x12\x00\x00
+\x00\x00\x00 DIALOGUE_END \x90\x1d SEQ01
+\x1f\x1c\x01 CALL3 J\x01 REF_END1 \x03\x12\x00\x00
 CHOICE
 「……天使って、なんだ？」\n「……ここにいたくない？」\n\l0,2,
 ENDCHOICE
 
-\x00 DIALOGUE_END >\x1e
-SEQ02 \x1c\x01 SEQ03 J\x01 SEQ05 \x1c\x01 SCE_CMD 
-LOAD3 TextClose OP02 \xcc\x1e OP_CMD 
+\x00 DIALOGUE_END >\x1e SEQ01
+\x1f\x1c\x01 CALL3 J\x01 CALL2 \x1c\x01 REF_END2 
+LOAD3 TextClose REF2 \xcc\x1e REF_END1 
 END_FILE

@@ -1,6 +1,6 @@
 START_FILE
 \xff\x0e\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xe4\x0b\x00
-LOAD3 SCE104_001\x00\x1f\x06\x00 SCE_CMD 
+LOAD3 SCE104_001\x00\x1f\x06\x00 REF_END2 
 DIALOGUE_1  \xb2 DIALOGUE_2 T\x00\x00
  
 密かに御堂に話を付け、その日の夕方拓司はなたねに詰め寄った。\n@
@@ -10,9 +10,9 @@ DIALOGUE_1  \xb2 DIALOGUE_2 T\x00\x00
 \nなたねは一瞬事態が飲み込めない様子で、説明を求めるようにあ\nたりを見回した。\pしかし、カンナも早桃も紅葉も錦城も、じっ\nと冷たい目で見返すばかり。\
 
 \x00\x00\x00 DIALOGUE_END J\x00 SEQ01
-LOAD7 .\\Data\\Script\\TextFunc.Fob OP01 \xba\x01 SCE_CMD 
-LOAD2 TextOn OP01 \xe8\x01 OP_CMD 
-LOAD3 SCE104_002\x00\x1f\x04\x02 SCE_CMD 
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xba\x01 REF_END2 
+LOAD2 TextOn REF1 \xe8\x01 REF_END1 
+LOAD3 SCE104_002\x00\x1f\x04\x02 REF_END2 
 DIALOGUE_1 $\xb2 DIALOGUE_2 \x7f\x00\x00
  
 なたね\n　「これは、みなさんの総意ですか？」@
@@ -23,9 +23,9 @@ DIALOGUE_1 $\xb2 DIALOGUE_2 \x7f\x00\x00
 拓司\n　「なにを……！」@
 なたね\n　「物資の管理者に適任なのは、私です」\
 
-\x00 DIALOGUE_END H\x02
-SEQ02 \xba\x01 SEQ03 \xe8\x01 OP_CMD 
-LOAD3 SCE104_003\x00\x1f~\x04 SCE_CMD 
+\x00 DIALOGUE_END H\x02 SEQ01
+\x1f\xba\x01 CALL3 \xe8\x01 REF_END1 
+LOAD3 SCE104_003\x00\x1f~\x04 REF_END2 
 DIALOGUE_1 (\xb2 DIALOGUE_2 D\x00\x00
  
 拓司\n　「違う！」@
@@ -34,9 +34,9 @@ DIALOGUE_1 (\xb2 DIALOGUE_2 D\x00\x00
 なたね\n　「だって！」@
 \nなたねが突如叫んで、拓司を遮った。\
 
-\x00 DIALOGUE_END \xc2\x04
-SEQ02 \xba\x01 SEQ03 \xe8\x01 OP_CMD 
-LOAD3 SCE104_004\x00\x1f\x0c\x06 SCE_CMD 
+\x00 DIALOGUE_END \xc2\x04 SEQ01
+\x1f\xba\x01 CALL3 \xe8\x01 REF_END1 
+LOAD3 SCE104_004\x00\x1f\x0c\x06 REF_END2 
 DIALOGUE_1 ,\xb2 DIALOGUE_2 \xb7\x00\x00
  
 なたね\n　「だって私が用意したんだから！\p　ここにあるのは全部私のな\n　　だから！\p　さっきから黙って聞いてりゃゴチャゴチャゴチャ\n　　ゴチャゴチャゴチゴチャゴチャゴチャゴチャゴチャゴチャ…\n　　…バカタレが！\p　大バカタレ国民共が！\p　なにもわからない\n　　シロウトのバカタレがなにを偉そうにいってる！\p　私が作っ\n　　たシェルターに住まわしてやってるのに、なんなんだ！@
@@ -47,9 +47,9 @@ DIALOGUE_1 ,\xb2 DIALOGUE_2 \xb7\x00\x00
 \n御堂\n　「……やってみろよ。\pお前がどんなことしようとも、鍵はとら\n　　せてもらうからな」@
 なたね\n　「……」\
 
-\x00 DIALOGUE_END P\x06
-SEQ02 \xba\x01 SEQ03 \xe8\x01 OP_CMD 
-LOAD3 SCE104_005\x00\x1ff\t SCE_CMD 
+\x00 DIALOGUE_END P\x06 SEQ01
+\x1f\xba\x01 CALL3 \xe8\x01 REF_END1 
+LOAD3 SCE104_005\x00\x1ff\t REF_END2 
 DIALOGUE_1 0\xb2 DIALOGUE_2 [\x00\x00
  
 御堂\n　「てめえの腹かっさばいてでも、とらせてもらうからな」@
@@ -60,13 +60,13 @@ DIALOGUE_1 0\xb2 DIALOGUE_2 [\x00\x00
 なたね\n　「人殺し！\p　人殺しの大バカタレ国民が！」@
 御堂\n　「……」\
 
-\x00 DIALOGUE_END \xaa\t
-SEQ02 \xba\x01 SEQ03 \xe8\x01 OP_CMD \x03\x0c\x00\x00
+\x00 DIALOGUE_END \xaa\t SEQ01
+\x1f\xba\x01 CALL3 \xe8\x01 REF_END1 \x03\x0c\x00\x00
 CHOICE
 御堂を止める\n黙ってみている\n\l0,2,
 ENDCHOICE
 
-\x00\x00\x00 DIALOGUE_END P\x0b
-SEQ02 \xba\x01 SEQ03 \xe8\x01 SEQ05 \xba\x01 SCE_CMD 
-LOAD3 TextClose OP02 \xc6\x0b OP_CMD 
+\x00\x00\x00 DIALOGUE_END P\x0b SEQ01
+\x1f\xba\x01 CALL3 \xe8\x01 CALL2 \xba\x01 REF_END2 
+LOAD3 TextClose REF2 \xc6\x0b REF_END1 
 END_FILE

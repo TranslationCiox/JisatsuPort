@@ -1,14 +1,14 @@
 START_FILE
 \x8b\x02\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00P\x054\x01\x00\x00\x00b\x01\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00 SEQ01
 
-LOAD6 .\\Data\\Script\\Bg.Fob OP03  \x00 SCE_CMD 
-LOAD4 BgAutoFadeIn OP03 J\x00 OP_CMD \x03\x18\x00\x00
+LOAD6 .\\Data\\Script\\Bg.Fob REF3  \x00 REF_END2 
+LOAD4 BgAutoFadeIn REF3 J\x00 REF_END1 \x03\x18\x00\x00
 CHOICE
 「お前には夏バテなんて概念は無いんだろうな」\n「髪、切ったのか？」\n「……」\n\l0,3,
 ENDCHOICE
 
 \x00\x00\x00 DIALOGUE_END n\x00 SEQ01
-LOAD7 .\\Data\\Script\\TextFunc.Fob OP01 \xee\x00 SCE_CMD 
-LOAD2 TextOn OP01 \x1c\x01 SEQ05 \xee\x00 SCE_CMD 
-LOAD3 TextClose OP02 D\x01 OP_CMD 
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xee\x00 REF_END2 
+LOAD2 TextOn REF1 \x1c\x01 CALL2 \xee\x00 REF_END2 
+LOAD3 TextClose REF2 D\x01 REF_END1 
 END_FILE

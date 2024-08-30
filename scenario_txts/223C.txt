@@ -1,14 +1,14 @@
 START_FILE
 J\x0b\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xc2\x08\x00
-LOAD3 SCE223_001\x00\x1f\x06\x00 SCE_CMD 
+LOAD3 SCE223_001\x00\x1f\x06\x00 REF_END2 
 DIALOGUE_1 \x10l\x01\x0c\x00\x00\x00\x00"\x03\x11\x00\x00
  
 \n\n\n\n\n\n\n\n\n\n　　　　　　　　　　　　　『１１日目』\
 
 \x00 DIALOGUE_END J\x00 SEQ01
-LOAD7 .\\Data\\Script\\TextFunc.Fob OP01 \xae\x00 SCE_CMD 
-LOAD2 TextOn OP01 \xdc\x00 OP_CMD 
-LOAD3 SCE223_002\x00\x1f\xf8\x00 SCE_CMD 
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xae\x00 REF_END2 
+LOAD2 TextOn REF1 \xdc\x00 REF_END1 
+LOAD3 SCE223_002\x00\x1f\xf8\x00 REF_END2 
 DIALOGUE_1 \x14l\x01\x0c\x00\x00\x00\x00"\x03o\x00\x00
  
 錦城\n　「新システム導入のお知らせがあるわ」@
@@ -19,9 +19,9 @@ DIALOGUE_1 \x14l\x01\x0c\x00\x00\x00\x00"\x03o\x00\x00
 錦城\n　「そうです。\pレンタイセキニンセイです。\pつまり、誰かが秩序\n　　を乱すような行動をとった場合、全員がその責任を負うとい\n　　うことです。\pこれはもちろん、御堂くんの許可を得た決定事\n　　項よ」@
 \nカンナが、フンと鼻で笑った。\
 
-\x00\x00\x00 DIALOGUE_END <\x01
-SEQ02 \xae\x00 SEQ03 \xdc\x00 OP_CMD 
-LOAD3 SCE223_003\x00\x1f2\x03 SCE_CMD 
+\x00\x00\x00 DIALOGUE_END <\x01 SEQ01
+\x1f\xae\x00 CALL3 \xdc\x00 REF_END1 
+LOAD3 SCE223_003\x00\x1f2\x03 REF_END2 
 DIALOGUE_1 \x18l\x01\x0c\x00\x00\x00\x00"\x03}\x00\x00
  
 カンナ\n　「『御堂くんの許可』……ねえ」@
@@ -32,9 +32,9 @@ DIALOGUE_1 \x18l\x01\x0c\x00\x00\x00\x00"\x03}\x00\x00
 錦城\n　「……どういう意味かしら？」@
 カンナ\n　「先生が思っているそのままの意味ですけど」\
 
-\x00 DIALOGUE_END v\x03
-SEQ02 \xae\x00 SEQ03 \xdc\x00 OP_CMD 
-LOAD3 SCE223_004\x00\x1f\xa4\x05 SCE_CMD 
+\x00 DIALOGUE_END v\x03 SEQ01
+\x1f\xae\x00 CALL3 \xdc\x00 REF_END1 
+LOAD3 SCE223_004\x00\x1f\xa4\x05 REF_END2 
 DIALOGUE_1 \x1cl\x01\x0c\x00\x00\x00\x00"\x03\x7f\x00\x00
  
 錦城とカンナはしばしにらみ合っていたが、やがて錦城が、フッ\nと軽く笑って目をそらした。\pそしてカンナに歩み寄ったかと思う\nと、突如鋭い張り手を頬に見舞った。@
@@ -43,13 +43,13 @@ DIALOGUE_1 \x1cl\x01\x0c\x00\x00\x00\x00"\x03\x7f\x00\x00
 御堂\n　「ああ。\pこの女の反秩序行為は、お前ら全員で責任を負っても\n　　らうぞ。\pおまえらは今日一日、飯抜きだ」@
 \n錦城が勝ち誇ったような目で拓司を見た。\
 
-\x00 DIALOGUE_END \xe8\x05
-SEQ02 \xae\x00 SEQ03 \xdc\x00 OP_CMD \x03\x10\x00\x00
+\x00 DIALOGUE_END \xe8\x05 SEQ01
+\x1f\xae\x00 CALL3 \xdc\x00 REF_END1 \x03\x10\x00\x00
 CHOICE
 拓司は錦城に殴りかかった\n拓司はじっと耐えた\n\l0,2,
 ENDCHOICE
 
-\x00\x00\x00 DIALOGUE_END \x1e\x08
-SEQ02 \xae\x00 SEQ03 \xdc\x00 SEQ05 \xae\x00 SCE_CMD 
-LOAD3 TextClose OP02 \xa4\x08 OP_CMD 
+\x00\x00\x00 DIALOGUE_END \x1e\x08 SEQ01
+\x1f\xae\x00 CALL3 \xdc\x00 CALL2 \xae\x00 REF_END2 
+LOAD3 TextClose REF2 \xa4\x08 REF_END1 
 END_FILE

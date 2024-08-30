@@ -1,6 +1,6 @@
 START_FILE
 \x17\t\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\\\x07\x00
-LOAD3 SCE224_001\x00\x1f\x06\x00 SCE_CMD 
+LOAD3 SCE224_001\x00\x1f\x06\x00 REF_END2 
 DIALOGUE_1 \xa0m\x01\x0c\x00\x00\x00\x00"\x03\xa1\x00\x00
  
 衝動的な怒りに突き動かされて、拓司は動いた。@
@@ -15,9 +15,9 @@ DIALOGUE_1 \xa0m\x01\x0c\x00\x00\x00\x00"\x03\xa1\x00\x00
 拓司\n　「！」\
 
 \x00\x00\x00 DIALOGUE_END J\x00 SEQ01
-LOAD7 .\\Data\\Script\\TextFunc.Fob OP01 \xee\x02 SCE_CMD 
-LOAD2 TextOn OP01 \x1c\x03 OP_CMD 
-LOAD3 SCE224_002\x00\x1f8\x03 SCE_CMD 
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xee\x02 REF_END2 
+LOAD2 TextOn REF1 \x1c\x03 REF_END1 
+LOAD3 SCE224_002\x00\x1f8\x03 REF_END2 
 DIALOGUE_1 \xa4m\x01\x0c\x00\x00\x00\x00"\x03;\x00\x00
  
 一気に押し倒された。@
@@ -35,9 +35,9 @@ DIALOGUE_1 \xa4m\x01\x0c\x00\x00\x00\x00"\x03;\x00\x00
 腹。@
 さらに腹。\
 
-\x00 DIALOGUE_END |\x03
-SEQ02 \xee\x02 SEQ03 \x1c\x03 OP_CMD 
-LOAD3 SCE224_003\x00\x1f\xa2\x04 SCE_CMD 
+\x00 DIALOGUE_END |\x03 SEQ01
+\x1f\xee\x02 CALL3 \x1c\x03 REF_END1 
+LOAD3 SCE224_003\x00\x1f\xa2\x04 REF_END2 
 DIALOGUE_1 \xa8m\x01\x0c\x00\x00\x00\x00"\x03Y\x00\x00
  
 必至で腕を振り回したが、むなしく空を切るばかりだ。@
@@ -47,12 +47,12 @@ DIALOGUE_1 \xa8m\x01\x0c\x00\x00\x00\x00"\x03Y\x00\x00
 もしかしたら自分の悲鳴だったのかもしれない。@
 \n拓司は意識を失った。\
 
-\x00 DIALOGUE_END \xe6\x04
-SEQ02 \xee\x02 SEQ03 \x1c\x03 OP_CMD  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00 SEQ01
+\x00 DIALOGUE_END \xe6\x04 SEQ01
+\x1f\xee\x02 CALL3 \x1c\x03 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00 SEQ01
 
-LOAD6 .\\Data\\Script\\Bg.Fob OP03 \x9e\x06 SCE_CMD 
-LOAD4 BgAutoFadeIn OP03 \xc8\x06 OP_CMD 
-LOAD6 .\\Data\\Script\\Bgm.Fob OP02 \xec\x06 SCE_CMD 
-LOAD2 StopCD OP01 \x16\x07 SEQ05 \xee\x02 SCE_CMD 
-LOAD3 TextClose OP02 >\x07 OP_CMD 
+LOAD6 .\\Data\\Script\\Bg.Fob REF3 \x9e\x06 REF_END2 
+LOAD4 BgAutoFadeIn REF3 \xc8\x06 REF_END1 
+LOAD6 .\\Data\\Script\\Bgm.Fob REF2 \xec\x06 REF_END2 
+LOAD2 StopCD REF1 \x16\x07 CALL2 \xee\x02 REF_END2 
+LOAD3 TextClose REF2 >\x07 REF_END1 
 END_FILE

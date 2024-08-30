@@ -1,6 +1,6 @@
 START_FILE
 F\x08\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xbc\x06\x00
-LOAD3 SCE076_001\x00\x1f\x06\x00 SCE_CMD 
+LOAD3 SCE076_001\x00\x1f\x06\x00 REF_END2 
 DIALOGUE_1 `\x86 DIALOGUE_2 Q\x00\x00
  
 拓司\n　「雲居さんが俺たちには見えないものが見えるというのは…\n　　…信じられないけど……どうやらウソじゃないらしい。@
@@ -8,9 +8,9 @@ DIALOGUE_1 `\x86 DIALOGUE_2 Q\x00\x00
 早桃\n　「おにいちゃん！\p　じゃあ、神凪先輩を見捨てるっていうの\n　　？！」\n拓司\n　「……」\
 
 \x00\x00\x00 DIALOGUE_END J\x00 SEQ01
-LOAD7 .\\Data\\Script\\TextFunc.Fob OP01 \xae\x01 SCE_CMD 
-LOAD2 TextOn OP01 \xdc\x01 OP_CMD 
-LOAD3 SCE076_002\x00\x1f\xf8\x01 SCE_CMD 
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xae\x01 REF_END2 
+LOAD2 TextOn REF1 \xdc\x01 REF_END1 
+LOAD3 SCE076_002\x00\x1f\xf8\x01 REF_END2 
 DIALOGUE_1 d\x86 DIALOGUE_2 d\x00\x00
  
 早桃\n　「どうしちゃったの、おにいちゃん！\p　この人、おかしいんだ\n　　よ？！\p　やつらとか、戦士とか、最終決戦とか、シェルター\n　　とか、漫画みたいなメチャクチャばっかりじゃない！」@
@@ -19,9 +19,9 @@ DIALOGUE_1 d\x86 DIALOGUE_2 d\x00\x00
 早桃\n　「……」@
 拓司\n　「紅葉を助けたい気持ちは、誰にも負けないつもりだ……」\
 
-\x00 DIALOGUE_END <\x02
-SEQ02 \xae\x01 SEQ03 \xdc\x01 OP_CMD 
-LOAD3 SCE076_003\x00\x1f\x06\x04 SCE_CMD 
+\x00 DIALOGUE_END <\x02 SEQ01
+\x1f\xae\x01 CALL3 \xdc\x01 REF_END1 
+LOAD3 SCE076_003\x00\x1f\x06\x04 REF_END2 
 DIALOGUE_1 h\x86 DIALOGUE_2 r\x00\x00
  
 早桃は俯いて、じっと床を睨んでいた。@
@@ -32,9 +32,9 @@ DIALOGUE_1 h\x86 DIALOGUE_2 r\x00\x00
 \nなたね\n　「シェルター……シェルター……シェルター……シェルター…\n　　…シェルター」@
 \nぶつぶつと呪文のようにくり返すなたねの背中を追いながら、拓\n司は心の底に絶望をかみしめていた。\
 
-\x00\x00\x00 DIALOGUE_END J\x04
-SEQ02 \xae\x01 SEQ03 \xdc\x01 OP_CMD 
-LOAD6 .\\Data\\Script\\Bgm.Fob OP02 L\x06 SCE_CMD 
-LOAD2 StopCD OP01 v\x06 SEQ05 \xae\x01 SCE_CMD 
-LOAD3 TextClose OP02 \x9e\x06 OP_CMD 
+\x00\x00\x00 DIALOGUE_END J\x04 SEQ01
+\x1f\xae\x01 CALL3 \xdc\x01 REF_END1 
+LOAD6 .\\Data\\Script\\Bgm.Fob REF2 L\x06 REF_END2 
+LOAD2 StopCD REF1 v\x06 CALL2 \xae\x01 REF_END2 
+LOAD3 TextClose REF2 \x9e\x06 REF_END1 
 END_FILE

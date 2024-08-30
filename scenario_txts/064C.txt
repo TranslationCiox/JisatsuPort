@@ -1,18 +1,18 @@
 START_FILE
 <\x05\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xa4\t3\x01\x00\x00\x00\x90\x03\x00
-LOAD3 SCE064_001\x00\x1f\x06\x00 SCE_CMD 
+LOAD3 SCE064_001\x00\x1f\x06\x00 REF_END2 
 DIALOGUE_1 \xa0s DIALOGUE_2 \x8c\x00\x00
  
 カンナ\n　「普通のイヌは、だんだんと仕掛けを理解していくわ。\pやがて\n　　、最初から柵のそばに立って、部屋が暗くなった途端に反対\n　　側に飛び移るようになる。\pでも、電気ショックを経験してい\n　　るイヌは、回避しようとしないのよ。\p諦めて、じっとショッ\n　　クに耐えるだけなの。\p……それじゃあ応用。\p最初の拘束電気\n　　ショックの際に、鼻先でボタンを押せば電気が止まるという\n　　ことをあらかじめ学習させたイヌはどうだと思う？\p　そうい\n　　うイヌをさっきの部屋に閉じこめたとしたら？\p　もちろん、\n　　部屋には電流を止めるボタンなんかないわよ？」\
 
 \x00 DIALOGUE_END J\x00 SEQ01
-LOAD7 .\\Data\\Script\\TextFunc.Fob OP01 \x9a\x02 SCE_CMD 
-LOAD2 TextOn OP01 \xc8\x02 OP_CMD \x03\x12\x00\x00
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \x9a\x02 REF_END2 
+LOAD2 TextOn REF1 \xc8\x02 REF_END1 \x03\x12\x00\x00
 CHOICE
 電流を回避できない\n普通のイヌのように電流を回避する\n\l0,2,
 ENDCHOICE
 
-\x00\x00\x00 DIALOGUE_END \xe4\x02
-SEQ02 \x9a\x02 SEQ03 \xc8\x02 SEQ05 \x9a\x02 SCE_CMD 
-LOAD3 TextClose OP02 r\x03 OP_CMD 
+\x00\x00\x00 DIALOGUE_END \xe4\x02 SEQ01
+\x1f\x9a\x02 CALL3 \xc8\x02 CALL2 \x9a\x02 REF_END2 
+LOAD3 TextClose REF2 r\x03 REF_END1 
 END_FILE

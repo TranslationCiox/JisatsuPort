@@ -1,17 +1,17 @@
 START_FILE
 X.\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xf2&\x00
-LOAD3 SCE228_001\x00\x1f\x06\x00 SCE_CMD 
+LOAD3 SCE228_001\x00\x1f\x06\x00 REF_END2 
 DIALOGUE_1 \xe0s\x01\x0c\x00\x00\x00\x00"\x03\x11\x00\x00
  
 \n\n\n\n\n\n\n\n\n\n　　　　　　　　　　　　『１４日目』\
 
 \x00\x00\x00 DIALOGUE_END J\x00 SEQ01
-LOAD7 .\\Data\\Script\\TextFunc.Fob OP01 \xae\x00 SCE_CMD 
-LOAD2 TextOn OP01 \xdc\x00 OP_CMD  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\t\x01 SEQ01
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xae\x00 REF_END2 
+LOAD2 TextOn REF1 \xdc\x00 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\t\x01 SEQ01
 
-LOAD6 .\\Data\\Script\\Bgm.Fob OP02 \x12\x01 SCE_CMD 
-LOAD2 PlayCD OP01 <\x01 OP_CMD 
-LOAD3 SCE228_002\x00\x1fX\x01 SCE_CMD 
+LOAD6 .\\Data\\Script\\Bgm.Fob REF2 \x12\x01 REF_END2 
+LOAD2 PlayCD REF1 <\x01 REF_END1 
+LOAD3 SCE228_002\x00\x1fX\x01 REF_END2 
 DIALOGUE_1 \xe4s\x01\x0c\x00\x00\x00\x00"\x03O\x00\x00
  
 御堂と錦城の次の標的は、早桃だった。@
@@ -22,9 +22,9 @@ DIALOGUE_1 \xe4s\x01\x0c\x00\x00\x00\x00"\x03O\x00\x00
 御堂\n　「セックスだよ」@
 拓司\n　「ふざけるな」\
 
-\x00\x00\x00 DIALOGUE_END \x9c\x01
-SEQ02 \xae\x00 SEQ03 \xdc\x00 OP_CMD 
-LOAD3 SCE228_003\x00\x1f\x12\x03 SCE_CMD 
+\x00\x00\x00 DIALOGUE_END \x9c\x01 SEQ01
+\x1f\xae\x00 CALL3 \xdc\x00 REF_END1 
+LOAD3 SCE228_003\x00\x1f\x12\x03 REF_END2 
 DIALOGUE_1 \xe8s\x01\x0c\x00\x00\x00\x00"\x03\x88\x00\x00
  
 御堂\n　「ふざけてなんかいないさ。\pそんなかわいい子が家の中にいた\n　　ら、我慢できないのが普通だろうが。\p別に血が繋がってるわ\n　　けでもなし、超使い勝手がいい性欲処理道具じゃねえか。@
@@ -34,9 +34,9 @@ DIALOGUE_1 \xe8s\x01\x0c\x00\x00\x00\x00"\x03\x88\x00\x00
 拓司\n　「なに？」@
 御堂\n　「ここでしてみせろよ。\p一回見てみたかったんだよな、そうい\n　　うのさ。\p……感謝しろよ。\pこんな機会でもなきゃ、義妹とセ\n　　ックスなんかできないぜ？」\
 
-\x00 DIALOGUE_END V\x03
-SEQ02 \xae\x00 SEQ03 \xdc\x00 OP_CMD 
-LOAD3 SCE228_004\x00\x1f\xb0\x05 SCE_CMD 
+\x00 DIALOGUE_END V\x03 SEQ01
+\x1f\xae\x00 CALL3 \xdc\x00 REF_END1 
+LOAD3 SCE228_004\x00\x1f\xb0\x05 REF_END2 
 DIALOGUE_1 \xecs\x01\x0c\x00\x00\x00\x00"\x03n\x00\x00
  
 拓司\n　「断る」@
@@ -49,9 +49,9 @@ DIALOGUE_1 \xecs\x01\x0c\x00\x00\x00\x00"\x03n\x00\x00
 \n拓司はいった。\p御堂になど、早桃を抱かせるわけにはいかない。@
 \n早桃\n　「おにいちゃん……」\
 
-\x00 DIALOGUE_END \xf4\x05
-SEQ02 \xae\x00 SEQ03 \xdc\x00 OP_CMD 
-LOAD3 SCE228_005\x00\x1f\xe6\x07 SCE_CMD 
+\x00 DIALOGUE_END \xf4\x05 SEQ01
+\x1f\xae\x00 CALL3 \xdc\x00 REF_END1 
+LOAD3 SCE228_005\x00\x1f\xe6\x07 REF_END2 
 DIALOGUE_1 \xf0s\x01\x0c\x00\x00\x00\x00"\x03\x87\x00\x00
  
 拓司\n　「ごめんな。\p恨んでくれても構わない」@
@@ -62,9 +62,9 @@ DIALOGUE_1 \xf0s\x01\x0c\x00\x00\x00\x00"\x03\x87\x00\x00
 \n御堂\n　「おいおいおいおいおい！\p　誰がチンケなラブシーン見せろっ\n　　ていったよ！\p　俺は別に、お前らの禁じられた愛を成就する\n　　手伝いしてるんじゃねえんだよ」@
 早桃\n　「お、おにいちゃんッ？！\p　大丈夫、おにいちゃん！」\
 
-\x00\x00 DIALOGUE_END *\x08
-SEQ02 \xae\x00 SEQ03 \xdc\x00 OP_CMD 
-LOAD3 SCE228_006\x00\x1f\x80\n SCE_CMD 
+\x00\x00 DIALOGUE_END *\x08 SEQ01
+\x1f\xae\x00 CALL3 \xdc\x00 REF_END1 
+LOAD3 SCE228_006\x00\x1f\x80\n REF_END2 
 DIALOGUE_1 \xf4s\x01\x0c\x00\x00\x00\x00"\x03\xaa\x00\x00
  
 御堂\n　「嫌いなんだよね、俺。\pたかだか性欲処理にいろいろ理由くっ\n　　つけるやつらって。\p『愛しているから抱くんだよ』とか『お\n　　前だから勃起するんだよ』とかさ。\p男がそんな理屈で立つか\n　　よ！\p　マ○コ見りゃ立つんだろ！\p　虎菱、え、そうだろうが\n　　よ虎菱！\p　愛してるからじゃなくて、やりたいから立つんだ\n　　ろうがよお！」@
@@ -74,9 +74,9 @@ DIALOGUE_1 \xf4s\x01\x0c\x00\x00\x00\x00"\x03\xaa\x00\x00
 拓司\n　「……ゲス野郎！」@
 \n黙って様子を見ていた錦城が、あいだに割って入った。\
 
-\x00 DIALOGUE_END \xc4\n
-SEQ02 \xae\x00 SEQ03 \xdc\x00 OP_CMD 
-LOAD3 SCE228_007\x00\x1f\xa6\r SCE_CMD 
+\x00 DIALOGUE_END \xc4\n SEQ01
+\x1f\xae\x00 CALL3 \xdc\x00 REF_END1 
+LOAD3 SCE228_007\x00\x1f\xa6\r REF_END2 
 DIALOGUE_1 \xf8s\x01\x0c\x00\x00\x00\x00"\x03\xa9\x00\x00
  
 錦城\n　「ねえ、御堂くん。\p虎菱くんに、義妹さんをおかずにオナニー\n　　してもらったらどう？」@
@@ -87,9 +87,9 @@ DIALOGUE_1 \xf8s\x01\x0c\x00\x00\x00\x00"\x03\xa9\x00\x00
 錦城\n　「いいわね、その声。\pきっとおにいちゃんも勃起するわよ。@
 　　もっと嫌がって頂戴。\p大切な義妹が嫌がっているにも関わら\n　　ず立つんだととしたら、それは愛で勃起してるんじゃないっ\n　　てことよねえ。\pくすくす」\
 
-\x00 DIALOGUE_END \xea\r
-SEQ02 \xae\x00 SEQ03 \xdc\x00 OP_CMD 
-LOAD3 SCE228_008\x00\x1f\xc8\x10 SCE_CMD 
+\x00 DIALOGUE_END \xea\r SEQ01
+\x1f\xae\x00 CALL3 \xdc\x00 REF_END1 
+LOAD3 SCE228_008\x00\x1f\xc8\x10 REF_END2 
 DIALOGUE_1 \xfcs\x01\x0c\x00\x00\x00\x00"\x03\x95\x00\x00
  
 早桃\n　「は、離してよお！」@
@@ -98,9 +98,9 @@ DIALOGUE_1 \xfcs\x01\x0c\x00\x00\x00\x00"\x03\x95\x00\x00
 \n錦城は早桃を抱えたまま実験台の上に腰を下ろした。\p膝の上に早\n桃を腰掛けさせるような形にして、両足を下からすくい上げ、左\n右に開かせる。@
 むっちりとした白いふとももが、ブルマから生えている。\
 
-\x00 DIALOGUE_END \x0c\x11
-SEQ02 \xae\x00 SEQ03 \xdc\x00 OP_CMD 
-LOAD3 SCE228_009\x00\x1f\x9a\x13 SCE_CMD 
+\x00 DIALOGUE_END \x0c\x11 SEQ01
+\x1f\xae\x00 CALL3 \xdc\x00 REF_END1 
+LOAD3 SCE228_009\x00\x1f\x9a\x13 REF_END2 
 DIALOGUE_1 \x00t\x01\x0c\x00\x00\x00\x00"\x03\xa1\x00\x00
  
 錦城\n　「あら、早桃ちゃん。\pずいぶんふっくらしたおま○こなのねえ。\n　　\pこんな可愛い顔しているのに、いやらしい身体だわ、本当に」\n\p早桃\n　「や、やああ」@
@@ -110,9 +110,9 @@ DIALOGUE_1 \x00t\x01\x0c\x00\x00\x00\x00"\x03\xa1\x00\x00
 早桃\n　「ひっ？！」@
 錦城\n　「あらあら、敏感ねえ。\pこうやってゆっくり撫でてると……あ\n　　ら、なんだか湿ってるみたいだけど？」\
 
-\x00 DIALOGUE_END \xde\x13
-SEQ02 \xae\x00 SEQ03 \xdc\x00 OP_CMD 
-LOAD3 SCE228_010\x00\x1f\x9c\x16 SCE_CMD 
+\x00 DIALOGUE_END \xde\x13 SEQ01
+\x1f\xae\x00 CALL3 \xdc\x00 REF_END1 
+LOAD3 SCE228_010\x00\x1f\x9c\x16 REF_END2 
 DIALOGUE_1 \x04t\x01\x0c\x00\x00\x00\x00"\x03\xa4\x00\x00
  
 早桃\n　「そ、そんなことないっ！」@
@@ -122,9 +122,9 @@ DIALOGUE_1 \x04t\x01\x0c\x00\x00\x00\x00"\x03\xa4\x00\x00
 \nいわれるまでもなく、拓司は自分が勃起していることに気づいて\nいた。@
 理性では押さえきれない動物的な興奮が、頭の中で膨れ上がって\n爆発寸前だった。\
 
-\x00 DIALOGUE_END \xe0\x16
-SEQ02 \xae\x00 SEQ03 \xdc\x00 OP_CMD 
-LOAD3 SCE228_011\x00\x1f\xaa\x19 SCE_CMD 
+\x00 DIALOGUE_END \xe0\x16 SEQ01
+\x1f\xae\x00 CALL3 \xdc\x00 REF_END1 
+LOAD3 SCE228_011\x00\x1f\xaa\x19 REF_END2 
 DIALOGUE_1 \x08t\x01\x0c\x00\x00\x00\x00"\x03\xae\x00\x00
  
 御堂\n　「おかしいよなあ。\p愛があるんなら勃起しねえはずだよなあ？@
@@ -136,9 +136,9 @@ DIALOGUE_1 \x08t\x01\x0c\x00\x00\x00\x00"\x03\xae\x00\x00
 義妹の目の前で、勃起した性器を晒す義兄。@
 両者とも、うつむいて目を合わせまいとしている。\pしかし両者と\nも、互いの淫らな姿に興奮しきっている……。\
 
-\x00\x00\x00 DIALOGUE_END \xee\x19
-SEQ02 \xae\x00 SEQ03 \xdc\x00 OP_CMD 
-LOAD3 SCE228_012\x00\x1f\xe0\x1c SCE_CMD 
+\x00\x00\x00 DIALOGUE_END \xee\x19 SEQ01
+\x1f\xae\x00 CALL3 \xdc\x00 REF_END1 
+LOAD3 SCE228_012\x00\x1f\xe0\x1c REF_END2 
 DIALOGUE_1 \x0ct\x01\x0c\x00\x00\x00\x00"\x03\xf2\x00\x00
  
 その後のことを、拓司は断片的にしか覚えていない。@
@@ -153,9 +153,9 @@ DIALOGUE_1 \x0ct\x01\x0c\x00\x00\x00\x00"\x03\xf2\x00\x00
 錦城は油性マジックでカンナの額に、『便器』と書いた。@
 涙を流しながら錦城は笑っていた。\
 
- DIALOGUE_END $\x1d
-SEQ02 \xae\x00 SEQ03 \xdc\x00 OP_CMD 
-LOAD3 SCE228_013\x00\x1f&! SCE_CMD 
+ DIALOGUE_END $\x1d SEQ01
+\x1f\xae\x00 CALL3 \xdc\x00 REF_END1 
+LOAD3 SCE228_013\x00\x1f&! REF_END2 
 DIALOGUE_1 \x10t\x01\x0c\x00\x00\x00\x00"\x03\x91\x00\x00
  
 御堂はその一部始終を笑いながら眺めていた。しかし常に拓司に\n目をくばっているあたり、あくまで冷静だった。@
@@ -168,20 +168,20 @@ DIALOGUE_1 \x10t\x01\x0c\x00\x00\x00\x00"\x03\x91\x00\x00
 \n目を押さえて御堂が叫んだ。@
 立ちつくす拓司たちの前で、雲居なたねが高く笑った。\
 
- DIALOGUE_END j!
-SEQ02 \xae\x00 SEQ03 \xdc\x00 OP_CMD 
-LOAD3 SCE228_014\x00\x1f\xe8# SCE_CMD 
+ DIALOGUE_END j! SEQ01
+\x1f\xae\x00 CALL3 \xdc\x00 REF_END1 
+LOAD3 SCE228_014\x00\x1f\xe8# REF_END2 
 DIALOGUE_1 \x14t\x01\x0c\x00\x00\x00\x00"\x03w\x00\x00
  
 なたね\n　「あはははははははは！\p　敵を拘束するときは身体検査くらい\n　　するのが常識だろうがこの民間人！\p　戦士である私が、武器\n　　のひとつくらい隠し持っていないとでも思ったかひっつき星\n　　人！\p　これがただの畳針だと思うなよ。\pこれはテスラ式処置\n　　を施して電流を流した特別製の次元毒針だ！\p　物理的ダメー\n　　ジを超えて存在自体にダメージを与えるからお前みたいな宇\n　　宙人にも効果てきめんだ！\p　思い知ったか！\p　思い知ったか\n　　あああああああ！」\
 
-\x00\x00\x00 DIALOGUE_END ,$
-SEQ02 \xae\x00 SEQ03 \xdc\x00 OP_CMD \x03\x13\x00\x00
+\x00\x00\x00 DIALOGUE_END ,$ SEQ01
+\x1f\xae\x00 CALL3 \xdc\x00 REF_END1 \x03\x13\x00\x00
 CHOICE
 拓司は御堂に躍りかかった\n拓司は凍り付いたまま動かなかった\n\l0,2,
 ENDCHOICE
 
-\x00 DIALOGUE_END B&
-SEQ02 \xae\x00 SEQ03 \xdc\x00 SEQ05 \xae\x00 SCE_CMD 
-LOAD3 TextClose OP02 \xd4& OP_CMD 
+\x00 DIALOGUE_END B& SEQ01
+\x1f\xae\x00 CALL3 \xdc\x00 CALL2 \xae\x00 REF_END2 
+LOAD3 TextClose REF2 \xd4& REF_END1 
 END_FILE

@@ -1,6 +1,6 @@
 START_FILE
 B\x05\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xa4\t3\x01\x00\x00\x000\x04\x00
-LOAD3 SCE099_001\x00\x1f\x06\x00 SCE_CMD 
+LOAD3 SCE099_001\x00\x1f\x06\x00 REF_END2 
 DIALOGUE_1 P\xaa DIALOGUE_2 I\x00\x00
  
 拓司\n　「雲居さんのいうことに一理ある」@
@@ -9,9 +9,9 @@ DIALOGUE_1 P\xaa DIALOGUE_2 I\x00\x00
 \n拓司はなたねをちらりとみやった。@
 なたねはいつもの無表情で、なんの反応もない。\w\z
 \x00 DIALOGUE_END J\x00 SEQ01
-LOAD7 .\\Data\\Script\\TextFunc.Fob OP01 \x8e\x01 SCE_CMD 
-LOAD2 TextOn OP01 \xbc\x01 OP_CMD 
-LOAD3 SCE099_002\x00\x1f\xd8\x01 SCE_CMD 
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \x8e\x01 REF_END2 
+LOAD2 TextOn REF1 \xbc\x01 REF_END1 
+LOAD3 SCE099_002\x00\x1f\xd8\x01 REF_END2 
 DIALOGUE_1 T\xaa DIALOGUE_2 l\x00\x00
  
 拓司\n　「ただ、お前が騒ぎ立てることでみんなが不安になるという点\n　　のみにおいては、雲居さんは正しい。\pいいかい、早桃。\pみ\n　　んな怖いんだ。\pみんな叫びたいんだ。\pでも、我慢している。@
@@ -19,7 +19,7 @@ DIALOGUE_1 T\xaa DIALOGUE_2 l\x00\x00
 なたね\n　「もういい！」@
 いうとなたねは、走るように自分のスペースへと向かい、膝を抱\nえて壁に向かった。@
 \nそれから一日、早桃はおろか、他の誰もひとことも口をきこう\nとはしなかった。\w\z
-\x00\x00\x00 DIALOGUE_END \x1c\x02
-SEQ02 \x8e\x01 SEQ03 \xbc\x01 SEQ05 \x8e\x01 SCE_CMD 
-LOAD3 TextClose OP02 \x12\x04 OP_CMD 
+\x00\x00\x00 DIALOGUE_END \x1c\x02 SEQ01
+\x1f\x8e\x01 CALL3 \xbc\x01 CALL2 \x8e\x01 REF_END2 
+LOAD3 TextClose REF2 \x12\x04 REF_END1 
 END_FILE

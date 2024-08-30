@@ -1,17 +1,17 @@
 START_FILE
 \xfb\x08\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\x14\x07\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x07\x01 SEQ01
 
-LOAD6 .\\Data\\Script\\Bgm.Fob OP02  \x00 SCE_CMD 
-LOAD2 PlayCD OP01 J\x00 OP_CMD 
-LOAD3 SCE033_001\x00\x1ff\x00 SCE_CMD 
+LOAD6 .\\Data\\Script\\Bgm.Fob REF2  \x00 REF_END2 
+LOAD2 PlayCD REF1 J\x00 REF_END1 
+LOAD3 SCE033_001\x00\x1ff\x00 REF_END2 
 DIALOGUE_1 PF DIALOGUE_2 &\x00\x00
  
 拓司の中に、今日の昼食はどうするのか、という紅葉の言葉が引\nっかかっていた。\p拓司は、教室に引き返し、弁当をかじっている\n紅葉に声をかけた。\
 
 \x00\x00\x00 DIALOGUE_END \xaa\x00 SEQ01
-LOAD7 .\\Data\\Script\\TextFunc.Fob OP01 b\x01 SCE_CMD 
-LOAD2 TextOn OP01 \x90\x01 OP_CMD 
-LOAD3 SCE033_002\x00\x1f\xac\x01 SCE_CMD 
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 b\x01 REF_END2 
+LOAD2 TextOn REF1 \x90\x01 REF_END1 
+LOAD3 SCE033_002\x00\x1f\xac\x01 REF_END2 
 DIALOGUE_1 TF DIALOGUE_2 J\x00\x00
  
 拓司\n　「よう」@
@@ -22,9 +22,9 @@ DIALOGUE_1 TF DIALOGUE_2 J\x00\x00
 紅葉\n　「ああ、お弁当ね」@
 \n紅葉はあっさりといった。\pなんだか拍子抜けするようないいかた\nだった。\
 
-\x00\x00\x00 DIALOGUE_END \xf0\x01
-SEQ02 b\x01 SEQ03 \x90\x01 OP_CMD 
-LOAD3 SCE033_003\x00\x1fR\x03 SCE_CMD 
+\x00\x00\x00 DIALOGUE_END \xf0\x01 SEQ01
+\x1fb\x01 CALL3 \x90\x01 REF_END1 
+LOAD3 SCE033_003\x00\x1fR\x03 REF_END2 
 DIALOGUE_1 XF DIALOGUE_2 H\x00\x00
  
 紅葉\n　「あるよ。\p食べる？\p　だったら屋上までつきあってくれない\n　　かな」@
@@ -33,10 +33,10 @@ DIALOGUE_1 XF DIALOGUE_2 H\x00\x00
 拓司\n　「話？」@
 紅葉\n　「ちょっと教室じゃ……アレだから。\pいいでしょ、つきあって\n　　よ」\
 
-\x00 DIALOGUE_END \x96\x03
-SEQ02 b\x01 SEQ03 \x90\x01 SEQ05  \x00 SCE_CMD 
-LOAD2 StopCD OP01 \xfc\x04 OP_CMD 
-LOAD3 SCE033_004\x00\x1f\x18\x05 SCE_CMD 
+\x00 DIALOGUE_END \x96\x03 SEQ01
+\x1fb\x01 CALL3 \x90\x01 CALL2  \x00 REF_END2 
+LOAD2 StopCD REF1 \xfc\x04 REF_END1 
+LOAD3 SCE033_004\x00\x1f\x18\x05 REF_END2 
 DIALOGUE_1 \\F DIALOGUE_2 U\x00\x00
  
 －－何か変だ。@
@@ -44,7 +44,7 @@ DIALOGUE_1 \\F DIALOGUE_2 U\x00\x00
 紅葉の表情に、複雑な色が浮かんでいる。\p相反する二つの感情が\nせめぎ合っているような……\p怯えと期待、罪悪感と爽快感、悲し\nみと喜び、そんなものが現れては消え、消えてはまた浮かび上が\nる。@
 \n紅葉\n　「他のコたちに気づかれるとナンだから……先に行ってくれな\n　　い？\p　１０分したら、行く」\
 
-\x00 DIALOGUE_END \\\x05
-SEQ02 b\x01 SEQ03 \x90\x01 SEQ05 b\x01 SCE_CMD 
-LOAD3 TextClose OP02 \xf6\x06 OP_CMD 
+\x00 DIALOGUE_END \\\x05 SEQ01
+\x1fb\x01 CALL3 \x90\x01 CALL2 b\x01 REF_END2 
+LOAD3 TextClose REF2 \xf6\x06 REF_END1 
 END_FILE

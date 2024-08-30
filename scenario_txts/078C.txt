@@ -1,9 +1,9 @@
 START_FILE
 \x86\x07\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x004\x06\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1e\t\x01 SEQ01
 
-LOAD6 .\\Data\\Script\\Bgm.Fob OP02  \x00 SCE_CMD 
-LOAD2 PlayCD OP01 J\x00 OP_CMD 
-LOAD3 SCE078_001\x00\x1ff\x00 SCE_CMD 
+LOAD6 .\\Data\\Script\\Bgm.Fob REF2  \x00 REF_END2 
+LOAD2 PlayCD REF1 J\x00 REF_END1 
+LOAD3 SCE078_001\x00\x1ff\x00 REF_END2 
 DIALOGUE_1 \x80\x89 DIALOGUE_2 \xd7\x00\x00
  
 途中、生きている人間には一度も出くわさなかった。@
@@ -22,10 +22,10 @@ DIALOGUE_1 \x80\x89 DIALOGUE_2 \xd7\x00\x00
 だが、恐怖からは守ってくれる……。\
 
 \x00 DIALOGUE_END \xaa\x00 SEQ01
-LOAD7 .\\Data\\Script\\TextFunc.Fob OP01 &\x04 SCE_CMD 
-LOAD2 TextOn OP01 T\x04 SEQ05  \x00 SCE_CMD 
-LOAD2 StopCD OP01 |\x04 OP_CMD 
-LOAD3 SCE078_002\x00\x1f\x98\x04 SCE_CMD 
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 &\x04 REF_END2 
+LOAD2 TextOn REF1 T\x04 CALL2  \x00 REF_END2 
+LOAD2 StopCD REF1 |\x04 REF_END1 
+LOAD3 SCE078_002\x00\x1f\x98\x04 REF_END2 
 DIALOGUE_1 \x84\x89 DIALOGUE_2 =\x00\x00
  
 なたね\n　「ここよ」@
@@ -33,7 +33,7 @@ DIALOGUE_1 \x84\x89 DIALOGUE_2 =\x00\x00
 どこで手に入れたのかはわからないが、もう、そんなことをいち\nいち尋ねる気力もなかった。@
 なたねはドアを開き、実験室へと足早に入っていった。\
 
-\x00 DIALOGUE_END \xdc\x04
-SEQ02 &\x04 SEQ03 T\x04 SEQ05 &\x04 SCE_CMD 
-LOAD3 TextClose OP02 \x16\x06 OP_CMD 
+\x00 DIALOGUE_END \xdc\x04 SEQ01
+\x1f&\x04 CALL3 T\x04 CALL2 &\x04 REF_END2 
+LOAD3 TextClose REF2 \x16\x06 REF_END1 
 END_FILE

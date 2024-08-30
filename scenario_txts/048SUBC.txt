@@ -1,9 +1,9 @@
 START_FILE
 ;8\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00n/\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1e\n\x01 SEQ01
 
-LOAD6 .\\Data\\Script\\Bgm.Fob OP02  \x00 SCE_CMD 
-LOAD2 PlayCD OP01 J\x00 OP_CMD 
-LOAD3 SCE048_001\x00\x1ff\x00 SCE_CMD 
+LOAD6 .\\Data\\Script\\Bgm.Fob REF2  \x00 REF_END2 
+LOAD2 PlayCD REF1 J\x00 REF_END1 
+LOAD3 SCE048_001\x00\x1ff\x00 REF_END2 
 DIALOGUE_1 \xa0Z DIALOGUE_2 \x8b\x00\x00
  
 　トイレに入った途端、背後から御堂に羽交い締めにされた。@
@@ -16,12 +16,12 @@ DIALOGUE_1 \xa0Z DIALOGUE_2 \x8b\x00\x00
 　　いいか、てめえに面白いもの見せてやるぜ！　……オイ、早\n　　くやれ！」\
 
 \x00 DIALOGUE_END \xaa\x00 SEQ01
-LOAD7 .\\Data\\Script\\TextFunc.Fob OP01 \xf6\x02 SCE_CMD 
-LOAD2 TextOn OP01 $\x03 OP_CMD  \x1e\x00\x00\x00\x00\r\x00\x00\x1eT\x00 SEQ01
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xf6\x02 REF_END2 
+LOAD2 TextOn REF1 $\x03 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1eT\x00 SEQ01
 
-LOAD6 .\\Data\\Script\\Bg.Fob OP03 Z\x03 SCE_CMD 
-LOAD4 BgAutoFadeIn OP03 \x84\x03 OP_CMD 
-LOAD3 SCE048_002\x00\x1f\xa8\x03 SCE_CMD 
+LOAD6 .\\Data\\Script\\Bg.Fob REF3 Z\x03 REF_END2 
+LOAD4 BgAutoFadeIn REF3 \x84\x03 REF_END1 
+LOAD3 SCE048_002\x00\x1f\xa8\x03 REF_END2 
 DIALOGUE_1 \xa4Z DIALOGUE_2 \x98\x00\x00
  
 \n　御堂が命じると、取り巻きたちが次々とベルトを外し始めた。@
@@ -32,9 +32,9 @@ DIALOGUE_1 \xa4Z DIALOGUE_2 \x98\x00\x00
 　やがてなたねは、無表情のまま、ゆっくりと床に跪いた。@
 　トイレの床は湿気で不潔に湿っているが、なたねはそんなこと\n　は気にかける様子もない。\p足をハの字にして、ぺったりと腰を\n　下ろしてしまった。\
 
-\x00 DIALOGUE_END \xec\x03
-SEQ02 \xf6\x02 SEQ03 $\x03 OP_CMD 
-LOAD3 SCE048_003\x00\x1f\x86\x06 SCE_CMD 
+\x00 DIALOGUE_END \xec\x03 SEQ01
+\x1f\xf6\x02 CALL3 $\x03 REF_END1 
+LOAD3 SCE048_003\x00\x1f\x86\x06 REF_END2 
 DIALOGUE_1 \xa8Z DIALOGUE_2 _\x00\x00
  
 取り巻き\n　「よし、はじめるよ、なたねちゃん。\pその前に、いつもの、言\n　　ってみようか？」@
@@ -45,9 +45,9 @@ DIALOGUE_1 \xa8Z DIALOGUE_2 _\x00\x00
 なたね\n　「……どうか」@
 取り巻き\n　「……」\
 
-\x00 DIALOGUE_END \xca\x06
-SEQ02 \xf6\x02 SEQ03 $\x03 OP_CMD 
-LOAD3 SCE048_004\x00\x1f\x80\x08 SCE_CMD 
+\x00 DIALOGUE_END \xca\x06 SEQ01
+\x1f\xf6\x02 CALL3 $\x03 REF_END1 
+LOAD3 SCE048_004\x00\x1f\x80\x08 REF_END2 
 DIALOGUE_1 \xacZ DIALOGUE_2 \x9c\x00\x00
  
 なたね\n　「……どうか優等生の雲居なたねに、おち○ちんのことをお\n　　勉強させてください」@
@@ -60,9 +60,9 @@ DIALOGUE_1 \xacZ DIALOGUE_2 \x9c\x00\x00
 　笑っている。@
 　４本のペ○スをこすりつけられながら、なたねはだらしなく笑\n　っていた。\
 
-\x00\x00\x00 DIALOGUE_END \xc4\x08
-SEQ02 \xf6\x02 SEQ03 $\x03 OP_CMD 
-LOAD3 SCE048_005\x00\x1fn\x0b SCE_CMD 
+\x00\x00\x00 DIALOGUE_END \xc4\x08 SEQ01
+\x1f\xf6\x02 CALL3 $\x03 REF_END1 
+LOAD3 SCE048_005\x00\x1fn\x0b REF_END2 
 DIALOGUE_1 \xb0Z DIALOGUE_2 \xb3\x00\x00
  
 \nセックスというものが、快感を得て射精をすることとだとするな\nらば、取り巻きたちのそれは、セックスとはいえなかった。@
@@ -73,9 +73,9 @@ DIALOGUE_1 \xb0Z DIALOGUE_2 \xb3\x00\x00
 なたねは片手に一本づつ、合わせて二本のペ○スを握っているが\n、それをしごく様子はない。\pしごけと命令する人間もいない。@
 取り巻きのひとりが、なたねの髪の毛にペ○スの先端をこすりつ\nけ始めた。\pそれを合図に、顎から首に掛けて、眼鏡のレンズに\n、耳の穴にと、亀頭がこすりつけられる。\pカウパー液が漏れ始\nめたのか、うっすらとナメクジの這ったあとのような軌跡が、あ\nちらこちらに残っている。\
 
-\x00\x00\x00 DIALOGUE_END \xb2\x0b
-SEQ02 \xf6\x02 SEQ03 $\x03 OP_CMD 
-LOAD3 SCE048_006\x00\x1f\xb8\x0e SCE_CMD 
+\x00\x00\x00 DIALOGUE_END \xb2\x0b SEQ01
+\x1f\xf6\x02 CALL3 $\x03 REF_END1 
+LOAD3 SCE048_006\x00\x1f\xb8\x0e REF_END2 
 DIALOGUE_1 \xb4Z DIALOGUE_2 \xaf\x00\x00
  
 御堂\n　「どうよ？　面白いだろ？　匂い付けだよ」@
@@ -87,9 +87,9 @@ DIALOGUE_1 \xb4Z DIALOGUE_2 \xaf\x00\x00
 拓司\n　「おまえ……」@
 御堂\n　「敢えてフェラチオとかホンバンとかしないでさ、単なるこす\n　　りつけの道具に……スペルマの的にするっていうのも、ちょ\n　　っといかれてて燃えねえか？\p　女にとっても、すげえ屈辱的\n　　だろ？\p　まあ、なたねちゃんはなんだかよくわかってないみ\n　　たいだけどな、くっくっく」\
 
-\x00 DIALOGUE_END \xfc\x0e
-SEQ02 \xf6\x02 SEQ03 $\x03 OP_CMD 
-LOAD3 SCE048_007\x00\x1f\xf2\x11 SCE_CMD 
+\x00 DIALOGUE_END \xfc\x0e SEQ01
+\x1f\xf6\x02 CALL3 $\x03 REF_END1 
+LOAD3 SCE048_007\x00\x1f\xf2\x11 REF_END2 
 DIALOGUE_1 \xb8Z DIALOGUE_2 \xb4\x00\x00
  
 \nセックスの対象としてすら認めてもらえず、単なるモノとして扱\nわれる少女……。@
@@ -102,9 +102,9 @@ DIALOGUE_1 \xb8Z DIALOGUE_2 \xb4\x00\x00
 だからさほどの嫌悪感を感じないのか？@
 取り巻きたちの息が、徐々に荒くなっていった。\
 
-\x00\x00\x00 DIALOGUE_END 6\x12
-SEQ02 \xf6\x02 SEQ03 $\x03 OP_CMD 
-LOAD3 SCE048_008\x00\x1f@\x15 SCE_CMD 
+\x00\x00\x00 DIALOGUE_END 6\x12 SEQ01
+\x1f\xf6\x02 CALL3 $\x03 REF_END1 
+LOAD3 SCE048_008\x00\x1f@\x15 REF_END2 
 DIALOGUE_1 \xbcZ DIALOGUE_2 U\x00\x00
  
 取り巻き\n　「……め、眼鏡とれよ」@
@@ -115,19 +115,19 @@ DIALOGUE_1 \xbcZ DIALOGUE_2 U\x00\x00
 取り巻き\n　「さきっぽから……出るぞっ！」@
 取り巻き\n　「うっ！」\
 
-\x00\x00\x00 DIALOGUE_END \x84\x15
-SEQ02 \xf6\x02 SEQ03 $\x03 OP_CMD 
-LOAD3 SCE048_009\x00\x1f\x12\x17 SCE_CMD 
+\x00\x00\x00 DIALOGUE_END \x84\x15 SEQ01
+\x1f\xf6\x02 CALL3 $\x03 REF_END1 
+LOAD3 SCE048_009\x00\x1f\x12\x17 REF_END2 
 DIALOGUE_1 \xc0Z DIALOGUE_2 D\x00\x00
  
 とりまきの一人が精液をぶちまけた。\pねっとりとしたかたまりが\nなたねの眼鏡の右レンズに命中し、そこで弾けて髪の毛の先に付\n着した。\pもう一人もなたねの鼻先で発射し、左のレンズを縦断す\nるように精液をへばりつかせた。@
 既視感。@
 妄想世界による現実世界の侵犯。\
 
-\x00\x00\x00 DIALOGUE_END V\x17
-SEQ02 \xf6\x02 SEQ03 $\x03 OP_CMD  \x1e\x00\x00\x00\x00\r\x00\x00\x1eU\x00
-SEQ02 Z\x03 SEQ03 \x84\x03 OP_CMD 
-LOAD3 SCE048_010\x00\x1f\xd4\x18 SCE_CMD 
+\x00\x00\x00 DIALOGUE_END V\x17 SEQ01
+\x1f\xf6\x02 CALL3 $\x03 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1eU\x00 SEQ01
+\x1fZ\x03 CALL3 \x84\x03 REF_END1 
+LOAD3 SCE048_010\x00\x1f\xd4\x18 REF_END2 
 DIALOGUE_1 \xc4Z DIALOGUE_2 q\x00\x00
  
 取り巻き\n　「Ｗ大狙う天才さんの顔面に、劣等ＤＮＡが炸裂！」@
@@ -138,9 +138,9 @@ DIALOGUE_1 \xc4Z DIALOGUE_2 q\x00\x00
 取り巻き\n　「それがよだれたらして子種まみれ」@
 取り巻き\n　「ただのアホだよ、これじゃ。げらげら」\
 
-\x00 DIALOGUE_END \x18\x19
-SEQ02 \xf6\x02 SEQ03 $\x03 OP_CMD 
-LOAD3 SCE048_011\x00\x1f\x16\x1b SCE_CMD 
+\x00 DIALOGUE_END \x18\x19 SEQ01
+\x1f\xf6\x02 CALL3 $\x03 REF_END1 
+LOAD3 SCE048_011\x00\x1f\x16\x1b REF_END2 
 DIALOGUE_1 \xc8Z DIALOGUE_2 d\x00\x00
  
 取り巻き\n　「男子便所で両手にチ○ポ握って。お前、痴女か？」@
@@ -149,9 +149,9 @@ DIALOGUE_1 \xc8Z DIALOGUE_2 d\x00\x00
 \n取り巻きの一人が、髪の毛に射精した。\p黒く美しい髪に、べった\nりと白濁液がこびりつく。\pなたねには何の反応もない。@
 ただ男たちの欲望の的になっているだけだ。\
 
-\x00\x00\x00 DIALOGUE_END Z\x1b
-SEQ02 \xf6\x02 SEQ03 $\x03 OP_CMD 
-LOAD3 SCE048_012\x00\x1f$\x1d SCE_CMD 
+\x00\x00\x00 DIALOGUE_END Z\x1b SEQ01
+\x1f\xf6\x02 CALL3 $\x03 REF_END1 
+LOAD3 SCE048_012\x00\x1f$\x1d REF_END2 
 DIALOGUE_1 \xccZ DIALOGUE_2 s\x00\x00
  
 取り巻き\n　「おら、休まずこすりつけろよ！」@
@@ -164,9 +164,9 @@ DIALOGUE_1 \xccZ DIALOGUE_2 s\x00\x00
 取り巻き\n　「おれもだ。いくぞ……いくぞ！」@
 取り巻き\n　「同時にひっかけてやろうぜ」\
 
-\x00\x00\x00 DIALOGUE_END h\x1d
-SEQ02 \xf6\x02 SEQ03 $\x03 OP_CMD 
-LOAD3 SCE048_013\x00\x1fn\x1f SCE_CMD 
+\x00\x00\x00 DIALOGUE_END h\x1d SEQ01
+\x1f\xf6\x02 CALL3 $\x03 REF_END1 
+LOAD3 SCE048_013\x00\x1fn\x1f REF_END2 
 DIALOGUE_1 \xd0Z DIALOGUE_2 \x83\x00\x00
  
 取り巻き\n　「おらっ、くらえ！」@
@@ -176,10 +176,10 @@ DIALOGUE_1 \xd0Z DIALOGUE_2 \x83\x00\x00
 取り巻き\n　「ザ、ザーメンリンスだよ、なたね！」@
 \n見る見るうちに、なたねの顔はこってりとした精液で覆われてい\nく。\p顎からつららのように精液が糸を引き、頭髪もぺったりと頭\n皮にはりついて惨めである。\p唇と眼鏡、そして鼻先にはとりわけ\n多くの精液が浴びせかけられた。\pもう、どこが口なのかもわから\nない状態だ。\
 
-\x00\x00\x00 DIALOGUE_END \xb2\x1f
-SEQ02 \xf6\x02 SEQ03 $\x03 SEQ05  \x00 SCE_CMD 
-LOAD2 StopCD OP01 \x04" OP_CMD 
-LOAD3 SCE048_014\x00\x1f " SCE_CMD 
+\x00\x00\x00 DIALOGUE_END \xb2\x1f SEQ01
+\x1f\xf6\x02 CALL3 $\x03 CALL2  \x00 REF_END2 
+LOAD2 StopCD REF1 \x04" REF_END1 
+LOAD3 SCE048_014\x00\x1f " REF_END2 
 DIALOGUE_1 \xd4Z DIALOGUE_2 z\x00\x00
  
 /*▲SE27　再生*/\a2,0,27,0,　ザザ。@
@@ -191,27 +191,27 @@ DIALOGUE_1 \xd4Z DIALOGUE_2 z\x00\x00
 /*▲SE01　再生（次の停止まで）*/\a2,2,1,1,\n　ザザザ……ザザッ……\pザアザザザ……ザアアアアア……@
 　ザアザアアアアアアア……\
 
- DIALOGUE_END d"
-SEQ02 \xf6\x02 SEQ03 $\x03 OP_CMD 
-LOAD3 SCE048_015\x00\x1f\x86$ SCE_CMD 
+ DIALOGUE_END d" SEQ01
+\x1f\xf6\x02 CALL3 $\x03 REF_END1 
+LOAD3 SCE048_015\x00\x1f\x86$ REF_END2 
 DIALOGUE_1 \xd8Z DIALOGUE_2 _\x00\x00
  
 取り巻き\n　「ほら、なたねちゃん。うれしいだろう？」\n取り巻き\n　「なたねちゃん、これ握って」\n取り巻き\n　「なたねちゃん、ちょっと口開いて見せて」\n取り巻き\n　「ほら、なたねちゃん」\n取り巻き\n　「なたねちゃん」\n取り巻き\n　「なたねちゃああん」\n取り巻き\n　「なたねっ」\n取り巻き\n　「なたねえええええ」\n取り巻き\n　「おら」\n取り巻き\n　「ザーメン食らえアホ女！」\w\z
-\x00\x00\x00 DIALOGUE_END \xca$
-SEQ02 \xf6\x02 SEQ03 $\x03 OP_CMD 
-LOAD3 SCE048_016\x00\x1f\x80& SCE_CMD 
+\x00\x00\x00 DIALOGUE_END \xca$ SEQ01
+\x1f\xf6\x02 CALL3 $\x03 REF_END1 
+LOAD3 SCE048_016\x00\x1f\x80& REF_END2 
 DIALOGUE_1 \xdcZ DIALOGUE_2 w\x00\x00
  
 取り巻き\n　「電波女！」\n取り巻き\n　「××××！」\n取り巻き\n　「感謝しろよ」\n取り巻き\n　「おれたちが地球を守ってやるから感謝しろよ。ありがとうご\n　　ざいますって言ってみろ！」\n取り巻き\n　「うわ、糸引きまくりだよ」\n取り巻き\n　「こいつ、鼻の穴からちょうちん出してるぜ！　げらげら」\n取り巻き\n　「ぶくぶくやって見ろよ？　ほら、口の端っこでぶくぶくぶく\n　　ぶく……」\n取り巻き\n　「おおっ、すげえ」\n取り巻き\n　「げらげら。みっともねえツラだなあ、優等生！」\w\z
-\x00 DIALOGUE_END \xc4&
-SEQ02 \xf6\x02 SEQ03 $\x03 OP_CMD 
-LOAD3 SCE048_017\x00\x1f\xda( SCE_CMD 
+\x00 DIALOGUE_END \xc4& SEQ01
+\x1f\xf6\x02 CALL3 $\x03 REF_END1 
+LOAD3 SCE048_017\x00\x1f\xda( REF_END2 
 DIALOGUE_1 \xe0Z DIALOGUE_2 p\x00\x00
  
 取り巻き\n　「お前なんか相手にしてやるのはおれらくらいなんだからな」\n取り巻き\n　「感謝しろよ」\n取り巻き\n　「ボランティアだな、ボランティア」\n取り巻き\n　「公衆便所が！」\n取り巻き\n　「これで４発目だよぉ、なたねぇ！」\n取り巻き\n　「おうっ！　出る！」\n取り巻き\n　「さすがに薄くなってきたなあ、ザーメンも」\n取り巻き\n　「おれもう水みたいなのしか出ねえよ」\n取り巻き\n　「飲ませれば、こいつに？」\n取り巻き\n　「眼ェ開けろ、電波子！」\w\z
-\x00 DIALOGUE_END \x1e)
-SEQ02 \xf6\x02 SEQ03 $\x03 OP_CMD 
-LOAD3 SCE048_018\x00\x1f\x18+ SCE_CMD 
+\x00 DIALOGUE_END \x1e) SEQ01
+\x1f\xf6\x02 CALL3 $\x03 REF_END1 
+LOAD3 SCE048_018\x00\x1f\x18+ REF_END2 
 DIALOGUE_1 \xe4Z DIALOGUE_2 {\x00\x00
  
 取り巻き\n　「にしてもくせえなあ」@
@@ -223,17 +223,17 @@ DIALOGUE_1 \xe4Z DIALOGUE_2 {\x00\x00
 取り巻き\n　「おまえバカじゃねえの！」@
 取り巻き\n　「ちげえよ！　スポイトとかで吸い取ってさ、突っ込んで妊娠\n　　させるの」@
 取り巻き\n　「おもしれえな。誰が父親かは絶対わかんねえよな」\w\z
-\x00\x00\x00 DIALOGUE_END \\+
-SEQ02 \xf6\x02 SEQ03 $\x03 OP_CMD 
-LOAD3 SCE048_019\x00\x1f\x82- SCE_CMD 
+\x00\x00\x00 DIALOGUE_END \\+ SEQ01
+\x1f\xf6\x02 CALL3 $\x03 REF_END1 
+LOAD3 SCE048_019\x00\x1f\x82- REF_END2 
 DIALOGUE_1 \xe8Z DIALOGUE_2 0\x00\x00
  
 取り巻き\n　「おれら４人の特徴併せ持った子供が産まれたりして」\n取り巻き\n　「げらげらげらげら！　おもしれーよソレ！」\n取り巻き\n　「わはははは！」\n取り巻き\n　「うへへへへへ！」\
 
-\x00\x00\x00 DIALOGUE_END \xc6-
-SEQ02 \xf6\x02 SEQ03 $\x03 OP_CMD  \x1e\x00\x00\x00\x00\r\x00 SCE_CMD \x0c\x02\x00\x00"\x1f \x00 SCE_CMD 
-LOAD2 SeStop OP01 \xe6. OP_CMD  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00
-SEQ02 Z\x03 SCE_CMD 
-LOAD2 BgOn OP03 (/ SEQ05 \xf6\x02 SCE_CMD 
-LOAD3 TextClose OP02 P/ OP_CMD 
+\x00\x00\x00 DIALOGUE_END \xc6- SEQ01
+\x1f\xf6\x02 CALL3 $\x03 REF_END1  \x1e\x00\x00\x00\x00\r\x00 REF_END2 \x0c\x02\x00\x00"\x1f \x00 REF_END2 
+LOAD2 SeStop REF1 \xe6. REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00 SEQ01
+\x1fZ\x03 REF_END2 
+LOAD2 BgOn REF3 (/ CALL2 \xf6\x02 REF_END2 
+LOAD3 TextClose REF2 P/ REF_END1 
 END_FILE

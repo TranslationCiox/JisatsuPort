@@ -1,6 +1,6 @@
 START_FILE
 &\x0e\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00l\x0b\x00
-LOAD3 SCEK09_001\x00\x1f\x06\x00 SCE_CMD 
+LOAD3 SCEK09_001\x00\x1f\x06\x00 REF_END2 
 DIALOGUE_1 H\xa7\x01\x0c\x00\x00\x00\x00"\x03;\x00\x00
  
 「ここに落ちている袋、どれくらいあると思う？」\nとゆきはいった。@
@@ -10,15 +10,15 @@ DIALOGUE_1 H\xa7\x01\x0c\x00\x00\x00\x00"\x03;\x00\x00
 「袋に詰めて、落とすの」@
 「猫を？」\w\z
 \x00\x00\x00 DIALOGUE_END J\x00 SEQ01
-LOAD7 .\\Data\\Script\\TextFunc.Fob OP01 V\x01 SCE_CMD 
-LOAD2 TextOn OP01 \x84\x01 OP_CMD  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00 SEQ01
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 V\x01 REF_END2 
+LOAD2 TextOn REF1 \x84\x01 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00 SEQ01
 
-LOAD6 .\\Data\\Script\\Bg.Fob OP03 \xba\x01 SCE_CMD 
-LOAD4 BgAutoFadeIn OP03 \xe4\x01 OP_CMD  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\t\x01 SEQ01
+LOAD6 .\\Data\\Script\\Bg.Fob REF3 \xba\x01 REF_END2 
+LOAD4 BgAutoFadeIn REF3 \xe4\x01 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\t\x01 SEQ01
 
-LOAD6 .\\Data\\Script\\Bgm.Fob OP02 "\x02 SCE_CMD 
-LOAD2 PlayCD OP01 L\x02 OP_CMD 
-LOAD3 SCEK09_002\x00\x1fh\x02 SCE_CMD 
+LOAD6 .\\Data\\Script\\Bgm.Fob REF2 "\x02 REF_END2 
+LOAD2 PlayCD REF1 L\x02 REF_END1 
+LOAD3 SCEK09_002\x00\x1fh\x02 REF_END2 
 DIALOGUE_1 L\xa7\x01\x0c\x00\x00\x00\x00"\x03\x85\x00\x00
  
 「ここらへん、野良猫がたくさんいるの。@
@@ -32,9 +32,9 @@ DIALOGUE_1 L\xa7\x01\x0c\x00\x00\x00\x00"\x03\x85\x00\x00
 　全然死ななかった場合は、もう一回袋を拾って－－」@
 「わかったよ」と私はいって遮った。@
 「もうわかったから。ありがとう、ゆきちゃん」\w\z
-\x00 DIALOGUE_END \xac\x02
-SEQ02 V\x01 SEQ03 \x84\x01 OP_CMD 
-LOAD3 SCEK09_003\x00\x1f\xfa\x04 SCE_CMD 
+\x00 DIALOGUE_END \xac\x02 SEQ01
+\x1fV\x01 CALL3 \x84\x01 REF_END1 
+LOAD3 SCEK09_003\x00\x1f\xfa\x04 REF_END2 
 DIALOGUE_1 P\xa7\x01\x0c\x00\x00\x00\x00"\x03y\x00\x00
  
 　たぶん、ゆきなりのストレス解消法なのだろうと思った。@
@@ -43,9 +43,9 @@ DIALOGUE_1 P\xa7\x01\x0c\x00\x00\x00\x00"\x03y\x00\x00
 優しいゆきがそんなことをしているなんてショックだった。@
 嫌悪と軽蔑がわき上がってくるのも抑えられなかった。@
 でも、秘密の大きさは、私に対する信頼の大きさを意味していた。\n\p信頼の輝きが、秘密の暗さを消し去るくらい明るいと信じてこそ\nの告白である以上、秘密が大きくて暗いほど、私は喜ぶべきなの\nだ。\w\z
-\x00 DIALOGUE_END >\x05
-SEQ02 V\x01 SEQ03 \x84\x01 OP_CMD 
-LOAD3 SCEK09_004\x00\x1f\\\x07 SCE_CMD 
+\x00 DIALOGUE_END >\x05 SEQ01
+\x1fV\x01 CALL3 \x84\x01 REF_END1 
+LOAD3 SCEK09_004\x00\x1f\\\x07 REF_END2 
 DIALOGUE_1 T\xa7\x01\x0c\x00\x00\x00\x00"\x03\xd0\x00\x00
  
 　私は自分の中に生まれた硬いかたまりをかみ砕き、飲み下した。\n\pそして、自分がゆきの秘密を赦したことを伝えたくて、ゆきを優\nしく抱きしめた。@
@@ -58,8 +58,8 @@ DIALOGUE_1 T\xa7\x01\x0c\x00\x00\x00\x00"\x03\xd0\x00\x00
 　そうすれば……」@
 　しばらく間をおいてから、ゆきはぽつりといった。@
 「そうすれば死ぬのが怖くなくなると思うから」\w\z
-\x00\x00\x00 DIALOGUE_END \xa0\x07
-SEQ02 V\x01 SEQ03 \x84\x01 SEQ05 "\x02 SCE_CMD 
-LOAD2 StopCD OP01 &\x0b SEQ05 V\x01 SCE_CMD 
-LOAD3 TextClose OP02 N\x0b OP_CMD 
+\x00\x00\x00 DIALOGUE_END \xa0\x07 SEQ01
+\x1fV\x01 CALL3 \x84\x01 CALL2 "\x02 REF_END2 
+LOAD2 StopCD REF1 &\x0b CALL2 V\x01 REF_END2 
+LOAD3 TextClose REF2 N\x0b REF_END1 
 END_FILE

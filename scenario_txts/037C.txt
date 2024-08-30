@@ -1,9 +1,9 @@
 START_FILE
 \t\x17\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00X\x12\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x08\x01 SEQ01
 
-LOAD6 .\\Data\\Script\\Bgm.Fob OP02  \x00 SCE_CMD 
-LOAD2 PlayCD OP01 J\x00 OP_CMD 
-LOAD3 SCE037_001\x00\x1ff\x00 SCE_CMD 
+LOAD6 .\\Data\\Script\\Bgm.Fob REF2  \x00 REF_END2 
+LOAD2 PlayCD REF1 J\x00 REF_END1 
+LOAD3 SCE037_001\x00\x1ff\x00 REF_END2 
 DIALOGUE_1 pI DIALOGUE_2 \x8f\x00\x00
  
 　屋上は一般学生の立ち入りが禁じられ、階段と屋上を繋ぐ鉄の\n扉には錠が下ろされている。@
@@ -18,9 +18,9 @@ DIALOGUE_1 pI DIALOGUE_2 \x8f\x00\x00
 　光景。\
 
 \x00\x00\x00 DIALOGUE_END \xaa\x00 SEQ01
-LOAD7 .\\Data\\Script\\TextFunc.Fob OP01 \x06\x03 SCE_CMD 
-LOAD2 TextOn OP01 4\x03 OP_CMD 
-LOAD3 SCE037_002\x00\x1fP\x03 SCE_CMD 
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \x06\x03 REF_END2 
+LOAD2 TextOn REF1 4\x03 REF_END1 
+LOAD3 SCE037_002\x00\x1fP\x03 REF_END2 
 DIALOGUE_1 tI DIALOGUE_2 W\x00\x00
  
 　世界の輪郭がぼやけ始めたころ、拓司は何時間も屋上に寝転が\nって空を見上げたものだった。@
@@ -30,9 +30,9 @@ DIALOGUE_1 tI DIALOGUE_2 W\x00\x00
 　なんの心のふるえも呼び起こさない、ただの空と、雲。@
 光景がそこにあった。\
 
-\x00\x00\x00 DIALOGUE_END \x94\x03
-SEQ02 \x06\x03 SEQ03 4\x03 OP_CMD 
-LOAD3 SCE037_003\x00\x1f*\x05 SCE_CMD 
+\x00\x00\x00 DIALOGUE_END \x94\x03 SEQ01
+\x1f\x06\x03 CALL3 4\x03 REF_END1 
+LOAD3 SCE037_003\x00\x1f*\x05 REF_END2 
 DIALOGUE_1 xI DIALOGUE_2 F\x00\x00
  
 早桃\n　「わあ、気持ちいい！」@
@@ -44,9 +44,9 @@ DIALOGUE_1 xI DIALOGUE_2 F\x00\x00
 　　お前が尋ねなかっただけだろ」@
 早桃\n　「ふふふ！」\
 
-\x00 DIALOGUE_END n\x05
-SEQ02 \x06\x03 SEQ03 4\x03 OP_CMD 
-LOAD3 SCE037_004\x00\x1f\xc0\x06 SCE_CMD 
+\x00 DIALOGUE_END n\x05 SEQ01
+\x1f\x06\x03 CALL3 4\x03 REF_END1 
+LOAD3 SCE037_004\x00\x1f\xc0\x06 REF_END2 
 DIALOGUE_1 |I DIALOGUE_2 c\x00\x00
  
 　拓司と早桃は、給水塔の陰に、並んで腰を下ろした。@
@@ -57,9 +57,9 @@ DIALOGUE_1 |I DIALOGUE_2 c\x00\x00
 早桃\n　「うそばっかり」@
 拓司\n　「いいからそっちよこせ！」\
 
-\x00\x00\x00 DIALOGUE_END \x04\x07
-SEQ02 \x06\x03 SEQ03 4\x03 OP_CMD 
-LOAD3 SCE037_005\x00\x1f\xca\x08 SCE_CMD 
+\x00\x00\x00 DIALOGUE_END \x04\x07 SEQ01
+\x1f\x06\x03 CALL3 4\x03 REF_END1 
+LOAD3 SCE037_005\x00\x1f\xca\x08 REF_END2 
 DIALOGUE_1 \x80I DIALOGUE_2 C\x00\x00
  
 早桃\n　「やだ！　もう！\p　うふふ……」@
@@ -70,9 +70,9 @@ DIALOGUE_1 \x80I DIALOGUE_2 C\x00\x00
 \n早桃\n　「……それにこっちがわ、少しかじっちゃったから」@
 拓司\n　「……」\
 
-\x00\x00\x00 DIALOGUE_END \x0e\t
-SEQ02 \x06\x03 SEQ03 4\x03 OP_CMD 
-LOAD3 SCE037_006\x00\x1fT\n SCE_CMD 
+\x00\x00\x00 DIALOGUE_END \x0e\t SEQ01
+\x1f\x06\x03 CALL3 4\x03 REF_END1 
+LOAD3 SCE037_006\x00\x1fT\n REF_END2 
 DIALOGUE_1 \x84I DIALOGUE_2 A\x00\x00
  
 早桃\n　「……」@
@@ -82,12 +82,12 @@ DIALOGUE_1 \x84I DIALOGUE_2 A\x00\x00
 \n早桃\n　「もう！　おにいちゃんってば！」@
 拓司\n　「はは……うっ！」\
 
-\x00 DIALOGUE_END \x98\n
-SEQ02 \x06\x03 SEQ03 4\x03 OP_CMD  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00 SEQ01
+\x00 DIALOGUE_END \x98\n SEQ01
+\x1f\x06\x03 CALL3 4\x03 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00 SEQ01
 
-LOAD6 .\\Data\\Script\\Bg.Fob OP03 \xf0\x0b SCE_CMD 
-LOAD2 BgOn OP03 \x1a\x0c OP_CMD 
-LOAD3 SCE037_007\x00\x1f6\x0c SCE_CMD 
+LOAD6 .\\Data\\Script\\Bg.Fob REF3 \xf0\x0b REF_END2 
+LOAD2 BgOn REF3 \x1a\x0c REF_END1 
+LOAD3 SCE037_007\x00\x1f6\x0c REF_END2 
 DIALOGUE_1 \x88I DIALOGUE_2 I\x00\x00
  
 早桃\n　「えっ、、お、おにいちゃん？！」@
@@ -99,9 +99,9 @@ DIALOGUE_1 \x88I DIALOGUE_2 I\x00\x00
 拓司\n　「……」@
 早桃\n　「……」\
 
-\x00 DIALOGUE_END z\x0c
-SEQ02 \x06\x03 SEQ03 4\x03 OP_CMD 
-LOAD3 SCE037_008\x00\x1f\xd8\r SCE_CMD 
+\x00 DIALOGUE_END z\x0c SEQ01
+\x1f\x06\x03 CALL3 4\x03 REF_END1 
+LOAD3 SCE037_008\x00\x1f\xd8\r REF_END2 
 DIALOGUE_1 \x8cI DIALOGUE_2 s\x00\x00
  
 拓司\n　「……」@
@@ -113,10 +113,10 @@ DIALOGUE_1 \x8cI DIALOGUE_2 s\x00\x00
 \n　パンを食べ終わった２人は、そのまま給水塔に頭をもたらせ、\n空を見上げた。\pゆったりとした時間が流れていた。@
 　遠くから、ぼんやりとサッカーをしている学生たちの声が聞こ\nえた。\
 
- DIALOGUE_END \x1c\x0e
-SEQ02 \x06\x03 SEQ03 4\x03 OP_CMD  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00
-SEQ02 \xf0\x0b SEQ03 \x1a\x0c OP_CMD 
-LOAD3 SCE037_009\x00\x1fV\x10 SCE_CMD 
+ DIALOGUE_END \x1c\x0e SEQ01
+\x1f\x06\x03 CALL3 4\x03 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00 SEQ01
+\x1f\xf0\x0b CALL3 \x1a\x0c REF_END1 
+LOAD3 SCE037_009\x00\x1fV\x10 REF_END2 
 DIALOGUE_1 \x90I DIALOGUE_2 8\x00\x00
  
 早桃\n　「おにいちゃん？」@
@@ -127,13 +127,13 @@ DIALOGUE_1 \x90I DIALOGUE_2 8\x00\x00
 拓司\n　「……」@
 早桃\n　「……どうしてかな？」\
 
-\x00 DIALOGUE_END \x9a\x10
-SEQ02 \x06\x03 SEQ03 4\x03 OP_CMD \x03\x10\x00\x00
+\x00 DIALOGUE_END \x9a\x10 SEQ01
+\x1f\x06\x03 CALL3 4\x03 REF_END1 \x03\x10\x00\x00
 CHOICE
 話題を逸らす\n早桃はどうなんだ、と逆に問い返す\n\l0,2,
 ENDCHOICE
 
-\x00 DIALOGUE_END \xb4\x11
-SEQ02 \x06\x03 SEQ03 4\x03 SEQ05 \x06\x03 SCE_CMD 
-LOAD3 TextClose OP02 :\x12 OP_CMD 
+\x00 DIALOGUE_END \xb4\x11 SEQ01
+\x1f\x06\x03 CALL3 4\x03 CALL2 \x06\x03 REF_END2 
+LOAD3 TextClose REF2 :\x12 REF_END1 
 END_FILE

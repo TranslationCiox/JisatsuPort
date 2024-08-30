@@ -25,12 +25,6 @@ patterns = [
     },
 
     {
-        "pattern": [b'\x00', b'\x0c', b'\x02', b'\x00', b'\x00', b'"', b'\x1f'],
-        # Used after EVERY block of dialogue EVEN dialogue choice blocks.
-        "action": "\nSEQ02 "
-    },
-
-    {
         "pattern": [b'\x00', b'\x0c', b'\x02', b'\x00', b'\x00', b'"'],
         # Used after EVERY block of dialogue EVEN dialogue choice blocks.
         "action": " SEQ01\n"
@@ -61,27 +55,33 @@ patterns = [
     },
 
     {
-        "pattern": [b'\x00', b'\x1e', b'\x02', b'\x00', b'\x00', b'5', b'\x1f'],
-        # Used in EVERY sequence with commands like e.g. NormalFadeIn
-        "action": " SEQ05 "
+        "pattern": [b'\x00', b'\x0c', b'\x02', b'\x00', b'\x00', b'"', b'\x1f'],
+        # Used after EVERY block of dialogue EVEN dialogue choice blocks.
+        "action": "\nCALL1 "
     },
 
     {
-        "pattern": [b'\x00', b'\x1e', b'\x02', b'\x00', b'\x00', b'5'],
+        "pattern": [b'\x00', b'\x1e', b'\x02', b'\x00', b'\x00', b'5', b'\x1f'],
         # Used in EVERY sequence with commands like e.g. NormalFadeIn
-        "action": " OP_CMD "
+        "action": " CALL2 "
     },
 
     {
         "pattern": [b'\x00', b'\x1e', b'\x02', b'\x00', b'\x00', b'\x1f'],
         # Used in EVERY SCExx_xxx command.
-        "action": " SEQ03 "
+        "action": " CALL3 "
+    },
+
+    {
+        "pattern": [b'\x00', b'\x1e', b'\x02', b'\x00', b'\x00', b'5'],
+        # Used in EVERY sequence with commands like e.g. NormalFadeIn
+        "action": " REF_END1 "
     },
 
     {
         "pattern": [b'\x00', b'\x1e', b'\x02', b'\x00', b'\x00'],
         # Used in EVERY SCExx_xxx command.
-        "action": " SCE_CMD "
+        "action": " REF_END2 "
     },
     # {
     #     "pattern": [b'J', b'\x00', b'\x00'],
@@ -199,27 +199,27 @@ patterns = [
     {
         "pattern": [b'\x81\x1f'],
         #
-        "action": " OP01 "
+        "action": " REF1 "
     },
     {
         "pattern": [b'v\x81\x1f'],
         #
-        "action": " OP02 "
+        "action": " REF2 "
     },
     {
         "pattern": [b'sv\x81\x1f'],
         # Seems to load files.
-        "action": " OP03 "
+        "action": " REF3 "
     },
     {
         "pattern": [b't\x81\x1f'],
         #
-        "action": " OP04 "
+        "action": " REF4 "
     },
     {
         "pattern": [b'6t\x81\x1f'],
         #
-        "action": " OP05 "
+        "action": " REF5 "
     },
     {
         "pattern": [b'5'],

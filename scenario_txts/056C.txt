@@ -1,6 +1,6 @@
 START_FILE
 \xf82\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xf2*\x00
-LOAD3 SCE056_001\x00\x1f\x06\x00 SCE_CMD 
+LOAD3 SCE056_001\x00\x1f\x06\x00 REF_END2 
 DIALOGUE_1  g DIALOGUE_2 J\x00\x00
  
 学生\n　「おい、トン吉！」@
@@ -10,9 +10,9 @@ DIALOGUE_1  g DIALOGUE_2 J\x00\x00
 怯えて眺める早桃の顔にも、明らかな嫌悪が浮かんでいる。\
 
 \x00 DIALOGUE_END J\x00 SEQ01
-LOAD7 .\\Data\\Script\\TextFunc.Fob OP01 \x92\x01 SCE_CMD 
-LOAD2 TextOn OP01 \xc0\x01 OP_CMD 
-LOAD3 SCE056_002\x00\x1f\xdc\x01 SCE_CMD 
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \x92\x01 REF_END2 
+LOAD2 TextOn REF1 \xc0\x01 REF_END1 
+LOAD3 SCE056_002\x00\x1f\xdc\x01 REF_END2 
 DIALOGUE_1 $g DIALOGUE_2 n\x00\x00
  
 学生\n　「お前さ、虎菱のこと好きなんだろ？」@
@@ -24,9 +24,9 @@ DIALOGUE_1 $g DIALOGUE_2 n\x00\x00
 学生\n　「さあ、みんな！\p　いじめられっこ同士がいま結ばれるぞ！@
 　　じっくり観察しようじゃないか！」\
 
-\x00\x00\x00 DIALOGUE_END  \x02
-SEQ02 \x92\x01 SEQ03 \xc0\x01 OP_CMD 
-LOAD3 SCE056_003\x00\x1f\x12\x04 SCE_CMD 
+\x00\x00\x00 DIALOGUE_END  \x02 SEQ01
+\x1f\x92\x01 CALL3 \xc0\x01 REF_END1 
+LOAD3 SCE056_003\x00\x1f\x12\x04 REF_END2 
 DIALOGUE_1 (g DIALOGUE_2 W\x00\x00
  
 太った少年は、早桃の顔をじっとのぞき込んだ。@
@@ -38,9 +38,9 @@ DIALOGUE_1 (g DIALOGUE_2 W\x00\x00
 トン吉\n　「キ、キスしようよ虎菱さん」@
 早桃\n　「い……いやっ！\p　やめて、やめてえっ！」\
 
-\x00\x00\x00 DIALOGUE_END V\x04
-SEQ02 \x92\x01 SEQ03 \xc0\x01 OP_CMD 
-LOAD3 SCE056_004\x00\x1f\xec\x05 SCE_CMD 
+\x00\x00\x00 DIALOGUE_END V\x04 SEQ01
+\x1f\x92\x01 CALL3 \xc0\x01 REF_END1 
+LOAD3 SCE056_004\x00\x1f\xec\x05 REF_END2 
 DIALOGUE_1 ,g DIALOGUE_2 \x8e\x00\x00
  
 トン吉\n　「こんな形で残念だけど……き、君だって僕のことはキライじ\n　　ゃないはずだろ？\p　ぼ、僕たちならきっとお似合いのカップ\n　　ルになれるから……お互いの心の傷を分かり合えるから……\n　　はあ、はあ……さ、早桃お……」@
@@ -50,9 +50,9 @@ DIALOGUE_1 ,g DIALOGUE_2 \x8e\x00\x00
 \n弾かれたように少年が早桃から飛び退き、どしんと尻餅をついた。\n\p口に手を当てているところを見ると、どうやら噛みつかれたよう\nだ。@
 ２人を取り囲んだクラスの全員が、どっと笑い声を上げた。\
 
-\x00\x00\x00 DIALOGUE_END 0\x06
-SEQ02 \x92\x01 SEQ03 \xc0\x01 OP_CMD 
-LOAD3 SCE056_005\x00\x1f\xa2\x08 SCE_CMD 
+\x00\x00\x00 DIALOGUE_END 0\x06 SEQ01
+\x1f\x92\x01 CALL3 \xc0\x01 REF_END1 
+LOAD3 SCE056_005\x00\x1f\xa2\x08 REF_END2 
 DIALOGUE_1 0g DIALOGUE_2 c\x00\x00
  
 学生\n　「虎菱～！\p　ファーストキスにそりゃあんまりだろ～！」@
@@ -62,9 +62,9 @@ DIALOGUE_1 0g DIALOGUE_2 c\x00\x00
 \n囃し立てる声を聞いて、少年の顔に殺気めいたものが宿った。@
 しかしその怒りはクラスメイトたちにではなく、早桃に……自分\nよりも弱い立場の人間へと向けられた。\
 
-\x00\x00\x00 DIALOGUE_END \xe6\x08
-SEQ02 \x92\x01 SEQ03 \xc0\x01 OP_CMD 
-LOAD3 SCE056_006\x00\x1f\xac\n SCE_CMD 
+\x00\x00\x00 DIALOGUE_END \xe6\x08 SEQ01
+\x1f\x92\x01 CALL3 \xc0\x01 REF_END1 
+LOAD3 SCE056_006\x00\x1f\xac\n REF_END2 
 DIALOGUE_1 4g DIALOGUE_2 \xc5\x00\x00
  
 トン吉\n　「虎菱……お前まで俺のことバカにするのかッ？！\p　お前なら\n　　……クラスの嫌われ者のお前なら、俺のこと喜んで受け入れ\n　　るって思ったのに！\p　お前が消しゴム落としたときに拾って\n　　やったの忘れたのかよ！\p　お前をいじめた上村の机に鼠の死\n　　骸入れてやったのは俺なんだぞ！\p　お前みたいな……ゴミ女\n　　の水着だって盗んで使ってやったんだ！\p　わざわざ朝早く学\n　　校にきて、机の上に精液塗り広げてやったし、教科書に無修\n　　正写真挟んでやったり……全部お前のためにやったのにお前\n　　は俺を否定するのか、矛盾してるぞ恩知らずがッ！」@
@@ -73,9 +73,9 @@ DIALOGUE_1 4g DIALOGUE_2 \xc5\x00\x00
 せき込む早桃を見下ろして、少年は満足げに笑った。@
 そしてチャックをおろして、すでに固く反り返ったペ○スを露出\nさせる。\
 
-\x00 DIALOGUE_END \xf0\n
-SEQ02 \x92\x01 SEQ03 \xc0\x01 OP_CMD 
-LOAD3 SCE056_007\x00\x1f>\x0e SCE_CMD 
+\x00 DIALOGUE_END \xf0\n SEQ01
+\x1f\x92\x01 CALL3 \xc0\x01 REF_END1 
+LOAD3 SCE056_007\x00\x1f>\x0e REF_END2 
 DIALOGUE_1 8g DIALOGUE_2 b\x00\x00
  
 まわりを取り囲んだ学生たちが、おお、と低くどよめいた。@
@@ -85,12 +85,12 @@ DIALOGUE_1 8g DIALOGUE_2 b\x00\x00
 　　うげ～！」@
 学生\n　「豚のガキ孕まされるんだぜ？\p　人間としちゃ、生きてらんね\n　　えよなあ～、げらげら！」\
 
-\x00\x00\x00 DIALOGUE_END \x82\x0e
-SEQ02 \x92\x01 SEQ03 \xc0\x01 OP_CMD  \x1e\x00\x00\x00\x00\r\x00\x00\x1eV\x00 SEQ01
+\x00\x00\x00 DIALOGUE_END \x82\x0e SEQ01
+\x1f\x92\x01 CALL3 \xc0\x01 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1eV\x00 SEQ01
 
-LOAD6 .\\Data\\Script\\Bg.Fob OP03 ^\x10 SCE_CMD 
-LOAD4 BgAutoFadeIn OP03 \x88\x10 OP_CMD 
-LOAD3 SCE056_008\x00\x1f\xac\x10 SCE_CMD 
+LOAD6 .\\Data\\Script\\Bg.Fob REF3 ^\x10 REF_END2 
+LOAD4 BgAutoFadeIn REF3 \x88\x10 REF_END1 
+LOAD3 SCE056_008\x00\x1f\xac\x10 REF_END2 
 DIALOGUE_1 <g DIALOGUE_2 u\x00\x00
  
 少年は早桃の髪をつかんで、乱暴に床に引き倒した。@
@@ -100,9 +100,9 @@ DIALOGUE_1 <g DIALOGUE_2 u\x00\x00
 無様な姿だ。@
 学生たちからも嘲笑がとぶが、少年は意に介する様子もなく、た\nだひたすら早桃の上で腰を上下させている。\
 
-\x00\x00\x00 DIALOGUE_END \xf0\x10
-SEQ02 \x92\x01 SEQ03 \xc0\x01 OP_CMD 
-LOAD3 SCE056_009\x00\x1f\xfe\x12 SCE_CMD 
+\x00\x00\x00 DIALOGUE_END \xf0\x10 SEQ01
+\x1f\x92\x01 CALL3 \xc0\x01 REF_END1 
+LOAD3 SCE056_009\x00\x1f\xfe\x12 REF_END2 
 DIALOGUE_1 @g DIALOGUE_2 \xb8\x00\x00
  
 トン吉\n　「はあ、はあ、メチャクチャにしてやる！\p　お前がバカにして\n　　いる男の汚い精液で、お前の子宮まで支配してやるからな！」\n\p早桃\n　「げほっ、げほっ！\p　や、やめて！」@
@@ -113,9 +113,9 @@ DIALOGUE_1 @g DIALOGUE_2 \xb8\x00\x00
 早桃は無意識に、もっとも信頼する義兄の名前を口にしたのだ。@
 しかし拓司はなにもすることができない。\
 
-\x00 DIALOGUE_END B\x13
-SEQ02 \x92\x01 SEQ03 \xc0\x01 OP_CMD 
-LOAD3 SCE056_010\x00\x1f\\\x16 SCE_CMD 
+\x00 DIALOGUE_END B\x13 SEQ01
+\x1f\x92\x01 CALL3 \xc0\x01 REF_END1 
+LOAD3 SCE056_010\x00\x1f\\\x16 REF_END2 
 DIALOGUE_1 Dg DIALOGUE_2 \x86\x00\x00
  
 トン吉\n　「はあ、はあ……そうだ、こ、これから僕のことをおにいちゃ\n　　んって呼べよ！」@
@@ -127,9 +127,9 @@ DIALOGUE_1 Dg DIALOGUE_2 \x86\x00\x00
 何発目かがうち下ろされたあと、ついに早桃がいった。@
 \n早桃\n　「……お……おにい……ちゃ……ん」\
 
-\x00\x00\x00 DIALOGUE_END \xa0\x16
-SEQ02 \x92\x01 SEQ03 \xc0\x01 OP_CMD 
-LOAD3 SCE056_011\x00\x1f\xf2\x18 SCE_CMD 
+\x00\x00\x00 DIALOGUE_END \xa0\x16 SEQ01
+\x1f\x92\x01 CALL3 \xc0\x01 REF_END1 
+LOAD3 SCE056_011\x00\x1f\xf2\x18 REF_END2 
 DIALOGUE_1 Hg DIALOGUE_2 k\x00\x00
  
 トン吉\n　「も、もう一回『おにいちゃん』っていって！\p　はあ、はあ、\n　　は、早くいえってば！」@
@@ -140,9 +140,9 @@ DIALOGUE_1 Hg DIALOGUE_2 k\x00\x00
 \n途端、早桃に劇的な変化が訪れた。@
 身体をぶるぶると震わせて、抵抗がぱたりと止んだのだ。\
 
-\x00\x00\x00 DIALOGUE_END 6\x19
-SEQ02 \x92\x01 SEQ03 \xc0\x01 OP_CMD 
-LOAD3 SCE056_012\x00\x1f\x1c\x1b SCE_CMD 
+\x00\x00\x00 DIALOGUE_END 6\x19 SEQ01
+\x1f\x92\x01 CALL3 \xc0\x01 REF_END1 
+LOAD3 SCE056_012\x00\x1f\x1c\x1b REF_END2 
 DIALOGUE_1 Lg DIALOGUE_2 \xa4\x00\x00
  
 早桃\n　「儀式……身を清めて……死ねるための……儀式」@
@@ -153,10 +153,10 @@ DIALOGUE_1 Lg DIALOGUE_2 \xa4\x00\x00
 トン吉\n　「そうかそうか！\p　も、もうすぐだからね！\p　もうすぐ大好き\n　　なおにいちゃんのどろどろのやつを、さ、早桃の制服にぶち\n　　まけてあげるからね！」@
 早桃\n　「ふうっ……うくっ……お、お願い……します……はあ……」\
 
-\x00\x00\x00 DIALOGUE_END `\x1b
-SEQ02 \x92\x01 SEQ03 \xc0\x01 OP_CMD  \x1e\x00\x00\x00\x00\r\x00\x00\x1eV\x00
-SEQ02 ^\x10 SEQ03 \x88\x10 OP_CMD 
-LOAD3 SCE056_013\x00\x1f^\x1e SCE_CMD 
+\x00\x00\x00 DIALOGUE_END `\x1b SEQ01
+\x1f\x92\x01 CALL3 \xc0\x01 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1eV\x00 SEQ01
+\x1f^\x10 CALL3 \x88\x10 REF_END1 
+LOAD3 SCE056_013\x00\x1f^\x1e REF_END2 
 DIALOGUE_1 Pg DIALOGUE_2 \xba\x00\x00
  
 平野\n　「好きだよ早桃！\p　おにいちゃん、お前のこと愛してるよぉ！@
@@ -169,9 +169,9 @@ DIALOGUE_1 Pg DIALOGUE_2 \xba\x00\x00
 拓司は、めまいにも似たぐらつきを感じ、そして思った。@
 \n－－これは……現実ではないのではないか？\
 
-\x00 DIALOGUE_END \xa2\x1e
-SEQ02 \x92\x01 SEQ03 \xc0\x01 OP_CMD 
-LOAD3 SCE056_014\x00\x1f\xc4! SCE_CMD 
+\x00 DIALOGUE_END \xa2\x1e SEQ01
+\x1f\x92\x01 CALL3 \xc0\x01 REF_END1 
+LOAD3 SCE056_014\x00\x1f\xc4! REF_END2 
 DIALOGUE_1 Tg DIALOGUE_2 \x9b\x00\x00
  
 あの白い壁の世界がそうであったように、いま、自分は妄想の世\n界にいるのではないか？\p　自分でも気づかない間に、妄想世界に\n迷い込んで、そのなかで喘いでいるのではないか？　@
@@ -181,9 +181,9 @@ DIALOGUE_1 Tg DIALOGUE_2 \x9b\x00\x00
 早桃\n　「お……おにいちゃん、出して……」@
 トン吉\n　「い、淫乱妹め！」\
 
-\x00\x00\x00 DIALOGUE_END \x08"
-SEQ02 \x92\x01 SEQ03 \xc0\x01 OP_CMD 
-LOAD3 SCE056_015\x00\x1f\xae$ SCE_CMD 
+\x00\x00\x00 DIALOGUE_END \x08" SEQ01
+\x1f\x92\x01 CALL3 \xc0\x01 REF_END1 
+LOAD3 SCE056_015\x00\x1f\xae$ REF_END2 
 DIALOGUE_1 Xg DIALOGUE_2 s\x00\x00
  
 早桃\n　「おにいちゃんの精液をぶっかけて、淫乱な早桃の制服をおに\n　　いちゃんのおたまじゃくしでべとべとに汚してください」@
@@ -192,10 +192,10 @@ DIALOGUE_1 Xg DIALOGUE_2 s\x00\x00
 ビクビクと身体を震わせて、それからがっくりと力つきた。@
 それまで息を呑んで見守っていた学生たちが、一斉に拍手で囃し\n立てる。\
 
-\x00\x00\x00 DIALOGUE_END \xf2$
-SEQ02 \x92\x01 SEQ03 \xc0\x01 OP_CMD  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00
-SEQ02 ^\x10 SEQ03 \x88\x10 OP_CMD 
-LOAD3 SCE056_016\x00\x1f,' SCE_CMD 
+\x00\x00\x00 DIALOGUE_END \xf2$ SEQ01
+\x1f\x92\x01 CALL3 \xc0\x01 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00 SEQ01
+\x1f^\x10 CALL3 \x88\x10 REF_END1 
+LOAD3 SCE056_016\x00\x1f,' REF_END2 
 DIALOGUE_1 \\g DIALOGUE_2 z\x00\x00
  
 学生\n　「おめでとう！」@
@@ -207,15 +207,15 @@ DIALOGUE_1 \\g DIALOGUE_2 z\x00\x00
 クラスメイト全員の前で性欲処理の道具にされ、スカートを汚さ\nれたのだ。\pショックを受けないほうがおかしい。@
 しかもさらに－－\
 
-\x00 DIALOGUE_END p'
-SEQ02 \x92\x01 SEQ03 \xc0\x01 OP_CMD 
-LOAD3 SCE056_017\x00\x1f\x92) SCE_CMD 
+\x00 DIALOGUE_END p' SEQ01
+\x1f\x92\x01 CALL3 \xc0\x01 REF_END1 
+LOAD3 SCE056_017\x00\x1f\x92) REF_END2 
 DIALOGUE_1 `g DIALOGUE_2 .\x00\x00
  
 トン吉\n　「早桃……お、おにいちゃんのチ○ポ、お口できれいにしてく\n　　れよ」@
 早桃\n　「……はい。\pおにいちゃんのチ○ポ、早桃のおくちできれいに\n　　させてください……」\
 
-\x00 DIALOGUE_END \xd6)
-SEQ02 \x92\x01 SEQ03 \xc0\x01 SEQ05 \x92\x01 SCE_CMD 
-LOAD3 TextClose OP02 \xd4* OP_CMD 
+\x00 DIALOGUE_END \xd6) SEQ01
+\x1f\x92\x01 CALL3 \xc0\x01 CALL2 \x92\x01 REF_END2 
+LOAD3 TextClose REF2 \xd4* REF_END1 
 END_FILE

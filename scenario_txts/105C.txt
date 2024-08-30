@@ -1,6 +1,6 @@
 START_FILE
 \x9f\x0c\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00H\n\x00
-LOAD3 SCE105_001\x00\x1f\x06\x00 SCE_CMD 
+LOAD3 SCE105_001\x00\x1f\x06\x00 REF_END2 
 DIALOGUE_1 \xb0\xb3 DIALOGUE_2 \xb7\x00\x00
  
 /*▲BGM　停止*/\a4,-1,0,0,/*■黒　表示（ノンエフェクト）*/\a7,-1,-1,0,\a0,200,1,0,\a6,0,0,0,拓司\n　「もういい、御堂！」@
@@ -13,9 +13,9 @@ DIALOGUE_1 \xb0\xb3 DIALOGUE_2 \xb7\x00\x00
 拓司\n　「覚悟？\p……それは誰かを殺してでも生き残るってことか？」\
 
 \x00\x00\x00 DIALOGUE_END J\x00 SEQ01
-LOAD7 .\\Data\\Script\\TextFunc.Fob OP01 F\x03 SCE_CMD 
-LOAD2 TextOn OP01 t\x03 OP_CMD 
-LOAD3 SCE105_002\x00\x1f\x90\x03 SCE_CMD 
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 F\x03 REF_END2 
+LOAD2 TextOn REF1 t\x03 REF_END1 
+LOAD3 SCE105_002\x00\x1f\x90\x03 REF_END2 
 DIALOGUE_1 \xb4\xb3 DIALOGUE_2 \x88\x00\x00
  
 御堂はしばらく無言だった。\pそれは、拓司の質問をかみ砕いて味\nわっているかのように見えた。\pやがて、御堂はなにかをいいかけ\nたが、思い立ったように言葉を飲み込んだ。@
@@ -26,9 +26,9 @@ DIALOGUE_1 \xb4\xb3 DIALOGUE_2 \x88\x00\x00
 頬の内側は、まるで砂漠みたいにカラカラだ。@
 拓司は舌先で唇を湿らせ、震える声でいった。\
 
-\x00\x00\x00 DIALOGUE_END \xd4\x03
-SEQ02 F\x03 SEQ03 t\x03 OP_CMD 
-LOAD3 SCE105_003\x00\x1f.\x06 SCE_CMD 
+\x00\x00\x00 DIALOGUE_END \xd4\x03 SEQ01
+\x1fF\x03 CALL3 t\x03 REF_END1 
+LOAD3 SCE105_003\x00\x1f.\x06 REF_END2 
 DIALOGUE_1 \xb8\xb3 DIALOGUE_2 q\x00\x00
  
 拓司\n　「……雲居さん。\p俺たちは……覚悟を……決めている。@
@@ -38,9 +38,9 @@ DIALOGUE_1 \xb8\xb3 DIALOGUE_2 q\x00\x00
 なたね\n　「……」@
 \nなたねはジロリと、上目遣いに拓司を睨んだ。\
 
-\x00 DIALOGUE_END r\x06
-SEQ02 F\x03 SEQ03 t\x03 OP_CMD 
-LOAD3 SCE105_004\x00\x1fp\x08 SCE_CMD 
+\x00 DIALOGUE_END r\x06 SEQ01
+\x1fF\x03 CALL3 t\x03 REF_END1 
+LOAD3 SCE105_004\x00\x1fp\x08 REF_END2 
 DIALOGUE_1 \xbc\xb3 DIALOGUE_2 L\x00\x00
  
 なたね\n　「……」@
@@ -51,7 +51,7 @@ DIALOGUE_1 \xbc\xb3 DIALOGUE_2 L\x00\x00
 ざー。@
 /*▲SE01　停止*/\a4,2,0,0,\nラジオのノイズだけが小さく一晩中続いていた。\
 
-\x00\x00\x00 DIALOGUE_END \xb4\x08
-SEQ02 F\x03 SEQ03 t\x03 SEQ05 F\x03 SCE_CMD 
-LOAD3 TextClose OP02 *\n OP_CMD 
+\x00\x00\x00 DIALOGUE_END \xb4\x08 SEQ01
+\x1fF\x03 CALL3 t\x03 CALL2 F\x03 REF_END2 
+LOAD3 TextClose REF2 *\n REF_END1 
 END_FILE

@@ -1,12 +1,12 @@
 START_FILE
 \xef\x18\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\x04\x12\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1e<\x00 SEQ01
 
-LOAD6 .\\Data\\Script\\Bg.Fob OP03  \x00 SCE_CMD 
-LOAD4 BgAutoFadeIn OP03 J\x00 OP_CMD  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x08\x01 SEQ01
+LOAD6 .\\Data\\Script\\Bg.Fob REF3  \x00 REF_END2 
+LOAD4 BgAutoFadeIn REF3 J\x00 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x08\x01 SEQ01
 
-LOAD6 .\\Data\\Script\\Bgm.Fob OP02 \x88\x00 SCE_CMD 
-LOAD2 PlayCD OP01 \xb2\x00 OP_CMD 
-LOAD3 SCEK01_001\x00\x1f\xce\x00 SCE_CMD 
+LOAD6 .\\Data\\Script\\Bgm.Fob REF2 \x88\x00 REF_END2 
+LOAD2 PlayCD REF1 \xb2\x00 REF_END1 
+LOAD3 SCEK01_001\x00\x1f\xce\x00 REF_END2 
 DIALOGUE_1 \xe0\xa5\x01\x0c\x00\x00\x00\x00"\x03Z\x00\x00
  
 カンナ\n　「私、ずいぶんひどいこといったみたいね」@
@@ -16,9 +16,9 @@ DIALOGUE_1 \xe0\xa5\x01\x0c\x00\x00\x00\x00"\x03Z\x00\x00
 カンナ\n　「そうね……\pええ、たぶんそう。\pでも、私がいったことは事\n　　実よ」@
 拓司\n　「……」\w\z
 \x00 DIALOGUE_END \x12\x01 SEQ01
-LOAD7 .\\Data\\Script\\TextFunc.Fob OP01 \x9a\x02 SCE_CMD 
-LOAD2 TextOn OP01 \xc8\x02 OP_CMD 
-LOAD3 SCEK01_002\x00\x1f\xe4\x02 SCE_CMD 
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \x9a\x02 REF_END2 
+LOAD2 TextOn REF1 \xc8\x02 REF_END1 
+LOAD3 SCEK01_002\x00\x1f\xe4\x02 REF_END2 
 DIALOGUE_1 \xe4\xa5\x01\x0c\x00\x00\x00\x00"\x03\x8b\x00\x00
  
 カンナ\n　「あなたは道具だって……私、いったでしょう？@
@@ -30,20 +30,20 @@ DIALOGUE_1 \xe4\xa5\x01\x0c\x00\x00\x00\x00"\x03\x8b\x00\x00
 拓司\n　「……どういうことなんだ？」@
 カンナ\n　「長い話なんだけれど……聞いてもらえる？」@
 拓司\n　「ああ」\w\z
-\x00 DIALOGUE_END (\x03
-SEQ02 \x9a\x02 SEQ03 \xc8\x02 OP_CMD 
-LOAD3 SCEK01_003\x00\x1f\x8e\x05 SCE_CMD 
+\x00 DIALOGUE_END (\x03 SEQ01
+\x1f\x9a\x02 CALL3 \xc8\x02 REF_END1 
+LOAD3 SCEK01_003\x00\x1f\x8e\x05 REF_END2 
 DIALOGUE_1 \xe8\xa5\x01\x0c\x00\x00\x00\x00"\x03J\x00\x00
  
 　カンナはしばらくじっと天井を見上げて無言だった。@
 　横顔には、心の中の激しい葛藤が伺えた。@
 　カンナはそうした感情の揺らぎを必死に組み伏して、整理して\n　言葉に変えようともがいているように見えた。@
 　やがてカンナは、ぽつり、ぽつり、と少しずつ自らの死の物語\n　を、語り始めた……。\w\z
-\x00 DIALOGUE_END \xd2\x05
-SEQ02 \x9a\x02 SEQ03 \xc8\x02 OP_CMD  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00
-SEQ02  \x00 SEQ03 J\x00 OP_CMD  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x04\x01
-SEQ02 \x88\x00 SEQ03 \xb2\x00 OP_CMD 
-LOAD3 SCEK01_004\x00\x1f\x9c\x07 SCE_CMD 
+\x00 DIALOGUE_END \xd2\x05 SEQ01
+\x1f\x9a\x02 CALL3 \xc8\x02 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00 SEQ01
+\x1f \x00 CALL3 J\x00 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x04\x01 SEQ01
+\x1f\x88\x00 CALL3 \xb2\x00 REF_END1 
+LOAD3 SCEK01_004\x00\x1f\x9c\x07 REF_END2 
 DIALOGUE_1 \xec\xa5\x01\x0c\x00\x00\x00\x00"\x03{\x00\x00
  
 　女子校というのは本当に特殊なところで、最初から、私はその\n空気に馴染むことができなかった。@
@@ -52,28 +52,28 @@ DIALOGUE_1 \xec\xa5\x01\x0c\x00\x00\x00\x00"\x03{\x00\x00
 自分のこれまでの経験を通して、私はそう考えている。@
 　でも、私がそこで頻繁に見かけたベタベタとした関係は、とても\n『恋愛』と呼べるレベルのものではなかった。@
 誰かに甘えたいとか、依存したいとか……\pそういう子供っぽい欲\n求に『恋愛』というレッテルを貼って、いごこちのいい狭い輪を\n強化しているだけ。\w\z
-\x00 DIALOGUE_END \xe0\x07
-SEQ02 \x9a\x02 SEQ03 \xc8\x02 OP_CMD 
-LOAD3 SCEK01_005\x00\x1f\x06\n SCE_CMD 
+\x00 DIALOGUE_END \xe0\x07 SEQ01
+\x1f\x9a\x02 CALL3 \xc8\x02 REF_END1 
+LOAD3 SCEK01_005\x00\x1f\x06\n REF_END2 
 DIALOGUE_1 \xf0\xa5\x01\x0c\x00\x00\x00\x00"\x03\x95\x00\x00
  
 　本物の恋愛に傷つく覚悟がない子供たちの演じる、安全な恋愛ご\nっこ。\pそんな気がして、好きになれなかった。@
 女子校における、『おままごと』的な空気はなにも恋愛に限った\n話ではなくて、髪の毛は必ず三つ編みでなければいけないとか、\n学業の妨げになるから異性との交際は禁止とか、保護者同伴なし\nでの映画館への立入は禁止とか……。@
 何もかもが、フェイクなプチ世界を、リアルな世界から守るため\nに作られているようで、うっとおしかった。@
 私が反逆者であることを、周りの人間は感じ取ったのだと思う\n（－－私は、まるで『全部反対！』ってプラカードを掲げて歩\nき回っているデモ隊みたいだったから）。\w\z
-\x00\x00\x00 DIALOGUE_END J\n
-SEQ02 \x9a\x02 SEQ03 \xc8\x02 OP_CMD 
-LOAD3 SCEK01_006\x00\x1f\xd8\x0c SCE_CMD 
+\x00\x00\x00 DIALOGUE_END J\n SEQ01
+\x1f\x9a\x02 CALL3 \xc8\x02 REF_END1 
+LOAD3 SCEK01_006\x00\x1f\xd8\x0c REF_END2 
 DIALOGUE_1 \xf4\xa5\x01\x0c\x00\x00\x00\x00"\x03I\x00\x00
  
 ある女の子からの『告白』を邪険に断ったのをきっかけに、\n私はあっというまにクラスのつまはじきとなった。@
 なんてくだらないんだろう、と思った。@
 こんなゴッコ遊びに参加できなくたって全然構わない、とも思っ\nた。@
 けれど、それでもやっぱり傷つきはした\n（－－そういうものでしょ？）。\w\z
-\x00\x00\x00 DIALOGUE_END \x1c\r
-SEQ02 \x9a\x02 SEQ03 \xc8\x02 OP_CMD  \x1e\x00\x00\x00\x00\r\x00\x00\x1e=\x00
-SEQ02  \x00 SEQ03 J\x00 OP_CMD 
-LOAD3 SCEK01_007\x00\x1f\xae\x0e SCE_CMD 
+\x00\x00\x00 DIALOGUE_END \x1c\r SEQ01
+\x1f\x9a\x02 CALL3 \xc8\x02 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e=\x00 SEQ01
+\x1f \x00 CALL3 J\x00 REF_END1 
+LOAD3 SCEK01_007\x00\x1f\xae\x0e REF_END2 
 DIALOGUE_1 \xf8\xa5\x01\x0c\x00\x00\x00\x00"\x03\x86\x00\x00
  
 　若草ゆきは、もっとうまくやっていた。@
@@ -83,13 +83,13 @@ DIALOGUE_1 \xf8\xa5\x01\x0c\x00\x00\x00\x00"\x03\x86\x00\x00
 そして、いつもどおり、わかりやすい態度で「あなたが嫌い」\nと表明した。@
 だからある日の放課後、若草ゆきが声をかけてきたときにはとて\nも驚いた。@
 \n「月代さん。よかったら一緒に帰らない？」\w\z
-\x00 DIALOGUE_END \xf2\x0e
-SEQ02 \x9a\x02 SEQ03 \xc8\x02 OP_CMD \x03\x17\x00\x00
+\x00 DIALOGUE_END \xf2\x0e SEQ01
+\x1f\x9a\x02 CALL3 \xc8\x02 REF_END1 \x03\x17\x00\x00
 CHOICE
 私はすぐさま「悪いけど」と断った\n私はあっけにとられて「うん」といっていた\n\l0,2,
 ENDCHOICE
 
-\x00 DIALOGUE_END D\x11
-SEQ02 \x9a\x02 SEQ03 \xc8\x02 SEQ05 \x9a\x02 SCE_CMD 
-LOAD3 TextClose OP02 \xe6\x11 OP_CMD 
+\x00 DIALOGUE_END D\x11 SEQ01
+\x1f\x9a\x02 CALL3 \xc8\x02 CALL2 \x9a\x02 REF_END2 
+LOAD3 TextClose REF2 \xe6\x11 REF_END1 
 END_FILE

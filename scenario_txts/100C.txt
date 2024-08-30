@@ -1,6 +1,6 @@
 START_FILE
 \xbf\x06\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00T\x05\x00
-LOAD3 SCE100_001\x00\x1f\x06\x00 SCE_CMD 
+LOAD3 SCE100_001\x00\x1f\x06\x00 REF_END2 
 DIALOGUE_1 \xe0\xab DIALOGUE_2 q\x00\x00
  
 拓司\n　「雲居さんにいっておきたいことがある」@
@@ -8,9 +8,9 @@ DIALOGUE_1 \xe0\xab DIALOGUE_2 q\x00\x00
 拓司\n　「宇宙人とか電波とか、そういった話はみんなの前では控えて\n　　ほしい。\pそれでなくてもみんな不安なんだ。\pそういう……わ\n　　けのわからないことをいわれると、神経に響く。\pそしてもう\n　　ひとつ。\p早桃に限らず、誰かをスパイ呼ばわりするようなマ\n　　ネは金輪際やめてくれ。\pそれは雲居さんのいう、団結を乱\n　　す行為そのものだ。\p内部崩壊の引き金になりかねない」\
 
 \x00 DIALOGUE_END J\x00 SEQ01
-LOAD7 .\\Data\\Script\\TextFunc.Fob OP01 .\x02 SCE_CMD 
-LOAD2 TextOn OP01 \\\x02 OP_CMD 
-LOAD3 SCE100_002\x00\x1fx\x02 SCE_CMD 
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 .\x02 REF_END2 
+LOAD2 TextOn REF1 \\\x02 REF_END1 
+LOAD3 SCE100_002\x00\x1fx\x02 REF_END2 
 DIALOGUE_1 \xe4\xab DIALOGUE_2 \x8d\x00\x00
  
 早桃\n　「そうよ、そうよ！」@
@@ -21,7 +21,7 @@ DIALOGUE_1 \xe4\xab DIALOGUE_2 \x8d\x00\x00
 ザアザアアアアアアア……@
 /*▲SE01　停止*/\a4,2,0,0,\nただ黙ってラジオの前に戻って、一日中、耳を貼り付かせるよう\nにしてノイズに聞き入っていた。\
 
-\x00\x00\x00 DIALOGUE_END \xbc\x02
-SEQ02 .\x02 SEQ03 \\\x02 SEQ05 .\x02 SCE_CMD 
-LOAD3 TextClose OP02 6\x05 OP_CMD 
+\x00\x00\x00 DIALOGUE_END \xbc\x02 SEQ01
+\x1f.\x02 CALL3 \\\x02 CALL2 .\x02 REF_END2 
+LOAD3 TextClose REF2 6\x05 REF_END1 
 END_FILE

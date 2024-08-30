@@ -1,12 +1,12 @@
 START_FILE
 \xa1\x13\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\\\x10\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00 SEQ01
 
-LOAD6 .\\Data\\Script\\Bg.Fob OP03  \x00 SCE_CMD 
-LOAD4 BgAutoFadeIn OP03 J\x00 OP_CMD  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x08\x01 SEQ01
+LOAD6 .\\Data\\Script\\Bg.Fob REF3  \x00 REF_END2 
+LOAD4 BgAutoFadeIn REF3 J\x00 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x08\x01 SEQ01
 
-LOAD6 .\\Data\\Script\\Bgm.Fob OP02 \x88\x00 SCE_CMD 
-LOAD2 PlayCD OP01 \xb2\x00 OP_CMD 
-LOAD3 SCEK14_001\x00\x1f\xce\x00 SCE_CMD 
+LOAD6 .\\Data\\Script\\Bgm.Fob REF2 \x88\x00 REF_END2 
+LOAD2 PlayCD REF1 \xb2\x00 REF_END1 
+LOAD3 SCEK14_001\x00\x1f\xce\x00 REF_END2 
 DIALOGUE_1 \xb0\xad\x01\x0c\x00\x00\x00\x00"\x03\x9d\x00\x00
  
 　計画は、それから３日後に実行に移された。@
@@ -21,9 +21,9 @@ DIALOGUE_1 \xb0\xad\x01\x0c\x00\x00\x00\x00"\x03\x9d\x00\x00
 憑き物が落ちたようないきいきとした顔が鏡の中にあったのを、\n鮮やかに覚えている。@
 サッパリしていて、自分でもちょっとすてきかな、などと思った\nくらいだった。\w\z
 \x00 DIALOGUE_END \x12\x01 SEQ01
-LOAD7 .\\Data\\Script\\TextFunc.Fob OP01 \xa6\x03 SCE_CMD 
-LOAD2 TextOn OP01 \xd4\x03 OP_CMD 
-LOAD3 SCEK14_002\x00\x1f\xf0\x03 SCE_CMD 
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xa6\x03 REF_END2 
+LOAD2 TextOn REF1 \xd4\x03 REF_END1 
+LOAD3 SCEK14_002\x00\x1f\xf0\x03 REF_END2 
 DIALOGUE_1 \xb4\xad\x01\x0c\x00\x00\x00\x00"\x03\xb4\x00\x00
  
 　私はそのまま約束のビジネスホテルに向かった。@
@@ -34,9 +34,9 @@ DIALOGUE_1 \xb4\xad\x01\x0c\x00\x00\x00\x00"\x03\xb4\x00\x00
 これから死ぬというのに、ぜんぜん怖いという感じはなかった。@
 わくわくしていた。@
 ゆきといっしょに、どこか温泉にでも旅行に出かけるような、そ\nんな気分だった。\w\z
-\x00 DIALOGUE_END 4\x04
-SEQ02 \xa6\x03 SEQ03 \xd4\x03 OP_CMD 
-LOAD3 SCEK14_003\x00\x1f>\x07 SCE_CMD 
+\x00 DIALOGUE_END 4\x04 SEQ01
+\x1f\xa6\x03 CALL3 \xd4\x03 REF_END1 
+LOAD3 SCEK14_003\x00\x1f>\x07 REF_END2 
 DIALOGUE_1 \xb8\xad\x01\x0c\x00\x00\x00\x00"\x03k\x00\x00
  
 　８時を少し回ったころ、ドアがノックされた。@
@@ -46,9 +46,9 @@ DIALOGUE_1 \xb8\xad\x01\x0c\x00\x00\x00\x00"\x03k\x00\x00
 「……どうだった？」と私はドアの向こうに小声で尋ねた。@
 「うん」とゆきはいった。@
 「終わったよ」\w\z
-\x00\x00\x00 DIALOGUE_END \x82\x07
-SEQ02 \xa6\x03 SEQ03 \xd4\x03 OP_CMD 
-LOAD3 SCEK14_004\x00\x1fh\t SCE_CMD 
+\x00\x00\x00 DIALOGUE_END \x82\x07 SEQ01
+\x1f\xa6\x03 CALL3 \xd4\x03 REF_END1 
+LOAD3 SCEK14_004\x00\x1fh\t REF_END2 
 DIALOGUE_1 \xbc\xad\x01\x0c\x00\x00\x00\x00"\x03z\x00\x00
  
 ドアの向こうに立っていたゆきは、さすがにひどく疲れているよ\nうに見えたけれど、いま人を殺してきたばかりには見えなかった。\n\p取り乱したような様子もなくて、むしろ穏やかさがゆきのまわり\nには漂っていた。@
@@ -58,9 +58,9 @@ DIALOGUE_1 \xbc\xad\x01\x0c\x00\x00\x00\x00"\x03z\x00\x00
 もちろん、服のどこにも返り血なんてついていなかった。@
 「かわいいね、その服」と私はいった。@
 「月代さんもかわいいよ」と、ゆきは照れくさそうにいった。\w\z
-\x00 DIALOGUE_END \xac\t
-SEQ02 \xa6\x03 SEQ03 \xd4\x03 OP_CMD 
-LOAD3 SCEK14_005\x00\x1f\xce\x0b SCE_CMD 
+\x00 DIALOGUE_END \xac\t SEQ01
+\x1f\xa6\x03 CALL3 \xd4\x03 REF_END1 
+LOAD3 SCEK14_005\x00\x1f\xce\x0b REF_END2 
 DIALOGUE_1 \xc0\xad\x01\x0c\x00\x00\x00\x00"\x03p\x00\x00
  
 －－あとでわかったことだけれど、父親は死んではいなかった。\n睡眠中に左胸を包丁でひとつきにされた父親は、その日の昼過ぎ\nに瀕死の重体で発見されて、そして奇跡的に一命を取り留めた。@
@@ -68,15 +68,15 @@ DIALOGUE_1 \xc0\xad\x01\x0c\x00\x00\x00\x00"\x03p\x00\x00
 偶然そこに空き巣が入り……仰天した空き巣は匿名で病院に連絡\nしたという。@
 このことは、人生のひとつの真実を表しているように思う。@
 人生はやはり、オチのない悪い冗談なのだという真実を。\w\z
-\x00\x00\x00 DIALOGUE_END \x12\x0c
-SEQ02 \xa6\x03 SEQ03 \xd4\x03 OP_CMD 
-LOAD3 SCEK14_006\x00\x1f\x0c\x0e SCE_CMD 
+\x00\x00\x00 DIALOGUE_END \x12\x0c SEQ01
+\x1f\xa6\x03 CALL3 \xd4\x03 REF_END1 
+LOAD3 SCEK14_006\x00\x1f\x0c\x0e REF_END2 
 DIALOGUE_1 \xc4\xad\x01\x0c\x00\x00\x00\x00"\x03j\x00\x00
  
 でも、そんなことはあとでわかったことで、そのときの私たちは、\n何もかもを終わらせたんだという（あるいは終わらせるんだとい\nう）、さっぱりした気分でいっぱいだった。@
 \n私たちは、あらかじめ何軒かのドラッグストアから買い集めてお\nいた××××という薬を鞄から出して、銀紙の上に何瓶分かの錠\n剤をまとめて載せ、ライターであぶって、ドロドロに溶かした。@
 そして、その朝コンビニで買ってきたプレーンヨーグルトに混ぜ\nた。\w\z
-\x00\x00\x00 DIALOGUE_END P\x0e
-SEQ02 \xa6\x03 SEQ03 \xd4\x03 SEQ05 \xa6\x03 SCE_CMD 
-LOAD3 TextClose OP02 >\x10 OP_CMD 
+\x00\x00\x00 DIALOGUE_END P\x0e SEQ01
+\x1f\xa6\x03 CALL3 \xd4\x03 CALL2 \xa6\x03 REF_END2 
+LOAD3 TextClose REF2 >\x10 REF_END1 
 END_FILE

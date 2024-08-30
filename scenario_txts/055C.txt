@@ -1,6 +1,6 @@
 START_FILE
 <\x10\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00>\r\x00
-LOAD3 SCE055_001\x00\x1f\x06\x00 SCE_CMD 
+LOAD3 SCE055_001\x00\x1f\x06\x00 REF_END2 
 DIALOGUE_1 \x90e DIALOGUE_2 \x98\x00\x00
  
 　拓司は胸のムカツキを必死に押さえた。@
@@ -12,9 +12,9 @@ DIALOGUE_1 \x90e DIALOGUE_2 \x98\x00\x00
 　小声で、解説をはじめる。\
 
 \x00 DIALOGUE_END J\x00 SEQ01
-LOAD7 .\\Data\\Script\\TextFunc.Fob OP01 \xca\x02 SCE_CMD 
-LOAD2 TextOn OP01 \xf8\x02 OP_CMD 
-LOAD3 SCE055_002\x00\x1f\x14\x03 SCE_CMD 
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xca\x02 REF_END2 
+LOAD2 TextOn REF1 \xf8\x02 REF_END1 
+LOAD3 SCE055_002\x00\x1f\x14\x03 REF_END2 
 DIALOGUE_1 \x94e DIALOGUE_2 \xcd\x00\x00
  
 なたね\n　「自殺っていうのは、自分がおかれている状況への絶望とかあ\n　　きらめとか、そんな悲しみの感情から生まれるでしょう？@
@@ -23,9 +23,9 @@ DIALOGUE_1 \x94e DIALOGUE_2 \xcd\x00\x00
 なたね\n　「くすくす……怒りの受け皿となるのは、弱い人間よ。\p自分よ\n　　り立場的に弱い人間に、ストレスはぶつけられるわ。\pオチコ\n　　ボレの御堂くんたちが私にそうしたように。\p状況を理解でき\n　　ないあなたが私にそうしているように。\p安心して、責めてる\n　　わけじゃないから」@
 拓司\n　「……」\
 
-\x00 DIALOGUE_END X\x03
-SEQ02 \xca\x02 SEQ03 \xf8\x02 OP_CMD 
-LOAD3 SCE055_003\x00\x1f\xc6\x06 SCE_CMD 
+\x00 DIALOGUE_END X\x03 SEQ01
+\x1f\xca\x02 CALL3 \xf8\x02 REF_END1 
+LOAD3 SCE055_003\x00\x1f\xc6\x06 REF_END2 
 DIALOGUE_1 \x98e DIALOGUE_2 \x80\x00\x00
  
 なたね\n　「……義妹さん、もともといじめられていたとか、そういうの\n　　あった？」@
@@ -37,9 +37,9 @@ DIALOGUE_1 \x98e DIALOGUE_2 \x80\x00\x00
 小さく固くなって、自分を傷つけようとする悪意から、必死で身\nを守っている。@
 \n早桃\n　「怖い……怖い……」\
 
-\x00 DIALOGUE_END \n\x07
-SEQ02 \xca\x02 SEQ03 \xf8\x02 OP_CMD 
-LOAD3 SCE055_004\x00\x1fD\t SCE_CMD 
+\x00 DIALOGUE_END \n\x07 SEQ01
+\x1f\xca\x02 CALL3 \xf8\x02 REF_END1 
+LOAD3 SCE055_004\x00\x1fD\t REF_END2 
 DIALOGUE_1 \x9ce DIALOGUE_2 t\x00\x00
  
 \nその様子をひとり静かに見守っていた男子学生が、大声でいった。\n@
@@ -49,15 +49,15 @@ DIALOGUE_1 \x9ce DIALOGUE_2 t\x00\x00
 \n男子学生は舞台俳優のような大げさな身振りを交えていった。@
 \n学生\n　「そこでだ！\p　俺たちが背中を押してやろうと思う！\p　もう生\n　　きていてもしょうがないと思えるくらいのことを、虎菱早桃\n　　にしてやりたいと思う！」\
 
-\x00\x00\x00 DIALOGUE_END \x88\t
-SEQ02 \xca\x02 SEQ03 \xf8\x02 OP_CMD 
-LOAD3 SCE055_005\x00\x1f\x92\x0b SCE_CMD 
+\x00\x00\x00 DIALOGUE_END \x88\t SEQ01
+\x1f\xca\x02 CALL3 \xf8\x02 REF_END1 
+LOAD3 SCE055_005\x00\x1f\x92\x0b REF_END2 
 DIALOGUE_1 \x9ce DIALOGUE_2 A\x00\x00
  
 \n犯せえ！\p　という声が上がった。\pしかし男子学生はそれを片手で\n軽く制した。@
 \n学生\n　「男子がこれだけの人数いると、さすがに全員やるのは無理だ\n　　ろ？\p　それに、こんなウザキャラに、おれらのチ○ポなんか\n　　もったいねえよ。\pそこでだ……！」\
 
-\x00 DIALOGUE_END \xd6\x0b
-SEQ02 \xca\x02 SEQ03 \xf8\x02 SEQ05 \xca\x02 SCE_CMD 
-LOAD3 TextClose OP02  \r OP_CMD 
+\x00 DIALOGUE_END \xd6\x0b SEQ01
+\x1f\xca\x02 CALL3 \xf8\x02 CALL2 \xca\x02 REF_END2 
+LOAD3 TextClose REF2  \r REF_END1 
 END_FILE

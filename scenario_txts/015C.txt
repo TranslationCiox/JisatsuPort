@@ -1,6 +1,6 @@
 START_FILE
 "\x06\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xa4\t3\x01\x00\x00\x00\x18\x05\x00
-LOAD3 SCE015_001\x00\x1f\x06\x00 SCE_CMD 
+LOAD3 SCE015_001\x00\x1f\x06\x00 REF_END2 
 DIALOGUE_1 \x10' DIALOGUE_2 \xa8\x00\x00
  
 紅葉\n　「失礼ね、あるわよ！　私はアンタみたいにゴロゴロ過ごしてな\n　　いんだから、アンタよりよっぽどバテバテなの！　バイトだっ\n　　てやってるし、来週はライブに行くし、受験勉強だってそこそ\n　　こ……まあ、一応……ええと……とにかく夏バテしてるわよ！\n　　でも、それを他人にわからせないようにしてるっていうのが、\n　　私のすごいところなわけなのよ」@
@@ -10,9 +10,9 @@ DIALOGUE_1 \x10' DIALOGUE_2 \xa8\x00\x00
 紅葉\n　「アンタさあ、もうちょっと身体鍛えないと、いざというときに\n　　困るよ？」\
 
 \x00\x00\x00 DIALOGUE_END J\x00 SEQ01
-LOAD7 .\\Data\\Script\\TextFunc.Fob OP01 \n\x03 SCE_CMD 
-LOAD2 TextOn OP01 8\x03 OP_CMD 
-LOAD3 SCE015_002\x00\x1fT\x03 SCE_CMD 
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \n\x03 REF_END2 
+LOAD2 TextOn REF1 8\x03 REF_END1 
+LOAD3 SCE015_002\x00\x1fT\x03 REF_END2 
 DIALOGUE_1 \x14' DIALOGUE_2 G\x00\x00
  
 拓司\n　「いざというときって、なんだよ？　核戦争が起こって世界が暴\n　　力の時代になったときか？　悪の改造人間が襲いかかってきた\n　　ときか？」@
@@ -21,7 +21,7 @@ DIALOGUE_1 \x14' DIALOGUE_2 G\x00\x00
 紅葉\n　「ふん」@
 拓司\n　「ふん」\
 
-\x00\x00\x00 DIALOGUE_END \x98\x03
-SEQ02 \n\x03 SEQ03 8\x03 SEQ05 \n\x03 SCE_CMD 
-LOAD3 TextClose OP02 \xfa\x04 OP_CMD 
+\x00\x00\x00 DIALOGUE_END \x98\x03 SEQ01
+\x1f\n\x03 CALL3 8\x03 CALL2 \n\x03 REF_END2 
+LOAD3 TextClose REF2 \xfa\x04 REF_END1 
 END_FILE
