@@ -2,333 +2,172 @@ import codecs
 import os
 
 patterns = [
+    {
+        "pattern": [b'\x1e', b'\x02', b'\x00', b'\x00', b'5'],
+        # Used in EVERY sequence with commands like e.g. NormalFadeIn
+        "action": " OP_CMD "
+    },
+    {
+        "pattern": [b'\x1f', b'J', b'\x00', b'\x00'],
+        # Used after SetGamemode
+        "action": " SET_GAMEMODE "
+    },
+
+    {
+        "pattern": [b'\x1e', b'\x02', b'\x00', b'\x00'],
+        # Used after loading FOB files and SCE calls and some long bytecode chains which might also contain something.
+        "action": " FOB_SCE_END\n "
+    },
+
+    {
+        "pattern": [b'\x1f', b'j', b'\x00', b'\x00'],
+        # Used after 5 is used.
+        "action": "SET_5"
+    },
+    # {
+    #     "pattern": [b'\x1f', None, b'\x00', b'\x00'],
+    #     #
+    #     "action": "4B_05"
+    # },
+    {
+        "pattern": [b'\x03', b'\x02', b'\x00', b'\x00'],
+        # BgOn, PlayCD, TextOn
+        "action": "\nLOAD2 "
+    },
+    {
+        "pattern": [b'\x03', b'\x03', b'\x00', b'\x00'],
+        # Before SCExx_xxx calls. E.g. SCE001_002
+        "action": "\nLOAD3 "
+    },
+    {
+        "pattern": [b'\x03', b'\x04', b'\x00', b'\x00'],
+        # BgAutoFadeIn, GetLastTxtID
+        "action": "\nLOAD4 "
+    },
+    {
+        "pattern": [b'\x03', b'\x05', b'\x00', b'\x00'],
+        # TextWindowOffDirect, 0.Fob, InitGameFlagBuffer
+        "action": "\nLOAD5 "
+    },
+    {
+        "pattern": [b'\x03', b'\x06', b'\x00', b'\x00'],
+        # Data.Fob
+        "action": "\nLOAD6 "
+    },
+    {
+        "pattern": [b'\x03', b'\x07', b'\x00', b'\x00'],
+        # TextFunc.Fob
+        "action": "\nLOAD7 "
+    },
+    {
+        "pattern": [b'\x03', b'\x08', b'\x00', b'\x00'],
+        # Scenario files e.g. 029C.Fob
+        "action": "\nLOAD8 "
+    },
+
+    # {
+    #     "pattern": [b'\x03', None, b'\x00', b'\x00'],
+    #     # Before files, commands, and SCExx_xxx calls.
+    #     "action": "\n4B_03 "
+    # },
+
+    # {
+    #     "pattern": [b'\x00', None, b'\x00', b'\x00'],
+    #     # Used before
+    #     "action": "\n4B_02 "
+    # },
+
+    {
+        "pattern": [b'\x1f', b'\xB6', b'\x01', b'\x00'],
+        #
+        "action": "\n4B_01 "
+    },
+
+    ########################### 4 Bytes (wildcard) ###########################
+    # {
+    #     "pattern": [b'\x1e', None, b'\x00', b'\x00'],
+    #     # Used before a 4B_02 or 4B_03
+    #     "action": "\n4B_04 "
+    # },
+    # {
+    #     "pattern": [b'\r', b'\x02', b'\x1e', None],
+    #     #
+    #     "action": "\n4B_06"
+    # },
+    ########################### 3 Bytes ###########################
+    {
+        "pattern": [b'\x1f', b'\xb6\x01', b'\x00'],
+        #
+        "action": "3B_01 "
+    },
+    {
+        "pattern": [b'\x1f', b'\xde\x02', b'\x00'],
+        #
+        "action": "3B_02 "
+    },
+    {
+        "pattern": [b'\x1e', b'\x8c\x01', b'\x00'],
+        #
+        "action": "3B_03 "
+    },
+
+    ########################### 2 Bytes ###########################
+
+    {
+        "pattern": [b'\xef', b'!'],
+        #
+        "action": "2B_01 "
+    },
+    {
+        "pattern": [b',', b'\x02'],
+        #
+        "action": "\n2B_02 "
+    },
+
+    ########################### 1 Byte ###########################
+
+    {
+        "pattern": [b'\x81\x1f'],
+        #
+        "action": " OP01 "
+    },
+    {
+        "pattern": [b'v\x81\x1f'],
+        #
+        "action": " OP02 "
+    },
+    {
+        "pattern": [b'sv\x81\x1f'],
+        # Seems to load files.
+        "action": " OP03 "
+    },
+    {
+        "pattern": [b't\x81\x1f'],
+        #
+        "action": " OP04 "
+    },
+    {
+        "pattern": [b'6t\x81\x1f'],
+        #
+        "action": " OP05 "
+    },
+    {
+        "pattern": [b'5'],
+        #
+        "action": "5 "
+    },
+
+    ########################### Special ###########################
 
     {
         "pattern": [b'\x01', b'\x00', b'\x00', b'start', b'\xef', b'i\x01C'],
         # Start the script
-        "action": "F_SRT\n"
+        "action": "START_FILE\n"
     },
     {
-        "pattern": [b'\x00', b'\x00', b'\x00', b'\x00', b'\r', b'\x00', b'\x00', b',', b'\x02'],
-        # Seems to be used for 3 byte data.
-        "action": "\nVAR_3B "
-    },
-    {
-        "pattern": [b'\x00', b'\x00', b'\x00', b'\x00', b'\r', b'\x00', b'\x00'],
-        # Seems to be used for 2 byte data. Not addresses but numbers.
-        "action": "\nVAR_2B"
-    },
-    {
-        "pattern": [b'\x00', b'\x0c', b'\x00', b'\x00', b'\x00', b'\x00', b'"'],
-        "action": " SEQ06 "
-    },
-    {
-        "pattern": [b'\x02', b'\x00', b'\x00', b'5', b'6', b'\xf1', b'\x00'],
+        "pattern": [b'6', b'\xf1', b'\x00'],
         # End the script
-        "action": "\nF_END"
-    },
-    {
-        "pattern": [b'\x02', b'\x00', b'\x00', b'5', b'\x03', b'\x03', b'\x00', b'\x00'],
-        # Used before SCExxx_xxx scenario calls. Scenario indicators in the scenarios.
-        "action": "\nS_STR "
-    },
-    {
-        "pattern": [b'\x02', b'\x00', b'\x00', b'5', b' '],
-        # Used at the end of certain commands like StopCD, WaitTime, SeStop
-        "action": "C_END "
-    },
-    {
-        "pattern": [b'\x00', b'\x0c', b'\x02', b'\x00', b'\x00', b'"'],
-        # Used after VAR01 and the bytecode after it. Maybe to set it?
-        "action": " SET01 "
-    },
-    {
-        "pattern": [b'\x02', b'\x00', b'\x00', b'\x03', b'\x02', b'\x00', b'\x00'],
-        # Often times used before commands
-        "action": "\nCMD01 "
-    },
-    {
-        "pattern": [b'\x02', b'\x00', b'\x00', b'\x03', b'\x04', b'\x00', b'\x00'],
-        # Used before BgNormalFadeIn
-        "action": "\nCMD02 "
-    },
-    {
-        "pattern": [b'\x8c\x01', b'\x00', b'\r', b'\x02'],
-        # Used after the VAR01 for Text it seems. Might be the dialoguebox?
-        "action": "TXT1"
-    },
-    {
-        "pattern": [b'\x02', b'\x00', b'\x00', b'\xef', b'!'],
-        # Used after SCExxx_xxx scenario calls.
-        "action": "S_END"
-    },
-    {
-        "pattern": [b'\x02', b'\x00', b'\x00', b'"'],
-        "action": "\nSEQ05 "
-    },
-    {
-        "pattern": [b'\x02', b'\x00', b'\x00', b'5'],
-        # Used a lot before 4 Byte addresses. Might be the address for 4 Byte data
-        "action": "\nADDRES_4B "
-    },
-    {
-        "pattern": [b'\x02', b'\x00', b'\x00'],
-        # Might be some kind of new line operator?
-        "action": "\n"
-    },
-    {
-        "pattern": [b'\x03', b'\x06', b'\x00', b'\x00'],
-        # Used before files
-        "action": "FILE1 "
-    },
-    {
-        "pattern": [b'\x03', b'\x07', b'\x00', b'\x00'],
-        # Used before calling TextFunc.FOB
-        "action": "FILE2 "
-    },
-    {
-        "pattern": [b'\xb6\x01', b'\x00'],
-        # Used in SCENARIOROOT to end each scenario. Probably set with "CMD01 start COMMAND_TO_BYTECODE3 SCENARIO_start."
-        "action": "SCENARIO_START"
-    },
-
-    {
-        "pattern": [b'j', b'\x00', b'\x00'],
-        # Seems to be related to choices in the game. Scenario flags.
-        "action": "SFLAG"
-    },
-
-    {
-        "pattern": [b'\x03', b'\x03', b'\x00', b'\x00'],
-        # Used before SePlayEx, TextClose, WaitTime
-        "action": "\nCMD03 "
-    },
-    {
-        "pattern": [b'\x03', b'\x05', b'\x00', b'\x00'],
-        # Used before TextWindowOffDirect, InitGameFlagBuffer
-        "action": "\nCMD04 "
-    },
-    {
-        "pattern": [b'\x03', b'\x08', b'\x00', b'\x00'],
-        # Used before Scenario load calls
-        "action": "\nSCEN_LOAD "
-    },
-    {
-        "pattern": [b'\x00', b'\x0c'],
-        "action": " SEQ15 "
-    },
-    {
-        "pattern": [b'\xde\x02', b'\x00'],
-        # Like a series of bytecode used to get the last choice due to
-        # "CMD02 GetLastTxtID COMMAND_TO_BYTECODE1 GET_TEXTID C_END"
-        "action": "GET_TEXTID"
-    },
-
-    {
-        "pattern": [b'\x81\x1f'],
-        "action": " COMMAND_TO_BYTECODE1 "
-    },
-    {
-        "pattern": [b'v\x81\x1f'],
-        "action": " COMMAND_TO_BYTECODE2 "
-    },
-    {
-        "pattern": [b'sv\x81\x1f'],
-        "action": " COMMAND_TO_BYTECODE3 "
-    },
-    {
-        "pattern": [b't\x81\x1f'],
-        "action": " COMMAND_TO_BYTECODE4 "
-    },
-    {
-        "pattern": [b'6t\x81\x1f'],
-        "action": " COMMAND_TO_BYTECODE5 "
-    },
-    {
-        "pattern": [b'\x1e'],
-        # Likely a  delimiter (group)
-        "action": " "
-    },
-    {
-        "pattern": [b'\x1f'],
-        # Likely a delimiter (record)
-        "action": " "
-    },
-    {
-        "pattern": [b'2'],
-        # Likely a delimiter (record)
-        "action": " and "
-    },
-]
-
-patterns_zeroless = [
-    {
-        "pattern": [b'\r', b'\x1e', b'\x8c\x01', b'\r', b'\x02', b'\x1e'],
-        # Some kind of variable, that gets assigned a value before a dialogue fragment?
-        "action": "TEXT1 "
-    },
-    {
-        "pattern": [b'\x0c', b'"', b'\x03'],
-        # Seems to be related to TEXT1
-        "action": " TEXT2 "
-    },
-    {
-        "pattern": [b'\x02', b'\x1f', b'\xde\x02', b'\x1e', b'\x02', b'5', b' ', b'\x1e', b'\r', b',', b'\x02'],
-        # (at the end of scenario files which require a FLAG)
-        "action": "REQUIRE_SCENARIO_FLAG "
-    },
-    {
-        "pattern": [b'\x06', b'\x0b', b'\x0c', b'\x02', b'"', b'2'],
-        # (at the end of BMP loads in CG)
-        "action": "BMP_FLAGS "
-    },
-    {
-        "pattern": [b'\x02', b'\xc4', b'2', b'\xb6\x0b', b'\x1f', b'\xfe', b'\x1e'],
-        # (at the end of WAV loads)
-        "action": "WAV_FLAGS"
-    },
-    {
-        "pattern": [b'\x02', b'\x03', b'\x05'],
-        # Seems to LOAD WAV files
-        "action": "\nWAVL "
-    },
-
-    {
-        "pattern": [b'\x02', b'\x1f', b'\xb6\x01', b'\x1e', b'\x02', b'5'],
-        # (Used a lot in SCENARIOROOT)
-        "action": "SCENARIO_FLAGS "
-    },
-    {
-        "pattern": [b'\02', b'\x1f', b'\xde\x02', b'\x1e', b'\x02', b'5'],
-        # (Used a lot in SCENARIOROOT)
-        "action": "CHOICE_FLAG_REQUIRED"
-    },
-    {
-        "pattern": [b'\x01', b'start', b'\xef', b'i\x01C'],
-        # Start the script
-        "action": "START_SCRIPT\n"
-    },
-    {
-        "pattern": [b'6', b'\xf1'],
-        # Seems to END the script
-        "action": "\nEND_SCRIPT"
-    },
-    {
-        "pattern": [b'v\x81\x1f'],
-        # Seems to indicate a var for commands
-        "action": " VAR1 "
-    },
-    {
-        "pattern": [b'sv\x81\x1f'],
-        # Seems to indicate a var for commands
-        "action": " VAR2"
-    },
-    {
-        "pattern": [b'\x02', b'\x03', b'\x02'],
-        # seems to apply something.
-        "action": "APPlY_2 "
-    },
-    {
-        "pattern": [b'\x02', b'\x03', b'\x03'],
-        # seems to apply something.
-        "action": "APPLY_3 "
-    },
-    {
-        "pattern": [b'\x03', b'\x03'],
-        # Goes before SCE Calls
-        "action": "\nINIT_TEXT "
-    },
-    {
-        "pattern": [b'\x03', b'\x04'],
-        # Goes before certain calls (Textbox, BGFADEIN)
-        "action": " APPLY_4 "
-    },
-    {
-        "pattern": [b'\x03', b'\x05'],
-        # Seems to LOAD WAV and BMP files
-        "action": "\nCMD5 "
-    },
-    {
-        "pattern": [b'\x03', b'\x06'],
-        # Seems to LOAD script FOB calls, sometimes other things.
-        "action": " APPLY_FILE "
-    },
-    {
-        "pattern": [b'\x03', b'\x07'],
-        # Seems to LOAD TextFunc.FOB, sometimes other things
-        "action": " APPLY_FILE "
-    },
-    {
-        "pattern": [b'\x03', b'\x08'],
-        # Seems to LOAD Scenario FOB files.
-        "action": "\nCMD8 "
-    },
-    {
-        "pattern": [b'\x03', b'\t'],
-        # Seems to load HEROINE and 085AC Scenario FOB files.
-        "action": "\nHERO "
-    },
-    {
-        "pattern": [b'\x03', b'\n'],
-        # Seems to load SCE204SEL Scenario FOB files.
-        "action": "\nS204 "
-    },
-    {
-        "pattern": [b'\x1e', b'\x02', b'5'],
-        # Seems to END command statements.
-        "action": " END"
-    },
-    {
-        "pattern": [b'\x02', b'\xef', b'!'],
-        # Seems to END CSCEXX_XXX statements.
-        "action": "SCE_TEXT"
-    },
-    {
-        "pattern": [b'\x1f', b'j'],
-        # Seems to indicate if a SCENARIO has a choice (flag).
-        "action": "CHOICE_PRESENT"
-    },
-    {
-        "pattern": [b'\x81\x1f'],
-        # Might be a command terminator
-        "action": " RUNF "
-    },
-    {
-        "pattern": [b'\r', b',', b'\x02'],
-        # Some kind of COMMAND
-        "action": "FLG3 "
-    },
-    {
-        "pattern": [b'\r', b'\x02'],
-        # Some kind of COMMAND.
-        "action": " SET_VAR2"
-    },
-    {
-        "pattern": [b'\r'],
-        # Some kind of COMMAND
-        "action": "\nINIT"
-    },
-    {
-        "pattern": [b'\x02', b'"'],
-        # Seems to be related to FLG1
-        "action": " SET_VAR1"
-    },
-
-    {
-        "pattern": [b'\x1f', b' ', b'\x1e'],
-        # Likely some kind of NULL?
-        "action": " NULL "
-    },
-
-    {
-        "pattern": [b'\x1e'],
-        # Likely a  delimiter (group)
-        "action": " "
-    },
-    {
-        "pattern": [b'\x1f'],
-        # Likely a delimiter (record)
-        "action": " "
+        "action": "\nEND_FILE"
     },
 ]
 
@@ -336,7 +175,6 @@ def parse_bytecode(data):
     list_bytecodes = []
     # Split the data on null bytes (0x00)
     elements = data.split(b'\x00')
-
     for element in elements:
         if element:
             list_bytecodes.append(element)
@@ -344,6 +182,17 @@ def parse_bytecode(data):
             list_bytecodes.append(b'\x00')
 
     return list_bytecodes
+
+def match_pattern(line_segment, pattern):
+    """Matches a line segment with a pattern, allowing wildcards."""
+    if len(line_segment) != len(pattern):
+        return False
+
+    for i in range(len(pattern)):
+        if pattern[i] is not None and line_segment[i] != pattern[i]:
+            return False
+
+    return True
 
 # Function to process and save extracted text
 def save_text(lines, output_path):
@@ -363,10 +212,8 @@ def save_text(lines, output_path):
             else:
                 matched = False
                 for pattern in patterns:
-                    # Check if current segment of lines matches the pattern
                     pattern_length = len(pattern["pattern"])
-                    if lines[line_counter:line_counter + pattern_length] == pattern["pattern"]:
-                        # Use the action field directly to insert the desired text
+                    if match_pattern(lines[line_counter:line_counter + pattern_length], pattern["pattern"]):
                         f.write(pattern["action"])
                         line_counter += pattern_length - 1  # Skip the matched pattern length minus one since we'll increment after the match
                         matched = True
@@ -409,3 +256,132 @@ def process_files(input_dir="scripts", output_dir="scripts_txts"):
 # Run the processing function
 process_files(input_dir="scenario", output_dir="scenario_txts")
 process_files(input_dir="scripts", output_dir="scripts_txts")
+
+# {
+#     "pattern": [b'\x00', b'\x00', b'\x00', b'\x00', b'\r', b'\x00', b'\x00', b',', b'\x02'],
+#     # Seems to be used for 3 byte data.
+#     "action": "\nVAR_3B "
+# },
+# {
+#     "pattern": [b'\x00', b'\x00', b'\x00', b'\x00', b'\r', b'\x00', b'\x00'],
+#     # Seems to be used for 2 byte data. Not addresses but numbers.
+#     "action": "\nVAR_2B"
+# },
+# {
+#     "pattern": [b'\x00', b'\x0c', b'\x00', b'\x00', b'\x00', b'\x00', b'"'],
+#     "action": " SEQ06 "
+# },
+# {
+#     "pattern": [b'\x02', b'\x00', b'\x00', b'5', b'\x03', b'\x03', b'\x00', b'\x00'],
+#     # Used before SCExxx_xxx scenario calls. Scenario indicators in the scenarios.
+#     "action": "\nS_STR "
+# },
+# {
+#     "pattern": [b'\x02', b'\x00', b'\x00', b'5', b' '],
+#     # Used at the end of certain commands like StopCD, WaitTime, SeStop
+#     "action": "C_END "
+# },
+# {
+#     "pattern": [b'\x00', b'\x0c', b'\x02', b'\x00', b'\x00', b'"'],
+#     # Used after VAR01 and the bytecode after it. Maybe to set it?
+#     "action": " SET01 "
+# },
+# {
+#     "pattern": [b'\x02', b'\x00', b'\x00', b'\x03', b'\x02', b'\x00', b'\x00'],
+#     # Often times used before commands
+#     "action": "\nCMD01 "
+# },
+# {
+#     "pattern": [b'\x02', b'\x00', b'\x00', b'\x03', b'\x04', b'\x00', b'\x00'],
+#     # Used before BgNormalFadeIn
+#     "action": "\nCMD02 "
+# },
+# {
+#     "pattern": [b'\x8c\x01', b'\x00', b'\r', b'\x02'],
+#     # Used after the VAR01 for Text it seems. Might be the dialoguebox?
+#     "action": "TXT1"
+# },
+# {
+#     "pattern": [b'\x02', b'\x00', b'\x00', b'\xef', b'!'],
+#     # Used after SCExxx_xxx scenario calls.
+#     "action": "S_END"
+# },
+# {
+#     "pattern": [b'\x02', b'\x00', b'\x00', b'"'],
+#     "action": "\nSEQ05 "
+# },
+# {
+#     "pattern": [b'\x02', b'\x00', b'\x00', b'5'],
+#     # Used a lot before 4 Byte addresses. Might be the address for 4 Byte data
+#     "action": "\nADDRES_4B "
+# },
+
+# {
+#     "pattern": [b'\x03', b'\x06', b'\x00', b'\x00'],
+#     # Used before files
+#     "action": "FILE1 "
+# },
+# {
+#     "pattern": [b'\x03', b'\x07', b'\x00', b'\x00'],
+#     # Used before calling TextFunc.FOB
+#     "action": "FILE2 "
+# },
+# {
+#     "pattern": [b'\xb6\x01', b'\x00'],
+#     # Used in SCENARIOROOT to end each scenario. Probably set with "CMD01 start COMMAND_TO_BYTECODE3 SCENARIO_start."
+#     "action": "SCENARIO_START"
+# },
+#
+# {
+#     "pattern": [b'j', b'\x00', b'\x00'],
+#     # Seems to be related to choices in the game. Scenario flags.
+#     "action": "SFLAG"
+# },
+#
+# {
+#     "pattern": [b'\x03', b'\x03', b'\x00', b'\x00'],
+#     # Used before SePlayEx, TextClose, WaitTime
+#     "action": "\nCMD03 "
+# },
+# {
+#     "pattern": [b'\x03', b'\x05', b'\x00', b'\x00'],
+#     # Used before TextWindowOffDirect, InitGameFlagBuffer
+#     "action": "\nCMD04 "
+# },
+# {
+#     "pattern": [b'\x03', b'\x08', b'\x00', b'\x00'],
+#     # Used before Scenario load calls
+#     "action": "SCEN_LOAD "
+# },
+# {
+#     "pattern": [b'\x00', b'\x0c'],
+#     "action": " SEQ15 "
+# },
+# {
+#     "pattern": [b'\xde\x02', b'\x00'],
+#     # Like a series of bytecode used to get the last choice due to
+#     # "CMD02 GetLastTxtID COMMAND_TO_BYTECODE1 GET_TEXTID C_END"
+#     "action": "GET_TEXTID"
+# },
+
+# {
+#     "pattern": [b'\x1e'],
+#     # Likely a  delimiter (group)
+#     "action": " "
+# },
+# {
+#     "pattern": [b'\x1f'],
+#     # Likely a delimiter (record)
+#     "action": " "
+# },
+
+# {
+#     "pattern": [b'\x00', b'\x00', b'\x00', b'\x00'],
+#     # Script file have lots of 0 padding around functions. This is to make those files clearer.
+#     "action": "\n"
+# },
+# {
+#     "pattern": [b'\x02', b'\x00', b'\x00', b'5', b'6', b'\xf1', b'\x00'],
+#     # End the script
+#     "action": "\nF_END"
+# },

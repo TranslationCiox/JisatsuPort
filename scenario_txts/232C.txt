@@ -1,17 +1,19 @@
-F_SRT
-\x0c\r\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xf0\n\x00  
-VAR_2B \x04\x01 SET01 FILE1 .\\Data\\Script\\Bgm.Fob COMMAND_TO_BYTECODE2  \x00\x00 
-CMD01 PlayCD COMMAND_TO_BYTECODE1 J\x00\x00 
-S_STR SCE232_001\x00 f\x00\x00 S_END 
-VAR_2B TXT1  z\x01\x0c\x00\x00\x00\x00"\x03\x13\x00\x00
+START_FILE
+\x0c\r\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xf0\n\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x04\x01\x00\x0c\x02\x00\x00"
+LOAD6 .\\Data\\Script\\Bgm.Fob OP02  \x00\x00 FOB_SCE_END
+ 
+LOAD2 PlayCD OP01 J\x00\x00 OP_CMD 
+LOAD3 SCE232_001\x00\x1ff\x00\x00 FOB_SCE_END
+ 2B_01 \x1e\x00\x00\x00\x00\r\x00\x003B_03 \r\x02\x1e z\x01\x0c\x00\x00\x00\x00"\x03\x13\x00\x00
  
 \n\n\n\n\n\n\n\n\n\n　　　　　　　『おんなのこと、うちゅうじん』\
 
-\x00\x00\x00  
-VAR_2B \xaa\x00 SET01 FILE2 .\\Data\\Script\\TextFunc.Fob COMMAND_TO_BYTECODE1 \x16\x01\x00 
-CMD01 TextOn COMMAND_TO_BYTECODE1 D\x01\x00 
-S_STR SCE232_002\x00 `\x01\x00 S_END 
-VAR_2B TXT1 $z\x01\x0c\x00\x00\x00\x00"\x03\xdf\x00\x00
+\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1f\xaa\x00\x00\x0c\x02\x00\x00"
+LOAD7 .\\Data\\Script\\TextFunc.Fob OP01 \x16\x01\x00 FOB_SCE_END
+ 
+LOAD2 TextOn OP01 D\x01\x00 OP_CMD 
+LOAD3 SCE232_002\x00\x1f`\x01\x00 FOB_SCE_END
+ 2B_01 \x1e\x00\x00\x00\x00\r\x00\x003B_03 \r\x02\x1e$z\x01\x0c\x00\x00\x00\x00"\x03\xdf\x00\x00
  
 　あるところに、なたねという女の子がいました。@
 \n　なたねにはお母さんがいませんでした。\pお母さんはなたねが小\nさいときに病気で死んでしまったのです。\pお父さんも、本当のお\n父さんではなく、お母さんの再婚相手でした。\pそれでもなたねは、\n寂しいなんて思うことはありませんでした。@
@@ -20,11 +22,10 @@ VAR_2B TXT1 $z\x01\x0c\x00\x00\x00\x00"\x03\xdf\x00\x00
 　でも、なたねが幸せだったのは、お義父さんがお金持ちだから\nではなくて、お義父さんが本当に素敵な人だったからです。@
 　お義父さんはなたねのことを大切に、大切に育ててくれました。\n\p　一度、なたねがひどい風邪を引いたときには、大切なお仕事を\n放り出して看病についてくれました（お義父さんはそのせいで、\n病院をクビになってしまったので、新しい仕事先を探さなければ\nならなくなりました）。\pしかもお義父さんは、勉強をしなさい、\nＴＶは見てはいけません、と、厳しいこともなにひとついいませ\nんでした。\
 
-\x00  
-VAR_2B \xa4\x01 SET01  \x16\x01\x00 
- D\x01\x00 
-S_STR SCE232_003\x00 Z\x05\x00 S_END 
-VAR_2B TXT1 (z\x01\x0c\x00\x00\x00\x00"\x03\x9e\x00\x00
+\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1f\xa4\x01\x00\x0c\x02\x00\x00"\x1f\x16\x01\x00 FOB_SCE_END
+ \x1fD\x01\x00 OP_CMD 
+LOAD3 SCE232_003\x00\x1fZ\x05\x00 FOB_SCE_END
+ 2B_01 \x1e\x00\x00\x00\x00\r\x00\x003B_03 \r\x02\x1e(z\x01\x0c\x00\x00\x00\x00"\x03\x9e\x00\x00
  
 　なたねはお義父さんが大好きでした。@
 　だから言われなくても勉強をしましたし、ＴＶだって少ししか\n見ませんでした。\pそうすればお義父さんが喜んでくれると思った\nからです。@
@@ -32,18 +33,17 @@ VAR_2B TXT1 (z\x01\x0c\x00\x00\x00\x00"\x03\x9e\x00\x00
 　勉強ばかりしているのでお友達は少なかったけれど、なたねは\n我慢しました。@
 　ときどき「もういやだなあ」と思うこともあって、そんなとき\nお義父さんは「なたね、あまり勉強ばかりしていると、体に毒だ\nよ」と優しく声をかけてくれました。\pなたねは、そんなお義父さ\nんの声を聞くと、逆に「よし、もっとがんばろう！」と思えたの\nでした。\
 
-\x00\x00\x00  
-VAR_2B \x9e\x05 SET01  \x16\x01\x00 
- D\x01\x00 
-ADDRES_4B  \x16\x01\x00 
-
-CMD03 TextClose COMMAND_TO_BYTECODE2 \\\x08\x00 
-ADDRES_4B \x03\t\x00\x00.\\Data\\Script\\Scenario\\232SubC.Fob COMMAND_TO_BYTECODE1 |\x08\x00 
-CMD01 start COMMAND_TO_BYTECODE2 \xb2\x08\x00 C_END  
-VAR_2B \xc8\x00 SET01 FILE1 .\\Data\\Script\\Bg.Fob COMMAND_TO_BYTECODE3 \xe8\x08\x00 
-CMD02 BgAutoFadeIn COMMAND_TO_BYTECODE3 \x12\t\x00 
-S_STR SCE232_013\x00 6\t\x00 S_END 
-VAR_2B TXT1 Pz\x01\x0c\x00\x00\x00\x00"\x03?\x00\x00
+\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1f\x9e\x05\x00\x0c\x02\x00\x00"\x1f\x16\x01\x00 FOB_SCE_END
+ \x1fD\x01\x00 OP_CMD \x1f\x16\x01\x00 FOB_SCE_END
+ 
+LOAD3 TextClose OP02 \\\x08\x00 OP_CMD \x03\t\x00\x00.\\Data\\Script\\Scenario\\232SubC.Fob OP01 |\x08\x00 FOB_SCE_END
+ 
+LOAD2 start OP02 \xb2\x08\x00 OP_CMD  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00\x00\x0c\x02\x00\x00"
+LOAD6 .\\Data\\Script\\Bg.Fob OP03 \xe8\x08\x00 FOB_SCE_END
+ 
+LOAD4 BgAutoFadeIn OP03 \x12\t\x00 OP_CMD 
+LOAD3 SCE232_013\x00\x1f6\t\x00 FOB_SCE_END
+ 2B_01 \x1e\x00\x00\x00\x00\r\x00\x003B_03 \r\x02\x1ePz\x01\x0c\x00\x00\x00\x00"\x03?\x00\x00
  
 　どこかへ走ってゆく汽車の@
 　全財産ぶんの切符を　くださいな@
@@ -53,11 +53,9 @@ VAR_2B TXT1 Pz\x01\x0c\x00\x00\x00\x00"\x03?\x00\x00
 　ただもう　わたしは@
 　ここからはなれてゆきたいのです\
 
-\x00\x00\x00  
-VAR_2B z\t SET01  \x16\x01\x00 
- D\x01\x00 
-ADDRES_4B   \x00\x00 
-CMD01 StopCD COMMAND_TO_BYTECODE1 \xbc\n\x00 
-ADDRES_4B  \x16\x01\x00 
- \\\x08\x00 
-F_END
+\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1fz\t\x00\x0c\x02\x00\x00"\x1f\x16\x01\x00 FOB_SCE_END
+ \x1fD\x01\x00 OP_CMD \x1f \x00\x00 FOB_SCE_END
+ 
+LOAD2 StopCD OP01 \xbc\n\x00 OP_CMD \x1f\x16\x01\x00 FOB_SCE_END
+ \x1f\\\x08\x00 OP_CMD 
+END_FILE

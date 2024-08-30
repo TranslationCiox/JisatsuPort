@@ -1,22 +1,23 @@
-F_SRT
+START_FILE
 /8\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\x9a/\x00
-CMD03 SCE062_001\x00 \x06\x00\x00 S_END 
-VAR_2B TXT1 \x80p SEQ06   
-VAR_2B \x00\x00\x00 SET01   \x04\x00\x00\r\x00\x00 \t\x00 SET01   \x08\x00\x00\r\x00\x00 \x00\x00\x00 SET01 FILE1 .\\Data\\Script\\Bgm.Fob COMMAND_TO_BYTECODE2 \x98\x00\x00 
-
-CMD03 SePlayEx COMMAND_TO_BYTECODE3 \xc2\x00\x00 
-ADDRES_4B \x03\x13\x00\x00
+LOAD3 SCE062_001\x00\x1f\x06\x00\x00 FOB_SCE_END
+ 2B_01 \x1e\x00\x00\x00\x00\r\x00\x003B_03 \r\x02\x1e\x80p\x00\x0c\x00\x00\x00\x00" \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x00\x00\x00\x00\x0c\x02\x00\x00" \x1e\x04\x00\x00\r\x00\x00\x1e\t\x00\x00\x0c\x02\x00\x00" \x1e\x08\x00\x00\r\x00\x00\x1e\x00\x00\x00\x00\x0c\x02\x00\x00"
+LOAD6 .\\Data\\Script\\Bgm.Fob OP02 \x98\x00\x00 FOB_SCE_END
+ 
+LOAD3 SePlayEx OP03 \xc2\x00\x00 OP_CMD \x03\x13\x00\x00
  
 カンナ\n　「……きたんだ？」@
 \nその声は、頭上から聞こえてきた。\
 
-\x00  
-VAR_2B \xe2\x00 SET01 FILE2 .\\Data\\Script\\TextFunc.Fob COMMAND_TO_BYTECODE1 N\x01\x00 
-CMD01 TextOn COMMAND_TO_BYTECODE1 |\x01\x00 C_END  
-VAR_2B \x18\x00 SET01 FILE1 .\\Data\\Script\\Bg.Fob COMMAND_TO_BYTECODE3 \xb2\x01\x00 
-CMD02 BgAutoFadeIn COMMAND_TO_BYTECODE3 \xdc\x01\x00 
-S_STR SCE062_002\x00 \x00\x02\x00 S_END 
-VAR_2B TXT1 \x84p SEQ06 \x03\xcc\x00\x00
+\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1f\xe2\x00\x00\x0c\x02\x00\x00"
+LOAD7 .\\Data\\Script\\TextFunc.Fob OP01 N\x01\x00 FOB_SCE_END
+ 
+LOAD2 TextOn OP01 |\x01\x00 OP_CMD  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x18\x00\x00\x0c\x02\x00\x00"
+LOAD6 .\\Data\\Script\\Bg.Fob OP03 \xb2\x01\x00 FOB_SCE_END
+ 
+LOAD4 BgAutoFadeIn OP03 \xdc\x01\x00 OP_CMD 
+LOAD3 SCE062_002\x00\x1f\x00\x02\x00 FOB_SCE_END
+ 2B_01 \x1e\x00\x00\x00\x00\r\x00\x003B_03 \r\x02\x1e\x84p\x00\x0c\x00\x00\x00\x00"\x03\xcc\x00\x00
  
 死屍累々とは、文字どおり、このことをいうのだろう。@
 比喩でもなんでもなく、そこには死体の山があった。@
@@ -26,11 +27,10 @@ VAR_2B TXT1 \x84p SEQ06 \x03\xcc\x00\x00
 そこに至るまでの流れが見えて来ないのが不気味だった。\p彼らに\nしか通用しない狂った理屈。\p狂った思考過程を経て、彼らは我が\n身を使って死体の山を築き上げたのだ。@
 カンナはその頂上に君臨する、死の女王だった。\
 
-\x00\x00\x00  
-VAR_2B D\x02 SET01  N\x01\x00 
- |\x01\x00 
-S_STR SCE062_003\x00 \xae\x05\x00 S_END 
-VAR_2B TXT1 \x88p SEQ06 \x03]\x00\x00
+\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1fD\x02\x00\x0c\x02\x00\x00"\x1fN\x01\x00 FOB_SCE_END
+ \x1f|\x01\x00 OP_CMD 
+LOAD3 SCE062_003\x00\x1f\xae\x05\x00 FOB_SCE_END
+ 2B_01 \x1e\x00\x00\x00\x00\r\x00\x003B_03 \r\x02\x1e\x88p\x00\x0c\x00\x00\x00\x00"\x03]\x00\x00
  
 カンナ\n　「生きてたんだ、虎菱くん？\p　まあ、あなたならそうかもしれ\n　　ないわね」@
 拓司\n　「……無事でよかった」@
@@ -40,13 +40,12 @@ VAR_2B TXT1 \x88p SEQ06 \x03]\x00\x00
 カンナ\n　「私が？\p　この連中と一緒に？\p　冗談じゃないわ！」@
 拓司\n　「……」\
 
-\x00\x00\x00  
-VAR_2B \xf2\x05 SET01  N\x01\x00 
- |\x01\x00 C_END  
-VAR_2B \x0b\x01 SET01  \x98\x00\x00 
-CMD01 PlayCD COMMAND_TO_BYTECODE1 \xc6\x07\x00 
-S_STR SCE062_004\x00 \xe2\x07\x00 S_END 
-VAR_2B TXT1 \x8cp SEQ06 \x03\xb7\x00\x00
+\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1f\xf2\x05\x00\x0c\x02\x00\x00"\x1fN\x01\x00 FOB_SCE_END
+ \x1f|\x01\x00 OP_CMD  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x0b\x01\x00\x0c\x02\x00\x00"\x1f\x98\x00\x00 FOB_SCE_END
+ 
+LOAD2 PlayCD OP01 \xc6\x07\x00 OP_CMD 
+LOAD3 SCE062_004\x00\x1f\xe2\x07\x00 FOB_SCE_END
+ 2B_01 \x1e\x00\x00\x00\x00\r\x00\x003B_03 \r\x02\x1e\x8cp\x00\x0c\x00\x00\x00\x00"\x03\xb7\x00\x00
  
 カンナ\n　「誰かに死ねって命令されて、はいそうですかって死ねるほど、\n　　私は軽く考えていない！\p　そんな簡単に死ねるなら、とっく\n　　の昔に何百回も死んであげてるわよ！\p　こんな……こんなゴ\n　　ロゴロ転がってるありふれた死にかたになんて、同化できな\n　　い！\p　私にとって死ぬってことは……特別なの！\p　手の届\n　　かない高い場所にひっそりと咲いて……散る……誰にも……」\n　　@
 頭をかきむしって、カンナが悲鳴のような叫びを上げた。@
@@ -55,13 +54,12 @@ VAR_2B TXT1 \x8cp SEQ06 \x03\xb7\x00\x00
 なたね\n　「……波動には一応耐えたみたいだけれど、ちょっとキてるわ\n　　ね」@
 \n隣に立つなたねが小さくいった。\
 
-\x00  
-VAR_2B &\x08 SET01  N\x01\x00 
- |\x01\x00 
-ADDRES_4B  \x98\x00\x00 
-CMD01 StopCD COMMAND_TO_BYTECODE1 H\x0b\x00 
-S_STR SCE062_005\x00 d\x0b\x00 S_END 
-VAR_2B TXT1 \x90p SEQ06 \x03\xb0\x00\x00
+\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1f&\x08\x00\x0c\x02\x00\x00"\x1fN\x01\x00 FOB_SCE_END
+ \x1f|\x01\x00 OP_CMD \x1f\x98\x00\x00 FOB_SCE_END
+ 
+LOAD2 StopCD OP01 H\x0b\x00 OP_CMD 
+LOAD3 SCE062_005\x00\x1fd\x0b\x00 FOB_SCE_END
+ 2B_01 \x1e\x00\x00\x00\x00\r\x00\x003B_03 \r\x02\x1e\x90p\x00\x0c\x00\x00\x00\x00"\x03\xb0\x00\x00
  
 それはそうであろう、男の拓司でさえ、どうにかなってしまいそ\nうなのだ。\p目の前で何十人もの人間が自殺する瞬間を見てしまっ\nたカンナが、平常心で事態を切り抜けることなどできるはずがない\n。\pカンナを正気の縁につなぎ止めているラインは、ギリギリまでに\n細い。\pわずかでもカンナが揺らめけば、そのラインは切れる。@
 一気に精神の均衡は崩壊し、カンナは壊れて……自殺してしまう\nだろう。@
@@ -71,11 +69,10 @@ VAR_2B TXT1 \x90p SEQ06 \x03\xb0\x00\x00
 拓司\n　「わかるよ。\p周りと一緒になりたくないっていう……自分の覚\n　　悟というか……死を……うわついたものといっしょにしたく\n　　ないっていう。\p俺にもそういうの、あるから」@
 カンナ\n　「……あなたも？」\
 
-\x00\x00\x00  
-VAR_2B \xa8\x0b SET01  N\x01\x00 
- |\x01\x00 
-S_STR SCE062_006\x00 \xa2\x0e\x00 S_END 
-VAR_2B TXT1 \x94p SEQ06 \x03\x7f\x00\x00
+\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1f\xa8\x0b\x00\x0c\x02\x00\x00"\x1fN\x01\x00 FOB_SCE_END
+ \x1f|\x01\x00 OP_CMD 
+LOAD3 SCE062_006\x00\x1f\xa2\x0e\x00 FOB_SCE_END
+ 2B_01 \x1e\x00\x00\x00\x00\r\x00\x003B_03 \r\x02\x1e\x94p\x00\x0c\x00\x00\x00\x00"\x03\x7f\x00\x00
  
 拓司\n　「ああ。\p今朝、テレビでやってた。\p気軽に生き死にを考えて、\n　　それを使って自己アピールをするみたいな若者が多いって…\n　　…」@
 カンナ\n　「……ふ、ふ、ふふふふ」@
@@ -85,11 +82,10 @@ VAR_2B TXT1 \x94p SEQ06 \x03\x7f\x00\x00
 \nカンナは笑っていた。\p喉を逸らせて、呵々大笑していた。@
 呆気にとられる拓司を無視するようにカンナはしばらく笑い続け\nた。\p腹を抱えて、しまいには息をするのも苦しいらしく、ヒイヒ\nイと笑い続けた。\
 
-\x00  
-VAR_2B \xe6\x0e SET01  N\x01\x00 
- |\x01\x00 
-S_STR SCE062_007\x00 \x1c\x11\x00 S_END 
-VAR_2B TXT1 \x98p SEQ06 \x03S\x00\x00
+\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1f\xe6\x0e\x00\x0c\x02\x00\x00"\x1fN\x01\x00 FOB_SCE_END
+ \x1f|\x01\x00 OP_CMD 
+LOAD3 SCE062_007\x00\x1f\x1c\x11\x00 FOB_SCE_END
+ 2B_01 \x1e\x00\x00\x00\x00\r\x00\x003B_03 \r\x02\x1e\x98p\x00\x0c\x00\x00\x00\x00"\x03S\x00\x00
  
 カンナ\n　「……同じ？\p　私と？\p　あなたが？」@
 \n長い長い笑いの後で、ようやくカンナはいった。@
@@ -97,11 +93,10 @@ VAR_2B TXT1 \x98p SEQ06 \x03S\x00\x00
 　　……冗談じゃないッ！」@
 \nカンナは拓司を鋭く指さして、一気呵成にまくしたてた。\
 
-\x00\x00\x00  
-VAR_2B `\x11 SET01  N\x01\x00 
- |\x01\x00 
-S_STR SCE062_008\x00 \xe6\x12\x00 S_END 
-VAR_2B TXT1 \x9cp SEQ06 \x03\xfb\x00\x00
+\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1f`\x11\x00\x0c\x02\x00\x00"\x1fN\x01\x00 FOB_SCE_END
+ \x1f|\x01\x00 OP_CMD 
+LOAD3 SCE062_008\x00\x1f\xe6\x12\x00 FOB_SCE_END
+ 2B_01 \x1e\x00\x00\x00\x00\r\x00\x003B_03 \r\x02\x1e\x9cp\x00\x0c\x00\x00\x00\x00"\x03\xfb\x00\x00
  
 カンナ\n　「あなたの死なんて、ありふれたものよ！\p　死にたいけど怖く\n　　て死ねない。\pそんなヒョロヒョロしたあなたの志と同類項で\n　　くくってもらっちゃあ、汚れるの！\p　私の……死の神聖さが\n　　……おとしめられる！\p　あなたなんて、そこらへんの……こ\n　　の下に積み重なってる連中と一緒！\p　平積みの『完璧自殺マ\n　　ニュアル』読んで？\p　『自分には最終手段が残されているっ\n　　て思うことが勇気になる』とかいって？\p　気取るな！\p　現実\n　　と闘う覚悟がない世捨て人気取りが！\pそんなのみんな一緒！@
 　　私があなたを案内したのは……私の領域の端っこに招いたの\n　　は……同列の存在を創るためじゃない！\p　あなたは道具！@
@@ -109,31 +104,28 @@ VAR_2B TXT1 \x9cp SEQ06 \x03\xfb\x00\x00
 　　いい、あなたは条件なの。\pわたしが死んでいい状況を形作る\n　　ための条件でしかないんだから……あなたは過去の私なの！@
 　　今の私じゃない。\pなんでもなかった頃の私で…………………\n　　………………………………………………………………………\n　　…………………………………………思い上がるなッ！」\
 
-\x00  
-VAR_2B *\x13 SET01  N\x01\x00 
- |\x01\x00 
-S_STR SCE062_009\x00 P\x17\x00 S_END 
-VAR_2B TXT1 \xa0p SEQ06 \x03h\x00\x00
+\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1f*\x13\x00\x0c\x02\x00\x00"\x1fN\x01\x00 FOB_SCE_END
+ \x1f|\x01\x00 OP_CMD 
+LOAD3 SCE062_009\x00\x1fP\x17\x00 FOB_SCE_END
+ 2B_01 \x1e\x00\x00\x00\x00\r\x00\x003B_03 \r\x02\x1e\xa0p\x00\x0c\x00\x00\x00\x00"\x03h\x00\x00
  
 拓司\n　「落ち着くんだ、カンナ－－」@
 カンナ\n　「動くなッ！」@
 /*▲BGM　Track10　再生*/\a2,-1,10,1,/*■CG26　表示（クロスフェード）*/\a7,-2,-2,0,\a0,25,2,0,\a6,-2,0,0,\n一歩踏み出した拓司を、カンナが鋭く制した。\pそしてなんのつも\nりであろうか、胸にかけたペンダントをグイッと拓司に向けてか\nざした。\p迫り来る悪魔に十字架を見せつける神父のようだ。@
 \nカンナ\n　「この中に、×××××が入ってるわ」\
 
-\x00\x00\x00  
-VAR_2B \x94\x17 SET01  N\x01\x00 
- |\x01\x00 
-S_STR SCE062_010\x00 n\x19\x00 S_END 
-VAR_2B TXT1 \xa4p SEQ06 \x03q\x00\x00
+\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1f\x94\x17\x00\x0c\x02\x00\x00"\x1fN\x01\x00 FOB_SCE_END
+ \x1f|\x01\x00 OP_CMD 
+LOAD3 SCE062_010\x00\x1fn\x19\x00 FOB_SCE_END
+ 2B_01 \x1e\x00\x00\x00\x00\r\x00\x003B_03 \r\x02\x1e\xa4p\x00\x0c\x00\x00\x00\x00"\x03q\x00\x00
  
 拓司はその名前を、カンナから借りた本で見たことがあった。@
 睡眠薬として使われる規制医薬品で、２グラムのんだだけで確実\nに心臓が止まるといわれる劇薬中の劇薬だ。\pもちろん、薬屋で買\nうことはできないし、それどころか国内では取り扱われていない。\n\pしかし－－カンナならばそれを手に入れることぐらい、造作のな\nいことのように思えた。\p拓司は、五号棟でカンナが××××を飲\nんでいるのを見たことがあったし、勧められて×××××を吸っ\nたこともある。\
 
-\x00  
-VAR_2B \xb2\x19 SET01  N\x01\x00 
- |\x01\x00 
-S_STR SCE062_011\x00 \xb0\x1b\x00 S_END 
-VAR_2B TXT1 \xa8p SEQ06 \x03z\x00\x00
+\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1f\xb2\x19\x00\x0c\x02\x00\x00"\x1fN\x01\x00 FOB_SCE_END
+ \x1f|\x01\x00 OP_CMD 
+LOAD3 SCE062_011\x00\x1f\xb0\x1b\x00 FOB_SCE_END
+ 2B_01 \x1e\x00\x00\x00\x00\r\x00\x003B_03 \r\x02\x1e\xa8p\x00\x0c\x00\x00\x00\x00"\x03z\x00\x00
  
 拓司\n　「どうするつもりだ？」@
 カンナ\n　「あなたが近づいたらこれを飲むからね。\pあなたは私を殺した\n　　ことを一生考えながら、生きていくことになる」@
@@ -143,11 +135,10 @@ VAR_2B TXT1 \xa8p SEQ06 \x03z\x00\x00
 カンナ\n　「気が変わったの。\pあなたに呪いをかけて死ぬのも面白いかも\n　　しれないって」@
 拓司\n　「……」\
 
-\x00  
-VAR_2B \xf4\x1b SET01  N\x01\x00 
- |\x01\x00 
-S_STR SCE062_012\x00 \x16\x1e\x00 S_END 
-VAR_2B TXT1 \xacp SEQ06 \x03\xb5\x00\x00
+\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1f\xf4\x1b\x00\x0c\x02\x00\x00"\x1fN\x01\x00 FOB_SCE_END
+ \x1f|\x01\x00 OP_CMD 
+LOAD3 SCE062_012\x00\x1f\x16\x1e\x00 FOB_SCE_END
+ 2B_01 \x1e\x00\x00\x00\x00\r\x00\x003B_03 \r\x02\x1e\xacp\x00\x0c\x00\x00\x00\x00"\x03\xb5\x00\x00
  
 カンナ\n　「ふふふ、興奮しない？\p　私たちは今、ずっと求めていたもの\n　　に直面しているわ。\p崖っぷちにまでいってる。\pそうでしょ？@
 　　猫を落としたり、首を絞めたり……そんなことより、ずっと\n　　先に。\pあと一歩で落ちる。\pそういうところに、私たちは立っ\n　　てる。\p……あなたそういうのに興奮してたわよね、いつも？\n　　\pふふ」@
@@ -157,11 +148,10 @@ VAR_2B TXT1 \xacp SEQ06 \x03\xb5\x00\x00
 \nカンナ\n　「本物の死体を見るのは初めて……？\p　興奮する……？@
 　　死と交わるって文字通りこんな感じ……？\p　ふふ……」\
 
-  
-VAR_2B Z\x1e SET01  N\x01\x00 
- |\x01\x00 
-S_STR SCE062_013\x00 h!\x00 S_END 
-VAR_2B TXT1 \xb0p SEQ06 \x03w\x00\x00
+ \x1e\x00\x00\x00\x00\r\x00\x00\x1fZ\x1e\x00\x0c\x02\x00\x00"\x1fN\x01\x00 FOB_SCE_END
+ \x1f|\x01\x00 OP_CMD 
+LOAD3 SCE062_013\x00\x1fh!\x00 FOB_SCE_END
+ 2B_01 \x1e\x00\x00\x00\x00\r\x00\x003B_03 \r\x02\x1e\xb0p\x00\x0c\x00\x00\x00\x00"\x03w\x00\x00
  
 拓司は、狂気に囚われてしまったとしか思えないカンナの様子を\n呆然と見ていたが、とんとん、となたねに腿をつつかれて我に返\nった。@
 なたねが、目で合図を送っている。@
@@ -170,11 +160,10 @@ VAR_2B TXT1 \xb0p SEQ06 \x03w\x00\x00
 なたねが小さくいった。@
 \nなたね\n　「……話を続けて」\
 
-\x00  
-VAR_2B \xac! SET01  N\x01\x00 
- |\x01\x00 
-S_STR SCE062_014\x00 \xc2#\x00 S_END 
-VAR_2B TXT1 \xb4p SEQ06 \x03\x80\x00\x00
+\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1f\xac!\x00\x0c\x02\x00\x00"\x1fN\x01\x00 FOB_SCE_END
+ \x1f|\x01\x00 OP_CMD 
+LOAD3 SCE062_014\x00\x1f\xc2#\x00 FOB_SCE_END
+ 2B_01 \x1e\x00\x00\x00\x00\r\x00\x003B_03 \r\x02\x1e\xb4p\x00\x0c\x00\x00\x00\x00"\x03\x80\x00\x00
  
 拓司\n　「……？」@
 なたね\n　「月代さんと話を続けて、気を引くの。\pそのあいだに……」@
@@ -185,11 +174,10 @@ VAR_2B TXT1 \xb4p SEQ06 \x03\x80\x00\x00
 拓司\n　「俺が取り憑かれた死の正体がどんなものなのかなんて、とっ\n　　くに分析すみだった、と。\pそういうわけか？」@
 カンナ\n　「－－もちろん」\
 
-\x00  
-VAR_2B \x06$ SET01  N\x01\x00 
- |\x01\x00 
-S_STR SCE062_015\x00 @&\x00 S_END 
-VAR_2B TXT1 \xb8p SEQ06 \x03f\x00\x00
+\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1f\x06$\x00\x0c\x02\x00\x00"\x1fN\x01\x00 FOB_SCE_END
+ \x1f|\x01\x00 OP_CMD 
+LOAD3 SCE062_015\x00\x1f@&\x00 FOB_SCE_END
+ 2B_01 \x1e\x00\x00\x00\x00\r\x00\x003B_03 \r\x02\x1e\xb8p\x00\x0c\x00\x00\x00\x00"\x03f\x00\x00
  
 拓司\n　「本人だって把握しきれていないのに？」@
 カンナ\n　「もちろん」@
@@ -200,11 +188,10 @@ VAR_2B TXT1 \xb8p SEQ06 \x03f\x00\x00
 カンナ\n　「……クイズよ」@
 拓司\n　「……？」\
 
-\x00\x00\x00  
-VAR_2B \x84& SET01  N\x01\x00 
- |\x01\x00 
-S_STR SCE062_016\x00 V(\x00 S_END 
-VAR_2B TXT1 \xbcp SEQ06 \x03\xab\x00\x00
+\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1f\x84&\x00\x0c\x02\x00\x00"\x1fN\x01\x00 FOB_SCE_END
+ \x1f|\x01\x00 OP_CMD 
+LOAD3 SCE062_016\x00\x1fV(\x00 FOB_SCE_END
+ 2B_01 \x1e\x00\x00\x00\x00\r\x00\x003B_03 \r\x02\x1e\xbcp\x00\x0c\x00\x00\x00\x00"\x03\xab\x00\x00
  
 カンナ\n　「屋上での続き。\pこれから私が、あなたに取り憑いたものを解\n　　剖して、ひとつひとつ晒して、説明してあげる。\pその途中に\n　　クイズを挟むわ。\pそうね……『自殺なぜなにク～～～～～イ\n　　ズ！』ってところかしら、ふふ。\pそれに正解したら、あなた\n　　は自分に取り憑いたものの正体を知ることができる。\p間違っ\n　　たら……私は薬を飲む」@
 拓司\n　「そんなのデタラメだ！」@
@@ -212,29 +199,24 @@ VAR_2B TXT1 \xbcp SEQ06 \x03\xab\x00\x00
 \n拓司は、そっと早桃の動きを探った。\p早桃は教壇の下に隠れて、\n様子をうかがっている。\pまだしばらくはカンナの興味を引きつけ\nておかなければなるまい。@
 \n拓司\n　「わかった」\
 
-\x00\x00\x00  
-VAR_2B \x9a( SET01  N\x01\x00 
- |\x01\x00 
-S_STR SCE062_017\x00 \x80+\x00 S_END 
-VAR_2B TXT1 \xc0p SEQ06 \x03\xb6\x00\x00
+\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1f\x9a(\x00\x0c\x02\x00\x00"\x1fN\x01\x00 FOB_SCE_END
+ \x1f|\x01\x00 OP_CMD 
+LOAD3 SCE062_017\x00\x1f\x80+\x00 FOB_SCE_END
+ 2B_01 \x1e\x00\x00\x00\x00\r\x00\x003B_03 \r\x02\x1e\xc0p\x00\x0c\x00\x00\x00\x00"\x03\xb6\x00\x00
  
 カンナ\n　「ＯＫ。\p準備はいいかしら？\p　重要な場面よ？\p　セーブはした？\n　　\pうふふ……まずは『セーリックマンの実験』の話からいきま\n　　しょうか」@
 拓司\n　「……」@
 カンナ\n　「身動きがとれないようにしたイヌに、一日数十回電気ショッ\n　　クを与えるの。\p不規則に、なんの前触れもなしに。\pそれから\n　　そのイヌを、今度は実験箱の中に入れる。\pこの箱の中にも電\n　　流が流れる仕掛けが施してある。\pただし、今度は電流が流れ\n　　る前兆として、照明が暗くなるようになっている。\pそして、\n　　部屋を仕切っている柵を乗り越えて反対側に移動すればそこ\n　　は安全地帯になっている……回避手段があるわけね。\pさて。@
 　　ここに、さっきの実験を施したイヌと、普通のイヌを入れた\n　　ら、どんなことが起きるでしょう？」\
 
-\x00\x00\x00  
-VAR_2B \xc4+ SET01  N\x01\x00 
- |\x01\x00 
-ADDRES_4B \x03\x18\x00\x00
+\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1f\xc4+\x00\x0c\x02\x00\x00"\x1fN\x01\x00 FOB_SCE_END
+ \x1f|\x01\x00 OP_CMD \x03\x18\x00\x00
 CHOICE
 電気ショックを受けたイヌが回避手段を見つける\n普通のイヌが回避手段を見つける\n\l0,2,
 ENDCHOICE
 
-\x00\x00\x00  
-VAR_2B \xd6. SET01  N\x01\x00 
- |\x01\x00 
-ADDRES_4B  N\x01\x00 
-
-CMD03 TextClose COMMAND_TO_BYTECODE2 |/\x00 
-F_END
+\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1f\xd6.\x00\x0c\x02\x00\x00"\x1fN\x01\x00 FOB_SCE_END
+ \x1f|\x01\x00 OP_CMD \x1fN\x01\x00 FOB_SCE_END
+ 
+LOAD3 TextClose OP02 |/\x00 OP_CMD 
+END_FILE

@@ -1,7 +1,7 @@
-F_SRT
+START_FILE
 \x8a\x0e\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xf0\x0b\x00
-CMD03 SCE036_001\x00 \x06\x00\x00 S_END 
-VAR_2B TXT1 \xe0G SEQ06 \x03e\x00\x00
+LOAD3 SCE036_001\x00\x1f\x06\x00\x00 FOB_SCE_END
+ 2B_01 \x1e\x00\x00\x00\x00\r\x00\x003B_03 \r\x02\x1e\xe0G\x00\x0c\x00\x00\x00\x00"\x03e\x00\x00
  
 錦城\n　「－－虎菱くん？」@
 /*▲BGM8　再生*/\a2,-1,8,1,/*■CG15　表示*/\a7,-2,-2,0,\a0,14,2,0,\a6,-2,0,0,\n　背後からの声にぎくりと振り返ると、そこには現代国語の錦城\n茜子が立っていた。@
@@ -9,11 +9,12 @@ VAR_2B TXT1 \xe0G SEQ06 \x03e\x00\x00
 \n錦城\n　「階段を女の子が降りていったからなにかと思ってきてみれば\n　　……あなた、どうやってこの場所に入ったの？@
 　　鍵はかかっていなかったの？」@
 拓司\n　「……」\w\z
-\x00\x00  
-VAR_2B J\x00 SET01 FILE2 .\\Data\\Script\\TextFunc.Fob COMMAND_TO_BYTECODE1 \xfe\x01\x00 
-CMD01 TextOn COMMAND_TO_BYTECODE1 ,\x02\x00 
-S_STR SCE036_002\x00 H\x02\x00 S_END 
-VAR_2B TXT1 \xe4G SEQ06 \x03\x81\x00\x00
+\x00\x00 \x1e\x00\x00\x00\x00\r\x00\x00 SET_GAMEMODE \x0c\x02\x00\x00"
+LOAD7 .\\Data\\Script\\TextFunc.Fob OP01 \xfe\x01\x00 FOB_SCE_END
+ 
+LOAD2 TextOn OP01 ,\x02\x00 OP_CMD 
+LOAD3 SCE036_002\x00\x1fH\x02\x00 FOB_SCE_END
+ 2B_01 \x1e\x00\x00\x00\x00\r\x00\x003B_03 \r\x02\x1e\xe4G\x00\x0c\x00\x00\x00\x00"\x03\x81\x00\x00
  
 　うんざりだった。@
 ついに、この学校に残された唯一のマシな場所が無くなってしま\nう……。@
@@ -21,11 +22,10 @@ VAR_2B TXT1 \xe4G SEQ06 \x03\x81\x00\x00
 \n　拓司は思った。@
 写真に撮って脅迫して……授業中にリモコンローターでやってや\nろう……\p１日最低５人は学生を誘惑するように命令し、セック\nス中毒にして……\p早桃とレズらせるのもいいな……\p早桃にペニ\nスバンドを着けさせて、目の前で犯させよう……@
 そして……？\w\z
-\x00  
-VAR_2B \x8c\x02 SET01  \xfe\x01\x00 
- ,\x02\x00 
-S_STR SCE036_003\x00 \xca\x04\x00 S_END 
-VAR_2B TXT1 \xe8G SEQ06 \x03z\x00\x00
+\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1f\x8c\x02\x00\x0c\x02\x00\x00"\x1f\xfe\x01\x00 FOB_SCE_END
+ \x1f,\x02\x00 OP_CMD 
+LOAD3 SCE036_003\x00\x1f\xca\x04\x00 FOB_SCE_END
+ 2B_01 \x1e\x00\x00\x00\x00\r\x00\x003B_03 \r\x02\x1e\xe8G\x00\x0c\x00\x00\x00\x00"\x03z\x00\x00
  
 /*▲BGM8　再生*/\a2,-1,8,1,/*■CG15　表示　フェードイン*/\a7,-2,-2,0,\a0,14,2,0,\a6,-2,0,0,　拓司ははっと我に返り、驚愕した。@
 錦城をレイプするという考えは、ごく自然に浮かび上がってきた\nものだった。@
@@ -34,11 +34,10 @@ VAR_2B TXT1 \xe8G SEQ06 \x03z\x00\x00
 妄想世界での常識を、無意識に現実世界に持ち込んでしまった…\n…。@
 自分でもすでにコントロールできないほどに、妄想世界が膨れあ\nがっている。@
 すべてを押しつぶしてしまいそうなくらいに。\w\z
-  
-VAR_2B \x0e\x05 SET01  \xfe\x01\x00 
- ,\x02\x00 
-S_STR SCE036_004\x00 0\x07\x00 S_END 
-VAR_2B TXT1 \xecG SEQ06 \x03g\x00\x00
+ \x1e\x00\x00\x00\x00\r\x00\x00\x1f\x0e\x05\x00\x0c\x02\x00\x00"\x1f\xfe\x01\x00 FOB_SCE_END
+ \x1f,\x02\x00 OP_CMD 
+LOAD3 SCE036_004\x00\x1f0\x07\x00 FOB_SCE_END
+ 2B_01 \x1e\x00\x00\x00\x00\r\x00\x003B_03 \r\x02\x1e\xecG\x00\x0c\x00\x00\x00\x00"\x03g\x00\x00
  
 錦城\n　「虎菱くん？」@
 拓司\n　「……」@
@@ -48,13 +47,13 @@ VAR_2B TXT1 \xecG SEQ06 \x03g\x00\x00
 鍵を複製したことがばれたからって、なんだというのだ？@
 もしかしたらこれも妄想か、あるいは夢なのかもしれないじゃな\nいか。@
 目が覚めると自宅のベッドにいて、天井を見上げているのかもし\nれないじゃないか……。\w\z
-\x00\x00\x00  
-VAR_2B t\x07 SET01  \xfe\x01\x00 
- ,\x02\x00 
-ADDRES_4B FILE1 .\\Data\\Script\\Bgm.Fob COMMAND_TO_BYTECODE2 J\t\x00 
-CMD01 StopCD COMMAND_TO_BYTECODE1 t\t\x00 
-S_STR SCE036_005\x00 \x90\t\x00 S_END 
-VAR_2B TXT1 \xf0G SEQ06 \x03n\x00\x00
+\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1ft\x07\x00\x0c\x02\x00\x00"\x1f\xfe\x01\x00 FOB_SCE_END
+ \x1f,\x02\x00 OP_CMD 
+LOAD6 .\\Data\\Script\\Bgm.Fob OP02 J\t\x00 FOB_SCE_END
+ 
+LOAD2 StopCD OP01 t\t\x00 OP_CMD 
+LOAD3 SCE036_005\x00\x1f\x90\t\x00 FOB_SCE_END
+ 2B_01 \x1e\x00\x00\x00\x00\r\x00\x003B_03 \r\x02\x1e\xf0G\x00\x0c\x00\x00\x00\x00"\x03n\x00\x00
  
 錦城\n　「……まあ、いいわ」@
 拓司\n　「？」@
@@ -65,10 +64,8 @@ VAR_2B TXT1 \xf0G SEQ06 \x03n\x00\x00
 　　職員室からちょっと荷物を運ばなくちゃいけないのよ。@
 　　……どう？」@
 \n\a2,-1,7,1,\a6,0,0,0,錦城がぱちりとウインクした。\w\z
-\x00\x00  
-VAR_2B \xd4\t SET01  \xfe\x01\x00 
- ,\x02\x00 
-ADDRES_4B  \xfe\x01\x00 
-
-CMD03 TextClose COMMAND_TO_BYTECODE2 \xd2\x0b\x00 
-F_END
+\x00\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1f\xd4\t\x00\x0c\x02\x00\x00"\x1f\xfe\x01\x00 FOB_SCE_END
+ \x1f,\x02\x00 OP_CMD \x1f\xfe\x01\x00 FOB_SCE_END
+ 
+LOAD3 TextClose OP02 \xd2\x0b\x00 OP_CMD 
+END_FILE

@@ -1,7 +1,7 @@
-F_SRT
+START_FILE
 <\x10\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00>\r\x00
-CMD03 SCE055_001\x00 \x06\x00\x00 S_END 
-VAR_2B TXT1 \x90e SEQ06 \x03\x98\x00\x00
+LOAD3 SCE055_001\x00\x1f\x06\x00\x00 FOB_SCE_END
+ 2B_01 \x1e\x00\x00\x00\x00\r\x00\x003B_03 \r\x02\x1e\x90e\x00\x0c\x00\x00\x00\x00"\x03\x98\x00\x00
  
 　拓司は胸のムカツキを必死に押さえた。@
 　自殺波動などというものが信じられないうえに、なたねが『前\n兆』を察知できるなどという話は初耳だ。\pでたらめだ。\pなたねの\n話は、なにもかもが常軌を逸している。\pその場その場の思いつき\nで、ものをいっているとしか思えない。@
@@ -11,11 +11,12 @@ VAR_2B TXT1 \x90e SEQ06 \x03\x98\x00\x00
 \n　なたねは誇らしげに笑った。\pまるでこの状況を楽しんでいるか\n　のようだ。@
 　小声で、解説をはじめる。\
 
-\x00  
-VAR_2B J\x00 SET01 FILE2 .\\Data\\Script\\TextFunc.Fob COMMAND_TO_BYTECODE1 \xca\x02\x00 
-CMD01 TextOn COMMAND_TO_BYTECODE1 \xf8\x02\x00 
-S_STR SCE055_002\x00 \x14\x03\x00 S_END 
-VAR_2B TXT1 \x94e SEQ06 \x03\xcd\x00\x00
+\x00 \x1e\x00\x00\x00\x00\r\x00\x00 SET_GAMEMODE \x0c\x02\x00\x00"
+LOAD7 .\\Data\\Script\\TextFunc.Fob OP01 \xca\x02\x00 FOB_SCE_END
+ 
+LOAD2 TextOn OP01 \xf8\x02\x00 OP_CMD 
+LOAD3 SCE055_002\x00\x1f\x14\x03\x00 FOB_SCE_END
+ 2B_01 \x1e\x00\x00\x00\x00\r\x00\x003B_03 \r\x02\x1e\x94e\x00\x0c\x00\x00\x00\x00"\x03\xcd\x00\x00
  
 なたね\n　「自殺っていうのは、自分がおかれている状況への絶望とかあ\n　　きらめとか、そんな悲しみの感情から生まれるでしょう？@
 　　でも悲しみは、簡単に怒りへと変化する……。\p『どうしてわ\n　　たしばっかり』『そもそもこんなになってしまったのは自分\n　　のせいじゃない』『納得いかない』……そういった怒りの感\n　　情は、他人へと転嫁される。\p誰だって、自分を責めるより他\n　　人を責めていた方がラクだから。\pたとえば、あなたがいま\n　　私に対してイライラしているのと一緒。\pくすくす……」@
@@ -23,11 +24,10 @@ VAR_2B TXT1 \x94e SEQ06 \x03\xcd\x00\x00
 なたね\n　「くすくす……怒りの受け皿となるのは、弱い人間よ。\p自分よ\n　　り立場的に弱い人間に、ストレスはぶつけられるわ。\pオチコ\n　　ボレの御堂くんたちが私にそうしたように。\p状況を理解でき\n　　ないあなたが私にそうしているように。\p安心して、責めてる\n　　わけじゃないから」@
 拓司\n　「……」\
 
-\x00  
-VAR_2B X\x03 SET01  \xca\x02\x00 
- \xf8\x02\x00 
-S_STR SCE055_003\x00 \xc6\x06\x00 S_END 
-VAR_2B TXT1 \x98e SEQ06 \x03\x80\x00\x00
+\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1fX\x03\x00\x0c\x02\x00\x00"\x1f\xca\x02\x00 FOB_SCE_END
+ \x1f\xf8\x02\x00 OP_CMD 
+LOAD3 SCE055_003\x00\x1f\xc6\x06\x00 FOB_SCE_END
+ 2B_01 \x1e\x00\x00\x00\x00\r\x00\x003B_03 \r\x02\x1e\x98e\x00\x0c\x00\x00\x00\x00"\x03\x80\x00\x00
  
 なたね\n　「……義妹さん、もともといじめられていたとか、そういうの\n　　あった？」@
 拓司\n　「もういい！\p　そんな話はどうでもいい！\p　五分待つと何があ\n　　るっていうんだ！」@
@@ -38,11 +38,10 @@ VAR_2B TXT1 \x98e SEQ06 \x03\x80\x00\x00
 小さく固くなって、自分を傷つけようとする悪意から、必死で身\nを守っている。@
 \n早桃\n　「怖い……怖い……」\
 
-\x00  
-VAR_2B \n\x07 SET01  \xca\x02\x00 
- \xf8\x02\x00 
-S_STR SCE055_004\x00 D\t\x00 S_END 
-VAR_2B TXT1 \x9ce SEQ06 \x03t\x00\x00
+\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1f\n\x07\x00\x0c\x02\x00\x00"\x1f\xca\x02\x00 FOB_SCE_END
+ \x1f\xf8\x02\x00 OP_CMD 
+LOAD3 SCE055_004\x00\x1fD\t\x00 FOB_SCE_END
+ 2B_01 \x1e\x00\x00\x00\x00\r\x00\x003B_03 \r\x02\x1e\x9ce\x00\x0c\x00\x00\x00\x00"\x03t\x00\x00
  
 \nその様子をひとり静かに見守っていた男子学生が、大声でいった。\n@
 学生\n　「みんな、静かにしろ！」@
@@ -51,19 +50,16 @@ VAR_2B TXT1 \x9ce SEQ06 \x03t\x00\x00
 \n男子学生は舞台俳優のような大げさな身振りを交えていった。@
 \n学生\n　「そこでだ！\p　俺たちが背中を押してやろうと思う！\p　もう生\n　　きていてもしょうがないと思えるくらいのことを、虎菱早桃\n　　にしてやりたいと思う！」\
 
-\x00\x00\x00  
-VAR_2B \x88\t SET01  \xca\x02\x00 
- \xf8\x02\x00 
-S_STR SCE055_005\x00 \x92\x0b\x00 S_END 
-VAR_2B TXT1 \x9ce SEQ06 \x03A\x00\x00
+\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1f\x88\t\x00\x0c\x02\x00\x00"\x1f\xca\x02\x00 FOB_SCE_END
+ \x1f\xf8\x02\x00 OP_CMD 
+LOAD3 SCE055_005\x00\x1f\x92\x0b\x00 FOB_SCE_END
+ 2B_01 \x1e\x00\x00\x00\x00\r\x00\x003B_03 \r\x02\x1e\x9ce\x00\x0c\x00\x00\x00\x00"\x03A\x00\x00
  
 \n犯せえ！\p　という声が上がった。\pしかし男子学生はそれを片手で\n軽く制した。@
 \n学生\n　「男子がこれだけの人数いると、さすがに全員やるのは無理だ\n　　ろ？\p　それに、こんなウザキャラに、おれらのチ○ポなんか\n　　もったいねえよ。\pそこでだ……！」\
 
-\x00  
-VAR_2B \xd6\x0b SET01  \xca\x02\x00 
- \xf8\x02\x00 
-ADDRES_4B  \xca\x02\x00 
-
-CMD03 TextClose COMMAND_TO_BYTECODE2  \r\x00 
-F_END
+\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1f\xd6\x0b\x00\x0c\x02\x00\x00"\x1f\xca\x02\x00 FOB_SCE_END
+ \x1f\xf8\x02\x00 OP_CMD \x1f\xca\x02\x00 FOB_SCE_END
+ 
+LOAD3 TextClose OP02  \r\x00 OP_CMD 
+END_FILE

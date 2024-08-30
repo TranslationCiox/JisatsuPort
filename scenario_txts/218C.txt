@@ -1,7 +1,7 @@
-F_SRT
+START_FILE
 \xc1\t\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xe0\x07\x00
-CMD03 SCE218_001\x00 \x06\x00\x00 S_END 
-VAR_2B TXT1 @d\x01\x0c\x00\x00\x00\x00"\x036\x00\x00
+LOAD3 SCE218_001\x00\x1f\x06\x00\x00 FOB_SCE_END
+ 2B_01 \x1e\x00\x00\x00\x00\r\x00\x003B_03 \r\x02\x1e@d\x01\x0c\x00\x00\x00\x00"\x036\x00\x00
  
 拓司\n　「やめろ、御堂！」@
 \nいって拓司は突進した。\p御堂の肩にしがみつく。@
@@ -9,11 +9,12 @@ VAR_2B TXT1 @d\x01\x0c\x00\x00\x00\x00"\x036\x00\x00
 御堂\n　「うるせえッ！」@
 \n重い一撃が顎を捉え、さらに鋭い蹴りが拓司を後方にはじき飛ば\nした。\
 
-\x00  
-VAR_2B J\x00 SET01 FILE2 .\\Data\\Script\\TextFunc.Fob COMMAND_TO_BYTECODE1 B\x01\x00 
-CMD01 TextOn COMMAND_TO_BYTECODE1 p\x01\x00 
-S_STR SCE218_002\x00 \x8c\x01\x00 S_END 
-VAR_2B TXT1 Dd\x01\x0c\x00\x00\x00\x00"\x03x\x00\x00
+\x00 \x1e\x00\x00\x00\x00\r\x00\x00 SET_GAMEMODE \x0c\x02\x00\x00"
+LOAD7 .\\Data\\Script\\TextFunc.Fob OP01 B\x01\x00 FOB_SCE_END
+ 
+LOAD2 TextOn OP01 p\x01\x00 OP_CMD 
+LOAD3 SCE218_002\x00\x1f\x8c\x01\x00 FOB_SCE_END
+ 2B_01 \x1e\x00\x00\x00\x00\r\x00\x003B_03 \r\x02\x1eDd\x01\x0c\x00\x00\x00\x00"\x03x\x00\x00
  
 御堂\n　「勘違いするなよモヤシ小僧。\pお前が今まで物を決めてこられ\n　　たのはお前の力じゃなくて俺の力なんだよ。\p俺がお前を許し\n　　ていたからお前は自由に行動できたんだよ。\pでもこれからは\n　　違うぞ。\pこれからは俺の許可無しでなにもさせやしねえから\n　　な。\pいいか、なにもだ！」@
 \n御堂はじりじりとなたねに歩み寄った。@
@@ -21,13 +22,13 @@ VAR_2B TXT1 Dd\x01\x0c\x00\x00\x00\x00"\x03x\x00\x00
 　　やあああああめえええろおおおおお！」@
 御堂\n　「この……××××が……思い知れ！\p　思い知れ！」\
 
-\x00  
-VAR_2B \xd0\x01 SET01  B\x01\x00 
- p\x01\x00 C_END  
-VAR_2B $\x00 SET01 FILE1 .\\Data\\Script\\Bg.Fob COMMAND_TO_BYTECODE3 \x04\x04\x00 
-CMD02 BgAutoFadeIn COMMAND_TO_BYTECODE3 .\x04\x00 
-S_STR SCE218_003\x00 R\x04\x00 S_END 
-VAR_2B TXT1 Hd\x01\x0c\x00\x00\x00\x00"\x03\x9b\x00\x00
+\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1f\xd0\x01\x00\x0c\x02\x00\x00"\x1fB\x01\x00 FOB_SCE_END
+ \x1fp\x01\x00 OP_CMD  \x1e\x00\x00\x00\x00\r\x00\x00\x1e$\x00\x00\x0c\x02\x00\x00"
+LOAD6 .\\Data\\Script\\Bg.Fob OP03 \x04\x04\x00 FOB_SCE_END
+ 
+LOAD4 BgAutoFadeIn OP03 .\x04\x00 OP_CMD 
+LOAD3 SCE218_003\x00\x1fR\x04\x00 FOB_SCE_END
+ 2B_01 \x1e\x00\x00\x00\x00\r\x00\x003B_03 \r\x02\x1eHd\x01\x0c\x00\x00\x00\x00"\x03\x9b\x00\x00
  
 御堂はなたねの顔面に、容赦のないパンチを雨あられと降らせて\nいる。\p溜まり溜まったストレスをすべて叩き付けるように、な\nたねを殴り続ける。@
 ごつ、ごつ、ごつ！@
@@ -41,14 +42,12 @@ VAR_2B TXT1 Hd\x01\x0c\x00\x00\x00\x00"\x03\x9b\x00\x00
 理性や人間性に立脚した、あらゆるものは瓦解した。@
 そしていま、眼前で展開されていることこそ、新しい秩序の骨子\nを為すものであるはずだった。\
 
-\x00  
-VAR_2B \x96\x04 SET01  B\x01\x00 
- p\x01\x00 C_END  
-VAR_2B \xc8\x00 SET01  \x04\x04\x00 
- .\x04\x00 
-ADDRES_4B FILE1 .\\Data\\Script\\Bgm.Fob COMMAND_TO_BYTECODE2 p\x07\x00 
-CMD01 StopCD COMMAND_TO_BYTECODE1 \x9a\x07\x00 
-ADDRES_4B  B\x01\x00 
-
-CMD03 TextClose COMMAND_TO_BYTECODE2 \xc2\x07\x00 
-F_END
+\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1f\x96\x04\x00\x0c\x02\x00\x00"\x1fB\x01\x00 FOB_SCE_END
+ \x1fp\x01\x00 OP_CMD  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00\x00\x0c\x02\x00\x00"\x1f\x04\x04\x00 FOB_SCE_END
+ \x1f.\x04\x00 OP_CMD 
+LOAD6 .\\Data\\Script\\Bgm.Fob OP02 p\x07\x00 FOB_SCE_END
+ 
+LOAD2 StopCD OP01 \x9a\x07\x00 OP_CMD \x1fB\x01\x00 FOB_SCE_END
+ 
+LOAD3 TextClose OP02 \xc2\x07\x00 OP_CMD 
+END_FILE
