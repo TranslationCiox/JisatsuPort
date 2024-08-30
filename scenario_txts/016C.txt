@@ -1,7 +1,7 @@
 START_FILE
 \x18\x06\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xa4\t3\x01\x00\x00\x00\xc6\x04\x00
 LOAD3 SCE016_001 REF6 \x06\x00 REF_END2 
-DIALOGUE_1 \xa0( DIALOGUE_2 ^\x00\x00
+SEQ1 \x8c\x01 SEQ2 \xa0( SEQ3 \x03^\x00\x00
  
 紅葉\n　「……。あのねえ、アンタ、女の子に会うたびそんな適当なこ\n　　といってんじゃないでしょうね？@
 　　『僕はいつも君のこと見てるよ』ってアピール？@
@@ -9,11 +9,11 @@ DIALOGUE_1 \xa0( DIALOGUE_2 ^\x00\x00
 拓司\n　「そうか？　なんとなくいつもと違う感じがしたからさ」@
 紅葉\n　「……」@
 拓司\n　「……」\w\z
-\x00\x00\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"
+\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 J\x00 REF_END3 
 LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xe2\x01 REF_END2 
 LOAD2 TextOn REF1 \x10\x02 REF_END1 
 LOAD3 SCE016_002 REF6 ,\x02 REF_END2 
-DIALOGUE_1 \xa4( DIALOGUE_2 (\x00\x00
+SEQ1 \x8c\x01 SEQ2 \xa4( SEQ3 \x03(\x00\x00
  
 紅葉\n　「……リップ」@
 拓司\n　「はあ？」@
@@ -21,10 +21,9 @@ DIALOGUE_1 \xa4( DIALOGUE_2 (\x00\x00
 拓司\n　「ふうん」@
 紅葉\n　「……」@
 拓司\n　「……」\w\z
-\x00\x00\x00 DIALOGUE_END p\x02
-CALL1 \xe2\x01 CALL3 \x10\x02 REF_END1 
+\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 p\x02 CALL1 \xe2\x01 CALL3 \x10\x02 REF_END1 
 LOAD3 SCE016_003 REF6 J\x03 REF_END2 
-DIALOGUE_1 \xa8( DIALOGUE_2 5\x00\x00
+SEQ1 \x8c\x01 SEQ2 \xa8( SEQ3 \x035\x00\x00
  
 沈黙の後、紅葉が突然、えい、と拓司の背中にパンチを飛ばした。\n@
 拓司\n　「いて！　なんだよ、お前！」@
@@ -32,7 +31,6 @@ DIALOGUE_1 \xa8( DIALOGUE_2 5\x00\x00
 拓司\n　「……照れてるのか？」@
 紅葉\n　「うるさいっ！」\
 
-\x00 DIALOGUE_END \x8e\x03
-CALL1 \xe2\x01 CALL3 \x10\x02 CALL2 \xe2\x01 REF_END2 
+\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \x8e\x03 CALL1 \xe2\x01 CALL3 \x10\x02 CALL2 \xe2\x01 REF_END2 
 LOAD3 TextClose REF2 \xa8\x04 REF_END1 
 END_FILE

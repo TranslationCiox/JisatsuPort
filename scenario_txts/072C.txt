@@ -1,19 +1,19 @@
 START_FILE
 \xc1\x06\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x004\x05\x00
 LOAD3 SCE072_001 REF6 \x06\x00 REF_END2 
-DIALOGUE_1 \x90~ DIALOGUE_2 \\\x00\x00
+SEQ1 \x8c\x01 SEQ2 \x90~ SEQ3 \x03\\\x00\x00
  
 拓司の返事に、なたねはやれやれと肩をすくめてみせた。@
 \nなたね\n　「悪いけれど、私は一緒にいけないわ。\p私はこの状況を生き延\n　　びなければならないから。\pレジスタンスの一斉蜂起……それ\n　　は最終聖戦になるわ……には絶対に私の力が必要になるから。\n　　\p私はキーだから。鍵なの。\pわかる？\p　わからないだろうな\n　　あ……」@
 拓司\n　「早桃、行くぞ！」\
 
-\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"
+\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 J\x00 REF_END3 
 LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xda\x01 REF_END2 
-LOAD2 TextOn REF1 \x08\x02 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x0b\x01\x00\x0c\x02\x00\x00"
+LOAD2 TextOn REF1 \x08\x02 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x0b\x01 REF_END3 
 LOAD6 .\\Data\\Script\\Bgm.Fob REF2 >\x02 REF_END2 
 LOAD2 PlayCD REF1 h\x02 REF_END1 
 LOAD3 SCE072_002 REF6 \x84\x02 REF_END2 
-DIALOGUE_1 \x94~ DIALOGUE_2 x\x00\x00
+SEQ1 \x8c\x01 SEQ2 \x94~ SEQ3 \x03x\x00\x00
  
 際限のないなたねの妄想話を振り切って、拓司は早桃の手を引い\nた。\pそのまま１階に駆け下りて、玄関から中庭に走り出す。@
 途端。@
@@ -26,8 +26,7 @@ DIALOGUE_1 \x94~ DIALOGUE_2 x\x00\x00
 終わったんだ。@
 ようやく、終わったんだ、と。\
 
- DIALOGUE_END \xc8\x02
-CALL1 \xda\x01 CALL3 \x08\x02 CALL2 >\x02 REF_END2 
+ \x1e\x00\x00\x00\x00\r\x00 REF6 \xc8\x02 CALL1 \xda\x01 CALL3 \x08\x02 CALL2 >\x02 REF_END2 
 LOAD2 StopCD REF1 \xee\x04 CALL2 \xda\x01 REF_END2 
 LOAD3 TextClose REF2 \x16\x05 REF_END1 
 END_FILE

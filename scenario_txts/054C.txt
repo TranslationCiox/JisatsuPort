@@ -1,7 +1,7 @@
 START_FILE
 +\x08\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xf4\x06\x00
 LOAD3 SCE054_001 REF6 \x06\x00 REF_END2 
-DIALOGUE_1 \x00d DIALOGUE_2 \xb2\x00\x00
+SEQ1 \x8c\x01 SEQ2 \x00d SEQ3 \x03\xb2\x00\x00
  
 　冗談ではない。@
 　五分も待っているわけにはいかない。@
@@ -16,11 +16,11 @@ DIALOGUE_1 \x00d DIALOGUE_2 \xb2\x00\x00
 /*■CG22　表示（クロスフェード）*/\a7,1,0,0,\a0,21,0,0,\a6,0,0,0,\n　肺腑の底から声を絞り出して、男だろうが女だろうが、目に入\nった人間すべてに拳を叩き込んでいく。@
 　突入前から目星をつけていたほうきを掴んで、無我夢中で振り\n回す。\
 
- DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"
+ \x1e\x00\x00\x00\x00\r\x00 REF6 J\x00 REF_END3 
 LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 2\x03 REF_END2 
 LOAD2 TextOn REF1 `\x03 REF_END1 
 LOAD3 SCE054_002 REF6 |\x03 REF_END2 
-DIALOGUE_1 \x04d DIALOGUE_2 \x9a\x00\x00
+SEQ1 \x8c\x01 SEQ2 \x04d SEQ3 \x03\x9a\x00\x00
  
 　一人、二人、三人、四人……@
 　突然、背後からのしかかられるような形で床に押し倒された。@
@@ -35,8 +35,7 @@ DIALOGUE_1 \x04d DIALOGUE_2 \x9a\x00\x00
 　やがて潮が引くように、声が収まっていった。@
 　静寂の中、バットが振り下ろされた。@
 \z
-\x00\x00\x00 DIALOGUE_END \xc0\x03
-CALL1 2\x03 CALL3 `\x03 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00\x00\x0c\x02\x00\x00"
+\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \xc0\x03 CALL1 2\x03 CALL3 `\x03 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00 REF_END3 
 LOAD6 .\\Data\\Script\\Bg.Fob REF3 |\x06 REF_END2 
 LOAD4 BgAutoFadeIn REF3 \xa6\x06 CALL2 2\x03 REF_END2 
 LOAD3 TextClose REF2 \xd6\x06 REF_END1 

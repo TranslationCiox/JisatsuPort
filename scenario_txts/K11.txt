@@ -1,21 +1,20 @@
 START_FILE
 \x14\x04\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xa4\t3\x01\x00\x00\x00\xf8\x02\x00
 LOAD3 SCEK11_001 REF6 \x06\x00 REF_END2 
-DIALOGUE_1 \x00\xa9\x01\x0c\x00\x00\x00\x00"\x03`\x00\x00
+SEQ1 \x8c\x01 SEQ2 \x00\xa9\x01\x0c\x00\x00\x00\x00"\x03`\x00\x00
  
 　ゆきが流した涙で私の胸のあたりはぐっしょりと濡れていた。@
 そのしめりけは本当にリアルで、それを胸に感じていると\n「そのうちなんとかなるよ」とか、\n「家出しよう」とか、\nそんな安易ななぐさめはとても口にはできなかった。@
 私はとても悲しい気分だった。@
 でも、その話を聞きながら、私は、ゆきを救い出す方法をひとつ\n見つけだしていた。@
 しばらく考えてから、私はゆきにいった。\w\z
-\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"
+\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 J\x00 REF_END3 
 LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xea\x01 REF_END2 
 LOAD2 TextOn REF1 \x18\x02 REF_END1 \x03\x18\x00\x00
 CHOICE
 「大丈夫だよ。私が一緒に死んであげるから」\n「お父さんのこと、一緒に殺そう？」\n\l0,2,
 ENDCHOICE
 
-\x00 DIALOGUE_END 4\x02
-CALL1 \xea\x01 CALL3 \x18\x02 CALL2 \xea\x01 REF_END2 
+\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 4\x02 CALL1 \xea\x01 CALL3 \x18\x02 CALL2 \xea\x01 REF_END2 
 LOAD3 TextClose REF2 \xda\x02 REF_END1 
 END_FILE

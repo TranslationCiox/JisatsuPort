@@ -1,9 +1,9 @@
 START_FILE
-\x86\x07\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x004\x06\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1e\t\x01\x00\x0c\x02\x00\x00"
+\x86\x07\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x004\x06\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1e\t\x01 REF_END3 
 LOAD6 .\\Data\\Script\\Bgm.Fob REF2  \x00 REF_END2 
 LOAD2 PlayCD REF1 J\x00 REF_END1 
 LOAD3 SCE078_001 REF6 f\x00 REF_END2 
-DIALOGUE_1 \x80\x89 DIALOGUE_2 \xd7\x00\x00
+SEQ1 \x8c\x01 SEQ2 \x80\x89 SEQ3 \x03\xd7\x00\x00
  
 途中、生きている人間には一度も出くわさなかった。@
 もっとも、余計な寄り道はせず、ただひたすら４階目指して廊下\nを歩いてきただけだから、もしかしたらどこかの教室に生き残り\nがいるのかもしれない。@
@@ -20,19 +20,18 @@ DIALOGUE_1 \x80\x89 DIALOGUE_2 \xd7\x00\x00
 布団なんかでおばけから身を守れるはずがない。@
 だが、恐怖からは守ってくれる……。\
 
-\x00 DIALOGUE_END \xaa\x00\x00\x0c\x02\x00\x00"
+\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \xaa\x00 REF_END3 
 LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 &\x04 REF_END2 
 LOAD2 TextOn REF1 T\x04 CALL2  \x00 REF_END2 
 LOAD2 StopCD REF1 |\x04 REF_END1 
 LOAD3 SCE078_002 REF6 \x98\x04 REF_END2 
-DIALOGUE_1 \x84\x89 DIALOGUE_2 =\x00\x00
+SEQ1 \x8c\x01 SEQ2 \x84\x89 SEQ3 \x03=\x00\x00
  
 なたね\n　「ここよ」@
 \nなたねは４階実験室の前でいい、ポケットを探って鍵を取り出し\nた。@
 どこで手に入れたのかはわからないが、もう、そんなことをいち\nいち尋ねる気力もなかった。@
 なたねはドアを開き、実験室へと足早に入っていった。\
 
-\x00 DIALOGUE_END \xdc\x04
-CALL1 &\x04 CALL3 T\x04 CALL2 &\x04 REF_END2 
+\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \xdc\x04 CALL1 &\x04 CALL3 T\x04 CALL2 &\x04 REF_END2 
 LOAD3 TextClose REF2 \x16\x06 REF_END1 
 END_FILE

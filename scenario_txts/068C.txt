@@ -1,7 +1,7 @@
 START_FILE
 \xa4\x19\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\x02\x16\x00
 LOAD3 SCE068_001 REF6 \x06\x00 REF_END2 
-DIALOGUE_1 \xe0y DIALOGUE_2 \xec\x00\x00
+SEQ1 \x8c\x01 SEQ2 \xe0y SEQ3 \x03\xec\x00\x00
  
 カンナ\n　「ピンポーン！\p　要するに、こういうことよね。\p『好ましくな\n　　い環境を自分が変えられないと知った生き物は、無力感に支\n　　配される』……電気ショックに黙々と耐えたり、泣くことす\n　　らやめて内にこもったり。\p無力感にうちのめされるの。@
 　　そして－－無力感に支配された赤ちゃんは、病気に対する抵\n　　抗力が低くなるの。\pこれは事実よ。\p無力感に囚われると、生\n　　命力が低下する。\p……前に進む意志のない生物は、死ぬ。@
@@ -9,20 +9,19 @@ DIALOGUE_1 \xe0y DIALOGUE_2 \xec\x00\x00
 　　残された淘汰はなにかしら？\p　殺すことができない生き物が\n　　淘汰される方法は？」@
 拓司\n　「自ら……命を絶つこと」\
 
-\x00\x00\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"
+\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 J\x00 REF_END3 
 LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \x1a\x04 REF_END2 
 LOAD2 TextOn REF1 H\x04 REF_END1 
 LOAD3 SCE068_002 REF6 d\x04 REF_END2 
-DIALOGUE_1 \xe4y DIALOGUE_2 \xac\x00\x00
+SEQ1 \x8c\x01 SEQ2 \xe4y SEQ3 \x03\xac\x00\x00
  
 カンナ\n　「あなた、一回話してくれたことがあったわよね。\p蜥蜴のこと。\n　　\p瓶詰の蜥蜴。\pそうよ、蜥蜴を殺したのは無力感よ。\p蜥蜴は自\n　　分が世界に影響を与えられないことを悟って、死んだ。\pあな\n　　たも同じ。\pあなたは瓶詰の蜥蜴。\p世界はあなたという歯車無\n　　しでも回っていく。\pあなたという歯車は、なんら世界に影響\n　　を及ぼし得ない。\pどうあがいても電流は流されるし、泣き叫\n　　んでも誰もやってこない。\pあなに取り憑いたもの。\pそれは、\n　　無力感という名の死病よ」@
 拓司\n　「……」@
 カンナ\n　「簡単でしょ？\p　イヌとか赤ちゃんの実験で照明されちゃうよ\n　　うなもの。\pその程度なの、あなたは。\pあなたにとって、死は\n　　その程度のもの。\pでも、私は違う！」\
 
-\x00 DIALOGUE_END \xa8\x04
-CALL1 \x1a\x04 CALL3 H\x04 REF_END1 
+\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \xa8\x04 CALL1 \x1a\x04 CALL3 H\x04 REF_END1 
 LOAD3 SCE068_003 REF6 \x92\x07 REF_END2 
-DIALOGUE_1 \xe8y DIALOGUE_2 \xa4\x00\x00
+SEQ1 \x8c\x01 SEQ2 \xe8y SEQ3 \x03\xa4\x00\x00
  
 拓司\n　「……どう違うんだ？」@
 カンナ\n　「私には赦しが必要なの。\pでも、その赦しは、いまとなっては、\n　　物理的な意味では絶対に与えられない。\pだから儀式化された\n　　赦しが必要なの！」@
@@ -30,12 +29,11 @@ DIALOGUE_1 \xe8y DIALOGUE_2 \xa4\x00\x00
 カンナ\n　「虎菱くん、あなた素敵よ。\p頭がいいわ。\pここに積み重なって\n　　る連中が考えているみたいに、数式とかイディオムを丸暗記\n　　するような頭の良さじゃなくて……もっと深い智恵が、あな\n　　たにはある。\pあなたは特別。\pだからあなたを選んだの。@
 　　決してあなたをバカにしているわけじゃないの。\pあなたの存\n　　在を認めているからこそ、あなたを選んだ……あッ！」\
 
-\x00\x00\x00 DIALOGUE_END \xd6\x07
-CALL1 \x1a\x04 CALL3 H\x04 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00\x00\x0c\x02\x00\x00"
+\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \xd6\x07 CALL1 \x1a\x04 CALL3 H\x04 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00 REF_END3 
 LOAD6 .\\Data\\Script\\Bg.Fob REF3 \xba\n REF_END2 
 LOAD2 BgOn REF3 \xe4\n REF_END1 
 LOAD3 SCE068_004 REF6 \x00\x0b REF_END2 
-DIALOGUE_1 \xecy DIALOGUE_2 f\x00\x00
+SEQ1 \x8c\x01 SEQ2 \xecy SEQ3 \x03f\x00\x00
  
 カンナは叫んだ。@
 ようやく山の後ろに回り込んだ早桃が、足場を蹴って一気にカン\nナに躍りかかったのである。\p瞬間、拓司も前に駆けている。@
@@ -45,10 +43,9 @@ DIALOGUE_1 \xecy DIALOGUE_2 f\x00\x00
 拓司\n　「早桃ォ！　カンナァ！」@
 早桃\n　「あっ！」\
 
-\x00\x00 DIALOGUE_END D\x0b
-CALL1 \x1a\x04 CALL3 H\x04 REF_END1 
+\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 D\x0b CALL1 \x1a\x04 CALL3 H\x04 REF_END1 
 LOAD3 SCE068_005 REF6 \x16\r REF_END2 
-DIALOGUE_1 \xf0y DIALOGUE_2 ~\x00\x00
+SEQ1 \x8c\x01 SEQ2 \xf0y SEQ3 \x03~\x00\x00
  
 カンナと早桃は激しく山の頂上でもみ合っていたが、不安定な足\n場がそれに耐え得るはずもなく、あえなく２人は床に転げ落ちた。\n@
 拓司はもみ合う２人のあいだに割って入り、カンナを背後から羽\n交い締めに取り押さえた。\p狂乱状態のカンナは、後頭部を拓司の\n鼻面にぶつけ、必至の抵抗を見せた。@
@@ -57,14 +54,12 @@ DIALOGUE_1 \xf0y DIALOGUE_2 ~\x00\x00
 早桃\n　「やめて！　やめて！」@
 カンナ\n　「ちくしょおおおおおおおお！\p　うわあああああああ！」\
 
-\x00\x00\x00 DIALOGUE_END Z\r
-CALL1 \x1a\x04 CALL3 H\x04 REF_END1 
+\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 Z\r CALL1 \x1a\x04 CALL3 H\x04 REF_END1 
 LOAD6 .\\Data\\Script\\Bgm.Fob REF2 \x8c\x0f REF_END2 
-LOAD2 StopCD REF1 \xb6\x0f REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00
-CALL1 \xba\n REF_END2 
+LOAD2 StopCD REF1 \xb6\x0f REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00 CALL1 \xba\n REF_END2 
 LOAD4 BgAutoFadeIn REF3 \xf8\x0f REF_END1 
 LOAD3 SCE068_006 REF6 \x1c\x10 REF_END2 
-DIALOGUE_1 \xf4y DIALOGUE_2 \xa4\x00\x00
+SEQ1 \x8c\x01 SEQ2 \xf4y SEQ3 \x03\xa4\x00\x00
  
 一同はそうしてしばらくもみ合っていたが、結局、なたねが事態\nを収束させた。\pと、無言で一歩踏み出して、カンナの額に手をか\nざしたのである。\p途端、糸が切れた人形のように、カンナはガッ\nクリと気を失った。\pあっけない幕切れだった。@
 \n拓司\n　「い、いったい……？」@
@@ -74,10 +69,9 @@ DIALOGUE_1 \xf4y DIALOGUE_2 \xa4\x00\x00
 なたね\n　「あなたにもできるはずよ、虎菱くん」@
 拓司\n　「……ふざけるな」@
 \z
-\x00 DIALOGUE_END `\x10
-CALL1 \x1a\x04 CALL3 H\x04 REF_END1 
+\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 `\x10 CALL1 \x1a\x04 CALL3 H\x04 REF_END1 
 LOAD3 SCE068_007 REF6 *\x13 REF_END2 
-DIALOGUE_1 \xf8y DIALOGUE_2 \x8c\x00\x00
+SEQ1 \x8c\x01 SEQ2 \xf8y SEQ3 \x03\x8c\x00\x00
  
 なたね\n　「だってあなたもレジスタンスのひとりだから。\p目を開いて、\n　　状況を受け入れて。\pそうすれば、あなたにも善なる覚醒が－\n　　－」@
 早桃\n　「もうたくさんッ！」@
@@ -86,7 +80,6 @@ DIALOGUE_1 \xf8y DIALOGUE_2 \x8c\x00\x00
 \n沈黙が落ちた。\pしかし、それに浸っていられるほど、拓司たちに\n時間は残されていなかった。\p拓司はぐったりとしたカンナの身体\nを肩に担ぎあげて、いった。@
 \n拓司\n　「行こう。\p紅葉を助けに」\
 
-\x00 DIALOGUE_END n\x13
-CALL1 \x1a\x04 CALL3 H\x04 CALL2 \x1a\x04 REF_END2 
+\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 n\x13 CALL1 \x1a\x04 CALL3 H\x04 CALL2 \x1a\x04 REF_END2 
 LOAD3 TextClose REF2 \xe4\x15 REF_END1 
 END_FILE

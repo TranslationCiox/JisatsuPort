@@ -1,18 +1,18 @@
 START_FILE
 \x0b\x08\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00h\x06\x00
 LOAD3 SCE006_001 REF6 \x06\x00 REF_END2 
-DIALOGUE_1 \x00\x19 DIALOGUE_2 .\x00\x00
+SEQ1 \x8c\x01 SEQ2 \x00\x19 SEQ3 \x03.\x00\x00
  
 拓司\n　「……出て行け」@
 早桃\n　「どうして？」@
 拓司\n　「こんなこと、おれは望んじゃいない」@
 早桃\n　「いいんだよ。夢は現実に干渉しない。\pいつもの妄想だか\n　　ら」\
 
-\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"
+\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 J\x00 REF_END3 
 LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 "\x01 REF_END2 
 LOAD2 TextOn REF1 P\x01 REF_END1 
 LOAD3 SCE006_002 REF6 l\x01 REF_END2 
-DIALOGUE_1 \x04\x19 DIALOGUE_2 \x98\x00\x00
+SEQ1 \x8c\x01 SEQ2 \x04\x19 SEQ3 \x03\x98\x00\x00
  
 早桃はネグリジェの裾をつまみ、ゆっくりと持ち上げて見せた。@
 /*HCG02*/\a7,-2,-2,0,\a0,73,2,0,\a6,-2,0,0,幼い肉の合わせ目が、あらわになる。@
@@ -24,23 +24,20 @@ DIALOGUE_1 \x04\x19 DIALOGUE_2 \x98\x00\x00
 こんなにもいやらしいものを隠して、早桃は同じ家の\n中で暮らしてきたのだ。@
 早桃のくちびるのあいだに、ぬるっと、濡れ光る肉の塊がすべっ\nた。\n粘り着くような声が、そこからこぼれだした。\
 
-\x00\x00 DIALOGUE_END \xb0\x01
-CALL1 "\x01 CALL3 P\x01 REF_END1 
+\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \xb0\x01 CALL1 "\x01 CALL3 P\x01 REF_END1 
 LOAD3 SCE006_003 REF6 J\x04 REF_END2 
-DIALOGUE_1 \x08\x19 DIALOGUE_2 C\x00\x00
+SEQ1 \x8c\x01 SEQ2 \x08\x19 SEQ3 \x03C\x00\x00
  
 早桃\n　「見せっこ……しよ？\p　早桃にだけ出させるなんて、ずるい。@
 　　おにいちゃんのも、見せて。\pおち○ちん、見せてくれたら…\n　　…おれいにおにいちゃんにいいこと……してあげる。@
 　　パパとママには絶対教えられないこと、一緒にしよう？@
 　　ね？」\
 
-\x00\x00\x00 DIALOGUE_END \x8e\x04
-CALL1 "\x01 CALL3 P\x01 REF_END1 \x03\x0c\x00\x00
+\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \x8e\x04 CALL1 "\x01 CALL3 P\x01 REF_END1 \x03\x0c\x00\x00
 CHOICE
 「……消えろ」\n「……来いよ」\n\l0,2,
 ENDCHOICE
 
-\x00 DIALOGUE_END \xd4\x05
-CALL1 "\x01 CALL3 P\x01 CALL2 "\x01 REF_END2 
+\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \xd4\x05 CALL1 "\x01 CALL3 P\x01 CALL2 "\x01 REF_END2 
 LOAD3 TextClose REF2 J\x06 REF_END1 
 END_FILE

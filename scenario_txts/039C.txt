@@ -1,9 +1,9 @@
 START_FILE
-\n\x08\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00@\x06\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x08\x01\x00\x0c\x02\x00\x00"
+\n\x08\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00@\x06\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x08\x01 REF_END3 
 LOAD6 .\\Data\\Script\\Bgm.Fob REF2  \x00 REF_END2 
 LOAD2 PlayCD REF1 J\x00 REF_END1 
 LOAD3 SCE039_001 REF6 f\x00 REF_END2 
-DIALOGUE_1 \x90L DIALOGUE_2 N\x00\x00
+SEQ1 \x8c\x01 SEQ2 \x90L SEQ3 \x03N\x00\x00
  
 拓司\n　「早桃は、どうなんだ？」@
 \n引き返すことができない場所へと、話題が転がっていることには\n気づいていた。@
@@ -14,11 +14,11 @@ DIALOGUE_1 \x90L DIALOGUE_2 N\x00\x00
 \n早桃\n　「おにいちゃん」@
 拓司\n　「……」\
 
-\x00\x00\x00 DIALOGUE_END \xaa\x00\x00\x0c\x02\x00\x00"
+\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \xaa\x00 REF_END3 
 LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \x02\x02 REF_END2 
 LOAD2 TextOn REF1 0\x02 REF_END1 
 LOAD3 SCE039_002 REF6 L\x02 REF_END2 
-DIALOGUE_1 \x94L DIALOGUE_2 W\x00\x00
+SEQ1 \x8c\x01 SEQ2 \x94L SEQ3 \x03W\x00\x00
  
 あまりにもあっさりとした口調だったので、拓司は早桃がそれを\n冗談として処理しようとしているのかと思った。@
 しかし、拓司を正面から見据える早桃の表情は、真剣そのものだ\nった。@
@@ -28,10 +28,9 @@ DIALOGUE_1 \x94L DIALOGUE_2 W\x00\x00
 早桃\n　「わざとなの」@
 拓司\n　「？」\
 
-\x00\x00\x00 DIALOGUE_END \x90\x02
-CALL1 \x02\x02 CALL3 0\x02 REF_END1 
+\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \x90\x02 CALL1 \x02\x02 CALL3 0\x02 REF_END1 
 LOAD3 SCE039_003 REF6 &\x04 REF_END2 
-DIALOGUE_1 \x98L DIALOGUE_2 >\x00\x00
+SEQ1 \x8c\x01 SEQ2 \x98L SEQ3 \x03>\x00\x00
  
 早桃\n　「わざとドアを開けておいたの。@
 　　おにいちゃんに見てもらおうと思って。@
@@ -39,13 +38,11 @@ DIALOGUE_1 \x98L DIALOGUE_2 >\x00\x00
 　　おにいちゃんに見てもらって、早桃の気持ちを伝えようって\n　　思ったの」@
 拓司\n　「……早桃」@
 \z
-\x00 DIALOGUE_END j\x04
-CALL1 \x02\x02 CALL3 0\x02 REF_END1 \x03\x10\x00\x00
+\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 j\x04 CALL1 \x02\x02 CALL3 0\x02 REF_END1 \x03\x10\x00\x00
 CHOICE
 義兄として好きだという\n男として好きだという\n\l0,2,
 ENDCHOICE
 
-\x00\x00\x00 DIALOGUE_END \x9c\x05
-CALL1 \x02\x02 CALL3 0\x02 CALL2 \x02\x02 REF_END2 
+\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \x9c\x05 CALL1 \x02\x02 CALL3 0\x02 CALL2 \x02\x02 REF_END2 
 LOAD3 TextClose REF2 "\x06 REF_END1 
 END_FILE

@@ -1,17 +1,17 @@
 START_FILE
-\xfb\x08\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\x14\x07\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x07\x01\x00\x0c\x02\x00\x00"
+\xfb\x08\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\x14\x07\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x07\x01 REF_END3 
 LOAD6 .\\Data\\Script\\Bgm.Fob REF2  \x00 REF_END2 
 LOAD2 PlayCD REF1 J\x00 REF_END1 
 LOAD3 SCE033_001 REF6 f\x00 REF_END2 
-DIALOGUE_1 PF DIALOGUE_2 &\x00\x00
+SEQ1 \x8c\x01 SEQ2 PF SEQ3 \x03&\x00\x00
  
 拓司の中に、今日の昼食はどうするのか、という紅葉の言葉が引\nっかかっていた。\p拓司は、教室に引き返し、弁当をかじっている\n紅葉に声をかけた。\
 
-\x00\x00\x00 DIALOGUE_END \xaa\x00\x00\x0c\x02\x00\x00"
+\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \xaa\x00 REF_END3 
 LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 b\x01 REF_END2 
 LOAD2 TextOn REF1 \x90\x01 REF_END1 
 LOAD3 SCE033_002 REF6 \xac\x01 REF_END2 
-DIALOGUE_1 TF DIALOGUE_2 J\x00\x00
+SEQ1 \x8c\x01 SEQ2 TF SEQ3 \x03J\x00\x00
  
 拓司\n　「よう」@
 紅葉\n　「ん？」@
@@ -21,10 +21,9 @@ DIALOGUE_1 TF DIALOGUE_2 J\x00\x00
 紅葉\n　「ああ、お弁当ね」@
 \n紅葉はあっさりといった。\pなんだか拍子抜けするようないいかた\nだった。\
 
-\x00\x00\x00 DIALOGUE_END \xf0\x01
-CALL1 b\x01 CALL3 \x90\x01 REF_END1 
+\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \xf0\x01 CALL1 b\x01 CALL3 \x90\x01 REF_END1 
 LOAD3 SCE033_003 REF6 R\x03 REF_END2 
-DIALOGUE_1 XF DIALOGUE_2 H\x00\x00
+SEQ1 \x8c\x01 SEQ2 XF SEQ3 \x03H\x00\x00
  
 紅葉\n　「あるよ。\p食べる？\p　だったら屋上までつきあってくれない\n　　かな」@
 拓司\n　「屋上？」@
@@ -32,18 +31,16 @@ DIALOGUE_1 XF DIALOGUE_2 H\x00\x00
 拓司\n　「話？」@
 紅葉\n　「ちょっと教室じゃ……アレだから。\pいいでしょ、つきあって\n　　よ」\
 
-\x00 DIALOGUE_END \x96\x03
-CALL1 b\x01 CALL3 \x90\x01 CALL2  \x00 REF_END2 
+\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \x96\x03 CALL1 b\x01 CALL3 \x90\x01 CALL2  \x00 REF_END2 
 LOAD2 StopCD REF1 \xfc\x04 REF_END1 
 LOAD3 SCE033_004 REF6 \x18\x05 REF_END2 
-DIALOGUE_1 \\F DIALOGUE_2 U\x00\x00
+SEQ1 \x8c\x01 SEQ2 \\F SEQ3 \x03U\x00\x00
  
 －－何か変だ。@
 \n拓司は思った。@
 紅葉の表情に、複雑な色が浮かんでいる。\p相反する二つの感情が\nせめぎ合っているような……\p怯えと期待、罪悪感と爽快感、悲し\nみと喜び、そんなものが現れては消え、消えてはまた浮かび上が\nる。@
 \n紅葉\n　「他のコたちに気づかれるとナンだから……先に行ってくれな\n　　い？\p　１０分したら、行く」\
 
-\x00 DIALOGUE_END \\\x05
-CALL1 b\x01 CALL3 \x90\x01 CALL2 b\x01 REF_END2 
+\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \\\x05 CALL1 b\x01 CALL3 \x90\x01 CALL2 b\x01 REF_END2 
 LOAD3 TextClose REF2 \xf6\x06 REF_END1 
 END_FILE

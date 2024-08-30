@@ -1,17 +1,17 @@
 START_FILE
-\x0c\r\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xf0\n\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x04\x01\x00\x0c\x02\x00\x00"
+\x0c\r\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xf0\n\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x04\x01 REF_END3 
 LOAD6 .\\Data\\Script\\Bgm.Fob REF2  \x00 REF_END2 
 LOAD2 PlayCD REF1 J\x00 REF_END1 
 LOAD3 SCE232_001 REF6 f\x00 REF_END2 
-DIALOGUE_1  z\x01\x0c\x00\x00\x00\x00"\x03\x13\x00\x00
+SEQ1 \x8c\x01 SEQ2  z\x01\x0c\x00\x00\x00\x00"\x03\x13\x00\x00
  
 \n\n\n\n\n\n\n\n\n\n　　　　　　　『おんなのこと、うちゅうじん』\
 
-\x00\x00\x00 DIALOGUE_END \xaa\x00\x00\x0c\x02\x00\x00"
+\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \xaa\x00 REF_END3 
 LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \x16\x01 REF_END2 
 LOAD2 TextOn REF1 D\x01 REF_END1 
 LOAD3 SCE232_002 REF6 `\x01 REF_END2 
-DIALOGUE_1 $z\x01\x0c\x00\x00\x00\x00"\x03\xdf\x00\x00
+SEQ1 \x8c\x01 SEQ2 $z\x01\x0c\x00\x00\x00\x00"\x03\xdf\x00\x00
  
 　あるところに、なたねという女の子がいました。@
 \n　なたねにはお母さんがいませんでした。\pお母さんはなたねが小\nさいときに病気で死んでしまったのです。\pお父さんも、本当のお\n父さんではなく、お母さんの再婚相手でした。\pそれでもなたねは、\n寂しいなんて思うことはありませんでした。@
@@ -20,10 +20,9 @@ DIALOGUE_1 $z\x01\x0c\x00\x00\x00\x00"\x03\xdf\x00\x00
 　でも、なたねが幸せだったのは、お義父さんがお金持ちだから\nではなくて、お義父さんが本当に素敵な人だったからです。@
 　お義父さんはなたねのことを大切に、大切に育ててくれました。\n\p　一度、なたねがひどい風邪を引いたときには、大切なお仕事を\n放り出して看病についてくれました（お義父さんはそのせいで、\n病院をクビになってしまったので、新しい仕事先を探さなければ\nならなくなりました）。\pしかもお義父さんは、勉強をしなさい、\nＴＶは見てはいけません、と、厳しいこともなにひとついいませ\nんでした。\
 
-\x00 DIALOGUE_END \xa4\x01
-CALL1 \x16\x01 CALL3 D\x01 REF_END1 
+\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \xa4\x01 CALL1 \x16\x01 CALL3 D\x01 REF_END1 
 LOAD3 SCE232_003 REF6 Z\x05 REF_END2 
-DIALOGUE_1 (z\x01\x0c\x00\x00\x00\x00"\x03\x9e\x00\x00
+SEQ1 \x8c\x01 SEQ2 (z\x01\x0c\x00\x00\x00\x00"\x03\x9e\x00\x00
  
 　なたねはお義父さんが大好きでした。@
 　だから言われなくても勉強をしましたし、ＴＶだって少ししか\n見ませんでした。\pそうすればお義父さんが喜んでくれると思った\nからです。@
@@ -31,15 +30,14 @@ DIALOGUE_1 (z\x01\x0c\x00\x00\x00\x00"\x03\x9e\x00\x00
 　勉強ばかりしているのでお友達は少なかったけれど、なたねは\n我慢しました。@
 　ときどき「もういやだなあ」と思うこともあって、そんなとき\nお義父さんは「なたね、あまり勉強ばかりしていると、体に毒だ\nよ」と優しく声をかけてくれました。\pなたねは、そんなお義父さ\nんの声を聞くと、逆に「よし、もっとがんばろう！」と思えたの\nでした。\
 
-\x00\x00\x00 DIALOGUE_END \x9e\x05
-CALL1 \x16\x01 CALL3 D\x01 CALL2 \x16\x01 REF_END2 
+\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \x9e\x05 CALL1 \x16\x01 CALL3 D\x01 CALL2 \x16\x01 REF_END2 
 LOAD3 TextClose REF2 \\\x08 REF_END1 
 LOAD0 .\\Data\\Script\\Scenario\\232SubC.Fob REF1 |\x08 REF_END2 
-LOAD2 start REF2 \xb2\x08 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00\x00\x0c\x02\x00\x00"
+LOAD2 start REF2 \xb2\x08 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00 REF_END3 
 LOAD6 .\\Data\\Script\\Bg.Fob REF3 \xe8\x08 REF_END2 
 LOAD4 BgAutoFadeIn REF3 \x12\t REF_END1 
 LOAD3 SCE232_013 REF6 6\t REF_END2 
-DIALOGUE_1 Pz\x01\x0c\x00\x00\x00\x00"\x03?\x00\x00
+SEQ1 \x8c\x01 SEQ2 Pz\x01\x0c\x00\x00\x00\x00"\x03?\x00\x00
  
 　どこかへ走ってゆく汽車の@
 　全財産ぶんの切符を　くださいな@
@@ -49,7 +47,6 @@ DIALOGUE_1 Pz\x01\x0c\x00\x00\x00\x00"\x03?\x00\x00
 　ただもう　わたしは@
 　ここからはなれてゆきたいのです\
 
-\x00\x00\x00 DIALOGUE_END z\t
-CALL1 \x16\x01 CALL3 D\x01 CALL2  \x00 REF_END2 
+\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 z\t CALL1 \x16\x01 CALL3 D\x01 CALL2  \x00 REF_END2 
 LOAD2 StopCD REF1 \xbc\n CALL2 \x16\x01 CALL3 \\\x08 REF_END1 
 END_FILE

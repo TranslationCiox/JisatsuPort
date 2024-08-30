@@ -1,7 +1,7 @@
 START_FILE
 \xb7\x07\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xa8\x05\x00
 LOAD3 SCE207_001 REF6 \x06\x00 REF_END2 
-DIALOGUE_1 \x10S\x01\x0c\x00\x00\x00\x00"\x03\xa7\x00\x00
+SEQ1 \x8c\x01 SEQ2 \x10S\x01\x0c\x00\x00\x00\x00"\x03\xa7\x00\x00
  
 拓司\n　「君は、教授はおれにウソを聞かせているという。\pおれをコン\n　　トロールしようとしていると……。\p教授とは何者なんだ？@
 　　なんのために、おれをコントロールしようとしている？」@
@@ -11,17 +11,16 @@ DIALOGUE_1 \x10S\x01\x0c\x00\x00\x00\x00"\x03\xa7\x00\x00
 　　……教授が何者なのか、私にもそれはわからないわ。\pただは\n　　っきりしているのは、教授が敵だということ。\pなぜなら教授\n　　こそが、波動を使って世界を滅亡させた張本人だからよ」@
 拓司\n　「……」\
 
-\x00\x00\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"
+\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 J\x00 REF_END3 
 LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \x06\x03 REF_END2 
 LOAD2 TextOn REF1 4\x03 REF_END1 
 LOAD3 SCE207_002 REF6 P\x03 REF_END2 
-DIALOGUE_1 \x14S\x01\x0c\x00\x00\x00\x00"\x03l\x00\x00
+SEQ1 \x8c\x01 SEQ2 \x14S\x01\x0c\x00\x00\x00\x00"\x03l\x00\x00
  
 ナタネ\n　「あなたの世界は、教授によって完全に破壊された。\p破壊とい\n　　っても物理的な……ビルが壊されたとか人が殺されたとか…\n　　…そういう破壊ではないわ。\p無くなったの。\p完全に消滅した\n　　の。\p教授による侵略は、三次元的な意味では説明できない\n　　……存在と……世界のなりたち自体に関わる破壊行為よ」@
 拓司\n　「……」@
 ナタネ\n　「世界は消滅して……あなただけが生き残った。\p教授はあなた\n　　を恐れている」\
 
-\x00 DIALOGUE_END \x94\x03
-CALL1 \x06\x03 CALL3 4\x03 CALL2 \x06\x03 REF_END2 
+\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \x94\x03 CALL1 \x06\x03 CALL3 4\x03 CALL2 \x06\x03 REF_END2 
 LOAD3 TextClose REF2 \x8a\x05 REF_END1 
 END_FILE

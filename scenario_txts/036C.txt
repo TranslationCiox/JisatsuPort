@@ -1,7 +1,7 @@
 START_FILE
 \x8a\x0e\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xf0\x0b\x00
 LOAD3 SCE036_001 REF6 \x06\x00 REF_END2 
-DIALOGUE_1 \xe0G DIALOGUE_2 e\x00\x00
+SEQ1 \x8c\x01 SEQ2 \xe0G SEQ3 \x03e\x00\x00
  
 錦城\n　「－－虎菱くん？」@
 /*▲BGM8　再生*/\a2,-1,8,1,/*■CG15　表示*/\a7,-2,-2,0,\a0,14,2,0,\a6,-2,0,0,\n　背後からの声にぎくりと振り返ると、そこには現代国語の錦城\n茜子が立っていた。@
@@ -9,11 +9,11 @@ DIALOGUE_1 \xe0G DIALOGUE_2 e\x00\x00
 \n錦城\n　「階段を女の子が降りていったからなにかと思ってきてみれば\n　　……あなた、どうやってこの場所に入ったの？@
 　　鍵はかかっていなかったの？」@
 拓司\n　「……」\w\z
-\x00\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"
+\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 J\x00 REF_END3 
 LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xfe\x01 REF_END2 
 LOAD2 TextOn REF1 ,\x02 REF_END1 
 LOAD3 SCE036_002 REF6 H\x02 REF_END2 
-DIALOGUE_1 \xe4G DIALOGUE_2 \x81\x00\x00
+SEQ1 \x8c\x01 SEQ2 \xe4G SEQ3 \x03\x81\x00\x00
  
 　うんざりだった。@
 ついに、この学校に残された唯一のマシな場所が無くなってしま\nう……。@
@@ -21,10 +21,9 @@ DIALOGUE_1 \xe4G DIALOGUE_2 \x81\x00\x00
 \n　拓司は思った。@
 写真に撮って脅迫して……授業中にリモコンローターでやってや\nろう……\p１日最低５人は学生を誘惑するように命令し、セック\nス中毒にして……\p早桃とレズらせるのもいいな……\p早桃にペニ\nスバンドを着けさせて、目の前で犯させよう……@
 そして……？\w\z
-\x00 DIALOGUE_END \x8c\x02
-CALL1 \xfe\x01 CALL3 ,\x02 REF_END1 
+\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \x8c\x02 CALL1 \xfe\x01 CALL3 ,\x02 REF_END1 
 LOAD3 SCE036_003 REF6 \xca\x04 REF_END2 
-DIALOGUE_1 \xe8G DIALOGUE_2 z\x00\x00
+SEQ1 \x8c\x01 SEQ2 \xe8G SEQ3 \x03z\x00\x00
  
 /*▲BGM8　再生*/\a2,-1,8,1,/*■CG15　表示　フェードイン*/\a7,-2,-2,0,\a0,14,2,0,\a6,-2,0,0,　拓司ははっと我に返り、驚愕した。@
 錦城をレイプするという考えは、ごく自然に浮かび上がってきた\nものだった。@
@@ -33,10 +32,9 @@ DIALOGUE_1 \xe8G DIALOGUE_2 z\x00\x00
 妄想世界での常識を、無意識に現実世界に持ち込んでしまった…\n…。@
 自分でもすでにコントロールできないほどに、妄想世界が膨れあ\nがっている。@
 すべてを押しつぶしてしまいそうなくらいに。\w\z
- DIALOGUE_END \x0e\x05
-CALL1 \xfe\x01 CALL3 ,\x02 REF_END1 
+ \x1e\x00\x00\x00\x00\r\x00 REF6 \x0e\x05 CALL1 \xfe\x01 CALL3 ,\x02 REF_END1 
 LOAD3 SCE036_004 REF6 0\x07 REF_END2 
-DIALOGUE_1 \xecG DIALOGUE_2 g\x00\x00
+SEQ1 \x8c\x01 SEQ2 \xecG SEQ3 \x03g\x00\x00
  
 錦城\n　「虎菱くん？」@
 拓司\n　「……」@
@@ -46,12 +44,11 @@ DIALOGUE_1 \xecG DIALOGUE_2 g\x00\x00
 鍵を複製したことがばれたからって、なんだというのだ？@
 もしかしたらこれも妄想か、あるいは夢なのかもしれないじゃな\nいか。@
 目が覚めると自宅のベッドにいて、天井を見上げているのかもし\nれないじゃないか……。\w\z
-\x00\x00\x00 DIALOGUE_END t\x07
-CALL1 \xfe\x01 CALL3 ,\x02 REF_END1 
+\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 t\x07 CALL1 \xfe\x01 CALL3 ,\x02 REF_END1 
 LOAD6 .\\Data\\Script\\Bgm.Fob REF2 J\t REF_END2 
 LOAD2 StopCD REF1 t\t REF_END1 
 LOAD3 SCE036_005 REF6 \x90\t REF_END2 
-DIALOGUE_1 \xf0G DIALOGUE_2 n\x00\x00
+SEQ1 \x8c\x01 SEQ2 \xf0G SEQ3 \x03n\x00\x00
  
 錦城\n　「……まあ、いいわ」@
 拓司\n　「？」@
@@ -62,7 +59,6 @@ DIALOGUE_1 \xf0G DIALOGUE_2 n\x00\x00
 　　職員室からちょっと荷物を運ばなくちゃいけないのよ。@
 　　……どう？」@
 \n\a2,-1,7,1,\a6,0,0,0,錦城がぱちりとウインクした。\w\z
-\x00\x00 DIALOGUE_END \xd4\t
-CALL1 \xfe\x01 CALL3 ,\x02 CALL2 \xfe\x01 REF_END2 
+\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \xd4\t CALL1 \xfe\x01 CALL3 ,\x02 CALL2 \xfe\x01 REF_END2 
 LOAD3 TextClose REF2 \xd2\x0b REF_END1 
 END_FILE

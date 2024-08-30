@@ -1,7 +1,7 @@
 START_FILE
 \x9d\x03\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00@\x044\x01\x00\x00\x00\xd8\x02\x00
 LOAD3 SCE225_001 REF6 \x06\x00 REF_END2 
-DIALOGUE_1 0o\x01\x0c\x00\x00\x00\x00"\x03m\x00\x00
+SEQ1 \x8c\x01 SEQ2 0o\x01\x0c\x00\x00\x00\x00"\x03m\x00\x00
  
 拓司は歯を食いしばった。@
 まだだ、と胸の中でうめいた。@
@@ -10,7 +10,7 @@ DIALOGUE_1 0o\x01\x0c\x00\x00\x00\x00"\x03m\x00\x00
 なにかはわからないが、おおきな契機とでもいうべきものが……\nくる。\pそんな確信があった。@
 すべてをうち崩すようななにかが、状況を粉々にするようななに\nかが、きっと起こる。\pそのときのために、俺はエネルギーを蓄積\nしなければならない。\pじっと耐えて、強烈な一撃を放つのだ……。\n\p拓司は野獣のように目を光らせて、無言だった。\
 
-\x00\x00\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"
+\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 J\x00 REF_END3 
 LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \x1e\x02 REF_END2 
 LOAD2 TextOn REF1 L\x02 REF_END1 
 LOAD6 .\\Data\\Script\\Bgm.Fob REF2 h\x02 REF_END2 

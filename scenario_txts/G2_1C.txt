@@ -1,7 +1,7 @@
 START_FILE
 R\x04\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xa4\t3\x01\x00\x00\x00<\x03\x00
 LOAD3 SCEG02_101 REF6 \x06\x00 REF_END2 
-DIALOGUE_1 h\xc5\x01\x0c\x00\x00\x00\x00"\x03\x86\x00\x00
+SEQ1 \x8c\x01 SEQ2 h\xc5\x01\x0c\x00\x00\x00\x00"\x03\x86\x00\x00
  
 錦城\n　「エロい子ね……いいわよ。\p許してあげる。@
 　　……どう？　柔らかいでしょう？　つけてないのよ、わかる？\n　　\pあなたに触らせてあげようと思って、下着、つけてこなかっ\n　　たの。\p……昼間からずっとあなたのこと見てたわ。@
@@ -9,7 +9,7 @@ DIALOGUE_1 h\xc5\x01\x0c\x00\x00\x00\x00"\x03\x86\x00\x00
 　　先生の胸、見えてる？\p　あら……硬くなったわよ。@
 　　虎菱くんのあそこ、もう爆発しそうだわ。@
 　　よっぽど先生のおっぱい、気に入ったのね？\n　　ほんと……いやらしい子だわ」\w\z
-\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"
+\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 J\x00 REF_END3 
 LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \x82\x02 REF_END2 
 LOAD2 TextOn REF1 \xb0\x02 REF_END1 
 LOAD6 .\\Data\\Script\\Bgm.Fob REF2 \xcc\x02 REF_END2 

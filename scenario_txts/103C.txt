@@ -1,7 +1,7 @@
 START_FILE
 \xb7\x03\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00 \x044\x01\x00\x00\x00\xe6\x02\x00
 LOAD3 SCE103_001 REF6 \x06\x00 REF_END2 
-DIALOGUE_1 \x90\xb0 DIALOGUE_2 \x82\x00\x00
+SEQ1 \x8c\x01 SEQ2 \x90\xb0 SEQ3 \x03\x82\x00\x00
  
 紅葉\n　「……どうして？」@
 拓司\n　「なにかが暴力で解決されるってことが証明されたら、たぶん\n　　もう歯止めが利かなくなる。@
@@ -11,7 +11,7 @@ DIALOGUE_1 \x90\xb0 DIALOGUE_2 \x82\x00\x00
 \n集めた薬を手に、紅葉は早桃の元へと去っていった。@
 紅葉は無言だったが、その沈黙の中に、拓司は明らかに不満の影\nを感じとった。@
 \z
-\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"
+\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 J\x00 REF_END3 
 LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 r\x02 REF_END2 
 LOAD2 TextOn REF1 \xa0\x02 CALL2 r\x02 REF_END2 
 LOAD3 TextClose REF2 \xc8\x02 REF_END1 

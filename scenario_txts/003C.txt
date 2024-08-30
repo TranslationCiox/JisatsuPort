@@ -1,17 +1,17 @@
 START_FILE
-\xa9\x1e\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00Z\x19\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x06\x01\x00\x0c\x02\x00\x00"
+\xa9\x1e\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00Z\x19\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x06\x01 REF_END3 
 LOAD6 .\\Data\\Script\\Bgm.Fob REF2  \x00 REF_END2 
 LOAD2 PlayCD REF1 J\x00 REF_END1 
 LOAD3 SCE003_001 REF6 f\x00 REF_END2 
-DIALOGUE_1 P\x14 DIALOGUE_2 \x12\x00\x00
+SEQ1 \x8c\x01 SEQ2 P\x14 SEQ3 \x03\x12\x00\x00
  
 \n\n\n\n\n\n\n\n\n\n　　　　　　　　　『虎菱拓司と奇妙な音』\
 
-\x00\x00\x00 DIALOGUE_END \xaa\x00\x00\x0c\x02\x00\x00"
+\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \xaa\x00 REF_END3 
 LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \x12\x01 REF_END2 
 LOAD2 TextOn REF1 @\x01 REF_END1 
 LOAD3 SCE003_002 REF6 \\\x01 REF_END2 
-DIALOGUE_1 T\x14 DIALOGUE_2 \x88\x00\x00
+SEQ1 \x8c\x01 SEQ2 T\x14 SEQ3 \x03\x88\x00\x00
  
 　虎菱拓司がその音を聞くようになったのは、今年に入ってまも\n　なくのころだった。@
 \n/*▲SE01　ループ再生（次の停止まで）*/\a2,2,1,1,\a6,0,0,0,　ザザザ……ザザッ……\pザアザザザ……ザアアアアア……@
@@ -21,10 +21,9 @@ DIALOGUE_1 T\x14 DIALOGUE_2 \x88\x00\x00
 　夢うつつで聞く窓の外の雨の音に近いような気もしたし、その\n　どれからも遠いような気もした。@
 　近くの工場から聞こえる音かと思ったが、どうやらそうではな\n　い。\
 
-\x00\x00\x00 DIALOGUE_END \xa0\x01
-CALL1 \x12\x01 CALL3 @\x01 REF_END1 
+\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \xa0\x01 CALL1 \x12\x01 CALL3 @\x01 REF_END1 
 LOAD3 SCE003_003 REF6 \xfa\x03 REF_END2 
-DIALOGUE_1 X\x14 DIALOGUE_2 ^\x00\x00
+SEQ1 \x8c\x01 SEQ2 X\x14 SEQ3 \x03^\x00\x00
  
 　その音は拓司にしか聞こえないようだった。@
 　彼はすぐに、それが幻聴であることを理解した。@
@@ -33,10 +32,9 @@ DIALOGUE_1 X\x14 DIALOGUE_2 ^\x00\x00
 　ただ、聞こえた。@
 　数ヶ月に一度、忘れたころに、その音は拓司の耳のなかで響き\n　渡った。\
 
-\x00 DIALOGUE_END >\x04
-CALL1 \x12\x01 CALL3 @\x01 REF_END1 
+\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 >\x04 CALL1 \x12\x01 CALL3 @\x01 REF_END1 
 LOAD3 SCE003_004 REF6 \xf0\x05 REF_END2 
-DIALOGUE_1 $\x10 DIALOGUE_2 \xaa\x00\x00
+SEQ1 \x8c\x01 SEQ2 $\x10 SEQ3 \x03\xaa\x00\x00
  
 /*▲SE01　ループ再生（次の停止まで）*/\a2,2,1,1,\a6,0,0,0,　ザザザ……ザザッ……\pザアザザザ……ザアアアアア……@
 　ザアザアアアアアアア……/*▲SE01　停止*/\a4,2,0,0,\n　拓司は、その音を『灰色』と名付けた。@
@@ -46,10 +44,9 @@ DIALOGUE_1 $\x10 DIALOGUE_2 \xaa\x00\x00
 　それに－－と拓司は思った\p－－どんな小さな虫にだって名前は\n　あるのだ。@
 　おれの音に名前があって、なにが悪い？\
 
-\x00 DIALOGUE_END 4\x06
-CALL1 \x12\x01 CALL3 @\x01 REF_END1 
+\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 4\x06 CALL1 \x12\x01 CALL3 @\x01 REF_END1 
 LOAD3 SCE003_005 REF6 \x16\t REF_END2 
-DIALOGUE_1 `\x14 DIALOGUE_2 \xa5\x00\x00
+SEQ1 \x8c\x01 SEQ2 `\x14 SEQ3 \x03\xa5\x00\x00
  
 /*▲SE01　ループ再生（次の停止まで）*/\a2,2,1,1,\a6,0,0,0,　ザザザ……ザザッ……\pザアザザザ……ザアアアアア……@
 　ザアザアアアアアアア……@
@@ -60,10 +57,9 @@ DIALOGUE_1 `\x14 DIALOGUE_2 \xa5\x00\x00
 　「ああ、いま、おれは眠ってはいなかったのだなあ」と－－@
 　狐につままれたような気分になることがたびたびとなった。\
 
-\x00\x00\x00 DIALOGUE_END Z\t
-CALL1 \x12\x01 CALL3 @\x01 REF_END1 
+\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 Z\t CALL1 \x12\x01 CALL3 @\x01 REF_END1 
 LOAD3 SCE003_006 REF6 (\x0c REF_END2 
-DIALOGUE_1 d\x14 DIALOGUE_2 \xa0\x00\x00
+SEQ1 \x8c\x01 SEQ2 d\x14 SEQ3 \x03\xa0\x00\x00
  
 /*▲SE01　ループ再生（次の停止まで*/\a2,2,1,1,\a6,0,0,0,　ザザザ……ザザッ……\pザアザザザ……ザアアアアア……@
 　ザアザアアアアアアア……@
@@ -75,10 +71,9 @@ DIALOGUE_1 d\x14 DIALOGUE_2 \xa0\x00\x00
 　ぱらぱらと剥けて落ちていく、おれ。@
 　なんとなくそれは『現実感』とでも呼ぶべきものの喪失である\n　ように……拓司は感じていた。\
 
-\x00\x00\x00 DIALOGUE_END l\x0c
-CALL1 \x12\x01 CALL3 @\x01 REF_END1 
+\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 l\x0c CALL1 \x12\x01 CALL3 @\x01 REF_END1 
 LOAD3 SCE003_007 REF6 &\x0f REF_END2 
-DIALOGUE_1 h\x14 DIALOGUE_2 \x94\x00\x00
+SEQ1 \x8c\x01 SEQ2 h\x14 SEQ3 \x03\x94\x00\x00
  
 /*▲SE01　ループ再生（次の停止まで）*/\a2,2,1,1,\a6,0,0,0,　ザザザ……ザザッ……\pザアザザザ……ザアアアアア……@
 　ザアザアアアアアアア……@
@@ -89,10 +84,9 @@ DIALOGUE_1 h\x14 DIALOGUE_2 \x94\x00\x00
 　風景からは重みと手触りが消えていった。@
 　風からは薫りと意味が消えていった。\
 
-\x00\x00\x00 DIALOGUE_END j\x0f
-CALL1 \x12\x01 CALL3 @\x01 REF_END1 
+\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 j\x0f CALL1 \x12\x01 CALL3 @\x01 REF_END1 
 LOAD3 SCE003_008 REF6 \xf4\x11 REF_END2 
-DIALOGUE_1 l\x14 DIALOGUE_2 d\x00\x00
+SEQ1 \x8c\x01 SEQ2 l\x14 SEQ3 \x03d\x00\x00
  
 　だんだんと頭のなかがぼやけてくる。@
 　何が起きて、何が起きなかったのか。@
@@ -103,10 +97,9 @@ DIALOGUE_1 l\x14 DIALOGUE_2 d\x00\x00
 　拓司は前者を選んだ。@
 　自らも灰色に染まることを選んだ。\
 
-\x00 DIALOGUE_END 8\x12
-CALL1 \x12\x01 CALL3 @\x01 REF_END1 
+\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 8\x12 CALL1 \x12\x01 CALL3 @\x01 REF_END1 
 LOAD3 SCE003_009 REF6 \x02\x14 REF_END2 
-DIALOGUE_1 p\x14 DIALOGUE_2 $\x00\x00
+SEQ1 \x8c\x01 SEQ2 p\x14 SEQ3 \x03$\x00\x00
  
 　そしていま、思っている。@
 　なにをしていいのか。@
@@ -114,10 +107,9 @@ DIALOGUE_1 p\x14 DIALOGUE_2 $\x00\x00
 　なにをすべきなのか。@
 　なにも判断できない。\
 
-\x00\x00\x00 DIALOGUE_END F\x14
-CALL1 \x12\x01 CALL3 @\x01 REF_END1 
+\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 F\x14 CALL1 \x12\x01 CALL3 @\x01 REF_END1 
 LOAD3 SCE003_010 REF6 \x10\x15 REF_END2 
-DIALOGUE_1 t\x14 DIALOGUE_2 t\x00\x00
+SEQ1 \x8c\x01 SEQ2 t\x14 SEQ3 \x03t\x00\x00
  
 /*▲SE01　ループ再生（次の停止まで）*/\a2,2,1,1,\a6,0,0,0,　ザザザ……ザザッ……\pザアザザザ……ザアアアアア……@
 　ザアザアアアアアアア……@
@@ -129,10 +121,9 @@ DIALOGUE_1 t\x14 DIALOGUE_2 t\x00\x00
 　そんなものに包まれながら、拓司はまた、『灰色』を聞いてい\n　た。@
 　じっとりと絡みつくような空気が、ざらめいて悲鳴をあ\n　げるような、その音を。\
 
-\x00\x00\x00 DIALOGUE_END T\x15
-CALL1 \x12\x01 CALL3 @\x01 REF_END1 
+\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 T\x15 CALL1 \x12\x01 CALL3 @\x01 REF_END1 
 LOAD3 SCE003_011 REF6 ^\x17 REF_END2 
-DIALOGUE_1 x\x14 DIALOGUE_2 K\x00\x00
+SEQ1 \x8c\x01 SEQ2 x\x14 SEQ3 \x03K\x00\x00
  
 /*▲SE03　１回再生（再生終了を待たず次へ）*/\a2,0,3,0,\a6,0,0,0,　キキキキキ……キイキイ……キキキ……キキ……キ@
 \a4,0,0,0,\n　オト。@
@@ -141,8 +132,7 @@ DIALOGUE_1 x\x14 DIALOGUE_2 K\x00\x00
 　おれの頭のなかの、なにかが軋む音か？@
 　世界が砂のように灰色になって、そして端から崩れおちてゆく\n　音か？\
 
-\x00\x00\x00 DIALOGUE_END \xa2\x17
-CALL1 \x12\x01 CALL3 @\x01 CALL2  \x00 REF_END2 
+\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \xa2\x17 CALL1 \x12\x01 CALL3 @\x01 CALL2  \x00 REF_END2 
 LOAD2 StopCD REF1 \x14\x19 CALL2 \x12\x01 REF_END2 
 LOAD3 TextClose REF2 <\x19 REF_END1 
 END_FILE

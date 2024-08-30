@@ -1,9 +1,9 @@
 START_FILE
-\xb6(\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00F"\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x05\x01\x00\x0c\x02\x00\x00"
+\xb6(\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00F"\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x05\x01 REF_END3 
 LOAD6 .\\Data\\Script\\Bgm.Fob REF2  \x00 REF_END2 
 LOAD2 PlayCD REF1 J\x00 REF_END1 
 LOAD3 SCE044_018 REF6 f\x00 REF_END2 
-DIALOGUE_1 \xa4T DIALOGUE_2 p\x00\x00
+SEQ1 \x8c\x01 SEQ2 \xa4T SEQ3 \x03p\x00\x00
  
 慌てて錦城の顔を見るが、そこには、はっとするような厳しい表\n情があるだけだ。@
 黙っていると、錦城の手がゆっくりと腿の上の方へすべってくる。\n\pぞくぞくと、拓司の背中を電気が走った。@
@@ -14,11 +14,11 @@ DIALOGUE_1 \xa4T DIALOGUE_2 p\x00\x00
 大人の指だ。@
 指先がつい、と動いて、太股のあわせめに潜り込む。@
 睾丸を下から撫でさする。\w\z
-\x00 DIALOGUE_END \xaa\x00\x00\x0c\x02\x00\x00"
+\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \xaa\x00 REF_END3 
 LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \x8a\x02 REF_END2 
 LOAD2 TextOn REF1 \xb8\x02 REF_END1 
 LOAD3 SCE044_019 REF6 \xd4\x02 REF_END2 
-DIALOGUE_1 \xa8T DIALOGUE_2 l\x00\x00
+SEQ1 \x8c\x01 SEQ2 \xa8T SEQ3 \x03l\x00\x00
  
 錦城\n　「……これはなに？　勃起してるじゃない。\p先生の\n　　こと、いやらしい対象としてみてるのね？」@
 \nカッと身体のなかが熱くなるのがわかった。@
@@ -28,10 +28,9 @@ DIALOGUE_1 \xa8T DIALOGUE_2 l\x00\x00
 錦城\n　「虎菱くん、気持ちいい？」@
 拓司\n　「……」@
 錦城\n　「私は、気持ちいいかどうか、聞いてるのよ？」\w\z
-\x00 DIALOGUE_END \x18\x03
-CALL1 \x8a\x02 CALL3 \xb8\x02 REF_END1 
+\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \x18\x03 CALL1 \x8a\x02 CALL3 \xb8\x02 REF_END1 
 LOAD3 SCE044_020 REF6 \x02\x05 REF_END2 
-DIALOGUE_1 \xacT DIALOGUE_2 e\x00\x00
+SEQ1 \x8c\x01 SEQ2 \xacT SEQ3 \x03e\x00\x00
  
 拓司はうめいた。@
 男子学生を誘惑する淫乱な女教師。@
@@ -41,10 +40,9 @@ DIALOGUE_1 \xacT DIALOGUE_2 e\x00\x00
 脳の中がショートしたようで、なにも考えられない。@
 \n拓司\n　「気持ちいいです」@
 \n錦城は拓司の返事に満足そうに笑った。\w\z
-\x00 DIALOGUE_END F\x05
-CALL1 \x8a\x02 CALL3 \xb8\x02 REF_END1 
+\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 F\x05 CALL1 \x8a\x02 CALL3 \xb8\x02 REF_END1 
 LOAD3 SCE044_021 REF6 \x14\x07 REF_END2 
-DIALOGUE_1 \xb0T DIALOGUE_2 R\x00\x00
+SEQ1 \x8c\x01 SEQ2 \xb0T SEQ3 \x03R\x00\x00
  
 錦城\n　「そう。よかったわ、喜んでもらえて。ねえ、どうしてほしい？\n　　\pこのまま続けたほうがいいかしら？@
 　　それとも、私にも、してみたい？」@
@@ -53,10 +51,9 @@ DIALOGUE_1 \xb0T DIALOGUE_2 R\x00\x00
 拓司\n　「はい……」@
 錦城\n　「そうねえ。それじゃあ、先生の前でしてみせて」@
 拓司\n　「え？」\w\z
-\x00 DIALOGUE_END X\x07
-CALL1 \x8a\x02 CALL3 \xb8\x02 REF_END1 
+\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 X\x07 CALL1 \x8a\x02 CALL3 \xb8\x02 REF_END1 
 LOAD3 SCE044_022 REF6 \xda\x08 REF_END2 
-DIALOGUE_1 \xb4T DIALOGUE_2 ~\x00\x00
+SEQ1 \x8c\x01 SEQ2 \xb4T SEQ3 \x03~\x00\x00
  
 錦城の顔が、途端に険しく変わった。@
 手の動きをピタリと止め、汚い物を見るような眼で拓司をにらみ\nつける。@
@@ -66,36 +63,32 @@ DIALOGUE_1 \xb4T DIALOGUE_2 ~\x00\x00
 錦城はいま、拓司に、自分の目の前でオナニーをしてみせろと命\nじているのだ。@
 一瞬の躊躇を経て、拓司は机から降りて立ち、チャックをおろし\nた。@
 ペ○スをズボンの中から引きずり出し、錦城の前に見せつけるよ\nうに晒す。\w\z
-\x00\x00\x00 DIALOGUE_END \x1e\t
-CALL1 \x8a\x02 CALL3 \xb8\x02 REF_END1 
+\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \x1e\t CALL1 \x8a\x02 CALL3 \xb8\x02 REF_END1 
 LOAD3 SCE044_023 REF6 P\x0b REF_END2 
-DIALOGUE_1 \xb8T DIALOGUE_2 =\x00\x00
+SEQ1 \x8c\x01 SEQ2 \xb8T SEQ3 \x03=\x00\x00
  
 －－妄想の世界でできることが、どうしてここでできないはずが\nあるんだ？@
 \n錦城は眼を細めて、反り返った若いペ○スを観察している。@
 \n錦城\n　「立派なのね、虎菱くん。素敵よ。\pさあ、先生のこと見なが\n　　ら、自分でして見せて？　ね？」\w\z
-\x00 DIALOGUE_END \x94\x0b
-CALL1 \x8a\x02 CALL3 \xb8\x02 REF_END1 
+\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \x94\x0b CALL1 \x8a\x02 CALL3 \xb8\x02 REF_END1 
 LOAD3 SCE044_024 REF6 \xc2\x0c REF_END2 
-DIALOGUE_1 \xbcT DIALOGUE_2 ?\x00\x00
+SEQ1 \x8c\x01 SEQ2 \xbcT SEQ3 \x03?\x00\x00
  
 拓司はペ○スに右手を被せて、ゆっくりと上下にしごき始めた。@
 オナニーを錦城に見られているという状況が、異様な\n興奮を生んでいる。@
 早くも先端は、透明の液をだらしなく吐き出している。@
 ペ○スに視線を貼り付かせたまま、錦城は腕を組んで首を傾げ\w\z
-\x00 DIALOGUE_END \x06\r
-CALL1 \x8a\x02 CALL3 \xb8\x02 REF_END1 
+\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \x06\r CALL1 \x8a\x02 CALL3 \xb8\x02 REF_END1 
 LOAD3 SCE044_025 REF6 <\x0e REF_END2 
-DIALOGUE_1 \xc0T DIALOGUE_2 @\x00\x00
+SEQ1 \x8c\x01 SEQ2 \xc0T SEQ3 \x03@\x00\x00
  
 錦城\n　「そんなにゆっくりじゃ、いけないでしょう？@
 　　もっと本気でして見せて？\p　それとも先生も少し協力した\n　　ほうがいいのかしら？」@
 拓司\n　「……は、はい」@
 錦城\n　「そう？　それじゃあ、先生の脚、好きなように使っていいわ\n　　よ？」\w\z
-\x00 DIALOGUE_END \x80\x0e
-CALL1 \x8a\x02 CALL3 \xb8\x02 REF_END1 
+\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \x80\x0e CALL1 \x8a\x02 CALL3 \xb8\x02 REF_END1 
 LOAD3 SCE044_026 REF6 \xba\x0f REF_END2 
-DIALOGUE_1 \xc4T DIALOGUE_2 T\x00\x00
+SEQ1 \x8c\x01 SEQ2 \xc4T SEQ3 \x03T\x00\x00
  
 錦城は、何度か脚を振ってヒールを床に落とした。@
 それから、長く美しい脚をすっと、拓司に向かって延ばす。@
@@ -103,10 +96,9 @@ DIALOGUE_1 \xc4T DIALOGUE_2 T\x00\x00
 拓司はややとまどった。@
 この脚を使ってどのようにオナニーをすればいいのだろうか？@
 救いを求める拓司の視線を受けて、錦城はにこりと微笑んだ。\w\z
-\x00\x00\x00 DIALOGUE_END \xfe\x0f
-CALL1 \x8a\x02 CALL3 \xb8\x02 REF_END1 
+\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \xfe\x0f CALL1 \x8a\x02 CALL3 \xb8\x02 REF_END1 
 LOAD3 SCE044_027 REF6 \x88\x11 REF_END2 
-DIALOGUE_1 \xc8T DIALOGUE_2 \x8b\x00\x00
+SEQ1 \x8c\x01 SEQ2 \xc8T SEQ3 \x03\x8b\x00\x00
  
 錦城\n　「あなたが決めるのよ。\p先生の脚を使ってどんなことがした\n　　いか……さあ、どうするの？\p　それとも私の脚じゃ、オナ\n　　ニーもできない？」@
 /*■HCG12　表示*/\a7,-2,-2,0,\a0,83,2,0,\a6,-2,0,0,拓司は、錦城の足首と膝の裏に手を添えて、脚を捧げ持った。@
@@ -117,30 +109,27 @@ DIALOGUE_1 \xc8T DIALOGUE_2 \x8b\x00\x00
 位置的に考えて、こうするしか方法はないのだ。@
 ただ、それを命じはしなかった。拓司が自ら決めたのだ。@
 錦城はそれを望んでいたのだ。\w\z
- DIALOGUE_END \xcc\x11
-CALL1 \x8a\x02 CALL3 \xb8\x02 REF_END1 
+ \x1e\x00\x00\x00\x00\r\x00 REF6 \xcc\x11 CALL1 \x8a\x02 CALL3 \xb8\x02 REF_END1 
 LOAD3 SCE044_028 REF6 2\x14 REF_END2 
-DIALOGUE_1 \xccT DIALOGUE_2 p\x00\x00
+SEQ1 \x8c\x01 SEQ2 \xccT SEQ3 \x03p\x00\x00
  
 錦城\n　「ふうん……あなたは先生に、おち○ちんを踏みつけにして欲\n　　しいのね？\p　……まったく、どこでそんな変態性欲を覚え\n　　ちゃったのかしら？@
 　　こんなにかちかちにして……いやらしい子」@
 \nいいながら錦城は、足を動かした。@
 反り返ったペ○スを、足の裏と拓司の腹でサンドイッチにして、\nぐりぐりと踏みにじる。@
 拓司は足首を両手で捧げ持ったまま、されるがままに震えている。\n\p屈辱的ではあったが、それがかえって劣情を加速させる。\w\z
-\x00 DIALOGUE_END v\x14
-CALL1 \x8a\x02 CALL3 \xb8\x02 REF_END1 
+\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 v\x14 CALL1 \x8a\x02 CALL3 \xb8\x02 REF_END1 
 LOAD3 SCE044_029 REF6 p\x16 REF_END2 
-DIALOGUE_1 \xd0T DIALOGUE_2 Q\x00\x00
+SEQ1 \x8c\x01 SEQ2 \xd0T SEQ3 \x03Q\x00\x00
  
 錦城\n　「ねえ、先生の脚、きれい？」@
 拓司\n　「きれい……です……」@
 錦城\n　「そう。そんなきれいな脚でおち○ちん刺激されて、さぞしあ\n　　わせでしょうね？」@
 拓司\n　「は……はい」@
 錦城\n　「でももう、足が疲れちゃったわ。\pほら、こうやって指で挟ん\n　　であげるから……\pあとは自分でしごいて出して見せて」\w\z
-\x00 DIALOGUE_END \xb4\x16
-CALL1 \x8a\x02 CALL3 \xb8\x02 REF_END1 
+\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \xb4\x16 CALL1 \x8a\x02 CALL3 \xb8\x02 REF_END1 
 LOAD3 SCE044_030 REF6 2\x18 REF_END2 
-DIALOGUE_1 \xd4T DIALOGUE_2 \x9e\x00\x00
+SEQ1 \x8c\x01 SEQ2 \xd4T SEQ3 \x03\x9e\x00\x00
  
 錦城は器用に脚の指を広げて、拓司のペ○スをはさみつけた。@
 拓司はその指の上にさらに自分の指を重ね、上下に動かした。@
@@ -153,46 +142,41 @@ DIALOGUE_1 \xd4T DIALOGUE_2 \x9e\x00\x00
 さらにこぼれて、ぽた、ぽた、と床をうつ。@
 拓司は錦城の脚から手を離して、よろりと後ろの机に腰を下ろし\nた。\p快感が、腰骨を砕いてしまったかのようだ。@
 脚に力が入らない。\w\z
-\x00 DIALOGUE_END v\x18
-CALL1 \x8a\x02 CALL3 \xb8\x02 REF_END1 
+\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 v\x18 CALL1 \x8a\x02 CALL3 \xb8\x02 REF_END1 
 LOAD3 SCE044_031 REF6 (\x1b REF_END2 
-DIALOGUE_1 \xd8T DIALOGUE_2 4\x00\x00
+SEQ1 \x8c\x01 SEQ2 \xd8T SEQ3 \x034\x00\x00
  
 錦城がつい、と机から立ち上がった。@
 そして拓司の足下にしゃがみこみ、精液まみれのペ○スをハンカ\nチで拭い始めた。@
 拓司はやや意表を突かれた。@
 先ほどまでの高圧的な態度とはまるで正反対の優しさだ。\w\z
-\x00 DIALOGUE_END l\x1b
-CALL1 \x8a\x02 CALL3 \xb8\x02 REF_END1 
+\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 l\x1b CALL1 \x8a\x02 CALL3 \xb8\x02 REF_END1 
 LOAD3 SCE044_032 REF6 v\x1c REF_END2 
-DIALOGUE_1 \xdcT DIALOGUE_2 h\x00\x00
+SEQ1 \x8c\x01 SEQ2 \xdcT SEQ3 \x03h\x00\x00
  
 錦城\n　「ありがとう、虎菱くん。\p恥ずかしかったでしょう？@
 　　でも、あなたが先生のこと、女として認めてくれているって\n　　ことがすごくわかって嬉しかったわ」@
 拓司\n　「先生の脚……汚してしまって……」@
 錦城\n　「いいの、気にしないで。\p素敵なものを見せてもらった記念\n　　に、虎菱くんの精液をつけたまま、今日は一日過ごすわ……\n　　本当にありがとう。@
 　　また……今度、いろんなことしましょうね？」\w\z
-\x00 DIALOGUE_END \xba\x1c
-CALL1 \x8a\x02 CALL3 \xb8\x02 REF_END1 
+\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \xba\x1c CALL1 \x8a\x02 CALL3 \xb8\x02 REF_END1 
 LOAD3 SCE044_033 REF6 \x94\x1e REF_END2 
-DIALOGUE_1 \xe0T DIALOGUE_2 C\x00\x00
+SEQ1 \x8c\x01 SEQ2 \xe0T SEQ3 \x03C\x00\x00
  
 錦城は拓司の両頬を包むように手で固定すると、軽くキスをした。\n\p柔らかい香水の匂いと、真っ赤な唇の色が、拓司の頭の中で弾け\nた。@
 唇と唇がさっと触れる程度のものだったにも関わらず、これまで\nしたことのあるキスの中でもっとも衝撃的だった。@
 淫猥なキスだった。\w\z
-\x00 DIALOGUE_END \xd8\x1e
-CALL1 \x8a\x02 CALL3 \xb8\x02 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00\x00\x0c\x02\x00\x00"
+\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \xd8\x1e CALL1 \x8a\x02 CALL3 \xb8\x02 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00 REF_END3 
 LOAD6 .\\Data\\Script\\Bg.Fob REF3 8  REF_END2 
 LOAD4 BgAutoFadeIn REF3 b  CALL2  \x00 REF_END2 
 LOAD2 StopCD REF1 \x92  REF_END1 
 LOAD3 SCE044_034 REF6 \xae  REF_END2 
-DIALOGUE_1 \xe4T DIALOGUE_2 <\x00\x00
+SEQ1 \x8c\x01 SEQ2 \xe4T SEQ3 \x03<\x00\x00
  
 実験室を出て鍵を閉め、二人は廊下で別れた。@
 錦城は別れ際にもニコリと優しい笑みを……@
 共犯者のあいだでのみ交わされる親密な笑みを送った。@
 拓司は呆然とそんな錦城を見送って、それから魂が抜けたような\n足取りで、屋上に向かった。\w\z
-\x00\x00\x00 DIALOGUE_END \xf2 
-CALL1 \x8a\x02 CALL3 \xb8\x02 CALL2 \x8a\x02 REF_END2 
+\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \xf2  CALL1 \x8a\x02 CALL3 \xb8\x02 CALL2 \x8a\x02 REF_END2 
 LOAD3 TextClose REF2 (" REF_END1 
 END_FILE

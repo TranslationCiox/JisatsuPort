@@ -1,7 +1,7 @@
 START_FILE
 u\x03\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`\x044\x01\x00\x00\x00\xc6\x02\x00
 LOAD3 SCE059_001 REF6 \x06\x00 REF_END2 
-DIALOGUE_1 \xd0k DIALOGUE_2 z\x00\x00
+SEQ1 \x8c\x01 SEQ2 \xd0k SEQ3 \x03z\x00\x00
  
 拓司\n　「天使って、なんのことだ？」@
 早桃\n　「……え？」@
@@ -14,7 +14,7 @@ DIALOGUE_1 \xd0k DIALOGUE_2 z\x00\x00
 \nなたねに目で合図を送って、拓司は後ろを向いた。@
 早桃は何を隠しているのだろうか？\
 
-\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"
+\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 J\x00 REF_END3 
 LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 R\x02 REF_END2 
 LOAD2 TextOn REF1 \x80\x02 CALL2 R\x02 REF_END2 
 LOAD3 TextClose REF2 \xa8\x02 REF_END1 

@@ -1,7 +1,7 @@
 START_FILE
 \x94\x18\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xc8\x14\x00
 LOAD3 SCE057_001 REF6 \x06\x00 REF_END2 
-DIALOGUE_1 \xb0h DIALOGUE_2 t\x00\x00
+SEQ1 \x8c\x01 SEQ2 \xb0h SEQ3 \x03t\x00\x00
  
 学生\n　「こいつにションベンひっかけてやろうぜ？」@
 \nその異常な言葉は、しばらく無言の教室の中に行き場無くただよ\nっていた。\pしかしそれは無視されたのではない。\pゆっくりと、染\nみ渡るように教室の全員を犯していったのだ。@
@@ -10,11 +10,11 @@ DIALOGUE_1 \xb0h DIALOGUE_2 t\x00\x00
 \n学生\n　「へへ……やっぱり最初は上村か？」@
 上村\n　「私しかいないっしょ？\p　このウザキャラ潰すのは私の使命だ\n　　からさ」\
 
-\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"
+\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 J\x00 REF_END3 
 LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 :\x02 REF_END2 
 LOAD2 TextOn REF1 h\x02 REF_END1 
 LOAD3 SCE057_002 REF6 \x84\x02 REF_END2 
-DIALOGUE_1 \xb4h DIALOGUE_2 \x85\x00\x00
+SEQ1 \x8c\x01 SEQ2 \xb4h SEQ3 \x03\x85\x00\x00
  
 \nカミムラ－－。@
 拓司はその名前を聞いたことがあった。\pたしか、早桃にいやがら\nせをしているという少女がカミムラといったはずだ……。@
@@ -25,10 +25,9 @@ DIALOGUE_1 \xb4h DIALOGUE_2 \x85\x00\x00
 上村\n　「お前がいるだけで教室の空気が澱むんだよ！」@
 早桃\n　「……」\
 
-\x00 DIALOGUE_END \xc8\x02
-CALL1 :\x02 CALL3 h\x02 REF_END1 
+\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \xc8\x02 CALL1 :\x02 CALL3 h\x02 REF_END1 
 LOAD3 SCE057_003 REF6 \x16\x05 REF_END2 
-DIALOGUE_1 \xb8h DIALOGUE_2 \x94\x00\x00
+SEQ1 \x8c\x01 SEQ2 \xb8h SEQ3 \x03\x94\x00\x00
  
 上村\n　「逃げるつもり？\p　それって間違ってるって。\pこれはさ、あん\n　　たを綺麗にする儀式なんだよ？\p　生きている価値のないあん\n　　たが、身を清めて気持ちよく死ねるようになるための儀式な\n　　んだからさあ。くすくす」@
 /*■CG70　表示（クロスフェード）*/\a7,-2,-2,0,\a0,69,2,0,\a6,-2,0,0,\n途端、早桃に劇的な変化が訪れた。@
@@ -38,10 +37,9 @@ DIALOGUE_1 \xb8h DIALOGUE_2 \x94\x00\x00
 \n早桃\n　「儀式……身を清めて……死ねるための……儀式」@
 上村\n　「そうそう。儀式儀式」\
 
-\x00 DIALOGUE_END Z\x05
-CALL1 :\x02 CALL3 h\x02 REF_END1 
+\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 Z\x05 CALL1 :\x02 CALL3 h\x02 REF_END1 
 LOAD3 SCE057_004 REF6 \xe4\x07 REF_END2 
-DIALOGUE_1 \xbch DIALOGUE_2 \x94\x00\x00
+SEQ1 \x8c\x01 SEQ2 \xbch SEQ3 \x03\x94\x00\x00
  
 上村はスカートの中に手を差し入れ、スルスルとショーツを脱い\nだ。\pクラスメイトが見ているというのに、なんの躊躇もない。\n逆に、脱いだショーツをひらひらと振り回して、男子学生たちに\nニヤリと笑いかける余裕さえある。\pさらにはスカートも脱ぎ、下\n半身をあらわにした。@
 男子学生たちがごくりと生唾を飲み込む。@
@@ -52,10 +50,9 @@ DIALOGUE_1 \xbch DIALOGUE_2 \x94\x00\x00
 \n上村\n　「おしっこかけてくださいってお願いしろっていってんだよ、\n　　バカ！」@
 早桃\n　「……」\
 
-\x00\x00\x00 DIALOGUE_END (\x08
-CALL1 :\x02 CALL3 h\x02 REF_END1 
+\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 (\x08 CALL1 :\x02 CALL3 h\x02 REF_END1 
 LOAD3 SCE057_005 REF6 \xb2\n REF_END2 
-DIALOGUE_1 \xc0h DIALOGUE_2 a\x00\x00
+SEQ1 \x8c\x01 SEQ2 \xc0h SEQ3 \x03a\x00\x00
  
 上村\n　「あ～ウザイ！　ウザウザ！　見てるだけでぶっ殺したくなる\n　　よ！」@
 早桃\n　「ごめんなさい……か、上村さん……私に……上村さんのおし\n　　っこを……浴びせてください」@
@@ -63,10 +60,9 @@ DIALOGUE_1 \xc0h DIALOGUE_2 a\x00\x00
 \n　命じられるまま、早桃は犬のように這いつくばる。@
 　上村は椅子をひとつひきずって早桃の前に配し、どっかとそこ\n　に腰を下ろした。\
 
-\x00 DIALOGUE_END \xf6\n
-CALL1 :\x02 CALL3 h\x02 REF_END1 
+\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \xf6\n CALL1 :\x02 CALL3 h\x02 REF_END1 
 LOAD3 SCE057_006 REF6 \xb4\x0c REF_END2 
-DIALOGUE_1 \xc4h DIALOGUE_2 \xac\x00\x00
+SEQ1 \x8c\x01 SEQ2 \xc4h SEQ3 \x03\xac\x00\x00
  
 上村\n　「ほら、もっと前にはいはいしてきなさいよォ……足下に……\n　　そうそう。いい子ね、ワンワン」@
 /*■HCG16　表示（クロスフェード）*/\a7,-2,-2,0,\a0,87,2,0,\a6,-2,0,0,\n　上村は腰を突きだし、両足を早桃の肩の上にのせた。@
@@ -78,10 +74,9 @@ DIALOGUE_1 \xc4h DIALOGUE_2 \xac\x00\x00
 　頬を伝って流れ落ちた汚液が、床に溜まりを作る。@
 　髪の毛が汚液を吸い込んで、ぺったりと頬にへばりつく。\
 
- DIALOGUE_END \xf8\x0c
-CALL1 :\x02 CALL3 h\x02 REF_END1 
+ \x1e\x00\x00\x00\x00\r\x00 REF6 \xf8\x0c CALL1 :\x02 CALL3 h\x02 REF_END1 
 LOAD3 SCE057_007 REF6 \xe2\x0f REF_END2 
-DIALOGUE_1 \xc8h DIALOGUE_2 \x8d\x00\x00
+SEQ1 \x8c\x01 SEQ2 \xc8h SEQ3 \x03\x8d\x00\x00
  
 どこかで見た光景だった。@
 辱めのために汚液の的となる女の子。@
@@ -92,10 +87,9 @@ DIALOGUE_1 \xc8h DIALOGUE_2 \x8d\x00\x00
 そう考えれば、波動やら集団自殺やらも説明が付く。@
 おそらく、御堂たちによるなたねの陵辱、あのあたりから自分は\n妄想の中にいるのだ……。\
 
-\x00\x00\x00 DIALOGUE_END &\x10
-CALL1 :\x02 CALL3 h\x02 REF_END1 
+\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 &\x10 CALL1 :\x02 CALL3 h\x02 REF_END1 
 LOAD3 SCE057_008 REF6 \x94\x12 REF_END2 
-DIALOGUE_1 \xcch DIALOGUE_2 c\x00\x00
+SEQ1 \x8c\x01 SEQ2 \xcch SEQ3 \x03c\x00\x00
  
 学生\n　「た、たまんねえ……俺にもかけさせてくれ」@
 学生\n　「あたしも……」@
@@ -104,7 +98,6 @@ DIALOGUE_1 \xcch DIALOGUE_2 c\x00\x00
 学生\n　「喜んでるんだろう？」@
 \n学生たちは我先に早桃へと殺到した。\p男子学生は勃起したペ○ス\nをむき出しにして、女子学生はちぎり捨てるようにスカートとシ\nョーツを脱ぎ捨てて……。\
 
-\x00\x00\x00 DIALOGUE_END \xd8\x12
-CALL1 :\x02 CALL3 h\x02 CALL2 :\x02 REF_END2 
+\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \xd8\x12 CALL1 :\x02 CALL3 h\x02 CALL2 :\x02 REF_END2 
 LOAD3 TextClose REF2 \xaa\x14 REF_END1 
 END_FILE

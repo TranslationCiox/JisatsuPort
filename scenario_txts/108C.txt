@@ -1,17 +1,17 @@
 START_FILE
 \x82\x07\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xf2\x05\x00
 LOAD3 SCE108_001 REF6 \x06\x00 REF_END2 
-DIALOGUE_1 `\xb8 DIALOGUE_2 \x11\x00\x00
+SEQ1 \x8c\x01 SEQ2 `\xb8 SEQ3 \x03\x11\x00\x00
  
 \n\n\n\n\n\n\n\n\n\n　　　　　　　　　　　　　『６日目』\
 
-\x00\x00\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"
+\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 J\x00 REF_END3 
 LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 \xae\x00 REF_END2 
-LOAD2 TextOn REF1 \xdc\x00 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x0c\x01\x00\x0c\x02\x00\x00"
+LOAD2 TextOn REF1 \xdc\x00 REF_END1  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x0c\x01 REF_END3 
 LOAD6 .\\Data\\Script\\Bgm.Fob REF2 \x12\x01 REF_END2 
 LOAD2 PlayCD REF1 <\x01 REF_END1 
 LOAD3 SCE108_002 REF6 X\x01 REF_END2 
-DIALOGUE_1 d\xb8 DIALOGUE_2 \x87\x00\x00
+SEQ1 \x8c\x01 SEQ2 d\xb8 SEQ3 \x03\x87\x00\x00
  
 早桃の風邪は快方に向かっている。@
 \nめだった衝突はない。\pなたねは淡々と、それまで通り食糧と水を\n配給した。\pしかし、なたねと一同のあいだに生まれた亀裂は、わ\nずかも回復していない。@
@@ -19,17 +19,15 @@ DIALOGUE_1 d\xb8 DIALOGUE_2 \x87\x00\x00
 錦城と紅葉が、声を潜めて何かを話している。\pいったい何を話し\nているのだろうか？@
 \n錦城が、何度も意味ありげな視線を送ってくる。\p催促するような\n非難するような視線だ。\p拓司は気づかないふりをして、それを無\n視した。\
 
-\x00\x00\x00 DIALOGUE_END \x9c\x01
-CALL1 \xae\x00 CALL3 \xdc\x00 REF_END1 
+\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 \x9c\x01 CALL1 \xae\x00 CALL3 \xdc\x00 REF_END1 
 LOAD3 SCE108_003 REF6 \xf2\x03 REF_END2 
-DIALOGUE_1 h\xb8 DIALOGUE_2 V\x00\x00
+SEQ1 \x8c\x01 SEQ2 h\xb8 SEQ3 \x03V\x00\x00
  
 この日が誕生日だったというカンナのために、夜、一同は歌を歌\nった。@
 馬鹿馬鹿しいとは思ったが、そういったことこそが、いま、必要\nなものに思えた。@
 しかし、あまりの馬鹿馬鹿しさに、ひとり、またひとりと声が止\nんでいき、やがて誰の声も聞こえなくなった。@
 沈黙の中、なたねの「……馬鹿馬鹿しい」というつぶやきが、奇\n妙に大きく響いた。\
 
-\x00 DIALOGUE_END 6\x04
-CALL1 \xae\x00 CALL3 \xdc\x00 CALL2 \xae\x00 REF_END2 
+\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 6\x04 CALL1 \xae\x00 CALL3 \xdc\x00 CALL2 \xae\x00 REF_END2 
 LOAD3 TextClose REF2 \xd4\x05 REF_END1 
 END_FILE

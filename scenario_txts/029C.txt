@@ -1,7 +1,7 @@
 START_FILE
 \x92\x03\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00P\x044\x01\x00\x00\x00\xe2\x02\x00
 LOAD3 SCE029_001 REF6 \x06\x00 REF_END2 
-DIALOGUE_1 \xf0< DIALOGUE_2 \x81\x00\x00
+SEQ1 \x8c\x01 SEQ2 \xf0< SEQ3 \x03\x81\x00\x00
  
 拓司はカンナの教室をのぞき込んだ。@
 予想に反して、すぐに目があった。@
@@ -14,7 +14,7 @@ DIALOGUE_1 \xf0< DIALOGUE_2 \x81\x00\x00
 \nカンナ　「……屋上で」@
 \n返事を待つ様子もなくカンナは足早に廊下を歩み去っていった。\
 
-\x00\x00\x00 DIALOGUE_END J\x00\x00\x0c\x02\x00\x00"
+\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00 REF6 J\x00 REF_END3 
 LOAD7 .\\Data\\Script\\TextFunc.Fob REF1 n\x02 REF_END2 
 LOAD2 TextOn REF1 \x9c\x02 CALL2 n\x02 REF_END2 
 LOAD3 TextClose REF2 \xc4\x02 REF_END1 
