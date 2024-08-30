@@ -3,20 +3,49 @@ import os
 
 patterns = [
     {
-        "pattern": [b'\x1e', b'\x02', b'\x00', b'\x00', b'5'],
-        # Used in EVERY sequence with commands like e.g. NormalFadeIn
-        "action": " OP_CMD "
+        "pattern": [b'\x00', b'\x0c', b'\x02', b'\x00', b'\x00', b'"'],
+        # Used after EVERY block of dialogue EVEN dialogue choice blocks.
+        "action": " SEQ01\n"
     },
     {
-        "pattern": [b'\x1f', b'J', b'\x00', b'\x00'],
-        # Used after SetGamemode
-        "action": " SET_GAMEMODE "
+        "pattern": [b'\x1e', b'\x00', b'\x00', b'\x00', b'\x00', b'\r', b'\x00', b'\x00', b'\x1f'],
+        # Used after EVERY block of dialogue EVEN dialogue choice blocks.
+        "action": "DIALOGUE_END "
     },
 
     {
-        "pattern": [b'\x1e', b'\x02', b'\x00', b'\x00'],
+        "pattern": [b'\x1e', b'\x00', b'\x00', b'\x00', b'\x00', b'\r', b'\x00', b'\x00', b'\x1e'],
+        # Used after certain commands, often time background or textbox related
+        "action": "BACKGROUND_OP "
+    },
+
+    {
+        "pattern": [b'\x8c\x01', b'\x00', b'\r', b'\x02', b'\x1e'],
+        # Used after certain commands, often time background or textbox related
+        "action": "BACKGROUND_OP2 "
+    },
+
+    {
+        "pattern": [b'\x00', b'\x0c', b'\x00', b'\x00', b'\x00', b'\x00', b'"', b'\x03'],
+        # Used after certain commands, often time background or textbox related
+        "action": " BACKGROUND_OP3 "
+    },
+
+    {
+        "pattern": [b'\x00', b'\x1e', b'\x02', b'\x00', b'\x00', b'5'],
+        # Used in EVERY sequence with commands like e.g. NormalFadeIn
+        "action": " OP_CMD "
+    },
+    # {
+    #     "pattern": [b'J', b'\x00', b'\x00'],
+    #     # Used after SetGamemode
+    #     "action": " SET_GAMEMODE "
+    # },
+
+    {
+        "pattern": [b'\x00', b'\x1e', b'\x02', b'\x00', b'\x00'],
         # Used after loading FOB files and SCE calls and some long bytecode chains which might also contain something.
-        "action": " FOB_SCE_END\n "
+        "action": " FOB_SCE_END\n"
     },
 
     {
@@ -32,7 +61,7 @@ patterns = [
     {
         "pattern": [b'\x03', b'\x02', b'\x00', b'\x00'],
         # BgOn, PlayCD, TextOn
-        "action": "\nLOAD2 "
+        "action": "LOAD2 "
     },
     {
         "pattern": [b'\x03', b'\x03', b'\x00', b'\x00'],
@@ -42,22 +71,22 @@ patterns = [
     {
         "pattern": [b'\x03', b'\x04', b'\x00', b'\x00'],
         # BgAutoFadeIn, GetLastTxtID
-        "action": "\nLOAD4 "
+        "action": "LOAD4 "
     },
     {
         "pattern": [b'\x03', b'\x05', b'\x00', b'\x00'],
         # TextWindowOffDirect, 0.Fob, InitGameFlagBuffer
-        "action": "\nLOAD5 "
+        "action": "LOAD5 "
     },
     {
         "pattern": [b'\x03', b'\x06', b'\x00', b'\x00'],
         # Data.Fob
-        "action": "\nLOAD6 "
+        "action": "LOAD6 "
     },
     {
         "pattern": [b'\x03', b'\x07', b'\x00', b'\x00'],
         # TextFunc.Fob
-        "action": "\nLOAD7 "
+        "action": "LOAD7 "
     },
     {
         "pattern": [b'\x03', b'\x08', b'\x00', b'\x00'],

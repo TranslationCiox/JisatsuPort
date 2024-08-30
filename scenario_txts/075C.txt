@@ -1,7 +1,7 @@
 START_FILE
 \x82\x17\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00 \x13\x00
-LOAD3 SCE075_001\x00\x1f\x06\x00\x00 FOB_SCE_END
- 2B_01 \x1e\x00\x00\x00\x00\r\x00\x003B_03 \r\x02\x1e\xd0\x84\x00\x0c\x00\x00\x00\x00"\x03|\x00\x00
+LOAD3 SCE075_001\x00\x1f\x06\x00 FOB_SCE_END
+2B_01 BACKGROUND_OP BACKGROUND_OP2 \xd0\x84 BACKGROUND_OP3 |\x00\x00
  
 なたね\n　「だめ。\pこの先は危険。\p波動が直接－－」@
 早桃\n　「いい加減にしてよ！」@
@@ -10,32 +10,33 @@ LOAD3 SCE075_001\x00\x1f\x06\x00\x00 FOB_SCE_END
 拓司\n　「よせ、早桃」@
 早桃\n　「でも！　おにいちゃん！」\
 
-\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00\x00 SET_GAMEMODE \x0c\x02\x00\x00"
-LOAD7 .\\Data\\Script\\TextFunc.Fob OP01 Z\x02\x00 FOB_SCE_END
- 
-LOAD2 TextOn OP01 \x88\x02\x00 OP_CMD 
-LOAD3 SCE075_002\x00\x1f\xa4\x02\x00 FOB_SCE_END
- 2B_01 \x1e\x00\x00\x00\x00\r\x00\x003B_03 \r\x02\x1e\xd4\x84\x00\x0c\x00\x00\x00\x00"\x03N\x00\x00
+\x00\x00\x00 DIALOGUE_END J\x00 SEQ01
+LOAD7 .\\Data\\Script\\TextFunc.Fob OP01 Z\x02 FOB_SCE_END
+LOAD2 TextOn OP01 \x88\x02 OP_CMD 
+LOAD3 SCE075_002\x00\x1f\xa4\x02 FOB_SCE_END
+2B_01 BACKGROUND_OP BACKGROUND_OP2 \xd4\x84 BACKGROUND_OP3 N\x00\x00
  
 なたね\n　「いいのよ、虎菱くん」@
 \n　なたねが遮った。@
 \n/*■CG71　表示（クロスフェード）*/\a7,-2,-2,0,\a0,70,2,0,\a6,-2,0,0,なたね\n　「理解されないのには慣れているから。\p……早桃さんの順番に\n　　質問に答えましょう。\pまず、『波動が直接きている』とはど\n　　ういうことか？」@
 早桃\n　「……」\
 
-\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1f\xe8\x02\x00\x0c\x02\x00\x00"\x1fZ\x02\x00 FOB_SCE_END
- \x1f\x88\x02\x00 OP_CMD 
-LOAD3 SCE075_003\x00\x1fZ\x04\x00 FOB_SCE_END
- 2B_01 \x1e\x00\x00\x00\x00\r\x00\x003B_03 \r\x02\x1e\xd8\x84\x00\x0c\x00\x00\x00\x00"\x03\xc1\x00\x00
+\x00 DIALOGUE_END \xe8\x02 SEQ01
+\x1fZ\x02 FOB_SCE_END
+\x1f\x88\x02 OP_CMD 
+LOAD3 SCE075_003\x00\x1fZ\x04 FOB_SCE_END
+2B_01 BACKGROUND_OP BACKGROUND_OP2 \xd8\x84 BACKGROUND_OP3 \xc1\x00\x00
  
 なたね\n　「便宜上『波動』と呼んでいるけれど、『波動』は、本来なら\n　　地球の言葉では定義できない存在なの。\pだから、一般的なエ\n　　ネルギーのように、一方から他方へ、直線的に飛ぶというも\n　　のではないの。\pそれ自身の意志で停滞したり、反射したり、\n　　逆流したり、屈折したり。\p秩序や法則はないの。\p無秩序。@
 　　完全なカオスだわ。\pだから、この先の場所みたいに自殺波動\n　　の密度が濃い場所というのが生まれることも－－」\w\n早桃\n　「要するにデタラメってことじゃない！\p　なんのルールもない\n　　ってことはつまり、全部あなたが思いつきでいってるってだ\n　　けでしょ！」@
 なたね\n　「……次の質問。\p『私たちはどうすればいいのか？』。\pこれに\n　　は明確な解答を提示することができるわ。\p私たちはシェルタ\n　　ーに避難すべきだわ」@
 早桃\n　「……え？」\
 
-\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1f\x9e\x04\x00\x0c\x02\x00\x00"\x1fZ\x02\x00 FOB_SCE_END
- \x1f\x88\x02\x00 OP_CMD 
-LOAD3 SCE075_004\x00\x1f\xdc\x07\x00 FOB_SCE_END
- 2B_01 \x1e\x00\x00\x00\x00\r\x00\x003B_03 \r\x02\x1e\xdc\x84\x00\x0c\x00\x00\x00\x00"\x03{\x00\x00
+\x00 DIALOGUE_END \x9e\x04 SEQ01
+\x1fZ\x02 FOB_SCE_END
+\x1f\x88\x02 OP_CMD 
+LOAD3 SCE075_004\x00\x1f\xdc\x07 FOB_SCE_END
+2B_01 BACKGROUND_OP BACKGROUND_OP2 \xdc\x84 BACKGROUND_OP3 {\x00\x00
  
 　なたねは「シェ\p・ル\p・タ\p・ー」と、ひとことひとことを区切っ\n　て言い返した。@
 \n拓司\n　「シェルターって……核シェルターとか……そのシェルターか\n　　？」@
@@ -43,10 +44,11 @@ LOAD3 SCE075_004\x00\x1f\xdc\x07\x00 FOB_SCE_END
 拓司\n　「……」@
 なたね\n　「正確に言うと、シェルターはまだ完成していないわ。\pただ、\n　　材料は全部そろえてある。\pこれだけの人数で突貫で作れば、\n　　１時間もかからずに完成すると思う」\
 
-\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1f \x08\x00\x0c\x02\x00\x00"\x1fZ\x02\x00 FOB_SCE_END
- \x1f\x88\x02\x00 OP_CMD 
-LOAD3 SCE075_005\x00\x1fF\n\x00 FOB_SCE_END
- 2B_01 \x1e\x00\x00\x00\x00\r\x00\x003B_03 \r\x02\x1e\xe0\x84\x00\x0c\x00\x00\x00\x00"\x03]\x00\x00
+\x00\x00\x00 DIALOGUE_END  \x08 SEQ01
+\x1fZ\x02 FOB_SCE_END
+\x1f\x88\x02 OP_CMD 
+LOAD3 SCE075_005\x00\x1fF\n FOB_SCE_END
+2B_01 BACKGROUND_OP BACKGROUND_OP2 \xe0\x84 BACKGROUND_OP3 ]\x00\x00
  
 拓司\n　「……まさか」@
 なたね\n　「４階の理科実験室。\p新実験室ができてから使われていないあ\n　　の教室に、サバイバルに必要な物資はすべてそろえてあるわ」\n　　\p拓司\n　「……冗談だろ？」@
@@ -54,20 +56,22 @@ LOAD3 SCE075_005\x00\x1fF\n\x00 FOB_SCE_END
 \nなたねの表情が一変した。\p初めて見る表情だった。@
 怒っている。\pそれまでの能面めいた無表情が嘘だったかのように、\nなたねは怒っていた。\
 
-\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1f\x8a\n\x00\x0c\x02\x00\x00"\x1fZ\x02\x00 FOB_SCE_END
- \x1f\x88\x02\x00 OP_CMD 
-LOAD3 SCE075_006\x00\x1f8\x0c\x00 FOB_SCE_END
- 2B_01 \x1e\x00\x00\x00\x00\r\x00\x003B_03 \r\x02\x1e\xe4\x84\x00\x0c\x00\x00\x00\x00"\x03\xc0\x00\x00
+\x00 DIALOGUE_END \x8a\n SEQ01
+\x1fZ\x02 FOB_SCE_END
+\x1f\x88\x02 OP_CMD 
+LOAD3 SCE075_006\x00\x1f8\x0c FOB_SCE_END
+2B_01 BACKGROUND_OP BACKGROUND_OP2 \xe4\x84 BACKGROUND_OP3 \xc0\x00\x00
  
 なたね\n　「こんな非常事態に冗談なんて言うはずがないでしょうッ！@
 　　あなたは自覚しているの？！\p　私たちは生き残らなければな\n　　らないのよ！\p　生き残って最終決戦に備えなければならない\n　　の！\p　やつらと戦わなければならないの！\p　やつらは群でや\n　　ってくる！\p　最終決戦には地球上の戦士が集結する国を越え\n　　て人種を越えて思想を越えて主義を越えて性別を越えて集結\n　　して団結して戦って地球を守るために立ち上がる選ばれた戦\n　　士たちが私たちなの最終聖戦に選ばれたの私たちは！\p　それ\n　　なのにそれなのにッ！\p　虎菱くんは自覚が足りないッ！」@
 \n　なたねは機関銃のようにまくしたてた。\pやがてその顔から、潮\nが引くように怒りの形相が消えてゆき、最後にはいつもの無表情\nがなたねを支配した。@
 \nなたね\n　「……質問はそれだけだったよね？」\
 
-\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1f|\x0c\x00\x0c\x02\x00\x00"\x1fZ\x02\x00 FOB_SCE_END
- \x1f\x88\x02\x00 OP_CMD 
-LOAD3 SCE075_007\x00\x1f\xb6\x0f\x00 FOB_SCE_END
- 2B_01 \x1e\x00\x00\x00\x00\r\x00\x003B_03 \r\x02\x1e\xe8\x84\x00\x0c\x00\x00\x00\x00"\x03\x81\x00\x00
+\x00\x00\x00 DIALOGUE_END |\x0c SEQ01
+\x1fZ\x02 FOB_SCE_END
+\x1f\x88\x02 OP_CMD 
+LOAD3 SCE075_007\x00\x1f\xb6\x0f FOB_SCE_END
+2B_01 BACKGROUND_OP BACKGROUND_OP2 \xe8\x84 BACKGROUND_OP3 \x81\x00\x00
  
 拓司\n　「……」@
 なたね\n　「さあ、虎菱くん。\pみんなで４階に戻りましょう。\p最終波動に\n　　そなえてシェルターを作らなければならないわ」@
@@ -76,14 +80,16 @@ LOAD3 SCE075_007\x00\x1f\xb6\x0f\x00 FOB_SCE_END
 どうすればいい……。@
 俺は……どうすればいい？\
 
- \x1e\x00\x00\x00\x00\r\x00\x00\x1f\xfa\x0f\x00\x0c\x02\x00\x00"\x1fZ\x02\x00 FOB_SCE_END
- \x1f\x88\x02\x00 OP_CMD \x03!\x00\x00
+ DIALOGUE_END \xfa\x0f SEQ01
+\x1fZ\x02 FOB_SCE_END
+\x1f\x88\x02 OP_CMD \x03!\x00\x00
 CHOICE
 なたねの言葉に従う。紅葉を見捨てて、シェルターに向かう\nなたね達をシェルターに向かわせて、自分だけ紅葉救出に向かう\n\l0,2,
 ENDCHOICE
 
-\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1f8\x12\x00\x0c\x02\x00\x00"\x1fZ\x02\x00 FOB_SCE_END
- \x1f\x88\x02\x00 OP_CMD \x1fZ\x02\x00 FOB_SCE_END
- 
-LOAD3 TextClose OP02 \x02\x13\x00 OP_CMD 
+\x00 DIALOGUE_END 8\x12 SEQ01
+\x1fZ\x02 FOB_SCE_END
+\x1f\x88\x02 OP_CMD \x1fZ\x02 FOB_SCE_END
+
+LOAD3 TextClose OP02 \x02\x13 OP_CMD 
 END_FILE

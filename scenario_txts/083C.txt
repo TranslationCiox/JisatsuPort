@@ -1,17 +1,16 @@
 START_FILE
 \x03\x10\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00D\r\x00
-LOAD3 SCE083_001\x00\x1f\x06\x00\x00 FOB_SCE_END
- 2B_01 \x1e\x00\x00\x00\x00\r\x00\x003B_03 \r\x02\x1eP\x91\x00\x0c\x00\x00\x00\x00"\x03=\x00\x00
+LOAD3 SCE083_001\x00\x1f\x06\x00 FOB_SCE_END
+2B_01 BACKGROUND_OP BACKGROUND_OP2 P\x91 BACKGROUND_OP3 =\x00\x00
  
 拓司は枕元に掛けられている鳥かごをのぞき込んだ。@
 なんという種類かはわからないが、どこかで見たことがあるよう\nな、いかにも普通の小鳥だ。@
 ただ、色だけがウソのように青く鮮やかで、屋台で売っているペ\nンキで着色されたヒヨコを思わせる。\w\z
-\x00 \x1e\x00\x00\x00\x00\r\x00\x00 SET_GAMEMODE \x0c\x02\x00\x00"
-LOAD7 .\\Data\\Script\\TextFunc.Fob OP01 ^\x01\x00 FOB_SCE_END
- 
-LOAD2 TextOn OP01 \x8c\x01\x00 OP_CMD 
-LOAD3 SCE083_002\x00\x1f\xa8\x01\x00 FOB_SCE_END
- 2B_01 \x1e\x00\x00\x00\x00\r\x00\x003B_03 \r\x02\x1eT\x91\x00\x0c\x00\x00\x00\x00"\x03s\x00\x00
+\x00 DIALOGUE_END J\x00 SEQ01
+LOAD7 .\\Data\\Script\\TextFunc.Fob OP01 ^\x01 FOB_SCE_END
+LOAD2 TextOn OP01 \x8c\x01 OP_CMD 
+LOAD3 SCE083_002\x00\x1f\xa8\x01 FOB_SCE_END
+2B_01 BACKGROUND_OP BACKGROUND_OP2 T\x91 BACKGROUND_OP3 s\x00\x00
  
 教授\n　「気になるかね？」@
 拓司\n　「？　ええ、まあ。この部屋にあるのはこの鳥かごだけですか\n　　らね。\pそりゃあ、気になります」@
@@ -22,10 +21,11 @@ LOAD3 SCE083_002\x00\x1f\xa8\x01\x00 FOB_SCE_END
 　　無意識に、君の注意をその鳥に向けさせたのかもしれないぞ\n　　？」@
 \nねばりつくようないいかただった。@
 見れば教授の額には、ちいさな汗が滲んでいる。\w\z
-\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1f\xec\x01\x00\x0c\x02\x00\x00"\x1f^\x01\x00 FOB_SCE_END
- \x1f\x8c\x01\x00 OP_CMD 
-LOAD3 SCE083_003\x00\x1f\xf2\x03\x00 FOB_SCE_END
- 2B_01 \x1e\x00\x00\x00\x00\r\x00\x003B_03 \r\x02\x1eX\x91\x00\x0c\x00\x00\x00\x00"\x03g\x00\x00
+\x00\x00\x00 DIALOGUE_END \xec\x01 SEQ01
+\x1f^\x01 FOB_SCE_END
+\x1f\x8c\x01 OP_CMD 
+LOAD3 SCE083_003\x00\x1f\xf2\x03 FOB_SCE_END
+2B_01 BACKGROUND_OP BACKGROUND_OP2 X\x91 BACKGROUND_OP3 g\x00\x00
  
 拓司\n　「……なにかこの鳥が、俺の過去に関係あるんですか？」@
 教授\n　「……」@
@@ -34,10 +34,11 @@ LOAD3 SCE083_003\x00\x1f\xf2\x03\x00 FOB_SCE_END
 教授が目で合図を送ると、看護婦は拘束着の女の子を連れて部屋\nから退出した。@
 しめきられた白い部屋には、拓司と教授、２人だけが向かい合っ\nて残された。@
 長い沈黙の後、教授が口を開いた。\w\z
-\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1f6\x04\x00\x0c\x02\x00\x00"\x1f^\x01\x00 FOB_SCE_END
- \x1f\x8c\x01\x00 OP_CMD 
-LOAD3 SCE083_004\x00\x1f\x0c\x06\x00 FOB_SCE_END
- 2B_01 \x1e\x00\x00\x00\x00\r\x00\x003B_03 \r\x02\x1e\\\x91\x00\x0c\x00\x00\x00\x00"\x03\x87\x00\x00
+\x00\x00\x00 DIALOGUE_END 6\x04 SEQ01
+\x1f^\x01 FOB_SCE_END
+\x1f\x8c\x01 OP_CMD 
+LOAD3 SCE083_004\x00\x1f\x0c\x06 FOB_SCE_END
+2B_01 BACKGROUND_OP BACKGROUND_OP2 \\\x91 BACKGROUND_OP3 \x87\x00\x00
  
 教授\n　「……その鳥はね、ありえない鳥なんだよ」@
 拓司\n　「？」@
@@ -50,10 +51,11 @@ LOAD3 SCE083_004\x00\x1f\x0c\x06\x00 FOB_SCE_END
 拓司\n　「意味が分かりません」@
 \n頭の奥が、ずきんと痛んだ。@
 その痛みは急速に大きく膨れ上がり、すぐに拓司の頭のなかいっ\nぱいに広がった。\w\z
-\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1fP\x06\x00\x0c\x02\x00\x00"\x1f^\x01\x00 FOB_SCE_END
- \x1f\x8c\x01\x00 OP_CMD 
-LOAD3 SCE083_005\x00\x1f\xa6\x08\x00 FOB_SCE_END
- 2B_01 \x1e\x00\x00\x00\x00\r\x00\x003B_03 \r\x02\x1e`\x91\x00\x0c\x00\x00\x00\x00"\x03c\x00\x00
+\x00 DIALOGUE_END P\x06 SEQ01
+\x1f^\x01 FOB_SCE_END
+\x1f\x8c\x01 OP_CMD 
+LOAD3 SCE083_005\x00\x1f\xa6\x08 FOB_SCE_END
+2B_01 BACKGROUND_OP BACKGROUND_OP2 `\x91 BACKGROUND_OP3 c\x00\x00
  
 拓司\n　「意味が……わからない」@
 \n教授が突然、がばと身を乗り出した。@
@@ -63,13 +65,13 @@ LOAD3 SCE083_005\x00\x1f\xa6\x08\x00 FOB_SCE_END
 教授\n　「きみがわからなければ、他の誰にもわかるはずがないッ！@
 　　いいかね、これは、新しい生き物なんだよ！@
 　　あらゆる生物学から外れた……神が作ったこの世界の生物な\n　　らぬ……なにかだッ！」\w\z
-\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1f\xea\x08\x00\x0c\x02\x00\x00"\x1f^\x01\x00 FOB_SCE_END
- \x1f\x8c\x01\x00 OP_CMD  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xca\x00\x00\x0c\x02\x00\x00"
-LOAD6 .\\Data\\Script\\Bg.Fob OP03 \xca\n\x00 FOB_SCE_END
- 
-LOAD4 BgAutoFadeIn OP03 \xf4\n\x00 OP_CMD 
-LOAD3 SCE083_006\x00\x1f\x18\x0b\x00 FOB_SCE_END
- 2B_01 \x1e\x00\x00\x00\x00\r\x00\x003B_03 \r\x02\x1ed\x91\x00\x0c\x00\x00\x00\x00"\x03T\x00\x00
+\x00 DIALOGUE_END \xea\x08 SEQ01
+\x1f^\x01 FOB_SCE_END
+\x1f\x8c\x01 OP_CMD  BACKGROUND_OP \xca\x00 SEQ01
+LOAD6 .\\Data\\Script\\Bg.Fob OP03 \xca\n FOB_SCE_END
+LOAD4 BgAutoFadeIn OP03 \xf4\n OP_CMD 
+LOAD3 SCE083_006\x00\x1f\x18\x0b FOB_SCE_END
+2B_01 BACKGROUND_OP BACKGROUND_OP2 d\x91 BACKGROUND_OP3 T\x00\x00
  
 　ザザザザザザザザザザ@
 \n青い鳥がきしんで、鳴いた。@
@@ -78,9 +80,11 @@ LOAD3 SCE083_006\x00\x1f\x18\x0b\x00 FOB_SCE_END
 \n　ザザザザザザザザザザ@
 \n教授\n　「おまえは誰だ？！　何者なんだ？！　お前は－－」@
 \nスイッチを落としたように、目の前が真っ暗になった。\w\z
-\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1f\\\x0b\x00\x0c\x02\x00\x00"\x1f^\x01\x00 FOB_SCE_END
- \x1f\x8c\x01\x00 OP_CMD  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00\x00\x0c\x02\x00\x00"\x1f\xca\n\x00 FOB_SCE_END
- \x1f\xf4\n\x00 OP_CMD \x1f^\x01\x00 FOB_SCE_END
- 
-LOAD3 TextClose OP02 &\r\x00 OP_CMD 
+\x00 DIALOGUE_END \\\x0b SEQ01
+\x1f^\x01 FOB_SCE_END
+\x1f\x8c\x01 OP_CMD  BACKGROUND_OP \xc8\x00 SEQ01
+\x1f\xca\n FOB_SCE_END
+\x1f\xf4\n OP_CMD \x1f^\x01 FOB_SCE_END
+
+LOAD3 TextClose OP02 &\r OP_CMD 
 END_FILE

@@ -1,7 +1,7 @@
 START_FILE
 6\x08\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\x9a\x06\x00
-LOAD3 SCE080_001\x00\x1f\x06\x00\x00 FOB_SCE_END
- 2B_01 \x1e\x00\x00\x00\x00\r\x00\x003B_03 \r\x02\x1e\xa0\x8c\x00\x0c\x00\x00\x00\x00"\x03\x96\x00\x00
+LOAD3 SCE080_001\x00\x1f\x06\x00 FOB_SCE_END
+2B_01 BACKGROUND_OP BACKGROUND_OP2 \xa0\x8c BACKGROUND_OP3 \x96\x00\x00
  
 　廊下をはいずり、階段を転げ落ち、拓司はようやく自分の教\n室にたどり着いた。\pぶつけたりすりむいたりした部分が鈍く痛む。\n\pしかし、そんなことはもう問題ではない。\p何もかも終わるからだ。\n@
 　教室のドアをなんとか引き開けて、拓司は自分の席を目指した。\n　\p机の中には、買ったばかりのカッターがあるはずだった。@
@@ -15,15 +15,13 @@ LOAD3 SCE080_001\x00\x1f\x06\x00\x00 FOB_SCE_END
 なんだこりゃ。@
 邪魔邪魔。\
 
-\x00 \x1e\x00\x00\x00\x00\r\x00\x00 SET_GAMEMODE \x0c\x02\x00\x00"
-LOAD7 .\\Data\\Script\\TextFunc.Fob OP01 \xc2\x02\x00 FOB_SCE_END
- 
-LOAD2 TextOn OP01 \xf0\x02\x00 OP_CMD  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00\x00\x0c\x02\x00\x00"
-LOAD6 .\\Data\\Script\\Bg.Fob OP03 &\x03\x00 FOB_SCE_END
- 
-LOAD4 BgAutoFadeIn OP03 P\x03\x00 OP_CMD 
-LOAD3 SCE080_002\x00\x1ft\x03\x00 FOB_SCE_END
- 2B_01 \x1e\x00\x00\x00\x00\r\x00\x003B_03 \r\x02\x1e\xa4\x8c\x00\x0c\x00\x00\x00\x00"\x03R\x00\x00
+\x00 DIALOGUE_END J\x00 SEQ01
+LOAD7 .\\Data\\Script\\TextFunc.Fob OP01 \xc2\x02 FOB_SCE_END
+LOAD2 TextOn OP01 \xf0\x02 OP_CMD  BACKGROUND_OP \xc8\x00 SEQ01
+LOAD6 .\\Data\\Script\\Bg.Fob OP03 &\x03 FOB_SCE_END
+LOAD4 BgAutoFadeIn OP03 P\x03 OP_CMD 
+LOAD3 SCE080_002\x00\x1ft\x03 FOB_SCE_END
+2B_01 BACKGROUND_OP BACKGROUND_OP2 \xa4\x8c BACKGROUND_OP3 R\x00\x00
  
 机までたどり着いた拓司は、必死の力を振り絞って身を起こし、\nどっかりと椅子に腰掛けた。@
 ふう、とため息をついて、机の中\nを両手でまさぐる。@
@@ -38,10 +36,11 @@ LOAD3 SCE080_002\x00\x1ft\x03\x00 FOB_SCE_END
 　－－カッター。@
 　ピンポーン！\
 
-\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1f\xb8\x03\x00\x0c\x02\x00\x00"\x1f\xc2\x02\x00 FOB_SCE_END
- \x1f\xf0\x02\x00 OP_CMD 
-LOAD3 SCE080_003\x00\x1f:\x05\x00 FOB_SCE_END
- 2B_01 \x1e\x00\x00\x00\x00\r\x00\x003B_03 \r\x02\x1e\xa8\x8c\x00\x0c\x00\x00\x00\x00"\x03.\x00\x00
+\x00 DIALOGUE_END \xb8\x03 SEQ01
+\x1f\xc2\x02 FOB_SCE_END
+\x1f\xf0\x02 OP_CMD 
+LOAD3 SCE080_003\x00\x1f:\x05 FOB_SCE_END
+2B_01 BACKGROUND_OP BACKGROUND_OP2 \xa8\x8c BACKGROUND_OP3 .\x00\x00
  
 　そうしてカッターナイフを取り出すと、拓司はキリキリと刃を\n　押し出し、それを喉元に押し当てた。@
 　終わりだ。@
@@ -49,8 +48,9 @@ LOAD3 SCE080_003\x00\x1f:\x05\x00 FOB_SCE_END
 　さあ。@
 　終わりだ。\
 
-\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1f~\x05\x00\x0c\x02\x00\x00"\x1f\xc2\x02\x00 FOB_SCE_END
- \x1f\xf0\x02\x00 OP_CMD \x1f\xc2\x02\x00 FOB_SCE_END
- 
-LOAD3 TextClose OP02 |\x06\x00 OP_CMD 
+\x00\x00\x00 DIALOGUE_END ~\x05 SEQ01
+\x1f\xc2\x02 FOB_SCE_END
+\x1f\xf0\x02 OP_CMD \x1f\xc2\x02 FOB_SCE_END
+
+LOAD3 TextClose OP02 |\x06 OP_CMD 
 END_FILE

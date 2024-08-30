@@ -1,7 +1,7 @@
 START_FILE
 \x88\t\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00*\x08\x00
-LOAD3 SCEK12_001\x00\x1f\x06\x00\x00 FOB_SCE_END
- 2B_01 \x1e\x00\x00\x00\x00\r\x00\x003B_03 \r\x02\x1e\x90\xaa\x01\x0c\x00\x00\x00\x00"\x03s\x00\x00
+LOAD3 SCEK12_001\x00\x1f\x06\x00 FOB_SCE_END
+2B_01 BACKGROUND_OP BACKGROUND_OP2 \x90\xaa\x01\x0c\x00\x00\x00\x00"\x03s\x00\x00
  
 「朝８時に、市内のビジネスホテルで」@
 \n朝７時にいつもどおり家を出て、駅のトイレで服を着替えた。@
@@ -11,12 +11,11 @@ LOAD3 SCEK12_001\x00\x1f\x06\x00\x00 FOB_SCE_END
 鏡で見た自分の姿は、まるで別人みたいに見えた。@
 憑き物が落ちたようないきいきとした顔が鏡の中にあったのを、\n鮮やかに覚えている。@
 サッパリしていて、自分でもちょっとすてきかな、などと思った\nくらいだった。\w\z
-\x00 \x1e\x00\x00\x00\x00\r\x00\x00 SET_GAMEMODE \x0c\x02\x00\x00"
-LOAD7 .\\Data\\Script\\TextFunc.Fob OP01 6\x02\x00 FOB_SCE_END
- 
-LOAD2 TextOn OP01 d\x02\x00 OP_CMD 
-LOAD3 SCEK12_002\x00\x1f\x80\x02\x00 FOB_SCE_END
- 2B_01 \x1e\x00\x00\x00\x00\r\x00\x003B_03 \r\x02\x1e\x90\xaa\x01\x0c\x00\x00\x00\x00"\x03\xb4\x00\x00
+\x00 DIALOGUE_END J\x00 SEQ01
+LOAD7 .\\Data\\Script\\TextFunc.Fob OP01 6\x02 FOB_SCE_END
+LOAD2 TextOn OP01 d\x02 OP_CMD 
+LOAD3 SCEK12_002\x00\x1f\x80\x02 FOB_SCE_END
+2B_01 BACKGROUND_OP BACKGROUND_OP2 \x90\xaa\x01\x0c\x00\x00\x00\x00"\x03\xb4\x00\x00
  
 　私はそのまま約束のビジネスホテルに向かった。@
 ××予備校の夏期講習を受ける地方の学生がよく長期利用するホ\nテルで、時期がちょうどそんな時期だったこともあって、私たち\nみたいな学生が２人で向かったからといってとりわけ怪しまれる\nことはないだろうと……そう目星をつけてのことだった。@
@@ -26,18 +25,20 @@ LOAD3 SCEK12_002\x00\x1f\x80\x02\x00 FOB_SCE_END
 これから死ぬというのに、ぜんぜん怖いという感じはなかった。@
 わくわくしていた。@
 ゆきといっしょに、どこか温泉にでも旅行に出かけるような、そ\nんな気分だった。\w\z
-\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1f\xc4\x02\x00\x0c\x02\x00\x00"\x1f6\x02\x00 FOB_SCE_END
- \x1fd\x02\x00 OP_CMD 
-LOAD3 SCEK12_003\x00\x1f\xce\x05\x00 FOB_SCE_END
- 2B_01 \x1e\x00\x00\x00\x00\r\x00\x003B_03 \r\x02\x1e\x90\xaa\x01\x0c\x00\x00\x00\x00"\x03m\x00\x00
+\x00 DIALOGUE_END \xc4\x02 SEQ01
+\x1f6\x02 FOB_SCE_END
+\x1fd\x02 OP_CMD 
+LOAD3 SCEK12_003\x00\x1f\xce\x05 FOB_SCE_END
+2B_01 BACKGROUND_OP BACKGROUND_OP2 \x90\xaa\x01\x0c\x00\x00\x00\x00"\x03m\x00\x00
  
 　綺麗に死にたいと思った。@
 首を吊って失禁したり、電車に飛び込んでバラバラになったり、\n飛び降りて見せ物になったりするのはゴメンだった。@
 痛いのも嫌だった。だから、薬で死のうと思った。@
 \n　私たちは××××という薬を何軒かのドラッグストアで分けて\n買い集め（知ってるでしょ、××××？）、銀紙の上に何瓶ぶん\nかの錠剤を載せてコンロであぶって、ドロドロに溶かした。@
 そして、薬と一緒に買ってきたプレーンヨーグルトに混ぜた。\w\z
-\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1f\x12\x06\x00\x0c\x02\x00\x00"\x1f6\x02\x00 FOB_SCE_END
- \x1fd\x02\x00 OP_CMD \x1f6\x02\x00 FOB_SCE_END
- 
-LOAD3 TextClose OP02 \x0c\x08\x00 OP_CMD 
+\x00 DIALOGUE_END \x12\x06 SEQ01
+\x1f6\x02 FOB_SCE_END
+\x1fd\x02 OP_CMD \x1f6\x02 FOB_SCE_END
+
+LOAD3 TextClose OP02 \x0c\x08 OP_CMD 
 END_FILE

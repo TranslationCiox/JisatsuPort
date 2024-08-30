@@ -1,13 +1,10 @@
 START_FILE
-\xb8\x04\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xa4\t3\x01\x00\x00\x00d\x03\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00\x00\x0c\x02\x00\x00"
-LOAD6 .\\Data\\Script\\Bg.Fob OP03  \x00\x00 FOB_SCE_END
- 
-LOAD4 BgAutoFadeIn OP03 J\x00\x00 OP_CMD 
-LOAD6 .\\Data\\Script\\Bgm.Fob OP02 n\x00\x00 FOB_SCE_END
- 
-LOAD2 StopCD OP01 \x98\x00\x00 OP_CMD 
-LOAD3 SCEK06_001\x00\x1f\xb4\x00\x00 FOB_SCE_END
- 2B_01 \x1e\x00\x00\x00\x00\r\x00\x003B_03 \r\x02\x1e\xd0\xa6\x01\x0c\x00\x00\x00\x00"\x03v\x00\x00
+\xb8\x04\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\xa4\t3\x01\x00\x00\x00d\x03\x00 BACKGROUND_OP \xc8\x00 SEQ01
+LOAD6 .\\Data\\Script\\Bg.Fob OP03  \x00 FOB_SCE_END
+LOAD4 BgAutoFadeIn OP03 J\x00 OP_CMD LOAD6 .\\Data\\Script\\Bgm.Fob OP02 n\x00 FOB_SCE_END
+LOAD2 StopCD OP01 \x98\x00 OP_CMD 
+LOAD3 SCEK06_001\x00\x1f\xb4\x00 FOB_SCE_END
+2B_01 BACKGROUND_OP BACKGROUND_OP2 \xd0\xa6\x01\x0c\x00\x00\x00\x00"\x03v\x00\x00
  
 　もう帰ろう、と私がいうと、ゆきはほっとしたようだった。@
 けれども安堵の奥には、落胆のかけらがあるように思えた。@
@@ -17,10 +14,9 @@ LOAD3 SCEK06_001\x00\x1f\xb4\x00\x00 FOB_SCE_END
 告白を聞いてくれる神父が。\p神父を通じてなされる赦しが。@
 私は結局、ゆきの秘密を最後まで知ることはなかった。@
 それから１週間後、ゆきは風邪薬を２００錠のんで、自殺したの\nだった。\w\z
-\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1f\xf8\x00\x00\x0c\x02\x00\x00"
-LOAD7 .\\Data\\Script\\TextFunc.Fob OP01 \xf0\x02\x00 FOB_SCE_END
- 
-LOAD2 TextOn OP01 \x1e\x03\x00 OP_CMD \x1f\xf0\x02\x00 FOB_SCE_END
- 
-LOAD3 TextClose OP02 F\x03\x00 OP_CMD 
+\x00 DIALOGUE_END \xf8\x00 SEQ01
+LOAD7 .\\Data\\Script\\TextFunc.Fob OP01 \xf0\x02 FOB_SCE_END
+LOAD2 TextOn OP01 \x1e\x03 OP_CMD \x1f\xf0\x02 FOB_SCE_END
+
+LOAD3 TextClose OP02 F\x03 OP_CMD 
 END_FILE

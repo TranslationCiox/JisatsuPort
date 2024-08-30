@@ -1,15 +1,12 @@
 START_FILE
-\xa6\x11\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00,\x0e\x00
-LOAD6 .\\Data\\Script\\Bgm.Fob OP02 \x06\x00\x00 FOB_SCE_END
- 
-LOAD2 StopCD OP01 0\x00\x00 OP_CMD  \x1e\x00\x00\x00\x00\r\x00\x00\x1e=\x00\x00\x0c\x02\x00\x00"
-LOAD6 .\\Data\\Script\\Bg.Fob OP03 f\x00\x00 FOB_SCE_END
- 
-LOAD4 BgAutoFadeIn OP03 \x90\x00\x00 OP_CMD  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x04\x01\x00\x0c\x02\x00\x00"\x1f\x06\x00\x00 FOB_SCE_END
- 
-LOAD2 PlayCD OP01 \xda\x00\x00 OP_CMD 
-LOAD3 SCEK05_001\x00\x1f\xf6\x00\x00 FOB_SCE_END
- 2B_01 \x1e\x00\x00\x00\x00\r\x00\x003B_03 \r\x02\x1e\x80\xa6\x01\x0c\x00\x00\x00\x00"\x03\x96\x00\x00
+\xa6\x11\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00,\x0e\x00LOAD6 .\\Data\\Script\\Bgm.Fob OP02 \x06\x00 FOB_SCE_END
+LOAD2 StopCD OP01 0\x00 OP_CMD  BACKGROUND_OP =\x00 SEQ01
+LOAD6 .\\Data\\Script\\Bg.Fob OP03 f\x00 FOB_SCE_END
+LOAD4 BgAutoFadeIn OP03 \x90\x00 OP_CMD  BACKGROUND_OP \x04\x01 SEQ01
+\x1f\x06\x00 FOB_SCE_END
+LOAD2 PlayCD OP01 \xda\x00 OP_CMD 
+LOAD3 SCEK05_001\x00\x1f\xf6\x00 FOB_SCE_END
+2B_01 BACKGROUND_OP BACKGROUND_OP2 \x80\xa6\x01\x0c\x00\x00\x00\x00"\x03\x96\x00\x00
  
 　ゆきのそうしたやり方は、とても新鮮で、スマートに映った。@
 自分の道を行くつもりであれば、周囲との軋轢が産まれるのはや\nむなしと思いこんでいた私に、ゆきは、より高度なやりかたがあ\nると教えてくれた。@
@@ -18,22 +15,22 @@ LOAD3 SCEK05_001\x00\x1f\xf6\x00\x00 FOB_SCE_END
 \n　要するに、ゆきは大人だった。@
 　私はゆきを尊敬した。@
 　私のどこに魅力を見つけたのか、ゆきもまた、私をどこか尊敬\nしてくれているような感じがあって、それはとても心地がよかっ\nた。\w\z
-\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1f:\x01\x00\x0c\x02\x00\x00"
-LOAD7 .\\Data\\Script\\TextFunc.Fob OP01 \xb2\x03\x00 FOB_SCE_END
- 
-LOAD2 TextOn OP01 \xe0\x03\x00 OP_CMD 
-LOAD3 SCEK05_002\x00\x1f\xfc\x03\x00 FOB_SCE_END
- 2B_01 \x1e\x00\x00\x00\x00\r\x00\x003B_03 \r\x02\x1e\x84\xa6\x01\x0c\x00\x00\x00\x00"\x03~\x00\x00
+\x00 DIALOGUE_END :\x01 SEQ01
+LOAD7 .\\Data\\Script\\TextFunc.Fob OP01 \xb2\x03 FOB_SCE_END
+LOAD2 TextOn OP01 \xe0\x03 OP_CMD 
+LOAD3 SCEK05_002\x00\x1f\xfc\x03 FOB_SCE_END
+2B_01 BACKGROUND_OP BACKGROUND_OP2 \x84\xa6\x01\x0c\x00\x00\x00\x00"\x03~\x00\x00
  
 　１ヶ月も経ったころ－－誤解を恐れずにいうけれど－－\n私は若草ゆきに恋していた。@
 私は、自分がゆきに与えられるものはなんなのだろうか、と考え\nるようになっていた。@
 ゆきが私に与えてくれるのと同じくらいの素敵ないろいろを、ゆ\nきにも返してあげたかった。@
 私は自分自身をまじまじと見つめ、そうして自分があまりに薄っ\nぺらで、ゆきに返すような素敵なものをなにひとつ持っていない\nことに初めて気づいた。@
 若草ゆきに恋することで、私は、唐突に自分というものの輪郭を\nはっきり認識させられたのだった。\w\z
-\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1f@\x04\x00\x0c\x02\x00\x00"\x1f\xb2\x03\x00 FOB_SCE_END
- \x1f\xe0\x03\x00 OP_CMD 
-LOAD3 SCEK05_003\x00\x1fr\x06\x00 FOB_SCE_END
- 2B_01 \x1e\x00\x00\x00\x00\r\x00\x003B_03 \r\x02\x1e\x88\xa6\x01\x0c\x00\x00\x00\x00"\x03_\x00\x00
+\x00 DIALOGUE_END @\x04 SEQ01
+\x1f\xb2\x03 FOB_SCE_END
+\x1f\xe0\x03 OP_CMD 
+LOAD3 SCEK05_003\x00\x1fr\x06 FOB_SCE_END
+2B_01 BACKGROUND_OP BACKGROUND_OP2 \x88\xa6\x01\x0c\x00\x00\x00\x00"\x03_\x00\x00
  
 　私はこれまで何をやってきたのだろう？@
 足下がガラガラと崩れていくみたいなショックだった。@
@@ -41,10 +38,11 @@ LOAD3 SCEK05_003\x00\x1fr\x06\x00 FOB_SCE_END
 周りと衝突しながら、激しく消耗しながら、私はコツコツと城壁\nを形作ってきたのだ。@
 何者も容易には侵入できない、立派な城壁だった。@
 けれども私が作り上げたのは城壁だけで、そのなかに城と呼べる\nものがなかったと……私は知った。\w\z
-\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1f\xb6\x06\x00\x0c\x02\x00\x00"\x1f\xb2\x03\x00 FOB_SCE_END
- \x1f\xe0\x03\x00 OP_CMD 
-LOAD3 SCEK05_004\x00\x1fl\x08\x00 FOB_SCE_END
- 2B_01 \x1e\x00\x00\x00\x00\r\x00\x003B_03 \r\x02\x1e\x8c\xa6\x01\x0c\x00\x00\x00\x00"\x03p\x00\x00
+\x00 DIALOGUE_END \xb6\x06 SEQ01
+\x1f\xb2\x03 FOB_SCE_END
+\x1f\xe0\x03 OP_CMD 
+LOAD3 SCEK05_004\x00\x1fl\x08 FOB_SCE_END
+2B_01 BACKGROUND_OP BACKGROUND_OP2 \x8c\xa6\x01\x0c\x00\x00\x00\x00"\x03p\x00\x00
  
 　むさぼるように本を読んで、映画を観て、音楽を聴いた。@
 洋服や髪型に気をつけて、できるだけ素敵な女の子として振る舞\nおうと心がけた。@
@@ -54,10 +52,11 @@ LOAD3 SCEK05_004\x00\x1fl\x08\x00 FOB_SCE_END
 友達もできなかったけれど、@
 私に対する露骨な悪意は、しだいに周囲から影を潜めていった。\nいまの（－－この学校での、ね）@
 私のスタンスは、このころに形作られたのだと思う。\w\z
-\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1f\xb0\x08\x00\x0c\x02\x00\x00"\x1f\xb2\x03\x00 FOB_SCE_END
- \x1f\xe0\x03\x00 OP_CMD 
-LOAD3 SCEK05_005\x00\x1f\xaa\n\x00 FOB_SCE_END
- 2B_01 \x1e\x00\x00\x00\x00\r\x00\x003B_03 \r\x02\x1e\x90\xa6\x01\x0c\x00\x00\x00\x00"\x03\x8e\x00\x00
+\x00 DIALOGUE_END \xb0\x08 SEQ01
+\x1f\xb2\x03 FOB_SCE_END
+\x1f\xe0\x03 OP_CMD 
+LOAD3 SCEK05_005\x00\x1f\xaa\n FOB_SCE_END
+2B_01 BACKGROUND_OP BACKGROUND_OP2 \x90\xa6\x01\x0c\x00\x00\x00\x00"\x03\x8e\x00\x00
  
 　私は、自分たちの関係は、周囲のおままごととは違うと思って\nいた。@
 より高い次元での交流……肉体とは別次元の精神的な繋がりだと。\n\p私たちは他の子たちみたいにのべつくまなくベタベタしたりはし\nなかった。@
@@ -65,14 +64,16 @@ LOAD3 SCEK05_005\x00\x1f\xaa\n\x00 FOB_SCE_END
 私たちの交流はそんなありきたりの女子校的行為で表されるべき\nではなく、もっとストイックであるべきだと、私は思っていた。@
 真に価値あるものが、そこらにありふれているはずはない、と。@
 でも、思いとはうらはらに、私のなかで、徐々に、ゆきに抱きつ\nいて、キスをしたいという願望が膨らんでいった。\w\z
-\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1f\xee\n\x00\x0c\x02\x00\x00"\x1f\xb2\x03\x00 FOB_SCE_END
- \x1f\xe0\x03\x00 OP_CMD \x03\x1a\x00\x00
+\x00\x00\x00 DIALOGUE_END \xee\n SEQ01
+\x1f\xb2\x03 FOB_SCE_END
+\x1f\xe0\x03 OP_CMD \x03\x1a\x00\x00
 CHOICE
 私はゆきに、自分の気持ちを正直に伝えた\nそれでも私は、ゆきとプラトニックな関係を続けた\n\l0,2,
 ENDCHOICE
 
-\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1f`\r\x00\x0c\x02\x00\x00"\x1f\xb2\x03\x00 FOB_SCE_END
- \x1f\xe0\x03\x00 OP_CMD \x1f\xb2\x03\x00 FOB_SCE_END
- 
-LOAD3 TextClose OP02 \x0e\x0e\x00 OP_CMD 
+\x00 DIALOGUE_END `\r SEQ01
+\x1f\xb2\x03 FOB_SCE_END
+\x1f\xe0\x03 OP_CMD \x1f\xb2\x03 FOB_SCE_END
+
+LOAD3 TextClose OP02 \x0e\x0e OP_CMD 
 END_FILE

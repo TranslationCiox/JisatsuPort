@@ -1,25 +1,16 @@
 START_FILE
 d\x03\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x80\x044\x01\x00\x00\x00h\x02\x00
-LOAD3 SCE004_001\x00\x1f\x06\x00\x00 FOB_SCE_END
- 2B_01 \x1e\x00\x00\x00\x00\r\x00\x003B_03 \r\x02\x1e\xe0\x15\x00\x0c\x00\x00\x00\x00"
-LOAD7 .\\Data\\Script\\TextFunc.fob OP01 J\x00\x00 FOB_SCE_END
- 
-LOAD6 CheckNormalMessageSkip OP01 x\x00\x00 OP_CMD 
-LOAD7 .\\Data\\Script\\TextFunc.Fob OP01 \xa4\x00\x00 FOB_SCE_END
- 
-LOAD5 TextWindowOffDirect\x1f\xd2\x00\x00 OP_CMD  \x1e\x00\x00\x00\x00\r\x00\x00\x1e,\x01\x00\x0c\x02\x00\x00"
-LOAD6 .\\Data\\Script\\Bg.Fob OP03 \x14\x01\x00 FOB_SCE_END
- 
-LOAD2 BgOn OP03 >\x01\x00 OP_CMD  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\x0b\x01\x00\x0c\x02\x00\x00"
-LOAD6 .\\Data\\Script\\Bgm.Fob OP02 t\x01\x00 FOB_SCE_END
- 
-LOAD2 PlayCD OP01 \x9e\x01\x00 OP_CMD  SET_GAMEMODE  FOB_SCE_END
- 
-LOAD2 WaitKey\x1f\xc6\x01\x00 OP_CMD \x1ft\x01\x00 FOB_SCE_END
- 
-LOAD2 StopCD OP01 \xee\x01\x00 OP_CMD \x1f\xa4\x00\x00 FOB_SCE_END
- 
-LOAD5 UpdateScenarioRead OP01 \x16\x02\x00 OP_CMD \x1f\xa4\x00\x00 FOB_SCE_END
- 
-LOAD3 TextClose OP02 J\x02\x00 OP_CMD 
+LOAD3 SCE004_001\x00\x1f\x06\x00 FOB_SCE_END
+2B_01 BACKGROUND_OP BACKGROUND_OP2 \xe0\x15 BACKGROUND_OP3 \x07\x00\x00.\\Data\\Script\\TextFunc.fob OP01 J\x00 FOB_SCE_END
+LOAD6 CheckNormalMessageSkip OP01 x\x00 OP_CMD LOAD7 .\\Data\\Script\\TextFunc.Fob OP01 \xa4\x00 FOB_SCE_END
+LOAD5 TextWindowOffDirect\x1f\xd2\x00 OP_CMD  BACKGROUND_OP ,\x01 SEQ01
+LOAD6 .\\Data\\Script\\Bg.Fob OP03 \x14\x01 FOB_SCE_END
+LOAD2 BgOn OP03 >\x01 OP_CMD  BACKGROUND_OP \x0b\x01 SEQ01
+LOAD6 .\\Data\\Script\\Bgm.Fob OP02 t\x01 FOB_SCE_END
+LOAD2 PlayCD OP01 \x9e\x01 OP_CMD \x1fJ\x00 FOB_SCE_END
+LOAD2 WaitKey\x1f\xc6\x01 OP_CMD \x1ft\x01 FOB_SCE_END
+LOAD2 StopCD OP01 \xee\x01 OP_CMD \x1f\xa4\x00 FOB_SCE_END
+LOAD5 UpdateScenarioRead OP01 \x16\x02 OP_CMD \x1f\xa4\x00 FOB_SCE_END
+
+LOAD3 TextClose OP02 J\x02 OP_CMD 
 END_FILE

@@ -1,22 +1,20 @@
 START_FILE
-\xcf\x1f\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xc2\x1a\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1e\t\x01\x00\x0c\x02\x00\x00"
-LOAD6 .\\Data\\Script\\Bgm.Fob OP02  \x00\x00 FOB_SCE_END
- 
-LOAD2 PlayCD OP01 J\x00\x00 OP_CMD 
-LOAD3 SCE085a_001\x1ff\x00\x00 FOB_SCE_END
- 2B_01 \x1e\x00\x00\x00\x00\r\x00\x003B_03 \r\x02\x1ep\x94\x00\x0c\x00\x00\x00\x00"\x03\x82\x00\x00
+\xcf\x1f\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xc2\x1a\x00 BACKGROUND_OP \t\x01 SEQ01
+LOAD6 .\\Data\\Script\\Bgm.Fob OP02  \x00 FOB_SCE_END
+LOAD2 PlayCD OP01 J\x00 OP_CMD 
+LOAD3 SCE085a_001\x1ff\x00 FOB_SCE_END
+2B_01 BACKGROUND_OP BACKGROUND_OP2 p\x94 BACKGROUND_OP3 \x82\x00\x00
  
 無事目を覚ましたものの、茫然自失といった体の紅葉を導いて、\n拓司は４階へ向かった。@
 いまやってきた道を再び戻るのは気が引けたが、もう、回り道を\nするほどの気力は残っていなかった。\pそれに、一度体験してしま\nえばもう大丈夫なのだ、という考えが浮かんできた。\p免疫のよう\nなものができて、もう大丈夫なのだ、と。\p拓司はそんな妄想めい\nた信念にすがって立ち、自殺波動のなかを突っ切った。@
 再び、死の誘惑が襲いかかることはなかった。@
 免疫ができたせいなのか、すでに波動が拡散した後なのかは……わ\nからなかったが。\
 
-\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1f\xaa\x00\x00\x0c\x02\x00\x00"
-LOAD7 .\\Data\\Script\\TextFunc.Fob OP01 \xd2\x02\x00 FOB_SCE_END
- 
-LOAD2 TextOn OP01 \x00\x03\x00 OP_CMD 
-LOAD3 SCE085a_002\x1f\x1c\x03\x00 FOB_SCE_END
- 2B_01 \x1e\x00\x00\x00\x00\r\x00\x003B_03 \r\x02\x1et\x94\x00\x0c\x00\x00\x00\x00"\x03\xd6\x00\x00
+\x00 DIALOGUE_END \xaa\x00 SEQ01
+LOAD7 .\\Data\\Script\\TextFunc.Fob OP01 \xd2\x02 FOB_SCE_END
+LOAD2 TextOn OP01 \x00\x03 OP_CMD 
+LOAD3 SCE085a_002\x1f\x1c\x03 FOB_SCE_END
+2B_01 BACKGROUND_OP BACKGROUND_OP2 t\x94 BACKGROUND_OP3 \xd6\x00\x00
  
 途中、生きている人間には一度も出くわさなかった。\pもっとも、\n余計な寄り道はせず、ただひたすら４階目指して廊下を歩いてき\nただけだから、もしかしたらどこかの教室に生き残りがいるのか\nもしれない。@
 ただもう、一刻も早くシェルターに逃げ込みたかった。@
@@ -27,10 +25,11 @@ LOAD3 SCE085a_002\x1f\x1c\x03\x00 FOB_SCE_END
 なたねの口から聞いた時にはほとんど信じられなかったシェルタ\nーの存在が、いまや拓司の唯一の心の支えになっている。@
 眉唾物の話だが、いまはそれを信じたい。\pおばけが怖くて夜、布\n団を被るのに似ている。\p布団なんかでおばけから身を守れるはず\nがない。\pだが、恐怖からは守ってくれる……。\
 
-\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1f`\x03\x00\x0c\x02\x00\x00"\x1f\xd2\x02\x00 FOB_SCE_END
- \x1f\x00\x03\x00 OP_CMD 
-LOAD3 SCE085a_003\x1f\xf2\x06\x00 FOB_SCE_END
- 2B_01 \x1e\x00\x00\x00\x00\r\x00\x003B_03 \r\x02\x1ex\x94\x00\x0c\x00\x00\x00\x00"\x03Z\x00\x00
+\x00 DIALOGUE_END `\x03 SEQ01
+\x1f\xd2\x02 FOB_SCE_END
+\x1f\x00\x03 OP_CMD 
+LOAD3 SCE085a_003\x1f\xf2\x06 FOB_SCE_END
+2B_01 BACKGROUND_OP BACKGROUND_OP2 x\x94 BACKGROUND_OP3 Z\x00\x00
  
 なたね\n　「虎菱くん！」@
 \n　四階の階段を上りきったところには、なたねが腕を組んで立っ\nていた。\p階段を駆け上がってきたのが拓司だと確認すると、なた\nねは驚きの声をあげた。@
@@ -39,10 +38,11 @@ LOAD3 SCE085a_003\x1f\xf2\x06\x00 FOB_SCE_END
 なたね\n　「どうやったの？\p　どうやって波動から身を守ったの？！」@
 拓司\n　「偶然だよ」\
 
-\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1f6\x07\x00\x0c\x02\x00\x00"\x1f\xd2\x02\x00 FOB_SCE_END
- \x1f\x00\x03\x00 OP_CMD 
-LOAD3 SCE085a_004\x1f\xd8\x08\x00 FOB_SCE_END
- 2B_01 \x1e\x00\x00\x00\x00\r\x00\x003B_03 \r\x02\x1e|\x94\x00\x0c\x00\x00\x00\x00"\x03\x9f\x00\x00
+\x00 DIALOGUE_END 6\x07 SEQ01
+\x1f\xd2\x02 FOB_SCE_END
+\x1f\x00\x03 OP_CMD 
+LOAD3 SCE085a_004\x1f\xd8\x08 FOB_SCE_END
+2B_01 BACKGROUND_OP BACKGROUND_OP2 |\x94 BACKGROUND_OP3 \x9f\x00\x00
  
 なたね\n　「ううん、違う！\p　やっぱり虎菱くんは戦士なのよ！@
 　　だから死ななかったんだわ！\p　すごい、すごい！@
@@ -54,10 +54,11 @@ LOAD3 SCE085a_004\x1f\xd8\x08\x00 FOB_SCE_END
 　誰だ？！@
 　拓司たちは身構えたが、果たして現れたのは見慣れた人物であ\n　った。\
 
- \x1e\x00\x00\x00\x00\r\x00\x00\x1f\x1c\t\x00\x0c\x02\x00\x00"\x1f\xd2\x02\x00 FOB_SCE_END
- \x1f\x00\x03\x00 OP_CMD 
-LOAD3 SCE085a_005\x1f\xd2\x0b\x00 FOB_SCE_END
- 2B_01 \x1e\x00\x00\x00\x00\r\x00\x003B_03 \r\x02\x1e\x80\x94\x00\x0c\x00\x00\x00\x00"\x03e\x00\x00
+ DIALOGUE_END \x1c\t SEQ01
+\x1f\xd2\x02 FOB_SCE_END
+\x1f\x00\x03 OP_CMD 
+LOAD3 SCE085a_005\x1f\xd2\x0b FOB_SCE_END
+2B_01 BACKGROUND_OP BACKGROUND_OP2 \x80\x94 BACKGROUND_OP3 e\x00\x00
  
 　現れたのは御堂と、錦城である。@
 \n御堂\n　「はあ、はあ……お前ら、生きてたのか！」@
@@ -67,10 +68,11 @@ LOAD3 SCE085a_005\x1f\xd2\x0b\x00 FOB_SCE_END
 拓司\n　「俺だってわからないさ」@
 錦城\n　「とにかく、無事で良かったわ。\p他に生き残っている人はいる\n　　の？！」\
 
-\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1f\x16\x0c\x00\x0c\x02\x00\x00"\x1f\xd2\x02\x00 FOB_SCE_END
- \x1f\x00\x03\x00 OP_CMD 
-LOAD3 SCE085a_006\x1f\xe4\r\x00 FOB_SCE_END
- 2B_01 \x1e\x00\x00\x00\x00\r\x00\x003B_03 \r\x02\x1e\x84\x94\x00\x0c\x00\x00\x00\x00"\x03}\x00\x00
+\x00 DIALOGUE_END \x16\x0c SEQ01
+\x1f\xd2\x02 FOB_SCE_END
+\x1f\x00\x03 OP_CMD 
+LOAD3 SCE085a_006\x1f\xe4\r FOB_SCE_END
+2B_01 BACKGROUND_OP BACKGROUND_OP2 \x84\x94 BACKGROUND_OP3 }\x00\x00
  
 錦城\n　「少ないわね。\pでは、ここを拠点にして、まだ無事な学生たち\n　　を探しに行きましょう！\p　他のみんなは実験室の中？@
 　　とりあえずここに集めて－－」@
@@ -81,30 +83,33 @@ LOAD3 SCE085a_006\x1f\xe4\r\x00 FOB_SCE_END
 御堂\n　「クソッ、まだいってやがるぜ、この電波女！」@
 拓司\n　「いや、御堂。\p……あながち全部デタラメってわけでもなさそ\n　　うだぜ」\
 
-\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1f(\x0e\x00\x0c\x02\x00\x00"\x1f\xd2\x02\x00 FOB_SCE_END
- \x1f\x00\x03\x00 OP_CMD 
-LOAD3 SCE085a_007\x1fV\x10\x00 FOB_SCE_END
- 2B_01 \x1e\x00\x00\x00\x00\r\x00\x003B_03 \r\x02\x1e\x88\x94\x00\x0c\x00\x00\x00\x00"\x03i\x00\x00
+\x00 DIALOGUE_END (\x0e SEQ01
+\x1f\xd2\x02 FOB_SCE_END
+\x1f\x00\x03 OP_CMD 
+LOAD3 SCE085a_007\x1fV\x10 FOB_SCE_END
+2B_01 BACKGROUND_OP BACKGROUND_OP2 \x88\x94 BACKGROUND_OP3 i\x00\x00
  
 御堂\n　「なに……？」@
 \n　拓司はこれまでの出来事を、遅れてきた一同に語って聞かせた。\n　\p最後に、なたねが自殺波動と呼んでいる『なにか』が確かに存\n　在するということを……そしてなたねがそれに対抗する手段とし\n　てシェルターを準備していたことを……語った。@
 \n錦城\n　「信じがたい話ではあるけれど、もう、信じられないものは山\n　　ほど見てしまった後だし」@
 \n錦城はふう、とため息をついて肩をすくめた。\
 
-\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1f\x9a\x10\x00\x0c\x02\x00\x00"\x1f\xd2\x02\x00 FOB_SCE_END
- \x1f\x00\x03\x00 OP_CMD 
-LOAD3 SCE085a_008\x1fx\x12\x00 FOB_SCE_END
- 2B_01 \x1e\x00\x00\x00\x00\r\x00\x003B_03 \r\x02\x1e\x8c\x94\x00\x0c\x00\x00\x00\x00"\x03z\x00\x00
+\x00\x00\x00 DIALOGUE_END \x9a\x10 SEQ01
+\x1f\xd2\x02 FOB_SCE_END
+\x1f\x00\x03 OP_CMD 
+LOAD3 SCE085a_008\x1fx\x12 FOB_SCE_END
+2B_01 BACKGROUND_OP BACKGROUND_OP2 \x8c\x94 BACKGROUND_OP3 z\x00\x00
  
 錦城\n　「それにしても……雲居さん。\pさっきいっていた最終波動っ\n　　て、いったいなんなの？」@
 なたね\n　「文字通り、最後にやってくる波動のことです」@
 錦城\n　「……」@
 なたね\n　「いま、断続的に襲ってきている波動は、大地震の前の予震み\n　　たいなものにすぎません。\pエンケリュスが本格始動するまえ\n　　の震えみたいなものにすぎない。\pいずれはエンケリュスは完\n　　全に目覚めて、これまでの波動なんて話にならないくらいの\n　　巨大な波動を放ちます。\pそれが最終波動です」\
 
-\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1f\xbc\x12\x00\x0c\x02\x00\x00"\x1f\xd2\x02\x00 FOB_SCE_END
- \x1f\x00\x03\x00 OP_CMD 
-LOAD3 SCE085a_009\x1f\xde\x14\x00 FOB_SCE_END
- 2B_01 \x1e\x00\x00\x00\x00\r\x00\x003B_03 \r\x02\x1e\x90\x94\x00\x0c\x00\x00\x00\x00"\x03\x94\x00\x00
+\x00\x00\x00 DIALOGUE_END \xbc\x12 SEQ01
+\x1f\xd2\x02 FOB_SCE_END
+\x1f\x00\x03 OP_CMD 
+LOAD3 SCE085a_009\x1f\xde\x14 FOB_SCE_END
+2B_01 BACKGROUND_OP BACKGROUND_OP2 \x90\x94 BACKGROUND_OP3 \x94\x00\x00
  
 錦城\n　「これまでの波動よりも大きい……」@
 なたね\n　「ええ。\pおそらくそれで、地球上の人間はみな死ぬでしょう。@
@@ -112,10 +117,11 @@ LOAD3 SCE085a_009\x1f\xde\x14\x00 FOB_SCE_END
 \nここまで黙っていた御堂が、たまりかねたように叫んだ。@
 \n御堂\n　「バカバカしい！\p　こんなのの妄想を真に受けてるんじゃねえ\n　　だろうな！」\
 
-\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1f"\x15\x00\x0c\x02\x00\x00"\x1f\xd2\x02\x00 FOB_SCE_END
- \x1f\x00\x03\x00 OP_CMD 
-LOAD3 SCE085a_010\x1f\xac\x17\x00 FOB_SCE_END
- 2B_01 \x1e\x00\x00\x00\x00\r\x00\x003B_03 \r\x02\x1e\x94\x94\x00\x0c\x00\x00\x00\x00"\x03^\x00\x00
+\x00 DIALOGUE_END "\x15 SEQ01
+\x1f\xd2\x02 FOB_SCE_END
+\x1f\x00\x03 OP_CMD 
+LOAD3 SCE085a_010\x1f\xac\x17 FOB_SCE_END
+2B_01 BACKGROUND_OP BACKGROUND_OP2 \x94\x94 BACKGROUND_OP3 ^\x00\x00
  
 拓司\n　「だったらとっとと学校を出て、好きなところにいったらどう\n　　だ？」@
 御堂\n　「……」@
@@ -124,17 +130,19 @@ LOAD3 SCE085a_010\x1f\xac\x17\x00 FOB_SCE_END
 御堂\n　「あァ？」@
 なたね\n　「１時間後かもしれないし、１週間後かもしれない。\p１０年後\n　　かもしれないし、１分後かも……１秒後かもしれない」\
 
-\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1f\xf0\x17\x00\x0c\x02\x00\x00"\x1f\xd2\x02\x00 FOB_SCE_END
- \x1f\x00\x03\x00 OP_CMD 
-LOAD3 SCE085a_011\x1f\xa2\x19\x00 FOB_SCE_END
- 2B_01 \x1e\x00\x00\x00\x00\r\x00\x003B_03 \r\x02\x1e\x98\x94\x00\x0c\x00\x00\x00\x00"\x03\x1e\x00\x00
+\x00 DIALOGUE_END \xf0\x17 SEQ01
+\x1f\xd2\x02 FOB_SCE_END
+\x1f\x00\x03 OP_CMD 
+LOAD3 SCE085a_011\x1f\xa2\x19 FOB_SCE_END
+2B_01 BACKGROUND_OP BACKGROUND_OP2 \x98\x94 BACKGROUND_OP3 \x1e\x00\x00
  
 御堂\n　「……」@
 なたね\n　「……」@
 御堂\n　「と、とにかく実験室に入ろうじゃねえか。\p話はそれからだ」\
 
-\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1f\xe6\x19\x00\x0c\x02\x00\x00"\x1f\xd2\x02\x00 FOB_SCE_END
- \x1f\x00\x03\x00 OP_CMD \x1f\xd2\x02\x00 FOB_SCE_END
- 
-LOAD3 TextClose OP02 \xa4\x1a\x00 OP_CMD 
+\x00\x00\x00 DIALOGUE_END \xe6\x19 SEQ01
+\x1f\xd2\x02 FOB_SCE_END
+\x1f\x00\x03 OP_CMD \x1f\xd2\x02 FOB_SCE_END
+
+LOAD3 TextClose OP02 \xa4\x1a OP_CMD 
 END_FILE

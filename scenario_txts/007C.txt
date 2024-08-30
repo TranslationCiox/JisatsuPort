@@ -1,7 +1,7 @@
 START_FILE
 \x804\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`B#\x01\x00\x00\x00\xf6,\x00
-LOAD3 SCE007_001\x00\x1f\x06\x00\x00 FOB_SCE_END
- 2B_01 \x1e\x00\x00\x00\x00\r\x00\x003B_03 \r\x02\x1e\x90\x1a\x00\x0c\x00\x00\x00\x00"\x03s\x00\x00
+LOAD3 SCE007_001\x00\x1f\x06\x00 FOB_SCE_END
+2B_01 BACKGROUND_OP BACKGROUND_OP2 \x90\x1a BACKGROUND_OP3 s\x00\x00
  
 命じられるままに、早桃は拓司のベッドに歩み寄った。@
 ぎしり、と音を立ててベッドに片膝を乗せ、そこを支点にもう一\n方の脚を乗せる。@
@@ -13,15 +13,13 @@ LOAD3 SCE007_001\x00\x1f\x06\x00\x00 FOB_SCE_END
 ない。@
 ない。\
 
-\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00\x00 SET_GAMEMODE \x0c\x02\x00\x00"
-LOAD7 .\\Data\\Script\\TextFunc.Fob OP01 6\x02\x00 FOB_SCE_END
- 
-LOAD2 TextOn OP01 d\x02\x00 OP_CMD  \x1e\x00\x00\x00\x00\r\x00\x00\x1eJ\x00\x00\x0c\x02\x00\x00"
-LOAD6 .\\Data\\Script\\Bg.Fob OP03 \x9a\x02\x00 FOB_SCE_END
- 
-LOAD4 BgAutoFadeIn OP03 \xc4\x02\x00 OP_CMD 
-LOAD3 SCE007_002\x00\x1f\xe8\x02\x00 FOB_SCE_END
- 2B_01 \x1e\x00\x00\x00\x00\r\x00\x003B_03 \r\x02\x1e\x94\x1a\x00\x0c\x00\x00\x00\x00"\x03\xab\x00\x00
+\x00\x00\x00 DIALOGUE_END J\x00 SEQ01
+LOAD7 .\\Data\\Script\\TextFunc.Fob OP01 6\x02 FOB_SCE_END
+LOAD2 TextOn OP01 d\x02 OP_CMD  BACKGROUND_OP J\x00 SEQ01
+LOAD6 .\\Data\\Script\\Bg.Fob OP03 \x9a\x02 FOB_SCE_END
+LOAD4 BgAutoFadeIn OP03 \xc4\x02 OP_CMD 
+LOAD3 SCE007_002\x00\x1f\xe8\x02 FOB_SCE_END
+2B_01 BACKGROUND_OP BACKGROUND_OP2 \x94\x1a BACKGROUND_OP3 \xab\x00\x00
  
 義妹のほっそりとした指が、拓司の股間に触れた。@
 輪郭をなぞるように、ゆっくりと、パジャマの上を指先が蠢く。@
@@ -37,10 +35,11 @@ LOAD3 SCE007_002\x00\x1f\xe8\x02\x00 FOB_SCE_END
 ゆっくりと、上下にしごき始める。@
 コットンの柔らかい感触と、義妹の指の刺激に、拓司の息が一気\nに荒くなる。\
 
-\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1f,\x03\x00\x0c\x02\x00\x00"\x1f6\x02\x00 FOB_SCE_END
- \x1fd\x02\x00 OP_CMD 
-LOAD3 SCE007_003\x00\x1f\x12\x06\x00 FOB_SCE_END
- 2B_01 \x1e\x00\x00\x00\x00\r\x00\x003B_03 \r\x02\x1e\x98\x1a\x00\x0c\x00\x00\x00\x00"\x03q\x00\x00
+\x00\x00\x00 DIALOGUE_END ,\x03 SEQ01
+\x1f6\x02 FOB_SCE_END
+\x1fd\x02 OP_CMD 
+LOAD3 SCE007_003\x00\x1f\x12\x06 FOB_SCE_END
+2B_01 BACKGROUND_OP BACKGROUND_OP2 \x98\x1a BACKGROUND_OP3 q\x00\x00
  
 拓司\n　「……早桃」@
 早桃\n　「おにいちゃんにいやらしい目で見られて、早桃もいやらしい\n　　女の子になっちゃった。@
@@ -49,16 +48,18 @@ LOAD3 SCE007_003\x00\x1f\x12\x06\x00 FOB_SCE_END
 　　ママとパパに見つからないところで、おにいちゃんがしたい\n　　ときに。@
 　　お風呂で。\pトイレで。\pおこたのなかで。\pおにいちゃんの机の\n　　下で。\p早桃のクローゼットのなかで……」\
 
-\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1fV\x06\x00\x0c\x02\x00\x00"\x1f6\x02\x00 FOB_SCE_END
- \x1fd\x02\x00 OP_CMD 
-LOAD3 SCE007_004\x00\x1fT\x08\x00 FOB_SCE_END
- 2B_01 \x1e\x00\x00\x00\x00\r\x00\x003B_03 \r\x02\x1e\x9c\x1a\x00\x0c\x00\x00\x00\x00"\x03"\x00\x00
+\x00 DIALOGUE_END V\x06 SEQ01
+\x1f6\x02 FOB_SCE_END
+\x1fd\x02 OP_CMD 
+LOAD3 SCE007_004\x00\x1fT\x08 FOB_SCE_END
+2B_01 BACKGROUND_OP BACKGROUND_OP2 \x9c\x1a BACKGROUND_OP3 "\x00\x00
  
 ぺちゃぺちゃと唾液が絡んだようなしゃべりかたで早桃は続ける。\n\p性器に指を絡めて奉仕しながらみだらな言葉で義兄の興奮を誘う。\n\w\z
-\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1f\x98\x08\x00\x0c\x02\x00\x00"\x1f6\x02\x00 FOB_SCE_END
- \x1fd\x02\x00 OP_CMD 
-LOAD3 SCE007_005\x00\x1fZ\t\x00 FOB_SCE_END
- 2B_01 \x1e\x00\x00\x00\x00\r\x00\x003B_03 \r\x02\x1e\xa0\x1a\x00\x0c\x00\x00\x00\x00"\x03\x8d\x00\x00
+\x00\x00\x00 DIALOGUE_END \x98\x08 SEQ01
+\x1f6\x02 FOB_SCE_END
+\x1fd\x02 OP_CMD 
+LOAD3 SCE007_005\x00\x1fZ\t FOB_SCE_END
+2B_01 BACKGROUND_OP BACKGROUND_OP2 \xa0\x1a BACKGROUND_OP3 \x8d\x00\x00
  
 早桃\n　「もうオナニーなんてする必要ないよ。\pエッチな本も買わな\n　　くていい。@
 　　だって、早桃のおててとおくちとおっぱいとおま○ことおし\n　　りで……溜まったときに処理できるんだよ。@
@@ -68,10 +69,11 @@ LOAD3 SCE007_005\x00\x1fZ\t\x00 FOB_SCE_END
 　　……よかったねぇ、おにいちゃん。\pこんなにエッチな義妹\n　　がいて。@
 　　あんまりいないと思うよ、こんなふうに、性欲処理してくれ\n　　る義妹って。」\
 
-\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1f\x9e\t\x00\x0c\x02\x00\x00"\x1f6\x02\x00 FOB_SCE_END
- \x1fd\x02\x00 OP_CMD 
-LOAD3 SCE007_006\x00\x1f\x0c\x0c\x00 FOB_SCE_END
- 2B_01 \x1e\x00\x00\x00\x00\r\x00\x003B_03 \r\x02\x1e\xa4\x1a\x00\x0c\x00\x00\x00\x00"\x03}\x00\x00
+\x00\x00\x00 DIALOGUE_END \x9e\t SEQ01
+\x1f6\x02 FOB_SCE_END
+\x1fd\x02 OP_CMD 
+LOAD3 SCE007_006\x00\x1f\x0c\x0c FOB_SCE_END
+2B_01 BACKGROUND_OP BACKGROUND_OP2 \xa4\x1a BACKGROUND_OP3 }\x00\x00
  
 拓司\n　「う……早桃」@
 早桃\n　「見せて。おにいちゃんが早桃のパンティに射精するところ」@
@@ -82,10 +84,11 @@ LOAD3 SCE007_006\x00\x1f\x0c\x0c\x00 FOB_SCE_END
 精液で汚されたパンティを、見せつけるように広げる。@
 ちょうどクロッチの部分に、たっぷりと、精液が溜まっている。\
 
-\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1fP\x0c\x00\x0c\x02\x00\x00"\x1f6\x02\x00 FOB_SCE_END
- \x1fd\x02\x00 OP_CMD 
-LOAD3 SCE007_007\x00\x1f~\x0e\x00 FOB_SCE_END
- 2B_01 \x1e\x00\x00\x00\x00\r\x00\x003B_03 \r\x02\x1e\xa8\x1a\x00\x0c\x00\x00\x00\x00"\x03\xaf\x00\x00
+\x00\x00\x00 DIALOGUE_END P\x0c SEQ01
+\x1f6\x02 FOB_SCE_END
+\x1fd\x02 OP_CMD 
+LOAD3 SCE007_007\x00\x1f~\x0e FOB_SCE_END
+2B_01 BACKGROUND_OP BACKGROUND_OP2 \xa8\x1a BACKGROUND_OP3 \xaf\x00\x00
  
 早桃\n　「こんなにいっぱい。\pおにいちゃん、すごく溜まってたんだ\n　　ねえ。\p義妹の前でこんなにどくどく精液出しちゃって……\n　　恥ずかしくないの？\p　くすくす……」@
 拓司\n　「はあ、はあ……早桃……」@
@@ -95,10 +98,11 @@ LOAD3 SCE007_007\x00\x1f~\x0e\x00 FOB_SCE_END
 クロッチにできたたっぷりとした精液だまりをこぼさないよう、\nあるいは義兄に見せつけるよう、そろり、そろりとパンティを\nひきあげていく。@
 パンティと手はネグリジェの裾に再び消え、そして手だけが裾\nから引き出された。\
 
-\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1f\xc2\x0e\x00\x0c\x02\x00\x00"\x1f6\x02\x00 FOB_SCE_END
- \x1fd\x02\x00 OP_CMD 
-LOAD3 SCE007_008\x00\x1f\xb8\x11\x00 FOB_SCE_END
- 2B_01 \x1e\x00\x00\x00\x00\r\x00\x003B_03 \r\x02\x1e\xac\x1a\x00\x0c\x00\x00\x00\x00"\x03u\x00\x00
+\x00 DIALOGUE_END \xc2\x0e SEQ01
+\x1f6\x02 FOB_SCE_END
+\x1fd\x02 OP_CMD 
+LOAD3 SCE007_008\x00\x1f\xb8\x11 FOB_SCE_END
+2B_01 BACKGROUND_OP BACKGROUND_OP2 \xac\x1a BACKGROUND_OP3 u\x00\x00
  
 早桃\n　「んくっ……はあ……穿き終わったよ。\pおにいちゃんの精液、\n　　いま、早桃のパンティとおま○このあいだに、べったりひっ\n　　ついてるよ。\pぬるぬるして、あったかい。@
 　　おたまじゃくしがいっぱい。\pねえ、おま○このなかに入っち\n　　ゃったらどうしよう？\p　赤ちゃんできちゃうのかなあ……義\n　　兄妹で妊娠しちゃうなんて、パパとママ、驚くだろうなあ…\n　　…」@
@@ -106,20 +110,22 @@ LOAD3 SCE007_008\x00\x1f\xb8\x11\x00 FOB_SCE_END
 早桃\n　「見たいの？」@
 拓司\n　「ああ……見たい」\
 
-\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1f\xfc\x11\x00\x0c\x02\x00\x00"\x1f6\x02\x00 FOB_SCE_END
- \x1fd\x02\x00 OP_CMD 
-LOAD3 SCE007_009\x00\x1f\n\x14\x00 FOB_SCE_END
- 2B_01 \x1e\x00\x00\x00\x00\r\x00\x003B_03 \r\x02\x1e\xb0\x1a\x00\x0c\x00\x00\x00\x00"\x03p\x00\x00
+\x00 DIALOGUE_END \xfc\x11 SEQ01
+\x1f6\x02 FOB_SCE_END
+\x1fd\x02 OP_CMD 
+LOAD3 SCE007_009\x00\x1f\n\x14 FOB_SCE_END
+2B_01 BACKGROUND_OP BACKGROUND_OP2 \xb0\x1a BACKGROUND_OP3 p\x00\x00
  
 早桃\n　「ほんと、いやらしいおにいちゃん。\pもしかして、いつも早\n　　桃のパンティ、オカズにしてたの？\p　おち○ちんをこすりつ\n　　けて、汚してたの？\p　精子いっぱい出して、それを何も知ら\n　　ない義妹に穿かせて興奮してたの？@
 　　そうなんだあ……だから早桃、こんなにエッチになっちゃっ\n　　たんだ。@
 　　おにいちゃんの精液がしみ込んだパンティ穿いてたから、こ\n　　んなにエッチになっちゃったんだ……@
 　　いいよ。\p見せてあげる」\
 
-\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1fN\x14\x00\x0c\x02\x00\x00"\x1f6\x02\x00 FOB_SCE_END
- \x1fd\x02\x00 OP_CMD 
-LOAD3 SCE007_010\x00\x1fH\x16\x00 FOB_SCE_END
- 2B_01 \x1e\x00\x00\x00\x00\r\x00\x003B_03 \r\x02\x1e\xb4\x1a\x00\x0c\x00\x00\x00\x00"\x03l\x00\x00
+\x00\x00\x00 DIALOGUE_END N\x14 SEQ01
+\x1f6\x02 FOB_SCE_END
+\x1fd\x02 OP_CMD 
+LOAD3 SCE007_010\x00\x1fH\x16 FOB_SCE_END
+2B_01 BACKGROUND_OP BACKGROUND_OP2 \xb4\x1a BACKGROUND_OP3 l\x00\x00
  
 早桃は拓司をまたいだまま、二、三歩ベッドの上を歩くと、今度\nは義兄の首のあたりで腰を下ろして、膝立ちになった。@
 拓司は義妹の腿にはさまれた。@
@@ -130,10 +136,11 @@ LOAD3 SCE007_010\x00\x1fH\x16\x00 FOB_SCE_END
 べったりと、クロッチに薄黄色い染みができている。@
 精液の匂いと、早桃の体温がむっと鼻をつく。\
 
-\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1f\x8c\x16\x00\x0c\x02\x00\x00"\x1f6\x02\x00 FOB_SCE_END
- \x1fd\x02\x00 OP_CMD 
-LOAD3 SCE007_011\x00\x1fv\x18\x00 FOB_SCE_END
- 2B_01 \x1e\x00\x00\x00\x00\r\x00\x003B_03 \r\x02\x1e\xb8\x1a\x00\x0c\x00\x00\x00\x00"\x03\x99\x00\x00
+\x00 DIALOGUE_END \x8c\x16 SEQ01
+\x1f6\x02 FOB_SCE_END
+\x1fd\x02 OP_CMD 
+LOAD3 SCE007_011\x00\x1fv\x18 FOB_SCE_END
+2B_01 BACKGROUND_OP BACKGROUND_OP2 \xb8\x1a BACKGROUND_OP3 \x99\x00\x00
  
 早桃\n　「ずっと見たかったんでしょう？\p　早桃のここ。@
 　　おにいちゃんの精液でねとねとのおま○こ」@
@@ -145,10 +152,11 @@ LOAD3 SCE007_011\x00\x1fv\x18\x00 FOB_SCE_END
 そのまま、精液でじっとりと湿った性器を、クロッチの上からこ\nすりたてる。@
 にちゃにちゃと精液が泡立つ音がする。\
 
-\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1f\xba\x18\x00\x0c\x02\x00\x00"\x1f6\x02\x00 FOB_SCE_END
- \x1fd\x02\x00 OP_CMD 
-LOAD3 SCE007_012\x00\x1fX\x1b\x00 FOB_SCE_END
- 2B_01 \x1e\x00\x00\x00\x00\r\x00\x003B_03 \r\x02\x1e\xbc\x1a\x00\x0c\x00\x00\x00\x00"\x03`\x00\x00
+\x00\x00\x00 DIALOGUE_END \xba\x18 SEQ01
+\x1f6\x02 FOB_SCE_END
+\x1fd\x02 OP_CMD 
+LOAD3 SCE007_012\x00\x1fX\x1b FOB_SCE_END
+2B_01 BACKGROUND_OP BACKGROUND_OP2 \xbc\x1a BACKGROUND_OP3 `\x00\x00
  
 早桃\n　「はあ、はあ……ねえ、おにいちゃんのパンツも頂戴」@
 \n乞われるまま、拓司はズボンをおろし、脚をばたつかせてブリー\nフを抜き取った。@
@@ -156,11 +164,13 @@ LOAD3 SCE007_012\x00\x1fX\x1b\x00 FOB_SCE_END
 義兄からブリーフを受け取ると、それを鼻先に持っていき、くん\nくんと匂いを嗅いだ。@
 嗅ぎながら、開いている方の手で、再び股間をいじり始める。\
 
-\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1f\x9c\x1b\x00\x0c\x02\x00\x00"\x1f6\x02\x00 FOB_SCE_END
- \x1fd\x02\x00 OP_CMD  \x1e\x00\x00\x00\x00\r\x00\x00\x1eK\x00\x00\x0c\x02\x00\x00"\x1f\x9a\x02\x00 FOB_SCE_END
- \x1f\xc4\x02\x00 OP_CMD 
-LOAD3 SCE007_013\x00\x1f\x8a\x1d\x00 FOB_SCE_END
- 2B_01 \x1e\x00\x00\x00\x00\r\x00\x003B_03 \r\x02\x1e\xc0\x1a\x00\x0c\x00\x00\x00\x00"\x03x\x00\x00
+\x00 DIALOGUE_END \x9c\x1b SEQ01
+\x1f6\x02 FOB_SCE_END
+\x1fd\x02 OP_CMD  BACKGROUND_OP K\x00 SEQ01
+\x1f\x9a\x02 FOB_SCE_END
+\x1f\xc4\x02 OP_CMD 
+LOAD3 SCE007_013\x00\x1f\x8a\x1d FOB_SCE_END
+2B_01 BACKGROUND_OP BACKGROUND_OP2 \xc0\x1a BACKGROUND_OP3 x\x00\x00
  
 早桃\n　「すごい匂い……。\p早桃も、おにいちゃんのパンツでオナ\n　　ニーしてたんだよ。\p知ってた？@
 　　おしっこと汗と精液の匂いがいっぱいこびりついたパンツの\n　　匂いをこうやって……嗅ぎながら……こんなふうに……オナ\n　　ニーしてたんだよ」@
@@ -169,10 +179,11 @@ LOAD3 SCE007_013\x00\x1f\x8a\x1d\x00 FOB_SCE_END
 拓司は義妹の開いた太股のあいだを通して自分のペ○スを握り、\nしごき始めた。@
 \n早桃\n　「……ぺちゃ…ぺちゃ…ぢゅるっ……ぢゅりゅりゅっ……」\
 
-\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1f\xce\x1d\x00\x0c\x02\x00\x00"\x1f6\x02\x00 FOB_SCE_END
- \x1fd\x02\x00 OP_CMD 
-LOAD3 SCE007_014\x00\x1f\xe8\x1f\x00 FOB_SCE_END
- 2B_01 \x1e\x00\x00\x00\x00\r\x00\x003B_03 \r\x02\x1e\xc4\x1a\x00\x0c\x00\x00\x00\x00"\x03T\x00\x00
+\x00 DIALOGUE_END \xce\x1d SEQ01
+\x1f6\x02 FOB_SCE_END
+\x1fd\x02 OP_CMD 
+LOAD3 SCE007_014\x00\x1f\xe8\x1f FOB_SCE_END
+2B_01 BACKGROUND_OP BACKGROUND_OP2 \xc4\x1a BACKGROUND_OP3 T\x00\x00
  
 義妹が自分のブリーフを口に入れて、しゃぶっている。@
 下品な音を立てながら……義兄にオナニーを見せつけながら……\n興奮するなというほうが無理だった。@
@@ -180,10 +191,11 @@ LOAD3 SCE007_014\x00\x1f\xe8\x1f\x00 FOB_SCE_END
 パンティの隙間から精液がトロトロあふれて、細い指に絡まって\n糸を引く。@
 太股の付け根が精液でぬるぬると光っている。\
 
-\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1f, \x00\x0c\x02\x00\x00"\x1f6\x02\x00 FOB_SCE_END
- \x1fd\x02\x00 OP_CMD 
-LOAD3 SCE007_015\x00\x1f\xb6!\x00 FOB_SCE_END
- 2B_01 \x1e\x00\x00\x00\x00\r\x00\x003B_03 \r\x02\x1e\xc8\x1a\x00\x0c\x00\x00\x00\x00"\x03\x8d\x00\x00
+\x00 DIALOGUE_END ,  SEQ01
+\x1f6\x02 FOB_SCE_END
+\x1fd\x02 OP_CMD 
+LOAD3 SCE007_015\x00\x1f\xb6! FOB_SCE_END
+2B_01 BACKGROUND_OP BACKGROUND_OP2 \xc8\x1a BACKGROUND_OP3 \x8d\x00\x00
  
 早桃\n　「おにいちゃんと早桃、変態義兄妹だよね……」@
 拓司\n　「……ああ、そうだ。変態だ……」@
@@ -195,10 +207,11 @@ LOAD3 SCE007_015\x00\x1f\xb6!\x00 FOB_SCE_END
 \n拓司の腰が跳ね上がり、二回目とは思えない量の精液が迸った。@
 精液は弧を描いて飛び、腰まで伸びた早桃の髪の毛をべったりと\n汚した。\
 
-\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1f\xfa!\x00\x0c\x02\x00\x00"\x1f6\x02\x00 FOB_SCE_END
- \x1fd\x02\x00 OP_CMD 
-LOAD3 SCE007_016\x00\x1fh$\x00 FOB_SCE_END
- 2B_01 \x1e\x00\x00\x00\x00\r\x00\x003B_03 \r\x02\x1e\xcc\x1a\x00\x0c\x00\x00\x00\x00"\x03\x9c\x00\x00
+\x00 DIALOGUE_END \xfa! SEQ01
+\x1f6\x02 FOB_SCE_END
+\x1fd\x02 OP_CMD 
+LOAD3 SCE007_016\x00\x1fh$ FOB_SCE_END
+2B_01 BACKGROUND_OP BACKGROUND_OP2 \xcc\x1a BACKGROUND_OP3 \x9c\x00\x00
  
 早桃\n　「いくらでも出るんだね。\pからだ、おかしいんじゃないの？\n　　\pほんとうは赤ちゃんを作るための液で、こんなふうに女の\n　　子にひっかけるためのものじゃないんだよ？@
 　　大丈夫？\p　まだ出る？\p　駄目だよ、もっとがんばってくれな\n　　くちゃ。\pこれから早桃のお腹の中にいっぱいいっぱい出さな\n　　くちゃいけないんだから。@
@@ -209,10 +222,11 @@ LOAD3 SCE007_016\x00\x1fh$\x00 FOB_SCE_END
 \n早桃が小さく笑った。@
 徐々に笑い声が大きくなっていく。\
 
-\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1f\xac$\x00\x0c\x02\x00\x00"\x1f6\x02\x00 FOB_SCE_END
- \x1fd\x02\x00 OP_CMD 
-LOAD3 SCE007_017\x00\x1fV'\x00 FOB_SCE_END
- 2B_01 \x1e\x00\x00\x00\x00\r\x00\x003B_03 \r\x02\x1e\xd0\x1a\x00\x0c\x00\x00\x00\x00"\x03\xb4\x00\x00
+\x00\x00\x00 DIALOGUE_END \xac$ SEQ01
+\x1f6\x02 FOB_SCE_END
+\x1fd\x02 OP_CMD 
+LOAD3 SCE007_017\x00\x1fV' FOB_SCE_END
+2B_01 BACKGROUND_OP BACKGROUND_OP2 \xd0\x1a BACKGROUND_OP3 \xb4\x00\x00
  
 拓司\n　「……やめろ」@
 早桃\n　「ワハ、ワハハハハ、ハハハハハハハ！」@
@@ -225,14 +239,14 @@ LOAD3 SCE007_017\x00\x1fV'\x00 FOB_SCE_END
 『灰色』にあわせて、最後にはさながら踊っているかのごとく、\n早桃は身体をくねらせ始めた。@
 \n早桃\n　「ウワハハハハハハハザザザ……ザザッ……ザアザザザ……ザ\n　　アアアアア……ザアザアアアアアアア……」\
 
-\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1f\x9a'\x00\x0c\x02\x00\x00"\x1f6\x02\x00 FOB_SCE_END
- \x1fd\x02\x00 OP_CMD  \x1e\x00\x00\x00\x00\r\x00\x00\x1e\xc8\x00\x00\x0c\x02\x00\x00"\x1f\x9a\x02\x00 FOB_SCE_END
- \x1f\xc4\x02\x00 OP_CMD 
-LOAD6 .\\Data\\Script\\Bgm.Fob OP02 \xd8*\x00 FOB_SCE_END
- 
-LOAD2 StopCD OP01 \x02+\x00 OP_CMD 
-LOAD3 SCE007_018\x00\x1f\x1e+\x00 FOB_SCE_END
- 2B_01 \x1e\x00\x00\x00\x00\r\x00\x003B_03 \r\x02\x1e\xd4\x1a\x00\x0c\x00\x00\x00\x00"\x03L\x00\x00
+\x00\x00\x00 DIALOGUE_END \x9a' SEQ01
+\x1f6\x02 FOB_SCE_END
+\x1fd\x02 OP_CMD  BACKGROUND_OP \xc8\x00 SEQ01
+\x1f\x9a\x02 FOB_SCE_END
+\x1f\xc4\x02 OP_CMD LOAD6 .\\Data\\Script\\Bgm.Fob OP02 \xd8* FOB_SCE_END
+LOAD2 StopCD OP01 \x02+ OP_CMD 
+LOAD3 SCE007_018\x00\x1f\x1e+ FOB_SCE_END
+2B_01 BACKGROUND_OP BACKGROUND_OP2 \xd4\x1a BACKGROUND_OP3 L\x00\x00
  
 拓司は両手で耳を覆った。@
 そして目を閉じた。@
@@ -246,8 +260,9 @@ LOAD3 SCE007_018\x00\x1f\x1e+\x00 FOB_SCE_END
 \n現実に戻ったのだ。@
 おそらくは。\
 
-\x00\x00\x00 \x1e\x00\x00\x00\x00\r\x00\x00\x1fb+\x00\x0c\x02\x00\x00"\x1f6\x02\x00 FOB_SCE_END
- \x1fd\x02\x00 OP_CMD \x1f6\x02\x00 FOB_SCE_END
- 
-LOAD3 TextClose OP02 \xd8,\x00 OP_CMD 
+\x00\x00\x00 DIALOGUE_END b+ SEQ01
+\x1f6\x02 FOB_SCE_END
+\x1fd\x02 OP_CMD \x1f6\x02 FOB_SCE_END
+
+LOAD3 TextClose OP02 \xd8, OP_CMD 
 END_FILE
