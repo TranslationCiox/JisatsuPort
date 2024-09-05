@@ -100,7 +100,7 @@ patterns = [
     {
         "pattern": [b'03 00 61 00 00 00'],
         # BgOn, PlayCD, TextOn
-        "string": "\nLOAD8 "
+        "string": "\nLOAD9 "
     },
 
     ########################### 1 Byte ###########################
