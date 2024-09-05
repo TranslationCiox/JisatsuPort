@@ -3,17 +3,27 @@ import re
 
 patterns = [
     {
-        "pattern": [b'00 0c 02 00 00 22 1f'],
+        "pattern": [b'5C 77 5C 6E 5C 7A'],
+        #
+        "string": "\\\nEND_JAPANESE\n"
+    },
+    {
+        "pattern": [b'5c 65'],
+        #
+        "string": "\nSTART_JAPANESE\n"
+    },
+    {
+        "pattern": [b'00 00 0c 00 02 00 00 00 22 00 1f'],
         #
         "string": " CALL1 "
     },
     {
-        "pattern": [b'00 0c 02 00 00 22'],
+        "pattern": [b'00 0c 00 02 00 00 00 22 00'],
         #
         "string": " CALL2 "
     },
     {
-        "pattern": [b'00 0c 00 00 00 00 22'],
+        "pattern": [b'00 00 0c 00 00 00 00 00 22'],
         #
         "string": " CALL3 "
     },
@@ -23,7 +33,7 @@ patterns = [
         "string": " CALL4 "
     },
     {
-        "pattern": [b'00 1e 02 00 00 05'],
+        "pattern": [b'00 00 00 1e 00 02 00 00 00 35 00'],
         #
         "string": " CALL5 "
     },
@@ -33,40 +43,69 @@ patterns = [
         "string": " CALL6 "
     },
     {
-        "pattern": [b'00 1e 02 00 00'],
+        "pattern": [b'00 00 1e 00 02 00 00 00'],
         #
         "string": " CALL7 "
     },
     {
-        "pattern": [b'ef 21 1e 00 00 00 00 0d 00 00 1e'],
+        "pattern": [b'ef 00 21 00 1e 00 00 00 00 00 0d 00 00 00 1e 00'],
         #
-        "string": "|n SEQ1"
+        "string": "\nSEQ1 "
     },
     {
-        "pattern": [b'20 1e 00 00 00 00 0d 00 00 1e'],
+        "pattern": [b'00 1e 00 00 00 00 00 0d 00 00 00 1e 00'],
         #
-        "string": "|n SEQ2"
+        "string": "\nSEQ2 "
     },
     {
-        "pattern": [b'20 1e 00 00 00 00 0d 00 00'],
+        "pattern": [b'20 00 1e 00 00 00 00 00 0d 00 00'],
         #
-        "string": "|n SEQ3"
+        "string": "\nSEQ3 "
     },
     {
-        "pattern": [b'00 0d 02 1e'],
+        "pattern": [b'00 0d 00 02 00 1e 00'],
         #
         "string": " SEQ4 "
     },
     {
-        "pattern": [b'03'],
+        "pattern": [b'03 00 02 00 00 00'],
         # BgOn, PlayCD, TextOn
-        "string": "|n LOAD"
+        "string": "\nLOAD2 "
+    },
+    {
+        "pattern": [b'03 00 03 00 00 00'],
+        # BgOn, PlayCD, TextOn
+        "string": "\nLOAD3 "
+    },
+    {
+        "pattern": [b'03 00 04 00 00 00'],
+        # BgOn, PlayCD, TextOn
+        "string": "\nLOAD4 "
+    },
+    {
+        "pattern": [b'03 00 06 00 00 00'],
+        # BgOn, PlayCD, TextOn
+        "string": "\nLOAD6 "
+    },
+    {
+        "pattern": [b'03 00 07 00 00 00'],
+        # BgOn, PlayCD, TextOn
+        "string": "\nLOAD7 "
+    },
+    {
+        "pattern": [b'03 00 4F 00 00 00'],
+        # BgOn, PlayCD, TextOn
+        "string": "\nLOAD8 "
+    },
+    {
+        "pattern": [b'03 00 61 00 00 00'],
+        # BgOn, PlayCD, TextOn
+        "string": "\nLOAD8 "
     },
 
     ########################### 1 Byte ###########################
-
     {
-        "pattern": [b'81 1f'],
+        "pattern": [b'00 73 76 81 1f'],
         #
         "string": " REF1 "
     },
@@ -76,7 +115,7 @@ patterns = [
         "string": " REF2 "
     },
     {
-        "pattern": [b'73 76 81 1f'],
+        "pattern": [b'36 74 81 1f'],
         #
         "string": " REF3 "
     },
@@ -86,9 +125,9 @@ patterns = [
         "string": " REF4 "
     },
     {
-        "pattern": [b'36 74 81 1f'],
+        "pattern": [b'81 1f'],
         #
-        "string": " REF5 "
+        "string": " REF3 "
     },
     {
         "pattern": [b'00 1f'],
@@ -108,20 +147,26 @@ patterns = [
 
     ########################### Special ###########################
     {
-        "pattern": [b'01 00 00 00 73 74 61 72 74 00 ef 00'],
+        "pattern": [b'5C 70 5C 6E'],
         # Start the script
-        "string": " START_FILE "
+        "string": "@\n"
+    },
+    {
+        "pattern": [b'01 00 00 00 73 74 61 72 74 00 ef 00 69 01 43 00'],
+        # Start the script
+        "string": "START_FILE "
     },
     {
         "pattern": [b'36 00 f1 00'],
         # End the script
-        "string": "|n END_FILE"
+        "string": "\nEND_FILE"
     },
     {
-        "pattern": [b'01 00 00 00 00 00 00 00 00 00 00'],
+        "pattern": [b'01 00 00 00 00 00 00 00 00 00 00 00'],
         # Often between sequences after START_FILE
-        "string": "|n HEADER"
+        "string": "\nHEADER "
     },
+
 ]
 
 def process_files(input_dir="1.original_files"):
@@ -160,17 +205,22 @@ def replace_bytecode_patterns(file_bytecode_dict, patterns):
 
 
 def format_bytecode_for_writing(bytecode):
-    # Convert bytecode to a hex representation with space-separated bytes
-    # hex_representation = ' '.join(f'{byte:02x}' for byte in bytecode)
-    for byte in bytecode:
-        print(byte)
-    quit(1)
+    string_code = []
+    bytecode_list = bytecode.split(b'\n')
+    is_japanese = False
+    for i in bytecode_list:
+        if i == b'END_JAPANESE':
+            is_japanese = False
 
+        if is_japanese:
+            string_code.append(str(i.decode('shift_jis', errors='replace')))
+        else:
+            string_code.append(str(i)[2:-1])
 
-    # Replace '|n' with new lines if present in bytecode (assuming |n is part of the bytecode string)
-    formatted_bytecode = bytecode.replace('|n', '\n')
+        if i == b'START_JAPANESE':
+            is_japanese = True
+    return string_code
 
-    return formatted_bytecode
 
 def write_modified_files(file_bytecode_dict, output_dir="2.modified_files"):
     if not os.path.exists(output_dir):
@@ -189,11 +239,10 @@ def write_modified_files(file_bytecode_dict, output_dir="2.modified_files"):
 
         # Write the formatted bytecode to the file with UTF-8 encoding
         with open(output_path, "w", encoding='utf-8') as f:
-            f.write(formatted_bytecode)
+            for i in formatted_bytecode:
+                f.write(i + "\n")
 
 
-
-# Example usage
 file_bytecode_dict = process_files()
 
 # Call the function to replace patterns
@@ -202,6 +251,3 @@ modified_files_dict = replace_bytecode_patterns(file_bytecode_dict, patterns)
 # Write the modified files to the new directory
 write_modified_files(modified_files_dict)
 
-# Example of how you can print the modified dictionary
-for file_path, modified_bytecode in modified_files_dict.items():
-    print(f"File: {file_path}, Modified Bytecode: {modified_bytecode}")
