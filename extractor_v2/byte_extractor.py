@@ -127,7 +127,7 @@ patterns = [
     {
         "pattern": [b'81 1f'],
         #
-        "string": " REF3 "
+        "string": " REF5 "
     },
     {
         "pattern": [b'00 1f'],
@@ -218,7 +218,7 @@ def format_bytecode_for_writing(bytecode):
             string_code.append(str(i)[2:-1])
 
         if i == b'START_JAPANESE':
-            is_japanese = True
+            is_japanese = False
     return string_code
 
 

@@ -1,10 +1,10 @@
 START_FILE \x87U\x00\x00
 HEADER `B#\x01\x00\x00\x00\x00|C\x00\x00 
 SEQ2 \x00\x00\x00 CALL2 
-LOAD6 .\\Data\\Script\\Data.Fob\x00 REF3 \x00 \x00 CALL7 
+LOAD6 .\\Data\\Script\\Data.Fob\x00 REF5 \x00 \x00 CALL7 
 LOAD3 SetGameMode REF6 \x00J CALL5 
-LOAD7 .\\Data\\Script\\TextFunc.Fob\x00 REF3 \x00j\x00 CALL7 
-LOAD6 ResetFunctionNormalFlag REF6 \x00\x98 CALL5  REF7 \x00 \x00 CALL7 \x03\x00\x05\x00\x00\x00InitGameFlagBuffer\x00 REF3 \x00\xd0 CALL5 
+LOAD7 .\\Data\\Script\\TextFunc.Fob\x00 REF5 \x00j\x00 CALL7 
+LOAD6 ResetFunctionNormalFlag REF6 \x00\x98 CALL5  REF7 \x00 \x00 CALL7 \x03\x00\x05\x00\x00\x00InitGameFlagBuffer\x00 REF5 \x00\xd0 CALL5 
 LOAD6 .\\Data\\Script\\Bg.Fob\x00 REF3 \x00\xf8\x00 CALL7 
 LOAD3 ClearBgID\x00 REF4 \x00"\x01 CALL7 5\x00 
 SEQ2 \xc8\x00 CALL1 \x00\xf8\x00 CALL7 
