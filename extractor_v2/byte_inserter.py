@@ -199,6 +199,9 @@ def hex_string_to_bytes(bytecode):
     # Define a regex pattern to match \\t
     tab_pattern = r'\\t'
 
+    # Define a regex pattern to match \\t
+    car_pattern = r'\\r'
+
     # Function to convert matched hex code to actual byte value
     def hex_to_byte(match):
         hex_value = match.group(1)  # Extract the hex digits
@@ -209,6 +212,7 @@ def hex_string_to_bytes(bytecode):
 
     # Replace \\t with actual tab character
     result = re.sub(tab_pattern, '\t', result).replace('\\\\', '\\')
+    result = re.sub(car_pattern, '\r', result).replace('\\\\', '\\')
 
     return result.encode('latin1')
 
@@ -236,7 +240,6 @@ file_bytecode_dict = process_files()
 # Apply the reverse replacement for each file's bytecode
 for file_path, bytecode in file_bytecode_dict.items():
     reversed_bytecode = reverse_replace_patterns(bytecode, patterns)
-    print(reversed_bytecode)
     hexstring_sanitized_bytecode = hex_string_to_bytes(reversed_bytecode)
     file_bytecode_dict[file_path] = hexstring_sanitized_bytecode
 
