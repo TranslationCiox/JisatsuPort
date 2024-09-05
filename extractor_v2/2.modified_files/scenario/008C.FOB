@@ -9,7 +9,7 @@ LOAD3 SCE008_001\x00 REF6 \x00\xb4\x00 CALL7
 SEQ1 \x8c\x01\x00 SEQ4  \x1c CALL3 \x00\x03\x001\x00\x00\x00
 START_JAPANESE
 拓司\n　「……これが、おれの願望なのか？\p　違う。\pこんなこと、\n　　おれは望んじゃいない」@
-\n拓司は両手で顔を覆った。\pそしてひとつ、大きなためいきの塊\nを吐き出してから目を閉じた。\
+\n拓司は両手で顔を覆った。\pそしてひとつ、大きなためいきの塊\nを吐き出してから目を閉じた。
 END_JAPANESE
 \x00\x00
 SEQ3  REF6 \x00\xf8\x00\x00 CALL2 
@@ -29,7 +29,7 @@ START_JAPANESE
 　汗を吸ったベッドカバー。@
 　のしかかるような天井板。@
 \n現実に戻ったのだ。@
-おそらくは。\
+おそらくは。
 END_JAPANESE
 \x00\x00\x00\x00
 SEQ3  REF6 \x00\xe0\x02 CALL1 \x00\xdc\x01 CALL7  REF7 \x00

@@ -5,7 +5,7 @@ patterns = [
     {
         "pattern": [b'5C 77 5C 6E 5C 7A'],
         #
-        "string": "\\\nEND_JAPANESE\n"
+        "string": "\nEND_JAPANESE\n"
     },
     {
         "pattern": [b'5c 65'],

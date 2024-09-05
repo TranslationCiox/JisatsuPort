@@ -5,7 +5,7 @@ LOAD2 StopCD\x00 REF3 \x000 CALL5
 LOAD3 SCE215_001\x00 REF6 \x00L\x00 CALL7 
 SEQ1 \x8c\x01\x00 SEQ4 \x90_\x01\x00\x0c\x00\x00\x00\x00\x00"\x00\x03\x00\x11\x00\x00\x00
 START_JAPANESE
-\n\n\n\n\n\n\n\n\n\n　　　　　　　　　　　　　『７日目』\
+\n\n\n\n\n\n\n\n\n\n　　　　　　　　　　　　　『７日目』
 END_JAPANESE
 \x00\x00\x00\x00
 SEQ3  REF6 \x00\x90\x00\x00 CALL2 
@@ -19,7 +19,7 @@ START_JAPANESE
 目立った衝突はない。@
 早桃は風邪からほぼ回復したようだ。@
 昼間から横になって、動かない人間が増えた。@
-言葉も少ない。\
+言葉も少ない。
 END_JAPANESE
 \x00\x00
 SEQ3  REF6 \x00\xc4\x01 CALL1 \x00\xf4\x00 CALL7  REF7 \x00"\x01 CALL7 5 REF6 \x00\xf4\x00 CALL7 

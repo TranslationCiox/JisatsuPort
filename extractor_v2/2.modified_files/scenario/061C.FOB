@@ -14,7 +14,7 @@ START_JAPANESE
 拓司\n　「……？」@
 なたね\n　「あの子は深く憑かれすぎた。\p単純に運命として受け入れるに\n　　は、大きくなりすぎている」@
 拓司\n　「……何の話だ？」@
-なたね\n　「死の話」\
+なたね\n　「死の話」
 END_JAPANESE
 \x00\x00
 SEQ3  REF6 \x00\xde\x00\x00 CALL2 
@@ -28,7 +28,7 @@ LOAD3 WaitTime REF1 \x00B\x03 CALL7 5\x00
 LOAD3 SCE061_002\x00 REF6 \x00b\x03 CALL7 
 SEQ1 \x8c\x01\x00 SEQ4 \xf4n CALL3 \x00\x03\x00\x12\x00\x00\x00
 START_JAPANESE
-拓司\n　「早桃は廊下で待っていろ。\p雲居さんは……一緒に頼む」\
+拓司\n　「早桃は廊下で待っていろ。\p雲居さんは……一緒に頼む」
 END_JAPANESE
 \x00\x00
 SEQ3  REF6 \x00\xa6\x03 CALL1 \x00n\x02 CALL7  REF7 \x00\x9c\x02 CALL7 5\x00 

@@ -3,7 +3,7 @@ HEADER `B#\x01\x00\x00\x00\x00\xc2\t\x00\x00
 LOAD3 SCE002_001\x00 REF6 \x00\x06\x00 CALL7 
 SEQ1 \x8c\x01\x00 SEQ4 \xc0\x12 CALL3 \x00\x03\x00\x12\x00\x00\x00
 START_JAPANESE
-\n\n\n\n\n\n\n\n\n\n　　　　　　『ジサツのための１０１の方法』\
+\n\n\n\n\n\n\n\n\n\n　　　　　　『ジサツのための１０１の方法』
 END_JAPANESE
 \x00\x00
 SEQ3  REF6 \x00J\x00\x00 CALL2 
@@ -32,7 +32,7 @@ START_JAPANESE
 学生　「やばいよ」@
 学生　「渡りきれると思う？」@
 学生　「自殺じゃないの？」@
-学生　「愉快犯」\
+学生　「愉快犯」
 END_JAPANESE
 \x00\x00\x00\x00
 SEQ3  REF6 \x00\xd4\x01 CALL1 \x00\xb2\x00 CALL7  REF7 \x00\xe0 CALL5 
@@ -52,7 +52,7 @@ START_JAPANESE
 学生　「落ちたらどうなるのかな」@
 学生　「死ぬんじゃない？」@
 学生　「死ぬかな」@
-学生　「死ぬんじゃない？」\
+学生　「死ぬんじゃない？」
 END_JAPANESE
 \x00\x00
 SEQ3  REF6 \x00v\x04 CALL1 \x00\xb2\x00 CALL7  REF7 \x00\xe0 CALL5 
@@ -66,7 +66,7 @@ START_JAPANESE
 学生　「……」@
 学生　「……」@
 学生　「……」@
-学生　「あっ？！」\
+学生　「あっ？！」
 END_JAPANESE
 \x00\x00\x00\x00
 SEQ3  REF6 \x00\x8c\x06 CALL1 \x00\xb2\x00 CALL7  REF7 \x00\xe0 CALL5 
@@ -84,7 +84,7 @@ START_JAPANESE
 学生　「落ちたよ」@
 学生　「やばいよ」@
 学生　「死んだかな？」@
-学生　「死んだでしょ」\
+学生　「死んだでしょ」
 END_JAPANESE
 \x00\x00\x00\x00
 SEQ3  REF6 \x00\xf6\x08 CALL1 \x00\xb2\x00 CALL7  REF7 \x00\xe0 CALL5  REF7 \x00\xb2\x00 CALL7 

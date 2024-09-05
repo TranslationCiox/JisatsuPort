@@ -14,7 +14,7 @@ LOAD4 TextWindowOn REF1 \x00\x9c\x01 CALL7 5\x00\x03\x00\x17\x00\x00\x00
 START_JAPANESE
 親指の先に、硬い物があった。@
 激しいノイズが聞こえる。@
-誰かが腹を殴っている。\
+誰かが腹を殴っている。
 END_JAPANESE
 \x00\x00
 SEQ3  REF6 \x00\xc0\x01 CALL1 \x00J\x00 CALL7 
@@ -32,7 +32,7 @@ START_JAPANESE
 親指が御堂の両目に押し込まれている。@
 −−いや、叫んでいるのは御堂だ！@
 御堂が叫んでいる。@
-泣き叫んでいる。\
+泣き叫んでいる。
 END_JAPANESE
 \x00\x00\x00\x00
 SEQ3  REF6 \x00\xa8\x02 CALL1 \x00J\x00 CALL7  REF7 \x00H\x02 CALL7 5\x00
@@ -41,7 +41,7 @@ SEQ1 \x8c\x01\x00 SEQ4 \xa8\x86\x01\x00\x0c\x00\x00\x00\x00\x00"\x00\x03\x00*\x0
 START_JAPANESE
 御堂\n　「うわあああああああああああッ！\p　やめろおお！\p　潰れる！@
 　　目、おれの目！」@
-拓司\n　「こういうのはお終いだ、御堂！\p　これでお終いだ！」\
+拓司\n　「こういうのはお終いだ、御堂！\p　これでお終いだ！」
 END_JAPANESE
 \x00\x00\x00\x00
 SEQ3  REF6 \x00\xee\x04 CALL1 \x00J\x00 CALL7  REF7 \x00H\x02 CALL7 5\x00
@@ -58,7 +58,7 @@ START_JAPANESE
 /*■黒　表示（クロスフェード）*/\a7,-2,-2,0,\a0,200,2,0,\a6,-2,0,0,部屋は静まり返っている。@
 カンナと紅葉と早桃に押さえつけられた錦城も、わめくのをやめ\nてぽかんと拓司を見ている。@
 なおも痙攣する御堂の死体からスッと立ち上がり、拓司はいった。\n@
-拓司\n　「終わりだ、全部終わりだ」\
+拓司\n　「終わりだ、全部終わりだ」
 END_JAPANESE
 \x00\x00\x00\x00
 SEQ3  REF6 \x00\x14\x06 CALL1 \x00J\x00 CALL7  REF7 \x00H\x02 CALL7 5\x00
@@ -72,7 +72,7 @@ START_JAPANESE
 すべてを知る者としての雲居ナタネが語った『光』。@
 それこそが、目指す物であると拓司は思っていた。@
 光。ゆらぎなき柱としての象徴。@
-拓司はそれを以前、月代カンナの口から聞いたことがあった。\
+拓司はそれを以前、月代カンナの口から聞いたことがあった。
 END_JAPANESE
 \x00\x00
 SEQ3  REF6 \x00\x02\t CALL1 \x00J\x00 CALL7  REF7 \x00H\x02 CALL7 5\x00
@@ -80,7 +80,7 @@ LOAD3 SCE240_006\x00 REF6 \x00\xc4
  CALL7 
 SEQ1 \x8c\x01\x00 SEQ4 \xb4\x86\x01\x00\x0c\x00\x00\x00\x00\x00"\x00\x03\x00\x0c\x00\x00\x00
 START_JAPANESE
-拓司\n　「ついてくる人は、いるかい？」\
+拓司\n　「ついてくる人は、いるかい？」
 END_JAPANESE
 \x00\x00
 SEQ3  REF6 \x00\x08\x0b CALL1 \x00J\x00 CALL7  REF7 \x00H\x02 CALL7 5 REF6 \x00J\x00 CALL7 

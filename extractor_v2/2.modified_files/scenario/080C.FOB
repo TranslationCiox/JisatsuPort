@@ -13,7 +13,7 @@ START_JAPANESE
 　邪魔邪魔。@
 ぬるりとしたぬかるみに手が滑る。@
 なんだこりゃ。@
-邪魔邪魔。\
+邪魔邪魔。
 END_JAPANESE
 \x00\x00
 SEQ3  REF6 \x00J\x00\x00 CALL2 
@@ -36,7 +36,7 @@ START_JAPANESE
 　−−ハサミ。@
 　おしい！@
 　−−カッター。@
-　ピンポーン！\
+　ピンポーン！
 END_JAPANESE
 \x00\x00
 SEQ3  REF6 \x00\xb8\x03 CALL1 \x00\xc2\x02 CALL7  REF7 \x00\xf0\x02 CALL7 5\x00
@@ -47,7 +47,7 @@ START_JAPANESE
 　終わりだ。@
 　ようやく瓶から脱出できる。@
 　さあ。@
-　終わりだ。\
+　終わりだ。
 END_JAPANESE
 \x00\x00\x00\x00
 SEQ3  REF6 \x00~\x05 CALL1 \x00\xc2\x02 CALL7  REF7 \x00\xf0\x02 CALL7 5 REF6 \x00\xc2\x02 CALL7 

@@ -21,7 +21,7 @@ START_JAPANESE
 死にたいと思いながらも、死ぬほどの勇気はなかった自分。@
 ならばいまは、逆に好機なのではないか？@
 いまなら死ねるような気がする。@
-瓶からするりと抜け出せるような気がする。\
+瓶からするりと抜け出せるような気がする。
 END_JAPANESE
 \x00
 SEQ3  REF6 \x00\x90\x00\x00 CALL2 
@@ -38,7 +38,7 @@ START_JAPANESE
 目の前には、死への脱出口が開いている。@
 なにもとめるものはない。@
 死のう。@
-死のう。\
+死のう。
 END_JAPANESE
 \x00\x00
 SEQ3  REF6 \x00\x02\x04 CALL1 \x00t\x03 CALL7  REF7 \x00\xa2\x03 CALL7 5\x00
@@ -57,14 +57,14 @@ START_JAPANESE
 逆に、これまで感じたことがないような安心感に包まれていた。@
 温かいゼリーで全身を覆われているような心地よさ。@
 どうして涙が出るのかなど、すでにわからなかった。@
-どうしてこれを恐れていたのかなど、すでにわからなかった。\
+どうしてこれを恐れていたのかなど、すでにわからなかった。
 END_JAPANESE
 \x00\x00
 SEQ3  REF6 \x00\xb4\x05 CALL1 \x00t\x03 CALL7  REF7 \x00\xa2\x03 CALL7 5\x00
 LOAD3 SCE079_004\x00 REF6 \x00\xbe\x08 CALL7 
 SEQ1 \x8c\x01\x00 SEQ4 \x1c\x8b CALL3 \x00\x03\x00@\x00\x00\x00
 START_JAPANESE
-学生\n　「……死ぬのか生きるのか、それはもう人間の幸不幸を決定す\n　　る鍵ではないような気さえしてきたのだ。\p死者は完成せられ、\n　　生者は出帆の船のデッキに立ってそれに手を合わせる。\p船は\n　　するする岸壁から離れる。\p「死はよいものだ」……』\
+学生\n　「……死ぬのか生きるのか、それはもう人間の幸不幸を決定す\n　　る鍵ではないような気さえしてきたのだ。\p死者は完成せられ、\n　　生者は出帆の船のデッキに立ってそれに手を合わせる。\p船は\n　　するする岸壁から離れる。\p「死はよいものだ」……』
 END_JAPANESE
 \x00\x00
 SEQ3  REF6 \x00\x02\t CALL1 \x00t\x03 CALL7  REF7 \x00\xa2\x03 CALL7 5\x00
@@ -85,7 +85,7 @@ START_JAPANESE
 　カッター。@
 　カッターはなんでカッターというんだ？@
 　カッター。@
-　カッター。\
+　カッター。
 END_JAPANESE
 \x00\x00\x00\x00
 SEQ3  REF6 \x00\x80
@@ -102,7 +102,7 @@ START_JAPANESE
 　カ。@
 　ツ。@
 　タ。@
-　ア。\
+　ア。
 END_JAPANESE
 \x00\x00\x00\x00
 SEQ3  REF6 \x00>\x0c CALL1 \x00t\x03 CALL7  REF7 \x00\xa2\x03 CALL7 5\x00 
@@ -112,7 +112,7 @@ LOAD4 BgAutoFadeIn REF1 \x00h\r CALL7 5\x00
 LOAD3 SCE079_007\x00 REF6 \x00\x8c\r CALL7 
 SEQ1 \x8c\x01\x00 SEQ4 (\x8b CALL3 \x00\x03\x00\x11\x00\x00\x00
 START_JAPANESE
-\n　拓司は芋虫のようにはいずって、自分の教室へと向かった。\
+\n　拓司は芋虫のようにはいずって、自分の教室へと向かった。
 END_JAPANESE
 \x00\x00
 SEQ3  REF6 \x00\xd0\r CALL1 \x00t\x03 CALL7  REF7 \x00\xa2\x03 CALL7 5\x00
