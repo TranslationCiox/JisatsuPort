@@ -146,11 +146,11 @@ patterns = [
     },
 
     ########################### Special ###########################
-    {
-        "pattern": [b'5C 70 5C 6E'],
-        # Start the script
-        "string": "@\n"
-    },
+    # {
+    #     "pattern": [b'5C 70 5C 6E'],
+    #     # Start the script
+    #     "string": "@\n"
+    # },
     {
         "pattern": [b'01 00 00 00 73 74 61 72 74 00 ef 00 69 01 43 00'],
         # Start the script
