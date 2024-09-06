@@ -28,7 +28,7 @@ patterns = [
         "string": " CALL1 "
     },
     {
-        "pattern": [b'00 0c 00 02 00 00 00 22 00'],
+        "pattern": [b'00 0c 00 02 00 00 00 22'],
         #
         "string": " CALL2 "
     },
