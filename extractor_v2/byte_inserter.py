@@ -3,6 +3,11 @@ import re
 
 patterns = [
     {
+        "pattern": [b'27'],
+        # End the script
+        "string": "TEST2"
+    },
+    {
         "pattern": [b'0A'],
         # End the script
         "string": "TEST"

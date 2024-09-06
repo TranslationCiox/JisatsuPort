@@ -1,5 +1,5 @@
 START_FILE \x8b-\x00\x00
-HEADER `B#\x01\x00\x00\x00\x00,'\x00\x00\x03\x00 PROCESSING_TAB \x00\x00\x00.\\Data\\Script\\Scenario\\048SubC.Fob\x00 REF5 \x00\x06\x00 CALL7 
+HEADER `B#\x01\x00\x00\x00\x00,TEST2\x00\x00\x03\x00 PROCESSING_TAB \x00\x00\x00.\\Data\\Script\\Scenario\\048SubC.Fob\x00 REF5 \x00\x06\x00 CALL7 
 LOAD2 start\x00 REF2 \x00< CALL5  
 SEQ2 <\x00\x00 CALL2 
 LOAD7 .\\Data\\Script\\TextFunc.fob\x00 REF5 \x00r\x00 CALL7 
@@ -311,5 +311,5 @@ END_JAPANESE
 SEQ3  REF6 \x00~% CALL1 \x00\\\x04 CALL7  REF7 \x00\x8a\x04 CALL7 5\x00
 LOAD6 .\\Data\\Script\\Bgm.Fob\x00 REF2 \x00\xbc& CALL7 
 LOAD2 StopCD\x00 REF5 \x00\xe6& CALL7 5 REF6 \x00\\\x04 CALL7 
-LOAD3 TextClose\x00 REF2 \x00\x0e' CALL7 5\x00
+LOAD3 TextClose\x00 REF2 \x00\x0eTEST2 CALL7 5\x00
 END_FILE
