@@ -43,7 +43,7 @@ patterns = [
         "string": " CALL4 "
     },
     {
-        "pattern": [b'00 00 00 1e 00 02 00 00 00 35 00'],
+        "pattern": [b'00 00 00 1e 00 02 00 00 00 35'],
         #
         "string": " CALL5 "
     },
@@ -53,7 +53,7 @@ patterns = [
         "string": " CALL6 "
     },
     {
-        "pattern": [b'00 00 1e 00 02 00 00 00'],
+        "pattern": [b'00 00 1e 00 02 00 00'],
         #
         "string": " CALL7 "
     },
@@ -103,14 +103,19 @@ patterns = [
         "string": "\nLOAD7 "
     },
     {
-        "pattern": [b'03 00 4F 00 00 00'],
+        "pattern": [b'03 00 08 00 00 00'],
         # BgOn, PlayCD, TextOn
         "string": "\nLOAD8 "
     },
     {
-        "pattern": [b'03 00 61 00 00 00'],
+        "pattern": [b'03 00 4F 00 00 00'],
         # BgOn, PlayCD, TextOn
         "string": "\nLOAD9 "
+    },
+    {
+        "pattern": [b'03 00 61 00 00 00'],
+        # BgOn, PlayCD, TextOn
+        "string": "\nLOAD10 "
     },
 
     ########################### 1 Byte ###########################
@@ -275,4 +280,5 @@ write_reversed_files(file_bytecode_dict)
 # # Example of how you can print the modified dictionary
 # for file_path, modified_bytecode in file_bytecode_dict.items():
 #     print(f"File: {file_path}, Modified Bytecode: {modified_bytecode}")
-
+import subprocess
+subprocess.run("sync_pack_run.bat", shell=True)

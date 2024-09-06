@@ -1,6 +1,7 @@
 import os
 import re
 
+
 patterns = [
     {
         "pattern": [b'27'],
@@ -43,7 +44,7 @@ patterns = [
         "string": " CALL4 "
     },
     {
-        "pattern": [b'00 00 00 1e 00 02 00 00 00 35 00'],
+        "pattern": [b'00 00 00 1e 00 02 00 00 00 35'],
         #
         "string": " CALL5 "
     },
@@ -53,7 +54,7 @@ patterns = [
         "string": " CALL6 "
     },
     {
-        "pattern": [b'00 00 1e 00 02 00 00 00'],
+        "pattern": [b'00 00 1e 00 02 00 00'],
         #
         "string": " CALL7 "
     },
@@ -103,14 +104,19 @@ patterns = [
         "string": "\nLOAD7 "
     },
     {
-        "pattern": [b'03 00 4F 00 00 00'],
+        "pattern": [b'03 00 08 00 00 00'],
         # BgOn, PlayCD, TextOn
         "string": "\nLOAD8 "
     },
     {
-        "pattern": [b'03 00 61 00 00 00'],
+        "pattern": [b'03 00 4F 00 00 00'],
         # BgOn, PlayCD, TextOn
         "string": "\nLOAD9 "
+    },
+    {
+        "pattern": [b'03 00 61 00 00 00'],
+        # BgOn, PlayCD, TextOn
+        "string": "\nLOAD10 "
     },
 
     ########################### 1 Byte ###########################
@@ -202,7 +208,10 @@ patterns = [
         # End the script
         "string": " PROCESSING_E "
     },
+
 ]
+
+
 def process_files(input_dir="1.original_files"):
     file_dict = {}
 
