@@ -168,7 +168,6 @@ patterns = [
     },
 
 ]
-
 def process_files(input_dir="1.original_files"):
     file_dict = {}
 
@@ -189,7 +188,8 @@ def replace_bytecode_patterns(file_bytecode_dict, patterns):
     modified_files = {}
 
     for file_path, bytecode in file_bytecode_dict.items():
-        modified_bytecode = bytecode
+        modified_bytecode = bytecode.replace(b'\\p\\n', b'OLD_PN').replace(b'\n', b'OLD_NEWLINE').replace(b'\r', b'OLD_CAR')\
+            .replace(b'\t', b'OLD_TAB').replace(b'\\e', b'OLD_E')
         for pattern_info in patterns:
             pattern = pattern_info["pattern"]
             replacement_string = pattern_info["string"]

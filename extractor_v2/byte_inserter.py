@@ -189,18 +189,12 @@ def reverse_replace_patterns(bytecode, patterns):
     for pattern in sorted(patterns, key=lambda p: len(p["string"]), reverse=True):
         # Decode the string to utf-8 and replace it with the corresponding bytecode pattern
         bytecode = bytecode.replace(pattern["string"].strip("\n").encode('utf-8'), bytes.fromhex(pattern["pattern"][0].decode('utf-8').replace(' ', '')))
-    return bytecode
+    return bytecode.replace(b"\\\\", b"\\")
 
 
 def hex_string_to_bytes(bytecode):
     # Use a regular expression to find \xNN patterns
     pattern = r'\\x([0-9a-fA-F]{2})'
-
-    # Define a regex pattern to match \\t
-    tab_pattern = r'\\t'
-
-    # Define a regex pattern to match \\t
-    car_pattern = r'\\r'
 
     # Function to convert matched hex code to actual byte value
     def hex_to_byte(match):
@@ -210,14 +204,10 @@ def hex_string_to_bytes(bytecode):
     # Use re.sub with the pattern and replacement function
     result = re.sub(pattern, lambda m: hex_to_byte(m).decode('latin1'), bytecode.decode('latin1'))
 
-    # Replace \\t with actual tab character
-    result = re.sub(tab_pattern, '\t', result).replace('\\\\', '\\')
-    result = re.sub(car_pattern, '\r', result).replace('\\\\', '\\')
-
     return result.encode('latin1')
 
 def reverse_strings(bytecode):
-    string_code = str(bytecode).replace("\\\\", "\\")[2:-1]
+    string_code = str(bytecode)[2:-1]
     return hex_string_to_bytes(string_code)
 def write_reversed_files(file_bytecode_dict, output_dir="3.new_files"):
     if not os.path.exists(output_dir):
@@ -233,6 +223,8 @@ def write_reversed_files(file_bytecode_dict, output_dir="3.new_files"):
 
         # Write the bytecode back to the file in binary mode
         with open(output_path, "wb") as f:
+            bytecode = bytecode.replace(b'OLD_PN', b'\\p\\n').replace(b'OLD_NEWLINE', b'\n').replace(b'OLD_CAR', b'\r')\
+                .replace(b'OLD_TAB', b'\t').replace(b'OLD_E', b'\\e')
             f.write(bytecode.replace(b"\r\n", b""))
 
 file_bytecode_dict = process_files()
