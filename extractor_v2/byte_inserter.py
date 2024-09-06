@@ -3,6 +3,11 @@ import re
 
 patterns = [
     {
+        "pattern": [b'0A'],
+        # End the script
+        "string": "TEST"
+    },
+    {
         "pattern": [b'5C 77 5C 6E 5C 7A'],
         #
         "string": "\nEND_JAPANESE\n"
@@ -166,6 +171,32 @@ patterns = [
         # Often between sequences after START_FILE
         "string": "\nHEADER "
     },
+    # PROCESSING CODES. DO NOT DELETE.
+    {
+        "pattern": [b'5C 70 5C 6E'],
+        # End the script
+        "string": "\nPROCESSING_PN "
+    },
+    {
+        "pattern": [b'5C 6E'],
+        # End the script
+        "string": "\nPROCESSING_NEWLINE "
+    },
+    {
+        "pattern": [b'0D'],
+        # End the script
+        "string": " PROCESSING_CARRET "
+    },
+    {
+        "pattern": [b'09'],
+        # End the script
+        "string": " PROCESSING_TAB "
+    },
+    {
+        "pattern": [b'5C 65'],
+        # End the script
+        "string": " PROCESSING_E "
+    },
 
 ]
 
@@ -223,8 +254,7 @@ def write_reversed_files(file_bytecode_dict, output_dir="3.new_files"):
 
         # Write the bytecode back to the file in binary mode
         with open(output_path, "wb") as f:
-            bytecode = bytecode.replace(b'OLD_PN', b'\\p\\n').replace(b'OLD_NEWLINE', b'\n').replace(b'OLD_CAR', b'\r')\
-                .replace(b'OLD_TAB', b'\t').replace(b'OLD_E', b'\\e')
+            bytecode = bytecode
             f.write(bytecode.replace(b"\r\n", b""))
 
 file_bytecode_dict = process_files()

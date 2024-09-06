@@ -3,6 +3,11 @@ import re
 
 patterns = [
     {
+        "pattern": [b'0A'],
+        # End the script
+        "string": "TEST"
+    },
+    {
         "pattern": [b'5C 77 5C 6E 5C 7A'],
         #
         "string": "\nEND_JAPANESE\n"
@@ -166,7 +171,32 @@ patterns = [
         # Often between sequences after START_FILE
         "string": "\nHEADER "
     },
-
+    # PROCESSING CODES. DO NOT DELETE.
+    {
+        "pattern": [b'5C 70 5C 6E'],
+        # End the script
+        "string": "\nPROCESSING_PN "
+    },
+    {
+        "pattern": [b'5C 6E'],
+        # End the script
+        "string": "\nPROCESSING_NEWLINE "
+    },
+    {
+        "pattern": [b'0D'],
+        # End the script
+        "string": " PROCESSING_CARRET "
+    },
+    {
+        "pattern": [b'09'],
+        # End the script
+        "string": " PROCESSING_TAB "
+    },
+    {
+        "pattern": [b'5C 65'],
+        # End the script
+        "string": " PROCESSING_E "
+    },
 ]
 def process_files(input_dir="1.original_files"):
     file_dict = {}
@@ -188,8 +218,7 @@ def replace_bytecode_patterns(file_bytecode_dict, patterns):
     modified_files = {}
 
     for file_path, bytecode in file_bytecode_dict.items():
-        modified_bytecode = bytecode.replace(b'\\p\\n', b'OLD_PN').replace(b'\n', b'OLD_NEWLINE').replace(b'\r', b'OLD_CAR')\
-            .replace(b'\t', b'OLD_TAB').replace(b'\\e', b'OLD_E')
+        modified_bytecode = bytecode
         for pattern_info in patterns:
             pattern = pattern_info["pattern"]
             replacement_string = pattern_info["string"]
