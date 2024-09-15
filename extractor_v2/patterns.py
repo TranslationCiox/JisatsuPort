@@ -19,8 +19,13 @@ patterns = [
         #
         "string": "\nEND_JAPANESE_CHOICE"
     },
+    # {
+    #     "pattern": [b'5C 77 5C 6E 5C 7A'],
+    #     #
+    #     "string": "\nEND_JAPANESE\n"
+    # },
     {
-        "pattern": [b'5C 77 5C 6E 5C 7A'],
+        "pattern": [b'5C 7A'],
         #
         "string": "\nEND_JAPANESE\n"
     },
@@ -147,7 +152,7 @@ patterns = [
         "string": " REF4 "
     },
     {
-        "pattern": [b'00 81 1f'],
+        "pattern": [b'00 81 1f 00'],
         #
         "string": " REF5 "
     },

@@ -46,12 +46,13 @@ def format_bytecode_for_writing(bytecode):
             is_japanese = False
 
         if is_japanese:
-            string_code.append(str(i.decode('shift_jis', errors='replace')))
+            print(i)
+            string_code.append(str(i.decode('shift_jis')))
         else:
             string_code.append(str(i)[2:-1])
 
         if i == b'START_JAPANESE':
-            is_japanese = False
+            is_japanese = True
     return string_code
 
 
