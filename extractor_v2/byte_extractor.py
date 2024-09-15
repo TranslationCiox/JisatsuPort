@@ -46,7 +46,6 @@ def format_bytecode_for_writing(bytecode, path):
             is_japanese = False
 
         if is_japanese:
-            print(i)
             string_code.append(str(i.decode('shift jis', errors="ignore")))
         else:
             string_code.append(str(i)[2:-1])

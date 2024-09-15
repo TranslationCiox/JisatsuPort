@@ -35,6 +35,16 @@ patterns = [
         "string": "\nSTART_JAPANESE\n"
     },
     {
+        "pattern": [b'00 00 00 0c 00 02 00 00 00 22 00 20 00 1e 00 08 00 00 00 0d 00 00 00 1e 00'],
+        #
+        "string": " SEQ4 "
+    },
+    {
+        "pattern": [b'00 00 0c 00 02 00 00 00 22 00 20 00 1e 00 04 00 00 00 0d 00 00 00 1e'],
+        #
+        "string": " SEQ5 "
+    },
+    {
         "pattern": [b'00 00 0c 00 02 00 00 00 22 00 1f 00'],
         #
         "string": " CALL1 "
@@ -65,7 +75,7 @@ patterns = [
         "string": " CALL6 "
     },
     {
-        "pattern": [b'00 00 1e 00 02 00 00 00'],
+        "pattern": [b'00 00 1e 00 02 00 00'],
         #
         "string": " CALL7 "
     },
@@ -83,12 +93,7 @@ patterns = [
         "pattern": [b'20 00 1e 00 00 00 00 00 0d 00 00 00 1f 00'],
         #
         "string": "\nSEQ3 "
-    },
-    {
-        "pattern": [b'00 0d 00 02 00 1e 00'],
-        #
-        "string": " SEQ4 "
-    },
+    },#\x00 CALL2  \x00\x1e\x00\x08\x00\x00\x00|0d\x00\x00\x00\x1e\x00
     {
         "pattern": [b'03 00 02 00 00 00'],
         # BgOn, PlayCD, TextOn
