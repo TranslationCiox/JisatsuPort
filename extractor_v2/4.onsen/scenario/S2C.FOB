@@ -1,0 +1,44 @@
+START_FILE \xbb\x08
+HEADER `B#\x01\x00\x00\x00\x00\xe8\x06\x00\x00 
+SEQ2 A\x00 CALL2 
+LOAD6 .\\Data\\Script\\Bg.Fob REF1 \x00 \x00 CALL7 \x00
+LOAD4 BgAutoFadeIn REF1 \x00J CALL5  
+SEQ2 \x04\x01 CALL2 
+LOAD6 .\\Data\\Script\\Bgm.Fob REF2 \x88\x00 CALL7 \x00
+LOAD2 PlayCD REF5 \xb2 CALL5 
+LOAD3 SCES02_001\x00 REF6 \xce\x00 CALL7 \x00
+SEQ1 \xa8\xb5\x01\x00\x0c\x00\x00\x00\x00\x00"\x00\x03\x00p
+START_JAPANESE
+早桃には、子供の頃から空想のお友達がいたの。 @
+空想のお友達、なんていうとなんだかアブナイひとみたいでイヤ|x5c|x6eなんだけど……ぜんぜんそんな、特別な感じじゃないの。 @
+ずっと、いるって思ってたから……そういうものだって思ってた。|x5c|x6e\pそういうお友達もいるんだって。 @
+早桃にとっては自然なことだったの。 @
+ドルチェ。\pドルチェっていうのが、その子の名前。 @
+絶対に笑わないでね？ @
+ドルチェっていうのは、人間じゃないの。 @
+羽が生えた猫なの。
+END_JAPANESE
+\x00\x00\x00\x00
+SEQ3 \x12\x01 CALL2 
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF5 \xf2\x02 CALL7 \x00
+LOAD2 TextOn REF5  \x03 CALL7 \x005\x00
+LOAD3 SCES02_002\x00 REF6 <\x03 CALL7 \x00
+SEQ1 \xac\xb5\x01\x00\x0c\x00\x00\x00\x00\x00"\x00\x03\x00\xaa
+START_JAPANESE
+それでね、しゃべるときは言葉の最後に『ニャ』ってつけるの。 @
+『早桃ちゃんはいつも泣いてばっかりだニャ』 @
+『今日はいい天気でなんだか気持ちがいいニャ』 @
+……あ、笑った！\p　うふふ、でも……ウン、おかしいよね。 @
+辛いときとか悲しいとき、いつもドルチェが励ましてくれた。 @
+悩んでるときも相談に乗ってくれた。 @
+絶対に答は教えてくれなかったけど……『答は早桃ちゃん自身が|x5c|x6e決めることニャ』って……いろんなアドバイスをくれた。 @
+早桃の空想が運だ友達なのに、早桃が知らない難しい言葉をいっ|x5c|x6eぱい知ってるの。\pいろんな本や映画からセリフを引っ張ってきて、|x5c|x6e面白いアドバイスをくれるの。 @
+そして最後にいつもこういうの。 @
+『答はね、早桃ちゃん。風のなかにあるニャ』って。
+END_JAPANESE
+\x00\x00\x00\x00
+SEQ3 \x80\x03 CALL1 \xf2\x02 CALL7  REF6  \x03 CALL7 \x005\x00 
+SEQ2 \xc8\x00 CALL1  \x00 CALL7  REF6 J CALL5  REF7 \x00\x88\x00 CALL7 \x00
+LOAD2 StopCD REF5 \xa2\x06 CALL7 \x005 REF6 \xf2\x02 CALL7 \x00
+LOAD3 TextClose REF2 \xca\x06 CALL7 \x005\x00
+END_FILE

@@ -1,0 +1,20 @@
+START_FILE \xdd\x05
+HEADER \xa4|x093\x01\x00\x00\x00\x00\xa0\x04\x00\x00
+LOAD3 SCE202_001\x00 REF6 \x06\x00 CALL7 \x00
+SEQ1 @K\x01\x00\x0c\x00\x00\x00\x00\x00"\x00\x03\x00\xd6
+START_JAPANESE
+ナタネ|x5c|x6e　「次にふたつめ。\pいま、あなたが体験しているこの世界こそが|x5c|x6e　　『現実』よ。\pそして、『学校に籠城している世界』……教授|x5c|x6e　　はそれを『あなたの妄想が生んだ頭の中の世界』だと信じ込|x5c|x6e　　ませようとしているけれど、それは罠。\pあなたが見たのは『|x5c|x6e　　妄想』ではないわ。\p『記憶』よ」 @
+拓司|x5c|x6e　「……」 @
+ナタネ|x5c|x6e　「『学校に籠城する世界』は現実ではないけれど、妄想でもな|x5c|x6e　　い。\p記憶。それは過去、確かにあったことなの。\p事実よ。 @
+　　……教授は、機械を使ってあなたの記憶を消し去った。 @
+　　でも、消しきれなかった記憶の断片が、眠りの中で映画みた|x5c|x6e　　いに甦っている。\p……あなたは過去を繰り返して体験してい|x5c|x6e　　る。\p……つまり、あなたは虎菱拓司なの。\pあなたが記憶して|x5c|x6e　　いる『自分』は、真実よ。\p妄想の産物ではない。\p波動が襲っ|x5c|x6e　　てきて、あなたたちは実験室に籠城した。\pそれは過去の事実|x5c|x6e　　なの。\p……いいわね？」
+END_JAPANESE
+\x00\x00\x00\x00
+SEQ3 J\x00 CALL2 
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF5 \xc2\x03 CALL7 \x00
+LOAD2 TextOn REF5 \xf0\x03 CALL7 \x005\x00\x03\x00\x0c
+START_JAPANESE_CHOICE
+\x82\xe0\x82\xa4\x88\xea\x93x\x95\xb7\x82\xad|x5c|x6e\x96\xd9\x82\xc1\x82\xc4\x91\xb1\x82\xab\x82\xf0\x95\xb7\x82\xad|x5c|x6e\\l0,2,\\E\\z\x00\x00
+SEQ3 \x0c\x04 CALL1 \xc2\x03 CALL7  REF6 \xf0\x03 CALL7 \x005 REF6 \xc2\x03 CALL7 \x00
+LOAD3 TextClose REF2 \x82\x04 CALL7 \x005\x00
+END_FILE

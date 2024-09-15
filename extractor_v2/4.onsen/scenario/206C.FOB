@@ -1,0 +1,17 @@
+START_FILE \xcf\x04
+HEADER \xa4|x093\x01\x00\x00\x00\x00:\x03\x00\x00
+LOAD3 SCE206_001\x00 REF6 \x06\x00 CALL7 \x00
+SEQ1 \x80Q\x01\x00\x0c\x00\x00\x00\x00\x00"\x00\x03\x00\x97
+START_JAPANESE
+拓司|x5c|x6e　「君はいま、おれに世界の真実を教えてくれた。\pでも、だとし|x5c|x6e　　たら、君は誰なんだ？\p　どうして君がそんなことを知って|x5c|x6e　　いる？」 @
+ナタネ|x5c|x6e　「私は雲居ナタネ。\pなぜなら、あなたがそう名付けたから」 @
+拓司|x5c|x6e　「……！」 @
+ナタネ|x5c|x6e　「私という存在は、あなたが『願』って『創った』ものなの。 @
+　　あなたは、すべての真実を語って聞かせてくれる者の出現を|x5c|x6e　　……自分を救う者の存在を『願った』。\pだから私は、ここに|x5c|x6e　　『創』られた。\pこの姿……雲居なたねの形として創られた|x5c|x6e　　のは、あなたがそれを望んだから。\p理解できないものの解説|x5c|x6e　　役として、雲居なたねを望んだからなの」
+END_JAPANESE
+\x00\x00\x00\x00
+SEQ3 J\x00 CALL2 
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF5 \xc6\x02 CALL7 \x00
+LOAD2 TextOn REF5 \xf4\x02 CALL7 \x005 REF6 \xc6\x02 CALL7 \x00
+LOAD3 TextClose REF2 \x1c\x03 CALL7 \x005\x00
+END_FILE

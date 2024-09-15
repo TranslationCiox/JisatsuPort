@@ -1,0 +1,93 @@
+START_FILE |x27\x11
+HEADER `B#\x01\x00\x00\x00\x00@|0d\x00\x00
+LOAD6 .\\Data\\Script\\Bgm.Fob REF2 \x06\x00 CALL7 \x00
+LOAD2 StopCD REF5 0 CALL5 
+LOAD3 SCE077_001\x00 REF6 L\x00 CALL7 \x00
+SEQ1 \xf0\x87 CALL3 \x00\x03\x00~
+START_JAPANESE
+拓司|x5c|x6e　「雲居さんが俺たちには見えないものが見えるというのは…|x5c|x6e　　…信じられないけど……どうやらウソじゃないらしい。 @
+　　いままで何度も、雲居さんは『波動』ってやつを感じてき|x5c|x6e　　たし、俺はそれに救われてきた」 @
+早桃|x5c|x6e　「じゃあ、神凪先輩を見捨てるっていうの？！」 @
+拓司|x5c|x6e　「いや。\p見捨てない」 @
+早桃|x5c|x6e　「……」 @
+拓司|x5c|x6e　「雲居さん。\p早桃とカンナを、頼む」 @
+早桃|x5c|x6e　「おにいちゃん？！」 @
+拓司|x5c|x6e　「俺が行く。\pだから雲居さんは２人をシェルターに連れてい|x5c|x6e　　ってやってくれ」
+END_JAPANESE
+\x00\x00
+SEQ3 \x90\x00 CALL2 
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF5 \xa8\x02 CALL7 \x00
+LOAD2 TextOn REF5 \xd6\x02 CALL7 \x005\x00 
+SEQ2 \x08\x01 CALL1 \x06\x00 CALL7 \x00
+LOAD2 PlayCD REF5 \x18\x03 CALL7 \x005\x00
+LOAD3 SCE077_002\x00 REF6 4\x03 CALL7 \x00
+SEQ1 \xf4\x87 CALL3 \x00\x03\x00X
+START_JAPANESE
+早桃|x5c|x6e　「イヤだよ！\p　早桃、やだからね！」 @
+拓司|x5c|x6e　「……」 @
+早桃|x5c|x6e　「おにいちゃんと一緒に行く」 @
+拓司|x5c|x6e　「ダメだ」 @
+早桃|x5c|x6e　「いや！」 @
+拓司|x5c|x6e　「お前たちが雲居さんと一緒に行かないというなら、俺は紅|x5c|x6e　　葉を見捨てるしかない」 @
+早桃|x5c|x6e　「……」 @
+拓司|x5c|x6e　「紅葉を助けるために、お前たちを危険にさらすわけにはいか|x5c|x6e　　ない」
+END_JAPANESE
+\x00\x00
+SEQ3 x\x03 CALL1 \xa8\x02 CALL7  REF6 \xd6\x02 CALL7 \x005\x00
+LOAD3 SCE077_003\x00 REF6 \x12\x05 CALL7 \x00
+SEQ1 \xf8\x87 CALL3 \x00\x03\x00O
+START_JAPANESE
+早桃|x5c|x6e　「……」 @
+拓司|x5c|x6e　「……」 @
+早桃|x5c|x6e　「……わかった」 @
+拓司|x5c|x6e　「早桃」 @
+早桃|x5c|x6e　「でも約束だよ？\p　絶対戻ってきて。\pおにいちゃんが死んじゃ|x5c|x6e　　ったら、早桃、早桃……」 @
+|x5c|x6e　ぶるぶると震える早桃の肩を、拓司は優しくかき抱いた。\pそれ|x5c|x6e　から肩に担いだカンナを２人に任せ、なたねに尋ねた。
+END_JAPANESE
+\x00\x00
+SEQ3 V\x05 CALL1 \xa8\x02 CALL7  REF6 \xd6\x02 CALL7 \x005\x00
+LOAD3 SCE077_004\x00 REF6 \xcc\x06 CALL7 \x00
+SEQ1 \xfc\x87 CALL3 \x00\x03\x00d
+START_JAPANESE
+拓司|x5c|x6e　「４階の実験室だな？」 @
+なたね|x5c|x6e　「なにが？」 @
+拓司|x5c|x6e　「シェルターさ」 @
+なたね|x5c|x6e　「……そうだけど。\pあなたは絶対にシェルターには来られない|x5c|x6e　　わ」 @
+拓司|x5c|x6e　「冷たいな」 @
+なたね|x5c|x6e　「客観的な事実をいっているだけ。\p個人的にはとても残念」 @
+拓司|x5c|x6e　「そりゃどうも」 @
+なたね|x5c|x6e　「ここで虎菱くんを失うのは、地球の戦士たちにとって大きな|x5c|x6e　　痛手。\p哀しいことだわ」
+END_JAPANESE
+\x00\x00\x00\x00
+SEQ3 \x10\x07 CALL1 \xa8\x02 CALL7  REF6 \xd6\x02 CALL7 \x005\x00
+LOAD3 SCE077_005\x00 REF6 \xda\x08 CALL7 \x00
+SEQ1 \x00\x88 CALL3 \x00\x03\x00E
+START_JAPANESE
+拓司|x5c|x6e　「……死んだら、な」 @
+なたね|x5c|x6e　「死ぬわ」 @
+拓司|x5c|x6e　「どうかな？」 @
+なたね|x5c|x6e　「死ぬわ」 @
+|x5c|x6e　拓司は肩をすくめて、さあ行ってくれ、と言った。 @
+　振り返り振り返り、早桃たち３人の姿が廊下の向こうに消えさ|x5c|x6e　ったのを見送り、拓司はよし、とつぶやいた。
+END_JAPANESE
+\x00\x00\x00\x00
+SEQ3 \x1e|x09 CALL1 \xa8\x02 CALL7  REF6 \xd6\x02 CALL7 \x005 REF6 \x06\x00 CALL7  REF6 0 CALL5  
+SEQ2 <\x00 CALL2 
+LOAD7 .\\Data\\Script\\TextFunc.fob REF5 \xa0|x0a CALL7 \x00
+LOAD3 WaitTime REF1 \x00\xce|x0a CALL7 \x005\x00 
+SEQ2 |x09\x01 CALL1 \x06\x00 CALL7  REF6 \x18\x03 CALL7 \x005\x00
+LOAD3 SCE077_006\x00 REF6 "\x0b CALL7 \x00
+SEQ1 \x04\x88 CALL3 \x00\x03\x00B
+START_JAPANESE
+　渡り廊下は静まり返っている。 @
+　見渡す限り、なにもない。 @
+　それでも波動が充ちていると−−なたねはいう。 @
+　波動というのがなんなのかがわからない以上、一気に走り抜け|x5c|x6e　るべきなのか、あるいは静かに前進すべきなのか、それすら判|x5c|x6e　断のしようがない。
+END_JAPANESE
+\x00\x00
+SEQ3 f\x0b CALL1 \xa8\x02 CALL7  REF6 \xd6\x02 CALL7 \x005\x00\x03\x00|0d
+START_JAPANESE_CHOICE
+\x88\xea\x8bC\x82\xc9\x91\x96\x82\xe8\x94\xb2\x82\xaf\x82\xe9|x5c|x6e\x90T\x8fd\x82\xc9\x95\xe0\x82\xa2\x82\xc4\x82\xe4\x82\xad|x5c|x6e\\l0,2,\\E\\z\x00\x00
+SEQ3 \xa8\x0c CALL1 \xa8\x02 CALL7  REF6 \xd6\x02 CALL7 \x005 REF6 \xa8\x02 CALL7 \x00
+LOAD3 TextClose REF2 "|0d CALL7 \x005\x00
+END_FILE

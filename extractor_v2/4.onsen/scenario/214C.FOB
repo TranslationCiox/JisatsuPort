@@ -1,0 +1,35 @@
+START_FILE \x02\x05
+HEADER \xa4|x093\x01\x00\x00\x00\x00\xea\x03\x00\x00
+LOAD3 SCE214_001\x00 REF6 \x06\x00 CALL7 \x00
+SEQ1 \x00^\x01\x00\x0c\x00\x00\x00\x00\x00"\x00 
+SEQ2 \x02\x00 SEQ5 \x00\x01 SEQ4 \x01\x00 CALL2 
+LOAD6 .\\Data\\Script\\Bgm.Fob REF2 \x98\x00 CALL7 \x00
+LOAD2 SePlay REF5 \xc2 CALL5 \x03\x00C
+START_JAPANESE
+拓司はガバと身を起こした。 @
+頭の横に付けっぱなしのラジオが置かれている。 @
+なたねが……ナタネではなくなたねが……部屋の隅で丸くなって|x5c|x6eいる。 @
+窓から、朝日が射し込んでいる。 @
+広い実験室。 @
+静かに眠る仲間たち。 @
+ここは……『学校に籠城する世界』。
+END_JAPANESE
+\x00\x00\x00\x00
+SEQ3 \xde\x00 CALL2 
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF5 |x0a\x02 CALL7 \x00
+LOAD2 TextOn REF5 8\x02 CALL7 \x005\x00
+LOAD3 SCE214_002\x00 REF6 T\x02 CALL7 \x00
+SEQ1 \x04^\x01\x00\x0c\x00\x00\x00\x00\x00"\x00\x03\x00+
+START_JAPANESE
+拓司|x5c|x6e　「……やれやれ」 @
+|x5c|x6e拓司は深呼吸をした。 @
+もはや真実は見いだせない。 @
+いまはただ、目の前の世界を必死で生き抜くしかあるまい。 @
+それしかないのだ。
+END_JAPANESE
+\x00\x00\x00\x00
+SEQ3 \x98\x02 CALL1 |x0a\x02 CALL7  REF6 8\x02 CALL7 \x005\x00 
+SEQ2 \x02\x00 CALL1 \x98\x00 CALL7 \x00
+LOAD2 SeStop REF5 \xa4\x03 CALL7 \x005 REF6 |x0a\x02 CALL7 \x00
+LOAD3 TextClose REF2 \xcc\x03 CALL7 \x005\x00
+END_FILE

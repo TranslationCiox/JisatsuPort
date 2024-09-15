@@ -1,0 +1,62 @@
+START_FILE I\x0e
+HEADER `B#\x01\x00\x00\x00\x00\\\x0b\x00\x00
+LOAD6 .\\Data\\Script\\Bgm.Fob REF2 \x06\x00 CALL7 \x00
+LOAD2 StopCD REF5 0 CALL5  
+SEQ2 \xc8\x00 CALL2 
+LOAD6 .\\Data\\Script\\Bg.Fob REF1 \x00f\x00 CALL7 \x00
+LOAD4 BgAutoFadeIn REF1 \x00\x90 CALL5 
+LOAD3 SCE092_001\x00 REF6 \xb4\x00 CALL7 \x00
+SEQ1 `\x9f CALL3 \x00\x03\x00\x11
+START_JAPANESE
+|x5c|x6e|x5c|x6e|x5c|x6e|x5c|x6e|x5c|x6e|x5c|x6e|x5c|x6e|x5c|x6e|x5c|x6e|x5c|x6e　　　　　　　　　　　　　　『２日目』
+END_JAPANESE
+\x00\x00
+SEQ3 \xf8\x00 CALL2 
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF5 \\\x01 CALL7 \x00
+LOAD2 TextOn REF5 \x8a\x01 CALL7 \x005\x00
+LOAD3 SCE092_002\x00 REF6 \xa6\x01 CALL7 \x00
+SEQ1 d\x9f CALL3 \x00\x03\x00\x9b
+START_JAPANESE
+晴れ。 @
+水の分配について、御堂が再びゴネはじめた。 @
+/*■CG31　表示（クロスフェード）*/\a7,0,0,0,\a0,30,0,0,\a6,0,0,0,/*▲BGM　Track10　再生　*/\a2,-1,10,1,|x5c|x6e御堂|x5c|x6e　「……要するに俺は、『どれだけ蓄えがあるのか』を教えろっ|x5c|x6e　　ていってんだよ。\p１ヶ月分あるのか……１年分あるのか。 @
+　　それがわからなきゃ、雲居がいう『適量』ってのが本当に|x5c|x6e　　『適量』なのか、判断のしようがないだろうが！」 @
+なたね|x5c|x6e　「今の量が適量です。\pこの人数でこの量なら、しばらく暮らし|x5c|x6e　　ていけます」 @
+御堂|x5c|x6e　「だから、その『しばらくって』のはどれくらいなんだよ！」 @
+なたね|x5c|x6e　「それはいえません」 @
+御堂|x5c|x6e　「なに？」
+END_JAPANESE
+\x00
+SEQ3 \xea\x01 CALL1 \\\x01 CALL7  REF6 \x8a\x01 CALL7 \x005\x00
+LOAD3 SCE092_003\x00 REF6 \x90\x04 CALL7 \x00
+SEQ1 h\x9f CALL3 \x00\x03\x00\x9e
+START_JAPANESE
+なたね|x5c|x6e　「いえば、秩序の維持に多大な影響が出るからです。\pたとえば|x5c|x6e　　……たとえばですよ？\p　食糧の備蓄が３日分しかないと分か|x5c|x6e　　ったら、みなさんはどうしますか？」 @
+御堂|x5c|x6e　「……」 @
+なたね|x5c|x6e　「明日で水も食糧もなくなると分かったら、今日、ここで静か|x5c|x6e　　に耐えていることができますか？\p　５００ｍｌの水でも足り|x5c|x6e　　ないと騒ぎ立てるあなたたちが、黙って虎菱くんに従ってい|x5c|x6e　　られますか？」 @
+御堂|x5c|x6e　「……」 @
+なたね|x5c|x6e　「そして、たとえば……口減らしをしようという話になるよう|x5c|x6e　　なことは……ありませんか？」 @
+|x5c|x6e生々しい言葉に、紅葉と早桃が顔をしかめる。 @
+粘り着くような沈黙をおいて、御堂がいった。
+END_JAPANESE
+\x00\x00\x00\x00
+SEQ3 \xd4\x04 CALL1 \\\x01 CALL7  REF6 \x8a\x01 CALL7 \x005\x00
+LOAD3 SCE092_004\x00 REF6 \x86\x07 CALL7 \x00
+SEQ1 l\x9f CALL3 \x00\x03\x00\x9f
+START_JAPANESE
+御堂|x5c|x6e　「……３日分しかないってのは……本当なのか？」 @
+なたね|x5c|x6e　「あくまでもたとえです」 @
+御堂|x5c|x6e　「もっと……あるんだよな？\p　３日分ってことは……ねえよな|x5c|x6e　　？」 @
+なたね|x5c|x6e　「わからない人ですね。\p今いった理由で、それはいえません」 @
+|x5c|x6e御堂は黙り込んだ。 @
+なたねのいうことはもっともだった。\pこうしたサバイバルをあら|x5c|x6eかじめ想定していたなたねだからこそ、じりじりと確実に迫るリ|x5c|x6eミットのプレッシャーに耐えていられるのかもしれない。 @
+しかし、なたねが口にした『３日』という具体的な例は、理屈を|x5c|x6e越えて一同の上に重くのしかかっていた。\p漠然と遠くに見ていた|x5c|x6e最後の日は、明日、やってくるかもしれないのだ……と。
+END_JAPANESE
+\x00\x00\x00\x00
+SEQ3 \xca\x07 CALL1 \\\x01 CALL7  REF6 \x8a\x01 CALL7 \x005\x00\x03\x00\x1e
+START_JAPANESE_CHOICE
+\x81u\x89\xbd\x93\xfa\x91\xcf\x82\xa6\x82\xe7\x82\xea\x82\xe9\x82\xcc\x82\xa9\x81A\x82\xcd\x82\xc1\x82\xab\x82\xe8\x82\xb3\x82\xb9\x82\xc4\x82\xd9\x82\xb5\x82\xa2\x81v\x82\xc6\x91\xf1\x8ei\x82\xcd\x82\xa2\x82\xc1\x82\xbd|x5c|x6e\x81u\x89_\x8b\x8f\x82\xb3\x82\xf1\x82\xcc\x82\xa2\x82\xa4\x82\xc6\x82\xa8\x82\xe8\x82\xbe\x81v\x82\xc6\x91\xf1\x8ei\x82\xcd\x82\xa2\x82\xc1\x82\xbd|x5c|x6e\\l0,2,
+END_JAPANESE_CHOICE
+SEQ3 \x80|x0a CALL1 \\\x01 CALL7  REF6 \x8a\x01 CALL7 \x005 REF6 \\\x01 CALL7 \x00
+LOAD3 TextClose REF2 >\x0b CALL7 \x005\x00
+END_FILE

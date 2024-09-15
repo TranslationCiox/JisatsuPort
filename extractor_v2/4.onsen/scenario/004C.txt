@@ -1,0 +1,6 @@
+ 
+bg title.bmp
+play track11
+;WaitKey REF6 \xc6\x01 CALL7 \x005 REF6 t\x01 CALL7 \x00
+;StopCD REF5 \xee\x01 CALL7 \x005 REF6 \xa4\x00 CALL7 \x00
+

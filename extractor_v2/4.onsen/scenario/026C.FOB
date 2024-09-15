@@ -1,0 +1,124 @@
+START_FILE \x88\x1a
+HEADER `B#\x01\x00\x00\x00\x00\x02\x16\x00\x00
+LOAD3 SCE026_001\x00 REF6 \x06\x00 CALL7 \x00
+SEQ1 @8 CALL3 \x00\x03\x00\xbf
+START_JAPANESE
+/*　▲SE09　一回再生　*/\a2,0,9,0,　がらがらと、拓司の灰色の世界が一部スライドして、そこに新|x5c|x6e　たな何かが現れた。 @
+|x5c|x6e\a4,0,0,0,/*　■CG08　表示（クロスフェード）　*/\a7,-2,-2,0,\a0,7,2,0,\a6,-2,0,0,御堂|x5c|x6e　「おはよーございまーす」 @
+|x5c|x6e　クラスの全員が、その音の方向を見つめていた。 @
+　そこには御堂俊一が立っていた。 @
+　御堂は暗い、それでいて攻撃的な目で、教室中の視線にギロリ|x5c|x6e　と対抗してみせた。\pその凶暴な視線に圧されて、ほとんどの学|x5c|x6e　生がサッと目をそらす。 @
+　御堂に関する噂を知らない者は、このクラスにはいない。 @
+　暴力に彩られた噂。\p最近はドラッグとか、売春とか、そういっ|x5c|x6e　た単語さえ噂には入り交じるようになっていた。 @
+　そして御堂の眼には、それらがあながちただの噂で終わるもの|x5c|x6e　ではないと感じさせるだけの説得力が備わっていた。
+END_JAPANESE
+\x00
+SEQ3 J\x00 CALL2 
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF5 f\x03 CALL7 \x00
+LOAD2 TextOn REF5 \x94\x03 CALL7 \x005\x00
+LOAD3 SCE026_002\x00 REF6 \xb0\x03 CALL7 \x00
+SEQ1 D8 CALL3 \x00\x03\x00o
+START_JAPANESE
+御堂|x5c|x6e　「ぎりぎりセーフっすかね、センセイ？」 @
+|x5c|x6e　御堂は笑いながら、教室に足を踏み入れようとした。 @
+　しかし、錦城教諭の一声が、それを鋭く制した。 @
+|x5c|x6e錦城|x5c|x6e　「いいご身分ね。もう４限も終りなんだけれど？」 @
+御堂|x5c|x6e　「……はァ？」 @
+錦城|x5c|x6e　「私は、あなたが自ら望んで落ちこぼれていくことにはなんら異|x5c|x6e　　を唱える気はありません。\pただ、他の人間の迷惑となるような|x5c|x6e　　ことはつつしんでください」 @
+御堂|x5c|x6e　「……なんだと？」
+END_JAPANESE
+\x00\x00
+SEQ3 \xf4\x03 CALL1 f\x03 CALL7  REF6 \x94\x03 CALL7 \x005\x00 
+SEQ2 |x0a\x01 CALL2 
+LOAD6 .\\Data\\Script\\Bgm.Fob REF2 \x04\x06 CALL7 \x00
+LOAD2 PlayCD REF5 .\x06 CALL7 \x005\x00
+LOAD3 SCE026_003\x00 REF6 J\x06 CALL7 \x00
+SEQ1 H8 CALL3 \x00\x03\x00r
+START_JAPANESE
+錦城|x5c|x6e　「出て行きなさい、御堂くん」 @
+御堂|x5c|x6e　「……」 @
+錦城|x5c|x6e　「私の授業に関する限り、途中からの出席は許可しません。 @
+　　出ていきなさい」 @
+御堂|x5c|x6e　「……」 @
+錦城|x5c|x6e　「出て行きなさい」 @
+|x5c|x6e　空気がぎゅっと凝固した。 @
+　クラスにいる全員が息を押し殺して事態の移行を見守っていた。|x5c|x6e　\p息詰まる静寂のなかに、次に来るであろうすさまじい暴力の予感|x5c|x6e　が……それに対する怯えと興奮が……渦巻いていた。 @
+　やがて御堂が、ニヤリと笑った。
+END_JAPANESE
+\x00\x00\x00\x00
+SEQ3 \x8e\x06 CALL1 f\x03 CALL7  REF6 \x94\x03 CALL7 \x005\x00
+LOAD3 SCE026_004\x00 REF6 \x90\x08 CALL7 \x00
+SEQ1 L8 CALL3 \x00\x03\x00`
+START_JAPANESE
+御堂|x5c|x6e　「先生、日向が丘に一人住まいなんですよね？\p　住所、知ってる|x5c|x6e　　んですよ」 @
+錦城|x5c|x6e　「……」 @
+御堂|x5c|x6e　「２階でしょ？\p　知ってます？\p　２階までなら、簡単に梯子でベ|x5c|x6e　　ランダに登れるんですよ。\pガラスだって、ガムテープ１枚で音|x5c|x6e　　もなく簡単に割れる」 @
+錦城|x5c|x6e　「……」 @
+御堂|x5c|x6e　「女の一人暮らしは危険がいっぱいッスからね。\p気を付けないと|x5c|x6e　　−−」
+END_JAPANESE
+\x00\x00\x00\x00
+SEQ3 \xd4\x08 CALL1 f\x03 CALL7  REF6 \x94\x03 CALL7 \x005\x00
+LOAD3 SCE026_005\x00 REF6 \x8e|x0a CALL7 \x00
+SEQ1 P8 CALL3  REF6 \x04\x06 CALL7 \x00
+LOAD2 StopCD REF5 \xde|x0a CALL7 \x005\x00 
+SEQ2 \x00\x00 SEQ5 \x00\x0b SEQ4 \x00\x00 CALL1 \x04\x06 CALL7 \x00
+LOAD3 SePlayEx REF1 \x00T\x0b CALL7 \x005\x00\x03\x00\x9f
+START_JAPANESE
+　パン！ @
+　乾いた音が教室に響き渡った。\pそれは錦城教諭が、御堂の頬を容|x5c|x6e　赦なく張り飛ばした音だった。 @
+　あまりの躊躇のなさに、頬を張られた御堂自身も、一瞬、何が起|x5c|x6e　こったのか理解できていないようだった。\p御堂の顔には呆然とし|x5c|x6e　た表情が仮面のように張り付いていたが、やがてそれは恥辱と憤|x5c|x6e　怒の爆発に取って代わられた。 @
+|x5c|x6e御堂|x5c|x6e　「てめえ……！」 @
+|x5c|x6e/*　▲SE10　一回再生（再生したら次へ言ってしまってOKッス）　*/\a2,0,10,0,　キーンコーンカーンコーン……。 @
+\a4,0,0,0,|x5c|x6e　はかったように終業のチャイムが鳴り響いた。 @
+　爆発の瞬間、不意を突かれた形となった御堂はしばらく間をおい|x5c|x6e　てから、フン、と鼻で笑った。
+END_JAPANESE
+\x00\x00\x00
+SEQ3 t\x0b CALL1 f\x03 CALL7  REF6 \x94\x03 CALL7 \x005\x00
+LOAD3 SCE026_006\x00 REF6 *\x0e CALL7 \x00
+SEQ1 T8 CALL3 \x00\x03\x00p
+START_JAPANESE
+御堂|x5c|x6e　「……つまんねえオンナ」 @
+錦城|x5c|x6e　「以上。授業を終わります」 @
+御堂|x5c|x6e　「……さっきの、脅しじゃないッスよ、センセイ？」 @
+錦城|x5c|x6e　「勝手になさい」 @
+|x5c|x6e　言って錦城教諭は、なにごともなかったかのように軽く御堂から|x5c|x6e　視線を外し、とりわけ急ぐでもなく、平静そのものといった様子|x5c|x6e　で教室から出ていった。\p御堂もまた、鞄を自分の机の上に放り投|x5c|x6e　げ、退室した。\pしかし、精一杯の虚勢といった感じは否めない。|x5c|x6e　勝敗は明らかだった。
+END_JAPANESE
+\x00\x00
+SEQ3 n\x0e CALL1 f\x03 CALL7  REF6 \x94\x03 CALL7 \x005\x00
+LOAD3 SCE026_007\x00 REF6 h\x10 CALL7 \x00
+SEQ1 X8 CALL3 \x00\x03\x00N
+START_JAPANESE
+|x5c|x6e　ほどなく教室には興奮と驚嘆の入り交じった声がわき起こった|x5c|x6e　。 @
+学生|x5c|x6e　「すげえよな、錦城！」 @
+学生|x5c|x6e　「カッコいい〜！」 @
+学生|x5c|x6e　「にしても、御堂も大したことねえよな！」 @
+学生|x5c|x6e　「憧れるよねー、ああいう先生！」 @
+学生|x5c|x6e　「才色兼備、度胸もあり！」 @
+学生|x5c|x6e　「ううー、抱かれてー！」
+END_JAPANESE
+\x00\x00\x00\x00
+SEQ3 \xac\x10 CALL1 f\x03 CALL7  REF6 \x94\x03 CALL7 \x005\x00 
+SEQ2 \x06\x01 CALL1 \x04\x06 CALL7  REF6 .\x06 CALL7 \x005\x00
+LOAD3 SCE026_008\x00 REF6 R\x12 CALL7 \x00
+SEQ1 \\8 CALL3 \x00\x03\x00\x85
+START_JAPANESE
+|x5c|x6e　騒ぎのなかにあって、拓司はひとり、フツフツとわき上がってく|x5c|x6e　る怒りに震えていた。 @
+　−−怒り？ @
+　我に返って、どうして自分がこんなに憤怒に駆られているのか考|x5c|x6e　え込んだが、わからない。\pしばらくたってようやく、拓司は、自|x5c|x6e　分が嫉妬しているのだということに気がついた。 @
+　自分とは関係ない場所で、みんなが盛り上がっている。 @
+　疎外感。 @
+　それに嫉妬しているのだ。 @
+　情けなくなって、拓司は思った。 @
+|x5c|x6e　死んじまおうかなあ。 @
+|x5c|x6e　激しい自己嫌悪が胸を充たし、拓司は死を思った。 @
+　ルーティン・ワーク。
+END_JAPANESE
+\x00\x00
+SEQ3 \x96\x12 CALL1 f\x03 CALL7  REF6 \x94\x03 CALL7 \x005 REF6 f\x03 CALL7 \x00
+LOAD4 TextWindowOff REF2 \xf0\x14 CALL7 \x005\x00 
+SEQ2 \xc8\x00 CALL2 
+LOAD6 .\\Data\\Script\\Bg.Fob REF1 \x00.\x15 CALL7 \x00
+LOAD4 BgNormalFadeIn REF5 X\x15 CALL7 \x005 REF6 \x04\x06 CALL7  REF6 \xde|x0a CALL7 \x005\x00\x1e\x00\x1e\x00\x00\x00\x1e\x00\x00\x00\x00\x00\x92 REF6 f\x03 CALL7 \x00
+LOAD5 TextWindowOnDirect REF5 \xb0\x15 CALL7 \x005 REF6 f\x03 CALL7 \x00
+LOAD3 TextClose REF2 \xe4\x15 CALL7 \x005\x00
+END_FILE

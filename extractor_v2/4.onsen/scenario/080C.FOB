@@ -1,0 +1,55 @@
+START_FILE 6\x08
+HEADER `B#\x01\x00\x00\x00\x00\x9a\x06\x00\x00
+LOAD3 SCE080_001\x00 REF6 \x06\x00 CALL7 \x00
+SEQ1 \xa0\x8c CALL3 \x00\x03\x00\x96
+START_JAPANESE
+　廊下をはいずり、階段を転げ落ち、拓司はようやく自分の教|x5c|x6e室にたどり着いた。\pぶつけたりすりむいたりした部分が鈍く痛む。|x5c|x6e\pしかし、そんなことはもう問題ではない。\p何もかも終わるからだ。|x5c|x6e @
+　教室のドアをなんとか引き開けて、拓司は自分の席を目指した。|x5c|x6e　\p机の中には、買ったばかりのカッターがあるはずだった。 @
+　それさえあれば、なんとかなる。\pなにもかもが、なんとかなる|x5c|x6e　のだ。 @
+　クラスメイトたちが邪魔をする。 @
+　−−ああ、邪魔だ。 @
+　邪魔邪魔。 @
+　こいつら、どうして俺の行く手を遮るんだ？ @
+　邪魔邪魔。 @
+ぬるりとしたぬかるみに手が滑る。 @
+なんだこりゃ。 @
+邪魔邪魔。
+END_JAPANESE
+\x00\x00
+SEQ3 J\x00 CALL2 
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF5 \xc2\x02 CALL7 \x00
+LOAD2 TextOn REF5 \xf0\x02 CALL7 \x005\x00 
+SEQ2 \xc8\x00 CALL2 
+LOAD6 .\\Data\\Script\\Bg.Fob REF1 \x00&\x03 CALL7 \x00
+LOAD4 BgAutoFadeIn REF1 \x00P\x03 CALL7 \x005\x00
+LOAD3 SCE080_002\x00 REF6 t\x03 CALL7 \x00
+SEQ1 \xa4\x8c CALL3 \x00\x03\x00R
+START_JAPANESE
+机までたどり着いた拓司は、必死の力を振り絞って身を起こし、|x5c|x6eどっかりと椅子に腰掛けた。 @
+ふう、とため息をついて、机の中|x5c|x6eを両手でまさぐる。 @
+　−−教科書。 @
+　いらない。 @
+　−−プリント。 @
+　いらない。 @
+　−−バインダー。 @
+　いらない。 @
+　−−ハサミ。 @
+　おしい！ @
+　−−カッター。 @
+　ピンポーン！
+END_JAPANESE
+\x00\x00
+SEQ3 \xb8\x03 CALL1 \xc2\x02 CALL7  REF6 \xf0\x02 CALL7 \x005\x00
+LOAD3 SCE080_003\x00 REF6 :\x05 CALL7 \x00
+SEQ1 \xa8\x8c CALL3 \x00\x03\x00.
+START_JAPANESE
+　そうしてカッターナイフを取り出すと、拓司はキリキリと刃を|x5c|x6e　押し出し、それを喉元に押し当てた。 @
+　終わりだ。 @
+　ようやく瓶から脱出できる。 @
+　さあ。 @
+　終わりだ。
+END_JAPANESE
+\x00\x00\x00\x00
+SEQ3 ~\x05 CALL1 \xc2\x02 CALL7  REF6 \xf0\x02 CALL7 \x005 REF6 \xc2\x02 CALL7 \x00
+LOAD3 TextClose REF2 |\x06 CALL7 \x005\x00
+END_FILE

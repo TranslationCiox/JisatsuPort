@@ -1,0 +1,87 @@
+START_FILE \x07\x0e
+HEADER `B#\x01\x00\x00\x00\x00X\x0b\x00\x00 
+SEQ2 \x08\x01 CALL2 
+LOAD6 .\\Data\\Script\\Bgm.Fob REF2  \x00 CALL7 \x00
+LOAD2 PlayCD REF5 J CALL5 
+LOAD3 SCE038_001\x00 REF6 f\x00 CALL7 \x00
+SEQ1 \x00K CALL3 \x00\x03\x00a
+START_JAPANESE
+話題が奈落へと転がり始めたことを悟った拓司は、慌てて話題を|x5c|x6e転じた。 @
+|x5c|x6e拓司|x5c|x6e　「おやじから、夏の旅行の話って、聞いてるか？」 @
+早桃|x5c|x6e　「……え？」 @
+拓司|x5c|x6e　「家族４人で香港に行くって話」 @
+|x5c|x6e早桃は、拓司の言葉を咀嚼するように、しばらく黙って空を見上|x5c|x6eげていた。 @
+無表情だったが、それが仮面にすぎないことは、拓司にもすぐに|x5c|x6eわかった。 @
+やがて早桃がポツリといった。
+END_JAPANESE
+\x00\x00\x00\x00
+SEQ3 \xaa\x00 CALL2 
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF5 N\x02 CALL7 \x00
+LOAD2 TextOn REF5 |\x02 CALL7 \x005\x00
+LOAD3 SCE038_002\x00 REF6 \x98\x02 CALL7 \x00
+SEQ1 \x04K CALL3 \x00\x03\x00b
+START_JAPANESE
+早桃|x5c|x6e　「……ホント？」 @
+拓司|x5c|x6e　「ああ。\pでも香港って言われてもなあ。 @
+　　中華料理くらいしか、楽しみなんて思いつかないよな」 @
+早桃|x5c|x6e　「……そうだね」 @
+拓司|x5c|x6e　「あと……ジャッキーとかジェットとか。 @
+　　そうだ、トラックスーツ買ってみるかな？ @
+　　あれ着てマラソンでもしたら、なんだか強くなりそうな気が|x5c|x6e　　する」 @
+|x5c|x6e　早桃の顔に、ようやく柔らかい笑顔が戻った。
+END_JAPANESE
+\x00\x00\x00\x00
+SEQ3 \xdc\x02 CALL1 N\x02 CALL7  REF6 |\x02 CALL7 \x005\x00
+LOAD3 SCE038_003\x00 REF6 \x9e\x04 CALL7 \x00
+SEQ1 \x08K CALL3 \x00\x03\x00L
+START_JAPANESE
+早桃|x5c|x6e　「おにいちゃん、カンフー映画好きだもんね」 @
+拓司|x5c|x6e　「まあな」 @
+早桃|x5c|x6e　「子供っぽい！」 @
+拓司|x5c|x6e　「いや。\pカンフーは男のロマンだからさ。 @
+　　年齢は関係ないね」 @
+早桃|x5c|x6e　「うふふ……」 @
+拓司|x5c|x6e　「カンフー……カンフーと…… @
+　　あと、香港といえばブランド品の買い物だな」
+END_JAPANESE
+\x00\x00
+SEQ3 \xe2\x04 CALL1 N\x02 CALL7  REF6 |\x02 CALL7 \x005\x00
+LOAD3 SCE038_004\x00 REF6 L\x06 CALL7 \x00
+SEQ1 \x0cK CALL3 \x00\x03\x00P
+START_JAPANESE
+早桃|x5c|x6e　「うん」 @
+拓司|x5c|x6e　「しかし、おふくろはいいだろうけど、早桃はなあ」 @
+早桃|x5c|x6e　「どうして？」 @
+拓司|x5c|x6e　「だって早桃はブランド品なんて興味ないだろ？」 @
+|x5c|x6e　そう笑っていった拓司だったが、ふと横を見やって、早桃が真|x5c|x6e剣な顔で自分を見つめているのに気がつき、はっと息を呑んだ。 @
+|x5c|x6e拓司|x5c|x6e　「……？」
+END_JAPANESE
+\x00\x00\x00\x00
+SEQ3 \x90\x06 CALL1 N\x02 CALL7  REF6 |\x02 CALL7 \x005\x00
+LOAD3 SCE038_005\x00 REF6 |x0a\x08 CALL7 \x00
+SEQ1 \x10K CALL3 \x00\x03\x00H
+START_JAPANESE
+早桃|x5c|x6e　「……わかってないんだね、おにいちゃん」 @
+拓司|x5c|x6e　「わかってない？　 @
+　　あ、もしかしてブランド品に興味があるってことか？ @
+　　悪い悪い。\pお前もレディだもんな。 @
+　　そういうものに憧れたって、おかしくはない」 @
+早桃|x5c|x6e　「憧れじゃないの」 @
+拓司|x5c|x6e　「……？」
+END_JAPANESE
+\x00\x00
+SEQ3 N\x08 CALL1 N\x02 CALL7  REF6 |\x02 CALL7 \x005\x00
+LOAD3 SCE038_006\x00 REF6 \xa8|x09 CALL7 \x00
+SEQ1 \x14K CALL3 \x00\x03\x00B
+START_JAPANESE
+早桃|x5c|x6e　「憧れとか、そんなぼんやりしたものじゃないの。 @
+　　もっとはっきりした…… @
+　　憧れなんてやわな名前じゃ呼べないようなものなの。 @
+　　熱くて……\p抑えられない。 @
+　　おにいちゃんが知らない早桃が、早桃のなかにはいるの」 @
+拓司|x5c|x6e　「……」
+END_JAPANESE
+\x00\x00
+SEQ3 \xec|x09 CALL1 N\x02 CALL7  REF6 |\x02 CALL7 \x005 REF6 N\x02 CALL7 \x00
+LOAD3 TextClose REF2 :\x0b CALL7 \x005\x00
+END_FILE

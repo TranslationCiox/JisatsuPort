@@ -1,0 +1,64 @@
+START_FILE \xa3|x0a
+HEADER `B#\x01\x00\x00\x00\x00d\x08\x00\x00 
+SEQ2 \x07\x01 CALL2 
+LOAD6 .\\Data\\Script\\Bgm.Fob REF2  \x00 CALL7 \x00
+LOAD2 PlayCD REF5 J CALL5 
+LOAD3 SCE019_001\x00 REF6 f\x00 CALL7 \x00
+SEQ1 P- CALL3 \x00\x03\x00R
+START_JAPANESE
+紅葉|x5c|x6e　「−−もしも〜し？　聞いてますか〜、トラビシタクジくん？！|x5c|x6e　　」 @
+拓司|x5c|x6e　「……え？」 @
+紅葉|x5c|x6e　「聞いてなかったでしょ、あたしの話」 @
+拓司|x5c|x6e　「え、ああ、すまん」 @
+紅葉|x5c|x6e　「−−夏バテ？」 @
+拓司|x5c|x6e　「かもな」 @
+紅葉|x5c|x6e　「朝から？」 @
+拓司|x5c|x6e　「らしい」 @
+|x5c|x6e　紅葉はナサケナイ、とため息をついた。
+END_JAPANESE
+\x00\x00
+SEQ3 \xaa\x00 CALL2 
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF5 \x12\x02 CALL7 \x00
+LOAD2 TextOn REF5 @\x02 CALL7 \x005\x00
+LOAD3 SCE019_002\x00 REF6 \\\x02 CALL7 \x00
+SEQ1 T- CALL3 \x00\x03\x00L
+START_JAPANESE
+紅葉|x5c|x6e　「ちゃんとご飯、食べてる？」 @
+拓司|x5c|x6e　「まあ、普通に」 @
+紅葉|x5c|x6e　「ふうん」 @
+拓司|x5c|x6e　「……」 @
+紅葉|x5c|x6e　「……あのさ」 @
+拓司|x5c|x6e　「？」 @
+紅葉|x5c|x6e　「……あ、いや、そのね！　ほら、アンタ今日、お昼ご飯どうす|x5c|x6e　　るのかな、って。\pもし購買のパンとかで済ませるつもりなら−|x5c|x6e　　−」
+END_JAPANESE
+\x00\x00
+SEQ3 \xa0\x02 CALL1 \x12\x02 CALL7  REF6 @\x02 CALL7 \x005\x00 
+SEQ2 \x08\x01 CALL1  \x00 CALL7  REF6 J CALL5 
+LOAD3 SCE019_003\x00 REF6 >\x04 CALL7 \x00
+SEQ1 X- CALL3 \x00\x03\x00A
+START_JAPANESE
+？？？|x5c|x6e　「−−おはよう」 @
+|x5c|x6e/*　■CG05　表示　（クロスフェード）　*/\a7,-2,-2,0,\a0,4,2,0,\a6,-2,0,0,その声は、すぐ耳元で聞こえた。 @
+ぎょっとして振り返ると、すぐ後ろにひとりの女の子がひっそ|x5c|x6eり立っている。 @
+拓司はその少女の名前を知っていた。
+END_JAPANESE
+\x00\x00\x00
+SEQ3 \x82\x04 CALL1 \x12\x02 CALL7  REF6 @\x02 CALL7 \x005\x00
+LOAD3 SCE019_004\x00 REF6 \xc0\x05 CALL7 \x00
+SEQ1 \\- CALL3 \x00\x03\x00\x7f
+START_JAPANESE
+|x5c|x6e月代カンナ。 @
+夜の闇を思わせる黒いストレートの髪。 @
+潤んで黒目がちな目と、長いまつげ。 @
+華奢な体つきと、小さな顔。 @
+部分部分を見れば、美しい少女人形のようではあるが、それらがす|x5c|x6eべて集まっても、なぜか人形的なかわいらしさは生まれてこない。 @
+その少女を包んでいる霧のような曖昧さ−−それはどこからくるの|x5c|x6eであろう？ @
+−−目だ。 @
+拓司と同じ目……世界から消えかかっている人間の目だ。 @
+|x5c|x6eしかし、それにしても−−拓司は思った。 @
+|x5c|x6e−−どうして月代カンナはおれに声をかけてきたのだろう？
+END_JAPANESE
+\x00\x00
+SEQ3 \x04\x06 CALL1 \x12\x02 CALL7  REF6 @\x02 CALL7 \x005 REF6 \x12\x02 CALL7 \x00
+LOAD3 TextClose REF2 F\x08 CALL7 \x005\x00
+END_FILE

@@ -1,0 +1,58 @@
+START_FILE \xfa\x0c
+HEADER `B#\x01\x00\x00\x00\x00\xea|x0a\x00\x00
+LOAD3 SCE042_001\x00 REF6 \x06\x00 CALL7 \x00
+SEQ1 @Q CALL3 \x00\x03\x00L
+START_JAPANESE
+　拓司は屋上に一人、たたずんでいた。 @
+　脱力感。 @
+　身体の端々に鉄の塊を埋め込まれたような感じ。 @
+　身体の中心が湿ってしまったような感じ。 @
+|x5c|x6e　一日はまだ半分しか終わっていない。\pにも関わらず、拓司は消|x5c|x6e　耗しきっていた。 @
+/*▲BGM　Track06　再生*/\a2,-1,6,1,|x5c|x6e|x5c|x6e　死んじまおうかなあ。
+END_JAPANESE
+\x00
+SEQ3 J\x00 CALL2 
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF5 \x9a\x01 CALL7 \x00
+LOAD2 TextOn REF5 \xc8\x01 CALL7 \x005\x00
+LOAD3 SCE042_002\x00 REF6 \xe4\x01 CALL7 \x00
+SEQ1 DQ CALL3 \x00\x03\x00\xe4
+START_JAPANESE
+　その呪文を唱えるようになってから、拓司は意識的に、あらゆ|x5c|x6eる場所に『死』の陰を探してきた。\pたとえば格言集の中に……小|x5c|x6e説の中に……歌の中に……そこには幾十、幾百もの『死』が、手|x5c|x6eに取れるような形で用意されている。\pいわく、「死において、わ|x5c|x6eれわれは生命を失いはしない。\pわれわれはただ個人性を失うだけ|x5c|x6eだ」「死を恐れることは、あまりにも多く生に尊敬を払うことで|x5c|x6eある」「人生は夢、死以外にあらがいうるものはなし」「完全|x5c|x6eに独立した自己などありなえず、人はみな他人の一部でしかない|x5c|x6e以上、他人を傷つけない死というものもありえない」……。 @
+　けれどもそれらから見いだされるのは、死の真実ではなく、逆|x5c|x6e説的に、あいまいさでしかない。\pいくつもの形が提示されうると|x5c|x6eいうことは、唯一の真実がそこにはない、ということなのだ。 @
+　結局のところ、死というものは、言葉にしても意味のないもの|x5c|x6eあるいは言葉にすることによって意味が失われてしまうようなも|x5c|x6eのなのだ。\p故に人間は死を恐れる。\p理解できないからだ。
+END_JAPANESE
+\x00\x00\x00\x00
+SEQ3 (\x02 CALL1 \x9a\x01 CALL7  REF6 \xc8\x01 CALL7 \x005\x00
+LOAD3 SCE042_003\x00 REF6 \xf2\x05 CALL7 \x00
+SEQ1 HQ CALL3 \x00\x03\x00\x9b
+START_JAPANESE
+　しかし、拓司にとって、死は、現実と比べれば理解しやすいも|x5c|x6e　のであった。 @
+　死こそが、自分が選びうる最高にドラマティックで美しい物語|x5c|x6e　ではないか？ @
+　灰色の世界に怠惰に生きることに、死のカタルシス以上の価値|x5c|x6e　があるのか？ @
+　世界を失うことを恐れないのであれば、死もまた、恐れるに足|x5c|x6e　りないのではないか？　地面にたたきつけられる袋詰めの猫。 @
+　手首から流れ出る血。 @
+　リアルだ。 @
+　いまおれに必要なのはリアルだ。 @
+　おれがここに生きているという証がほしい。\p世界におれという|x5c|x6e　杭を打ち込むことだ。 @
+　ならば。 @
+　死こそが、唯一の方法ではないか？ @
+　方法。 @
+　救済の方法ではないか？
+END_JAPANESE
+\x00\x00
+SEQ3 6\x06 CALL1 \x9a\x01 CALL7  REF6 \xc8\x01 CALL7 \x005\x00
+LOAD3 SCE042_004\x00 REF6 \xdc\x08 CALL7 \x00
+SEQ1 LQ CALL3 \x00\x03\x00&
+START_JAPANESE
+　思考はいつもそこで停滞する。\pそれ以上は先に進めない。 @
+　実際に死ぬしか、方法はないからだ。 @
+　そして死ぬほどの勇気は、拓司にはない。
+END_JAPANESE
+\x00\x00\x00\x00
+SEQ3  |x09 CALL1 \x9a\x01 CALL7  REF6 \xc8\x01 CALL7 \x005\x00
+LOAD6 .\\Data\\Script\\Bgm.Fob REF2 \xf2|x09 CALL7 \x00
+LOAD2 StopCD REF5 \x1c|x0a CALL7 \x005\x00 
+SEQ2 \x00\x00 SEQ5 \x00\x18 SEQ4 \x00\x00 CALL1 \xf2|x09 CALL7 \x00
+LOAD3 SePlayEx REF1 \x00\x92|x0a CALL7 \x005\x00\x1e\x00<\x00\x00\x00\x1e\x00\x00\x00\x00\x00\x92 REF6 \x9a\x01 CALL7 \x00
+LOAD3 TextClose REF2 \xcc|x0a CALL7 \x005\x00
+END_FILE

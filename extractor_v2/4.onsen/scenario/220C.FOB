@@ -1,0 +1,56 @@
+START_FILE [|0d
+HEADER `B#\x01\x00\x00\x00\x00\xf0|x0a\x00\x00
+LOAD3 SCE220_001\x00 REF6 \x06\x00 CALL7 \x00
+SEQ1 `g\x01\x00\x0c\x00\x00\x00\x00\x00"\x00\x03\x00\x11
+START_JAPANESE
+|x5c|x6e|x5c|x6e|x5c|x6e|x5c|x6e|x5c|x6e|x5c|x6e|x5c|x6e|x5c|x6e|x5c|x6e|x5c|x6e　　　　　　　　　　　　　『９日目』
+END_JAPANESE
+\x00\x00\x00\x00
+SEQ3 J\x00 CALL2 
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF5 \xae\x00 CALL7 \x00
+LOAD2 TextOn REF5 \xdc CALL5  
+SEQ2 \x0c\x01 CALL2 
+LOAD6 .\\Data\\Script\\Bgm.Fob REF2 \x12\x01 CALL7 \x00
+LOAD2 PlayCD REF5 <\x01 CALL7 \x005\x00
+LOAD3 SCE220_002\x00 REF6 X\x01 CALL7 \x00
+SEQ1 dg\x01\x00\x0c\x00\x00\x00\x00\x00"\x00\x03\x00\x81
+START_JAPANESE
+鍵の管理は、御堂が受け持つことになった。 @
+御堂は、完全に気を失ったなたねから鍵を奪い、その管理を一方|x5c|x6e的に宣言した。\p誰もそれに異を唱える者はなかった。 @
+/*■CG38　表示（クロスフェード）*/\a7,-2,-2,0,\a0,37,2,0,\a6,-2,0,0,|x5c|x6e御堂は、この部屋を支配する真理を、これ以上わかりやすい形で|x5c|x6e証明してみせた。 @
+すなわち、暴力が話し合いに勝るという事実を。 @
+それが証明されたいま、御堂の宣言は、即、決定事項だった。 @
+御堂は準備室を『自分の部屋』と決め、そこでの生活を始めた。 @
+傍らには、錦城の姿があった。
+END_JAPANESE
+\x00\x00
+SEQ3 \x9c\x01 CALL1 \xae\x00 CALL7  REF6 \xdc CALL5 
+LOAD3 SCE220_003\x00 REF6 \xda\x03 CALL7 \x00
+SEQ1 hg\x01\x00\x0c\x00\x00\x00\x00\x00"\x00\x03\x00\x8e
+START_JAPANESE
+御堂|x5c|x6e　「安心しろ。\p俺はそこのイカレ女とは違う。\pちゃんといままで|x5c|x6e　　どおり、食糧は平等に配給する。\pただ、部屋をもらうってだ|x5c|x6e　　けだ。\pお前らのパーソナルスペースも２人分広がるわけだし、|x5c|x6e　　文句はねえだろ？」 @
+錦城|x5c|x6e　「理屈から言っても、食糧管理者が食糧管理室に常在するって|x5c|x6e　　いうのは合理的だわ。\p今回の雲居さんへの……暴力は……|x5c|x6e　　不可欠だった。\pわかるわね、みんな？\p　こういうことは二度|x5c|x6e　　と起こされてはならないわ。\pだから、その防止の意味でも、|x5c|x6e　　御堂くんがみんなと違う場所にいるということは意味がある|x5c|x6e　　……そうでしょう？」
+END_JAPANESE
+\x00\x00
+SEQ3 \x1e\x04 CALL1 \xae\x00 CALL7  REF6 \xdc CALL5  
+SEQ2 &\x00 CALL2 
+LOAD6 .\\Data\\Script\\Bg.Fob REF1 \x00\xaa\x06 CALL7 \x00
+LOAD4 BgAutoFadeIn REF1 \x00\xd4\x06 CALL7 \x005\x00
+LOAD3 SCE220_004\x00 REF6 \xf8\x06 CALL7 \x00
+SEQ1 lg\x01\x00\x0c\x00\x00\x00\x00\x00"\x00\x03\x00\xc7
+START_JAPANESE
+なたねはナイロンテープで拘束され、部屋の隅に転がされること|x5c|x6eとなった。\p猿ぐつわをかまされ、日に１度、トイレが許可される|x5c|x6eとき、そして最終波動の予兆はないかどうかを尋ねられるときだ|x5c|x6eけ解放される。 @
+殴られた顔面は醜く腫れ上がり、青あざにおおわれて痛々しい。 @
+鼻血が拭き取られることなく鼻から下にこびりついている。 @
+鼻が折れたのか、思い出したように血が流れ始めることもある。 @
+歯で切ったのであろう、唇がザックリと縦に裂けている。 @
+レンズが粉々になった眼鏡が、かろうじて耳に引っかかっている。|x5c|x6e\pなにも喋らない。\pじっと転がってラジオの雑音に耳を澄ませてい|x5c|x6eる……。 @
+|x5c|x6e食事は、水だけしか与えられていない。 @
+|x5c|x6e御堂|x5c|x6e　「なにかの本で読んだけど、人間ってのは、水がありゃ一週間|x5c|x6e　　は生きられるそうだ。\p５日だったかな？\p　ま、どっちでも|x5c|x6e　　いいけどな」 @
+|x5c|x6e御堂は笑った。
+END_JAPANESE
+\x00\x00\x00\x00
+SEQ3 <\x07 CALL1 \xae\x00 CALL7  REF6 \xdc CALL5  
+SEQ2 \xc8\x00 CALL1 \xaa\x06 CALL7  REF6 \xd4\x06 CALL7 \x005 REF6 \xae\x00 CALL7 \x00
+LOAD3 TextClose REF2 \xd2|x0a CALL7 \x005\x00
+END_FILE

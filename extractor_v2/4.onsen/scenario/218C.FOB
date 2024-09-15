@@ -1,0 +1,51 @@
+START_FILE \xc1|x09
+HEADER `B#\x01\x00\x00\x00\x00\xe0\x07\x00\x00
+LOAD3 SCE218_001\x00 REF6 \x06\x00 CALL7 \x00
+SEQ1 @d\x01\x00\x0c\x00\x00\x00\x00\x00"\x00\x03\x006
+START_JAPANESE
+拓司|x5c|x6e　「やめろ、御堂！」 @
+|x5c|x6eいって拓司は突進した。\p御堂の肩にしがみつく。 @
+|x5c|x6e拓司|x5c|x6e　「暴力は……」 @
+御堂|x5c|x6e　「うるせえッ！」 @
+|x5c|x6e重い一撃が顎を捉え、さらに鋭い蹴りが拓司を後方にはじき飛ば|x5c|x6eした。
+END_JAPANESE
+\x00\x00
+SEQ3 J\x00 CALL2 
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF5 B\x01 CALL7 \x00
+LOAD2 TextOn REF5 p\x01 CALL7 \x005\x00
+LOAD3 SCE218_002\x00 REF6 \x8c\x01 CALL7 \x00
+SEQ1 Dd\x01\x00\x0c\x00\x00\x00\x00\x00"\x00\x03\x00x
+START_JAPANESE
+御堂|x5c|x6e　「勘違いするなよモヤシ小僧。\pお前が今まで物を決めてこられ|x5c|x6e　　たのはお前の力じゃなくて俺の力なんだよ。\p俺がお前を許し|x5c|x6e　　ていたからお前は自由に行動できたんだよ。\pでもこれからは|x5c|x6e　　違うぞ。\pこれからは俺の許可無しでなにもさせやしねえから|x5c|x6e　　な。\pいいか、なにもだ！」 @
+|x5c|x6e御堂はじりじりとなたねに歩み寄った。 @
+|x5c|x6eなたね|x5c|x6e　「やめてやめてやめて！ @
+　　やあああああめえええろおおおおお！」 @
+御堂|x5c|x6e　「この……××××が……思い知れ！\p　思い知れ！」
+END_JAPANESE
+\x00\x00
+SEQ3 \xd0\x01 CALL1 B\x01 CALL7  REF6 p\x01 CALL7 \x005\x00 
+SEQ2 $\x00 CALL2 
+LOAD6 .\\Data\\Script\\Bg.Fob REF1 \x00\x04\x04 CALL7 \x00
+LOAD4 BgAutoFadeIn REF1 \x00.\x04 CALL7 \x005\x00
+LOAD3 SCE218_003\x00 REF6 R\x04 CALL7 \x00
+SEQ1 Hd\x01\x00\x0c\x00\x00\x00\x00\x00"\x00\x03\x00\x9b
+START_JAPANESE
+御堂はなたねの顔面に、容赦のないパンチを雨あられと降らせて|x5c|x6eいる。\p溜まり溜まったストレスをすべて叩き付けるように、な|x5c|x6eたねを殴り続ける。 @
+ごつ、ごつ、ごつ！ @
+鈍い音が教室に響き渡る。\pすでになたねは悲鳴もない。 @
+ぐったりと御堂の下に横たわり、殴られるがままだ。 @
+拓司は助けを求めて、辺りを見回した。 @
+カンナ。\p紅葉。\p早桃。 @
+どの顔も無表情だった。 @
+ただぼんやりと、なたねへの制裁を見つめている。 @
+拓司はこの瞬間、ひとつの秩序が崩壊するのを感じた。 @
+理性や人間性に立脚した、あらゆるものは瓦解した。 @
+そしていま、眼前で展開されていることこそ、新しい秩序の骨子|x5c|x6eを為すものであるはずだった。
+END_JAPANESE
+\x00\x00
+SEQ3 \x96\x04 CALL1 B\x01 CALL7  REF6 p\x01 CALL7 \x005\x00 
+SEQ2 \xc8\x00 CALL1 \x04\x04 CALL7  REF6 .\x04 CALL7 \x005\x00
+LOAD6 .\\Data\\Script\\Bgm.Fob REF2 p\x07 CALL7 \x00
+LOAD2 StopCD REF5 \x9a\x07 CALL7 \x005 REF6 B\x01 CALL7 \x00
+LOAD3 TextClose REF2 \xc2\x07 CALL7 \x005\x00
+END_FILE

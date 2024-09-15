@@ -1,0 +1,39 @@
+START_FILE \xc5\x05
+HEADER \xa4|x093\x01\x00\x00\x00\x00\xba\x04\x00\x00
+LOAD3 SCE061_001\x00 REF6 \x06\x00 CALL7 \x00
+SEQ1 \xf0n CALL3 \x00 
+SEQ2 \x02\x00 SEQ5 \x00\x1a SEQ4 \x01\x00 CALL2 
+LOAD6 .\\Data\\Script\\Bgm.Fob REF2 \x98\x00 CALL7 \x00
+LOAD2 SePlay REF5 \xc2 CALL5 \x03\x00\\
+START_JAPANESE
+なたね|x5c|x6e　「次は？」 @
+拓司|x5c|x6e　「２階……カンナの教室だ」 @
+なたね|x5c|x6e　「月代カンナ……変わった子ね」 @
+拓司|x5c|x6e　「……」 @
+なたね|x5c|x6e　「あの子なら、たぶん死んではいないと思う」 @
+拓司|x5c|x6e　「……？」 @
+なたね|x5c|x6e　「あの子は深く憑かれすぎた。\p単純に運命として受け入れるに|x5c|x6e　　は、大きくなりすぎている」 @
+拓司|x5c|x6e　「……何の話だ？」 @
+なたね|x5c|x6e　「死の話」
+END_JAPANESE
+\x00\x00
+SEQ3 \xde\x00 CALL2 
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF5 n\x02 CALL7 \x00
+LOAD2 TextOn REF5 \x9c\x02 CALL7 \x005\x00 
+SEQ2 \x02\x00 CALL1 \x98\x00 CALL7 \x00
+LOAD2 SeStop REF5 \xde\x02 CALL7 \x005\x00 
+SEQ2 <\x00 CALL2 
+LOAD7 .\\Data\\Script\\TextFunc.fob REF5 \x14\x03 CALL7 \x00
+LOAD3 WaitTime REF1 \x00B\x03 CALL7 \x005\x00
+LOAD3 SCE061_002\x00 REF6 b\x03 CALL7 \x00
+SEQ1 \xf4n CALL3 \x00\x03\x00\x12
+START_JAPANESE
+拓司|x5c|x6e　「早桃は廊下で待っていろ。\p雲居さんは……一緒に頼む」
+END_JAPANESE
+\x00\x00
+SEQ3 \xa6\x03 CALL1 n\x02 CALL7  REF6 \x9c\x02 CALL7 \x005\x00 
+SEQ2 \xc9\x00 CALL2 
+LOAD6 .\\Data\\Script\\Bg.Fob REF1 \x00B\x04 CALL7 \x00
+LOAD4 BgAutoFadeIn REF1 \x00l\x04 CALL7 \x005 REF6 n\x02 CALL7 \x00
+LOAD3 TextClose REF2 \x9c\x04 CALL7 \x005\x00
+END_FILE

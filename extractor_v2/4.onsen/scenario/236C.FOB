@@ -1,0 +1,80 @@
+START_FILE \x98\x11
+HEADER `B#\x01\x00\x00\x00\x00\x8a|0d\x00\x00
+LOAD3 SCE236_001\x00 REF6 \x06\x00 CALL7 \x00
+SEQ1 `\x80\x01\x00\x0c\x00\x00\x00\x00\x00"\x00
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF5 J\x00 CALL7 \x00
+LOAD5 TextWindowOffDirect REF6 x CALL5  
+SEQ2 \x02\x00 SEQ5 \x00\x1b SEQ4 \x00\x00 CALL2 
+LOAD6 .\\Data\\Script\\Bgm.Fob REF2 \xee\x00 CALL7 \x00
+LOAD2 SePlay REF5 \x18\x01 CALL7 \x005\x00 
+SEQ2 \xca\x00 CALL2 
+LOAD6 .\\Data\\Script\\Bg.Fob REF1 \x00N\x01 CALL7 \x00
+LOAD2 BgOn REF1 \x00x\x01 CALL7 \x005\x00 
+SEQ2 \x01\x00 CALL2 
+LOAD7 .\\Data\\Script\\TextFunc.fob REF5 \xae\x01 CALL7 \x00
+LOAD3 WaitTime REF1 \x00\xdc\x01 CALL7 \x005\x00 
+SEQ2 \xc8\x00 CALL1 N\x01 CALL7  REF6 x\x01 CALL7 \x005\x00 
+SEQ2 \x01\x00 CALL1 \xae\x01 CALL7  REF6 \xdc\x01 CALL7 \x005\x00 
+SEQ2 \x02\x00 CALL1 \xee\x00 CALL7 \x00
+LOAD2 SeStop REF5 \x8a\x02 CALL7 \x005\x00 
+SEQ2 \x02\x00 SEQ5 \x00\x1b SEQ4 \x00\x00 CALL1 \xee\x00 CALL7  REF6 \x18\x01 CALL7 \x005\x00 
+SEQ2 \xca\x00 CALL1 N\x01 CALL7  REF6 x\x01 CALL7 \x005\x00 
+SEQ2 \x01\x00 CALL1 \xae\x01 CALL7  REF6 \xdc\x01 CALL7 \x005\x00 
+SEQ2 \xc8\x00 CALL1 N\x01 CALL7  REF6 x\x01 CALL7 \x005\x00 
+SEQ2 \x01\x00 CALL1 \xae\x01 CALL7  REF6 \xdc\x01 CALL7 \x005\x00 
+SEQ2 <\x00 CALL1 \xae\x01 CALL7  REF6 \xdc\x01 CALL7 \x005\x00 
+SEQ2 \xc9\x00 CALL1 N\x01 CALL7 \x00
+LOAD4 BgNormalFadeIn REF5 8\x04 CALL7 \x005\x00 
+SEQ2 \x08\x01 CALL1 \xee\x00 CALL7 \x00
+LOAD2 PlayCD REF5 \x82\x04 CALL7 \x005\x00 
+SEQ2 \x02\x00 CALL1 \xee\x00 CALL7  REF6 \x8a\x02 CALL7 \x005 REF6 J\x00 CALL7 \x00
+LOAD4 TextWindowOn REF1 \x00\xde\x04 CALL7 \x005\x00\x03\x00l
+START_JAPANESE
+白い部屋で目覚めてホッとした気分になったのは、これが初めて|x5c|x6eだった。 @
+枕元には教授が座っている。 @
+パイプ椅子に腰を下ろして、じっと拓司を見つめている。 @
+|x5c|x6e教授|x5c|x6e　「おかえり」 @
+|x5c|x6e教授はいった。 @
+いつもどおり、機械的といっていいような無愛想な声だったが、|x5c|x6eそこにはなにか、不器用な親しみが込められているように思えた。|x5c|x6e\pその声は、ひどく懐かしいもののように思えた。 @
+|x5c|x6e教授|x5c|x6e　「おかえり」 @
+|x5c|x6e教授が繰り返した。
+END_JAPANESE
+\x00\x00
+SEQ3 \x02\x05 CALL1 J\x00 CALL7 \x00
+LOAD2 TextOn REF5 \xde\x06 CALL7 \x005\x00
+LOAD3 SCE236_002\x00 REF6 \xfa\x06 CALL7 \x00
+SEQ1 d\x80\x01\x00\x0c\x00\x00\x00\x00\x00"\x00\x03\x00g
+START_JAPANESE
+拓司の目から、堰を切ったように涙があふれ出した。 @
+ベッドから起きあがって教授に触れようとしたが、身体の中心が|x5c|x6e砕け散ってしまったかのように、力が入らない。 @
+それでも拓司は必死で手を伸ばした。 @
+教授が、その手に優しく触れた。 @
+温かい、人間の手だった。 @
+|x5c|x6e教授|x5c|x6e　「ようやく認めてくれたようだね」 @
+拓司|x5c|x6e　「……はい」 @
+|x5c|x6e拓司は絞り出すように言った。 @
+|x5c|x6e拓司|x5c|x6e　「ここが……この世界が……」
+END_JAPANESE
+\x00\x00
+SEQ3 >\x07 CALL1 J\x00 CALL7  REF6 \xde\x06 CALL7 \x005\x00
+LOAD3 SCE236_003\x00 REF6 \x14|x09 CALL7 \x00
+SEQ1 h\x80\x01\x00\x0c\x00\x00\x00\x00\x00"\x00\x03\x00|
+START_JAPANESE
+教授|x5c|x6e　「もういい。\p世界について考えるのはよしたまえ。\pこれからは|x5c|x6e　　少しずつ、自分のことを考えていくんだ。\p世界などどうでも|x5c|x6e　　いい。\pどんな世界にいようとも、君は君だ。\pそうだろう？」 @
+拓司|x5c|x6e　「……はい」 @
+教授|x5c|x6e　「覚えてはいないだろうが、君はこうした混乱状態を、もう数|x5c|x6e　　度繰り返してきている。\pしかし今回は、いつもとは明らかに|x5c|x6e　　違う。\pいままで君は、混乱の中で精神に限界をきたし、自殺|x5c|x6e　　を図ることまであった。\p死ねば何が本当かがわかると思って、|x5c|x6e　　ね」
+END_JAPANESE
+\x00\x00\x00\x00
+SEQ3 X|x09 CALL1 J\x00 CALL7  REF6 \xde\x06 CALL7 \x005\x00
+LOAD3 SCE236_004\x00 REF6 \x82\x0b CALL7 \x00
+SEQ1 l\x80\x01\x00\x0c\x00\x00\x00\x00\x00"\x00\x03\x00X
+START_JAPANESE
+拓司|x5c|x6e　「自殺」 @
+教授|x5c|x6e　「ああ。\pもしかしたら夢にも、そういった傾向の片鱗が現出し|x5c|x6e　　たのではないかな？」 @
+拓司|x5c|x6e　「はい」 @
+教授|x5c|x6e　「そうか。\pしかし、もう、きみはそうした危険な状況を切り抜|x5c|x6e　　けた。\pきみは階段を一歩、昇ったんだ。\pこれからはどんどん|x5c|x6e　　良くなっていく。\pそれを信じて、私と一緒に頑張ろうじゃな|x5c|x6e　　いか」
+END_JAPANESE
+\x00\x00\x00\x00
+SEQ3 \xc6\x0b CALL1 J\x00 CALL7  REF6 \xde\x06 CALL7 \x005 REF6 J\x00 CALL7 \x00
+LOAD3 TextClose REF2 l|0d CALL7 \x005\x00
+END_FILE

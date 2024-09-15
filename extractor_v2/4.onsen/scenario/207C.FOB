@@ -1,0 +1,28 @@
+START_FILE \xb7\x07
+HEADER `B#\x01\x00\x00\x00\x00\xa8\x05\x00\x00
+LOAD3 SCE207_001\x00 REF6 \x06\x00 CALL7 \x00
+SEQ1 \x10S\x01\x00\x0c\x00\x00\x00\x00\x00"\x00\x03\x00\xa7
+START_JAPANESE
+拓司|x5c|x6e　「君は、教授はおれにウソを聞かせているという。\pおれをコン|x5c|x6e　　トロールしようとしていると……。\p教授とは何者なんだ？ @
+　　なんのために、おれをコントロールしようとしている？」 @
+ナタネ|x5c|x6e　「教授が何者なのかはわからないわ。\p特殊な力を持った人間か|x5c|x6e　　もしれないし、宇宙人かもしれない」 @
+拓司|x5c|x6e　「ウチュウジン？」 @
+ナタネ|x5c|x6e　「くすくす……『学校に籠城する世界』の雲居なたねなら、|x5c|x6e　　きっとそう言ったでしょうね。\p教授は宇宙人だって。 @
+　　……教授が何者なのか、私にもそれはわからないわ。\pただは|x5c|x6e　　っきりしているのは、教授が敵だということ。\pなぜなら教授|x5c|x6e　　こそが、波動を使って世界を滅亡させた張本人だからよ」 @
+拓司|x5c|x6e　「……」
+END_JAPANESE
+\x00\x00\x00\x00
+SEQ3 J\x00 CALL2 
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF5 \x06\x03 CALL7 \x00
+LOAD2 TextOn REF5 4\x03 CALL7 \x005\x00
+LOAD3 SCE207_002\x00 REF6 P\x03 CALL7 \x00
+SEQ1 \x14S\x01\x00\x0c\x00\x00\x00\x00\x00"\x00\x03\x00l
+START_JAPANESE
+ナタネ|x5c|x6e　「あなたの世界は、教授によって完全に破壊された。\p破壊とい|x5c|x6e　　っても物理的な……ビルが壊されたとか人が殺されたとか…|x5c|x6e　　…そういう破壊ではないわ。\p無くなったの。\p完全に消滅した|x5c|x6e　　の。\p教授による侵略は、三次元的な意味では説明できない|x5c|x6e　　……存在と……世界のなりたち自体に関わる破壊行為よ」 @
+拓司|x5c|x6e　「……」 @
+ナタネ|x5c|x6e　「世界は消滅して……あなただけが生き残った。\p教授はあなた|x5c|x6e　　を恐れている」
+END_JAPANESE
+\x00\x00
+SEQ3 \x94\x03 CALL1 \x06\x03 CALL7  REF6 4\x03 CALL7 \x005 REF6 \x06\x03 CALL7 \x00
+LOAD3 TextClose REF2 \x8a\x05 CALL7 \x005\x00
+END_FILE

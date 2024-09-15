@@ -1,0 +1,35 @@
+START_FILE \xd6\x05
+HEADER \xa4|x093\x01\x00\x00\x00\x00x\x04\x00\x00
+LOAD3 SCE222_001\x00 REF6 \x06\x00 CALL7 \x00
+SEQ1 \x80j\x01\x00\x0c\x00\x00\x00\x00\x00"\x00\x03\x00x
+START_JAPANESE
+夜、みんなが寝静まったのを確認してから、拓司はなたねのもと|x5c|x6eに向かった。 @
+なたねは起きていた。\p最小限に音量を絞ったラジオから漏れる雑|x5c|x6e音を、黙ってじっと聞いていた。 @
+|x5c|x6e拓司|x5c|x6e　「少ないけど……」 @
+なたね|x5c|x6e　「……」 @
+拓司|x5c|x6e　「ほら」 @
+|x5c|x6e拓司はなたねの猿ぐつわを外し、唇の中にランチョンミートをす|x5c|x6eこしずつ滑り込ませた。 @
+なたねは機械的に口を動かし、それを嚥下した。 @
+心の底をのぞき込むように、なたねは拓司の目をじっと見つめた。|x5c|x6e\pそしてひとこと、いった。
+END_JAPANESE
+\x00\x00
+SEQ3 J\x00 CALL2 
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF5 J\x02 CALL7 \x00
+LOAD2 TextOn REF5 x\x02 CALL7 \x005\x00
+LOAD3 SCE222_002\x00 REF6 \x94\x02 CALL7 \x00
+SEQ1 \x84j\x01\x00\x0c\x00\x00\x00\x00\x00"\x00\x03\x00O
+START_JAPANESE
+なたね|x5c|x6e　「……それは」 @
+拓司|x5c|x6e　「……？」 @
+なたね|x5c|x6e　「……地下で待っている」 @
+拓司|x5c|x6e　「地下？」 @
+なたね|x5c|x6e　「……ひかりよ」 @
+拓司|x5c|x6e　「……」 @
+なたね|x5c|x6e　「……我と共に歩め」 @
+|x5c|x6eそこまでいうとなたねはグルリと体を返し、拓司に背を向けた。 @
+それっきり、なたねは一言も話そうとはしなかった。
+END_JAPANESE
+\x00\x00
+SEQ3 \xd8\x02 CALL1 J\x02 CALL7  REF6 x\x02 CALL7 \x005 REF6 J\x02 CALL7 \x00
+LOAD3 TextClose REF2 Z\x04 CALL7 \x005\x00
+END_FILE

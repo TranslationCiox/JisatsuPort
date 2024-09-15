@@ -1,0 +1,35 @@
+START_FILE \x18\x07
+HEADER `B#\x01\x00\x00\x00\x00\x92\x05\x00\x00 
+SEQ2 \xc8\x00 CALL2 
+LOAD6 .\\Data\\Script\\Bg.Fob REF1 \x00 \x00 CALL7 \x00
+LOAD4 BgAutoFadeIn REF1 \x00J CALL5  
+SEQ2 |x09\x01 CALL2 
+LOAD6 .\\Data\\Script\\Bgm.Fob REF2 \x88\x00 CALL7 \x00
+LOAD2 PlayCD REF5 \xb2 CALL5 
+LOAD3 SCE216_001\x00 REF6 \xce\x00 CALL7 \x00
+SEQ1  a\x01\x00\x0c\x00\x00\x00\x00\x00"\x00\x03\x00\xb2
+START_JAPANESE
+こうして１日が終わった。 @
+深夜を過ぎても、拓司は眠りにつくことができなかった。 @
+心身共にプレッシャーでぐったりとしてはいるものの、不眠症だ|x5c|x6eけは相変わらずだ。\p見慣れない天井を見上げながら、拓司はそれ|x5c|x6eまでのことを頭の中で整理しようとした。\pしかし、いくつものパ|x5c|x6eズルを適当に寄せ集めてぶちまけたかのように、それぞれの情報|x5c|x6eには統一性も、法則性もないように思えた。\pそれは消耗としかい|x5c|x6eいようのない作業だった。\pおそらく、どんなにピースをひねり回|x5c|x6eそうとも、パズルは完成しないように仕組まれているのだ……。 @
+しかし、眠れない夜には、そんなパズルと戯れるのもまた、良い|x5c|x6e時間つぶしとなった。 @
+|x5c|x6e/*▲BGM　停止*/\a4,-1,0,0,声|x5c|x6e　「起きてる？」 @
+|x5c|x6eはっと気づくと、足下に影が見える。 @
+それは……
+END_JAPANESE
+\x00\x00\x00\x00
+SEQ3 \x12\x01 CALL2 
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF5 \xfa\x03 CALL7 \x00
+LOAD2 TextOn REF5 (\x04 CALL7 \x005\x00!
+SEQ2 \x14\x00\x00\x00|0d\x00\x02\x00\x1e\x00\x00\x00\x00\x00\x0b\x00|0d\x00\x01\x00\x1e\x00\x00\x00\x00\x00\x1b\x00\x00\x00\x00\x001\x00\x00\x00\x00\x00\xd4\x04\x00\x00\x03\x00\x0e
+START_JAPANESE_CHOICE
+\x82\xbb\x82\xea\x82\xcd\x91\x81\x93\x8d\x82\xbe\x82\xc1\x82\xbd|x5c|x6e\x82\xbb\x82\xea\x82\xcd\x83J\x83\x93\x83i\x82\xbe\x82\xc1\x82\xbd|x5c|x6e\\l0,2,
+END_JAPANESE_CHOICE
+SEQ3 |\x04 CALL2 2\x00\x18\x05\x00\x00\x03\x00|x09
+START_JAPANESE_CHOICE
+\x82\xbb\x82\xea\x82\xcd\x91\x81\x93\x8d\x82\xbe\x82\xc1\x82\xbd|x5c|x6e\\l0,1,
+END_JAPANESE_CHOICE
+SEQ3 \xda\x04 CALL1 \xfa\x03 CALL7  REF6 (\x04 CALL7 \x005 REF6 \xfa\x03 CALL7 \x00
+LOAD4 GetLastTxtID REF1 \x00D\x05 CALL7 \x005 REF6 \xfa\x03 CALL7 \x00
+LOAD3 TextClose REF2 t\x05 CALL7 \x005\x00
+END_FILE

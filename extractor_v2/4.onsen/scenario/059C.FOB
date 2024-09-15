@@ -1,0 +1,22 @@
+START_FILE u\x03
+HEADER `\x044\x01\x00\x00\x00\x00\xc6\x02\x00\x00
+LOAD3 SCE059_001\x00 REF6 \x06\x00 CALL7 \x00
+SEQ1 \xd0k CALL3 \x00\x03\x00z
+START_JAPANESE
+拓司|x5c|x6e　「天使って、なんのことだ？」 @
+早桃|x5c|x6e　「……え？」 @
+拓司|x5c|x6e　「さっきいってた。\p『天使がもう見えない』って」 @
+早桃|x5c|x6e　「そんなこと、いったかな？」 @
+拓司|x5c|x6e　「ああ」 @
+早桃|x5c|x6e　「わからない。\pきっと頭がおかしくなってたのよ。\pだから、意|x5c|x6e　　味のないことをいったんだと思う。\pそれだけ」 @
+拓司|x5c|x6e　「……」 @
+早桃|x5c|x6e　「おにいちゃん、後ろ向いてて。\pジャージに着替えるから」 @
+|x5c|x6eなたねに目で合図を送って、拓司は後ろを向いた。 @
+早桃は何を隠しているのだろうか？
+END_JAPANESE
+\x00\x00
+SEQ3 J\x00 CALL2 
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF5 R\x02 CALL7 \x00
+LOAD2 TextOn REF5 \x80\x02 CALL7 \x005 REF6 R\x02 CALL7 \x00
+LOAD3 TextClose REF2 \xa8\x02 CALL7 \x005\x00
+END_FILE

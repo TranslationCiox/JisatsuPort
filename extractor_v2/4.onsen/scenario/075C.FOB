@@ -1,0 +1,85 @@
+START_FILE \x82\x17
+HEADER `B#\x01\x00\x00\x00\x00 \x13\x00\x00
+LOAD3 SCE075_001\x00 REF6 \x06\x00 CALL7 \x00
+SEQ1 \xd0\x84 CALL3 \x00\x03\x00|
+START_JAPANESE
+なたね|x5c|x6e　「だめ。\pこの先は危険。\p波動が直接−−」 @
+早桃|x5c|x6e　「いい加減にしてよ！」 @
+|x5c|x6e　早桃がついに叫んだ。\p走り回って息が荒く、目には涙までうっ|x5c|x6e　すらうかんでいる。 @
+|x5c|x6e早桃|x5c|x6e　「だいたい波動が直接きているって、どういうこと？！　意味|x5c|x6e　　が分からないよ！\p　わたしたちはどうすればいいっていうの|x5c|x6e　　？！\p　こんな回り道をしている間にも、神凪先輩はどうなっ|x5c|x6e　　てるのかわからないのよ！\p　あなた、頭が−−」 @
+拓司|x5c|x6e　「よせ、早桃」 @
+早桃|x5c|x6e　「でも！　おにいちゃん！」
+END_JAPANESE
+\x00\x00\x00\x00
+SEQ3 J\x00 CALL2 
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF5 Z\x02 CALL7 \x00
+LOAD2 TextOn REF5 \x88\x02 CALL7 \x005\x00
+LOAD3 SCE075_002\x00 REF6 \xa4\x02 CALL7 \x00
+SEQ1 \xd4\x84 CALL3 \x00\x03\x00N
+START_JAPANESE
+なたね|x5c|x6e　「いいのよ、虎菱くん」 @
+|x5c|x6e　なたねが遮った。 @
+|x5c|x6e/*■CG71　表示（クロスフェード）*/\a7,-2,-2,0,\a0,70,2,0,\a6,-2,0,0,なたね|x5c|x6e　「理解されないのには慣れているから。\p……早桃さんの順番に|x5c|x6e　　質問に答えましょう。\pまず、『波動が直接きている』とはど|x5c|x6e　　ういうことか？」 @
+早桃|x5c|x6e　「……」
+END_JAPANESE
+\x00\x00
+SEQ3 \xe8\x02 CALL1 Z\x02 CALL7  REF6 \x88\x02 CALL7 \x005\x00
+LOAD3 SCE075_003\x00 REF6 Z\x04 CALL7 \x00
+SEQ1 \xd8\x84 CALL3 \x00\x03\x00\xc1
+START_JAPANESE
+なたね|x5c|x6e　「便宜上『波動』と呼んでいるけれど、『波動』は、本来なら|x5c|x6e　　地球の言葉では定義できない存在なの。\pだから、一般的なエ|x5c|x6e　　ネルギーのように、一方から他方へ、直線的に飛ぶというも|x5c|x6e　　のではないの。\pそれ自身の意志で停滞したり、反射したり、|x5c|x6e　　逆流したり、屈折したり。\p秩序や法則はないの。\p無秩序。 @
+　　完全なカオスだわ。\pだから、この先の場所みたいに自殺波動|x5c|x6e　　の密度が濃い場所というのが生まれることも−−」\w|x5c|x6e早桃|x5c|x6e　「要するにデタラメってことじゃない！\p　なんのルールもない|x5c|x6e　　ってことはつまり、全部あなたが思いつきでいってるってだ|x5c|x6e　　けでしょ！」 @
+なたね|x5c|x6e　「……次の質問。\p『私たちはどうすればいいのか？』。\pこれに|x5c|x6e　　は明確な解答を提示することができるわ。\p私たちはシェルタ|x5c|x6e　　ーに避難すべきだわ」 @
+早桃|x5c|x6e　「……え？」
+END_JAPANESE
+\x00\x00
+SEQ3 \x9e\x04 CALL1 Z\x02 CALL7  REF6 \x88\x02 CALL7 \x005\x00
+LOAD3 SCE075_004\x00 REF6 \xdc\x07 CALL7 \x00
+SEQ1 \xdc\x84 CALL3 \x00\x03\x00{
+START_JAPANESE
+　なたねは「シェ\p・ル\p・タ\p・ー」と、ひとことひとことを区切っ|x5c|x6e　て言い返した。 @
+|x5c|x6e拓司|x5c|x6e　「シェルターって……核シェルターとか……そのシェルターか|x5c|x6e　　？」 @
+なたね|x5c|x6e　「ええ。\p私はこうした事態の発生をあらかじめ想定して、波動|x5c|x6e　　から身を守るシェルターを校内に作っておいたの」 @
+拓司|x5c|x6e　「……」 @
+なたね|x5c|x6e　「正確に言うと、シェルターはまだ完成していないわ。\pただ、|x5c|x6e　　材料は全部そろえてある。\pこれだけの人数で突貫で作れば、|x5c|x6e　　１時間もかからずに完成すると思う」
+END_JAPANESE
+\x00\x00\x00\x00
+SEQ3  \x08 CALL1 Z\x02 CALL7  REF6 \x88\x02 CALL7 \x005\x00
+LOAD3 SCE075_005\x00 REF6 F|x0a CALL7 \x00
+SEQ1 \xe0\x84 CALL3 \x00\x03\x00]
+START_JAPANESE
+拓司|x5c|x6e　「……まさか」 @
+なたね|x5c|x6e　「４階の理科実験室。\p新実験室ができてから使われていないあ|x5c|x6e　　の教室に、サバイバルに必要な物資はすべてそろえてあるわ」|x5c|x6e　　\p拓司|x5c|x6e　「……冗談だろ？」 @
+なたね|x5c|x6e　「虎菱くんッ！」 @
+|x5c|x6eなたねの表情が一変した。\p初めて見る表情だった。 @
+怒っている。\pそれまでの能面めいた無表情が嘘だったかのように、|x5c|x6eなたねは怒っていた。
+END_JAPANESE
+\x00\x00
+SEQ3 \x8a|x0a CALL1 Z\x02 CALL7  REF6 \x88\x02 CALL7 \x005\x00
+LOAD3 SCE075_006\x00 REF6 8\x0c CALL7 \x00
+SEQ1 \xe4\x84 CALL3 \x00\x03\x00\xc0
+START_JAPANESE
+なたね|x5c|x6e　「こんな非常事態に冗談なんて言うはずがないでしょうッ！ @
+　　あなたは自覚しているの？！\p　私たちは生き残らなければな|x5c|x6e　　らないのよ！\p　生き残って最終決戦に備えなければならない|x5c|x6e　　の！\p　やつらと戦わなければならないの！\p　やつらは群でや|x5c|x6e　　ってくる！\p　最終決戦には地球上の戦士が集結する国を越え|x5c|x6e　　て人種を越えて思想を越えて主義を越えて性別を越えて集結|x5c|x6e　　して団結して戦って地球を守るために立ち上がる選ばれた戦|x5c|x6e　　士たちが私たちなの最終聖戦に選ばれたの私たちは！\p　それ|x5c|x6e　　なのにそれなのにッ！\p　虎菱くんは自覚が足りないッ！」 @
+|x5c|x6e　なたねは機関銃のようにまくしたてた。\pやがてその顔から、潮|x5c|x6eが引くように怒りの形相が消えてゆき、最後にはいつもの無表情|x5c|x6eがなたねを支配した。 @
+|x5c|x6eなたね|x5c|x6e　「……質問はそれだけだったよね？」
+END_JAPANESE
+\x00\x00\x00\x00
+SEQ3 |\x0c CALL1 Z\x02 CALL7  REF6 \x88\x02 CALL7 \x005\x00
+LOAD3 SCE075_007\x00 REF6 \xb6\x0f CALL7 \x00
+SEQ1 \xe8\x84 CALL3 \x00\x03\x00\x81
+START_JAPANESE
+拓司|x5c|x6e　「……」 @
+なたね|x5c|x6e　「さあ、虎菱くん。\pみんなで４階に戻りましょう。\p最終波動に|x5c|x6e　　そなえてシェルターを作らなければならないわ」 @
+/*■黒　表示（クロスフェード）*/\a7,-2,-2,0,\a0,200,2,0,\a6,-2,0,0,|x5c|x6e寄り添った早桃が、ギュッと袖を握りしめたのを拓司は感じた。 @
+しかし、それに応えるだけのしっかりした何かを、拓司は自分の|x5c|x6eなかにうち立てることができなかった。\pなにもかもが混沌として、|x5c|x6eそこに法則性や真実の破片を見いだすことは不可能に思えた。 @
+どうすればいい……。 @
+俺は……どうすればいい？
+END_JAPANESE
+\x00
+SEQ3 \xfa\x0f CALL1 Z\x02 CALL7  REF6 \x88\x02 CALL7 \x005\x00\x03\x00!
+START_JAPANESE_CHOICE
+\x82\xc8\x82\xbd\x82\xcb\x82\xcc\x8c\xbe\x97t\x82\xc9\x8f]\x82\xa4\x81B\x8dg\x97t\x82\xf0\x8c\xa9\x8e\xcc\x82\xc4\x82\xc4\x81A\x83V\x83F\x83\x8b\x83^\x81[\x82\xc9\x8c\xfc\x82\xa9\x82\xa4|x5c|x6e\x82\xc8\x82\xbd\x82\xcb\x92B\x82\xf0\x83V\x83F\x83\x8b\x83^\x81[\x82\xc9\x8c\xfc\x82\xa9\x82\xed\x82\xb9\x82\xc4\x81A\x8e\xa9\x95\xaa\x82\xbe\x82\xaf\x8dg\x97t\x8b~\x8fo\x82\xc9\x8c\xfc\x82\xa9\x82\xa4|x5c|x6e\\l0,2,\\E\\z\x00\x00
+SEQ3 8\x12 CALL1 Z\x02 CALL7  REF6 \x88\x02 CALL7 \x005 REF6 Z\x02 CALL7 \x00
+LOAD3 TextClose REF2 \x02\x13 CALL7 \x005\x00
+END_FILE

@@ -1,0 +1,141 @@
+START_FILE \x08\x1e
+HEADER `B#\x01\x00\x00\x00\x00\xa4\x18\x00\x00
+LOAD3 SCE086_001\x00 REF6 \x06\x00 CALL7 \x00
+SEQ1 \x00\x96 CALL3 \x00\x03\x008
+START_JAPANESE
+実験室はなんの変哲もないただの教室でしかない。 @
+拓司の胸の中に、むくむくと、なたねの妄想に踊らされたのでは|x5c|x6eないかという思いが膨らんでくる。 @
+|x5c|x6eなたね|x5c|x6e　「安心して下さい。\pこれからシェルター製作を始めます」
+END_JAPANESE
+\x00\x00\x00\x00
+SEQ3 J\x00 CALL2 
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF5 J\x01 CALL7 \x00
+LOAD2 TextOn REF5 x\x01 CALL7 \x005\x00
+LOAD3 SCE086_002\x00 REF6 \x94\x01 CALL7 \x00
+SEQ1 \x04\x96 CALL3 \x00\x03\x00n
+START_JAPANESE
+なたねは実験室の奥の扉の鍵をさらに開けると、そこからスプレ|x5c|x6eーボンドの缶と、ダンボールに詰まったアルミホイルを持ち出し|x5c|x6eてきた。 @
+|x5c|x6eなたね|x5c|x6e　「このアルミホイルを壁に貼ってシェルターを造ります」 @
+拓司|x5c|x6e　「まさか！」 @
+なたね|x5c|x6e　「気分を害さないで欲しいんだけれど、そう簡単にまさかとか、|x5c|x6e　　言って欲しくないの。だってこれは、私が死ぬ思いをしてや|x5c|x6e　　つらの円盤から盗み出してきた機密事項の結晶だから」 @
+拓司|x5c|x6e　「……」
+END_JAPANESE
+\x00\x00\x00\x00
+SEQ3 \xd8\x01 CALL1 J\x01 CALL7  REF6 x\x01 CALL7 \x005\x00
+LOAD3 SCE086_003\x00 REF6 \xca\x03 CALL7 \x00
+SEQ1 \x08\x96 CALL3 \x00\x03\x00~
+START_JAPANESE
+なたね|x5c|x6e　「私が円盤に誘拐されたのは知ってるわよね？\p　そのとき、私|x5c|x6e　　は円盤の中をこっそり探って、いろいろな資料を盗み出して|x5c|x6e　　きたのよ。\pあいにく資料はやつらの手先に盗まれてしまって|x5c|x6e　　今はないけれど……それでも資料のほとんどは解析したわ」 @
+|x5c|x6e/*▲SE20　一回再生（終了を待たず先へ）*/\a2,0,20,0,　カンカンカンカン……。 @
+\a4,0,0,0,|x5c|x6e　階下から、階段を駆け登ってくる足音が聞こえる。 @
+　誰だ？！ @
+　拓司たちは身構えたが、扉を開けて現れたのは、果たして見慣|x5c|x6e　れた人物であった。
+END_JAPANESE
+\x00\x00\x00
+SEQ3 \x0e\x04 CALL1 J\x01 CALL7  REF6 x\x01 CALL7 \x005\x00 
+SEQ2 \x04\x01 CALL2 
+LOAD6 .\\Data\\Script\\Bgm.Fob REF2 Z\x06 CALL7 \x00
+LOAD2 PlayCD REF5 \x84\x06 CALL7 \x005\x00
+LOAD3 SCE086_004\x00 REF6 \xa0\x06 CALL7 \x00
+SEQ1 \x0c\x96 CALL3 \x00\x03\x00w
+START_JAPANESE
+現れたのは御堂と、錦城と、そして紅葉であった。 @
+|x5c|x6e拓司|x5c|x6e　「紅葉！\p　無事だったのか！」 @
+紅葉|x5c|x6e　「そっちこそ！\p　よかった、心配したんだよ！」 @
+|x5c|x6eいうと紅葉は、感極まったように拓司にしがみついた。 @
+胸の中で泣きじゃくる紅葉。 @
+その体温を感じながら、拓司はいいようのない罪悪感にさいなま|x5c|x6eれていた。 @
+しかたがなかったのだ。 @
+教室にいったところで、すれ違いだったかもしれない。 @
+それでも、見捨てたという事実を、胸の中で正当化することはで|x5c|x6eきなかった。
+END_JAPANESE
+\x00\x00\x00\x00
+SEQ3 \xe4\x06 CALL1 J\x01 CALL7  REF6 x\x01 CALL7 \x005\x00
+LOAD3 SCE086_005\x00 REF6 \xfa\x08 CALL7 \x00
+SEQ1 \x10\x96 CALL3 \x00\x03\x00G
+START_JAPANESE
+御堂|x5c|x6e　「はあ、はあ……お前ら、生きてたのか！」 @
+拓司|x5c|x6e　「そっちもな」 @
+御堂|x5c|x6e　「いったいぜんたい、どうなっちまってるんだ？！\p　どいつも|x5c|x6e　　こいつも狂ったみたいに自殺し始めるわ、襲いかかってくる|x5c|x6e　　わで……わけわかんねえよ！」 @
+拓司|x5c|x6e　「俺だってわからないさ」
+END_JAPANESE
+\x00\x00
+SEQ3 >|x09 CALL1 J\x01 CALL7  REF6 x\x01 CALL7 \x005\x00
+LOAD3 SCE086_006\x00 REF6 \x94|x0a CALL7 \x00
+SEQ1 \x14\x96 CALL3 \x00\x03\x00m
+START_JAPANESE
+錦城|x5c|x6e　「とにかく、無事で良かったわ。\p他に生き残っている人はいる|x5c|x6e　　の？！」 @
+|x5c|x6e　拓司は黙って肩をすくめて見せた。 @
+錦城は教室内の面々をぐるり見回して、いった。 @
+|x5c|x6e錦城|x5c|x6e　「少ないわね。\pでは、ここを拠点にして、まだ無事な学生たち|x5c|x6e　　を探しに行きましょう！\p　他のみんなは実験室の中？ @
+　　とりあえずここに集めて−−」 @
+/*▲BGM　停止*/\a4,-1,0,0,なたね|x5c|x6e　「それはやめた方が無難ですね」 @
+錦城|x5c|x6e　「……？」
+END_JAPANESE
+\x00\x00\x00\x00
+SEQ3 \xd8|x0a CALL1 J\x01 CALL7  REF6 x\x01 CALL7 \x005\x00 
+SEQ2 |x09\x01 CALL1 Z\x06 CALL7  REF6 \x84\x06 CALL7 \x005\x00
+LOAD3 SCE086_007\x00 REF6 \xfa\x0c CALL7 \x00
+SEQ1 \x18\x96 CALL3 \x00\x03\x00K
+START_JAPANESE
+なたね|x5c|x6e　「最終波動がきます。\pシェルターの外にいたら、全員が死ぬこ|x5c|x6e　　とになります」 @
+錦城|x5c|x6e　「サイシュウハドウ？」 @
+御堂|x5c|x6e　「クソッ、まだいってやがるぜ、この電波女！」 @
+拓司|x5c|x6e　「いや、御堂。\p……あながち全部デタラメってわけでもなさそ|x5c|x6e　　うだぜ」 @
+御堂|x5c|x6e　「なに……？」
+END_JAPANESE
+\x00\x00\x00\x00
+SEQ3 >|0d CALL1 J\x01 CALL7  REF6 x\x01 CALL7 \x005\x00
+LOAD3 SCE086_008\x00 REF6 \xa4\x0e CALL7 \x00
+SEQ1 \x1c\x96 CALL3 \x00\x03\x00_
+START_JAPANESE
+　拓司はこれまでの出来事を、遅れてきた一同に語って聞かせた。|x5c|x6e\p最後に、なたねが自殺波動と呼んでいる『なにか』が存在するら|x5c|x6eしいことを……そしてなたねがそれに対抗する手段としてシェル|x5c|x6eターを準備していたことを……語った。 @
+|x5c|x6e錦城|x5c|x6e　「信じがたい話ではあるけれど、もう、信じられないものは山|x5c|x6e　　ほど見てしまった後だし」 @
+|x5c|x6e錦城はふう、とため息をついて肩をすくめた。
+END_JAPANESE
+\x00\x00\x00\x00
+SEQ3 \xe8\x0e CALL1 J\x01 CALL7  REF6 x\x01 CALL7 \x005\x00
+LOAD3 SCE086_009\x00 REF6 \x9e\x10 CALL7 \x00
+SEQ1  \x96 CALL3 \x00\x03\x00\x85
+START_JAPANESE
+錦城|x5c|x6e　「それにしても……雲居さん。\pさっきいっていた最終波動っ|x5c|x6e　　て、いったいなんなの？」 @
+なたね|x5c|x6e　「文字通り、最後にやってくる波動のことです」 @
+錦城|x5c|x6e　「……」 @
+なたね|x5c|x6e　「いま、断続的に襲ってきている波動は、大地震の前の予震み|x5c|x6e　　たいなものにすぎません。\pエンケリュスが本格始動するまえ|x5c|x6e　　の震えみたいなものにすぎない。\pいずれはエンケリュスは完|x5c|x6e　　全に目覚めて、これまでの波動なんて話にならないくらいの|x5c|x6e　　巨大な波動を放ちます。\pそれが最終波動です」 @
+錦城|x5c|x6e　「これまでの波動よりも大きい……」
+END_JAPANESE
+\x00\x00
+SEQ3 \xe2\x10 CALL1 J\x01 CALL7  REF6 x\x01 CALL7 \x005\x00
+LOAD3 SCE086_010\x00 REF6 0\x13 CALL7 \x00
+SEQ1 $\x96 CALL3 \x00\x03\x00r
+START_JAPANESE
+なたね|x5c|x6e　「ええ。\pおそらくそれで、地球上の人間はみな死ぬでしょう。 @
+　　いまはまだ、エンケリュスのマイナスの波動に同調した人間|x5c|x6e　　が自殺しているだけだけれど、最終波動を浴びたら何が起き|x5c|x6e　　るのか、予想もつかない。\p分子レベルまで分解されて塵みた|x5c|x6e　　いになってしまうのかもしれないし、どろどろに溶けてしま|x5c|x6e　　うのかもしれない。\pとにかく確かなのは、みんな死ぬってい|x5c|x6e　　うこと」 @
+|x5c|x6eここまで黙っていた御堂が、たまりかねたように叫んだ。
+END_JAPANESE
+\x00\x00
+SEQ3 t\x13 CALL1 J\x01 CALL7  REF6 x\x01 CALL7 \x005\x00
+LOAD3 SCE086_011\x00 REF6 v\x15 CALL7 \x00
+SEQ1 (\x96 CALL3 \x00\x03\x00V
+START_JAPANESE
+御堂|x5c|x6e　「バカバカしい！\p　こんな××××の妄想を真に受けてるんじ|x5c|x6e　　ゃねえだろうな！」 @
+拓司|x5c|x6e　「だったらとっとと学校を出て、好きなところにいったらどう|x5c|x6e　　だ？」 @
+御堂|x5c|x6e　「……」 @
+拓司|x5c|x6e　「……」 @
+御堂|x5c|x6e　「……ちっ。\pで？\pその最終波動とやらは、いつ来るんだよ？」 @
+なたね|x5c|x6e　「わからない」 @
+御堂|x5c|x6e　「あァ？」
+END_JAPANESE
+\x00\x00\x00\x00
+SEQ3 \xba\x15 CALL1 J\x01 CALL7  REF6 x\x01 CALL7 \x005\x00
+LOAD3 SCE086_012\x00 REF6 L\x17 CALL7 \x00
+SEQ1 ,\x96 CALL3 \x00\x03\x00,
+START_JAPANESE
+なたね|x5c|x6e　「１時間後かもしれないし、１週間後かもしれない。\p１０年後|x5c|x6e　　かもしれないし、１分後かも……１秒後かもしれない」 @
+御堂|x5c|x6e　「……」 @
+なたね|x5c|x6e　「……」
+END_JAPANESE
+\x00\x00
+SEQ3 \x90\x17 CALL1 J\x01 CALL7  REF6 x\x01 CALL7 \x005 REF6 J\x01 CALL7 \x00
+LOAD3 TextClose REF2 \x86\x18 CALL7 \x005\x00
+END_FILE

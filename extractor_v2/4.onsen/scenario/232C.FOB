@@ -1,0 +1,57 @@
+START_FILE \x0c|0d
+HEADER `B#\x01\x00\x00\x00\x00\xf0|x0a\x00\x00 
+SEQ2 \x04\x01 CALL2 
+LOAD6 .\\Data\\Script\\Bgm.Fob REF2  \x00 CALL7 \x00
+LOAD2 PlayCD REF5 J CALL5 
+LOAD3 SCE232_001\x00 REF6 f\x00 CALL7 \x00
+SEQ1  z\x01\x00\x0c\x00\x00\x00\x00\x00"\x00\x03\x00\x13
+START_JAPANESE
+|x5c|x6e|x5c|x6e|x5c|x6e|x5c|x6e|x5c|x6e|x5c|x6e|x5c|x6e|x5c|x6e|x5c|x6e|x5c|x6e　　　　　　　『おんなのこと、うちゅうじん』
+END_JAPANESE
+\x00\x00\x00\x00
+SEQ3 \xaa\x00 CALL2 
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF5 \x16\x01 CALL7 \x00
+LOAD2 TextOn REF5 D\x01 CALL7 \x005\x00
+LOAD3 SCE232_002\x00 REF6 `\x01 CALL7 \x00
+SEQ1 $z\x01\x00\x0c\x00\x00\x00\x00\x00"\x00\x03\x00\xdf
+START_JAPANESE
+　あるところに、なたねという女の子がいました。 @
+|x5c|x6e　なたねにはお母さんがいませんでした。\pお母さんはなたねが小|x5c|x6eさいときに病気で死んでしまったのです。\pお父さんも、本当のお|x5c|x6e父さんではなく、お母さんの再婚相手でした。\pそれでもなたねは、|x5c|x6e寂しいなんて思うことはありませんでした。 @
+　お義父さんがとても優しかったからです。 @
+　お義父さんは大きな病院のお医者さんで、お金持ちでした。 @
+　でも、なたねが幸せだったのは、お義父さんがお金持ちだから|x5c|x6eではなくて、お義父さんが本当に素敵な人だったからです。 @
+　お義父さんはなたねのことを大切に、大切に育ててくれました。|x5c|x6e\p　一度、なたねがひどい風邪を引いたときには、大切なお仕事を|x5c|x6e放り出して看病についてくれました（お義父さんはそのせいで、|x5c|x6e病院をクビになってしまったので、新しい仕事先を探さなければ|x5c|x6eならなくなりました）。\pしかもお義父さんは、勉強をしなさい、|x5c|x6eＴＶは見てはいけません、と、厳しいこともなにひとついいませ|x5c|x6eんでした。
+END_JAPANESE
+\x00\x00
+SEQ3 \xa4\x01 CALL1 \x16\x01 CALL7  REF6 D\x01 CALL7 \x005\x00
+LOAD3 SCE232_003\x00 REF6 Z\x05 CALL7 \x00
+SEQ1 (z\x01\x00\x0c\x00\x00\x00\x00\x00"\x00\x03\x00\x9e
+START_JAPANESE
+　なたねはお義父さんが大好きでした。 @
+　だから言われなくても勉強をしましたし、ＴＶだって少ししか|x5c|x6e見ませんでした。\pそうすればお義父さんが喜んでくれると思った|x5c|x6eからです。 @
+　なたねは、日本でいちばん難しい大学に進むことを決めました。|x5c|x6e\p　なたねは毎日、いっしょうけんめい勉強しました。 @
+　勉強ばかりしているのでお友達は少なかったけれど、なたねは|x5c|x6e我慢しました。 @
+　ときどき「もういやだなあ」と思うこともあって、そんなとき|x5c|x6eお義父さんは「なたね、あまり勉強ばかりしていると、体に毒だ|x5c|x6eよ」と優しく声をかけてくれました。\pなたねは、そんなお義父さ|x5c|x6eんの声を聞くと、逆に「よし、もっとがんばろう！」と思えたの|x5c|x6eでした。
+END_JAPANESE
+\x00\x00\x00\x00
+SEQ3 \x9e\x05 CALL1 \x16\x01 CALL7  REF6 D\x01 CALL7 \x005 REF6 \x16\x01 CALL7 \x00
+LOAD3 TextClose REF2 \\\x08 CALL7 \x005\x00\x03\x00|x09\x00\x00\x00.\\Data\\Script\\Scenario\\232SubC.Fob REF5 |\x08 CALL7 \x00
+LOAD2 start REF2 \xb2\x08 CALL7 \x005\x00 
+SEQ2 \xc8\x00 CALL2 
+LOAD6 .\\Data\\Script\\Bg.Fob REF1 \x00\xe8\x08 CALL7 \x00
+LOAD4 BgAutoFadeIn REF1 \x00\x12|x09 CALL7 \x005\x00
+LOAD3 SCE232_013\x00 REF6 6|x09 CALL7 \x00
+SEQ1 Pz\x01\x00\x0c\x00\x00\x00\x00\x00"\x00\x03\x00?
+START_JAPANESE
+　どこかへ走ってゆく汽車の @
+　全財産ぶんの切符を　くださいな @
+　どこかへ走ってゆく汽車の @
+　全財産ぶんの切符を　おねがいですからくださいな @
+　どこにいくかなんて　しりません @
+　ただもう　わたしは @
+　ここからはなれてゆきたいのです
+END_JAPANESE
+\x00\x00\x00\x00
+SEQ3 z|x09 CALL1 \x16\x01 CALL7  REF6 D\x01 CALL7 \x005 REF6  \x00 CALL7 \x00
+LOAD2 StopCD REF5 \xbc|x0a CALL7 \x005 REF6 \x16\x01 CALL7  REF6 \\\x08 CALL7 \x005\x00
+END_FILE

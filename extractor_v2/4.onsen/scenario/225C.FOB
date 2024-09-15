@@ -1,0 +1,20 @@
+START_FILE \x9d\x03
+HEADER @\x044\x01\x00\x00\x00\x00\xd8\x02\x00\x00
+LOAD3 SCE225_001\x00 REF6 \x06\x00 CALL7 \x00
+SEQ1 0o\x01\x00\x0c\x00\x00\x00\x00\x00"\x00\x03\x00m
+START_JAPANESE
+拓司は歯を食いしばった。 @
+まだだ、と胸の中でうめいた。 @
+まだだ。 @
+そのときは、いずれくる。 @
+なにかはわからないが、おおきな契機とでもいうべきものが……|x5c|x6eくる。\pそんな確信があった。 @
+すべてをうち崩すようななにかが、状況を粉々にするようななに|x5c|x6eかが、きっと起こる。\pそのときのために、俺はエネルギーを蓄積|x5c|x6eしなければならない。\pじっと耐えて、強烈な一撃を放つのだ……。|x5c|x6e\p拓司は野獣のように目を光らせて、無言だった。
+END_JAPANESE
+\x00\x00\x00\x00
+SEQ3 J\x00 CALL2 
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF5 \x1e\x02 CALL7 \x00
+LOAD2 TextOn REF5 L\x02 CALL7 \x005\x00
+LOAD6 .\\Data\\Script\\Bgm.Fob REF2 h\x02 CALL7 \x00
+LOAD2 StopCD REF5 \x92\x02 CALL7 \x005 REF6 \x1e\x02 CALL7 \x00
+LOAD3 TextClose REF2 \xba\x02 CALL7 \x005\x00
+END_FILE

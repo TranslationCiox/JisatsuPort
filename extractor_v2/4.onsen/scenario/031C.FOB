@@ -1,0 +1,77 @@
+START_FILE \x0f\x12
+HEADER `B#\x01\x00\x00\x00\x00d\x0f\x00\x00
+LOAD3 SCE031_001\x00 REF6 \x06\x00 CALL7 \x00
+SEQ1 \x10@ CALL3 \x00\x03\x00m
+START_JAPANESE
+スーパーのビニール袋に野良猫を詰め、廃墟となった五号棟の５階|x5c|x6eの窓からそれを放り投げていた月代カンナ。 @
+どうして、という拓司の質問に、カンナはいまと同じ様な哄笑を返|x5c|x6eした。 @
+|x5c|x6eハ。 @
+ハ。 @
+ハ。 @
+|x5c|x6eカンナ|x5c|x6e　「理由なんて無いわ。こうしてると……生きてるって感じがする|x5c|x6e　　の」 @
+|x5c|x6eその言葉を聞いて−−そして目の奥のどんよりとした無感動を見て|x5c|x6e−−この少女が自分の同類であることを、拓司は一瞬にして悟った|x5c|x6eのだった。
+END_JAPANESE
+\x00\x00\x00\x00
+SEQ3 J\x00 CALL2 
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF5 \x1e\x02 CALL7 \x00
+LOAD2 TextOn REF5 L\x02 CALL7 \x005\x00
+LOAD3 SCE031_002\x00 REF6 h\x02 CALL7 \x00
+SEQ1 \x14@ CALL3 \x00\x03\x00\x90
+START_JAPANESE
+|x5c|x6e　月代カンナのなかにある暗い穴に、拓司はまっさかさまに落ちて|x5c|x6e　いった。 @
+　たとえばインターネットのデスサイト。 @
+　ずるりとめくれた顔面の皮と、飛び出た眼球。 @
+　火災現場に転がる真っ黒な塊。 @
+　カビだらけになった緑色の物体。 @
+　神に呪われた赤ん坊。 @
+　店頭に並ぶ人肉。 @
+　カウントダウンで爆殺される犬。 @
+　ショーウインドウに並べられた死、死、死。 @
+　そこにあるのは確実な死のかたちであり、生きている自分には明|x5c|x6e　らかに所属していないものたちだった。\p拓司は取り憑かれたよう|x5c|x6e　にパソコンの前に張り付き、電脳の波に流されてくる情報をむさ|x5c|x6e　ぼった。
+END_JAPANESE
+\x00\x00
+SEQ3 \xac\x02 CALL1 \x1e\x02 CALL7  REF6 L\x02 CALL7 \x005\x00
+LOAD3 SCE031_003\x00 REF6 &\x05 CALL7 \x00
+SEQ1 \x18@ CALL3 \x00\x03\x00\xe1
+START_JAPANESE
+　月代カンナは、続いて猟奇殺人事件の本を拓司にリリースした。 @
+　しっかりとしたルポルタージュもあれば、興味本位のゲテモノも|x5c|x6e　あった。 @
+　自殺の方法を列挙した本を紹介された。 @
+　ゴシックメタルと呼ばれる不気味な音楽も勧められて聴いた。 @
+　カンナとの出会いは、死や自殺をパッケージした商品がいかに世|x5c|x6e　間にあふれ返っているのかということを、驚きを持って拓司に思|x5c|x6e　い知らせた。\pいままで何の気なしに素通りしていた本屋の一画に|x5c|x6e　ネットの暗闇に、死はごろごろ転がっていた。 @
+　１ヶ月もすると、もう、そうした商品には何の魅力も感じられな|x5c|x6e　くなっていた。 @
+　物珍しさとショックに変わって、おなじみの倦怠感と、そして意|x5c|x6e　外にも『恥ずかしい』という感覚がやってきた。\p自分が、インタ|x5c|x6e　ーネットにしか居場所を見つけられない社会不適合者の一員とな|x5c|x6e　ってしまったような、あるいは訳知り顔のサブカル信者になって|x5c|x6e　しまったような、そんな気がしたのだ。 @
+　その他大勢への、陳腐な成り下がり。
+END_JAPANESE
+\x00\x00
+SEQ3 j\x05 CALL1 \x1e\x02 CALL7  REF6 L\x02 CALL7 \x005\x00
+LOAD3 SCE031_004\x00 REF6 (|x09 CALL7 \x00
+SEQ1 \x1c@ CALL3 \x00\x03\x00\xcb
+START_JAPANESE
+拓司は自ら志願して、団地からの『猫落とし』をカンナと一緒に行|x5c|x6eった。 @
+強烈な死の体験だった。 @
+それはまさに死そのものだった。 @
+絶えて久しい昂揚が胸を充たした。\p最後の猫−−８匹目が地面に激|x5c|x6e突したとき、拓司はようやく自分が激しく勃起していることに気づ|x5c|x6eいた。\pあたかも殺すことで、文字通り猫の生命を奪い取って自らの|x5c|x6eなかに収めたかのように思えた。 @
+カンナの顔にもまた、隠しきれない性的興奮の色があった。 @
+月光に浮かび上がった白い肌はほんのりと桃色に染まり、身体全体|x5c|x6eが蒸気のように陶酔のオーラを放っているのがわかった。 @
+拓司は手を伸ばしてカンナの身体を掴み、乱暴に抱き寄せて、口の|x5c|x6e奥にまで届くキスをした。\pカンナの舌が乱暴に拓司の中へねじりこ|x5c|x6eまれ、口の中をねぶり回した。\pそしてカンナはその最中、首を絞め|x5c|x6eて欲しいと懇願したのだった。 @
+そのとき、拓司は初めて女の首を絞めたのだった。
+END_JAPANESE
+\x00\x00\x00\x00
+SEQ3 l|x09 CALL1 \x1e\x02 CALL7  REF6 L\x02 CALL7 \x005 REF6 \x1e\x02 CALL7 \x00
+LOAD5 TextWindowOffDirect REF6 \xde\x0c CALL7 \x005\x00 
+SEQ2 \xca\x00 CALL2 
+LOAD6 .\\Data\\Script\\Bg.Fob REF1 \x00 |0d CALL7 \x00
+LOAD2 BgOn REF1 \x00J|0d CALL7 \x005\x00 
+SEQ2 \x01\x00 CALL2 
+LOAD7 .\\Data\\Script\\TextFunc.fob REF5 \x80|0d CALL7 \x00
+LOAD3 WaitTime REF1 \x00\xae|0d CALL7 \x005\x00 
+SEQ2 \xc8\x00 CALL1  |0d CALL7  REF6 J|0d CALL7 \x005\x00 
+SEQ2 \x01\x00 CALL1 \x80|0d CALL7  REF6 \xae|0d CALL7 \x005\x00 
+SEQ2 \xca\x00 CALL1  |0d CALL7  REF6 J|0d CALL7 \x005\x00 
+SEQ2 \x01\x00 CALL1 \x80|0d CALL7  REF6 \xae|0d CALL7 \x005\x00 
+SEQ2 \xc8\x00 CALL1  |0d CALL7  REF6 J|0d CALL7 \x005\x00 
+SEQ2 \x01\x00 CALL1 \x80|0d CALL7  REF6 \xae|0d CALL7 \x005 REF6 \x1e\x02 CALL7 \x00
+LOAD5 TextWindowOnDirect REF5 \x12\x0f CALL7 \x005 REF6 \x1e\x02 CALL7 \x00
+LOAD3 TextClose REF2 F\x0f CALL7 \x005\x00
+END_FILE

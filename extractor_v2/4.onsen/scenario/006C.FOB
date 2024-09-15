@@ -1,0 +1,44 @@
+START_FILE \x0b\x08
+HEADER `B#\x01\x00\x00\x00\x00h\x06\x00\x00
+LOAD3 SCE006_001\x00 REF6 \x06\x00 CALL7 \x00
+SEQ1 \x00\x19 CALL3 \x00\x03\x00.
+START_JAPANESE
+拓司|x5c|x6e　「……出て行け」 @
+早桃|x5c|x6e　「どうして？」 @
+拓司|x5c|x6e　「こんなこと、おれは望んじゃいない」 @
+早桃|x5c|x6e　「いいんだよ。夢は現実に干渉しない。\pいつもの妄想だか|x5c|x6e　　ら」
+END_JAPANESE
+\x00\x00
+SEQ3 J\x00 CALL2 
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF5 "\x01 CALL7 \x00
+LOAD2 TextOn REF5 P\x01 CALL7 \x005\x00
+LOAD3 SCE006_002\x00 REF6 l\x01 CALL7 \x00
+SEQ1 \x04\x19 CALL3 \x00\x03\x00\x98
+START_JAPANESE
+早桃はネグリジェの裾をつまみ、ゆっくりと持ち上げて見せた。 @
+/*HCG02*/\a7,-2,-2,0,\a0,73,2,0,\a6,-2,0,0,幼い肉の合わせ目が、あらわになる。 @
+見慣れたいつもの義妹の顔。\p髪型。\p身体のライン。 @
+そのなかに、不似合いなほどいやらしい形をしたものがくっつい|x5c|x6eている。 @
+シンプルな亀裂の合わせ目に、うっすらと柔らかい毛が茂ってい|x5c|x6eる。 @
+初めて見る、義妹の性器。 @
+素直で純粋な義妹に隠された、淫猥な快楽器官。 @
+こんなにもいやらしいものを隠して、早桃は同じ家の|x5c|x6e中で暮らしてきたのだ。 @
+早桃のくちびるのあいだに、ぬるっと、濡れ光る肉の塊がすべっ|x5c|x6eた。|x5c|x6e粘り着くような声が、そこからこぼれだした。
+END_JAPANESE
+\x00\x00\x00
+SEQ3 \xb0\x01 CALL1 "\x01 CALL7  REF6 P\x01 CALL7 \x005\x00
+LOAD3 SCE006_003\x00 REF6 J\x04 CALL7 \x00
+SEQ1 \x08\x19 CALL3 \x00\x03\x00C
+START_JAPANESE
+早桃|x5c|x6e　「見せっこ……しよ？\p　早桃にだけ出させるなんて、ずるい。 @
+　　おにいちゃんのも、見せて。\pおち○ちん、見せてくれたら…|x5c|x6e　　…おれいにおにいちゃんにいいこと……してあげる。 @
+　　パパとママには絶対教えられないこと、一緒にしよう？ @
+　　ね？」
+END_JAPANESE
+\x00\x00\x00\x00
+SEQ3 \x8e\x04 CALL1 "\x01 CALL7  REF6 P\x01 CALL7 \x005\x00\x03\x00\x0c
+START_JAPANESE_CHOICE
+\x81u\x81c\x81c\x8f\xc1\x82\xa6\x82\xeb\x81v|x5c|x6e\x81u\x81c\x81c\x97\x88\x82\xa2\x82\xe6\x81v|x5c|x6e\\l0,2,\\E\\z\x00\x00
+SEQ3 \xd4\x05 CALL1 "\x01 CALL7  REF6 P\x01 CALL7 \x005 REF6 "\x01 CALL7 \x00
+LOAD3 TextClose REF2 J\x06 CALL7 \x005\x00
+END_FILE

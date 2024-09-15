@@ -1,0 +1,137 @@
+START_FILE |x09\x17
+HEADER `B#\x01\x00\x00\x00\x00X\x12\x00\x00 
+SEQ2 \x08\x01 CALL2 
+LOAD6 .\\Data\\Script\\Bgm.Fob REF2  \x00 CALL7 \x00
+LOAD2 PlayCD REF5 J CALL5 
+LOAD3 SCE037_001\x00 REF6 f\x00 CALL7 \x00
+SEQ1 pI CALL3 \x00\x03\x00\x8f
+START_JAPANESE
+　屋上は一般学生の立ち入りが禁じられ、階段と屋上を繋ぐ鉄の|x5c|x6e扉には錠が下ろされている。 @
+　拓司が自由に出入りしているのは、合い鍵を持っているから|x5c|x6eだ。 @
+　１年生のころ、職員室へ忍び込んで、コピー機で形を写し取っ|x5c|x6eた。 @
+　それさえあれば、鍵は複製できる。 @
+　拓司はその鍵を使って屋上にシンニュウし、寝転がって空を見|x5c|x6eた。 @
+　雲を眺めていると、勉強やら、親の再婚やらの嫌なことは、全|x5c|x6e部忘れられた。 @
+|x5c|x6e　昔の話だ。 @
+　いま、こうして見上げる雲には、『雲である』という意味しか|x5c|x6eない。 @
+　なんの心のふるえも呼び起こさない、ただの空と、雲。 @
+　光景。
+END_JAPANESE
+\x00\x00\x00\x00
+SEQ3 \xaa\x00 CALL2 
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF5 \x06\x03 CALL7 \x00
+LOAD2 TextOn REF5 4\x03 CALL7 \x005\x00
+LOAD3 SCE037_002\x00 REF6 P\x03 CALL7 \x00
+SEQ1 tI CALL3 \x00\x03\x00W
+START_JAPANESE
+　世界の輪郭がぼやけ始めたころ、拓司は何時間も屋上に寝転が|x5c|x6eって空を見上げたものだった。 @
+　そこに、現実を現実以下のものにしてしまった欠落が、妄想を|x5c|x6e妄想以上のものにしてしまった過剰が…… @
+隠されているかとでもいうように。 @
+　何も見つけられなかった。 @
+　なんの心のふるえも呼び起こさない、ただの空と、雲。 @
+光景がそこにあった。
+END_JAPANESE
+\x00\x00\x00\x00
+SEQ3 \x94\x03 CALL1 \x06\x03 CALL7  REF6 4\x03 CALL7 \x005\x00
+LOAD3 SCE037_003\x00 REF6 *\x05 CALL7 \x00
+SEQ1 xI CALL3 \x00\x03\x00F
+START_JAPANESE
+早桃|x5c|x6e　「わあ、気持ちいい！」 @
+拓司|x5c|x6e　「……」 @
+早桃|x5c|x6e　「なんだか……別の世界みたい。 @
+　　おにいちゃん、ずるいな。 @
+　　こんなところ、ひとりで隠し持ってたなんて」 @
+拓司|x5c|x6e　「隠してたわけじゃない。 @
+　　お前が尋ねなかっただけだろ」 @
+早桃|x5c|x6e　「ふふふ！」
+END_JAPANESE
+\x00\x00
+SEQ3 n\x05 CALL1 \x06\x03 CALL7  REF6 4\x03 CALL7 \x005\x00
+LOAD3 SCE037_004\x00 REF6 \xc0\x06 CALL7 \x00
+SEQ1 |I CALL3 \x00\x03\x00c
+START_JAPANESE
+　拓司と早桃は、給水塔の陰に、並んで腰を下ろした。 @
+早桃がコッペパンを半分にちぎり、やや大きい方を拓司に「はい」|x5c|x6eと手渡す。 @
+/*■CG12　表示（クロスフェード）*/\a7,-2,-2,0,\a0,11,2,0,\a6,-2,0,0,|x5c|x6e拓司|x5c|x6e　「小さい方でいいよ」 @
+早桃|x5c|x6e　「だめだよ。\pおにいちゃん男の子なんだから」 @
+拓司|x5c|x6e　「腹減ってないんだよ」 @
+早桃|x5c|x6e　「うそばっかり」 @
+拓司|x5c|x6e　「いいからそっちよこせ！」
+END_JAPANESE
+\x00\x00\x00\x00
+SEQ3 \x04\x07 CALL1 \x06\x03 CALL7  REF6 4\x03 CALL7 \x005\x00
+LOAD3 SCE037_005\x00 REF6 \xca\x08 CALL7 \x00
+SEQ1 \x80I CALL3 \x00\x03\x00C
+START_JAPANESE
+早桃|x5c|x6e　「やだ！　もう！\p　うふふ……」 @
+拓司|x5c|x6e　「ははは」 @
+早桃|x5c|x6e　「あははは」 @
+|x5c|x6e　ひとしきり笑うと、沈黙がおりた。 @
+やがて早桃がポツリと、恥ずかしそうにいった。 @
+|x5c|x6e早桃|x5c|x6e　「……それにこっちがわ、少しかじっちゃったから」 @
+拓司|x5c|x6e　「……」
+END_JAPANESE
+\x00\x00\x00\x00
+SEQ3 \x0e|x09 CALL1 \x06\x03 CALL7  REF6 4\x03 CALL7 \x005\x00
+LOAD3 SCE037_006\x00 REF6 T|x0a CALL7 \x00
+SEQ1 \x84I CALL3 \x00\x03\x00A
+START_JAPANESE
+早桃|x5c|x6e　「……」 @
+拓司|x5c|x6e　「……」 @
+早桃|x5c|x6e　「あっ！」 @
+|x5c|x6e　拓司は早桃が持っているコッペパンの半分をさっと奪い取り、|x5c|x6e歯形のついたそれをぱくっとひとのみにしてしまった。 @
+|x5c|x6e早桃|x5c|x6e　「もう！　おにいちゃんってば！」 @
+拓司|x5c|x6e　「はは……うっ！」
+END_JAPANESE
+\x00\x00
+SEQ3 \x98|x0a CALL1 \x06\x03 CALL7  REF6 4\x03 CALL7 \x005\x00 
+SEQ2 \xc8\x00 CALL2 
+LOAD6 .\\Data\\Script\\Bg.Fob REF1 \x00\xf0\x0b CALL7 \x00
+LOAD2 BgOn REF1 \x00\x1a\x0c CALL7 \x005\x00
+LOAD3 SCE037_007\x00 REF6 6\x0c CALL7 \x00
+SEQ1 \x88I CALL3 \x00\x03\x00I
+START_JAPANESE
+早桃|x5c|x6e　「えっ、、お、おにいちゃん？！」 @
+拓司|x5c|x6e　「うううっ！　\pの、喉が……苦し……」 @
+早桃|x5c|x6e　「えっ？！　\pう、うそ！？\p　ど、どうしよう…… @
+　　おにいちゃん！　\pおにいちゃん？！」 @
+拓司|x5c|x6e　「……なんてな」 @
+早桃|x5c|x6e　「……」 @
+拓司|x5c|x6e　「……」 @
+早桃|x5c|x6e　「……」
+END_JAPANESE
+\x00\x00
+SEQ3 z\x0c CALL1 \x06\x03 CALL7  REF6 4\x03 CALL7 \x005\x00
+LOAD3 SCE037_008\x00 REF6 \xd8|0d CALL7 \x00
+SEQ1 \x8cI CALL3 \x00\x03\x00s
+START_JAPANESE
+拓司|x5c|x6e　「……」 @
+/*■CG13　表示（クロスフェード）*/\a7,-1,-1,0,\a0,12,1,0,\a6,0,0,0,早桃|x5c|x6e　「早桃パンチ！」 @
+拓司|x5c|x6e　「あ、痛！　\pお前、マジで殴ったな！」 @
+早桃|x5c|x6e　「だってほんとに心配したんだもん。 @
+　　おあいこだよ！　ふふ！」 @
+拓司|x5c|x6e　「まったく……」 @
+|x5c|x6e　パンを食べ終わった２人は、そのまま給水塔に頭をもたらせ、|x5c|x6e空を見上げた。\pゆったりとした時間が流れていた。 @
+　遠くから、ぼんやりとサッカーをしている学生たちの声が聞こ|x5c|x6eえた。
+END_JAPANESE
+\x00
+SEQ3 \x1c\x0e CALL1 \x06\x03 CALL7  REF6 4\x03 CALL7 \x005\x00 
+SEQ2 \xc8\x00 CALL1 \xf0\x0b CALL7  REF6 \x1a\x0c CALL7 \x005\x00
+LOAD3 SCE037_009\x00 REF6 V\x10 CALL7 \x00
+SEQ1 \x90I CALL3 \x00\x03\x008
+START_JAPANESE
+早桃|x5c|x6e　「おにいちゃん？」 @
+拓司|x5c|x6e　「ああ？」 @
+早桃|x5c|x6e　「おにいちゃん、好きな子とか、いる？」 @
+拓司|x5c|x6e　「……どうして？」 @
+早桃|x5c|x6e　「どうしてって……」 @
+拓司|x5c|x6e　「……」 @
+早桃|x5c|x6e　「……どうしてかな？」
+END_JAPANESE
+\x00\x00
+SEQ3 \x9a\x10 CALL1 \x06\x03 CALL7  REF6 4\x03 CALL7 \x005\x00\x03\x00\x10
+START_JAPANESE_CHOICE
+\x98b\x91\xe8\x82\xf0\x88\xed\x82\xe7\x82\xb7|x5c|x6e\x91\x81\x93\x8d\x82\xcd\x82\xc7\x82\xa4\x82\xc8\x82\xf1\x82\xbe\x81A\x82\xc6\x8bt\x82\xc9\x96\xe2\x82\xa2\x95\xd4\x82\xb7|x5c|x6e\\l0,2,\\E\\z\x00\x00
+SEQ3 \xb4\x11 CALL1 \x06\x03 CALL7  REF6 4\x03 CALL7 \x005 REF6 \x06\x03 CALL7 \x00
+LOAD3 TextClose REF2 :\x12 CALL7 \x005\x00
+END_FILE
