@@ -20,7 +20,7 @@ def process_files(input_dir="2.modified_files"):
 def reverse_replace_patterns(bytecode, patterns):
     for pattern in sorted(patterns, key=lambda p: len(p["string"]), reverse=True):
         # Decode the string to utf-8 and replace it with the corresponding bytecode pattern
-        bytecode = bytecode.replace(pattern["string"].strip("\n").encode('utf-8'), bytes.fromhex(pattern["pattern"][0].decode('utf-8').replace(' ', '')))
+        bytecode = bytecode.replace(pattern["string"].strip("\n").encode('latin1'), bytes.fromhex(pattern["pattern"][0].decode('latin1').replace(' ', '')))
     return bytecode.replace(b"\\\\", b"\\")
 
 
@@ -61,30 +61,9 @@ def write_reversed_files(file_bytecode_dict, output_dir="3.new_files"):
 
 file_bytecode_dict = process_files()
 
-
-def split_bytecode(bytecode):
-    delimiter1 = b'\r\nSTART_JAPANESE\r\n'
-    delimiter2 = b'\r\nEND_JAPANESE\r\n'
-    chunks = bytecode.split(delimiter1)
-    final_chunks = []
-    for chunk in chunks:
-        # Split the chunk by the second delimiter
-        subchunks = chunk.split(delimiter2)
-
-        # Extend the final_chunks list with the non-empty subchunks
-        final_chunks.extend([subchunk for subchunk in subchunks if subchunk])
-
-    for chunk in final_chunks[1::2]:
-        chunk = chunk.replace(b' PROCESSING_PN', b'\x5c\x70\x5c\x6e')
-        print(chunk)
-        chunk.decode('932')
-    print(chunks)
-    quit(1)
-    return chunks
-
 # Apply the reverse replacement for each file's bytecode
 for file_path, bytecode in file_bytecode_dict.items():
-    bytecode = split_bytecode(bytecode)
+    #bytecode = split_bytecode(bytecode)
     reversed_bytecode = reverse_replace_patterns(bytecode, patterns)
     hexstring_sanitized_bytecode = hex_string_to_bytes(reversed_bytecode)
     file_bytecode_dict[file_path] = hexstring_sanitized_bytecode

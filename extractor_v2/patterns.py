@@ -19,16 +19,16 @@ patterns = [
         #
         "string": "\nEND_JAPANESE_CHOICE"
     },
-    # {
-    #     "pattern": [b'5C 77 5C 6E 5C 7A'],
-    #     #
-    #     "string": "\nEND_JAPANESE\n"
-    # },
     {
-        "pattern": [b'5C 7A'],
+        "pattern": [b'5C 77 5C 6E 5C 7A'],
         #
         "string": "\nEND_JAPANESE\n"
     },
+    # {
+    #     "pattern": [b'5C 7A'],
+    #     #
+    #     "string": "\nEND_JAPANESE\n"
+    # },
     {
         "pattern": [b'00 00 00 5c 65'],
         #
@@ -197,7 +197,7 @@ patterns = [
     {
         "pattern": [b'5C 70 5C 6E'],
         # End the script
-        "string": " PROCESSING_PN\n"
+        "string": " @\n"
     },
     {
         "pattern": [b'5C 6E'],

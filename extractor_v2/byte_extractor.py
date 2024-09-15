@@ -37,7 +37,7 @@ def replace_bytecode_patterns(file_bytecode_dict, patterns):
     return modified_files
 
 
-def format_bytecode_for_writing(bytecode):
+def format_bytecode_for_writing(bytecode, path):
     string_code = []
     bytecode_list = bytecode.split(b'\n')
     is_japanese = False
@@ -47,12 +47,17 @@ def format_bytecode_for_writing(bytecode):
 
         if is_japanese:
             print(i)
-            string_code.append(str(i.decode('shift_jis')))
+            string_code.append(str(i.decode('shift jis', errors="ignore")))
         else:
             string_code.append(str(i)[2:-1])
 
-        if i == b'START_JAPANESE':
-            is_japanese = True
+        if i == b'START_JAPANESE' \
+                and path != "1.original_files\scenario\\089C.FOB" \
+                and path != "1.original_files\scenario\\090C.FOB" \
+                and path != "1.original_files\scenario\\241C.FOB" \
+                and path != "1.original_files\scenario\\244C.FOB" \
+                and path != "1.original_files\scenario\\247C.FOB":
+            is_japanese = False
     return string_code
 
 
@@ -69,7 +74,7 @@ def write_modified_files(file_bytecode_dict, output_dir="2.modified_files"):
         os.makedirs(os.path.dirname(output_path), exist_ok=True)
 
         # Format the bytecode for writing to file
-        formatted_bytecode = format_bytecode_for_writing(bytecode)
+        formatted_bytecode = format_bytecode_for_writing(bytecode, file_path)
 
         # Write the formatted bytecode to the file with UTF-8 encoding
         with open(output_path, "w", encoding='utf-8') as f:
