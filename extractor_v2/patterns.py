@@ -110,6 +110,11 @@ patterns = [
         "string": "\nLOAD4 "
     },
     {
+        "pattern": [b'03 00 05 00 00 00'],
+        # BgOn, PlayCD, TextOn
+        "string": "\nLOAD5 "
+    },
+    {
         "pattern": [b'03 00 06 00 00 00'],
         # BgOn, PlayCD, TextOn
         "string": "\nLOAD6 "

@@ -2,7 +2,8 @@ START_FILE \x98\x11
 HEADER `B#\x01\x00\x00\x00\x00\x8a|0d\x00\x00
 LOAD3 SCE236_001\x00 REF6 \x06\x00 CALL7 \x00
 SEQ1 `\x80\x01\x00\x0c\x00\x00\x00\x00\x00"\x00
-LOAD7 .\\Data\\Script\\TextFunc.Fob REF5 J\x00 CALL7 \x00\x03\x00\x05\x00\x00\x00TextWindowOffDirect REF6 x CALL5  
+LOAD7 .\\Data\\Script\\TextFunc.Fob REF5 J\x00 CALL7 \x00
+LOAD5 TextWindowOffDirect REF6 x CALL5  
 SEQ2 \x02\x00 SEQ5 \x00\x1b SEQ4 \x00\x00 CALL2 
 LOAD6 .\\Data\\Script\\Bgm.Fob REF2 \xee\x00 CALL7 \x00
 LOAD2 SePlay REF5 \x18\x01 CALL7 \x005\x00 
