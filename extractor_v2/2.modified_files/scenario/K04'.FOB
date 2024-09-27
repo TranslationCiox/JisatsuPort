@@ -1,6 +1,6 @@
 START_FILE \xa6|x0a
-HEADER `B#\x01\x00\x00\x00\x00\xbc\x07\x00\x00 
-SEQ2 \\\x00 CALL2 
+HEADER `B#\x01\x00\x00\x00\x00\xbc\x07\x00\x00
+SEQ2 \\\x00 CALL2
 LOAD6 .\\Data\\Script\\Bg.Fob REF1 \x00 \x00 CALL7 \x00
 LOAD4 BgAutoFadeIn REF1 \x00J CALL5  
 SEQ2 \x04\x01 CALL2 

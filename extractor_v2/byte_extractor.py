@@ -42,7 +42,7 @@ def format_bytecode_for_writing(bytecode, path):
     bytecode_list = bytecode.split(b'\n')
     is_japanese = False
     for i in bytecode_list:
-        if i == b'END_JAPANESE':
+        if i == b'END_JAPANESE' or i == b'END_JAPANESE_CHOICE':
             is_japanese = False
 
         if is_japanese:
@@ -50,12 +50,14 @@ def format_bytecode_for_writing(bytecode, path):
         else:
             string_code.append(str(i)[2:-1])
 
-        if i == b'START_JAPANESE' \
-                and path != "1.original_files\scenario\\089C.FOB" \
-                and path != "1.original_files\scenario\\090C.FOB" \
-                and path != "1.original_files\scenario\\241C.FOB" \
-                and path != "1.original_files\scenario\\244C.FOB" \
-                and path != "1.original_files\scenario\\247C.FOB":
+        # if i == b'START_JAPANESE' \
+        #         and path != "1.original_files\scenario\\089C.FOB" \
+        #         and path != "1.original_files\scenario\\090C.FOB" \
+        #         and path != "1.original_files\scenario\\241C.FOB" \
+        #         and path != "1.original_files\scenario\\244C.FOB" \
+        #         and path != "1.original_files\scenario\\247C.FOB":
+        #     is_japanese = False
+        if i == b'START_JAPANESE' or i == b'START_JAPANESE_CHOICE':
             is_japanese = False
     return string_code
 
