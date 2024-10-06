@@ -12,7 +12,8 @@ SEQ3 J\x00 CALL2
 LOAD7 .\\Data\\Script\\TextFunc.Fob REF5 6\x03 CALL7 \x00
 LOAD2 TextOn REF5 d\x03 CALL7 \x005\x00\x03\x00\x07
 START_JAPANESE_CHOICE
-\x8d\x8e\x95\x9e|x5c|x6e\x94\xdb\x94F|x5c|x6e\\l0,2,\\E\\z\x00\x00
+\x8d\x8e\x95\x9e|x5c|x6e\x94\xdb\x94F|x5c|x6e\\l0,2,
+END_JAPANESE_CHOICE
 SEQ3 \x80\x03 CALL1 6\x03 CALL7  REF6 d\x03 CALL7 \x005 REF6 6\x03 CALL7 \x00
 LOAD3 TextClose REF2 \xe2\x03 CALL7 \x005\x00
 END_FILE

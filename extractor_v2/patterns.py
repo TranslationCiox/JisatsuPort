@@ -15,7 +15,7 @@ patterns = [
         "string": "\nSTART_JAPANESE_CHOICE\n"
     },
     {
-        "pattern": [b'5C 45 5C 7a 00 00 00 00'],
+        "pattern": [b'5C 45 5C 7a 00 00'],
         #
         "string": "\nEND_JAPANESE_CHOICE"
     },
@@ -23,6 +23,16 @@ patterns = [
         "pattern": [b'5C 77 5C 6E 5C 7A'],
         #
         "string": "\nEND_JAPANESE\n"
+    },
+    {
+        "pattern": [b'5C 77 5C 7A'],
+        #
+        "string": "\nEND_JAPANESE2\n"
+    },
+    {
+        "pattern": [b'5C 7A'],
+        #
+        "string": "\nEND_JAPANESE3\n"
     },
     # {
     #     "pattern": [b'5C 7A'],
@@ -280,6 +290,11 @@ assets = [
         "string": ';unknown'
     },
     {
+        "pattern": "SEQ2 \\x00\\x00 CALL1 \\xfc\\x00",
+        #
+        "string": ';unknown'
+    },
+    {
         "pattern": "SEQ2 U\\x00 CALL1 Z\\x03 CALL7",
         #
         "string": ';unknown'
@@ -306,6 +321,16 @@ assets = [
         "string": ';unknown'
     },
     {
+        "pattern": "SEQ2 \\x01\\x00\\x00\\x00",
+        #
+        "string": ';unknown'
+    },
+    {
+        "pattern": "SEQ2 \\x00\\x00\\x00\\x00",
+        #
+        "string": ';unknown'
+    },
+    {
         "pattern": "SEQ2 \\xca\\x00 SEQ5 \\x00\\x04",
         #
         "string": ';unknown'
@@ -321,7 +346,7 @@ assets = [
         "string": ';unknown'
     },
     {
-        "pattern": "SEQ2 \\x00\\x00 SEQ5 \\x00\\x02 SEQ4 \\x00\\x00 CALL1",
+        "pattern": "SEQ2 \\x00\\x00 CALL1 \\xde\\x13 CALL7",
         #
         "string": ';unknown'
     },
@@ -347,6 +372,31 @@ assets = [
     },
 
     ########## MUSIC ###################
+    # {
+    #     "pattern": "SEQ2 \\x00\\x00 SEQ5 \\x00\\x02 SEQ4",
+    #     #
+    #     "string": 'wave "WAV/SE02.WAV"'
+    # },
+    # {
+    #     "pattern": "SEQ2 \\x00\\x00 SEQ5 \\x00\\x07 SEQ4",
+    #     #
+    #     "string": 'wave "WAV/SE07.WAV"'
+    # },
+    # {
+    #     "pattern": "SEQ2 \\x00\\x00 SEQ5 \\x00\\x13 SEQ4",
+    #     #
+    #     "string": 'wave "WAV/SE13.WAV"'
+    # },
+    # {
+    #     "pattern": "SEQ2 \\x00\\x00 SEQ5 \\x00\\x14 SEQ4",
+    #     #
+    #     "string": 'wave "WAV/SE14.WAV"'
+    # },
+    # {
+    #     "pattern": "SEQ2 \\x00\\x00 SEQ5 \\x00\\x15 SEQ4",
+    #     #
+    #     "string": 'wave "WAV/SE15.WAV"'
+    # },
     {
         "pattern": "SEQ2 \\x02\\x00 SEQ5 \\x00\\x01",
         #
@@ -427,7 +477,6 @@ assets = [
         #
         "string": 'waveloop "WAV/SE16.WAV"'
     },
-
     {
         "pattern": "SEQ2 \\x02\\x00 SEQ5 \\x00\\x11",
         #
@@ -515,7 +564,172 @@ assets = [
         "string": 'waveloop "WAV/SE33.WAV"'
     },
 
-
+    ################# No loop sound
+    {
+        "pattern": "SEQ2 \\x00\\x00 SEQ5 \\x00\\x01 SEQ4",
+        #
+        "string": 'wave "WAV/SE01.WAV"'
+    },
+    {
+        "pattern": "SEQ2 \\x00\\x00 SEQ5 \\x00\\x02 SEQ4",
+        #
+        "string": 'wave "WAV/SE02.WAV"'
+    },
+    {
+        "pattern": "SEQ2 \\x00\\x00 SEQ5 \\x00\\x03 SEQ4",
+        #
+        "string": 'wave "WAV/SE03.WAV"'
+    },
+    {
+        "pattern": "SEQ2 \\x00\\x00 SEQ5 \\x00\\x04 SEQ4",
+        #
+        "string": 'wave "WAV/SE04.WAV"'
+    },
+    {
+        "pattern": "SEQ2 \\x00\\x00 SEQ5 \\x00\\x05 SEQ4",
+        #
+        "string": 'wave "WAV/SE05.WAV"'
+    },
+    {
+        "pattern": "SEQ2 \\x00\\x00 SEQ5 \\x00\\x06 SEQ4",
+        #
+        "string": 'wave "WAV/SE06.WAV"'
+    },
+    {
+        "pattern": "SEQ2 \\x00\\x00 SEQ5 \\x00\\x07 SEQ4",
+        #
+        "string": 'wave "WAV/SE07.WAV"'
+    },
+    {
+        "pattern": "SEQ2 \\x00\\x00 SEQ5 \\x00\\x08 SEQ4",
+        #
+        "string": 'wave "WAV/SE08.WAV"'
+    },
+    {
+        "pattern": "SEQ2 \\x00\\x00 SEQ5 \\x00|x09 SEQ4",
+        #
+        "string": 'wave "WAV/SE09.WAV"'
+    },
+    {
+        "pattern": "SEQ2 \\x00\\x00 SEQ5 \\x00\\x0a SEQ4",
+        #
+        "string": 'wave "WAV/SE10.WAV"'
+    },
+    {
+        "pattern": "SEQ2 \\x00\\x00 SEQ5 \\x00\\x0b SEQ4",
+        #
+        "string": 'wave "WAV/SE11.WAV"'
+    },
+    {
+        "pattern": "SEQ2 \\x00\\x00 SEQ5 \\x00\\x0c SEQ4",
+        #
+        "string": 'wave "WAV/SE12.WAV"'
+    },
+    {
+        "pattern": "SEQ2 \\x00\\x00 SEQ5 \\x00\\x0d SEQ4",
+        #
+        "string": 'wave "WAV/SE13.WAV"'
+    },
+    {
+        "pattern": "SEQ2 \\x00\\x00 SEQ5 \\x00\\x0e SEQ4",
+        #
+        "string": 'wave "WAV/SE14.WAV"'
+    },
+    {
+        "pattern": "SEQ2 \\x00\\x00 SEQ5 \\x00\\x0f SEQ4",
+        #
+        "string": 'wave "WAV/SE15.WAV"'
+    },
+    {
+        "pattern": "SEQ2 \\x00\\x00 SEQ5 \\x00\\x10 SEQ4",
+        #
+        "string": 'wave "WAV/SE16.WAV"'
+    },
+    {
+        "pattern": "SEQ2 \\x00\\x00 SEQ5 \\x00\\x11 SEQ4",
+        #
+        "string": 'wave "WAV/SE17.WAV"'
+    },
+    {
+        "pattern": "SEQ2 \\x00\\x00 SEQ5 \\x00\\x12 SEQ4",
+        #
+        "string": 'wave "WAV/SE18.WAV"'
+    },
+    {
+        "pattern": "SEQ2 \\x00\\x00 SEQ5 \\x00\\x13 SEQ4",
+        #
+        "string": 'wave "WAV/SE19.WAV"'
+    },
+    {
+        "pattern": "SEQ2 \\x00\\x00 SEQ5 \\x00\\x14 SEQ4",
+        #
+        "string": 'wave "WAV/SE20.WAV"'
+    },
+    {
+        "pattern": "SEQ2 \\x00\\x00 SEQ5 \\x00\\x15 SEQ4",
+        #
+        "string": 'wave "WAV/SE21.WAV"'
+    },
+    {
+        "pattern": "SEQ2 \\x00\\x00 SEQ5 \\x00\\x16 SEQ4",
+        #
+        "string": 'wave "WAV/SE22.WAV"'
+    },
+    {
+        "pattern": "SEQ2 \\x00\\x00 SEQ5 \\x00\\x17 SEQ4",
+        #
+        "string": 'wave "WAV/SE23.WAV"'
+    },
+    {
+        "pattern": "SEQ2 \\x00\\x00 SEQ5 \\x00\\x18 SEQ4",
+        #
+        "string": 'wave "WAV/SE24.WAV"'
+    },
+    {
+        "pattern": "SEQ2 \\x00\\x00 SEQ5 \\x00\\x19 SEQ4",
+        #
+        "string": 'wave "WAV/SE25.WAV"'
+    },
+    {
+        "pattern": "SEQ2 \\x00\\x00 SEQ5 \\x00\\x1a SEQ4",
+        #
+        "string": 'wave "WAV/SE26.WAV"'
+    },
+    {
+        "pattern": "SEQ2 \\x00\\x00 SEQ5 \\x00\\x1b SEQ4",
+        #
+        "string": 'wave "WAV/SE27.WAV"'
+    },
+    {
+        "pattern": "SEQ2 \\x00\\x00 SEQ5 \\x00\\x1c SEQ4",
+        #
+        "string": 'wave "WAV/SE28.WAV"'
+    },
+    {
+        "pattern": "SEQ2 \\x00\\x00 SEQ5 \\x00\\x1d SEQ4",
+        #
+        "string": 'wave "WAV/SE29.WAV"'
+    },
+    {
+        "pattern": "SEQ2 \\x00\\x00 SEQ5 \\x00\\x1e SEQ4",
+        #
+        "string": 'wave "WAV/SE30.WAV"'
+    },
+    {
+        "pattern": "SEQ2 \\x00\\x00 SEQ5 \\x00\\x1f SEQ4",
+        #
+        "string": 'wave "WAV/SE31.WAV"'
+    },
+    {
+        "pattern": "SEQ2 \\x00\\x00 SEQ5 \\x00\\x20 SEQ4",
+        #
+        "string": 'wave "WAV/SE32.WAV"'
+    },
+    {
+        "pattern": "SEQ2 \\x00\\x00 SEQ5 \\x00\\x21 SEQ4",
+        #
+        "string": 'wave "WAV/SE33.WAV"'
+    },
 
     {
         "pattern": "LOAD2 SeStop",

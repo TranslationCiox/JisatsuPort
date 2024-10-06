@@ -1,7 +1,7 @@
-import os
 from patterns import assets
+import subprocess
 import re
-
+import os
 
 def repair_and_decode_shift_jis(input_string):
     fixed_string = re.sub(r'\|x', r'\\x', input_string)  # Fix `|x` to `\x`
@@ -21,9 +21,12 @@ def repair_and_decode_shift_jis(input_string):
 
     byte_string = bytes.fromhex(re.sub(r'\\x', '', repaired_string))
 
-
-    decoded_string = byte_string.decode('shift_jis')  # Ignore invalid chars
-
+    try:
+        decoded_string = byte_string.decode('shift_jis')  # Ignore invalid chars
+    except:
+        print("COULD NOT DECODE STRING")
+        print(byte_string.decode('shift_jis', errors="ignore"))
+        print(quit(1))
     return decoded_string
 
 
@@ -35,22 +38,40 @@ def sound_line_convert(input_string):
     input_string = re.sub(pattern2, lambda m: m.group() + '\n', input_string)
 
     # Extract the identifier (e.g., SE01, SE02)
-    identifier = re.search(pattern, input_string).group()
-
+    try:
+        identifier = re.search(pattern, input_string).group()
+    except:
+        return f"wavestop\n{input_string}"
     # Check if it indicates loop or single play
     if "ループ再生" in input_string:
         # Loop format
-        output = f"waveloop \"WAV/{identifier}.WAV\"\n;{input_string}"
+        output = f"waveloop \"WAV/{identifier}.WAV\"\n{input_string}"
     elif "１回再生" in input_string:
         # Non-loop format
-        output = f"wave \"WAV/{identifier}.WAV\"\n;{input_string}"
+        output = f"wave \"WAV/{identifier}.WAV\"\n{input_string}"
     elif "停止" in input_string:
-        output = f"wavestop\n;{input_string}"
+        output = f"wavestop\n{input_string}"
+    else:
+        # Handle unknown format
+        print("COULDN'T FIND SOUND DURATION.")
+        output = f";{input_string}\n;/* Unknown format */"
+
+    return output
+
+def cg_line_convert(input_string):
+
+    # Check if it is a HCG or CG
+    if "HCG" in input_string:
+        identifier = input_string[2:7]
+        output = f"BG \"BMP/HCG/{identifier}.BMP\"\n{input_string}"
+    elif "CG" in input_string:
+        identifier = input_string[2:6]
+        output = f"BG \"BMP/HCG/{identifier}.BMP\"\n{input_string}"
     else:
         # Handle unknown format (optional)
-        print("COULDN'T FIND SOUND DURATION.")
+        print("COULDN'T FIND CG.")
         output = f";{input_string}\n/* Unknown format */"
-
+    output = output.replace("0,0,", "0,0,\n")
     return output
 
 def process_files(input_dir="2.modified_files/scenario"):
@@ -69,10 +90,16 @@ def process_files(input_dir="2.modified_files/scenario"):
     return file_dict
 
 def process_blocks(file_dictionary, assets):
+    with open("4.new_script\\01.txt", "w", encoding="shift-jis") as f:
+        pass  # This opens the file in write mode and immediately closes it, clearing the contents.
+
     scenario_counter = 1
-    choice_counter = 0
+    choice_counter = 1
     onsen_total = []
     for scenario in file_dictionary:
+        print("CONVERTING SCENARIO " + str(scenario))
+        if scenario_counter == 200:
+            break
         onsen_code = []
         onsen_code.append(";/////////////////////////////////////////////////")
         onsen_code.append("; Scenario " + str(scenario))
@@ -80,6 +107,7 @@ def process_blocks(file_dictionary, assets):
         onsen_code.append("*" + str(scenario))
         text = file_dictionary[scenario]
         j_text_toggle = False
+        j_choice_toggle = False
         for line in text:
             #check the line against the pattern list. If the beginning of the line corresponds with the pattern
             # list, append the string from the pattern list to onsen_code.
@@ -95,44 +123,76 @@ def process_blocks(file_dictionary, assets):
                     break
 
             if j_text_toggle:
-                if line == "END_JAPANESE" or line == "END_JAPANESE_CHOICE":
+                if line == "END_JAPANESE" or line == "END_JAPANESE2"or line == "END_JAPANESE3":
                     onsen_code[-1] = onsen_code[-1] + " \\"
                     j_text_toggle = False
                     onsen_code.append(";---------------------------------------------")
                 else:
                     line = line.replace(" @", "\\x5c\\x70")
                     line = repair_and_decode_shift_jis(line)
-                    print(line)
                     line = line.replace("\\n\\n", "br\nbr\n")
                     if line[:2] == "\\n":
                         line = "br\n" + line[2:]
                     if "/*▲S" in line:
                         line = sound_line_convert(line)
-                    line = line.replace("\\\\a4", ";\\\\a4")
-                    # line = line.replace("\\n", "\n")
+                    if "/*HCG" in line or "/*CG" in line:
+                        line = cg_line_convert(line)
+                    line = line.replace("/*", "\n;/*")
+                    line = line.replace("\\\\a4", "\nbr\n;\\\\a4")
+                    line = line.replace("\\n", "\n")
                     line = line.replace("\\\\p", "@")
                     line = line.replace("\\p", "@")
-                    line = line.replace("−−", "`−−`")
+                    line = line.replace("−−", "――")
+                    line = line.replace("\\", "")
 
                     onsen_code.append(line)
+            if j_choice_toggle:
+                if "END_JAPANESE_CHOICE" in line:
+                    j_choice_toggle = False
+                    onsen_code.append(";---------------------------------------------")
+                    choice_counter += 1
 
-            if line == "START_JAPANESE" or line == "START_JAPANESE_CHOICE":
+                else:
+                    line = repair_and_decode_shift_jis(line)
+                    choice_count = int(line[-2])
+                    for i in range(choice_count):
+                        line = line.replace("\\n", '",*choice' + str(choice_counter) + "_" + str(i) + ',"', 1)
+                    line = line.replace(',"\\', "\n;\\")
+                    for i in range(choice_count):
+                        line = line + "\n*choice" + str(choice_counter) + "_" + str(i)
+                        line = line + "\nmov ?choices[" + str(choice_counter) + "]," + str(i)
+                        line = line + "\ngoto " "*choice" + str(choice_counter) + "_end"
+                    line = line + "\n*choice" + str(choice_counter) + "_end"
+                    onsen_code[-1] = onsen_code[-1] + '"' + line
+            if line == "START_JAPANESE":
                 j_text_toggle = True
+            if line == "START_JAPANESE_CHOICE":
+                j_choice_toggle = True
+                onsen_code.append("select ")
         onsen_code.append("mov %scenario_flag," + str(scenario_counter))
         onsen_code.append("goto *scenario_tree")
         scenario_counter += 1
         onsen_total.append(onsen_code)
-        for i in onsen_code:
-            print(i)
-        if scenario_counter == 4:
-            quit(1)
-    # with open("output.txt", "w") as file:
-    #     # Write the lines to the file
-    #     for segment in onsen_total:
-    #         for segment_line in segment:
-    #             file.writelines(segment_line)
+
+        # Write the current scenario to the file in Shift-JIS encoding
+        with open("4.new_script\\01.txt", "a", encoding="shift-jis") as f:
+            for line in onsen_code:
+                f.write(line + "\n")
+
+        # for i in onsen_code:
+        #     print(i)
+
+
 
 
 file_dict = process_files()
 
 process_blocks(file_dict, assets)
+
+source_path = r"D:\git_projects\JisatsuPort\extractor_v2\4.new_script"
+destination_path = r"D:\eien\VNs\Duke\Jisatsu\Project Files (jisatsu)\jisatsu_eien\gamedata"
+
+
+# Step 4. Port the finished script file to the game directory.
+command_to_run = f'robocopy "{source_path}" "{destination_path}" 01.txt /Z /FFT /XO /NP /TEE /LOG:synclog.txt'
+subprocess.run(command_to_run, shell=True)
