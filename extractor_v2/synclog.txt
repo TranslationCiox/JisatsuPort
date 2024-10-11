@@ -3,7 +3,7 @@
    ROBOCOPY     ::     Robust File Copy for Windows                              
 -------------------------------------------------------------------------------
 
-  Started : Saturday, September 28, 2024 5:11:01 PM
+  Started : Tuesday, October 8, 2024 9:08:05 PM
    Source : D:\git_projects\JisatsuPort\extractor_v2\4.new_script\
      Dest : D:\eien\VNs\Duke\Jisatsu\Project Files (jisatsu)\jisatsu_eien\gamedata\
 
@@ -14,18 +14,18 @@
 ------------------------------------------------------------------------------
 
 	                   1	D:\git_projects\JisatsuPort\extractor_v2\4.new_script\
-	    Newer     		  621718	01.txt
+	    Newer     		  619936	01.txt
 
 ------------------------------------------------------------------------------
 
                Total    Copied   Skipped  Mismatch    FAILED    Extras
     Dirs :         1         0         1         0         0         0
    Files :         1         1         0         0         0         0
-   Bytes :   607.1 k   607.1 k         0         0         0         0
+   Bytes :   605.4 k   605.4 k         0         0         0         0
    Times :   0:00:00   0:00:00                       0:00:00   0:00:00
 
 
-   Speed :           310859000 Bytes/sec.
-   Speed :           17787.494 MegaBytes/min.
-   Ended : Saturday, September 28, 2024 5:11:01 PM
+   Speed :           309968000 Bytes/sec.
+   Speed :           17736.511 MegaBytes/min.
+   Ended : Tuesday, October 8, 2024 9:08:05 PM
 

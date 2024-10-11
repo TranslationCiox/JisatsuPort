@@ -59,19 +59,42 @@ def sound_line_convert(input_string):
     return output
 
 def cg_line_convert(input_string):
-
     # Check if it is a HCG or CG
-    if "HCG" in input_string:
-        identifier = input_string[2:7]
-        output = f"BG \"BMP/HCG/{identifier}.BMP\"\n{input_string}"
-    elif "CG" in input_string:
-        identifier = input_string[2:6]
-        output = f"BG \"BMP/HCG/{identifier}.BMP\"\n{input_string}"
+    if "HCG" in input_string or "hcg" in input_string:
+        cg_pattern = r"HCG(\d{2})"
+        matches = re.findall(cg_pattern, input_string, re.IGNORECASE)
+        output = f"BG \"BMP/HCG/{matches[0]}.BMP\"\n;{input_string}"
+    elif "CG" in input_string or "cg" in input_string:
+        cg_pattern = r"CG(\d{2})"
+        matches = re.findall(cg_pattern, input_string, re.IGNORECASE)
+        output = f"BG \"BMP/HCG/{matches[0]}.BMP\"\n;{input_string}"
     else:
         # Handle unknown format (optional)
         print("COULDN'T FIND CG.")
+        print(input_string)
         output = f";{input_string}\n/* Unknown format */"
-    output = output.replace("0,0,", "0,0,\n")
+    # print("ORIGINAL STRING")
+    # print(input_string)
+    # print("OUTPUT STRING")
+    # print(output)
+    # print("\n")
+    return output
+
+def decode_asset_code(input_string):
+    # Check if it is a HCG or CG
+    pattern = r'(([^,]*,){4})'
+    # Replace the matched pattern with itself followed by a newline
+    output = re.sub(pattern, r'\1\n', input_string)
+    input(input_string)
+    print(output)
+    # output = output.replace("/*", "\n;/*")
+
+
+    # if "a0" in input_string:
+    #     cg_pattern = r"HCG(\d{2})"
+    #     matches = re.findall(cg_pattern, input_string, re.IGNORECASE)
+    #     output = f"BG \"BMP/HCG/{matches[0]}.BMP\"\n;{input_string}"
+
     return output
 
 def process_files(input_dir="2.modified_files/scenario"):
@@ -133,10 +156,12 @@ def process_blocks(file_dictionary, assets):
                     line = line.replace("\\n\\n", "br\nbr\n")
                     if line[:2] == "\\n":
                         line = "br\n" + line[2:]
-                    if "/*▲S" in line:
-                        line = sound_line_convert(line)
-                    if "/*HCG" in line or "/*CG" in line:
-                        line = cg_line_convert(line)
+                    # if "/*▲S" in line:
+                    #     line = sound_line_convert(line)
+                    # if "HCG" in line or "CG" in line or "cg" in line or "hcg" in line:
+                    #     line = cg_line_convert(line)
+                    if "a" in line:
+                        line = decode_asset_code(line)
                     line = line.replace("/*", "\n;/*")
                     line = line.replace("\\\\a4", "\nbr\n;\\\\a4")
                     line = line.replace("\\n", "\n")
@@ -145,6 +170,8 @@ def process_blocks(file_dictionary, assets):
                     line = line.replace("−−", "――")
                     line = line.replace("\\", "")
 
+                    # line = line.replace("a6,0,0,0,", "a6,0,0,0,\n")
+                    # line = line.replace("a6,-2,0,0,", "a6,-2,0,0,\n")
                     onsen_code.append(line)
             if j_choice_toggle:
                 if "END_JAPANESE_CHOICE" in line:
